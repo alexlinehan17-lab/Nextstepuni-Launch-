@@ -80,5 +80,5 @@ in-repo SEC reports exist; the rest are deferred pending subject Chief Examiner 
 marking schemes in `/examiner-reports/`.
 
 - [x] Business — `subject-business.md` (corrected 4 factual errors vs 2025 marking scheme)
-- [ ] Mathematics — in progress (maths 2015 Chief Examiner report in-repo)
+- [x] Mathematics — `subject-mathematics.md` (corrected the 300-marks/two-section paper structure vs 2015 Chief Examiner report)
 - [ ] Remaining 35 — awaiting per-subject SEC reports

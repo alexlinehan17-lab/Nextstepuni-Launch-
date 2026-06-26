@@ -1129,4 +1129,14 @@ export const REF = {
     url: 'https://www.examinations.ie/exammaterialarchive/',
     repoPath: 'examiner-reports/business/2025-marking-scheme.pdf',
   },
+  secMaths2015: {
+    id: 'secMaths2015',
+    authors: 'State Examinations Commission, Chief Examiner',
+    year: 2015,
+    title: 'Leaving Certificate Mathematics — Chief Examiner’s Report (paper structure: each paper 300 marks, Section A 6×25 + Section B contexts; and the requirement to show supporting work for full credit)',
+    source: 'SEC — examinations.ie',
+    kind: 'official',
+    url: 'https://www.examinations.ie/examiners-and-reports/',
+    repoPath: 'examiner-reports/maths/2015-chief-examiner.pdf',
+  },
 } satisfies Record<string, Reference>;

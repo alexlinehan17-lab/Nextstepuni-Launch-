@@ -4,6 +4,7 @@
  */
 
 import { type SubjectModuleContent } from './subjectModuleData';
+import { SUBJECT_MATHEMATICS_REFERENCE_LIST } from './data/references/subjectMathematics';
 
 export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
   // ────────────────────────────────────────────────────────────────
@@ -24,13 +25,13 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'How Mathematics Actually Works',
         eyebrow: '01 // Exam Structure',
         paragraphs: [
-          'Higher Level Maths is split across **two papers**, each worth **150 marks** and lasting **2 hours and 30 minutes**. That gives you a total of **300 marks** across five hours of exam time. Both papers have the same format: [[six questions]], and you must answer all of them. There is no choice -- every question counts.',
+          'Higher Level Maths is split across **two papers**, each worth **300 marks** and lasting **2 hours and 30 minutes**. That gives you a total of **600 marks** across five hours of exam time. Both papers have the same format: each is split into [[two sections]] — Section A and Section B — and you must answer **all** questions. There is no choice -- every question counts.{{cite:1}}',
           'Paper 1 covers [[Algebra]], [[Functions and Graphs]], [[Complex Numbers]], [[Calculus]] (differentiation and integration), and [[Financial Maths]]. Paper 2 covers [[Geometry]], [[Trigonometry]], and [[Probability and Statistics]]. The split is clean, so you can focus your revision on one paper at a time without overlap.',
-          'Each question is worth **25 marks** at minimum, but some carry up to **50 marks** depending on the part structure. Questions are broken into parts (a), (b), and often (c), with part (a) designed to be more accessible. The examiner expects to see your working clearly laid out -- not just final answers.',
-          'Here is the big bonus: if you score a **H6 or above** (that is 40% or higher at Higher Level), you receive an extra **25 CAO points** on top of your grade points. This makes Maths one of the most strategically valuable subjects on your entire Leaving Cert. Even students who find Maths challenging can benefit enormously from sitting Higher Level and targeting that bonus.'
+          '**Section A (Concepts and Skills)** is 6 questions at 25 marks each (150 marks); **Section B (Contexts and Applications)** is typically 3 longer questions making up the other 150 marks.{{cite:1}} Questions are broken into parts (a), (b), and often (c), with part (a) designed to be more accessible. The examiner expects to see your working clearly laid out -- not just final answers.',
+          'Here is the big bonus: if you score a **H6 or above** (that is 40% or higher at Higher Level), you receive an extra **25 CAO points** on top of your grade points.{{cite:2}} This makes Maths one of the most strategically valuable subjects on your entire Leaving Cert. Even students who find Maths challenging can benefit enormously from sitting Higher Level and targeting that bonus.'
         ],
         highlights: [
-          { term: 'six questions', description: 'Both Paper 1 and Paper 2 contain exactly 6 questions each. You must answer all 6 on each paper -- there is no choice.' },
+          { term: 'two sections', description: 'Each paper has Section A (Concepts & Skills, 6 questions at 25 marks) and Section B (Contexts & Applications, usually 3 questions). You must answer all questions on both papers -- there is no choice.' },
           { term: 'Algebra', description: 'Covers expressions, equations, inequalities, indices, logs, and sequences & series. A huge chunk of Paper 1.' },
           { term: 'Functions and Graphs', description: 'Function notation, transformations, graph sketching, and interpreting graphs. Frequently combined with Calculus questions.' },
           { term: 'Complex Numbers', description: 'Operations with complex numbers, Argand diagrams, De Moivre\'s theorem, and roots of unity.' },
@@ -41,9 +42,9 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
           { term: 'Probability and Statistics', description: 'Counting principles, probability rules, distributions (Normal, Bernoulli, Binomial), hypothesis testing, and inferential statistics.' }
         ],
         bullets: [
-          'Paper 1: Algebra, Complex Numbers, Functions, Calculus, Financial Maths -- 150 marks, 2.5 hours',
-          'Paper 2: Geometry, Trigonometry, Probability & Statistics -- 150 marks, 2.5 hours',
-          'All 6 questions compulsory on each paper -- no choice',
+          'Paper 1: Algebra, Complex Numbers, Functions, Calculus, Financial Maths -- 300 marks, 2.5 hours',
+          'Paper 2: Geometry, Trigonometry, Probability & Statistics -- 300 marks, 2.5 hours',
+          'All questions compulsory on each paper (Section A: 6 x 25; Section B: usually 3) -- no choice',
           '+25 CAO bonus points for H6 (40%) or above at Higher Level'
         ]
       },
@@ -52,14 +53,14 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'What the Examiner Rewards',
         eyebrow: '02 // Marking Criteria',
         paragraphs: [
-          'The Maths marking scheme is one of the most transparent in the entire Leaving Cert. Each part of each question is broken into specific **marking checkpoints** -- and crucially, the scheme awards [[attempt marks]] for any correct, relevant step even if you do not reach the final answer. This means that showing your work is not optional. It is where the marks live.',
+          'The Maths marking scheme is one of the most transparent in the entire Leaving Cert. Each part of each question is broken into specific **marking checkpoints** -- and crucially, the scheme awards [[attempt marks]] for any correct, relevant step even if you do not reach the final answer. The Chief Examiner is explicit: in some questions full marks are not awarded unless candidates show supporting work, and an incorrect answer with no work shown generally earns nothing. Showing your work is not optional -- it is where the marks live.{{cite:1}}',
           'When the examiner looks at your answer, they are checking: did you identify the right approach? Did you set up the problem correctly? Did you apply the relevant formula or technique? Did you carry out the algebra accurately? Each of these steps can earn marks independently. A student who sets up a Calculus problem correctly but makes an arithmetic slip in the final line can still earn **most of the marks** for that question.',
-          'The marking scheme uses a system of [[scale marks]] -- typically on a scale of 0 to 5 or 0 to 10 for each part. A "5A" or "5B" scale means 5 marks are available, and partial credit is given for partially correct work. The key insight is that the examiner cannot give marks for work they cannot see. If you do steps in your head and skip to the answer, you are gambling everything on getting it perfectly right.',
+          'The marking scheme uses a system of [[scale marks]] -- each part is graded on a numbered scale (for example out of 5 or out of 10), with partial credit built in at each level for partially correct work.{{cite:1}} The key insight is that the examiner cannot give marks for work they cannot see. If you do steps in your head and skip to the answer, you are gambling everything on getting it perfectly right.',
           'For [[proofs and constructions]], the examiner follows a strict checklist. Each logical step or construction mark must appear on the page. Memorising the sequence of steps for the key geometry proofs and presenting them clearly is one of the easiest ways to guarantee full marks in an otherwise tricky area.'
         ],
         highlights: [
           { term: 'attempt marks', description: 'Marks awarded for correct initial steps or relevant work even when the final answer is incorrect. The Maths scheme is generous with these.' },
-          { term: 'scale marks', description: 'The marking scheme grades each part on a numbered scale (e.g. 5A, 10C). Partial credit is built into the scale at each level.' },
+          { term: 'scale marks', description: 'The marking scheme grades each part on a numbered scale (for example out of 5 or out of 10). Partial credit is built into the scale at each level.' },
           { term: 'proofs and constructions', description: 'Geometry proofs and ruler-and-compass constructions are marked against a strict step-by-step checklist. Learn the steps and present them clearly.' }
         ]
       },
@@ -85,8 +86,8 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'What Costs You Marks',
         eyebrow: '04 // Common Pitfalls',
         paragraphs: [
-          'The number one mark-killer in Maths is **skipping steps**. Students who do working in their heads and write only the final answer lose marks every single year. The marking scheme explicitly awards marks for setting up equations, substituting values, and simplifying -- even when the final answer is wrong. If the examiner cannot see your logic, they cannot award [[attempt marks]].',
-          'The second major pitfall is [[poor time management]]. With 6 compulsory questions in 150 minutes, you have roughly 25 minutes per question. Students who spend 40 minutes on a difficult question and then rush the remaining five are throwing away easy marks. If you are stuck, write down everything you know about the problem, move on, and come back later.',
+          'The number one mark-killer in Maths is **skipping steps**. Students who do working in their heads and write only the final answer lose marks every single year. The Chief Examiner confirms marks are generally not awarded for an incorrect answer with no supporting work shown. If the examiner cannot see your logic, they cannot award [[attempt marks]].{{cite:1}}',
+          'The second major pitfall is [[poor time management]]. Each paper is 300 marks in 150 minutes, so a useful rule of thumb is about a minute for every two marks -- roughly 12-13 minutes on a 25-mark Section A question and around 25 minutes on a 50-mark Section B one. Students who spend 40 minutes on a single difficult question and then rush the rest are throwing away easy marks. If you are stuck, write down everything you know about the problem, move on, and come back later.',
           'Many students lose marks through [[sign errors and arithmetic slips]] rather than conceptual misunderstanding. A minus sign dropped during differentiation or a factor of 2 forgotten in an integration can cascade through an entire solution. The fix is simple: write each step on a separate line, and double-check your algebra before moving to the next step.',
           'Finally, students consistently underperform on [[Geometry proofs]] because they try to wing them. The proofs on the syllabus are finite and examinable -- there are only a handful of them. Students who learn these proofs step-by-step and practise writing them out in full will pick up marks that most of their classmates leave behind.'
         ],
@@ -103,9 +104,9 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
         eyebrow: '05 // Study Techniques',
         paragraphs: [
           'Maths is not a spectator sport. Reading through solutions teaches you almost nothing. The only way to learn Maths is to **do Maths** -- pen in hand, working through problems from start to finish. Your primary study tool should be [[past paper practice]]. Work through every available Higher Level paper from the last 10 years, timed where possible.',
-          'When you get a question wrong, do not just read the solution and move on. Take out a fresh page and [[rework the problem]] from scratch without looking at the answer. This is the step most students skip, and it is the step that actually builds the skill. If you cannot do it independently, you have not learned it yet.',
+          'When you get a question wrong, do not just read the solution and move on. Take out a fresh page and [[rework the problem]] from scratch without looking at the answer. Retrieving the method yourself, rather than re-reading it, is what actually builds the skill.{{cite:3}} If you cannot do it independently, you have not learned it yet.',
           'Build a [[formula reference sheet]] for each paper. Paper 1 formulas include differentiation rules, integration rules, the factor theorem, and financial maths formulas. Paper 2 formulas include coordinate geometry formulas, trig identities, and the Normal distribution z-score formula. Many of these are on the Formulae and Tables booklet, but knowing where to find them quickly saves critical time.',
-          'Use [[topic rotation]] in your study sessions rather than spending an entire evening on one topic. Do 30 minutes of Calculus, then 30 minutes of Probability, then 30 minutes of Algebra. This interleaving forces your brain to practise switching between methods, which is exactly what the exam demands.'
+          'Use [[topic rotation]] in your study sessions rather than spending an entire evening on one topic. Do 30 minutes of Calculus, then 30 minutes of Probability, then 30 minutes of Algebra. Mixing maths problem types like this -- interleaving -- improves learning and forces your brain to practise choosing the right method, which is exactly what the exam demands.{{cite:4}}'
         ],
         highlights: [
           { term: 'past paper practice', description: 'The single most effective study technique for Maths. Work through complete papers under timed conditions.' },
@@ -126,7 +127,8 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
         highlights: [],
         commitmentText: 'This week, I will complete one full past Paper 1 under timed conditions (2.5 hours), mark it against the marking scheme, and rework every question I scored below 50% on.'
       }
-    ]
+    ],
+    references: SUBJECT_MATHEMATICS_REFERENCE_LIST,
   },
 
   // ────────────────────────────────────────────────────────────────

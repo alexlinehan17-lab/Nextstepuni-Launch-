@@ -573,4 +573,56 @@ export const CUT_CONTENT: CutContentEntry[] = [
       'The specific per-part mark figures and the precise "three vs six points" ratio were invented (Section 3 part allocations vary by question in the scheme). Reframed to the verifiable developed-vs-undeveloped principle from the 2015 Chief Examiner report.',
     date: '2026-06-26',
   },
+  {
+    id: 'subject-mathematics-001',
+    module: 'Mastering Mathematics (subject)',
+    section: 'Section 1 — paper marks',
+    action: 'corrected',
+    original:
+      'Higher Level Maths is split across two papers, each worth 150 marks ... That gives you a total of 300 marks across five hours.',
+    reframedTo:
+      'Higher Level Maths is split across two papers, each worth 300 marks ... a total of 600 marks across five hours.',
+    reason:
+      'Factual error. The in-repo 2015 Maths Chief Examiner\'s Report states each paper "is marked out of 300 marks." Each HL Maths paper is 300 marks (600 total), not 150 (300 total). Corrected, with the section bullets updated to match.',
+    date: '2026-06-26',
+  },
+  {
+    id: 'subject-mathematics-002',
+    module: 'Mastering Mathematics (subject)',
+    section: 'Section 1 — paper format',
+    action: 'corrected',
+    original:
+      'Both papers have the same format: six questions, and you must answer all of them.',
+    reframedTo:
+      'Both papers have the same format: each is split into two sections — Section A (Concepts and Skills, 6 questions at 25 marks) and Section B (Contexts and Applications, usually 3 questions) — and you must answer all questions.',
+    reason:
+      'Factual error. Each paper is not "six questions"; the report describes Section A (6 questions at 25 marks each) plus Section B (Contexts and Applications, three questions in 2015). Corrected to the report\'s two-section structure.',
+    date: '2026-06-26',
+  },
+  {
+    id: 'subject-mathematics-003',
+    module: 'Mastering Mathematics (subject)',
+    section: 'Section 2 — scale marks',
+    action: 'reframed',
+    original:
+      'A "5A" or "5B" scale means 5 marks are available, and partial credit is given for partially correct work.',
+    reframedTo:
+      'each part is graded on a numbered scale (for example out of 5 or out of 10), with partial credit built in at each level for partially correct work.',
+    reason:
+      'The scale letters in SEC Maths schemes indicate the number of credit gradations, not "marks available", so the original implied an inaccurate meaning. Reframed to the accurate numbered-scale-with-partial-credit description, which the Chief Examiner report supports.',
+    date: '2026-06-26',
+  },
+  {
+    id: 'subject-mathematics-004',
+    module: 'Mastering Mathematics (subject)',
+    section: 'Section 4 — time management',
+    action: 'corrected',
+    original:
+      'With 6 compulsory questions in 150 minutes, you have roughly 25 minutes per question.',
+    reframedTo:
+      'Each paper is 300 marks in 150 minutes, so a useful rule of thumb is about a minute for every two marks — roughly 12-13 minutes on a 25-mark Section A question and around 25 minutes on a 50-mark Section B one.',
+    reason:
+      'Follow-on from the structure correction: there are ~9 questions across Section A and Section B, not 6, so "25 minutes per question" was wrong. Replaced with a marks-based pace derived from the verified 300-marks-in-150-minutes structure.',
+    date: '2026-06-26',
+  },
 ];
