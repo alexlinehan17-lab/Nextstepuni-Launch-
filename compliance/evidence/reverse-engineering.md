@@ -36,8 +36,13 @@ illustrative (stylised curves, not study data).
 - **§1 Why plans fail** — The planning fallacy: people systematically underestimate task
   completion time (**buehler1994**). Verified.
 - **§2 Why backwards works** — Backward Design (framework, uncited) + Critical Path
-  (project-management concept) + Future Thinking: imagining the future end-state boosts
-  goal-directed motivation (**petersbuchel2010**). Verified.
+  (project-management concept) + Future Thinking: vividly imagining a future end-state makes
+  it weigh more in present choices, reducing the over-valuing of the immediate
+  (**petersbuchel2010**, episodic future thinking reduces delay discounting). Verified.
+  *Reframed after the verification pass (RE-001): petersbuchel2010 measures intertemporal
+  choice / delay discounting, not "motivation"; the earlier "boosts goal-directed
+  motivation / keeps you motivated" framing was narrowed to the delay-discounting mechanism
+  the study actually establishes.*
 - **§3 Breaking down the syllabus** — Exam-date anchoring, wind-down, syllabus chunking;
   the 80/20 heuristic (uncited). Practical planning.
 - **§4 Four phases** — Spacing, mock practice, interleaving sequenced over the run-in;

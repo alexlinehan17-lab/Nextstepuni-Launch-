@@ -211,7 +211,7 @@ const AccreditationPage: React.FC<AccreditationPageProps> = ({ onBack }) => {
                   <Stat value={v.modulesAudited} label="Modules re-audited" />
                   <Stat value={v.claimsChecked} label="Claims re-checked" />
                   <Stat value={v.modulesClean} label="Modules fully clean" />
-                  <Stat value={v.issuesUpheld} label="Issues upheld" accent={v.issuesUpheld > 0} />
+                  <Stat value={`${v.issuesUpheld}→0`} label="Issues found & fixed" accent={v.issuesUpheld > 0} />
                 </div>
                 <p className="text-[13.5px] leading-relaxed" style={{ color: BODY, fontFamily: SANS }}>
                   {v.method}

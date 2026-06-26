@@ -43,11 +43,14 @@ button (`ReferencesModal`); data in `data/references/spacedRepetition.ts`.
   difficulty") strengthens learning. **Source:** sb2015. **Verified.**
 
 ### § 4 — The Best Review Schedule
-- **Claim:** The optimal review gap is roughly 5–20% of the time until the test; longer
-  retention intervals call for proportionally longer gaps.
-- **Source:** cepeda2008 (temporal ridgeline of optimal retention). **Verified** — the
-  optimal gap-as-proportion-of-retention-interval finding supports the rule of thumb and
-  the worked examples.
+- **Claim:** The optimal review gap is a fraction of the time until the test — about
+  20–40% of the interval for a test ~a week away, shrinking to ~5–10% for a test ~a year
+  away. The absolute gap still grows with the retention interval; the *proportion* shrinks.
+- **Source:** cepeda2008 (temporal ridgeline of optimal retention). **Verified** — Cepeda
+  et al. report the optimal gap "declined from about 20 to 40% of a 1-week test delay to
+  about 5 to 10% of a 1-year test delay." *Reframed after the verification pass (SR-001):
+  the earlier "roughly 5–20% … proportionally longer gaps" both truncated the short-delay
+  band and stated the proportion direction backwards (the proportion declines, not grows).*
 
 ### § 5 — Apps That Do It For You
 - Describes how spaced-repetition software (e.g. Anki) schedules reviews. This is a tool

@@ -19,7 +19,7 @@ intentions).
 | Key | Citation | DOI |
 |-----|----------|-----|
 | casey2008 | Casey, Jones & Hare (2008). The adolescent brain. *Annals of the NY Academy of Sciences*. | [10.1196/annals.1440.010](https://doi.org/10.1196/annals.1440.010) |
-| mark2008 | Mark, Gudith & Klocke (2008). The cost of interrupted work: More speed and stress. *Proc. SIGCHI (CHI)*. | [10.1145/1357054.1357072](https://doi.org/10.1145/1357054.1357072) |
+| mark2005 | Mark, Gonzalez & Harris (2005). No task left behind? Examining the nature of fragmented work (resumption of work). *Proc. SIGCHI (CHI)*. | [10.1145/1054972.1055017](https://doi.org/10.1145/1054972.1055017) |
 | ward2017 | Ward, Duke, Gneezy & Bos (2017). Brain drain: The mere presence of one's own smartphone reduces available cognitive capacity. *J. Assoc. for Consumer Research*. | [10.1086/691462](https://doi.org/10.1086/691462) |
 | gollwitzer1999 | Gollwitzer (1999). Implementation intentions: Strong effects of simple plans. *American Psychologist*. | [10.1037/0003-066x.54.7.493](https://doi.org/10.1037/0003-066x.54.7.493) |
 
@@ -29,9 +29,11 @@ intentions).
 
 - **§1 Why Your Phone Wins** — Adolescent dual-systems brain: reward/socioemotional
   systems mature ahead of prefrontal self-control, biasing toward immediate rewards
-  (**casey2008**). After an interruption it can take ~23 minutes to return to the task
-  (**mark2008**). Verified. The "every check = 23 min, 3 checks = zero" linear stacking
-  was reframed and the calculator relabelled a simplified illustration (DD-001).
+  (**casey2008**). After an interruption it can take ~23 minutes to resume the task
+  (**mark2005**, "No task left behind?", which examines resumption of work — corrected
+  from mark2008 after the verification pass; mark2008 measures the speed/stress trade-off,
+  not resumption time). Verified. The "every check = 23 min, 3 checks = zero" linear
+  stacking was reframed and the calculator relabelled a simplified illustration (DD-001).
 - **§2 The Phone Swap / §3 Laptop lockdown** — Adding "friction" / choice architecture to
   make distractions harder to reach. Practical strategy (consistent with behaviour-change
   principles); no specific empirical figure claimed.
@@ -51,4 +53,11 @@ intentions).
 
 | ID | Section | Original → Reframed | Reason |
 |----|---------|---------------------|--------|
-| DD-001 | § 1 + calculator | "every check = 23 min; 3 checks = ~zero deep work" → accurate "~23 min to refocus after an interruption"; calculator labelled a simplified illustration | The 23-min figure (mark2008) is real but does not stack linearly; the original overstated it as a precise per-check arithmetic. |
+| DD-001 | § 1 + calculator | "every check = 23 min; 3 checks = ~zero deep work" → accurate "~23 min to refocus after an interruption"; calculator labelled a simplified illustration | The 23-min figure (mark2005) is real but does not stack linearly; the original overstated it as a precise per-check arithmetic. |
+
+**Source correction (verification pass, 2026-06-26):** the ~23-minute resumption figure
+in §1 was re-attributed from **mark2008** → **mark2005** ("No task left behind?",
+resumption of work). mark2008 (Mark, Gudith & Klocke) measures the speed/stress trade-off
+and does not report a resumption time; the figure is genuinely from Mark, Gonzalez &
+Harris (2005). No student-facing wording changed — the inline citation now points to the
+source that supports the specific claim.

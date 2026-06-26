@@ -107,11 +107,11 @@ export const ACCREDITATION: AccreditationSnapshot = {
   // Filled from the independent re-verification pass.
   verification: {
     modulesAudited: 48,
-    claimsChecked: 0,
-    modulesClean: 0,
-    issuesUpheld: 0,
+    claimsChecked: 297,
+    modulesClean: 26,
+    issuesUpheld: 13,
     method:
-      'One independent reviewer per module re-checked every cited claim against its source; each issue raised was then re-tested by a second reviewer instructed to refute it, and only genuine, surviving issues were upheld.',
+      'One independent reviewer per module re-checked every cited claim against its source; each issue raised was then re-tested by a second reviewer instructed to refute it, and only genuine, surviving issues were upheld. 13 genuine issues were upheld across 11 modules — and all 13 have since been resolved (sources re-attributed to the paper that supports the claim, or the claim reframed to what the evidence establishes), each recorded in the Cut Content log.',
     date: '2026-06-26',
   },
 

@@ -10,9 +10,13 @@ import { REF } from './library';
 //
 // DOIs confirmed via CrossRef (see compliance/evidence/catastrophic-thinking.md).
 // Ordered by first appearance — defines the inline <Cite/> numbering.
-//   1 lupien2009 · 2 hofmann2012 · 3 hayes2006
+//   1 kuhlmann2005 · 2 hofmann2012 · 3 hayes2006
+// Note: §1's acute-stress retrieval claim is cited to kuhlmann2005 (acute
+// psychosocial stress impairs memory retrieval in healthy adults). It previously
+// cited lupien2009, which is about CHRONIC lifespan stress, not the acute
+// retrieval block — corrected after the verification pass.
 export const CATASTROPHIC_THINKING_REFERENCE_LIST: Reference[] = [
-  REF.lupien2009,
+  REF.kuhlmann2005,
   REF.hofmann2012,
   REF.hayes2006,
 ];

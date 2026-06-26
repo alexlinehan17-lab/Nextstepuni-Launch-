@@ -244,6 +244,14 @@ export const REF = {
     source: 'Nature Reviews Neuroscience',
     doi: '10.1038/nrn2639',
   },
+  kuhlmann2005: {
+    id: 'kuhlmann2005',
+    authors: 'Kuhlmann, S., Piel, M., & Wolf, O. T.',
+    year: 2005,
+    title: 'Impaired memory retrieval after psychosocial stress in healthy young men',
+    source: 'Journal of Neuroscience',
+    doi: '10.1523/jneurosci.5139-04.2005',
+  },
 
   // Elaborative interrogation / elaboration
   stein1979: {
@@ -471,6 +479,14 @@ export const REF = {
     title: 'The cost of interrupted work: More speed and stress',
     source: 'Proceedings of the SIGCHI Conference on Human Factors in Computing Systems',
     doi: '10.1145/1357054.1357072',
+  },
+  mark2005: {
+    id: 'mark2005',
+    authors: 'Mark, G., Gonzalez, V. M., & Harris, J.',
+    year: 2005,
+    title: 'No task left behind? Examining the nature of fragmented work',
+    source: 'Proceedings of the SIGCHI Conference on Human Factors in Computing Systems',
+    doi: '10.1145/1054972.1055017',
   },
   casey2008: {
     id: 'casey2008',

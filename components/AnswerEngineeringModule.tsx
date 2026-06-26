@@ -722,7 +722,7 @@ const AnswerEngineeringModule: React.FC<{ onBack: () => void; progress: ModulePr
               />
               {essentials ? (
                 <>
-                  <p>Even if your final answer is wrong, steps 1-3 earn marks independently. In a 25-mark question, the answer is worth only <Highlight description="The final numerical answer in most science and maths questions is worth only 4-5 out of 25 marks. The other 20 marks are for showing your process. Students who jump straight to the answer are skipping 80% of the available marks." theme={theme}>4-5 marks</Highlight>.<Cite n={1} /> Show every step.</p>
+                  <p>Even if your final answer is wrong, steps 1-3 earn marks independently. In a 25-mark question, the final answer is only <Highlight description="In most science and maths questions the final answer earns only a small share of the marks; the majority are awarded for showing your method and working. Jumping straight to the answer leaves most of those marks uncollected." theme={theme}>a small part of the marks</Highlight> — most are for showing your method.<Cite n={1} /> Show every step.</p>
                   <StackBuilder />
                   <p>The marks beside a question also tell you the <Highlight description="The 'shape' of an answer means its length and structure. A 4-mark answer should look completely different from a 20-mark answer. The marks are a blueprint telling you exactly how much to write and how to organise it." theme={theme}>SHAPE</Highlight> of your answer. 4 marks = 1-2 sentences. 10 marks = a paragraph. 30+ marks = full essay. Match your answer length to the marks.<Cite n={1} /></p>
                   <ShapeQuiz />
@@ -730,7 +730,7 @@ const AnswerEngineeringModule: React.FC<{ onBack: () => void; progress: ModulePr
               ) : (
                 <>
                   <p>This pattern earns marks at <strong>EVERY step</strong>. Even if your final answer is wrong, steps 1-3 earn method marks independently.</p>
-                  <p>In a <strong>25-mark Maths question</strong>, the final answer is typically worth only <Highlight description="The final numerical answer in most science and maths questions is worth only 4-5 out of 25 marks. The other 20 marks are for showing your process. Students who jump straight to the answer are skipping 80% of the available marks." theme={theme}>4-5 marks</Highlight>. The other 20 marks are for showing your process. Students who jump to the answer skip most of the available marks.<Cite n={1} /></p>
+                  <p>In a <strong>25-mark Maths question</strong>, the final answer earns only <Highlight description="In most science and maths questions the final answer earns only a small share of the marks; the majority are awarded for showing your method and working. Jumping straight to the answer leaves most of those marks uncollected." theme={theme}>a small share of the marks</Highlight> — the majority are for showing your process. Students who jump to the answer leave most of the available marks uncollected.<Cite n={1} /></p>
                   <p>Remember the three types of marks from the Marking Scheme Decoder? This structure hits all three: attempt marks for writing the formula, method marks for substituting and solving, and answer marks for the final result.</p>
                   <StackBuilder />
                 </>

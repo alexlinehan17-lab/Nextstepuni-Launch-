@@ -24,7 +24,7 @@ Exposure Hierarchy and Passengers-on-the-Bus widgets are interactive practice to
 
 | Key | Citation | DOI |
 |-----|----------|-----|
-| lupien2009 | Lupien, McEwen, Gunnar & Heim (2009). Effects of stress throughout the lifespan on the brain, behaviour and cognition. *Nature Reviews Neuroscience*. | [10.1038/nrn2639](https://doi.org/10.1038/nrn2639) |
+| kuhlmann2005 | Kuhlmann, Piel & Wolf (2005). Impaired memory retrieval after psychosocial stress in healthy young men. *Journal of Neuroscience*. | [10.1523/jneurosci.5139-04.2005](https://doi.org/10.1523/jneurosci.5139-04.2005) |
 | hofmann2012 | Hofmann, Asnaani, Vonk, Sawyer & Fang (2012). The efficacy of cognitive behavioral therapy: A review of meta-analyses. *Cognitive Therapy and Research*. | [10.1007/s10608-012-9476-1](https://doi.org/10.1007/s10608-012-9476-1) |
 | hayes2006 | Hayes, Luoma, Bond, Masuda & Lillis (2006). Acceptance and commitment therapy: Model, processes and outcomes. *Behaviour Research and Therapy*. | [10.1016/j.brat.2005.06.006](https://doi.org/10.1016/j.brat.2005.06.006) |
 
@@ -35,9 +35,11 @@ Exposure Hierarchy and Passengers-on-the-Bus widgets are interactive practice to
 - **§1 The Catastrophe Machine** — Catastrophizing (rumination, magnification,
   helplessness) as a cognitive pattern. Descriptive framing of a CBT target; the treatment
   evidence is cited at §3–§6.
-- **§2 Why You Go "Blank"** — Acute stress floods cortisol, impairing hippocampal memory
-  retrieval and prefrontal function ("you've lost the password, not the file")
-  (**lupien2009**). Verified.
+- **§2 Why You Go "Blank"** — Acute stress impairs memory retrieval ("you've lost the
+  password, not the file"): acute psychosocial stress significantly impaired retrieval of
+  learned material in healthy adults (**kuhlmann2005**). Verified. *Source corrected after
+  the verification pass: previously cited lupien2009, which is about chronic lifespan
+  stress, not the acute retrieval block this claim describes.*
 - **§3 Challenging Your Thoughts (CBT)** — CBT is among the most effective, best-evidenced
   approaches for anxiety (**hofmann2012**). Verified.
 - **§4 The Thought Record** — Cognitive restructuring via a structured thought record is a

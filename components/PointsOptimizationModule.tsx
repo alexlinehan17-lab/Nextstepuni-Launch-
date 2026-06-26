@@ -28,8 +28,8 @@ const GRADE_POINTS: Record<string, number> = { H1:100, H2:88, H3:77, H4:66, H5:5
 
 const SUBJECTS_DATA = [
   { name: 'Applied Maths', h1Rate: 27, objectivity: 95, group: 'maths', synergies: ['Mathematics','Physics'] },
-  { name: 'Physics', h1Rate: 20, objectivity: 90, group: 'stem', synergies: ['Mathematics','Applied Maths','Chemistry'] },
-  { name: 'Chemistry', h1Rate: 19, objectivity: 88, group: 'stem', synergies: ['Physics','Biology','Ag Science'] },
+  { name: 'Physics', h1Rate: 11, objectivity: 90, group: 'stem', synergies: ['Mathematics','Applied Maths','Chemistry'] },
+  { name: 'Chemistry', h1Rate: 12, objectivity: 88, group: 'stem', synergies: ['Physics','Biology','Ag Science'] },
   { name: 'Accounting', h1Rate: 16, objectivity: 85, group: 'business', synergies: ['Business','Economics'] },
   { name: 'Mathematics', h1Rate: 16, objectivity: 95, group: 'maths', synergies: ['Applied Maths','Physics','Economics'], isMaths: true },
   { name: 'Biology', h1Rate: 15, objectivity: 75, group: 'life-science', synergies: ['Chemistry','Ag Science','Home Economics'] },
@@ -267,7 +267,7 @@ const H1RateDashboard = () => {
           Show all {SUBJECTS_DATA.length} subjects <ChevronDown size={14} />
         </button>
       )}
-      <p className="text-[10px] text-zinc-400 mt-4 text-center leading-relaxed">Approximate H1 rates, indicative of recent SEC Leaving Certificate (Higher Level) grade distributions. Exact figures vary year to year — check the current SEC examination statistics for the latest.</p>
+      <p className="text-[10px] text-zinc-400 mt-4 text-center leading-relaxed">Illustrative relative estimates of recent SEC Leaving Certificate (Higher Level) H1 rates — for ranking subjects, not official published figures. Rates vary a lot year to year (and rose sharply post-2020); check the current SEC examination statistics for exact numbers.</p>
     </div>
   );
 };
@@ -712,12 +712,12 @@ const PointsOptimizationModule: React.FC<{
           {activeSection === 2 && (
             <ReadingSection title="H1 Probability Map." eyebrow="Step 3" icon={BarChart3} theme={theme}>
               {essentials ? (
-                <p>Your <Highlight description="H1 rates vary hugely by subject." theme={theme}>chances of getting an H1</Highlight> depend on the subject. Applied Maths has rates above 25%. Physics and Chemistry sit around 18-22%. English is only 7-11%.<Cite n={2} /> Use this data to decide where you spend your study time. Protect subjects with high H1 rates. Put extra effort into exam technique for subjects where H1s are rare.</p>
+                <p>Your <Highlight description="H1 rates vary hugely by subject." theme={theme}>chances of getting an H1</Highlight> depend on the subject. Applied Maths and the sciences have some of the highest H1 rates; subjects like English, Geography and Art are among the lowest.<Cite n={2} /> Use this to decide where you spend your study time. Protect subjects with high H1 rates. Put extra effort into exam technique for subjects where H1s are rare.</p>
               ) : (
                 <>
                   <p>Not all H1s are created equal. The SEC's own published data shows huge differences in the percentage of students who get H1s across different subjects.<Cite n={2} /> The figures here are approximate, indicative of recent years' distributions. This isn't necessarily because some subjects are "easier" — it's because your <Highlight description="Your chances of getting an H1 depend on the subject itself — how it's marked, how big the course is, and who else takes it. Some subjects just have way higher H1 rates than others." theme={theme}>chances of getting an H1</Highlight> depend on the subject, how it's marked, and who else takes it.</p>
-                  <p>Applied Maths consistently sees H1 rates above 25%. The course is focused, the exam is pure problem-solving, and the marking is black and white — you either got it right or you didn't. The students who pick it tend to be strong at maths already, which pushes the rates up — but for anyone decent at maths, it's one of the easiest H1s to get.</p>
-                  <p>Physics and Chemistry sit around 18-22%. These subjects reward precision: exact definitions, correct formulae, and mathematical accuracy. The marking schemes are strict. Meanwhile, English — which everyone has to do — historically sits at just 3-5% for H1s (rising to 7-11% recently with grade adjustments). Geography can be as low as 3-4%. When marking is more subjective, your grade depends partly on which examiner reads your paper.</p>
+                  <p>Applied Maths has one of the highest H1 rates of any subject (recently well above 25%, though notably lower before the pandemic). The course is focused, the exam is pure problem-solving, and the marking is black and white — you either got it right or you didn't. The students who pick it tend to be strong at maths already, which pushes the rates up — but for anyone decent at maths, it's one of the easiest H1s to get.</p>
+                  <p>Physics and Chemistry also sit relatively high among the sciences — they reward precision: exact definitions, correct formulae, and mathematical accuracy, marked against strict schemes. Meanwhile, English — which everyone has to do — has one of the lowest H1 rates of the major subjects (only a few percent in most years), and Geography is similarly low. When marking is more subjective, your grade depends partly on which examiner reads your paper.</p>
                   <p>This data should shape both your subject choices and, just as importantly, <strong>where you spend your study time</strong>. If you're already taking a subject with a high H1 rate, protect that advantage. If you're in a subject where H1s are rare, you'll need to put extra time into nailing the exam technique to make up for the tougher marking.</p>
                 </>
               )}
@@ -799,7 +799,7 @@ const PointsOptimizationModule: React.FC<{
                   <PersonalStory name="Ciara" role="6th Year, Galway">
                     <p>I was doing seven subjects and putting equal time into all of them. When I actually sat down and looked at the H1 rates and how objective each subject was, I realised I was spending hours on English essays that might get me 2 extra points, while ignoring Applied Maths where the same effort could have got me 12. Once I shifted my study time around, my mock results jumped by nearly 40 points.</p>
                   </PersonalStory>
-                  <p>One more thing: the post-pandemic grade adjustments are being phased out, so the very high recent H1 rates are expected to ease back toward pre-2020 levels.<Cite n={2} /> It is sensible to prepare for tougher marking — aiming for 93-95% in practice to safely clear the 90% H1 threshold on exam day. The buffer is your safety net.</p>
+                  <p>One more thing: recent H1 rates have been unusually high by historical standards,<Cite n={2} /> and the temporary post-pandemic grade adjustments are being wound down — so today's rates may not hold. It is sensible to prepare for tougher marking — aiming for 93-95% in practice to safely clear the 90% H1 threshold on exam day. The buffer is your safety net.</p>
                 </>
               )}
               <PortfolioOptimizer savedPortfolio={responses['portfolio']} onSave={(p) => saveResponse('portfolio', p)} />

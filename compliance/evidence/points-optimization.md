@@ -52,9 +52,14 @@ not as sourced statistics, and carry no citation.
 - **§2 The Maths Multiplier** — 25-point HL Maths bonus at H6+; H1 = 125, H6 = 71, vs H3
   = 77 in another subject (**caoPoints**). Verified against the CAO scale.
 - **§3 H1 Probability Map** — H1 rates vary substantially by subject (**secExamStatistics**).
-  The *direction* (Applied Maths/sciences high; English/Geography/Art low) is robust; the
-  *exact* percentages are approximate and labelled as such in-app — see the data-accuracy
-  caveat above.
+  The *direction* (Applied Maths/sciences high; English/Geography/Art low) is robust and is
+  all the in-app prose now asserts. *Corrected after the verification pass (POPT-002): the
+  earlier specific bands were contradicted by publicly reported SEC figures — "Physics and
+  Chemistry 18-22%" (actually ~7-13%) and "English 3-5%" (actually ~6-7%). The contested
+  percentage bands were removed from the §3 prose in favour of the qualitative tiers, the
+  two most-wrong dashboard values were corrected (Physics 20→11, Chemistry 19→12), and the
+  dashboard footnote was relabelled "illustrative relative estimates … not official
+  published figures."*
 - **§4 The Objectivity Advantage** — Objective (right/wrong) vs subjective (examiner
   discretion) marking. Presented as an editorial framing/spectrum; the objectivity scores
   are heuristics, not sourced statistics — no citation attached.
@@ -66,9 +71,13 @@ not as sourced statistics, and carry no citation.
   (**secMarkingSchemes** — a documented SEC marking convention). Verified as a marking
   convention; the specific "+3" is presented as practical advice.
 - **§7 Your 625 Blueprint** — Pulls the above together (points recap → **caoPoints**).
-  The grade-adjustment phase-out claim was reframed to the documented SEC/Department
-  policy and cited to **secExamStatistics** (POPT-001). The 93-95% practice buffer is
-  practical advice.
+  The grade-adjustment phase-out claim was reframed (POPT-001) and then, after the
+  verification pass, softened again to a non-prescriptive observation (POPT-003): the
+  forward-looking *forecast* ("expected to ease back to pre-2020 levels") cannot be carried
+  by the backward-looking SEC statistics tables, so the sentence now states the verifiable
+  facts — recent H1 rates are unusually high by historical standards (**secExamStatistics**)
+  and the temporary post-2020 adjustments are being wound down — without asserting a
+  forecast. The 93-95% practice buffer is practical advice.
 
 ---
 
@@ -77,6 +86,8 @@ not as sourced statistics, and carry no citation.
 | ID | Section | Original → Reframed | Reason |
 |----|---------|---------------------|--------|
 | POPT-001 | §7 | "marking standards are tightening. The generous adjustments from 2022-2024 are being phased out…" → "the post-pandemic grade adjustments are being phased out, so the very high recent H1 rates are expected to ease back toward pre-2020 levels…" | Tightened to the documented SEC/Department policy (unwinding of post-2020 grade adjustments), cited to SEC examination statistics, rather than an unsourced claim about marker behaviour. |
+| POPT-002 | §3 + dashboard | "Physics and Chemistry sit around 18-22%. English … 3-5% (rising to 7-11%)" → qualitative tiers ("the sciences relatively high; English/Geography among the lowest, only a few percent"); dashboard Physics 20→11, Chemistry 19→12; footnote → "illustrative relative estimates, not official published figures" | Verification pass: the specific bands were contradicted by publicly reported SEC figures (Physics/Chemistry ~7-13% not 18-22%; English ~6-7% not 3-5%). Unverifiable/incorrect precise figures removed; only the robust directional claim is asserted. |
+| POPT-003 | §7 | "the very high recent H1 rates are expected to ease back toward pre-2020 levels" → "recent H1 rates have been unusually high by historical standards … so today's rates may not hold" | Verification pass: a backward-looking statistics source cannot support a forward-looking forecast; reframed to the verifiable historical observation plus the documented (separately announced) phase-out, with no forecast asserted. |
 
 ## Outstanding for accreditation
 Re-verify the §3 / `SUBJECTS_DATA` H1-rate percentages against the published SEC

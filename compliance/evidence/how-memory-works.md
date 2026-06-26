@@ -43,9 +43,12 @@ citations. One comparative claim was reframed (HMW-001).
   strengthening aside is covered in depth in the Neuroplasticity module.)
 - **§5 Sleep** — Memory consolidation occurs during sleep via hippocampal replay and
   transfer to neocortex. **diekelmann2010.** Verified.
-- **§6 Action plan** — Testing/spacing/interleaving are high-utility techniques
-  (**dunlosky2013**); chronic stress / elevated cortisol impairs memory
-  (**lupien2009**). Verified. Micro-commitment comparison reframed (HMW-001).
+- **§6 Action plan** — Practice testing and distributed (spaced) practice are rated
+  **high**-utility by **dunlosky2013**; interleaving is rated **moderate**-utility in the
+  same review (corrected after the verification pass — the earlier wording lumped
+  interleaving into the high-utility tier the source does not place it in). Chronic stress /
+  elevated cortisol impairs memory (**lupien2009**). Verified. Micro-commitment comparison
+  reframed (HMW-001).
 
 ---
 

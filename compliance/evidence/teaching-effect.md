@@ -41,12 +41,18 @@ Teach-vs-Test chart and Explain-It-Back / Feynman widgets are illustrative inter
 - **§2 Explaining Changes How You Think** — Explaining/self-explaining forces
   restructuring and exposes gaps; "rebuilding" (generative) beats "parroting"
   (**chi1989**). Verified.
-- **§3 You Don't Need an Audience** — Self-explanation of worked examples produces better
-  problem-solving transfer than passive reading (**chi1989**). Verified. The "82%/46%"
-  experimental framing was reframed (TE-001).
-- **§4 The Simplicity Technique** — Generative explanation (the "Feynman technique") beats
-  passive reading (**chi1989**). The technique is a named study method; the underlying
-  generative-learning claim is cited. Verified.
+- **§3 You Don't Need an Audience** — Students who spontaneously self-explained worked
+  examples went on to solve more new problems (**chi1989**). Verified. *Reframed after the
+  verification pass (TE-002): Chi (1989) is correlational (good vs poor solvers; explanation
+  was measured, not manipulated, with no passive-reading control), so the "…than those who
+  just read" head-to-head was dropped — the claim is now the association the study supports.*
+  The earlier "82%/46%" experimental framing was already reframed (TE-001).
+- **§4 The Simplicity Technique** — Generating your own explanations (the "Feynman
+  technique") is linked to deeper learning than passively reading (**chi1989**); the
+  technique is a named study method. Verified. *Reframed after the verification pass
+  (TE-002): "beats passive reading every time" overstated Chi's correlational design as a
+  causal head-to-head and was softened to the associational claim (self-explanation is
+  rated moderate-utility by Dunlosky 2013, also referenced in this module).*
 - **§5 Putting It All Together** — Self-testing ranks among the most effective techniques
   and highlighting/re-reading/summarising among the least (**dunlosky2013**). Verified;
   self-explanation ranking softened to "among the most effective."

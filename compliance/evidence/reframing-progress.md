@@ -28,7 +28,7 @@ are practical productivity tools, not empirical claims.
 
 | Key | Citation | DOI |
 |-----|----------|-----|
-| koriat2005 | Koriat, Bjork, Sheffer & Bar (2005). Predicting one's own forgetting: The role of experience-based and theory-based processes. *J. Experimental Psychology: General*. | [10.1037/0278-7393.31.2.187](https://doi.org/10.1037/0278-7393.31.2.187) |
+| koriat2005 | Koriat & Bjork (2005). Illusions of competence in monitoring one's knowledge during study. *J. Experimental Psychology: Learning, Memory, and Cognition*. | [10.1037/0278-7393.31.2.187](https://doi.org/10.1037/0278-7393.31.2.187) |
 | ericsson1993 | Ericsson, Krampe & Tesch-Römer (1993). The role of deliberate practice in the acquisition of expert performance. *Psychological Review*. | [10.1037/0033-295x.100.3.363](https://doi.org/10.1037/0033-295x.100.3.363) |
 | dweckleggett1988 | Dweck & Leggett (1988). A social-cognitive approach to motivation and personality. *Psychological Review*. | [10.1037/0033-295x.95.2.256](https://doi.org/10.1037/0033-295x.95.2.256) |
 

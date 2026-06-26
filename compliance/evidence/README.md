@@ -9,6 +9,12 @@ attach a citation that can't be verified against a real, locatable paper; refram
 cut anything unverifiable (logged in `data/cutContent.ts`). See `CLAUDE.md` →
 "Module accreditation & evidence dossier".
 
+**Independent verification pass (2026-06-26):** all 48 accredited modules were put through
+a second, adversarial check — one reviewer per module re-confirmed each citation supports
+its *specific* claim, with every issue independently re-tested. 297 cited claims checked,
+26 modules fully clean, 13 genuine issues upheld and **all 13 resolved**. Full report:
+`VERIFICATION-2026-06-26.md`. The in-app Accreditation Dossier page summarises it.
+
 ## Queue — Group A (psychology / learning-science, 37)
 
 ### 🎯 Learning Cheat Codes (15)

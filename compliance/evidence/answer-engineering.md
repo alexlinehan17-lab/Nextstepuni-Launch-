@@ -43,8 +43,14 @@ in-repo **Business 2015 Chief Examiner's Report**.
   no citation. (The premise that structured, evidence-backed paragraphs earn marks is the
   §1 marking-convention point.)
 - **§3 The Science Answer Stack (S³S)** — S³S is a mnemonic scaffold. The verifiable claim
-  underneath — method marks earned at each step, with the final answer worth only ~4-5 of
-  25 marks — is the SEC partial/method-credit convention (**secMarkingSchemes**).
+  underneath — method/partial credit is earned at each step and the final answer is only a
+  small share of the marks, so showing working is what earns most marks — is the SEC
+  partial-credit convention (**secMarkingSchemes**; reinforced by the Maths Chief
+  Examiner's "marks are generally not awarded for an incorrect answer without supporting
+  work"). *Reframed after the verification pass (AE-002): the specific "~4-5 of 25 / 80% is
+  process" figures were dropped — the generic SEC marking-scheme archive does not establish
+  a fixed universal split (schemes use question-specific partial-credit scales), so only
+  the qualitative "most marks are for method" claim is retained.*
 - **§4 The Marks-Shape Connection** — Mark allocation signals expected answer length and
   structure; "3 × 5" style allocations are separately-marked sub-parts
   (**secMarkingSchemes**). Verified convention.

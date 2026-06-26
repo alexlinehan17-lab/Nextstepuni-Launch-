@@ -625,4 +625,110 @@ export const CUT_CONTENT: CutContentEntry[] = [
       'Follow-on from the structure correction: there are ~9 questions across Section A and Section B, not 6, so "25 minutes per question" was wrong. Replaced with a marks-based pace derived from the verified 300-marks-in-150-minutes structure.',
     date: '2026-06-26',
   },
+
+  // ─── Independent verification pass (2026-06-26) — upheld citation issues ─────
+  {
+    id: 'spaced-repetition-001',
+    module: 'Mastering Spaced Repetition',
+    section: '§4 The Best Review Schedule',
+    action: 'reframed',
+    original:
+      'Your review gap should be roughly 5-20% of the time until the test … longer retention intervals call for proportionally longer gaps.',
+    reframedTo:
+      'A fraction of the time until the test — about 20-40% of the interval for a test a week away, shrinking to ~5-10% for a year away; the absolute gap grows, the proportion shrinks.',
+    reason:
+      'Verification pass: Cepeda et al. (2008) report the optimal gap as a PROPORTION of the test delay DECLINES (≈20-40% at 1 week → ≈5-10% at 1 year). The original both truncated the short-delay band (5-20%) and stated the proportion direction backwards ("proportionally longer gaps").',
+    date: '2026-06-26',
+  },
+  {
+    id: 'answer-engineering-002',
+    module: 'Answer Engineering',
+    section: '§3 The Science Answer Stack',
+    action: 'reframed',
+    original:
+      'In a 25-mark question, the answer is worth only 4-5 marks … most science and maths questions … only 4-5 out of 25 marks … skipping 80% of the available marks.',
+    reframedTo:
+      'The final answer earns only a small share of the marks; the majority are for showing your method and working.',
+    reason:
+      'Verification pass: the generic SEC marking-scheme archive (the cited source) does not establish a fixed 4-5/25 split — schemes use question-specific partial-credit scales. The specific "4-5 of 25" and "80%" figures were dropped; only the supported qualitative claim (most marks are for method) is kept.',
+    date: '2026-06-26',
+  },
+  {
+    id: 'exam-hall-strategies-001',
+    module: 'Exam Hall Strategies',
+    section: '§4 Order of Attack',
+    action: 'reframed',
+    original:
+      'Your brain keeps working on it in the background, so the answer often clicks when you come back to it later.',
+    reframedTo:
+      'Stepping away can sometimes help: taking a break before you return to a stubborn question may let the answer come more easily.',
+    reason:
+      'Verification pass: Sio & Ormerod (2009) find incubation helps most for divergent tasks and least when the break is filled with other high-demand work — the exam case. The prescriptive/causal "often clicks when you come back" was softened to non-prescriptive "can sometimes help."',
+    date: '2026-06-26',
+  },
+  {
+    id: 'exam-hall-strategies-002',
+    module: 'Exam Hall Strategies',
+    section: '§6 Staying Calm Under Pressure',
+    action: 'reframed',
+    original:
+      'The fastest trick is Box Breathing … It physically calms your nervous system down in under a minute.',
+    reframedTo:
+      'One reliable tool is slow, structured breathing — like Box Breathing — to settle your nervous system.',
+    reason:
+      'Verification pass: Balban et al. (2023) show arousal reduction for structured breathwork broadly (especially cyclic sighing) over daily practice, not a box-breathing-specific or acute "under a minute" effect. The technique-specific and acute claims were dropped.',
+    date: '2026-06-26',
+  },
+  {
+    id: 'reverse-engineering-001',
+    module: 'Reverse Engineering the Exam',
+    section: '§2 Why backwards works (Future Thinking)',
+    action: 'reframed',
+    original:
+      'Picturing exam day makes each step feel necessary and keeps you motivated. … It is a motivation boost.',
+    reframedTo:
+      'Picturing exam day makes the future feel real and weigh more in today\'s choices, so it is easier to follow through on each step.',
+    reason:
+      'Verification pass: Peters & Büchel (2010) measure episodic future thinking reducing delay discounting (intertemporal choice), not "motivation". Reframed to the delay-discounting mechanism the study establishes.',
+    date: '2026-06-26',
+  },
+  {
+    id: 'teaching-effect-002',
+    module: 'The Teaching Effect',
+    section: '§3 / §4 self-explanation',
+    action: 'reframed',
+    original:
+      'students who paused to explain each step to themselves solved far more new problems than those who just read … Actively creating explanations beats passive reading every time.',
+    reframedTo:
+      'the students who spontaneously explained each step to themselves went on to solve far more new problems … actively creating explanations is linked to deeper learning than passively reading.',
+    reason:
+      'Verification pass: Chi et al. (1989) is correlational (good vs poor solvers; explanation measured, not manipulated; no passive-reading control). The "than those who just read" / "beats passive reading every time" causal head-to-head was softened to the association the study supports.',
+    date: '2026-06-26',
+  },
+  {
+    id: 'points-optimization-002',
+    module: 'The 625 Blueprint (Points Optimization)',
+    section: '§3 H1 Probability Map + dashboard',
+    action: 'corrected',
+    original:
+      'Physics and Chemistry sit around 18-22%. English … historically sits at just 3-5% (rising to 7-11%). [dashboard: Physics 20, Chemistry 19]',
+    reframedTo:
+      'Qualitative tiers (sciences relatively high; English/Geography among the lowest, only a few percent); dashboard Physics 20→11, Chemistry 19→12; footnote relabelled "illustrative relative estimates, not official published figures".',
+    reason:
+      'Verification pass: the specific bands were contradicted by publicly reported SEC figures (Physics/Chemistry ~7-13% not 18-22%; English ~6-7% not 3-5%). Unverifiable/incorrect precise figures removed; only the robust directional claim is asserted.',
+    date: '2026-06-26',
+  },
+  {
+    id: 'points-optimization-003',
+    module: 'The 625 Blueprint (Points Optimization)',
+    section: '§7 Your 625 Blueprint',
+    action: 'reframed',
+    original:
+      'the very high recent H1 rates are expected to ease back toward pre-2020 levels.',
+    reframedTo:
+      'recent H1 rates have been unusually high by historical standards, and the temporary post-pandemic grade adjustments are being wound down — so today\'s rates may not hold.',
+    reason:
+      'Verification pass: a backward-looking SEC statistics source cannot support a forward-looking forecast. Reframed to the verifiable historical observation plus the separately-announced phase-out, with no forecast asserted.',
+    date: '2026-06-26',
+  },
 ];

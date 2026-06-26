@@ -45,21 +45,33 @@ All four DOIs verified against CrossRef.
   Framed as "tend to score higher," matching the study's effect, not a guarantee.
 - **§3 Reading Time Triage** — Traffic-light sorting, anchor questions. Practical
   strategy; no citation.
-- **§4 Order of Attack** — "Your brain keeps working on it in the background" when you
-  skip and return: the incubation effect, meta-analytically supported (**sio2009**).
-  The 30-second rule and momentum framing are practical heuristics.
+- **§4 Order of Attack** — "Stepping away can sometimes help" when you skip and return:
+  the incubation effect (**sio2009**). *Reframed after the verification pass (EHS-001):
+  Sio & Ormerod find incubation helps most for divergent tasks and least when the break is
+  filled with other high-demand work — exactly the exam case — so the earlier prescriptive
+  "your brain keeps working … the answer often clicks when you come back" was softened to
+  non-prescriptive "can sometimes help."* The 30-second rule and momentum framing are
+  practical heuristics.
 - **§5 Time Budgeting** — Minutes-per-mark, hard-stop, the sunk-cost trap. Exam-time
   arithmetic and decision framing; no empirical citation attached.
-- **§6 Staying Calm Under Pressure** — Box breathing physically lowers arousal
-  (**balban2023**, a randomised study of brief structured breathing). The 3-3-3
-  grounding and reappraisal/reframing tools are presented as practical techniques
-  without an empirical citation.
+- **§6 Staying Calm Under Pressure** — Slow, structured breathing lowers physiological
+  arousal (**balban2023**, a randomised study of brief structured respiration), with Box
+  Breathing presented as one such pattern. *Reframed after the verification pass
+  (EHS-002): balban2023's significant arousal reduction is for breathwork broadly
+  (especially cyclic sighing) over daily practice, not box-breathing-specific or an acute
+  "calms in under a minute" effect — so those specifics were dropped and the claim narrowed
+  to "slow structured breathing settles the nervous system."* The 3-3-3 grounding and
+  reappraisal/reframing tools are practical techniques without an empirical citation.
 - **§7 Practice Drills** — Exam wrappers and timed drills. Practical metacognitive
   advice; no citation.
 
 ---
 
-## Reframed content
-None cut. Every empirical claim maps to a verified peer-reviewed source; the rest is
-practical exam strategy that makes no empirical assertion. No `data/cutContent.ts`
-entry for this module.
+## Reframed content (also logged in `data/cutContent.ts`)
+Nothing was cut at first review. The independent verification pass (2026-06-26) then
+softened two claims to match their sources:
+
+| ID | Section | Reframe | Reason |
+|----|---------|---------|--------|
+| EHS-001 | §4 | "your brain keeps working on it … the answer often clicks when you come back" → "stepping away can sometimes help" | sio2009 finds incubation weakest exactly in the exam case (break filled with other hard questions); prescriptive overreach softened. |
+| EHS-002 | §6 | "the fastest trick is Box Breathing … calms your nervous system in under a minute" → "slow, structured breathing … settles your nervous system" | balban2023 supports structured breathwork broadly (esp. cyclic sighing) over daily practice, not box-breathing-specific acute rescue. |
