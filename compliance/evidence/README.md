@@ -74,5 +74,11 @@ follow-up sourcing pass.
 - [x] Answer Engineering — `answer-engineering.md`
 
 ### 📚 Subject-Specific (37) — per-subject SEC reports needed
-Deferred pending subject Chief Examiner reports in `/examiner-reports/` (only Business
-and Maths are currently in-repo).
+Citation support is wired into the data-driven subject modules (`{{cite:N}}` marker in
+`SubjectModule.tsx` + optional `references` on `SubjectModuleContent`). Accredited where
+in-repo SEC reports exist; the rest are deferred pending subject Chief Examiner reports /
+marking schemes in `/examiner-reports/`.
+
+- [x] Business — `subject-business.md` (corrected 4 factual errors vs 2025 marking scheme)
+- [ ] Mathematics — in progress (maths 2015 Chief Examiner report in-repo)
+- [ ] Remaining 35 — awaiting per-subject SEC reports

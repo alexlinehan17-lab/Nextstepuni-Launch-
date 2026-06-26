@@ -1119,4 +1119,14 @@ export const REF = {
     url: 'https://www.examinations.ie/misc-doc/EN-EX-7083525.pdf',
     repoPath: 'examiner-reports/business/2015-chief-examiner.pdf',
   },
+  secBusinessMarkingScheme2025: {
+    id: 'secBusinessMarkingScheme2025',
+    authors: 'State Examinations Commission',
+    year: 2025,
+    title: 'Leaving Certificate Business Higher Level 2025 — Marking Scheme (paper structure, section weightings, ABQ Name/Explain/Link requirement, and per-part mark allocations)',
+    source: 'SEC — examinations.ie',
+    kind: 'official',
+    url: 'https://www.examinations.ie/exammaterialarchive/',
+    repoPath: 'examiner-reports/business/2025-marking-scheme.pdf',
+  },
 } satisfies Record<string, Reference>;

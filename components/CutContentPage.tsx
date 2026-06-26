@@ -12,17 +12,19 @@ interface CutContentPageProps {
 }
 
 const ActionTag: React.FC<{ action: CutContentEntry['action'] }> = ({ action }) => {
-  const reframed = action === 'reframed';
+  // Reframed and corrected both keep content (green); removed strips it (accent).
+  const kept = action === 'reframed' || action === 'corrected';
+  const label = action === 'reframed' ? 'Reframed' : action === 'corrected' ? 'Corrected' : 'Removed';
   return (
     <span
       className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-[0.06em]"
       style={
-        reframed
+        kept
           ? { backgroundColor: '#E8F2EC', color: '#1F5F3E', border: '1px solid rgba(58,141,95,0.3)' }
           : { backgroundColor: '#FDEEDF', color: '#8C3A0E', border: '1px solid rgba(242,107,31,0.25)' }
       }
     >
-      {reframed ? 'Reframed' : 'Removed'}
+      {label}
     </span>
   );
 };
@@ -59,7 +61,7 @@ const CutEntryCard: React.FC<{ entry: CutContentEntry }> = ({ entry }) => (
     {entry.reframedTo && (
       <div className="rounded-lg p-3 mb-3" style={{ backgroundColor: '#E8F2EC', borderLeft: '3px solid #3A8D5F' }}>
         <p className="text-[10px] font-bold uppercase tracking-[0.12em] mb-1" style={{ color: '#1F5F3E' }}>
-          Reframed to
+          {entry.action === 'corrected' ? 'Corrected to' : 'Reframed to'}
         </p>
         <p className="text-[13px] leading-relaxed italic" style={{ color: '#1F5F3E' }}>{entry.reframedTo}</p>
       </div>

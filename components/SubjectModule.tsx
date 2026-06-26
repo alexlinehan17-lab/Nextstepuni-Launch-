@@ -8,6 +8,7 @@ import { Compass, Target, TrendingUp, AlertTriangle, BrainCircuit, Rocket } from
 import { type ModuleProgress, type ModuleTheme } from '../types';
 import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
 import {
   amberTheme, blueTheme, roseTheme, emeraldTheme, orangeTheme,
   tealTheme, cyanTheme, slateTheme, skyTheme, redTheme,
@@ -27,7 +28,9 @@ const THEME_MAP: Record<string, ModuleTheme> = {
 };
 
 /**
- * Parse paragraph text with **bold** and [[highlight]] markers into React nodes.
+ * Parse paragraph text with **bold**, [[highlight]] and {{cite:N}} markers into
+ * React nodes. The {{cite:N}} marker renders an inline <Cite n={N}/> superscript
+ * (1-based), matching the dedicated modules' citation UX.
  */
 function renderParagraph(text: string, highlights: SubjectHighlight[], theme: ModuleTheme): React.ReactNode {
   const parts: React.ReactNode[] = [];
@@ -37,16 +40,27 @@ function renderParagraph(text: string, highlights: SubjectHighlight[], theme: Mo
   while (remaining.length > 0) {
     const hlStart = remaining.indexOf('[[');
     const boldStart = remaining.indexOf('**');
+    const citeStart = remaining.indexOf('{{cite:');
 
     const nextHl = hlStart >= 0 ? hlStart : Infinity;
     const nextBold = boldStart >= 0 ? boldStart : Infinity;
+    const nextCite = citeStart >= 0 ? citeStart : Infinity;
 
-    if (nextHl === Infinity && nextBold === Infinity) {
+    const next = Math.min(nextHl, nextBold, nextCite);
+
+    if (next === Infinity) {
       parts.push(remaining);
       break;
     }
 
-    if (nextHl < nextBold) {
+    if (next === nextCite) {
+      if (citeStart > 0) parts.push(remaining.slice(0, citeStart));
+      const citeEnd = remaining.indexOf('}}', citeStart);
+      if (citeEnd < 0) { parts.push(remaining); break; }
+      const n = parseInt(remaining.slice(citeStart + 7, citeEnd), 10);
+      if (!Number.isNaN(n)) parts.push(<Cite key={key++} n={n} />);
+      remaining = remaining.slice(citeEnd + 2);
+    } else if (next === nextHl) {
       if (hlStart > 0) parts.push(remaining.slice(0, hlStart));
       const hlEnd = remaining.indexOf(']]', hlStart);
       if (hlEnd < 0) { parts.push(remaining); break; }
@@ -104,6 +118,7 @@ const SubjectModule: React.FC<SubjectModuleProps> = ({ subjectId, onBack, progre
       onBack={onBack}
       progress={progress}
       onProgressUpdate={onProgressUpdate}
+      references={content.references}
       finishButtonText={content.finishButtonText}
     >
       {(activeSection) => (

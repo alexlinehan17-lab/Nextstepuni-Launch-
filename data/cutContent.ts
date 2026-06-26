@@ -21,7 +21,7 @@
 // When cutting or reframing content, append an entry below. Keep `original`
 // as the verbatim text that was removed so it can be reviewed in context.
 
-export type CutAction = 'removed' | 'reframed';
+export type CutAction = 'removed' | 'reframed' | 'corrected';
 
 export interface CutContentEntry {
   /** Stable unique id (e.g. `${moduleId}-001`). */
@@ -520,5 +520,57 @@ export const CUT_CONTENT: CutContentEntry[] = [
     reason:
       'The qualitative point (examiners mark at volume under time pressure, so findable structure matters) is well-supported and emphasised in Chief Examiner reports, but the specific figures "400+ scripts" and "2-3 minutes per answer" could not be verified against a locatable SEC source. The unverifiable precise numbers were removed and the verifiable qualitative claim kept.',
     date: '2026-06-24',
+  },
+  {
+    id: 'subject-business-001',
+    module: 'Mastering Business (subject)',
+    section: 'Section 1 / Section 3 — exam structure',
+    action: 'corrected',
+    original:
+      'Section 1 ... You answer 10 out of 15 questions, each worth 8 marks. ... Ten questions at 8 marks each.',
+    reframedTo:
+      'Section 1 ... You answer 8 short questions, each worth 10 marks. ... Eight questions at 10 marks each.',
+    reason:
+      'Factual error. The in-repo SEC Business HL 2025 marking scheme states Section 1 is "Answer 8 questions. Each question carries 10 marks." The original question count (10) and per-question marks (8) were both wrong; corrected against the marking scheme.',
+    date: '2026-06-26',
+  },
+  {
+    id: 'subject-business-002',
+    module: 'Mastering Business (subject)',
+    section: 'Sections 1, 3, 5, 6 — ABQ units',
+    action: 'corrected',
+    original:
+      'The ABQ draws from Units 3, 4, and 5 of the syllabus: Management Activities, Managing People (HR), and Enterprise and Marketing.',
+    reframedTo:
+      'The 2025 ABQ drew from Units 2, 3, and 4 of the syllabus: Enterprise, Management, and Human Resources.',
+    reason:
+      'Factual error. The 2025 marking scheme labels the Applied Business Question "Units 2, 3 & 4", and the 2025 ABQ covered enterprise skills, management control, and HRM (no marketing). The unit numbers and topic set were corrected to the marking scheme, and the unit set is now stated as the 2025 set rather than implied to be fixed.',
+    date: '2026-06-26',
+  },
+  {
+    id: 'subject-business-003',
+    module: 'Mastering Business (subject)',
+    section: 'Section 1 — Section 3 selection',
+    action: 'corrected',
+    original:
+      'You choose 4 from 7 questions, each worth 60 marks.',
+    reframedTo:
+      'You answer 4 questions, each worth 60 marks — at least one from Part 1 (People in Business / Business Environment) and one from Part 2.',
+    reason:
+      'The "4 questions x 60 marks = 240" was correct, but the selection rule was incomplete. The 2025 marking scheme specifies one question from each Part plus two further questions; the Part-selection constraint was added.',
+    date: '2026-06-26',
+  },
+  {
+    id: 'subject-business-004',
+    module: 'Mastering Business (subject)',
+    section: 'Section 2 — sub-part marks / depth',
+    action: 'reframed',
+    original:
+      'Part (a) might be a definition or list worth 10-15 marks, part (b) asks for explanation worth 20-25 marks, and part (c) demands evaluation worth 20-25 marks. ... three well-developed points score higher than six shallow ones.',
+    reframedTo:
+      'Part (a) might be a definition or list, part (b) asks for explanation, and part (c) demands evaluation or application. ... fully developed points score higher than a longer list of one-word or undeveloped ones.',
+    reason:
+      'The specific per-part mark figures and the precise "three vs six points" ratio were invented (Section 3 part allocations vary by question in the scheme). Reframed to the verifiable developed-vs-undeveloped principle from the 2015 Chief Examiner report.',
+    date: '2026-06-26',
   },
 ];

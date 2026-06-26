@@ -4,6 +4,7 @@
  */
 
 import { type SubjectModuleContent } from './subjectModuleData';
+import { SUBJECT_BUSINESS_REFERENCE_LIST } from './data/references/subjectBusiness';
 
 export const BUSINESS_CONTENT: Record<string, SubjectModuleContent> = {
   // ─────────────────────────────────────────────────────────────────────────
@@ -188,10 +189,10 @@ export const BUSINESS_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'How Business Actually Works',
         eyebrow: '01 // Exam Structure',
         paragraphs: [
-          'The Leaving Certificate Business Higher Level exam is a **single paper** lasting **3 hours** and worth **400 marks**. It is split into [[three sections]] with very different demands, and understanding what each section asks of you is the first step toward a top grade.',
-          '**Section 1** is short questions, worth **80 marks (20%)** of the total. You answer 10 out of 15 questions, each worth 8 marks. These test definitions, brief explanations, and quick recall across the entire syllabus. Section 1 is your warm-up — it should take no more than 30 minutes.',
-          '**Section 2** is the [[Applied Business Question (ABQ)]], worth **80 marks (20%)**. This is a case study — a scenario about a real or fictional business — followed by three sub-questions (typically A, B, and C). The ABQ draws from **Units 3, 4, and 5** of the syllabus: Management Activities, Managing People (HR), and Enterprise and Marketing. You must link your answers directly back to the text — this is what separates the ABQ from a regular long question.',
-          '**Section 3** is the long questions section, worth **240 marks (60%)**. You choose **4 from 7** questions, each worth **60 marks**. These questions can come from any unit on the syllabus and typically have sub-parts (a), (b), and sometimes (c). This is where the bulk of your marks are, and it rewards students who have studied broadly rather than gambling on specific topics.',
+          'The Leaving Certificate Business Higher Level exam is a **single paper** lasting **3 hours** and worth **400 marks**. It is split into [[three sections]] with very different demands, and understanding what each section asks of you is the first step toward a top grade.{{cite:1}}',
+          '**Section 1** is short questions, worth **80 marks (20%)** of the total. You answer **8 short questions, each worth 10 marks**.{{cite:1}} These test definitions, brief explanations, and quick recall across the entire syllabus. Section 1 is your warm-up — it should take no more than 30 minutes.',
+          '**Section 2** is the [[Applied Business Question (ABQ)]], worth **80 marks (20%)**. This is a case study — a scenario about a real or fictional business — followed by three sub-questions (A, B, and C). The 2025 ABQ drew from **Units 2, 3, and 4** of the syllabus: Enterprise, Management, and Human Resources.{{cite:1}} You must link your answers directly back to the text — every point needs a relevant quote or phrase from the ABQ, or it earns no marks.{{cite:1}}',
+          '**Section 3** is the long questions section, worth **240 marks (60%)**. You answer **4 questions, each worth 60 marks** — at least one from Part 1 (People in Business / Business Environment) and one from Part 2.{{cite:1}} These questions can come from any unit on the syllabus and typically have sub-parts (a), (b), and sometimes (c). This is where the bulk of your marks are, and it rewards students who have studied broadly rather than gambling on specific topics.',
         ],
         highlights: [
           {
@@ -202,7 +203,7 @@ export const BUSINESS_CONTENT: Record<string, SubjectModuleContent> = {
           {
             term: 'Applied Business Question (ABQ)',
             description:
-              'A case study question worth 80 marks (20%) based on Units 3-5 (Management, HR, Enterprise, Marketing) requiring direct links to the text.',
+              'A case study question worth 80 marks (20%). The 2025 ABQ drew from Units 2-4 (Enterprise, Management, HR) and required direct links to the text.',
           },
         ],
       },
@@ -211,10 +212,10 @@ export const BUSINESS_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'What the Examiner Rewards',
         eyebrow: '02 // Marking Criteria',
         paragraphs: [
-          'Business examiners are trained to look for **structured answers**. The two answer frameworks you need are [[SEE]] and [[SEEE]]. **SEE** stands for **State, Explain, Example** — you name the concept, explain what it means, and give a relevant example. **SEEE** adds an extra E for **Elaborate** or **Evaluate**, which means you take it further by discussing advantages, disadvantages, or implications.',
-          'For the ABQ in Section 2, the framework shifts to **State, Explain, Link**. The "Link" is the critical difference: you must connect your answer directly to the case study using **quotes or paraphrases** from the text. An ABQ answer without linking to the scenario is an incomplete answer, no matter how good your theory is. Examiners are specifically instructed to reward text-based linking.',
-          '**Action words** in the question are your instructions. "Illustrate" means give an example. "Evaluate" means weigh up pros and cons. "Distinguish" means show the differences between two things. "Outline" requires less depth than "Discuss." Students who ignore action words give the wrong type of answer and lose marks even when their knowledge is correct.',
-          'In Section 3, each 60-mark question typically has sub-parts that build in complexity. Part (a) might be a definition or list worth 10-15 marks, part (b) asks for explanation worth 20-25 marks, and part (c) demands evaluation or application worth 20-25 marks. The examiner rewards **depth over breadth** — three well-developed points score higher than six shallow ones.',
+          'Business examiners are trained to look for **structured answers**. The two answer frameworks you need are [[SEE]] and [[SEEE]]. **SEE** stands for **State, Explain, Example** — you name the concept, explain what it means, and give a relevant example. **SEEE** adds an extra E for **Elaborate** or **Evaluate**, which means you take it further by discussing advantages, disadvantages, or implications. The marking scheme uses exactly this "Name, Explain, Example" pattern when allocating marks.{{cite:1}}',
+          'For the ABQ in Section 2, the framework shifts to **State, Explain, Link** (the scheme calls it Name, Explain, Link). The "Link" is the critical difference: you must connect your answer directly to the case study using a **direct quote or phrase** from the text. The marking scheme states that no link mark is awarded without relevant theory, and that a separate link is required in each part.{{cite:1}}',
+          '**Action words** in the question are your instructions. "Illustrate" means give an example. "Evaluate" means weigh up pros and cons. "Distinguish" means show the differences between two things. "Outline" requires less depth than "Discuss." Students who ignore action words give the wrong type of answer and lose marks even when their knowledge is correct.{{cite:2}}',
+          'In Section 3, each 60-mark question typically has sub-parts that build in complexity. Part (a) might be a definition or list, part (b) asks for explanation, and part (c) demands evaluation or application. The examiner rewards **depth over breadth** — fully developed points score higher than a longer list of one-word or undeveloped ones.{{cite:2}}',
         ],
         highlights: [
           {
@@ -234,16 +235,16 @@ export const BUSINESS_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'Where Your Marks Are',
         eyebrow: '03 // High-Value Zones',
         paragraphs: [
-          'Section 3 is worth **240 marks — 60% of the entire paper**. This is where your grade is made. With four questions at 60 marks each, every long question you answer well is worth 15% of your final result. Students who prepare thoroughly for Section 3 give themselves the strongest possible foundation.',
-          'The [[ABQ]] is your other high-value target at **80 marks (20%)**. Because the ABQ always draws from Units 3-5 (Management, Human Resources, Enterprise, and Marketing), these units deserve extra study time. If you know Units 3-5 deeply and can apply them to a case study, you have already covered the ABQ and at least 2-3 of the Section 3 long questions.',
+          'Section 3 is worth **240 marks — 60% of the entire paper**.{{cite:1}} This is where your grade is made. With four questions at 60 marks each, every long question you answer well is worth 15% of your final result. Students who prepare thoroughly for Section 3 give themselves the strongest possible foundation.',
+          'The [[ABQ]] is your other high-value target at **80 marks (20%)**. Because the ABQ draws heavily on the management, enterprise, and HR units (Units 2-4 in 2025), these units deserve extra study time.{{cite:1}} If you know them deeply and can apply them to a case study, you have already covered the ABQ and several of the Section 3 long questions.',
           'Within Section 3, certain topics appear with [[high frequency]]. Management and leadership styles, motivation theories (Maslow, McGregor, Herzberg), marketing concepts (the 4 Ps, market research, product life cycle), sources of finance, business planning, and industrial relations are perennial favourites. Examining the last 10 years of papers reveals that these topics appear in some form almost every year.',
-          'Section 1 is worth 80 marks (20%), and it is the most mark-efficient section per minute spent. Ten questions at 8 marks each, drawn from across the syllabus — students who revise broadly and know their definitions can pick up these marks quickly, freeing up more time for the heavier sections.',
+          'Section 1 is worth 80 marks (20%), and it is the most mark-efficient section per minute spent. Eight questions at 10 marks each, drawn from across the syllabus — students who revise broadly and know their definitions can pick up these marks quickly, freeing up more time for the heavier sections.{{cite:1}}',
         ],
         highlights: [
           {
             term: 'ABQ',
             description:
-              'The Applied Business Question — 80 marks (20%) drawn from Units 3-5. High-value because the topics overlap with Section 3.',
+              'The Applied Business Question — 80 marks (20%), drawing on the enterprise, management and HR units (Units 2-4 in 2025). High-value because the topics overlap with Section 3.',
           },
           {
             term: 'high frequency',
@@ -257,10 +258,10 @@ export const BUSINESS_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'What Costs You Marks',
         eyebrow: '04 // Common Pitfalls',
         paragraphs: [
-          'The most common mark-killer in Business is [[failing to link]] in the ABQ. Students write excellent theory but forget to tie it back to the case study. The examiner literally looks for references to the text — quotes, names, figures from the scenario. If your answer could apply to any business, you have not linked it. Every ABQ point should contain at least one direct reference to the passage.',
-          'The second major pitfall is **ignoring the action word**. If the question says "Evaluate," you need to weigh up advantages and disadvantages. If it says "Illustrate," you need a concrete example. If it says "Distinguish," you must show clear differences. Writing a general explanation when the question demands evaluation loses marks because you are answering a different question.',
+          'The most common mark-killer in Business is [[failing to link]] in the ABQ. Students write excellent theory but forget to tie it back to the case study. The examiner literally looks for references to the text — a direct quote, name, or figure from the scenario — and awards no link mark without it. If your answer could apply to any business, you have not linked it. Every ABQ point should contain at least one direct reference to the passage.{{cite:1}}',
+          'The second major pitfall is **ignoring the action word**. If the question says "Evaluate," you need to weigh up advantages and disadvantages. If it says "Illustrate," you need a concrete example. If it says "Distinguish," you must show clear differences. Writing a general explanation when the question demands evaluation loses marks because you are answering a different question.{{cite:2}}',
           'Time management trips up a surprising number of students. A common mistake is spending 50 minutes on the ABQ (meant to take about 35-40 minutes) and then rushing the final long question. With 4 long questions to answer in Section 3, you need approximately **30 minutes per question**. Going even 10 minutes over on one question steals marks from another.',
-          'Finally, many students only write [[surface-level answers]] — they state and explain but never give examples, or they list five points with one line each instead of developing three points properly. The marking scheme rewards depth. Two fully developed SEE points (State, Explain, Example) will almost always score higher than four points that only state and briefly explain.',
+          'Finally, many students only write [[surface-level answers]] — they state and explain but never give examples, or they list many points with one line each instead of developing fewer points properly. The marking scheme rewards depth: fully developed SEE points (State, Explain, Example) score higher than a longer list of one-word or briefly-stated points.{{cite:2}}',
         ],
         highlights: [
           {
@@ -283,7 +284,7 @@ export const BUSINESS_CONTENT: Record<string, SubjectModuleContent> = {
           'Business is one of those subjects where the right study technique makes an outsized difference. The foundation of your preparation should be building a [[concept bank]] — a structured set of notes organised by topic, where each concept is written in SEE format: the term, a clear explanation, and a concrete example. When you revise, you are not just re-reading; you are practising the exact format you will use in the exam.',
           'For the ABQ, the best preparation is [[practice under exam conditions]]. Get a past ABQ, read the case study, and write your answers in 35 minutes. Then compare your answers to the marking scheme. Specifically check: did you link to the text? Did you use quotes? Did you address what the question actually asked? This feedback loop is where your marks improve fastest.',
           'For Section 3, create a topic map of the 7 units and track which topics you have covered. Aim to prepare at least 6 of the 7 typical long-question areas so you have choice on exam day. The core areas to prioritise are: management and leadership, people in business and industrial relations, marketing, enterprise and business planning, managing change, and insurance and business law.',
-          'Use **past marking schemes** as your revision partner. The SEC marking schemes show exactly what examiners accept and how marks are allocated point by point. Reading them teaches you the language and level of detail that earns full marks. Many students study notes but never look at how marks are actually awarded — do not make that mistake.',
+          'Use **past marking schemes** as your revision partner. The SEC marking schemes show exactly what examiners accept and how marks are allocated point by point.{{cite:1}} Reading them teaches you the language and level of detail that earns full marks. Many students study notes but never look at how marks are actually awarded — do not make that mistake.',
         ],
         highlights: [
           {
@@ -301,7 +302,7 @@ export const BUSINESS_CONTENT: Record<string, SubjectModuleContent> = {
           'Build your concept bank in SEE format — every key term should have a State, Explain, and Example ready',
           'Complete at least one full ABQ under timed conditions per week from January onward',
           'Study the SEC marking schemes — they reveal exactly what earns marks and what does not',
-          'Prioritise Units 3-5 (Management, HR, Enterprise, Marketing) as they feed both the ABQ and Section 3',
+          'Prioritise the enterprise, management and HR units (Units 2-4 in 2025) as they feed both the ABQ and Section 3',
           'Practise action word recognition — know what "illustrate", "evaluate", "outline", and "discuss" each require',
         ],
       },
@@ -311,7 +312,7 @@ export const BUSINESS_CONTENT: Record<string, SubjectModuleContent> = {
         eyebrow: '06 // Action Plan',
         paragraphs: [
           'Start today by downloading the last 10 years of Business Higher Level papers and marking schemes from the SEC website. Create a spreadsheet or list tracking which topics appeared in Section 3 each year — you will quickly see the [[repeating patterns]]. This tells you exactly what to prioritise.',
-          'Over the next two weeks, build your concept bank for Units 3-5 first. Write out every key theory in SEE format: management styles, motivation theories, the 4 Ps, market research methods, sources of finance, and business planning elements. Then begin your ABQ training — one timed practice per week, marked against the scheme.',
+          'Over the next two weeks, build your concept bank for the enterprise, management and HR units first (the ABQ\'s home ground — Units 2-4 in 2025). Write out every key theory in SEE format: management styles, motivation theories, sources of finance, and business planning elements, then the marketing topics for Section 3. Then begin your ABQ training — one timed practice per week, marked against the scheme.{{cite:1}}',
           'For Section 3, commit to answering **two full long questions per week** under timed conditions (30 minutes each). After marking, identify your [[weak spots]] and return to them the following week. By the time the exam arrives, you want to have practised every major topic type at least twice and feel confident choosing any 4 from 7.',
         ],
         highlights: [
@@ -330,6 +331,7 @@ export const BUSINESS_CONTENT: Record<string, SubjectModuleContent> = {
           'I will download the last 5 years of Business HL marking schemes and complete one full ABQ under timed conditions this week.',
       },
     ],
+    references: SUBJECT_BUSINESS_REFERENCE_LIST,
   },
 
   // ─────────────────────────────────────────────────────────────────────────

@@ -5,6 +5,8 @@
 
 // Types for data-driven subject modules
 
+import { type Reference } from './data/references/types';
+
 export interface SubjectHighlight {
   term: string;
   description: string;
@@ -29,6 +31,13 @@ export interface SubjectModuleContent {
   themeName: string;
   finishButtonText?: string;
   sections: SubjectSectionData[];
+  /**
+   * Optional ordered list of verified sources for this subject module. Order
+   * defines the inline {{cite:N}} numbering, exactly like the dedicated modules'
+   * <Cite n={N}/> markers. Surfaced via ModuleLayout's `references` prop +
+   * ReferencesModal. Accredited subjects set this; others omit it.
+   */
+  references?: Reference[];
 }
 
 import { LANGUAGES_CONTENT } from './subjectContentLanguages';
