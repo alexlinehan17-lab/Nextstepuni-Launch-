@@ -3,10 +3,11 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React from 'react';
+import React, { useMemo, useState } from 'react';
 import { ArrowLeft, Printer, ShieldCheck, BadgeCheck, AlertTriangle } from 'lucide-react';
 import { ACCREDITATION } from '../data/accreditation';
 import { REF } from '../data/references/library';
+import { type Reference } from '../data/references/types';
 import { CUT_CONTENT } from '../data/cutContent';
 
 interface AccreditationPageProps {
@@ -28,7 +29,9 @@ const ACCENT = '#F26B1F';
 const ACCENT_TINT = '#FDEEDF';
 const ACCENT_DARK_TEXT = '#8C3A0E';
 const SUCCESS = '#3A8D5F';
+const SUCCESS_TINT = '#E8F2EC';
 const SUCCESS_DARK_TEXT = '#1F5F3E';
+const FAINT = '#b0a898';
 
 const MicroLabel: React.FC<{ children: React.ReactNode; color?: string; className?: string }> = ({
   children,
@@ -58,6 +61,58 @@ const SectionHeading: React.FC<{ eyebrow: string; title: string }> = ({ eyebrow,
   </div>
 );
 
+const isOfficial = (r: Reference) => r.kind === 'official';
+
+// One row in the full reference list: the citation + a kind tag + a resolvable link.
+const RefRow: React.FC<{ r: Reference; n: number }> = ({ r, n }) => {
+  const official = isOfficial(r);
+  const link = r.doi
+    ? { href: `https://doi.org/${r.doi}`, label: `doi:${r.doi}` }
+    : r.url
+    ? { href: r.url, label: r.url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '') }
+    : null;
+  return (
+    <div className="flex gap-3 py-3" style={{ borderTop: `1px solid ${HAIRLINE}`, breakInside: 'avoid' }}>
+      <span className="shrink-0 w-7 text-right text-[12px] font-semibold tabular-nums pt-0.5" style={{ color: FAINT, fontFamily: SANS }}>
+        {n}
+      </span>
+      <div className="min-w-0">
+        <p className="text-[13.5px] leading-relaxed" style={{ color: BODY, fontFamily: SANS }}>
+          {r.authors} ({r.year}). {r.title}. <span className="italic">{r.source}</span>.
+        </p>
+        <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 mt-1">
+          <span
+            className="inline-flex items-center px-2 py-0.5 rounded-full text-[9.5px] font-bold uppercase tracking-[0.08em]"
+            style={
+              official
+                ? { backgroundColor: ACCENT_TINT, color: ACCENT_DARK_TEXT, border: `1px solid rgba(242,107,31,0.25)` }
+                : { backgroundColor: SUCCESS_TINT, color: SUCCESS_DARK_TEXT, border: `1px solid rgba(58,141,95,0.3)` }
+            }
+          >
+            {official ? 'Official source' : 'Peer-reviewed'}
+          </span>
+          {link && (
+            <a
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[11.5px] underline decoration-dotted underline-offset-2 break-all"
+              style={{ color: MUTED, fontFamily: SANS }}
+            >
+              {link.label}
+            </a>
+          )}
+          {r.repoPath && (
+            <span className="text-[11px]" style={{ color: FAINT, fontFamily: SANS }}>
+              · in repo: {r.repoPath}
+            </span>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const AccreditationPage: React.FC<AccreditationPageProps> = ({ onBack }) => {
   const a = ACCREDITATION;
 
@@ -68,6 +123,27 @@ const AccreditationPage: React.FC<AccreditationPageProps> = ({ onBack }) => {
   const subjectsPending = subjectGroup ? subjectGroup.total - subjectGroup.accredited : 0;
   const v = a.verification;
   const verificationReady = v.claimsChecked > 0;
+
+  const [tab, setTab] = useState<'overview' | 'references'>('overview');
+  const [refFilter, setRefFilter] = useState<'all' | 'paper' | 'official'>('all');
+
+  // Every source on the site, alphabetised — the full bibliography.
+  const allRefs = useMemo(
+    () => Object.values(REF).slice().sort((x, y) => x.authors.localeCompare(y.authors)),
+    []
+  );
+  const officialCount = useMemo(() => allRefs.filter(isOfficial).length, [allRefs]);
+  const paperCount = allRefs.length - officialCount;
+  const refChips: { key: 'all' | 'paper' | 'official'; label: string; count: number }[] = [
+    { key: 'all', label: 'All', count: allRefs.length },
+    { key: 'paper', label: 'Peer-reviewed', count: paperCount },
+    { key: 'official', label: 'Official (SEC / CAO)', count: officialCount },
+  ];
+  const refMatches = (r: Reference) =>
+    refFilter === 'all' || (refFilter === 'official' ? isOfficial(r) : !isOfficial(r));
+
+  const overviewCls = tab === 'overview' ? '' : 'hidden print:block';
+  const referencesCls = tab === 'references' ? '' : 'hidden print:block';
 
   return (
     <div className="min-h-screen print:bg-white" style={{ backgroundColor: PAGE }}>
@@ -110,6 +186,33 @@ const AccreditationPage: React.FC<AccreditationPageProps> = ({ onBack }) => {
           A record of how every claim in the Learning Lab was checked against the evidence before review — what is
           backed, how it was verified, and what is honestly still in progress.
         </p>
+
+        {/* Tabs */}
+        <div className="flex gap-1 mb-6 p-1 rounded-xl print:hidden" style={{ backgroundColor: 'white', border: `1px solid ${HAIRLINE}`, width: 'fit-content' }}>
+          {([
+            { key: 'overview' as const, label: 'Overview' },
+            { key: 'references' as const, label: `Full reference list (${allRefs.length})` },
+          ]).map(t => {
+            const active = tab === t.key;
+            return (
+              <button
+                key={t.key}
+                onClick={() => setTab(t.key)}
+                className="px-4 py-2 rounded-lg text-[13px] font-semibold transition-colors"
+                style={{
+                  fontFamily: SANS,
+                  backgroundColor: active ? ACCENT : 'transparent',
+                  color: active ? 'white' : MUTED,
+                }}
+              >
+                {t.label}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* ── OVERVIEW TAB ─────────────────────────────────────────────── */}
+        <div className={overviewCls}>
 
         {/* Summary band */}
         <section
@@ -255,6 +358,59 @@ const AccreditationPage: React.FC<AccreditationPageProps> = ({ onBack }) => {
           The full change-by-change audit trail is on the <strong style={{ color: MUTED }}>Cut Content</strong> page;
           each module also carries a claim-by-claim evidence dossier in the project repository.
         </p>
+
+        </div>{/* ── end OVERVIEW TAB ── */}
+
+        {/* ── REFERENCES TAB ───────────────────────────────────────────── */}
+        <div className={referencesCls}>
+          <SectionHeading eyebrow="Bibliography" title={`Every source on the site (${allRefs.length})`} />
+          <p className="text-[14px] leading-relaxed mb-5" style={{ color: BODY, fontFamily: SANS, maxWidth: '60ch' }}>
+            The complete reference set behind the Learning Lab — {paperCount} peer-reviewed papers (each DOI verified on
+            CrossRef) and {officialCount} official sources (State Examinations Commission and CAO documents). Every entry
+            resolves to a real, locatable record.
+          </p>
+
+          {/* Filter chips */}
+          <div className="flex flex-wrap gap-2 mb-2 print:hidden">
+            {refChips.map(chip => {
+              const active = refFilter === chip.key;
+              return (
+                <button
+                  key={chip.key}
+                  onClick={() => setRefFilter(chip.key)}
+                  className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-[12.5px] font-semibold transition-colors"
+                  style={{
+                    fontFamily: SANS,
+                    backgroundColor: active ? ACCENT : 'white',
+                    color: active ? 'white' : MUTED,
+                    border: `1px solid ${active ? ACCENT : HAIRLINE}`,
+                  }}
+                >
+                  {chip.label}
+                  <span
+                    className="text-[10.5px] font-bold px-1.5 rounded-full"
+                    style={{ backgroundColor: active ? 'rgba(255,255,255,0.22)' : '#f0eeec', color: active ? 'white' : FAINT }}
+                  >
+                    {chip.count}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+
+          {/* The list */}
+          <div role="list" className="rounded-2xl px-4 md:px-6 py-1" style={{ backgroundColor: 'white', border: `1px solid ${HAIRLINE}` }}>
+            {allRefs.map((r, i) => (
+              <div role="listitem" key={r.id} className={refMatches(r) ? '' : 'hidden print:block'}>
+                <RefRow r={r} n={i + 1} />
+              </div>
+            ))}
+          </div>
+          <p className="text-[11.5px] mt-3" style={{ color: LABEL, fontFamily: SANS }}>
+            Numbering here is a stable index for the whole site; within each module the inline citations are numbered
+            locally in order of appearance.
+          </p>
+        </div>{/* ── end REFERENCES TAB ── */}
 
         {/* Print footer */}
         <div className="hidden print:block mt-8 pt-4 text-[10px]" style={{ borderTop: `1px solid ${HAIRLINE}`, color: LABEL, fontFamily: SANS }}>
