@@ -50,12 +50,16 @@ const bySubject = {};
 const seen = new Set();
 let corrected = 0, orphan = 0;
 for (const t of classify) {
-  if (seen.has(t.key)) continue;
-  seen.add(t.key);
   let primary = t.primary;
   if (corrections[t.key]) { primary = corrections[t.key]; corrected++; }
   const subject = idToSubject[primary];
   if (!subject) { orphan++; continue; } // unknown id → drop (apply-wave also validates)
+  // De-dupe per SUBJECT: the tag key (level|paper|year|lang|Qn) omits the
+  // subject, so the same key legitimately recurs across subjects (e.g. every
+  // "Exam Paper" Q1). Keying the seen-set by subject keeps them distinct.
+  const sk = `${subject}|${t.key}`;
+  if (seen.has(sk)) continue;
+  seen.add(sk);
   (bySubject[subject] ||= []).push({ key: t.key, primary, secondary: t.secondary || null });
 }
 fs.writeFileSync('_wave_tags.json', JSON.stringify(bySubject));
