@@ -32,3 +32,4 @@ paper-trail-corpus/
 scripts/paper-trail/out/
 
 __pycache__/
+scripts/paper-trail/topic-tags/out/

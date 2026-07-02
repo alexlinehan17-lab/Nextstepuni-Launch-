@@ -23,6 +23,7 @@ import SubjectTilePicker from '../shared/SubjectTilePicker';
 import { baseName, displayName } from '../shared/subjectNames';
 import Viewer from './Viewer';
 import { grammarFor, timingFor } from './subjectMeta';
+import { topicsForPaper, type TopicSibling } from './topics';
 import { paperAnswersPath, paperStoragePath, paperUrl, prettyBytes } from './storage';
 import {
   FORMULAE_BOOKLET_LIVE,
@@ -99,6 +100,8 @@ type View =
       side: 'paper' | 'scheme';
       paperPage?: number;
       schemePage?: number;
+      /** Cross-year jump landing target — scroll here once anchors load. */
+      focusQuestion?: string;
     };
 
 interface PaperTrailProps {
@@ -281,6 +284,27 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     });
   }, []);
 
+  // Cross-year topic jump: resolve the sibling's paper from the index and open
+  // it on the paper side, focused on the target question.
+  const openCrossYear = useCallback((t: TopicSibling) => {
+    if (!subjectById.has(t.subjectId)) return;
+    const entry = (PAPER_TRAIL_INDEX[t.subjectId] ?? []).find(
+      e => e.year === t.year && e.level === t.level && e.lang === t.lang,
+    );
+    const item = entry?.papers.find(p => p.doc.f === t.fileid);
+    if (!item) return;
+    setView({
+      v: 'viewer',
+      subjectId: t.subjectId,
+      year: t.year,
+      level: t.level,
+      lang: t.lang,
+      item,
+      side: 'paper',
+      focusQuestion: t.n,
+    });
+  }, []);
+
   if (!isLoaded) {
     return (
       <div className="w-full max-w-xl mx-auto py-16 text-center text-sm text-zinc-400">Loading…</div>
@@ -309,6 +333,13 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
             sections: FORMULAE_SECTIONS.filter(s => s.subjects.includes(subj.id)),
           }
         : undefined;
+    // Topic tags — present only when this exact paper is tagged (needs anchors,
+    // so also gated on the answer map). The committed record carries a stable
+    // paperKey, so pass it through by reference (keeps the viewer's memo stable).
+    const topics =
+      (hasAnswers
+        ? topicsForPaper(subj.id, view.year, view.level, view.lang, view.item.doc.f)
+        : null) ?? undefined;
     return (
       <Viewer
         title={`${displayName(subj.name)} · ${view.year}`}
@@ -325,6 +356,9 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
         timing={timingFor(subj.id, view.item.label)}
         grammar={grammarFor(subj.id)}
         formulae={formulae}
+        topics={topics}
+        onCrossYear={openCrossYear}
+        focusQuestion={view.focusQuestion}
         initialSide={view.side}
         initialPaperPage={view.paperPage ?? 1}
         initialSchemePage={view.schemePage ?? 1}

@@ -34,6 +34,7 @@ import {
   ScrollText,
   SlidersHorizontal,
   Sparkles,
+  TrendingUp,
   X,
   ZoomIn,
   ZoomOut,
@@ -41,8 +42,10 @@ import {
 import { MotionDiv } from '../Motion';
 import { prettyBytes } from './storage';
 import { scanDocument, type CommandToken, type DocTokens, type MarkToken } from './textOverlay';
+import { frequencyFor, siblingsFor, topicLabel, type TopicSibling } from './topics';
 import type { FormulaeHandle, FormulaePageIndex } from '../../data/paperTrailFormulae';
 import type { SubjectMarkingGrammar, SubjectTiming } from '../../types/knowledge';
+import type { PaperTopicTags } from '../../types/paperTrailTopics';
 import type { PaperAnswerMap, PaperAnswerQuestion } from '../../types/paperTrail';
 import type { PDFDocumentProxy, PDFPageProxy } from 'pdfjs-dist';
 
@@ -121,6 +124,14 @@ interface ViewerProps {
   /** Formulae & Tables quick-jump — present only when the booklet is live for
    *  a booklet subject (gated upstream). */
   formulae?: FormulaeHandle;
+  /** This paper's verified topic tags (Tier 2) — present only when tagged.
+   *  Drives the frequency chips + cross-year jump. */
+  topics?: PaperTopicTags;
+  /** Open another paper focused on a question (cross-year jump target). */
+  onCrossYear?: (target: TopicSibling) => void;
+  /** On open, scroll to this question number once anchors are ready (the
+   *  landing target of a cross-year jump). */
+  focusQuestion?: string;
   onClose: () => void;
   /** Reports reading position for recents persistence (debounced upstream). */
   onPosition?: (side: 'paper' | 'scheme', page: number) => void;
@@ -167,6 +178,9 @@ const Viewer: React.FC<ViewerProps> = ({
   timing = null,
   grammar = null,
   formulae,
+  topics,
+  onCrossYear,
+  focusQuestion,
   onClose,
   onPosition,
 }) => {
@@ -191,6 +205,9 @@ const Viewer: React.FC<ViewerProps> = ({
   const [formulaeOpen, setFormulaeOpen] = useState(false); // formulae & tables sheet
   const [formulaeIndex, setFormulaeIndex] = useState<FormulaePageIndex | null>(null);
   const [commandReveal, setCommandReveal] = useState<CommandToken | null>(null);
+  // ── topic tags (frequency chips + cross-year jump) ──
+  const [topicsOn, setTopicsOn] = useState(false);
+  const [topicReveal, setTopicReveal] = useState<{ n: string; subtopicId: string } | null>(null);
   // The whole-paper text scan (marks + command words) — run once, lazily, the
   // first time any text-overlay tool is switched on.
   const [docTokens, setDocTokens] = useState<DocTokens | null>(null);
@@ -222,6 +239,8 @@ const Viewer: React.FC<ViewerProps> = ({
   // open panel/menu instead of closing the whole viewer underneath it.
   const commandRevealRef = useRef<CommandToken | null>(null);
   commandRevealRef.current = commandReveal;
+  const topicRevealRef = useRef<{ n: string; subtopicId: string } | null>(null);
+  topicRevealRef.current = topicReveal;
   const markingOpenRef = useRef(false);
   markingOpenRef.current = markingOpen;
   const formulaeOpenRef = useRef(false);
@@ -237,9 +256,22 @@ const Viewer: React.FC<ViewerProps> = ({
     [minsPerMark, docTokens],
   );
 
+  // Marks-per-page for the heat-strip — where the marks live across the paper.
+  const marksByPage = useMemo(() => {
+    if (!docTokens) return null;
+    const map = new Map<number, number>();
+    let max = 1;
+    for (const [pg, tok] of docTokens.byPage) {
+      const sum = tok.marks.reduce((a, m) => a + m.value, 0);
+      map.set(pg, sum);
+      if (sum > max) max = sum;
+    }
+    return { map, max };
+  }, [docTokens]);
+
   const onCommand = useCallback((c: CommandToken) => setCommandReveal(c), []);
 
-  const activeToolCount = [answersOn, paceOn, decodeOn, examOn].filter(Boolean).length;
+  const activeToolCount = [answersOn, paceOn, decodeOn, examOn, topicsOn].filter(Boolean).length;
 
   // page → its question anchors, memoised so Page's React.memo holds across
   // scroll/zoom re-renders (a fresh filter() each render would defeat it).
@@ -258,6 +290,31 @@ const Viewer: React.FC<ViewerProps> = ({
   // React.memo holds across scroll/zoom).
   const paceEnabled = paceOn && !!docTokens;
   const decodeEnabled = decodeOn && !!docTokens;
+
+  // question n → its topic tag + cross-year frequency (for the chip). Stable
+  // across renders so Page's React.memo holds.
+  const topicInfoByN = useMemo(() => {
+    if (!topics) return null;
+    const m = new Map<string, { subtopicId: string; label: string; yearsWith: number; totalYears: number }>();
+    for (const t of topics.q) {
+      const freq = frequencyFor(topics.subjectId, topics.level, topics.paperKey, t.primary);
+      m.set(t.n, {
+        subtopicId: t.primary,
+        label: topicLabel(t.primary),
+        yearsWith: freq.yearsWith.length,
+        totalYears: freq.totalYears,
+      });
+    }
+    return m;
+  }, [topics]);
+
+  const onTopic = useCallback(
+    (n: string) => {
+      const info = topicInfoByN?.get(n);
+      if (info) setTopicReveal({ n, subtopicId: info.subtopicId });
+    },
+    [topicInfoByN],
+  );
 
   // Some older papers are image scans with no text layer — the extractor finds
   // nothing. Detect the truly-empty case so a text tool explains itself instead
@@ -355,6 +412,22 @@ const Viewer: React.FC<ViewerProps> = ({
     [paper, scheme, bump],
   );
 
+  // Fetch the answer map once — shared by the Answers overlay (scheme crops) and
+  // the Topics overlay (which needs the same per-question anchor positions).
+  const ensureAnswerMap = useCallback(() => {
+    if (answerMap || answerState === 'loading' || !answersUrl) return;
+    setAnswerState('loading');
+    fetch(answersUrl)
+      .then(r => (r.ok ? r.json() : Promise.reject(new Error('answers fetch'))))
+      .then((m: PaperAnswerMap) => {
+        if (mountedRef.current) {
+          setAnswerMap(m);
+          setAnswerState('idle');
+        }
+      })
+      .catch(() => mountedRef.current && setAnswerState('error'));
+  }, [answerMap, answerState, answersUrl]);
+
   // Turn the answers overlay on/off; lazily fetch the map and warm the scheme
   // PDF the first time it's enabled (the crop renders from the scheme doc).
   const toggleAnswers = useCallback(() => {
@@ -362,23 +435,23 @@ const Viewer: React.FC<ViewerProps> = ({
     setAnswersOn(on => {
       const next = !on;
       if (next) {
-        if (!answerMap && answerState !== 'loading' && answersUrl) {
-          setAnswerState('loading');
-          fetch(answersUrl)
-            .then(r => (r.ok ? r.json() : Promise.reject(new Error('answers fetch'))))
-            .then((m: PaperAnswerMap) => {
-              if (mountedRef.current) {
-                setAnswerMap(m);
-                setAnswerState('idle');
-              }
-            })
-            .catch(() => mountedRef.current && setAnswerState('error'));
-        }
+        ensureAnswerMap();
         if (scheme && !sessions.current.scheme.pdf && !sessions.current.scheme.task) load('scheme');
       }
       return next;
     });
-  }, [answerMap, answerState, answersUrl, scheme, load]);
+  }, [ensureAnswerMap, scheme, load]);
+
+  // Topics overlay: reuses the answer-map anchors for positions; tags themselves
+  // are committed in-bundle, so no extra fetch beyond the anchor map.
+  const toggleTopics = useCallback(() => {
+    setTopicReveal(null);
+    setTopicsOn(on => {
+      const next = !on;
+      if (next) ensureAnswerMap();
+      return next;
+    });
+  }, [ensureAnswerMap]);
 
   // Reveal one question's scheme crop. On the FIRST reveal, full-GET the scheme
   // so the CacheFirst (200-only) rule stores a complete copy for offline reveals.
@@ -507,6 +580,7 @@ const Viewer: React.FC<ViewerProps> = ({
     setCommandReveal(null);
     setMarkingOpen(false);
     setFormulaeOpen(false);
+    setTopicReveal(null);
   }, [side]);
 
   // Close the tools menu on outside tap.
@@ -533,6 +607,10 @@ const Viewer: React.FC<ViewerProps> = ({
         }
         if (commandRevealRef.current) {
           setCommandReveal(null);
+          return;
+        }
+        if (topicRevealRef.current) {
+          setTopicReveal(null);
           return;
         }
         if (markingOpenRef.current) {
@@ -615,6 +693,33 @@ const Viewer: React.FC<ViewerProps> = ({
       if (session.page > 1) requestAnimationFrame(() => jumpToPage(session.page));
     }
   }, [session.state, side, session.page, jumpToPage]);
+
+  // Landing from a cross-year jump: turn Topics on and pull the anchor map so
+  // the target question's chip is visible. Mount-only (focusQuestion is fixed
+  // per viewer open); ensureAnswerMap is a no-op once the map is loaded.
+  const focusInitRef = useRef(false);
+  useEffect(() => {
+    if (focusQuestion && !focusInitRef.current) {
+      focusInitRef.current = true;
+      setTopicsOn(true);
+      ensureAnswerMap();
+    }
+  }, [focusQuestion, ensureAnswerMap]);
+
+  // Once the paper + anchor map are ready, scroll to the focused question.
+  const focusedRef = useRef(false);
+  useEffect(() => {
+    if (!focusQuestion || focusedRef.current || !answerMap || session.state !== 'ready') return;
+    const q = answerMap.q.find(x => x.n === focusQuestion);
+    focusedRef.current = true;
+    if (!q) return;
+    requestAnimationFrame(() => {
+      const el = scrollerRef.current;
+      if (!el) return;
+      const target = el.querySelector<HTMLElement>(`[data-page="${q.pP}"]`);
+      if (target) el.scrollTo({ top: target.offsetTop - 8 + target.clientHeight * Math.max(0, q.pY[0] - 0.02) });
+    });
+  }, [focusQuestion, answerMap, session.state]);
 
   const zoomBy = (dir: 1 | -1) => {
     const i = ZOOM_STEPS.indexOf(zoom);
@@ -749,6 +854,16 @@ const Viewer: React.FC<ViewerProps> = ({
                         }}
                       />
                     )}
+                    {topics && (
+                      <ToolRow
+                        icon={<TrendingUp size={15} />}
+                        title="Topics & frequency"
+                        sub="How often each topic comes up + drill it across years"
+                        on={topicsOn}
+                        busy={topicsOn && answerState === 'loading'}
+                        onClick={toggleTopics}
+                      />
+                    )}
                     {grammar && (
                       <ToolRow
                         icon={<ScrollText size={15} />}
@@ -811,8 +926,11 @@ const Viewer: React.FC<ViewerProps> = ({
                 zoom={zoom}
                 epoch={epoch}
                 observe={observe}
-                anchors={answersOn && side === 'paper' ? anchorsByPage.get(i + 1) : undefined}
+                anchors={(answersOn || topicsOn) && side === 'paper' ? anchorsByPage.get(i + 1) : undefined}
+                showAnswerChip={answersOn}
                 onReveal={onReveal}
+                topicInfo={topicsOn && side === 'paper' ? topicInfoByN : undefined}
+                onTopic={onTopic}
                 marks={paceEnabled && side === 'paper' ? docTokens!.byPage.get(i + 1)?.marks : undefined}
                 paceInfo={paceInfo}
                 commands={decodeEnabled && side === 'paper' ? docTokens!.byPage.get(i + 1)?.commands : undefined}
@@ -876,6 +994,30 @@ const Viewer: React.FC<ViewerProps> = ({
             paddingRight: 'calc(16px + var(--sar, 0px))',
           }}
         >
+          {/* Marks heat-strip — where the marks live across the paper (pace tool). */}
+          {paceOn && side === 'paper' && marksByPage && hasAnyTokens && session.numPages > 1 && (
+            <div className="max-w-3xl mx-auto mb-2">
+              <div className="flex items-center justify-between mb-1">
+                <span className="text-[9px] font-bold uppercase tracking-[0.12em] text-zinc-400">Where the marks are</span>
+                <span className="text-[9px] text-zinc-400">tap a page</span>
+              </div>
+              <div className="flex gap-px h-2.5 rounded overflow-hidden bg-[#ece9e4] dark:bg-zinc-800">
+                {Array.from({ length: session.numPages }, (_, i) => {
+                  const v = marksByPage.map.get(i + 1) ?? 0;
+                  const intensity = v / marksByPage.max;
+                  return (
+                    <button
+                      key={i}
+                      onClick={() => jumpToPage(i + 1)}
+                      aria-label={`Page ${i + 1}: ${v} marks — go there`}
+                      className="flex-1 min-w-[2px] transition-opacity hover:opacity-80"
+                      style={{ backgroundColor: v ? `rgba(242,107,31,${0.22 + 0.78 * intensity})` : 'transparent' }}
+                    />
+                  );
+                })}
+              </div>
+            </div>
+          )}
           <div className="flex items-center gap-3 max-w-3xl mx-auto">
             <button onClick={() => zoomBy(-1)} disabled={zoom === ZOOM_STEPS[0]} aria-label="Zoom out" className="p-1.5 rounded-lg text-zinc-500 disabled:opacity-30">
               <ZoomOut size={17} />
@@ -925,6 +1067,51 @@ const Viewer: React.FC<ViewerProps> = ({
           {answerState === 'loading' ? 'Loading answers…' : 'Couldn’t load answers — try again later.'}
         </div>
       )}
+
+      {/* Cross-year topic sheet — every sibling question for this subtopic. */}
+      <AnimatePresence>
+        {topicReveal && topics && (
+          <>
+            <MotionDiv
+              key="topic-backdrop"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              onClick={() => setTopicReveal(null)}
+              className="fixed inset-0 z-[110] bg-black/40"
+            />
+            <MotionDiv
+              key="topic-panel"
+              initial={panelHidden}
+              animate={panelShown}
+              exit={panelHidden}
+              transition={GLIDE}
+              role="dialog"
+              aria-modal="true"
+              aria-label={`${topicLabel(topicReveal.subtopicId)} across the years`}
+              style={{ paddingBottom: 'var(--sab, 0px)' }}
+              className={
+                isWide
+                  ? 'fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800'
+                  : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-zinc-900 rounded-t-2xl shadow-2xl'
+              }
+            >
+              <TopicContent
+                wide={isWide}
+                subtopicId={topicReveal.subtopicId}
+                subjectId={topics.subjectId}
+                current={{ year: topics.year, level: topics.level, lang: topics.lang, fileid: topics.fileid, n: topicReveal.n }}
+                onJump={s => {
+                  setTopicReveal(null);
+                  onCrossYear?.(s);
+                }}
+                onClose={() => setTopicReveal(null)}
+              />
+            </MotionDiv>
+          </>
+        )}
+      </AnimatePresence>
 
       {/* Per-question marking-scheme reveal — bottom sheet on phones, right tray
           on tablet+; same sleek glide as the GC dashboard student view. */}
@@ -1318,6 +1505,79 @@ const CommandContent: React.FC<{ wide: boolean; token: CommandToken; onClose: ()
   );
 };
 
+// ─── cross-year topic content ───────────────────────────────
+
+const LVL_ABBR: Record<string, string> = { higher: 'HL', ordinary: 'OL', foundation: 'FL', common: 'CL' };
+const paperAbbr = (k: string) => (k === 'p1' ? 'P1' : k === 'p2' ? 'P2' : '');
+
+const TopicContent: React.FC<{
+  wide: boolean;
+  subtopicId: string;
+  subjectId: string;
+  current: { year: number; level: string; lang: string; fileid: string; n: string };
+  onJump: (s: TopicSibling) => void;
+  onClose: () => void;
+}> = ({ wide, subtopicId, subjectId, current, onJump, onClose }) => {
+  const closeRef = useRef<HTMLButtonElement | null>(null);
+  useEffect(() => {
+    closeRef.current?.focus();
+  }, []);
+  const siblings = useMemo(() => siblingsFor(subjectId, subtopicId), [subjectId, subtopicId]);
+  const years = new Set(siblings.map(s => s.year));
+  const isCurrent = (s: TopicSibling) =>
+    s.year === current.year && s.level === current.level && s.lang === current.lang && s.fileid === current.fileid && s.n === current.n;
+  return (
+    <>
+      {!wide && (
+        <div className="shrink-0 flex justify-center pt-2 pb-0.5" aria-hidden>
+          <div className="h-1 w-9 rounded-full bg-zinc-300 dark:bg-zinc-700" />
+        </div>
+      )}
+      <div className="shrink-0 flex items-center gap-2 px-4 py-3 border-b border-zinc-200 dark:border-zinc-800">
+        <div className="flex-1 min-w-0">
+          <p className="text-[15px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>{topicLabel(subtopicId)}</p>
+          <p className="text-[11px] text-zinc-500">
+            {siblings.length} question{siblings.length === 1 ? '' : 's'} across {years.size} tagged year{years.size === 1 ? '' : 's'} — tap to drill it
+          </p>
+        </div>
+        <button ref={closeRef} onClick={onClose} aria-label="Close" className="p-2 -mr-1 rounded-lg text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100">
+          <X size={18} />
+        </button>
+      </div>
+      <div className="flex-1 overflow-auto overscroll-contain px-3 py-3 space-y-1.5">
+        {siblings.map(s => {
+          const here = isCurrent(s);
+          return (
+            <button
+              key={`${s.year}-${s.level}-${s.lang}-${s.fileid}-${s.n}`}
+              onClick={() => !here && onJump(s)}
+              disabled={here}
+              className={`w-full flex items-center gap-3 rounded-xl border-2 px-3.5 py-2.5 text-left transition-transform ${
+                here ? 'border-[#F26B1F] bg-[#FDEEDF]' : 'border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 active:translate-y-0.5'
+              }`}
+            >
+              <span className="shrink-0 w-11 text-[13px] font-bold tabular-nums" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>{s.year}</span>
+              <span className="flex-1 text-[12.5px]" style={{ color: '#5a5550' }}>
+                {LVL_ABBR[s.level] ?? s.level}
+                {paperAbbr(s.paperKey) ? ` · ${paperAbbr(s.paperKey)}` : ''}
+                {s.lang === 'iv' ? ' · Gaeilge' : ''} · Question {s.n}
+              </span>
+              {here ? (
+                <span className="shrink-0 text-[10px] font-bold uppercase tracking-wide" style={{ color: '#8C3A0E' }}>you’re here</span>
+              ) : (
+                <ArrowLeft size={14} className="shrink-0 rotate-180" style={{ color: '#F26B1F' }} />
+              )}
+            </button>
+          );
+        })}
+      </div>
+      <p className="shrink-0 px-4 py-2 text-[10px] text-zinc-400 border-t border-zinc-200 dark:border-zinc-800">
+        Frequency reflects the years tagged so far — coverage grows as more papers are added.
+      </p>
+    </>
+  );
+};
+
 // ─── marking-grammar card content ───────────────────────────
 
 const MarkingContent: React.FC<{ wide: boolean; grammar: SubjectMarkingGrammar; onClose: () => void }> = ({ wide, grammar, onClose }) => {
@@ -1528,12 +1788,15 @@ const Page: React.FC<{
   epoch: number;
   observe: (el: Element, cb: (near: boolean) => void) => () => void;
   anchors?: PaperAnswerQuestion[];
+  showAnswerChip?: boolean;
   onReveal?: (q: PaperAnswerQuestion) => void;
+  topicInfo?: Map<string, { subtopicId: string; label: string; yearsWith: number; totalYears: number }> | null;
+  onTopic?: (n: string) => void;
   marks?: MarkToken[];
   paceInfo?: { minsPerMark: number | null; totalMarks: number };
   commands?: CommandToken[];
   onCommand?: (c: CommandToken) => void;
-}> = React.memo(({ pdf, pageNumber, zoom, epoch, observe, anchors, onReveal, marks, paceInfo, commands, onCommand }) => {
+}> = React.memo(({ pdf, pageNumber, zoom, epoch, observe, anchors, showAnswerChip, onReveal, topicInfo, onTopic, marks, paceInfo, commands, onCommand }) => {
   const holderRef = useRef<HTMLDivElement | null>(null);
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const pageRef = useRef<PDFPageProxy | null>(null);
@@ -1615,22 +1878,49 @@ const Page: React.FC<{
       aria-label={`Page ${pageNumber}`}
     >
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
-      {/* Per-question "See answer" chips — fractional top rides zoom + virtualisation. */}
-      {anchors?.map(q => (
-        <button
-          key={`${q.pP}-${q.n}`}
-          onClick={() => onReveal?.(q)}
-          className="absolute right-0 z-10 flex items-center gap-1 pl-2 pr-2.5 py-1 rounded-l-full text-[11px] font-bold text-white"
-          style={{
-            top: `${Math.min(0.97, Math.max(0, q.pY[0])) * 100}%`,
-            backgroundColor: '#F26B1F',
-            boxShadow: '0 1px 5px rgba(0,0,0,.28)',
-          }}
-          aria-label={`See the marking scheme answer for ${q.label ?? `Question ${q.n}`}`}
-        >
-          <Sparkles size={11} /> Answer
-        </button>
-      ))}
+      {/* Per-question chips — fractional top rides zoom + virtualisation. The
+          "Answer" chip rides the right edge; the topic/frequency chip the left. */}
+      {anchors?.map(q => {
+        const top = `${Math.min(0.97, Math.max(0, q.pY[0])) * 100}%`;
+        const info = topicInfo?.get(q.n);
+        return (
+          <React.Fragment key={`${q.pP}-${q.n}`}>
+            {info && (
+              <button
+                onClick={() => onTopic?.(q.n)}
+                className="absolute left-0 z-10 flex items-center gap-1 pr-2 pl-1.5 py-1 rounded-r-full text-[11px] font-bold"
+                style={{
+                  top,
+                  // Float just above the question's first line so the label
+                  // doesn't sit on top of the question text (unless it's at the
+                  // very top of the page, where there's no room above).
+                  transform: q.pY[0] > 0.05 ? 'translateY(-100%)' : 'none',
+                  backgroundColor: '#FDEEDF',
+                  color: '#8C3A0E',
+                  border: '1px solid rgba(242,107,31,0.4)',
+                  boxShadow: '0 1px 5px rgba(0,0,0,.15)',
+                }}
+                aria-label={`${info.label} — appeared in ${info.yearsWith} of ${info.totalYears} tagged years. Drill it across years.`}
+              >
+                <TrendingUp size={11} /> {info.label}
+                {info.totalYears > 0 && (
+                  <span className="tabular-nums opacity-80">· {info.yearsWith}/{info.totalYears}</span>
+                )}
+              </button>
+            )}
+            {showAnswerChip && (
+              <button
+                onClick={() => onReveal?.(q)}
+                className="absolute right-0 z-10 flex items-center gap-1 pl-2 pr-2.5 py-1 rounded-l-full text-[11px] font-bold text-white"
+                style={{ top, backgroundColor: '#F26B1F', boxShadow: '0 1px 5px rgba(0,0,0,.28)' }}
+                aria-label={`See the marking scheme answer for ${q.label ?? `Question ${q.n}`}`}
+              >
+                <Sparkles size={11} /> Answer
+              </button>
+            )}
+          </React.Fragment>
+        );
+      })}
       {/* Command-word highlights — underline the leading command + tap for what
           it demands. Subtle accent so the page still reads as the real paper. */}
       {commands?.map((c, i) => (
