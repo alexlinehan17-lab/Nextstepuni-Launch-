@@ -19,7 +19,9 @@ import type { SubjectTiming, SubjectMarkingGrammar } from '../../types/knowledge
 const timingById = new Map(SUBJECT_TIMING.map(t => [t.id, t]));
 const grammarById = new Map(SUBJECT_MARKING_GRAMMARS.map(g => [g.id, g]));
 
-const isPaper2 = (label: string) => /paper\s*2|p2\b/i.test(label);
+// Corpus labels are worded ("Paper One" / "Paper Two"), not numeric — match
+// both forms plus the roman "II".
+const isPaper2 = (label: string) => /paper\s*(?:2|two|ii)\b/i.test(label);
 
 /** Resolve the official timing for a paper, if the subject has one. English and
  *  Irish split by paper (their two papers are timed very differently), so the
@@ -65,6 +67,7 @@ export function grammarFor(subjectId: string): SubjectMarkingGrammar | null {
       return grammarById.get('english-pclm') ?? null;
     case 'geography':
     case 'history':
+    case 'history-early-modern':
     case 'business':
       return grammarById.get('srp-system') ?? null;
     case 'mathematics':

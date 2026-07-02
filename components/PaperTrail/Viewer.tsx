@@ -259,6 +259,15 @@ const Viewer: React.FC<ViewerProps> = ({
   const paceEnabled = paceOn && !!docTokens;
   const decodeEnabled = decodeOn && !!docTokens;
 
+  // Some older papers are image scans with no text layer — the extractor finds
+  // nothing. Detect the truly-empty case so a text tool explains itself instead
+  // of silently doing nothing.
+  const hasAnyTokens = useMemo(() => {
+    if (!docTokens) return true; // not scanned yet — assume fine
+    for (const p of docTokens.byPage.values()) if (p.marks.length || p.commands.length) return true;
+    return false;
+  }, [docTokens]);
+
   const sessions = useRef<Record<Side, DocSession>>({
     paper: freshSession(initialPaperPage),
     scheme: freshSession(initialSchemePage),
@@ -972,6 +981,16 @@ const Viewer: React.FC<ViewerProps> = ({
         >
           <span className="w-3 h-3 rounded-full border-2 border-white/40 border-t-white animate-spin" aria-hidden />
           Reading the paper…
+        </div>
+      )}
+      {/* Scanned paper (no text layer) — explain why overlays are absent. */}
+      {side === 'paper' && (paceOn || decodeOn) && scanState === 'idle' && docTokens && !hasAnyTokens && (
+        <div
+          role="status"
+          aria-live="polite"
+          className="absolute left-1/2 -translate-x-1/2 bottom-24 z-[60] max-w-[86%] px-3.5 py-2 rounded-full text-[12px] font-medium text-center bg-zinc-900/90 text-white shadow-lg"
+        >
+          This paper is a scanned image — its text can’t be read for on-paper tools.
         </div>
       )}
 

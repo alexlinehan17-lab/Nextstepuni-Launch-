@@ -185,14 +185,32 @@ export async function extractPageTokens(page: PDFPageProxy): Promise<PageTokens>
       };
     };
 
-    // Marks — any occurrence on the line.
+    // Marks — explicit "(N marks)" / "N marks" anywhere on the line.
     MARKS_RE.lastIndex = 0;
     let m: RegExpExecArray | null;
+    let hadExplicitMark = false;
     while ((m = MARKS_RE.exec(text)) !== null) {
       const value = Number(m[1] ?? m[2]);
       if (!Number.isFinite(value) || value <= 0 || value > 800) continue;
       const box = boxFor(m.index, m.index + m[0].length);
-      if (box) marks.push({ ...box, value });
+      if (box) {
+        marks.push({ ...box, value });
+        hadExplicitMark = true;
+      }
+    }
+    // Bare right-margin marks — the sciences and several other subjects print
+    // "(6)" at the line end instead of "(6 marks)". Count a trailing
+    // paren-number ONLY when it sits in the right margin, so leading
+    // enumerators "(a)"/"(iii)" and mid-sentence numbers never match.
+    if (!hadExplicitMark) {
+      const tail = /\((\d{1,3})\)\s*$/.exec(text);
+      if (tail) {
+        const value = Number(tail[1]);
+        if (value > 0 && value < 100) {
+          const box = boxFor(tail.index, tail.index + tail[0].length);
+          if (box && box.pX > 0.55) marks.push({ ...box, value });
+        }
+      }
     }
 
     // Command words — ONLY as the first word of a question line. The SEC
