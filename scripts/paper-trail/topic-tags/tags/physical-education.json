@@ -1,0 +1,1430 @@
+[
+ {
+  "subjectId": "physical-education",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC225ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physical-education-1-4",
+    "secondary": "physical-education-1-3"
+   },
+   {
+    "n": "2",
+    "primary": "physical-education-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "physical-education-1-22",
+    "secondary": "physical-education-1-21"
+   },
+   {
+    "n": "4",
+    "primary": "physical-education-0-11"
+   },
+   {
+    "n": "5",
+    "primary": "physical-education-1-8"
+   },
+   {
+    "n": "6",
+    "primary": "physical-education-0-3"
+   },
+   {
+    "n": "7",
+    "primary": "physical-education-1-15",
+    "secondary": "physical-education-1-13"
+   },
+   {
+    "n": "8",
+    "primary": "physical-education-0-21",
+    "secondary": "physical-education-0-23"
+   },
+   {
+    "n": "9",
+    "primary": "physical-education-1-2",
+    "secondary": "physical-education-1-26"
+   },
+   {
+    "n": "10",
+    "primary": "physical-education-1-10",
+    "secondary": "physical-education-0-12"
+   },
+   {
+    "n": "11",
+    "primary": "physical-education-0-14"
+   },
+   {
+    "n": "12",
+    "primary": "physical-education-1-9",
+    "secondary": "physical-education-1-8"
+   },
+   {
+    "n": "13",
+    "primary": "physical-education-1-1",
+    "secondary": "physical-education-1-2"
+   },
+   {
+    "n": "14",
+    "primary": "physical-education-0-6",
+    "secondary": "physical-education-0-10"
+   },
+   {
+    "n": "15",
+    "primary": "physical-education-0-22",
+    "secondary": "physical-education-1-7"
+   },
+   {
+    "n": "16",
+    "primary": "physical-education-1-2",
+    "secondary": "physical-education-1-25"
+   },
+   {
+    "n": "17",
+    "primary": "physical-education-0-7",
+    "secondary": "physical-education-0-8"
+   },
+   {
+    "n": "18",
+    "primary": "physical-education-1-6",
+    "secondary": "physical-education-0-16"
+   }
+  ]
+ },
+ {
+  "subjectId": "physical-education",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "LC225ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physical-education-1-4",
+    "secondary": "physical-education-1-3"
+   },
+   {
+    "n": "2",
+    "primary": "physical-education-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "physical-education-1-22",
+    "secondary": "physical-education-1-21"
+   },
+   {
+    "n": "4",
+    "primary": "physical-education-0-11"
+   },
+   {
+    "n": "5",
+    "primary": "physical-education-1-8"
+   },
+   {
+    "n": "6",
+    "primary": "physical-education-0-3"
+   },
+   {
+    "n": "7",
+    "primary": "physical-education-1-15",
+    "secondary": "physical-education-1-13"
+   },
+   {
+    "n": "8",
+    "primary": "physical-education-0-21",
+    "secondary": "physical-education-0-23"
+   },
+   {
+    "n": "9",
+    "primary": "physical-education-1-2",
+    "secondary": "physical-education-1-26"
+   },
+   {
+    "n": "10",
+    "primary": "physical-education-1-10",
+    "secondary": "physical-education-0-12"
+   },
+   {
+    "n": "11",
+    "primary": "physical-education-0-14"
+   },
+   {
+    "n": "12",
+    "primary": "physical-education-1-9",
+    "secondary": "physical-education-1-8"
+   },
+   {
+    "n": "13",
+    "primary": "physical-education-1-1",
+    "secondary": "physical-education-1-2"
+   },
+   {
+    "n": "14",
+    "primary": "physical-education-0-6",
+    "secondary": "physical-education-0-10"
+   },
+   {
+    "n": "15",
+    "primary": "physical-education-0-22",
+    "secondary": "physical-education-1-7"
+   },
+   {
+    "n": "16",
+    "primary": "physical-education-1-2",
+    "secondary": "physical-education-1-25"
+   },
+   {
+    "n": "17",
+    "primary": "physical-education-0-7",
+    "secondary": "physical-education-0-8"
+   },
+   {
+    "n": "18",
+    "primary": "physical-education-1-6",
+    "secondary": "physical-education-0-16"
+   }
+  ]
+ },
+ {
+  "subjectId": "physical-education",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC225GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physical-education-0-12"
+   },
+   {
+    "n": "2",
+    "primary": "physical-education-0-10",
+    "secondary": "physical-education-0-16"
+   },
+   {
+    "n": "3",
+    "primary": "physical-education-1-1"
+   },
+   {
+    "n": "4",
+    "primary": "physical-education-1-18"
+   },
+   {
+    "n": "5",
+    "primary": "physical-education-1-9",
+    "secondary": "physical-education-1-8"
+   },
+   {
+    "n": "6",
+    "primary": "physical-education-0-2"
+   },
+   {
+    "n": "7",
+    "primary": "physical-education-1-12"
+   },
+   {
+    "n": "8",
+    "primary": "physical-education-1-2",
+    "secondary": "physical-education-1-2"
+   },
+   {
+    "n": "9",
+    "primary": "physical-education-1-6"
+   },
+   {
+    "n": "10",
+    "primary": "physical-education-0-3"
+   },
+   {
+    "n": "11",
+    "primary": "physical-education-0-15",
+    "secondary": "physical-education-0-19"
+   },
+   {
+    "n": "12",
+    "primary": "physical-education-1-17",
+    "secondary": "physical-education-0-18"
+   },
+   {
+    "n": "13",
+    "primary": "physical-education-0-7",
+    "secondary": "physical-education-0-9"
+   },
+   {
+    "n": "14",
+    "primary": "physical-education-0-6"
+   },
+   {
+    "n": "15",
+    "primary": "physical-education-0-11",
+    "secondary": "physical-education-0-17"
+   },
+   {
+    "n": "16",
+    "primary": "physical-education-1-2"
+   },
+   {
+    "n": "17",
+    "primary": "physical-education-0-22",
+    "secondary": "physical-education-0-21"
+   },
+   {
+    "n": "18",
+    "primary": "physical-education-1-12",
+    "secondary": "physical-education-1-20"
+   }
+  ]
+ },
+ {
+  "subjectId": "physical-education",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "LC225GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physical-education-0-12"
+   },
+   {
+    "n": "2",
+    "primary": "physical-education-0-5",
+    "secondary": "physical-education-0-16"
+   },
+   {
+    "n": "3",
+    "primary": "physical-education-1-1"
+   },
+   {
+    "n": "4",
+    "primary": "physical-education-1-18"
+   },
+   {
+    "n": "5",
+    "primary": "physical-education-1-9",
+    "secondary": "physical-education-1-8"
+   },
+   {
+    "n": "6",
+    "primary": "physical-education-0-2"
+   },
+   {
+    "n": "7",
+    "primary": "physical-education-1-12"
+   },
+   {
+    "n": "8",
+    "primary": "physical-education-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "physical-education-1-6"
+   },
+   {
+    "n": "10",
+    "primary": "physical-education-0-3"
+   },
+   {
+    "n": "11",
+    "primary": "physical-education-0-15",
+    "secondary": "physical-education-0-19"
+   },
+   {
+    "n": "12",
+    "primary": "physical-education-1-17",
+    "secondary": "physical-education-0-18"
+   },
+   {
+    "n": "13",
+    "primary": "physical-education-0-7",
+    "secondary": "physical-education-0-9"
+   },
+   {
+    "n": "14",
+    "primary": "physical-education-0-6"
+   },
+   {
+    "n": "15",
+    "primary": "physical-education-0-11",
+    "secondary": "physical-education-0-17"
+   },
+   {
+    "n": "16",
+    "primary": "physical-education-1-2"
+   },
+   {
+    "n": "17",
+    "primary": "physical-education-0-22",
+    "secondary": "physical-education-0-21"
+   },
+   {
+    "n": "18",
+    "primary": "physical-education-1-12",
+    "secondary": "physical-education-1-20"
+   }
+  ]
+ },
+ {
+  "subjectId": "physical-education",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC225ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physical-education-0-23",
+    "secondary": "physical-education-0-22"
+   },
+   {
+    "n": "2",
+    "primary": "physical-education-1-12",
+    "secondary": "physical-education-1-2"
+   },
+   {
+    "n": "3",
+    "primary": "physical-education-0-11",
+    "secondary": "physical-education-0-3"
+   },
+   {
+    "n": "4",
+    "primary": "physical-education-1-17",
+    "secondary": "physical-education-1-18"
+   },
+   {
+    "n": "5",
+    "primary": "physical-education-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "physical-education-1-9"
+   },
+   {
+    "n": "7",
+    "primary": "physical-education-0-5",
+    "secondary": "physical-education-0-10"
+   },
+   {
+    "n": "8",
+    "primary": "physical-education-0-16"
+   },
+   {
+    "n": "9",
+    "primary": "physical-education-1-24"
+   },
+   {
+    "n": "10",
+    "primary": "physical-education-1-3"
+   },
+   {
+    "n": "11",
+    "primary": "physical-education-0-19"
+   },
+   {
+    "n": "12",
+    "primary": "physical-education-0-5",
+    "secondary": "physical-education-0-4"
+   },
+   {
+    "n": "13",
+    "primary": "physical-education-0-2"
+   },
+   {
+    "n": "14",
+    "primary": "physical-education-1-18"
+   },
+   {
+    "n": "15",
+    "primary": "physical-education-1-2",
+    "secondary": "physical-education-1-26"
+   },
+   {
+    "n": "16",
+    "primary": "physical-education-1-8",
+    "secondary": "physical-education-1-7"
+   },
+   {
+    "n": "17",
+    "primary": "physical-education-1-1"
+   },
+   {
+    "n": "18",
+    "primary": "physical-education-0-6",
+    "secondary": "physical-education-0-11"
+   }
+  ]
+ },
+ {
+  "subjectId": "physical-education",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "LC225ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physical-education-0-22",
+    "secondary": "physical-education-0-23"
+   },
+   {
+    "n": "2",
+    "primary": "physical-education-1-2",
+    "secondary": "physical-education-1-12"
+   },
+   {
+    "n": "3",
+    "primary": "physical-education-0-11"
+   },
+   {
+    "n": "4",
+    "primary": "physical-education-1-17",
+    "secondary": "physical-education-1-18"
+   },
+   {
+    "n": "5",
+    "primary": "physical-education-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "physical-education-1-9"
+   },
+   {
+    "n": "7",
+    "primary": "physical-education-0-5",
+    "secondary": "physical-education-0-10"
+   },
+   {
+    "n": "8",
+    "primary": "physical-education-0-16"
+   },
+   {
+    "n": "9",
+    "primary": "physical-education-1-24"
+   },
+   {
+    "n": "10",
+    "primary": "physical-education-1-3"
+   },
+   {
+    "n": "11",
+    "primary": "physical-education-0-19"
+   },
+   {
+    "n": "12",
+    "primary": "physical-education-0-5"
+   },
+   {
+    "n": "13",
+    "primary": "physical-education-0-2"
+   },
+   {
+    "n": "14",
+    "primary": "physical-education-1-18"
+   },
+   {
+    "n": "15",
+    "primary": "physical-education-1-2",
+    "secondary": "physical-education-1-26"
+   },
+   {
+    "n": "16",
+    "primary": "physical-education-1-7",
+    "secondary": "physical-education-1-8"
+   },
+   {
+    "n": "17",
+    "primary": "physical-education-1-1"
+   },
+   {
+    "n": "18",
+    "primary": "physical-education-0-6",
+    "secondary": "physical-education-0-11"
+   }
+  ]
+ },
+ {
+  "subjectId": "physical-education",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC225GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physical-education-1-17",
+    "secondary": "physical-education-0-18"
+   },
+   {
+    "n": "2",
+    "primary": "physical-education-0-11"
+   },
+   {
+    "n": "3",
+    "primary": "physical-education-1-25",
+    "secondary": "physical-education-1-24"
+   },
+   {
+    "n": "4",
+    "primary": "physical-education-1-8"
+   },
+   {
+    "n": "5",
+    "primary": "physical-education-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "physical-education-0-10",
+    "secondary": "physical-education-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "physical-education-0-14"
+   },
+   {
+    "n": "8",
+    "primary": "physical-education-1-18"
+   },
+   {
+    "n": "9",
+    "primary": "physical-education-0-21"
+   },
+   {
+    "n": "10",
+    "primary": "physical-education-1-8"
+   },
+   {
+    "n": "11",
+    "primary": "physical-education-0-1"
+   },
+   {
+    "n": "12",
+    "primary": "physical-education-1-26",
+    "secondary": "physical-education-1-25"
+   },
+   {
+    "n": "13",
+    "primary": "physical-education-1-2",
+    "secondary": "physical-education-1-1"
+   },
+   {
+    "n": "14",
+    "primary": "physical-education-1-24"
+   },
+   {
+    "n": "15",
+    "primary": "physical-education-1-18"
+   },
+   {
+    "n": "16",
+    "primary": "physical-education-0-16",
+    "secondary": "physical-education-1-25"
+   },
+   {
+    "n": "17",
+    "primary": "physical-education-1-6"
+   },
+   {
+    "n": "18",
+    "primary": "physical-education-0-17"
+   }
+  ]
+ },
+ {
+  "subjectId": "physical-education",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "LC225GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physical-education-1-17",
+    "secondary": "physical-education-0-18"
+   },
+   {
+    "n": "2",
+    "primary": "physical-education-0-11"
+   },
+   {
+    "n": "3",
+    "primary": "physical-education-1-25",
+    "secondary": "physical-education-1-24"
+   },
+   {
+    "n": "4",
+    "primary": "physical-education-1-8"
+   },
+   {
+    "n": "5",
+    "primary": "physical-education-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "physical-education-0-10",
+    "secondary": "physical-education-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "physical-education-0-14"
+   },
+   {
+    "n": "8",
+    "primary": "physical-education-1-18"
+   },
+   {
+    "n": "9",
+    "primary": "physical-education-0-21"
+   },
+   {
+    "n": "10",
+    "primary": "physical-education-1-8"
+   },
+   {
+    "n": "11",
+    "primary": "physical-education-0-1"
+   },
+   {
+    "n": "12",
+    "primary": "physical-education-1-26",
+    "secondary": "physical-education-1-25"
+   },
+   {
+    "n": "13",
+    "primary": "physical-education-1-2",
+    "secondary": "physical-education-2-3"
+   },
+   {
+    "n": "14",
+    "primary": "physical-education-1-24"
+   },
+   {
+    "n": "15",
+    "primary": "physical-education-1-18"
+   },
+   {
+    "n": "16",
+    "primary": "physical-education-0-16",
+    "secondary": "physical-education-1-25"
+   },
+   {
+    "n": "17",
+    "primary": "physical-education-1-6"
+   },
+   {
+    "n": "18",
+    "primary": "physical-education-0-17"
+   }
+  ]
+ },
+ {
+  "subjectId": "physical-education",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC225ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physical-education-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "physical-education-1-24",
+    "secondary": "physical-education-1-25"
+   },
+   {
+    "n": "3",
+    "primary": "physical-education-0-11"
+   },
+   {
+    "n": "4",
+    "primary": "physical-education-0-18"
+   },
+   {
+    "n": "5",
+    "primary": "physical-education-1-14",
+    "secondary": "physical-education-1-12"
+   },
+   {
+    "n": "6",
+    "primary": "physical-education-0-5"
+   },
+   {
+    "n": "7",
+    "primary": "physical-education-0-23"
+   },
+   {
+    "n": "8",
+    "primary": "physical-education-0-2"
+   },
+   {
+    "n": "9",
+    "primary": "physical-education-1-2"
+   },
+   {
+    "n": "10",
+    "primary": "physical-education-0-19"
+   },
+   {
+    "n": "11",
+    "primary": "physical-education-1-9"
+   },
+   {
+    "n": "12",
+    "primary": "physical-education-0-7",
+    "secondary": "physical-education-0-6"
+   },
+   {
+    "n": "13",
+    "primary": "physical-education-0-3"
+   },
+   {
+    "n": "14",
+    "primary": "physical-education-0-16"
+   },
+   {
+    "n": "15",
+    "primary": "physical-education-1-26",
+    "secondary": "physical-education-1-25"
+   },
+   {
+    "n": "16",
+    "primary": "physical-education-1-6"
+   },
+   {
+    "n": "17",
+    "primary": "physical-education-0-6",
+    "secondary": "physical-education-0-23"
+   },
+   {
+    "n": "18",
+    "primary": "physical-education-0-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "physical-education",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "LC225ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physical-education-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "physical-education-1-24",
+    "secondary": "physical-education-1-25"
+   },
+   {
+    "n": "3",
+    "primary": "physical-education-0-11"
+   },
+   {
+    "n": "4",
+    "primary": "physical-education-0-18"
+   },
+   {
+    "n": "5",
+    "primary": "physical-education-1-14",
+    "secondary": "physical-education-1-12"
+   },
+   {
+    "n": "6",
+    "primary": "physical-education-0-5"
+   },
+   {
+    "n": "7",
+    "primary": "physical-education-0-23"
+   },
+   {
+    "n": "8",
+    "primary": "physical-education-0-2"
+   },
+   {
+    "n": "9",
+    "primary": "physical-education-1-2"
+   },
+   {
+    "n": "10",
+    "primary": "physical-education-0-19"
+   },
+   {
+    "n": "11",
+    "primary": "physical-education-1-9"
+   },
+   {
+    "n": "12",
+    "primary": "physical-education-0-7",
+    "secondary": "physical-education-0-6"
+   },
+   {
+    "n": "13",
+    "primary": "physical-education-0-3"
+   },
+   {
+    "n": "14",
+    "primary": "physical-education-0-16"
+   },
+   {
+    "n": "15",
+    "primary": "physical-education-1-26",
+    "secondary": "physical-education-1-25"
+   },
+   {
+    "n": "16",
+    "primary": "physical-education-1-6"
+   },
+   {
+    "n": "17",
+    "primary": "physical-education-0-6",
+    "secondary": "physical-education-0-23"
+   },
+   {
+    "n": "18",
+    "primary": "physical-education-0-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "physical-education",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "LC225GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physical-education-0-16"
+   },
+   {
+    "n": "2",
+    "primary": "physical-education-0-9",
+    "secondary": "physical-education-0-6"
+   },
+   {
+    "n": "3",
+    "primary": "physical-education-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "physical-education-0-8",
+    "secondary": "physical-education-0-7"
+   },
+   {
+    "n": "5",
+    "primary": "physical-education-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "physical-education-1-9"
+   },
+   {
+    "n": "7",
+    "primary": "physical-education-0-10"
+   },
+   {
+    "n": "8",
+    "primary": "physical-education-1-24",
+    "secondary": "physical-education-1-25"
+   },
+   {
+    "n": "9",
+    "primary": "physical-education-0-3"
+   },
+   {
+    "n": "10",
+    "primary": "physical-education-1-8"
+   },
+   {
+    "n": "11",
+    "primary": "physical-education-0-2"
+   },
+   {
+    "n": "12",
+    "primary": "physical-education-1-15",
+    "secondary": "physical-education-1-13"
+   },
+   {
+    "n": "13",
+    "primary": "physical-education-1-3",
+    "secondary": "physical-education-1-2"
+   },
+   {
+    "n": "14",
+    "primary": "physical-education-1-6",
+    "secondary": "physical-education-1-26"
+   },
+   {
+    "n": "15",
+    "primary": "physical-education-0-11"
+   },
+   {
+    "n": "16",
+    "primary": "physical-education-0-5",
+    "secondary": "physical-education-0-10"
+   },
+   {
+    "n": "17",
+    "primary": "physical-education-0-16"
+   },
+   {
+    "n": "18",
+    "primary": "physical-education-0-8",
+    "secondary": "physical-education-0-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "physical-education",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC225ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physical-education-1-1"
+   },
+   {
+    "n": "2",
+    "primary": "physical-education-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "physical-education-1-17",
+    "secondary": "physical-education-0-19"
+   },
+   {
+    "n": "4",
+    "primary": "physical-education-0-9",
+    "secondary": "physical-education-0-7"
+   },
+   {
+    "n": "5",
+    "primary": "physical-education-0-10"
+   },
+   {
+    "n": "6",
+    "primary": "physical-education-1-20",
+    "secondary": "physical-education-1-13"
+   },
+   {
+    "n": "7",
+    "primary": "physical-education-0-2"
+   },
+   {
+    "n": "8",
+    "primary": "physical-education-1-6"
+   },
+   {
+    "n": "9",
+    "primary": "physical-education-0-11"
+   },
+   {
+    "n": "10",
+    "primary": "physical-education-0-14"
+   },
+   {
+    "n": "11",
+    "primary": "physical-education-1-21",
+    "secondary": "physical-education-1-18"
+   },
+   {
+    "n": "12",
+    "primary": "physical-education-1-2"
+   },
+   {
+    "n": "13",
+    "primary": "physical-education-0-2",
+    "secondary": "physical-education-0-3"
+   },
+   {
+    "n": "14",
+    "primary": "physical-education-0-2",
+    "secondary": "physical-education-0-22"
+   },
+   {
+    "n": "15",
+    "primary": "physical-education-0-12",
+    "secondary": "physical-education-1-9"
+   },
+   {
+    "n": "16",
+    "primary": "physical-education-0-18",
+    "secondary": "physical-education-0-15"
+   },
+   {
+    "n": "17",
+    "primary": "physical-education-0-2"
+   },
+   {
+    "n": "18",
+    "primary": "physical-education-1-18"
+   }
+  ]
+ },
+ {
+  "subjectId": "physical-education",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2021,
+  "fileid": "LC225ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physical-education-1-1"
+   },
+   {
+    "n": "2",
+    "primary": "physical-education-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "physical-education-1-17",
+    "secondary": "physical-education-0-19"
+   },
+   {
+    "n": "4",
+    "primary": "physical-education-0-9",
+    "secondary": "physical-education-0-7"
+   },
+   {
+    "n": "5",
+    "primary": "physical-education-0-10"
+   },
+   {
+    "n": "6",
+    "primary": "physical-education-1-20",
+    "secondary": "physical-education-1-13"
+   },
+   {
+    "n": "7",
+    "primary": "physical-education-0-2"
+   },
+   {
+    "n": "8",
+    "primary": "physical-education-1-6"
+   },
+   {
+    "n": "9",
+    "primary": "physical-education-0-11"
+   },
+   {
+    "n": "10",
+    "primary": "physical-education-0-14"
+   },
+   {
+    "n": "11",
+    "primary": "physical-education-1-21",
+    "secondary": "physical-education-1-22"
+   },
+   {
+    "n": "12",
+    "primary": "physical-education-1-2"
+   },
+   {
+    "n": "13",
+    "primary": "physical-education-0-2",
+    "secondary": "physical-education-0-3"
+   },
+   {
+    "n": "14",
+    "primary": "physical-education-1-21",
+    "secondary": "physical-education-1-17"
+   },
+   {
+    "n": "15",
+    "primary": "physical-education-0-12"
+   },
+   {
+    "n": "16",
+    "primary": "physical-education-0-18"
+   },
+   {
+    "n": "17",
+    "primary": "physical-education-0-2"
+   },
+   {
+    "n": "18",
+    "primary": "physical-education-1-18"
+   }
+  ]
+ },
+ {
+  "subjectId": "physical-education",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC225GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physical-education-1-26",
+    "secondary": "physical-education-0-16"
+   },
+   {
+    "n": "2",
+    "primary": "physical-education-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "physical-education-1-8"
+   },
+   {
+    "n": "4",
+    "primary": "physical-education-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "physical-education-0-14"
+   },
+   {
+    "n": "6",
+    "primary": "physical-education-0-16"
+   },
+   {
+    "n": "7",
+    "primary": "physical-education-1-6"
+   },
+   {
+    "n": "8",
+    "primary": "physical-education-1-9"
+   },
+   {
+    "n": "9",
+    "primary": "physical-education-0-6",
+    "secondary": "physical-education-0-12"
+   },
+   {
+    "n": "10",
+    "primary": "physical-education-0-9",
+    "secondary": "physical-education-0-7"
+   },
+   {
+    "n": "11",
+    "primary": "physical-education-0-15"
+   },
+   {
+    "n": "12",
+    "primary": "physical-education-1-2"
+   },
+   {
+    "n": "13",
+    "primary": "physical-education-1-22",
+    "secondary": "physical-education-1-21"
+   },
+   {
+    "n": "14",
+    "primary": "physical-education-0-2"
+   },
+   {
+    "n": "15",
+    "primary": "physical-education-0-12"
+   },
+   {
+    "n": "16",
+    "primary": "physical-education-0-9",
+    "secondary": "physical-education-0-10"
+   },
+   {
+    "n": "17",
+    "primary": "physical-education-0-1"
+   },
+   {
+    "n": "18",
+    "primary": "physical-education-1-1",
+    "secondary": "physical-education-0-15"
+   }
+  ]
+ },
+ {
+  "subjectId": "physical-education",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2021,
+  "fileid": "LC225GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physical-education-1-26",
+    "secondary": "physical-education-0-16"
+   },
+   {
+    "n": "2",
+    "primary": "physical-education-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "physical-education-1-8"
+   },
+   {
+    "n": "4",
+    "primary": "physical-education-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "physical-education-0-14"
+   },
+   {
+    "n": "6",
+    "primary": "physical-education-0-16"
+   },
+   {
+    "n": "7",
+    "primary": "physical-education-1-6"
+   },
+   {
+    "n": "8",
+    "primary": "physical-education-1-9"
+   },
+   {
+    "n": "9",
+    "primary": "physical-education-0-6",
+    "secondary": "physical-education-0-12"
+   },
+   {
+    "n": "10",
+    "primary": "physical-education-0-9",
+    "secondary": "physical-education-0-7"
+   },
+   {
+    "n": "11",
+    "primary": "physical-education-0-15"
+   },
+   {
+    "n": "12",
+    "primary": "physical-education-1-2"
+   },
+   {
+    "n": "13",
+    "primary": "physical-education-1-22",
+    "secondary": "physical-education-1-21"
+   },
+   {
+    "n": "14",
+    "primary": "physical-education-0-2"
+   },
+   {
+    "n": "15",
+    "primary": "physical-education-0-12"
+   },
+   {
+    "n": "16",
+    "primary": "physical-education-0-9",
+    "secondary": "physical-education-0-10"
+   },
+   {
+    "n": "17",
+    "primary": "physical-education-0-1"
+   },
+   {
+    "n": "18",
+    "primary": "physical-education-1-1",
+    "secondary": "physical-education-0-15"
+   }
+  ]
+ },
+ {
+  "subjectId": "physical-education",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2020,
+  "fileid": "LC225ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physical-education-0-2",
+    "secondary": "physical-education-2-2"
+   },
+   {
+    "n": "2",
+    "primary": "physical-education-0-12"
+   },
+   {
+    "n": "3",
+    "primary": "physical-education-0-6",
+    "secondary": "physical-education-0-9"
+   },
+   {
+    "n": "4",
+    "primary": "physical-education-0-3",
+    "secondary": "physical-education-1-15"
+   },
+   {
+    "n": "5",
+    "primary": "physical-education-0-2",
+    "secondary": "physical-education-2-2"
+   },
+   {
+    "n": "6",
+    "primary": "physical-education-1-1"
+   },
+   {
+    "n": "7",
+    "primary": "physical-education-0-11"
+   },
+   {
+    "n": "8",
+    "primary": "physical-education-1-9",
+    "secondary": "physical-education-1-8"
+   },
+   {
+    "n": "9",
+    "primary": "physical-education-1-15",
+    "secondary": "physical-education-1-12"
+   },
+   {
+    "n": "10",
+    "primary": "physical-education-1-18"
+   },
+   {
+    "n": "11",
+    "primary": "physical-education-0-10",
+    "secondary": "physical-education-0-3"
+   },
+   {
+    "n": "12",
+    "primary": "physical-education-1-4"
+   },
+   {
+    "n": "13",
+    "primary": "physical-education-0-19"
+   },
+   {
+    "n": "14",
+    "primary": "physical-education-0-17",
+    "secondary": "physical-education-0-14"
+   },
+   {
+    "n": "15",
+    "primary": "physical-education-1-6"
+   },
+   {
+    "n": "16",
+    "primary": "physical-education-1-17",
+    "secondary": "physical-education-0-7"
+   }
+  ]
+ }
+]

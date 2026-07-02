@@ -1,0 +1,800 @@
+[
+ {
+  "subjectId": "economics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2020,
+  "fileid": "LC034ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-1-1",
+    "secondary": "economics-1-4"
+   },
+   {
+    "n": "2",
+    "primary": "economics-4-0",
+    "secondary": "economics-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "economics-3-2",
+    "secondary": "economics-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "economics-1-0",
+    "secondary": "economics-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "economics-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "economics-3-1",
+    "secondary": "economics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "economics-2-1",
+    "secondary": "economics-1-3"
+   },
+   {
+    "n": "8",
+    "primary": "economics-3-5",
+    "secondary": "economics-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "economics-2-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2020,
+  "fileid": "LC034ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-1-1",
+    "secondary": "economics-1-4"
+   },
+   {
+    "n": "2",
+    "primary": "economics-4-0",
+    "secondary": "economics-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "economics-3-2",
+    "secondary": "economics-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "economics-1-0",
+    "secondary": "economics-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "economics-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "economics-3-1",
+    "secondary": "economics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "economics-2-1",
+    "secondary": "economics-1-3"
+   },
+   {
+    "n": "8",
+    "primary": "economics-3-5",
+    "secondary": "economics-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "economics-2-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2019,
+  "fileid": "LC034ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-1-1",
+    "secondary": "economics-1-4"
+   },
+   {
+    "n": "2",
+    "primary": "economics-2-1",
+    "secondary": "economics-3-2"
+   },
+   {
+    "n": "3",
+    "primary": "economics-4-0",
+    "secondary": "economics-3-5"
+   },
+   {
+    "n": "4",
+    "primary": "economics-0-0",
+    "secondary": "economics-3-1"
+   },
+   {
+    "n": "5",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "economics-4-2",
+    "secondary": "economics-4-1"
+   },
+   {
+    "n": "7",
+    "primary": "economics-3-0",
+    "secondary": "economics-3-1"
+   },
+   {
+    "n": "8",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "9",
+    "primary": "economics-2-1",
+    "secondary": "economics-3-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2017,
+  "fileid": "LC034ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-0-1",
+    "secondary": "economics-3-1"
+   },
+   {
+    "n": "2",
+    "primary": "economics-2-1",
+    "secondary": "economics-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "4",
+    "primary": "economics-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "economics-4-2",
+    "secondary": "economics-4-1"
+   },
+   {
+    "n": "6",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "economics-1-4",
+    "secondary": "economics-1-1"
+   },
+   {
+    "n": "8",
+    "primary": "economics-3-5",
+    "secondary": "economics-4-2"
+   },
+   {
+    "n": "9",
+    "primary": "economics-2-2",
+    "secondary": "economics-3-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC034ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-2-0",
+    "secondary": "economics-1-2"
+   },
+   {
+    "n": "2",
+    "primary": "economics-1-2"
+   },
+   {
+    "n": "3",
+    "primary": "economics-2-1",
+    "secondary": "economics-3-2"
+   },
+   {
+    "n": "4",
+    "primary": "economics-1-2",
+    "secondary": "economics-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "economics-3-2",
+    "secondary": "economics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "economics-1-4"
+   },
+   {
+    "n": "7",
+    "primary": "economics-3-3"
+   },
+   {
+    "n": "8",
+    "primary": "economics-1-3",
+    "secondary": "economics-2-2"
+   },
+   {
+    "n": "9",
+    "primary": "economics-2-1",
+    "secondary": "economics-1-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC034ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "economics-1-2"
+   },
+   {
+    "n": "3",
+    "primary": "economics-2-1",
+    "secondary": "economics-3-2"
+   },
+   {
+    "n": "4",
+    "primary": "economics-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "economics-3-2"
+   },
+   {
+    "n": "6",
+    "primary": "economics-1-4"
+   },
+   {
+    "n": "7",
+    "primary": "economics-3-3"
+   },
+   {
+    "n": "8",
+    "primary": "economics-3-1",
+    "secondary": "economics-1-3"
+   },
+   {
+    "n": "9",
+    "primary": "economics-2-1",
+    "secondary": "economics-1-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC034GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-1-2"
+   },
+   {
+    "n": "2",
+    "primary": "economics-4-2"
+   },
+   {
+    "n": "3",
+    "primary": "economics-1-1"
+   },
+   {
+    "n": "4",
+    "primary": "economics-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "economics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "economics-2-2",
+    "secondary": "economics-1-3"
+   },
+   {
+    "n": "7",
+    "primary": "economics-2-2",
+    "secondary": "economics-1-3"
+   },
+   {
+    "n": "8",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "9",
+    "primary": "economics-1-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC034GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-1-2"
+   },
+   {
+    "n": "2",
+    "primary": "economics-4-2"
+   },
+   {
+    "n": "3",
+    "primary": "economics-1-1"
+   },
+   {
+    "n": "4",
+    "primary": "economics-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "economics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "economics-2-2",
+    "secondary": "economics-1-3"
+   },
+   {
+    "n": "7",
+    "primary": "economics-2-2",
+    "secondary": "economics-1-3"
+   },
+   {
+    "n": "8",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "9",
+    "primary": "economics-1-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC034ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "economics-1-1"
+   },
+   {
+    "n": "3",
+    "primary": "economics-3-1",
+    "secondary": "economics-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "6",
+    "primary": "economics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "economics-1-4"
+   },
+   {
+    "n": "8",
+    "primary": "economics-4-2",
+    "secondary": "economics-3-3"
+   },
+   {
+    "n": "9",
+    "primary": "economics-2-1",
+    "secondary": "economics-3-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC034GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-1-2"
+   },
+   {
+    "n": "2",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "3",
+    "primary": "economics-3-1",
+    "secondary": "economics-4-2"
+   },
+   {
+    "n": "4",
+    "primary": "economics-4-2"
+   },
+   {
+    "n": "5",
+    "primary": "economics-4-0"
+   },
+   {
+    "n": "6",
+    "primary": "economics-3-3",
+    "secondary": "economics-4-2"
+   },
+   {
+    "n": "7",
+    "primary": "economics-1-4"
+   },
+   {
+    "n": "8",
+    "primary": "economics-2-1",
+    "secondary": "economics-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "economics-1-1",
+    "secondary": "economics-4-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC034ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "economics-1-2"
+   },
+   {
+    "n": "3",
+    "primary": "economics-3-2"
+   },
+   {
+    "n": "4",
+    "primary": "economics-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "economics-4-2",
+    "secondary": "economics-3-3"
+   },
+   {
+    "n": "7",
+    "primary": "economics-1-2"
+   },
+   {
+    "n": "8",
+    "primary": "economics-3-1",
+    "secondary": "economics-3-5"
+   },
+   {
+    "n": "9",
+    "primary": "economics-2-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC034ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "economics-1-2"
+   },
+   {
+    "n": "3",
+    "primary": "economics-3-2"
+   },
+   {
+    "n": "4",
+    "primary": "economics-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "economics-4-2",
+    "secondary": "economics-3-3"
+   },
+   {
+    "n": "7",
+    "primary": "economics-1-2"
+   },
+   {
+    "n": "8",
+    "primary": "economics-3-1",
+    "secondary": "economics-3-5"
+   },
+   {
+    "n": "9",
+    "primary": "economics-2-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC034GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-0-1",
+    "secondary": "economics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "economics-4-2"
+   },
+   {
+    "n": "3",
+    "primary": "economics-1-1"
+   },
+   {
+    "n": "4",
+    "primary": "economics-3-1",
+    "secondary": "economics-3-0"
+   },
+   {
+    "n": "5",
+    "primary": "economics-3-0"
+   },
+   {
+    "n": "6",
+    "primary": "economics-2-1"
+   },
+   {
+    "n": "7",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "8",
+    "primary": "economics-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "economics-1-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC034GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-0-1",
+    "secondary": "economics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "economics-4-2"
+   },
+   {
+    "n": "3",
+    "primary": "economics-1-1"
+   },
+   {
+    "n": "4",
+    "primary": "economics-3-1",
+    "secondary": "economics-3-0"
+   },
+   {
+    "n": "5",
+    "primary": "economics-3-0"
+   },
+   {
+    "n": "6",
+    "primary": "economics-2-1"
+   },
+   {
+    "n": "7",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "8",
+    "primary": "economics-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "economics-1-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2013,
+  "fileid": "LC034GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-1-2"
+   },
+   {
+    "n": "2",
+    "primary": "economics-1-2"
+   },
+   {
+    "n": "3",
+    "primary": "economics-1-1",
+    "secondary": "economics-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "economics-3-4",
+    "secondary": "economics-3-3"
+   },
+   {
+    "n": "5",
+    "primary": "economics-4-0"
+   },
+   {
+    "n": "6",
+    "primary": "economics-1-2"
+   },
+   {
+    "n": "7",
+    "primary": "economics-1-1"
+   },
+   {
+    "n": "8",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "economics-3-5",
+    "secondary": "economics-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2012,
+  "fileid": "LC034ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-1-1"
+   },
+   {
+    "n": "2",
+    "primary": "economics-3-3",
+    "secondary": "economics-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "economics-3-1",
+    "secondary": "economics-2-2"
+   },
+   {
+    "n": "4",
+    "primary": "economics-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "economics-1-4"
+   },
+   {
+    "n": "6",
+    "primary": "economics-3-0"
+   },
+   {
+    "n": "7",
+    "primary": "economics-3-0",
+    "secondary": "economics-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "economics-2-0",
+    "secondary": "economics-2-2"
+   },
+   {
+    "n": "9",
+    "primary": "economics-3-1"
+   }
+  ]
+ }
+]

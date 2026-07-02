@@ -42,7 +42,13 @@ for (const d of dirs) {
     try { o = JSON.parse(line); } catch { continue; }
     if (o.type !== 'result' || !o.result) continue;
     if (Array.isArray(o.result.tags)) for (const t of o.result.tags) classify.push(t);
-    if (Array.isArray(o.result.corrections)) for (const c of o.result.corrections) corrections[c.key] = c.correct;
+    // Scope corrections per-subject: the key omits the subject, so a fix for
+    // one subject's "Exam Paper Q1" must not leak onto another's. The corrected
+    // id's prefix names the subject; a verifier only ever stays in-subject.
+    if (Array.isArray(o.result.corrections)) for (const c of o.result.corrections) {
+      const csub = idToSubject[c.correct];
+      if (csub) corrections[`${csub}|${c.key}`] = c.correct;
+    }
   }
 }
 
@@ -50,16 +56,15 @@ const bySubject = {};
 const seen = new Set();
 let corrected = 0, orphan = 0;
 for (const t of classify) {
-  let primary = t.primary;
-  if (corrections[t.key]) { primary = corrections[t.key]; corrected++; }
-  const subject = idToSubject[primary];
+  const subject = idToSubject[t.primary];
   if (!subject) { orphan++; continue; } // unknown id → drop (apply-wave also validates)
+  let primary = t.primary;
+  const ck = `${subject}|${t.key}`;
+  if (corrections[ck]) { primary = corrections[ck]; corrected++; }
   // De-dupe per SUBJECT: the tag key (level|paper|year|lang|Qn) omits the
-  // subject, so the same key legitimately recurs across subjects (e.g. every
-  // "Exam Paper" Q1). Keying the seen-set by subject keeps them distinct.
-  const sk = `${subject}|${t.key}`;
-  if (seen.has(sk)) continue;
-  seen.add(sk);
+  // subject, so the same key legitimately recurs across subjects.
+  if (seen.has(ck)) continue;
+  seen.add(ck);
   (bySubject[subject] ||= []).push({ key: t.key, primary, secondary: t.secondary || null });
 }
 fs.writeFileSync('_wave_tags.json', JSON.stringify(bySubject));

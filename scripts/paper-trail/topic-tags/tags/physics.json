@@ -1,0 +1,1292 @@
+[
+ {
+  "subjectId": "physics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC021ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-0-13",
+    "secondary": "physics-0-4"
+   },
+   {
+    "n": "2",
+    "primary": "physics-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "physics-5-5"
+   },
+   {
+    "n": "4",
+    "primary": "physics-2-2",
+    "secondary": "physics-2-6"
+   },
+   {
+    "n": "5",
+    "primary": "physics-6-10",
+    "secondary": "physics-6-11"
+   },
+   {
+    "n": "6",
+    "primary": "physics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "physics-0-2",
+    "secondary": "physics-0-3"
+   },
+   {
+    "n": "8",
+    "primary": "physics-4-3",
+    "secondary": "physics-4-2"
+   },
+   {
+    "n": "9",
+    "primary": "physics-7-6",
+    "secondary": "physics-7-7"
+   },
+   {
+    "n": "10",
+    "primary": "physics-6-2",
+    "secondary": "physics-6-5"
+   },
+   {
+    "n": "11",
+    "primary": "physics-6-16"
+   },
+   {
+    "n": "12",
+    "primary": "physics-7-9"
+   },
+   {
+    "n": "13",
+    "primary": "physics-0-9",
+    "secondary": "physics-0-10"
+   },
+   {
+    "n": "14",
+    "primary": "physics-0-12",
+    "secondary": "physics-0-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC021ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-0-7",
+    "secondary": "physics-0-6"
+   },
+   {
+    "n": "2",
+    "primary": "physics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "physics-5-2"
+   },
+   {
+    "n": "4",
+    "primary": "physics-4-3",
+    "secondary": "physics-4-2"
+   },
+   {
+    "n": "5",
+    "primary": "physics-2-1",
+    "secondary": "physics-6-12"
+   },
+   {
+    "n": "6",
+    "primary": "physics-0-5"
+   },
+   {
+    "n": "7",
+    "primary": "physics-0-12",
+    "secondary": "physics-0-11"
+   },
+   {
+    "n": "8",
+    "primary": "physics-6-10"
+   },
+   {
+    "n": "9",
+    "primary": "physics-6-7",
+    "secondary": "physics-6-5"
+   },
+   {
+    "n": "10",
+    "primary": "physics-7-6",
+    "secondary": "physics-7-7"
+   },
+   {
+    "n": "11",
+    "primary": "physics-2-1"
+   },
+   {
+    "n": "12",
+    "primary": "physics-7-7",
+    "secondary": "physics-7-5"
+   },
+   {
+    "n": "13",
+    "primary": "physics-3-1"
+   },
+   {
+    "n": "14",
+    "primary": "physics-0-1",
+    "secondary": "physics-3-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "LC021ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-0-7",
+    "secondary": "physics-0-6"
+   },
+   {
+    "n": "2",
+    "primary": "physics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "physics-5-2"
+   },
+   {
+    "n": "4",
+    "primary": "physics-4-3",
+    "secondary": "physics-4-2"
+   },
+   {
+    "n": "5",
+    "primary": "physics-2-1",
+    "secondary": "physics-6-12"
+   },
+   {
+    "n": "6",
+    "primary": "physics-0-5"
+   },
+   {
+    "n": "7",
+    "primary": "physics-0-12",
+    "secondary": "physics-0-11"
+   },
+   {
+    "n": "8",
+    "primary": "physics-6-10"
+   },
+   {
+    "n": "9",
+    "primary": "physics-6-7",
+    "secondary": "physics-6-5"
+   },
+   {
+    "n": "10",
+    "primary": "physics-7-6",
+    "secondary": "physics-7-7"
+   },
+   {
+    "n": "11",
+    "primary": "physics-2-1"
+   },
+   {
+    "n": "12",
+    "primary": "physics-7-7",
+    "secondary": "physics-7-5"
+   },
+   {
+    "n": "13",
+    "primary": "physics-3-1"
+   },
+   {
+    "n": "14",
+    "primary": "physics-0-1",
+    "secondary": "physics-3-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC021ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-0-12",
+    "secondary": "physics-0-4"
+   },
+   {
+    "n": "2",
+    "primary": "physics-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "physics-4-3"
+   },
+   {
+    "n": "4",
+    "primary": "physics-6-11",
+    "secondary": "physics-6-10"
+   },
+   {
+    "n": "5",
+    "primary": "physics-6-12",
+    "secondary": "physics-6-11"
+   },
+   {
+    "n": "6",
+    "primary": "physics-0-13",
+    "secondary": "physics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "physics-0-3",
+    "secondary": "physics-0-11"
+   },
+   {
+    "n": "8",
+    "primary": "physics-5-5"
+   },
+   {
+    "n": "9",
+    "primary": "physics-2-2",
+    "secondary": "physics-2-1"
+   },
+   {
+    "n": "10",
+    "primary": "physics-6-15",
+    "secondary": "physics-6-14"
+   },
+   {
+    "n": "11",
+    "primary": "physics-7-5",
+    "secondary": "physics-7-6"
+   },
+   {
+    "n": "12",
+    "primary": "physics-6-1",
+    "secondary": "physics-6-7"
+   },
+   {
+    "n": "13",
+    "primary": "physics-7-9"
+   },
+   {
+    "n": "14",
+    "primary": "physics-0-12"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2021,
+  "fileid": "LC021ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-0-12",
+    "secondary": "physics-0-4"
+   },
+   {
+    "n": "2",
+    "primary": "physics-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "physics-4-3"
+   },
+   {
+    "n": "4",
+    "primary": "physics-6-11",
+    "secondary": "physics-6-10"
+   },
+   {
+    "n": "5",
+    "primary": "physics-6-12",
+    "secondary": "physics-6-11"
+   },
+   {
+    "n": "6",
+    "primary": "physics-0-13",
+    "secondary": "physics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "physics-0-3",
+    "secondary": "physics-0-11"
+   },
+   {
+    "n": "8",
+    "primary": "physics-5-5"
+   },
+   {
+    "n": "9",
+    "primary": "physics-2-2",
+    "secondary": "physics-2-1"
+   },
+   {
+    "n": "10",
+    "primary": "physics-6-15",
+    "secondary": "physics-6-14"
+   },
+   {
+    "n": "11",
+    "primary": "physics-7-5",
+    "secondary": "physics-7-6"
+   },
+   {
+    "n": "12",
+    "primary": "physics-6-1",
+    "secondary": "physics-6-7"
+   },
+   {
+    "n": "13",
+    "primary": "physics-7-9"
+   },
+   {
+    "n": "14",
+    "primary": "physics-0-12"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2020,
+  "fileid": "LC021ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-0-3"
+   },
+   {
+    "n": "2",
+    "primary": "physics-5-2"
+   },
+   {
+    "n": "3",
+    "primary": "physics-4-3",
+    "secondary": "physics-4-2"
+   },
+   {
+    "n": "4",
+    "primary": "physics-6-11"
+   },
+   {
+    "n": "5",
+    "primary": "physics-0-5"
+   },
+   {
+    "n": "6",
+    "primary": "physics-0-2",
+    "secondary": "physics-0-1"
+   },
+   {
+    "n": "7",
+    "primary": "physics-6-7",
+    "secondary": "physics-6-1"
+   },
+   {
+    "n": "8",
+    "primary": "physics-7-6"
+   },
+   {
+    "n": "9",
+    "primary": "physics-4-3",
+    "secondary": "physics-4-2"
+   },
+   {
+    "n": "10",
+    "primary": "physics-7-9"
+   },
+   {
+    "n": "11",
+    "primary": "physics-7-0",
+    "secondary": "physics-7-4"
+   },
+   {
+    "n": "12",
+    "primary": "physics-0-4",
+    "secondary": "physics-0-11"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2020,
+  "fileid": "LC021ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-0-3"
+   },
+   {
+    "n": "2",
+    "primary": "physics-5-2"
+   },
+   {
+    "n": "3",
+    "primary": "physics-4-3",
+    "secondary": "physics-4-2"
+   },
+   {
+    "n": "4",
+    "primary": "physics-6-11"
+   },
+   {
+    "n": "5",
+    "primary": "physics-0-5"
+   },
+   {
+    "n": "6",
+    "primary": "physics-0-2",
+    "secondary": "physics-0-1"
+   },
+   {
+    "n": "7",
+    "primary": "physics-6-7",
+    "secondary": "physics-6-1"
+   },
+   {
+    "n": "8",
+    "primary": "physics-7-6"
+   },
+   {
+    "n": "9",
+    "primary": "physics-4-3",
+    "secondary": "physics-4-2"
+   },
+   {
+    "n": "10",
+    "primary": "physics-7-9"
+   },
+   {
+    "n": "11",
+    "primary": "physics-7-0",
+    "secondary": "physics-5-5"
+   },
+   {
+    "n": "12",
+    "primary": "physics-0-4",
+    "secondary": "physics-0-11"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC021GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "physics-1-2",
+    "secondary": "physics-1-1"
+   },
+   {
+    "n": "3",
+    "primary": "physics-4-3"
+   },
+   {
+    "n": "4",
+    "primary": "physics-6-11"
+   },
+   {
+    "n": "5",
+    "primary": "physics-0-2"
+   },
+   {
+    "n": "6",
+    "primary": "physics-0-3",
+    "secondary": "physics-0-9"
+   },
+   {
+    "n": "7",
+    "primary": "physics-2-3",
+    "secondary": "physics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "physics-5-5",
+    "secondary": "physics-5-6"
+   },
+   {
+    "n": "9",
+    "primary": "physics-6-3",
+    "secondary": "physics-6-11"
+   },
+   {
+    "n": "10",
+    "primary": "physics-7-3"
+   },
+   {
+    "n": "11",
+    "primary": "physics-3-0",
+    "secondary": "physics-0-5"
+   },
+   {
+    "n": "12",
+    "primary": "physics-0-13",
+    "secondary": "physics-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC021ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-0-12",
+    "secondary": "physics-0-4"
+   },
+   {
+    "n": "2",
+    "primary": "physics-4-3"
+   },
+   {
+    "n": "3",
+    "primary": "physics-2-2",
+    "secondary": "physics-2-6"
+   },
+   {
+    "n": "4",
+    "primary": "physics-6-11",
+    "secondary": "physics-6-8"
+   },
+   {
+    "n": "5",
+    "primary": "physics-0-5"
+   },
+   {
+    "n": "6",
+    "primary": "physics-0-12",
+    "secondary": "physics-0-9"
+   },
+   {
+    "n": "7",
+    "primary": "physics-5-8",
+    "secondary": "physics-5-6"
+   },
+   {
+    "n": "8",
+    "primary": "physics-6-11",
+    "secondary": "physics-6-17"
+   },
+   {
+    "n": "9",
+    "primary": "physics-7-4",
+    "secondary": "physics-5-10"
+   },
+   {
+    "n": "10",
+    "primary": "physics-7-3",
+    "secondary": "physics-7-2"
+   },
+   {
+    "n": "11",
+    "primary": "physics-6-15",
+    "secondary": "physics-6-16"
+   },
+   {
+    "n": "12",
+    "primary": "physics-0-7",
+    "secondary": "physics-0-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC021ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-0-7",
+    "secondary": "physics-0-6"
+   },
+   {
+    "n": "2",
+    "primary": "physics-4-3"
+   },
+   {
+    "n": "3",
+    "primary": "physics-5-5",
+    "secondary": "physics-5-10"
+   },
+   {
+    "n": "4",
+    "primary": "physics-6-11"
+   },
+   {
+    "n": "5",
+    "primary": "physics-0-10"
+   },
+   {
+    "n": "6",
+    "primary": "physics-0-12"
+   },
+   {
+    "n": "7",
+    "primary": "physics-0-9",
+    "secondary": "physics-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "physics-6-10"
+   },
+   {
+    "n": "9",
+    "primary": "physics-7-7",
+    "secondary": "physics-7-6"
+   },
+   {
+    "n": "10",
+    "primary": "physics-6-16",
+    "secondary": "physics-6-11"
+   },
+   {
+    "n": "11",
+    "primary": "physics-5-5",
+    "secondary": "physics-5-6"
+   },
+   {
+    "n": "12",
+    "primary": "physics-0-3",
+    "secondary": "physics-7-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC021ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-0-7",
+    "secondary": "physics-0-6"
+   },
+   {
+    "n": "2",
+    "primary": "physics-4-3"
+   },
+   {
+    "n": "3",
+    "primary": "physics-5-5",
+    "secondary": "physics-5-10"
+   },
+   {
+    "n": "4",
+    "primary": "physics-6-11"
+   },
+   {
+    "n": "5",
+    "primary": "physics-0-10"
+   },
+   {
+    "n": "6",
+    "primary": "physics-0-12",
+    "secondary": "physics-0-4"
+   },
+   {
+    "n": "7",
+    "primary": "physics-0-9",
+    "secondary": "physics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "physics-6-10"
+   },
+   {
+    "n": "9",
+    "primary": "physics-7-7",
+    "secondary": "physics-7-6"
+   },
+   {
+    "n": "10",
+    "primary": "physics-6-16",
+    "secondary": "physics-6-18"
+   },
+   {
+    "n": "11",
+    "primary": "physics-5-6",
+    "secondary": "physics-5-2"
+   },
+   {
+    "n": "12",
+    "primary": "physics-0-3",
+    "secondary": "physics-7-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC021GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-0-3"
+   },
+   {
+    "n": "2",
+    "primary": "physics-5-2"
+   },
+   {
+    "n": "3",
+    "primary": "physics-4-3",
+    "secondary": "physics-4-2"
+   },
+   {
+    "n": "4",
+    "primary": "physics-6-12"
+   },
+   {
+    "n": "5",
+    "primary": "physics-0-5"
+   },
+   {
+    "n": "6",
+    "primary": "physics-0-4",
+    "secondary": "physics-0-1"
+   },
+   {
+    "n": "7",
+    "primary": "physics-5-3",
+    "secondary": "physics-4-0"
+   },
+   {
+    "n": "8",
+    "primary": "physics-6-11",
+    "secondary": "physics-6-8"
+   },
+   {
+    "n": "9",
+    "primary": "physics-2-2",
+    "secondary": "physics-2-1"
+   },
+   {
+    "n": "10",
+    "primary": "physics-7-1",
+    "secondary": "physics-7-0"
+   },
+   {
+    "n": "11",
+    "primary": "physics-5-7",
+    "secondary": "physics-5-8"
+   },
+   {
+    "n": "12",
+    "primary": "physics-0-9",
+    "secondary": "physics-5-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC021ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "physics-2-2",
+    "secondary": "physics-2-6"
+   },
+   {
+    "n": "3",
+    "primary": "physics-5-5"
+   },
+   {
+    "n": "4",
+    "primary": "physics-6-11",
+    "secondary": "physics-6-10"
+   },
+   {
+    "n": "5",
+    "primary": "physics-0-13"
+   },
+   {
+    "n": "6",
+    "primary": "physics-0-4",
+    "secondary": "physics-0-11"
+   },
+   {
+    "n": "7",
+    "primary": "physics-7-3",
+    "secondary": "physics-7-2"
+   },
+   {
+    "n": "8",
+    "primary": "physics-6-5",
+    "secondary": "physics-6-3"
+   },
+   {
+    "n": "9",
+    "primary": "physics-4-3",
+    "secondary": "physics-4-2"
+   },
+   {
+    "n": "10",
+    "primary": "physics-7-9",
+    "secondary": "physics-7-6"
+   },
+   {
+    "n": "11",
+    "primary": "physics-6-17",
+    "secondary": "physics-6-16"
+   },
+   {
+    "n": "12",
+    "primary": "physics-0-9",
+    "secondary": "physics-0-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC021ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "physics-2-2",
+    "secondary": "physics-2-6"
+   },
+   {
+    "n": "3",
+    "primary": "physics-5-5"
+   },
+   {
+    "n": "4",
+    "primary": "physics-6-11",
+    "secondary": "physics-6-10"
+   },
+   {
+    "n": "5",
+    "primary": "physics-0-13"
+   },
+   {
+    "n": "6",
+    "primary": "physics-0-4",
+    "secondary": "physics-0-11"
+   },
+   {
+    "n": "7",
+    "primary": "physics-7-3",
+    "secondary": "physics-7-2"
+   },
+   {
+    "n": "8",
+    "primary": "physics-6-5",
+    "secondary": "physics-6-3"
+   },
+   {
+    "n": "9",
+    "primary": "physics-4-3",
+    "secondary": "physics-4-2"
+   },
+   {
+    "n": "10",
+    "primary": "physics-7-9",
+    "secondary": "physics-7-6"
+   },
+   {
+    "n": "11",
+    "primary": "physics-6-17",
+    "secondary": "physics-6-16"
+   },
+   {
+    "n": "12",
+    "primary": "physics-0-9",
+    "secondary": "physics-0-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC021ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-0-3"
+   },
+   {
+    "n": "2",
+    "primary": "physics-5-2"
+   },
+   {
+    "n": "3",
+    "primary": "physics-4-3",
+    "secondary": "physics-4-2"
+   },
+   {
+    "n": "4",
+    "primary": "physics-6-12"
+   },
+   {
+    "n": "5",
+    "primary": "physics-0-5",
+    "secondary": "physics-0-4"
+   },
+   {
+    "n": "6",
+    "primary": "physics-0-1",
+    "secondary": "physics-0-2"
+   },
+   {
+    "n": "7",
+    "primary": "physics-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "physics-7-7"
+   },
+   {
+    "n": "9",
+    "primary": "physics-6-7",
+    "secondary": "physics-6-5"
+   },
+   {
+    "n": "10",
+    "primary": "physics-3-2",
+    "secondary": "physics-6-11"
+   },
+   {
+    "n": "11",
+    "primary": "physics-7-6",
+    "secondary": "physics-7-9"
+   },
+   {
+    "n": "12",
+    "primary": "physics-0-12",
+    "secondary": "physics-5-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC021ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-0-3"
+   },
+   {
+    "n": "2",
+    "primary": "physics-5-2"
+   },
+   {
+    "n": "3",
+    "primary": "physics-4-3",
+    "secondary": "physics-4-2"
+   },
+   {
+    "n": "4",
+    "primary": "physics-6-12"
+   },
+   {
+    "n": "5",
+    "primary": "physics-0-5",
+    "secondary": "physics-0-4"
+   },
+   {
+    "n": "6",
+    "primary": "physics-0-1",
+    "secondary": "physics-0-2"
+   },
+   {
+    "n": "7",
+    "primary": "physics-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "physics-7-7"
+   },
+   {
+    "n": "9",
+    "primary": "physics-6-7",
+    "secondary": "physics-6-5"
+   },
+   {
+    "n": "10",
+    "primary": "physics-3-2",
+    "secondary": "physics-6-11"
+   },
+   {
+    "n": "11",
+    "primary": "physics-7-6",
+    "secondary": "physics-7-9"
+   },
+   {
+    "n": "12",
+    "primary": "physics-0-12",
+    "secondary": "physics-5-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2013,
+  "fileid": "LC021ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-0-7",
+    "secondary": "physics-0-6"
+   },
+   {
+    "n": "2",
+    "primary": "physics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "physics-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "physics-6-11",
+    "secondary": "physics-6-8"
+   },
+   {
+    "n": "5",
+    "primary": "physics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "physics-0-11",
+    "secondary": "physics-0-4"
+   },
+   {
+    "n": "7",
+    "primary": "physics-4-3",
+    "secondary": "physics-4-2"
+   },
+   {
+    "n": "8",
+    "primary": "physics-6-17",
+    "secondary": "physics-6-7"
+   },
+   {
+    "n": "9",
+    "primary": "physics-7-6",
+    "secondary": "physics-7-7"
+   },
+   {
+    "n": "10",
+    "primary": "physics-7-7",
+    "secondary": "physics-7-9"
+   },
+   {
+    "n": "11",
+    "primary": "physics-0-12",
+    "secondary": "physics-3-0"
+   },
+   {
+    "n": "12",
+    "primary": "physics-0-9",
+    "secondary": "physics-0-8"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC021ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-0-7",
+    "secondary": "physics-0-6"
+   },
+   {
+    "n": "2",
+    "primary": "physics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "physics-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "physics-6-11",
+    "secondary": "physics-6-8"
+   },
+   {
+    "n": "5",
+    "primary": "physics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "physics-0-11",
+    "secondary": "physics-0-4"
+   },
+   {
+    "n": "7",
+    "primary": "physics-4-3",
+    "secondary": "physics-4-2"
+   },
+   {
+    "n": "8",
+    "primary": "physics-6-17",
+    "secondary": "physics-6-7"
+   },
+   {
+    "n": "9",
+    "primary": "physics-7-6",
+    "secondary": "physics-7-7"
+   },
+   {
+    "n": "10",
+    "primary": "physics-7-7",
+    "secondary": "physics-7-9"
+   },
+   {
+    "n": "11",
+    "primary": "physics-0-12",
+    "secondary": "physics-3-0"
+   },
+   {
+    "n": "12",
+    "primary": "physics-0-9",
+    "secondary": "physics-0-8"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC021ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-0-3"
+   },
+   {
+    "n": "2",
+    "primary": "physics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "physics-5-5"
+   },
+   {
+    "n": "4",
+    "primary": "physics-6-11",
+    "secondary": "physics-6-12"
+   },
+   {
+    "n": "5",
+    "primary": "physics-0-2"
+   },
+   {
+    "n": "6",
+    "primary": "physics-0-6",
+    "secondary": "physics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "physics-2-2",
+    "secondary": "physics-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "physics-4-3",
+    "secondary": "physics-3-1"
+   },
+   {
+    "n": "9",
+    "primary": "physics-6-4",
+    "secondary": "physics-6-3"
+   },
+   {
+    "n": "10",
+    "primary": "physics-7-9",
+    "secondary": "physics-7-6"
+   },
+   {
+    "n": "11",
+    "primary": "physics-7-4",
+    "secondary": "physics-5-9"
+   }
+  ]
+ }
+]
