@@ -1,0 +1,887 @@
+[
+ {
+  "subjectId": "jc-english",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "JC002ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "2",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "3",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "4",
+    "primary": "jc-english-1-2",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "5",
+    "primary": "jc-english-1-2",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "6",
+    "primary": "jc-english-1-5",
+    "secondary": "jc-english-1-1"
+   },
+   {
+    "n": "7",
+    "primary": "jc-english-1-1",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "8",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-english-2-0",
+    "secondary": "jc-english-2-1"
+   },
+   {
+    "n": "10",
+    "primary": "jc-english-2-1",
+    "secondary": "jc-english-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-english",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "JC002GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "6",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "7",
+    "primary": "jc-english-2-0",
+    "secondary": "jc-english-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-english-2-0",
+    "secondary": "jc-english-2-1"
+   },
+   {
+    "n": "10",
+    "primary": "jc-english-1-2",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "11",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-english-2-2",
+    "secondary": "jc-english-2-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-english",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "JC002ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-1-2"
+   },
+   {
+    "n": "2",
+    "primary": "jc-english-2-0",
+    "secondary": "jc-english-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-english-1-2",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "4",
+    "primary": "jc-english-1-5",
+    "secondary": "jc-english-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "6",
+    "primary": "jc-english-2-1",
+    "secondary": "jc-english-2-3"
+   },
+   {
+    "n": "7",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "8",
+    "primary": "jc-english-1-3"
+   },
+   {
+    "n": "9",
+    "primary": "jc-english-1-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-english",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "JC002GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-english-2-1",
+    "secondary": "jc-english-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-english-2-0",
+    "secondary": "jc-english-2-1"
+   },
+   {
+    "n": "5",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-english-2-0",
+    "secondary": "jc-english-2-1"
+   },
+   {
+    "n": "7",
+    "primary": "jc-english-1-1",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "8",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-english-2-1",
+    "secondary": "jc-english-1-3"
+   },
+   {
+    "n": "10",
+    "primary": "jc-english-2-1",
+    "secondary": "jc-english-2-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-english-1-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-english",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "JC002ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-english-1-4",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "2",
+    "primary": "jc-english-1-4"
+   },
+   {
+    "n": "3",
+    "primary": "jc-english-2-1",
+    "secondary": "jc-english-1-3"
+   },
+   {
+    "n": "4",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "5",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "6",
+    "primary": "jc-english-1-2"
+   },
+   {
+    "n": "7",
+    "primary": "jc-english-2-2",
+    "secondary": "jc-english-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-english-2-1",
+    "secondary": "jc-english-2-3"
+   },
+   {
+    "n": "9",
+    "primary": "jc-english-2-3"
+   },
+   {
+    "n": "10",
+    "primary": "jc-english-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-english",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "JC002GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-2-3"
+   },
+   {
+    "n": "2",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "3",
+    "primary": "jc-english-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "jc-english-1-3"
+   },
+   {
+    "n": "5",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-2-3"
+   },
+   {
+    "n": "6",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-english-2-1",
+    "secondary": "jc-english-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-english-2-0",
+    "secondary": "jc-english-2-1"
+   },
+   {
+    "n": "10",
+    "primary": "jc-english-2-2"
+   },
+   {
+    "n": "11",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-1-4"
+   },
+   {
+    "n": "12",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-1-4"
+   },
+   {
+    "n": "13",
+    "primary": "jc-english-2-0",
+    "secondary": "jc-english-2-1"
+   },
+   {
+    "n": "14",
+    "primary": "jc-english-2-0",
+    "secondary": "jc-english-1-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-english",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "JC002ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "2",
+    "primary": "jc-english-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "jc-english-2-3"
+   },
+   {
+    "n": "4",
+    "primary": "jc-english-1-3"
+   },
+   {
+    "n": "5",
+    "primary": "jc-english-1-3"
+   },
+   {
+    "n": "6",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "7",
+    "primary": "jc-english-1-4"
+   },
+   {
+    "n": "8",
+    "primary": "jc-english-1-4"
+   },
+   {
+    "n": "9",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "10",
+    "primary": "jc-english-1-5",
+    "secondary": "jc-english-2-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-english",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "JC002GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-english-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-english-2-0",
+    "secondary": "jc-english-2-1"
+   },
+   {
+    "n": "5",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-english-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "jc-english-1-5"
+   },
+   {
+    "n": "9",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-english-2-2",
+    "secondary": "jc-english-1-1"
+   },
+   {
+    "n": "11",
+    "primary": "jc-english-1-5"
+   },
+   {
+    "n": "12",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-2-3"
+   },
+   {
+    "n": "13",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "14",
+    "primary": "jc-english-2-1",
+    "secondary": "jc-english-2-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-english",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "JC002ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "2",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "3",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-2-3"
+   },
+   {
+    "n": "4",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "5",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "6",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "7",
+    "primary": "jc-english-2-2",
+    "secondary": "jc-english-1-1"
+   },
+   {
+    "n": "8",
+    "primary": "jc-english-1-2",
+    "secondary": "jc-english-2-2"
+   },
+   {
+    "n": "9",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "10",
+    "primary": "jc-english-2-0",
+    "secondary": "jc-english-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-english",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "JC002GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "3",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "5",
+    "primary": "jc-english-0-0",
+    "secondary": "jc-english-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-2-3"
+   },
+   {
+    "n": "8",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-2-3"
+   },
+   {
+    "n": "9",
+    "primary": "jc-english-2-0",
+    "secondary": "jc-english-0-1"
+   },
+   {
+    "n": "10",
+    "primary": "jc-english-1-5",
+    "secondary": "jc-english-2-2"
+   },
+   {
+    "n": "11",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-english-1-3"
+   },
+   {
+    "n": "14",
+    "primary": "jc-english-2-3"
+   },
+   {
+    "n": "15",
+    "primary": "jc-english-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-english",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "JC002ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "4",
+    "primary": "jc-english-0-1",
+    "secondary": "jc-english-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-english-1-1",
+    "secondary": "jc-english-2-2"
+   },
+   {
+    "n": "6",
+    "primary": "jc-english-2-1"
+   },
+   {
+    "n": "7",
+    "primary": "jc-english-2-3"
+   },
+   {
+    "n": "8",
+    "primary": "jc-english-1-2",
+    "secondary": "jc-english-2-2"
+   },
+   {
+    "n": "9",
+    "primary": "jc-english-1-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-english",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "JC002GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-english-1-3"
+   },
+   {
+    "n": "2",
+    "primary": "jc-english-1-3"
+   },
+   {
+    "n": "3",
+    "primary": "jc-english-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "jc-english-1-3"
+   },
+   {
+    "n": "5",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-english-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "jc-english-1-1",
+    "secondary": "jc-english-2-2"
+   },
+   {
+    "n": "9",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "10",
+    "primary": "jc-english-2-1"
+   },
+   {
+    "n": "11",
+    "primary": "jc-english-0-1",
+    "secondary": "jc-english-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-english-2-3"
+   },
+   {
+    "n": "13",
+    "primary": "jc-english-1-2",
+    "secondary": "jc-english-2-2"
+   },
+   {
+    "n": "14",
+    "primary": "jc-english-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-english",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "JC002ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-1-4"
+   },
+   {
+    "n": "3",
+    "primary": "jc-english-1-3"
+   },
+   {
+    "n": "4",
+    "primary": "jc-english-2-3"
+   },
+   {
+    "n": "5",
+    "primary": "jc-english-1-2"
+   },
+   {
+    "n": "6",
+    "primary": "jc-english-1-2"
+   },
+   {
+    "n": "7",
+    "primary": "jc-english-1-2"
+   },
+   {
+    "n": "8",
+    "primary": "jc-english-1-2",
+    "secondary": "jc-english-2-2"
+   },
+   {
+    "n": "9",
+    "primary": "jc-english-1-2",
+    "secondary": "jc-english-1-4"
+   },
+   {
+    "n": "10",
+    "primary": "jc-english-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-english",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "JC002GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-english-1-5",
+    "secondary": "jc-english-1-4"
+   },
+   {
+    "n": "4",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-2-1"
+   },
+   {
+    "n": "7",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "8",
+    "primary": "jc-english-1-1",
+    "secondary": "jc-english-2-2"
+   },
+   {
+    "n": "9",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-2-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-english-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-english-2-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-english-1-3"
+   },
+   {
+    "n": "14",
+    "primary": "jc-english-1-3"
+   },
+   {
+    "n": "15",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-2-2"
+   },
+   {
+    "n": "16",
+    "primary": "jc-english-2-0",
+    "secondary": "jc-english-2-1"
+   }
+  ]
+ }
+]

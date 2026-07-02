@@ -8,10 +8,30 @@ Tags attach to the **answer-map anchors** (question `n` is the join key), so the
 
 ## Coverage
 
-Grows wave by wave, one subject at a time. Each wave = one verified
-`tags/<subject>.json`.
+**23 subjects, 457 papers, 5,306 questions** — every academic subject that has
+both answer-map anchors and a curriculum taxonomy. Each subject's anchored
+questions are 100% covered (reconstruction is diffed against the extracted stems
+and gaps re-run until zero).
 
-- **Wave 1 — Mathematics** (25 papers, 249 questions). HL/OL/Foundation, P1+P2, 2012–2025. Two independent adversarial verifiers, **0 disagreements**.
+- **Wave 1 — Mathematics** (25 papers, 249 q). Two verifiers, 0 disagreements.
+- **Wave 2 — 14 subjects** (3,272 q): biology, geography, chemistry, physics,
+  physics-and-chemistry, business, economics, accounting, agricultural-science,
+  history, computer-science, applied-mathematics, construction-studies,
+  physical-education.
+- **Wave 3 — 8 subjects** (1,785 q): art, technology, engineering, and Junior
+  Cycle science / mathematics / geography / business-studies / english.
+
+Every question is classified against the subject's `curriculum.ts` taxonomy and
+re-checked by an independent adversarial verifier per chunk.
+
+### Not tagged (by design)
+
+- **Pure-language subjects** (Spanish, French, German, Italian, Japanese,
+  Russian, Latin, Ancient Greek, …) — their curriculum "topics" are themes/skills,
+  so a cross-year frequency chip isn't the actionable signal it is for discrete
+  academic topics.
+- **Single-anchored-paper subjects** (Music, Religious Education) — one tagged
+  year can't yield a meaningful frequency.
 
 ## The pipeline (verify-don't-guess, like the answer maps)
 

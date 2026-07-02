@@ -6,7 +6,7 @@
  * scripts/paper-trail/topic-tags/build-tags.mjs from the verified per-subject
  * wave files. DO NOT hand-edit — edit the wave file + regenerate.
  *
- * Coverage: accounting, agricultural-science, applied-mathematics, biology, business, chemistry, computer-science, construction-studies, economics, geography, history, mathematics, physical-education, physics, physics-and-chemistry — 312 papers, 3521 questions.
+ * Coverage: accounting, agricultural-science, applied-mathematics, art, biology, business, chemistry, computer-science, construction-studies, economics, engineering, geography, history, jc-business-studies, jc-english, jc-geography, jc-mathematics, jc-science, mathematics, physical-education, physics, physics-and-chemistry, technology — 457 papers, 5306 questions.
  */
 
 import { type PaperTopicTags } from '../../types/paperTrailTopics';
@@ -70,6 +70,31 @@ export const TOPIC_LABELS: Record<string, string> = {
   "applied-mathematics-2-7": "Circular Motion of a Particle",
   "applied-mathematics-3-3": "Modelling Continuous Change with Differential Equations",
   "applied-mathematics-3-4": "Solving Differential Equations (Separable; Reducible Second-Order)",
+  "art-1-0": "2.1 Making",
+  "art-1-3": "2.4 Realisation and Presenting",
+  "art-2-0": "3.1 Analysis",
+  "art-2-1": "3.2 Contextual Enquiries",
+  "art-2-2": "3.3 Impact and Value",
+  "art-3-0": "Context",
+  "art-3-1": "Artists and Artworks",
+  "art-3-2": "Analysis",
+  "art-3-3": "Art Elements and Design Principles",
+  "art-3-4": "Media and Areas of Practice",
+  "art-3-5": "Innovation and Invention",
+  "art-4-0": "Romanesque and Gothic",
+  "art-4-1": "The Renaissance and Mannerism (Proto, Early, High)",
+  "art-4-2": "Baroque",
+  "art-4-3": "Realism, Impressionism and Post-Impressionism",
+  "art-4-4": "Modernism",
+  "art-5-0": "Pre-Christian Ireland (c. 4,000 BCE - 500 CE)",
+  "art-5-1": "Insular Art",
+  "art-5-2": "Late Medieval Architecture and Art",
+  "art-5-3": "Georgian Period",
+  "art-5-4": "Irish Art and Modernism",
+  "art-5-5": "Post 1960",
+  "art-6-1": "Artists: Processes and Media",
+  "art-6-2": "Art as Social Commentary or Commentator",
+  "art-6-3": "Art and the Environment",
   "biology-0-0": "The Scientific Method",
   "biology-0-1": "The Characteristics of Life",
   "biology-0-2": "Nutrition",
@@ -279,6 +304,51 @@ export const TOPIC_LABELS: Record<string, string> = {
   "economics-4-0": "Growth & Development",
   "economics-4-1": "Globalisation",
   "economics-4-2": "Trade & Competitiveness",
+  "engineering-0-0": "Work Environment",
+  "engineering-0-1": "Personal Protection",
+  "engineering-0-2": "Hand-Tools",
+  "engineering-0-3": "Machinery",
+  "engineering-0-4": "Electrical",
+  "engineering-0-8": "Computers",
+  "engineering-1-0": "Marking Out and Measurement",
+  "engineering-1-1": "Shaping",
+  "engineering-1-10": "Fasteners",
+  "engineering-1-11": "Joining",
+  "engineering-1-3": "Surface Finish",
+  "engineering-1-4": "Lathe",
+  "engineering-1-5": "Cutting Tool Geometry",
+  "engineering-1-6": "Drilling Machine and Operations",
+  "engineering-1-7": "Soldering",
+  "engineering-1-8": "Welding",
+  "engineering-1-9": "Adhesive",
+  "engineering-12-2": "Lathe Turning",
+  "engineering-12-3": "Grinding",
+  "engineering-12-5": "Welding",
+  "engineering-12-8": "Shaping of Plastics",
+  "engineering-12-9": "Metrology",
+  "engineering-2-0": "Materials Testing",
+  "engineering-2-1": "Properties of Materials",
+  "engineering-2-2": "Origin and Production of Materials",
+  "engineering-2-3": "Recycling",
+  "engineering-2-4": "Structure of Materials",
+  "engineering-2-5": "Heat Treatment",
+  "engineering-2-6": "Corrosion",
+  "engineering-3-6": "Product Design",
+  "engineering-4-3": "Computer Terminology",
+  "engineering-4-5": "CAM Principles",
+  "engineering-5-0": "Engines",
+  "engineering-5-1": "Electric Motors",
+  "engineering-5-3": "Energy",
+  "engineering-6-0": "Electronic Circuits",
+  "engineering-6-4": "Sensitive Circuits",
+  "engineering-7-0": "Force",
+  "engineering-7-1": "Levers",
+  "engineering-7-2": "Pulleys and Belt Drives",
+  "engineering-7-3": "Gears and Gearing",
+  "engineering-7-4": "Cams and Followers",
+  "engineering-8-0": "Pneumatic Circuit",
+  "engineering-8-4": "Cylinders",
+  "engineering-9-7": "Applications of CAM",
   "geography-0-0": "The Tectonic Cycle",
   "geography-0-1": "The Rock Cycle",
   "geography-0-2": "Landform Development (i): Geological Structures",
@@ -321,6 +391,139 @@ export const TOPIC_LABELS: Record<string, string> = {
   "history-3-21": "Case Study: Montgomery Bus Boycott",
   "history-3-22": "Case Study: Johnson & Vietnam",
   "history-3-9": "Case Study: Stalin's Show Trials",
+  "jc-business-studies-0-0": "Managing money: income, expenditure, needs & wants",
+  "jc-business-studies-0-1": "Household budgeting & your financial position",
+  "jc-business-studies-0-10": "How globalisation & technology shape consumer choice",
+  "jc-business-studies-0-3": "Saving & borrowing: sources, costs, interest & risk",
+  "jc-business-studies-0-4": "Insurance: cover for personal needs, premiums & claims",
+  "jc-business-studies-0-5": "Personal taxes & charges (PAYE, USC, PRSI, DIRT)",
+  "jc-business-studies-0-6": "Wage slips & calculating your take-home pay",
+  "jc-business-studies-0-7": "Being an informed consumer: rights & responsibilities",
+  "jc-business-studies-0-8": "Consumer agencies, banks & financial institutions",
+  "jc-business-studies-0-9": "Ethical & sustainable consumer choices",
+  "jc-business-studies-1-0": "Types of enterprise: financial, cultural & social",
+  "jc-business-studies-1-1": "Being enterprising & the role of the entrepreneur",
+  "jc-business-studies-1-10": "Business documents (invoice, quotation, receipt, credit note)",
+  "jc-business-studies-1-11": "Cash flow, club/business budgets & sources of finance",
+  "jc-business-studies-1-12": "Analysed cash book, ledgers & the trial balance",
+  "jc-business-studies-1-13": "Final accounts: trading, profit & loss and financial position",
+  "jc-business-studies-1-3": "Work, employment & volunteerism",
+  "jc-business-studies-1-4": "Rights & responsibilities of employers and employees",
+  "jc-business-studies-1-5": "A business and its community: impact & responsibility (CSR)",
+  "jc-business-studies-1-7": "Market research: field & desk research, target market",
+  "jc-business-studies-1-8": "The marketing mix & promoting a product",
+  "jc-business-studies-1-9": "Writing a business plan",
+  "jc-business-studies-2-0": "Scarcity, choice & opportunity cost",
+  "jc-business-studies-2-3": "Government finances: revenue, spending & the National Budget",
+  "jc-business-studies-2-4": "Taxation: why we pay tax and how it works",
+  "jc-business-studies-2-5": "Economic growth, sustainability & the environment",
+  "jc-business-studies-2-6": "International trade & globalisation",
+  "jc-business-studies-2-7": "Ireland in the European Union & the eurozone",
+  "jc-business-studies-2-8": "Economic indicators: inflation, employment, interest rates",
+  "jc-business-studies-2-9": "Current economic issues & government economic policy",
+  "jc-english-0-0": "Spoken Communication and Presentation",
+  "jc-english-0-1": "Discussion, Debate and Persuasion",
+  "jc-english-1-0": "Reading Comprehension (Unseen Texts)",
+  "jc-english-1-1": "Studied Fiction (Novel and Short Story)",
+  "jc-english-1-2": "Studied Drama and Shakespeare",
+  "jc-english-1-3": "Poetry (Studied and Unseen)",
+  "jc-english-1-4": "Film Studies",
+  "jc-english-1-5": "Responding to Texts (Theme, Character, Author's Craft)",
+  "jc-english-2-0": "Functional and Transactional Writing",
+  "jc-english-2-1": "Personal and Creative Writing",
+  "jc-english-2-2": "Writing About Studied Texts",
+  "jc-english-2-3": "Language, Grammar and Structure",
+  "jc-geography-0-0": "OS maps: grid references, scale & distance",
+  "jc-geography-0-2": "OS maps: identifying features, sketch maps & settlement patterns",
+  "jc-geography-0-3": "Aerial & satellite photo interpretation",
+  "jc-geography-0-4": "Climate graphs, charts & data interpretation",
+  "jc-geography-1-0": "Plate tectonics: volcanoes, earthquakes & fold mountains",
+  "jc-geography-1-1": "Rocks & the rock cycle",
+  "jc-geography-1-2": "Weathering & mass movement",
+  "jc-geography-1-3": "Soils",
+  "jc-geography-1-4": "Rivers, the water cycle, sea & ice: erosion, deposition & landforms",
+  "jc-geography-1-5": "Weather, climate & climate of Ireland",
+  "jc-geography-1-6": "Energy resources from the physical world",
+  "jc-geography-2-1": "Rock exploitation & energy resources: consequences",
+  "jc-geography-2-2": "Primary economic activities & the physical landscape",
+  "jc-geography-2-3": "Natural resources: water, fish stocks, forestry & soil",
+  "jc-geography-2-4": "Secondary economic activity: function & location",
+  "jc-geography-2-5": "Climate change: causes & implications",
+  "jc-geography-2-6": "Managing surface processes",
+  "jc-geography-2-7": "Tourism, transport & the physical world",
+  "jc-geography-3-0": "Population: structure & change (demographic transition)",
+  "jc-geography-3-1": "Migration: causes & consequences",
+  "jc-geography-3-2": "Settlement: rural & urban location",
+  "jc-geography-3-4": "Development & global patterns",
+  "jc-geography-3-5": "Life chances in developed & developing countries",
+  "jc-geography-3-6": "Development assistance (aid) & interdependence",
+  "jc-geography-3-7": "Globalisation: people, settlement & development",
+  "jc-mathematics-0-1": "Representation (showing maths different ways)",
+  "jc-mathematics-1-0": "Number systems & arithmetic operations",
+  "jc-mathematics-1-1": "Indices & scientific notation",
+  "jc-mathematics-1-2": "Factors, multiples & primes",
+  "jc-mathematics-1-3": "Rounding & accuracy",
+  "jc-mathematics-1-4": "Fractions, decimals & percentages",
+  "jc-mathematics-1-5": "Ratio & proportion",
+  "jc-mathematics-1-6": "Financial maths (money problems)",
+  "jc-mathematics-1-7": "Sets & Venn diagrams",
+  "jc-mathematics-2-0": "Measure, units & time",
+  "jc-mathematics-2-1": "2D shapes: perimeter & area",
+  "jc-mathematics-2-2": "3D solids: nets, volume & surface area",
+  "jc-mathematics-2-3": "Geometric reasoning, theorems & constructions",
+  "jc-mathematics-2-4": "Right-angled triangles & trigonometry",
+  "jc-mathematics-2-5": "Co-ordinate geometry of the line",
+  "jc-mathematics-2-6": "Transformations & symmetry",
+  "jc-mathematics-3-0": "Patterns, sequences & the nth term",
+  "jc-mathematics-3-1": "Expressions, variables & equality",
+  "jc-mathematics-3-2": "Manipulating expressions & factorising",
+  "jc-mathematics-3-3": "Solving equations",
+  "jc-mathematics-3-4": "Inequalities",
+  "jc-mathematics-3-6": "Functions & graphs",
+  "jc-mathematics-4-0": "Counting & sample spaces",
+  "jc-mathematics-4-1": "Probability of random events",
+  "jc-mathematics-4-3": "Representing data (graphs & charts)",
+  "jc-mathematics-4-4": "Summary statistics (averages & spread)",
+  "jc-science-0-0": "How science works & how ideas change over time",
+  "jc-science-0-1": "Asking scientific questions & writing testable hypotheses",
+  "jc-science-0-2": "Designing fair tests: variables, controls, reliability, accuracy, precision & safety",
+  "jc-science-0-3": "Choosing and using measuring instruments & apparatus",
+  "jc-science-0-4": "Recording & representing data: tables, graphs and charts",
+  "jc-science-0-5": "Analysing data, spotting patterns & anomalies, drawing & justifying conclusions",
+  "jc-science-0-6": "Evaluating sources, reliability, bias & media claims about science",
+  "jc-science-0-7": "Science in society: scientists' contributions, ethics & global importance",
+  "jc-science-1-0": "Measuring physical quantities: length, mass, time, temperature, area, volume, density",
+  "jc-science-1-1": "Speed, acceleration & motion graphs",
+  "jc-science-1-2": "Forces",
+  "jc-science-1-3": "Electricity: current, potential difference, resistance & electrical power",
+  "jc-science-1-4": "Electric circuits: series, parallel & simple electronic circuits",
+  "jc-science-1-5": "Energy conservation, transfer, dissipation & efficiency (Sankey diagrams)",
+  "jc-science-1-7": "Ethics & sustainability of generating and using electricity",
+  "jc-science-2-0": "States of matter, the particle model & conservation of mass",
+  "jc-science-2-1": "Atomic structure: protons, neutrons, electrons, mass & charge",
+  "jc-science-2-2": "Classifying substances: elements, compounds, mixtures, metals & non-metals",
+  "jc-science-2-3": "The Periodic Table & chemical formulae",
+  "jc-science-2-4": "Properties of materials: solubility, conductivity, melting & boiling points; separation techniques",
+  "jc-science-2-5": "Rates of reaction & the variables that affect them",
+  "jc-science-2-6": "Acids, bases, indicators & the pH scale",
+  "jc-science-2-7": "Energy in reactions: exothermic, endothermic, activation energy & energy profiles",
+  "jc-science-2-8": "Sustainability of materials: extraction, use, disposal & recycling",
+  "jc-science-3-0": "Cells: plant & animal cell structure and function",
+  "jc-science-3-1": "Reproduction, inheritance & genetics",
+  "jc-science-3-2": "Evolution by natural selection & the diversity of life",
+  "jc-science-3-3": "Human body systems: digestive, circulatory & respiratory",
+  "jc-science-3-4": "Habitats, adaptation, competition & interdependence (habitat studies)",
+  "jc-science-3-5": "Human health: nutrition, lifestyle, inherited factors & micro-organisms",
+  "jc-science-3-6": "Respiration, photosynthesis & energy flow through ecosystems",
+  "jc-science-3-7": "Human sexual reproduction & related ethical and societal issues",
+  "jc-science-3-8": "Conserving biodiversity, food production & benefits from ecosystems",
+  "jc-science-4-0": "The solar system & universe: moons, asteroids, comets, planets, stars & galaxies",
+  "jc-science-4-1": "The origin of the universe & comparing Earth with other planets/moons",
+  "jc-science-4-2": "The Earth-Sun-Moon system: day & night, seasons, lunar phases & eclipses",
+  "jc-science-4-3": "Cycling of matter: the carbon and water cycles",
+  "jc-science-4-4": "Energy sources & meeting Earth's current and future energy needs",
+  "jc-science-4-5": "Climate, climate change & initiatives to address it",
+  "jc-science-4-6": "Space exploration: hazards, benefits & its future role in society",
   "mathematics-0-0": "Counting",
   "mathematics-0-1": "Concepts of Probability",
   "mathematics-0-2": "Outcomes of Random Processes",
@@ -490,7 +693,60 @@ export const TOPIC_LABELS: Record<string, string> = {
   "physics-and-chemistry-7-2": "Photoelectric Emission",
   "physics-and-chemistry-7-4": "Structure of the Atom",
   "physics-and-chemistry-7-5": "Structure of the Nucleus",
-  "physics-and-chemistry-7-6": "Radioactivity"
+  "physics-and-chemistry-7-6": "Radioactivity",
+  "technology-0-0": "Design Brief",
+  "technology-0-1": "Identifying and Analysing Problems",
+  "technology-0-10": "Presenting the Design Folio",
+  "technology-0-2": "Recognising Constraints",
+  "technology-0-3": "Investigation and Research",
+  "technology-0-4": "Generating Ideas",
+  "technology-0-5": "Presenting Ideas",
+  "technology-0-6": "Developing the Chosen Idea",
+  "technology-0-7": "Production Planning",
+  "technology-0-8": "Making and Testing",
+  "technology-0-9": "Evaluation",
+  "technology-1-0": "Project Management",
+  "technology-1-1": "Quality Management",
+  "technology-10-0": "The Context of Manufacturing",
+  "technology-10-1": "Quality Management",
+  "technology-10-2": "Project Management",
+  "technology-10-4": "Manufacturing System Design and Control",
+  "technology-11-0": "Classification of Materials",
+  "technology-11-1": "Properties of Materials",
+  "technology-11-2": "Structure of Materials",
+  "technology-11-3": "Joining Processes",
+  "technology-11-4": "Materials Processing",
+  "technology-11-5": "Surface Treatments",
+  "technology-11-7": "Materials and the Environment",
+  "technology-2-0": "Manufacturing Processes and Materials",
+  "technology-2-1": "Resource Management",
+  "technology-3-0": "Projection Systems",
+  "technology-3-1": "Measured Drawings",
+  "technology-3-2": "Pictorial Representation",
+  "technology-3-3": "Freehand Drawings",
+  "technology-3-4": "Computer Graphics",
+  "technology-3-5": "Modelling",
+  "technology-3-6": "Presenting Information",
+  "technology-4-0": "Introduction to Computer Systems",
+  "technology-4-1": "Skills Development, Applications and Software",
+  "technology-5-0": "Structures",
+  "technology-5-1": "Mechanisms",
+  "technology-6-0": "Energy and Energy Conservation",
+  "technology-6-1": "Electricity",
+  "technology-6-2": "Electronics",
+  "technology-7-0": "Electrical Measurements",
+  "technology-7-1": "Components and Circuit Design",
+  "technology-7-2": "Power Supplies and Safety",
+  "technology-7-3": "Electric Motors",
+  "technology-7-4": "Assembly of Pre-designed Circuits",
+  "technology-7-5": "Sensors",
+  "technology-7-6": "Logic Circuits",
+  "technology-7-7": "Inputs and Outputs",
+  "technology-8-0": "Robotics",
+  "technology-9-0": "Computer Architecture",
+  "technology-9-1": "Data Communications and Networks",
+  "technology-9-2": "The Internet",
+  "technology-9-3": "Multimedia and Design"
 };
 
 export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
@@ -4273,6 +4529,1739 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "9",
     "primary": "applied-mathematics-2-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC014ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-5",
+    "secondary": "art-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-2"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "14",
+    "primary": "art-3-1",
+    "secondary": "art-4-4"
+   },
+   {
+    "n": "15",
+    "primary": "art-3-0",
+    "secondary": "art-4-4"
+   },
+   {
+    "n": "16",
+    "primary": "art-2-2",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4"
+   },
+   {
+    "n": "19",
+    "primary": "art-3-4",
+    "secondary": "art-6-3"
+   },
+   {
+    "n": "20",
+    "primary": "art-6-3",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC014GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1",
+    "secondary": "art-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3",
+    "secondary": "art-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4",
+    "secondary": "art-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-5",
+    "secondary": "art-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0",
+    "secondary": "art-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1",
+    "secondary": "art-2-0"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1",
+    "secondary": "art-2-0"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-1",
+    "secondary": "art-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3",
+    "secondary": "art-2-0"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4",
+    "secondary": "art-2-0"
+   },
+   {
+    "n": "14",
+    "primary": "art-3-2",
+    "secondary": "art-4-1"
+   },
+   {
+    "n": "15",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "16",
+    "primary": "art-2-2",
+    "secondary": "art-3-0"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "19",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "21",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC014ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0",
+    "secondary": "art-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-0",
+    "secondary": "art-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1",
+    "secondary": "art-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-5",
+    "secondary": "art-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-1",
+    "secondary": "art-4-3"
+   },
+   {
+    "n": "15",
+    "primary": "art-4-4",
+    "secondary": "art-4-2"
+   },
+   {
+    "n": "16",
+    "primary": "art-6-1",
+    "secondary": "art-2-2"
+   },
+   {
+    "n": "17",
+    "primary": "art-6-2",
+    "secondary": "art-6-3"
+   },
+   {
+    "n": "18",
+    "primary": "art-6-1"
+   },
+   {
+    "n": "19",
+    "primary": "art-6-1",
+    "secondary": "art-6-3"
+   },
+   {
+    "n": "20",
+    "primary": "art-6-3",
+    "secondary": "art-6-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC014GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-5",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0",
+    "secondary": "art-3-2"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-2"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-2",
+    "secondary": "art-4-4"
+   },
+   {
+    "n": "15",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
+   },
+   {
+    "n": "16",
+    "primary": "art-3-0",
+    "secondary": "art-2-2"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4"
+   },
+   {
+    "n": "19",
+    "primary": "art-6-3",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
+   },
+   {
+    "n": "21",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2020,
+  "fileid": "LC014ALP013EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-3",
+    "secondary": "art-4-2"
+   },
+   {
+    "n": "15",
+    "primary": "art-4-4",
+    "secondary": "art-4-3"
+   },
+   {
+    "n": "16",
+    "primary": "art-2-2",
+    "secondary": "art-2-1"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4",
+    "secondary": "art-6-2"
+   },
+   {
+    "n": "19",
+    "primary": "art-6-3",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC014ALP013EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0",
+    "secondary": "art-5-1"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1",
+    "secondary": "art-3-2"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1",
+    "secondary": "art-3-2"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-2",
+    "secondary": "art-3-2"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3",
+    "secondary": "art-3-2"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-3",
+    "secondary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-3-1",
+    "secondary": "art-3-2"
+   },
+   {
+    "n": "15",
+    "primary": "art-4-4",
+    "secondary": "art-3-0"
+   },
+   {
+    "n": "16",
+    "primary": "art-3-4",
+    "secondary": "art-2-2"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
+   },
+   {
+    "n": "19",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-6-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC014GLP013EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-5",
+    "secondary": "art-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1",
+    "secondary": "art-3-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1",
+    "secondary": "art-3-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-2"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "14",
+    "primary": "art-3-1",
+    "secondary": "art-3-2"
+   },
+   {
+    "n": "15",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "16",
+    "primary": "art-3-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "18",
+    "primary": "art-6-3",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "19",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "21",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC014ALP013EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-0",
+    "secondary": "art-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-3-1"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-1",
+    "secondary": "art-4-4"
+   },
+   {
+    "n": "15",
+    "primary": "art-3-0",
+    "secondary": "art-4-4"
+   },
+   {
+    "n": "16",
+    "primary": "art-1-3",
+    "secondary": "art-2-2"
+   },
+   {
+    "n": "17",
+    "primary": "art-1-0",
+    "secondary": "art-2-0"
+   },
+   {
+    "n": "18",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "19",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "20",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC014GLP013EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-5"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-0",
+    "secondary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-2"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-3",
+    "secondary": "art-4-1"
+   },
+   {
+    "n": "15",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "16",
+    "primary": "art-2-2",
+    "secondary": "art-1-3"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "19",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "21",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC014ALP013EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-5"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-2"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-1",
+    "secondary": "art-4-4"
+   },
+   {
+    "n": "15",
+    "primary": "art-4-3",
+    "secondary": "art-4-4"
+   },
+   {
+    "n": "16",
+    "primary": "art-2-2",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "19",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC014GLP013EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-5"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-2"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-1",
+    "secondary": "art-4-4"
+   },
+   {
+    "n": "15",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "16",
+    "primary": "art-2-2",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "19",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "21",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC014ALP013EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1",
+    "secondary": "art-5-2"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-5"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-3-1"
+   },
+   {
+    "n": "15",
+    "primary": "art-3-0",
+    "secondary": "art-3-1"
+   },
+   {
+    "n": "16",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "17",
+    "primary": "art-2-2"
+   },
+   {
+    "n": "18",
+    "primary": "art-6-3",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "19",
+    "primary": "art-6-2",
+    "secondary": "art-6-3"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC014GLP013EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-2"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-3",
+    "secondary": "art-4-2"
+   },
+   {
+    "n": "15",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "16",
+    "primary": "art-1-3",
+    "secondary": "art-2-2"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "18",
+    "primary": "art-6-3",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "19",
+    "primary": "art-5-5",
+    "secondary": "art-2-0"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "21",
+    "primary": "art-3-4",
+    "secondary": "art-6-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC014ALP013EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-1",
+    "secondary": "art-4-2"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-3",
+    "secondary": "art-4-2"
+   },
+   {
+    "n": "15",
+    "primary": "art-4-4",
+    "secondary": "art-4-2"
+   },
+   {
+    "n": "16",
+    "primary": "art-2-2",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-6-1"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4",
+    "secondary": "art-1-3"
+   },
+   {
+    "n": "19",
+    "primary": "art-6-3",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-6-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC014GLP013EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-1",
+    "secondary": "art-4-2"
+   },
+   {
+    "n": "15",
+    "primary": "art-3-4"
+   },
+   {
+    "n": "16",
+    "primary": "art-2-2",
+    "secondary": "art-3-0"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4",
+    "secondary": "art-3-2"
+   },
+   {
+    "n": "19",
+    "primary": "art-3-3",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4"
+   },
+   {
+    "n": "21",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC014ALP013EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-0",
+    "secondary": "art-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1",
+    "secondary": "art-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-5",
+    "secondary": "art-5-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-2"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3",
+    "secondary": "art-4-4"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-1",
+    "secondary": "art-4-3"
+   },
+   {
+    "n": "15",
+    "primary": "art-4-2",
+    "secondary": "art-4-4"
+   },
+   {
+    "n": "16",
+    "primary": "art-2-2",
+    "secondary": "art-2-1"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-6-1"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "19",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-6-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC014ALP013EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0",
+    "secondary": "art-5-1"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-0",
+    "secondary": "art-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-2"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-3-2",
+    "secondary": "art-3-1"
+   },
+   {
+    "n": "15",
+    "primary": "art-3-0",
+    "secondary": "art-3-1"
+   },
+   {
+    "n": "16",
+    "primary": "art-6-1",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-6-3"
+   },
+   {
+    "n": "18",
+    "primary": "art-1-3",
+    "secondary": "art-2-2"
+   },
+   {
+    "n": "19",
+    "primary": "art-3-4",
+    "secondary": "art-6-3"
+   },
+   {
+    "n": "20",
+    "primary": "art-6-3",
+    "secondary": "art-3-4"
    }
   ]
  },
@@ -11809,6 +13798,2115 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
   ]
  },
  {
+  "subjectId": "engineering",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC027ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-2-1",
+    "secondary": "engineering-2-3"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-5-3",
+    "secondary": "engineering-2-2"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-0",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-4"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-2-4",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-1-7"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "engineering-12-3",
+    "secondary": "engineering-1-5"
+   },
+   {
+    "n": "9",
+    "primary": "engineering-7-3",
+    "secondary": "engineering-8-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "LC027ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-2-1",
+    "secondary": "engineering-2-3"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-5-3",
+    "secondary": "engineering-2-2"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-0",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-4"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-2-4",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-1-7"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "engineering-12-3",
+    "secondary": "engineering-1-5"
+   },
+   {
+    "n": "9",
+    "primary": "engineering-7-3",
+    "secondary": "engineering-8-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC027GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-2-1",
+    "secondary": "engineering-1-11"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-2",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-1-7"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-1-5"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-1-0",
+    "secondary": "engineering-12-9"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "LC027GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-0-3",
+    "secondary": "engineering-1-11"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-2",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-1-11"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-1-5"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-1-0",
+    "secondary": "engineering-12-9"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC027ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-0-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-1",
+    "secondary": "engineering-2-6"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-0",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-4"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-2-4",
+    "secondary": "engineering-2-2"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-12-5"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-1-5"
+   },
+   {
+    "n": "9",
+    "primary": "engineering-7-2",
+    "secondary": "engineering-7-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "LC027ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-0-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-1",
+    "secondary": "engineering-2-6"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-0",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-4"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-2-4"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-8"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-1-5"
+   },
+   {
+    "n": "9",
+    "primary": "engineering-7-2",
+    "secondary": "engineering-7-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC027GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-2-1"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-2",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-1-7"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-1-5"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-12-9",
+    "secondary": "engineering-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC027ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-2-1",
+    "secondary": "engineering-6-0"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-4-3"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-0",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-4"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-2-4"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-8"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-2-4",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "engineering-1-5",
+    "secondary": "engineering-1-6"
+   },
+   {
+    "n": "9",
+    "primary": "engineering-7-2",
+    "secondary": "engineering-7-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "LC027ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-2-4",
+    "secondary": "engineering-6-0"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-4-3"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-0",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-4"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-2-4",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-8"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-2-1",
+    "secondary": "engineering-2-4"
+   },
+   {
+    "n": "8",
+    "primary": "engineering-1-5",
+    "secondary": "engineering-1-6"
+   },
+   {
+    "n": "9",
+    "primary": "engineering-7-0",
+    "secondary": "engineering-7-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC027GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-2-1",
+    "secondary": "engineering-1-6"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-2",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-1-7"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-2-1",
+    "secondary": "engineering-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-1-5"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "LC027GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-2-1",
+    "secondary": "engineering-1-6"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-2",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-1-7"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-2-1",
+    "secondary": "engineering-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-1-5"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-1-0",
+    "secondary": "engineering-0-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC027ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-2-4",
+    "secondary": "engineering-7-3"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-4-3",
+    "secondary": "engineering-9-7"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-0",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-2-4",
+    "secondary": "engineering-2-5"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-0-1"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-0-3"
+   },
+   {
+    "n": "9",
+    "primary": "engineering-7-3",
+    "secondary": "engineering-7-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "LC027ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-2-4",
+    "secondary": "engineering-7-3"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-4-3",
+    "secondary": "engineering-9-7"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-0",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-2-4",
+    "secondary": "engineering-2-5"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-0-1"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-0-3"
+   },
+   {
+    "n": "9",
+    "primary": "engineering-7-3",
+    "secondary": "engineering-7-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC027ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-12-8"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-5-0",
+    "secondary": "engineering-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-0",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-4"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-2-4",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-12-5"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-2"
+   },
+   {
+    "n": "8",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-1-5"
+   },
+   {
+    "n": "9",
+    "primary": "engineering-7-0",
+    "secondary": "engineering-7-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2021,
+  "fileid": "LC027ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-12-8"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-5-0",
+    "secondary": "engineering-5-3"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-0",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-4"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-2-4",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-12-5"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-2"
+   },
+   {
+    "n": "8",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-1-5"
+   },
+   {
+    "n": "9",
+    "primary": "engineering-7-0",
+    "secondary": "engineering-7-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC027GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-0-1",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-2",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-1-7"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-1-5"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-1-0",
+    "secondary": "engineering-12-9"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2021,
+  "fileid": "LC027GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-0-1",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-2",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-1-7"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-1-5"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-1-0",
+    "secondary": "engineering-1-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC027GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-0-3",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-2",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-1-7"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-1-5"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-1-0",
+    "secondary": "engineering-6-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2019,
+  "fileid": "LC027GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-0-3",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-2",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-1-7"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-1-5"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-1-0",
+    "secondary": "engineering-6-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2018,
+  "fileid": "LC027ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-2-1",
+    "secondary": "engineering-6-4"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-0",
+    "secondary": "engineering-2-6"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-4"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-2-4"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-1-8"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-1-5",
+    "secondary": "engineering-1-4"
+   },
+   {
+    "n": "8",
+    "primary": "engineering-7-1",
+    "secondary": "engineering-7-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC027GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-5-3",
+    "secondary": "engineering-1-10"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-2",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-1-7"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-3"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-12-2"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-1-0",
+    "secondary": "engineering-6-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2018,
+  "fileid": "LC027GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-5-3",
+    "secondary": "engineering-1-10"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-2",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-1-7"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-3"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-12-2"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-1-0",
+    "secondary": "engineering-6-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2017,
+  "fileid": "LC027ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-2-6",
+    "secondary": "engineering-3-6"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-0",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-4",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-4"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-1-8"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-12-9",
+    "secondary": "engineering-1-5"
+   },
+   {
+    "n": "8",
+    "primary": "engineering-7-3",
+    "secondary": "engineering-7-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC027ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-2-1",
+    "secondary": "engineering-2-5"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-0",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-4"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-2-4"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-1-8"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-1-5"
+   },
+   {
+    "n": "8",
+    "primary": "engineering-7-1",
+    "secondary": "engineering-7-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC027GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-2-1",
+    "secondary": "engineering-0-3"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-2",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-1-7"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-3"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-1-5"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-1-0",
+    "secondary": "engineering-6-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC027GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-2-1",
+    "secondary": "engineering-1-10"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-2",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-1-7"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-3"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-1-5"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-12-9",
+    "secondary": "engineering-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC027ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-2-1",
+    "secondary": "engineering-2-2"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-0",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-4"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-2-4",
+    "secondary": "engineering-2-5"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-1-8"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-4"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-12-3",
+    "secondary": "engineering-1-4"
+   },
+   {
+    "n": "8",
+    "primary": "engineering-7-3",
+    "secondary": "engineering-8-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC027ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-2-1",
+    "secondary": "engineering-2-2"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-0",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-4"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-2-4",
+    "secondary": "engineering-2-5"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-1-8"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-4"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-12-3",
+    "secondary": "engineering-1-4"
+   },
+   {
+    "n": "8",
+    "primary": "engineering-7-3",
+    "secondary": "engineering-8-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC027GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-1-4"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-2",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-1-7",
+    "secondary": "engineering-1-8"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-4-5"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-12-9",
+    "secondary": "engineering-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC027GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-1-4"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-2",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-1-7",
+    "secondary": "engineering-1-8"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-4-5"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-12-9",
+    "secondary": "engineering-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC027ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-3-6",
+    "secondary": "engineering-2-3"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-0",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-4",
+    "secondary": "engineering-2-5"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-2-6",
+    "secondary": "engineering-2-4"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-1-8"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-1-5",
+    "secondary": "engineering-12-3"
+   },
+   {
+    "n": "8",
+    "primary": "engineering-7-3",
+    "secondary": "engineering-8-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC027GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-0-3",
+    "secondary": "engineering-6-0"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-2",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-1-7"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-1-1",
+    "secondary": "engineering-1-9"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-1-5"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-1-0",
+    "secondary": "engineering-6-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC027GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-0-3",
+    "secondary": "engineering-6-0"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-2",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-1-7"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-1-1",
+    "secondary": "engineering-1-9"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-1-5"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-1-0",
+    "secondary": "engineering-6-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2013,
+  "fileid": "LC027ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-2-2",
+    "secondary": "engineering-2-6"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-0",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-4"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-2-4",
+    "secondary": "engineering-2-5"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-0-4"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-1",
+    "secondary": "engineering-2-4"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-1-5"
+   },
+   {
+    "n": "8",
+    "primary": "engineering-7-2",
+    "secondary": "engineering-7-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC027GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-1-10",
+    "secondary": "engineering-1-6"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-2",
+    "secondary": "engineering-2-6"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-8-0"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-1-7"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-4-5"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-1-0",
+    "secondary": "engineering-12-9"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2013,
+  "fileid": "LC027GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-1-10",
+    "secondary": "engineering-1-6"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-2",
+    "secondary": "engineering-2-6"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-8-0"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-1-7"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-4-5"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-1-0",
+    "secondary": "engineering-12-9"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2012,
+  "fileid": "LC027ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-2-4",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-0",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-4"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-2-4",
+    "secondary": "engineering-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-12-5"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-4"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-1-3"
+   },
+   {
+    "n": "8",
+    "primary": "engineering-7-3",
+    "secondary": "engineering-5-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2012,
+  "fileid": "LC027GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-0-3",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-2",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-1-7"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-1-5"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-1-0",
+    "secondary": "engineering-6-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2011,
+  "fileid": "LC027ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-2-1",
+    "secondary": "engineering-2-6"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-0",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-4"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-2-4",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-0-4"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-4"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-1-5",
+    "secondary": "engineering-1-4"
+   },
+   {
+    "n": "8",
+    "primary": "engineering-7-2",
+    "secondary": "engineering-6-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC027GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-0-0",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-2",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-1-7"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-1-5"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-1-0",
+    "secondary": "engineering-6-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2011,
+  "fileid": "LC027GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-0-0",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-2",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-1-9"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-1-5"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-1-0",
+    "secondary": "engineering-6-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2010,
+  "fileid": "LC027ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-0-0",
+    "secondary": "engineering-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-0",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-4"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-2-4",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-1-5",
+    "secondary": "engineering-1-4"
+   },
+   {
+    "n": "8",
+    "primary": "engineering-7-3",
+    "secondary": "engineering-6-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC027GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-1-7",
+    "secondary": "engineering-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-2",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-1-9"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-1-5"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-1-0",
+    "secondary": "engineering-6-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2010,
+  "fileid": "LC027GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-2-1",
+    "secondary": "engineering-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-2",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-1-7"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-1-5"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-1-0",
+    "secondary": "engineering-6-0"
+   }
+  ]
+ },
+ {
   "subjectId": "geography",
   "level": "higher",
   "lang": "ev",
@@ -13790,6 +17888,2660 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "4",
     "primary": "history-2-17"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-business-studies",
+  "level": "common",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "JC042CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-business-studies-1-3",
+    "secondary": "jc-business-studies-1-4"
+   },
+   {
+    "n": "2",
+    "primary": "jc-business-studies-2-4",
+    "secondary": "jc-business-studies-2-5"
+   },
+   {
+    "n": "3",
+    "primary": "jc-business-studies-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "jc-business-studies-2-3",
+    "secondary": "jc-business-studies-2-9"
+   },
+   {
+    "n": "5",
+    "primary": "jc-business-studies-2-8"
+   },
+   {
+    "n": "6",
+    "primary": "jc-business-studies-1-13"
+   },
+   {
+    "n": "7",
+    "primary": "jc-business-studies-2-7"
+   },
+   {
+    "n": "8",
+    "primary": "jc-business-studies-1-4"
+   },
+   {
+    "n": "9",
+    "primary": "jc-business-studies-0-5",
+    "secondary": "jc-business-studies-0-3"
+   },
+   {
+    "n": "10",
+    "primary": "jc-business-studies-1-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-business-studies-1-10"
+   },
+   {
+    "n": "12",
+    "primary": "jc-business-studies-0-6",
+    "secondary": "jc-business-studies-0-5"
+   },
+   {
+    "n": "13",
+    "primary": "jc-business-studies-2-9",
+    "secondary": "jc-business-studies-2-5"
+   },
+   {
+    "n": "14",
+    "primary": "jc-business-studies-2-0"
+   },
+   {
+    "n": "15",
+    "primary": "jc-business-studies-0-7",
+    "secondary": "jc-business-studies-0-10"
+   },
+   {
+    "n": "16",
+    "primary": "jc-business-studies-2-6",
+    "secondary": "jc-business-studies-0-10"
+   },
+   {
+    "n": "17",
+    "primary": "jc-business-studies-1-12"
+   },
+   {
+    "n": "18",
+    "primary": "jc-business-studies-0-1",
+    "secondary": "jc-business-studies-1-11"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-business-studies",
+  "level": "common",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "JC042CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-business-studies-1-3",
+    "secondary": "jc-business-studies-1-4"
+   },
+   {
+    "n": "2",
+    "primary": "jc-business-studies-2-4",
+    "secondary": "jc-business-studies-2-5"
+   },
+   {
+    "n": "3",
+    "primary": "jc-business-studies-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "jc-business-studies-2-3",
+    "secondary": "jc-business-studies-2-9"
+   },
+   {
+    "n": "5",
+    "primary": "jc-business-studies-2-8"
+   },
+   {
+    "n": "6",
+    "primary": "jc-business-studies-1-13"
+   },
+   {
+    "n": "7",
+    "primary": "jc-business-studies-2-7"
+   },
+   {
+    "n": "8",
+    "primary": "jc-business-studies-1-4"
+   },
+   {
+    "n": "9",
+    "primary": "jc-business-studies-0-5",
+    "secondary": "jc-business-studies-0-3"
+   },
+   {
+    "n": "10",
+    "primary": "jc-business-studies-1-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-business-studies-1-10"
+   },
+   {
+    "n": "12",
+    "primary": "jc-business-studies-0-6",
+    "secondary": "jc-business-studies-0-5"
+   },
+   {
+    "n": "13",
+    "primary": "jc-business-studies-2-9",
+    "secondary": "jc-business-studies-2-5"
+   },
+   {
+    "n": "14",
+    "primary": "jc-business-studies-2-0"
+   },
+   {
+    "n": "15",
+    "primary": "jc-business-studies-0-7",
+    "secondary": "jc-business-studies-0-10"
+   },
+   {
+    "n": "16",
+    "primary": "jc-business-studies-2-6",
+    "secondary": "jc-business-studies-0-10"
+   },
+   {
+    "n": "17",
+    "primary": "jc-business-studies-1-12"
+   },
+   {
+    "n": "18",
+    "primary": "jc-business-studies-0-1",
+    "secondary": "jc-business-studies-1-11"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-business-studies",
+  "level": "common",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "JC042CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-business-studies-0-0",
+    "secondary": "jc-business-studies-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "jc-business-studies-1-7"
+   },
+   {
+    "n": "3",
+    "primary": "jc-business-studies-1-10"
+   },
+   {
+    "n": "4",
+    "primary": "jc-business-studies-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "jc-business-studies-0-7",
+    "secondary": "jc-business-studies-0-10"
+   },
+   {
+    "n": "6",
+    "primary": "jc-business-studies-0-9"
+   },
+   {
+    "n": "7",
+    "primary": "jc-business-studies-1-12"
+   },
+   {
+    "n": "8",
+    "primary": "jc-business-studies-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-business-studies-1-8"
+   },
+   {
+    "n": "10",
+    "primary": "jc-business-studies-0-4"
+   },
+   {
+    "n": "11",
+    "primary": "jc-business-studies-1-5",
+    "secondary": "jc-business-studies-2-5"
+   },
+   {
+    "n": "12",
+    "primary": "jc-business-studies-2-6"
+   },
+   {
+    "n": "13",
+    "primary": "jc-business-studies-1-9"
+   },
+   {
+    "n": "14",
+    "primary": "jc-business-studies-2-7"
+   },
+   {
+    "n": "15",
+    "primary": "jc-business-studies-0-3"
+   },
+   {
+    "n": "16",
+    "primary": "jc-business-studies-1-4"
+   },
+   {
+    "n": "17",
+    "primary": "jc-business-studies-1-13",
+    "secondary": "jc-business-studies-1-12"
+   },
+   {
+    "n": "18",
+    "primary": "jc-business-studies-2-8"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-business-studies",
+  "level": "common",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "JC042CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-business-studies-0-1",
+    "secondary": "jc-business-studies-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-business-studies-1-9",
+    "secondary": "jc-business-studies-1-1"
+   },
+   {
+    "n": "3",
+    "primary": "jc-business-studies-1-10"
+   },
+   {
+    "n": "4",
+    "primary": "jc-business-studies-2-7"
+   },
+   {
+    "n": "5",
+    "primary": "jc-business-studies-1-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-business-studies-1-12"
+   },
+   {
+    "n": "7",
+    "primary": "jc-business-studies-0-3",
+    "secondary": "jc-business-studies-2-8"
+   },
+   {
+    "n": "8",
+    "primary": "jc-business-studies-0-9",
+    "secondary": "jc-business-studies-0-7"
+   },
+   {
+    "n": "9",
+    "primary": "jc-business-studies-1-12"
+   },
+   {
+    "n": "10",
+    "primary": "jc-business-studies-0-8",
+    "secondary": "jc-business-studies-0-7"
+   },
+   {
+    "n": "11",
+    "primary": "jc-business-studies-2-4",
+    "secondary": "jc-business-studies-2-5"
+   },
+   {
+    "n": "12",
+    "primary": "jc-business-studies-1-10"
+   },
+   {
+    "n": "13",
+    "primary": "jc-business-studies-0-1"
+   },
+   {
+    "n": "14",
+    "primary": "jc-business-studies-2-8"
+   },
+   {
+    "n": "15",
+    "primary": "jc-business-studies-2-3",
+    "secondary": "jc-business-studies-2-9"
+   },
+   {
+    "n": "16",
+    "primary": "jc-business-studies-1-4"
+   },
+   {
+    "n": "17",
+    "primary": "jc-business-studies-1-13",
+    "secondary": "jc-business-studies-1-12"
+   },
+   {
+    "n": "18",
+    "primary": "jc-business-studies-0-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-business-studies",
+  "level": "common",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "JC042CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-business-studies-0-0",
+    "secondary": "jc-business-studies-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "jc-business-studies-1-9",
+    "secondary": "jc-business-studies-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-business-studies-1-10",
+    "secondary": "jc-business-studies-1-12"
+   },
+   {
+    "n": "4",
+    "primary": "jc-business-studies-2-7"
+   },
+   {
+    "n": "5",
+    "primary": "jc-business-studies-1-0",
+    "secondary": "jc-business-studies-1-5"
+   },
+   {
+    "n": "6",
+    "primary": "jc-business-studies-1-12"
+   },
+   {
+    "n": "7",
+    "primary": "jc-business-studies-0-3",
+    "secondary": "jc-business-studies-2-8"
+   },
+   {
+    "n": "8",
+    "primary": "jc-business-studies-0-9",
+    "secondary": "jc-business-studies-2-5"
+   },
+   {
+    "n": "9",
+    "primary": "jc-business-studies-1-12"
+   },
+   {
+    "n": "10",
+    "primary": "jc-business-studies-0-8"
+   },
+   {
+    "n": "11",
+    "primary": "jc-business-studies-2-4",
+    "secondary": "jc-business-studies-2-5"
+   },
+   {
+    "n": "12",
+    "primary": "jc-business-studies-1-10"
+   },
+   {
+    "n": "13",
+    "primary": "jc-business-studies-0-1"
+   },
+   {
+    "n": "14",
+    "primary": "jc-business-studies-2-8"
+   },
+   {
+    "n": "15",
+    "primary": "jc-business-studies-2-3",
+    "secondary": "jc-business-studies-2-9"
+   },
+   {
+    "n": "16",
+    "primary": "jc-business-studies-1-4"
+   },
+   {
+    "n": "17",
+    "primary": "jc-business-studies-1-13",
+    "secondary": "jc-business-studies-1-12"
+   },
+   {
+    "n": "18",
+    "primary": "jc-business-studies-0-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-english",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "JC002ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "2",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "3",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "4",
+    "primary": "jc-english-1-2",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "5",
+    "primary": "jc-english-1-2",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "6",
+    "primary": "jc-english-1-5",
+    "secondary": "jc-english-1-1"
+   },
+   {
+    "n": "7",
+    "primary": "jc-english-1-1",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "8",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-english-2-0",
+    "secondary": "jc-english-2-1"
+   },
+   {
+    "n": "10",
+    "primary": "jc-english-2-1",
+    "secondary": "jc-english-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-english",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "JC002GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "6",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "7",
+    "primary": "jc-english-2-0",
+    "secondary": "jc-english-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-english-2-0",
+    "secondary": "jc-english-2-1"
+   },
+   {
+    "n": "10",
+    "primary": "jc-english-1-2",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "11",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-english-2-2",
+    "secondary": "jc-english-2-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-english",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "JC002ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-1-2"
+   },
+   {
+    "n": "2",
+    "primary": "jc-english-2-0",
+    "secondary": "jc-english-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-english-1-2",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "4",
+    "primary": "jc-english-1-5",
+    "secondary": "jc-english-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "6",
+    "primary": "jc-english-2-1",
+    "secondary": "jc-english-2-3"
+   },
+   {
+    "n": "7",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "8",
+    "primary": "jc-english-1-3"
+   },
+   {
+    "n": "9",
+    "primary": "jc-english-1-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-english",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "JC002GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-english-2-1",
+    "secondary": "jc-english-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-english-2-0",
+    "secondary": "jc-english-2-1"
+   },
+   {
+    "n": "5",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-english-2-0",
+    "secondary": "jc-english-2-1"
+   },
+   {
+    "n": "7",
+    "primary": "jc-english-1-1",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "8",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-english-2-1",
+    "secondary": "jc-english-1-3"
+   },
+   {
+    "n": "10",
+    "primary": "jc-english-2-1",
+    "secondary": "jc-english-2-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-english-1-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-english",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "JC002ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-english-1-4",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "2",
+    "primary": "jc-english-1-4"
+   },
+   {
+    "n": "3",
+    "primary": "jc-english-2-1",
+    "secondary": "jc-english-1-3"
+   },
+   {
+    "n": "4",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "5",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "6",
+    "primary": "jc-english-1-2"
+   },
+   {
+    "n": "7",
+    "primary": "jc-english-2-2",
+    "secondary": "jc-english-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-english-2-1",
+    "secondary": "jc-english-2-3"
+   },
+   {
+    "n": "9",
+    "primary": "jc-english-2-3"
+   },
+   {
+    "n": "10",
+    "primary": "jc-english-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-english",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "JC002GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-2-3"
+   },
+   {
+    "n": "2",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "3",
+    "primary": "jc-english-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "jc-english-1-3"
+   },
+   {
+    "n": "5",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-2-3"
+   },
+   {
+    "n": "6",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-english-2-1",
+    "secondary": "jc-english-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-english-2-0",
+    "secondary": "jc-english-2-1"
+   },
+   {
+    "n": "10",
+    "primary": "jc-english-2-2"
+   },
+   {
+    "n": "11",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-1-4"
+   },
+   {
+    "n": "12",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-1-4"
+   },
+   {
+    "n": "13",
+    "primary": "jc-english-2-0",
+    "secondary": "jc-english-2-1"
+   },
+   {
+    "n": "14",
+    "primary": "jc-english-2-0",
+    "secondary": "jc-english-1-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-english",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "JC002ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "2",
+    "primary": "jc-english-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "jc-english-2-3"
+   },
+   {
+    "n": "4",
+    "primary": "jc-english-1-3"
+   },
+   {
+    "n": "5",
+    "primary": "jc-english-1-3"
+   },
+   {
+    "n": "6",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "7",
+    "primary": "jc-english-1-4"
+   },
+   {
+    "n": "8",
+    "primary": "jc-english-1-4"
+   },
+   {
+    "n": "9",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "10",
+    "primary": "jc-english-1-5",
+    "secondary": "jc-english-2-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-english",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "JC002GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-english-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-english-2-0",
+    "secondary": "jc-english-2-1"
+   },
+   {
+    "n": "5",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-english-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "jc-english-1-5"
+   },
+   {
+    "n": "9",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-english-2-2",
+    "secondary": "jc-english-1-1"
+   },
+   {
+    "n": "11",
+    "primary": "jc-english-1-5"
+   },
+   {
+    "n": "12",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-2-3"
+   },
+   {
+    "n": "13",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "14",
+    "primary": "jc-english-2-1",
+    "secondary": "jc-english-2-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-english",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "JC002ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "2",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "3",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-2-3"
+   },
+   {
+    "n": "4",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "5",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "6",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "7",
+    "primary": "jc-english-2-2",
+    "secondary": "jc-english-1-1"
+   },
+   {
+    "n": "8",
+    "primary": "jc-english-1-2",
+    "secondary": "jc-english-2-2"
+   },
+   {
+    "n": "9",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "10",
+    "primary": "jc-english-2-0",
+    "secondary": "jc-english-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-english",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "JC002GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "3",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "5",
+    "primary": "jc-english-0-0",
+    "secondary": "jc-english-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-2-3"
+   },
+   {
+    "n": "8",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-2-3"
+   },
+   {
+    "n": "9",
+    "primary": "jc-english-2-0",
+    "secondary": "jc-english-0-1"
+   },
+   {
+    "n": "10",
+    "primary": "jc-english-1-5",
+    "secondary": "jc-english-2-2"
+   },
+   {
+    "n": "11",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-english-1-3"
+   },
+   {
+    "n": "14",
+    "primary": "jc-english-2-3"
+   },
+   {
+    "n": "15",
+    "primary": "jc-english-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-english",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "JC002ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "4",
+    "primary": "jc-english-0-1",
+    "secondary": "jc-english-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-english-1-1",
+    "secondary": "jc-english-2-2"
+   },
+   {
+    "n": "6",
+    "primary": "jc-english-2-1"
+   },
+   {
+    "n": "7",
+    "primary": "jc-english-2-3"
+   },
+   {
+    "n": "8",
+    "primary": "jc-english-1-2",
+    "secondary": "jc-english-2-2"
+   },
+   {
+    "n": "9",
+    "primary": "jc-english-1-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-english",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "JC002GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-english-1-3"
+   },
+   {
+    "n": "2",
+    "primary": "jc-english-1-3"
+   },
+   {
+    "n": "3",
+    "primary": "jc-english-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "jc-english-1-3"
+   },
+   {
+    "n": "5",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-english-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "jc-english-1-1",
+    "secondary": "jc-english-2-2"
+   },
+   {
+    "n": "9",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "10",
+    "primary": "jc-english-2-1"
+   },
+   {
+    "n": "11",
+    "primary": "jc-english-0-1",
+    "secondary": "jc-english-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-english-2-3"
+   },
+   {
+    "n": "13",
+    "primary": "jc-english-1-2",
+    "secondary": "jc-english-2-2"
+   },
+   {
+    "n": "14",
+    "primary": "jc-english-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-english",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "JC002ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-1-4"
+   },
+   {
+    "n": "3",
+    "primary": "jc-english-1-3"
+   },
+   {
+    "n": "4",
+    "primary": "jc-english-2-3"
+   },
+   {
+    "n": "5",
+    "primary": "jc-english-1-2"
+   },
+   {
+    "n": "6",
+    "primary": "jc-english-1-2"
+   },
+   {
+    "n": "7",
+    "primary": "jc-english-1-2"
+   },
+   {
+    "n": "8",
+    "primary": "jc-english-1-2",
+    "secondary": "jc-english-2-2"
+   },
+   {
+    "n": "9",
+    "primary": "jc-english-1-2",
+    "secondary": "jc-english-1-4"
+   },
+   {
+    "n": "10",
+    "primary": "jc-english-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-english",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "JC002GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-english-1-5",
+    "secondary": "jc-english-1-4"
+   },
+   {
+    "n": "4",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-2-1"
+   },
+   {
+    "n": "7",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-1-5"
+   },
+   {
+    "n": "8",
+    "primary": "jc-english-1-1",
+    "secondary": "jc-english-2-2"
+   },
+   {
+    "n": "9",
+    "primary": "jc-english-1-0",
+    "secondary": "jc-english-2-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-english-1-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-english-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-english-2-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-english-1-3"
+   },
+   {
+    "n": "14",
+    "primary": "jc-english-1-3"
+   },
+   {
+    "n": "15",
+    "primary": "jc-english-1-3",
+    "secondary": "jc-english-2-2"
+   },
+   {
+    "n": "16",
+    "primary": "jc-english-2-0",
+    "secondary": "jc-english-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-geography",
+  "level": "common",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "JC005CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-geography-2-3",
+    "secondary": "jc-geography-2-5"
+   },
+   {
+    "n": "2",
+    "primary": "jc-geography-1-4"
+   },
+   {
+    "n": "3",
+    "primary": "jc-geography-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-geography-3-1",
+    "secondary": "jc-geography-3-6"
+   },
+   {
+    "n": "5",
+    "primary": "jc-geography-1-4"
+   },
+   {
+    "n": "6",
+    "primary": "jc-geography-1-3",
+    "secondary": "jc-geography-1-2"
+   },
+   {
+    "n": "7",
+    "primary": "jc-geography-1-5"
+   },
+   {
+    "n": "8",
+    "primary": "jc-geography-3-2",
+    "secondary": "jc-geography-0-2"
+   },
+   {
+    "n": "9",
+    "primary": "jc-geography-0-0",
+    "secondary": "jc-geography-0-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-geography",
+  "level": "common",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "JC005CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-geography-2-3",
+    "secondary": "jc-geography-2-5"
+   },
+   {
+    "n": "2",
+    "primary": "jc-geography-1-4"
+   },
+   {
+    "n": "3",
+    "primary": "jc-geography-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-geography-3-1",
+    "secondary": "jc-geography-3-6"
+   },
+   {
+    "n": "5",
+    "primary": "jc-geography-1-4"
+   },
+   {
+    "n": "6",
+    "primary": "jc-geography-1-3",
+    "secondary": "jc-geography-1-2"
+   },
+   {
+    "n": "7",
+    "primary": "jc-geography-1-5"
+   },
+   {
+    "n": "8",
+    "primary": "jc-geography-3-2",
+    "secondary": "jc-geography-0-2"
+   },
+   {
+    "n": "9",
+    "primary": "jc-geography-0-0",
+    "secondary": "jc-geography-0-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-geography",
+  "level": "common",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "JC005CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-geography-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-geography-2-5",
+    "secondary": "jc-geography-0-4"
+   },
+   {
+    "n": "3",
+    "primary": "jc-geography-1-2",
+    "secondary": "jc-geography-2-6"
+   },
+   {
+    "n": "4",
+    "primary": "jc-geography-0-2"
+   },
+   {
+    "n": "5",
+    "primary": "jc-geography-1-5",
+    "secondary": "jc-geography-0-4"
+   },
+   {
+    "n": "6",
+    "primary": "jc-geography-1-4",
+    "secondary": "jc-geography-0-2"
+   },
+   {
+    "n": "7",
+    "primary": "jc-geography-3-2",
+    "secondary": "jc-geography-0-2"
+   },
+   {
+    "n": "8",
+    "primary": "jc-geography-0-3",
+    "secondary": "jc-geography-3-2"
+   },
+   {
+    "n": "9",
+    "primary": "jc-geography-3-5",
+    "secondary": "jc-geography-0-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-geography",
+  "level": "common",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "JC005CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-geography-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-geography-2-5",
+    "secondary": "jc-geography-0-4"
+   },
+   {
+    "n": "3",
+    "primary": "jc-geography-1-2",
+    "secondary": "jc-geography-2-6"
+   },
+   {
+    "n": "4",
+    "primary": "jc-geography-0-2"
+   },
+   {
+    "n": "5",
+    "primary": "jc-geography-1-5",
+    "secondary": "jc-geography-0-4"
+   },
+   {
+    "n": "6",
+    "primary": "jc-geography-1-4",
+    "secondary": "jc-geography-0-2"
+   },
+   {
+    "n": "7",
+    "primary": "jc-geography-3-2",
+    "secondary": "jc-geography-0-2"
+   },
+   {
+    "n": "8",
+    "primary": "jc-geography-0-3",
+    "secondary": "jc-geography-3-2"
+   },
+   {
+    "n": "9",
+    "primary": "jc-geography-3-5",
+    "secondary": "jc-geography-0-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-geography",
+  "level": "common",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "JC005CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-geography-1-6"
+   },
+   {
+    "n": "2",
+    "primary": "jc-geography-1-4",
+    "secondary": "jc-geography-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "jc-geography-3-0",
+    "secondary": "jc-geography-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "jc-geography-3-0",
+    "secondary": "jc-geography-0-4"
+   },
+   {
+    "n": "5",
+    "primary": "jc-geography-2-2",
+    "secondary": "jc-geography-2-5"
+   },
+   {
+    "n": "6",
+    "primary": "jc-geography-3-4",
+    "secondary": "jc-geography-3-7"
+   },
+   {
+    "n": "7",
+    "primary": "jc-geography-1-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-geography-1-3",
+    "secondary": "jc-geography-0-4"
+   },
+   {
+    "n": "9",
+    "primary": "jc-geography-1-1",
+    "secondary": "jc-geography-2-1"
+   },
+   {
+    "n": "10",
+    "primary": "jc-geography-2-7",
+    "secondary": "jc-geography-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-geography",
+  "level": "common",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "JC005CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-geography-1-6"
+   },
+   {
+    "n": "2",
+    "primary": "jc-geography-1-4",
+    "secondary": "jc-geography-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "jc-geography-3-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-geography-3-0",
+    "secondary": "jc-geography-0-4"
+   },
+   {
+    "n": "5",
+    "primary": "jc-geography-2-2",
+    "secondary": "jc-geography-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "jc-geography-3-4",
+    "secondary": "jc-geography-3-7"
+   },
+   {
+    "n": "7",
+    "primary": "jc-geography-1-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-geography-1-3"
+   },
+   {
+    "n": "9",
+    "primary": "jc-geography-1-1",
+    "secondary": "jc-geography-2-1"
+   },
+   {
+    "n": "10",
+    "primary": "jc-geography-2-7",
+    "secondary": "jc-geography-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-geography",
+  "level": "common",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "JC005CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-geography-1-1",
+    "secondary": "jc-geography-1-2"
+   },
+   {
+    "n": "2",
+    "primary": "jc-geography-2-4"
+   },
+   {
+    "n": "3",
+    "primary": "jc-geography-1-4",
+    "secondary": "jc-geography-2-7"
+   },
+   {
+    "n": "4",
+    "primary": "jc-geography-3-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-geography-1-3",
+    "secondary": "jc-geography-2-3"
+   },
+   {
+    "n": "6",
+    "primary": "jc-geography-1-6",
+    "secondary": "jc-geography-2-5"
+   },
+   {
+    "n": "7",
+    "primary": "jc-geography-1-4",
+    "secondary": "jc-geography-3-2"
+   },
+   {
+    "n": "8",
+    "primary": "jc-geography-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-geography-1-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-geography",
+  "level": "common",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "JC005CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-geography-1-1",
+    "secondary": "jc-geography-1-2"
+   },
+   {
+    "n": "2",
+    "primary": "jc-geography-2-4"
+   },
+   {
+    "n": "3",
+    "primary": "jc-geography-1-4",
+    "secondary": "jc-geography-2-7"
+   },
+   {
+    "n": "4",
+    "primary": "jc-geography-3-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-geography-1-3",
+    "secondary": "jc-geography-2-3"
+   },
+   {
+    "n": "6",
+    "primary": "jc-geography-1-6",
+    "secondary": "jc-geography-2-1"
+   },
+   {
+    "n": "7",
+    "primary": "jc-geography-1-4",
+    "secondary": "jc-geography-3-2"
+   },
+   {
+    "n": "8",
+    "primary": "jc-geography-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-geography-1-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-mathematics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "JC003ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-mathematics-4-0",
+    "secondary": "jc-mathematics-1-4"
+   },
+   {
+    "n": "2",
+    "primary": "jc-mathematics-3-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-mathematics-1-6",
+    "secondary": "jc-mathematics-1-4"
+   },
+   {
+    "n": "4",
+    "primary": "jc-mathematics-4-3",
+    "secondary": "jc-mathematics-4-4"
+   },
+   {
+    "n": "5",
+    "primary": "jc-mathematics-2-5"
+   },
+   {
+    "n": "6",
+    "primary": "jc-mathematics-2-3"
+   },
+   {
+    "n": "7",
+    "primary": "jc-mathematics-2-1",
+    "secondary": "jc-mathematics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-mathematics-2-4"
+   },
+   {
+    "n": "9",
+    "primary": "jc-mathematics-3-6"
+   },
+   {
+    "n": "10",
+    "primary": "jc-mathematics-1-7",
+    "secondary": "jc-mathematics-3-3"
+   },
+   {
+    "n": "11",
+    "primary": "jc-mathematics-3-2"
+   },
+   {
+    "n": "12",
+    "primary": "jc-mathematics-3-6"
+   },
+   {
+    "n": "13",
+    "primary": "jc-mathematics-3-2",
+    "secondary": "jc-mathematics-3-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-mathematics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "JC003GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-mathematics-1-0",
+    "secondary": "jc-mathematics-4-4"
+   },
+   {
+    "n": "2",
+    "primary": "jc-mathematics-1-5",
+    "secondary": "jc-mathematics-1-6"
+   },
+   {
+    "n": "3",
+    "primary": "jc-mathematics-4-3"
+   },
+   {
+    "n": "4",
+    "primary": "jc-mathematics-2-1"
+   },
+   {
+    "n": "5",
+    "primary": "jc-mathematics-1-7",
+    "secondary": "jc-mathematics-4-1"
+   },
+   {
+    "n": "6",
+    "primary": "jc-mathematics-4-4",
+    "secondary": "jc-mathematics-4-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-mathematics-3-3"
+   },
+   {
+    "n": "8",
+    "primary": "jc-mathematics-1-2"
+   },
+   {
+    "n": "9",
+    "primary": "jc-mathematics-1-6",
+    "secondary": "jc-mathematics-1-4"
+   },
+   {
+    "n": "10",
+    "primary": "jc-mathematics-3-2",
+    "secondary": "jc-mathematics-3-3"
+   },
+   {
+    "n": "11",
+    "primary": "jc-mathematics-1-5",
+    "secondary": "jc-mathematics-2-1"
+   },
+   {
+    "n": "12",
+    "primary": "jc-mathematics-2-2",
+    "secondary": "jc-mathematics-2-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-mathematics-2-0",
+    "secondary": "jc-mathematics-3-6"
+   },
+   {
+    "n": "14",
+    "primary": "jc-mathematics-2-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-mathematics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "JC003GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-mathematics-1-2",
+    "secondary": "jc-mathematics-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-mathematics-1-6",
+    "secondary": "jc-mathematics-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-mathematics-1-7"
+   },
+   {
+    "n": "4",
+    "primary": "jc-mathematics-3-6",
+    "secondary": "jc-mathematics-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-mathematics-2-3"
+   },
+   {
+    "n": "6",
+    "primary": "jc-mathematics-2-3"
+   },
+   {
+    "n": "7",
+    "primary": "jc-mathematics-3-3"
+   },
+   {
+    "n": "8",
+    "primary": "jc-mathematics-4-4",
+    "secondary": "jc-mathematics-4-3"
+   },
+   {
+    "n": "9",
+    "primary": "jc-mathematics-2-2"
+   },
+   {
+    "n": "10",
+    "primary": "jc-mathematics-2-5"
+   },
+   {
+    "n": "11",
+    "primary": "jc-mathematics-2-4",
+    "secondary": "jc-mathematics-2-1"
+   },
+   {
+    "n": "12",
+    "primary": "jc-mathematics-3-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-mathematics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "JC003ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-mathematics-1-3",
+    "secondary": "jc-mathematics-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "jc-mathematics-4-3",
+    "secondary": "jc-mathematics-3-6"
+   },
+   {
+    "n": "3",
+    "primary": "jc-mathematics-2-2"
+   },
+   {
+    "n": "4",
+    "primary": "jc-mathematics-4-3",
+    "secondary": "jc-mathematics-1-4"
+   },
+   {
+    "n": "5",
+    "primary": "jc-mathematics-4-0",
+    "secondary": "jc-mathematics-4-1"
+   },
+   {
+    "n": "6",
+    "primary": "jc-mathematics-1-7"
+   },
+   {
+    "n": "7",
+    "primary": "jc-mathematics-2-5"
+   },
+   {
+    "n": "8",
+    "primary": "jc-mathematics-2-4",
+    "secondary": "jc-mathematics-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-mathematics-3-2",
+    "secondary": "jc-mathematics-1-1"
+   },
+   {
+    "n": "10",
+    "primary": "jc-mathematics-1-6",
+    "secondary": "jc-mathematics-3-1"
+   },
+   {
+    "n": "11",
+    "primary": "jc-mathematics-3-6"
+   },
+   {
+    "n": "12",
+    "primary": "jc-mathematics-2-3",
+    "secondary": "jc-mathematics-2-6"
+   },
+   {
+    "n": "13",
+    "primary": "jc-mathematics-3-3",
+    "secondary": "jc-mathematics-2-1"
+   },
+   {
+    "n": "14",
+    "primary": "jc-mathematics-2-3",
+    "secondary": "jc-mathematics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-mathematics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "JC003GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-mathematics-1-0",
+    "secondary": "jc-mathematics-1-6"
+   },
+   {
+    "n": "2",
+    "primary": "jc-mathematics-3-3",
+    "secondary": "jc-mathematics-3-1"
+   },
+   {
+    "n": "3",
+    "primary": "jc-mathematics-1-7"
+   },
+   {
+    "n": "4",
+    "primary": "jc-mathematics-2-1",
+    "secondary": "jc-mathematics-1-5"
+   },
+   {
+    "n": "5",
+    "primary": "jc-mathematics-4-3"
+   },
+   {
+    "n": "6",
+    "primary": "jc-mathematics-4-1",
+    "secondary": "jc-mathematics-4-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-mathematics-3-6"
+   },
+   {
+    "n": "8",
+    "primary": "jc-mathematics-4-4"
+   },
+   {
+    "n": "9",
+    "primary": "jc-mathematics-4-3",
+    "secondary": "jc-mathematics-2-5"
+   },
+   {
+    "n": "10",
+    "primary": "jc-mathematics-2-2",
+    "secondary": "jc-mathematics-1-5"
+   },
+   {
+    "n": "11",
+    "primary": "jc-mathematics-3-6"
+   },
+   {
+    "n": "12",
+    "primary": "jc-mathematics-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-mathematics-2-4",
+    "secondary": "jc-mathematics-2-6"
+   },
+   {
+    "n": "14",
+    "primary": "jc-mathematics-3-2",
+    "secondary": "jc-mathematics-3-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-mathematics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "JC003ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-mathematics-1-6",
+    "secondary": "jc-mathematics-1-4"
+   },
+   {
+    "n": "2",
+    "primary": "jc-mathematics-4-0",
+    "secondary": "jc-mathematics-4-1"
+   },
+   {
+    "n": "3",
+    "primary": "jc-mathematics-2-5"
+   },
+   {
+    "n": "4",
+    "primary": "jc-mathematics-3-3",
+    "secondary": "jc-mathematics-2-1"
+   },
+   {
+    "n": "5",
+    "primary": "jc-mathematics-2-2"
+   },
+   {
+    "n": "6",
+    "primary": "jc-mathematics-1-7",
+    "secondary": "jc-mathematics-1-4"
+   },
+   {
+    "n": "7",
+    "primary": "jc-mathematics-1-1"
+   },
+   {
+    "n": "8",
+    "primary": "jc-mathematics-2-4"
+   },
+   {
+    "n": "9",
+    "primary": "jc-mathematics-3-2",
+    "secondary": "jc-mathematics-3-1"
+   },
+   {
+    "n": "10",
+    "primary": "jc-mathematics-3-6",
+    "secondary": "jc-mathematics-0-1"
+   },
+   {
+    "n": "11",
+    "primary": "jc-mathematics-2-5"
+   },
+   {
+    "n": "12",
+    "primary": "jc-mathematics-2-4",
+    "secondary": "jc-mathematics-2-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-mathematics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "JC003GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-mathematics-1-0",
+    "secondary": "jc-mathematics-1-3"
+   },
+   {
+    "n": "2",
+    "primary": "jc-mathematics-1-6",
+    "secondary": "jc-mathematics-4-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-mathematics-2-2",
+    "secondary": "jc-mathematics-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-mathematics-4-3"
+   },
+   {
+    "n": "5",
+    "primary": "jc-mathematics-1-7",
+    "secondary": "jc-mathematics-4-1"
+   },
+   {
+    "n": "6",
+    "primary": "jc-mathematics-4-4",
+    "secondary": "jc-mathematics-4-3"
+   },
+   {
+    "n": "7",
+    "primary": "jc-mathematics-2-3"
+   },
+   {
+    "n": "8",
+    "primary": "jc-mathematics-3-6",
+    "secondary": "jc-mathematics-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-mathematics-1-6",
+    "secondary": "jc-mathematics-1-4"
+   },
+   {
+    "n": "10",
+    "primary": "jc-mathematics-3-3",
+    "secondary": "jc-mathematics-1-4"
+   },
+   {
+    "n": "11",
+    "primary": "jc-mathematics-1-5",
+    "secondary": "jc-mathematics-2-3"
+   },
+   {
+    "n": "12",
+    "primary": "jc-mathematics-2-1",
+    "secondary": "jc-mathematics-2-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-mathematics-3-2",
+    "secondary": "jc-mathematics-3-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-science",
+  "level": "common",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "JC057CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-science-4-5"
+   },
+   {
+    "n": "2",
+    "primary": "jc-science-2-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-science-3-3",
+    "secondary": "jc-science-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "jc-science-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "jc-science-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "jc-science-2-6"
+   },
+   {
+    "n": "7",
+    "primary": "jc-science-3-8"
+   },
+   {
+    "n": "8",
+    "primary": "jc-science-3-3"
+   },
+   {
+    "n": "9",
+    "primary": "jc-science-1-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-science-2-7"
+   },
+   {
+    "n": "11",
+    "primary": "jc-science-1-4",
+    "secondary": "jc-science-1-3"
+   },
+   {
+    "n": "12",
+    "primary": "jc-science-1-0",
+    "secondary": "jc-science-3-3"
+   },
+   {
+    "n": "13",
+    "primary": "jc-science-4-1"
+   },
+   {
+    "n": "14",
+    "primary": "jc-science-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-science",
+  "level": "common",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "JC057CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-science-3-6",
+    "secondary": "jc-science-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "jc-science-1-7",
+    "secondary": "jc-science-4-4"
+   },
+   {
+    "n": "3",
+    "primary": "jc-science-2-4",
+    "secondary": "jc-science-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-science-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "jc-science-1-4"
+   },
+   {
+    "n": "6",
+    "primary": "jc-science-3-1"
+   },
+   {
+    "n": "7",
+    "primary": "jc-science-4-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-science-3-7"
+   },
+   {
+    "n": "9",
+    "primary": "jc-science-1-3"
+   },
+   {
+    "n": "10",
+    "primary": "jc-science-2-8"
+   },
+   {
+    "n": "11",
+    "primary": "jc-science-1-1",
+    "secondary": "jc-science-1-2"
+   },
+   {
+    "n": "12",
+    "primary": "jc-science-0-2",
+    "secondary": "jc-science-2-5"
+   },
+   {
+    "n": "13",
+    "primary": "jc-science-0-2",
+    "secondary": "jc-science-0-1"
+   },
+   {
+    "n": "14",
+    "primary": "jc-science-4-2"
+   },
+   {
+    "n": "15",
+    "primary": "jc-science-3-4",
+    "secondary": "jc-science-0-2"
+   },
+   {
+    "n": "16",
+    "primary": "jc-science-2-0",
+    "secondary": "jc-science-2-4"
+   },
+   {
+    "n": "17",
+    "primary": "jc-science-4-3",
+    "secondary": "jc-science-4-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-science",
+  "level": "common",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "JC057CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-science-3-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-science-3-7"
+   },
+   {
+    "n": "3",
+    "primary": "jc-science-2-7"
+   },
+   {
+    "n": "4",
+    "primary": "jc-science-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-science-1-3",
+    "secondary": "jc-science-1-4"
+   },
+   {
+    "n": "6",
+    "primary": "jc-science-3-4",
+    "secondary": "jc-science-3-8"
+   },
+   {
+    "n": "7",
+    "primary": "jc-science-1-1"
+   },
+   {
+    "n": "8",
+    "primary": "jc-science-2-6"
+   },
+   {
+    "n": "9",
+    "primary": "jc-science-2-3",
+    "secondary": "jc-science-2-2"
+   },
+   {
+    "n": "10",
+    "primary": "jc-science-2-1",
+    "secondary": "jc-science-0-7"
+   },
+   {
+    "n": "11",
+    "primary": "jc-science-4-3",
+    "secondary": "jc-science-3-6"
+   },
+   {
+    "n": "12",
+    "primary": "jc-science-0-4",
+    "secondary": "jc-science-0-5"
+   },
+   {
+    "n": "13",
+    "primary": "jc-science-4-2",
+    "secondary": "jc-science-4-1"
+   },
+   {
+    "n": "14",
+    "primary": "jc-science-0-5",
+    "secondary": "jc-science-1-2"
+   },
+   {
+    "n": "15",
+    "primary": "jc-science-3-3",
+    "secondary": "jc-science-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-science",
+  "level": "common",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "JC057CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-science-0-3",
+    "secondary": "jc-science-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-science-4-0",
+    "secondary": "jc-science-4-2"
+   },
+   {
+    "n": "3",
+    "primary": "jc-science-2-1",
+    "secondary": "jc-science-2-3"
+   },
+   {
+    "n": "4",
+    "primary": "jc-science-3-2",
+    "secondary": "jc-science-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "jc-science-2-4",
+    "secondary": "jc-science-2-2"
+   },
+   {
+    "n": "6",
+    "primary": "jc-science-4-2",
+    "secondary": "jc-science-4-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-science-1-1",
+    "secondary": "jc-science-0-2"
+   },
+   {
+    "n": "8",
+    "primary": "jc-science-4-1",
+    "secondary": "jc-science-4-6"
+   },
+   {
+    "n": "9",
+    "primary": "jc-science-2-6",
+    "secondary": "jc-science-0-2"
+   },
+   {
+    "n": "10",
+    "primary": "jc-science-3-3"
+   },
+   {
+    "n": "11",
+    "primary": "jc-science-4-2"
+   },
+   {
+    "n": "12",
+    "primary": "jc-science-3-1",
+    "secondary": "jc-science-3-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-science-2-4",
+    "secondary": "jc-science-2-0"
+   },
+   {
+    "n": "14",
+    "primary": "jc-science-4-5",
+    "secondary": "jc-science-3-8"
+   },
+   {
+    "n": "15",
+    "primary": "jc-science-1-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-science",
+  "level": "common",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "JC057CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-science-3-0",
+    "secondary": "jc-science-0-3"
+   },
+   {
+    "n": "2",
+    "primary": "jc-science-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-science-4-3"
+   },
+   {
+    "n": "4",
+    "primary": "jc-science-2-0",
+    "secondary": "jc-science-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "jc-science-3-1",
+    "secondary": "jc-science-3-5"
+   },
+   {
+    "n": "6",
+    "primary": "jc-science-2-6",
+    "secondary": "jc-science-2-7"
+   },
+   {
+    "n": "7",
+    "primary": "jc-science-1-1"
+   },
+   {
+    "n": "8",
+    "primary": "jc-science-4-5",
+    "secondary": "jc-science-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "jc-science-3-3"
+   },
+   {
+    "n": "10",
+    "primary": "jc-science-4-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-science-2-4",
+    "secondary": "jc-science-0-1"
+   },
+   {
+    "n": "12",
+    "primary": "jc-science-1-4",
+    "secondary": "jc-science-0-2"
+   },
+   {
+    "n": "13",
+    "primary": "jc-science-1-5",
+    "secondary": "jc-science-1-3"
+   },
+   {
+    "n": "14",
+    "primary": "jc-science-3-5",
+    "secondary": "jc-science-0-6"
+   },
+   {
+    "n": "15",
+    "primary": "jc-science-2-3",
+    "secondary": "jc-science-2-8"
+   },
+   {
+    "n": "16",
+    "primary": "jc-science-4-2",
+    "secondary": "jc-science-4-0"
    }
   ]
  },
@@ -19362,6 +26114,3296 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "12",
     "primary": "physics-and-chemistry-7-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC065ALP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-6-0",
+    "secondary": "technology-11-7"
+   },
+   {
+    "n": "2",
+    "primary": "technology-2-0"
+   },
+   {
+    "n": "3",
+    "primary": "technology-6-0"
+   },
+   {
+    "n": "4",
+    "primary": "technology-6-2",
+    "secondary": "technology-7-1"
+   },
+   {
+    "n": "5",
+    "primary": "technology-6-0",
+    "secondary": "technology-5-1"
+   },
+   {
+    "n": "6",
+    "primary": "technology-4-0",
+    "secondary": "technology-9-2"
+   },
+   {
+    "n": "7",
+    "primary": "technology-11-1",
+    "secondary": "technology-11-0"
+   },
+   {
+    "n": "8",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "9",
+    "primary": "technology-5-0",
+    "secondary": "technology-11-1"
+   },
+   {
+    "n": "10",
+    "primary": "technology-0-3",
+    "secondary": "technology-0-1"
+   },
+   {
+    "n": "11",
+    "primary": "technology-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "technology-6-1",
+    "secondary": "technology-7-0"
+   },
+   {
+    "n": "13",
+    "primary": "technology-5-1",
+    "secondary": "technology-7-3"
+   },
+   {
+    "n": "14",
+    "primary": "technology-2-0",
+    "secondary": "technology-11-4"
+   },
+   {
+    "n": "15",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC065GLP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-2-0",
+    "secondary": "technology-2-1"
+   },
+   {
+    "n": "2",
+    "primary": "technology-6-0"
+   },
+   {
+    "n": "3",
+    "primary": "technology-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "technology-3-0",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "5",
+    "primary": "technology-6-1",
+    "secondary": "technology-6-2"
+   },
+   {
+    "n": "6",
+    "primary": "technology-5-0"
+   },
+   {
+    "n": "7",
+    "primary": "technology-11-5",
+    "secondary": "technology-11-1"
+   },
+   {
+    "n": "8",
+    "primary": "technology-2-0",
+    "secondary": "technology-0-7"
+   },
+   {
+    "n": "9",
+    "primary": "technology-6-1"
+   },
+   {
+    "n": "10",
+    "primary": "technology-4-1",
+    "secondary": "technology-4-0"
+   },
+   {
+    "n": "11",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "12",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC065ALP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-9-3",
+    "secondary": "technology-4-0"
+   },
+   {
+    "n": "2",
+    "primary": "technology-2-0",
+    "secondary": "technology-11-1"
+   },
+   {
+    "n": "3",
+    "primary": "technology-9-3",
+    "secondary": "technology-7-5"
+   },
+   {
+    "n": "4",
+    "primary": "technology-6-2",
+    "secondary": "technology-7-1"
+   },
+   {
+    "n": "5",
+    "primary": "technology-6-2",
+    "secondary": "technology-7-0"
+   },
+   {
+    "n": "6",
+    "primary": "technology-1-0",
+    "secondary": "technology-10-2"
+   },
+   {
+    "n": "7",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "8",
+    "primary": "technology-3-2"
+   },
+   {
+    "n": "9",
+    "primary": "technology-6-2",
+    "secondary": "technology-7-1"
+   },
+   {
+    "n": "10",
+    "primary": "technology-9-1",
+    "secondary": "technology-9-2"
+   },
+   {
+    "n": "11",
+    "primary": "technology-5-1",
+    "secondary": "technology-5-0"
+   },
+   {
+    "n": "12",
+    "primary": "technology-2-1",
+    "secondary": "technology-11-7"
+   },
+   {
+    "n": "13",
+    "primary": "technology-6-0",
+    "secondary": "technology-5-0"
+   },
+   {
+    "n": "14",
+    "primary": "technology-2-0",
+    "secondary": "technology-11-3"
+   },
+   {
+    "n": "15",
+    "primary": "technology-3-0",
+    "secondary": "technology-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC065GLP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "technology-9-1"
+   },
+   {
+    "n": "3",
+    "primary": "technology-6-0"
+   },
+   {
+    "n": "4",
+    "primary": "technology-6-2",
+    "secondary": "technology-6-1"
+   },
+   {
+    "n": "5",
+    "primary": "technology-3-2"
+   },
+   {
+    "n": "6",
+    "primary": "technology-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "technology-3-0",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "8",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "9",
+    "primary": "technology-6-1"
+   },
+   {
+    "n": "10",
+    "primary": "technology-3-4",
+    "secondary": "technology-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "technology-1-1"
+   },
+   {
+    "n": "12",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "LC065GLP014IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-2-1"
+   },
+   {
+    "n": "2",
+    "primary": "technology-4-0",
+    "secondary": "technology-6-2"
+   },
+   {
+    "n": "3",
+    "primary": "technology-6-0"
+   },
+   {
+    "n": "4",
+    "primary": "technology-6-2",
+    "secondary": "technology-6-1"
+   },
+   {
+    "n": "5",
+    "primary": "technology-3-2"
+   },
+   {
+    "n": "6",
+    "primary": "technology-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "technology-3-0",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "8",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "9",
+    "primary": "technology-6-1"
+   },
+   {
+    "n": "10",
+    "primary": "technology-3-4",
+    "secondary": "technology-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "technology-1-1"
+   },
+   {
+    "n": "12",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC065ALP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-9-2",
+    "secondary": "technology-6-0"
+   },
+   {
+    "n": "2",
+    "primary": "technology-2-0",
+    "secondary": "technology-11-7"
+   },
+   {
+    "n": "3",
+    "primary": "technology-6-1",
+    "secondary": "technology-7-3"
+   },
+   {
+    "n": "4",
+    "primary": "technology-6-2",
+    "secondary": "technology-7-7"
+   },
+   {
+    "n": "5",
+    "primary": "technology-6-0",
+    "secondary": "technology-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "7",
+    "primary": "technology-0-2"
+   },
+   {
+    "n": "8",
+    "primary": "technology-1-1",
+    "secondary": "technology-10-1"
+   },
+   {
+    "n": "9",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "10",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "11",
+    "primary": "technology-0-2",
+    "secondary": "technology-6-0"
+   },
+   {
+    "n": "12",
+    "primary": "technology-11-1",
+    "secondary": "technology-11-7"
+   },
+   {
+    "n": "13",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "14",
+    "primary": "technology-2-0",
+    "secondary": "technology-11-4"
+   },
+   {
+    "n": "15",
+    "primary": "technology-3-0",
+    "secondary": "technology-3-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "LC065ALP014IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-9-2",
+    "secondary": "technology-6-0"
+   },
+   {
+    "n": "2",
+    "primary": "technology-2-0",
+    "secondary": "technology-11-7"
+   },
+   {
+    "n": "3",
+    "primary": "technology-6-1",
+    "secondary": "technology-7-3"
+   },
+   {
+    "n": "4",
+    "primary": "technology-6-2",
+    "secondary": "technology-7-7"
+   },
+   {
+    "n": "5",
+    "primary": "technology-6-0",
+    "secondary": "technology-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "7",
+    "primary": "technology-0-2"
+   },
+   {
+    "n": "8",
+    "primary": "technology-1-1",
+    "secondary": "technology-0-1"
+   },
+   {
+    "n": "9",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "10",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "11",
+    "primary": "technology-0-0",
+    "secondary": "technology-6-0"
+   },
+   {
+    "n": "12",
+    "primary": "technology-2-0",
+    "secondary": "technology-2-1"
+   },
+   {
+    "n": "13",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "14",
+    "primary": "technology-2-0"
+   },
+   {
+    "n": "15",
+    "primary": "technology-3-0",
+    "secondary": "technology-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "LC065GLP014IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-2-1"
+   },
+   {
+    "n": "2",
+    "primary": "technology-6-0"
+   },
+   {
+    "n": "3",
+    "primary": "technology-2-0",
+    "secondary": "technology-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "technology-2-0",
+    "secondary": "technology-4-1"
+   },
+   {
+    "n": "5",
+    "primary": "technology-0-4",
+    "secondary": "technology-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "7",
+    "primary": "technology-3-0",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "8",
+    "primary": "technology-6-2",
+    "secondary": "technology-7-1"
+   },
+   {
+    "n": "9",
+    "primary": "technology-0-7",
+    "secondary": "technology-1-1"
+   },
+   {
+    "n": "10",
+    "primary": "technology-0-10",
+    "secondary": "technology-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "12",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC065GLP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-2-1"
+   },
+   {
+    "n": "2",
+    "primary": "technology-6-0"
+   },
+   {
+    "n": "3",
+    "primary": "technology-2-0",
+    "secondary": "technology-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "technology-2-0",
+    "secondary": "technology-4-1"
+   },
+   {
+    "n": "5",
+    "primary": "technology-0-4",
+    "secondary": "technology-0-3"
+   },
+   {
+    "n": "6",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "7",
+    "primary": "technology-3-0",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "8",
+    "primary": "technology-6-2",
+    "secondary": "technology-7-1"
+   },
+   {
+    "n": "9",
+    "primary": "technology-0-7",
+    "secondary": "technology-1-1"
+   },
+   {
+    "n": "10",
+    "primary": "technology-0-10",
+    "secondary": "technology-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "12",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC065GLP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-2-1"
+   },
+   {
+    "n": "2",
+    "primary": "technology-6-0",
+    "secondary": "technology-6-1"
+   },
+   {
+    "n": "3",
+    "primary": "technology-2-0",
+    "secondary": "technology-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "technology-2-0",
+    "secondary": "technology-11-1"
+   },
+   {
+    "n": "5",
+    "primary": "technology-6-0",
+    "secondary": "technology-0-8"
+   },
+   {
+    "n": "6",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "7",
+    "primary": "technology-3-0",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "8",
+    "primary": "technology-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "technology-2-0",
+    "secondary": "technology-2-1"
+   },
+   {
+    "n": "10",
+    "primary": "technology-4-1",
+    "secondary": "technology-4-0"
+   },
+   {
+    "n": "11",
+    "primary": "technology-6-2",
+    "secondary": "technology-6-1"
+   },
+   {
+    "n": "12",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC065GLP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-4-1",
+    "secondary": "technology-4-0"
+   },
+   {
+    "n": "2",
+    "primary": "technology-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "technology-2-0",
+    "secondary": "technology-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "technology-2-1",
+    "secondary": "technology-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "technology-5-1",
+    "secondary": "technology-6-2"
+   },
+   {
+    "n": "6",
+    "primary": "technology-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "technology-3-0",
+    "secondary": "technology-3-1"
+   },
+   {
+    "n": "8",
+    "primary": "technology-6-2",
+    "secondary": "technology-6-1"
+   },
+   {
+    "n": "9",
+    "primary": "technology-2-1",
+    "secondary": "technology-11-7"
+   },
+   {
+    "n": "10",
+    "primary": "technology-4-1",
+    "secondary": "technology-4-0"
+   },
+   {
+    "n": "11",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "12",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2021,
+  "fileid": "LC065GLP014IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-4-1",
+    "secondary": "technology-4-0"
+   },
+   {
+    "n": "2",
+    "primary": "technology-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "technology-2-0",
+    "secondary": "technology-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "technology-2-1",
+    "secondary": "technology-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "technology-5-1",
+    "secondary": "technology-6-2"
+   },
+   {
+    "n": "6",
+    "primary": "technology-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "technology-3-0",
+    "secondary": "technology-3-1"
+   },
+   {
+    "n": "8",
+    "primary": "technology-6-2",
+    "secondary": "technology-6-1"
+   },
+   {
+    "n": "9",
+    "primary": "technology-2-1",
+    "secondary": "technology-11-7"
+   },
+   {
+    "n": "10",
+    "primary": "technology-4-1",
+    "secondary": "technology-4-0"
+   },
+   {
+    "n": "11",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "12",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2020,
+  "fileid": "LC065ALP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-6-0"
+   },
+   {
+    "n": "2",
+    "primary": "technology-11-1",
+    "secondary": "technology-6-2"
+   },
+   {
+    "n": "3",
+    "primary": "technology-11-7",
+    "secondary": "technology-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "5",
+    "primary": "technology-6-2",
+    "secondary": "technology-7-1"
+   },
+   {
+    "n": "6",
+    "primary": "technology-4-1"
+   },
+   {
+    "n": "7",
+    "primary": "technology-1-0"
+   },
+   {
+    "n": "8",
+    "primary": "technology-9-2",
+    "secondary": "technology-4-1"
+   },
+   {
+    "n": "9",
+    "primary": "technology-7-4",
+    "secondary": "technology-6-2"
+   },
+   {
+    "n": "10",
+    "primary": "technology-2-0",
+    "secondary": "technology-11-1"
+   },
+   {
+    "n": "11",
+    "primary": "technology-6-2",
+    "secondary": "technology-7-1"
+   },
+   {
+    "n": "12",
+    "primary": "technology-9-2"
+   },
+   {
+    "n": "13",
+    "primary": "technology-3-2"
+   },
+   {
+    "n": "14",
+    "primary": "technology-5-1",
+    "secondary": "technology-6-1"
+   },
+   {
+    "n": "15",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC065ALP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-2-0",
+    "secondary": "technology-0-3"
+   },
+   {
+    "n": "2",
+    "primary": "technology-4-0",
+    "secondary": "technology-9-1"
+   },
+   {
+    "n": "3",
+    "primary": "technology-9-2",
+    "secondary": "technology-9-1"
+   },
+   {
+    "n": "4",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "5",
+    "primary": "technology-1-0"
+   },
+   {
+    "n": "6",
+    "primary": "technology-6-2",
+    "secondary": "technology-7-1"
+   },
+   {
+    "n": "7",
+    "primary": "technology-10-0",
+    "secondary": "technology-1-0"
+   },
+   {
+    "n": "8",
+    "primary": "technology-5-1",
+    "secondary": "technology-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "technology-11-7",
+    "secondary": "technology-2-1"
+   },
+   {
+    "n": "10",
+    "primary": "technology-6-0",
+    "secondary": "technology-6-2"
+   },
+   {
+    "n": "11",
+    "primary": "technology-5-1",
+    "secondary": "technology-6-0"
+   },
+   {
+    "n": "12",
+    "primary": "technology-0-8",
+    "secondary": "technology-0-9"
+   },
+   {
+    "n": "13",
+    "primary": "technology-5-1",
+    "secondary": "technology-2-0"
+   },
+   {
+    "n": "14",
+    "primary": "technology-6-1",
+    "secondary": "technology-7-0"
+   },
+   {
+    "n": "15",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC065GLP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-2-1",
+    "secondary": "technology-1-1"
+   },
+   {
+    "n": "2",
+    "primary": "technology-6-0"
+   },
+   {
+    "n": "3",
+    "primary": "technology-2-0",
+    "secondary": "technology-11-5"
+   },
+   {
+    "n": "4",
+    "primary": "technology-10-0",
+    "secondary": "technology-8-0"
+   },
+   {
+    "n": "5",
+    "primary": "technology-6-0"
+   },
+   {
+    "n": "6",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "7",
+    "primary": "technology-3-0",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "8",
+    "primary": "technology-0-2",
+    "secondary": "technology-0-1"
+   },
+   {
+    "n": "9",
+    "primary": "technology-11-1",
+    "secondary": "technology-11-0"
+   },
+   {
+    "n": "10",
+    "primary": "technology-4-0"
+   },
+   {
+    "n": "11",
+    "primary": "technology-6-2",
+    "secondary": "technology-7-1"
+   },
+   {
+    "n": "12",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC065ALP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-2-0",
+    "secondary": "technology-10-0"
+   },
+   {
+    "n": "2",
+    "primary": "technology-6-1",
+    "secondary": "technology-7-7"
+   },
+   {
+    "n": "3",
+    "primary": "technology-4-1",
+    "secondary": "technology-9-3"
+   },
+   {
+    "n": "4",
+    "primary": "technology-6-1",
+    "secondary": "technology-7-0"
+   },
+   {
+    "n": "5",
+    "primary": "technology-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "technology-6-1",
+    "secondary": "technology-7-1"
+   },
+   {
+    "n": "7",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "8",
+    "primary": "technology-9-2",
+    "secondary": "technology-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "technology-11-1",
+    "secondary": "technology-11-2"
+   },
+   {
+    "n": "10",
+    "primary": "technology-11-7",
+    "secondary": "technology-6-0"
+   },
+   {
+    "n": "11",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "12",
+    "primary": "technology-6-0",
+    "secondary": "technology-5-1"
+   },
+   {
+    "n": "13",
+    "primary": "technology-3-0"
+   },
+   {
+    "n": "14",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "15",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC065GLP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-2-0",
+    "secondary": "technology-2-1"
+   },
+   {
+    "n": "2",
+    "primary": "technology-11-7",
+    "secondary": "technology-6-0"
+   },
+   {
+    "n": "3",
+    "primary": "technology-2-0",
+    "secondary": "technology-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "technology-6-1",
+    "secondary": "technology-6-2"
+   },
+   {
+    "n": "5",
+    "primary": "technology-4-0",
+    "secondary": "technology-4-1"
+   },
+   {
+    "n": "6",
+    "primary": "technology-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "technology-3-0",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "8",
+    "primary": "technology-6-1",
+    "secondary": "technology-6-0"
+   },
+   {
+    "n": "9",
+    "primary": "technology-2-0",
+    "secondary": "technology-0-7"
+   },
+   {
+    "n": "10",
+    "primary": "technology-5-0"
+   },
+   {
+    "n": "11",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "12",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2018,
+  "fileid": "LC065GLP014IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-2-1"
+   },
+   {
+    "n": "2",
+    "primary": "technology-6-0"
+   },
+   {
+    "n": "3",
+    "primary": "technology-2-0",
+    "secondary": "technology-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "technology-6-1",
+    "secondary": "technology-6-2"
+   },
+   {
+    "n": "5",
+    "primary": "technology-4-0",
+    "secondary": "technology-4-1"
+   },
+   {
+    "n": "6",
+    "primary": "technology-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "technology-3-3"
+   },
+   {
+    "n": "8",
+    "primary": "technology-6-1",
+    "secondary": "technology-6-0"
+   },
+   {
+    "n": "9",
+    "primary": "technology-2-0",
+    "secondary": "technology-0-7"
+   },
+   {
+    "n": "10",
+    "primary": "technology-5-0"
+   },
+   {
+    "n": "11",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "12",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC065ALP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-6-0",
+    "secondary": "technology-6-1"
+   },
+   {
+    "n": "2",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "technology-6-2",
+    "secondary": "technology-7-1"
+   },
+   {
+    "n": "4",
+    "primary": "technology-7-2",
+    "secondary": "technology-7-3"
+   },
+   {
+    "n": "5",
+    "primary": "technology-5-1",
+    "secondary": "technology-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "technology-11-7",
+    "secondary": "technology-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "technology-6-0",
+    "secondary": "technology-5-1"
+   },
+   {
+    "n": "8",
+    "primary": "technology-2-1"
+   },
+   {
+    "n": "9",
+    "primary": "technology-9-1",
+    "secondary": "technology-9-2"
+   },
+   {
+    "n": "10",
+    "primary": "technology-11-7",
+    "secondary": "technology-11-0"
+   },
+   {
+    "n": "11",
+    "primary": "technology-7-1",
+    "secondary": "technology-6-2"
+   },
+   {
+    "n": "12",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "13",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "14",
+    "primary": "technology-8-0",
+    "secondary": "technology-2-0"
+   },
+   {
+    "n": "15",
+    "primary": "technology-3-2",
+    "secondary": "technology-0-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2017,
+  "fileid": "LC065ALP014IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-6-0",
+    "secondary": "technology-6-1"
+   },
+   {
+    "n": "2",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "technology-6-2",
+    "secondary": "technology-7-1"
+   },
+   {
+    "n": "4",
+    "primary": "technology-7-2",
+    "secondary": "technology-7-3"
+   },
+   {
+    "n": "5",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "6",
+    "primary": "technology-11-7",
+    "secondary": "technology-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "technology-6-0",
+    "secondary": "technology-5-1"
+   },
+   {
+    "n": "8",
+    "primary": "technology-2-1"
+   },
+   {
+    "n": "9",
+    "primary": "technology-9-1",
+    "secondary": "technology-9-2"
+   },
+   {
+    "n": "10",
+    "primary": "technology-11-7",
+    "secondary": "technology-11-0"
+   },
+   {
+    "n": "11",
+    "primary": "technology-7-1",
+    "secondary": "technology-6-2"
+   },
+   {
+    "n": "12",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "13",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "14",
+    "primary": "technology-8-0",
+    "secondary": "technology-2-0"
+   },
+   {
+    "n": "15",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2017,
+  "fileid": "LC065GLP014IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-11-1",
+    "secondary": "technology-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "technology-6-0",
+    "secondary": "technology-4-1"
+   },
+   {
+    "n": "3",
+    "primary": "technology-5-1",
+    "secondary": "technology-6-0"
+   },
+   {
+    "n": "4",
+    "primary": "technology-7-5",
+    "secondary": "technology-6-2"
+   },
+   {
+    "n": "5",
+    "primary": "technology-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "technology-5-1",
+    "secondary": "technology-2-1"
+   },
+   {
+    "n": "7",
+    "primary": "technology-3-0",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "8",
+    "primary": "technology-1-0",
+    "secondary": "technology-0-7"
+   },
+   {
+    "n": "9",
+    "primary": "technology-11-3",
+    "secondary": "technology-2-0"
+   },
+   {
+    "n": "10",
+    "primary": "technology-4-0",
+    "secondary": "technology-9-2"
+   },
+   {
+    "n": "11",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "12",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC065GLP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-11-1",
+    "secondary": "technology-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "technology-6-0",
+    "secondary": "technology-4-1"
+   },
+   {
+    "n": "3",
+    "primary": "technology-5-1",
+    "secondary": "technology-6-0"
+   },
+   {
+    "n": "4",
+    "primary": "technology-7-5",
+    "secondary": "technology-6-2"
+   },
+   {
+    "n": "5",
+    "primary": "technology-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "technology-5-1",
+    "secondary": "technology-2-1"
+   },
+   {
+    "n": "7",
+    "primary": "technology-3-0",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "8",
+    "primary": "technology-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "technology-11-3",
+    "secondary": "technology-2-0"
+   },
+   {
+    "n": "10",
+    "primary": "technology-9-2",
+    "secondary": "technology-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "technology-5-1",
+    "secondary": "technology-5-0"
+   },
+   {
+    "n": "12",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC065ALP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-0-9",
+    "secondary": "technology-0-3"
+   },
+   {
+    "n": "2",
+    "primary": "technology-9-1",
+    "secondary": "technology-6-2"
+   },
+   {
+    "n": "3",
+    "primary": "technology-6-0",
+    "secondary": "technology-11-7"
+   },
+   {
+    "n": "4",
+    "primary": "technology-11-1",
+    "secondary": "technology-7-5"
+   },
+   {
+    "n": "5",
+    "primary": "technology-11-1",
+    "secondary": "technology-11-0"
+   },
+   {
+    "n": "6",
+    "primary": "technology-6-2",
+    "secondary": "technology-6-1"
+   },
+   {
+    "n": "7",
+    "primary": "technology-11-7",
+    "secondary": "technology-6-0"
+   },
+   {
+    "n": "8",
+    "primary": "technology-1-1",
+    "secondary": "technology-10-1"
+   },
+   {
+    "n": "9",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "10",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "11",
+    "primary": "technology-2-0",
+    "secondary": "technology-10-4"
+   },
+   {
+    "n": "12",
+    "primary": "technology-4-0",
+    "secondary": "technology-9-0"
+   },
+   {
+    "n": "13",
+    "primary": "technology-3-0",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "14",
+    "primary": "technology-0-3",
+    "secondary": "technology-0-6"
+   },
+   {
+    "n": "15",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC065GLP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-4-0",
+    "secondary": "technology-9-1"
+   },
+   {
+    "n": "2",
+    "primary": "technology-11-5",
+    "secondary": "technology-11-0"
+   },
+   {
+    "n": "3",
+    "primary": "technology-6-0",
+    "secondary": "technology-6-1"
+   },
+   {
+    "n": "4",
+    "primary": "technology-6-1"
+   },
+   {
+    "n": "5",
+    "primary": "technology-1-0",
+    "secondary": "technology-0-7"
+   },
+   {
+    "n": "6",
+    "primary": "technology-3-5",
+    "secondary": "technology-0-8"
+   },
+   {
+    "n": "7",
+    "primary": "technology-3-0",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "8",
+    "primary": "technology-6-2",
+    "secondary": "technology-6-1"
+   },
+   {
+    "n": "9",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "10",
+    "primary": "technology-2-0",
+    "secondary": "technology-0-8"
+   },
+   {
+    "n": "11",
+    "primary": "technology-5-0",
+    "secondary": "technology-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC065ALP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-2-1",
+    "secondary": "technology-6-0"
+   },
+   {
+    "n": "2",
+    "primary": "technology-0-3",
+    "secondary": "technology-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "technology-9-2",
+    "secondary": "technology-4-0"
+   },
+   {
+    "n": "4",
+    "primary": "technology-8-0",
+    "secondary": "technology-10-0"
+   },
+   {
+    "n": "5",
+    "primary": "technology-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "technology-2-0",
+    "secondary": "technology-2-1"
+   },
+   {
+    "n": "7",
+    "primary": "technology-6-1",
+    "secondary": "technology-6-2"
+   },
+   {
+    "n": "8",
+    "primary": "technology-6-1",
+    "secondary": "technology-6-0"
+   },
+   {
+    "n": "9",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "10",
+    "primary": "technology-6-0",
+    "secondary": "technology-6-1"
+   },
+   {
+    "n": "11",
+    "primary": "technology-2-0",
+    "secondary": "technology-3-4"
+   },
+   {
+    "n": "12",
+    "primary": "technology-5-1",
+    "secondary": "technology-2-0"
+   },
+   {
+    "n": "13",
+    "primary": "technology-3-3",
+    "secondary": "technology-3-0"
+   },
+   {
+    "n": "14",
+    "primary": "technology-1-0",
+    "secondary": "technology-0-7"
+   },
+   {
+    "n": "15",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC065ALP014IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-2-1"
+   },
+   {
+    "n": "2",
+    "primary": "technology-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "technology-9-2",
+    "secondary": "technology-4-1"
+   },
+   {
+    "n": "4",
+    "primary": "technology-8-0",
+    "secondary": "technology-2-1"
+   },
+   {
+    "n": "5",
+    "primary": "technology-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "technology-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "technology-6-1",
+    "secondary": "technology-6-2"
+   },
+   {
+    "n": "8",
+    "primary": "technology-6-1",
+    "secondary": "technology-6-0"
+   },
+   {
+    "n": "9",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "10",
+    "primary": "technology-0-3"
+   },
+   {
+    "n": "11",
+    "primary": "technology-2-0",
+    "secondary": "technology-3-4"
+   },
+   {
+    "n": "12",
+    "primary": "technology-5-1",
+    "secondary": "technology-2-1"
+   },
+   {
+    "n": "13",
+    "primary": "technology-3-3",
+    "secondary": "technology-3-0"
+   },
+   {
+    "n": "14",
+    "primary": "technology-1-0",
+    "secondary": "technology-0-7"
+   },
+   {
+    "n": "15",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC065GLP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-0-1",
+    "secondary": "technology-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "technology-6-2",
+    "secondary": "technology-7-1"
+   },
+   {
+    "n": "3",
+    "primary": "technology-6-0"
+   },
+   {
+    "n": "4",
+    "primary": "technology-4-0",
+    "secondary": "technology-9-1"
+   },
+   {
+    "n": "5",
+    "primary": "technology-2-0",
+    "secondary": "technology-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "7",
+    "primary": "technology-3-0",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "8",
+    "primary": "technology-6-0"
+   },
+   {
+    "n": "9",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "10",
+    "primary": "technology-2-0",
+    "secondary": "technology-11-1"
+   },
+   {
+    "n": "11",
+    "primary": "technology-6-1"
+   },
+   {
+    "n": "12",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC065ALP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-6-0"
+   },
+   {
+    "n": "2",
+    "primary": "technology-2-0",
+    "secondary": "technology-11-1"
+   },
+   {
+    "n": "3",
+    "primary": "technology-2-0",
+    "secondary": "technology-11-1"
+   },
+   {
+    "n": "4",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "5",
+    "primary": "technology-6-2",
+    "secondary": "technology-7-1"
+   },
+   {
+    "n": "6",
+    "primary": "technology-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "technology-0-6",
+    "secondary": "technology-0-1"
+   },
+   {
+    "n": "8",
+    "primary": "technology-1-1",
+    "secondary": "technology-0-1"
+   },
+   {
+    "n": "9",
+    "primary": "technology-5-0"
+   },
+   {
+    "n": "10",
+    "primary": "technology-3-5",
+    "secondary": "technology-0-8"
+   },
+   {
+    "n": "11",
+    "primary": "technology-5-1",
+    "secondary": "technology-6-0"
+   },
+   {
+    "n": "12",
+    "primary": "technology-6-0"
+   },
+   {
+    "n": "13",
+    "primary": "technology-3-0",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "14",
+    "primary": "technology-9-2",
+    "secondary": "technology-4-1"
+   },
+   {
+    "n": "15",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC065ALP014IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-6-0",
+    "secondary": "technology-2-1"
+   },
+   {
+    "n": "2",
+    "primary": "technology-11-0",
+    "secondary": "technology-11-1"
+   },
+   {
+    "n": "3",
+    "primary": "technology-11-0",
+    "secondary": "technology-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "5",
+    "primary": "technology-6-2",
+    "secondary": "technology-7-1"
+   },
+   {
+    "n": "6",
+    "primary": "technology-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "technology-0-2",
+    "secondary": "technology-0-3"
+   },
+   {
+    "n": "8",
+    "primary": "technology-0-3",
+    "secondary": "technology-1-1"
+   },
+   {
+    "n": "9",
+    "primary": "technology-5-0"
+   },
+   {
+    "n": "10",
+    "primary": "technology-3-5",
+    "secondary": "technology-0-8"
+   },
+   {
+    "n": "11",
+    "primary": "technology-5-1",
+    "secondary": "technology-6-0"
+   },
+   {
+    "n": "12",
+    "primary": "technology-6-0"
+   },
+   {
+    "n": "13",
+    "primary": "technology-3-3",
+    "secondary": "technology-3-0"
+   },
+   {
+    "n": "14",
+    "primary": "technology-9-2",
+    "secondary": "technology-4-1"
+   },
+   {
+    "n": "15",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC065GLP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-6-0",
+    "secondary": "technology-2-1"
+   },
+   {
+    "n": "2",
+    "primary": "technology-2-0",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "3",
+    "primary": "technology-4-1",
+    "secondary": "technology-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "technology-6-2",
+    "secondary": "technology-6-0"
+   },
+   {
+    "n": "5",
+    "primary": "technology-11-0",
+    "secondary": "technology-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "technology-4-1",
+    "secondary": "technology-4-0"
+   },
+   {
+    "n": "7",
+    "primary": "technology-3-0",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "8",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "9",
+    "primary": "technology-6-1",
+    "secondary": "technology-6-2"
+   },
+   {
+    "n": "10",
+    "primary": "technology-2-0",
+    "secondary": "technology-0-7"
+   },
+   {
+    "n": "11",
+    "primary": "technology-2-1",
+    "secondary": "technology-1-1"
+   },
+   {
+    "n": "12",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC065GLP014IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-6-0"
+   },
+   {
+    "n": "2",
+    "primary": "technology-2-0",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "3",
+    "primary": "technology-4-1",
+    "secondary": "technology-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "technology-6-0",
+    "secondary": "technology-6-2"
+   },
+   {
+    "n": "5",
+    "primary": "technology-2-0",
+    "secondary": "technology-11-1"
+   },
+   {
+    "n": "6",
+    "primary": "technology-4-1",
+    "secondary": "technology-4-0"
+   },
+   {
+    "n": "7",
+    "primary": "technology-3-0",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "8",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "9",
+    "primary": "technology-6-1",
+    "secondary": "technology-6-2"
+   },
+   {
+    "n": "10",
+    "primary": "technology-2-0",
+    "secondary": "technology-0-7"
+   },
+   {
+    "n": "11",
+    "primary": "technology-2-1",
+    "secondary": "technology-1-1"
+   },
+   {
+    "n": "12",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC065ALP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-6-0"
+   },
+   {
+    "n": "2",
+    "primary": "technology-0-2",
+    "secondary": "technology-1-1"
+   },
+   {
+    "n": "3",
+    "primary": "technology-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "technology-3-5",
+    "secondary": "technology-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "technology-0-3"
+   },
+   {
+    "n": "6",
+    "primary": "technology-6-1",
+    "secondary": "technology-6-0"
+   },
+   {
+    "n": "7",
+    "primary": "technology-3-4",
+    "secondary": "technology-9-3"
+   },
+   {
+    "n": "8",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "9",
+    "primary": "technology-5-1",
+    "secondary": "technology-6-0"
+   },
+   {
+    "n": "10",
+    "primary": "technology-2-1",
+    "secondary": "technology-1-1"
+   },
+   {
+    "n": "11",
+    "primary": "technology-5-0",
+    "secondary": "technology-5-1"
+   },
+   {
+    "n": "12",
+    "primary": "technology-0-7",
+    "secondary": "technology-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "technology-3-0",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "14",
+    "primary": "technology-2-0",
+    "secondary": "technology-11-1"
+   },
+   {
+    "n": "15",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2013,
+  "fileid": "LC065ALP014IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-6-0"
+   },
+   {
+    "n": "2",
+    "primary": "technology-0-2",
+    "secondary": "technology-0-9"
+   },
+   {
+    "n": "3",
+    "primary": "technology-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "technology-3-5",
+    "secondary": "technology-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "technology-0-3"
+   },
+   {
+    "n": "6",
+    "primary": "technology-6-1",
+    "secondary": "technology-6-0"
+   },
+   {
+    "n": "7",
+    "primary": "technology-3-4",
+    "secondary": "technology-9-3"
+   },
+   {
+    "n": "8",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "9",
+    "primary": "technology-5-1",
+    "secondary": "technology-6-0"
+   },
+   {
+    "n": "10",
+    "primary": "technology-2-1",
+    "secondary": "technology-1-1"
+   },
+   {
+    "n": "11",
+    "primary": "technology-5-0",
+    "secondary": "technology-5-1"
+   },
+   {
+    "n": "12",
+    "primary": "technology-0-7",
+    "secondary": "technology-2-0"
+   },
+   {
+    "n": "13",
+    "primary": "technology-3-0",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "14",
+    "primary": "technology-2-0",
+    "secondary": "technology-11-1"
+   },
+   {
+    "n": "15",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC065GLP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-4-0",
+    "secondary": "technology-3-6"
+   },
+   {
+    "n": "2",
+    "primary": "technology-2-0",
+    "secondary": "technology-11-1"
+   },
+   {
+    "n": "3",
+    "primary": "technology-6-0"
+   },
+   {
+    "n": "4",
+    "primary": "technology-6-2",
+    "secondary": "technology-7-1"
+   },
+   {
+    "n": "5",
+    "primary": "technology-2-0",
+    "secondary": "technology-0-8"
+   },
+   {
+    "n": "6",
+    "primary": "technology-9-1",
+    "secondary": "technology-4-0"
+   },
+   {
+    "n": "7",
+    "primary": "technology-3-0",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "8",
+    "primary": "technology-6-0",
+    "secondary": "technology-11-7"
+   },
+   {
+    "n": "9",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "10",
+    "primary": "technology-0-7",
+    "secondary": "technology-2-0"
+   },
+   {
+    "n": "11",
+    "primary": "technology-4-0",
+    "secondary": "technology-4-1"
+   },
+   {
+    "n": "12",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2013,
+  "fileid": "LC065GLP014IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-4-0",
+    "secondary": "technology-3-6"
+   },
+   {
+    "n": "2",
+    "primary": "technology-2-0",
+    "secondary": "technology-11-1"
+   },
+   {
+    "n": "3",
+    "primary": "technology-6-0"
+   },
+   {
+    "n": "4",
+    "primary": "technology-6-2",
+    "secondary": "technology-7-1"
+   },
+   {
+    "n": "5",
+    "primary": "technology-2-0",
+    "secondary": "technology-0-8"
+   },
+   {
+    "n": "6",
+    "primary": "technology-9-1",
+    "secondary": "technology-4-0"
+   },
+   {
+    "n": "7",
+    "primary": "technology-3-0",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "8",
+    "primary": "technology-6-0",
+    "secondary": "technology-0-9"
+   },
+   {
+    "n": "9",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "10",
+    "primary": "technology-2-0",
+    "secondary": "technology-0-7"
+   },
+   {
+    "n": "11",
+    "primary": "technology-4-1"
+   },
+   {
+    "n": "12",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC065ALP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-6-0"
+   },
+   {
+    "n": "2",
+    "primary": "technology-2-0"
+   },
+   {
+    "n": "3",
+    "primary": "technology-2-0",
+    "secondary": "technology-11-1"
+   },
+   {
+    "n": "4",
+    "primary": "technology-0-6",
+    "secondary": "technology-11-5"
+   },
+   {
+    "n": "5",
+    "primary": "technology-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "technology-4-0",
+    "secondary": "technology-4-1"
+   },
+   {
+    "n": "7",
+    "primary": "technology-6-0"
+   },
+   {
+    "n": "8",
+    "primary": "technology-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "technology-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "technology-5-0"
+   },
+   {
+    "n": "11",
+    "primary": "technology-6-2",
+    "secondary": "technology-7-5"
+   },
+   {
+    "n": "12",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "13",
+    "primary": "technology-3-0",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "14",
+    "primary": "technology-3-6",
+    "secondary": "technology-2-1"
+   },
+   {
+    "n": "15",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC065GLP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-0-3",
+    "secondary": "technology-0-4"
+   },
+   {
+    "n": "2",
+    "primary": "technology-4-0",
+    "secondary": "technology-4-1"
+   },
+   {
+    "n": "3",
+    "primary": "technology-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "technology-6-2",
+    "secondary": "technology-7-5"
+   },
+   {
+    "n": "5",
+    "primary": "technology-6-0",
+    "secondary": "technology-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "technology-0-2",
+    "secondary": "technology-0-1"
+   },
+   {
+    "n": "7",
+    "primary": "technology-3-0",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "8",
+    "primary": "technology-9-2",
+    "secondary": "technology-4-1"
+   },
+   {
+    "n": "9",
+    "primary": "technology-2-1",
+    "secondary": "technology-11-7"
+   },
+   {
+    "n": "10",
+    "primary": "technology-1-0"
+   },
+   {
+    "n": "11",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "12",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2012,
+  "fileid": "LC065GLP014IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-0-4"
+   },
+   {
+    "n": "2",
+    "primary": "technology-4-0",
+    "secondary": "technology-4-1"
+   },
+   {
+    "n": "3",
+    "primary": "technology-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "technology-6-2",
+    "secondary": "technology-7-5"
+   },
+   {
+    "n": "5",
+    "primary": "technology-6-0",
+    "secondary": "technology-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "technology-0-2",
+    "secondary": "technology-0-1"
+   },
+   {
+    "n": "7",
+    "primary": "technology-3-0",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "8",
+    "primary": "technology-9-2",
+    "secondary": "technology-4-1"
+   },
+   {
+    "n": "9",
+    "primary": "technology-2-1",
+    "secondary": "technology-11-7"
+   },
+   {
+    "n": "10",
+    "primary": "technology-1-0"
+   },
+   {
+    "n": "11",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "12",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC065ALP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-6-0"
+   },
+   {
+    "n": "2",
+    "primary": "technology-2-0",
+    "secondary": "technology-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "technology-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "technology-2-0",
+    "secondary": "technology-11-1"
+   },
+   {
+    "n": "5",
+    "primary": "technology-4-0",
+    "secondary": "technology-9-2"
+   },
+   {
+    "n": "6",
+    "primary": "technology-7-5",
+    "secondary": "technology-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "technology-5-1",
+    "secondary": "technology-5-0"
+   },
+   {
+    "n": "8",
+    "primary": "technology-1-0",
+    "secondary": "technology-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "technology-6-2",
+    "secondary": "technology-6-1"
+   },
+   {
+    "n": "10",
+    "primary": "technology-0-2",
+    "secondary": "technology-0-3"
+   },
+   {
+    "n": "11",
+    "primary": "technology-11-1",
+    "secondary": "technology-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "technology-5-1",
+    "secondary": "technology-5-0"
+   },
+   {
+    "n": "13",
+    "primary": "technology-3-0",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "14",
+    "primary": "technology-6-2",
+    "secondary": "technology-7-1"
+   },
+   {
+    "n": "15",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2011,
+  "fileid": "LC065ALP014IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-6-0"
+   },
+   {
+    "n": "2",
+    "primary": "technology-2-0",
+    "secondary": "technology-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "technology-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "technology-2-0",
+    "secondary": "technology-11-1"
+   },
+   {
+    "n": "5",
+    "primary": "technology-4-0",
+    "secondary": "technology-9-2"
+   },
+   {
+    "n": "6",
+    "primary": "technology-7-5",
+    "secondary": "technology-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "8",
+    "primary": "technology-1-0",
+    "secondary": "technology-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "technology-6-2",
+    "secondary": "technology-7-1"
+   },
+   {
+    "n": "10",
+    "primary": "technology-0-1",
+    "secondary": "technology-0-3"
+   },
+   {
+    "n": "11",
+    "primary": "technology-11-1",
+    "secondary": "technology-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "13",
+    "primary": "technology-3-0",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "14",
+    "primary": "technology-6-2",
+    "secondary": "technology-7-1"
+   },
+   {
+    "n": "15",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2011,
+  "fileid": "LC065GLP014IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-4-1",
+    "secondary": "technology-4-0"
+   },
+   {
+    "n": "2",
+    "primary": "technology-11-0",
+    "secondary": "technology-2-0"
+   },
+   {
+    "n": "3",
+    "primary": "technology-7-6",
+    "secondary": "technology-6-2"
+   },
+   {
+    "n": "4",
+    "primary": "technology-3-0",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "5",
+    "primary": "technology-0-0",
+    "secondary": "technology-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "7",
+    "primary": "technology-6-1",
+    "secondary": "technology-6-0"
+   },
+   {
+    "n": "8",
+    "primary": "technology-2-0",
+    "secondary": "technology-2-1"
+   },
+   {
+    "n": "9",
+    "primary": "technology-1-1",
+    "secondary": "technology-11-7"
+   },
+   {
+    "n": "10",
+    "primary": "technology-0-7",
+    "secondary": "technology-0-8"
+   },
+   {
+    "n": "11",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "12",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC065ALP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-2-1"
+   },
+   {
+    "n": "2",
+    "primary": "technology-2-0",
+    "secondary": "technology-11-1"
+   },
+   {
+    "n": "3",
+    "primary": "technology-6-0",
+    "secondary": "technology-11-7"
+   },
+   {
+    "n": "4",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "5",
+    "primary": "technology-4-1",
+    "secondary": "technology-9-3"
+   },
+   {
+    "n": "6",
+    "primary": "technology-5-0"
+   },
+   {
+    "n": "7",
+    "primary": "technology-5-0",
+    "secondary": "technology-0-8"
+   },
+   {
+    "n": "8",
+    "primary": "technology-6-2",
+    "secondary": "technology-6-1"
+   },
+   {
+    "n": "9",
+    "primary": "technology-3-3",
+    "secondary": "technology-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "technology-7-6"
+   },
+   {
+    "n": "11",
+    "primary": "technology-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "13",
+    "primary": "technology-6-0"
+   },
+   {
+    "n": "14",
+    "primary": "technology-2-0",
+    "secondary": "technology-11-1"
+   },
+   {
+    "n": "15",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2010,
+  "fileid": "LC065ALP014IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-2-1",
+    "secondary": "technology-1-1"
+   },
+   {
+    "n": "2",
+    "primary": "technology-2-0",
+    "secondary": "technology-11-1"
+   },
+   {
+    "n": "3",
+    "primary": "technology-6-0",
+    "secondary": "technology-11-7"
+   },
+   {
+    "n": "4",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "5",
+    "primary": "technology-4-1",
+    "secondary": "technology-9-3"
+   },
+   {
+    "n": "6",
+    "primary": "technology-5-0"
+   },
+   {
+    "n": "7",
+    "primary": "technology-5-0",
+    "secondary": "technology-0-8"
+   },
+   {
+    "n": "8",
+    "primary": "technology-6-2",
+    "secondary": "technology-6-1"
+   },
+   {
+    "n": "9",
+    "primary": "technology-3-0",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "10",
+    "primary": "technology-7-6"
+   },
+   {
+    "n": "11",
+    "primary": "technology-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "13",
+    "primary": "technology-6-0"
+   },
+   {
+    "n": "14",
+    "primary": "technology-2-0",
+    "secondary": "technology-11-1"
+   },
+   {
+    "n": "15",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2010,
+  "fileid": "LC065GLP014IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-2-0",
+    "secondary": "technology-11-3"
+   },
+   {
+    "n": "2",
+    "primary": "technology-9-2",
+    "secondary": "technology-4-1"
+   },
+   {
+    "n": "3",
+    "primary": "technology-6-0",
+    "secondary": "technology-6-1"
+   },
+   {
+    "n": "4",
+    "primary": "technology-5-0",
+    "secondary": "technology-5-1"
+   },
+   {
+    "n": "5",
+    "primary": "technology-0-3"
+   },
+   {
+    "n": "6",
+    "primary": "technology-6-1",
+    "secondary": "technology-6-2"
+   },
+   {
+    "n": "7",
+    "primary": "technology-4-1",
+    "secondary": "technology-4-0"
+   },
+   {
+    "n": "8",
+    "primary": "technology-6-0"
+   },
+   {
+    "n": "9",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "10",
+    "primary": "technology-2-0",
+    "secondary": "technology-0-8"
+   },
+   {
+    "n": "11",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "12",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "technology",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC065GLP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "technology-2-0",
+    "secondary": "technology-11-3"
+   },
+   {
+    "n": "2",
+    "primary": "technology-9-2",
+    "secondary": "technology-4-1"
+   },
+   {
+    "n": "3",
+    "primary": "technology-6-0",
+    "secondary": "technology-6-1"
+   },
+   {
+    "n": "4",
+    "primary": "technology-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "technology-0-3"
+   },
+   {
+    "n": "6",
+    "primary": "technology-6-1",
+    "secondary": "technology-6-2"
+   },
+   {
+    "n": "7",
+    "primary": "technology-4-1"
+   },
+   {
+    "n": "8",
+    "primary": "technology-6-0"
+   },
+   {
+    "n": "9",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-3"
+   },
+   {
+    "n": "10",
+    "primary": "technology-2-0"
+   },
+   {
+    "n": "11",
+    "primary": "technology-5-1"
+   },
+   {
+    "n": "12",
+    "primary": "technology-3-2",
+    "secondary": "technology-3-6"
    }
   ]
  }
