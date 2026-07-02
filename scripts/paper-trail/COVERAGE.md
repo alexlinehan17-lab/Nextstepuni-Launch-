@@ -2,7 +2,24 @@
 
 Per-question marking-scheme answer chips. Status of EVERY SEC subject across the three cycles.
 
-**Live: 62 subjects.** The feature needs a clean per-question text anchor on both the paper and the scheme; subjects below it can't are documented with the reason.
+**Coverage (2026-07-02, audited against `paperTrailData.ts`): 83 subject-cycles carry the
+`answers` flag on ≥1 paper — 1,121 papers mapped (including 20 wave-10 sidecars).** The
+prose sections below predate several coverage waves and undercount; the authoritative,
+per-paper source of truth is the committed sidecars in `answers/<year>/` plus
+`QA_PASSED_ANSWER_PROFILES` in `build-index.py`. An audit script (see the repo audit note)
+regenerates the exact per-subject counts.
+
+The feature needs a clean per-question text anchor on both the paper and the scheme;
+subjects that can't are documented below with the reason.
+
+> **Wave 10 (2026-07-02): section-anchored essays.** Two subjects the generic engine drops
+> now map via `wave10_sections.py`: **Politics & Society** (LC568, HL+OL EV — Section A/B
+> per-question blocks; the discursive-essay menu maps to the shared Section C criteria) and
+> **Classical Studies** (LC008, HL+OL EV new-spec 2023–2025 — Section A `N.` markers +
+> the common Q11b–16 / Q12–16 essay rubric). 20 sidecars, render+text QA verified. Old-spec
+> CS (pre-2023) and P&S HL "choose N of M" years drop cleanly (non-1..N paper sequence).
+> **Ship step outstanding:** upload the 20 sidecars to Storage (`out/wave10-upload.tsv`),
+> then re-run `build-index.py` to light the flags. See `WAVE10.md`.
 
 
 ## Leaving Cert
@@ -25,7 +42,7 @@ Per-question marking-scheme answer chips. Status of EVERY SEC subject across the
 ### 🔧 Bespoke / short-answer page-jump tier (19) — under verification
 _Wave 9: Technology + Agricultural Economics now generate per-question page-jump maps (short-answer key); under adversarial verification along with the languages (checked for aural/coincidental mismaps)._
 - Arabic — language, no scheme markers
-- Classical Studies — 9/16 reconcile
+- Classical Studies — ✅ LIVE (wave 10, new-spec 2023–2025 HL+OL): Section A `N.` markers + common essay rubric
 - Estonian — language, scheme-grouped answers
 - French — language
 - German — language
@@ -36,7 +53,7 @@ _Wave 9: Technology + Agricultural Economics now generate per-question page-jump
 - Link Modules — needs per-subject grammar
 - Music — off-by-one/partial
 - Polish — language
-- Politics and Society — essay/section
+- Politics and Society — ✅ LIVE (wave 10, HL+OL EV): Section A/B per-Q blocks + shared Section C essay criteria
 - Russian — language
 - Spanish — language section-restart numbering
 - Swedish — non-monotonic Q1-after-Q6

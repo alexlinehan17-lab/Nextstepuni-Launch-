@@ -123,6 +123,9 @@ DONE_CODES = {
     "LC020", "LC098", "LC002", "LC032", "LC033",
     # wave 9 (short-answer crop tier — Technology, Swedish, Agri Economics)
     "LC065", "LC039", "LC026",
+    # wave 10 (section-anchored essay subjects — bespoke wave10_sections.py, NOT
+    # this generic engine; frozen so a re-run never clears their committed maps)
+    "LC568", "LC008",
 }
 # Aural / unprepared-listening / non-level components never carry page questions.
 SKIP_COMPONENTS = {"A00", "U00"}

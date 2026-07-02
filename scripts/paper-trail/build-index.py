@@ -126,6 +126,18 @@ ENTRY_NOTES = {
 # accounting-style workings, and passage-numbered languages (Croatian, Hungarian,
 # Spanish…) are DEFERRED — they fail semantic alignment and need dedicated grammar.
 QA_PASSED_ANSWER_PROFILES = {
+    # Wave 10 (2026-07-02): SECTION-ANCHORED essay subjects via wave10_sections.py
+    # (bespoke grammar the generic engine drops). Politics & Society LC568 and
+    # Classical Studies LC008, HL+OL EV, new-spec years. Section A/B carry their
+    # own per-question scheme blocks; the discursive-essay menu maps to the ONE
+    # common marking-criteria block, framed honestly via `label` ("common marking
+    # criteria" / "common essay marking scheme"). Render + text QA verified per
+    # question (20 sidecars, every band opens on its own header). Old-spec CS
+    # (pre-2023) + P&S HL "choose N of M" years drop cleanly (non-1..N sequence).
+    ('politics-and-society', 'higher', 'ev'),
+    ('politics-and-society', 'ordinary', 'ev'),
+    ('classical-studies', 'higher', 'ev'),
+    ('classical-studies', 'ordinary', 'ev'),
     # Coverage wave (2026-06-14): JC + LCA + LC Common/extra-year structured
     # subjects, render-verified per-paper (125-agent workflow + adversarial
     # refute, 235 ship / 257 drop). Languages/Art/essays/older-Maths dropped.
