@@ -22,9 +22,27 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { AnimatePresence, useReducedMotion } from 'framer-motion';
-import { ArrowLeft, Download, RotateCcw, Sparkles, X, ZoomIn, ZoomOut } from 'lucide-react';
+import {
+  ArrowLeft,
+  BookOpen,
+  Clock3,
+  Download,
+  Highlighter,
+  Pause,
+  Play,
+  RotateCcw,
+  ScrollText,
+  SlidersHorizontal,
+  Sparkles,
+  X,
+  ZoomIn,
+  ZoomOut,
+} from 'lucide-react';
 import { MotionDiv } from '../Motion';
 import { prettyBytes } from './storage';
+import { scanDocument, type CommandToken, type DocTokens, type MarkToken } from './textOverlay';
+import type { FormulaeHandle, FormulaePageIndex } from '../../data/paperTrailFormulae';
+import type { SubjectMarkingGrammar, SubjectTiming } from '../../types/knowledge';
 import type { PaperAnswerMap, PaperAnswerQuestion } from '../../types/paperTrail';
 import type { PDFDocumentProxy, PDFPageProxy } from 'pdfjs-dist';
 
@@ -94,6 +112,15 @@ interface ViewerProps {
   /** Storage URL of this paper's PaperAnswerMap sidecar — present only when a
    *  verified answer map shipped. Drives the "Answers" toggle + question chips. */
   answersUrl?: string;
+  /** Official timing for this exact paper (from SUBJECT_TIMING), if the subject
+   *  has one — drives minute targets + the exam-mode clock. Null → generic
+   *  proportional-to-marks pace derived live from the paper's own mark tokens. */
+  timing?: SubjectTiming | null;
+  /** Marking-scheme grammar card for this subject, if one applies. */
+  grammar?: SubjectMarkingGrammar | null;
+  /** Formulae & Tables quick-jump — present only when the booklet is live for
+   *  a booklet subject (gated upstream). */
+  formulae?: FormulaeHandle;
   onClose: () => void;
   /** Reports reading position for recents persistence (debounced upstream). */
   onPosition?: (side: 'paper' | 'scheme', page: number) => void;
@@ -137,6 +164,9 @@ const Viewer: React.FC<ViewerProps> = ({
   initialPaperPage = 1,
   initialSchemePage = 1,
   answersUrl,
+  timing = null,
+  grammar = null,
+  formulae,
   onClose,
   onPosition,
 }) => {
@@ -152,6 +182,24 @@ const Viewer: React.FC<ViewerProps> = ({
   const [answerState, setAnswerState] = useState<'idle' | 'loading' | 'error'>('idle');
   const [reveal, setReveal] = useState<PaperAnswerQuestion | null>(null);
   const schemePrefetched = useRef(false);
+
+  // ── on-paper study tools (live text-layer overlays) ──
+  const [toolsOpen, setToolsOpen] = useState(false); // tools menu popover
+  const [paceOn, setPaceOn] = useState(false); // time-budget chips
+  const [decodeOn, setDecodeOn] = useState(false); // command-word highlighting
+  const [markingOpen, setMarkingOpen] = useState(false); // "how it's marked" card
+  const [formulaeOpen, setFormulaeOpen] = useState(false); // formulae & tables sheet
+  const [formulaeIndex, setFormulaeIndex] = useState<FormulaePageIndex | null>(null);
+  const [commandReveal, setCommandReveal] = useState<CommandToken | null>(null);
+  // The whole-paper text scan (marks + command words) — run once, lazily, the
+  // first time any text-overlay tool is switched on.
+  const [docTokens, setDocTokens] = useState<DocTokens | null>(null);
+  const [scanState, setScanState] = useState<'idle' | 'loading' | 'error'>('idle');
+  // Exam-mode clock.
+  const [examOn, setExamOn] = useState(false);
+  const [running, setRunning] = useState(false);
+  const [elapsed, setElapsed] = useState(0); // seconds
+  const minsPerMark = timing ? timing.totalMinutes / timing.totalMarks : null;
 
   // Reveal panel comes up from the bottom on phones, in from the right on
   // tablet/desktop (≥768px) — same glide as the GC dashboard student view.
@@ -170,8 +218,28 @@ const Viewer: React.FC<ViewerProps> = ({
   // Ref mirror so the once-mounted Escape handler sees the live reveal state.
   const revealRef = useRef<PaperAnswerQuestion | null>(null);
   revealRef.current = reveal;
+  // Same mirroring for the paper-side tool overlays, so Escape dismisses the
+  // open panel/menu instead of closing the whole viewer underneath it.
+  const commandRevealRef = useRef<CommandToken | null>(null);
+  commandRevealRef.current = commandReveal;
+  const markingOpenRef = useRef(false);
+  markingOpenRef.current = markingOpen;
+  const formulaeOpenRef = useRef(false);
+  formulaeOpenRef.current = formulaeOpen;
+  const toolsOpenRef = useRef(false);
+  toolsOpenRef.current = toolsOpen;
   // "View full scheme" jump target, consumed by the side-switch / restore effects.
   const pendingSchemeJump = useRef<number | null>(null);
+
+  // Stable pace descriptor so Page's React.memo isn't defeated each render.
+  const paceInfo = useMemo(
+    () => ({ minsPerMark, totalMarks: docTokens?.totalMarks ?? 0 }),
+    [minsPerMark, docTokens],
+  );
+
+  const onCommand = useCallback((c: CommandToken) => setCommandReveal(c), []);
+
+  const activeToolCount = [answersOn, paceOn, decodeOn, examOn].filter(Boolean).length;
 
   // page → its question anchors, memoised so Page's React.memo holds across
   // scroll/zoom re-renders (a fresh filter() each render would defeat it).
@@ -184,6 +252,12 @@ const Viewer: React.FC<ViewerProps> = ({
     }
     return m;
   }, [answerMap]);
+
+  // Any text-overlay tool needs the whole-paper token scan. Presence of the two
+  // per-page maps below is what actually renders overlays (memoised so Page's
+  // React.memo holds across scroll/zoom).
+  const paceEnabled = paceOn && !!docTokens;
+  const decodeEnabled = decodeOn && !!docTokens;
 
   const sessions = useRef<Record<Side, DocSession>>({
     paper: freshSession(initialPaperPage),
@@ -324,6 +398,57 @@ const Viewer: React.FC<ViewerProps> = ({
     setSide('scheme');
   }, []);
 
+  // Whole-paper text scan for the overlay tools. Runs once, lazily, when the
+  // first text tool is switched on and the paper PDF is ready. A ref (not
+  // scanState) guards the single-start, so setting scanState='loading' can't
+  // re-fire this effect and cancel its own in-flight scan.
+  const wantScan = paceOn || decodeOn;
+  const scanStartedRef = useRef(false);
+  useEffect(() => {
+    if (!wantScan || scanStartedRef.current) return;
+    const pdf = sessions.current.paper.pdf;
+    if (!pdf) return; // paper not ready yet; effect re-runs when it loads (bump)
+    scanStartedRef.current = true;
+    setScanState('loading');
+    scanDocument(pdf)
+      .then(tokens => {
+        if (mountedRef.current) {
+          setDocTokens(tokens);
+          setScanState('idle');
+        }
+      })
+      .catch(() => {
+        if (mountedRef.current) setScanState('error');
+      });
+  }, [wantScan, sessions.current.paper.state]);
+
+  // Exam-mode clock — one interval while running. Elapsed persists across
+  // pause/resume; reset zeroes it.
+  useEffect(() => {
+    if (!examOn || !running) return;
+    const id = setInterval(() => setElapsed(s => s + 1), 1000);
+    return () => clearInterval(id);
+  }, [examOn, running]);
+
+  const toggleTool = useCallback((tool: 'pace' | 'decode') => {
+    setCommandReveal(null);
+    if (tool === 'pace') setPaceOn(v => !v);
+    else setDecodeOn(v => !v);
+  }, []);
+
+  // Open the Formulae & Tables sheet; fetch its page-index sidecar once. A
+  // missing/failed index just means sections open the booklet at the front.
+  const openFormulae = useCallback(() => {
+    setToolsOpen(false);
+    setFormulaeOpen(true);
+    if (formulae && !formulaeIndex) {
+      fetch(formulae.indexUrl)
+        .then(r => (r.ok ? r.json() : Promise.reject(new Error('index'))))
+        .then((idx: FormulaePageIndex) => mountedRef.current && setFormulaeIndex(idx))
+        .catch(() => {});
+    }
+  }, [formulae, formulaeIndex]);
+
   useEffect(() => {
     mountedRef.current = true;
     load('paper');
@@ -366,19 +491,51 @@ const Viewer: React.FC<ViewerProps> = ({
   }, [side, load, jumpToPage]);
 
   // Closing/leaving a side dismisses any open answer reveal (it belongs to the
-  // paper side and to the question that was tapped).
+  // paper side and to the question that was tapped) plus the paper-side tools UI.
   useEffect(() => {
     setReveal(null);
+    setToolsOpen(false);
+    setCommandReveal(null);
+    setMarkingOpen(false);
+    setFormulaeOpen(false);
   }, [side]);
+
+  // Close the tools menu on outside tap.
+  useEffect(() => {
+    if (!toolsOpen) return;
+    const onDown = (e: PointerEvent) => {
+      const t = e.target as HTMLElement;
+      if (!t.closest('[data-tools-anchor]')) setToolsOpen(false);
+    };
+    window.addEventListener('pointerdown', onDown);
+    return () => window.removeEventListener('pointerdown', onDown);
+  }, [toolsOpen]);
 
   // Dialog behaviour: focus, Escape, Tab trap; resize/rotation re-render.
   useEffect(() => {
     headerRef.current?.focus();
     const onKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
-        // An open answer reveal swallows Escape; only then does it close the viewer.
+        // Any open overlay/menu swallows Escape first; only then does it close
+        // the viewer.
         if (revealRef.current) {
           setReveal(null);
+          return;
+        }
+        if (commandRevealRef.current) {
+          setCommandReveal(null);
+          return;
+        }
+        if (markingOpenRef.current) {
+          setMarkingOpen(false);
+          return;
+        }
+        if (formulaeOpenRef.current) {
+          setFormulaeOpen(false);
+          return;
+        }
+        if (toolsOpenRef.current) {
+          setToolsOpen(false);
           return;
         }
         onCloseRef.current();
@@ -505,18 +662,112 @@ const Viewer: React.FC<ViewerProps> = ({
               </button>
             </div>
           )}
-          {answersUrl && side === 'paper' && (
-            <button
-              onClick={toggleAnswers}
-              aria-pressed={answersOn}
-              aria-label="Show marking-scheme answers beside each question"
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-[13px] font-semibold transition-all ${
-                answersOn ? 'text-white' : 'text-[#F26B1F] bg-[#FDEEDF]'
-              }`}
-              style={answersOn ? { backgroundColor: '#F26B1F', boxShadow: '0 2px 0 #B54D14' } : undefined}
-            >
-              <Sparkles size={14} /> Answers
-            </button>
+          {side === 'paper' && (
+            <div className="relative" data-tools-anchor>
+              <button
+                onClick={() => setToolsOpen(o => !o)}
+                aria-expanded={toolsOpen}
+                aria-label="Study tools for this paper"
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-[13px] font-semibold transition-all ${
+                  activeToolCount > 0 ? 'text-white' : 'text-[#F26B1F] bg-[#FDEEDF]'
+                }`}
+                style={activeToolCount > 0 ? { backgroundColor: '#F26B1F', boxShadow: '0 2px 0 #B54D14' } : undefined}
+              >
+                <SlidersHorizontal size={14} /> Tools
+                {activeToolCount > 0 && (
+                  <span className="ml-0.5 min-w-[16px] h-4 px-1 inline-flex items-center justify-center rounded-full bg-white/25 text-[10px] tabular-nums">
+                    {activeToolCount}
+                  </span>
+                )}
+              </button>
+              <AnimatePresence>
+                {toolsOpen && (
+                  <MotionDiv
+                    key="tools-menu"
+                    initial={reducedMotion ? { opacity: 0 } : { opacity: 0, y: -6, scale: 0.98 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={reducedMotion ? { opacity: 0 } : { opacity: 0, y: -6, scale: 0.98 }}
+                    transition={{ duration: 0.16, ease: [0.16, 1, 0.3, 1] }}
+                    role="menu"
+                    className="absolute right-0 mt-2 w-64 z-[70] rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-2xl overflow-hidden"
+                    style={{ transformOrigin: 'top right' }}
+                  >
+                    <p className="px-3.5 pt-3 pb-1.5 text-[10px] font-bold uppercase tracking-[0.12em] text-zinc-400">
+                      Study tools
+                    </p>
+                    {answersUrl && (
+                      <ToolRow
+                        icon={<Sparkles size={15} />}
+                        title="Answers"
+                        sub="Marking scheme beside each question"
+                        on={answersOn}
+                        onClick={() => {
+                          toggleAnswers();
+                          setToolsOpen(false);
+                        }}
+                      />
+                    )}
+                    <ToolRow
+                      icon={<Clock3 size={15} />}
+                      title="Time budget"
+                      sub={timing ? 'Minutes to spend per question' : 'Each question’s share of the paper'}
+                      on={paceOn}
+                      busy={paceOn && scanState === 'loading'}
+                      onClick={() => toggleTool('pace')}
+                    />
+                    <ToolRow
+                      icon={<Highlighter size={15} />}
+                      title="Command words"
+                      sub="Decode what each question demands"
+                      on={decodeOn}
+                      busy={decodeOn && scanState === 'loading'}
+                      onClick={() => toggleTool('decode')}
+                    />
+                    {timing && (
+                      <ToolRow
+                        icon={<Play size={15} />}
+                        title="Exam mode"
+                        sub={`Clock set to ${timing.totalMinutes} min`}
+                        on={examOn}
+                        onClick={() => {
+                          setExamOn(v => {
+                            const next = !v;
+                            setRunning(next);
+                            if (next) setElapsed(0);
+                            return next;
+                          });
+                          setToolsOpen(false);
+                        }}
+                      />
+                    )}
+                    {grammar && (
+                      <ToolRow
+                        icon={<ScrollText size={15} />}
+                        title="How it’s marked"
+                        sub={grammar.subjectLabel}
+                        onClick={() => {
+                          setMarkingOpen(true);
+                          setToolsOpen(false);
+                        }}
+                      />
+                    )}
+                    {formulae && (
+                      <ToolRow
+                        icon={<BookOpen size={15} />}
+                        title="Formulae & Tables"
+                        sub="Jump to the booklet section"
+                        onClick={openFormulae}
+                      />
+                    )}
+                    {scanState === 'error' && (
+                      <p className="px-3.5 py-2 text-[11px] text-zinc-500">
+                        Couldn’t read this paper’s text layer — overlays unavailable.
+                      </p>
+                    )}
+                  </MotionDiv>
+                )}
+              </AnimatePresence>
+            </div>
           )}
           <a
             href={activeDoc.url}
@@ -553,6 +804,10 @@ const Viewer: React.FC<ViewerProps> = ({
                 observe={observe}
                 anchors={answersOn && side === 'paper' ? anchorsByPage.get(i + 1) : undefined}
                 onReveal={onReveal}
+                marks={paceEnabled && side === 'paper' ? docTokens!.byPage.get(i + 1)?.marks : undefined}
+                paceInfo={paceInfo}
+                commands={decodeEnabled && side === 'paper' ? docTokens!.byPage.get(i + 1)?.commands : undefined}
+                onCommand={onCommand}
               />
             ))}
           </div>
@@ -707,8 +962,385 @@ const Viewer: React.FC<ViewerProps> = ({
           </>
         )}
       </AnimatePresence>
+
+      {/* Text-scan status while the overlay tools read the paper. */}
+      {side === 'paper' && (paceOn || decodeOn) && scanState === 'loading' && !docTokens && (
+        <div
+          role="status"
+          aria-live="polite"
+          className="absolute left-1/2 -translate-x-1/2 bottom-24 z-[60] flex items-center gap-2 px-3 py-1.5 rounded-full text-[12px] font-medium bg-zinc-900/90 text-white shadow-lg"
+        >
+          <span className="w-3 h-3 rounded-full border-2 border-white/40 border-t-white animate-spin" aria-hidden />
+          Reading the paper…
+        </div>
+      )}
+
+      {/* Exam-mode clock — floating pill above the footer. */}
+      {examOn && timing && side === 'paper' && (
+        <ExamClock
+          totalMinutes={timing.totalMinutes}
+          elapsed={elapsed}
+          running={running}
+          onToggle={() => setRunning(r => !r)}
+          onReset={() => setElapsed(0)}
+          onClose={() => {
+            setExamOn(false);
+            setRunning(false);
+          }}
+        />
+      )}
+
+      {/* Command-word decoder — same glide as the answer reveal. */}
+      <AnimatePresence>
+        {commandReveal && (
+          <>
+            <MotionDiv
+              key="cmd-backdrop"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              onClick={() => setCommandReveal(null)}
+              className="fixed inset-0 z-[110] bg-black/40"
+            />
+            <MotionDiv
+              key="cmd-panel"
+              initial={panelHidden}
+              animate={panelShown}
+              exit={panelHidden}
+              transition={GLIDE}
+              role="dialog"
+              aria-modal="true"
+              aria-label={`What “${commandReveal.matched}” asks you to do`}
+              style={{ paddingBottom: 'var(--sab, 0px)' }}
+              className={
+                isWide
+                  ? 'fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800'
+                  : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-zinc-900 rounded-t-2xl shadow-2xl'
+              }
+            >
+              <CommandContent wide={isWide} token={commandReveal} onClose={() => setCommandReveal(null)} />
+            </MotionDiv>
+          </>
+        )}
+      </AnimatePresence>
+
+      {/* "How this subject is marked" card. */}
+      <AnimatePresence>
+        {markingOpen && grammar && (
+          <>
+            <MotionDiv
+              key="mark-backdrop"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              onClick={() => setMarkingOpen(false)}
+              className="fixed inset-0 z-[110] bg-black/40"
+            />
+            <MotionDiv
+              key="mark-panel"
+              initial={panelHidden}
+              animate={panelShown}
+              exit={panelHidden}
+              transition={GLIDE}
+              role="dialog"
+              aria-modal="true"
+              aria-label={`How ${grammar.subjectLabel} is marked`}
+              style={{ paddingBottom: 'var(--sab, 0px)' }}
+              className={
+                isWide
+                  ? 'fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800'
+                  : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-zinc-900 rounded-t-2xl shadow-2xl'
+              }
+            >
+              <MarkingContent wide={isWide} grammar={grammar} onClose={() => setMarkingOpen(false)} />
+            </MotionDiv>
+          </>
+        )}
+      </AnimatePresence>
+
+      {/* Formulae & Tables quick-jump sheet. */}
+      <AnimatePresence>
+        {formulaeOpen && formulae && (
+          <>
+            <MotionDiv
+              key="formulae-backdrop"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              onClick={() => setFormulaeOpen(false)}
+              className="fixed inset-0 z-[110] bg-black/40"
+            />
+            <MotionDiv
+              key="formulae-panel"
+              initial={panelHidden}
+              animate={panelShown}
+              exit={panelHidden}
+              transition={GLIDE}
+              role="dialog"
+              aria-modal="true"
+              aria-label="Formulae and Tables — jump to a section"
+              style={{ paddingBottom: 'var(--sab, 0px)' }}
+              className={
+                isWide
+                  ? 'fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800'
+                  : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-zinc-900 rounded-t-2xl shadow-2xl'
+              }
+            >
+              <FormulaeContent
+                wide={isWide}
+                handle={formulae}
+                index={formulaeIndex}
+                onClose={() => setFormulaeOpen(false)}
+              />
+            </MotionDiv>
+          </>
+        )}
+      </AnimatePresence>
     </div>,
     document.body,
+  );
+};
+
+// ─── formulae & tables quick-jump content ───────────────────
+
+const FormulaeContent: React.FC<{
+  wide: boolean;
+  handle: FormulaeHandle;
+  index: FormulaePageIndex | null;
+  onClose: () => void;
+}> = ({ wide, handle, index, onClose }) => {
+  const closeRef = useRef<HTMLButtonElement | null>(null);
+  useEffect(() => {
+    closeRef.current?.focus();
+  }, []);
+  // Browsers honour the #page=N fragment on a PDF URL — the booklet opens at
+  // the section. Without an index entry it opens at the front.
+  const hrefFor = (id: string) => {
+    const page = index?.[id];
+    return page ? `${handle.bookletUrl}#page=${page}` : handle.bookletUrl;
+  };
+  return (
+    <>
+      {!wide && (
+        <div className="shrink-0 flex justify-center pt-2 pb-0.5" aria-hidden>
+          <div className="h-1 w-9 rounded-full bg-zinc-300 dark:bg-zinc-700" />
+        </div>
+      )}
+      <div className="shrink-0 flex items-center gap-2 px-4 py-3 border-b border-zinc-200 dark:border-zinc-800">
+        <div className="flex-1 min-w-0">
+          <p className="text-[15px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Formulae &amp; Tables</p>
+          <p className="text-[11px] text-zinc-500">The SEC booklet — opens at the section you pick.</p>
+        </div>
+        <button ref={closeRef} onClick={onClose} aria-label="Close" className="p-2 -mr-1 rounded-lg text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100">
+          <X size={18} />
+        </button>
+      </div>
+      <div className="flex-1 overflow-auto overscroll-contain px-3 py-3 grid grid-cols-2 gap-2">
+        {handle.sections.map(s => (
+          <a
+            key={s.id}
+            href={hrefFor(s.id)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-between gap-2 rounded-xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3 py-3 text-left transition-transform active:translate-y-0.5"
+          >
+            <span className="text-[13px] font-semibold leading-tight" style={{ color: '#1a1a1a' }}>{s.label}</span>
+            <BookOpen size={14} style={{ color: '#F26B1F' }} className="shrink-0" />
+          </a>
+        ))}
+      </div>
+      <p className="shrink-0 px-4 py-2 text-[10px] text-zinc-400 border-t border-zinc-200 dark:border-zinc-800">
+        Formulae and Tables © State Examinations Commission.
+      </p>
+    </>
+  );
+};
+
+// ─── exam-mode clock ────────────────────────────────────────
+
+const fmtClock = (sec: number) => {
+  const s = Math.max(0, Math.floor(sec));
+  const h = Math.floor(s / 3600);
+  const m = Math.floor((s % 3600) / 60);
+  const r = s % 60;
+  const pad = (n: number) => String(n).padStart(2, '0');
+  return h > 0 ? `${h}:${pad(m)}:${pad(r)}` : `${m}:${pad(r)}`;
+};
+
+const ExamClock: React.FC<{
+  totalMinutes: number;
+  elapsed: number;
+  running: boolean;
+  onToggle: () => void;
+  onReset: () => void;
+  onClose: () => void;
+}> = ({ totalMinutes, elapsed, running, onToggle, onReset, onClose }) => {
+  const totalSec = totalMinutes * 60;
+  const remaining = totalSec - elapsed;
+  const over = remaining < 0;
+  const frac = Math.min(1, Math.max(0, elapsed / totalSec));
+  return (
+    <div
+      className="absolute left-1/2 -translate-x-1/2 bottom-[76px] z-[65] flex items-center gap-2.5 pl-3 pr-2 py-2 rounded-2xl bg-white dark:bg-zinc-900 border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46]"
+      role="timer"
+      aria-live="off"
+    >
+      <div className="flex flex-col">
+        <span
+          className="text-[16px] font-bold tabular-nums leading-none"
+          style={{ fontFamily: "'Source Serif 4', serif", color: over ? '#F26B1F' : '#1a1a1a' }}
+        >
+          {over ? `+${fmtClock(-remaining)}` : fmtClock(remaining)}
+        </span>
+        <span className="text-[9px] font-bold uppercase tracking-wide mt-0.5" style={{ color: over ? '#F26B1F' : '#9e9186' }}>
+          {over ? 'over time' : 'remaining'}
+        </span>
+      </div>
+      <div className="w-16 h-1.5 rounded-full overflow-hidden bg-[#e0dbd4]" aria-hidden>
+        <div className="h-full rounded-full" style={{ width: `${frac * 100}%`, backgroundColor: over ? '#F26B1F' : '#3A8D5F' }} />
+      </div>
+      <button onClick={onToggle} aria-label={running ? 'Pause timer' : 'Start timer'} className="p-1.5 rounded-lg text-zinc-600 hover:text-zinc-900 dark:text-zinc-300">
+        {running ? <Pause size={16} /> : <Play size={16} />}
+      </button>
+      <button onClick={onReset} aria-label="Reset timer" className="p-1.5 rounded-lg text-zinc-500 hover:text-zinc-800 dark:text-zinc-400">
+        <RotateCcw size={15} />
+      </button>
+      <button onClick={onClose} aria-label="Close exam mode" className="p-1.5 rounded-lg text-zinc-400 hover:text-zinc-700 dark:text-zinc-500">
+        <X size={15} />
+      </button>
+    </div>
+  );
+};
+
+// ─── tools-menu row ─────────────────────────────────────────
+
+const ToolRow: React.FC<{
+  icon: React.ReactNode;
+  title: string;
+  sub: string;
+  on?: boolean;
+  busy?: boolean;
+  onClick: () => void;
+}> = ({ icon, title, sub, on, busy, onClick }) => (
+  <button
+    role="menuitemcheckbox"
+    aria-checked={!!on}
+    onClick={onClick}
+    className="w-full flex items-center gap-3 px-3.5 py-2.5 text-left hover:bg-zinc-50 dark:hover:bg-zinc-800/60 transition-colors"
+  >
+    <span
+      className="shrink-0 w-8 h-8 rounded-lg flex items-center justify-center"
+      style={{ backgroundColor: on ? '#F26B1F' : '#FDEEDF', color: on ? '#fff' : '#F26B1F' }}
+    >
+      {busy ? <span className="w-3.5 h-3.5 rounded-full border-2 border-current/40 border-t-current animate-spin" /> : icon}
+    </span>
+    <span className="flex-1 min-w-0">
+      <span className="block text-[13px] font-semibold text-zinc-900 dark:text-zinc-100">{title}</span>
+      <span className="block text-[11px] text-zinc-500 truncate">{sub}</span>
+    </span>
+    {on !== undefined && (
+      <span
+        className="shrink-0 w-9 h-5 rounded-full p-0.5 transition-colors"
+        style={{ backgroundColor: on ? '#F26B1F' : '#d0cdc8' }}
+        aria-hidden
+      >
+        <span className="block w-4 h-4 rounded-full bg-white transition-transform" style={{ transform: on ? 'translateX(16px)' : 'none' }} />
+      </span>
+    )}
+  </button>
+);
+
+// ─── command-word decoder content ───────────────────────────
+
+const CommandContent: React.FC<{ wide: boolean; token: CommandToken; onClose: () => void }> = ({ wide, token, onClose }) => {
+  const closeRef = useRef<HTMLButtonElement | null>(null);
+  useEffect(() => {
+    closeRef.current?.focus();
+  }, []);
+  const { entry, matched } = token;
+  const alias = matched.toLowerCase() !== entry.word.toLowerCase();
+  return (
+    <>
+      {!wide && (
+        <div className="shrink-0 flex justify-center pt-2 pb-0.5" aria-hidden>
+          <div className="h-1 w-9 rounded-full bg-zinc-300 dark:bg-zinc-700" />
+        </div>
+      )}
+      <div className="shrink-0 flex items-center gap-2 px-4 py-3 border-b border-zinc-200 dark:border-zinc-800">
+        <div className="flex-1 min-w-0">
+          <p className="text-[15px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>
+            “{entry.word}”
+            {alias && <span className="ml-1.5 text-[12px] font-sans font-normal text-zinc-500">seen as “{matched}”</span>}
+          </p>
+          <p className="text-[11px] text-zinc-500">Command word · {entry.typicalMarkRange}</p>
+        </div>
+        <button ref={closeRef} onClick={onClose} aria-label="Close" className="p-2 -mr-1 rounded-lg text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100">
+          <X size={18} />
+        </button>
+      </div>
+      <div className="flex-1 overflow-auto overscroll-contain px-4 py-4 space-y-3.5">
+        <div>
+          <p className="text-[10px] font-bold uppercase tracking-[0.12em] mb-1" style={{ color: '#9e9186' }}>What it asks</p>
+          <p className="text-[13.5px] leading-relaxed" style={{ color: '#3a3530' }}>{entry.requiredAction}</p>
+        </div>
+        <div className="rounded-xl px-3.5 py-3" style={{ backgroundColor: '#FDEEDF', borderLeft: '3px solid #F26B1F' }}>
+          <p className="text-[10px] font-bold uppercase tracking-[0.12em] mb-1" style={{ color: '#8C3A0E' }}>How to structure it</p>
+          <p className="text-[13px] leading-relaxed" style={{ color: '#8C3A0E' }}>{entry.structuralTemplate}</p>
+        </div>
+        <div>
+          <p className="text-[10px] font-bold uppercase tracking-[0.12em] mb-1" style={{ color: '#9e9186' }}>Where students lose marks</p>
+          <p className="text-[13px] leading-relaxed" style={{ color: '#5a5550' }}>{entry.commonError}</p>
+        </div>
+      </div>
+    </>
+  );
+};
+
+// ─── marking-grammar card content ───────────────────────────
+
+const MarkingContent: React.FC<{ wide: boolean; grammar: SubjectMarkingGrammar; onClose: () => void }> = ({ wide, grammar, onClose }) => {
+  const closeRef = useRef<HTMLButtonElement | null>(null);
+  useEffect(() => {
+    closeRef.current?.focus();
+  }, []);
+  return (
+    <>
+      {!wide && (
+        <div className="shrink-0 flex justify-center pt-2 pb-0.5" aria-hidden>
+          <div className="h-1 w-9 rounded-full bg-zinc-300 dark:bg-zinc-700" />
+        </div>
+      )}
+      <div className="shrink-0 flex items-center gap-2 px-4 py-3 border-b border-zinc-200 dark:border-zinc-800">
+        <div className="flex-1 min-w-0">
+          <p className="text-[15px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>How it’s marked</p>
+          <p className="text-[11px] text-zinc-500 truncate">{grammar.subjectLabel}</p>
+        </div>
+        <button ref={closeRef} onClick={onClose} aria-label="Close" className="p-2 -mr-1 rounded-lg text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100">
+          <X size={18} />
+        </button>
+      </div>
+      <div className="flex-1 overflow-auto overscroll-contain px-4 py-4 space-y-4">
+        <p className="text-[13.5px] leading-relaxed" style={{ color: '#3a3530' }}>{grammar.architecture}</p>
+        <div className="space-y-2.5">
+          {grammar.rules.map((r, i) => (
+            <div key={i} className="rounded-xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3.5 py-3">
+              <p className="text-[13px] font-semibold mb-0.5" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>{r.title}</p>
+              <p className="text-[12.5px] leading-relaxed" style={{ color: '#5a5550' }}>{r.body}</p>
+            </div>
+          ))}
+        </div>
+        {grammar.workedExample && (
+          <div className="rounded-xl px-3.5 py-3" style={{ backgroundColor: '#E8F2EC', borderLeft: '3px solid #3A8D5F' }}>
+            <p className="text-[10px] font-bold uppercase tracking-[0.12em] mb-1" style={{ color: '#1F5F3E' }}>Worked example</p>
+            <p className="text-[12.5px] leading-relaxed mb-1.5" style={{ color: '#1F5F3E' }}>{grammar.workedExample.setup}</p>
+            <p className="text-[12.5px] leading-relaxed font-semibold" style={{ color: '#1F5F3E' }}>{grammar.workedExample.outcome}</p>
+          </div>
+        )}
+      </div>
+    </>
   );
 };
 
@@ -878,7 +1510,11 @@ const Page: React.FC<{
   observe: (el: Element, cb: (near: boolean) => void) => () => void;
   anchors?: PaperAnswerQuestion[];
   onReveal?: (q: PaperAnswerQuestion) => void;
-}> = React.memo(({ pdf, pageNumber, zoom, epoch, observe, anchors, onReveal }) => {
+  marks?: MarkToken[];
+  paceInfo?: { minsPerMark: number | null; totalMarks: number };
+  commands?: CommandToken[];
+  onCommand?: (c: CommandToken) => void;
+}> = React.memo(({ pdf, pageNumber, zoom, epoch, observe, anchors, onReveal, marks, paceInfo, commands, onCommand }) => {
   const holderRef = useRef<HTMLDivElement | null>(null);
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const pageRef = useRef<PDFPageProxy | null>(null);
@@ -976,6 +1612,50 @@ const Page: React.FC<{
           <Sparkles size={11} /> Answer
         </button>
       ))}
+      {/* Command-word highlights — underline the leading command + tap for what
+          it demands. Subtle accent so the page still reads as the real paper. */}
+      {commands?.map((c, i) => (
+        <button
+          key={`cmd-${i}-${c.matched}`}
+          onClick={() => onCommand?.(c)}
+          className="absolute z-10 rounded-sm"
+          style={{
+            left: `${c.pX * 100}%`,
+            top: `${c.pY * 100}%`,
+            width: `${c.pW * 100}%`,
+            height: `${c.pH * 100}%`,
+            backgroundColor: 'rgba(242,107,31,0.16)',
+            borderBottom: '2px solid #F26B1F',
+          }}
+          aria-label={`What “${c.matched}” asks you to do — command word guide`}
+        />
+      ))}
+      {/* Time-budget chips — one per marks token, anchored just before it. The
+          cover page (1) carries the grand total, not a question — skip it. */}
+      {pageNumber > 1 && marks?.map((mk, i) => {
+        const label =
+          paceInfo?.minsPerMark != null
+            ? `≈${Math.max(1, Math.round(mk.value * paceInfo.minsPerMark))} min`
+            : paceInfo && paceInfo.totalMarks > 0
+              ? `${Math.max(1, Math.round((mk.value / paceInfo.totalMarks) * 100))}%`
+              : `${mk.value}`;
+        return (
+          <span
+            key={`mk-${i}-${mk.value}`}
+            className="absolute z-10 flex items-center gap-0.5 px-1.5 py-0.5 rounded-full text-[10px] font-bold whitespace-nowrap pointer-events-none"
+            style={{
+              left: `${mk.pX * 100}%`,
+              top: `${(mk.pY + mk.pH / 2) * 100}%`,
+              transform: 'translate(-104%, -50%)',
+              backgroundColor: '#FDEEDF',
+              color: '#8C3A0E',
+              border: '1px solid rgba(242,107,31,0.35)',
+            }}
+          >
+            <Clock3 size={9} /> {label}
+          </span>
+        );
+      })}
       {failed && (
         <button
           onClick={() => {

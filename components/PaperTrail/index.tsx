@@ -22,7 +22,16 @@ import { ArrowLeft, Clock3, Search } from 'lucide-react';
 import SubjectTilePicker from '../shared/SubjectTilePicker';
 import { baseName, displayName } from '../shared/subjectNames';
 import Viewer from './Viewer';
+import { grammarFor, timingFor } from './subjectMeta';
 import { paperAnswersPath, paperStoragePath, paperUrl, prettyBytes } from './storage';
+import {
+  FORMULAE_BOOKLET_LIVE,
+  FORMULAE_BOOKLET_PATH,
+  FORMULAE_INDEX_PATH,
+  FORMULAE_SECTIONS,
+  FORMULAE_SUBJECTS,
+  type FormulaeHandle,
+} from '../../data/paperTrailFormulae';
 import { usePaperFinder } from '../../hooks/usePaperFinder';
 import { getBootParam } from '../../utils/bootParams';
 import {
@@ -290,6 +299,16 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
       .find(e => e.year === view.year && e.level === view.level && e.lang === view.lang)
       ?.papers.find(p => p.doc.f === view.item.doc.f);
     const hasAnswers = liveItem?.answers === 1 && !!view.item.scheme;
+    // Formulae & Tables quick-jump — only for booklet subjects, and only once
+    // the booklet is uploaded + the flag flipped (nothing dead ships).
+    const formulae: FormulaeHandle | undefined =
+      FORMULAE_BOOKLET_LIVE && FORMULAE_SUBJECTS[subj.id]
+        ? {
+            bookletUrl: paperUrl(FORMULAE_BOOKLET_PATH),
+            indexUrl: paperUrl(FORMULAE_INDEX_PATH),
+            sections: FORMULAE_SECTIONS.filter(s => s.subjects.includes(subj.id)),
+          }
+        : undefined;
     return (
       <Viewer
         title={`${displayName(subj.name)} · ${view.year}`}
@@ -303,6 +322,9 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
         answersUrl={
           hasAnswers ? paperUrl(paperAnswersPath(subj.cycle, subj.id, view.year, view.item.doc.f)) : undefined
         }
+        timing={timingFor(subj.id, view.item.label)}
+        grammar={grammarFor(subj.id)}
+        formulae={formulae}
         initialSide={view.side}
         initialPaperPage={view.paperPage ?? 1}
         initialSchemePage={view.schemePage ?? 1}

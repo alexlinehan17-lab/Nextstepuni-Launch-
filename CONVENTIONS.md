@@ -309,6 +309,7 @@ new validated field/collection needs matching rules.
 | Style a **Mercury** stats screen | `components/CAOPointsSimulator.tsx` |
 | Style a **Brilliant.org** interactive | `components/ExamCrisisManagementModule.tsx` |
 | Use the shared **CTA / Motion** primitives | `components/ui/PrimaryActionButton.tsx`; import motion via `components/Motion.tsx`, never `'framer-motion'` |
+| Add an **on-paper study tool** to the Paper Trail viewer | `components/PaperTrail/textOverlay.ts` (live pdf.js text-layer scan → fractional-position tokens) + the `Tools` popover + gated tool rows in `components/PaperTrail/Viewer.tsx`; subject→dataset mapping in `components/PaperTrail/subjectMeta.ts`. Overlays position by fraction of page W/H (same convention as the answer-map anchors) so they ride zoom + virtualisation. The one-shot scan is guarded by a **ref**, not `scanState` — putting the loading state in the effect deps self-cancels the in-flight scan. Escape unwinds the open panel/menu before closing the viewer. Tools needing booklet/Storage data ship **gated OFF** (e.g. `FORMULAE_BOOKLET_LIVE`) so no dead button reaches students |
 | Get a **colour / font** token | `design/tokens.ts` (`COLORS`); `tailwind.config.ts` (class names); `index.html` `:root` (CSS vars) |
 | Add/change a **security rule** | `firestore.rules` |
 
