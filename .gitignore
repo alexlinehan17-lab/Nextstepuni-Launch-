@@ -33,3 +33,7 @@ scripts/paper-trail/out/
 
 __pycache__/
 scripts/paper-trail/topic-tags/out/
+
+# transient topic-tag pipeline scratch (root)
+/_*.json
+/_*.mjs
