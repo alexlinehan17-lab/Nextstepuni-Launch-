@@ -112,7 +112,7 @@ export const ACCREDITATION: AccreditationSnapshot = {
       { title: 'Every paper with its scheme', detail: 'Each of ~1,121 papers opens beside its official marking scheme, per-question — so a student sees exactly how the marks are awarded.' },
       { title: 'Practise a topic across years', detail: 'Because questions are tagged to curriculum topics, a student weak on (say) Calculus can drill every Calculus question across every year in one tap, with a frequency chip showing how often it comes up.' },
       { title: 'Exam technique on the real paper', detail: 'Live overlays show minute-by-question time budgets, decode each command word, and surface the Chief Examiner’s own “where marks are lost” for the subject — all on the actual exam.' },
-      { title: 'Sit, self-mark, see your weak spots', detail: 'Students score themselves against the scheme, tag why a mark was lost, and a personal weakness map ranks their weakest topics and drills them — closing the loop from practice to targeted revision.' },
+      { title: 'A full, personal study loop', detail: 'Students score themselves against the scheme and tag why a mark was lost; from that, the app builds a progress dashboard, ranks their weakest topics, schedules spaced recall over the questions they got wrong, lets them assemble custom mock sets, counts down to their exam date, and exports a printable revision pack — every item a real SEC question, never fabricated content.' },
     ],
   },
 
