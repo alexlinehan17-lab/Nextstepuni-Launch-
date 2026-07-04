@@ -30,6 +30,7 @@ import WeaknessMap from './WeaknessMap';
 import ReviseByTopic from './ReviseByTopic';
 import ReviewSession from './ReviewSession';
 import StreakStrip from './StreakStrip';
+import CountdownCard from './CountdownCard';
 import ProgressDashboard from './ProgressDashboard';
 import { deckStats } from './reviewStore';
 import { paperAnswersPath, paperStoragePath, paperUrl, prettyBytes } from './storage';
@@ -734,6 +735,9 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
           </div>
         )}
       </div>
+
+      {/* Exam countdown + daily focus (A3). */}
+      <CountdownCard uid={uid} now={Date.now()} onOpen={() => setView({ v: 'progress' })} />
 
       {/* Practice streak + daily goal (B3) — hidden until first practice; opens
           the progress dashboard when tapped. */}
