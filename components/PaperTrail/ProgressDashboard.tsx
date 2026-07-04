@@ -10,8 +10,9 @@
  */
 
 import React, { useMemo } from 'react';
-import { ArrowLeft, ArrowRight, Flame, Repeat, Target, TrendingDown } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Download, Flame, Repeat, Target, TrendingDown } from 'lucide-react';
 import { computeProgress } from './progressStats';
+import { downloadReport } from './progressReport';
 import { siblingsFor, topicLabel, type TopicSibling } from './topics';
 import { type GapKind } from './attemptStore';
 
@@ -78,9 +79,19 @@ const ProgressDashboard: React.FC<Props> = ({ uid, now, subjectLabel, onDrill, o
       <h2 className="text-2xl font-semibold mb-1 flex items-center gap-2" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>
         <Target size={20} style={{ color: ACCENT }} /> Your progress
       </h2>
-      <p className="text-[13.5px] leading-relaxed mb-5" style={{ color: '#5a5550' }}>
+      <p className="text-[13.5px] leading-relaxed mb-4" style={{ color: '#5a5550' }}>
         Everything you’ve practised, in one place — built entirely from your own self-marks and reviews.
       </p>
+
+      {!nothingYet && (
+        <button
+          onClick={() => downloadReport({ stats: p, subjectName: subjectLabel, topicName: topicLabel, dateIso: new Date(now).toISOString().slice(0, 10) })}
+          className="inline-flex items-center gap-1.5 mb-5 rounded-full px-3.5 py-1.5 text-[12.5px] font-semibold border-2 transition-transform active:translate-y-0.5"
+          style={{ borderColor: 'rgba(242,107,31,0.35)', color: ACCENT }}
+        >
+          <Download size={14} /> Export report
+        </button>
+      )}
 
       {nothingYet ? (
         <p className="text-[13.5px] rounded-2xl px-4 py-4" style={{ backgroundColor: '#E8EFF5', color: '#27506E' }}>
