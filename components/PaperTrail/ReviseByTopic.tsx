@@ -12,10 +12,11 @@
  */
 
 import React, { useMemo, useState } from 'react';
-import { ArrowLeft, ChevronRight, Layers } from 'lucide-react';
+import { ArrowLeft, ChevronRight, Layers, Plus, Check } from 'lucide-react';
 import SubjectTilePicker from '../shared/SubjectTilePicker';
 import { siblingsFor, topicLabel, topicsForPaper, topicsForSubject, type SubjectTopic, type TopicSibling } from './topics';
 import { allMarks } from './attemptStore';
+import { addCard, hasCard, removeCard } from './reviewStore';
 import { type PaperLang, type PaperLevel } from '../../types/paperTrail';
 
 const INK = '#1a1a1a';
@@ -36,6 +37,14 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
   const [scope, setScope] = useState<'mine' | 'all'>(mineIds.length ? 'mine' : 'all');
   const [subjectId, setSubjectId] = useState<string | null>(null);
   const [subtopicId, setSubtopicId] = useState<string | null>(null);
+  const [revVer, setRevVer] = useState(0); // bump to re-read review-deck membership
+
+  const toggleReview = (q: TopicSibling) => {
+    const id = { subjectId: q.subjectId, year: q.year, level: q.level, lang: q.lang, fileid: q.fileid, n: q.n };
+    if (hasCard(uid, id)) removeCard(uid, id);
+    else addCard(uid, id, subtopicId ?? undefined, Date.now());
+    setRevVer(v => v + 1);
+  };
 
   // Per-topic average self-mark % for the chosen subject (weakness overlay).
   const weakByTopic = useMemo(() => {
@@ -74,19 +83,39 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
           {questions.length} question{questions.length === 1 ? '' : 's'} across {years.size} year{years.size === 1 ? '' : 's'} — tap to open with its marking scheme.
         </p>
         <div className="space-y-1.5">
-          {questions.map(q => (
-            <button
-              key={`${q.year}-${q.level}-${q.lang}-${q.fileid}-${q.n}`}
-              onClick={() => onOpenQuestion(q)}
-              className="w-full flex items-center gap-3 rounded-xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3.5 py-2.5 text-left transition-transform active:translate-y-0.5 hover:-translate-y-0.5"
-            >
-              <span className="shrink-0 w-11 text-[14px] font-bold tabular-nums" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{q.year}</span>
-              <span className="flex-1 text-[12.5px]" style={{ color: '#5a5550' }}>
-                {LVL[q.level] ?? q.level}{paperAbbr(q.paperKey) ? ` · ${paperAbbr(q.paperKey)}` : ''}{q.lang === 'iv' ? ' · Gaeilge' : ''} · Question {q.n}
-              </span>
-              <ChevronRight size={16} className="shrink-0" style={{ color: ACCENT }} />
-            </button>
-          ))}
+          {questions.map(q => {
+            void revVer; // recompute membership when the deck changes
+            const saved = hasCard(uid, { subjectId: q.subjectId, year: q.year, level: q.level, lang: q.lang, fileid: q.fileid, n: q.n });
+            return (
+              <div
+                key={`${q.year}-${q.level}-${q.lang}-${q.fileid}-${q.n}`}
+                className="flex items-center gap-2 rounded-xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 pr-2 transition-transform hover:-translate-y-0.5"
+              >
+                <button
+                  onClick={() => onOpenQuestion(q)}
+                  className="flex-1 flex items-center gap-3 px-3.5 py-2.5 text-left transition-transform active:translate-y-0.5"
+                >
+                  <span className="shrink-0 w-11 text-[14px] font-bold tabular-nums" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{q.year}</span>
+                  <span className="flex-1 text-[12.5px]" style={{ color: '#5a5550' }}>
+                    {LVL[q.level] ?? q.level}{paperAbbr(q.paperKey) ? ` · ${paperAbbr(q.paperKey)}` : ''}{q.lang === 'iv' ? ' · Gaeilge' : ''} · Question {q.n}
+                  </span>
+                  <ChevronRight size={16} className="shrink-0" style={{ color: ACCENT }} />
+                </button>
+                <button
+                  onClick={() => toggleReview(q)}
+                  aria-pressed={saved}
+                  aria-label={saved ? 'Remove from daily review' : 'Add to daily review'}
+                  title={saved ? 'In your daily review' : 'Add to daily review'}
+                  className="shrink-0 w-8 h-8 rounded-lg flex items-center justify-center border-2 transition-colors"
+                  style={saved
+                    ? { backgroundColor: '#E8F2EC', borderColor: '#3A8D5F', color: '#1F5F3E' }
+                    : { backgroundColor: '#fff', borderColor: '#d0cdc8', color: '#9e9186' }}
+                >
+                  {saved ? <Check size={15} /> : <Plus size={15} />}
+                </button>
+              </div>
+            );
+          })}
         </div>
       </div>
     );

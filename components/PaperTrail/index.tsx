@@ -18,7 +18,7 @@
  */
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { ArrowLeft, ChevronRight, Clock3, Layers, Search } from 'lucide-react';
+import { ArrowLeft, ChevronRight, Clock3, Layers, Repeat, Search } from 'lucide-react';
 import SubjectTilePicker from '../shared/SubjectTilePicker';
 import { baseName, displayName } from '../shared/subjectNames';
 import Viewer from './Viewer';
@@ -28,6 +28,8 @@ import { attemptNs } from './attemptStore';
 import { examinerInsightsFor } from '../../data/paperTrail/examinerInsights';
 import WeaknessMap from './WeaknessMap';
 import ReviseByTopic from './ReviseByTopic';
+import ReviewSession from './ReviewSession';
+import { deckStats } from './reviewStore';
 import { paperAnswersPath, paperStoragePath, paperUrl, prettyBytes } from './storage';
 import {
   FORMULAE_BOOKLET_LIVE,
@@ -94,6 +96,7 @@ let bootApplied = false;
 type View =
   | { v: 'home' }
   | { v: 'revise' }
+  | { v: 'review' }
   | { v: 'subject'; subjectId: string }
   | {
       v: 'viewer';
@@ -394,6 +397,19 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     );
   }
 
+  // ═══════════════════════ DAILY REVIEW (SRS) ═══════════════════════
+  if (view.v === 'review') {
+    return (
+      <ReviewSession
+        uid={uid}
+        now={Date.now()}
+        subjectLabel={id => displayName(subjectById.get(id)?.name ?? id)}
+        onOpenQuestion={openCrossYear}
+        onBack={() => setView({ v: 'home' })}
+      />
+    );
+  }
+
   // ═══════════════════════ SUBJECT ═══════════════════════
   if (view.v === 'subject') {
     const subj = subjectById.get(view.subjectId)!;
@@ -647,6 +663,13 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     !junior &&
     groups.lca.length > 0 &&
     (scope === 'all' || groups.mineIds.length === 0 || groups.lca.some(s => groups.mineIds.includes(s.id)));
+  const review = deckStats(uid, Date.now());
+  const reviewSub =
+    review.due > 0
+      ? `${review.due} card${review.due === 1 ? '' : 's'} due today`
+      : review.total > 0
+        ? `All caught up · ${review.total} scheduled`
+        : 'Spaced practice — save questions to build your deck';
 
   return (
     <div className="w-full max-w-xl mx-auto pb-12">
@@ -708,6 +731,24 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
           <span className="block text-[15px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Revise by topic</span>
           <span className="block text-[12.5px]" style={{ color: '#7a7068' }}>Drill every past question on one topic, across every year</span>
         </span>
+        <ChevronRight size={18} className="shrink-0" style={{ color: '#F26B1F' }} />
+      </button>
+
+      {/* Daily review CTA — spaced recall over saved past questions (A2). */}
+      <button
+        onClick={() => setView({ v: 'review' })}
+        className="w-full flex items-center gap-3 rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] px-4 py-3.5 mb-5 text-left transition-transform active:translate-y-0.5 hover:-translate-y-0.5"
+      >
+        <span className="shrink-0 w-10 h-10 rounded-xl flex items-center justify-center" style={{ backgroundColor: '#FDEEDF' }}>
+          <Repeat size={18} style={{ color: '#F26B1F' }} />
+        </span>
+        <span className="flex-1 min-w-0">
+          <span className="block text-[15px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Daily review</span>
+          <span className="block text-[12.5px]" style={{ color: '#7a7068' }}>{reviewSub}</span>
+        </span>
+        {review.due > 0 && (
+          <span className="shrink-0 text-[12px] font-bold tabular-nums px-2 py-0.5 rounded-full" style={{ backgroundColor: '#F26B1F', color: '#fff' }}>{review.due}</span>
+        )}
         <ChevronRight size={18} className="shrink-0" style={{ color: '#F26B1F' }} />
       </button>
 
