@@ -99,4 +99,42 @@ export function siblingsFor(subjectId: string, subtopicId: string): TopicSibling
   return out.sort((a, b) => b.year - a.year || a.level.localeCompare(b.level) || Number(a.n) - Number(b.n));
 }
 
+// ─── revision hub (browse by topic) ────────────────────────
+
+/** Subject ids that have any committed topic tags. */
+export function taggedSubjects(): string[] {
+  return [...new Set(PAPER_TOPIC_TAGS.map(p => p.subjectId))];
+}
+
+export interface SubjectTopic {
+  subtopicId: string;
+  label: string;
+  /** Questions touching this subtopic (primary or secondary) — matches the
+   *  drill list `siblingsFor` returns, so the counts line up. */
+  count: number;
+  /** Distinct tagged years it appears in. */
+  years: number;
+}
+
+/** Every topic that appears in a subject's tagged papers, with how many
+ *  questions and years — the browse list for the revision hub. Busiest first. */
+export function topicsForSubject(subjectId: string): SubjectTopic[] {
+  const agg = new Map<string, { count: number; years: Set<number> }>();
+  for (const p of PAPER_TOPIC_TAGS) {
+    if (p.subjectId !== subjectId) continue;
+    for (const q of p.q) {
+      for (const id of [q.primary, q.secondary]) {
+        if (!id) continue;
+        const cur = agg.get(id) ?? { count: 0, years: new Set<number>() };
+        cur.count += 1;
+        cur.years.add(p.year);
+        agg.set(id, cur);
+      }
+    }
+  }
+  return [...agg.entries()]
+    .map(([id, v]) => ({ subtopicId: id, label: topicLabel(id), count: v.count, years: v.years.size }))
+    .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
+}
+
 export type { QuestionTopicTag };
