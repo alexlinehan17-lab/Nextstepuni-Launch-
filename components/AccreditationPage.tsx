@@ -304,6 +304,29 @@ const AccreditationPage: React.FC<AccreditationPageProps> = ({ onBack }) => {
           </div>
         </section>
 
+        {/* Exam-preparation engine */}
+        <section className="mb-8" style={{ breakInside: 'avoid' }}>
+          <SectionHeading eyebrow="Exam preparation engine" title="Every SEC paper, made teachable" />
+          <div className="rounded-2xl px-5 md:px-8 py-6 md:py-7 mb-4" style={{ backgroundColor: 'white', border: `1px solid ${HAIRLINE}` }}>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-y-6 gap-x-4 md:gap-x-8 mb-5">
+              {a.examEngine.stats.map((s, i) => (
+                <Stat key={i} value={s.value} label={s.label} accent={s.value.includes('%')} />
+              ))}
+            </div>
+            <p className="text-[13.5px] leading-relaxed" style={{ color: BODY, fontFamily: SANS }}>
+              {a.examEngine.provenance}
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-3">
+            {a.examEngine.capabilities.map((c, i) => (
+              <div key={i} className="rounded-xl px-4 md:px-5 py-4" style={{ backgroundColor: PANEL, border: `1px solid ${HAIRLINE}`, breakInside: 'avoid' }}>
+                <p className="text-[14px] font-semibold mb-1" style={{ fontFamily: SERIF, color: INK }}>{c.title}</p>
+                <p className="text-[13px] leading-relaxed" style={{ color: BODY, fontFamily: SANS }}>{c.detail}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* Independent verification */}
         <section className="mb-8" style={{ breakInside: 'avoid' }}>
           <SectionHeading eyebrow="Independent re-verification" title="A second, adversarial check" />

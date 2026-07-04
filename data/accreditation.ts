@@ -39,10 +39,20 @@ export interface VerificationSummary {
   date: string;
 }
 
+export interface ExamEngine {
+  /** Headline stats for the exam-preparation engine (Paper Trail). */
+  stats: { value: string; label: string }[];
+  /** How the exam data was held to the same evidence standard. */
+  provenance: string;
+  /** What a student can do with it — the study loop. */
+  capabilities: { title: string; detail: string }[];
+}
+
 export interface AccreditationSnapshot {
   governingRule: string;
   methodology: string[];
   coverage: CoverageGroup[];
+  examEngine: ExamEngine;
   limitations: AccreditationLimitation[];
   verification: VerificationSummary;
   asOf: string;
@@ -85,6 +95,26 @@ export const ACCREDITATION: AccreditationSnapshot = {
       basis: 'each subject’s own SEC Chief Examiner report / marking scheme',
     },
   ],
+
+  examEngine: {
+    stats: [
+      { value: '23', label: 'Subjects topic-tagged' },
+      { value: '5,306', label: 'Questions tagged to topics' },
+      { value: '1,121', label: 'Papers with per-question answers' },
+      { value: '100%', label: 'Independent-audit agreement' },
+    ],
+    provenance:
+      'The exam-preparation engine (Paper Trail) is held to the same verify-don’t-guess standard as the learning content. ' +
+      'Every past-paper question is mapped to its own marking-scheme region from the real State Examinations Commission scheme (coordinates only, © SEC), ' +
+      'and every one of 5,306 questions across 23 subjects is classified to its curriculum topic and re-checked by an independent adversarial verifier. ' +
+      'A separate read-only audit re-classified a fresh sample of 120 questions spanning all 23 subjects and agreed with the committed tag 100% of the time, with zero clear errors.',
+    capabilities: [
+      { title: 'Every paper with its scheme', detail: 'Each of ~1,121 papers opens beside its official marking scheme, per-question — so a student sees exactly how the marks are awarded.' },
+      { title: 'Practise a topic across years', detail: 'Because questions are tagged to curriculum topics, a student weak on (say) Calculus can drill every Calculus question across every year in one tap, with a frequency chip showing how often it comes up.' },
+      { title: 'Exam technique on the real paper', detail: 'Live overlays show minute-by-question time budgets, decode each command word, and surface the Chief Examiner’s own “where marks are lost” for the subject — all on the actual exam.' },
+      { title: 'Sit, self-mark, see your weak spots', detail: 'Students score themselves against the scheme, tag why a mark was lost, and a personal weakness map ranks their weakest topics and drills them — closing the loop from practice to targeted revision.' },
+    ],
+  },
 
   limitations: [
     {
