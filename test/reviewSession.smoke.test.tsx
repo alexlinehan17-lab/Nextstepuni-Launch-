@@ -36,6 +36,16 @@ describe('Paper Trail — daily review session', () => {
     expect(screen.getByText(/Reviewed 1 card/i)).toBeInTheDocument();
   });
 
+  test('the deck manager lists cards and removes them', () => {
+    addCard('u1', { subjectId: 'business', year: 2022, level: 'higher', lang: 'ev', fileid: 'f1', n: '9' }, undefined, NOW);
+    render(<ReviewSession uid="u1" now={NOW} subjectLabel={label} onOpenQuestion={noop} onBack={noop} />);
+    fireEvent.click(screen.getByRole('button', { name: /Manage deck/i }));
+    expect(screen.getByText(/Your review deck/i)).toBeInTheDocument();
+    expect(screen.getByText(/Q9/)).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /Remove from deck/i }));
+    expect(screen.getByText(/Your deck is empty/i)).toBeInTheDocument();
+  });
+
   test('grading "again" re-queues the card within the session', () => {
     addCard('u1', { subjectId: 'business', year: 2022, level: 'higher', lang: 'ev', fileid: 'f1', n: '5' }, undefined, NOW);
     render(<ReviewSession uid="u1" now={NOW} subjectLabel={label} onOpenQuestion={noop} onBack={noop} />);

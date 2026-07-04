@@ -10,12 +10,13 @@
  */
 
 import React, { useMemo, useState } from 'react';
-import { ArrowLeft, ExternalLink, RotateCcw } from 'lucide-react';
+import { ArrowLeft, ExternalLink, RotateCcw, Settings2, Trash2 } from 'lucide-react';
 import {
   addCard,
   dueCards,
   gradeCard,
   loadDeck,
+  removeCard,
   schedule,
   type ReviewCard,
   type ReviewGrade,
@@ -71,6 +72,8 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
   const [pos, setPos] = useState(0);
   const [done, setDone] = useState(0);
   const [deckSize, setDeckSize] = useState(() => loadDeck(uid).length);
+  const [managing, setManaging] = useState(false);
+  const [deckVer, setDeckVer] = useState(0); // bump to re-read the deck list
 
   const card = queue[pos];
 
@@ -110,6 +113,62 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
     </button>
   );
 
+  const removeFromDeck = (c: ReviewCard) => {
+    removeCard(uid, c);
+    setDeckSize(loadDeck(uid).length);
+    setDeckVer(v => v + 1);
+  };
+  const dueText = (dueTs: number) => {
+    const d = Math.round((dueTs - now) / 86_400_000);
+    return d <= 0 ? 'due now' : d === 1 ? 'due tomorrow' : `due in ${d} days`;
+  };
+
+  // ── Deck manager ──
+  if (managing) {
+    void deckVer;
+    const deck = loadDeck(uid);
+    return (
+      <div className="w-full max-w-xl mx-auto pb-12">
+        <button onClick={() => setManaging(false)} className="flex items-center gap-1.5 text-[13px] font-medium mb-4" style={{ color: '#7a7068' }}>
+          <ArrowLeft size={15} /> Daily review
+        </button>
+        <h2 className="text-2xl font-semibold mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>Your review deck</h2>
+        <p className="text-[13px] mb-4" style={{ color: '#7a7068' }}>
+          {deck.length} card{deck.length === 1 ? '' : 's'} · {deck.filter(c => c.dueTs <= now).length} due today
+        </p>
+        {deck.length === 0 ? (
+          <p className="text-[13.5px] rounded-2xl px-4 py-4" style={{ backgroundColor: '#E8EFF5', color: '#27506E' }}>
+            Your deck is empty. Add questions from Revise by topic to build it.
+          </p>
+        ) : (
+          <div className="space-y-1.5">
+            {deck.map(c => (
+              <div key={`${c.subjectId}-${c.year}-${c.level}-${c.lang}-${c.fileid}-${c.n}`} className="flex items-center gap-2 rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-zinc-900 pr-2">
+                <button onClick={() => onOpenQuestion(asSibling(c))} className="flex-1 px-3.5 py-2.5 text-left transition-transform active:translate-y-0.5">
+                  <span className="block text-[13px] font-semibold" style={{ color: INK }}>
+                    {subjectLabel(c.subjectId)}{c.topicId ? ` · ${topicLabel(c.topicId)}` : ''}
+                  </span>
+                  <span className="block text-[11.5px]" style={{ color: '#7a7068' }}>
+                    {c.year} · {LVL[c.level] ?? c.level} · Q{c.n} · {c.lastTs === 0 ? 'new' : dueText(c.dueTs)}
+                  </span>
+                </button>
+                <button
+                  onClick={() => removeFromDeck(c)}
+                  aria-label="Remove from deck"
+                  title="Remove from deck"
+                  className="shrink-0 w-8 h-8 rounded-lg flex items-center justify-center border-2"
+                  style={{ borderColor: '#d0cdc8', color: '#9e9186' }}
+                >
+                  <Trash2 size={14} />
+                </button>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    );
+  }
+
   // ── Empty / caught-up states ──
   if (!card) {
     const weakCount = allMarks(uid).filter(m => m.max > 0 && m.score < m.max).length;
@@ -142,6 +201,11 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
             style={{ backgroundColor: ACCENT, boxShadow: '0 3px 0 #B54D14' }}
           >
             Seed from my {weakCount} weak question{weakCount === 1 ? '' : 's'}
+          </button>
+        )}
+        {deckSize > 0 && (
+          <button onClick={() => setManaging(true)} className="flex items-center gap-1.5 mt-5 text-[12.5px] font-semibold" style={{ color: '#7a7068' }}>
+            <Settings2 size={14} /> Manage deck ({deckSize})
           </button>
         )}
       </div>
@@ -199,13 +263,14 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
         ))}
       </div>
 
-      <button
-        onClick={onBack}
-        className="flex items-center gap-1.5 mx-auto mt-6 text-[12px] font-medium"
-        style={{ color: '#9e9186' }}
-      >
-        <RotateCcw size={13} /> End session
-      </button>
+      <div className="flex items-center justify-center gap-5 mt-6">
+        <button onClick={onBack} className="flex items-center gap-1.5 text-[12px] font-medium" style={{ color: '#9e9186' }}>
+          <RotateCcw size={13} /> End session
+        </button>
+        <button onClick={() => setManaging(true)} className="flex items-center gap-1.5 text-[12px] font-medium" style={{ color: '#9e9186' }}>
+          <Settings2 size={13} /> Manage deck
+        </button>
+      </div>
     </div>
   );
 };
