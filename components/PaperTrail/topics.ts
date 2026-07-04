@@ -137,4 +137,25 @@ export function topicsForSubject(subjectId: string): SubjectTopic[] {
     .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
 }
 
+/** Candidate questions for a custom set: every tagged question in the subject
+ *  (subtopicIds = null) or only those touching the chosen subtopics. Deduped by
+ *  paper+question so a question tagged on two topics is not double-counted. */
+export function questionsForTopics(subjectId: string, subtopicIds: string[] | null): TopicSibling[] {
+  const want = subtopicIds && subtopicIds.length ? new Set(subtopicIds) : null;
+  const seen = new Set<string>();
+  const out: TopicSibling[] = [];
+  for (const p of PAPER_TOPIC_TAGS) {
+    if (p.subjectId !== subjectId) continue;
+    for (const q of p.q) {
+      const match = want ? want.has(q.primary) || (!!q.secondary && want.has(q.secondary)) : true;
+      if (!match) continue;
+      const k = `${p.level}|${p.lang}|${p.year}|${p.fileid}|${q.n}`;
+      if (seen.has(k)) continue;
+      seen.add(k);
+      out.push({ subjectId: p.subjectId, level: p.level, lang: p.lang, year: p.year, fileid: p.fileid, paperKey: p.paperKey, n: q.n });
+    }
+  }
+  return out;
+}
+
 export type { QuestionTopicTag };

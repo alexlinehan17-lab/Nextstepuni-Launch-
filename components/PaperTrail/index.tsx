@@ -18,7 +18,7 @@
  */
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { ArrowLeft, ChevronRight, Clock3, Layers, Repeat, Search } from 'lucide-react';
+import { ArrowLeft, ChevronRight, Clock3, FileStack, Layers, Repeat, Search } from 'lucide-react';
 import SubjectTilePicker from '../shared/SubjectTilePicker';
 import { baseName, displayName } from '../shared/subjectNames';
 import Viewer from './Viewer';
@@ -32,7 +32,9 @@ import ReviewSession from './ReviewSession';
 import StreakStrip from './StreakStrip';
 import CountdownCard from './CountdownCard';
 import ProgressDashboard from './ProgressDashboard';
+import MockExamBuilder from './MockExamBuilder';
 import { deckStats } from './reviewStore';
+import { loadSet } from './mockSetStore';
 import { paperAnswersPath, paperStoragePath, paperUrl, prettyBytes } from './storage';
 import {
   FORMULAE_BOOKLET_LIVE,
@@ -101,6 +103,7 @@ type View =
   | { v: 'revise' }
   | { v: 'review' }
   | { v: 'progress' }
+  | { v: 'mock' }
   | { v: 'subject'; subjectId: string }
   | {
       v: 'viewer';
@@ -401,6 +404,26 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     );
   }
 
+  // ═══════════════════════ MOCK-SET BUILDER ═══════════════════════
+  if (view.v === 'mock') {
+    const inCycleTagged = taggedSubjects()
+      .map(id => subjectById.get(id))
+      .filter((s): s is PaperTrailSubject => !!s && (junior ? s.cycle === 'jc' : s.cycle !== 'jc'))
+      .sort((a, b) => displayName(a.name).localeCompare(displayName(b.name)));
+    const mineNames = new Set((studentSubjects ?? []).map(baseName));
+    return (
+      <MockExamBuilder
+        uid={uid}
+        now={Date.now()}
+        subjects={inCycleTagged.map(s => ({ id: s.id, label: displayName(s.name) }))}
+        mineIds={inCycleTagged.filter(s => matchesStudent(s, mineNames)).map(s => s.id)}
+        subjectLabel={id => displayName(subjectById.get(id)?.name ?? id)}
+        onOpenQuestion={openCrossYear}
+        onBack={() => setView({ v: 'home' })}
+      />
+    );
+  }
+
   // ═══════════════════════ DAILY REVIEW (SRS) ═══════════════════════
   if (view.v === 'review') {
     return (
@@ -687,6 +710,10 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
       : review.total > 0
         ? `All caught up · ${review.total} scheduled`
         : 'Spaced practice — save questions to build your deck';
+  const activeMock = loadSet(uid);
+  const mockSub = activeMock
+    ? `Resume: ${activeMock.items.filter(i => i.done).length}/${activeMock.items.length} done · ${activeMock.label}`
+    : 'Assemble a custom set from real past questions';
 
   return (
     <div className="w-full max-w-xl mx-auto pb-12">
@@ -773,6 +800,21 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
         {review.due > 0 && (
           <span className="shrink-0 text-[12px] font-bold tabular-nums px-2 py-0.5 rounded-full" style={{ backgroundColor: '#F26B1F', color: '#fff' }}>{review.due}</span>
         )}
+        <ChevronRight size={18} className="shrink-0" style={{ color: '#F26B1F' }} />
+      </button>
+
+      {/* Mock-set builder CTA (B1). */}
+      <button
+        onClick={() => setView({ v: 'mock' })}
+        className="w-full flex items-center gap-3 rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] px-4 py-3.5 mb-5 text-left transition-transform active:translate-y-0.5 hover:-translate-y-0.5"
+      >
+        <span className="shrink-0 w-10 h-10 rounded-xl flex items-center justify-center" style={{ backgroundColor: '#FDEEDF' }}>
+          <FileStack size={18} style={{ color: '#F26B1F' }} />
+        </span>
+        <span className="flex-1 min-w-0">
+          <span className="block text-[15px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>{activeMock ? 'Your mock set' : 'Build a mock set'}</span>
+          <span className="block text-[12.5px] truncate" style={{ color: '#7a7068' }}>{mockSub}</span>
+        </span>
         <ChevronRight size={18} className="shrink-0" style={{ color: '#F26B1F' }} />
       </button>
 
