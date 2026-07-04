@@ -12,11 +12,12 @@
  */
 
 import React, { useMemo, useState } from 'react';
-import { ArrowLeft, ChevronRight, Layers, Plus, Check } from 'lucide-react';
+import { ArrowLeft, ChevronRight, Layers, Plus, Check, Download } from 'lucide-react';
 import SubjectTilePicker from '../shared/SubjectTilePicker';
 import { siblingsFor, topicLabel, topicsForPaper, topicsForSubject, type SubjectTopic, type TopicSibling } from './topics';
 import { allMarks } from './attemptStore';
 import { addCard, hasCard, removeCard } from './reviewStore';
+import { downloadPack } from './revisionPack';
 import { type PaperLang, type PaperLevel } from '../../types/paperTrail';
 
 const INK = '#1a1a1a';
@@ -79,9 +80,23 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
           <ArrowLeft size={15} /> {subjectLabel(subjectId)} topics
         </button>
         <h2 className="text-2xl font-semibold mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{topicLabel(subtopicId)}</h2>
-        <p className="text-[13px] mb-4" style={{ color: '#7a7068' }}>
+        <p className="text-[13px] mb-3" style={{ color: '#7a7068' }}>
           {questions.length} question{questions.length === 1 ? '' : 's'} across {years.size} year{years.size === 1 ? '' : 's'} — tap to open with its marking scheme.
         </p>
+        {questions.length > 0 && (
+          <button
+            onClick={() => downloadPack({
+              subjectLabel: subjectLabel(subjectId),
+              topicLabel: topicLabel(subtopicId),
+              questions,
+              dateIso: new Date(Date.now()).toISOString().slice(0, 10),
+            })}
+            className="inline-flex items-center gap-1.5 mb-4 rounded-full px-3.5 py-1.5 text-[12.5px] font-semibold border-2 transition-transform active:translate-y-0.5"
+            style={{ borderColor: 'rgba(242,107,31,0.35)', color: ACCENT }}
+          >
+            <Download size={14} /> Export revision pack
+          </button>
+        )}
         <div className="space-y-1.5">
           {questions.map(q => {
             void revVer; // recompute membership when the deck changes
