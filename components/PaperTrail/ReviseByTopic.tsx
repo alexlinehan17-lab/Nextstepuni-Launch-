@@ -14,7 +14,7 @@
 import React, { useMemo, useState } from 'react';
 import { ArrowLeft, ChevronRight, Layers, Plus, Check, Download } from 'lucide-react';
 import SubjectTilePicker from '../shared/SubjectTilePicker';
-import { siblingsFor, topicLabel, topicsForPaper, topicsForSubject, type SubjectTopic, type TopicSibling } from './topics';
+import { siblingsFor, taggedYearsForSubject, topicLabel, topicsForPaper, topicsForSubject, type SubjectTopic, type TopicSibling } from './topics';
 import { allMarks } from './attemptStore';
 import { addCard, hasCard, removeCard } from './reviewStore';
 import { downloadPack } from './revisionPack';
@@ -38,6 +38,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
   const [scope, setScope] = useState<'mine' | 'all'>(mineIds.length ? 'mine' : 'all');
   const [subjectId, setSubjectId] = useState<string | null>(null);
   const [subtopicId, setSubtopicId] = useState<string | null>(null);
+  const [sort, setSort] = useState<'busiest' | 'frequent'>('busiest');
   const [revVer, setRevVer] = useState(0); // bump to re-read review-deck membership
 
   const toggleReview = (q: TopicSibling) => {
@@ -65,7 +66,15 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
     return m;
   }, [subjectId, uid]);
 
-  const topics: SubjectTopic[] = useMemo(() => (subjectId ? topicsForSubject(subjectId) : []), [subjectId]);
+  const baseTopics: SubjectTopic[] = useMemo(() => (subjectId ? topicsForSubject(subjectId) : []), [subjectId]);
+  const totalYears = useMemo(() => (subjectId ? taggedYearsForSubject(subjectId) : 0), [subjectId]);
+  // "High-yield" = recurs in most tagged years (honest historical frequency,
+  // never a prediction). Only meaningful once there are a few years to compare.
+  const isHighYield = (t: SubjectTopic) => totalYears >= 3 && t.years / totalYears >= 0.6;
+  const topics: SubjectTopic[] = useMemo(() => {
+    if (sort === 'busiest') return baseTopics; // already count-sorted
+    return [...baseTopics].sort((a, b) => b.years - a.years || b.count - a.count || a.label.localeCompare(b.label));
+  }, [baseTopics, sort]);
   const questions = useMemo(
     () => (subjectId && subtopicId ? siblingsFor(subjectId, subtopicId) : []),
     [subjectId, subtopicId],
@@ -144,11 +153,26 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
           <ArrowLeft size={15} /> All subjects
         </button>
         <h2 className="text-2xl font-semibold mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{subjectLabel(subjectId)}</h2>
-        <p className="text-[13px] mb-4" style={{ color: '#7a7068' }}>Pick a topic to drill every past question on it.</p>
+        <p className="text-[13px] mb-3" style={{ color: '#7a7068' }}>Pick a topic to drill every past question on it.</p>
+        {/* Sort: busiest by question count, or by how many years it recurs. */}
+        <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50 w-fit mb-4" role="group" aria-label="Sort topics">
+          {(['busiest', 'frequent'] as const).map(s => (
+            <button
+              key={s}
+              aria-pressed={sort === s}
+              onClick={() => setSort(s)}
+              className={`px-3 py-1.5 rounded-lg text-[12.5px] transition-all ${sort === s ? 'bg-white dark:bg-zinc-800 font-semibold shadow-sm' : ''}`}
+              style={{ color: sort === s ? INK : '#7a7068' }}
+            >
+              {s === 'busiest' ? 'Most questions' : 'Most examined'}
+            </button>
+          ))}
+        </div>
         <div className="space-y-1.5">
           {topics.map(t => {
             const w = weakByTopic.get(t.subtopicId);
             const avg = w && w.n ? Math.round(w.sum / w.n) : null;
+            const highYield = isHighYield(t);
             return (
               <button
                 key={t.subtopicId}
@@ -156,9 +180,16 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
                 className="w-full flex items-center gap-3 rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3.5 py-3 text-left transition-transform active:translate-y-0.5 hover:border-[#F26B1F]"
               >
                 <span className="flex-1 min-w-0">
-                  <span className="block text-[14px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{t.label}</span>
-                  <span className="block text-[11.5px]" style={{ color: '#7a7068' }}>
-                    {t.count} question{t.count === 1 ? '' : 's'} · {t.years} year{t.years === 1 ? '' : 's'}
+                  <span className="flex items-center gap-2">
+                    <span className="text-[14px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{t.label}</span>
+                    {highYield && (
+                      <span className="shrink-0 text-[9.5px] font-bold uppercase tracking-wide px-1.5 py-0.5 rounded-full" style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E', border: '1px solid rgba(242,107,31,0.3)' }}>
+                        High-yield
+                      </span>
+                    )}
+                  </span>
+                  <span className="block text-[11.5px] mt-0.5" style={{ color: '#7a7068' }}>
+                    {t.count} question{t.count === 1 ? '' : 's'} · appeared in {t.years} of {totalYears} year{totalYears === 1 ? '' : 's'}
                   </span>
                 </span>
                 {avg !== null && (

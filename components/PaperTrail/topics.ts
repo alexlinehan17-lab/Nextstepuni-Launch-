@@ -106,6 +106,14 @@ export function taggedSubjects(): string[] {
   return [...new Set(PAPER_TOPIC_TAGS.map(p => p.subjectId))];
 }
 
+/** Distinct tagged years available for a subject — the honest denominator for a
+ *  topic's "appears in N of M years" frequency. */
+export function taggedYearsForSubject(subjectId: string): number {
+  const years = new Set<number>();
+  for (const p of PAPER_TOPIC_TAGS) if (p.subjectId === subjectId) years.add(p.year);
+  return years.size;
+}
+
 export interface SubjectTopic {
   subtopicId: string;
   label: string;
