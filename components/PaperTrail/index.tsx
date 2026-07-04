@@ -30,6 +30,7 @@ import WeaknessMap from './WeaknessMap';
 import ReviseByTopic from './ReviseByTopic';
 import ReviewSession from './ReviewSession';
 import StreakStrip from './StreakStrip';
+import ProgressDashboard from './ProgressDashboard';
 import { deckStats } from './reviewStore';
 import { paperAnswersPath, paperStoragePath, paperUrl, prettyBytes } from './storage';
 import {
@@ -98,6 +99,7 @@ type View =
   | { v: 'home' }
   | { v: 'revise' }
   | { v: 'review' }
+  | { v: 'progress' }
   | { v: 'subject'; subjectId: string }
   | {
       v: 'viewer';
@@ -406,6 +408,19 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
         now={Date.now()}
         subjectLabel={id => displayName(subjectById.get(id)?.name ?? id)}
         onOpenQuestion={openCrossYear}
+        onBack={() => setView({ v: 'home' })}
+      />
+    );
+  }
+
+  // ═══════════════════════ PROGRESS DASHBOARD ═══════════════════════
+  if (view.v === 'progress') {
+    return (
+      <ProgressDashboard
+        uid={uid}
+        now={Date.now()}
+        subjectLabel={id => displayName(subjectById.get(id)?.name ?? id)}
+        onDrill={openCrossYear}
         onBack={() => setView({ v: 'home' })}
       />
     );
@@ -720,8 +735,9 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
         )}
       </div>
 
-      {/* Practice streak + daily goal (B3) — hidden until first practice. */}
-      <StreakStrip uid={uid} now={Date.now()} />
+      {/* Practice streak + daily goal (B3) — hidden until first practice; opens
+          the progress dashboard when tapped. */}
+      <StreakStrip uid={uid} now={Date.now()} onOpen={() => setView({ v: 'progress' })} />
 
       {/* Revise-by-topic CTA — the flagship use of the topic tags. */}
       <button
@@ -794,6 +810,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
         uid={uid}
         subjectName={id => displayName(subjectById.get(id)?.name ?? id)}
         onDrill={openCrossYear}
+        onOpenDashboard={() => setView({ v: 'progress' })}
       />
 
       {/* Subject picker */}

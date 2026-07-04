@@ -9,7 +9,7 @@
  */
 
 import React from 'react';
-import { Flame, Check } from 'lucide-react';
+import { Flame, Check, ChevronRight } from 'lucide-react';
 import { getStreak } from './streakStore';
 
 const ACCENT = '#F26B1F';
@@ -18,18 +18,24 @@ const INK = '#1a1a1a';
 interface Props {
   uid?: string;
   now: number;
-  /** Bump to force a re-read after activity elsewhere on the page. */
-  refreshKey?: number;
+  /** When set, the strip is a button that opens the progress dashboard. */
+  onOpen?: () => void;
 }
 
-const StreakStrip: React.FC<Props> = ({ uid, now }) => {
+const StreakStrip: React.FC<Props> = ({ uid, now, onOpen }) => {
   const s = getStreak(uid, now);
   if (s.longest === 0 && s.todayCount === 0) return null;
 
   const pct = Math.min(100, Math.round((s.todayCount / s.goal) * 100));
 
   return (
-    <div className="w-full flex items-center gap-3 rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 mb-5">
+    <div
+      role={onOpen ? 'button' : undefined}
+      tabIndex={onOpen ? 0 : undefined}
+      onClick={onOpen}
+      onKeyDown={onOpen ? e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onOpen(); } } : undefined}
+      className={`w-full flex items-center gap-3 rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 mb-5${onOpen ? ' text-left cursor-pointer transition-transform active:translate-y-0.5 hover:-translate-y-0.5' : ''}`}
+    >
       <span className="shrink-0 w-10 h-10 rounded-xl flex items-center justify-center" style={{ backgroundColor: '#FDEEDF' }}>
         <Flame size={19} style={{ color: ACCENT }} />
       </span>
@@ -58,6 +64,7 @@ const StreakStrip: React.FC<Props> = ({ uid, now }) => {
         </span>
         <span className="block text-[10px] mt-0.5" style={{ color: '#9e9186' }}>today’s goal</span>
       </span>
+      {onOpen && <ChevronRight size={18} className="shrink-0" style={{ color: ACCENT }} />}
     </div>
   );
 };

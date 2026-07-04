@@ -11,7 +11,7 @@
  */
 
 import React, { useMemo } from 'react';
-import { TrendingDown, ArrowRight } from 'lucide-react';
+import { TrendingDown, ArrowRight, ChevronRight } from 'lucide-react';
 import { allMarks, type GapKind } from './attemptStore';
 import { siblingsFor, topicLabel, topicsForPaper, type TopicSibling } from './topics';
 import { type PaperLang, type PaperLevel } from '../../types/paperTrail';
@@ -35,7 +35,9 @@ const WeaknessMap: React.FC<{
   uid?: string;
   subjectName: (id: string) => string;
   onDrill: (t: TopicSibling) => void;
-}> = ({ uid, subjectName, onDrill }) => {
+  /** When set, a "See full progress" link opens the dashboard. */
+  onOpenDashboard?: () => void;
+}> = ({ uid, subjectName, onDrill, onOpenDashboard }) => {
   const { topics, overall, gaps } = useMemo(() => {
     const marks = allMarks(uid);
     const byTopic = new Map<string, { subjectId: string; subtopicId: string; sum: number; n: number }>();
@@ -132,6 +134,16 @@ const WeaknessMap: React.FC<{
           {topGap[0] === 'content' && ' These are revision gaps — go back to the notes.'}
           {topGap[0] === 'timing' && ' Practise against the clock (Exam mode).'}
         </p>
+      )}
+
+      {onOpenDashboard && (
+        <button
+          onClick={onOpenDashboard}
+          className="mt-3 flex items-center gap-1 text-[12.5px] font-semibold"
+          style={{ color: '#F26B1F' }}
+        >
+          See full progress <ChevronRight size={14} />
+        </button>
       )}
     </div>
   );
