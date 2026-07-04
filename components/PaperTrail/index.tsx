@@ -24,6 +24,9 @@ import { baseName, displayName } from '../shared/subjectNames';
 import Viewer from './Viewer';
 import { grammarFor, timingFor } from './subjectMeta';
 import { topicsForPaper, type TopicSibling } from './topics';
+import { attemptNs } from './attemptStore';
+import { examinerInsightsFor } from '../../data/paperTrail/examinerInsights';
+import WeaknessMap from './WeaknessMap';
 import { paperAnswersPath, paperStoragePath, paperUrl, prettyBytes } from './storage';
 import {
   FORMULAE_BOOKLET_LIVE,
@@ -359,6 +362,8 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
         topics={topics}
         onCrossYear={openCrossYear}
         focusQuestion={view.focusQuestion}
+        storageNs={attemptNs(uid, subj.id, view.year, view.level, view.lang, view.item.doc.f)}
+        examinerInsights={examinerInsightsFor(subj.id) ?? undefined}
         initialSide={view.side}
         initialPaperPage={view.paperPage ?? 1}
         initialSchemePage={view.schemePage ?? 1}
@@ -701,6 +706,14 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
           </div>
         </>
       )}
+
+      {/* Your practice — self-mark weakness map (Tier 3). Renders only if the
+          student has self-marked at least one question. */}
+      <WeaknessMap
+        uid={uid}
+        subjectName={id => displayName(subjectById.get(id)?.name ?? id)}
+        onDrill={openCrossYear}
+      />
 
       {/* Subject picker */}
       {groups.main.length === 0 ? (

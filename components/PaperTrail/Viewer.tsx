@@ -30,6 +30,8 @@ import {
   Highlighter,
   Pause,
   Play,
+  ListChecks,
+  PenLine,
   RotateCcw,
   ScrollText,
   SlidersHorizontal,
@@ -43,6 +45,8 @@ import { MotionDiv } from '../Motion';
 import { prettyBytes } from './storage';
 import { scanDocument, type CommandToken, type DocTokens, type MarkToken } from './textOverlay';
 import { frequencyFor, siblingsFor, topicLabel, type TopicSibling } from './topics';
+import { loadAttempt, setMark, setTriage, type GapKind, type SelfMark, type TriageRating } from './attemptStore';
+import type { ExaminerInsightSet } from '../../data/paperTrail/examinerInsights';
 import type { FormulaeHandle, FormulaePageIndex } from '../../data/paperTrailFormulae';
 import type { SubjectMarkingGrammar, SubjectTiming } from '../../types/knowledge';
 import type { PaperTopicTags } from '../../types/paperTrailTopics';
@@ -132,6 +136,11 @@ interface ViewerProps {
   /** On open, scroll to this question number once anchors are ready (the
    *  landing target of a cross-year jump). */
   focusQuestion?: string;
+  /** Per-paper localStorage namespace for the triage + self-mark tools
+   *  (`uid|subjectId|year|level|lang|fileid`). Absent → those tools stay hidden. */
+  storageNs?: string;
+  /** Chief-Examiner insight card for this subject, if a report is in-repo. */
+  examinerInsights?: ExaminerInsightSet;
   onClose: () => void;
   /** Reports reading position for recents persistence (debounced upstream). */
   onPosition?: (side: 'paper' | 'scheme', page: number) => void;
@@ -181,6 +190,8 @@ const Viewer: React.FC<ViewerProps> = ({
   topics,
   onCrossYear,
   focusQuestion,
+  storageNs,
+  examinerInsights,
   onClose,
   onPosition,
 }) => {
@@ -208,6 +219,12 @@ const Viewer: React.FC<ViewerProps> = ({
   // ── topic tags (frequency chips + cross-year jump) ──
   const [topicsOn, setTopicsOn] = useState(false);
   const [topicReveal, setTopicReveal] = useState<{ n: string; subtopicId: string } | null>(null);
+  // ── triage (Tier 2) + self-mark (Tier 3) ──
+  const [triageOpen, setTriageOpen] = useState(false);
+  const [examinerOpen, setExaminerOpen] = useState(false);
+  const [selfMarkOn, setSelfMarkOn] = useState(false);
+  // attempt state (triage ratings + self-mark scores) for this paper, persisted.
+  const [attempt, setAttempt] = useState(() => (storageNs ? loadAttempt(storageNs) : {}));
   // The whole-paper text scan (marks + command words) — run once, lazily, the
   // first time any text-overlay tool is switched on.
   const [docTokens, setDocTokens] = useState<DocTokens | null>(null);
@@ -245,6 +262,10 @@ const Viewer: React.FC<ViewerProps> = ({
   markingOpenRef.current = markingOpen;
   const formulaeOpenRef = useRef(false);
   formulaeOpenRef.current = formulaeOpen;
+  const triageOpenRef = useRef(false);
+  triageOpenRef.current = triageOpen;
+  const examinerOpenRef = useRef(false);
+  examinerOpenRef.current = examinerOpen;
   const toolsOpenRef = useRef(false);
   toolsOpenRef.current = toolsOpen;
   // "View full scheme" jump target, consumed by the side-switch / restore effects.
@@ -271,7 +292,7 @@ const Viewer: React.FC<ViewerProps> = ({
 
   const onCommand = useCallback((c: CommandToken) => setCommandReveal(c), []);
 
-  const activeToolCount = [answersOn, paceOn, decodeOn, examOn, topicsOn].filter(Boolean).length;
+  const activeToolCount = [answersOn, paceOn, decodeOn, examOn, topicsOn, selfMarkOn].filter(Boolean).length;
 
   // page → its question anchors, memoised so Page's React.memo holds across
   // scroll/zoom re-renders (a fresh filter() each render would defeat it).
@@ -453,6 +474,44 @@ const Viewer: React.FC<ViewerProps> = ({
     });
   }, [ensureAnswerMap]);
 
+  // Triage (Tier 2): plan-your-attack ratings over the paper's question list.
+  const openTriage = useCallback(() => {
+    ensureAnswerMap();
+    setToolsOpen(false);
+    setTriageOpen(true);
+  }, [ensureAnswerMap]);
+
+  const rateTriage = useCallback(
+    (n: string, rating: TriageRating | null) => {
+      if (!storageNs) return;
+      setAttempt(setTriage(storageNs, n, rating));
+    },
+    [storageNs],
+  );
+
+  // Self-mark (Tier 3): scoring control appears inside the answer reveal. Turning
+  // it on ensures the answer chips are available to open a reveal from.
+  const toggleSelfMark = useCallback(() => {
+    setSelfMarkOn(on => {
+      const next = !on;
+      if (next) {
+        ensureAnswerMap();
+        setAnswersOn(true);
+        if (scheme && !sessions.current.scheme.pdf && !sessions.current.scheme.task) load('scheme');
+      }
+      return next;
+    });
+    setToolsOpen(false);
+  }, [ensureAnswerMap, scheme, load]);
+
+  const recordMark = useCallback(
+    (n: string, mark: SelfMark | null) => {
+      if (!storageNs) return;
+      setAttempt(setMark(storageNs, n, mark));
+    },
+    [storageNs],
+  );
+
   // Reveal one question's scheme crop. On the FIRST reveal, full-GET the scheme
   // so the CacheFirst (200-only) rule stores a complete copy for offline reveals.
   const onReveal = useCallback(
@@ -581,6 +640,8 @@ const Viewer: React.FC<ViewerProps> = ({
     setMarkingOpen(false);
     setFormulaeOpen(false);
     setTopicReveal(null);
+    setTriageOpen(false);
+    setExaminerOpen(false);
   }, [side]);
 
   // Close the tools menu on outside tap.
@@ -619,6 +680,14 @@ const Viewer: React.FC<ViewerProps> = ({
         }
         if (formulaeOpenRef.current) {
           setFormulaeOpen(false);
+          return;
+        }
+        if (triageOpenRef.current) {
+          setTriageOpen(false);
+          return;
+        }
+        if (examinerOpenRef.current) {
+          setExaminerOpen(false);
           return;
         }
         if (toolsOpenRef.current) {
@@ -821,6 +890,25 @@ const Viewer: React.FC<ViewerProps> = ({
                         }}
                       />
                     )}
+                    {answersUrl && storageNs && (
+                      <ToolRow
+                        icon={<ListChecks size={15} />}
+                        title="Triage"
+                        sub="Rate each question before you start"
+                        busy={answerState === 'loading'}
+                        onClick={openTriage}
+                      />
+                    )}
+                    {answersUrl && scheme && storageNs && (
+                      <ToolRow
+                        icon={<PenLine size={15} />}
+                        title="Self-mark"
+                        sub="Score yourself against the scheme"
+                        on={selfMarkOn}
+                        busy={selfMarkOn && answerState === 'loading'}
+                        onClick={toggleSelfMark}
+                      />
+                    )}
                     <ToolRow
                       icon={<Clock3 size={15} />}
                       title="Time budget"
@@ -871,6 +959,17 @@ const Viewer: React.FC<ViewerProps> = ({
                         sub={grammar.subjectLabel}
                         onClick={() => {
                           setMarkingOpen(true);
+                          setToolsOpen(false);
+                        }}
+                      />
+                    )}
+                    {examinerInsights && (
+                      <ToolRow
+                        icon={<ScrollText size={15} />}
+                        title="Examiner insights"
+                        sub="Where the Chief Examiner says marks are lost"
+                        onClick={() => {
+                          setExaminerOpen(true);
                           setToolsOpen(false);
                         }}
                       />
@@ -1151,6 +1250,9 @@ const Viewer: React.FC<ViewerProps> = ({
                 schemeUrl={scheme?.url}
                 schemeErrored={sessions.current.scheme.state === 'error' || sessions.current.scheme.state === 'unsupported'}
                 copyright={answerMap?.copyright}
+                selfMark={selfMarkOn}
+                existingMark={attempt.marks?.[reveal.n]}
+                onRecordMark={m => recordMark(reveal.n, m)}
                 onClose={() => setReveal(null)}
                 onFullScheme={jumpSchemeToPage}
               />
@@ -1305,6 +1407,69 @@ const Viewer: React.FC<ViewerProps> = ({
           </>
         )}
       </AnimatePresence>
+
+      {/* Triage — plan-your-attack ratings over the question list. */}
+      <AnimatePresence>
+        {triageOpen && (
+          <>
+            <MotionDiv key="triage-bd" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }} onClick={() => setTriageOpen(false)} className="fixed inset-0 z-[110] bg-black/40" />
+            <MotionDiv
+              key="triage-panel"
+              initial={panelHidden}
+              animate={panelShown}
+              exit={panelHidden}
+              transition={GLIDE}
+              role="dialog"
+              aria-modal="true"
+              aria-label="Triage — plan your attack"
+              style={{ paddingBottom: 'var(--sab, 0px)' }}
+              className={isWide ? 'fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800' : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-zinc-900 rounded-t-2xl shadow-2xl'}
+            >
+              <TriageContent
+                wide={isWide}
+                questions={answerMap?.q ?? null}
+                loading={answerState === 'loading'}
+                ratings={attempt.triage ?? {}}
+                minsPerMark={minsPerMark}
+                onRate={rateTriage}
+                onJump={n => {
+                  const q = answerMap?.q.find(x => x.n === n);
+                  setTriageOpen(false);
+                  if (q) requestAnimationFrame(() => {
+                    const el = scrollerRef.current;
+                    const target = el?.querySelector<HTMLElement>(`[data-page="${q.pP}"]`);
+                    if (el && target) el.scrollTo({ top: target.offsetTop - 8 + target.clientHeight * Math.max(0, q.pY[0] - 0.02) });
+                  });
+                }}
+                onClose={() => setTriageOpen(false)}
+              />
+            </MotionDiv>
+          </>
+        )}
+      </AnimatePresence>
+
+      {/* Examiner insights — Chief Examiner "where marks are lost" card. */}
+      <AnimatePresence>
+        {examinerOpen && examinerInsights && (
+          <>
+            <MotionDiv key="exam-bd" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }} onClick={() => setExaminerOpen(false)} className="fixed inset-0 z-[110] bg-black/40" />
+            <MotionDiv
+              key="examiner-panel"
+              initial={panelHidden}
+              animate={panelShown}
+              exit={panelHidden}
+              transition={GLIDE}
+              role="dialog"
+              aria-modal="true"
+              aria-label={`Examiner insights for ${examinerInsights.subjectLabel}`}
+              style={{ paddingBottom: 'var(--sab, 0px)' }}
+              className={isWide ? 'fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800' : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-zinc-900 rounded-t-2xl shadow-2xl'}
+            >
+              <ExaminerContent wide={isWide} data={examinerInsights} onClose={() => setExaminerOpen(false)} />
+            </MotionDiv>
+          </>
+        )}
+      </AnimatePresence>
     </div>,
     document.body,
   );
@@ -1360,6 +1525,148 @@ const FormulaeContent: React.FC<{
       </div>
       <p className="shrink-0 px-4 py-2 text-[10px] text-zinc-400 border-t border-zinc-200 dark:border-zinc-800">
         Formulae and Tables © State Examinations Commission.
+      </p>
+    </>
+  );
+};
+
+// ─── triage (plan your attack) ──────────────────────────────
+
+const TRIAGE_OPTS: { r: TriageRating; label: string; bg: string }[] = [
+  { r: 'g', label: 'Confident', bg: '#3A8D5F' },
+  { r: 'a', label: 'Unsure', bg: '#F26B1F' },
+  { r: 'r', label: 'Hard', bg: '#1a1a1a' },
+];
+
+const TriageContent: React.FC<{
+  wide: boolean;
+  questions: PaperAnswerQuestion[] | null;
+  loading: boolean;
+  ratings: Record<string, TriageRating>;
+  minsPerMark: number | null;
+  onRate: (n: string, rating: TriageRating | null) => void;
+  onJump: (n: string) => void;
+  onClose: () => void;
+}> = ({ wide, questions, loading, ratings, minsPerMark, onRate, onJump, onClose }) => {
+  const closeRef = useRef<HTMLButtonElement | null>(null);
+  useEffect(() => {
+    closeRef.current?.focus();
+  }, []);
+  const counts = { g: 0, a: 0, r: 0 };
+  for (const q of questions ?? []) {
+    const rt = ratings[q.n];
+    if (rt) counts[rt]++;
+  }
+  const rated = counts.g + counts.a + counts.r;
+  return (
+    <>
+      {!wide && (
+        <div className="shrink-0 flex justify-center pt-2 pb-0.5" aria-hidden>
+          <div className="h-1 w-9 rounded-full bg-zinc-300 dark:bg-zinc-700" />
+        </div>
+      )}
+      <div className="shrink-0 flex items-center gap-2 px-4 py-3 border-b border-zinc-200 dark:border-zinc-800">
+        <div className="flex-1 min-w-0">
+          <p className="text-[15px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Triage — plan your attack</p>
+          <p className="text-[11px] text-zinc-500">Rate each question before you start. Do your confident ones first.</p>
+        </div>
+        <button ref={closeRef} onClick={onClose} aria-label="Close" className="p-2 -mr-1 rounded-lg text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100">
+          <X size={18} />
+        </button>
+      </div>
+      {rated > 0 && (
+        <div className="shrink-0 flex items-center gap-3 px-4 py-2 text-[11px] font-semibold border-b border-zinc-100 dark:border-zinc-800">
+          <span style={{ color: '#3A8D5F' }}>{counts.g} confident</span>
+          <span style={{ color: '#F26B1F' }}>{counts.a} unsure</span>
+          <span style={{ color: '#1a1a1a' }}>{counts.r} hard</span>
+        </div>
+      )}
+      <div className="flex-1 overflow-auto overscroll-contain px-3 py-3 space-y-1.5">
+        {!questions && loading && (
+          <div className="flex flex-col items-center gap-2 py-10 text-zinc-400">
+            <div className="w-5 h-5 rounded-full border-2 border-zinc-300 border-t-zinc-500 animate-spin" aria-hidden />
+            <span className="text-[12px]">Loading the question list…</span>
+          </div>
+        )}
+        {questions?.map(q => {
+          const rt = ratings[q.n];
+          return (
+            <div key={q.n} className="rounded-xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3 py-2.5">
+              <div className="flex items-center justify-between gap-2 mb-1.5">
+                <button onClick={() => onJump(q.n)} className="text-[13px] font-semibold text-left" style={{ color: '#1a1a1a' }}>
+                  {q.label ?? `Question ${q.n}`}
+                </button>
+              </div>
+              <div className="flex items-center gap-1.5">
+                {TRIAGE_OPTS.map(opt => {
+                  const active = rt === opt.r;
+                  return (
+                    <button
+                      key={opt.r}
+                      onClick={() => onRate(q.n, active ? null : opt.r)}
+                      aria-pressed={active}
+                      className="flex-1 py-1.5 rounded-lg text-[12px] font-semibold transition-all border-2"
+                      style={
+                        active
+                          ? { backgroundColor: opt.bg, borderColor: opt.bg, color: '#fff' }
+                          : { backgroundColor: '#fff', borderColor: '#d0cdc8', color: '#7a7068' }
+                      }
+                    >
+                      {opt.label}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+      {counts.g + counts.a + counts.r > 0 && (
+        <p className="shrink-0 px-4 py-2.5 text-[12px] border-t border-zinc-200 dark:border-zinc-800" style={{ color: '#5a5550' }}>
+          Plan: bank the <b style={{ color: '#3A8D5F' }}>{counts.g} confident</b>{minsPerMark ? '' : ''} first, then the {counts.a} unsure, and leave the {counts.r} hard for last.
+        </p>
+      )}
+    </>
+  );
+};
+
+// ─── examiner insights card ─────────────────────────────────
+
+const ExaminerContent: React.FC<{ wide: boolean; data: ExaminerInsightSet; onClose: () => void }> = ({ wide, data, onClose }) => {
+  const closeRef = useRef<HTMLButtonElement | null>(null);
+  useEffect(() => {
+    closeRef.current?.focus();
+  }, []);
+  return (
+    <>
+      {!wide && (
+        <div className="shrink-0 flex justify-center pt-2 pb-0.5" aria-hidden>
+          <div className="h-1 w-9 rounded-full bg-zinc-300 dark:bg-zinc-700" />
+        </div>
+      )}
+      <div className="shrink-0 flex items-center gap-2 px-4 py-3 border-b border-zinc-200 dark:border-zinc-800">
+        <div className="flex-1 min-w-0">
+          <p className="text-[15px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Examiner insights</p>
+          <p className="text-[11px] text-zinc-500 truncate">{data.source}</p>
+        </div>
+        <button ref={closeRef} onClick={onClose} aria-label="Close" className="p-2 -mr-1 rounded-lg text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100">
+          <X size={18} />
+        </button>
+      </div>
+      <div className="flex-1 overflow-auto overscroll-contain px-4 py-4 space-y-3">
+        {data.insights.map((ins, i) => (
+          <div key={i} className="rounded-xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3.5 py-3">
+            <p className="text-[10px] font-bold uppercase tracking-[0.12em] mb-1" style={{ color: '#9e9186' }}>Where marks are lost</p>
+            <p className="text-[13px] leading-relaxed mb-2.5" style={{ color: '#3a3530' }}>{ins.pitfall}</p>
+            <div className="rounded-lg px-3 py-2 mb-1.5" style={{ backgroundColor: '#E8F2EC', borderLeft: '3px solid #3A8D5F' }}>
+              <p className="text-[12.5px] leading-relaxed" style={{ color: '#1F5F3E' }}>{ins.fix}</p>
+            </div>
+            <p className="text-[10.5px] italic" style={{ color: '#9e9186' }}>{ins.cite}</p>
+          </div>
+        ))}
+      </div>
+      <p className="shrink-0 px-4 py-2 text-[10px] text-zinc-400 border-t border-zinc-200 dark:border-zinc-800">
+        Source: State Examinations Commission. Full report in the school’s evidence dossier.
       </p>
     </>
   );
@@ -1625,6 +1932,20 @@ const MarkingContent: React.FC<{ wide: boolean; grammar: SubjectMarkingGrammar; 
 
 // ─── per-question marking-scheme reveal content (inside the glide panel) ─────
 
+const SCORE_BANDS: { v: number; label: string }[] = [
+  { v: 0, label: 'Blank' },
+  { v: 25, label: 'Some' },
+  { v: 50, label: 'Half' },
+  { v: 75, label: 'Most' },
+  { v: 100, label: 'Full' },
+];
+const GAP_OPTS: { k: GapKind; label: string }[] = [
+  { k: 'content', label: 'Didn’t know it' },
+  { k: 'process', label: 'Wrong method' },
+  { k: 'careless', label: 'Careless slip' },
+  { k: 'timing', label: 'Ran out of time' },
+];
+
 const RevealContent: React.FC<{
   q: PaperAnswerQuestion;
   wide: boolean;
@@ -1633,14 +1954,22 @@ const RevealContent: React.FC<{
   schemeUrl?: string;
   schemeErrored: boolean;
   copyright?: string;
+  selfMark?: boolean;
+  existingMark?: SelfMark;
+  onRecordMark?: (mark: SelfMark | null) => void;
   onClose: () => void;
   onFullScheme: (page: number) => void;
-}> = ({ q, wide, reduced, schemePdf, schemeUrl, schemeErrored, copyright, onClose, onFullScheme }) => {
+}> = ({ q, wide, reduced, schemePdf, schemeUrl, schemeErrored, copyright, selfMark, existingMark, onRecordMark, onClose, onFullScheme }) => {
   const firstPage = q.region[0]?.p;
   const closeRef = useRef<HTMLButtonElement | null>(null);
   useEffect(() => {
     closeRef.current?.focus();
   }, []);
+  const scored = existingMark?.score;
+  const setScore = (v: number) =>
+    onRecordMark?.({ score: v, max: 100, gap: v >= 100 ? undefined : existingMark?.gap, ts: Date.now() });
+  const setGap = (k: GapKind) =>
+    onRecordMark?.({ score: existingMark?.score ?? 0, max: 100, gap: existingMark?.gap === k ? undefined : k, ts: Date.now() });
   return (
     <>
       {!wide && (
@@ -1686,6 +2015,50 @@ const RevealContent: React.FC<{
           </div>
         )}
       </MotionDiv>
+      {selfMark && (
+        <div className="shrink-0 px-4 py-3 border-t border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900">
+          <p className="text-[11px] font-bold uppercase tracking-[0.1em] mb-2" style={{ color: '#9e9186' }}>
+            How did you do against the scheme?
+          </p>
+          <div className="flex items-center gap-1.5 mb-2">
+            {SCORE_BANDS.map(b => {
+              const active = scored === b.v;
+              return (
+                <button
+                  key={b.v}
+                  onClick={() => setScore(b.v)}
+                  aria-pressed={active}
+                  className="flex-1 py-1.5 rounded-lg text-[11.5px] font-semibold border-2 transition-all"
+                  style={active ? { backgroundColor: '#3A8D5F', borderColor: '#3A8D5F', color: '#fff' } : { backgroundColor: '#fff', borderColor: '#d0cdc8', color: '#7a7068' }}
+                >
+                  {b.label}
+                </button>
+              );
+            })}
+          </div>
+          {scored !== undefined && scored < 100 && (
+            <>
+              <p className="text-[11px] mb-1.5" style={{ color: '#7a7068' }}>What went wrong? (helps your weakness map)</p>
+              <div className="flex flex-wrap gap-1.5">
+                {GAP_OPTS.map(g => {
+                  const active = existingMark?.gap === g.k;
+                  return (
+                    <button
+                      key={g.k}
+                      onClick={() => setGap(g.k)}
+                      aria-pressed={active}
+                      className="px-2.5 py-1 rounded-full text-[11.5px] font-medium border-2 transition-all"
+                      style={active ? { backgroundColor: '#FDEEDF', borderColor: '#F26B1F', color: '#8C3A0E' } : { backgroundColor: '#fff', borderColor: '#d0cdc8', color: '#7a7068' }}
+                    >
+                      {g.label}
+                    </button>
+                  );
+                })}
+              </div>
+            </>
+          )}
+        </div>
+      )}
       <div className="shrink-0 flex items-center justify-between gap-2 px-4 py-2.5 border-t border-zinc-200 dark:border-zinc-800">
         <span className="text-[10px] text-zinc-400 truncate">{copyright ?? '© State Examinations Commission'}</span>
         <button
