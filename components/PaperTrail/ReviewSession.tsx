@@ -22,6 +22,7 @@ import {
 } from './reviewStore';
 import { topicLabel, topicsForPaper, type TopicSibling } from './topics';
 import { allMarks } from './attemptStore';
+import { recordActivity } from './streakStore';
 import { type PaperLang, type PaperLevel } from '../../types/paperTrail';
 
 const INK = '#1a1a1a';
@@ -83,6 +84,7 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
   const rate = (g: ReviewGrade) => {
     if (!card) return;
     gradeCard(uid, card, g, now);
+    recordActivity(uid, now, 1); // feeds the practice streak + daily goal
     setDone(d => d + 1);
     // A failed card comes back before the session ends.
     if (g === 'again') setQueue(q => [...q, card]);

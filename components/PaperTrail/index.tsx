@@ -29,6 +29,7 @@ import { examinerInsightsFor } from '../../data/paperTrail/examinerInsights';
 import WeaknessMap from './WeaknessMap';
 import ReviseByTopic from './ReviseByTopic';
 import ReviewSession from './ReviewSession';
+import StreakStrip from './StreakStrip';
 import { deckStats } from './reviewStore';
 import { paperAnswersPath, paperStoragePath, paperUrl, prettyBytes } from './storage';
 import {
@@ -718,6 +719,9 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
           </div>
         )}
       </div>
+
+      {/* Practice streak + daily goal (B3) — hidden until first practice. */}
+      <StreakStrip uid={uid} now={Date.now()} />
 
       {/* Revise-by-topic CTA — the flagship use of the topic tags. */}
       <button

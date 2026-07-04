@@ -46,6 +46,7 @@ import { prettyBytes } from './storage';
 import { scanDocument, type CommandToken, type DocTokens, type MarkToken } from './textOverlay';
 import { frequencyFor, siblingsFor, topicLabel, type TopicSibling } from './topics';
 import { loadAttempt, setMark, setTriage, type GapKind, type SelfMark, type TriageRating } from './attemptStore';
+import { recordActivity } from './streakStore';
 import type { ExaminerInsightSet } from '../../data/paperTrail/examinerInsights';
 import type { FormulaeHandle, FormulaePageIndex } from '../../data/paperTrailFormulae';
 import type { SubjectMarkingGrammar, SubjectTiming } from '../../types/knowledge';
@@ -508,6 +509,8 @@ const Viewer: React.FC<ViewerProps> = ({
     (n: string, mark: SelfMark | null) => {
       if (!storageNs) return;
       setAttempt(setMark(storageNs, n, mark));
+      // uid is the first segment of storageNs; self-marking counts toward the streak.
+      if (mark) recordActivity(storageNs.split('|')[0], Date.now(), 1);
     },
     [storageNs],
   );
