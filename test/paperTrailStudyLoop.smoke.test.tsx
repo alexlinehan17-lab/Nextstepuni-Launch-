@@ -13,6 +13,7 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import MockExamBuilder from '@/components/PaperTrail/MockExamBuilder';
 import ProgressDashboard from '@/components/PaperTrail/ProgressDashboard';
 import { setMark } from '@/components/PaperTrail/attemptStore';
+import { loadDeck } from '@/components/PaperTrail/reviewStore';
 import { taggedSubjects } from '@/components/PaperTrail/topics';
 
 const NOW = 1_700_000_000_000;
@@ -44,6 +45,12 @@ describe('Paper Trail — mock-set builder', () => {
     // Run checklist: an export affordance and at least one numbered question.
     expect(screen.getByRole('button', { name: /Export set/i })).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /New set/i })).toBeInTheDocument();
+
+    // Bridge to spaced review: "Add all to review" seeds the deck.
+    expect(loadDeck('u1')).toHaveLength(0);
+    fireEvent.click(screen.getByRole('button', { name: /Add all to review/i }));
+    expect(loadDeck('u1').length).toBeGreaterThan(0);
+    expect(screen.getByRole('button', { name: /Added to review/i })).toBeInTheDocument();
   });
 });
 

@@ -14,7 +14,9 @@ import { ArrowLeft, ChevronRight, Download, FileStack, RefreshCw, Check, Clock3 
 import SubjectTilePicker from '../shared/SubjectTilePicker';
 import { questionsForTopics, topicsForSubject, type SubjectTopic, type TopicSibling } from './topics';
 import { buildSet, clearSet, loadSet, saveSet, toggleDone, type MockSet } from './mockSetStore';
+import { addCard } from './reviewStore';
 import { downloadPack } from './revisionPack';
+import { Repeat } from 'lucide-react';
 
 const INK = '#1a1a1a';
 const ACCENT = '#F26B1F';
@@ -43,6 +45,7 @@ const MockExamBuilder: React.FC<Props> = ({ uid, now, subjects, mineIds, subject
   const [chosen, setChosen] = useState<Set<string>>(new Set());
   const [count, setCount] = useState(10);
   const [tick, setTick] = useState(0);
+  const [added, setAdded] = useState(false); // "added this set to review" confirmation
 
   // Live-ish elapsed clock while a set is active.
   useEffect(() => {
@@ -98,7 +101,11 @@ const MockExamBuilder: React.FC<Props> = ({ uid, now, subjects, mineIds, subject
       dateIso: new Date(set.createdTs).toISOString().slice(0, 10),
     };
     const onToggle = (i: number) => setSet(toggleDone(uid, i));
-    const finish = () => { clearSet(uid); setSet(null); setSubjectId(null); };
+    const finish = () => { clearSet(uid); setSet(null); setSubjectId(null); setAdded(false); };
+    const addToReview = () => {
+      for (const it of set.items) addCard(uid, it.q, undefined, now);
+      setAdded(true);
+    };
 
     return (
       <div className="w-full max-w-xl mx-auto pb-12">
@@ -136,6 +143,14 @@ const MockExamBuilder: React.FC<Props> = ({ uid, now, subjects, mineIds, subject
         </div>
 
         <div className="flex flex-wrap items-center gap-2.5">
+          <button
+            onClick={addToReview}
+            disabled={added}
+            className="inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-[13px] font-semibold border-2 transition-transform active:translate-y-0.5 disabled:opacity-100"
+            style={added ? { borderColor: '#3A8D5F', backgroundColor: '#E8F2EC', color: '#1F5F3E' } : { borderColor: 'rgba(242,107,31,0.35)', color: ACCENT }}
+          >
+            {added ? <><Check size={14} /> Added to review</> : <><Repeat size={14} /> Add all to review</>}
+          </button>
           <button onClick={() => downloadPack(packOpts)} className="inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-[13px] font-semibold border-2 transition-transform active:translate-y-0.5" style={{ borderColor: 'rgba(242,107,31,0.35)', color: ACCENT }}>
             <Download size={14} /> Export set
           </button>
