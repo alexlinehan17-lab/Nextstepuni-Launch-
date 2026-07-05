@@ -21,9 +21,11 @@ import {
   type ReviewCard,
   type ReviewGrade,
 } from './reviewStore';
-import { topicLabel, topicsForPaper, type TopicSibling } from './topics';
+import { siblingsFor, topicLabel, topicsForPaper, type TopicSibling } from './topics';
 import { allMarks } from './attemptStore';
+import { computeProgress } from './progressStats';
 import { recordActivity } from './streakStore';
+import { ArrowRight } from 'lucide-react';
 import { type PaperLang, type PaperLevel } from '../../types/paperTrail';
 
 const INK = '#1a1a1a';
@@ -177,6 +179,14 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
       .filter(ts => ts > now)
       .sort((a, b) => a - b)[0];
     const daysToNext = nextDue ? Math.max(1, Math.round((nextDue - now) / 86_400_000)) : null;
+    // "What next" — once the deck is clear, point at the weakest topic so review
+    // flows straight into targeted practice. Only for students who've practised.
+    const weakest = deckSize > 0 || done > 0 ? computeProgress(uid, now).weakestTopics.find(t => t.avg < 60) : undefined;
+    const drillWeakest = () => {
+      if (!weakest) return;
+      const sib = siblingsFor(weakest.subjectId, weakest.subtopicId)[0];
+      if (sib) onOpenQuestion(sib);
+    };
     return (
       <div className="w-full max-w-xl mx-auto pb-12">
         {header}
@@ -194,13 +204,26 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
             Your review deck is empty. Save questions from <span style={{ color: INK, fontWeight: 600 }}>Revise by topic</span> to drill them on a spaced schedule — or seed it from the questions you’ve already self-marked below full marks.
           </p>
         )}
-        {weakCount > 0 && (
+        {weakCount > 0 && deckSize === 0 && (
           <button
             onClick={seedFromWeak}
             className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-[13.5px] font-semibold text-white transition-transform active:translate-y-0.5"
             style={{ backgroundColor: ACCENT, boxShadow: '0 3px 0 #B54D14' }}
           >
             Seed from my {weakCount} weak question{weakCount === 1 ? '' : 's'}
+          </button>
+        )}
+        {weakest && (
+          <button
+            onClick={drillWeakest}
+            className="w-full flex items-center gap-3 rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3.5 py-3 mt-2 text-left transition-transform active:translate-y-0.5 hover:border-[#F26B1F]"
+          >
+            <span className="flex-1 min-w-0">
+              <span className="block text-[10.5px] font-bold uppercase tracking-[0.1em]" style={{ color: '#9e9186' }}>Keep going</span>
+              <span className="block text-[13.5px] font-semibold" style={{ color: INK }}>Drill your weakest topic: {topicLabel(weakest.subtopicId)}</span>
+              <span className="block text-[11.5px]" style={{ color: '#7a7068' }}>{subjectLabel(weakest.subjectId)} · you’re averaging {weakest.avg}%</span>
+            </span>
+            <ArrowRight size={16} className="shrink-0" style={{ color: ACCENT }} />
           </button>
         )}
         {deckSize > 0 && (

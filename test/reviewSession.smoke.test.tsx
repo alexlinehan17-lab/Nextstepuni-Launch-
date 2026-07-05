@@ -11,6 +11,8 @@ import { describe, test, expect, beforeEach, vi } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
 import ReviewSession from '@/components/PaperTrail/ReviewSession';
 import { addCard } from '@/components/PaperTrail/reviewStore';
+import { setMark } from '@/components/PaperTrail/attemptStore';
+import { PAPER_TOPIC_TAGS } from '@/data/paperTrail/topicTags';
 
 const NOW = 1_700_000_000_000;
 const noop = vi.fn();
@@ -44,6 +46,18 @@ describe('Paper Trail — daily review session', () => {
     expect(screen.getByText(/Q9/)).toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: /Remove from deck/i }));
     expect(screen.getByText(/Your deck is empty/i)).toBeInTheDocument();
+  });
+
+  test('once caught up, it points at the weakest topic', () => {
+    // A weak self-mark on a real tagged question → computeProgress finds a topic.
+    const p = PAPER_TOPIC_TAGS[0];
+    const q = p.q[0];
+    setMark(`u1|${p.subjectId}|${p.year}|${p.level}|${p.lang}|${p.fileid}`, q.n, { score: 2, max: 20, ts: NOW });
+    // A due card so grading it lands us in the caught-up state (not the empty one).
+    addCard('u1', { subjectId: 'business', year: 2022, level: 'higher', lang: 'ev', fileid: 'f1', n: '1' }, undefined, NOW);
+    render(<ReviewSession uid="u1" now={NOW} subjectLabel={label} onOpenQuestion={noop} onBack={noop} />);
+    fireEvent.click(screen.getByRole('button', { name: /^Good/ }));
+    expect(screen.getByText(/Drill your weakest topic/i)).toBeInTheDocument();
   });
 
   test('grading "again" re-queues the card within the session', () => {
