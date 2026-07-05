@@ -9,7 +9,7 @@
  * card. No fabricated answers — every card points at a genuine SEC question.
  */
 
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { ArrowLeft, ExternalLink, RotateCcw, Settings2, Trash2 } from 'lucide-react';
 import {
   addCard,
@@ -107,6 +107,27 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
     setPos(0);
     setDone(0);
   };
+
+  // Keyboard: 1–4 rate the current card, O opens it. Active only while a card is
+  // showing (not in the deck manager). Mobile is unaffected.
+  useEffect(() => {
+    if (!card || managing) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+      const map: Record<string, ReviewGrade> = { '1': 'again', '2': 'hard', '3': 'good', '4': 'easy' };
+      if (map[e.key]) {
+        e.preventDefault();
+        rate(map[e.key]);
+      } else if (e.key === 'o' || e.key === 'O') {
+        e.preventDefault();
+        onOpenQuestion(asSibling(card));
+      }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [card, managing]);
+
+  const finePointer = typeof window !== 'undefined' && !!window.matchMedia?.('(pointer: fine)').matches;
 
   const seedFromWeak = () => {
     const weak = allMarks(uid).filter(m => m.max > 0 && m.score < m.max);
@@ -303,7 +324,7 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
       {/* Rating */}
       <p className="text-[12px] mb-2 text-center" style={{ color: '#7a7068' }}>How well did you recall it?</p>
       <div className="grid grid-cols-4 gap-2">
-        {GRADES.map(({ g, label }) => (
+        {GRADES.map(({ g, label }, i) => (
           <button
             key={g}
             onClick={() => rate(g)}
@@ -312,9 +333,13 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
           >
             {label}
             <span className="text-[10.5px] font-medium tabular-nums opacity-80">{fmtInterval(projected[g])}</span>
+            {finePointer && <span className="text-[9px] font-bold opacity-50 tabular-nums">{i + 1}</span>}
           </button>
         ))}
       </div>
+      {finePointer && (
+        <p className="text-[10.5px] mt-2 text-center" style={{ color: '#b0a898' }}>Press 1–4 to rate · O to open the paper</p>
+      )}
 
       <div className="flex items-center justify-center gap-5 mt-6">
         <button onClick={onBack} className="flex items-center gap-1.5 text-[12px] font-medium" style={{ color: '#9e9186' }}>

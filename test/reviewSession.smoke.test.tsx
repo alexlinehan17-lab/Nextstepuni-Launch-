@@ -72,6 +72,14 @@ describe('Paper Trail — daily review session', () => {
     expect(screen.getByText(/Drill your weakest topic/i)).toBeInTheDocument();
   });
 
+  test('keyboard: pressing 3 grades the current card "good"', () => {
+    addCard('u1', { subjectId: 'business', year: 2022, level: 'higher', lang: 'ev', fileid: 'f1', n: '4' }, undefined, NOW);
+    render(<ReviewSession uid="u1" now={NOW} subjectLabel={label} onOpenQuestion={noop} onBack={noop} />);
+    expect(screen.getByText(/Question 4/)).toBeInTheDocument();
+    fireEvent.keyDown(window, { key: '3' });
+    expect(screen.getByText(/Reviewed 1 card/i)).toBeInTheDocument();
+  });
+
   test('grading "again" re-queues the card within the session', () => {
     addCard('u1', { subjectId: 'business', year: 2022, level: 'higher', lang: 'ev', fileid: 'f1', n: '5' }, undefined, NOW);
     render(<ReviewSession uid="u1" now={NOW} subjectLabel={label} onOpenQuestion={noop} onBack={noop} />);
