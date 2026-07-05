@@ -2,19 +2,27 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * Paper Trail — spaced-recall deck (feature A2). A student saves real past-paper
- * questions to a review deck; each card is scheduled with a light SM-2 spacing
- * algorithm off their own recall rating. There is no fabricated answer text —
- * the card is a pointer to a genuine SEC question, and its marking scheme is one
- * tap away to check against. The rating is the student's honest self-assessment
- * of recall, which is exactly what SM-2 consumes.
+ * Paper Trail — spaced-recall deck (feature A2, scheduler upgraded in E1). A
+ * student saves real past-paper questions to a review deck; each card is
+ * scheduled with the FSRS algorithm off their own recall rating, so it returns
+ * right as recall is predicted to fall to the target retention. There is no
+ * fabricated answer text — the card is a pointer to a genuine SEC question, and
+ * its marking scheme is one tap away to check against.
  *
  * Persisted in localStorage, one blob per uid, keyed by the question's identity.
- * `now` is always passed in by the caller (browser `Date.now()`) so the SM-2
- * maths stays pure and unit-testable.
+ * `now` is always passed in by the caller (browser `Date.now()`); the FSRS maths
+ * itself lives in fsrs.ts, pure and unit-tested.
  */
 
 import { type PaperLang, type PaperLevel } from '../../types/paperTrail';
+import {
+  DEFAULT_RETENTION,
+  MIN_STABILITY,
+  fsrsInit,
+  fsrsNext,
+  type FsrsGrade,
+  type FsrsReview,
+} from './fsrs';
 
 export type ReviewGrade = 'again' | 'hard' | 'good' | 'easy';
 
@@ -31,9 +39,11 @@ export interface ReviewCardId {
 export interface ReviewCard extends ReviewCardId {
   /** Primary curriculum topic, when the question is tagged (for grouping). */
   topicId?: string;
-  /** SM-2 ease factor (min 1.3). */
-  ease: number;
-  /** Current inter-repetition interval, in days. */
+  /** FSRS memory stability in days; undefined until the first review. */
+  stability?: number;
+  /** FSRS difficulty 1–10; undefined until the first review. */
+  difficulty?: number;
+  /** Interval (whole days) set at the last review. */
   intervalDays: number;
   /** Next-due epoch ms. */
   dueTs: number;
@@ -46,39 +56,52 @@ export interface ReviewCard extends ReviewCardId {
 }
 
 const DAY = 86_400_000;
-const MIN_EASE = 1.3;
 
-// ─── pure SM-2 scheduler ────────────────────────────────────
+// ─── FSRS scheduling (maths in fsrs.ts) ─────────────────────
 
-/** SM-2 quality (0–5) for each of the four buttons. */
-const GRADE_Q: Record<ReviewGrade, number> = { again: 2, hard: 3, good: 4, easy: 5 };
+const GRADE_NUM: Record<ReviewGrade, FsrsGrade> = { again: 1, hard: 2, good: 3, easy: 4 };
 
-export interface Sm2State {
-  ease: number;
-  intervalDays: number;
-  reps: number;
-  lapses: number;
+/** Compute the next review for a card + grade without persisting. Handles the
+ *  three cases: an FSRS card (has stability), a legacy SM-2 card (seed stability
+ *  from its old interval), and a brand-new card (FSRS init). */
+function computeReview(card: ReviewCard, grade: ReviewGrade, now: number, retention: number): FsrsReview {
+  const g = GRADE_NUM[grade];
+  const elapsed = card.lastTs ? (now - card.lastTs) / DAY : 0;
+  if (card.stability != null) {
+    return fsrsNext({ stability: card.stability, difficulty: card.difficulty ?? 5 }, g, elapsed, retention);
+  }
+  if (card.intervalDays > 0) {
+    return fsrsNext({ stability: Math.max(MIN_STABILITY, card.intervalDays), difficulty: 5 }, g, elapsed, retention);
+  }
+  return fsrsInit(g, retention);
 }
 
-/** Apply one review to an SM-2 state. Pure — no clock, no storage. A failed
- *  card (`again`) resets its streak and comes back in a day; a passed card grows
- *  its interval by the (grade-adjusted) ease factor. */
-export function schedule(prev: Sm2State, grade: ReviewGrade): Sm2State {
-  const q = GRADE_Q[grade];
-  // Ease update (standard SM-2), clamped so it never collapses below 1.3.
-  const ease = Math.max(MIN_EASE, prev.ease + (0.1 - (5 - q) * (0.08 + (5 - q) * 0.02)));
+/** The interval (days) a grade would set, for the rating-button previews. */
+export function projectInterval(card: ReviewCard, grade: ReviewGrade, now: number, uid?: string): number {
+  return computeReview(card, grade, now, getTargetRetention(uid)).intervalDays;
+}
 
-  if (grade === 'again') {
-    return { ease, intervalDays: 1, reps: 0, lapses: prev.lapses + 1 };
+// ─── target-retention setting (per uid) ─────────────────────
+
+const CFG_PREFIX = 'pt:reviewcfg:';
+
+/** The student's desired recall probability at review time (0.80–0.97). Higher
+ *  = more frequent reviews, stronger recall; lower = fewer reviews. */
+export function getTargetRetention(uid?: string): number {
+  try {
+    const v = Number(localStorage.getItem(CFG_PREFIX + (uid || 'anon')));
+    return v >= 0.8 && v <= 0.97 ? v : DEFAULT_RETENTION;
+  } catch {
+    return DEFAULT_RETENTION;
   }
-  const reps = prev.reps + 1;
-  let intervalDays: number;
-  if (reps === 1) intervalDays = grade === 'easy' ? 2 : 1;
-  else if (reps === 2) intervalDays = grade === 'easy' ? 6 : 4;
-  else intervalDays = Math.round(prev.intervalDays * ease * (grade === 'hard' ? 0.7 : 1));
-  // Never let a passed card stall on the same day.
-  intervalDays = Math.max(1, intervalDays);
-  return { ease, intervalDays, reps, lapses: prev.lapses };
+}
+
+export function setTargetRetention(uid: string | undefined, retention: number): void {
+  try {
+    localStorage.setItem(CFG_PREFIX + (uid || 'anon'), String(Math.min(0.97, Math.max(0.8, retention))));
+  } catch {
+    /* private mode — degrade silently */
+  }
 }
 
 // ─── persistence ────────────────────────────────────────────
@@ -129,7 +152,6 @@ export function addCard(
     deck[k] = {
       ...id,
       topicId,
-      ease: 2.5,
       intervalDays: 0,
       dueTs: now,
       reps: 0,
@@ -160,11 +182,15 @@ export function gradeCard(
   const k = reviewKey(id);
   const card = deck[k];
   if (!card) return loadDeck(uid);
-  const next = schedule({ ease: card.ease, intervalDays: card.intervalDays, reps: card.reps, lapses: card.lapses }, grade);
+  const review = computeReview(card, grade, now, getTargetRetention(uid));
   deck[k] = {
     ...card,
-    ...next,
-    dueTs: now + next.intervalDays * DAY,
+    stability: review.stability,
+    difficulty: review.difficulty,
+    intervalDays: review.intervalDays,
+    dueTs: now + review.intervalDays * DAY,
+    reps: grade === 'again' ? 0 : card.reps + 1,
+    lapses: card.lapses + (grade === 'again' ? 1 : 0),
     lastTs: now,
   };
   writeDeck(uid, deck);

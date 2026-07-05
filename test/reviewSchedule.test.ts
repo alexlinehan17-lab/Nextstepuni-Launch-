@@ -2,54 +2,88 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * Guards the Paper Trail spaced-recall scheduler (feature A2). The SM-2 core is
- * pure, so we can pin its behaviour: failing resets the streak and brings the
- * card back within a day; passing grows the interval; ease never collapses.
+ * Guards the Paper Trail FSRS scheduler (feature E1). We pin the qualitative
+ * behaviour the student relies on rather than exact weights: recall grows the
+ * interval, a lapse collapses it, Easy ≥ Good ≥ Hard, difficulty stays in range,
+ * retrievability decays with time, and a lower target retention spaces further.
  */
 import { describe, it, expect } from 'vitest';
-import { schedule, type Sm2State } from '../components/PaperTrail/reviewStore';
+import {
+  fsrsInit,
+  fsrsNext,
+  intervalFor,
+  retrievability,
+  DEFAULT_RETENTION,
+  type FsrsGrade,
+} from '../components/PaperTrail/fsrs';
 
-const START: Sm2State = { ease: 2.5, intervalDays: 0, reps: 0, lapses: 0 };
-
-describe('Paper Trail — SM-2 spaced-recall scheduler', () => {
-  it('a fresh card graded "good" comes back in a day, then grows', () => {
-    const a = schedule(START, 'good');
-    expect(a.reps).toBe(1);
-    expect(a.intervalDays).toBe(1);
-    const b = schedule(a, 'good');
-    expect(b.reps).toBe(2);
-    expect(b.intervalDays).toBe(4);
-    const c = schedule(b, 'good');
-    expect(c.reps).toBe(3);
-    expect(c.intervalDays).toBeGreaterThan(b.intervalDays); // interval * ease
+describe('Paper Trail — FSRS scheduler', () => {
+  it('init: Easy ≥ Good ≥ Hard first intervals, all ≥ 1 day', () => {
+    const hard = fsrsInit(2).intervalDays;
+    const good = fsrsInit(3).intervalDays;
+    const easy = fsrsInit(4).intervalDays;
+    expect(easy).toBeGreaterThanOrEqual(good);
+    expect(good).toBeGreaterThanOrEqual(hard);
+    expect(hard).toBeGreaterThanOrEqual(1);
   });
 
-  it('"again" resets the streak, schedules a same-day retry, and counts a lapse', () => {
-    const grown = schedule(schedule(schedule(START, 'good'), 'good'), 'good');
-    const lapsed = schedule(grown, 'again');
-    expect(lapsed.reps).toBe(0);
-    expect(lapsed.intervalDays).toBe(1);
-    expect(lapsed.lapses).toBe(grown.lapses + 1);
+  it('recall grows stability and interval across spaced reviews', () => {
+    let s = fsrsInit(3); // Good
+    const first = s.intervalDays;
+    // Review each time right at the scheduled interval, always "Good".
+    s = fsrsNext(s, 3, first, DEFAULT_RETENTION);
+    const second = s.intervalDays;
+    s = fsrsNext(s, 3, second, DEFAULT_RETENTION);
+    const third = s.intervalDays;
+    expect(second).toBeGreaterThan(first);
+    expect(third).toBeGreaterThan(second);
   });
 
-  it('ease is clamped and never falls below 1.3, even after repeated failures', () => {
-    let s = START;
-    for (let i = 0; i < 12; i++) s = schedule(s, 'again');
-    expect(s.ease).toBeGreaterThanOrEqual(1.3);
+  it('a lapse (Again) collapses the interval and drops stability', () => {
+    let s = fsrsInit(3);
+    s = fsrsNext(s, 3, s.intervalDays, DEFAULT_RETENTION);
+    const matureStability = s.stability;
+    const lapsed = fsrsNext(s, 1, s.intervalDays, DEFAULT_RETENTION);
+    expect(lapsed.stability).toBeLessThan(matureStability);
+    expect(lapsed.intervalDays).toBeLessThanOrEqual(s.intervalDays);
   });
 
-  it('"easy" advances faster than "good", and "hard" slower, on a mature card', () => {
-    const mature = schedule(schedule(schedule(START, 'good'), 'good'), 'good');
-    const easy = schedule(mature, 'easy');
-    const good = schedule(mature, 'good');
-    const hard = schedule(mature, 'hard');
-    expect(easy.intervalDays).toBeGreaterThanOrEqual(good.intervalDays);
-    expect(hard.intervalDays).toBeLessThan(good.intervalDays);
+  it('on a mature card, Easy ≥ Good ≥ Hard intervals', () => {
+    let s = fsrsInit(3);
+    s = fsrsNext(s, 3, s.intervalDays, DEFAULT_RETENTION);
+    const t = s.intervalDays;
+    const hard = fsrsNext(s, 2, t, DEFAULT_RETENTION).intervalDays;
+    const good = fsrsNext(s, 3, t, DEFAULT_RETENTION).intervalDays;
+    const easy = fsrsNext(s, 4, t, DEFAULT_RETENTION).intervalDays;
+    expect(easy).toBeGreaterThanOrEqual(good);
+    expect(good).toBeGreaterThanOrEqual(hard);
   });
 
-  it('every passed card advances by at least a day (never stalls same-day)', () => {
-    for (const g of ['hard', 'good', 'easy'] as const) {
-      expect(schedule(START, g).intervalDays).toBeGreaterThanOrEqual(1);
+  it('difficulty stays within [1,10] under repeated Again and repeated Easy', () => {
+    let hardest = fsrsInit(1);
+    for (let i = 0; i < 15; i++) hardest = fsrsNext(hardest, 1, 1, DEFAULT_RETENTION);
+    expect(hardest.difficulty).toBeGreaterThanOrEqual(1);
+    expect(hardest.difficulty).toBeLessThanOrEqual(10);
+    let easiest = fsrsInit(4);
+    for (let i = 0; i < 15; i++) easiest = fsrsNext(easiest, 4, easiest.intervalDays, DEFAULT_RETENTION);
+    expect(easiest.difficulty).toBeGreaterThanOrEqual(1);
+    expect(easiest.difficulty).toBeLessThanOrEqual(10);
+  });
+
+  it('retrievability decays: R(0)=1 and R(stability)≈0.9', () => {
+    expect(retrievability(0, 10)).toBeCloseTo(1, 5);
+    expect(retrievability(10, 10)).toBeCloseTo(0.9, 2);
+    expect(retrievability(40, 10)).toBeLessThan(retrievability(10, 10));
+  });
+
+  it('a lower target retention schedules further out', () => {
+    const s = 20;
+    expect(intervalFor(s, 0.85)).toBeGreaterThan(intervalFor(s, 0.95));
+  });
+
+  it('every grade yields at least a 1-day interval', () => {
+    for (const g of [1, 2, 3, 4] as FsrsGrade[]) {
+      expect(fsrsInit(g).intervalDays).toBeGreaterThanOrEqual(1);
     }
   });
 });

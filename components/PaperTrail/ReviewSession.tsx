@@ -15,9 +15,11 @@ import {
   addCard,
   dueCards,
   gradeCard,
+  getTargetRetention,
   loadDeck,
+  projectInterval,
   removeCard,
-  schedule,
+  setTargetRetention,
   type ReviewCard,
   type ReviewGrade,
 } from './reviewStore';
@@ -77,6 +79,7 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
   const [deckSize, setDeckSize] = useState(() => loadDeck(uid).length);
   const [managing, setManaging] = useState(false);
   const [deckVer, setDeckVer] = useState(0); // bump to re-read the deck list
+  const [retention, setRetentionState] = useState(() => getTargetRetention(uid));
   const reduceMotion = useReducedMotion();
 
   const card = queue[pos];
@@ -84,9 +87,9 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
   const projected = useMemo(() => {
     if (!card) return {} as Record<ReviewGrade, number>;
     const out = {} as Record<ReviewGrade, number>;
-    for (const { g } of GRADES) out[g] = schedule(card, g).intervalDays;
+    for (const { g } of GRADES) out[g] = projectInterval(card, g, now, uid);
     return out;
-  }, [card]);
+  }, [card, now, uid]);
 
   const rate = (g: ReviewGrade) => {
     if (!card) return;
@@ -171,6 +174,27 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
         <p className="text-[13px] mb-4" style={{ color: '#7a7068' }}>
           {deck.length} card{deck.length === 1 ? '' : 's'} · {deck.filter(c => c.dueTs <= now).length} due today
         </p>
+
+        {/* Recall strength (FSRS target retention). */}
+        <div className="rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3.5 py-3 mb-4">
+          <div className="flex items-center justify-between mb-2">
+            <span className="text-[12.5px] font-semibold" style={{ color: INK }}>Recall strength</span>
+            <span className="text-[11px]" style={{ color: '#9e9186' }}>how sure before a card returns</span>
+          </div>
+          <div className="flex items-center gap-1 p-1 rounded-lg bg-zinc-100 dark:bg-zinc-800/50" role="group" aria-label="Recall strength">
+            {([['Relaxed', 0.85], ['Balanced', 0.9], ['Strong', 0.95]] as const).map(([label, r]) => (
+              <button
+                key={label}
+                aria-pressed={Math.abs(retention - r) < 0.001}
+                onClick={() => { setTargetRetention(uid, r); setRetentionState(r); }}
+                className={`flex-1 py-1.5 rounded-md text-[12px] font-semibold transition-all ${Math.abs(retention - r) < 0.001 ? 'bg-white dark:bg-zinc-800 shadow-sm' : ''}`}
+                style={{ color: Math.abs(retention - r) < 0.001 ? '#F26B1F' : '#7a7068' }}
+              >
+                {label}<span className="ml-1 text-[10px] opacity-70 tabular-nums">{Math.round(r * 100)}%</span>
+              </button>
+            ))}
+          </div>
+        </div>
         {deck.length === 0 ? (
           <p className="text-[13.5px] rounded-2xl px-4 py-4" style={{ backgroundColor: '#E8EFF5', color: '#27506E' }}>
             Your deck is empty. Add questions from Revise by topic to build it.
