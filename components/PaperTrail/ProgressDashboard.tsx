@@ -14,6 +14,7 @@ import { ArrowLeft, ArrowRight, Award, Download, Flame, Repeat, Target, Trending
 import { computeProgress } from './progressStats';
 import { masteredCount } from './topicMastery';
 import { downloadReport } from './progressReport';
+import GuardianConsent from './GuardianConsent';
 import { siblingsFor, topicLabel, type TopicSibling } from './topics';
 import { type GapKind } from './attemptStore';
 
@@ -183,6 +184,17 @@ const ProgressDashboard: React.FC<Props> = ({ uid, now, subjectLabel, onDrill, o
               )}
             </section>
           )}
+
+          {/* Opt-in weekly guardian summary (E10) — gated; renders null until live. */}
+          <GuardianConsent
+            uid={uid}
+            preview={{
+              weekMinutes: 0,
+              cardsReviewed: p.totalMarks,
+              currentStreak: p.streak.current,
+              focusTopic: p.weakestTopics[0] ? topicLabel(p.weakestTopics[0].subtopicId) : undefined,
+            }}
+          />
         </>
       )}
     </div>
