@@ -61,14 +61,18 @@ describe('Paper Trail — daily review session', () => {
   });
 
   test('once caught up, it points at the weakest topic', () => {
-    // A weak self-mark on a real tagged question → computeProgress finds a topic.
+    // A weak self-mark on a real tagged question → computeProgress finds a topic
+    // (which also tops the daily set up with that topic's questions).
     const p = PAPER_TOPIC_TAGS[0];
     const q = p.q[0];
     setMark(`u1|${p.subjectId}|${p.year}|${p.level}|${p.lang}|${p.fileid}`, q.n, { score: 2, max: 20, ts: NOW });
-    // A due card so grading it lands us in the caught-up state (not the empty one).
     addCard('u1', { subjectId: 'business', year: 2022, level: 'higher', lang: 'ev', fileid: 'f1', n: '1' }, undefined, NOW);
     render(<ReviewSession uid="u1" now={NOW} subjectLabel={label} onOpenQuestion={noop} onBack={noop} />);
-    fireEvent.click(screen.getByRole('button', { name: /^Good/ }));
+    // Grade the whole of today's set (due card + weakest-topic top-up).
+    let guard = 0;
+    while (screen.queryByRole('button', { name: /^Good/ }) && guard++ < 60) {
+      fireEvent.click(screen.getByRole('button', { name: /^Good/ }));
+    }
     expect(screen.getByText(/Drill your weakest topic/i)).toBeInTheDocument();
   });
 

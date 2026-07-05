@@ -27,7 +27,8 @@ import { siblingsFor, topicLabel, topicsForPaper, type TopicSibling } from './to
 import { allMarks } from './attemptStore';
 import { computeProgress } from './progressStats';
 import { recordActivity } from './streakStore';
-import { ArrowRight } from 'lucide-react';
+import { topUpDaily } from './dailySet';
+import { ArrowRight, Check } from 'lucide-react';
 import { AnimatePresence, MotionDiv, useReducedMotion } from '../Motion';
 import { type PaperLang, type PaperLevel } from '../../types/paperTrail';
 
@@ -71,15 +72,20 @@ interface Props {
 }
 
 const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion, onBack }) => {
-  // Snapshot the due queue once, at mount — grading reschedules cards out of the
-  // due set, so a live query would shrink under us. `again` re-queues in-session.
-  const [queue, setQueue] = useState<ReviewCard[]>(() => dueCards(uid, now));
+  // Snapshot the due queue once, at mount — after topping the daily set up to ~10
+  // from the weakest topics. Grading reschedules cards out of the due set, so a
+  // live query would shrink under us; `again` re-queues in-session.
+  const [queue, setQueue] = useState<ReviewCard[]>(() => {
+    topUpDaily(uid, now);
+    return dueCards(uid, now);
+  });
   const [pos, setPos] = useState(0);
   const [done, setDone] = useState(0);
   const [deckSize, setDeckSize] = useState(() => loadDeck(uid).length);
   const [managing, setManaging] = useState(false);
   const [deckVer, setDeckVer] = useState(0); // bump to re-read the deck list
   const [retention, setRetentionState] = useState(() => getTargetRetention(uid));
+  const [flash, setFlash] = useState(false); // restrained correct-recall micro-celebration
   const reduceMotion = useReducedMotion();
 
   const card = queue[pos];
@@ -96,6 +102,11 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
     gradeCard(uid, card, g, now);
     recordActivity(uid, now, 1); // feeds the practice streak + daily goal
     setDone(d => d + 1);
+    // Restrained micro-celebration on genuine recall (Good/Easy), never on a miss.
+    if (g === 'good' || g === 'easy') {
+      setFlash(true);
+      setTimeout(() => setFlash(false), 550);
+    }
     // A failed card comes back before the session ends.
     if (g === 'again') setQueue(q => [...q, card]);
     setPos(p => p + 1);
@@ -306,6 +317,23 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
 
   return (
     <div className="w-full max-w-xl mx-auto pb-12">
+      {/* Correct-recall micro-celebration — subtle, brief, never on a miss. */}
+      <AnimatePresence>
+        {flash && !reduceMotion && (
+          <MotionDiv
+            key="recall-flash"
+            initial={{ opacity: 0, scale: 0.6 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 1.1 }}
+            transition={{ duration: 0.22, ease: 'easeOut' }}
+            className="pointer-events-none fixed inset-0 z-[120] flex items-center justify-center"
+          >
+            <span className="w-16 h-16 rounded-full flex items-center justify-center" style={{ backgroundColor: '#E8F2EC', border: '2px solid #3A8D5F' }}>
+              <Check size={30} style={{ color: '#3A8D5F' }} />
+            </span>
+          </MotionDiv>
+        )}
+      </AnimatePresence>
       {header}
       {/* Progress */}
       <div className="flex items-center justify-between mb-4">
