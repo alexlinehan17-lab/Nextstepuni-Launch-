@@ -26,6 +26,7 @@ import { allMarks } from './attemptStore';
 import { computeProgress } from './progressStats';
 import { recordActivity } from './streakStore';
 import { ArrowRight } from 'lucide-react';
+import { AnimatePresence, MotionDiv } from '../Motion';
 import { type PaperLang, type PaperLevel } from '../../types/paperTrail';
 
 const INK = '#1a1a1a';
@@ -250,25 +251,34 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
         <div className="h-full rounded-full transition-all" style={{ width: `${(done / total) * 100}%`, backgroundColor: ACCENT }} />
       </div>
 
-      {/* Card */}
-      <div className="rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1a1a1a] dark:shadow-[4px_4px_0_0_#3f3f46] px-5 py-6 mb-5">
-        <p className="text-[10.5px] font-bold uppercase tracking-[0.12em] mb-2" style={{ color: '#9e9186' }}>
-          {subjectLabel(card.subjectId)}{topic ? ` · ${topic}` : ''}
-        </p>
-        <p className="text-[19px] font-semibold leading-snug mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>
-          {card.year} · {LVL[card.level] ?? card.level} · Question {card.n}
-        </p>
-        <p className="text-[13.5px] leading-relaxed mt-3" style={{ color: '#5a5550' }}>
-          Try to recall how you’d earn full marks on this question — the structure of the answer, the key points, the method. Then check yourself against the marking scheme.
-        </p>
-        <button
-          onClick={() => onOpenQuestion(asSibling(card))}
-          className="inline-flex items-center gap-1.5 mt-4 text-[13px] font-semibold"
-          style={{ color: ACCENT }}
+      {/* Card — animates in/out as the student rates and the next card arrives. */}
+      <AnimatePresence mode="wait">
+        <MotionDiv
+          key={`${card.subjectId}-${card.year}-${card.level}-${card.lang}-${card.fileid}-${card.n}-${done}`}
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -10 }}
+          transition={{ duration: 0.2, ease: 'easeOut' }}
+          className="rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1a1a1a] dark:shadow-[4px_4px_0_0_#3f3f46] px-5 py-6 mb-5"
         >
-          Open question + marking scheme <ExternalLink size={14} />
-        </button>
-      </div>
+          <p className="text-[10.5px] font-bold uppercase tracking-[0.12em] mb-2" style={{ color: '#9e9186' }}>
+            {subjectLabel(card.subjectId)}{topic ? ` · ${topic}` : ''}
+          </p>
+          <p className="text-[19px] font-semibold leading-snug mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>
+            {card.year} · {LVL[card.level] ?? card.level} · Question {card.n}
+          </p>
+          <p className="text-[13.5px] leading-relaxed mt-3" style={{ color: '#5a5550' }}>
+            Try to recall how you’d earn full marks on this question — the structure of the answer, the key points, the method. Then check yourself against the marking scheme.
+          </p>
+          <button
+            onClick={() => onOpenQuestion(asSibling(card))}
+            className="inline-flex items-center gap-1.5 mt-4 text-[13px] font-semibold"
+            style={{ color: ACCENT }}
+          >
+            Open question + marking scheme <ExternalLink size={14} />
+          </button>
+        </MotionDiv>
+      </AnimatePresence>
 
       {/* Rating */}
       <p className="text-[12px] mb-2 text-center" style={{ color: '#7a7068' }}>How well did you recall it?</p>

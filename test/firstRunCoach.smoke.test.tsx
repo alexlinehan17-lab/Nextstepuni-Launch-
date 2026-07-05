@@ -6,7 +6,7 @@
  * "taking shape" state as steps tick off, retirement once the loop is running,
  * and dismissal.
  */
-import { describe, test, expect, beforeEach, vi } from 'vitest';
+import { describe, test, expect, beforeEach } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
 import FirstRunCoach from '@/components/PaperTrail/FirstRunCoach';
 
