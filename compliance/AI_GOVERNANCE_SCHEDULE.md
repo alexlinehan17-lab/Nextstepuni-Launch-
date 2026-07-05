@@ -249,6 +249,38 @@ The Processor anticipates that Year 2 may introduce LLM-backed features such as 
 
 **Reviewer note**: this section is forward-looking only. Until Gemini is wired into the build, there is no obligation arising from it.
 
+### 6.1 Scaffolded (NOT active): AI mark-scheme feedback
+
+**Source**: `data/aiMarking.ts`, `components/PaperTrail/AiMarkingPanel.tsx` (feature E11).
+
+The Processor has added a **typed, inert scaffold** for the answer-feedback
+capability described above so the user flow can be designed and reviewed *before*
+any model is involved. The following statements are verifiable in source:
+
+- **No LLM SDK is added.** `package.json` / `package-lock.json` remain free of any
+  model SDK — the headline finding in Section 1 is unchanged.
+- **No model is called and no data leaves the platform.** `requestAnswerMarking()`
+  **throws unconditionally**; there is no client-side inference and no network
+  call. `test/aiMarking.test.ts` asserts this.
+- **The feature is gated off.** `AI_MARKING_LIVE = false`, so `AiMarkingPanel`
+  renders nothing; students continue to self-mark against the real scheme (the
+  shipped, non-AI path).
+- **The real implementation will be a governed server endpoint**, not a
+  client-side call — grounded strictly in the official SEC marking scheme (never
+  invents scheme points), with the refusal policy, safety-classifier check,
+  Guidance-Counsellor-auditable logging, rate/cost limits, EEA routing and
+  parental-consent re-confirmation mandated by Section 6.
+
+**Design intent (for the eventual EU AI Act assessment).** Marking a minor's
+answer and returning per-mark feedback that informs study decisions is squarely
+in Annex III(3)(b) territory ("evaluate learning outcomes") and should be treated
+as **high-risk** unless legal counsel concludes otherwise. It must not be
+activated until the full Section 6 checklist is satisfied and signed off.
+
+**Activation gate**: (1) governance sign-off against Section 6; (2) governed
+endpoint deployed with scheme-grounding + logging; (3) flip `AI_MARKING_LIVE`;
+(4) wire `AiMarkingPanel` into the answer-reveal; (5) pilot before rollout.
+
 ---
 
 ## 7. AI Feature Inventory — single-page summary
@@ -260,6 +292,7 @@ The Processor anticipates that Year 2 may introduce LLM-backed features such as 
 | Smart "what next" recommendation | hooks/useRecommendation.ts | No | None — rule-based | Client-side | None | Out of scope | Active |
 | Reflection quality scoring | components/ReflectionModal.tsx | No | None — heuristic | Client-side | None | Out of scope | Active |
 | Gemini-backed features | n/a | n/a | n/a | n/a | n/a | High-risk if reactivated; full review required first | **Not implemented. Documentation drift in README/CLAUDE.md corrected 2026-04-29; historical leaked-in-bundle config remediated 2026-04-06 in commit `063d574`. Audit: `compliance/GEMINI_AUDIT.md`.** |
+| AI mark-scheme feedback (scaffold) | data/aiMarking.ts | Would be, once live | None yet — no SDK, no model call | n/a (request throws) | None | High-risk (Annex III(3)(b)) once live; full §6 review required first | **Inert scaffold only. `AI_MARKING_LIVE=false`; no SDK; `requestAnswerMarking` throws. See §6.1.** |
 | Any third-party LLM | n/a | n/a | n/a | n/a | n/a | n/a | Not implemented |
 | Analytics / behavioural inference | n/a | n/a | n/a | n/a | n/a | n/a | Not implemented |
 
