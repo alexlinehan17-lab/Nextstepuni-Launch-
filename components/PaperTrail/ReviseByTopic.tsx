@@ -14,11 +14,10 @@
 import React, { useMemo, useState } from 'react';
 import { ArrowLeft, ChevronRight, Layers, Plus, Check, Download } from 'lucide-react';
 import SubjectTilePicker from '../shared/SubjectTilePicker';
-import { siblingsFor, taggedYearsForSubject, topicLabel, topicsForPaper, topicsForSubject, type SubjectTopic, type TopicSibling } from './topics';
-import { allMarks } from './attemptStore';
+import { siblingsFor, taggedYearsForSubject, topicLabel, topicsForSubject, type SubjectTopic, type TopicSibling } from './topics';
 import { addCard, hasCard, removeCard } from './reviewStore';
+import { masteryForSubject, type TopicMastery } from './topicMastery';
 import { downloadPack } from './revisionPack';
-import { type PaperLang, type PaperLevel } from '../../types/paperTrail';
 
 const INK = '#1a1a1a';
 const ACCENT = '#F26B1F';
@@ -48,23 +47,13 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
     setRevVer(v => v + 1);
   };
 
-  // Per-topic average self-mark % for the chosen subject (weakness overlay).
-  const weakByTopic = useMemo(() => {
-    const m = new Map<string, { sum: number; n: number }>();
-    if (!subjectId) return m;
-    for (const mk of allMarks(uid)) {
-      if (mk.subjectId !== subjectId) continue;
-      const tags = topicsForPaper(mk.subjectId, mk.year, mk.level as PaperLevel, mk.lang as PaperLang, mk.fileid);
-      const t = tags?.q.find(q => q.n === mk.n);
-      if (!t) continue;
-      const pct = mk.max ? (mk.score / mk.max) * 100 : mk.score;
-      const cur = m.get(t.primary) ?? { sum: 0, n: 0 };
-      cur.sum += pct;
-      cur.n += 1;
-      m.set(t.primary, cur);
-    }
+  // Per-topic mastery for the chosen subject (accuracy + FSRS retention).
+  const masteryMap = useMemo(() => {
+    void revVer; // recompute after adding cards changes retention signals
+    const m = new Map<string, TopicMastery>();
+    if (subjectId) for (const t of masteryForSubject(uid, subjectId)) m.set(t.subtopicId, t);
     return m;
-  }, [subjectId, uid]);
+  }, [subjectId, uid, revVer]);
 
   const baseTopics: SubjectTopic[] = useMemo(() => (subjectId ? topicsForSubject(subjectId) : []), [subjectId]);
   const totalYears = useMemo(() => (subjectId ? taggedYearsForSubject(subjectId) : 0), [subjectId]);
@@ -170,8 +159,8 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
         </div>
         <div className="space-y-1.5">
           {topics.map(t => {
-            const w = weakByTopic.get(t.subtopicId);
-            const avg = w && w.n ? Math.round(w.sum / w.n) : null;
+            const m = masteryMap.get(t.subtopicId);
+            const masteryColor = m ? (m.mastery >= 70 ? '#3A8D5F' : '#F26B1F') : null;
             const highYield = isHighYield(t);
             return (
               <button
@@ -192,9 +181,13 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
                     {t.count} question{t.count === 1 ? '' : 's'} · appeared in {t.years} of {totalYears} year{totalYears === 1 ? '' : 's'}
                   </span>
                 </span>
-                {avg !== null && (
-                  <span className="shrink-0 text-[12px] font-bold tabular-nums px-2 py-0.5 rounded-full" style={{ backgroundColor: avg < 50 ? '#FDEEDF' : '#E8F2EC', color: avg < 50 ? '#8C3A0E' : '#1F5F3E' }}>
-                    you: {avg}%
+                {m && masteryColor && (
+                  <span className="shrink-0 w-16 text-right">
+                    <span className="block text-[11px] font-bold tabular-nums" style={{ color: masteryColor }}>{m.mastery}%</span>
+                    <span className="block mt-0.5 h-1.5 rounded-full overflow-hidden" style={{ backgroundColor: '#e0dbd4' }}>
+                      <span className="block h-full rounded-full" style={{ width: `${m.mastery}%`, backgroundColor: masteryColor }} />
+                    </span>
+                    <span className="block text-[9px] mt-0.5" style={{ color: '#9e9186' }}>mastery</span>
                   </span>
                 )}
                 <ChevronRight size={16} className="shrink-0" style={{ color: ACCENT }} />

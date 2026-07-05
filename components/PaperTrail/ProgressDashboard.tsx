@@ -10,8 +10,9 @@
  */
 
 import React, { useMemo } from 'react';
-import { ArrowLeft, ArrowRight, Download, Flame, Repeat, Target, TrendingDown } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Award, Download, Flame, Repeat, Target, TrendingDown } from 'lucide-react';
 import { computeProgress } from './progressStats';
+import { masteredCount } from './topicMastery';
 import { downloadReport } from './progressReport';
 import { siblingsFor, topicLabel, type TopicSibling } from './topics';
 import { type GapKind } from './attemptStore';
@@ -54,6 +55,7 @@ const Stat: React.FC<{ icon: React.ReactNode; value: string; label: string }> = 
 
 const ProgressDashboard: React.FC<Props> = ({ uid, now, subjectLabel, onDrill, onBack }) => {
   const p = useMemo(() => computeProgress(uid, now), [uid, now]);
+  const mastered = useMemo(() => masteredCount(uid), [uid, now]);
 
   const topGap = (Object.entries(p.gaps) as [GapKind, number][])
     .filter(([, c]) => c > 0)
@@ -106,6 +108,12 @@ const ProgressDashboard: React.FC<Props> = ({ uid, now, subjectLabel, onDrill, o
             <Stat icon={<TrendingDown size={14} />} value={`${p.papersPractised}`} label={`paper${p.papersPractised === 1 ? '' : 's'} practised`} />
             <Stat icon={<Repeat size={14} />} value={`${p.deck.due}`} label={`due · ${p.deck.total} in deck`} />
           </div>
+
+          {mastered > 0 && (
+            <p className="text-[13px] -mt-3 mb-6 flex items-center gap-1.5" style={{ color: SUCCESS }}>
+              <Award size={15} /> <b style={{ color: '#1F5F3E' }}>{mastered}</b>&nbsp;topic{mastered === 1 ? '' : 's'} taken to mastery so far — proven by accuracy and retention.
+            </p>
+          )}
 
           {/* Accuracy by subject */}
           {p.subjects.length > 0 && (
