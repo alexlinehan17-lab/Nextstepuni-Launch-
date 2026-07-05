@@ -18,7 +18,7 @@
  */
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { ArrowLeft, ChevronRight, Clock3, FileStack, Layers, Repeat, Search } from 'lucide-react';
+import { ArrowLeft, Clock3, FileStack, Layers, Repeat, Search } from 'lucide-react';
 import SubjectTilePicker from '../shared/SubjectTilePicker';
 import { baseName, displayName } from '../shared/subjectNames';
 import Viewer from './Viewer';
@@ -91,6 +91,32 @@ const SEARCH_ALIASES: Record<string, string[]> = {
 const paperLabel = (label: string) => label.replace(/\s*\([A-Z]{2}\)\s*$/, '').trim();
 
 const subjectById = new Map(PAPER_TRAIL_SUBJECTS.map(s => [s.id, s]));
+
+/** One tile in the home study launcher (Revise / Review / Mock set). Compact,
+ *  vertical, launcher-style — three read as a single row rather than three
+ *  stacked full-width cards. */
+const StudyTile: React.FC<{
+  icon: React.ReactNode;
+  label: string;
+  sub: string;
+  badge?: number;
+  dot?: boolean;
+  onClick: () => void;
+}> = ({ icon, label, sub, badge, dot, onClick }) => (
+  <button
+    onClick={onClick}
+    className="relative flex flex-col items-center gap-2 rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46] px-2 py-4 text-center transition-transform active:translate-y-0.5 hover:-translate-y-0.5"
+  >
+    <span className="w-11 h-11 rounded-xl flex items-center justify-center" style={{ backgroundColor: '#FDEEDF' }}>{icon}</span>
+    <span className="text-[13px] font-semibold leading-tight" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>{label}</span>
+    <span className="text-[10.5px] leading-tight" style={{ color: '#9e9186' }}>{sub}</span>
+    {badge != null && badge > 0 ? (
+      <span className="absolute top-2 right-2 min-w-[18px] h-[18px] px-1 rounded-full text-[10.5px] font-bold flex items-center justify-center tabular-nums" style={{ backgroundColor: '#F26B1F', color: '#fff' }}>{badge}</span>
+    ) : dot ? (
+      <span className="absolute top-2.5 right-2.5 w-2 h-2 rounded-full" style={{ backgroundColor: '#F26B1F' }} />
+    ) : null}
+  </button>
+);
 
 // Deep-link params are snapshotted at boot by utils/bootParams (this lazy
 // chunk loads long after NavigationContext rewrites the URL). Applied at most
@@ -704,16 +730,8 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     groups.lca.length > 0 &&
     (scope === 'all' || groups.mineIds.length === 0 || groups.lca.some(s => groups.mineIds.includes(s.id)));
   const review = deckStats(uid, Date.now());
-  const reviewSub =
-    review.due > 0
-      ? `${review.due} card${review.due === 1 ? '' : 's'} due today`
-      : review.total > 0
-        ? `All caught up · ${review.total} scheduled`
-        : 'Spaced practice — save questions to build your deck';
+  const reviewTileSub = review.due > 0 ? `${review.due} due` : review.total > 0 ? 'all caught up' : 'spaced recall';
   const activeMock = loadSet(uid);
-  const mockSub = activeMock
-    ? `Resume: ${activeMock.items.filter(i => i.done).length}/${activeMock.items.length} done · ${activeMock.label}`
-    : 'Assemble a custom set from real past questions';
 
   return (
     <div className="w-full max-w-xl mx-auto pb-12">
@@ -770,53 +788,12 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
           the progress dashboard when tapped. */}
       <StreakStrip uid={uid} now={Date.now()} onOpen={() => setView({ v: 'progress' })} />
 
-      {/* Revise-by-topic CTA — the flagship use of the topic tags. */}
-      <button
-        onClick={() => setView({ v: 'revise' })}
-        className="w-full flex items-center gap-3 rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] px-4 py-3.5 mb-5 text-left transition-transform active:translate-y-0.5 hover:-translate-y-0.5"
-      >
-        <span className="shrink-0 w-10 h-10 rounded-xl flex items-center justify-center" style={{ backgroundColor: '#FDEEDF' }}>
-          <Layers size={19} style={{ color: '#F26B1F' }} />
-        </span>
-        <span className="flex-1 min-w-0">
-          <span className="block text-[15px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Revise by topic</span>
-          <span className="block text-[12.5px]" style={{ color: '#7a7068' }}>Drill every past question on one topic, across every year</span>
-        </span>
-        <ChevronRight size={18} className="shrink-0" style={{ color: '#F26B1F' }} />
-      </button>
-
-      {/* Daily review CTA — spaced recall over saved past questions (A2). */}
-      <button
-        onClick={() => setView({ v: 'review' })}
-        className="w-full flex items-center gap-3 rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] px-4 py-3.5 mb-5 text-left transition-transform active:translate-y-0.5 hover:-translate-y-0.5"
-      >
-        <span className="shrink-0 w-10 h-10 rounded-xl flex items-center justify-center" style={{ backgroundColor: '#FDEEDF' }}>
-          <Repeat size={18} style={{ color: '#F26B1F' }} />
-        </span>
-        <span className="flex-1 min-w-0">
-          <span className="block text-[15px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Daily review</span>
-          <span className="block text-[12.5px]" style={{ color: '#7a7068' }}>{reviewSub}</span>
-        </span>
-        {review.due > 0 && (
-          <span className="shrink-0 text-[12px] font-bold tabular-nums px-2 py-0.5 rounded-full" style={{ backgroundColor: '#F26B1F', color: '#fff' }}>{review.due}</span>
-        )}
-        <ChevronRight size={18} className="shrink-0" style={{ color: '#F26B1F' }} />
-      </button>
-
-      {/* Mock-set builder CTA (B1). */}
-      <button
-        onClick={() => setView({ v: 'mock' })}
-        className="w-full flex items-center gap-3 rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] px-4 py-3.5 mb-5 text-left transition-transform active:translate-y-0.5 hover:-translate-y-0.5"
-      >
-        <span className="shrink-0 w-10 h-10 rounded-xl flex items-center justify-center" style={{ backgroundColor: '#FDEEDF' }}>
-          <FileStack size={18} style={{ color: '#F26B1F' }} />
-        </span>
-        <span className="flex-1 min-w-0">
-          <span className="block text-[15px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>{activeMock ? 'Your mock set' : 'Build a mock set'}</span>
-          <span className="block text-[12.5px] truncate" style={{ color: '#7a7068' }}>{mockSub}</span>
-        </span>
-        <ChevronRight size={18} className="shrink-0" style={{ color: '#F26B1F' }} />
-      </button>
+      {/* Study launcher — Revise / Review / Mock, one compact row (A1/A2/B1). */}
+      <div className="grid grid-cols-3 gap-2.5 mb-6">
+        <StudyTile icon={<Layers size={20} style={{ color: '#F26B1F' }} />} label="Revise" sub="by topic" onClick={() => setView({ v: 'revise' })} />
+        <StudyTile icon={<Repeat size={20} style={{ color: '#F26B1F' }} />} label="Review" sub={reviewTileSub} badge={review.due} onClick={() => setView({ v: 'review' })} />
+        <StudyTile icon={<FileStack size={20} style={{ color: '#F26B1F' }} />} label="Mock set" sub={activeMock ? 'resume' : 'timed set'} dot={!!activeMock} onClick={() => setView({ v: 'mock' })} />
+      </div>
 
       {/* Recents rail */}
       {recents.length > 0 && (
