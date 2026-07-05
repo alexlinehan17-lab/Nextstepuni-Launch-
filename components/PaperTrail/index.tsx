@@ -18,7 +18,7 @@
  */
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { ArrowLeft, Clock3, FileStack, Layers, Repeat, Search } from 'lucide-react';
+import { ArrowLeft, Clock3, FileStack, Layers, Layers3, Repeat, Search } from 'lucide-react';
 import SubjectTilePicker from '../shared/SubjectTilePicker';
 import { baseName, displayName } from '../shared/subjectNames';
 import Viewer from './Viewer';
@@ -33,9 +33,11 @@ import StreakStrip from './StreakStrip';
 import CountdownCard from './CountdownCard';
 import ProgressDashboard from './ProgressDashboard';
 import MockExamBuilder from './MockExamBuilder';
+import Flashcards from './Flashcards';
 import FirstRunCoach from './FirstRunCoach';
 import MilestoneCelebration from './MilestoneCelebration';
 import { deckStats } from './reviewStore';
+import { cardStats } from './flashcardStore';
 import { loadSet } from './mockSetStore';
 import { allMarks } from './attemptStore';
 import { pendingMilestones, acknowledgeMilestone, type Milestone } from './milestones';
@@ -134,6 +136,7 @@ type View =
   | { v: 'review' }
   | { v: 'progress' }
   | { v: 'mock' }
+  | { v: 'cards' }
   | { v: 'subject'; subjectId: string }
   | {
       v: 'viewer';
@@ -462,6 +465,11 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     );
   }
 
+  // ═══════════════════════ FLASHCARDS ═══════════════════════
+  if (view.v === 'cards') {
+    return <Flashcards uid={uid} now={Date.now()} onBack={() => setView({ v: 'home' })} />;
+  }
+
   // ═══════════════════════ DAILY REVIEW (SRS) ═══════════════════════
   if (view.v === 'review') {
     return (
@@ -744,6 +752,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   const review = deckStats(uid, Date.now());
   const reviewTileSub = review.due > 0 ? `${review.due} due` : review.total > 0 ? 'all caught up' : 'spaced recall';
   const activeMock = loadSet(uid);
+  const cardsInfo = cardStats(uid, Date.now());
   // First-run coach: a live checklist that ticks as the student works the loop.
   const coachSteps = [
     { label: 'Open any paper beside its official marking scheme.', done: recents.length > 0 },
@@ -812,11 +821,12 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
       {/* First-run coach — a live checklist of the loop; retires once it's running. */}
       <FirstRunCoach uid={uid} steps={coachSteps} />
 
-      {/* Study launcher — Revise / Review / Mock, one compact row (A1/A2/B1). */}
-      <div className="grid grid-cols-3 gap-2.5 mb-6">
+      {/* Study launcher — Revise / Review / Mock / Cards (A1/A2/B1/E6). */}
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 mb-6">
         <StudyTile icon={<Layers size={20} style={{ color: '#F26B1F' }} />} label="Revise" sub="by topic" onClick={() => setView({ v: 'revise' })} />
         <StudyTile icon={<Repeat size={20} style={{ color: '#F26B1F' }} />} label="Review" sub={reviewTileSub} badge={review.due} onClick={() => setView({ v: 'review' })} />
         <StudyTile icon={<FileStack size={20} style={{ color: '#F26B1F' }} />} label="Mock set" sub={activeMock ? 'resume' : 'timed set'} dot={!!activeMock} onClick={() => setView({ v: 'mock' })} />
+        <StudyTile icon={<Layers3 size={20} style={{ color: '#F26B1F' }} />} label="Cards" sub={cardsInfo.total ? `${cardsInfo.total} card${cardsInfo.total === 1 ? '' : 's'}` : 'make your own'} badge={cardsInfo.due} onClick={() => setView({ v: 'cards' })} />
       </div>
 
       {/* Recents rail */}
