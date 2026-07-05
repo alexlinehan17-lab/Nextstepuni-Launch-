@@ -34,9 +34,11 @@ import CountdownCard from './CountdownCard';
 import ProgressDashboard from './ProgressDashboard';
 import MockExamBuilder from './MockExamBuilder';
 import FirstRunCoach from './FirstRunCoach';
+import MilestoneCelebration from './MilestoneCelebration';
 import { deckStats } from './reviewStore';
 import { loadSet } from './mockSetStore';
 import { allMarks } from './attemptStore';
+import { pendingMilestones, acknowledgeMilestone, type Milestone } from './milestones';
 import { paperAnswersPath, paperStoragePath, paperUrl, prettyBytes } from './storage';
 import {
   FORMULAE_BOOKLET_LIVE,
@@ -171,6 +173,14 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   const [scope, setScope] = useState<'mine' | 'all'>('mine');
   const [query, setQuery] = useState('');
   const [gapNote, setGapNote] = useState<string | null>(null);
+  // Learning-milestone celebration — detected once at mount, shown one at a time.
+  const [milestone, setMilestone] = useState<Milestone | null>(() => pendingMilestones(uid, Date.now())[0] ?? null);
+  const dismissMilestone = useCallback(() => {
+    setMilestone(prev => {
+      if (prev) acknowledgeMilestone(uid, prev.id);
+      return pendingMilestones(uid, Date.now())[0] ?? null;
+    });
+  }, [uid]);
   const searchBoxRef = useRef<HTMLDivElement | null>(null);
 
   // ── deep link (?tool=paper-trail&subject=…&year=…), applied once per load ──
@@ -743,6 +753,9 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
 
   return (
     <div className="w-full max-w-xl mx-auto pb-12">
+      {milestone && (
+        <MilestoneCelebration milestone={milestone} dateIso={new Date(Date.now()).toISOString().slice(0, 10)} onClose={dismissMilestone} />
+      )}
       <p className="text-[15px] leading-relaxed mb-5" style={{ color: '#5a5550', fontFamily: "'DM Sans', sans-serif" }}>
         Pick a subject — every paper opens with its marking scheme one tap away,
         {junior ? ' for every Junior Cycle exam you can sit.' : ' for every exam year back to 2010.'}
