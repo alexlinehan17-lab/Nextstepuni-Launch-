@@ -9,7 +9,7 @@
  */
 
 import React from 'react';
-import { Flame, Check, ChevronRight } from 'lucide-react';
+import { Flame, Check, ChevronRight, Snowflake } from 'lucide-react';
 import { getStreak } from './streakStore';
 
 const ACCENT = '#F26B1F';
@@ -40,15 +40,26 @@ const StreakStrip: React.FC<Props> = ({ uid, now, onOpen }) => {
         <Flame size={19} style={{ color: ACCENT }} />
       </span>
       <span className="flex-1 min-w-0">
-        <span className="block text-[15px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>
-          {s.current > 0 ? `${s.current}-day streak` : 'Keep your streak going'}
+        <span className="flex items-center gap-2">
+          <span className="text-[15px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>
+            {s.current > 0 ? `${s.current}-day streak` : 'Keep your streak going'}
+          </span>
+          {s.freezes > 0 && (
+            <span className="inline-flex items-center gap-0.5 text-[10.5px] font-bold tabular-nums px-1.5 py-0.5 rounded-full" style={{ backgroundColor: '#E8EFF5', color: '#33658A' }} title="Streak freezes protect a missed day">
+              <Snowflake size={11} /> {s.freezes}
+            </span>
+          )}
         </span>
         <span className="block text-[12px]" style={{ color: '#7a7068' }}>
-          {s.current > 0
-            ? s.activeToday
-              ? `Longest: ${s.longest} day${s.longest === 1 ? '' : 's'}`
-              : 'Practise today to keep it alive'
-            : `Longest: ${s.longest} day${s.longest === 1 ? '' : 's'}`}
+          {s.protectedNow
+            ? 'A freeze is holding your streak — practise to pick it back up'
+            : s.current > 0
+              ? s.activeToday
+                ? `Longest: ${s.longest} day${s.longest === 1 ? '' : 's'}`
+                : s.freezes > 0
+                  ? 'Miss a day and a freeze has you covered'
+                  : 'Practise today to keep it going'
+              : `Longest: ${s.longest} day${s.longest === 1 ? '' : 's'}`}
         </span>
       </span>
       {/* Daily goal */}
