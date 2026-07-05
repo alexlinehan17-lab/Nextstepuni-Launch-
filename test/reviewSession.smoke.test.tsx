@@ -10,7 +10,7 @@
 import { describe, test, expect, beforeEach, vi } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
 import ReviewSession from '@/components/PaperTrail/ReviewSession';
-import { addCard } from '@/components/PaperTrail/reviewStore';
+import { addCard, gradeCard } from '@/components/PaperTrail/reviewStore';
 import { setMark } from '@/components/PaperTrail/attemptStore';
 import { PAPER_TOPIC_TAGS } from '@/data/paperTrail/topicTags';
 
@@ -36,6 +36,18 @@ describe('Paper Trail — daily review session', () => {
     // Grade it — the only due card leaves the due set, so we're caught up.
     fireEvent.click(screen.getByRole('button', { name: /^Good/ }));
     expect(screen.getByText(/Reviewed 1 card/i)).toBeInTheDocument();
+  });
+
+  test('caught up with future-due cards offers "Review ahead"', () => {
+    const id = { subjectId: 'business', year: 2022, level: 'higher' as const, lang: 'ev' as const, fileid: 'f1', n: '7' };
+    addCard('u1', id, undefined, NOW);
+    gradeCard('u1', id, 'good', NOW); // reschedules into the future → nothing due now
+    render(<ReviewSession uid="u1" now={NOW} subjectLabel={label} onOpenQuestion={noop} onBack={noop} />);
+    // No due cards → caught-up state with the review-ahead affordance.
+    const ahead = screen.getByRole('button', { name: /Review ahead/i });
+    expect(ahead).toBeInTheDocument();
+    fireEvent.click(ahead);
+    expect(screen.getByText(/Question 7/)).toBeInTheDocument();
   });
 
   test('the deck manager lists cards and removes them', () => {

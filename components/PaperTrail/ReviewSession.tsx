@@ -26,7 +26,7 @@ import { allMarks } from './attemptStore';
 import { computeProgress } from './progressStats';
 import { recordActivity } from './streakStore';
 import { ArrowRight } from 'lucide-react';
-import { AnimatePresence, MotionDiv } from '../Motion';
+import { AnimatePresence, MotionDiv, useReducedMotion } from '../Motion';
 import { type PaperLang, type PaperLevel } from '../../types/paperTrail';
 
 const INK = '#1a1a1a';
@@ -77,6 +77,7 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
   const [deckSize, setDeckSize] = useState(() => loadDeck(uid).length);
   const [managing, setManaging] = useState(false);
   const [deckVer, setDeckVer] = useState(0); // bump to re-read the deck list
+  const reduceMotion = useReducedMotion();
 
   const card = queue[pos];
 
@@ -95,6 +96,16 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
     // A failed card comes back before the session ends.
     if (g === 'again') setQueue(q => [...q, card]);
     setPos(p => p + 1);
+  };
+
+  // "Review ahead": when caught up, let a keen student work their whole deck
+  // early (soonest-due first). Grading still reschedules honestly from now.
+  const reviewAhead = () => {
+    const all = loadDeck(uid).sort((a, b) => a.dueTs - b.dueTs);
+    if (!all.length) return;
+    setQueue(all);
+    setPos(0);
+    setDone(0);
   };
 
   const seedFromWeak = () => {
@@ -214,10 +225,19 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
             Seed from my {weakCount} weak question{weakCount === 1 ? '' : 's'}
           </button>
         )}
+        {deckSize > 0 && (
+          <button
+            onClick={reviewAhead}
+            className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-[13.5px] font-semibold border-2 transition-transform active:translate-y-0.5"
+            style={{ borderColor: 'rgba(242,107,31,0.35)', color: ACCENT }}
+          >
+            Review ahead ({deckSize})
+          </button>
+        )}
         {weakest && (
           <button
             onClick={drillWeakest}
-            className="w-full flex items-center gap-3 rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3.5 py-3 mt-2 text-left transition-transform active:translate-y-0.5 hover:border-[#F26B1F]"
+            className="w-full flex items-center gap-3 rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3.5 py-3 mt-4 text-left transition-transform active:translate-y-0.5 hover:border-[#F26B1F]"
           >
             <span className="flex-1 min-w-0">
               <span className="block text-[10.5px] font-bold uppercase tracking-[0.1em]" style={{ color: '#9e9186' }}>Keep going</span>
@@ -255,10 +275,10 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
       <AnimatePresence mode="wait">
         <MotionDiv
           key={`${card.subjectId}-${card.year}-${card.level}-${card.lang}-${card.fileid}-${card.n}-${done}`}
-          initial={{ opacity: 0, y: 10 }}
+          initial={reduceMotion ? { opacity: 0 } : { opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -10 }}
-          transition={{ duration: 0.2, ease: 'easeOut' }}
+          exit={reduceMotion ? { opacity: 0 } : { opacity: 0, y: -10 }}
+          transition={{ duration: reduceMotion ? 0 : 0.2, ease: 'easeOut' }}
           className="rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1a1a1a] dark:shadow-[4px_4px_0_0_#3f3f46] px-5 py-6 mb-5"
         >
           <p className="text-[10.5px] font-bold uppercase tracking-[0.12em] mb-2" style={{ color: '#9e9186' }}>

@@ -8,9 +8,10 @@
  * declarations across the codebase.
  */
 
-import { motion, AnimatePresence as FramerAnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence as FramerAnimatePresence, useReducedMotion } from 'framer-motion';
 
 export const AnimatePresence = FramerAnimatePresence;
+export { useReducedMotion };
 export const MotionDiv = motion.div as any;
 export const MotionButton = motion.button as any;
 export const MotionSpan = motion.span as any;
