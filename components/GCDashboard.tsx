@@ -7,7 +7,7 @@ import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { type CourseData } from './Library';
 import { type SessionUser, getAvatarUrl, yearGroupToCurriculumLevel } from '../utils/authUtils';
-import { LogOut, LayoutDashboard, Users, BarChart3, PanelLeft, StickyNote, AlertTriangle, CalendarDays } from 'lucide-react';
+import { LogOut, LayoutDashboard, Users, BarChart3, PanelLeft, StickyNote, AlertTriangle, CalendarDays, ListChecks } from 'lucide-react';
 import app, { db } from '../firebase';
 import { collection, query, where, limit, getDocs, doc, getDoc, setDoc, documentId } from 'firebase/firestore';
 import { getFunctions, httpsCallable } from 'firebase/functions';
@@ -25,6 +25,7 @@ import { type DebriefEntry } from './StudyDebrief';
 import { GCOverview } from './gc/GCOverview';
 import { GCKeyEvents } from './gc/GCKeyEvents';
 import { GCStudentDetail } from './gc/GCStudentDetail';
+import GCHandInGrid from './gc/GCHandInGrid';
 import { generateAlerts, type DismissedAlert, type EarlyWarningAlert } from './gc/gcAlerts';
 import { useGCFlags } from '../hooks/useGCFlags';
 import { logError } from '../utils/logError';
@@ -161,6 +162,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
 
   const sidebarItems = [
     { id: 'gc-overview', label: 'Overview', icon: LayoutDashboard, active: activeNav === 'gc-overview' },
+    { id: 'gc-handin', label: 'Practice', icon: ListChecks, active: activeNav === 'gc-handin' },
     { id: 'gc-events', label: 'Key Dates', icon: CalendarDays, active: activeNav === 'gc-events' },
     { id: 'gc-analytics', label: 'Analytics', icon: BarChart3, active: activeNav === 'gc-analytics' },
     { id: 'gc-students', label: 'Students', icon: Users, active: activeNav === 'gc-students' },
@@ -409,6 +411,13 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
           <div className="p-6 max-w-4xl mx-auto w-full">
             <GCKeyEvents school={school} />
           </div>
+        ) : activeNav === 'gc-handin' ? (
+          <GCHandInGrid
+            students={studentData}
+            allCourses={allCourses}
+            school={school}
+            onSelectStudent={(uid) => setSelectedStudentUid(uid)}
+          />
         ) : (
           <GCOverview
             studentData={studentData}
