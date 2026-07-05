@@ -12,7 +12,7 @@ import { FileSearch,
     ArrowLeft,
     Lock, Compass, Target,
     Settings, CalendarDays, Calculator, GitBranch, Rocket,
-    Map, ScanSearch, Milestone, Waypoints, Highlighter, Users, Briefcase, Sunrise
+    Map, ScanSearch, Milestone, Waypoints, Highlighter, Users, Briefcase, Sunrise, Mic
 } from 'lucide-react';
 import { doc, setDoc, getDoc, increment } from 'firebase/firestore';
 import { db } from '../firebase';
@@ -41,6 +41,7 @@ const PaperTrail = lazy(() => import('./PaperTrail'));
 const HowTheyDidIt = lazy(() => import('./HowTheyDidIt'));
 const CareerPaths = lazy(() => import('./CareerPaths'));
 const YourPossibleLife = lazy(() => import('./YourPossibleLife'));
+const OralExamTrainer = lazy(() => import('./OralExamTrainer'));
 import { InnovationDataProvider } from '../contexts/InnovationDataContext';
 import { useTopicMastery } from '../hooks/useTopicMastery';
 import { getNotifications } from './gc/gcNotifications';
@@ -92,6 +93,7 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   'how-they-did-it':  { themeColor: '#0E7C6B', eyebrow: 'Mindset · Real stories', subtitle: 'Real people who started where you are — money tight, learning differently, new to the country, first in the family — and the actual moves they made.', showHeader: true },
   'career-paths':     { themeColor: '#0E7C6B', eyebrow: 'Understand · Career discovery', subtitle: 'Real careers — what they pay, the day-to-day, the skills, and the courses that lead there.', showHeader: true },
   'your-possible-life': { themeColor: '#2E6E8E', eyebrow: 'Understand · Your future', subtitle: 'See the life your effort now could open up — and the bridge from your grades today to get there.', showHeader: true },
+  'oral-trainer':    { themeColor: '#4C8C5E', eyebrow: 'Technique · Speaking exam', subtitle: 'The one exam no app prepares you for — the oral. Rehearse it out loud, record yourself, and know exactly where you stand on every part.', showHeader: true },
 };
 
 interface InnovationZoneProps {
@@ -568,6 +570,15 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             component: <PaperTrail uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} studentLevels={subjectProfile?.subjects.map(s => ({ name: s.subjectName, level: s.level }))} studentCycle={curriculumLevel === 'junior' ? 'junior-cycle' : 'leaving-cert'} />,
         },
         {
+            id: 'oral-trainer', title: 'Irish Oral Trainer', description: 'Rehearse the Irish oral out loud, record yourself, and track your readiness on every part.', icon: Mic, needsProfile: false,
+            curriculum: 'senior' as const,
+            tag: 'Speaking exam', accentHex: '#4C8C5E', gridClass: 'md:col-span-2',
+            iconBg: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-700 dark:text-emerald-300',
+            accentBarColor: 'bg-emerald-500', tagBg: 'bg-emerald-100 dark:bg-emerald-900/30', tagText: 'text-emerald-700 dark:text-emerald-400',
+            hoverBorder: 'hover:border-emerald-400/50 dark:hover:border-emerald-500/40',
+            component: <OralExamTrainer uid={user?.uid} />,
+        },
+        {
             id: 'command-word-reflex', title: 'Command-Word Reflex', description: 'Spot the command word in real questions — and dodge the trap.', icon: Highlighter, needsProfile: false,
             // 'both': has Junior Cycle AND Leaving Cert content (cycle-grouped picker), so visible to JC and senior users.
             curriculum: 'both' as const,
@@ -622,6 +633,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         'catch-up-lane': 'plan',
         'paper-trail': 'understand',
         'command-word-reflex': 'understand',
+        'oral-trainer': 'understand',
         'how-they-did-it': 'understand',
         'career-paths': 'understand',
         'future-finder-revamped': 'understand',

@@ -15,7 +15,7 @@
  *   - IZ active-tool ToolHeader: size=108
  */
 import React from 'react';
-import { type LucideIcon } from 'lucide-react';
+import { type LucideIcon, Mic } from 'lucide-react';
 
 export type ToolIconKey =
   | 'journey'
@@ -34,6 +34,7 @@ export type ToolIconKey =
   | 'career-paths'
   | 'future-finder-revamped'
   | 'your-possible-life'
+  | 'oral-trainer'
   | 'paper-trail';
 
 interface ToolIconConfig {
@@ -148,6 +149,13 @@ const TOOLS: Record<ToolIconKey, ToolIconConfig> = {
     blob: '#BCD3E0',
     iconPath: '/assets/tools/your-possible-life.png',
     blobPath: 'M 6 24 Q -2 52 8 78 Q 24 98 52 94 Q 86 90 94 62 Q 100 30 84 10 Q 60 -4 32 4 Q 12 12 6 24 Z',
+    iconScale: 1.0,
+  },
+  'oral-trainer': {
+    blob: '#BFDCC4',
+    blobPath: 'M 6 24 Q 0 52 10 80 Q 26 98 54 94 Q 88 90 96 60 Q 100 28 82 8 Q 56 -4 30 6 Q 12 14 6 24 Z',
+    icon: Mic,
+    iconColor: '#3A6B47',
     iconScale: 1.0,
   },
 };
