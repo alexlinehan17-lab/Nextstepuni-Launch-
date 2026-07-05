@@ -2,18 +2,20 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * Paper Trail — first-run coach (onboarding). A single, dismissible strip that
- * explains the study loop to a brand-new student in three honest steps. Shown
- * only when there is zero activity (no self-marks, no review deck, no streak, no
- * recents) and not yet dismissed — so it never clutters a returning student's
- * home. Describes real features only; no promises.
+ * Paper Trail — first-run coach (onboarding). A dismissible card that walks a new
+ * student through the study loop as a LIVE checklist: each step ticks itself off
+ * as the student actually does it (opens a paper → marks themselves → starts a
+ * spaced-review deck). The heading warms up once they're underway, and the whole
+ * card retires the moment all three are done — so it never clutters a returning
+ * student's home. Describes real actions only; no promises.
  */
 
 import React, { useState } from 'react';
-import { X } from 'lucide-react';
+import { X, Check } from 'lucide-react';
 
 const INK = '#1a1a1a';
 const ACCENT = '#F26B1F';
+const SUCCESS = '#3A8D5F';
 
 const DISMISS_KEY = (uid?: string) => `pt:coachDismissed:${uid || 'anon'}`;
 
@@ -25,21 +27,24 @@ const isDismissed = (uid?: string): boolean => {
   }
 };
 
-const STEPS = [
-  'Open any paper beside its official marking scheme.',
-  'Mark yourself against it — tag where you lost the marks.',
-  'We surface your weak topics, schedule spaced review, and count down to your exam.',
-];
+export interface CoachStep {
+  label: string;
+  done: boolean;
+}
 
 interface Props {
   uid?: string;
-  /** True once the student has practised anything — hides the coach for good. */
-  hasActivity: boolean;
+  steps: CoachStep[];
 }
 
-const FirstRunCoach: React.FC<Props> = ({ uid, hasActivity }) => {
+const FirstRunCoach: React.FC<Props> = ({ uid, steps }) => {
   const [dismissed, setDismissed] = useState(() => isDismissed(uid));
-  if (hasActivity || dismissed) return null;
+  const doneCount = steps.filter(s => s.done).length;
+  // Retire once the loop is running (all steps done) or the student dismisses it.
+  if (dismissed || doneCount === steps.length) return null;
+
+  const firstPending = steps.findIndex(s => !s.done);
+  const started = doneCount > 0;
 
   const dismiss = () => {
     try {
@@ -60,15 +65,39 @@ const FirstRunCoach: React.FC<Props> = ({ uid, hasActivity }) => {
       >
         <X size={15} />
       </button>
-      <p className="text-[10.5px] font-bold uppercase tracking-[0.12em] mb-0.5" style={{ color: '#9e9186' }}>New here?</p>
-      <p className="text-[15px] font-semibold mb-3" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>How Paper Trail builds your revision</p>
+      <div className="flex items-center gap-2 mb-0.5">
+        <p className="text-[10.5px] font-bold uppercase tracking-[0.12em]" style={{ color: '#9e9186' }}>{started ? 'Getting started' : 'New here?'}</p>
+        <span className="text-[10.5px] font-bold tabular-nums" style={{ color: ACCENT }}>{doneCount}/{steps.length}</span>
+      </div>
+      <p className="text-[15px] font-semibold mb-3" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>
+        {started ? 'Your revision is taking shape' : 'How Paper Trail builds your revision'}
+      </p>
       <ol className="space-y-2">
-        {STEPS.map((s, i) => (
-          <li key={i} className="flex items-start gap-2.5">
-            <span className="shrink-0 mt-0.5 w-5 h-5 rounded-full flex items-center justify-center text-[11px] font-bold text-white" style={{ backgroundColor: ACCENT, fontFamily: "'Source Serif 4', serif" }}>{i + 1}</span>
-            <span className="text-[13px] leading-snug" style={{ color: '#5a5550' }}>{s}</span>
-          </li>
-        ))}
+        {steps.map((s, i) => {
+          const isNext = i === firstPending;
+          return (
+            <li key={i} className="flex items-start gap-2.5">
+              <span
+                className="shrink-0 mt-0.5 w-5 h-5 rounded-full flex items-center justify-center text-[11px] font-bold"
+                style={
+                  s.done
+                    ? { backgroundColor: SUCCESS, color: '#fff', fontFamily: "'Source Serif 4', serif" }
+                    : isNext
+                      ? { backgroundColor: ACCENT, color: '#fff', fontFamily: "'Source Serif 4', serif" }
+                      : { backgroundColor: '#e0dbd4', color: '#9e9186', fontFamily: "'Source Serif 4', serif" }
+                }
+              >
+                {s.done ? <Check size={12} /> : i + 1}
+              </span>
+              <span
+                className="text-[13px] leading-snug"
+                style={{ color: s.done ? '#9e9186' : isNext ? '#3a3530' : '#7a7068', textDecoration: s.done ? 'line-through' : 'none', fontWeight: isNext ? 600 : 400 }}
+              >
+                {s.label}
+              </span>
+            </li>
+          );
+        })}
       </ol>
     </div>
   );

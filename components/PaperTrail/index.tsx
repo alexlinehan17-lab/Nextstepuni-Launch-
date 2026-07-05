@@ -36,7 +36,6 @@ import MockExamBuilder from './MockExamBuilder';
 import FirstRunCoach from './FirstRunCoach';
 import { deckStats } from './reviewStore';
 import { loadSet } from './mockSetStore';
-import { getStreak } from './streakStore';
 import { allMarks } from './attemptStore';
 import { paperAnswersPath, paperStoragePath, paperUrl, prettyBytes } from './storage';
 import {
@@ -735,13 +734,12 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   const review = deckStats(uid, Date.now());
   const reviewTileSub = review.due > 0 ? `${review.due} due` : review.total > 0 ? 'all caught up' : 'spaced recall';
   const activeMock = loadSet(uid);
-  // First-run coach shows only for a truly new student (nothing practised yet).
-  const hasActivity =
-    recents.length > 0 ||
-    review.total > 0 ||
-    !!activeMock ||
-    getStreak(uid, Date.now()).longest > 0 ||
-    allMarks(uid).length > 0;
+  // First-run coach: a live checklist that ticks as the student works the loop.
+  const coachSteps = [
+    { label: 'Open any paper beside its official marking scheme.', done: recents.length > 0 },
+    { label: 'Mark yourself against it — tag where you lost the marks.', done: allMarks(uid).length > 0 },
+    { label: 'Save a question to spaced review — we resurface it on schedule.', done: review.total > 0 },
+  ];
 
   return (
     <div className="w-full max-w-xl mx-auto pb-12">
@@ -798,8 +796,8 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
           the progress dashboard when tapped. */}
       <StreakStrip uid={uid} now={Date.now()} onOpen={() => setView({ v: 'progress' })} />
 
-      {/* First-run coach — the study loop in three steps, for new students only. */}
-      <FirstRunCoach uid={uid} hasActivity={hasActivity} />
+      {/* First-run coach — a live checklist of the loop; retires once it's running. */}
+      <FirstRunCoach uid={uid} steps={coachSteps} />
 
       {/* Study launcher — Revise / Review / Mock, one compact row (A1/A2/B1). */}
       <div className="grid grid-cols-3 gap-2.5 mb-6">
