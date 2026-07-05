@@ -26,6 +26,7 @@ import { GCOverview } from './gc/GCOverview';
 import { GCKeyEvents } from './gc/GCKeyEvents';
 import { GCStudentDetail } from './gc/GCStudentDetail';
 import GCHandInGrid from './gc/GCHandInGrid';
+import GCAssignPanel from './gc/GCAssignPanel';
 import { generateAlerts, type DismissedAlert, type EarlyWarningAlert } from './gc/gcAlerts';
 import { useGCFlags } from '../hooks/useGCFlags';
 import { logError } from '../utils/logError';
@@ -412,12 +413,15 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
             <GCKeyEvents school={school} />
           </div>
         ) : activeNav === 'gc-handin' ? (
-          <GCHandInGrid
-            students={studentData}
-            allCourses={allCourses}
-            school={school}
-            onSelectStudent={(uid) => setSelectedStudentUid(uid)}
-          />
+          <>
+            <GCAssignPanel school={school} gcName={gcName} />
+            <GCHandInGrid
+              students={studentData}
+              allCourses={allCourses}
+              school={school}
+              onSelectStudent={(uid) => setSelectedStudentUid(uid)}
+            />
+          </>
         ) : (
           <GCOverview
             studentData={studentData}
