@@ -510,15 +510,29 @@ one-year artefacts, and the edits that were made show the verification is a real
 than a rubber stamp — several genuine inaccuracies were caught and corrected against a second
 independent year's scheme.
 
-## Session inventory (2026-07-06) — every subject at 7–8 sessions
+## Session inventory (2026-07-06) — 15 sessions per subject
 
-The Examiner's Chair now carries **191 marking sessions across all 27 subjects, with every
-subject at 7–8 sessions** (none below 7). The expansion from ~4/subject was authored in three
-waves plus targeted additions. Every added session teaches a distinct, load-bearing marking
-rule grounded in a **verbatim line from the filed SEC/NCCA source**, with the page number
-recorded in the session's `cite` and the anchor phrase grep-confirmed in the scheme markdown
-before commit. Where an authoring pass could not ground a further distinct rule, it stopped and
-recorded the ceiling rather than inventing one — no rule or citation in this tool is fabricated.
+The Examiner's Chair now carries **402 marking sessions across all 27 subjects — 26 subjects at
+15 sessions, and Engineering at 12** (its honest ceiling: the further candidate rules were
+either duplicates of its "Any N" cap or could not be modelled without inventing marks, so it
+stopped rather than pad). The expansion ran ~4 → 7/8 → 15 in successive waves. Every added
+session teaches a distinct, load-bearing marking rule grounded in a **verbatim line from the
+filed SEC/NCCA source**, with the page number recorded in the session's `cite` and the anchor
+phrase grep-confirmed in the scheme markdown before commit. Where an authoring pass could not
+ground a further distinct rule, it stopped and recorded the ceiling rather than inventing one —
+no rule or citation in this tool is fabricated.
+
+**Citation audit (evidence of the safeguard working).** Every load-bearing quote is grep-checked
+against the filed scheme before its subject is committed — agent claims of "verified verbatim"
+are not taken at face value. During the 15-session push this caught a real defect: the Spanish
+authoring pass added eight grounded sessions but mis-attributed six of them to the 2025 scheme
+when their verbatim lines actually appear in the filed 2023/2024 schemes. The rules were genuine
+(the phrases were located in the 2023/2024 markdown at verified page markers); only the year
+labels were wrong. Spanish was held back from commit, the six citations were repointed to the
+correct year and page (SP8 → 2023 p.5; SP9/SP10 → 2024 p.9; SP11 → 2023 p.10–11; SP14 → 2024 p.8;
+SP15 → 2024 p.10), and the two genuinely-2025 cites were left untouched, before Spanish shipped.
+This is the discipline the accreditation review needs to see: a false-year citation was caught
+and corrected rather than published.
 
 Content-integrity constraints (grid keys 0-or-full over every criterion; scale ladders strictly
 increasing; unique session/takeaway/script ids; non-empty cites) are enforced on the whole
