@@ -467,9 +467,15 @@ stability and catch any drift. Results so far (each filed as
 | Mathematics | 2023 OL / 2025 FL | 2024 HL | Scale system, credit descriptors, work-of-merit and Full Credit −1 CONFIRMED (2024 HL presents Full Credit −1 via the annotation palette rather than prose — same rule). The unsupported-answer default is not stated *generally* in the 2024 HL scheme; the app cites it to the 2023 OL P2 scheme, which does state it generally — citation correct, no edit. |
 | Business | 2025 HL | 2024 HL | Conventions CONFIRMED stable (Name/Explain/Link, "no link without theory", separate links per section, "List" pays names only, per-step numeric marking, chart labels carry marks). SEC sets each ABQ/Section *grid* per-question per year, so 2025-specific mark splits don't recur verbatim. **Acted on:** the "Evaluate means judge" session claimed evaluation is the heaviest ABQ component at a fixed 3-of-7 in Part (B)(i) — true for 2025 but not 2024 (Evaluate was in Part (C), lighter). Reframed the session to the year-stable convention: the ABQ always carries an Evaluate task with its own separately-awarded judgement mark, exact weight/location set per year. |
 
-The Business pass produced the one content edit of this round — a reframing (not a factual
-correction) to keep a session robust across years, exactly the drift the second-year pass
-exists to catch. Remaining subjects are added to this table as their pass completes.
+| Physics | 2025 HL | 2023 HL | All 4 cited rules CONFIRMED — the general notes are word-for-word identical (granule ladder, −1 units, −1 slip, // mutually-exclusive methods). No edit. |
+| French | 2025 HL | 2024 HL | All 5 CONFIRMED verbatim/identical (two axes, "mere transcription" band, manipulation docking, hedging = 0, aural any-formulation + 50% wrong-language). No edit. |
+| Biology | 2023 HL (Deferred) | 2025 HL (main) | All 4 CONFIRMED verbatim (points notation, context rule, Section A surplus penalty, Sections B/C asterisk). Also corrected a stale count in the 2023 insights file: Sections A and C each choose from **7** questions (best 5 of 7 / best 4 of 7), not 6 — the app's Biology sessions don't reference the count, so no session edit. |
+
+Across the eight subjects verified so far (English, Maths, Business, Geography, Physics,
+French, Biology — plus the Maths cross-level pass), the load-bearing rules are stable year
+to year; the only content change required was the single Business reframing above. This is
+a strong stability signal for accreditation: the conventions the tool teaches are not
+one-year artefacts. Remaining subjects are added to this table as their pass completes.
 
 ## Pedagogical basis
 
