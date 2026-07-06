@@ -11,13 +11,26 @@ import { MATHS_CHAIR } from './maths';
 import { BIOLOGY_CHAIR } from './biology';
 import { GEOGRAPHY_CHAIR } from './geography';
 import { ENGLISH_CHAIR } from './english';
+import { IRISH_CHAIR } from './irish';
+import { FRENCH_CHAIR } from './french';
+import { CHEMISTRY_CHAIR } from './chemistry';
+import { PHYSICS_CHAIR } from './physics';
+import { HISTORY_CHAIR } from './history';
+import { ACCOUNTING_CHAIR } from './accounting';
 
+// Order: the highest-enrolment subjects first, then the rest alphabetically.
 export const CHAIR_SUBJECTS: ChairSubject[] = [
   ENGLISH_CHAIR,
   MATHS_CHAIR,
-  BUSINESS_CHAIR,
+  IRISH_CHAIR,
   BIOLOGY_CHAIR,
+  BUSINESS_CHAIR,
   GEOGRAPHY_CHAIR,
+  FRENCH_CHAIR,
+  HISTORY_CHAIR,
+  CHEMISTRY_CHAIR,
+  PHYSICS_CHAIR,
+  ACCOUNTING_CHAIR,
 ];
 
 export const allSessions = (): MarkingSession[] => CHAIR_SUBJECTS.flatMap(s => s.sessions);

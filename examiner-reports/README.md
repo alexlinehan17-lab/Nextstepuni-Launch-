@@ -31,6 +31,13 @@ For multi-year syntheses, the prefix is `<start-year>-<end-year>-` (e.g.
 | Geography | 2012 | Chief Examiner | Higher / Ordinary | `2012_Chief_Examiner_Report_LC_Geography.pdf` (examinations.ie archive) | PDF + MD + insights |
 | English | 2025 | Marking scheme | Higher | SEC `Leaving Certificate 2025 Marking Scheme — English, Higher Level` (mirrored PDF, educateplus.ie) | PDF + MD + insights |
 | English | 2013 | Chief Examiner | Higher / Ordinary | `Chief_Examiner_Report_English_2013.pdf` (examinations.ie, via Internet Archive) | PDF + MD + insights |
+| French | 2025 | Marking scheme | Higher | SEC `Leaving Certificate 2025 Marking Scheme — French, Higher Level` (mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| Physics | 2025 | Marking scheme | Higher | SEC `Leaving Certificate 2025 Marking Scheme — Physics, Higher Level` (mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| History | 2025 | Marking scheme | Higher | SEC `Leaving Certificate 2025 Marking Scheme — Higher Level History` (mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| Irish | 2025 | Marking scheme (written papers) | Higher | SEC `An Ardteistiméireacht 2025 — Scéim Mharcála, Ardleibhéal, Gaeilge` (mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| Accounting | 2024 | Marking scheme | Higher | SEC `Leaving Certificate 2024 Marking Scheme — Higher Level Accounting` (mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| Chemistry | 2024 | Marking scheme | Higher | SEC `Leaving Certificate 2024 Marking Scheme — Higher Level Chemistry` (`LC022ALP000EV`, mirrored PDF, exams.ie) | PDF + MD + insights |
+| Chemistry | 2013 | Chief Examiner | Higher / Ordinary | `Chief_Examiner_Report_Chemistry_2013.pdf` (examinations.ie, via Internet Archive) | PDF + MD + insights |
 
 _Last updated: 2026-07-06_
 

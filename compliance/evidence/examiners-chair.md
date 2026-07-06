@@ -37,6 +37,13 @@ every session, grid, scale and embodied-insight citation is non-empty.
 | MS-BIO-2023 | SEC LC Biology HL marking scheme 2023 (Deferred sitting) | `examiner-reports/biology/2023-marking-scheme.{pdf,md}` + `2023-insights.md` | SEC-published scheme; general conventions are the SEC standard framework (identical across sittings), only per-question answers are paper-specific. |
 | MS-GEO-2025 | SEC LC Geography HL marking scheme 2025 | `examiner-reports/geography/2025-marking-scheme.{pdf,md}` + `2025-insights.md` | SEC-published scheme; SRP system and rules quoted by page. |
 | CER-GEO-2012 | Chief Examiner's Report, Geography 2012 | `examiner-reports/geography/2012-chief-examiner.{pdf,md}` + `2012-insights.md` | SEC-published report (latest for Geography); behavioural findings cited by page. |
+| MS-IR-2025 | SEC LC Irish HL marking scheme 2025 (written papers) | `examiner-reports/irish/2025-marking-scheme.{pdf,md}` + `2025-insights.md` | SEC-published scheme; composition/comprehension rules quoted by page. Oral (Béaltriail) is a separate scheme, not covered. |
+| MS-FR-2025 | SEC LC French HL marking scheme 2025 | `examiner-reports/french/2025-marking-scheme.{pdf,md}` + `2025-insights.md` | SEC-published scheme; two-axis and comprehension rules quoted by page. |
+| MS-CHEM-2024 | SEC LC Chemistry HL marking scheme 2024 | `examiner-reports/chemistry/2024-marking-scheme.{pdf,md}` + `2024-insights.md` | SEC-published scheme; exact-term, Mr and // rules quoted by page. |
+| CER-CHEM-2013 | Chief Examiner's Report, Chemistry 2013 | `examiner-reports/chemistry/2013-chief-examiner.{pdf,md}` | SEC-published report (latest for Chemistry); behavioural findings cited by page. |
+| MS-PHY-2025 | SEC LC Physics HL marking scheme 2025 | `examiner-reports/physics/2025-marking-scheme.{pdf,md}` + `2025-insights.md` | SEC-published scheme; granule/unit/slip rules quoted by page. |
+| MS-HIS-2025 | SEC LC History HL marking scheme 2025 | `examiner-reports/history/2025-marking-scheme.{pdf,md}` + `2025-insights.md` | SEC-published scheme; CM/OE system and caps quoted by page. |
+| MS-ACC-2024 | SEC LC Accounting HL marking scheme 2024 | `examiner-reports/accounting/2024-marking-scheme.{pdf,md}` + `2024-insights.md` | SEC-published scheme; workmark, balancing and own-figure rules quoted by page. |
 
 **Levels.** Each session is tagged with the level whose scheme its rules are verified
 against. Sessions tagged `common` teach a marking convention the cited source states
@@ -246,6 +253,75 @@ caveat that details "are subject to change from one year to the next without not
 (MS-E-2025 p.2; MS-GEO-2025 p.2). The rules used here are structural conventions (PCLM,
 the SRP system, Overall Coherence) that are stable year to year; if a future scheme
 changes them, the affected sessions and this dossier are updated together.
+
+## Claim-by-claim record — Irish sessions (level: common — written-paper conventions, HL and OL)
+
+- **IR1 `ir-cumas-gaeilge`:** composition = Stíl 5 + Ionramháil 15 + Cumas Gaeilge 80;
+  language command is 80 of 100 marks, judged on range and accuracy (MS-IR-2025 p.13).
+  Scenario: strong ideas / weak Irish sits in the lower Cumas Gaeilge band.
+- **IR2 `ir-genre`:** Stíl marks genre discipline; wrong genre for the title → Stíl 0
+  (MS-IR-2025 p.14). Scenario: a speech title answered as an essay.
+- **IR3 `ir-own-words`:** comprehension Q6(b) is 12 marks and must be in the candidate's
+  own words; a verbatim lift scores 0 (MS-IR-2025 p.16).
+
+## Claim-by-claim record — French sessions (level: common — written-production conventions)
+
+- **FR1 `fr-two-axes`:** written production is marked on two independent, equally weighted
+  axes (Communication + Language) summed; "mere transcription … very poor treatment of
+  the stimulus" is the Bottom Communication descriptor (MS-FR-2025 p.15–16). Scenario:
+  flawless-but-transcribed French → Bottom Communication.
+- **FR2 `fr-manipulation`:** comprehension tags questions "manipulation required"; a raw
+  lift where manipulation is required is docked on the 5/4/3/2/1/0 ladder — «il a parlé»
+  = 4, «j'ai parlé» = 5 (MS-FR-2025 p.13).
+- **FR3 `fr-hedge`:** "If more than one answer offered = 0 Marks" (MS-FR-2025 p.6, p.12).
+
+## Claim-by-claim record — Chemistry sessions (level: common — general conventions, HL and OL)
+
+- **CH1 `chem-exact-term`:** exact-term demands enforced inline with "[do not accept …]";
+  "clear" for "colourless" is rejected (MS-CHEM-2024 p.6; the recurring error is in
+  CER-CHEM-2013 p.24).
+- **CH2 `chem-mr`:** an Mr arithmetic slip is only −1 if the atomic-mass addition is
+  shown; otherwise full Mr marks are lost (MS-CHEM-2024 p.3, point 7).
+- **CH3 `chem-solidus`:** "//" separates mutually exclusive methods; "a partial answer
+  from one side … may not be taken in conjunction with a partial answer from the other"
+  (MS-CHEM-2024 p.3, point 3). (Chemistry example figures — Mr of CO₂ = 44, "should be
+  46" for a different compound — are illustrative; the scheme rule, not a specific Mr, is
+  what is cited.)
+
+## Claim-by-claim record — Physics sessions (level: common — numerical-marking conventions, HL and OL)
+
+- **PHY1 `phy-granules`:** numerical answers are a ladder of independent granules
+  (formula / substitution / answer), each ~3 marks; the formula banks its granule alone
+  (MS-PHY-2025 p.6–8). Scenario arithmetic (512 × 0.65 = 332.8) verified.
+- **PHY2 `phy-unit`:** omitting/mis-writing units on a final answer = −1 (MS-PHY-2025 p.3,
+  instruction 6).
+- **PHY3 `phy-slip`:** each arithmetical slip = −1; downstream steps using the slipped
+  value still score (error carried forward) (MS-PHY-2025 p.3, instruction 8).
+
+## Claim-by-claim record — History sessions (level: higher — verified against the HL scheme)
+
+- **HIS1 `his-cm-oe`:** essays marked 60/40 — Cumulative Mark (content) + Overall
+  Evaluation (quality); OE rewards analysis, marshalled evidence, a conclusion; narrative
+  caps in lower OE bands (MS-HIS-2025 p.12, p.14).
+- **HIS2 `his-two-element`:** two-element titles carry "If only ONE, Max. CM = 50"
+  (MS-HIS-2025 p.15–18).
+- **HIS3 `his-dbq-compare`:** DBQ comparison "Answer referring to one document only = 5M
+  max" (MS-HIS-2025 p.8–9).
+
+## Claim-by-claim record — Accounting sessions (level: higher — verified against the HL scheme)
+
+- **AC1 `acc-workings`:** workmark system — each adjusted figure is awarded through its
+  numbered working (N-note); a bare wrong figure can't part-score, a shown working banks
+  each correct step (MS-ACC-2024 p.3, p.5). Scenario adjustments arithmetic verified.
+- **AC2 `acc-balance`:** the Balance Sheet's "Both totals correct *" is a discrete
+  losable mark, independent of the line figures (MS-ACC-2024 p.4, p.27).
+- **AC3 `acc-transfer`:** own-figure marking — an error is penalised once where it
+  happens; a correct transfer of the candidate's own (wrong) figure earns the transfer
+  marks; a non-transfer earns half (MS-ACC-2024 p.18, p.34).
+
+**Volatility note (all subjects):** each scheme is the finalised scheme for its stated
+year. The rules used are structural conventions stable year to year; if a future scheme
+changes one, the affected session and this dossier are updated together.
 
 ---
 
