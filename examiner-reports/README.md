@@ -53,6 +53,7 @@ For multi-year syntheses, the prefix is `<start-year>-<end-year>-` (e.g.
 | LCVP Link Modules | 2024 | Marking scheme (Written Paper) | Common (single level) | SEC `Leaving Certificate 2024 Marking Scheme — Link Modules, Written Paper, Common Level` (`LCVP CL.pdf`, mirrored PDF, educateplus.ie) | PDF + MD + insights |
 | Art | 2019 | Marking scheme (History & Appreciation of Art written paper; old pre-2022 spec) | Higher (common scheme) | SEC `Leaving Certificate 2019 Marking Scheme — Art, Higher Level` (mirrored PDF, educateplus.ie) | PDF + MD + insights |
 | Art | 2024 | Marking scheme (Visual Studies written examination; revised spec, first examined 2023/2024) | Higher | SEC `Leaving Certificate 2024 Marking Scheme — Higher Level — Art` (`2024-visual-studies-marking-scheme.pdf`, mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| Art | 2024 | Marking scheme (Visual Studies written examination; revised spec, first examined 2023/2024) | Ordinary | SEC `Leaving Certificate 2024 Marking Scheme — Ordinary Level — Art` (`2024-visual-studies-ol-marking-scheme.pdf`, mirrored PDF, educateplus.ie) | PDF + MD + insights |
 | Classical Studies | 2025 | Marking scheme | Higher | SEC `Leaving Certificate 2025 Marking Scheme — Classical Studies, Higher Level` (mirrored PDF, exams.ie) | PDF + MD + insights |
 | Italian | 2025 | Marking scheme | Higher | SEC `Leaving Certificate 2025 Marking Scheme — Higher Level Italian` (mirrored PDF, exams.ie) | PDF + MD + insights |
 | Maths | 2025 | Marking scheme | Foundation | SEC `Leaving Certificate 2025 Marking Scheme — Mathematics, Foundation Level` (`2025 LC Maths FL.pdf`, mirrored PDF, educateplus.ie) | PDF + MD + insights |
@@ -67,6 +68,7 @@ For multi-year syntheses, the prefix is `<start-year>-<end-year>-` (e.g.
 | Home Economics | 2025 | Marking scheme (written paper + Food Studies coursework) | Ordinary | SEC `Leaving Certificate 2025 Marking Scheme — Ordinary Level — Home Economics - Scientific and Social` (`2025 LC Home Economics OL.pdf` → `2025-ol-marking-scheme.pdf`, mirrored PDF, educateplus.ie) | PDF + MD + insights |
 | Economics | 2025 | Marking scheme | Ordinary | SEC `Leaving Certificate 2025 Marking Scheme — Economics, Ordinary Level` (`2025 LC Economics OL.pdf` → `2025-ol-marking-scheme.pdf`, mirrored PDF, educateplus.ie) | PDF + MD + insights |
 | Politics and Society | 2025 | Marking scheme | Ordinary | SEC `Leaving Certificate 2025 Marking Scheme — Politics and Society, Ordinary Level` (`2025 LC Politics and Society OL.pdf` → `2025-ol-marking-scheme.pdf`, mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| Classical Studies | 2025 | Marking scheme | Ordinary | SEC `Leaving Certificate 2025 Marking Scheme — Classical Studies, Ordinary Level` (`2025-ol-marking-scheme.pdf`, mirrored PDF, exams.ie) | PDF + MD + insights |
 
 _Last updated: 2026-07-06_
 

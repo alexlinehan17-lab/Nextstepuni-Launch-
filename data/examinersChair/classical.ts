@@ -17,6 +17,7 @@
 import { type ChairSubject, type GridSession, type ScaleSession } from './types';
 
 const MS = (p: string) => ({ label: `SEC Classical Studies HL marking scheme 2025, ${p}` });
+const MSOL = (p: string) => ({ label: `SEC Classical Studies OL marking scheme 2025, ${p}` });
 
 // ─────────────── CL1 · A unit needs all three parts ───────────────
 
@@ -187,15 +188,65 @@ const CL3: ScaleSession = {
   },
 };
 
+// ─────────────── CL4 · OL — Section A is the mark bank ───────────────
+
+const CL4: ScaleSession = {
+  mode: 'scale',
+  id: 'cl-ol-section-a',
+  subject: 'classical-studies',
+  level: 'ordinary',
+  title: 'At OL, the short answers are the marks',
+  cue: 'Exam strategy (OL)',
+  question: 'At Ordinary Level, Section A (the stimulus short-answer questions) is worth 300 marks and Section B (the essays) only 100 — the reverse of Higher, where the essays dominate. A candidate rushes the Section A short answers to leave lots of time for a long essay. Is that the right allocation?',
+  questionNote:
+    'Scenario authored for this exercise. At OL the mark split is inverted versus HL: Section A = 300, Section B = 100. Short-answer accuracy is where the marks are; the essays are worth far less.',
+  scale: {
+    name: 'OL time allocation',
+    levels: [
+      { id: 'wrong', label: 'Rush A, pour time into the essay', annotation: '✗', marks: 30 },
+      { id: 'right', label: 'Bank Section A carefully first', annotation: '✓', marks: 90 },
+    ],
+    notes: [
+      'OL Section A = 300 marks; Section B (essays) = 100. HL is the reverse (200/200, essays heavy).',
+      'The stimulus short-answers are the mark bank — accuracy and coverage there decide the grade.',
+      'Rushing Section A to write a long essay chases the smaller pot.',
+    ],
+    cite: MSOL('p.6, p.12 (Section A 300 / Section B 100)'),
+  },
+  scripts: [
+    {
+      id: 'cl4-a',
+      label: 'The strategy',
+      persona: 'Rushes A for a big essay',
+      work: ['Hurries through the Section A short answers.', 'Spends the saved time on one long Section B essay.'],
+      keyLevelId: 'wrong',
+      keyNote:
+        'Backwards for OL — Section A holds 300 of the 400 marks, so rushing it to write a longer essay chases the 100-mark pot at the expense of the 300-mark one. At Ordinary Level, give the stimulus short-answers your care and time first; the essay matters far less than it does at Higher. Spend your minutes where the marks are.',
+      embodies: {
+        behaviour: 'Under-invests in the 300-mark Section A to write a longer 100-mark essay — the wrong OL allocation.',
+        cite: MSOL('p.6'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-cl4',
+    rule: 'At OL, Section A holds most of the marks — spend your time there.',
+    detail:
+      'Ordinary Level Classical Studies inverts the HL split: Section A short-answers are 300 marks, the essays only 100. Give the stimulus questions your care and time; the essay is worth far less than at Higher.',
+    cite: MSOL('p.6'),
+  },
+};
+
 export const CLASSICAL_CHAIR: ChairSubject = {
   id: 'classical-studies',
   label: 'Classical Studies',
   tagline: 'Develop your units, answer both parts, argue not narrate.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [CL1, CL2, CL3],
+  sessions: [CL1, CL2, CL3, CL4],
   sources: [
     { label: 'SEC LC Classical Studies HL marking scheme 2025 (examiner-reports/classical-studies/2025-marking-scheme)' },
+    { label: 'SEC LC Classical Studies OL marking scheme 2025 (examiner-reports/classical-studies/2025-ol-marking-scheme)' },
   ],
   coverageNote:
-    'Verified against the 2025 Higher Level scheme. The unit-of-development system and Overall Quality bands also structure Ordinary Level; OL-specific worked questions are being added.',
+    'The unit-of-development and Overall Quality sessions apply at both levels (OL softens “develops” to “some development” and drops the top quality tier). The Ordinary session captures OL’s inverted mark split — Section A 300 / essays 100. Verified against the 2025 OL scheme.',
 };

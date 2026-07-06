@@ -30,7 +30,7 @@ const ART1: ScaleSession = {
   mode: 'scale',
   id: 'art-analysis',
   subject: 'art',
-  level: 'higher',
+  level: 'common',
   title: 'Analyse, don’t just recall',
   cue: 'Section B/C essay',
   question: 'The Subject Knowledge strand of a Section B/C answer is worth 20 marks, scored in Low/Moderate/High descriptor bands. A candidate recalls a large amount of accurate information about the artist and works — but never analyses or evaluates it. The High band demands “critical thinking to analyse and evaluate”. Which band applies?',
@@ -79,7 +79,7 @@ const ART2: ScaleSession = {
   mode: 'scale',
   id: 'art-examples',
   subject: 'art',
-  level: 'higher',
+  level: 'common',
   title: 'Name the actual works',
   cue: 'Section B/C essay',
   question: 'Relevant Examples is its own 10-mark strand. A candidate discusses “a famous painting by the artist” and “another well-known sculpture” without ever naming or clearly identifying specific works. How does the Relevant Examples strand score?',
@@ -128,7 +128,7 @@ const ART3: ScaleSession = {
   mode: 'scale',
   id: 'art-headings',
   subject: 'art',
-  level: 'higher',
+  level: 'common',
   title: 'Use the headings you’re given',
   cue: 'Section A',
   question: 'A Section A part (a) asks you to describe the illustrated work “using the given headings” — for example composition, perspective and colour. A candidate writes a fluent general description of the image but doesn’t address the named headings. How does that affect the mark?',
@@ -179,7 +179,8 @@ export const ART_CHAIR: ChairSubject = {
   sessions: [ART1, ART2, ART3],
   sources: [
     { label: 'SEC LC Art HL Visual Studies marking scheme 2024 (examiner-reports/art/2024-visual-studies-marking-scheme)' },
+    { label: 'SEC LC Art OL Visual Studies marking scheme 2024 (examiner-reports/art/2024-visual-studies-ol-marking-scheme)' },
   ],
   coverageNote:
-    'These sessions teach the CURRENT Visual Studies written-paper conventions (revised spec, first examined 2023/24) — descriptor-band marking, the four Section B/C strands, and the Section A given-headings structure — which apply at both Higher and Ordinary level. Verified against the 2024 Higher Level scheme; the pre-2022 “History & Appreciation” paper was marked differently.',
+    'These sessions teach the CURRENT Visual Studies written-paper conventions (revised spec, first examined 2023/24). The written-paper descriptor bands are word-for-word identical at Higher and Ordinary level — differentiation is by the question paper, not the scheme — so these sessions apply at both levels (verified by comparing the 2024 HL and OL schemes directly). At OL the stimuli are everyday visual culture with simpler observable headings. The pre-2022 “History & Appreciation” paper was marked differently.',
 };
