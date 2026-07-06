@@ -195,6 +195,35 @@ export function topMisses(state: ChairState, n = 8): MissTally[] {
     .slice(0, n);
 }
 
+// ── borderline detection: the genuinely contested marking calls ──
+
+/** A script is "borderline" when the examiner's own call is a mid-band decision
+ * — not a clean full/zero. For a scale script that means the key sits on a
+ * middle rung (neither top nor bottom); for a grid script it means the key
+ * splits the criteria (some earned, some withheld). These are the hard calls
+ * where marking skill actually lives. */
+export function isBorderlineScript(session: MarkingSession, script: GridScript | ScaleScript): boolean {
+  if (session.mode === 'scale') {
+    const levels = session.scale.levels;
+    const idx = levels.findIndex(l => l.id === (script as ScaleScript).keyLevelId);
+    return idx > 0 && idx < levels.length - 1;
+  }
+  let earned = false;
+  let withheld = false;
+  for (const attempt of (script as GridScript).attempts) {
+    for (const c of session.grid.perPoint) {
+      if ((attempt.key[c.id] ?? 0) > 0) earned = true;
+      else withheld = true;
+    }
+  }
+  return earned && withheld;
+}
+
+/** The contested scripts in a session (may be empty). */
+export function borderlineScripts(session: MarkingSession): (GridScript | ScaleScript)[] {
+  return (session.scripts as (GridScript | ScaleScript)[]).filter(s => isBorderlineScript(session, s));
+}
+
 // ── session results + persistence ──
 
 export interface SessionResult {

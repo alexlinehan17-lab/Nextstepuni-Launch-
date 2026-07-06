@@ -10,7 +10,9 @@ import {
   calibrationBand,
   completeSession,
   gridDecisionKey,
+  borderlineScripts,
   gridScriptMisses,
+  isBorderlineScript,
   loadChair,
   markCodexOnCards,
   mergeMisses,
@@ -226,6 +228,18 @@ describe('mismatch tracking', () => {
     const top = topMisses(state);
     expect(top[0].key).toBe('business::Link'); // most frequent first
     expect(top).toHaveLength(2);
+  });
+
+  it('detects borderline scripts (split grid / middle scale rung)', () => {
+    // grid: key splits criteria (name earned, link withheld) → borderline
+    expect(isBorderlineScript(miniGrid, miniGrid.scripts[0])).toBe(true);
+    // scale: middle rung → borderline; top/bottom → not
+    expect(isBorderlineScript(miniScale, miniScale.scripts[0])).toBe(true);
+    const topScript = { ...miniScale.scripts[0], keyLevelId: 'hi' };
+    const botScript = { ...miniScale.scripts[0], keyLevelId: 'lo' };
+    expect(isBorderlineScript(miniScale, topScript)).toBe(false);
+    expect(isBorderlineScript(miniScale, botScript)).toBe(false);
+    expect(borderlineScripts(miniGrid)).toHaveLength(1);
   });
 });
 

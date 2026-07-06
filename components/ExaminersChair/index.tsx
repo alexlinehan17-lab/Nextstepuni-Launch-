@@ -33,6 +33,7 @@ import {
   completeSession,
   gridDecisionKey,
   gridScriptMisses,
+  isBorderlineScript,
   loadChair,
   markCodexOnCards,
   mergeMisses,
@@ -237,6 +238,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
   const [scores, setScores] = useState<ScriptScore[]>([]);
   const [sessionMisses, setSessionMisses] = useState<MissDelta[]>([]);
   const [ownText, setOwnText] = useState('');
+  const [borderlineOnly, setBorderlineOnly] = useState(false);
   const [codexAdded, setCodexAdded] = useState(false);
 
   const subject = useMemo(() => CHAIR_SUBJECTS.find(s => s.id === subjectId) ?? null, [subjectId]);
@@ -265,6 +267,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
     setScores([]);
     setSessionMisses([]);
     setOwnText('');
+    setBorderlineOnly(false);
     setCodexAdded(false);
     setView('session');
   };
@@ -285,7 +288,9 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
   // ───────────────────────────── session flow ─────────────────────────────
 
   if (view === 'session' && session) {
-    const scripts = session.scripts;
+    const allScriptsU = session.scripts as (GridSession['scripts'][number] | ScaleSession['scripts'][number])[];
+    const borderlineCount = allScriptsU.filter(s => isBorderlineScript(session, s)).length;
+    const scripts = (borderlineOnly ? allScriptsU.filter(s => isBorderlineScript(session, s)) : session.scripts) as typeof session.scripts;
     const script = scripts[Math.min(scriptIdx, scripts.length - 1)];
 
     const commitScript = () => {
@@ -310,7 +315,10 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
         setStage('mark');
       } else {
         const now = Date.now();
-        persist(mergeMisses(completeSession(state, session, scores, now), sessionMisses, now));
+        // A borderline drill is practice — record the blind spots it surfaces,
+        // but don't overwrite the full session's result or auto-earn the codex.
+        const base = borderlineOnly ? state : completeSession(state, session, scores, now);
+        persist(mergeMisses(base, sessionMisses, now));
         setStage('summary');
       }
     };
@@ -370,12 +378,21 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
             <SchemeExtract session={session} />
 
             <button
-              onClick={() => setStage('mark')}
+              onClick={() => { setBorderlineOnly(false); setScriptIdx(0); setStage('mark'); }}
               className="w-full rounded-full py-3 text-[15px] font-semibold text-white transition-transform active:translate-y-0.5"
               style={{ backgroundColor: ACCENT, borderBottom: '3px solid #B54D14', boxShadow: '0 4px 0 #B54D14' }}
             >
-              Start marking · {scripts.length} scripts
+              Start marking · {session.scripts.length} scripts
             </button>
+            {borderlineCount > 0 && borderlineCount < session.scripts.length && (
+              <button
+                onClick={() => { setBorderlineOnly(true); setScriptIdx(0); setDecisions({}); setChosenLevel(null); setStage('mark'); }}
+                className="w-full mt-2.5 rounded-full py-2.5 text-[13.5px] font-semibold transition-transform active:translate-y-0.5 inline-flex items-center justify-center gap-1.5"
+                style={{ backgroundColor: '#fff', color: PEN, border: `2px solid rgba(196,68,60,0.4)` }}
+              >
+                Borderline drill · {borderlineCount} hard {borderlineCount === 1 ? 'call' : 'calls'} only
+              </button>
+            )}
             <button
               onClick={() => { setDecisions({}); setChosenLevel(null); setStage('own-write'); }}
               className="w-full mt-2.5 rounded-full py-2.5 text-[13.5px] font-semibold transition-transform active:translate-y-0.5"
@@ -764,7 +781,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
             })()}
 
             <div className="rounded-xl px-4 py-3.5 mb-4" style={{ backgroundColor: '#E8F2EC', borderLeft: `3px solid ${SUCCESS}` }}>
-              <Small className="mb-1">Added to your codex</Small>
+              <Small className="mb-1">{borderlineOnly ? 'The rule behind these calls' : 'Added to your codex'}</Small>
               <p className="text-[15px] font-semibold" style={{ fontFamily: SERIF, color: INK }}>
                 {session.takeaway.rule}
               </p>
