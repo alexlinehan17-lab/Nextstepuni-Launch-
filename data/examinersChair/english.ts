@@ -20,6 +20,7 @@ import { type ChairSubject, type GridSession, type ScaleSession, type ScaleLevel
 
 const MS = (p: string) => ({ label: `SEC English HL marking scheme 2025, ${p}` });
 const CER = (p: string) => ({ label: `Chief Examiner's Report, English 2013, ${p}` });
+const MSOL = (p: string) => ({ label: `SEC English OL marking scheme 2025, ${p}` });
 
 // ───────────────── Eng1 · Purpose caps everything ─────────────────
 
@@ -320,16 +321,70 @@ const ENG5: ScaleSession = {
   },
 };
 
+// ───────────────── Eng6 · OL — Purpose & Coherence is 60% ─────────────────
+
+const ENG6: ScaleSession = {
+  mode: 'scale',
+  id: 'eng-ol-pc-split',
+  subject: 'english',
+  level: 'ordinary',
+  title: 'At OL, answering the task is 60%',
+  cue: 'Combined criteria (OL)',
+  question: 'On an Ordinary Level combined-criteria question, the marks split Purpose & Coherence = 60% and Language & Mechanics = 40%. A candidate writes in plain, simple English — nothing fancy — but genuinely answers the task, stays focused, and develops the point. Where can that land?',
+  questionNote:
+    'Scenario authored for this exercise. At OL, combined questions are marked in two blocks — P&C (60%) and L&M (40%) — so engaging and sustaining the task banks the majority even in plain language.',
+  scale: {
+    name: 'OL combined · P&C 60% / L&M 40%',
+    levels: [
+      { id: 'm40', label: '~40% (fancy language, off-task)', annotation: '40', marks: 40 },
+      { id: 'm70', label: '~70% (plain, but on-task & developed)', annotation: '70', marks: 70 },
+      { id: 'm90', label: '~90% (on-task + strong language)', annotation: '90', marks: 90 },
+    ],
+    notes: [
+      'OL combined questions split Purpose & Coherence 60% + Language & Mechanics 40%.',
+      'Answering the actual task, staying focused and developing it earns the 60% P&C block.',
+      'So plain, simple English that genuinely engages the task scores well — you don’t need fancy writing.',
+    ],
+    cite: MSOL('p.73–74 (combined P&C 60 / L&M 40 split)'),
+  },
+  scripts: [
+    {
+      id: 'eng6-a',
+      label: 'The answer',
+      persona: 'Plain English, on the task',
+      work: [
+        'Simple, unfussy language — no ambitious vocabulary.',
+        'But it answers exactly what was asked, stays focused, and develops the point.',
+      ],
+      keyLevelId: 'm70',
+      keyNote:
+        'It scores well — around 70% — because Purpose & Coherence is 60% of the mark, and this answer earns that block: it engages the task and sustains it. At OL you don’t need elaborate language to do well; you need to answer the question and develop it. Plain and on-task beats fancy and off-task every time.',
+      embodies: {
+        behaviour: 'Uses plain language but genuinely engages and sustains the task — banking the 60% P&C block.',
+        cite: MSOL('p.73'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-eng6',
+    rule: 'At OL, answering the task is 60% of the mark.',
+    detail:
+      'Ordinary Level combined questions split Purpose & Coherence (60%) and Language & Mechanics (40%). You don’t need fancy writing — engage the exact task, stay focused, and develop your points, and you bank the majority in plain English.',
+    cite: MSOL('p.73'),
+  },
+};
+
 export const ENGLISH_CHAIR: ChairSubject = {
   id: 'english',
   label: 'English',
   tagline: 'PCLM — why answering the question beats writing beautifully.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [ENG1, ENG2, ENG3, ENG4, ENG5],
+  sessions: [ENG1, ENG2, ENG3, ENG4, ENG5, ENG6],
   sources: [
     { label: 'SEC LC English HL marking scheme 2025 (examiner-reports/english/2025-marking-scheme)' },
+    { label: 'SEC LC English OL marking scheme 2025 (examiner-reports/english/2025-ol-marking-scheme)' },
     { label: 'Chief Examiner’s Report, English 2013 (examiner-reports/english/2013-chief-examiner)' },
   ],
   coverageNote:
-    'These sessions teach the PCLM criteria and the primacy-of-Purpose rule, which the scheme applies to every task on both papers at Higher and Ordinary level. Verified against the 2025 Higher Level scheme; level-specific worked examples are being added.',
+    'The PCLM sessions teach the criteria and primacy-of-Purpose rule the scheme applies to every task at both levels. The Ordinary session is verified against the 2025 OL scheme (grades O1–O8; combined questions split P&C 60% / L&M 40%). More OL-specific worked examples are being added.',
 };

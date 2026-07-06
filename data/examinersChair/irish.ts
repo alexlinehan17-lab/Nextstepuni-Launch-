@@ -18,6 +18,7 @@
 import { type ChairSubject, type ScaleSession, type ScaleLevel } from './types';
 
 const MS = (p: string) => ({ label: `SEC Irish HL marking scheme 2025, ${p}` });
+const MSOL = (p: string) => ({ label: `SEC Irish OL marking scheme 2025, ${p}` });
 
 // ─────────────── Ir1 · Language is the mark ───────────────
 
@@ -134,7 +135,7 @@ const IR3: ScaleSession = {
   mode: 'scale',
   id: 'ir-own-words',
   subject: 'irish',
-  level: 'common',
+  level: 'higher',
   title: 'In your own words',
   cue: 'Léamhthuiscint',
   question: 'A reading-comprehension question (worth 12 marks) explicitly requires the answer in the candidate’s own words. The relevant idea is clearly in the passage, and the candidate copies the sentence out word for word. What does it score?',
@@ -178,15 +179,65 @@ const IR3: ScaleSession = {
   },
 };
 
+// ─────────────── Ir4 · OL — reword the poem, or lose half ───────────────
+
+const IR4: ScaleSession = {
+  mode: 'scale',
+  id: 'ir-ol-poetry',
+  subject: 'irish',
+  level: 'ordinary',
+  title: 'Reword the poem, or lose half',
+  cue: 'Filíocht (OL)',
+  question: 'An Ordinary Level poetry question asks about an image or theme “i d’fhocail féin” (in your own words). The candidate answers correctly — but by quoting the verse lines verbatim. The scheme halves a verbatim answer. On a 5-mark part, what does it score?',
+  questionNote:
+    'Scenario authored for this exercise. At OL, comprehension answers are direct passage lifts (there is no “own words” gate there), but the poetry “i d’fhocail féin” parts halve a verbatim-lifted answer.',
+  scale: {
+    name: 'OL poetry · own words',
+    levels: [
+      { id: 'm2', label: '2 (verbatim, halved)', annotation: '2', marks: 2 },
+      { id: 'm5', label: '5 (reworded)', annotation: '5', marks: 5 },
+    ],
+    notes: [
+      'OL poetry “i d’fhocail féin” parts require the idea in your own words.',
+      'A verbatim-lifted verse line is halved — the scheme collapses it (e.g. to 2+2).',
+      'This is the opposite of OL comprehension, where lifting the passage is fine.',
+    ],
+    cite: MSOL('p.25–27 (poetry “i d’fhocail féin” halving)'),
+  },
+  scripts: [
+    {
+      id: 'ir4-a',
+      label: 'The answer',
+      persona: 'Quotes the verse',
+      work: ['Answers the image/theme correctly — but by copying the poem’s lines word for word.'],
+      keyLevelId: 'm2',
+      keyNote:
+        'Halved — the verbatim verse lines earn only 2 of 5, because this part wanted the idea in your own words. Note the split from comprehension: at OL you CAN copy the prose passage, but in poetry “i d’fhocail féin” you must reword. Put the poet’s idea into your own simple Irish.',
+      embodies: {
+        behaviour: 'Quotes verse lines verbatim on an OL “own words” poetry part — halved.',
+        cite: MSOL('p.25'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-ir4',
+    rule: 'At OL, copy the prose passage — but reword the poem.',
+    detail:
+      'Ordinary Level comprehension answers can lift the passage directly, but poetry “i d’fhocail féin” parts halve a verbatim answer. Know which is which: reword the poem’s idea in your own Irish; you can copy the prose.',
+    cite: MSOL('p.25'),
+  },
+};
+
 export const IRISH_CHAIR: ChairSubject = {
   id: 'irish',
   label: 'Irish',
   tagline: 'Where language accuracy, genre and “own words” win the marks.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [IR1, IR2, IR3],
+  sessions: [IR1, IR2, IR3, IR4],
   sources: [
     { label: 'SEC LC Irish HL marking scheme 2025 (examiner-reports/irish/2025-marking-scheme)' },
+    { label: 'SEC LC Irish OL marking scheme 2025 (examiner-reports/irish/2025-ol-marking-scheme)' },
   ],
   coverageNote:
-    'These sessions teach the written-paper marking conventions — the language-weighted composition, genre discipline and the “own words” rule — which apply at both Higher and Ordinary level (the oral is marked on a separate scheme). Verified against the 2025 Higher Level scheme; level-specific worked examples are being added.',
+    'The composition (language is ~80% of the mark) and genre sessions apply at both levels. The “own words” comprehension rule is Higher-specific (OL comprehension has no own-words gate); the Ordinary session covers OL poetry’s “i d’fhocail féin” halving. Verified against the 2025 HL and OL schemes; the oral is a separate scheme.',
 };
