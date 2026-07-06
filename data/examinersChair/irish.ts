@@ -228,16 +228,71 @@ const IR4: ScaleSession = {
   },
 };
 
+// ─────────────── Ir5 · Your Irish is marked in the aural ───────────────
+
+const CLUAS_GAEILGE: ScaleLevel[] = [
+  { id: 'm0', label: '0 (structure broken)', annotation: '0', marks: 0 },
+  { id: 'm2', label: '2 (minor slips)', annotation: '2', marks: 2 },
+  { id: 'm3', label: '3 (sound Irish)', annotation: '3', marks: 3 },
+];
+
+const IR5: ScaleSession = {
+  mode: 'scale',
+  id: 'ir-aural-gaeilge',
+  subject: 'irish',
+  level: 'common',
+  title: 'Your Irish counts in the aural',
+  cue: 'Cluastuiscint',
+  question: 'A candidate hears the Cluastuiscint clearly and gives the right information in every answer — but writes it in Irish riddled with major syntax errors (wrong copula, wrong verb tenses). The Cluastuiscint deducts 0 to 3 marks for the standard of Irish (caighdeán na Gaeilge). Where does that Irish mark land?',
+  questionNote:
+    'Scenario authored for this exercise. The 0–3 deduction for the standard of Irish across the Cluastuiscint is the real SEC rule (“Bainfear ó 0 go 3 ar chaighdeán na Gaeilge”): major syntax errors — the copula, verb tenses, prepositions — are penalised; spelling is not counted.',
+  scale: {
+    name: 'Cluastuiscint · caighdeán na Gaeilge (0–3)',
+    levels: CLUAS_GAEILGE,
+    notes: [
+      'The Cluastuiscint deducts 0 to 3 marks for the standard of your Irish — separate from the comprehension marks.',
+      'What’s penalised: major syntax errors that distort the structure — the copula, verb tenses, prepositions.',
+      'Spelling is not counted; but broken sentences are, even when the content is right.',
+    ],
+    cite: MS('p.3 (Cluastuiscint: “Bainfear ó 0 go 3 ar chaighdeán na Gaeilge”)'),
+  },
+  scripts: [
+    {
+      id: 'ir5-a',
+      label: 'The answers',
+      persona: 'Right content, broken Irish',
+      work: [
+        'Every answer has the correct information from the recording.',
+        'But the Irish is full of major syntax errors — the copula and verb tenses are wrong throughout.',
+      ],
+      keyLevelId: 'm0',
+      keyNote:
+        'The comprehension content earns its own marks — but the full 3-mark Gaeilge deduction applies, because the syntax is broken. Your Irish is marked even in a listening test. Write short, correct sentences: mind the copula, the tenses and the prepositions. Spelling itself won’t cost you here, so don’t let fear of it push you into garbled structures.',
+      embodies: {
+        behaviour: 'Answers the aural correctly but in structurally broken Irish — forfeiting the 0–3 standard-of-Irish marks.',
+        cite: MS('p.3'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-ir5',
+    rule: 'Your Irish is marked even in the aural.',
+    detail:
+      'The Cluastuiscint deducts up to 3 marks for the standard of your Irish. Right answers in broken Irish still lose those marks — write short, grammatically sound sentences (watch the copula, verb tenses and prepositions). Spelling itself isn’t counted, so don’t let it scare you into worse structures.',
+    cite: MS('p.3'),
+  },
+};
+
 export const IRISH_CHAIR: ChairSubject = {
   id: 'irish',
   label: 'Irish',
   tagline: 'Where language accuracy, genre and “own words” win the marks.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [IR1, IR2, IR3, IR4],
+  sessions: [IR1, IR2, IR3, IR4, IR5],
   sources: [
     { label: 'SEC LC Irish HL marking scheme 2025 (examiner-reports/irish/2025-marking-scheme)' },
     { label: 'SEC LC Irish OL marking scheme 2025 (examiner-reports/irish/2025-ol-marking-scheme)' },
   ],
   coverageNote:
-    'The composition (language is ~80% of the mark) and genre sessions apply at both levels. The “own words” comprehension rule is Higher-specific (OL comprehension has no own-words gate); the Ordinary session covers OL poetry’s “i d’fhocail féin” halving. Verified against the 2025 HL and OL schemes; the oral is a separate scheme.',
+    'The composition (language is ~80% of the mark), genre, and Cluastuiscint (aural) sessions apply at both levels — the aural session teaches the 0–3 standard-of-Irish deduction that applies even in the listening comprehension. The “own words” comprehension rule is Higher-specific (OL comprehension has no own-words gate); the Ordinary session covers OL poetry’s “i d’fhocail féin” halving. Verified against the 2025 HL and OL schemes; the oral is a separate scheme.',
 };
