@@ -34,6 +34,9 @@ import {
   completeSession,
   dailyDone,
   dailyIndex,
+  loadCohort,
+  submitToCohort,
+  topCohortMisses,
   gridDecisionKey,
   gridScriptMisses,
   isBorderlineScript,
@@ -232,7 +235,11 @@ const SchemeExtract: React.FC<{ session: MarkingSession }> = ({ session }) => {
 
 const ExaminersChair: React.FC<Props> = ({ uid }) => {
   const [state, setState] = useState<ChairState>(() => loadChair(uid));
-  const [view, setView] = useState<'home' | 'subject' | 'codex' | 'session' | 'mismatch'>('home');
+  const [view, setView] = useState<'home' | 'subject' | 'codex' | 'session' | 'mismatch' | 'teacher'>('home');
+  const [classCode, setClassCode] = useState<string>(() => {
+    try { return localStorage.getItem('chair-class-code') ?? ''; } catch { return ''; }
+  });
+  const [submittedToClass, setSubmittedToClass] = useState(false);
   const [subjectId, setSubjectId] = useState<string | null>(null);
   const [level, setLevel] = useState<ChairLevel>('higher');
   const [sessionId, setSessionId] = useState<string | null>(null);
@@ -281,6 +288,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
     setDailyMode(false);
     setRestrictScriptId(null);
     setCodexAdded(false);
+    setSubmittedToClass(false);
     setView('session');
   };
 
@@ -892,6 +900,40 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
               )}
             </div>
 
+            {sessionMisses.length > 0 && (
+              <div className="rounded-xl border px-4 py-3 mb-4" style={{ borderColor: BORDER }}>
+                <Small className="mb-1.5">Doing this as a class exercise?</Small>
+                {submittedToClass ? (
+                  <p className="text-[13px] font-semibold inline-flex items-center gap-1.5" style={{ color: SUCCESS }}>
+                    <Check size={14} /> Sent to class {classCode} — your teacher sees the class’s blind spots, not your name.
+                  </p>
+                ) : (
+                  <div className="flex gap-2">
+                    <input
+                      value={classCode}
+                      onChange={e => setClassCode(e.target.value)}
+                      placeholder="Class code"
+                      className="flex-1 rounded-lg border px-3 py-2 text-[13px]"
+                      style={{ borderColor: BORDER, background: '#fff', color: INK }}
+                    />
+                    <button
+                      onClick={() => {
+                        if (!classCode.trim()) return;
+                        submitToCohort(classCode, sessionMisses);
+                        try { localStorage.setItem('chair-class-code', classCode.trim()); } catch { /* ignore */ }
+                        setSubmittedToClass(true);
+                      }}
+                      disabled={!classCode.trim()}
+                      className="rounded-lg px-3.5 py-2 text-[13px] font-semibold text-white disabled:opacity-40"
+                      style={{ backgroundColor: ACCENT }}
+                    >
+                      Send
+                    </button>
+                  </div>
+                )}
+              </div>
+            )}
+
             <button
               onClick={() => setView(dailyMode ? 'home' : 'subject')}
               className="w-full rounded-full py-3 text-[15px] font-semibold text-white transition-transform active:translate-y-0.5"
@@ -1078,6 +1120,82 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                 </div>
               );
             })}
+          </div>
+        )}
+      </div>
+    );
+  }
+
+  // ───────────────────────────── teacher / cohort view ─────────────────────────────
+
+  if (view === 'teacher') {
+    const agg = classCode.trim() ? loadCohort(classCode) : { submissions: 0, rules: {} };
+    const top = topCohortMisses(agg, 15);
+    return (
+      <div className="w-full max-w-xl mx-auto pb-12">
+        <button onClick={() => setView('home')} className="flex items-center gap-1.5 text-[13px] font-medium mb-4" style={{ color: MUTED }}>
+          <ArrowLeft size={15} /> Subjects
+        </button>
+        <h2 className="text-[22px] font-semibold mb-1" style={{ fontFamily: SERIF, color: INK }}>
+          What your class mis-marks
+        </h2>
+        <p className="text-[13px] mb-4" style={{ color: MUTED }}>
+          The marking rules your students systematically get wrong — the exact things to reteach. Students submit with a class code; you see the class, never a name.
+        </p>
+
+        <div className="flex gap-2 mb-5">
+          <input
+            value={classCode}
+            onChange={e => { setClassCode(e.target.value); try { localStorage.setItem('chair-class-code', e.target.value.trim()); } catch { /* ignore */ } }}
+            placeholder="Class code"
+            className="flex-1 rounded-lg border px-3 py-2 text-[13px]"
+            style={{ borderColor: BORDER, background: '#fff', color: INK }}
+          />
+          <span className="inline-flex items-center px-3 rounded-lg text-[12px] font-semibold" style={{ backgroundColor: '#f2efeb', color: MUTED }}>
+            {agg.submissions} {agg.submissions === 1 ? 'submission' : 'submissions'}
+          </span>
+        </div>
+
+        {top.length === 0 ? (
+          <div className="rounded-xl border px-4 py-5" style={{ borderColor: BORDER, background: '#FCFBF8' }}>
+            <p className="text-[13.5px] leading-relaxed" style={{ color: MUTED }}>
+              No submissions for <span className="font-semibold" style={{ color: INK }}>{classCode.trim() || 'this code'}</span> yet.
+              Set a class code, have students mark a session and tap <span className="font-semibold">Send to class</span> on their summary,
+              and the rules they most often get wrong will rank here.
+            </p>
+          </div>
+        ) : (
+          <div className="space-y-2.5">
+            {top.map(r => {
+              const generous = r.over >= r.under;
+              const scale = r.key.endsWith('::scale-placement');
+              const subjLabel = CHAIR_SUBJECTS.find(c => c.id === r.subject)?.label ?? r.subject;
+              const share = agg.submissions ? Math.round((r.students / agg.submissions) * 100) : 0;
+              const headline = scale
+                ? `place ${subjLabel} scripts too ${generous ? 'high' : 'low'} on the scale`
+                : generous
+                  ? `award the “${r.label}” mark when the examiner doesn’t`
+                  : `withhold the “${r.label}” mark when the examiner gives it`;
+              return (
+                <div key={r.key} className="rounded-xl border bg-white dark:bg-zinc-900 dark:border-zinc-700 px-4 py-3.5" style={{ borderColor: BORDER }}>
+                  <div className="flex items-center justify-between gap-2 mb-1.5">
+                    <Small>{subjLabel}</Small>
+                    <span className="text-[11px] font-bold px-2 py-0.5 rounded-full" style={{ color: PEN, backgroundColor: PEN_SOFT }}>
+                      {share}% of the class
+                    </span>
+                  </div>
+                  <p className="text-[14.5px] font-semibold leading-snug" style={{ fontFamily: SERIF, color: INK }}>
+                    {share}% of your class {headline}
+                  </p>
+                  <div className="h-1.5 rounded-full mt-2" style={{ backgroundColor: '#eceae6' }}>
+                    <div className="h-1.5 rounded-full" style={{ width: `${share}%`, backgroundColor: PEN }} />
+                  </div>
+                </div>
+              );
+            })}
+            <p className="text-[11px] leading-relaxed mt-3" style={{ color: LABEL }}>
+              Submissions are aggregated on this device. Names are never stored — only the anonymised class-wide counts.
+            </p>
           </div>
         )}
       </div>
@@ -1310,7 +1428,15 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
         })}
       </div>
 
-      <p className="text-[11px] leading-relaxed mt-6" style={{ color: LABEL }}>
+      <button
+        onClick={() => setView('teacher')}
+        className="mt-6 text-[12.5px] font-semibold inline-flex items-center gap-1.5"
+        style={{ color: MUTED }}
+      >
+        Teacher view · what your class mis-marks <ChevronRight size={14} />
+      </button>
+
+      <p className="text-[11px] leading-relaxed mt-4" style={{ color: LABEL }}>
         Questions and scripts are written for these exercises — they aren’t real SEC questions or real candidates’ work.
         The marking grids, scales and credit rules are the real ones, cited on every session to the SEC marking schemes
         and Chief Examiner’s Reports they come from.

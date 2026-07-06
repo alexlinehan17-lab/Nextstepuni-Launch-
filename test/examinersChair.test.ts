@@ -10,10 +10,12 @@ import {
   calibrationBand,
   completeSession,
   gridDecisionKey,
+  aggregateCohort,
   borderlineScripts,
   codexDue,
   dailyDone,
   gridScriptMisses,
+  topCohortMisses,
   isBorderlineScript,
   loadChair,
   recordDaily,
@@ -232,6 +234,23 @@ describe('mismatch tracking', () => {
     const top = topMisses(state);
     expect(top[0].key).toBe('business::Link'); // most frequent first
     expect(top).toHaveLength(2);
+  });
+
+  it('aggregates a cohort: counts submissions and per-rule student hits (deduped)', () => {
+    const link = (over: number, under: number, sessionId: string) =>
+      ({ key: 'business::Link', subject: 'business', label: 'Link', over, under, sessionId });
+    // student 1 missed Link on two scripts in one submission → counts as one student
+    let agg = aggregateCohort(null, [link(1, 0, 'a'), link(1, 0, 'a')]);
+    expect(agg.submissions).toBe(1);
+    expect(agg.rules['business::Link'].students).toBe(1);
+    expect(agg.rules['business::Link'].over).toBe(2);
+    // student 2 missed Link once and Name once
+    agg = aggregateCohort(agg, [link(1, 0, 'b'), { key: 'business::Name', subject: 'business', label: 'Name', over: 0, under: 1, sessionId: 'b' }]);
+    expect(agg.submissions).toBe(2);
+    expect(agg.rules['business::Link'].students).toBe(2);
+    expect(agg.rules['business::Name'].students).toBe(1);
+    const top = topCohortMisses(agg);
+    expect(top[0].key).toBe('business::Link'); // hit by more students
   });
 
   it('daily streak: extends on consecutive days, resets after a gap, tracks best', () => {

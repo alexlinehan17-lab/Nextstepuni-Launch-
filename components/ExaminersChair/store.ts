@@ -195,6 +195,73 @@ export function topMisses(state: ChairState, n = 8): MissTally[] {
     .slice(0, n);
 }
 
+// ── cohort aggregation: which rules a whole class systematically mis-marks ──
+//
+// Backend-ready: students submit a session's blind spots to a class code and the
+// teacher view aggregates them. On a shared device today this works locally;
+// the CohortAgg shape is exactly what a sync backend would populate.
+
+export interface CohortRule {
+  key: string;
+  subject: ChairSubjectId;
+  label: string;
+  /** Total over-credits (too generous) across all submissions. */
+  over: number;
+  under: number;
+  /** How many submissions mis-marked this rule at all. */
+  students: number;
+}
+
+export interface CohortAgg {
+  submissions: number;
+  rules: Record<string, CohortRule>;
+}
+
+const EMPTY_COHORT: CohortAgg = { submissions: 0, rules: {} };
+
+/** Fold one student's session miss-deltas into the class aggregate (pure).
+ * Deltas are collapsed per rule first, so each submission counts once per rule. */
+export function aggregateCohort(prev: CohortAgg | null, deltas: MissDelta[]): CohortAgg {
+  const base: CohortAgg = prev ? { submissions: prev.submissions, rules: { ...prev.rules } } : { ...EMPTY_COHORT, rules: {} };
+  base.submissions += 1;
+  const perRule = new Map<string, MissDelta>();
+  for (const d of deltas) {
+    const cur = perRule.get(d.key);
+    if (cur) { cur.over += d.over; cur.under += d.under; }
+    else perRule.set(d.key, { ...d });
+  }
+  for (const d of perRule.values()) {
+    const r = base.rules[d.key] ?? { key: d.key, subject: d.subject, label: d.label, over: 0, under: 0, students: 0 };
+    base.rules[d.key] = { ...r, over: r.over + d.over, under: r.under + d.under, students: r.students + 1 };
+  }
+  return base;
+}
+
+/** The rules most of the class gets wrong, most-common first. */
+export function topCohortMisses(agg: CohortAgg, n = 12): CohortRule[] {
+  return Object.values(agg.rules).sort((a, b) => b.students - a.students || (b.over + b.under) - (a.over + a.under)).slice(0, n);
+}
+
+const cohortKey = (code: string) => `chair-cohort:${code.trim().toLowerCase()}`;
+
+export function loadCohort(code: string): CohortAgg {
+  try {
+    const raw = localStorage.getItem(cohortKey(code));
+    return raw ? (JSON.parse(raw) as CohortAgg) : { ...EMPTY_COHORT, rules: {} };
+  } catch {
+    return { ...EMPTY_COHORT, rules: {} };
+  }
+}
+
+/** Submit a student's session blind spots to a class code (persists). */
+export function submitToCohort(code: string, deltas: MissDelta[]): CohortAgg {
+  const next = aggregateCohort(loadCohort(code), deltas);
+  try {
+    localStorage.setItem(cohortKey(code), JSON.stringify(next));
+  } catch { /* quota — degrade silently */ }
+  return next;
+}
+
 // ── the daily mark: one shared script a day + a calibration streak ──
 
 export interface DailyState {
