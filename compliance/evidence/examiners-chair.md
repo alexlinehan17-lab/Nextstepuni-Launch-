@@ -552,6 +552,7 @@ criteria + format only.
 | `fr-oral` (FR5) | French | The oral (25% HL / 20% OL) is a general conversation marked on (i) ability to transfer meaning and (ii) accuracy/appropriateness of language — a recited off-question speech fails criterion (i) | SEC/NCCA LC French syllabus, p.25–26 (Speaking %, assessment criteria, general-conversation format) |
 | `de-oral-criteria` (GE5) | German | The oral marks language and communication, not information content — a simpler point in good German outscores a fact-dump said badly (25% HL / 20% OL) | SEC/NCCA LC German syllabus, p.2 (principle), p.25 (criteria + weighting), p.26 (format) |
 | `es-oral` (SP5) | Spanish | The oral (25% HL / 20% OL) is a general conversation + role-play marked on (i) transfer meaning and (ii) accuracy — a recited off-question speech fails criterion (i) | SEC/NCCA LC Spanish syllabus, p.24 (Speaking %, criteria), p.25 (format), p.2 (language over information content) |
+| `it-oral-transfer` (IT5) | Italian | The oral (25% HL / 20% OL: conversation + role-play + picture sequence) marks transfer of meaning and accuracy, not recited content | SEC/NCCA LC Italian syllabus, p.25 (Speaking %, criteria), p.26 (format), p.2 (language over information content) |
 
 Per-band internal oral cut-points are deliberately NOT asserted anywhere — they are not published
 by the SEC, and the sessions say so.

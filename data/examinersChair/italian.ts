@@ -2,7 +2,7 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * The Examiner's Chair — Italian (Higher Level) marking sessions.
+ * The Examiner's Chair — Italian marking sessions.
  *
  * Questions and scripts are AUTHORED for this exercise (labelled in each
  * `questionNote`) — they are not real SEC questions or candidate scripts. The
@@ -12,12 +12,23 @@
  * SEC system, cited to:
  *  - SEC LC Italian HL marking scheme 2025 —
  *    examiner-reports/italian/2025-marking-scheme.*
+ *
+ * The ORAL session (IT5) is cited to a DIFFERENT source — the official
+ * SEC/NCCA Leaving Certificate Italian syllabus (examiner-reports/italian/
+ * italian-syllabus.*), NOT the written marking scheme. SEC publishes NO
+ * per-band oral marking grid, so the oral session teaches only what the
+ * syllabus states — the Speaking weighting (25% HL / 20% OL), the oral format,
+ * and the two Assessment Criteria (transfer of meaning; accuracy &
+ * appropriateness) — and any band marks in its scale are labelled ILLUSTRATIVE.
+ *
  * Claim-by-claim record: compliance/evidence/examiners-chair.md.
  */
 
 import { type ChairSubject, type ScaleSession, type ScaleLevel } from './types';
 
 const MS = (p: string) => ({ label: `SEC Italian HL marking scheme 2025, ${p}` });
+// Oral cite → the syllabus, NOT the written marking scheme.
+const ORAL = (p: string) => ({ label: `SEC/NCCA LC Italian syllabus, ${p}` });
 
 const two = (a: number, b: number): ScaleLevel[] => [
   { id: `m${a}`, label: `${a} marks`, annotation: `${a}`, marks: a },
@@ -217,15 +228,75 @@ const IT4: ScaleSession = {
   },
 };
 
+// ─────────────── IT5 · The oral rewards transfer of meaning, not recital ───────────────
+
+const IT5: ScaleSession = {
+  mode: 'scale',
+  id: 'it-oral-transfer',
+  subject: 'italian',
+  level: 'common',
+  title: 'The oral marks talking, not reciting',
+  cue: 'Oral · general conversation',
+  question:
+    'In the oral (worth 25% of the Higher paper, 20% at Ordinary), the examiner asks about your weekend. You deliver a flawless paragraph you memorised about your summer holidays instead — polished, accurate Italian, but not an answer to the question. The syllabus says the oral is judged on (i) your ability to transfer meaning and (ii) accuracy and appropriateness — and that assessment emphasises “language and communication skills rather than the information content.” Where does a memorised, off-question chunk land?',
+  questionNote:
+    'Scenario authored for this exercise. Grounded in the SEC/NCCA LC Italian syllabus: Speaking is 25% at Higher / 20% at Ordinary; the oral is a general conversation + role-play + picture sequence (15 min); and the two Assessment Criteria are (i) ability to transfer meaning and (ii) accuracy and appropriateness of language. SEC does NOT publish a per-band oral marking grid — the band marks below are ILLUSTRATIVE, used only to show the direction of travel, not real SEC oral marks.',
+  scale: {
+    name: 'Oral response · ILLUSTRATIVE bands (no official SEC oral grid exists)',
+    levels: [
+      { id: 'il-low', label: 'Recited, off the question', annotation: 'L', marks: 3 },
+      { id: 'il-mid', label: 'On topic, limited transfer', annotation: 'M', marks: 7 },
+      { id: 'il-high', label: 'Genuine transfer + accuracy', annotation: 'H', marks: 12 },
+    ],
+    notes: [
+      'Speaking is worth 25% of the exam at Higher Level, 20% at Ordinary Level.',
+      'The oral is scored on two criteria: (i) ability to transfer meaning, and (ii) accuracy and appropriateness of language (range of vocabulary and structures).',
+      'The syllabus states assessment emphasises “language and communication skills rather than the information content” — so a rehearsed passage that doesn’t answer the question can’t satisfy criterion (i).',
+      'The band marks here are ILLUSTRATIVE only — SEC publishes no per-band oral marking grid; they show direction of travel, not real oral marks.',
+    ],
+    cite: ORAL(
+      'Assessment §4, p.25 (Speaking 25% HL / 20% OL; Assessment Criteria (i)–(ii)) & Oral Assessment, p.26',
+    ),
+  },
+  scripts: [
+    {
+      id: 'it5-a',
+      label: 'The answer',
+      persona: 'Perfect recital, wrong question',
+      work: [
+        'Examiner asks a simple conversational question (about the weekend).',
+        'Candidate delivers a memorised paragraph on a different topic (summer holidays).',
+        'The Italian is accurate and fluent — but it does not respond to what was asked.',
+      ],
+      keyLevelId: 'il-low',
+      keyNote:
+        'It lands at the bottom — accurate Italian, but the primary criterion is the ability to transfer meaning, and a rehearsed chunk that ignores the question transfers none. The syllabus is explicit that the oral rewards language and communication skills rather than information content: you have to actually answer the examiner, in real time, not perform a prepared speech. Prepare vocabulary and structures, then use them to say something true in response to what you are asked. (Band mark ILLUSTRATIVE — SEC publishes no per-band oral grid.)',
+      embodies: {
+        behaviour:
+          'Delivers a prepared, off-question paragraph, so criterion (i) — ability to transfer meaning in response to what was asked — is not met, however accurate the Italian.',
+        cite: ORAL('Assessment §4, p.25 (Assessment Criteria (i) ability to transfer meaning)'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-it5',
+    rule: 'In the oral, answer the question — don’t recite.',
+    detail:
+      'The Italian oral (25% Higher, 20% Ordinary) is marked on your ability to transfer meaning and on accuracy — and the syllabus says it emphasises language and communication skills, not information content. A polished, memorised answer to a question you weren’t asked fails the first criterion. Prepare the language, then use it to respond, in real time, to what the examiner actually asks. (Any per-band oral marks are illustrative — SEC publishes no official oral grid.)',
+    cite: ORAL('Assessment §4, p.25; Preamble, p.2 (language rather than information content)'),
+  },
+};
+
 export const ITALIAN_CHAIR: ChairSubject = {
   id: 'italian',
   label: 'Italian',
-  tagline: 'Two axes, the wrong-language penalty, copy-vs-manipulate, and no rote off the point.',
+  tagline: 'Two axes, the wrong-language penalty, copy-vs-manipulate, no rote off the point — and an oral that marks talking, not reciting.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [IT1, IT2, IT3, IT4],
+  sessions: [IT1, IT2, IT3, IT4, IT5],
   sources: [
     { label: 'SEC LC Italian HL marking scheme 2025 (examiner-reports/italian/2025-marking-scheme)' },
+    { label: 'SEC/NCCA Leaving Certificate Italian syllabus (examiner-reports/italian/italian-syllabus)' },
   ],
   coverageNote:
-    'These sessions teach the written-paper conventions — the two Content/Language axes with the graduated content cap, the wrong-language penalty, the reading-comprehension copy-vs-manipulate deduction and the rote-off-the-point rule — which apply at both Higher and Ordinary level (the oral is a separate scheme). Verified against the 2025 Higher Level scheme (the copy-vs-manipulate rule also corroborated against 2024); level-specific worked examples are being added.',
+    'The written-paper sessions teach the conventions of the 2025 marking scheme — the two Content/Language axes with the graduated content cap, the wrong-language penalty, the reading-comprehension copy-vs-manipulate deduction and the rote-off-the-point rule — which apply at both Higher and Ordinary level. The oral session is grounded in a different source: the official SEC/NCCA Italian syllabus (Speaking 25% Higher / 20% Ordinary; assessed on transfer of meaning + accuracy). SEC publishes NO per-band oral marking grid, so any band marks shown in the oral session are labelled illustrative. Verified against the 2025 HL scheme (copy-vs-manipulate also corroborated against 2024) and the syllabus; level-specific worked examples are being added.',
 };
