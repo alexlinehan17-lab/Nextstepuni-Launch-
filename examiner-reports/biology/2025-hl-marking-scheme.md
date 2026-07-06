@@ -1,0 +1,1090 @@
+# Leaving Certificate 2025 — Biology Higher Level — Marking Scheme (SEC)
+
+> Text extracted from the official SEC PDF () via pypdf. Formatting approximate; rely on the PDF for definitive rendering. Page numbers below are the PDF page indices.
+
+## Page 1
+
+  
+Coimisiún na Scrúduithe Stáit 
+State Examinations Commission 
+Leaving Certificate 2025 
+Marking Scheme 
+Higher Level 
+Biology 
+
+## Page 2
+
+Leaving Certificate 2025 2 
+Biology – Higher Level 
+Marking Scheme 
+Note to teachers and students on the use of published marking schemes 
+Marking schemes published by the State Examinations Commission are not intended to be 
+standalone documents.  They are an essential resource for examiners who receive training in the 
+correct interpretation and application of the scheme.  This training involves, among other things, 
+marking samples of student work and discussing the marks awarded, so as to clarify the correct 
+application of the scheme.  The work of examiners is subsequently monitored by Advising 
+Examiners to ensure consistent and accurate application of the marking scheme.  This process is 
+overseen by the Chief Examiner, usually assisted by a Chief Advising Examiner.  The Chief Examiner 
+is the final authority regarding whether or not the marking scheme has been correctly applied to 
+any piece of candidate work. 
+Marking schemes are working documents.  While a draft marking scheme is prepared in advance 
+of the examination, the scheme is not finalised until examiners have applied it to candidates’ work 
+and the feedback from all examiners has been collated and considered in light of the full range of 
+responses of candidates, the overall level of difficulty of the examination and the need to maintain 
+consistency in standards from year to year.  This published document contains the finalised 
+scheme, as it was applied to all candidates’ work. 
+In the case of marking schemes that include model solutions or answers, it should be noted that 
+these are not intended to be exhaustive.  Variations and alternatives may also be acceptable.  
+Examiners must consider all answers on their merits, and will have consulted with their Advising 
+Examiners when in doubt. 
+Future Marking Schemes 
+Assumptions about future marking schemes on the basis of past schemes should be avoided.  
+While the underlying assessment principles remain the same, the details of the marking of a 
+particular type of question may change in the context of the contribution of that question to the 
+overall examination in a given year.  The Chief Examiner in any given year has the responsibility to 
+determine how best to ensure the fair and accurate assessment of candidates’ work and to ensure 
+consistency in the standard of the assessment from year to year.  Accordingly, aspects of the 
+structure, detail and application of the marking scheme for a particular examination are subject to 
+change from one year to the next without notice. 
+  
+
+## Page 3
+
+Leaving Certificate 2025 3 
+Biology – Higher Level 
+Marking Scheme 
+Introduction 
+The marking scheme is a guide to awarding marks to candidates’ answers.  It is a concise and 
+summarised guide and is constructed so as to minimise its word content.  Examiners must 
+conform to this scheme and may not allow marks for answering outside this scheme.  The scheme 
+contains key words, terms and phrases for which candidates may be awarded marks.  This does 
+not preclude synonyms or terms or phrases which convey the same meaning as the answer in the 
+marking scheme.  Although synonyms are generally acceptable, there may be instances where the 
+scheme demands an exact scientific term or unequivocal response and will not accept alternatives.  
+The descriptions, methods and definitions in the scheme are not exhaustive and alternative valid 
+answers are acceptable.  If it comes to the attention of an examiner that a candidate has 
+presented a valid answer and there is no provision in the scheme for accepting this answer, then 
+the examiner must first consult with his/ her advising examiner before awarding marks.  As a 
+general rule, if in doubt about any answer, examiners should consult their advising examiner 
+before awarding marks. 
+How to use the marking scheme 
+• Where only one answer is required alternative answers are separated by ‘or’. 
+• Where multiple answers are required each word, term or phrase for which marks are 
+allocated is separated by a solidus ( / ) from the next word, term or phrase. 
+• The mark awarded for an answer appears in bold next to the answer, e.g. 3. 
+• Where there are several parts in the answer to a question, the mark awarded for each part 
+appears in brackets, e.g. 5(4) means that there are five parts to the answer, each part 
+allocated 4 marks. 
+• The answers to subsections of a question may not necessarily be allocated a specific mark; 
+e.g. there may be six parts to a question – (a), (b), (c), (d), (e), (f) and a total of 20 marks 
+allocated to the question.  The marking scheme might be as follows, 2(4) + 4(3). This means 
+that the first two correct answers encountered are awarded 4 marks each and each 
+subsequent correct answer is awarded 3 marks. 
+• A word or term that appears in brackets ( ) is not a requirement of the answer, but is used to 
+contextualise the answer or may be an alternative valid answer. 
+  
+
+## Page 4
+
+Leaving Certificate 2025 4 
+Biology – Higher Level 
+Marking Scheme 
+Some examples of the marking process 
+1. Key words or terms or phrases may be awarded marks, only if presented in the correct 
+context. 
+Sample question: Outline how water from the soil reaches the leaf. 
+Marking scheme states: Concentration gradient / osmosis / root hair / root pressure / 
+cell to cell / xylem / transpiration or evaporation / cohesion 
+(or explained) or adhesion (or capillarity or explained) or 
+tension (or explained). Any six 6(3) 
+Sample answer: Water is drawn up the xylem by osmosis. 
+Although the candidate has presented two key terms (xylem, osmosis), the statement is 
+incorrect and the candidate can only be awarded 3 marks for referring to the movement of 
+water through the xylem. 
+2. Cancelled answers 
+The following is an extract from S.63 Instructions to Examiners, 2025 (for subjects being 
+marked online) (section 5.4, p.18): 
+“Where a candidate answers a question or part of a question once only and 
+then cancels the answer, you should ignore the cancelling and treat the answer 
+as if the candidate had not cancelled it.” 
+Sample question: What is pollination? 
+Marking scheme states: Transfer of pollen / from anther / to stigma. 3(3) 
+Sample answer: Transfer of pollen by insect to stigma. 
+The candidate has cancelled the answer and has not made another attempt to answer the 
+question and may be awarded 2(3) marks. 
+If an answer is cancelled and an alternative version given, the cancellation should be 
+accepted and marks awarded, where merited, for the un-cancelled version only. 
+If two (or more) un-cancelled versions of an answer are given to the same question or part 
+of a question, both (or all) should be marked and the answer accepted that yields the 
+greater (greatest) number of marks.  Points may not, however, be combined from multiple 
+versions to arrive at a manufactured total. 
+3. Surplus answers: [only in Section A] - A surplus wrong answer cancels the marks awarded 
+for a correct answer. 
+(i) Sample question 1: The walls of xylem vessels are reinforced with………….  
+Marking scheme states: Lignin 4 marks 
+Sample answer: Chitin, lignin 
+There is a surplus incorrect answer, therefore the candidate scores 4 – 4 = 0 marks. 
+  
+
+## Page 5
+
+Leaving Certificate 2025 5 
+Biology – Higher Level 
+Marking Scheme 
+Sample answer: Lignin 
+The answer, which is correct, has been cancelled by the candidate, but there is no 
+additional or surplus answer, therefore the candidate may be awarded 4 marks. 
+Sample answer: Lignin, chitin 
+There is a surplus answer, which is incorrect, but it has been cancelled and as the 
+candidate has given more than one answer (i.e. the candidate is answering the 
+question more than once only), the cancelling can be accepted and s/he may be 
+awarded 4 marks. 
+(ii) Sample question 2: Name the four elements that are always present in protein. 
+Marking scheme states: Carbon / hydrogen / oxygen / nitrogen 4(3) 
+Sample answer: Carbon, hydrogen, oxygen, nitrogen, calcium 
+There is a surplus answer, which is incorrect, which cancels one of the correct answers, 
+therefore the candidate is awarded 3(3) marks. 
+Sample answer: Carbon, hydrogen, oxygen, calcium 
+There is no surplus answer – there are three correct answers, and therefore the 
+candidate is awarded 3(3) marks. 
+Sample answer: Carbon, hydrogen, oxygen, calcium, aluminium 
+There is a surplus answer, which is incorrect, and cancels one of the three correct 
+answers, therefore the candidate is awarded 2(3) marks. 
+Sample answer: Carbon, hydrogen, oxygen, calcium, aluminium 
+There is a surplus answer, which is incorrect, but it has been cancelled so the 
+candidate may be awarded 3(3) marks. 
+In the other sections of the paper (Sections B and C), there may be instances where a correct 
+answer is nullified by the addition of an incorrect answer.  This happens when the only acceptable 
+answer is a specific word or term.  Each such instance is indicated in the scheme by an asterisk *. 
+  
+
+## Page 6
+
+Leaving Certificate 2025 6 
+Biology – Higher Level 
+Marking Scheme 
+Annotations used in the marking 
+The scripts were marked by examiners using an online marking platform.  The following table 
+illustrates the various annotations (symbols) applied by the examiners when marking the scripts.  
+The meaning and use of each of the annotations applied are also explained in the table.  These 
+annotations will be seen on a script if viewed as part of the appeal process.  Annotations applied 
+by an examiner will be viewed in red.  Scripts that were also marked by an advising examiner will 
+show annotations in a green colour. 
+Annotation Meaning 
+ 
+This symbol indicates that one mark has been awarded. 
+ 
+This symbol indicates that two marks have been awarded. 
+ 
+This symbol indicates that three marks have been awarded. 
+ This symbol indicates that four marks have been awarded. 
+ This symbol indicates an incorrect response / answer. 
+ 
+Surplus incorrect answer.  A surplus incorrect answer has cancelled a correct 
+answer. 
+ 
+This symbol is placed on all blank pages or part of page to indicate it has been 
+seen by the examiner. 
+ 
+This symbol can be used by an examiner to indicate a part of a question 
+answer of significance. 
+ 
+This symbol is used to indicate a missing word or phrase. 
+  
+
+
+## Page 7
+
+Leaving Certificate 2025 7 
+Biology – Higher Level 
+Marking Scheme 
+Bonus marks for answering through the medium of Irish 
+Bonus marks at the rate of 10% of the marks obtained will be given to a candidate who answers 
+entirely through Irish and who obtains 75% or less of the total mark available in (i.e. 300 marks or 
+less).  In calculating the bonus to be applied, decimals are always rounded down, not up ¬ e.g., 4.5 
+becomes 4; 4.9 becomes 4, etc.  See below for when a candidate is awarded more than 300 marks. 
+Marcanna Breise as ucht freagairt trí Ghaeilge 
+Léiríonn an tábla thíos an méid marcanna breise ba chóir a bhronnadh ar iarrthóirí a ghnóthaíonn 
+níos mó ná 75% d’iomlán na marcanna. 
+N.B. Ba chóir marcanna de réir an ghnáthráta a bhronnadh ar iarrthóirí nach ngnóthaíonn níos mó 
+ná 75% d’iomlán na marcanna don scrúdú.  Ba chóir freisin an marc bónais sin a shlánú síos. 
+Tábla 400 @ 10% 
+Bain úsáid as an tábla seo i gcás na n-ábhar a bhfuil 400 marc san iomlán ag gabháil leo agus inarb 
+é 10% gnáthráta an bhónais. 
+Bain úsáid as an ngnáthráta i gcás 300 marc agus faoina bhun sin.  Os cionn an mharc sin, féach an 
+tábla thíos. 
+Bunmharc Marc Bónais  Bunmharc Marc Bónais 
+301 - 303 29  351 - 353 14 
+304 - 306 28  354 - 356 13 
+307 - 310 27  357 - 360 12 
+311 - 313 26  361 - 363 11 
+314 - 316 25  364 - 366 10 
+317 - 320 24  367 - 370 9 
+321 - 323 23  371 - 373 8 
+324 - 326 22  374 - 376 7 
+327 - 330 21  377 - 380 6 
+331 - 333 20  381 - 383 5 
+334 - 336 19  384 - 386 4 
+337 - 340 18  387 - 390 3 
+341 - 343 17  391 - 393 2 
+344 - 346 16  394 - 396 1 
+347 - 350 15  397 - 400 0 
+  
+
+## Page 8
+
+Leaving Certificate 2025 8 
+Biology – Higher Level 
+Marking Scheme 
+Section A Best 5 100 
+ 
+Question 1  20 
+Best five answers from (a) – (f) 
+(a) Write the general formula for carbohydrates.  
+ Cx(H2O)y 4 
+(b) Give the four chemical elements present in all proteins.  
+ Carbon (or C) and hydrogen (or H) and oxygen (or O) and nitrogen (or N) 4 
+(c) State one structural role of proteins in the body.  
+ (To form) muscles or tendons or ligament or hair or skin or nails………. 4 
+(d) Name the small subunits that make protein.  
+ Amino acids 4 
+(e) Name one water-soluble vitamin.  
+ B (or named B vitamin) or C (or named) 4 
+(f) Give one example of a trace element found in food.  
+ Copper (or Cu) or iron (or Fe) or zinc (or Zn)………. 4 
+5    
+  
+
+
+## Page 9
+
+Leaving Certificate 2025 9 
+Biology – Higher Level 
+Marking Scheme 
+Question 2 20 
+(a) Name structure indicated by the letter X and give its function.  
+ Name: Root hair  3 
+ Function: Absorption of water or minerals 3 
+(b) Name the tissue type indicated by the letter Y and give its function.  
+ Name: Vascular (tissue) 3 
+ Function: Transport of a correct named substance  3 
+(c) Name the tissue indicated by the letter Z where rapid mitosis is occurring.  
+ Meristematic 3 
+(d) In the space below, draw and label a transverse section of the root as it would appear 
+if it was cut at the position of the dashed line (-------) in the diagram above.  
+ Drawing: circle with vascular tissue clearly visible in the centre 3 
+ Labels: dermal (tissue) / vascular (tissu e) / ground (tissue) / root hair / or 
+examples  Any two  2(1) 
+6  + 2   
+  
+
+
+## Page 10
+
+Leaving Certificate 2025 10 
+Biology – Higher Level 
+Marking Scheme 
+Question 3 20 
+(a) Name the cell organelle shown.  
+ Mitochondrion 2 
+(b) Name the cycle of reactions that occurs in stage 2 of aerobic respiration.  
+ Krebs  3 
+(c) What does ATP stand for?  
+ Adenosine triphosphate 3 
+(d) Give the function of NAD+.  
+ Carries (high energy) electrons and protons. 3 
+(e) Suggest a condition under which anaerobic respiration might occur.  
+ Lack of oxygen or described 3 
+(f) State where anaerobic respiration occurs in the cell.  
+ Cytosol 3 
+(g) Name one main product of anaerobic respiration.  
+ Lactic acid or ethanol 3 
+1  + 6   
+  
+
+
+## Page 11
+
+Leaving Certificate 2025 11 
+Biology – Higher Level 
+Marking Scheme 
+Question 4 20 
+(a) Name the parts labelled X and Y.  
+ X:  Phospholipid 2 
+ Y: Protein 2 
+(b) Give a function of the cell membrane.  
+ Controls what substances pass through 3 
+(c) (i) What term describes cells without membrane-bound organelles?  
+  Prokaryotic 3 
+ (ii) What term describes cells with membrane-bound organelles?  
+  Eukaryotic 3 
+(d) (i) Sketch the basic structure of a plant cell clearly labelling the cell membrane and 
+the cell wall.  
+  Correct sketch: showing cell membrane and cell wall 3 
+  Labels: Cell membrane 1 
+  Cell wall 1 
+ (ii) Give one function of a plant cell wall.  
+  Gives shape (to the cell) or protection 2 
+3  + 4  + 2   
+  
+
+
+## Page 12
+
+Leaving Certificate 2025 12 
+Biology – Higher Level 
+Marking Scheme 
+Question 5 20 
+(a) What is the common name given to this piece of equipment?  
+ Bioreactor 3 
+(b) Name two factors controlled by the piece of equipment shown that could affect the 
+growth of bacteria, other than nutrient availability.  
+ pH / temperature / pressure / oxygen………. Any two 2(3) 
+(c) Name the two stages X and Y on the population growth curve.  
+ Stage X: Log 3 
+ Stage Y: Stationary 3 
+(d) Which type of food processing technique is represented by the growth curve shown?  
+ Continuous 3 
+(e) If the population of bacteria in the piece of equipment above run out of nutrients, 
+draw on the graph above to show how the line would continue.  
+ Line drops  2 
+6  + 1    
+  
+
+
+## Page 13
+
+Leaving Certificate 2025 13 
+Biology – Higher Level 
+Marking Scheme 
+Question 6 20 
+(a) Name the parts labelled A and B.  
+ A:  Oesophagus 2 
+ B:  Stomach 2 
+(b) Name and describe briefly the method by which food travels through structure A.  
+ Name: Peristalsis 3 
+ Description: (involuntary) muscular contractions (that push food) 3 
+(c) How does the pH of the food material change as it travels from A to B?  
+ Lowers 2 
+(d) Name the enzyme produced in the pancreas which digests lipids.  
+ Lipase 3 
+(e) Draw and label the internal structure of a villus.  
+ Drawing: villus / lacteal / blood vessels Any two 3 
+ Labels: villus / lacteal / capillary  (or blood vessel or named)  Any two 2(1) 
+3  + 4  + 2    
+  
+
+
+## Page 14
+
+Leaving Certificate 2025 14 
+Biology – Higher Level 
+Marking Scheme 
+Question 7 20 
+(a) In the scientific method, a testable statement is known as a _________________.  
+ Hypothesis 2 
+(b) How can this statement be tested?  
+ Conducting an experiment  3 
+(c) What is the function of a scientific control?  
+ A comparison to the experiment 3 
+(d) Give two limitations of the scientific method.  
+ 
+Accidental discovery / application to nature / (human) bias / human error / 
+constrained by existing knowledge / constrained by existing technology / ability to 
+interpret results / experimental design………. Any two 2(3) 
+(e) Where does a biologist normally publish their results?  
+ Scientific journal 3 
+(f) What is meant by the term theory?  
+ Supported (or tested) hypothesis 3 
+1  + 6   
+  
+
+
+## Page 15
+
+Leaving Certificate 2025 15 
+Biology – Higher Level 
+Marking Scheme 
+Section B Best 2 60 
+ 
+Question 8 30 
+(a) (i) What is meant by the term ecosystem?  
+  Organisms and their environment 2 
+ (ii) What could aid ecologists in identifying organisms in a study of an ecosystem?  
+  Key 4 
+1  + 1   
+(b) (i) Describe how you carried out a quantitative study of a named plant species.  
+  Named plant species 3 
+  Used a quadrat or line transect or belt transect and correct use of equipment. 3 
+  Counted and repeated 3 
+  Calculation described (e.g. by percentage cover or percentage frequency) 3 
+ (ii) Name any two abiotic factors you have investigated as part of your study and 
+outline how you measured each factor.  
+  Correctly named abiotic factor 1 3 
+  Matching method of measurement of factor 1 outlined 3 
+  Correctly named abiotic factor 2 3 
+  Matching method of measurement of factor 2 outlined 3 
+8   
+  
+
+
+## Page 16
+
+Leaving Certificate 2025 16 
+Biology – Higher Level 
+Marking Scheme 
+Question 9 30 
+(a) Explain the term osmosis.  
+ Movement of water  2 
+ from a region of higher water concentration to a region of lower water concentration 
+across a selectively permeable membrane 4 
+1  + 1   
+(b) (i) Name the tissue or membrane that you used in the activity.  
+  Correctly named tissue or membrane (e.g. Visking tubing or potato……….) 3 
+ (ii) Describe how you carried out this activity, including the result. 
+You may include a labelled diagram if you wish.  
+  Description how tissue or membrane was prepared 3 
+  Correct use of salt or sugar (solution).  3 
+  Control named and setup described 3 
+  Left for a time 3 
+  Matching result for test 3 
+  Matching result for control 3 
+  Named piece of apparatus used (other than the tissue or membrane) 3 
+  Points may be obtained from an appropriately labelled diagram  
+8    
+  
+
+
+## Page 17
+
+Leaving Certificate 2025 17 
+Biology – Higher Level 
+Marking Scheme 
+Question 10 30 
+(a) (i) To which kingdom of living organisms do yeast belong?  
+  *Fungi 4 
+ (ii) Explain the term sterility.  
+  Absence of all (micro)organisms or described 2 
+1  + 1   
+(b) (i) Describe how you set up the investigation.  Include one safety precaution. 
+You may include a labelled diagram if you wish. 
+ 
+  Named piece of apparatus used   3 
+  Correct position of leaf (or leaf disc) on lid or described 3 
+  Left at a suitable temperature 3 
+  Left for a suitable time  3 
+  Control named and setup described 3 
+  Safety precaution described 3 
+  Points may be obtained from an appropriately labelled diagram  
+ (ii) Describe the result of the investigation, assuming the leaf yeast grew successfully.  
+  Pink colonies (in test) 3 
+  No growth (in control) 3 
+8     
+  
+
+
+## Page 18
+
+Leaving Certificate 2025 18 
+Biology – Higher Level 
+Marking Scheme 
+Section C Best 4 4(60) 
+ 
+Question 11 60 
+(a) (i) What is geotropism?  
+  Growth response (of a plant) to gravity. 3 
+ (ii) Name a part of a plant that responds positively to geotropism.  
+  *Root 3 
+ (iii) How does this growth response benefit plants?  
+  Obtain (more) water or minerals or anchorage 3 
+3   
+(b) (i) Give the collective name for:  
+  1.  The male reproductive parts of the flower.  
+   *Stamen 3 
+  2.  The female reproductive parts of the flower.  
+   *Carpel 3 
+ (ii) Name the specific part of the flower that holds the embryo sac.  
+  *Ovule (accept ovary) 3 
+ (iii) The embryo sac develops from a single diploid cell.  Name this cell.  
+  *Megaspore mother (cell) 3 
+ (iv) Name the parts labelled P and Q in the embryo sac that are involved in double 
+fertilisation.  
+  P: *Polar nucleus 3 
+  Q: *Egg (cell) 3 
+ (v) Explain why parts P and Q are genetically identical.  
+  They were produced by mitosis 3 
+ (vi) State what each of the parts P and Q develop into after double fertilisation.  
+  P: Endosperm 3 
+  Q: Diploid zygote 3 
+9     
+  
+
+
+## Page 19
+
+Leaving Certificate 2025 19 
+Biology – Higher Level 
+Marking Scheme 
+Question 11 (continued) 
+(c) (i) Name two methods by which seeds are dispersed.  
+  Wind / animal / water / self Any two 2(3) 
+ (ii) Give two advantages of seed dispersal to a plant species.  
+  
+Reduce competition /  
+colonise new habitats /  
+better chance of survival ………. Any two 2(3) 
+ (iii) Give two advantages of dormancy to a plant species.  
+  
+Allows time for development of embryo /  
+allows time for dispersal /  
+allows survival in unfavourable conditions……….   Any two 2(3) 
+ (iv) 1. Give one example of a plant that reproduces asexually using leaves.  
+   Correct example given 3 
+  2. Give one example of a plant that reproduces asexually using buds.  
+   Correct example given 3 
+8    
+  
+
+
+## Page 20
+
+Leaving Certificate 2025 20 
+Biology – Higher Level 
+Marking Scheme 
+Question 12 60 
+(a) (i) Explain the term mutation.  
+  Change in the structure (or sequence) of DNA (or of a chromosome) 3 
+ (ii) Give two causes of mutations.  
+  Radiation / chemicals / viruses………. Any two 2(3) 
+3   
+(b) (i) Distinguish between the terms, gene and allele.  
+  Gene: region of a chromosome (or DNA) th at contains (genetic) code for (the 
+production of) a protein. 3 
+  Allele: form of a gene 3 
+ (ii) 1.  Using the letters mentioned above, give the genotype of a fruit fly with 
+ebony body and normal wing, heterozygous for both characteristics.  
+   *EeNn 3 
+  2. Give the genotype for a fruit fly with a black body and curly wings.  
+   *eenn 3 
+  3. Give all the possible genotypes and matching phenotypes of the offspring of 
+a cross between the two flies described in (ii) 1. and 2. above.  
+   *EeNn and ebony, normal 3 
+   *Eenn  and ebony, curly 3 
+   *eeNn  and black, normal 3 
+   *eenn  and black, curly 3 
+   If phenotype not matched to correct genotype then 2 marks for each 
+correct genotype  
+ (iii) What term is used for genes found on the same chromosome?  
+  *Linked 3 
+9  or (4  + 5  ) or (3  + 6  ) or (2  + 7  ) or (1  + 8  ) 
+  
+
+
+## Page 21
+
+Leaving Certificate 2025 21 
+Biology – Higher Level 
+Marking Scheme 
+Question 12 (continued) 
+(c) (i) What do the letters DNA stand for?  
+  *Deoxyribonucleic acid 3 
+ (ii) State which two are purines and which two are pyrimidines.  
+  Purines: *Adenine (or A) and *guanine (or G) 3 
+  Pyrimidines: *Cytosine (or C) and *thymine (or T) 3 
+ (iii) State any one structural difference between DNA and RNA.  
+  
+DNA is double stranded and RNA is single stranded 
+or 
+DNA has the sugar, deoxyribose and RNA has the sugar, ribose 
+or 
+DNA has thymine and RNA has uracil 3 
+ (iv) Describe the four main steps in creating a DNA profile.  
+  Cells are broken down to release DNA 3 
+  DNA is cut into fragments using enzymes 3 
+  The (DNA) fragments are separated based on size 3 
+  A pattern of fragments is analysed 3 
+8    
+  
+
+
+## Page 22
+
+Leaving Certificate 2025 22 
+Biology – Higher Level 
+Marking Scheme 
+Question 13 60 
+(a) (i) Explain why photosynthesis is an example of an anabolic reaction.  
+  It involves the building up of large molecules using small molecules or requires 
+energy 3 
+ (ii) Write a balanced chemical equation to represent photosynthesis.  
+  6CO2 + 6H2O  C6H12O6 + 6O2 First point: formulae; second point: balancing 2(3) 
+3   
+(b) (i) Name the cell organelle shown in the diagram in which chlorophyll is located.  
+  *Chloroplast 3 
+ (ii) Name the energised particles released by chlorophyll.  
+  *Electrons 3 
+ (iii) State the difference between each of these two pathways in terms of energised 
+particle movement only.  
+  In pathway 1 electron returns to chlorophyll and in pathway 2 electron does not 
+return to chlorophyll or a different electron returns to chlorophyll  3 
+ (iv) Two products of the light-dependent stage enter the light-independent stage. 
+Name the two products and describe each of their roles.  
+  Name 1: *ATP or adenosine triphosphate 3 
+  Role: Supplies energy (for the production of glucose) 3 
+  Name 2: *NADPH 3 
+  Role: Supplies electrons and protons (for the production of glucose) 3 
+ (v) Name the two products of the light-independent stage that are regenerated and 
+used in the light-dependent stage.  
+  *ADP (+P) or adenosine diphosphate 3 
+  *NADP+ 3 
+9    
+  
+
+
+## Page 23
+
+Leaving Certificate 2025 23 
+Biology – Higher Level 
+Marking Scheme 
+Question 13 (continued) 
+(c) (i) Briefly describe enzymes under the following headings:  
+  1. Biochemical nature  
+   *Protein 3 
+  2. Shape  
+   Folded or described 3 
+ (ii) Based on the biochemical nature of enzymes, name the cell component where 
+enzymes are made.  
+  *Ribosome 3 
+ (iii) Explain the underlined term and state one way in which an enzyme can be 
+denatured.  
+  (An enzyme) that has lost its shape or is no longer functional 3 
+  By pH changes or extreme heat or by agitation………. 3 
+ (iv) Describe a method of enzyme immobilisation.  
+  Two correct and relevant named chemicals 3 
+  First correct physical procedural step described 3 
+  Second correct physical procedural step described 3 
+8    
+  
+
+
+## Page 24
+
+Leaving Certificate 2025 24 
+Biology – Higher Level 
+Marking Scheme 
+Question 14 60 
+(a) (i) Distinguish between the central nervous system and peripheral nervous system.  
+  Central: brain and spinal cord 3 
+  Peripheral: nerves throughout body (and ganglia) 3 
+ (ii) Name one way in which the human nervous system is protected.  
+  Skull or spine or vertebrae or meninges………. 3 
+3   
+(b) (i) Describe the role of each of the following in the eye.  
+  1.  Cornea  
+   Allows light in or refracts light…….. 3 
+  2.  Retina  
+   Convert light into nerve impulse 3 
+  3.  Optic nerve  
+   Carry (nerve) impulses to the brain 3 
+  4.  Lens  
+   Focus the light onto the retina 3 
+ (ii) Which eye (A or B), is exposed to low light levels?  Justify your answer.  
+  *B 1 
+  Justify: The pupil is larger (dilated)  2 
+ (iii) Describe the role of each of the following in the ear:  
+  1.  Ossicles  
+   Transfer sound (vibrations) or amplify the sound 3 
+  2.  Cochlea  
+   Convert the sound (stimulus) into nerve impulses 3 
+  3.  Eustachian tube  
+   Equalise pressure (between the middle ear and the outside) 3 
+ 
+(iv) Describe one corrective measure for one of the following: long sightedness or 
+short sightedness or a hearing defect. 
+In your answer, state clearly to which disorder you are referring. 
+ 
+  Matching corrective measure described. 3 
+8  + 1  + 1   
+  
+
+
+## Page 25
+
+Leaving Certificate 2025 25 
+Biology – Higher Level 
+Marking Scheme 
+Question 14 (continued) 
+(c) (i) 1.  Which neuron (X or Y) is a motor neuron.  Justify your answer.  
+   *X 1 
+   Justify: It is connected to a muscle cell or cell body position described 2 
+  2.  Which neuron (X or Y) is a sensory neuron.  Justify your answer.  
+   *Y 1 
+   Justify: It is connected to the skin (sensory structure) or cell body position 
+described 2 
+ (ii) Describe how neurotransmitters work.  
+  
+Impulse arrives at synaptic terminal /  
+vesicles release neurotransmitter (or named example) /  
+neurotransmitter crosses the cleft / 
+attaches to receptors on the next neuron / 
+impulse is created in the next neuron / 
+neurotransmitter inactivated or described Any three 3(3) 
+ (iii) What is the function of a Schwann cell?  
+  Produce myelin (sheath) 3 
+ 
+(iv) In relation to Parkinson’s disease or paralysis, give one possible cause and one 
+possible treatment. 
+In your answer, state clearly to which disorder you are referring. 
+ 
+  Correct matching cause 3 
+  Correct matching treatment 3 
+2  + 2  + 6   
+  
+
+
+## Page 26
+
+Leaving Certificate 2025 26 
+Biology – Higher Level 
+Marking Scheme 
+Question 15 60 
+(a) Explain the following three ecological terms:  
+ (i) Biosphere  
+  Part of the Earth where life exists 3 
+ (ii) Niche  
+  (Functional) role of an organism 3 
+ (iii) Competition  
+  Struggle between organisms for a limited resource 3 
+3   
+(b) (i) Distinguish between the terms, predator and prey.  
+  Predator: an organism that kills and eats another organism 3 
+  Prey: an organism that is killed and eaten by another organism 3 
+ (ii) Name an adaptation useful for the survival of the white-tailed sea eagle.  
+  Powerful (or flexor) muscles or large (or sharp) talons……….  3 
+ (iii) Name one human activity that impacts on the population of white-tailed sea eagles.  
+  Poisoning or wind turbine or releasing chicks……….   3 
+ (iv) 1. Then, using a dashed line (- - - -), draw a graph to show how the number of 
+any one of its prey would vary over the same time period.  
+   Dashed line higher peaks than predator 3 
+   Dashed line out of sync with predator 3 
+  2. Give a detailed explanation of the graph that you have drawn for the prey 
+species.  
+   Line: Increases due to lower predator numbers or decreases due to 
+higher predator numbers 2 
+   Number: Higher number due to food availability or reference to size (prey 
+are usually smaller in size) 2 
+   Time: Delay in increase (in prey numbe rs) due to time taken to breed 2 
+ (v) Explain why food chains, such as those involving the white-tailed eagle, are limited 
+in length.  
+  Large loss in energy between trophic levels 3 
+7  + 3    
+  
+
+
+## Page 27
+
+Leaving Certificate 2025 27 
+Biology – Higher Level 
+Marking Scheme 
+Question 15 (continued)  
+(c) (i) Outline what is occurring during each process.  
+  1. Nitrogen fixation  
+   Nitrogen gas or atmospheric nitrogen converted to ammonia or ammonium or 
+nitrite or nitrate 3 
+  2. Decomposition  
+   Breakdown of (dead) organic matter (into usable compounds) 3 
+  3. Nitrification  
+   Conversion of ammonium (or ammoni a or urea) into nitrates (or nitrites) 3 
+  4. Denitrification  
+   Conversion of ammonia or ammonium or nitrite or nitrate or into nitrogen gas 
+or atmospheric nitrogen 3 
+ (ii) What is pollution?  
+  Harmful addition to the environment 3 
+ (iii) Name and state the effect of one pollutant from one of the following areas: 
+agriculture or industry or domestic. 
+ 
+  Name: correctly named pollutant 3 
+  Effect: correct matching effect 3 
+ (iv) Describe how the pollutant you have named in part (iii) above may be controlled.  
+  Correct matching control measure described 3 
+8    
+  
+
+
+## Page 28
+
+Leaving Certificate 2025 28 
+Biology – Higher Level 
+Marking Scheme 
+Question 16 Any two of (a), (b), (c), (d) 30, 30 
+ 
+Question 16 (a) 30 
+(i) Name the structures A, B and C.  
+ A: *Sporangium 1 
+ B: *Spore 1 
+ C: *Stolon 1 
+(ii) Give one function of structure C.  
+ Spread the fungus 3 
+(iii) Name the method of nutrition used by Rhizopus.  
+ Saprophytic or heterotrophic 3 
+(iv) 1. The Rhizopus shown in the diagram is reproducing asexually. 
+What evidence is there in the diagram to support this statement?  
+  Spores (are being released) or presence of sporangium or sporangiophore 3 
+ 2. Describe the process of sexual reproduction in Rhizopus.  
+  
++ and – strains grow close together / 
+swellings form (opposite each other) /  
+progametangia are formed /  
+gametangium formed / 
+fertilisations of haploid nuclei occur /  
+diploid nuclei formed /  
+zygospore formed /  
+survives adverse conditions / 
+germinates by meiosis when suitable conditions are present Any four 4(3) 
+(v) Name a beneficial use and a harmful effect of fungi.  
+ Correct beneficial effect named 3 
+ Correct harmful effect named 3 
+3  + 9    
+  
+
+
+## Page 29
+
+Leaving Certificate 2025 29 
+Biology – Higher Level 
+Marking Scheme 
+Question 16 (b) 30 
+(i) Name the structures A and B, and the type of blood cell labelled C, that transports a 
+gas around the body. 
+ 
+ A:  *Capillary 1 
+ B:  *Alveolus 1 
+ C:  *Red (blood cell) 1 
+(ii) Give one way structure B is adapted for its function in gas exchange.  
+ Moist (internal) surface or thin walled or covered in capillaries or large surface area 3 
+(iii) 1. Match each gas to the letters X and Y, based on their main directions of 
+movement. 
+ 
+  X: *Carbon dioxide (or CO2) and Y: *Oxygen (or O2) 3 
+ 2. What term describes the movement of these gases?  
+  *Diffusion 3 
+(iv) Name two muscles that are directly involved in inhalation.  
+ *Intercostals 3 
+ *Diaphragm 3 
+(v) Describe the changes that occur in the chest during exhalation.  
+ 
+Muscles or named relax /  
+rib cage moves down and inwards / 
+diaphragm moves up / 
+volume decreases /  
+(air) pressure increases / 
+air moves out (of the lungs) Any three 3(3) 
+(vi) Give one treatment for one of the following breathing disorders: bronchitis or asthma. 
+In your answer, state clearly to which disorder you are referring. 
+ 
+ Correct matching treatment 3 
+3  + 9    
+  
+
+
+## Page 30
+
+Leaving Certificate 2025 30 
+Biology – Higher Level 
+Marking Scheme 
+Question 16 (c) 30 
+(i) What is interphase?  
+ State of non-division in a cell 3 
+(ii) Name a cell activity that occurs during interphase.  
+ Respiration or photosynthesis or protein synthesis………. 3 
+(iii) The diagram shows a stage of mitosis.  
+ 1. Name the stage shown.  
+  *Telophase 3 
+ 2. What is the diploid number of this cell?  
+  *4 3 
+ 3. Draw a series of labelled diagrams of this cell as it would appear during the other 
+three stages of mitosis. 
+ 
+  Diagram of prophase: Nucle ar membrane disappearing and chromosomes 
+visible 3 
+  Diagram of metaphase: Four duplicated chromosomes are lined up on the 
+equator of the cell and spindle fibres are shown 3 
+  Diagram of anaphase: Four chromosomes pulled to each pole by spindle 3 
+  Any three correct labels on the any of the three diagrams 3(1) 
+(iv) Give two ways in which meiosis is different to mitosis.  
+ 
+Meiosis halves the chromosome number and mitosis maintains the chromosome 
+number / 
+Meiosis produces 4 cells and mitosis produces 2 cells /  
+Meiosis produces genetically different cells and mitosis produces genetically identical 
+cells Any two 2(3) 
+9  + 3    
+  
+
+
+## Page 31
+
+Leaving Certificate 2025 31 
+Biology – Higher Level 
+Marking Scheme 
+Question 16 (d)  30 
+(i) 1. Name two organs of the lymphatic system.  
+  Lymph vessel / lymph node / thymus / adenoid / tonsil / spleen  Any two 2(3) 
+ 2. Other than maturation of lymphocytes, give two functions of the lymphatic system.  
+  
+Return (excess tissue) fluid to the blood /  
+transport fats /  
+fight infection……….  Any two  2(3) 
+(ii) State the precise location in the body where lymphocytes are produced?  
+ *Bone marrow 3 
+(iii) Name two types of lymphocyte and describe the role of each.  
+ Name of lymphocyte 1 3 
+ Correct matching role of lymphocyte 1 3 
+ Name of lymphocyte 2 3 
+ Correct matching role of lymphocyte 2 3 
+(iv) Explain the term vaccination.  
+ Administration of an attenuated pathogen (or antigen) (that stimulates active 
+immunity) 3 
+10   
+  
+
+
+## Page 32
+
+Leaving Certificate 2025 32 
+Biology – Higher Level 
+Marking Scheme 
+Question 17 Any two of (a), (b), (c), (d) 30, 30 
+ 
+Question 17 (a) 30 
+(i) Using the diagram as an aid, answer the following questions.  
+ 1. Name both circuits.  
+  *Pulmonary 3 
+  *Systemic 3 
+ 2. Which of these circuits receives blood from the left ventricle?  
+  *Systemic 3 
+ 3. Name the blood vessel that is carrying blood highest in oxygen.  
+  *Pulmonary vein 3 
+ 4. Name the blood vessel that is carrying blood highest in nutrients.  
+  *Hepatic portal vein 3 
+(ii) State the precise function of the following in the heart:  
+ 1. Sino-atrial (SA) node  
+  Sends impulse to the atria (to cause contraction) or sends impulse to AV node or 
+controls the rate of contractions (of atria) or pacemaker 3 
+ 2. Septum  
+  Separates oxygenated and deoxygenated bloods or separates blood in the left 
+side from the right side 3 
+(iii) What term is used to describe the period of time during which the heart muscle is 
+contracting? 
+ 
+ *Systole 3 
+(iv) Give two structural differences between arteries and veins.  
+ 
+Arteries have thick walls and veins have thin walls / 
+arteries have no valves and veins have valves / 
+arteries have a narrow lumen and veins have a wide lumen Any two 2(3) 
+10    
+  
+
+
+## Page 33
+
+Leaving Certificate 2025 33 
+Biology – Higher Level 
+Marking Scheme 
+Question 17 (b) 30 
+(i) Name any three types of joint found in the human skeleton and give a matching 
+precise location for each type.  
+ Three correctly named joint types 3(2) 
+ Matching locations stated correctly 3(2) 
+(ii) Name any one antagonistic muscle pair and describe how it functions in creating 
+movement. 
+ 
+ Correctly named antagonistic muscle pair 3 
+ First movement: when one (named) muscle contracts and the joint moves in a 
+particular direction 3 
+ Second movement: when the other (named) muscle contracts and the joint moves 
+in the opposite direction to the first movement 3 
+(iii) Sketch the internal structure of a long bone and label at least three parts.  
+ Diagram: Epiphysis and diaphysis and medullary cavity [Any one missing = 3] 6, 3, 0 
+ Labels: Medullary cavity / cartilage / co mpact bone / spongy bone / epiphysis / 
+diaphysis……….  Any three 3(1) 
+6  + 5  + 3   
+  
+
+
+## Page 34
+
+Leaving Certificate 2025 34 
+Biology – Higher Level 
+Marking Scheme 
+Question 17 (c) 30 
+(i) Explain the underlined term.  
+ (Homeostasis is) the maintenance of a constant internal environment 3 
+(ii) Name the endocrine gland that secretes ADH.  
+ *Pituitary 3 
+(iii) Name one specific part of the nephron (functional unit of the kidney) that ADH 
+affects. 
+ 
+ Distal convoluted tubule or collecting duct 3 
+(iv) What effect does increased ADH have on the volume of urine produced by the kidneys?  
+ Lowers (the volume) 3 
+(v) 1. State the relationship between blood volume and ADH levels in this case.  
+  Blood volume decreases and ADH levels increases. 3 
+ 2. Suggest how the athlete might increase their blood volume back to normal.  
+  Intake fluids 3 
+ 
+3. Copy graph Y into your answerbook and continue the line to show how ADH 
+levels would change if the athlete brought their blood volume back to normal 
+after exercising. 
+ 
+  Line reducing 3 
+  Line levels off at the same level as the start 3 
+(vi) State two ways the skin can help the athlete’s homeostasis.  
+ Sweating / vasodilation / vasoconstriction / piloerection Any two 2(3) 
+10    
+  
+
+
+## Page 35
+
+Leaving Certificate 2025 35 
+Biology – Higher Level 
+Marking Scheme 
+Question 17 (d) 30 
+(i) Draw the structure of the male reproductive system and label at least three parts.  
+ Diagram: Penis and testes and sperm duct and urethra [Any one missing = 3] 6, 3, 0 
+ Labels: Penis / testes / urethra / sperm duct / epididymis / prostate / seminal 
+vesicles / scrotum………. Any three 3(1) 
+ On your diagram, write the letters, X, Y and Z to indicate the specific locations 
+where each of the following occurs:  
+ 1. Sperm production (X)  
+  X located in the testes 1 
+ 2. Sperm storage (Y)  
+  Y located in the epididymis 1 
+ 3. Seminal fluid production (Z)  
+  Z located on the prostate or seminal vesicles 1 
+(ii) Name parts A and B and give one role for each part.  
+ A: Head 1 
+ Function of A: Holds the nucleus (or DNA or genes) 2 
+ B: Tail 1 
+ Function of B: Movement 2 
+(iii) What is the approximate survival time for sperm cells following copulation?  
+ Up to 7 days 3 
+(iv) Where does fertilisation usually occur in the female?  
+ *Fallopian tube 3 
+(v) Give one cause of infertility and describe a corrective measure.  
+ Correct cause given 3 
+ Corrective measure given 3 
+6  + 8  + 2   
+ 
+
+
+## Page 36
+
+ 
+ 
+ 
+ 
+ 
+ 

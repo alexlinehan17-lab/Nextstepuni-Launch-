@@ -19,11 +19,11 @@ The paper totals **400 marks** (confirmed by the Irish-bonus table, which is the
 
 | Section | Rule | Marks | Per question |
 |---|---|---|---|
-| A | Best 5 (of 6) | 100 | 20 |
-| B | Best 2 (of 3) | 60 | 30 |
-| C | Best 4 (of 6) | 240 (`4(60)`) | 60 |
+| A | Best 5 (of 7 — Q1–Q7) | 100 | 20 |
+| B | Best 2 (of 3 — Q8–Q10) | 60 | 30 |
+| C | Best 4 (of 7 — Q11–Q17) | 240 (`4(60)`) | 60 |
 
-(Section A "Best 5 **100**", p.8; Section B "Best 2 **60**", p.11; Section C "Best 4 **4(60)**", p.13.)
+(Section A "Best 5 **100**", p.8; Section B "Best 2 **60**", p.11; Section C "Best 4 **4(60)**", p.13. Question count corrected 2026-07-06 during 2025-HL cross-verification: Sections A and C each present **seven** questions, not six — Q1–Q7 and Q11–Q17 respectively. Confirmed in both the 2023 and 2025 HL schemes.)
 
 **Irish bonus (p.7):** "Bonus marks at the rate of 10% of the marks obtained will be given to a candidate who answers entirely through Irish and who obtains 75% or less of the total mark available" (i.e. 300 marks or less). Above 300 a tapered table applies. "In calculating the bonus to be applied, decimals are always rounded down, not up."
 

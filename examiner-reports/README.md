@@ -32,7 +32,9 @@ For multi-year syntheses, the prefix is `<start-year>-<end-year>-` (e.g.
 | English | 2025 | Marking scheme | Higher | SEC `Leaving Certificate 2025 Marking Scheme — English, Higher Level` (mirrored PDF, educateplus.ie) | PDF + MD + insights |
 | English | 2013 | Chief Examiner | Higher / Ordinary | `Chief_Examiner_Report_English_2013.pdf` (examinations.ie, via Internet Archive) | PDF + MD + insights |
 | French | 2025 | Marking scheme | Higher | SEC `Leaving Certificate 2025 Marking Scheme — French, Higher Level` (mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| French | 2024 | Marking scheme | Higher | SEC `Leaving Certificate 2024 Marking Scheme — French, Higher Level` (`French HL_0.pdf`, mirrored PDF, educateplus.ie) | PDF + MD + verification |
 | Physics | 2025 | Marking scheme | Higher | SEC `Leaving Certificate 2025 Marking Scheme — Physics, Higher Level` (mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| Physics | 2023 | Marking scheme (second-year verification cross-check) | Higher | SEC `Leaving Certificate 2023 Marking Scheme — Higher Level Physics` (mirrored PDF, thephysicsteacher.ie) | PDF + MD + verification |
 | History | 2025 | Marking scheme | Higher | SEC `Leaving Certificate 2025 Marking Scheme — Higher Level History` (mirrored PDF, educateplus.ie) | PDF + MD + insights |
 | Irish | 2025 | Marking scheme (written papers) | Higher | SEC `An Ardteistiméireacht 2025 — Scéim Mharcála, Ardleibhéal, Gaeilge` (mirrored PDF, educateplus.ie) | PDF + MD + insights |
 | Accounting | 2024 | Marking scheme | Higher | SEC `Leaving Certificate 2024 Marking Scheme — Higher Level Accounting` (mirrored PDF, educateplus.ie) | PDF + MD + insights |
