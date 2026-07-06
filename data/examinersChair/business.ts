@@ -23,6 +23,7 @@ const B1: GridSession = {
   mode: 'grid',
   id: 'biz-theory-link',
   subject: 'business',
+  level: 'higher',
   title: 'Theory + link, or nothing',
   cue: 'Outline (ABQ)',
   caseText:
@@ -146,6 +147,7 @@ const B2: GridSession = {
   mode: 'grid',
   id: 'biz-list-rule',
   subject: 'business',
+  level: 'higher',
   title: 'List means list',
   cue: 'List',
   question:
@@ -224,6 +226,7 @@ const B3: GridSession = {
   mode: 'grid',
   id: 'biz-precision',
   subject: 'business',
+  level: 'higher',
   title: 'Precision beats vibes',
   cue: 'Explain',
   question: 'Explain the insurance principles of utmost good faith and insurable interest.',
@@ -321,6 +324,7 @@ const B4: GridSession = {
   mode: 'grid',
   id: 'biz-evaluate',
   subject: 'business',
+  level: 'higher',
   title: 'Evaluate means judge',
   cue: 'Evaluate',
   caseText:
@@ -404,6 +408,7 @@ const B5: GridSession = {
   mode: 'grid',
   id: 'biz-workings',
   subject: 'business',
+  level: 'higher',
   title: 'Show your workings',
   cue: 'Calculate',
   question:
@@ -487,6 +492,7 @@ const B6: GridSession = {
   mode: 'grid',
   id: 'biz-chart',
   subject: 'business',
+  level: 'higher',
   title: 'The chart IS the marks',
   cue: 'Illustrate (chart)',
   question:
@@ -570,11 +576,14 @@ const B6: GridSession = {
 
 export const BUSINESS_CHAIR: ChairSubject = {
   id: 'business',
-  label: 'Business (Higher)',
+  label: 'Business',
   tagline: 'Grids, cues and links — where Business marks are actually won.',
+  offeredLevels: ['higher', 'ordinary'],
   sessions: [B1, B2, B3, B4, B5, B6],
   sources: [
     { label: 'SEC Business HL marking scheme 2025 (examiner-reports/business/2025-marking-scheme)' },
     { label: 'Chief Examiner’s Report, Business 2015 (examiner-reports/business/2015-chief-examiner)' },
   ],
+  coverageNote:
+    'Higher Level sessions are verified against the 2025 HL marking scheme. Ordinary Level shares the same question cues and grid logic; OL-specific sessions (verified against an OL scheme) are being added.',
 };

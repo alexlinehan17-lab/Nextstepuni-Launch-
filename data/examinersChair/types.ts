@@ -26,7 +26,20 @@
  *    the scale, exactly like the examiner's right-margin annotation.
  */
 
-export type ChairSubjectId = 'business' | 'maths';
+export type ChairSubjectId = string;
+
+/**
+ * Exam level a session's marking rules are verified for. 'common' means the
+ * cited source states the rules apply across levels.
+ */
+export type ChairLevel = 'higher' | 'ordinary' | 'foundation' | 'common';
+
+export const LEVEL_LABEL: Record<ChairLevel, string> = {
+  higher: 'Higher',
+  ordinary: 'Ordinary',
+  foundation: 'Foundation',
+  common: 'All levels',
+};
 
 /** A source citation shown in-app and recorded in the dossier. */
 export interface ChairCite {
@@ -82,7 +95,9 @@ export interface GridScript {
 export interface GridSession {
   mode: 'grid';
   id: string;
-  subject: 'business';
+  subject: ChairSubjectId;
+  /** The level whose scheme the grid is verified against. */
+  level: ChairLevel;
   title: string;
   /** The question cue this session trains, e.g. "Outline", "List", "Evaluate". */
   cue: string;
@@ -131,7 +146,9 @@ export interface ScaleScript {
 export interface ScaleSession {
   mode: 'scale';
   id: string;
-  subject: 'maths';
+  subject: ChairSubjectId;
+  /** The level whose scheme the scale rules are verified against. */
+  level: ChairLevel;
   title: string;
   cue: string;
   question: string;
@@ -155,7 +172,19 @@ export interface ChairSubject {
   label: string;
   /** One-line description of what marking literacy looks like in this subject. */
   tagline: string;
+  /**
+   * Levels this subject is actually examined at (drives the level tabs). A
+   * 'common' session shows under every offered level; a level-specific session
+   * shows only under its own level. This lets shared marking conventions serve
+   * all levels honestly while level-specific mark allocations stay pinned.
+   */
+  offeredLevels: ChairLevel[];
   sessions: MarkingSession[];
   /** The sources every rule in this subject's sessions traces to. */
   sources: ChairCite[];
+  /**
+   * Honest coverage note shown on the subject screen, e.g. which levels have
+   * level-specific sessions yet and which currently rely on shared conventions.
+   */
+  coverageNote?: string;
 }

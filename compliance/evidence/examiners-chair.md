@@ -32,6 +32,18 @@ every session, grid, scale and embodied-insight citation is non-empty.
 | CER-B-2015 | Chief Examiner's Report, Business 2015 | `examiner-reports/business/2015-chief-examiner.{pdf,md}` + `2015-insights.md` | SEC-published report; behavioural findings cited by page. |
 | MS-M-2023 | SEC LC Mathematics marking scheme 2023, Ordinary Level (Paper 2 portion) | `examiner-reports/maths/2023-marking-scheme-ol-p2.{pdf,md}` + `2023-insights.md` | SEC-published finalised scheme (mirrored copy retrieved 2026-07-05, filed per the examiner-reports process); scale system and rules below quoted from pp.[28]–[35]. |
 | CER-M-2015 | Chief Examiner's Report, Mathematics 2015 | `examiner-reports/maths/2015-chief-examiner.{pdf,md}` + `2015-insights.md` | SEC-published report; behavioural findings cited by page. |
+| MS-E-2025 | SEC LC English HL marking scheme 2025 | `examiner-reports/english/2025-marking-scheme.{pdf,md}` + `2025-insights.md` | SEC-published scheme (mirrored copy retrieved 2026-07-06); PCLM weightings and rules quoted by page. |
+| CER-E-2013 | Chief Examiner's Report, English 2013 | `examiner-reports/english/2013-chief-examiner.{pdf,md}` + `2013-insights.md` | SEC-published report (latest for English); behavioural findings cited by page. |
+| MS-BIO-2023 | SEC LC Biology HL marking scheme 2023 (Deferred sitting) | `examiner-reports/biology/2023-marking-scheme.{pdf,md}` + `2023-insights.md` | SEC-published scheme; general conventions are the SEC standard framework (identical across sittings), only per-question answers are paper-specific. |
+| MS-GEO-2025 | SEC LC Geography HL marking scheme 2025 | `examiner-reports/geography/2025-marking-scheme.{pdf,md}` + `2025-insights.md` | SEC-published scheme; SRP system and rules quoted by page. |
+| CER-GEO-2012 | Chief Examiner's Report, Geography 2012 | `examiner-reports/geography/2012-chief-examiner.{pdf,md}` + `2012-insights.md` | SEC-published report (latest for Geography); behavioural findings cited by page. |
+
+**Levels.** Each session is tagged with the level whose scheme its rules are verified
+against. Sessions tagged `common` teach a marking convention the cited source states
+applies across levels (e.g. the Maths A–D scale system, English PCLM, Biology's points
+conventions) — these legitimately serve every level a subject offers. Level-specific
+mark allocations are pinned to their own level. Every subject carries an in-app
+`coverageNote` stating which levels have level-specific sessions yet.
 
 ---
 
@@ -150,6 +162,93 @@ every session, grid, scale and embodied-insight citation is non-empty.
 
 ---
 
+## Claim-by-claim record — English sessions (level: common — PCLM applies to every task, both papers, both levels)
+
+### E1 `eng-purpose-cap` — the primacy-of-Purpose cap
+- **Rules:** PCLM criteria and 30/30/30/10 split (MS-E-2025 p.3); the rule that Coherence
+  and Language "cannot exceed the marks awarded for Clarity of Purpose" (MS-E-2025 p.3).
+- **Scenario:** authored — a fluent but off-question Single Text answer with provisional
+  Purpose 9/18, Language 18/18; the cap forces Coherence to 9. The arithmetic of the cap
+  is a direct application of the stated rule.
+- **Embodied behaviour:** fluent writing that does not engage the question (a low-Purpose
+  profile) — the "knowledge/style managed to the question" theme (CER-E-2013 p.11, p.13).
+
+### E2 `eng-unseen-poem` — the compulsory Unseen Poem
+- **Rules:** the Unseen Poem is a compulsory 20-mark section (Poetry = Unseen 20 +
+  Prescribed 50); no single "correct" reading, a supported personal response scores
+  (MS-E-2025 p.42).
+- **Embodied behaviour:** skipping the compulsory section, "a loss of up to twenty marks",
+  and it being HL's lowest-scoring element (CER-E-2013 p.8–9, Table 4 p.7).
+
+### E3 `eng-evidence` — evidence as the discriminator
+- **Rules:** Comparative marked on PCLM (MS-E-2025 p.35); "the quality of evidence cited
+  to support an opinion was a significant discriminator" and careless quotation
+  undermines answers (CER-E-2013 p.18, p.8).
+- **Scenario + scripts:** authored; the grid criterion is whether the reference actually
+  supports the point (binary), teaching the discrimination the report describes.
+
+## Claim-by-claim record — Biology sessions (level: common — general conventions apply HL and OL)
+
+### BIO1 `bio-context` — the context rule
+- **Rules:** points-based marking (3m per point here); a key term scores only in a
+  correct statement (MS-BIO-2023 p.3–4). Synonyms accepted unless an exact term is
+  demanded (p.3).
+- **Scenario + scripts:** authored (osmosis into a root hair cell). Script A's osmosis
+  statement reverses the gradient (soil water is higher), so the correct term sits in a
+  false statement → 0, per the context rule.
+
+### BIO2 `bio-surplus` — the Section A surplus penalty
+- **Rules:** "A surplus wrong answer cancels the marks awarded for a correct answer"
+  (Section A) (MS-BIO-2023 p.4–5).
+- **Scenario:** authored — "Cellulose, glycogen" for structural carbohydrates. Cellulose
+  is structural (3m); glycogen is a storage carbohydrate → surplus wrong answer → cancels
+  → net 0. (Biology fact: cellulose is a structural polysaccharide; glycogen is a storage
+  polysaccharide — standard, uncontroversial.)
+
+### BIO3 `bio-asterisk` — the asterisk nullification (Sections B/C)
+- **Rules:** for single-term answers, an added wrong alternative nullifies the correct
+  one; such cases are flagged with * (MS-BIO-2023 p.5).
+- **Scenario:** authored — "Carbon dioxide or lactic acid" for yeast anaerobic
+  respiration. CO₂ is correct; lactic acid is the wrong (muscle) fermentation pathway;
+  the hedge nullifies → 0. (Biology fact: yeast fermentation yields ethanol + CO₂; lactic
+  acid fermentation is the animal-muscle pathway — standard.)
+
+## Claim-by-claim record — Geography sessions (level: higher — SRP counts are HL-specific; system also governs OL)
+
+### GEO1 `geo-srp` — what counts as an SRP
+- **Rules:** an SRP is "a single piece of factual information" assigned a mark weighting,
+  typically 2 marks (MS-GEO-2025 p.3); landform grid "Landform named 2 marks /
+  Examination 14 × SRPs" (p.9).
+- **Scenario + scripts:** authored; non-factual warm-up/opinion sentences score 0 SRPs,
+  specific formation facts score 2 — the definition applied.
+
+### GEO2 `geo-diagram` — the diagram rule
+- **Rules:** a labelled diagram earns 1 SRP; "Diagram without labelling 0 marks"
+  (MS-GEO-2025 p.6–14, recurring).
+- **Scenario:** authored — an accurate but unlabelled diagram → 0.
+
+### GEO3 `geo-wrong-process` — answer the question asked
+- **Rules:** "Examination of processes of erosion 0 marks" where deposition was required
+  (MS-GEO-2025 p.9).
+- **Scenario:** authored — a detailed waterfall (erosion) answer to a deposition question
+  → 0 for the examination. **Embodied behaviour:** the documented waterfall/deposition
+  mismatch, "awarded no marks" (CER-GEO-2012 p.25).
+
+### GEO4 `geo-coherence` — the graded Overall Coherence mark
+- **Rules:** Options essays carry a graded Overall Coherence mark of 20, descriptors
+  Excellent 20 / Very Good 17 / Good 14 / Fair 10 / Weak 6 / Poor 0 (MS-GEO-2025 p.47).
+- **Scenario:** authored — unordered, topic-not-question facts land ~Weak (6).
+  **Embodied behaviour:** "banks of knowledge" not shaped to the question (CER-GEO-2012
+  p.30).
+
+**Note on volatility (English & Geography schemes):** both 2025 schemes carry the SEC
+caveat that details "are subject to change from one year to the next without notice"
+(MS-E-2025 p.2; MS-GEO-2025 p.2). The rules used here are structural conventions (PCLM,
+the SRP system, Overall Coherence) that are stable year to year; if a future scheme
+changes them, the affected sessions and this dossier are updated together.
+
+---
+
 ## Honesty measures (in-app)
 
 1. Every session's `questionNote` states the question/case/scripts are authored and
@@ -172,9 +271,17 @@ claims are exclusively about how SEC marking works, each cited above.
 
 ## Scope & expansion protocol
 
-v1 ships Business (HL) and Mathematics. Per the product direction (2026-07-06), the
-tool expands to **every applicable subject/paper**: for each new subject, (1) obtain
-the SEC marking scheme / Chief Examiner's Report, (2) file it into `/examiner-reports/`
-(PDF + md + insights per the CLAUDE.md process), (3) author sessions citing only rules
-that document supports, (4) extend this dossier in the same change. Subjects for which
-no verifiable scheme can be obtained are skipped and recorded here with the reason.
+Current coverage: **English, Mathematics, Business, Biology, Geography.** Per the product
+direction (2026-07-06), the tool expands to **every applicable subject at Higher,
+Ordinary and Foundation level (where the subject offers it)**. Protocol for each new
+subject/level: (1) obtain the SEC marking scheme / Chief Examiner's Report, (2) file it
+into `/examiner-reports/` (PDF + md + insights per the CLAUDE.md process), (3) author
+sessions citing only rules the document supports, tagged with the verified level (or
+`common` where the cited rule is a documented cross-level convention), (4) extend this
+dossier in the same change. Subjects/levels for which no verifiable scheme can be
+obtained are skipped and recorded here with the reason.
+
+**Remaining subjects to add** (loop in progress): Irish, French/German/Spanish, History,
+Chemistry, Physics, Accounting, Economics, Home Economics, Art, and the remaining LC
+subjects — plus level-specific (OL/Foundation) worked examples for the subjects already
+covered by shared conventions.

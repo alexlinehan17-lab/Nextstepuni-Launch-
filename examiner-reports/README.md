@@ -26,8 +26,13 @@ For multi-year syntheses, the prefix is `<start-year>-<end-year>-` (e.g.
 | Business | 2015 | Chief Examiner | Higher / Ordinary | `CHIEFEXAMINERREPORTBUSINESS.pdf` | PDF + MD + insights |
 | Business | 2025 | Marking scheme | Higher | `BUSINESS HL MARK SCHEME 2025.pdf` | PDF + MD + insights |
 | Maths | 2023 | Marking scheme (P2 portion) | Ordinary | SEC `LC 2023 Mathematics OL Marking Scheme` (mirrored PDF) | PDF + MD + insights |
+| Biology | 2023 | Marking scheme (Deferred sitting) | Higher | SEC `LC 2023 Biology HL Marking Scheme — Deferred Examinations` (mirrored PDF) | PDF + MD + insights |
+| Geography | 2025 | Marking scheme | Higher | SEC `Leaving Certificate 2025 Marking Scheme — Higher Level Geography` (mirrored PDF) | PDF + MD + insights |
+| Geography | 2012 | Chief Examiner | Higher / Ordinary | `2012_Chief_Examiner_Report_LC_Geography.pdf` (examinations.ie archive) | PDF + MD + insights |
+| English | 2025 | Marking scheme | Higher | SEC `Leaving Certificate 2025 Marking Scheme — English, Higher Level` (mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| English | 2013 | Chief Examiner | Higher / Ordinary | `Chief_Examiner_Report_English_2013.pdf` (examinations.ie, via Internet Archive) | PDF + MD + insights |
 
-_Last updated: 2026-07-05_
+_Last updated: 2026-07-06_
 
 ## Adding a new report
 
