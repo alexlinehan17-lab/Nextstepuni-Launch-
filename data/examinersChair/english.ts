@@ -581,17 +581,482 @@ const ENG8: GridSession = {
   },
 };
 
+// ───────────────── Eng9 · There is no model answer ─────────────────
+
+const ENG9: GridSession = {
+  mode: 'grid',
+  id: 'eng-indicative',
+  subject: 'english',
+  level: 'common',
+  title: 'There is no model answer',
+  cue: 'Critical literacy',
+  question:
+    'The scheme prints “indicative material” under every question — but warns it “is not exhaustive and all appropriate valid answers should be marked according to their merits.” Mark these points: some appear on no indicative list; some echo a listed point but add nothing.',
+  questionNote:
+    'Scenario authored for this exercise. The scheme’s indicative material is a guide, not a checklist — a valid reading the examiners never listed still scores, and naming a listed point without genuine engagement does not.',
+  grid: {
+    perPoint: [{ id: 'merit', label: 'Valid answer, credited on its merits', marks: 3 }],
+    shorthand: 'merit · not a checklist',
+    ruleNote:
+      'The examiner does not tick points off a fixed list. A fresh, valid, relevant reading the indicative material never mentions earns full credit; merely echoing a “listed” point as a bald assertion, with no relevant engagement, earns nothing. Answers are marked on their merits, not on matching a model.',
+    cite: MS('p.3 (indicative material “not exhaustive… marked according to their merits”)'),
+  },
+  scripts: [
+    {
+      id: 'eng9-a',
+      label: 'Script A',
+      persona: 'Fresh readings, off the model answer',
+      attempts: [
+        {
+          id: 'eng9-a-1',
+          text: 'The narrator’s obsession with clocks isn’t about punctuality at all — it reads as his way of pretending he still controls a life that is running out from under him.',
+          key: { merit: 3 },
+          keyNote:
+            'This precise, supported reading appears on no indicative list — and it doesn’t need to. A valid answer is “marked according to its merits”, so an original interpretation scores full credit exactly like a listed one.',
+        },
+        {
+          id: 'eng9-a-2',
+          text: 'The story’s flat, factual tone quietly does the opposite of what it says: the calmer the narrator sounds, the more we sense the panic underneath.',
+          key: { merit: 3 },
+          keyNote:
+            'Another fresh, well-grounded observation the scheme never anticipated. The indicative material “is not exhaustive”; a thoughtful new point is credited, not penalised for being new.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Offers valid, original readings the indicative material never lists — which the scheme requires be marked on their merits.',
+        cite: MS('p.3'),
+      },
+    },
+    {
+      id: 'eng9-b',
+      label: 'Script B',
+      persona: 'Echoes the “right” points, adds nothing',
+      attempts: [
+        {
+          id: 'eng9-b-1',
+          text: 'This poem is about the passing of time and how nothing lasts forever, which is a theme in the poem.',
+          key: { merit: 0 },
+          keyNote:
+            'It names a point that would sit comfortably on any indicative list — “the passing of time” — but only as a bald label, with nothing drawn from the poem. A listed point asserted without engagement is not a mark; merit, not matching, is what scores.',
+        },
+        {
+          id: 'eng9-b-2',
+          text: 'Time is shown through the image of the “stopped clock on the stairs”, which the narrator refuses to reset — he keeps the house frozen at the hour she left.',
+          key: { merit: 3 },
+          keyNote:
+            'The same broad idea, now earned: a specific image, handled and interpreted. This is what “on its merits” means — the point is credited for the engagement, not for belonging to the scheme’s list.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-eng9',
+    rule: 'Answers are marked on merit, not against a checklist.',
+    detail:
+      'The scheme’s indicative material is a guide, not a list to tick off: a valid, original reading scores full credit even if the examiners never listed it, and echoing a “correct” point without genuine engagement scores nothing. Write your own supported response — don’t chase a model answer.',
+    cite: MS('p.3'),
+  },
+};
+
+// ───────────────── Eng10 · Composition — honour the genre ─────────────────
+
+const ENG10: ScaleSession = {
+  mode: 'scale',
+  id: 'eng-composition-genre',
+  subject: 'english',
+  level: 'common',
+  title: 'A short story that forgot to be a story',
+  cue: 'Composing (Paper 1)',
+  question:
+    'A Paper 1 Composition asks for a short story. A candidate writes a flat, chronological recount of “what I did on my holidays” — accurate and clear, but with no narrative shape, no characterisation, no real plot. Purpose on the composition is worth 30 (30% of 100). How high can it go?',
+  questionNote:
+    'Scenario authored for this exercise. The Composition is marked discretely P30/C30/L30/M10; Purpose includes “understanding of genre”, and the Chief Examiner’s Report calls familiarity with the chosen genre’s conventions “imperative”.',
+  scale: {
+    name: 'Composition · Purpose /30 (genre)',
+    levels: [
+      { id: 'p9', label: '9 (recount, not a story)', annotation: '9', marks: 9 },
+      { id: 'p20', label: '20 (some story craft)', annotation: '20', marks: 20 },
+      { id: 'p26', label: '26 (full command of the genre)', annotation: '26', marks: 26 },
+    ],
+    notes: [
+      'The Composition is marked discretely P30/C30/L30/M10; Purpose (30% of 100) is engagement with the set task, including understanding of genre.',
+      'CER: “It is imperative that candidates who choose to write in a particular genre be familiar with the conventions of that genre and show evidence of this knowledge.”',
+      'A flat recount with no narrative shape, characterisation or plot has chosen the short-story genre without meeting it — Purpose is capped, and by primacy-of-P so are Coherence and Language.',
+    ],
+    cite: CER('p.16 (genre conventions “imperative”; short-story craft), with PCLM 30% at MS 2025 p.3'),
+  },
+  scripts: [
+    {
+      id: 'eng10-a',
+      label: 'The recount',
+      persona: 'Clear prose, wrong genre entirely',
+      work: [
+        'Grammatical, orderly, easy to follow.',
+        'But it is a chronological “and then… and then…” account — no narrative shaping, no characterisation, no tension or plot.',
+        'The task set a short story; this is a diary of events.',
+      ],
+      keyLevelId: 'p9',
+      keyNote:
+        'Purpose is low — around 9 — because Purpose on a composition includes understanding of the genre, and a flat recount does not meet the short story it chose. The prose is clean, but fluency lives in Language, and primacy-of-P caps Language to Purpose. Choosing a genre means committing to its conventions: shape, character, plot.',
+      embodies: {
+        behaviour: 'Writes in the chosen genre without its conventions — the failure to “grasp the fundamentals of short-story writing” the report flags.',
+        cite: CER('p.15–16 (short stories “brief and lacked development”; genre conventions imperative)'),
+      },
+    },
+    {
+      id: 'eng10-b',
+      label: 'The story',
+      persona: 'Command of the genre',
+      work: [
+        'Opens in the middle of a moment, not at the start of a day.',
+        'A shaped narrative: a character we come to know, a rising tension, a turn, an ending that lands.',
+        'The conventions of the short story are visibly under control.',
+      ],
+      keyLevelId: 'p26',
+      keyNote:
+        'Top-band Purpose — around 26. The candidate chose the short-story genre and delivered its conventions: narrative shape, characterisation, a coherent plot. With Purpose high, Coherence and Language are free to score to their own level. Genre command is what unlocks the composition.',
+    },
+  ],
+  takeaway: {
+    id: 'codex-eng10',
+    rule: 'If you choose a genre, honour its conventions.',
+    detail:
+      'A composition’s Purpose includes understanding of genre, and the report calls command of the chosen genre’s conventions “imperative”. A short story that is really a flat recount — no shape, character or plot — caps Purpose no matter how clean the prose. Pick the genre you can actually deliver, then deliver its craft.',
+    cite: CER('p.16'),
+  },
+};
+
+// ───────────────── Eng11 · Comparative — valid texts / one film ─────────────────
+
+const ENG11: ScaleSession = {
+  mode: 'scale',
+  id: 'eng-comparative-valid-texts',
+  subject: 'english',
+  level: 'higher',
+  title: 'Two films, one penalty',
+  cue: 'The Comparative Study',
+  question:
+    'In the Comparative Study a candidate builds a strong 70-mark single answer — but two of the texts are films. The rule is explicit: “Candidates may refer to only one film in the course of their answers.” The second film makes that text invalid. What happens to the marks?',
+  questionNote:
+    'Scenario authored for this exercise. The scheme caps films at one and treats an invalid text under the same anomaly machinery as no-Shakespeare: on a single 70-mark answer, disallow one third of the marks, rounded down.',
+  scale: {
+    name: 'Comparative · invalid text /70',
+    levels: [
+      { id: 'm42', label: '~42 (one third disallowed)', annotation: '−⅓', marks: 42 },
+      { id: 'm63', label: '63 (if all texts valid)', annotation: '63', marks: 63 },
+    ],
+    notes: [
+      'Comparative rule: “Candidates may refer to only one film in the course of their answers.” A second film is an invalid text.',
+      'For an invalid text on a single-part 70-mark answer, the scheme disallows one third of the mark, rounded down.',
+      'So a 63/70 answer is adjusted to 42 — roughly a third of the marks, several grade bands, gone to a text-choice rule, not to the writing.',
+    ],
+    cite: MS('p.32 (“only one film”) and p.55 (invalid text: disallow one third of a 70-mark answer)'),
+  },
+  scripts: [
+    {
+      id: 'eng11-a',
+      label: 'The answer',
+      persona: 'Strong writing, two films',
+      work: [
+        'A genuinely strong comparative answer, provisionally worth about 63/70.',
+        'But two of the three texts are films — and only one film is permitted.',
+        'The second film is an invalid text for this section.',
+      ],
+      keyLevelId: 'm42',
+      keyNote:
+        'One third of the mark is disallowed for the invalid text — 63 becomes 42, several grade bands gone. The comparison was fine; the text choice was not. Be prepared to refer to three texts, and use no more than one film. Text selection is a marking decision you make before the exam.',
+      embodies: {
+        behaviour: 'Uses two films in the Comparative Study — one of the invalid-text combinations examiners penalise.',
+        cite: CER('p.8 (not permitted: “the use of two films”; be “prepared to refer to three texts”)'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-eng11',
+    rule: 'One film only — and be ready with three valid texts.',
+    detail:
+      'The Comparative Study allows reference to only one film, and every text must be on the prescribed comparative list. An invalid text costs one third of a 70-mark answer, rounded down — several grade bands. Choose three valid texts, at most one of them a film, before you sit down.',
+    cite: MS('p.32'),
+  },
+};
+
+// ───────────────── Eng12 · Compulsory Shakespeare (HL) ─────────────────
+
+const ENG12: ScaleSession = {
+  mode: 'scale',
+  id: 'eng-shakespeare-compulsory',
+  subject: 'english',
+  level: 'higher',
+  title: 'Skipping Shakespeare costs a third',
+  cue: 'Single Text (Paper 2)',
+  question:
+    'At Higher Level, Paper 2 requires an engagement with Shakespeare — it is effectively compulsory. A candidate answers the Single Text on a non-Shakespearean text and never engages Shakespeare anywhere on the paper. What does the scheme do?',
+  questionNote:
+    'Scenario authored for this exercise. HL Paper 2 requires an engagement with Shakespeare; if there is “no attempt at Shakespeare”, the scheme applies an adjustment — for a single 70-mark comparative answer, disallow one third of the marks, rounded down.',
+  scale: {
+    name: 'No Shakespeare · adjustment',
+    levels: [
+      { id: 'm42', label: '~42 (one third of the comparative disallowed)', annotation: '−⅓', marks: 42 },
+      { id: 'm63', label: '63 (with Shakespeare engaged)', annotation: '63', marks: 63 },
+    ],
+    notes: [
+      'HL Paper 2 requires an engagement with Shakespeare across the Single Text / Comparative choice.',
+      'If “there is no attempt at Shakespeare”, mark the answers, then adjust: on a single-part 70-mark comparative, “disallow one third of the mark awarded… rounded down”.',
+      'The scheme awards whichever outcome is best for the candidate — but the ceiling still drops by a third of a whole section.',
+    ],
+    cite: MS('p.55 (“THERE IS NO ATTEMPT AT SHAKESPEARE” → disallow one third of a 70-mark comparative)'),
+  },
+  scripts: [
+    {
+      id: 'eng12-a',
+      label: 'The paper',
+      persona: 'Avoids Shakespeare entirely',
+      work: [
+        'A confident Single Text answer — on a non-Shakespearean text.',
+        'A strong 70-mark comparative, provisionally about 63/70.',
+        'Shakespeare appears nowhere on the paper.',
+      ],
+      keyLevelId: 'm42',
+      keyNote:
+        'Because there is no attempt at Shakespeare, the scheme disallows one third of the comparative mark — 63 drops to 42. The rule is structural, not a judgement on quality: on Higher Level Paper 2 you must engage Shakespeare somewhere. Plan your Single Text choice around that requirement.',
+      embodies: {
+        behaviour: 'Answers Paper 2 with no engagement of Shakespeare, triggering the compulsory-Shakespeare adjustment.',
+        cite: MS('p.55'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-eng12',
+    rule: 'Engage Shakespeare somewhere on Paper 2.',
+    detail:
+      'At Higher Level, no attempt at Shakespeare triggers an adjustment — one third of a single 70-mark comparative answer disallowed, rounded down. It is a structural penalty independent of how good the writing is. Choose your Single Text so that Shakespeare is covered.',
+    cite: MS('p.55'),
+  },
+};
+
+// ───────────────── Eng13 · Prescribed Poetry — cross-reference the poet ─────────────────
+
+const ENG13: GridSession = {
+  mode: 'grid',
+  id: 'eng-poetry-crossref',
+  subject: 'english',
+  level: 'higher',
+  title: 'One poet, many poems',
+  cue: 'Prescribed Poetry',
+  question:
+    'The Prescribed Poetry question asks about a poet’s work — you have “freedom of choice in relation to the poems studied”. The report found candidates scored best when they “avoided a formulaic approach and demonstrated the ability to link and cross reference the work of their chosen poet”. Mark these points on that skill.',
+  questionNote:
+    'Scenario authored for this exercise. Prescribed Poetry is marked discretely P15/C15/L15/M5; candidates choose which poems to use, and the discriminator is linking and cross-referencing across the poet’s body of work rather than marching through one poem formulaically.',
+  grid: {
+    perPoint: [
+      { id: 'anchored', label: 'Anchored in a specific poem', marks: 2 },
+      { id: 'crossref', label: 'Linked across the poet’s work', marks: 2 },
+    ],
+    shorthand: 'P/C: anchored + cross-referenced',
+    ruleNote:
+      'A prescribed-poetry point earns most when it does BOTH: grounds the claim in a specific poem (not a vague impression of “the poet”), AND connects it across more than one poem to build a reading of the poet’s work. A formulaic single-poem summary anchors but never links; a floating generalisation about the poet links nothing to the page.',
+    cite: MS('p.44 (freedom of choice of poems) and CER 2013 p.9 (link and cross-reference the poet’s work)'),
+  },
+  scripts: [
+    {
+      id: 'eng13-a',
+      label: 'Script A',
+      persona: 'Marches through one poem',
+      attempts: [
+        {
+          id: 'eng13-a-1',
+          text: 'In the first poem the poet describes the frozen countryside stanza by stanza, and then the last line mentions loss.',
+          key: { anchored: 2, crossref: 0 },
+          keyNote:
+            'It is anchored in a real poem — that half is earned — but it is a formulaic walk through a single text, with no link to anything else the poet wrote. The cross-reference component stays empty.',
+        },
+        {
+          id: 'eng13-a-2',
+          text: 'The poem is very visual and uses a lot of imagery of cold, which the poet is known for.',
+          key: { anchored: 0, crossref: 0 },
+          keyNote:
+            'Now it floats: “the poet is known for” names no poem and links no poems — it is neither anchored nor cross-referenced. A general impression of a poet, tied to nothing on the page, banks neither component.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Handles poems formulaically, one at a time, without linking across the poet’s work — the approach the report says holds candidates back.',
+        cite: CER('p.9 (most successful when avoiding a formulaic approach; linking and cross-referencing)'),
+      },
+    },
+    {
+      id: 'eng13-b',
+      label: 'Script B',
+      persona: 'Reads the poet, not just a poem',
+      attempts: [
+        {
+          id: 'eng13-b-1',
+          text: 'The cold imagery of “the whole country hard as iron” in the first poem returns, warmed, in the thaw of the later poem — the poet keeps using weather to measure emotional distance.',
+          key: { anchored: 2, crossref: 2 },
+          keyNote:
+            'Both components: a specific quoted anchor AND an explicit link across two poems into a reading of the poet’s recurring method. This is the cross-referencing the section rewards.',
+        },
+        {
+          id: 'eng13-b-2',
+          text: 'That same instinct to hide feeling behind landscape drives the third poem too, where grief is never named, only located in an empty field.',
+          key: { anchored: 2, crossref: 2 },
+          keyNote:
+            'A third poem, anchored and linked to the same through-line. Building a claim across the body of work — not summarising one poem — is what lifts Prescribed Poetry.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-eng13',
+    rule: 'Read the poet, not one poem at a time.',
+    detail:
+      'Prescribed Poetry lets you choose your poems, and the marks reward linking and cross-referencing across the poet’s work — not a formulaic march through a single poem. Anchor each point in a specific poem, then connect it to others to build a reading of the whole body of work.',
+    cite: CER('p.9'),
+  },
+};
+
+// ───────────────── Eng14 · Critical literacy — you may disagree ─────────────────
+
+const ENG14: GridSession = {
+  mode: 'grid',
+  id: 'eng-critical-literacy',
+  subject: 'english',
+  level: 'common',
+  title: 'You’re allowed to disagree',
+  cue: 'Critical literacy',
+  question:
+    'Examiners report that candidates can be “overly reverential” to a question — meekly agreeing with its premise — and warn against “an overly literal interpretation of language”. Purpose and Coherence explicitly reward critical literacy. Mark these responses to a question that asserts a character is “purely a villain”.',
+  questionNote:
+    'Scenario authored for this exercise. The Chief Examiner’s Report notes candidates who take an “overly reverential approach to questions” can fail to show critical literacy; challenging or disagreeing with a question’s premise is an acceptable, credited approach.',
+  grid: {
+    perPoint: [{ id: 'critical', label: 'Shows critical literacy (engages, not just agrees)', marks: 3 }],
+    shorthand: 'P/C: critical literacy',
+    ruleNote:
+      'Critical literacy is credited under Purpose and Coherence. A response that meekly restates the question’s premise, or reads a line at flat face value, shows none of it. A response that genuinely engages the premise — testing it, qualifying it, disagreeing with support — does. You are not required to agree with the question.',
+    cite: CER('p.17 (reverential approach inhibits critical literacy; disagreement acceptable), MS 2025 p.50 (P/C reward critical literacy)'),
+  },
+  scripts: [
+    {
+      id: 'eng14-a',
+      label: 'Script A',
+      persona: 'Agrees, and only agrees',
+      attempts: [
+        {
+          id: 'eng14-a-1',
+          text: 'Yes, he is purely a villain. He does bad things all the way through and that makes him a villain, which is what the question says.',
+          key: { critical: 0 },
+          keyNote:
+            'This is reverence, not analysis — it restates the premise and stops. Echoing the question back shows no critical literacy, so the Purpose/Coherence credit for it is unearned.',
+        },
+        {
+          id: 'eng14-a-2',
+          text: 'When he says he is “a plain man”, it just means he is honest and simple, so that is what he is.',
+          key: { critical: 0 },
+          keyNote:
+            'An overly literal reading — the line is taken at flat face value, missing that “a plain man” is exactly his disguise. Literalism forfeits the critical-literacy credit the criteria reward.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Takes an overly reverential and overly literal approach — the two habits the report says suppress critical literacy.',
+        cite: CER('p.14, p.17 (guard against overly literal interpretation; overly reverential approach)'),
+      },
+    },
+    {
+      id: 'eng14-b',
+      label: 'Script B',
+      persona: 'Engages the premise on its merits',
+      attempts: [
+        {
+          id: 'eng14-b-1',
+          text: 'He is villainous, but “purely” overstates it: the same ruthlessness reads as loyalty when it serves his king, so the play makes us complicit before it lets us condemn him.',
+          key: { critical: 3 },
+          keyNote:
+            'This tests the premise instead of bowing to it — qualifying “purely”, holding two readings at once. Challenging the terms of a question with support is exactly the critical literacy the criteria reward.',
+        },
+        {
+          id: 'eng14-b-2',
+          text: 'When he calls himself “a plain man”, the flatness is the menace — he weaponises plainness, so the line means the opposite of what it says.',
+          key: { critical: 3 },
+          keyNote:
+            'A reading that refuses the literal surface and interprets the line. Guarding against literalism and reading for suggestion is credited critical literacy.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-eng14',
+    rule: 'You may disagree with the question.',
+    detail:
+      'Critical literacy is rewarded under Purpose and Coherence, and the report warns against an “overly reverential” or “overly literal” approach. Meekly agreeing with a question’s premise, or reading a line at face value, shows none of it. Test the premise, qualify it, disagree with support — engagement scores, reverence doesn’t.',
+    cite: CER('p.17'),
+  },
+};
+
+// ───────────────── Eng15 · Comparative two-part — (b) is two other texts ─────────────────
+
+const ENG15: ScaleSession = {
+  mode: 'scale',
+  id: 'eng-comparative-twopart',
+  subject: 'english',
+  level: 'higher',
+  title: 'Part (b) wants two other texts',
+  cue: 'The Comparative Study',
+  question:
+    'The two-part Comparative question is 30(a) + 40(b). Part (a) is answered on ONE text; part (b) must be answered on TWO OTHER texts — and “candidates are not required to make comparative links with the text discussed in part (a)”. A candidate answers (b) beautifully, but on only one text (the same one as (a)). How does part (b) fare?',
+  questionNote:
+    'Scenario authored for this exercise. In the two-part format, part (b) (40, combined criteria) is a comparative task on two texts other than the one used in part (a); answering it on a single text — or re-using the (a) text — misreads the task and caps the mark.',
+  scale: {
+    name: 'Comparative (b) · /40',
+    levels: [
+      { id: 'p12', label: '12 (one text, no comparison)', annotation: '12', marks: 12 },
+      { id: 'p24', label: '24 (two texts, thin comparison)', annotation: '24', marks: 24 },
+      { id: 'p34', label: '34 (two other texts, real comparison)', annotation: '34', marks: 34 },
+    ],
+    notes: [
+      'Two-part format: 30(a) on one text + 40(b) on two OTHER texts; part (b) is where the comparison lives.',
+      '“Candidates are not required to make comparative links with the text discussed in part (a)” — (b) stands on its own two texts.',
+      'Answering (b) on a single text removes the comparison the 40 marks exist to reward, capping the mark no matter how good the prose.',
+    ],
+    cite: MS('p.34 (part (b): two other texts; no required link to part (a))'),
+  },
+  scripts: [
+    {
+      id: 'eng15-a',
+      label: 'The answer',
+      persona: 'Fluent (b), but only one text',
+      work: [
+        'A fluent, well-written part (b) answer.',
+        'But it discusses a single text — the same one used in part (a) — and never brings in a second.',
+        'There is nothing to compare, and the required two-other-texts structure is missing.',
+      ],
+      keyLevelId: 'p12',
+      keyNote:
+        'Part (b) is a comparative task on two OTHER texts; answered on one, it forfeits the comparison the 40 marks are built to reward, so the mark is capped low — around 12/40 — and the fluent language can’t lift it, because a comparison task answered on one text cannot show clear purpose. Know the shape: (a) is one text, (b) is two different ones.',
+      embodies: {
+        behaviour: 'Answers the comparative part (b) on a single text, ignoring the two-other-texts requirement of the format.',
+        cite: MS('p.34'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-eng15',
+    rule: 'In the two-part question, (b) is two other texts.',
+    detail:
+      'The 30(a) + 40(b) Comparative format answers part (a) on one text and part (b) on two OTHER texts, with no required link back to (a). Answer (b) on a single text and you delete the comparison the 40 marks exist for, capping the mark. Fix which text is (a) and which two are (b) before you write.',
+    cite: MS('p.34'),
+  },
+};
+
 export const ENGLISH_CHAIR: ChairSubject = {
   id: 'english',
   label: 'English',
   tagline: 'PCLM — why answering the question beats writing beautifully.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [ENG1, ENG2, ENG3, ENG4, ENG5, ENG6, ENG7, ENG8],
+  sessions: [ENG1, ENG2, ENG3, ENG4, ENG5, ENG6, ENG7, ENG8, ENG9, ENG10, ENG11, ENG12, ENG13, ENG14, ENG15],
   sources: [
     { label: 'SEC LC English HL marking scheme 2025 (examiner-reports/english/2025-marking-scheme)' },
     { label: 'SEC LC English OL marking scheme 2025 (examiner-reports/english/2025-ol-marking-scheme)' },
     { label: 'Chief Examiner’s Report, English 2013 (examiner-reports/english/2013-chief-examiner)' },
   ],
   coverageNote:
-    'The PCLM sessions teach the criteria and primacy-of-Purpose rule the scheme applies to every task at both levels. Task-specific sessions are verified against the section they cite: Paper 1 Question B genre & register (common), and the Paper 2 Comparative Study “work through the mode” rule (Higher — the named modes are HL-specific). The Ordinary session is verified against the 2025 OL scheme (grades O1–O8; combined questions split P&C 60% / L&M 40%). More OL-specific worked examples are being added.',
+    'The PCLM sessions teach the criteria and primacy-of-Purpose rule the scheme applies to every task at both levels, alongside the “no model answer” (indicative-material) and critical-literacy rules that also hold across levels. Task-specific sessions are pinned to the section they cite: Paper 1 Question B genre & register and the Composition’s genre-conventions rule (common); and, at Higher Level, the Comparative Study “work through the mode”, the two-part part-(b) two-other-texts structure, the one-film / invalid-text penalty, the compulsory-Shakespeare adjustment, and Prescribed Poetry cross-referencing. The Ordinary session is verified against the 2025 OL scheme (grades O1–O8; combined questions split P&C 60% / L&M 40%). More OL-specific worked examples are being added.',
 };

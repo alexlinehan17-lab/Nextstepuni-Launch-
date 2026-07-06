@@ -21,7 +21,7 @@
  * Claim-by-claim record: compliance/evidence/examiners-chair.md.
  */
 
-import { type ChairSubject, type ScaleSession, type ScaleLevel } from './types';
+import { type ChairSubject, type ScaleSession, type GridSession, type ScaleLevel } from './types';
 
 const MS = (p: string) => ({ label: `SEC Irish HL marking scheme 2025, ${p}` });
 const MSOL = (p: string) => ({ label: `SEC Irish OL marking scheme 2025, ${p}` });
@@ -490,12 +490,421 @@ const IR8: ScaleSession = {
   },
 };
 
+// ─────────────── Ir9 · The 15 content marks reward staying on the title ───────────────
+
+const IONRAMHAIL_BANDS: ScaleLevel[] = [
+  { id: 'lag', label: 'Lag / bhearnach', annotation: '4', marks: 4 },
+  { id: 'measartha', label: 'Measartha', annotation: '7', marks: 7 },
+  { id: 'sarmhaith', label: 'Sármhaith', annotation: '14', marks: 14 },
+];
+
+const IR9: ScaleSession = {
+  mode: 'scale',
+  id: 'ir-ionramhail',
+  subject: 'irish',
+  level: 'higher',
+  title: 'Off the title, off the mark',
+  cue: 'Ceapadóireacht',
+  question:
+    'A composition starts on the chosen title, then drifts into a long, only-loosely-related tangent that fills much of the page. Off-title material is bracketed out (a vertical wavy line down the margin) and does not count. Of the 100 composition marks, 15 are Ionramháil Ábhair — the handling of material that ties closely to the title. Which Ionramháil band does the answer land in?',
+  questionNote:
+    'Scenario authored for this exercise. Ionramháil Ábhair (15 marks) rewards "tuairimí, smaointe, insint, eachtraí … a bhaineann go dlúth le hábhar theideal na ceapadóireachta" — ideas that tie closely to the title. Off-title material is bracketed out and does not count towards it.',
+  scale: {
+    name: 'Ionramháil Ábhair · /15 · bands',
+    levels: IONRAMHAIL_BANDS,
+    notes: [
+      'Composition = Stíl 5 + Ionramháil Ábhair 15 + Cumas Gaeilge 80.',
+      'Ionramháil Ábhair (15) rewards ideas, information and events that tie closely to the title.',
+      'Off-title material is bracketed out with a vertical wavy line down the margin and does not count.',
+      'A long tangent leaves only thin on-title handling — which holds Ionramháil in a low band, however much was written.',
+    ],
+    cite: MS('p.14 (Ionramháil Ábhair 15-mark band table)'),
+  },
+  scripts: [
+    {
+      id: 'ir9-a',
+      label: 'The composition',
+      persona: 'Starts on title, drifts off',
+      work: [
+        'Opens on the chosen title, then spends most of the page on a loosely-related tangent.',
+        'The off-title stretch is bracketed out and does not count.',
+        'Only a thin core of the writing actually handles the title.',
+      ],
+      keyLevelId: 'lag',
+      keyNote:
+        'Low Ionramháil band — the 15 content marks reward material that ties closely to the title, and the long tangent is bracketed out before it is even weighed. What is left is too thin to reach the higher bands. Stay on the title: relevant handling is what these 15 marks measure, not volume of writing.',
+      embodies: {
+        behaviour: 'Fills the page with off-title tangent that is bracketed out — leaving thin on-title handling and a low Ionramháil band.',
+        cite: MS('p.14'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-ir9',
+    rule: 'The content marks reward staying on the title.',
+    detail:
+      'Ionramháil Ábhair is 15 of the 100 composition marks, for handling material that ties closely to the chosen title. Off-title tangents are bracketed out and don’t count — so wandering thins your relevant content and caps this band. Keep every paragraph tied to the title.',
+    cite: MS('p.14'),
+  },
+};
+
+// ─────────────── Ir10 · Too short caps the mark before quality is judged ───────────────
+
+const LENGTH_CAPS: ScaleLevel[] = [
+  { id: 's3', label: 'S3 · ~½ page relevant', annotation: '44', marks: 44 },
+  { id: 's2', label: 'S2 · ~1 page relevant', annotation: '56', marks: 56 },
+  { id: 's1', label: 'S1 · ~1½ pages relevant', annotation: '68', marks: 68 },
+];
+
+const IR10: ScaleSession = {
+  mode: 'scale',
+  id: 'ir-length-cap',
+  subject: 'irish',
+  level: 'higher',
+  title: 'Too short caps the mark',
+  cue: 'Ceapadóireacht',
+  question:
+    'A composition is fluent and accurate — but short: only about one page of relevant, on-title material, against the 500–600-word guideline. Before quality is even judged, the deficient-length rule (S2) applies. What is the ceiling on the 80-mark Cumas Gaeilge?',
+  questionNote:
+    'Scenario authored for this exercise. The deficient-length caps are the real SEC rule: S1 (~1½ pages relevant) → Stíl 4 / Ábhar 13 / Gaeilge 68; S2 (~1 page) → 3 / 11 / 56; S3 (~½ page) → 2 / 9 / 44. Only relevant, on-title material counts towards length.',
+  scale: {
+    name: 'Cumas Gaeilge ceiling · deficient length',
+    levels: LENGTH_CAPS,
+    notes: [
+      'The composition guideline is 500–600 words; too-short attempts are capped before quality is judged.',
+      'S1 (~1½ pages relevant) caps at Gaeilge 68; S2 (~1 page) at 56; S3 (~½ page) at 44.',
+      'The cap is a ceiling — fluent, accurate Irish cannot lift the mark above it.',
+      'Only relevant, on-title material counts towards length; off-title padding does not rescue it.',
+    ],
+    cite: MS('p.17 (deficient-length caps: S1 Gaeilge 68 / S2 56 / S3 44)'),
+  },
+  scripts: [
+    {
+      id: 'ir10-a',
+      label: 'The composition',
+      persona: 'Fluent — but a page short',
+      work: [
+        'The Irish is fluent and accurate.',
+        'But only about one page of relevant, on-title material — well under the 500–600-word guideline.',
+      ],
+      keyLevelId: 's2',
+      keyNote:
+        'S2 — the ~1-page length caps Cumas Gaeilge at 56 of 80, and the cap is applied before quality is weighed. However good the Irish, it cannot climb past that ceiling. Length is not padding for its own sake: it is the room to show range and accuracy across enough writing to earn the top bands. Write the full length in on-title Irish.',
+      embodies: {
+        behaviour: 'Writes fluent Irish but under length (~1 page) — hitting the S2 cap of Gaeilge 56 before quality is judged.',
+        cite: MS('p.17'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-ir10',
+    rule: 'Too short caps the mark before quality is judged.',
+    detail:
+      'A composition well under the 500–600-word guideline is capped: ~1½ pages → Gaeilge 68, ~1 page → 56, ~½ page → 44. The cap is applied before quality, so brilliant short Irish still can’t reach the top bands. Write the full length in relevant, on-title Irish.',
+    cite: MS('p.17'),
+  },
+};
+
+// ─────────────── Ir11 · At OL, the marks are in the development ───────────────
+
+const IR11: GridSession = {
+  mode: 'grid',
+  id: 'ir-ol-point-development',
+  subject: 'irish',
+  level: 'ordinary',
+  title: 'At OL, the marks are in the development',
+  cue: 'Prós (OL)',
+  question:
+    'An Ordinary Level prose (Prós) answer is marked in points of information: each point is worth 5 marks — 2 for the bare point (lomphointe) and 3 for developing it (forbairt). A candidate lists correct bare points but rarely develops them. Mark two of the candidate’s points against the 2 + 3 split.',
+  questionNote:
+    'Scenario authored for this exercise. The 2 + 3 split is the real OL rule — "5 mharc = 2 mharc ar lomphointe eolais agus 3 mharc ar fhorbairt" — and an OL prose answer is 5 points × 5 marks.',
+  grid: {
+    perPoint: [
+      { id: 'lomphointe', label: 'Lomphointe (bare point)', marks: 2 },
+      { id: 'forbairt', label: 'Forbairt (development)', marks: 3 },
+    ],
+    shorthand: '5 = 2 (lomphointe) + 3 (forbairt)',
+    ruleNote:
+      'Each point is worth 5: 2 marks for stating the bare point, 3 for developing it with reference to the text. A correct but undeveloped point is capped at 2 of 5 — the development carries the majority.',
+    cite: MSOL('p.20 ("5 mharc = 2 mharc ar lomphointe eolais agus 3 mharc ar fhorbairt")'),
+  },
+  scripts: [
+    {
+      id: 'ir11-a',
+      label: 'The answer',
+      persona: 'Lists points, rarely develops',
+      attempts: [
+        {
+          id: 'ir11-a1',
+          text: 'States a correct, relevant point about the character — then stops there, with no development.',
+          key: { lomphointe: 2, forbairt: 0 },
+          keyNote:
+            '2 of 5 — the bare point is correct and earns its 2 marks, but with no forbairt the 3 development marks are gone. At OL, more than half of every point lives in the development, not in the naming.',
+        },
+        {
+          id: 'ir11-a2',
+          text: 'States a second correct point and then develops it with a specific reference to the text.',
+          key: { lomphointe: 2, forbairt: 3 },
+          keyNote:
+            'Full 5 — the point is stated (2) and then developed with textual reference (3). This is the complete OL literature unit: name it, then build it out.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Lists bare points without developing them — forfeiting the 3 development marks on each.',
+        cite: MSOL('p.20'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-ir11',
+    rule: 'At OL, the marks are in the development.',
+    detail:
+      'Each OL literature point is 5 marks: 2 for the bare point, 3 for developing it (2 mharc ar lomphointe + 3 mharc ar fhorbairt). Listing points without building them out caps each at 2 of 5. Name the point, then develop it with a specific reference to the text.',
+    cite: MSOL('p.20'),
+  },
+};
+
+// ─────────────── Ir12 · At OL, the first fact banks 3 of 5 ───────────────
+
+const IR12: ScaleSession = {
+  mode: 'scale',
+  id: 'ir-ol-two-point',
+  subject: 'irish',
+  level: 'ordinary',
+  title: 'The first fact banks three of five',
+  cue: 'Léamhthuiscint (OL)',
+  question:
+    'An Ordinary Level reading-comprehension part (5 marks) asks for TWO pieces of information. The scheme gives 3 marks for the first correct point and 2 for the second. A candidate gives one solid, precise fact from the passage and leaves the second blank. What does it score?',
+  questionNote:
+    'Scenario authored for this exercise. The 3 + 2 split is the real OL rule — "Má tá dhá phointe eolais i gceist, tá 3 mharc ar an gcéad cheann atá ceart agus 2 mharc ar an dara ceann atá ceart." At OL these points are lifted straight from the passage; there is no own-words gate.',
+  scale: {
+    name: 'OL comprehension · two-point · /5',
+    levels: [
+      { id: 'm0', label: '0 (no correct point)', annotation: '0', marks: 0 },
+      { id: 'm3', label: '3 (first point only)', annotation: '3', marks: 3 },
+      { id: 'm5', label: '5 (both points)', annotation: '5', marks: 5 },
+    ],
+    notes: [
+      'Where an OL comprehension part asks for two pieces of information, the first correct point is worth 3 and the second 2.',
+      'One solid, precise fact banks 3 of the 5 marks before the second point is even attempted.',
+      'The points are lifted straight from the passage at OL — there is no "own words" gate here.',
+    ],
+    cite: MSOL('p.14 ("3 mharc ar an gcéad cheann atá ceart agus 2 mharc ar an dara ceann")'),
+  },
+  scripts: [
+    {
+      id: 'ir12-a',
+      label: 'The answer',
+      persona: 'One precise fact, second blank',
+      work: [
+        'Gives one correct, precise piece of information lifted from the passage.',
+        'Leaves the second point blank.',
+      ],
+      keyLevelId: 'm3',
+      keyNote:
+        '3 of 5 — the first correct point carries 3 marks, so a single solid fact already banks more than half the part; the missing second point costs only 2. Always secure one precise, on-point fact first: it is worth more than the second, and at OL you can take it straight from the passage.',
+      embodies: {
+        behaviour: 'Answers only the first of a two-point OL question — which still banks 3 of 5.',
+        cite: MSOL('p.14'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-ir12',
+    rule: 'At OL, the first fact banks three of five.',
+    detail:
+      'On an OL comprehension part asking for two facts, the first correct point scores 3 and the second 2. One solid, precise fact — lifted straight from the passage — banks 3 of the 5 marks before the second is attempted. Secure the first point cleanly, then add the second.',
+    cite: MSOL('p.14'),
+  },
+};
+
+// ─────────────── Ir13 · At OL you write TWO compositions — both count ───────────────
+
+const IR13: ScaleSession = {
+  mode: 'scale',
+  id: 'ir-ol-two-compositions',
+  subject: 'irish',
+  level: 'ordinary',
+  title: 'At OL, you write two compositions',
+  cue: 'Ceapadóireacht (OL)',
+  question:
+    'The Ordinary Level composition is not one long piece — it is TWO short pieces, each marked out of 50 (50 × 2 = 100), chosen from Giota/Blag, Scéal, Litir/Ríomhphost and Comhrá. A candidate pours everything into one strong piece and barely attempts the second. Roughly where does the 100-mark composition total land?',
+  questionNote:
+    'Scenario authored for this exercise. The OL composition structure is the real SEC allocation — two pieces, each "Tasc 2 + Ábhar 8 + Cumas Gaeilge 40 = 50", and "50 marc x 2 = 100 marc".',
+  scale: {
+    name: 'OL composition total · /100',
+    levels: [
+      { id: 'one', label: 'One piece only', annotation: '≤50', marks: 50 },
+      { id: 'both', label: 'Both pieces attempted', annotation: '≤100', marks: 100 },
+    ],
+    notes: [
+      'The OL composition is TWO pieces, each out of 50 — 50 × 2 = 100 marks.',
+      'Each piece is Tasc 2 + Ábhar 8 + Cumas Gaeilge 40, so language is still 80% of each.',
+      'Neglecting the second piece forfeits its 50 marks — capping the total near 50, however strong the first.',
+      'Both pieces count equally: two solid attempts beat one brilliant one.',
+    ],
+    cite: MSOL('p.10 (composition = two pieces, "50 marc x 2 = 100 marc")'),
+  },
+  scripts: [
+    {
+      id: 'ir13-a',
+      label: 'The paper',
+      persona: 'One brilliant piece, one abandoned',
+      work: [
+        'Writes one strong, full-length piece — worth up to 50.',
+        'Barely attempts the second required piece.',
+      ],
+      keyLevelId: 'one',
+      keyNote:
+        'Near 50 of 100 — the OL composition is two pieces of equal weight, and a brilliant first piece tops out at its own 50. The abandoned second piece leaves up to 50 marks on the table that no amount of quality in the first can recover. Budget your time to finish BOTH: two solid pieces beat one perfect one.',
+      embodies: {
+        behaviour: 'Completes only one of the two required OL composition pieces — forfeiting up to half the 100 marks.',
+        cite: MSOL('p.10'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-ir13',
+    rule: 'At OL you write two compositions — finish both.',
+    detail:
+      'The OL composition is two short pieces, each out of 50 (50 × 2 = 100). Pouring everything into one and abandoning the other caps you near 50, however good the first piece. Both count equally — budget your time to complete both in accurate, on-task Irish.',
+    cite: MSOL('p.10'),
+  },
+};
+
+// ─────────────── Ir14 · The per-question instruction sets the bar ───────────────
+
+const IR14: ScaleSession = {
+  mode: 'scale',
+  id: 'ir-filiocht-treoir',
+  subject: 'irish',
+  level: 'higher',
+  title: 'Two images, or the mark drops to /10',
+  cue: 'Filíocht',
+  question:
+    'A Higher Level poetry (Filíocht) question on imagery is worth 13 Eolas marks, and its per-question instruction (Treoir) requires the candidate to discuss AT LEAST TWO images. A candidate discusses one image really well — richly and accurately — but only one. The scheme says: with only one image discussed, mark the Eolas out of 10 instead of 13. Where does the Eolas ceiling now sit?',
+  questionNote:
+    'Scenario authored for this exercise. The Treoir is the real SEC rule for this question: "Ní mór don iarrthóir plé a dhéanamh ar dhá íomhá ar a laghad … Gan ach íomhá amháin luaite agus pléite, marcáiltear an t-eolas as 10 marc." The band table prints both an /13 column and a capped /10 column.',
+  scale: {
+    name: 'Filíocht Eolas ceiling · imagery Treoir',
+    levels: [
+      { id: 'one', label: 'One image (capped)', annotation: '/10', marks: 10 },
+      { id: 'two', label: 'Two or more images', annotation: '/13', marks: 13 },
+    ],
+    notes: [
+      'The per-question instruction (Treoir) requires discussing at least two images.',
+      'Discuss only one and the Eolas is marked out of 10, not the full 13 — a separate capped band column.',
+      'The cap is on the ceiling: one image discussed brilliantly still cannot pass 10.',
+      'The instruction is printed with the question — read it and meet its count before polishing depth.',
+    ],
+    cite: MS('p.30 (Filíocht Treoir: "dhá íomhá ar a laghad"; one image → Eolas out of 10)'),
+  },
+  scripts: [
+    {
+      id: 'ir14-a',
+      label: 'The answer',
+      persona: 'One image, discussed brilliantly',
+      work: [
+        'Discusses a single image richly and accurately.',
+        'But the Treoir asked for at least two images, and only one is covered.',
+      ],
+      keyLevelId: 'one',
+      keyNote:
+        'Capped at 10 of 13 — the instruction required two images, so a one-image answer is marked on the reduced /10 band no matter how well the single image is handled. The lost 3 marks are not for weak analysis; they are for not meeting the question’s stated count. Read the Treoir first and cover the number of points it names, then go deep.',
+      embodies: {
+        behaviour: 'Discusses one image where the Treoir required at least two — capping the Eolas at /10 instead of /13.',
+        cite: MS('p.30'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-ir14',
+    rule: 'Meet the question’s stated count before going deep.',
+    detail:
+      'Higher Level poetry questions carry a per-question Treoir — e.g. discuss at least two images. Cover only one and the Eolas is marked out of 10, not 13, however good the single point. Read the instruction, meet the count it names, then add depth.',
+    cite: MS('p.30'),
+  },
+};
+
+// ─────────────── Ir15 · Broken syntax costs more than a spelling slip ───────────────
+
+const ERROR_TYPE_BANDS: ScaleLevel[] = [
+  { id: 'iseal', label: 'Íseal (major syntax errors)', annotation: '24', marks: 24 },
+  { id: 'mean', label: 'Meánach', annotation: '48', marks: 48 },
+  { id: 'ard', label: 'Ard (minor slips only)', annotation: '66', marks: 66 },
+];
+
+const IR15: ScaleSession = {
+  mode: 'scale',
+  id: 'ir-major-minor',
+  subject: 'irish',
+  level: 'higher',
+  title: 'Broken syntax costs more than a spelling slip',
+  cue: 'Ceapadóireacht',
+  question:
+    'Two compositions have the same rich vocabulary and range. Script A is riddled with major syntax errors — wrong copula, wrong verb tenses, broken word order. Script B has sound syntax but a scatter of minor spelling slips. The scheme tells examiners to distinguish major syntax errors from minor grammar/spelling slips. Where does Script B land on the 80-mark Cumas Gaeilge?',
+  questionNote:
+    'Scenario authored for this exercise. The distinction is the real SEC rule: "Tá sé fíorthábhachtach idirdhealú a dhéanamh idir mórbhotúin chomhréire agus mionbhotúin ghramadaí agus litrithe." Major syntax errors (comhréir, the copula, verb tenses, prepositions) distort the structure and are penalised hardest; minor spelling slips cost far less.',
+  scale: {
+    name: 'Cumas Gaeilge · error type · /80 · bands',
+    levels: ERROR_TYPE_BANDS,
+    notes: [
+      'Beachtas (accuracy) weighs major syntax errors far more heavily than minor slips.',
+      'Major errors — wrong copula, wrong verb tenses, broken word order — distort the structure and hold the band low.',
+      'Minor grammar/spelling slips in otherwise sound syntax cost far less and leave a high band reachable.',
+      'Same vocabulary range, different error type: the script with sound syntax scores well above the one with broken syntax.',
+    ],
+    cite: MS('p.15 ("idirdhealú … idir mórbhotúin chomhréire agus mionbhotúin ghramadaí agus litrithe")'),
+  },
+  scripts: [
+    {
+      id: 'ir15-a',
+      label: 'Script A',
+      persona: 'Rich words, broken syntax',
+      work: [
+        'Ambitious, wide vocabulary.',
+        'But major syntax errors throughout — wrong copula, wrong tenses, broken word order.',
+      ],
+      keyLevelId: 'iseal',
+      keyNote:
+        'Low band — major syntax errors are the category the scheme penalises hardest, because they distort the structure of the language. Rich vocabulary cannot lift accuracy out of the low band when the sentences themselves are broken.',
+      embodies: {
+        behaviour: 'Ambitious vocabulary undone by major syntax errors — the heavily-penalised category — landing in the low accuracy band.',
+        cite: MS('p.15'),
+      },
+    },
+    {
+      id: 'ir15-b',
+      label: 'Script B',
+      persona: 'Sound syntax, minor slips',
+      work: [
+        'The same rich vocabulary and range as Script A.',
+        'Syntax is sound — copula, tenses and word order right — with only a scatter of minor spelling slips.',
+      ],
+      keyLevelId: 'ard',
+      keyNote:
+        'High band — minor spelling slips cost far less than broken syntax, and with the structure sound the accuracy stays near the top. This is the lesson of the major/minor distinction: protect the copula, tenses, prepositions and word order first; a stray spelling slip is a much cheaper error than a broken sentence.',
+      embodies: {
+        behaviour: 'Keeps syntax sound with only minor spelling slips — reaching a high accuracy band on the same vocabulary.',
+        cite: MS('p.15'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-ir15',
+    rule: 'Broken syntax costs more than a spelling slip.',
+    detail:
+      'Examiners distinguish major syntax errors (comhréir, the copula, verb tenses, prepositions) from minor grammar/spelling slips — and penalise the major ones hardest, because they distort the structure. Protect the sentence structure first; a stray spelling slip is a far cheaper error than a broken sentence.',
+    cite: MS('p.15'),
+  },
+};
+
 export const IRISH_CHAIR: ChairSubject = {
   id: 'irish',
   label: 'Irish',
-  tagline: 'Where language accuracy, genre, “own words”, precise detail — and the 40% oral — win the marks.',
+  tagline: 'Where language accuracy, genre, relevance, “own words”, precise detail — and the 40% oral — win the marks.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [IR1, IR2, IR3, IR4, IR5, IR6, IR7, IR8],
+  sessions: [IR1, IR2, IR3, IR4, IR5, IR6, IR7, IR8, IR9, IR10, IR11, IR12, IR13, IR14, IR15],
   sources: [
     { label: 'SEC LC Irish HL marking scheme 2025 (examiner-reports/irish/2025-marking-scheme)' },
     { label: 'SEC LC Irish OL marking scheme 2025 (examiner-reports/irish/2025-ol-marking-scheme)' },
@@ -505,5 +914,5 @@ export const IRISH_CHAIR: ChairSubject = {
     },
   ],
   coverageNote:
-    'The composition (language is ~80% of the mark), genre, and Cluastuiscint (aural) sessions apply at both levels — the aural sessions teach the 0–3 standard-of-Irish deduction and the 2-mark precision rule (vague retrieval scores half) that apply even in the listening comprehension. The “own words” comprehension rule is Higher-specific (OL comprehension has no own-words gate); the Ordinary session covers OL poetry’s “i d’fhocail féin” halving; the literature 5-mark Gaeilge award (a separate language mark on each Prós/Filíocht/Litríocht Bhreise answer) is verified against the Higher scheme. The oral session teaches the 240-mark / 40% component split of the common Béaltriail (Fáiltiú 5 / Filíocht 35 / Sraith Pictiúr 80 / Comhrá 120), verified against the SEC Assessment Arrangements 2026; the internal per-component oral marking grid is a separate scheme and is not asserted here. The written rules are verified against the 2025 HL and OL schemes.',
+    'The composition (language is ~80% of the mark), genre, and Cluastuiscint (aural) sessions apply at both levels — the aural sessions teach the 0–3 standard-of-Irish deduction and the 2-mark precision rule (vague retrieval scores half) that apply even in the listening comprehension. Higher-specific written sessions add the 15-mark Ionramháil (relevance) content band, the deficient-length caps (a too-short piece caps Cumas Gaeilge before quality is judged), the poetry Treoir count (discuss one image where two are asked → Eolas out of 10, not 13), and the major-vs-minor error distinction (broken syntax costs far more than a spelling slip). The “own words” comprehension rule is Higher-specific (OL comprehension has no own-words gate); Ordinary-specific sessions cover OL poetry’s “i d’fhocail féin” halving, the OL literature point + development (2 lomphointe + 3 forbairt), the OL two-point comprehension 3 + 2 split, and the OL two-composition structure (two pieces, 50 × 2 = 100). The literature 5-mark Gaeilge award (a separate language mark on each Prós/Filíocht/Litríocht Bhreise answer) is verified against the Higher scheme. The oral session teaches the 240-mark / 40% component split of the common Béaltriail (Fáiltiú 5 / Filíocht 35 / Sraith Pictiúr 80 / Comhrá 120), verified against the SEC Assessment Arrangements 2026; the internal per-component oral marking grid is a separate scheme and is not asserted here. The written rules are verified against the 2025 HL and OL schemes.',
 };
