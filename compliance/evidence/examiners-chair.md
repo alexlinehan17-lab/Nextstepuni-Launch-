@@ -480,17 +480,35 @@ stability and catch any drift. Results so far (each filed as
 | Home Economics | 2025 HL/OL | 2024 HL/OL | All 4 CONFIRMED stable (20-mark "Discuss" on the coarse 5:3:0 ladder, structured parts capped per named heading, "Name" low/all-or-nothing with description carrying the marks, OL Section A graded 2:0 with no negative marking). No edit. |
 | Italian | 2025 HL | 2024 + 2023 HL | IT1 (Content 15 + Language 10; content ≤7 → Language /5) and IT3 (no learnt-off/off-point material) CONFIRMED verbatim. **Acted on:** IT2 cited a −50% wrong-language penalty that appears only in the 2025 scheme (the English-answer *requirement* is standing, but the −50% magnitude is not reproduced in 2023/2024). Pinned the magnitude to 2025 rather than implying a timeless rule. Logged in cutContent. |
 | Accounting | 2024 HL/OL | 2023 HL/OL | All 4 marking rules CONFIRMED stable (per-line workmark system, discrete balancing mark, own-figure/transfer marking with non-transfer = half, OL flat-mark written theory). **Acted on (cosmetic):** dropped the literal "Both totals correct *" asterisk wording — the * is a 2024 presentation flag (2023 uses an examiner arrow for the same mark); made the wording year-neutral. Logged in cutContent. |
+| Applied Maths | 2024 HL | 2023 HL | All 3 taught rules CONFIRMED stable (blunder −3 / slip −1 tariff, valid-attempt scale floor, algorithm-name mark). The specific 30-mark ladder used to illustrate AM2 is 2024-only but is already scoped to 2024 and labelled an authored scenario. No edit. |
+| Politics & Society | 2025 HL/OL | 2024 HL/OL | All 4 CONFIRMED stable (20-mark data-item bands, essay analytic→H1–H8 holistic with the "summary and repetition" descriptor, 50-mark documents split 30 argument + 20 use-of-documents, OL essay six-criterion 10/10/10/5/5/10). No edit. |
+| Agricultural Science | 2024 HL | 2023 HL | All 3 CONFIRMED verbatim, same pages (front-loaded 4+2+2+2, surplus-cancels with the identical Texel 4−1=3 worked example, holistic IIS banding + "don't penalise brevity nor reward length"). No edit. |
+| Engineering | 2025 HL | 2024 HL | Rules CONFIRMED stable ("Any N" cap, 3+2 point+development, labels credited separately). **Acted on:** EN1 taught that only the *first* N answers count and later strong material is "wasted" — unsupported by the scheme (silent on which excess answers are read) and contradicting the repo's own insights ("best N are read"). Recast EN1 onto the accurate lesson (N-credited cap + proper-discussion requirement). Logged in cutContent. |
+| Religious Education | 2025 HL/OL | 2024 HL/OL | RE1 (descriptive-answer Fair cap) and RE2 (four-dimension holistic banding) CONFIRMED stable. **Acted on:** RE3's OL note "the OL scheme uses 'Max' zero times" is true for 2025 but false for 2024 OL; reframed to the year-stable principle (no descriptive Fair-cap at OL; the OL "Max" caps that exist are partial-answer caps). Logged in cutContent. |
+| Construction Studies | 2025 HL | 2024 HL | All 3 CONFIRMED verbatim (detail drawings 3 draw + 1 annotation per element, "with the aid of a sketch" = notes 3 + sketch 3, U-value 11 × 3 per-step). No edit. |
+| DCG | 2025 HL | 2024 HL | All 3 CONFIRMED (construction marked separately from and above the finished curve, every question step-decomposed, standalone "use of appropriate method" mark). No edit. |
+| Art | 2024 HL/OL | 2023 HL/OL | All 3 Visual Studies strand rules CONFIRMED verbatim (Subject Knowledge /20 with critical-thinking top band, Relevant Examples /10, answer using the given headings). OL = HL descriptors confirmed word-for-word identical for a **second** year, justifying the `common` tagging. No edit. |
+| Music | 2022 HL (deferred) | 2024 HL (main) | All 3 CONFIRMED verbatim (the two opposite over-answering regimes, partially-correct = 1 mark cap, chords credited only within a good progression + "V7–V not accepted"). Verifying against a **main** sitting also resolves the prior "rests only on a deferred paper" concern. No edit. |
+| LCVP | 2024 | 2023 | All 3 CONFIRMED stable (all-or-nothing vs (1+1) partial credit, no-repetition on the 3×(1+1+1) closers, Section B relevance-to-the-case). Year-specific tokens (the (0/2) vs (0/3) form; the "relevant to Sandra" named person) are already pinned to 2024 and labelled authored. No edit. |
+| Classical Studies | 2025 HL/OL | 2024 HL/OL | Units-of-development structure, two-part full-question rule, and the verbatim Low-band descriptor "relies mostly on narrative" CONFIRMED stable. **Acted on:** the Overall-Quality band edges (2025 1–12/13–17/18–20 vs 2024 1–10/11–15/16–20) and the "57/80" one-part ceiling (2025; 2024 = 55) are year-specific — removed those numbers from the student-facing scale, keeping the stable structure and descriptor. Logged in cutContent. |
 
-Across the seventeen subjects verified so far (English, Maths, Business, Geography, Physics,
-French, Biology, Chemistry, Irish, History, German, Spanish, Economics, Home Economics,
-Italian, Accounting — plus the Maths cross-level pass), the load-bearing rules are stable
-year to year. A handful of small content edits were required across all of them (the Business
-reframing, the History verbatim tighten, the Spanish Sp4 recast, the Economics OL coverageNote
-correction, the Italian IT2 year-pin, and the Accounting asterisk-wording neutralisation) —
-each a citation/accuracy fix rather than genuine cross-year drift. This is a strong stability
-signal for accreditation: the conventions the tool teaches are not one-year artefacts, and the
-few edits show the verification is a real check, not a rubber stamp. Remaining subjects are
-added to this table as their pass completes.
+**All 27 subjects have now completed a second-year verification.** Across the whole set the
+load-bearing marking rules are stable year to year; a minority of subjects needed a small
+content edit, each a citation/accuracy fix rather than genuine cross-year drift:
+- **Business** — reframed the year-specific "Evaluate is heaviest at 3-of-7 in Part B(i)" to the year-stable convention.
+- **History** — tightened the OE session to the scheme's verbatim "more than mere narrative" criterion.
+- **Spanish** — recast Sp4 from an aural rule absent in every year to the genuine p.5 exact-transcription rule.
+- **Economics** — dropped the false "no omission-of-% deduction at OL" clause from the OL coverage note.
+- **Italian** — pinned the −50% wrong-language magnitude to the 2025 scheme (only the English-answer requirement is standing).
+- **Accounting** — neutralised the 2024-only "Both totals correct *" asterisk wording.
+- **Engineering** — recast EN1 off an unsupported "only the first N count / best material wasted" premise onto the scheme-accurate N-credited cap.
+- **Religious Education** — replaced the brittle "OL uses 'Max' zero times" count with the year-stable underlying principle.
+- **Classical Studies** — removed year-specific band edges and the "57" ceiling from the student-facing scale, keeping the stable structure and the confirmed narrative descriptor.
+
+This is a strong stability signal for accreditation: the conventions the tool teaches are not
+one-year artefacts, and the edits that were made show the verification is a real check rather
+than a rubber stamp — several genuine inaccuracies were caught and corrected against a second
+independent year's scheme.
 
 ## Pedagogical basis
 

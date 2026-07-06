@@ -94,17 +94,17 @@ const CL2: ScaleSession = {
   cue: 'Essay',
   question: 'A Section B essay has two parts, (a) and (b). A candidate writes a rich answer with four well-developed units — but all of it addresses part (a); part (b) is ignored. The scheme caps a one-part answer’s Overall Quality in the Low range unless the full question is addressed. Roughly where does the 80-mark essay top out?',
   questionNote:
-    'Scenario authored for this exercise. The scheme states the answer must address the full question (parts a and b) for more than three units of development to count and for Overall Quality to rise above the Low range — roughly a 57/80 ceiling for a one-sided answer.',
+    'Scenario authored for this exercise. The scheme states the answer must address the full question (parts a and b) for more than three units of development to count and for Overall Quality to rise above the Low range — a mid-50s/80 ceiling for a one-sided answer (three units ≈ 45 plus a Low-range quality mark).',
   scale: {
     name: 'Two-part essay ceiling · /80',
     levels: [
-      { id: 'm57', label: 'Max ~57 (one part only)', annotation: '57', marks: 57 },
+      { id: 'm57', label: 'Max ~mid-50s (one part only)', annotation: '~55', marks: 56 },
       { id: 'm80', label: 'Up to 80 (both parts)', annotation: '80', marks: 80 },
     ],
     notes: [
       'The essay must address the full question — both (a) and (b).',
       'A one-part answer: no more than three units count, and Overall Quality can’t rise above the Low range.',
-      'That imposes a structural ceiling around 57/80, however good the one part is.',
+      'That imposes a structural ceiling in the mid-50s/80 (three units max ≈ 45, plus a Low-range quality mark), however good the one part is.',
     ],
     cite: MS('p.11 (full-question requirement)'),
   },
@@ -119,7 +119,7 @@ const CL2: ScaleSession = {
       ],
       keyLevelId: 'm57',
       keyNote:
-        'Capped around 57 of 80 — a one-part answer can’t have more than three units count, and its Overall Quality is held in the Low range, no matter how strong part (a) is. Even a short, weaker treatment of part (b) removes the ceiling. Always give both parts of the question real attention.',
+        'Capped in the mid-50s of 80 — a one-part answer can’t have more than three units count, and its Overall Quality is held in the Low range, no matter how strong part (a) is. Even a short, weaker treatment of part (b) removes the ceiling. Always give both parts of the question real attention.',
       embodies: {
         behaviour: 'Answers only one part of a two-part essay — hitting the structural ceiling.',
         cite: MS('p.11'),
@@ -128,9 +128,9 @@ const CL2: ScaleSession = {
   ],
   takeaway: {
     id: 'codex-cl2',
-    rule: 'Address both parts, or you’re capped near 57/80.',
+    rule: 'Address both parts, or you’re capped in the mid-50s/80.',
     detail:
-      'A one-sided answer to a two-part Classical Studies essay caps its units and holds Overall Quality in the Low range — roughly 57/80. Give both parts genuine treatment; even a brief second part lifts the ceiling.',
+      'A one-sided answer to a two-part Classical Studies essay caps its units and holds Overall Quality in the Low range — the mid-50s out of 80. Give both parts genuine treatment; even a brief second part lifts the ceiling.',
     cite: MS('p.11'),
   },
 };
@@ -150,13 +150,13 @@ const CL3: ScaleSession = {
   scale: {
     name: 'Overall Quality · /20',
     levels: [
-      { id: 'low', label: 'Low (1–12) — narrative', annotation: 'L', marks: 10 },
-      { id: 'good', label: 'Good (13–17)', annotation: 'G', marks: 15 },
-      { id: 'high', label: 'High (18–20)', annotation: 'H', marks: 19 },
+      { id: 'low', label: 'Low — narrative', annotation: 'L', marks: 10 },
+      { id: 'good', label: 'Good', annotation: 'G', marks: 15 },
+      { id: 'high', label: 'High', annotation: 'H', marks: 19 },
     ],
     notes: [
       'Overall Quality is a separate 20 marks on top of the units.',
-      'Low band (1–12): “relies mostly on narrative”.',
+      'Low band: “relies mostly on narrative”.',
       'Higher bands need argument and analysis in response to the question, not retelling.',
     ],
     cite: MS('p.11 (Overall Quality bands)'),
@@ -172,7 +172,7 @@ const CL3: ScaleSession = {
       ],
       keyLevelId: 'low',
       keyNote:
-        'Low Quality band — “relies mostly on narrative” is exactly this essay, so Overall Quality is held under 12 however vivid the storytelling. The higher bands are bought with argument: use the narrative as evidence for points that answer the question, don’t let it be the answer.',
+        'Low Quality band — “relies mostly on narrative” is exactly this essay, so Overall Quality is held in the Low band however vivid the storytelling. The higher bands are bought with argument: use the narrative as evidence for points that answer the question, don’t let it be the answer.',
       embodies: {
         behaviour: 'Retells the story instead of arguing — the named Low Quality descriptor.',
         cite: MS('p.11'),

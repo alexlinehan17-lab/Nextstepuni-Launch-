@@ -783,4 +783,43 @@ export const CUT_CONTENT: CutContentEntry[] = [
       'Second-year verification (2023): the concept (a discrete agreeing-totals mark) is stable, but the literal "Both totals correct *" asterisk string is a 2024 presentation choice absent from the 2023 scheme. Made the wording year-neutral so it does not imply the asterisk notation is universal.',
     date: '2026-07-06',
   },
+  {
+    id: 'examiners-chair-engineering-001',
+    module: "The Examiner's Chair — Engineering",
+    section: 'Session EN1',
+    action: 'corrected',
+    original:
+      'In "Any N @…" parts only the first N answers count — extras score nothing and can push your best material outside the counted set… Only the first three answers are marked… if your strongest points come fourth and fifth they fall outside the counted three and score nothing.',
+    reframedTo:
+      'In "Any N @…" parts only N answers are credited — extra answers earn nothing, so over-answering only costs you time. And each mark is earned by proper discussion, not a bare mention. Pick your strongest N and develop them. (Recast the whole session: fewer developed points beat more thin ones.)',
+    reason:
+      'Second-year verification (2024/2025): the scheme states the "Any N" cap but is SILENT on which excess answers are read; the "only the first N count / best material wasted" claim is unsupported and contradicts the repo\'s own 2025 insights ("only the best N are read"). Recast EN1 onto the accurate, load-bearing lesson (N-credited cap + proper-discussion requirement) so it no longer teaches order-dependence the scheme does not apply.',
+    date: '2026-07-06',
+  },
+  {
+    id: 'examiners-chair-religiouseducation-001',
+    module: "The Examiner's Chair — Religious Education",
+    section: 'Session RE3 (OL)',
+    action: 'corrected',
+    original:
+      'There is no HL-style "you didn\'t evaluate" cap — the OL scheme uses "Max" zero times. / OL commands are lower-order: Outline, Describe, Give an account.',
+    reframedTo:
+      'There is no HL-style descriptive cap at OL: a description is not ceilinged at Fair for "not evaluating." Where an OL note applies a "Max", it caps a partial answer that omits a required element — not a description. / OL centres on lower-order skills … but even where an OL question uses a higher-order stem, the scheme does not cap a description at Fair.',
+    reason:
+      'Second-year verification (2024): the "OL uses Max zero times" count is true for 2025 but FALSE for 2024 OL (which uses "max" twice, as partial-answer caps), and "OL commands are exclusively lower-order" is overstated (2024 OL uses Discuss/Profile/Explore). Reframed to the underlying year-stable principle (no descriptive Fair-cap at OL; the OL "Max" caps that exist are partial-answer caps) and dropped the brittle count.',
+    date: '2026-07-06',
+  },
+  {
+    id: 'examiners-chair-classical-001',
+    module: "The Examiner's Chair — Classical Studies",
+    section: 'Sessions CL2 & CL3',
+    action: 'reframed',
+    original:
+      'CL2 one-part ceiling stated as "~57/80"; CL3 Overall-Quality band edges shown as Low (1–12) / Good (13–17) / High (18–20).',
+    reframedTo:
+      'CL2 ceiling reframed to "the mid-50s/80"; CL3 band labels reduced to Low/Good/High with the numeric edges removed. The load-bearing rules — the units-of-development structure and the verbatim Low-band descriptor "relies mostly on narrative" — are unchanged (both CONFIRMED stable across 2024 and 2025).',
+    reason:
+      'Second-year verification (2024): the Overall-Quality band edges are year-specific (2024 = 1–10/11–15/16–20 vs 2025 = 1–12/13–17/18–20), and the "57" ceiling is the 2025 value (2024 = 55). Removed the year-specific numbers from the student-facing scale while keeping the stable structure and the confirmed "relies mostly on narrative" descriptor.',
+    date: '2026-07-06',
+  },
 ];

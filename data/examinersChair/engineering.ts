@@ -26,66 +26,66 @@ const EN1: GridSession = {
   level: 'common',
   title: 'Answer exactly the number asked',
   cue: 'Any three',
-  question: 'A part says “Discuss any three properties”, marked 6 + 6 + 6 — and only the FIRST three you write are counted. A candidate, playing safe, discusses five: the first two are under-developed (they don’t earn), and the three strong ones come last. Mark the three counted slots.',
+  question: 'A part says “Discuss any three properties”, marked 6 + 6 + 6. Only three answers are credited, and each 6 is earned only if the property is properly discussed. A candidate plays safe and writes five properties — but rushes them all, so each is a bare mention with no real discussion. Mark it.',
   questionNote:
-    'Scenario authored for this exercise. In “Any N @…” parts only the first N answers count; over-answering earns nothing extra, and if your best material comes after the Nth, it falls outside the counted set. Each counted slot here is worth 6 (earned only if the property is properly discussed).',
+    'Scenario authored for this exercise. In “Any N @…” parts only N answers are credited (extras earn nothing), and each counted mark is earned only if the point is properly discussed. Writing more, thinner answers does not beat writing N developed ones.',
   grid: {
     perPoint: [{ id: 'prop', label: 'Property properly discussed', marks: 6 }],
-    shorthand: 'Any three @ 6 + 6 + 6 (first three count)',
+    shorthand: 'Any three @ 6 + 6 + 6 (three credited)',
     ruleNote:
-      'Only the first three answers are marked. Writing five wastes time, and if your strongest points come fourth and fifth they fall outside the counted three and score nothing. Lead with your three best and develop those.',
+      'Only three answers are credited — extra answers earn nothing, so over-answering just costs time. And each 6 is earned only by proper discussion, not a bare mention. Fewer, developed points beat more, thin ones.',
     cite: MS('p.20 (Any three @ 6+6+6 cap)'),
   },
   scripts: [
     {
       id: 'en1-a',
       label: 'Script A',
-      persona: 'Writes five, best ones last',
+      persona: 'Writes five, all thin',
       attempts: [
         {
           id: 'en1-a-1',
-          text: 'Counted slot 1 — Property A, named but under-developed (a bare mention, no discussion).',
+          text: 'Property 1 — named only, no discussion.',
           key: { prop: 0 },
-          keyNote: 'The first counted slot, and it’s under-developed — no proper discussion, so it doesn’t earn the 6. The candidate led with a weak point.',
+          keyNote: 'A bare mention with no discussion, so it doesn’t earn the 6. Naming a property is not discussing it.',
         },
         {
           id: 'en1-a-2',
-          text: 'Counted slot 2 — Property B, also under-developed.',
+          text: 'Property 2 — again just named.',
           key: { prop: 0 },
-          keyNote: 'Second counted slot, also thin. Two of the three counted slots are gone before the good material even starts.',
+          keyNote: 'The same problem — a label, not a discussion. No mark.',
         },
         {
           id: 'en1-a-3',
-          text: 'Counted slot 3 — Property C, properly discussed with a consequence.',
-          key: { prop: 6 },
-          keyNote: 'The one developed point that fell inside the first three. The candidate also wrote two excellent properties (a 4th and 5th) — but only the first three count, so those are uncounted and score nothing. 6 of 18, with the best work wasted.',
+          text: 'Property 3 — another bare mention. (Two more properties were written too, but only three are credited and none of the five is actually discussed.)',
+          key: { prop: 0 },
+          keyNote: 'Writing five didn’t help: only three are ever credited, so the extra two were wasted effort — and because nothing was properly discussed, even the counted three earn nothing. 0 of 18. Three developed points would have scored full marks.',
         },
       ],
       embodies: {
-        behaviour: 'Over-answers an “Any N” part and leads with weak points, so the best material is uncounted.',
+        behaviour: 'Over-answers an “Any N” part with thin points, trusting quantity — but only N are credited and each needs proper discussion.',
         cite: MS('p.20'),
       },
     },
     {
       id: 'en1-b',
       label: 'Script B',
-      persona: 'Three best, developed',
+      persona: 'Three, each developed',
       attempts: [
         {
           id: 'en1-b-1',
-          text: 'Counted slot 1 — a strong property, developed with a point and its consequence.',
+          text: 'Property 1 — stated, then developed with a point and its consequence.',
           key: { prop: 6 },
-          keyNote: 'Led with a best point, fully developed. 6.',
+          keyNote: 'A properly discussed property — point plus consequence. 6.',
         },
         {
           id: 'en1-b-2',
-          text: 'Counted slot 2 — a second strong property, developed.',
+          text: 'Property 2 — a second property, developed.',
           key: { prop: 6 },
           keyNote: 'Another developed point. 6.',
         },
         {
           id: 'en1-b-3',
-          text: 'Counted slot 3 — a third strong property, developed.',
+          text: 'Property 3 — a third property, developed.',
           key: { prop: 6 },
           keyNote: 'Exactly three, each developed. 18/18 — and less writing than Script A.',
         },
@@ -94,9 +94,9 @@ const EN1: GridSession = {
   ],
   takeaway: {
     id: 'codex-en1',
-    rule: 'Give your best N, in your best order.',
+    rule: 'Fewer developed points beat more thin ones.',
     detail:
-      'In “Any N @…” parts only the first N answers count — extras score nothing and can push your best material outside the counted set. Choose your strongest N points and lead with them.',
+      'In “Any N @…” parts only N answers are credited — extra answers earn nothing, so over-answering only costs you time. And each mark is earned by proper discussion, not a bare mention. Pick your strongest N and develop them.',
     cite: MS('p.20'),
   },
 };

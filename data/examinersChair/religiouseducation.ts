@@ -147,8 +147,8 @@ const RE3: ScaleSession = {
       { id: 'excellent', label: 'Excellent (34–40)', annotation: 'E', marks: 37 },
     ],
     notes: [
-      'OL commands are lower-order: Outline, Describe, Give an account.',
-      'There is no HL-style “you didn’t evaluate” cap — the OL scheme uses “Max” zero times.',
+      'OL centres on lower-order skills (Outline, Describe, Give an account); even where an OL question uses a higher-order stem, the scheme does not cap a description at Fair.',
+      'There is no HL-style descriptive cap at OL: a description is not ceilinged at Fair for “not evaluating.” Where an OL note applies a “Max”, it caps a partial answer that omits a required element — not a description.',
       'A full, accurate, relevant description can reach the Excellent band.',
     ],
     cite: MSOL('p.5, p.20 (no descriptive cap at OL)'),
