@@ -37,9 +37,12 @@ For multi-year syntheses, the prefix is `<start-year>-<end-year>-` (e.g.
 | Physics | 2025 | Marking scheme | Higher | SEC `Leaving Certificate 2025 Marking Scheme — Physics, Higher Level` (mirrored PDF, educateplus.ie) | PDF + MD + insights |
 | Physics | 2023 | Marking scheme (second-year verification cross-check) | Higher | SEC `Leaving Certificate 2023 Marking Scheme — Higher Level Physics` (mirrored PDF, thephysicsteacher.ie) | PDF + MD + verification |
 | History | 2025 | Marking scheme | Higher | SEC `Leaving Certificate 2025 Marking Scheme — Higher Level History` (mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| History | 2024 | Marking scheme (second-year verification cross-check) | Higher | SEC `Leaving Certificate 2024 Marking Scheme — Higher Level History` (`History HL_0.pdf`, mirrored PDF, educateplus.ie) | PDF + MD + verification |
 | Irish | 2025 | Marking scheme (written papers) | Higher | SEC `An Ardteistiméireacht 2025 — Scéim Mharcála, Ardleibhéal, Gaeilge` (mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| Irish | 2024 | Marking scheme (written papers; second-year verification cross-check) | Higher | SEC `An Ardteistiméireacht 2024 — Scéim Mharcála, Ardleibhéal, Gaeilge` (`Irish HL.pdf`, mirrored PDF, educateplus.ie) | PDF + MD + verification |
 | Accounting | 2024 | Marking scheme | Higher | SEC `Leaving Certificate 2024 Marking Scheme — Higher Level Accounting` (mirrored PDF, educateplus.ie) | PDF + MD + insights |
 | Chemistry | 2024 | Marking scheme | Higher | SEC `Leaving Certificate 2024 Marking Scheme — Higher Level Chemistry` (`LC022ALP000EV`, mirrored PDF, exams.ie) | PDF + MD + insights |
+| Chemistry | 2025 | Marking scheme (second-year verification cross-check) | Higher | SEC `Leaving Certificate 2025 Marking Scheme — Chemistry, Higher Level` (`2025 LC Chemistry HL.pdf`, mirrored PDF, educateplus.ie) | PDF + MD + verification |
 | Chemistry | 2013 | Chief Examiner | Higher / Ordinary | `Chief_Examiner_Report_Chemistry_2013.pdf` (examinations.ie, via Internet Archive) | PDF + MD + insights |
 | Spanish | 2025 | Marking scheme | Higher | SEC `Leaving Certificate 2025 Marking Scheme — Higher Level Spanish` (mirrored PDF, educateplus.ie) | PDF + MD + insights |
 | Agricultural Science | 2024 | Marking scheme | Higher | SEC `Leaving Certificate 2024 Marking Scheme — Higher Level Agricultural Science` (mirrored PDF, educateplus.ie) | PDF + MD + insights |
