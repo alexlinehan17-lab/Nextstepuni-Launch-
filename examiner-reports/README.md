@@ -71,6 +71,7 @@ For multi-year syntheses, the prefix is `<start-year>-<end-year>-` (e.g.
 | Classical Studies | 2025 | Marking scheme | Ordinary | SEC `Leaving Certificate 2025 Marking Scheme — Classical Studies, Ordinary Level` (`2025-ol-marking-scheme.pdf`, mirrored PDF, exams.ie) | PDF + MD + insights |
 | Geography | 2024 | Marking scheme | Higher | SEC `Leaving Certificate 2024 Marking Scheme — Higher Level Geography` (`Geography HL.pdf` → `2024-marking-scheme.pdf`, mirrored PDF, educateplus.ie) — second-year SRP-rule verification vs 2025; see `2024-verification.md` | PDF + MD + verification |
 | English | 2024 | Marking scheme | Higher | SEC `Leaving Certificate 2024 Marking Scheme — English, Higher Level` (`English HL.pdf` → `2024-marking-scheme.pdf`, mirrored PDF, educateplus.ie) — second-year PCLM-rule verification vs 2025; all 5 rules CONFIRMED, see `2024-verification.md` | PDF + MD + verification |
+| Maths | 2024 | Marking scheme (Paper 1 + Paper 2, combined) | Higher | SEC `Leaving Certificate 2024 Marking Scheme — Mathematics, Higher Level` (`Maths HL.pdf` → `2024-hl-marking-scheme.pdf`, mirrored PDF, educateplus.ie) — second-year scale-system verification vs 2023 OL P2 / 2025 Foundation; rules 1–3 CONFIRMED, rules 4–5 not stated as general rules in this scheme (applied per-question), see `2024-hl-verification.md` | PDF + MD + verification |
 
 _Last updated: 2026-07-06_
 
