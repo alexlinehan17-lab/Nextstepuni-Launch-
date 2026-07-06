@@ -403,16 +403,485 @@ const AC7: ScaleSession = {
   },
 };
 
+// ─────────────── Ac8 · OL — surplus answers earn nothing ───────────────
+
+const AC8: ScaleSession = {
+  mode: 'scale',
+  id: 'acc-surplus',
+  subject: 'accounting',
+  level: 'ordinary',
+  title: 'Extra answers don’t earn extra',
+  cue: 'State / list (OL)',
+  question:
+    'A written part asks for TWO benefits of a cash budget, worth a fixed block of marks. A candidate who knows the topic writes FOUR benefits, all correct, hoping the extras earn more. Do the two extra benefits add anything?',
+  questionNote:
+    'Scenario authored for this exercise; the part’s mark split is simplified. The rule is real: the SEC annotation legend marks anything beyond the required answer as a “surplus answer … marks awarded elsewhere” — extra correct material earns nothing above the part’s ceiling.',
+  scale: {
+    name: 'Marks for the part',
+    levels: [
+      { id: 'm0', label: '0 (part skipped)', annotation: '0', marks: 0 },
+      { id: 'm3', label: '3 (one benefit)', annotation: '3', marks: 3 },
+      { id: 'm5', label: '5 (two benefits — the ceiling)', annotation: '5', marks: 5 },
+    ],
+    notes: [
+      'The part asks for a set number of points and carries a fixed maximum — here, two benefits for the full block.',
+      'Correct material beyond the number asked for is annotated “surplus answer … marks awarded elsewhere” — it scores nothing above the ceiling.',
+      'The two extra benefits are pure time cost: the same marks were already secured by the first two.',
+    ],
+    cite: MSOL('p.18 (two benefits of a cash budget [5]), p.19 (surplus-answer annotation)'),
+  },
+  scripts: [
+    {
+      id: 'ac8-a',
+      label: 'The over-answerer',
+      persona: 'Writes four benefits when two are asked',
+      work: ['Question asks for TWO benefits.', 'Writes four correct benefits, expecting the extras to score.'],
+      keyLevelId: 'm5',
+      keyNote:
+        'Full marks for the part — but only two of the four benefits actually scored; the other two are annotated “surplus … marks awarded elsewhere” and earn nothing. Answer the number asked for, well, then move on: extra correct writing cannot lift you above the part’s ceiling and the time is better spent on an unattempted item.',
+      embodies: {
+        behaviour: 'Writes more correct points than the question asks for — the surplus earns nothing beyond the ceiling.',
+        cite: MSOL('p.19'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-acc8',
+    rule: 'Answer the number asked — no more.',
+    detail:
+      'A written part has a fixed ceiling; correct material beyond the number of points required is marked “surplus … marks awarded elsewhere” and earns nothing. Give exactly what’s asked, do it well, and spend the saved time on parts you haven’t reached.',
+    cite: MSOL('p.19'),
+  },
+};
+
+// ─────────────── Ac9 · The ledger balancing figure ───────────────
+
+const AC9: GridSession = {
+  mode: 'grid',
+  id: 'acc-ledger-balance',
+  subject: 'accounting',
+  level: 'higher',
+  title: 'Balance the account off',
+  cue: 'Ledger / T-account',
+  question:
+    'A Provision for Depreciation account is built from several correct entries. The account is only finished when it is ruled off with a Balance c/d and re-opened with a Balance b/d — and that balancing figure is itself a marked line. One candidate posts every entry but never strikes a balance.',
+  questionNote:
+    'Scenario authored for this exercise; figures simplified. In the 2024 scheme the ledger balancing figure is a discrete award — the Provision for Depreciation account credits the closing “Balance c/d [3]” as its own marked line, separate from the entries above it.',
+  grid: {
+    perPoint: [
+      { id: 'entries', label: 'Individual entries correct', marks: 4 },
+      { id: 'balc', label: 'Balance c/d struck & carried down', marks: 3 },
+    ],
+    shorthand: 'Entries 4 · Balance c/d 3',
+    ruleNote:
+      'In a T-account the closing balance is not bookkeeping housekeeping — it is a separately-awarded figure. Leaving the account unruled (no Balance c/d, no Balance b/d) banks the entries but forfeits the balancing-figure mark on every account you leave open.',
+    cite: MS('p.16 (Provision for Depreciation A/c — closing Balance c/d [3])'),
+  },
+  scripts: [
+    {
+      id: 'ac9-a',
+      label: 'Script A',
+      persona: 'Posts entries, never balances',
+      attempts: [
+        {
+          id: 'ac9-a-1',
+          text: 'Posts the disposal, the P&L charge and the opening balance correctly, then moves on — no Balance c/d struck, the account left open.',
+          key: { entries: 4, balc: 0 },
+          keyNote:
+            'The individual entries all score — but the account was never ruled off, so the discrete “Balance c/d” figure is gone. That balancing figure is a marked line in its own right; leaving even one T-account open on the paper is a clean, avoidable loss. Always close and re-open your ledger accounts.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Leaves a ledger account unbalanced — forfeiting the discrete Balance c/d mark.',
+        cite: MS('p.16'),
+      },
+    },
+    {
+      id: 'ac9-b',
+      label: 'Script B',
+      persona: 'Rules the account off',
+      attempts: [
+        {
+          id: 'ac9-b-1',
+          text: 'Same correct entries, then rules the account off: totals both sides, strikes Balance c/d, and brings the Balance b/d down below.',
+          key: { entries: 4, balc: 3 },
+          keyNote:
+            'Full marks — the entries plus the balancing figure. Striking the Balance c/d and carrying the b/d down takes seconds and secures a marked line on every account. It also proves the account agrees, which is exactly what the examiner is looking to award.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-acc9',
+    rule: 'The closing balance is a marked figure.',
+    detail:
+      'A ledger/T-account is finished only when it is ruled off — the Balance c/d (and the Balance b/d brought down) is a discrete award, not housekeeping. Close and re-open every account; an unbalanced account forfeits that figure however good the entries above it are.',
+    cite: MS('p.16'),
+  },
+};
+
+// ─────────────── Ac10 · The Notes to the Accounts ───────────────
+
+const AC10: ScaleSession = {
+  mode: 'scale',
+  id: 'acc-notes',
+  subject: 'accounting',
+  level: 'higher',
+  title: 'Don’t skip the Notes',
+  cue: 'Published accounts',
+  question:
+    'In Published Accounts, the Notes to the Accounts (Accounting Policy, Operating Profit, Dividends, Tangible Fixed Assets) sit after the main statement and carry a heavy block of marks in their own right. A candidate who runs short on time finishes the face of the Profit & Loss but leaves the Notes blank. What does that cost?',
+  questionNote:
+    'Scenario authored for this exercise. The 2024 scheme prices the Notes to the Accounts as a large discrete block — Accounting Policy Notes [4], Operating Profit [4], Dividends [2] and Tangible Fixed Assets [7] — roughly 17 marks that live entirely in the notes, not in the statement above.',
+  scale: {
+    name: 'Notes to the Accounts',
+    levels: [
+      { id: 'm0', label: '0 (notes left blank)', annotation: '0', marks: 0 },
+      { id: 'm7', label: '7 (TFA note only)', annotation: '7', marks: 7 },
+      { id: 'm17', label: '17 (all four notes)', annotation: '17', marks: 17 },
+    ],
+    notes: [
+      'The Notes to the Accounts are a separately-marked block: Accounting Policy [4], Operating Profit [4], Dividends [2], Tangible Fixed Assets [7].',
+      'The Tangible Fixed Assets note alone is worth [7] — as much as the heaviest single line on the face of the accounts.',
+      'These marks are gone if the notes are skipped, no matter how complete the statement above them is.',
+    ],
+    cite: MS('p.11 (Notes to the Accounts — Accounting Policy [4], Operating Profit [4], Dividends [2], Tangible Fixed Assets [7])'),
+  },
+  scripts: [
+    {
+      id: 'ac10-a',
+      label: 'The Published Accounts',
+      persona: 'Finishes the face, skips the notes',
+      work: ['Completes the Published Profit & Loss account.', 'Runs low on time and leaves the Notes to the Accounts blank.'],
+      keyLevelId: 'm0',
+      keyNote:
+        'A large block forfeited — the notes carry roughly 17 marks the statement above doesn’t, and the Tangible Fixed Assets note alone is [7]. Because the notes are a reliable, structured layout you can learn cold, budget time to attempt them: even the accounting-policy note is [4] of near-guaranteed marks. Never leave the Notes empty.',
+      embodies: {
+        behaviour: 'Leaves the Notes to the Accounts blank — forfeiting a large, self-contained block of marks.',
+        cite: MS('p.11'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-acc10',
+    rule: 'The Notes carry their own block of marks.',
+    detail:
+      'In Published Accounts the Notes to the Accounts (Accounting Policy, Operating Profit, Dividends, Tangible Fixed Assets) are worth a large block on top of the statement — the TFA note alone is [7]. They’re a learnable layout: budget time to attempt them and never leave them blank.',
+    cite: MS('p.11'),
+  },
+};
+
+// ─────────────── Ac11 · Cash-flow section headings ───────────────
+
+const AC11: GridSession = {
+  mode: 'grid',
+  id: 'acc-cashflow-headings',
+  subject: 'accounting',
+  level: 'higher',
+  title: 'Label every cash-flow section',
+  cue: 'Cash Flow Statement',
+  question:
+    'A Cash Flow Statement is organised under standard section headings — Operating Activities, Return on Investments & Servicing of Finance, Taxation, Capital Expenditure, Equity Dividends Paid, Financing. Each heading is a mark. One candidate lists the movements with correct figures but writes no section headings.',
+  questionNote:
+    'Scenario authored for this exercise; figures omitted. In the 2024 scheme each cash-flow section heading earns a discrete mark — “Operating Activities [1]”, “Taxation [1]”, “Financing [1]”, and so on — on top of the figures grouped beneath it.',
+  grid: {
+    perPoint: [
+      { id: 'figures', label: 'Section figures correct', marks: 6 },
+      { id: 'headings', label: 'Section headings present', marks: 6 },
+    ],
+    shorthand: 'Figures 6 · Headings 6 (≈[1] each)',
+    ruleNote:
+      'The standard cash-flow section headings are marked lines, not layout decoration — each is worth about [1]. A statement with correct figures but no headings banks the figures and quietly forfeits a mark for every missing heading.',
+    cite: MS('p.23 (Cash Flow Statement — section headings each [1])'),
+  },
+  scripts: [
+    {
+      id: 'ac11-a',
+      label: 'Script A',
+      persona: 'Correct figures, no headings',
+      attempts: [
+        {
+          id: 'ac11-a-1',
+          text: 'Lists the cash movements with correct figures in the right order, but under no section headings — a bare column of numbers.',
+          key: { figures: 6, headings: 0 },
+          keyNote:
+            'Every figure scores — but each of the six standard section headings is a separate [1] mark that was left unwritten. That is a whole block of easy marks lost to omission. The headings are fixed and identical every year: learn them and write them.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Omits the standard cash-flow section headings — forfeiting the mark on each one.',
+        cite: MS('p.23'),
+      },
+    },
+    {
+      id: 'ac11-b',
+      label: 'Script B',
+      persona: 'Figures grouped under headings',
+      attempts: [
+        {
+          id: 'ac11-b-1',
+          text: 'Groups the same correct figures under the standard headings — Operating Activities, Taxation, Capital Expenditure, Financing, and the rest.',
+          key: { figures: 6, headings: 6 },
+          keyNote:
+            'Full marks — the same figures, now under the standard section headings that each carry a mark. The headings are a rote, guaranteed block; writing them as you build the statement costs nothing and secures marks the first script simply gave away.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-acc11',
+    rule: 'Every cash-flow heading is a mark.',
+    detail:
+      'The Cash Flow Statement’s standard section headings (Operating Activities, Taxation, Capital Expenditure, Financing, …) each earn a discrete mark on top of the figures. They’re fixed every year — write them all, and don’t hand back a block of guaranteed marks by listing bare numbers.',
+    cite: MS('p.23'),
+  },
+};
+
+// ─────────────── Ac12 · The interpretation report rewards developed comment ───────────────
+
+const AC12: GridSession = {
+  mode: 'grid',
+  id: 'acc-report-comments',
+  subject: 'accounting',
+  level: 'higher',
+  title: 'A ratio isn’t a comment',
+  cue: 'Interpretation report',
+  question:
+    'In the Interpretation report, marks are awarded for developed analysis under each heading, not for the bare ratio — a good comment quotes the figure, notes the trend against last year, and interprets it against a benchmark. One candidate writes only “ROCE is 17.3%.” Another develops it fully.',
+  questionNote:
+    'Scenario authored for this exercise; the per-comment split is simplified. The 2024 report scheme awards big analytical blocks — Profitability [7], Gearing [9], Security [7] — plus a discrete Conclusion [1]; the marks reward developed comment (figure + trend + interpretation), not a re-stated ratio.',
+  grid: {
+    perPoint: [
+      { id: 'figure', label: 'Ratio value quoted', marks: 2 },
+      { id: 'trend', label: 'Trend vs prior year', marks: 2 },
+      { id: 'interp', label: 'Interpretation / benchmark', marks: 3 },
+    ],
+    shorthand: 'Figure 2 · Trend 2 · Interpret 3',
+    ruleNote:
+      'The report question is not the ratio calculation — the analytical marks sit in the comment. A developed point states the figure, compares it to last year, and reads it against a benchmark (the ideal ratio, the cost of borrowing, the risk-free return). A bare ratio scores only the figure.',
+    cite: MS('p.19, p.20 (Interpretation report — Profitability [7], Gearing [9], Conclusion [1])'),
+  },
+  scripts: [
+    {
+      id: 'ac12-a',
+      label: 'Script A',
+      persona: 'States the ratio, stops',
+      attempts: [
+        {
+          id: 'ac12-a-1',
+          text: '“The return on capital employed is 17.3%.” (No comparison, no interpretation.)',
+          key: { figure: 2, trend: 0, interp: 0 },
+          keyNote:
+            'Only the figure scores — the report is asking for analysis, and there is none here. Quoting a ratio you already calculated earlier is close to a surplus answer; the marks live in the trend and the interpretation the candidate never wrote. In the report, a number without a comment is barely worth anything.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Restates a computed ratio without developing a trend or interpretation — the analytical marks go unearned.',
+        cite: MS('p.19'),
+      },
+    },
+    {
+      id: 'ac12-b',
+      label: 'Script B',
+      persona: 'Develops the comment',
+      attempts: [
+        {
+          id: 'ac12-b-1',
+          text: '“ROCE is 17.3%, up from 15% last year — an improving trend. It is well above the 8% cost of borrowing, so the company is using its resources efficiently.”',
+          key: { figure: 2, trend: 2, interp: 3 },
+          keyNote:
+            'Full marks — figure, trend and interpretation, exactly what the report heading rewards. Notice the shape you can reuse for every ratio: state it, compare it to last year, then judge it against a benchmark. And finish the report with a clear Conclusion — that recommendation is its own [1].',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-acc12',
+    rule: 'In the report, comment beats calculation.',
+    detail:
+      'The Interpretation report awards developed analysis, not the bare ratio: quote the figure, note the trend against last year, interpret it against a benchmark. Restating a number scores almost nothing. Build every comment to that shape — and end with a clear Conclusion, which carries its own mark.',
+    cite: MS('p.20'),
+  },
+};
+
+// ─────────────── Ac13 · HL — the theory tail is still marks ───────────────
+
+const AC13: ScaleSession = {
+  mode: 'scale',
+  id: 'acc-hl-theory',
+  subject: 'accounting',
+  level: 'higher',
+  title: 'The theory part at the end',
+  cue: 'Explain / define (HL)',
+  question:
+    'Even the big Higher Level computational questions end with a written theory part — define FIFO and name alternatives, explain controllable costs, explain why the suspense account closes to zero. A strong computational candidate, low on time, skips this final written part to check figures. What does that cost?',
+  questionNote:
+    'Scenario authored for this exercise. At HL the written tail of a computational question is a flat-mark block independent of the figures — e.g. the suspense-account explanation [2], “Controllable costs …” [4], and defining FIFO with alternatives [6] in the 2024 scheme.',
+  scale: {
+    name: 'HL written-theory part',
+    levels: [
+      { id: 'm0', label: '0 (part skipped)', annotation: '0', marks: 0 },
+      { id: 'm2', label: '2 (definition only)', annotation: '2', marks: 2 },
+      { id: 'm6', label: '6 (definition + alternatives)', annotation: '6', marks: 6 },
+    ],
+    notes: [
+      'HL computational questions carry a written theory tail worth a flat block — FIFO + alternatives [6], controllable costs [4], the suspense explanation [2].',
+      'These marks are independent of the figures: they’re there whether or not your accounts balanced.',
+      'They are among the most reliable marks in the question, yet the first thing rushed candidates drop.',
+    ],
+    cite: MS('p.26 (suspense-account explanation [2]), p.29 (controllable costs [4]), p.30 (FIFO + alternative methods [6])'),
+  },
+  scripts: [
+    {
+      id: 'ac13-a',
+      label: 'The final part',
+      persona: 'Skips the written tail',
+      work: ['Completes the computational parts.', 'Leaves the closing written-theory part blank to re-check figures.'],
+      keyLevelId: 'm0',
+      keyNote:
+        'A flat, reliable block forfeited — the theory tail is worth its marks regardless of the figures, and defining FIFO with two alternatives is a straight [6]. HL is not “all computation”: budget a couple of minutes for the written part of every big question, because a rote definition is safer than one more re-check of an account that already balances.',
+      embodies: {
+        behaviour: 'Skips the written-theory tail of an HL computational question — forfeiting flat, figure-independent marks.',
+        cite: MS('p.30'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-acc13',
+    rule: 'Answer the theory tail — even at HL.',
+    detail:
+      'Higher Level computational questions end with a written part (define FIFO, explain controllable costs, why the suspense closes to zero) worth a flat block independent of the figures. It’s among the surest marks in the question — always attempt it, rather than re-checking accounts that already balance.',
+    cite: MS('p.30'),
+  },
+};
+
+// ─────────────── Ac14 · A valid alternative method scores full ───────────────
+
+const AC14: ScaleSession = {
+  mode: 'scale',
+  id: 'acc-alternatives',
+  subject: 'accounting',
+  level: 'higher',
+  title: 'A valid alternative still scores',
+  cue: 'Interpretation / ratios',
+  question:
+    'Gearing can be expressed as Debt to Capital Employed or as Debt to Equity — two different formulas giving two different percentages. A candidate uses Debt to Equity instead of the layout in the model answer and reaches the correct alternative figure. Full marks, or marked down for “wrong method”?',
+  questionNote:
+    'Scenario authored for this exercise. The 2024 scheme explicitly accepts the alternative: for Q5 gearing it notes Debt to Equity “is fully acceptable” and that the student “should arrive at an answer of 36.89% for full marks” — a legitimate alternative that reaches the correct target is not penalised.',
+  scale: {
+    name: 'Alternative method',
+    levels: [
+      { id: 'm0', label: '0 (alternative, wrong target)', annotation: '0', marks: 0 },
+      { id: 'm3', label: '3 (right method, figure slips)', annotation: '3', marks: 3 },
+      { id: 'm6', label: '6 (valid alternative, correct target)', annotation: '6', marks: 6 },
+    ],
+    notes: [
+      'A legitimate alternative approach is accepted provided it reaches the correct target figure — the scheme names Debt to Equity as fully acceptable for gearing.',
+      'The award follows the correct alternative answer, not the particular layout in the model solution.',
+      'What is still required is the right target figure: an alternative that lands on the wrong number does not rescue the marks.',
+    ],
+    cite: MS('p.18 (Q5 gearing — Debt to Equity accepted, 36.89% for full marks)'),
+  },
+  scripts: [
+    {
+      id: 'ac14-a',
+      label: 'The alternative',
+      persona: 'Uses Debt to Equity, lands the figure',
+      work: ['Uses Debt to Equity instead of Debt to Capital Employed.', 'Reaches the accepted alternative figure of 36.89%.'],
+      keyLevelId: 'm6',
+      keyNote:
+        'Full marks — the scheme explicitly accepts Debt to Equity and prints 36.89% as the alternative target. Don’t abandon a method you know well because it isn’t the one in your notes: a valid alternative that reaches the correct figure scores in full. The one thing that is non-negotiable is landing on the right target.',
+      embodies: {
+        behaviour: 'Uses a scheme-accepted alternative method and reaches the correct alternative target — scoring full marks.',
+        cite: MS('p.18'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-acc14',
+    rule: 'A valid alternative that hits the target scores full.',
+    detail:
+      'The scheme accepts legitimate alternative methods — e.g. Debt to Equity for gearing (36.89%) — provided they reach the correct target figure. Use the approach you know best without fear of a “wrong format”; just make sure it lands on the right number.',
+    cite: MS('p.18'),
+  },
+};
+
+// ─────────────── Ac15 · Corrected Net Profit — add or deduct ───────────────
+
+const AC15: GridSession = {
+  mode: 'grid',
+  id: 'acc-corrected-profit',
+  subject: 'accounting',
+  level: 'higher',
+  title: 'Add it or take it away',
+  cue: 'Correction of errors',
+  question:
+    'In the Statement of Corrected Net Profit, each correction has to be classified as an addition to profit or a deduction from it. Identifying the adjustment isn’t enough — putting it on the wrong side loses the mark. A candidate identifies every adjustment but adds one back that should have been deducted.',
+  questionNote:
+    'Scenario authored for this exercise; figures simplified. The 2024 Statement of Corrected Net Profit (Q7) marks each adjustment by its side — items under “Add” raise the profit and items under “Less” reduce it, and the correct classification is what earns the mark.',
+  grid: {
+    perPoint: [
+      { id: 'identify', label: 'Adjustment identified', marks: 2 },
+      { id: 'direction', label: 'Correct side (add vs less)', marks: 2 },
+    ],
+    shorthand: 'Identify 2 · Correct side 2',
+    ruleNote:
+      'The Statement of Corrected Net Profit is a directional statement: an item that overstated profit must be deducted, one that understated it must be added back. Naming the right item on the wrong side scores the identification but not the classification — and the wrong sign feeds into a wrong corrected figure.',
+    cite: MS('p.26 (Statement of Corrected Net Profit — Add / Less classification)'),
+  },
+  scripts: [
+    {
+      id: 'ac15-a',
+      label: 'Script A',
+      persona: 'Right item, wrong side',
+      attempts: [
+        {
+          id: 'ac15-a-1',
+          text: 'Lists an overstatement of profit under “Add” instead of “Less”, so it increases the corrected profit rather than reducing it.',
+          key: { identify: 2, direction: 0 },
+          keyNote:
+            'The adjustment is correctly identified, but it’s on the wrong side — an item that overstated profit has to be deducted, not added. The classification mark is lost, and the wrong sign also pushes the final corrected profit off. Before writing each line, ask: did this error make profit too high or too low?',
+        },
+      ],
+      embodies: {
+        behaviour: 'Places a correction on the wrong side of the Corrected Net Profit statement — losing the classification mark.',
+        cite: MS('p.26'),
+      },
+    },
+    {
+      id: 'ac15-b',
+      label: 'Script B',
+      persona: 'Right item, right side',
+      attempts: [
+        {
+          id: 'ac15-b-1',
+          text: 'Puts each overstatement under “Less” and each understatement under “Add”, so every correction moves profit in the right direction.',
+          key: { identify: 2, direction: 2 },
+          keyNote:
+            'Full marks — each adjustment identified and classified on the correct side. Deciding “too high, so deduct / too low, so add back” for every item both banks the classification mark and keeps the corrected profit figure right. The direction is half the marks on this statement.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-acc15',
+    rule: 'Get each correction on the right side.',
+    detail:
+      'In the Statement of Corrected Net Profit, classification is marked as well as identification: an item that overstated profit must be deducted, one that understated it added back. Ask “too high or too low?” for each adjustment — the wrong side loses the mark and corrupts the final figure.',
+    cite: MS('p.26'),
+  },
+};
+
 export const ACCOUNTING_CHAIR: ChairSubject = {
   id: 'accounting',
   label: 'Accounting',
-  tagline: 'Workmarks, balancing, own-figure marking and format marks.',
+  tagline: 'Workmarks, balancing, own-figure marking, format marks and the marks candidates leave on the table.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [AC1, AC2, AC3, AC4, AC5, AC6, AC7],
+  sessions: [AC1, AC2, AC3, AC4, AC5, AC6, AC7, AC8, AC9, AC10, AC11, AC12, AC13, AC14, AC15],
   sources: [
     { label: 'SEC LC Accounting HL marking scheme 2024 (examiner-reports/accounting/2024-marking-scheme)' },
     { label: 'SEC LC Accounting OL marking scheme 2024 (examiner-reports/accounting/2024-ol-marking-scheme)' },
   ],
   coverageNote:
-    'The workmark, own-figure, sequence, journal-narration and statement-heading sessions apply at both levels (note: OL has no “both totals correct” balance-sheet mark). The Ordinary session is verified against the 2024 OL scheme. More OL sessions are being added.',
+    'The workmark, own-figure, sequence, journal-narration, statement-heading, ledger-balance, notes, cash-flow-heading, report-comment, theory-tail, alternative-method and corrected-profit sessions are verified against the 2024 HL scheme; most apply at both levels (note: OL has no “both totals correct” balance-sheet mark and no incorrect-sequence penalty). The two Ordinary sessions (flat-mark theory, surplus answers) are verified against the 2024 OL scheme. More OL sessions are being added.',
 };

@@ -367,12 +367,404 @@ const ART7: ScaleSession = {
   },
 };
 
+// ─────────────── ART8 · Match the detail to the marks ───────────────
+
+const ART8: ScaleSession = {
+  mode: 'scale',
+  id: 'art-tariff-detail',
+  subject: 'art',
+  level: 'common',
+  title: 'Match the detail to the marks',
+  cue: 'Section A',
+  question: 'Section A parts are worth 4, 5 or 6 marks, and the scheme says the depth expected scales with the tariff: “The detail required in any answer is determined by… the number of marks assigned”. A candidate gives a single thin sentence in answer to a 6-mark part (a) — the same length they’d give a 4-mark part. How does the 6-mark part score?',
+  questionNote:
+    'Scenario authored for this exercise. Section A uses one shared descriptor across 4/5/6-mark parts, with band boundaries that widen with the tariff (High is 4, 4–5, 5–6 respectively); the scheme ties the detail required to the marks available, so a thin answer under-serves a higher-tariff part.',
+  scale: {
+    name: 'Section A · detail vs 6-mark tariff',
+    levels: bands([2, 4, 6], ['Low — thin for 6 marks', 'Moderate', 'High — detail matches tariff']),
+    notes: [
+      'A single descriptor covers 4-, 5- and 6-mark parts; the band ceilings widen with the tariff (High = 4 / 4–5 / 5–6).',
+      '“The detail required in any answer is determined by the context and the manner in which the question is asked and by the number of marks assigned.”',
+      'A one-line answer that would suit a 4-mark part leaves a 6-mark part short of its High band.',
+    ],
+    cite: MS('printed p.15 (detail determined by marks assigned)'),
+  },
+  scripts: [
+    {
+      id: 'art8-a',
+      label: 'The answer',
+      persona: 'One line, whatever the tariff',
+      work: [
+        'A single thin sentence answering a 6-mark part (a).',
+        'The same length and depth it would give a 4-mark part.',
+      ],
+      keyLevelId: 'b0',
+      keyNote:
+        'Low band — the mark value tells you how much to write, and a 6-mark part expects more developed detail than a one-liner. Check the tariff before you answer: a 6-mark part wants fuller treatment of the given headings than a 4-mark part. Reading the marks and pacing your detail to them is a free way to climb the band.',
+      embodies: {
+        behaviour: 'Gives a low-tariff amount of detail to a high-tariff part — under-serving the marks available.',
+        cite: MS('printed p.15'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-art8',
+    rule: 'Let the marks tell you how much to write.',
+    detail:
+      'Section A parts run 4, 5 or 6 marks on one shared descriptor whose ceilings widen with the tariff. The scheme ties the detail required to the marks assigned — a one-line answer that suits a 4-mark part falls short of a 6-mark part’s High band. Read the tariff and pace your detail to it.',
+    cite: MS('printed p.15'),
+  },
+};
+
+// ─────────────── ART9 · Skilful brevity is protected ───────────────
+
+const ART9: ScaleSession = {
+  mode: 'scale',
+  id: 'art-brevity',
+  subject: 'art',
+  level: 'common',
+  title: 'Brevity is fine — padding isn’t',
+  cue: 'Section A / B / C',
+  question: 'The scheme instructs examiners twice: “Be careful not to penalise skilful brevity, nor to reward unwarranted length.” A candidate writes a short, precise, complete answer that fully addresses the question and then stops. Are they marked down for its length?',
+  questionNote:
+    'Scenario authored for this exercise. This general instruction appears in both the Section A and the Section B/C marking notes; it protects a concise, complete answer and refuses extra credit for padding.',
+  scale: {
+    name: 'Answer quality · substance not length',
+    levels: bands([2, 4, 6], ['Low — padded, little said', 'Moderate', 'High — concise & complete']),
+    notes: [
+      '“Be careful not to penalise skilful brevity, nor to reward unwarranted length.”',
+      'A short answer that fully meets the descriptor is not marked down for being short.',
+      'Equally, filler and repetition earn nothing — length on its own is not a route to marks.',
+    ],
+    cite: MS('printed p.15 (repeated printed p.20)'),
+  },
+  scripts: [
+    {
+      id: 'art9-a',
+      label: 'The answer',
+      persona: 'Says it once, well, then stops',
+      work: [
+        'A short, precise answer that fully addresses the question and the given headings.',
+        'No padding — it stops once the point is made.',
+      ],
+      keyLevelId: 'b2',
+      keyNote:
+        'High band — the scheme explicitly protects skilful brevity, so a complete, precise answer isn’t penalised for being short. Write to fully meet the descriptor, then stop; you don’t need to fill the space. The examiner is told not to reward unwarranted length either, so padding wouldn’t have lifted it — completeness does.',
+      embodies: {
+        behaviour: 'Answers completely and concisely — which the scheme protects rather than penalises.',
+        cite: MS('printed p.15'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-art9',
+    rule: 'A complete short answer beats a padded long one.',
+    detail:
+      'The scheme tells examiners not to penalise skilful brevity nor to reward unwarranted length. A concise answer that fully meets the descriptor scores full band — you don’t need to fill the page. Padding adds nothing, so make the point well and stop.',
+    cite: MS('printed p.15'),
+  },
+};
+
+// ─────────────── ART10 · Correct terms, no contradictions ───────────────
+
+const ART10: ScaleSession = {
+  mode: 'scale',
+  id: 'art-term-accuracy',
+  subject: 'art',
+  level: 'common',
+  title: 'Use terms correctly or lose the marks',
+  cue: 'Section A / B / C',
+  question: 'The scheme warns: “Words, expressions or phrases must be correctly used in context and not contradicted, and where there is evidence of incorrect use or contradictions the marks may not be awarded.” A candidate reaches for impressive-sounding art terms but misuses several and contradicts an earlier claim. How does that land?',
+  questionNote:
+    'Scenario authored for this exercise. This general marking instruction means terminology is only credited when used correctly and consistently — misused or self-contradicting terms can forfeit marks rather than gain them.',
+  scale: {
+    name: 'Terminology · correct use in context',
+    levels: bands([3, 6, 9], ['Low — misused / contradicted', 'Moderate', 'High — accurate in context']),
+    notes: [
+      '“Words, expressions or phrases must be correctly used in context and not contradicted.”',
+      '“Where there is evidence of incorrect use or contradictions the marks may not be awarded.”',
+      'Reaching for jargon you don’t control can cost marks — a correctly used simpler term is safer.',
+    ],
+    cite: MS('printed p.15 (correct use of terminology)'),
+  },
+  scripts: [
+    {
+      id: 'art10-a',
+      label: 'The answer',
+      persona: 'Impressive words, wrong meanings',
+      work: [
+        'Sprinkles in advanced-sounding art terms to look fluent.',
+        'Several are misused, and one claim contradicts an earlier one.',
+      ],
+      keyLevelId: 'b0',
+      keyNote:
+        'Low band — the scheme lets examiners withhold marks where terms are used incorrectly or the answer contradicts itself, so misfired jargon actively costs you. Only use a term you can apply correctly in context; a plainer word used accurately is worth more than an impressive one used wrongly. Keep your claims consistent so nothing cancels itself out.',
+      embodies: {
+        behaviour: 'Uses terminology incorrectly and contradicts an earlier claim — which the scheme says may forfeit marks.',
+        cite: MS('printed p.15'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-art10',
+    rule: 'A term only helps if it’s used correctly and consistently.',
+    detail:
+      'The scheme lets examiners withhold marks where words are used incorrectly in context or the answer contradicts itself. Impressive jargon you don’t control can cost marks — use only terms you can apply accurately, and keep your claims consistent.',
+    cite: MS('printed p.15'),
+  },
+};
+
+// ─────────────── ART11 · Your own valid example still counts ───────────────
+
+const ART11: ScaleSession = {
+  mode: 'scale',
+  id: 'art-open-examples',
+  subject: 'art',
+  level: 'common',
+  title: 'Bring the example you actually know',
+  cue: 'Section B/C essay',
+  question: 'The scheme is open: “Candidates may choose from a wide range of relevant examples and content… Relevant content must be credited,” and if an examiner doesn’t know the work they must “make yourself familiar… before you mark”. A candidate uses a specific, well-understood but less-famous artist rather than a textbook big name. Does that relevant, specific example score?',
+  questionNote:
+    'Scenario authored for this exercise. Visual Studies is not a closed answer key — any relevant, specific, correctly-identified content is credited and the examiner researches unfamiliar work, so a valid non-canonical example is not disadvantaged for being off the “expected” list.',
+  scale: {
+    name: 'Relevant Examples · open choice · /10 bands',
+    levels: bands([3, 6, 9], ['Low — vague / irrelevant', 'Moderate', 'High — specific, relevant, understood']),
+    notes: [
+      '“Candidates may choose from a wide range of relevant examples and content… Relevant content must be credited.”',
+      '“If you are not familiar with the artwork or artist… make yourself familiar… All valid points will be taken into consideration.”',
+      'A specific, correctly-identified, well-understood example scores on its relevance — it doesn’t have to be a famous textbook name.',
+    ],
+    cite: MS('printed p.20 (wide range of relevant examples; printed p.15, examiner self-educates)'),
+  },
+  scripts: [
+    {
+      id: 'art11-a',
+      label: 'The answer',
+      persona: 'Uses the artist they genuinely know',
+      work: [
+        'A specific, less-famous artist and named works the candidate understands well.',
+        'Directly relevant to the question, correctly identified and used to justify the response.',
+      ],
+      keyLevelId: 'b2',
+      keyNote:
+        'High band — the scheme credits any relevant content and has the examiner research unfamiliar work, so a specific, well-understood example scores on its merits whether or not it’s a canonical name. Don’t self-censor to only famous artists; the example you actually understand and can analyse will out-score a big name you can only describe vaguely. Relevance and understanding, not fame, are what the strand pays for.',
+      embodies: {
+        behaviour: 'Uses a valid, specific, well-understood non-canonical example — which the open-example rule credits fully.',
+        cite: MS('printed p.20'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-art11',
+    rule: 'The example you truly understand beats a famous one you don’t.',
+    detail:
+      'Visual Studies is an open scheme — any relevant, specific, correctly-identified content is credited, and examiners research unfamiliar work. A well-understood, less-famous artist scores on relevance and understanding, so bring the example you can actually analyse rather than a big name you can only name.',
+    cite: MS('printed p.20'),
+  },
+};
+
+// ─────────────── ART12 · Over-answering: best answer counts ───────────────
+
+const ART12: ScaleSession = {
+  mode: 'scale',
+  id: 'art-best-answer',
+  subject: 'art',
+  level: 'common',
+  title: 'Answer one — but a spare doesn’t cost you',
+  cue: 'Section B/C essay',
+  question: 'You answer one question in Section B and one in Section C. A candidate, unsure, answers two Section B questions — one strong, one weak. The scheme says: “If candidates answer more than one question… per section then the question with the highest score is used to award marks.” Which one is credited?',
+  questionNote:
+    'Scenario authored for this exercise. Unlike some schemes that deduct for invalid extra answers, Visual Studies simply credits the highest-scoring answer per section — over-answering is not penalised, though the time spent is a real cost.',
+  scale: {
+    name: 'Section B/C · which answer is credited · /50',
+    levels: bands([15, 30, 45], ['Low — the weak one', 'Moderate', 'High — the strong one counts']),
+    notes: [
+      '“If candidates answer more than one question etc. per section then the question with the highest score is used to award marks.”',
+      'No deduction is applied for the extra answer — only the best one scores.',
+      'The real cost of over-answering is time, not marks: two half-answers can beat neither.',
+    ],
+    cite: MS('printed p.20 (highest score used)'),
+  },
+  scripts: [
+    {
+      id: 'art12-a',
+      label: 'The answer',
+      persona: 'Hedged their bets, wrote two',
+      work: [
+        'Answered two Section B questions instead of one.',
+        'One is strong; the other is weak and half-finished.',
+      ],
+      keyLevelId: 'b2',
+      keyNote:
+        'The strong answer is credited — the scheme takes the highest-scoring answer per section and applies no penalty for the extra one, so a spare attempt can’t lower your mark. The genuine risk is time: splitting effort across two questions can leave both under-developed. If you do change your mind, the better answer will count, so commit your time to making one of them strong.',
+      embodies: {
+        behaviour: 'Answers more than one question per section — credited on the highest-scoring one, with no deduction.',
+        cite: MS('printed p.20'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-art12',
+    rule: 'The best answer per section counts — extras aren’t penalised, but they cost time.',
+    detail:
+      'If you answer more than one question in a section, Visual Studies credits the highest-scoring one and deducts nothing for the extra. A change of mind won’t sink you — but two half-answers help no one, so spend your time making one answer strong.',
+    cite: MS('printed p.20'),
+  },
+};
+
+// ─────────────── ART13 · Articulate a personal understanding ───────────────
+
+const ART13: ScaleSession = {
+  mode: 'scale',
+  id: 'art-personal-understanding',
+  subject: 'art',
+  level: 'common',
+  title: 'Show your own understanding',
+  cue: 'Section B/C essay',
+  question: 'The Coherence and Focus strand rewards, alongside answering the question, “the ability to articulate a personal understanding in the response”. A candidate reproduces an accurate, orderly, but entirely generic textbook answer — correct and well-sequenced, yet with no personal understanding or voice in it. Where does Coherence and Focus land?',
+  questionNote:
+    'Scenario authored for this exercise. Coherence and Focus (10 marks) lists articulating a personal understanding as one of the abilities it credits at each band; a competent but impersonal, memorised answer meets some of the strand but can’t reach its High band.',
+  scale: {
+    name: 'Coherence and Focus · personal understanding · /10 bands',
+    levels: bands([2, 5, 9], ['Low', 'Moderate — orderly but generic', 'High — personal understanding']),
+    notes: [
+      'Each band pairs answering the question and sequential arguments with “a[n]… ability to articulate a personal understanding in the response”.',
+      'The High band needs “a thorough ability to articulate a personal understanding”.',
+      'An accurate but generic, memorised answer with no personal voice is held below the High band.',
+    ],
+    cite: MS('printed p.21 (Coherence and Focus, personal understanding)'),
+  },
+  scripts: [
+    {
+      id: 'art13-a',
+      label: 'The answer',
+      persona: 'Textbook-perfect, personally absent',
+      work: [
+        'An accurate, well-ordered, on-topic answer.',
+        'Entirely generic — a reproduced textbook account with no personal understanding or view.',
+      ],
+      keyLevelId: 'b1',
+      keyNote:
+        'Moderate band — this strand credits articulating a personal understanding, and a flawless but impersonal reproduction meets the “answer the question” part while missing the personal voice the High band needs. Say what you make of the work: your reading, your judgement, your response to it. That personal engagement, on top of accuracy and order, is what lifts the strand.',
+      embodies: {
+        behaviour: 'Gives an accurate but generic answer with no personal understanding — capped below the strand’s High band.',
+        cite: MS('printed p.21'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-art13',
+    rule: 'Coherence and Focus also rewards your personal understanding — put yourself in it.',
+    detail:
+      'The Coherence and Focus strand credits, at every band, “the ability to articulate a personal understanding in the response”. A correct but generic textbook answer meets the question but not the personal voice — reach the High band by saying what you make of the work: your reading, judgement and response.',
+    cite: MS('printed p.21'),
+  },
+};
+
+// ─────────────── ART14 · Four independent strands — serve all of them ───────────────
+
+const ART14: ScaleSession = {
+  mode: 'scale',
+  id: 'art-four-strands',
+  subject: 'art',
+  level: 'common',
+  title: 'Serve all four strands, not just one',
+  cue: 'Section B/C essay',
+  question: 'Each 50-mark Section B/C answer is marked on four separate band descriptors — Coherence and Focus (10), Subject Knowledge (20), Relevant Examples (10) and Visual Language (10) — scored independently and summed. A candidate writes a brilliant, High-band Subject Knowledge answer but names no recognised examples, wanders off the question and uses no art terminology. How high can the /50 total go?',
+  questionNote:
+    'Scenario authored for this exercise. The four Section B/C strands are separate band descriptors that add to 50; because they’re marked independently, a lopsided answer that maxes one strand and neglects the others is structurally capped — a top Subject Knowledge score is still only 20 of 50.',
+  scale: {
+    name: 'Section B/C · four strands summed · /50',
+    levels: bands([18, 32, 45], ['Low — one strand only', 'Moderate', 'High — all four served']),
+    notes: [
+      'The answer is scored on four separate band descriptors: Coherence and Focus (10) + Subject Knowledge (20) + Relevant Examples (10) + Visual Language (10) = 50.',
+      'The strands are marked independently and added — brilliance in one cannot pay for a blank in another.',
+      'A top Subject Knowledge answer is still only 20 of 50; neglecting the other three strands caps the whole question.',
+    ],
+    cite: MS('printed pp.21–24 (four Section B/C band descriptors)'),
+  },
+  scripts: [
+    {
+      id: 'art14-a',
+      label: 'The answer',
+      persona: 'All knowledge, nothing else',
+      work: [
+        'A brilliant, High-band Subject Knowledge answer.',
+        'But it names no recognised examples, drifts off the question, and uses no art terminology.',
+      ],
+      keyLevelId: 'b1',
+      keyNote:
+        'Held around the middle of /50 — Subject Knowledge is only 20 of the 50 marks, and the other three strands are scored and added separately, so neglecting them leaves roughly 30 marks unclaimed however strong the knowledge. Budget the answer across all four: stay on the question (Coherence and Focus), name recognised examples (Relevant Examples) and use art vocabulary (Visual Language). Spreading the effort, not deepening one strand, is what raises the total.',
+      embodies: {
+        behaviour: 'Maxes one strand and neglects the other three — structurally capping the four-strand total.',
+        cite: MS('printed pp.21–24'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-art14',
+    rule: 'Four independent strands make 50 — a lopsided answer is capped.',
+    detail:
+      'Section B/C answers are scored on four separate band descriptors — Coherence and Focus (10), Subject Knowledge (20), Relevant Examples (10), Visual Language (10) — marked independently and summed. Brilliance in one can’t pay for a blank in another, so a top knowledge answer with no examples, focus or terminology is capped near 20 of 50. Budget your effort across all four.',
+    cite: MS('printed pp.21–24'),
+  },
+};
+
+// ─────────────── ART15 · Answer all five Section A questions ───────────────
+
+const ART15: ScaleSession = {
+  mode: 'scale',
+  id: 'art-section-a-five',
+  subject: 'art',
+  level: 'common',
+  title: 'Answer all five — and choose your five',
+  cue: 'Section A',
+  question: 'Section A instructs: “Candidates must answer any five questions in this section from Question 1 to Question 7. Each question is worth 10 marks.” A candidate answers only three — very well — and leaves two of the required five blank. Section A is 50 marks. What is the ceiling on their Section A total?',
+  questionNote:
+    'Scenario authored for this exercise. Section A is five free-choice 10-mark questions (5 × 10 = 50) out of seven; each unanswered required question is a full 10 marks forfeited, and the free choice lets a candidate skip their two weakest topics.',
+  scale: {
+    name: 'Section A · questions completed · /50',
+    levels: bands([20, 35, 50], ['Low — left required questions blank', 'Moderate', 'High — all five answered']),
+    notes: [
+      '“Candidates must answer any five questions in this section from Question 1 to Question 7. Each question is worth 10 marks.”',
+      'Five × 10 = 50: every unanswered required question forfeits a full 10 marks, whatever the quality of the rest.',
+      'The choice is yours — pick your five strongest of the seven and skip the two you know least.',
+    ],
+    cite: MS('printed p.15 (answer any five, each 10 marks)'),
+  },
+  scripts: [
+    {
+      id: 'art15-a',
+      label: 'The answer',
+      persona: 'Three brilliant, two blank',
+      work: [
+        'Answers three Section A questions to a very high standard.',
+        'Leaves two of the required five unanswered.',
+      ],
+      keyLevelId: 'b0',
+      keyNote:
+        'Capped at roughly 30 of 50 — each question is a separate 10 marks, so two blanks forfeit 20 no matter how good the three answers are. You choose any five of the seven, so there’s no need to attempt topics you fear: pick your five strongest and complete all of them. A modest fifth answer almost always beats a brilliant third-and-nothing-else, because it claims marks that would otherwise be lost.',
+      embodies: {
+        behaviour: 'Answers fewer than the required five questions — forfeiting a full 10 marks per blank.',
+        cite: MS('printed p.15'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-art15',
+    rule: 'Answer all five Section A questions — and choose your best five.',
+    detail:
+      'Section A is five free-choice 10-mark questions from seven (5 × 10 = 50). Each blank forfeits a full 10 marks regardless of how good the others are, so completing all five beats perfecting a few. You pick the five, so play to your strengths and skip your two weakest topics.',
+    cite: MS('printed p.15'),
+  },
+};
+
 export const ART_CHAIR: ChairSubject = {
   id: 'art',
   label: 'Art (Visual Studies)',
-  tagline: 'Analyse over recall, name the works, use the vocabulary of art, and read the stimulus in front of you.',
+  tagline: 'Analyse over recall, name the works, use the vocabulary of art, budget all four strands, and read the stimulus in front of you.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [ART1, ART2, ART3, ART4, ART5, ART6, ART7],
+  sessions: [ART1, ART2, ART3, ART4, ART5, ART6, ART7, ART8, ART9, ART10, ART11, ART12, ART13, ART14, ART15],
   sources: [
     { label: 'SEC LC Art HL Visual Studies marking scheme 2024 (examiner-reports/art/2024-visual-studies-marking-scheme)' },
     { label: 'SEC LC Art OL Visual Studies marking scheme 2024 (examiner-reports/art/2024-visual-studies-ol-marking-scheme)' },
