@@ -195,6 +195,39 @@ export function topMisses(state: ChairState, n = 8): MissTally[] {
     .slice(0, n);
 }
 
+// ── the daily mark: one shared script a day + a calibration streak ──
+
+export interface DailyState {
+  /** Day key of the last completed daily mark. */
+  day: string;
+  streak: number;
+  best: number;
+}
+
+/** UTC day key, e.g. "2026-7-6". */
+export function dayKey(now: number): string {
+  const d = new Date(now);
+  return `${d.getUTCFullYear()}-${d.getUTCMonth() + 1}-${d.getUTCDate()}`;
+}
+
+/** Has today's daily mark already been done? */
+export function dailyDone(state: ChairState, now: number): boolean {
+  return state.daily.day === dayKey(now);
+}
+
+/** Which day-index we're on — drives the deterministic script-of-the-day pick. */
+export function dailyIndex(now: number): number {
+  return Math.floor(now / 86_400_000);
+}
+
+/** Record today's daily mark, extending or resetting the streak (pure). */
+export function recordDaily(state: ChairState, now: number): ChairState {
+  const today = dayKey(now);
+  if (state.daily.day === today) return state; // already counted today
+  const streak = state.daily.day === dayKey(now - 86_400_000) ? state.daily.streak + 1 : 1;
+  return { ...state, daily: { day: today, streak, best: Math.max(state.daily.best, streak) } };
+}
+
 // ── codex review: spaced re-testing of the earned marking rules ──
 
 /** Lightweight spaced-repetition state for one earned codex rule. */
@@ -276,12 +309,15 @@ export interface ChairState {
   misses: Record<string, MissTally>;
   /** Spaced-repetition schedule for earned codex rules, keyed by rule id. */
   codexReview: Record<string, CodexReview>;
+  /** The daily-mark streak. */
+  daily: DailyState;
 }
 
-const EMPTY: ChairState = { results: {}, codex: [], codexOnCards: [], misses: {}, codexReview: {} };
+const NO_DAILY: DailyState = { day: '', streak: 0, best: 0 };
+const EMPTY: ChairState = { results: {}, codex: [], codexOnCards: [], misses: {}, codexReview: {}, daily: NO_DAILY };
 const key = (uid?: string) => `chair:${uid || 'anon'}`;
 
-const fresh = (): ChairState => ({ ...EMPTY, results: {}, codex: [], codexOnCards: [], misses: {}, codexReview: {} });
+const fresh = (): ChairState => ({ ...EMPTY, results: {}, codex: [], codexOnCards: [], misses: {}, codexReview: {}, daily: { ...NO_DAILY } });
 
 export function loadChair(uid?: string): ChairState {
   try {
@@ -294,6 +330,7 @@ export function loadChair(uid?: string): ChairState {
       codexOnCards: parsed.codexOnCards ?? [],
       misses: parsed.misses ?? {},
       codexReview: parsed.codexReview ?? {},
+      daily: parsed.daily ?? { ...NO_DAILY },
     };
   } catch {
     return fresh();

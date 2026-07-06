@@ -12,9 +12,11 @@ import {
   gridDecisionKey,
   borderlineScripts,
   codexDue,
+  dailyDone,
   gridScriptMisses,
   isBorderlineScript,
   loadChair,
+  recordDaily,
   reviewCodex,
   markCodexOnCards,
   mergeMisses,
@@ -230,6 +232,27 @@ describe('mismatch tracking', () => {
     const top = topMisses(state);
     expect(top[0].key).toBe('business::Link'); // most frequent first
     expect(top).toHaveLength(2);
+  });
+
+  it('daily streak: extends on consecutive days, resets after a gap, tracks best', () => {
+    const DAY = 86_400_000;
+    const d1 = 1_700_000_000_000;
+    let state = loadChair('dm');
+    expect(dailyDone(state, d1)).toBe(false);
+    state = recordDaily(state, d1);
+    expect(state.daily.streak).toBe(1);
+    expect(dailyDone(state, d1)).toBe(true);
+    // same day again = no double count
+    state = recordDaily(state, d1 + 1000);
+    expect(state.daily.streak).toBe(1);
+    // next day extends
+    state = recordDaily(state, d1 + DAY);
+    expect(state.daily.streak).toBe(2);
+    expect(state.daily.best).toBe(2);
+    // skip a day resets, but best is retained
+    state = recordDaily(state, d1 + 3 * DAY);
+    expect(state.daily.streak).toBe(1);
+    expect(state.daily.best).toBe(2);
   });
 
   it('schedules codex recall: got-it climbs, fuzzy resets and comes back soon', () => {

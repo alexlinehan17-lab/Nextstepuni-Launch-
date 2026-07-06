@@ -32,6 +32,8 @@ import {
   calibrationBand,
   codexDue,
   completeSession,
+  dailyDone,
+  dailyIndex,
   gridDecisionKey,
   gridScriptMisses,
   isBorderlineScript,
@@ -40,6 +42,7 @@ import {
   mergeMisses,
   overallCalibration,
   pct,
+  recordDaily,
   reviewCodex,
   saveChair,
   scaleScriptMisses,
@@ -242,6 +245,8 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
   const [ownText, setOwnText] = useState('');
   const [reason, setReason] = useState('');
   const [borderlineOnly, setBorderlineOnly] = useState(false);
+  const [dailyMode, setDailyMode] = useState(false);
+  const [restrictScriptId, setRestrictScriptId] = useState<string | null>(null);
   const [codexAdded, setCodexAdded] = useState(false);
   const [recallOpen, setRecallOpen] = useState<string | null>(null);
 
@@ -273,7 +278,37 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
     setOwnText('');
     setReason('');
     setBorderlineOnly(false);
+    setDailyMode(false);
+    setRestrictScriptId(null);
     setCodexAdded(false);
+    setView('session');
+  };
+
+  /** Launch today's deterministic script-of-the-day as a one-off calibration rep. */
+  const startDaily = () => {
+    const refs = allSessions().flatMap(s => s.scripts.map(sc => ({ sessionId: s.id, scriptId: sc.id })));
+    if (refs.length === 0) return;
+    const ref = refs[dailyIndex(Date.now()) % refs.length];
+    const sess = allSessions().find(s => s.id === ref.sessionId);
+    if (!sess) return;
+    const subj = CHAIR_SUBJECTS.find(c => c.id === sess.subject);
+    if (subj) {
+      setSubjectId(subj.id);
+      setLevel(levelsOf(subj).includes(sess.level) ? sess.level : levelsOf(subj)[0] ?? 'higher');
+    }
+    setSessionId(ref.sessionId);
+    setScriptIdx(0);
+    setDecisions({});
+    setChosenLevel(null);
+    setScores([]);
+    setSessionMisses([]);
+    setOwnText('');
+    setReason('');
+    setBorderlineOnly(false);
+    setDailyMode(true);
+    setRestrictScriptId(ref.scriptId);
+    setCodexAdded(false);
+    setStage('mark');
     setView('session');
   };
 
@@ -295,7 +330,11 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
   if (view === 'session' && session) {
     const allScriptsU = session.scripts as (GridSession['scripts'][number] | ScaleSession['scripts'][number])[];
     const borderlineCount = allScriptsU.filter(s => isBorderlineScript(session, s)).length;
-    const scripts = (borderlineOnly ? allScriptsU.filter(s => isBorderlineScript(session, s)) : session.scripts) as typeof session.scripts;
+    const scripts = (
+      restrictScriptId ? allScriptsU.filter(s => s.id === restrictScriptId)
+      : borderlineOnly ? allScriptsU.filter(s => isBorderlineScript(session, s))
+      : session.scripts
+    ) as typeof session.scripts;
     const script = scripts[Math.min(scriptIdx, scripts.length - 1)];
 
     const commitScript = () => {
@@ -321,10 +360,12 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
         setStage('mark');
       } else {
         const now = Date.now();
-        // A borderline drill is practice — record the blind spots it surfaces,
-        // but don't overwrite the full session's result or auto-earn the codex.
-        const base = borderlineOnly ? state : completeSession(state, session, scores, now);
-        persist(mergeMisses(base, sessionMisses, now));
+        // Drills (borderline / daily) are practice — record the blind spots they
+        // surface, but don't overwrite the full session's result or earn codex.
+        let base = (borderlineOnly || dailyMode) ? state : completeSession(state, session, scores, now);
+        base = mergeMisses(base, sessionMisses, now);
+        if (dailyMode) base = recordDaily(base, now);
+        persist(base);
         setStage('summary');
       }
     };
@@ -779,6 +820,14 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
         {/* ── summary ── */}
         {stage === 'summary' && (
           <>
+            {dailyMode && (
+              <div className="rounded-xl px-4 py-3 mb-3 text-center" style={{ backgroundColor: '#FDEEDF', border: `1px solid rgba(242,107,31,0.3)` }}>
+                <p className="text-[14px] font-semibold" style={{ color: '#8C3A0E' }}>
+                  Daily Mark done · {state.daily.streak}🔥 day streak
+                  {state.daily.streak >= state.daily.best && state.daily.best > 1 ? ' — your best yet' : ''}
+                </p>
+              </div>
+            )}
             {(() => {
               const agreement = scores.length ? scores.reduce((a, s) => a + s.agreement, 0) / scores.length : 0;
               return (
@@ -844,7 +893,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
             </div>
 
             <button
-              onClick={() => setView('subject')}
+              onClick={() => setView(dailyMode ? 'home' : 'subject')}
               className="w-full rounded-full py-3 text-[15px] font-semibold text-white transition-transform active:translate-y-0.5"
               style={{ backgroundColor: ACCENT, borderBottom: '3px solid #B54D14', boxShadow: '0 4px 0 #B54D14' }}
             >
@@ -1139,6 +1188,35 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
         Mark sample answers against the SEC’s own rules. The closer your marking gets to the examiner’s, the better
         you’ll judge your own work when it counts.
       </p>
+
+      {(() => {
+        const done = dailyDone(state, Date.now());
+        return (
+          <button
+            onClick={done ? undefined : startDaily}
+            disabled={done}
+            className="w-full text-left rounded-2xl px-4 py-3.5 mb-3 transition-transform active:translate-y-0.5"
+            style={{ backgroundColor: done ? '#E8F2EC' : ACCENT, borderBottom: done ? 'none' : '3px solid #B54D14', boxShadow: done ? 'none' : '0 4px 0 #B54D14' }}
+          >
+            <div className="flex items-center justify-between gap-3">
+              <div className="min-w-0">
+                <p className="text-[10.5px] font-bold uppercase tracking-[0.1em]" style={{ color: done ? SUCCESS : 'rgba(255,255,255,0.85)' }}>
+                  The Daily Mark
+                </p>
+                <p className="text-[15px] font-semibold" style={{ fontFamily: SERIF, color: done ? INK : '#fff' }}>
+                  {done ? 'Done today — see you tomorrow' : 'Mark today’s script'}
+                </p>
+              </div>
+              <div className="shrink-0 text-right">
+                <p className="text-[20px] font-bold leading-none" style={{ fontFamily: SERIF, color: done ? SUCCESS : '#fff' }}>
+                  {state.daily.streak}🔥
+                </p>
+                <p className="text-[10px]" style={{ color: done ? MUTED : 'rgba(255,255,255,0.85)' }}>day streak</p>
+              </div>
+            </div>
+          </button>
+        );
+      })()}
 
       <div className="rounded-xl border bg-white dark:bg-zinc-900 dark:border-zinc-700 px-4 py-3 mb-5 flex items-center justify-between gap-3" style={{ borderColor: BORDER }}>
         <div className="min-w-0 flex items-center gap-3">
