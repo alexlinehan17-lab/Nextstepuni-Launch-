@@ -12,13 +12,21 @@
  * system, cited to:
  *  - SEC LC Spanish HL marking scheme 2025 —
  *    examiner-reports/spanish/2025-marking-scheme.*
- * (The oral is a separate scheme, not covered here.)
+ * The oral (Sp5) is a separate component; SEC does NOT publish a per-band oral
+ * marking grid, so that session teaches only what the authoritative public
+ * syllabus states — the oral's weighting, format and assessment criteria —
+ * cited to:
+ *  - SEC/NCCA LC Spanish syllabus (Ordinary & Higher) —
+ *    examiner-reports/spanish/spanish-syllabus.*
  * Claim-by-claim record: compliance/evidence/examiners-chair.md.
  */
 
 import { type ChairSubject, type ScaleSession, type ScaleLevel } from './types';
 
 const MS = (p: string) => ({ label: `SEC Spanish HL marking scheme 2025, ${p}` });
+// Oral criteria come from the SEC/NCCA syllabus, NOT the written marking scheme —
+// kept on its own helper so the two sources never blur.
+const ORAL = (p: string) => ({ label: `SEC/NCCA LC Spanish syllabus, ${p}` });
 
 const two = (a: number, b: number): ScaleLevel[] => [
   { id: `m${a}`, label: `${a} marks`, annotation: `${a}`, marks: a },
@@ -216,15 +224,69 @@ const SP4: ScaleSession = {
   },
 };
 
+// ─────────────── Sp5 · The oral — converse, don't recite ───────────────
+
+const SP5: ScaleSession = {
+  mode: 'scale',
+  id: 'es-oral',
+  subject: 'spanish',
+  level: 'common',
+  title: 'The oral: converse, don’t recite',
+  cue: 'Oral',
+  question: 'The Spanish oral (25% of the marks at Higher Level, 20% at Ordinary) is a general conversation plus a role-play, marked on two criteria: (i) your ability to transfer meaning and (ii) the accuracy and appropriateness of your language. A candidate delivers a flawless, memorised speech about their hobbies — but it doesn’t answer what the examiner actually asked. How does that land?',
+  questionNote:
+    'Scenario authored for this exercise. The band marks below are ILLUSTRATIVE — SEC does not publish per-band oral cut-points. The load-bearing, cited facts are the syllabus’s weighting (Speaking 25% HL / 20% OL), the general-conversation + role-play format, the two assessment criteria, and the principle that assessment emphasises language and communication rather than information content.',
+  scale: {
+    name: 'Oral · communication (illustrative)',
+    levels: [
+      { id: 'recite', label: 'Low — recited, off-question', annotation: 'L', marks: 8 },
+      { id: 'partial', label: 'Moderate', annotation: 'M', marks: 14 },
+      { id: 'converse', label: 'High — genuine, accurate exchange', annotation: 'H', marks: 20 },
+    ],
+    notes: [
+      'The oral is Speaking 25% (Higher) / 20% (Ordinary): a general conversation plus a role-play, 15 minutes.',
+      'Assessment criteria: “(i) ability to transfer meaning and (ii) degrees of accuracy and appropriateness of language, including the range of vocabulary and structures used.”',
+      'Assessment “will emphasise language and communication skills rather than the information content” — so a recited, off-question speech fails criterion (i), however polished.',
+    ],
+    cite: ORAL('p.24 (Speaking 25%/20%, assessment criteria), p.25 (oral format), p.2 (language over information content)'),
+  },
+  scripts: [
+    {
+      id: 'sp5-a',
+      label: 'The oral',
+      persona: 'Perfect speech, wrong question',
+      work: [
+        'A flawless, memorised paragraph about hobbies.',
+        'But it doesn’t engage with what the examiner actually asked.',
+      ],
+      keyLevelId: 'recite',
+      keyNote:
+        'It lands low — the first criterion is your ability to transfer meaning in a real exchange, and reciting past the question doesn’t do that, however clean the Spanish. The oral rewards communication over rehearsed content: listen, answer what’s asked, and let the conversation move. A simpler point that genuinely responds beats a perfect speech aimed at the wrong question.',
+      embodies: {
+        behaviour: 'Recites a memorised passage instead of conversing — failing the transfer-of-meaning criterion the oral is built on.',
+        cite: ORAL('p.24'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-es5',
+    rule: 'The oral rewards conversation, not recitation.',
+    detail:
+      'Spanish oral marks (25% HL / 20% OL) reward your ability to transfer meaning and the accuracy of your language — not memorised content. Listen and answer what’s actually asked; a real, accurate exchange beats a polished speech aimed at the wrong question.',
+    cite: ORAL('p.24'),
+  },
+};
+
 export const SPANISH_CHAIR: ChairSubject = {
   id: 'spanish',
   label: 'Spanish',
-  tagline: 'No lifting, content-before-language, and the verb gate.',
+  tagline: 'No lifting, content-before-language, the verb gate — and an oral that rewards real conversation.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [SP1, SP2, SP3, SP4],
+  sessions: [SP1, SP2, SP3, SP4, SP5],
   sources: [
     { label: 'SEC LC Spanish HL marking scheme 2025 (examiner-reports/spanish/2025-marking-scheme)' },
+    { label: 'SEC/NCCA LC Spanish syllabus, Ordinary & Higher (examiner-reports/spanish/spanish-syllabus)' },
   ],
   coverageNote:
-    'These sessions teach the written-paper conventions — the no-lifting rule, the content-gates-language rule and the verb gate — which apply at both Higher and Ordinary level (the oral is a separate scheme). Verified against the 2025 Higher Level scheme; level-specific worked examples are being added.',
+    'The written-paper sessions (no-lifting, content-gates-language, verb gate, exact transcription) apply at both Higher and Ordinary level, verified against the 2025 Higher Level scheme. The oral session (Sp5) teaches the syllabus-defined weighting, format and assessment criteria of the Speaking component (SEC does not publish a per-band oral grid, so no internal cut-points are asserted). Level-specific worked examples are being added.',
 };

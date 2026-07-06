@@ -551,9 +551,17 @@ criteria + format only.
 | `ir-oral-weighting` (IR6) | Irish | The Béaltriail is 240 marks / 40%, and the Comhrá (120) is half of it — the single biggest component of the whole subject | SEC LC Assessment Arrangements 2026, p.39 (An Bhéaltriail Chomónta component allocation) |
 | `fr-oral` (FR5) | French | The oral (25% HL / 20% OL) is a general conversation marked on (i) ability to transfer meaning and (ii) accuracy/appropriateness of language — a recited off-question speech fails criterion (i) | SEC/NCCA LC French syllabus, p.25–26 (Speaking %, assessment criteria, general-conversation format) |
 | `de-oral-criteria` (GE5) | German | The oral marks language and communication, not information content — a simpler point in good German outscores a fact-dump said badly (25% HL / 20% OL) | SEC/NCCA LC German syllabus, p.2 (principle), p.25 (criteria + weighting), p.26 (format) |
+| `es-oral` (SP5) | Spanish | The oral (25% HL / 20% OL) is a general conversation + role-play marked on (i) transfer meaning and (ii) accuracy — a recited off-question speech fails criterion (i) | SEC/NCCA LC Spanish syllabus, p.24 (Speaking %, criteria), p.25 (format), p.2 (language over information content) |
 
 Per-band internal oral cut-points are deliberately NOT asserted anywhere — they are not published
 by the SEC, and the sessions say so.
+
+> **Sourcing note (Spanish oral):** an initial draft of this session was grounded in a 2006 Chief
+> Examiner's Report retrieved from a non-authoritative third-party mirror (the SEC original was
+> unreachable). That draft was **rejected and rebuilt** against the current, authoritative NCCA
+> Spanish syllabus (curriculumonline.ie, `SCSEC32_Spanish_syllabus_eng.pdf`) — the same primary
+> source used for French and German — because a 15-year-old document from an unverifiable mirror
+> does not meet the citation bar. This is the accreditation rule working as intended.
 
 ## Pedagogical basis
 
