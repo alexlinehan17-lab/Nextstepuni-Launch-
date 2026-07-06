@@ -11,7 +11,13 @@
  * comprehension "own words" gate) is the real SEC system, cited to:
  *  - SEC LC Irish HL marking scheme 2025 (An Ardteistiméireacht, Scéim
  *    Mharcála, Ardleibhéal, Gaeilge) — examiner-reports/irish/2025-marking-scheme.*
- * (Note: the oral / Béaltriail is marked on a separate scheme not covered here.)
+ * The oral / Béaltriail is a SEPARATE assessment. Its 240-mark / 40% component
+ * allocation (session Ir6) is cited to the SEC's own assessment-structure
+ * document, NOT the written marking scheme:
+ *  - SEC LC Assessment Arrangements 2026 (An Bhéaltriail Chomónta) —
+ *    examiner-reports/irish/2026-assessment-arrangements-oral.*
+ * The per-question oral marking grid (how each component is scored internally)
+ * is not sourced here and is not asserted.
  * Claim-by-claim record: compliance/evidence/examiners-chair.md.
  */
 
@@ -19,6 +25,8 @@ import { type ChairSubject, type ScaleSession, type ScaleLevel } from './types';
 
 const MS = (p: string) => ({ label: `SEC Irish HL marking scheme 2025, ${p}` });
 const MSOL = (p: string) => ({ label: `SEC Irish OL marking scheme 2025, ${p}` });
+// Oral: cited to the SEC assessment-structure document, NOT the written scheme.
+const ORAL = (p: string) => ({ label: `SEC LC Assessment Arrangements 2026 (An Bhéaltriail Chomónta), ${p}` });
 
 // ─────────────── Ir1 · Language is the mark ───────────────
 
@@ -283,16 +291,79 @@ const IR5: ScaleSession = {
   },
 };
 
+// ─────────────── Ir6 · The oral is 40% — and the Comhrá is half of it ───────────────
+
+const BEALTRIAIL_COMPONENTS: ScaleLevel[] = [
+  { id: 'failtiu', label: 'An Fáiltiú (greeting)', annotation: '5', marks: 5 },
+  { id: 'filiocht', label: 'Léamh na Filíochta (poetry)', annotation: '35', marks: 35 },
+  { id: 'sraith', label: 'An tSraith Pictiúr (picture sequence)', annotation: '80', marks: 80 },
+  { id: 'comhra', label: 'An Comhrá (general conversation)', annotation: '120', marks: 120 },
+];
+
+const IR6: ScaleSession = {
+  mode: 'scale',
+  id: 'ir-oral-weighting',
+  subject: 'irish',
+  level: 'common',
+  title: 'The oral is 40% — and the Comhrá is half of it',
+  cue: 'An Bhéaltriail',
+  question:
+    'The Leaving Cert Irish oral (An Bhéaltriail Chomónta) is worth 240 marks — 40% of your entire Irish grade — and is common to Higher and Ordinary. It has four parts: An Fáiltiú (the greeting), Léamh na Filíochta (reading named poetry), An tSraith Pictiúr (describing a picture sequence), and An Comhrá (the general conversation). A candidate polishes the poems and learns off the picture sequences, but treats the general conversation as something to wing on the day. Which single part carries the MOST marks — the part they are gambling with?',
+  questionNote:
+    'Scenario authored for this exercise. The four-part split of the 240-mark common oral — An Fáiltiú 5, Léamh na Filíochta 35, An tSraith Pictiúr 80, An Comhrá 120 — is the real SEC allocation.',
+  scale: {
+    name: 'An Bhéaltriail Chomónta · na comhpháirteanna (as 240)',
+    levels: BEALTRIAIL_COMPONENTS,
+    notes: [
+      'The oral is 240 marks — 40% of the whole LC Irish grade (out of 600), common to Higher and Ordinary.',
+      'An Fáiltiú (greeting) 5 · Léamh na Filíochta (poetry) 35 · An tSraith Pictiúr 80 · An Comhrá 120.',
+      'The general conversation alone is 120 — half of the oral, and 20% of your entire Irish result.',
+      'That 120 is more than the written composition (An Cheapadóireacht, 100) — the single biggest chunk of LC Irish.',
+    ],
+    cite: ORAL('p.39 (240 marc: Fáiltiú 5 / Filíocht 35 / Sraith Pictiúr 80 / Comhrá 120)'),
+  },
+  scripts: [
+    {
+      id: 'ir6-a',
+      label: 'The gamble',
+      persona: 'Polishes the set-pieces, wings the chat',
+      work: [
+        'Poems read fluently; the picture sequences learned off by heart.',
+        'But the general conversation is left to chance — no prepared ground on family, hobbies, area or future plans.',
+      ],
+      keyLevelId: 'comhra',
+      keyNote:
+        'The Comhrá — 120 marks. It is the single largest part of the oral: half of the 240, and 20% of the entire LC Irish grade — more than the whole written composition (100). Winging it puts more marks at risk than the poems (35) and the picture sequences (80) they polished, combined. Prepare the conversation hardest: stock the predictable ground you will actually be asked about — teaghlach, caitheamh aimsire, ceantar, an todhchaí — in Irish you control.',
+      embodies: {
+        behaviour:
+          'Under-prepares the highest-value oral component (An Comhrá, 120 marks) while over-preparing lower-value set-pieces.',
+        cite: ORAL('p.39'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-ir6',
+    rule: 'Prepare the conversation hardest — it is half the oral.',
+    detail:
+      'The Irish oral is 240 marks (40% of the subject), common to both levels. Within it the general Comhrá is 120 — half the oral and 20% of your whole grade, more than the written composition. The greeting (5), poetry (35) and even the picture sequences (80) carry less. Bank the Comhrá by preparing the predictable ground in Irish you control.',
+    cite: ORAL('p.39'),
+  },
+};
+
 export const IRISH_CHAIR: ChairSubject = {
   id: 'irish',
   label: 'Irish',
-  tagline: 'Where language accuracy, genre and “own words” win the marks.',
+  tagline: 'Where language accuracy, genre, “own words” — and the 40% oral — win the marks.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [IR1, IR2, IR3, IR4, IR5],
+  sessions: [IR1, IR2, IR3, IR4, IR5, IR6],
   sources: [
     { label: 'SEC LC Irish HL marking scheme 2025 (examiner-reports/irish/2025-marking-scheme)' },
     { label: 'SEC LC Irish OL marking scheme 2025 (examiner-reports/irish/2025-ol-marking-scheme)' },
+    {
+      label:
+        'SEC LC Assessment Arrangements 2026 — An Bhéaltriail Chomónta (examiner-reports/irish/2026-assessment-arrangements-oral)',
+    },
   ],
   coverageNote:
-    'The composition (language is ~80% of the mark), genre, and Cluastuiscint (aural) sessions apply at both levels — the aural session teaches the 0–3 standard-of-Irish deduction that applies even in the listening comprehension. The “own words” comprehension rule is Higher-specific (OL comprehension has no own-words gate); the Ordinary session covers OL poetry’s “i d’fhocail féin” halving. Verified against the 2025 HL and OL schemes; the oral is a separate scheme.',
+    'The composition (language is ~80% of the mark), genre, and Cluastuiscint (aural) sessions apply at both levels — the aural session teaches the 0–3 standard-of-Irish deduction that applies even in the listening comprehension. The “own words” comprehension rule is Higher-specific (OL comprehension has no own-words gate); the Ordinary session covers OL poetry’s “i d’fhocail féin” halving. The oral session teaches the 240-mark / 40% component split of the common Béaltriail (Fáiltiú 5 / Filíocht 35 / Sraith Pictiúr 80 / Comhrá 120), verified against the SEC Assessment Arrangements 2026; the internal per-component oral marking grid is a separate scheme and is not asserted here. The written rules are verified against the 2025 HL and OL schemes.',
 };

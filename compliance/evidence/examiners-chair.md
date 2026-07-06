@@ -536,6 +536,25 @@ every criterion; scale ladders strictly increasing) are enforced by `test/examin
 With AG4 and IT4, every one of the 27 Examiner's Chair subjects now carries at least four
 marking sessions.
 
+### Oral-exam sessions (2026-07-06)
+
+The language orals (20–40% of the marks) were previously uncovered. SEC does **not** publish a
+per-band oral marking grid (interviewer instructions are confidential; the written schemes hold
+no oral section), so these sessions teach only what the **authoritative public SEC documents**
+state — the oral's weighting, format, and assessment criteria — cited via a dedicated `ORAL(...)`
+helper that is never mislabelled as the written marking scheme. Where a session shows band marks,
+they are explicitly labelled *illustrative*; the load-bearing, cited content is the weighting +
+criteria + format only.
+
+| Session | Subject | Rule taught | Source (verified) |
+|---------|---------|-------------|-------------------|
+| `ir-oral-weighting` (IR6) | Irish | The Béaltriail is 240 marks / 40%, and the Comhrá (120) is half of it — the single biggest component of the whole subject | SEC LC Assessment Arrangements 2026, p.39 (An Bhéaltriail Chomónta component allocation) |
+| `fr-oral` (FR5) | French | The oral (25% HL / 20% OL) is a general conversation marked on (i) ability to transfer meaning and (ii) accuracy/appropriateness of language — a recited off-question speech fails criterion (i) | SEC/NCCA LC French syllabus, p.25–26 (Speaking %, assessment criteria, general-conversation format) |
+| `de-oral-criteria` (GE5) | German | The oral marks language and communication, not information content — a simpler point in good German outscores a fact-dump said badly (25% HL / 20% OL) | SEC/NCCA LC German syllabus, p.2 (principle), p.25 (criteria + weighting), p.26 (format) |
+
+Per-band internal oral cut-points are deliberately NOT asserted anywhere — they are not published
+by the SEC, and the sessions say so.
+
 ## Pedagogical basis
 
 The tool is an application of self-assessment / rubric-internalisation practice: the

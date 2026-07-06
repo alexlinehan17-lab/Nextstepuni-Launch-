@@ -12,6 +12,10 @@
  * system, cited to:
  *  - SEC LC German HL marking scheme 2025 —
  *    examiner-reports/german/2025-marking-scheme.*
+ * The oral session (Ge5) is instead cited to the official SEC/NCCA LC German
+ * syllabus (Oral Assessment, criteria and weighting) —
+ * examiner-reports/german/german-syllabus.* — because SEC does not publish a
+ * per-mark oral marking scheme. Its refs use the syllabus's printed page numbers.
  * Page refs use the PDF page number (runs ~2 ahead of the printed page).
  * Claim-by-claim record: compliance/evidence/examiners-chair.md.
  */
@@ -19,6 +23,14 @@
 import { type ChairSubject, type ScaleSession, type ScaleLevel } from './types';
 
 const MS = (p: string) => ({ label: `SEC German HL marking scheme 2025, ${p}` });
+
+// The oral is NOT covered by the written marking scheme (SEC issues the oral
+// interviewers' instructions confidentially). Its assessment structure, criteria
+// and mark weighting are set out in the official SEC/NCCA LC German syllabus —
+// this is the verifiable public source for the oral, filed at
+// examiner-reports/german/german-syllabus.*. Do NOT relabel this as the written
+// marking scheme. Page refs are the syllabus's printed page numbers.
+const ORAL = (p: string) => ({ label: `SEC LC German syllabus (Ordinary & Higher), ${p}` });
 
 const two = (a: number, b: number): ScaleLevel[] => [
   { id: `m${a}`, label: `${a} marks`, annotation: `${a}`, marks: a },
@@ -215,15 +227,71 @@ const GE4: ScaleSession = {
   },
 };
 
+// ─────────────── Ge5 · The oral marks language, not information ───────────────
+
+const GE5: ScaleSession = {
+  mode: 'scale',
+  id: 'de-oral-criteria',
+  subject: 'german',
+  level: 'common',
+  title: 'They mark how you say it, not what you know',
+  cue: 'Mündliche Prüfung',
+  question:
+    'In the general conversation, the examiner asks about your summer. You reel off an impressive amount of information — places, dates, names — but in halting German with lots of errors and a narrow range of vocabulary. The oral is worth a big slice of the grade. Does packing in the facts protect your mark?',
+  questionNote:
+    'Scenario authored for this exercise. The real SEC system: the oral is worth 25% at Higher Level (20% at Ordinary) and is assessed on language and communication — the ability to transfer meaning and the accuracy, appropriateness and range of vocabulary and structures — NOT on the information content of what you say.',
+  scale: {
+    name: 'Oral · what earns the marks',
+    levels: [
+      { id: 'content', label: 'Information content of the answer', annotation: '✗', marks: 0 },
+      { id: 'language', label: 'Transfer of meaning + accuracy & range', annotation: '✓', marks: 25 },
+    ],
+    notes: [
+      'The oral (speaking) is worth 25% of the grade at Higher Level and 20% at Ordinary Level — more marks go to productive skills at Higher Level.',
+      'The syllabus states assessment "will emphasise language and communication skills rather than the information content of any particular section".',
+      'The oral assessment criteria take account of (i) ability to transfer meaning and (ii) degrees of accuracy and appropriateness of language, including the range of vocabulary and structures used.',
+      'Structure: general conversation + one of {project / picture sequence} + a role-play; fifteen minutes per candidate.',
+    ],
+    cite: ORAL('printed p.25 (Mark Allocation; Assessment Criteria) & p.26 (Oral Assessment)'),
+  },
+  scripts: [
+    {
+      id: 'ge5-a',
+      label: 'The answer',
+      persona: 'Facts-heavy, language-thin',
+      work: [
+        'Delivers lots of information — places, dates, names.',
+        'German is halting and error-filled, with a narrow range of vocabulary.',
+      ],
+      keyLevelId: 'content',
+      keyNote:
+        'The pile of facts earns nothing on its own — the oral marks language and communication, not the information content. What scores is transferring meaning clearly and showing accurate, appropriate, wide-ranging vocabulary and structures. A simpler answer said in good German beats an information-packed one said badly. Prepare range and accuracy, not just things to say.',
+      embodies: {
+        behaviour:
+          'Answers with rich information but weak, narrow language, where the oral credits language/communication over information content.',
+        cite: ORAL('p.2 (language over information content) & p.25 (Assessment Criteria)'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-de5',
+    rule: 'The oral marks how you speak, not what you know.',
+    detail:
+      'German’s oral is 25% of the grade at Higher Level (20% at Ordinary) and is assessed on transfer of meaning and the accuracy, appropriateness and range of your vocabulary and structures — not on the information content. Build range and accuracy; a simpler point said in good German outscores a fact-dump said badly.',
+    cite: ORAL('p.25 (Assessment Criteria) & p.2 (language over information content)'),
+  },
+};
+
 export const GERMAN_CHAIR: ChairSubject = {
   id: 'german',
   label: 'German',
-  tagline: 'The length gate, half-mark lifts and tense-critical answers.',
+  tagline: 'The length gate, half-mark lifts, tense-critical answers — and what the oral really marks.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [GE1, GE2, GE3, GE4],
+  sessions: [GE1, GE2, GE3, GE4, GE5],
   sources: [
     { label: 'SEC LC German HL marking scheme 2025 (examiner-reports/german/2025-marking-scheme)' },
+    { label: 'SEC LC German syllabus, Oral Assessment (examiner-reports/german/german-syllabus)' },
   ],
   coverageNote:
-    'These sessions teach the written-paper conventions — the Lower-E length gate, the half-mark rule for unmanipulated lifts and tense-critical comprehension — which apply at both Higher and Ordinary level (the oral is a separate scheme). Verified against the 2025 Higher Level scheme; level-specific worked examples are being added.',
+    'These sessions teach the written-paper conventions — the Lower-E length gate, the half-mark rule for unmanipulated lifts and tense-critical comprehension — plus the oral (25% at Higher, 20% at Ordinary), which is assessed on language and communication rather than information content. All apply at both Higher and Ordinary level. Written rules verified against the 2025 Higher Level scheme; the oral against the SEC German syllabus. Level-specific worked examples are being added.',
 };

@@ -18,6 +18,13 @@ import { type ChairSubject, type ScaleSession, type ScaleLevel } from './types';
 
 const MS = (p: string) => ({ label: `SEC French HL marking scheme 2025, ${p}` });
 
+// The oral is a different document from the written marking scheme: SEC does not
+// publish per-band oral cut-points, but the LC French syllabus (SEC/NCCA) sets out
+// the oral's assessment criteria, weighting and format. Cite it under its own label
+// so it is never confused with the written scheme above.
+//   examiner-reports/french/lc-french-syllabus.*
+const ORAL = (p: string) => ({ label: `SEC LC French syllabus — oral assessment, ${p}` });
+
 const commBands: ScaleLevel[] = [
   { id: 'bottom', label: 'Bottom band', annotation: 'B', marks: 6 },
   { id: 'middle', label: 'Middle band', annotation: 'M', marks: 13 },
@@ -225,15 +232,74 @@ const FR4: ScaleSession = {
   },
 };
 
+// ─────────────── Fr5 · The oral rewards conversation, not recitation ───────────────
+
+const FR5: ScaleSession = {
+  mode: 'scale',
+  id: 'fr-oral',
+  subject: 'french',
+  level: 'common',
+  title: 'The oral: converse, don’t recite',
+  cue: 'Oral',
+  question:
+    'The oral is worth 25% of French at Higher Level. A candidate has memorised a fluent, grammatically flawless two-minute speech about their summer job — and delivers it almost word-for-word no matter what the examiner actually asks. The French is perfect. Where does the performance land?',
+  questionNote:
+    'Scenario authored for this exercise. The oral is assessed as a “general conversation, based on the syllabus content”, on two criteria: (i) ability to transfer meaning and (ii) accuracy and appropriateness of language, including vocabulary and structures. SEC does not publish per-band cut-points, so the mark bands below are illustrative positions on the 100-mark oral — the marking grammar (two criteria + genuine conversation) is the cited syllabus system, not the exact numbers.',
+  scale: {
+    name: 'Oral · communicative bands (/100, illustrative)',
+    levels: [
+      { id: 'recite', label: 'Recited, off-question', annotation: 'B', marks: 40 },
+      { id: 'partial', label: 'Partly responds', annotation: 'M', marks: 65 },
+      { id: 'converse', label: 'Genuine conversation', annotation: 'T', marks: 85 },
+    ],
+    notes: [
+      'The oral is “general conversation, based on the syllabus content” — a conversation, not a recital.',
+      'It is assessed on “(i) ability to transfer meaning and (ii) degrees of accuracy and appropriateness of language, including the range of vocabulary and structures used”.',
+      'Speaking is 25% of the exam at Higher Level (20% at Ordinary); fifteen minutes per candidate.',
+      'A memorised speech that ignores the examiner’s actual question transfers little meaning — it forfeits the first criterion however accurate its French, keeping only some of the second.',
+      'SEC does not publish oral band cut-points; these marks illustrate the criterion, they are not official sub-marks.',
+    ],
+    cite: ORAL('p.[25]–[26] (oral assessment: general conversation; criteria (i)/(ii); 25% weighting)'),
+  },
+  scripts: [
+    {
+      id: 'fr5-a',
+      label: 'The performance',
+      persona: 'Perfect French, deaf to the question',
+      work: [
+        'Fluent, error-free delivery — clearly well rehearsed.',
+        'Recites the prepared “summer job” speech whatever the examiner asks.',
+        'Never actually answers the question put, so no real information is exchanged.',
+      ],
+      keyLevelId: 'recite',
+      keyNote:
+        'Bottom band — because the oral marks “ability to transfer meaning” first, and a speech that ignores the question transfers almost none. The accuracy criterion (vocabulary and structures) keeps it off the floor, but flawless French cannot rescue a monologue that isn’t a conversation. Listen to the actual question and answer it in your own words; a rougher answer that genuinely responds outscores a perfect one that doesn’t.',
+      embodies: {
+        behaviour:
+          'Recites a memorised, off-question speech in a component defined as “general conversation” — high on accuracy, low on the transfer-of-meaning criterion.',
+        cite: ORAL('p.[25]–[26]'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-fr5',
+    rule: 'The oral is a conversation — transfer meaning, don’t recite.',
+    detail:
+      'The French oral (25% at Higher Level) is marked on two criteria: ability to transfer meaning, and accuracy/appropriateness of vocabulary and structures. A memorised speech delivered regardless of the question is accurate but transfers little — it loses the primary criterion. Answer what is actually asked, in your own words.',
+    cite: ORAL('p.[25] (assessment criteria & 25% weighting)'),
+  },
+};
+
 export const FRENCH_CHAIR: ChairSubject = {
   id: 'french',
   label: 'French',
-  tagline: 'Two axes, manipulation and the one-answer rule.',
+  tagline: 'Two axes, manipulation, the one-answer rule — and the oral as conversation.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [FR1, FR2, FR3, FR4],
+  sessions: [FR1, FR2, FR3, FR4, FR5],
   sources: [
     { label: 'SEC LC French HL marking scheme 2025 (examiner-reports/french/2025-marking-scheme)' },
+    { label: 'SEC LC French syllabus — oral assessment (examiner-reports/french/lc-french-syllabus)' },
   ],
   coverageNote:
-    'These sessions teach the marking conventions the scheme applies across the written paper — the two Communication/Language axes, lift-vs-manipulation, and the one-answer rule — at both Higher and Ordinary level. Verified against the 2025 Higher Level scheme; level-specific worked examples are being added.',
+    'These sessions teach the marking conventions the scheme applies across the written paper — the two Communication/Language axes, lift-vs-manipulation, and the one-answer rule — plus the oral (25% at Higher Level), which is a general conversation marked on transfer-of-meaning and accuracy. Verified against the 2025 Higher Level written scheme and the SEC LC French syllabus; level-specific worked examples are being added.',
 };
