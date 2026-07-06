@@ -471,11 +471,16 @@ stability and catch any drift. Results so far (each filed as
 | French | 2025 HL | 2024 HL | All 5 CONFIRMED verbatim/identical (two axes, "mere transcription" band, manipulation docking, hedging = 0, aural any-formulation + 50% wrong-language). No edit. |
 | Biology | 2023 HL (Deferred) | 2025 HL (main) | All 4 CONFIRMED verbatim (points notation, context rule, Section A surplus penalty, Sections B/C asterisk). Also corrected a stale count in the 2023 insights file: Sections A and C each choose from **7** questions (best 5 of 7 / best 4 of 7), not 6 — the app's Biology sessions don't reference the count, so no session edit. |
 
-Across the eight subjects verified so far (English, Maths, Business, Geography, Physics,
-French, Biology — plus the Maths cross-level pass), the load-bearing rules are stable year
-to year; the only content change required was the single Business reframing above. This is
-a strong stability signal for accreditation: the conventions the tool teaches are not
-one-year artefacts. Remaining subjects are added to this table as their pass completes.
+| Chemistry | 2024 HL | 2025 HL | All cited rules CONFIRMED (Mr rule, // methods, context rule, exact-term convention identical). The literal "[do not accept clear]" example is 2024-specific and the app already cites it to 2024; the full-sentence point is sourced to the CER. No edit. |
+| Irish | 2025 HL | 2024 HL | All 3 CONFIRMED verbatim (composition Stíl 5 / Ionramháil 15 / Cumas Gaeilge 80; wrong-genre Stíl = 0; Q6(b) 12-mark "ina bhfocail féin"). No edit. |
+| History | 2025 HL | 2024 HL | Rules CONFIRMED verbatim (CM/OE 60/40, two-element "Max CM = 50", DBQ one-document = 5 max). **Acted on:** tightened the OE session from a paraphrase to the scheme's verbatim OE criterion "more than mere narrative" (the paraphrase wasn't an SEC band descriptor — same in both years, so an accuracy fix, not drift). Note "relies mostly on narrative" *is* the verbatim Low-Quality descriptor for Classical Studies (verified separately), and is used only there. |
+
+Across the eleven subjects verified so far (English, Maths, Business, Geography, Physics,
+French, Biology, Chemistry, Irish, History — plus the Maths cross-level pass), the
+load-bearing rules are stable year to year; only two small content edits were required (the
+Business reframing and the History verbatim tighten). This is a strong stability signal for
+accreditation: the conventions the tool teaches are not one-year artefacts. Remaining
+subjects are added to this table as their pass completes.
 
 ## Pedagogical basis
 

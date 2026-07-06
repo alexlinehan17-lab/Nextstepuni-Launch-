@@ -45,11 +45,11 @@ const HIS1: ScaleSession = {
     levels: OE_BANDS,
     notes: [
       'Essays are marked 60/40: Cumulative Mark (content) + Overall Evaluation (quality).',
-      'OE rewards analysis over narrative, marshalling of evidence, and arguing to a conclusion.',
+      'The OE criterion asks for “more than mere narrative” — analysis, marshalled evidence, and a conclusion.',
       'A purely narrative answer — however factually rich — caps in the lower OE bands.',
       'The facts still earn their CM; OE is the separate 40 marks a story leaves behind.',
     ],
-    cite: MS('p.12, p.14 (CM/OE 60/40 and OE bands)'),
+    cite: MS('p.12, p.14–15 (CM/OE 60/40; OE bands; “more than mere narrative” criterion)'),
   },
   scripts: [
     {
