@@ -240,6 +240,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
   const [scores, setScores] = useState<ScriptScore[]>([]);
   const [sessionMisses, setSessionMisses] = useState<MissDelta[]>([]);
   const [ownText, setOwnText] = useState('');
+  const [reason, setReason] = useState('');
   const [borderlineOnly, setBorderlineOnly] = useState(false);
   const [codexAdded, setCodexAdded] = useState(false);
   const [recallOpen, setRecallOpen] = useState<string | null>(null);
@@ -270,6 +271,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
     setScores([]);
     setSessionMisses([]);
     setOwnText('');
+    setReason('');
     setBorderlineOnly(false);
     setCodexAdded(false);
     setView('session');
@@ -315,6 +317,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
         setScriptIdx(i => i + 1);
         setDecisions({});
         setChosenLevel(null);
+        setReason('');
         setStage('mark');
       } else {
         const now = Date.now();
@@ -588,6 +591,14 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
               )}
             </div>
 
+            {stage === 'reveal' && reason.trim() && (
+              <div className="rounded-xl px-3.5 py-2.5 mb-3" style={{ backgroundColor: '#fff', border: `2px solid ${BORDER}` }}>
+                <Small className="mb-1">Your reasoning</Small>
+                <p className="text-[13px] italic" style={{ color: '#3a3530', fontFamily: SERIF }}>“{reason.trim()}”</p>
+                <p className="text-[11px] mt-1.5" style={{ color: LABEL }}>Now read the examiner’s note below — did you see it the same way?</p>
+              </div>
+            )}
+
             {session.mode === 'grid' ? (
               <div className="space-y-3.5 mb-4">
                 {(script as GridSession['scripts'][number]).attempts.map((attempt, ai) => (
@@ -720,6 +731,21 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                   {script.embodies.behaviour}
                 </p>
                 <CiteLine label={script.embodies.cite.label} />
+              </div>
+            )}
+
+            {stage === 'mark' && (
+              <div className="mb-3">
+                <input
+                  value={reason}
+                  onChange={e => setReason(e.target.value)}
+                  placeholder="In a line — why did you mark it that way? (optional)"
+                  className="w-full rounded-xl border px-3.5 py-2.5 text-[13px]"
+                  style={{ borderColor: BORDER, background: '#fff', color: INK }}
+                />
+                <p className="text-[10.5px] mt-1" style={{ color: LABEL }}>
+                  Commit to a reason before you see the key — then check it against the examiner’s.
+                </p>
               </div>
             )}
 
