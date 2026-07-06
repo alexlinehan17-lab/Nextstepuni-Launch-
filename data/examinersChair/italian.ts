@@ -7,7 +7,8 @@
  * Questions and scripts are AUTHORED for this exercise (labelled in each
  * `questionNote`) — they are not real SEC questions or candidate scripts. The
  * marking grammar (the two Content/Language axes with a graduated content cap,
- * the −50% wrong-language penalty, and the rote-off-the-point rule) is the real
+ * the −50% wrong-language penalty, the rote-off-the-point rule, and the
+ * copy-vs-manipulate deduction on comprehension) is the real
  * SEC system, cited to:
  *  - SEC LC Italian HL marking scheme 2025 —
  *    examiner-reports/italian/2025-marking-scheme.*
@@ -164,15 +165,67 @@ const IT3: ScaleSession = {
   },
 };
 
+// ─────────────── IT4 · Copy where you can, manipulate where you must ───────────────
+
+const IT4: ScaleSession = {
+  mode: 'scale',
+  id: 'it-manipulation',
+  subject: 'italian',
+  level: 'common',
+  title: 'Copy where you can, manipulate where you must',
+  cue: 'Reading comprehension',
+  question:
+    'A reading-comprehension point is built on a line of direct speech in the passage. To answer it you have to turn that quote into reported form — switch the verbs and pronouns into the narrator’s voice. The candidate instead copies the sentence out word-for-word. The Italian is lifted perfectly. How does the point score out of 5?',
+  questionNote:
+    'Scenario authored for this exercise. Italian reading comprehension lets you copy straight from the text when no manipulation is needed, but when the answer requires manipulation (e.g. altering the verbs and pronouns of direct speech into narrator voice) and it is not done, 1 mark is deducted. This copy-vs-manipulate rule is standing across years — worded near-identically in the 2024 (Section A) and 2025 (Sections A & B) schemes; cited here to 2025.',
+  scale: {
+    name: 'Manipulation · −1 if required and not done /5',
+    levels: two(4, 5),
+    notes: [
+      'Evidence is needed that the candidate has understood the text.',
+      'When manipulation is NOT necessary, material can be copied straight from the text.',
+      'When manipulation IS required and not done — e.g. direct-speech verbs and pronouns not altered to narrator voice — 1 mark is deducted.',
+    ],
+    cite: MS('p.11 & p.13 (copy-vs-manipulate rule, Sections A & B)'),
+  },
+  scripts: [
+    {
+      id: 'it4-a',
+      label: 'The answer',
+      persona: 'Lifts the quote verbatim',
+      work: [
+        'The point turns on a line of direct speech in the passage.',
+        'Answering it needs the verbs and pronouns switched to reported / narrator voice.',
+        'The candidate copies the sentence word-for-word instead — no manipulation done.',
+      ],
+      keyLevelId: 'm4',
+      keyNote:
+        'It drops to 4 of 5 — the −1 manipulation deduction. Copying is allowed only when the question doesn’t need reshaping; here it did, and lifting the quote unchanged doesn’t prove you understood it. Read what the question asks you to do with the line: if it must become reported speech, change the verbs and pronouns before you write it down.',
+      embodies: {
+        behaviour:
+          'Copies a direct-speech line verbatim where the answer required manipulation into narrator voice — the −1 deduction applies.',
+        cite: MS('p.11'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-it4',
+    rule: 'Copy when you can; manipulate when the question makes you.',
+    detail:
+      'Italian comprehension lets you lift material straight from the text when no reshaping is needed — but when the answer requires manipulation (turning direct speech into reported voice, altering verbs and pronouns) and you just copy, you lose a mark. Do the manipulation the question asks for.',
+    cite: MS('p.11'),
+  },
+};
+
 export const ITALIAN_CHAIR: ChairSubject = {
   id: 'italian',
   label: 'Italian',
-  tagline: 'Two axes, the wrong-language penalty, and no rote off the point.',
+  tagline: 'Two axes, the wrong-language penalty, copy-vs-manipulate, and no rote off the point.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [IT1, IT2, IT3],
+  sessions: [IT1, IT2, IT3, IT4],
   sources: [
     { label: 'SEC LC Italian HL marking scheme 2025 (examiner-reports/italian/2025-marking-scheme)' },
   ],
   coverageNote:
-    'These sessions teach the written-paper conventions — the two Content/Language axes with the graduated content cap, the wrong-language penalty and the rote-off-the-point rule — which apply at both Higher and Ordinary level (the oral is a separate scheme). Verified against the 2025 Higher Level scheme; level-specific worked examples are being added.',
+    'These sessions teach the written-paper conventions — the two Content/Language axes with the graduated content cap, the wrong-language penalty, the reading-comprehension copy-vs-manipulate deduction and the rote-off-the-point rule — which apply at both Higher and Ordinary level (the oral is a separate scheme). Verified against the 2025 Higher Level scheme (the copy-vs-manipulate rule also corroborated against 2024); level-specific worked examples are being added.',
 };

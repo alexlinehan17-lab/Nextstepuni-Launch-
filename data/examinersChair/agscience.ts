@@ -7,7 +7,8 @@
  * Questions and scripts are AUTHORED for this exercise (labelled in each
  * `questionNote`) — they are not real SEC questions or candidate scripts. The
  * marking grammar (the front-loaded points list, the surplus-answer penalty,
- * and the IIS coursework's holistic five-band rubric) is the real SEC system,
+ * the calculation method mark, and the IIS coursework's holistic five-band
+ * rubric) is the real SEC system,
  * cited to:
  *  - SEC LC Agricultural Science HL marking scheme 2024 —
  *    examiner-reports/agricultural-science/2024-marking-scheme.*
@@ -187,15 +188,67 @@ const AG3: ScaleSession = {
   },
 };
 
+// ─────────────── Ag4 · Calculation method mark ───────────────
+
+const AG4: ScaleSession = {
+  mode: 'scale',
+  id: 'ag-method-mark',
+  subject: 'agricultural-science',
+  level: 'common',
+  title: 'The formula banks marks on its own',
+  cue: 'Calculate',
+  question:
+    'Calculate the % soil organic matter in a peat sample (mass lost 55.2 g from a 90 g sample). The line is worth 6 marks. A candidate writes the correct formula — “55.2 / 90 × 100” — but slips the arithmetic and lands on 51.3 % instead of 61.3 %. What does it score?',
+  questionNote:
+    'Scenario authored for this exercise. Ag Science calculation lines carry a method mark: the scheme credits the correct formula on its own, worked here as “correct formula without correct answer, award 3m” on a 6-mark % organic matter calculation.',
+  scale: {
+    name: 'Calculation · method mark',
+    levels: [
+      { id: 'zero', label: 'No credit', annotation: '0', marks: 0 },
+      { id: 'method', label: 'Method mark', annotation: 'M', marks: 3 },
+      { id: 'full', label: 'Full marks', annotation: '6', marks: 6 },
+    ],
+    notes: [
+      'The final answer (51.3 %) is wrong, so full marks are off the table.',
+      'But the formula “55.2 / 90 × 100” is the correct method — the scheme credits it on its own.',
+      'Scheme: correct formula without the correct answer scores 3 of 6.',
+      '(A correct answer with no working still scores the full 6 — but a wrong answer with no formula shown scores nothing.)',
+    ],
+    cite: MS('p.24 (correct formula without correct answer, award 3m)'),
+  },
+  scripts: [
+    {
+      id: 'ag4-a',
+      label: 'The answer',
+      persona: 'Right method, wrong arithmetic',
+      work: ['55.2 / 90 × 100', '= 51.3 %  (arithmetic slip; correct value is 61.3 %)'],
+      keyLevelId: 'method',
+      keyNote:
+        'The final number is wrong, but the correct formula banks the method mark — 3 of the 6. Had this candidate written only “51.3 %” with no working, the examiner would have nothing to credit and it scores 0. Always put the formula on the page before the arithmetic: it is half the marks, and it survives a slip on the calculator.',
+      embodies: {
+        behaviour: 'Shows the correct formula but fumbles the arithmetic — the method mark still banks half.',
+        cite: MS('p.24'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-ag4',
+    rule: 'Show the formula — the method banks marks even if the answer is wrong.',
+    detail:
+      'Ag Science calculation lines credit the correct formula on its own: a right method with a wrong final number still scores the method mark (here 3 of 6), while a wrong answer with no working shown scores nothing. Always write the working before the arithmetic — it is the half of the marks a calculator slip can’t take.',
+    cite: MS('p.24'),
+  },
+};
+
 export const AG_SCIENCE_CHAIR: ChairSubject = {
   id: 'agricultural-science',
   label: 'Agricultural Science',
-  tagline: 'Front-loaded points, surplus penalties and holistic coursework.',
+  tagline: 'Front-loaded points, surplus penalties, method marks and holistic coursework.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [AG1, AG2, AG3],
+  sessions: [AG1, AG2, AG3, AG4],
   sources: [
     { label: 'SEC LC Agricultural Science HL marking scheme 2024 (examiner-reports/agricultural-science/2024-marking-scheme)' },
   ],
   coverageNote:
-    'These sessions teach the general conventions — front-loaded points, the surplus-answer penalty and the IIS holistic banding — which apply at both Higher and Ordinary level. Verified against the 2024 Higher Level scheme; level-specific worked examples are being added.',
+    'These sessions teach the general conventions — front-loaded points, the surplus-answer penalty, the calculation method mark and the IIS holistic banding — which apply at both Higher and Ordinary level. Verified against the 2024 Higher Level scheme; level-specific worked examples are being added.',
 };

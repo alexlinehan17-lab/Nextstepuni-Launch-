@@ -530,6 +530,11 @@ every criterion; scale ladders strictly increasing) are enforced by `test/examin
 | `re-two-items` (RE4) | Religious Education | "Two-item" questions are banded twice; the scores don't pool, so a missing second item caps the answer at half | 2025 HL p.8 "(10M x 2)"; MC X = no-evidence (p.3) |
 | `lcvp-compulsory` (LC4) | LCVP | On format questions, the format-heading mark and the compulsory (asterisked) item are distinct marks | 2024 p.8 "Heading AGENDA = 1 mark"; "…* (compulsory point)" |
 | `en-finish` (EN4) | Engineering | In the Practical, Section 1 is Assembly 5 + Function 10 + Finish 5 — a working piece handed up rough forfeits Finish | 2025 HL p.32 practical grid; "100 Marks (× 1.5 = 150)" |
+| `ag-method-mark` (AG4) | Agricultural Science | The calculation method mark: a correct formula banks partial marks even with a wrong answer; a wrong answer with no working scores nothing | 2024 HL p.24 "correct formula without correct answer, award 3m" (of 6) |
+| `it-manipulation` (IT4) | Italian | Comprehension: copy where no manipulation is needed, but if the answer requires manipulation (direct→reported speech: alter verbs/pronouns) and it isn't done, −1 | 2025 HL p.11 / p.13 (corroborated 2024 p.9) |
+
+With AG4 and IT4, every one of the 27 Examiner's Chair subjects now carries at least four
+marking sessions.
 
 ## Pedagogical basis
 
