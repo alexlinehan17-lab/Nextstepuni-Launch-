@@ -453,6 +453,24 @@ convention; `higher`-tagged sessions use an HL-specific allocation.
 4. The calibration metric ("agreement") measures match with the authored key — it is
    presented as marking-judgement practice, never as a predictor of exam performance.
 
+## Cross-year verification
+
+Because SEC schemes carry a "subject to change year to year" caveat, the load-bearing
+rules are being re-checked against a **second year's** scheme per subject, to confirm
+stability and catch any drift. Results so far (each filed as
+`examiner-reports/<subject>/<year>-verification.md`):
+
+| Subject | Basis year | Second year | Result |
+|---------|-----------|-------------|--------|
+| Geography | 2025 HL | 2024 HL | All 5 cited rules CONFIRMED identical (SRP definition, diagram-zero, wrong-process-zero, Overall Coherence bands, Part Two A20/B30/C30). |
+| English | 2025 HL | 2024 HL | All 5 CONFIRMED identical (PCLM 30/30/30/10, primacy-of-P, different-texts rule, compulsory Unseen Poem 20, Mechanics 10%). |
+| Mathematics | 2023 OL / 2025 FL | 2024 HL | Scale system, credit descriptors, work-of-merit and Full Credit −1 CONFIRMED (2024 HL presents Full Credit −1 via the annotation palette rather than prose — same rule). The unsupported-answer default is not stated *generally* in the 2024 HL scheme; the app cites it to the 2023 OL P2 scheme, which does state it generally — citation correct, no edit. |
+| Business | 2025 HL | 2024 HL | Conventions CONFIRMED stable (Name/Explain/Link, "no link without theory", separate links per section, "List" pays names only, per-step numeric marking, chart labels carry marks). SEC sets each ABQ/Section *grid* per-question per year, so 2025-specific mark splits don't recur verbatim. **Acted on:** the "Evaluate means judge" session claimed evaluation is the heaviest ABQ component at a fixed 3-of-7 in Part (B)(i) — true for 2025 but not 2024 (Evaluate was in Part (C), lighter). Reframed the session to the year-stable convention: the ABQ always carries an Evaluate task with its own separately-awarded judgement mark, exact weight/location set per year. |
+
+The Business pass produced the one content edit of this round — a reframing (not a factual
+correction) to keep a session robust across years, exactly the drift the second-year pass
+exists to catch. Remaining subjects are added to this table as their pass completes.
+
 ## Pedagogical basis
 
 The tool is an application of self-assessment / rubric-internalisation practice: the

@@ -332,7 +332,7 @@ const B4: GridSession = {
     'Bean & Board is a small café that holds daily stock of coffee beans, milk and pastries. Last summer it threw away unsold pastries most evenings. Since January it has used an ordering app that suggests order sizes from the previous fortnight’s sales, and end-of-day waste has fallen sharply.',
   question: 'Evaluate the effectiveness of stock control in Bean & Board. Refer to the case in your answer.',
   questionNote:
-    'Case and question authored for this exercise. The grid is the SEC 2025 HL ABQ Part (B)(i) template — 4@7 (1+2+1+3), Name + Explain + Link + Evaluate — shortened to one point here.',
+    'Case and question authored for this exercise. The illustrative grid — Name + Explain + Link + Evaluate — is one year’s ABQ evaluate template (SEC 2025 HL, where it carried a heavy 3-of-7 evaluate mark). The year-stable convention, not the exact split, is the point: the ABQ always includes an Evaluate task with its own separately-awarded judgement mark, and the exact weighting and which part it sits in are set per-question each year.',
   grid: {
     perPoint: [
       { id: 'name', label: 'Name the control', marks: 1 },
@@ -340,10 +340,10 @@ const B4: GridSession = {
       { id: 'link', label: 'Link to the case', marks: 1 },
       { id: 'eval', label: 'Evaluate: judgement + justification', marks: 3 },
     ],
-    shorthand: '1@7 (1+2+1+3)',
+    shorthand: '(1+2+1+3), evaluate separately awarded',
     ruleNote:
-      'Evaluation is the single most heavily weighted component in this grid — 3 of the 7 marks. A verdict with no justification, or an answer that stops after the link, hands back almost half the marks.',
-    cite: MS25('p.6 (ABQ Part (B)(i) grid)'),
+      'The Evaluate task carries its own mark, separate from Name/Explain/Link — and a verdict with no justification scores nothing for it. The exact weighting varies year to year (heavy in some ABQs, lighter in others), but the rule is constant: don’t stop after the link, and always justify the judgement.',
+    cite: MS25('p.6 (2025 ABQ evaluate template; the separately-awarded evaluate mark is the year-stable convention)'),
   },
   scripts: [
     {
@@ -355,7 +355,7 @@ const B4: GridSession = {
           id: 'b4-a-1',
           text: 'Stock control means holding the right level of stock: enough to meet demand without tying up cash or creating waste. Bean & Board “threw away unsold pastries most evenings” last summer, and now uses an ordering app based on the previous fortnight’s sales.',
           key: { name: 1, explain: 2, link: 1, eval: 0 },
-          keyNote: 'Name, theory and case link are all here — and then it stops. The question asked for an evaluation, and no judgement was offered. The heaviest component (3 marks) scores zero. 4/7.',
+          keyNote: 'Name, theory and case link are all here — and then it stops. The question asked for an evaluation, and no judgement was offered, so the separately-awarded evaluate mark scores zero. 4/7 — the answer did everything except the thing the cue asked for.',
         },
       ],
       embodies: {
@@ -398,7 +398,7 @@ const B4: GridSession = {
     id: 'codex-b4',
     rule: 'Evaluation = judgement + justification.',
     detail:
-      'On “Evaluate” cues the verdict alone is worth nothing — pair it with evidence or a criterion. In the ABQ grid, evaluation is the heaviest single component at 3 of 7 marks.',
+      'On “Evaluate” cues the verdict alone is worth nothing — pair it with evidence or a criterion. The ABQ always carries an Evaluate task with its own separately-awarded judgement mark; don’t stop after Name/Explain/Link.',
     cite: MS25('p.6'),
   },
 };
