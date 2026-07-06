@@ -335,6 +335,57 @@ service cloud.firestore {
       allow write: if false;
     }
 
+    // The Examiner's Chair — anonymous class cohort of marking blind spots.
+    // Keyed by a class code (a shared classroom secret), NOT by school/uid, so
+    // a class can span schools/devices. Stores ONLY aggregate counts — no
+    // names, no uids — so the collection carries no personal data (anonymous by
+    // construction; see compliance/evidence/examiners-chair.md). Any authed
+    // user who knows the code may contribute to / read the aggregate; writes
+    // are bounded (monotonic, capped increments; students pinned to +1 per
+    // submission) to limit tampering, mirroring the teachbacks/flares pattern.
+    match /chairCohorts/{classCode} {
+      // Parent doc holds only a submissions counter.
+      allow read: if request.auth != null;
+      allow create: if request.auth != null
+                    && request.resource.data.keys().hasOnly(['submissions'])
+                    && request.resource.data.submissions == 1;
+      allow update: if request.auth != null
+                    && request.resource.data.keys().hasOnly(['submissions'])
+                    && request.resource.data.submissions == resource.data.submissions + 1;
+      allow delete: if false;
+
+      // One doc per marking rule the class mis-marks — atomic increments.
+      match /rules/{ruleId} {
+        allow read: if request.auth != null;
+        allow create: if request.auth != null
+                      && request.resource.data.keys().hasOnly(['key', 'subject', 'label', 'over', 'under', 'students'])
+                      && request.resource.data.key is string
+                      && request.resource.data.key.size() <= 200
+                      && request.resource.data.subject is string
+                      && request.resource.data.subject.size() <= 60
+                      && request.resource.data.label is string
+                      && request.resource.data.label.size() <= 200
+                      && request.resource.data.students == 1
+                      && request.resource.data.over is int
+                      && request.resource.data.over >= 0 && request.resource.data.over <= 100
+                      && request.resource.data.under is int
+                      && request.resource.data.under >= 0 && request.resource.data.under <= 100;
+        allow update: if request.auth != null
+                      && request.resource.data.keys().hasOnly(['key', 'subject', 'label', 'over', 'under', 'students'])
+                      // Identity fields are immutable.
+                      && request.resource.data.key == resource.data.key
+                      && request.resource.data.subject == resource.data.subject
+                      && request.resource.data.label == resource.data.label
+                      // Counts only ever climb, by bounded amounts; +1 student per submission.
+                      && request.resource.data.students == resource.data.students + 1
+                      && request.resource.data.over >= resource.data.over
+                      && request.resource.data.over <= resource.data.over + 100
+                      && request.resource.data.under >= resource.data.under
+                      && request.resource.data.under <= resource.data.under + 100;
+        allow delete: if false;
+      }
+    }
+
     // Default deny — no other collections are accessible
     match /{document=**} {
       allow read, write: if false;

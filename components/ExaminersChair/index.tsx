@@ -16,7 +16,7 @@
  * compliance/evidence/examiners-chair.md). Scoring: ./store.ts (tested).
  */
 
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { ArrowLeft, BookMarked, Check, ChevronRight } from 'lucide-react';
 import {
   CHAIR_SUBJECTS,
@@ -53,9 +53,11 @@ import {
   scoreScaleScript,
   topMisses,
   type ChairState,
+  type CohortAgg,
   type MissDelta,
   type ScriptScore,
 } from './store';
+import { submitToCohortRemote, subscribeCohort } from './cohortSync';
 import { createCard } from '../PaperTrail/flashcardStore';
 
 const INK = '#1a1a1a';
@@ -256,6 +258,16 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
   const [restrictScriptId, setRestrictScriptId] = useState<string | null>(null);
   const [codexAdded, setCodexAdded] = useState(false);
   const [recallOpen, setRecallOpen] = useState<string | null>(null);
+  const [remoteCohort, setRemoteCohort] = useState<CohortAgg | null>(null);
+
+  // Cross-device cohort: live-subscribe to the class code's Firestore aggregate
+  // while the teacher view is open. Local loadCohort remains the offline fallback.
+  useEffect(() => {
+    const code = classCode.trim();
+    if (view !== 'teacher' || !code) { setRemoteCohort(null); return; }
+    setRemoteCohort(null);
+    return subscribeCohort(code, setRemoteCohort);
+  }, [view, classCode]);
 
   const subject = useMemo(() => CHAIR_SUBJECTS.find(s => s.id === subjectId) ?? null, [subjectId]);
   const session: MarkingSession | undefined = useMemo(
@@ -919,7 +931,8 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                     <button
                       onClick={() => {
                         if (!classCode.trim()) return;
-                        submitToCohort(classCode, sessionMisses);
+                        submitToCohort(classCode, sessionMisses);          // local fallback + single-device
+                        void submitToCohortRemote(classCode, sessionMisses); // cross-device (best-effort)
                         try { localStorage.setItem('chair-class-code', classCode.trim()); } catch { /* ignore */ }
                         setSubmittedToClass(true);
                       }}
@@ -1129,7 +1142,10 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
   // ───────────────────────────── teacher / cohort view ─────────────────────────────
 
   if (view === 'teacher') {
-    const agg = classCode.trim() ? loadCohort(classCode) : { submissions: 0, rules: {} };
+    const local = classCode.trim() ? loadCohort(classCode) : { submissions: 0, rules: {} };
+    // Prefer the live cross-device aggregate once it has any data; fall back to
+    // the on-device count while offline or before the first snapshot arrives.
+    const agg = remoteCohort && remoteCohort.submissions > 0 ? remoteCohort : local;
     const top = topCohortMisses(agg, 15);
     return (
       <div className="w-full max-w-xl mx-auto pb-12">
@@ -1194,7 +1210,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
               );
             })}
             <p className="text-[11px] leading-relaxed mt-3" style={{ color: LABEL }}>
-              Submissions are aggregated on this device. Names are never stored — only the anonymised class-wide counts.
+              Submissions sync live across the class by code. Names are never stored — only the anonymised class-wide counts.
             </p>
           </div>
         )}
