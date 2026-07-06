@@ -190,12 +190,79 @@ const BIO3: ScaleSession = {
   },
 };
 
+// ───────────────── Bio4 · Read the marks-per-point ─────────────────
+
+const BIO4: GridSession = {
+  mode: 'grid',
+  id: 'bio-marks-per-point',
+  subject: 'biology',
+  level: 'common',
+  title: 'Read the marks-per-point',
+  cue: 'Label (Sections B/C)',
+  question:
+    'The diagram shows a sperm cell. Label THREE of its parts. The scheme prints the demand as “Any three · 3(1)”. One candidate labels two parts and writes a careful sentence about each, expecting more for the detail.',
+  questionNote:
+    'Question authored for this exercise. The “N(M)” notation is the SEC general convention: the bracket is the marks PER point. Labels here are 3(1) — three of them, one mark each — cited to the real 2023 sperm-cell item.',
+  grid: {
+    perPoint: [
+      { id: 'l1', label: 'First correct label', marks: 1 },
+      { id: 'l2', label: 'Second correct label', marks: 1 },
+      { id: 'l3', label: 'Third correct label', marks: 1 },
+    ],
+    shorthand: 'labels · 3(1) — three at 1m each',
+    ruleNote:
+      'The bracket in “3(1)” is the marks per point: each label is worth one mark, so the marks are in the count, not the detail. A “6(3)” definition is the opposite — few developed points. Read the notation before you decide how much to write.',
+    cite: MS('p.16 (sperm-cell labels, 3(1)); p.4 and p.11 (6(3) and 3(3) notation)'),
+  },
+  scripts: [
+    {
+      id: 'bio4-a',
+      label: 'Script A',
+      persona: 'Develops two, skips the third',
+      attempts: [
+        {
+          id: 'bio4-a-1',
+          text: 'Labels the head and the tail, and writes a sentence on each explaining its job — but stops at two labels.',
+          key: { l1: 1, l2: 1, l3: 0 },
+          keyNote:
+            'Two correct labels earn two marks — but each label is worth only 1, so the extra sentences add nothing, and the untaken third label is a mark simply left behind. On a 3(1) item the marks are in the count: name the third part.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Over-develops a 1-mark label and gives fewer labels than asked — misreading the marks-per-point notation.',
+        cite: MS('p.16'),
+      },
+    },
+    {
+      id: 'bio4-b',
+      label: 'Script B',
+      persona: 'Three quick labels',
+      attempts: [
+        {
+          id: 'bio4-b-1',
+          text: 'Labels head, midpiece and tail — three parts, named plainly.',
+          key: { l1: 1, l2: 1, l3: 1 },
+          keyNote:
+            'Three correct labels, one mark each — full 3 marks. Plain naming is exactly right for a 3(1) item; the notation told the candidate to go for count, not depth.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-bio4',
+    rule: 'The bracket is the marks per point — let it set your depth.',
+    detail:
+      'In “N(M)” the bracket is marks per point: 3(1) wants three quick labels, 6(3) wants two developed points. Read it before answering — it tells you whether to go for count or for depth, and stops you over-writing a 1-mark label or under-developing a 3-mark one.',
+    cite: MS('p.16'),
+  },
+};
+
 export const BIOLOGY_CHAIR: ChairSubject = {
   id: 'biology',
   label: 'Biology',
   tagline: 'Points, context and the penalty rules that quietly cost marks.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [BIO1, BIO2, BIO3],
+  sessions: [BIO1, BIO2, BIO3, BIO4],
   sources: [
     { label: 'SEC LC Biology HL marking scheme 2023, Deferred sitting (examiner-reports/biology/2023-marking-scheme)' },
   ],
