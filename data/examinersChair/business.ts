@@ -114,6 +114,29 @@ const B1: GridSession = {
       },
     },
     {
+      id: 'b1-e',
+      label: 'Script E',
+      persona: 'Paraphrases the case — never quotes it',
+      attempts: [
+        {
+          id: 'b1-e-1',
+          text: 'Adaptability: an entrepreneur adjusts their plans when circumstances change, finding new ways to keep the business running. Nora shows adaptability because when the weather turned against her she found another way to keep earning instead of giving up.',
+          key: { name: 2, explain: 2, link: 0 },
+          keyNote: 'Named (2) and explained (2) — but the “link” is the candidate’s own summary of what happened, not a phrase lifted from the case. The scheme wants a direct quote (here, “filmed a set of online balance-training tutorials”), so the link mark is lost. 4/5 — the near-miss that feels like a full answer.',
+        },
+        {
+          id: 'b1-e-2',
+          text: 'Initiative: acting without being prompted, creating opportunities rather than waiting for them. Nora shows initiative because she came up with a clever new way to make money during the storms.',
+          key: { name: 2, explain: 2, link: 0 },
+          keyNote: 'Same trap: sound theory, but “a clever new way to make money during the storms” paraphrases the case rather than quoting it. A direct phrase — e.g. she “filmed a set of online balance-training tutorials from her garage” — would have banked the mark. 4/5.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Gestures at the case in their own words instead of quoting a direct phrase — the link mark needs an actual quote or phrase from the text.',
+        cite: MS25('p.6'),
+      },
+    },
+    {
       id: 'b1-d',
       label: 'Script D',
       persona: 'The examiner’s friend',

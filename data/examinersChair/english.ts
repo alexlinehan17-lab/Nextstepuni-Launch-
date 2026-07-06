@@ -68,6 +68,23 @@ const ENG1: ScaleSession = {
         cite: MS('p.3'),
       },
     },
+    {
+      id: 'eng1-b',
+      label: 'The near-miss',
+      persona: 'On the question, but only loosely',
+      work: [
+        'Clearly aware of the specific question and glances at it throughout.',
+        'But the engagement stays loose — the exact terms of the question are touched, not driven.',
+        'Examiner’s provisional judgement: Purpose 14/18, Language 18/18.',
+      ],
+      keyLevelId: 'c14',
+      keyNote:
+        'A middle-band mark. This answer isn’t off the question — it engages the task, just not tightly — so Purpose lands at 14, not 9. Because Coherence and Language can’t exceed Purpose, both are capped at 14: the fluent language that was worth 18 alone is pulled down to meet Purpose. The lesson isn’t “style is wasted” but “style is worth exactly as much as your engagement lets it be.” Tighten the answer onto the precise terms of the question and the cap rises with it.',
+      embodies: {
+        behaviour: 'Engages the question loosely, earning a mid-band Purpose that caps the fluent Language at the same level.',
+        cite: MS('p.3'),
+      },
+    },
   ],
   takeaway: {
     id: 'codex-eng1',

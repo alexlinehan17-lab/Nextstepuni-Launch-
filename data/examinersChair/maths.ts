@@ -342,6 +342,19 @@ const M4: ScaleSession = {
       keyNote:
         'Correct method, correct rounding to two decimal places, unit included. 10/10. (Had the unit been omitted, no penalty here — the question specified m², and the scheme waives the unit penalty in that case.)',
     },
+    {
+      id: 'm4-d',
+      label: 'Script D',
+      persona: 'Right formula, one square slips',
+      work: ['A = πr² = π(3.7)²', '= π × 12.69', '= 39.8672…', '= 39.87 m²'],
+      keyLevelId: 'high',
+      keyNote:
+        'The formula is fully substituted and the work is finished consistently — but 3.7² is taken as 12.69 instead of 13.69, so the answer is wrong. That is “error in substitution, finished consistently”: high partial credit, 6/10. Note the difference from Script A — this slip changes the answer, so it lands two rungs lower than the rounding star, not on Full Credit −1. The rounding here is correct; it is the arithmetic that costs the marks.',
+      embodies: {
+        behaviour: 'Substitutes correctly, makes an arithmetic slip, and carries it through to a consistent finish — the scheme’s definition of high partial credit.',
+        cite: MS23('p.[29]'),
+      },
+    },
   ],
   takeaway: {
     id: 'codex-m4',
