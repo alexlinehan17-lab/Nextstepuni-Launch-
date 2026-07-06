@@ -67,7 +67,7 @@ const MONO = "'DM Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace";
 const FLASHCARD_SUBJECT: Record<string, string> = { business: 'business', maths: 'mathematics' };
 const LEVEL_ORDER: ChairLevel[] = ['higher', 'ordinary', 'foundation', 'common'];
 
-type Stage = 'intro' | 'mark' | 'reveal' | 'summary';
+type Stage = 'intro' | 'mark' | 'reveal' | 'summary' | 'own-write' | 'own-mark' | 'own-result';
 
 interface Props {
   uid?: string;
@@ -236,6 +236,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
   const [chosenLevel, setChosenLevel] = useState<string | null>(null);
   const [scores, setScores] = useState<ScriptScore[]>([]);
   const [sessionMisses, setSessionMisses] = useState<MissDelta[]>([]);
+  const [ownText, setOwnText] = useState('');
   const [codexAdded, setCodexAdded] = useState(false);
 
   const subject = useMemo(() => CHAIR_SUBJECTS.find(s => s.id === subjectId) ?? null, [subjectId]);
@@ -263,6 +264,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
     setChosenLevel(null);
     setScores([]);
     setSessionMisses([]);
+    setOwnText('');
     setCodexAdded(false);
     setView('session');
   };
@@ -330,7 +332,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
               {session.title}
             </h2>
           </div>
-          {stage !== 'intro' && stage !== 'summary' && (
+          {(stage === 'mark' || stage === 'reveal') && (
             <div className="flex gap-1 mt-2 shrink-0" aria-label={`Script ${scriptIdx + 1} of ${scripts.length}`}>
               {scripts.map((_, i) => (
                 <span
@@ -374,8 +376,174 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
             >
               Start marking · {scripts.length} scripts
             </button>
+            <button
+              onClick={() => { setDecisions({}); setChosenLevel(null); setStage('own-write'); }}
+              className="w-full mt-2.5 rounded-full py-2.5 text-[13.5px] font-semibold transition-transform active:translate-y-0.5"
+              style={{ backgroundColor: '#fff', color: ACCENT, border: '2px solid rgba(242,107,31,0.35)' }}
+            >
+              Or mark your own answer to this question
+            </button>
           </>
         )}
+
+        {/* ── mark your own work: write → self-mark → honest estimate ── */}
+        {stage === 'own-write' && (
+          <>
+            <div className="rounded-2xl border bg-white dark:bg-zinc-900 dark:border-zinc-700 px-5 py-4 mb-3" style={{ borderColor: BORDER, padding: '18px 20px' }}>
+              <Small className="mb-2">Your question</Small>
+              <p className="text-[15px] leading-relaxed" style={{ fontFamily: SERIF, color: INK }}>{session.question}</p>
+            </div>
+            <Small className="mb-1.5">Write (or paste) your own answer</Small>
+            <textarea
+              value={ownText}
+              onChange={e => setOwnText(e.target.value)}
+              rows={7}
+              placeholder="Answer as you would in the exam — then you'll mark it against the real scheme, the way the examiner would."
+              className="w-full rounded-xl border px-3.5 py-3 text-[14px] leading-relaxed resize-y"
+              style={{ borderColor: BORDER, background: PAPER, color: '#2a2620', fontFamily: SERIF }}
+            />
+            <p className="text-[11px] mt-2 mb-3" style={{ color: LABEL }}>
+              Nothing here is sent anywhere or auto-graded — you’ll mark it yourself against the scheme, honestly, with the examiner’s rules in front of you.
+            </p>
+            <button
+              onClick={() => setStage('own-mark')}
+              disabled={ownText.trim().length === 0}
+              className="w-full rounded-full py-3 text-[15px] font-semibold text-white transition-transform active:translate-y-0.5 disabled:opacity-40"
+              style={{ backgroundColor: ACCENT, borderBottom: '3px solid #B54D14', boxShadow: '0 4px 0 #B54D14' }}
+            >
+              Mark it against the scheme
+            </button>
+          </>
+        )}
+
+        {stage === 'own-mark' && (
+          <>
+            <Small className="mb-1.5">Your answer</Small>
+            <ScriptPaper>
+              {ownText.split('\n').filter(Boolean).map((line, i) => (
+                <p key={i} className="text-[14.5px] italic" style={{ fontFamily: SERIF, color: '#2a2620', lineHeight: '28px' }}>{line}</p>
+              ))}
+            </ScriptPaper>
+
+            <Small className="mt-4 mb-2">Now mark it honestly — the rule is in front of you</Small>
+            {session.mode === 'grid' ? (
+              <div className="space-y-2.5">
+                {session.grid.perPoint.map(c => {
+                  const k = gridDecisionKey('own', c.id);
+                  const awarded = !!decisions[k];
+                  const blind = (state.misses[`${session.subject}::${c.label}`]?.over ?? 0) >
+                                (state.misses[`${session.subject}::${c.label}`]?.under ?? 0);
+                  return (
+                    <div key={c.id} className="rounded-xl border px-3.5 py-3" style={{ borderColor: awarded ? ACCENT : BORDER, background: awarded ? '#FDEEDF' : '#fff' }}>
+                      <div className="flex items-center justify-between gap-3">
+                        <p className="text-[14px] font-semibold" style={{ fontFamily: SERIF, color: INK }}>{c.label} · {c.marks}m</p>
+                        <button
+                          onClick={() => setDecisions(d => ({ ...d, [k]: !d[k] }))}
+                          className="text-[12px] font-semibold px-3 py-1.5 rounded-full border transition-transform active:translate-y-0.5"
+                          style={awarded ? { backgroundColor: ACCENT, color: '#fff', borderColor: ACCENT } : { backgroundColor: '#fff', color: MUTED, borderColor: BORDER }}
+                        >
+                          {awarded ? '✓ Earned' : 'Not earned'}
+                        </button>
+                      </div>
+                      {blind && (
+                        <p className="text-[11.5px] mt-1.5 italic" style={{ color: PEN }}>
+                          You tend to award this generously — be strict: did your answer really earn it?
+                        </p>
+                      )}
+                    </div>
+                  );
+                })}
+                <p className="text-[12px] leading-relaxed mt-1 italic" style={{ color: '#8C3A0E' }}>{session.grid.ruleNote}</p>
+              </div>
+            ) : (
+              <div className="space-y-2">
+                {(() => {
+                  const blind = (state.misses[`${session.subject}::scale-placement`]?.over ?? 0) >
+                                (state.misses[`${session.subject}::scale-placement`]?.under ?? 0);
+                  return (
+                    <>
+                      <div className="flex flex-wrap gap-1.5">
+                        {session.scale.levels.map(l => (
+                          <button
+                            key={l.id}
+                            onClick={() => setChosenLevel(l.id)}
+                            className="text-[12px] font-semibold px-2.5 py-1.5 rounded-full border transition-transform active:translate-y-0.5"
+                            style={chosenLevel === l.id ? { backgroundColor: ACCENT, color: '#fff', borderColor: ACCENT } : { backgroundColor: '#fff', color: MUTED, borderColor: BORDER }}
+                          >
+                            {l.label} · {l.marks}m
+                          </button>
+                        ))}
+                      </div>
+                      <ul className="mt-2 space-y-1">
+                        {session.scale.notes.map((n, i) => (
+                          <li key={i} className="text-[12.5px] italic leading-relaxed" style={{ color: '#8C3A0E' }}>{n}</li>
+                        ))}
+                      </ul>
+                      {blind && (
+                        <p className="text-[11.5px] italic" style={{ color: PEN }}>
+                          You tend to place scripts too high — be honest about which band yours truly meets.
+                        </p>
+                      )}
+                    </>
+                  );
+                })()}
+              </div>
+            )}
+
+            <button
+              onClick={() => setStage('own-result')}
+              disabled={session.mode === 'scale' && chosenLevel === null}
+              className="w-full mt-4 rounded-full py-3 text-[15px] font-semibold text-white transition-transform active:translate-y-0.5 disabled:opacity-40"
+              style={{ backgroundColor: ACCENT, borderBottom: '3px solid #B54D14', boxShadow: '0 4px 0 #B54D14' }}
+            >
+              See my honest estimate
+            </button>
+          </>
+        )}
+
+        {stage === 'own-result' && (() => {
+          const selfMarks = session.mode === 'grid'
+            ? session.grid.perPoint.reduce((sum, c) => sum + (decisions[gridDecisionKey('own', c.id)] ? c.marks : 0), 0)
+            : (session.scale.levels.find(l => l.id === chosenLevel)?.marks ?? 0);
+          const maxMarks = session.mode === 'grid'
+            ? session.grid.perPoint.reduce((s, c) => s + c.marks, 0)
+            : session.scale.levels[session.scale.levels.length - 1]?.marks ?? 0;
+          return (
+            <>
+              <div className="rounded-2xl border bg-white dark:bg-zinc-900 dark:border-zinc-700 px-5 py-5 mb-3 text-center" style={{ borderColor: BORDER }}>
+                <Small className="mb-2">Your honest self-estimate</Small>
+                <p className="text-[40px] font-bold leading-none" style={{ fontFamily: SERIF, color: ACCENT }}>
+                  {selfMarks}<span className="text-[20px]" style={{ color: MUTED }}>/{maxMarks}</span>
+                </p>
+                <p className="text-[12px] mt-2" style={{ color: MUTED }}>
+                  marked against the scheme — the examiner isn’t here, so this is only as honest as you were.
+                </p>
+              </div>
+              <div className="rounded-xl px-4 py-3.5 mb-4" style={{ backgroundColor: '#FDEEDF', borderLeft: `3px solid ${ACCENT}` }}>
+                <Small className="mb-1">Hold yourself to this</Small>
+                <p className="text-[14px] font-semibold" style={{ fontFamily: SERIF, color: INK }}>{session.takeaway.rule}</p>
+                <p className="text-[12.5px] italic leading-relaxed mt-1" style={{ color: '#8C3A0E' }}>{session.takeaway.detail}</p>
+                <CiteLine label={session.takeaway.cite.label} />
+              </div>
+              <div className="flex gap-2">
+                <button
+                  onClick={() => { setDecisions({}); setChosenLevel(null); setStage('own-write'); }}
+                  className="flex-1 rounded-full py-2.5 text-[13.5px] font-semibold transition-transform active:translate-y-0.5"
+                  style={{ backgroundColor: '#fff', color: MUTED, border: `2px solid ${BORDER}` }}
+                >
+                  Redo
+                </button>
+                <button
+                  onClick={() => setStage('intro')}
+                  className="flex-1 rounded-full py-2.5 text-[13.5px] font-semibold text-white transition-transform active:translate-y-0.5"
+                  style={{ backgroundColor: ACCENT, borderBottom: '3px solid #B54D14', boxShadow: '0 3px 0 #B54D14' }}
+                >
+                  Mark the sample scripts
+                </button>
+              </div>
+            </>
+          );
+        })()}
 
         {/* ── mark / reveal ── */}
         {(stage === 'mark' || stage === 'reveal') && (
