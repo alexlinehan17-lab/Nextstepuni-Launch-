@@ -78,9 +78,9 @@ const IT2: ScaleSession = {
   level: 'common',
   title: 'The wrong language halves it',
   cue: 'Comprehension',
-  question: 'A comprehension question must be answered in English (it asks for your opinion in English). The candidate answers it well — but in Italian. The scheme applies a 50% deduction for answering in the wrong language. What happens?',
+  question: 'A comprehension question must be answered in English (it asks for your opinion in English). The candidate answers it well — but in Italian. The 2025 scheme applies a 50% deduction for answering in the wrong language. What happens?',
   questionNote:
-    'Scenario authored for this exercise. Where the scheme requires an answer in English (e.g. the opinion question), answering in Italian triggers a −50% deduction — far harsher than the −1 for excess material.',
+    'Scenario authored for this exercise. The English-answer requirement for the opinion question is standing across years; the explicit −50% figure is stated in the 2025 scheme (it is not reproduced in 2023/2024). Answering in Italian where English is required triggers that −50% deduction — far harsher than the −1 for excess material.',
   scale: {
     name: 'Wrong-language penalty',
     levels: two(5, 10),
@@ -110,7 +110,7 @@ const IT2: ScaleSession = {
     id: 'codex-it2',
     rule: 'Answer in the language the question demands.',
     detail:
-      'Italian comprehension sets the answer language per question — answering in Italian where English is required halves your marks. Check the required language on every question before you write.',
+      'Italian comprehension sets the answer language per question — the opinion question must be answered in English, and in the 2025 scheme answering it in Italian halves your marks. Check the required language on every question before you write.',
     cite: MS('p.11'),
   },
 };

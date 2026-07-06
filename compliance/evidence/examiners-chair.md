@@ -474,13 +474,23 @@ stability and catch any drift. Results so far (each filed as
 | Chemistry | 2024 HL | 2025 HL | All cited rules CONFIRMED (Mr rule, // methods, context rule, exact-term convention identical). The literal "[do not accept clear]" example is 2024-specific and the app already cites it to 2024; the full-sentence point is sourced to the CER. No edit. |
 | Irish | 2025 HL | 2024 HL | All 3 CONFIRMED verbatim (composition Stíl 5 / Ionramháil 15 / Cumas Gaeilge 80; wrong-genre Stíl = 0; Q6(b) 12-mark "ina bhfocail féin"). No edit. |
 | History | 2025 HL | 2024 HL | Rules CONFIRMED verbatim (CM/OE 60/40, two-element "Max CM = 50", DBQ one-document = 5 max). **Acted on:** tightened the OE session from a paraphrase to the scheme's verbatim OE criterion "more than mere narrative" (the paraphrase wasn't an SEC band descriptor — same in both years, so an accuracy fix, not drift). Note "relies mostly on narrative" *is* the verbatim Low-Quality descriptor for Classical Studies (verified separately), and is used only there. |
+| German | 2025 HL | 2024 HL | All 4 CONFIRMED verbatim/identical (Lower-E length gate content ≤12 or <100 words → Expression /18, unmanipulated-quotation half marks, tense-critical comprehension, aural answer-language flips per section + wrong-language halved). No edit. |
+| Spanish | 2025 HL | 2024 + 2023 HL | Sp1–Sp3 CONFIRMED verbatim across three years (no-lifting, Content-gates-Language, verbs-must-be-correct). **Acted on:** Sp4 cited an "aural wrong-extra-cancels" rule to p.5 that does not exist in the aural in any of 2023/2024/2025 — p.5 is a written Section A rule. Recast the session to the genuine exact-transcription rule p.5 *does* state ("no marks if extra words are added"). Logged in cutContent. |
+| Economics | 2025 HL/OL | 2023 HL/OL | All 4 teaching rules CONFIRMED stable (develop-points bands with repetition=Weak(0), diagram labels itemised, calc step-marking + omission-of-% deduction, OL front-loading 1st@8/2nd@4). **Acted on:** the OL coverageNote claimed "no omission-of-% deduction at OL" — false for 2023 OL, which applies one. Dropped the year-specific clause; kept the stable front-loading difference. Logged in cutContent. |
+| Home Economics | 2025 HL/OL | 2024 HL/OL | All 4 CONFIRMED stable (20-mark "Discuss" on the coarse 5:3:0 ladder, structured parts capped per named heading, "Name" low/all-or-nothing with description carrying the marks, OL Section A graded 2:0 with no negative marking). No edit. |
+| Italian | 2025 HL | 2024 + 2023 HL | IT1 (Content 15 + Language 10; content ≤7 → Language /5) and IT3 (no learnt-off/off-point material) CONFIRMED verbatim. **Acted on:** IT2 cited a −50% wrong-language penalty that appears only in the 2025 scheme (the English-answer *requirement* is standing, but the −50% magnitude is not reproduced in 2023/2024). Pinned the magnitude to 2025 rather than implying a timeless rule. Logged in cutContent. |
+| Accounting | 2024 HL/OL | 2023 HL/OL | All 4 marking rules CONFIRMED stable (per-line workmark system, discrete balancing mark, own-figure/transfer marking with non-transfer = half, OL flat-mark written theory). **Acted on (cosmetic):** dropped the literal "Both totals correct *" asterisk wording — the * is a 2024 presentation flag (2023 uses an examiner arrow for the same mark); made the wording year-neutral. Logged in cutContent. |
 
-Across the eleven subjects verified so far (English, Maths, Business, Geography, Physics,
-French, Biology, Chemistry, Irish, History — plus the Maths cross-level pass), the
-load-bearing rules are stable year to year; only two small content edits were required (the
-Business reframing and the History verbatim tighten). This is a strong stability signal for
-accreditation: the conventions the tool teaches are not one-year artefacts. Remaining
-subjects are added to this table as their pass completes.
+Across the seventeen subjects verified so far (English, Maths, Business, Geography, Physics,
+French, Biology, Chemistry, Irish, History, German, Spanish, Economics, Home Economics,
+Italian, Accounting — plus the Maths cross-level pass), the load-bearing rules are stable
+year to year. A handful of small content edits were required across all of them (the Business
+reframing, the History verbatim tighten, the Spanish Sp4 recast, the Economics OL coverageNote
+correction, the Italian IT2 year-pin, and the Accounting asterisk-wording neutralisation) —
+each a citation/accuracy fix rather than genuine cross-year drift. This is a strong stability
+signal for accreditation: the conventions the tool teaches are not one-year artefacts, and the
+few edits show the verification is a real check, not a rubber stamp. Remaining subjects are
+added to this table as their pass completes.
 
 ## Pedagogical basis
 

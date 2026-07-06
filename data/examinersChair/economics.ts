@@ -273,5 +273,5 @@ export const ECONOMICS_CHAIR: ChairSubject = {
     { label: 'SEC LC Economics OL marking scheme 2025 (examiner-reports/economics/2025-ol-marking-scheme)' },
   ],
   coverageNote:
-    'The develop-your-points, diagram-label and show-your-workings sessions apply at both levels. The Ordinary session captures an OL-specific difference: two-point questions are front-loaded (1st @ 8 / 2nd @ 4), and there is no omission-of-% deduction at OL. Verified against the 2025 OL scheme.',
+    'The develop-your-points, diagram-label and show-your-workings sessions apply at both levels. The Ordinary session captures an OL-specific difference: two-point questions are front-loaded (1st @ 8 / 2nd @ 4), so the first point banks the most marks. Verified against the 2025 and 2023 OL schemes.',
 };

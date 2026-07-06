@@ -731,4 +731,56 @@ export const CUT_CONTENT: CutContentEntry[] = [
       'Verification pass: a backward-looking SEC statistics source cannot support a forward-looking forecast. Reframed to the verifiable historical observation plus the separately-announced phase-out, with no forecast asserted.',
     date: '2026-06-26',
   },
+  {
+    id: 'examiners-chair-spanish-001',
+    module: "The Examiner's Chair — Spanish",
+    section: 'Session Sp4',
+    action: 'reframed',
+    original:
+      'Don’t hedge the aural list — a listening item asks for one detail; the candidate writes two (one right, one wrong). In the aural vocabulary-list items, a wrong extra answer cancels a correct one. Cited to p.5 ("aural: wrong extra cancels a correct answer").',
+    reframedTo:
+      'Copy the phrase exactly — a finding-a-phrase transcription item requires the exact words from the text; padding a correct phrase with extra words voids the item ("No marks awarded if extra words are added. Exact transcription required", p.5). Recast from an aural lesson to the genuine written transcription rule.',
+    reason:
+      'Second-year verification (2023/2024/2025): the cited "aural wrong-extra-cancels" rule does not exist in the Spanish aural section in any of the three years, and p.5 is a written Section A rule. Retargeted the session to the real, verifiable exact-transcription rule that p.5 actually states.',
+    date: '2026-07-06',
+  },
+  {
+    id: 'examiners-chair-economics-001',
+    module: "The Examiner's Chair — Economics",
+    section: 'Subject coverage note',
+    action: 'corrected',
+    original:
+      'two-point questions are front-loaded (1st @ 8 / 2nd @ 4), and there is no omission-of-% deduction at OL. Verified against the 2025 OL scheme.',
+    reframedTo:
+      'two-point questions are front-loaded (1st @ 8 / 2nd @ 4), so the first point banks the most marks. Verified against the 2025 and 2023 OL schemes.',
+    reason:
+      'Second-year verification (2023): the 2023 OL scheme DOES apply an omission-of-% deduction ("Deduct 1 mark for omission of % sign"), so the "no omission-of-% deduction at OL" claim was year-specific and inaccurate as a general statement. Dropped the unstable clause; kept the stable front-loading difference.',
+    date: '2026-07-06',
+  },
+  {
+    id: 'examiners-chair-italian-001',
+    module: "The Examiner's Chair — Italian",
+    section: 'Session IT2',
+    action: 'reframed',
+    original:
+      'The scheme applies a 50% deduction for answering in the wrong language. … answering in Italian where English is required halves your marks.',
+    reframedTo:
+      'The 2025 scheme applies a 50% deduction for answering in the wrong language. The English-answer requirement is standing across years, but the explicit −50% figure is stated in the 2025 scheme (not reproduced in 2023/2024) — so the magnitude is pinned to 2025.',
+    reason:
+      'Second-year verification (2023/2024): the English-answer requirement for the opinion question is stable across years, but the explicit "−50% of marks gained" clause appears only in the 2025 scheme. Pinned the magnitude to 2025 rather than implying a timeless standing rule (the in-app cite was already stamped 2025, so this is a precision fix).',
+    date: '2026-07-06',
+  },
+  {
+    id: 'examiners-chair-accounting-001',
+    module: "The Examiner's Chair — Accounting",
+    section: 'Session AC2',
+    action: 'reframed',
+    original:
+      'A Balance Sheet carries a discrete mark for both totals agreeing (marked with a *). … scale name "Both totals correct *".',
+    reframedTo:
+      'A Balance Sheet carries a discrete mark for both totals agreeing — a presentation mark separate from the line figures. (Dropped the literal "*" wording: the 2024 scheme flags the mark with a * annotation, the 2023 scheme with an examiner arrow — the mark itself is the standing convention.)',
+    reason:
+      'Second-year verification (2023): the concept (a discrete agreeing-totals mark) is stable, but the literal "Both totals correct *" asterisk string is a 2024 presentation choice absent from the 2023 scheme. Made the wording year-neutral so it does not imply the asterisk notation is universal.',
+    date: '2026-07-06',
+  },
 ];

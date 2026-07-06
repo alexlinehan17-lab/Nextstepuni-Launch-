@@ -7,8 +7,9 @@
  * Questions and scripts are AUTHORED for this exercise (labelled in each
  * `questionNote`) — they are not real SEC questions or candidate scripts. The
  * marking grammar (the no-lifting rule on the written essay, the Content-gates-
- * Language rule on Q5, and the verbs-must-be-correct cap on production units)
- * is the real SEC system, cited to:
+ * Language rule on Q5, the verbs-must-be-correct cap on production units, and
+ * the exact-transcription rule on finding-a-phrase items) is the real SEC
+ * system, cited to:
  *  - SEC LC Spanish HL marking scheme 2025 —
  *    examiner-reports/spanish/2025-marking-scheme.*
  * (The oral is a separate scheme, not covered here.)
@@ -169,51 +170,48 @@ const SP3: ScaleSession = {
   },
 };
 
-// ─────────────── Sp4 · The aural — one wrong extra cancels a right one ───────────────
+// ─────────────── Sp4 · Transcription — copy the exact phrase ───────────────
 
 const SP4: ScaleSession = {
   mode: 'scale',
-  id: 'es-aural-hedge',
+  id: 'es-transcription',
   subject: 'spanish',
   level: 'common',
-  title: 'Don’t hedge the aural list',
-  cue: 'Aural',
-  question: 'A listening item asks for one detail. The candidate, unsure, writes two — one right, one wrong — hoping the extra covers them. In the aural vocabulary-list items, a wrong extra answer cancels a correct one. What does it score?',
+  title: 'Copy the phrase exactly',
+  cue: 'Written comprehension (transcription)',
+  question: 'A finding-a-phrase question asks the candidate to copy from the text the exact words that mean “X”. They locate the right phrase — but pad it with a couple of extra words to be safe. The item prints: “No marks awarded if extra words are added. Exact transcription required.” What does it score?',
   questionNote:
-    'Scenario authored for this exercise. In the Spanish aural, hedging with an extra wrong answer in a list item cancels a correct one — the same trap as over-answering elsewhere.',
+    'Scenario authored for this exercise. Spanish comprehension transcription items carry a printed exact-transcription rule; adding extra words voids the item. Verified present in the 2023, 2024 and 2025 schemes.',
   scale: {
-    name: 'Aural item · hedged',
-    levels: [
-      { id: 'm0', label: '0 (wrong extra cancels)', annotation: '0', marks: 0 },
-      { id: 'm3', label: '3 (single correct)', annotation: '3', marks: 3 },
-    ],
+    name: 'Transcription · exact',
+    levels: two(0, 4),
     notes: [
-      'The item asks for one detail; the candidate offers two.',
-      'In the aural list items, a wrong extra answer cancels a correct one.',
-      'So the hedge voids the mark you had — commit to one answer.',
+      'These finding-a-phrase items require the exact phrase copied from the text.',
+      'The printed rule: “No marks awarded if extra words are added. Exact transcription required.”',
+      'Padding the correct phrase with extra words voids the whole item — it is all-or-nothing.',
     ],
-    cite: MS('p.5 (aural: wrong extra cancels a correct answer)'),
+    cite: MS('p.5 (exact transcription: no marks if extra words added)'),
   },
   scripts: [
     {
       id: 'sp4-a',
       label: 'The item',
-      persona: 'Hedges with a second guess',
-      work: ['Heard one detail clearly; unsure, writes it plus a second guess.', 'One is right, the other wrong.'],
+      persona: 'Right phrase, padded',
+      work: ['Finds and copies the correct phrase from the text.', 'Adds a couple of extra words “to be safe”.'],
       keyLevelId: 'm0',
       keyNote:
-        '0 — the wrong extra cancels the correct answer, so hedging turned a mark into nothing. The aural list items punish over-answering just like the written paper: write the single answer you’re most sure of. A confident single answer protects the mark a hedge throws away.',
+        '0 — the extra words void the item, because exact transcription is all-or-nothing here. The correct phrase was already worth full marks; the padding threw them away. On these items, copy only the words the question asks for and stop.',
       embodies: {
-        behaviour: 'Hedges a single-answer aural item with an extra wrong answer, which cancels the correct one.',
+        behaviour: 'Pads a correct transcription with extra words, which the exact-transcription rule voids entirely.',
         cite: MS('p.5'),
       },
     },
   ],
   takeaway: {
     id: 'codex-es4',
-    rule: 'In the aural, one answer — don’t hedge the list.',
+    rule: 'On transcription items, copy the exact phrase — nothing extra.',
     detail:
-      'Spanish aural list items cancel a correct answer with a wrong extra. When an item asks for one detail, write the single answer you’re surest of; a hedged second guess can void the mark.',
+      'Spanish finding-a-phrase questions require exact transcription: adding extra words scores no marks, even when the right phrase is in there. Copy only the words the question asks for — padding “to be safe” voids the item.',
     cite: MS('p.5'),
   },
 };

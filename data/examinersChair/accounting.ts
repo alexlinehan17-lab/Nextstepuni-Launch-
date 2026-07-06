@@ -42,10 +42,10 @@ const AC1: GridSession = {
       { id: 'adj1', label: 'First adjustment shown', marks: 3 },
       { id: 'adj2', label: 'Second adjustment shown', marks: 2 },
     ],
-    shorthand: 'N-note working · 7m',
+    shorthand: 'Numbered working · 7m',
     ruleNote:
       'The mark sheet awards each step of the working, not the final number. A bare wrong figure with no working can’t part-score — but a shown working banks every correct step even when the final total is off.',
-    cite: MS('p.3, p.5 (workmark system, N-notes)'),
+    cite: MS('p.3, p.5 (workmark system, numbered workings)'),
   },
   scripts: [
     {
@@ -97,14 +97,14 @@ const AC2: ScaleSession = {
   level: 'higher',
   title: 'The mark for balancing',
   cue: 'Balance Sheet',
-  question: 'A Balance Sheet carries a discrete mark for both totals agreeing (marked with a *). The candidate’s figures are mostly right, but a single misplaced entry means the two totals don’t match. What happens to that presentation mark?',
+  question: 'A Balance Sheet carries a discrete mark for both totals agreeing — a presentation mark separate from the line figures. The candidate’s figures are mostly right, but a single misplaced entry means the two totals don’t match. What happens to that presentation mark?',
   questionNote:
-    'Scenario authored for this exercise. The Balance Sheet awards a discrete “Both totals correct *” mark, separate from the individual line figures.',
+    'Scenario authored for this exercise. The Balance Sheet awards a discrete mark for both totals agreeing, separate from the individual line figures (the 2024 scheme flags it with a * annotation; the 2023 scheme marks the same agreeing-totals mark with an examiner arrow — the mark itself is the standing convention).',
   scale: {
-    name: 'Both totals correct *',
+    name: 'Both totals correct',
     levels: two(0, 3),
     notes: [
-      '“Both totals correct *” is its own losable mark, independent of the line entries.',
+      'The mark for both balance-sheet totals agreeing is its own losable mark, independent of the line entries.',
       'If the two Balance Sheet totals don’t agree, that mark is gone — even if most figures are right.',
       'It rewards a statement that actually balances, not just correct components.',
     ],
