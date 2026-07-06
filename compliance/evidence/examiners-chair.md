@@ -350,6 +350,33 @@ Each source is the SEC marking scheme for its stated year, filed in
   (p.9); MU2 `mu-precision` "partially correct = 1" description cap (p.11); MU3 `mu-chords`
   chords credited only within a good progression (p.7).
 
+### Classical Studies (level: higher) — MS-CL-2025 (`classical-studies/2025-marking-scheme`)
+- **CL1 `cl-unit`:** essay "unit of development" = point + evidence + development, 15 per
+  unit (p.11). **CL2 `cl-two-part`:** a one-part answer caps units and holds Overall
+  Quality in the Low range (~57/80) (p.11). **CL3 `cl-narrative`:** Overall Quality Low
+  band = "relies mostly on narrative" (p.11).
+
+### Italian (level: common) — MS-IT-2025 (`italian/2025-marking-scheme`)
+- **IT1 `it-content-cap`:** two axes with a graduated cap — content ≤7 → Language out of 5
+  (p.26). **IT2 `it-wrong-language`:** −50% for answering in the wrong language where the
+  scheme sets it (p.11, p.13). **IT3 `it-rote`:** candidates "must not produce something
+  learnt off by heart and off the point" (p.27).
+
+### Art — Visual Studies (level: higher) — MS-ART-2024 (`art/2024-visual-studies-marking-scheme`)
+- Authored against the **current revised spec** ("Visual Studies", first examined 2023/24),
+  NOT the pre-2022 "History & Appreciation" paper (the 2019 old-spec scheme is filed in the
+  same folder for reference but is not the basis for these sessions).
+- **ART1 `art-analysis`:** Subject Knowledge High band needs "critical thinking to analyse
+  and evaluate", not recall (printed p.22). **ART2 `art-examples`:** Relevant Examples is a
+  separable 10-mark strand; vague references cap it (printed p.23). **ART3 `art-headings`:**
+  Section A (a) answers are anchored to the paper's given headings (printed pp.17–19).
+
+### LCVP Link Modules (level: common — single common level) — MS-LCVP-2024 (`lcvp/2024-marking-scheme`)
+- **LC1 `lcvp-cliff`:** (0/2) all-or-nothing items score 0 for an undeveloped point (p.2).
+  **LC2 `lcvp-repetition`:** "no repetition of expansions/points" on the 9-mark closers
+  (p.6, p.14). **LC3 `lcvp-apply`:** Section B credit gated on relevance to the named case
+  (p.3).
+
 **Uncovered Chief Examiner's Reports:** no recent CER was obtainable for German, Spanish,
 Home Economics, Ag Science, Applied Maths, DCG, Construction Studies, Engineering,
 Politics & Society, Religious Education or Music (SEC publishes CERs selectively, and
@@ -436,17 +463,22 @@ claims are exclusively about how SEC marking works, each cited above.
 
 ## Scope & expansion protocol
 
-Current coverage: **English, Mathematics, Business, Biology, Geography.** Per the product
-direction (2026-07-06), the tool expands to **every applicable subject at Higher,
-Ordinary and Foundation level (where the subject offers it)**. Protocol for each new
+Per the product direction (2026-07-06), the tool covers **every applicable subject at
+Higher, Ordinary and Foundation level (where the subject offers it)**. Protocol for each
 subject/level: (1) obtain the SEC marking scheme / Chief Examiner's Report, (2) file it
 into `/examiner-reports/` (PDF + md + insights per the CLAUDE.md process), (3) author
 sessions citing only rules the document supports, tagged with the verified level (or
 `common` where the cited rule is a documented cross-level convention), (4) extend this
-dossier in the same change. Subjects/levels for which no verifiable scheme can be
-obtained are skipped and recorded here with the reason.
+dossier in the same change.
 
-**Remaining subjects to add** (loop in progress): Irish, French/German/Spanish, History,
-Chemistry, Physics, Accounting, Economics, Home Economics, Art, and the remaining LC
-subjects — plus level-specific (OL/Foundation) worked examples for the subjects already
-covered by shared conventions.
+**Coverage — 27 subjects (loop complete):** English, Mathematics, Irish, Biology,
+Business, Geography, French, History, Chemistry, Physics, Accounting, German, Spanish,
+Economics, Home Economics, Agricultural Science, Applied Mathematics, Construction
+Studies, Engineering, Design & Communication Graphics, Politics & Society, Religious
+Education, Music, Classical Studies, Italian, Art (Visual Studies), LCVP Link Modules.
+
+This spans the substantial-enrolment Leaving Certificate subjects. Any remaining
+low-enrolment subject is added on the same protocol when a verifiable scheme is located;
+none is asserted without one. Next refinements (not blocking): level-specific
+(OL/Foundation) worked examples for subjects currently taught via shared `common`
+conventions, and Chief Examiner's Reports for subjects where one becomes retrievable.

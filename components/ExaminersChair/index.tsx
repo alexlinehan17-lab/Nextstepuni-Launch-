@@ -590,7 +590,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
           </div>
         )}
         {levels.length === 1 && (
-          <Small className="mb-3">{LEVEL_LABEL[levels[0]]} level</Small>
+          <Small className="mb-3">{levels[0] === 'common' ? 'Common level' : `${LEVEL_LABEL[levels[0]]} level`}</Small>
         )}
 
         <div className="space-y-2 mt-1">

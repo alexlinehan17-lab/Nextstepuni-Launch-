@@ -50,6 +50,11 @@ For multi-year syntheses, the prefix is `<start-year>-<end-year>-` (e.g.
 | Religious Education | 2025 | Marking scheme | Higher | SEC `Leaving Certificate 2025 Marking Scheme — Higher Level Religious Education` (mirrored PDF, educateplus.ie) | PDF + MD + insights |
 | Engineering | 2025 | Marking scheme (Written + Practical) | Higher | SEC `Leaving Certificate 2025 Marking Scheme — Engineering – Materials and Technology, Higher Level` (`2025 LC Engineering HL.pdf`, mirrored PDF, educateplus.ie) | PDF + MD + insights |
 | Music | 2022 | Marking scheme (Deferred sitting; Composing + Listening) | Higher | SEC `Leaving Certificate 2022 Deferred Examinations Marking Scheme — Music, Higher Level` (mirrored PDF, exams.ie) | PDF + MD + insights |
+| LCVP Link Modules | 2024 | Marking scheme (Written Paper) | Common (single level) | SEC `Leaving Certificate 2024 Marking Scheme — Link Modules, Written Paper, Common Level` (`LCVP CL.pdf`, mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| Art | 2019 | Marking scheme (History & Appreciation of Art written paper; old pre-2022 spec) | Higher (common scheme) | SEC `Leaving Certificate 2019 Marking Scheme — Art, Higher Level` (mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| Art | 2024 | Marking scheme (Visual Studies written examination; revised spec, first examined 2023/2024) | Higher | SEC `Leaving Certificate 2024 Marking Scheme — Higher Level — Art` (`2024-visual-studies-marking-scheme.pdf`, mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| Classical Studies | 2025 | Marking scheme | Higher | SEC `Leaving Certificate 2025 Marking Scheme — Classical Studies, Higher Level` (mirrored PDF, exams.ie) | PDF + MD + insights |
+| Italian | 2025 | Marking scheme | Higher | SEC `Leaving Certificate 2025 Marking Scheme — Higher Level Italian` (mirrored PDF, exams.ie) | PDF + MD + insights |
 
 _Last updated: 2026-07-06_
 
