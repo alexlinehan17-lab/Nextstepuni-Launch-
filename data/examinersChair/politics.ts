@@ -17,6 +17,7 @@
 import { type ChairSubject, type GridSession, type ScaleSession } from './types';
 
 const MS = (p: string) => ({ label: `SEC Politics & Society HL marking scheme 2025, ${p}` });
+const MSOL = (p: string) => ({ label: `SEC Politics & Society OL marking scheme 2025, ${p}` });
 
 // ─────────────── PS1 · Insight beats relevance ───────────────
 
@@ -176,15 +177,69 @@ const PS3: GridSession = {
   },
 };
 
+// ─────────────── PS4 · OL — knowledge and structure carry the essay ───────────────
+
+const PS4: ScaleSession = {
+  mode: 'scale',
+  id: 'ps-ol-knowledge',
+  subject: 'politics-society',
+  level: 'ordinary',
+  title: 'At OL, knowledge carries the essay',
+  cue: 'Essay (OL)',
+  question: 'An Ordinary Level essay (50 marks) is scored on six criteria: Introduction 10, Knowledge 10, Evidence 10, Analysis 5, Evaluation 5, Cohesion 10. A candidate writes a well-introduced, knowledgeable, well-structured essay with solid evidence — but light on deep analysis and evaluation. How does it fare?',
+  questionNote:
+    'Scenario authored for this exercise. At OL the higher-order criteria (Analysis, Evaluation) are the lightest at 5 marks each; Introduction, Knowledge, Evidence and Cohesion carry 10 each — the opposite emphasis to Higher Level, where insight and evaluation dominate.',
+  scale: {
+    name: 'OL essay · /50',
+    levels: [
+      { id: 'm20', label: '~20 (thin all round)', annotation: '20', marks: 20 },
+      { id: 'm40', label: '~40 (strong K/E/structure, light analysis)', annotation: '40', marks: 40 },
+      { id: 'm48', label: '~48 (strong throughout)', annotation: '48', marks: 48 },
+    ],
+    notes: [
+      'OL essay criteria: Introduction 10, Knowledge 10, Evidence 10, Analysis 5, Evaluation 5, Cohesion 10.',
+      'Analysis and Evaluation are the LIGHTEST criteria at OL (5 each) — the reverse of HL.',
+      'A knowledgeable, well-structured, well-evidenced essay banks 40 of the 50 marks.',
+    ],
+    cite: MSOL('p.15 (OL essay criteria weightings)'),
+  },
+  scripts: [
+    {
+      id: 'ps4-a',
+      label: 'The essay',
+      persona: 'Knowledgeable and structured',
+      work: [
+        'Clear introduction, strong knowledge, solid evidence, well organised.',
+        'But light on deep analysis and evaluation.',
+      ],
+      keyLevelId: 'm40',
+      keyNote:
+        'It scores well — around 40 of 50 — because at OL, Introduction, Knowledge, Evidence and Cohesion carry 10 marks each and Analysis/Evaluation only 5 each. This is the opposite of Higher Level, where insight and evaluation win the marks. At OL, a knowledgeable, well-structured, well-evidenced essay is most of the way there; the analysis is the smaller top-up.',
+      embodies: {
+        behaviour: 'Delivers strong knowledge and structure with light analysis — which at OL banks the majority.',
+        cite: MSOL('p.15'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-ps4',
+    rule: 'At OL, knowledge and structure carry the essay.',
+    detail:
+      'Ordinary Level Politics & Society weights Introduction, Knowledge, Evidence and Cohesion at 10 each and Analysis/Evaluation at only 5 — the reverse of Higher. A well-introduced, knowledgeable, well-organised, evidenced essay banks the majority; analysis is the top-up.',
+    cite: MSOL('p.15'),
+  },
+};
+
 export const POLITICS_CHAIR: ChairSubject = {
   id: 'politics-society',
   label: 'Politics & Society',
   tagline: 'Insight over relevance, argument over summary, cite your sources.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [PS1, PS2, PS3],
+  sessions: [PS1, PS2, PS3, PS4],
   sources: [
     { label: 'SEC LC Politics & Society HL marking scheme 2025 (examiner-reports/politics-society/2025-marking-scheme)' },
+    { label: 'SEC LC Politics & Society OL marking scheme 2025 (examiner-reports/politics-society/2025-ol-marking-scheme)' },
   ],
   coverageNote:
-    'Verified against the 2025 Higher Level scheme. The descriptor bands and split rubrics also structure Ordinary Level; OL-specific worked questions are being added.',
+    'The descriptor-band system applies at both levels, but the emphasis flips: HL rewards insight and evaluation; OL weights knowledge and structure heavily and makes analysis/evaluation the lightest criteria. The OL session is verified against the 2025 OL scheme.',
 };

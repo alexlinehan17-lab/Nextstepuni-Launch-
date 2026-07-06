@@ -18,6 +18,7 @@
 import { type ChairSubject, type GridSession, type ScaleSession, type ScaleLevel } from './types';
 
 const MS = (p: string) => ({ label: `SEC Economics HL marking scheme 2025, ${p}` });
+const MSOL = (p: string) => ({ label: `SEC Economics OL marking scheme 2025, ${p}` });
 
 const ladder = (marks: number[]): ScaleLevel[] =>
   marks.map(m => ({ id: `m${m}`, label: `${m} marks`, annotation: `${m}`, marks: m }));
@@ -186,15 +187,91 @@ const EC3: ScaleSession = {
   },
 };
 
+// ─────────────── EC4 · OL — the first point is worth more ───────────────
+
+const EC4: GridSession = {
+  mode: 'grid',
+  id: 'ec-ol-frontload',
+  subject: 'economics',
+  level: 'ordinary',
+  title: 'Develop the first point deeply',
+  cue: 'Explain two (OL)',
+  question: 'An Ordinary Level “explain two” part is front-loaded: the first point is worth 8 and the second only 4. A candidate spreads their effort evenly, giving two half-developed points instead of one deep one and one brief one.',
+  questionNote:
+    'Scenario authored for this exercise. Unlike HL’s symmetric “2 @ M” split, OL Economics front-loads: the first point is worth more (e.g. 1st @ 8 / 2nd @ 4), so a deep first point banks the most.',
+  grid: {
+    perPoint: [
+      { id: 'p1', label: '1st point (developed)', marks: 8 },
+      { id: 'p2', label: '2nd point (developed)', marks: 4 },
+    ],
+    shorthand: '1st @ 8 / 2nd @ 4',
+    ruleNote:
+      'The first point carries twice the second. A deeply developed first point banks 8; the second, worth 4, only needs to be solid. Spreading effort evenly under-develops the point that matters most.',
+    cite: MSOL('p.22, p.25 (front-loaded 1st @ 8 / 2nd @ 4)'),
+  },
+  scripts: [
+    {
+      id: 'ec4-a',
+      label: 'Script A',
+      persona: 'Two half-developed points',
+      attempts: [
+        {
+          id: 'ec4-a-1',
+          text: 'First point — only half-developed (a mechanism started but not finished), because effort was split evenly across both.',
+          key: { p1: 0, p2: 0 },
+          keyNote: 'The first point is worth 8 — the biggest single mark in the part — but it’s under-developed, so it doesn’t reach its band. Splitting effort evenly starved the point that mattered most.',
+        },
+        {
+          id: 'ec4-a-2',
+          text: 'Second point — also only half-developed.',
+          key: { p1: 0, p2: 0 },
+          keyNote: 'The second point is only worth 4, and it too is thin. Two half-points score far less than one deep point plus one solid one.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Splits effort evenly on a front-loaded part, under-developing the high-value first point.',
+        cite: MSOL('p.22'),
+      },
+    },
+    {
+      id: 'ec4-b',
+      label: 'Script B',
+      persona: 'Deep first, solid second',
+      attempts: [
+        {
+          id: 'ec4-b-1',
+          text: 'First point — fully developed with mechanism and example.',
+          key: { p1: 8, p2: 0 },
+          keyNote: 'The 8-mark first point, fully developed. Banks the biggest mark in the part.',
+        },
+        {
+          id: 'ec4-b-2',
+          text: 'Second point — solid and clear, appropriate to its 4 marks.',
+          key: { p1: 0, p2: 4 },
+          keyNote: 'A solid second point for its 4 marks. 12/12 — the effort matched where the marks were.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-ec4',
+    rule: 'At OL, develop the first point deepest.',
+    detail:
+      'Ordinary Level Economics front-loads two-point questions (1st @ 8 / 2nd @ 4). Put your deepest development into the first point — it’s worth the most — and give the second a solid but briefer treatment.',
+    cite: MSOL('p.22'),
+  },
+};
+
 export const ECONOMICS_CHAIR: ChairSubject = {
   id: 'economics',
   label: 'Economics',
   tagline: 'Develop your points, label your diagrams, show your workings.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [EC1, EC2, EC3],
+  sessions: [EC1, EC2, EC3, EC4],
   sources: [
     { label: 'SEC LC Economics HL marking scheme 2025 (examiner-reports/economics/2025-marking-scheme)' },
+    { label: 'SEC LC Economics OL marking scheme 2025 (examiner-reports/economics/2025-ol-marking-scheme)' },
   ],
   coverageNote:
-    'Verified against the 2025 Higher Level scheme. The descriptor bands, itemised diagram marks and step-marked calculations also structure Ordinary Level; OL-specific worked questions are being added.',
+    'The develop-your-points, diagram-label and show-your-workings sessions apply at both levels. The Ordinary session captures an OL-specific difference: two-point questions are front-loaded (1st @ 8 / 2nd @ 4), and there is no omission-of-% deduction at OL. Verified against the 2025 OL scheme.',
 };

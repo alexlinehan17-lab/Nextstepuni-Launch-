@@ -17,6 +17,7 @@
 import { type ChairSubject, type GridSession, type ScaleSession, type ScaleLevel } from './types';
 
 const MS = (p: string) => ({ label: `SEC Accounting HL marking scheme 2024, ${p}` });
+const MSOL = (p: string) => ({ label: `SEC Accounting OL marking scheme 2024, ${p}` });
 
 const two = (a: number, b: number): ScaleLevel[] => [
   { id: `m${a}`, label: `${a} marks`, annotation: `${a}`, marks: a },
@@ -183,15 +184,66 @@ const AC3: ScaleSession = {
   },
 };
 
+// ─────────────── AC4 · OL — the theory mark bank ───────────────
+
+const AC4: ScaleSession = {
+  mode: 'scale',
+  id: 'acc-ol-theory',
+  subject: 'accounting',
+  level: 'ordinary',
+  title: 'The theory is a mark bank',
+  cue: 'Explain / define (OL)',
+  question: 'An Ordinary Level paper carries written theory parts worth big flat marks — e.g. explaining a ratio for 10 marks, or giving two benefits of a cash budget for 5 each. A candidate who finds the accounts hard skips these written parts to spend more time on the figures. What does that cost?',
+  questionNote:
+    'Scenario authored for this exercise. At OL, written theory parts are free-standing flat-mark awards (definitions/benefits at 5–10 marks each) — reachable even by a candidate weak on the computational questions.',
+  scale: {
+    name: 'OL theory parts',
+    levels: [
+      { id: 'm0', label: '0 (skipped)', annotation: '0', marks: 0 },
+      { id: 'm10', label: '10 (a definition answered)', annotation: '10', marks: 10 },
+      { id: 'm20', label: '20 (theory parts done)', annotation: '20', marks: 20 },
+    ],
+    notes: [
+      'OL awards written theory in big flat blocks — a ratio explained is 10 marks; each cash-budget benefit is 5.',
+      'These marks don’t depend on getting the accounts right.',
+      'Skipping them to chase figures forfeits the easiest, most reliable marks on the paper.',
+    ],
+    cite: MSOL('p.13, p.17, p.18 (theory definitions/benefits, flat marks)'),
+  },
+  scripts: [
+    {
+      id: 'ac4-a',
+      label: 'The decision',
+      persona: 'Skips theory for the figures',
+      work: ['Struggles with the computational questions.', 'Skips the written definition/benefit parts to spend more time on the accounts.'],
+      keyLevelId: 'm0',
+      keyNote:
+        'Zero from the theory — and these were the surest marks on the paper. A ratio definition is a flat 10 whether or not your accounts balance; two cash-budget benefits are 5 each. A candidate weak on figures should bank every theory mark first, then return to the computations. Never leave the written parts blank.',
+      embodies: {
+        behaviour: 'Skips flat-mark theory parts to chase computational marks — forfeiting the easiest marks.',
+        cite: MSOL('p.13'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-ac4',
+    rule: 'At OL, bank the theory marks first.',
+    detail:
+      'Ordinary Level Accounting pays big flat marks for written definitions and benefits (5–10 each), independent of your figures. Answer every theory part — they’re the surest marks on the paper, especially if the accounts are giving you trouble.',
+    cite: MSOL('p.13'),
+  },
+};
+
 export const ACCOUNTING_CHAIR: ChairSubject = {
   id: 'accounting',
   label: 'Accounting',
   tagline: 'Workmarks, balancing and own-figure marking.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [AC1, AC2, AC3],
+  sessions: [AC1, AC2, AC3, AC4],
   sources: [
     { label: 'SEC LC Accounting HL marking scheme 2024 (examiner-reports/accounting/2024-marking-scheme)' },
+    { label: 'SEC LC Accounting OL marking scheme 2024 (examiner-reports/accounting/2024-ol-marking-scheme)' },
   ],
   coverageNote:
-    'Verified against the 2024 Higher Level scheme. The workmark system, presentation marks and own-figure marking also govern Ordinary Level; OL-specific worked questions are being added.',
+    'The workmark and own-figure sessions apply at both levels (note: OL has no “both totals correct” balance-sheet mark). The Ordinary session is verified against the 2024 OL scheme. More OL sessions are being added.',
 };

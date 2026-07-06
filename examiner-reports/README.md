@@ -61,6 +61,12 @@ For multi-year syntheses, the prefix is `<start-year>-<end-year>-` (e.g.
 | Business | 2025 | Marking scheme | Ordinary | SEC `Leaving Certificate 2025 Marking Scheme — Ordinary Level Business` (`2025 LC Business OL.pdf`, mirrored PDF, educateplus.ie) | PDF + MD + insights |
 | Irish | 2025 | Marking scheme (written papers) | Ordinary | SEC `An Ardteistiméireacht 2025 — Scéim Mharcála, Gnáthleibhéal, Gaeilge` (`2025 LC Irish OL.pdf`, mirrored PDF, educateplus.ie) | PDF + MD + insights |
 | English | 2025 | Marking scheme | Ordinary | SEC `Leaving Certificate 2025 Marking Scheme — Ordinary Level, English` (`2025 LC English OL.pdf`, mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| History | 2025 | Marking scheme | Ordinary | SEC `Leaving Certificate 2025 Marking Scheme — Ordinary Level History` (`2025 LC History OL.pdf`, mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| Accounting | 2024 | Marking scheme | Ordinary | SEC `Leaving Certificate 2024 Marking Scheme — Ordinary Level Accounting` (`Accounting OL.pdf` → `2024-ol-marking-scheme.pdf`, mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| Religious Education | 2025 | Marking scheme | Ordinary | SEC `Leaving Certificate 2025 Marking Scheme — Ordinary Level Religious Education` (`2025 LC Religious Education OL.pdf` → `2025-ol-marking-scheme.pdf`, mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| Home Economics | 2025 | Marking scheme (written paper + Food Studies coursework) | Ordinary | SEC `Leaving Certificate 2025 Marking Scheme — Ordinary Level — Home Economics - Scientific and Social` (`2025 LC Home Economics OL.pdf` → `2025-ol-marking-scheme.pdf`, mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| Economics | 2025 | Marking scheme | Ordinary | SEC `Leaving Certificate 2025 Marking Scheme — Economics, Ordinary Level` (`2025 LC Economics OL.pdf` → `2025-ol-marking-scheme.pdf`, mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| Politics and Society | 2025 | Marking scheme | Ordinary | SEC `Leaving Certificate 2025 Marking Scheme — Politics and Society, Ordinary Level` (`2025 LC Politics and Society OL.pdf` → `2025-ol-marking-scheme.pdf`, mirrored PDF, educateplus.ie) | PDF + MD + insights |
 
 _Last updated: 2026-07-06_
 

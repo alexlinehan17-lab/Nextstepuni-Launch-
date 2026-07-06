@@ -14,9 +14,10 @@
  * Claim-by-claim record: compliance/evidence/examiners-chair.md.
  */
 
-import { type ChairSubject, type ScaleSession, type ScaleLevel } from './types';
+import { type ChairSubject, type GridSession, type ScaleSession, type ScaleLevel } from './types';
 
 const MS = (p: string) => ({ label: `SEC History HL marking scheme 2025, ${p}` });
+const MSOL = (p: string) => ({ label: `SEC History OL marking scheme 2025, ${p}` });
 
 // ─────────────── His1 · CM and OE ───────────────
 
@@ -183,15 +184,86 @@ const HIS3: ScaleSession = {
   },
 };
 
+// ─────────────── His4 · OL — count your Core Statements ───────────────
+
+const HIS4: GridSession = {
+  mode: 'grid',
+  id: 'his-ol-core-statements',
+  subject: 'history',
+  level: 'ordinary',
+  title: 'Count your Core Statements',
+  cue: 'Part B (OL)',
+  question: 'An Ordinary Level Part B answer is worth 20 for content (CM), marked as Core Statements at a flat 5 marks each — so it wants four distinct, completed, relevant points. A candidate writes three strong completed points, then pads the rest by restating the first point in new words.',
+  questionNote:
+    'Scenario authored for this exercise. Unlike Higher (banded paragraphs, 60/40 CM:OE), OL History marks long answers by counting Core Statements — each a flat 5 marks; Part B wants four, Part C wants six.',
+  grid: {
+    perPoint: [
+      { id: 'cs1', label: 'Core Statement 1', marks: 5 },
+      { id: 'cs2', label: 'Core Statement 2', marks: 5 },
+      { id: 'cs3', label: 'Core Statement 3', marks: 5 },
+      { id: 'cs4', label: 'Core Statement 4', marks: 5 },
+    ],
+    shorthand: '4 Core Statements @ 5m = 20 CM',
+    ruleNote:
+      'Each distinct, completed, relevant Core Statement is a flat 5 marks. Depth beyond “completed” isn’t rewarded, and repetition isn’t a new statement — so padding by restating a point earns nothing. You need four genuinely distinct points.',
+    cite: MSOL('p.10, p.11 (Core Statement = 5 marks; Part B needs four)'),
+  },
+  scripts: [
+    {
+      id: 'his4-a',
+      label: 'Script A',
+      persona: 'Three points, then padding',
+      attempts: [
+        {
+          id: 'his4-a-1',
+          text: 'Core Statement 1 — a distinct, completed, relevant point.',
+          key: { cs1: 5, cs2: 0, cs3: 0, cs4: 0 },
+          keyNote: 'A completed relevant point — the flat 5 marks. No extra credit for writing more about it; the mark is for the point being made.',
+        },
+        {
+          id: 'his4-a-2',
+          text: 'Core Statement 2 — a second distinct completed point.',
+          key: { cs1: 0, cs2: 5, cs3: 0, cs4: 0 },
+          keyNote: 'A second distinct statement. 5.',
+        },
+        {
+          id: 'his4-a-3',
+          text: 'Core Statement 3 — a third distinct completed point.',
+          key: { cs1: 0, cs2: 0, cs3: 5, cs4: 0 },
+          keyNote: 'A third distinct statement. 5.',
+        },
+        {
+          id: 'his4-a-4',
+          text: 'The “fourth” — a reworded restatement of Core Statement 1, padding for length.',
+          key: { cs1: 0, cs2: 0, cs3: 0, cs4: 0 },
+          keyNote: 'Not a new Core Statement — it repeats the first, so it earns nothing. 15 of 20. A fourth distinct point, however brief, would have banked the last 5. At OL, count your statements: four distinct completed points, not three plus padding.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Pads a Core-Statement answer by restating a point instead of giving a fourth distinct one.',
+        cite: MSOL('p.11'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-his4',
+    rule: 'At OL, count distinct Core Statements — padding earns nothing.',
+    detail:
+      'Ordinary Level History marks long answers by counting Core Statements at a flat 5 marks each (Part B wants four, Part C six). Depth past “completed” isn’t rewarded and repetition isn’t a new point — give the number of distinct statements the part expects.',
+    cite: MSOL('p.11'),
+  },
+};
+
 export const HISTORY_CHAIR: ChairSubject = {
   id: 'history',
   label: 'History',
   tagline: 'CM and OE — why the story is only 60% of the mark.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [HIS1, HIS2, HIS3],
+  sessions: [HIS1, HIS2, HIS3, HIS4],
   sources: [
     { label: 'SEC LC History HL marking scheme 2025 (examiner-reports/history/2025-marking-scheme)' },
+    { label: 'SEC LC History OL marking scheme 2025 (examiner-reports/history/2025-ol-marking-scheme)' },
   ],
   coverageNote:
-    'Verified against the 2025 Higher Level scheme. The CM/OE system and the capping rules also structure Ordinary Level marking; OL-specific sessions are being added.',
+    'Higher sessions use the 60/40 CM:OE banded-paragraph system. Ordinary Level is marked differently — by counting Core Statements at a flat 5 marks each, with no essay — so the OL session is verified separately against the 2025 OL scheme. More OL sessions are being added.',
 };

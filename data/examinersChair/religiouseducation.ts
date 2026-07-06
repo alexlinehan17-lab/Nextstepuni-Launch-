@@ -17,6 +17,7 @@
 import { type ChairSubject, type ScaleSession } from './types';
 
 const MS = (p: string) => ({ label: `SEC Religious Education HL marking scheme 2025, ${p}` });
+const MSOL = (p: string) => ({ label: `SEC Religious Education OL marking scheme 2025, ${p}` });
 
 // ─────────────── RE1 · Do the command word ───────────────
 
@@ -125,15 +126,70 @@ const RE2: ScaleSession = {
   },
 };
 
+// ─────────────── RE3 · OL — a strong description reaches the top ───────────────
+
+const RE3: ScaleSession = {
+  mode: 'scale',
+  id: 're-ol-describe',
+  subject: 'religious-education',
+  level: 'ordinary',
+  title: 'At OL, describing is enough',
+  cue: 'Describe (OL)',
+  question: 'At Higher Level, a purely descriptive answer to a higher-order command is capped at the top of Fair. At Ordinary Level there is NO such cap — the commands are Outline/Describe/Give an account, and a full, accurate, relevant description can reach the top band. A candidate writes exactly that. Where does it land?',
+  questionNote:
+    'Scenario authored for this exercise. Unlike HL, the OL scheme contains no descriptive-answer cap — its commands are lower-order (Describe/Outline), and a strong description is a top-band answer.',
+  scale: {
+    name: 'OL description · /40 bands',
+    levels: [
+      { id: 'fair', label: 'Fair (16–21)', annotation: 'F', marks: 19 },
+      { id: 'good', label: 'Good (22–27)', annotation: 'G', marks: 25 },
+      { id: 'vgood', label: 'Very Good (28–33)', annotation: 'VG', marks: 31 },
+      { id: 'excellent', label: 'Excellent (34–40)', annotation: 'E', marks: 37 },
+    ],
+    notes: [
+      'OL commands are lower-order: Outline, Describe, Give an account.',
+      'There is no HL-style “you didn’t evaluate” cap — the OL scheme uses “Max” zero times.',
+      'A full, accurate, relevant description can reach the Excellent band.',
+    ],
+    cite: MSOL('p.5, p.20 (no descriptive cap at OL)'),
+  },
+  scripts: [
+    {
+      id: 're3-a',
+      label: 'The answer',
+      persona: 'Full, accurate description',
+      work: [
+        'A complete, accurate, relevant description of the topic.',
+        'The command was “Describe” — and it describes thoroughly.',
+      ],
+      keyLevelId: 'excellent',
+      keyNote:
+        'It can reach the Excellent band — at OL there’s no descriptive cap, because the command asked you to describe, and you did it fully and accurately. This is the mirror image of Higher Level, where the same description would be capped at Fair. At OL, do exactly what the command word asks, thoroughly and accurately, and the top band is open.',
+      embodies: {
+        behaviour: 'Answers an OL “describe” command with a full accurate description — top band, no cap.',
+        cite: MSOL('p.5'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-re3',
+    rule: 'At OL, a thorough accurate description is a top answer.',
+    detail:
+      'Ordinary Level RE has no descriptive cap — its commands are Describe/Outline/Give an account, and a full, accurate, relevant description can reach the Excellent band. Do exactly what the command asks, thoroughly and accurately.',
+    cite: MSOL('p.5'),
+  },
+};
+
 export const RE_CHAIR: ChairSubject = {
   id: 'religious-education',
   label: 'Religious Education',
   tagline: 'Holistic bands — do the command word and keep it accurate.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [RE1, RE2],
+  sessions: [RE1, RE2, RE3],
   sources: [
     { label: 'SEC LC Religious Education HL marking scheme 2025 (examiner-reports/religious-education/2025-marking-scheme)' },
+    { label: 'SEC LC Religious Education OL marking scheme 2025 (examiner-reports/religious-education/2025-ol-marking-scheme)' },
   ],
   coverageNote:
-    'Verified against the 2025 Higher Level scheme. The holistic banding and descriptive cap also structure Ordinary Level; OL-specific worked questions are being added.',
+    'The holistic six-band system applies at both levels. But the descriptive cap is Higher-specific — at Ordinary Level the commands are lower-order and there is no cap, so a thorough description reaches the top band (verified against the 2025 OL scheme).',
 };

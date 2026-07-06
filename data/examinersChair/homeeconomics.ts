@@ -17,6 +17,7 @@
 import { type ChairSubject, type GridSession, type ScaleSession, type ScaleLevel } from './types';
 
 const MS = (p: string) => ({ label: `SEC Home Economics HL marking scheme 2025, ${p}` });
+const MSOL = (p: string) => ({ label: `SEC Home Economics OL marking scheme 2025, ${p}` });
 
 const ladder = (marks: number[]): ScaleLevel[] =>
   marks.map(m => ({ id: `m${m}`, label: `${m} marks`, annotation: `${m}`, marks: m }));
@@ -182,15 +183,65 @@ const HE3: GridSession = {
   },
 };
 
+// ─────────────── HE4 · OL — never leave Section A blank ───────────────
+
+const HE4: ScaleSession = {
+  mode: 'scale',
+  id: 'he-ol-section-a',
+  subject: 'home-economics',
+  level: 'ordinary',
+  title: 'Guess it — never leave it blank',
+  cue: 'Section A (OL)',
+  question: 'An Ordinary Level Section A item (a true/false tick, or fill-the-blank) is marked all-or-nothing: 2 marks or 0, with no partial credit. A candidate isn’t sure of the answer and leaves it blank rather than guess. What’s the expected cost of leaving it blank versus guessing?',
+  questionNote:
+    'Scenario authored for this exercise. OL Section A items are graded 2:0 (all-or-nothing). Because a blank and a wrong guess both score 0, guessing on an unknown item is pure upside.',
+  scale: {
+    name: 'OL Section A · 2:0',
+    levels: [
+      { id: 'm0', label: '0 (blank or wrong)', annotation: '0', marks: 0 },
+      { id: 'm2', label: '2 (correct)', annotation: '2', marks: 2 },
+    ],
+    notes: [
+      'OL Section A items score 2:0 — all-or-nothing, no partial credit.',
+      'A blank scores 0. A wrong guess also scores 0. There is no penalty for a wrong answer.',
+      'So on a true/false or fill-the-blank you don’t know, a guess can only help.',
+    ],
+    cite: MSOL('p.6–7 (Section A, graded 2:0)'),
+  },
+  scripts: [
+    {
+      id: 'he4-a',
+      label: 'The decision',
+      persona: 'Leaves it blank',
+      work: ['Unsure of the answer.', 'Leaves the true/false item blank rather than guess.'],
+      keyLevelId: 'm0',
+      keyNote:
+        'A guaranteed 0 — when a 50/50 guess would have scored 2 half the time for no downside. Section A is graded 2:0 with no penalty for a wrong answer, so leaving an item blank throws away free expected marks. Always put something down: on a true/false you can’t lose by guessing.',
+      embodies: {
+        behaviour: 'Leaves an all-or-nothing Section A item blank instead of guessing — forfeiting free expected marks.',
+        cite: MSOL('p.6'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-he4',
+    rule: 'On OL Section A, always guess — never leave it blank.',
+    detail:
+      'Ordinary Level Section A items are graded 2:0 with no penalty for a wrong answer. A blank and a wrong guess both score 0, so guessing on a true/false or fill-the-blank you’re unsure of is pure upside. Never leave one blank.',
+    cite: MSOL('p.6'),
+  },
+};
+
 export const HOME_ECONOMICS_CHAIR: ChairSubject = {
   id: 'home-economics',
   label: 'Home Economics',
   tagline: 'Develop your points, spread the headings, describe don’t just name.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [HE1, HE2, HE3],
+  sessions: [HE1, HE2, HE3, HE4],
   sources: [
     { label: 'SEC LC Home Economics HL marking scheme 2025 (examiner-reports/home-economics/2025-marking-scheme)' },
+    { label: 'SEC LC Home Economics OL marking scheme 2025 (examiner-reports/home-economics/2025-ol-marking-scheme)' },
   ],
   coverageNote:
-    'Verified against the 2025 Higher Level scheme. The point ladders, per-heading rules and name-vs-describe splits also structure Ordinary Level; OL-specific worked questions are being added.',
+    'The point-ladder, per-heading and name-vs-describe sessions apply at both levels (OL ladders are even coarser — a half point often scores 0). The Ordinary session captures OL’s all-or-nothing Section A. Verified against the 2025 OL scheme.',
 };
