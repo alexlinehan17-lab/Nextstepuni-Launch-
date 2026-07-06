@@ -178,12 +178,77 @@ const CS3: ScaleSession = {
   },
 };
 
+// ─────────────── CS4 · One advantage AND one disadvantage — both required ───────────────
+
+const CS4: GridSession = {
+  mode: 'grid',
+  id: 'cs-adv-dis',
+  subject: 'construction-studies',
+  level: 'higher',
+  title: 'One advantage AND one disadvantage',
+  cue: 'Discuss one advantage and one disadvantage',
+  question: 'A part asks candidates to “discuss one advantage and one disadvantage” of each of two wall types — the grid splits it Advantage 3 + Disadvantage 3 per wall (12 marks). A candidate knows the topic well and writes two strong advantages for each wall — but no disadvantages.',
+  questionNote:
+    'Scenario authored for this exercise. In Construction Studies an “advantage and a disadvantage” part is marked with a separate tick for each side — the advantage and the disadvantage each carry their own marks, so a second advantage cannot pay for the missing disadvantage.',
+  grid: {
+    perPoint: [
+      { id: 'w1adv', label: 'Wall 1 — advantage', marks: 3 },
+      { id: 'w1dis', label: 'Wall 1 — disadvantage', marks: 3 },
+      { id: 'w2adv', label: 'Wall 2 — advantage', marks: 3 },
+      { id: 'w2dis', label: 'Wall 2 — disadvantage', marks: 3 },
+    ],
+    shorthand: 'each wall: advantage 3 + disadvantage 3',
+    ruleNote:
+      'The advantage and the disadvantage are marked as separate ticks, one each per wall. A second advantage lands in a box that’s already full — the disadvantage box stays empty and its marks are lost. Both sides are required.',
+    cite: MS('p.17 (question wording), p.40 (Q4(c) advantage + disadvantage split)'),
+  },
+  scripts: [
+    {
+      id: 'cs4-a',
+      label: 'Script A',
+      persona: 'Two advantages, no disadvantage',
+      attempts: [
+        {
+          id: 'cs4-a-1',
+          text: 'For each wall type: two well-explained advantages, and no disadvantage.',
+          key: { w1adv: 3, w1dis: 0, w2adv: 3, w2dis: 0 },
+          keyNote: 'Half the marks gone. The extra advantage scores nothing — there’s only one advantage tick per wall — while the disadvantage tick sits unfilled on both walls. When a part names two things (an advantage AND a disadvantage), each is a separate mark; answer both.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Gives two advantages instead of an advantage and a disadvantage — forfeiting the disadvantage marks.',
+        cite: MS('p.40'),
+      },
+    },
+    {
+      id: 'cs4-b',
+      label: 'Script B',
+      persona: 'One of each, per wall',
+      attempts: [
+        {
+          id: 'cs4-b-1',
+          text: 'For each wall type: one advantage and one disadvantage, each briefly discussed.',
+          key: { w1adv: 3, w1dis: 3, w2adv: 3, w2dis: 3 },
+          keyNote: 'Full marks. Every tick has something to score against because the answer mirrors what the question asked for — one advantage and one disadvantage per wall.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-cs4',
+    rule: 'If it asks for an advantage AND a disadvantage, both are separate marks.',
+    detail:
+      'When a part names two things — “one advantage and one disadvantage” — each is its own tick (here 3 + 3 per wall). A second advantage cannot fill the disadvantage box; answer every side the question names.',
+    cite: MS('p.40'),
+  },
+};
+
 export const CONSTRUCTION_CHAIR: ChairSubject = {
   id: 'construction-studies',
   label: 'Construction Studies',
   tagline: 'Label every element, sketch when asked, show every layer.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [CS1, CS2, CS3],
+  sessions: [CS1, CS2, CS3, CS4],
   sources: [
     { label: 'SEC LC Construction Studies HL marking scheme 2025 (examiner-reports/construction-studies/2025-marking-scheme)' },
   ],

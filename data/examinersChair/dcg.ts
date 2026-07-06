@@ -177,15 +177,78 @@ const DCG3: ScaleSession = {
   },
 };
 
+// ─────────────── DCG4 · Hidden detail is its own mark ───────────────
+
+const DCG4: GridSession = {
+  mode: 'grid',
+  id: 'dcg-hidden-detail',
+  subject: 'dcg',
+  level: 'common',
+  title: 'The dashed lines are worth a mark',
+  cue: 'Complete the elevation',
+  question: 'Completing an elevation is worth 4 marks: 3 for drawing the visible outline, and a separate 1 for showing the hidden detail as dashed lines. A candidate draws a crisp, correct visible outline but leaves the hidden edges off — they looked cluttered, and it’s "only one mark".',
+  questionNote:
+    'Scenario authored for this exercise. In DCG, presentation conventions like hidden detail are itemised as their own small granules — usually 1 mark — separate from the visible drawing.',
+  grid: {
+    perPoint: [
+      { id: 'elevation', label: 'Draw the visible elevation', marks: 3 },
+      { id: 'hidden', label: 'Show the hidden detail (dashed)', marks: 1 },
+    ],
+    shorthand: 'elevation 3 + hidden detail 1',
+    ruleNote:
+      'Hidden detail is scored as its own granule, separate from the visible outline. Leaving the dashed lines off doesn’t cost style points — it forfeits a specific, guaranteed mark the scheme has set aside for them. Put the hidden edges in every time.',
+    cite: MS('p.5 (A-3(a)(v) hidden-detail granule)'),
+  },
+  scripts: [
+    {
+      id: 'dcg4-a',
+      label: 'Script A',
+      persona: 'Leaves the hidden edges off',
+      attempts: [
+        {
+          id: 'dcg4-a-1',
+          text: 'A crisp, correct visible outline — but the hidden edges are left off to keep the view clean.',
+          key: { elevation: 3, hidden: 0 },
+          keyNote: 'The visible outline earns its 3, but the hidden-detail mark is a separate granule and there are no dashed lines to award it to. 3 of 4 — a guaranteed mark thrown away for tidiness. Hidden detail is never optional decoration; it’s itemised in the scheme.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Omits hidden detail, forfeiting the itemised presentation-convention mark.',
+        cite: MS('p.5'),
+      },
+    },
+    {
+      id: 'dcg4-b',
+      label: 'Script B',
+      persona: 'Adds the hidden detail',
+      attempts: [
+        {
+          id: 'dcg4-b-1',
+          text: 'The visible outline is drawn, then the hidden edges are added as dashed lines.',
+          key: { elevation: 3, hidden: 1 },
+          keyNote: 'Both granules are on the page — outline and hidden detail. Full 4. The dashed lines take seconds and bank a mark the scheme has reserved for exactly that.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-dcg4',
+    rule: 'Always add the hidden detail — it’s a mark of its own.',
+    detail:
+      'DCG itemises presentation conventions like hidden detail as their own small granules, separate from the visible drawing. The dashed hidden edges are a guaranteed mark that time-pressed candidates routinely skip. Draw them in every time — they cost seconds and pay a mark.',
+    cite: MS('p.5'),
+  },
+};
+
 export const DCG_CHAIR: ChairSubject = {
   id: 'dcg',
   label: 'Design & Communication Graphics',
-  tagline: 'Construction over curve, every step scores, method pays.',
+  tagline: 'Construction over curve, every step scores, method pays, hidden detail counts.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [DCG1, DCG2, DCG3],
+  sessions: [DCG1, DCG2, DCG3, DCG4],
   sources: [
     { label: 'SEC LC DCG HL marking scheme 2025 (examiner-reports/dcg/2025-marking-scheme)' },
   ],
   coverageNote:
-    'These sessions teach the general drawing-marking conventions — construction marked above the finished curve, independently-scored steps and standalone method marks — which apply at both Higher and Ordinary level. Verified against the 2025 Higher Level scheme; level-specific worked drawings are being added.',
+    'These sessions teach the general drawing-marking conventions — construction marked above the finished curve, independently-scored steps, standalone method marks and itemised presentation granules like hidden detail — which apply at both Higher and Ordinary level. Verified against the 2025 Higher Level scheme; level-specific worked drawings are being added.',
 };

@@ -171,12 +171,61 @@ const ART3: ScaleSession = {
   },
 };
 
+// ─────────────── ART4 · Coherence and Focus is its own strand ───────────────
+
+const ART4: ScaleSession = {
+  mode: 'scale',
+  id: 'art-coherence',
+  subject: 'art',
+  level: 'common',
+  title: 'Answer the question, in order',
+  cue: 'Section B/C essay',
+  question: 'Coherence and Focus is its own 10-mark strand in a Section B/C answer. A candidate pours in accurate, detailed knowledge — but as a disorganised info-dump that never builds a focused argument answering the question actually posed. Subject Knowledge is strong; where does Coherence and Focus land?',
+  questionNote:
+    'Scenario authored for this exercise. Coherence and Focus (10 marks) is a separate Section B/C strand rewarding understanding the demands of the question and building sequential, evidence-based arguments — independent of how much you know.',
+  scale: {
+    name: 'Coherence and Focus · /10 bands',
+    levels: bands([2, 5, 9], ['Low — unfocused', 'Moderate', 'High — coherent & focused']),
+    notes: [
+      'Coherence and Focus is an independent 10-mark strand (Low 0–3 / Moderate 4–6 / High 7–10).',
+      'It rewards understanding the demands of the question and forming sequential, logical, evidence-based arguments.',
+      'A knowledge info-dump that doesn’t answer the question posed sits low here, however strong the knowledge.',
+    ],
+    cite: MS('printed p.21 (Coherence and Focus strand)'),
+  },
+  scripts: [
+    {
+      id: 'art4-a',
+      label: 'The answer',
+      persona: 'Knows a lot, answers nothing',
+      work: [
+        'Accurate, detailed knowledge throughout.',
+        'But it’s an unstructured info-dump — no focused argument responding to the question posed.',
+      ],
+      keyLevelId: 'b0',
+      keyNote:
+        'Low band for Coherence and Focus — this strand marks whether you understood and answered the actual question in a structured way, and strong knowledge can’t rescue it. It’s a separate 10 marks from Subject Knowledge. Plan a focused argument that responds directly to the question, in a logical order; that structure is what the strand pays for.',
+      embodies: {
+        behaviour: 'Presents knowledge as an unfocused info-dump that doesn’t answer the question — capping the Coherence and Focus strand.',
+        cite: MS('printed p.21'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-art4',
+    rule: 'Coherence and Focus is its own 10 marks — answer the question, in order.',
+    detail:
+      'Visual Studies scores Coherence and Focus as a separate 10-mark strand: it rewards understanding the demands of the question and building a sequential, evidence-based argument. A knowledge dump that doesn’t answer the question posed scores low here no matter how much you know — plan a focused response.',
+    cite: MS('printed p.21'),
+  },
+};
+
 export const ART_CHAIR: ChairSubject = {
   id: 'art',
   label: 'Art (Visual Studies)',
   tagline: 'Analyse over recall, name the works, use the given headings.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [ART1, ART2, ART3],
+  sessions: [ART1, ART2, ART3, ART4],
   sources: [
     { label: 'SEC LC Art HL Visual Studies marking scheme 2024 (examiner-reports/art/2024-visual-studies-marking-scheme)' },
     { label: 'SEC LC Art OL Visual Studies marking scheme 2024 (examiner-reports/art/2024-visual-studies-ol-marking-scheme)' },

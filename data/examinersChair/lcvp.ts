@@ -200,15 +200,82 @@ const LC3: ScaleSession = {
   },
 };
 
+// ─────────────── LC4 · The compulsory item & the format mark ───────────────
+
+const LC4: GridSession = {
+  mode: 'grid',
+  id: 'lcvp-compulsory',
+  subject: 'lcvp',
+  level: 'common',
+  title: 'The compulsory item',
+  cue: 'Prepare an agenda',
+  question:
+    'A Section C question worth 6 marks says “Prepare the agenda for the first meeting.” The scheme marks it: heading “AGENDA” = 1 mark, then 5 valid agenda items at 1 mark each — with the very first item, “Election of Officers”, flagged with an asterisk as a compulsory point. A candidate writes the heading and five perfectly valid items, but not Election of Officers. Full marks?',
+  questionNote:
+    'Scenario authored for this exercise. The mark split (heading 1m + 5 items 5@1m) and the asterisked “compulsory point” are the real SEC template — some structured-format questions reserve a mark for one named item, and a separate mark for the required heading.',
+  grid: {
+    perPoint: [
+      { id: 'heading', label: 'AGENDA heading (format mark)', marks: 1 },
+      { id: 'compulsory', label: 'Election of Officers (compulsory item)', marks: 1 },
+      { id: 'others', label: 'Four other valid agenda items', marks: 4 },
+    ],
+    shorthand: 'Heading 1m + 5 items 5@1m · one item compulsory',
+    ruleNote:
+      'Two marks here are not “any valid point”. One is a format mark for writing the heading “AGENDA”. Another is reserved for the specific compulsory item the scheme asterisks (Election of Officers) — an extra valid item cannot substitute for it. You score that mark only by naming the exact required item.',
+    cite: MS('p.8 (AGENDA: heading 1m, 5 items 5@1m, Election of Officers compulsory)'),
+  },
+  scripts: [
+    {
+      id: 'lc4-a',
+      label: 'The answer',
+      persona: 'Five valid items — but not the required one',
+      attempts: [
+        {
+          id: 'lc4-a-1',
+          text: 'Writes the heading “AGENDA”, then five valid items: Resources, Finance, Action steps, Date of the visit, and AOB. No “Election of Officers”.',
+          key: { heading: 1, compulsory: 0, others: 4 },
+          keyNote:
+            '5/6. The heading banks its format mark, and four of the items are valid “other” points. But the fifth item mark is reserved for the compulsory point — Election of Officers — which the scheme asterisks. A sixth valid item can’t buy it back; you only earn that mark by naming the required item itself.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Substitutes an extra valid agenda item for the point the scheme marks compulsory (asterisked).',
+        cite: MS('p.8'),
+      },
+    },
+    {
+      id: 'lc4-b',
+      label: 'The answer',
+      persona: 'Leads with the compulsory item',
+      attempts: [
+        {
+          id: 'lc4-b-1',
+          text: 'Writes the heading “AGENDA”, opens with Election of Officers, then Resources, Finance, Action steps and AOB.',
+          key: { heading: 1, compulsory: 1, others: 4 },
+          keyNote:
+            '6/6. The heading (1), the compulsory Election of Officers item (1), and four other valid items (4). Getting the format and the required item both banks every mark on offer.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-lcvp4',
+    rule: 'Write the required heading, and the compulsory item.',
+    detail:
+      'Structured-format LCVP questions reserve marks for a named heading (a format mark) and for specific compulsory, asterisked points. An extra valid item never substitutes for the compulsory one — include the exact item, and write the heading, to bank those marks.',
+    cite: MS('p.8'),
+  },
+};
+
 export const LCVP_CHAIR: ChairSubject = {
   id: 'lcvp',
   label: 'LCVP Link Modules',
-  tagline: 'Expand every point, three distinct ideas, apply it to the case.',
+  tagline: 'Expand every point, three distinct ideas, apply it to the case, give the compulsory item.',
   offeredLevels: ['common'],
-  sessions: [LC1, LC2, LC3],
+  sessions: [LC1, LC2, LC3, LC4],
   sources: [
     { label: 'SEC LCVP Link Modules Written Paper marking scheme 2024, Common Level (examiner-reports/lcvp/2024-marking-scheme)' },
   ],
   coverageNote:
-    'LCVP Link Modules is examined at a single common level. These sessions teach the written-paper conventions — point+expansion notation, the (0/2) items, the no-repetition rule and the apply-to-the-case requirement — verified against the 2024 scheme. The portfolio (60% of the grade) is coursework and not covered here.',
+    'LCVP Link Modules is examined at a single common level. These sessions teach the written-paper conventions — point+expansion notation, the (0/2) items, the no-repetition rule, the apply-to-the-case requirement and the compulsory-item/format marks — verified against the 2024 scheme. The portfolio (60% of the grade) is coursework and not covered here.',
 };

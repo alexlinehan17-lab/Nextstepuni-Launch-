@@ -7,8 +7,9 @@
  * Questions and scripts are AUTHORED for this exercise (labelled in each
  * `questionNote`) — they are not real SEC questions or candidate scripts. The
  * marking grammar (the two opposite over-answering regimes, the "partially
- * correct = 1" precision cap on descriptions, and chords credited only within a
- * good progression) is the real SEC system, cited to:
+ * correct = 1" precision cap on descriptions, chords credited only within a
+ * good progression, and the cadential 6/4 placement rule) is the real SEC
+ * system, cited to:
  *  - SEC LC Music HL marking scheme 2022 (Deferred sitting) —
  *    examiner-reports/music/2022-marking-scheme-deferred.*
  * The deferred scheme's marking grammar is identical to the main sitting; only
@@ -167,15 +168,62 @@ const MU3: ScaleSession = {
   },
 };
 
+// ─────────────── MU4 · Cadential 6/4 placement ───────────────
+
+const MU4: ScaleSession = {
+  mode: 'scale',
+  id: 'mu-cadential',
+  subject: 'music',
+  level: 'common',
+  title: 'The 6/4 on the wrong beat',
+  cue: 'Harmony',
+  question: 'In the harmony question a candidate boxes a cadential 6/4 (Ic) approaching the final cadence — the right chord, correctly spelt. But it lands on the weaker of the two beats rather than the stronger one. The scheme credits a cadential 6/4 only when it’s on the stronger of the two beats AND at a cadence point. What does this chord score?',
+  questionNote:
+    'Scenario authored for this exercise. In the harmony question the cadential 6/4 (Ic) has a placement rule: it must sit on the stronger of the two beats and fall at a cadence point. A correctly-spelt Ic in the wrong metric position earns nothing.',
+  scale: {
+    name: 'Harmony · cadential 6/4 placement',
+    levels: two(0, 1),
+    notes: [
+      '“Cadential 6/4 must be on the stronger of the two beats and at a cadence point.”',
+      'A correctly-spelt Ic on the weaker beat fails the placement rule, so the chord earns nothing.',
+      'Here “correct” includes WHERE the chord sits in the bar, not just which notes it contains.',
+      'It is also the one context where iib–i (ii–I) is accepted — but only as the approach to that Ic.',
+    ],
+    cite: MS('p.7 (Chord Progressions — General points; cadential 6/4 placement)'),
+  },
+  scripts: [
+    {
+      id: 'mu4-a',
+      label: 'The chord',
+      persona: 'Right 6/4, weak beat',
+      work: ['Boxes a cadential 6/4 (Ic) into the approach to the final cadence.', 'The chord is correctly spelt — but it lands on the weaker of the two beats.'],
+      keyLevelId: 'm0',
+      keyNote:
+        '0 — the cadential 6/4 must be on the stronger of the two beats and at a cadence point, and this one is on the weaker beat. Spelling the Ic correctly isn’t enough; its metric position is part of being right. Place the 6/4 on the strong beat leading into V–I, and the mark follows.',
+      embodies: {
+        behaviour: 'Places a correctly-spelt cadential 6/4 on the weaker beat, where the placement rule denies the mark.',
+        cite: MS('p.7'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-mu4',
+    rule: 'A cadential 6/4 only counts on the strong beat at a cadence.',
+    detail:
+      'In the harmony question the cadential 6/4 (Ic) must sit on the stronger of the two beats and fall at a cadence point — a correctly-spelt Ic in the wrong metric position scores nothing. For this chord, position is part of correctness.',
+    cite: MS('p.7'),
+  },
+};
+
 export const MUSIC_CHAIR: ChairSubject = {
   id: 'music',
   label: 'Music',
   tagline: 'Two over-answering regimes, precise descriptions, chords in context.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [MU1, MU2, MU3],
+  sessions: [MU1, MU2, MU3, MU4],
   sources: [
     { label: 'SEC LC Music HL marking scheme 2022, Deferred sitting (examiner-reports/music/2022-marking-scheme-deferred)' },
   ],
   coverageNote:
-    'These sessions teach the written/listening-paper conventions — the two over-answering regimes, the precision cap and chord-in-progression marking — which apply across levels. Verified against the 2022 Higher Level (Deferred) scheme, whose marking grammar matches the main sitting; the composing and performing components are practical and not covered here.',
+    'These sessions teach the written/listening-paper conventions — the two over-answering regimes, the precision cap, chord-in-progression marking and the cadential 6/4 placement rule — which apply across levels. Verified against the 2022 Higher Level (Deferred) scheme, whose marking grammar matches the main sitting; the composing and performing components are practical and not covered here.',
 };

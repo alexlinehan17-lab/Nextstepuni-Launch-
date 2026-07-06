@@ -180,12 +180,66 @@ const RE3: ScaleSession = {
   },
 };
 
+// ─────────────── RE4 · “Two” means two independent scores ───────────────
+
+const RE4: ScaleSession = {
+  mode: 'scale',
+  id: 're-two-items',
+  subject: 'religious-education',
+  level: 'higher',
+  title: 'When it says “two”, one brilliant answer isn’t enough',
+  cue: 'Outline two',
+  question: 'A 20-mark question says “Outline two images of God.” It’s marked as two separate 10-mark scores — the examiner codes “MC x 2” and bands each image independently. A candidate writes one flawless, Excellent account of God as Shepherd, and never gives a second image. Where does the whole answer land out of 20?',
+  questionNote:
+    'Scenario authored for this exercise. A “two-item” RE question (e.g. “Outline two images of God”, 10M × 2) is banded twice — the scheme instructs the examiner to “Code MC x 2” and mark each item on its own 10-mark grid; a missing item is coded MC X (no evidence).',
+  scale: {
+    name: 'Two-item split · /20',
+    levels: [
+      { id: 'half', label: 'One image only — Max 10 (second is MC X)', annotation: 'MC×1', marks: 10 },
+      { id: 'onethin', label: 'One strong + one thin (≈13)', annotation: 'E+W', marks: 13 },
+      { id: 'twosolid', label: 'Two solid images (≈16)', annotation: 'G+G', marks: 16 },
+      { id: 'twotop', label: 'Two excellent images (20)', annotation: 'E+E', marks: 20 },
+    ],
+    notes: [
+      'A “two-item” question is banded twice: the examiner codes “MC x 2” and marks each image on its own 10-mark grid (10–8 / 7 / 6–5 / 4 / 3–2 / 1–0).',
+      'The two scores are independent — extra quality on one image cannot compensate for a missing one; a missing item is coded MC X (no evidence) and scores nothing.',
+      'Doing one of two perfectly caps the whole answer at Max 10 — half the marks for half the task.',
+    ],
+    cite: MS('p.8 (Q2(b)(i) “Outline two images of God”, 10M × 2, “Code MC x 2”; MC X annotation p.3)'),
+  },
+  scripts: [
+    {
+      id: 're4-a',
+      label: 'The answer',
+      persona: 'One image, done perfectly',
+      work: [
+        'A flawless, accurate, Excellent-band account of God as Shepherd.',
+        'No second image of God is ever given — the second half of the question is left blank.',
+      ],
+      keyLevelId: 'half',
+      keyNote:
+        'Capped at 10 of 20. The command asked for two images, so the examiner codes MC x 2 and bands each independently: image one earns a full Excellent 10, but image two is coded MC X — no evidence, no marks. The two scores don’t pool, so a perfect first image can’t cover a missing second. Half the task, half the marks. Two shorter, solid images would beat one flawless one here.',
+      embodies: {
+        behaviour: 'Answers only one of two required items — the second is coded MC X and the whole answer caps at half the marks.',
+        cite: MS('p.8'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-re4',
+    rule: 'When it says “two”, give two — the scores don’t pool.',
+    detail:
+      'RE bands a “two-item” question twice (“Code MC x 2”), marking each item on its own grid; a missing item is coded MC X and scores zero. One flawless answer can’t make up for a missing second — cover every item the command lists.',
+    cite: MS('p.8'),
+  },
+};
+
 export const RE_CHAIR: ChairSubject = {
   id: 'religious-education',
   label: 'Religious Education',
   tagline: 'Holistic bands — do the command word and keep it accurate.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [RE1, RE2, RE3],
+  sessions: [RE1, RE2, RE3, RE4],
   sources: [
     { label: 'SEC LC Religious Education HL marking scheme 2025 (examiner-reports/religious-education/2025-marking-scheme)' },
     { label: 'SEC LC Religious Education OL marking scheme 2025 (examiner-reports/religious-education/2025-ol-marking-scheme)' },

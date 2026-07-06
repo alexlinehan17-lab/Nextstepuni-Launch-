@@ -7,7 +7,8 @@
  * Questions and scripts are AUTHORED for this exercise (labelled in each
  * `questionNote`) — they are not real SEC questions or candidate scripts. The
  * marking grammar (the "Any N @…" best-N cap, the 3+2 point+development split,
- * and separately-credited diagram labels) is the real SEC system, cited to:
+ * separately-credited diagram labels, and the Practical's Assembly/Function/Finish
+ * concept marks) is the real SEC system, cited to:
  *  - SEC LC Engineering HL marking scheme 2025 —
  *    examiner-reports/engineering/2025-marking-scheme.*
  * Claim-by-claim record: compliance/evidence/examiners-chair.md.
@@ -215,15 +216,79 @@ const EN3: GridSession = {
   },
 };
 
+// ─────────────── EN4 · The practical is marked on Finish too ───────────────
+
+const EN4: GridSession = {
+  mode: 'grid',
+  id: 'en-finish',
+  subject: 'engineering',
+  level: 'common',
+  title: 'A working piece is not a finished piece',
+  cue: 'Practical',
+  question: 'In the Practical Examination, Section 1 (the whole test-piece) is marked 20 across three concept marks: Assembly (5), Function (10) and Finish (5). A candidate’s piece assembles correctly and works perfectly — but is handed up rough: file marks left on, sharp edges undeburred, surfaces unpolished. Mark Section 1.',
+  questionNote:
+    'Scenario authored for this exercise. The SEC Engineering Practical marks the assembled test-piece on three separate concept marks — Assembly, Function and Finish — and the whole practical (100 marks) is scaled ×1.5 to 150.',
+  grid: {
+    perPoint: [
+      { id: 'assembly', label: 'Assembly', marks: 5 },
+      { id: 'function', label: 'Function', marks: 10 },
+      { id: 'finish', label: 'Finish', marks: 5 },
+    ],
+    shorthand: 'Section 1: Assembly 5 + Function 10 + Finish 5 (/20)',
+    ruleNote:
+      'Finish is its own concept mark, scored separately from whether the piece assembles or works. A piece that functions flawlessly but is left rough forfeits the Finish 5 — a full quarter of Section 1 — no matter how well it performs.',
+    cite: MS('p.32 (Practical Section 1: Assembly 5 + Function 10 + Finish 5)'),
+  },
+  scripts: [
+    {
+      id: 'en4-a',
+      label: 'Script A',
+      persona: 'Works, handed up rough',
+      attempts: [
+        {
+          id: 'en4-a-1',
+          text: 'The test-piece assembles correctly and functions exactly as intended — but file marks are left on the surfaces, edges are sharp and undeburred, and nothing is polished.',
+          key: { assembly: 5, function: 10, finish: 0 },
+          keyNote: 'Assembly and Function are fully earned (15), but Finish is a separate 5-mark concept and it is gone — a quarter of Section 1 lost to rough surfaces. A few minutes deburring and cleaning up the finish would have banked it. The piece working does not carry the Finish mark.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Builds a piece that assembles and functions perfectly but leaves the finish rough, dropping the separately-credited Finish concept mark.',
+        cite: MS('p.32'),
+      },
+    },
+    {
+      id: 'en4-b',
+      label: 'Script B',
+      persona: 'Same piece, finished properly',
+      attempts: [
+        {
+          id: 'en4-b-1',
+          text: 'The same working, correctly-assembled test-piece — but surfaces are cleaned up, edges deburred and the piece finished before it is handed up.',
+          key: { assembly: 5, function: 10, finish: 5 },
+          keyNote: 'Assembly (5), Function (10) and Finish (5) all earned. Full 20 — the only difference from Script A is the finishing pass, and it was worth a clean 5 marks.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-en4',
+    rule: 'Finish is marked, even when the piece works.',
+    detail:
+      'In the Engineering Practical, Section 1 splits into Assembly (5), Function (10) and Finish (5) — and the whole 100-mark practical is scaled ×1.5 to 150. Finish is credited in its own right, so a working piece left rough still drops those marks. Leave time to deburr, clean up and finish the test-piece.',
+    cite: MS('p.32'),
+  },
+};
+
 export const ENGINEERING_CHAIR: ChairSubject = {
   id: 'engineering',
   label: 'Engineering',
-  tagline: 'Answer the number asked, state the point, label the diagram.',
+  tagline: 'Answer the number asked, state the point, label the diagram, finish the piece.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [EN1, EN2, EN3],
+  sessions: [EN1, EN2, EN3, EN4],
   sources: [
     { label: 'SEC LC Engineering HL marking scheme 2025 (examiner-reports/engineering/2025-marking-scheme)' },
   ],
   coverageNote:
-    'These sessions teach the general conventions — the “Any N” cap, the point+development split and separately-credited labels — which apply at both Higher and Ordinary level. Verified against the 2025 Higher Level scheme; level-specific worked questions are being added.',
+    'These sessions teach the general conventions — the “Any N” cap, the point+development split, separately-credited labels and the Practical’s Assembly/Function/Finish concept marks — which apply at both Higher and Ordinary level. Verified against the 2025 Higher Level scheme; level-specific worked questions are being added.',
 };
