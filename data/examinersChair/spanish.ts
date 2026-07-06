@@ -9,9 +9,17 @@
  * marking grammar (the no-lifting rule on the written essay, the Content-gates-
  * Language rule on Q5, the verbs-must-be-correct cap on production units, and
  * the exact-transcription rule on finding-a-phrase items) is the real SEC
- * system, cited to:
+ * system. Most sessions cite the 2025 scheme, but several standing rules are
+ * worded verbatim only in the earlier filed schemes, so those sessions are cited
+ * to the year where the quoted line actually appears (with a verified page):
  *  - SEC LC Spanish HL marking scheme 2025 —
  *    examiner-reports/spanish/2025-marking-scheme.*
+ *  - SEC LC Spanish HL marking scheme 2024 —
+ *    examiner-reports/spanish/2024-marking-scheme.* (Content/Language band
+ *    descriptors, the Q2 correct-tense rule, and the answer-both-only-higher rule)
+ *  - SEC LC Spanish HL marking scheme 2023 —
+ *    examiner-reports/spanish/2023-marking-scheme.* (the literature
+ *    discuss-don't-quote rule and the note-vs-letter development contrast)
  * The oral (Sp5) is a separate component; SEC does NOT publish a per-band oral
  * marking grid, so that session teaches only what the authoritative public
  * syllabus states — the oral's weighting, format and assessment criteria —
@@ -24,6 +32,11 @@
 import { type ChairSubject, type ScaleSession, type ScaleLevel } from './types';
 
 const MS = (p: string) => ({ label: `SEC Spanish HL marking scheme 2025, ${p}` });
+// Some standing rules are worded verbatim in the earlier filed schemes but NOT
+// in the 2025 one — those sessions cite the year where the quoted line actually
+// appears (see the header note), so the citation always resolves to a real page.
+const MS23 = (p: string) => ({ label: `SEC Spanish HL marking scheme 2023, ${p}` });
+const MS24 = (p: string) => ({ label: `SEC Spanish HL marking scheme 2024, ${p}` });
 // Oral criteria come from the SEC/NCCA syllabus, NOT the written marking scheme —
 // kept on its own helper so the two sources never blur.
 const ORAL = (p: string) => ({ label: `SEC/NCCA LC Spanish syllabus, ${p}` });
@@ -377,17 +390,437 @@ const SP7: ScaleSession = {
   },
 };
 
+// ─────────────── Sp8 · Literature — discuss, don't quote ───────────────
+
+const SP8: ScaleSession = {
+  mode: 'scale',
+  id: 'es-literature-discuss',
+  subject: 'spanish',
+  level: 'common',
+  title: 'Discuss the literature — don’t quote it back',
+  cue: 'Written comprehension (literature discussion)',
+  question:
+    'The prescribed-literature discussion (Q5, 12 marks) asks you to discuss three relevant points. A candidate makes three good points — but proves each one by quoting the lines straight from the extract. The item prints: “No marks awarded for answers supported by reference to the extract.” What does it score?',
+  questionNote:
+    'Scenario authored for this exercise. The literature discussion question carries a printed rule that answers supported by reference to the extract score nothing — verified verbatim in the 2023 scheme (p.5).',
+  scale: {
+    name: 'Literature Q5 · /12',
+    levels: two(0, 12),
+    notes: [
+      'The prescribed-literature discussion is 4 + 4 + 4 = 12: discuss any three relevant points.',
+      'The printed rule: “No marks awarded for answers supported by reference to the extract.”',
+      'You must discuss in your own words — quoting the passage back to “prove” a point earns nothing.',
+    ],
+    cite: MS23('p.5 (literature Q5: no marks for answers supported by reference to the extract)'),
+  },
+  scripts: [
+    {
+      id: 'sp8-a',
+      label: 'The discussion',
+      persona: 'Good points, propped on quotes',
+      work: [
+        'Makes three relevant points about the extract.',
+        'Backs each one up by quoting lines straight from the passage.',
+      ],
+      keyLevelId: 'm0',
+      keyNote:
+        'It scores nothing — the rule voids answers supported by reference to the extract, however sound the points. This question tests whether you can discuss and analyse in your own words, not whether you can copy the passage back. Make the point, then explain it yourself instead of quoting the text to do the work.',
+      embodies: {
+        behaviour: 'Supports each discussion point by quoting the extract, which the scheme scores at zero.',
+        cite: MS23('p.5'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-es8',
+    rule: 'Discuss the literature in your own words — quoting it back scores zero.',
+    detail:
+      'The Spanish literature discussion awards no marks for answers supported by reference to the extract. Make and explain your points yourself; copying the passage to prove them earns nothing on this question.',
+    cite: MS23('p.5'),
+  },
+};
+
+// ─────────────── Sp9 · The Content band — the Spanish-speaker test ───────────────
+
+const SP9: ScaleSession = {
+  mode: 'scale',
+  id: 'es-content-band',
+  subject: 'spanish',
+  level: 'common',
+  title: 'The Spanish-speaker test sets your Content band',
+  cue: 'Written production (Q5 Content band)',
+  question:
+    'The Q5 Content/Communication axis (25 marks) is picked by band, then a mark within it. The line between the bottom and middle bands is one operational test: MIDDLE = “comprehensible to Spanish speaker”, BOTTOM = “Spanish speaker would have difficulty understanding”. A candidate’s essay is on-task and a Spanish reader can follow it, though there is some irrelevant padding. Which band?',
+  questionNote:
+    'Scenario authored for this exercise. The band descriptors and the “Spanish speaker” comprehensibility line are the real Q5 Content/Communication scale, printed identically in the 2023 and 2024 schemes (verified verbatim on p.9 of 2024).',
+  scale: {
+    name: 'Q5 Content · /25',
+    levels: [
+      { id: 'bottom', label: 'Bottom — a Spanish speaker would struggle', annotation: 'B', marks: 8 },
+      { id: 'middle', label: 'Middle — comprehensible to a Spanish speaker', annotation: 'M', marks: 17 },
+      { id: 'top', label: 'Top — coherent, clearly argued, on-point', annotation: 'T', marks: 25 },
+    ],
+    notes: [
+      'The Content/Communication axis bands: BOTTOM 0–8, MIDDLE 9–17, TOP 18–25.',
+      'The bottom/middle line is one test: MIDDLE = “comprehensible to Spanish speaker”; BOTTOM = “Spanish speaker would have difficulty understanding”.',
+      'TOP adds high coherence, clear argumentation and “little or no irrelevant material”.',
+    ],
+    cite: MS24('p.9 (Q5 Content/Communication band descriptors)'),
+  },
+  scripts: [
+    {
+      id: 'sp9-a',
+      label: 'The essay',
+      persona: 'Followable, a bit padded',
+      work: [
+        'On-task and reasonably coherent — a Spanish reader follows the argument.',
+        'Carries some irrelevant padding along the way.',
+      ],
+      keyLevelId: 'middle',
+      keyNote:
+        'It lands in the middle band: a Spanish speaker can follow it and the intention is more or less fulfilled, but the padding and looser coherence keep it off the top. To climb, cut the irrelevant material and tighten the argument — the top band wants clear argumentation and little or no filler. Write to be understood first; that alone lifts you out of the bottom band.',
+      embodies: {
+        behaviour: 'Writes on-task, comprehensible Spanish with some irrelevant padding — a middle-band Content answer.',
+        cite: MS24('p.9'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-es9',
+    rule: 'Whether a Spanish speaker can follow you sets your Content band.',
+    detail:
+      'The Q5 Content axis is banded by comprehensibility: “comprehensible to Spanish speaker” is the middle band, difficulty understanding is the bottom. Write to be understood, then cut the irrelevant material — clarity and coherence carry you to the top.',
+    cite: MS24('p.9'),
+  },
+};
+
+// ─────────────── Sp10 · The Language band — verbs are the spine ───────────────
+
+const SP10: ScaleSession = {
+  mode: 'scale',
+  id: 'es-language-band',
+  subject: 'spanish',
+  level: 'common',
+  title: 'Verbs run down the middle of the Language band',
+  cue: 'Written production (Q5 Language band)',
+  question:
+    'The Q5 Language axis (25 marks) is also banded, and verbs run down the spine of it: BOTTOM = “most verbs incorrect”, MIDDLE = “verbs generally correct”, TOP = “correct usage of tenses”. A candidate writes with a decent range of vocabulary and gets most verbs right, with a few slips. Which Language band?',
+  questionNote:
+    'Scenario authored for this exercise. The Language band descriptors — verbs as the operational marker across the three bands — are the real Q5 Language scale, printed identically in the 2023 and 2024 schemes (verified verbatim on p.9 of 2024).',
+  scale: {
+    name: 'Q5 Language · /25',
+    levels: [
+      { id: 'bottom', label: 'Bottom — most verbs incorrect', annotation: 'B', marks: 8 },
+      { id: 'middle', label: 'Middle — verbs generally correct', annotation: 'M', marks: 17 },
+      { id: 'top', label: 'Top — idiomatic, tenses correct', annotation: 'T', marks: 25 },
+    ],
+    notes: [
+      'The Language axis bands: BOTTOM 0–8, MIDDLE 9–17, TOP 18–25.',
+      'Verbs are the spine: BOTTOM = “most verbs incorrect”, MIDDLE = “verbs generally correct”, TOP = “correct usage of tenses”.',
+      'The jump to the top band is idiomatic Spanish, a good range of vocabulary and correct tenses throughout.',
+    ],
+    cite: MS24('p.9 (Q5 Language band descriptors)'),
+  },
+  scripts: [
+    {
+      id: 'sp10-a',
+      label: 'The essay',
+      persona: 'Verbs mostly right',
+      work: [
+        'A decent range of vocabulary, generally adequate and appropriate.',
+        'Most verbs correct, with a few slips and not too many spelling mistakes.',
+      ],
+      keyLevelId: 'middle',
+      keyNote:
+        'It sits in the middle Language band: “verbs generally correct” is the middle descriptor exactly. The top band needs correct usage of tenses throughout plus idiomatic Spanish, so those few verb slips are what hold it down. Drill your verb forms and tenses — they are the single marker that moves you up this axis.',
+      embodies: {
+        behaviour: 'Writes with good vocabulary and generally-correct verbs plus a few slips — a middle-band Language answer.',
+        cite: MS24('p.9'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-es10',
+    rule: 'Your verb accuracy sets your Language band.',
+    detail:
+      'The Q5 Language axis is banded on verbs: “most verbs incorrect” is the bottom, “verbs generally correct” the middle, correct tenses the top. Tighten your verb forms and tenses — they are the marker that climbs this axis.',
+    cite: MS24('p.9'),
+  },
+};
+
+// ─────────────── Sp11 · The note needs the point made, not developed ───────────────
+
+const SP11: ScaleSession = {
+  mode: 'scale',
+  id: 'es-note-development',
+  subject: 'spanish',
+  level: 'common',
+  title: 'Develop the letter; the note just needs the point made',
+  cue: 'Written production (Section C note/diary)',
+  question:
+    'The Section C note/diary is 20 marks: four points to communicate, max 5 each. Its instruction says “development of points not necessarily essential” — unlike the letter, where “each point should be developed and expanded”. A candidate communicates all four note points clearly, verbs correct, but each is short and undeveloped. What can each point score?',
+  questionNote:
+    'Scenario authored for this exercise. The note/diary’s “development not necessarily essential” rule (p.11) and the letter’s “developed and expanded” requirement (p.10) are printed in the Section C guidelines of the 2023 scheme.',
+  scale: {
+    name: 'Note point · /5',
+    levels: two(0, 5),
+    notes: [
+      'The note/diary is four points × max 5, and its rule reads “Development of points not necessarily essential.”',
+      'That is the opposite of the letter, where “each point should be developed and expanded”.',
+      'A short, clear point with correct verbs can take full marks on the note — bareness is not penalised here.',
+    ],
+    cite: MS23('p.11 (note/diary: development not essential), p.10 (letter: developed and expanded)'),
+  },
+  scripts: [
+    {
+      id: 'sp11-a',
+      label: 'The note',
+      persona: 'Terse but correct',
+      work: [
+        'Communicates all four note points clearly.',
+        'Each is short and undeveloped, verbs correct.',
+      ],
+      keyLevelId: 'm5',
+      keyNote:
+        'Each point can score full marks — the note explicitly does not require development, so clear communication with correct verbs is enough. Save the developing-and-expanding for the letter, where it is required; on the note, spending extra time padding points earns you nothing. Make the four points cleanly, get the verbs right, and move on.',
+      embodies: {
+        behaviour: 'Makes bare but clear note points with correct verbs, which score full where development is not required.',
+        cite: MS23('p.11'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-es11',
+    rule: 'Develop the letter; the note just needs each point made.',
+    detail:
+      'Section C splits its two production rules: the letter’s points must be “developed and expanded”, but on the note/diary “development of points is not necessarily essential”. Develop where it’s required and keep the note clean and correct — extra padding there earns nothing.',
+    cite: MS23('p.10'),
+  },
+};
+
+// ─────────────── Sp12 · One correct point banks the biggest slice ───────────────
+
+const SP12: ScaleSession = {
+  mode: 'scale',
+  id: 'es-first-correct',
+  subject: 'spanish',
+  level: 'common',
+  title: 'One correct point still banks the biggest slice',
+  cue: 'Written comprehension (4+3+3 items)',
+  question:
+    'A comprehension question wants three points and splits the marks 4 + 3 + 3 = 10, printed “First correct answer = 4m”. A candidate is sure of only one of the three points and writes just that one, correctly. What does it score?',
+  questionNote:
+    'Scenario authored for this exercise. The “First correct answer = 4m” ordering rule on 4+3+3 items is printed across the comprehension sections of the 2023, 2024 and 2025 schemes.',
+  scale: {
+    name: '4+3+3 item · /10',
+    levels: [
+      { id: 'none', label: '0 — no correct point', annotation: '0', marks: 0 },
+      { id: 'one', label: '4 — one correct point', annotation: '4', marks: 4 },
+      { id: 'two', label: '7 — two correct points', annotation: '7', marks: 7 },
+      { id: 'three', label: '10 — all three', annotation: '10', marks: 10 },
+    ],
+    notes: [
+      'These items split 4 + 3 + 3 and print “First correct answer = 4m”.',
+      'The credit is front-loaded: the first correct point earns 4, not a flat third of 10.',
+      'So even a single correct point banks 4 marks — never leave one of these blank.',
+    ],
+    cite: MS('p.5 (4+3+3 comprehension items: first correct answer = 4m)'),
+  },
+  scripts: [
+    {
+      id: 'sp12-a',
+      label: 'The item',
+      persona: 'Sure of just one',
+      work: [
+        'Confident about only one of the three points wanted.',
+        'Writes that single point, correctly, and leaves the rest.',
+      ],
+      keyLevelId: 'one',
+      keyNote:
+        'It scores 4 — the first correct point takes the biggest slice, not a flat third of the marks. That means attempting even one point you are sure of banks 4 out of 10 here, so these items should never be left blank. Write what you know; the marking rewards the first correct point disproportionately.',
+      embodies: {
+        behaviour: 'Answers only the one point they are sure of, banking the front-loaded 4 marks.',
+        cite: MS('p.5'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-es12',
+    rule: 'One correct point still banks the biggest slice — never leave these blank.',
+    detail:
+      'On 4+3+3 comprehension items the first correct point earns 4, not a flat third. Even a single point you are sure of banks 4 out of 10, so always write what you know rather than leaving the item empty.',
+    cite: MS('p.5'),
+  },
+};
+
+// ─────────────── Sp13 · Finish the idea — partial answers earn partial marks ───────────────
+
+const SP13: ScaleSession = {
+  mode: 'scale',
+  id: 'es-graded-credit',
+  subject: 'spanish',
+  level: 'common',
+  title: 'Finish the idea — half an answer earns half the marks',
+  cue: 'Written comprehension (graded credit)',
+  question:
+    'A 4-mark comprehension point carries a printed breakdown: the complete idea (what makes Spain a unique, welcoming country that keeps attracting people) = 4m; “It makes Spain unique/welcoming” = 2m; “Spain is unique only” = 1m. A candidate writes only “Spain is unique.” What does it score?',
+  questionNote:
+    'Scenario authored for this exercise. The graded partial-credit ladder inside comprehension points (e.g. the 2025 Section A Q1(e) breakdown) is printed in the scheme — half an idea earns a fraction of the marks.',
+  scale: {
+    name: 'Graded point · /4',
+    levels: [
+      { id: 'wrong', label: '0 — not the idea', annotation: '0', marks: 0 },
+      { id: 'part1', label: '1 — “Spain is unique” only', annotation: '1', marks: 1 },
+      { id: 'part2', label: '2 — unique/welcoming', annotation: '2', marks: 2 },
+      { id: 'full', label: '4 — the complete idea', annotation: '4', marks: 4 },
+    ],
+    notes: [
+      'Some comprehension points carry a printed partial-credit ladder inside them.',
+      'Here: the complete idea = 4m; “It makes Spain unique/welcoming” = 2m; “Spain is unique only” = 1m.',
+      'Half an idea earns a fraction of the marks — completeness is scored, not just the right direction.',
+    ],
+    cite: MS('p.6 (Section A Q1(e) graded partial credit: unique/welcoming 2m, unique only 1m)'),
+  },
+  scripts: [
+    {
+      id: 'sp13-a',
+      label: 'The point',
+      persona: 'Half the idea',
+      work: [
+        'Heads in the right direction with “Spain is unique”.',
+        'Stops there — leaves out the “welcoming, keeps attracting people” half.',
+      ],
+      keyLevelId: 'part1',
+      keyNote:
+        'It scores 1 of 4 — “Spain is unique only” is the lowest rung of the printed ladder. The examiner marks completeness, not just the right direction, so stopping halfway costs three of the four marks. When a comprehension point is worth several marks, finish the whole idea rather than the first clause of it.',
+      embodies: {
+        behaviour: 'Gives only the first clause of a graded point, earning the lowest rung of the printed ladder.',
+        cite: MS('p.6'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-es13',
+    rule: 'Finish the idea — partial answers earn partial marks.',
+    detail:
+      'Spanish comprehension points often carry a printed partial-credit ladder: half an idea scores a fraction of the marks. When a point is worth several marks, complete the whole idea rather than stopping at the first clause.',
+    cite: MS('p.6'),
+  },
+};
+
+// ─────────────── Sp14 · Get the tense right on the manipulation items ───────────────
+
+const SP14: ScaleSession = {
+  mode: 'scale',
+  id: 'es-tense-manipulation',
+  subject: 'spanish',
+  level: 'common',
+  title: 'The tense items: meaning alone won’t earn the mark',
+  cue: 'Written comprehension (tense-manipulation items)',
+  question:
+    'The Section B Q2 items (5 marks each, awarded whole) ask you to render sentences from the text, and print “Correct tense required for full marks”. A candidate captures the meaning of the sentence but puts the verb in the wrong tense. What does the 5-mark item score?',
+  questionNote:
+    'Scenario authored for this exercise. The Section B Q2 items are single 5-mark blocks with the printed rule “Correct tense required for full marks”, verified verbatim in the 2023 and 2024 schemes (p.8 of 2024).',
+  scale: {
+    name: 'Q2 tense item · /5',
+    levels: two(0, 5),
+    notes: [
+      'These 5-mark items are awarded whole and carry the rule “Correct tense required for full marks”.',
+      'They test whether you can render the sentence in the right tense — capturing the meaning is not enough on its own.',
+      'A right idea in the wrong tense fails the requirement, so the mark is withheld.',
+    ],
+    cite: MS24('p.8 (Section B Q2: correct tense required for full marks)'),
+  },
+  scripts: [
+    {
+      id: 'sp14-a',
+      label: 'The item',
+      persona: 'Right meaning, wrong tense',
+      work: [
+        'Captures the meaning of the sentence from the text.',
+        'Renders the verb in the wrong tense.',
+      ],
+      keyLevelId: 'm0',
+      keyNote:
+        'The mark is withheld — these items require the correct tense for full marks, and there is no partial credit printed on a single 5-mark block. Getting the gist is not the task; rendering it in the right tense is. Read exactly which tense the text uses and match it before you commit the answer.',
+      embodies: {
+        behaviour: 'Renders a Q2 sentence with the right meaning but the wrong tense, failing the tense requirement.',
+        cite: MS24('p.8'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-es14',
+    rule: 'On the tense items, get the tense right — meaning alone won’t earn the mark.',
+    detail:
+      'The Section B Q2 items are marked whole and require the correct tense for full marks. A right idea in the wrong tense fails the requirement — match the tense the text uses before committing your answer.',
+    cite: MS24('p.8'),
+  },
+};
+
+// ─────────────── Sp15 · Pick one Section C option and commit ───────────────
+
+const SP15: ScaleSession = {
+  mode: 'scale',
+  id: 'es-both-parts',
+  subject: 'spanish',
+  level: 'common',
+  title: 'Answer both options and only the higher one counts',
+  cue: 'Written production (Section C choice)',
+  question:
+    'Section C asks you to attempt either Q1(a) or Q1(b) — one 30-mark task. A nervous candidate writes BOTH: a weaker dialogue and a stronger letter. The scheme says both are marked and “marks will be awarded only for the higher scoring of the two”. If the dialogue would score 20 and the letter 27, what is awarded?',
+  questionNote:
+    'Scenario authored for this exercise; the 20 and 27 are illustrative script marks. The rule — both attempts marked, only the higher counts — is printed in the Section C guidelines of the 2023 and 2024 schemes (p.10 of 2024).',
+  scale: {
+    name: 'Section C choice · /30',
+    levels: two(20, 27),
+    notes: [
+      'You choose one of (a)/(b). If you answer both, “both must be marked and marks will be awarded only for the higher scoring of the two”.',
+      'Doing both does not add up, and does not hurt — but it splits your time across two answers.',
+      'You are better off committing to one task and making it your strongest.',
+    ],
+    cite: MS24('p.10 (Section C: if both attempted, only the higher scores)'),
+  },
+  scripts: [
+    {
+      id: 'sp15-a',
+      label: 'The choice',
+      persona: 'Hedges with both',
+      work: [
+        'Writes a weaker dialogue that would score 20.',
+        'Also writes a stronger letter that would score 27.',
+      ],
+      keyLevelId: 'm27',
+      keyNote:
+        'You are awarded 27 — only the higher-scoring attempt counts, so the weaker dialogue earns nothing extra. Hedging by writing both does not add the marks together; it just spends the time you needed to make one answer excellent. Pick the option you are strongest at and put all of it there.',
+      embodies: {
+        behaviour: 'Attempts both Section C options, so only the higher-scoring answer is credited.',
+        cite: MS24('p.10'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-es15',
+    rule: 'Pick one Section C option and commit — a second answer only costs you time.',
+    detail:
+      'If you attempt both (a) and (b) of a Section C question, both are marked but “only the higher scoring of the two” counts. Writing both never adds up — choose the task you are strongest at and spend all your time making that one answer excellent.',
+    cite: MS24('p.10'),
+  },
+};
+
 export const SPANISH_CHAIR: ChairSubject = {
   id: 'spanish',
   label: 'Spanish',
   tagline:
-    'No lifting, content-before-language, the verb gate, the right answer-language — and an oral that rewards real conversation.',
+    'No lifting, content-before-language, the verb and tense gates, the two-axis bands, front-loaded partial credit, the right answer-language — and an oral that rewards real conversation.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [SP1, SP2, SP3, SP4, SP5, SP6, SP7],
+  sessions: [SP1, SP2, SP3, SP4, SP5, SP6, SP7, SP8, SP9, SP10, SP11, SP12, SP13, SP14, SP15],
   sources: [
     { label: 'SEC LC Spanish HL marking scheme 2025 (examiner-reports/spanish/2025-marking-scheme)' },
+    { label: 'SEC LC Spanish HL marking scheme 2024 (examiner-reports/spanish/2024-marking-scheme)' },
+    { label: 'SEC LC Spanish HL marking scheme 2023 (examiner-reports/spanish/2023-marking-scheme)' },
     { label: 'SEC/NCCA LC Spanish syllabus, Ordinary & Higher (examiner-reports/spanish/spanish-syllabus)' },
   ],
   coverageNote:
-    'The written-paper sessions (no-lifting, content-gates-language, verb gate, exact transcription, the aural answer-in-English half-marks rule, and the Spanish-only opinion item) apply at both Higher and Ordinary level, verified against the 2025 Higher Level scheme. The oral session (Sp5) teaches the syllabus-defined weighting, format and assessment criteria of the Speaking component (SEC does not publish a per-band oral grid, so no internal cut-points are asserted). Level-specific worked examples are being added.',
+    'The fourteen written-paper sessions — no-lifting, content-gates-language, the Section C verb gate, exact transcription, the aural answer-in-English half-marks rule, the Spanish-only opinion item, the literature discuss-don’t-quote rule, the Q5 Content and Language band scales, the note-vs-letter development contrast, front-loaded and graded partial credit, the Q2 correct-tense gate, and the answer-both-only-higher-scores rule — are the real SEC marking grammar and apply at both Higher and Ordinary level. Most are cited to the 2025 Higher Level scheme; the standing rules worded verbatim only in the earlier filed schemes are cited to the year where the quoted line actually appears (the Q5 band scales, the Q2 correct-tense gate and the answer-both rule to 2024; the literature discuss-don’t-quote rule and the note-vs-letter contrast to 2023, both with verified pages). The oral session (Sp5) teaches the syllabus-defined weighting, format and assessment criteria of the Speaking component (SEC does not publish a per-band oral grid, so no internal cut-points are asserted). Level-specific worked examples are being added.',
 };
