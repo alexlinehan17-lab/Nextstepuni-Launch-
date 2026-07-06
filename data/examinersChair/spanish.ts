@@ -277,16 +277,117 @@ const SP5: ScaleSession = {
   },
 };
 
+// ─────────────── Sp6 · Answer the aural in English ───────────────
+
+const SP6: ScaleSession = {
+  mode: 'scale',
+  id: 'es-aural-language',
+  subject: 'spanish',
+  level: 'common',
+  title: 'Answer the aural in English',
+  cue: 'Listening comprehension (aural)',
+  question:
+    'The Listening test is worth 80 marks and must be answered in English. A strong candidate hears everything correctly and writes answers that would earn full marks — but writes them in Spanish. How does that score?',
+  questionNote:
+    'Scenario authored for this exercise. The aural carries a printed language rule: answers must be in English, and a whole test/section answered in Spanish is marked as normal and then halved.',
+  scale: {
+    name: 'Aural · /80',
+    levels: two(40, 80),
+    notes: [
+      'Aural general rule: “All answers must be in English.”',
+      'Wrong-language penalty: “If the entire test/section is answered in Spanish: mark as per Marking Scheme and award half of the marks gained.”',
+      'So correct content written in Spanish is first marked normally, then cut in half — an 80 becomes 40.',
+    ],
+    cite: MS('p.12 (aural: answer in English; Spanish answers marked then halved)'),
+  },
+  scripts: [
+    {
+      id: 'sp6-a',
+      label: 'The aural',
+      persona: 'Right answers, wrong language',
+      work: [
+        'Hears every item correctly.',
+        'Writes answers that would earn full marks — but writes them in Spanish, not English.',
+      ],
+      keyLevelId: 'm40',
+      keyNote:
+        'The content is marked as normal and then halved, because the aural must be answered in English. Perfect comprehension in the wrong language throws away half the section for nothing. Read the instruction: the Listening answers go in English — it costs you nothing to comply and half the marks to forget.',
+      embodies: {
+        behaviour: 'Answers the aural correctly but in Spanish, triggering the half-marks language penalty.',
+        cite: MS('p.12'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-es6',
+    rule: 'The aural is answered in English — Spanish answers are halved.',
+    detail:
+      'The Spanish Listening test must be answered in English; a whole section answered in Spanish is marked and then cut to half the marks gained. Correct answers in the wrong language lose half the section — write your aural answers in English.',
+    cite: MS('p.12'),
+  },
+};
+
+// ─────────────── Sp7 · The opinion question must be in Spanish ───────────────
+
+const SP7: ScaleSession = {
+  mode: 'scale',
+  id: 'es-opinion-spanish',
+  subject: 'spanish',
+  level: 'common',
+  title: 'The opinion question must be in Spanish',
+  cue: 'Written comprehension (opinion item)',
+  question:
+    'Most comprehension answers are written in English — but the short 6-mark opinion question at the end of a reading text is different. A candidate gives a thoughtful, on-point opinion — written in English. What does it score?',
+  questionNote:
+    'Scenario authored for this exercise. The comprehension opinion item is the one reading answer that must be given in Spanish; the scheme prints that English answers score nothing on it.',
+  scale: {
+    name: 'Opinion item · /6',
+    levels: two(0, 6),
+    notes: [
+      'Comprehension answers are written in English — except this opinion item.',
+      'The printed rule: “Any mark from 0 to 6 may be awarded for this question. No marks for answers in English.”',
+      'So a good opinion written in English scores 0 — the language, not the idea, is the gate.',
+    ],
+    cite: MS('p.6 (opinion item: no marks for answers in English)'),
+  },
+  scripts: [
+    {
+      id: 'sp7-a',
+      label: 'The opinion',
+      persona: 'Good point, wrong language',
+      work: [
+        'Gives a thoughtful, relevant opinion on the text.',
+        'Writes it in English — like the rest of the comprehension answers.',
+      ],
+      keyLevelId: 'm0',
+      keyNote:
+        '0 — the opinion item awards no marks for answers in English, however good the point. This is the one reading answer that flips to Spanish, so the reflex of answering comprehension in English costs you the whole item here. Spot the “answer in Spanish” instruction and switch languages for it.',
+      embodies: {
+        behaviour: 'Answers the Spanish-only opinion item in English, which the scheme scores at zero.',
+        cite: MS('p.6'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-es7',
+    rule: 'Answer the opinion question in Spanish, not English.',
+    detail:
+      'Most Spanish comprehension answers are written in English, but the short opinion item is the exception: it awards no marks for answers in English. Watch for the “answer in Spanish” instruction — the one reading question where writing in English scores zero.',
+    cite: MS('p.6'),
+  },
+};
+
 export const SPANISH_CHAIR: ChairSubject = {
   id: 'spanish',
   label: 'Spanish',
-  tagline: 'No lifting, content-before-language, the verb gate — and an oral that rewards real conversation.',
+  tagline:
+    'No lifting, content-before-language, the verb gate, the right answer-language — and an oral that rewards real conversation.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [SP1, SP2, SP3, SP4, SP5],
+  sessions: [SP1, SP2, SP3, SP4, SP5, SP6, SP7],
   sources: [
     { label: 'SEC LC Spanish HL marking scheme 2025 (examiner-reports/spanish/2025-marking-scheme)' },
     { label: 'SEC/NCCA LC Spanish syllabus, Ordinary & Higher (examiner-reports/spanish/spanish-syllabus)' },
   ],
   coverageNote:
-    'The written-paper sessions (no-lifting, content-gates-language, verb gate, exact transcription) apply at both Higher and Ordinary level, verified against the 2025 Higher Level scheme. The oral session (Sp5) teaches the syllabus-defined weighting, format and assessment criteria of the Speaking component (SEC does not publish a per-band oral grid, so no internal cut-points are asserted). Level-specific worked examples are being added.',
+    'The written-paper sessions (no-lifting, content-gates-language, verb gate, exact transcription, the aural answer-in-English half-marks rule, and the Spanish-only opinion item) apply at both Higher and Ordinary level, verified against the 2025 Higher Level scheme. The oral session (Sp5) teaches the syllabus-defined weighting, format and assessment criteria of the Speaking component (SEC does not publish a per-band oral grid, so no internal cut-points are asserted). Level-specific worked examples are being added.',
 };

@@ -11,6 +11,8 @@
  * system, cited to:
  *  - SEC LC Mathematics marking scheme 2023, Ordinary Level (Paper 2 portion) —
  *    examiner-reports/maths/2023-marking-scheme-ol-p2.*
+ *  - SEC LC Mathematics marking scheme 2024, Higher Level (Papers 1 & 2) —
+ *    examiner-reports/maths/2024-hl-marking-scheme.*
  *  - Chief Examiner's Report, Mathematics 2015 — examiner-reports/maths/2015-*
  * Claim-by-claim record: compliance/evidence/examinersChair.md.
  */
@@ -18,6 +20,7 @@
 import { type ChairSubject, type ScaleSession, type ScaleLevel } from './types';
 
 const MS23 = (p: string) => ({ label: `SEC Mathematics OL marking scheme 2023, ${p}` });
+const MS24 = (p: string) => ({ label: `SEC Mathematics HL marking scheme 2024, ${p}` });
 const CER15 = (p: string) => ({ label: `Chief Examiner's Report, Mathematics 2015, ${p}` });
 const MSFL = (p: string) => ({ label: `SEC Mathematics Foundation marking scheme 2025, ${p}` });
 
@@ -41,6 +44,15 @@ const SCALE_15D: ScaleLevel[] = [
   { id: 'mid', label: 'Mid partial credit', annotation: 'M', marks: 8 },
   { id: 'high', label: 'High partial credit', annotation: 'H', marks: 12 },
   { id: 'full', label: 'Full credit', annotation: '✓', marks: 15 },
+];
+// 10-mark D scale (five categories), verified from the 2024 HL scale table
+// (marking scheme p.[4]): "10 mark scales … 0, 3, 5, 7, 10".
+const SCALE_10D: ScaleLevel[] = [
+  { id: 'none', label: 'No credit', annotation: '✗', marks: 0 },
+  { id: 'low', label: 'Low partial credit', annotation: 'L', marks: 3 },
+  { id: 'mid', label: 'Mid partial credit', annotation: 'M', marks: 5 },
+  { id: 'high', label: 'High partial credit', annotation: 'H', marks: 7 },
+  { id: 'full', label: 'Full credit', annotation: '✓', marks: 10 },
 ];
 
 // ─────────────────────────── M1 · The ladder ───────────────────────────
@@ -415,16 +427,177 @@ const M5: ScaleSession = {
   },
 };
 
+// ───────────── M6 · Higher — the oversimplify ceiling ─────────────
+
+const M6: ScaleSession = {
+  mode: 'scale',
+  id: 'maths-oversimplify',
+  subject: 'maths',
+  level: 'higher',
+  title: 'The oversimplify ceiling',
+  cue: 'Solve',
+  question: 'Find the values of x for which x² − 5x + 6 ≤ 0.',
+  questionNote:
+    'Question authored for this exercise; the ladder and the “oversimplify → low partial credit at most” cap mirror the SEC 2024 HL scheme’s quadratic-inequality question (Q10(b)), which used Scale 10D with the note “For a linear inequality, award low partial credit at most”.',
+  scale: {
+    name: '10D',
+    levels: SCALE_10D,
+    notes: [
+      'Correct answer: (x − 2)(x − 3) ≤ 0, so the quadratic is below zero between the roots — 2 ≤ x ≤ 3.',
+      'Low partial credit: work of merit — the inequality rearranged to standard form, or one value trialled.',
+      'Mid partial credit: the quadratic factorised (or the quadratic formula fully substituted).',
+      'High partial credit: the roots found — x = 2 and x = 3.',
+      'Full credit: the correct solution set, 2 ≤ x ≤ 3.',
+      'Oversimplify cap: if the squared term is dropped and a LINEAR inequality solved, award low partial credit at most — however cleanly it finishes.',
+    ],
+    cite: MS24('p.[26] (Q10(b) inequality ladder and the “linear inequality → low partial credit at most” cap); “Oversimplify” annotation p.[5]; scale table p.[4]'),
+  },
+  scripts: [
+    {
+      id: 'm6-a',
+      label: 'Script A',
+      persona: 'Drops the square',
+      work: ['x² − 5x + 6 ≤ 0', '−5x + 6 ≤ 0', '−5x ≤ −6', 'x ≥ 6/5'],
+      keyLevelId: 'low',
+      keyNote:
+        'The squared term is simply dropped and a linear inequality solved — cleanly, even. But turning a quadratic inequality into a linear one is oversimplifying, and the scheme caps oversimplified work at low partial credit however tidy the finish: 3/10. The clean algebra after the shortcut earns nothing extra — the ceiling was set the moment the x² went missing.',
+      embodies: {
+        behaviour: 'Oversimplifies — solves a linear inequality in place of the quadratic — which the scheme caps at low partial credit at most.',
+        cite: MS24('p.[26]'),
+      },
+    },
+    {
+      id: 'm6-b',
+      label: 'Script B',
+      persona: 'Factorises, then stops',
+      work: ['x² − 5x + 6 ≤ 0', '(x − 2)(x − 3) ≤ 0'],
+      keyLevelId: 'mid',
+      keyNote:
+        'The quadratic is kept whole and factorised correctly — genuine progress on the real problem, not a shortcut around it. Factorising is mid partial credit: 5/10. Two rungs above Script A for doing strictly less arithmetic, because it engaged the quadratic instead of dodging it.',
+    },
+    {
+      id: 'm6-c',
+      label: 'Script C',
+      persona: 'Right roots, wrong direction',
+      work: ['(x − 2)(x − 3) ≤ 0', 'x = 2, x = 3', 'x ≤ 2 or x ≥ 3'],
+      keyLevelId: 'high',
+      keyNote:
+        'Both roots found — high partial credit, 7/10 — but the solution set points the wrong way. For ≤ 0 the quadratic sits below the axis BETWEEN the roots, so it is 2 ≤ x ≤ 3, not outside them. “Roots of quadratic found” is the high rung; the final direction is the last mark.',
+    },
+    {
+      id: 'm6-d',
+      label: 'Script D',
+      persona: 'All the way',
+      work: ['x² − 5x + 6 ≤ 0', '(x − 2)(x − 3) ≤ 0', 'x = 2, x = 3', '2 ≤ x ≤ 3'],
+      keyLevelId: 'full',
+      keyNote: 'Kept the quadratic, factorised, found the roots, and read the correct interval between them. 10/10.',
+    },
+  ],
+  takeaway: {
+    id: 'codex-m6',
+    rule: 'Oversimplifying caps your marks — no clean finish can lift it.',
+    detail:
+      'When you drop a term or downgrade a quadratic to a linear problem, the scheme sets a ceiling — low partial credit at most — before you write another line. Solve the problem you were actually given, even if it is harder: a messy attempt at the real question outscores a tidy solution to an easier one.',
+    cite: MS24('p.[26]'),
+  },
+};
+
+// ─────────── M7 · Higher — when the question names the method ───────────
+
+const M7: ScaleSession = {
+  mode: 'scale',
+  id: 'maths-first-principles',
+  subject: 'maths',
+  level: 'higher',
+  title: 'When the question names the method',
+  cue: 'Differentiate from first principles',
+  question: 'Differentiate f(x) = x² − 7x − 10 from first principles.',
+  questionNote:
+    'Question adapted from the SEC 2024 HL scheme’s first-principles item (Q4(a), f(x) = x² − 7x − 10); the Scale 10D ladder and the note “No credit if first principles is not used” are the real ones.',
+  scale: {
+    name: '10D',
+    levels: SCALE_10D,
+    notes: [
+      'No credit if first principles is not used — a correct derivative reached by the power rule scores zero here.',
+      'Low partial credit: work of merit — e.g. f(x + h) written down.',
+      'Mid partial credit: f(x + h) expanded correctly, or f(x + h) − f(x) left unsimplified.',
+      'High partial credit: f(x + h) − f(x) = 2hx + h² − 7h, or the complete difference quotient without the limit line.',
+      'Full credit: the full first-principles derivation, ending f′(x) = 2x − 7.',
+    ],
+    cite: MS24('p.[13] (Q4(a) first-principles notes and the “No credit if first principles is not used” gate); scale table p.[4]'),
+  },
+  scripts: [
+    {
+      id: 'm7-a',
+      label: 'Script A',
+      persona: 'Right answer, forbidden method',
+      work: ['f(x) = x² − 7x − 10', 'f′(x) = 2x − 7'],
+      keyLevelId: 'none',
+      keyNote:
+        'The derivative is exactly right — but it was written straight down by the power rule, and the question said “from first principles”. The scheme’s note is blunt: No credit if first principles is not used. 0/10 for a correct answer, because the method was the thing being tested. When a question names a method, that method IS the marks.',
+      embodies: {
+        behaviour: 'Reaches the correct derivative by the power rule rather than the prescribed first-principles method, which the scheme gates to zero.',
+        cite: MS24('p.[13]'),
+      },
+    },
+    {
+      id: 'm7-b',
+      label: 'Script B',
+      persona: 'Starts it properly',
+      work: ['f(x + h) = (x + h)² − 7(x + h) − 10'],
+      keyLevelId: 'low',
+      keyNote:
+        'One correct first-principles line — f(x + h) written out — is work of merit and clears the zero-gate because it uses the prescribed method: low partial credit, 3/10. Script A did far more algebra and scored nothing; this did one honest line the right way and banks 3.',
+    },
+    {
+      id: 'm7-c',
+      label: 'Script C',
+      persona: 'Halfway down',
+      work: [
+        'f(x + h) = (x + h)² − 7(x + h) − 10',
+        '= x² + 2hx + h² − 7x − 7h − 10',
+        'f(x + h) − f(x) = (x² + 2hx + h² − 7x − 7h − 10) − (x² − 7x − 10)',
+      ],
+      keyLevelId: 'mid',
+      keyNote:
+        'f(x + h) is expanded correctly and the difference f(x + h) − f(x) is set up but not yet simplified. The scheme lists “f(x + h) expanded correctly” and “f(x + h) − f(x) unsimplified” as mid partial credit: 5/10. Halfway down the derivation, half the marks.',
+    },
+    {
+      id: 'm7-d',
+      label: 'Script D',
+      persona: 'Full derivation',
+      work: [
+        'f(x + h) − f(x) = 2hx + h² − 7h',
+        '[f(x + h) − f(x)] / h = 2x + h − 7',
+        'lim (h→0) (2x + h − 7) = 2x − 7',
+        'f′(x) = 2x − 7',
+      ],
+      keyLevelId: 'full',
+      keyNote:
+        'The full first-principles chain — form the difference, divide by h, take the limit as h → 0 — ending at 2x − 7. 10/10. The same answer as Script A, but earned the way the question demanded.',
+    },
+  ],
+  takeaway: {
+    id: 'codex-m7',
+    rule: 'When the question names the method, the method is the marks.',
+    detail:
+      '“From first principles”, “using de Moivre’s theorem”, “by integration” are not suggestions — the scheme gates these questions to zero if you reach the answer another way. Read the instruction word before you start, and use the tool it names even if a faster one exists.',
+    cite: MS24('p.[13]'),
+  },
+};
+
 export const MATHS_CHAIR: ChairSubject = {
   id: 'maths',
   label: 'Mathematics',
   tagline: 'Scales, steps and stars — how maths scripts are really graded.',
   offeredLevels: ['higher', 'ordinary', 'foundation'],
-  sessions: [M1, M2, M3, M4, M5],
+  sessions: [M1, M2, M3, M4, M5, M6, M7],
   sources: [
     { label: 'SEC LC Mathematics OL marking scheme 2023, Paper 2 portion (examiner-reports/maths/2023-marking-scheme-ol-p2)' },
+    { label: 'SEC LC Mathematics HL marking scheme 2024, Papers 1 & 2 (examiner-reports/maths/2024-hl-marking-scheme)' },
+    { label: 'SEC LC Mathematics Foundation marking scheme 2025 (examiner-reports/maths/2025-foundation-marking-scheme)' },
     { label: 'Chief Examiner’s Report, Mathematics 2015 (examiner-reports/maths/2015-chief-examiner)' },
   ],
   coverageNote:
-    'Maths is marked on the same scale system — A–D scales, the partial-credit ladders, work-of-merit and Full Credit −1 — at Higher, Ordinary and Foundation level, so these sessions teach the system that applies at every level. The example questions are pitched around Ordinary Level; harder HL-specific worked examples are being added.',
+    'Maths is marked on the same scale system — A–D scales, the partial-credit ladders, work-of-merit and Full Credit −1 — at Higher, Ordinary and Foundation level, so these sessions teach the system that applies at every level. The shared-convention sessions are pitched around Ordinary Level; two Higher Level sessions (the oversimplify ceiling and the named-method gate) are drawn from the 2024 HL scheme, and one Foundation session from the 2025 scheme.',
 };

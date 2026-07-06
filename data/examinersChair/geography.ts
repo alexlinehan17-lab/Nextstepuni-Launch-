@@ -336,17 +336,153 @@ const GEO5: GridSession = {
   },
 };
 
+// ───────────────── Geo6 · OS sketch-map skills marks ─────────────────
+
+const GEO6: GridSession = {
+  mode: 'grid',
+  id: 'geo-sketch-map',
+  subject: 'geography',
+  level: 'higher',
+  title: 'Show it AND label it',
+  cue: 'OS map (Part A)',
+  question:
+    'On the 20-mark Ordnance Survey question, a candidate must draw a half-scale sketch and “correctly show and label” four features. Each feature is worth 4 marks: Shown 3 (graded) + Label 1. How do three ways of drawing the same feature score?',
+  questionNote:
+    'Question authored for this exercise. The Part A OS sketch grid is real: “Sketch Outline 4 marks; 4 features @ 4 marks each — Shown 3 marks (graded 3/1/0), Label 1 mark”, with the showing/labelling interdependence rules quoted from the 2025 scheme.',
+  grid: {
+    perPoint: [
+      { id: 'shown', label: 'Shown (feature located on the sketch)', marks: 3 },
+      { id: 'label', label: 'Label', marks: 1 },
+    ],
+    shorthand: 'per feature · Shown 3 + Label 1',
+    ruleNote:
+      'Showing and labelling are locked together. “If not labelled, 0 marks for showing” — so an unlabelled feature scores nothing, however accurately it is drawn. But a labelled feature that was traced (or drawn from only a section of the map) keeps its label mark: “lose … 3 marks for showing per item. Allow labelling marks only.” Using the aerial photograph instead of the OS map scores 0 for the whole sketch.',
+    cite: MS('p.5 (Part A OS sketch grid and rules)'),
+  },
+  scripts: [
+    {
+      id: 'geo6-a',
+      label: 'Script A',
+      persona: 'Perfectly placed — no label',
+      attempts: [
+        {
+          id: 'geo6-a-1',
+          text: 'Draws the river’s course in exactly the right place on the sketch, accurate and proportionate — but never writes its name beside it or in a key.',
+          key: { shown: 0, label: 0 },
+          keyNote:
+            'The scheme is blunt: “If not labelled, 0 marks for showing.” No label means the 3 showing marks vanish too — an accurate, well-placed feature scores 0/4. The single word of the label was carrying three marks behind it.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Locates a feature accurately but leaves it unlabelled — which zeroes the showing marks as well as the label.',
+        cite: MS('p.5'),
+      },
+    },
+    {
+      id: 'geo6-b',
+      label: 'Script B',
+      persona: 'Shown and labelled',
+      attempts: [
+        {
+          id: 'geo6-b-1',
+          text: 'Shows the feature in roughly the right location and proportion, and labels it clearly on the sketch.',
+          key: { shown: 3, label: 1 },
+          keyNote:
+            '“Reasonable accuracy (location and proportion) for full showing marks”, plus the label — the full 4/4. Note the bar is reasonable accuracy, not perfection.',
+        },
+      ],
+    },
+    {
+      id: 'geo6-c',
+      label: 'Script C',
+      persona: 'Traced it',
+      attempts: [
+        {
+          id: 'geo6-c-1',
+          text: 'Traces the OS map rather than drawing a sketch, but labels each of the four features correctly.',
+          key: { shown: 0, label: 1 },
+          keyNote:
+            'Tracing forfeits the showing marks — “lose … 3 marks for showing per item. Allow labelling marks only.” The correct labels still bank 1 mark each; the showing marks are gone. Draw the sketch; don’t trace it.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Traces the map instead of sketching it, keeping only the labelling marks per feature.',
+        cite: MS('p.5'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-geo6',
+    rule: 'On the OS sketch, a feature has to be shown AND labelled.',
+    detail:
+      'Each feature is 4 marks — 3 for showing, 1 for the label — but they are linked: “If not labelled, 0 marks for showing.” An unlabelled feature scores nothing; a traced sketch keeps only the label marks. Label every feature, and draw rather than trace.',
+    cite: MS('p.5'),
+  },
+};
+
+// ───────────────── Geo7 · Describe vs develop — the SRP cap ─────────────────
+
+const GEO7: ScaleSession = {
+  mode: 'scale',
+  id: 'geo-describe-cap',
+  subject: 'geography',
+  level: 'higher',
+  title: 'Description isn’t formation',
+  cue: 'Examine',
+  question:
+    'The question asks how a landform of deposition was FORMED. The candidate writes a long, accurate description of what the landform looks like — its shape, size and setting — but never explains the process that built it. The examination part is worth 14 SRPs (28 marks). How far can this go?',
+  questionNote:
+    'Scenario authored for this exercise. The cap is the scheme’s recurring rule for the landform-formation part: a description of the landform that never reaches its formation is capped at 2 SRPs.',
+  scale: {
+    name: 'Description-only · SRP cap',
+    levels: srpScale([0, 4, 28]),
+    notes: [
+      'The examination is worth up to 14 SRPs (28 marks) when it explains formation.',
+      'A right-landform answer that only DESCRIBES the landform, never its formation, is capped: “Max of 2 x SRPs if there is merely a description of landform without a reference to formation.”',
+      'That cap is 4 marks — a hard ceiling, not a slow bleed. Pages of accurate description cannot pass it.',
+      'This is different from answering the wrong process (0 marks): here the landform is right, but description is not explanation.',
+    ],
+    cite: MS('p.9 (description-without-formation cap)'),
+  },
+  scripts: [
+    {
+      id: 'geo7-a',
+      label: 'The script',
+      persona: 'Describes the postcard, not the process',
+      work: [
+        'Two paragraphs on how the spit looks: its length, its curved end, the lagoon behind it, where it sits on the coast.',
+        'Vivid, accurate, well written.',
+        'Never says how deposition built it — no longshore drift, no loss of energy, no material dropped.',
+      ],
+      keyLevelId: 'm4',
+      keyNote:
+        'Everything is correct and relevant to the landform — but it is description, not formation. The scheme caps “merely a description of landform without a reference to formation” at 2 SRPs, so the whole account tops out at 4 marks of the 28 available. The fix is one word repeated: because. Every feature described has to be tied to the process that made it.',
+      embodies: {
+        behaviour: 'Describes the finished landform in detail but never explains the process of formation the question asked for — hitting the 2-SRP cap.',
+        cite: MS('p.9'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-geo7',
+    rule: 'Describing the landform is not explaining how it formed.',
+    detail:
+      'A “how was it formed” part pays for the process, not the postcard. “Merely a description of landform without a reference to formation” is capped at 2 SRPs (4 marks) — however long and accurate the description. Tie every feature back to the process that built it.',
+    cite: MS('p.9'),
+  },
+};
+
 export const GEOGRAPHY_CHAIR: ChairSubject = {
   id: 'geography',
   label: 'Geography',
   tagline: 'SRPs, diagrams and coherence — the anatomy of a Geography mark.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [GEO1, GEO2, GEO3, GEO4, GEO5],
+  sessions: [GEO1, GEO2, GEO3, GEO4, GEO5, GEO6, GEO7],
   sources: [
     { label: 'SEC LC Geography HL marking scheme 2025 (examiner-reports/geography/2025-marking-scheme)' },
     { label: 'SEC LC Geography OL marking scheme 2025 (examiner-reports/geography/2025-ol-marking-scheme)' },
     { label: 'Chief Examiner’s Report, Geography 2012 (examiner-reports/geography/2012-chief-examiner)' },
   ],
   coverageNote:
-    'Higher sessions are verified against the 2025 HL scheme; the Ordinary session against the 2025 OL scheme. Note the SRP is worth 3 marks at OL (2 at HL), and OL has no Options essay / Overall Coherence grid. More OL sessions are being added.',
+    'Higher sessions are verified against the 2025 HL scheme; the Ordinary session against the 2025 OL scheme. They span the SRP grammar, the diagram rule, the wrong-process zero, the description-without-formation SRP cap, Options Overall Coherence, and the Part A Ordnance Survey sketch-map marks. Note the SRP is worth 3 marks at OL (2 at HL), and OL has no Options essay / Overall Coherence grid. More OL sessions are being added.',
 };

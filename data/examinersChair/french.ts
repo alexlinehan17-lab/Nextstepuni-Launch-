@@ -290,16 +290,129 @@ const FR5: ScaleSession = {
   },
 };
 
+// ─────────────── Fr6 · The Language axis is a verb gate ───────────────
+
+const langBands: ScaleLevel[] = [
+  { id: 'bottom', label: 'Bottom band', annotation: 'B', marks: 6 },
+  { id: 'middle', label: 'Middle band', annotation: 'M', marks: 10 },
+  { id: 'top', label: 'Top band', annotation: 'T', marks: 17 },
+];
+
+const FR6: ScaleSession = {
+  mode: 'scale',
+  id: 'fr-language-axis',
+  subject: 'french',
+  level: 'common',
+  title: 'Great ideas, broken verbs',
+  cue: 'Written production',
+  question:
+    'A written-production answer (Language out of 20) argues its point clearly and a French reader follows it easily — but most of the verbs are wrong and agreement keeps breaking down. Where does its LANGUAGE mark land?',
+  questionNote:
+    'Scenario authored for this exercise. This is the mirror of the two-axes session: written production is scored on two independent axes — Communication and Language — summed. Fr1 held Language fixed and moved Communication; here the content communicates well but the LANGUAGE axis is judged on verbs, agreement and spelling.',
+  scale: {
+    name: 'Language · /20 · bands',
+    levels: langBands,
+    notes: [
+      'Communication and Language are two independent axes, equally weighted, then summed.',
+      'The Language axis is judged on verbs, agreement and spelling — not on ideas.',
+      'Bottom Language band descriptor: “Problems with vocabulary / Most verbs incorrect / Basic rule of agreement not respected / Many mistakes in spelling.”',
+      'Middle band needs verbs “generally correct” and agreement “generally respected”; Top band is idiomatic French with “few mistakes in verbs, agreement or spelling”.',
+      'So a well-argued answer whose verbs are mostly wrong sits in the Bottom Language band, however good the content — that content earns the Communication half, not this one.',
+    ],
+    cite: MS('p.[16] (Language grid: verbs / agreement / spelling)'),
+  },
+  scripts: [
+    {
+      id: 'fr6-a',
+      label: 'The answer',
+      persona: 'Clear argument, wrong verbs',
+      work: [
+        'Ideas land — a French reader follows the argument without trouble.',
+        'But most verb forms are wrong and adjective/past-participle agreement keeps failing.',
+      ],
+      keyLevelId: 'bottom',
+      keyNote:
+        'Bottom band for Language — “most verbs incorrect” and “basic rule of agreement not respected” are the explicit bottom-band descriptors. The strong content scores on the Communication axis, but it cannot lift Language: the two axes are marked and summed separately. Get the verbs and agreements right to earn this half — it is a mechanical gate, not an ideas contest.',
+      embodies: {
+        behaviour:
+          'Communicates the argument but with most verbs incorrect and agreement broken — the bottom-band Language descriptors.',
+        cite: MS('p.[16]'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-fr6',
+    rule: 'The Language axis is a verb-and-agreement gate.',
+    detail:
+      'In French written production, Language is scored separately from content — on verbs, agreement and spelling. A clear, well-argued answer whose verbs are mostly wrong lands in the bottom Language band; strong ideas earn the Communication half, not this one. Drill verb forms and agreement to unlock the other twenty marks.',
+    cite: MS('p.[16]'),
+  },
+};
+
+// ─────────────── Fr7 · Excess material is docked ───────────────
+
+const FR7: ScaleSession = {
+  mode: 'scale',
+  id: 'fr-excess',
+  subject: 'french',
+  level: 'common',
+  title: 'Right word, extra baggage',
+  cue: 'Comprehension',
+  question:
+    'A reading-comprehension question asks for the single word meaning « troubler ». The answer is «  Déranger  » (5 marks). The candidate writes «  Déranger quelqu’un  » — the correct word plus one extra word that wasn’t asked for. What does it score (out of 5)?',
+  questionNote:
+    'Scenario authored for this exercise. In the Reading Comprehensions the scheme docks excess material: “Excess material: -1 or -2 Marks”, and single-word/precise answers carry the note “Minus 1 Mark for each extraneous element”. (This is the opposite of the aural, which has no excess penalty.)',
+  scale: {
+    name: 'Comprehension · /5 · excess docked',
+    levels: [
+      { id: 'm3', label: '3 (buried in a full clause, −2)', annotation: '3', marks: 3 },
+      { id: 'm4', label: '4 (one extraneous word, −1)', annotation: '4', marks: 4 },
+      { id: 'm5', label: '5 (clean, exact answer)', annotation: '5', marks: 5 },
+    ],
+    notes: [
+      'Reading Comprehension penalty: “Excess material: -1 or -2 Marks.”',
+      'On precise/single-word answers the note is explicit: “Minus 1 Mark for each extraneous element.”',
+      '«  Déranger  » alone is the full-mark answer; «  Déranger quelqu’un  » adds one extraneous element — docked one mark to 4.',
+      'Burying the word inside a whole lifted clause drops it further, to 3.',
+      'Unlike the aural (“no penalty for excess”), the written comprehension penalises padding — quote only what is asked.',
+    ],
+    cite: MS('p.[11] (single-word answer; “Minus 1 Mark for each extraneous element”), p.[4] (excess penalty)'),
+  },
+  scripts: [
+    {
+      id: 'fr7-a',
+      label: 'The answer',
+      persona: 'Right word, one word too many',
+      work: ['«  Déranger quelqu’un  »', 'The exact answer was «  Déranger  » — the extra word wasn’t asked for.'],
+      keyLevelId: 'm4',
+      keyNote:
+        '4 marks — the correct word is there, but the extra «  quelqu’un  » is one extraneous element, and the scheme docks a mark for each. Excess never adds credit and can only cost you: when a question wants one word or one precise expression, give exactly that and stop. (The aural is the exception — there, excess is free.)',
+      embodies: {
+        behaviour:
+          'Adds an extraneous element to an otherwise correct single-word answer, triggering the “minus 1 per extraneous element” deduction.',
+        cite: MS('p.[11]'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-fr7',
+    rule: 'In the written comprehension, quote only what is asked.',
+    detail:
+      'French reading comprehension docks excess material (−1 or −2), and precise answers lose a mark for each extraneous element. The right word smuggled in with extra baggage scores below full marks; padding can only cost you. Isolate the exact word or expression and stop. (The aural is the one place excess is free.)',
+    cite: MS('p.[4]'),
+  },
+};
+
 export const FRENCH_CHAIR: ChairSubject = {
   id: 'french',
   label: 'French',
-  tagline: 'Two axes, manipulation, the one-answer rule — and the oral as conversation.',
+  tagline: 'Both axes, manipulation, excess, the one-answer rule — and the oral as conversation.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [FR1, FR2, FR3, FR4, FR5],
+  sessions: [FR1, FR2, FR3, FR4, FR5, FR6, FR7],
   sources: [
     { label: 'SEC LC French HL marking scheme 2025 (examiner-reports/french/2025-marking-scheme)' },
     { label: 'SEC LC French syllabus — oral assessment (examiner-reports/french/lc-french-syllabus)' },
   ],
   coverageNote:
-    'These sessions teach the marking conventions the scheme applies across the written paper — the two Communication/Language axes, lift-vs-manipulation, and the one-answer rule — plus the oral (25% at Higher Level), which is a general conversation marked on transfer-of-meaning and accuracy. Verified against the 2025 Higher Level written scheme and the SEC LC French syllabus; level-specific worked examples are being added.',
+    'These sessions teach the marking conventions the scheme applies across the written paper — both Communication and Language axes (the Language axis being a verbs/agreement/spelling gate), lift-vs-manipulation, the excess-material deduction, and the one-answer rule — plus the oral (25% at Higher Level), which is a general conversation marked on transfer-of-meaning and accuracy. Verified against the 2025 Higher Level written scheme and the SEC LC French syllabus; level-specific worked examples are being added.',
 };

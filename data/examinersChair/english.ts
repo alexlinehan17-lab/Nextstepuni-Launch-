@@ -391,17 +391,207 @@ const ENG6: ScaleSession = {
   },
 };
 
+// ───────────────── Eng7 · Question B — genre & register ─────────────────
+
+const ENG7: ScaleSession = {
+  mode: 'scale',
+  id: 'eng-qb-register',
+  subject: 'english',
+  level: 'common',
+  title: 'The essay that answered the wrong genre',
+  cue: 'Comprehending Question B',
+  question:
+    'Paper 1 Question B is a functional-writing task — write the text of a captain’s pre-match team talk that (a) outlines the game plan, (b) reminds the team of the opponents’ strengths and weaknesses, and (c) motivates them. Purpose here is “Understanding of genre and register”. A candidate writes a fluent, third-person mini-essay ABOUT teamwork instead of a spoken team talk. How high can Purpose (out of 15) go?',
+  questionNote:
+    'Scenario authored for this exercise, modelled on the SEC Paper 1 Question B template. QB is a functional-writing task marked discretely P15/C15/L15/M5; its Clarity-of-Purpose descriptor is literally “Understanding of genre and register” of the specified task, and the rubric asks candidates to “engage with all aspects of the question, although not necessarily equally.”',
+  scale: {
+    name: 'QB · Purpose /15 (genre & register)',
+    levels: [
+      { id: 'p6', label: '6 (wrong genre/register)', annotation: '6', marks: 6 },
+      { id: 'p11', label: '11 (right register, an aspect dropped)', annotation: '11', marks: 11 },
+      { id: 'p14', label: '14 (right register + all aspects)', annotation: '14', marks: 14 },
+    ],
+    notes: [
+      'QB is functional writing marked discretely P15/C15/L15/M5 — the P descriptor is “Understanding of genre and register” of the task set.',
+      'The rubric: “Candidates should engage with all aspects of the question, although not necessarily equally.”',
+      'Fluent prose in the wrong genre (an essay where a spoken talk was set) caps Purpose — and by primacy-of-P, a low Purpose then caps Coherence and Language too.',
+    ],
+    cite: MS('p.6 (Question B: register expected + “Understanding of genre and register” under P)'),
+  },
+  scripts: [
+    {
+      id: 'eng7-a',
+      label: 'The essay',
+      persona: 'Writes about the topic, in the wrong genre',
+      work: [
+        'Fluent, well-organised prose on the value of teamwork.',
+        'But it is a third-person reflective essay — no direct address, no captain’s spoken voice, no talk being delivered.',
+        'Right topic, wrong genre and register entirely.',
+      ],
+      keyLevelId: 'p6',
+      keyNote:
+        'Purpose is low — around 6 — because QB’s P is “Understanding of genre and register”, and this candidate produced an essay where a spoken team talk was required. The writing is fluent, but fluency lives in Language, and primacy-of-P means a low Purpose caps Language too. Match the genre the task actually sets before you polish a sentence.',
+      embodies: {
+        behaviour: 'Writes fluently in the wrong genre — ignoring the conventions of the task set, which examiners flag as decisive in functional and composition writing.',
+        cite: CER('p.16 (genre conventions “imperative”)'),
+      },
+    },
+    {
+      id: 'eng7-b',
+      label: 'The near-complete talk',
+      persona: 'Right voice, one required aspect missing',
+      work: [
+        'Adopts the captain’s spoken, motivating register — direct address, rallying tone, the real genre.',
+        'Covers the game plan and the motivation to win.',
+        'But never mentions the opponents’ strengths and weaknesses — one of the three required aspects is simply absent.',
+      ],
+      keyLevelId: 'p11',
+      keyNote:
+        'A solid mid-band Purpose — around 11. The genre and register are right, which is the big win, but the rubric says engage with all aspects of the question, and a whole required aspect (the opponents) is missing. You don’t have to treat the three aspects equally, but you do have to touch each one. Dropping a third of the task holds Purpose below the top band.',
+      embodies: {
+        behaviour: 'Adopts the correct register but omits one of the question’s required aspects, capping Clarity of Purpose.',
+        cite: MS('p.6 (“engage with all aspects of the question”)'),
+      },
+    },
+    {
+      id: 'eng7-c',
+      label: 'The full talk',
+      persona: 'Right genre, right register, all aspects',
+      work: [
+        'A rousing spoken team talk in the captain’s voice — direct address, urgency, belief.',
+        'Outlines the game plan, sizes up the opponents’ strengths and weaknesses, and drives home the motivation to win.',
+        'All three required aspects present, in the genre and register the task set.',
+      ],
+      keyLevelId: 'p14',
+      keyNote:
+        'Top-band Purpose — around 14. The candidate understood the genre and register (a captain’s spoken talk) and engaged every aspect the question named. With Purpose high, Coherence and Language are free to score to their own level. Genre first, all aspects covered — then the rest of PCLM can follow.',
+    },
+  ],
+  takeaway: {
+    id: 'codex-eng7',
+    rule: 'Answer the genre that was set — then cover every aspect.',
+    detail:
+      'Functional writing is marked on “Understanding of genre and register”: an essay where a talk was set caps Purpose no matter how fluent it is. Match the genre, adopt the register, and touch every required aspect of the question — you needn’t weight them equally, but you can’t skip one.',
+    cite: MS('p.6'),
+  },
+};
+
+// ───────────────── Eng8 · Comparative — work through the mode ─────────────────
+
+const ENG8: GridSession = {
+  mode: 'grid',
+  id: 'eng-comparative-mode',
+  subject: 'english',
+  level: 'higher',
+  title: 'The mode is the lens, not the label',
+  cue: 'The Comparative Study',
+  question:
+    'In the Comparative Study, Clarity of Purpose credits two things: “evidence of understanding of the mode” (Theme or Issue / Cultural Context / General Vision and Viewpoint) and “evidence of effective comparison within the mode”. Mark these points from three candidates’ answers on the same Theme-or-Issue question.',
+  questionNote:
+    'Scenario authored for this exercise, modelled on the SEC Paper 2 Comparative Study. On the single-question 70-mark format the P sub-mark (P21) explicitly rewards “understanding of the mode” and “effective comparison within the mode”; the GENERAL rubric asks for analysis “in the light of the modes for comparison”. Here each markable point is scored on those two P components.',
+  grid: {
+    perPoint: [
+      { id: 'mode', label: 'Framed through the comparative mode', marks: 2 },
+      { id: 'compare', label: 'Comparison sustained across texts', marks: 2 },
+    ],
+    shorthand: 'P (comparative): mode + comparison',
+    ruleNote:
+      'A comparative point only banks full Purpose when it does BOTH: reads the texts through the chosen mode (the theme/issue lens, not just plot) AND compares across texts. A prepared single-text character study does neither; a plot-level parallel compares but ignores the mode; only a point that works through the mode AND compares earns both marks.',
+    cite: MS('p.35 (Comparative P: “understanding of the mode” + “effective comparison within the mode”) and p.32 (GENERAL: analysis “in the light of the modes for comparison”)'),
+  },
+  scripts: [
+    {
+      id: 'eng8-a',
+      label: 'Script A',
+      persona: 'A prepared single-text essay',
+      attempts: [
+        {
+          id: 'eng8-a-1',
+          text: 'Macbeth is consumed by ambition from the moment he hears the witches’ prophecy; his soliloquies chart a mind unravelling into guilt and paranoia.',
+          key: { mode: 0, compare: 0 },
+          keyNote:
+            'A rich, accurate character study — but of one text, with no reference to the comparative mode and no second text in view. Nothing here shows “understanding of the mode”, and there is nothing to compare. Both Purpose components are unmet.',
+        },
+        {
+          id: 'eng8-a-2',
+          text: 'He deteriorates further after Duncan’s murder, and by the banquet scene his conscience has curdled into hallucination.',
+          key: { mode: 0, compare: 0 },
+          keyNote:
+            'Still one text, still no mode, still no comparison. A prepared single-text essay ported into the Comparative Study scores nothing for the two P components the section is built on — however good the analysis is in isolation.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Reproduces a prepared single-text character essay without working through the mode or comparing texts — the formulaic, off-task approach examiners flag as a loss of focus on the requirements of the task.',
+        cite: CER('p.19–20 (formulaic approaches inhibit engagement with the task)'),
+      },
+    },
+    {
+      id: 'eng8-b',
+      label: 'Script B',
+      persona: 'Compares plots, forgets the lens',
+      attempts: [
+        {
+          id: 'eng8-b-1',
+          text: 'In both texts the central character dies at the end, and in both a loyal friend is left behind to tell the story.',
+          key: { mode: 0, compare: 2 },
+          keyNote:
+            'This does compare across two texts — the comparison mark is earned. But it compares plot events, not the mode: nothing frames the parallel as, say, how each author explores the complexity of the theme. The mode component stays unmet.',
+        },
+        {
+          id: 'eng8-b-2',
+          text: 'Both texts are also set over a short span of time, and both open with a scene of conflict.',
+          key: { mode: 0, compare: 2 },
+          keyNote:
+            'Another genuine cross-text comparison — comparison mark earned again — but still surface parallels, not the thematic mode’s lens. Comparison without the mode banks only half the Purpose available on the point.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Compares texts at plot level without framing the comparison through the comparative mode, so only the comparison component of Purpose is met.',
+        cite: MS('p.35'),
+      },
+    },
+    {
+      id: 'eng8-c',
+      label: 'Script C',
+      persona: 'Mode and comparison together',
+      attempts: [
+        {
+          id: 'eng8-c-1',
+          text: 'In the first text the author uses the protagonist’s guilt-ridden mindset to expose the complexity of ambition — how it corrodes as much as it drives.',
+          key: { mode: 2, compare: 0 },
+          keyNote:
+            'Now the answer works through the mode: it reads the character explicitly as the author’s vehicle for the theme’s complexity. The mode component is earned. But it is still one text, so the comparison mark is not yet available on this point.',
+        },
+        {
+          id: 'eng8-c-2',
+          text: 'The second and third texts explore the same complexity from the opposite angle — where one character is destroyed by ambition, another is freed by renouncing it — so across the three, the authors’ differing treatments sharpen the theme.',
+          key: { mode: 2, compare: 2 },
+          keyNote:
+            'Both components: the point is framed through the mode AND sustains comparison across texts. This is the full Purpose the Comparative Study is built to reward — the mode used as a lens, driving a comparison, not named and abandoned.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-eng8',
+    rule: 'Work through the mode — don’t just retell a text.',
+    detail:
+      'Comparative Purpose credits two things: understanding of the mode (Theme or Issue / Cultural Context / General Vision and Viewpoint) and effective comparison within it. A prepared single-text essay earns neither; a plot-level parallel earns only half. Frame every point through the mode, and use it to compare across your texts.',
+    cite: MS('p.35'),
+  },
+};
+
 export const ENGLISH_CHAIR: ChairSubject = {
   id: 'english',
   label: 'English',
   tagline: 'PCLM — why answering the question beats writing beautifully.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [ENG1, ENG2, ENG3, ENG4, ENG5, ENG6],
+  sessions: [ENG1, ENG2, ENG3, ENG4, ENG5, ENG6, ENG7, ENG8],
   sources: [
     { label: 'SEC LC English HL marking scheme 2025 (examiner-reports/english/2025-marking-scheme)' },
     { label: 'SEC LC English OL marking scheme 2025 (examiner-reports/english/2025-ol-marking-scheme)' },
     { label: 'Chief Examiner’s Report, English 2013 (examiner-reports/english/2013-chief-examiner)' },
   ],
   coverageNote:
-    'The PCLM sessions teach the criteria and primacy-of-Purpose rule the scheme applies to every task at both levels. The Ordinary session is verified against the 2025 OL scheme (grades O1–O8; combined questions split P&C 60% / L&M 40%). More OL-specific worked examples are being added.',
+    'The PCLM sessions teach the criteria and primacy-of-Purpose rule the scheme applies to every task at both levels. Task-specific sessions are verified against the section they cite: Paper 1 Question B genre & register (common), and the Paper 2 Comparative Study “work through the mode” rule (Higher — the named modes are HL-specific). The Ordinary session is verified against the 2025 OL scheme (grades O1–O8; combined questions split P&C 60% / L&M 40%). More OL-specific worked examples are being added.',
 };

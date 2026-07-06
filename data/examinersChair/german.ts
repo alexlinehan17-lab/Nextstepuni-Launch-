@@ -20,7 +20,7 @@
  * Claim-by-claim record: compliance/evidence/examiners-chair.md.
  */
 
-import { type ChairSubject, type ScaleSession, type ScaleLevel } from './types';
+import { type ChairSubject, type ScaleSession, type ScaleLevel, type GridSession } from './types';
 
 const MS = (p: string) => ({ label: `SEC German HL marking scheme 2025, ${p}` });
 
@@ -282,16 +282,175 @@ const GE5: ScaleSession = {
   },
 };
 
+// ─────────────── Ge6 · Applied Grammar — the verb splits three ways ───────────────
+
+const GE6: GridSession = {
+  mode: 'grid',
+  id: 'de-applied-grammar',
+  subject: 'german',
+  level: 'higher',
+  title: 'The verb splits three ways',
+  cue: 'Angewandte Grammatik (Verben)',
+  question:
+    'In the Applied Grammar task (Verben option), each gap gives you an infinitive to put into the tense and number the text requires. Two of the items: (1) versuchen — Perfekt, singular; (2) verstehen — Perfekt, plural. Each item is worth 5 marks. Mark the three scripts below.',
+  questionNote:
+    'Answers authored for this exercise; the verb items and the mark split are the real SEC template. Each 5-mark verb item is scored: correct verb stem/lexis (2) + correct tense (2) + correct number (1) — e.g. the scheme’s key “versuchen (2), Perfekt (2), Singular (1)”.',
+  grid: {
+    perPoint: [
+      { id: 'verb', label: 'Verb — correct stem/lexis', marks: 2 },
+      { id: 'tense', label: 'Correct tense', marks: 2 },
+      { id: 'number', label: 'Correct number (sing./plural)', marks: 1 },
+    ],
+    shorthand: '5×5 (2+2+1)',
+    ruleNote:
+      'Each verb is worth 5, split verb (2) + tense (2) + number (1). The three parts are scored independently, so the right verb in the wrong tense still forfeits its 2 tense marks, and a wrong verb takes the whole 5 — there is nothing left to award the tense or number to.',
+    cite: MS('p.[9] (Angewandte Grammatik: “versuchen (2), Perfekt (2), Singular (1)”)'),
+  },
+  scripts: [
+    {
+      id: 'ge6-a',
+      label: 'Script A',
+      persona: 'Lexis solid, tense adrift',
+      attempts: [
+        {
+          id: 'ge6-a-1',
+          text: 'Item 1 (versuchen → Perfekt, sing.): schreibt „versuchte“.',
+          key: { verb: 2, tense: 0, number: 1 },
+          keyNote:
+            'Right verb, singular is right — but „versuchte“ is Imperfekt, and the item fixed Perfekt („hat versucht“). The 2 tense marks are gone. 3/5.',
+        },
+        {
+          id: 'ge6-a-2',
+          text: 'Item 2 (verstehen → Perfekt, pl.): schreibt „verstehen“.',
+          key: { verb: 2, tense: 0, number: 1 },
+          keyNote:
+            'Same failure: correct verb, plural is fine, but this is a plain present-tense form where Perfekt („haben verstanden“) was required. Tense marks lost again. 3/5.',
+        },
+      ],
+      embodies: {
+        behaviour:
+          'Supplies the correct verb in the wrong tense, forfeiting the tense sub-marks in the atomised Applied Grammar scoring.',
+        cite: MS('p.[9]'),
+      },
+    },
+    {
+      id: 'ge6-b',
+      label: 'Script B',
+      persona: 'Form and all',
+      attempts: [
+        {
+          id: 'ge6-b-1',
+          text: 'Item 1 (versuchen → Perfekt, sing.): schreibt „hat versucht“.',
+          key: { verb: 2, tense: 2, number: 1 },
+          keyNote: 'Correct verb, Perfekt, singular — all three parts land. Full 5/5.',
+        },
+        {
+          id: 'ge6-b-2',
+          text: 'Item 2 (verstehen → Perfekt, pl.): schreibt „haben verstanden“.',
+          key: { verb: 2, tense: 2, number: 1 },
+          keyNote: 'Verb, tense and plural agreement all correct. 5/5.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Produces the required verb, tense and number, earning each of the three sub-marks.',
+        cite: MS('p.[9]'),
+      },
+    },
+    {
+      id: 'ge6-c',
+      label: 'Script C',
+      persona: 'Two different ways to bleed marks',
+      attempts: [
+        {
+          id: 'ge6-c-1',
+          text: 'Item 2 (verstehen → Perfekt, pl.): schreibt „hat verstanden“.',
+          key: { verb: 2, tense: 2, number: 0 },
+          keyNote:
+            'Verb right, Perfekt right — but the auxiliary is singular („hat“) where the text needed the plural „haben verstanden“. Only the 1 number mark is lost. 4/5.',
+        },
+        {
+          id: 'ge6-c-2',
+          text: 'Item 1 (versuchen → Perfekt, sing.): schreibt „hat gemacht“.',
+          key: { verb: 0, tense: 0, number: 0 },
+          keyNote:
+            'Wrong verb entirely — machen, not versuchen. Once the lexis is wrong there is nothing to attach the tense or number marks to, so the whole item scores 0/5, even though the Perfekt and singular are “correct” in isolation.',
+        },
+      ],
+      embodies: {
+        behaviour:
+          'Shows a number-agreement slip (loses 1) and a wrong-verb choice (loses all 5) — the two poles of the split-mark scoring.',
+        cite: MS('p.[9]'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-de6',
+    rule: 'The Applied Grammar verb splits three ways — verb, tense, number.',
+    detail:
+      'Each Angewandte Grammatik verb is 5 marks: 2 for the verb, 2 for the tense, 1 for the number, scored independently. The right verb in the wrong tense still drops 2; a wrong verb drops all 5. Nail all three parts, not just the word.',
+    cite: MS('p.[9]'),
+  },
+};
+
+// ─────────────── Ge7 · Near-right is wrong ───────────────
+
+const GE7: ScaleSession = {
+  mode: 'scale',
+  id: 'de-precision',
+  subject: 'german',
+  level: 'common',
+  title: 'Near-right is wrong',
+  cue: 'Aural / Comprehension',
+  question:
+    'The News section asks for today’s weather forecast. The forecast said cloudy. The candidate has the gist and writes “overcast”. It’s close — near-synonymous, even. What does the point score?',
+  questionNote:
+    'Scenario authored for this exercise. German marking repeatedly zeroes an almost-right word rather than giving partial credit: the scheme prints “cloudy (overcast=0)” beside this very detail.',
+  scale: {
+    name: 'Detail · precise vs approximate',
+    levels: two(0, 1),
+    notes: [
+      'Detail questions want the exact word the text used, not a near-synonym.',
+      'The scheme writes the near-miss straight into the key and zeroes it: “cloudy (overcast=0)”, “women eat more healthily … (Are healthier = 0)”, “Playground/play area (Plural = 0)”.',
+      'The same rigour runs through the reading texts: a person who “smiles” is not one who laughs — “(Laugh=0)”.',
+      'There is no half credit for “close”: the approximate word forfeits the whole point.',
+    ],
+    cite: MS('p.[28] (“cloudy (overcast=0)”); p.[27] (“Are healthier = 0”, “Plural = 0”); p.[7] (“Laugh=0”)'),
+  },
+  scripts: [
+    {
+      id: 'ge7-a',
+      label: 'The answer',
+      persona: 'Close, but not the word',
+      work: ['The forecast was “cloudy”.', 'Writes “overcast” — near-synonymous, but not what the text said.'],
+      keyLevelId: 'm0',
+      keyNote:
+        '0 — the scheme literally prints “overcast=0” next to this answer. German detail-marking wants the precise word the speaker used, and gives no partial credit for an approximation. “Are healthier” for “eat more healthily”, a singular where a plural was needed, “laugh” for “smile” — all zeroed the same way. Hear the exact word and write the exact word.',
+      embodies: {
+        behaviour: 'Gives a near-synonym where the exact detail was required — zeroed, not part-credited.',
+        cite: MS('p.[28] & p.[27]'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-de7',
+    rule: 'A near-right answer scores zero, not half.',
+    detail:
+      'German detail questions credit the exact word only — “overcast” for cloudy, “are healthier” for eat more healthily, “laugh” for smile, a singular for a plural all score 0. There is no partial credit for “close”; capture the precise word the text uses.',
+    cite: MS('p.[27] & p.[28]'),
+  },
+};
+
 export const GERMAN_CHAIR: ChairSubject = {
   id: 'german',
   label: 'German',
-  tagline: 'The length gate, half-mark lifts, tense-critical answers — and what the oral really marks.',
+  tagline:
+    'The length gate, half-mark lifts, tense-critical answers, the three-way Applied Grammar split — and why near-right scores zero.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [GE1, GE2, GE3, GE4, GE5],
+  sessions: [GE1, GE2, GE3, GE4, GE5, GE6, GE7],
   sources: [
     { label: 'SEC LC German HL marking scheme 2025 (examiner-reports/german/2025-marking-scheme)' },
     { label: 'SEC LC German syllabus, Oral Assessment (examiner-reports/german/german-syllabus)' },
   ],
   coverageNote:
-    'These sessions teach the written-paper conventions — the Lower-E length gate, the half-mark rule for unmanipulated lifts and tense-critical comprehension — plus the oral (25% at Higher, 20% at Ordinary), which is assessed on language and communication rather than information content. All apply at both Higher and Ordinary level. Written rules verified against the 2025 Higher Level scheme; the oral against the SEC German syllabus. Level-specific worked examples are being added.',
+    'These sessions teach the written-paper conventions — the Lower-E length gate, the half-mark rule for unmanipulated lifts, tense-critical comprehension and the zero-for-approximation detail rule — plus the oral (25% at Higher, 20% at Ordinary), assessed on language and communication rather than information content. Most apply at both levels; the Applied Grammar (Angewandte Grammatik) verb-scoring session is Higher-Level-specific and shows only under the Higher tab. Written rules verified against the 2025 Higher Level scheme (Lower-E, unmanipulated-lift and aural-language rules cross-checked against the 2024 scheme); the oral against the SEC German syllabus. Level-specific worked examples are being added.',
 };

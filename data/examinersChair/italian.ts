@@ -8,8 +8,9 @@
  * `questionNote`) — they are not real SEC questions or candidate scripts. The
  * marking grammar (the two Content/Language axes with a graduated content cap,
  * the −50% wrong-language penalty, the rote-off-the-point rule, and the
- * copy-vs-manipulate deduction on comprehension) is the real
- * SEC system, cited to:
+ * copy-vs-manipulate deduction on comprehension, the listening list rule where
+ * one wrong item nullifies a correct one, and the separate 10-mark letter Format
+ * block) is the real SEC system, cited to:
  *  - SEC LC Italian HL marking scheme 2025 —
  *    examiner-reports/italian/2025-marking-scheme.*
  *
@@ -24,7 +25,7 @@
  * Claim-by-claim record: compliance/evidence/examiners-chair.md.
  */
 
-import { type ChairSubject, type ScaleSession, type ScaleLevel } from './types';
+import { type ChairSubject, type ScaleSession, type ScaleLevel, type GridSession } from './types';
 
 const MS = (p: string) => ({ label: `SEC Italian HL marking scheme 2025, ${p}` });
 // Oral cite → the syllabus, NOT the written marking scheme.
@@ -287,16 +288,143 @@ const IT5: ScaleSession = {
   },
 };
 
+// ─────────────── IT6 · One wrong guess cancels a right one ───────────────
+
+const IT6: ScaleSession = {
+  mode: 'scale',
+  id: 'it-list-nullify',
+  subject: 'italian',
+  level: 'common',
+  title: 'One wrong guess cancels a right one',
+  cue: 'Listening · list answer',
+  question:
+    'A listening question asks you to name two of the languages a company wants its staff to speak. You catch two correct ones — but you’re not certain, so you add a third for safety, and the third is wrong. The 2025 aural scheme states that where a list of vocabulary is required, one incorrect answer nullifies a correct one. The question is worth 2 marks (1+1). What do you score?',
+  questionNote:
+    'Scenario authored for this exercise. The rule is from the 2025 aural marking scheme (Listening, Section B): where a list of vocabulary is required, one incorrect answer nullifies a correct answer, and an inaccurate combination of points means full marks are not awarded. So padding a list with extra guesses can actively cost marks.',
+  scale: {
+    name: 'List answer · one wrong cancels one right /2',
+    levels: two(1, 2),
+    notes: [
+      'Some listening answers require a list of vocabulary (e.g. two of four languages), each item worth a mark.',
+      'The scheme: “Where a list of vocabulary is required, one incorrect answer nullifies a correct answer.”',
+      'So two correct items plus one wrong one nets one mark, not two — the wrong guess cancels a right answer.',
+    ],
+    cite: MS('p.5 (Listening Section B — list rule: one incorrect answer nullifies a correct answer)'),
+  },
+  scripts: [
+    {
+      id: 'it6-a',
+      label: 'The answer',
+      persona: 'Hedges with an extra guess',
+      work: [
+        'The question needs two languages; two marks (1+1).',
+        'The candidate writes three: two are correct, the third is wrong.',
+        'The wrong one nullifies one of the correct ones.',
+      ],
+      keyLevelId: 'm1',
+      keyNote:
+        'It nets 1 of 2 — the wrong guess cancels a right answer. On a list question, don’t hedge: writing every option you can think of doesn’t insure you, it exposes you, because one wrong item wipes out a correct one. Give exactly the number asked for, and only items you’re sure of.',
+      embodies: {
+        behaviour:
+          'Adds an extra, incorrect item to a required list, triggering the one-wrong-nullifies-a-right rule.',
+        cite: MS('p.5'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-it6',
+    rule: 'On a list answer, don’t hedge — one wrong item cancels a right one.',
+    detail:
+      'In the Italian listening test, where a question asks for a list of vocabulary, one incorrect answer nullifies a correct one. Adding extra guesses to be safe can cost you marks — give exactly the number asked for, and only items you’re sure of.',
+    cite: MS('p.5'),
+  },
+};
+
+// ─────────────── IT7 · The format marks you can bank first ───────────────
+
+const IT7: GridSession = {
+  mode: 'grid',
+  id: 'it-letter-format',
+  subject: 'italian',
+  level: 'common',
+  title: 'The format marks you can bank first',
+  cue: 'Formal writing · letter',
+  question:
+    'The formal-writing task (50 marks) scores Format as its own 10-mark block: Date, Address, Greeting, Closing formula and Final salutation, in the correct register and spelt correctly. Two candidates write equally strong Italian in the body. Mark each one’s FORMAT block out of 10.',
+  questionNote:
+    'Scenario and letters authored for this exercise. The Format mark and its component values are the SEC 2025 HL scheme’s formal-writing breakdown (Section C, C3): Date 1m · Address 2m (3m if the candidate chooses email) · Greeting 2m · Closing formula 3m · Final salutation 2m — 10 marks, scored on top of Content & Communication and Language.',
+  grid: {
+    perPoint: [
+      { id: 'date', label: 'Date', marks: 1 },
+      { id: 'address', label: 'Address', marks: 2 },
+      { id: 'greeting', label: 'Greeting', marks: 2 },
+      { id: 'closing', label: 'Closing formula', marks: 3 },
+      { id: 'salutation', label: 'Final salutation', marks: 2 },
+    ],
+    shorthand: 'Format 10 (1+2+2+3+2)',
+    ruleNote:
+      'Format is a separate 10-mark block on the formal-writing task, awarded for the letter’s furniture — date, address, greeting, closing formula and final salutation — in the correct register and spelt correctly. These marks don’t depend on the quality of your argument; they’re there to be banked before you write a sentence of content, and lost outright if you skip the conventions.',
+    cite: MS('p.27 (Formal Writing — Format 10m breakdown & register/spelling requirement)'),
+  },
+  scripts: [
+    {
+      id: 'it7-a',
+      label: 'Script A',
+      persona: 'Strong Italian, skips the furniture',
+      attempts: [
+        {
+          id: 'it7-a-1',
+          text: 'Dives straight into the body of the letter. No date, no address. Opens with a bare “Ciao” and signs off with just a first name — no closing formula, no proper final salutation.',
+          key: { date: 0, address: 0, greeting: 0, closing: 0, salutation: 0 },
+          keyNote:
+            'The Italian inside may be excellent, but the whole format block is missing or wrong register — “Ciao” is not an appropriate greeting for a formal letter, and there is no closing formula or salutation. 0 of 10 on Format, before Content and Language are even counted.',
+        },
+      ],
+      embodies: {
+        behaviour:
+          'Omits the letter’s format furniture (date, address, greeting, closing, salutation), forfeiting the separate 10-mark Format block.',
+        cite: MS('p.27'),
+      },
+    },
+    {
+      id: 'it7-b',
+      label: 'Script B',
+      persona: 'Models the format in full',
+      attempts: [
+        {
+          id: 'it7-b-1',
+          text: 'Dates the letter and lays out the address. Opens with a full, register-appropriate greeting, develops the body, then signs off with a correct closing formula and a proper final salutation — all spelt correctly.',
+          key: { date: 1, address: 2, greeting: 2, closing: 3, salutation: 2 },
+          keyNote:
+            'Every format component is present, in the right register, spelt correctly — full 10 of 10 on Format. This candidate banked a tenth of the whole task before the examiner read a word of the argument.',
+        },
+      ],
+      embodies: {
+        behaviour:
+          'Supplies every format component in the correct register and spelling, earning the full 10-mark Format block.',
+        cite: MS('p.27'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-it7',
+    rule: 'Bank the letter’s format marks — they’re free and separate.',
+    detail:
+      'The Italian formal-writing task scores Format as its own 10-mark block: date, address, greeting, closing formula and final salutation, in the correct register and spelt correctly. These marks are independent of your argument — learn the conventions and bank all ten before you write a line of content.',
+    cite: MS('p.27'),
+  },
+};
+
 export const ITALIAN_CHAIR: ChairSubject = {
   id: 'italian',
   label: 'Italian',
-  tagline: 'Two axes, the wrong-language penalty, copy-vs-manipulate, no rote off the point — and an oral that marks talking, not reciting.',
+  tagline: 'Two axes, the wrong-language penalty, copy-vs-manipulate, no rote off the point, the list-hedging trap, the letter’s free format marks — and an oral that marks talking, not reciting.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [IT1, IT2, IT3, IT4, IT5],
+  sessions: [IT1, IT2, IT3, IT4, IT5, IT6, IT7],
   sources: [
     { label: 'SEC LC Italian HL marking scheme 2025 (examiner-reports/italian/2025-marking-scheme)' },
     { label: 'SEC/NCCA Leaving Certificate Italian syllabus (examiner-reports/italian/italian-syllabus)' },
   ],
   coverageNote:
-    'The written-paper sessions teach the conventions of the 2025 marking scheme — the two Content/Language axes with the graduated content cap, the wrong-language penalty, the reading-comprehension copy-vs-manipulate deduction and the rote-off-the-point rule — which apply at both Higher and Ordinary level. The oral session is grounded in a different source: the official SEC/NCCA Italian syllabus (Speaking 25% Higher / 20% Ordinary; assessed on transfer of meaning + accuracy). SEC publishes NO per-band oral marking grid, so any band marks shown in the oral session are labelled illustrative. Verified against the 2025 HL scheme (copy-vs-manipulate also corroborated against 2024) and the syllabus; level-specific worked examples are being added.',
+    'The written-paper sessions teach the conventions of the 2025 marking scheme — the two Content/Language axes with the graduated content cap, the wrong-language penalty, the reading-comprehension copy-vs-manipulate deduction, the rote-off-the-point rule, the listening list rule (one wrong item nullifies a correct one) and the separate 10-mark letter Format block — which apply at both Higher and Ordinary level. The oral session is grounded in a different source: the official SEC/NCCA Italian syllabus (Speaking 25% Higher / 20% Ordinary; assessed on transfer of meaning + accuracy). SEC publishes NO per-band oral marking grid, so any band marks shown in the oral session are labelled illustrative. Verified against the 2025 HL scheme (copy-vs-manipulate also corroborated against 2024) and the syllabus; level-specific worked examples are being added.',
 };

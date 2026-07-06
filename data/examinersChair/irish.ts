@@ -366,12 +366,136 @@ const IR6: ScaleSession = {
   },
 };
 
+// ─────────────── Ir7 · The Irish is marked in the literature too ───────────────
+
+const LIT_GAEILGE: ScaleLevel[] = [
+  { id: 'g1', label: '1 (Cumas lag/an-lag)', annotation: '1', marks: 1 },
+  { id: 'g3', label: '3 (Cumas maith)', annotation: '3', marks: 3 },
+  { id: 'g5', label: '5 (Sárchumas)', annotation: '5', marks: 5 },
+];
+
+const IR7: ScaleSession = {
+  mode: 'scale',
+  id: 'ir-litriocht-gaeilge',
+  subject: 'irish',
+  level: 'higher',
+  title: 'The Irish is marked in the literature too',
+  cue: 'Prós / Filíocht',
+  question:
+    'A Prós answer discusses the statement well, with rich textual reference — but the Irish itself is error-strewn: wrong verb tenses, broken syntax, misused prepositions. Every literature question (Prós, Filíocht, Litríocht Bhreise) awards a SEPARATE 5 marks for the standard of the Irish, on top of the content (Eolas) mark — Prós is 25 Eolas + 5 Gaeilge = 30. Where does that 5-mark language award land?',
+  questionNote:
+    'Scenario authored for this exercise. The separate 5-mark Gaeilge award on each literature answer is the real SEC rule ("beidh 5 mharc le bronnadh i ngach cás ar chaighdeán na Gaeilge"): it is judged on the príomhghnéithe de cheart na teanga — gramadach, comhréir, struchtúr, deilbhíocht.',
+  scale: {
+    name: 'Litríocht · Gaeilge · /5',
+    levels: LIT_GAEILGE,
+    notes: [
+      'Each literature answer is Eolas (content) + a separate 5-mark Gaeilge (language) award — Prós/Filíocht 25 + 5 = 30, Litríocht Bhreise 35 + 5 = 40.',
+      'The 5-mark Gaeilge scale runs 5 Sárchumas · 4 Cumas an-mhaith · 3 Cumas maith · 2 Cumas measartha · 1 Cumas lag/an-lag.',
+      'It is judged on the príomhghnéithe de cheart na teanga: grammar, syntax, structure, morphology (gramadach, comhréir, struchtúr, deilbhíocht).',
+      'Strong content earns its Eolas marks — but broken Irish keeps this separate 5-mark award in the low band.',
+    ],
+    cite: MS('p.27 (literature 5-mark Gaeilge award: "25 ar Eolas agus 5 ar Ghaeilge")'),
+  },
+  scripts: [
+    {
+      id: 'ir7-a',
+      label: 'The answer',
+      persona: 'Fine points, broken Irish',
+      work: [
+        'Discusses the statement well, with strong, apt textual reference.',
+        'But the Irish is error-strewn: wrong verb tenses, broken syntax, misused prepositions.',
+      ],
+      keyLevelId: 'g1',
+      keyNote:
+        'The Eolas marks (25) are judged separately and the discussion can still score there — but the 5-mark Gaeilge award lands in the low band, because it measures ceart na teanga and the syntax is broken. Even in a literature answer that is "about" a text, 5 of every 30 marks reward the Irish itself. Write the discussion in accurate Irish you control.',
+      embodies: {
+        behaviour: 'Strong literary content undermined by error-strewn Irish — forfeiting the separate 5-mark Gaeilge award.',
+        cite: MS('p.27'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-ir7',
+    rule: 'Even in the literature answers, the Irish itself is marked.',
+    detail:
+      'Prós, Filíocht and Litríocht Bhreise each carry a separate 5-mark Gaeilge award on top of the content (Eolas) mark — 25 Eolas + 5 Gaeilge = 30. Excellent points in broken Irish still lose those 5 marks. Write the discussion in accurate, controlled Irish.',
+    cite: MS('p.27'),
+  },
+};
+
+// ─────────────── Ir8 · The precise detail buys the second mark ───────────────
+
+const AURAL_PRECISION: ScaleLevel[] = [
+  { id: 'm0', label: '0 (wrong)', annotation: '0', marks: 0 },
+  { id: 'm1', label: '1 (vague / partly named)', annotation: '1', marks: 1 },
+  { id: 'm2', label: '2 (precise / fully named)', annotation: '2', marks: 2 },
+];
+
+const IR8: ScaleSession = {
+  mode: 'scale',
+  id: 'ir-aural-precision',
+  subject: 'irish',
+  level: 'common',
+  title: 'The precise detail buys the second mark',
+  cue: 'Cluastuiscint',
+  question:
+    'A Cluastuiscint item worth 2 marks asks who broadcast a notice. The recording names "RTÉ Raidió na Gaeltachta". The candidate hears it but writes only "RTÉ". The scheme awards the full 2 marks for the fully-named detail and 1 mark for the vague, partly-named version. What does "RTÉ" score?',
+  questionNote:
+    'Scenario authored for this exercise, but the mark values are the real SEC scheme\'s: "RTÉ Raidió na Gaeltachta = 2 mharc … RTÉ = 1 mharc"; likewise "Ceol beo = 2 mharc … Ceol = 1 mharc". Most aural items are worth 2 marks, and precision of the retrieved detail is what buys the second one.',
+  scale: {
+    name: 'Cluastuiscint · precision · /2',
+    levels: AURAL_PRECISION,
+    notes: [
+      'Most Cluastuiscint items are worth 2 marks each.',
+      'The full 2 marks need the precise, fully-named detail; a vague or partly-named answer is capped at 1.',
+      '"RTÉ Raidió na Gaeltachta" = 2, "RTÉ" = 1; "Ceol beo" = 2, "Ceol" = 1; "Agallaimh spéisiúla" = 2, "Agallaimh" = 1.',
+      'This is separate from the 0–3 standard-of-Irish deduction — it is about how completely you named the thing you heard.',
+    ],
+    cite: MS('p.7 ("RTÉ Raidió na Gaeltachta = 2 mharc … RTÉ = 1 mharc")'),
+  },
+  scripts: [
+    {
+      id: 'ir8-a',
+      label: 'The answer',
+      persona: 'Heard it, half-named it',
+      work: ['Writes "RTÉ" for who broadcast the notice — when the recording said "RTÉ Raidió na Gaeltachta".'],
+      keyLevelId: 'm1',
+      keyNote:
+        '1 of 2 — the answer is not wrong, but it is vague. The second mark is reserved for the precise, fully-named detail ("RTÉ Raidió na Gaeltachta"), and a general "RTÉ" only earns half. The listening was fine; the loss is in the writing-down. Note the exact, full name you hear.',
+      embodies: {
+        behaviour: 'Gives a vague, partly-named aural answer where the full name was heard — capped at half the item\'s marks.',
+        cite: MS('p.7'),
+      },
+    },
+    {
+      id: 'ir8-b',
+      label: 'The answer',
+      persona: 'Names it in full',
+      work: ['Writes "RTÉ Raidió na Gaeltachta" in full for who broadcast the notice.'],
+      keyLevelId: 'm2',
+      keyNote:
+        'Full 2 marks — the detail is named completely and specifically, which is exactly what the second mark rewards. The difference between 1 and 2 here is not understanding but precision: the whole name, the whole phrase, written down as heard.',
+      embodies: {
+        behaviour: 'Gives the precise, fully-named aural answer — earning the full 2 marks.',
+        cite: MS('p.7'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-ir8',
+    rule: 'In the aural, the precise detail buys the second mark.',
+    detail:
+      'Most Cluastuiscint items are worth 2 marks, and a vague or partly-named answer scores only 1: "RTÉ" earns 1, "RTÉ Raidió na Gaeltachta" earns 2. Write the full, specific detail you heard — the exact name, the whole phrase — not an approximation.',
+    cite: MS('p.7'),
+  },
+};
+
 export const IRISH_CHAIR: ChairSubject = {
   id: 'irish',
   label: 'Irish',
-  tagline: 'Where language accuracy, genre, “own words” — and the 40% oral — win the marks.',
+  tagline: 'Where language accuracy, genre, “own words”, precise detail — and the 40% oral — win the marks.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [IR1, IR2, IR3, IR4, IR5, IR6],
+  sessions: [IR1, IR2, IR3, IR4, IR5, IR6, IR7, IR8],
   sources: [
     { label: 'SEC LC Irish HL marking scheme 2025 (examiner-reports/irish/2025-marking-scheme)' },
     { label: 'SEC LC Irish OL marking scheme 2025 (examiner-reports/irish/2025-ol-marking-scheme)' },
@@ -381,5 +505,5 @@ export const IRISH_CHAIR: ChairSubject = {
     },
   ],
   coverageNote:
-    'The composition (language is ~80% of the mark), genre, and Cluastuiscint (aural) sessions apply at both levels — the aural session teaches the 0–3 standard-of-Irish deduction that applies even in the listening comprehension. The “own words” comprehension rule is Higher-specific (OL comprehension has no own-words gate); the Ordinary session covers OL poetry’s “i d’fhocail féin” halving. The oral session teaches the 240-mark / 40% component split of the common Béaltriail (Fáiltiú 5 / Filíocht 35 / Sraith Pictiúr 80 / Comhrá 120), verified against the SEC Assessment Arrangements 2026; the internal per-component oral marking grid is a separate scheme and is not asserted here. The written rules are verified against the 2025 HL and OL schemes.',
+    'The composition (language is ~80% of the mark), genre, and Cluastuiscint (aural) sessions apply at both levels — the aural sessions teach the 0–3 standard-of-Irish deduction and the 2-mark precision rule (vague retrieval scores half) that apply even in the listening comprehension. The “own words” comprehension rule is Higher-specific (OL comprehension has no own-words gate); the Ordinary session covers OL poetry’s “i d’fhocail féin” halving; the literature 5-mark Gaeilge award (a separate language mark on each Prós/Filíocht/Litríocht Bhreise answer) is verified against the Higher scheme. The oral session teaches the 240-mark / 40% component split of the common Béaltriail (Fáiltiú 5 / Filíocht 35 / Sraith Pictiúr 80 / Comhrá 120), verified against the SEC Assessment Arrangements 2026; the internal per-component oral marking grid is a separate scheme and is not asserted here. The written rules are verified against the 2025 HL and OL schemes.',
 };
