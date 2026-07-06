@@ -1,0 +1,1354 @@
+# Leaving Certificate Irish (Gaeilge) 2025 — Ordinary Level (Gnáthleibhéal) — SEC Marking Scheme (extracted text)
+
+- **Source:** State Examinations Commission (Coimisiún na Scrúduithe Stáit), *An Ardteistiméireacht 2025 — Scéim Mharcála, Gnáthleibhéal, Gaeilge*
+- **Year:** 2025
+- **Level:** Ordinary Level (Gnáthleibhéal), written papers (Páipéar 1 + Páipéar 2)
+- **Retrieved:** 2026-07-06 via educateplus.ie mirror (https://educateplus.ie/sites/default/files/storage/2025%20LC%20Irish%20OL.pdf)
+- **Extraction:** PyPDF2. NOTE: Irish-language text and tabular mark layouts reflow/garble heavily; the PDF is authoritative for exact wording. Page markers below are PDF pages.
+
+<!-- page 1 -->
+ 
+ 
+ Coimisiún na Scrúduithe Stáit  
+ 
+An Ardteistiméireacht 2025 
+ 
+ 
+Scéim Mharcála   
+Gnáthleibhéal   
+               
+Gaeilge 
+ 
+
+<!-- page 2 -->
+ 
+ 
+ Nóta do mhúinteoirí agus do scoláirí fa oi úsáid na scéimea nna marcála foilsithe 
+ 
+Níl na scéimeanna marcála a fhoilsíonn Coimis iún na Scrúduithe Stáit ceaptha lena n-úsáid 
+mar cháipéisí astu féin.  Is áis riachtanach iad ag scrúdaitheoirí a théann faoi oiliúint i 
+léirléamh agus i gcur i bhfeidhm ceart na scéi me.  Mar chuid den oiliúint sin, as measc rudaí 
+eile, déantar samplaí d'obair na scoláirí a mharcáil agus déantar plé ar na marcanna a 
+bhronntar, mar mhaithe le cur i bhfeidhm ce art na scéime a shoiléiriú.  Déanann 
+Scrúdaitheoirí Comhairleacha monatóireacht ar  obair na scrúdaitheoirí ina dhiaidh sin le 
+cinntiú go gcuirtear an scéim mharcála i bhf eidhm go comhleanúnach agus go beacht.  
+Bíonn an Príomhscrúdaitheoir i bhfeighil an phróisis agus is gnách go mbíonn 
+Príomhscrúdaitheoir Comhairleach ag cuidiú le is.  Is é an Príomhscrúdaitheoir an t-údarás 
+deiridh i dtaca le cé acu a cuireadh an scéi m mharcála i bhfeidhm i gceart ar aon phíosa 
+d'obair iarrthóra nó nár cuireadh. 
+Is cáipéisí oibre na scéimeanna marcála.  Cé  go n-ullmhaítear dréachtscéim mharcála roimh 
+an scrúdú, ní chuirtear bailchríoch uirthi go dtí go gcuireann scrúdaitheoirí i bhfeidhm ar 
+obair iarrthóirí í agus go dtí go mbailítear agus  go meastar an t-aiseolas ó na scrúdaitheoirí 
+uile, i bhfianaise raon iomlán na bhfreagraí a thug na hiarrthóirí, leibhéal foriomlán 
+deacrachta an scrúdaithe agus an ghá le co mhleanúnachas caighdeán a choimeád ó bhliain 
+go bliain.  Is éard atá sa cháipéis fhoilsithe  seo ná an scéim chríochnaithe mar a cuireadh  
+i bhfeidhm ar obair na n-iarrthóirí uile í. 
+Is cóir a nótáil i gcás scéimeanna ina bhfuil frea graí nó réitigh eiseamláireacha nach bhfuil sé 
+i gceist a chur in iúl go bhfuil na freagraí ná na réitigh sin uileghabhálach.  D'fhéadfadh sé go 
+bhfuil leaganacha éagsúla nó malartacha ann a bheadh inghlactha freisin.  Ní mór do na 
+scrúdaitheoirí tuillteanas gach freagra a mh eas agus téann siad i gcomhairle lena 
+Scrúdaitheoirí Comhairleacha nua ir a bhíonn amhras orthu.  
+Scéimeanna Marcála san am atá le teacht 
+Ní cóir talamh slán a dhéanamh d'aon rud a bh aineann le scéimeanna marcála san am atá le 
+teacht bunaithe ar scéimeanna a bhí ann cheana.  Cé go mbíonn na bunphrionsabail 
+mheasúnachta mar an gcéanna, is féidir go mb eadh athrú ar shonraí marcála cineál áirithe 
+ceiste i gcomhthéacs na páirte a bheadh ag an gc eist sin sa scrúdú foriomlán bliain áirithe ar 
+bith.  Bíonn sé de fhreagracht ar an bPríomhs crúdaitheoir bliain áirithe ar bith a dhéanamh 
+amach cén tslí is fearr a chinnteoidh go measfa r obair na n-iarrthóirí go cothrom agus go 
+cruinn, agus go gcoimeádfar caighdeán comhlea núnach measúnachta ó bhliain go bliain.  Dá 
+réir sin, d'fhéadfadh gnéithe de struchtúr, de mhionsonraí agus de chur i bhfeidhm na 
+scéime marcála in ábhar áirithe athrú ó bhliain go bliain gan rabhadh. 
+ 
+
+<!-- page 3 -->
+1          Páipéar 1 (160 marc)  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ (i)  
+ 
+ 
+Tuiscint   
+ 
+ 
+=  60 marc 
+    
+(ii) Cumas Gaeilge -  (0-6) 
+   
+(iii) Iomlán  = 
+ 
+ 
+ 
+Cuid A:  
+ 
+Fógra 1: 24 marc (Eolas)  
+ 
+3 mharc x 4  
+ 
+ 
+=  
+  
+12 mharc 
+ 
+Fógra 2: 3 mharc x 4  
+=  
+12 mharc 
+  
+12 + 12   
+=  
+24 marc  
+ 
+Cuid B:  
+ 
+Comhrá 1:  
+24 marc (Eolas)  
+ 
+3 mharc x 4  
+ 
+ 
+ 
+=  
+ 
+ 
+ 
+12 mharc 
+ 
+Comhrá 2: 3 mharc x 4  
+=  
+12 mharc 
+ 
+ 12 + 12  = 24 marc  
+ 
+Cuid C:  
+ 
+Píosa 1:  
+12 mharc (Eolas)  
+ 
+3 mharc x 2  
+ 
+ 
+ 
+=  
+ 
+ 
+ 
+6 mharc 
+ 
+Píosa 2: 3 mharc x 2  
+=  
+6 mharc 
+  
+6 + 6   
+=  
+12 mharc  
+     
+24 + 24 + 12 = 60  
+ 
+Bainfear ó 0 go 6 ar chaighdeán na Gaeilge.  
+  Cuid I                                 An Chluastu iscint                                   60 marc  
+
+<!-- page 4 -->
+2 An Triail Chluastuisceana   
+Cuid A 
+ 
+Fógra 1 (Canúint Chonnacht)  
+Seo fógra ó RTÉ Raidió na Gaeltachta. Cuirfear tú s le clár nua do dhaoine óga ar RTÉ Raidió na 
+Gaeltachta ar an tríú lá déag de mhí Mheán Fómhair. Pé Scéal É  an t-ainm a bheidh ar an gclár nua. 
+Craolfar an clár nua gach Aoine ar a trí a chlog. Ar an gclár, cloisfear plé ar chúrsaí siamsaíochta agus 
+beidh trácht ar imeachtaí ar fud na tíre ag an deireadh seachtaine. Beidh ceol beo agus agallaimh 
+spéisiúla sa stiúideo. Is í Máire Treasa Ní Dhubhghaill a bheidh mar láithreoir ar an gclár seo. Craolfar  
+an clár beo ó stiúideo Chasla. Bígí ag éisteacht.     
+  Fógra a Dó (Canúint na Mumhan) 
+Seo fógra ó na múinteoirí Eolaíochta . A scoláirí, tá na múinteoirí Eolaíochta ag lorg fiche scoláire  
+chun páirt a ghlacadh i dtionscadal suimiúil. Is é an ai dhm atá leis an tionscadal seo ná suim daoine  
+óga a mhúscailt i gcúrsaí timpeallachta áitiúla. Mar chuid den tionscadal seo, déanfaidh na scoláirí 
+taighde ar na cúiseanna atá le truailliú an aeir sa ch eantar seo. Nuair a bheidh an taighde críochnaithe  
+ag na scoláirí, scríobhfaidh siad cuntas ar thorthaí a gcuid oibre agus molfaidh siad réitigh ar an bhfadhb. 
+Má tá spéis agat páirt a ghlacadh sa tionscadal seo,  tar chuig cruinniú a bheidh ar siúl sa tsaotharlann 
+eolaíochta ag ceathrú chun a ha on Déardaoin seo chugainn.  
+ 
+Cuid B 
+  
+Comhrá 1 (Canúint Uladh) 
+An Chéad Mhír 
+Aoife:  Heileo, a Sheáin. Cad é mar at á tú? Scéal ar bith agat?  
+Seán: Bhuel, a Aoife, tá mé iontach sásta liom féin.   
+ 
+Aoife: Cén fáth sin, a Sheáin?  
+Seán: Tá post lánaimseartha faighte agam. Is teagascóir an ois mé san ionad aclaíochta sa bhaile mór.     
+ 
+Aoife: Cén obair a bhíonn ar siúl agat ann, a Sheáin?  
+ 
+Seán: Déanaim amach  clár traenála do na baill agus taispeán aim dóibh conas an trealamh a úsáid  
+ i gceart.   
+ 
+Aoife: An dtaitníonn do phost leat?  
+Seán:  Taitníonn cinnte, a Aoife. Is breá liom a bheith ag  cuidiú le daoine a gcuid spriocanna folláine 
+  a bhaint amach. Tá an tuaras tal go maith fosta.     
+Aoife: An bhfuil tú sásta leis na huaireanta oibre atá agat, a Sheáin?  
+Seán:  Tá mé sásta go leor leo ach amháin go dtosaím ag obair ar leathuair tar éis a sé dhá mhaidin  
+  sa tseachtain.     
+ 
+An Dara Mír  
+Aoife: Mar is eol duit, imrím camógaíocht leis an gclub áitiúil ach tá deireadh leis an séasúr anois.  
+ Ní dhearna mé aon chleachtadh coirp i ndi aidh dheireadh an tséasúir anuraidh.  
+ 
+
+<!-- page 5 -->
+3 Seán:  Cén fáth nár lean tú ar aghaidh leis an gcleac htadh coirp nuair a bhí séasúr na camógaíochta 
+thart anuraidh, a Aoife? 
+ 
+Aoife: Le fírinne, a Sheáin, bhí mé gnóthach leis an stai déar san ollscoil. Chomh maith leis sin, ní bhíodh 
+fonn orm dul amach sna hoíc heanta dorcha.         
+Seán:  Bhuel, a Aoife, mholfainn duit ballraíocht a fháil sa n ionad aclaíochta an ge imhreadh seo. Tá táille 
+bhallraíochta speisialta ar fáil do mhic léinn. Is é nócha euro an táille speisialta sin do bhallraíocht 
+trí mhí.     
+Aoife: An féidir liom cur isteach ar bhallraíocht ar líne? 
+ 
+Seán: Is féidir, cinnte, a Aoife.  Tá an fhoirm bhallraíochta ar fáil ar shuíomh gréasáin an ionaid agus  
+ is féidir an táille bhallraíoc hta a íoc ar líne fosta.  
+ 
+Aoife: Go raibh míle maith agat as ucht do chuid cabhrach, a Sheáin. Slán.     
+ 
+Comhrá 2 (Canúint na Mumhan) 
+An Chéad Mhír   Áine: Haigh, a Liam. Ní fhaca mé le fada thú. An raibh tú ar saoire?   
+Liam: Bhí. Chaith mé féin  agus mo thuismitheoirí cúig seachtaine in Sydney. Tá mo dheirfiúr ina cónaí  
+ ann le dhá bhliain anuas.   
+ 
+Áine: Cén fáth ar imigh do dheirfi úr go dtí an Astráil?  
+Liam: Bhuel, bhí sí bréan den chostas maireachtála sa tír seo. Chomh maith leis sin, tá deiseanna 
+ fostaíochta níos fearr aici thall ansin.     
+Áine: An mbíonn cumha ar do dheirfiúr i ndiaidh an bhaile?  
+Liam: Bíonn, cinnte. Airíonn sí uaithi an baile go minic.  Ach is mór an chabhair di an teicneolaíocht  
+ mar bíonn sí i dteagmháil linn go rialta ar ghlao nna físe agus ar na haipeanna teachtaireachtaí.  
+ Bíonn sí ábalta a bheith i láthair go fíorúil ag ócáidí teaghlaigh.   
+ 
+Áine: An mbíonn deis aici bualadh le hÉireannaigh eile in Sydney? 
+ 
+Liam: Bíonn, cinnte. Is ball í den chlub Gaelach sa ch athair agus buaileann sí le hÉireannaigh eile  
+ sa chlub Gaelach sin.   
+ 
+An Dara Mír        
+Áine:  Cé go bhfuil go leor Éireannach ag dul ar imirce  go tíortha eile, tá sochaí ilchultúrtha againn  
+ anois in Éirinn agus a lán daoine ó thío rtha eile ina gcónaí anseo.       
+ 
+Liam:  Tá an ceart ar fad agat, a Áine. Bhí mé ag féacha int ar chlár faisnéise ar an teilifís le déanaí  
+  faoi Maria, bean a d’fhág an Bhrasaíl, a tír dhúchais  de bharr easpa deiseanna fostaíochta ansin.  
+  Tá sí ina cónaí i Luimneach le trí bliana anuas agus tá  sí ag obair i gcomhlacht margaíochta ansin.      
+ 
+Áine: Chonaic mé féin an clár sin. Is bean ar leith í Maria, an bhean Bhrasaíleach sin. D’fhreastail sí  
+ ar ranganna Gaeilge agus tá Gaeilge mhaith aici an ois. Chomh maith leis sin, is breá léi an ceol  
+ traidisiúnta agus seinneann sí an fheadóg mhór.      
+ 
+Liam:  Tá gaiscí déanta ag Maria, a Áine. Nach iontach an  rud é go bhfuilimidne ábalta ár dteanga féin   
+ agus ár gcultúr saibhir a roinnt le daoine ó th íortha eile atá ina gcónaí anseo in Éirinn?   
+ 
+Áine: Tá an ceart ar fad agat, a Liam.  
+ 
+
+<!-- page 6 -->
+4 Cuid C 
+Píosa 1 (Canúint Chonnacht)  
+Sheol an rialtas scéim nua darb ainm ‘an Scéim Éarlaise  agus Aisíoca’ i mí Feabhra na bliana seo caite.  
+Tá an scéim nua seo dírithe ar bhuidéil phlaisteacha dí agus ar channaí alúmanaim dí ar a bhfuil lógó speisialta. Faoin scéim seo, íocann an custaiméir suim  bheag airgead breise in éineacht leis an bpraghas 
+atá ar an deoch féin. Faigheann an custaiméir an tsuim bheag airgead breise sin ar ais mar dhearbhán 
+nuair a chuireann sé an buidéal plaisteach folamh nó an canna alúmanaim folamh isteach i gceann  
+de na meaisíní speisialta atá i siopaí agus in ollm hargaí áirithe. Creideann an rialtas go mbeidh torthaí 
+fiúntacha ar an scéim seo, go mbeidh méadú ar na  rátaí athchúrsála sa tír agus go mbeidh laghdú  
+ar an méid bruscair sa tír.     
+ 
+Píosa 2 (Canúint Uladh)  
+Chuir an eagraíocht Gael Linn cartlann nua grianghraf  ar fáil don phobal le gairid. Tugann na grianghraif 
+atá sa chartlann nua léargas ar an obair atá déanta ag an eagraíocht ó bunaíodh í sa bhliain míle naoi 
+gcéad caoga a trí leis an Ghaeilge agus an cultúr Gaelach a chur chun cinn. Tógadh na grianghraif atá  
+sa chartlann ag na himeachtaí éagsúla a d’eagraigh Gael Linn i gcaitheamh na mblianta, ina measc siúd, comórtais díospóireachta, féilte ceoil agus amhránaí ochta, seoltaí ceirníní agus cúrsaí teanga  
+sa Ghaeltacht. Tá an chartlann ar fáil don phobal ar shuíomh na heagraíochta ag www.gael-linn.ie.  
+Tá súil ag Gael Linn cur le líon na ngrianghraf de réir a chéile.   
+  
+
+<!-- page 7 -->
+5 Na Siombailí Anótála Marcála 
+  
+ 
+     
+ 
+     
+ 
+ 
+ 
+ 
+Nóta:  Níor chóir a mheas nach féidir glacadh le ha on fhreagra ach amháin na freagraí a thugtar 
+ar an scéim mharcála. Is féidir glacadh le nath anna cainte, frásaí agus focail a bhfuil a gciall 
+cosúil leo siúd atá ar an scéim mharcála chomh maith.    
+Cuid A (24 marc) 
+FÓGRA A hAON (12 mharc) 
+ 
+1. (a) Cén stáisiún raidió a chuir amach an fógra seo?  3 mharc  
+    (RTÉ Raidió) na Gaeltachta = 3 mharc  
+  RnaG = 3 mharc   RTÉ = 1 mharc   
+ (b) Cén t-ainm a bheidh ar an gclár nua?  3 mharc  
+ 
+   P é  S c é a l  É  = 3 mharc 
+       
+2.  (a)   Cén t-am a chraolfar an clár nua gach Aoine?  3 mharc                    
+   A trí a chlog = 3 mharc  
+    3 a chlog = 3 mharc         (b) Cén sórt ceoil a bheidh sa stiúideo?  3 mharc                    
+    (Ceol) beo = 3 mharc 
+     
+  Siombailí Anótála Cur Síos Arna Léiriú 
+  
+Tic bán  
+Eolas bailí/ceart/ábhartha 
+  
+Náid bronnta   
+Freagra/eolas mícheart 
+ 
+ 
+  
+Líne chorrach 
+chothrománach  
+Líne faoi earráid 
+teanga/ghramadaí/litrithe 
+ 
+__ 
+  
+Gan freagra 
+GF/NR  
+Níor freagraíodh an cheist/an mhír 
+
+
+<!-- page 8 -->
+6 FÓGRA A DÓ (12 mharc) 
+ 
+1. (a)  Cén grúpa múinteoirí a chui r amach an fógra seo?  3 mharc  
+   Eolaíocht(a) = 3 mharc 
+    (b)  Cé mhéad scoláire atá á lorg chun páirt a ghlacadh i dtionscadal suimiúil? 3 mharc 
+ 
+     Fiche = 3 mharc 
+     20 = 3 mharc                             
+    
+2.  (a) Cad a scríobhfaidh na scoláirí ar thorthaí a gcuid oibre? 3 mharc   
+  Cuntas = 3 mharc 
+  Réitigh = 3 mharc       (b)  Cén lá a bheidh an cruinniú ar siúl? 3 mharc     
+  Déardaoin seo chugainn = 3 mharc 
+  Déardaoin = 3 mharc 
+  
+Cuid B (24 marc)  
+COMHRÁ A hAON (12 mharc) 
+ 
+An Chéad Mhír  1. Cén áit sa bhaile mór a bhfuil Seán ag obair go lánaimseartha mar theagascóir?  3 mharc  
+  San ionad aclaíochta = 3 mharc 
+  San ionad = 1 mharc 
+ 2. Cén t-am a thosaíonn Seán ag obair dhá mhaidin sa tseachtain?  3 mharc  
+ Leathuair tar éis a sé = 3 mharc 
+ 6.30 = 3 mharc             An Dara Mír 
+1. Cén cluiche a imríonn Aoife leis an gclub áiti úil?                                                                    3 mharc   
+ 
+ Camógaíocht = 3 mharc 
+                                      
+2.   Cén táille speisialta atá ar fáil do mhic léinn do bhallraíocht trí mhí?                                    3 mharc                
+  €90 = 3 mharc 
+  Nócha euro = 3 mharc 
+  Nócha = 2 mharc 
+            
+  
+
+<!-- page 9 -->
+7 COMHRÁ A DÓ (12 mharc) 
+ 
+An Chéad Mhír 
+ 1. Cá fhad a chaith Liam agus a thuismitheoirí in Sydney?          
+         3 mharc  
+ Cúig seachtaine = 3 mharc 
+ 5 seachtaine = 3 mharc   2.  Cén áit a mbuaileann deirfiúr Liam  le hÉireannaigh eile in Sydney?  3 mharc   
+ Sa chlub Gaelach = 3 mharc  
+ Sa chlub = 1 mharc  
+ 
+ 
+An Dara Mír  
+1.  Cén áit in Éirinn a bhfuil Maria ina cónaí anois?  3 mharc  
+ Luimneach = 3 mharc   
+  
+2. Cén uirlis cheoil a sheinneann Maria?   3 mharc  
+ An fheadóg mhór = 3 mharc        
+ 
+ 
+Cuid C (12 mharc)  
+PÍOSA A hAON (6 mharc) 
+ 1. Cé a sheol ‘an Scéim Éarlaise agus Aisí oca’ i mí Feabhra na bliana seo caite?
+                        3 mharc                     
+(An) rialtas = 3 mharc    
+              2. Scríobh síos áit amháin  ina bhfuil na meaisíní speisialta ar fáil chun buidéil phlaisteacha fholmha 
+agus cannaí alúmanaim folmha a chur isteach iontu.                                3 mharc
+                                                                                                   
+ I siopaí (áirithe) = 3 mharc  In ollmhargaí (áirithe) = 3 mharc  
+PÍOSA A DÓ (6 mharc) 
+ 
+1. Cad atá sa chartlann nua atá curtha ar fáil ag Gael Linn?                                    3 mharc                                                                                         
+ Grianghraif = 3 mharc   
+ Léargas ar an obair atá déanta ag an eagraíocht/acu = 1 mharc 
+                    2.   Cén bhliain a bunaíodh Gael Linn?                                                            3 mharc 
+                                                                                                                 
+ Míle naoi gcéad caoga a trí = 3 mharc 
+ 1953 = 3 mharc 
+ 
+ 
+Bainfear ó 0 go 6 ar chaighdeán na Gaeilge. 
+   
+
+<!-- page 10 -->
+8  
+Freagair do rogha dhá cheann de A, B, C, D anseo. 
+ I gcás A, B, C agus D (Dhá cheann le freagairt)  
+  Leathleathanach nó breis:  
+ Tasc = 2 mharc 
+ Ábhar = 8 marc   Cumas Gaeilge  = 40 marc  
+ = 50 marc x 2 = 100 marc  
+An Tasc (2 mharc) 
+Tá 2 mharc le bronnadh má chomhlíontar an tasc , má éiríonn leis an iarrthóir Giota Leanúnach/ 
+Blag nó Scéal nó Litir/Ríomhphost nó Comhrá a scríobh.  
+ An tÁbhar (8 marc) Tá 8 marc ag dul don ábhar. Ní mór ceangal ci nnte leanúnach a bheith ann idir an teideal   
+a roghnaítear agus an t-ábhar a scríobhtar. Gearrfar pionós ar iarrachtaí ceapadóireachta nach bhfuil ábhartha agus bainte ach leis an teideal.  
+ 
+An Cumas Gaeilge (40 marc) Tá dhá ghné i gceist le cumas: 
+(i)  Cumas Gaeilge = Fairsinge, saibhreas agus oiriúnacht Stór Gaeilge an iarrthóra 
+           (foclóir cuí, oi riúnach, dul na Ga eilge, nathanna cainte ag us frásaí oiriúnacha)  
+agus 
+(ii)  Cruinneas Gaeilge = Beachtas maidir le cr uinnúsáid phríomhghnéithe de cheart na Gaeilge 
+(struchtúir/comhréir na teanga, aimsirí na mbriat hra, séimhiú, urú, réamhfhocail, claoninsint...) 
+agus litriú  
+Nóta : Is ceart creidiúint a thabhairt do  dhea-Ghaeilge le tic a chur leis na múnlaí maithe cainte agus  
+is ceart na mórbhotúin sa teanga a mharcáil tr í líne chorrach chothrománach a chur fúthu. 
+ 
+Nóta: Caithfidh an Scrúdaitheoir an marc a bhronntar as 2 (Tasc), an marc a bhronntar as 8 (Ábhar) 
+agus an marc a bhronntar as 40 (Gaeilge) a thaispeáint ar an bpainéal marcála.   
+ 
+ 
+ 
+ 
+  Cuid II                                                   An  Cheapadóireacht                                                 1 00 marc 
+
+<!-- page 11 -->
+9 Na Siombailí Anótála Marcála 
+ 
+ Siombailí 
+Anótála Cur Síos Arna Léiriú 
+  
+Tic  
+Cumas agus Cruinneas Gaeilge 
+ceart/ábhartha/lena ngabhann fiúntas  
+ 
+  
+Líne chorrach chothrománach  
+Líne faoi earráid teanga/ghramadaí/litrithe 
+ 
+M  
+                    Míléamh    
+Easpa ceangail ag an ábhar atá scríofa  leis an teideal           
+ 
+F1  
+              Iarracht róghearr    
+Níos lú ná leathleathanach (8-11 líne i gcás A,  
+B agus D agus 6-8 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal   
+ 
+F2  
+               Iarracht róghearr    
+Níos lú ná leathleathanach (4-7 líne i gcás A,  B agus D agus 3-5 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha  agus bainteach leis an teideal   
+ 
+F3  
+              Iarracht róghearr    
+Níos lú ná leathleathanach (1-3 líne i gcás A,  B agus D agus 1-2 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha  agus bainteach leis an teideal   
+ 
+  
+    Líne chorrach cheartingearach  
+Líne ar thaobh na láimhe deise den phíosa nach mbaineann le hábhar/leis an teideal    
+ 
+ 
+  
+                    Crosáil/X  
+X in aice le gach píosa/ag bun gach píosa nach mbaineann le hábhar/leis an teideal     
+
+
+<!-- page 12 -->
+10  
+ 
+ 
+ Réimse   Catagóir 40 
+  
+Sármhaith   
+  (i)   Cumas Gaeilge 
+  (ii)  Cruinneas Gaeilge  Ard 95% 38 
+Meánach 90% 36 
+Íseal 85% 34 
+ 
+An-mhaith   
+  (i)   Cumas Gaeilge 
+    (ii)  Cruinneas Gaeilge   Ard 80% 32 
+Meánach 75% 30 
+Íseal 70% 28 
+  
+Maith   
+  (i)   Cumas Gaeilge 
+  (ii)  Cruinneas Gaeilge  Ard 65% 26 
+Meánach 60% 24 
+Íseal 55% 22 
+ 
+Maith go leor   
+  (i)    Cumas Gaeilge 
+  (ii)  Cruinneas Gaeilge   Ard 50% 20 
+Meánach 45% 18 
+Íseal 40% 16 
+ 
+Lag  
+  (i)   Cumas Gaeilge 
+  (ii)  Cruinneas Gaeilge   Ard 35% 14 
+Meánach 30% 12 
+Íseal 25% 10 
+ 
+An-lag   
+  (i)   Cumas Gaeilge 
+  (ii)  Cruinneas Gaeilge   Ard 20% 8 
+Meánach 15% 6 
+Íseal 10% 4 
+Easnamhach   (i)   Cumas Gaeilge 
+  (ii)  Cruinneas Gaeilge     
+5%  
+2 
+
+<!-- page 13 -->
+11  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+  Réimse Catagóir 40  36 30 20 10 
+Siombailí    M F1 F2 F3 
+  
+Sármhaith  Ard 38 34 29 19 10 
+Meánach 36 32 27 18 9 
+Íseal 34 31 26 17 9 
+       
+ 
+An-mhaith  Ard 32 29 24 16 8 
+Meánach 30 27 23 15 8 
+Íseal 28 25 21 14 7 
+       
+  
+ Maith  Ard 26 23 20 13 7 
+Meánach 24 22 18 12 6 
+Íseal 22 20 17 11 6 
+       
+ 
+Maith go 
+leor Ard 20 18 15 10 5 
+Meánach 18 16 14 9 5 
+Íseal 16 14 12 8 4 
+       
+ 
+Lag Ard 14 13 11 7 4 
+Meánach 12 11 9 6 3 
+Íseal 10 9 8 5 3 
+       
+ 
+An-lag  Ard 8 7 6 4 2 
+Meánach 6 5 5 3 2 
+Íseal 4 4 3 2 1 
+       
+Easnamhach  2 2 2 1 1 
+
+<!-- page 14 -->
+12 Páipéar 2 (200 marc)  
+       
+Freagair A agus  B anseo.   
+Nóta: Má tá dhá phointe eolais i gceist, tá 3 mharc ar an gcéad cheann atá ceart agus 2 mharc  
+  ar an dara ceann atá ceart. Nóta : Gearrfar pionós i ngeall ar iomarcaíocht. 
+ 
+Siombailí Anótála Cur Síos Arna Léiriú 
+ Faisnéis bhailí Luach 1 mharc 
+ Faisnéis bhailí Luach 2 mharc 
+ Faisnéis bhailí Luach 3 mharc 
+ Faisnéis bhailí Luach 4 mharc 
+ Faisnéis bhailí Luach 5 mharc 
+  
+Tic bán   
+Eolas bailí/ceart/ábhartha 
+Obair lena ngabhann fiúntas  
+ Freagra/eolas mícheart Náid bronnta 
+  
+Líne chorrach 
+chothrománach  
+Líne faoi earráid 
+teanga/ghramadaí/litrithe 
+       
+ _  
+GF/NR  
+Níor freagraíodh an cheist 
+    Iom Iomarcaíocht Abairt(í) iomarcach(a)  
+ Easnamh Foca(i)I fágtha ar lár 
+ 
+Nóta:  Ba cheart na siombailí anótála a bhfuil marca nna ag gabháil leo a chur gar don eolas ceart 
+sa fhreagra. 
+  CEIST 1                                                          LÉAMHTHUISCINT                                    100 marc  
+
+
+<!-- page 15 -->
+13  
+ 
+ 
+Na Cluichí Oilimpeacha agus Parailimpeacha, 2024 
+Nóta : Má tá dhá phointe eolais i gceist, tá 3 mharc ar an gcéad cheann atá ceart agus 2 mharc ar an dara 
+ceann atá ceart.  
+Nóta : Gearrfar pionós i ngeall ar iomarcaíocht.   
+ 
+1. (a)  Cén rud faoi shearmanas oscailte na gCluichí Oilimpeacha i bPáras a bhí difriúil le blianta eile? 
+  (Alt 1)  5 mharc     
+ 
+• Ní raibh sé ar siúl istigh i staid  
+• Iompraíodh na foirne ó na náisiúin éagsúla ar  bháid ar feadh sé chiliméadar ar abhainn  
+ na Séine 
+ 
+    (b) Cad a tharla don choire a raibh an bhladhm Oilimpeach ar lasadh ann? (Alt 1)         5 mharc     
+• Ardaíodh an coire, agus an bhladhm Oilimpeach ar  lasadh istigh ann, suas san aer/os cionn  
+ na cathrach agus é ceangailte de bhalún te = 5 mharc 
+• Ardaíodh an coire, agus an bhladhm Oilimpeach ar lasadh istigh ann, suas san aer = 3 mharc 
+• Ardaíodh an coire, agus an bhladhm Oilimpeach ar  lasadh istigh ann, os cionn na cathrach  
+ = 3 mharc 
+ 
+2. (a)   Scríobh síos an dá phíosa eolais  faoi líon na lúthchleasaithe a bhí ar fhoireann Oilimpeach  
+     na hÉireann a seoladh chuig na Cluichí Oilimpeacha  i bPáras in 2024. (Alt 2)            
+                                                                                                                         3 mhar c + 2 mharc = 5 mharc     
+          An chéad phíosa eolais  atá ceart = 3 mharc; an dara píosa eolais  atá ceart = 2 mharc     
+• Céad tríocha a trí lúthchleasaí a bhí ar fhoire ann Oilimpeach na hÉireann, an líon is mó    
+ a bhí ar fhoireann Oilimpeach as an tír seo (riamh) = dhá phíosa eolais  
+• Céad tríocha a trí lúthchleasaí = píosa eolais   
+• An líon is mó a bhí ar fhoireann Oilimpeach as an tír seo (riamh) = píosa eolais   
+     (b)    Luaigh dhá rud a bhí ar na lúthchleasaithe a dhéanam h chun cáiliú do na Cluichí Oilimpeacha  
+    ina rogha spóirt. (Alt 2)                                                                            3 mharc + 2 mharc = 5 mharc     
+ 
+    An chéad rud atá ceart = 3 mharc; an dara rud atá ceart = 2 mharc 
+•  Lean siad sceideal dian traenála  
+• Thraenáil siad leis na cóitseálaithe is fearr in ionaid bharrfheabhais (spóirt) = 2 rud  
+• Thraenáil siad leis na cóitseálaithe is fearr 
+• Thraenáil siad in ionaid bharrfheabhais (spóirt) 
+• D’éirigh leo na caighdeáin riachtanacha Oilim peacha a bhí leagtha síos a bhaint amach  
+ sna comórtais cháilithe 
+ 
+3. (a)  Cén fáth a bhfuil áit faoi leith bainte amach ag  an rámhaí Paul O’Donovan i stair na gCluichí  
+   Oilimpeacha sa tír seo? (Alt 3)                                                                        5 mharc 
+• Is é an chéad Éireannach riamh é a bhuaigh bonn trí huaire as a chéile = 5 mharc  
+  (b)   Scríobh síos dhá phíosa eolais a thugtar faoin ngleacaí Rhys McClenaghan ag na Cluichí  
+    Oilimpeacha i bPáras. (Alt 3)                                                                  3 mharc + 2 mharc  = 5 mharc 
+            
+    An chéad phíosa eolais atá ceart = 3 mharc; an dara píosa eolais atá ceart = 2 mharc      
+ A – 50 marc  
+
+<!-- page 16 -->
+14 • Bhuaigh  Rhys McClenaghan an chéad bhonn Oilimpe ach riamh sa ghleacaíocht d’Éirinn = 
+ píosa eolais amháin    
+• Thug McClenaghan taispeántas snasta sa bhabh ta ceannais ar an gcapall corr = dhá phíosa 
+ eolais  
+• Bhuaigh sé an bonn óir ann = pí osa eolais amháin      
+ 4. (a)   Cad a chinntigh clúdach fairsing RTÉ ar na Cluichí Oilimpeacha do mhuintir na hÉireann 
+    sa bhaile? (Alt 4)                5 mharc              
+• Go raibh muintir na hÉireann sa bhaile in ann iomlán an aicsin ó na comórtais éagsúla  
+a fheiceáil = 5 mharc 
+• Go raibh muintir na hÉireann sa bhaile in ann anailís ar na comórtais a chloisteáil = 5 
+mharc      
+• Go raibh muintir na hÉireann sa bhaile in ann agallaimh leis na lúthchleasaithe  
+a chloisteáil = 5 mharc 
+ 
+(b)   Conas a rinne Kellie Harrington agus a lucht leanúna ceiliúradh sa staid nuair a fógraíodh   
+     í mar sheaimpín Oilimpeach ag deireadh na troda? (Alt 4)                                5 mharc            
+ 
+• Bhí Kellie féin ag rince (san fháinne) agus  bhí a lucht leanúna (sa staid) ag canadh nó  
+ ag luascadh bhratacha na hÉireann = 5 mharc                                                                                                   
+• Bhí Kellie féin ag rince = 3 mharc  
+•  Bhí a lucht leanúna ag canadh = 3 mharc  
+•  Bhí a lucht leanúna ag luascadh bhratacha na hÉireann = 3 mharc  
+ 5.   (a)   Cén fáth a raibh bród ar mhuintir na hÉ ireann as lúthchleasaithe Parailimpeacha na tíre seo  
+      ag na Cluichí Parailimpeacha i bPáras a nuraidh? (Alt 5)            5 mharc                    
+• As na sárthaispeántais a thug na lúthchle asaithe (Parailimpeacha ina spóirt féin)  
+• Sé bhonn ar fad a bhuaigh na lúthchleasaithe (Parailimpeacha) 
+• Ba iad buaiteoirí na mbonn ná Katie-George Dunlev y in éineacht le Linda Kelly agus Eve      
+ McCrystal sa rothaíocht, Róisín Ní Riain sa snámh agus Orla Comerford sa lúthchleasaíocht 
+(b)      Conas a chabhróidh an infheistíocht bhreise ón rialtas leis na lúthchleasaithe agus iad 
+ 
+  ag iarraidh cáiliú do na Cluichí Oilimpeacha agus Parailimpeacha in 2028? (Alt 5)      5 mharc   
+ 
+• Chun seirbhísí cóitseála d’ardchaighdeán agus áiseanna traenála den chéad scoth a chur  
+  ar fáil (do na lúthchleasaithe) = 5 mharc  
+• Chun seirbhísí cóitseála d’ardchaighdeán a chur  ar fáil (do na lúthchleasaithe) = 3 mharc 
+• Chun áiseanna traenála den chéad scoth a chur  ar fáil (do na lúthchleasaithe) = 3 mharc 
+[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh] 
+ 
+   
+ 
+ 
+
+<!-- page 17 -->
+15  
+ 
+Páirc an Fhionnuisce 
+Nóta: Má tá dhá phointe eolais i gceist, tá 3 mharc ar an gcéad cheann atá ceart agus 2 mharc ar   
+ an dara ceann atá ceart. Nóta : Gearrfar pionós i ngeall ar iomarcaíocht. 
+ 
+1. (a) Cén fáth a bhfuil cáil ar Pháirc an Fhio nnuisce sa lá atá inniu ann? (Alt 1)   5 mharc   
+• Is í an pháirc chathrach is mó san Eoraip í a bhfuil balla timpeall uirthi = 5 mharc   
+ 
+ (b) Luaigh dhá rud a rinneadh faoi phlean Decimus Burton i bPáirc an Fhionnuisce. (Alt 1)    
+                3 mharc + 2 mharc = 5 mharc  
+ An chéad rud atá ceart = 3 mharc; an dara rud atá ceart = 2 mharc 
+• Cuireadh na mílte crann  
+• Cuireadh feabhas ar an draenáil  
+• Rinneadh athchóiriú ar an mballa teorann    
+• Tógadh bóithre nua  
+ 
+2. (a) Cén úsáid a baineadh as Dún na hArmlainne fadó? (Alt 2)     5 mharc    
+• Is foirgneamh míleata é Dún na hArmlainne 
+• Bhíodh an dún á úsáid ag rialtas na Breataine ar  dtús mar stór armlóin agus níos déanaí  
+ ag Saorstát Éireann      
+• Bhíodh an dún á úsáid ag rialtas na Breataine ar dtús mar stór armlóin     
+• Bhíodh an dún á úsáid ag Saorstát Éireann mar stór armlóin                                                          
+                                                        
+ (b) Scríobh síos dhá phíosa eolais faoi Zú Bhaile Átha Cliath atá suite i bPáirc an Fhionnuisce.  
+  (Alt 2)                       3 mharc + 2 mharc = 5 mharc                  
+  An chéad phíosa eolais atá ceart = 3 mharc; an dara píosa eolais atá ceart = 2 mharc 
+• Osclaíodh an zú in 1831   
+• Tá sé ar cheann de na zúnna is sine (ar domhan)  
+• Tá níos mó ná ceithre chéad ainmhí ann  
+• Tá níos mó ná ceithre chéad ainmhí ó ghná thóga difriúla (ar fud an domhain) ann  
+= dhá phíosa eolais  
+ 3.  (a)   Scríobh síos dhá phíosa eolais faoi na tailte atá i bPáirc an Fhionnuisce. (Alt 3)     
+             3 mharc + 2 mharc = 5 mharc  
+        An chéad phíosa eolais atá ceart = 3 mharc; an dara píosa eolais atá ceart = 2 mharc 
+ 
+• Tá níos mó ná seacht gcéad heicte ár ar fad i bPáirc an Fhionnuisce  
+•  Tá meascán de thailte féir/de choillt e/de lochanna/de bhogaigh (sa pháirc) 
+(Aon dá cheann = 2 phíosa eolais)   
+• Tá a lán fiadhúlra sa pháirc  
+• Is é an fia buí an t-ainmhí is tábhachtaí sa  pháirc agus tá tréad mór fianna buí inti 
+• Tá éagsúlacht mhór crann/plandaí le fáil sa pháirc 
+• Is iomaí speiceas éagsúil éan a bhíonn le feiceáil sa pháirc 
+   B – 50 marc
+ 
+
+<!-- page 18 -->
+16  
+   (b) Luaigh dhá chúis a dtagann a lán daoine go Páirc an Fhionnuisce. (Alt 3) 
+                                          3 mharc + 2 mharc = 5 mharc  
+     An chéad chúis atá ceart = 3 mharc; an dara cúis atá ceart = 2 mharc       
+•  Chun taitneamh a bhaint as an spás glas/as an tírdhreach nádúrtha/as an atmaisféar 
+síochánta (inti) (Aon dá cheann = 2 chúis)  
+•  Bíonn daoine ag iarraidh radharc a fháil ar na fianna = cúis amháin 
+•  Is láthair caitheamh aimsire í an pháirc do dhaoine = cúis amháin 
+ 4.  (a) Scríobh síos dhá phíosa eolais faoi chuairt an Phápa Eo in Pól II ar Pháirc an Fhionnuisce  
+   i mí Mheán Fómhair 1979. (Alt 4)                              3 mharc + 2 mharc = 5 mharc  
+  An chéad phíosa eolais atá ceart = 3 mharc; an dara píosa eolais atá ceart = 2 mharc   
+• Léigh an Pápa Aifreann (sa pháirc)  
+• Bhí níos mó ná milliún duine i láthair (ag an Aifreann sin)  
+• Tógadh Cros an Phápa (sa pháirc) in ómós don ócáid 
+        (b) Tabhair dhá phíosa eolais faoi imeachtaí spóirt i bPáirc an Fhionnuisce. (Alt 4)                 
+              3 mharc + 2 mharc = 5 mharc  
+  An chéad phíosa eolais atá ceart = 3 mharc; an dara píosa eolais atá ceart = 2 mharc     
+• Eagraíonn cumainn spóirt cluichí Gaelacha ag us cluichí sacair sna páirceanna imeartha 
+(éagsúla atá inti) = dhá phíosa eolais  
+• Tá club cruicéid agus póló sa pháirc = dhá phíosa eolais  
+• Bíonn comórtais lúthchleasaíochta ar siúl inti (go rialta)                                                                                    
+5.  (a)   Scríobh síos an dá rud a iarrtar ar chuairteoirí a dhéana mh mar chuid den fheachtas speisialta 
+ chun na fianna a chosaint sa pháirc. (Alt  5)                    3 mharc + 2 mharc = 5 mharc     
+ 
+  An chéad rud atá ceart = 3 mharc; an dara rud atá ceart = 2 mharc      
+• Fanacht siar caoga méadar ó na fianna 
+• Gan bia a thabhairt dóibh 
+ 
+ (b)   Luaigh dhá rud atá i bpleananna Oifig na nOibreacha Poiblí chun cúrsaí sábháilteachta  
+  sa pháirc a fheabhsú. (Alt 5)                                                                    3 mharc + 2 mharc = 5 mharc 
+ 
+                An chéad rud atá ceart = 3 mharc; an dara rud atá ceart = 2 mharc     
+• Níos mó cosán agus lánaí rothaíochta a thógáil = dhá rud  
+• Na bóithre a fheabhsú = rud amháin  
+• Gearradh siar ar an méid tráchta a théann tríd an bpáirc = rud amháin    
+ 
+ 
+[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh] 
+ 
+ 
+  
+
+<!-- page 19 -->
+17 Roinn na Litríochta: Na Siombailí Anótála 
+Siombailí Anótála Cur Síos Arna Léiriú 
+  
+Faisnéis bhailí   
+Gan mharc 
+  
+Faisnéis bhailí  
+Luach 1 mharc 
+ 
+Faisnéis bhailí Luach 2 mharc 
+ 
+Faisnéis bhailí Luach 3 mharc 
+ 
+Faisnéis bhailí Luach 4 mharc 
+ 
+Faisnéis bhailí Luach 5 mharc 
+  
+Freagra/eolas mícheart  
+Náid bronnta 
+ 
+  
+Líne chorrach 
+chothrománach  
+Líne faoi earráid 
+teanga/ghramadaí/litrithe 
+ _ GF/NR Níor freagraíodh an cheist/an mhír 
+ 
+    
+ 
+      
+ 
+ 
+  
+
+
+<!-- page 20 -->
+18 2A                                             PRÓS AINMNITHE                                          50 marc 
+ 
+Nóta:  Níl sé i gceist a chur in iúl go bhfuil na freagraí samplacha thíos uileghabhálach ná eisiach. Is samplaí 
+de fhreagraí féideartha atá iontu; déanfaidh na sc rúdaitheoirí tuillteanas gach freagra a mheas agus 
+bronnfar marcanna ar phointí bailí eolais eile a chuirf idh na hiarrthóirí i láthair de réir a bhfiúntais.  
+ 
+Freagair do rogha dhá cheann as (a), (b) nó (c). 
+ 
+(a) Dís                                                                                                                                                           (25 marc)                   
+Freagair an cheist thíos faoin ngearrscéal Dís. 
+ ‘Tá sé ansan anois os comhair do dhá shúl. Mi se duine des na mná a bhí sa tsuirbhé sin.’ 
+ Déan cur síos ar an gcomhrá a bhí idir Seán  agus a bhean chéile an tráthnóna sin.   
+5 phointe  eolais agus 5 mharc ar gach pointe eolais 
+(5 mharc = 2 mharc ar lomphointe eolais agus 3 mharc ar fhorbairt) 
+Pointí eolais samplacha 
+• Bhí an bhean chéile ag impí ar Sheán labhair t léi ach ní raibh fonn cainte ar Sheán   
+• Bhí fearg ar an mbean chéile mar cheap sí go raibh an páipéar níos tábhachtaí do Sheán ná 
+í féin   
+• Dúirt an bhean chéile go raibh sí (agus a fear cé ile) sa pháipéar ach ní fhaca sé í (iad) ann   
+• Dúirt an bhean chéile gur ghlac sí páirt i suirbhé  a léirigh go raibh an ceathrú cuid de mhná 
+pósta na tíre míshona/míshásta   
+• Mhínigh sí gur tháinig bean go dtí an doras i mí Eanáir agus bhí suirbhé á dhéanamh aici   
+• Bhí an bhean chéile míshásta/míshona mar is  beag meas atá ag aon duine ar mhná  
+ a dhéanann obair an tí   
+• Bhí fearg ar Sheán gur thug a bhean chéile ga ch eolas don strainséir faoin mbeirt acu   
+• Dúirt an bhean chéile le Seán a ghlór a ísliú nó go ndúiseodh sé an leanbh   
+• Dúirt sí go raibh bean an tsuirbhé ag súil le leanbh   
+• Bhí bean an tsuirbhé agus a fear céile ina gcón aí in árasán ach ní ligfeadh an t-úinéir aon 
+leanbh isteach ann   
+• Bhí plean ag an mbean chéile an post a dhéanam h fad is a bheadh bean an tsuirbhé ar shaoire 
+mháithreachais  
+• Theastaigh ón mbean chéile sorn nua a cheannach leis an airgead ón bpost   
+• Bhí fearg ar Sheán go mbeadh a bhean chéile ag  dul ó dhoras go doras leis an leanbh ina 
+baclainn aici   
+• Dúirt an bhean chéile ansin nach raibh sí míshon a agus nár inis sí an fhírinne sa suirbhé   
+• Rinne Seán rud éigin an mhaidin sin/an oíche ro imhe sin agus chuir sé sin fearg ar an mbean 
+chéile   
+• Bhí cupán caife ag an mbean chéile le bean an tsuirbhé an mhaidin sin   
+• Bhí an teach bunoscionn agus bhí an bille ESB tar éis teacht   
+• Thosaigh an bhean chéile ag caint faoi na Sín igh fadó agus cheap sí go raibh an nós acu  
+ an bhean a dhó nuair a chailltí an fear   
+• Ba mhaith leis an mbean chéile leabhar Mao a léamh nuair nach bhfaigheadh sí an páipéar/ 
+nuair nach mbeadh aon duine ann le labhairt léi   
+• Bhí fearg ar an mbean chéile gur fhreagair sí a ceisteanna/gur thug sí caife di   
+ 
+[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh] 
+  
+
+<!-- page 21 -->
+19 (b) Oisín i dTír na nÓg                                                      ( 25 marc)  
+Freagair an cheist thíos faoin scéal béaloidis Oisín i dTír na nÓg . 
+‘Shil na deora frasa anuas le grua Oisí n agus phóg sé a athair go caoin.’  
+Déan cur síos ar an saghas saoil a bhí ag Oisín ón uair a d’fhág sé Fionn agus na Fianna go dtí 
+deireadh an scéil.  
+ 5 phointe  eolais agus 5 mharc ar gach pointe eolais 
+(5 mharc = 2 mharc ar lomphointe eolais agus 3 mharc ar fhorbairt) 
+Pointí eolais samplacha 
+• Chuaigh siad ar mhuin an chapaill bháin agus thaistil siad thar farraige 
+• Bhí turas iontach acu ar an bhfarraige…chonaic siad eilit mhaol, madra bán, cailín le húll óir  
+ina lámh ar chapall, fear ar chapall bán le claíomh ina lámh 
+• Bhí troid ag Oisín le Fómhar Builleach…chaith Oisí n trí oíche agus trí lá ag troid le Fómhar 
+Builleach…mharaigh Oisín Fómhar Builleach/bhain sé an ceann de agus lig sé iníon Rí na mBeo 
+saor 
+• Bhí áthas ar Oisín nuair a shroich sé Tír na nÓg…cuireadh fáilte mhór rompu  
+• Bhí féasta ann d’Oisín agus Niamh…mhair an féasta deich n-oíche agus deich lá 
+• Pósadh Niamh Chinn Óir agus Oisín 
+• Bhí saol aoibhinn acu/mhair siad go sona sásta 
+• Níor tháinig meath orthu/níor éirigh siad sean 
+• Bhí flúirse de gach rud acu 
+• Bhí beirt mhac agus iníon/triúr páistí acu: Fionn, Oscar agus Plúr na mBan 
+• Tháinig uaigneas ar Oisín agus theastaigh uaidh Fionn agus na Fianna a fheiceáil arís 
+• D’iarr sé ar Niamh an capall bán a thabhairt dó  chun go dtabharfadh sé cuairt ar Éirinn 
+• Thug Niamh rabhadh d’Oisín gan cos a leagan ar thalamh na hÉireann  
+• Dúirt sí leis dá ligfeadh sé an capall uaidh go n-éireodh sé sean/liath/dall 
+• D’fhág Oisín slán ag a chlann agus chuaigh sé ar ais go hÉirinn 
+• Bhí brón air nuair a shroich sé Éire mar ní rai bh tásc ná tuairisc ar Fhionn ná ar na Fianna 
+• Chuaigh sé go hAlmhain Laighean/teach Fhinn ach ní fhaca sé aon rud 
+• Nuair a shroich sé Gleann na Smól, thug sé ca bhair do bhuíon a bhí cromtha faoi leac mhór 
+• D’athraigh a shaol nuair a thit sé den chapall …d’éirigh sé sean/chaill sé  a neart/bhí sé dall  
+• Bhí Naomh Pádraig cineálta le hOisín agus chua igh Oisín le Naomh Pádraig ar thuras timpeall 
+na hÉireann 
+• D’inis Oisín a scéalta do Naomh Pádr aig agus d’éist Naomh Pádraig leo 
+• Chabhraigh Pádraig leis…thug sé bia agus leab a d’Oisín agus d’ith Oisín ina aonar…mhúin sé 
+soiscéal Dé dó 
+ 
+[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh] 
+ 
+      
+ 
+  
+  
+
+<!-- page 22 -->
+20 (c) Hurlamaboc                                      ( 25 marc)  
+Freagair an cheist thíos faoin ngiota as an úrscéal Hurlamaboc. 
+ 
+‘Fiche bliain ó shin a pósadh Lisín agus Pól. Bheadh an ócáid iontach á ceiliúradh acu i gceann 
+seachtaine.’  Déan cur síos ar an gcineál saoil a bhí ag Lisín ó pósadh í fiche bliain ó shin.   
+5 phointe  eolais agus 5 mharc ar gach pointe eolais 
+(5 mharc = 2 mharc ar lomphointe eolais agus 3 mharc ar fhorbairt) 
+Pointí eolais samplacha 
+• Bhí saol iontach ag Lisín mar bhí ag éirí go  sármhaith lena fear céile, Pól…bhí Pól ina 
+ léachtóir san ollscoil/rinne sé airgead as a bheith ag ceannach stoc ar an idirlíon/bhí 
+ árasáin agus tithe aige ar fud na hEorpa agus cíos á bhailiú aige uathu 
+• Bhí saol foirfe ag Lisín…ní raibh uirthi dul amach ag obair…meas ag daoine uirthi  
+• Bhí Lisín sona ina saol…fear céile maith/saibhir aici agus clann mhac, Ruán agus Cú (Cuán), 
+ iad cliste agus éirimiúil…bhí sé de nós ag Ruán an rud a bhí a mháthair ag iarraidh   a chloisteáil a rá léi 
+• Bhí meas ar Lisín mar bhí an nós ag gach dui ne an rud a bhí sí ag iarraidh a chloisteáil 
+ a rá léi i gcónaí 
+• Bhí saol gnóthach ag Lisín/ní raibh sí riamh díomhaoin…bhí sí ina ball de chlubanna 
+ a léigh leabhair, clubanna a rinne dea-obair ar son daoine bochta, clubanna a d’eagraigh 
+ léachtaí ar stair áitiúil, ar gheolaíocht áitiúil agus ar litríocht áitiúil…bhí sí ina ball  de chlubanna faoi conas do ghairdín a le agan amach nó do theach a mhaisiú ionas  
+ go mbeadh do chairde in éad leat 
+• Bhí saol suimiúil/spéisiúil ag Lisín…d’fhreastail sí ar ranganna Spáinnise, Rúisise, Sínise, 
+ Seapáinise…thaitin scannáin agus drámaí léi…bhí Lisín ábalta labhairt ar aon ábhar 
+ faoin ngrian 
+• Bean tí den scoth a bhí i Lisí n…bhí an teach néata agus álainn 
+• Bhí Lisín ag tnúth go mór leis an gcói sir chun ceiliúradh a dhéanamh ar a pósadh…bhí 
+ a lán ullmhúchán déanta aici don chóisir…bhí Lisín sásta go raibh gach rud idir lámha  aici…gloiní agus fíon ordaithe aici sa siop a fíona…reoiteoir lán le pióga, le hispíní,  
+ le bradán agus le harán lámhdhéanta…an dara reoiteoir tógtha ar cíos aici agus é lán  
+ le rudaí deasa…dá mbeadh an lá go breá, bhe adh an chóisir acu amuigh sa ghairdín…boird 
+ agus cathaoireacha faighte ar iasacht ag Li sín ó na comharsana…bhí péint nua ar na ballaí, 
+ snas ar na hurláir agus bláthanna sna prócaí 
+• Bhí a fhios ag Lisín go mbeadh an ceiliúradh go haoibhinn…bheadh an fhéile caithréimeach 
+• Bhí Lisín ina cónaí ar Ascaill na Fuinseoige…c eantar galánta le caighdeáin arda i measc 
+ na mban 
+• Bhí Lisín níos faiseanta agus níos néata ná bean ar bith eile ar Ascaill na Fuinseoige 
+• Bhí sí foirfe…bhí an chuma uirthi go raibh sí ina hógbhean 
+ 
+[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh] 
+  
+ 
+ 
+  
+
+<!-- page 23 -->
+21  
+ 
+ 
+Níl cead aon ábhar a bhaineann le Prós Ainmnith e a úsáid sna freagraí ar an bPrós Roghnach. 
+ Freagair do rogha dhá cheann as (a), (b) nó (c) thíos. 
+ 
+(a) Maidir le gearrscéal roghnach  a ndearna tú staidéar air le linn do chúrsa, tabhair cuntas ar na 
+príomhimeachtaí (príomhrudaí) a thar laíonn sa ghearrscéal sin.    ( 25 marc) 
+ 
+Príomhimeachtaí (príomhrudaí) = 23 marc 
+ 5 phointe eolais ag teastáil  
+(5 mharc an cea nn ar an gcéad trí phointe eolais + 4 mharc an ceann ar an dá phointe eolais eile) 
+     ( 23 marc) 
+  5 mharc = 2 mharc ar lomphointe eolais + 3 mharc ar fhorbairt 
+  4  mharc = 2 mharc ar lomphointe eolais + 2 mharc ar fhorbairt 
+      Ní mór teideal an ghearrscéil sin, mar aon le  hainm an údair, a scríobh síos go cruinn.      
+  Teideal an ghearrscéil = 1 mharc 
+                                       Ainm an údair = 1 mharc                                                                               ( 2 mharc) 
+ 
+  [Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh] 
+(b) Maidir le scéal béaloidis roghnach  a ndearna tú staidéar air le linn do chúrsa, ainmnigh  
+an phríomhphearsa (an príomhcharachtar) sa scéal bé aloidis sin. Tabhair cuntas ar na heachtraí  
+is mó a tharlaíonn don duine sin ó thús go deireadh an scéil.                                        ( 25 marc) 
+  
+ An phríomhphearsa (an príomhcharachtar) a ainmniú = 1 mharc             ( 1 mharc)  
+Na heachtraí is mó = 22 marc         
+                                                    5 phointe eolais ag teastáil  
+        ( 5 mharc an ceann ar an gcéad dá phointe eolais + 4 mharc an ceann ar na trí phointe eolais eile) 
+    (22 marc) 
+5 mharc = 2 mharc ar lomphointe eolais + 3 mharc ar fhorbairt 
+4 mharc = 2 mharc ar lomphointe eolais + 2 mharc ar fhorbairt 
+ 
+Ní mór teideal an scéil béaloidis sin a scríobh síos go cruinn.    Teideal an scéil béaloidis = 2 mharc                                                           ( 2 mharc) 
+      [Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh] 
+ 
+  2B                                              PRÓS ROGHNACH                                                   50 marc 
+
+<!-- page 24 -->
+22 (c)  Maidir le giota as úrscéal roghnach  a ndearna tú staidéar air le  linn do chúrsa, scríobh síos 
+príomhthéama an ghiota sin, dar leat. Tabhair  cuntas ar na heachtraí is mó a léiríonn  
+ an príomhthéama sin sa ghiota.                                                                                                       ( 25 marc)    
+  
+An príomhthéama a lua = 1 mharc  ( 1 mharc) 
+Na heachtraí is mó = 22 marc     
+  5 phointe eolais ag teastáil  
+        ( 5 mharc an ceann ar an gcéad dá phointe eolais + 4 mharc an ceann ar na trí phointe eolais eile)                      
+  (22 marc) 
+5 mharc = 2 mharc ar lomphointe eolais + 3 mharc ar fhorbairt 
+4 mharc = 2 mharc ar lomphointe eolais + 2 mharc ar fhorbairt 
+Ní mór teideal an úrscéil sin, mar aon le hainm an údair, a scríobh síos go cruinn . 
+ Teideal an úrscéil = 1 mharc 
+                                 Ainm an údair = 1 mharc                                                                                 ( 2 mharc)    
+ 
+                            [Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh]    
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+  
+ 
+  
+
+<!-- page 25 -->
+23 3A                                             FILÍOCHT AINMNITHE                                         50 marc     
+ 
+Nóta:  Níl sé i gceist a chur in iúl go bhfuil na freagraí samplacha thíos uileghabhálach ná eisiach. Is samplaí 
+de fhreagraí féideartha atá iontu; déanfaidh na sc rúdaitheoirí tuillteanas gach freagra a mheas agus 
+bronnfar marcanna ar phointí bailí eolais eile a chuirf idh na hiarrthóirí i láthair de réir a bhfiúntais.  
+ Freagair do rogha dhá cheann as (a), (b) nó (c).      
+ (a) Mo ghrá-sa (idir lúibíní)                    (25 marc)  
+ 
+(i) (a) Cén bláth a luann an file i véarsa a haon?  ( 2 mharc) 
+     Freagraí : ‘bláth na n-airní’… 
+ 
+  (b)  Cad a deir an file faoi na nóiníní i véarsa a dó?       ( 2 mharc) 
+      Freagraí : ‘is as a chluasa a fhásfaidh siad (nua ir a bheidh sé ocht dtroigh síos)’…  
+   beidh nóiníní ag fás as a chluasa agus é curtha sa chré… 
+ 
+   (c)  Scríobh síos dhá rud a deir an file faoi ghruaig an  fhir i véarsa a ceathair.     
+    ( 2 mharc + 2 mharc)                   
+   Freagraí : níl a ghruaig síodúil…tá a ghruaig cosúil le gruaig bhean Shakespeare…tá dath  
+ dubh ar a ghruaig…tá a ghruaig cosúil le ‘WIRE deilgní’… 
+              (ii) Scríobh síos dhá phointe eolais, i d’fhocail féin , faoi shúile an fhir i véarsa a trí den dán.     
+      (8 marc) 
+Dhá phointe eolais = 4 mharc + 4 mharc 
+ Pointí eolais samplacha: Níl dath glas ar a shúile…níl cuma cheolmhar/bhinn ar a shúile…  
+ tá a shúile róghar dá chéile…   Nóta:  Línte cuí díreach as véarsa a trí gan rian an iarrthóra ar an bhfreagra 
+                                                                                                                                    = 2 mharc + 2 mharc 
+  
+(iii)  Tabhair dhá phointe eolais, i d’fhocail féin , faoin íomhá (faoin bpictiúr) den fhear a thugann   
+  an file dúinn i véarsa a cúig den dán.    ( 9 marc) 
+ Dhá  phointe eolais = 5 mharc + 4 mharc    
+ Pointí eolais samplacha:  Tugann sé úlla di…tugann sé caora fí niúna di nuair a bhíonn sé sona    
+ sásta…is fear cneasta/cineálta/fial/flaithiúil/grámhar é…  Nóta:  Línte cuí díreach as véarsa a cúig ga n rian an iarrthóra ar an bhfreagra 
+                                                                        = 2 mharc + 2 mharc 
+ 
+[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh] 
+   
+
+<!-- page 26 -->
+24 (b) An tEarrach Thiar    (25 marc) 
+ 
+(i) Déan cur síos, i d’fhocail féin, ar an íomhá (ar an bpictiúr) den fhear a thugann an file dúinn  
+ i véarsa a dó den dán. (Is leor dhá phointe eolais.)     ( 8 marc) 
+ Dhá  phointe eolais = 4 mharc + 4 mharc 
+ Pointí eolais samplacha: Tá cliabh/ciseán ar a dhroim aige…t á an fear ag iompar feamainne… 
+ tá sé ag obair ar an trá…   Nóta:  Línte cuí díreach as véarsa a dó ga n rian an iarrthóra ar an bhfreagra 
+                                                                                                                          = 2 mharc + 2 mharc 
+ 
+(ii)  Scríobh síos, i d’fhocail féin , dhá phointe eolais faoi na mná i véarsa a trí.                   ( 8 marc) 
+  D h á  phointe eolais = 4 mharc + 4 mharc 
+ Pointí eolais samplacha: Tá siad i locháin/i locha beaga uisce/ar an trá…tá a gcótaí craptha 
+ acu…tá a scáileanna le feiceáil san uisce…tá an ghrian ag taitneamh anuas ar na mná…tá siad 
+ ag obair san uisce…  Nóta:  Línte cuí díreach as véarsa a trí gan rian an iarrthóra ar an bhfreagra 
+                                                                                                                           = 2 mharc + 2 mharc 
+ 
+(iii)  Tabhair dhá phointe eolais, i d’fhocail féin , faoin íomhá (faoin bpictiúr) den churrach   
+ a thugann an file dúinn i véarsa a ceathair.                                                                            ( 9 marc) 
+ 
+  D h á  phointe eolais = 5 mharc + 4 mharc  
+  Pointí eolais  samplacha: Tá an churrach  lán le héisc…tá torann na maidí rámha le   
+  cloisteáil…tá an churrach  ag filleadh ar an gcladach ó lár na farraige/um thráthnóna…tá  
+  na fir sa churrach…       
+ Nóta:  Línte cuí díreach as véarsa a ceathair gan rian an iarrthóra ar an bhfreagra  
+                                                                                                                           = 2 mharc + 2 mharc   
+                
+[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh] 
+   
+
+<!-- page 27 -->
+25 (c) Colscaradh         (25 marc) 
+ 
+(i)     Déan cur síos, i d’fhocail féin , ar dhá rud a theastaíonn ón bhfear ina shaol pósta i véarsa  
+ a haon den dán.                          ( 8 marc)                   
+ Dhá rud = 4 mharc + 4 mharc 
+ 
+Freagraí samplacha:  Ba mhaith leis cónaí le bean in ai ce lena mhuintir féin…ba mhaith leis 
+saol compordach/grámhar/sona sa teach agus iad ag tógá il na bpáistí…teastaíonn saol/               
+pósadh traidisiúnta ón bhfear…ba mhaith leis go bhfanfadh a bhean chéile sa bhaile… 
+ Nóta:  Línte cuí díreach as véarsa a haon ga n rian an iarrthóra ar an bhfreagra  
+                                                                                                                                   = 2 mharc + 2 mharc  
+  
+(ii) Tabhair dhá phointe eolais, i d’fhocail féin , faoin gcineál duine í an bhean  i véarsa a dó.       
+           ( 8 marc)                   
+ Dhá phointe eolais =  4 mharc + 4 mharc 
+ 
+Freagraí samplacha: Is bean nua-aimseartha í…tá neamhs pleáchas sa phósadh ag teastáil 
+uaithi/is bean neamhspleách í…ba mhaith lé i leath den chumhacht a bheith aici/go mbeadh 
+a cuid airgid féin aici/leath den saibhreas a bheith aici…ba mhaith léi teach/dul ar saoire 
+(thar lear)/go mbeadh meas ag daoine uirthi… 
+ Nóta:  Línte cuí díreach as véarsa a dó ga n rian an iarrthóra ar an bhfreagra 
+                                                                                                                                            = 2 mharc + 2 mharc 
+ (iii)    An maith leat an dán seo?  Tabhair dhá fháth,  i d’fhocail féin , le do fhreagra.    ( 9 marc)    
+ Is maith/Ní maith = 1 mharc                                                                                                                                        
+ Dhá fháth  = 4 mharc + 4 mharc 
+Fáthanna:  
+Is maith:  Is maith liom na pictiúir/an chodarsnacht/an téama sa dán… 
+Ní maith:  Tá an téama brónach…ní maith liom na mothúcháin sa dán… 
+ 
+[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh]
+ 
+ 
+  
+
+<!-- page 28 -->
+26 3B                                               FILÍOCHT ROGHNACH                                            50 marc 
+ 
+Níl cead aon ábhar a bhaineann le Filíocht Ainmnithe a úsáid sna freagraí ar an bhFilíocht Roghnach.   
+Freagair do rogha dhá cheann as (a), (b) nó (c).  
+Níl cead an dán roghnach céanna  a úsáid faoi dhó  sna freagraí ar (a), (b) nó (c) thíos.  
+ (a) (i) Maidir le dán nua-aimseartha roghnach  a ndearna tú staidéar air le linn do chúrsa, scríobh 
+ síos príomhthéama an dáin sin, dar leat. Tabhair dhá phointe eolais, i d’fhocail féin , faoin 
+ bpríomhthéama sin sa dán.        ( 9 marc) 
+ 
+  Príomhthéama an dáin  = 1 mharc   
+  Dhá phointe eolais = 4 mharc + 4 mharc  
+ 
+(ii)   Luaigh íomhá (pictiúr) amháin as an dán atá suimiúil, dar leat.   
+ Tabhair dhá phointe eolais, i d’fhocail féin faoin íomhá (faoin bpictiúr) sin.   (7 marc)                   
+    An íomhá (an pictiúr) atá suimiúil = 1 mharc 
+    Dhá  phointe eolais = 3 mharc + 3 mharc 
+(iii)  Cén t-atmaisféar atá sa dán seo, dar leat? Tabhair dhá shampla den atmaisféar sin sa dán.                          
+             ( 7 marc) 
+                                        An t-atmaisféar a lua = 1 mharc 
+                                        Dhá shampla = 3 mharc + 3 mharc       
+ 
+           Ní mór teideal an dáin sin, mar aon le hainm an fhile, a scríobh síos go cruinn .   ( 2 mharc)  
+  Ainm an dáin = 1 mharc 
+   Ainm an fhile = 1 mharc 
+ 
+  [Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh]  
+(b)    (i) Maidir le dán nua-aimseartha roghnach a ndearna tú staidéar air le  linn do chúrsa, scríobh  
+   síos príomhthéama an dáin sin, dar leat. Tabhair dhá phointe eolais, i d’fhocail féin , faoin  
+   bpríomhthéama sin sa dán.                                      ( 9 marc)        
+ 
+Príomhthéama an dáin = 1 mharc          
+Dhá phointe eolais = 4 mharc + 4 mharc   
+ 
+(ii) Scríobh síos an mothúchán is láidre atá sa dán, dar leat.  
+           Tabhair dhá shampla, i d’fhocail féin , den mhothúchán sin sa dán.                                  ( 7 marc) 
+                                      An mothúchán is láidre = 1 mharc 
+               Dhá shampla = 3 mharc + 3 mharc 
+ 
+(iii)  Scríobh síos an rud is mó a thaitníonn leat sa dán seo. Tabhair dhá fháth, i d’fhocail        
+ féin, le do fhreagra.                           ( 7 marc) 
+       An rud is mó a thaitníonn leat sa dán seo = 1 mharc 
+               Dhá fháth = 3 mharc + 3 mharc 
+ 
+           Ní mór teideal an dáin sin, ma r aon le hainm an fhile, a scríobh síos go cruinn .           (2 mharc)  
+                                 Ainm an dáin = 1 mharc  
+     Ainm an fhile = 1 mharc 
+ 
+     [Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh] 
+ 
+
+<!-- page 29 -->
+27 (c) (i) Maidir le dán nua-aimseartha  roghnach  a ndearna tú staidéar air le linn do chúrsa, 
+  scríobh síos, i d’fhocail féin, príomhsmaointe an dáin sin.      ( 9 marc) 
+ 
+   Dhá phríomhsmaoineamh = 5 mharc + 4 mharc 
+ 
+(ii)    Roghnaigh íomhá (pictiúr) amháin  a úsáideann an file sa dán seo. Mínigh an íomhá  
+ (an pictiúr) sin  i d’fhocail féin. (Is leor dhá phointe eolais.)                ( 7 marc) 
+ 
+ Íomhá (pictiúr) amháin a úsáideann an file = 1 mharc 
+ Dhá phointe eolais = 3 mharc  + 3 mharc 
+ 
+(iii) An maith leat an dán seo? Tabhair dhá fháth, i d’fhocail féin , le do fhreagra.               ( 7 marc) 
+ 
+Is maith/Ní maith = 1 mharc 
+Dhá fháth = 3 mharc +  3 mharc 
+              Ní mór teideal an dáin sin, mar aon le hainm an fhile, a scríobh síos go cruinn .        (2 mharc) 
+ Ainm an dáin = 1 mharc  
+ Ainm an fhile = 1 mharc  
+ 
+                                 [Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh] 
+     
+ 
+      
+
+<!-- page 30 -->
+28     Scéim Mharcála Mhodhnaithe (SMM) 
+Cuirtear Scéim Mharcála Mhodhnaithe (SMM) i bhfeidhm  ar an obair a chuireann iarrthóirí isteach  
+ar deonaíodh ceann amháin nó níos mó de na socruithe seo a leanas dóibh: 
+• Úsáid gléas taifeadta 
+• Úsáid próiseálaí focal 
+• Úsáid scríobhaí 
+• Tarscaoileadh maidir le litriú agus  le gnéithe áirithe den ghramadach 
+Nuair a dheonaítear an Scéim Mharcála Mhodhnaithe d’iarrthóir ar bith:  
+Déantar an t-ábhar  sna freagraí ar fad a mheasúnú de réir na gnáthscéime marcála. 
+Déantar measúnú ar Chruinneas Gaeilge  na n-iarrthóirí sin a mbaineann an Scéim Mharcála Mhodhnaithe 
+leo as a máistreacht ar chruinnúsáid ghnéithe ainmni the den ghramadach. Ní chuirtear botúin litrithe san 
+áireamh. 
+Litriú :  
+ Ní chuirtear litriú san áireamh agus measúnú á dhéan amh ar chaighdeán Gaeilge an iarrthóra. I gcás 
+earráidí litrithe, ní chuirtear línte corracha cothro mánacha faoi dhrochlitriú in aon áit sa script - 
+Cluastuiscint, Ceapadóireacht, Léamht huiscint ná sna freagraí litríochta. 
+Cruinneas na Gaeilge : 
+ Maidir le Gaeilge , gearrfar pionós ar bhotúin mhóra chomhréire  a chuireann struchtúr na teanga as 
+riocht. Caithfear na gnéithe ainmnithe seo a leanas  a chur san áireamh agus marc á bhronnadh ar an 
+iarracht: Comhréir chruinn; Cruinnúsáid na Copaile; Cruinnúsáid aimsirí na mbriathra; Cruinnúsáid na 
+réamhfhocal. Is ceart na mórbho túin sin a mharcáil trí líne chorra ch chothrománach a chur fúthu. 
+Ní chuirtear na gnéithe seo a leanas den ghrama dach san áireamh agus measúnú á dhéanamh ar 
+chaighdeán Gaeilge an iarrthóra: úsáid an uraithe; ús áid an tséimhithe; aontú ainmfhocal is aidiachtaí. 
+Cuirtear an Scéim Mharcála Mhodhnaithe i bhfeidhm  sa mheasúnú ar Ghaeilge sna ranna seo a leanas: 
+• An Chluastuiscint: An mharcáil ar mheasúnú ar an nGaeilge [Gaeilge lochtach: 0-6 a bhaint den 
+iomlán a gnóthaíodh] 
+• Páipéar 1: Cuid II: An Cheapadóireacht  - An measúnú ar Chumas Gaeilge as 40 marc   
+• Páipéar 2: Ceist 1:  An Léamhthuiscint - An measúnú a dhéantar ar chaighdeán na Gaeilge sna 
+freagraí [Léamhthuiscint A: Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh agus 
+Léamhthuiscint B: Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh] 
+• Páipéar 2: Ceist 2: An Prós - An measúnú a dhéantar ar chaighdeán na Gaeilge sna freagraí próis 
+[Gaeilge lochtach: 0 - 4 a bhaint den iomlán a gnóthaíodh] 
+• Páipéar 2: Ceist 3: An Fhilíocht - An measúnú a dhéantar ar chaighde án na Gaeilge sna freagraí 
+filíochta [Gaeilge lochtach: 0 - 4 a bhaint den iomlán a gnóthaíodh] 
+ Ní mór don scrúdaitheoir an tsiombail anótála ‘ SMM ’ a chur ar Pháipéar 1 ag  tús na Cluastuisceana,  
+Cuid A, agus ar chlúdach Pháipéar 2 nuair a c huirtear an Scéim Mharcála  Mhodhnaithe i bhfeidhm.  
+ 
+  
+
+<!-- page 31 -->
+29 Páipéar 1: Cuid II: An Cheapadóireacht  - an measúnú ar Chumas Gaeilge as 40 marc    
+Aicme Cur síos ar chatagóirí Marc as 
+40 
+Sármhaith 
+ Cruinnúsáid shármhaith ghnéithe ainmnithe den ghramadach 34-40 
+An-mhaith 
+ Cruinnúsáid an-mhaith ghnéithe ainmnithe den ghramadach 28-33 
+Maith 
+ Cruinnúsáid mhaith ghnéithe ainmnithe den ghramadach 22-27 
+Maith go leor 
+ Cruinnúsáid maith go leor ghnéithe ainmnithe den ghramadach 16-21 
+Lag 
+ Cruinnúsáid lag ghnéithe ainmnithe den ghramadach 10-15 
+An-lag 
+ Cruinnúsáid an-lag ghnéithe ainmnithe den ghramadach 4-9 
+Easnamhach 
+ Cruinnúsáid easnamhach ghnéithe ainmnithe den ghramadach 0-3 
+ 
+ 
+   
+ 
+    
+
+<!-- page 32 -->
+30  
+   
+ 
+    
+ 
+    
+ 
+    
+ 
+    
+ 
+    
+ 
+  
+
+<!-- page 33 -->
+31  
+   
+ 
+    
+ 
+    
+ 
+    
+ 
+    
+ 
+    
+ 
+  
+
+<!-- page 34 -->
+32  
+   
+ 
+    
+ 
+    
+ 
+    
+ 
+    
+ 
+    
+ 
+  
+
+<!-- page 35 -->
+
+
+<!-- page 36 -->
+ 
+ 
+ 
+ 
+  
+ 
+  
+ 
+  
+ 
+  

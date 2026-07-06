@@ -189,6 +189,25 @@ const ENG3: GridSession = {
         },
       ],
     },
+    {
+      id: 'eng3-c',
+      label: 'Script C',
+      persona: 'One that lands, one that doesn’t',
+      attempts: [
+        {
+          id: 'eng3-c-1',
+          text: 'He controls the money too — “he kept both bank cards in his own wallet”, so she has to ask him for everything.',
+          key: { evidence: 3 },
+          keyNote: 'A precise, accurately quoted reference that directly demonstrates financial control. Earns the support mark.',
+        },
+        {
+          id: 'eng3-c-2',
+          text: 'And he’s controlling in loads of other ways too, all through the book, you can really see it.',
+          key: { evidence: 0 },
+          keyNote: 'This is assertion, not evidence — “loads of other ways… all through the book” points to nothing the examiner can weigh. The same candidate can produce a marking reference and a non-reference in consecutive sentences; only the first scores. Make every supporting sentence a real, specific reference.',
+        },
+      ],
+    },
   ],
   takeaway: {
     id: 'codex-eng3',
@@ -199,12 +218,114 @@ const ENG3: GridSession = {
   },
 };
 
+// ───────────────── Eng4 · Different texts for QA and QB ─────────────────
+
+const ENG4: ScaleSession = {
+  mode: 'scale',
+  id: 'eng-different-texts',
+  subject: 'english',
+  level: 'common',
+  title: 'A and B on different texts',
+  cue: 'Comprehending (Paper 1)',
+  question: 'Paper 1 Comprehending has Question A (50) on one text and Question B (50) on a DIFFERENT text — the rule is “candidates may NOT answer a Question A and a Question B on the same text.” A candidate answers both A and B on Text 1. Both are good. What does the section score?',
+  questionNote:
+    'Scenario authored for this exercise. The scheme’s anomaly procedure: if QA and QB are answered on the same text, mark both out of full marks and disallow the lower.',
+  scale: {
+    name: 'Comprehending · same-text answers',
+    levels: [
+      { id: 'm45', label: '45 (only the higher counts)', annotation: '45', marks: 45 },
+      { id: 'm90', label: '90 (if on different texts)', annotation: '90', marks: 90 },
+    ],
+    notes: [
+      'QA (50) and QB (50) must be on different texts.',
+      'If both are on the same text, both are marked but the lower is disallowed.',
+      'So one strong answer is thrown away — up to a whole 50-mark question lost.',
+    ],
+    cite: MS('p.4, p.169 (different-text rule and anomaly procedure)'),
+  },
+  scripts: [
+    {
+      id: 'eng4-a',
+      label: 'The section',
+      persona: 'Both answers on Text 1',
+      work: ['Question A — a strong answer on Text 1.', 'Question B — another strong answer, also on Text 1.'],
+      keyLevelId: 'm45',
+      keyNote:
+        'Only the higher of the two counts — the lower is disallowed because they’re on the same text, so a whole strong answer is thrown away. Half the section’s marks can vanish to a rule that has nothing to do with quality. Always take Question A and Question B from different texts.',
+      embodies: {
+        behaviour: 'Answers QA and QB on the same text, so the lower answer is disallowed.',
+        cite: MS('p.169'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-eng4',
+    rule: 'Question A and Question B must be on different texts.',
+    detail:
+      'On Paper 1 Comprehending, answering QA and QB on the same text gets the lower of the two disallowed — up to a whole 50-mark answer wasted. Pick your two texts before you start writing.',
+    cite: MS('p.4'),
+  },
+};
+
+// ───────────────── Eng5 · Mechanics is only 10% ─────────────────
+
+const ENG5: ScaleSession = {
+  mode: 'scale',
+  id: 'eng-mechanics',
+  subject: 'english',
+  level: 'common',
+  title: 'Neat, empty, and low',
+  cue: 'PCLM',
+  question: 'Accuracy of Mechanics (spelling and grammar) is only 10% of a task’s marks; Purpose, Coherence and Language are 30% each. A candidate hands in a mechanically flawless answer — perfect spelling and grammar — that barely engages the task and says little. On a 100-mark composition, roughly where does it land?',
+  questionNote:
+    'Scenario authored for this exercise. PCLM weights Mechanics at just 10%; flawless spelling and grammar can’t compensate for weak Purpose, Coherence and Language (90% between them).',
+  scale: {
+    name: 'PCLM · Mechanics 10%',
+    levels: [
+      { id: 'm20', label: '~20 (flawless mechanics, little else)', annotation: '20', marks: 20 },
+      { id: 'm55', label: '~55 (mid all round)', annotation: '55', marks: 55 },
+      { id: 'm85', label: '~85 (strong P/C/L + mechanics)', annotation: '85', marks: 85 },
+    ],
+    notes: [
+      'Weightings: Purpose 30 + Coherence 30 + Language 30 + Mechanics 10.',
+      'Perfect mechanics is worth at most 10 of 100 — it can’t carry an answer.',
+      'The marks live in engaging the task (P), sustaining it (C) and controlling language (L).',
+    ],
+    cite: MS('p.3 (PCLM weightings)'),
+  },
+  scripts: [
+    {
+      id: 'eng5-a',
+      label: 'The answer',
+      persona: 'Immaculate spelling, empty content',
+      work: [
+        'Flawless spelling and grammar throughout.',
+        'Barely engages the task; little to say, thinly sustained.',
+      ],
+      keyLevelId: 'm20',
+      keyNote:
+        'Low — perfect mechanics is only 10% of the marks, and Purpose, Coherence and Language (the other 90%) are all weak. Neatness can’t rescue an empty answer. Students who pour effort into tidy handwriting and spelling while neglecting what they actually say are optimising the smallest criterion. Engage the task first.',
+      embodies: {
+        behaviour: 'Relies on flawless mechanics while neglecting Purpose/Coherence/Language — optimising the 10% criterion.',
+        cite: MS('p.3'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-eng5',
+    rule: 'Mechanics is only a tenth — engagement is the rest.',
+    detail:
+      'Spelling and grammar are 10% of an English task; Purpose, Coherence and Language are 90%. Flawless mechanics can’t carry a thin answer — spend your effort engaging the task and sustaining it, not just on neatness.',
+    cite: MS('p.3'),
+  },
+};
+
 export const ENGLISH_CHAIR: ChairSubject = {
   id: 'english',
   label: 'English',
   tagline: 'PCLM — why answering the question beats writing beautifully.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [ENG1, ENG2, ENG3],
+  sessions: [ENG1, ENG2, ENG3, ENG4, ENG5],
   sources: [
     { label: 'SEC LC English HL marking scheme 2025 (examiner-reports/english/2025-marking-scheme)' },
     { label: 'Chief Examiner’s Report, English 2013 (examiner-reports/english/2013-chief-examiner)' },
