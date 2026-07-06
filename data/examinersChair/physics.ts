@@ -252,6 +252,24 @@ const PHY4: GridSession = {
         },
       ],
     },
+    {
+      id: 'phy4-c',
+      label: 'Script C',
+      persona: 'Vague at the qualifier',
+      attempts: [
+        {
+          id: 'phy4-c-1',
+          text: '“Resistance is the voltage across a component, and it depends on the current.”',
+          key: { core: 4, perunit: 0 },
+          keyNote:
+            'The core quantity scores (4), and this time there’s a gesture at the current — but “depends on the current” is not the “per unit current” ratio, so the 2-mark qualifier is still unearned. That component is all-or-nothing: attempting it vaguely scores the same as leaving it out. 4 of 6. Name the ratio (per unit current, or R = V/I) or the marks stay on the table.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Gestures at the qualifier vaguely (“depends on the current”) without stating the ratio — the all-or-nothing part scores 0.',
+        cite: MS('p.16'),
+      },
+    },
   ],
   takeaway: {
     id: 'codex-phy4',

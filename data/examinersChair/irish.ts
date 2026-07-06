@@ -177,6 +177,22 @@ const IR3: ScaleSession = {
         cite: MS('p.16'),
       },
     },
+    {
+      id: 'ir3-b',
+      label: 'The answer',
+      persona: 'Half-rewords, half-lifts',
+      work: [
+        'Recasts the opening of the idea in the candidate’s own words.',
+        'Then falls back and copies the rest of the passage sentence verbatim.',
+      ],
+      keyLevelId: 'm7',
+      keyNote:
+        '7 of 12 — a partial reward. Where the idea is genuinely reworded, understanding is shown and credited; where the answer lapses back into a verbatim lift, those marks are withheld. The examiner isn’t looking for perfect paraphrase, but the whole idea has to be in your own Irish. Carry the rewording all the way through — don’t start in your own words and coast home on the passage.',
+      embodies: {
+        behaviour: 'Rewords part of the idea but lifts the rest verbatim on an “own words” question — partial credit only.',
+        cite: MS('p.16'),
+      },
+    },
   ],
   takeaway: {
     id: 'codex-ir3',

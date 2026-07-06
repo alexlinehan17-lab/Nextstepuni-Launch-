@@ -174,6 +174,19 @@ const CH3: ScaleSession = {
         cite: MS('p.3'),
       },
     },
+    {
+      id: 'ch3-b',
+      label: 'The answer',
+      persona: 'One method, unfinished',
+      work: ['Commits to Method 1 and stays on it throughout.', 'Sets it up and works the early steps correctly.', 'Runs out of time before the final step — incomplete, but coherent within the one method.'],
+      keyLevelId: 'm3',
+      keyNote:
+        'Every mark here comes from a single coherent method, so the correct partial work is creditable — 3 of the 6 marks. This is the payoff of committing: unlike the stitched halves that scored nothing, one method carried as far as it goes still banks marks. Finishing it would have earned the full 6.',
+      embodies: {
+        behaviour: 'Commits to one method and earns partial credit for coherent work — the // rule doesn’t penalise an unfinished single method.',
+        cite: MS('p.3'),
+      },
+    },
   ],
   takeaway: {
     id: 'codex-chem3',
