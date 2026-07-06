@@ -323,6 +323,60 @@ changes them, the affected sessions and this dossier are updated together.
 year. The rules used are structural conventions stable year to year; if a future scheme
 changes one, the affected session and this dossier are updated together.
 
+## Claim-by-claim record — tranche 3 subjects
+
+Each source below is the SEC finalised marking scheme for its stated year, filed in
+`/examiner-reports/<subject>/`. Sessions tagged `common` teach a documented cross-level
+convention; `higher`-tagged sessions use an HL-specific allocation.
+
+### German (level: common) — MS-DE-2025 (`examiner-reports/german/2025-marking-scheme`)
+- **DE1 `de-length-gate`:** the "Lower-E" rule — if content ≤12 or the answer is under
+  100 words, Expression is marked out of 18 not 25 (MS-DE p.[20]).
+- **DE2 `de-half-lift`:** a quotation given without the required manipulation, or with
+  extraneous material, is awarded half marks (MS-DE p.[10]).
+- **DE3 `de-tense`:** tense-critical comprehension — a present-tense answer to a
+  past-events question scores 0 ("Present Tense = 0", MS-DE p.[5]).
+
+### Spanish (level: common) — MS-ES-2025 (`examiner-reports/spanish/2025-marking-scheme`)
+- **SP1 `es-no-lift`:** "No marks will be awarded for phrases taken directly from the
+  text" on the written question (MS-ES p.9).
+- **SP2 `es-content-gates`:** "Where no marks are awarded for Content … no marks will be
+  awarded for Language" — the axes are tied on Q5 (MS-ES p.9).
+- **SP3 `es-verbs`:** production units gate full marks on correct verbs ("Verbs must be
+  correct for full marks", MS-ES p.10–11).
+
+### Economics (level: higher) — MS-EC-2025 (`examiner-reports/economics/2025-marking-scheme`)
+- **EC1 `ec-develop`:** developed points are banded; "repetition of statement" is a
+  Weak/0 descriptor (MS-EC p.2).
+- **EC2 `ec-diagram-labels`:** diagrams carry itemised marks and the labels are separate
+  components (S&D graph, MS-EC p.50).
+- **EC3 `ec-workings`:** calculations step-marked; named deduction "Deduct 1 mark for
+  omission of %" (MS-EC p.5, p.57).
+
+### Home Economics (level: higher) — MS-HE-2025 (`examiner-reports/home-economics/2025-marking-scheme`)
+- **HE1 `he-coarse-ladder`:** 20-mark parts use a 5:3:0 ladder — a thin point scores 0,
+  no consolation (MS-HE p.13, p.16).
+- **HE2 `he-headings`:** points must be spread across named headings, each capped
+  independently (MS-HE p.16).
+- **HE3 `he-name-describe`:** the "name" is a low, often all-or-nothing mark; the
+  description/evaluation carries the marks (MS-HE p.8).
+
+### Agricultural Science (level: common/higher) — MS-AG-2024 (`examiner-reports/agricultural-science/2024-marking-scheme`)
+- **AG1 `ag-frontload`:** front-loaded points list 4 + 2 + 2 + 2 (MS-AG p.4).
+- **AG2 `ag-surplus`:** a surplus wrong answer cancels a correct one (worked as 4 − 1,
+  MS-AG p.4). (Breed facts — Texel = sheep, Charolais/Holstein-Friesian = cattle,
+  Jersey/Montbéliarde/Norwegian Red = dairy cattle — are standard.)
+- **AG3 `ag-iis-brevity` (higher):** IIS sections are holistically banded; "not to
+  penalise skilful brevity, nor to reward unwarranted length" (MS-AG p.7).
+
+### Applied Mathematics (level: common) — MS-AM-2024 (`examiner-reports/applied-maths/2024-marking-scheme`)
+- **AM1 `am-blunder-slip`:** blunder −3, slip −1, misreading −1 (MS-AM p.3). Uses neither
+  the Maths A–D scales nor the Physics granule ladder — the subtractive penalty system.
+- **AM2 `am-scale-floor`:** systemic-error scale 27/24/16/8; any valid attempt banks the
+  floor (MS-AM p.3, p.13).
+- **AM3 `am-name-method`:** "Allow 3 marks for the name of a correct algorithm if no
+  other work is presented" (MS-AM p.6).
+
 ---
 
 ## Honesty measures (in-app)

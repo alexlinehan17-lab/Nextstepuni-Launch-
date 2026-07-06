@@ -38,6 +38,12 @@ For multi-year syntheses, the prefix is `<start-year>-<end-year>-` (e.g.
 | Accounting | 2024 | Marking scheme | Higher | SEC `Leaving Certificate 2024 Marking Scheme — Higher Level Accounting` (mirrored PDF, educateplus.ie) | PDF + MD + insights |
 | Chemistry | 2024 | Marking scheme | Higher | SEC `Leaving Certificate 2024 Marking Scheme — Higher Level Chemistry` (`LC022ALP000EV`, mirrored PDF, exams.ie) | PDF + MD + insights |
 | Chemistry | 2013 | Chief Examiner | Higher / Ordinary | `Chief_Examiner_Report_Chemistry_2013.pdf` (examinations.ie, via Internet Archive) | PDF + MD + insights |
+| Spanish | 2025 | Marking scheme | Higher | SEC `Leaving Certificate 2025 Marking Scheme — Higher Level Spanish` (mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| Agricultural Science | 2024 | Marking scheme | Higher | SEC `Leaving Certificate 2024 Marking Scheme — Higher Level Agricultural Science` (mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| German | 2025 | Marking scheme | Higher | SEC `Leaving Certificate 2025 Marking Scheme — German, Higher Level` (mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| Home Economics | 2025 | Marking scheme | Higher | SEC `Leaving Certificate 2025 Marking Scheme — Higher Level Home Economics - Scientific and Social` (mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| Applied Mathematics | 2024 | Marking scheme | Higher | SEC `Leaving Certificate 2024 Marking Scheme — Higher Level Applied Mathematics` (revised syllabus, first exam 2023; mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| Economics | 2025 | Marking scheme | Higher | SEC `Leaving Certificate 2025 Marking Scheme — Economics, Higher Level` (`LC034ALP000EV`, mirrored PDF, educateplus.ie) | PDF + MD + insights |
 
 _Last updated: 2026-07-06_
 
