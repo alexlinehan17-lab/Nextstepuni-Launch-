@@ -176,12 +176,61 @@ const FR3: ScaleSession = {
   },
 };
 
+// ─────────────── Fr4 · The aural rewards the information ───────────────
+
+const FR4: ScaleSession = {
+  mode: 'scale',
+  id: 'fr-aural',
+  subject: 'french',
+  level: 'common',
+  title: 'The aural: get the fact down',
+  cue: 'Aural',
+  question: 'In the listening test, the scheme is lenient on phrasing: “accept any formulation which communicates the information sought”, with no penalty for excess and points need not be on separate lines. A candidate hears the answer but, unsure how to word it neatly, leaves it blank. What does that cost — and how should the aural be approached?',
+  questionNote:
+    'Scenario authored for this exercise. The listening test is marked on the information communicated, not the neatness of the phrasing — but a whole section answered in French (where English is required) is halved.',
+  scale: {
+    name: 'Aural · information communicated',
+    levels: [
+      { id: 'm0', label: '0 (left blank)', annotation: '0', marks: 0 },
+      { id: 'm3', label: '3 (rough but clear)', annotation: '3', marks: 3 },
+    ],
+    notes: [
+      'The aural accepts “any formulation which communicates the information sought”.',
+      'No excess penalty, and points need not be on separate lines — the fact is what scores.',
+      'Answer in the required language (usually English); a whole section in French is halved.',
+    ],
+    cite: MS('p.[17] (aural: any formulation; 50% wrong-language penalty)'),
+  },
+  scripts: [
+    {
+      id: 'fr4-a',
+      label: 'The answer',
+      persona: 'Heard it, left it blank',
+      work: ['Heard and understood the answer.', 'Left it blank, unsure how to phrase it neatly.'],
+      keyLevelId: 'm0',
+      keyNote:
+        '0 — for information the candidate actually had. The aural rewards the fact communicated, not tidy phrasing: a rough note that gets the information across scores. Never leave an aural answer blank because you can’t word it perfectly — jot down what you heard, in the required language (usually English).',
+      embodies: {
+        behaviour: 'Leaves an aural answer blank over phrasing, where any clear formulation would score.',
+        cite: MS('p.[17]'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-fr4',
+    rule: 'In the aural, the fact scores — not the phrasing.',
+    detail:
+      'The listening test accepts any formulation that communicates the information, with no excess penalty. Write down what you heard, however roughly, in the required language — never leave it blank over wording. (A whole section in French is halved.)',
+    cite: MS('p.[17]'),
+  },
+};
+
 export const FRENCH_CHAIR: ChairSubject = {
   id: 'french',
   label: 'French',
   tagline: 'Two axes, manipulation and the one-answer rule.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [FR1, FR2, FR3],
+  sessions: [FR1, FR2, FR3, FR4],
   sources: [
     { label: 'SEC LC French HL marking scheme 2025 (examiner-reports/french/2025-marking-scheme)' },
   ],
