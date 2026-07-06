@@ -87,6 +87,29 @@ const GEO1: GridSession = {
         },
       ],
     },
+    {
+      id: 'geo1-c',
+      label: 'Script C',
+      persona: 'Knows it — but says it twice',
+      attempts: [
+        {
+          id: 'geo1-c-1',
+          text: 'Longshore drift transports sand and shingle along the coast.',
+          key: { srp: 2 },
+          keyNote: 'A genuine SRP — a real step in the process, clearly stated. 2 marks.',
+        },
+        {
+          id: 'geo1-c-2',
+          text: 'The material is moved down the coastline by the drifting of the waves.',
+          key: { srp: 0 },
+          keyNote: 'This is the SAME point as the last sentence, just reworded — no new fact. The examiner credits a point once, so a restatement scores 0. This is the middle performer’s trap: a solid answer padded with rephrasings of points already made. Two sentences, one SRP.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Earns a real SRP, then re-states it in different words — the restatement carries no new fact, so it scores nothing.',
+        cite: MS('p.3'),
+      },
+    },
   ],
   takeaway: {
     id: 'codex-geo1',
