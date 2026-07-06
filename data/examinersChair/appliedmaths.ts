@@ -354,16 +354,402 @@ const AM7: ScaleSession = {
   },
 };
 
+// ─────────────── AM8 · Box 2 — the partial-credit annotation ───────────────
+
+const AM8: ScaleSession = {
+  mode: 'scale',
+  id: 'am-box-two',
+  subject: 'applied-maths',
+  level: 'common',
+  title: 'A part-right step still banks two',
+  cue: 'Solve',
+  question: 'On a 5-mark step a candidate gets the idea partly right — the method is on the correct track but the element is not fully correct. The examiner’s annotation palette includes “Box 2 · Partially correct element — award 2 marks.” What does a partially-correct element score?',
+  questionNote:
+    'Scenario authored for this exercise. The 2024 scheme’s annotation table (instruction 8) lists a “Box 2” mark: “Partially correct element – award 2 marks.”',
+  scale: {
+    name: 'Partial-credit step · /5',
+    levels: ladder([0, 2, 5]),
+    notes: [
+      'The annotation palette includes “Box 2 · Partially correct element – award 2 marks.”',
+      'A fully-correct element on this step banks all 5.',
+      'A partially-correct element is not zero — the examiner boxes a 2.',
+      'Nothing creditable scores 0.',
+    ],
+    cite: MS('p.4 (instruction 8, “Box 2 · partially correct element – award 2 marks”)'),
+  },
+  scripts: [
+    {
+      id: 'am8-a',
+      label: 'The answer',
+      persona: 'Half-right step',
+      work: ['Sets the step up on the right lines.', 'The element is only partially correct, not complete.'],
+      keyLevelId: 'm2',
+      keyNote:
+        'The examiner boxes a 2 — a partially-correct element is explicitly worth 2 marks, not zero. That is why you write down the part you can do even when you can’t finish the step: “nearly right” is a scoring category with its own annotation, and a half-built step banks two marks a blank never would.',
+      embodies: {
+        behaviour: 'Presents a partially-correct element, which the “Box 2” annotation credits with 2 marks rather than 0.',
+        cite: MS('p.4'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-am8',
+    rule: 'A partially-correct step banks two marks — write it down.',
+    detail:
+      'The Applied Maths annotation palette has a “Box 2” mark: a partially-correct element earns 2 marks, not zero. Half-right work is a scoring category in its own right, so always put down the part of a step you can do rather than leaving it blank.',
+    cite: MS('p.4'),
+  },
+};
+
+// ─────────────── AM9 · The 10-mark scale collapses after one error ───────────────
+
+const AM9: ScaleSession = {
+  mode: 'scale',
+  id: 'am-ten-scale-collapse',
+  subject: 'applied-maths',
+  level: 'common',
+  title: 'On a 10-mark scale, the ladder collapses after one error',
+  cue: 'Solve',
+  question: 'A 10-mark item is marked on a systemic-error scale: 7 marks for one systemic error, and 4 marks for two systemic errors OR for a valid attempt that can’t score higher. A candidate makes two systemic errors. Where do they land — and how does that compare with someone who barely attempted it?',
+  questionNote:
+    'Scenario authored for this exercise. Instruction 6 gives the 10-mark scale as: “7 marks … one systemic error. 4 marks … two systemic errors or where a valid attempt is presented which cannot be awarded higher marks.”',
+  scale: {
+    name: '10-mark systemic-error scale',
+    levels: ladder([4, 7, 10]),
+    notes: [
+      'Full marks (no systemic error) = 10.',
+      'One systemic error drops it to 7.',
+      'Two systemic errors → 4 — the SAME rung as a bare valid attempt.',
+      'So after the first error, a second one costs no more than barely attempting: the ladder collapses.',
+    ],
+    cite: MS('p.3 (instruction 6, 10-mark scale 7/4); p.6 (Q1(a) “10 [0/4/7]”)'),
+  },
+  scripts: [
+    {
+      id: 'am9-a',
+      label: 'The answer',
+      persona: 'Two systemic errors',
+      work: ['A recognisable method throughout.', 'Two systemic errors along the way.'],
+      keyLevelId: 'm4',
+      keyNote:
+        '4 of 10 — because on the 10-mark scale “two systemic errors” and “a valid attempt” sit on the very same rung. Your first slip in the method is the expensive one (10 → 7); after that, a second error drops you to the floor a bare attempt already banks. The lesson: fight hardest to keep the first systemic error from happening — once you are past one, the marks fall away in a single step, not gradually.',
+      embodies: {
+        behaviour: 'Makes two systemic errors on a 10-mark scale item, landing on the same 4 rung as a bare valid attempt.',
+        cite: MS('p.3'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-am9',
+    rule: 'On a 10-mark scale, guard your first error — after it the ladder collapses.',
+    detail:
+      'The 10-mark systemic-error scale is 7 (one error) then 4 (two errors, or a bare valid attempt). The first systemic error is the costly one; a second drops you to the same floor a minimal attempt banks. Concentrate on getting the method through cleanly the first time.',
+    cite: MS('p.3'),
+  },
+};
+
+// ─────────────── AM10 · The 20-mark scale has no method-rescue rung ───────────────
+
+const AM10: ScaleSession = {
+  mode: 'scale',
+  id: 'am-twenty-scale-cliff',
+  subject: 'applied-maths',
+  level: 'common',
+  title: 'On a 20-mark scale there is no method-rescue rung',
+  cue: 'Solve',
+  question: 'A 20-mark item is marked on a systemic-error scale: 17 for one systemic error, 14 for two, and 8 for a valid attempt that can’t score higher. Unlike the 30-mark scale, there is NO middle rung for “more than two errors but method evident.” A candidate’s work shows a third systemic error. Where does it land?',
+  questionNote:
+    'Scenario authored for this exercise. Instruction 6 gives the 20-mark scale as 17 / 14 / 8 — with no “>2 errors with method” rung between 14 and the 8 floor.',
+  scale: {
+    name: '20-mark systemic-error scale',
+    levels: ladder([8, 14, 17, 20]),
+    notes: [
+      'Full marks (no systemic error) = 20.',
+      'One systemic error = 17; two systemic errors = 14.',
+      'There is no rung between 14 and 8 — the 20-mark scale omits the “>2 errors, method evident” level the 30-mark scale keeps.',
+      'So a third systemic error drops you straight from 14 to the 8 floor: a six-mark cliff.',
+    ],
+    cite: MS('p.3 (instruction 6, 20-mark scale 17/14/8); p.15 (Q10(a)(i) “20 [0/8/14/17]”)'),
+  },
+  scripts: [
+    {
+      id: 'am10-a',
+      label: 'The answer',
+      persona: 'A third systemic error',
+      work: ['A valid method carried through.', 'Three systemic errors in the work.'],
+      keyLevelId: 'm8',
+      keyNote:
+        '8 of 20 — the floor. On the 20-mark scale there is no cushioning rung between two errors (14) and the valid-attempt floor (8), so the third error costs a full six marks in one drop. This is the opposite of the 30-mark scale, which keeps a 16-mark rung for method-with-many-errors; on a 20-mark item you cannot rely on that rescue, so a clean two-error ceiling is worth defending hard.',
+      embodies: {
+        behaviour: 'Makes a third systemic error on a 20-mark scale item, which drops straight to the 8 floor because there is no intermediate rung.',
+        cite: MS('p.3'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-am10',
+    rule: 'The 20-mark scale has no method-rescue rung — a third error is a cliff.',
+    detail:
+      'The 20-mark systemic-error scale runs 17 / 14 / 8 with nothing between two errors and the valid-attempt floor. Unlike the 30-mark scale (which keeps a 16 rung for evident method with many errors), a third systemic error here drops you a full six marks in one step. Keep your error count to two on these items.',
+    cite: MS('p.3'),
+  },
+};
+
+// ─────────────── AM11 · Mark to the bracket printed beside the item ───────────────
+
+const AM11: ScaleSession = {
+  mode: 'scale',
+  id: 'am-fifteen-bracket',
+  subject: 'applied-maths',
+  level: 'common',
+  title: 'Mark to the bracket printed beside the item',
+  cue: 'Solve',
+  question: 'A 15-mark item is printed in the scheme as “15 [0/6/9/12].” But the general instructions’ 15-mark scale lists only two credit rungs — 12 and 6. A candidate’s work is rated one rung above the valid-attempt floor. On which ladder is it marked — the general table, or the bracket beside the item?',
+  questionNote:
+    'Scenario authored for this exercise. Instruction 6 gives a general 15-mark scale (12 / 6), but body items such as Q1(b)(i) are printed “15 [0/6/9/12]” — a finer ladder carrying a 9 rung the general table omits.',
+  scale: {
+    name: '15-mark item scale',
+    levels: ladder([6, 9, 12, 15]),
+    notes: [
+      'The general 15-mark scale in instruction 6 lists only 12 and 6.',
+      'But this item is printed “15 [0/6/9/12]” — it carries an extra 9 rung.',
+      'The bracket beside the item is authoritative: it can be finer (more generous) than the general table.',
+      'Work the examiner rates on that middle rung banks 9 — a level the general table doesn’t even offer.',
+    ],
+    cite: MS('p.6 (Q1(b)(i) “15 [0/6/9/12]”); p.3 (instruction 6, general 15-mark scale 12/6)'),
+  },
+  scripts: [
+    {
+      id: 'am11-a',
+      label: 'The answer',
+      persona: 'Rated on the printed 9 rung',
+      work: ['A valid method with recognisable structure.', 'The examiner places it one rung above the valid-attempt floor — on the printed 9.'],
+      keyLevelId: 'm9',
+      keyNote:
+        '9 of 15 — off the bracket printed beside the item, not the coarser general table (which would offer only 12 or 6). Applied Maths prints a per-item ladder wherever the standard scale doesn’t fit, and that bracket governs; here it carries a 9 rung the general instructions never list, quietly banking three extra marks. Always read the [ … ] beside the mark total: it is the ladder you are actually marked on.',
+      embodies: {
+        behaviour: 'Is marked on the per-item “[0/6/9/12]” bracket rather than the general 15-mark table, banking a 9 rung the general table omits.',
+        cite: MS('p.6'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-am11',
+    rule: 'The bracket beside the item is the ladder you’re marked on.',
+    detail:
+      'Where a scale item prints its own bracket (e.g. “15 [0/6/9/12]”), that per-item ladder — not the coarser general table in the instructions — governs the marking, and it can carry finer, more generous rungs. Read the bracket next to the mark total to know the real credit steps.',
+    cite: MS('p.6'),
+  },
+};
+
+// ─────────────── AM12 · The Irish-medium bonus rounds down ───────────────
+
+const AM12: ScaleSession = {
+  mode: 'scale',
+  id: 'am-irish-bonus',
+  subject: 'applied-maths',
+  level: 'common',
+  title: 'Answer through Irish, and the bonus rounds down',
+  cue: 'Solve',
+  question: 'A candidate answers the entire written paper through Irish and scores 290 of 400 (below 75%). The scheme awards a 5% bonus on marks obtained at this level — and states decimals are “always rounded down, not up.” 5% of 290 is 14.5. What bonus, and total, is recorded?',
+  questionNote:
+    'Scenario authored for this exercise. Instruction 9: a 5% bonus applies to a candidate answering entirely through Irish who obtains 75% or less; “decimals are always rounded down, not up ¬ e.g., 4.5 becomes 4; 4.9 becomes 4.”',
+  scale: {
+    name: 'Total with Irish bonus · /400',
+    levels: ladder([290, 304, 305]),
+    notes: [
+      'Answering the paper entirely through Irish earns a 5% bonus at 75% or less.',
+      '5% of 290 = 14.5.',
+      'The scheme rounds bonus decimals DOWN: 14.5 → 14, not up to 15.',
+      'So the recorded total is 290 + 14 = 304, not 305.',
+    ],
+    cite: MS('p.5 (instruction 9, 5% Irish-medium bonus, decimals rounded down)'),
+  },
+  scripts: [
+    {
+      id: 'am12-a',
+      label: 'The answer',
+      persona: 'Irish-medium script, 290 marks',
+      work: ['Whole paper answered through Irish.', 'Base mark 290 of 400 (under 75%).', '5% of 290 = 14.5.'],
+      keyLevelId: 'm304',
+      keyNote:
+        '304 — the 14.5 bonus rounds DOWN to 14, never up to 15. Two things are worth knowing here: sitting the paper entirely through Irish is worth a real 5% at this mark level, and the bonus is always truncated, not rounded to nearest. It is a free but modest lift — bank it if you work in Irish, but don’t expect the half-mark to round your way.',
+      embodies: {
+        behaviour: 'Earns the 5% Irish-medium bonus on a sub-75% script, with the 14.5 decimal rounded down to 14.',
+        cite: MS('p.5'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-am12',
+    rule: 'The Irish-medium bonus is 5%, always rounded down.',
+    detail:
+      'A candidate who answers the whole written paper through Irish and scores 75% or less gets a 5% bonus on marks obtained, with any decimal rounded down (4.5 → 4). It is a real but modest lift, and the fraction never rounds in your favour.',
+    cite: MS('p.5'),
+  },
+};
+
+// ─────────────── AM13 · The modelling project rewards judgement, not length ───────────────
+
+const AM13: ScaleSession = {
+  mode: 'scale',
+  id: 'am-project-brevity',
+  subject: 'applied-maths',
+  level: 'common',
+  title: 'The modelling project rewards judgement, not length',
+  cue: 'Model',
+  question: 'The 100-mark Mathematical Modelling Project’s “Introduction & Research” section is marked on descriptive bands: Very thorough 16–20, Thorough 11–15, Basic 6–10, Very basic 0–5. Examiners are told “not to penalise skilful brevity, nor to reward unwarranted length.” A candidate submits a concise, well-researched, fully-cited introduction. Which band?',
+  questionNote:
+    'Scenario authored for this exercise. The 2024 project rubric marks each section on four descriptive bands and instructs examiners: “Be careful not to penalise skilful brevity, nor to reward unwarranted length.”',
+  scale: {
+    name: 'Introduction & Research band · /20',
+    levels: [
+      { id: 'am13-vb', label: 'Very basic (0–5)', annotation: 'VB', marks: 5 },
+      { id: 'am13-b', label: 'Basic (6–10)', annotation: 'B', marks: 10 },
+      { id: 'am13-t', label: 'Thorough (11–15)', annotation: 'T', marks: 15 },
+      { id: 'am13-vt', label: 'Very thorough (16–20)', annotation: 'VT', marks: 20 },
+    ],
+    notes: [
+      'Each project section is placed on a descriptive band, not marked per step.',
+      '“Very thorough” = problem and variables identified, research presented and cited, data presented where relevant.',
+      'Examiners are told not to penalise skilful brevity nor to reward unwarranted length.',
+      'So a concise, complete, cited introduction reaches the top band — padding cannot lift it.',
+    ],
+    cite: MS('p.16 (project instruction, skilful brevity / unwarranted length); p.17 (Introduction & Research bands 16–20 / 11–15 / 6–10 / 0–5)'),
+  },
+  scripts: [
+    {
+      id: 'am13-a',
+      label: 'The answer',
+      persona: 'Concise but complete',
+      work: ['Identifies the problem and its variables.', 'Presents and cites its research, with data where relevant.', 'Says it well and stops — no padding.'],
+      keyLevelId: 'am13-vt',
+      keyNote:
+        'Very thorough — the top band — because it is the quality and completeness of the research that scores, not the word count. The rubric explicitly tells the examiner not to reward unwarranted length nor penalise skilful brevity, so a concise introduction that identifies the problem, cites its research and presents its data cleanly reaches the same band as a padded one. On the project, argue well and stop; padding cannot lift the band.',
+      embodies: {
+        behaviour: 'Submits a concise, complete, cited introduction that reaches the top band under the “do not reward unwarranted length” instruction.',
+        cite: MS('p.16'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-am13',
+    rule: 'On the modelling project, judgement sets the band — length does not.',
+    detail:
+      'Each section of the 100-mark modelling project is marked on descriptive bands, and examiners are told not to reward unwarranted length nor penalise skilful brevity. A concise, well-justified, fully-cited section reaches the top band; padding it out does not. Write to the point and stop.',
+    cite: MS('p.16'),
+  },
+};
+
+// ─────────────── AM14 · Communication & Innovation is read off the whole report ───────────────
+
+const AM14: ScaleSession = {
+  mode: 'scale',
+  id: 'am-project-communication',
+  subject: 'applied-maths',
+  level: 'common',
+  title: 'You can’t write a “communication and innovation” section',
+  cue: 'Model',
+  question: 'The modelling project awards 15 marks for “Communication & Innovation,” banded Very thorough 12–15 down to Very basic 0–3. But the rubric states this “is not a distinct section of the report” — it is judged across the whole project’s coherence and creativity. A candidate builds a coherent, imaginatively-approached report throughout, without a dedicated “communication” paragraph. Which band?',
+  questionNote:
+    'Scenario authored for this exercise. The 2024 project rubric states Communication & Innovation “is not a distinct section of the report,” marking it holistically on overall coherence and innovative/creative approach.',
+  scale: {
+    name: 'Communication & Innovation band · /15',
+    levels: [
+      { id: 'am14-vb', label: 'Very basic (0–3)', annotation: 'VB', marks: 3 },
+      { id: 'am14-b', label: 'Basic (4–7)', annotation: 'B', marks: 7 },
+      { id: 'am14-t', label: 'Thorough (8–11)', annotation: 'T', marks: 11 },
+      { id: 'am14-vt', label: 'Very thorough (12–15)', annotation: 'VT', marks: 15 },
+    ],
+    notes: [
+      'These 15 marks are explicitly “not a distinct section of the report.”',
+      'They are read off the whole project’s overall coherence and innovative/creative approach.',
+      'A report that is well-structured and imaginatively approached throughout reaches the top band.',
+      'A bolt-on “communication” paragraph on an otherwise disjointed report cannot earn them.',
+    ],
+    cite: MS('p.16 (Communication & Innovation “not a distinct section of the report”); p.18 (band descriptors 12–15 / 8–11 / 4–7 / 0–3)'),
+  },
+  scripts: [
+    {
+      id: 'am14-a',
+      label: 'The answer',
+      persona: 'Coherent and creative throughout',
+      work: ['Structures the whole report clearly and coherently.', 'Approaches the problem in an innovative, creative way.', 'Writes no separate “communication” paragraph.'],
+      keyLevelId: 'am14-vt',
+      keyNote:
+        'Very thorough — but not because of any “communication” paragraph. These 15 marks are explicitly not a section you write; the examiner reads them off the coherence and creativity of the whole report. A project that is well-structured and imaginatively approached throughout banks the top band even with no dedicated paragraph, and a bolt-on paragraph cannot earn them on an otherwise disjointed report. You earn Communication & Innovation by how you build the whole thing, not by a closing note.',
+      embodies: {
+        behaviour: 'Earns the top Communication & Innovation band through whole-report coherence and creativity, with no dedicated section.',
+        cite: MS('p.16'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-am14',
+    rule: 'Communication & Innovation is read off the whole report, not a section you write.',
+    detail:
+      'The project’s 15 Communication & Innovation marks are “not a distinct section of the report” — they are judged holistically on overall coherence and creative approach. You cannot earn them with a tacked-on paragraph; they come from how the entire project is structured and presented.',
+    cite: MS('p.16'),
+  },
+};
+
+// ─────────────── AM15 · Units are policed per item, not by a blanket rule ───────────────
+
+const AM15: ScaleSession = {
+  mode: 'scale',
+  id: 'am-units-per-item',
+  subject: 'applied-maths',
+  level: 'common',
+  title: 'Units are policed per item — sometimes explicitly waived',
+  cue: 'Solve',
+  question: 'A vector part asks for the scalar (dot) product of two velocity vectors. A candidate computes it correctly as −376.71 but, unsure what unit a dot product carries, writes no units and fears a deduction. The scheme prints the answer with the note “[units not required].” What does it score?',
+  questionNote:
+    'Scenario authored for this exercise. Applied Maths has no blanket units penalty; units are policed per item, and the 2023 scheme marks the dot-product answer Q8(iv) as “−376.71 [units not required].”',
+  scale: {
+    name: 'Dot-product answer · /5',
+    levels: ladder([0, 5]),
+    notes: [
+      'Applied Maths has no general units-deduction rule (unlike Physics).',
+      'Units are handled per item, where they matter.',
+      'On this scalar-product answer the scheme writes “[units not required].”',
+      'So the correct value with no units banks full marks — there is nothing to deduct.',
+    ],
+    cite: MS23('p.14 (Q8(iv) “−376.71 [units not required]”)'),
+  },
+  scripts: [
+    {
+      id: 'am15-a',
+      label: 'The answer',
+      persona: 'Correct dot product, no units',
+      work: ['Computes the scalar product correctly as −376.71.', 'Writes no units, unsure what a dot product carries.'],
+      keyLevelId: 'm5',
+      keyNote:
+        'Full 5 — the scheme itself notes “[units not required]” on this answer, so there is no units mark to lose. Applied Maths does not run a blanket units penalty the way Physics does; it flags per item where units matter, and on a scalar like a dot product it explicitly waives them. Don’t manufacture a unit you are unsure of, and don’t fear a phantom deduction — give the correct value and move on.',
+      embodies: {
+        behaviour: 'Gives a correct scalar-product value without units, which the scheme marks in full because it notes “units not required.”',
+        cite: MS23('p.14'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-am15',
+    rule: 'There’s no blanket units penalty — units are policed per item.',
+    detail:
+      'Unlike Physics, Applied Maths applies no general units deduction; units are marked per item where they matter, and the scheme sometimes states “units not required” (e.g. on a scalar product). Give the correct value and don’t lose confidence over a unit the item doesn’t demand.',
+    cite: MS23('p.14'),
+  },
+};
+
 export const APPLIED_MATHS_CHAIR: ChairSubject = {
   id: 'applied-maths',
   label: 'Applied Mathematics',
   tagline: 'Blunders, slips and the floor a real attempt always banks.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [AM1, AM2, AM3, AM4, AM5, AM6, AM7],
+  sessions: [AM1, AM2, AM3, AM4, AM5, AM6, AM7, AM8, AM9, AM10, AM11, AM12, AM13, AM14, AM15],
   sources: [
     { label: 'SEC LC Applied Mathematics HL marking scheme 2024 (examiner-reports/applied-maths/2024-marking-scheme)' },
     { label: 'SEC LC Applied Mathematics HL marking scheme 2023 (examiner-reports/applied-maths/2023-marking-scheme)' },
   ],
   coverageNote:
-    'These sessions teach the general marking system — the blunder/slip/misreading tariff, the systemic-error scale floor, the name-the-method mark, the solidus = different-valid-attempts rule, the per-item “−1 for each incorrect part” listing deduction, and the standalone marks a labelled force diagram earns — which applies at both Higher and Ordinary level. Verified against the 2024 and 2023 Higher Level schemes; level-specific worked examples are being added.',
+    'These sessions teach the general marking system — the blunder/slip/misreading tariff, the systemic-error scale floor and its 10-/15-/20-mark variants, the “Box 2” partial-credit annotation, the name-the-method mark, the solidus = different-valid-attempts rule, the per-item “−1 for each incorrect part” listing deduction, the standalone marks a labelled force diagram earns, the per-item bracket that overrides the general scale, the 5% Irish-medium bonus (rounded down), the units-policed-per-item convention, and the modelling-project’s banded rubric — which applies at both Higher and Ordinary level. Verified against the 2024 and 2023 Higher Level schemes; level-specific worked examples are being added.',
 };

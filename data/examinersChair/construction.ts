@@ -422,15 +422,495 @@ const CS7: GridSession = {
   },
 };
 
+// ─────────────── CS8 · The point+discussion split isn’t always 50/50 ───────────────
+
+const CS8: GridSession = {
+  mode: 'grid',
+  id: 'cs-discussion-outweighs',
+  subject: 'construction-studies',
+  level: 'higher',
+  title: 'Sometimes the discussion is worth more than the point',
+  cue: 'Discuss two approaches',
+  question: 'A “two approaches to reduce electrical consumption” part is marked 2 for the point + 3 for the discussion, per approach (10 marks). A candidate names two correct approaches — “LED lighting”, “occupancy sensors” — but writes nothing to develop either.',
+  questionNote:
+    'Scenario authored for this exercise. On this Construction Studies part the split is uneven — the point is worth 2 and the discussion 3 — so on some questions the development is worth MORE than naming the point, not just as much.',
+  grid: {
+    perPoint: [
+      { id: 'a1point', label: 'Approach 1 — point stated', marks: 2 },
+      { id: 'a1disc', label: 'Approach 1 — discussion', marks: 3 },
+      { id: 'a2point', label: 'Approach 2 — point stated', marks: 2 },
+      { id: 'a2disc', label: 'Approach 2 — discussion', marks: 3 },
+    ],
+    shorthand: 'each approach: point 2 + discussion 3',
+    ruleNote:
+      'The point and the discussion are separate ticks — but here they are NOT equal: the point is 2, the discussion 3. A bare list of correct approaches banks only 4 of the 10; the larger share lives in the development. Where the split is uneven, the discussion is the bigger prize, so develop it.',
+    cite: MS('p.45 (Q9(c) — 2 for point, 3 for discussion)'),
+  },
+  scripts: [
+    {
+      id: 'cs8-a',
+      label: 'Script A',
+      persona: 'Names both, develops neither',
+      attempts: [
+        {
+          id: 'cs8-a-1',
+          text: 'Two correct approaches named — “LED lighting”, “occupancy sensors” — with no explanation of how either cuts consumption.',
+          key: { a1point: 2, a1disc: 0, a2point: 2, a2disc: 0 },
+          keyNote: 'Only 4 of 10. Both points are right and bank their 2, but the discussion tick — worth 3, more than the point itself — sits empty on both. A sentence each on the mechanism (how a sensor kills standby draw, how LEDs cut watts per lumen) would have added the larger half.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Lists correct approaches without developing them — forfeiting the discussion tranche, which here outweighs the point.',
+        cite: MS('p.45'),
+      },
+    },
+    {
+      id: 'cs8-b',
+      label: 'Script B',
+      persona: 'Point then fuller discussion',
+      attempts: [
+        {
+          id: 'cs8-b-1',
+          text: 'Each approach named, then explained — how it works and why it lowers the electricity bill.',
+          key: { a1point: 2, a1disc: 3, a2point: 2, a2disc: 3 },
+          keyNote: 'Full marks. Each approach is both named and developed, so both the point tick and the larger discussion tick score.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-cs8',
+    rule: 'The split isn’t always 50/50 — sometimes the discussion is worth more than the point.',
+    detail:
+      'On some discuss parts the point is 2 and the discussion 3, so naming alone banks under half. Read the tariff: where the discussion outweighs the point, the development is the bigger prize — always explain the mechanism.',
+    cite: MS('p.45'),
+  },
+};
+
+// ─────────────── CS9 · Dimensions & insulation position are their own ticks ───────────────
+
+const CS9: GridSession = {
+  mode: 'grid',
+  id: 'cs-dimensions-insulation',
+  subject: 'construction-studies',
+  level: 'higher',
+  title: 'Dimensions and insulation position are their own marks',
+  cue: 'Detail a wall construction',
+  question: 'A high-performance wall construction is marked Notes 5 + Sketches 6 + Position of insulation 2 + Dimensions 2 (15 marks). A candidate writes strong notes and draws a clear sketch — but marks no dimensions on it and never shows where the insulation sits.',
+  questionNote:
+    'Scenario authored for this exercise. On this Construction Studies wall-detail part, stating the dimensions and showing the position of the insulation are separately tariffed ticks — not folded into the note or the sketch — so a good drawing that omits them still loses those marks.',
+  grid: {
+    perPoint: [
+      { id: 'notes', label: 'Notes', marks: 5 },
+      { id: 'sketch', label: 'Sketch', marks: 6 },
+      { id: 'inspos', label: 'Position of insulation shown', marks: 2 },
+      { id: 'dims', label: 'Dimensions stated', marks: 2 },
+    ],
+    shorthand: 'notes 5 + sketch 6 + insulation position 2 + dimensions 2',
+    ruleNote:
+      'The dimensions and the position of the insulation are their own ticks, scored separately from the notes and the sketch. A clear labelled sketch with no dimensions marked and no insulation location shown forfeits those 4 marks — and the rubric already requires sizes and dimensions on every drawing. Put the numbers and the insulation on the page.',
+    cite: MS('p.40 (Q4(b) — Notes 5, Sketches 6, Position of Insulation 2, Dimensions 2)'),
+  },
+  scripts: [
+    {
+      id: 'cs9-a',
+      label: 'Script A',
+      persona: 'Good detail, no dimensions or insulation position',
+      attempts: [
+        {
+          id: 'cs9-a-1',
+          text: 'Strong written notes and a clear sketch of the wall build-up — but no dimensions marked and no indication of where the insulation sits.',
+          key: { notes: 5, sketch: 6, inspos: 0, dims: 0 },
+          keyNote: 'Eleven of fifteen. The notes and sketch score in full, but the dimensions tick and the insulation-position tick are separate marks and both are empty. Adding leader-line dimensions and hatching the insulation layer — seconds of work the drawing already invites — banks the last four.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Details a wall well but omits dimensions and insulation position — forfeiting their separate ticks.',
+        cite: MS('p.40'),
+      },
+    },
+    {
+      id: 'cs9-b',
+      label: 'Script B',
+      persona: 'Everything on the drawing',
+      attempts: [
+        {
+          id: 'cs9-b-1',
+          text: 'The same notes and sketch, now with dimensions marked and the insulation clearly positioned in the build-up.',
+          key: { notes: 5, sketch: 6, inspos: 2, dims: 2 },
+          keyNote: 'Full marks. Every tick — including the separately-marked dimensions and insulation position — has something to score against.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-cs9',
+    rule: 'Dimensions and the position of the insulation are marked separately — put them on the drawing.',
+    detail:
+      'On wall-detail parts, stating dimensions and showing where the insulation sits are their own ticks (here 2 + 2), not part of the note or sketch marks. A good drawing that omits them loses those marks; always dimension the detail and locate the insulation.',
+    cite: MS('p.40'),
+  },
+};
+
+// ─────────────── CS10 · On the wiring layout, colour is 3/4 of the annotation ───────────────
+
+const CS10: GridSession = {
+  mode: 'grid',
+  id: 'cs-cable-colour',
+  subject: 'construction-studies',
+  level: 'higher',
+  title: 'On a wiring layout, colour is three-quarters of the annotation',
+  cue: 'Draw the wiring layout',
+  question: 'A wiring-layout question annotates the cabling with a 4-mark tick split Cable size (1) + colour (3). A candidate draws the live, neutral and earth runs correctly and notes the cable size — but colour-codes nothing.',
+  questionNote:
+    'Scenario authored for this exercise. On the Construction Studies wiring layout the cabling’s annotation mark is split cable size (1) and colour (3) — so the colour-coding of the conductors carries three times the marks of the size note.',
+  grid: {
+    perPoint: [
+      { id: 'size', label: 'Cable size noted', marks: 1 },
+      { id: 'colour', label: 'Cable colours shown (live / neutral / earth)', marks: 3 },
+    ],
+    shorthand: 'cable annotation: size 1 + colour 3',
+    ruleNote:
+      'The cabling annotation isn’t one mark — it’s split, and the colour-coding is worth three times the size note. Drawing the runs and writing the cable size banks 1 of the 4; identifying each conductor by colour (brown live, blue neutral, green/yellow earth) banks the other 3. Colour the conductors.',
+    cite: MS('p.45 (Q9(a) — Cable size (1) and colour (3))'),
+  },
+  scripts: [
+    {
+      id: 'cs10-a',
+      label: 'Script A',
+      persona: 'Runs drawn, no colour-coding',
+      attempts: [
+        {
+          id: 'cs10-a-1',
+          text: 'Live, neutral and earth runs drawn correctly and the cable size noted — but no colours identified on the conductors.',
+          key: { size: 1, colour: 0 },
+          keyNote: 'One of four on the annotation. The size note scores, but the colour tick — three times as valuable — is empty. Labelling brown/blue/green-yellow against the three conductors is a few words for three marks.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Notes cable size but omits the colour-coding — losing the larger three-quarters of the annotation mark.',
+        cite: MS('p.45'),
+      },
+    },
+    {
+      id: 'cs10-b',
+      label: 'Script B',
+      persona: 'Size and colours both given',
+      attempts: [
+        {
+          id: 'cs10-b-1',
+          text: 'The same layout with the cable size noted and each conductor colour-identified — brown live, blue neutral, green/yellow earth.',
+          key: { size: 1, colour: 3 },
+          keyNote: 'Full annotation marks. Size and colour are separate ticks and both are satisfied.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-cs10',
+    rule: 'On the wiring layout, colour-coding the conductors is worth three times the cable size.',
+    detail:
+      'The cabling annotation splits cable size (1) + colour (3): identifying each conductor by colour carries three-quarters of the mark. Always colour-code live, neutral and earth — it’s the bigger, easily-won share.',
+    cite: MS('p.45'),
+  },
+};
+
+// ─────────────── CS11 · The scheme is illustrative, not a closed answer key ───────────────
+
+const CS11: GridSession = {
+  mode: 'grid',
+  id: 'cs-not-exhaustive',
+  subject: 'construction-studies',
+  level: 'common',
+  title: 'You’re not matching a fixed answer key',
+  cue: 'State two relevant points',
+  question: 'A “state two relevant points” part carries a model list in the scheme — but every list ends “Any other relevant points”, and the scheme’s standing note says model answers are “not exclusive or exhaustive”. A candidate gives two correct, relevant points that don’t appear word-for-word on the model list. Do they score?',
+  questionNote:
+    'Scenario authored for this exercise. The Construction Studies scheme states its model notes are illustrative, not a closed key — a valid, relevant point that isn’t on the printed list is credited; only irrelevant or wrong points score nothing.',
+  grid: {
+    perPoint: [
+      { id: 'p1', label: 'Point 1 — relevant and correct', marks: 3 },
+      { id: 'p2', label: 'Point 2 — relevant and correct', marks: 3 },
+    ],
+    shorthand: 'each relevant point: 3 (on-list or not)',
+    ruleNote:
+      'The examiner marks on merit against the scheme’s standing note, not against a closed list. A correct, relevant point that isn’t printed still earns its mark; what fails is a point that’s irrelevant or wrong. So never bin a good point because you’re unsure it’s “the” answer — and never pad with waffle hoping it lands.',
+    cite: MS('p.3 (standing note — model answers not exclusive or exhaustive; “Any other relevant points”)'),
+  },
+  scripts: [
+    {
+      id: 'cs11-a',
+      label: 'Script A',
+      persona: 'Valid points, not on the printed list',
+      attempts: [
+        {
+          id: 'cs11-a-1',
+          text: 'Two correct, on-topic points that happen not to appear verbatim in the scheme’s model answer.',
+          key: { p1: 3, p2: 3 },
+          keyNote: 'Full marks. The scheme’s model notes are explicitly illustrative, not a closed key — a relevant, correct point is credited whether or not it’s printed. Don’t self-censor a good answer for fear it isn’t “on the list”.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Gives valid points absent from the model list — which the scheme still credits on merit.',
+        cite: MS('p.3'),
+      },
+    },
+    {
+      id: 'cs11-b',
+      label: 'Script B',
+      persona: 'Off-topic filler',
+      attempts: [
+        {
+          id: 'cs11-b-1',
+          text: 'Two vague, off-topic statements that don’t actually answer what was asked.',
+          key: { p1: 0, p2: 0 },
+          keyNote: 'Nothing. “Not exhaustive” credits relevant alternatives — it does not rescue irrelevant filler. The test is relevance and correctness, not whether the words match the scheme.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-cs11',
+    rule: 'The scheme is illustrative, not a closed key — any relevant, correct point scores.',
+    detail:
+      'Model answers are “not exclusive or exhaustive” and every list ends “any other relevant points”. A valid point that isn’t printed still earns its mark; only irrelevant or wrong answers score nothing. Answer on merit — don’t bin good points, don’t pad with filler.',
+    cite: MS('p.3'),
+  },
+};
+
+// ─────────────── CS12 · Any valid calculation method is accepted ───────────────
+
+const CS12: ScaleSession = {
+  mode: 'scale',
+  id: 'cs-alt-method',
+  subject: 'construction-studies',
+  level: 'higher',
+  title: 'Your own valid method is fine',
+  cue: 'Calculate — any valid method',
+  question: 'The 15-mark “cost of annual heat loss” calculation has a model step layout, but the scheme prints a single-formula “Alternative method” reaching the same €76.34 and states “Alternative calculation methods acceptable”. A candidate ignores the scheme’s step layout and works the whole thing through one combined formula, fully shown, landing on the right figure. What can they score?',
+  questionNote:
+    'Scenario authored for this exercise. The Construction Studies scheme explicitly accepts alternative calculation methods and even prints a one-formula route to the same answer — so a valid method, fully worked, is not penalised for not matching the scheme’s layout.',
+  scale: {
+    name: 'Heat-loss cost · /15',
+    levels: ladder([3, 9, 15]),
+    notes: [
+      'The scheme prints a step layout AND a single-formula alternative, both reaching €76.34.',
+      '“Alternative calculation methods acceptable” — the method is not prescribed.',
+      'What’s marked is a valid route, fully shown, to the correct answer — not conformity to the scheme’s steps.',
+    ],
+    cite: MS('p.20 (Q5(b) alternative single-formula method), p.21 (“Alternative calculation methods acceptable”)'),
+  },
+  scripts: [
+    {
+      id: 'cs12-a',
+      label: 'The answer',
+      persona: 'Non-scheme method, fully shown',
+      work: ['One combined formula: U-value × Area × ΔT × Time × Cost ÷ (calorific value × 1000)', '= €76.34 — every substitution written out'],
+      keyLevelId: 'm15',
+      keyNote:
+        'Full marks. The scheme accepts alternative methods and prints this very route; because every substitution is on the page and the answer is right, the non-standard method loses nothing. The rule that bites is showing the working (as in the per-step U-value) — not which valid method you choose.',
+      embodies: {
+        behaviour: 'Uses a valid non-scheme method, fully worked — which the scheme explicitly credits.',
+        cite: MS('p.21'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-cs12',
+    rule: 'Any valid method scores — as long as you show every substitution.',
+    detail:
+      'The scheme states “alternative calculation methods acceptable” and prints more than one route to the same answer. A non-standard but valid method, fully worked to the right figure, is not penalised. Don’t panic about matching the scheme’s layout — show your working and the method is yours to choose.',
+    cite: MS('p.21'),
+  },
+};
+
+// ─────────────── CS13 · “Three reasons” means three whole mark-blocks ───────────────
+
+const CS13: GridSession = {
+  mode: 'grid',
+  id: 'cs-reasons-count',
+  subject: 'construction-studies',
+  level: 'higher',
+  title: '“Three reasons” means three whole mark-blocks',
+  cue: 'Give three reasons',
+  question: 'A “give three reasons for your proposed layout” part is marked Reason 1 (6) + Reason 2 (6) + Reason 3 (6) — 18 marks. A candidate justifies the layout with two strong, well-argued reasons and stops there.',
+  questionNote:
+    'Scenario authored for this exercise. Where a Construction Studies part asks for a set number of reasons, each reason is a full, equally-weighted mark-block — so giving fewer than asked forfeits a whole block however good the ones given are.',
+  grid: {
+    perPoint: [
+      { id: 'r1', label: 'Reason 1', marks: 6 },
+      { id: 'r2', label: 'Reason 2', marks: 6 },
+      { id: 'r3', label: 'Reason 3', marks: 6 },
+    ],
+    shorthand: 'three reasons × 6 each',
+    ruleNote:
+      'Each reason is its own 6-mark block and the question fixes the count at three. Two brilliant reasons cannot overflow into the third block — there is no bonus for depth on reason two. Stopping at two caps the part at 12 of 18; the third reason, even a modest one, is a whole extra six.',
+    cite: MS('p.39 (Q3(b) — Reason 1 / 2 / 3, 6 each)'),
+  },
+  scripts: [
+    {
+      id: 'cs13-a',
+      label: 'Script A',
+      persona: 'Two strong reasons, stops short',
+      attempts: [
+        {
+          id: 'cs13-a-1',
+          text: 'Two well-argued reasons for the layout — and no third.',
+          key: { r1: 6, r2: 6, r3: 0 },
+          keyNote: 'Twelve of eighteen. The two reasons score in full, but the third block is empty and nothing the first two do can fill it. A third reason — daylight, circulation, privacy, anything relevant — banks another six for a line of writing.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Gives fewer reasons than the question asks for — forfeiting a whole mark-block.',
+        cite: MS('p.39'),
+      },
+    },
+    {
+      id: 'cs13-b',
+      label: 'Script B',
+      persona: 'Three reasons, as asked',
+      attempts: [
+        {
+          id: 'cs13-b-1',
+          text: 'Three distinct reasons for the layout, each briefly justified.',
+          key: { r1: 6, r2: 6, r3: 6 },
+          keyNote: 'Full marks. The answer supplies exactly the count the question fixed, so all three blocks score.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-cs13',
+    rule: 'When a question asks for N reasons, each is a full mark-block — give all N.',
+    detail:
+      '“Three reasons” is three separate 6-mark blocks; extra depth on one cannot pay for a missing one. Always produce the exact count the question names — the last item is a whole block of marks for a line of writing.',
+    cite: MS('p.39'),
+  },
+};
+
+// ─────────────── CS14 · Half the coursework marks are the folio ───────────────
+
+const CS14: GridSession = {
+  mode: 'grid',
+  id: 'cs-coursework-folio',
+  subject: 'construction-studies',
+  level: 'common',
+  title: 'Half the coursework marks are the folio, not the making',
+  cue: 'Submit the coursework',
+  question: 'The Practical Coursework (150 marks) is marked under four headings — A Planning 40, B Report 35, C Manipulative Skills 40, D Completion 35. A candidate builds a superb artefact and finishes it beautifully, but submits almost no planning documentation and no report folio.',
+  questionNote:
+    'Scenario authored for this exercise. Construction Studies coursework splits across four headings where the written folio — Planning plus Report — is worth 75 of the 150 marks, as much as the making itself.',
+  grid: {
+    perPoint: [
+      { id: 'planning', label: 'A · Planning of Project', marks: 40 },
+      { id: 'report', label: 'B · Report', marks: 35 },
+      { id: 'skills', label: 'C · Manipulative Skills', marks: 40 },
+      { id: 'completion', label: 'D · Completion of Project', marks: 35 },
+    ],
+    shorthand: 'Planning 40 + Report 35 + Manipulative 40 + Completion 35 = 150',
+    ruleNote:
+      'The folio — Planning (40) and Report (35) — is 75 of the 150 marks, exactly half, and it is scored independently of the artefact. A brilliant object with no research, no design development and no written report banks only the making half; the planning and report headings score against documents, not the piece.',
+    cite: MS('p.63 (Practical Coursework Form A — A Planning 40, B Report 35, C Manipulative Skills 40, D Completion 35)'),
+  },
+  scripts: [
+    {
+      id: 'cs14-a',
+      label: 'Script A',
+      persona: 'Great maker, no folio',
+      attempts: [
+        {
+          id: 'cs14-a-1',
+          text: 'An excellently made and well-finished artefact — but no planning research or design development submitted, and no written report.',
+          key: { planning: 0, report: 0, skills: 40, completion: 35 },
+          keyNote: 'Seventy-five of 150. The making headings score in full, but Planning and Report are marked against a folio that isn’t there, so half the marks are gone. The write-up — research, annotated design development, sequence of manufacture, appraisal — is worth as much as the object.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Makes a strong artefact but neglects the planning and report folio — forfeiting half the coursework marks.',
+        cite: MS('p.63'),
+      },
+    },
+    {
+      id: 'cs14-b',
+      label: 'Script B',
+      persona: 'Folio and artefact both delivered',
+      attempts: [
+        {
+          id: 'cs14-b-1',
+          text: 'The same artefact, with a full planning and design-development folio and a complete written report.',
+          key: { planning: 40, report: 35, skills: 40, completion: 35 },
+          keyNote: 'Full marks. Every heading has something to score against because the folio is delivered alongside the making.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-cs14',
+    rule: 'Half the coursework marks are the folio — plan and report as hard as you make.',
+    detail:
+      'Coursework splits Planning 40 + Report 35 + Manipulative 40 + Completion 35; the written folio is 75 of 150, scored against documents not the object. A great artefact with no folio caps at half — invest equally in research, design development and the report.',
+    cite: MS('p.63'),
+  },
+};
+
+// ─────────────── CS15 · The practical must be hand-made — machinery halves the procedure ───────────────
+
+const CS15: ScaleSession = {
+  mode: 'scale',
+  id: 'cs-machinery-penalty',
+  subject: 'construction-studies',
+  level: 'common',
+  title: 'Use a machine, lose half the procedure',
+  cue: 'Hand-produce the artefact',
+  question: 'The Practical Test artefact “is to be hand produced by candidates without the assistance of machinery”. Where an examiner sees evidence of machine work on a procedure, that component “is marked out of 50% of the marks available for that procedure”. A candidate cuts a 12-mark box-dovetail joint cleanly — but with clear evidence of machine assistance. What is the ceiling for that joint?',
+  questionNote:
+    'Scenario authored for this exercise. The Construction Studies Practical Test requires hand production; a machinery penalty caps any machine-assisted procedure at 50% of its marks (a battery screwdriver being the one allowed exception).',
+  scale: {
+    name: 'Box-dovetail joint · /12',
+    levels: [
+      { id: 'penalised', label: 'Machine-assisted — capped at 50%', annotation: '6', marks: 6 },
+      { id: 'hand', label: 'Hand-produced — full', annotation: '12', marks: 12 },
+    ],
+    notes: [
+      'The artefact must be hand produced; a battery-powered screwdriver is the only allowed machine.',
+      'Evidence of machinery on a procedure caps that procedure at 50% of its marks.',
+      'The penalty is on the procedure, not the whole artefact — but a clean machine-cut joint still loses half.',
+    ],
+    cite: MS('p.49 (Practical Test note — hand-produced; machine-assisted procedure marked out of 50%)'),
+  },
+  scripts: [
+    {
+      id: 'cs15-a',
+      label: 'The joint',
+      persona: 'Clean cut, machine-assisted',
+      work: ['A well-fitting box-dovetail joint', 'Clear evidence of machine assistance in cutting it'],
+      keyLevelId: 'penalised',
+      keyNote:
+        'Six of twelve. Quality doesn’t rescue it — the artefact must be hand produced, and any procedure showing machine work is capped at 50% however clean the result. Only the same joint cut by hand reaches the full 12. Leave the machines (bar the allowed battery screwdriver) and work it by hand.',
+      embodies: {
+        behaviour: 'Produces a clean joint with machine assistance — capping the procedure at half its marks.',
+        cite: MS('p.49'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-cs15',
+    rule: 'The practical must be hand-made — machine evidence caps that procedure at 50%.',
+    detail:
+      'The Practical Test artefact is “to be hand produced… without the assistance of machinery”; a machine-assisted procedure is “marked out of 50% of the marks available for that procedure”. Only a battery screwdriver is allowed. A clean but machine-cut component still loses half — work by hand.',
+    cite: MS('p.49'),
+  },
+};
+
 export const CONSTRUCTION_CHAIR: ChairSubject = {
   id: 'construction-studies',
   label: 'Construction Studies',
-  tagline: 'Label every element, sketch when asked, show every layer, develop every point.',
+  tagline: 'Label every element, sketch when asked, show every layer, develop every point — and give the exact count asked.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [CS1, CS2, CS3, CS4, CS5, CS6, CS7],
+  sessions: [CS1, CS2, CS3, CS4, CS5, CS6, CS7, CS8, CS9, CS10, CS11, CS12, CS13, CS14, CS15],
   sources: [
     { label: 'SEC LC Construction Studies HL marking scheme 2025 (examiner-reports/construction-studies/2025-marking-scheme)' },
   ],
   coverageNote:
-    'These sessions teach the general conventions — the element draw+annotation split, the note+sketch split, per-step calculation marking, the point+discussion split, the separate scale/drafting quality band and the brief-as-checklist requirement ticks — which apply at both Higher and Ordinary level. Verified against the 2025 Higher Level scheme; level-specific worked questions are being added.',
+    'These sessions teach the general conventions — the element draw+annotation split, the note+sketch split, per-step calculation marking, the point+discussion split (including where the discussion outweighs the point), separately-tariffed dimensions/insulation/cable-colour ticks, the scale/drafting quality band, the brief-as-checklist and required-count rules, the illustrative-not-exhaustive credit and acceptance of alternative methods, plus the Practical Test hand-production penalty and the coursework folio weighting — which apply at both Higher and Ordinary level (the practical/coursework rules are Common Level). Verified against the 2025 Higher Level scheme; level-specific worked questions are being added.',
 };

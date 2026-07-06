@@ -459,15 +459,352 @@ const EN7: ScaleSession = {
   },
 };
 
+// ─────────────── EN8 · Capped list vs itemised split ───────────────
+
+const EN8: GridSession = {
+  mode: 'grid',
+  id: 'en-itemised',
+  subject: 'engineering',
+  level: 'common',
+  title: 'Know a capped list from an itemised split',
+  cue: 'Name the three',
+  question:
+    'An “answer all parts” item asks you to identify three unit-cell structures, marked 2 + 2 + 2 — one mark-pair per structure. This is the opposite of an “Any N” list: there is no cap and no choice, so every correct structure adds marks. A candidate names two correctly and, running low on time, leaves the third blank. Mark it.',
+  questionNote:
+    'Scenario authored for this exercise. Based on Q5(a)(ii) in the 2025 HL scheme — three named structures marked 2 + 2 + 2. Unlike an “Any N @…” list (where only N answers are ever credited), an itemised 2 + 2 + 2 “answer all” part credits each required item separately, so a blank slot is a lost mark with nothing to offset it.',
+  grid: {
+    perPoint: [
+      { id: 'structA', label: 'Structure A identified', marks: 2 },
+      { id: 'structB', label: 'Structure B identified', marks: 2 },
+      { id: 'structC', label: 'Structure C identified', marks: 2 },
+    ],
+    shorthand: '2 + 2 + 2 (three items, all credited)',
+    ruleNote:
+      'A 2 + 2 + 2 “answer all” part is the mirror image of an “Any N” cap: there is no cap, so every correct item earns its own pair — and every blank forfeits one. Read the shorthand to tell which situation you are in: “Any N @…” means give your best N and stop; “N + N + N” under “answer all parts” means fill every slot.',
+    cite: MS('p.16 (Q5(a)(ii): Structure A/B/C @ 2 + 2 + 2)'),
+  },
+  scripts: [
+    {
+      id: 'en8-a',
+      label: 'Script A',
+      persona: 'Names two, leaves one blank',
+      attempts: [
+        {
+          id: 'en8-a-1',
+          text: 'Correctly identifies Structure A (BCC) and Structure B (FCC), but leaves Structure C blank after running low on time.',
+          key: { structA: 2, structB: 2, structC: 0 },
+          keyNote:
+            'Two correct identifications bank 4, but the third slot is its own separate 2 and it is empty. There is no cap here to soak up the loss — every item is credited in its own right, so the missing structure is simply 2 marks gone. Naming the Close-Packed Hexagonal structure would have completed the 6.',
+        },
+      ],
+      embodies: {
+        behaviour:
+          'Treats an itemised “answer all” 2 + 2 + 2 part as if extra items did not matter, leaving a separately-credited slot blank.',
+        cite: MS('p.16'),
+      },
+    },
+    {
+      id: 'en8-b',
+      label: 'Script B',
+      persona: 'Fills all three slots',
+      attempts: [
+        {
+          id: 'en8-b-1',
+          text: 'Identifies all three structures — Structure A (BCC), Structure B (FCC) and Structure C (CPH).',
+          key: { structA: 2, structB: 2, structC: 2 },
+          keyNote:
+            'Every slot filled, every pair earned. 6/6 — because in an itemised “answer all” split each correct item adds marks with no cap.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-en8',
+    rule: 'Tell a capped list from an itemised split.',
+    detail:
+      'An “Any N @…” list credits only N answers, so over-answering wastes time. An itemised “answer all” split (2 + 2 + 2, 1 + 1 + 1 + 1 + 1) credits every required item separately, so leaving a slot blank forfeits a standalone mark. Read the shorthand and the instruction: give your best N for a cap, but fill every slot for a split.',
+    cite: MS('p.16'),
+  },
+};
+
+// ─────────────── EN9 · Marking Out is credited before you cut ───────────────
+
+const EN9: GridSession = {
+  mode: 'grid',
+  id: 'en-markingout',
+  subject: 'engineering',
+  level: 'common',
+  title: 'Marking out scores before a single cut',
+  cue: 'Practical',
+  question:
+    'In the Practical, each individual part is marked as four separate 5-mark concept marks. For Part 11 these are Marking Out (5), the 10 mm × 3 mm Slots (5), Length & Ø5.5 mm Holes (5) and the Top Profile (5). A candidate rushes the layout — measures by eye, skips the odd centre-punch — but then cuts the slots, holes and profile cleanly to those inaccurate lines. Mark the part.',
+  questionNote:
+    'Scenario authored for this exercise. The SEC Engineering Practical marks each part on separate 5-mark concept marks, and “Marking Out” is one of them in its own right (Part 11: Marking Out 5 + Slots 5 + Holes 5 + Profile 5).',
+  grid: {
+    perPoint: [
+      { id: 'marking', label: 'Marking Out', marks: 5 },
+      { id: 'slots', label: '10 mm × 3 mm Slots', marks: 5 },
+      { id: 'holes', label: 'Length & Ø5.5 mm Holes', marks: 5 },
+      { id: 'profile', label: 'Top Profile', marks: 5 },
+    ],
+    shorthand: 'Part 11: Marking Out 5 + Slots 5 + Holes 5 + Profile 5 (/20)',
+    ruleNote:
+      'Marking Out is a concept mark in its own right, scored separately from the cutting. Accurate layout is credited before any material is removed — so rushed, inaccurate marking out forfeits its 5 even when the subsequent cuts are clean. (Cutting neatly to inaccurate lines also lands the part off-dimension, putting the other marks at risk too.)',
+    cite: MS('p.32 (Practical Part 11: Marking Out 5 + Slots 5 + Holes 5 + Top Profile 5)'),
+  },
+  scripts: [
+    {
+      id: 'en9-a',
+      label: 'Script A',
+      persona: 'Rushes the layout, cuts well',
+      attempts: [
+        {
+          id: 'en9-a-1',
+          text: 'Marks out by eye and skips centre-punching, then cuts the slots, drills the holes and files the top profile cleanly to the (inaccurate) lines.',
+          key: { marking: 0, slots: 5, holes: 5, profile: 5 },
+          keyNote:
+            'The three cutting concept marks are earned, but Marking Out is a separate 5 and rushed layout loses it outright — a quarter of the part, gone before the first cut. Careful measuring and centre-punching would have banked it (and kept the cuts on dimension, protecting the rest).',
+        },
+      ],
+      embodies: {
+        behaviour:
+          'Treats marking out as unmarked preparation and rushes it, dropping the separately-credited Marking Out concept mark.',
+        cite: MS('p.32'),
+      },
+    },
+    {
+      id: 'en9-b',
+      label: 'Script B',
+      persona: 'Marks out accurately first',
+      attempts: [
+        {
+          id: 'en9-b-1',
+          text: 'Measures and marks out accurately, centre-punches every hole, then cuts the slots, holes and profile to those lines.',
+          key: { marking: 5, slots: 5, holes: 5, profile: 5 },
+          keyNote:
+            'Accurate marking out banks its own 5 and sets up the cuts to land on dimension. Full 20 — the layout was worth a clean 5 in its own right.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-en9',
+    rule: 'Marking out is a mark, not just preparation.',
+    detail:
+      'In the Practical each part splits into separate 5-mark concept marks, and Marking Out is one of them — credited before any material is removed. Rushed layout forfeits its 5 and sends the dimensioned cuts off-target. Take the time to measure and centre-punch accurately: it scores in its own right and protects every mark after it.',
+    cite: MS('p.32'),
+  },
+};
+
+// ─────────────── EN10 · Open design briefs accept any workable solution ───────────────
+
+const EN10: GridSession = {
+  mode: 'grid',
+  id: 'en-design',
+  subject: 'engineering',
+  level: 'common',
+  title: 'On an open design brief, any workable answer scores',
+  cue: 'Suggest a mechanism',
+  question:
+    'A design part asks for a mechanism to move a component, and the scheme prints one worked solution flagged “Suggested solution — other valid solutions accepted”, worth 8 as a single granule. One candidate proposes a completely different mechanism from the printed one — but it genuinely achieves the required motion and is clearly explained. Another freezes, sure they don’t know “the” answer, and leaves it blank. Mark both.',
+  questionNote:
+    'Scenario authored for this exercise. Several design parts in the 2025 HL scheme are flagged “Suggested solution – other valid solutions accepted” (e.g. Q9(a)(i), Q9(c)(i)) — the printed mechanism is one example, and any workable alternative that meets the brief is credited.',
+  grid: {
+    perPoint: [{ id: 'mech', label: 'A workable mechanism that meets the brief', marks: 8 }],
+    shorthand: 'Single 8-mark granule — any valid mechanism',
+    ruleNote:
+      'On a design brief there is no single “correct” mechanism. The printed solution is flagged as suggested only, and any workable alternative that achieves the required motion scores full. The one answer that scores nothing is a blank — so a plausible, explained mechanism always beats leaving it empty.',
+    cite: MS('p.28 (Q9(a)(i): “Suggested solution – other valid solutions accepted”)'),
+  },
+  scripts: [
+    {
+      id: 'en10-a',
+      label: 'Script A',
+      persona: 'Different mechanism, genuinely works',
+      attempts: [
+        {
+          id: 'en10-a-1',
+          text: 'Proposes a rack-and-pinion drive instead of the belt drive printed in the scheme, and explains how it produces the required movement.',
+          key: { mech: 8 },
+          keyNote:
+            '“Other valid solutions accepted” means exactly this: a different mechanism that genuinely does the job earns full marks. 8/8. Don’t discard a workable idea just because it isn’t the one printed in the book.',
+        },
+      ],
+    },
+    {
+      id: 'en10-b',
+      label: 'Script B',
+      persona: 'Freezes and leaves it blank',
+      attempts: [
+        {
+          id: 'en10-b-1',
+          text: 'Cannot recall a “standard” answer, worries anything else will be marked wrong, and leaves the part blank.',
+          key: { mech: 0 },
+          keyNote:
+            'The only answer that cannot score is no answer. A blank is a guaranteed 0, whereas any explained mechanism that meets the brief would have been credited. On open design parts, always commit to a workable solution.',
+        },
+      ],
+      embodies: {
+        behaviour:
+          'Leaves an open design part blank for fear of not matching the printed solution, on a part where any valid mechanism is accepted.',
+        cite: MS('p.28'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-en10',
+    rule: 'On an open design brief, commit to any workable solution.',
+    detail:
+      'Design parts print a “suggested solution” and accept any valid alternative that meets the brief, so there is no single answer to recall. A different-but-workable, clearly-explained mechanism scores full; only a blank scores nothing. Never leave a design part empty — sketch and explain a mechanism that does the job.',
+    cite: MS('p.28'),
+  },
+};
+
+// ─────────────── EN11 · Equal splits reward breadth, not depth ───────────────
+
+const EN11: GridSession = {
+  mode: 'grid',
+  id: 'en-breadth',
+  subject: 'engineering',
+  level: 'common',
+  title: 'An N + N split wants N points, not one deep one',
+  cue: 'Give two reasons',
+  question:
+    'A part is marked 4 + 4: two separate points, four marks each. It is the opposite of the 3 + 2 “explain” pattern, which rewards developing one point in depth. A candidate makes a single excellent point and develops it over most of a page — but never offers a second. Mark it.',
+  questionNote:
+    'Scenario authored for this exercise. Based on Q4(a)(i) in the 2025 HL scheme — surface hardening giving “increased resistance to both fatigue failure and abrasive wear”, marked 4 + 4 (two distinct benefits, four marks each). An equal N + N split allocates one mark-block per required point; depth on a single point cannot reach into the second block.',
+  grid: {
+    perPoint: [
+      { id: 'point1', label: 'First point (made and developed)', marks: 4 },
+      { id: 'point2', label: 'Second point (made and developed)', marks: 4 },
+    ],
+    shorthand: '4 + 4 (two distinct points)',
+    ruleNote:
+      'An equal N + N split tells you how many separate points to give — one mark-block each. It is the mirror of the 3 + 2 pattern: 3 + 2 rewards developing one point in depth, but 4 + 4 (or 3 + 3) rewards breadth, two points of equal weight. A single point, however brilliant, can only ever fill its own block — the second block needs a second point.',
+    cite: MS('p.14 (Q4(a)(i): resistance to both fatigue failure and abrasive wear @ 4 + 4)'),
+  },
+  scripts: [
+    {
+      id: 'en11-a',
+      label: 'Script A',
+      persona: 'One point, developed at length',
+      attempts: [
+        {
+          id: 'en11-a-1',
+          text: 'Explains one benefit of surface hardening — increased resistance to abrasive wear — thoroughly and at length, but never offers a second, distinct benefit.',
+          key: { point1: 4, point2: 0 },
+          keyNote:
+            'The one developed point earns its 4, but the second 4-mark block needs a second, distinct point and there isn’t one — extra depth on the first cannot spill into it. Naming a second benefit (resistance to fatigue failure) in a line or two would have banked the other 4. In a 4 + 4, two solid points beat one exhaustive one.',
+        },
+      ],
+      embodies: {
+        behaviour:
+          'Treats an equal 4 + 4 split like a 3 + 2 depth question, developing one point instead of giving the two the split calls for.',
+        cite: MS('p.14'),
+      },
+    },
+    {
+      id: 'en11-b',
+      label: 'Script B',
+      persona: 'Two distinct points',
+      attempts: [
+        {
+          id: 'en11-b-1',
+          text: 'Gives two distinct benefits — resistance to abrasive wear and resistance to fatigue failure — each stated and briefly developed.',
+          key: { point1: 4, point2: 4 },
+          keyNote: 'Two points, one per block, each developed enough. Full 8 — the split asked for breadth and got it.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-en11',
+    rule: 'Let an equal split tell you how many points to give.',
+    detail:
+      'A 4 + 4 or 3 + 3 split allocates one mark-block per required point — it rewards breadth, unlike the 3 + 2 “explain” pattern that rewards depth on one point. Depth on a single point can only fill its own block. Count the blocks in the shorthand and give that many distinct points.',
+    cite: MS('p.14'),
+  },
+};
+
+// ─────────────── EN12 · Every practical section is worth 30 scaled marks ───────────────
+
+const EN12: GridSession = {
+  mode: 'grid',
+  id: 'en-sections',
+  subject: 'engineering',
+  level: 'common',
+  title: 'Finish every section — each is worth 30 scaled marks',
+  cue: 'Practical',
+  question:
+    'The Practical is five sections of 20 marks — the assembled test-piece (Assembly/Function/Finish) plus four individual parts — totalling 100, which is then scaled ×1.5 to 150. A candidate finishes four sections to a high standard but runs out of time and never starts the fifth part. Mark the practical.',
+  questionNote:
+    'Scenario authored for this exercise. The 2025 HL Practical marking grid is five sections @ 20 marks = 100, scaled ×1.5 to 150. Each section is marked independently, so an unstarted section is a full 20 (30 after scaling) forfeited.',
+  grid: {
+    perPoint: [
+      { id: 'sec1', label: 'Section 1 — test-piece (Assembly/Function/Finish)', marks: 20 },
+      { id: 'sec2', label: 'Section 2 — Part 11', marks: 20 },
+      { id: 'sec3', label: 'Section 3 — Parts 2', marks: 20 },
+      { id: 'sec4', label: 'Section 4 — Parts 7 & 9', marks: 20 },
+      { id: 'sec5', label: 'Section 5 — Part 10', marks: 20 },
+    ],
+    shorthand: '5 sections @ 20 = 100 (× 1.5 = 150)',
+    ruleNote:
+      'The five sections are marked independently and then the 100-mark total is scaled ×1.5 to 150 — so each 20-mark section is really worth 30. An unstarted section cannot be offset by polish elsewhere: it is a flat 20 (30 scaled) lost. Budgeting time to at least attempt all five beats perfecting four and running out.',
+    cite: MS('p.32 (Practical: five sections @ 20 = 100 Marks × 1.5 = 150 Total)'),
+  },
+  scripts: [
+    {
+      id: 'en12-a',
+      label: 'Script A',
+      persona: 'Four sections perfect, fifth unstarted',
+      attempts: [
+        {
+          id: 'en12-a-1',
+          text: 'Completes the test-piece and three parts to a high standard, but runs out of time and never starts Part 10 (Section 5).',
+          key: { sec1: 20, sec2: 20, sec3: 20, sec4: 20, sec5: 0 },
+          keyNote:
+            '80/100 before scaling — but that unstarted section is a full 20, which is 30 marks after the ×1.5 scaling. No amount of polish on the other four can reach into it. Even a rough attempt at Part 10 would have clawed back marks the finished parts simply cannot.',
+        },
+      ],
+      embodies: {
+        behaviour:
+          'Perfects four practical sections at the cost of never attempting the fifth, forfeiting a full independent section worth 30 scaled marks.',
+        cite: MS('p.32'),
+      },
+    },
+    {
+      id: 'en12-b',
+      label: 'Script B',
+      persona: 'Attempts all five sections',
+      attempts: [
+        {
+          id: 'en12-b-1',
+          text: 'Budgets time to attempt all five sections — four to a high standard and the fifth solidly, if less polished.',
+          key: { sec1: 20, sec2: 20, sec3: 20, sec4: 20, sec5: 20 },
+          keyNote:
+            'Attempting every section banks marks the abandoned-section script left behind. Spreading the time to reach all five — even if the last is less refined — is worth more than perfecting four and stopping.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-en12',
+    rule: 'Attempt every practical section — each is worth 30 scaled marks.',
+    detail:
+      'The Practical is five independent 20-mark sections scaled ×1.5, so each is really worth 30 and an unstarted section cannot be offset elsewhere. Budget your time to at least attempt all five; a rough fifth section scores more than extra polish on the other four.',
+    cite: MS('p.32'),
+  },
+};
+
 export const ENGINEERING_CHAIR: ChairSubject = {
   id: 'engineering',
   label: 'Engineering',
-  tagline: 'Answer the number asked, state the point, label the diagram, unit the answer, finish the piece.',
+  tagline: 'Answer the number asked, match the mark split, label the diagram, unit the answer, finish every part.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [EN1, EN2, EN3, EN4, EN5, EN6, EN7],
+  sessions: [EN1, EN2, EN3, EN4, EN5, EN6, EN7, EN8, EN9, EN10, EN11, EN12],
   sources: [
     { label: 'SEC LC Engineering HL marking scheme 2025 (examiner-reports/engineering/2025-marking-scheme)' },
   ],
   coverageNote:
-    'These sessions teach the general conventions — the “Any N” cap, the point+development split, separately-credited labels, the single-granule calculation (formula → substitution → answer with unit), the “examples only / valid alternatives accepted” rule, the Irish-language bonus, and the Practical’s Assembly/Function/Finish concept marks — which apply at both Higher and Ordinary level. Verified against the 2025 Higher Level scheme; level-specific worked questions are being added.',
+    'These sessions teach the general marking conventions — the “Any N” cap and its itemised “answer all” mirror, the point+development and equal-split (breadth) patterns, separately-credited labels, the single-granule calculation (formula → substitution → answer with unit), the “examples only / valid alternatives accepted” rule for both fixed answers and open design briefs, the Irish-language bonus, and the Practical’s concept marks (Assembly/Function/Finish, separately-credited Marking Out, and five independent ×1.5-scaled sections) — which apply at both Higher and Ordinary level. Verified against the 2025 Higher Level scheme; level-specific worked questions are being added.',
 };
