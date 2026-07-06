@@ -50,8 +50,14 @@ const SUCCESS = '#3A8D5F';
 const MUTED = '#7a7068';
 const LABEL = '#9e9186';
 const BORDER = '#d8d4ce';
+/** The examiner's pen — the one colour reserved for the examiner's own marks
+ * and annotations, never for app UI. (Drawn from the script margin rule.) */
+const PEN = '#C4443C';
+const PEN_SOFT = 'rgba(196,68,60,0.10)';
+const PAPER = '#FDFCF8';
 
 const SERIF = "'Source Serif 4', serif";
+const MONO = "'DM Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace";
 
 const FLASHCARD_SUBJECT: Record<string, string> = { business: 'business', maths: 'mathematics' };
 const LEVEL_ORDER: ChairLevel[] = ['higher', 'ordinary', 'foundation', 'common'];
@@ -82,7 +88,7 @@ const ScriptPaper: React.FC<{ children: React.ReactNode }> = ({ children }) => (
     className="relative rounded-lg border overflow-hidden"
     style={{
       borderColor: BORDER,
-      background: 'repeating-linear-gradient(to bottom, transparent 0px, transparent 27px, rgba(90,85,80,0.07) 27px, rgba(90,85,80,0.07) 28px), #FDFCF8',
+      background: `repeating-linear-gradient(to bottom, transparent 0px, transparent 27px, rgba(90,85,80,0.07) 27px, rgba(90,85,80,0.07) 28px), ${PAPER}`,
     }}
   >
     <span className="absolute top-0 bottom-0" style={{ left: 26, width: 1, backgroundColor: 'rgba(196,74,60,0.22)' }} aria-hidden="true" />
@@ -104,6 +110,112 @@ const levelsOf = (subject: ChairSubject): ChairLevel[] => {
 
 const sessionsFor = (subject: ChairSubject, level: ChairLevel): MarkingSession[] =>
   subject.sessions.filter(s => s.level === level || s.level === 'common');
+
+// ── the calibration gauge: how close your eye is to the examiner's ──
+
+const Gauge: React.FC<{ value: number; size?: number; caption?: string }> = ({ value, size = 116, caption }) => {
+  const v = Math.max(0, Math.min(1, value));
+  const w = size;
+  const h = size * 0.66;
+  const cx = w / 2;
+  const cy = h - 6;
+  const r = w / 2 - 8;
+  const arc = Math.PI * r; // length of the semicircle
+  const col = agreementColor(v);
+  return (
+    <div className="text-center" style={{ width: w }}>
+      <svg viewBox={`0 0 ${w} ${h + 4}`} width={w} height={h + 4} role="img" aria-label={`Calibration ${pct(v)}`}>
+        <path d={`M8 ${cy} A${r} ${r} 0 0 1 ${w - 8} ${cy}`} fill="none" stroke="#e5e0d9" strokeWidth={9} strokeLinecap="round" />
+        <path
+          d={`M8 ${cy} A${r} ${r} 0 0 1 ${w - 8} ${cy}`}
+          fill="none"
+          stroke={col}
+          strokeWidth={9}
+          strokeLinecap="round"
+          strokeDasharray={arc}
+          strokeDashoffset={arc * (1 - v)}
+        />
+        {/* the examiner's line at the top of the dial */}
+        <line x1={cx} y1={cy - r + 1} x2={cx} y2={cy - r - 7} stroke={PEN} strokeWidth={2.5} strokeLinecap="round" />
+      </svg>
+      <p className="font-bold leading-none" style={{ fontFamily: SERIF, color: col, fontSize: size * 0.28, marginTop: -size * 0.06 }}>
+        {pct(v)}
+      </p>
+      {caption && (
+        <p style={{ fontFamily: MONO, fontSize: 9.5, letterSpacing: '0.08em', textTransform: 'uppercase', color: LABEL, marginTop: 2 }}>
+          {caption}
+        </p>
+      )}
+    </div>
+  );
+};
+
+/** The examiner's total, circled in red pen like a stamp on the script. */
+const MarkStamp: React.FC<{ marks: number; max: number }> = ({ marks, max }) => (
+  <div
+    className="shrink-0 flex flex-col items-center justify-center rounded-full"
+    style={{ width: 56, height: 56, border: `2.5px solid ${PEN}`, color: PEN, transform: 'rotate(-8deg)', fontFamily: SERIF }}
+    aria-label={`Examiner awards ${marks} of ${max}`}
+  >
+    <b className="leading-none" style={{ fontSize: 18 }}>
+      {marks}<span style={{ fontSize: 11 }}>/{max}</span>
+    </b>
+    <span style={{ fontSize: 8, fontFamily: MONO, letterSpacing: '0.05em', textTransform: 'uppercase', marginTop: 1 }}>marked</span>
+  </div>
+);
+
+/** A red-pen margin symbol: tick when the examiner awarded, cross when not. */
+const PenMark: React.FC<{ awarded: boolean }> = ({ awarded }) => (
+  <span aria-hidden="true" style={{ color: PEN, fontFamily: SERIF, fontWeight: 700, fontSize: 17, lineHeight: 1 }}>
+    {awarded ? '✓' : '✗'}
+  </span>
+);
+
+/** The "How this is marked" card, set in the marking scheme's own typographic
+ * language — monospaced allocations, the real notation, a page clip on top. */
+const SchemeExtract: React.FC<{ session: MarkingSession }> = ({ session }) => {
+  const rows: { left: string; alloc: string }[] =
+    session.mode === 'grid'
+      ? session.grid.perPoint.map(c => ({ left: c.label, alloc: `[ ${c.marks} ]` }))
+      : session.scale.levels.map(l => ({ left: l.label, alloc: `${l.annotation} · ${l.marks}` }));
+  const notes = session.mode === 'grid' ? [session.grid.ruleNote] : session.scale.notes;
+  const shorthand = session.mode === 'grid' ? session.grid.shorthand : `Scale ${session.scale.name}`;
+  const cite = session.mode === 'grid' ? session.grid.cite.label : session.scale.cite.label;
+  return (
+    <div className="rounded-xl overflow-hidden mb-4" style={{ border: `2px solid ${INK}`, background: '#fff' }}>
+      {/* the page clip */}
+      <div className="flex items-center px-3.5" style={{ height: 26, borderBottom: `1.5px dashed ${BORDER}` }}>
+        <span style={{ width: 26, height: 8, borderRadius: 3, background: PEN_SOFT, border: `1px solid rgba(196,68,60,0.35)` }} />
+        <span className="ml-auto" style={{ fontFamily: MONO, fontSize: 10, letterSpacing: '0.08em', textTransform: 'uppercase', color: LABEL }}>
+          Marking scheme
+        </span>
+      </div>
+      <div className="px-4 pt-3 pb-1" style={{ overflowX: 'auto' }}>
+        <p style={{ fontFamily: MONO, fontSize: 11.5, color: '#8C3A0E', marginBottom: 8 }}>{shorthand}</p>
+        {rows.map((r, i) => (
+          <div
+            key={i}
+            className="flex justify-between gap-4 py-1"
+            style={{ fontFamily: MONO, fontSize: 12.5, color: INK, borderBottom: `1px dotted ${BORDER}`, whiteSpace: 'nowrap' }}
+          >
+            <span>{r.left}</span>
+            <span style={{ color: PEN, fontWeight: 600 }}>{r.alloc}</span>
+          </div>
+        ))}
+      </div>
+      <div className="px-4 pt-2.5 pb-3.5">
+        {notes.map((n, i) => (
+          <p key={i} className="leading-relaxed" style={{ fontSize: 12.5, color: '#5a5550', marginBottom: 3 }}>
+            {n}
+          </p>
+        ))}
+        <p className="mt-1.5 italic" style={{ fontFamily: MONO, fontSize: 10.5, color: LABEL }}>
+          {cite}
+        </p>
+      </div>
+    </div>
+  );
+};
 
 // ═══════════════════════════════ main component ═══════════════════════════════
 
@@ -226,39 +338,8 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
               </p>
             </div>
 
-            <div className="rounded-xl px-4 py-3.5 mb-4" style={{ backgroundColor: '#FDEEDF', borderLeft: `3px solid ${ACCENT}` }}>
-              <Small className="mb-1.5">How this is marked</Small>
-              {session.mode === 'grid' ? (
-                <>
-                  <p className="text-[14px] font-semibold" style={{ fontFamily: SERIF, color: INK }}>
-                    {session.grid.shorthand}
-                  </p>
-                  <div className="flex flex-wrap gap-1.5 my-2">
-                    {session.grid.perPoint.map(c => (
-                      <span key={c.id} className="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-white" style={{ color: '#8C3A0E', border: '1px solid rgba(242,107,31,0.25)' }}>
-                        {c.label} · {c.marks}m
-                      </span>
-                    ))}
-                  </div>
-                  <p className="text-[13px] italic leading-relaxed" style={{ color: '#8C3A0E' }}>{session.grid.ruleNote}</p>
-                  <CiteLine label={session.grid.cite.label} />
-                </>
-              ) : (
-                <>
-                  <p className="text-[14px] font-semibold" style={{ fontFamily: SERIF, color: INK }}>
-                    Scale {session.scale.name} — {session.scale.levels.map(l => l.marks).join(', ')}
-                  </p>
-                  <ul className="mt-2 space-y-1">
-                    {session.scale.notes.map((n, i) => (
-                      <li key={i} className="text-[13px] italic leading-relaxed" style={{ color: '#8C3A0E' }}>
-                        {n}
-                      </li>
-                    ))}
-                  </ul>
-                  <CiteLine label={session.scale.cite.label} />
-                </>
-              )}
-            </div>
+            <Small className="mb-1.5">How this is marked</Small>
+            <SchemeExtract session={session} />
 
             <button
               onClick={() => setStage('mark')}
@@ -273,15 +354,23 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
         {/* ── mark / reveal ── */}
         {(stage === 'mark' || stage === 'reveal') && (
           <>
-            <div className="flex items-center justify-between mb-2">
+            <div className="flex items-center justify-between gap-3 mb-3">
               <p className="text-[13px]" style={{ color: MUTED }}>
                 <span className="font-semibold" style={{ color: INK }}>{script.label}</span>
                 <span> — {script.persona}</span>
               </p>
               {stage === 'reveal' && currentScore && (
-                <span className="text-[11.5px] font-bold shrink-0" style={{ color: agreementColor(currentScore.agreement) }}>
-                  {pct(currentScore.agreement)} match
-                </span>
+                <div className="flex items-center gap-2.5 shrink-0">
+                  <div className="text-right">
+                    <p className="text-[11.5px] font-bold leading-tight" style={{ color: agreementColor(currentScore.agreement) }}>
+                      {pct(currentScore.agreement)} match
+                    </p>
+                    <p className="text-[10px] leading-tight" style={{ color: MUTED }}>
+                      you {currentScore.studentMarks}m
+                    </p>
+                  </div>
+                  <MarkStamp marks={currentScore.examinerMarks} max={currentScore.maxMarks} />
+                </div>
               )}
             </div>
 
@@ -323,21 +412,25 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                         return (
                           <span
                             key={c.id}
-                            className="inline-flex items-center gap-1 text-[12px] font-semibold px-2.5 py-1.5 rounded-full border"
-                            style={
-                              match
-                                ? { backgroundColor: '#E8F2EC', borderColor: SUCCESS, color: '#1F5F3E' }
-                                : { backgroundColor: '#FDEEDF', borderColor: ACCENT, color: '#8C3A0E' }
-                            }
+                            className="inline-flex items-center gap-1.5 text-[12px] px-2 py-1 rounded-md"
+                            style={{ backgroundColor: PEN_SOFT, border: '1px solid rgba(196,68,60,0.28)' }}
                           >
-                            {match ? <Check size={12} /> : <span className="font-bold">·</span>}
-                            {c.label}: {keyAwarded ? `${attempt.key[c.id]}m` : '0m'}
+                            <PenMark awarded={keyAwarded} />
+                            <span className="font-semibold" style={{ color: INK }}>{c.label}</span>
+                            <span style={{ fontFamily: MONO, fontSize: 11, color: PEN }}>{keyAwarded ? `${attempt.key[c.id]}m` : '0m'}</span>
+                            {match ? (
+                              <Check size={12} color={SUCCESS} aria-label="you agreed" />
+                            ) : (
+                              <span className="font-semibold" style={{ color: ACCENT, fontSize: 10.5 }}>
+                                you said {awarded ? 'award' : 'no'}
+                              </span>
+                            )}
                           </span>
                         );
                       })}
                     </div>
                     {stage === 'reveal' && (
-                      <p className="text-[12.5px] leading-relaxed mt-2 px-0.5" style={{ color: '#5a5550' }}>
+                      <p className="text-[12.5px] leading-relaxed mt-2 italic" style={{ color: PEN, borderLeft: `2px solid ${PEN}`, paddingLeft: 10 }}>
                         {attempt.keyNote}
                       </p>
                     )}
@@ -374,27 +467,32 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                         </button>
                       );
                     }
+                    const matched = isKey && isChoice;
                     return (
                       <span
                         key={l.id}
-                        className="inline-flex items-center gap-1 text-[12px] font-semibold px-2.5 py-1.5 rounded-full border"
+                        className="inline-flex items-center gap-1.5 text-[12px] font-semibold px-2.5 py-1.5 rounded-md border"
                         style={
                           isKey
-                            ? { backgroundColor: '#E8F2EC', borderColor: SUCCESS, color: '#1F5F3E' }
+                            ? { backgroundColor: PEN_SOFT, borderColor: 'rgba(196,68,60,0.45)', color: INK }
                             : isChoice
                               ? { backgroundColor: '#FDEEDF', borderColor: ACCENT, color: '#8C3A0E' }
                               : { backgroundColor: '#fff', borderColor: BORDER, color: '#b0a898' }
                         }
                       >
-                        {isKey && <Check size={12} />}
-                        {(isKey || isChoice) ? `${l.annotation} ` : ''}
+                        {isKey && <PenMark awarded />}
+                        {isKey && <span style={{ fontFamily: MONO, fontSize: 11, color: PEN }}>{l.annotation}</span>}
                         {l.label} · {l.marks}m
+                        {isKey && (matched
+                          ? <Check size={12} color={SUCCESS} aria-label="you agreed" />
+                          : <span style={{ color: ACCENT, fontSize: 10.5 }}>examiner's call</span>)}
+                        {isChoice && !isKey && <span style={{ fontSize: 10.5 }}>your call</span>}
                       </span>
                     );
                   })}
                 </div>
                 {stage === 'reveal' && (
-                  <p className="text-[12.5px] leading-relaxed mt-2 px-0.5" style={{ color: '#5a5550' }}>
+                  <p className="text-[12.5px] leading-relaxed mt-2 italic" style={{ color: PEN, borderLeft: `2px solid ${PEN}`, paddingLeft: 10 }}>
                     {(script as ScaleSession['scripts'][number]).keyNote}
                   </p>
                 )}
@@ -445,11 +543,11 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
               const agreement = scores.length ? scores.reduce((a, s) => a + s.agreement, 0) / scores.length : 0;
               return (
                 <div className="rounded-2xl border bg-white dark:bg-zinc-900 dark:border-zinc-700 px-5 py-5 mb-3 text-center" style={{ borderColor: BORDER }}>
-                  <Small className="mb-2">Calibration this session</Small>
-                  <p className="text-[42px] font-bold leading-none" style={{ fontFamily: SERIF, color: agreementColor(agreement) }}>
-                    {pct(agreement)}
-                  </p>
-                  <p className="text-[13px] font-semibold mt-1.5" style={{ color: agreementColor(agreement) }}>
+                  <Small className="mb-1">How close was your eye to the examiner's?</Small>
+                  <div className="flex justify-center my-1">
+                    <Gauge value={agreement} size={136} />
+                  </div>
+                  <p className="text-[13px] font-semibold" style={{ color: agreementColor(agreement) }}>
                     {calibrationBand(agreement)}
                   </p>
                   <div className="mt-3.5 space-y-1.5">
@@ -662,17 +760,20 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
       </p>
 
       <div className="rounded-xl border bg-white dark:bg-zinc-900 dark:border-zinc-700 px-4 py-3 mb-5 flex items-center justify-between gap-3" style={{ borderColor: BORDER }}>
-        <div className="min-w-0">
-          <Small className="mb-0.5">Calibration</Small>
-          {calibration === null ? (
-            <p className="text-[13px]" style={{ color: MUTED }}>
-              Mark your first scripts to find your baseline.
-            </p>
-          ) : (
-            <p className="text-[14px] font-semibold" style={{ color: agreementColor(calibration) }}>
-              {pct(calibration)} · {calibrationBand(calibration)}
-            </p>
-          )}
+        <div className="min-w-0 flex items-center gap-3">
+          {calibration !== null && <Gauge value={calibration} size={72} caption="your eye" />}
+          <div className="min-w-0">
+            <Small className="mb-0.5">Calibration</Small>
+            {calibration === null ? (
+              <p className="text-[13px]" style={{ color: MUTED }}>
+                Mark your first scripts to find your baseline.
+              </p>
+            ) : (
+              <p className="text-[14px] font-semibold" style={{ color: agreementColor(calibration) }}>
+                {calibrationBand(calibration)}
+              </p>
+            )}
+          </div>
         </div>
         <button
           onClick={() => setView('codex')}
