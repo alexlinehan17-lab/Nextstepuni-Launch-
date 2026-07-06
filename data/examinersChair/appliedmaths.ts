@@ -166,12 +166,58 @@ const AM3: ScaleSession = {
   },
 };
 
+// ─────────────── AM4 · The slip that makes it easier ───────────────
+
+const AM4: ScaleSession = {
+  mode: 'scale',
+  id: 'am-oversimplify',
+  subject: 'applied-maths',
+  level: 'common',
+  title: 'A mistake that makes it easier is a blunder',
+  cue: 'Solve',
+  question: 'On a 10-mark part, a candidate drops a term early on. It looks like a one-mark slip — but losing that term makes the rest of the problem much easier to solve. The scheme says a slip or misreading that oversimplifies the question is treated as a blunder. What does it score?',
+  questionNote:
+    'Scenario authored for this exercise. Instruction 5: “A misreading or slip or omission which oversimplifies the question may be regarded as equivalent to a mathematical error and is marked accordingly” — i.e. upgraded from −1 to −3.',
+  scale: {
+    name: 'Oversimplifying slip · /10',
+    levels: ladder([7, 9]),
+    notes: [
+      'A normal slip is −1; a mathematical blunder is −3.',
+      'But a slip, misreading or omission that OVERSIMPLIFIES the question is upgraded to a blunder.',
+      'So dropping a term that makes the rest easier costs −3, not −1: 10 − 3 = 7.',
+    ],
+    cite: MS('p.3 (instruction 5, oversimplification upgrade)'),
+  },
+  scripts: [
+    {
+      id: 'am4-a',
+      label: 'The answer',
+      persona: 'Slip that simplifies the problem',
+      work: ['One dropped term early in the working.', 'Losing it makes the remaining problem substantially easier.', 'The rest is carried through correctly.'],
+      keyLevelId: 'm7',
+      keyNote:
+        'Only 7 of 10 — because the slip made the problem easier, it’s treated as a blunder, not a −1 slip. The examiner asks whether your mistake left the problem as hard as it was set: if it quietly removed the difficult part, you solved an easier question and are marked accordingly. When you drop or misread a term, check you haven’t cut out the hard bit.',
+      embodies: {
+        behaviour: 'Makes a slip that oversimplifies the question — upgraded from −1 to a −3 blunder.',
+        cite: MS('p.3'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-am4',
+    rule: 'A mistake that makes the problem easier is a blunder.',
+    detail:
+      'In Applied Maths a slip, misreading or omission that oversimplifies the question is upgraded from −1 to −3 — because you solved an easier problem than the one set. When you drop a term or misread, check you haven’t removed the difficulty; if you have, expect the bigger penalty.',
+    cite: MS('p.3'),
+  },
+};
+
 export const APPLIED_MATHS_CHAIR: ChairSubject = {
   id: 'applied-maths',
   label: 'Applied Mathematics',
   tagline: 'Blunders, slips and the floor a real attempt always banks.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [AM1, AM2, AM3],
+  sessions: [AM1, AM2, AM3, AM4],
   sources: [
     { label: 'SEC LC Applied Mathematics HL marking scheme 2024 (examiner-reports/applied-maths/2024-marking-scheme)' },
   ],
