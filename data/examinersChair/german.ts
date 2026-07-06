@@ -440,17 +440,466 @@ const GE7: ScaleSession = {
   },
 };
 
+// ─────────────── Ge8 · Accept the first answer only ───────────────
+
+const GE8: ScaleSession = {
+  mode: 'scale',
+  id: 'de-first-answer',
+  subject: 'german',
+  level: 'common',
+  title: 'Hedging costs you the point',
+  cue: 'Comprehension',
+  question:
+    'A comprehension question has one right answer. Unsure, the candidate writes two — the first one wrong, the second one correct — hoping the right one will be spotted and credited. On a 2-mark point, what does it score?',
+  questionNote:
+    'Scenario authored for this exercise. The scheme’s global rule: where a candidate answers a question more than once, the examiner accepts the first answer only — a right second answer behind a wrong first one is never reached.',
+  scale: {
+    name: 'Comprehension · first answer only',
+    levels: two(0, 2),
+    notes: [
+      'Global rule: “Where the candidate answers a question more than once, accept the first answer only.”',
+      'The examiner does not scan both answers and pick the correct one — only answer #1 is marked.',
+      'Cancelled answers are re-read only “where no other answer has been given”.',
+      'So hedging with a second answer cannot bank the mark; a wrong first answer stands.',
+    ],
+    cite: MS('p.[3] (“accept the first answer only”)'),
+  },
+  scripts: [
+    {
+      id: 'ge8-a',
+      label: 'The answer',
+      persona: 'Two answers, wrong one first',
+      work: ['Gives two answers to a single-answer question.', 'First answer is wrong; the correct one is written second.'],
+      keyLevelId: 'm0',
+      keyNote:
+        '0 — the examiner marks the first answer only, and the first one is wrong, so the correct second answer is never reached. Hedging does not bank the mark; it throws it away when you lead with the weaker option. Commit to one answer, and make it your best one.',
+      embodies: {
+        behaviour: 'Offers a wrong first answer and a right second one, where only the first is marked — scored on the wrong one.',
+        cite: MS('p.[3]'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-de8',
+    rule: 'Only your first answer is marked.',
+    detail:
+      'German comprehension accepts the first answer only where a question is answered more than once. A correct answer written second, behind a wrong first one, scores nothing. Decide on one answer and lead with it — never hedge.',
+    cite: MS('p.[3]'),
+  },
+};
+
+// ─────────────── Ge9 · Over-answering is safe ───────────────
+
+const GE9: ScaleSession = {
+  mode: 'scale',
+  id: 'de-over-answer',
+  subject: 'german',
+  level: 'common',
+  title: 'One weak extra can’t drag you down',
+  cue: 'Schriftliche Produktion',
+  question:
+    'The letter task says answer any four of the five bullet points. A candidate answers all five — but the fifth is thin and half-relevant. Does attempting that weak fifth point pull the Content mark down?',
+  questionNote:
+    'Scenario authored for this exercise. The scheme instructs examiners to mark all attempted points and select the best four (letter) or five (photo) — over-answering is not penalised.',
+  scale: {
+    name: 'Content · best-of selected',
+    levels: [
+      { id: 'capped', label: 'Weak extra drags Content down', annotation: '✗', marks: 20 },
+      { id: 'best', label: 'Best four kept, extra ignored', annotation: '✓', marks: 25 },
+    ],
+    notes: [
+      'Letter: answer any four of five points; photo: any five of six.',
+      'Rule: “Where a candidate has answered more than four, mark all and pick the best four for final mark.”',
+      'The examiner scores every attempted point and keeps the strongest four (or five) — the weak extra is simply dropped, not subtracted.',
+      'So a spare attempt can only help: if it beats one of your four, it replaces it; if not, it costs nothing.',
+    ],
+    cite: MS('p.[16] (“mark all and pick the best four”); p.[17] (best five)'),
+  },
+  scripts: [
+    {
+      id: 'ge9-a',
+      label: 'The answer',
+      persona: 'Answers all five, one is thin',
+      work: ['Answers all five bullet points where four were required.', 'The fifth is thin and only half-relevant.'],
+      keyLevelId: 'best',
+      keyNote:
+        'Full — the examiner marks all five and keeps the best four, so the thin fifth is dropped, never subtracted. Over-answering is a free option: a spare point can only replace a weaker one or be ignored. If you have time and a fifth idea, write it; it cannot cost you.',
+      embodies: {
+        behaviour: 'Attempts more points than required, where the scheme selects the best four — the weak extra is discarded, not penalised.',
+        cite: MS('p.[16]'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-de9',
+    rule: 'Extra points are marked and the best kept.',
+    detail:
+      'German written production marks every point you attempt and keeps the best four (letter) or five (photo). A weak extra is dropped, never subtracted — so over-answering can only help. If you have a spare idea and time, add it.',
+    cite: MS('p.[16]'),
+  },
+};
+
+// ─────────────── Ge10 · The letter frame is worth four marks ───────────────
+
+const GE10: GridSession = {
+  mode: 'grid',
+  id: 'de-letter-frame',
+  subject: 'german',
+  level: 'common',
+  title: 'The letter’s frame is four marks a photo-answer never earns',
+  cue: 'Schriftliche Produktion (Brief)',
+  question:
+    'In the letter option, the opening is worth 2 marks and the closing 2 marks — 4 marks of “frame” before any content. Each is split: a required structural element (1) plus a development (1). Mark the openings and closings below.',
+  questionNote:
+    'Answers authored for this exercise; the mark split is the real SEC template. Op. (2) = suitable opening / bare minimum (1) + appropriate elaboration OR reference to the letter (1); Cl. (2) = suitable transition to ending (1) + appropriate closing formula (1).',
+  grid: {
+    perPoint: [
+      { id: 'marker', label: 'Structural marker (greeting / transition to ending)', marks: 1 },
+      { id: 'develop', label: 'Development (opening elaboration or reference / closing formula)', marks: 1 },
+    ],
+    shorthand: '2×2 (1+1)',
+    ruleNote:
+      'The opening and closing are each 2 marks, split 1 (the structural marker) + 1 (the development). A bare greeting with no reference to the letter earns 1 of 2; a sign-off with no transition sentence earns 1 of 2. Skip the frame entirely — as a photo-response candidate can — and you forfeit 4 marks the letter demands.',
+    cite: MS('p.[16] (“Op. (2)” / “Cl. (2)” splits)'),
+  },
+  scripts: [
+    {
+      id: 'ge10-a',
+      label: 'Script A',
+      persona: 'Straight to business',
+      attempts: [
+        {
+          id: 'ge10-a-1',
+          text: 'Opening: „Liebe Andrea,“ — then straight into answering point A.',
+          key: { marker: 1, develop: 0 },
+          keyNote:
+            'The greeting is there (bare minimum, 1) but there is no elaboration and no reference to Andrea’s letter, so the second mark is lost. 1/2.',
+        },
+        {
+          id: 'ge10-a-2',
+          text: 'Closing: ends with just „Tschüss, deine Sarah“.',
+          key: { marker: 0, develop: 1 },
+          keyNote:
+            'A closing formula is present („deine Sarah“, 1) but there is no transition sentence easing into the ending, so the transition mark is lost. 1/2.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Supplies half of each frame element — greeting without reference, sign-off without transition.',
+        cite: MS('p.[16]'),
+      },
+    },
+    {
+      id: 'ge10-b',
+      label: 'Script B',
+      persona: 'Frames it properly',
+      attempts: [
+        {
+          id: 'ge10-b-1',
+          text: 'Opening: „Liebe Andrea, vielen Dank für deinen Brief! Schön, von dir zu hören.“',
+          key: { marker: 1, develop: 1 },
+          keyNote: 'Greeting present (1) and a genuine reference back to Andrea’s letter (1). Full 2/2.',
+        },
+        {
+          id: 'ge10-b-2',
+          text: 'Closing: „Ich muss jetzt leider Schluss machen. Schreib mir bald zurück! Deine Sarah“',
+          key: { marker: 1, develop: 1 },
+          keyNote: 'A transition sentence eases into the ending (1) and a proper closing formula signs off (1). 2/2.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Provides both the structural marker and the development in each of the opening and closing.',
+        cite: MS('p.[16]'),
+      },
+    },
+    {
+      id: 'ge10-c',
+      label: 'Script C',
+      persona: 'Writes it like a photo response',
+      attempts: [
+        {
+          id: 'ge10-c-1',
+          text: 'Opening: no greeting at all — begins „Ich trainiere jeden Tag Breaking …“.',
+          key: { marker: 0, develop: 0 },
+          keyNote:
+            'No greeting and no reference to the letter — the whole 2-mark opening is forfeited. This is the photo-response habit: diving straight into content. 0/2.',
+        },
+        {
+          id: 'ge10-c-2',
+          text: 'Closing: the letter simply stops after the last point — no ending.',
+          key: { marker: 0, develop: 0 },
+          keyNote:
+            'No transition and no closing formula, so both closing marks are gone. The frame the letter task demands is missing entirely. 0/2.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Omits the opening and closing frame entirely, forfeiting the 4 structural marks unique to the letter option.',
+        cite: MS('p.[16]'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-de10',
+    rule: 'The letter’s opening and closing are 4 marks — earn them.',
+    detail:
+      'The letter option scores Op. (2) and Cl. (2) before any content: a greeting plus a reference to the letter, and a transition sentence plus a closing formula. Each is 1+1. Skip the frame — as a photo response can — and you drop four marks the letter demands.',
+    cite: MS('p.[16]'),
+  },
+};
+
+// ─────────────── Ge11 · Quote the phrase, not the mood ───────────────
+
+const GE11: ScaleSession = {
+  mode: 'scale',
+  id: 'de-language-spotting',
+  subject: 'german',
+  level: 'common',
+  title: 'Name the phrase, not the tone',
+  cue: 'Aural',
+  question:
+    'The phone-call section asks for three examples of the language used that show the caller is happy. The candidate writes “he sounds cheerful and enthusiastic” — an accurate reading of his tone. On a 2-mark example, what does it score?',
+  questionNote:
+    'Scenario authored for this exercise. This aural sub-task credits cited expressions and phrases only — there are no marks for describing tone of voice or intonation without quoting specific language.',
+  scale: {
+    name: 'Aural · language evidence',
+    levels: two(0, 2),
+    notes: [
+      'The task asks for “examples of the language used (= expressions and phrases)” that show the caller is happy.',
+      'Rule: “no marks for tone of voice / intonation without reference to specific expressions and phrases.”',
+      'You must cite the actual words — an accurate exact phrase or an accurate paraphrase in translation is accepted.',
+      'Describing the mood (“he sounds happy”) is not evidence of language; it scores nothing.',
+    ],
+    cite: MS('p.[24] (“no marks for tone of voice / intonation …”)'),
+  },
+  scripts: [
+    {
+      id: 'ge11-a',
+      label: 'The answer',
+      persona: 'Describes the mood, quotes nothing',
+      work: ['Writes “he sounds cheerful and enthusiastic”.', 'Cites no actual expression or phrase from the call.'],
+      keyLevelId: 'm0',
+      keyNote:
+        '0 — the task wants the language, not the mood. “He sounds happy” describes tone of voice, which earns nothing here; the marks attach to a cited phrase like „einfach toll!“ or „eine wunderbare Aussicht“. Write down the words the speaker actually used, or a faithful paraphrase of them.',
+      embodies: {
+        behaviour: 'Reports the speaker’s tone rather than quoting a specific expression — awarded no marks under the language-evidence rule.',
+        cite: MS('p.[24]'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-de11',
+    rule: 'Evidence means a phrase, not a mood.',
+    detail:
+      'Where the aural asks for language that shows an attitude, only a cited expression or phrase (or a faithful paraphrase) scores — “he sounds happy” earns nothing. Note the actual words the speaker uses, not your reading of their tone.',
+    cite: MS('p.[24]'),
+  },
+};
+
+// ─────────────── Ge12 · All-or-nothing items ───────────────
+
+const GE12: ScaleSession = {
+  mode: 'scale',
+  id: 'de-all-or-nothing',
+  subject: 'german',
+  level: 'common',
+  title: 'One digit wrong, the whole item gone',
+  cue: 'Aural',
+  question:
+    'The phone-message section asks the candidate to note the caller’s contact number, worth 2 marks and marked all-or-nothing. The candidate hears it almost perfectly but transposes one digit. What does it score?',
+  questionNote:
+    'Scenario authored for this exercise. Certain aural items — a phone number, an age range — are marked all-or-nothing: every element must be right, with no part-marks for “nearly”.',
+  scale: {
+    name: 'Aural · all-or-nothing item',
+    levels: two(0, 2),
+    notes: [
+      'The scheme flags certain items “All or nothing”: e.g. the contact number “0171 63 72 9 1 0” (2 marks) and the age range “16 to 80” (2 marks).',
+      'Every digit / element must be correct — one wrong digit zeroes the whole item.',
+      'There is no partial credit for getting most of it; the item is scored as a single unit.',
+      'These are the items to double-check on the final playing.',
+    ],
+    cite: MS('p.[23] (“All or nothing: Kontaktnummer …”); p.[27] (“16 to 80 … all or nothing”)'),
+  },
+  scripts: [
+    {
+      id: 'ge12-a',
+      label: 'The answer',
+      persona: 'One digit off',
+      work: ['Notes the contact number almost perfectly.', 'Transposes a single digit within it.'],
+      keyLevelId: 'm0',
+      keyNote:
+        '0 — this item is all-or-nothing, so a single wrong digit zeroes the full 2 marks, however close the rest is. There is no “most of it” credit for a phone number or an age range. Treat these items as unforgiving and confirm every digit on the last playing before you commit.',
+      embodies: {
+        behaviour: 'Gets an all-or-nothing item nearly right with one wrong digit — scored 0, with no partial credit.',
+        cite: MS('p.[23]'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-de12',
+    rule: 'All-or-nothing items give no part-marks.',
+    detail:
+      'Numbers and ranges in the German aural — a phone number, an age band — are marked all-or-nothing: one wrong element zeroes the whole item. “Nearly right” earns nothing. Verify every digit of these items on the final playing.',
+    cite: MS('p.[23]'),
+  },
+};
+
+// ─────────────── Ge13 · A quote without explanation ───────────────
+
+const GE13: ScaleSession = {
+  mode: 'scale',
+  id: 'de-explain-quote',
+  subject: 'german',
+  level: 'common',
+  title: 'A German quote alone proves nothing',
+  cue: 'Comprehension',
+  question:
+    'A 5-mark question asks the candidate to give an example of change in the text, allowing either content or language use as evidence. The candidate copies a German phrase from the text and stops — no explanation of why it shows change. How does it score?',
+  questionNote:
+    'Scenario authored for this exercise. Where a question invites a quotation as evidence, the scheme flags that a German quote given with no explanation scores 0 — the candidate must show what it demonstrates.',
+  scale: {
+    name: 'Comprehension · quote + explanation',
+    levels: two(0, 5),
+    notes: [
+      'The question allows language use and/or content as the example of change.',
+      'Rule printed on the item: “German only without explanation = 0”.',
+      'A lifted German phrase with no comment does not show the candidate has understood why it demonstrates the point.',
+      'Explain what the quotation shows — the explanation is what earns the marks.',
+    ],
+    cite: MS('p.[8] (“German only without explanation =0”)'),
+  },
+  scripts: [
+    {
+      id: 'ge13-a',
+      label: 'The answer',
+      persona: 'Quotes and stops',
+      work: ['Copies a German phrase from the text as the example.', 'Gives no explanation of why it shows change.'],
+      keyLevelId: 'm0',
+      keyNote:
+        '0 — “German only without explanation = 0”. The bare quote may point at the right line, but without saying what it demonstrates it shows no understanding, so the item scores nothing. Pair every quotation with a sentence explaining the change it illustrates; the explanation is where the marks live.',
+      embodies: {
+        behaviour: 'Provides a German quotation with no explanation where explanation is required — scored 0.',
+        cite: MS('p.[8]'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-de13',
+    rule: 'A quote needs an explanation to score.',
+    detail:
+      'Where a German question invites a quotation as evidence, “German only without explanation = 0”. A lifted phrase alone proves nothing — you must explain what it shows. Always follow the quote with the point it demonstrates.',
+    cite: MS('p.[8]'),
+  },
+};
+
+// ─────────────── Ge14 · The wrong referent ───────────────
+
+const GE14: ScaleSession = {
+  mode: 'scale',
+  id: 'de-referent',
+  subject: 'german',
+  level: 'common',
+  title: 'Right detail, wrong person',
+  cue: 'Comprehension',
+  question:
+    'A question asks about Till’s first encounter with a girl, Feli. The candidate reports a correct detail but refers to Feli as “he” throughout, having misread who the character is. On a 2-mark point, what happens?',
+  questionNote:
+    'Scenario authored for this exercise. The scheme zeroes a content point pinned to the wrong referent — “Reference to Feli as ‘he’ = 0” — but applies the penalty once only across the answer.',
+  scale: {
+    name: 'Comprehension · referential accuracy',
+    levels: two(0, 2),
+    notes: [
+      'Rule printed on the item: “Reference to Feli as ‘he’ = 0. Penalise once only.”',
+      'A detail attached to the wrong person shows the text was misread, so the point scores 0.',
+      '“Penalise once only” — the referent error is docked a single time, not on every subsequent point.',
+      'Track who is who in the text before you write the detail down.',
+    ],
+    cite: MS('p.[7] (“Reference to Feli as ‘he’=0. Penalise once only”)'),
+  },
+  scripts: [
+    {
+      id: 'ge14-a',
+      label: 'The answer',
+      persona: 'Correct detail, wrong gender/referent',
+      work: ['Reports a correct detail about the encounter.', 'Calls Feli “he” throughout, having misread the character.'],
+      keyLevelId: 'm0',
+      keyNote:
+        '0 on this point — the detail is right, but pinning it to the wrong person (“he” for Feli) shows the text was misread, so the scheme zeroes it. The saving grace is “penalise once only”: the referent slip is docked a single time, not on every following answer. Get clear on who each character is before you commit a detail.',
+      embodies: {
+        behaviour: 'Attaches a correct detail to a mis-identified referent — scored 0, penalised once only.',
+        cite: MS('p.[7]'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-de14',
+    rule: 'A detail on the wrong person scores zero.',
+    detail:
+      'German comprehension zeroes a content point tied to the wrong referent — a correct detail said of the wrong character scores 0 (“penalise once only”). Fix who is who in the text before you write, so your details land on the right person.',
+    cite: MS('p.[7]'),
+  },
+};
+
+// ─────────────── Ge15 · Discretionary marks reward elaboration ───────────────
+
+const GE15: ScaleSession = {
+  mode: 'scale',
+  id: 'de-discretionary',
+  subject: 'german',
+  level: 'common',
+  title: 'Elaboration earns the discretionary mark',
+  cue: 'Schriftliche Produktion',
+  question:
+    'Two candidates make the same required point in the letter. One states it plainly and moves on; the other adds a relevant reason and a personal detail. Beyond the point’s own mark, what extra is on offer for the elaboration?',
+  questionNote:
+    'Scenario authored for this exercise. On top of the fixed content points, the scheme reserves discretionary marks (five in Schriftliche Produktion, two in Äußerung) for additional relevant elaboration or comment.',
+  scale: {
+    name: 'Content · point + discretionary',
+    levels: [
+      { id: 'bare', label: 'Bare point only', annotation: '1', marks: 1 },
+      { id: 'elaborated', label: 'Point + relevant elaboration', annotation: '2', marks: 2 },
+    ],
+    notes: [
+      'Each fixed content point earns its stated mark (e.g. 1) for being made.',
+      'On top, “Five discretionary marks are available … for additional relevant elaboration or comment” (two in Äußerung).',
+      'The discretionary mark rewards developing a point — a reason, an example, a personal detail — beyond the bare statement.',
+      'So the same point, elaborated, can out-score the same point stated flat.',
+    ],
+    cite: MS('p.[16] (“Five discretionary marks … for additional relevant elaboration or comment”); p.[13] (2 in Äußerung)'),
+  },
+  scripts: [
+    {
+      id: 'ge15-a',
+      label: 'The answer',
+      persona: 'Develops the point',
+      work: ['Makes the required point.', 'Adds a relevant reason and a personal detail — genuine elaboration.'],
+      keyLevelId: 'elaborated',
+      keyNote:
+        'The point earns its own mark, and the relevant elaboration earns a discretionary mark on top — 2 where the flat version scored 1. The scheme banks up to five such marks across the letter for developing your points. Don’t just tick the box: give a reason, an example, a personal angle, and let the discretionary marks add up.',
+      embodies: {
+        behaviour: 'Elaborates a required point with relevant detail, earning a discretionary mark beyond the point’s own value.',
+        cite: MS('p.[16]'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-de15',
+    rule: 'Elaboration wins discretionary marks.',
+    detail:
+      'Beyond the fixed content points, German reserves discretionary marks — five in Schriftliche Produktion, two in Äußerung — for relevant elaboration or comment. Developing a point with a reason or personal detail out-scores stating it flat. Elaborate every point you can.',
+    cite: MS('p.[16]'),
+  },
+};
+
 export const GERMAN_CHAIR: ChairSubject = {
   id: 'german',
   label: 'German',
   tagline:
-    'The length gate, half-mark lifts, tense-critical answers, the three-way Applied Grammar split — and why near-right scores zero.',
+    'The length gate, half-mark lifts, tense-critical answers, the three-way Applied Grammar split, the letter frame, all-or-nothing items — and why near-right scores zero.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [GE1, GE2, GE3, GE4, GE5, GE6, GE7],
+  sessions: [GE1, GE2, GE3, GE4, GE5, GE6, GE7, GE8, GE9, GE10, GE11, GE12, GE13, GE14, GE15],
   sources: [
     { label: 'SEC LC German HL marking scheme 2025 (examiner-reports/german/2025-marking-scheme)' },
     { label: 'SEC LC German syllabus, Oral Assessment (examiner-reports/german/german-syllabus)' },
   ],
   coverageNote:
-    'These sessions teach the written-paper conventions — the Lower-E length gate, the half-mark rule for unmanipulated lifts, tense-critical comprehension and the zero-for-approximation detail rule — plus the oral (25% at Higher, 20% at Ordinary), assessed on language and communication rather than information content. Most apply at both levels; the Applied Grammar (Angewandte Grammatik) verb-scoring session is Higher-Level-specific and shows only under the Higher tab. Written rules verified against the 2025 Higher Level scheme (Lower-E, unmanipulated-lift and aural-language rules cross-checked against the 2024 scheme); the oral against the SEC German syllabus. Level-specific worked examples are being added.',
+    'These sessions teach the written-paper conventions — the Lower-E length gate, the half-mark rule for unmanipulated lifts, first-answer-only marking, over-answer safety, the letter’s opening/closing frame, tense-critical and referential comprehension, the quote-needs-explanation and zero-for-approximation detail rules, the aural language-evidence and all-or-nothing items, and the discretionary marks for elaboration — plus the oral (25% at Higher, 20% at Ordinary), assessed on language and communication rather than information content. Most apply at both levels; the Applied Grammar (Angewandte Grammatik) verb-scoring session is Higher-Level-specific and shows only under the Higher tab. Written rules verified against the 2025 Higher Level scheme (Lower-E, unmanipulated-lift, aural-language, all-or-nothing and discretionary-mark rules cross-checked against the 2024 scheme); the oral against the SEC German syllabus. Level-specific worked examples are being added.',
 };
