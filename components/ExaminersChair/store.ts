@@ -195,6 +195,36 @@ export function topMisses(state: ChairState, n = 8): MissTally[] {
     .slice(0, n);
 }
 
+// ── codex review: spaced re-testing of the earned marking rules ──
+
+/** Lightweight spaced-repetition state for one earned codex rule. */
+export interface CodexReview {
+  /** Next time this rule is due for recall (ms). */
+  due: number;
+  /** Consecutive "got it" streak — indexes the interval ladder. */
+  streak: number;
+  last: number;
+}
+
+const DAY = 86_400_000;
+/** Days until the next recall, by streak length. */
+const CODEX_INTERVALS = [1, 3, 8, 21, 60];
+
+/** Schedule a rule's next recall (pure). "Got it" climbs the interval ladder;
+ * "fuzzy" resets the streak and brings it back within the hour. */
+export function reviewCodex(state: ChairState, ruleId: string, got: boolean, now: number): ChairState {
+  const cur = state.codexReview[ruleId] ?? { due: now, streak: 0, last: 0 };
+  const streak = got ? cur.streak + 1 : 0;
+  const gapDays = got ? CODEX_INTERVALS[Math.min(streak - 1, CODEX_INTERVALS.length - 1)] : 0;
+  const due = got ? now + gapDays * DAY : now + Math.round(DAY / 144); // fuzzy → ~10 min
+  return { ...state, codexReview: { ...state.codexReview, [ruleId]: { due, streak, last: now } } };
+}
+
+/** Earned rule ids due for recall now (a never-reviewed earned rule is due). */
+export function codexDue(state: ChairState, earnedRuleIds: string[], now: number): string[] {
+  return earnedRuleIds.filter(id => (state.codexReview[id]?.due ?? 0) <= now);
+}
+
 // ── borderline detection: the genuinely contested marking calls ──
 
 /** A script is "borderline" when the examiner's own call is a mid-band decision
@@ -244,12 +274,14 @@ export interface ChairState {
   codexOnCards: string[];
   /** Accumulated marking blind spots, keyed by subject::criterion. */
   misses: Record<string, MissTally>;
+  /** Spaced-repetition schedule for earned codex rules, keyed by rule id. */
+  codexReview: Record<string, CodexReview>;
 }
 
-const EMPTY: ChairState = { results: {}, codex: [], codexOnCards: [], misses: {} };
+const EMPTY: ChairState = { results: {}, codex: [], codexOnCards: [], misses: {}, codexReview: {} };
 const key = (uid?: string) => `chair:${uid || 'anon'}`;
 
-const fresh = (): ChairState => ({ ...EMPTY, results: {}, codex: [], codexOnCards: [], misses: {} });
+const fresh = (): ChairState => ({ ...EMPTY, results: {}, codex: [], codexOnCards: [], misses: {}, codexReview: {} });
 
 export function loadChair(uid?: string): ChairState {
   try {
@@ -261,6 +293,7 @@ export function loadChair(uid?: string): ChairState {
       codex: parsed.codex ?? [],
       codexOnCards: parsed.codexOnCards ?? [],
       misses: parsed.misses ?? {},
+      codexReview: parsed.codexReview ?? {},
     };
   } catch {
     return fresh();

@@ -30,6 +30,7 @@ import {
 } from '../../data/examinersChair';
 import {
   calibrationBand,
+  codexDue,
   completeSession,
   gridDecisionKey,
   gridScriptMisses,
@@ -39,6 +40,7 @@ import {
   mergeMisses,
   overallCalibration,
   pct,
+  reviewCodex,
   saveChair,
   scaleScriptMisses,
   scoreGridScript,
@@ -240,6 +242,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
   const [ownText, setOwnText] = useState('');
   const [borderlineOnly, setBorderlineOnly] = useState(false);
   const [codexAdded, setCodexAdded] = useState(false);
+  const [recallOpen, setRecallOpen] = useState<string | null>(null);
 
   const subject = useMemo(() => CHAIR_SUBJECTS.find(s => s.id === subjectId) ?? null, [subjectId]);
   const session: MarkingSession | undefined = useMemo(
@@ -830,7 +833,21 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
   // ───────────────────────────── codex view ─────────────────────────────
 
   if (view === 'codex') {
+    const now = Date.now();
     const earned = allSessions().filter(s => state.codex.includes(s.takeaway.id));
+    const dueIds = new Set(codexDue(state, state.codex, now));
+    const dueRules = earned.filter(s => dueIds.has(s.takeaway.id));
+    const earnedByRule = new Map(earned.map(s => [s.takeaway.id, s]));
+    // per-subject completion, only subjects the student has started earning in
+    const bySubject = CHAIR_SUBJECTS
+      .map(c => ({ subject: c, earned: c.sessions.filter(s => earnedByRule.has(s.takeaway.id)), total: c.sessions.length }))
+      .filter(g => g.earned.length > 0);
+
+    const rate = (id: string, got: boolean) => {
+      persist(reviewCodex(state, id, got, Date.now()));
+      setRecallOpen(null);
+    };
+
     return (
       <div className="w-full max-w-xl mx-auto pb-12">
         <button onClick={() => setView('home')} className="flex items-center gap-1.5 text-[13px] font-medium mb-4" style={{ color: MUTED }}>
@@ -840,27 +857,77 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
           Your Marker’s Codex
         </h2>
         <p className="text-[13px] mb-5" style={{ color: MUTED }}>
-          The rules you’ve earned, each cited to the SEC document it comes from.
+          The rules you’ve earned, each cited to the SEC document it comes from — {state.codex.length} of {allSessions().length}.
         </p>
+
         {earned.length === 0 ? (
           <p className="text-[13.5px] italic" style={{ color: LABEL }}>
             Nothing here yet — finish a marking session to earn your first rule.
           </p>
         ) : (
-          <div className="space-y-2.5">
-            {earned.map(s => (
-              <div key={s.takeaway.id} className="rounded-xl border bg-white dark:bg-zinc-900 dark:border-zinc-700 px-4 py-3.5" style={{ borderColor: BORDER }}>
-                <Small className="mb-1">{CHAIR_SUBJECTS.find(c => c.id === s.subject)?.label ?? s.subject}</Small>
-                <p className="text-[15px] font-semibold" style={{ fontFamily: SERIF, color: INK }}>
-                  {s.takeaway.rule}
-                </p>
-                <p className="text-[12.5px] leading-relaxed mt-1" style={{ color: '#5a5550' }}>
-                  {s.takeaway.detail}
-                </p>
-                <CiteLine label={s.takeaway.cite.label} />
+          <>
+            {/* spaced recall of the rules */}
+            {dueRules.length > 0 && (
+              <div className="mb-6">
+                <Small className="mb-2">Recall due · {dueRules.length}</Small>
+                <div className="space-y-2.5">
+                  {dueRules.map(s => {
+                    const open = recallOpen === s.takeaway.id;
+                    return (
+                      <div key={s.takeaway.id} className="rounded-xl border px-4 py-3.5" style={{ borderColor: ACCENT, background: '#FDEEDF' }}>
+                        <Small className="mb-1">{CHAIR_SUBJECTS.find(c => c.id === s.subject)?.label ?? s.subject} · {s.cue}</Small>
+                        <p className="text-[14.5px] font-semibold" style={{ fontFamily: SERIF, color: INK }}>{s.title}</p>
+                        {!open ? (
+                          <button
+                            onClick={() => setRecallOpen(s.takeaway.id)}
+                            className="mt-2 text-[12.5px] font-semibold inline-flex items-center gap-1.5"
+                            style={{ color: '#8C3A0E' }}
+                          >
+                            Recall the rule, then reveal <ChevronRight size={14} />
+                          </button>
+                        ) : (
+                          <>
+                            <p className="text-[14px] font-semibold mt-2" style={{ fontFamily: SERIF, color: INK }}>{s.takeaway.rule}</p>
+                            <p className="text-[12.5px] italic leading-relaxed mt-1" style={{ color: '#8C3A0E' }}>{s.takeaway.detail}</p>
+                            <div className="flex gap-2 mt-3">
+                              <button onClick={() => rate(s.takeaway.id, false)} className="flex-1 rounded-full py-2 text-[12.5px] font-semibold" style={{ backgroundColor: '#fff', color: MUTED, border: `2px solid ${BORDER}` }}>Fuzzy</button>
+                              <button onClick={() => rate(s.takeaway.id, true)} className="flex-1 rounded-full py-2 text-[12.5px] font-semibold text-white" style={{ backgroundColor: SUCCESS }}>Got it</button>
+                            </div>
+                          </>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
-            ))}
-          </div>
+            )}
+
+            {/* per-subject completion + the rules */}
+            <div className="space-y-5">
+              {bySubject.map(g => (
+                <div key={g.subject.id}>
+                  <div className="flex items-center justify-between gap-3 mb-2">
+                    <p className="text-[15px] font-semibold" style={{ fontFamily: SERIF, color: INK }}>{g.subject.label}</p>
+                    <span className="text-[11.5px] font-semibold" style={{ color: g.earned.length === g.total ? SUCCESS : MUTED }}>
+                      {g.earned.length}/{g.total} earned
+                    </span>
+                  </div>
+                  <div className="h-1.5 rounded-full mb-2.5" style={{ backgroundColor: '#eceae6' }}>
+                    <div className="h-1.5 rounded-full" style={{ width: `${Math.round((g.earned.length / g.total) * 100)}%`, backgroundColor: g.earned.length === g.total ? SUCCESS : ACCENT }} />
+                  </div>
+                  <div className="space-y-2">
+                    {g.earned.map(s => (
+                      <div key={s.takeaway.id} className="rounded-xl border bg-white dark:bg-zinc-900 dark:border-zinc-700 px-4 py-3" style={{ borderColor: BORDER }}>
+                        <p className="text-[14px] font-semibold" style={{ fontFamily: SERIF, color: INK }}>{s.takeaway.rule}</p>
+                        <p className="text-[12px] leading-relaxed mt-0.5" style={{ color: '#5a5550' }}>{s.takeaway.detail}</p>
+                        <CiteLine label={s.takeaway.cite.label} />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </>
         )}
       </div>
     );
@@ -1038,6 +1105,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
   // ───────────────────────────── home ─────────────────────────────
 
   const calibration = overallCalibration(state);
+  const codexDueCount = codexDue(state, state.codex, Date.now()).length;
 
   return (
     <div className="w-full max-w-xl mx-auto pb-12">
@@ -1065,9 +1133,9 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
         <button
           onClick={() => setView('codex')}
           className="shrink-0 inline-flex items-center gap-1.5 text-[12px] font-semibold rounded-full border px-3 py-1.5"
-          style={{ borderColor: BORDER, color: MUTED, backgroundColor: '#fff' }}
+          style={codexDueCount > 0 ? { borderColor: ACCENT, color: '#8C3A0E', backgroundColor: '#FDEEDF' } : { borderColor: BORDER, color: MUTED, backgroundColor: '#fff' }}
         >
-          <BookMarked size={13} /> Codex · {state.codex.length}
+          <BookMarked size={13} /> Codex · {state.codex.length}{codexDueCount > 0 ? ` · ${codexDueCount} due` : ''}
         </button>
       </div>
 

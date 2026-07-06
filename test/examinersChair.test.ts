@@ -11,9 +11,11 @@ import {
   completeSession,
   gridDecisionKey,
   borderlineScripts,
+  codexDue,
   gridScriptMisses,
   isBorderlineScript,
   loadChair,
+  reviewCodex,
   markCodexOnCards,
   mergeMisses,
   overallCalibration,
@@ -228,6 +230,22 @@ describe('mismatch tracking', () => {
     const top = topMisses(state);
     expect(top[0].key).toBe('business::Link'); // most frequent first
     expect(top).toHaveLength(2);
+  });
+
+  it('schedules codex recall: got-it climbs, fuzzy resets and comes back soon', () => {
+    let state = loadChair('cx');
+    const T = 1_000_000;
+    // never-reviewed earned rule is due now
+    expect(codexDue(state, ['r'], T)).toEqual(['r']);
+    state = reviewCodex(state, 'r', true, T);
+    expect(state.codexReview['r'].streak).toBe(1);
+    expect(state.codexReview['r'].due).toBe(T + 1 * 86_400_000); // 1 day
+    expect(codexDue(state, ['r'], T)).toEqual([]); // no longer due now
+    state = reviewCodex(state, 'r', true, state.codexReview['r'].due);
+    expect(state.codexReview['r'].streak).toBe(2); // climbs
+    const fuzzy = reviewCodex(state, 'r', false, T + 999);
+    expect(fuzzy.codexReview['r'].streak).toBe(0); // reset
+    expect(fuzzy.codexReview['r'].due - (T + 999)).toBeLessThan(86_400_000); // back within a day
   });
 
   it('detects borderline scripts (split grid / middle scale rung)', () => {
