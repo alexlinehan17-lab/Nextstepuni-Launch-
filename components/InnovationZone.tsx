@@ -12,7 +12,7 @@ import { FileSearch,
     ArrowLeft,
     Lock, Compass, Target,
     Settings, CalendarDays, Calculator, GitBranch, Rocket,
-    Map, ScanSearch, Milestone, Waypoints, Highlighter, Users, Briefcase, Sunrise, Mic
+    Map, ScanSearch, Milestone, Waypoints, Highlighter, Users, Briefcase, Sunrise, Mic, Stamp
 } from 'lucide-react';
 import { doc, setDoc, getDoc, increment } from 'firebase/firestore';
 import { db } from '../firebase';
@@ -42,6 +42,7 @@ const HowTheyDidIt = lazy(() => import('./HowTheyDidIt'));
 const CareerPaths = lazy(() => import('./CareerPaths'));
 const YourPossibleLife = lazy(() => import('./YourPossibleLife'));
 const OralExamTrainer = lazy(() => import('./OralExamTrainer'));
+const ExaminersChair = lazy(() => import('./ExaminersChair'));
 import { InnovationDataProvider } from '../contexts/InnovationDataContext';
 import { useTopicMastery } from '../hooks/useTopicMastery';
 import { getNotifications } from './gc/gcNotifications';
@@ -94,6 +95,7 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   'career-paths':     { themeColor: '#0E7C6B', eyebrow: 'Understand · Career discovery', subtitle: 'Real careers — what they pay, the day-to-day, the skills, and the courses that lead there.', showHeader: true },
   'your-possible-life': { themeColor: '#2E6E8E', eyebrow: 'Understand · Your future', subtitle: 'See the life your effort now could open up — and the bridge from your grades today to get there.', showHeader: true },
   'oral-trainer':    { themeColor: '#4C8C5E', eyebrow: 'Technique · Speaking exam', subtitle: 'The one exam no app prepares you for — the oral. Rehearse it out loud, record yourself, and know exactly where you stand on every part.', showHeader: true },
+  'examiners-chair': { themeColor: '#9E4A3E', eyebrow: 'Technique · Marking literacy', subtitle: 'Sit on the other side of the desk. Mark real-style scripts against the real SEC rules, and learn to see your own answers the way the examiner will.', showHeader: true },
 };
 
 interface InnovationZoneProps {
@@ -579,6 +581,15 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             component: <OralExamTrainer uid={user?.uid} />,
         },
         {
+            id: 'examiners-chair', title: 'The Examiner’s Chair', description: 'Mark scripts against the real SEC rules — and learn exactly where marks are won and lost.', icon: Stamp, needsProfile: false,
+            curriculum: 'senior' as const,
+            tag: 'Marking literacy', accentHex: '#9E4A3E', gridClass: 'md:col-span-2',
+            iconBg: 'bg-rose-100 dark:bg-rose-900/30', iconColor: 'text-rose-800 dark:text-rose-300',
+            accentBarColor: 'bg-rose-700', tagBg: 'bg-rose-100 dark:bg-rose-900/30', tagText: 'text-rose-800 dark:text-rose-400',
+            hoverBorder: 'hover:border-rose-400/50 dark:hover:border-rose-500/40',
+            component: <ExaminersChair uid={user?.uid} />,
+        },
+        {
             id: 'command-word-reflex', title: 'Command-Word Reflex', description: 'Spot the command word in real questions — and dodge the trap.', icon: Highlighter, needsProfile: false,
             // 'both': has Junior Cycle AND Leaving Cert content (cycle-grouped picker), so visible to JC and senior users.
             curriculum: 'both' as const,
@@ -634,6 +645,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         'paper-trail': 'understand',
         'command-word-reflex': 'understand',
         'oral-trainer': 'understand',
+        'examiners-chair': 'understand',
         'how-they-did-it': 'understand',
         'career-paths': 'understand',
         'future-finder-revamped': 'understand',

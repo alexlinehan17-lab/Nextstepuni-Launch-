@@ -15,7 +15,7 @@
  *   - IZ active-tool ToolHeader: size=108
  */
 import React from 'react';
-import { type LucideIcon, Mic } from 'lucide-react';
+import { type LucideIcon, Mic, Stamp } from 'lucide-react';
 
 export type ToolIconKey =
   | 'journey'
@@ -35,6 +35,7 @@ export type ToolIconKey =
   | 'future-finder-revamped'
   | 'your-possible-life'
   | 'oral-trainer'
+  | 'examiners-chair'
   | 'paper-trail';
 
 interface ToolIconConfig {
@@ -156,6 +157,13 @@ const TOOLS: Record<ToolIconKey, ToolIconConfig> = {
     blobPath: 'M 6 24 Q 0 52 10 80 Q 26 98 54 94 Q 88 90 96 60 Q 100 28 82 8 Q 56 -4 30 6 Q 12 14 6 24 Z',
     icon: Mic,
     iconColor: '#3A6B47',
+    iconScale: 1.0,
+  },
+  'examiners-chair': {
+    blob: '#EAC6BB',
+    blobPath: 'M 8 26 Q 0 52 8 78 Q 22 96 54 96 Q 88 94 96 64 Q 100 32 80 10 Q 56 -2 28 8 Q 12 16 8 26 Z',
+    icon: Stamp,
+    iconColor: '#8E3B32',
     iconScale: 1.0,
   },
 };

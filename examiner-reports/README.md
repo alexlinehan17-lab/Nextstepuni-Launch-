@@ -25,8 +25,9 @@ For multi-year syntheses, the prefix is `<start-year>-<end-year>-` (e.g.
 | Maths | 2015 | Chief Examiner | Higher / Ordinary / Foundation | `CHEIFEXAMINERREPORTMATHEMATICS.pdf` | PDF + MD + insights |
 | Business | 2015 | Chief Examiner | Higher / Ordinary | `CHIEFEXAMINERREPORTBUSINESS.pdf` | PDF + MD + insights |
 | Business | 2025 | Marking scheme | Higher | `BUSINESS HL MARK SCHEME 2025.pdf` | PDF + MD + insights |
+| Maths | 2023 | Marking scheme (P2 portion) | Ordinary | SEC `LC 2023 Mathematics OL Marking Scheme` (mirrored PDF) | PDF + MD + insights |
 
-_Last updated: 2026-05-06_
+_Last updated: 2026-07-05_
 
 ## Adding a new report
 
