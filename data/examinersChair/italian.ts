@@ -415,16 +415,437 @@ const IT7: GridSession = {
   },
 };
 
+// ─────────────── IT8 · Excess material costs a mark ───────────────
+
+const IT8: ScaleSession = {
+  mode: 'scale',
+  id: 'it-excess-material',
+  subject: 'italian',
+  level: 'common',
+  title: 'The extra sentence that costs you',
+  cue: 'Reading comprehension',
+  question:
+    'A reading point is worth 5 marks and the candidate gives the correct answer — then keeps going, copying out two further sentences from the passage that the question never asked for. The scheme deducts 1 mark for “excess and redundant material.” What does the point score?',
+  questionNote:
+    'Scenario authored for this exercise. The excess/redundant-material deduction is a standing reading-comprehension rule — printed on the Section A journalistic instructions (p.11) and repeated verbatim on the Section B literary instructions (p.13); cited here to 2025. Distinct from the copy-vs-manipulate rule: this penalises padding a correct answer, not failing to reshape it.',
+  scale: {
+    name: 'Excess material · −1 /5',
+    levels: two(4, 5),
+    notes: [
+      'A correct reading point scores its full marks (here 5).',
+      'The scheme: “Candidates may be penalised, and 1 mark will be deducted for excess and redundant material.”',
+      'So burying the right answer inside extra, unasked-for material can cost a mark rather than add one.',
+    ],
+    cite: MS('p.11 & p.13 (excess and redundant material — 1 mark deducted)'),
+  },
+  scripts: [
+    {
+      id: 'it8-a',
+      label: 'The answer',
+      persona: 'Right answer, then keeps writing',
+      work: [
+        'Gives the correct answer to a 5-mark point.',
+        'Then copies out two more sentences from the passage that weren’t asked for.',
+        'The extra material is redundant to the point.',
+      ],
+      keyLevelId: 'm4',
+      keyNote:
+        'It drops to 4 of 5 — the excess-material deduction. Adding more than the question asked doesn’t insure the answer; it exposes it to a −1. Give exactly what the point requires and stop — a tight correct answer beats a padded one every time.',
+      embodies: {
+        behaviour: 'Pads a correct reading answer with extra, unasked-for material, triggering the excess-material −1.',
+        cite: MS('p.11'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-it8',
+    rule: 'Answer the point and stop — extra material costs a mark.',
+    detail:
+      'Italian reading comprehension deducts 1 mark for excess and redundant material. Copying out more of the passage than the question asked for can turn a full-mark answer into a −1 — give exactly what’s required and no more.',
+    cite: MS('p.11'),
+  },
+};
+
+// ─────────────── IT9 · The same answer only pays once ───────────────
+
+const IT9: ScaleSession = {
+  mode: 'scale',
+  id: 'it-same-answer-once',
+  subject: 'italian',
+  level: 'common',
+  title: 'One answer, marked once',
+  cue: 'Reading comprehension',
+  question:
+    'Two separate reading questions can be answered from the passage, and a candidate spots one sentence that seems to satisfy both — so writes that same correct sentence for each. The scheme: where the same correct answer is given to two separate questions, full marks are awarded only once. The second question is worth 5. What does that SECOND question score?',
+  questionNote:
+    'Scenario authored for this exercise. The “same correct answer to two separate questions → full marks only once” rule is stated on both the Section A (p.11) and Section B (p.13) reading instructions; cited here to 2025. It means one sentence can’t be banked twice across the paper.',
+  scale: {
+    name: 'Recycled answer · credited once /5',
+    levels: two(0, 5),
+    notes: [
+      'Some passages contain a line that looks like it answers two different questions.',
+      'The scheme: “Where candidates provide the same correct answer to two separate questions, full marks will be awarded only once.”',
+      'So the identical sentence, already credited once, earns nothing the second time.',
+    ],
+    cite: MS('p.11 & p.13 (same correct answer to two questions — credited only once)'),
+  },
+  scripts: [
+    {
+      id: 'it9-a',
+      label: 'The answer',
+      persona: 'Reuses one sentence for two questions',
+      work: [
+        'Question A is answered correctly with a sentence from the passage.',
+        'Question B is answered with the SAME sentence — already credited under A.',
+      ],
+      keyLevelId: 'm0',
+      keyNote:
+        'The second question scores 0 — the answer was already banked once, and the scheme credits identical content only once. Each question is testing a different thing; if you find yourself writing the same line twice, one of the two questions is asking for something else. Go back and find the distinct point the second question actually wants.',
+      embodies: {
+        behaviour: 'Gives the identical correct sentence to two separate questions, so the repeat earns nothing under the credited-once rule.',
+        cite: MS('p.13'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-it9',
+    rule: 'Each question wants a distinct answer — the same line pays once.',
+    detail:
+      'In Italian reading comprehension, the same correct answer given to two separate questions is credited only once. If you’re tempted to reuse a sentence, the second question is asking for something different — find it, rather than banking on a repeat.',
+    cite: MS('p.13'),
+  },
+};
+
+// ─────────────── IT10 · The whole aural is answered in English ───────────────
+
+const IT10: ScaleSession = {
+  mode: 'scale',
+  id: 'it-aural-english',
+  subject: 'italian',
+  level: 'common',
+  title: 'The aural is answered in English',
+  cue: 'Listening · answer language',
+  question:
+    'In the Listening test, every answer must be written in English — the whole test, not just one question. A candidate understands a dialogue perfectly and answers accurately, but writes the answers in Italian. The 2025 aural scheme: if a whole section is answered in Italian, mark it, then deduct 50% of the marks gained. A 16-mark section, answered correctly but in Italian — what survives?',
+  questionNote:
+    'Scenario authored for this exercise. The aural instructions (p.5) state “Responses must be written in English” and “If whole test / whole section answered in Italian: mark according to the Marking Scheme, then deduct 50% of marks gained.” The explicit −50% figure is pinned to the 2025 scheme (absent from 2024, per the cross-year verification). Distinct from the reading penalty (IT2): the reading requires English only on the opinion question, whereas the ENTIRE aural is answered in English.',
+  scale: {
+    name: 'Aural answered in Italian · −50%',
+    levels: two(8, 16),
+    notes: [
+      'The Listening test is answered in English throughout — “Responses must be written in English.”',
+      'Answering a whole section in Italian = mark as normal, then deduct 50% of the marks gained.',
+      'So a fully-correct 16-mark section written in Italian keeps only 8.',
+    ],
+    cite: MS('p.5 (Listening — English answers required; whole section in Italian → −50%)'),
+  },
+  scripts: [
+    {
+      id: 'it10-a',
+      label: 'The answer',
+      persona: 'Understands it, answers in Italian',
+      work: [
+        'Catches every point in a 16-mark dialogue section.',
+        'Writes all the answers in Italian.',
+        'English was required for the whole test.',
+      ],
+      keyLevelId: 'm8',
+      keyNote:
+        'Halved to 8 of 16 — comprehension was perfect, but the aural is answered in English and a whole section in Italian loses 50%. Unlike the reading, there’s no part of the aural where Italian is wanted: write every listening answer in English, even when the Italian comes to you first.',
+      embodies: {
+        behaviour: 'Answers a whole aural section in Italian where English is required, triggering the −50% whole-section penalty.',
+        cite: MS('p.5'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-it10',
+    rule: 'Write every listening answer in English.',
+    detail:
+      'The Italian aural is answered in English from start to finish. In the 2025 scheme, a whole section answered in Italian is marked and then cut by 50%. Perfect comprehension in the wrong language keeps only half — answer the listening test in English throughout.',
+    cite: MS('p.5'),
+  },
+};
+
+// ─────────────── IT11 · Circle one, or lose the mark ───────────────
+
+const IT11: ScaleSession = {
+  mode: 'scale',
+  id: 'it-mcq-double',
+  subject: 'italian',
+  level: 'common',
+  title: 'Two circles, no marks',
+  cue: 'Listening · multiple choice',
+  question:
+    'An aural multiple-choice item is worth 2 marks. Torn between (b) and (c), the candidate circles both and crosses out neither — and (c) was the correct option. The scheme: where two answers are circled and not cancelled, no marks are awarded. What does the item score?',
+  questionNote:
+    'Scenario authored for this exercise. The Section A multiple-choice rules (p.5) state: two answers circled and not cancelled = no marks; two circled with one cancelled = accept the non-cancelled answer; one circled and cancelled = accept it. Cited to 2025.',
+  scale: {
+    name: 'MCQ · two uncancelled circles = 0 /2',
+    levels: two(0, 2),
+    notes: [
+      'Each aural multiple-choice item is worth 2 marks for the correct option.',
+      'The scheme: “Where two answers are circled and not cancelled, no marks are awarded.”',
+      'If you change your mind, cancel the wrong one clearly — “two circled and one cancelled, accept the non-cancelled answer.”',
+    ],
+    cite: MS('p.5 (Listening Section A — two answers circled and not cancelled: no marks)'),
+  },
+  scripts: [
+    {
+      id: 'it11-a',
+      label: 'The answer',
+      persona: 'Hedges between two options',
+      work: [
+        'Unsure, circles both (b) and (c).',
+        'Cancels neither.',
+        'Option (c) was correct.',
+      ],
+      keyLevelId: 'm0',
+      keyNote:
+        'Zero — even though the correct option is one of the two circled, leaving both standing scores nothing. Commit to one answer. If you truly change your mind, strike out the option you’re rejecting so exactly one clean choice remains; an uncancelled hedge throws the mark away.',
+      embodies: {
+        behaviour: 'Circles two multiple-choice options without cancelling either, so the no-marks rule applies despite one being correct.',
+        cite: MS('p.5'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-it11',
+    rule: 'Commit to one multiple-choice answer.',
+    detail:
+      'In the aural multiple choice, two options circled and not cancelled scores zero — even if one is right. If you change your mind, clearly cross out the option you’re rejecting so a single clean choice remains.',
+    cite: MS('p.5'),
+  },
+};
+
+// ─────────────── IT12 · Keep the Italian names Italian ───────────────
+
+const IT12: ScaleSession = {
+  mode: 'scale',
+  id: 'it-italian-names',
+  subject: 'italian',
+  level: 'common',
+  title: 'Keep the Italian names Italian',
+  cue: 'Literature · prescribed-text essay',
+  question:
+    'In the prescribed-literature essay, a candidate argues well but Anglicises everything — renders the title in English and refers to the characters by translated or misspelled names throughout. The scheme: “Title and characters’ names translated into English will be penalised,” with “−1 overall for Italian title and names spelled incorrectly.” Take an essay sitting at the top of the 42–50 band. Where does the name-handling leave it?',
+  questionNote:
+    'Scenario authored for this exercise. The B3 prescribed-text essay instructions (p.21) state: “Title and characters’ names translated into English will be penalised” and “−1 overall for Italian title and names spelled incorrectly.” The 50 baseline is the top of the real Appendix 1 “42–50” band (p.29); the −1 is the scheme’s stated overall deduction. Cited to 2025.',
+  scale: {
+    name: 'Italian title & names · −1 overall',
+    levels: two(49, 50),
+    notes: [
+      'The prescribed-text essay is graded in bands (Appendix 1); take a strong essay at the top of the 42–50 band.',
+      'The scheme: translated titles and characters’ names “will be penalised,” with “−1 overall for Italian title and names spelled incorrectly.”',
+      'So Anglicising or misspelling the Italian names shaves the overall mark — and the translation itself is separately penalised.',
+    ],
+    cite: MS('p.21 (B3 essay — translated / misspelled Italian title & names penalised) & p.29 (Appendix 1 bands)'),
+  },
+  scripts: [
+    {
+      id: 'it12-a',
+      label: 'The answer',
+      persona: 'Anglicises the title and names',
+      work: [
+        'A well-argued essay that would otherwise top the 42–50 band.',
+        'Translates the novel’s title into English.',
+        'Refers to the characters by translated / misspelled names throughout.',
+      ],
+      keyLevelId: 'm49',
+      keyNote:
+        'It takes the −1 overall for misspelling the Italian title and names — dropping from 50 to 49 — and the translation is separately penalised on top. Learn the title and the characters’ names exactly as they’re spelled in Italian and use them as they are. It’s free accuracy you control completely; don’t hand it back by Anglicising.',
+      embodies: {
+        behaviour: 'Translates and misspells the Italian title and characters’ names, triggering the −1 overall and the translation penalty.',
+        cite: MS('p.21'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-it12',
+    rule: 'Spell the Italian title and names correctly — never translate them.',
+    detail:
+      'The Italian prescribed-text essay penalises titles and characters’ names translated into English, with a −1 overall for Italian titles and names spelled incorrectly. Memorise the exact Italian spellings and keep them Italian — it’s accuracy entirely within your control.',
+    cite: MS('p.21'),
+  },
+};
+
+// ─────────────── IT13 · Three points, well-argued, beat eight thin ones ───────────────
+
+const IT13: ScaleSession = {
+  mode: 'scale',
+  id: 'it-literary-quality',
+  subject: 'italian',
+  level: 'common',
+  title: 'Three deep points beat eight thin ones',
+  cue: 'Literature · prescribed-text essay',
+  question:
+    'For the 60-mark prescribed-text essay, a candidate crams in eight points, each barely mentioned, with no quotation and a couple of plot errors — betting that volume wins marks. The scheme: “Quality and NOT quantity is important. Three relevant points, well-argued and supported from the text, are sufficient,” and “Factual errors will be penalised.” Where does a broad-but-shallow, error-dotted essay land?',
+  questionNote:
+    'Scenario authored for this exercise. The B3 essay instructions (p.21) state: “Reference to the text is important … Quality and NOT quantity is important. Three relevant points, well-argued and supported from the text, are sufficient … Factual errors will be penalised.” Band marks are from the real Appendix 1 grid (p.29): the 24–32 band is “some knowledge … little reference to the text … a lot of irrelevant material”; the 51–60 band is a full, text-supported answer. Cited to 2025.',
+  scale: {
+    name: 'Prescribed-text essay · Appendix 1 bands /60',
+    levels: [
+      { id: 'lit-shallow', label: 'Eight thin points, errors, no quotes', annotation: '28', marks: 28 },
+      { id: 'lit-solid', label: 'Points covered, some textual support', annotation: '45', marks: 45 },
+      { id: 'lit-developed', label: 'Three developed, accurate, text-anchored points', annotation: '55', marks: 55 },
+    ],
+    notes: [
+      'The essay is graded on knowledge of the text, textual support and relevance (Appendix 1).',
+      'The scheme: three relevant points, well-argued and supported from the text, are SUFFICIENT — quality over quantity.',
+      'Factual errors are penalised, and unsupported, irrelevant material drags the band down.',
+      'So eight barely-mentioned, error-dotted points sit far below three developed, accurate, quoted ones.',
+    ],
+    cite: MS('p.21 (B3 essay — quality not quantity; three points sufficient; factual errors penalised) & p.29 (Appendix 1 bands)'),
+  },
+  scripts: [
+    {
+      id: 'it13-a',
+      label: 'The answer',
+      persona: 'Breadth without depth',
+      work: [
+        'Lists eight points, each a single undeveloped sentence.',
+        'No quotations or specific references to the text.',
+        'Contains a couple of factual/plot errors.',
+      ],
+      keyLevelId: 'lit-shallow',
+      keyNote:
+        'It lands low — around the 24–32 band — despite covering the most ground. The essay rewards depth and accuracy, not a headcount of points: three points, each well-argued and anchored in the text, are explicitly enough for the top, while factual errors actively cost marks. Pick your three strongest points, develop each with a quotation, and get the facts right.',
+      embodies: {
+        behaviour: 'Trades depth for a long list of thin, unsupported, error-dotted points, landing in a low Appendix 1 band.',
+        cite: MS('p.21'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-it13',
+    rule: 'Three developed, text-supported points — not a long list.',
+    detail:
+      'The Italian prescribed-text essay says three relevant points, well-argued and supported from the text, are sufficient, and it penalises factual errors. Depth and accuracy score; breadth without support doesn’t. Choose three strong points, quote the text for each, and get the facts right.',
+    cite: MS('p.21'),
+  },
+};
+
+// ─────────────── IT14 · A point earns on how well you develop it ───────────────
+
+const IT14: ScaleSession = {
+  mode: 'scale',
+  id: 'it-point-tiers',
+  subject: 'italian',
+  level: 'common',
+  title: 'A bare point is only a poor point',
+  cue: 'Written production · per-point credit',
+  question:
+    'On the composition, each content point is worth up to 4 marks, scored 0-1-2-3-4. A candidate makes the required point — but in one bare sentence, no example, no expansion. The scheme’s per-point grid reads: 1m a poor point, 2m a sufficient point, 3m a good point, 4m a very good / excellent point. Where does a correct-but-undeveloped point land?',
+  questionNote:
+    'Scenario authored for this exercise. The per-point credit grid (p.28) scores 4-mark points as (0,1,2,3,4) with named quality tiers: “1m poor point · 2m sufficient point · 3m good point · 4m very good point / excellent point.” The formal-writing instructions add that “each point should be expanded and developed” (p.27). Cited to 2025.',
+  scale: {
+    name: 'Point out of 4 · quality tiers',
+    levels: [
+      { id: 'pt-none', label: 'No merit', annotation: '0', marks: 0 },
+      { id: 'pt-poor', label: 'Poor point (bare / undeveloped)', annotation: '1', marks: 1 },
+      { id: 'pt-suff', label: 'Sufficient point', annotation: '2', marks: 2 },
+      { id: 'pt-good', label: 'Good point', annotation: '3', marks: 3 },
+      { id: 'pt-exc', label: 'Very good / excellent point', annotation: '4', marks: 4 },
+    ],
+    notes: [
+      'Content points aren’t all-or-nothing: a 4-mark point is scored 0,1,2,3,4 on quality.',
+      'The grid: 1m poor point · 2m sufficient · 3m good · 4m very good / excellent.',
+      'A correct point stated bare, without expansion, is only a “poor point” — 1 of 4.',
+      'Each point should be expanded and developed to climb the tiers.',
+    ],
+    cite: MS('p.28 (per-point credit grid — poor / sufficient / good / excellent) & p.27 (each point expanded and developed)'),
+  },
+  scripts: [
+    {
+      id: 'it14-a',
+      label: 'The answer',
+      persona: 'Makes the point, leaves it bare',
+      work: [
+        'States the required point correctly.',
+        'One short sentence — no example, no reason, no development.',
+      ],
+      keyLevelId: 'pt-poor',
+      keyNote:
+        'It scores 1 of 4 — a “poor point.” Being correct only gets you onto the ladder; the marks are in the development. The same point, expanded with a reason and an example, climbs to 3 or 4. Don’t just make each point — build it out.',
+      embodies: {
+        behaviour: 'Makes a correct point but leaves it undeveloped, scoring only the “poor point” tier on the per-point grid.',
+        cite: MS('p.28'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-it14',
+    rule: 'Being right is 1 mark — developing the point is the other three.',
+    detail:
+      'Italian scores content points on quality, not just presence: a 4-mark point runs 1 (poor) to 4 (excellent), and a bare correct sentence is only a poor point. Expand each point with a reason and an example to climb from 1 toward 4.',
+    cite: MS('p.28'),
+  },
+};
+
+// ─────────────── IT15 · Verbs gate the Language band ───────────────
+
+const IT15: ScaleSession = {
+  mode: 'scale',
+  id: 'it-verb-gate',
+  subject: 'italian',
+  level: 'common',
+  title: 'Wrong verbs lock the top band',
+  cue: 'Written production · Language mark',
+  question:
+    'A composition’s Language mark is out of 10. The candidate reaches for ambitious vocabulary and idiom — but conjugates several verbs wrong. The Language descriptors put “good grammatical accuracy” in the top band (7–10) and “some incorrect verbs and agreements” in the middle band (4–6). Where does rich-vocabulary-but-wrong-verbs land?',
+  questionNote:
+    'Scenario authored for this exercise. The Appendix 2 Language descriptors (p.32) band on verb accuracy: 7–10 “Idiomatic Italian, good vocabulary, good grammatical accuracy and few spelling mistakes”; 4–6 “Adequate vocabulary, some incorrect verbs and agreements”; 0–3 “most verbs incorrect.” Verbs are the named Language failure point. Cited to 2025.',
+  scale: {
+    name: 'Language descriptor bands /10',
+    levels: [
+      { id: 'lg-low', label: 'Most verbs incorrect', annotation: '3', marks: 3 },
+      { id: 'lg-mid', label: 'Some incorrect verbs & agreements', annotation: '5', marks: 5 },
+      { id: 'lg-high', label: 'Good grammatical accuracy', annotation: '9', marks: 9 },
+    ],
+    notes: [
+      'The Language mark bands on grammatical accuracy, and verbs are the named failure point.',
+      'Top band (7–10) requires “good grammatical accuracy”; middle band (4–6) is “some incorrect verbs and agreements.”',
+      'So wrong verbs lock you out of the top band, however rich the vocabulary.',
+    ],
+    cite: MS('p.32 (Appendix 2 Language descriptors — verb accuracy bands)'),
+  },
+  scripts: [
+    {
+      id: 'it15-a',
+      label: 'The answer',
+      persona: 'Ambitious vocab, broken verbs',
+      work: [
+        'Reaches for rich vocabulary and idiomatic expressions.',
+        'Conjugates several verbs incorrectly.',
+      ],
+      keyLevelId: 'lg-mid',
+      keyNote:
+        'It best-fits the middle band — 4–6 — because the top band requires good grammatical accuracy, and wrong verbs shut that door however impressive the vocabulary. Verbs are the language gate in Italian (and in French and Spanish). Reach for structures you can conjugate correctly; accuracy on the verbs you use beats ambition you can’t control.',
+      embodies: {
+        behaviour: 'Pairs ambitious vocabulary with incorrect verbs, so the Language mark is capped at the middle band by the accuracy requirement.',
+        cite: MS('p.32'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-it15',
+    rule: 'Verbs are the language gate — accuracy beats ambition.',
+    detail:
+      'The Italian Language mark bands on grammatical accuracy: the top band (7–10) needs good accuracy, while incorrect verbs pin you to the middle band (4–6), however rich the vocabulary. Choose structures you can conjugate correctly — getting your verbs right unlocks the top band.',
+    cite: MS('p.32'),
+  },
+};
+
 export const ITALIAN_CHAIR: ChairSubject = {
   id: 'italian',
   label: 'Italian',
-  tagline: 'Two axes, the wrong-language penalty, copy-vs-manipulate, no rote off the point, the list-hedging trap, the letter’s free format marks — and an oral that marks talking, not reciting.',
+  tagline: 'Two axes and the graduated cap, the wrong-language penalties, copy-vs-manipulate, excess-material and same-answer-once, no rote off the point, the list and multiple-choice hedging traps, verb-gated language, the letter’s free format marks, the literature essay’s rules — and an oral that marks talking, not reciting.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [IT1, IT2, IT3, IT4, IT5, IT6, IT7],
+  sessions: [IT1, IT2, IT3, IT4, IT5, IT6, IT7, IT8, IT9, IT10, IT11, IT12, IT13, IT14, IT15],
   sources: [
     { label: 'SEC LC Italian HL marking scheme 2025 (examiner-reports/italian/2025-marking-scheme)' },
     { label: 'SEC/NCCA Leaving Certificate Italian syllabus (examiner-reports/italian/italian-syllabus)' },
   ],
   coverageNote:
-    'The written-paper sessions teach the conventions of the 2025 marking scheme — the two Content/Language axes with the graduated content cap, the wrong-language penalty, the reading-comprehension copy-vs-manipulate deduction, the rote-off-the-point rule, the listening list rule (one wrong item nullifies a correct one) and the separate 10-mark letter Format block — which apply at both Higher and Ordinary level. The oral session is grounded in a different source: the official SEC/NCCA Italian syllabus (Speaking 25% Higher / 20% Ordinary; assessed on transfer of meaning + accuracy). SEC publishes NO per-band oral marking grid, so any band marks shown in the oral session are labelled illustrative. Verified against the 2025 HL scheme (copy-vs-manipulate also corroborated against 2024) and the syllabus; level-specific worked examples are being added.',
+    'The written-paper sessions teach the conventions of the 2025 marking scheme — the two Content/Language axes with the graduated content cap, the wrong-language penalties (reading opinion question and whole-aural), the reading copy-vs-manipulate deduction, the excess/redundant-material −1, the same-answer-only-once rule, the rote-off-the-point rule, the per-point quality tiers, the verb-gated Language bands, the listening list rule and the multiple-choice two-circle rule, the separate 10-mark letter Format block, and the prescribed-literature essay’s rules (three points sufficient; keep Italian titles and names Italian) — which apply at both Higher and Ordinary level. The oral session is grounded in a different source: the official SEC/NCCA Italian syllabus (Speaking 25% Higher / 20% Ordinary; assessed on transfer of meaning + accuracy). SEC publishes NO per-band oral marking grid, so any band marks shown in the oral session are labelled illustrative. The explicit −50% wrong-language figure is pinned to the 2025 scheme (absent from 2024, per the cross-year verification). Verified against the 2025 HL scheme (copy-vs-manipulate and the content cap also corroborated against 2024) and the syllabus; level-specific worked examples are being added.',
 };
