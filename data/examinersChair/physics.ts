@@ -7,8 +7,9 @@
  * Questions and scripts are AUTHORED for this exercise (labelled in each
  * `questionNote`) — they are not real SEC questions or candidate scripts. The
  * marking grammar (the numerical-answer granule ladder, the one-mark unit
- * deduction, per-occurrence slip deduction with error-carried-forward, and the
- * `//` mutually-exclusive-method rule) is the real SEC system, cited to:
+ * deduction, per-occurrence slip deduction with error-carried-forward, the
+ * `//` mutually-exclusive-method rule, and the part-marked-definition
+ * convention) is the real SEC system, cited to:
  *  - SEC LC Physics HL marking scheme 2025 —
  *    examiner-reports/physics/2025-marking-scheme.*
  * Claim-by-claim record: compliance/evidence/examiners-chair.md.
@@ -195,12 +196,78 @@ const PHY3: ScaleSession = {
   },
 };
 
+// ─────────────── Phy4 · A definition is marked in parts ───────────────
+
+const PHY4: GridSession = {
+  mode: 'grid',
+  id: 'phy-definition-parts',
+  subject: 'physics',
+  level: 'common',
+  title: 'The “per unit” is worth marks',
+  cue: 'Explain / Define',
+  question:
+    'Explain what is meant by resistance. The scheme marks this definition as “[4 + 2]”: the core relationship (voltage, or R = V/I) is worth 4, and the qualifying phrase “per unit current” is a separate 2. A candidate writes “Resistance is the voltage across a component” and stops.',
+  questionNote:
+    'Question authored for this exercise. The part-marked definition is the real SEC convention — the resistance definition is printed as “voltage // R = V/I” + “per unit current // notation [4 + 2]”, so the qualifier carries its own marks.',
+  grid: {
+    perPoint: [
+      { id: 'core', label: 'Core relationship (voltage / R = V/I)', marks: 4 },
+      { id: 'perunit', label: 'The “per unit current” qualifier', marks: 2 },
+    ],
+    shorthand: 'definition · [4 + 2]',
+    ruleNote:
+      'Physics definitions are marked in parts. Naming the quantities scores the core marks, but the “per unit …” phrase (or the ratio it implies) is a separate, forfeitable component. Drop it and you leave those marks behind — a definition is not complete until the qualifier is there.',
+    cite: MS('p.16–17 (definition part-marking, [4 + 2])'),
+  },
+  scripts: [
+    {
+      id: 'phy4-a',
+      label: 'Script A',
+      persona: 'Half the definition',
+      attempts: [
+        {
+          id: 'phy4-a-1',
+          text: '“Resistance is the voltage across a component.”',
+          key: { core: 4, perunit: 0 },
+          keyNote:
+            'The core quantity is there (4), but the definition is only half-built — “per unit current” (the ratio to the current) is a separate 2-mark component and it’s missing. 4 of 6. The qualifier is not optional colour; it is where the last marks live.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Gives the core of a definition but omits the separately-marked “per unit” qualifier.',
+        cite: MS('p.16'),
+      },
+    },
+    {
+      id: 'phy4-b',
+      label: 'Script B',
+      persona: 'Full definition',
+      attempts: [
+        {
+          id: 'phy4-b-1',
+          text: '“Resistance is the voltage across a component per unit current through it (R = V/I).”',
+          key: { core: 4, perunit: 2 },
+          keyNote:
+            'Both parts: the core relationship and the “per unit current” qualifier. Full 6 marks. The ratio form (R = V/I) carries the same meaning — either way, the complete definition is what scores.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-phy4',
+    rule: 'Finish the definition — the “per unit” carries its own marks.',
+    detail:
+      'Physics definitions are part-marked: the core quantities score some marks, and the qualifier — “per unit …”, or the ratio it implies — scores the rest. Always state the full relationship; a half-definition banks only half the marks.',
+    cite: MS('p.16'),
+  },
+};
+
 export const PHYSICS_CHAIR: ChairSubject = {
   id: 'physics',
   label: 'Physics',
   tagline: 'Granules, units and slips — how numerical marks are really built.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [PHY1, PHY2, PHY3],
+  sessions: [PHY1, PHY2, PHY3, PHY4],
   sources: [
     { label: 'SEC LC Physics HL marking scheme 2025 (examiner-reports/physics/2025-marking-scheme)' },
   ],
