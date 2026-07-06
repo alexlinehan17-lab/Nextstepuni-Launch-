@@ -593,6 +593,17 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
           <Small className="mb-3">{levels[0] === 'common' ? 'Common level' : `${LEVEL_LABEL[levels[0]]} level`}</Small>
         )}
 
+        {sessions.length === 0 && (
+          <div className="rounded-xl border px-4 py-4 mt-1" style={{ borderColor: BORDER, backgroundColor: '#FCFBF8' }}>
+            <p className="text-[13px] leading-relaxed" style={{ color: MUTED }}>
+              {LEVEL_LABEL[activeLevel]}-specific sessions are being added. The marking
+              principles in the {levels.filter(l => l !== activeLevel).map(l => LEVEL_LABEL[l]).join('/')} sessions —
+              how points, diagrams and answers are marked — largely carry over; the mark
+              allocations differ, and verified {LEVEL_LABEL[activeLevel]} examples are on the way.
+            </p>
+          </div>
+        )}
+
         <div className="space-y-2 mt-1">
           {sessions.map((s, i) => {
             const result = state.results[s.id];

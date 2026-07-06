@@ -19,6 +19,7 @@ import { type ChairSubject, type ScaleSession, type ScaleLevel } from './types';
 
 const MS23 = (p: string) => ({ label: `SEC Mathematics OL marking scheme 2023, ${p}` });
 const CER15 = (p: string) => ({ label: `Chief Examiner's Report, Mathematics 2015, ${p}` });
+const MSFL = (p: string) => ({ label: `SEC Mathematics Foundation marking scheme 2025, ${p}` });
 
 // Verified scale ladders (marking scheme, p.[28]).
 const SCALE_10C: ScaleLevel[] = [
@@ -351,12 +352,62 @@ const M4: ScaleSession = {
   },
 };
 
+// ─────────────── M5 · Foundation — right answer, wrong detail ───────────────
+
+const M5: ScaleSession = {
+  mode: 'scale',
+  id: 'maths-fl-detail',
+  subject: 'maths',
+  level: 'foundation',
+  title: 'Right answer, wrong detail',
+  cue: 'Find',
+  question: 'A Foundation-level question asks for the coordinates of a point. The candidate’s working is perfect and finds the right numbers — but writes the point as (7, 4) when it should be (4, 7). The part is worth 10 marks. What does it score?',
+  questionNote:
+    'Question authored for this exercise; the Foundation scheme applies Full Credit −1 for a correct result presented with the wrong detail — coordinate order, a wrong label, a missing unit or bad rounding.',
+  scale: {
+    name: '10-mark item · Full credit −1',
+    levels: [
+      { id: 'm5', label: 'High partial (5)', annotation: 'H', marks: 5 },
+      { id: 'm9', label: 'Full credit −1 (9)', annotation: 'F✱', marks: 9 },
+      { id: 'm10', label: 'Full credit (10)', annotation: '✓', marks: 10 },
+    ],
+    notes: [
+      'The working is correct and finds the right numbers.',
+      'Writing the coordinates in the wrong order, (7, 4) for (4, 7), is a presentation slip.',
+      'Full Credit −1 applies: the same one-mark deduction as a wrong label, missing unit or bad rounding.',
+    ],
+    cite: MSFL('p.14 (coordinate order, Full Credit −1)'),
+  },
+  scripts: [
+    {
+      id: 'm5-a',
+      label: 'The answer',
+      persona: 'Right point, wrong order',
+      work: ['Correct working throughout.', 'Answer written as (7, 4) — it should be (4, 7).'],
+      keyLevelId: 'm9',
+      keyNote:
+        '9 of 10 — Full Credit −1. The maths is right; only the order is wrong, and that’s a one-mark presentation slip, the same family as a missing unit or bad rounding. These “right answer, wrong detail” marks are the easiest to protect: write x first then y, label the right figure to the right thing, and always include the unit.',
+      embodies: {
+        behaviour: 'Gets the right result but writes it with the wrong detail (coordinate order) — Full Credit −1.',
+        cite: MSFL('p.14'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-m5',
+    rule: 'Protect the presentation marks — order, label, unit, rounding.',
+    detail:
+      'At Foundation Level, a correct answer written with the wrong detail — coordinates out of order, a figure on the wrong label, a missing unit, bad rounding — is Full Credit −1. The maths is done; don’t give a mark back on the last line.',
+    cite: MSFL('p.14'),
+  },
+};
+
 export const MATHS_CHAIR: ChairSubject = {
   id: 'maths',
   label: 'Mathematics',
   tagline: 'Scales, steps and stars — how maths scripts are really graded.',
   offeredLevels: ['higher', 'ordinary', 'foundation'],
-  sessions: [M1, M2, M3, M4],
+  sessions: [M1, M2, M3, M4, M5],
   sources: [
     { label: 'SEC LC Mathematics OL marking scheme 2023, Paper 2 portion (examiner-reports/maths/2023-marking-scheme-ol-p2)' },
     { label: 'Chief Examiner’s Report, Mathematics 2015 (examiner-reports/maths/2015-chief-examiner)' },

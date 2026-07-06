@@ -16,6 +16,7 @@ import { type ChairSubject, type GridSession } from './types';
 
 const MS25 = (p: string) => ({ label: `SEC Business HL marking scheme 2025, ${p}` });
 const CER15 = (p: string) => ({ label: `Chief Examiner's Report, Business 2015, ${p}` });
+const MSOL = (p: string) => ({ label: `SEC Business OL marking scheme 2025, ${p}` });
 
 // ─────────────────────────── B1 · Theory + Link ───────────────────────────
 
@@ -574,16 +575,87 @@ const B6: GridSession = {
   },
 };
 
+// ═══════════════ Ordinary Level ═══════════════
+
+// ─────────────── O1 · The asymmetric two-point grid ───────────────
+
+const O1: GridSession = {
+  mode: 'grid',
+  id: 'biz-ol-asymmetric',
+  subject: 'business',
+  level: 'ordinary',
+  title: 'The first point is worth double',
+  cue: 'Explain two (OL)',
+  question: 'An Ordinary Level “explain two” question is worth 15 marks, marked 10 (7+3) for the first point and 5 (4+1) for the second — each split into stating the point plus developing it. A candidate names and develops one point fully, then just names a second without developing it.',
+  questionNote:
+    'Scenario authored for this exercise. The signature OL Business grid is asymmetric: two-point questions pay 10 (7 state + 3 develop) for the first point and 5 (4 + 1) for the second, so one developed point caps at 10/15.',
+  grid: {
+    perPoint: [
+      { id: 'p1state', label: 'Point 1 — stated', marks: 7 },
+      { id: 'p1dev', label: 'Point 1 — developed', marks: 3 },
+      { id: 'p2state', label: 'Point 2 — stated', marks: 4 },
+      { id: 'p2dev', label: 'Point 2 — developed', marks: 1 },
+    ],
+    shorthand: '10 (7+3) + 5 (4+1)',
+    ruleNote:
+      'The first point carries 10 marks, the second only 5 — and each has a “develop it” tranche (3 and 1). One fully developed point caps at 10/15; two named-but-undeveloped points score 11/15; you need both stated AND developed to reach 15.',
+    cite: MSOL('p.5 (asymmetric two-point grid)'),
+  },
+  scripts: [
+    {
+      id: 'o1-a',
+      label: 'Script A',
+      persona: 'One point developed, one just named',
+      attempts: [
+        {
+          id: 'o1-a-1',
+          text: 'Point 1: stated clearly and then developed with a reason and an example. Point 2: named only, with no development.',
+          key: { p1state: 7, p1dev: 3, p2state: 4, p2dev: 0 },
+          keyNote: '14 of 15 — the first point is complete (10), and the second is named (4) but the 1-mark development tranche is missed. Even here the asymmetry matters: developing the first point mattered far more than the second. Develop both to reach 15.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Develops one point but leaves the second undeveloped — forfeiting its development tranche.',
+        cite: MSOL('p.5'),
+      },
+    },
+    {
+      id: 'o1-b',
+      label: 'Script B',
+      persona: 'One point only',
+      attempts: [
+        {
+          id: 'o1-b-1',
+          text: 'One point, stated and fully developed. No second point attempted.',
+          key: { p1state: 7, p1dev: 3, p2state: 0, p2dev: 0 },
+          keyNote: 'Capped at 10 of 15 — a single point, however good, can only reach the first point’s 10 marks. The OL brevity trap, made concrete: give the second point, even briefly, to unlock the other 5.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Gives only one point where two are required — the documented OL brevity trap.',
+        cite: CER15('p.20'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-o1',
+    rule: 'At OL, give both points — and develop each.',
+    detail:
+      'Ordinary Level two-point questions pay 10 (7+3) for the first and 5 (4+1) for the second, each with a “develop it” tranche. One point caps at 10/15; naming without developing forfeits the 3- and 1-mark tranches. Always give both points and develop both.',
+    cite: MSOL('p.5'),
+  },
+};
+
 export const BUSINESS_CHAIR: ChairSubject = {
   id: 'business',
   label: 'Business',
   tagline: 'Grids, cues and links — where Business marks are actually won.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [B1, B2, B3, B4, B5, B6],
+  sessions: [B1, B2, B3, B4, B5, B6, O1],
   sources: [
     { label: 'SEC Business HL marking scheme 2025 (examiner-reports/business/2025-marking-scheme)' },
     { label: 'Chief Examiner’s Report, Business 2015 (examiner-reports/business/2015-chief-examiner)' },
   ],
   coverageNote:
-    'Higher Level sessions are verified against the 2025 HL marking scheme. Ordinary Level shares the same question cues and grid logic; OL-specific sessions (verified against an OL scheme) are being added.',
+    'Higher Level sessions are verified against the 2025 HL scheme; the Ordinary Level session is verified against the 2025 OL scheme (note: OL has no ABQ, and uses the asymmetric two-point grid). More OL-specific sessions are being added.',
 };

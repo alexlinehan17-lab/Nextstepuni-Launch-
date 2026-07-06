@@ -20,6 +20,7 @@ import { type ChairSubject, type GridSession, type ScaleSession, type ScaleLevel
 
 const MS = (p: string) => ({ label: `SEC Geography HL marking scheme 2025, ${p}` });
 const CER = (p: string) => ({ label: `Chief Examiner's Report, Geography 2012, ${p}` });
+const MSOL = (p: string) => ({ label: `SEC Geography OL marking scheme 2025, ${p}` });
 
 const srpScale = (marks: number[]): ScaleLevel[] =>
   marks.map(m => ({ id: `m${m}`, label: m === 0 ? 'No marks' : `${m} marks`, annotation: `${m}m`, marks: m }));
@@ -249,16 +250,80 @@ const GEO4: ScaleSession = {
   },
 };
 
+// ───────────────── Geo5 · OL — an SRP is worth 3 marks ─────────────────
+
+const GEO5: GridSession = {
+  mode: 'grid',
+  id: 'geo-ol-srp',
+  subject: 'geography',
+  level: 'ordinary',
+  title: 'At Ordinary Level, an SRP is 3 marks',
+  cue: 'Explain (OL)',
+  question: 'An Ordinary Level part ends “Explain briefly” and is marked “2 SRPs @ 3 marks each = 6m”. At OL each Significant Relevant Point is worth 3 marks (not 2 as at Higher). A candidate writes one developed point, then stops.',
+  questionNote:
+    'Scenario authored for this exercise. At Ordinary Level an SRP is worth 3 marks (Higher is 2), and “explain briefly” closers typically want two developed points (2 SRPs @ 3m).',
+  grid: {
+    perPoint: [
+      { id: 'srp1', label: '1st SRP (developed point)', marks: 3 },
+      { id: 'srp2', label: '2nd SRP (developed point)', marks: 3 },
+    ],
+    shorthand: '2 SRPs @ 3m = 6m',
+    ruleNote:
+      'Each developed point is worth 3 marks at OL. A “brief explanation” closer wants two of them — one developed sentence banks 3, but the second 3-mark SRP is left behind unless you give a second point.',
+    cite: MSOL('p.12, p.18 (2 SRPs @ 3m closers; SRP = 3 marks at OL)'),
+  },
+  scripts: [
+    {
+      id: 'geo5-a',
+      label: 'Script A',
+      persona: 'One point, then stops',
+      attempts: [
+        {
+          id: 'geo5-a-1',
+          text: 'One developed, factual point explaining the cause — then the answer ends.',
+          key: { srp1: 3, srp2: 0 },
+          keyNote: 'One SRP banked (3 of 6). The closer wanted two developed points, and the second 3-mark SRP is simply unclaimed. At OL the marks are bigger per point (3, not 2) — but you still have to give the number the question asks for.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Gives one developed point on a two-SRP closer — forfeiting the second 3-mark SRP.',
+        cite: MSOL('p.12'),
+      },
+    },
+    {
+      id: 'geo5-b',
+      label: 'Script B',
+      persona: 'Two developed points',
+      attempts: [
+        {
+          id: 'geo5-b-1',
+          text: 'Two distinct developed points, each a clear factual statement explaining the cause.',
+          key: { srp1: 3, srp2: 3 },
+          keyNote: 'Two SRPs at 3 marks each. Full 6/6 — the “brief explanation” was really an instruction to give two developed points.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-geo5',
+    rule: 'At OL, each SRP is 3 marks — give the number the closer asks for.',
+    detail:
+      'Ordinary Level Geography pays 3 marks per Significant Relevant Point (Higher pays 2), and “explain briefly” closers usually want two. One point banks 3; a second developed point banks the other 3. Match the SRP count the part expects.',
+    cite: MSOL('p.12'),
+  },
+};
+
 export const GEOGRAPHY_CHAIR: ChairSubject = {
   id: 'geography',
   label: 'Geography',
   tagline: 'SRPs, diagrams and coherence — the anatomy of a Geography mark.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [GEO1, GEO2, GEO3, GEO4],
+  sessions: [GEO1, GEO2, GEO3, GEO4, GEO5],
   sources: [
     { label: 'SEC LC Geography HL marking scheme 2025 (examiner-reports/geography/2025-marking-scheme)' },
+    { label: 'SEC LC Geography OL marking scheme 2025 (examiner-reports/geography/2025-ol-marking-scheme)' },
     { label: 'Chief Examiner’s Report, Geography 2012 (examiner-reports/geography/2012-chief-examiner)' },
   ],
   coverageNote:
-    'Verified against the 2025 Higher Level scheme. The SRP system, diagram rule and coherence marking also govern Ordinary Level (with lower SRP counts per part); OL-specific sessions are being added.',
+    'Higher sessions are verified against the 2025 HL scheme; the Ordinary session against the 2025 OL scheme. Note the SRP is worth 3 marks at OL (2 at HL), and OL has no Options essay / Overall Coherence grid. More OL sessions are being added.',
 };

@@ -57,6 +57,10 @@ For multi-year syntheses, the prefix is `<start-year>-<end-year>-` (e.g.
 | Italian | 2025 | Marking scheme | Higher | SEC `Leaving Certificate 2025 Marking Scheme — Higher Level Italian` (mirrored PDF, exams.ie) | PDF + MD + insights |
 | Maths | 2025 | Marking scheme | Foundation | SEC `Leaving Certificate 2025 Marking Scheme — Mathematics, Foundation Level` (`2025 LC Maths FL.pdf`, mirrored PDF, educateplus.ie) | PDF + MD + insights |
 | Geography | 2025 | Marking scheme | Ordinary | SEC `Leaving Certificate 2025 Marking Scheme — Ordinary Level Geography` (`2025 LC Geography OL.pdf`, mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| Biology | 2025 | Marking scheme | Ordinary | SEC `Leaving Certificate 2025 — Biology, Ordinary Level, Marking Scheme` (`2025 LC Biology OL.pdf`, mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| Business | 2025 | Marking scheme | Ordinary | SEC `Leaving Certificate 2025 Marking Scheme — Ordinary Level Business` (`2025 LC Business OL.pdf`, mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| Irish | 2025 | Marking scheme (written papers) | Ordinary | SEC `An Ardteistiméireacht 2025 — Scéim Mharcála, Gnáthleibhéal, Gaeilge` (`2025 LC Irish OL.pdf`, mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| English | 2025 | Marking scheme | Ordinary | SEC `Leaving Certificate 2025 Marking Scheme — Ordinary Level, English` (`2025 LC English OL.pdf`, mirrored PDF, educateplus.ie) | PDF + MD + insights |
 
 _Last updated: 2026-07-06_
 
