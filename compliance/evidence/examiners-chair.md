@@ -510,6 +510,27 @@ one-year artefacts, and the edits that were made show the verification is a real
 than a rubber stamp — several genuine inaccuracies were caught and corrected against a second
 independent year's scheme.
 
+## Depth-expansion sessions (2026-07-06)
+
+Additional marking sessions added to deepen coverage. Each teaches a distinct, load-bearing
+rule grounded in a verbatim line from the filed scheme (page verified; the anchor phrase was
+grep-confirmed in the scheme markdown). Content-integrity constraints (grid keys 0-or-full over
+every criterion; scale ladders strictly increasing) are enforced by `test/examinersChair.test.ts`.
+
+| Session | Subject | Rule taught | Scheme anchor (verified) |
+|---------|---------|-------------|--------------------------|
+| `bio-marks-per-point` (BIO4) | Biology | The `N(M)` notation is marks-per-point: `3(1)` labels want count, `6(3)` wants developed points | 2023 HL p.16 sperm-cell labels `3(1)`; p.4 `6(3)`, p.11 `3(3)` |
+| `phy-definition-parts` (PHY4) | Physics | Definitions are part-marked; the "per unit" qualifier carries its own marks | 2025 HL p.16 resistance `[4 + 2]` ("per unit current") |
+| `ir-aural-gaeilge` (IR5) | Irish | The Cluastuiscint deducts 0–3 for standard of Irish (syntax/copula/tenses; spelling not counted) | 2025 HL p.3 "Bainfear ó 0 go 3 ar chaighdeán na Gaeilge" |
+| `am-oversimplify` (AM4) | Applied Maths | A slip/misreading/omission that oversimplifies the question is upgraded from −1 to a −3 blunder | 2024 HL p.3 instruction 5 |
+| `art-coherence` (ART4) | Art (Visual Studies) | Coherence and Focus is an independent 10-mark strand — a knowledge dump that doesn't answer the question scores low | 2024 HL printed p.21 "Coherence and Focus. 10 Marks." |
+| `cs-adv-dis` (CS4) | Construction | "One advantage AND one disadvantage" — each is a separate tick; a second advantage can't pay for a missing disadvantage | 2025 HL p.17 / p.40 Q4(c) `Advantage 1 [3], Disadvantage 1 [3]` |
+| `dcg-hidden-detail` (DCG4) | DCG | Hidden detail is its own itemised granule (≈1 mark), separate from the visible outline | 2025 HL p.5 A-3(a)(v) "Hidden detail … 1" |
+| `mu-cadential` (MU4) | Music | A cadential 6/4 is credited only on the stronger beat at a cadence point | 2022 HL p.7 (corroborated 2024 p.8) |
+| `re-two-items` (RE4) | Religious Education | "Two-item" questions are banded twice; the scores don't pool, so a missing second item caps the answer at half | 2025 HL p.8 "(10M x 2)"; MC X = no-evidence (p.3) |
+| `lcvp-compulsory` (LC4) | LCVP | On format questions, the format-heading mark and the compulsory (asterisked) item are distinct marks | 2024 p.8 "Heading AGENDA = 1 mark"; "…* (compulsory point)" |
+| `en-finish` (EN4) | Engineering | In the Practical, Section 1 is Assembly 5 + Function 10 + Finish 5 — a working piece handed up rough forfeits Finish | 2025 HL p.32 practical grid; "100 Marks (× 1.5 = 150)" |
+
 ## Pedagogical basis
 
 The tool is an application of self-assessment / rubric-internalisation practice: the
