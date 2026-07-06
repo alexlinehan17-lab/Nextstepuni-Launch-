@@ -14,7 +14,7 @@
  * Claim-by-claim record: compliance/evidence/examiners-chair.md.
  */
 
-import { type ChairSubject, type GridSession } from './types';
+import { type ChairSubject, type GridSession, type ScaleSession } from './types';
 
 const MS = (p: string) => ({ label: `SEC Engineering HL marking scheme 2025, ${p}` });
 
@@ -280,15 +280,194 @@ const EN4: GridSession = {
   },
 };
 
+// ─────────────── EN5 · A calculation is one all-or-nothing granule ───────────────
+
+const EN5: GridSession = {
+  mode: 'grid',
+  id: 'en-calc',
+  subject: 'engineering',
+  level: 'common',
+  title: 'Show the chain, and put the unit on the answer',
+  cue: 'Calculate',
+  question:
+    'A calculation part — ultimate tensile strength — is worth 4 marks as a single granule: the formula, the substituted values and the final answer *with its unit* all sit under one mark value. A candidate does the arithmetic correctly on a calculator and writes only “= 1.6” — no formula, no substitution, no unit. Mark it.',
+  questionNote:
+    'Scenario authored for this exercise. Based on Q3(b)(iii) (ultimate tensile strength) in the 2025 HL scheme — a numerical answer marked as one 4-mark granule covering formula → substitution → answer, with the unit carried into the accepted answer (kN/mm²). There is no separate “unit mark” and no partial-credit ladder.',
+  grid: {
+    perPoint: [{ id: 'calc', label: 'Calculation shown, answer with its unit', marks: 4 }],
+    shorthand: 'Single 4-mark granule (formula → substitution → answer + unit)',
+    ruleNote:
+      'The whole chain — formula, substituted values and the final answer with its unit — sits under one 4-mark value. There is no part-marks ladder to catch a stray step and no separate unit mark to fall back on, so a bare number, or a right answer with the unit dropped, risks the entire granule. Show the working and carry the unit into the answer.',
+    cite: MS('p.13 (Q3(b)(iii): UTS = 181 kN / 113.1 mm² = 1.6 kN/mm², 4 marks)'),
+  },
+  scripts: [
+    {
+      id: 'en5-a',
+      label: 'Script A',
+      persona: 'Right value, no working or unit',
+      attempts: [
+        {
+          id: 'en5-a-1',
+          text: 'Writes only “= 1.6” as the final answer. The arithmetic was done on a calculator, but no formula or substitution is shown and no unit is given.',
+          key: { calc: 0 },
+          keyNote:
+            'The value is right, but the granule pays for the shown chain with its unit — and there is no separate unit mark to rescue a bare “1.6”. One line — Max Load / C.S.A = 181 kN / 113.1 mm² = 1.6 kN/mm² — banks the 4. As written it risks all of it.',
+        },
+      ],
+      embodies: {
+        behaviour:
+          'Gives a correct numerical value with no working and no unit, where the mark is a single all-or-nothing granule.',
+        cite: MS('p.13'),
+      },
+    },
+    {
+      id: 'en5-b',
+      label: 'Script B',
+      persona: 'Formula, substitution, unit',
+      attempts: [
+        {
+          id: 'en5-b-1',
+          text: 'Writes the formula, substitutes the values and gives the answer with its unit: UTS = Max Load / C.S.A = 181 kN / 113.1 mm² = 1.6 kN/mm².',
+          key: { calc: 4 },
+          keyNote: 'Formula, substitution and a united answer — exactly the granule. Full 4.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-en5',
+    rule: 'Show the chain, and put the unit on the answer.',
+    detail:
+      'Engineering calculations are marked as a single granule — formula → substitution → answer with its unit under one value, with no separate unit mark and no partial ladder. A bare or unitless number risks the whole thing. Write the formula, substitute, and carry the unit into the final line.',
+    cite: MS('p.13'),
+  },
+};
+
+// ─────────────── EN6 · The model answer is an example, not a script ───────────────
+
+const EN6: GridSession = {
+  mode: 'grid',
+  id: 'en-valid',
+  subject: 'engineering',
+  level: 'common',
+  title: 'Marks follow correct content, not the model’s exact words',
+  cue: 'State the function',
+  question:
+    'A defined 5-mark item — “state the function of…” — is marked as a single granule. One candidate gives the correct function in plain, everyday wording, nothing like the formal sentence printed in the scheme. Another reproduces a fluent, well-memorised textbook sentence — but it describes the wrong component. Mark both.',
+  questionNote:
+    'Scenario authored for this exercise. General instruction 1 (p.4), repeated at the head of the marking (p.7): “The solutions presented are examples only. All other valid solutions are acceptable and are marked accordingly.” Several Q1 parts are single undivided 5-mark granules (e.g. Q1(b), Q1(g)).',
+  grid: {
+    perPoint: [{ id: 'content', label: 'Correct technical content (any valid wording)', marks: 5 }],
+    shorthand: 'Single 5-mark granule — content, not wording',
+    ruleNote:
+      'The printed model answer is an example, not a required script. Correct technical content in any valid wording earns the marks; polished wording around wrong content earns nothing. The examiner marks what you say, not whether you matched their phrasing.',
+    cite: MS('p.4 (instruction 1) & p.7 (repeated note): “solutions presented are examples only … all other valid solutions are acceptable”'),
+  },
+  scripts: [
+    {
+      id: 'en6-a',
+      label: 'Script A',
+      persona: 'Different phrasing, right content',
+      attempts: [
+        {
+          id: 'en6-a-1',
+          text: 'Explains the component’s function correctly, but in plain everyday wording — nothing like the formal sentence in the marking scheme.',
+          key: { content: 5 },
+          keyNote:
+            '“Examples only” means exactly this: the content is right, so the different wording is fully accepted. 5. Don’t rewrite your answer to chase the model’s phrasing.',
+        },
+      ],
+    },
+    {
+      id: 'en6-b',
+      label: 'Script B',
+      persona: 'Polished wording, wrong content',
+      attempts: [
+        {
+          id: 'en6-b-1',
+          text: 'Reproduces a fluent, well-memorised textbook sentence — but it describes the wrong component, so the technical content is incorrect.',
+          key: { content: 0 },
+          keyNote:
+            'Fluent phrasing can’t rescue wrong content — the granule pays for a correct answer, in any words. 0. Matching a revision-book sentence isn’t the goal; being technically right is.',
+        },
+      ],
+      embodies: {
+        behaviour:
+          'Relies on polished, memorised wording over correct technical content, where the scheme credits content and treats its own model as an example only.',
+        cite: MS('p.4'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-en6',
+    rule: 'Marks follow correct content, not the model’s exact words.',
+    detail:
+      'The scheme states its solutions “are examples only — all other valid solutions are acceptable.” A correct answer in your own words scores full; a fluent answer with wrong content scores nothing. Write what’s technically true; don’t fear phrasing that differs from a revision book.',
+    cite: MS('p.4'),
+  },
+};
+
+// ─────────────── EN7 · The Irish-language bonus (read the right band) ───────────────
+
+const EN7: ScaleSession = {
+  mode: 'scale',
+  id: 'en-irish-bonus',
+  subject: 'engineering',
+  level: 'common',
+  title: 'The Irish-language bonus is real, free marks',
+  cue: 'Apply the bonus',
+  question:
+    'A candidate answered the entire written paper entirely through Irish and comes in with a provisional mark of 264 / 300 (88%) before the language bonus. Because that is above 75%, the tapered “Tábla 300 @ 5%” applies, not the flat 5%. Read the table and award the bonus band.',
+  questionNote:
+    'Scenario authored for this exercise. Applies general instruction 3 (p.4) and the published bonus table “Tábla 300 @ 5%” (p.5). The levels below are the real, adjacent table bands; the candidate’s band is the one to select.',
+  scale: {
+    name: 'Tábla 300 @ 5% (Irish-language bonus)',
+    levels: [
+      { id: 'en7-b4', label: 'Base 267–273 → +4', annotation: '+4', marks: 4 },
+      { id: 'en7-b5', label: 'Base 261–266 → +5', annotation: '+5', marks: 5 },
+      { id: 'en7-b6', label: 'Base 254–260 → +6', annotation: '+6', marks: 6 },
+      { id: 'en7-b7', label: 'Base 247–253 → +7', annotation: '+7', marks: 7 },
+    ],
+    notes: [
+      'Instruction 3 (p.4): a 5% bonus is given to a candidate who answers “entirely through Irish” and obtains less than 75% of the total marks; in calculating it “decimals are always rounded down, not up e.g., 4.5 becomes 4; 4.9 becomes 4”.',
+      'Above 75%, the tapered “Tábla 300 @ 5%” (p.5) applies instead: the bonus slides from +11 (base 226) down to 0 (base 294–300). At 264/300 the candidate sits in the 261–266 band → +5.',
+      'The bonus is added on top of the earned mark — it rewards committing to answering the whole paper as Gaeilge, and it is always rounded down, never up.',
+    ],
+    cite: MS('p.5 (Tábla 300 @ 5% bands) & p.4 (instruction 3: “rounded down, not up … 4.5 becomes 4”)'),
+  },
+  scripts: [
+    {
+      id: 'en7-a',
+      label: 'The band',
+      persona: 'Answered entirely through Irish, base 264/300',
+      work: [
+        'Candidate answered the entire written examination through Irish (as Gaeilge).',
+        'Provisional mark before the language bonus: 264 / 300 (88%).',
+        'Above 75%, so the tapered Tábla 300 @ 5% applies — not the flat 5% of the mark obtained.',
+      ],
+      keyLevelId: 'en7-b5',
+      keyNote:
+        '264 falls in the 261–266 band → +5 bonus (final 269). Above 75% the tapered table applies; below 75% it is a flat 5% of the mark obtained, always rounded DOWN (4.5 → 4, 4.9 → 4). Either way the bonus is real, free marks — but only for a candidate who actually answers the whole paper entirely through Irish.',
+    },
+  ],
+  takeaway: {
+    id: 'codex-en7',
+    rule: 'Answering entirely through Irish earns a bonus — always rounded down.',
+    detail:
+      'A candidate who answers the whole written paper as Gaeilge earns a language bonus: a flat 5% of the mark obtained below 75%, or the tapered “Tábla 300 @ 5%” band above 75%. The bonus is always rounded down (4.5 → 4). It is free marks on top of the earned score — worth knowing if your Irish is strong enough to commit to the whole answer.',
+    cite: MS('p.4'),
+  },
+};
+
 export const ENGINEERING_CHAIR: ChairSubject = {
   id: 'engineering',
   label: 'Engineering',
-  tagline: 'Answer the number asked, state the point, label the diagram, finish the piece.',
+  tagline: 'Answer the number asked, state the point, label the diagram, unit the answer, finish the piece.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [EN1, EN2, EN3, EN4],
+  sessions: [EN1, EN2, EN3, EN4, EN5, EN6, EN7],
   sources: [
     { label: 'SEC LC Engineering HL marking scheme 2025 (examiner-reports/engineering/2025-marking-scheme)' },
   ],
   coverageNote:
-    'These sessions teach the general conventions — the “Any N” cap, the point+development split, separately-credited labels and the Practical’s Assembly/Function/Finish concept marks — which apply at both Higher and Ordinary level. Verified against the 2025 Higher Level scheme; level-specific worked questions are being added.',
+    'These sessions teach the general conventions — the “Any N” cap, the point+development split, separately-credited labels, the single-granule calculation (formula → substitution → answer with unit), the “examples only / valid alternatives accepted” rule, the Irish-language bonus, and the Practical’s Assembly/Function/Finish concept marks — which apply at both Higher and Ordinary level. Verified against the 2025 Higher Level scheme; level-specific worked questions are being added.',
 };

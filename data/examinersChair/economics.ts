@@ -262,16 +262,230 @@ const EC4: GridSession = {
   },
 };
 
+// ─────────────── EC5 · Answer the number asked — extras are Surplus ───────────────
+
+const EC5: GridSession = {
+  mode: 'grid',
+  id: 'ec-surplus',
+  subject: 'economics',
+  level: 'higher',
+  title: 'Two means two',
+  cue: 'Outline two',
+  question: 'An “Outline two factors” part is marked 2 @ 6 — two named, developed points, each out of 6. The scheme’s annotation table lists a “Surplus answer or part of answer” mark (N/A): material beyond the required number is seen and ignored, not credited. A candidate writes four points hoping quantity helps; another writes only one, very deeply. How does each fare?',
+  questionNote:
+    'Scenario authored for this exercise. The N @ M template caps the count at N; extra points are annotated “Surplus … N/A” (seen, ignored, not credited), and answering fewer than N caps the total.',
+  grid: {
+    perPoint: [
+      { id: 'p1', label: '1st point (developed)', marks: 6 },
+      { id: 'p2', label: '2nd point (developed)', marks: 6 },
+    ],
+    shorthand: '2 @ 6 · extras are Surplus',
+    ruleNote:
+      'Only the first two points are marked; a third or fourth is annotated “Surplus” and earns nothing — the time on it is wasted. Answering only one point caps the total at 6 of 12, because the second point’s marks have nothing to attach to. Match the count to the number asked: no more, no fewer.',
+    cite: MS('p.3 (Surplus annotation) + 2 @ M grids throughout'),
+  },
+  scripts: [
+    {
+      id: 'ec5-a',
+      label: 'Script A',
+      persona: 'Four points, hoping quantity helps',
+      attempts: [
+        {
+          id: 'ec5-a-1',
+          text: 'First point — named and developed with a mechanism.',
+          key: { p1: 6, p2: 0 },
+          keyNote: 'A fully developed first point — banks its 6.',
+        },
+        {
+          id: 'ec5-a-2',
+          text: 'Second point — named and developed.',
+          key: { p1: 0, p2: 6 },
+          keyNote: 'A solid second point — banks its 6. The part is now full at 12/12.',
+        },
+        {
+          id: 'ec5-a-3',
+          text: 'Third and fourth points — also developed, but the part asked for two.',
+          key: { p1: 0, p2: 0 },
+          keyNote: 'Surplus. The scheme annotates anything beyond the required number “Surplus answer … N/A” — seen and ignored. However good they are, they add nothing; the effort would have banked more spent deepening the first two.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Over-supplies points on a capped N @ M part; the extras are marked Surplus and earn nothing.',
+        cite: MS('p.3'),
+      },
+    },
+    {
+      id: 'ec5-b',
+      label: 'Script B',
+      persona: 'One deep point, no second',
+      attempts: [
+        {
+          id: 'ec5-b-1',
+          text: 'A single point, developed very thoroughly — but no second point is offered.',
+          key: { p1: 6, p2: 0 },
+          keyNote: 'The one point earns its full 6, but there is nothing for the second 6 to attach to, so the part caps at 6/12. Depth can max one point; it cannot substitute for a missing one.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Under-supplies on an N @ M part, forfeiting the marks reserved for the missing point.',
+        cite: MS('p.3'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-ec5',
+    rule: 'Answer the number asked — no more, no fewer.',
+    detail:
+      'The N @ M template caps the count: extra points are annotated “Surplus” and earn nothing, while answering too few forfeits the missing point’s marks. Give exactly N points and put the spare effort into developing them.',
+    cite: MS('p.3'),
+  },
+};
+
+// ─────────────── EC6 · The key phrase must appear — and not be contradicted ───────────────
+
+const EC6: GridSession = {
+  mode: 'grid',
+  id: 'ec-keyphrase',
+  subject: 'economics',
+  level: 'higher',
+  title: 'Say the words, and mean them',
+  cue: 'Outline the term',
+  question: 'The scheme states its support notes “may contain key phrases which must appear in the candidate’s answer in order to merit the assigned marks”, and that words “must be correctly used in context and not contradicted … where there is evidence of incorrect use or contradictions the marks may not be awarded.” A definition is marked 2 (key phrase) + 4 (correct development). Three candidates: one names the term and stops, one states it then contradicts it, one states and develops it correctly.',
+  questionNote:
+    'Scenario authored for this exercise. The marking grammar is real: the scheme lists key phrases that must appear to merit the marks, and self-contradiction or incorrect use can forfeit them.',
+  grid: {
+    perPoint: [
+      { id: 'phrase', label: 'Required key phrase present', marks: 2 },
+      { id: 'context', label: 'Developed correctly, not contradicted', marks: 4 },
+    ],
+    shorthand: '2 (key phrase) + 4 (correct development)',
+    ruleNote:
+      'The key phrase is a gate: without it, the marks can’t be merited. But a phrase that is then contradicted or misused forfeits even its own mark — “the marks may not be awarded.” The safe answer states the required term and then develops it in a way that stays consistent with what it means.',
+    cite: MS('p.2 (key phrases must appear; correctly used in context and not contradicted)'),
+  },
+  scripts: [
+    {
+      id: 'ec6-a',
+      label: 'Script A',
+      persona: 'Names it, then stops',
+      attempts: [
+        {
+          id: 'ec6-a-1',
+          text: 'States the required key phrase correctly, but adds no explanation or development.',
+          key: { phrase: 2, context: 0 },
+          keyNote: 'The key phrase appears, so it merits its 2 marks — but the development marks need an actual explanation. Naming the term is the gate, not the whole answer.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Includes the required key phrase but leaves the development marks unearned.',
+        cite: MS('p.2'),
+      },
+    },
+    {
+      id: 'ec6-b',
+      label: 'Script B',
+      persona: 'Right words, wrong meaning',
+      attempts: [
+        {
+          id: 'ec6-b-1',
+          text: 'States the key phrase, then a following sentence describes it in a way that contradicts what the term actually means.',
+          key: { phrase: 0, context: 0 },
+          keyNote: 'The contradiction is fatal: the scheme says where there is evidence of contradiction “the marks may not be awarded.” The correct phrase does not rescue an answer that then undoes it — this forfeits even the phrase mark.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Uses the key phrase but contradicts it in context — a documented forfeiting behaviour.',
+        cite: MS('p.2'),
+      },
+    },
+    {
+      id: 'ec6-c',
+      label: 'Script C',
+      persona: 'States it and develops it',
+      attempts: [
+        {
+          id: 'ec6-c-1',
+          text: 'States the required key phrase and develops it correctly and consistently.',
+          key: { phrase: 2, context: 4 },
+          keyNote: 'The phrase is present and the development stays true to it. Full marks — the gate and the explanation, both intact.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-ec6',
+    rule: 'Use the exact term — and never contradict it.',
+    detail:
+      'The scheme lists key phrases that must appear to merit the marks, and self-contradiction or incorrect use can forfeit them. State the required term precisely, then develop it in a way that stays consistent with its meaning.',
+    cite: MS('p.2'),
+  },
+};
+
+// ─────────────── EC7 · SRP — marks follow analysis, not length ───────────────
+
+const EC7: ScaleSession = {
+  mode: 'scale',
+  id: 'ec-srp-length',
+  subject: 'economics',
+  level: 'higher',
+  title: 'Volume is not value',
+  cue: 'Student Research Project',
+  question: 'The Student Research Project is marked on five qualitative descriptor bands (Excellent / Very Good / Good / Fair / Weak), and the examiner is told: “Be careful not to penalise skilful brevity, nor to reward unwarranted length.” The top bands are reserved for critical analysis, objective evaluation, and judgements supported by data. A candidate submits a section that runs to twice the expected length, restating the data tables and quoting sources — but thin on genuine interpretation. Where does it land?',
+  questionNote:
+    'Scenario authored for this exercise. The SRP descriptor bands and the “skilful brevity / unwarranted length” instruction are the real HL marking grammar (pp.71–74).',
+  scale: {
+    name: 'SRP descriptor band /10',
+    levels: [
+      { id: 'weak', label: 'Weak (0–2)', annotation: '0–2', marks: 2 },
+      { id: 'fair', label: 'Fair (3–4)', annotation: '3–4', marks: 4 },
+      { id: 'good', label: 'Good (5–6)', annotation: '5–6', marks: 6 },
+      { id: 'vgood', label: 'Very Good (7–8)', annotation: '7–8', marks: 8 },
+      { id: 'excellent', label: 'Excellent (9–10)', annotation: '9–10', marks: 10 },
+    ],
+    notes: [
+      'Marked on qualitative bands, not by counting facts or pages.',
+      'Explicit instruction: “Be careful not to penalise skilful brevity, nor to reward unwarranted length.”',
+      'The top bands need critical analysis, evaluation, and judgements supported by data — not description.',
+    ],
+    cite: MS('p.71 (SRP descriptor bands; skilful brevity / unwarranted length)'),
+  },
+  scripts: [
+    {
+      id: 'ec7-a',
+      label: 'The submission',
+      persona: 'Long, but describing not analysing',
+      work: [
+        'Runs to roughly twice the expected length; restates the data tables and quotes the sources at length.',
+        'Description and summary dominate — little genuine interpretation, evaluation, or data-supported judgement.',
+      ],
+      keyLevelId: 'fair',
+      keyNote:
+        'Fair band — the length buys nothing. The examiner is explicitly told not to reward unwarranted length nor penalise skilful brevity, and the top bands are reserved for critical analysis and evaluation supported by data. A shorter section that actually interpreted and evaluated the evidence would reach Very Good or Excellent. Volume is not value.',
+      embodies: {
+        behaviour: 'Pads the study with length and restated data instead of analysis — length the scheme explicitly does not reward.',
+        cite: MS('p.71'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-ec7',
+    rule: 'In the SRP, marks follow analysis, not length.',
+    detail:
+      'The SRP bands reward critical analysis, evaluation, and data-supported judgement — and the scheme explicitly refuses to reward unwarranted length or penalise skilful brevity. Interpret and evaluate the evidence; don’t pad with description.',
+    cite: MS('p.71'),
+  },
+};
+
 export const ECONOMICS_CHAIR: ChairSubject = {
   id: 'economics',
   label: 'Economics',
   tagline: 'Develop your points, label your diagrams, show your workings.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [EC1, EC2, EC3, EC4],
+  sessions: [EC1, EC2, EC3, EC4, EC5, EC6, EC7],
   sources: [
     { label: 'SEC LC Economics HL marking scheme 2025 (examiner-reports/economics/2025-marking-scheme)' },
     { label: 'SEC LC Economics OL marking scheme 2025 (examiner-reports/economics/2025-ol-marking-scheme)' },
   ],
   coverageNote:
-    'The develop-your-points, diagram-label and show-your-workings sessions apply at both levels. The Ordinary session captures an OL-specific difference: two-point questions are front-loaded (1st @ 8 / 2nd @ 4), so the first point banks the most marks. Verified against the 2025 and 2023 OL schemes.',
+    'The develop-your-points, diagram-label, show-your-workings, count-the-points (Surplus), key-phrase and SRP sessions apply at Higher Level. The Ordinary session captures an OL-specific difference: two-point questions are front-loaded (1st @ 8 / 2nd @ 4), so the first point banks the most marks. Verified against the 2025 (and 2023) HL and OL schemes.',
 };

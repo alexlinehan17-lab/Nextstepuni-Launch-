@@ -232,16 +232,179 @@ const HE4: ScaleSession = {
   },
 };
 
+// ─────────────── HE5 · The count is a cap ───────────────
+
+const HE5: GridSession = {
+  mode: 'grid',
+  id: 'he-point-cap',
+  subject: 'home-economics',
+  level: 'higher',
+  title: 'The count is a cap, not a target',
+  cue: 'Discuss (fixed count)',
+  question:
+    'A 20-mark part is marked as “4 points @ 5 marks”. A candidate plays it safe and writes six points — three fully developed, one left as a thin one-liner, plus two more strong points beyond the four the question marks. How does it score?',
+  questionNote:
+    'Scenario authored for this exercise. Home Economics parts marked “N points @ M marks” mark only N points — the count is a cap. Surplus points earn nothing (barring the examiner’s discretionary “Excess point” credit), so effort past the count is wasted.',
+  grid: {
+    perPoint: [
+      { id: 'p1', label: 'Marked point 1', marks: 5 },
+      { id: 'p2', label: 'Marked point 2', marks: 5 },
+      { id: 'p3', label: 'Marked point 3', marks: 5 },
+      { id: 'p4', label: 'Marked point 4', marks: 5 },
+    ],
+    shorthand: '4 points @ 5 — only four are marked',
+    ruleNote:
+      'Only four points are scored, no matter how many are written. The two surplus points are unmarked even though they are strong; the fourth marked point was left thin and scored 0. The time spent on points five and six should have finished the fourth.',
+    cite: MS('p.13 (“4 points @ 5 marks”); p.4 (“Excess point awarded …” annotation)'),
+  },
+  scripts: [
+    {
+      id: 'he5-a',
+      label: 'The answer',
+      persona: 'Writes six, develops three',
+      attempts: [
+        {
+          id: 'he5-a-1',
+          text: 'Six points attempted: three fully developed, the fourth a thin one-liner, plus two further strong points beyond the four the question marks.',
+          key: { p1: 5, p2: 5, p3: 5, p4: 0 },
+          keyNote:
+            'Only four points are marked. Three developed points score 5 each; the fourth is a thin one-liner and scores 0 on the ladder; the two surplus points are unmarked however good they are. 15 of 20 — the effort spent on the two extras should have developed the fourth point to a 5.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Over-answers past the fixed point count, leaving a marked point thin while surplus points earn nothing.',
+        cite: MS('p.4'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-he5',
+    rule: 'Stop at the count and develop what you have.',
+    detail:
+      'Home Economics parts marked “N points @ M marks” score only N points — surplus points earn nothing. Write exactly the number asked and develop each fully; time spent on extra points is time stolen from the ones that count.',
+    cite: MS('p.13'),
+  },
+};
+
+// ─────────────── HE6 · Contradiction voids the mark ───────────────
+
+const HE6: ScaleSession = {
+  mode: 'scale',
+  id: 'he-contradiction',
+  subject: 'home-economics',
+  level: 'higher',
+  title: 'Contradict yourself and the mark is gone',
+  cue: 'Discuss / Explain',
+  question:
+    'A point is marked on the 5:3:0 ladder. The candidate makes a correct, well-developed point — then, a few lines later, states the opposite and contradicts it. The scheme’s general instructions say content “not … contradicted … the marks may not be awarded”. What does the point score?',
+  questionNote:
+    'Scenario authored for this exercise. The 2025 scheme’s general instructions (p.3) let the examiner withhold marks where an answer contradicts itself — a developed, correct point can collapse to 0.',
+  scale: {
+    name: 'Point · 5:3:0 with the contradiction rule',
+    levels: ladder([0, 3, 5]),
+    notes: [
+      'The point is graded 5:3:0 — 5 developed, 3 partial, 0 thin.',
+      'General instructions: content “must be correctly used in context and not contradicted”.',
+      'Where the answer contradicts itself, “the marks may not be awarded” — a correct, developed point can fall to 0.',
+    ],
+    cite: MS('p.3 (general instructions — contradiction voids the mark)'),
+  },
+  scripts: [
+    {
+      id: 'he6-a',
+      label: 'The answer',
+      persona: 'Right, then wrong',
+      work: [
+        'States a correct, fully developed point.',
+        'A few lines later, asserts the opposite and contradicts the earlier point.',
+      ],
+      keyLevelId: 'm0',
+      keyNote:
+        '0 — on its own the developed point was a clean 5, but the later contradiction triggers the general-instruction rule that contradicted content “may not be awarded”. Make a point once, correctly, and don’t walk it back later in the answer.',
+      embodies: {
+        behaviour: 'Makes a correct, developed point then contradicts it later, so the scheme withholds the mark.',
+        cite: MS('p.3'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-he6',
+    rule: 'Never contradict a point you’ve already made.',
+    detail:
+      'The 2025 scheme lets examiners withhold marks where an answer contradicts itself — a correct, developed point can collapse to 0 if a later line states the opposite. Make each point once, correctly, and don’t undo it.',
+    cite: MS('p.3'),
+  },
+};
+
+// ─────────────── HE7 · Label the diagram ───────────────
+
+const HE7: ScaleSession = {
+  mode: 'scale',
+  id: 'he-diagram-labels',
+  subject: 'home-economics',
+  level: 'higher',
+  title: 'An unlabelled diagram earns nothing',
+  cue: 'Describe (diagram accepted)',
+  question:
+    'A description point is worth 3 marks, and the scheme says “Accept labelled diagram” — a diagram can earn the point instead of prose. The candidate draws a neat, accurate diagram but writes no labels on it. What does it score?',
+  questionNote:
+    'Scenario authored for this exercise. The 2025 scheme credits diagrams only as a labelled alternative to prose (“Accept labelled diagram”, “Accept clear diagrams”); an unlabelled diagram satisfies no marking point and scores 0.',
+  scale: {
+    name: 'Diagram credit · labelled or nothing',
+    levels: [
+      { id: 'd0', label: '0 (unlabelled — no point satisfied)', annotation: '0', marks: 0 },
+      { id: 'd3', label: '3 (labelled — full description point)', annotation: '3', marks: 3 },
+    ],
+    notes: [
+      'A diagram is credited only as an accepted alternative to the prose point.',
+      'The scheme’s diagram credit is always conditional: “Accept labelled diagram” / “Accept clear diagrams”.',
+      'An unlabelled diagram maps to no marking point — it scores 0, however neat.',
+    ],
+    cite: MS('p.8 (“Accept labelled diagram”); p.12 (“Accept clear diagrams”)'),
+  },
+  scripts: [
+    {
+      id: 'he7-a',
+      label: 'Script A',
+      persona: 'Neat, but no labels',
+      work: ['Draws a neat, accurate diagram.', 'Adds no labels to any part of it.'],
+      keyLevelId: 'd0',
+      keyNote:
+        '0 — the diagram is credited only as a labelled alternative to the written point, and an unlabelled drawing satisfies no marking point. Neatness earns nothing; the labels are the marks.',
+      embodies: {
+        behaviour: 'Submits an accurate but unlabelled diagram, which maps to no marking point.',
+        cite: MS('p.8'),
+      },
+    },
+    {
+      id: 'he7-b',
+      label: 'Script B',
+      persona: 'Labels every part',
+      work: ['Draws the same diagram.', 'Labels each relevant part clearly.'],
+      keyLevelId: 'd3',
+      keyNote:
+        'Full 3 — the labelled diagram is the accepted alternative to the prose point, so it earns the description mark in full. The only difference from Script A is the labels.',
+    },
+  ],
+  takeaway: {
+    id: 'codex-he7',
+    rule: 'Label every diagram — the labels are the marks.',
+    detail:
+      'Home Economics credits a diagram only as a labelled alternative to prose (“Accept labelled diagram”). An accurate but unlabelled diagram satisfies no marking point and scores 0. Always label every relevant part.',
+    cite: MS('p.8'),
+  },
+};
+
 export const HOME_ECONOMICS_CHAIR: ChairSubject = {
   id: 'home-economics',
   label: 'Home Economics',
-  tagline: 'Develop your points, spread the headings, describe don’t just name.',
+  tagline: 'Develop your points, spread the headings, describe don’t just name — and never contradict yourself.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [HE1, HE2, HE3, HE4],
+  sessions: [HE1, HE2, HE3, HE4, HE5, HE6, HE7],
   sources: [
     { label: 'SEC LC Home Economics HL marking scheme 2025 (examiner-reports/home-economics/2025-marking-scheme)' },
     { label: 'SEC LC Home Economics OL marking scheme 2025 (examiner-reports/home-economics/2025-ol-marking-scheme)' },
   ],
   coverageNote:
-    'The point-ladder, per-heading and name-vs-describe sessions apply at both levels (OL ladders are even coarser — a half point often scores 0). The Ordinary session captures OL’s all-or-nothing Section A. Verified against the 2025 OL scheme.',
+    'The point-ladder, per-heading, name-vs-describe, fixed-count, contradiction and diagram-label sessions apply at both levels (OL ladders are even coarser — a half point often scores 0). The Ordinary session captures OL’s all-or-nothing Section A. The point-cap, contradiction and diagram sessions are verified against the 2025 Higher Level scheme; all conventions were cross-checked against the 2025 OL scheme.',
 };

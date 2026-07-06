@@ -215,15 +215,167 @@ const MU4: ScaleSession = {
   },
 };
 
+// ─────────────── MU5 · Melody band — directions & instrument ───────────────
+
+const MU5: ScaleSession = {
+  mode: 'scale',
+  id: 'mu-melody-directions',
+  subject: 'music',
+  level: 'common',
+  title: 'Good notes, no directions',
+  cue: 'Composing (melody)',
+  question: 'In the melody-composition question a candidate writes a melody with good shape, structure and direction — but inserts no phrasing or dynamics and names no instrument. The band grid lists “appropriate performing directions (phrasing and dynamics) inserted” and “suitable instrument chosen” inside every band; the lower bands read “no performing directions inserted / no instrument chosen”. Which band does an otherwise-good melody with neither fall into?',
+  questionNote:
+    'Scenario authored for this exercise. Section A melody composition is marked on one holistic band grid, but two mechanical criteria — performing directions (phrasing/dynamics) and a chosen instrument — sit inside every band descriptor. A melody that omits both can only match the lower descriptor bands, whose text reads “no performing directions inserted / no instrument chosen”. The marks shown illustrate that band effect.',
+  scale: {
+    name: 'Melody · band descriptors',
+    levels: [
+      { id: 'mu5-omit', label: 'No performing directions / no instrument', annotation: '≈10', marks: 10 },
+      { id: 'mu5-full', label: 'Good band · directions & instrument', annotation: '≈30', marks: 30 },
+    ],
+    notes: [
+      'Every band lists “Appropriate performing directions (phrasing and dynamics) inserted” and “Suitable instrument chosen”.',
+      'The upper-band descriptors REQUIRE both; a melody that omits them cannot match those bands.',
+      'At the foot of the grid the same lines flip to “No performing directions (phrasing and dynamics) inserted / No instrument chosen”.',
+      'Phrasing, dynamics and an instrument choice are marked descriptors here — not optional decoration on top of the notes.',
+    ],
+    cite: MS('p.3 (Section A melody band grid — performing-directions & instrument descriptors)'),
+  },
+  scripts: [
+    {
+      id: 'mu5-a',
+      label: 'The melody',
+      persona: 'Good shape, no markings',
+      work: ['A melody with good sense of shape, structure and direction.', 'No phrasing or dynamics inserted; no instrument named.'],
+      keyLevelId: 'mu5-omit',
+      keyNote:
+        'The notes may be good, but the top bands require “appropriate performing directions inserted” and “a suitable instrument chosen”. With neither, the script only matches the lower descriptor bands — the ones that literally read “no performing directions / no instrument chosen”. Two quick habits — mark in phrasing/dynamics and name an instrument — keep a good melody in the band its notes earned.',
+      embodies: {
+        behaviour: 'Submits a musically good melody with no performing directions and no instrument choice, dropping it into the lower descriptor bands.',
+        cite: MS('p.3'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-mu5',
+    rule: 'Phrasing, dynamics and instrument choice are marked, not optional.',
+    detail:
+      'In Section A the melody band grid lists “appropriate performing directions inserted” and “suitable instrument chosen” inside every band — the top bands require them and the bottom ones read “no performing directions / no instrument chosen”. Always mark in phrasing/dynamics and name an instrument, or a good melody sinks a band.',
+    cite: MS('p.3'),
+  },
+};
+
+// ─────────────── MU6 · Chord quality mark ───────────────
+
+const MU6: ScaleSession = {
+  mode: 'scale',
+  id: 'mu-chord-quality',
+  subject: 'music',
+  level: 'common',
+  title: 'Chords that “worked” aren’t top marks',
+  cue: 'Harmony (quality)',
+  question: 'A candidate’s harmonisation is legal throughout — every chord is correct and part of a good progression, so the per-chord marks are earned. But the choices are safe and unadventurous; better chords were available at several points. On top of the per-chord marks sits a separate “Quality of Chord Progressions” band (Poor 0–1 … Excellent 9–10). Where do chords that merely “worked” land on it?',
+  questionNote:
+    'Scenario authored for this exercise. Beyond the per-chord marks (MU3/MU4), Q5 carries a separate holistic “Quality of Chord Progressions” band. The scheme states explicitly that chords which “worked” but weren’t the best choices are docked here.',
+  scale: {
+    name: 'Harmony · chord-quality band',
+    levels: [
+      { id: 'mu6-poor', label: 'Poor chord progressions', annotation: '0–1', marks: 1 },
+      { id: 'mu6-good', label: 'Good chord progressions', annotation: '4–5', marks: 5 },
+      { id: 'mu6-exc', label: 'Excellent chord progressions', annotation: '9–10', marks: 10 },
+    ],
+    notes: [
+      '“While the candidate may have chosen chords that ‘worked’ at any point, there may have been better choices. If that is the case, this will be reflected in the chord quality mark.”',
+      'The quality band is SEPARATE from the per-chord marks — legal chords still earn those.',
+      'Safe, correct-but-unadventurous progressions sit mid-band, not at Excellent.',
+      'Top quality marks reward the best choice at each point, not merely a working one.',
+    ],
+    cite: MS('p.7 (Chord quality; Quality of Chord Progressions band)'),
+  },
+  scripts: [
+    {
+      id: 'mu6-a',
+      label: 'The harmonisation',
+      persona: 'Legal but unadventurous',
+      work: ['Every chord is correct and part of a good progression — the per-chord marks are earned.', 'But safer, weaker choices were made where stronger chords were available.'],
+      keyLevelId: 'mu6-good',
+      keyNote:
+        'The per-chord marks are safe, but the separate quality band caps chords that only “worked”: better choices were available, so it lands around Good, not Excellent. Legality earns the per-chord marks; musical judgement earns the quality band. Reach for the strongest chord at each point, not just a defensible one.',
+      embodies: {
+        behaviour: 'Writes legal but unadventurous chords that earn per-chord marks yet are docked on the separate chord-quality band.',
+        cite: MS('p.7'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-mu6',
+    rule: 'A legal chord and the best chord aren’t the same mark.',
+    detail:
+      'Q5 marks a separate “Quality of Chord Progressions” band on top of the per-chord marks: chords that “worked” but weren’t the best choices are docked there. Earn the per-chord marks with legal progressions, then chase the quality band by picking the strongest chord available at each point.',
+    cite: MS('p.7'),
+  },
+};
+
+// ─────────────── MU7 · 5B essay — detail moves the band ───────────────
+
+const MU7: ScaleSession = {
+  mode: 'scale',
+  id: 'mu-essay-detail',
+  subject: 'music',
+  level: 'common',
+  title: 'Correct, but lacking detail',
+  cue: 'Listening (essay 5B)',
+  question: 'The 10-mark extended essay (Q5B) is marked on its own band descriptor. A candidate’s answer is entirely correct and on-topic, but stays general — it names features of the chosen topic without the specific detail that fills out each point. The band reads “Excellent awareness and detailed knowledge … 10”, but “Good knowledge of topic, but lacking in detail 6–7”. Where does a correct-but-general essay land?',
+  questionNote:
+    'Scenario authored for this exercise. Unlike the per-item “partially correct = 1” cap (MU2), Q5B uses a seven-level essay band where DETAIL and specificity — not correctness alone — move you up the band.',
+  scale: {
+    name: 'Essay 5B · detail band',
+    levels: [
+      { id: 'mu7-general', label: 'Some general points · lacking detail', annotation: '4–5', marks: 5 },
+      { id: 'mu7-good', label: 'Good knowledge · lacking in detail', annotation: '6–7', marks: 7 },
+      { id: 'mu7-exc', label: 'Excellent · detailed knowledge', annotation: '10', marks: 10 },
+    ],
+    notes: [
+      'Top of the band: “Excellent awareness and detailed knowledge of musical features of topic 10.”',
+      'A correct answer that stays general is “Good knowledge of topic, but lacking in detail 6–7”.',
+      'Thinner still: “Some general points on topic, but lacking sufficient detail 4–5.”',
+      'Correctness gets you on the band; specific detail is what climbs it.',
+    ],
+    cite: MS('p.16 (Q5B essay band descriptor)'),
+  },
+  scripts: [
+    {
+      id: 'mu7-a',
+      label: 'The essay',
+      persona: 'Right, but general',
+      work: ['An entirely correct, on-topic answer.', 'Names features of the topic but without the specific detail that develops each one.'],
+      keyLevelId: 'mu7-good',
+      keyNote:
+        'Being correct isn’t the ceiling here — the band separates “detailed knowledge” (10) from “Good knowledge … but lacking in detail” (6–7). A right-but-general essay lands at 6–7, three marks short, purely for want of specifics. On the essay, back each named feature with a concrete musical detail — that’s what climbs the band.',
+      embodies: {
+        behaviour: 'Writes a correct but general essay that lands in the “lacking in detail” band rather than the detailed-knowledge top band.',
+        cite: MS('p.16'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-mu7',
+    rule: 'On the essay, detail — not just correctness — moves the band.',
+    detail:
+      'Q5B’s band tops out at “Excellent awareness and detailed knowledge” (10) and puts a correct-but-general answer at “Good knowledge … lacking in detail” (6–7). Support every named feature with specific musical detail; a right answer without detail leaves marks on the table.',
+    cite: MS('p.16'),
+  },
+};
+
 export const MUSIC_CHAIR: ChairSubject = {
   id: 'music',
   label: 'Music',
-  tagline: 'Two over-answering regimes, precise descriptions, chords in context.',
+  tagline: 'Two over-answering regimes, precise descriptions, chords in context, and what the band descriptors reward.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [MU1, MU2, MU3, MU4],
+  sessions: [MU1, MU2, MU3, MU4, MU5, MU6, MU7],
   sources: [
     { label: 'SEC LC Music HL marking scheme 2022, Deferred sitting (examiner-reports/music/2022-marking-scheme-deferred)' },
   ],
   coverageNote:
-    'These sessions teach the written/listening-paper conventions — the two over-answering regimes, the precision cap, chord-in-progression marking and the cadential 6/4 placement rule — which apply across levels. Verified against the 2022 Higher Level (Deferred) scheme, whose marking grammar matches the main sitting; the composing and performing components are practical and not covered here.',
+    'These sessions teach the marking grammar of the written papers — the two listening over-answering regimes, the precision cap and the 5B essay detail band; the harmony chord-in-progression, cadential 6/4, chord-quality rules; and the Section A melody band descriptors (performing directions & instrument choice). Verified against the 2022 Higher Level (Deferred) scheme, whose marking grammar matches the main sitting and is corroborated by the 2024 scheme. The practical performing component is not covered here.',
 };

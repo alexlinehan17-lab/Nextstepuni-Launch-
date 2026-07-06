@@ -230,16 +230,189 @@ const PS4: ScaleSession = {
   },
 };
 
+// ─────────────── PS5 · Name the name — it's a separate mark ───────────────
+
+const PS5: GridSession = {
+  mode: 'grid',
+  id: 'ps-name-explain',
+  subject: 'politics-society',
+  level: 'higher',
+  title: 'Name the name',
+  cue: 'Short data question',
+  question:
+    'A Section A short question is worth 5 marks: “Name the Key Thinker associated with The Capabilities Approach. Briefly explain this theory.” The scheme splits it 2 marks + 3 marks — the naming is a specific-fact tariff (Martha Nussbaum, 2M) and the explanation is banded (up to 3M). One answer explains the theory well but never names the thinker; another names the thinker but never explains it.',
+  questionNote:
+    'Scenario authored for this exercise. Section A two-part “name/identify + explain” items mark the named fact and the explanation on separate tariffs — modelled on the 2025 HL Q1(o) template.',
+  grid: {
+    perPoint: [
+      { id: 'ps5-name', label: 'Name the thinker (specific fact)', marks: 2 },
+      { id: 'ps5-explain', label: 'Explain the theory (banded)', marks: 3 },
+    ],
+    shorthand: 'Name 2M + Explain 3M',
+    ruleNote:
+      'The two parts are marked on separate scales. The naming mark is a specific fact — you earn it by writing “Martha Nussbaum”, not by describing the idea. Explaining the theory beautifully banks nothing from the naming tariff; naming without explaining caps at 2. Both parts, or you leave marks on the table.',
+    cite: MS('p.9 (Q1(o) — “Name: Martha Nussbaum 2M” + banded explanation 3M)'),
+  },
+  scripts: [
+    {
+      id: 'ps5-a',
+      label: 'The answers',
+      persona: 'Half the two-part question, each time',
+      attempts: [
+        {
+          id: 'ps5-a-1',
+          text: 'Sets out the Capabilities Approach clearly — people need real freedoms and capabilities (life, health, bodily integrity) to flourish — but never says who devised it.',
+          key: { 'ps5-name': 0, 'ps5-explain': 3 },
+          keyNote:
+            'The explanation is very good and banks the full 3M banded tariff. But the paper asked you to name the Key Thinker, and that is a separate 2-mark fact — Martha Nussbaum. Describing the theory does not earn the naming mark. No name, no 2 marks: 3 of 5.',
+        },
+        {
+          id: 'ps5-a-2',
+          text: 'Writes “Martha Nussbaum” and stops — no account of what the theory actually claims.',
+          key: { 'ps5-name': 2, 'ps5-explain': 0 },
+          keyNote:
+            'The name banks the 2M fact cleanly, but with no explanation the 3M banded scale is empty. 2 of 5. The name and the explanation sit on separate scales — you have to feed both.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Answers one tariff of a two-part “name + explain” item and forfeits the other.',
+        cite: MS('p.9'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-ps5',
+    rule: 'Name the name — it’s a separate mark.',
+    detail:
+      'When a Politics & Society question says “name the key thinker / social scientist”, the name is a specific fact worth its own marks — describing the theory won’t earn it, and naming without explaining leaves the banded marks empty. Answer both halves.',
+    cite: MS('p.9'),
+  },
+};
+
+// ─────────────── PS6 · Answer the number the question asks ───────────────
+
+const PS6: GridSession = {
+  mode: 'grid',
+  id: 'ps-two-items',
+  subject: 'politics-society',
+  level: 'higher',
+  title: 'Two means two',
+  cue: 'Short data question',
+  question:
+    'A 5-mark Section A question reads “Describe two functions of the President of Ireland (3M + 2M).” The two required functions are marked on an asymmetric split — the first worth 3M, the second worth 2M — and each is credited in its own right. A candidate describes one function superbly and never gives a second.',
+  questionNote:
+    'Scenario authored for this exercise. Section A “describe two …” items split the marks across the required number of points (here 3M + 2M) and mark each separately — modelled on the 2025 HL Q1(i) template.',
+  grid: {
+    perPoint: [
+      { id: 'ps6-first', label: 'First function (3M slot)', marks: 3 },
+      { id: 'ps6-second', label: 'Second function (2M slot)', marks: 2 },
+    ],
+    shorthand: '2 functions · 3M + 2M',
+    ruleNote:
+      'The scheme splits the marks 3 + 2 across the two required items and marks each in its own slot. One brilliant function can’t spill into the second slot — an unanswered second function is a straight 2-mark loss. The instruction “two” is a mark-bearing quantity, not a suggestion.',
+    cite: MS('p.7 (Q1(i) — “Describe two functions … (3M+2M)”, each banded separately)'),
+  },
+  scripts: [
+    {
+      id: 'ps6-a',
+      label: 'The answers',
+      persona: 'Counts to one, then to two',
+      attempts: [
+        {
+          id: 'ps6-a-1',
+          text: 'Describes one function — Supreme Commander of the Defence Forces — in rich, well-explained detail, and stops there.',
+          key: { 'ps6-first': 3, 'ps6-second': 0 },
+          keyNote:
+            'The single function is very good and banks the 3M first slot. But the second-function slot (2M) is marked separately and it’s empty — you can’t earn it by over-writing the first. 3 of 5. “Two” means two.',
+        },
+        {
+          id: 'ps6-a-2',
+          text: 'Gives two solid functions — Supreme Commander of the Defence Forces, and signing legislation into law or referring bills to the Supreme Court.',
+          key: { 'ps6-first': 3, 'ps6-second': 2 },
+          keyNote:
+            'Both slots filled: 3M + 2M = full marks. Note the second only needs to be solid, not spectacular — its ceiling is 2M — so once the first is strong, the fastest marks are in simply adding the second point.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Gives one item when two are asked — forfeiting the separately-marked second slot.',
+        cite: MS('p.7'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-ps6',
+    rule: 'Answer the number the question asks.',
+    detail:
+      'When a Politics & Society question says “two” and splits the marks (e.g. 3M + 2M), each item is marked in its own slot. A superb single answer caps at the first slot; the missing item is a clean loss. Give exactly as many points as the question names.',
+    cite: MS('p.7'),
+  },
+};
+
+// ─────────────── PS7 · A contradiction can void the marks ───────────────
+
+const PS7: ScaleSession = {
+  mode: 'scale',
+  id: 'ps-contradiction',
+  subject: 'politics-society',
+  level: 'higher',
+  title: 'Right, then wrong',
+  cue: 'Short data question',
+  question:
+    'A 5-mark Section A explanation opens with an accurate point that would sit in the top band — but midway it misuses the key term and states the opposite of its own definition. The scheme’s general instruction is explicit: “Words, expressions or phrases must be correctly used in context and not contradicted … the marks may not be awarded.” Where does it land?',
+  questionNote:
+    'Scenario authored for this exercise. Section A 5-mark items band Very good 4–5 / Good 2–3 / Fair 0–1; the scheme’s general marking instructions withhold marks where a term is misused or the answer contradicts itself.',
+  scale: {
+    name: 'Section A item · /5 (correct-use rule)',
+    levels: [
+      { id: 'ps7-forfeit', label: 'Contradicted — not credited', annotation: 'X', marks: 0 },
+      { id: 'ps7-fair', label: 'Fair (0–1)', annotation: 'F', marks: 1 },
+      { id: 'ps7-good', label: 'Good (2–3)', annotation: 'G', marks: 3 },
+      { id: 'ps7-vgood', label: 'Very good (4–5)', annotation: 'VG', marks: 5 },
+    ],
+    notes: [
+      'Section A 5-mark items band Very good 4–5, Good 2–3, Fair 0–1.',
+      'General rule: terms must be “correctly used in context and not contradicted”, or the marks may not be awarded.',
+      'A correct point later contradicted can’t be credited — the contradiction voids the very claim the marks rested on.',
+    ],
+    cite: MS('p.3 (correct-use / no-contradiction rule) + p.4 (5-mark bands)'),
+  },
+  scripts: [
+    {
+      id: 'ps7-a',
+      label: 'The answer',
+      persona: 'Right, then contradicts itself',
+      work: [
+        'Opens with an accurate explanation of the key term — top-band on its own.',
+        'Then misuses the same term and asserts the opposite of the definition it just gave.',
+      ],
+      keyLevelId: 'ps7-forfeit',
+      keyNote:
+        'Read in isolation the opening is very-good. But the scheme is explicit: where a term is misused or the answer contradicts itself, “the marks may not be awarded”. The contradiction cancels the very claim the marks rested on, so the credit falls away — accuracy you then undo isn’t accuracy. One contradicted key term can cost the whole item; say it once, correctly, and leave it consistent.',
+      embodies: {
+        behaviour: 'Makes a correct point then contradicts it — triggering the correct-use rule that withholds the marks.',
+        cite: MS('p.3'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-ps7',
+    rule: 'A contradiction can void the marks it rested on.',
+    detail:
+      'Politics & Society requires terms to be used correctly and consistently; where an answer misuses a term or contradicts itself, the scheme says the marks may not be awarded. Make the point once, correctly — don’t undo a good point two lines later.',
+    cite: MS('p.3'),
+  },
+};
+
 export const POLITICS_CHAIR: ChairSubject = {
   id: 'politics-society',
   label: 'Politics & Society',
-  tagline: 'Insight over relevance, argument over summary, cite your sources.',
+  tagline: 'Insight over relevance, argument over summary, answer the exact question asked.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [PS1, PS2, PS3, PS4],
+  sessions: [PS1, PS2, PS3, PS4, PS5, PS6, PS7],
   sources: [
     { label: 'SEC LC Politics & Society HL marking scheme 2025 (examiner-reports/politics-society/2025-marking-scheme)' },
     { label: 'SEC LC Politics & Society OL marking scheme 2025 (examiner-reports/politics-society/2025-ol-marking-scheme)' },
   ],
   coverageNote:
-    'The descriptor-band system applies at both levels, but the emphasis flips: HL rewards insight and evaluation; OL weights knowledge and structure heavily and makes analysis/evaluation the lightest criteria. The OL session is verified against the 2025 OL scheme.',
+    'The descriptor-band system applies at both levels, but the emphasis flips: HL rewards insight and evaluation; OL weights knowledge and structure heavily and makes analysis/evaluation the lightest criteria. Alongside the long-question grammar, the Section A short-question mechanics are covered too — the separate naming tariff on “name the key thinker” items, the asymmetric split on “describe two …”, and the correct-use rule that withholds marks for a self-contradiction. The OL session is verified against the 2025 OL scheme; all others against the 2025 HL scheme.',
 };

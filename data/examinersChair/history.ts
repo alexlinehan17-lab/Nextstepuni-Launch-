@@ -254,16 +254,192 @@ const HIS4: GridSession = {
   },
 };
 
+// ─────────────── His5 · RSR — how a source citation earns its marks ───────────────
+
+const HIS5: GridSession = {
+  mode: 'grid',
+  id: 'his-rsr-citation',
+  subject: 'history',
+  level: 'higher',
+  title: 'Cite it, or lose the marks',
+  cue: 'RSR Outline Plan',
+  question:
+    'In the Research Study Report Outline Plan, citing the sources is worth 6 of the 15 marks — three sources at 2 marks each, and each 2 splits into Author + title (1) and an extra validating detail like publisher or date (1). A candidate lists three items: (1) a full citation with author, title and year; (2) an author and title only; (3) the class textbook.',
+  questionNote:
+    'Scenario authored for this exercise. The RSR asks for three appropriate sources; the scheme awards each 2 marks as Author + title (1) + validating detail (1), and warns that standard school textbooks are not suitable sources.',
+  grid: {
+    perPoint: [
+      { id: 'authortitle', label: 'Author + title', marks: 1 },
+      { id: 'validating', label: 'Validating detail (e.g. publisher, date)', marks: 1 },
+    ],
+    shorthand: '3 sources @ (1 + 1) = max 6',
+    ruleNote:
+      'Each appropriate source is worth 2: one mark for author + title, one more for a validating detail (publisher, date). A standard school textbook is explicitly not a suitable source, so it earns nothing at all — not even the author + title mark.',
+    cite: MS('p.4 (RSR Outline Plan — citation of sources; textbook exclusion)'),
+  },
+  scripts: [
+    {
+      id: 'his5-a',
+      label: 'Script A',
+      persona: 'Two clean, one careless',
+      attempts: [
+        {
+          id: 'his5-a-1',
+          text: 'Source 1 — full citation: author, title, and year of publication.',
+          key: { authortitle: 1, validating: 1 },
+          keyNote: 'Author + title banks the first mark; the year is the validating detail that banks the second. The full 2.',
+        },
+        {
+          id: 'his5-a-2',
+          text: 'Source 2 — author and title given, but no publisher, date or other validating detail.',
+          key: { authortitle: 1, validating: 0 },
+          keyNote: 'Author + title is there — 1 mark. With no validating detail, the second mark is simply not earned. A publisher or date would have completed the pair.',
+        },
+        {
+          id: 'his5-a-3',
+          text: 'Source 3 — the standard class textbook.',
+          key: { authortitle: 0, validating: 0 },
+          keyNote: 'Nothing. The scheme states standard school textbooks are not suitable sources, so this is not an appropriate source to cite — no author + title mark, no validating mark. 3 of the 6 citation marks in total; a second real source in place of the textbook would have added up to 2 more.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Offers a standard school textbook as one of the three RSR sources, which the guidelines exclude.',
+        cite: MS('p.4'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-his5',
+    rule: 'A citation earns marks twice — name it, then validate it.',
+    detail:
+      'In the RSR each source is worth 2: author + title (1) and a validating detail such as publisher or date (1). Give both for all three sources — and never offer a standard school textbook, which the scheme rules out as a source entirely.',
+    cite: MS('p.4'),
+  },
+};
+
+// ─────────────── His6 · A conclusion that just repeats caps at 4 ───────────────
+
+const HIS6: ScaleSession = {
+  mode: 'scale',
+  id: 'his-summation-repetition',
+  subject: 'history',
+  level: 'higher',
+  title: 'A conclusion has to do work',
+  cue: 'Concluding paragraph',
+  question:
+    'A candidate ends a strong essay with a final paragraph — but it just restates the introduction and the points already made, almost word for word. As a Cumulative Mark paragraph (a paragraph can score up to 12), what is the most that closing paragraph can earn?',
+  questionNote:
+    'Scenario authored for this exercise. A concluding paragraph counts as a markable "paragraph equivalent" — but the scheme attaches a note: a summation that is mere repetition is capped at 4 marks.',
+  scale: {
+    name: 'Concluding paragraph · CM',
+    levels: [
+      { id: 'rep', label: 'Mere repetition (max 4)', annotation: '4', marks: 4 },
+      { id: 'fresh', label: 'Fresh summation — Good', annotation: '7', marks: 7 },
+      { id: 'analytic', label: 'Analytic summation — Excellent', annotation: '12', marks: 12 },
+    ],
+    notes: [
+      'A good concluding paragraph or summation counts as a full paragraph equivalent (up to 12).',
+      'But the scheme adds: “Summation which is mere repetition = max 4 marks.”',
+      'A conclusion that only re-states earlier material is capped — it has to add analysis, weigh the argument, or reach a judgement to score as a real paragraph.',
+    ],
+    cite: MS('p.13, p.11 (paragraph equivalent (vii); “Summation which is mere repetition = max 4 marks”)'),
+  },
+  scripts: [
+    {
+      id: 'his6-a',
+      label: 'The conclusion',
+      persona: 'Says it all again',
+      work: [
+        'Restates the introduction almost verbatim.',
+        'Lists the same points already made in the body.',
+        'Adds no new analysis, no weighing of the case, no judgement.',
+      ],
+      keyLevelId: 'rep',
+      keyNote:
+        'Capped at 4. However neat the wording, a summation that is mere repetition hits the scheme’s explicit ceiling — it is not treated as a fresh, markable paragraph. A conclusion that instead weighed the argument and reached a judgement could have scored as a Good or Excellent paragraph (up to 12). End by answering the question, not by echoing yourself.',
+      embodies: {
+        behaviour: 'Writes a concluding paragraph that only repeats earlier material — the mere-repetition cap applies.',
+        cite: MS('p.13'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-his6',
+    rule: 'A conclusion that only repeats is capped at 4.',
+    detail:
+      'A concluding paragraph counts as a full CM paragraph (up to 12) only if it does something new — weighs the case, reaches a judgement. A summation that merely restates earlier material is capped at 4. Use the conclusion to answer the question, not to echo the essay.',
+    cite: MS('p.13'),
+  },
+};
+
+// ─────────────── His7 · Evaluate the source, don’t retell it ───────────────
+
+const HIS7: ScaleSession = {
+  mode: 'scale',
+  id: 'his-source-value',
+  subject: 'history',
+  level: 'higher',
+  title: 'Value, not summary',
+  cue: 'DBQ Criticism (b)',
+  question:
+    'A DBQ Criticism question (worth 10) asks the candidate to “assess the value of this source” for a historian. The candidate accurately retells everything the document says — but never comments on who wrote it, when, its bias, its reliability, or what it leaves out. On the 0–10 sliding scale, which band does it earn?',
+  questionNote:
+    'Scenario authored for this exercise. The Criticism “value of the source” part is marked on a single sliding scale out of 10 (Excellent 9–10 … Weak 0–2). The scheme’s indicative points are all about evaluating the source — primary vs secondary, the author’s expertise, bias, and what the source omits — not about summarising its content.',
+  scale: {
+    name: 'Criticism (b) · value of the source · /10',
+    levels: [
+      { id: 'weak', label: 'Weak (0–2)', annotation: '1', marks: 1 },
+      { id: 'fair', label: 'Fair (3–4)', annotation: '4', marks: 4 },
+      { id: 'good', label: 'Good (5–6)', annotation: '6', marks: 6 },
+      { id: 'vgood', label: 'Very good (7–8)', annotation: '8', marks: 8 },
+      { id: 'excellent', label: 'Excellent (9–10)', annotation: '10', marks: 10 },
+    ],
+    notes: [
+      'Marked on one sliding scale out of 10: Excellent 9–10, Very good 7–8, Good 5–6, Fair 3–4, Weak 0–2.',
+      'The question is “value of the source” — the marks are for evaluation, not for retelling the content.',
+      'The scheme’s model points weigh the source type, the author’s reliability and bias, and what the source omits.',
+      'A pure content summary does not address the question asked, so it lands in the bottom band.',
+    ],
+    cite: MS('p.10 (Criticism (b), assess the value of the source; 0–10 sliding scale)'),
+  },
+  scripts: [
+    {
+      id: 'his7-a',
+      label: 'The answer',
+      persona: 'Retells, never evaluates',
+      work: [
+        'Accurately paraphrases everything the document states.',
+        'Never says who wrote it, when, or from what standpoint.',
+        'No comment on bias, reliability, or what the source leaves out.',
+      ],
+      keyLevelId: 'weak',
+      keyNote:
+        'Bottom band. The answer is accurate but it never does what the question asks — it summarises the source instead of evaluating its value. The marks here are for weighing the source: primary or secondary, the author’s expertise and bias, and the gaps it leaves. Even two lines — “this is a primary source, so… but the writer is biased because…” — would lift it several marks. Assess the source; don’t retell it.',
+      embodies: {
+        behaviour: 'Paraphrases a document’s content instead of evaluating it as a historical source.',
+        cite: MS('p.10'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-his7',
+    rule: 'A “value of the source” question pays for evaluation, not summary.',
+    detail:
+      'When the DBQ asks you to assess a source’s value, the marks are for weighing it — primary vs secondary, the author’s expertise and bias, and what it omits. Retelling the content, however accurately, answers a different question and bands low. Judge the source; don’t summarise it.',
+    cite: MS('p.10'),
+  },
+};
+
 export const HISTORY_CHAIR: ChairSubject = {
   id: 'history',
   label: 'History',
   tagline: 'CM and OE — why the story is only 60% of the mark.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [HIS1, HIS2, HIS3, HIS4],
+  sessions: [HIS1, HIS2, HIS3, HIS4, HIS5, HIS6, HIS7],
   sources: [
     { label: 'SEC LC History HL marking scheme 2025 (examiner-reports/history/2025-marking-scheme)' },
     { label: 'SEC LC History OL marking scheme 2025 (examiner-reports/history/2025-ol-marking-scheme)' },
   ],
   coverageNote:
-    'Higher sessions use the 60/40 CM:OE banded-paragraph system. Ordinary Level is marked differently — by counting Core Statements at a flat 5 marks each, with no essay — so the OL session is verified separately against the 2025 OL scheme. More OL sessions are being added.',
+    'Higher sessions span the whole paper: the 60/40 CM:OE banded-paragraph essay system, the two-element CM cap, the DBQ comparison and source-value rules, the concluding-paragraph repetition cap, and the RSR citation grid. Ordinary Level is marked differently — by counting Core Statements at a flat 5 marks each, with no essay — so the OL session is verified separately against the 2025 OL scheme. More OL sessions are being added.',
 };
