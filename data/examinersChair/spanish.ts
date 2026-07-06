@@ -169,12 +169,61 @@ const SP3: ScaleSession = {
   },
 };
 
+// ─────────────── Sp4 · The aural — one wrong extra cancels a right one ───────────────
+
+const SP4: ScaleSession = {
+  mode: 'scale',
+  id: 'es-aural-hedge',
+  subject: 'spanish',
+  level: 'common',
+  title: 'Don’t hedge the aural list',
+  cue: 'Aural',
+  question: 'A listening item asks for one detail. The candidate, unsure, writes two — one right, one wrong — hoping the extra covers them. In the aural vocabulary-list items, a wrong extra answer cancels a correct one. What does it score?',
+  questionNote:
+    'Scenario authored for this exercise. In the Spanish aural, hedging with an extra wrong answer in a list item cancels a correct one — the same trap as over-answering elsewhere.',
+  scale: {
+    name: 'Aural item · hedged',
+    levels: [
+      { id: 'm0', label: '0 (wrong extra cancels)', annotation: '0', marks: 0 },
+      { id: 'm3', label: '3 (single correct)', annotation: '3', marks: 3 },
+    ],
+    notes: [
+      'The item asks for one detail; the candidate offers two.',
+      'In the aural list items, a wrong extra answer cancels a correct one.',
+      'So the hedge voids the mark you had — commit to one answer.',
+    ],
+    cite: MS('p.5 (aural: wrong extra cancels a correct answer)'),
+  },
+  scripts: [
+    {
+      id: 'sp4-a',
+      label: 'The item',
+      persona: 'Hedges with a second guess',
+      work: ['Heard one detail clearly; unsure, writes it plus a second guess.', 'One is right, the other wrong.'],
+      keyLevelId: 'm0',
+      keyNote:
+        '0 — the wrong extra cancels the correct answer, so hedging turned a mark into nothing. The aural list items punish over-answering just like the written paper: write the single answer you’re most sure of. A confident single answer protects the mark a hedge throws away.',
+      embodies: {
+        behaviour: 'Hedges a single-answer aural item with an extra wrong answer, which cancels the correct one.',
+        cite: MS('p.5'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-es4',
+    rule: 'In the aural, one answer — don’t hedge the list.',
+    detail:
+      'Spanish aural list items cancel a correct answer with a wrong extra. When an item asks for one detail, write the single answer you’re surest of; a hedged second guess can void the mark.',
+    cite: MS('p.5'),
+  },
+};
+
 export const SPANISH_CHAIR: ChairSubject = {
   id: 'spanish',
   label: 'Spanish',
   tagline: 'No lifting, content-before-language, and the verb gate.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [SP1, SP2, SP3],
+  sessions: [SP1, SP2, SP3, SP4],
   sources: [
     { label: 'SEC LC Spanish HL marking scheme 2025 (examiner-reports/spanish/2025-marking-scheme)' },
   ],

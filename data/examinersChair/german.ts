@@ -166,12 +166,61 @@ const GE3: ScaleSession = {
   },
 };
 
+// ─────────────── Ge4 · The aural — check the language per section ───────────────
+
+const GE4: ScaleSession = {
+  mode: 'scale',
+  id: 'de-aural-language',
+  subject: 'german',
+  level: 'common',
+  title: 'The aural switches languages on you',
+  cue: 'Aural',
+  question: 'In the German listening test, the required answer language changes by section — one section is answered in English (the interview), another requires German (a phone-message note). A candidate answers the German-required section in English, out of habit. What happens?',
+  questionNote:
+    'Scenario authored for this exercise. The German aural requires answers in different languages by section, and a section answered in the wrong language is halved.',
+  scale: {
+    name: 'Aural · language per section',
+    levels: [
+      { id: 'half', label: 'Half marks (wrong language)', annotation: '½', marks: 4 },
+      { id: 'full', label: 'Full (right language)', annotation: '✓', marks: 8 },
+    ],
+    notes: [
+      'The aural sets the answer language per section — some English, some German.',
+      'A whole section answered in the wrong language is halved.',
+      'Read the instruction at the top of each section before you write.',
+    ],
+    cite: MS('p.[23] (aural: language flips per section; half-marks penalty)'),
+  },
+  scripts: [
+    {
+      id: 'ge4-a',
+      label: 'The section',
+      persona: 'Answers in English out of habit',
+      work: ['A section that required answers in German.', 'Answered in English by habit — the previous section was English.'],
+      keyLevelId: 'half',
+      keyNote:
+        'Halved — the section required German and got English. The German aural deliberately switches the required language between sections, so a habit carried over from the last section costs half the marks. Check the instruction line at the start of each section and answer in the language it names.',
+      embodies: {
+        behaviour: 'Answers an aural section in the wrong language, where the requirement flips per section — halved.',
+        cite: MS('p.[23]'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-de4',
+    rule: 'The aural sets the language per section — check each one.',
+    detail:
+      'The German listening test requires different answer languages in different sections; a section in the wrong language is halved. Read the instruction at the top of every section and answer in the language it specifies.',
+    cite: MS('p.[23]'),
+  },
+};
+
 export const GERMAN_CHAIR: ChairSubject = {
   id: 'german',
   label: 'German',
   tagline: 'The length gate, half-mark lifts and tense-critical answers.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [GE1, GE2, GE3],
+  sessions: [GE1, GE2, GE3, GE4],
   sources: [
     { label: 'SEC LC German HL marking scheme 2025 (examiner-reports/german/2025-marking-scheme)' },
   ],
