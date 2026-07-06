@@ -83,6 +83,29 @@ const SCALE_15D_HL: ScaleLevel[] = [
   { id: 'high', label: 'High partial credit', annotation: 'H', marks: 8 },
   { id: 'full', label: 'Full credit', annotation: '✓', marks: 15 },
 ];
+// 2025 Foundation Level scales, verified from the Foundation scale table
+// (2025 Foundation marking scheme p.[4]): 10C "0, 4, 6, 10" and 10D
+// "0, 4, 5, 7, 10". Full Credit −1 = 9 on a 10-mark scale (p.[5]).
+const SCALE_F10C: ScaleLevel[] = [
+  { id: 'none', label: 'No credit', annotation: '✗', marks: 0 },
+  { id: 'low', label: 'Low partial credit', annotation: 'L', marks: 4 },
+  { id: 'high', label: 'High partial credit', annotation: 'H', marks: 6 },
+  { id: 'full', label: 'Full credit', annotation: '✓', marks: 10 },
+];
+const SCALE_F10C_STAR: ScaleLevel[] = [
+  SCALE_F10C[0],
+  SCALE_F10C[1],
+  SCALE_F10C[2],
+  { id: 'fullminus', label: 'Full credit −1', annotation: 'F✱', marks: 9 },
+  SCALE_F10C[3],
+];
+const SCALE_F10D: ScaleLevel[] = [
+  { id: 'none', label: 'No credit', annotation: '✗', marks: 0 },
+  { id: 'low', label: 'Low partial credit', annotation: 'L', marks: 4 },
+  { id: 'mid', label: 'Mid partial credit', annotation: 'M', marks: 5 },
+  { id: 'high', label: 'High partial credit', annotation: 'H', marks: 7 },
+  { id: 'full', label: 'Full credit', annotation: '✓', marks: 10 },
+];
 
 // ─────────────────────────── M1 · The ladder ───────────────────────────
 
@@ -1173,12 +1196,156 @@ const M15: ScaleSession = {
   },
 };
 
+// ─────────────── M16 · Foundation — right figures, wrong person ───────────────
+
+const M16: ScaleSession = {
+  mode: 'scale',
+  id: 'maths-fl-wrong-person',
+  subject: 'maths',
+  level: 'foundation',
+  title: 'Right figures, wrong person',
+  cue: 'Find',
+  question:
+    'Three friends — Tom, Jack and Michael — share the cost of a meal, spending €200 in total. Jack spent €3 more than Tom, and Michael spent €8 more than Tom. How much did each person spend? (10 marks.)',
+  questionNote:
+    'Question authored for this exercise; the 10C ladder (0, 4, 6, 10) and the Full Credit −1 “correct figures assigned to the incorrect person” note are the real 2025 Foundation scheme rules for the shared-spending question Q2(c).',
+  scale: {
+    name: '10C · Full credit −1',
+    levels: SCALE_F10C_STAR,
+    notes: [
+      'Model: Jack and Michael together spent €11 more than Tom, so €200 − €11 = €189 is shared equally: €189 ÷ 3 = €63. Then Tom €63, Jack €66, Michael €71.',
+      'Low partial credit: work of merit — indicates the €11, or adds the 3 or the 8.',
+      'High partial credit: finds €189, or finds €63.',
+      'Full Credit −1: the correct figures, but assigned to the wrong people.',
+      'Full credit: €63, €66 and €71 assigned to Tom, Jack and Michael respectively.',
+    ],
+    cite: MSFL('p.[8] (Q2(c) 10C ladder and the “correct figures, incorrect person” Full Credit −1)'),
+  },
+  scripts: [
+    {
+      id: 'm16-a',
+      label: 'Script A',
+      persona: 'The €11 and no more',
+      work: ['Jack is €3 more, Michael is €8 more.', '3 + 8 = 11'],
+      keyLevelId: 'low',
+      keyNote:
+        'Spotting that Jack and Michael together account for €11 above Tom is the work-of-merit step — low partial credit, 4/10. It is the right first move, but nothing is shared out yet, so it cannot climb higher.',
+    },
+    {
+      id: 'm16-b',
+      label: 'Script B',
+      persona: 'Shares it out, stops at €63',
+      work: ['200 − 11 = 189', '189 ÷ 3 = 63'],
+      keyLevelId: 'high',
+      keyNote:
+        'Reaching €63 — the equal amount before the extras are added back — is the “finds €63” step, high partial credit, 6/10. The three individual amounts are never written, so the last four marks stay on the table.',
+    },
+    {
+      id: 'm16-border',
+      label: 'Script C',
+      persona: 'Right numbers, wrong labels',
+      work: ['200 − 11 = 189', '189 ÷ 3 = 63', 'Tom = €71, Jack = €66, Michael = €63'],
+      keyLevelId: 'fullminus',
+      keyNote:
+        '9 of 10 — Full Credit −1, and the hardest call on this question. Every figure is correct — €63, €66, €71 — and the arithmetic is complete; only the names are swapped, with €71 put on Tom instead of Michael. The scheme treats “correct figures assigned to the incorrect person” as a one-mark slip, not a wrong answer, so it sits one rung below full, not down at high partial. Don’t mark it full (the labels are wrong) and don’t drop it to 6 (the maths is entirely right).',
+    },
+    {
+      id: 'm16-d',
+      label: 'Script D',
+      persona: 'All the way home',
+      work: ['200 − 11 = 189', '189 ÷ 3 = 63', 'Tom = €63', 'Jack = 63 + 3 = €66', 'Michael = 63 + 8 = €71'],
+      keyLevelId: 'full',
+      keyNote:
+        'Full marks, 10/10. The €63 base is found and the €3 and €8 are added back to the right people, so every amount is correct and correctly labelled.',
+    },
+  ],
+  takeaway: {
+    id: 'codex-m16',
+    rule: 'Right figures on the wrong name is Full Credit −1, not a wrong answer.',
+    detail:
+      'At Foundation Level, when the arithmetic is complete and every value is correct but the values are matched to the wrong people, the scheme awards Full Credit −1 (9 on a 10-mark item) — a one-mark labelling slip, not a drop to high partial. Label the last line to the right person and protect that mark.',
+    cite: MSFL('p.[8]'),
+  },
+};
+
+// ─────────────── M17 · Foundation — one part right on a two-part item ───────────────
+
+const M17: ScaleSession = {
+  mode: 'scale',
+  id: 'maths-fl-counting',
+  subject: 'maths',
+  level: 'foundation',
+  title: 'One part right on a two-part item',
+  cue: 'Find',
+  question:
+    'A café menu has 2 starters, 4 main courses and 3 desserts. (ii) How many different meals of one starter, one main and one dessert are possible? (iii) On the set-lunch deal the starter is fixed (1 choice), there are 4 mains and 2 desserts — how many set-lunch meals are possible? (10 marks.)',
+  questionNote:
+    'Question authored for this exercise; the two-part 10D ladder (0, 4, 5, 7, 10) and its “one part correct = mid, one part correct + work of merit in the other = high” rule are the real 2025 Foundation scheme rules for the counting question Q3(a).',
+  scale: {
+    name: '10D (two-part)',
+    levels: SCALE_F10D,
+    notes: [
+      'Model: (ii) 2 × 4 × 3 = 24.  (iii) 1 × 4 × 2 = 8.',
+      'Low partial credit: work of merit in either part — some relevant multiplication.',
+      'Mid partial credit: one part fully correct (or work of merit in both parts).',
+      'High partial credit: one part fully correct AND work of merit in the other part.',
+      'Full credit: both parts correct — 24 and 8.',
+    ],
+    cite: MSFL('p.[9] (Q3(a) two-part 10D ladder: 0, 4, 5, 7, 10)'),
+  },
+  scripts: [
+    {
+      id: 'm17-a',
+      label: 'Script A',
+      persona: 'Multiplies something',
+      work: ['(ii) 2 × 4 = 8', '(iii) 4 + 2 = 6'],
+      keyLevelId: 'low',
+      keyNote:
+        'A relevant multiplication is started in (ii) but neither part is finished correctly — the dessert factor is dropped in (ii), and (iii) is added rather than multiplied. Work of merit only: low partial credit, 4/10.',
+    },
+    {
+      id: 'm17-border',
+      label: 'Script B',
+      persona: 'One part nailed, one left blank',
+      work: ['(ii) 2 × 4 × 3 = 24', '(iii) —'],
+      keyLevelId: 'mid',
+      keyNote:
+        '5 of 10 — mid partial credit, and the classic two-part judgement call. Part (ii) is fully correct at 24, but part (iii) is blank, so there is no work of merit in the second part. “One part correct” is the mid rung; it only lifts to high (7) if the other part also shows some relevant working. One complete part and one blank is exactly mid — don’t round it up for the strong (ii), and don’t drop it for the empty (iii).',
+    },
+    {
+      id: 'm17-c',
+      label: 'Script C',
+      persona: 'One right, one attempted',
+      work: ['(ii) 2 × 4 × 3 = 24', '(iii) 1 × 4 = 4'],
+      keyLevelId: 'high',
+      keyNote:
+        'Part (ii) is fully correct and part (iii) shows a relevant multiplication (the fixed starter times the mains) even though the dessert factor is missed. One part correct plus work of merit in the other is the high rung: 7/10.',
+    },
+    {
+      id: 'm17-d',
+      label: 'Script D',
+      persona: 'Both parts home',
+      work: ['(ii) 2 × 4 × 3 = 24', '(iii) 1 × 4 × 2 = 8'],
+      keyLevelId: 'full',
+      keyNote:
+        'Both parts correct — 24 and 8 — full credit, 10/10.',
+    },
+  ],
+  takeaway: {
+    id: 'codex-m17',
+    rule: 'On a two-part item, one complete part is mid; add working in the other to reach high.',
+    detail:
+      'Foundation two-part questions use a D-scale (0, 4, 5, 7, 10). One part fully correct is mid partial credit; to climb to high you also need work of merit in the second part. A blank second part caps you at mid however strong the first — always put down a relevant line for the other part.',
+    cite: MSFL('p.[9]'),
+  },
+};
+
 export const MATHS_CHAIR: ChairSubject = {
   id: 'maths',
   label: 'Mathematics',
   tagline: 'Scales, steps and stars — how maths scripts are really graded.',
   offeredLevels: ['higher', 'ordinary', 'foundation'],
-  sessions: [M1, M2, M3, M4, M5, M6, M7, M8, M9, M10, M11, M12, M13, M14, M15],
+  sessions: [M1, M2, M3, M4, M5, M6, M7, M8, M9, M10, M11, M12, M13, M14, M15, M16, M17],
   sources: [
     { label: 'SEC LC Mathematics OL marking scheme 2023, Paper 2 portion (examiner-reports/maths/2023-marking-scheme-ol-p2)' },
     { label: 'SEC LC Mathematics HL marking scheme 2024, Papers 1 & 2 (examiner-reports/maths/2024-hl-marking-scheme)' },
@@ -1186,5 +1353,5 @@ export const MATHS_CHAIR: ChairSubject = {
     { label: 'Chief Examiner’s Report, Mathematics 2015 (examiner-reports/maths/2015-chief-examiner)' },
   ],
   coverageNote:
-    'Maths is marked on the same scale system — A–D scales, the partial-credit ladders, work-of-merit and Full Credit −1 — at Higher, Ordinary and Foundation level, so these sessions teach the system that applies at every level. Five shared-convention sessions (the ladder, counting steps, saying the conclusion, the one-mark star and own-work carry-forward) are pitched around Ordinary Level; the Higher Level sessions (the oversimplify ceiling, the named-method gate, the MPC ceiling, the ± rule, the impostor-root rule, the part-counted graph and the two-slip step gate) are drawn from the 2024 HL scheme; two Ordinary Level sessions (penalty scope and the impossible-answer gate) from the 2023 OL scheme; and one Foundation session from the 2025 scheme.',
+    'Maths is marked on the same scale system — A–D scales, the partial-credit ladders, work-of-merit and Full Credit −1 — at Higher, Ordinary and Foundation level, so these sessions teach the system that applies at every level. Five shared-convention sessions (the ladder, counting steps, saying the conclusion, the one-mark star and own-work carry-forward) are pitched around Ordinary Level; the Higher Level sessions (the oversimplify ceiling, the named-method gate, the MPC ceiling, the ± rule, the impostor-root rule, the part-counted graph and the two-slip step gate) are drawn from the 2024 HL scheme; two Ordinary Level sessions (penalty scope and the impossible-answer gate) from the 2023 OL scheme; and three Foundation Level sessions (right answer / wrong detail, right figures / wrong person, and the two-part D-scale) from the 2025 Foundation scheme.',
 };

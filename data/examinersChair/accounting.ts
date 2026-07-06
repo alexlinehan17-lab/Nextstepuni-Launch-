@@ -175,6 +175,15 @@ const AC3: ScaleSession = {
         cite: MS('p.34'),
       },
     },
+    {
+      id: 'ac3-border',
+      label: 'The non-transfer',
+      persona: 'Computes the figure but never carries it forward',
+      work: ['Net profit figure is calculated and left in the first statement.', 'The next statement is prepared, but the profit line is left blank — the figure is never transferred in.'],
+      keyLevelId: 'm2',
+      keyNote:
+        'Half marks — not zero, not full — and this is the rung careless markers get wrong in both directions. Own-figure marking pays half for a non-transfer: the figure was never carried into the next statement, so the transfer marks weren’t earned, but simply leaving it out is treated more gently than transferring a wrong number. A marker skimming for a figure on the line is tempted to award nothing; one crediting the correct subtotal above is tempted to wave the transfer through. The scheme pins it at half. Carry the figure through and it would have been the full four.',
+    },
   ],
   takeaway: {
     id: 'codex-acc3',
@@ -224,6 +233,15 @@ const AC4: ScaleSession = {
         behaviour: 'Skips flat-mark theory parts to chase computational marks — forfeiting the easiest marks.',
         cite: MSOL('p.13'),
       },
+    },
+    {
+      id: 'ac4-border',
+      label: 'The half-answer',
+      persona: 'Explains the ratio, skips the benefits',
+      work: ['Explains the ratio in full for its flat 10 marks.', 'Runs low on time and leaves the two cash-budget benefits (5 each) blank.'],
+      keyLevelId: 'm10',
+      keyNote:
+        'Ten marks banked, ten left behind — exactly the middle. The ratio explanation is a clean flat 10 and it is secure; but the two cash-budget benefits were never written, so those marks are simply gone. A marker glancing at a well-answered theory block is tempted to credit the lot; one seeing an unfinished section is tempted to dock the ratio too. Each theory part stands alone: the ratio keeps its 10, the missing benefits score nothing. Answer every written part, not just the first that comes to mind.',
     },
   ],
   takeaway: {
@@ -444,6 +462,15 @@ const AC8: ScaleSession = {
         cite: MSOL('p.19'),
       },
     },
+    {
+      id: 'ac8-border',
+      label: 'The under-answerer',
+      persona: 'Gives one benefit when two are asked',
+      work: ['The part asks for TWO benefits of a cash budget.', 'Writes one clearly-correct benefit, then leaves the second blank.'],
+      keyLevelId: 'm3',
+      keyNote:
+        'Three of the five — one benefit answered well, the second never attempted. This is the rung the scheme fixes precisely. A generous marker reads the single strong point as “clearly knows it” and is tempted to award the whole block; a strict one wants both points before crediting anything. Neither is right: the part is marked per point, so one benefit earns its 3 and the absent second earns nothing. A good single point is not the two the question asked for — give the number required, then move on.',
+    },
   ],
   takeaway: {
     id: 'codex-acc8',
@@ -560,6 +587,15 @@ const AC10: ScaleSession = {
         behaviour: 'Leaves the Notes to the Accounts blank — forfeiting a large, self-contained block of marks.',
         cite: MS('p.11'),
       },
+    },
+    {
+      id: 'ac10-border',
+      label: 'The part-finished notes',
+      persona: 'Does the big note, skips the rest',
+      work: ['Completes the Tangible Fixed Assets note in full [7].', 'Leaves the Accounting Policy [4], Operating Profit [4] and Dividends [2] notes blank.'],
+      keyLevelId: 'm7',
+      keyNote:
+        'Seven marks — the Tangible Fixed Assets note, done properly, is worth exactly that and it is banked in full. But the other three notes are untouched, so ten more marks are still on the table. The middle rung is real because the notes are separately marked: a part-done notes section neither collapses to zero nor rounds up to the full block. A marker who sees a strong TFA note may assume the section is “done”; the scheme credits only what is written. Attempt all four — even the two-mark Dividends note is quick, guaranteed marks.',
     },
   ],
   takeaway: {
@@ -745,6 +781,15 @@ const AC13: ScaleSession = {
         cite: MS('p.30'),
       },
     },
+    {
+      id: 'ac13-border',
+      label: 'The half-written tail',
+      persona: 'Defines the term, omits the alternatives',
+      work: ['Defines FIFO correctly.', 'Does not name or outline the alternative methods the same part also asks for.'],
+      keyLevelId: 'm2',
+      keyNote:
+        'Two of the six — the definition is right and earns its marks, but the part also asks for the alternative methods and none are given. The scheme fixes this at the middle: the definition stands on its own, while the alternatives are a separate, unwritten chunk of the same allocation. A hurried marker credits the whole part for a confident opening line, or skips a “half-done” answer entirely; here the definition banks its 2 and the missing alternatives cost the other 4. Finish the part — naming the alternatives is as rote as the definition itself.',
+    },
   ],
   takeaway: {
     id: 'codex-acc13',
@@ -795,6 +840,15 @@ const AC14: ScaleSession = {
         behaviour: 'Uses a scheme-accepted alternative method and reaches the correct alternative target — scoring full marks.',
         cite: MS('p.18'),
       },
+    },
+    {
+      id: 'ac14-border',
+      label: 'The slipped alternative',
+      persona: 'Right method, wrong final figure',
+      work: ['Uses Debt to Equity — a method the scheme accepts.', 'Slips in the arithmetic and reports a figure other than the 36.89% target.'],
+      keyLevelId: 'm3',
+      keyNote:
+        'The middle rung, and the easiest to mis-mark. The method is legitimate — Debt to Equity is fully accepted — so the workmarks for the correct approach are earned; but the final figure is wrong, so the marks that ride on landing 36.89% are not. A marker who spots an accepted method is tempted to award full; one who spots the wrong final number is tempted to award nothing. The scheme splits it: right method, wrong target. A valid alternative only pays in full when it actually reaches the correct figure.',
     },
   ],
   takeaway: {

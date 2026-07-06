@@ -19,15 +19,10 @@
  * Claim-by-claim record: compliance/evidence/examiners-chair.md.
  */
 
-import { type ChairSubject, type GridSession, type ScaleSession, type ScaleLevel } from './types';
+import { type ChairSubject, type GridSession, type ScaleSession } from './types';
 
 const MS = (p: string) => ({ label: `SEC Chemistry HL marking scheme 2024, ${p}` });
 const CER = (p: string) => ({ label: `Chief Examiner's Report, Chemistry 2013, ${p}` });
-
-const two = (a: number, b: number): ScaleLevel[] => [
-  { id: `m${a}`, label: `${a} marks`, annotation: `${a}`, marks: a },
-  { id: `m${b}`, label: `${b} marks`, annotation: `${b}`, marks: b },
-];
 
 // ─────────────── Ch1 · Exact-term demands ───────────────
 
@@ -79,6 +74,30 @@ const CH1: GridSession = {
         },
       ],
     },
+    {
+      id: 'ch1-border',
+      label: 'Script C',
+      persona: 'One precise term, one everyday',
+      attempts: [
+        {
+          id: 'ch1-border-1',
+          text: 'Effervescence is observed…',
+          key: { obs: 3 },
+          keyNote: 'The precise term for the gas evolved — “effervescence”, not “bubbles”. This observation earns its full 3 marks: exactly the scientific word the scheme wants.',
+        },
+        {
+          id: 'ch1-border-2',
+          text: '…and the solution goes clear.',
+          key: { obs: 0 },
+          keyNote:
+            '“Clear” is the explicitly-rejected everyday word for the second observation — a solution can be clear and still coloured, so it doesn’t report what was seen. This observation scores 0. One precise term, one everyday one: the script lands on exactly 3 of the 6, and it sits on the boundary — a marker swayed by the confident “effervescence” might round it up to full, one snagged by the rejected “clear” might round it down to nothing, but the scheme pins it at the mid mark.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Gets one exact term right (“effervescence”) but uses the rejected everyday word (“clear”) for the other — the documented near-synonym error.',
+        cite: CER('p.24'),
+      },
+    },
   ],
   takeaway: {
     id: 'codex-chem1',
@@ -103,7 +122,11 @@ const CH2: ScaleSession = {
     'Scenario authored for this exercise. The scheme deducts one mark for an arithmetic slip in the Mr only if the atomic-mass addition is shown; if it isn’t, the full Mr marks are lost.',
   scale: {
     name: 'Mr with a slip',
-    levels: two(0, 3),
+    levels: [
+      { id: 'm0', label: '0 (bare wrong Mr, no addition shown)', annotation: '0', marks: 0 },
+      { id: 'm2', label: '2 (addition shown, one-mark slip)', annotation: '2', marks: 2 },
+      { id: 'm3', label: '3 (Mr correct)', annotation: '3', marks: 3 },
+    ],
     notes: [
       'General rule: an arithmetic slip is normally a one-mark deduction.',
       'For Mr specifically: the slip is only −1 IF the atomic-mass addition is shown.',
@@ -122,6 +145,19 @@ const CH2: ScaleSession = {
         'Full Mr marks lost — because the addition wasn’t shown, the examiner can’t see a one-mark slip; they see an unsupported wrong number. Had the candidate written “12 + (2 × 16) + …”, the same error would have cost just one mark. Always show the atomic-mass addition.',
       embodies: {
         behaviour: 'Writes a bare wrong Mr with no addition shown — forfeiting the protection of the one-mark slip rule.',
+        cite: MS('p.3'),
+      },
+    },
+    {
+      id: 'ch2-border',
+      label: 'The answer',
+      persona: 'Addition shown, one slip',
+      work: ['Mr = 12 + (2 × 16) + 2 = 44  (the atomic-mass addition is written out in full; the sum should be 46 — a single arithmetic slip).'],
+      keyLevelId: 'm2',
+      keyNote:
+        'The atomic-mass addition is on the page, so the examiner can see exactly where the arithmetic went astray — that turns the error into a one-mark slip rather than a lost answer. 2 of 3. It sits precisely on the middle rung: the working is right enough to protect two marks, wrong enough to cost one. A marker who reads “46 was intended” could be tempted up to full, and one who sees “44” could be tempted down to zero — but the shown addition pins it at 2, the exact mark the bare-number answer above forfeited.',
+      embodies: {
+        behaviour: 'Shows the atomic-mass addition but slips in the sum — the one-mark-slip case the Mr rule protects.',
         cite: MS('p.3'),
       },
     },
@@ -958,6 +994,30 @@ const CH15: GridSession = {
           keyNote: 'The name the “Name …” cue asked for — and the one form the scheme accepts here. 3 marks.',
         },
       ],
+    },
+    {
+      id: 'ch15-border',
+      label: 'Script C',
+      persona: 'Names one, formula-s the other',
+      attempts: [
+        {
+          id: 'ch15-border-1',
+          text: '“Water.”',
+          key: { name: 3 },
+          keyNote: 'The compound written as its name — the form a “Name …” cue asks for, and here nothing bars it. This identification earns its full 3 marks.',
+        },
+        {
+          id: 'ch15-border-2',
+          text: '“HCl.”',
+          key: { name: 0 },
+          keyNote:
+            'For the second eliminated compound the candidate reverts to the formula — and this is where the scheme prints “[do not accept HCl]”. A “Name …” cue plus that note is the “unless otherwise indicated” exception to the name-or-formula rule, so the formula scores 0. One named, one formula-d: 3 of the 6, and the script balances on the edge — the marker who credits the chemically-correct “HCl” pushes it up to full, the one who reads a stray formula as spoiling the answer pushes it down to zero, but the scheme fixes it at the middle.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Names one eliminated compound but gives the other as a formula the scheme explicitly refuses — the “unless otherwise indicated” limit on the name-or-formula rule.',
+        cite: MS('p.14'),
+      },
     },
   ],
   takeaway: {

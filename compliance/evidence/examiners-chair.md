@@ -625,3 +625,42 @@ low-enrolment subject is added on the same protocol when a verifiable scheme is 
 none is asserted without one. Next refinements (not blocking): level-specific
 (OL/Foundation) worked examples for subjects currently taught via shared `common`
 conventions, and Chief Examiner's Reports for subjects where one becomes retrievable.
+
+## Borderline scripts + Maths Foundation depth (2026-07-06)
+
+Two grounded additions this change:
+
+**Maths Foundation Level (2 new sessions).** `maths-fl-wrong-person` and
+`maths-fl-counting`, verified line-by-line against the filed 2025 Foundation
+marking scheme (`examiner-reports/maths/2025-foundation-marking-scheme`):
+the Foundation scale table (p.[4]: 10C = 0,4,6,10; 10D = 0,4,5,7,10), the
+Full Credit −1 rule (p.[5]), the Q2(c) "correct figures assigned to the
+incorrect person" Full Credit −1 (p.[8]), and the Q3(a) two-part 10D ladder
+(p.[9]). Maths now carries three Foundation sessions.
+
+**Borderline ("hard-call") scripts.** Purpose-built scripts that sit on a
+genuine mid-band placement, so the tool's borderline-drill mode is populated
+with the hardest calls (a script the scheme pins to the middle rung that a
+careless marker would push up or down). Added only where the mid-band mark is
+grounded:
+- on a **pre-existing** scale rung, or
+- on a rung **directly derivable from a rule already cited in that session**
+  and verified against the filed scheme — e.g. Maths/Applied-Maths partial
+  ladders and the slip(−1)/blunder(−3)/unnamed-algorithm(−3) tariff
+  (Applied-Maths 2023 scheme, l.73–76, 376), Physics unit/omission −1
+  (2023 scheme, l.65–66), Chemistry Mr −1, Geography per-SRP accrual (2 marks
+  per SRP, l.2176/2179) with the graded 4/2/0 and "0 marks" rules
+  (l.337/560/601/2089/2138).
+
+**Integrity safeguard (worked as intended).** A parallel authoring pass
+proposed borderline scripts across all subjects. An audit of every added scale
+level against the filed schemes found that, for genuinely **binary** (2-level,
+all-or-nothing) marking rules, some proposals had **invented an intermediate
+mark value** the scheme does not award (e.g. a holistic English/Classical band
+between two defined outcomes). Per the accreditation rule ("if a claim can't be
+backed by a verifiable source, reframe or cut — never invent"), every
+unverifiable added rung was reverted; the affected sessions remain honestly
+**without** a borderline drill (a binary rule cannot host a mid-band script).
+This mirrors the principled refusals recorded for all-or-nothing items in
+History, Home Economics, Accounting and Agricultural Science: the tool never
+fabricates a partial-credit band to manufacture a hard call.

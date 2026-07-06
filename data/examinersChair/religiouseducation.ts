@@ -63,6 +63,22 @@ const RE1: ScaleSession = {
         cite: MS('p.18'),
       },
     },
+    {
+      id: 're1-border',
+      label: 'The near-miss',
+      persona: 'Assesses, but only halfway',
+      work: [
+        'Describes the topic accurately, then does begin to assess — states one strength and offers a brief judgement.',
+        'But the evaluation is one-sided and undeveloped: no counter-point weighed against it, no reasons carried through.',
+      ],
+      keyLevelId: 'good',
+      keyNote:
+        'It clears the descriptive cap — there is a genuine evaluative thread, so “Assess” is performed and the Fair ceiling no longer binds — but only just. One thin, one-sided judgement lifts it into Good, not to the Very Good or Excellent bands, which need the assessment sustained and balanced. A careless marker either leaves it stuck at Fair (“mostly description”) or over-rewards the accurate content; the scheme bands the quality of the assessment actually done, and here that is Good. Weigh a second consideration and carry the reasons through to climb higher.',
+      embodies: {
+        behaviour: 'Performs the higher-order command only partially — a thin, one-sided assessment clears the cap but bands mid-scale.',
+        cite: MS('p.18'),
+      },
+    },
   ],
   takeaway: {
     id: 'codex-re1',
@@ -170,6 +186,22 @@ const RE3: ScaleSession = {
         cite: MSOL('p.5'),
       },
     },
+    {
+      id: 're3-border',
+      label: 'The partial description',
+      persona: 'Describes accurately, but not fully',
+      work: [
+        'Describes the topic accurately and relevantly — the command “Describe” is answered on its own terms.',
+        'But the account is partial: a couple of the topic’s key aspects are named only in passing and never developed.',
+      ],
+      keyLevelId: 'good',
+      keyNote:
+        'It bands at Good — not capped, because at OL a description faces no ceiling, but not top either, because the description is incomplete. The scheme reserves Excellent for a full, accurate, relevant description; a partial one, accurate as far as it goes, sits mid-scale on thoroughness. A careless marker either sends it to the top (“it’s a valid description, and there’s no cap”) or docks it for “only describing”; the OL scheme does neither — it bands the completeness of the description, and this one is Good. Develop the aspects it skims to reach Very Good and Excellent.',
+      embodies: {
+        behaviour: 'Gives an accurate but incomplete OL description — no cap applies, but partial coverage bands it mid-scale.',
+        cite: MSOL('p.5'),
+      },
+    },
   ],
   takeaway: {
     id: 'codex-re3',
@@ -221,6 +253,22 @@ const RE4: ScaleSession = {
         'Capped at 10 of 20. The command asked for two images, so the examiner codes MC x 2 and bands each independently: image one earns a full Excellent 10, but image two is coded MC X — no evidence, no marks. The two scores don’t pool, so a perfect first image can’t cover a missing second. Half the task, half the marks. Two shorter, solid images would beat one flawless one here.',
       embodies: {
         behaviour: 'Answers only one of two required items — the second is coded MC X and the whole answer caps at half the marks.',
+        cite: MS('p.8'),
+      },
+    },
+    {
+      id: 're4-border',
+      label: 'The lopsided pair',
+      persona: 'Two images — one strong, one thin',
+      work: [
+        'A full, accurate, Excellent-band account of God as Shepherd.',
+        'A second image — God as Father — is attempted, but in a single thin, undeveloped line.',
+      ],
+      keyLevelId: 'onethin',
+      keyNote:
+        'Both items are attempted, so this clears the Max-10 ceiling a missing second image would impose — but the two scores are banded independently and don’t pool. Image one earns a full Excellent 10; image two, a bare line, lands near the bottom of its own 10-mark grid for around 3 — about 13 in all. A careless marker either lets the brilliant first image carry the second (pushing toward the top) or dismisses the thin second as MC X, no evidence (dropping back to Max 10); the scheme does neither, banding each image on its own merits. Give the second image real development and the total climbs.',
+      embodies: {
+        behaviour: 'Attempts both required items but develops only one — each is banded independently, landing the pair mid-scale.',
         cite: MS('p.8'),
       },
     },
@@ -438,6 +486,22 @@ const RE8: ScaleSession = {
         'It reaches Excellent. The scheme’s bullet points are “not exhaustive,” so a valid answer that isn’t on the printed list is marked on its merits, not penalised for being off-script. Never abandon a correct, well-argued point just because it isn’t the “textbook” example — the examiner marks it against the Marking Criteria, not against a word-list.',
       embodies: {
         behaviour: 'Gives a valid answer absent from the scheme’s exemplars — accepted on merit, not capped for being off-list.',
+        cite: MS('p.2'),
+      },
+    },
+    {
+      id: 're8-border',
+      label: 'The off-list near-miss',
+      persona: 'Valid but thinly made, off the list',
+      work: [
+        'Uses a valid example that is not among the bulleted “e.g.” exemplars printed under the question.',
+        'Meets the Marking Criteria and stays relevant — but the point is made thinly, with little development and loose detail.',
+      ],
+      keyLevelId: 'good',
+      keyNote:
+        'It is not penalised for being off-list — the exemplars are “not exhaustive,” so a valid alternative is marked on its merits — but merit here is only Good. A careless marker either docks it to Fair for “not matching the scheme” or waves it up because it is technically correct; the scheme does neither, banding the quality of the answer actually made, which is thin. Being off the printed list neither caps you nor rescues you — the same four descriptor rows still set the band. Develop the point and sharpen the detail to climb from Good.',
+      embodies: {
+        behaviour: 'Gives a valid off-list answer that is accepted on merit but only thinly made, banding mid-scale.',
         cite: MS('p.2'),
       },
     },

@@ -38,10 +38,11 @@ const AM1: ScaleSession = {
     'Scenario authored for this exercise. Applied Maths uses a subtractive penalty tariff: blunder −3, slip −1, misreading −1 — applied down from full marks.',
   scale: {
     name: 'Penalty tariff · /10',
-    levels: ladder([7, 9]),
+    levels: ladder([7, 8, 9]),
     notes: [
       'Penalties are subtracted from full marks: blunder −3, slip −1, misreading −1.',
       'A single numerical slip on this 10-mark part → 10 − 1 = 9.',
+      'Two separate numerical slips are −1 each → 10 − 2 = 8, still above the one-blunder score of 7.',
       'The same answer with a blunder instead would be 10 − 3 = 7.',
       'The method you set up matters three times as much as the arithmetic.',
     ],
@@ -58,6 +59,19 @@ const AM1: ScaleSession = {
         '9 of 10 — a slip is only −1. Had the mistake been a blunder (a wrong equation of motion, a wrong principle), the same script would score 7. This is the key to Applied Maths: guard the method fiercely — a setup error costs three times what a number-crunching slip does.',
       embodies: {
         behaviour: 'Makes a numerical slip (−1), far cheaper than a method blunder (−3).',
+        cite: MS('p.3'),
+      },
+    },
+    {
+      id: 'am1-b',
+      label: 'The borderline',
+      persona: 'Two arithmetic slips',
+      work: ['Correct method and setup throughout.', 'Two separate arithmetic slips in the numbers.'],
+      keyLevelId: 'm8',
+      keyNote:
+        '8 of 10 — two numerical slips at −1 each, not a single blunder. A hurried marker can read “two mistakes” as one messy method blunder and drop it to 7, or wave the pair through as a single slip and give 9; the tariff pins each slip at −1, so the honest score is 8. And note where it lands: two slips (8) still beat one method blunder (7). Guard the method — the arithmetic is cheap even in twos.',
+      embodies: {
+        behaviour: 'Makes two numerical slips (−1 each), landing on 8 — above the single-blunder score of 7.',
         cite: MS('p.3'),
       },
     },
@@ -134,12 +148,14 @@ const AM3: ScaleSession = {
   questionNote:
     'Scenario authored for this exercise. The scheme states: allow 3 marks for the name of a correct algorithm if no other work is presented (and its omission is a specific −3).',
   scale: {
-    name: 'Name of algorithm',
-    levels: ladder([0, 3]),
+    name: 'Naming the algorithm · /15',
+    levels: ladder([0, 3, 12, 15]),
     notes: [
       '“Allow 3 marks for the name of a correct algorithm if no other work is presented.”',
       'So naming the right method banks marks even with nothing worked out.',
       'Conversely, omitting the name where it’s required is a specific −3.',
+      'On the full 15-mark item, a correct, fully-worked solution that is NOT correctly named loses that −3: 15 − 3 = 12.',
+      'The same solution with the algorithm correctly named scores the whole 15.',
     ],
     cite: MS('p.6 (3 marks for naming a correct algorithm)'),
   },
@@ -154,6 +170,19 @@ const AM3: ScaleSession = {
         '3 marks for the name alone — free marks banked under time pressure. Knowing what the method is called is worth writing down even when you can’t finish it, and forgetting the name where it’s required actually costs 3. When time is tight, name the method before you move on.',
       embodies: {
         behaviour: 'Writes only the correct algorithm name — which banks 3 marks on its own.',
+        cite: MS('p.6'),
+      },
+    },
+    {
+      id: 'am3-b',
+      label: 'The borderline',
+      persona: 'Perfect working, forgot to name it',
+      work: ['Builds the minimum spanning tree fully and correctly.', 'Never states which algorithm was used.'],
+      keyLevelId: 'm12',
+      keyNote:
+        '12 of 15 — the work is flawless, but the scheme deducts a specific 3 marks where the algorithm is not correctly named. A marker skimming a perfect tree reaches for full marks; a marker over-reading the omission might gouge more. The rule is exact — −3, no more and no less — so it lands on 12. The lesson cuts both ways: naming the method is worth 3 whether you write only the name (banking 3) or forget it on an otherwise perfect answer (losing 3).',
+      embodies: {
+        behaviour: 'Presents a fully-correct solution with the algorithm not named — the specific −3 deduction, landing on 12 of 15.',
         cite: MS('p.6'),
       },
     },
@@ -181,11 +210,12 @@ const AM4: ScaleSession = {
     'Scenario authored for this exercise. Instruction 5: “A misreading or slip or omission which oversimplifies the question may be regarded as equivalent to a mathematical error and is marked accordingly” — i.e. upgraded from −1 to −3.',
   scale: {
     name: 'Oversimplifying slip · /10',
-    levels: ladder([7, 9]),
+    levels: ladder([7, 8, 9]),
     notes: [
       'A normal slip is −1; a mathematical blunder is −3.',
       'But a slip, misreading or omission that OVERSIMPLIFIES the question is upgraded to a blunder.',
       'So dropping a term that makes the rest easier costs −3, not −1: 10 − 3 = 7.',
+      'Two ordinary slips that DON’T oversimplify stay −1 each → 10 − 2 = 8 — the upgrade only bites when the mistake removes the difficulty.',
     ],
     cite: MS('p.3 (instruction 5, oversimplification upgrade)'),
   },
@@ -200,6 +230,19 @@ const AM4: ScaleSession = {
         'Only 7 of 10 — because the slip made the problem easier, it’s treated as a blunder, not a −1 slip. The examiner asks whether your mistake left the problem as hard as it was set: if it quietly removed the difficult part, you solved an easier question and are marked accordingly. When you drop or misread a term, check you haven’t cut out the hard bit.',
       embodies: {
         behaviour: 'Makes a slip that oversimplifies the question — upgraded from −1 to a −3 blunder.',
+        cite: MS('p.3'),
+      },
+    },
+    {
+      id: 'am4-b',
+      label: 'The borderline',
+      persona: 'Two slips, neither one a shortcut',
+      work: ['Two separate arithmetic slips in the working.', 'Neither slip removes any of the problem’s difficulty.', 'The full method is carried through as set.'],
+      keyLevelId: 'm8',
+      keyNote:
+        '8 of 10 — two ordinary slips at −1 each, because neither one oversimplified the question. A marker primed by the oversimplification rule can reflexively upgrade a mistake to a −3 blunder; but the test is precise — did the error quietly delete the hard part? Here it didn’t, so each slip stays −1 and the script sits at 8, not the 7 an oversimplifying blunder would score. Check what your mistake removed before you assume the bigger penalty.',
+      embodies: {
+        behaviour: 'Makes two ordinary slips that do not oversimplify — kept at −1 each (8), not upgraded to a −3 blunder.',
         cite: MS('p.3'),
       },
     },
@@ -227,12 +270,13 @@ const AM5: ScaleSession = {
     'Scenario authored for this exercise. Instruction 3: “A solidus (/) indicates different valid attempts”, and the scheme prints the model minimum-spanning-tree answer in two columns — Kruskal’s and Prim’s — as equally valid.',
   scale: {
     name: 'Valid alternative method · /15',
-    levels: ladder([12, 15]),
+    levels: ladder([9, 12, 15]),
     notes: [
       'Instruction 3: “A solidus (/) indicates different valid attempts.”',
       'The scheme shows one correct solution, but “alternative valid answers are acceptable”.',
       'A different but fully-correct method is NOT an error — it scores full marks (15), not the one-error rung (12).',
       'Using Prim’s where the model shows Kruskal’s loses nothing.',
+      'But a genuine systemic error in building the tree still counts: one error → 12, two → 9, on the item’s printed [0/6/9/12] scale.',
     ],
     cite: MS('p.3 (instruction 3, solidus = different valid attempts); p.6 (MST shown as Kruskal / Prim)'),
   },
@@ -248,6 +292,19 @@ const AM5: ScaleSession = {
       embodies: {
         behaviour: 'Uses a valid alternative method to the model solution — which earns full marks, not a reduced scale.',
         cite: MS('p.3'),
+      },
+    },
+    {
+      id: 'am5-b',
+      label: 'The borderline',
+      persona: 'Right algorithm, one edge wrong',
+      work: ['Uses Prim’s algorithm — a valid alternative to the model’s Kruskal’s.', 'Selects one wrong edge: a single systemic error in building the tree.'],
+      keyLevelId: 'm12',
+      keyNote:
+        '12 of 15 — the alternative method costs nothing, but the one wrong edge is a genuine systemic error, dropping it one rung on the item’s [0/6/9/12] scale. A marker anxious about the “unexpected” algorithm might double-penalise and slide it to 9; another might wave the nearly-right tree through at 15. Neither is right: the method choice is free, the single execution error is one rung → 12. Solve it your way, but the tree still has to be correct.',
+      embodies: {
+        behaviour: 'Uses a valid alternative algorithm with one systemic error — the method costs nothing; the single error lands it on the 12 rung.',
+        cite: MS('p.6'),
       },
     },
   ],
@@ -297,6 +354,19 @@ const AM6: ScaleSession = {
         cite: MS23('p.15'),
       },
     },
+    {
+      id: 'am6-b',
+      label: 'The borderline',
+      persona: 'Full table, a single slip',
+      work: ['Fills in all twelve dependency rows, A to L.', 'Exactly one entry is incorrect.'],
+      keyLevelId: 'm9',
+      keyNote:
+        '9 of 10 — one wrong entry at −1, and no more. A marker carrying the systemic-error scale in their head can wrongly band a single error down a rung; but this listing item isn’t on that scale — it deducts exactly 1 per wrong part. So one slip is 9, flat. Read the item’s own rule: “−1 for each incorrect part” is linear, not banded, and a single error costs precisely one mark.',
+      embodies: {
+        behaviour: 'Makes one incorrect entry on a per-item-deduction list — a flat −1 to 9, not a banded scale drop.',
+        cite: MS23('p.15'),
+      },
+    },
   ],
   takeaway: {
     id: 'codex-am6',
@@ -341,6 +411,19 @@ const AM7: ScaleSession = {
         'Full 10 — the diagram is its own marked part, not scaffolding for the equations. Every force present and correctly labelled banks the lot; a single missing or mislabelled force would be a −1 slip (9), and skipping the sketch to dive into the equations of motion forfeits all 10. Always draw the labelled force diagram first: it is often the easiest marks in the question.',
       embodies: {
         behaviour: 'Draws a complete, correctly-labelled force diagram — a standalone marked part worth 10.',
+        cite: MS('p.7'),
+      },
+    },
+    {
+      id: 'am7-b',
+      label: 'The borderline',
+      persona: 'Good diagram, one force missing',
+      work: ['Draws the system with most forces present and correctly labelled.', 'Omits one force — the friction on the incline.'],
+      keyLevelId: 'm9',
+      keyNote:
+        '9 of 10 — a near-complete force diagram with one missing force is a single −1 slip, not a wipe-out. A marker treating the sketch as mere scaffolding might give it nothing; a generous one might overlook the gap and hand over the full 10. The diagram is its own marked part, so it is scored like one: everything right but one force = −1 → 9. Draw every force, but a single omission only costs a mark.',
+      embodies: {
+        behaviour: 'Draws an otherwise-complete labelled force diagram with one force missing — a −1 slip to 9 on a standalone marked part.',
         cite: MS('p.7'),
       },
     },
@@ -438,6 +521,19 @@ const AM9: ScaleSession = {
         cite: MS('p.3'),
       },
     },
+    {
+      id: 'am9-b',
+      label: 'The borderline',
+      persona: 'One systemic error',
+      work: ['A recognisable, valid method throughout.', 'A single systemic error along the way.'],
+      keyLevelId: 'm7',
+      keyNote:
+        '7 of 10 — one systemic error drops full marks to 7, and that is the whole first step of the scale. A marker can misjudge it either way: banding a single error down to the 4 floor, or overlooking it for full marks. The scale is exact — one systemic error = 7. This is the rung to defend: after it, a second error falls to the same 4 a bare attempt banks, so keeping the first error out is what protects the mark.',
+      embodies: {
+        behaviour: 'Makes one systemic error on a 10-mark scale item — the 7 rung, one step below full and well above the collapse to 4.',
+        cite: MS('p.3'),
+      },
+    },
   ],
   takeaway: {
     id: 'codex-am9',
@@ -482,6 +578,19 @@ const AM10: ScaleSession = {
         '8 of 20 — the floor. On the 20-mark scale there is no cushioning rung between two errors (14) and the valid-attempt floor (8), so the third error costs a full six marks in one drop. This is the opposite of the 30-mark scale, which keeps a 16-mark rung for method-with-many-errors; on a 20-mark item you cannot rely on that rescue, so a clean two-error ceiling is worth defending hard.',
       embodies: {
         behaviour: 'Makes a third systemic error on a 20-mark scale item, which drops straight to the 8 floor because there is no intermediate rung.',
+        cite: MS('p.3'),
+      },
+    },
+    {
+      id: 'am10-b',
+      label: 'The borderline',
+      persona: 'Two systemic errors',
+      work: ['A valid method carried through the item.', 'Two systemic errors in the work.'],
+      keyLevelId: 'm14',
+      keyNote:
+        '14 of 20 — two systemic errors sit on the last rung before the cliff. A marker can slip either way: nudging it up to the one-error 17, or, seeing “several” mistakes, dropping it toward the 8 floor. The scale pins two errors at 14 exactly — and this is the ceiling worth defending, because a third error has no cushioning rung and plunges straight to 8. Hold the error count at two on a 20-mark item.',
+      embodies: {
+        behaviour: 'Makes two systemic errors on a 20-mark scale item — pinned at 14, the last rung before the six-mark drop to the floor.',
         cite: MS('p.3'),
       },
     },
@@ -631,6 +740,19 @@ const AM13: ScaleSession = {
         cite: MS('p.16'),
       },
     },
+    {
+      id: 'am13-border',
+      label: 'The borderline',
+      persona: 'Good, but a citation slips',
+      work: ['Identifies the problem and its variables.', 'Presents research and data — but one source is used uncited and one variable is left loosely defined.', 'Well written, of a good standard.'],
+      keyLevelId: 'am13-t',
+      keyNote:
+        'Thorough (11–15) — not Very thorough, because the band above needs the research cited and the variables identified, and here a citation is missing and a variable is loose. The descriptor for this band is exactly “work of a good standard, but some issues with, for example, identification of variables or citation of research.” A marker charmed by the good writing can round it up a band; the rubric holds it here on the specific gaps. Close the citation and pin the variable to climb.',
+      embodies: {
+        behaviour: 'Reaches the Thorough band — good-standard research held below Very thorough by a missing citation and a loosely-defined variable.',
+        cite: MS('p.16'),
+      },
+    },
   ],
   takeaway: {
     id: 'codex-am13',
@@ -683,6 +805,19 @@ const AM14: ScaleSession = {
         cite: MS('p.16'),
       },
     },
+    {
+      id: 'am14-border',
+      label: 'The borderline',
+      persona: 'Coherent, modestly creative',
+      work: ['Structures the whole report clearly, with good overall coherence.', 'Shows some innovation in approach, but nothing strikingly original.'],
+      keyLevelId: 'am14-t',
+      keyNote:
+        'Thorough (8–11) — good coherence and some creativity, but not the “highly innovative and/or creative” with “excellent overall coherence” the top band demands. These marks are still read off the whole report, not a section, so a marker can drift up or down on a general impression; the descriptor pins the difference between “innovation/creativity, good coherence” (here) and the top band. Solid, coherent and a little inventive lands squarely in the middle band.',
+      embodies: {
+        behaviour: 'Earns the Thorough Communication & Innovation band — good coherence and some creativity, short of the highly-innovative top band.',
+        cite: MS('p.16'),
+      },
+    },
   ],
   takeaway: {
     id: 'codex-am14',
@@ -707,12 +842,13 @@ const AM15: ScaleSession = {
     'Scenario authored for this exercise. Applied Maths has no blanket units penalty; units are policed per item, and the 2023 scheme marks the dot-product answer Q8(iv) as “−376.71 [units not required].”',
   scale: {
     name: 'Dot-product answer · /5',
-    levels: ladder([0, 5]),
+    levels: ladder([0, 4, 5]),
     notes: [
       'Applied Maths has no general units-deduction rule (unlike Physics).',
       'Units are handled per item, where they matter.',
       'On this scalar-product answer the scheme writes “[units not required].”',
       'So the correct value with no units banks full marks — there is nothing to deduct.',
+      'An arithmetic slip in the product is still a −1 slip → 5 − 1 = 4; the absent units are not what costs the mark.',
     ],
     cite: MS23('p.14 (Q8(iv) “−376.71 [units not required]”)'),
   },
@@ -727,6 +863,19 @@ const AM15: ScaleSession = {
         'Full 5 — the scheme itself notes “[units not required]” on this answer, so there is no units mark to lose. Applied Maths does not run a blanket units penalty the way Physics does; it flags per item where units matter, and on a scalar like a dot product it explicitly waives them. Don’t manufacture a unit you are unsure of, and don’t fear a phantom deduction — give the correct value and move on.',
       embodies: {
         behaviour: 'Gives a correct scalar-product value without units, which the scheme marks in full because it notes “units not required.”',
+        cite: MS23('p.14'),
+      },
+    },
+    {
+      id: 'am15-b',
+      label: 'The borderline',
+      persona: 'One slip in the product, no units',
+      work: ['Sets up the scalar (dot) product correctly.', 'Makes one arithmetic slip, reaching −379.71 instead of −376.71.', 'Writes no units.'],
+      keyLevelId: 'm4',
+      keyNote:
+        '4 of 5 — the method is right and the units genuinely aren’t required, so the only deduction is the single arithmetic slip at −1. A marker can miss the boundary from both sides: docking the “missing” units (which the scheme waives) or zeroing a wrong final number. Neither applies — units cost nothing here, and a slip is −1, so it lands on 4. Don’t chase a phantom units penalty; the mark you actually lost is the arithmetic one.',
+      embodies: {
+        behaviour: 'Gives a correct-method dot product with one arithmetic slip and no units — a single −1 (to 4), with no units deduction.',
         cite: MS23('p.14'),
       },
     },

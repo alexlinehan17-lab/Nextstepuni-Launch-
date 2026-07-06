@@ -124,6 +124,18 @@ const PS2: ScaleSession = {
         cite: MS('p.15'),
       },
     },
+    {
+      id: 'ps2-border',
+      label: 'The essay (near miss)',
+      persona: 'Starts to compare, then lists',
+      work: [
+        'Opens by setting two viewpoints against each other and genuinely weighs them for a paragraph.',
+        'But after that first comparison it reverts to taking each remaining point in turn — the argument isn’t sustained and there’s no integrated conclusion.',
+      ],
+      keyLevelId: 'h4',
+      keyNote:
+        'This is the borderline a hurried marker misplaces. It does more than summarise — there’s a real comparison early on — so it clears the lower band; but the argument isn’t carried through, the later points stand alone, and there’s no independent conclusion. That’s the mid band, not the integrated, comparative top band. One sustained line of argument to a conclusion of your own is the difference between mid and upper.',
+    },
   ],
   takeaway: {
     id: 'codex-ps2',
@@ -400,6 +412,18 @@ const PS7: ScaleSession = {
         cite: MS('p.3'),
       },
     },
+    {
+      id: 'ps7-border',
+      label: 'The answer (near miss)',
+      persona: 'Correct and consistent — but thin',
+      work: [
+        'Uses the key term correctly and never contradicts itself.',
+        'But the explanation stops at a bare, accurate definition — no development, no worked context.',
+      ],
+      keyLevelId: 'ps7-good',
+      keyNote:
+        'The correct-use rule is satisfied — nothing is misused or contradicted, so none of the credit falls away; that clears the forfeit and lifts it above Fair. But a correct term left undeveloped is a Good-band answer, not Very good: the top band wants the term used in context and explained, not merely stated. Because it’s accurate as far as it goes, a generous marker drifts up and a harsh one down — the scheme pins it in the middle: right, but thin. Develop the point in context and the same term reaches the top band.',
+    },
   ],
   takeaway: {
     id: 'codex-ps7',
@@ -508,6 +532,18 @@ const PS9: ScaleSession = {
         behaviour: 'Summarises the data’s content when asked to judge its presentation — off-question.',
         cite: MSOL('p.12'),
       },
+    },
+    {
+      id: 'ps9-border',
+      label: 'The answer (near miss)',
+      persona: 'Half display, half content',
+      work: [
+        'Notes that the document uses a simple box of figures and is easy to read.',
+        'But then spends the rest of the answer restating the figures and the trend, adding nothing further about the design.',
+      ],
+      keyLevelId: 'ps9-good',
+      keyNote:
+        'One real observation about the display — “a simple box, easy to read” is exactly the kind of comment the scheme credits — lifts this clear of Fair. But it’s a single, undeveloped point wrapped in a content summary, so it can’t reach the clear, sustained comment the top band wants. It lands in Good: on-question, but only just. Build the presentation comment out — colour, labelling, chart type, what the format does for the reader — instead of drifting back to the numbers.',
     },
   ],
   takeaway: {

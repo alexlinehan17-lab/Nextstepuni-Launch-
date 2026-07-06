@@ -497,6 +497,23 @@ const AG9: ScaleSession = {
         cite: MS('p.24'),
       },
     },
+    {
+      id: 'ag9-border',
+      label: 'The borderline',
+      persona: 'Right formula, wrong number',
+      work: [
+        '(397 + 345 + 397 + 362) / 4',
+        '= 385 days  (arithmetic slip; the correct value is 375)',
+        '(the method is right — only the final number is wrong)',
+      ],
+      keyLevelId: 'formula',
+      keyNote:
+        'This is the mirror of the bare right answer: the correct formula is on the page, but the arithmetic slips, so the line lands on the method mark — 2 of the 4, neither the full mark nor zero. A careless marker is pulled both ways: seeing a wrong final number they may strike the whole line out, or seeing a page of correct working they may wave it up to full. The scheme pins it precisely in the middle — a correct formula without the correct answer scores 2. This is exactly why working earns its keep: the formula shown here salvages half the marks a wrong number would otherwise have cost.',
+      embodies: {
+        behaviour: 'Shows the correct formula but slips the arithmetic — the method salvages the middle mark, neither full nor zero.',
+        cite: MS('p.24'),
+      },
+    },
   ],
   takeaway: {
     id: 'codex-ag9',
@@ -672,6 +689,23 @@ const AG12: ScaleSession = {
         'The third point — placing the quadrat — is credited even though it appears only on the diagram, because the scheme takes points “found on the diagram” just as it takes them from prose. Your labelled sketch is not decoration; it is markable answer content. When a describe-the-method question invites a diagram, put real steps into the labels — they earn the same marks as a written sentence, and a good diagram can complete an answer your prose left short.',
       embodies: {
         behaviour: 'Places a creditable step only in the labelled diagram — which the scheme credits as an answer point.',
+        cite: MS('p.18'),
+      },
+    },
+    {
+      id: 'ag12-border',
+      label: 'The borderline',
+      persona: 'Two points land, the third too vague',
+      work: [
+        'Prose: “Identify the plant species present using a key.”  (one clear method step)',
+        'Diagram: a labelled sketch showing a quadrat placed on the ground.  (a second step, in the diagram)',
+        'Prose: “Then decide which area of the field was the best.”  (too vague to credit as a method step)',
+      ],
+      keyLevelId: 'two',
+      keyNote:
+        'Two genuine method steps are credited — one written in prose, one taken from the labelled diagram — so the line banks 8 of the 12. The third statement names no real step, so it earns nothing, and the answer stops at two points of the three. A careless marker can be pushed either way: seeing a full-looking answer with a diagram they may round up to the full 12, or discounting the sketch they may drop to a single prose point and 4. The scheme pins it at two — it credits the step found on the diagram exactly like a prose step, but it still needs a genuine third step this script never gives.',
+      embodies: {
+        behaviour: 'Earns two creditable points, one of them from the diagram, but offers no genuine third step — the line lands two of three.',
         cite: MS('p.18'),
       },
     },

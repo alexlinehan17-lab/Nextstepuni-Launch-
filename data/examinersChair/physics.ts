@@ -113,12 +113,13 @@ const PHY2: ScaleSession = {
   questionNote:
     'Scenario authored for this exercise. The general instructions state that omitting (or giving incorrect) units in a final answer costs one mark, unless otherwise indicated.',
   scale: {
-    name: 'Unit omission',
-    levels: ladder([8, 9]),
+    name: 'One-mark deductions',
+    levels: ladder([7, 8, 9]),
     notes: [
       'General rule: “For omission of appropriate units (or for incorrect units) in final answers, one mark is deducted.”',
-      'It is a flat one-mark deduction — the rest of the working is untouched.',
-      'So a flawless 9-mark answer with no unit scores 8, not 0.',
+      'It is a flat one-mark deduction — the rest of the working is untouched. A correct answer with the unit missing OR written incorrectly scores 8, not 0.',
+      'That leaves 8 — one mark below a perfect 9 — and it is the same one-mark cost whether the unit is left off or simply wrong.',
+      'One-mark deductions stack but rarely sink an answer: a wrong unit together with a separate arithmetical slip is two of them, so a still-largely-correct script lands at 7 — never near zero.',
     ],
     cite: MS('p.3 (instruction 6, units)'),
   },
@@ -135,6 +136,15 @@ const PHY2: ScaleSession = {
         behaviour: 'Omits the unit on a correct final answer — a one-mark deduction.',
         cite: MS('p.3'),
       },
+    },
+    {
+      id: 'phy2-b',
+      label: 'Right number, wrong unit',
+      persona: 'Correct value, incorrect unit',
+      work: ['… = 4.2 m', '(the quantity is a speed, so the unit should be m s⁻¹)'],
+      keyLevelId: 'm8',
+      keyNote:
+        '8 marks — the value is correct, but the unit is wrong, and instruction 6 treats an incorrect unit exactly like a missing one: a single mark deducted. It lands on the same rung as the no-unit script — one below a perfect 9, one above a script also carrying a slip. A careless marker might wave the wrong unit through to 9, or, seeing an error, dock more than one; the scheme pins it at exactly minus one.',
     },
   ],
   takeaway: {
@@ -928,11 +938,12 @@ const PHY13: ScaleSession = {
     'Scenario authored for this exercise. Instruction 1 of the scheme states that key words must appear “in the correct context” to merit the marks — a true statement that does not answer the question as asked scores nothing.',
   scale: {
     name: 'Right word, right context',
-    levels: ladder([0, 3]),
+    levels: ladder([0, 2, 3]),
     notes: [
       'Rule (instruction 1): key words “must appear in the correct context in the candidate’s answer in order to merit the assigned marks”.',
       'The accepted answers are about accuracy: repeat the experiment, reduce parallax error, use a more accurate balance/timer.',
       '“Use a bigger spring” is a true statement, but it changes the speed of the trolleys, not the accuracy — wrong context, no marks.',
+      'Between the two extremes sits the vague-but-on-target answer: aimed at accuracy (so not zero) yet naming no actual precaution (so not full) — the correct context opens the marks, the specific method completes them.',
       'Answer the question actually asked: a correct physics fact aimed at the wrong question is worth nothing.',
     ],
     cite: MS('p.3 (instruction 1, correct context); p.7 (Q2(vii) accuracy)'),
@@ -950,6 +961,15 @@ const PHY13: ScaleSession = {
         behaviour: 'Answers with a true statement in the wrong context, which instruction 1 gives no credit for.',
         cite: MS('p.3'),
       },
+    },
+    {
+      id: 'phy13-c',
+      label: 'Script C',
+      persona: 'On-topic but vague',
+      work: ['“Read the scale more carefully so there are fewer mistakes.”'],
+      keyLevelId: 'm2',
+      keyNote:
+        'A high partial — unlike “a bigger spring”, this is squarely in the right context: it targets reading error, which is exactly the accuracy the question asked about, so it cannot be zero. But it stops at “more carefully” and never names the actual precaution — read at eye level to remove parallax — so it cannot take the full 3. This is the answer a careless marker either waves up to 3 or dismisses down to 0; the scheme pins it between them — the correct context earns the credit, the missing named method withholds the rest.',
     },
     {
       id: 'phy13-b',

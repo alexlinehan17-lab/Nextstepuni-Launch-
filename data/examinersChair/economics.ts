@@ -62,6 +62,22 @@ const EC1: ScaleSession = {
         cite: MS('p.2'),
       },
     },
+    {
+      id: 'ec1-border',
+      label: 'The answer',
+      persona: 'Half a mechanism, then stops',
+      work: [
+        'States a valid point.',
+        'Begins to develop it — names why it starts to happen — but stops before the consequence, leaving the mechanism half-built.',
+      ],
+      keyLevelId: 'm1',
+      keyNote:
+        'Fair (1) — genuinely more than repetition, so it clears the Weak floor, but the development is only half-built: one link named and then abandoned. A careless marker either reads the extra sentence as padding and drops it to Weak, or rewards the effort and lifts it to Good — the band pins it at Fair, because there is exactly one developmental element and no consequence. Carry the chain through — mechanism to consequence — and it climbs to Good or Excellent.',
+      embodies: {
+        behaviour: 'Starts a mechanism but leaves it undeveloped — one genuine step, short of the Good band.',
+        cite: MS('p.2'),
+      },
+    },
   ],
   takeaway: {
     id: 'codex-ec1',
@@ -126,6 +142,23 @@ const EC2: GridSession = {
           keyNote: 'Every itemised element present and labelled. Full marks — the same drawing as Script A, plus the labels that actually carry the marks.',
         },
       ],
+    },
+    {
+      id: 'ec2-border',
+      label: 'The diagram',
+      persona: 'Axes and curves labelled, equilibrium left blank',
+      attempts: [
+        {
+          id: 'ec2-border-1',
+          text: 'Axes labelled Price and Quantity and both curves named — but the intersection is left unmarked: no Pₑ, no Qₑ, no point picked out.',
+          key: { axes: 2, demand: 3, supply: 3, equilibrium: 0 },
+          keyNote: 'Three of the four itemised elements are present and labelled — the axes and both curves bank their marks. But the equilibrium is its own separate mark, and an unmarked intersection earns none of it. A careless marker glancing at a labelled, correct-looking graph might tick it full; the scheme itemises the equilibrium apart, so it pins at 8 of 11. The crossing point is not implied — it has to be marked and labelled.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Labels the axes and curves but leaves the equilibrium unmarked — forfeiting the one itemised element it skipped.',
+        cite: MS('p.50'),
+      },
     },
   ],
   takeaway: {
@@ -529,6 +562,23 @@ const EC8: GridSession = {
           keyNote: 'Every item spelled out as the cue demanded. Full marks — the same knowledge as Script A, in the form the scheme requires.',
         },
       ],
+    },
+    {
+      id: 'ec8-border',
+      label: 'Script C',
+      persona: 'Two in full, one in shorthand',
+      attempts: [
+        {
+          id: 'ec8-border-1',
+          text: '“1. Marginal cost   2. AR = D   3. Marginal revenue” — items 1 and 3 written out, but item 2 left in shorthand.',
+          key: { item1: 2, item2: 0, item3: 2 },
+          keyNote: 'Items 1 and 3 are written in full and bank their marks; item 2 is the same correct concept but abbreviated, and the cue said “do not use abbreviations.” A careless marker who has seen the two full terms may read the whole line as known and award all six; each item is its own mark, so the one shorthand entry forfeits its 2. 4 of 6 — right knowledge throughout, a single item in the wrong form.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Writes most items in full but leaves one abbreviated where the cue forbids it — forfeiting that single item.',
+        cite: MS('p.20'),
+      },
     },
   ],
   takeaway: {
@@ -974,6 +1024,22 @@ const EC15: ScaleSession = {
         '0 — there is nothing left to mark. The rounding was never the problem: the scheme accepts “31.48 % / 32%”, so the crossed-out “32%” was a full-mark answer. Erasing it forfeited the workings too. A correctly worked, sensibly rounded figure stands — never delete a right answer for fear of the decimals.',
       embodies: {
         behaviour: 'Erases a correctly worked, in-range rounded answer, mistaking accepted rounding for an error.',
+        cite: MS('p.38'),
+      },
+    },
+    {
+      id: 'ec15-border',
+      label: 'The answer',
+      persona: 'Worked it, never wrote the figure',
+      work: [
+        'Set out the formula and substitution correctly, reaching the line that gives 31.48%.',
+        'Lost confidence at the last step and never wrote a final figure in the answer box.',
+      ],
+      keyLevelId: 'm2',
+      keyNote:
+        '2 — the workings are correct and bank the method marks, but with no final figure there is no answer mark to award. A careless marker might read the completed working line as the answer and give full, or see the empty box and give nothing; the scheme separates method from answer, so it pins at 2 of 6. The rounding tolerance would have protected any sensible figure — the only thing missing is the figure itself. Finish the line: write the answer the workings already point to.',
+      embodies: {
+        behaviour: 'Shows correct workings but never commits a final figure — banking the method marks, forfeiting the answer mark.',
         cite: MS('p.38'),
       },
     },

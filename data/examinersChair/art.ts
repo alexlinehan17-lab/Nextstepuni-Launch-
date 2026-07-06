@@ -112,6 +112,22 @@ const ART2: ScaleSession = {
         cite: MS('printed p.23'),
       },
     },
+    {
+      id: 'art2-border',
+      label: 'Borderline answer',
+      persona: 'Names one, gestures at the rest',
+      work: [
+        'Names one work correctly — title and artist.',
+        'But covers the others as “another of his famous paintings”, unidentified.',
+      ],
+      keyLevelId: 'b1',
+      keyNote:
+        'Moderate band — one correctly named, recognised work lifts this clear of the vague-reference floor, but the unidentified “famous paintings” leave the strand half-claimed. The strand pays per recognised example: name all the works you discuss, with dates or materials where they matter, and the same answer reaches the High band.',
+      embodies: {
+        behaviour: 'Names one recognised work but leaves the others vague — reaching only the middle of the Relevant Examples strand.',
+        cite: MS('printed p.23'),
+      },
+    },
   ],
   takeaway: {
     id: 'codex-art2',
@@ -210,6 +226,22 @@ const ART4: ScaleSession = {
         cite: MS('printed p.21'),
       },
     },
+    {
+      id: 'art4-border',
+      label: 'Borderline answer',
+      persona: 'Starts focused, then drifts',
+      work: [
+        'Opens by addressing the question directly and in a logical order.',
+        'But the second half loses the thread and turns into general commentary off the question.',
+      ],
+      keyLevelId: 'b1',
+      keyNote:
+        'Moderate band — the focused, sequenced opening shows the candidate understood the demands of the question, which clears the Low band, but the drift into general commentary stops it building a sustained argument to the end. Hold the question in view the whole way through; a response that stays focused start to finish is what reaches High.',
+      embodies: {
+        behaviour: 'Answers the question in a focused way at first but drifts off it later — reaching the middle of the Coherence and Focus strand.',
+        cite: MS('printed p.21'),
+      },
+    },
   ],
   takeaway: {
     id: 'codex-art4',
@@ -256,6 +288,22 @@ const ART5: ScaleSession = {
         'Low band for Visual Language — this strand pays for accurate visual-art terminology, and plain description claims none of it. Naming what you see with the right vocabulary (composition, tone, contrast, medium, form…) is a separate 10 marks. Sketches are only an optional second route, so skipping them costs nothing — but writing with no art vocabulary at all leaves this whole strand on the table.',
       embodies: {
         behaviour: 'Answers in everyday language with no visual-art terminology (and no sketches) — capping the Visual Language strand.',
+        cite: MS('printed p.24'),
+      },
+    },
+    {
+      id: 'art5-border',
+      label: 'Borderline answer',
+      persona: 'Some terms, used sparingly',
+      work: [
+        'Uses a few accurate art terms — composition, tone — correctly in context.',
+        'But most of the answer is everyday language; the terminology is occasional, not sustained.',
+      ],
+      keyLevelId: 'b1',
+      keyNote:
+        'Moderate band — the terms that appear are used correctly, which clears the plain-language floor, but the High band needs a thorough, sustained use of accurate terminology and here it is only occasional. Name what you see with the right vocabulary throughout, not just once or twice; sustained precise terminology is what lifts the strand to High.',
+      embodies: {
+        behaviour: 'Uses some accurate terminology but only occasionally — reaching the middle of the Visual Language strand.',
         cite: MS('printed p.24'),
       },
     },
@@ -308,6 +356,22 @@ const ART6: ScaleSession = {
         cite: MS('printed p.17'),
       },
     },
+    {
+      id: 'art6-border',
+      label: 'Borderline answer',
+      persona: 'One reason, lightly evidenced',
+      work: [
+        'States an interpretation of the work and offers one supporting reason for it.',
+        'But the reason is asserted rather than tied to specific evidence in the image.',
+      ],
+      keyLevelId: 'b1',
+      keyNote:
+        'Moderate band — offering a reason answers more than the bare opinion the floor describes, but part (b) credits arguments “based on evidence” and this reason is asserted rather than grounded in what’s actually in the work. Point to the specific detail in the image that leads to your reading; a reason anchored in evidence is what reaches the top of this 4-mark part.',
+      embodies: {
+        behaviour: 'Gives an opinion with one asserted reason but little evidence from the work — reaching the middle of the part (b) tariff.',
+        cite: MS('printed p.17'),
+      },
+    },
   ],
   takeaway: {
     id: 'codex-art6',
@@ -354,6 +418,22 @@ const ART7: ScaleSession = {
         'Low band — “Today’s world” marks how well you read and interpret the stimulus in front of you, not how much prepared content you can reproduce. A pre-written paragraph that ignores the image is answering a question that wasn’t asked. Look hard at the given stimulus and apply your art thinking to it directly; that application to the unfamiliar is exactly what the band rewards.',
       embodies: {
         behaviour: 'Recites prepared content instead of decoding the given unfamiliar stimulus — capping the Section A descriptor.',
+        cite: MS('printed p.16'),
+      },
+    },
+    {
+      id: 'art7-border',
+      label: 'Borderline answer',
+      persona: 'Half stimulus, half prepared',
+      work: [
+        'Makes some genuine observations about the unfamiliar stimulus actually shown.',
+        'But fills out the rest with a prepared passage only loosely connected to the image.',
+      ],
+      keyLevelId: 'b1',
+      keyNote:
+        'Moderate band — the real observations about the stimulus show some of the application the descriptor rewards, clearing the recite-and-ignore floor, but leaning on prepared filler for the rest keeps it short of the High band’s sustained analysis of the given material. Build the whole answer from decoding the stimulus in front of you; application to the unfamiliar, not prepared padding, is what reaches High.',
+      embodies: {
+        behaviour: 'Engages the stimulus in part but pads with prepared content — reaching the middle of the Section A descriptor.',
         cite: MS('printed p.16'),
       },
     },
@@ -406,6 +486,22 @@ const ART8: ScaleSession = {
         cite: MS('printed p.15'),
       },
     },
+    {
+      id: 'art8-border',
+      label: 'Borderline answer',
+      persona: 'Covers the headings, but briefly',
+      work: [
+        'Addresses each named heading for the 6-mark part, but only a sentence each.',
+        'More than a one-liner, yet thinner than a 6-mark tariff invites.',
+      ],
+      keyLevelId: 'b1',
+      keyNote:
+        'Moderate band — touching each named heading is more than the single thin sentence that sits Low, but a 6-mark part’s High band expects each heading developed more fully than a sentence. The tariff tells you the depth: give the higher-mark part fuller treatment of each heading rather than a quick line, and the same structure reaches High.',
+      embodies: {
+        behaviour: 'Covers the headings but only briefly for a 6-mark part — reaching the middle band rather than the tariff’s ceiling.',
+        cite: MS('printed p.15'),
+      },
+    },
   ],
   takeaway: {
     id: 'codex-art8',
@@ -452,6 +548,22 @@ const ART9: ScaleSession = {
         'High band — the scheme explicitly protects skilful brevity, so a complete, precise answer isn’t penalised for being short. Write to fully meet the descriptor, then stop; you don’t need to fill the space. The examiner is told not to reward unwarranted length either, so padding wouldn’t have lifted it — completeness does.',
       embodies: {
         behaviour: 'Answers completely and concisely — which the scheme protects rather than penalises.',
+        cite: MS('printed p.15'),
+      },
+    },
+    {
+      id: 'art9-border',
+      label: 'Borderline answer',
+      persona: 'Complete on most, padded on the rest',
+      work: [
+        'Answers most of the question well and to the point.',
+        'But one required aspect is only glanced at, while an earlier point is restated at length.',
+      ],
+      keyLevelId: 'b1',
+      keyNote:
+        'Moderate band — and note what is and isn’t the reason: the restated padding neither earns credit nor is penalised, exactly as the scheme says. What holds this at Moderate is the one required aspect left under-developed, not the length. Redirect the filler into covering the thin aspect and the answer reaches High — completeness, not word-count, is the lever.',
+      embodies: {
+        behaviour: 'Covers most of the question but leaves one aspect thin while padding another — held at the middle band by the gap, not the length.',
         cite: MS('printed p.15'),
       },
     },
@@ -504,6 +616,22 @@ const ART10: ScaleSession = {
         cite: MS('printed p.15'),
       },
     },
+    {
+      id: 'art10-border',
+      label: 'Borderline answer',
+      persona: 'Mostly accurate, one slip',
+      work: [
+        'Uses several art terms correctly and consistently, with no contradictions.',
+        'But one term is misapplied — imprecise rather than self-cancelling.',
+      ],
+      keyLevelId: 'b1',
+      keyNote:
+        'Moderate band — the terminology is largely correct and consistent, which clears the misused-and-contradicted floor, but the one misapplied term keeps it off the accurate-throughout High band. The scheme withholds marks only where use is actually incorrect, so tighten that single slip; a term you can apply precisely every time is what reaches High.',
+      embodies: {
+        behaviour: 'Uses terminology correctly except for one misapplied term — reaching the middle band rather than fully accurate use.',
+        cite: MS('printed p.15'),
+      },
+    },
   ],
   takeaway: {
     id: 'codex-art10',
@@ -553,6 +681,22 @@ const ART11: ScaleSession = {
         cite: MS('printed p.20'),
       },
     },
+    {
+      id: 'art11-border',
+      label: 'Borderline answer',
+      persona: 'Right example, shallow grasp',
+      work: [
+        'Names a specific, correctly-identified, relevant work.',
+        'But treats it superficially — described more than genuinely understood or analysed.',
+      ],
+      keyLevelId: 'b1',
+      keyNote:
+        'Moderate band — a specific, relevant, correctly-named example clears the vague-or-irrelevant floor and shows the open-example rule working in the candidate’s favour, but the High band wants the work genuinely understood and used, not just named. Analyse what you chose — why it answers the question, what it does — so the example you know earns on understanding, not only on being correctly identified.',
+      embodies: {
+        behaviour: 'Uses a valid specific example but treats it superficially — reaching the middle of the Relevant Examples strand.',
+        cite: MS('printed p.20'),
+      },
+    },
   ],
   takeaway: {
     id: 'codex-art11',
@@ -599,6 +743,22 @@ const ART12: ScaleSession = {
         'The strong answer is credited — the scheme takes the highest-scoring answer per section and applies no penalty for the extra one, so a spare attempt can’t lower your mark. The genuine risk is time: splitting effort across two questions can leave both under-developed. If you do change your mind, the better answer will count, so commit your time to making one of them strong.',
       embodies: {
         behaviour: 'Answers more than one question per section — credited on the highest-scoring one, with no deduction.',
+        cite: MS('printed p.20'),
+      },
+    },
+    {
+      id: 'art12-border',
+      label: 'Borderline answer',
+      persona: 'Two answers, neither strong',
+      work: [
+        'Answers two Section B questions, splitting the time between them.',
+        'Both come out middling and under-developed; the better of the two is only moderate.',
+      ],
+      keyLevelId: 'b1',
+      keyNote:
+        'The scheme still credits the highest-scoring answer with no penalty for the extra — but here that best answer is itself only a Moderate one, because dividing the time left both under-developed. The rule protected the mark from any deduction; the split effort is what capped it. Commit that same time to one question and it could have reached the High band.',
+      embodies: {
+        behaviour: 'Answers more than one question per section but splits the effort — the credited best answer is only moderate.',
         cite: MS('printed p.20'),
       },
     },
@@ -746,6 +906,22 @@ const ART15: ScaleSession = {
         'Capped at roughly 30 of 50 — each question is a separate 10 marks, so two blanks forfeit 20 no matter how good the three answers are. You choose any five of the seven, so there’s no need to attempt topics you fear: pick your five strongest and complete all of them. A modest fifth answer almost always beats a brilliant third-and-nothing-else, because it claims marks that would otherwise be lost.',
       embodies: {
         behaviour: 'Answers fewer than the required five questions — forfeiting a full 10 marks per blank.',
+        cite: MS('printed p.15'),
+      },
+    },
+    {
+      id: 'art15-border',
+      label: 'Borderline answer',
+      persona: 'All five, but two rushed',
+      work: [
+        'Answers all five required questions — none left blank.',
+        'Three are solid; two are rushed and thin under time pressure.',
+      ],
+      keyLevelId: 'b1',
+      keyNote:
+        'Moderate band — completing all five claims the marks a blank-leaver forfeits, lifting this clear of the Low trap, but the two rushed answers leave marks on the table and hold the total in the middle. Answering all five is the first win; pacing so each of the five gets its due is what turns a Moderate Section A into a High one.',
+      embodies: {
+        behaviour: 'Answers all five required questions but rushes two — reaching the middle of Section A rather than its ceiling.',
         cite: MS('printed p.15'),
       },
     },

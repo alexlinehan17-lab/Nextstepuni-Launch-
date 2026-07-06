@@ -174,6 +174,19 @@ const HIS3: ScaleSession = {
         cite: MS('p.8'),
       },
     },
+    {
+      id: 'his3-border',
+      label: 'The comparison',
+      persona: 'Both sources — one thinly',
+      work: [
+        'A full, well-developed analysis of Document A.',
+        'A single sentence noting that Document B “says something similar”.',
+        'No real development of B, and no sustained link drawn between the two.',
+      ],
+      keyLevelId: 'm14',
+      keyNote:
+        'Lands at 14 — not the 5-mark cap, not the full 20. The one line on Document B is a genuine reference to the second source, so the “one document only = 5M” cap is cleared: a harsh marker who ignores that sentence and pins it at 5 is wrong. But a bare mention is not a developed comparison, so the top band — a sustained, two-sided treatment — stays out of reach, and the generous marker who rewards the strong A section with full marks is wrong too. Both documents touched, the relationship only half-built: exactly the middle rung.',
+    },
   ],
   takeaway: {
     id: 'codex-his3',
@@ -362,6 +375,19 @@ const HIS6: ScaleSession = {
         cite: MS('p.13'),
       },
     },
+    {
+      id: 'his6-border',
+      label: 'The conclusion',
+      persona: 'Half-fresh, half-echo',
+      work: [
+        'Opens by re-stating two points already made in the body.',
+        'Then briefly weighs them and offers a genuine, if thin, judgement on the question.',
+        'The new analysis is real but undeveloped.',
+      ],
+      keyLevelId: 'fresh',
+      keyNote:
+        'A Good paragraph — about 7 — not the 4-mark cap and not the Excellent ceiling. Because it does weigh the case and reach a judgement, it is more than mere repetition, so the “summation which is mere repetition = max 4” cap does not bite: the marker who sees the opening echo and pins it at 4 is too harsh. But the fresh work is thin and undeveloped, so it cannot score as an analytic, Excellent summation; the marker who rewards the mere presence of a conclusion with 12 is too generous. Part fresh, part echo — the middle rung is where it belongs.',
+    },
   ],
   takeaway: {
     id: 'codex-his6',
@@ -419,6 +445,19 @@ const HIS7: ScaleSession = {
         behaviour: 'Paraphrases a document’s content instead of evaluating it as a historical source.',
         cite: MS('p.10'),
       },
+    },
+    {
+      id: 'his7-border',
+      label: 'The answer',
+      persona: 'Half-evaluates, half-retells',
+      work: [
+        'Correctly identifies the document as a primary source, written by an eye-witness.',
+        'Notes that this makes it useful first-hand evidence of the events.',
+        'But then slips back into retelling the content, never weighing the author’s bias or what the source leaves out.',
+      ],
+      keyLevelId: 'good',
+      keyNote:
+        'A Good answer — 5 to 6 — neither the bottom band nor the top. It genuinely evaluates: naming the source type and the author’s closeness to the events are real “value” points, so it clears the Weak band a pure summary would earn, and the marker who dismisses it as retelling is too harsh. But the evaluation stops half-way — nothing on bias, reliability or omission — so it cannot climb to Very good or Excellent, and the marker who rewards the strong opening with 8-plus is too generous. Half the source weighed, half only retold: the middle of the scale.',
     },
   ],
   takeaway: {
@@ -586,6 +625,19 @@ const HIS10: ScaleSession = {
         behaviour: 'Attempts an invalid combination (three questions from one topic) — the ADJ minus-mark deduction applies.',
         cite: MS('p.3'),
       },
+    },
+    {
+      id: 'his10-border',
+      label: 'The extra answer',
+      persona: 'Over-attempts — but validly',
+      work: [
+        'The rules let the candidate answer across the required spread of topics.',
+        'They answer one question more than they need — but from an allowed topic, so the combination is valid.',
+        'The examiner marks them all and counts the best; this surplus answer is the lowest.',
+      ],
+      keyLevelId: 'ignored',
+      keyNote:
+        'Net zero — neither deducted nor counted. Because the combination is valid, the minus-mark ADJ rule for invalid combinations never triggers: the marker who deducts it, as if it were three questions from one topic, is wrong. But it is a surplus answer, so only the best required answers count and it adds nothing to the total either — the marker who lets it lift the score is wrong too. A valid over-attempt is simply set aside: the middle outcome between a deduction and a credit.',
     },
   ],
   takeaway: {

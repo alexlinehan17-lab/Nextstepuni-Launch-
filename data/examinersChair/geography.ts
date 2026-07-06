@@ -134,11 +134,12 @@ const GEO2: ScaleSession = {
     'Scenario authored for this exercise. The diagram rule is stated across the SEC scheme’s landform questions: a labelled diagram earns 1 SRP; an unlabelled diagram earns nothing.',
   scale: {
     name: 'Diagram · SRP credit',
-    levels: srpScale([0, 2]),
+    levels: srpScale([0, 2, 6]),
     notes: [
       'A relevant, labelled diagram is worth 1 SRP (2 marks).',
       'The scheme’s recurring rule: “Diagram without labelling 0 marks.”',
       'Accuracy and neatness don’t substitute for labels — the labels are what the SRP pays for.',
+      'Beyond the basic labels, the scheme credits “2 x SRPs for additional relevant information on a labelled diagram” — annotated process detail (arrows, short notes) can lift a labelled diagram to 3 SRPs (6 marks).',
     ],
     cite: MS('p.6–14 (diagram rule, recurring)'),
   },
@@ -155,6 +156,19 @@ const GEO2: ScaleSession = {
         behaviour: 'Submits an accurate but unlabelled diagram, which the scheme scores at 0.',
         cite: MS('p.6'),
       },
+    },
+    {
+      id: 'geo2-border',
+      label: 'The labelled sketch',
+      persona: 'Labelled — but bare',
+      work: [
+        '[ A clear, accurate river diagram ]',
+        'Three labels written on it: source, meander, mouth.',
+        'No annotation of the processes at work — no arrows, no explanatory notes.',
+      ],
+      keyLevelId: 'm2',
+      keyNote:
+        'The three labels rescue this from the 0 an unlabelled sketch scores — a labelled diagram is worth 1 SRP, so it banks 2 marks. But it stops there. The scheme also pays “2 x SRPs for additional relevant information on a labelled diagram,” and this sketch annotates none of the process. A careless eye scores it at either end — nothing (“just a sketch”) or the full 6 (“lovely diagram”); it belongs in the middle, labelled so 1 SRP, unannotated so no more. Arrows for erosion on the outer bank and deposition on the inner, with a note or two, would have carried it to 3 SRPs.',
     },
   ],
   takeaway: {
@@ -205,6 +219,19 @@ const GEO3: ScaleSession = {
         behaviour: 'Writes a detailed answer on the wrong process (erosion for a deposition question) — flagged in the Chief Examiner’s Report.',
         cite: CER('p.25'),
       },
+    },
+    {
+      id: 'geo3-border',
+      label: 'Half on process, half off',
+      persona: 'Starts right, drifts wrong',
+      work: [
+        'Opens correctly on deposition: longshore drift moves sand along the coast, the bay slows the waves, and the material is dropped and builds up.',
+        'Then switches, for the second page, into how waves ERODE a headland — undercutting, a notch, collapse.',
+        'A fully labelled diagram, but of the eroded headland rather than the depositional landform.',
+      ],
+      keyLevelId: 'm14',
+      keyNote:
+        'The opening genuinely examines deposition and banks a run of real SRPs — this is not the wrong-process zero. But the answer then examines erosion, and “Examination of processes of erosion 0 marks” takes every one of those later points to nothing. What scores is only the deposition half — around 7 SRPs of the 14. A marker in a hurry either rewards the whole thing (“plenty of correct geography”) or dismisses it (“it went off-process”); the scheme does neither, crediting the on-process points and walling off the rest. Staying on deposition throughout would have reached the full 28.',
     },
   ],
   takeaway: {
@@ -540,12 +567,13 @@ const GEO9: ScaleSession = {
     'Scenario authored for this exercise. The scheme’s regional questions carry an explicit zero rule: examination not anchored to a named or clearly inferred region scores nothing, regardless of quality.',
   scale: {
     name: 'Region-less answer · credit',
-    levels: srpScale([0, 26]),
+    levels: srpScale([0, 12, 26]),
     notes: [
       'The examination is worth up to 13 SRPs (26 marks) when it is anchored to a region.',
       'The scheme is absolute: “Examination without link to a named or clearly inferred region 0 marks.”',
       'The region can be named outright or “clearly inferred” — but a purely general account anchors to nowhere.',
       'This is different from the wrong-process zero: here the content is fine, but with no place to attach it, the examiner has nothing to credit.',
+      'A part-anchored answer sits in between: points genuinely tied to the named region earn their SRPs, while points left in the general abstract earn nothing.',
     ],
     cite: MS('p.16 (region-anchor zero rule)'),
   },
@@ -566,6 +594,19 @@ const GEO9: ScaleSession = {
         behaviour: 'Examines the factors in general without linking them to a named or clearly inferred region — the scheme’s automatic zero.',
         cite: MS('p.16'),
       },
+    },
+    {
+      id: 'geo9-border',
+      label: 'Half-anchored',
+      persona: 'Names the place, then forgets it',
+      work: [
+        'Names a specific region in the opening line and ties the first factors to it — the relief of that region, its rivers, its named market towns.',
+        'Half way through, the detail goes generic: “labour is important”, “climate affects the activity”, with nothing that could only be said of this region.',
+        'Never returns to the named region for the rest of the answer.',
+      ],
+      keyLevelId: 'm12',
+      keyNote:
+        'The named region and the region-specific opening lift this clear of the automatic zero a placeless answer scores. But the scheme credits only examination “link[ed] to a named or clearly inferred region”, and the generic second half links to nowhere — it could describe any region on earth, so it earns nothing. The anchored points score, the placeless ones do not: about 6 of the 13 SRPs. A quick marker sees a named region and waves it up, or sees the textbook padding and marks it down; the scheme credits exactly the half that stays anchored. Keeping every factor tied to the region would have opened the full 26.',
     },
   ],
   takeaway: {
@@ -672,12 +713,13 @@ const GEO11: ScaleSession = {
     'Scenario authored for this exercise. The GI marking rules state the Planning marks reward the candidate’s own planning; work done solely by the teacher scores nothing, and aims/plans must be specific and qualified.',
   scale: {
     name: 'Planning section · credit',
-    levels: srpScale([0, 5]),
+    levels: srpScale([0, 3, 5]),
     notes: [
       'Planning is worth 5 marks: 4 SRPs @ 1 mark plus 1 Coherence/Linkage mark.',
       'The scheme: “Work completed solely by the teacher = 0 marks.”',
       'Statements must be the candidate’s own and qualified — “All statements must be qualified e.g. practicing equipment where/how/why?”',
       'Aims elsewhere “must relate to investigation and must be specific and qualified.”',
+      'A mixed plan scores in between: the candidate’s own, qualified decisions earn their SRPs; the parts that are merely the teacher’s arrangements earn nothing.',
     ],
     cite: MS('p.62 (GI Planning rules)'),
   },
@@ -698,6 +740,18 @@ const GEO11: ScaleSession = {
         behaviour: 'Reports planning done entirely by the teacher, which the GI scheme scores at 0.',
         cite: MS('p.62'),
       },
+    },
+    {
+      id: 'geo11-border',
+      label: 'Half his own, half the teacher’s',
+      persona: 'Some own planning, some borrowed',
+      work: [
+        'States, in the first person and qualified, what HE decided to gather and how he would prepare — which measurements, what equipment, practised beforehand and why.',
+        'Then lists the arrangements the teacher made: the teacher chose the site and booked the transport.',
+      ],
+      keyLevelId: 'm3',
+      keyNote:
+        'The first-person, qualified decisions are the candidate’s own planning and earn their SRPs — this is not the teacher-did-it-all zero. But “work completed solely by the teacher = 0 marks”, so the site-choice and transport lines add nothing. The result is a few SRPs of the five, not the lot. A marker skimming for the word “planning” might award it all; one spotting the teacher’s hand, none. The scheme credits only the candidate’s own qualified points. Turning the teacher’s arrangements into his own decisions — what he would have chosen, and why — would have banked the rest.',
     },
   ],
   takeaway: {
@@ -762,6 +816,27 @@ const GEO12: GridSession = {
         },
       ],
     },
+    {
+      id: 'geo12-c',
+      label: 'Script C',
+      persona: 'Qualifies one, not the next',
+      attempts: [
+        {
+          id: 'geo12-c-1',
+          text: 'At two survey points either side of the bridge, I counted passing pedestrians for ten minutes at each using a hand tally counter.',
+          key: { srp: 2 },
+          keyNote:
+            'Qualified where (two points either side of the bridge) and how (ten-minute tallies with a counter) — a method the examiner can picture. 2 marks, one SRP.',
+        },
+        {
+          id: 'geo12-c-2',
+          text: 'I also recorded the traffic.',
+          key: { srp: 0 },
+          keyNote:
+            'Straight back to the bare activity statement the scheme names as insufficient — recorded it where, how, for how long? No qualification, no SRP. The same candidate qualifies one sentence and not the next, which is exactly why a script like this splits: one statement earns, the other is withheld — and the marks follow the qualification, not the effort.',
+        },
+      ],
+    },
   ],
   takeaway: {
     id: 'codex-geo12',
@@ -787,12 +862,13 @@ const GEO13: ScaleSession = {
     'Scenario authored for this exercise. The GI scheme restricts credit to material that appears in the correct section of the reporting booklet, and bars double-marking of gathering material as results.',
   scale: {
     name: 'Misplaced conclusions · credit',
-    levels: srpScale([0, 30]),
+    levels: srpScale([0, 14, 30]),
     notes: [
       'Results, Conclusions and Evaluation carry 30 marks — three headings, marked only where they belong.',
       'The scheme: “Marks only awarded for Results / Conclusions / Evaluations if in the appropriate section of the reporting booklet.”',
       'The Gathering section states plainly: “No marks for results in this written section.”',
       'And material is credited once: “No double marking of information relating to issues mentioned in Section 3.”',
+      'Section by section: a heading written in its right place earns its SRPs, the same material filed under the wrong heading earns nothing — so a booklet half in the right boxes scores in between.',
     ],
     cite: MS('p.63–64 (GI section-placement rules)'),
   },
@@ -812,6 +888,18 @@ const GEO13: ScaleSession = {
         behaviour: 'Places conclusions and evaluation in the Gathering section, where the scheme awards them no marks.',
         cite: MS('p.64'),
       },
+    },
+    {
+      id: 'geo13-border',
+      label: 'Half in the right box',
+      persona: 'Results filed right, evaluation filed wrong',
+      work: [
+        'Writes the Results and Conclusions under the Results / Conclusions / Evaluation heading, where they belong.',
+        'Writes the Evaluation back in the Gathering section, alongside the account of how the data was collected.',
+      ],
+      keyLevelId: 'm14',
+      keyNote:
+        'The Results and Conclusions are in the right section and score their SRPs — so this clears the zero a wholly-misplaced answer gets. But “marks only awarded for Results / Conclusions / Evaluations if in the appropriate section”, and the Evaluation is stranded in Gathering, where it earns nothing. Two of the three headings score, the third is lost: roughly half of the 30. The careless read is all-or-nothing — good work everywhere, or “bits are in the wrong place” — but the scheme marks each heading where it stands. Moving the evaluation under its own heading would have recovered the missing marks.',
     },
   ],
   takeaway: {
@@ -838,12 +926,13 @@ const GEO14: ScaleSession = {
     'Scenario authored for this exercise. The GI Presentation rules require two different forms of presentation, and bar the Overall Coherence mark where only one method is evident.',
   scale: {
     name: 'Presentation Overall Coherence · /4',
-    levels: srpScale([0, 4]),
+    levels: srpScale([0, 2, 4]),
     notes: [
       'Presentation is 20 marks: up to 4 SRPs per method @ 2 marks, plus a 4-mark graded Overall Coherence.',
       'The scheme: “There must be two different forms of presentation of results e.g. graphs, chart, map, table, sketch.”',
       'And the Coherence gate: “Cannot be awarded Overall Coherence marks if only one method of presentation is evident.”',
       'Two bar charts count as one method — so the 4 Coherence marks are locked out (the SRPs for the one method still stand).',
+      'Overall Coherence is graded (4/2/0): two different methods, clear and tidy, earns 4; two different methods presented roughly earns the middle 2; one method earns 0.',
     ],
     cite: MS('p.65 (GI Presentation rules)'),
   },
@@ -864,6 +953,18 @@ const GEO14: ScaleSession = {
         behaviour: 'Uses the same presentation method twice, forfeiting the Overall Coherence mark that requires two different forms.',
         cite: MS('p.65'),
       },
+    },
+    {
+      id: 'geo14-border',
+      label: 'Two methods, roughly done',
+      persona: 'Right variety, rough finish',
+      work: [
+        'Presents the results two genuinely different ways — a bar chart and a table.',
+        'But both are untidy: the chart’s axis is unlabelled in places, and the table’s columns are crooked with one heading missing.',
+      ],
+      keyLevelId: 'm2',
+      keyNote:
+        'Two different forms clear the gate a one-method answer fails — so Overall Coherence is in play, not locked out at 0. But it is graded (4/2/0) on “the quality and clarity of the presentation”, and a rough, half-labelled pair earns the middle 2, not the full 4. A marker can read it either way — “two methods, give the four” or “this is messy, give nothing” — but the scheme grades the quality: presented enough to qualify, not clean enough to top out. Tidy, fully-labelled versions of the same two methods would have earned the full 4.',
     },
   ],
   takeaway: {
