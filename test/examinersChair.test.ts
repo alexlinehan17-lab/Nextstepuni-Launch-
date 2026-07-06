@@ -10,12 +10,16 @@ import {
   calibrationBand,
   completeSession,
   gridDecisionKey,
+  gridScriptMisses,
   loadChair,
   markCodexOnCards,
+  mergeMisses,
   overallCalibration,
   saveChair,
+  scaleScriptMisses,
   scoreGridScript,
   scoreScaleScript,
+  topMisses,
   type ChairState,
 } from '../components/ExaminersChair/store';
 import { CHAIR_SUBJECTS, allSessions, findSession } from '../data/examinersChair';
@@ -160,6 +164,68 @@ describe('session results + calibration', () => {
     expect(calibrationBand(0.8)).toBe('Well calibrated');
     expect(calibrationBand(0.6)).toBe('Getting there');
     expect(calibrationBand(0.2)).toBe('Marking optimist');
+  });
+});
+
+describe('mismatch tracking', () => {
+  const miniGrid: GridSession = {
+    mode: 'grid', id: 't-g', subject: 'business', level: 'higher', title: 'Mini', cue: 'x',
+    question: 'q', questionNote: 'n',
+    grid: {
+      perPoint: [{ id: 'name', label: 'Name', marks: 2 }, { id: 'link', label: 'Link', marks: 1 }],
+      shorthand: '', ruleNote: '', cite: { label: 'c' },
+    },
+    scripts: [{ id: 's1', label: 'A', persona: 'p', attempts: [{ id: 'a1', text: 't', key: { name: 2, link: 0 }, keyNote: 'k' }] }],
+    takeaway: { id: 'tk', rule: 'r', detail: 'd', cite: { label: 'c' } },
+  };
+  const miniScale: ScaleSession = {
+    mode: 'scale', id: 't-s', subject: 'maths', level: 'higher', title: 'Mini scale', cue: 'x',
+    question: 'q', questionNote: 'n',
+    scale: {
+      name: 'S', levels: [
+        { id: 'lo', label: 'Low', annotation: 'L', marks: 0 },
+        { id: 'mid', label: 'Mid', annotation: 'M', marks: 3 },
+        { id: 'hi', label: 'High', annotation: 'H', marks: 6 },
+      ], notes: [], cite: { label: 'c' },
+    },
+    scripts: [{ id: 's1', label: 'A', persona: 'p', work: ['w'], keyLevelId: 'mid', keyNote: 'k' }],
+    takeaway: { id: 'tk2', rule: 'r', detail: 'd', cite: { label: 'c' } },
+  };
+
+  it('flags an over-credit when the student awards a criterion the examiner withheld', () => {
+    const decisions = { [gridDecisionKey('a1', 'name')]: true, [gridDecisionKey('a1', 'link')]: true };
+    const deltas = gridScriptMisses(miniGrid, miniGrid.scripts[0], decisions);
+    expect(deltas).toEqual([{ key: 'business::Link', subject: 'business', label: 'Link', over: 1, under: 0, sessionId: 't-g' }]);
+  });
+
+  it('flags an under-credit when the student withholds a criterion the examiner gave', () => {
+    const decisions = { [gridDecisionKey('a1', 'name')]: false, [gridDecisionKey('a1', 'link')]: false };
+    const deltas = gridScriptMisses(miniGrid, miniGrid.scripts[0], decisions);
+    expect(deltas).toEqual([{ key: 'business::Name', subject: 'business', label: 'Name', over: 0, under: 1, sessionId: 't-g' }]);
+  });
+
+  it('returns no deltas when the student marks exactly like the examiner', () => {
+    const decisions = { [gridDecisionKey('a1', 'name')]: true, [gridDecisionKey('a1', 'link')]: false };
+    expect(gridScriptMisses(miniGrid, miniGrid.scripts[0], decisions)).toEqual([]);
+  });
+
+  it('flags scale generosity direction (too high = over)', () => {
+    expect(scaleScriptMisses(miniScale, miniScale.scripts[0], 'hi')[0]).toMatchObject({ over: 1, under: 0 });
+    expect(scaleScriptMisses(miniScale, miniScale.scripts[0], 'lo')[0]).toMatchObject({ over: 0, under: 1 });
+    expect(scaleScriptMisses(miniScale, miniScale.scripts[0], 'mid')).toEqual([]);
+  });
+
+  it('merges and ranks blind spots by frequency', () => {
+    let state = loadChair('m1');
+    const over = { key: 'business::Link', subject: 'business', label: 'Link', over: 1, under: 0, sessionId: 't-g' };
+    state = mergeMisses(state, [over], 100);
+    state = mergeMisses(state, [over], 200);
+    state = mergeMisses(state, [{ key: 'maths::scale-placement', subject: 'maths', label: 'scale', over: 1, under: 0, sessionId: 't-s' }], 300);
+    expect(state.misses['business::Link'].over).toBe(2);
+    expect(state.misses['business::Link'].sessions).toEqual(['t-g']); // deduped
+    const top = topMisses(state);
+    expect(top[0].key).toBe('business::Link'); // most frequent first
+    expect(top).toHaveLength(2);
   });
 });
 

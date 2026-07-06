@@ -32,14 +32,19 @@ import {
   calibrationBand,
   completeSession,
   gridDecisionKey,
+  gridScriptMisses,
   loadChair,
   markCodexOnCards,
+  mergeMisses,
   overallCalibration,
   pct,
   saveChair,
+  scaleScriptMisses,
   scoreGridScript,
   scoreScaleScript,
+  topMisses,
   type ChairState,
+  type MissDelta,
   type ScriptScore,
 } from './store';
 import { createCard } from '../PaperTrail/flashcardStore';
@@ -221,7 +226,7 @@ const SchemeExtract: React.FC<{ session: MarkingSession }> = ({ session }) => {
 
 const ExaminersChair: React.FC<Props> = ({ uid }) => {
   const [state, setState] = useState<ChairState>(() => loadChair(uid));
-  const [view, setView] = useState<'home' | 'subject' | 'codex' | 'session'>('home');
+  const [view, setView] = useState<'home' | 'subject' | 'codex' | 'session' | 'mismatch'>('home');
   const [subjectId, setSubjectId] = useState<string | null>(null);
   const [level, setLevel] = useState<ChairLevel>('higher');
   const [sessionId, setSessionId] = useState<string | null>(null);
@@ -230,6 +235,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
   const [decisions, setDecisions] = useState<Record<string, boolean>>({});
   const [chosenLevel, setChosenLevel] = useState<string | null>(null);
   const [scores, setScores] = useState<ScriptScore[]>([]);
+  const [sessionMisses, setSessionMisses] = useState<MissDelta[]>([]);
   const [codexAdded, setCodexAdded] = useState(false);
 
   const subject = useMemo(() => CHAIR_SUBJECTS.find(s => s.id === subjectId) ?? null, [subjectId]);
@@ -256,8 +262,22 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
     setDecisions({});
     setChosenLevel(null);
     setScores([]);
+    setSessionMisses([]);
     setCodexAdded(false);
     setView('session');
+  };
+
+  /** Jump straight into a session from anywhere, setting its subject context so
+   * the in-session back button returns to the right subject screen. */
+  const drillSession = (id: string) => {
+    const sess = allSessions().find(s => s.id === id);
+    if (!sess) return;
+    const subj = CHAIR_SUBJECTS.find(c => c.id === sess.subject);
+    if (subj) {
+      setSubjectId(subj.id);
+      setLevel(levelsOf(subj).includes(sess.level) ? sess.level : levelsOf(subj)[0] ?? 'higher');
+    }
+    openSession(id);
   };
 
   // ───────────────────────────── session flow ─────────────────────────────
@@ -271,7 +291,12 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
         session.mode === 'grid'
           ? scoreGridScript(session, script as GridSession['scripts'][number], decisions)
           : scoreScaleScript(session, script as ScaleSession['scripts'][number], chosenLevel);
+      const deltas =
+        session.mode === 'grid'
+          ? gridScriptMisses(session, script as GridSession['scripts'][number], decisions)
+          : scaleScriptMisses(session, script as ScaleSession['scripts'][number], chosenLevel);
       setScores(prev => [...prev, score]);
+      setSessionMisses(prev => [...prev, ...deltas]);
       setStage('reveal');
     };
 
@@ -282,7 +307,8 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
         setChosenLevel(null);
         setStage('mark');
       } else {
-        persist(completeSession(state, session, scores, Date.now()));
+        const now = Date.now();
+        persist(mergeMisses(completeSession(state, session, scores, now), sessionMisses, now));
         setStage('summary');
       }
     };
@@ -655,6 +681,82 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
     );
   }
 
+  // ───────────────────────────── mismatch map ─────────────────────────────
+
+  if (view === 'mismatch') {
+    const misses = topMisses(state, 12);
+    return (
+      <div className="w-full max-w-xl mx-auto pb-12">
+        <button onClick={() => setView('home')} className="flex items-center gap-1.5 text-[13px] font-medium mb-4" style={{ color: MUTED }}>
+          <ArrowLeft size={15} /> Subjects
+        </button>
+        <h2 className="text-[22px] font-semibold mb-1" style={{ fontFamily: SERIF, color: INK }}>
+          Where your eye differs
+        </h2>
+        <p className="text-[13px] mb-5" style={{ color: MUTED }}>
+          The marking calls you make differently from the examiner, most frequent first. Fix the habit, not the question.
+        </p>
+        {misses.length === 0 ? (
+          <p className="text-[13.5px] italic" style={{ color: LABEL }}>
+            Nothing to show yet — mark a few scripts and any pattern in how your eye differs from the examiner’s will surface here.
+          </p>
+        ) : (
+          <div className="space-y-2.5">
+            {misses.map(m => {
+              const total = m.over + m.under;
+              const generous = m.over >= m.under;
+              const scale = m.key.endsWith('::scale-placement');
+              const subjLabel = CHAIR_SUBJECTS.find(c => c.id === m.subject)?.label ?? m.subject;
+              const headline = scale
+                ? generous
+                  ? `You place ${subjLabel} scripts too high on the scale`
+                  : `You place ${subjLabel} scripts too low on the scale`
+                : generous
+                  ? `You award the “${m.label}” mark when the examiner doesn’t`
+                  : `You withhold the “${m.label}” mark when the examiner gives it`;
+              const drills = m.sessions
+                .map(id => allSessions().find(s => s.id === id))
+                .filter((s): s is MarkingSession => !!s)
+                .slice(0, 3);
+              return (
+                <div key={m.key} className="rounded-xl border bg-white dark:bg-zinc-900 dark:border-zinc-700 px-4 py-3.5" style={{ borderColor: BORDER }}>
+                  <div className="flex items-center justify-between gap-2 mb-1.5">
+                    <Small>{subjLabel}</Small>
+                    <span className="text-[10.5px] font-bold px-2 py-0.5 rounded-full" style={{ color: PEN, backgroundColor: PEN_SOFT }}>
+                      {generous ? 'too generous' : 'too harsh'} · {total}×
+                    </span>
+                  </div>
+                  <p className="text-[14.5px] font-semibold leading-snug" style={{ fontFamily: SERIF, color: INK }}>
+                    {headline}
+                  </p>
+                  {m.over > 0 && m.under > 0 && (
+                    <p className="text-[11.5px] mt-1" style={{ color: MUTED }}>
+                      {m.over}× too generous · {m.under}× too harsh
+                    </p>
+                  )}
+                  {drills.length > 0 && (
+                    <div className="flex flex-wrap gap-1.5 mt-2.5">
+                      {drills.map(s => (
+                        <button
+                          key={s.id}
+                          onClick={() => drillSession(s.id)}
+                          className="text-[11.5px] font-semibold px-2.5 py-1 rounded-full border transition-transform active:translate-y-0.5"
+                          style={{ borderColor: ACCENT, color: '#8C3A0E', backgroundColor: '#FDEEDF' }}
+                        >
+                          Re-mark: {s.title}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        )}
+      </div>
+    );
+  }
+
   // ───────────────────────────── subject view ─────────────────────────────
 
   if (view === 'subject' && subject) {
@@ -783,6 +885,37 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
           <BookMarked size={13} /> Codex · {state.codex.length}
         </button>
       </div>
+
+      {(() => {
+        const misses = topMisses(state, 1);
+        if (misses.length === 0) return null;
+        const m = misses[0];
+        const generous = m.over >= m.under;
+        const scale = m.key.endsWith('::scale-placement');
+        const subjLabel = CHAIR_SUBJECTS.find(c => c.id === m.subject)?.label ?? m.subject;
+        const phrase = scale
+          ? `you place ${subjLabel} scripts too ${generous ? 'high' : 'low'} on the scale`
+          : `you ${generous ? 'award' : 'withhold'} the “${m.label}” mark ${generous ? 'when the examiner doesn’t' : 'when the examiner does'}`;
+        return (
+          <button
+            onClick={() => setView('mismatch')}
+            className="w-full text-left rounded-xl px-4 py-3 mb-5 transition-transform active:translate-y-0.5"
+            style={{ backgroundColor: PEN_SOFT, border: `1px solid rgba(196,68,60,0.3)` }}
+          >
+            <div className="flex items-center justify-between gap-3">
+              <div className="min-w-0">
+                <p className="text-[10.5px] font-bold uppercase tracking-[0.1em] mb-0.5" style={{ color: PEN }}>Your biggest blind spot</p>
+                <p className="text-[13px] leading-snug" style={{ color: INK }}>
+                  Most often, <span className="font-semibold">{phrase}</span>.
+                </p>
+              </div>
+              <span className="shrink-0 inline-flex items-center gap-1 text-[12px] font-semibold" style={{ color: PEN }}>
+                See all <ChevronRight size={14} />
+              </span>
+            </div>
+          </button>
+        );
+      })()}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
         {CHAIR_SUBJECTS.map(s => {

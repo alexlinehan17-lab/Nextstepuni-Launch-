@@ -16,6 +16,7 @@
  */
 
 import {
+  type ChairSubjectId,
   type GridScript,
   type GridSession,
   type MarkingSession,
@@ -93,6 +94,107 @@ export function scoreScaleScript(
   return { scriptId: script.id, agreement, studentMarks, examinerMarks, maxMarks };
 }
 
+// ── mismatch tracking: where the student's eye differs from the examiner's ──
+
+/** One accumulated marking blind spot — a place the student systematically
+ * marks differently from the examiner. `over` = too generous (awarded credit
+ * the examiner withheld); `under` = too harsh (withheld credit the examiner
+ * gave). Aggregated per subject + criterion, so "you over-credit the Link
+ * mark" surfaces across every session that uses it. */
+export interface MissTally {
+  key: string;
+  subject: ChairSubjectId;
+  label: string;
+  over: number;
+  under: number;
+  /** Session ids where this blind spot showed up (deduped, capped) — the drills. */
+  sessions: string[];
+  last: number;
+}
+
+/** A per-script contribution to the tally, before it's merged into state. */
+export interface MissDelta {
+  key: string;
+  subject: ChairSubjectId;
+  label: string;
+  over: number;
+  under: number;
+  sessionId: string;
+}
+
+/** Per-criterion divergences for one marked grid script. */
+export function gridScriptMisses(
+  session: GridSession,
+  script: GridScript,
+  decisions: Record<string, boolean>,
+): MissDelta[] {
+  const acc = new Map<string, { over: number; under: number }>();
+  for (const attempt of script.attempts) {
+    for (const c of session.grid.perPoint) {
+      const student = !!decisions[gridDecisionKey(attempt.id, c.id)];
+      const keyAwarded = (attempt.key[c.id] ?? 0) > 0;
+      if (student === keyAwarded) continue;
+      const e = acc.get(c.label) ?? { over: 0, under: 0 };
+      if (student && !keyAwarded) e.over += 1;
+      else e.under += 1;
+      acc.set(c.label, e);
+    }
+  }
+  return [...acc].map(([label, v]) => ({
+    key: `${session.subject}::${label}`,
+    subject: session.subject,
+    label,
+    over: v.over,
+    under: v.under,
+    sessionId: session.id,
+  }));
+}
+
+/** Generosity divergence for one marked scale script (too high vs too low). */
+export function scaleScriptMisses(
+  session: ScaleSession,
+  script: ScaleScript,
+  chosenLevelId: string | null,
+): MissDelta[] {
+  const levels = session.scale.levels;
+  const keyIdx = levels.findIndex(l => l.id === script.keyLevelId);
+  const chosenIdx = chosenLevelId === null ? -1 : levels.findIndex(l => l.id === chosenLevelId);
+  if (chosenIdx < 0 || keyIdx < 0 || chosenIdx === keyIdx) return [];
+  return [{
+    key: `${session.subject}::scale-placement`,
+    subject: session.subject,
+    label: 'where you place the whole script on the scale',
+    over: chosenIdx > keyIdx ? 1 : 0,
+    under: chosenIdx < keyIdx ? 1 : 0,
+    sessionId: session.id,
+  }];
+}
+
+/** Merge a session's worth of miss deltas into the persisted tally (pure). */
+export function mergeMisses(state: ChairState, deltas: MissDelta[], now: number): ChairState {
+  if (deltas.length === 0) return state;
+  const misses = { ...state.misses };
+  for (const d of deltas) {
+    const cur = misses[d.key] ?? { key: d.key, subject: d.subject, label: d.label, over: 0, under: 0, sessions: [], last: 0 };
+    misses[d.key] = {
+      ...cur,
+      over: cur.over + d.over,
+      under: cur.under + d.under,
+      sessions: cur.sessions.includes(d.sessionId) ? cur.sessions : [...cur.sessions, d.sessionId].slice(-12),
+      last: now,
+    };
+  }
+  return { ...state, misses };
+}
+
+/** The student's biggest blind spots, most-frequent first. */
+export function topMisses(state: ChairState, n = 8): MissTally[] {
+  return Object.values(state.misses)
+    .filter(m => m.over + m.under > 0)
+    .sort((a, b) => (b.over + b.under) - (a.over + a.under) || b.last - a.last)
+    .slice(0, n);
+}
+
 // ── session results + persistence ──
 
 export interface SessionResult {
@@ -111,23 +213,28 @@ export interface ChairState {
   codex: string[];
   /** Codex rule ids already pushed to Paper Trail flashcards. */
   codexOnCards: string[];
+  /** Accumulated marking blind spots, keyed by subject::criterion. */
+  misses: Record<string, MissTally>;
 }
 
-const EMPTY: ChairState = { results: {}, codex: [], codexOnCards: [] };
+const EMPTY: ChairState = { results: {}, codex: [], codexOnCards: [], misses: {} };
 const key = (uid?: string) => `chair:${uid || 'anon'}`;
+
+const fresh = (): ChairState => ({ ...EMPTY, results: {}, codex: [], codexOnCards: [], misses: {} });
 
 export function loadChair(uid?: string): ChairState {
   try {
     const raw = localStorage.getItem(key(uid));
-    if (!raw) return { ...EMPTY, results: {}, codex: [], codexOnCards: [] };
+    if (!raw) return fresh();
     const parsed = JSON.parse(raw) as Partial<ChairState>;
     return {
       results: parsed.results ?? {},
       codex: parsed.codex ?? [],
       codexOnCards: parsed.codexOnCards ?? [],
+      misses: parsed.misses ?? {},
     };
   } catch {
-    return { ...EMPTY, results: {}, codex: [], codexOnCards: [] };
+    return fresh();
   }
 }
 
