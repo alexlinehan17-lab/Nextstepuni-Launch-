@@ -19,6 +19,7 @@
 import { type ChairSubject, type GridSession, type ScaleSession, type ScaleLevel } from './types';
 
 const MS = (p: string) => ({ label: `SEC Biology HL marking scheme 2023, ${p}` });
+const MS25 = (p: string) => ({ label: `SEC Biology HL marking scheme 2025, ${p}` });
 
 // A two-outcome "how many marks?" ladder for the penalty sessions.
 const totalScale = (marks: number[]): ScaleLevel[] =>
@@ -257,15 +258,201 @@ const BIO4: GridSession = {
   },
 };
 
+// ───────────────── Bio5 · The answer you crossed out (cancelled answers) ─────────────────
+
+const BIO5: ScaleSession = {
+  mode: 'scale',
+  id: 'bio-cancelled',
+  subject: 'biology',
+  level: 'common',
+  title: 'The answer you crossed out',
+  cue: 'Define (cancelled answers)',
+  question:
+    'What is pollination? [The candidate wrote the full answer, then drew a line through all of it and moved on — with no second version written.]',
+  questionNote:
+    'Question and script authored for this exercise. The cancelled-answer rule is the SEC general convention: an answer written once and then cancelled with no replacement is marked as if it had not been cancelled. Taken from the worked pollination example in the 2023 scheme.',
+  scale: {
+    name: 'Define · 3(3) — three points at 3m',
+    levels: totalScale([0, 3, 6, 9]),
+    notes: [
+      'Pollination scores on three points: transfer of pollen / from anther / to stigma. 3(3) — 9 marks in all.',
+      'The rule (p.4): “Where a candidate answers a question … once only and then cancels the answer, you should ignore the cancelling and treat the answer as if the candidate had not cancelled it.”',
+      'So a correct answer the candidate struck out — with no second version — is still marked in full.',
+      'Three correct points, cancelled once and not replaced: 3 × 3 = 9.',
+    ],
+    cite: MS('p.4 (cancelled answers rule)'),
+  },
+  scripts: [
+    {
+      id: 'bio5-a',
+      label: 'Script A',
+      persona: 'The full, correct answer — then crossed out',
+      work: [
+        'Transfer of pollen, from anther, to stigma',
+        '(all of the above struck through — no replacement written)',
+      ],
+      keyLevelId: 'm9',
+      keyNote:
+        'All three points are there — transfer of pollen, from anther, to stigma — and the candidate then cancelled the lot. Because it was answered once only and not replaced, the examiner ignores the cancelling and marks it as written: full 9. Crossing out your only answer does not un-write it.',
+      embodies: {
+        behaviour: 'Cancels a correct single answer with no replacement — the scheme marks it as if uncancelled.',
+        cite: MS('p.4'),
+      },
+    },
+    {
+      id: 'bio5-b',
+      label: 'Script B',
+      persona: 'Two different versions, hoping both count',
+      work: [
+        'Version 1: Transfer of pollen to the stigma',
+        'Version 2: Transfer of pollen from the anther',
+      ],
+      keyLevelId: 'm6',
+      keyNote:
+        'Two un-cancelled versions. Version 1 gives two points (transfer of pollen, to stigma); version 2 gives two (transfer of pollen, from anther). The scheme marks each version and takes the greater — it does NOT stitch them into a manufactured “all three”. Best single version = 2 points = 6. Points from separate versions cannot be pooled.',
+      embodies: {
+        behaviour: 'Splits points across two versions expecting them to be summed — the scheme takes the greater version, not a combined total.',
+        cite: MS('p.4'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-bio5',
+    rule: 'Crossing out your only answer doesn’t delete it — but you can’t pool two versions.',
+    detail:
+      'If you answer once and cancel it with no replacement, the examiner marks it as if uncancelled, so a struck-out correct answer still scores. But where you give two versions, the scheme takes the better one whole — it will not combine points from both into a total. Commit to one complete answer.',
+    cite: MS('p.4'),
+  },
+};
+
+// ───────────────── Bio6 · It has to match what you named (must-match dependency) ─────────────────
+
+const BIO6: GridSession = {
+  mode: 'grid',
+  id: 'bio-must-match',
+  subject: 'biology',
+  level: 'common',
+  title: 'It has to match what you named',
+  cue: 'Name (must match)',
+  question:
+    'For your investigation into the effect of denaturation on an enzyme, name the enzyme you used, its substrate and its product.',
+  questionNote:
+    'Question authored for this exercise; the answer structure and the “must match named enzyme” dependency are taken from the 2023 enzyme-investigation item (Q9(b)(i)). The substrate and product marks are awarded only where they match the enzyme the candidate named.',
+  grid: {
+    perPoint: [
+      { id: 'enzyme', label: 'Named enzyme', marks: 3 },
+      { id: 'substrate', label: 'Substrate (must match enzyme)', marks: 3 },
+      { id: 'product', label: 'Product (must match enzyme)', marks: 3 },
+    ],
+    shorthand: 'enzyme + substrate + product · 3 + 3 + 3 (substrate & product must match the enzyme)',
+    ruleNote:
+      'The substrate and product marks are conditional: the scheme prints “must match named enzyme”. Name amylase and your substrate must be starch and your product maltose; pair it with “protein” and the substrate mark is gone — even though protein is a real substrate, it belongs to a different enzyme. Internal consistency, not just plausibility, is what scores.',
+    cite: MS('p.11 (enzyme investigation — substrate/product must match named enzyme)'),
+  },
+  scripts: [
+    {
+      id: 'bio6-a',
+      label: 'Script A',
+      persona: 'Right enzyme, mismatched pair',
+      attempts: [
+        {
+          id: 'bio6-a-1',
+          text: 'Enzyme: amylase. Substrate: protein. Product: amino acids.',
+          key: { enzyme: 3, substrate: 0, product: 0 },
+          keyNote:
+            'Amylase is a valid enzyme — 3 marks. But amylase acts on starch to give maltose; “protein” and “amino acids” belong to a protease. Both are real biology, yet neither matches the enzyme named, so both marks are lost. 3 only.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Names a correct enzyme but gives a substrate and product from a different pathway, where the scheme requires them to match the named enzyme.',
+        cite: MS('p.11'),
+      },
+    },
+    {
+      id: 'bio6-b',
+      label: 'Script B',
+      persona: 'Consistent throughout',
+      attempts: [
+        {
+          id: 'bio6-b-1',
+          text: 'Enzyme: amylase. Substrate: starch. Product: maltose.',
+          key: { enzyme: 3, substrate: 3, product: 3 },
+          keyNote:
+            'Amylase, starch, maltose — a single consistent pathway. All three match, all three score: full 9.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-bio6',
+    rule: 'Where the scheme says “must match”, the answer has to be internally consistent.',
+    detail:
+      'Some marks are conditional on an earlier choice: a substrate or product only scores if it matches the enzyme you named. A true fact from a different pathway earns nothing. Pick one example and keep every part of the answer consistent with it.',
+    cite: MS('p.11'),
+  },
+};
+
+// ───────────────── Bio7 · One missing part, half the marks (diagram threshold) ─────────────────
+
+const BIO7: ScaleSession = {
+  mode: 'scale',
+  id: 'bio-diagram-threshold',
+  subject: 'biology',
+  level: 'common',
+  title: 'One missing part, half the marks',
+  cue: 'Draw (diagram)',
+  question:
+    'Draw a labelled diagram of the human female reproductive system. [The scheme awards the diagram mark for showing: vagina and uterus and fallopian tube and ovary.] The candidate’s diagram shows the vagina, uterus and ovary — but no fallopian tube.',
+  questionNote:
+    'Question authored for this exercise; the diagram mark and its “any one missing = 3 marks” threshold are taken from the 2023 female-reproductive-system item (Q14(c)(i)). Only the diagram mark is modelled here, not the separate labels mark. The 2025 scheme prints the same threshold as explicit bands “6, 3, 0”.',
+  scale: {
+    name: 'Diagram · 6, any one missing = 3',
+    levels: totalScale([0, 3, 6]),
+    notes: [
+      'The diagram mark requires four structures: vagina and uterus and fallopian tube and ovary — 6 marks for all four.',
+      'The scheme’s threshold: “(any one missing = 3 marks)”. One structure short drops the whole diagram from 6 to 3.',
+      'Equivalent 2025 items print the bands explicitly as “6, 3, 0” — all four = 6, one missing = 3, none of it shown = 0.',
+      'This diagram omits the fallopian tube — one structure missing — so the mark is the flat 3 the threshold sets, not a proportional “¾ of 6”.',
+    ],
+    cite: MS('p.16 (female reproductive system diagram — any one missing = 3)'),
+  },
+  scripts: [
+    {
+      id: 'bio7-a',
+      label: 'The script',
+      persona: 'Three of the four structures',
+      work: [
+        'Diagram showing the vagina, uterus and ovary',
+        'No fallopian tube drawn',
+      ],
+      keyLevelId: 'm3',
+      keyNote:
+        'Three of the four required structures are there, but the fallopian tube is missing. The scheme does not scale the mark to “¾ of 6” — its threshold is flat: any one missing = 3. One omission costs half the diagram. Check the required structures are all present before you move on.',
+      embodies: {
+        behaviour: 'Omits one required structure from a diagram scored on a fixed “any one missing = 3” threshold.',
+        cite: MS25('p.33 and p.35 (long-bone & male-reproductive diagrams — bands printed “6, 3, 0”)'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-bio7',
+    rule: 'A diagram mark can be threshold-based, not proportional.',
+    detail:
+      'Where the scheme says “any one missing = 3”, leaving out a single required structure drops the whole diagram to the lower band — three-quarters right still scores half. Before moving on, check every structure the scheme wants is actually on your drawing.',
+    cite: MS('p.16'),
+  },
+};
+
 export const BIOLOGY_CHAIR: ChairSubject = {
   id: 'biology',
   label: 'Biology',
   tagline: 'Points, context and the penalty rules that quietly cost marks.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [BIO1, BIO2, BIO3, BIO4],
+  sessions: [BIO1, BIO2, BIO3, BIO4, BIO5, BIO6, BIO7],
   sources: [
     { label: 'SEC LC Biology HL marking scheme 2023, Deferred sitting (examiner-reports/biology/2023-marking-scheme)' },
+    { label: 'SEC LC Biology HL marking scheme 2025 (examiner-reports/biology/2025-hl-marking-scheme)' },
   ],
   coverageNote:
-    'These sessions teach Biology’s general marking conventions — the points notation, the context rule, and the Section A / Sections B/C penalty rules — which the scheme applies at both Higher and Ordinary level. They are verified against the 2023 Higher Level scheme; level-specific worked questions are being added.',
+    'These sessions teach Biology’s general marking conventions — the points notation, the context rule, the cancelled-answer and “must match” consistency rules, the diagram thresholds, and the Section A / Sections B/C penalty rules — which the scheme applies at both Higher and Ordinary level. They are verified against the 2023 Higher Level scheme (the diagram-threshold bands corroborated by the 2025 scheme); level-specific worked questions are being added.',
 };

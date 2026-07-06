@@ -240,15 +240,197 @@ const DCG4: GridSession = {
   },
 };
 
+// ─────────────── DCG5 · Assembly: position beats polish ───────────────
+
+const DCG5: GridSession = {
+  mode: 'grid',
+  id: 'dcg-assembly',
+  subject: 'dcg',
+  level: 'common',
+  title: 'In an assembly, position beats polish',
+  cue: 'Complete the sectional assembly',
+  question:
+    'A 60-mark sectional assembly gives 7 marks for the relative positioning of the main components and a separate 5 marks for the inner detail of the main body. A candidate renders the inner detail of one part beautifully but seats the components in the wrong positions relative to each other.',
+  questionNote:
+    'Scenario authored for this exercise. In a DCG sectional-assembly drawing the relative positioning of the components is itemised as its own granule — the single largest in the question — separate from the detail of any one part.',
+  grid: {
+    perPoint: [
+      { id: 'positioning', label: 'Relative positioning of main components', marks: 7 },
+      { id: 'detail', label: 'Inner detail of the main body', marks: 5 },
+    ],
+    shorthand: 'relative positioning 7 + inner detail 5',
+    ruleNote:
+      'The relative positioning of the components is scored on its own — and it is the biggest single granule in the assembly. Detailing one part perfectly while the parts sit in the wrong places banks the detail mark but forfeits the larger positioning mark. Get the layout of the components right first, then detail them.',
+    cite: MS('p.13 (C-5 assembly: relative positioning of main components 7, inner detail of main body 5)'),
+  },
+  scripts: [
+    {
+      id: 'dcg5-a',
+      label: 'Script A',
+      persona: 'Detail first, layout wrong',
+      attempts: [
+        {
+          id: 'dcg5-a-1',
+          text: 'The inner detail of the main body is drawn cleanly and correctly, but the components are seated in the wrong positions relative to each other.',
+          key: { positioning: 0, detail: 5 },
+          keyNote:
+            'The inner detail earns its 5, but the relative positioning of the components is a separate — and larger — granule, and the parts are in the wrong places. 5 of 12. The single biggest mark in an assembly is arranging the components correctly; polish on one part can’t buy it back.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Details one part well but mispositions the components, forfeiting the larger relative-positioning granule.',
+        cite: MS('p.13'),
+      },
+    },
+    {
+      id: 'dcg5-b',
+      label: 'Script B',
+      persona: 'Layout first',
+      attempts: [
+        {
+          id: 'dcg5-b-1',
+          text: 'The components are seated in their correct relative positions, then the inner detail of the main body is drawn.',
+          key: { positioning: 7, detail: 5 },
+          keyNote:
+            'Both granules are on the page — correct relative positioning and the inner detail. Full 12. Fixing the layout first secured the largest mark before any detail was drawn.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-dcg5',
+    rule: 'In an assembly, get the components’ positions right first.',
+    detail:
+      'DCG scores the relative positioning of an assembly’s components as its own granule — usually the single largest in the question — separate from the detail of any one part. Seat the components correctly before you detail them; a beautifully drawn part in the wrong place still forfeits the bigger positioning mark.',
+    cite: MS('p.13'),
+  },
+};
+
+// ─────────────── DCG6 · A development is true lengths, not a sketch ───────────────
+
+const DCG6: ScaleSession = {
+  mode: 'scale',
+  id: 'dcg-development',
+  subject: 'dcg',
+  level: 'common',
+  title: 'A development is true lengths, not a sketch',
+  cue: 'Develop the surface',
+  question:
+    'A surface development is scored for its accuracy scaffold: locating the apex (1), transferring the longest true generator length (2), establishing the elements (4), then completing it. A candidate, short on time, sketches a development that looks the right shape by eye without transferring any true lengths.',
+  questionNote:
+    'Scenario authored for this exercise. In DCG the surface-development marks are attached to the accuracy scaffold — transferred true lengths and set-up elements — not to a shape that merely looks right.',
+  scale: {
+    name: 'Surface development · /10',
+    levels: ladder([0, 7, 10]),
+    notes: [
+      'The development is scored for transferred true lengths, not for looking right.',
+      'Locating the apex, transferring the true generator length and establishing the elements each carry their own marks — the setup banks 7 before the outline is completed.',
+      'A shape sketched by eye without the transfers scores 0; do the transfers to bank the setup, then complete the outline to finish.',
+    ],
+    cite: MS('p.11 (C-3(c) surface development: apex 1, longest generator 2, 12 elements 4, complete 2)'),
+  },
+  scripts: [
+    {
+      id: 'dcg6-a',
+      label: 'The answer',
+      persona: 'Sketched it by eye',
+      work: [
+        'Draws a development that looks the right shape.',
+        'Never transfers the true generator lengths or steps out the elements.',
+      ],
+      keyLevelId: 'm0',
+      keyNote:
+        '0 — the development marks live in the accuracy scaffold, not the outline. With no true-length transfers and no elements established, there is nothing for the apex, generator and element granules to reward, however right the shape looks. Transfer the true lengths and step out the elements first: that setup banks 7 before you complete the outline.',
+      embodies: {
+        behaviour: 'Sketches a development by eye instead of transferring the scored true lengths and establishing the elements.',
+        cite: MS('p.11'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-dcg6',
+    rule: 'A development scores the true-length transfers, not the shape.',
+    detail:
+      'DCG attaches surface-development marks to the accuracy scaffold — locating the apex, transferring the true generator length, establishing the elements — not to an outline that merely looks right. Step the transfers out on the page; that setup banks most of the marks before you complete the development.',
+    cite: MS('p.11'),
+  },
+};
+
+// ─────────────── DCG7 · Divide into the number it asks for ───────────────
+
+const DCG7: GridSession = {
+  mode: 'grid',
+  id: 'dcg-divisions',
+  subject: 'dcg',
+  level: 'common',
+  title: 'Divide into the number it asks for',
+  cue: 'Divide the circle',
+  question:
+    'A locus construction gives 8 marks for drawing the given diagram and a separate 3 marks for “division of circle into equal parts (12 minimum)”. A candidate draws the diagram correctly but, rushing, divides the circle into only 8 equal parts instead of the required 12.',
+  questionNote:
+    'Scenario authored for this exercise. DCG construction steps that divide a circle or diagram into equal parts specify a minimum count (e.g. “12 minimum”, “min. 7 incl. end points”); the division granule is earned only when that count is reached.',
+  grid: {
+    perPoint: [
+      { id: 'diagram', label: 'Draw the given diagram', marks: 8 },
+      { id: 'divisions', label: 'Division of circle into equal parts (12 minimum)', marks: 3 },
+    ],
+    shorthand: 'given diagram 8 + division into ≥12 parts 3',
+    ruleNote:
+      'The division into equal parts is its own granule, and the scheme states a minimum count — “12 minimum”. Divide into fewer and the granule isn’t satisfied, even though the diagram itself is fine. When a construction step names a number of parts, reach it exactly.',
+    cite: MS('p.12 (C-4 locus: given diagram 8, division of circle into equal parts (12 minimum) 3)'),
+  },
+  scripts: [
+    {
+      id: 'dcg7-a',
+      label: 'Script A',
+      persona: 'Divided into too few',
+      attempts: [
+        {
+          id: 'dcg7-a-1',
+          text: 'The given diagram is drawn correctly, but the circle is divided into only 8 equal parts, not the 12 the step requires.',
+          key: { diagram: 8, divisions: 0 },
+          keyNote:
+            'The diagram earns its 8, but the division granule specifies “12 minimum” and 8 parts doesn’t meet it — 0 for that step. 8 of 11. The count in the instruction is the pass mark for the granule: divide into exactly what it names.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Divides the circle into fewer than the required number of equal parts, missing the specified-minimum division granule.',
+        cite: MS('p.12'),
+      },
+    },
+    {
+      id: 'dcg7-b',
+      label: 'Script B',
+      persona: 'Divided into 12',
+      attempts: [
+        {
+          id: 'dcg7-b-1',
+          text: 'The diagram is drawn and the circle is divided into 12 equal parts, as the step requires.',
+          key: { diagram: 8, divisions: 3 },
+          keyNote:
+            'The diagram and the correct 12-part division are both there. Full 11 — reaching the stated count is all the granule asks.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-dcg7',
+    rule: 'When a step names a number of divisions, hit it.',
+    detail:
+      'DCG steps that divide a circle or diagram into equal parts carry a specified minimum count (“12 minimum”, “min. 7 incl. end points”). The division is its own granule and it’s earned only when you reach that count — dividing into fewer forfeits it even when the rest of the work is right.',
+    cite: MS('p.12'),
+  },
+};
+
 export const DCG_CHAIR: ChairSubject = {
   id: 'dcg',
   label: 'Design & Communication Graphics',
-  tagline: 'Construction over curve, every step scores, method pays, hidden detail counts.',
+  tagline: 'Construction over curve, every step scores, method pays, conventions and setup count.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [DCG1, DCG2, DCG3, DCG4],
+  sessions: [DCG1, DCG2, DCG3, DCG4, DCG5, DCG6, DCG7],
   sources: [
     { label: 'SEC LC DCG HL marking scheme 2025 (examiner-reports/dcg/2025-marking-scheme)' },
   ],
   coverageNote:
-    'These sessions teach the general drawing-marking conventions — construction marked above the finished curve, independently-scored steps, standalone method marks and itemised presentation granules like hidden detail — which apply at both Higher and Ordinary level. Verified against the 2025 Higher Level scheme; level-specific worked drawings are being added.',
+    'These sessions teach the general drawing-marking conventions — construction marked above the finished curve, independently-scored steps, standalone method marks, itemised presentation granules like hidden detail, assembly relative-positioning, the true-length scaffold behind a surface development, and specified-minimum circle divisions — which apply at both Higher and Ordinary level. Verified against the 2025 Higher Level scheme (assembly and development conventions also recur in the 2024 scheme); level-specific worked drawings are being added.',
 };

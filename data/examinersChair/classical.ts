@@ -237,16 +237,177 @@ const CL4: ScaleSession = {
   },
 };
 
+// ─────────────── CL5 · The picture question needs both sources ───────────────
+
+const CL5: ScaleSession = {
+  mode: 'scale',
+  id: 'cl-picture',
+  subject: 'classical-studies',
+  level: 'higher',
+  title: 'Read the picture AND the text',
+  cue: 'Stimulus (picture question)',
+  question:
+    'A Section A picture question gives you an image and an extract from the Aeneid and asks you to agree or disagree with a claim, for 7 marks. A candidate writes a sharp, specific reading of the image — but never once engages the Aeneid text. The scheme says “Discussion of both the text and the image for full marks.” Where does the answer top out?',
+  questionNote:
+    'Scenario authored for this exercise. The 7-mark picture question’s top band requires engaging both the image and the accompanying text; an answer that discusses only one source cannot reach full marks, however good that half is.',
+  scale: {
+    name: 'Picture question · /7',
+    levels: [
+      { id: 'cl5-yn', label: 'Yes/no only', annotation: '1', marks: 1 },
+      { id: 'cl5-basic', label: 'Basic, generic', annotation: '2', marks: 2 },
+      { id: 'cl5-partial', label: 'Partial — one source', annotation: '4', marks: 4 },
+      { id: 'cl5-full', label: 'Full — image and text', annotation: '7', marks: 7 },
+    ],
+    notes: [
+      '“Discussion of both the text and the image for full marks.”',
+      'Full 7: “full, detailed answer, specific points, refers to image and Aeneid.”',
+      'Engage only one source, however well, and the answer can’t clear the partial band.',
+    ],
+    cite: MS('p.6 (Q1(b) picture question)'),
+  },
+  scripts: [
+    {
+      id: 'cl5-a',
+      label: 'The answer',
+      persona: 'Brilliant on the image, silent on the text',
+      work: [
+        'A specific, detailed reading of the image, with a clear stance.',
+        'The Aeneid extract beside it is never discussed.',
+      ],
+      keyLevelId: 'cl5-partial',
+      keyNote:
+        'Capped at partial (4 of 7). Full marks explicitly require discussing both the text and the image, so a one-source answer — however sharp — can’t reach the top band. On a picture question, always turn to the accompanying passage and tie the two sources together; that second source is what unlocks the full 7.',
+      embodies: {
+        behaviour: 'Discusses only one of the two required sources on a picture question — capped below full marks.',
+        cite: MS('p.6'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-cl5',
+    rule: 'On a picture question, discuss both the image and the text.',
+    detail:
+      'Classical Studies picture questions award full marks only for “discussion of both the text and the image”. A brilliant reading of just one source is capped at partial. Always engage both, and connect them.',
+    cite: MS('p.6'),
+  },
+};
+
+// ─────────────── CL6 · A bare “yes” scores one mark ───────────────
+
+const CL6: ScaleSession = {
+  mode: 'scale',
+  id: 'cl-yesno',
+  subject: 'classical-studies',
+  level: 'higher',
+  title: 'A bare “yes” scores one mark',
+  cue: 'Stimulus (personal response)',
+  question:
+    'A 15-mark personal-response question asks you to agree or disagree and explain, with reference to the poetry. A candidate writes “Yes, I agree” — a clear stance — and stops there, with no explanation. The scheme’s floor is explicit: “1 mark – only answers yes or no, no other valid point made.” Where does it land, and what lifts it?',
+  questionNote:
+    'Scenario authored for this exercise. This yes/no floor recurs across the paper: the stance is free, but with no supporting explanation the answer scores the absolute minimum.',
+  scale: {
+    name: 'Personal response · /15',
+    levels: [
+      { id: 'cl6-yn', label: 'Yes/no, nothing more', annotation: '1', marks: 1 },
+      { id: 'cl6-basic', label: 'Basic — limited explanation', annotation: '5', marks: 5 },
+      { id: 'cl6-partial', label: 'Partial — specific points', annotation: '10', marks: 10 },
+      { id: 'cl6-full', label: 'Full — fully developed', annotation: '15', marks: 15 },
+    ],
+    notes: [
+      'Full 15: “opinion given and explanation fully developed.”',
+      'Floor: “1 mark – only answers yes or no, no other valid point made.”',
+      'The stance itself earns nothing — every mark is in the justification.',
+    ],
+    cite: MS('p.10 (Q11(a)(ii) personal response)'),
+  },
+  scripts: [
+    {
+      id: 'cl6-a',
+      label: 'The answer',
+      persona: 'States a view, justifies nothing',
+      work: ['“Yes, I agree.”', 'No explanation, evidence or reference to the poetry follows.'],
+      keyLevelId: 'cl6-yn',
+      keyNote:
+        'The yes/no floor: 1 of 15. A stance with no justification triggers the named minimum, and the same rule appears on other stimulus parts too. Deciding your view is worth nothing on its own — the marks live entirely in the “because…”. Even a couple of specific reasons jump this from 1 to the partial band.',
+      embodies: {
+        behaviour: 'Gives a bare yes/no stance with no supporting explanation — the named yes/no floor.',
+        cite: MS('p.10 (also p.6, p.8)'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-cl6',
+    rule: 'The stance is free; the marks are in the “because”.',
+    detail:
+      'A bare “yes” or “no” with no explanation scores just 1 mark — the named floor across Classical Studies stimulus questions. Never stop at your view; the justification is the entire answer.',
+    cite: MS('p.10'),
+  },
+};
+
+// ─────────────── CL7 · Don’t confuse Greek and Roman ───────────────
+
+const CL7: ScaleSession = {
+  mode: 'scale',
+  id: 'cl-confusion',
+  subject: 'classical-studies',
+  level: 'higher',
+  title: 'Confuse Greek and Roman, lose the marks',
+  cue: 'Stimulus (short answer)',
+  question:
+    'A 6-mark question asks for one developed point on ancient Greek funerary practices. A candidate writes a genuinely well-developed point — but describes Roman practices as if they were Greek, mixing the two cultures. The scheme rules: “max 3 marks if Greek and Roman roles/practices are confused.” Where does this otherwise-strong answer land?',
+  questionNote:
+    'Scenario authored for this exercise. Development normally carries the full 6, but conflating the two cultures triggers a hard cap at 3 — a content-accuracy ceiling, not a development one.',
+  scale: {
+    name: 'Confusion cap · /6',
+    levels: [
+      { id: 'cl7-basic', label: 'Basic, generic', annotation: '2', marks: 2 },
+      { id: 'cl7-confused', label: 'Developed but confused — capped', annotation: '3', marks: 3 },
+      { id: 'cl7-full', label: 'Full — developed and accurate', annotation: '6', marks: 6 },
+    ],
+    notes: [
+      'One developed point earns the full 6 — when the culture is right.',
+      '“max 3 marks if Greek and Roman roles/practices are confused.”',
+      'Conflating the two cultures pulls even a well-developed point down to 3.',
+    ],
+    cite: MS('p.9 (Q9(c) funerary practices)'),
+  },
+  scripts: [
+    {
+      id: 'cl7-a',
+      label: 'The answer',
+      persona: 'Well-developed, wrong culture',
+      work: [
+        'A developed, detailed point about funerary practices.',
+        'But it attributes Roman customs to the Greeks, blurring the two.',
+      ],
+      keyLevelId: 'cl7-confused',
+      keyNote:
+        'Capped at 3 of 6. The development is real, but the confusion cap overrides it — mixing Greek and Roman practices halves what a clean answer would have scored. Keep the two cultures firmly apart: on Classical Studies short answers, factual precision about which world you’re describing is worth as much as the development itself.',
+      embodies: {
+        behaviour: 'Develops a point but attributes Roman practices to Greek culture — triggering the confusion cap.',
+        cite: MS('p.9'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-cl7',
+    rule: 'Keep Greek and Roman apart, or the mark is capped.',
+    detail:
+      'A well-developed funerary-practices answer is capped at “max 3 marks if Greek and Roman roles/practices are confused”. Content accuracy about which culture you’re describing can override development — don’t blur the two worlds.',
+    cite: MS('p.9'),
+  },
+};
+
 export const CLASSICAL_CHAIR: ChairSubject = {
   id: 'classical-studies',
   label: 'Classical Studies',
   tagline: 'Develop your units, answer both parts, argue not narrate.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [CL1, CL2, CL3, CL4],
+  sessions: [CL1, CL2, CL3, CL4, CL5, CL6, CL7],
   sources: [
     { label: 'SEC LC Classical Studies HL marking scheme 2025 (examiner-reports/classical-studies/2025-marking-scheme)' },
     { label: 'SEC LC Classical Studies OL marking scheme 2025 (examiner-reports/classical-studies/2025-ol-marking-scheme)' },
   ],
   coverageNote:
-    'The unit-of-development and Overall Quality sessions apply at both levels (OL softens “develops” to “some development” and drops the top quality tier). The Ordinary session captures OL’s inverted mark split — Section A 300 / essays 100. Verified against the 2025 OL scheme.',
+    'The unit-of-development and Overall Quality sessions apply at both levels (OL softens “develops” to “some development” and drops the top quality tier). The Section A sessions capture the stimulus-question marking grammar — engage both sources on picture questions, the yes/no floor, and the Greek/Roman confusion cap. The Ordinary session captures OL’s inverted mark split — Section A 300 / essays 100. Verified against the 2025 HL and OL schemes.',
 };

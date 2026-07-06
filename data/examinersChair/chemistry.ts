@@ -7,8 +7,9 @@
  * Questions and scripts are AUTHORED for this exercise (labelled in each
  * `questionNote`) — they are not real SEC questions or candidate scripts. The
  * marking grammar (the exact-term demands, the "show your Mr addition" rule,
- * the per-occurrence calculation deduction, and the `//` mutually-exclusive
- * method rule) is the real SEC system, cited to:
+ * the per-occurrence calculation deduction, the units-in-final-answer rule, the
+ * `//` mutually-exclusive method rule, the balanced-equation "(4 × 1 + 2)" split
+ * and the organic structure-drawing deductions) is the real SEC system, cited to:
  *  - SEC LC Chemistry HL marking scheme 2024 —
  *    examiner-reports/chemistry/2024-marking-scheme.*
  *  - Chief Examiner's Report, Chemistry 2013 —
@@ -260,16 +261,209 @@ const CH4: GridSession = {
   },
 };
 
+// ─────────────── Ch5 · Right formulae, wrong balance ───────────────
+
+const CH5: GridSession = {
+  mode: 'grid',
+  id: 'chem-balanced-equation',
+  subject: 'chemistry',
+  level: 'common',
+  title: 'Right formulae, wrong balance',
+  cue: 'Write a balanced equation',
+  question:
+    'Write a balanced chemical equation for the reaction of carbon monoxide with iron(III) oxide. The scheme marks it “(4 × 1 + 2)”: one mark for each of the four correct species formulae, plus two marks for correct balancing. A candidate writes “Fe2O3 + CO → Fe + CO2” — every formula right, but no coefficients, so the atoms don’t balance. What survives?',
+  questionNote:
+    'Scenario authored for this exercise. The mark split “(4 × 1 + 2)” on balanced-equation items is the real SEC shorthand: each species formula is credited on its own (4 × 1), and correct balancing is a separate 2-mark bloc.',
+  grid: {
+    perPoint: [
+      { id: 'formulae', label: 'All four species formulae correct (4 × 1m)', marks: 4 },
+      { id: 'balance', label: 'Correctly balanced (coefficients)', marks: 2 },
+    ],
+    shorthand: '(4 × 1 + 2)',
+    ruleNote:
+      'On a balanced-equation item the scheme splits the marks: each correct species formula scores one mark (here 4 × 1), and correct balancing is a separate two-mark bloc. Correct formulae bank those marks even when the equation is unbalanced — the balancing marks are the only thing an unbalanced equation forfeits. So a wrong equation is rarely a zero.',
+    cite: MS('p.19 (blast-furnace equation, “(4 × 1 + 2)”)'),
+  },
+  scripts: [
+    {
+      id: 'ch5-a',
+      label: 'Script A',
+      persona: 'Correct formulae, unbalanced',
+      attempts: [
+        {
+          id: 'ch5-a-1',
+          text: 'Fe2O3 + CO → Fe + CO2  (all four formulae correct, but no coefficients — the atoms don’t balance).',
+          key: { formulae: 4, balance: 0 },
+          keyNote:
+            'Every species formula is right, so the four formula marks are banked (4). The two balancing marks are lost because the coefficients are missing. 4 of 6 — not the zero many candidates fear from an “unbalanced” equation. The examiner credits the formulae you got right regardless of the balance.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Writes the correct species formulae but leaves the equation unbalanced — a documented discriminator skill the report flags as often poorly done.',
+        cite: CER('p.15'),
+      },
+    },
+    {
+      id: 'ch5-b',
+      label: 'Script B',
+      persona: 'Correct and balanced',
+      attempts: [
+        {
+          id: 'ch5-b-1',
+          text: 'Fe2O3 + 3CO → 2Fe + 3CO2  (formulae correct and fully balanced).',
+          key: { formulae: 4, balance: 2 },
+          keyNote:
+            'Correct formulae (4) plus correct balancing (2) — the full 6. The two marks that separate this from Script A are purely the coefficients.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-chem5',
+    rule: 'Write the correct formulae even if you can’t balance it.',
+    detail:
+      'Balanced-equation items are marked “(4 × 1 + 2)”: a mark for each correct species formula, then a separate bloc for balancing. Get the formulae down — they score on their own. An unbalanced equation with the right species forfeits only the balancing marks, not the lot.',
+    cite: MS('p.19'),
+  },
+};
+
+// ─────────────── Ch6 · Units in the final answer ───────────────
+
+const CH6: ScaleSession = {
+  mode: 'scale',
+  id: 'chem-units',
+  subject: 'chemistry',
+  level: 'common',
+  title: 'Don’t drop the units',
+  cue: 'Calculate',
+  question:
+    'A calculation asks for a concentration. The candidate’s working is right and the final number is right — 0.061 — but they write it as a bare number with no units. The final-answer line is worth 3 marks. What does the missing “mol L–1” cost?',
+  questionNote:
+    'Scenario authored for this exercise. The scheme’s general rule: omitting (or giving incorrect) units in a final answer is a one-mark deduction, unless otherwise indicated.',
+  scale: {
+    name: 'Units in the final answer',
+    levels: [
+      { id: 'm0', label: '0 (value wrong)', annotation: '0', marks: 0 },
+      { id: 'm2', label: '2 (value right, no units)', annotation: '2', marks: 2 },
+      { id: 'm3', label: '3 (value + units)', annotation: '3', marks: 3 },
+    ],
+    notes: [
+      '“For omission of appropriate units (or for incorrect units) in final answers, one mark is deducted, unless otherwise indicated.”',
+      'The deduction is one mark, once — a correct value with no units still banks the rest.',
+      'Incorrect units are treated the same as no units: still −1.',
+    ],
+    cite: MS('p.3 (point 9, units rule)'),
+  },
+  scripts: [
+    {
+      id: 'ch6-a',
+      label: 'The answer',
+      persona: 'Right number, no units',
+      work: ['[Y] = 0.061  (correct value, but written with no units)'],
+      keyLevelId: 'm2',
+      keyNote:
+        'The value is correct, so most of the marks stand — but a final answer with no units drops one mark under the units rule. 2 of 3. Writing “mol L–1” after the number is a free mark you’re throwing away.',
+      embodies: {
+        behaviour: 'Leaves the units off a correct final answer — the exact omission the units rule docks one mark for.',
+        cite: MS('p.3'),
+      },
+    },
+    {
+      id: 'ch6-b',
+      label: 'The answer',
+      persona: 'Right number, with units',
+      work: ['[Y] = 0.061 mol L–1  (correct value and correct units)'],
+      keyLevelId: 'm3',
+      keyNote:
+        'Same working, same number — but the units are there. Full 3 marks. The only difference from the answer above is the unit, and it’s worth a mark every time.',
+    },
+  ],
+  takeaway: {
+    id: 'codex-chem6',
+    rule: 'Always write the units on the final answer.',
+    detail:
+      'Omitting (or getting wrong) the units on a final answer is a one-mark deduction, every calculation, unless the paper says otherwise. The working can be flawless and the number correct — no units still costs a mark. Make writing the unit the last step of every calculation.',
+    cite: MS('p.3'),
+  },
+};
+
+// ─────────────── Ch7 · Draw every atom and bond ───────────────
+
+const CH7: ScaleSession = {
+  mode: 'scale',
+  id: 'chem-structure',
+  subject: 'chemistry',
+  level: 'common',
+  title: 'Every atom and every bond',
+  cue: 'Draw the structure',
+  question:
+    'A question says “Draw the molecular structure of methylpropane, including all atoms and bonds” — worth 3 marks. A candidate draws the carbon skeleton and every H atom, but leaves out the bonds to the H atoms throughout (a condensed sketch). The scheme deducts one mark for H atoms omitted in a systematic way, and one mark for bonds to H atoms omitted in a systematic way. Where does this land?',
+  questionNote:
+    'Scenario authored for this exercise. The scheme deducts one mark for systematically omitted H atoms and one mark for systematically omitted bonds to H atoms in organic structure drawings.',
+  scale: {
+    name: 'Structure: all atoms and bonds',
+    levels: [
+      { id: 'm1', label: '1 (H atoms and their bonds both omitted)', annotation: '1', marks: 1 },
+      { id: 'm2', label: '2 (bonds to H omitted systematically)', annotation: '2', marks: 2 },
+      { id: 'm3', label: '3 (all atoms and all bonds shown)', annotation: '3', marks: 3 },
+    ],
+    notes: [
+      '“One mark is deducted if the H atoms are omitted in a systematic way and one mark is deducted if bonds to H atoms are omitted in a systematic way.”',
+      'The two deductions are independent: miss the H atoms and miss the bonds to H and you lose two marks, not one.',
+      'The question explicitly says “including all atoms and bonds” — a condensed sketch reads as a systematic omission.',
+    ],
+    cite: MS('p.3 (point 8, structure-drawing deductions)'),
+  },
+  scripts: [
+    {
+      id: 'ch7-a',
+      label: 'The answer',
+      persona: 'Skeleton with H atoms, no H bonds',
+      work: [
+        'Draws the four-carbon methylpropane skeleton correctly.',
+        'Writes every H atom in the right place.',
+        'But never draws the C–H bonds — the H atoms just sit beside the carbons throughout.',
+      ],
+      keyLevelId: 'm2',
+      keyNote:
+        'The skeleton and the H atoms are all there, so only one deduction applies: the bonds to H are omitted in a systematic way, −1. 2 of 3. Had the H atoms also been missing, it would be −2. Drawing every C–H bond — as the question literally asks — protects that mark.',
+      embodies: {
+        behaviour: 'Omits the bonds to H atoms systematically in a structure asked for with “all atoms and bonds” — the exact omission point 8 deducts for.',
+        cite: MS('p.3'),
+      },
+    },
+    {
+      id: 'ch7-b',
+      label: 'The answer',
+      persona: 'Full displayed structure',
+      work: [
+        'Draws the four-carbon skeleton.',
+        'Shows every H atom AND every C–H bond explicitly.',
+      ],
+      keyLevelId: 'm3',
+      keyNote:
+        'A fully displayed structure — all atoms, all bonds, nothing implied. Full 3 marks. When the question says “all atoms and bonds”, the displayed formula is the only version that scores everything.',
+    },
+  ],
+  takeaway: {
+    id: 'codex-chem7',
+    rule: 'Draw the displayed structure — every atom, every bond.',
+    detail:
+      'When a structure question says “including all atoms and bonds”, condensed sketches lose marks: one deduction for systematically omitted H atoms, another for systematically omitted bonds to H. Draw the fully displayed formula every time, showing each C–H bond.',
+    cite: MS('p.3'),
+  },
+};
+
 export const CHEMISTRY_CHAIR: ChairSubject = {
   id: 'chemistry',
   label: 'Chemistry',
   tagline: 'Precise terms, shown workings and one method at a time.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [CH1, CH2, CH3, CH4],
+  sessions: [CH1, CH2, CH3, CH4, CH5, CH6, CH7],
   sources: [
     { label: 'SEC LC Chemistry HL marking scheme 2024 (examiner-reports/chemistry/2024-marking-scheme)' },
     { label: 'Chief Examiner’s Report, Chemistry 2013 (examiner-reports/chemistry/2013-chief-examiner)' },
   ],
   coverageNote:
-    'These sessions teach the general conventions — exact-term demands, the Mr rule, the calculation-deduction regime and the // method rule — which the scheme applies at both Higher and Ordinary level. Verified against the 2024 Higher Level scheme; level-specific worked examples are being added.',
+    'These sessions teach the general conventions — exact-term demands, the Mr rule, the calculation-deduction regime, the units rule, the // method rule, balanced-equation part-marking and organic structure-drawing deductions — which the scheme applies at both Higher and Ordinary level. Verified against the 2024 Higher Level scheme (and re-confirmed in the 2025 scheme); level-specific worked examples are being added.',
 };

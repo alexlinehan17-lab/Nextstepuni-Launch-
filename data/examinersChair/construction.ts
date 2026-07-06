@@ -243,15 +243,194 @@ const CS4: GridSession = {
   },
 };
 
+// ─────────────── CS5 · Naming a point is only half — you must discuss it ───────────────
+
+const CS5: GridSession = {
+  mode: 'grid',
+  id: 'cs-point-discussion',
+  subject: 'construction-studies',
+  level: 'higher',
+  title: 'A named point is only half the mark',
+  cue: 'Discuss two benefits',
+  question: 'A “discuss two benefits” part is marked 3 for the point + 3 for the discussion, per benefit (12 marks). A candidate names two correct benefits crisply — “better airtightness”, “lower heating bills” — but writes nothing to develop or justify either.',
+  questionNote:
+    'Scenario authored for this exercise. On Construction Studies discuss/benefit parts each item splits into a mark for STATING the point and a separate, equal mark for DEVELOPING it — so a bare list of correct points forfeits the discussion half.',
+  grid: {
+    perPoint: [
+      { id: 'b1point', label: 'Benefit 1 — point stated', marks: 3 },
+      { id: 'b1disc', label: 'Benefit 1 — discussion', marks: 3 },
+      { id: 'b2point', label: 'Benefit 2 — point stated', marks: 3 },
+      { id: 'b2disc', label: 'Benefit 2 — discussion', marks: 3 },
+    ],
+    shorthand: 'each benefit: point 3 + discussion 3',
+    ruleNote:
+      'The point and its discussion are two separate ticks of equal weight. Naming a benefit banks the point mark but leaves the discussion mark empty — you claim it by explaining the mechanism, the “why”, the benefit to the homeowner. A list of bare points caps at half.',
+    cite: MS('p.44 (Q8(a) — 3 for point, 3 for discussion)'),
+  },
+  scripts: [
+    {
+      id: 'cs5-a',
+      label: 'Script A',
+      persona: 'Names both, develops neither',
+      attempts: [
+        {
+          id: 'cs5-a-1',
+          text: 'Two correct benefits named in a line each — “better airtightness”, “lower heating bills” — with no explanation of how or why.',
+          key: { b1point: 3, b1disc: 0, b2point: 3, b2disc: 0 },
+          keyNote: 'Half the marks. Both points are correct and score their 3, but the discussion tick — an equal 3 per benefit — sits empty because nothing develops them. One sentence each on the mechanism (how airtightness cuts draughts, why that lowers the bill) would have banked the other half.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Lists correct points but does not develop them — forfeiting the discussion half of each mark.',
+        cite: MS('p.44'),
+      },
+    },
+    {
+      id: 'cs5-b',
+      label: 'Script B',
+      persona: 'Point then discussion',
+      attempts: [
+        {
+          id: 'cs5-b-1',
+          text: 'Each benefit named, then a sentence developing it — how the detail works and what it gives the homeowner.',
+          key: { b1point: 3, b1disc: 3, b2point: 3, b2disc: 3 },
+          keyNote: 'Full marks. Every point tick and every discussion tick has something to score against, because each benefit is both stated and explained.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-cs5',
+    rule: 'Naming the point is half the mark — the discussion is the other half.',
+    detail:
+      'Discuss/benefit parts split each item into a point mark and an equal discussion mark (here 3 + 3). A correct bare list caps at 50%; develop every point — the mechanism, the “why”, the benefit — to claim the rest.',
+    cite: MS('p.44'),
+  },
+};
+
+// ─────────────── CS6 · The drawing’s scale & drafting is a separate graded band ───────────────
+
+const CS6: ScaleSession = {
+  mode: 'scale',
+  id: 'cs-scale-drafting',
+  subject: 'construction-studies',
+  level: 'higher',
+  title: 'Neatness is its own eight marks',
+  cue: 'Draw to scale',
+  question: 'On top of the per-element checklist, a big sectional drawing carries a separate 8-mark quality band — Scale 4 + Drafting 4 — graded Excellent 8, Good 6, Fair 4. A candidate shows every correct element but rushes the line-work: freehand, not to scale, cramped and untidy. Where does the quality band land?',
+  questionNote:
+    'Scenario authored for this exercise. Construction Studies major drawings carry a fixed presentation band (Scale 4 + Drafting 4) graded in three tiers on top of the element marks — so drawing quality is scored separately from whether the elements are correct.',
+  scale: {
+    name: 'Scale + Drafting · /8',
+    levels: [
+      { id: 'fair', label: 'Fair', annotation: '4', marks: 4 },
+      { id: 'good', label: 'Good', annotation: '6', marks: 6 },
+      { id: 'excellent', label: 'Excellent', annotation: '8', marks: 8 },
+    ],
+    notes: [
+      'The band is separate from and additional to the element checklist — it scores the whole drawing’s scale and drafting.',
+      'It is graded in three fixed tiers: Excellent 8, Good 6, Fair 4.',
+      'A genuine attempt never drops below Fair 4 — but rushed, out-of-scale, untidy line-work stays there and forfeits the top four marks.',
+    ],
+    cite: MS('p.37, p.43 (Scale 4 + Drafting 4 — Excellent 8 / Good 6 / Fair 4)'),
+  },
+  scripts: [
+    {
+      id: 'cs6-a',
+      label: 'The answer',
+      persona: 'All elements, rushed drafting',
+      work: ['Every credited element shown and labelled.', 'But freehand, not to scale, cramped and untidy.'],
+      keyLevelId: 'fair',
+      keyNote:
+        'Fair — 4 of the 8. The element marks are earned, but the presentation band grades the drawing itself, and rushed, out-of-scale line-work sits at the bottom tier. Drawing to scale with a clean, ruled layout would have lifted the same content to Excellent and banked four more marks — for tidiness, not extra knowledge.',
+      embodies: {
+        behaviour: 'Earns the element marks but neglects scale and drafting — capping the separate quality band at its lowest tier.',
+        cite: MS('p.37'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-cs6',
+    rule: 'Drawing to scale and drafting neatly is a separate 8 marks.',
+    detail:
+      'Major drawings carry a Scale 4 + Drafting 4 band graded Excellent 8 / Good 6 / Fair 4, on top of the element checklist. Correct-but-rushed line-work caps at Fair 4; a scaled, clean drawing banks the full 8 for presentation alone.',
+    cite: MS('p.37'),
+  },
+};
+
+// ─────────────── CS7 · Every brief requirement is a discrete tick you must satisfy ───────────────
+
+const CS7: GridSession = {
+  mode: 'grid',
+  id: 'cs-brief-requirements',
+  subject: 'construction-studies',
+  level: 'higher',
+  title: 'The brief is a checklist',
+  cue: 'Revise the layout',
+  question: 'A “revise the layout” part lists explicit requirements the design must meet, each a 2-mark tick: include a downstairs bathroom (2), create an open-plan kitchen/dining/living area (2), optimise daylight (2). A candidate draws a polished revised layout — open-plan and well-lit — but never adds a downstairs bathroom.',
+  questionNote:
+    'Scenario authored for this exercise. Where a Construction Studies design/layout question lists explicit requirements, each named requirement is a discrete mark the examiner ticks against the brief — a good drawing that ignores one still forfeits that tick.',
+  grid: {
+    perPoint: [
+      { id: 'bathroom', label: 'Downstairs bathroom included', marks: 2 },
+      { id: 'openplan', label: 'Open-plan kitchen/dining/living created', marks: 2 },
+      { id: 'daylight', label: 'Daylight optimised', marks: 2 },
+    ],
+    shorthand: 'each stated requirement: 2 (met / not met)',
+    ruleNote:
+      'These sit on top of the holistic mark for the drawing itself — each is a separate tick for visibly satisfying one line of the brief. A beautiful layout that skips a required feature loses that requirement’s marks outright; the examiner is ticking a checklist against what was asked for.',
+    cite: MS('p.39 (Q3(a) — downstairs bathroom / open-plan / daylight, 2 each)'),
+  },
+  scripts: [
+    {
+      id: 'cs7-a',
+      label: 'Script A',
+      persona: 'Polished layout, one requirement missed',
+      attempts: [
+        {
+          id: 'cs7-a-1',
+          text: 'A clean, well-resolved open-plan layout with daylight optimised — but no downstairs bathroom anywhere on the plan.',
+          key: { bathroom: 0, openplan: 2, daylight: 2 },
+          keyNote: 'A tick lost for nothing. Open-plan and daylight are both satisfied and score, but the downstairs bathroom was named in the brief and isn’t on the drawing, so its 2 marks are gone however good the rest is. Every requirement the question lists is a mark you must visibly deliver.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Produces a strong design but omits one explicitly required feature — forfeiting that requirement’s discrete mark.',
+        cite: MS('p.39'),
+      },
+    },
+    {
+      id: 'cs7-b',
+      label: 'Script B',
+      persona: 'Every requirement met',
+      attempts: [
+        {
+          id: 'cs7-b-1',
+          text: 'The same layout, with a downstairs bathroom added, the open-plan area created, and daylight optimised — all three visible on the plan.',
+          key: { bathroom: 2, openplan: 2, daylight: 2 },
+          keyNote: 'Every requirement tick banked, because each named feature is actually on the drawing. Working straight down the brief’s list guarantees these marks.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-cs7',
+    rule: 'When a question lists requirements, each is a mark you must visibly deliver.',
+    detail:
+      'On design/layout questions the stated brief is a checklist — every named requirement (here 2 marks each) is ticked separately against your drawing. A polished layout that omits a required feature forfeits its mark; satisfy every line of the brief.',
+    cite: MS('p.39'),
+  },
+};
+
 export const CONSTRUCTION_CHAIR: ChairSubject = {
   id: 'construction-studies',
   label: 'Construction Studies',
-  tagline: 'Label every element, sketch when asked, show every layer.',
+  tagline: 'Label every element, sketch when asked, show every layer, develop every point.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [CS1, CS2, CS3, CS4],
+  sessions: [CS1, CS2, CS3, CS4, CS5, CS6, CS7],
   sources: [
     { label: 'SEC LC Construction Studies HL marking scheme 2025 (examiner-reports/construction-studies/2025-marking-scheme)' },
   ],
   coverageNote:
-    'These sessions teach the general conventions — the element draw+annotation split, the note+sketch split and per-step calculation marking — which apply at both Higher and Ordinary level. Verified against the 2025 Higher Level scheme; level-specific worked questions are being added.',
+    'These sessions teach the general conventions — the element draw+annotation split, the note+sketch split, per-step calculation marking, the point+discussion split, the separate scale/drafting quality band and the brief-as-checklist requirement ticks — which apply at both Higher and Ordinary level. Verified against the 2025 Higher Level scheme; level-specific worked questions are being added.',
 };

@@ -7,8 +7,9 @@
  * Questions and scripts are AUTHORED for this exercise (labelled in each
  * `questionNote`) — they are not real SEC questions or candidate scripts. The
  * marking grammar (the per-line workmark system, the discrete "both totals
- * correct" presentation mark, own-figure / transfer marking, and the
- * incorrect-sequence penalty) is the real SEC system, cited to:
+ * correct" presentation mark, own-figure / transfer marking, the
+ * incorrect-sequence penalty, the statement-heading mark, and the General
+ * Journal "Being…" narration mark) is the real SEC system, cited to:
  *  - SEC LC Accounting HL marking scheme 2024 —
  *    examiner-reports/accounting/2024-marking-scheme.*
  * Claim-by-claim record: compliance/evidence/examiners-chair.md.
@@ -234,16 +235,184 @@ const AC4: ScaleSession = {
   },
 };
 
+// ─────────────── Ac5 · Published-accounts sequence penalty ───────────────
+
+const AC5: ScaleSession = {
+  mode: 'scale',
+  id: 'acc-sequence',
+  subject: 'accounting',
+  level: 'higher',
+  title: 'Right figures, wrong order',
+  cue: 'Published accounts',
+  question:
+    'Published (statutory) accounts follow a fixed, prescribed sequence of entries. A candidate computes every figure in a Published Profit & Loss section correctly, but lists three of the entries in the wrong place in that sequence. The arithmetic is perfect. Is anything lost?',
+  questionNote:
+    'Scenario authored for this exercise. The published-accounts format sequence is itself examinable: the 2024 scheme opens Q2 (Published Accounts) with a standing note that penalties apply where entries are in incorrect sequence, and the annotation legend prices a misplaced entry at −1.',
+  scale: {
+    name: 'Correct sequence',
+    levels: [
+      { id: 'm0', label: '0 (statutory order abandoned)', annotation: '0', marks: 0 },
+      { id: 'm2', label: '2 (three entries out of sequence, −1 each)', annotation: '−3', marks: 2 },
+      { id: 'm5', label: '5 (correct statutory sequence)', annotation: '5', marks: 5 },
+    ],
+    notes: [
+      'Published accounts follow a fixed statutory sequence — the order of the entries is marked, not just the figures.',
+      'Right figures in the wrong order are penalised: −1 for each entry out of sequence, even when every number is arithmetically correct.',
+      'Learn the layout cold so the marks your figures earn aren’t chipped away by presentation penalties.',
+    ],
+    cite: MS('p.10 (incorrect-sequence penalty), p.34 (−1 penalty: misplaced figure)'),
+  },
+  scripts: [
+    {
+      id: 'ac5-a',
+      label: 'The Published P&L',
+      persona: 'Correct figures, jumbled order',
+      work: ['Every figure is arithmetically correct.', 'Three entries sit in the wrong place in the statutory sequence.'],
+      keyLevelId: 'm2',
+      keyNote:
+        'Three marks gone to −1 penalties — the figures were all right, but published accounts are marked on layout as well as arithmetic. In the statutory format the order is examinable: “Penalties are applied where entries are in incorrect sequence.” Memorise the prescribed sequence so correct figures actually keep the marks they earn.',
+      embodies: {
+        behaviour: 'Places arithmetically-correct entries in the wrong statutory sequence — incurring the incorrect-sequence penalty.',
+        cite: MS('p.10'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-ac5',
+    rule: 'In published accounts, the order is marked too.',
+    detail:
+      'Statutory published accounts follow a prescribed sequence, and entries in the wrong order are penalised −1 each — even when every figure is correct. Learn the layout so presentation penalties don’t chip away the marks your arithmetic earned.',
+    cite: MS('p.10'),
+  },
+};
+
+// ─────────────── Ac6 · The General Journal narration mark ───────────────
+
+const AC6: GridSession = {
+  mode: 'grid',
+  id: 'acc-journal',
+  subject: 'accounting',
+  level: 'higher',
+  title: 'The narration is a mark',
+  cue: 'General Journal',
+  question:
+    'A General Journal entry (correction of errors) earns marks for the debit line, the credit line, AND the one-line “Being…” narration that explains it. One candidate posts the figures perfectly but writes no narration; another adds the narration line.',
+  questionNote:
+    'Scenario authored for this exercise; figures simplified. In the General Journal the marking is real: each entry awards the debit, the credit, and a discrete mark for the “Being the correction of…” narration — a mark candidates routinely leave on the table.',
+  grid: {
+    perPoint: [
+      { id: 'debit', label: 'Debit entry correct', marks: 2 },
+      { id: 'credit', label: 'Credit entry correct', marks: 2 },
+      { id: 'narration', label: '“Being…” narration', marks: 1 },
+    ],
+    shorthand: 'Dr 2 · Cr 2 · Being… 1',
+    ruleNote:
+      'The narration (“Being the posting of…”) is a separately-awarded mark, not decoration. A correctly-posted entry with no narration banks the debit and credit but forfeits the narration mark on every single entry.',
+    cite: MS('p.25 (General Journal — “Being…” narration [1])'),
+  },
+  scripts: [
+    {
+      id: 'ac6-a',
+      label: 'Script A',
+      persona: 'Figures only, no narration',
+      attempts: [
+        {
+          id: 'ac6-a-1',
+          text: 'Dr Bank €900; Cr Bad debt recovered €900. (No “Being…” line written.)',
+          key: { debit: 2, credit: 2, narration: 0 },
+          keyNote:
+            'Debit and credit are both correct — 4 of 5 banked — but the narration mark is gone because no “Being…” line was written. Multiply that by every journal entry on the paper and the skipped narrations add up to a real block of marks. The narration is quick and it is marked: always write it.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Posts a correct journal entry but omits the “Being…” narration — forfeiting the narration mark on every entry.',
+        cite: MS('p.25'),
+      },
+    },
+    {
+      id: 'ac6-b',
+      label: 'Script B',
+      persona: 'Full entry, narration included',
+      attempts: [
+        {
+          id: 'ac6-b-1',
+          text: 'Dr Bank €900; Cr Bad debt recovered €900; “Being the posting of a bad debt recovered which had been omitted from the accounts.”',
+          key: { debit: 2, credit: 2, narration: 1 },
+          keyNote:
+            'Full marks — the same correct posting, plus the one-line narration that the first script skipped. The narration takes seconds and secures a mark on every entry; it is the cheapest habit to build in the Correction-of-Errors question.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-ac6',
+    rule: 'Write the “Being…” — the narration is a mark.',
+    detail:
+      'Every General Journal entry awards a discrete mark for the “Being the correction of…” narration, on top of the debit and credit. Skipping it forfeits a mark on every single entry — always write the one-line narration.',
+    cite: MS('p.25'),
+  },
+};
+
+// ─────────────── Ac7 · The statement-heading mark ───────────────
+
+const AC7: ScaleSession = {
+  mode: 'scale',
+  id: 'acc-heading',
+  subject: 'accounting',
+  level: 'higher',
+  title: 'The heading is worth a mark',
+  cue: 'Prepare accounts',
+  question:
+    'Every financial statement earns a mark for a correct, fully-dated heading — the business name, the statement type, and the period it covers. A candidate under time pressure dives straight into the figures with a bare, undated heading. What does that cost?',
+  questionNote:
+    'Scenario authored for this exercise. The 2024 scheme awards [1] for a correctly-titled, dated statement heading — e.g. “Trading Profit and Loss Account of Yeats Ltd for the year ended 31/12/2023 [1]” and “Manufacturing account for Sexton Ltd for year ended 31/12/2023 [1]”.',
+  scale: {
+    name: 'Statement heading',
+    levels: [
+      { id: 'm0', label: '0 (no proper heading)', annotation: '0', marks: 0 },
+      { id: 'm1', label: '1 (full dated heading)', annotation: '1', marks: 1 },
+    ],
+    notes: [
+      'Every statement earns a mark for a correct heading: the business name, the statement type, and the period it covers.',
+      'A bare, undated, or mislabelled heading forfeits that mark — however good the figures beneath it are.',
+      'Write the full dated title first, every time — it is among the cheapest marks on the paper.',
+    ],
+    cite: MS('p.3, p.6 (statement heading [1])'),
+  },
+  scripts: [
+    {
+      id: 'ac7-a',
+      label: 'The statement',
+      persona: 'Straight into the figures',
+      work: ['Starts writing figures immediately under a one-word label.', 'No business name and no period/date on the heading.'],
+      keyLevelId: 'm0',
+      keyNote:
+        'The heading mark is forfeited — the scheme awards [1] for a properly named and dated title, and this heading has neither the business name nor the period. It’s a free, independent mark that costs nothing but the discipline of writing the full title before the first figure. Head every statement in full.',
+      embodies: {
+        behaviour: 'Submits a statement with no properly named, dated heading — forfeiting the heading mark.',
+        cite: MS('p.3'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-ac7',
+    rule: 'Head every statement in full — it’s a mark.',
+    detail:
+      'Each statement awards a mark for a correct heading: business name, statement type, and period. A bare or undated title forfeits it regardless of the figures below. Write the full dated title first, every time — it’s one of the cheapest marks on the paper.',
+    cite: MS('p.3'),
+  },
+};
+
 export const ACCOUNTING_CHAIR: ChairSubject = {
   id: 'accounting',
   label: 'Accounting',
-  tagline: 'Workmarks, balancing and own-figure marking.',
+  tagline: 'Workmarks, balancing, own-figure marking and format marks.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [AC1, AC2, AC3, AC4],
+  sessions: [AC1, AC2, AC3, AC4, AC5, AC6, AC7],
   sources: [
     { label: 'SEC LC Accounting HL marking scheme 2024 (examiner-reports/accounting/2024-marking-scheme)' },
     { label: 'SEC LC Accounting OL marking scheme 2024 (examiner-reports/accounting/2024-ol-marking-scheme)' },
   ],
   coverageNote:
-    'The workmark and own-figure sessions apply at both levels (note: OL has no “both totals correct” balance-sheet mark). The Ordinary session is verified against the 2024 OL scheme. More OL sessions are being added.',
+    'The workmark, own-figure, sequence, journal-narration and statement-heading sessions apply at both levels (note: OL has no “both totals correct” balance-sheet mark). The Ordinary session is verified against the 2024 OL scheme. More OL sessions are being added.',
 };

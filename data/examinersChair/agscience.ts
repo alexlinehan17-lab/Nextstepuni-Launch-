@@ -240,15 +240,170 @@ const AG4: ScaleSession = {
   },
 };
 
+// ─────────────── Ag5 · The context rule ───────────────
+
+const AG5: ScaleSession = {
+  mode: 'scale',
+  id: 'ag-context',
+  subject: 'agricultural-science',
+  level: 'common',
+  title: 'Right word, wrong statement',
+  cue: 'Explain',
+  question:
+    'Explain one way earthworms improve soil structure. The line is worth 6 marks. A candidate writes: “Earthworms improve soil structure by compacting the soil so that air and water cannot pass through.” The key term “soil structure” is on the page — but does it score?',
+  questionNote:
+    'Scenario authored for this exercise. The context rule is real: a correct term embedded in a contradicted or incorrect statement is not credited — the scheme withholds the marks where there is evidence of incorrect use or contradiction.',
+  scale: {
+    name: 'Term used in context',
+    levels: bandScale([0, 6]),
+    notes: [
+      'The keywords “soil structure” and “air and water” are all present.',
+      'But the mechanism is contradicted: earthworms improve structure by burrowing and aerating, not by compacting so air and water cannot pass.',
+      'Context rule: “words, expressions or phrases must be correctly used in context and not contradicted … the marks may not be awarded.”',
+      'The right words in a contradicted statement earn nothing — this is not keyword-spotting.',
+    ],
+    cite: MS('p.3 (correctly used in context and not contradicted)'),
+  },
+  scripts: [
+    {
+      id: 'ag5-a',
+      label: 'The answer',
+      persona: 'Keywords present, mechanism wrong',
+      work: [
+        'Earthworms improve soil structure by compacting the soil',
+        'so that air and water cannot pass through.',
+        '(right terms — but the mechanism is the opposite of the truth)',
+      ],
+      keyLevelId: 'm0',
+      keyNote:
+        'The term “soil structure” is on the page, but it sits inside a statement that contradicts the science — so the marks are withheld entirely. Examiners do not scan for keywords; the surrounding sentence has to be correct. Learn the mechanism, not just the vocabulary: “earthworms burrow and aerate the soil, improving structure” scores; the same words wrapped around the wrong process score nothing.',
+      embodies: {
+        behaviour: 'Uses the correct term inside a contradicted statement — the scheme withholds the marks.',
+        cite: MS('p.3'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-ag5',
+    rule: 'A right term in a wrong statement scores nothing.',
+    detail:
+      'Ag Science only credits terms “correctly used in context and not contradicted”. Naming the keyword is not enough — if the surrounding sentence is wrong or self-contradicting, the marks are withheld. Get the mechanism right, then the vocabulary pays.',
+    cite: MS('p.3'),
+  },
+};
+
+// ─────────────── Ag6 · Two versions, no manufactured total ───────────────
+
+const AG6: ScaleSession = {
+  mode: 'scale',
+  id: 'ag-two-versions',
+  subject: 'agricultural-science',
+  level: 'common',
+  title: 'You get the better version, not the sum',
+  cue: 'Two versions of an answer',
+  question:
+    'Give three roles of water in a plant — the line is worth 6 marks (three points at 2). Unsure, the candidate answers twice without crossing anything out. Version 1: “transport of dissolved minerals; raw material for photosynthesis.” Version 2: “used in photosynthesis; keeps cells turgid for support.” Between them that is three distinct roles. What does it score?',
+  questionNote:
+    'Scenario authored for this exercise. The rule is real: where two un-cancelled versions of an answer are given, the examiner marks both and accepts the greater — but may not combine points from both versions to arrive at a manufactured total.',
+  scale: {
+    name: 'Two un-cancelled versions',
+    levels: bandScale([0, 4, 6]),
+    notes: [
+      'Version 1 scores two roles = 4; Version 2 scores two roles = 4 (photosynthesis overlaps).',
+      'Rule: “mark both and accept the answer that yields the greater number of marks.”',
+      '“You may not, however, combine points from both versions to arrive at a manufactured total.”',
+      'So the distinct third role across the two versions cannot be added in — the line takes the better single version, 4, not 6.',
+    ],
+    cite: MS('p.4 (mark both, accept the greater; no manufactured total)'),
+  },
+  scripts: [
+    {
+      id: 'ag6-a',
+      label: 'The answer',
+      persona: 'Hedges with two versions',
+      work: [
+        'V1: transport of dissolved minerals; raw material for photosynthesis.',
+        'V2: used in photosynthesis; keeps cells turgid for support.',
+        '(three distinct roles across the two — but only within one version each)',
+      ],
+      keyLevelId: 'm4',
+      keyNote:
+        'The examiner marks both versions and keeps the better one — here each is worth 4 — but cannot stitch the unique point from each together into 6. Writing the answer twice does not bank more; it just picks your strongest single attempt. Put all three roles in one clear answer and the full 6 is there. Hedging with a second version caps you at the better of the two.',
+      embodies: {
+        behaviour: 'Splits the answer across two un-cancelled versions, hoping the points sum — the scheme takes the greater single version.',
+        cite: MS('p.4'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-ag6',
+    rule: 'Two versions get you the better one, never the sum.',
+    detail:
+      'When a candidate leaves two un-cancelled answers, Ag Science marks both and awards the greater — it will not combine points from both into a manufactured total. Commit to one complete answer; splitting your points across two attempts caps you at your strongest single version.',
+    cite: MS('p.4'),
+  },
+};
+
+// ─────────────── Ag7 · The asterisked exact term ───────────────
+
+const AG7: ScaleSession = {
+  mode: 'scale',
+  id: 'ag-asterisk',
+  subject: 'agricultural-science',
+  level: 'common',
+  title: 'When only the exact word will do',
+  cue: 'Name (exact term)',
+  question:
+    'Name the plant tissue that transports water from the roots up to the leaves. In the scheme this term is asterisked — the only acceptable answer is the specific word. The candidate writes “the water-carrying tubes”. The line is worth 4 marks. What does it score?',
+  questionNote:
+    'Scenario authored for this exercise. The asterisk rule is real: synonyms are generally accepted, but where the scheme marks a term with an asterisk the only acceptable answer is that specific word or term, and near-misses or descriptions are refused.',
+  scale: {
+    name: 'Asterisked exact term',
+    levels: bandScale([0, 4]),
+    notes: [
+      'Normally synonyms are fine — but an asterisk overrides that.',
+      'Asterisk rule: “the only acceptable answer is a specific word or term.”',
+      '“Xylem” scores; a description like “the water-carrying tubes” is not the exact term, so it earns nothing.',
+      'On an asterisked line, a paraphrase is worth zero — the specific scientific word is the whole mark.',
+    ],
+    cite: MS('p.3 (asterisk: only acceptable answer is a specific word or term)'),
+  },
+  scripts: [
+    {
+      id: 'ag7-a',
+      label: 'The answer',
+      persona: 'Describes instead of naming',
+      work: [
+        'The water-carrying tubes.',
+        '(the idea is right — but the exact term “xylem” is what the asterisk demands)',
+      ],
+      keyLevelId: 'm0',
+      keyNote:
+        'The candidate clearly knows what the tissue does, but an asterisked line will only accept the precise term — “xylem” — and a description scores nothing. Most Ag Science lines take synonyms; the asterisk is the exception where the exact scientific word is the whole mark. When a question asks you to name a specific term, name it: don’t paraphrase your way around a word you half-remember.',
+      embodies: {
+        behaviour: 'Gives a correct description instead of the exact asterisked term — which the scheme refuses.',
+        cite: MS('p.3'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-ag7',
+    rule: 'On an asterisked term, only the exact word scores.',
+    detail:
+      'Ag Science accepts synonyms on most lines, but an asterisk marks a term where “the only acceptable answer is a specific word or term”. A description or near-synonym earns zero there. When a line asks you to name a precise scientific term, write that term — not a paraphrase of it.',
+    cite: MS('p.3'),
+  },
+};
+
 export const AG_SCIENCE_CHAIR: ChairSubject = {
   id: 'agricultural-science',
   label: 'Agricultural Science',
-  tagline: 'Front-loaded points, surplus penalties, method marks and holistic coursework.',
+  tagline: 'Front-loaded points, surplus penalties, method marks, the context rule and holistic coursework.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [AG1, AG2, AG3, AG4],
+  sessions: [AG1, AG2, AG3, AG4, AG5, AG6, AG7],
   sources: [
     { label: 'SEC LC Agricultural Science HL marking scheme 2024 (examiner-reports/agricultural-science/2024-marking-scheme)' },
   ],
   coverageNote:
-    'These sessions teach the general conventions — front-loaded points, the surplus-answer penalty, the calculation method mark and the IIS holistic banding — which apply at both Higher and Ordinary level. Verified against the 2024 Higher Level scheme; level-specific worked examples are being added.',
+    'These sessions teach the general conventions — front-loaded points, the surplus-answer penalty, the calculation method mark, the IIS holistic banding, the context rule (a right term in a contradicted statement scores nothing), the two-versions "greater not sum" rule, and asterisked exact terms — which apply at both Higher and Ordinary level. Verified against the 2024 Higher Level scheme; level-specific worked examples are being added.',
 };

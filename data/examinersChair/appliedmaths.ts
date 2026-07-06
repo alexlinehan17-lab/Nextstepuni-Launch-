@@ -19,6 +19,7 @@
 import { type ChairSubject, type ScaleSession, type ScaleLevel } from './types';
 
 const MS = (p: string) => ({ label: `SEC Applied Mathematics HL marking scheme 2024, ${p}` });
+const MS23 = (p: string) => ({ label: `SEC Applied Mathematics HL marking scheme 2023, ${p}` });
 
 const ladder = (marks: number[]): ScaleLevel[] =>
   marks.map(m => ({ id: `m${m}`, label: `${m} marks`, annotation: `${m}`, marks: m }));
@@ -212,15 +213,157 @@ const AM4: ScaleSession = {
   },
 };
 
+// ─────────────── AM5 · Different valid attempts (the solidus) ───────────────
+
+const AM5: ScaleSession = {
+  mode: 'scale',
+  id: 'am-different-attempts',
+  subject: 'applied-maths',
+  level: 'common',
+  title: 'Your method doesn’t have to match the model',
+  cue: 'Solve',
+  question: 'A 15-mark graph part asks for a minimum spanning tree. The scheme prints the model answer using Kruskal’s algorithm. A candidate builds the same tree correctly using Prim’s algorithm instead. Anxious it isn’t the “expected” method, they wonder if it’s docked. What does a fully-correct alternative method score?',
+  questionNote:
+    'Scenario authored for this exercise. Instruction 3: “A solidus (/) indicates different valid attempts”, and the scheme prints the model minimum-spanning-tree answer in two columns — Kruskal’s and Prim’s — as equally valid.',
+  scale: {
+    name: 'Valid alternative method · /15',
+    levels: ladder([12, 15]),
+    notes: [
+      'Instruction 3: “A solidus (/) indicates different valid attempts.”',
+      'The scheme shows one correct solution, but “alternative valid answers are acceptable”.',
+      'A different but fully-correct method is NOT an error — it scores full marks (15), not the one-error rung (12).',
+      'Using Prim’s where the model shows Kruskal’s loses nothing.',
+    ],
+    cite: MS('p.3 (instruction 3, solidus = different valid attempts); p.6 (MST shown as Kruskal / Prim)'),
+  },
+  scripts: [
+    {
+      id: 'am5-a',
+      label: 'The answer',
+      persona: 'Right tree, different algorithm',
+      work: ['Builds the correct minimum spanning tree.', 'Uses Prim’s algorithm; the model solution used Kruskal’s.'],
+      keyLevelId: 'm15',
+      keyNote:
+        'Full 15 — a valid alternative method is not a systemic error, so it never drops to the 12 rung. The scheme states plainly that it shows only one correct solution and that alternative valid answers are acceptable; the solidus in the model answers is there precisely because more than one route is right. Solve it the way you know cleanly; don’t burn time converting to the “expected” method.',
+      embodies: {
+        behaviour: 'Uses a valid alternative method to the model solution — which earns full marks, not a reduced scale.',
+        cite: MS('p.3'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-am5',
+    rule: 'A different valid method earns full marks.',
+    detail:
+      'The Applied Maths scheme shows one correct solution but states alternative valid answers are acceptable — the solidus (/) in the model answers marks genuinely different valid attempts. A fully-correct method that isn’t the “expected” one is not an error and loses nothing. Solve it your way; don’t convert to match the model.',
+    cite: MS('p.3'),
+  },
+};
+
+// ─────────────── AM6 · Per-item deduction on a listing question ───────────────
+
+const AM6: ScaleSession = {
+  mode: 'scale',
+  id: 'am-per-item-deduction',
+  subject: 'applied-maths',
+  level: 'common',
+  title: 'On a list, each wrong entry costs just one',
+  cue: 'List',
+  question: 'A 10-mark question asks the candidate to fill a dependency table with twelve entries (activities A to L). It is NOT marked on a systemic-error scale — the scheme deducts 1 mark for each incorrect entry. A candidate fills in all twelve rows and gets three of them wrong. What does it score?',
+  questionNote:
+    'Scenario authored for this exercise. The 2023 scheme marks this listing item “10” with the instruction “–1 for each incorrect part A to L” — a linear per-entry deduction, not the banded systemic-error scale.',
+  scale: {
+    name: 'Per-item deduction · /10',
+    levels: ladder([7, 9, 10]),
+    notes: [
+      'This listing item is marked “–1 for each incorrect part A to L”, not on the systemic-error scale.',
+      'So each wrong entry costs exactly 1 mark: one wrong → 9, two wrong → 8, three wrong → 7.',
+      'A blank row scores nothing and can never gain — a guessed row costs only 1 if wrong.',
+      'Fill in every row: the expected value of attempting always beats leaving it blank.',
+    ],
+    cite: MS23('p.15 (Q9(i), “–1 for each incorrect part A to L”)'),
+  },
+  scripts: [
+    {
+      id: 'am6-a',
+      label: 'The answer',
+      persona: 'Full table, three slips',
+      work: ['Fills in all twelve dependency rows, A to L.', 'Three of the entries are incorrect.'],
+      keyLevelId: 'm7',
+      keyNote:
+        '7 of 10 — three wrong entries at −1 each. Because this item deducts per entry rather than banding on a scale, the arithmetic is simply full marks minus the number of wrong rows. That flips the usual instinct: never leave a row blank to “play safe”, because a blank banks nothing while a wrong guess costs only 1. On per-item listing questions, attempt every single row.',
+      embodies: {
+        behaviour: 'Attempts every entry on a per-item-deduction listing question, where each wrong entry costs only 1 mark.',
+        cite: MS23('p.15'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-am6',
+    rule: 'On per-item lists, fill every row — each wrong one costs only 1.',
+    detail:
+      'Some Applied Maths listing/table items are marked “–1 for each incorrect part”, not on the banded scale. Each wrong entry costs exactly one mark and a blank gains nothing, so the expected value of attempting every row always beats leaving gaps. Never leave a row blank to play safe.',
+    cite: MS23('p.15'),
+  },
+};
+
+// ─────────────── AM7 · The free-body diagram is worth marks ───────────────
+
+const AM7: ScaleSession = {
+  mode: 'scale',
+  id: 'am-force-diagram',
+  subject: 'applied-maths',
+  level: 'common',
+  title: 'The force diagram is a scoring part, not scaffolding',
+  cue: 'Draw',
+  question: 'The first part of a mechanics question, 2(a)(i), asks only for a labelled force diagram of the system — no equations. The scheme allocates it 10 marks. A candidate treats it as rough working and jumps straight to the equations of motion. What was on the table for the diagram alone?',
+  questionNote:
+    'Scenario authored for this exercise. In the 2024 scheme, part 2(a)(i) — a labelled force (free-body) diagram — is allocated 10 marks in its own right, before any equation is written.',
+  scale: {
+    name: 'Force diagram · /10',
+    levels: ladder([0, 9, 10]),
+    notes: [
+      'The diagram-only part 2(a)(i) is worth 10 marks on its own.',
+      'A complete, correctly-labelled force diagram banks all 10.',
+      'One missing or mislabelled force is a slip: 10 − 1 = 9.',
+      'Skipping the diagram to start on the equations forfeits the whole 10.',
+    ],
+    cite: MS('p.7 (Q2(a)(i), labelled force diagram allocated 10 marks)'),
+  },
+  scripts: [
+    {
+      id: 'am7-a',
+      label: 'The answer',
+      persona: 'Draws the full diagram first',
+      work: ['Draws every force acting on the system.', 'Labels each — weights, tensions, reaction, friction — correctly.'],
+      keyLevelId: 'm10',
+      keyNote:
+        'Full 10 — the diagram is its own marked part, not scaffolding for the equations. Every force present and correctly labelled banks the lot; a single missing or mislabelled force would be a −1 slip (9), and skipping the sketch to dive into the equations of motion forfeits all 10. Always draw the labelled force diagram first: it is often the easiest marks in the question.',
+      embodies: {
+        behaviour: 'Draws a complete, correctly-labelled force diagram — a standalone marked part worth 10.',
+        cite: MS('p.7'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-am7',
+    rule: 'Draw the labelled force diagram — it banks marks on its own.',
+    detail:
+      'In Applied Maths mechanics questions the labelled force (free-body) diagram is a scoring part in its own right — up to 10 marks before a single equation is written. Treat it as an answer, not rough scaffolding: draw every force and label it, and never skip it to jump to the equations.',
+    cite: MS('p.7'),
+  },
+};
+
 export const APPLIED_MATHS_CHAIR: ChairSubject = {
   id: 'applied-maths',
   label: 'Applied Mathematics',
   tagline: 'Blunders, slips and the floor a real attempt always banks.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [AM1, AM2, AM3, AM4],
+  sessions: [AM1, AM2, AM3, AM4, AM5, AM6, AM7],
   sources: [
     { label: 'SEC LC Applied Mathematics HL marking scheme 2024 (examiner-reports/applied-maths/2024-marking-scheme)' },
+    { label: 'SEC LC Applied Mathematics HL marking scheme 2023 (examiner-reports/applied-maths/2023-marking-scheme)' },
   ],
   coverageNote:
-    'These sessions teach the general marking system — the blunder/slip/misreading tariff, the systemic-error scale floor and the name-the-method mark — which applies at both Higher and Ordinary level. Verified against the 2024 Higher Level scheme; level-specific worked examples are being added.',
+    'These sessions teach the general marking system — the blunder/slip/misreading tariff, the systemic-error scale floor, the name-the-method mark, the solidus = different-valid-attempts rule, the per-item “−1 for each incorrect part” listing deduction, and the standalone marks a labelled force diagram earns — which applies at both Higher and Ordinary level. Verified against the 2024 and 2023 Higher Level schemes; level-specific worked examples are being added.',
 };
