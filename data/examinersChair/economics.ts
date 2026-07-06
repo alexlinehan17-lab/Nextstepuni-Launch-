@@ -476,16 +476,527 @@ const EC7: ScaleSession = {
   },
 };
 
+// ─────────────── EC8 · Write it in full — abbreviations score nothing ───────────────
+
+const EC8: GridSession = {
+  mode: 'grid',
+  id: 'ec-in-full',
+  subject: 'economics',
+  level: 'higher',
+  title: 'Spell it out',
+  cue: 'Write out in full',
+  question: 'A “read the diagram” part gives you a labelled curve and asks you to write out in full what each numbered item represents. The instruction is explicit: “Do not use abbreviations.” The three items are Marginal cost, Average revenue = Demand, and Marginal revenue. A candidate writes “MC”, “AR = D”, “MR” — the right terms, in shorthand.',
+  questionNote:
+    'Scenario authored for this exercise. The instruction “Write out in full … Do not use abbreviations” is real HL marking grammar — an abbreviation of a correct term does not satisfy the cue for that item.',
+  grid: {
+    perPoint: [
+      { id: 'item1', label: 'Item 1 — Marginal cost (in full)', marks: 2 },
+      { id: 'item2', label: 'Item 2 — Average revenue = Demand (in full)', marks: 2 },
+      { id: 'item3', label: 'Item 3 — Marginal revenue (in full)', marks: 2 },
+    ],
+    shorthand: 'write out in full · abbreviations N/A',
+    ruleNote:
+      'Each item is its own mark, and the cue demands the full term. “MC” is the correct concept but the wrong form — the scheme says “Do not use abbreviations”, so shorthand forfeits that item’s mark even though the candidate clearly knows it. Being right is not enough when the form is specified.',
+    cite: MS('p.20 (write out in full; do not use abbreviations)'),
+  },
+  scripts: [
+    {
+      id: 'ec8-a',
+      label: 'Script A',
+      persona: 'Right terms, in shorthand',
+      attempts: [
+        {
+          id: 'ec8-a-1',
+          text: '“1. MC   2. AR = D   3. MR” — the correct concepts, but abbreviated.',
+          key: { item1: 0, item2: 0, item3: 0 },
+          keyNote: 'The candidate plainly knows the terms, but the cue said “write out in full … do not use abbreviations.” Each abbreviated item forfeits its mark. Correct knowledge in the wrong form scores nothing here — the instruction is the mark.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Abbreviates correct terms where the cue demands them written out in full — a documented forfeiting form.',
+        cite: MS('p.20'),
+      },
+    },
+    {
+      id: 'ec8-b',
+      label: 'Script B',
+      persona: 'Written out in full',
+      attempts: [
+        {
+          id: 'ec8-b-1',
+          text: '“1. Marginal cost   2. Average revenue = Demand   3. Marginal revenue.”',
+          key: { item1: 2, item2: 2, item3: 2 },
+          keyNote: 'Every item spelled out as the cue demanded. Full marks — the same knowledge as Script A, in the form the scheme requires.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-ec8',
+    rule: 'When it says “in full”, abbreviations score nothing.',
+    detail:
+      'Some diagram-reading parts demand the term written out in full and say so — “Do not use abbreviations.” Writing “MC” for Marginal cost forfeits the mark however clearly you know it. Read the cue’s form, not just its content.',
+    cite: MS('p.20'),
+  },
+};
+
+// ─────────────── EC9 · For AND against — the balance is the mark ───────────────
+
+const EC9: GridSession = {
+  mode: 'grid',
+  id: 'ec-both-sides',
+  subject: 'economics',
+  level: 'higher',
+  title: 'Both sides, or half the marks',
+  cue: 'Discuss one for and one against',
+  question: 'A part asks: “Discuss one argument for and one argument against” a view. The marks split evenly — one developed point for the “for” side, one for the “against” side. A candidate who feels strongly writes two excellent “for” arguments and no “against”. How does that fare against a candidate who gives one of each?',
+  questionNote:
+    'Scenario authored for this exercise. When a cue asks for one argument for AND one against, the balance is required: both sides must appear, and a second same-side point cannot substitute for the missing opposite side.',
+  grid: {
+    perPoint: [
+      { id: 'forSide', label: 'Argument FOR (developed)', marks: 5 },
+      { id: 'againstSide', label: 'Argument AGAINST (developed)', marks: 5 },
+    ],
+    shorthand: 'one FOR + one AGAINST · balance required',
+    ruleNote:
+      'The two marks are reserved one per side. A brilliant second “for” argument earns nothing — there is no second “for” mark, and it cannot fill the empty “against” slot. Two points on one side caps you at half; one solid point on each side banks it all. The cue asked for balance, so balance is where the marks are.',
+    cite: MS('p.4 (Discuss one argument for and one argument against)'),
+  },
+  scripts: [
+    {
+      id: 'ec9-a',
+      label: 'Script A',
+      persona: 'Two arguments, both “for”',
+      attempts: [
+        {
+          id: 'ec9-a-1',
+          text: 'First “for” argument — developed with a clear mechanism.',
+          key: { forSide: 5, againstSide: 0 },
+          keyNote: 'A fully developed “for” argument — banks the 5 marks reserved for the “for” side.',
+        },
+        {
+          id: 'ec9-a-2',
+          text: 'Second “for” argument — also excellent, but still a “for”.',
+          key: { forSide: 0, againstSide: 0 },
+          keyNote: 'There is only one “for” mark, and it is already earned; a second same-side point is surplus. It cannot claim the “against” marks, which sit empty. The part caps at 5/10 — half the marks, for ignoring half the question.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Answers a for-and-against cue with two same-side points, forfeiting the opposite side’s reserved marks.',
+        cite: MS('p.4'),
+      },
+    },
+    {
+      id: 'ec9-b',
+      label: 'Script B',
+      persona: 'One each side',
+      attempts: [
+        {
+          id: 'ec9-b-1',
+          text: '“For” argument — developed.',
+          key: { forSide: 5, againstSide: 0 },
+          keyNote: 'The “for” side, banked.',
+        },
+        {
+          id: 'ec9-b-2',
+          text: '“Against” argument — developed.',
+          key: { forSide: 0, againstSide: 5 },
+          keyNote: 'The “against” side, banked. 10/10 — the balance the cue demanded, both sides present.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-ec9',
+    rule: 'For-and-against means both — one great side is half the marks.',
+    detail:
+      'When the cue asks for an argument for AND one against, the marks are reserved one per side. A second point on the side you like earns nothing; the opposite-side marks stay empty. Give one developed point on each side.',
+    cite: MS('p.4'),
+  },
+};
+
+// ─────────────── EC10 · Table completion — each cell shows its own workings ───────────────
+
+const EC10: GridSession = {
+  mode: 'grid',
+  id: 'ec-cost-table',
+  subject: 'economics',
+  level: 'higher',
+  title: 'Every cell shows its working',
+  cue: 'Complete the table',
+  question: 'A costs table has two blank cells to fill — Label A (Variable Cost) and Label B (Average Cost) — and the cue says “Show all your workings.” Each cell is a separate step-marked calculation: A is Total cost − Fixed cost; B is Total cost ÷ Output. A candidate works out A in full but writes B as a bare number with no working shown.',
+  questionNote:
+    'Scenario authored for this exercise. Table-completion parts step-mark each labelled cell independently — the workings line and the value are separate marks, and a missing cell’s working forfeits only that cell’s method mark.',
+  grid: {
+    perPoint: [
+      { id: 'aWork', label: 'Cell A — workings shown (Total − Fixed)', marks: 1 },
+      { id: 'aVal', label: 'Cell A — correct value (€10)', marks: 1 },
+      { id: 'bWork', label: 'Cell B — workings shown (Total ÷ Output)', marks: 1 },
+      { id: 'bVal', label: 'Cell B — correct value (€1.92)', marks: 1 },
+    ],
+    shorthand: 'each cell · workings + value, marked apart',
+    ruleNote:
+      'Each cell is its own mini-calculation with its own method mark and answer mark. Filling A perfectly does not carry B, and a bare correct number in B still forfeits B’s workings mark, because the cue said “show all your workings.” The cells are independent — you bank each one on its own.',
+    cite: MS('p.64 (complete the table, labelled cells A and B; show all your workings)'),
+  },
+  scripts: [
+    {
+      id: 'ec10-a',
+      label: 'Script A',
+      persona: 'Shows A, guesses B',
+      attempts: [
+        {
+          id: 'ec10-a-1',
+          text: 'Cell A: “Total cost − Fixed cost = €70 − €60 = €10”, fully shown. Cell B: just “€1.92” written in, no working.',
+          key: { aWork: 1, aVal: 1, bWork: 0, bVal: 1 },
+          keyNote: 'A is fully banked — working and value. B’s value is right, so it earns its answer mark, but the missing “Total ÷ Output” working forfeits B’s method mark. 3 of 4 — the only mark lost is the one the cue explicitly asked for: the workings.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Writes a bare value into a step-marked table cell without the working the cue demanded.',
+        cite: MS('p.64'),
+      },
+    },
+    {
+      id: 'ec10-b',
+      label: 'Script B',
+      persona: 'Both cells worked',
+      attempts: [
+        {
+          id: 'ec10-b-1',
+          text: 'Cell A: “€70 − €60 = €10.” Cell B: “€115 ÷ 60 = €1.92.” Both workings and both values written in.',
+          key: { aWork: 1, aVal: 1, bWork: 1, bVal: 1 },
+          keyNote: 'Every cell shown and correct. 4/4 — the same answers as Script A, plus the one working it left out.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-ec10',
+    rule: 'In a table, show the working for every cell.',
+    detail:
+      'Table-completion parts step-mark each labelled cell independently: workings and value are separate marks. A right number with no working still loses the method mark for that cell. Write the operation into every blank, not just the answer.',
+    cite: MS('p.64'),
+  },
+};
+
+// ─────────────── EC11 · SRP data — the two avoidable deductions ───────────────
+
+const EC11: GridSession = {
+  mode: 'grid',
+  id: 'ec-srp-data',
+  subject: 'economics',
+  level: 'higher',
+  title: 'The data box you can’t fake',
+  cue: 'SRP · Evidence of Data',
+  question: 'The Student Research Project’s “Evidence of Data” row is worth 5 marks and carries two flat, printed deductions: “Deduct 1m if no quantitative data. Deduct 1m if 2 sources not included.” A candidate’s study is thoughtfully written but leans entirely on description — no numbers — and cites a single source. How does the data row score?',
+  questionNote:
+    'Scenario authored for this exercise. The two SRP data deductions are real, printed marking rules — they are checklist gates, not quality judgements: missing quantitative data and fewer than two sources each cost a flat mark.',
+  grid: {
+    perPoint: [
+      { id: 'quant', label: 'Quantitative data included', marks: 1 },
+      { id: 'sources', label: 'At least two sources included', marks: 1 },
+      { id: 'evidence', label: 'Data evidenced & relevant', marks: 3 },
+    ],
+    shorthand: '5m · −1 no quant data · −1 if <2 sources',
+    ruleNote:
+      'Two of the five marks are pure checklist: include at least one piece of quantitative (numeric) data, and cite at least two sources. These are flat deductions — no amount of good writing earns them back. They cost nothing to secure and a full point to miss, so they are the easiest marks in the whole project to protect.',
+    cite: MS('p.71 (Evidence of Data: deduct 1m if no quantitative data / if 2 sources not included)'),
+  },
+  scripts: [
+    {
+      id: 'ec11-a',
+      label: 'Script A',
+      persona: 'Well written, no numbers',
+      attempts: [
+        {
+          id: 'ec11-a-1',
+          text: 'A carefully argued study — but entirely descriptive, with no quantitative data, and only one source cited.',
+          key: { quant: 0, sources: 0, evidence: 3 },
+          keyNote: '3 of 5. The writing earns the substantive evidence marks, but both flat deductions bite: no quantitative data (−1) and fewer than two sources (−1). Neither is a quality judgement — a single table of figures and a second citation would have banked them outright.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Submits a data section with no quantitative data and a single source — the two named flat deductions.',
+        cite: MS('p.71'),
+      },
+    },
+    {
+      id: 'ec11-b',
+      label: 'Script B',
+      persona: 'Numbers and two sources',
+      attempts: [
+        {
+          id: 'ec11-b-1',
+          text: 'The same study, but with a quantitative table drawn from the data and two named sources cited.',
+          key: { quant: 1, sources: 1, evidence: 3 },
+          keyNote: 'Full 5. Neither deduction applies — the numbers and the second source close both gates. The extra effort was tiny; the marks it protected were not.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-ec11',
+    rule: 'Bank the SRP data marks: include numbers and two sources.',
+    detail:
+      'The SRP data row deducts a flat mark for no quantitative data and another for fewer than two sources. These are checklist gates, not quality calls — include at least one numeric figure and cite at least two sources, and neither deduction can touch you.',
+    cite: MS('p.71'),
+  },
+};
+
+// ─────────────── EC12 · The tariff tells you how much to write ───────────────
+
+const EC12: ScaleSession = {
+  mode: 'scale',
+  id: 'ec-tariff-depth',
+  subject: 'economics',
+  level: 'higher',
+  title: 'Read the marks, gauge the depth',
+  cue: 'Explain (developed point)',
+  question: 'The scheme states: “The detail required in any answer is determined by … the number of marks assigned to the answer.” A single developed point is worth 7 marks here — the scheme’s deepest per-point tariff, the size that wants a short developed paragraph (statement → mechanism → consequence). A candidate answers it with one bare sentence — the kind that would fully satisfy a 3-mark point. Where does it land on the band?',
+  questionNote:
+    'Scenario authored for this exercise. The rule is real: the detail required is set by the mark value (a @3 point wants a sentence; a @7 point wants a developed paragraph), and points are graded on the descriptor band scaled to the tariff.',
+  scale: {
+    name: 'Developed point · band on a 7-mark part',
+    levels: [
+      { id: 'weak', label: 'Weak (1)', annotation: '1', marks: 1 },
+      { id: 'fair', label: 'Fair (3)', annotation: '3', marks: 3 },
+      { id: 'good', label: 'Good (5)', annotation: '5', marks: 5 },
+      { id: 'excellent', label: 'Excellent (7)', annotation: '7', marks: 7 },
+    ],
+    notes: [
+      'The mark value is the depth instruction: “the detail required … is determined by … the number of marks assigned.”',
+      'A @7 point is graded on the descriptor band scaled to the tariff — it wants a developed paragraph, not a line.',
+      'A one-sentence statement, correct but undeveloped, sits low on the band however true it is.',
+    ],
+    cite: MS('p.2 (detail required determined by the marks assigned; developed-point bands)'),
+  },
+  scripts: [
+    {
+      id: 'ec12-a',
+      label: 'The answer',
+      persona: 'One line for a paragraph’s marks',
+      work: [
+        'States a single correct sentence — the point named, with no mechanism and no consequence.',
+        'Would earn full marks on a 3-mark point, but nothing is added to fill the 7-mark tariff.',
+      ],
+      keyLevelId: 'fair',
+      keyNote:
+        'Fair — knowledge is there but the development the 7 marks pay for is not. The tariff told the candidate how much to write: a @7 point wants statement → mechanism → consequence, a short paragraph. A sentence that would max a @3 point cannot reach the top band of a @7 one. Let the mark value set your length.',
+      embodies: {
+        behaviour: 'Writes a low-tariff-sized answer for a high-tariff point, under-developing to the mark value.',
+        cite: MS('p.2'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-ec12',
+    rule: 'The mark value tells you how much to write.',
+    detail:
+      'The scheme sets the detail required by the marks assigned: a @3 point wants a sentence, a @7 point wants a developed paragraph. Read the tariff before you answer, and develop each point to the size of its marks — statement, mechanism, consequence.',
+    cite: MS('p.2'),
+  },
+};
+
+// ─────────────── EC13 · Contradiction lands at Poor, not Fair ───────────────
+
+const EC13: ScaleSession = {
+  mode: 'scale',
+  id: 'ec-poor-band',
+  subject: 'economics',
+  level: 'higher',
+  title: 'Confused knowledge caps at Poor',
+  cue: 'Explain (5-mark point)',
+  question: 'A 5-mark point is graded on the scheme’s longer band: “4 Excellent · 3 Good · 2 Fair · 1 Poor · 0 Weak.” The 5-mark table adds a rung the 4-mark table doesn’t have — Poor (1) is reserved for “confusing or contradictory knowledge.” A candidate shows real knowledge but the explanation contradicts itself half-way through. Above the “no knowledge” floor, but where exactly?',
+  questionNote:
+    'Scenario authored for this exercise. The 5-mark descriptor band is real: it inserts a “Poor (1)” rung for confusing/contradictory knowledge, sitting above Weak (0 = no knowledge / repetition) and below Fair.',
+  scale: {
+    name: 'Developed point · band /4 (5-mark part)',
+    levels: [
+      { id: 'weak', label: 'Weak (0) — no knowledge / repetition', annotation: '0', marks: 0 },
+      { id: 'poor', label: 'Poor (1) — confusing / contradictory', annotation: '1', marks: 1 },
+      { id: 'fair', label: 'Fair (2) — vague knowledge', annotation: '2', marks: 2 },
+      { id: 'good', label: 'Good (3) — some knowledge, limited development', annotation: '3', marks: 3 },
+      { id: 'excellent', label: 'Excellent (4) — in-depth, relates, concise, logical', annotation: '4', marks: 4 },
+    ],
+    notes: [
+      'Only 5-mark parts use this longer band — the extra rung is “Poor (1): confusing or contradictory knowledge.”',
+      'Weak (0) is “no knowledge / repetition of statement”; Poor sits just above it.',
+      'A self-contradiction pulls an otherwise knowledgeable answer down to Poor — real content, but undermined.',
+    ],
+    cite: MS('p.2 (5-mark band: 4/3/2/1/0; Poor = confusing or contradictory knowledge)'),
+  },
+  scripts: [
+    {
+      id: 'ec13-a',
+      label: 'The answer',
+      persona: 'Knows it, then contradicts it',
+      work: [
+        'Opens with a genuinely correct explanation of the point.',
+        'Half-way through, states the opposite mechanism, leaving the answer internally contradictory.',
+      ],
+      keyLevelId: 'poor',
+      keyNote:
+        'Poor (1) — not zero, because there is real knowledge, but not Fair, because the contradiction confuses it. The 5-mark band exists precisely to place this: “confusing or contradictory knowledge” is its own rung above “no knowledge.” One consistent line of reasoning, without the self-contradiction, would climb to Fair or Good. Say one thing and hold it.',
+      embodies: {
+        behaviour: 'Presents knowledge undermined by a self-contradiction — the scheme’s named “Poor” descriptor.',
+        cite: MS('p.2'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-ec13',
+    rule: 'Contradicting yourself caps you at Poor.',
+    detail:
+      'The 5-mark band adds a “Poor (1)” rung for confusing or contradictory knowledge — above “no knowledge” but below vague-but-consistent. Real content that argues against itself lands there. Pick one line of reasoning and stay consistent.',
+    cite: MS('p.2'),
+  },
+};
+
+// ─────────────── EC14 · Either/or — commit to one option ───────────────
+
+const EC14: GridSession = {
+  mode: 'grid',
+  id: 'ec-either-or',
+  subject: 'economics',
+  level: 'higher',
+  title: 'Choose one, and commit',
+  cue: 'Answer either (b) or (c)',
+  question: 'A question offers an internal choice — “Answer either (b) or (c)” — and only one option is marked. The chosen option is worth two developed points at 6 each. A candidate hedges: unsure which they know better, they half-answer both (b) and (c), splitting their time. Another candidate picks (b) and commits fully. How do they compare?',
+  questionNote:
+    'Scenario authored for this exercise. “Answer either (b) or (c)” is real HL structure — only one option is marked, so effort spent on the second option is wasted and the chosen one is what carries the marks.',
+  grid: {
+    perPoint: [
+      { id: 'p1', label: '1st point of chosen option (developed)', marks: 6 },
+      { id: 'p2', label: '2nd point of chosen option (developed)', marks: 6 },
+    ],
+    shorthand: 'either (b) or (c) · one option marked · 2 @ 6',
+    ruleNote:
+      'Only one option counts, so writing both does not double your chances — it halves your time on the one that will be marked. The hedger’s chosen option ends up thin; the committer’s is fully developed. Pick the option you know best and pour everything into it.',
+    cite: MS('p.6 (Answer either (b) or (c) — internal choice, one option marked)'),
+  },
+  scripts: [
+    {
+      id: 'ec14-a',
+      label: 'Script A',
+      persona: 'Hedges both options',
+      attempts: [
+        {
+          id: 'ec14-a-1',
+          text: '(b) — first point, only half-developed, because time was split with (c).',
+          key: { p1: 0, p2: 0 },
+          keyNote: 'The first point of the marked option is under-developed — it doesn’t reach its band. Splitting time starved the answer that counts.',
+        },
+        {
+          id: 'ec14-a-2',
+          text: '(b) — second point, also thin.',
+          key: { p1: 0, p2: 0 },
+          keyNote: 'The second point is thin for the same reason. Both of (b)’s points fall short.',
+        },
+        {
+          id: 'ec14-a-3',
+          text: '(c) — also written out in full, hoping the better one is taken.',
+          key: { p1: 0, p2: 0 },
+          keyNote: 'The rubric marks only one option; the second is not credited at all. Every minute on (c) was a minute stolen from the (b) that was actually being marked.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Answers both sides of an either/or choice, splitting effort so the marked option is under-developed.',
+        cite: MS('p.6'),
+      },
+    },
+    {
+      id: 'ec14-b',
+      label: 'Script B',
+      persona: 'Commits to one',
+      attempts: [
+        {
+          id: 'ec14-b-1',
+          text: '(b) — first point, fully developed with mechanism and consequence.',
+          key: { p1: 6, p2: 0 },
+          keyNote: 'The full time on one option lets the first point reach its band. Banks 6.',
+        },
+        {
+          id: 'ec14-b-2',
+          text: '(b) — second point, fully developed.',
+          key: { p1: 0, p2: 6 },
+          keyNote: 'The second point, also developed. 12/12 — one committed option beats two hedged halves every time.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-ec14',
+    rule: 'On an either/or, pick one and pour everything in.',
+    detail:
+      'Internal-choice parts mark only one option, so answering both just splits your time and thins the answer that counts. Choose the option you know best and develop it fully — the unchosen one earns nothing.',
+    cite: MS('p.6'),
+  },
+};
+
+// ─────────────── EC15 · Rounding is tolerated — a worked answer stands ───────────────
+
+const EC15: ScaleSession = {
+  mode: 'scale',
+  id: 'ec-rounding',
+  subject: 'economics',
+  level: 'higher',
+  title: 'A rounded answer still scores',
+  cue: 'Calculate',
+  question: 'A percentage calculation works out to 31.48%. The scheme prints the accepted answer as a range — “31.48 % / 32%” — so a correctly worked figure rounded to 32% is not penalised. A candidate, worried their rounding is “wrong”, crosses out a fully worked “32%” and leaves the box blank rather than commit. What did that cost?',
+  questionNote:
+    'Scenario authored for this exercise. Rounding tolerance is real: the scheme lists a range of acceptable answers (e.g. “31.48 % / 32%”), so a correctly worked, sensibly rounded figure keeps its answer mark.',
+  scale: {
+    name: 'Calculation · rounding tolerance',
+    levels: [
+      { id: 'm0', label: '0 (erased — nothing to mark)', annotation: '0', marks: 0 },
+      { id: 'm2', label: '2 (workings only, no final figure)', annotation: '2', marks: 2 },
+      { id: 'm6', label: '6 (worked + rounded answer accepted)', annotation: '6', marks: 6 },
+    ],
+    notes: [
+      'The scheme accepts a range — “31.48 % / 32%” — so a sensibly rounded figure is not wrong.',
+      'A blank box scores nothing; even the workings can’t be credited if the line is erased.',
+      'A worked, rounded answer within the accepted range keeps full marks.',
+    ],
+    cite: MS('p.38 (accepted answer range “31.48 % / 32%”)'),
+  },
+  scripts: [
+    {
+      id: 'ec15-a',
+      label: 'The answer',
+      persona: 'Erased a correct answer',
+      work: [
+        'Worked the calculation correctly and reached “32%”.',
+        'Second-guessed the rounding, crossed the whole thing out, and left the box blank.',
+      ],
+      keyLevelId: 'm0',
+      keyNote:
+        '0 — there is nothing left to mark. The rounding was never the problem: the scheme accepts “31.48 % / 32%”, so the crossed-out “32%” was a full-mark answer. Erasing it forfeited the workings too. A correctly worked, sensibly rounded figure stands — never delete a right answer for fear of the decimals.',
+      embodies: {
+        behaviour: 'Erases a correctly worked, in-range rounded answer, mistaking accepted rounding for an error.',
+        cite: MS('p.38'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-ec15',
+    rule: 'A sensibly rounded answer is accepted — leave it in.',
+    detail:
+      'Calculation parts accept a range (e.g. “31.48 % / 32%”), so a correctly worked figure rounded reasonably keeps its marks. Don’t erase a right answer over the decimals — a blank box scores nothing, workings included.',
+    cite: MS('p.38'),
+  },
+};
+
 export const ECONOMICS_CHAIR: ChairSubject = {
   id: 'economics',
   label: 'Economics',
   tagline: 'Develop your points, label your diagrams, show your workings.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [EC1, EC2, EC3, EC4, EC5, EC6, EC7],
+  sessions: [EC1, EC2, EC3, EC4, EC5, EC6, EC7, EC8, EC9, EC10, EC11, EC12, EC13, EC14, EC15],
   sources: [
     { label: 'SEC LC Economics HL marking scheme 2025 (examiner-reports/economics/2025-marking-scheme)' },
     { label: 'SEC LC Economics OL marking scheme 2025 (examiner-reports/economics/2025-ol-marking-scheme)' },
   ],
   coverageNote:
-    'The develop-your-points, diagram-label, show-your-workings, count-the-points (Surplus), key-phrase and SRP sessions apply at Higher Level. The Ordinary session captures an OL-specific difference: two-point questions are front-loaded (1st @ 8 / 2nd @ 4), so the first point banks the most marks. Verified against the 2025 (and 2023) HL and OL schemes.',
+    'The Higher-Level sessions cover the developed-point band and its depth-by-tariff and Poor-band rungs, the diagram-label and write-in-full rules, the show-your-workings, table-cell and rounding-tolerance calculation rules, the count-the-points (Surplus), for-and-against balance and either/or choice rules, the key-phrase gate, and the SRP length and data-deduction rules. The Ordinary session captures an OL-specific difference: two-point questions are front-loaded (1st @ 8 / 2nd @ 4), so the first point banks the most marks. Verified against the 2025 (and 2023) HL and OL schemes.',
 };

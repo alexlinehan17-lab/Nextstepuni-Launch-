@@ -15,6 +15,7 @@
 import { type ChairSubject, type GridSession } from './types';
 
 const MS25 = (p: string) => ({ label: `SEC Business HL marking scheme 2025, ${p}` });
+const MS24 = (p: string) => ({ label: `SEC Business HL marking scheme 2024, ${p}` });
 const CER15 = (p: string) => ({ label: `Chief Examiner's Report, Business 2015, ${p}` });
 const MSOL = (p: string) => ({ label: `SEC Business OL marking scheme 2025, ${p}` });
 
@@ -669,16 +670,760 @@ const O1: GridSession = {
   },
 };
 
+// ─────────────────────── B7 · The example is a mark ───────────────────────
+
+const B7: GridSession = {
+  mode: 'grid',
+  id: 'biz-example-mark',
+  subject: 'business',
+  level: 'higher',
+  title: 'The example is a mark',
+  cue: 'Explain, using examples',
+  question:
+    'Explain, using examples, two different types of industrial action a trade union might take.',
+  questionNote:
+    'Question authored for this exercise; marked on the SEC 2025 HL Section 3 template Q1(B) — 4@5 (2+2+1), Name + Explain + Example — shortened to two points here.',
+  grid: {
+    perPoint: [
+      { id: 'name', label: 'Name the item', marks: 2 },
+      { id: 'explain', label: 'Explain the theory', marks: 2 },
+      { id: 'example', label: 'Concrete example', marks: 1 },
+    ],
+    shorthand: '2@5 (2+2+1)',
+    ruleNote:
+      'On an “Explain, using examples” or “Illustrate” cue the Example is its own discrete mark — a flawless explanation with no concrete instance still forfeits it. Note the difference from the ABQ: here the mark buys YOUR own real-world example, not a quote lifted from a case. The cue tells you whether the 5th mark is an example (Illustrate / “using examples”) or a second layer of explanation (Discuss).',
+    cite: MS25('p.7 (Q1(B) “Explain, using examples” grid — Name, explain, example)'),
+  },
+  scripts: [
+    {
+      id: 'b7-a',
+      label: 'Script A',
+      persona: 'Textbook definitions, no instances',
+      attempts: [
+        {
+          id: 'b7-a-1',
+          text: 'A strike is where employees withdraw their labour completely and refuse to work in order to put pressure on the employer to concede to their demands.',
+          key: { name: 2, explain: 2, example: 0 },
+          keyNote: 'Named (2) and explained (2) — but the cue asked for an example and none is given. A single instance (e.g. a one-day national bus strike) banks the last mark. 4/5.',
+        },
+        {
+          id: 'b7-a-2',
+          text: 'A work-to-rule is where employees do only the exact duties in their contract and nothing beyond them, slowing output without formally stopping work.',
+          key: { name: 2, explain: 2, example: 0 },
+          keyNote: 'Same near-miss: correct type, correct theory, no example. Across four such points the habit quietly leaks four marks. 4/5.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Answers an “Explain, using examples” cue with definitions only — the cue-word requirement the report says is “often not addressed adequately.”',
+        cite: CER15('p.20'),
+      },
+    },
+    {
+      id: 'b7-b',
+      label: 'Script B',
+      persona: 'Has the example — skips the theory',
+      attempts: [
+        {
+          id: 'b7-b-1',
+          text: 'An overtime ban — for example, nurses refusing to work any extra shifts beyond their rostered hours during a pay dispute.',
+          key: { name: 2, explain: 0, example: 1 },
+          keyNote: 'Named (2) with a real example (1), but the theory — what an overtime ban actually is and how it pressures the employer — is missing. The explain mark still has to be earned separately. 3/5.',
+        },
+      ],
+    },
+    {
+      id: 'b7-c',
+      label: 'Script C',
+      persona: 'Name, theory, instance',
+      attempts: [
+        {
+          id: 'b7-c-1',
+          text: 'A strike: employees collectively withdraw their labour to pressure the employer into meeting their demands — for example, a one-day national stoppage by public-transport drivers over pay.',
+          key: { name: 2, explain: 2, example: 1 },
+          keyNote: 'Name, theory and a concrete instance — the full 2+2+1. 5/5.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-b7',
+    rule: 'Example cues buy an example mark.',
+    detail:
+      'When the cue is “Illustrate” or “Explain using examples”, one discrete mark per point is reserved for a concrete instance — and it’s your own real-world example, not a case quote. Learn the theory, then always attach a named example.',
+    cite: MS25('p.7'),
+  },
+};
+
+// ─────────────────────── B8 · Two of each, or half marks ───────────────────────
+
+const B8: GridSession = {
+  mode: 'grid',
+  id: 'biz-two-of-each',
+  subject: 'business',
+  level: 'higher',
+  title: 'Two of each, or half marks',
+  cue: 'Discuss advantages and disadvantages',
+  question:
+    'Discuss the advantages and disadvantages of an acquisition (takeover) as a method of business expansion.',
+  questionNote:
+    'Question authored for this exercise; marked on the SEC 2025 HL Q7(A) template — 4@5 (2+3), Name + Explain, with the scheme’s explicit “2 of each required” instruction.',
+  grid: {
+    perPoint: [
+      { id: 'name', label: 'Name the point', marks: 2 },
+      { id: 'explain', label: 'Explain / develop it', marks: 3 },
+    ],
+    shorthand: '4@5 (2+3) — 2 of each required',
+    ruleNote:
+      'When the cue names two sides — “advantages and disadvantages” — the scheme credits at most two of each: its note reads “2 of each required.” Four brilliant advantages score only two of them; the other two are worth nothing until you cross to the other side of the argument. A one-sided answer caps at 10 of 20.',
+    cite: MS25('p.10 (Q7(A) “advantages and disadvantages” grid — “2 of each required”)'),
+  },
+  scripts: [
+    {
+      id: 'b8-a',
+      label: 'Script A',
+      persona: 'Four points — all on one side',
+      attempts: [
+        {
+          id: 'b8-a-1',
+          text: 'Advantage — Speed of growth: a takeover lets the buyer gain market share instantly rather than building capacity from scratch, developed with the reduced time-to-market this brings.',
+          key: { name: 2, explain: 3 },
+          keyNote: 'A valid, developed advantage. First of the two advantages the scheme will count. 5/5.',
+        },
+        {
+          id: 'b8-a-2',
+          text: 'Advantage — Access to resources: the acquirer gains the target’s premises, staff, patents and customer base in one move, developed with the example of buying an established brand.',
+          key: { name: 2, explain: 3 },
+          keyNote: 'Second developed advantage — also counted. 5/5. So far 10/20.',
+        },
+        {
+          id: 'b8-a-3',
+          text: 'Advantage — Economies of scale: the larger combined firm can spread fixed costs over more output and negotiate better with suppliers.',
+          key: { name: 0, explain: 0 },
+          keyNote: 'A perfectly good third advantage — worth nothing. The scheme counts only two advantages, and no disadvantage has been given. 0/5.',
+        },
+        {
+          id: 'b8-a-4',
+          text: 'Advantage — Eliminates a competitor: buying a rival removes it from the market and strengthens the acquirer’s position.',
+          key: { name: 0, explain: 0 },
+          keyNote: 'Fourth advantage, same fate. 0/5. Total 10/20 — a one-sided answer marked at exactly half.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Argues only one side where the scheme requires “2 of each” — advantages and disadvantages.',
+        cite: MS25('p.10'),
+      },
+    },
+    {
+      id: 'b8-b',
+      label: 'Script B',
+      persona: 'Three-one split',
+      attempts: [
+        {
+          id: 'b8-b-1',
+          text: 'Advantage — Speed of growth: instant market share instead of organic expansion, developed with reduced time-to-market.',
+          key: { name: 2, explain: 3 },
+          keyNote: 'Counted advantage one. 5/5.',
+        },
+        {
+          id: 'b8-b-2',
+          text: 'Advantage — Access to resources: premises, staff and customers acquired in one move.',
+          key: { name: 2, explain: 3 },
+          keyNote: 'Counted advantage two. 5/5.',
+        },
+        {
+          id: 'b8-b-3',
+          text: 'Advantage — Economies of scale: fixed costs spread over greater output.',
+          key: { name: 0, explain: 0 },
+          keyNote: 'A third advantage — over the cap of two, so it scores nothing. 0/5.',
+        },
+        {
+          id: 'b8-b-4',
+          text: 'Disadvantage — Culture clash: merging two workforces with different norms can cause conflict and lost productivity, developed with the risk of key staff leaving.',
+          key: { name: 2, explain: 3 },
+          keyNote: 'The first disadvantage — and the moment the answer starts scoring again. 5/5. Total 15/20: crossing sides even once unlocked five marks the third advantage never could.',
+        },
+      ],
+    },
+    {
+      id: 'b8-c',
+      label: 'Script C',
+      persona: 'Balanced — two each',
+      attempts: [
+        {
+          id: 'b8-c-1',
+          text: 'Advantage — Speed of growth: instant market share, developed with reduced time-to-market.',
+          key: { name: 2, explain: 3 },
+          keyNote: 'Advantage one. 5/5.',
+        },
+        {
+          id: 'b8-c-2',
+          text: 'Advantage — Access to resources: premises, staff, patents and customers in one move.',
+          key: { name: 2, explain: 3 },
+          keyNote: 'Advantage two. 5/5.',
+        },
+        {
+          id: 'b8-c-3',
+          text: 'Disadvantage — Culture clash: merging workforces can cause conflict and lost output, developed with the risk of key staff leaving.',
+          key: { name: 2, explain: 3 },
+          keyNote: 'Disadvantage one. 5/5.',
+        },
+        {
+          id: 'b8-c-4',
+          text: 'Disadvantage — High cost / overpayment: the acquirer may overpay and take on the target’s hidden debts, developed with the strain on cash flow.',
+          key: { name: 2, explain: 3 },
+          keyNote: 'Disadvantage two. Full 20/20 — two developed points on each side, exactly what “2 of each required” pays for.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-b8',
+    rule: 'Discuss both sides — each side is capped.',
+    detail:
+      'When a “Discuss” cue names advantages and disadvantages, the scheme credits “2 of each” — a one-sided answer caps at half marks no matter how many points you pile on one side. Split your four points two-and-two.',
+    cite: MS25('p.10'),
+  },
+};
+
+// ─────────────────────── B9 · The format is marked ───────────────────────
+
+const B9: GridSession = {
+  mode: 'grid',
+  id: 'biz-format-marks',
+  subject: 'business',
+  level: 'higher',
+  title: 'The format is marked',
+  cue: 'Calculate and state',
+  question:
+    'Calculate the Balance of Trade and state whether it is a surplus or a deficit. Show your workings. (Visible exports €72bn; visible imports €34bn.)',
+  questionNote:
+    'Figures and question modelled on the SEC 2024 HL Q2(A) Balance of Trade / Balance of Payments item. The scheme marks it: “formula 1 mark and each correct figure 1 mark, € sign 1 mark, surplus/deficit 1 mark.”',
+  grid: {
+    perPoint: [
+      { id: 'formula', label: 'State the formula (Exports − Imports)', marks: 1 },
+      { id: 'figures', label: 'Substitute the correct figures', marks: 1 },
+      { id: 'euro', label: 'Include the € sign', marks: 1 },
+      { id: 'verdict', label: 'State surplus or deficit', marks: 1 },
+    ],
+    shorthand: 'formula 1 · figures 1 · € sign 1 · surplus/deficit 1',
+    ruleNote:
+      'Two of the four marks are pure presentation: the € sign is a mark, and stating “surplus” or “deficit” is a mark. “State whether your answer is a surplus or a deficit” is not a courtesy — it is on the grid. Correct arithmetic with a bare number and no verdict throws away half the marks.',
+    cite: MS24('p.8 (Q2(A) BoT/BoP grid — “€ sign 1 mark, surplus/deficit 1 mark”)'),
+  },
+  scripts: [
+    {
+      id: 'b9-a',
+      label: 'Script A',
+      persona: 'Right number, nothing else',
+      attempts: [
+        {
+          id: 'b9-a-1',
+          text: '72 − 34 = 38.',
+          key: { formula: 1, figures: 1, euro: 0, verdict: 0 },
+          keyNote: 'The formula is implied and the figures are right — but there is no € sign and no surplus/deficit verdict, each of which is a separate mark. 2/4 for a numerically correct answer.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Omits the currency sign and the surplus/deficit verdict — each of which the scheme marks separately.',
+        cite: MS24('p.8'),
+      },
+    },
+    {
+      id: 'b9-b',
+      label: 'Script B',
+      persona: 'Currency, but no verdict',
+      attempts: [
+        {
+          id: 'b9-b-1',
+          text: '€72bn − €34bn = €38bn.',
+          key: { formula: 1, figures: 1, euro: 1, verdict: 0 },
+          keyNote: 'Now the € sign is there (1). But the question explicitly asked whether it is a surplus or a deficit, and that word is missing — the last mark is still on the table. 3/4.',
+        },
+      ],
+    },
+    {
+      id: 'b9-c',
+      label: 'Script C',
+      persona: 'Formula, figures, format, verdict',
+      attempts: [
+        {
+          id: 'b9-c-1',
+          text: 'Balance of Trade = Visible Exports − Visible Imports = €72bn − €34bn = €38bn surplus.',
+          key: { formula: 1, figures: 1, euro: 1, verdict: 1 },
+          keyNote: 'Formula, figures, currency and the surplus verdict — the full 4/4. The two “format” marks cost nothing but attention.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-b9',
+    rule: 'In financial answers, the format carries marks.',
+    detail:
+      'On BoT/BoP and similar computations the € sign and the surplus/deficit verdict are each their own mark. Write the formula, keep the currency sign on every figure, and end with the word the question asked for — surplus or deficit.',
+    cite: MS24('p.8'),
+  },
+};
+
+// ─────────────────────── B10 · Own figure allowed ───────────────────────
+
+const B10: GridSession = {
+  mode: 'grid',
+  id: 'biz-own-figure',
+  subject: 'business',
+  level: 'higher',
+  title: 'Own figure allowed',
+  cue: 'Calculate (multi-step)',
+  question:
+    'Calculate the Balance of Payments and state whether it is a surplus or a deficit. Show your workings. (Total exports: visible €72bn + invisible €93bn; total imports: visible €34bn + invisible €84bn.)',
+  questionNote:
+    'Figures modelled on the SEC 2024 HL Q2(A) Balance of Payments item, whose worked solution is annotated “Own Figure Allowed” on the later steps — a wrong subtotal carried consistently forward still earns the downstream marks.',
+  grid: {
+    perPoint: [
+      { id: 'formula', label: 'Correct BoP formula', marks: 1 },
+      { id: 'subtotal', label: 'Correct export/import subtotals', marks: 1 },
+      { id: 'result', label: 'Final subtraction using own subtotals', marks: 1 },
+      { id: 'verdict', label: 'Surplus/deficit consistent with own result', marks: 1 },
+    ],
+    shorthand: 'formula 1 · subtotals 1 · result 1 · verdict 1 — “Own Figure Allowed”',
+    ruleNote:
+      'The scheme prints “Own Figure Allowed” beside the closing steps: a candidate who mis-adds a subtotal but carries that wrong figure consistently into the final subtraction still earns the result and verdict marks. One slip costs one mark — not the whole answer — but only if the workings are shown and internally consistent.',
+    cite: MS24('p.38 (Q2(A) BoP worked solution — “Own Figure Allowed”)'),
+  },
+  scripts: [
+    {
+      id: 'b10-a',
+      label: 'Script A',
+      persona: 'One slip, carried honestly',
+      attempts: [
+        {
+          id: 'b10-a-1',
+          text: 'BoP = Total Exports − Total Imports. Total exports = 72 + 93 = €165bn. Total imports = 34 + 84 = €128bn. BoP = €165bn − €128bn = €37bn surplus.',
+          key: { formula: 1, subtotal: 0, result: 1, verdict: 1 },
+          keyNote: 'The imports subtotal is wrong (34 + 84 = 118, not 128), so the subtotal mark is lost. But €165bn − €128bn = €37bn is correct arithmetic on the candidate’s OWN figure, and the surplus verdict is consistent — so both downstream marks stand. 3/4: one slip, one mark.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Makes a single subtotal error but carries it consistently — the exact case the “Own Figure Allowed” annotation is written for.',
+        cite: MS24('p.38'),
+      },
+    },
+    {
+      id: 'b10-b',
+      label: 'Script B',
+      persona: 'Bare wrong answer, no workings',
+      attempts: [
+        {
+          id: 'b10-b-1',
+          text: '€37bn',
+          key: { formula: 0, subtotal: 0, result: 0, verdict: 0 },
+          keyNote: 'The same wrong final figure as Script A — but with no formula, no subtotals and no surplus/deficit word, there is nothing for “Own Figure Allowed” to attach to. 0/4. The rule rescues shown workings, never a bare number.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Gives a bare final figure with no workings — “Own Figure Allowed” cannot apply without a shown, consistent method.',
+        cite: MS24('p.38'),
+      },
+    },
+    {
+      id: 'b10-c',
+      label: 'Script C',
+      persona: 'Clean throughout',
+      attempts: [
+        {
+          id: 'b10-c-1',
+          text: 'BoP = Total Exports − Total Imports = €165bn − €118bn = €47bn surplus. (Exports 72 + 93 = 165; imports 34 + 84 = 118.)',
+          key: { formula: 1, subtotal: 1, result: 1, verdict: 1 },
+          keyNote: 'Correct subtotals, correct result, surplus stated. 4/4 — and had a slip crept in, the shown method would still have protected three of the four marks.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-b10',
+    rule: 'Own figure allowed — so show your method.',
+    detail:
+      'SEC financial questions carry an “Own Figure Allowed” rule: one arithmetic slip carried consistently forward costs a single mark, not the answer. It only works if your workings are on the page — a bare wrong number earns nothing.',
+    cite: MS24('p.38'),
+  },
+};
+
+// ─────────────────────── B11 · The link is not an afterthought ───────────────────────
+
+const B11: GridSession = {
+  mode: 'grid',
+  id: 'biz-link-weight',
+  subject: 'business',
+  level: 'higher',
+  title: 'The link is not an afterthought',
+  cue: 'Describe (ABQ, refer to text)',
+  caseText:
+    'At Corrib Foods, staff turnover fell after the HR manager, Deirdre, rebuilt the induction programme and introduced a structured annual appraisal where every employee sets goals with their line manager. The company also runs a monthly training budget of €4,000 that Deirdre allocates against skills gaps identified in those appraisals.',
+  question:
+    'Describe two human resource management (HRM) functions carried out at Corrib Foods. Refer to the text in your answer.',
+  questionNote:
+    'Case and question authored for this exercise. The grid is the SEC 2025 HL ABQ Part (C) template — 5@6 (2+2+2), Name + Explain + Link, where the Link is weighted 2 of 6 — tied for the heaviest sub-mark. Shortened to two points here.',
+  grid: {
+    perPoint: [
+      { id: 'name', label: 'Name the HRM function', marks: 2 },
+      { id: 'explain', label: 'Explain the theory', marks: 2 },
+      { id: 'link', label: 'Link: direct case quote/phrase', marks: 2 },
+    ],
+    shorthand: '2@6 (2+2+2) — link weighted 2',
+    ruleNote:
+      'In Part (A) the case link is 1 of 5 — cheap enough to treat as a bonus. But in the “Describe HRM functions” part it is 2 of 6, tied with Name and Explain for the heaviest sub-mark. The link’s weight scales with the part, so skipping it here — where students habitually treat it as an add-on — costs the most.',
+    cite: MS25('p.6 (ABQ Part (C) grid — 5@6 (2+2+2) Name, Explain, Link)'),
+  },
+  scripts: [
+    {
+      id: 'b11-a',
+      label: 'Script A',
+      persona: 'Theory-perfect, case-blind',
+      attempts: [
+        {
+          id: 'b11-a-1',
+          text: 'Training and development: HRM ensures employees have the skills to do their jobs by identifying skills gaps and providing courses, which improves performance and motivation.',
+          key: { name: 2, explain: 2, link: 0 },
+          keyNote: 'Named and explained (4) — but no phrase from the case. Here that costs 2, not 1: the link is the heaviest mark in this part. 4/6.',
+        },
+        {
+          id: 'b11-a-2',
+          text: 'Performance appraisal: HRM formally reviews each employee’s performance against objectives so that strengths are recognised and development needs are planned.',
+          key: { name: 2, explain: 2, link: 0 },
+          keyNote: 'Same shortfall. Two no-link points here leak four marks — the price of treating the link as optional in the part where it is worth most. 4/6.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Treats the case link as a low-value add-on in the ABQ part where it is weighted heaviest (2 of 6).',
+        cite: MS25('p.6'),
+      },
+    },
+    {
+      id: 'b11-b',
+      label: 'Script B',
+      persona: 'Names and links — thin theory',
+      attempts: [
+        {
+          id: 'b11-b-1',
+          text: 'Training and development: Deirdre “allocates [a monthly training budget] against skills gaps identified in those appraisals” at Corrib Foods.',
+          key: { name: 2, explain: 0, link: 2 },
+          keyNote: 'A named function (2) with a strong, direct case link (2) — but no general theory of what the training-and-development function is or why it matters. The explain mark is separate and unearned. 4/6.',
+        },
+      ],
+    },
+    {
+      id: 'b11-c',
+      label: 'Script C',
+      persona: 'Name, theory, heavy link',
+      attempts: [
+        {
+          id: 'b11-c-1',
+          text: 'Training and development: HRM closes skills gaps by funding relevant learning so staff can perform and grow. At Corrib Foods the €4,000 monthly budget is “allocated against skills gaps identified in those appraisals”.',
+          key: { name: 2, explain: 2, link: 2 },
+          keyNote: 'Name (2) + theory (2) + a direct case phrase (2). Full 6/6 — and the link, done properly, was the single most valuable move.',
+        },
+        {
+          id: 'b11-c-2',
+          text: 'Performance appraisal: HRM reviews performance against agreed objectives to plan development. At Corrib Foods “every employee sets goals with their line manager” at a “structured annual appraisal”.',
+          key: { name: 2, explain: 2, link: 2 },
+          keyNote: 'A different function, a different quote, theory tied to it. 6/6.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-b11',
+    rule: 'The link’s weight scales with the ABQ part.',
+    detail:
+      'The case link is 1 of 5 in Part (A) but 2 of 6 in the “Describe HRM functions” part — tied for the heaviest sub-mark. Never treat the link as a throwaway; check what it’s worth in the part you’re answering and quote the case every time.',
+    cite: MS25('p.6'),
+  },
+};
+
+// ─────────────── O2 · The labels are the diagram (OL) ───────────────
+
+const O2: GridSession = {
+  mode: 'grid',
+  id: 'biz-ol-diagram-labels',
+  subject: 'business',
+  level: 'ordinary',
+  title: 'The labels are the diagram',
+  cue: 'Draw and label',
+  question:
+    'Draw and label a Product Life Cycle diagram. (Each script below describes what a candidate actually put on the page.)',
+  questionNote:
+    'Scenario authored for this exercise; the grid is the SEC 2025 OL Q8(E) Product Life Cycle template, item for item: Title 1m, Sales axis 1m, Time axis 1m, Curved line 2m, Labels (in order) 5 × 2m = 15m.',
+  grid: {
+    perPoint: [
+      { id: 'title', label: 'Chart title', marks: 1 },
+      { id: 'sales', label: 'Sales axis labelled', marks: 1 },
+      { id: 'time', label: 'Time axis labelled', marks: 1 },
+      { id: 'curve', label: 'Curved line drawn', marks: 2 },
+      { id: 'l1', label: 'Stage label 1 (Introduction)', marks: 2 },
+      { id: 'l2', label: 'Stage label 2 (Growth)', marks: 2 },
+      { id: 'l3', label: 'Stage label 3 (Maturity)', marks: 2 },
+      { id: 'l4', label: 'Stage label 4 (Saturation)', marks: 2 },
+      { id: 'l5', label: 'Stage label 5 (Decline)', marks: 2 },
+    ],
+    shorthand: 'Title 1 · Sales 1 · Time 1 · Curve 2 · Labels (in order) 5×2 = 15m',
+    ruleNote:
+      'The five stage-labels, in the correct order, are 10 of the 15 marks. A beautifully drawn, correctly shaped curve with both axes named but no stage labels caps at 5/15. At OL the labels — and their order — are where a diagram’s marks actually live.',
+    cite: MSOL('p.40 (Q8(E) PLC grid — “Labels (in order) 5 × 2m”)'),
+  },
+  scripts: [
+    {
+      id: 'o2-a',
+      label: 'Script A',
+      persona: 'Perfect curve, no labels',
+      attempts: [
+        {
+          id: 'o2-a-1',
+          text: 'The page shows a neatly drawn, correctly shaped product life cycle curve with a title and both axes labelled “Sales” and “Time”. None of the five stages is labelled along the curve.',
+          key: { title: 1, sales: 1, time: 1, curve: 2, l1: 0, l2: 0, l3: 0, l4: 0, l5: 0 },
+          keyNote: 'Title, axes and curve are all there (5m) — and then the answer stops. The five stage-labels are 10 of the 15 marks, and none was written. 5/15 for a diagram that “looks right”.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Draws the chart but omits the labels, which carry the majority of the marks — the universal chart failure the report flags at OL.',
+        cite: CER15('p.21'),
+      },
+    },
+    {
+      id: 'o2-b',
+      label: 'Script B',
+      persona: 'Labels done, furniture forgotten',
+      attempts: [
+        {
+          id: 'o2-b-1',
+          text: 'The page shows the curve with all five stages labelled in order — Introduction, Growth, Maturity, Saturation, Decline — but there is no title on the diagram and neither axis is labelled.',
+          key: { title: 0, sales: 0, time: 0, curve: 2, l1: 2, l2: 2, l3: 2, l4: 2, l5: 2 },
+          keyNote: 'The curve and all five ordered labels earn 12 — but the missing title and two axis labels quietly drop 3. 12/15.',
+        },
+      ],
+    },
+    {
+      id: 'o2-c',
+      label: 'Script C',
+      persona: 'Titled, axed, curved, labelled',
+      attempts: [
+        {
+          id: 'o2-c-1',
+          text: 'The page shows a titled PLC diagram with “Sales” and “Time” axes, a correctly shaped curve, and all five stages labelled in order along it.',
+          key: { title: 1, sales: 1, time: 1, curve: 2, l1: 2, l2: 2, l3: 2, l4: 2, l5: 2 },
+          keyNote: '15/15. The labels a student thinks of as finishing touches were two-thirds of the marks.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-o2',
+    rule: 'On OL diagrams, the labels are most of the marks.',
+    detail:
+      'The Product Life Cycle grid pays 10 of 15 marks for the five stage-labels in order, and only 3 for title and axes. Draw the curve, name both axes, and label every stage in sequence — the labels are the diagram’s real content.',
+    cite: MSOL('p.40'),
+  },
+};
+
+// ─────────────── O3 · The document is a checklist (OL) ───────────────
+
+const O3: GridSession = {
+  mode: 'grid',
+  id: 'biz-ol-agm-document',
+  subject: 'business',
+  level: 'ordinary',
+  title: 'The document is a checklist',
+  cue: 'Draft (business document)',
+  question:
+    'Draft a Notice and Agenda for the Annual General Meeting (AGM) of a company. (Each script below describes what a candidate put on the page.)',
+  questionNote:
+    'Scenario authored for this exercise; the grid is the SEC 2025 OL Q6(C) AGM template — Notice 4 × 1m, Agenda 5 × 2m (“must contain at least five items”), Signed 1m = 15m.',
+  grid: {
+    perPoint: [
+      { id: 'notice', label: 'Notice — 4 required elements', marks: 4 },
+      { id: 'a1', label: 'Agenda item 1', marks: 2 },
+      { id: 'a2', label: 'Agenda item 2', marks: 2 },
+      { id: 'a3', label: 'Agenda item 3', marks: 2 },
+      { id: 'a4', label: 'Agenda item 4', marks: 2 },
+      { id: 'a5', label: 'Agenda item 5', marks: 2 },
+      { id: 'signed', label: 'Signed by the secretary', marks: 1 },
+    ],
+    shorthand: 'Notice 4 · Agenda 5×2 · Signed 1 = 15m',
+    ruleNote:
+      'A business document is marked as a checklist of prescribed components. The agenda alone is 10 of the 15 marks and “must contain at least five items” — fewer than five directly caps the agenda score. The notice elements and the secretary’s signature each carry their own marks too, so the “furniture” is not optional.',
+    cite: MSOL('p.6 (Q6(C) AGM grid — Notice 4@1m, Agenda 5@2m, Signed 1m)'),
+  },
+  scripts: [
+    {
+      id: 'o3-a',
+      label: 'Script A',
+      persona: 'Good notice, short agenda',
+      attempts: [
+        {
+          id: 'o3-a-1',
+          text: 'A correct notice (date, time, venue and purpose of the AGM), then an agenda with three items — minutes of the last meeting, chairperson’s address, and any other business — signed by the secretary.',
+          key: { notice: 4, a1: 2, a2: 2, a3: 2, a4: 0, a5: 0, signed: 1 },
+          keyNote: 'Notice (4) and signature (1) are there, but the agenda has only three of the required five items, so two 2-mark slots are empty. 11/15 — the missing agenda items are the cheapest marks on the page.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Supplies fewer than the five agenda items the scheme requires — the agenda “must contain at least five items”.',
+        cite: MSOL('p.6'),
+      },
+    },
+    {
+      id: 'o3-b',
+      label: 'Script B',
+      persona: 'Full agenda, no wrapper',
+      attempts: [
+        {
+          id: 'o3-b-1',
+          text: 'Five clear agenda items — minutes, chairperson’s address, directors’ report, election of directors, and any other business — but with no notice (no date, time or venue) at the top and no secretary’s signature at the bottom.',
+          key: { notice: 0, a1: 2, a2: 2, a3: 2, a4: 2, a5: 2, signed: 0 },
+          keyNote: 'The full five-item agenda earns 10 — but the missing notice and signature are marked components too, and both are gone. 10/15.',
+        },
+      ],
+    },
+    {
+      id: 'o3-c',
+      label: 'Script C',
+      persona: 'Every component present',
+      attempts: [
+        {
+          id: 'o3-c-1',
+          text: 'A complete notice (date, time, venue, purpose), a five-item agenda (minutes, chairperson’s address, directors’ report, election of directors, AOB), signed by the secretary.',
+          key: { notice: 4, a1: 2, a2: 2, a3: 2, a4: 2, a5: 2, signed: 1 },
+          keyNote: '15/15 — every prescribed component of the document present and correct.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-o3',
+    rule: 'Business documents are marked component-by-component.',
+    detail:
+      'An AGM answer is a checklist: a full notice, at least five agenda items, and the secretary’s signature each carry marks, with the agenda worth 10 of 15. Give all five agenda items and don’t drop the notice or the signature.',
+    cite: MSOL('p.6'),
+  },
+};
+
+// ─────────────── O4 · Three points, three equal fifths (OL) ───────────────
+
+const O4: GridSession = {
+  mode: 'grid',
+  id: 'biz-ol-three-point',
+  subject: 'business',
+  level: 'ordinary',
+  title: 'Three points, three equal fifths',
+  cue: 'Outline three (OL)',
+  question:
+    'An Ordinary Level “outline three” question is worth 15 marks, marked at 5 marks each (4m to state the point + 1m to develop it) — a symmetric grid, unlike the asymmetric two-point one. A candidate gives only two of the three points required.',
+  questionNote:
+    'Scenario authored for this exercise; the grid is the SEC 2025 OL Q5(C) template — “Outline three skills: @ 5 marks each (4m + 1m)”. Where a two-point question is asymmetric (10 / 5), a three-point question is symmetric — every point is worth the same 5.',
+  grid: {
+    perPoint: [
+      { id: 'state', label: 'State the point', marks: 4 },
+      { id: 'develop', label: 'Develop it', marks: 1 },
+    ],
+    shorthand: '3 @ 5 each (4+1) — symmetric',
+    ruleNote:
+      'When three points are required the grid is symmetric: each point is worth 5 (4 to state, 1 to develop). There is no cheap point to skip — omitting the third costs a full 5 marks (33%), not the small 5-mark tail of the asymmetric two-point grid. Give all three, and add the development line to each.',
+    cite: MSOL('p.6 (Q5(C) “Outline three” grid — “@ 5 marks each (4m + 1m)”)'),
+  },
+  scripts: [
+    {
+      id: 'o4-a',
+      label: 'Script A',
+      persona: 'Two of three, both developed',
+      attempts: [
+        {
+          id: 'o4-a-1',
+          text: 'Point 1: stated and developed with a reason.',
+          key: { state: 4, develop: 1 },
+          keyNote: 'A complete point. 5/5.',
+        },
+        {
+          id: 'o4-a-2',
+          text: 'Point 2: stated and developed with a reason.',
+          key: { state: 4, develop: 1 },
+          keyNote: 'A second complete point. 5/5 — but the third point was never attempted, and on a symmetric grid that is a full 5 marks gone. 10/15.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Gives only two points where three are required — the OL brevity trap, made expensive by the symmetric grid.',
+        cite: CER15('p.20'),
+      },
+    },
+    {
+      id: 'o4-b',
+      label: 'Script B',
+      persona: 'Three named, none developed',
+      attempts: [
+        {
+          id: 'o4-b-1',
+          text: 'Point 1: named, no development.',
+          key: { state: 4, develop: 0 },
+          keyNote: 'Stated (4) but not developed — the 1-mark tail is lost.',
+        },
+        {
+          id: 'o4-b-2',
+          text: 'Point 2: named, no development.',
+          key: { state: 4, develop: 0 },
+          keyNote: 'Same again. 4/5.',
+        },
+        {
+          id: 'o4-b-3',
+          text: 'Point 3: named, no development.',
+          key: { state: 4, develop: 0 },
+          keyNote: 'Three named points beat two developed ones here (12 vs 10) — but a develop line on each would have banked the last three marks. 12/15.',
+        },
+      ],
+    },
+    {
+      id: 'o4-c',
+      label: 'Script C',
+      persona: 'Three, each developed',
+      attempts: [
+        {
+          id: 'o4-c-1',
+          text: 'Point 1: stated and developed.',
+          key: { state: 4, develop: 1 },
+          keyNote: 'Named (4) and developed (1) — full 5. Each of the three points is worth the same 5, so all three must be attempted.',
+        },
+        {
+          id: 'o4-c-2',
+          text: 'Point 2: stated and developed.',
+          key: { state: 4, develop: 1 },
+          keyNote: 'A second point, named (4) and developed (1) — another full 5. Symmetric marking: no point is a cheap tail.',
+        },
+        {
+          id: 'o4-c-3',
+          text: 'Point 3: stated and developed.',
+          key: { state: 4, develop: 1 },
+          keyNote: 'All three points stated and developed. 15/15.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-o4',
+    rule: 'Three-point OL grids are symmetric.',
+    detail:
+      'Unlike the asymmetric two-point grid (10 / 5), an “outline three” question pays 5 for every point (4 + 1). There is no cheap point to drop — skip one and you lose a full third of the marks. Give all three and develop each.',
+    cite: MSOL('p.6'),
+  },
+};
+
 export const BUSINESS_CHAIR: ChairSubject = {
   id: 'business',
   label: 'Business',
   tagline: 'Grids, cues and links — where Business marks are actually won.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [B1, B2, B3, B4, B5, B6, O1],
+  sessions: [B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, O1, O2, O3, O4],
   sources: [
     { label: 'SEC Business HL marking scheme 2025 (examiner-reports/business/2025-marking-scheme)' },
+    { label: 'SEC Business HL marking scheme 2024 (examiner-reports/business/2024-marking-scheme)' },
+    { label: 'SEC Business OL marking scheme 2025 (examiner-reports/business/2025-ol-marking-scheme)' },
     { label: 'Chief Examiner’s Report, Business 2015 (examiner-reports/business/2015-chief-examiner)' },
   ],
   coverageNote:
-    'Higher Level sessions are verified against the 2025 HL scheme; the Ordinary Level session is verified against the 2025 OL scheme (note: OL has no ABQ, and uses the asymmetric two-point grid). More OL-specific sessions are being added.',
+    'Higher Level sessions are verified against the 2025 and 2024 HL schemes; the Ordinary Level sessions are verified against the 2025 OL scheme (note: OL has no ABQ, and uses asymmetric two-point / symmetric three-point grids). The BoT/BoP “€ sign”, “surplus/deficit” and “Own Figure Allowed” rules are drawn from the 2024 HL scheme, where that question appears.',
 };

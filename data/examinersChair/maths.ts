@@ -54,6 +54,35 @@ const SCALE_10D: ScaleLevel[] = [
   { id: 'high', label: 'High partial credit', annotation: 'H', marks: 7 },
   { id: 'full', label: 'Full credit', annotation: '✓', marks: 10 },
 ];
+// HL 10D with Full credit −1 = 9 (10-mark D scale + F✱), verified from the 2024
+// HL scale table (p.[4], "10 mark scales D: 0, 3, 5, 7, 10") and the Full
+// Credit −1 rule (p.[5]).
+const SCALE_10D_STAR: ScaleLevel[] = [
+  SCALE_10D[0],
+  SCALE_10D[1],
+  SCALE_10D[2],
+  SCALE_10D[3],
+  { id: 'fullminus', label: 'Full credit −1', annotation: 'F✱', marks: 9 },
+  SCALE_10D[4],
+];
+// HL 5C scale (four categories) + Full credit −1 = 4, verified from the 2024 HL
+// scale table (p.[4], "5 mark scales C: 0, 2, 3, 5").
+const SCALE_5C_STAR: ScaleLevel[] = [
+  { id: 'none', label: 'No credit', annotation: '✗', marks: 0 },
+  { id: 'low', label: 'Low partial credit', annotation: 'L', marks: 2 },
+  { id: 'high', label: 'High partial credit', annotation: 'H', marks: 3 },
+  { id: 'fullminus', label: 'Full credit −1', annotation: 'F✱', marks: 4 },
+  { id: 'full', label: 'Full credit', annotation: '✓', marks: 5 },
+];
+// HL 15D scale (five categories), verified from the 2024 HL scale table
+// (p.[4], "15 mark scale D: 0, 4, 6, 8, 15"). Distinct from the OL 15D above.
+const SCALE_15D_HL: ScaleLevel[] = [
+  { id: 'none', label: 'No credit', annotation: '✗', marks: 0 },
+  { id: 'low', label: 'Low partial credit', annotation: 'L', marks: 4 },
+  { id: 'mid', label: 'Mid partial credit', annotation: 'M', marks: 6 },
+  { id: 'high', label: 'High partial credit', annotation: 'H', marks: 8 },
+  { id: 'full', label: 'Full credit', annotation: '✓', marks: 15 },
+];
 
 // ─────────────────────────── M1 · The ladder ───────────────────────────
 
@@ -586,12 +615,570 @@ const M7: ScaleSession = {
   },
 };
 
+// ─────────────── M8 · Own work carries forward ───────────────
+
+const M8: ScaleSession = {
+  mode: 'scale',
+  id: 'maths-own-work',
+  subject: 'maths',
+  level: 'common',
+  title: 'Own work carries forward',
+  cue: 'Hence',
+  question:
+    'Part (i) asked for the radius of a circle; the candidate answered r = 6·2 cm (the correct value was 6·0 cm). Part (ii): “Hence find the area of the circle, correct to one decimal place.” How is part (ii) marked?',
+  questionNote:
+    'Question authored for this exercise; the rule that a candidate’s earlier work is accepted in later parts (unless it oversimplifies) is the real SEC 2023 OL general instruction, reinforced by the Q8(c)(iii) “Use of Ans” note.',
+  scale: {
+    name: '10C (own-work carry-forward)',
+    levels: SCALE_10C,
+    notes: [
+      'General rule: accept the candidate’s work from one part of a question for use in later parts — unless using it oversimplifies the work.',
+      'Low partial credit: work of merit — the area formula A = πr² written.',
+      'High partial credit: the formula fully substituted with the candidate’s own radius.',
+      'Full credit: the area found correctly from the candidate’s OWN radius — the earlier error is penalised in part (i), not again here.',
+      'Exception: if the carried value makes THIS part trivial (oversimplifies it), the carry-forward is not accepted.',
+    ],
+    cite: MS23('p.[29] (accept earlier work in later parts); Q8(c)(iii) “Use of Ans” note p.[49]'),
+  },
+  scripts: [
+    {
+      id: 'm8-a',
+      label: 'Script A',
+      persona: 'Wrong radius, carried correctly',
+      work: ['A = πr² = π(6·2)²', '= π × 38·44', '= 120·76…', '= 120·8 cm²'],
+      keyLevelId: 'full',
+      keyNote:
+        'The radius is wrong — but it is the candidate’s OWN answer from part (i), and part (ii) uses it correctly and finishes. The scheme accepts own work in later parts, so part (ii) earns full credit: 10/10. The error is charged once, in part (i); it is not charged a second time here.',
+      embodies: {
+        behaviour: 'Carries an incorrect earlier answer correctly into a later part — accepted as own work by the scheme.',
+        cite: MS23('p.[29]'),
+      },
+    },
+    {
+      id: 'm8-b',
+      label: 'Script B',
+      persona: 'Formula only',
+      work: ['A = πr²'],
+      keyLevelId: 'low',
+      keyNote: 'The relevant formula is work of merit: low partial credit, 4/10.',
+    },
+    {
+      id: 'm8-c',
+      label: 'Script C',
+      persona: 'Own radius, one slip',
+      work: ['A = πr² = π(6·2)²', '= π × 36·44', '= 114·48…', '= 114·5 cm²'],
+      keyLevelId: 'high',
+      keyNote:
+        'Uses the own radius and finishes consistently, but squares 6·2 as 36·44 instead of 38·44 — an error in substitution, carried through cleanly. High partial credit, 6/10.',
+    },
+  ],
+  takeaway: {
+    id: 'codex-m8',
+    rule: 'Your earlier answer becomes your material — use it, and you are not charged twice.',
+    detail:
+      'The scheme accepts your own work from an earlier part when you use it in a later one, so a slip in part (i) costs you only in part (i). Carry your own number forward confidently — the exception is only when doing so makes the later part trivially easy.',
+    cite: MS23('p.[29]'),
+  },
+};
+
+// ─────────────── M9 · Don’t drop the ± ───────────────
+
+const M9: ScaleSession = {
+  mode: 'scale',
+  id: 'maths-both-values',
+  subject: 'maths',
+  level: 'higher',
+  title: 'Don’t drop the ±',
+  cue: 'Find',
+  question: 'Solving for the common ratio of a geometric sequence gives 6r⁴ = 3/8. Find r.',
+  questionNote:
+    'Question adapted from the SEC 2024 HL scheme’s geometric-sequence item (Q5(b), 6r⁴ = 3/8); the Scale 5C ladder and the note “Apply a * if only 1 value of r is given” are the real ones.',
+  scale: {
+    name: '5C (with Full credit −1)',
+    levels: SCALE_5C_STAR,
+    notes: [
+      'Low partial credit: work of merit in forming an equation in r.',
+      'High partial credit: r⁴ = 1/16 reached correctly.',
+      'Full credit −1: only ONE value of r given — the ± is dropped.',
+      'Full credit: both values, r = ±1/2.',
+    ],
+    cite: MS24('p.[16] (Q5(b) note “Apply a * if only 1 value of r is given”); scale table p.[4]'),
+  },
+  scripts: [
+    {
+      id: 'm9-a',
+      label: 'Script A',
+      persona: 'Half the answer',
+      work: ['6r⁴ = 3/8', 'r⁴ = 1/16', 'r = 1/2'],
+      keyLevelId: 'fullminus',
+      keyNote:
+        'r⁴ = 1/16 has two real roots, +1/2 and −1/2, and the work only reports one. Dropping the negative root is exactly the scheme’s Full Credit −1 case: “Apply a * if only 1 value of r is given” — 4/5. One missing sign, one mark.',
+      embodies: {
+        behaviour: 'Gives only one value where an even power admits ±, dropping a valid solution — Full Credit −1.',
+        cite: MS24('p.[16]'),
+      },
+    },
+    {
+      id: 'm9-b',
+      label: 'Script B',
+      persona: 'Both roots',
+      work: ['6r⁴ = 3/8', 'r⁴ = 1/16', 'r = ±1/2'],
+      keyLevelId: 'full',
+      keyNote: 'Both values reported. 5/5.',
+    },
+    {
+      id: 'm9-c',
+      label: 'Script C',
+      persona: 'One line short',
+      work: ['6r⁴ = 3/8', 'r⁴ = 3/48 = 1/16'],
+      keyLevelId: 'high',
+      keyNote: 'Reaches r⁴ = 1/16 but stops before taking the fourth root. That is the high-partial line: 3/5.',
+    },
+    {
+      id: 'm9-d',
+      label: 'Script D',
+      persona: 'Just starting',
+      work: ['6r⁴ = 3/8', 'r⁴ = (3/8) ÷ 6'],
+      keyLevelId: 'low',
+      keyNote: 'Work of merit in forming an equation in r: low partial credit, 2/5.',
+    },
+  ],
+  takeaway: {
+    id: 'codex-m9',
+    rule: 'An even power hides a second root — report the ±.',
+    detail:
+      'Square roots and fourth roots have a positive AND a negative solution; giving only one is Full Credit −1 by rule. Whenever you undo an even power, write ± first and then decide, from the context, which values survive.',
+    cite: MS24('p.[16]'),
+  },
+};
+
+// ─────────────── M10 · The MPC ceiling ───────────────
+
+const M10: ScaleSession = {
+  mode: 'scale',
+  id: 'maths-mpc-cap',
+  subject: 'maths',
+  level: 'higher',
+  title: 'The MPC ceiling',
+  cue: 'Differentiate',
+  question: 'Differentiate g(x) = (6x + 1)/(x⁴ + 3) and find g′(−2).',
+  questionNote:
+    'Question adapted from the SEC 2024 HL scheme’s quotient item (Q4(b)); the Scale 10D four-step ladder and the note “Award MPC at most if quotient/product rule is not used” are the real ones.',
+  scale: {
+    name: '10D',
+    levels: SCALE_10D,
+    notes: [
+      'Four steps: ① find du/dx; ② find dv/dx; ③ correct substitution into the quotient (or product) rule; ④ evaluate g′(−2).',
+      'Low partial credit: work of merit in one step.',
+      'Mid partial credit: two steps correct.',
+      'High partial credit: three steps correct.',
+      'Full credit: g′(−2) = −238/361.',
+      'Method cap: if the quotient/product rule is NOT used, award mid partial credit at most — however far the work is carried.',
+    ],
+    cite: MS24('p.[13] (Q4(b) ladder and the “Award MPC at most if quotient/product rule is not used” cap); scale table p.[4]'),
+  },
+  scripts: [
+    {
+      id: 'm10-a',
+      label: 'Script A',
+      persona: 'Skips the rule, gets a number',
+      work: ['g′(x) = 6 / (4x³)   ← derivative of top over derivative of bottom', 'g′(−2) = 6 / (4(−2)³) = 6/−32 = −3/16'],
+      keyLevelId: 'mid',
+      keyNote:
+        'A clean final number — but it was reached by differentiating the numerator over the denominator separately, which is NOT the quotient rule. The scheme caps that at mid partial credit however tidily it finishes: 5/10. The ceiling is set by the method chosen, not by how far it is carried.',
+      embodies: {
+        behaviour: 'Reaches an answer without the quotient/product rule, which the scheme caps at mid partial credit.',
+        cite: MS24('p.[13]'),
+      },
+    },
+    {
+      id: 'm10-b',
+      label: 'Script B',
+      persona: 'Rule set up, not evaluated',
+      work: ['u = 6x + 1,  v = x⁴ + 3', 'du/dx = 6,  dv/dx = 4x³', 'g′(x) = [(x⁴ + 3)(6) − (6x + 1)(4x³)] / (x⁴ + 3)²'],
+      keyLevelId: 'high',
+      keyNote:
+        'Three of the four steps done — both derivatives found and correctly substituted into the quotient rule — but g′(−2) not evaluated. Three steps = high partial credit, 7/10. Two rungs above Script A while doing the harder, correct thing.',
+    },
+    {
+      id: 'm10-c',
+      label: 'Script C',
+      persona: 'One step in',
+      work: ['u = 6x + 1,  v = x⁴ + 3', 'du/dx = 6'],
+      keyLevelId: 'low',
+      keyNote: 'Work of merit in one step: low partial credit, 3/10.',
+    },
+    {
+      id: 'm10-d',
+      label: 'Script D',
+      persona: 'All the way',
+      work: ['g′(x) = [(x⁴ + 3)(6) − (6x + 1)(4x³)] / (x⁴ + 3)²', 'g′(−2) = −238/361'],
+      keyLevelId: 'full',
+      keyNote: 'Quotient rule used, fully substituted and evaluated. 10/10.',
+    },
+  ],
+  takeaway: {
+    id: 'codex-m10',
+    rule: 'The wrong tool caps your marks even when the answer comes out.',
+    detail:
+      'Some questions cap credit at mid partial if you avoid the named rule (quotient, product, de Moivre, complex form) — softer than a zero gate, but still a ceiling set the moment you choose the shortcut. Reach for the rule the topic is testing, even when a back-of-envelope route seems to land.',
+    cite: MS24('p.[13]'),
+  },
+};
+
+// ─────────────── M11 · Eliminate the impostor root ───────────────
+
+const M11: ScaleSession = {
+  mode: 'scale',
+  id: 'maths-eliminate-root',
+  subject: 'maths',
+  level: 'higher',
+  title: 'Eliminate the impostor root',
+  cue: 'Solve',
+  question: 'Solve (n − 3)² = 3n + 1 for n, and state the valid solution.',
+  questionNote:
+    'Question adapted from the SEC 2024 HL scheme’s surd-equation item (Q1(a), where n = 1 gives −2 = √4 and must be rejected); the Scale 10D ladder and the note “Apply a * for incorrect solution(s) not eliminated” are the real ones.',
+  scale: {
+    name: '10D (with Full credit −1)',
+    levels: SCALE_10D_STAR,
+    notes: [
+      'Low partial credit: work of merit — an indication of squaring, or values trialled.',
+      'Mid partial credit: the fully correct quadratic, n² − 9n + 8 = 0.',
+      'High partial credit: the quadratic factorised, (n − 8)(n − 1) = 0.',
+      'Full credit −1: both roots given, but the invalid root (n = 1) not eliminated.',
+      'Full credit: n = 8, with n = 1 rejected because it gives −2 = √4.',
+    ],
+    cite: MS24('p.[6] (Q1(a) ladder and “Apply a * for incorrect solution(s) not eliminated”); scale table p.[4]'),
+  },
+  scripts: [
+    {
+      id: 'm11-a',
+      label: 'Script A',
+      persona: 'Keeps both roots',
+      work: ['(n − 3)² = 3n + 1', 'n² − 6n + 9 = 3n + 1', 'n² − 9n + 8 = 0', '(n − 8)(n − 1) = 0', 'n = 8,  n = 1'],
+      keyLevelId: 'fullminus',
+      keyNote:
+        'The algebra is flawless and both roots are found — but n = 1 does not satisfy the original equation (it gives −2 = √4), and it is left standing. The scheme’s note is exact: “Apply a * for incorrect solution(s) not eliminated.” Full Credit −1, 9/10. The last mark is the sentence that throws the impostor out.',
+      embodies: {
+        behaviour: 'Finds every root but fails to reject the one that does not satisfy the original equation — Full Credit −1.',
+        cite: MS24('p.[6]'),
+      },
+    },
+    {
+      id: 'm11-b',
+      label: 'Script B',
+      persona: 'Right quadratic, stops',
+      work: ['(n − 3)² = 3n + 1', 'n² − 6n + 9 = 3n + 1', 'n² − 9n + 8 = 0'],
+      keyLevelId: 'mid',
+      keyNote: 'The fully correct quadratic, then a stop before factorising. Mid partial credit, 5/10.',
+    },
+    {
+      id: 'm11-c',
+      label: 'Script C',
+      persona: 'Shows it and rejects it',
+      work: ['n² − 9n + 8 = 0', '(n − 8)(n − 1) = 0', 'n = 8 or n = 1', 'n = 1 ⟹ −2 = √4  ✗, reject.  So n = 8'],
+      keyLevelId: 'full',
+      keyNote: 'Both roots found AND the invalid one tested and rejected against the original. 10/10.',
+    },
+    {
+      id: 'm11-d',
+      label: 'Script D',
+      persona: 'Just squaring',
+      work: ['(n − 3)² = 3n + 1', 'n² − 6n + 9 = 3n + 1'],
+      keyLevelId: 'low',
+      keyNote: 'An indication of squaring is work of merit: low partial credit, 3/10.',
+    },
+  ],
+  takeaway: {
+    id: 'codex-m11',
+    rule: 'Squaring can breed a false root — test every solution in the original.',
+    detail:
+      'Squaring both sides, or solving a quadratic thrown up by a word problem, can produce a value that does not actually satisfy the original equation or its context. Leaving it in is Full Credit −1. Always substitute each root back and say which ones you are keeping and why.',
+    cite: MS24('p.[6]'),
+  },
+};
+
+// ─────────────── M12 · The graph is marked in parts ───────────────
+
+const M12: ScaleSession = {
+  mode: 'scale',
+  id: 'maths-graph-parts',
+  subject: 'maths',
+  level: 'higher',
+  title: 'The graph is marked in parts',
+  cue: 'Complete and plot',
+  question:
+    'Complete the table of five values for T(x), plot the seven points, and join them with a smooth curve.',
+  questionNote:
+    'Question adapted from the SEC 2024 HL scheme’s table-and-graph item (Q8(a)); the “13 parts” count, the Scale 10D ladder and the Full Credit −1 for a graph with no table entries are the real ones. The “No labels (once only)” rule is the SEC 2023 OL Q9(a)(iv) note.',
+  scale: {
+    name: '10D (13-part graph)',
+    levels: SCALE_10D_STAR,
+    notes: [
+      'The solution is 13 parts: 5 table values + 7 points plotted + points joined appropriately (a smooth curve, not line segments).',
+      'Low partial credit: 1 part correct.',
+      'Mid partial credit: 7 parts correct.',
+      'High partial credit: 10 parts correct.',
+      'Full credit −1: 12 parts correct — or a correct graph with no table entries; and missing labels cost Full Credit −1 (once only).',
+      'Full credit: all 13 parts.',
+    ],
+    cite: MS24('p.[21] (Q8(a) “13 parts” count and Full Credit −1 rules); “No labels (once only)” SEC 2023 OL p.[51]; scale table p.[4]'),
+  },
+  scripts: [
+    {
+      id: 'm12-a',
+      label: 'Script A',
+      persona: 'Twelve of thirteen',
+      work: ['Table: 5/5 values correct', 'Points plotted: 6/7 correct (one point off)', 'Curve joined smoothly', '→ 12 of 13 parts'],
+      keyLevelId: 'fullminus',
+      keyNote:
+        'Twelve of the thirteen parts are right — one point is misplotted. On a part-counted graph the scheme reads that as Full Credit −1: 9/10. A single stray point is one mark, no more; the rest of the graph still banks.',
+      embodies: {
+        behaviour: 'Loses one of many discrete graph parts (a single misplotted point) — Full Credit −1 on a part-counted item.',
+        cite: MS24('p.[21]'),
+      },
+    },
+    {
+      id: 'm12-b',
+      label: 'Script B',
+      persona: 'Half the parts',
+      work: ['Table: 5/5 values correct', 'Points plotted: 2/7', 'Curve not yet joined', '→ 7 of 13 parts'],
+      keyLevelId: 'mid',
+      keyNote: 'Seven parts correct — the five table values and two points — is the mid rung: 5/10. Every value and every point is its own mark.',
+    },
+    {
+      id: 'm12-c',
+      label: 'Script C',
+      persona: 'Ten parts',
+      work: ['Table: 5/5 values correct', 'Points plotted: 5/7', 'Curve joined smoothly', '→ 10 of 13 parts'],
+      keyLevelId: 'high',
+      keyNote: 'Ten parts = high partial credit, 7/10.',
+    },
+    {
+      id: 'm12-d',
+      label: 'Script D',
+      persona: 'One value',
+      work: ['Table: 1/5 values correct', 'No points plotted', '→ 1 of 13 parts'],
+      keyLevelId: 'low',
+      keyNote: 'A single correct table value is one part — low partial credit, 3/10.',
+    },
+  ],
+  takeaway: {
+    id: 'codex-m12',
+    rule: 'A graph is not one mark — it is a pile of small ones.',
+    detail:
+      'Table values, plotted points and the join are each counted separately, so a graph question rewards finishing every point and punishes leaving it half-drawn. Fill in every table cell, plot every point, join with a smooth curve, and label the axes — the labels themselves are a Full-Credit −1 line.',
+    cite: MS24('p.[21]'),
+  },
+};
+
+// ─────────────── M13 · Which penalties repeat ───────────────
+
+const M13: ScaleSession = {
+  mode: 'scale',
+  id: 'maths-penalty-scope',
+  subject: 'maths',
+  level: 'ordinary',
+  title: 'Which penalties repeat',
+  cue: 'Find',
+  question: 'Find the angle A, where tan A = 9/100, correct to the nearest degree.',
+  questionNote:
+    'Question adapted from the SEC 2023 OL scheme’s trigonometry item (Q7(a)(iv)); the Full Credit −1 star and the note “Incorrect Calculator Mode (Apply once in paper)” are the real ones.',
+  scale: {
+    name: '10C (with Full credit −1)',
+    levels: SCALE_10C_STAR,
+    notes: [
+      'Low partial credit: work of merit — the relevant trig ratio written.',
+      'High partial credit: A = tan⁻¹(9/100) reached.',
+      'Full credit −1: correct method with the calculator in the wrong mode (radians/grad instead of degrees).',
+      'Scope: the calculator-mode penalty is applied ONCE in the paper; a rounding penalty is applied EACH time it occurs.',
+    ],
+    cite: MS23('p.[45] (Q7(a)(iv) “Incorrect Calculator Mode — Apply once in paper”); rounding “each time” general rule p.[29]'),
+  },
+  scripts: [
+    {
+      id: 'm13-a',
+      label: 'Script A',
+      persona: 'Right method, wrong mode',
+      work: ['tan A = 9/100', 'A = tan⁻¹(0·09)', 'A = 0·0898…   (calculator left in radian mode)'],
+      keyLevelId: 'fullminus',
+      keyNote:
+        'The method is perfect; only the calculator mode is wrong, so the answer is 0·0898 (radians) instead of 5°. That is Full Credit −1 — but note the scope: the scheme applies the calculator-mode penalty ONCE across the whole paper. Get the mode right after this and you lose nothing further; a rounding error, by contrast, is charged every single time.',
+      embodies: {
+        behaviour: 'Correct method with the calculator in the wrong mode — Full Credit −1, applied once per paper.',
+        cite: MS23('p.[45]'),
+      },
+    },
+    {
+      id: 'm13-b',
+      label: 'Script B',
+      persona: 'Mode right',
+      work: ['tan A = 9/100', 'A = tan⁻¹(0·09) = 5·14°', 'A = 5°'],
+      keyLevelId: 'full',
+      keyNote: 'Correct ratio, calculator in degrees, rounded to the nearest degree. 10/10.',
+    },
+    {
+      id: 'm13-c',
+      label: 'Script C',
+      persona: 'Ratio only',
+      work: ['tan A = 9/100'],
+      keyLevelId: 'low',
+      keyNote: 'The relevant trig ratio is work of merit: low partial credit, 4/10.',
+    },
+  ],
+  takeaway: {
+    id: 'codex-m13',
+    rule: 'Know which mistakes repeat — the calculator mode is charged once, rounding every time.',
+    detail:
+      'The scheme charges some penalties once per paper (calculator mode) and others on every occurrence (rounding). Set your calculator to degrees before you start so the once-off never triggers, and check the required accuracy on every answer, because that one keeps billing.',
+    cite: MS23('p.[45]'),
+  },
+};
+
+// ─────────────── M14 · An impossible answer scores zero ───────────────
+
+const M14: ScaleSession = {
+  mode: 'scale',
+  id: 'maths-impossible-zero',
+  subject: 'maths',
+  level: 'ordinary',
+  title: 'An impossible answer scores zero',
+  cue: 'Find',
+  question:
+    'A player takes three independent shots, each with probability 0·7 of scoring. Find the probability that the player scores with all three shots.',
+  questionNote:
+    'Question adapted from the SEC 2023 OL scheme’s probability item (Q4(a)); the note “Zero Credit: Probability greater than 1” is the real one.',
+  scale: {
+    name: '10C (with a zero-credit gate)',
+    levels: SCALE_10C,
+    notes: [
+      'Low partial credit: work of merit — e.g. 0·7 written, or three trials indicated.',
+      'High partial credit: correct layout with full substitution, (0·7)(0·7)(0·7).',
+      'Full credit: 0·343.',
+      'Zero-credit gate: any answer giving a probability greater than 1 is awarded zero — no matter how much working is shown.',
+    ],
+    cite: MS23('p.[38] (Q4(a) “Zero Credit: Probability greater than 1”)'),
+  },
+  scripts: [
+    {
+      id: 'm14-a',
+      label: 'Script A',
+      persona: 'Adds instead of multiplying',
+      work: ['P = 0·7 + 0·7 + 0·7', '= 2·1'],
+      keyLevelId: 'none',
+      keyNote:
+        'There is working here — normally worth some merit — but the result, 2·1, is a probability greater than 1, which is impossible. The scheme’s note zeroes it: 0/10. A result that breaks a basic law of the topic forfeits the credit the working would otherwise have earned. The first sanity check on any probability is 0 ≤ P ≤ 1.',
+      embodies: {
+        behaviour: 'Reaches a probability above 1, which the scheme caps at zero regardless of working.',
+        cite: MS23('p.[38]'),
+      },
+    },
+    {
+      id: 'm14-b',
+      label: 'Script B',
+      persona: 'Multiplies correctly',
+      work: ['P = (0·7)(0·7)(0·7)', '= 0·343'],
+      keyLevelId: 'full',
+      keyNote: 'Independent events multiplied, correct layout and answer. 10/10.',
+    },
+    {
+      id: 'm14-c',
+      label: 'Script C',
+      persona: 'Right layout, not evaluated',
+      work: ['P = (0·7)(0·7)(0·7)'],
+      keyLevelId: 'high',
+      keyNote: 'Correct layout with full substitution, not yet evaluated. High partial credit, 6/10.',
+    },
+  ],
+  takeaway: {
+    id: 'codex-m14',
+    rule: 'A result that breaks the rules of the topic scores zero — check it is possible.',
+    detail:
+      'A probability above 1, a negative length, a sine greater than 1: these are gated to zero however much work you show. Before you write a final answer, ask whether it can even exist — an impossible number is worse than an unfinished one.',
+    cite: MS23('p.[38]'),
+  },
+};
+
+// ─────────────── M15 · One slip, not two, in a step ───────────────
+
+const M15: ScaleSession = {
+  mode: 'scale',
+  id: 'maths-step-block',
+  subject: 'maths',
+  level: 'higher',
+  title: 'One slip, not two, in a step',
+  cue: 'Calculate',
+  question:
+    'A loan is repaid by 300 equal monthly repayments. Using the amortisation formula, calculate the sum borrowed. (Marked as three steps: ① present values of the first repayments; ② fully correct substitution into the formula; ③ find the sum borrowed.)',
+  questionNote:
+    'Question adapted from the SEC 2024 HL scheme’s loan item (Q7(b)); the Scale 15D three-step ladder and the note “Step 3 is not given if there is more than one error in substitution in Step 2” are the real ones.',
+  scale: {
+    name: '15D (three steps)',
+    levels: SCALE_15D_HL,
+    notes: [
+      'Low partial credit: work of merit — e.g. the monthly rate written as a decimal.',
+      'Mid partial credit: one step correct.',
+      'High partial credit: two steps correct.',
+      'Full credit: all three steps — the sum borrowed found.',
+      'Step gate: Step 3 is NOT credited if Step 2 contains more than one substitution error. One slip is tolerated and carried; a second slip closes the next step.',
+    ],
+    cite: MS24('p.[18] (Q7(b) three-step ladder and “Step 3 is not given if there is more than one error in substitution in Step 2”); scale table p.[4]'),
+  },
+  scripts: [
+    {
+      id: 'm15-a',
+      label: 'Script A',
+      persona: 'Two slips, then a finish',
+      work: ['Step ①: present values written — correct', 'Step ②: substitution into the amortisation formula with TWO errors', 'Step ③: arithmetic carried to a final euro figure'],
+      keyLevelId: 'mid',
+      keyNote:
+        'Step ① is right, but Step ② carries two substitution errors — and the scheme is explicit: “Step 3 is not given if there is more than one error in substitution in Step 2.” So even though a final figure is produced, Step ③ earns nothing: one step correct, mid partial credit, 6/15. A single error would have been tolerated and carried; the second one shut the door on the last step.',
+      embodies: {
+        behaviour: 'Makes more than one substitution error in a step, which blocks credit for the following step.',
+        cite: MS24('p.[18]'),
+      },
+    },
+    {
+      id: 'm15-b',
+      label: 'Script B',
+      persona: 'One slip, carried',
+      work: ['Step ①: present values — correct', 'Step ②: substitution into the formula with ONE slip, otherwise correct', 'Step ③: sum borrowed found consistently'],
+      keyLevelId: 'high',
+      keyNote:
+        'One substitution slip in Step ②, finished consistently — a single error is tolerated, so Steps ① and ② both count: two steps correct, high partial credit, 8/15. The same script with a second slip in Step ② would have dropped to Script A’s mid.',
+    },
+    {
+      id: 'm15-c',
+      label: 'Script C',
+      persona: 'All three steps',
+      work: ['Step ①: present values — correct', 'Step ②: fully correct substitution', 'Step ③: sum borrowed = €334 563'],
+      keyLevelId: 'full',
+      keyNote: 'Three clean steps to the sum borrowed. 15/15.',
+    },
+    {
+      id: 'm15-d',
+      label: 'Script D',
+      persona: 'A first decimal',
+      work: ['Monthly rate = 0·279% = 0·00279'],
+      keyLevelId: 'low',
+      keyNote: 'Writing the monthly rate as a decimal is work of merit: low partial credit, 4/15.',
+    },
+  ],
+  takeaway: {
+    id: 'codex-m15',
+    rule: 'One slip in a step is survivable — a second can cost you the next step too.',
+    detail:
+      'The scheme carries you through a single substitution error, but more than one error in a step can block credit for the step that depends on it. On long substitutions, slow down and check each value once: the second slip does not just cost its own mark, it can forfeit the finish.',
+    cite: MS24('p.[18]'),
+  },
+};
+
 export const MATHS_CHAIR: ChairSubject = {
   id: 'maths',
   label: 'Mathematics',
   tagline: 'Scales, steps and stars — how maths scripts are really graded.',
   offeredLevels: ['higher', 'ordinary', 'foundation'],
-  sessions: [M1, M2, M3, M4, M5, M6, M7],
+  sessions: [M1, M2, M3, M4, M5, M6, M7, M8, M9, M10, M11, M12, M13, M14, M15],
   sources: [
     { label: 'SEC LC Mathematics OL marking scheme 2023, Paper 2 portion (examiner-reports/maths/2023-marking-scheme-ol-p2)' },
     { label: 'SEC LC Mathematics HL marking scheme 2024, Papers 1 & 2 (examiner-reports/maths/2024-hl-marking-scheme)' },
@@ -599,5 +1186,5 @@ export const MATHS_CHAIR: ChairSubject = {
     { label: 'Chief Examiner’s Report, Mathematics 2015 (examiner-reports/maths/2015-chief-examiner)' },
   ],
   coverageNote:
-    'Maths is marked on the same scale system — A–D scales, the partial-credit ladders, work-of-merit and Full Credit −1 — at Higher, Ordinary and Foundation level, so these sessions teach the system that applies at every level. The shared-convention sessions are pitched around Ordinary Level; two Higher Level sessions (the oversimplify ceiling and the named-method gate) are drawn from the 2024 HL scheme, and one Foundation session from the 2025 scheme.',
+    'Maths is marked on the same scale system — A–D scales, the partial-credit ladders, work-of-merit and Full Credit −1 — at Higher, Ordinary and Foundation level, so these sessions teach the system that applies at every level. Five shared-convention sessions (the ladder, counting steps, saying the conclusion, the one-mark star and own-work carry-forward) are pitched around Ordinary Level; the Higher Level sessions (the oversimplify ceiling, the named-method gate, the MPC ceiling, the ± rule, the impostor-root rule, the part-counted graph and the two-slip step gate) are drawn from the 2024 HL scheme; two Ordinary Level sessions (penalty scope and the impossible-answer gate) from the 2023 OL scheme; and one Foundation session from the 2025 scheme.',
 };

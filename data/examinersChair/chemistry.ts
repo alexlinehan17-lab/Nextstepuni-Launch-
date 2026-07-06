@@ -454,16 +454,531 @@ const CH7: ScaleSession = {
   },
 };
 
+// ─────────────── Ch8 · Round the way the question asks ───────────────
+
+const CH8: ScaleSession = {
+  mode: 'scale',
+  id: 'chem-rounding',
+  subject: 'chemistry',
+  level: 'common',
+  title: 'Round the way it asks',
+  cue: 'Calculate',
+  question:
+    'A rate calculation asks for the answer “correct to three decimal places”. The candidate’s value is arithmetically right — 0.016 — but they write it as 0.02, rounded to two places instead of three. The final-answer line is worth 3 marks. What does the wrong rounding cost?',
+  questionNote:
+    'Scenario authored for this exercise. Point 7 makes incorrect or inappropriate rounding a one-mark deduction, exactly like an arithmetic slip; Q3(b)(i) demands the rate values “correct to three decimal places”.',
+  scale: {
+    name: 'Rounding as the question specifies',
+    levels: [
+      { id: 'm0', label: '0 (value wrong)', annotation: '0', marks: 0 },
+      { id: 'm2', label: '2 (value right, rounded wrong)', annotation: '2', marks: 2 },
+      { id: 'm3', label: '3 (value + correct rounding)', annotation: '3', marks: 3 },
+    ],
+    notes: [
+      '“Each time an arithmetical error occurs in a calculation, one mark is deducted; this also applies to inappropriate or incorrect rounding of numerical answers.”',
+      'Rounding to the wrong number of places is treated exactly like an arithmetic slip: −1.',
+      'Where the question says “correct to three decimal places”, that instruction is part of the mark.',
+    ],
+    cite: MS('p.3 (point 7, rounding) and p.8 (Q3(b)(i), “correct to three decimal places”)'),
+  },
+  scripts: [
+    {
+      id: 'ch8-a',
+      label: 'The answer',
+      persona: 'Right value, wrong rounding',
+      work: ['Rate = 0.016  → writes 0.02 (rounded to two decimal places, when three were asked for)'],
+      keyLevelId: 'm2',
+      keyNote:
+        'The underlying value is correct, so most of the marks stand — but rounding to the wrong number of places is a one-mark deduction under the rounding rule, just like an arithmetic slip. 2 of 3. Reading “correct to three decimal places” as part of the answer, not a suggestion, keeps that mark.',
+      embodies: {
+        behaviour: 'Rounds a correct value to the wrong number of decimal places — the exact deduction point 7 attaches to “inappropriate or incorrect rounding”.',
+        cite: MS('p.3'),
+      },
+    },
+    {
+      id: 'ch8-b',
+      label: 'The answer',
+      persona: 'Right value, rounded as asked',
+      work: ['Rate = 0.016  (correct value, three decimal places, exactly as the question specifies)'],
+      keyLevelId: 'm3',
+      keyNote:
+        'Same value — but rounded to the three decimal places the question demanded. Full 3 marks. The only difference from the answer above is honouring the “three decimal places” instruction.',
+    },
+  ],
+  takeaway: {
+    id: 'codex-chem8',
+    rule: 'Round to the precision the question names.',
+    detail:
+      'Incorrect or inappropriate rounding costs a mark, exactly like an arithmetic slip. When a question says “correct to three decimal places” (or two, or a given significant figure), that instruction is part of the answer — give the value to the precision asked, no more and no less.',
+    cite: MS('p.3'),
+  },
+};
+
+// ─────────────── Ch9 · Answer the number asked, no extras ───────────────
+
+const CH9: ScaleSession = {
+  mode: 'scale',
+  id: 'chem-cancellation',
+  subject: 'chemistry',
+  level: 'common',
+  title: 'Two asked, three given',
+  cue: 'State',
+  question:
+    'A question says “State two reasons why real gases deviate from ideal behaviour” — 6 marks, 3 per reason. The candidate hedges and writes three reasons: two correct, one wrong. Surely the extra one is harmless? How does cancellation score it?',
+  questionNote:
+    'Scenario authored for this exercise. Point 1’s cancellation rule: when a candidate gives more than the required number of responses, or a list of correct and incorrect answers, a wrong extra can cancel a correct one.',
+  scale: {
+    name: 'Cancellation on an over-long list',
+    levels: [
+      { id: 'm0', label: '0 (no correct reasons stand)', annotation: '0', marks: 0 },
+      { id: 'm3', label: '3 (a correct reason cancelled by the wrong extra)', annotation: '3', marks: 3 },
+      { id: 'm6', label: '6 (exactly two correct, no extras)', annotation: '6', marks: 6 },
+    ],
+    notes: [
+      '“Cancellation may apply when a candidate gives more than the required number of responses, or a list of correct and incorrect answers.”',
+      'Two reasons were asked for; a third, wrong, reason is an extra response — and it can cancel one of the correct ones.',
+      'Writing more than the number asked is not free insurance: it can cost you marks you had already earned.',
+    ],
+    cite: MS('p.3 (point 1, cancellation) and p.10 (Q4, “[any two]”/“[any three]” lists)'),
+  },
+  scripts: [
+    {
+      id: 'ch9-a',
+      label: 'The answer',
+      persona: 'Hedges with a third reason',
+      work: [
+        '“Particles have volume.” (correct)',
+        '“There are intermolecular forces.” (correct)',
+        '“Collisions transfer energy to the walls.” (wrong — an extra, third reason)',
+      ],
+      keyLevelId: 'm3',
+      keyNote:
+        'Only two reasons were asked for. The wrong third response triggers cancellation, striking out one of the two correct reasons — so two correct answers net just 3 marks. Stopping at the two the candidate was sure of would have banked the full 6. More is not safer.',
+      embodies: {
+        behaviour: 'Gives more than the required number of responses, mixing a wrong one in — the exact situation point 1 says cancellation applies to.',
+        cite: MS('p.3'),
+      },
+    },
+    {
+      id: 'ch9-b',
+      label: 'The answer',
+      persona: 'Two, and only two',
+      work: [
+        '“Particles have volume.” (correct)',
+        '“There are intermolecular forces.” (correct)',
+      ],
+      keyLevelId: 'm6',
+      keyNote:
+        'Exactly the two reasons asked for, both correct, nothing extra to cancel. Full 6 marks. The discipline of answering the number asked — not one more — is what protects the score.',
+    },
+  ],
+  takeaway: {
+    id: 'codex-chem9',
+    rule: 'Give the number of answers asked — no bonus extras.',
+    detail:
+      'When a question asks for two (or three) things, give exactly that many. A wrong extra doesn’t sit harmlessly beside your right answers — under cancellation it can strike one of them out. Pick your best answers and stop at the number requested.',
+    cite: MS('p.3'),
+  },
+};
+
+// ─────────────── Ch10 · Use the graph paper ───────────────
+
+const CH10: ScaleSession = {
+  mode: 'scale',
+  id: 'chem-graph-paper',
+  subject: 'chemistry',
+  level: 'common',
+  title: 'Use the graph paper',
+  cue: 'Draw a graph',
+  question:
+    'A question asks for a graph; the plotting is worth 6 marks. One candidate plots every point perfectly — but on ordinary lined paper, not graph paper. Another uses graph paper but misplots a single point. Where does each land?',
+  questionNote:
+    'Scenario authored for this exercise. Q3(b)(ii) marks the plotting “[–1 for each incorrectly plotted point]” with a hard cap: “[maximum of 3 marks for points plotted on paper other than graph paper]”.',
+  scale: {
+    name: 'Plotting (6 marks)',
+    levels: [
+      { id: 'm3', label: '3 (perfect plot, wrong paper — capped)', annotation: '3', marks: 3 },
+      { id: 'm5', label: '5 (graph paper, one point misplotted)', annotation: '5', marks: 5 },
+      { id: 'm6', label: '6 (graph paper, all points correct)', annotation: '6', marks: 6 },
+    ],
+    notes: [
+      '“Points plotted [–1 for each incorrectly plotted point]” — each stray point is a one-mark deduction, not a wipe-out.',
+      '“Maximum of 3 marks for points plotted on paper other than graph paper.” — the cap bites however neat the plot.',
+      'Perfect points on the wrong paper score less than a flawed plot on the right paper.',
+    ],
+    cite: MS('p.8 (Q3(b)(ii), plotting deductions and graph-paper cap)'),
+  },
+  scripts: [
+    {
+      id: 'ch10-a',
+      label: 'Script A',
+      persona: 'Perfect plot, lined paper',
+      work: [
+        'Plots all six points correctly and neatly.',
+        'But draws the whole graph on ordinary lined paper, not the graph paper provided.',
+      ],
+      keyLevelId: 'm3',
+      keyNote:
+        'Every point is right, yet the plotting is capped at 3 of 6 because it isn’t on graph paper. The cap is blind to how careful the plot is — using the graph paper provided is worth as much as plotting accurately. Half the marks gone for a choice of paper.',
+      embodies: {
+        behaviour: 'Plots on paper other than graph paper — hitting the explicit 3-mark cap in the scheme.',
+        cite: MS('p.8'),
+      },
+    },
+    {
+      id: 'ch10-b',
+      label: 'Script B',
+      persona: 'Graph paper, one stray point',
+      work: [
+        'Uses the graph paper provided.',
+        'Plots five points correctly; one point is placed slightly wrong.',
+      ],
+      keyLevelId: 'm5',
+      keyNote:
+        'On graph paper the per-point rule applies gently: −1 for the single misplotted point, so 5 of 6. One slip is one mark — nothing like the flat cap that the wrong paper triggers. The paper choice mattered more than the stray point.',
+    },
+  ],
+  takeaway: {
+    id: 'codex-chem10',
+    rule: 'Draw graphs on the graph paper — every point counts, one at a time.',
+    detail:
+      'A single misplotted point costs one mark. But plotting on anything other than graph paper caps the whole plotting block at 3 — a harsher loss than several stray points. Always use the graph paper provided, and plot each point with care.',
+    cite: MS('p.8'),
+  },
+};
+
+// ─────────────── Ch11 · The sign carries its own mark ───────────────
+
+const CH11: GridSession = {
+  mode: 'grid',
+  id: 'chem-thermo-sign',
+  subject: 'chemistry',
+  level: 'common',
+  title: 'The sign is worth a mark',
+  cue: 'Calculate',
+  question:
+    'A heat-of-combustion calculation multiplies a heat of formation by a coefficient: 8 × (–393.5) for the CO₂ term. The scheme marks each such term “(2 [multiplicative factor] + 1 [sign])” — two marks for the right factor, a separate mark for the right sign. A candidate computes “8 × 393.5 = 3148” and writes it as +3148, dropping the negative. What survives?',
+  questionNote:
+    'Scenario authored for this exercise. The “(2 [multiplicative factor] + 1 [sign])” split on Hess-cycle terms is the real SEC shorthand: the arithmetic factor and the sign are marked separately.',
+  grid: {
+    perPoint: [
+      { id: 'factor', label: 'Correct multiplicative factor (coefficient × ΔHf)', marks: 2 },
+      { id: 'sign', label: 'Correct sign on the term', marks: 1 },
+    ],
+    shorthand: '(2 [factor] + 1 [sign])',
+    ruleNote:
+      'On a Hess-cycle term the scheme splits the marks: two for the right multiplicative factor, one just for the sign. Getting the magnitude right but the sign wrong forfeits only the sign mark — but forfeit it you do. The minus signs on exothermic values are not decoration; each one is worth a mark.',
+    cite: MS('p.12 (Q6(d)(i), “(2 [multiplicative factor] + 1 [sign])”)'),
+  },
+  scripts: [
+    {
+      id: 'ch11-a',
+      label: 'Script A',
+      persona: 'Right magnitude, dropped sign',
+      attempts: [
+        {
+          id: 'ch11-a-1',
+          text: '8 × 393.5 = 3148  (writes +3148 — the negative sign on the heat of formation is dropped).',
+          key: { factor: 2, sign: 0 },
+          keyNote:
+            'The multiplicative factor is right, so those two marks are banked (2). But the term should be –3148: dropping the sign forfeits the separate sign mark. 2 of 3. Carrying the minus through every exothermic term is a mark per term.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Computes the correct magnitude but loses the sign — the exact split the “(2 [factor] + 1 [sign])” marking isolates.',
+        cite: MS('p.12'),
+      },
+    },
+    {
+      id: 'ch11-b',
+      label: 'Script B',
+      persona: 'Factor and sign both right',
+      attempts: [
+        {
+          id: 'ch11-b-1',
+          text: '8 × (–393.5) = –3148  (correct factor, negative sign carried through).',
+          key: { factor: 2, sign: 1 },
+          keyNote:
+            'Correct factor (2) and the sign carried through (1) — the full 3 for the term. The only difference from Script A is the minus sign, and it is worth a mark on its own.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-chem11',
+    rule: 'Carry the sign — it is marked separately.',
+    detail:
+      'In heat-of-reaction and Hess-cycle calculations, each term is marked “(2 [factor] + 1 [sign])”: the arithmetic and the sign score independently. A right number with the wrong (or missing) sign still drops the sign mark. Write the minus on every exothermic value.',
+    cite: MS('p.12'),
+  },
+};
+
+// ─────────────── Ch12 · Charges are part of the ion ───────────────
+
+const CH12: GridSession = {
+  mode: 'grid',
+  id: 'chem-ion-charges',
+  subject: 'chemistry',
+  level: 'common',
+  title: 'The charge is the answer',
+  cue: 'Write the formula',
+  question:
+    'A question asks for the chemical formulae of the two metal ions that cause water hardness. The scheme prints the answer “Ca²⁺, Mg²⁺ [charges required] (3 + 3)”. A candidate writes “Ca” and “Mg” — right elements, no charges. How is each marked?',
+  questionNote:
+    'Scenario authored for this exercise. Where the scheme prints “[charges required]”, the ionic charge is not optional — the neutral-atom symbol does not answer a question that asks for the ion.',
+  grid: {
+    perPoint: [{ id: 'ion', label: 'Correct ion with its charge', marks: 3 }],
+    shorthand: 'ion + charge · 3m each',
+    ruleNote:
+      'When a question asks for an ion and the scheme prints “[charges required]”, the charge is part of the answer, not a flourish. “Ca” is a neutral atom; “Ca²⁺” is the ion the question asked for. Each ion is marked on its own — leave the charge off one and you lose that ion’s marks while the other still scores.',
+    cite: MS('p.18 (Q11(c)(i), “[charges required]”)'),
+  },
+  scripts: [
+    {
+      id: 'ch12-a',
+      label: 'Script A',
+      persona: 'Charge on one ion, not the other',
+      attempts: [
+        {
+          id: 'ch12-a-1',
+          text: 'Ca²⁺  (correct ion, charge shown).',
+          key: { ion: 3 },
+          keyNote: 'The ion is written with its charge — exactly what “[charges required]” demands. 3 marks.',
+        },
+        {
+          id: 'ch12-a-2',
+          text: 'Mg  (right element, but no charge).',
+          key: { ion: 0 },
+          keyNote:
+            '“Mg” is the neutral atom, not the ion the question asked for; with “[charges required]” printed, the missing charge costs the whole 3 for this ion. Each ion is marked independently, so this one falls even though the calcium ion scored.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Omits the charge on an ion the scheme marks “[charges required]” — writing the atom where the ion was asked for.',
+        cite: MS('p.18'),
+      },
+    },
+    {
+      id: 'ch12-b',
+      label: 'Script B',
+      persona: 'Both ions, both charged',
+      attempts: [
+        {
+          id: 'ch12-b-1',
+          text: 'Ca²⁺  (correct ion with charge).',
+          key: { ion: 3 },
+          keyNote: 'Ion and charge both present. 3 marks.',
+        },
+        {
+          id: 'ch12-b-2',
+          text: 'Mg²⁺  (correct ion with charge).',
+          key: { ion: 3 },
+          keyNote: 'The charge that Script A dropped is here. 3 marks — the full 6 across both ions.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-chem12',
+    rule: 'When asked for an ion, write the charge.',
+    detail:
+      'An ion’s charge is part of its formula, and schemes print “[charges required]” to say so. “Na” and “Na⁺” are different species — one is an atom, one is the ion the question asked for. Write the superscript charge every time you name an ion.',
+    cite: MS('p.18'),
+  },
+};
+
+// ─────────────── Ch13 · Square brackets mean concentration ───────────────
+
+const CH13: ScaleSession = {
+  mode: 'scale',
+  id: 'chem-kc-brackets',
+  subject: 'chemistry',
+  level: 'common',
+  title: 'Square brackets, not round',
+  cue: 'Write an expression',
+  question:
+    'A question asks for the equilibrium-constant expression Kc — worth 6 marks. The candidate gets the ratio exactly right (products over reactants, each raised to the right power) but writes every term in round brackets, ( ), instead of the square brackets, [ ], that mean molar concentration. How does the scheme treat it?',
+  questionNote:
+    'Scenario authored for this exercise. On the Kc expression the scheme prints “[award 3 marks if round brackets are used]”: square brackets denote concentration, so round brackets score only half.',
+  scale: {
+    name: 'Kc expression (6 marks)',
+    levels: [
+      { id: 'm0', label: '0 (ratio wrong)', annotation: '0', marks: 0 },
+      { id: 'm3', label: '3 (right ratio, round brackets)', annotation: '3', marks: 3 },
+      { id: 'm6', label: '6 (right ratio, square brackets)', annotation: '6', marks: 6 },
+    ],
+    notes: [
+      '“[award 3 marks if round brackets are used]” — half the marks for the right ratio in the wrong brackets.',
+      'Square brackets [X] are the notation for molar concentration; round brackets (X) are not.',
+      'The chemistry of the expression is right either way — the notation alone is worth 3 of the 6 marks.',
+    ],
+    cite: MS('p.13 (Q7(a)(ii), “[award 3 marks if round brackets are used]”)'),
+  },
+  scripts: [
+    {
+      id: 'ch13-a',
+      label: 'The answer',
+      persona: 'Right ratio, round brackets',
+      work: ['Kc = (H₂)(CO₂) / (H₂O)(CO)   — correct ratio, but round brackets throughout.'],
+      keyLevelId: 'm3',
+      keyNote:
+        'The ratio is completely correct — products over reactants, right terms — but round brackets aren’t the notation for concentration, so the scheme awards only 3 of 6. Swapping ( ) for [ ] would have doubled the mark for no extra chemistry.',
+      embodies: {
+        behaviour: 'Writes a correct Kc ratio in round brackets — the exact case the scheme halves to 3 marks.',
+        cite: MS('p.13'),
+      },
+    },
+    {
+      id: 'ch13-b',
+      label: 'The answer',
+      persona: 'Right ratio, square brackets',
+      work: ['Kc = [H₂][CO₂] / [H₂O][CO]   — correct ratio in square brackets.'],
+      keyLevelId: 'm6',
+      keyNote:
+        'Same ratio, but written with square brackets — the notation for molar concentration. Full 6 marks. The only difference from the answer above is the shape of the brackets, and it is worth 3 marks.',
+    },
+  ],
+  takeaway: {
+    id: 'codex-chem13',
+    rule: 'Write concentrations in square brackets.',
+    detail:
+      'In equilibrium-constant expressions, [X] means the molar concentration of X — round brackets do not. A correct Kc ratio in round brackets scores only half. Use square brackets for every concentration term.',
+    cite: MS('p.13'),
+  },
+};
+
+// ─────────────── Ch14 · Colour change has a direction ───────────────
+
+const CH14: ScaleSession = {
+  mode: 'scale',
+  id: 'chem-colour-direction',
+  subject: 'chemistry',
+  level: 'common',
+  title: 'Which way the colour changes',
+  cue: 'State the colour change',
+  question:
+    'A question asks for the colour change at the end point — marked as two colours, 3 for the starting colour and 3 for the final colour. A candidate names both correct colours but states the change the wrong way round (final → starting). The scheme prints “[award 3 marks for both correct colours reversed]”. Where does it land?',
+  questionNote:
+    'Scenario authored for this exercise. A colour change is marked as a from-colour and a to-colour; the scheme’s “[award 3 marks for both correct colours reversed]” note halves the marks when the direction is reversed.',
+  scale: {
+    name: 'Colour change (6 marks)',
+    levels: [
+      { id: 'm0', label: '0 (colours wrong or vague)', annotation: '0', marks: 0 },
+      { id: 'm3', label: '3 (both colours right, direction reversed)', annotation: '3', marks: 3 },
+      { id: 'm6', label: '6 (both colours right, correct direction)', annotation: '6', marks: 6 },
+    ],
+    notes: [
+      'A colour change is two marks-blocs: the starting colour and the final colour, 3 each.',
+      '“[award 3 marks for both correct colours reversed]” — right colours, wrong direction, scores only half.',
+      'Knowing the two colours isn’t enough; the from → to direction is half the marks.',
+    ],
+    cite: MS('p.6 (Q1(c)(ii), “[award 3 marks for both correct colours reversed]”)'),
+  },
+  scripts: [
+    {
+      id: 'ch14-a',
+      label: 'The answer',
+      persona: 'Right colours, wrong way round',
+      work: ['“Colourless to pink.”  (both colours correct, but the change actually runs pink → colourless).'],
+      keyLevelId: 'm3',
+      keyNote:
+        'Both colours are right, so the candidate clearly knows the chemistry — but the direction is reversed, and the scheme awards just 3 of 6 for correct colours the wrong way round. Stating the change in the order it actually happens is the other half of the mark.',
+      embodies: {
+        behaviour: 'Names both correct colours but reverses the direction — the exact case the “colours reversed” note halves.',
+        cite: MS('p.6'),
+      },
+    },
+    {
+      id: 'ch14-b',
+      label: 'The answer',
+      persona: 'Right colours, right direction',
+      work: ['“Pink to colourless.”  (both colours correct, in the direction the change actually occurs).'],
+      keyLevelId: 'm6',
+      keyNote:
+        'The same two colours, stated in the right order. Full 6 marks. The direction — from-colour then to-colour — is worth as much as knowing the colours at all.',
+    },
+  ],
+  takeaway: {
+    id: 'codex-chem14',
+    rule: 'State a colour change in the right direction.',
+    detail:
+      'A colour change is marked as “from X to Y” — the starting colour and the final colour each carry marks. Naming both correct colours but reversing the direction scores only half. Always state the change in the order it happens: original colour first, final colour second.',
+    cite: MS('p.6'),
+  },
+};
+
+// ─────────────── Ch15 · When only the name will do ───────────────
+
+const CH15: GridSession = {
+  mode: 'grid',
+  id: 'chem-name-not-formula',
+  subject: 'chemistry',
+  level: 'common',
+  title: 'When only the name counts',
+  cue: 'Name the compound',
+  question:
+    'A question says “Name the inorganic compound eliminated.” Generally a scheme accepts either the name or the formula — but here it prints the answer “hydrogen chloride [do not accept HCl or hydrochloric acid]”. A candidate writes “HCl”. How does it score?',
+  questionNote:
+    'Scenario authored for this exercise. Point 6 lets a name or formula answer an identification “unless otherwise indicated” — and Q8(c)(ii) indicates otherwise, rejecting the formula when the cue is “Name”.',
+  grid: {
+    perPoint: [{ id: 'name', label: 'Correct name (as the question demands)', marks: 3 }],
+    shorthand: 'name only · 3m',
+    ruleNote:
+      'Point 6 usually lets you answer an identification with either the name or the formula. But that holds only “unless otherwise indicated” — and a “Name …” cue with “[do not accept HCl …]” printed is exactly that indication. When the question asks you to name a compound and rejects the formula, the formula scores zero however correct it is.',
+    cite: MS('p.3 (point 6, name/formula) and p.14 (Q8(c)(ii), “[do not accept HCl …]”)'),
+  },
+  scripts: [
+    {
+      id: 'ch15-a',
+      label: 'Script A',
+      persona: 'Gives the formula',
+      attempts: [
+        {
+          id: 'ch15-a-1',
+          text: '“HCl.”',
+          key: { name: 0 },
+          keyNote:
+            'The formula is chemically right, but the cue was “Name …” and the scheme prints “[do not accept HCl or hydrochloric acid]”. That is the “unless otherwise indicated” exception to the name-or-formula rule — so the formula scores 0. Reading the cue tells you which form is wanted.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Answers a “Name …” cue with a formula the scheme explicitly refuses — missing the “unless otherwise indicated” limit on the name-or-formula rule.',
+        cite: MS('p.14'),
+      },
+    },
+    {
+      id: 'ch15-b',
+      label: 'Script B',
+      persona: 'Gives the name',
+      attempts: [
+        {
+          id: 'ch15-b-1',
+          text: '“Hydrogen chloride.”',
+          key: { name: 3 },
+          keyNote: 'The name the “Name …” cue asked for — and the one form the scheme accepts here. 3 marks.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-chem15',
+    rule: 'Read the cue: “Name” can mean the formula won’t do.',
+    detail:
+      'You may usually identify a substance by name or formula — but only “unless otherwise indicated”. A “Name the compound …” cue can reject the formula outright (e.g. “[do not accept HCl]”). When the question says name, write the word, not the symbols.',
+    cite: MS('p.3'),
+  },
+};
+
 export const CHEMISTRY_CHAIR: ChairSubject = {
   id: 'chemistry',
   label: 'Chemistry',
-  tagline: 'Precise terms, shown workings and one method at a time.',
+  tagline: 'Precise terms, shown workings, the right notation and one method at a time.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [CH1, CH2, CH3, CH4, CH5, CH6, CH7],
+  sessions: [CH1, CH2, CH3, CH4, CH5, CH6, CH7, CH8, CH9, CH10, CH11, CH12, CH13, CH14, CH15],
   sources: [
     { label: 'SEC LC Chemistry HL marking scheme 2024 (examiner-reports/chemistry/2024-marking-scheme)' },
     { label: 'Chief Examiner’s Report, Chemistry 2013 (examiner-reports/chemistry/2013-chief-examiner)' },
   ],
   coverageNote:
-    'These sessions teach the general conventions — exact-term demands, the Mr rule, the calculation-deduction regime, the units rule, the // method rule, balanced-equation part-marking and organic structure-drawing deductions — which the scheme applies at both Higher and Ordinary level. Verified against the 2024 Higher Level scheme (and re-confirmed in the 2025 scheme); level-specific worked examples are being added.',
+    'These sessions teach the general conventions — exact-term demands, the Mr rule, the calculation-deduction regime (arithmetic slips, rounding and precision), the units rule, the // method rule, cancellation on over-long lists, balanced-equation part-marking, organic structure-drawing deductions, the multiplicative-factor-plus-sign split in thermochemistry, ionic charges, square-bracket concentration notation, colour-change direction, graph-plotting deductions and the name-vs-formula rule — which the scheme applies at both Higher and Ordinary level. Verified against the 2024 Higher Level scheme (with cancellation, the rounding clause, the factor-plus-sign split and the round-brackets rule re-confirmed in the 2025 scheme); level-specific worked examples are being added.',
 };

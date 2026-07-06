@@ -443,16 +443,516 @@ const BIO7: ScaleSession = {
   },
 };
 
+// ───────────────── Bio8 · Not every mark is worth the same (graduated marks) ─────────────────
+
+const BIO8: ScaleSession = {
+  mode: 'scale',
+  id: 'bio-graduated',
+  subject: 'biology',
+  level: 'common',
+  title: 'Not every mark is worth the same',
+  cue: 'Name / State (graduated marks)',
+  question:
+    'A six-part short question is worth 20 marks and the scheme prints its marking as “2(4) + 4(3)”. A candidate answers four of the six parts correctly (the first four encountered) and leaves the last two blank. How many marks?',
+  questionNote:
+    'Question authored for this exercise. The graduated “2(4) + 4(3)” notation is the SEC general convention, quoted verbatim from the marking-scheme introduction: the first two correct answers are worth 4 each and each later correct answer 3.',
+  scale: {
+    name: '20 marks · 2(4) + 4(3)',
+    levels: totalScale([0, 8, 14, 20]),
+    notes: [
+      'The scheme states: “2(4) + 4(3). This means that the first two correct answers encountered are awarded 4 marks each and each subsequent correct answer is awarded 3 marks.”',
+      'So the marks are front-loaded: your first two right answers carry 4 apiece, everything after that carries 3.',
+      'Four correct here = 4 + 4 (first two) + 3 + 3 (next two) = 14.',
+      'All six correct would be 4 + 4 + 3 + 3 + 3 + 3 = 20; two correct would be just 8.',
+    ],
+    cite: MS('p.3 (graduated marks — “2(4) + 4(3)”, first two correct 4 each, rest 3)'),
+  },
+  scripts: [
+    {
+      id: 'bio8-a',
+      label: 'The script',
+      persona: 'Four right, two blank',
+      work: [
+        'Parts (a)–(d): four correct answers',
+        'Parts (e)–(f): left blank',
+      ],
+      keyLevelId: 'm14',
+      keyNote:
+        'Four correct answers, but not four equal marks. Under 2(4) + 4(3) the first two correct score 4 each and the next two score 3 each: 4 + 4 + 3 + 3 = 14. The notation tells you the early answers are worth most — never skip the opening parts of a graduated question to chase the later ones.',
+      embodies: {
+        behaviour: 'Treats every correct answer in a “2(4) + 4(3)” item as equal, missing that the first two carry more marks than the rest.',
+        cite: MS('p.3'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-bio8',
+    rule: 'In a graduated “N(x) + M(y)” item, the first answers are worth most.',
+    detail:
+      'Where the scheme reads “2(4) + 4(3)”, your first two correct answers score 4 each and each later one scores 3 — the marks are front-loaded. Answer the early parts first and don’t leave them for a lower-value part you feel surer of.',
+    cite: MS('p.3'),
+  },
+};
+
+// ───────────────── Bio9 · Best-of selection — the dropped answer (Section A/B/C) ─────────────────
+
+const BIO9: ScaleSession = {
+  mode: 'scale',
+  id: 'bio-best-of',
+  subject: 'biology',
+  level: 'common',
+  title: 'The answer that gets dropped',
+  cue: 'Name / State (Best-of selection)',
+  question:
+    'Section A, Question 1 offers six short parts (a)–(f), each worth 4 marks, and the rubric marks your BEST FIVE. A candidate attempts all six: five are correct and one (part f) is wrong. How many marks?',
+  questionNote:
+    'Question authored for this exercise. The Best-of selection rubric is the SEC general structure, printed on every paper: Section A “Best five answers from (a) – (f)”, Section B “Best 2”, Section C “Best 4”. Each Section A part here is 4 marks (2025 structure).',
+  scale: {
+    name: 'Section A · Best 5 of 6 · each 4',
+    levels: totalScale([0, 16, 20]),
+    notes: [
+      'The rubric marks the “Best five answers from (a) – (f)”, each worth 4 marks — 20 in all.',
+      'Five parts are correct = 5 × 4 = 20. The one wrong part is simply not among your best five, so it is dropped.',
+      'This is whole-part selection, NOT the Section A surplus rule: a wrong SEPARATE part just fails to be selected — it does not cancel a correct part. (A surplus wrong answer only cancels when it is an extra answer INSIDE one part.)',
+      'So the wrong sixth part costs nothing here: 20.',
+    ],
+    cite: MS25('p.8 (Section A — “Best five answers from (a) – (f)”, each 4)'),
+  },
+  scripts: [
+    {
+      id: 'bio9-a',
+      label: 'The script',
+      persona: 'Five right, one wrong — all six attempted',
+      work: [
+        'Parts (a)–(e): five correct answers',
+        'Part (f): a wrong answer',
+      ],
+      keyLevelId: 'm20',
+      keyNote:
+        'Five correct parts at 4 each = 20 — full marks — and the wrong sixth part is dropped, because only your best five parts count. Attempting the extra part was free: on a Best-of item a weak whole answer can only fail to be selected, it cannot pull down a correct one. (Contrast the surplus rule: that bites only when the extra is a second answer inside a single part.)',
+      embodies: {
+        behaviour: 'Attempts more parts than required under a Best-of rubric — the weakest is dropped without penalty, unlike a surplus answer inside one part.',
+        cite: MS('p.11, p.13 (Section B “Best 2”, Section C “Best 4”)'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-bio9',
+    rule: 'Under a “Best-of” rubric, your weakest whole answer is dropped, not penalised.',
+    detail:
+      'Section A marks your best five parts, Section B your best two questions, Section C your best four. A wrong or weak SEPARATE answer simply isn’t selected — it costs nothing. That is different from the surplus rule, which only cancels when the extra is a second answer inside one part. So attempt everything you can; just don’t hedge within a single answer.',
+    cite: MS25('p.8'),
+  },
+};
+
+// ───────────────── Bio10 · The experiment is a checklist, not an essay ─────────────────
+
+const BIO10: GridSession = {
+  mode: 'grid',
+  id: 'bio-experiment-checklist',
+  subject: 'biology',
+  level: 'common',
+  title: 'The experiment is a checklist, not an essay',
+  cue: 'Describe (mandatory experiment)',
+  question:
+    'Describe how you carried out your investigation into the effect of denaturation on an enzyme. [Marked on specific creditable steps — three of them here.]',
+  questionNote:
+    'Question authored for this exercise; the creditable-step marking is taken verbatim from the 2023 enzyme-denaturation write-up (Q9(b)(ii), “named vessel / water bath at 25°C / left for a time … Any three 3(3)”) and the 2025 osmosis activity (Q9(b)(ii)), where a control, a named apparatus and a timing step are each their own 3-mark point.',
+  grid: {
+    perPoint: [
+      { id: 'control', label: 'Control named & set up', marks: 3 },
+      { id: 'apparatus', label: 'Named piece of apparatus', marks: 3 },
+      { id: 'time', label: 'Left for a (suitable) time', marks: 3 },
+    ],
+    shorthand: 'creditable steps · 3 + 3 + 3 (Any three · 3(3))',
+    ruleNote:
+      'A “describe how you carried out” answer is marked against a list of specific steps — name a control, name the apparatus, state that it was left for a time, give the matching result — each worth its own 3 marks. Flowing prose that mentions none of the listed steps scores nothing; a plain answer that ticks them scores in full. Write to the checklist, not for style.',
+    cite: MS('p.11 (enzyme investigation — named vessel / water bath at 25°C / left for a time, Any three 3(3))'),
+  },
+  scripts: [
+    {
+      id: 'bio10-a',
+      label: 'Script A',
+      persona: 'The storyteller',
+      attempts: [
+        {
+          id: 'bio10-a-1',
+          text: 'A flowing paragraph: “I was very careful and methodical, I made sure everything was accurate and I watched closely for the reaction to happen, recording what I saw.” No control, no apparatus, no timing named.',
+          key: { control: 0, apparatus: 0, time: 0 },
+          keyNote:
+            'Reads well and says almost nothing markable. None of the creditable steps — a named control, a named piece of apparatus, a timing step — is present, so none of the three points is earned. 0. The examiner marks the steps, not the atmosphere.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Writes an eloquent but step-free experiment description, missing the specific creditable points the scheme lists.',
+        cite: MS25('p.16 (osmosis activity — Control named / Named apparatus / Left for a time, each 3)'),
+      },
+    },
+    {
+      id: 'bio10-b',
+      label: 'Script B',
+      persona: 'The checklist',
+      attempts: [
+        {
+          id: 'bio10-b-1',
+          text: 'Set up a boiled enzyme and an unboiled enzyme as a control, in labelled test tubes, in a water bath at 25 °C, and left both for ten minutes before measuring activity.',
+          key: { control: 3, apparatus: 3, time: 3 },
+          keyNote:
+            'Plain, but every listed step is there: a control (unboiled enzyme), named apparatus (test tubes / water bath), and a timing step (left for ten minutes). Three points, 3 each — full 9. Ticking the checklist beats writing beautifully.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-bio10',
+    rule: 'Experiment write-ups are marked on named steps — control, apparatus, timing, result.',
+    detail:
+      'A “describe how you carried out” answer scores against a checklist: name a control, name your apparatus, say it was left for a time, give the matching result — each is a separate mark. Careful narrative that omits these earns nothing. List the steps plainly; don’t write an essay.',
+    cite: MS('p.11'),
+  },
+};
+
+// ───────────────── Bio11 · A labelled diagram can earn the marks ─────────────────
+
+const BIO11: ScaleSession = {
+  mode: 'scale',
+  id: 'bio-diagram-in-lieu',
+  subject: 'biology',
+  level: 'common',
+  title: 'A diagram can earn the marks',
+  cue: 'Describe (with optional diagram)',
+  question:
+    'Describe how you carried out the osmosis activity — “you may include a labelled diagram if you wish.” Two candidates answer only with a drawing. Which one scores?',
+  questionNote:
+    'Question authored for this exercise. The rule is the SEC’s own line on these activity questions, quoted verbatim: “Points may be obtained from an appropriately labelled diagram.” The word that carries the condition is APPROPRIATELY LABELLED.',
+  scale: {
+    name: 'Activity · 3(3) · diagram permitted',
+    levels: totalScale([0, 3, 6, 9]),
+    notes: [
+      'The scheme prints: “Points may be obtained from an appropriately labelled diagram.”',
+      'So a clearly labelled diagram of the set-up can earn the same creditable points as sentences — set-up, control, apparatus.',
+      'But the credit depends on the word appropriately LABELLED: an unlabelled sketch, however neat, carries no marks.',
+      'A fully labelled set-up diagram here scores its three points (9); an unlabelled one scores 0.',
+    ],
+    cite: MS25('p.16 and p.17 (“Points may be obtained from an appropriately labelled diagram”)'),
+  },
+  scripts: [
+    {
+      id: 'bio11-a',
+      label: 'Script A',
+      persona: 'Fully labelled drawing, no prose',
+      work: [
+        'A clear diagram of the set-up:',
+        '— Visking tubing labelled, containing sugar solution (labelled)',
+        '— beaker of water labelled as the control set-up',
+        'No written description.',
+      ],
+      keyLevelId: 'm9',
+      keyNote:
+        'No sentences at all — and full marks. The scheme lets you earn the points from an appropriately labelled diagram, and every element here is labelled, so the set-up, the control and the apparatus each score. 9. A good labelled diagram is worth exactly as much as the prose.',
+      embodies: {
+        behaviour: 'Answers a “describe” activity with a fully labelled diagram, which the scheme credits in place of prose.',
+        cite: MS25('p.17'),
+      },
+    },
+    {
+      id: 'bio11-b',
+      label: 'Script B',
+      persona: 'Neat drawing, nothing labelled',
+      work: [
+        'A tidy, well-drawn sketch of tubing in a beaker.',
+        'No labels on any part.',
+      ],
+      keyLevelId: 'm0',
+      keyNote:
+        'Just as neat — and 0. The concession is for an APPROPRIATELY LABELLED diagram; with no labels there is nothing for the examiner to credit. A picture only scores when its parts are named.',
+      embodies: {
+        behaviour: 'Submits an unlabelled diagram where the scheme requires an appropriately labelled one.',
+        cite: MS25('p.16'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-bio11',
+    rule: 'A labelled diagram can earn the write-up marks — but only if it is labelled.',
+    detail:
+      'On “describe” activities the scheme says points may be obtained from an appropriately labelled diagram, so a well-labelled drawing scores like the prose. The condition is the labels: an unlabelled sketch, however neat, earns nothing. If you draw instead of write, label every part.',
+    cite: MS25('p.16 and p.17'),
+  },
+};
+
+// ───────────────── Bio12 · A definition’s marks live in the qualifier ─────────────────
+
+const BIO12: GridSession = {
+  mode: 'grid',
+  id: 'bio-definition-split',
+  subject: 'biology',
+  level: 'common',
+  title: 'The definition’s marks are in the qualifier',
+  cue: 'Explain the term',
+  question: 'Explain the term osmosis.',
+  questionNote:
+    'Question authored for this exercise; the 2 + 4 split is taken verbatim from the 2025 osmosis definition (Q9(a)): “Movement of water 2 / from a region of higher water concentration to a region of lower water concentration across a selectively permeable membrane 4.”',
+  grid: {
+    perPoint: [
+      { id: 'opener', label: 'Opening idea (“movement of water”)', marks: 2 },
+      { id: 'qualifier', label: 'Precise qualifier (gradient + membrane)', marks: 4 },
+    ],
+    shorthand: 'definition · 2 + 4 (opener 2, qualifier 4)',
+    ruleNote:
+      'A six-mark definition need not split evenly. Here the easy opener — “movement of water” — is worth only 2; the precise qualifier — down the concentration gradient, across a selectively permeable membrane — carries 4. Stopping at the opener leaves two-thirds of the marks on the table. The precision is where the marks are.',
+    cite: MS25('p.16 (osmosis definition — opener 2 + qualifier 4)'),
+  },
+  scripts: [
+    {
+      id: 'bio12-a',
+      label: 'Script A',
+      persona: 'Stops at the easy opener',
+      attempts: [
+        {
+          id: 'bio12-a-1',
+          text: 'Osmosis is the movement of water.',
+          key: { opener: 2, qualifier: 0 },
+          keyNote:
+            'The opener is correct — 2 marks — but that is all it is. Without the gradient and the selectively permeable membrane, the 4-mark qualifier is untouched. A true but bare definition scores a third of the marks.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Gives the easy opening idea of a definition and stops before the precise qualifier that carries most of the marks.',
+        cite: MS25('p.16'),
+      },
+    },
+    {
+      id: 'bio12-b',
+      label: 'Script B',
+      persona: 'Full, precise definition',
+      attempts: [
+        {
+          id: 'bio12-b-1',
+          text: 'Osmosis is the movement of water from a region of higher water concentration to a region of lower water concentration across a selectively permeable membrane.',
+          key: { opener: 2, qualifier: 4 },
+          keyNote:
+            'Opener plus the full qualifier — the gradient direction and the selectively permeable membrane. Both parts scored: 2 + 4 = 6. The marks were always in the precise second half.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-bio12',
+    rule: 'A definition’s marks are usually in the qualifying clause, not the opener.',
+    detail:
+      'Definitions are often split unevenly — the easy opening idea is worth little and the precise qualifier carries most of the marks. “Movement of water” is 2; the gradient-and-membrane clause is 4. Always add the precise, qualifying detail — that is where the marks live.',
+    cite: MS25('p.16'),
+  },
+};
+
+// ───────────────── Bio13 · A graph is two marks — axes and type ─────────────────
+
+const BIO13: GridSession = {
+  mode: 'grid',
+  id: 'bio-graph-parts',
+  subject: 'biology',
+  level: 'common',
+  title: 'A graph is two marks, not one',
+  cue: 'Draw (graph)',
+  question:
+    'Draw a suitable graph to represent the data of pulse rate against level of exercise (Resting, Moderate, Intense).',
+  questionNote:
+    'Question authored for this exercise; the two separate graph marks are taken verbatim from the 2023 exercise-physiology item (Q10(b)(ii)): “PR or BR on the y-axis and Resting, Moderate exercise and Intense exercise on the x-axis 3 / Bar chart or line graph or dot plot or other suitable graph drawn 3.”',
+  grid: {
+    perPoint: [
+      { id: 'axes', label: 'Correct variables on correct axes', marks: 3 },
+      { id: 'type', label: 'Suitable graph type drawn', marks: 3 },
+    ],
+    shorthand: 'graph · 3 + 3 (axes 3, type 3)',
+    ruleNote:
+      'A graph is not one holistic mark. One point is for the right variables on the right axes; a separate point is for drawing a suitable type of graph. A beautifully drawn chart with the axes unlabelled or swapped loses the axis mark; a correctly labelled but sloppy attempt still banks it. Label the axes AND choose a sensible chart.',
+    cite: MS('p.12 (graph — correct axes 3 + suitable graph drawn 3)'),
+  },
+  scripts: [
+    {
+      id: 'bio13-a',
+      label: 'Script A',
+      persona: 'Beautiful bars, no axis labels',
+      attempts: [
+        {
+          id: 'bio13-a-1',
+          text: 'A neat, evenly-spaced bar chart — but neither axis is labelled with its variable.',
+          key: { axes: 0, type: 3 },
+          keyNote:
+            'A suitable graph type is drawn, so the drawing mark is earned — 3. But with no variables named on the axes, the axis point is gone. Half the marks for a chart that looks finished but is not labelled.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Draws a tidy graph but leaves the axes unlabelled, forfeiting the separate axis mark.',
+        cite: MS('p.12'),
+      },
+    },
+    {
+      id: 'bio13-b',
+      label: 'Script B',
+      persona: 'Labelled axes, sensible chart',
+      attempts: [
+        {
+          id: 'bio13-b-1',
+          text: 'A bar chart with pulse rate on the y-axis and Resting / Moderate / Intense on the x-axis.',
+          key: { axes: 3, type: 3 },
+          keyNote:
+            'Right variables on the right axes (3) and a suitable graph type drawn (3) — the two marks are independent, and both are here. Full 6.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-bio13',
+    rule: 'A graph scores separately for its axes and for its type — label both.',
+    detail:
+      'The scheme marks a graph in two parts: one for the correct variables on the correct axes, one for drawing a suitable type of graph. A gorgeous chart with unlabelled axes loses half. Always name both axes and pick a sensible chart.',
+    cite: MS('p.12'),
+  },
+};
+
+// ───────────────── Bio14 · An equation is formulae + balancing ─────────────────
+
+const BIO14: GridSession = {
+  mode: 'grid',
+  id: 'bio-equation-parts',
+  subject: 'biology',
+  level: 'common',
+  title: 'An equation is two marks',
+  cue: 'Write a balanced equation',
+  question: 'Write a balanced chemical equation for photosynthesis.',
+  questionNote:
+    'Question authored for this exercise; the two-part marking is taken verbatim from the 2023 photosynthesis item (Q4(d)) — “(one point for correct formulas + one point for correct balancing)” — and the 2025 item (Q13(a)(ii)): “First point: formulae; second point: balancing 2(3).”',
+  grid: {
+    perPoint: [
+      { id: 'formulae', label: 'Correct formulae', marks: 3 },
+      { id: 'balancing', label: 'Correct balancing', marks: 3 },
+    ],
+    shorthand: 'equation · 3 + 3 (formulae 3, balancing 3)',
+    ruleNote:
+      'A balanced equation earns on two separate points: one for the correct chemical formulae, one for balancing them. Get the formulae right but miscount the coefficients and you still bank the formulae mark — a balancing slip does not wipe out the whole answer. So always write the reactants and products correctly first; then balance.',
+    cite: MS('p.9 (photosynthesis equation — one point for correct formulae + one for correct balancing)'),
+  },
+  scripts: [
+    {
+      id: 'bio14-a',
+      label: 'Script A',
+      persona: 'Right formulae, unbalanced',
+      attempts: [
+        {
+          id: 'bio14-a-1',
+          text: 'CO₂ + H₂O → C₆H₁₂O₆ + O₂',
+          key: { formulae: 3, balancing: 0 },
+          keyNote:
+            'Every formula is correct — reactants and products are right — so the formulae point is earned: 3. But the equation is not balanced (the coefficients are missing), so the balancing point is lost. A balancing slip costs one mark, not both.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Writes correct formulae but forgets to balance, keeping one of the two available marks.',
+        cite: MS25('p.22 (“First point: formulae; second point: balancing”, 2(3))'),
+      },
+    },
+    {
+      id: 'bio14-b',
+      label: 'Script B',
+      persona: 'Correct and balanced',
+      attempts: [
+        {
+          id: 'bio14-b-1',
+          text: '6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂',
+          key: { formulae: 3, balancing: 3 },
+          keyNote:
+            'Correct formulae (3) and correctly balanced coefficients (3). Both points, full 6.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-bio14',
+    rule: 'An equation scores separately for correct formulae and for balancing.',
+    detail:
+      'A chemical equation is two marks: one for the right formulae, one for balancing them. A balancing slip only costs the balancing mark — you keep the formulae mark. Write the reactants and products correctly first, then balance; don’t abandon an equation you can’t balance.',
+    cite: MS('p.9'),
+  },
+};
+
+// ───────────────── Bio15 · Name + Justify — the justification carries the marks ─────────────────
+
+const BIO15: GridSession = {
+  mode: 'grid',
+  id: 'bio-name-justify',
+  subject: 'biology',
+  level: 'common',
+  title: 'Naming it is the cheap part',
+  cue: 'Identify & justify',
+  question:
+    'Which eye, A or B, is exposed to low light levels? Justify your answer.',
+  questionNote:
+    'Question authored for this exercise; the 1 + 2 mark split is taken verbatim from the 2025 eye item (Q14(b)(ii)) — “*B 1 / Justify: The pupil is larger (dilated) 2” — and the neuron item (Q14(c)(i)): “*X 1 / Justify … 2.” The identification is 1 mark; the justification is 2.',
+  grid: {
+    perPoint: [
+      { id: 'name', label: 'Correct identification', marks: 1 },
+      { id: 'justify', label: 'Correct justification', marks: 2 },
+    ],
+    shorthand: 'identify & justify · 1 + 2 (name 1, justify 2)',
+    ruleNote:
+      'On “name it and justify” the identification is often just 1 mark and the justification is worth 2 — twice as much. Guessing the right letter with no reason banks the small mark and forfeits the larger one. The “justify your answer” is not a courtesy; it is where most of the marks are.',
+    cite: MS25('p.24 (eye — “*B 1 / Justify … 2”)'),
+  },
+  scripts: [
+    {
+      id: 'bio15-a',
+      label: 'Script A',
+      persona: 'Names it, gives no reason',
+      attempts: [
+        {
+          id: 'bio15-a-1',
+          text: 'B.',
+          key: { name: 1, justify: 0 },
+          keyNote:
+            'The right eye is named — 1 mark — but “justify your answer” is left blank, and that was the 2-mark part. 1 of 3. A correct one-word answer here throws away two-thirds of the marks.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Gives the correct identification but omits the justification, which carries the larger mark.',
+        cite: MS25('p.25 (neuron — “*X 1 / Justify … 2”)'),
+      },
+    },
+    {
+      id: 'bio15-b',
+      label: 'Script B',
+      persona: 'Names it and justifies',
+      attempts: [
+        {
+          id: 'bio15-b-1',
+          text: 'B — its pupil is larger (dilated), so it is letting in more light, which means it was in low light.',
+          key: { name: 1, justify: 2 },
+          keyNote:
+            'The identification (1) plus a correct justification — the dilated pupil (2). Both parts scored: full 3. The reason was worth more than the answer.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-bio15',
+    rule: 'On “identify and justify”, the justification usually carries most of the marks.',
+    detail:
+      'Naming the right letter is often only 1 mark; the “justify your answer” is worth 2. A bare correct answer banks a third of the marks and leaves the rest. Always give the reason — it is the bigger half of the question.',
+    cite: MS25('p.24 and p.25'),
+  },
+};
+
 export const BIOLOGY_CHAIR: ChairSubject = {
   id: 'biology',
   label: 'Biology',
-  tagline: 'Points, context and the penalty rules that quietly cost marks.',
+  tagline: 'Points, context, notation and the penalty rules that quietly cost marks.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [BIO1, BIO2, BIO3, BIO4, BIO5, BIO6, BIO7],
+  sessions: [BIO1, BIO2, BIO3, BIO4, BIO5, BIO6, BIO7, BIO8, BIO9, BIO10, BIO11, BIO12, BIO13, BIO14, BIO15],
   sources: [
     { label: 'SEC LC Biology HL marking scheme 2023, Deferred sitting (examiner-reports/biology/2023-marking-scheme)' },
     { label: 'SEC LC Biology HL marking scheme 2025 (examiner-reports/biology/2025-hl-marking-scheme)' },
   ],
   coverageNote:
-    'These sessions teach Biology’s general marking conventions — the points notation, the context rule, the cancelled-answer and “must match” consistency rules, the diagram thresholds, and the Section A / Sections B/C penalty rules — which the scheme applies at both Higher and Ordinary level. They are verified against the 2023 Higher Level scheme (the diagram-threshold bands corroborated by the 2025 scheme); level-specific worked questions are being added.',
+    'These sessions teach Biology’s general marking conventions — the points and graduated-mark notation, the context rule, the cancelled-answer and “must match” consistency rules, the Best-of selection rubric, the diagram thresholds and the labelled-diagram concession, the experiment-checklist and split-mark structures (definition, graph, equation, name-and-justify), and the Section A / Sections B/C penalty rules — which the scheme applies at both Higher and Ordinary level. They are verified against the 2023 and 2025 Higher Level schemes; level-specific worked questions are being added.',
 };

@@ -18,6 +18,7 @@
 import { type ChairSubject, type GridSession, type ScaleSession, type ScaleLevel } from './types';
 
 const MS = (p: string) => ({ label: `SEC Physics HL marking scheme 2025, ${p}` });
+const MS23 = (p: string) => ({ label: `SEC Physics HL marking scheme 2023, ${p}` });
 
 const ladder = (marks: number[]): ScaleLevel[] =>
   marks.map(m => ({ id: `m${m}`, label: `${m} marks`, annotation: `${m}`, marks: m }));
@@ -539,15 +540,587 @@ const PHY7: ScaleSession = {
   },
 };
 
+// ─────────────── Phy8 · The double solidus is a fork, not a buffet ───────────────
+
+const PHY8: ScaleSession = {
+  mode: 'scale',
+  id: 'phy-mutex',
+  subject: 'physics',
+  level: 'common',
+  title: 'One method or the other — never half of each',
+  cue: 'Describe / Method',
+  question:
+    'A 6-mark answer can be reached by either of two methods, printed in the scheme as “Method A // Method B” — the double solidus means the two are mutually exclusive. A candidate writes the first half of Method A, then switches and writes the second half of Method B, hoping to bank a partial from each side. How is it marked?',
+  questionNote:
+    'Scenario authored for this exercise. Instruction 3 of the scheme states that answers separated by a double solidus // are mutually exclusive — a partial answer from one side may not be combined with a partial answer from the other.',
+  scale: {
+    name: 'Mutually-exclusive methods (//)',
+    levels: ladder([0, 3, 6]),
+    notes: [
+      'Rule (instruction 3): “Answers that are separated by a double solidus, //, are answers which are mutually exclusive.”',
+      '“A partial answer from one side of the // may not be taken in conjunction with a partial answer from the other side.”',
+      'So half of Method A plus half of Method B is not 3 + 3 — the examiner credits only the better single side.',
+      'Choose one method and carry it all the way through; blending two throws away the marks that don’t line up.',
+    ],
+    cite: MS('p.3 (instruction 3, // mutually exclusive)'),
+  },
+  scripts: [
+    {
+      id: 'phy8-a',
+      label: 'Script A',
+      persona: 'Half of each method',
+      work: [
+        'Writes the first step of Method A correctly (one valid partial).',
+        'Then abandons it and writes the second step of Method B (a partial from the other side).',
+      ],
+      keyLevelId: 'm3',
+      keyNote:
+        '3/6 — the two sides of a // cannot be combined, so the examiner takes the better single partial and stops. Two half-methods do not add up to one whole; commit to one route and finish it.',
+      embodies: {
+        behaviour: 'Cherry-picks a partial from each side of a // pair, which instruction 3 forbids combining.',
+        cite: MS('p.3'),
+      },
+    },
+    {
+      id: 'phy8-b',
+      label: 'Script B',
+      persona: 'One coherent method',
+      work: [
+        'Picks Method A and writes both of its steps correctly.',
+        'Does not touch Method B at all.',
+      ],
+      keyLevelId: 'm6',
+      keyNote:
+        '6/6 — one method, carried right through. That is what the scheme rewards: a complete answer from a single side of the //.',
+    },
+  ],
+  takeaway: {
+    id: 'codex-phy8',
+    rule: 'A // is a fork, not a buffet — pick one method and finish it.',
+    detail:
+      'Where the scheme separates two answers with a double solidus, they are mutually exclusive: a partial from one side cannot be added to a partial from the other. Choose the method you know best and complete it — blending two routes forfeits every mark that doesn’t belong to a single coherent answer.',
+    cite: MS('p.3'),
+  },
+};
+
+// ─────────────── Phy9 · Every experiment is apparatus + method + observation ───────────────
+
+const PHY9: GridSession = {
+  mode: 'grid',
+  id: 'phy-experiment',
+  subject: 'physics',
+  level: 'common',
+  title: 'The result is a whole mark',
+  cue: 'Describe an experiment',
+  question:
+    'Describe an experiment to demonstrate that light waves are transverse. The scheme marks it in three granules — “apparatus [3] / method [3] / result [3]”. A candidate names two polaroids and a light source and says to rotate one relative to the other, then stops.',
+  questionNote:
+    'Question authored for this exercise. “Describe a laboratory experiment” answers are marked as three independent granules — apparatus, method and observation/result — a structure the scheme applies across experiment questions (e.g. 2025 Q8(ii), 2023 Q8(ii)).',
+  grid: {
+    perPoint: [
+      { id: 'apparatus', label: 'Apparatus named', marks: 3 },
+      { id: 'method', label: 'Method described', marks: 3 },
+      { id: 'observation', label: 'Observation / result stated', marks: 3 },
+    ],
+    shorthand: 'experiment · [3 + 3 + 3]',
+    ruleNote:
+      'A “describe an experiment” answer is three independent granules — name the apparatus, describe the method, and state what you observe. The observation is the one candidates skip, and it is a whole granule: an experiment write-up with no result stops a third short.',
+    cite: MS('p.14 (Q8(ii) apparatus / method / result)'),
+  },
+  scripts: [
+    {
+      id: 'phy9-a',
+      label: 'Script A',
+      persona: 'Forgets the result',
+      attempts: [
+        {
+          id: 'phy9-a-1',
+          text: 'Two pieces of polaroid and a light source; rotate one polaroid relative to the other. (Nothing said about what is seen.)',
+          key: { apparatus: 3, method: 3, observation: 0 },
+          keyNote:
+            'Apparatus and method are both there (6), but the answer never says what happens — the “light intensity decreases” observation is its own 3-mark granule and it’s missing. 6/9. Always finish an experiment with what you would actually see.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Describes apparatus and method but omits the observation — forfeiting that granule.',
+        cite: MS('p.14'),
+      },
+    },
+    {
+      id: 'phy9-b',
+      label: 'Script B',
+      persona: 'Full write-up',
+      attempts: [
+        {
+          id: 'phy9-b-1',
+          text: 'Two polaroids and a light source; rotate one polaroid relative to the other; the transmitted light intensity falls to a minimum.',
+          key: { apparatus: 3, method: 3, observation: 3 },
+          keyNote: 'Apparatus, method and the observed result — all three granules. 9/9.',
+        },
+      ],
+    },
+    {
+      id: 'phy9-c',
+      label: 'Script C',
+      persona: 'No kit named',
+      attempts: [
+        {
+          id: 'phy9-c-1',
+          text: 'Rotate one polariser relative to the other and watch the light dim to a minimum — but never states what apparatus is set up.',
+          key: { apparatus: 0, method: 3, observation: 3 },
+          keyNote:
+            'Method and observation are credited (6), but the apparatus granule needs the kit named — two polaroids and a light source. 6/9. Name the equipment before you describe what to do with it.',
+        },
+      ],
+      embodies: {
+        behaviour: 'States method and observation but never names the apparatus — losing the apparatus granule.',
+        cite: MS('p.14'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-phy9',
+    rule: 'An experiment is apparatus + method + observation — write all three.',
+    detail:
+      '“Describe an experiment” is marked as three independent granules: name the apparatus, describe the method, and state the observation or result. The result is the one most often left off, and it is a whole granule — never end a write-up without saying what you would see.',
+    cite: MS('p.14'),
+  },
+};
+
+// ─────────────── Phy10 · A law is stated in clauses ───────────────
+
+const PHY10: GridSession = {
+  mode: 'grid',
+  id: 'phy-law',
+  subject: 'physics',
+  level: 'common',
+  title: 'Half a law is half the marks',
+  cue: 'State the law',
+  question:
+    'State Newton’s law of universal gravitation. The scheme marks it “[3 + 3]”: the force is proportional to the product of the two masses [3], and inversely proportional to the square of the distance between them [3]. A candidate writes only “the force is proportional to the product of the two masses”.',
+  questionNote:
+    'Question authored for this exercise. A “state the law” answer with two proportionality clauses is marked one granule per clause — the SEC scheme prints Newton’s law of universal gravitation (and Coulomb’s law) as “[3 + 3]”.',
+  grid: {
+    perPoint: [
+      { id: 'direct', label: 'Direct-proportion clause (∝ product of masses)', marks: 3 },
+      { id: 'inverse', label: 'Inverse-square clause (∝ 1/d²)', marks: 3 },
+    ],
+    shorthand: 'state the law · [3 + 3]',
+    ruleNote:
+      'A law with two proportionalities is marked in two halves. Newton’s law needs BOTH “proportional to the product of the masses” AND “inversely proportional to the square of the distance” — each is its own 3-mark granule. Give one clause and you bank half the law; the missing inverse-square part is not a detail, it is a mark.',
+    cite: MS('p.13 (Q7(ii) law stated in two clauses)'),
+  },
+  scripts: [
+    {
+      id: 'phy10-a',
+      label: 'Script A',
+      persona: 'Only the first clause',
+      attempts: [
+        {
+          id: 'phy10-a-1',
+          text: '“The gravitational force is proportional to the product of the two masses.”',
+          key: { direct: 3, inverse: 0 },
+          keyNote:
+            'The first clause is there (3), but the inverse-square clause is a separate 3-mark granule and it’s missing. 3/6. A law stated halfway banks half its marks.',
+        },
+      ],
+      embodies: {
+        behaviour: 'States only the direct-proportion half of a two-clause law.',
+        cite: MS('p.13'),
+      },
+    },
+    {
+      id: 'phy10-b',
+      label: 'Script B',
+      persona: 'The whole law',
+      attempts: [
+        {
+          id: 'phy10-b-1',
+          text: '“The gravitational force between two masses is proportional to the product of the masses and inversely proportional to the square of the distance between them.”',
+          key: { direct: 3, inverse: 3 },
+          keyNote: 'Both clauses — the product of the masses and the inverse square of the distance. Full 6 marks.',
+        },
+      ],
+    },
+    {
+      id: 'phy10-c',
+      label: 'Script C',
+      persona: 'Vague on the distance',
+      attempts: [
+        {
+          id: 'phy10-c-1',
+          text: '“The force is proportional to the product of the masses and depends on the distance between them.”',
+          key: { direct: 3, inverse: 0 },
+          keyNote:
+            'The first clause is secure (3), but “depends on the distance” is not “inversely proportional to the square of the distance” — the second granule needs the exact relationship. 3/6. Name the inverse-square, or the marks stay on the table.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Gestures at the distance dependence without stating the inverse-square law — the second clause scores 0.',
+        cite: MS('p.13'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-phy10',
+    rule: 'State every clause of the law — each proportionality is its own mark.',
+    detail:
+      'A law with two proportionalities is marked one granule per clause. Newton’s law of universal gravitation and Coulomb’s law both need the direct-proportion clause AND the inverse-square clause — state both, exactly, or you bank only half the law.',
+    cite: MS('p.13'),
+  },
+};
+
+// ─────────────── Phy11 · A derivation is graded on its working ───────────────
+
+const PHY11: GridSession = {
+  mode: 'grid',
+  id: 'phy-derivation',
+  subject: 'physics',
+  level: 'common',
+  title: 'In a derivation the answer is the cheap part',
+  cue: 'Derive an expression',
+  question:
+    'Derive an equation for the angular velocity ω of an object in terms of its linear velocity v when it moves in a circle. The scheme marks it “[2 + 2 + 2]”: a starting relationship (θ = s/r or v = s/t or ω = θ/t) [2], the combination of two of them [2], and the result ω = v/r [2]. A candidate simply writes “ω = v/r”.',
+  questionNote:
+    'Question authored for this exercise. A “derive” answer is marked in granules — the starting formulae, the combination step, and the final expression — and because the target result is printed in the question, the marks live in the working.',
+  grid: {
+    perPoint: [
+      { id: 'start', label: 'Starting relationship(s) quoted', marks: 2 },
+      { id: 'combine', label: 'Combination step shown', marks: 2 },
+      { id: 'result', label: 'Correct final expression reached', marks: 2 },
+    ],
+    shorthand: 'derivation · [2 + 2 + 2]',
+    ruleNote:
+      'A “derive” is not a “state”. The target expression is already printed in the question, so writing it down alone proves nothing — the marks are in the starting relationships and, above all, the “combination of two formulae” step. Show the algebra that gets you from start to finish.',
+    cite: MS('p.13 (Q7(iii) derivation: formulae / combination / result)'),
+  },
+  scripts: [
+    {
+      id: 'phy11-a',
+      label: 'Script A',
+      persona: 'Just writes the target',
+      attempts: [
+        {
+          id: 'phy11-a-1',
+          text: '“ω = v/r.” (No starting formulae, no working.)',
+          key: { start: 0, combine: 0, result: 0 },
+          keyNote:
+            '0/6 — the target ω = v/r is printed in the question, so restating it derives nothing. With no starting relationships and no combination step, there is no working to credit. In a “derive”, the answer is given; the marks are the journey.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Restates the given target expression with no derivation — which earns nothing in a “derive” question.',
+        cite: MS('p.13'),
+      },
+    },
+    {
+      id: 'phy11-b',
+      label: 'Script B',
+      persona: 'Full derivation',
+      attempts: [
+        {
+          id: 'phy11-b-1',
+          text: '“v = s/t, ω = θ/t and θ = s/r; combining, ω = θ/t = (s/r)/t = (s/t)/r = v/r.”',
+          key: { start: 2, combine: 2, result: 2 },
+          keyNote: 'Starting relationships, the combination step, and the result — all three granules. 6/6.',
+        },
+      ],
+    },
+    {
+      id: 'phy11-c',
+      label: 'Script C',
+      persona: 'Formulae, then a leap',
+      attempts: [
+        {
+          id: 'phy11-c-1',
+          text: '“v = s/t, ω = θ/t, θ = s/r — therefore ω = v/r.”',
+          key: { start: 2, combine: 0, result: 2 },
+          keyNote:
+            'The starting formulae are quoted (2) and the result is right (2), but “therefore” jumps the gap — the combination of the formulae is its own 2-mark granule and it isn’t shown. 4/6. Write the algebra, don’t assert it.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Quotes the starting formulae and the result but skips the combination step that links them.',
+        cite: MS('p.13'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-phy11',
+    rule: 'In a derivation, show the combination — the result is already given.',
+    detail:
+      'A “derive” is marked in granules: the starting relationships, the combination step, and the final expression. The target is printed in the question, so restating it scores nothing — the marks are in the formulae you start from and the algebra that combines them. Show every step.',
+    cite: MS('p.13'),
+  },
+};
+
+// ─────────────── Phy12 · The scheme pre-pays the near-miss ───────────────
+
+const PHY12: ScaleSession = {
+  mode: 'scale',
+  id: 'phy-partial-credit',
+  subject: 'physics',
+  level: 'common',
+  title: 'The near-miss is worth marks',
+  cue: 'Explain the principle',
+  question:
+    'Explain the principle of the source of the Sun’s energy. The scheme gives “fusion [7]” and adds “[award 4 marks for reference to nuclear reactions / E = mc²]”. A candidate never writes “fusion”, but writes “the energy comes from nuclear reactions in the core, where mass is converted to energy (E = mc²)”. What does it score?',
+  questionNote:
+    'Scenario authored for this exercise. The scheme routinely prints a fallback credit in square brackets — “[award N marks for …]” or “[accept … for N marks]” — so a near-miss answer scores a stated partial, not zero.',
+  scale: {
+    name: 'Pre-set partial credit',
+    levels: ladder([0, 4, 7]),
+    notes: [
+      'Full answer: “fusion [7]”.',
+      'Fallback printed in the scheme: “[award 4 marks for reference to nuclear reactions / E = mc²]”.',
+      'So the near-miss is not zero — it banks the pre-set 4 marks.',
+      'These bracketed fallbacks appear throughout the scheme (e.g. amplitude “[accept … for 3 marks]”, Celsius equation “[accept reference to 273(.15) for 3 marks]”). If you can’t land the exact key word, write the nearest real physics — it is often worth half.',
+    ],
+    cite: MS('p.12 (Q6(k) fusion, “[award 4 marks for …]”)'),
+  },
+  scripts: [
+    {
+      id: 'phy12-a',
+      label: 'Script A',
+      persona: 'Near miss with real physics',
+      work: [
+        'Never uses the word “fusion”.',
+        'States the energy comes from nuclear reactions converting mass to energy, E = mc².',
+      ],
+      keyLevelId: 'm4',
+      keyNote:
+        '4/7 — the exact key word “fusion” is the full-mark answer, but the scheme pre-authorises 4 marks for “nuclear reactions / E = mc²”. A near-miss carrying real physics is worth far more than a blank; write what you do know.',
+      embodies: {
+        behaviour: 'Gives the pre-authorised fallback answer rather than the exact key word — earning the stated partial credit.',
+        cite: MS('p.12'),
+      },
+    },
+    {
+      id: 'phy12-b',
+      label: 'Script B',
+      persona: 'Exact key word',
+      work: ['States the source is nuclear fusion (of hydrogen into helium).'],
+      keyLevelId: 'm7',
+      keyNote: '7/7 — the key word “fusion” is the full-mark answer.',
+    },
+  ],
+  takeaway: {
+    id: 'codex-phy12',
+    rule: 'Can’t hit the key word? Write the nearest real physics — the scheme often pre-pays a partial.',
+    detail:
+      'Schemes print bracketed fallbacks — “[award N marks for …]”, “[accept … for N marks]” — so a near-miss answer earns a specified partial rather than zero. Never leave an “explain the principle” blank because you’re unsure of the one word; the related physics you can state is usually worth marks.',
+    cite: MS('p.12'),
+  },
+};
+
+// ─────────────── Phy13 · Right word, wrong context ───────────────
+
+const PHY13: ScaleSession = {
+  mode: 'scale',
+  id: 'phy-context',
+  subject: 'physics',
+  level: 'common',
+  title: 'A true statement in the wrong place scores zero',
+  cue: 'State one improvement',
+  question:
+    'State one other way to improve the accuracy of the momentum experiment. The scheme accepts “e.g. repeat the experiment / reduce the error of parallax / a more accurate balance or timer [3]”, but instruction 1 says key words only score “in the correct context”. A candidate writes “use a bigger spring so the trolleys move faster”. What does it score?',
+  questionNote:
+    'Scenario authored for this exercise. Instruction 1 of the scheme states that key words must appear “in the correct context” to merit the marks — a true statement that does not answer the question as asked scores nothing.',
+  scale: {
+    name: 'Right word, right context',
+    levels: ladder([0, 3]),
+    notes: [
+      'Rule (instruction 1): key words “must appear in the correct context in the candidate’s answer in order to merit the assigned marks”.',
+      'The accepted answers are about accuracy: repeat the experiment, reduce parallax error, use a more accurate balance/timer.',
+      '“Use a bigger spring” is a true statement, but it changes the speed of the trolleys, not the accuracy — wrong context, no marks.',
+      'Answer the question actually asked: a correct physics fact aimed at the wrong question is worth nothing.',
+    ],
+    cite: MS('p.3 (instruction 1, correct context); p.7 (Q2(vii) accuracy)'),
+  },
+  scripts: [
+    {
+      id: 'phy13-a',
+      label: 'Script A',
+      persona: 'True but off-topic',
+      work: ['“Use a bigger spring so the trolleys move faster.”'],
+      keyLevelId: 'm0',
+      keyNote:
+        '0/3 — a correct statement, but it improves nothing about the accuracy the question asked for. The scheme wanted a precaution against error (repeat runs, reduce parallax, better instruments). A right fact in the wrong context scores zero.',
+      embodies: {
+        behaviour: 'Answers with a true statement in the wrong context, which instruction 1 gives no credit for.',
+        cite: MS('p.3'),
+      },
+    },
+    {
+      id: 'phy13-b',
+      label: 'Script B',
+      persona: 'On-target precaution',
+      work: ['“Repeat the experiment several times and average, and read the scale at eye level to reduce parallax error.”'],
+      keyLevelId: 'm3',
+      keyNote: '3/3 — a genuine accuracy improvement, squarely in the context the question set.',
+    },
+  ],
+  takeaway: {
+    id: 'codex-phy13',
+    rule: 'Answer the question asked — a right fact in the wrong context scores zero.',
+    detail:
+      'Instruction 1 credits key words only when they appear “in the correct context”. A statement can be perfectly true and still earn nothing if it doesn’t answer the question as set. Read what is actually being asked, and aim your answer at it.',
+    cite: MS('p.3'),
+  },
+};
+
+// ─────────────── Phy14 · Nuclear equations: balance it, add nothing ───────────────
+
+const PHY14: ScaleSession = {
+  mode: 'scale',
+  id: 'phy-nuclear-eqn',
+  subject: 'physics',
+  level: 'common',
+  title: 'Balance the equation, invent no particles',
+  cue: 'Write the nuclear equation',
+  question:
+    'State the nuclear equation for the Cockcroft–Walton reaction — a proton striking lithium-7 to give two alpha particles. The scheme marks the species “[4 × 2]” — each correct nuclide, with its mass and atomic numbers, is worth 2 — and adds “[–2 additional incorrect species]”. A candidate writes the fully correct equation but tacks on a stray gamma-ray photon that is not part of it. What does it score?',
+  questionNote:
+    'Scenario authored for this exercise. A nuclear equation is marked per species (each nuclide with its correct mass and atomic numbers), and the scheme deducts marks for each additional incorrect species written in (2025 Q12(a)(i); 2023 Q9(i)).',
+  scale: {
+    name: 'Nuclear equation [4 × 2]',
+    levels: ladder([4, 6, 8]),
+    notes: [
+      'Rule: each correct species scores — here “[4 × 2]”, 2 marks per nuclide, for a maximum of 8.',
+      'Penalty printed in the scheme: “[–2 additional incorrect species]”.',
+      'So a fully correct equation padded with one spurious particle scores 8 – 2 = 6, not 8.',
+      'A nuclide only earns its 2 marks if its mass and atomic numbers balance across the arrow — wrong numbers, no granule.',
+      'Like the extra-force rule on a diagram, an invented species actively costs marks: write only the particles that are really there.',
+    ],
+    cite: MS('p.18 (Q12(a)(i) “[4 × 2]” & “[–2 additional incorrect species]”)'),
+  },
+  scripts: [
+    {
+      id: 'phy14-a',
+      label: 'Script A',
+      persona: 'Correct, but padded',
+      work: [
+        'Proton + lithium-7 → two alpha particles; every nuclide and every mass/atomic number correct.',
+        'Adds a spurious γ photon to the products “to be safe”.',
+      ],
+      keyLevelId: 'm6',
+      keyNote:
+        '6/8 — the four real species are all correct (8), but the invented gamma photon triggers “–2 additional incorrect species”. An extra particle you can’t justify is not free insurance; it costs. Write only what is actually produced.',
+      embodies: {
+        behaviour: 'Adds a spurious extra species to a correct equation — the “–2 additional incorrect species” deduction.',
+        cite: MS('p.18'),
+      },
+    },
+    {
+      id: 'phy14-b',
+      label: 'Script B',
+      persona: 'Clean and balanced',
+      work: ['Proton + lithium-7 → two alpha particles; every mass and atomic number balanced; nothing extra added.'],
+      keyLevelId: 'm8',
+      keyNote: '8/8 — four correct species, correctly numbered, and not one spurious particle.',
+    },
+    {
+      id: 'phy14-c',
+      label: 'Script C',
+      persona: 'Numbers don’t balance',
+      work: [
+        'Names the right particles — proton, lithium, alpha — but the mass/atomic numbers on one side don’t balance the other.',
+      ],
+      keyLevelId: 'm4',
+      keyNote:
+        '4/8 — some species score, but nuclides carrying wrong mass or atomic numbers don’t earn their 2 marks. The top and bottom numbers must balance across the arrow before a species counts.',
+      embodies: {
+        behaviour: 'Writes the species but leaves the mass/atomic numbers unbalanced, forfeiting those per-species granules.',
+        cite: MS('p.18'),
+      },
+    },
+  ],
+  takeaway: {
+    id: 'codex-phy14',
+    rule: 'Balance the equation and add nothing extra — each species is marked, and spurious ones cost.',
+    detail:
+      'A nuclear equation scores per species, each nuclide worth marks only when its mass and atomic numbers balance across the arrow. An additional incorrect species is penalised, exactly like an invented extra force on a diagram. Write only the particles that are really there, and balance the top and bottom numbers.',
+    cite: MS('p.18'),
+  },
+};
+
+// ─────────────── Phy15 · Define every symbol, even the obvious ones ───────────────
+
+const PHY15: GridSession = {
+  mode: 'grid',
+  id: 'phy-symbols',
+  subject: 'physics',
+  level: 'common',
+  title: 'The “obvious” symbol still carries marks',
+  cue: 'Explain the symbols',
+  question:
+    'The emission-line equation is hf = E₂ – E₁. Explain what each symbol stands for. The scheme marks it “[2 + 2 + 2 + 1]”: h = Planck constant, f = frequency, E₂ = higher energy, E₁ = lower energy. A candidate carefully defines E₂ and E₁ but writes nothing for h and f, assuming they’re too obvious to bother with.',
+  questionNote:
+    'Question authored for this exercise (SEC 2023 Q6(l)). When a question asks you to explain each symbol in an equation, every symbol is a separate granule — including the “obvious” constants.',
+  grid: {
+    perPoint: [
+      { id: 'h', label: 'h = Planck constant', marks: 2 },
+      { id: 'f', label: 'f = frequency', marks: 2 },
+      { id: 'e2', label: 'E₂ = higher energy level', marks: 2 },
+      { id: 'e1', label: 'E₁ = lower energy level', marks: 1 },
+    ],
+    shorthand: 'define each symbol · [2 + 2 + 2 + 1]',
+    ruleNote:
+      'When a question says “explain what each symbol stands for”, every symbol is its own granule — even the ones that feel too basic to write. Skipping h or f because they seem obvious throws away 2 marks apiece. Define all of them.',
+    cite: MS23('p.12 (Q6(l) symbols defined [2 + 2 + 2 + 1])'),
+  },
+  scripts: [
+    {
+      id: 'phy15-a',
+      label: 'Script A',
+      persona: 'Skips the obvious',
+      attempts: [
+        {
+          id: 'phy15-a-1',
+          text: '“E₂ is the higher energy level and E₁ is the lower energy level.” (Nothing written for h or f.)',
+          key: { h: 0, f: 0, e2: 2, e1: 1 },
+          keyNote:
+            'The two energy terms are defined (3), but h and f are left blank because they “seemed obvious” — and each was a 2-mark granule. 3/7. The scheme rewards defining every symbol, however basic; never skip one.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Leaves the “obvious” symbols (h, f) undefined, forfeiting their granules.',
+        cite: MS23('p.12'),
+      },
+    },
+    {
+      id: 'phy15-b',
+      label: 'Script B',
+      persona: 'Every symbol defined',
+      attempts: [
+        {
+          id: 'phy15-b-1',
+          text: '“h = the Planck constant, f = the frequency of the photon, E₂ = the higher energy level, E₁ = the lower energy level.”',
+          key: { h: 2, f: 2, e2: 2, e1: 1 },
+          keyNote: 'All four symbols defined — full 7 marks. The two “obvious” constants carried 4 of the 7 marks between them.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-phy15',
+    rule: 'Define every symbol — even the obvious constants each carry marks.',
+    detail:
+      'When asked to explain the symbols in an equation, every symbol is a separate granule, including constants like h and frequencies like f that feel too basic to state. Define all of them — the “obvious” ones are often worth as much as the rest.',
+    cite: MS23('p.12'),
+  },
+};
+
 export const PHYSICS_CHAIR: ChairSubject = {
   id: 'physics',
   label: 'Physics',
-  tagline: 'Granules, units, graphs and diagrams — how physics marks are really built.',
+  tagline: 'Granules, units, laws, derivations and diagrams — how physics marks are really built.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [PHY1, PHY2, PHY3, PHY4, PHY5, PHY6, PHY7],
+  sessions: [PHY1, PHY2, PHY3, PHY4, PHY5, PHY6, PHY7, PHY8, PHY9, PHY10, PHY11, PHY12, PHY13, PHY14, PHY15],
   sources: [
     { label: 'SEC LC Physics HL marking scheme 2025 (examiner-reports/physics/2025-marking-scheme)' },
+    { label: 'SEC LC Physics HL marking scheme 2023 (examiner-reports/physics/2023-marking-scheme)' },
   ],
   coverageNote:
-    'These sessions teach the general marking conventions the scheme applies across levels — the numerical granule ladder, the one-mark unit deduction, error-carried-forward, part-marked definitions, “state N”-from-a-list marking, the graph granules (with the inappropriate-scale deduction) and the labelled-diagram rules. Verified against the 2025 Higher Level scheme; level-specific worked examples are being added.',
+    'These sessions teach the general marking conventions the scheme applies across levels — the numerical granule ladder, the one-mark unit deduction, error-carried-forward, part-marked definitions, “state N”-from-a-list marking, the graph granules (with the inappropriate-scale deduction), the labelled-diagram rules, the double-solidus mutually-exclusive-method rule, the apparatus/method/observation structure of experiment questions, stating a law clause-by-clause, derivation granules (the combination step), the scheme’s pre-set partial credit, the correct-context requirement, per-species nuclear-equation marking, and defining every symbol. Verified against the 2025 and 2023 Higher Level schemes; level-specific worked examples are being added.',
 };
