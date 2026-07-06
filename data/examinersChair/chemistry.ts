@@ -184,12 +184,75 @@ const CH3: ScaleSession = {
   },
 };
 
+// ─────────────── Ch4 · Explain needs a full sentence ───────────────
+
+const CH4: GridSession = {
+  mode: 'grid',
+  id: 'chem-full-sentence',
+  subject: 'chemistry',
+  level: 'common',
+  title: 'Explain wants a sentence',
+  cue: 'Explain',
+  question: 'A question says “Explain why the boiling point increases down the group.” A candidate answers with a bare phrase: “bigger molecules.” The Chief Examiner notes that on Describe/Explain cues a word or short phrase rarely earns full marks — the reasoning has to be stated.',
+  questionNote:
+    'Scenario authored for this exercise. The Chief Examiner’s Report flags that “Describe”/“Explain” cues need full sentences; a one-word or one-phrase answer rarely earns full marks.',
+  grid: {
+    perPoint: [
+      { id: 'cause', label: 'States the cause', marks: 2 },
+      { id: 'link', label: 'Links cause to effect (the “because”)', marks: 3 },
+    ],
+    shorthand: 'Explain = cause + reasoning',
+    ruleNote:
+      'On an “Explain” cue the marks are in the reasoning — the sentence that links a cause to the effect. A bare phrase names a factor but doesn’t explain anything, so it can’t earn the reasoning marks.',
+    cite: MS('p.6 (Explain cues) and CER 2013 p.24 (full sentences)'),
+  },
+  scripts: [
+    {
+      id: 'ch4-a',
+      label: 'Script A',
+      persona: 'Bare phrase',
+      attempts: [
+        {
+          id: 'ch4-a-1',
+          text: '“Bigger molecules.”',
+          key: { cause: 2, link: 0 },
+          keyNote: 'Names a factor (2), but explains nothing — there’s no sentence linking bigger molecules to stronger forces to a higher boiling point. On “Explain”, the reasoning is where the marks are, and a two-word phrase leaves them behind.',
+        },
+      ],
+      embodies: {
+        behaviour: 'Answers an “Explain” cue with a bare phrase — which the report says rarely earns full marks.',
+        cite: CER('p.24'),
+      },
+    },
+    {
+      id: 'ch4-b',
+      label: 'Script B',
+      persona: 'Full reasoning',
+      attempts: [
+        {
+          id: 'ch4-b-1',
+          text: '“Larger molecules have more electrons, so the van der Waals forces between them are stronger, and more energy is needed to separate them — so the boiling point is higher.”',
+          key: { cause: 2, link: 3 },
+          keyNote: 'A full explanation: cause (more electrons → stronger forces) linked all the way to the effect (higher boiling point). Full marks — the sentence is what earns the reasoning marks.',
+        },
+      ],
+    },
+  ],
+  takeaway: {
+    id: 'codex-chem4',
+    rule: 'On “Explain”, write the reasoning as a sentence.',
+    detail:
+      'Describe/Explain cues rarely give full marks to a word or phrase — the marks are in the reasoning that links cause to effect. Write the full “because… so…” sentence, not just the factor’s name.',
+    cite: CER('p.24'),
+  },
+};
+
 export const CHEMISTRY_CHAIR: ChairSubject = {
   id: 'chemistry',
   label: 'Chemistry',
   tagline: 'Precise terms, shown workings and one method at a time.',
   offeredLevels: ['higher', 'ordinary'],
-  sessions: [CH1, CH2, CH3],
+  sessions: [CH1, CH2, CH3, CH4],
   sources: [
     { label: 'SEC LC Chemistry HL marking scheme 2024 (examiner-reports/chemistry/2024-marking-scheme)' },
     { label: 'Chief Examiner’s Report, Chemistry 2013 (examiner-reports/chemistry/2013-chief-examiner)' },
