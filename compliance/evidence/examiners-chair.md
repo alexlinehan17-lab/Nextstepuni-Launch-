@@ -323,6 +323,41 @@ changes them, the affected sessions and this dossier are updated together.
 year. The rules used are structural conventions stable year to year; if a future scheme
 changes one, the affected session and this dossier are updated together.
 
+## Claim-by-claim record — tranche 4 subjects (practical / newer subjects)
+
+Each source is the SEC marking scheme for its stated year, filed in
+`/examiner-reports/<subject>/`.
+
+- **Construction Studies** — MS-CS-2025 (`construction-studies/2025-marking-scheme`):
+  CS1 `cs-labels` element draw(3)+annotation(1) split (p.37); CS2 `cs-sketch` note(3)+
+  sketch(3) split (p.38); CS3 `cs-uvalue` per-step U-value marking (p.41).
+- **Engineering** — MS-EN-2025 (`engineering/2025-marking-scheme`): EN1 `en-anyn` the
+  "Any N" best-N cap (p.20); EN2 `en-headline` the 3+2 point+development split (p.7);
+  EN3 `en-labels` separately-credited diagram labels 8+1+1 (p.16).
+- **DCG** — MS-DCG-2025 (`dcg/2025-marking-scheme`): DCG1 `dcg-construction` construction
+  (8) marked above the finished curve (4) (p.4); DCG2 `dcg-steps` independently-scored
+  drawing steps (p.4); DCG3 `dcg-method` standalone "use of appropriate method" marks
+  (p.4).
+- **Politics & Society** — MS-PS-2025 (`politics-society/2025-marking-scheme`): PS1
+  `ps-insight` "relevant but lacking insight" caps in the Good band (p.11); PS2
+  `ps-summary` "summary … in the place of discussion" lower-band trap (p.15); PS3
+  `ps-documents` split Conclusions/30 + Use-of-documents/20 rubric (p.12).
+- **Religious Education** — MS-RE-2025 (`religious-education/2025-marking-scheme`): RE1
+  `re-command` descriptive answer to a higher-order command capped at top of Fair (p.18);
+  RE2 `re-holistic` four-dimension holistic banding where accuracy sets the band (p.2).
+- **Music** — MS-MU-2022 (`music/2022-marking-scheme-deferred`; deferred sitting, grammar
+  matches main per SEC note p.2): MU1 `mu-regimes` the two opposite over-answering regimes
+  (p.9); MU2 `mu-precision` "partially correct = 1" description cap (p.11); MU3 `mu-chords`
+  chords credited only within a good progression (p.7).
+
+**Uncovered Chief Examiner's Reports:** no recent CER was obtainable for German, Spanish,
+Home Economics, Ag Science, Applied Maths, DCG, Construction Studies, Engineering,
+Politics & Society, Religious Education or Music (SEC publishes CERs selectively, and
+examinations.ie is Cloudflare-gated to automated fetch). Each of those subjects is
+grounded in its marking scheme alone; behavioural findings are drawn from the scheme's
+own rules, not a cohort report. Where a CER was obtainable it was filed (Business, Maths,
+Chemistry, English, Geography).
+
 ## Claim-by-claim record — tranche 3 subjects
 
 Each source below is the SEC finalised marking scheme for its stated year, filed in

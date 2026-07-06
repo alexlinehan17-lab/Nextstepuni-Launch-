@@ -23,6 +23,12 @@ import { ECONOMICS_CHAIR } from './economics';
 import { HOME_ECONOMICS_CHAIR } from './homeeconomics';
 import { AG_SCIENCE_CHAIR } from './agscience';
 import { APPLIED_MATHS_CHAIR } from './appliedmaths';
+import { DCG_CHAIR } from './dcg';
+import { CONSTRUCTION_CHAIR } from './construction';
+import { ENGINEERING_CHAIR } from './engineering';
+import { POLITICS_CHAIR } from './politics';
+import { RE_CHAIR } from './religiouseducation';
+import { MUSIC_CHAIR } from './music';
 
 // Order: the highest-enrolment subjects first, then the rest.
 export const CHAIR_SUBJECTS: ChairSubject[] = [
@@ -43,6 +49,12 @@ export const CHAIR_SUBJECTS: ChairSubject[] = [
   HOME_ECONOMICS_CHAIR,
   AG_SCIENCE_CHAIR,
   APPLIED_MATHS_CHAIR,
+  CONSTRUCTION_CHAIR,
+  ENGINEERING_CHAIR,
+  DCG_CHAIR,
+  POLITICS_CHAIR,
+  RE_CHAIR,
+  MUSIC_CHAIR,
 ];
 
 export const allSessions = (): MarkingSession[] => CHAIR_SUBJECTS.flatMap(s => s.sessions);

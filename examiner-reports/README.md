@@ -44,6 +44,12 @@ For multi-year syntheses, the prefix is `<start-year>-<end-year>-` (e.g.
 | Home Economics | 2025 | Marking scheme | Higher | SEC `Leaving Certificate 2025 Marking Scheme — Higher Level Home Economics - Scientific and Social` (mirrored PDF, educateplus.ie) | PDF + MD + insights |
 | Applied Mathematics | 2024 | Marking scheme | Higher | SEC `Leaving Certificate 2024 Marking Scheme — Higher Level Applied Mathematics` (revised syllabus, first exam 2023; mirrored PDF, educateplus.ie) | PDF + MD + insights |
 | Economics | 2025 | Marking scheme | Higher | SEC `Leaving Certificate 2025 Marking Scheme — Economics, Higher Level` (`LC034ALP000EV`, mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| Design & Communication Graphics | 2025 | Marking scheme | Higher | SEC `Leaving Certificate 2025 Marking Scheme — Higher Level Design and Communication Graphics` (mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| Politics and Society | 2025 | Marking scheme | Higher | SEC `Leaving Certificate 2025 Marking Scheme — Politics and Society, Higher Level` (mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| Construction Studies | 2025 | Marking scheme (Theory + Practical) | Higher (Theory); Common (Practical) | SEC `Leaving Certificate 2025 Marking Scheme — Construction Studies` (`2025 LC Construction Studies HL.pdf`, mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| Religious Education | 2025 | Marking scheme | Higher | SEC `Leaving Certificate 2025 Marking Scheme — Higher Level Religious Education` (mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| Engineering | 2025 | Marking scheme (Written + Practical) | Higher | SEC `Leaving Certificate 2025 Marking Scheme — Engineering – Materials and Technology, Higher Level` (`2025 LC Engineering HL.pdf`, mirrored PDF, educateplus.ie) | PDF + MD + insights |
+| Music | 2022 | Marking scheme (Deferred sitting; Composing + Listening) | Higher | SEC `Leaving Certificate 2022 Deferred Examinations Marking Scheme — Music, Higher Level` (mirrored PDF, exams.ie) | PDF + MD + insights |
 
 _Last updated: 2026-07-06_
 
