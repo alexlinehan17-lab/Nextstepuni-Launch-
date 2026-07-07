@@ -6,7 +6,7 @@
  * scripts/paper-trail/topic-tags/build-tags.mjs from the verified per-subject
  * wave files. DO NOT hand-edit — edit the wave file + regenerate.
  *
- * Coverage: accounting, agricultural-science, applied-mathematics, arabic, art, biology, business, chemistry, classical-studies, computer-science, construction-studies, economics, engineering, english, french, geography, german, history, home-economics-s-and-s, irish, jc-business-studies, jc-english, jc-french, jc-geography, jc-german, jc-history, jc-irish, jc-italian, jc-mathematics, jc-science, jc-spanish, link-modules, mathematics, music, physical-education, physics, physics-and-chemistry, politics-and-society, religious-education, spanish, technology — 786 papers, 8884 questions.
+ * Coverage: accounting, agricultural-economics, agricultural-science, ancient-greek, applied-mathematics, arabic, art, biology, bulgarian, business, chemistry, classical-studies, computer-science, construction-studies, croatian, czech, danish, design-and-communication-graphics, dutch, economics, engineering, english, estonian, finnish, french, geography, german, history, history-early-modern, home-economics-s-and-s, hungarian, irish, italian, japanese, jc-applied-technology, jc-business-studies, jc-classics, jc-engineering, jc-english, jc-french, jc-geography, jc-german, jc-history, jc-home-economics, jc-irish, jc-irish-t1, jc-italian, jc-jewish-studies, jc-mathematics, jc-music, jc-religious-education, jc-science, jc-spanish, jc-wood-technology, latin, latvian, lca-active-leisure-studies, lca-agriculture-horticulture, lca-childcare-community-care, lca-crafts-and-design, lca-engineering, lca-english-and-communications, lca-french, lca-gaeilge-chumarsaideach, lca-german, lca-graphics-and-construction-studies, lca-hair-and-beauty, lca-hotel-catering-and-tourism, lca-information-and-communication-tech, lca-italian, lca-mathematical-applications, lca-office-admin-and-customer, lca-sign-language, lca-social-education, lca-spanish, lca-technology, link-modules, lithuanian, maltese, mandarin-chinese, mathematics, modern-greek, music, physical-education, physics, physics-and-chemistry, polish, politics-and-society, portuguese, religious-education, romanian, russian, slovakian, slovenian, spanish, swedish, technology, ukrainian — 1406 papers, 14403 questions.
  */
 
 import { type PaperTopicTags } from '../../types/paperTrailTopics';
@@ -39,6 +39,7 @@ export const TOPIC_LABELS: Record<string, string> = {
   "accounting-9-5": "Flexible Budgeting (HL)",
   "accounting-9-6": "Cash Budgeting",
   "accounting-9-7": "Production & Product Budgeting",
+  "agricultural-economics-0-0": "Short questions (markets, farm income, taxation & policy)",
   "agricultural-science-0-0": "Hypothesising",
   "agricultural-science-0-1": "Experimenting",
   "agricultural-science-0-2": "Evaluating Evidence",
@@ -64,6 +65,12 @@ export const TOPIC_LABELS: Record<string, string> = {
   "agricultural-science-3-4": "Production: Management",
   "agricultural-science-3-5": "Production: Animal Husbandry & Health",
   "agricultural-science-3-6": "Genetics & Breeding",
+  "ancient-greek-4-0": "Composition — Translation into Greek",
+  "ancient-greek-4-1": "Unseen Comprehension — Prose Passage with Questions",
+  "ancient-greek-4-2": "Unseen Translation into English (Prose & Verse)",
+  "ancient-greek-4-3": "Prescribed Prose Text — Translation & Questions (e.g. Plato)",
+  "ancient-greek-4-4": "Prescribed Homer — Translation & Questions",
+  "ancient-greek-4-5": "Greek History & Civilisation (incl. Art & Architecture)",
   "applied-mathematics-2-0": "Kinematics: Particle Motion in One Dimension",
   "applied-mathematics-2-1": "Describing Motion with Calculus",
   "applied-mathematics-2-10": "Statics & Centre of Gravity",
@@ -139,6 +146,8 @@ export const TOPIC_LABELS: Record<string, string> = {
   "biology-2-6": "Blood & Circulatory System",
   "biology-2-7": "Excretion & Homeostasis",
   "biology-2-9": "Sensory Organs (Eye & Ear)",
+  "bulgarian-0-0": "Vocabulary & expressions in context",
+  "bulgarian-0-1": "Comprehension & discussion of the set text",
   "business-0-12": "1.1 People in Business & Contract Law",
   "business-0-13": "1.2 Conflict Resolution: The Consumer",
   "business-0-14": "1.3 Conflict Resolution: Industrial Relations",
@@ -300,6 +309,30 @@ export const TOPIC_LABELS: Record<string, string> = {
   "construction-studies-0-8": "Sustainability, Passive House & U-Values",
   "construction-studies-0-9": "Foundations",
   "construction-studies-2-3": "Building Science: Porosity & Durability",
+  "croatian-0-0": "Vocabulary & expressions in context",
+  "croatian-0-1": "Comprehension & discussion of the set text",
+  "czech-0-0": "Vocabulary & expressions in context",
+  "czech-0-1": "Comprehension & discussion of the set text",
+  "danish-0-0": "Vocabulary & expressions in context",
+  "danish-0-1": "Comprehension & discussion of the set text",
+  "danish-1-0": "Commentary / essay on the text theme",
+  "design-and-communication-graphics-0-1": "Orthographic and Auxiliary Projection",
+  "design-and-communication-graphics-0-10": "The Oblique Plane",
+  "design-and-communication-graphics-0-11": "Intersecting Planes (Lamina Planes)",
+  "design-and-communication-graphics-0-12": "Solids in Contact",
+  "design-and-communication-graphics-0-2": "Axonometric Projection (Isometric, Dimetric, Trimetric)",
+  "design-and-communication-graphics-0-3": "Perspective Drawing",
+  "design-and-communication-graphics-0-5": "Conic Sections",
+  "design-and-communication-graphics-0-7": "Developments and Envelopments",
+  "design-and-communication-graphics-0-8": "Interpenetration (Intersection of Solids)",
+  "design-and-communication-graphics-0-9": "Skew Lines",
+  "design-and-communication-graphics-2-0": "Dynamic Mechanisms",
+  "design-and-communication-graphics-2-1": "Structural Forms",
+  "design-and-communication-graphics-2-2": "Geologic Geometry",
+  "design-and-communication-graphics-2-3": "Surface Geometry",
+  "design-and-communication-graphics-2-4": "Assemblies",
+  "dutch-0-0": "Vocabulary & expressions in context",
+  "dutch-0-1": "Comprehension & discussion of the set text",
   "economics-0-0": "Economics as a Way of Thinking",
   "economics-0-1": "Scarcity & Choice",
   "economics-0-2": "Sustainability",
@@ -395,6 +428,10 @@ export const TOPIC_LABELS: Record<string, string> = {
   "english-7-4": "General Vision and Viewpoint",
   "english-7-6": "Relationships",
   "english-9-1": "Composition — choice of formats (essay / personal essay / short story / speech / article / discursive)",
+  "estonian-0-0": "Vocabulary & expressions in context",
+  "estonian-0-1": "Comprehension & discussion of the set text",
+  "finnish-0-0": "Vocabulary & expressions in context",
+  "finnish-0-1": "Comprehension & discussion of the set text",
   "french-5-0": "Journalistic Comprehension (Newspaper / Magazine)",
   "french-5-1": "Literary Comprehension (Novel / Book Extract)",
   "french-5-2": "Interview-Format Comprehension (OL)",
@@ -459,6 +496,7 @@ export const TOPIC_LABELS: Record<string, string> = {
   "history-3-22": "Case Study: Johnson & Vietnam",
   "history-3-8": "EUR 3: Dictatorship & Democracy, 1920-1945",
   "history-3-9": "Case Study: Stalin's Show Trials",
+  "history-early-modern-0-0": "Documents-based question (Early Modern topics)",
   "home-economics-0-0": "Food & Nutrition",
   "home-economics-0-1": "Diet & Health",
   "home-economics-0-10": "Meal Planning & Preparation",
@@ -480,9 +518,25 @@ export const TOPIC_LABELS: Record<string, string> = {
   "home-economics-2-0": "The Family in Society",
   "home-economics-2-1": "Marriage & the Family Life Cycle",
   "home-economics-2-3": "Older People & the Family (Care Provision)",
+  "hungarian-0-0": "Vocabulary & expressions in context",
+  "hungarian-0-1": "Comprehension & discussion of the set text",
   "irish-3-0": "Léamhthuiscint A",
   "irish-3-1": "Léamhthuiscint B",
   "irish-3-3": "Cruinneas Teanga (Grammar within Léamhthuiscint B)",
+  "italian-5-0": "Journalistic Comprehension (HL Section A)",
+  "italian-5-1": "Unseen Literary Comprehension (HL)",
+  "italian-5-2": "Prescribed Text Comprehension (e.g. Marcovaldo, Io non ho paura)",
+  "italian-5-3": "Reading Comprehension — Short Passages (OL)",
+  "italian-5-4": "Publicity Pieces & Advertisements (OL)",
+  "italian-6-5": "Correct Order / Sequencing Task (OL)",
+  "japanese-5-0": "Reading — Everyday & Informational Texts (Menus, Guides, Websites)",
+  "japanese-5-1": "Reading — Letters, Emails, Blogs & Diaries",
+  "japanese-5-2": "Reading — Articles & Interviews",
+  "japanese-5-3": "Translation — Japanese to English",
+  "japanese-5-4": "Kanji — Meaning & Reading Tasks",
+  "japanese-5-5": "Grammar Tasks (Particles & Verb Forms)",
+  "japanese-5-6": "Culture & Society Questions",
+  "jc-applied-technology-0-0": "Structured questions (technology in context)",
   "jc-business-studies-0-0": "Managing money: income, expenditure, needs & wants",
   "jc-business-studies-0-1": "Household budgeting & your financial position",
   "jc-business-studies-0-10": "How globalisation & technology shape consumer choice",
@@ -513,6 +567,11 @@ export const TOPIC_LABELS: Record<string, string> = {
   "jc-business-studies-2-7": "Ireland in the European Union & the eurozone",
   "jc-business-studies-2-8": "Economic indicators: inflation, employment, interest rates",
   "jc-business-studies-2-9": "Current economic issues & government economic policy",
+  "jc-classics-0-0": "Myth & daily life in Greece and Rome",
+  "jc-classics-1-0": "The World of Achilles & Rome (classical studies)",
+  "jc-classics-2-0": "Latin — classical language & comprehension",
+  "jc-classics-3-0": "Ancient Greek — classical language & comprehension",
+  "jc-engineering-0-0": "Structured questions (engineering in context)",
   "jc-english-0-0": "Spoken Communication and Presentation",
   "jc-english-0-1": "Discussion, Debate and Persuasion",
   "jc-english-1-0": "Reading Comprehension (Unseen Texts)",
@@ -599,12 +658,25 @@ export const TOPIC_LABELS: Record<string, string> = {
   "jc-history-2-7": "World War One or World War Two: causes, course and impact",
   "jc-history-2-8": "Dictatorship in the twentieth century: life in a fascist and a communist country",
   "jc-history-2-9": "Genocide and the Holocaust",
+  "jc-home-economics-0-0": "Short questions (food, health, home & consumer)",
+  "jc-home-economics-1-0": "Structured questions (applied food, family & resource tasks)",
   "jc-irish-0-1": "Léamhthuiscint (Reading Comprehension)",
+  "jc-irish-t1-0-0": "Míreanna raidió (radio clips)",
+  "jc-irish-t1-1-0": "Príomhshliocht léitheoireachta (main reading passage)",
+  "jc-irish-t1-1-1": "Póstaer / fógra (poster & notice comprehension)",
+  "jc-irish-t1-2-0": "Dán / amhrán (poem / song)",
+  "jc-irish-t1-2-1": "Úrscéal / dráma (novel / drama)",
+  "jc-irish-t1-2-2": "Gearrscéal / scannán / gearrscannán (short story / film)",
+  "jc-irish-t1-3-0": "Tasc scríbhneoireachta (aiste / blag / alt / ríomhphost)",
+  "jc-irish-t1-4-0": "Cruinneas gramadaí (choose / rewrite correct forms)",
   "jc-italian-0-4": "Reading: Answering Questions in English",
   "jc-italian-0-5": "Reading: Answering Questions in Italian",
   "jc-italian-0-6": "Reading: Matching Pictures with Descriptions",
   "jc-italian-0-7": "Reading: Multiple Choice",
   "jc-italian-2-0": "Intercultural Awareness: Italy and Italian Culture",
+  "jc-jewish-studies-0-0": "Jewish community life, home & synagogue",
+  "jc-jewish-studies-1-0": "The story of the Jewish people in the Hebrew Bible",
+  "jc-jewish-studies-2-0": "Jewish history: figures, persecution & liberation",
   "jc-mathematics-1-0": "Number systems & arithmetic operations",
   "jc-mathematics-1-1": "Indices & scientific notation",
   "jc-mathematics-1-2": "Factors, multiples & primes",
@@ -631,6 +703,10 @@ export const TOPIC_LABELS: Record<string, string> = {
   "jc-mathematics-4-1": "Probability of random events",
   "jc-mathematics-4-3": "Representing data (graphs & charts)",
   "jc-mathematics-4-4": "Summary statistics (averages & spread)",
+  "jc-music-0-0": "Excerpt-based listening & responding questions",
+  "jc-religious-education-0-0": "Faith, beliefs, sacred texts & founders",
+  "jc-religious-education-1-0": "Communities, worship, ritual & pilgrimage",
+  "jc-religious-education-2-0": "Morality, values & living a good life",
   "jc-science-0-0": "How science works & how ideas change over time",
   "jc-science-0-1": "Asking scientific questions & writing testable hypotheses",
   "jc-science-0-2": "Designing fair tests: variables, controls, reliability, accuracy, precision & safety",
@@ -684,6 +760,105 @@ export const TOPIC_LABELS: Record<string, string> = {
   "jc-spanish-0-9": "Writing: Completing Phrases",
   "jc-spanish-1-0": "Grammar Awareness and Accuracy",
   "jc-spanish-2-0": "Intercultural Awareness: Spain and the Spanish-speaking World",
+  "jc-wood-technology-0-0": "Structured questions (wood science, processes & design)",
+  "latin-3-0": "Composition — Translation into Latin",
+  "latin-3-1": "Unseen Comprehension — Prose Passage with Questions",
+  "latin-3-2": "Unseen Translation into English (Prose & Verse)",
+  "latin-3-3": "Prescribed Prose Text — Translation & Questions (e.g. Cicero)",
+  "latin-3-4": "Prescribed Poetry — Virgil's Aeneid: Translation & Questions",
+  "latin-3-5": "Grammar, Accidence & Scansion",
+  "latin-3-6": "Roman History & Civilisation Essays",
+  "latvian-0-0": "Vocabulary & expressions in context",
+  "latvian-0-1": "Comprehension & discussion of the set text",
+  "lca-active-leisure-studies-0-0": "Leisure Studies (participation, facilities & organisation)",
+  "lca-active-leisure-studies-1-0": "Health Related Fitness (components, nutrition & training)",
+  "lca-active-leisure-studies-2-0": "Aquatics (swimming strokes & water safety)",
+  "lca-active-leisure-studies-3-0": "Outdoor Education (OS maps, hiking & expeditions)",
+  "lca-active-leisure-studies-4-0": "Invasion Games (skills, rules & coaching)",
+  "lca-active-leisure-studies-5-0": "Net & Fielding Games (skills, rules & coaching)",
+  "lca-agriculture-horticulture-0-0": "Short questions (general agriculture & horticulture)",
+  "lca-agriculture-horticulture-1-0": "Basic Horticulture",
+  "lca-agriculture-horticulture-1-1": "Garden Design",
+  "lca-agriculture-horticulture-1-2": "Floristry, Fruit & Vegetables",
+  "lca-agriculture-horticulture-1-3": "Forestry",
+  "lca-agriculture-horticulture-1-4": "Grass",
+  "lca-agriculture-horticulture-1-5": "Milk & Meat Production",
+  "lca-childcare-community-care-0-0": "Care of babies & young children",
+  "lca-childcare-community-care-1-0": "Child development & play",
+  "lca-childcare-community-care-2-0": "Parenting & care provision",
+  "lca-childcare-community-care-3-0": "People with special needs",
+  "lca-childcare-community-care-4-0": "Older people",
+  "lca-crafts-and-design-0-0": "Textiles & fabric crafts (weaving, batik, costume)",
+  "lca-crafts-and-design-0-1": "Graphic design (logos, posters, signs & lettering)",
+  "lca-crafts-and-design-0-2": "Print-making & repeat patterns (lino, stencils)",
+  "lca-crafts-and-design-0-3": "Ceramics",
+  "lca-crafts-and-design-0-4": "Product, jewellery & furniture design",
+  "lca-crafts-and-design-0-5": "Photography",
+  "lca-crafts-and-design-0-6": "Video & film-making",
+  "lca-crafts-and-design-0-7": "Art & design appreciation (comparing artworks)",
+  "lca-engineering-0-0": "Short questions (materials, tools & processes)",
+  "lca-engineering-0-1": "Drawing question (views of an engineered object)",
+  "lca-engineering-0-2": "Processes, equipment & workshop safety",
+  "lca-engineering-1-0": "Design question",
+  "lca-engineering-1-1": "Engines & motor technology",
+  "lca-engineering-1-2": "Production stages (making a project)",
+  "lca-engineering-2-0": "Systems Module (choice question)",
+  "lca-engineering-2-1": "Systems: Computer Aided Design (CAD)",
+  "lca-engineering-2-2": "Systems: Electricity",
+  "lca-engineering-2-3": "Systems: Electronics",
+  "lca-engineering-2-4": "Systems: Mechanisms",
+  "lca-engineering-2-5": "Systems: Pneumatics",
+  "lca-english-and-communications-0-0": "Audio-visual clips (comprehension & response)",
+  "lca-english-and-communications-1-0": "Personal & social texts (reading, response & studied novel)",
+  "lca-english-and-communications-2-0": "Digital media & infographics",
+  "lca-english-and-communications-3-0": "Media texts (articles, radio & advertising)",
+  "lca-english-and-communications-4-0": "Creative expression (songs, poetry & personal writing)",
+  "lca-french-0-0": "Listening tasks (everyday situations)",
+  "lca-french-1-1": "Written exercises (forms & fill-in-the-blanks)",
+  "lca-gaeilge-chumarsaideach-1-0": "Léamhthuiscint (reading comprehension)",
+  "lca-german-0-0": "Listening tasks (everyday situations)",
+  "lca-graphics-and-construction-studies-0-0": "Short questions (graphics & construction)",
+  "lca-graphics-and-construction-studies-1-0": "Graphic Communication",
+  "lca-graphics-and-construction-studies-1-1": "Woodcraft",
+  "lca-graphics-and-construction-studies-1-2": "Design & Manufacture of Educational Toys",
+  "lca-graphics-and-construction-studies-1-3": "Computer Aided Design (CAD)",
+  "lca-graphics-and-construction-studies-1-5": "Building Services",
+  "lca-hair-and-beauty-0-0": "Salon & customer care",
+  "lca-hair-and-beauty-1-0": "Haircare",
+  "lca-hair-and-beauty-2-0": "Beautycare",
+  "lca-hair-and-beauty-3-0": "Bodycare",
+  "lca-hotel-catering-and-tourism-0-0": "Fast food & café catering",
+  "lca-hotel-catering-and-tourism-1-0": "Hotel & restaurant catering",
+  "lca-hotel-catering-and-tourism-2-0": "Hospitality & the Irish tourism industry",
+  "lca-hotel-catering-and-tourism-3-0": "Catering for diversity (diets, health & world cuisine)",
+  "lca-information-and-communication-tech-0-0": "General computer theory (short questions)",
+  "lca-information-and-communication-tech-1-0": "Word processing (theory & practical)",
+  "lca-information-and-communication-tech-2-0": "Spreadsheets (theory & practical)",
+  "lca-information-and-communication-tech-3-0": "Databases (theory & practical)",
+  "lca-information-and-communication-tech-4-0": "Desktop publishing (theory & practical)",
+  "lca-information-and-communication-tech-5-0": "Internet & digital literacy (theory & practical)",
+  "lca-information-and-communication-tech-6-0": "Text entry (theory & practical)",
+  "lca-italian-0-0": "Listening tasks (everyday situations)",
+  "lca-italian-1-0": "Reading comprehension (menus, ads & notices)",
+  "lca-italian-1-1": "Written exercises (forms & fill-in-the-blanks)",
+  "lca-mathematical-applications-0-0": "Number, money & everyday calculations",
+  "lca-mathematical-applications-0-1": "Measurement, geometry & scale",
+  "lca-mathematical-applications-0-2": "Data, statistics & probability",
+  "lca-mathematical-applications-0-3": "Research element question",
+  "lca-office-admin-and-customer-0-0": "Retailing & selling",
+  "lca-office-admin-and-customer-1-0": "Office assistant duties",
+  "lca-office-admin-and-customer-2-0": "Office practice",
+  "lca-office-admin-and-customer-3-0": "Retailing & the consumer",
+  "lca-sign-language-0-0": "Signed questions (ISL, Deaf community & everyday topics)",
+  "lca-social-education-0-0": "Aural report (health & social issues)",
+  "lca-social-education-1-0": "Multiple choice (society, politics & general knowledge)",
+  "lca-spanish-1-0": "Reading comprehension (menus, ads & notices)",
+  "lca-spanish-1-1": "Written exercises (forms & fill-in-the-blanks)",
+  "lca-technology-0-0": "Short questions (materials & technology)",
+  "lca-technology-0-1": "Graphical Communication",
+  "lca-technology-0-2": "Health and Safety",
+  "lca-technology-0-3": "Electrical Understanding & Basic Electronics",
+  "lca-technology-0-4": "Tools & Equipment",
   "lcvp-link-modules-0-0": "Unit 1: Introduction to Working Life",
   "lcvp-link-modules-0-1": "Unit 2: Job Seeking Skills",
   "lcvp-link-modules-0-2": "Unit 3: Career Investigation (core portfolio item)",
@@ -694,6 +869,15 @@ export const TOPIC_LABELS: Record<string, string> = {
   "lcvp-link-modules-1-2": "Unit 3: Local Voluntary Organisations",
   "lcvp-link-modules-1-3": "Unit 4: An Enterprise Activity (Enterprise Report / Action Plan)",
   "lcvp-link-modules-1-4": "Unit 5: Work Experience Diary, My Own Place & Recorded Interview (optional portfolio items)",
+  "lithuanian-2-0": "Reading Comprehension — Article with Open Questions (I Dalis)",
+  "lithuanian-2-1": "Reading Comprehension — Narrative & Informational Texts (Užduotys, New Format)",
+  "maltese-0-0": "Vocabulary & expressions in context",
+  "maltese-0-1": "Comprehension & discussion of the set text",
+  "mandarin-chinese-3-0": "Reading — Notices, Signs, Timetables & Maps",
+  "mandarin-chinese-3-1": "Reading — Nursery Rhymes & Poems",
+  "mandarin-chinese-3-2": "Reading — Descriptive & Narrative Passages (People, Places, Culture)",
+  "mandarin-chinese-3-3": "Reading — Emails, Messages, Diaries & Social Media",
+  "mandarin-chinese-3-4": "Reading — Word–Picture Matching (OL)",
   "mathematics-0-0": "Counting",
   "mathematics-0-1": "Concepts of Probability",
   "mathematics-0-2": "Outcomes of Random Processes",
@@ -718,6 +902,8 @@ export const TOPIC_LABELS: Record<string, string> = {
   "mathematics-3-4": "Proof by Induction",
   "mathematics-4-0": "Functions",
   "mathematics-4-1": "Calculus",
+  "modern-greek-0-0": "Vocabulary & expressions in context",
+  "modern-greek-0-1": "Comprehension & discussion of the set text",
   "music-1-10": "Melody: Continuation of a Given Opening",
   "music-1-11": "Melody: Setting Music to a Given Text",
   "music-1-12": "Melody: Composing to a Given Dance Rhythm or Metre",
@@ -876,6 +1062,8 @@ export const TOPIC_LABELS: Record<string, string> = {
   "physics-and-chemistry-8-3": "Oxidation & Reduction",
   "physics-and-chemistry-8-4": "Organic Chemistry (Hydrocarbons)",
   "physics-and-chemistry-8-5": "General & Applied Chemistry",
+  "polish-3-0": "Reading Comprehension — Text with Open Questions (Część I)",
+  "polish-3-1": "Reading — Matching, Multiple-Choice & True/False Tasks (Czytanie, New Format)",
   "politics-and-society-0-10": "2.7 Key Thinkers",
   "politics-and-society-0-11": "Topic 1: Power & Decision-Making in the School",
   "politics-and-society-0-12": "Topic 2: Power & Decision-Making at National & European Level",
@@ -896,12 +1084,28 @@ export const TOPIC_LABELS: Record<string, string> = {
   "politics-and-society-3-0": "7.1 National Identity",
   "politics-and-society-3-10": "Topic 7: Globalisation & Identity",
   "politics-and-society-3-11": "Topic 8: Sustainable Development",
+  "portuguese-2-0": "Reading Comprehension — Literary / Journalistic Text (Parte I)",
+  "portuguese-2-1": "Guided Commentary on the Text (~100 Words, Parte II)",
+  "portuguese-2-2": "Discursive Commentary on a Quotation (~300 Words, Parte III)",
   "religious-education-0-0": "1.1 The Contemporary Context",
   "religious-education-0-1": "1.2 The Tradition of Search",
   "religious-education-0-2": "2.1 The Language of Symbol",
   "religious-education-0-3": "2.2 The Tradition of Response",
   "religious-education-0-4": "3.1 The Gods of the Ancients",
   "religious-education-0-6": "3.3 Naming God, Past and Present",
+  "romanian-0-0": "Vocabulary & expressions in context",
+  "romanian-0-1": "Comprehension & discussion of the set text",
+  "russian-3-0": "Comprehension — Reading Text with Questions in English",
+  "russian-3-1": "Summary in English",
+  "russian-3-2": "Language Awareness Tasks",
+  "russian-3-3": "Structuring Discourse",
+  "russian-3-4": "Information Retrieval — Everyday Texts (OL)",
+  "russian-3-5": "Mix and Match (OL)",
+  "slovakian-0-0": "Vocabulary & expressions in context",
+  "slovakian-0-1": "Comprehension & discussion of the set text",
+  "slovenian-0-0": "Vocabulary & expressions in context",
+  "slovenian-0-1": "Comprehension & discussion of the set text",
+  "slovenian-1-0": "Commentary / essay on the text theme",
   "spanish-1-1": "Exploring Meaning",
   "spanish-2-1": "Reading Modern Literary Texts (Section A Literature Option)",
   "spanish-5-0": "Journalistic Text Comprehension",
@@ -910,6 +1114,8 @@ export const TOPIC_LABELS: Record<string, string> = {
   "spanish-7-1": "Relato de un náufrago (Gabriel García Márquez)",
   "spanish-7-2": "Prescribed Literature (La aventura de Saíd)",
   "spanish-7-3": "Prescribed Literature (Sin noticias de Gurb)",
+  "swedish-0-0": "Vocabulary & expressions in context",
+  "swedish-0-1": "Comprehension & discussion of the set text",
   "technology-0-0": "Design Brief",
   "technology-0-1": "Identifying and Analysing Problems",
   "technology-0-10": "Presenting the Design Folio",
@@ -962,7 +1168,9 @@ export const TOPIC_LABELS: Record<string, string> = {
   "technology-9-0": "Computer Architecture",
   "technology-9-1": "Data Communications and Networks",
   "technology-9-2": "The Internet",
-  "technology-9-3": "Multimedia and Design"
+  "technology-9-3": "Multimedia and Design",
+  "ukrainian-0-0": "Vocabulary & expressions in context",
+  "ukrainian-0-1": "Comprehension & discussion of the set text"
 };
 
 export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
@@ -1495,6 +1703,1356 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "9",
     "primary": "accounting-9-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "agricultural-economics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC026ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "12",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "13",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "14",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "15",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "16",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "17",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "18",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "19",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "20",
+    "primary": "agricultural-economics-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "agricultural-economics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2019,
+  "fileid": "LC026ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "12",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "13",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "14",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "15",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "16",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "17",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "18",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "19",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "20",
+    "primary": "agricultural-economics-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "agricultural-economics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC026GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "12",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "13",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "14",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "15",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "16",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "17",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "18",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "19",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "20",
+    "primary": "agricultural-economics-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "agricultural-economics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2019,
+  "fileid": "LC026GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "12",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "13",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "14",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "15",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "16",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "17",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "18",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "19",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "20",
+    "primary": "agricultural-economics-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "agricultural-economics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC026GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "12",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "13",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "14",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "15",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "16",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "17",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "18",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "19",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "20",
+    "primary": "agricultural-economics-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "agricultural-economics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2018,
+  "fileid": "LC026GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "12",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "13",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "14",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "15",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "16",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "17",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "18",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "19",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "20",
+    "primary": "agricultural-economics-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "agricultural-economics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC026ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "12",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "13",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "14",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "15",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "16",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "17",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "18",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "19",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "20",
+    "primary": "agricultural-economics-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "agricultural-economics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC026ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "12",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "13",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "14",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "15",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "16",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "17",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "18",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "19",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "20",
+    "primary": "agricultural-economics-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "agricultural-economics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC026GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "12",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "13",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "14",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "15",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "16",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "17",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "18",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "19",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "20",
+    "primary": "agricultural-economics-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "agricultural-economics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC026GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "12",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "13",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "14",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "15",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "16",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "17",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "18",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "19",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "20",
+    "primary": "agricultural-economics-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "agricultural-economics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2013,
+  "fileid": "LC026GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "12",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "13",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "14",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "15",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "16",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "17",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "18",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "19",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "20",
+    "primary": "agricultural-economics-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "agricultural-economics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2012,
+  "fileid": "LC026ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "12",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "13",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "14",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "15",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "16",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "17",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "18",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "19",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "20",
+    "primary": "agricultural-economics-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "agricultural-economics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2011,
+  "fileid": "LC026ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "12",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "13",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "14",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "15",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "16",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "17",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "18",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "19",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "20",
+    "primary": "agricultural-economics-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "agricultural-economics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC026ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "12",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "13",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "14",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "15",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "16",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "17",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "18",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "19",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "20",
+    "primary": "agricultural-economics-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "agricultural-economics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2010,
+  "fileid": "LC026ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "12",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "13",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "14",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "15",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "16",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "17",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "18",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "19",
+    "primary": "agricultural-economics-0-0"
+   },
+   {
+    "n": "20",
+    "primary": "agricultural-economics-0-0"
    }
   ]
  },
@@ -2742,6 +4300,218 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "13",
     "primary": "agricultural-science-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "ancient-greek",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC007ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "ancient-greek-4-0",
+    "secondary": "ancient-greek-4-1"
+   },
+   {
+    "n": "2",
+    "primary": "ancient-greek-4-2"
+   },
+   {
+    "n": "3",
+    "primary": "ancient-greek-4-3",
+    "secondary": "ancient-greek-4-4"
+   },
+   {
+    "n": "4",
+    "primary": "ancient-greek-4-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "ancient-greek",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC007GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "ancient-greek-4-2"
+   },
+   {
+    "n": "2",
+    "primary": "ancient-greek-4-3"
+   },
+   {
+    "n": "3",
+    "primary": "ancient-greek-4-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "ancient-greek",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC007ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "ancient-greek-4-0",
+    "secondary": "ancient-greek-4-1"
+   },
+   {
+    "n": "2",
+    "primary": "ancient-greek-4-2"
+   },
+   {
+    "n": "3",
+    "primary": "ancient-greek-4-3",
+    "secondary": "ancient-greek-4-4"
+   },
+   {
+    "n": "4",
+    "primary": "ancient-greek-4-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "ancient-greek",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC007ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "ancient-greek-4-0",
+    "secondary": "ancient-greek-4-1"
+   },
+   {
+    "n": "2",
+    "primary": "ancient-greek-4-2"
+   },
+   {
+    "n": "3",
+    "primary": "ancient-greek-4-3",
+    "secondary": "ancient-greek-4-4"
+   },
+   {
+    "n": "4",
+    "primary": "ancient-greek-4-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "ancient-greek",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC007GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "ancient-greek-4-2"
+   },
+   {
+    "n": "2",
+    "primary": "ancient-greek-4-4"
+   },
+   {
+    "n": "3",
+    "primary": "ancient-greek-4-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "ancient-greek",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC007ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "ancient-greek-4-0",
+    "secondary": "ancient-greek-4-1"
+   },
+   {
+    "n": "2",
+    "primary": "ancient-greek-4-2"
+   },
+   {
+    "n": "3",
+    "primary": "ancient-greek-4-3",
+    "secondary": "ancient-greek-4-4"
+   },
+   {
+    "n": "4",
+    "primary": "ancient-greek-4-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "ancient-greek",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC007ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "ancient-greek-4-0",
+    "secondary": "ancient-greek-4-1"
+   },
+   {
+    "n": "2",
+    "primary": "ancient-greek-4-2"
+   },
+   {
+    "n": "3",
+    "primary": "ancient-greek-4-3",
+    "secondary": "ancient-greek-4-4"
+   },
+   {
+    "n": "4",
+    "primary": "ancient-greek-4-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "ancient-greek",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC007ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "ancient-greek-4-0",
+    "secondary": "ancient-greek-4-1"
+   },
+   {
+    "n": "2",
+    "primary": "ancient-greek-4-2"
+   },
+   {
+    "n": "3",
+    "primary": "ancient-greek-4-3",
+    "secondary": "ancient-greek-4-4"
+   },
+   {
+    "n": "4",
+    "primary": "ancient-greek-4-5"
    }
   ]
  },
@@ -10572,6 +12342,550 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
   ]
  },
  {
+  "subjectId": "bulgarian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC559ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "bulgarian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "bulgarian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "bulgarian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC559ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "bulgarian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "bulgarian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "bulgarian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC559ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "bulgarian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "bulgarian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "bulgarian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC559ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "bulgarian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "bulgarian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "bulgarian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC559ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "bulgarian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "bulgarian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "bulgarian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2020,
+  "fileid": "LC559ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "bulgarian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "bulgarian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "bulgarian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC559ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "bulgarian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "bulgarian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "bulgarian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC559ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "bulgarian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "bulgarian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "bulgarian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC559ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "bulgarian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "bulgarian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "bulgarian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC559ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "bulgarian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "bulgarian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "bulgarian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC559ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "bulgarian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "bulgarian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "bulgarian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC559ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "bulgarian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "bulgarian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "bulgarian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC559ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "bulgarian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "bulgarian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "bulgarian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC559ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "bulgarian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "bulgarian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "bulgarian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC559ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "bulgarian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "bulgarian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "bulgarian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC559ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "bulgarian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "bulgarian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "bulgarian-0-1"
+   }
+  ]
+ },
+ {
   "subjectId": "business",
   "level": "higher",
   "lang": "ev",
@@ -16587,6 +18901,3846 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
   ]
  },
  {
+  "subjectId": "croatian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC567ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "croatian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "croatian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "croatian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC567ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "croatian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "croatian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "croatian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC567ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "croatian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "croatian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "croatian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC567ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "croatian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "croatian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "croatian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC567ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "croatian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "croatian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "croatian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2020,
+  "fileid": "LC567ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "croatian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "croatian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "croatian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC567ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "croatian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "croatian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "croatian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC567ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "croatian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "croatian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "croatian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC567ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "croatian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "croatian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "croatian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC567ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "croatian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "croatian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "croatian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC567ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "croatian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "croatian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "croatian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC567ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "croatian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "croatian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "croatian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "czech",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC547ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "czech-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "czech-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "czech",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC547ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "czech-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "czech-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "czech",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2020,
+  "fileid": "LC547ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "czech-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "czech-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "czech",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC547ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "czech-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "czech-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "czech",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC547ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "czech-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "czech-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "czech",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC547ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "czech-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "czech-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "czech",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC547ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "czech-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "czech-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "czech",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC547ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "czech-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "czech-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "czech",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC547ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "czech-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "czech-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "czech-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "danish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC038ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "danish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "danish-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "danish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC038ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "danish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "danish-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "danish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC038ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "danish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "danish-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "danish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC038ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "danish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "danish-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "danish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC038ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "danish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "7",
+    "primary": "danish-1-0"
+   },
+   {
+    "n": "8",
+    "primary": "danish-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "danish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC038AP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "danish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "danish-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "danish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC038ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "danish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "danish-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "danish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC038ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "danish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "danish-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "danish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC038ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "danish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "danish-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "danish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC038ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "danish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "danish-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC562ALP039EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-11"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "LC562ALP039IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-11"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC562GLP039EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "LC562GLP039IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC562ALP039EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-1",
+    "secondary": "design-and-communication-graphics-0-11"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-7",
+    "secondary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "LC562ALP039IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-1",
+    "secondary": "design-and-communication-graphics-0-11"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-7",
+    "secondary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC562GLP039EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "LC562GLP039IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC562ALP039EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-11"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1",
+    "secondary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "LC562ALP039IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-11"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1",
+    "secondary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC562GLP039EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "LC562GLP039IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC562ALP039EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-11"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-10"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "LC562ALP039iV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-11"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-10"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC562GLP039EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "LC562GLP039IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC562ALP039EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-11"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2021,
+  "fileid": "LC562ALP039IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-11"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC562GLP039EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2021,
+  "fileid": "LC562GLP039IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2020,
+  "fileid": "LC562ALP039EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-11"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2020,
+  "fileid": "LC562ALP039IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-11"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC562ALP039EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-11"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1",
+    "secondary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2019,
+  "fileid": "LC562ALP039IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-11"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1",
+    "secondary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC562GLP039EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2019,
+  "fileid": "LC562GLP039IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC562ALP015EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-11"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2018,
+  "fileid": "LC562ALP015IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-11"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC562GLP015EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1",
+    "secondary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2018,
+  "fileid": "LC562GLP015IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1",
+    "secondary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC562ALP015EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-11"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2017,
+  "fileid": "LC562ALP015IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-11"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC562GLP015EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2017,
+  "fileid": "LC562GLP015IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC562ALP015EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-11"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC562ALP015IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-11"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC562GLP015EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC562GLP015IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC562ALP015EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-8",
+    "secondary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC562ALP015IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-8",
+    "secondary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC562GLP015EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC562GLP015IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC562ALP015EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-11"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-12",
+    "secondary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1",
+    "secondary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC562ALP015IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-11"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-12",
+    "secondary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1",
+    "secondary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC562GLP015EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC562GLP015IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC562ALP015EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-1",
+    "secondary": "design-and-communication-graphics-0-11"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-3",
+    "secondary": "design-and-communication-graphics-0-9"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2013,
+  "fileid": "LC562ALP015IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-1",
+    "secondary": "design-and-communication-graphics-0-11"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-3",
+    "secondary": "design-and-communication-graphics-0-9"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC562GLP015EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2013,
+  "fileid": "LC562GLP015IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC562ALP015EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-1",
+    "secondary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-11"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2012,
+  "fileid": "LC562ALP015IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-1",
+    "secondary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-11"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC562GLP015EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2012,
+  "fileid": "LC562GLP015IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC562ALP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2011,
+  "fileid": "LC562ALP014IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC562GLP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2011,
+  "fileid": "LC562GLP014IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC562ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-10"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-11",
+    "secondary": "design-and-communication-graphics-0-10"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2010,
+  "fileid": "LC562ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-10"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-11",
+    "secondary": "design-and-communication-graphics-0-10"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC562GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "design-and-communication-graphics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2010,
+  "fileid": "LC562GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "design-and-communication-graphics-0-8"
+   },
+   {
+    "n": "2",
+    "primary": "design-and-communication-graphics-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "design-and-communication-graphics-0-3"
+   },
+   {
+    "n": "4",
+    "primary": "design-and-communication-graphics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "design-and-communication-graphics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "design-and-communication-graphics-2-3",
+    "secondary": "design-and-communication-graphics-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "design-and-communication-graphics-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "design-and-communication-graphics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "dutch",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC017ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "dutch-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "dutch-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "dutch-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "dutch-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "dutch-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "dutch-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "dutch",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC017ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "dutch-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "dutch-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "dutch-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "dutch-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "dutch-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "dutch-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "dutch",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC017ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "dutch-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "dutch-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "dutch-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "dutch-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "dutch-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "dutch-0-1"
+   }
+  ]
+ },
+ {
   "subjectId": "economics",
   "level": "higher",
   "lang": "ev",
@@ -20596,6 +26750,720 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "4",
     "primary": "english-11-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "estonian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC552ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "estonian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "estonian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "estonian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC552ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "estonian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "estonian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "estonian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC552ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "estonian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "estonian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "estonian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC552ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "estonian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "estonian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "estonian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC552ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "estonian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "estonian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "estonian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC552ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "estonian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "estonian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "estonian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC552ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "estonian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "estonian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "estonian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC552ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "estonian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "estonian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "estonian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC552ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "estonian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "estonian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "estonian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC552ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "estonian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "estonian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "estonian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC552ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "estonian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "estonian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "estonian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC552ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "estonian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "estonian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "estonian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC552ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "estonian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "estonian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "estonian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC552ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "estonian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "estonian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "estonian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC552ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "estonian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "estonian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "estonian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "finnish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC049ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "finnish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "finnish-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "finnish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC049ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "finnish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "finnish-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "finnish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC049ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "finnish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "finnish-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "finnish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC049ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "finnish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "finnish-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "finnish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC049ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "finnish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "finnish-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "finnish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC049ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "finnish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "finnish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "finnish-0-1"
    }
   ]
  },
@@ -26448,6 +33316,58 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
   ]
  },
  {
+  "subjectId": "history-early-modern",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC096ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "history-early-modern-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "history-early-modern-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "history-early-modern-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "history-early-modern-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "history-early-modern",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC096ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "history-early-modern-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "history-early-modern-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "history-early-modern-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "history-early-modern-0-0"
+   }
+  ]
+ },
+ {
   "subjectId": "home-economics-s-and-s",
   "level": "higher",
   "lang": "ev",
@@ -28926,6 +35846,516 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
   ]
  },
  {
+  "subjectId": "hungarian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC551ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "hungarian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "hungarian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC551ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "hungarian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "hungarian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC551ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "hungarian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "hungarian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "hungarian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC551ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "hungarian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "hungarian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC551ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "hungarian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "hungarian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "hungarian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2020,
+  "fileid": "LC551ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "hungarian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "hungarian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC551ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "hungarian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "hungarian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "hungarian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC551ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "hungarian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "hungarian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "hungarian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC551ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "hungarian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "hungarian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "hungarian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC551ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "hungarian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "hungarian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC551ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "hungarian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "hungarian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "hungarian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC551ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "hungarian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "hungarian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "hungarian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC551ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "hungarian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "hungarian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC551ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "hungarian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "hungarian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC551ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "hungarian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "hungarian-0-1"
+   }
+  ]
+ },
+ {
   "subjectId": "irish",
   "level": "higher",
   "lang": "iv",
@@ -30236,6 +37666,4470 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
   ]
  },
  {
+  "subjectId": "italian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC013ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "7",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "8",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "9",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "10",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "11",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "12",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "13",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "14",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "15",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "16",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "17",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "18",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "19",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "20",
+    "primary": "italian-5-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "italian",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2018,
+  "fileid": "LC013ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "7",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "8",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "9",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "10",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "11",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "12",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "13",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "14",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "15",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "16",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "17",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "18",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "19",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "20",
+    "primary": "italian-5-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "italian",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC013GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "2",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "3",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "4",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "5",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "italian-5-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "italian",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2018,
+  "fileid": "LC013GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "2",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "3",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "4",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "6",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "7",
+    "primary": "italian-6-5"
+   },
+   {
+    "n": "8",
+    "primary": "italian-6-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "italian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC013ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "7",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "8",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "9",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "10",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "11",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "12",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "13",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "14",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "15",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "16",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "17",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "18",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "19",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "20",
+    "primary": "italian-5-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "italian",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC013GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "2",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "3",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "4",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "5",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "italian-5-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "italian",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2017,
+  "fileid": "LC013GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "2",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "3",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "4",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "5",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "italian-5-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "italian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC013ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "7",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "8",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "9",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "10",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "11",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "12",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "13",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "14",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "15",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "16",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "17",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "18",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "19",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "20",
+    "primary": "italian-5-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "italian",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC013ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "7",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "8",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "9",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "10",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "11",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "12",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "13",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "14",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "15",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "16",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "17",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "18",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "19",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "20",
+    "primary": "italian-5-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "italian",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC013GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "2",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "3",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "4",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "5",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "italian-5-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "italian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC013ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "7",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "8",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "9",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "10",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "11",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "12",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "13",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "14",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "15",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "16",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "17",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "18",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "19",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "20",
+    "primary": "italian-5-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "italian",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC013ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "7",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "8",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "9",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "10",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "11",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "12",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "13",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "14",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "15",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "16",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "17",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "18",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "19",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "20",
+    "primary": "italian-5-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "italian",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC013GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "2",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "3",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "4",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "5",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "italian-5-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "italian",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC013GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "2",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "3",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "4",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "6",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "7",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "8",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "9",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "10",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "11",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "12",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "13",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "14",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "15",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "16",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "17",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "18",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "19",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "20",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "21",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "22",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "23",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "24",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "25",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "26",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "27",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "28",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "29",
+    "primary": "italian-5-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "italian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC013ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "7",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "8",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "9",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "10",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "11",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "12",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "13",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "14",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "15",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "16",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "17",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "18",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "19",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "20",
+    "primary": "italian-5-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "italian",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC013ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "7",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "8",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "9",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "10",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "11",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "12",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "13",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "14",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "15",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "16",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "17",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "18",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "19",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "20",
+    "primary": "italian-5-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "italian",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC013GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "2",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "3",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "4",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "5",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "italian-5-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "italian",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC013GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "2",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "3",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "4",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "5",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "italian-5-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "italian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC013ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "7",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "8",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "9",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "10",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "11",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "12",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "13",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "14",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "15",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "16",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "17",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "18",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "19",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "20",
+    "primary": "italian-5-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "italian",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC013GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "2",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "3",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "4",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "5",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "italian-5-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "italian",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2013,
+  "fileid": "LC013GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "2",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "3",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "4",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "5",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "italian-5-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "italian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC013ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "7",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "8",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "9",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "10",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "11",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "12",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "13",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "14",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "15",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "16",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "17",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "18",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "19",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "20",
+    "primary": "italian-5-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "italian",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2012,
+  "fileid": "LC013ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "7",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "8",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "9",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "10",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "11",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "12",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "13",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "14",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "15",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "16",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "17",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "18",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "19",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "20",
+    "primary": "italian-5-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "italian",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC013GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "2",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "3",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "4",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "5",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "italian-5-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "italian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC013ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "7",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "8",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "9",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "10",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "11",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "12",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "13",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "14",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "15",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "16",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "17",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "18",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "19",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "20",
+    "primary": "italian-5-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "italian",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2011,
+  "fileid": "LC013ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "7",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "8",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "9",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "10",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "11",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "12",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "13",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "14",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "15",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "16",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "17",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "18",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "19",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "20",
+    "primary": "italian-5-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "italian",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC013GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "2",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "3",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "4",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "5",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "italian-5-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "italian",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2011,
+  "fileid": "LC013GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "2",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "3",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "4",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "5",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "italian-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "italian-5-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "italian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC013ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "7",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "8",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "9",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "10",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "11",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "12",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "13",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "14",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "15",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "16",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "17",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "18",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "19",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "20",
+    "primary": "italian-5-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "italian",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2010,
+  "fileid": "LC013ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "italian-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "7",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "8",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "9",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "10",
+    "primary": "italian-5-1"
+   },
+   {
+    "n": "11",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "12",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "13",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "14",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "15",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "16",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "17",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "18",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "19",
+    "primary": "italian-5-2"
+   },
+   {
+    "n": "20",
+    "primary": "italian-5-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "italian",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC013GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "2",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "3",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "4",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "6",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "7",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "8",
+    "primary": "italian-5-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "italian",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2010,
+  "fileid": "LC013GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "2",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "3",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "4",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "6",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "7",
+    "primary": "italian-5-3"
+   },
+   {
+    "n": "8",
+    "primary": "italian-5-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC058ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "10",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "11",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "12",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "13",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "14",
+    "primary": "japanese-5-3"
+   },
+   {
+    "n": "15",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "16",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "17",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "18",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "19",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "20",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "21",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "22",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "23",
+    "primary": "japanese-5-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2018,
+  "fileid": "LC058ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "10",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "11",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "12",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "13",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "14",
+    "primary": "japanese-5-3"
+   },
+   {
+    "n": "15",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "16",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "17",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "18",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "19",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "20",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "21",
+    "primary": "japanese-5-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC058GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2018,
+  "fileid": "LC058GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "10",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "11",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "12",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "13",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "14",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "15",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "16",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "17",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "18",
+    "primary": "japanese-5-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC058ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "10",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "11",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "12",
+    "primary": "japanese-5-3"
+   },
+   {
+    "n": "13",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "14",
+    "primary": "japanese-5-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2017,
+  "fileid": "LC058ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "10",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "11",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "12",
+    "primary": "japanese-5-3"
+   },
+   {
+    "n": "13",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "14",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "15",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "16",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "17",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "18",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "19",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "20",
+    "primary": "japanese-5-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC058GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "10",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "11",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "12",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "13",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "14",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "15",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "16",
+    "primary": "japanese-5-5"
+   },
+   {
+    "n": "17",
+    "primary": "japanese-5-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2017,
+  "fileid": "LC058GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-5-6"
+   },
+   {
+    "n": "10",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "11",
+    "primary": "japanese-5-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC058ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "10",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "11",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "12",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "13",
+    "primary": "japanese-5-3"
+   },
+   {
+    "n": "14",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "15",
+    "primary": "japanese-5-5"
+   },
+   {
+    "n": "16",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "17",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "18",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "19",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "20",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "21",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "22",
+    "primary": "japanese-5-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC058ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "10",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "11",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "12",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "13",
+    "primary": "japanese-5-3"
+   },
+   {
+    "n": "14",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "15",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "16",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "17",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "18",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "19",
+    "primary": "japanese-5-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC058GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "10",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "11",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "12",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "13",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "14",
+    "primary": "japanese-5-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC058GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "10",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "11",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "12",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "13",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "14",
+    "primary": "japanese-5-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC058ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "10",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "11",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "12",
+    "primary": "japanese-5-3"
+   },
+   {
+    "n": "13",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "14",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "15",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "16",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "17",
+    "primary": "japanese-5-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC058ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-3"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC058GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "10",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "11",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "12",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "13",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "14",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "15",
+    "primary": "japanese-5-5"
+   },
+   {
+    "n": "16",
+    "primary": "japanese-5-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC058GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "10",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "11",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "12",
+    "primary": "japanese-5-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC058ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC058ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "10",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "11",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "12",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "13",
+    "primary": "japanese-5-3"
+   },
+   {
+    "n": "14",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "15",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "16",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "17",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "18",
+    "primary": "japanese-5-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC058GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-5-5"
+   },
+   {
+    "n": "10",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "11",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "12",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "13",
+    "primary": "japanese-5-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC058GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "10",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "11",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "12",
+    "primary": "japanese-5-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC058ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2013,
+  "fileid": "LC058ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC058GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2013,
+  "fileid": "LC058GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC058ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "10",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "11",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "12",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "13",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "14",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "15",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "16",
+    "primary": "japanese-5-3"
+   },
+   {
+    "n": "17",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "18",
+    "primary": "japanese-5-5"
+   },
+   {
+    "n": "19",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "20",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "21",
+    "primary": "japanese-5-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2012,
+  "fileid": "LC058ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "10",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "11",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "12",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "13",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "14",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "15",
+    "primary": "japanese-5-3"
+   },
+   {
+    "n": "16",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "17",
+    "primary": "japanese-5-5"
+   },
+   {
+    "n": "18",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "19",
+    "primary": "japanese-5-2"
+   },
+   {
+    "n": "20",
+    "primary": "japanese-5-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC058GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "10",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "11",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "12",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "13",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "14",
+    "primary": "japanese-5-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2012,
+  "fileid": "LC058GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "10",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "11",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "12",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "13",
+    "primary": "japanese-5-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC058ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "10",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "11",
+    "primary": "japanese-5-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2011,
+  "fileid": "LC058ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-5-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC058GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2011,
+  "fileid": "LC058GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "10",
+    "primary": "japanese-5-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC058ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2010,
+  "fileid": "LC058ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-3"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-5-1"
+   },
+   {
+    "n": "10",
+    "primary": "japanese-5-6"
+   },
+   {
+    "n": "11",
+    "primary": "japanese-5-4"
+   },
+   {
+    "n": "12",
+    "primary": "japanese-5-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC058GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "10",
+    "primary": "japanese-5-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "japanese",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2010,
+  "fileid": "LC058GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "5",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "6",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "7",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "8",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "9",
+    "primary": "japanese-5-0"
+   },
+   {
+    "n": "10",
+    "primary": "japanese-5-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-applied-technology",
+  "level": "common",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "JC125CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-applied-technology-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-applied-technology-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-applied-technology-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-applied-technology",
+  "level": "common",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "JC125CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-applied-technology-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-applied-technology-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-applied-technology-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-applied-technology",
+  "level": "common",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "JC125CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-applied-technology-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-applied-technology-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-applied-technology-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-applied-technology-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-applied-technology",
+  "level": "common",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "JC125CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-applied-technology-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-applied-technology-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-applied-technology-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-applied-technology-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-applied-technology",
+  "level": "common",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "JC125CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-applied-technology-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-applied-technology-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-applied-technology-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-applied-technology",
+  "level": "common",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "JC125CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-applied-technology-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-applied-technology-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-applied-technology-0-0"
+   }
+  ]
+ },
+ {
   "subjectId": "jc-business-studies",
   "level": "common",
   "lang": "ev",
@@ -30681,6 +42575,1124 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "18",
     "primary": "jc-business-studies-0-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-classics",
+  "level": "common",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "JC106CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "14",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "15",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "16",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "17",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "18",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "19",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "20",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "21",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "22",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "23",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "24",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "25",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "26",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "27",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "28",
+    "primary": "jc-classics-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-classics",
+  "level": "common",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "JC106CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "14",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "15",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "16",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "17",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "18",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "19",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "20",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "21",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "22",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "23",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "24",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "25",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "26",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "27",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "28",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "29",
+    "primary": "jc-classics-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-classics",
+  "level": "common",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "JC106CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "14",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "15",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "16",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "17",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "18",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "19",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "20",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "21",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "22",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "23",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "24",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "25",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "26",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "27",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "28",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "29",
+    "primary": "jc-classics-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-classics",
+  "level": "common",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "JC106CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "14",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "15",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "16",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "17",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "18",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "19",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "20",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "21",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "22",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "23",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "24",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "25",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "26",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "27",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "28",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "29",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "30",
+    "primary": "jc-classics-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-classics",
+  "level": "common",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "JC106CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "14",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "15",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "16",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "17",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "18",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "19",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "20",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "21",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "22",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "23",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "24",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "25",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "26",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "27",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "28",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "29",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "30",
+    "primary": "jc-classics-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-classics",
+  "level": "common",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "JC106CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "14",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "15",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "16",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "17",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "18",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "19",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "20",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "21",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "22",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "23",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "24",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "25",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "26",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "27",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "28",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "29",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "30",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "31",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "32",
+    "primary": "jc-classics-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-classics",
+  "level": "common",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "JC106CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "14",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "15",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "16",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "17",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "18",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "19",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "20",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "21",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "22",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "23",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "24",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "25",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "26",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "27",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "28",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "29",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "30",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "31",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "32",
+    "primary": "jc-classics-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-engineering",
+  "level": "common",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "JC027CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-engineering-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-engineering-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-engineering-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-engineering-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-engineering",
+  "level": "common",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "JC027CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-engineering-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-engineering-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-engineering-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-engineering-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-engineering",
+  "level": "common",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "JC027CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-engineering-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-engineering-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-engineering-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-engineering-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-engineering",
+  "level": "common",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "JC027CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-engineering-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-engineering-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-engineering-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-engineering-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-engineering",
+  "level": "common",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "JC027CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-engineering-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-engineering-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-engineering-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-engineering-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-engineering",
+  "level": "common",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "JC027CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-engineering-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-engineering-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-engineering-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-engineering-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-engineering",
+  "level": "common",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "JC027CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-engineering-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-engineering-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-engineering-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-engineering-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-engineering",
+  "level": "common",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "JC027CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-engineering-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-engineering-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-engineering-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-engineering-0-0"
    }
   ]
  },
@@ -33089,6 +46101,440 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
   ]
  },
  {
+  "subjectId": "jc-home-economics",
+  "level": "common",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "JC052CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-home-economics-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-home-economics-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-home-economics-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-home-economics",
+  "level": "common",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "JC052CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-home-economics-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-home-economics-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-home-economics-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-home-economics",
+  "level": "common",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "JC052CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-home-economics-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-home-economics-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-home-economics-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-home-economics",
+  "level": "common",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "JC052CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-home-economics-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-home-economics-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-home-economics-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-home-economics",
+  "level": "common",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "JC052CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-home-economics-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-home-economics-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-home-economics-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-home-economics",
+  "level": "common",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "JC052CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-home-economics-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-home-economics-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-home-economics-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-home-economics",
+  "level": "common",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "JC052CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-home-economics-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-home-economics-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-home-economics-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-home-economics-1-0"
+   }
+  ]
+ },
+ {
   "subjectId": "jc-irish",
   "level": "higher",
   "lang": "iv",
@@ -33229,6 +46675,406 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "7",
     "primary": "jc-irish-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-irish-t1",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "JC083ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-irish-t1-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-irish-t1-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-irish-t1-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-irish-t1-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-irish-t1-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-irish-t1-4-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-irish-t1-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "jc-irish-t1-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-irish-t1-4-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-irish-t1-2-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-irish-t1",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "JC083GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-irish-t1-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-irish-t1-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-irish-t1-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-irish-t1-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "jc-irish-t1-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "jc-irish-t1-1-1"
+   },
+   {
+    "n": "7",
+    "primary": "jc-irish-t1-2-2"
+   },
+   {
+    "n": "8",
+    "primary": "jc-irish-t1-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-irish-t1-4-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-irish-t1-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-irish-t1",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "JC083ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-irish-t1-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-irish-t1-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-irish-t1-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-irish-t1-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-irish-t1-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-irish-t1-4-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-irish-t1-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "jc-irish-t1-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-irish-t1-4-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-irish-t1-2-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-irish-t1",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "JC083GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-irish-t1-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-irish-t1-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-irish-t1-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-irish-t1-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "jc-irish-t1-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "jc-irish-t1-1-1"
+   },
+   {
+    "n": "7",
+    "primary": "jc-irish-t1-2-2"
+   },
+   {
+    "n": "8",
+    "primary": "jc-irish-t1-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-irish-t1-4-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-irish-t1-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-irish-t1",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "JC083ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-irish-t1-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-irish-t1-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-irish-t1-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-irish-t1-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-irish-t1-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-irish-t1-4-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-irish-t1-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "jc-irish-t1-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-irish-t1-4-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-irish-t1-2-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-irish-t1",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "JC083GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-irish-t1-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-irish-t1-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-irish-t1-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-irish-t1-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "jc-irish-t1-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "jc-irish-t1-1-1"
+   },
+   {
+    "n": "7",
+    "primary": "jc-irish-t1-2-2"
+   },
+   {
+    "n": "8",
+    "primary": "jc-irish-t1-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-irish-t1-4-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-irish-t1-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-irish-t1",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "JC083ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-irish-t1-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-irish-t1-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-irish-t1-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-irish-t1-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-irish-t1-2-2"
+   },
+   {
+    "n": "6",
+    "primary": "jc-irish-t1-4-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-irish-t1-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "jc-irish-t1-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-irish-t1-4-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-irish-t1-2-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-irish-t1",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "JC083GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-irish-t1-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-irish-t1-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-irish-t1-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-irish-t1-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "jc-irish-t1-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-irish-t1-1-1"
+   },
+   {
+    "n": "7",
+    "primary": "jc-irish-t1-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "jc-irish-t1-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-irish-t1-4-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-irish-t1-3-0"
    }
   ]
  },
@@ -33397,6 +47243,146 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "7",
     "primary": "jc-italian-0-7"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-jewish-studies",
+  "level": "common",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "JC565CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-jewish-studies-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-jewish-studies-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-jewish-studies-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-jewish-studies-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-jewish-studies-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-jewish-studies-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-jewish-studies-1-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-jewish-studies-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-jewish-studies-1-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-jewish-studies-1-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-jewish-studies-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-jewish-studies-2-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-jewish-studies-2-0"
+   },
+   {
+    "n": "14",
+    "primary": "jc-jewish-studies-2-0"
+   },
+   {
+    "n": "15",
+    "primary": "jc-jewish-studies-2-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-jewish-studies",
+  "level": "common",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "JC565CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-jewish-studies-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-jewish-studies-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-jewish-studies-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-jewish-studies-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-jewish-studies-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-jewish-studies-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-jewish-studies-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-jewish-studies-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-jewish-studies-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-jewish-studies-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-jewish-studies-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-jewish-studies-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-jewish-studies-2-0"
+   },
+   {
+    "n": "14",
+    "primary": "jc-jewish-studies-1-0"
+   },
+   {
+    "n": "15",
+    "primary": "jc-jewish-studies-1-0"
    }
   ]
  },
@@ -33891,6 +47877,736 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
     "n": "13",
     "primary": "jc-mathematics-3-2",
     "secondary": "jc-mathematics-3-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-music",
+  "level": "common",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "JC046CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-music-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-music-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-music-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-music-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-music-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-music-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-music",
+  "level": "common",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "JC046CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-music-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-music-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-music-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-music-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-music-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-music-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-music",
+  "level": "common",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "JC046CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-music-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-music-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-music-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-music-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-music-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-music-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-music",
+  "level": "common",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "JC046CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-music-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-music-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-music-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-music-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-music-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-music-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-music",
+  "level": "common",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "JC046CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-music-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-music-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-music-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-music-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-music-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-music-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-religious-education",
+  "level": "common",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "JC223CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-religious-education-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-religious-education-2-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-religious-education-2-0"
+   },
+   {
+    "n": "14",
+    "primary": "jc-religious-education-2-0"
+   },
+   {
+    "n": "15",
+    "primary": "jc-religious-education-2-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-religious-education",
+  "level": "common",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "JC223CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-religious-education-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-religious-education-2-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-religious-education-2-0"
+   },
+   {
+    "n": "14",
+    "primary": "jc-religious-education-2-0"
+   },
+   {
+    "n": "15",
+    "primary": "jc-religious-education-2-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-religious-education",
+  "level": "common",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "JC223CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-religious-education-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-religious-education-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "14",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "15",
+    "primary": "jc-religious-education-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-religious-education",
+  "level": "common",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "JC223CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-religious-education-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-religious-education-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "14",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "15",
+    "primary": "jc-religious-education-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-religious-education",
+  "level": "common",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "JC223CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-religious-education-2-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-religious-education-2-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-religious-education-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-religious-education-2-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-religious-education-2-0"
+   },
+   {
+    "n": "14",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "15",
+    "primary": "jc-religious-education-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-religious-education",
+  "level": "common",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "JC223CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-religious-education-2-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-religious-education-2-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-religious-education-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-religious-education-2-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-religious-education-2-0"
+   },
+   {
+    "n": "14",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "15",
+    "primary": "jc-religious-education-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-religious-education",
+  "level": "common",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "JC223CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-religious-education-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-religious-education-2-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-religious-education-2-0"
+   },
+   {
+    "n": "14",
+    "primary": "jc-religious-education-2-0"
+   },
+   {
+    "n": "15",
+    "primary": "jc-religious-education-2-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-religious-education",
+  "level": "common",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "JC223CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-religious-education-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-religious-education-1-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-religious-education-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-religious-education-2-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-religious-education-2-0"
+   },
+   {
+    "n": "14",
+    "primary": "jc-religious-education-2-0"
+   },
+   {
+    "n": "15",
+    "primary": "jc-religious-education-2-0"
    }
   ]
  },
@@ -34961,6 +49677,9128 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "18",
     "primary": "jc-spanish-0-8"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-wood-technology",
+  "level": "common",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "JC126CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-wood-technology-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-wood-technology-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-wood-technology-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-wood-technology-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-wood-technology",
+  "level": "common",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "JC126CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-wood-technology-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-wood-technology-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-wood-technology-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-wood-technology-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-wood-technology",
+  "level": "common",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "JC126CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-wood-technology-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-wood-technology-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-wood-technology-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-wood-technology-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-wood-technology-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-wood-technology",
+  "level": "common",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "JC126CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-wood-technology-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-wood-technology-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-wood-technology-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-wood-technology-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-wood-technology-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-wood-technology",
+  "level": "common",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "JC126CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-wood-technology-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-wood-technology-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-wood-technology-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-wood-technology-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-wood-technology",
+  "level": "common",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "JC126CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-wood-technology-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-wood-technology-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-wood-technology-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-wood-technology-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-wood-technology",
+  "level": "common",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "JC126CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-wood-technology-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-wood-technology-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-wood-technology-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-wood-technology-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-wood-technology",
+  "level": "common",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "JC126CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-wood-technology-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-wood-technology-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-wood-technology-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-wood-technology-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "latin",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC006GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "latin-3-0",
+    "secondary": "latin-3-1"
+   },
+   {
+    "n": "2",
+    "primary": "latin-3-2"
+   },
+   {
+    "n": "3",
+    "primary": "latin-3-3",
+    "secondary": "latin-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "latin-3-5"
+   },
+   {
+    "n": "5",
+    "primary": "latin-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "latin",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC006GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "latin-3-0",
+    "secondary": "latin-3-1"
+   },
+   {
+    "n": "2",
+    "primary": "latin-3-2"
+   },
+   {
+    "n": "3",
+    "primary": "latin-3-3",
+    "secondary": "latin-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "latin-3-5"
+   },
+   {
+    "n": "5",
+    "primary": "latin-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "latin",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2018,
+  "fileid": "LC006GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "latin-3-0",
+    "secondary": "latin-3-1"
+   },
+   {
+    "n": "2",
+    "primary": "latin-3-2"
+   },
+   {
+    "n": "3",
+    "primary": "latin-3-3",
+    "secondary": "latin-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "latin-3-5"
+   },
+   {
+    "n": "5",
+    "primary": "latin-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "latin",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC006GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "latin-3-0",
+    "secondary": "latin-3-1"
+   },
+   {
+    "n": "2",
+    "primary": "latin-3-2"
+   },
+   {
+    "n": "3",
+    "primary": "latin-3-3",
+    "secondary": "latin-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "latin-3-5"
+   },
+   {
+    "n": "5",
+    "primary": "latin-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "latin",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2017,
+  "fileid": "LC006GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "latin-3-0",
+    "secondary": "latin-3-1"
+   },
+   {
+    "n": "2",
+    "primary": "latin-3-2"
+   },
+   {
+    "n": "3",
+    "primary": "latin-3-3",
+    "secondary": "latin-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "latin-3-5"
+   },
+   {
+    "n": "5",
+    "primary": "latin-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "latin",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC006GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "latin-3-0",
+    "secondary": "latin-3-1"
+   },
+   {
+    "n": "2",
+    "primary": "latin-3-2"
+   },
+   {
+    "n": "3",
+    "primary": "latin-3-3",
+    "secondary": "latin-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "latin-3-5"
+   },
+   {
+    "n": "5",
+    "primary": "latin-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "latin",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC006GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "latin-3-0",
+    "secondary": "latin-3-1"
+   },
+   {
+    "n": "2",
+    "primary": "latin-3-2"
+   },
+   {
+    "n": "3",
+    "primary": "latin-3-3",
+    "secondary": "latin-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "latin-3-5"
+   },
+   {
+    "n": "5",
+    "primary": "latin-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "latin",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC006GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "latin-3-0",
+    "secondary": "latin-3-1"
+   },
+   {
+    "n": "2",
+    "primary": "latin-3-2"
+   },
+   {
+    "n": "3",
+    "primary": "latin-3-3",
+    "secondary": "latin-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "latin-3-5"
+   },
+   {
+    "n": "5",
+    "primary": "latin-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "latin",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC006GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "latin-3-0",
+    "secondary": "latin-3-1"
+   },
+   {
+    "n": "2",
+    "primary": "latin-3-2"
+   },
+   {
+    "n": "3",
+    "primary": "latin-3-3",
+    "secondary": "latin-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "latin-3-5"
+   },
+   {
+    "n": "5",
+    "primary": "latin-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "latin",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2013,
+  "fileid": "LC006GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "latin-3-0",
+    "secondary": "latin-3-1"
+   },
+   {
+    "n": "2",
+    "primary": "latin-3-2"
+   },
+   {
+    "n": "3",
+    "primary": "latin-3-3",
+    "secondary": "latin-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "latin-3-5"
+   },
+   {
+    "n": "5",
+    "primary": "latin-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "latin",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2012,
+  "fileid": "LC006GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "latin-3-0",
+    "secondary": "latin-3-1"
+   },
+   {
+    "n": "2",
+    "primary": "latin-3-2"
+   },
+   {
+    "n": "3",
+    "primary": "latin-3-3",
+    "secondary": "latin-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "latin-3-5"
+   },
+   {
+    "n": "5",
+    "primary": "latin-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "latin",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2010,
+  "fileid": "LC006GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "latin-3-0",
+    "secondary": "latin-3-1"
+   },
+   {
+    "n": "2",
+    "primary": "latin-3-2"
+   },
+   {
+    "n": "3",
+    "primary": "latin-3-3",
+    "secondary": "latin-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "latin-3-5"
+   },
+   {
+    "n": "5",
+    "primary": "latin-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "latvian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC549ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "latvian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "latvian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "latvian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC549ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "latvian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "latvian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "latvian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC549ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "latvian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "latvian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "latvian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC549ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "latvian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "latvian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "latvian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC549ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "latvian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "latvian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "latvian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-active-leisure-studies",
+  "level": "common",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LB848CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-active-leisure-studies-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-active-leisure-studies-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-active-leisure-studies-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-active-leisure-studies-3-0"
+   },
+   {
+    "n": "11",
+    "primary": "lca-active-leisure-studies-4-0"
+   },
+   {
+    "n": "12",
+    "primary": "lca-active-leisure-studies-4-0"
+   },
+   {
+    "n": "13",
+    "primary": "lca-active-leisure-studies-5-0"
+   },
+   {
+    "n": "14",
+    "primary": "lca-active-leisure-studies-5-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-active-leisure-studies",
+  "level": "common",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LB848CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-active-leisure-studies-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-active-leisure-studies-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-active-leisure-studies-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-active-leisure-studies-3-0"
+   },
+   {
+    "n": "11",
+    "primary": "lca-active-leisure-studies-4-0"
+   },
+   {
+    "n": "12",
+    "primary": "lca-active-leisure-studies-4-0"
+   },
+   {
+    "n": "13",
+    "primary": "lca-active-leisure-studies-5-0"
+   },
+   {
+    "n": "14",
+    "primary": "lca-active-leisure-studies-5-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-active-leisure-studies",
+  "level": "common",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LB848CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-active-leisure-studies-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-active-leisure-studies-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-active-leisure-studies-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-active-leisure-studies-3-0"
+   },
+   {
+    "n": "11",
+    "primary": "lca-active-leisure-studies-4-0"
+   },
+   {
+    "n": "12",
+    "primary": "lca-active-leisure-studies-4-0"
+   },
+   {
+    "n": "13",
+    "primary": "lca-active-leisure-studies-5-0"
+   },
+   {
+    "n": "14",
+    "primary": "lca-active-leisure-studies-5-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-active-leisure-studies",
+  "level": "common",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LB848CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-active-leisure-studies-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-active-leisure-studies-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-active-leisure-studies-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-active-leisure-studies-3-0"
+   },
+   {
+    "n": "11",
+    "primary": "lca-active-leisure-studies-4-0"
+   },
+   {
+    "n": "12",
+    "primary": "lca-active-leisure-studies-4-0"
+   },
+   {
+    "n": "13",
+    "primary": "lca-active-leisure-studies-5-0"
+   },
+   {
+    "n": "14",
+    "primary": "lca-active-leisure-studies-5-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-active-leisure-studies",
+  "level": "common",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LB848CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-active-leisure-studies-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-active-leisure-studies-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-active-leisure-studies-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-active-leisure-studies-3-0"
+   },
+   {
+    "n": "11",
+    "primary": "lca-active-leisure-studies-4-0"
+   },
+   {
+    "n": "12",
+    "primary": "lca-active-leisure-studies-4-0"
+   },
+   {
+    "n": "13",
+    "primary": "lca-active-leisure-studies-5-0"
+   },
+   {
+    "n": "14",
+    "primary": "lca-active-leisure-studies-5-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-active-leisure-studies",
+  "level": "common",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LB848CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-active-leisure-studies-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-active-leisure-studies-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-active-leisure-studies-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-active-leisure-studies-3-0"
+   },
+   {
+    "n": "11",
+    "primary": "lca-active-leisure-studies-4-0"
+   },
+   {
+    "n": "12",
+    "primary": "lca-active-leisure-studies-4-0"
+   },
+   {
+    "n": "13",
+    "primary": "lca-active-leisure-studies-5-0"
+   },
+   {
+    "n": "14",
+    "primary": "lca-active-leisure-studies-5-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-active-leisure-studies",
+  "level": "common",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LB848CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-active-leisure-studies-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-active-leisure-studies-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-active-leisure-studies-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-active-leisure-studies-3-0"
+   },
+   {
+    "n": "11",
+    "primary": "lca-active-leisure-studies-4-0"
+   },
+   {
+    "n": "12",
+    "primary": "lca-active-leisure-studies-4-0"
+   },
+   {
+    "n": "13",
+    "primary": "lca-active-leisure-studies-5-0"
+   },
+   {
+    "n": "14",
+    "primary": "lca-active-leisure-studies-5-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-active-leisure-studies",
+  "level": "common",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LB848CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-active-leisure-studies-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-active-leisure-studies-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-active-leisure-studies-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-active-leisure-studies-3-0"
+   },
+   {
+    "n": "11",
+    "primary": "lca-active-leisure-studies-4-0"
+   },
+   {
+    "n": "12",
+    "primary": "lca-active-leisure-studies-4-0"
+   },
+   {
+    "n": "13",
+    "primary": "lca-active-leisure-studies-5-0"
+   },
+   {
+    "n": "14",
+    "primary": "lca-active-leisure-studies-5-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-active-leisure-studies",
+  "level": "common",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LB848CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-active-leisure-studies-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-active-leisure-studies-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-active-leisure-studies-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-active-leisure-studies-3-0"
+   },
+   {
+    "n": "11",
+    "primary": "lca-active-leisure-studies-4-0"
+   },
+   {
+    "n": "12",
+    "primary": "lca-active-leisure-studies-4-0"
+   },
+   {
+    "n": "13",
+    "primary": "lca-active-leisure-studies-5-0"
+   },
+   {
+    "n": "14",
+    "primary": "lca-active-leisure-studies-5-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-active-leisure-studies",
+  "level": "common",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LB848CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-active-leisure-studies-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-active-leisure-studies-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-active-leisure-studies-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-active-leisure-studies-3-0"
+   },
+   {
+    "n": "11",
+    "primary": "lca-active-leisure-studies-4-0"
+   },
+   {
+    "n": "12",
+    "primary": "lca-active-leisure-studies-4-0"
+   },
+   {
+    "n": "13",
+    "primary": "lca-active-leisure-studies-5-0"
+   },
+   {
+    "n": "14",
+    "primary": "lca-active-leisure-studies-5-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-active-leisure-studies",
+  "level": "common",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LB848CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-active-leisure-studies-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-active-leisure-studies-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-active-leisure-studies-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-active-leisure-studies-3-0"
+   },
+   {
+    "n": "11",
+    "primary": "lca-active-leisure-studies-4-0"
+   },
+   {
+    "n": "12",
+    "primary": "lca-active-leisure-studies-4-0"
+   },
+   {
+    "n": "13",
+    "primary": "lca-active-leisure-studies-5-0"
+   },
+   {
+    "n": "14",
+    "primary": "lca-active-leisure-studies-5-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-active-leisure-studies",
+  "level": "common",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LB848CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-active-leisure-studies-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-active-leisure-studies-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-active-leisure-studies-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-active-leisure-studies-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-active-leisure-studies-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-active-leisure-studies-3-0"
+   },
+   {
+    "n": "11",
+    "primary": "lca-active-leisure-studies-4-0"
+   },
+   {
+    "n": "12",
+    "primary": "lca-active-leisure-studies-4-0"
+   },
+   {
+    "n": "13",
+    "primary": "lca-active-leisure-studies-5-0"
+   },
+   {
+    "n": "14",
+    "primary": "lca-active-leisure-studies-5-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-agriculture-horticulture",
+  "level": "common",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LB832CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-agriculture-horticulture-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-agriculture-horticulture-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-agriculture-horticulture-1-1"
+   },
+   {
+    "n": "4",
+    "primary": "lca-agriculture-horticulture-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "lca-agriculture-horticulture-1-3"
+   },
+   {
+    "n": "6",
+    "primary": "lca-agriculture-horticulture-1-4"
+   },
+   {
+    "n": "7",
+    "primary": "lca-agriculture-horticulture-1-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-agriculture-horticulture",
+  "level": "common",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LB832CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-agriculture-horticulture-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-agriculture-horticulture-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-agriculture-horticulture-1-1"
+   },
+   {
+    "n": "4",
+    "primary": "lca-agriculture-horticulture-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "lca-agriculture-horticulture-1-3"
+   },
+   {
+    "n": "6",
+    "primary": "lca-agriculture-horticulture-1-4"
+   },
+   {
+    "n": "7",
+    "primary": "lca-agriculture-horticulture-1-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-agriculture-horticulture",
+  "level": "common",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LB832CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-agriculture-horticulture-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-agriculture-horticulture-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-agriculture-horticulture-1-1"
+   },
+   {
+    "n": "4",
+    "primary": "lca-agriculture-horticulture-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "lca-agriculture-horticulture-1-3"
+   },
+   {
+    "n": "6",
+    "primary": "lca-agriculture-horticulture-1-4"
+   },
+   {
+    "n": "7",
+    "primary": "lca-agriculture-horticulture-1-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-agriculture-horticulture",
+  "level": "common",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LB832CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-agriculture-horticulture-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-agriculture-horticulture-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-agriculture-horticulture-1-1"
+   },
+   {
+    "n": "4",
+    "primary": "lca-agriculture-horticulture-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "lca-agriculture-horticulture-1-3"
+   },
+   {
+    "n": "6",
+    "primary": "lca-agriculture-horticulture-1-4"
+   },
+   {
+    "n": "7",
+    "primary": "lca-agriculture-horticulture-1-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-agriculture-horticulture",
+  "level": "common",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LB832CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-agriculture-horticulture-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-agriculture-horticulture-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-agriculture-horticulture-1-1"
+   },
+   {
+    "n": "4",
+    "primary": "lca-agriculture-horticulture-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "lca-agriculture-horticulture-1-3"
+   },
+   {
+    "n": "6",
+    "primary": "lca-agriculture-horticulture-1-4"
+   },
+   {
+    "n": "7",
+    "primary": "lca-agriculture-horticulture-1-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-agriculture-horticulture",
+  "level": "common",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LB832CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-agriculture-horticulture-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-agriculture-horticulture-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-agriculture-horticulture-1-1"
+   },
+   {
+    "n": "4",
+    "primary": "lca-agriculture-horticulture-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "lca-agriculture-horticulture-1-3"
+   },
+   {
+    "n": "6",
+    "primary": "lca-agriculture-horticulture-1-4"
+   },
+   {
+    "n": "7",
+    "primary": "lca-agriculture-horticulture-1-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-childcare-community-care",
+  "level": "common",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LB846CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-childcare-community-care-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-childcare-community-care-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-childcare-community-care-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-childcare-community-care-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-childcare-community-care-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-childcare-community-care-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-childcare-community-care-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-childcare-community-care-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-childcare-community-care-4-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-childcare-community-care-4-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-childcare-community-care",
+  "level": "common",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LB846CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-childcare-community-care-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-childcare-community-care-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-childcare-community-care-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-childcare-community-care-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-childcare-community-care-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-childcare-community-care-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-childcare-community-care-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-childcare-community-care-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-childcare-community-care-4-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-childcare-community-care",
+  "level": "common",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LB846CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-childcare-community-care-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-childcare-community-care-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-childcare-community-care-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-childcare-community-care-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-childcare-community-care-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-childcare-community-care-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-childcare-community-care-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-childcare-community-care-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-childcare-community-care-4-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-childcare-community-care",
+  "level": "common",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LB846CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-childcare-community-care-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-childcare-community-care-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-childcare-community-care-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-childcare-community-care-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-childcare-community-care-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-childcare-community-care-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-childcare-community-care-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-childcare-community-care-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-childcare-community-care-4-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-childcare-community-care",
+  "level": "common",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LB846CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-childcare-community-care-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-childcare-community-care-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-childcare-community-care-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-childcare-community-care-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-childcare-community-care-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-childcare-community-care-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-childcare-community-care-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-childcare-community-care-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-childcare-community-care-4-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-childcare-community-care",
+  "level": "common",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LB846CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-childcare-community-care-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-childcare-community-care-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-childcare-community-care-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-childcare-community-care-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-childcare-community-care-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-childcare-community-care-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-childcare-community-care-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-childcare-community-care-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-childcare-community-care-4-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-childcare-community-care",
+  "level": "common",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LB846CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-childcare-community-care-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-childcare-community-care-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-childcare-community-care-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-childcare-community-care-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-childcare-community-care-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-childcare-community-care-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-childcare-community-care-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-childcare-community-care-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-childcare-community-care-4-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-childcare-community-care-4-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-childcare-community-care",
+  "level": "common",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LB846CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-childcare-community-care-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-childcare-community-care-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-childcare-community-care-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-childcare-community-care-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-childcare-community-care-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-childcare-community-care-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-childcare-community-care-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-childcare-community-care-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-childcare-community-care-4-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-childcare-community-care-4-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-childcare-community-care",
+  "level": "common",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LB846CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-childcare-community-care-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-childcare-community-care-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-childcare-community-care-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-childcare-community-care-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-childcare-community-care-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-childcare-community-care-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-childcare-community-care-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-childcare-community-care-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-childcare-community-care-4-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-childcare-community-care-4-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-childcare-community-care",
+  "level": "common",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LB846CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-childcare-community-care-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-childcare-community-care-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-childcare-community-care-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-childcare-community-care-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-childcare-community-care-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-childcare-community-care-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-childcare-community-care-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-childcare-community-care-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-childcare-community-care-4-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-childcare-community-care-4-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-crafts-and-design",
+  "level": "common",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LB835CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-crafts-and-design-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-crafts-and-design-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "lca-crafts-and-design-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "lca-crafts-and-design-0-2"
+   },
+   {
+    "n": "5",
+    "primary": "lca-crafts-and-design-0-4"
+   },
+   {
+    "n": "6",
+    "primary": "lca-crafts-and-design-0-3"
+   },
+   {
+    "n": "7",
+    "primary": "lca-crafts-and-design-0-5"
+   },
+   {
+    "n": "8",
+    "primary": "lca-crafts-and-design-0-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-crafts-and-design",
+  "level": "common",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LB835CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-crafts-and-design-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-crafts-and-design-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-crafts-and-design-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "lca-crafts-and-design-0-2"
+   },
+   {
+    "n": "5",
+    "primary": "lca-crafts-and-design-0-3"
+   },
+   {
+    "n": "6",
+    "primary": "lca-crafts-and-design-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "lca-crafts-and-design-0-5"
+   },
+   {
+    "n": "8",
+    "primary": "lca-crafts-and-design-0-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-crafts-and-design",
+  "level": "common",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LB835CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-crafts-and-design-0-4"
+   },
+   {
+    "n": "2",
+    "primary": "lca-crafts-and-design-0-2",
+    "secondary": "lca-crafts-and-design-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-crafts-and-design-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "lca-crafts-and-design-0-2"
+   },
+   {
+    "n": "5",
+    "primary": "lca-crafts-and-design-0-7"
+   },
+   {
+    "n": "6",
+    "primary": "lca-crafts-and-design-0-3"
+   },
+   {
+    "n": "7",
+    "primary": "lca-crafts-and-design-0-6"
+   },
+   {
+    "n": "8",
+    "primary": "lca-crafts-and-design-0-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-crafts-and-design",
+  "level": "common",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LB835CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-crafts-and-design-0-7",
+    "secondary": "lca-crafts-and-design-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-crafts-and-design-0-4"
+   },
+   {
+    "n": "3",
+    "primary": "lca-crafts-and-design-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "lca-crafts-and-design-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "lca-crafts-and-design-0-7"
+   },
+   {
+    "n": "6",
+    "primary": "lca-crafts-and-design-0-4"
+   },
+   {
+    "n": "7",
+    "primary": "lca-crafts-and-design-0-5"
+   },
+   {
+    "n": "8",
+    "primary": "lca-crafts-and-design-0-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-crafts-and-design",
+  "level": "common",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LB835CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-crafts-and-design-0-2",
+    "secondary": "lca-crafts-and-design-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-crafts-and-design-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-crafts-and-design-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "lca-crafts-and-design-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "lca-crafts-and-design-0-7"
+   },
+   {
+    "n": "6",
+    "primary": "lca-crafts-and-design-0-3"
+   },
+   {
+    "n": "7",
+    "primary": "lca-crafts-and-design-0-5"
+   },
+   {
+    "n": "8",
+    "primary": "lca-crafts-and-design-0-5",
+    "secondary": "lca-crafts-and-design-0-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-crafts-and-design",
+  "level": "common",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LB835CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-crafts-and-design-0-2"
+   },
+   {
+    "n": "2",
+    "primary": "lca-crafts-and-design-0-4"
+   },
+   {
+    "n": "3",
+    "primary": "lca-crafts-and-design-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "lca-crafts-and-design-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "lca-crafts-and-design-0-4"
+   },
+   {
+    "n": "6",
+    "primary": "lca-crafts-and-design-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "lca-crafts-and-design-0-5"
+   },
+   {
+    "n": "8",
+    "primary": "lca-crafts-and-design-0-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-crafts-and-design",
+  "level": "common",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LB835CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-crafts-and-design-0-7"
+   },
+   {
+    "n": "2",
+    "primary": "lca-crafts-and-design-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-crafts-and-design-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "lca-crafts-and-design-0-2"
+   },
+   {
+    "n": "5",
+    "primary": "lca-crafts-and-design-0-7"
+   },
+   {
+    "n": "6",
+    "primary": "lca-crafts-and-design-0-3"
+   },
+   {
+    "n": "7",
+    "primary": "lca-crafts-and-design-0-5"
+   },
+   {
+    "n": "8",
+    "primary": "lca-crafts-and-design-0-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-crafts-and-design",
+  "level": "common",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LB835CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-crafts-and-design-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-crafts-and-design-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-crafts-and-design-0-7"
+   },
+   {
+    "n": "4",
+    "primary": "lca-crafts-and-design-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "lca-crafts-and-design-0-7"
+   },
+   {
+    "n": "6",
+    "primary": "lca-crafts-and-design-0-4",
+    "secondary": "lca-crafts-and-design-0-3"
+   },
+   {
+    "n": "7",
+    "primary": "lca-crafts-and-design-0-5"
+   },
+   {
+    "n": "8",
+    "primary": "lca-crafts-and-design-0-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-engineering",
+  "level": "common",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LB836CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-engineering-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-engineering-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "lca-engineering-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "lca-engineering-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-engineering-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "lca-engineering-1-2"
+   },
+   {
+    "n": "7",
+    "primary": "lca-engineering-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-engineering-2-1"
+   },
+   {
+    "n": "9",
+    "primary": "lca-engineering-2-2"
+   },
+   {
+    "n": "10",
+    "primary": "lca-engineering-2-3"
+   },
+   {
+    "n": "11",
+    "primary": "lca-engineering-2-4"
+   },
+   {
+    "n": "12",
+    "primary": "lca-engineering-2-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-engineering",
+  "level": "common",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LB836CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-engineering-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-engineering-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "lca-engineering-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "lca-engineering-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-engineering-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "lca-engineering-1-2"
+   },
+   {
+    "n": "7",
+    "primary": "lca-engineering-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-engineering-2-1"
+   },
+   {
+    "n": "9",
+    "primary": "lca-engineering-2-2"
+   },
+   {
+    "n": "10",
+    "primary": "lca-engineering-2-3"
+   },
+   {
+    "n": "11",
+    "primary": "lca-engineering-2-4"
+   },
+   {
+    "n": "12",
+    "primary": "lca-engineering-2-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-engineering",
+  "level": "common",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LB836CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-engineering-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-engineering-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "lca-engineering-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "lca-engineering-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-engineering-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "lca-engineering-1-2"
+   },
+   {
+    "n": "7",
+    "primary": "lca-engineering-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-engineering-2-1"
+   },
+   {
+    "n": "9",
+    "primary": "lca-engineering-2-2"
+   },
+   {
+    "n": "10",
+    "primary": "lca-engineering-2-3"
+   },
+   {
+    "n": "11",
+    "primary": "lca-engineering-2-4"
+   },
+   {
+    "n": "12",
+    "primary": "lca-engineering-2-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-engineering",
+  "level": "common",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LB836CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-engineering-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-engineering-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "lca-engineering-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "lca-engineering-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-engineering-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "lca-engineering-1-2"
+   },
+   {
+    "n": "7",
+    "primary": "lca-engineering-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-engineering-2-1"
+   },
+   {
+    "n": "9",
+    "primary": "lca-engineering-2-2"
+   },
+   {
+    "n": "10",
+    "primary": "lca-engineering-2-3"
+   },
+   {
+    "n": "11",
+    "primary": "lca-engineering-2-4"
+   },
+   {
+    "n": "12",
+    "primary": "lca-engineering-2-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-engineering",
+  "level": "common",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LB836CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-engineering-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-engineering-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "lca-engineering-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "lca-engineering-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-engineering-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "lca-engineering-1-2"
+   },
+   {
+    "n": "7",
+    "primary": "lca-engineering-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-engineering-2-1"
+   },
+   {
+    "n": "9",
+    "primary": "lca-engineering-2-2"
+   },
+   {
+    "n": "10",
+    "primary": "lca-engineering-2-3"
+   },
+   {
+    "n": "11",
+    "primary": "lca-engineering-2-4"
+   },
+   {
+    "n": "12",
+    "primary": "lca-engineering-2-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-engineering",
+  "level": "common",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LB836CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-engineering-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-engineering-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "lca-engineering-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "lca-engineering-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-engineering-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "lca-engineering-1-2"
+   },
+   {
+    "n": "7",
+    "primary": "lca-engineering-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-engineering-2-1"
+   },
+   {
+    "n": "9",
+    "primary": "lca-engineering-2-2"
+   },
+   {
+    "n": "10",
+    "primary": "lca-engineering-2-3"
+   },
+   {
+    "n": "11",
+    "primary": "lca-engineering-2-4"
+   },
+   {
+    "n": "12",
+    "primary": "lca-engineering-2-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-engineering",
+  "level": "common",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LB836CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-engineering-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-engineering-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "lca-engineering-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "lca-engineering-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-engineering-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "lca-engineering-1-2"
+   },
+   {
+    "n": "7",
+    "primary": "lca-engineering-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-engineering-2-1"
+   },
+   {
+    "n": "9",
+    "primary": "lca-engineering-2-2"
+   },
+   {
+    "n": "10",
+    "primary": "lca-engineering-2-3"
+   },
+   {
+    "n": "11",
+    "primary": "lca-engineering-2-4"
+   },
+   {
+    "n": "12",
+    "primary": "lca-engineering-2-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-engineering",
+  "level": "common",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LB836CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-engineering-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-engineering-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "lca-engineering-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "lca-engineering-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-engineering-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "lca-engineering-1-2"
+   },
+   {
+    "n": "7",
+    "primary": "lca-engineering-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-engineering-2-1"
+   },
+   {
+    "n": "9",
+    "primary": "lca-engineering-2-2"
+   },
+   {
+    "n": "10",
+    "primary": "lca-engineering-2-3"
+   },
+   {
+    "n": "11",
+    "primary": "lca-engineering-2-4"
+   },
+   {
+    "n": "12",
+    "primary": "lca-engineering-2-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-engineering",
+  "level": "common",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LB836CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-engineering-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-engineering-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "lca-engineering-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "lca-engineering-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-engineering-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "lca-engineering-1-2"
+   },
+   {
+    "n": "7",
+    "primary": "lca-engineering-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-engineering-2-1"
+   },
+   {
+    "n": "9",
+    "primary": "lca-engineering-2-2"
+   },
+   {
+    "n": "10",
+    "primary": "lca-engineering-2-3"
+   },
+   {
+    "n": "11",
+    "primary": "lca-engineering-2-4"
+   },
+   {
+    "n": "12",
+    "primary": "lca-engineering-2-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-engineering",
+  "level": "common",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LB836CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-engineering-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-engineering-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "lca-engineering-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "lca-engineering-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-engineering-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "lca-engineering-1-2"
+   },
+   {
+    "n": "7",
+    "primary": "lca-engineering-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-engineering-2-1"
+   },
+   {
+    "n": "9",
+    "primary": "lca-engineering-2-2"
+   },
+   {
+    "n": "10",
+    "primary": "lca-engineering-2-3"
+   },
+   {
+    "n": "11",
+    "primary": "lca-engineering-2-4"
+   },
+   {
+    "n": "12",
+    "primary": "lca-engineering-2-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-engineering",
+  "level": "common",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LB836CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-engineering-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-engineering-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "lca-engineering-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "lca-engineering-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-engineering-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "lca-engineering-1-2"
+   },
+   {
+    "n": "7",
+    "primary": "lca-engineering-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-engineering-2-1"
+   },
+   {
+    "n": "9",
+    "primary": "lca-engineering-2-2"
+   },
+   {
+    "n": "10",
+    "primary": "lca-engineering-2-3"
+   },
+   {
+    "n": "11",
+    "primary": "lca-engineering-2-4"
+   },
+   {
+    "n": "12",
+    "primary": "lca-engineering-2-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-engineering",
+  "level": "common",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LB836CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-engineering-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-engineering-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "lca-engineering-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "lca-engineering-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-engineering-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "lca-engineering-1-2"
+   },
+   {
+    "n": "7",
+    "primary": "lca-engineering-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-engineering-2-1"
+   },
+   {
+    "n": "9",
+    "primary": "lca-engineering-2-2"
+   },
+   {
+    "n": "10",
+    "primary": "lca-engineering-2-3"
+   },
+   {
+    "n": "11",
+    "primary": "lca-engineering-2-4"
+   },
+   {
+    "n": "12",
+    "primary": "lca-engineering-2-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-engineering",
+  "level": "common",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LB836CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-engineering-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-engineering-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "lca-engineering-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "lca-engineering-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-engineering-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "lca-engineering-1-2"
+   },
+   {
+    "n": "7",
+    "primary": "lca-engineering-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-engineering-2-1"
+   },
+   {
+    "n": "9",
+    "primary": "lca-engineering-2-2"
+   },
+   {
+    "n": "10",
+    "primary": "lca-engineering-2-3"
+   },
+   {
+    "n": "11",
+    "primary": "lca-engineering-2-4"
+   },
+   {
+    "n": "12",
+    "primary": "lca-engineering-2-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-engineering",
+  "level": "common",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LB836CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-engineering-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-engineering-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "lca-engineering-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "lca-engineering-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-engineering-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "lca-engineering-1-2"
+   },
+   {
+    "n": "7",
+    "primary": "lca-engineering-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-engineering-2-1"
+   },
+   {
+    "n": "9",
+    "primary": "lca-engineering-2-2"
+   },
+   {
+    "n": "10",
+    "primary": "lca-engineering-2-3"
+   },
+   {
+    "n": "11",
+    "primary": "lca-engineering-2-4"
+   },
+   {
+    "n": "12",
+    "primary": "lca-engineering-2-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-english-and-communications",
+  "level": "common",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LB810CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-english-and-communications-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-english-and-communications-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-english-and-communications-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-english-and-communications-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-english-and-communications-1-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-english-and-communications-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-english-and-communications-1-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-english-and-communications-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-english-and-communications-2-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-english-and-communications-2-0"
+   },
+   {
+    "n": "11",
+    "primary": "lca-english-and-communications-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "lca-english-and-communications-2-0"
+   },
+   {
+    "n": "13",
+    "primary": "lca-english-and-communications-3-0"
+   },
+   {
+    "n": "14",
+    "primary": "lca-english-and-communications-3-0"
+   },
+   {
+    "n": "15",
+    "primary": "lca-english-and-communications-3-0"
+   },
+   {
+    "n": "16",
+    "primary": "lca-english-and-communications-3-0"
+   },
+   {
+    "n": "17",
+    "primary": "lca-english-and-communications-3-0"
+   },
+   {
+    "n": "18",
+    "primary": "lca-english-and-communications-4-0"
+   },
+   {
+    "n": "19",
+    "primary": "lca-english-and-communications-4-0"
+   },
+   {
+    "n": "20",
+    "primary": "lca-english-and-communications-4-0"
+   },
+   {
+    "n": "21",
+    "primary": "lca-english-and-communications-4-0"
+   },
+   {
+    "n": "22",
+    "primary": "lca-english-and-communications-4-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-english-and-communications",
+  "level": "common",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LB810CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-english-and-communications-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-english-and-communications-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-english-and-communications-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-english-and-communications-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-english-and-communications-1-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-english-and-communications-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-english-and-communications-1-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-english-and-communications-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-english-and-communications-2-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-english-and-communications-2-0"
+   },
+   {
+    "n": "11",
+    "primary": "lca-english-and-communications-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "lca-english-and-communications-2-0"
+   },
+   {
+    "n": "13",
+    "primary": "lca-english-and-communications-3-0"
+   },
+   {
+    "n": "14",
+    "primary": "lca-english-and-communications-3-0"
+   },
+   {
+    "n": "15",
+    "primary": "lca-english-and-communications-3-0"
+   },
+   {
+    "n": "16",
+    "primary": "lca-english-and-communications-3-0"
+   },
+   {
+    "n": "17",
+    "primary": "lca-english-and-communications-3-0"
+   },
+   {
+    "n": "18",
+    "primary": "lca-english-and-communications-4-0"
+   },
+   {
+    "n": "19",
+    "primary": "lca-english-and-communications-4-0"
+   },
+   {
+    "n": "20",
+    "primary": "lca-english-and-communications-4-0"
+   },
+   {
+    "n": "21",
+    "primary": "lca-english-and-communications-4-0"
+   },
+   {
+    "n": "22",
+    "primary": "lca-english-and-communications-4-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-english-and-communications",
+  "level": "common",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LB810CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-english-and-communications-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-english-and-communications-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-english-and-communications-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-english-and-communications-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-english-and-communications-1-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-english-and-communications-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-english-and-communications-1-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-english-and-communications-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-english-and-communications-2-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-english-and-communications-2-0"
+   },
+   {
+    "n": "11",
+    "primary": "lca-english-and-communications-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "lca-english-and-communications-2-0"
+   },
+   {
+    "n": "13",
+    "primary": "lca-english-and-communications-3-0"
+   },
+   {
+    "n": "14",
+    "primary": "lca-english-and-communications-3-0"
+   },
+   {
+    "n": "15",
+    "primary": "lca-english-and-communications-3-0"
+   },
+   {
+    "n": "16",
+    "primary": "lca-english-and-communications-3-0"
+   },
+   {
+    "n": "17",
+    "primary": "lca-english-and-communications-3-0"
+   },
+   {
+    "n": "18",
+    "primary": "lca-english-and-communications-4-0"
+   },
+   {
+    "n": "19",
+    "primary": "lca-english-and-communications-4-0"
+   },
+   {
+    "n": "20",
+    "primary": "lca-english-and-communications-4-0"
+   },
+   {
+    "n": "21",
+    "primary": "lca-english-and-communications-4-0"
+   },
+   {
+    "n": "22",
+    "primary": "lca-english-and-communications-4-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-english-and-communications",
+  "level": "common",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LB810CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-english-and-communications-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-english-and-communications-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-english-and-communications-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-english-and-communications-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-english-and-communications-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-english-and-communications-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-english-and-communications-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-english-and-communications-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-english-and-communications-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-french",
+  "level": "common",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LB010CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-french-1-1"
+   },
+   {
+    "n": "10",
+    "primary": "lca-french-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-french",
+  "level": "common",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LB010CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-french-1-1"
+   },
+   {
+    "n": "10",
+    "primary": "lca-french-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-french",
+  "level": "common",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LB010CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-french-1-1"
+   },
+   {
+    "n": "10",
+    "primary": "lca-french-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-french",
+  "level": "common",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LB010CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-french-1-1"
+   },
+   {
+    "n": "10",
+    "primary": "lca-french-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-french",
+  "level": "common",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LB010CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-french-1-1"
+   },
+   {
+    "n": "10",
+    "primary": "lca-french-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-french",
+  "level": "common",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LB010CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-french-1-1"
+   },
+   {
+    "n": "10",
+    "primary": "lca-french-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-french",
+  "level": "common",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LB010CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-french-1-1"
+   },
+   {
+    "n": "10",
+    "primary": "lca-french-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-french",
+  "level": "common",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LB010CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-french-1-1"
+   },
+   {
+    "n": "10",
+    "primary": "lca-french-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-french",
+  "level": "common",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LB010CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-french-1-1"
+   },
+   {
+    "n": "10",
+    "primary": "lca-french-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-french",
+  "level": "common",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LB010CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-french-1-1"
+   },
+   {
+    "n": "10",
+    "primary": "lca-french-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-french",
+  "level": "common",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LB010CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-french-1-1"
+   },
+   {
+    "n": "10",
+    "primary": "lca-french-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-french",
+  "level": "common",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LB010CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-french-1-1"
+   },
+   {
+    "n": "10",
+    "primary": "lca-french-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-french",
+  "level": "common",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LB010CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-french-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-french-1-1"
+   },
+   {
+    "n": "10",
+    "primary": "lca-french-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-gaeilge-chumarsaideach",
+  "level": "common",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "LB066CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "4",
+    "primary": "lca-gaeilge-chumarsaideach-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-gaeilge-chumarsaideach-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-gaeilge-chumarsaideach",
+  "level": "common",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "LB066CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "4",
+    "primary": "lca-gaeilge-chumarsaideach-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-gaeilge-chumarsaideach-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-gaeilge-chumarsaideach",
+  "level": "common",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "LB066CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "4",
+    "primary": "lca-gaeilge-chumarsaideach-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-gaeilge-chumarsaideach-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-gaeilge-chumarsaideach",
+  "level": "common",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "LB066CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "4",
+    "primary": "lca-gaeilge-chumarsaideach-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-gaeilge-chumarsaideach-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-gaeilge-chumarsaideach",
+  "level": "common",
+  "lang": "iv",
+  "year": 2021,
+  "fileid": "LB066CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "4",
+    "primary": "lca-gaeilge-chumarsaideach-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-gaeilge-chumarsaideach-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-gaeilge-chumarsaideach",
+  "level": "common",
+  "lang": "iv",
+  "year": 2019,
+  "fileid": "LB066CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "4",
+    "primary": "lca-gaeilge-chumarsaideach-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-gaeilge-chumarsaideach-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-gaeilge-chumarsaideach",
+  "level": "common",
+  "lang": "iv",
+  "year": 2018,
+  "fileid": "LB066CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "4",
+    "primary": "lca-gaeilge-chumarsaideach-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-gaeilge-chumarsaideach-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-gaeilge-chumarsaideach",
+  "level": "common",
+  "lang": "iv",
+  "year": 2017,
+  "fileid": "LB066CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "4",
+    "primary": "lca-gaeilge-chumarsaideach-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-gaeilge-chumarsaideach-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-gaeilge-chumarsaideach",
+  "level": "common",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LB066CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "4",
+    "primary": "lca-gaeilge-chumarsaideach-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-gaeilge-chumarsaideach-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-gaeilge-chumarsaideach",
+  "level": "common",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LB066CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "4",
+    "primary": "lca-gaeilge-chumarsaideach-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-gaeilge-chumarsaideach-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-gaeilge-chumarsaideach",
+  "level": "common",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LB066CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "4",
+    "primary": "lca-gaeilge-chumarsaideach-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-gaeilge-chumarsaideach-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-gaeilge-chumarsaideach",
+  "level": "common",
+  "lang": "iv",
+  "year": 2013,
+  "fileid": "LB066CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "4",
+    "primary": "lca-gaeilge-chumarsaideach-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-gaeilge-chumarsaideach-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-gaeilge-chumarsaideach",
+  "level": "common",
+  "lang": "iv",
+  "year": 2012,
+  "fileid": "LB066CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "4",
+    "primary": "lca-gaeilge-chumarsaideach-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-gaeilge-chumarsaideach-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-gaeilge-chumarsaideach",
+  "level": "common",
+  "lang": "iv",
+  "year": 2011,
+  "fileid": "LB066CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "4",
+    "primary": "lca-gaeilge-chumarsaideach-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-gaeilge-chumarsaideach-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-german",
+  "level": "common",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LB011CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-german-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-german",
+  "level": "common",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LB011CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-german-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-german",
+  "level": "common",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LB011CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-german-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-german",
+  "level": "common",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LB011CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-german-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-german",
+  "level": "common",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LB011CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-german-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-german",
+  "level": "common",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LB011CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-german-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-german",
+  "level": "common",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LB011CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-german-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-german",
+  "level": "common",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LB011CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-german-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-german",
+  "level": "common",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LB011CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-german-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-german",
+  "level": "common",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LB011CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-german-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-german",
+  "level": "common",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LB011CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-german-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-german",
+  "level": "common",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LB011CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-german-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-german",
+  "level": "common",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LB011CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-german-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-german-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-graphics-and-construction-studies",
+  "level": "common",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LB845CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-graphics-and-construction-studies-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-graphics-and-construction-studies-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-graphics-and-construction-studies-1-1"
+   },
+   {
+    "n": "4",
+    "primary": "lca-graphics-and-construction-studies-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "lca-graphics-and-construction-studies-1-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-graphics-and-construction-studies",
+  "level": "common",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LB845CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-graphics-and-construction-studies-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-graphics-and-construction-studies-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-graphics-and-construction-studies-1-1"
+   },
+   {
+    "n": "4",
+    "primary": "lca-graphics-and-construction-studies-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "lca-graphics-and-construction-studies-1-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-graphics-and-construction-studies",
+  "level": "common",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LB845CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-graphics-and-construction-studies-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-graphics-and-construction-studies-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-graphics-and-construction-studies-1-5"
+   },
+   {
+    "n": "4",
+    "primary": "lca-graphics-and-construction-studies-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "lca-graphics-and-construction-studies-1-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-graphics-and-construction-studies",
+  "level": "common",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LB845CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-graphics-and-construction-studies-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-graphics-and-construction-studies-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-graphics-and-construction-studies-1-1"
+   },
+   {
+    "n": "4",
+    "primary": "lca-graphics-and-construction-studies-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "lca-graphics-and-construction-studies-1-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-graphics-and-construction-studies",
+  "level": "common",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LB845CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-graphics-and-construction-studies-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-graphics-and-construction-studies-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-graphics-and-construction-studies-1-1"
+   },
+   {
+    "n": "4",
+    "primary": "lca-graphics-and-construction-studies-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "lca-graphics-and-construction-studies-1-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-graphics-and-construction-studies",
+  "level": "common",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LB845CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-graphics-and-construction-studies-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-graphics-and-construction-studies-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-graphics-and-construction-studies-1-1"
+   },
+   {
+    "n": "4",
+    "primary": "lca-graphics-and-construction-studies-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "lca-graphics-and-construction-studies-1-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-graphics-and-construction-studies",
+  "level": "common",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LB845CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-graphics-and-construction-studies-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-graphics-and-construction-studies-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-graphics-and-construction-studies-1-1"
+   },
+   {
+    "n": "4",
+    "primary": "lca-graphics-and-construction-studies-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "lca-graphics-and-construction-studies-1-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-graphics-and-construction-studies",
+  "level": "common",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LB845CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-graphics-and-construction-studies-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-graphics-and-construction-studies-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-graphics-and-construction-studies-1-1"
+   },
+   {
+    "n": "4",
+    "primary": "lca-graphics-and-construction-studies-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "lca-graphics-and-construction-studies-1-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-graphics-and-construction-studies",
+  "level": "common",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LB845CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-graphics-and-construction-studies-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-graphics-and-construction-studies-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-graphics-and-construction-studies-1-1"
+   },
+   {
+    "n": "4",
+    "primary": "lca-graphics-and-construction-studies-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "lca-graphics-and-construction-studies-1-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-graphics-and-construction-studies",
+  "level": "common",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LB845CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-graphics-and-construction-studies-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-graphics-and-construction-studies-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-graphics-and-construction-studies-1-1"
+   },
+   {
+    "n": "4",
+    "primary": "lca-graphics-and-construction-studies-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "lca-graphics-and-construction-studies-1-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-hair-and-beauty",
+  "level": "common",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LB850CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-hair-and-beauty-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-hair-and-beauty-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-hair-and-beauty-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-hair-and-beauty-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-hair-and-beauty-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-hair-and-beauty-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-hair-and-beauty-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-hair-and-beauty-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-hair-and-beauty",
+  "level": "common",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LB850CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-hair-and-beauty-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-hair-and-beauty-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-hair-and-beauty-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-hair-and-beauty-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-hair-and-beauty-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-hair-and-beauty-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-hair-and-beauty-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-hair-and-beauty-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-hair-and-beauty",
+  "level": "common",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LB850CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-hair-and-beauty-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-hair-and-beauty-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-hair-and-beauty-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-hair-and-beauty-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-hair-and-beauty-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-hair-and-beauty-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-hair-and-beauty-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-hair-and-beauty-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-hair-and-beauty",
+  "level": "common",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LB850CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-hair-and-beauty-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-hair-and-beauty-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-hair-and-beauty-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-hair-and-beauty-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-hair-and-beauty-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-hair-and-beauty-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-hair-and-beauty-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-hair-and-beauty-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-hair-and-beauty",
+  "level": "common",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LB850CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-hair-and-beauty-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-hair-and-beauty-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-hair-and-beauty-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-hair-and-beauty-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-hair-and-beauty-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-hair-and-beauty-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-hair-and-beauty-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-hair-and-beauty-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-hair-and-beauty",
+  "level": "common",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LB850CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-hair-and-beauty-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-hair-and-beauty-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-hair-and-beauty-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-hair-and-beauty-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-hair-and-beauty-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-hair-and-beauty-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-hair-and-beauty-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-hair-and-beauty-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-hair-and-beauty",
+  "level": "common",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LB850CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-hair-and-beauty-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-hair-and-beauty-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-hair-and-beauty-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-hair-and-beauty-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-hair-and-beauty-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-hair-and-beauty-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-hair-and-beauty-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-hair-and-beauty-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-hair-and-beauty",
+  "level": "common",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LB850CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-hair-and-beauty-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-hair-and-beauty-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-hair-and-beauty-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-hair-and-beauty-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-hair-and-beauty-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-hair-and-beauty-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-hair-and-beauty-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-hair-and-beauty-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-hair-and-beauty",
+  "level": "common",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LB850CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-hair-and-beauty-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-hair-and-beauty-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-hair-and-beauty-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-hair-and-beauty-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-hair-and-beauty-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-hair-and-beauty-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-hair-and-beauty-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-hair-and-beauty-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-hair-and-beauty",
+  "level": "common",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LB850CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-hair-and-beauty-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-hair-and-beauty-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-hair-and-beauty-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-hair-and-beauty-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-hair-and-beauty-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-hair-and-beauty-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-hair-and-beauty-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-hair-and-beauty-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-hair-and-beauty",
+  "level": "common",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LB850CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-hair-and-beauty-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-hair-and-beauty-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-hair-and-beauty-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-hair-and-beauty-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-hair-and-beauty-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-hair-and-beauty-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-hair-and-beauty-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-hair-and-beauty-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-hotel-catering-and-tourism",
+  "level": "common",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LB833CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-hotel-catering-and-tourism-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-hotel-catering-and-tourism-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-hotel-catering-and-tourism-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-hotel-catering-and-tourism-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-hotel-catering-and-tourism-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-hotel-catering-and-tourism-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-hotel-catering-and-tourism-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-hotel-catering-and-tourism-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-hotel-catering-and-tourism",
+  "level": "common",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LB833CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-hotel-catering-and-tourism-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-hotel-catering-and-tourism-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-hotel-catering-and-tourism-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-hotel-catering-and-tourism-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-hotel-catering-and-tourism-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-hotel-catering-and-tourism-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-hotel-catering-and-tourism-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-hotel-catering-and-tourism-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-hotel-catering-and-tourism",
+  "level": "common",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LB833CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-hotel-catering-and-tourism-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-hotel-catering-and-tourism-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-hotel-catering-and-tourism-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-hotel-catering-and-tourism-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-hotel-catering-and-tourism-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-hotel-catering-and-tourism-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-hotel-catering-and-tourism-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-hotel-catering-and-tourism-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-hotel-catering-and-tourism",
+  "level": "common",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LB833CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-hotel-catering-and-tourism-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-hotel-catering-and-tourism-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-hotel-catering-and-tourism-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-hotel-catering-and-tourism-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-hotel-catering-and-tourism-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-hotel-catering-and-tourism-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-hotel-catering-and-tourism-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-hotel-catering-and-tourism-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-hotel-catering-and-tourism",
+  "level": "common",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LB833CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-hotel-catering-and-tourism-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-hotel-catering-and-tourism-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-hotel-catering-and-tourism-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-hotel-catering-and-tourism-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-hotel-catering-and-tourism-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-hotel-catering-and-tourism-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-hotel-catering-and-tourism-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-hotel-catering-and-tourism-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-hotel-catering-and-tourism",
+  "level": "common",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LB833CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-hotel-catering-and-tourism-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-hotel-catering-and-tourism-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-hotel-catering-and-tourism-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-hotel-catering-and-tourism-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-hotel-catering-and-tourism-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-hotel-catering-and-tourism-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-hotel-catering-and-tourism-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-hotel-catering-and-tourism-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-hotel-catering-and-tourism",
+  "level": "common",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LB833CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-hotel-catering-and-tourism-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-hotel-catering-and-tourism-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-hotel-catering-and-tourism-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-hotel-catering-and-tourism-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-hotel-catering-and-tourism-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-hotel-catering-and-tourism-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-hotel-catering-and-tourism-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-hotel-catering-and-tourism-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-information-and-communication-tech",
+  "level": "common",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LB849CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-information-and-communication-tech-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-information-and-communication-tech-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-information-and-communication-tech-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-information-and-communication-tech-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-information-and-communication-tech-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-information-and-communication-tech-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-information-and-communication-tech-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-information-and-communication-tech-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-information-and-communication-tech-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-information-and-communication-tech-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-information-and-communication-tech",
+  "level": "common",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LB849CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-information-and-communication-tech-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-information-and-communication-tech-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-information-and-communication-tech-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-information-and-communication-tech-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-information-and-communication-tech-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-information-and-communication-tech-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-information-and-communication-tech-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-information-and-communication-tech-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-information-and-communication-tech-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-information-and-communication-tech-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "lca-information-and-communication-tech-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "lca-information-and-communication-tech-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "lca-information-and-communication-tech-2-0"
+   },
+   {
+    "n": "14",
+    "primary": "lca-information-and-communication-tech-2-0"
+   },
+   {
+    "n": "15",
+    "primary": "lca-information-and-communication-tech-3-0"
+   },
+   {
+    "n": "16",
+    "primary": "lca-information-and-communication-tech-3-0"
+   },
+   {
+    "n": "17",
+    "primary": "lca-information-and-communication-tech-4-0"
+   },
+   {
+    "n": "18",
+    "primary": "lca-information-and-communication-tech-4-0"
+   },
+   {
+    "n": "19",
+    "primary": "lca-information-and-communication-tech-5-0"
+   },
+   {
+    "n": "20",
+    "primary": "lca-information-and-communication-tech-5-0"
+   },
+   {
+    "n": "21",
+    "primary": "lca-information-and-communication-tech-6-0"
+   },
+   {
+    "n": "22",
+    "primary": "lca-information-and-communication-tech-6-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-information-and-communication-tech",
+  "level": "common",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LB849CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-information-and-communication-tech-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-information-and-communication-tech-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-information-and-communication-tech-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-information-and-communication-tech-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-information-and-communication-tech-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-information-and-communication-tech-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-information-and-communication-tech-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-information-and-communication-tech-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-information-and-communication-tech-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-information-and-communication-tech-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "lca-information-and-communication-tech-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "lca-information-and-communication-tech-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "lca-information-and-communication-tech-2-0"
+   },
+   {
+    "n": "14",
+    "primary": "lca-information-and-communication-tech-2-0"
+   },
+   {
+    "n": "15",
+    "primary": "lca-information-and-communication-tech-3-0"
+   },
+   {
+    "n": "16",
+    "primary": "lca-information-and-communication-tech-3-0"
+   },
+   {
+    "n": "17",
+    "primary": "lca-information-and-communication-tech-4-0"
+   },
+   {
+    "n": "18",
+    "primary": "lca-information-and-communication-tech-4-0"
+   },
+   {
+    "n": "19",
+    "primary": "lca-information-and-communication-tech-5-0"
+   },
+   {
+    "n": "20",
+    "primary": "lca-information-and-communication-tech-5-0"
+   },
+   {
+    "n": "21",
+    "primary": "lca-information-and-communication-tech-6-0"
+   },
+   {
+    "n": "22",
+    "primary": "lca-information-and-communication-tech-6-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-italian",
+  "level": "common",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LB013CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-italian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-italian-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-italian-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-italian-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-italian-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-italian-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-italian-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-italian-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-italian-1-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-italian-1-0"
+   },
+   {
+    "n": "11",
+    "primary": "lca-italian-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "lca-italian-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "lca-italian-1-1"
+   },
+   {
+    "n": "14",
+    "primary": "lca-italian-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-italian",
+  "level": "common",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LB013CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-italian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-italian-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-italian-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-italian-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-italian-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-italian-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-italian-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-italian-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-italian",
+  "level": "common",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LB013CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-italian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-italian-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-italian-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-italian-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-italian-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-italian-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-italian-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-italian-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-italian",
+  "level": "common",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LB013CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-italian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-italian-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-italian-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-italian-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-italian-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-italian-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-italian-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-italian-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-mathematical-applications",
+  "level": "common",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LB830CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-mathematical-applications-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-mathematical-applications-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "lca-mathematical-applications-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "lca-mathematical-applications-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-mathematical-applications-0-2"
+   },
+   {
+    "n": "6",
+    "primary": "lca-mathematical-applications-0-1"
+   },
+   {
+    "n": "7",
+    "primary": "lca-mathematical-applications-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-mathematical-applications",
+  "level": "common",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LB830CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-mathematical-applications-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-mathematical-applications-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "lca-mathematical-applications-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-mathematical-applications-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-mathematical-applications-0-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-mathematical-applications",
+  "level": "common",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LB830CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-mathematical-applications-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-mathematical-applications-0-3",
+    "secondary": "lca-mathematical-applications-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "lca-mathematical-applications-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-mathematical-applications-0-2"
+   },
+   {
+    "n": "5",
+    "primary": "lca-mathematical-applications-0-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-mathematical-applications",
+  "level": "common",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LB830CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-mathematical-applications-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-mathematical-applications-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "lca-mathematical-applications-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-mathematical-applications-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "lca-mathematical-applications-0-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-mathematical-applications",
+  "level": "common",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LB830CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-mathematical-applications-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-mathematical-applications-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "lca-mathematical-applications-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "lca-mathematical-applications-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-mathematical-applications-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-mathematical-applications",
+  "level": "common",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LB830CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-mathematical-applications-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-mathematical-applications-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "lca-mathematical-applications-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "lca-mathematical-applications-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "lca-mathematical-applications-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-mathematical-applications",
+  "level": "common",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LB830CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-mathematical-applications-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-mathematical-applications-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "lca-mathematical-applications-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "lca-mathematical-applications-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "lca-mathematical-applications-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-office-admin-and-customer",
+  "level": "common",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LB847CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-office-admin-and-customer-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-office-admin-and-customer-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-office-admin-and-customer-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-office-admin-and-customer-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-office-admin-and-customer-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-office-admin-and-customer-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-office-admin-and-customer-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-office-admin-and-customer-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-office-admin-and-customer",
+  "level": "common",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LB847CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-office-admin-and-customer-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-office-admin-and-customer-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-office-admin-and-customer-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-office-admin-and-customer-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-office-admin-and-customer-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-office-admin-and-customer-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-office-admin-and-customer-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-office-admin-and-customer-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-office-admin-and-customer",
+  "level": "common",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LB847CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-office-admin-and-customer-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-office-admin-and-customer-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-office-admin-and-customer-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-office-admin-and-customer-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-office-admin-and-customer-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-office-admin-and-customer-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-office-admin-and-customer-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-office-admin-and-customer-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-office-admin-and-customer",
+  "level": "common",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LB847CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-office-admin-and-customer-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-office-admin-and-customer-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-office-admin-and-customer-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-office-admin-and-customer-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-office-admin-and-customer-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-office-admin-and-customer-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-office-admin-and-customer-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-office-admin-and-customer-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-office-admin-and-customer",
+  "level": "common",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LB847CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-office-admin-and-customer-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-office-admin-and-customer-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-office-admin-and-customer-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-office-admin-and-customer-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-office-admin-and-customer-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-office-admin-and-customer-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-office-admin-and-customer-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-office-admin-and-customer-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-office-admin-and-customer",
+  "level": "common",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LB847CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-office-admin-and-customer-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-office-admin-and-customer-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-office-admin-and-customer-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-office-admin-and-customer-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-office-admin-and-customer-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-office-admin-and-customer-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-office-admin-and-customer-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-office-admin-and-customer-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-sign-language",
+  "level": "common",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LB816CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-sign-language-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-sign-language-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-sign-language-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-sign-language",
+  "level": "common",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LB816CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-sign-language-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-sign-language-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-sign-language-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-sign-language",
+  "level": "common",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LB816CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-sign-language-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-sign-language-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-sign-language",
+  "level": "common",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LB816CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-sign-language-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-sign-language-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-sign-language-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-sign-language",
+  "level": "common",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LB816CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-sign-language-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-sign-language-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-sign-language",
+  "level": "common",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LB816CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-sign-language-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-sign-language-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-sign-language-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-sign-language-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-sign-language",
+  "level": "common",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LB816CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-sign-language-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-sign-language-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-sign-language",
+  "level": "common",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LB816CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-sign-language-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-sign-language",
+  "level": "common",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LB816CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-sign-language-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-sign-language-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-sign-language-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-sign-language-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-sign-language-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-sign-language",
+  "level": "common",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LB816CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-sign-language-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-social-education",
+  "level": "common",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LB815CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "14",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "15",
+    "primary": "lca-social-education-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-social-education",
+  "level": "common",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LB815CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "14",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "15",
+    "primary": "lca-social-education-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-social-education",
+  "level": "common",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LB815CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "14",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "15",
+    "primary": "lca-social-education-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-social-education",
+  "level": "common",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LB815CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "14",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "15",
+    "primary": "lca-social-education-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-social-education",
+  "level": "common",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LB815CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "14",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "15",
+    "primary": "lca-social-education-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-social-education",
+  "level": "common",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LB815CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "14",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "15",
+    "primary": "lca-social-education-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-social-education",
+  "level": "common",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LB815CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "14",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "15",
+    "primary": "lca-social-education-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-social-education",
+  "level": "common",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LB815CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "14",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "15",
+    "primary": "lca-social-education-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-social-education",
+  "level": "common",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LB815CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "14",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "15",
+    "primary": "lca-social-education-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-social-education",
+  "level": "common",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LB815CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "14",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "15",
+    "primary": "lca-social-education-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-social-education",
+  "level": "common",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LB815CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "14",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "15",
+    "primary": "lca-social-education-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-social-education",
+  "level": "common",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LB815CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "14",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "15",
+    "primary": "lca-social-education-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-social-education",
+  "level": "common",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LB815CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "10",
+    "primary": "lca-social-education-0-0"
+   },
+   {
+    "n": "11",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "14",
+    "primary": "lca-social-education-1-0"
+   },
+   {
+    "n": "15",
+    "primary": "lca-social-education-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-spanish",
+  "level": "common",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LB012CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-spanish-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "lca-spanish-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-spanish",
+  "level": "common",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LB012CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-spanish-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "lca-spanish-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-spanish",
+  "level": "common",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LB012CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-spanish-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "lca-spanish-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-spanish",
+  "level": "common",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LB012CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-spanish-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "lca-spanish-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-spanish",
+  "level": "common",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LB012CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-spanish-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "lca-spanish-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-spanish",
+  "level": "common",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LB012CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-spanish-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "lca-spanish-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-spanish",
+  "level": "common",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LB012CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-spanish-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "lca-spanish-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-spanish",
+  "level": "common",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LB012CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-spanish-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "lca-spanish-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-spanish",
+  "level": "common",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LB012CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-spanish-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "lca-spanish-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-spanish",
+  "level": "common",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LB012CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-spanish-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "lca-spanish-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-spanish",
+  "level": "common",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LB012CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-spanish-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "lca-spanish-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-spanish",
+  "level": "common",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LB012CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-spanish-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "lca-spanish-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-spanish",
+  "level": "common",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LB012CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-spanish-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "lca-spanish-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-spanish",
+  "level": "common",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LB012CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-spanish-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "lca-spanish-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-spanish",
+  "level": "common",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LB012CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-spanish-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-spanish-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "lca-spanish-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-technology",
+  "level": "common",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LB839CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-technology-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-technology-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "lca-technology-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "lca-technology-0-3"
+   },
+   {
+    "n": "5",
+    "primary": "lca-technology-0-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-technology",
+  "level": "common",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LB839CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-technology-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-technology-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "lca-technology-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "lca-technology-0-3"
+   },
+   {
+    "n": "5",
+    "primary": "lca-technology-0-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-technology",
+  "level": "common",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LB839CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-technology-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-technology-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "lca-technology-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "lca-technology-0-3"
+   },
+   {
+    "n": "5",
+    "primary": "lca-technology-0-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-technology",
+  "level": "common",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LB839CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-technology-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-technology-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "lca-technology-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "lca-technology-0-3"
+   },
+   {
+    "n": "5",
+    "primary": "lca-technology-0-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-technology",
+  "level": "common",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LB839CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-technology-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-technology-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "lca-technology-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "lca-technology-0-3"
+   },
+   {
+    "n": "5",
+    "primary": "lca-technology-0-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-technology",
+  "level": "common",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LB839CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-technology-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-technology-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "lca-technology-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "lca-technology-0-3"
+   },
+   {
+    "n": "5",
+    "primary": "lca-technology-0-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-technology",
+  "level": "common",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LB839CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-technology-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-technology-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "lca-technology-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "lca-technology-0-3"
+   },
+   {
+    "n": "5",
+    "primary": "lca-technology-0-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-technology",
+  "level": "common",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LB839CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-technology-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-technology-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "lca-technology-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "lca-technology-0-3"
+   },
+   {
+    "n": "5",
+    "primary": "lca-technology-0-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-technology",
+  "level": "common",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LB839CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-technology-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-technology-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "lca-technology-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "lca-technology-0-3"
+   },
+   {
+    "n": "5",
+    "primary": "lca-technology-0-4"
    }
   ]
  },
@@ -36301,6 +60139,1087 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
   ]
  },
  {
+  "subjectId": "lithuanian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC550ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "2",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "5",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "7",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "9",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "10",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "11",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "12",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "13",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "14",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "15",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "16",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "17",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "18",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "19",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "20",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "21",
+    "primary": "lithuanian-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lithuanian",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "LC550ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "2",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "5",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "7",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "9",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "10",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "11",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "12",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "13",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "14",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "15",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "16",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "17",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "18",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "19",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "20",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "21",
+    "primary": "lithuanian-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lithuanian",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC550GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "2",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "lithuanian-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lithuanian",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "LC550GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "2",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "lithuanian-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lithuanian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC550ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "2",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "5",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "7",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "9",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "10",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "11",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "12",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "13",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "14",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "15",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "16",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "17",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "18",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "19",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "20",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "21",
+    "primary": "lithuanian-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lithuanian",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "LC550ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "2",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "5",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "7",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "9",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "10",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "11",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "12",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "13",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "14",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "15",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "16",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "17",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "18",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "19",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "20",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "21",
+    "primary": "lithuanian-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lithuanian",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "LC550GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "2",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "lithuanian-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lithuanian",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC550GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "2",
+    "primary": "lithuanian-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "lithuanian-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lithuanian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC550ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "3",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lithuanian-2-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lithuanian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2020,
+  "fileid": "LC550ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "3",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lithuanian-2-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lithuanian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC550ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "3",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lithuanian-2-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lithuanian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC550ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "3",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lithuanian-2-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lithuanian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC550ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "3",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lithuanian-2-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lithuanian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC550ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "3",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lithuanian-2-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lithuanian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC550ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "3",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "lithuanian-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "lithuanian-2-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "maltese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC557ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "maltese-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "maltese-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "maltese-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "maltese-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "maltese-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "maltese-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "maltese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC557ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "maltese-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "maltese-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "maltese-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "maltese-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "maltese-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "maltese-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "maltese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC557ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "maltese-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "maltese-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "maltese-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "maltese-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "maltese-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "maltese-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "maltese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC557ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "maltese-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "maltese-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "maltese-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "maltese-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "maltese-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "maltese-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "maltese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC557ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "maltese-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "maltese-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "maltese-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "maltese-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "maltese-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "maltese-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "mandarin-chinese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC566ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "mandarin-chinese-3-0"
+   },
+   {
+    "n": "2",
+    "primary": "mandarin-chinese-3-1"
+   },
+   {
+    "n": "3",
+    "primary": "mandarin-chinese-3-0"
+   },
+   {
+    "n": "4",
+    "primary": "mandarin-chinese-3-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "mandarin-chinese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC566GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "mandarin-chinese-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "mandarin-chinese-3-3"
+   },
+   {
+    "n": "3",
+    "primary": "mandarin-chinese-3-3"
+   },
+   {
+    "n": "4",
+    "primary": "mandarin-chinese-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "mandarin-chinese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC566ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "mandarin-chinese-3-0"
+   },
+   {
+    "n": "2",
+    "primary": "mandarin-chinese-3-2"
+   },
+   {
+    "n": "3",
+    "primary": "mandarin-chinese-3-2"
+   },
+   {
+    "n": "4",
+    "primary": "mandarin-chinese-3-3",
+    "secondary": "mandarin-chinese-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "mandarin-chinese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC566GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "mandarin-chinese-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "mandarin-chinese-3-2"
+   },
+   {
+    "n": "3",
+    "primary": "mandarin-chinese-3-3"
+   },
+   {
+    "n": "4",
+    "primary": "mandarin-chinese-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "mandarin-chinese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC566ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "mandarin-chinese-3-0"
+   },
+   {
+    "n": "2",
+    "primary": "mandarin-chinese-3-0"
+   },
+   {
+    "n": "3",
+    "primary": "mandarin-chinese-3-1"
+   },
+   {
+    "n": "4",
+    "primary": "mandarin-chinese-3-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "mandarin-chinese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC566GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "mandarin-chinese-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "mandarin-chinese-3-0"
+   },
+   {
+    "n": "3",
+    "primary": "mandarin-chinese-3-2"
+   },
+   {
+    "n": "4",
+    "primary": "mandarin-chinese-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "mandarin-chinese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC566ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "mandarin-chinese-3-1"
+   },
+   {
+    "n": "2",
+    "primary": "mandarin-chinese-3-2"
+   },
+   {
+    "n": "3",
+    "primary": "mandarin-chinese-3-2"
+   },
+   {
+    "n": "4",
+    "primary": "mandarin-chinese-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "mandarin-chinese",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC566GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "mandarin-chinese-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "mandarin-chinese-3-0"
+   },
+   {
+    "n": "3",
+    "primary": "mandarin-chinese-3-3"
+   },
+   {
+    "n": "4",
+    "primary": "mandarin-chinese-3-3"
+   }
+  ]
+ },
+ {
   "subjectId": "mathematics",
   "level": "foundation",
   "lang": "ev",
@@ -37636,6 +62555,176 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "8",
     "primary": "mathematics-1-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "modern-greek",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC019ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "modern-greek-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "modern-greek-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "modern-greek",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC019ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "modern-greek-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "modern-greek-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "modern-greek",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC019ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "modern-greek-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "modern-greek-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "modern-greek",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC019ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "modern-greek-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "modern-greek",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC019ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "modern-greek-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "modern-greek-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "modern-greek-0-1"
    }
   ]
  },
@@ -41907,6 +66996,114 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
   ]
  },
  {
+  "subjectId": "polish",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "LC548GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "polish-3-0"
+   },
+   {
+    "n": "2",
+    "primary": "polish-3-0"
+   },
+   {
+    "n": "4",
+    "primary": "polish-3-0"
+   },
+   {
+    "n": "5",
+    "primary": "polish-3-0"
+   },
+   {
+    "n": "6",
+    "primary": "polish-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "polish-3-1"
+   },
+   {
+    "n": "9",
+    "primary": "polish-3-1"
+   },
+   {
+    "n": "10",
+    "primary": "polish-3-1"
+   },
+   {
+    "n": "11",
+    "primary": "polish-3-1"
+   },
+   {
+    "n": "12",
+    "primary": "polish-3-0"
+   },
+   {
+    "n": "13",
+    "primary": "polish-3-0"
+   },
+   {
+    "n": "15",
+    "primary": "polish-3-0"
+   },
+   {
+    "n": "16",
+    "primary": "polish-3-0"
+   },
+   {
+    "n": "17",
+    "primary": "polish-3-0"
+   },
+   {
+    "n": "20",
+    "primary": "polish-3-0"
+   },
+   {
+    "n": "21",
+    "primary": "polish-3-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "polish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC548ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "polish-3-0"
+   },
+   {
+    "n": "2",
+    "primary": "polish-3-0"
+   },
+   {
+    "n": "3",
+    "primary": "polish-3-0"
+   },
+   {
+    "n": "4",
+    "primary": "polish-3-0"
+   },
+   {
+    "n": "5",
+    "primary": "polish-3-0"
+   },
+   {
+    "n": "6",
+    "primary": "polish-3-0"
+   }
+  ]
+ },
+ {
   "subjectId": "politics-and-society",
   "level": "higher",
   "lang": "ev",
@@ -42380,6 +67577,286 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
   ]
  },
  {
+  "subjectId": "portuguese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC018ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "3",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "portuguese-2-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "portuguese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC018ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "3",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "portuguese-2-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "portuguese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC018ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "3",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "portuguese-2-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "portuguese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC018ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "3",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "portuguese-2-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "portuguese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC018ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "3",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "portuguese-2-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "portuguese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC018ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "3",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "portuguese-2-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "portuguese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC018ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "3",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "portuguese-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "portuguese-2-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "portuguese",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC018ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "3",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "portuguese-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "portuguese-2-0"
+   }
+  ]
+ },
+ {
   "subjectId": "religious-education",
   "level": "ordinary",
   "lang": "ev",
@@ -42405,6 +67882,2822 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
   ]
  },
  {
+  "subjectId": "romanian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC553ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "romanian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "romanian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "romanian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC553ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "romanian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "romanian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "romanian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC553ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "romanian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "romanian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "romanian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC553ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "romanian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "romanian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "romanian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC553ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "romanian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "romanian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "romanian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2020,
+  "fileid": "LC553ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "romanian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "romanian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "romanian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC553ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "romanian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "romanian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "romanian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC553ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "romanian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "romanian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC553ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "romanian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "romanian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC553ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "romanian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "romanian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "romanian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC553ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "romanian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "romanian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "romanian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC553ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "romanian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "romanian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC553ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "romanian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "romanian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "romanian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC553ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "romanian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "romanian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "romanian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC553ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "romanian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "romanian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "romanian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "russian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC099ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "2",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "3",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "4",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "5",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "6",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "7",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "11",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "12",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "13",
+    "primary": "russian-3-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "russian",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2018,
+  "fileid": "LC099ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "2",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "3",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "4",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "5",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "6",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "7",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "11",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "12",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "13",
+    "primary": "russian-3-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "russian",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC099GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "russian-3-5"
+   },
+   {
+    "n": "4",
+    "primary": "russian-3-3"
+   },
+   {
+    "n": "5",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "6",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "7",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "11",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "12",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "13",
+    "primary": "russian-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "russian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC099ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "2",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "3",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "4",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "5",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "6",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "7",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "11",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "12",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "13",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "14",
+    "primary": "russian-3-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "russian",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC099GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "russian-3-5"
+   },
+   {
+    "n": "4",
+    "primary": "russian-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "russian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC099ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "2",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "3",
+    "primary": "russian-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "russian",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC099ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "2",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "3",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "4",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "5",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "6",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "7",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "11",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "12",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "13",
+    "primary": "russian-3-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "russian",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC099GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "4",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "5",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "6",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "7",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "11",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "12",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "13",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "14",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "15",
+    "primary": "russian-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "russian",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC099GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "2",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "3",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "4",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "5",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "6",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "7",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "11",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "12",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "13",
+    "primary": "russian-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "russian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC099ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "2",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "3",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "4",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "5",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "6",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "7",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "11",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "12",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "13",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "14",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "15",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "16",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "17",
+    "primary": "russian-3-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "russian",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC099ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "2",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "3",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "4",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "5",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "6",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "7",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "11",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "12",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "13",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "14",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "15",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "16",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "17",
+    "primary": "russian-3-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "russian",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC099GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "russian-3-5"
+   },
+   {
+    "n": "4",
+    "primary": "russian-3-5"
+   },
+   {
+    "n": "5",
+    "primary": "russian-3-5"
+   },
+   {
+    "n": "6",
+    "primary": "russian-3-3"
+   },
+   {
+    "n": "7",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "russian-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "russian",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC099GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "russian-3-5"
+   },
+   {
+    "n": "4",
+    "primary": "russian-3-5"
+   },
+   {
+    "n": "5",
+    "primary": "russian-3-5"
+   },
+   {
+    "n": "6",
+    "primary": "russian-3-3"
+   },
+   {
+    "n": "7",
+    "primary": "russian-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "russian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC099ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "2",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "3",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "4",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "5",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "6",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "7",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "russian-3-2"
+   },
+   {
+    "n": "10",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "11",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "12",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "13",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "14",
+    "primary": "russian-3-2"
+   },
+   {
+    "n": "15",
+    "primary": "russian-3-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "russian",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC099ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "2",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "3",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "4",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "5",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "6",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "7",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "10",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "11",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "12",
+    "primary": "russian-3-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "russian",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC099GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "russian-3-5"
+   },
+   {
+    "n": "4",
+    "primary": "russian-3-3"
+   },
+   {
+    "n": "5",
+    "primary": "russian-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "russian",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC099GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "12",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "13",
+    "primary": "russian-3-3"
+   },
+   {
+    "n": "14",
+    "primary": "russian-3-3"
+   },
+   {
+    "n": "15",
+    "primary": "russian-3-3"
+   },
+   {
+    "n": "16",
+    "primary": "russian-3-3"
+   },
+   {
+    "n": "17",
+    "primary": "russian-3-3"
+   },
+   {
+    "n": "18",
+    "primary": "russian-3-3"
+   },
+   {
+    "n": "19",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "20",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "21",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "22",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "23",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "24",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "25",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "26",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "27",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "28",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "29",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "30",
+    "primary": "russian-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "russian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC099ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "2",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "3",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "4",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "5",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "6",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "7",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "russian-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "russian",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2013,
+  "fileid": "LC099ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "2",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "3",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "4",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "5",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "6",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "7",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "11",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "12",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "13",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "14",
+    "primary": "russian-3-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "russian",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC099GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "russian-3-2"
+   },
+   {
+    "n": "5",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "russian-3-2"
+   },
+   {
+    "n": "8",
+    "primary": "russian-3-3"
+   },
+   {
+    "n": "9",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "11",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "12",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "13",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "14",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "15",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "16",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "17",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "18",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "19",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "20",
+    "primary": "russian-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "russian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC099ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "2",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "3",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "4",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "5",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "6",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "7",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "11",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "12",
+    "primary": "russian-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "russian",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC099GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "russian-3-5"
+   },
+   {
+    "n": "4",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "5",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "6",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "7",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "11",
+    "primary": "russian-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "russian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC099ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "2",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "3",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "4",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "5",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "6",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "7",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "russian-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "russian",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC099GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "russian-3-5"
+   },
+   {
+    "n": "4",
+    "primary": "russian-3-3"
+   },
+   {
+    "n": "5",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "6",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "7",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "11",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "12",
+    "primary": "russian-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "russian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC099ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "2",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "3",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "4",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "5",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "6",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "7",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "10",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "11",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "12",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "13",
+    "primary": "russian-3-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "russian",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2010,
+  "fileid": "LC099ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "2",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "3",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "4",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "5",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "6",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "7",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "russian-3-2"
+   },
+   {
+    "n": "10",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "11",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "12",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "13",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "14",
+    "primary": "russian-3-1"
+   },
+   {
+    "n": "15",
+    "primary": "russian-3-2"
+   },
+   {
+    "n": "16",
+    "primary": "russian-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "russian",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC099GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "russian-3-5"
+   },
+   {
+    "n": "4",
+    "primary": "russian-3-3"
+   },
+   {
+    "n": "5",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "6",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "7",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "russian-3-0"
+   },
+   {
+    "n": "9",
+    "primary": "russian-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "russian",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2010,
+  "fileid": "LC099GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "russian-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "russian-3-5"
+   },
+   {
+    "n": "4",
+    "primary": "russian-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "slovakian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC554ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "slovakian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "slovakian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "slovakian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC554ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "slovakian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "slovakian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "slovakian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC554ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "slovakian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "slovakian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "slovakian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC554ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "slovakian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "slovakian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "slovakian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC554ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "slovakian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "slovakian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "slovakian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC554ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "slovakian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "slovakian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "slovakian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC554ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "slovakian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "slovakian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "slovakian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC554ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "slovakian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "slovakian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "slovakian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC554ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "slovakian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "slovakian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "slovakian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC554ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "slovakian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "slovakian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "slovakian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC554ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "slovakian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "slovakian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "slovakian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC554ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "slovakian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "slovakian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "slovakian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC554ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "slovakian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "slovakian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "slovakian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC554ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "slovakian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "slovakian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "slovakian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC554ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "slovakian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "slovakian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "slovakian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "slovenian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC558ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "slovenian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "slovenian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "slovenian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "slovenian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "slovenian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "slovenian-0-1"
+   },
+   {
+    "n": "7",
+    "primary": "slovenian-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "slovenian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC558ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "slovenian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "slovenian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "slovenian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "slovenian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "slovenian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "slovenian-0-1"
+   },
+   {
+    "n": "7",
+    "primary": "slovenian-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "slovenian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC558ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "slovenian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "slovenian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "slovenian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "slovenian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "slovenian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "slovenian-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "slovenian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC558ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "slovenian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "slovenian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "slovenian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "slovenian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "slovenian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "slovenian-0-1"
+   },
+   {
+    "n": "7",
+    "primary": "slovenian-1-0"
+   }
+  ]
+ },
+ {
   "subjectId": "spanish",
   "level": "higher",
   "lang": "ev",
@@ -45052,6 +73345,278 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "5",
     "primary": "spanish-5-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "swedish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC039ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "swedish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "swedish-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "swedish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC039ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "swedish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "swedish-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "swedish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC039ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "swedish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "swedish-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "swedish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC039ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "swedish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "swedish-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "swedish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC039ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "swedish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "swedish-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "swedish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC039ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "swedish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "swedish-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "swedish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC039ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "swedish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "swedish-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "swedish-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "swedish",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC039ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "swedish-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "swedish-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "swedish-0-1"
    }
   ]
  },
@@ -48342,6 +76907,40 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
     "n": "12",
     "primary": "technology-3-2",
     "secondary": "technology-3-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "ukrainian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC570ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "ukrainian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "ukrainian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "ukrainian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "ukrainian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "ukrainian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "ukrainian-0-1"
    }
   ]
  }

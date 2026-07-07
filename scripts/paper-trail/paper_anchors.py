@@ -23,17 +23,30 @@ HONESTY GATES — a wrong crop is worse than none:
     margin of an unrotated page;
   • per-question QA: after building the map, each anchor is independently
     re-verified — the expected marker text must be re-found at (pP, pY[0]);
-  • sequence gates: anchors must be monotonic in print order and contiguous
-    (1..max per section) — any gap, duplicate-in-doubt or rotated-page anchor
-    drops the QUESTION;
-  • hole gate: a content page BETWEEN two anchors that carries no anchor means
-    a question was missed — its neighbour's derived crop would swallow it, so
-    the whole PAPER is dropped;
-  • tail gate: pages after the last anchor must be blank / "no examination
-    material" / a short back cover — otherwise the last question's extent is
-    uncertain and the PAPER is dropped;
-  • coverage gate: a paper ships only when ≥ MIN_QUESTIONS anchor and
-    anchored/expected ≥ MIN_COVERAGE (expected = contiguous 1..max per section).
+  • numbering gate: the detected numbers must form ONE contiguous run per
+    section (the run may start above 1 — e.g. biology Section-C docs print
+    11..17). ANY gap in the run hard-drops the PAPER: a missing number is a
+    missing marker (the 2011 OL maths P2 IV dotless-"4" class) and the
+    previous question's derived crop would swallow the missed one;
+  • monotonic gate: anchors must be monotonic in print order;
+  • span gate: consecutive anchors more than MAX_PAGES pages apart make the
+    viewer's paperRegionFor refuse the crop — drop the PAPER;
+  • contiguity proof → continuation-page tolerance: when the run is gap-free
+    AND every raw detector hit is positionally consistent with its anchored
+    question (no out-of-place duplicate that would betray a numbering
+    restart) AND the anchors plausibly tile the document (≤ MAX_LEAD_PAGES
+    content pages before the first anchor; anchored span ≥ MIN_ANCHOR_SPAN of
+    the content pages), then anchor-less content pages between/after anchors
+    are CONTINUATION pages (answer booklets, multi-page questions) — they
+    belong to the preceding question's crop and the paper ships;
+  • strict fallback: when the contiguity proof fails, the original blanket
+    gates apply — hole gate (a content page BETWEEN anchors with no anchor
+    drops the PAPER) and tail gate (real content after the last anchor drops
+    the PAPER);
+  • a paper ships only when ≥ MIN_QUESTIONS anchor.
+  Note the last question's crop is anchor → end of ITS OWN page (viewer
+  contract): in booklets its later continuation pages are not shown, and any
+  same-page trailing matter is included — verified visually per wave.
 
 Usage:
   python3 paper_anchors.py <subjectId> [--grammar auto|section_token|question|lead_int]
@@ -73,9 +86,10 @@ COPYRIGHT = "© State Examinations Commission"
 LEFT_MARGIN_X = 140   # a header token must start left of this (points)
 LEAD_INT_X = 95       # a bare 'N.' lead number sits within this of the left edge
 MIN_QUESTIONS = 3     # a paper needs ≥3 anchored questions to be worth shipping
-MIN_COVERAGE = 0.6    # anchored/expected below this → drop the paper
 PAGEJUMP_CONF = 0.5   # below anchor-map's 0.6 "right scheme page" tier: no scheme claim
 MAX_TAIL_CHARS = 400  # a post-questions page longer than this is unexplained content
+MAX_LEAD_PAGES = 3    # contiguity proof: content pages allowed before Q-first
+MIN_ANCHOR_SPAN = 0.5  # contiguity proof: anchored span / content pages floor
 
 # Pages that carry no question content (fillers, back covers).
 BLANK_PAGE_TEXTS = {
@@ -96,16 +110,17 @@ SUBJECT_GRAMMAR = {
     "chemistry": "lead_int",
     "physics": "lead_int",
     # agricultural-science is era-split (old spec ≤2020: 'N.' lead ints; new
-    # spec 2021+: 'Question N') — run it with explicit --years + --grammar
-    # per era rather than a single pin.
+    # spec 2021+: 'Question N') — it runs UNPINNED (auto): the per-paper
+    # best-detector pick resolves the era correctly (2026-07 wave).
     # mathematics is era-split too, so it runs UNPINNED (auto): compact
     # pre-Project-Maths papers (2010–2012 P100/P200/P000) print bare 'N.'
     # lead ints; every Project-Maths-format paper (P130/P230 pilots and all
     # papers 2013+) prints 'Question N' / 'Ceist N'. The PM-format papers are
     # answer booklets whose questions span multiple pages (continuation parts
-    # and answer space between headers), so they drop at the hole gate
-    # regardless of grammar; only the lead_int era passes the gates
-    # (2026-07 maths wave — see out/paper-anchors-mathematics-report.md).
+    # and answer space between headers) — they ship via the contiguity proof
+    # (continuation pages tolerated), while a broken run (e.g. 2011 OL P2 IV
+    # prints Q4's header dotless, so Q4 goes undetected) hard-drops at the
+    # numbering gate (2026-07 recovery wave — see the out/ reports).
 }
 
 _LIGATURES = {
@@ -278,9 +293,12 @@ DETECTORS = {
 # ─── anchor building + gates ──────────────────────────────────────────────────
 
 def build_anchors(doc, hits):
-    """hits → (anchors, expected, reasons). anchors = [(sort_key, label, page0,
-    x0, yFrac)] deduped/ordered; expected counts contiguous 1..max per section.
-    Question-level drops are recorded in reasons; paper-level gates run later."""
+    """hits → (anchors, expected, reasons, gaps). anchors = [(sort_key, label,
+    page0, x0, yFrac)] deduped/ordered; expected counts the contiguous
+    first..last run per section (the run may start above 1 — biology
+    Section-C docs legitimately print 11..17). gaps=True flags any missing
+    number inside a run: that is a missing MARKER (dotless-header class), so
+    the paper-level numbering gate hard-drops it."""
     reasons = []
     first = {}
     for h in sorted(hits, key=lambda h: (h[2], h[4])):  # print order
@@ -290,15 +308,17 @@ def build_anchors(doc, hits):
     for key in sorted(first):
         by_sec[key[0]].append(key[1])
 
-    anchors, expected = [], 0
+    anchors, expected, gaps = [], 0, False
     for sec in sorted(by_sec):
         nums = by_sec[sec]
-        top = max(nums)
-        expected += top
-        missing = sorted(set(range(1, top + 1)) - set(nums))
+        lo, top = min(nums), max(nums)
+        expected += top - lo + 1
+        missing = sorted(set(range(lo, top + 1)) - set(nums))
         if missing:
-            reasons.append(f"section {sec}: missing question number(s) {missing}")
-        for n in range(1, top + 1):
+            gaps = True
+            reasons.append(f"section {sec}: missing question number(s) {missing} "
+                           f"in the {lo}..{top} run")
+        for n in range(lo, top + 1):
             if n in nums:
                 anchors.append(first[(sec, n)])
 
@@ -307,41 +327,109 @@ def build_anchors(doc, hits):
     # anchor→next-anchor crop derivation and every question is in doubt.
     pos = [(a[2], a[4]) for a in anchors]
     if any(pos[i] >= pos[i + 1] for i in range(len(pos) - 1)):
-        return [], expected, reasons + ["anchors not monotonic in print order"]
-    return anchors, expected, reasons
+        return [], expected, reasons + ["anchors not monotonic in print order"], gaps
+    return anchors, expected, reasons, gaps
 
 
-def paper_gates(doc, anchors, expected, reasons):
-    """Paper-level honesty gates. Returns None when the paper passes, else the
-    drop reason."""
+def contiguity_proof(doc, anchors, hits, content_pages):
+    """Prove the anchored numbering is the paper's ONE question sequence, so
+    anchor-less pages between/after anchors are continuation pages (answer
+    booklets, multi-page questions) rather than evidence of a missed marker.
+    Preconditions already held by the caller: no gaps in the per-section runs
+    and monotonic print order. Returns None when the proof holds, else why it
+    fails (→ the caller falls back to the strict blanket gates)."""
+    apos = [(a[2], a[4]) for a in anchors]
+    akey = {a[0]: i for i, a in enumerate(anchors)}
+
+    # Every raw detector hit must sit inside its own question's print span —
+    # an out-of-place duplicate (e.g. a restarted 'Section B, Q1' after Q10)
+    # would mean the run we anchored is NOT the whole paper.
+    for key, label, pi, _x, y in hits:
+        i = akey.get(key)
+        if i is None:
+            return f"stray marker {label!r} on page {pi + 1} outside the anchored run"
+        hi = apos[i + 1] if i + 1 < len(apos) else None
+        if (pi, y) < apos[i] or (hi is not None and (pi, y) >= hi):
+            return (f"duplicate marker {label!r} on page {pi + 1} out of position "
+                    f"(numbering restart?)")
+
+    # The anchors must plausibly tile the document: a small contiguous run of
+    # look-alike tokens (a numbered list inside one question) must not pass
+    # itself off as the paper's question sequence.
+    first_p, last_p = apos[0][0], apos[-1][0]
+    lead = sum(1 for pi in range(first_p) if not is_blank(doc[pi]))
+    if lead > MAX_LEAD_PAGES:
+        return f"{lead} content pages before the first anchor (> {MAX_LEAD_PAGES})"
+    if content_pages and (last_p - first_p + 1) / content_pages < MIN_ANCHOR_SPAN:
+        return (f"anchored span {last_p - first_p + 1}p covers < "
+                f"{MIN_ANCHOR_SPAN:.0%} of {content_pages} content pages")
+    return None
+
+
+def paper_gates(doc, anchors, expected, reasons, gaps, hits):
+    """Paper-level honesty gates. Returns (drop_reason, notes): drop_reason is
+    None when the paper passes; notes carry report-worthy judgment calls
+    (continuation pages tolerated, offset numbering, …)."""
+    notes = []
     if len(anchors) < MIN_QUESTIONS:
-        return f"only {len(anchors)} anchored questions (<{MIN_QUESTIONS}): " + "; ".join(reasons)
-    if expected and len(anchors) / expected < MIN_COVERAGE:
-        return (f"coverage {len(anchors)}/{expected} < {MIN_COVERAGE:.0%}: "
-                + "; ".join(reasons))
+        return (f"only {len(anchors)} anchored questions (<{MIN_QUESTIONS}): "
+                + "; ".join(reasons), notes)
+
+    # Numbering gate: a gap inside a run is a missing MARKER — the previous
+    # question's derived crop would silently swallow the missed question
+    # (2011 OL maths P2 IV prints Q4's header without the dot). Hard drop.
+    if gaps:
+        return ("numbering not contiguous — " + "; ".join(reasons)
+                + f" ({len(anchors)}/{expected} anchored)", notes)
+
+    # Span gate: the viewer's paperRegionFor refuses a crop spanning more
+    # than MAX_PAGES pages to the next anchor — such a sidecar would fail CI.
+    for a, b in zip(anchors, anchors[1:]):
+        if b[2] - a[2] > MAX_PAGES:
+            return (f"Q{a[1]} runs {b[2] - a[2]} pages to the next anchor "
+                    f"(> {MAX_PAGES}) — the viewer would refuse the crop", notes)
+
+    first = anchors[0][0]
+    if first[1] != 1:
+        notes.append(f"numbering starts at {anchors[0][1]}")
 
     pages_with = {a[2] for a in anchors}
     first_p, last_p = min(pages_with), max(pages_with)
+    content_pages = sum(1 for pg in doc if not is_blank(pg))
 
-    # Hole gate: an anchor-less content page between anchors = a missed question
-    # whose neighbour's derived crop would swallow it.
+    proof_fail = contiguity_proof(doc, anchors, hits, content_pages)
+    if proof_fail is None:
+        # Contiguity proven: anchor-less content pages between/after anchors
+        # are continuation pages — count them for the report, don't gate.
+        holes = sum(1 for pi in range(first_p, last_p + 1)
+                    if pi not in pages_with and not is_blank(doc[pi]))
+        tail = sum(1 for pi in range(last_p + 1, len(doc)) if not is_blank(doc[pi]))
+        if holes or tail:
+            notes.append(f"contiguity-verified booklet: {holes} continuation "
+                         f"page(s) between anchors, {tail} after the last")
+        return (None, notes)
+
+    # Strict fallback (numbering not PROVABLY one run): the original blanket
+    # hole/tail gates.
+    notes.append(f"contiguity unproven: {proof_fail}")
     for pi in range(first_p, last_p + 1):
         if pi in pages_with:
             continue
         if not is_blank(doc[pi]) and not doc[pi].rotation:
-            return f"content page {pi + 1} between anchors carries no anchor (missed question?)"
+            return (f"content page {pi + 1} between anchors carries no anchor "
+                    f"(missed question?) [{proof_fail}]", notes)
         if doc[pi].rotation:
-            return f"rotated page {pi + 1} between anchors (unrepresentable question?)"
-
-    # Tail gate: after the last anchor only fillers / a short back cover.
+            return (f"rotated page {pi + 1} between anchors (unrepresentable "
+                    f"question?) [{proof_fail}]", notes)
     for pi in range(last_p + 1, len(doc)):
         page = doc[pi]
         if is_blank(page):
             continue
         t = norm_text(page.get_text("text"))
         if len(t) > MAX_TAIL_CHARS or SECTION_TOKEN_RE.search(page.get_text("text")):
-            return f"page {pi + 1} after the last anchor still carries content"
-    return None
+            return (f"page {pi + 1} after the last anchor still carries content "
+                    f"[{proof_fail}]", notes)
+    return (None, notes)
 
 
 def qa_verify(pdf_path, sidecar, grammar):
@@ -442,11 +530,20 @@ def paper_region_for(qs, n):
 
 
 def qa_render(pdf_path, sidecar, out_dir, n_samples, rng, year):
-    """Render N random derived question crops to PNG for visual QA."""
+    """Render N derived question crops to PNG for visual QA. The FIRST and
+    LAST questions are always in the sample (the crop-start and the
+    last-question/tail derivations are the two highest-risk classes); the
+    rest is a random draw."""
     doc = fitz.open(pdf_path)
     qs = sidecar["q"]
     os.makedirs(out_dir, exist_ok=True)
-    sample = rng.sample(qs, min(n_samples, len(qs)))
+    sample = [qs[0]]
+    if len(qs) > 1:
+        sample.append(qs[-1])
+    middle = qs[1:-1]
+    if len(sample) < n_samples and middle:
+        sample.extend(rng.sample(middle, min(n_samples - len(sample), len(middle))))
+    sample = sample[:max(n_samples, 1)]
     rendered = []
     for q in sample:
         region = paper_region_for(qs, q["n"])
@@ -465,6 +562,12 @@ def qa_render(pdf_path, sidecar, out_dir, n_samples, rng, year):
         combo.clear_with(255)
         y = 0
         for p in pixmaps:
+            # A clipped Pixmap keeps its clip origin (p.x/p.y = the clip's
+            # top-left in page pixels); Pixmap.copy works in the SHARED
+            # coordinate space of both pixmaps, so without re-origining the
+            # copy rect misses the source data entirely (blank/misstacked
+            # renders). Re-origin each segment to its slot in the stack.
+            p.set_origin(0, y)
             combo.copy(p, fitz.IRect(0, y, p.width, y + p.height))
             y += p.height
         label = q.get("label", q["n"]).replace("/", "_")
@@ -513,13 +616,14 @@ def main():
 
         doc = fitz.open(pdf_path)
         cands = [grammar_pin] if grammar_pin else list(DETECTORS)
-        best = None  # (grammar, anchors, expected, reasons)
+        best = None  # (grammar, anchors, expected, reasons, gaps, hits)
         for g in cands:
-            anchors, expected, reasons = build_anchors(doc, DETECTORS[g](doc))
+            hits = DETECTORS[g](doc)
+            anchors, expected, reasons, gaps = build_anchors(doc, hits)
             if best is None or len(anchors) > len(best[1]):
-                best = (g, anchors, expected, reasons)
-        g, anchors, expected, reasons = best
-        drop = paper_gates(doc, anchors, expected, reasons)
+                best = (g, anchors, expected, reasons, gaps, hits)
+        g, anchors, expected, reasons, gaps, hits = best
+        drop, notes = paper_gates(doc, anchors, expected, reasons, gaps, hits)
         if drop:
             dropped += 1
             report.append((tag, "DROP", drop))
@@ -544,6 +648,8 @@ def main():
             rendered = qa_render(pdf_path, sidecar, rdir, args.qa_render, rng, r["year"])
         labels = ",".join(q.get("label", q["n"]) for q in sidecar["q"])
         detail = f"{len(sidecar['q'])}q [{labels}] via {g}"
+        for note in notes:
+            detail += f" · {note}"
         if rendered:
             detail += f" · {len(rendered)} QA crops"
         shipped += 1

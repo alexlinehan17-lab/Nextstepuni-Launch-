@@ -13050,7 +13050,7 @@ export const CURRICULUM: CurriculumSubject[] = [
     "strands": [
       {
         "id": "jc-religious-education-0",
-        "name": "Section A",
+        "name": "Beliefs, Faith & Sacred Texts",
         "subtopics": [
           {
             "id": "jc-religious-education-0-0",
@@ -13060,17 +13060,17 @@ export const CURRICULUM: CurriculumSubject[] = [
       },
       {
         "id": "jc-religious-education-1",
-        "name": "Section B",
+        "name": "Communities, Worship & Ritual",
         "subtopics": [
           {
             "id": "jc-religious-education-1-0",
-            "name": "Communities, worship, prayer & pilgrimage"
+            "name": "Communities, worship, ritual & pilgrimage"
           }
         ]
       },
       {
         "id": "jc-religious-education-2",
-        "name": "Section C",
+        "name": "Morality & Values",
         "subtopics": [
           {
             "id": "jc-religious-education-2-0",
@@ -13090,7 +13090,7 @@ export const CURRICULUM: CurriculumSubject[] = [
     "strands": [
       {
         "id": "jc-jewish-studies-0",
-        "name": "Section A",
+        "name": "Jewish Community Life & Practice",
         "subtopics": [
           {
             "id": "jc-jewish-studies-0-0",
@@ -13100,7 +13100,7 @@ export const CURRICULUM: CurriculumSubject[] = [
       },
       {
         "id": "jc-jewish-studies-1",
-        "name": "Section B",
+        "name": "The Jewish People & the Hebrew Bible",
         "subtopics": [
           {
             "id": "jc-jewish-studies-1-0",
@@ -13110,7 +13110,7 @@ export const CURRICULUM: CurriculumSubject[] = [
       },
       {
         "id": "jc-jewish-studies-2",
-        "name": "Section C",
+        "name": "Jewish History: Persecution, Liberation & Key Figures",
         "subtopics": [
           {
             "id": "jc-jewish-studies-2-0",

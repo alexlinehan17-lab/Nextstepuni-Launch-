@@ -49,6 +49,40 @@ HL Q12 cross-strand open essays).
   per-question consistency + per-year unseen/prescribed checks (2013 unseen
   confirmed against the paper; 2014 'Bianca come il latte' is the B1 unseen,
   not prescribed).
+- **Wave 7 — TV-3 no-taxonomy subjects (2026-07-07)**: every anchored subject
+  that had no `curriculum.ts` entry got a minimal honest, section/task-shaped
+  taxonomy plus full tagging — 47 subjects / 409 papers / 3,438 q:
+  - **20 LCA subjects** (189 papers / 1,614 q, DEIS priority): section-shaped
+    strands mirroring each paper's printed sections (e.g. Active Leisure's six
+    sections, Childcare's five, the MFL Listening / Reading+Written split);
+    question-titled ids where the papers print them (Agriculture's six
+    Section-Two modules, Engineering's Systems topics CAD/Electricity/
+    Electronics/Mechanisms/Pneumatics, Graphics' Section-2 questions incl.
+    Construction + Building Services, Technology's five titled questions);
+    content-classified ids for Crafts & Design disciplines and Mathematical
+    Applications themes.
+  - **16 non-curricular EU languages** (144 papers / 869 q): shared honest
+    shape — Part I Reading Comprehension (vocabulary-in-context vs
+    comprehension/discussion of the set text) + Part II Written Production
+    (anchored only in slovenian 2018/23/24 Q7 and danish 2018 Q7-Q8).
+  - **9 JC subjects + jc-irish-t1 + agricultural-economics +
+    history-early-modern** (76 papers / 955 q): task/section-shaped (Classics'
+    four printed sections; RE / Jewish Studies content-themed strands; Irish
+    T1 per-question task map; Ag-Econ Part 1 short questions; Early Modern
+    DBQ).
+  Ground truth: the anchored papers themselves — section headers and
+  per-question stems read from Storage for every subject; sidecar crop regions
+  used to resolve the graphics-and-construction 2016/2018/2023 anomalies
+  (2023 Q3 is Building Services, 2018 Q4 is Woodcraft). Independent
+  verification (3 passes: LCA, EU, JC/LC): 44 subjects 0 errors; corrections
+  applied for lca-crafts-and-design 2014 Q8 (video terms, not photography) and
+  swedish 2014 Q2 (synonym/vocabulary task), and — after the verifier showed
+  JC RE / Jewish Studies exam sections are not thematically stable year to
+  year — both subjects were re-tagged by question content against renamed
+  thematic strands (38 + 10 tags, corroborated by a second independent pass;
+  the one two-verifier disagreement, Jewish Studies 2022 Q11 Exodus, resolved
+  to the liberation strand for cross-year consistency). jc-graphics has no
+  anchored papers, so it remains untagged.
 
 Every question is classified against the subject's `curriculum.ts` taxonomy and
 re-checked by an independent adversarial verifier per chunk.
@@ -64,10 +98,8 @@ session transcripts). Accreditation-trustworthy.
 
 ### Not tagged yet (explicit, not silent)
 
-- **Anchored, but no curriculum.ts entry** (~407 papers): 16 non-curricular
-  EU/heritage languages, all 20 LCA subjects, 9 further JC subjects,
-  agricultural-economics, history-early-modern.
-- **DCG** has a taxonomy but no anchored papers yet.
+- **jc-graphics** has no anchored papers yet (Wave 7 covered every other
+  previously no-taxonomy subject).
 - Papers with no answer-map anchors at all cannot be tagged until they get
   paper-side anchors (the sidecar pipeline).
 
