@@ -9,7 +9,7 @@
   "q": [
    {
     "n": "1",
-    "primary": "computer-science-1-3"
+    "primary": "computer-science-1-27"
    },
    {
     "n": "2",
@@ -88,7 +88,7 @@
   "q": [
    {
     "n": "1",
-    "primary": "computer-science-1-3",
+    "primary": "computer-science-1-27",
     "secondary": "computer-science-1-7"
    }
   ]
@@ -103,7 +103,7 @@
   "q": [
    {
     "n": "1",
-    "primary": "computer-science-1-3"
+    "primary": "computer-science-1-27"
    },
    {
     "n": "2",
@@ -182,7 +182,7 @@
   "q": [
    {
     "n": "1",
-    "primary": "computer-science-1-3"
+    "primary": "computer-science-1-27"
    },
    {
     "n": "2",
@@ -239,7 +239,7 @@
    },
    {
     "n": "14",
-    "primary": "computer-science-1-3",
+    "primary": "computer-science-1-27",
     "secondary": "computer-science-1-7"
    },
    {
@@ -263,7 +263,7 @@
    },
    {
     "n": "2",
-    "primary": "computer-science-1-3"
+    "primary": "computer-science-1-27"
    },
    {
     "n": "3",
@@ -295,7 +295,7 @@
    },
    {
     "n": "9",
-    "primary": "computer-science-1-3",
+    "primary": "computer-science-1-27",
     "secondary": "computer-science-0-2"
    },
    {
@@ -342,7 +342,7 @@
    },
    {
     "n": "2",
-    "primary": "computer-science-1-3"
+    "primary": "computer-science-1-27"
    },
    {
     "n": "3",
@@ -374,7 +374,7 @@
    },
    {
     "n": "9",
-    "primary": "computer-science-1-3",
+    "primary": "computer-science-1-27",
     "secondary": "computer-science-0-2"
    },
    {
@@ -417,7 +417,7 @@
   "q": [
    {
     "n": "1",
-    "primary": "computer-science-1-3",
+    "primary": "computer-science-1-27",
     "secondary": "computer-science-1-19"
    },
    {
@@ -449,7 +449,7 @@
    },
    {
     "n": "8",
-    "primary": "computer-science-1-3",
+    "primary": "computer-science-1-27",
     "secondary": "computer-science-1-19"
    },
    {
@@ -525,7 +525,7 @@
    },
    {
     "n": "7",
-    "primary": "computer-science-1-3"
+    "primary": "computer-science-1-27"
    },
    {
     "n": "8",
@@ -544,7 +544,7 @@
    },
    {
     "n": "11",
-    "primary": "computer-science-1-3",
+    "primary": "computer-science-1-27",
     "secondary": "computer-science-1-2"
    },
    {
@@ -604,7 +604,7 @@
    },
    {
     "n": "7",
-    "primary": "computer-science-1-3",
+    "primary": "computer-science-1-27",
     "secondary": "computer-science-1-22"
    },
    {
@@ -624,7 +624,7 @@
    },
    {
     "n": "11",
-    "primary": "computer-science-1-3",
+    "primary": "computer-science-1-27",
     "secondary": "computer-science-1-2"
    },
    {
@@ -658,7 +658,7 @@
   "q": [
    {
     "n": "1",
-    "primary": "computer-science-1-3",
+    "primary": "computer-science-1-27",
     "secondary": "computer-science-0-2"
    },
    {
@@ -704,7 +704,7 @@
    },
    {
     "n": "11",
-    "primary": "computer-science-1-3"
+    "primary": "computer-science-1-27"
    },
    {
     "n": "12",
@@ -737,7 +737,7 @@
   "q": [
    {
     "n": "1",
-    "primary": "computer-science-1-3",
+    "primary": "computer-science-1-27",
     "secondary": "computer-science-1-19"
    },
    {
@@ -782,7 +782,7 @@
    },
    {
     "n": "11",
-    "primary": "computer-science-1-3"
+    "primary": "computer-science-1-27"
    },
    {
     "n": "12",
@@ -973,7 +973,7 @@
   "q": [
    {
     "n": "1",
-    "primary": "computer-science-1-3"
+    "primary": "computer-science-1-27"
    },
    {
     "n": "2",
@@ -1051,7 +1051,7 @@
   "q": [
    {
     "n": "1",
-    "primary": "computer-science-1-3"
+    "primary": "computer-science-1-27"
    },
    {
     "n": "2",
@@ -1129,7 +1129,7 @@
   "q": [
    {
     "n": "1",
-    "primary": "computer-science-1-3"
+    "primary": "computer-science-1-27"
    },
    {
     "n": "2",
@@ -1153,7 +1153,7 @@
    },
    {
     "n": "6",
-    "primary": "computer-science-1-3",
+    "primary": "computer-science-1-27",
     "secondary": "computer-science-0-2"
    },
    {
@@ -1210,7 +1210,7 @@
   "q": [
    {
     "n": "1",
-    "primary": "computer-science-1-3"
+    "primary": "computer-science-1-27"
    },
    {
     "n": "2",
@@ -1234,7 +1234,7 @@
    },
    {
     "n": "6",
-    "primary": "computer-science-1-3"
+    "primary": "computer-science-1-27"
    },
    {
     "n": "7",
@@ -1327,7 +1327,7 @@
    },
    {
     "n": "9",
-    "primary": "computer-science-1-3"
+    "primary": "computer-science-1-27"
    },
    {
     "n": "10",
@@ -1404,7 +1404,7 @@
    },
    {
     "n": "9",
-    "primary": "computer-science-1-3"
+    "primary": "computer-science-1-27"
    },
    {
     "n": "10",
@@ -1446,7 +1446,7 @@
   "q": [
    {
     "n": "1",
-    "primary": "computer-science-1-3"
+    "primary": "computer-science-1-28"
    },
    {
     "n": "2",
@@ -1486,7 +1486,7 @@
    },
    {
     "n": "10",
-    "primary": "computer-science-1-17",
+    "primary": "computer-science-1-29",
     "secondary": "computer-science-2-1"
    },
    {
@@ -1524,7 +1524,7 @@
   "q": [
    {
     "n": "1",
-    "primary": "computer-science-1-3",
+    "primary": "computer-science-1-27",
     "secondary": "computer-science-1-26"
    }
   ]

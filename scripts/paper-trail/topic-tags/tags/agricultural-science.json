@@ -42,7 +42,7 @@
    },
    {
     "n": "8",
-    "primary": "agricultural-science-1-4",
+    "primary": "agricultural-science-1-6",
     "secondary": "agricultural-science-1-2"
    },
    {
@@ -90,7 +90,7 @@
    },
    {
     "n": "18",
-    "primary": "agricultural-science-2-3",
+    "primary": "agricultural-science-2-6",
     "secondary": "agricultural-science-2-4"
    }
   ]
@@ -209,7 +209,7 @@
    },
    {
     "n": "3",
-    "primary": "agricultural-science-2-4",
+    "primary": "agricultural-science-2-6",
     "secondary": "agricultural-science-3-3"
    },
    {
@@ -254,7 +254,7 @@
    },
    {
     "n": "12",
-    "primary": "agricultural-science-1-5"
+    "primary": "agricultural-science-1-6"
    },
    {
     "n": "13",
@@ -298,7 +298,7 @@
   "q": [
    {
     "n": "1",
-    "primary": "agricultural-science-2-4",
+    "primary": "agricultural-science-2-6",
     "secondary": "agricultural-science-3-3"
    },
    {
@@ -471,7 +471,7 @@
    },
    {
     "n": "17",
-    "primary": "agricultural-science-2-4",
+    "primary": "agricultural-science-2-6",
     "secondary": "agricultural-science-2-3"
    },
    {
@@ -546,7 +546,7 @@
    },
    {
     "n": "13",
-    "primary": "agricultural-science-2-4",
+    "primary": "agricultural-science-2-6",
     "secondary": "agricultural-science-2-1"
    },
    {
@@ -654,7 +654,7 @@
    },
    {
     "n": "16",
-    "primary": "agricultural-science-2-4",
+    "primary": "agricultural-science-2-6",
     "secondary": "agricultural-science-2-5"
    },
    {
@@ -663,7 +663,7 @@
    },
    {
     "n": "18",
-    "primary": "agricultural-science-2-4",
+    "primary": "agricultural-science-2-6",
     "secondary": "agricultural-science-2-1"
    }
   ]

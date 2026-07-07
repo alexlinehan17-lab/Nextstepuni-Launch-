@@ -55,7 +55,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "irish-0-6",
-            "name": "Ullmhu don Bhealtriail (Oral Prep Strategy)"
+            "name": "Ullmhú don Bhéaltriail (Oral Prep Strategy)"
           }
         ]
       },
@@ -73,7 +73,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "irish-1-2",
-            "name": "Cuid C - Piosai Nuachta / Comhra Raidio"
+            "name": "Cuid C — Píosaí Nuachta / Comhrá Raidió"
           },
           {
             "id": "irish-1-3",
@@ -119,7 +119,11 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "irish-2-8",
-            "name": "Litir / Litir Fhoirmiuil (Letter)"
+            "name": "Litir / Litir Fhoirmiúil (Letter)"
+          },
+          {
+            "id": "irish-2-9",
+            "name": "Comhrá (Written Conversation — OL)"
           }
         ]
       },
@@ -141,7 +145,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "irish-3-3",
-            "name": "Cruinneas Teanga (Grammar within Leamhthuiscint B)"
+            "name": "Cruinneas Teanga (Grammar within Léamhthuiscint B)"
           }
         ]
       },
@@ -175,11 +179,47 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "irish-4-6",
-            "name": "Cáca Milis / An Lasair Choille"
+            "name": "Cáca Milis (Gearrscannán)"
           },
           {
             "id": "irish-4-7",
             "name": "Prós: Ábhar Roghnach"
+          },
+          {
+            "id": "irish-4-8",
+            "name": "An Lasair Choille (Gearrdhráma)"
+          },
+          {
+            "id": "irish-4-9",
+            "name": "Clann Lir (2027+)"
+          },
+          {
+            "id": "irish-4-10",
+            "name": "Athair (2027+)"
+          },
+          {
+            "id": "irish-4-11",
+            "name": "Glantóir (2027+)"
+          },
+          {
+            "id": "irish-4-12",
+            "name": "An Bóthar go Santiago (2027+)"
+          },
+          {
+            "id": "irish-4-13",
+            "name": "Cuairteoir (2027+)"
+          },
+          {
+            "id": "irish-4-14",
+            "name": "An tIriseoir (2027+)"
+          },
+          {
+            "id": "irish-4-15",
+            "name": "Eoinín na nÉan (Gearrscannán, 2027+)"
+          },
+          {
+            "id": "irish-4-16",
+            "name": "An Féileacán agus an Crann Úll (2027+)"
           }
         ]
       },
@@ -214,6 +254,26 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "irish-5-6",
             "name": "Filíocht: Ábhar Roghnach"
+          },
+          {
+            "id": "irish-5-7",
+            "name": "Dínit an Bhróin (2027+)"
+          },
+          {
+            "id": "irish-5-8",
+            "name": "Deireadh na Feide (2027+)"
+          },
+          {
+            "id": "irish-5-9",
+            "name": "Iníon (2027+)"
+          },
+          {
+            "id": "irish-5-10",
+            "name": "Glaoch Abhaile (2027+)"
+          },
+          {
+            "id": "irish-5-11",
+            "name": "Úirchill an Chreagáin (2027+)"
           }
         ]
       },
@@ -264,16 +324,56 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "irish-6-10",
             "name": "Éiceolaí"
+          },
+          {
+            "id": "irish-6-11",
+            "name": "Prós Breise (2027+) — Cóirín na dTonn"
+          },
+          {
+            "id": "irish-6-12",
+            "name": "Prós Breise (2027+) — An Nollaig Thiar"
+          },
+          {
+            "id": "irish-6-13",
+            "name": "Prós Breise (2027+) — Deirdre"
+          },
+          {
+            "id": "irish-6-14",
+            "name": "Prós Breise (2027+) — Dordán"
+          },
+          {
+            "id": "irish-6-15",
+            "name": "Prós Breise (2027+) — Bláth na dTulach"
+          },
+          {
+            "id": "irish-6-16",
+            "name": "Dán Breise (2027+) — Trén bhFearann Breac"
+          },
+          {
+            "id": "irish-6-17",
+            "name": "Dán Breise (2027+) — Eanáir 1991"
+          },
+          {
+            "id": "irish-6-18",
+            "name": "Dán Breise (2027+) — Ag Tiomáint Siar"
+          },
+          {
+            "id": "irish-6-19",
+            "name": "Dán Breise (2027+) — Dijeridiú"
+          },
+          {
+            "id": "irish-6-20",
+            "name": "Dán Breise (2027+) — Anthony Daly"
           }
         ]
       },
       {
         "id": "irish-7",
-        "name": "Litriocht: Anailis Chomparaideach & Comhthuiscint",
+        "name": "Litríocht: Anailís Chomparáideach & Comhthuiscint",
         "subtopics": [
           {
             "id": "irish-7-0",
-            "name": "Anailis Theamuil agus Stile (Theme & Technique)"
+            "name": "Anailís Théamúil agus Stíle (Theme & Technique)"
           },
           {
             "id": "irish-7-1",
@@ -308,6 +408,32 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "irish-8-5",
             "name": "Stór Focal agus Nathanna"
+          }
+        ]
+      },
+      {
+        "id": "irish-9",
+        "name": "An Bonnleibhéal (Foundation Level Tasks)",
+        "subtopics": [
+          {
+            "id": "irish-9-0",
+            "name": "Foirm a Líonadh (Fill in a Form)"
+          },
+          {
+            "id": "irish-9-1",
+            "name": "Pictiúir a Mheaitseáil le Téacs (Match Pictures with Text)"
+          },
+          {
+            "id": "irish-9-2",
+            "name": "Léamhthuiscintí Gearra (Bróisiúr / Litir / Sliocht / Alt / Dán)"
+          },
+          {
+            "id": "irish-9-3",
+            "name": "Scríobh — Litir / Fógra / Scéal"
+          },
+          {
+            "id": "irish-9-4",
+            "name": "Scéal ó Phictiúir (Write From Pictures)"
           }
         ]
       }
@@ -435,6 +561,334 @@ export const CURRICULUM: CurriculumSubject[] = [
             "name": "Functional writing (Paper 1, Question B)"
           }
         ]
+      },
+      {
+        "id": "english-11",
+        "name": "Prescribed Poets",
+        "subtopics": [
+          {
+            "id": "english-11-0",
+            "name": "Elizabeth Bishop"
+          },
+          {
+            "id": "english-11-1",
+            "name": "Eavan Boland"
+          },
+          {
+            "id": "english-11-2",
+            "name": "Emily Dickinson"
+          },
+          {
+            "id": "english-11-3",
+            "name": "John Donne"
+          },
+          {
+            "id": "english-11-4",
+            "name": "Paul Durcan"
+          },
+          {
+            "id": "english-11-5",
+            "name": "T.S. Eliot"
+          },
+          {
+            "id": "english-11-6",
+            "name": "Robert Frost"
+          },
+          {
+            "id": "english-11-7",
+            "name": "Thomas Hardy"
+          },
+          {
+            "id": "english-11-8",
+            "name": "Seamus Heaney"
+          },
+          {
+            "id": "english-11-9",
+            "name": "Gerard Manley Hopkins"
+          },
+          {
+            "id": "english-11-10",
+            "name": "Patrick Kavanagh"
+          },
+          {
+            "id": "english-11-11",
+            "name": "John Keats"
+          },
+          {
+            "id": "english-11-12",
+            "name": "Brendan Kennelly"
+          },
+          {
+            "id": "english-11-13",
+            "name": "Philip Larkin"
+          },
+          {
+            "id": "english-11-14",
+            "name": "D.H. Lawrence"
+          },
+          {
+            "id": "english-11-15",
+            "name": "Derek Mahon"
+          },
+          {
+            "id": "english-11-16",
+            "name": "Paula Meehan"
+          },
+          {
+            "id": "english-11-17",
+            "name": "John Montague"
+          },
+          {
+            "id": "english-11-18",
+            "name": "Eiléan Ní Chuilleanáin"
+          },
+          {
+            "id": "english-11-19",
+            "name": "Sylvia Plath"
+          },
+          {
+            "id": "english-11-20",
+            "name": "Adrienne Rich"
+          },
+          {
+            "id": "english-11-21",
+            "name": "Tracy K. Smith"
+          },
+          {
+            "id": "english-11-22",
+            "name": "William Wordsworth"
+          },
+          {
+            "id": "english-11-23",
+            "name": "W.B. Yeats"
+          },
+          {
+            "id": "english-11-24",
+            "name": "Fleur Adcock"
+          },
+          {
+            "id": "english-11-25",
+            "name": "Gwendolyn Brooks"
+          },
+          {
+            "id": "english-11-26",
+            "name": "Elizabeth Barrett Browning"
+          },
+          {
+            "id": "english-11-27",
+            "name": "Colette Bryce"
+          },
+          {
+            "id": "english-11-28",
+            "name": "Kate Clanchy"
+          },
+          {
+            "id": "english-11-29",
+            "name": "Rita Dove"
+          },
+          {
+            "id": "english-11-30",
+            "name": "Carol Ann Duffy"
+          },
+          {
+            "id": "english-11-31",
+            "name": "Linda France"
+          },
+          {
+            "id": "english-11-32",
+            "name": "Alison Joseph"
+          },
+          {
+            "id": "english-11-33",
+            "name": "Sinéad Morrissey"
+          },
+          {
+            "id": "english-11-34",
+            "name": "Paul Muldoon"
+          },
+          {
+            "id": "english-11-35",
+            "name": "Naomi Shihab Nye"
+          },
+          {
+            "id": "english-11-36",
+            "name": "Mary Oliver"
+          },
+          {
+            "id": "english-11-37",
+            "name": "Felicia Olusanya (FeliSpeaks)"
+          },
+          {
+            "id": "english-11-38",
+            "name": "Edgar Allan Poe"
+          },
+          {
+            "id": "english-11-39",
+            "name": "Edwin Arlington Robinson"
+          },
+          {
+            "id": "english-11-40",
+            "name": "Tim Seibles"
+          },
+          {
+            "id": "english-11-41",
+            "name": "William Shakespeare (Sonnets)"
+          },
+          {
+            "id": "english-11-42",
+            "name": "Percy Bysshe Shelley"
+          },
+          {
+            "id": "english-11-43",
+            "name": "Penelope Shuttle"
+          },
+          {
+            "id": "english-11-44",
+            "name": "Jessica Traynor"
+          },
+          {
+            "id": "english-11-45",
+            "name": "William Carlos Williams"
+          },
+          {
+            "id": "english-11-46",
+            "name": "James Wright"
+          },
+          {
+            "id": "english-11-47",
+            "name": "Benjamin Zephaniah"
+          }
+        ]
+      },
+      {
+        "id": "english-12",
+        "name": "Prescribed Texts (Single Text & Comparative)",
+        "subtopics": [
+          {
+            "id": "english-12-0",
+            "name": "Hamlet (Shakespeare)"
+          },
+          {
+            "id": "english-12-1",
+            "name": "King Lear (Shakespeare)"
+          },
+          {
+            "id": "english-12-2",
+            "name": "Macbeth (Shakespeare)"
+          },
+          {
+            "id": "english-12-3",
+            "name": "Othello (Shakespeare)"
+          },
+          {
+            "id": "english-12-4",
+            "name": "The Tempest (Shakespeare)"
+          },
+          {
+            "id": "english-12-5",
+            "name": "1984 (George Orwell)"
+          },
+          {
+            "id": "english-12-6",
+            "name": "A Doll's House (Henrik Ibsen)"
+          },
+          {
+            "id": "english-12-7",
+            "name": "A Raisin in the Sun (Lorraine Hansberry)"
+          },
+          {
+            "id": "english-12-8",
+            "name": "All the Light We Cannot See (Anthony Doerr)"
+          },
+          {
+            "id": "english-12-9",
+            "name": "By the Bog of Cats (Marina Carr)"
+          },
+          {
+            "id": "english-12-10",
+            "name": "Days Without End (Sebastian Barry)"
+          },
+          {
+            "id": "english-12-11",
+            "name": "Dracula (Bram Stoker)"
+          },
+          {
+            "id": "english-12-12",
+            "name": "Frankenstein (Mary Shelley)"
+          },
+          {
+            "id": "english-12-13",
+            "name": "Girl on an Altar (Marina Carr)"
+          },
+          {
+            "id": "english-12-14",
+            "name": "Hamnet (Maggie O'Farrell)"
+          },
+          {
+            "id": "english-12-15",
+            "name": "Persuasion (Jane Austen)"
+          },
+          {
+            "id": "english-12-16",
+            "name": "Philadelphia, Here I Come! (Brian Friel)"
+          },
+          {
+            "id": "english-12-17",
+            "name": "Pride and Prejudice (Jane Austen)"
+          },
+          {
+            "id": "english-12-18",
+            "name": "Room (Emma Donoghue)"
+          },
+          {
+            "id": "english-12-19",
+            "name": "Sive (John B. Keane)"
+          },
+          {
+            "id": "english-12-20",
+            "name": "The Cove (Ron Rash)"
+          },
+          {
+            "id": "english-12-21",
+            "name": "The Crucible (Arthur Miller)"
+          },
+          {
+            "id": "english-12-22",
+            "name": "The Great Gatsby (F. Scott Fitzgerald)"
+          },
+          {
+            "id": "english-12-23",
+            "name": "The Handmaid's Tale (Margaret Atwood)"
+          },
+          {
+            "id": "english-12-24",
+            "name": "The Lauras (Sara Taylor)"
+          },
+          {
+            "id": "english-12-25",
+            "name": "The Picture of Dorian Gray (Oscar Wilde)"
+          },
+          {
+            "id": "english-12-26",
+            "name": "The Playboy of the Western World (J.M. Synge)"
+          },
+          {
+            "id": "english-12-27",
+            "name": "The Spinning Heart (Donal Ryan)"
+          },
+          {
+            "id": "english-12-28",
+            "name": "The Tenant of Wildfell Hall (Anne Brontë)"
+          },
+          {
+            "id": "english-12-29",
+            "name": "The Underground Railroad (Colson Whitehead)"
+          },
+          {
+            "id": "english-12-30",
+            "name": "Wuthering Heights (Emily Brontë)"
+          }
+        ]
       }
     ]
   },
@@ -554,6 +1008,136 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "french-2-5",
             "name": "Francophone World Beyond France"
+          }
+        ]
+      },
+      {
+        "id": "french-3",
+        "name": "Aural (Listening Comprehension)",
+        "subtopics": [
+          {
+            "id": "french-3-0",
+            "name": "Aural — Conversation"
+          },
+          {
+            "id": "french-3-1",
+            "name": "Aural — Interview"
+          },
+          {
+            "id": "french-3-2",
+            "name": "Aural — News Pieces"
+          }
+        ]
+      },
+      {
+        "id": "french-4",
+        "name": "Oral Exam",
+        "subtopics": [
+          {
+            "id": "french-4-0",
+            "name": "Oral — General Conversation"
+          },
+          {
+            "id": "french-4-1",
+            "name": "Oral — Document (Optional)"
+          }
+        ]
+      },
+      {
+        "id": "french-5",
+        "name": "Reading Comprehension",
+        "subtopics": [
+          {
+            "id": "french-5-0",
+            "name": "Journalistic Comprehension (Newspaper / Magazine)"
+          },
+          {
+            "id": "french-5-1",
+            "name": "Literary Comprehension (Novel / Book Extract)"
+          },
+          {
+            "id": "french-5-2",
+            "name": "Interview-Format Comprehension (OL)"
+          },
+          {
+            "id": "french-5-3",
+            "name": "Website & Other Extract Comprehension (OL)"
+          }
+        ]
+      },
+      {
+        "id": "french-6",
+        "name": "Written Production — Tasks",
+        "subtopics": [
+          {
+            "id": "french-6-0",
+            "name": "Write a Diary Entry"
+          },
+          {
+            "id": "french-6-1",
+            "name": "Write a Letter (Formal / Informal)"
+          },
+          {
+            "id": "french-6-2",
+            "name": "Write a Note / Message"
+          },
+          {
+            "id": "french-6-3",
+            "name": "Write an Email"
+          },
+          {
+            "id": "french-6-4",
+            "name": "Write a Postcard (OL)"
+          },
+          {
+            "id": "french-6-5",
+            "name": "Fill in a Form (OL)"
+          },
+          {
+            "id": "french-6-6",
+            "name": "Cloze Test / Fill in the Gaps (OL)"
+          },
+          {
+            "id": "french-6-7",
+            "name": "Written Production — Narrative (récit)"
+          }
+        ]
+      },
+      {
+        "id": "french-7",
+        "name": "Opinion / Reaction Writing — Themes",
+        "subtopics": [
+          {
+            "id": "french-7-0",
+            "name": "Animals, Nature & the Environment"
+          },
+          {
+            "id": "french-7-1",
+            "name": "Education & School Life"
+          },
+          {
+            "id": "french-7-2",
+            "name": "Health & Lifestyle"
+          },
+          {
+            "id": "french-7-3",
+            "name": "Ireland, Travel, Tourism & Culture"
+          },
+          {
+            "id": "french-7-4",
+            "name": "Politics, Social Issues & Equality"
+          },
+          {
+            "id": "french-7-5",
+            "name": "Sport"
+          },
+          {
+            "id": "french-7-6",
+            "name": "Technology & Media"
+          },
+          {
+            "id": "french-7-7",
+            "name": "Youth, Teenagers & Family"
           }
         ]
       }
@@ -695,6 +1279,134 @@ export const CURRICULUM: CurriculumSubject[] = [
             "name": "Applied Grammar (Angewandte Grammatik)"
           }
         ]
+      },
+      {
+        "id": "german-4",
+        "name": "Aural (Hörverständnis) — Task Types",
+        "subtopics": [
+          {
+            "id": "german-4-0",
+            "name": "Aural — Interview"
+          },
+          {
+            "id": "german-4-1",
+            "name": "Aural — Phone Call"
+          },
+          {
+            "id": "german-4-2",
+            "name": "Aural — Dialogue"
+          },
+          {
+            "id": "german-4-3",
+            "name": "Aural — News Pieces"
+          }
+        ]
+      },
+      {
+        "id": "german-5",
+        "name": "Oral Exam — Published Materials",
+        "subtopics": [
+          {
+            "id": "german-5-0",
+            "name": "Oral — General Conversation"
+          },
+          {
+            "id": "german-5-1",
+            "name": "Picture Story 1 — Handy-Mobbing"
+          },
+          {
+            "id": "german-5-2",
+            "name": "Picture Story 2 — Chancen durch Deutsch"
+          },
+          {
+            "id": "german-5-3",
+            "name": "Picture Story 3 — Die Abi-Tour"
+          },
+          {
+            "id": "german-5-4",
+            "name": "Picture Story 4 — Die Geburtstagsüberraschung"
+          },
+          {
+            "id": "german-5-5",
+            "name": "Picture Story 5 — Mehr Windkraft – ja oder nein?"
+          },
+          {
+            "id": "german-5-6",
+            "name": "Role Play 1 — Hund verloren"
+          },
+          {
+            "id": "german-5-7",
+            "name": "Role Play 2 — Anruf bei der Redaktion"
+          },
+          {
+            "id": "german-5-8",
+            "name": "Role Play 3 — Interview fürs Fernsehen"
+          },
+          {
+            "id": "german-5-9",
+            "name": "Role Play 4 — Einladung zum Festival in Irland"
+          },
+          {
+            "id": "german-5-10",
+            "name": "Role Play 5 — Problem mit Touristen"
+          }
+        ]
+      },
+      {
+        "id": "german-6",
+        "name": "Reading Comprehension — Task Types",
+        "subtopics": [
+          {
+            "id": "german-6-0",
+            "name": "Comprehension — Magazine / Newspaper Text"
+          },
+          {
+            "id": "german-6-1",
+            "name": "Comprehension — Novel / Short Story"
+          }
+        ]
+      },
+      {
+        "id": "german-7",
+        "name": "Written Production — Task Types",
+        "subtopics": [
+          {
+            "id": "german-7-0",
+            "name": "Äußerung zum Thema (Write on a Theme)"
+          },
+          {
+            "id": "german-7-1",
+            "name": "Schriftliche Produktion — Picture-Based"
+          },
+          {
+            "id": "german-7-2",
+            "name": "Schriftliche Produktion — Letter"
+          },
+          {
+            "id": "german-7-3",
+            "name": "Write a Blog (OL)"
+          },
+          {
+            "id": "german-7-4",
+            "name": "Write a Story (OL)"
+          },
+          {
+            "id": "german-7-5",
+            "name": "Write an Application (OL)"
+          },
+          {
+            "id": "german-7-6",
+            "name": "Write an Email (OL)"
+          },
+          {
+            "id": "german-7-7",
+            "name": "Finish the Dialogue (OL)"
+          },
+          {
+            "id": "german-7-8",
+            "name": "Write on a Topic / Give Your Opinion (OL)"
+          }
+        ]
       }
     ]
   },
@@ -810,6 +1522,120 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "spanish-2-5",
             "name": "Prescribed Literature and Film for Opinion Writing"
+          }
+        ]
+      },
+      {
+        "id": "spanish-3",
+        "name": "Aural (Listening) — Task Types",
+        "subtopics": [
+          {
+            "id": "spanish-3-0",
+            "name": "Aural — Anuncio (Announcement)"
+          },
+          {
+            "id": "spanish-3-1",
+            "name": "Aural — Descriptivo (Description)"
+          },
+          {
+            "id": "spanish-3-2",
+            "name": "Aural — Diálogo (Dialogue)"
+          },
+          {
+            "id": "spanish-3-3",
+            "name": "Aural — El Tiempo (Weather Forecast)"
+          },
+          {
+            "id": "spanish-3-4",
+            "name": "Aural — Una Noticia (News Item)"
+          }
+        ]
+      },
+      {
+        "id": "spanish-4",
+        "name": "Oral Exam — Published Materials",
+        "subtopics": [
+          {
+            "id": "spanish-4-0",
+            "name": "Oral — General Conversation"
+          },
+          {
+            "id": "spanish-4-1",
+            "name": "Role Play 1 — Alojamiento"
+          },
+          {
+            "id": "spanish-4-2",
+            "name": "Role Play 2 — El portátil roto"
+          },
+          {
+            "id": "spanish-4-3",
+            "name": "Role Play 3 — Una autocaravana / cámper"
+          },
+          {
+            "id": "spanish-4-4",
+            "name": "Role Play 4 — El medio ambiente"
+          },
+          {
+            "id": "spanish-4-5",
+            "name": "Role Play 5 — Avería de coche"
+          }
+        ]
+      },
+      {
+        "id": "spanish-5",
+        "name": "Reading Comprehension — Task Types",
+        "subtopics": [
+          {
+            "id": "spanish-5-0",
+            "name": "Journalistic Text Comprehension"
+          },
+          {
+            "id": "spanish-5-1",
+            "name": "Short Comprehensions"
+          },
+          {
+            "id": "spanish-5-2",
+            "name": "Comprehension (OL)"
+          }
+        ]
+      },
+      {
+        "id": "spanish-6",
+        "name": "Written Production — Task Types",
+        "subtopics": [
+          {
+            "id": "spanish-6-0",
+            "name": "Opinion Essay (HL)"
+          },
+          {
+            "id": "spanish-6-1",
+            "name": "Write a Dialogue (HL)"
+          },
+          {
+            "id": "spanish-6-2",
+            "name": "Write a Letter / Email"
+          },
+          {
+            "id": "spanish-6-3",
+            "name": "Write a Diary Entry"
+          },
+          {
+            "id": "spanish-6-4",
+            "name": "Write a Note (OL)"
+          }
+        ]
+      },
+      {
+        "id": "spanish-7",
+        "name": "Prescribed Literature",
+        "subtopics": [
+          {
+            "id": "spanish-7-0",
+            "name": "El medallón perdido (Ana Alcolea)"
+          },
+          {
+            "id": "spanish-7-1",
+            "name": "Relato de un náufrago (Gabriel García Márquez)"
           }
         ]
       }
@@ -2614,7 +3440,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "mathematics-2-1",
-            "name": "Indices"
+            "name": "Indices & Logarithms"
           },
           {
             "id": "mathematics-2-2",
@@ -2684,7 +3510,7 @@ export const CURRICULUM: CurriculumSubject[] = [
       "higher",
       "ordinary"
     ],
-        "strands": [
+    "strands": [
       {
         "id": "applied-mathematics-0",
         "name": "Strand 1: Mathematical Modelling",
@@ -2780,6 +3606,26 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "applied-mathematics-2-8",
             "name": "Dimensional Analysis"
+          },
+          {
+            "id": "applied-mathematics-2-9",
+            "name": "Relative Velocity"
+          },
+          {
+            "id": "applied-mathematics-2-10",
+            "name": "Statics & Centre of Gravity"
+          },
+          {
+            "id": "applied-mathematics-2-11",
+            "name": "Hydrostatics"
+          },
+          {
+            "id": "applied-mathematics-2-12",
+            "name": "Rigid Body Motion & Moments of Inertia"
+          },
+          {
+            "id": "applied-mathematics-2-13",
+            "name": "Simple Harmonic Motion & Hooke's Law"
           }
         ]
       },
@@ -3807,6 +4653,36 @@ export const CURRICULUM: CurriculumSubject[] = [
             "name": "Particle Physics (Option, HL)"
           }
         ]
+      },
+      {
+        "id": "physics-and-chemistry-8",
+        "name": "Chemistry",
+        "subtopics": [
+          {
+            "id": "physics-and-chemistry-8-0",
+            "name": "Atomic Structure & the Periodic Table"
+          },
+          {
+            "id": "physics-and-chemistry-8-1",
+            "name": "Chemical Bonding"
+          },
+          {
+            "id": "physics-and-chemistry-8-2",
+            "name": "Acids, Bases, pH & Volumetric Analysis"
+          },
+          {
+            "id": "physics-and-chemistry-8-3",
+            "name": "Oxidation & Reduction"
+          },
+          {
+            "id": "physics-and-chemistry-8-4",
+            "name": "Organic Chemistry (Hydrocarbons)"
+          },
+          {
+            "id": "physics-and-chemistry-8-5",
+            "name": "General & Applied Chemistry"
+          }
+        ]
       }
     ]
   },
@@ -3833,7 +4709,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "biology-0-2",
-            "name": "Nutrition"
+            "name": "Food & Nutrition (Food Tests)"
           },
           {
             "id": "biology-0-3",
@@ -3855,11 +4731,11 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "biology-1-1",
-            "name": "Cell Metabolism"
+            "name": "Cell Metabolism & Enzymes"
           },
           {
             "id": "biology-1-2",
-            "name": "Cell Continuity"
+            "name": "Cell Continuity (Cell Division)"
           },
           {
             "id": "biology-1-3",
@@ -3867,7 +4743,19 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "biology-1-4",
-            "name": "Genetics"
+            "name": "Genetics, DNA & Evolution"
+          },
+          {
+            "id": "biology-1-5",
+            "name": "Photosynthesis"
+          },
+          {
+            "id": "biology-1-6",
+            "name": "Respiration"
+          },
+          {
+            "id": "biology-1-7",
+            "name": "Movement Through Cell Membranes"
           }
         ]
       },
@@ -3881,23 +4769,55 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "biology-2-1",
-            "name": "Organisation and the Vascular Structures"
+            "name": "Plant Structure & Transport"
           },
           {
             "id": "biology-2-2",
-            "name": "Transport and Nutrition"
+            "name": "Digestive System & Nutrition"
           },
           {
             "id": "biology-2-3",
-            "name": "Breathing System and Excretion"
+            "name": "Breathing System"
           },
           {
             "id": "biology-2-4",
-            "name": "Responses to Stimuli"
+            "name": "Nervous System & Responses to Stimuli"
           },
           {
             "id": "biology-2-5",
             "name": "Reproduction and Growth"
+          },
+          {
+            "id": "biology-2-6",
+            "name": "Blood & Circulatory System"
+          },
+          {
+            "id": "biology-2-7",
+            "name": "Excretion & Homeostasis"
+          },
+          {
+            "id": "biology-2-8",
+            "name": "Endocrine (Hormonal) System"
+          },
+          {
+            "id": "biology-2-9",
+            "name": "Sensory Organs (Eye & Ear)"
+          },
+          {
+            "id": "biology-2-10",
+            "name": "Musculoskeletal System"
+          },
+          {
+            "id": "biology-2-11",
+            "name": "Plant Responses"
+          },
+          {
+            "id": "biology-2-12",
+            "name": "Human Reproduction"
+          },
+          {
+            "id": "biology-2-13",
+            "name": "Plant Reproduction"
           }
         ]
       }
@@ -3965,6 +4885,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "agricultural-science-1-5",
             "name": "Management"
+          },
+          {
+            "id": "agricultural-science-1-6",
+            "name": "Fertilisers, Nutrient Cycles & the Environment"
           }
         ]
       },
@@ -3995,6 +4919,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "agricultural-science-2-5",
             "name": "Production: Harvesting"
+          },
+          {
+            "id": "agricultural-science-2-6",
+            "name": "Grassland Management"
           }
         ]
       },
@@ -4016,7 +4944,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "agricultural-science-3-3",
-            "name": "Production: System / Enterprise"
+            "name": "Animal Production Systems (Beef, Dairy, Sheep, Pig)"
           },
           {
             "id": "agricultural-science-3-4",
@@ -4240,6 +5168,18 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "computer-science-1-26",
             "name": "Cryptography and Encryption"
+          },
+          {
+            "id": "computer-science-1-27",
+            "name": "Python Programming"
+          },
+          {
+            "id": "computer-science-1-28",
+            "name": "JavaScript"
+          },
+          {
+            "id": "computer-science-1-29",
+            "name": "HTML & CSS"
           }
         ]
       },
@@ -4257,7 +5197,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "computer-science-2-2",
-            "name": "ALT1: Files and Databases"
+            "name": "Databases & Files (ALT1)"
           },
           {
             "id": "computer-science-2-3",
@@ -4390,7 +5330,15 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "accounting-2-4",
-            "name": "Correction of Errors and Tabular Statements"
+            "name": "Correction of Errors"
+          },
+          {
+            "id": "accounting-2-5",
+            "name": "Depreciation & Revaluation of Fixed Assets"
+          },
+          {
+            "id": "accounting-2-6",
+            "name": "Tabular Statements"
           }
         ]
       },
@@ -4404,7 +5352,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "accounting-3-1",
-            "name": "Trading, P&L and Balance Sheet"
+            "name": "Sole Trader Final Accounts"
           },
           {
             "id": "accounting-3-2",
@@ -4422,11 +5370,11 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "accounting-4-1",
-            "name": "Financial Statements of Companies"
+            "name": "Company Final Accounts"
           },
           {
             "id": "accounting-4-2",
-            "name": "Annual Reports of PLCs (HL)"
+            "name": "Published Accounts of PLCs (HL)"
           }
         ]
       },
@@ -4444,7 +5392,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "accounting-5-2",
-            "name": "Club and Service Firm Accounts"
+            "name": "Club Accounts"
           },
           {
             "id": "accounting-5-3",
@@ -4453,6 +5401,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "accounting-5-4",
             "name": "Farm Accounts"
+          },
+          {
+            "id": "accounting-5-5",
+            "name": "Service Firm Accounts"
           }
         ]
       },
@@ -4466,15 +5418,15 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "accounting-6-1",
-            "name": "Final Accounts via Control Accounts"
+            "name": "Incomplete Records — Control Accounts Method"
           },
           {
             "id": "accounting-6-2",
-            "name": "Profit via Net Worth Method"
+            "name": "Incomplete Records — Net Worth Method"
           },
           {
             "id": "accounting-6-3",
-            "name": "Profit via Mark-Up and Margin (HL)"
+            "name": "Incomplete Records — Mark-Up & Margin (HL)"
           }
         ]
       },
@@ -4518,7 +5470,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "accounting-8-1",
-            "name": "Accounting Ratios"
+            "name": "Interpretation of Accounts (Ratios)"
           },
           {
             "id": "accounting-8-2",
@@ -4572,11 +5524,11 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "accounting-9-2",
-            "name": "Product Costing"
+            "name": "Product & Absorption Costing (Overheads)"
           },
           {
             "id": "accounting-9-3",
-            "name": "Cost-Volume-Profit Analysis"
+            "name": "Marginal Costing & CVP Analysis"
           },
           {
             "id": "accounting-9-4",
@@ -4585,6 +5537,14 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "accounting-9-5",
             "name": "Flexible Budgeting (HL)"
+          },
+          {
+            "id": "accounting-9-6",
+            "name": "Cash Budgeting"
+          },
+          {
+            "id": "accounting-9-7",
+            "name": "Production & Product Budgeting"
           }
         ]
       },
@@ -4664,6 +5624,18 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "business-0-11",
             "name": "Communication and ICT in Business"
+          },
+          {
+            "id": "business-0-12",
+            "name": "1.1 People in Business & Contract Law"
+          },
+          {
+            "id": "business-0-13",
+            "name": "1.2 Conflict Resolution: The Consumer"
+          },
+          {
+            "id": "business-0-14",
+            "name": "1.3 Conflict Resolution: Industrial Relations"
           }
         ]
       },
@@ -4690,6 +5662,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "business-1-4",
             "name": "Applying Enterprise Skills"
+          },
+          {
+            "id": "business-1-5",
+            "name": "2.1 Enterprise"
           }
         ]
       },
@@ -4740,6 +5716,18 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "business-2-10",
             "name": "Controlling"
+          },
+          {
+            "id": "business-2-11",
+            "name": "3.1 Management Skills: Leading & Motivating"
+          },
+          {
+            "id": "business-2-12",
+            "name": "3.2 Management Skills: Communication & ICT"
+          },
+          {
+            "id": "business-2-13",
+            "name": "3.3 Management Activities: Planning, Organising, Controlling"
           }
         ]
       },
@@ -4810,6 +5798,30 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "business-3-15",
             "name": "Break-Even Analysis"
+          },
+          {
+            "id": "business-3-16",
+            "name": "4.1 Finance & Cash-Flow Management (Household & Business)"
+          },
+          {
+            "id": "business-3-17",
+            "name": "4.2 Insurance"
+          },
+          {
+            "id": "business-3-18",
+            "name": "4.3 Taxation"
+          },
+          {
+            "id": "business-3-19",
+            "name": "4.4 Ratio Analysis & Monitoring the Business"
+          },
+          {
+            "id": "business-3-20",
+            "name": "4.5 Human Resource Management"
+          },
+          {
+            "id": "business-3-21",
+            "name": "4.6 Managing Change & TQM"
           }
         ]
       },
@@ -4872,6 +5884,30 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "business-4-13",
             "name": "Sources of Finance (Short, Medium, Long Term)"
+          },
+          {
+            "id": "business-4-14",
+            "name": "5.1 Identifying Opportunities & New Product Development"
+          },
+          {
+            "id": "business-4-15",
+            "name": "5.2 Getting Started in Business"
+          },
+          {
+            "id": "business-4-16",
+            "name": "5.3 Marketing: Market Research & Segmentation"
+          },
+          {
+            "id": "business-4-17",
+            "name": "5.4 Marketing: The 4 Ps (Product, Price, Place, Promotion)"
+          },
+          {
+            "id": "business-4-18",
+            "name": "5.5 Business Expansion"
+          },
+          {
+            "id": "business-4-19",
+            "name": "ABQ — Applied Business Question (Units 3, 4 & 5)"
           }
         ]
       },
@@ -4930,6 +5966,26 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "business-5-12",
             "name": "Socially Responsible Business"
+          },
+          {
+            "id": "business-5-13",
+            "name": "6.1 Categories of Industry"
+          },
+          {
+            "id": "business-5-14",
+            "name": "6.2 Ownership Structures"
+          },
+          {
+            "id": "business-5-15",
+            "name": "6.3 Business, Government & the Economy"
+          },
+          {
+            "id": "business-5-16",
+            "name": "6.4 Community Development"
+          },
+          {
+            "id": "business-5-17",
+            "name": "6.5 Business Ethics & Social Responsibility"
           }
         ]
       },
@@ -4988,6 +6044,18 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "business-6-12",
             "name": "Transnational Companies"
+          },
+          {
+            "id": "business-6-13",
+            "name": "7.1 International Trade"
+          },
+          {
+            "id": "business-6-14",
+            "name": "7.2 The European Union"
+          },
+          {
+            "id": "business-6-15",
+            "name": "7.3 Global Business"
           }
         ]
       }
@@ -5043,6 +6111,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "economics-1-4",
             "name": "Elasticity (PED, PES, Income & Cross)"
+          },
+          {
+            "id": "economics-1-5",
+            "name": "Costs of Production, Revenue & Profit"
           }
         ]
       },
@@ -5108,7 +6180,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "economics-4-2",
-            "name": "Trade & Competitiveness"
+            "name": "International Trade & Competitiveness"
           }
         ]
       }
@@ -5129,7 +6201,7 @@ export const CURRICULUM: CurriculumSubject[] = [
         "subtopics": [
           {
             "id": "geography-0-0",
-            "name": "The Tectonic Cycle"
+            "name": "Plate Tectonics (The Tectonic Cycle)"
           },
           {
             "id": "geography-0-1",
@@ -5137,15 +6209,15 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "geography-0-2",
-            "name": "Landform Development (i): Geological Structures"
+            "name": "Folding & Faulting (Geological Structures)"
           },
           {
             "id": "geography-0-3",
-            "name": "Landform Development (ii): Rock Characteristics"
+            "name": "Karst Landscapes (Rock Characteristics)"
           },
           {
             "id": "geography-0-4",
-            "name": "Landform Development (iii): Surface Processes"
+            "name": "Surface Processes (General)"
           },
           {
             "id": "geography-0-5",
@@ -5154,6 +6226,26 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "geography-0-6",
             "name": "Human Interaction"
+          },
+          {
+            "id": "geography-0-7",
+            "name": "Earthquakes & Volcanoes"
+          },
+          {
+            "id": "geography-0-8",
+            "name": "Weathering & Mass Movement"
+          },
+          {
+            "id": "geography-0-9",
+            "name": "Rivers (Fluvial Processes & Landforms)"
+          },
+          {
+            "id": "geography-0-10",
+            "name": "The Sea (Coastal Processes & Landforms)"
+          },
+          {
+            "id": "geography-0-11",
+            "name": "Glaciation (Glacial Processes & Landforms)"
           }
         ]
       },
@@ -5176,6 +6268,18 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "geography-1-3",
             "name": "The Complexity of Regions (ii): Urban, Political and Cultural Regions"
+          },
+          {
+            "id": "geography-1-4",
+            "name": "Irish Regions"
+          },
+          {
+            "id": "geography-1-5",
+            "name": "European Regions"
+          },
+          {
+            "id": "geography-1-6",
+            "name": "Continental / Sub-Continental Regions"
           }
         ]
       },
@@ -5185,7 +6289,7 @@ export const CURRICULUM: CurriculumSubject[] = [
         "subtopics": [
           {
             "id": "geography-2-0",
-            "name": "Geographical Skills"
+            "name": "Geographical Skills (Graphs, Tables & Data)"
           },
           {
             "id": "geography-2-1",
@@ -5209,11 +6313,15 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "geography-2-6",
-            "name": "Ordnance Survey Maps and Aerial Photograph Interpretation"
+            "name": "Ordnance Survey Maps"
           },
           {
             "id": "geography-2-7",
-            "name": "Weather Maps, Synoptic Charts and Data (Graphs and Tables)"
+            "name": "Weather Maps & Synoptic Charts"
+          },
+          {
+            "id": "geography-2-8",
+            "name": "Aerial Photographs & Satellite Imagery"
           }
         ]
       },
@@ -5227,11 +6335,11 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "geography-3-1",
-            "name": "Spatial Variations in Development"
+            "name": "Developing Economies & Spatial Variations in Development"
           },
           {
             "id": "geography-3-2",
-            "name": "The Global Economy"
+            "name": "The Global Economy (Multinationals & Globalisation)"
           },
           {
             "id": "geography-3-3",
@@ -5240,6 +6348,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "geography-3-4",
             "name": "Environmental Impact"
+          },
+          {
+            "id": "geography-3-5",
+            "name": "Energy Resources"
           }
         ]
       },
@@ -5586,7 +6698,7 @@ export const CURRICULUM: CurriculumSubject[] = [
         "subtopics": [
           {
             "id": "history-2-0",
-            "name": "Ireland and the Union 1815-1870"
+            "name": "IRL 1: Ireland and the Union, 1815-1870"
           },
           {
             "id": "history-2-1",
@@ -5602,7 +6714,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "history-2-4",
-            "name": "Movements for Political & Social Reform 1870-1914"
+            "name": "IRL 2: Movements for Political & Social Reform, 1870-1914"
           },
           {
             "id": "history-2-5",
@@ -5618,7 +6730,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "history-2-8",
-            "name": "Pursuit of Sovereignty & the Impact of Partition 1912-1949"
+            "name": "IRL 3: The Pursuit of Sovereignty & the Impact of Partition, 1912-1949"
           },
           {
             "id": "history-2-9",
@@ -5634,7 +6746,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "history-2-12",
-            "name": "The Irish Diaspora 1840-1966"
+            "name": "IRL 4: The Irish Diaspora, 1840-1966"
           },
           {
             "id": "history-2-13",
@@ -5650,7 +6762,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "history-2-16",
-            "name": "Politics & Society in Northern Ireland 1949-1993"
+            "name": "IRL 5: Politics & Society in Northern Ireland, 1949-1993"
           },
           {
             "id": "history-2-17",
@@ -5666,7 +6778,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "history-2-20",
-            "name": "Government, Economy & Society in the Republic of Ireland 1949-1989"
+            "name": "IRL 6: Government, Economy & Society in the Republic of Ireland, 1949-1989"
           },
           {
             "id": "history-2-21",
@@ -5688,7 +6800,7 @@ export const CURRICULUM: CurriculumSubject[] = [
         "subtopics": [
           {
             "id": "history-3-0",
-            "name": "Nationalism & State Formation 1815-1871"
+            "name": "EUR 1: Nationalism & State Formation, 1815-1871"
           },
           {
             "id": "history-3-1",
@@ -5704,7 +6816,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "history-3-4",
-            "name": "Nation States & Tensions 1871-1920"
+            "name": "EUR 2: Nation States & International Tensions, 1871-1920"
           },
           {
             "id": "history-3-5",
@@ -5720,7 +6832,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "history-3-8",
-            "name": "Dictatorship & Democracy 1920-1945"
+            "name": "EUR 3: Dictatorship & Democracy, 1920-1945"
           },
           {
             "id": "history-3-9",
@@ -5736,7 +6848,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "history-3-12",
-            "name": "Division & Realignment in Europe 1945-1992"
+            "name": "EUR 4: Division & Realignment in Europe, 1945-1992"
           },
           {
             "id": "history-3-13",
@@ -5752,7 +6864,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "history-3-16",
-            "name": "European Retreat from Empire & the Aftermath 1945-1990"
+            "name": "EUR 5: European Retreat from Empire & the Aftermath, 1945-1990"
           },
           {
             "id": "history-3-17",
@@ -5768,7 +6880,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "history-3-20",
-            "name": "The US and the World 1945-1989"
+            "name": "EUR 6: The United States & the World, 1945-1989"
           },
           {
             "id": "history-3-21",
@@ -5842,6 +6954,14 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "politics-and-society-0-10",
             "name": "2.7 Key Thinkers"
+          },
+          {
+            "id": "politics-and-society-0-11",
+            "name": "Topic 1: Power & Decision-Making in the School"
+          },
+          {
+            "id": "politics-and-society-0-12",
+            "name": "Topic 2: Power & Decision-Making at National & European Level"
           }
         ]
       },
@@ -5892,6 +7012,14 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "politics-and-society-1-10",
             "name": "4.5 Democracy in Wider Society"
+          },
+          {
+            "id": "politics-and-society-1-11",
+            "name": "Topic 3: Effectively Contributing to Communities"
+          },
+          {
+            "id": "politics-and-society-1-12",
+            "name": "Topic 4: Rights & Responsibilities in Communication"
           }
         ]
       },
@@ -5938,6 +7066,14 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "politics-and-society-2-9",
             "name": "6.3 International Cooperation"
+          },
+          {
+            "id": "politics-and-society-2-10",
+            "name": "Topic 5: Human Rights & Responsibilities in Ireland"
+          },
+          {
+            "id": "politics-and-society-2-11",
+            "name": "Topic 6: Human Rights & Responsibilities in Europe & the Wider World"
           }
         ]
       },
@@ -5984,6 +7120,14 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "politics-and-society-3-9",
             "name": "8.3 Key Thinkers"
+          },
+          {
+            "id": "politics-and-society-3-10",
+            "name": "Topic 7: Globalisation & Identity"
+          },
+          {
+            "id": "politics-and-society-3-11",
+            "name": "Topic 8: Sustainable Development"
           }
         ]
       }
@@ -6567,7 +7711,11 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "art-4-5",
-            "name": "Post 1960"
+            "name": "Post 1960s Art"
+          },
+          {
+            "id": "art-4-6",
+            "name": "Europe and the World: Generic Questions"
           }
         ]
       },
@@ -6597,7 +7745,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "art-5-5",
-            "name": "Post 1960"
+            "name": "Post 1960s Art in Ireland"
           }
         ]
       },
@@ -6620,6 +7768,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "art-6-3",
             "name": "Art and the Environment"
+          },
+          {
+            "id": "art-6-4",
+            "name": "Today's World: Generic Questions"
           }
         ]
       }
@@ -6735,6 +7887,30 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "music-1-9",
             "name": "Higher Elective in Composing"
+          },
+          {
+            "id": "music-1-10",
+            "name": "Melody: Continuation of a Given Opening"
+          },
+          {
+            "id": "music-1-11",
+            "name": "Melody: Setting Music to a Given Text"
+          },
+          {
+            "id": "music-1-12",
+            "name": "Melody: Composing to a Given Dance Rhythm or Metre"
+          },
+          {
+            "id": "music-1-13",
+            "name": "Harmony: Adding Bass and Chords to a Tune"
+          },
+          {
+            "id": "music-1-14",
+            "name": "Harmony: Composing Melody and Bass from Chords"
+          },
+          {
+            "id": "music-1-15",
+            "name": "Harmony: Adding a Countermelody/Descant and Chords"
           }
         ]
       },
@@ -6777,6 +7953,26 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "music-2-8",
             "name": "Higher Elective in Listening"
+          },
+          {
+            "id": "music-2-9",
+            "name": "Set Work: Mozart — Piano Concerto No. 23"
+          },
+          {
+            "id": "music-2-10",
+            "name": "Set Work: Berlioz — Symphonie Fantastique"
+          },
+          {
+            "id": "music-2-11",
+            "name": "Set Work: Deane — Seachanges (with Danse Macabre)"
+          },
+          {
+            "id": "music-2-12",
+            "name": "Set Work: The Beatles — Sgt. Pepper's Lonely Hearts Club Band"
+          },
+          {
+            "id": "music-2-13",
+            "name": "Irish Music Essay"
           }
         ]
       }
@@ -6801,11 +7997,11 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "design-and-communication-graphics-0-1",
-            "name": "Orthographic Projection"
+            "name": "Orthographic and Auxiliary Projection"
           },
           {
             "id": "design-and-communication-graphics-0-2",
-            "name": "Isometric and Axonometric Projection"
+            "name": "Axonometric Projection (Isometric, Dimetric, Trimetric)"
           },
           {
             "id": "design-and-communication-graphics-0-3",
@@ -6825,7 +8021,35 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "design-and-communication-graphics-0-7",
-            "name": "Intersection and Development of Surfaces"
+            "name": "Developments and Envelopments"
+          },
+          {
+            "id": "design-and-communication-graphics-0-8",
+            "name": "Interpenetration (Intersection of Solids)"
+          },
+          {
+            "id": "design-and-communication-graphics-0-9",
+            "name": "Skew Lines"
+          },
+          {
+            "id": "design-and-communication-graphics-0-10",
+            "name": "The Oblique Plane"
+          },
+          {
+            "id": "design-and-communication-graphics-0-11",
+            "name": "Intersecting Planes (Lamina Planes)"
+          },
+          {
+            "id": "design-and-communication-graphics-0-12",
+            "name": "Solids in Contact"
+          },
+          {
+            "id": "design-and-communication-graphics-0-13",
+            "name": "Rotation and Inclination of Solids"
+          },
+          {
+            "id": "design-and-communication-graphics-0-14",
+            "name": "Tetrahedron"
           }
         ]
       },
@@ -6935,6 +8159,58 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "construction-studies-0-8",
             "name": "Sustainability, Passive House & U-Values"
+          },
+          {
+            "id": "construction-studies-0-9",
+            "name": "Foundations"
+          },
+          {
+            "id": "construction-studies-0-10",
+            "name": "Walls"
+          },
+          {
+            "id": "construction-studies-0-11",
+            "name": "Floors"
+          },
+          {
+            "id": "construction-studies-0-12",
+            "name": "Roofs"
+          },
+          {
+            "id": "construction-studies-0-13",
+            "name": "Windows and Doors"
+          },
+          {
+            "id": "construction-studies-0-14",
+            "name": "Stairs"
+          },
+          {
+            "id": "construction-studies-0-15",
+            "name": "Fireplaces and Fire Prevention"
+          },
+          {
+            "id": "construction-studies-0-16",
+            "name": "Site Safety"
+          },
+          {
+            "id": "construction-studies-0-17",
+            "name": "Condensation and Air Tightness"
+          },
+          {
+            "id": "construction-studies-0-18",
+            "name": "Hot Water and Space Heating"
+          },
+          {
+            "id": "construction-studies-0-19",
+            "name": "Wood, Rot and Ventilation"
+          },
+          {
+            "id": "construction-studies-0-20",
+            "name": "Conservation and Restoration"
+          },
+          {
+            "id": "construction-studies-0-21",
+            "name": "Question 1: Drawing Questions"
           }
         ]
       },
@@ -7136,6 +8412,14 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "engineering-1-11",
             "name": "Joining"
+          },
+          {
+            "id": "engineering-1-12",
+            "name": "Q2 Special Topic (Announced Annually)"
+          },
+          {
+            "id": "engineering-1-13",
+            "name": "Inventors and Engineers in Society"
           }
         ]
       },
@@ -7170,6 +8454,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "engineering-2-6",
             "name": "Corrosion"
+          },
+          {
+            "id": "engineering-2-7",
+            "name": "Equilibrium Diagrams"
           }
         ]
       },
@@ -8242,7 +9530,35 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "home-economics-0-4",
-            "name": "Food Safety, Hygiene & Legislation"
+            "name": "Food Spoilage, Safety & Hygiene (incl. Legislation)"
+          },
+          {
+            "id": "home-economics-0-5",
+            "name": "Nutrition: Protein"
+          },
+          {
+            "id": "home-economics-0-6",
+            "name": "Nutrition: Carbohydrates"
+          },
+          {
+            "id": "home-economics-0-7",
+            "name": "Nutrition: Lipids (Fats)"
+          },
+          {
+            "id": "home-economics-0-8",
+            "name": "Nutrition: Vitamins, Minerals & Water"
+          },
+          {
+            "id": "home-economics-0-9",
+            "name": "Food Commodities (Meat, Fish, Cereals, Fruit & Veg, Dairy, Eggs)"
+          },
+          {
+            "id": "home-economics-0-10",
+            "name": "Meal Planning & Preparation"
+          },
+          {
+            "id": "home-economics-0-11",
+            "name": "The Food Industry & Packaging"
           }
         ]
       },
@@ -8265,6 +9581,14 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "home-economics-1-3",
             "name": "Household Technology & Energy"
+          },
+          {
+            "id": "home-economics-1-4",
+            "name": "Household Textiles (Core)"
+          },
+          {
+            "id": "home-economics-1-5",
+            "name": "The Environment & Sustainable Living"
           }
         ]
       },
@@ -8283,6 +9607,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "home-economics-2-2",
             "name": "Education, Work & Leisure in Society"
+          },
+          {
+            "id": "home-economics-2-3",
+            "name": "Older People & the Family (Care Provision)"
           }
         ]
       },
@@ -8301,6 +9629,42 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "home-economics-3-2",
             "name": "Social Studies (elective)"
+          },
+          {
+            "id": "home-economics-3-3",
+            "name": "Elective 1: Housing Provision & Planning"
+          },
+          {
+            "id": "home-economics-3-4",
+            "name": "Elective 1: Interior Design"
+          },
+          {
+            "id": "home-economics-3-5",
+            "name": "Elective 1: Household Services (Heating, Water, Lighting)"
+          },
+          {
+            "id": "home-economics-3-6",
+            "name": "Elective 1: Energy & Emissions"
+          },
+          {
+            "id": "home-economics-3-7",
+            "name": "Elective 2: Fabrics & Fibres"
+          },
+          {
+            "id": "home-economics-3-8",
+            "name": "Elective 2: Patterns & Fashion"
+          },
+          {
+            "id": "home-economics-3-9",
+            "name": "Elective 3: Unemployment & Poverty"
+          },
+          {
+            "id": "home-economics-3-10",
+            "name": "Elective 3: Education in Ireland"
+          },
+          {
+            "id": "home-economics-3-11",
+            "name": "Elective 3: Family Life & Leisure"
           }
         ]
       }
@@ -8360,6 +9724,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "jc-english-1-5",
             "name": "Responding to Texts (Theme, Character, Author's Craft)"
+          },
+          {
+            "id": "jc-english-1-6",
+            "name": "Visual Literacy (Posters, Advertisements & Images)"
           }
         ]
       },
@@ -8530,6 +9898,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "jc-mathematics-1-7",
             "name": "Sets & Venn diagrams"
+          },
+          {
+            "id": "jc-mathematics-1-8",
+            "name": "Distance, speed & time (incl. real-life graphs)"
           }
         ]
       },
@@ -9268,6 +10640,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "jc-history-1-12",
             "name": "Local, personal and family history and its wider connections"
+          },
+          {
+            "id": "jc-history-1-13",
+            "name": "Celtic and pre-Christian Ireland: society, homes and daily life"
           }
         ]
       },
@@ -9330,6 +10706,358 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "jc-history-2-13",
             "name": "Patterns of change over time in a chosen theme (crime and punishment, food and drink, work and leisure, fashion, health and medicine)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jc-french",
+    "name": "French (Junior Cycle)",
+    "category": "language",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "jc-french-0",
+        "name": "Communicative Competence",
+        "subtopics": [
+          {
+            "id": "jc-french-0-0",
+            "name": "Aural: Short Conversations"
+          },
+          {
+            "id": "jc-french-0-1",
+            "name": "Aural: Long Conversations"
+          },
+          {
+            "id": "jc-french-0-2",
+            "name": "Aural: Long Piece (Monologue)"
+          },
+          {
+            "id": "jc-french-0-3",
+            "name": "Aural: News Pieces"
+          },
+          {
+            "id": "jc-french-0-4",
+            "name": "Reading: Answering Questions in English"
+          },
+          {
+            "id": "jc-french-0-5",
+            "name": "Reading: Answering Questions in French"
+          },
+          {
+            "id": "jc-french-0-6",
+            "name": "Reading: Matching Pictures with Descriptions"
+          },
+          {
+            "id": "jc-french-0-7",
+            "name": "Reading: Multiple Choice"
+          },
+          {
+            "id": "jc-french-0-8",
+            "name": "Writing: Answering Messages"
+          },
+          {
+            "id": "jc-french-0-9",
+            "name": "Writing: Completing Phrases"
+          },
+          {
+            "id": "jc-french-0-10",
+            "name": "Writing: Email / Blog"
+          },
+          {
+            "id": "jc-french-0-11",
+            "name": "Writing: Filling in a Form"
+          },
+          {
+            "id": "jc-french-0-12",
+            "name": "Spoken Production and Interaction"
+          }
+        ]
+      },
+      {
+        "id": "jc-french-1",
+        "name": "Language Awareness",
+        "subtopics": [
+          {
+            "id": "jc-french-1-0",
+            "name": "Grammar Awareness and Accuracy"
+          }
+        ]
+      },
+      {
+        "id": "jc-french-2",
+        "name": "Socio-cultural Knowledge and Intercultural Awareness",
+        "subtopics": [
+          {
+            "id": "jc-french-2-0",
+            "name": "Intercultural Awareness: France and the French-speaking World"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jc-german",
+    "name": "German (Junior Cycle)",
+    "category": "language",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "jc-german-0",
+        "name": "Communicative Competence",
+        "subtopics": [
+          {
+            "id": "jc-german-0-0",
+            "name": "Aural: Short Conversations"
+          },
+          {
+            "id": "jc-german-0-1",
+            "name": "Aural: Long Conversations"
+          },
+          {
+            "id": "jc-german-0-2",
+            "name": "Aural: Long Piece (Monologue)"
+          },
+          {
+            "id": "jc-german-0-3",
+            "name": "Aural: News Pieces"
+          },
+          {
+            "id": "jc-german-0-4",
+            "name": "Reading: Answering Questions in English"
+          },
+          {
+            "id": "jc-german-0-5",
+            "name": "Reading: Answering Questions in German"
+          },
+          {
+            "id": "jc-german-0-6",
+            "name": "Reading: Matching Pictures with Descriptions"
+          },
+          {
+            "id": "jc-german-0-7",
+            "name": "Reading: Multiple Choice"
+          },
+          {
+            "id": "jc-german-0-8",
+            "name": "Writing: Answering Messages"
+          },
+          {
+            "id": "jc-german-0-9",
+            "name": "Writing: Completing Phrases"
+          },
+          {
+            "id": "jc-german-0-10",
+            "name": "Writing: Email / Blog"
+          },
+          {
+            "id": "jc-german-0-11",
+            "name": "Writing: Filling in a Form"
+          },
+          {
+            "id": "jc-german-0-12",
+            "name": "Spoken Production and Interaction"
+          }
+        ]
+      },
+      {
+        "id": "jc-german-1",
+        "name": "Language Awareness",
+        "subtopics": [
+          {
+            "id": "jc-german-1-0",
+            "name": "Grammar Awareness and Accuracy"
+          }
+        ]
+      },
+      {
+        "id": "jc-german-2",
+        "name": "Socio-cultural Knowledge and Intercultural Awareness",
+        "subtopics": [
+          {
+            "id": "jc-german-2-0",
+            "name": "Intercultural Awareness: Germany and the German-speaking World"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jc-spanish",
+    "name": "Spanish (Junior Cycle)",
+    "category": "language",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "jc-spanish-0",
+        "name": "Communicative Competence",
+        "subtopics": [
+          {
+            "id": "jc-spanish-0-0",
+            "name": "Aural: Short Conversations"
+          },
+          {
+            "id": "jc-spanish-0-1",
+            "name": "Aural: Long Conversations"
+          },
+          {
+            "id": "jc-spanish-0-2",
+            "name": "Aural: Long Piece (Monologue)"
+          },
+          {
+            "id": "jc-spanish-0-3",
+            "name": "Aural: News Pieces"
+          },
+          {
+            "id": "jc-spanish-0-4",
+            "name": "Reading: Answering Questions in English"
+          },
+          {
+            "id": "jc-spanish-0-5",
+            "name": "Reading: Answering Questions in Spanish"
+          },
+          {
+            "id": "jc-spanish-0-6",
+            "name": "Reading: Matching Pictures with Descriptions"
+          },
+          {
+            "id": "jc-spanish-0-7",
+            "name": "Reading: Multiple Choice"
+          },
+          {
+            "id": "jc-spanish-0-8",
+            "name": "Writing: Answering Messages"
+          },
+          {
+            "id": "jc-spanish-0-9",
+            "name": "Writing: Completing Phrases"
+          },
+          {
+            "id": "jc-spanish-0-10",
+            "name": "Writing: Email / Blog"
+          },
+          {
+            "id": "jc-spanish-0-11",
+            "name": "Writing: Filling in a Form"
+          },
+          {
+            "id": "jc-spanish-0-12",
+            "name": "Spoken Production and Interaction"
+          }
+        ]
+      },
+      {
+        "id": "jc-spanish-1",
+        "name": "Language Awareness",
+        "subtopics": [
+          {
+            "id": "jc-spanish-1-0",
+            "name": "Grammar Awareness and Accuracy"
+          }
+        ]
+      },
+      {
+        "id": "jc-spanish-2",
+        "name": "Socio-cultural Knowledge and Intercultural Awareness",
+        "subtopics": [
+          {
+            "id": "jc-spanish-2-0",
+            "name": "Intercultural Awareness: Spain and the Spanish-speaking World"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jc-italian",
+    "name": "Italian (Junior Cycle)",
+    "category": "language",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "jc-italian-0",
+        "name": "Communicative Competence",
+        "subtopics": [
+          {
+            "id": "jc-italian-0-0",
+            "name": "Aural: Short Conversations"
+          },
+          {
+            "id": "jc-italian-0-1",
+            "name": "Aural: Long Conversations"
+          },
+          {
+            "id": "jc-italian-0-2",
+            "name": "Aural: Long Piece (Monologue)"
+          },
+          {
+            "id": "jc-italian-0-3",
+            "name": "Aural: News Pieces"
+          },
+          {
+            "id": "jc-italian-0-4",
+            "name": "Reading: Answering Questions in English"
+          },
+          {
+            "id": "jc-italian-0-5",
+            "name": "Reading: Answering Questions in Italian"
+          },
+          {
+            "id": "jc-italian-0-6",
+            "name": "Reading: Matching Pictures with Descriptions"
+          },
+          {
+            "id": "jc-italian-0-7",
+            "name": "Reading: Multiple Choice"
+          },
+          {
+            "id": "jc-italian-0-8",
+            "name": "Writing: Answering Messages"
+          },
+          {
+            "id": "jc-italian-0-9",
+            "name": "Writing: Completing Phrases"
+          },
+          {
+            "id": "jc-italian-0-10",
+            "name": "Writing: Email / Blog"
+          },
+          {
+            "id": "jc-italian-0-11",
+            "name": "Writing: Filling in a Form"
+          },
+          {
+            "id": "jc-italian-0-12",
+            "name": "Spoken Production and Interaction"
+          }
+        ]
+      },
+      {
+        "id": "jc-italian-1",
+        "name": "Language Awareness",
+        "subtopics": [
+          {
+            "id": "jc-italian-1-0",
+            "name": "Grammar Awareness and Accuracy"
+          }
+        ]
+      },
+      {
+        "id": "jc-italian-2",
+        "name": "Socio-cultural Knowledge and Intercultural Awareness",
+        "subtopics": [
+          {
+            "id": "jc-italian-2-0",
+            "name": "Intercultural Awareness: Italy and Italian Culture"
           }
         ]
       }

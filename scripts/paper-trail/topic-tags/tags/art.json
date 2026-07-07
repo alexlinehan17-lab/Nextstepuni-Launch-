@@ -63,13 +63,13 @@
    },
    {
     "n": "14",
-    "primary": "art-3-1",
-    "secondary": "art-4-4"
+    "primary": "art-4-6",
+    "secondary": "art-3-1"
    },
    {
     "n": "15",
-    "primary": "art-3-0",
-    "secondary": "art-4-4"
+    "primary": "art-4-6",
+    "secondary": "art-3-0"
    },
    {
     "n": "16",
@@ -170,8 +170,8 @@
    },
    {
     "n": "14",
-    "primary": "art-3-2",
-    "secondary": "art-4-1"
+    "primary": "art-4-6",
+    "secondary": "art-3-2"
    },
    {
     "n": "15",
@@ -277,13 +277,13 @@
    },
    {
     "n": "14",
-    "primary": "art-4-1",
-    "secondary": "art-4-3"
+    "primary": "art-4-6",
+    "secondary": "art-4-1"
    },
    {
     "n": "15",
-    "primary": "art-4-4",
-    "secondary": "art-4-2"
+    "primary": "art-4-6",
+    "secondary": "art-4-4"
    },
    {
     "n": "16",
@@ -376,8 +376,8 @@
    },
    {
     "n": "14",
-    "primary": "art-4-2",
-    "secondary": "art-4-4"
+    "primary": "art-4-6",
+    "secondary": "art-4-2"
    },
    {
     "n": "15",
@@ -479,13 +479,13 @@
    },
    {
     "n": "14",
-    "primary": "art-4-3",
-    "secondary": "art-4-2"
+    "primary": "art-4-6",
+    "secondary": "art-4-3"
    },
    {
     "n": "15",
-    "primary": "art-4-4",
-    "secondary": "art-4-3"
+    "primary": "art-4-6",
+    "secondary": "art-4-4"
    },
    {
     "n": "16",
@@ -583,13 +583,13 @@
    },
    {
     "n": "14",
-    "primary": "art-3-1",
-    "secondary": "art-3-2"
+    "primary": "art-4-6",
+    "secondary": "art-3-1"
    },
    {
     "n": "15",
-    "primary": "art-4-4",
-    "secondary": "art-3-0"
+    "primary": "art-4-6",
+    "secondary": "art-4-4"
    },
    {
     "n": "16",
@@ -684,8 +684,8 @@
    },
    {
     "n": "14",
-    "primary": "art-3-1",
-    "secondary": "art-3-2"
+    "primary": "art-4-6",
+    "secondary": "art-3-1"
    },
    {
     "n": "15",
@@ -788,13 +788,13 @@
    },
    {
     "n": "14",
-    "primary": "art-4-1",
-    "secondary": "art-4-4"
+    "primary": "art-4-6",
+    "secondary": "art-4-1"
    },
    {
     "n": "15",
-    "primary": "art-3-0",
-    "secondary": "art-4-4"
+    "primary": "art-4-6",
+    "secondary": "art-3-0"
    },
    {
     "n": "16",
@@ -887,8 +887,8 @@
    },
    {
     "n": "14",
-    "primary": "art-4-3",
-    "secondary": "art-4-1"
+    "primary": "art-4-6",
+    "secondary": "art-4-3"
    },
    {
     "n": "15",
@@ -990,13 +990,13 @@
    },
    {
     "n": "14",
-    "primary": "art-4-1",
-    "secondary": "art-4-4"
+    "primary": "art-4-6",
+    "secondary": "art-4-1"
    },
    {
     "n": "15",
-    "primary": "art-4-3",
-    "secondary": "art-4-4"
+    "primary": "art-4-6",
+    "secondary": "art-4-3"
    },
    {
     "n": "16",
@@ -1088,8 +1088,8 @@
    },
    {
     "n": "14",
-    "primary": "art-4-1",
-    "secondary": "art-4-4"
+    "primary": "art-4-6",
+    "secondary": "art-4-1"
    },
    {
     "n": "15",
@@ -1192,12 +1192,13 @@
    },
    {
     "n": "14",
-    "primary": "art-3-1"
+    "primary": "art-4-6",
+    "secondary": "art-3-1"
    },
    {
     "n": "15",
-    "primary": "art-3-0",
-    "secondary": "art-3-1"
+    "primary": "art-4-6",
+    "secondary": "art-3-0"
    },
    {
     "n": "16",
@@ -1289,8 +1290,8 @@
    },
    {
     "n": "14",
-    "primary": "art-4-3",
-    "secondary": "art-4-2"
+    "primary": "art-4-6",
+    "secondary": "art-4-3"
    },
    {
     "n": "15",
@@ -1393,13 +1394,13 @@
    },
    {
     "n": "14",
-    "primary": "art-4-3",
-    "secondary": "art-4-2"
+    "primary": "art-4-6",
+    "secondary": "art-4-3"
    },
    {
     "n": "15",
-    "primary": "art-4-4",
-    "secondary": "art-4-2"
+    "primary": "art-4-6",
+    "secondary": "art-4-4"
    },
    {
     "n": "16",
@@ -1491,8 +1492,8 @@
    },
    {
     "n": "14",
-    "primary": "art-4-1",
-    "secondary": "art-4-2"
+    "primary": "art-4-6",
+    "secondary": "art-4-1"
    },
    {
     "n": "15",
@@ -1597,13 +1598,13 @@
    },
    {
     "n": "14",
-    "primary": "art-4-1",
-    "secondary": "art-4-3"
+    "primary": "art-4-6",
+    "secondary": "art-4-1"
    },
    {
     "n": "15",
-    "primary": "art-4-2",
-    "secondary": "art-4-4"
+    "primary": "art-4-6",
+    "secondary": "art-4-2"
    },
    {
     "n": "16",
@@ -1697,13 +1698,13 @@
    },
    {
     "n": "14",
-    "primary": "art-3-2",
-    "secondary": "art-3-1"
+    "primary": "art-4-6",
+    "secondary": "art-3-2"
    },
    {
     "n": "15",
-    "primary": "art-3-0",
-    "secondary": "art-3-1"
+    "primary": "art-4-6",
+    "secondary": "art-3-0"
    },
    {
     "n": "16",

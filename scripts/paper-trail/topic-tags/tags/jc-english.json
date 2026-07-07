@@ -204,7 +204,8 @@
    },
    {
     "n": "5",
-    "primary": "jc-english-1-0"
+    "primary": "jc-english-1-6",
+    "secondary": "jc-english-1-0"
    },
    {
     "n": "6",
@@ -353,7 +354,7 @@
    },
    {
     "n": "12",
-    "primary": "jc-english-1-0",
+    "primary": "jc-english-1-6",
     "secondary": "jc-english-1-4"
    },
    {
@@ -610,11 +611,13 @@
    },
    {
     "n": "11",
-    "primary": "jc-english-1-0"
+    "primary": "jc-english-1-6",
+    "secondary": "jc-english-1-0"
    },
    {
     "n": "12",
-    "primary": "jc-english-1-0"
+    "primary": "jc-english-1-6",
+    "secondary": "jc-english-1-0"
    },
    {
     "n": "13",
@@ -723,8 +726,8 @@
    },
    {
     "n": "9",
-    "primary": "jc-english-1-0",
-    "secondary": "jc-english-1-5"
+    "primary": "jc-english-1-6",
+    "secondary": "jc-english-1-0"
    },
    {
     "n": "10",
@@ -764,7 +767,7 @@
    },
    {
     "n": "2",
-    "primary": "jc-english-1-0",
+    "primary": "jc-english-1-6",
     "secondary": "jc-english-1-4"
    },
    {
@@ -839,7 +842,7 @@
    },
    {
     "n": "7",
-    "primary": "jc-english-1-0",
+    "primary": "jc-english-1-6",
     "secondary": "jc-english-1-5"
    },
    {
