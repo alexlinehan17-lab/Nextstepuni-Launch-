@@ -11,18 +11,19 @@
  * (which reuses the cross-year jump).
  */
 
-import React, { useMemo, useState } from 'react';
-import { ArrowLeft, ChevronRight, Layers, Plus, Check, Download } from 'lucide-react';
+import React, { useEffect, useMemo, useState } from 'react';
+import { ArrowLeft, ChevronRight, Layers, Download } from 'lucide-react';
 import SubjectTilePicker from '../shared/SubjectTilePicker';
 import { siblingsFor, taggedYearsForSubject, topicLabel, topicsForSubject, type SubjectTopic, type TopicSibling } from './topics';
 import { addCard, hasCard, removeCard } from './reviewStore';
 import { masteryForSubject, type TopicMastery } from './topicMastery';
 import { downloadPack } from './revisionPack';
+import VaultQuestionCard from './VaultQuestionCard';
+import { releaseVaultPdfs } from './vaultDocs';
 
 const INK = '#1a1a1a';
 const ACCENT = '#F26B1F';
 const LVL: Record<string, string> = { higher: 'HL', ordinary: 'OL', foundation: 'FL', common: 'CL' };
-const paperAbbr = (k: string) => (k === 'p1' ? 'P1' : k === 'p2' ? 'P2' : '');
 
 interface Props {
   subjects: { id: string; label: string }[];
@@ -38,7 +39,13 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
   const [subjectId, setSubjectId] = useState<string | null>(null);
   const [subtopicId, setSubtopicId] = useState<string | null>(null);
   const [sort, setSort] = useState<'busiest' | 'frequent'>('busiest');
+  const [levelFilter, setLevelFilter] = useState<'all' | string>('all');
   const [revVer, setRevVer] = useState(0); // bump to re-read review-deck membership
+
+  // The vault feed keeps a small pool of open PDFs — release them on exit.
+  useEffect(() => () => releaseVaultPdfs(), []);
+  // A new topic starts with a fresh level filter.
+  useEffect(() => { setLevelFilter('all'); }, [subtopicId]);
 
   const toggleReview = (q: TopicSibling) => {
     const id = { subjectId: q.subjectId, year: q.year, level: q.level, lang: q.lang, fileid: q.fileid, n: q.n };
@@ -69,64 +76,65 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
     [subjectId, subtopicId],
   );
 
-  // ── Level 2: questions for a topic ──
+  // ── Level 2: the vault feed — every question on the topic, newest first,
+  //    rendered as real paper crops with the scheme behind a toggle. ──
   if (subjectId && subtopicId) {
     const years = new Set(questions.map(q => q.year));
+    const levels = [...new Set(questions.map(q => q.level))];
+    const shown = levelFilter === 'all' ? questions : questions.filter(q => q.level === levelFilter);
     return (
-      <div className="w-full max-w-xl mx-auto pb-12">
+      <div className="w-full max-w-2xl mx-auto pb-12">
         <button onClick={() => setSubtopicId(null)} className="flex items-center gap-1.5 text-[13px] font-medium mb-4" style={{ color: '#7a7068' }}>
           <ArrowLeft size={15} /> {subjectLabel(subjectId)} topics
         </button>
         <h2 className="text-2xl font-semibold mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{topicLabel(subtopicId)}</h2>
         <p className="text-[13px] mb-3" style={{ color: '#7a7068' }}>
-          {questions.length} question{questions.length === 1 ? '' : 's'} across {years.size} year{years.size === 1 ? '' : 's'} — tap to open with its marking scheme.
+          {questions.length} question{questions.length === 1 ? '' : 's'} across {years.size} year{years.size === 1 ? '' : 's'}, newest first —
+          each shown as printed on the paper, marking scheme one tap below.
         </p>
-        {questions.length > 0 && (
-          <button
-            onClick={() => downloadPack({
-              subjectLabel: subjectLabel(subjectId),
-              topicLabel: topicLabel(subtopicId),
-              questions,
-              dateIso: new Date(Date.now()).toISOString().slice(0, 10),
-            })}
-            className="inline-flex items-center gap-1.5 mb-4 rounded-full px-3.5 py-1.5 text-[12.5px] font-semibold border-2 transition-transform active:translate-y-0.5"
-            style={{ borderColor: 'rgba(242,107,31,0.35)', color: ACCENT }}
-          >
-            <Download size={14} /> Export revision pack
-          </button>
-        )}
-        <div className="space-y-1.5">
-          {questions.map(q => {
+        <div className="flex items-center gap-2 flex-wrap mb-4">
+          {levels.length > 1 && (
+            <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50 w-fit" role="group" aria-label="Filter by level">
+              {(['all', ...levels] as const).map(l => (
+                <button
+                  key={l}
+                  aria-pressed={levelFilter === l}
+                  onClick={() => setLevelFilter(l)}
+                  className={`px-3 py-1.5 rounded-lg text-[12px] transition-all ${levelFilter === l ? 'bg-white dark:bg-zinc-800 font-semibold shadow-sm' : ''}`}
+                  style={{ color: levelFilter === l ? INK : '#7a7068' }}
+                >
+                  {l === 'all' ? 'All levels' : LVL[l] ?? l}
+                </button>
+              ))}
+            </div>
+          )}
+          {questions.length > 0 && (
+            <button
+              onClick={() => downloadPack({
+                subjectLabel: subjectLabel(subjectId),
+                topicLabel: topicLabel(subtopicId),
+                questions,
+                dateIso: new Date(Date.now()).toISOString().slice(0, 10),
+              })}
+              className="inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-[12.5px] font-semibold border-2 transition-transform active:translate-y-0.5"
+              style={{ borderColor: 'rgba(242,107,31,0.35)', color: ACCENT }}
+            >
+              <Download size={14} /> Export revision pack
+            </button>
+          )}
+        </div>
+        <div className="space-y-4">
+          {shown.map(q => {
             void revVer; // recompute membership when the deck changes
             const saved = hasCard(uid, { subjectId: q.subjectId, year: q.year, level: q.level, lang: q.lang, fileid: q.fileid, n: q.n });
             return (
-              <div
+              <VaultQuestionCard
                 key={`${q.year}-${q.level}-${q.lang}-${q.fileid}-${q.n}`}
-                className="flex items-center gap-2 rounded-xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 pr-2 transition-transform hover:-translate-y-0.5"
-              >
-                <button
-                  onClick={() => onOpenQuestion(q)}
-                  className="flex-1 flex items-center gap-3 px-3.5 py-2.5 text-left transition-transform active:translate-y-0.5"
-                >
-                  <span className="shrink-0 w-11 text-[14px] font-bold tabular-nums" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{q.year}</span>
-                  <span className="flex-1 text-[12.5px]" style={{ color: '#5a5550' }}>
-                    {LVL[q.level] ?? q.level}{paperAbbr(q.paperKey) ? ` · ${paperAbbr(q.paperKey)}` : ''}{q.lang === 'iv' ? ' · Gaeilge' : ''} · Question {q.n}
-                  </span>
-                  <ChevronRight size={16} className="shrink-0" style={{ color: ACCENT }} />
-                </button>
-                <button
-                  onClick={() => toggleReview(q)}
-                  aria-pressed={saved}
-                  aria-label={saved ? 'Remove from daily review' : 'Add to daily review'}
-                  title={saved ? 'In your daily review' : 'Add to daily review'}
-                  className="shrink-0 w-8 h-8 rounded-lg flex items-center justify-center border-2 transition-colors"
-                  style={saved
-                    ? { backgroundColor: '#E8F2EC', borderColor: '#3A8D5F', color: '#1F5F3E' }
-                    : { backgroundColor: '#fff', borderColor: '#d0cdc8', color: '#9e9186' }}
-                >
-                  {saved ? <Check size={15} /> : <Plus size={15} />}
-                </button>
-              </div>
+                sibling={q}
+                saved={saved}
+                onToggleReview={() => toggleReview(q)}
+                onOpenInPaper={() => onOpenQuestion(q)}
+              />
             );
           })}
         </div>

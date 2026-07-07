@@ -61,37 +61,12 @@ import type { SubjectMarkingGrammar, SubjectTiming } from '../../types/knowledge
 import type { PaperTopicTags } from '../../types/paperTrailTopics';
 import type { PaperAnswerMap, PaperAnswerQuestion } from '../../types/paperTrail';
 import type { PDFDocumentProxy, PDFPageProxy } from 'pdfjs-dist';
+// pdf.js lazy singleton + region renderer — shared with the Topic Vault.
+import { loadPdfjs, type PdfjsModule } from './pdfjsLoader';
+import CropView from './CropView';
 
 // Sleek glide shared with the GC dashboard student-view tray.
 const GLIDE = { duration: 0.32, ease: [0.16, 1, 0.3, 1] as const };
-
-// ─── pdf.js lazy singleton ──────────────────────────────────
-
-// eslint-disable-next-line @typescript-eslint/consistent-type-imports -- typing a dynamic module namespace requires typeof import()
-type PdfjsModule = typeof import('pdfjs-dist/legacy/build/pdf.mjs');
-let pdfjsPromise: Promise<PdfjsModule> | null = null;
-
-function loadPdfjs(): Promise<PdfjsModule> {
-  if (!pdfjsPromise) {
-    pdfjsPromise = import('pdfjs-dist/legacy/build/pdf.mjs').then(mod => {
-      const worker = new Worker(
-        new URL('pdfjs-dist/legacy/build/pdf.worker.mjs', import.meta.url),
-        { type: 'module' },
-      );
-      // A worker whose script fails to fetch dies silently — reset the
-      // singleton so the next attempt can retry with a fresh worker.
-      worker.onerror = () => {
-        pdfjsPromise = null;
-      };
-      mod.GlobalWorkerOptions.workerPort = worker;
-      return mod;
-    });
-    pdfjsPromise.catch(() => {
-      pdfjsPromise = null; // allow retry after a transient failure
-    });
-  }
-  return pdfjsPromise;
-}
 
 const withTimeout = <T,>(p: Promise<T>, ms: number): Promise<T> =>
   new Promise((resolve, reject) => {
@@ -2533,85 +2508,6 @@ const RevealContent: React.FC<{
         </button>
       </div>
     </>
-  );
-};
-
-// ─── clipped scheme-region renderer ─────────────────────────
-//
-// Renders each region segment (a fractional rect of a scheme page) as its own
-// canvas, stacked vertically — the student sees a continuous crop of the real
-// scheme. Reuses the page-render → offscreen → blit pattern and the canvas-pixel
-// clamp from the main viewer.
-
-const CropView: React.FC<{ pdf: PDFDocumentProxy; region: PaperAnswerQuestion['region'] }> = ({ pdf, region }) => {
-  const hostRef = useRef<HTMLDivElement | null>(null);
-  const [failed, setFailed] = useState(false);
-
-  useEffect(() => {
-    let cancelled = false;
-    let task: { promise: Promise<void>; cancel: () => void } | null = null;
-    const host = hostRef.current;
-    if (!host) return;
-    host.replaceChildren();
-    setFailed(false);
-    (async () => {
-      try {
-        const cssWidth = Math.min(host.clientWidth || 320, 900);
-        const dpr = Math.min(window.devicePixelRatio || 1, 2);
-        for (const seg of region) {
-          if (cancelled) return;
-          const page = await pdf.getPage(seg.p);
-          if (cancelled) {
-            page.cleanup();
-            return;
-          }
-          const base = page.getViewport({ scale: 1 });
-          const r = seg.r ?? [0, 0, 1, 1];
-          const clipW = (r[2] - r[0]) * base.width;
-          const clipH = (r[3] - r[1]) * base.height;
-          if (clipW <= 0 || clipH <= 0) {
-            page.cleanup();
-            continue;
-          }
-          let scale = (cssWidth / clipW) * dpr;
-          const pixels = clipW * scale * (clipH * scale);
-          if (pixels > MAX_CANVAS_PIXELS) scale *= Math.sqrt(MAX_CANVAS_PIXELS / pixels);
-          const vp = page.getViewport({ scale });
-          const canvas = document.createElement('canvas');
-          canvas.width = Math.floor(clipW * scale);
-          canvas.height = Math.floor(clipH * scale);
-          // Shift the page so the clip rect's top-left lands at canvas (0,0).
-          const transform = [1, 0, 0, 1, -r[0] * base.width * scale, -r[1] * base.height * scale];
-          task = page.render({ canvas, viewport: vp, transform });
-          await task.promise;
-          task = null;
-          if (cancelled) {
-            page.cleanup();
-            return;
-          }
-          canvas.className = 'block w-full h-auto rounded-md shadow-sm mb-2 bg-white';
-          canvas.style.maxWidth = `${Math.floor((clipW * scale) / dpr)}px`;
-          canvas.setAttribute('role', 'img');
-          canvas.setAttribute('aria-label', `Marking scheme page ${seg.p}, shown as an image — © State Examinations Commission`);
-          host.appendChild(canvas);
-          page.cleanup();
-        }
-      } catch (e) {
-        // a cancelled render rejects routinely — only surface real failures
-        if (!cancelled && e instanceof Error && e.name !== 'RenderingCancelledException') setFailed(true);
-      }
-    })();
-    return () => {
-      cancelled = true;
-      task?.cancel();
-    };
-  }, [pdf, region]);
-
-  return (
-    <div>
-      <div ref={hostRef} className="mx-auto max-w-[900px]" />
-      {failed && <p className="text-[12px] text-zinc-500 text-center py-4">Couldn’t render this region — open the full scheme.</p>}
-    </div>
   );
 };
 
