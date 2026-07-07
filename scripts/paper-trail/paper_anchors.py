@@ -360,9 +360,30 @@ def contiguity_proof(doc, anchors, hits, content_pages):
     lead = sum(1 for pi in range(first_p) if not is_blank(doc[pi]))
     if lead > MAX_LEAD_PAGES:
         return f"{lead} content pages before the first anchor (> {MAX_LEAD_PAGES})"
-    if content_pages and (last_p - first_p + 1) / content_pages < MIN_ANCHOR_SPAN:
+
+    # Trailing answer-space tolerance. Booklet docs bind a large answer section
+    # AFTER the last question (biology Section-A&B docs carry ~28 pages of
+    # Section-C answerbook after Q10). Such pages are answer space, not hidden
+    # questions — provably so when NO detector (any grammar) finds a
+    # question-start marker on them. So the tiling floor measures the anchored
+    # span against content pages only up to the last page that bears a marker
+    # (of any grammar); a marker-free tail is excluded and cannot penalise
+    # coverage. If the tail DOES carry a cross-grammar marker (a possible
+    # missed question in another numbering), that page stays in the denominator
+    # and the floor still bites — the safe direction. This can only RAISE the
+    # ratio vs. the whole-doc denominator, so no previously-passing paper
+    # regresses.
+    marked = set()
+    for det in DETECTORS.values():
+        for h in det(doc):
+            marked.add(h[2])
+    last_marked = max(marked) if marked else last_p
+    tiling_end = max(last_p, last_marked)
+    tiling_pages = sum(1 for pi in range(tiling_end + 1) if not is_blank(doc[pi]))
+    if tiling_pages and (last_p - first_p + 1) / tiling_pages < MIN_ANCHOR_SPAN:
         return (f"anchored span {last_p - first_p + 1}p covers < "
-                f"{MIN_ANCHOR_SPAN:.0%} of {content_pages} content pages")
+                f"{MIN_ANCHOR_SPAN:.0%} of {tiling_pages} content pages up to the "
+                f"last question marker")
     return None
 
 

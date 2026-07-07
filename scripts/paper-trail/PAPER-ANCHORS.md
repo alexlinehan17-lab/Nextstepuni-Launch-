@@ -105,19 +105,45 @@ Question-level (drop the question):
   mismatch fails the whole paper.
 
 Paper-level (drop the paper):
-- **coverage gate**: ≥3 anchored questions and ≥60 % of expected (expected =
-  contiguous `1..max` per section, so a gap counts against coverage);
-- **hole gate**: a non-blank, unrotated page *between* anchors with no anchor
-  means a missed question whose neighbour's derived crop would swallow it →
-  drop the paper (this is what protects against the silent-missing-marker
-  failure mode);
-- **tail gate**: pages after the last anchor must be blank/"no examination
-  material" fillers or a short back cover; any real content there makes the
-  last question's extent uncertain → drop.
+- **coverage gate**: ≥3 anchored questions;
+- **numbering gate**: the detected numbers must form ONE contiguous run per
+  section. The run may start above 1 (biology Section-C docs legitimately
+  print 11..17 — "expected" counts `first..last`, not `1..N`). ANY gap inside
+  a run hard-drops the paper: a missing number is a missing **marker** (the
+  2011 OL maths P2 IV paper prints Q4's header as a dotless "4", so Q4 goes
+  undetected and Q3's derived crop would silently swallow it);
+- **monotonic gate**: anchors must be monotonic in print order;
+- **span gate**: consecutive anchors more than 3 pages apart (`MAX_PAGES`)
+  make the viewer's `paperRegionFor` refuse the crop — drop rather than emit
+  a sidecar CI would reject;
+- **contiguity proof → continuation-page tolerance**: when the run is gap-free
+  AND every raw detector hit sits inside its own question's print span (an
+  out-of-place duplicate would betray a numbering restart) AND the anchors
+  plausibly tile the document (≤3 content pages before the first anchor;
+  anchored span ≥50 % of the content pages), anchor-less content pages
+  *between or after* anchors are **continuation pages** (answer booklets,
+  multi-page questions) — they belong to the preceding question's crop and
+  the paper ships, with the tolerated pages noted in the report. Content
+  after the last anchor is acceptable under the proof (continuation + answer
+  space); note that the last question's crop is anchor → end of its **own**
+  page (viewer contract), so later continuation pages are simply not shown —
+  verify by render that last questions are neither truncated mid-part nor
+  absurdly over-extended;
+- **strict fallback**: when the contiguity proof fails, the original blanket
+  gates apply — **hole gate** (a non-blank, unrotated page *between* anchors
+  with no anchor means a missed question whose neighbour's derived crop would
+  swallow it → drop) and **tail gate** (pages after the last anchor must be
+  blank/"no examination material" fillers or a short back cover; any real
+  content there makes the last question's extent uncertain → drop).
 
-Render QA (`--qa-render N`): renders N random **derived** crops per anchored
-paper (a Python port of `paperRegionFor`, anchor N → anchor N+1) to PNG for
-visual verification that each crop starts at the right question.
+Render QA (`--qa-render N`): renders N **derived** crops per anchored paper
+(a Python port of `paperRegionFor`, anchor N → anchor N+1) to PNG for visual
+verification that each crop starts at the right question. The first and last
+questions are always in the sample (crop-start and last-question/tail are the
+highest-risk classes); the rest is a random draw. Multi-page crops are stacked
+into one PNG — note pymupdf clipped Pixmaps keep their clip origin, so each
+segment is re-origined (`set_origin`) before compositing, else segments land
+blank/misplaced.
 
 CI QA (`test/vaultAnchors.test.ts`): every committed sidecar must pass the
 runtime shape guard, claim no scheme (`schemeFileid: ""`, all `pagejump`,
