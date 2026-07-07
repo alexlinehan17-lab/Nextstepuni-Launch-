@@ -19,7 +19,7 @@ import { type PaperAnswerMap, type PaperAnswerQuestion } from '../../types/paper
 import CropView from './CropView';
 import { paperRegionFor } from './paperRegion';
 import { vaultPdf } from './vaultDocs';
-import { resolveSibling } from './vaultResolve';
+import { answerMapUrls, isAnswerMap, resolveSibling } from './vaultResolve';
 import { type TopicSibling } from './topics';
 
 const INK = '#1a1a1a';
@@ -28,18 +28,30 @@ const LVL: Record<string, string> = { higher: 'Higher', ordinary: 'Ordinary', fo
 
 // Session-scoped answer-map memo (small JSON sidecars; null = fetch failed /
 // not published yet — the card degrades to a plain open-in-paper row).
+// isAnswerMap guards the shape: the hosted fallback path is served by Firebase
+// Hosting, whose SPA rewrite answers missing files with index.html (200).
 const mapMemo = new Map<string, Promise<PaperAnswerMap | null>>();
-const fetchAnswerMap = (url: string): Promise<PaperAnswerMap | null> => {
+const fetchOneMap = (url: string): Promise<PaperAnswerMap | null> => {
   let p = mapMemo.get(url);
   if (!p) {
     p = fetch(url)
-      .then(r => (r.ok ? (r.json() as Promise<PaperAnswerMap>) : null))
+      .then(r => (r.ok ? r.json() : null))
+      .then(v => (isAnswerMap(v) ? v : null))
       .catch(() => null);
     mapMemo.set(url, p);
     // Don't memoise transient failures forever.
     p.then(v => { if (v === null) mapMemo.delete(url); });
   }
   return p;
+};
+/** First map that resolves from the ordered candidates (Storage sidecar, then
+ *  the hosted paper-anchors fallback) — misses cost one extra small fetch. */
+const fetchAnswerMap = async (urls: string[]): Promise<PaperAnswerMap | null> => {
+  for (const url of urls) {
+    const m = await fetchOneMap(url);
+    if (m) return m;
+  }
+  return null;
 };
 
 type CardState =
@@ -85,7 +97,7 @@ const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, on
     // cancel the in-flight load. The skeleton renders for 'idle' anyway.
     let cancelled = false;
     (async () => {
-      const map = await fetchAnswerMap(resolved.answersUrl);
+      const map = await fetchAnswerMap(answerMapUrls(resolved));
       if (cancelled) return;
       const q = map?.q.find(x => x.n === sibling.n);
       const region = map && q ? paperRegionFor(map.q, sibling.n) : null;
