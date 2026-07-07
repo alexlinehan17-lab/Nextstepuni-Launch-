@@ -49,7 +49,12 @@ subjects that can't are documented below with the reason.
 > Wave 7 (2026-06-13): **Geography** lights the **Part Two** structured/essay booklet (P043) only — Q1–12, HL+OL, 2020–2025 (the modern split-booklet format). The Part One short-answer answerbook collapses onto a 1-page scheme key and is deliberately dropped, and pre-2020 single-booklet years anchor on the cover. **Engineering** lights HL {2015, 2021–2025} and OL {2010, 2011, 2013–2016, 2018, 2019, 2021, 2023–2025}; the dropped years have a scheme summary-table that bleeds into the count and are dropped rather than mis-mapped. Engine gained ligature-mojibake normalisation (`QuesƟon`→`Question`), a short-answer↔structured grammar guard, paper/scheme spread guards (kills chip-on-cover + short-answer-key collapse), and a header-anchored last-question crop that stops at the practical-marking-scheme appendix.
 
 ### ⛔ Not text-mappable (4) — feature cannot apply
-- Design & Communication Graphics — visual/drawing (DCG)
+- Design & Communication Graphics — visual/drawing (DCG). Confirmed 2026-07-07 against the 2025 HL scheme: there is NO
+  short-answer Section A — the Section A paper (LC562ALP014EV) is a 3-page draw-on answer booklet (cover + return
+  notice + Section C contour-map insert) with no text-anchorable question headers, and Section B&C are drawing sheets.
+  The paper side has nothing to anchor a chip to, so the feature can't apply. (Nuance for a future wave: the scheme
+  itself DOES carry per-question text — pp4–13 itemised mark breakdowns "Question A-1…C-5" plus graphical solution
+  sheets pp15–24 — the blocker is the paper side, not the scheme.)
 - Hebrew Studies — scheme carries only generic marking guidance (how parts (a)/(b)/(c)
   are marked), zero question-specific answers; verified against HL 2019, HL 2018, OL 2015.
   Anchoring paper questions onto generic guidance would present non-answers as answers — drop.
@@ -70,10 +75,27 @@ _Wave 9: Technology + Agricultural Economics now generate per-question page-jump
 - French — language
 - German — language
 - Hebrew Studies — moved to ⛔ (scheme has no question-specific answers; see above)
-- History (Early Modern) — wrong scheme-file pairing in corpus
+- History (Early Modern) — ✅ sidecars ready (P2B wave 2026-07-07, `hem_history.py`: HL EV 2021–2022, the only years
+  with a scheme in the corpus). The "wrong scheme-file pairing" diagnosis was wrong: the SEC publishes ONE combined
+  History scheme per level/year (Later Modern half then Early Modern half) and the LC096 scheme uploads are
+  byte-identical to the LC004 ones — correct pairing. The generic engine still can't map it (first-hit markers land in
+  the Later Modern half = wrong field of study), so the bespoke generator pins the band to the "Early Modern" divider
+  page and maps the 4 DBQ questions, mirroring shipped LC004 HL coverage. QA: crops match each paper's case study
+  (2021 Jesuit mission in China, 2022 Meiler Magrath); `verify_all.py LC096` 8/8 OK. Drops: OL 2021–2022 (the OL scheme
+  repeats a compact 1.–4. "four parts" instruction list right before the real DBQ answers → first-marker banding
+  ambiguous; mainstream History OL is unshipped for the same reason), IV (out of EV scope)
 - Italian — language off-by-one
 - Japanese — language
-- Link Modules — needs per-subject grammar
+- Link Modules — ✅ sidecars ready (P2B wave 2026-07-07, `link_modules.py`: ALL 16 EV years 2010–2025, 277 questions;
+  2016/2017 papers live under the letter-O fileid `LC462CLPO00EV.pdf`). The needed grammar: Sections A/B/C each restart
+  Q.1–Q.N and the scheme mirrors the same `Q.n` blocks (mostly echoing the question text verbatim). Chips carry
+  `label: "Section X · Q n"` with globally sequential `n` (like the shipped language sidecars). Paper anchors pick the
+  marker PASS spanning the most pages (menu list and pre-2018 examiner marks grid each collapse onto 1–2 pages);
+  scheme pages where a section's numbering restarts (2019's embedded Section C menu) are blacklisted. QA: automated
+  paper-text↔crop-text word-overlap across all 277 questions (4 low-overlap flags manually verified correct — stimulus
+  vs sub-question phrasing); label-aware `verify_all.py LC462` 274 OK / 3 flags, each an extraction artifact
+  ("Q. 8" spaced marker / block-order clip) verified correct by the text echo. Drops: IV (out of EV scope); the 2016
+  Case Study stimulus booklet has no questions/scheme of its own
 - Music — off-by-one/partial
 - Polish — language
 - Politics and Society — ✅ LIVE (wave 10, HL+OL EV): Section A/B per-Q blocks + shared Section C essay criteria
@@ -95,7 +117,9 @@ Business Studies, English, Geography, Home Economics, Jewish Studies, Mathematic
 - Classical Studies — visual (Classical Studies)
 - Classics — visual (Classics)
 - Engineering — visual/drawing (Engineering)
-- Graphics — visual (Graphics)
+- Graphics — visual (Graphics). Confirmed 2026-07-07 against the 2025 scheme: the answer pages are annotated DRAWING
+  solutions with mark stamps ("Q1 (a) 2 2 2 2 (4 x 2 marks)") — per-question "Page N – Question N" headers exist, but
+  the content is graphical, not a readable text answer; correctly classified
 - Irish T1 — Irish T1, no EV
 - Irish — Irish-medium, no EV
 - Material Technology (Wood) — old-spec, no clean index id
@@ -110,7 +134,12 @@ Business Studies, English, Geography, Home Economics, Jewish Studies, Mathematic
   continuous across sections so the old chips-on-instructions failure does not recur with
   explicit Q-anchors; listening + writing skipped)
 - German — language 20/21
-- History — DBQ/essay
+- History — ✅ sidecars ready (P2B wave 2026-07-07, `jc_history.py`: all 4 EV years 2022–2025, 32 questions). The
+  "DBQ/essay" diagnosis is stale for the new-spec Junior Cycle scheme: every answer page carries a left-margin "Q N"
+  table stamp and the paper has clean "Question 1..8" headers, so each question's answer is the contiguous page RUN
+  stamped with its number (runs must tile the answer band or the paper drops). QA: all 32 crops open with the (a)
+  sub-question matching the paper's topic verbatim; `verify_all.py JC004` shows NOMARK (the spaced "Q N" stamp is
+  invisible to its detectors) — eyeballed via the generator's text echo instead. Drops: IV (out of EV scope)
 - Italian — ✅ sidecars ready (P2C wave: 2025, 2024 EV — Section B reading Q9–15 via `Q.N`
   scheme markers; listening + writing skipped)
 - Latin — needs per-subject grammar
@@ -122,9 +151,8 @@ Business Studies, English, Geography, Home Economics, Jewish Studies, Mathematic
 ### ✅ Live (12)
 Agriculture / Horticulture, Childcare / Community Care, Crafts & Design, English and Communications, French, German, Hair And Beauty, Hotel / Catering & Tourism, Information & Communication Tech., Italian, Office Admin And Customer, Sign Language
 
-### ⛔ Not text-mappable (9) — feature cannot apply
+### ⛔ Not text-mappable (8) — feature cannot apply
 - Contemporary Issues Task — portfolio Task (no exam)
-- Engineering — visual/drawing (LCA Engineering)
 - Gaeilge Chumarsáideach — Gaeilge, no EV
 - General Education Task — portfolio Task
 - Intro. to Information & Comm. Technology — no EV pair
@@ -133,8 +161,12 @@ Agriculture / Horticulture, Childcare / Community Care, Crafts & Design, English
 - Vocational Education Task — portfolio Task
 - Vocational Preparation Task — portfolio Task
 
-### 🔧 Bespoke grammar needed (6) — deferred (wrong-answer risk if rushed)
+### 🔧 Bespoke grammar needed (7) — deferred (wrong-answer risk if rushed)
 - Active Leisure Studies — needs per-subject grammar
+- Engineering — moved from ⛔: the "visual/drawing" record was WRONG (checked 2026-07-07, 2025 EV scheme + paper). LCA
+  Engineering is a WRITTEN exam (240 marks) whose scheme is an answered copy of the paper — Section 1 Q1–Q3 short
+  answers, Section 2 Q4–Q7 structured questions with per-question text answers and matching "QN." markers on both
+  sides. Feasible; needs its own generator run + per-paper QA (~11 EV papers)
 - Graphics And Construction Studies — project marking-criteria, not per-Q
 - Mathematical Applications — page-header framing
 - Social Education — Q15->Q12 mismatch
