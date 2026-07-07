@@ -496,6 +496,8 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
       onRecommendationAction={() => {
         handleGoToStudy();
       }}
+      onOpenTool={toolId => nav.navigateToInnovationZone(toolId)}
+      uid={user?.uid}
     />;
   }
 

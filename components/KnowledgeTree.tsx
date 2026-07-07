@@ -7,8 +7,10 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { MotionDiv } from './Motion';
 import {
   Rocket, ArrowRight, BarChart3, Compass,
-  User, Home, PanelLeft, Award, Settings, LogOut, Sun, Moon, RefreshCw, Mountain, Timer, Dumbbell, Bell, MessageSquare, Scissors
+  User, Home, PanelLeft, Award, Settings, LogOut, Sun, Moon, RefreshCw, Mountain, Timer, Dumbbell, Bell, MessageSquare, Scissors, HelpCircle
 } from 'lucide-react';
+import SiteGuide, { type GuideAction } from './SiteGuide';
+import FirstVisitCoachMarks, { coachMarksSeen } from './FirstVisitCoachMarks';
 import FeedbackQrModal from './FeedbackQrModal';
 import { getAvatarUrl } from '../utils/authUtils';
 import { type CourseData } from './Library';
@@ -66,12 +68,42 @@ interface KnowledgeTreeProps {
   questState?: { quest: { title: string; description: string; rewardPoints: number; target: number }; current: number; isCompleted: boolean; isClaimed: boolean; dayNumber: number; isOnboarding: boolean } | null;
   onClaimQuestReward?: () => void;
   onRecommendationAction?: (action: string) => void;
+  /** Deep-link a Launchpad tool by id (Site Guide "Take me there"). */
+  onOpenTool?: (toolId: string) => void;
+  /** Stable per-account key for one-time coach marks. */
+  uid?: string;
 }
 
 
-export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: _onSelectCategory, onGoToModules, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, onGoToInsights: _onGoToInsights, onGoToTrainingHub, onGoToCutContent, onGoToAccreditation, allCourses, onSelectModule: _onSelectModule, categoryTitles: _categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes: _unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction }) => {
+export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: _onSelectCategory, onGoToModules, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, onGoToInsights: _onGoToInsights, onGoToTrainingHub, onGoToCutContent, onGoToAccreditation, allCourses, onSelectModule: _onSelectModule, categoryTitles: _categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes: _unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction, onOpenTool, uid }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [feedbackQrOpen, setFeedbackQrOpen] = useState(false);
+  // Site Guide (the "?") + one-time first-visit coach marks.
+  const [guideOpen, setGuideOpen] = useState(false);
+  const [coachActive, setCoachActive] = useState(() => !coachMarksSeen(uid));
+
+  // Press "?" anywhere on the home page to open the guide.
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      const t = e.target as HTMLElement | null;
+      if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) return;
+      if (e.key === '?') setGuideOpen(true);
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, []);
+
+  const handleGuideGo = (action: GuideAction) => {
+    if (action === 'modules') onGoToModules();
+    else if (action === 'launchpad') onGoToInnovationZone();
+    else if (action === 'dashboard') onGoToDashboard();
+    else if (action === 'study') onGoToStudy?.();
+    else if (action.startsWith('tool:')) {
+      const toolId = action.slice(5);
+      if (onOpenTool) onOpenTool(toolId);
+      else onGoToInnovationZone();
+    }
+  };
 
   const sidebarItems = [
     { icon: Home, label: 'Home', onClick: () => {}, active: true },
@@ -279,6 +311,20 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
             </div>
             <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
               {settings.darkMode ? 'Light Mode' : 'Dark Mode'}
+            </span>
+          </button>
+
+          {/* How the site works — the Site Guide */}
+          <button
+            data-coach="help"
+            onClick={() => setGuideOpen(true)}
+            className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+          >
+            <div className="shrink-0 flex items-center justify-center w-[18px]">
+              <HelpCircle size={18} strokeWidth={1.5} className="text-[#F26B1F]" />
+            </div>
+            <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+              How the site works
             </span>
           </button>
 
@@ -608,20 +654,24 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
           transition={{ duration: 0.4, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
           className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4"
         >
-          <SectionCard
-            eyebrow="The Programme"
-            title="Modules"
-            subtitle={`Five worlds. ${totalModules} modules. ${totalModulesCompleted} complete.`}
-            icon={<ModulesIcon />}
-            onClick={onGoToModules}
-          />
-          <SectionCard
-            eyebrow="Explore"
-            title="Launchpad"
-            subtitle="Tools to plan, understand, and track."
-            icon={<InnovationZoneIcon />}
-            onClick={onGoToInnovationZone}
-          />
+          <div data-coach="modules">
+            <SectionCard
+              eyebrow="The Programme"
+              title="Modules"
+              subtitle={`Five worlds. ${totalModules} modules. ${totalModulesCompleted} complete.`}
+              icon={<ModulesIcon />}
+              onClick={onGoToModules}
+            />
+          </div>
+          <div data-coach="launchpad">
+            <SectionCard
+              eyebrow="Explore"
+              title="Launchpad"
+              subtitle="Tools to plan, understand, and track."
+              icon={<InnovationZoneIcon />}
+              onClick={onGoToInnovationZone}
+            />
+          </div>
           <SectionCard
             eyebrow="Dashboard"
             title="My Progress"
@@ -642,6 +692,18 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
       </div>
 
       <FeedbackQrModal open={feedbackQrOpen} onClose={() => setFeedbackQrOpen(false)} />
+
+      {/* The Site Guide — a swipeable tour of the core pages (the "?"). */}
+      <SiteGuide open={guideOpen} onClose={() => setGuideOpen(false)} onGo={handleGuideGo} />
+
+      {/* One-time first-visit coach marks — end by pointing at the "?". */}
+      {coachActive && !guideOpen && (
+        <FirstVisitCoachMarks
+          uid={uid}
+          onFinish={() => setCoachActive(false)}
+          onOpenGuide={() => { setCoachActive(false); setGuideOpen(true); }}
+        />
+      )}
     </div>
   );
 };
