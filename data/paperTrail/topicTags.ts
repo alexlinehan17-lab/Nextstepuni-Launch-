@@ -23453,17 +23453,17 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    },
    {
     "n": "4",
-    "primary": "geography-1-1",
+    "primary": "geography-1-4",
     "secondary": "geography-1-3"
    },
    {
     "n": "5",
-    "primary": "geography-1-1",
-    "secondary": "geography-1-4"
+    "primary": "geography-1-6",
+    "secondary": "geography-1-5"
    },
    {
     "n": "6",
-    "primary": "geography-1-1",
+    "primary": "geography-1-6",
     "secondary": "geography-1-0"
    },
    {
@@ -23594,15 +23594,16 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "4",
     "primary": "geography-1-0",
-    "secondary": "geography-1-1"
+    "secondary": "geography-1-5"
    },
    {
     "n": "5",
-    "primary": "geography-1-1"
+    "primary": "geography-1-6",
+    "secondary": "geography-1-4"
    },
    {
     "n": "6",
-    "primary": "geography-1-1",
+    "primary": "geography-1-6",
     "secondary": "geography-3-3"
    },
    {
@@ -23702,8 +23703,8 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    },
    {
     "n": "12",
-    "primary": "geography-4-5",
-    "secondary": "geography-4-2"
+    "primary": "geography-4-3",
+    "secondary": "geography-4-5"
    }
   ]
  },
@@ -23773,7 +23774,7 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "12",
     "primary": "geography-4-2",
-    "secondary": "geography-4-5"
+    "secondary": "geography-4-3"
    }
   ]
  },
@@ -23873,7 +23874,7 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "4",
     "primary": "geography-3-3",
-    "secondary": "geography-1-1"
+    "secondary": "geography-1-4"
    },
    {
     "n": "5",
@@ -23912,7 +23913,7 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "12",
     "primary": "geography-4-3",
-    "secondary": "geography-4-5"
+    "secondary": "geography-4-4"
    }
   ]
  },
@@ -24032,7 +24033,7 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "8",
     "primary": "geography-3-2",
-    "secondary": "geography-5-3"
+    "secondary": "geography-3-4"
    },
    {
     "n": "9",
@@ -24046,7 +24047,7 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    },
    {
     "n": "11",
-    "primary": "geography-4-5",
+    "primary": "geography-4-3",
     "secondary": "geography-4-2"
    },
    {
@@ -24152,16 +24153,16 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "4",
     "primary": "geography-3-3",
-    "secondary": "geography-1-1"
+    "secondary": "geography-1-6"
    },
    {
     "n": "5",
     "primary": "geography-1-5",
-    "secondary": "geography-1-1"
+    "secondary": "geography-1-6"
    },
    {
     "n": "6",
-    "primary": "geography-1-3",
+    "primary": "geography-1-0",
     "secondary": "geography-1-4"
    },
    {
@@ -24331,8 +24332,8 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    },
    {
     "n": "12",
-    "primary": "geography-4-5",
-    "secondary": "geography-4-0"
+    "primary": "geography-4-3",
+    "secondary": "geography-4-5"
    }
   ]
  },
@@ -24437,12 +24438,12 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "5",
     "primary": "geography-1-0",
-    "secondary": "geography-1-1"
+    "secondary": "geography-1-5"
    },
    {
     "n": "6",
-    "primary": "geography-1-1",
-    "secondary": "geography-3-3"
+    "primary": "geography-1-4",
+    "secondary": "geography-1-1"
    },
    {
     "n": "7",
@@ -24581,7 +24582,7 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    },
    {
     "n": "6",
-    "primary": "geography-1-1",
+    "primary": "geography-1-6",
     "secondary": "geography-1-4"
    },
    {
@@ -24602,7 +24603,7 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "10",
     "primary": "geography-4-2",
-    "secondary": "geography-4-3"
+    "secondary": "geography-4-4"
    },
    {
     "n": "11",
@@ -24711,13 +24712,13 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    },
    {
     "n": "4",
-    "primary": "geography-1-1",
+    "primary": "geography-1-5",
     "secondary": "geography-1-3"
    },
    {
     "n": "5",
     "primary": "geography-1-3",
-    "secondary": "geography-1-1"
+    "secondary": "geography-1-6"
    },
    {
     "n": "6",
@@ -24737,7 +24738,7 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "9",
     "primary": "geography-3-3",
-    "secondary": "geography-5-3"
+    "secondary": "geography-3-5"
    },
    {
     "n": "10",
@@ -24782,7 +24783,7 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "4",
     "primary": "geography-1-4",
-    "secondary": "geography-1-1"
+    "secondary": "geography-1-5"
    },
    {
     "n": "5",
