@@ -12,6 +12,7 @@
 import React, { useMemo } from 'react';
 import { ArrowLeft, ArrowRight, Award, Download, Flame, Repeat, Target, TrendingDown } from 'lucide-react';
 import { computeProgress } from './progressStats';
+import { markerLicence } from './trust';
 import { masteredCount } from './topicMastery';
 import { downloadReport } from './progressReport';
 import GuardianConsent from './GuardianConsent';
@@ -68,6 +69,7 @@ const Stat: React.FC<{ icon: React.ReactNode; value: string; label: string }> = 
 const ProgressDashboard: React.FC<Props> = ({ uid, now, subjectLabel, onDrill, onBack, onRoute }) => {
   const p = useMemo(() => computeProgress(uid, now), [uid, now]);
   const mastered = useMemo(() => masteredCount(uid), [uid, now]);
+  const licence = useMemo(() => markerLicence(uid), [uid, now]);
 
   const topGap = (Object.entries(p.gaps) as [GapKind, number][])
     .filter(([, c]) => c > 0)
@@ -125,6 +127,25 @@ const ProgressDashboard: React.FC<Props> = ({ uid, now, subjectLabel, onDrill, o
             <p className="text-[13px] -mt-3 mb-6 flex items-center gap-1.5" style={{ color: SUCCESS }}>
               <Award size={15} /> <b style={{ color: '#1F5F3E' }}>{mastered}</b>&nbsp;topic{mastered === 1 ? '' : 's'} taken to mastery so far — proven by accuracy and retention.
             </p>
+          )}
+
+          {/* Marker's Licence (F3) — the trust level behind every self-mark. */}
+          {p.totalMarks > 0 && (
+            licence ? (
+              <p className="text-[12.5px] -mt-2 mb-6 rounded-xl px-3.5 py-2.5" style={{ backgroundColor: '#E8F2EC', color: '#1F5F3E' }}>
+                Your self-marks carry a <b>{licence.pct}%-calibrated eye</b> ({licence.band.toLowerCase()}) — measured against real
+                SEC marking keys over {licence.sessions} sessions in The Examiner’s Chair.
+              </p>
+            ) : onRoute ? (
+              <button
+                onClick={() => onRoute('chair')}
+                className="w-full text-left text-[12.5px] -mt-2 mb-6 rounded-xl px-3.5 py-2.5 border-2 transition-transform active:translate-y-0.5"
+                style={{ borderColor: 'rgba(242,107,31,0.35)', color: '#8C3A0E', backgroundColor: '#FDEEDF' }}
+              >
+                A self-mark is only as good as the eye behind it. Train yours against real SEC marking keys in
+                <b> The Examiner’s Chair</b> — three sessions earn your marker’s licence. <ArrowRight size={13} className="inline -mt-0.5" />
+              </button>
+            ) : null
           )}
 
           {/* Accuracy by subject */}

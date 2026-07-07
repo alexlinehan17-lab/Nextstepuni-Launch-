@@ -46,6 +46,7 @@ import { prettyBytes } from './storage';
 import { scanDocument, type CommandToken, type DocTokens, type MarkToken } from './textOverlay';
 import { frequencyFor, siblingsFor, topicLabel, type TopicSibling } from './topics';
 import { loadAttempt, setMark, setTriage, type GapKind, type SelfMark, type TriageRating } from './attemptStore';
+import { markerLicence, type MarkerLicence } from './trust';
 import { recordActivity } from './streakStore';
 import type { ExaminerInsightSet } from '../../data/paperTrail/examinerInsights';
 import type { FormulaeHandle, FormulaePageIndex } from '../../data/paperTrailFormulae';
@@ -1255,6 +1256,7 @@ const Viewer: React.FC<ViewerProps> = ({
                 copyright={answerMap?.copyright}
                 selfMark={selfMarkOn}
                 existingMark={attempt.marks?.[reveal.n]}
+                licence={storageNs ? markerLicence(storageNs.split('|')[0]) : null}
                 onRecordMark={m => recordMark(reveal.n, m)}
                 onClose={() => setReveal(null)}
                 onFullScheme={jumpSchemeToPage}
@@ -1959,10 +1961,12 @@ const RevealContent: React.FC<{
   copyright?: string;
   selfMark?: boolean;
   existingMark?: SelfMark;
+  /** Marker's Licence — calibration earned in The Examiner's Chair (F3). */
+  licence?: MarkerLicence | null;
   onRecordMark?: (mark: SelfMark | null) => void;
   onClose: () => void;
   onFullScheme: (page: number) => void;
-}> = ({ q, wide, reduced, schemePdf, schemeUrl, schemeErrored, copyright, selfMark, existingMark, onRecordMark, onClose, onFullScheme }) => {
+}> = ({ q, wide, reduced, schemePdf, schemeUrl, schemeErrored, copyright, selfMark, existingMark, licence, onRecordMark, onClose, onFullScheme }) => {
   const firstPage = q.region[0]?.p;
   const closeRef = useRef<HTMLButtonElement | null>(null);
   useEffect(() => {
@@ -2020,9 +2024,16 @@ const RevealContent: React.FC<{
       </MotionDiv>
       {selfMark && (
         <div className="shrink-0 px-4 py-3 border-t border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900">
-          <p className="text-[11px] font-bold uppercase tracking-[0.1em] mb-2" style={{ color: '#9e9186' }}>
-            How did you do against the scheme?
-          </p>
+          <div className="flex items-baseline justify-between gap-2 mb-2">
+            <p className="text-[11px] font-bold uppercase tracking-[0.1em]" style={{ color: '#9e9186' }}>
+              How did you do against the scheme?
+            </p>
+            {licence && (
+              <span className="shrink-0 text-[10.5px] font-semibold rounded-full px-2 py-0.5" style={{ backgroundColor: '#E8F2EC', color: '#1F5F3E' }}>
+                {licence.pct}%-calibrated eye · {licence.sessions} chair sessions
+              </span>
+            )}
+          </div>
           <div className="flex items-center gap-1.5 mb-2">
             {SCORE_BANDS.map(b => {
               const active = scored === b.v;
