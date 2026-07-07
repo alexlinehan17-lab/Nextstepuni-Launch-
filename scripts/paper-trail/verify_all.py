@@ -63,6 +63,24 @@ def first_marker(txt):
     return None
 
 
+LABEL_NUM = re.compile(r"(?:Q|Question|Ceist)\.?\s*(\d{1,2})", re.I)
+
+
+def label_number(q):
+    """Printed question number carried by a section-restart `label`, or None.
+
+    lang_reading/wave10 maps set q.n to a sequential integer while the paper's
+    printed numbers restart per section; the printed number lives in the label
+    (e.g. "Text II · Q1"). When present, the crop's first marker should match
+    THIS, not n. (Audit 2026-07: label-consistency auto-clears 1,059 of the
+    1,230 language flags the n-only screen raises.)"""
+    lab = q.get("label")
+    if not lab:
+        return None
+    m = LABEL_NUM.search(lab)
+    return int(m.group(1)) if m else None
+
+
 def clip_text(pg, r):
     W, H = pg.rect.width, pg.rect.height
     x0, y0, x1, y1 = r
@@ -97,11 +115,12 @@ def main():
                 txt = clip_text(sd[seg0["p"] - 1], seg0["r"])
                 fm = first_marker(txt)
                 code = f"{yd}/{fn[:-5]}"
+                ln_expect = label_number(q)
                 if fm is None:
                     n_nomark += 1
                     line0 = " ".join(t.strip() for t in delig(txt).splitlines() if t.strip())[:60]
                     nomarks.append(f"  NOMARK  {code} Q{n} p{seg0['p']}: {line0}")
-                elif fm == n:
+                elif fm == n or (ln_expect is not None and fm == ln_expect):
                     n_ok += 1
                 else:
                     n_mis += 1
