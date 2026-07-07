@@ -193,3 +193,19 @@ papers/{cycle}/{sid}/{year}/audio/ → PaperItem gains optional audio doc →
 a small <audio> bar in the Viewer beside the aural booklet, same © SEC
 attribution. Sizing note: several hundred exam-length mp3s = real Storage/
 egress cost; size it from the recovered manifest first.
+
+## Coverage-completion wave (2026-07-07, CV-1/2/3) — status
+
+Superseded notes above: English P2 now maps 2010-2025 (the 2017+ gap was
+unprobed, not structural); Business HL Section 3 booklets 2020-2025 all map
+(bespoke band past the SEC's 2021 header restyle); Geography Part Two now maps
+2010-2025 (pre-2020 cover-anchor mechanism guarded); Engineering maps all
+years (fused 'Question1' token + x-jitter were the real blockers); LCA
+Engineering complete (14 years); LCA Spanish, Estonian complete (15 years
+each); Mandarin written papers, JC French, JC Italian complete.
+
+OPEN: Arabic remaining years (~25 papers beyond the three committed) — the
+mapping run was interrupted by a session limit mid-QA and, per the honesty
+bar, nothing un-QA'd ships; resume with the P2-C explicit-fraction specs.
+Ship step for everything above: publish/cv1|cv2|cv3-upload.tsv + profiles +
+index rebuild (task-tracked).
