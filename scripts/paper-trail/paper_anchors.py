@@ -174,6 +174,62 @@ SUBJECT_GRAMMAR = {
     # inside Section C (2025 IV prints '1.'/'2.'/'3.' list lines that would
     # win the auto tie) — the fabricated-numbers trap class (2026-07 wave).
     "computer-science": "question",
+    # MFL wave (2026-07): french, german, italian, japanese and russian ship
+    # NOTHING — every paper class (written P1/P2, aural, BV combined)
+    # restarts bare-'N.' numbering per section (and the covers print numbered
+    # instruction lists), so they drop wholesale at the strict gates
+    # (section-restart class; needs a section-aware detector).
+    # spanish is the exception: the aural papers number ONE continuous task
+    # run (old spec '1. ANUNCIO:'.. '7. UNA NOTICIA:' via lead_int; 2023+
+    # 'Question 1..7' via question) and ship. CAUTION — the spanish
+    # 'Section B' reading-text handouts (LC012?LP015*/LPO15*, 2pp) print
+    # NUMBERED TEXT PARAGRAPHS 1..7 that pass every gate as fake questions
+    # (paragraph-numbering trap, kin of the fabricated-numbers class); their
+    # 24 sidecars were deleted post-run — do not ship 015/O15 docs.
+    # latin + ancient-greek print a short genuine left-margin 'N.' run
+    # (latin 1..5; greek HL 1..4 / OL 1..3 — verified question headers:
+    # 'Translate into English…', 'Answer three of…') starting on page 2 in
+    # every era (2026-07 wave).
+    "latin": "lead_int",
+    "ancient-greek": "lead_int",
+    # arabic ships NOTHING: the text layer carries no per-question markers of
+    # any grammar. CAUTION — the ONLY lead_int hits are the cover-page
+    # instructions list ('1. Read these directions…', all five on p1), which
+    # would PASS the contiguity proof (single-page anchor span, no other
+    # markers → span ratio 1.0) and ship a garbage sidecar; the pin keeps
+    # lead_int out so every paper drops on coverage (2026-07 wave).
+    "arabic": "question",
+    # mandarin-chinese prints 'Question N' (new-spec subject, 2022+).
+    # CAUTION: cover/instruction lines ('Answer either Question 1 OR
+    # Question 2') also fire the detector at the left margin; papers where
+    # that garbles the run drop non-monotonic, but ALWAYS render-verify Q1's
+    # crop on anchored papers — an instruction-page Q1 anchor is the
+    # residual risk (2026-07 wave).
+    "mandarin-chinese": "question",
+    # JC wave (2026-07): the new-spec JC booklets print 'Question N'
+    # continuously (maths 1..14, science 1..17, history 1..8, business
+    # 1..18). Pinned because lead_int fabricates 3-12 anchors from numbered
+    # lists / sub-parts in every one of them (fabricated-numbers class).
+    # jc-geography's remaining docs (Map / Source Paper single sheets) carry
+    # no markers of any grammar and drop on coverage.
+    "jc-mathematics": "question",
+    "jc-science": "question",
+    "jc-history": "question",
+    "jc-business-studies": "question",
+    "jc-geography": "question",
+    # Same 'Question N' class (jc-home-economics' lead_int fires 54 times on
+    # answer-table rows — the pin is load-bearing there). jc-graphics
+    # (rotated 90° sheets) and jc-music (no markers) drop wholesale under
+    # any grammar; pinned for uniformity.
+    "jc-french": "question",
+    "jc-italian": "question",
+    "jc-irish": "question",
+    "jc-applied-technology": "question",
+    "jc-classics": "question",
+    "jc-home-economics": "question",
+    "jc-jewish-studies": "question",
+    "jc-music": "question",
+    "jc-graphics": "question",
     # physical-education prints 'Question N' (1..16/18 booklets). CAUTION —
     # two trap classes (2026-07 wave): (a) 2022+ papers print an
     # instruction-line 'Question 13 …' at the left margin of the cover page;
