@@ -121,6 +121,69 @@ SUBJECT_GRAMMAR = {
     # (continuation pages tolerated), while a broken run (e.g. 2011 OL P2 IV
     # prints Q4's header dotless, so Q4 goes undetected) hard-drops at the
     # numbering gate (2026-07 recovery wave — see the out/ reports).
+    #
+    # Business + humanities wave (2026-07). Verified against the text layers:
+    # accounting prints one continuous left-margin 'N.' run (Q1..Q9, one
+    # question per page) in every era; internal numbered lists exist but the
+    # real headers always precede them in print order (anchor lines verified).
+    "accounting": "lead_int",
+    # economics 2021+ is a 'Question N' answer booklet (16 questions,
+    # contiguity-proven); pre-2021 papers carry NO question-word tokens and
+    # restart bare 'N.' numbering per section (Section A 1..9, Section B
+    # essays restart at 1) — under this pin they anchor 0 questions and drop
+    # cleanly instead of tripping over the restart.
+    "economics": "question",
+    # religious-education prints 'Question N' in Section A only: OL has Q1-3
+    # (ships), HL has Q1-2 (< MIN_QUESTIONS, drops). Sections B-J are
+    # unnumbered essay tasks with no markers of any grammar.
+    "religious-education": "question",
+    # irish prints 'Ceist N': only the foundation-level aural papers number
+    # continuously (Ceist 1..12); HL/OL Paper 1/2 and aural papers restart
+    # numbering per section (léamhthuiscint texts A/B, Cuid A/B/C) and drop.
+    # Bare-'N.' tokens in these papers are sub-parts, never question starts.
+    "irish": "question",
+    # classical-studies new-spec (2024+) prints 'Question N' (exam booklets
+    # and the 004BV source booklets); old-spec papers organise by 'Topic N.'
+    # headers with roman-numeral parts — no supported grammar, zero detector
+    # hits, correct wholesale drop pending a topic-aware detector.
+    "classical-studies": "question",
+    # art History-and-Appreciation papers print one continuous 'N.' run
+    # (Q1..20 HL / Q1..21 OL) across all eras; the studio sheets (Craftwork,
+    # Design, Life Sketching, Imaginative Composition) carry no markers and
+    # drop on coverage.
+    "art": "lead_int",
+    # business runs UNPINNED (component/era-split): 2020+ 'Section 2 & 3'
+    # long-answer booklets print 'Question N'; 2020+ 'Section 1' short-answer
+    # booklets and the 2010-2019 combined papers print bare 'N.' lead ints.
+    # Pre-2020 combined papers whose Sections 2/3 restart at '1.' drop at the
+    # strict gates (section-restart class).
+    # geography runs UNPINNED (component-split): Part 1 (042) short-answer
+    # booklets are lead_int, Part 2 (043) is 'Question N'. CAUTION: the 042
+    # booklets end with a back-cover marks grid of 'Question 1..12' rows; in
+    # 2021 OL the question detector tied lead_int on anchor count and won the
+    # tie, anchoring the GRID (all 12 anchors on the last page) — those two
+    # sidecars were deleted post-run (2026-07 wave). Verify per era that
+    # Part 1 ships via lead_int before trusting a new year.
+    # home-economics-s-and-s runs UNPINNED (component-split): 2020-era
+    # Section A booklet is lead_int (1..12), Section B&C is 'Ceist/Question N';
+    # pre-2020 combined papers restart per section and drop.
+    # english runs UNPINNED: HL Paper One ships its Section II composition
+    # prompts (bare 'N.' 1..7 on one page, strict gates); Paper Two restarts
+    # numbering per section (comparative/poetry) and drops (section-restart
+    # class, needs a section-aware upgrade).
+    # music runs UNPINNED (component-split): OL Listening ships via
+    # 'Question N', Composing + Unprepared Tests via lead_int. CAUTION: the
+    # HL Listening-Elective booklets (007) embed a numbered answer list
+    # inside Q3 while real Q4 prints as '4.(a)' — lead_int fabricates Q4/Q5
+    # anchors from the list lines and the strict gates cannot see it (the
+    # answer-line tail is under MAX_TAIL_CHARS). The 2010-2024 Elective
+    # sidecars were deleted post-run (2026-07 wave); do not ship 007 booklets
+    # from lead_int without per-anchor line verification.
+    # history and politics-and-society ship NOTHING (2026-07 wave): history
+    # restarts topic-essay numbering per section behind the DBQ Q1-4;
+    # politics-and-society prints 'Question 3(a)'-style subpart headers and
+    # its Section-B header is not in the text layer. Both are correct
+    # wholesale refusals pending detector upgrades.
 }
 
 _LIGATURES = {
