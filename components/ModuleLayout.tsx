@@ -228,7 +228,7 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
         </button>
         <button
           onClick={() => settingsCtx.updateSetting('readingSpacing', readingRelaxed ? 'normal' : 'relaxed')}
-          className={`flex-1 h-8 rounded-lg border text-[11px] font-semibold transition-colors ${readingRelaxed ? 'border-[var(--accent-hex)] text-[var(--accent-hex)] bg-[rgba(var(--accent),0.08)]' : 'border-zinc-200 dark:border-zinc-700 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800'}`}
+          className={`flex-1 min-h-[32px] px-1.5 py-1 leading-tight rounded-lg border text-[11px] font-semibold transition-colors ${readingRelaxed ? 'border-[var(--accent-hex)] text-[var(--accent-hex)] bg-[rgba(var(--accent),0.08)]' : 'border-zinc-200 dark:border-zinc-700 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800'}`}
         >
           {readingRelaxed ? 'Relaxed spacing ✓' : 'Relaxed spacing'}
         </button>
