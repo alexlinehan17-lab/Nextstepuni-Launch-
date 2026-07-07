@@ -98,6 +98,14 @@ SUBJECT_GRAMMAR = {
     # agricultural-science is era-split (old spec ≤2020: 'N.' lead ints; new
     # spec 2021+: 'Question N') — run it with explicit --years + --grammar
     # per era rather than a single pin.
+    # mathematics is era-split too, so it runs UNPINNED (auto): compact
+    # pre-Project-Maths papers (2010–2012 P100/P200/P000) print bare 'N.'
+    # lead ints; every Project-Maths-format paper (P130/P230 pilots and all
+    # papers 2013+) prints 'Question N' / 'Ceist N'. The PM-format papers are
+    # answer booklets whose questions span multiple pages (continuation parts
+    # and answer space between headers), so they drop at the hole gate
+    # regardless of grammar; only the lead_int era passes the gates
+    # (2026-07 maths wave — see out/paper-anchors-mathematics-report.md).
 }
 
 _LIGATURES = {

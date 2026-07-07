@@ -35,14 +35,20 @@ HL Q12 cross-strand open essays).
   engineering 2010-20, business 2021-25 booklets, home-economics-s-and-s,
   link-modules, politics-and-society, classical-studies, music, religious-
   education, and JC history / irish / french / german / spanish / italian.
-- **Wave 6 — TV-2 anchored languages (2026-07-07, VERIFICATION IN PROGRESS)**:
-  the remaining 9 anchored languages got the exam-task taxonomy treatment (new
-  task-view strands in `curriculum.ts`, excluded from the X-Ray in
-  `syllabusMeta.ts`); tagging drafted (~149 papers / ~1,585 q) with
-  verification ongoing — japanese fully verified (453/455 + 2 corrections
-  applied at source), others pending. Wave files land in tags/ only as their
-  verification completes; nothing unverified is built in. Ground truth: the
-  anchored papers' own structure plus the Studyclix benchmark where it exists.
+- **Wave 6 — TV-2 anchored languages (2026-07-07)**: the remaining 9 anchored
+  languages got the exam-task taxonomy treatment (new task-view strands in
+  `curriculum.ts`, excluded from the X-Ray in `syllabusMeta.ts`) and full
+  verified tagging: italian, japanese, russian, mandarin-chinese, latin,
+  ancient-greek, lithuanian, polish, portuguese — 149 papers / 1,585 q.
+  Ground truth: the anchored papers' own structure (papers read from Storage
+  per subject) plus the Studyclix benchmark where it exists (italian HL/OL,
+  japanese). Independent verification: 6 subjects 0 errors; japanese 2
+  corrections (2013 OL Q3, 2018 OL Q2); russian 21 corrections after the HL
+  Q2 summary-writing sections were confirmed against the 2010/2014/2016/2018
+  papers (EV/IV sidecar labels disagreed); italian re-verified via EV↔IV
+  per-question consistency + per-year unseen/prescribed checks (2013 unseen
+  confirmed against the paper; 2014 'Bianca come il latte' is the B1 unseen,
+  not prescribed).
 
 Every question is classified against the subject's `curriculum.ts` taxonomy and
 re-checked by an independent adversarial verifier per chunk.

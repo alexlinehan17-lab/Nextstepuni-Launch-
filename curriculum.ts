@@ -12929,5 +12929,390 @@ export const CURRICULUM: CurriculumSubject[] = [
         ]
       }
     ]
+  },
+  {
+    "id": "jc-applied-technology",
+    "name": "Applied Technology (Junior Cycle)",
+    "category": "practical-applied",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "jc-applied-technology-0",
+        "name": "Final Examination",
+        "subtopics": [
+          {
+            "id": "jc-applied-technology-0-0",
+            "name": "Structured questions (technology in context)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jc-engineering",
+    "name": "Engineering (Junior Cycle)",
+    "category": "practical-applied",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "jc-engineering-0",
+        "name": "Final Examination",
+        "subtopics": [
+          {
+            "id": "jc-engineering-0-0",
+            "name": "Structured questions (engineering in context)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jc-wood-technology",
+    "name": "Wood Technology (Junior Cycle)",
+    "category": "practical-applied",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "jc-wood-technology-0",
+        "name": "Final Examination",
+        "subtopics": [
+          {
+            "id": "jc-wood-technology-0-0",
+            "name": "Structured questions (wood science, processes & design)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jc-music",
+    "name": "Music (Junior Cycle)",
+    "category": "arts",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "jc-music-0",
+        "name": "Final Examination",
+        "subtopics": [
+          {
+            "id": "jc-music-0-0",
+            "name": "Excerpt-based listening & responding questions"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jc-home-economics",
+    "name": "Home Economics (Junior Cycle)",
+    "category": "practical-applied",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "jc-home-economics-0",
+        "name": "Section A — Short Questions",
+        "subtopics": [
+          {
+            "id": "jc-home-economics-0-0",
+            "name": "Short questions (food, health, home & consumer)"
+          }
+        ]
+      },
+      {
+        "id": "jc-home-economics-1",
+        "name": "Section B — Structured Questions",
+        "subtopics": [
+          {
+            "id": "jc-home-economics-1-0",
+            "name": "Structured questions (applied food, family & resource tasks)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jc-religious-education",
+    "name": "Religious Education (Junior Cycle)",
+    "category": "social-environmental",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "jc-religious-education-0",
+        "name": "Section A",
+        "subtopics": [
+          {
+            "id": "jc-religious-education-0-0",
+            "name": "Faith, beliefs, sacred texts & founders"
+          }
+        ]
+      },
+      {
+        "id": "jc-religious-education-1",
+        "name": "Section B",
+        "subtopics": [
+          {
+            "id": "jc-religious-education-1-0",
+            "name": "Communities, worship, prayer & pilgrimage"
+          }
+        ]
+      },
+      {
+        "id": "jc-religious-education-2",
+        "name": "Section C",
+        "subtopics": [
+          {
+            "id": "jc-religious-education-2-0",
+            "name": "Morality, values & living a good life"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jc-jewish-studies",
+    "name": "Jewish Studies (Junior Cycle)",
+    "category": "social-environmental",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "jc-jewish-studies-0",
+        "name": "Section A",
+        "subtopics": [
+          {
+            "id": "jc-jewish-studies-0-0",
+            "name": "Jewish community life, home & synagogue"
+          }
+        ]
+      },
+      {
+        "id": "jc-jewish-studies-1",
+        "name": "Section B",
+        "subtopics": [
+          {
+            "id": "jc-jewish-studies-1-0",
+            "name": "The story of the Jewish people in the Hebrew Bible"
+          }
+        ]
+      },
+      {
+        "id": "jc-jewish-studies-2",
+        "name": "Section C",
+        "subtopics": [
+          {
+            "id": "jc-jewish-studies-2-0",
+            "name": "Jewish history: figures, persecution & liberation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jc-classics",
+    "name": "Classics (Junior Cycle)",
+    "category": "language",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "jc-classics-0",
+        "name": "Section A — Myth and Daily Life",
+        "subtopics": [
+          {
+            "id": "jc-classics-0-0",
+            "name": "Myth & daily life in Greece and Rome"
+          }
+        ]
+      },
+      {
+        "id": "jc-classics-1",
+        "name": "Section B — The World of Achilles, Rome",
+        "subtopics": [
+          {
+            "id": "jc-classics-1-0",
+            "name": "The World of Achilles & Rome (classical studies)"
+          }
+        ]
+      },
+      {
+        "id": "jc-classics-2",
+        "name": "Section C — Latin",
+        "subtopics": [
+          {
+            "id": "jc-classics-2-0",
+            "name": "Latin — classical language & comprehension"
+          }
+        ]
+      },
+      {
+        "id": "jc-classics-3",
+        "name": "Section D — Ancient Greek",
+        "subtopics": [
+          {
+            "id": "jc-classics-3-0",
+            "name": "Ancient Greek — classical language & comprehension"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jc-irish-t1",
+    "name": "Irish T1 (Junior Cycle)",
+    "category": "language",
+    "levels": [
+      "higher",
+      "ordinary"
+    ],
+    "strands": [
+      {
+        "id": "jc-irish-t1-0",
+        "name": "An Chluastuiscint (Listening)",
+        "subtopics": [
+          {
+            "id": "jc-irish-t1-0-0",
+            "name": "Míreanna raidió (radio clips)"
+          }
+        ]
+      },
+      {
+        "id": "jc-irish-t1-1",
+        "name": "An Léamhthuiscint (Reading)",
+        "subtopics": [
+          {
+            "id": "jc-irish-t1-1-0",
+            "name": "Príomhshliocht léitheoireachta (main reading passage)"
+          },
+          {
+            "id": "jc-irish-t1-1-1",
+            "name": "Póstaer / fógra (poster & notice comprehension)"
+          }
+        ]
+      },
+      {
+        "id": "jc-irish-t1-2",
+        "name": "Litríocht — Téacsanna Dualgais T1",
+        "subtopics": [
+          {
+            "id": "jc-irish-t1-2-0",
+            "name": "Dán / amhrán (poem / song)"
+          },
+          {
+            "id": "jc-irish-t1-2-1",
+            "name": "Úrscéal / dráma (novel / drama)"
+          },
+          {
+            "id": "jc-irish-t1-2-2",
+            "name": "Gearrscéal / scannán / gearrscannán (short story / film)"
+          }
+        ]
+      },
+      {
+        "id": "jc-irish-t1-3",
+        "name": "Scríobh (Writing)",
+        "subtopics": [
+          {
+            "id": "jc-irish-t1-3-0",
+            "name": "Tasc scríbhneoireachta (aiste / blag / alt / ríomhphost)"
+          }
+        ]
+      },
+      {
+        "id": "jc-irish-t1-4",
+        "name": "Feasacht Teanga (Language Awareness)",
+        "subtopics": [
+          {
+            "id": "jc-irish-t1-4-0",
+            "name": "Cruinneas gramadaí (choose / rewrite correct forms)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "agricultural-economics",
+    "name": "Agricultural Economics",
+    "category": "business",
+    "levels": [
+      "higher",
+      "ordinary"
+    ],
+    "strands": [
+      {
+        "id": "agricultural-economics-0",
+        "name": "Part 1 — Short Questions",
+        "subtopics": [
+          {
+            "id": "agricultural-economics-0-0",
+            "name": "Short questions (markets, farm income, taxation & policy)"
+          }
+        ]
+      },
+      {
+        "id": "agricultural-economics-1",
+        "name": "Part 2 — Long Questions",
+        "subtopics": [
+          {
+            "id": "agricultural-economics-1-0",
+            "name": "Long questions (essay & applied problems)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "history-early-modern",
+    "name": "History (Early Modern)",
+    "category": "social-environmental",
+    "levels": [
+      "higher",
+      "ordinary"
+    ],
+    "strands": [
+      {
+        "id": "history-early-modern-0",
+        "name": "Section 1 — Documents-Based Question",
+        "subtopics": [
+          {
+            "id": "history-early-modern-0-0",
+            "name": "Documents-based question (Early Modern topics)"
+          }
+        ]
+      },
+      {
+        "id": "history-early-modern-1",
+        "name": "Section 2 — Ireland",
+        "subtopics": [
+          {
+            "id": "history-early-modern-1-0",
+            "name": "Ireland topics (Early Modern)"
+          }
+        ]
+      },
+      {
+        "id": "history-early-modern-2",
+        "name": "Section 3 — Europe and the Wider World",
+        "subtopics": [
+          {
+            "id": "history-early-modern-2-0",
+            "name": "Europe & the wider world topics (Early Modern)"
+          }
+        ]
+      }
+    ]
   }
 ];

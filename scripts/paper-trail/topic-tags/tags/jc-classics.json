@@ -1,0 +1,912 @@
+[
+ {
+  "subjectId": "jc-classics",
+  "level": "common",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "JC106CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "14",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "15",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "16",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "17",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "18",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "19",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "20",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "21",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "22",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "23",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "24",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "25",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "26",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "27",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "28",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "29",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "30",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "31",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "32",
+    "primary": "jc-classics-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-classics",
+  "level": "common",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "JC106CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "14",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "15",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "16",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "17",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "18",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "19",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "20",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "21",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "22",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "23",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "24",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "25",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "26",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "27",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "28",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "29",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "30",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "31",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "32",
+    "primary": "jc-classics-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-classics",
+  "level": "common",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "JC106CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "14",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "15",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "16",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "17",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "18",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "19",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "20",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "21",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "22",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "23",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "24",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "25",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "26",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "27",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "28",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "29",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "30",
+    "primary": "jc-classics-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-classics",
+  "level": "common",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "JC106CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "14",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "15",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "16",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "17",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "18",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "19",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "20",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "21",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "22",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "23",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "24",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "25",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "26",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "27",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "28",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "29",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "30",
+    "primary": "jc-classics-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-classics",
+  "level": "common",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "JC106CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "14",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "15",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "16",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "17",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "18",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "19",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "20",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "21",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "22",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "23",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "24",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "25",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "26",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "27",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "28",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "29",
+    "primary": "jc-classics-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-classics",
+  "level": "common",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "JC106CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "14",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "15",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "16",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "17",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "18",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "19",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "20",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "21",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "22",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "23",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "24",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "25",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "26",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "27",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "28",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "29",
+    "primary": "jc-classics-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-classics",
+  "level": "common",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "JC106CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-classics-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "8",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "10",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-classics-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "14",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "15",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "16",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "17",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "18",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "19",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "20",
+    "primary": "jc-classics-2-0"
+   },
+   {
+    "n": "21",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "22",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "23",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "24",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "25",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "26",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "27",
+    "primary": "jc-classics-3-0"
+   },
+   {
+    "n": "28",
+    "primary": "jc-classics-3-0"
+   }
+  ]
+ }
+]
