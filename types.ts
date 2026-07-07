@@ -92,6 +92,10 @@ export interface UserSettings {
   defaultWorkMinutes: number;
   showDashboard?: boolean;
   essentialsMode?: boolean;
+  /** Reading comfort: multiplier on module reading text (0.9–1.2, default 1). */
+  readingScale?: number;
+  /** Reading comfort: 'relaxed' opens up line spacing in module reading text. */
+  readingSpacing?: 'normal' | 'relaxed';
 }
 
 export type NorthStarCategory =

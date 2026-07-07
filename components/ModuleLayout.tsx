@@ -193,8 +193,54 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
 
   const progressPercentage = sections.length > 0 ? (unlockedSection / sections.length) * 100 : 0;
 
+  // Reading comfort — ReadingSection (ModuleShared) consumes these variables.
+  const readingScale = settingsCtx?.settings.readingScale ?? 1;
+  const readingRelaxed = settingsCtx?.settings.readingSpacing === 'relaxed';
+  const READING_SCALES = [0.9, 1, 1.1, 1.2];
+  const stepReadingScale = (dir: 1 | -1) => {
+    const idx = READING_SCALES.indexOf(readingScale);
+    const next = READING_SCALES[Math.min(READING_SCALES.length - 1, Math.max(0, (idx === -1 ? 1 : idx) + dir))];
+    settingsCtx?.updateSetting('readingScale', next);
+  };
+
+  const readingControls = settingsCtx && (
+    <div>
+      <p className="text-[9px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-1.5">Reading Comfort</p>
+      <div className="flex items-center gap-2">
+        <button
+          onClick={() => stepReadingScale(-1)}
+          disabled={readingScale <= READING_SCALES[0]}
+          aria-label="Smaller text"
+          className="w-8 h-8 rounded-lg border border-zinc-200 dark:border-zinc-700 text-xs font-bold text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800 disabled:opacity-30"
+        >
+          A−
+        </button>
+        <span className="text-xs font-semibold tabular-nums text-zinc-500 dark:text-zinc-400 min-w-[44px] text-center">
+          {Math.round(readingScale * 100)}%
+        </span>
+        <button
+          onClick={() => stepReadingScale(1)}
+          disabled={readingScale >= READING_SCALES[READING_SCALES.length - 1]}
+          aria-label="Larger text"
+          className="w-8 h-8 rounded-lg border border-zinc-200 dark:border-zinc-700 text-sm font-bold text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800 disabled:opacity-30"
+        >
+          A+
+        </button>
+        <button
+          onClick={() => settingsCtx.updateSetting('readingSpacing', readingRelaxed ? 'normal' : 'relaxed')}
+          className={`flex-1 h-8 rounded-lg border text-[11px] font-semibold transition-colors ${readingRelaxed ? 'border-[var(--accent-hex)] text-[var(--accent-hex)] bg-[rgba(var(--accent),0.08)]' : 'border-zinc-200 dark:border-zinc-700 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800'}`}
+        >
+          {readingRelaxed ? 'Relaxed spacing ✓' : 'Relaxed spacing'}
+        </button>
+      </div>
+    </div>
+  );
+
   return (
-    <div className="min-h-screen bg-[#F8F8F8] dark:bg-zinc-950 text-zinc-900 dark:text-white font-sans flex flex-col md:flex-row overflow-x-hidden transition-colors duration-500">
+    <div
+      className="min-h-screen bg-[#F8F8F8] dark:bg-zinc-950 text-zinc-900 dark:text-white font-sans flex flex-col md:flex-row overflow-x-hidden transition-colors duration-500"
+      style={{ ['--reading-scale' as string]: String(readingScale), ['--reading-lh' as string]: readingRelaxed ? '2.15' : '1.85' }}
+    >
 
       {/* ── Desktop Sidebar (unchanged) ── */}
       <aside className="hidden md:flex w-80 bg-white dark:bg-zinc-900 border-r border-zinc-200 dark:border-zinc-800 sticky top-0 h-screen z-40 p-8 flex-col">
@@ -278,13 +324,15 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
                   </button>
                   {/* Card styles */}
                   <p className="text-[9px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-1.5">Card Style</p>
-                  <div className="space-y-1">
+                  <div className="space-y-1 mb-3">
                     {CARD_STYLES.filter(s => s.price === 0 || settingsCtx.unlockedCardStyles.includes(s.id)).map(s => (
                       <button key={s.id} onClick={() => settingsCtx.updateSetting('cardStyle', s.id as CardStyleId)} className={`w-full text-left px-2 py-1.5 rounded-lg text-xs transition-all ${settingsCtx.settings.cardStyle === s.id ? 'bg-[rgba(var(--accent),0.1)] text-[var(--accent-hex)] font-semibold' : 'text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800'}`}>
                         {s.name}
                       </button>
                     ))}
                   </div>
+                  {/* Reading comfort — text size + line spacing */}
+                  {readingControls}
                 </motion.div>
               )}
             </AnimatePresence>
@@ -352,6 +400,8 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
                   </button>
                 </div>
               )}
+              {/* Reading comfort — mobile gets the same controls as the desktop picker */}
+              {readingControls && <div className="px-5 pb-3">{readingControls}</div>}
               <div className="px-4 pb-6 space-y-1">
                 {sections.map((section, idx) => {
                   const isUnlocked = idx <= unlockedSection;

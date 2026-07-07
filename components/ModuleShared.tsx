@@ -147,7 +147,13 @@ export const ReadingSection = ({ title, eyebrow, icon: Icon, children, theme: _t
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5, delay: 0.25 }}
     >
-      <div className="prose prose-stone dark:prose-invert prose-lg max-w-none text-zinc-600 dark:text-zinc-300 leading-[1.85] font-serif overflow-visible space-y-7">
+      <div
+        className="prose prose-stone dark:prose-invert prose-lg max-w-none text-zinc-600 dark:text-zinc-300 leading-[1.85] font-serif overflow-visible space-y-7"
+        // Reading comfort (ModuleLayout sets the variables from settings):
+        // scale multiplies the prose-lg base size; line height opens up in
+        // relaxed mode. Inline style so it wins over the utility classes.
+        style={{ fontSize: 'calc(1.125rem * var(--reading-scale, 1))', lineHeight: 'var(--reading-lh, 1.85)' }}
+      >
         {children}
       </div>
     </MotionDiv>

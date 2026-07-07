@@ -11,6 +11,9 @@ import { UserProfile, MobileProfileSheet } from './components/UserProfileMenu';
 import { type CategoryType } from './components/KnowledgeTree';
 import AppRouter from './components/AppRouter';
 import OfflineBanner from './components/OfflineBanner';
+import CommandPalette, { TOOL_TITLES } from './components/CommandPalette';
+import ShortcutsOverlay from './components/ShortcutsOverlay';
+import { recordVisit } from './components/lastVisited';
 import SettingsModal from './components/SettingsModal';
 import YearTransitionFlow from './components/YearTransitionFlow';
 import { type YearGroup, type StudentSubject } from './components/subjectData';
@@ -121,7 +124,7 @@ if (_LoginPageRemoved) { /* never reached */ }
 const App: React.FC = () => {
   const { showToast } = useToast();
   const nav = useNavigation();
-  const { viewState, currentCategory, currentModuleId: _currentModuleId, cameFromJourney: _cameFromJourney } = nav.state;
+  const { viewState, currentCategory, currentModuleId, cameFromJourney: _cameFromJourney, activeTool } = nav.state;
   const [journeyResult, setJourneyResult] = useState<{ endingId: string; finalStats?: any } | null>(null);
   const { user, authResolved, needsOnboarding, handleLogout, markOnboardingComplete, patchUser } = useAuth();
 
@@ -295,6 +298,20 @@ const App: React.FC = () => {
 
   // Auth state is managed by AuthContext — see contexts/AuthContext.tsx
   // handleLoginSuccess and handleLogout come from useAuth()
+
+  // Record the student's last-visited module/tool for the home page
+  // "Pick up where you left off" card. Watching nav state catches every
+  // entry path (tiles, command palette, deep links). Tools that know more
+  // (e.g. Paper Trail's subject/year) overwrite with a richer record.
+  useEffect(() => {
+    if (!user || user.isAdmin || user.role === 'gc') return;
+    if (viewState === 'module' && currentModuleId) {
+      const course = ALL_COURSES.find(c => c.id === currentModuleId);
+      if (course) recordVisit(user.uid, { kind: 'module', id: course.id, label: course.title });
+    } else if (viewState === 'innovation-zone' && activeTool && TOOL_TITLES[activeTool]) {
+      recordVisit(user.uid, { kind: 'tool', id: activeTool, label: TOOL_TITLES[activeTool] });
+    }
+  }, [viewState, currentModuleId, activeTool, user]);
 
   const handleProgressUpdate = async (moduleId: string, newProgress: ModuleProgress) => {
     if (!user || user.isAdmin) return;
@@ -663,6 +680,14 @@ const App: React.FC = () => {
       )}
 
       <AppRouter {...routerProps} />
+
+      {/* Global QoL overlays — ⌘K jump-to + "?" shortcut card (students only) */}
+      {user && !user.isAdmin && user.role !== 'gc' && viewState !== 'onboarding' && (
+        <>
+          <CommandPalette courses={studentCourses} />
+          <ShortcutsOverlay suppressQuestionKey={viewState === 'tree'} />
+        </>
+      )}
 
       {user && viewState !== 'onboarding' && viewState !== 'module' && !user.isAdmin && user.role !== 'gc' && (
         <MobileBottomNav

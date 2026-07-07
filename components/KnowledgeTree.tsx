@@ -7,10 +7,13 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { MotionDiv } from './Motion';
 import {
   Rocket, ArrowRight, BarChart3, Compass,
-  User, Home, PanelLeft, Award, Settings, LogOut, Sun, Moon, RefreshCw, Mountain, Timer, Dumbbell, Bell, MessageSquare, Scissors, HelpCircle
+  User, Home, PanelLeft, Award, Settings, LogOut, Sun, Moon, RefreshCw, Mountain, Timer, Dumbbell, Bell, MessageSquare, Scissors, HelpCircle, Search, Sparkles
 } from 'lucide-react';
 import SiteGuide, { type GuideAction } from './SiteGuide';
 import FirstVisitCoachMarks, { coachMarksSeen } from './FirstVisitCoachMarks';
+import WhatsNew, { hasUnseenChangelog, markChangelogSeen } from './WhatsNew';
+import ResumeCard from './ResumeCard';
+import { openCommandPalette } from './CommandPalette';
 import FeedbackQrModal from './FeedbackQrModal';
 import { getAvatarUrl } from '../utils/authUtils';
 import { type CourseData } from './Library';
@@ -75,12 +78,15 @@ interface KnowledgeTreeProps {
 }
 
 
-export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: _onSelectCategory, onGoToModules, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, onGoToInsights: _onGoToInsights, onGoToTrainingHub, onGoToCutContent, onGoToAccreditation, allCourses, onSelectModule: _onSelectModule, categoryTitles: _categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes: _unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction, onOpenTool, uid }) => {
+export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: _onSelectCategory, onGoToModules, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, onGoToInsights: _onGoToInsights, onGoToTrainingHub, onGoToCutContent, onGoToAccreditation, allCourses, onSelectModule, categoryTitles: _categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes: _unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction, onOpenTool, uid }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [feedbackQrOpen, setFeedbackQrOpen] = useState(false);
   // Site Guide (the "?") + one-time first-visit coach marks.
   const [guideOpen, setGuideOpen] = useState(false);
   const [coachActive, setCoachActive] = useState(() => !coachMarksSeen(uid));
+  // "What's new" popover + its unseen-dot state.
+  const [whatsNewOpen, setWhatsNewOpen] = useState(false);
+  const [whatsNewUnseen, setWhatsNewUnseen] = useState(() => hasUnseenChangelog(uid));
 
   // Press "?" anywhere on the home page to open the guide.
   useEffect(() => {
@@ -107,6 +113,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
 
   const sidebarItems = [
     { icon: Home, label: 'Home', onClick: () => {}, active: true },
+    { icon: Search, label: 'Jump to… (⌘K)', onClick: openCommandPalette, active: false },
     { icon: Dumbbell, label: 'Training Hub', onClick: onGoToTrainingHub ?? (() => {}), active: false },
     { icon: Scissors, label: 'Cut Content', onClick: onGoToCutContent ?? (() => {}), active: false },
     { icon: Award, label: 'Accreditation', onClick: onGoToAccreditation ?? (() => {}), active: false },
@@ -314,6 +321,22 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
             </span>
           </button>
 
+          {/* What's new — changelog popover; accent dot while unseen */}
+          <button
+            onClick={() => { setWhatsNewOpen(true); markChangelogSeen(uid); setWhatsNewUnseen(false); }}
+            className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+          >
+            <div className="shrink-0 flex items-center justify-center w-[18px] relative">
+              <Sparkles size={18} strokeWidth={1.5} className="text-zinc-500" />
+              {whatsNewUnseen && (
+                <span className="absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full" style={{ backgroundColor: '#F26B1F' }} />
+              )}
+            </div>
+            <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+              What&rsquo;s New
+            </span>
+          </button>
+
           {/* How the site works — the Site Guide */}
           <button
             data-coach="help"
@@ -414,6 +437,15 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
             })()}
           </p>
         </MotionDiv>
+
+        {/* Pick up where you left off — deep-link back to the last module/tool */}
+        <ResumeCard
+          uid={uid}
+          allCourses={allCourses}
+          userProgress={userProgress}
+          onSelectModule={onSelectModule}
+          onOpenTool={onOpenTool}
+        />
 
         {/* Student Home Dashboard */}
         {studentProfile && settings.showDashboard !== false && (
@@ -692,6 +724,9 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
       </div>
 
       <FeedbackQrModal open={feedbackQrOpen} onClose={() => setFeedbackQrOpen(false)} />
+
+      {/* What's new — two or three lines per release, newest first */}
+      <WhatsNew open={whatsNewOpen} onClose={() => setWhatsNewOpen(false)} />
 
       {/* The Site Guide — a swipeable tour of the core pages (the "?"). */}
       <SiteGuide open={guideOpen} onClose={() => setGuideOpen(false)} onGo={handleGuideGo} />

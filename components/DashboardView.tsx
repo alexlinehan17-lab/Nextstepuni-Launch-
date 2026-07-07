@@ -219,7 +219,9 @@ const DashboardView: React.FC<DashboardViewProps> = ({
               marginTop: 10,
             }}
           >
-            {fiveWorldCompleted} of {fiveWorldTotal} modules · each mountain fills as you progress
+            {fiveWorldCompleted === 0
+              ? 'Nothing climbed yet — your first completed module paints the first mountain'
+              : `${fiveWorldCompleted} of ${fiveWorldTotal} modules · each mountain fills as you progress`}
           </p>
 
           {/* 4. The mountain landscape */}
