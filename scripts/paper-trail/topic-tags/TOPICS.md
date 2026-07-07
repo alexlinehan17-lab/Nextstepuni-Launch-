@@ -8,7 +8,9 @@ Tags attach to the **answer-map anchors** (question `n` is the join key), so the
 
 ## Coverage
 
-**41 subjects, 786 papers, 8,884 questions** — every subject that has both
+**41 subjects, 786 papers, 8,884 questions built in** (`build-tags.mjs` output
+is the source of truth for this line; Wave 6+ additions below land here only
+once verified and rebuilt) — every subject that has both
 answer-map anchors and a fitting curriculum taxonomy. Each subject's anchored
 questions are 100% covered (reconstruction is diffed against the extracted stems
 and gaps re-run until zero; two honest nulls: the 2023/2024 Classical Studies
@@ -33,6 +35,14 @@ HL Q12 cross-strand open essays).
   engineering 2010-20, business 2021-25 booklets, home-economics-s-and-s,
   link-modules, politics-and-society, classical-studies, music, religious-
   education, and JC history / irish / french / german / spanish / italian.
+- **Wave 6 — TV-2 anchored languages (2026-07-07, VERIFICATION IN PROGRESS)**:
+  the remaining 9 anchored languages got the exam-task taxonomy treatment (new
+  task-view strands in `curriculum.ts`, excluded from the X-Ray in
+  `syllabusMeta.ts`); tagging drafted (~149 papers / ~1,585 q) with
+  verification ongoing — japanese fully verified (453/455 + 2 corrections
+  applied at source), others pending. Wave files land in tags/ only as their
+  verification completes; nothing unverified is built in. Ground truth: the
+  anchored papers' own structure plus the Studyclix benchmark where it exists.
 
 Every question is classified against the subject's `curriculum.ts` taxonomy and
 re-checked by an independent adversarial verifier per chunk.
@@ -48,10 +58,6 @@ session transcripts). Accreditation-trustworthy.
 
 ### Not tagged yet (explicit, not silent)
 
-- **Anchored, but taxonomy not exam-task-shaped yet** (149 papers): italian,
-  japanese, russian, mandarin-chinese, latin, ancient-greek, lithuanian,
-  polish, portuguese — need the exam-task taxonomy treatment french/german/
-  spanish received.
 - **Anchored, but no curriculum.ts entry** (~407 papers): 16 non-curricular
   EU/heritage languages, all 20 LCA subjects, 9 further JC subjects,
   agricultural-economics, history-early-modern.

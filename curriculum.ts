@@ -1763,6 +1763,86 @@ export const CURRICULUM: CurriculumSubject[] = [
             "name": "Issues Beyond Cultural Divisions"
           }
         ]
+      },
+      {
+        "id": "italian-3",
+        "name": "Aural (Listening) — Task Types",
+        "subtopics": [
+          {
+            "id": "italian-3-0",
+            "name": "Aural — Conversations"
+          },
+          {
+            "id": "italian-3-1",
+            "name": "Aural — News Items / Statements"
+          }
+        ]
+      },
+      {
+        "id": "italian-4",
+        "name": "Oral Exam",
+        "subtopics": [
+          {
+            "id": "italian-4-0",
+            "name": "Oral — General Conversation"
+          }
+        ]
+      },
+      {
+        "id": "italian-5",
+        "name": "Reading Comprehension — Task Types",
+        "subtopics": [
+          {
+            "id": "italian-5-0",
+            "name": "Journalistic Comprehension (HL Section A)"
+          },
+          {
+            "id": "italian-5-1",
+            "name": "Unseen Literary Comprehension (HL)"
+          },
+          {
+            "id": "italian-5-2",
+            "name": "Prescribed Text Comprehension (e.g. Marcovaldo, Io non ho paura)"
+          },
+          {
+            "id": "italian-5-3",
+            "name": "Reading Comprehension — Short Passages (OL)"
+          },
+          {
+            "id": "italian-5-4",
+            "name": "Publicity Pieces & Advertisements (OL)"
+          }
+        ]
+      },
+      {
+        "id": "italian-6",
+        "name": "Written Production — Task Types",
+        "subtopics": [
+          {
+            "id": "italian-6-0",
+            "name": "Composition Linked to the Journalistic Passage (Opinion Piece, HL)"
+          },
+          {
+            "id": "italian-6-1",
+            "name": "Guided Composition (HL)"
+          },
+          {
+            "id": "italian-6-2",
+            "name": "Formal Writing — Letter / Email (HL)"
+          },
+          {
+            "id": "italian-6-3",
+            "name": "Informal Writing — Letter or Dialogue (OL)"
+          },
+          {
+            "id": "italian-6-4",
+            "name": "Fill in a Form (OL)"
+          },
+          {
+            "id": "italian-6-5",
+            "name": "Correct Order / Sequencing Task (OL)"
+          }
+        ]
       }
     ]
   },
@@ -1924,6 +2004,52 @@ export const CURRICULUM: CurriculumSubject[] = [
             "name": "Russian Traditions & Customs"
           }
         ]
+      },
+      {
+        "id": "russian-3",
+        "name": "Written Paper — Task Types",
+        "subtopics": [
+          {
+            "id": "russian-3-0",
+            "name": "Comprehension — Reading Text with Questions in English"
+          },
+          {
+            "id": "russian-3-1",
+            "name": "Summary in English"
+          },
+          {
+            "id": "russian-3-2",
+            "name": "Language Awareness Tasks"
+          },
+          {
+            "id": "russian-3-3",
+            "name": "Structuring Discourse"
+          },
+          {
+            "id": "russian-3-4",
+            "name": "Information Retrieval — Everyday Texts (OL)"
+          },
+          {
+            "id": "russian-3-5",
+            "name": "Mix and Match (OL)"
+          },
+          {
+            "id": "russian-3-6",
+            "name": "Short Answers — Cultural Awareness (OL)"
+          },
+          {
+            "id": "russian-3-7",
+            "name": "Grammar & Language Use"
+          },
+          {
+            "id": "russian-3-8",
+            "name": "Short Essay (~50 Words, HL)"
+          },
+          {
+            "id": "russian-3-9",
+            "name": "Guided / Extended Writing (Letter, Continuous Prose)"
+          }
+        ]
       }
     ]
   },
@@ -2079,6 +2205,62 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "japanese-4-3",
             "name": "Written Production"
+          }
+        ]
+      },
+      {
+        "id": "japanese-5",
+        "name": "Written Paper — Task Types",
+        "subtopics": [
+          {
+            "id": "japanese-5-0",
+            "name": "Reading — Everyday & Informational Texts (Menus, Guides, Websites)"
+          },
+          {
+            "id": "japanese-5-1",
+            "name": "Reading — Letters, Emails, Blogs & Diaries"
+          },
+          {
+            "id": "japanese-5-2",
+            "name": "Reading — Articles & Interviews"
+          },
+          {
+            "id": "japanese-5-3",
+            "name": "Translation — Japanese to English"
+          },
+          {
+            "id": "japanese-5-4",
+            "name": "Kanji — Meaning & Reading Tasks"
+          },
+          {
+            "id": "japanese-5-5",
+            "name": "Grammar Tasks (Particles & Verb Forms)"
+          },
+          {
+            "id": "japanese-5-6",
+            "name": "Culture & Society Questions"
+          },
+          {
+            "id": "japanese-5-7",
+            "name": "Personal Writing (Q4 & Q5)"
+          }
+        ]
+      },
+      {
+        "id": "japanese-6",
+        "name": "Aural (Listening) — Task Types",
+        "subtopics": [
+          {
+            "id": "japanese-6-0",
+            "name": "Aural — Conversation"
+          },
+          {
+            "id": "japanese-6-1",
+            "name": "Aural — Interview / Speech"
+          },
+          {
+            "id": "japanese-6-2",
+            "name": "Aural — Radio / News"
           }
         ]
       }
@@ -2314,6 +2496,36 @@ export const CURRICULUM: CurriculumSubject[] = [
             "name": "Simplified Characters (Pin Yin Not Assessed)"
           }
         ]
+      },
+      {
+        "id": "mandarin-chinese-3",
+        "name": "Written Paper — Task Types",
+        "subtopics": [
+          {
+            "id": "mandarin-chinese-3-0",
+            "name": "Reading — Notices, Signs, Timetables & Maps"
+          },
+          {
+            "id": "mandarin-chinese-3-1",
+            "name": "Reading — Nursery Rhymes & Poems"
+          },
+          {
+            "id": "mandarin-chinese-3-2",
+            "name": "Reading — Descriptive & Narrative Passages (People, Places, Culture)"
+          },
+          {
+            "id": "mandarin-chinese-3-3",
+            "name": "Reading — Emails, Messages, Diaries & Social Media"
+          },
+          {
+            "id": "mandarin-chinese-3-4",
+            "name": "Reading — Word–Picture Matching (OL)"
+          },
+          {
+            "id": "mandarin-chinese-3-5",
+            "name": "Written Production (Section B)"
+          }
+        ]
       }
     ]
   },
@@ -2531,6 +2743,40 @@ export const CURRICULUM: CurriculumSubject[] = [
             "name": "Research Study (40%): ~20-hour written report on a common brief"
           }
         ]
+      },
+      {
+        "id": "latin-3",
+        "name": "Legacy Written Paper — Task Types",
+        "subtopics": [
+          {
+            "id": "latin-3-0",
+            "name": "Composition — Translation into Latin"
+          },
+          {
+            "id": "latin-3-1",
+            "name": "Unseen Comprehension — Prose Passage with Questions"
+          },
+          {
+            "id": "latin-3-2",
+            "name": "Unseen Translation into English (Prose & Verse)"
+          },
+          {
+            "id": "latin-3-3",
+            "name": "Prescribed Prose Text — Translation & Questions (e.g. Cicero)"
+          },
+          {
+            "id": "latin-3-4",
+            "name": "Prescribed Poetry — Virgil's Aeneid: Translation & Questions"
+          },
+          {
+            "id": "latin-3-5",
+            "name": "Grammar, Accidence & Scansion"
+          },
+          {
+            "id": "latin-3-6",
+            "name": "Roman History & Civilisation Essays"
+          }
+        ]
       }
     ]
   },
@@ -2732,6 +2978,36 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "ancient-greek-3-3",
             "name": "Explore the Broader Context"
+          }
+        ]
+      },
+      {
+        "id": "ancient-greek-4",
+        "name": "Legacy Written Paper — Task Types",
+        "subtopics": [
+          {
+            "id": "ancient-greek-4-0",
+            "name": "Composition — Translation into Greek"
+          },
+          {
+            "id": "ancient-greek-4-1",
+            "name": "Unseen Comprehension — Prose Passage with Questions"
+          },
+          {
+            "id": "ancient-greek-4-2",
+            "name": "Unseen Translation into English (Prose & Verse)"
+          },
+          {
+            "id": "ancient-greek-4-3",
+            "name": "Prescribed Prose Text — Translation & Questions (e.g. Plato)"
+          },
+          {
+            "id": "ancient-greek-4-4",
+            "name": "Prescribed Homer — Translation & Questions"
+          },
+          {
+            "id": "ancient-greek-4-5",
+            "name": "Greek History & Civilisation (incl. Art & Architecture)"
           }
         ]
       }
@@ -3247,6 +3523,32 @@ export const CURRICULUM: CurriculumSubject[] = [
             "name": "Pluricultural Competence"
           }
         ]
+      },
+      {
+        "id": "lithuanian-2",
+        "name": "Written Paper — Task Types",
+        "subtopics": [
+          {
+            "id": "lithuanian-2-0",
+            "name": "Reading Comprehension — Article with Open Questions (I Dalis)"
+          },
+          {
+            "id": "lithuanian-2-1",
+            "name": "Reading Comprehension — Narrative & Informational Texts (Užduotys, New Format)"
+          },
+          {
+            "id": "lithuanian-2-2",
+            "name": "Guided Commentary on the Text (II Dalis)"
+          },
+          {
+            "id": "lithuanian-2-3",
+            "name": "Discursive Essay (Samprotavimo rašinys)"
+          },
+          {
+            "id": "lithuanian-2-4",
+            "name": "Written Production (Section B, New Format)"
+          }
+        ]
       }
     ]
   },
@@ -3323,6 +3625,28 @@ export const CURRICULUM: CurriculumSubject[] = [
             "name": "Language Portfolio (oral stimulus, not marked)"
           }
         ]
+      },
+      {
+        "id": "polish-3",
+        "name": "Written Paper — Task Types",
+        "subtopics": [
+          {
+            "id": "polish-3-0",
+            "name": "Reading Comprehension — Text with Open Questions (Część I)"
+          },
+          {
+            "id": "polish-3-1",
+            "name": "Reading — Matching, Multiple-Choice & True/False Tasks (Czytanie, New Format)"
+          },
+          {
+            "id": "polish-3-2",
+            "name": "Essay — Wypracowanie (~300 Words)"
+          },
+          {
+            "id": "polish-3-3",
+            "name": "Written Production (Część B Pisanie, New Format)"
+          }
+        ]
       }
     ]
   },
@@ -3371,6 +3695,24 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "portuguese-1-1",
             "name": "Pluricultural Competence (Portuguese-speaking cultures & registers)"
+          }
+        ]
+      },
+      {
+        "id": "portuguese-2",
+        "name": "Written Paper — Task Types",
+        "subtopics": [
+          {
+            "id": "portuguese-2-0",
+            "name": "Reading Comprehension — Literary / Journalistic Text (Parte I)"
+          },
+          {
+            "id": "portuguese-2-1",
+            "name": "Guided Commentary on the Text (~100 Words, Parte II)"
+          },
+          {
+            "id": "portuguese-2-2",
+            "name": "Discursive Commentary on a Quotation (~300 Words, Parte III)"
           }
         ]
       }
@@ -11070,6 +11412,1519 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "jc-italian-2-0",
             "name": "Intercultural Awareness: Italy and Italian Culture"
+          }
+        ]
+      }
+    ]
+  }
+,
+  {
+    "id": "lca-active-leisure-studies",
+    "name": "Active Leisure Studies (LCA)",
+    "category": "practical-applied",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "lca-active-leisure-studies-0",
+        "name": "Section 1 — Leisure Studies",
+        "subtopics": [
+          {
+            "id": "lca-active-leisure-studies-0-0",
+            "name": "Leisure Studies (participation, facilities & organisation)"
+          }
+        ]
+      },
+      {
+        "id": "lca-active-leisure-studies-1",
+        "name": "Section 2 — Health Related Fitness",
+        "subtopics": [
+          {
+            "id": "lca-active-leisure-studies-1-0",
+            "name": "Health Related Fitness (components, nutrition & training)"
+          }
+        ]
+      },
+      {
+        "id": "lca-active-leisure-studies-2",
+        "name": "Section 3 — Aquatics",
+        "subtopics": [
+          {
+            "id": "lca-active-leisure-studies-2-0",
+            "name": "Aquatics (swimming strokes & water safety)"
+          }
+        ]
+      },
+      {
+        "id": "lca-active-leisure-studies-3",
+        "name": "Section 4 — Outdoor Education",
+        "subtopics": [
+          {
+            "id": "lca-active-leisure-studies-3-0",
+            "name": "Outdoor Education (OS maps, hiking & expeditions)"
+          }
+        ]
+      },
+      {
+        "id": "lca-active-leisure-studies-4",
+        "name": "Section 5 — Games 1 (Invasion)",
+        "subtopics": [
+          {
+            "id": "lca-active-leisure-studies-4-0",
+            "name": "Invasion Games (skills, rules & coaching)"
+          }
+        ]
+      },
+      {
+        "id": "lca-active-leisure-studies-5",
+        "name": "Section 6 — Games 2 (Net/Fielding)",
+        "subtopics": [
+          {
+            "id": "lca-active-leisure-studies-5-0",
+            "name": "Net & Fielding Games (skills, rules & coaching)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lca-agriculture-horticulture",
+    "name": "Agriculture / Horticulture (LCA)",
+    "category": "practical-applied",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "lca-agriculture-horticulture-0",
+        "name": "Section One — Short Questions",
+        "subtopics": [
+          {
+            "id": "lca-agriculture-horticulture-0-0",
+            "name": "Short questions (general agriculture & horticulture)"
+          }
+        ]
+      },
+      {
+        "id": "lca-agriculture-horticulture-1",
+        "name": "Section Two — Module Questions",
+        "subtopics": [
+          {
+            "id": "lca-agriculture-horticulture-1-0",
+            "name": "Basic Horticulture"
+          },
+          {
+            "id": "lca-agriculture-horticulture-1-1",
+            "name": "Garden Design"
+          },
+          {
+            "id": "lca-agriculture-horticulture-1-2",
+            "name": "Floristry, Fruit & Vegetables"
+          },
+          {
+            "id": "lca-agriculture-horticulture-1-3",
+            "name": "Forestry"
+          },
+          {
+            "id": "lca-agriculture-horticulture-1-4",
+            "name": "Grass"
+          },
+          {
+            "id": "lca-agriculture-horticulture-1-5",
+            "name": "Milk & Meat Production"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lca-childcare-community-care",
+    "name": "Childcare / Community Care (LCA)",
+    "category": "practical-applied",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "lca-childcare-community-care-0",
+        "name": "Section 1 — The Care of Babies and Young Children",
+        "subtopics": [
+          {
+            "id": "lca-childcare-community-care-0-0",
+            "name": "Care of babies & young children"
+          }
+        ]
+      },
+      {
+        "id": "lca-childcare-community-care-1",
+        "name": "Section 2 — Child Development and Play",
+        "subtopics": [
+          {
+            "id": "lca-childcare-community-care-1-0",
+            "name": "Child development & play"
+          }
+        ]
+      },
+      {
+        "id": "lca-childcare-community-care-2",
+        "name": "Section 3 — Parenting and Care Provision",
+        "subtopics": [
+          {
+            "id": "lca-childcare-community-care-2-0",
+            "name": "Parenting & care provision"
+          }
+        ]
+      },
+      {
+        "id": "lca-childcare-community-care-3",
+        "name": "Section 4 — People with Special Needs",
+        "subtopics": [
+          {
+            "id": "lca-childcare-community-care-3-0",
+            "name": "People with special needs"
+          }
+        ]
+      },
+      {
+        "id": "lca-childcare-community-care-4",
+        "name": "Section 5 — Older People",
+        "subtopics": [
+          {
+            "id": "lca-childcare-community-care-4-0",
+            "name": "Older people"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lca-crafts-and-design",
+    "name": "Crafts & Design (LCA)",
+    "category": "arts",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "lca-crafts-and-design-0",
+        "name": "Terminal Exam — Craft & Design Questions",
+        "subtopics": [
+          {
+            "id": "lca-crafts-and-design-0-0",
+            "name": "Textiles & fabric crafts (weaving, batik, costume)"
+          },
+          {
+            "id": "lca-crafts-and-design-0-1",
+            "name": "Graphic design (logos, posters, signs & lettering)"
+          },
+          {
+            "id": "lca-crafts-and-design-0-2",
+            "name": "Print-making & repeat patterns (lino, stencils)"
+          },
+          {
+            "id": "lca-crafts-and-design-0-3",
+            "name": "Ceramics"
+          },
+          {
+            "id": "lca-crafts-and-design-0-4",
+            "name": "Product, jewellery & furniture design"
+          },
+          {
+            "id": "lca-crafts-and-design-0-5",
+            "name": "Photography"
+          },
+          {
+            "id": "lca-crafts-and-design-0-6",
+            "name": "Video & film-making"
+          },
+          {
+            "id": "lca-crafts-and-design-0-7",
+            "name": "Art & design appreciation (comparing artworks)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lca-engineering",
+    "name": "Engineering (LCA)",
+    "category": "practical-applied",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "lca-engineering-0",
+        "name": "Section 1 — Core (Compulsory)",
+        "subtopics": [
+          {
+            "id": "lca-engineering-0-0",
+            "name": "Short questions (materials, tools & processes)"
+          },
+          {
+            "id": "lca-engineering-0-1",
+            "name": "Drawing question (views of an engineered object)"
+          },
+          {
+            "id": "lca-engineering-0-2",
+            "name": "Processes, equipment & workshop safety"
+          }
+        ]
+      },
+      {
+        "id": "lca-engineering-1",
+        "name": "Section 2 — Optional Questions",
+        "subtopics": [
+          {
+            "id": "lca-engineering-1-0",
+            "name": "Design question"
+          },
+          {
+            "id": "lca-engineering-1-1",
+            "name": "Engines & motor technology"
+          },
+          {
+            "id": "lca-engineering-1-2",
+            "name": "Production stages (making a project)"
+          }
+        ]
+      },
+      {
+        "id": "lca-engineering-2",
+        "name": "Section 2 — Systems Module (Q7)",
+        "subtopics": [
+          {
+            "id": "lca-engineering-2-0",
+            "name": "Systems Module (choice question)"
+          },
+          {
+            "id": "lca-engineering-2-1",
+            "name": "Systems: Computer Aided Design (CAD)"
+          },
+          {
+            "id": "lca-engineering-2-2",
+            "name": "Systems: Electricity"
+          },
+          {
+            "id": "lca-engineering-2-3",
+            "name": "Systems: Electronics"
+          },
+          {
+            "id": "lca-engineering-2-4",
+            "name": "Systems: Mechanisms"
+          },
+          {
+            "id": "lca-engineering-2-5",
+            "name": "Systems: Pneumatics"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lca-english-and-communications",
+    "name": "English and Communications (LCA)",
+    "category": "language",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "lca-english-and-communications-0",
+        "name": "Section A — Audio Visual",
+        "subtopics": [
+          {
+            "id": "lca-english-and-communications-0-0",
+            "name": "Audio-visual clips (comprehension & response)"
+          }
+        ]
+      },
+      {
+        "id": "lca-english-and-communications-1",
+        "name": "Section B — Personal and Social Communications",
+        "subtopics": [
+          {
+            "id": "lca-english-and-communications-1-0",
+            "name": "Personal & social texts (reading, response & studied novel)"
+          }
+        ]
+      },
+      {
+        "id": "lca-english-and-communications-2",
+        "name": "Section C — Communication and the Digital World",
+        "subtopics": [
+          {
+            "id": "lca-english-and-communications-2-0",
+            "name": "Digital media & infographics"
+          }
+        ]
+      },
+      {
+        "id": "lca-english-and-communications-3",
+        "name": "Section D — Communication in Media",
+        "subtopics": [
+          {
+            "id": "lca-english-and-communications-3-0",
+            "name": "Media texts (articles, radio & advertising)"
+          }
+        ]
+      },
+      {
+        "id": "lca-english-and-communications-4",
+        "name": "Section E — Express Yourself",
+        "subtopics": [
+          {
+            "id": "lca-english-and-communications-4-0",
+            "name": "Creative expression (songs, poetry & personal writing)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lca-french",
+    "name": "French (LCA)",
+    "category": "language",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "lca-french-0",
+        "name": "Section 1 — Listening Comprehension",
+        "subtopics": [
+          {
+            "id": "lca-french-0-0",
+            "name": "Listening tasks (everyday situations)"
+          }
+        ]
+      },
+      {
+        "id": "lca-french-1",
+        "name": "Section 2 — Reading Comprehension & Written Exercise",
+        "subtopics": [
+          {
+            "id": "lca-french-1-0",
+            "name": "Reading comprehension (menus, ads & notices)"
+          },
+          {
+            "id": "lca-french-1-1",
+            "name": "Written exercises (forms & fill-in-the-blanks)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lca-german",
+    "name": "German (LCA)",
+    "category": "language",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "lca-german-0",
+        "name": "Section 1 — Listening Comprehension",
+        "subtopics": [
+          {
+            "id": "lca-german-0-0",
+            "name": "Listening tasks (everyday situations)"
+          }
+        ]
+      },
+      {
+        "id": "lca-german-1",
+        "name": "Section 2 — Reading Comprehension & Written Exercise",
+        "subtopics": [
+          {
+            "id": "lca-german-1-0",
+            "name": "Reading comprehension (menus, ads & notices)"
+          },
+          {
+            "id": "lca-german-1-1",
+            "name": "Written exercises (forms & fill-in-the-blanks)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lca-italian",
+    "name": "Italian (LCA)",
+    "category": "language",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "lca-italian-0",
+        "name": "Section 1 — Listening Comprehension",
+        "subtopics": [
+          {
+            "id": "lca-italian-0-0",
+            "name": "Listening tasks (everyday situations)"
+          }
+        ]
+      },
+      {
+        "id": "lca-italian-1",
+        "name": "Section 2 — Reading Comprehension & Written Exercise",
+        "subtopics": [
+          {
+            "id": "lca-italian-1-0",
+            "name": "Reading comprehension (menus, ads & notices)"
+          },
+          {
+            "id": "lca-italian-1-1",
+            "name": "Written exercises (forms & fill-in-the-blanks)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lca-spanish",
+    "name": "Spanish (LCA)",
+    "category": "language",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "lca-spanish-0",
+        "name": "Section 1 — Listening Comprehension",
+        "subtopics": [
+          {
+            "id": "lca-spanish-0-0",
+            "name": "Listening tasks (everyday situations)"
+          }
+        ]
+      },
+      {
+        "id": "lca-spanish-1",
+        "name": "Section 2 — Reading Comprehension & Written Exercise",
+        "subtopics": [
+          {
+            "id": "lca-spanish-1-0",
+            "name": "Reading comprehension (menus, ads & notices)"
+          },
+          {
+            "id": "lca-spanish-1-1",
+            "name": "Written exercises (forms & fill-in-the-blanks)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lca-gaeilge-chumarsaideach",
+    "name": "Gaeilge Chumarsáideach (LCA)",
+    "category": "language",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "lca-gaeilge-chumarsaideach-0",
+        "name": "Roinn 1 — Cluastuiscint",
+        "subtopics": [
+          {
+            "id": "lca-gaeilge-chumarsaideach-0-0",
+            "name": "Cluastuiscint (listening)"
+          }
+        ]
+      },
+      {
+        "id": "lca-gaeilge-chumarsaideach-1",
+        "name": "Roinn 2 — Léamhthuiscint",
+        "subtopics": [
+          {
+            "id": "lca-gaeilge-chumarsaideach-1-0",
+            "name": "Léamhthuiscint (reading comprehension)"
+          }
+        ]
+      },
+      {
+        "id": "lca-gaeilge-chumarsaideach-2",
+        "name": "Roinn 3 — Scríobh na Teanga",
+        "subtopics": [
+          {
+            "id": "lca-gaeilge-chumarsaideach-2-0",
+            "name": "Scríobh na teanga (writing)"
+          }
+        ]
+      },
+      {
+        "id": "lca-gaeilge-chumarsaideach-3",
+        "name": "Roinn 4 — Taighde",
+        "subtopics": [
+          {
+            "id": "lca-gaeilge-chumarsaideach-3-0",
+            "name": "Taighde (research task)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lca-graphics-and-construction-studies",
+    "name": "Graphics and Construction Studies (LCA)",
+    "category": "practical-applied",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "lca-graphics-and-construction-studies-0",
+        "name": "Section 1 — Short Questions (Compulsory)",
+        "subtopics": [
+          {
+            "id": "lca-graphics-and-construction-studies-0-0",
+            "name": "Short questions (graphics & construction)"
+          }
+        ]
+      },
+      {
+        "id": "lca-graphics-and-construction-studies-1",
+        "name": "Section 2 — Optional Questions",
+        "subtopics": [
+          {
+            "id": "lca-graphics-and-construction-studies-1-0",
+            "name": "Graphic Communication"
+          },
+          {
+            "id": "lca-graphics-and-construction-studies-1-1",
+            "name": "Woodcraft"
+          },
+          {
+            "id": "lca-graphics-and-construction-studies-1-2",
+            "name": "Design & Manufacture of Educational Toys"
+          },
+          {
+            "id": "lca-graphics-and-construction-studies-1-3",
+            "name": "Computer Aided Design (CAD)"
+          },
+          {
+            "id": "lca-graphics-and-construction-studies-1-4",
+            "name": "Construction"
+          },
+          {
+            "id": "lca-graphics-and-construction-studies-1-5",
+            "name": "Building Services"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lca-hair-and-beauty",
+    "name": "Hair and Beauty (LCA)",
+    "category": "practical-applied",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "lca-hair-and-beauty-0",
+        "name": "Section 1 — Salon and Customer Care",
+        "subtopics": [
+          {
+            "id": "lca-hair-and-beauty-0-0",
+            "name": "Salon & customer care"
+          }
+        ]
+      },
+      {
+        "id": "lca-hair-and-beauty-1",
+        "name": "Section 2 — Haircare",
+        "subtopics": [
+          {
+            "id": "lca-hair-and-beauty-1-0",
+            "name": "Haircare"
+          }
+        ]
+      },
+      {
+        "id": "lca-hair-and-beauty-2",
+        "name": "Section 3 — Beautycare",
+        "subtopics": [
+          {
+            "id": "lca-hair-and-beauty-2-0",
+            "name": "Beautycare"
+          }
+        ]
+      },
+      {
+        "id": "lca-hair-and-beauty-3",
+        "name": "Section 4 — Bodycare",
+        "subtopics": [
+          {
+            "id": "lca-hair-and-beauty-3-0",
+            "name": "Bodycare"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lca-hotel-catering-and-tourism",
+    "name": "Hotel, Catering & Tourism (LCA)",
+    "category": "practical-applied",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "lca-hotel-catering-and-tourism-0",
+        "name": "Section 1 — Eating Out: The Fast Food Way",
+        "subtopics": [
+          {
+            "id": "lca-hotel-catering-and-tourism-0-0",
+            "name": "Fast food & café catering"
+          }
+        ]
+      },
+      {
+        "id": "lca-hotel-catering-and-tourism-1",
+        "name": "Section 2 — Eating Out: Hotels, Restaurants",
+        "subtopics": [
+          {
+            "id": "lca-hotel-catering-and-tourism-1-0",
+            "name": "Hotel & restaurant catering"
+          }
+        ]
+      },
+      {
+        "id": "lca-hotel-catering-and-tourism-2",
+        "name": "Section 3 — Hospitality in Tourism",
+        "subtopics": [
+          {
+            "id": "lca-hotel-catering-and-tourism-2-0",
+            "name": "Hospitality & the Irish tourism industry"
+          }
+        ]
+      },
+      {
+        "id": "lca-hotel-catering-and-tourism-3",
+        "name": "Section 4 — Catering for Diversity",
+        "subtopics": [
+          {
+            "id": "lca-hotel-catering-and-tourism-3-0",
+            "name": "Catering for diversity (diets, health & world cuisine)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lca-information-and-communication-tech",
+    "name": "Information & Communication Technology (LCA)",
+    "category": "practical-applied",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "lca-information-and-communication-tech-0",
+        "name": "General Theory",
+        "subtopics": [
+          {
+            "id": "lca-information-and-communication-tech-0-0",
+            "name": "General computer theory (short questions)"
+          }
+        ]
+      },
+      {
+        "id": "lca-information-and-communication-tech-1",
+        "name": "Word Processing",
+        "subtopics": [
+          {
+            "id": "lca-information-and-communication-tech-1-0",
+            "name": "Word processing (theory & practical)"
+          }
+        ]
+      },
+      {
+        "id": "lca-information-and-communication-tech-2",
+        "name": "Spreadsheets",
+        "subtopics": [
+          {
+            "id": "lca-information-and-communication-tech-2-0",
+            "name": "Spreadsheets (theory & practical)"
+          }
+        ]
+      },
+      {
+        "id": "lca-information-and-communication-tech-3",
+        "name": "Databases",
+        "subtopics": [
+          {
+            "id": "lca-information-and-communication-tech-3-0",
+            "name": "Databases (theory & practical)"
+          }
+        ]
+      },
+      {
+        "id": "lca-information-and-communication-tech-4",
+        "name": "Desktop Publishing",
+        "subtopics": [
+          {
+            "id": "lca-information-and-communication-tech-4-0",
+            "name": "Desktop publishing (theory & practical)"
+          }
+        ]
+      },
+      {
+        "id": "lca-information-and-communication-tech-5",
+        "name": "Internet & Digital Literacy",
+        "subtopics": [
+          {
+            "id": "lca-information-and-communication-tech-5-0",
+            "name": "Internet & digital literacy (theory & practical)"
+          }
+        ]
+      },
+      {
+        "id": "lca-information-and-communication-tech-6",
+        "name": "Text Entry",
+        "subtopics": [
+          {
+            "id": "lca-information-and-communication-tech-6-0",
+            "name": "Text entry (theory & practical)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lca-mathematical-applications",
+    "name": "Mathematical Applications (LCA)",
+    "category": "stem",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "lca-mathematical-applications-0",
+        "name": "Terminal Exam — Contextual Maths",
+        "subtopics": [
+          {
+            "id": "lca-mathematical-applications-0-0",
+            "name": "Number, money & everyday calculations"
+          },
+          {
+            "id": "lca-mathematical-applications-0-1",
+            "name": "Measurement, geometry & scale"
+          },
+          {
+            "id": "lca-mathematical-applications-0-2",
+            "name": "Data, statistics & probability"
+          },
+          {
+            "id": "lca-mathematical-applications-0-3",
+            "name": "Research element question"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lca-office-admin-and-customer",
+    "name": "Office Administration and Customer Care (LCA)",
+    "category": "business",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "lca-office-admin-and-customer-0",
+        "name": "Section 1 — Retailing and Selling",
+        "subtopics": [
+          {
+            "id": "lca-office-admin-and-customer-0-0",
+            "name": "Retailing & selling"
+          }
+        ]
+      },
+      {
+        "id": "lca-office-admin-and-customer-1",
+        "name": "Section 2 — Office Assistant",
+        "subtopics": [
+          {
+            "id": "lca-office-admin-and-customer-1-0",
+            "name": "Office assistant duties"
+          }
+        ]
+      },
+      {
+        "id": "lca-office-admin-and-customer-2",
+        "name": "Section 3 — Office Practice",
+        "subtopics": [
+          {
+            "id": "lca-office-admin-and-customer-2-0",
+            "name": "Office practice"
+          }
+        ]
+      },
+      {
+        "id": "lca-office-admin-and-customer-3",
+        "name": "Section 4 — Retailing and the Consumer",
+        "subtopics": [
+          {
+            "id": "lca-office-admin-and-customer-3-0",
+            "name": "Retailing & the consumer"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lca-sign-language",
+    "name": "Sign Language (LCA)",
+    "category": "language",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "lca-sign-language-0",
+        "name": "Part One — Short Questions",
+        "subtopics": [
+          {
+            "id": "lca-sign-language-0-0",
+            "name": "Signed questions (ISL, Deaf community & everyday topics)"
+          }
+        ]
+      },
+      {
+        "id": "lca-sign-language-1",
+        "name": "Part Two — Presentation",
+        "subtopics": [
+          {
+            "id": "lca-sign-language-1-0",
+            "name": "Signed presentation & follow-up questions"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lca-social-education",
+    "name": "Social Education (LCA)",
+    "category": "social-environmental",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "lca-social-education-0",
+        "name": "Section A — Aural Test",
+        "subtopics": [
+          {
+            "id": "lca-social-education-0-0",
+            "name": "Aural report (health & social issues)"
+          }
+        ]
+      },
+      {
+        "id": "lca-social-education-1",
+        "name": "Section B — Multiple Choice Questions",
+        "subtopics": [
+          {
+            "id": "lca-social-education-1-0",
+            "name": "Multiple choice (society, politics & general knowledge)"
+          }
+        ]
+      },
+      {
+        "id": "lca-social-education-2",
+        "name": "Section C — Long Answer Questions",
+        "subtopics": [
+          {
+            "id": "lca-social-education-2-0",
+            "name": "Long answers (contemporary social issues)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lca-technology",
+    "name": "Technology (LCA)",
+    "category": "practical-applied",
+    "levels": [
+      "common"
+    ],
+    "strands": [
+      {
+        "id": "lca-technology-0",
+        "name": "Terminal Exam Questions",
+        "subtopics": [
+          {
+            "id": "lca-technology-0-0",
+            "name": "Short questions (materials & technology)"
+          },
+          {
+            "id": "lca-technology-0-1",
+            "name": "Graphical Communication"
+          },
+          {
+            "id": "lca-technology-0-2",
+            "name": "Health and Safety"
+          },
+          {
+            "id": "lca-technology-0-3",
+            "name": "Electrical Understanding & Basic Electronics"
+          },
+          {
+            "id": "lca-technology-0-4",
+            "name": "Tools & Equipment"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bulgarian",
+    "name": "Bulgarian",
+    "category": "language",
+    "levels": [
+      "higher"
+    ],
+    "strands": [
+      {
+        "id": "bulgarian-0",
+        "name": "Part I — Reading Comprehension",
+        "subtopics": [
+          {
+            "id": "bulgarian-0-0",
+            "name": "Vocabulary & expressions in context"
+          },
+          {
+            "id": "bulgarian-0-1",
+            "name": "Comprehension & discussion of the set text"
+          }
+        ]
+      },
+      {
+        "id": "bulgarian-1",
+        "name": "Part II — Written Production",
+        "subtopics": [
+          {
+            "id": "bulgarian-1-0",
+            "name": "Commentary / essay on the text theme"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "croatian",
+    "name": "Croatian",
+    "category": "language",
+    "levels": [
+      "higher"
+    ],
+    "strands": [
+      {
+        "id": "croatian-0",
+        "name": "Part I — Reading Comprehension",
+        "subtopics": [
+          {
+            "id": "croatian-0-0",
+            "name": "Vocabulary & expressions in context"
+          },
+          {
+            "id": "croatian-0-1",
+            "name": "Comprehension & discussion of the set text"
+          }
+        ]
+      },
+      {
+        "id": "croatian-1",
+        "name": "Part II — Written Production",
+        "subtopics": [
+          {
+            "id": "croatian-1-0",
+            "name": "Commentary / essay on the text theme"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "czech",
+    "name": "Czech",
+    "category": "language",
+    "levels": [
+      "higher"
+    ],
+    "strands": [
+      {
+        "id": "czech-0",
+        "name": "Part I — Reading Comprehension",
+        "subtopics": [
+          {
+            "id": "czech-0-0",
+            "name": "Vocabulary & expressions in context"
+          },
+          {
+            "id": "czech-0-1",
+            "name": "Comprehension & discussion of the set text"
+          }
+        ]
+      },
+      {
+        "id": "czech-1",
+        "name": "Part II — Written Production",
+        "subtopics": [
+          {
+            "id": "czech-1-0",
+            "name": "Commentary / essay on the text theme"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "danish",
+    "name": "Danish",
+    "category": "language",
+    "levels": [
+      "higher"
+    ],
+    "strands": [
+      {
+        "id": "danish-0",
+        "name": "Part I — Reading Comprehension",
+        "subtopics": [
+          {
+            "id": "danish-0-0",
+            "name": "Vocabulary & expressions in context"
+          },
+          {
+            "id": "danish-0-1",
+            "name": "Comprehension & discussion of the set text"
+          }
+        ]
+      },
+      {
+        "id": "danish-1",
+        "name": "Part II — Written Production",
+        "subtopics": [
+          {
+            "id": "danish-1-0",
+            "name": "Commentary / essay on the text theme"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dutch",
+    "name": "Dutch",
+    "category": "language",
+    "levels": [
+      "higher"
+    ],
+    "strands": [
+      {
+        "id": "dutch-0",
+        "name": "Part I — Reading Comprehension",
+        "subtopics": [
+          {
+            "id": "dutch-0-0",
+            "name": "Vocabulary & expressions in context"
+          },
+          {
+            "id": "dutch-0-1",
+            "name": "Comprehension & discussion of the set text"
+          }
+        ]
+      },
+      {
+        "id": "dutch-1",
+        "name": "Part II — Written Production",
+        "subtopics": [
+          {
+            "id": "dutch-1-0",
+            "name": "Commentary / essay on the text theme"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "estonian",
+    "name": "Estonian",
+    "category": "language",
+    "levels": [
+      "higher"
+    ],
+    "strands": [
+      {
+        "id": "estonian-0",
+        "name": "Part I — Reading Comprehension",
+        "subtopics": [
+          {
+            "id": "estonian-0-0",
+            "name": "Vocabulary & expressions in context"
+          },
+          {
+            "id": "estonian-0-1",
+            "name": "Comprehension & discussion of the set text"
+          }
+        ]
+      },
+      {
+        "id": "estonian-1",
+        "name": "Part II — Written Production",
+        "subtopics": [
+          {
+            "id": "estonian-1-0",
+            "name": "Commentary / essay on the text theme"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "finnish",
+    "name": "Finnish",
+    "category": "language",
+    "levels": [
+      "higher"
+    ],
+    "strands": [
+      {
+        "id": "finnish-0",
+        "name": "Part I — Reading Comprehension",
+        "subtopics": [
+          {
+            "id": "finnish-0-0",
+            "name": "Vocabulary & expressions in context"
+          },
+          {
+            "id": "finnish-0-1",
+            "name": "Comprehension & discussion of the set text"
+          }
+        ]
+      },
+      {
+        "id": "finnish-1",
+        "name": "Part II — Written Production",
+        "subtopics": [
+          {
+            "id": "finnish-1-0",
+            "name": "Commentary / essay on the text theme"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hungarian",
+    "name": "Hungarian",
+    "category": "language",
+    "levels": [
+      "higher"
+    ],
+    "strands": [
+      {
+        "id": "hungarian-0",
+        "name": "Part I — Reading Comprehension",
+        "subtopics": [
+          {
+            "id": "hungarian-0-0",
+            "name": "Vocabulary & expressions in context"
+          },
+          {
+            "id": "hungarian-0-1",
+            "name": "Comprehension & discussion of the set text"
+          }
+        ]
+      },
+      {
+        "id": "hungarian-1",
+        "name": "Part II — Written Production",
+        "subtopics": [
+          {
+            "id": "hungarian-1-0",
+            "name": "Commentary / essay on the text theme"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "latvian",
+    "name": "Latvian",
+    "category": "language",
+    "levels": [
+      "higher"
+    ],
+    "strands": [
+      {
+        "id": "latvian-0",
+        "name": "Part I — Reading Comprehension",
+        "subtopics": [
+          {
+            "id": "latvian-0-0",
+            "name": "Vocabulary & expressions in context"
+          },
+          {
+            "id": "latvian-0-1",
+            "name": "Comprehension & discussion of the set text"
+          }
+        ]
+      },
+      {
+        "id": "latvian-1",
+        "name": "Part II — Written Production",
+        "subtopics": [
+          {
+            "id": "latvian-1-0",
+            "name": "Commentary / essay on the text theme"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "maltese",
+    "name": "Maltese",
+    "category": "language",
+    "levels": [
+      "higher"
+    ],
+    "strands": [
+      {
+        "id": "maltese-0",
+        "name": "Part I — Reading Comprehension",
+        "subtopics": [
+          {
+            "id": "maltese-0-0",
+            "name": "Vocabulary & expressions in context"
+          },
+          {
+            "id": "maltese-0-1",
+            "name": "Comprehension & discussion of the set text"
+          }
+        ]
+      },
+      {
+        "id": "maltese-1",
+        "name": "Part II — Written Production",
+        "subtopics": [
+          {
+            "id": "maltese-1-0",
+            "name": "Commentary / essay on the text theme"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "modern-greek",
+    "name": "Modern Greek",
+    "category": "language",
+    "levels": [
+      "higher"
+    ],
+    "strands": [
+      {
+        "id": "modern-greek-0",
+        "name": "Part I — Reading Comprehension",
+        "subtopics": [
+          {
+            "id": "modern-greek-0-0",
+            "name": "Vocabulary & expressions in context"
+          },
+          {
+            "id": "modern-greek-0-1",
+            "name": "Comprehension & discussion of the set text"
+          }
+        ]
+      },
+      {
+        "id": "modern-greek-1",
+        "name": "Part II — Written Production",
+        "subtopics": [
+          {
+            "id": "modern-greek-1-0",
+            "name": "Commentary / essay on the text theme"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "romanian",
+    "name": "Romanian",
+    "category": "language",
+    "levels": [
+      "higher"
+    ],
+    "strands": [
+      {
+        "id": "romanian-0",
+        "name": "Part I — Reading Comprehension",
+        "subtopics": [
+          {
+            "id": "romanian-0-0",
+            "name": "Vocabulary & expressions in context"
+          },
+          {
+            "id": "romanian-0-1",
+            "name": "Comprehension & discussion of the set text"
+          }
+        ]
+      },
+      {
+        "id": "romanian-1",
+        "name": "Part II — Written Production",
+        "subtopics": [
+          {
+            "id": "romanian-1-0",
+            "name": "Commentary / essay on the text theme"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "slovakian",
+    "name": "Slovakian",
+    "category": "language",
+    "levels": [
+      "higher"
+    ],
+    "strands": [
+      {
+        "id": "slovakian-0",
+        "name": "Part I — Reading Comprehension",
+        "subtopics": [
+          {
+            "id": "slovakian-0-0",
+            "name": "Vocabulary & expressions in context"
+          },
+          {
+            "id": "slovakian-0-1",
+            "name": "Comprehension & discussion of the set text"
+          }
+        ]
+      },
+      {
+        "id": "slovakian-1",
+        "name": "Part II — Written Production",
+        "subtopics": [
+          {
+            "id": "slovakian-1-0",
+            "name": "Commentary / essay on the text theme"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "slovenian",
+    "name": "Slovenian",
+    "category": "language",
+    "levels": [
+      "higher"
+    ],
+    "strands": [
+      {
+        "id": "slovenian-0",
+        "name": "Part I — Reading Comprehension",
+        "subtopics": [
+          {
+            "id": "slovenian-0-0",
+            "name": "Vocabulary & expressions in context"
+          },
+          {
+            "id": "slovenian-0-1",
+            "name": "Comprehension & discussion of the set text"
+          }
+        ]
+      },
+      {
+        "id": "slovenian-1",
+        "name": "Part II — Written Production",
+        "subtopics": [
+          {
+            "id": "slovenian-1-0",
+            "name": "Commentary / essay on the text theme"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "swedish",
+    "name": "Swedish",
+    "category": "language",
+    "levels": [
+      "higher"
+    ],
+    "strands": [
+      {
+        "id": "swedish-0",
+        "name": "Part I — Reading Comprehension",
+        "subtopics": [
+          {
+            "id": "swedish-0-0",
+            "name": "Vocabulary & expressions in context"
+          },
+          {
+            "id": "swedish-0-1",
+            "name": "Comprehension & discussion of the set text"
+          }
+        ]
+      },
+      {
+        "id": "swedish-1",
+        "name": "Part II — Written Production",
+        "subtopics": [
+          {
+            "id": "swedish-1-0",
+            "name": "Commentary / essay on the text theme"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ukrainian",
+    "name": "Ukrainian",
+    "category": "language",
+    "levels": [
+      "higher"
+    ],
+    "strands": [
+      {
+        "id": "ukrainian-0",
+        "name": "Part I — Reading Comprehension",
+        "subtopics": [
+          {
+            "id": "ukrainian-0-0",
+            "name": "Vocabulary & expressions in context"
+          },
+          {
+            "id": "ukrainian-0-1",
+            "name": "Comprehension & discussion of the set text"
+          }
+        ]
+      },
+      {
+        "id": "ukrainian-1",
+        "name": "Part II — Written Production",
+        "subtopics": [
+          {
+            "id": "ukrainian-1-0",
+            "name": "Commentary / essay on the text theme"
           }
         ]
       }

@@ -1,0 +1,36 @@
+[
+ {
+  "subjectId": "ukrainian",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC570ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "ukrainian-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "ukrainian-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "ukrainian-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "ukrainian-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "ukrainian-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "ukrainian-0-1"
+   }
+  ]
+ }
+]

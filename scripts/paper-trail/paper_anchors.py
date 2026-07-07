@@ -90,6 +90,14 @@ BLANK_PAGE_TEXTS = {
 # rolling a subject out. See PAPER-ANCHORS.md for the rollout recipe.
 SUBJECT_GRAMMAR = {
     "design-and-communication-graphics": "section_token",
+    # Sciences wave: LC biology/chemistry/physics print questions as a bare
+    # left-margin 'N.' in every era (pre- and post-2020 formats verified).
+    "biology": "lead_int",
+    "chemistry": "lead_int",
+    "physics": "lead_int",
+    # agricultural-science is era-split (old spec ≤2020: 'N.' lead ints; new
+    # spec 2021+: 'Question N') — run it with explicit --years + --grammar
+    # per era rather than a single pin.
 }
 
 _LIGATURES = {
