@@ -109,9 +109,18 @@ SUBJECT_GRAMMAR = {
     "biology": "lead_int",
     "chemistry": "lead_int",
     "physics": "lead_int",
+    # physics-and-chemistry prints the same bare left-margin 'N.' run
+    # (Q1..12) as the other sciences in every era (2026-07 wave).
+    "physics-and-chemistry": "lead_int",
     # agricultural-science is era-split (old spec ≤2020: 'N.' lead ints; new
     # spec 2021+: 'Question N') — it runs UNPINNED (auto): the per-paper
     # best-detector pick resolves the era correctly (2026-07 wave).
+    # applied-mathematics is era-split like mathematics and runs UNPINNED
+    # (auto): old-spec papers (≤2019 remainder) print bare 'N.' lead ints and
+    # ship strict; new-spec booklets (2023+) print 'Question N'/'Ceist N' but
+    # every one has a question spanning 4 pages to the next anchor, so they
+    # all drop at the span gate (viewer contract) — correct refusals
+    # (2026-07 STEM+languages wave).
     # mathematics is era-split too, so it runs UNPINNED (auto): compact
     # pre-Project-Maths papers (2010–2012 P100/P200/P000) print bare 'N.'
     # lead ints; every Project-Maths-format paper (P130/P230 pilots and all
@@ -137,6 +146,42 @@ SUBJECT_GRAMMAR = {
     # (ships), HL has Q1-2 (< MIN_QUESTIONS, drops). Sections B-J are
     # unnumbered essay tasks with no markers of any grammar.
     "religious-education": "question",
+    # technology runs UNPINNED (component-split): Section A docs (014) are
+    # lead_int (HL 1..15 / OL 1..12); Section B docs (015) print 'Question N'
+    # but only Q2/Q3 are numbered (Section C options are unnumbered) so they
+    # drop on coverage — correct refusals. CAUTION: Section A embeds
+    # '1. ____' answer-list lines inside questions (fabricated-numbers
+    # class); they are harmless here ONLY because the real headers precede
+    # them in print order (first-occurrence-wins) — verified textually + by
+    # render for 2011/2021 (2026-07 wave). Papers where an answer list
+    # follows the LAST question drop at the tail gate.
+    # engineering written papers print 'Question N' (Q1..8 HL/OL) in every
+    # era; pinned because lead_int also fires on numbered sub-lists (1..5)
+    # inside questions and must not compete. Practical Test / Practical Paper
+    # sheets (018/034/035/036, incl. BV) carry no markers and drop on
+    # coverage.
+    "engineering": "question",
+    # construction-studies written papers print one left-margin 'N.' run
+    # (Q1..10) in every era; the Practical Test / Project sheets are rotated
+    # A3 drawings with no markers of any grammar and drop on coverage.
+    # 2014 HL prints Q5's header without a detectable dot → numbering gap →
+    # correct hard drop (dotless-header class).
+    "construction-studies": "lead_int",
+    # computer-science prints 'Question N' throughout (Section A&B booklets
+    # number 1..15; the separate Section C doc holds only Question 16 and
+    # drops on coverage — correct refusal for a one-question doc). CAUTION:
+    # pinned because lead_int fabricates anchors from numbered task lists
+    # inside Section C (2025 IV prints '1.'/'2.'/'3.' list lines that would
+    # win the auto tie) — the fabricated-numbers trap class (2026-07 wave).
+    "computer-science": "question",
+    # physical-education prints 'Question N' (1..16/18 booklets). CAUTION —
+    # two trap classes (2026-07 wave): (a) 2022+ papers print an
+    # instruction-line 'Question 13 …' at the left margin of the cover page;
+    # first-occurrence-wins anchors it there → non-monotonic → those papers
+    # drop (stray instruction-page-reference class, correct refusal);
+    # (b) lead_int fabricates 3-4 anchors from '1.'/'2.' answer-list lines,
+    # so the pin keeps it from ever winning the auto pick.
+    "physical-education": "question",
     # irish prints 'Ceist N': only the foundation-level aural papers number
     # continuously (Ceist 1..12); HL/OL Paper 1/2 and aural papers restart
     # numbering per section (léamhthuiscint texts A/B, Cuid A/B/C) and drop.
