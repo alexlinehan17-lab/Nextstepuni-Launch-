@@ -1,0 +1,27 @@
+[
+ {
+  "subjectId": "religious-education",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC223GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "religious-education-0-6",
+    "secondary": "religious-education-0-4"
+   },
+   {
+    "n": "2",
+    "primary": "religious-education-0-2",
+    "secondary": "religious-education-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "religious-education-0-3",
+    "secondary": "religious-education-0-0"
+   }
+  ]
+ }
+]

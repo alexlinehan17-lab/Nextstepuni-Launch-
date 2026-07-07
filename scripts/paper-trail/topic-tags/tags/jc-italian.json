@@ -1,0 +1,170 @@
+[
+ {
+  "subjectId": "jc-italian",
+  "level": "common",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "JC013CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-italian-0-6"
+   },
+   {
+    "n": "2",
+    "primary": "jc-italian-0-5",
+    "secondary": "jc-italian-0-7"
+   },
+   {
+    "n": "3",
+    "primary": "jc-italian-0-6"
+   },
+   {
+    "n": "4",
+    "primary": "jc-italian-0-7"
+   },
+   {
+    "n": "5",
+    "primary": "jc-italian-0-4",
+    "secondary": "jc-italian-0-7"
+   },
+   {
+    "n": "6",
+    "primary": "jc-italian-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "jc-italian-0-4",
+    "secondary": "jc-italian-0-7"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-italian",
+  "level": "common",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "JC013CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-italian-0-5",
+    "secondary": "jc-italian-0-7"
+   },
+   {
+    "n": "2",
+    "primary": "jc-italian-0-6"
+   },
+   {
+    "n": "3",
+    "primary": "jc-italian-0-5",
+    "secondary": "jc-italian-0-7"
+   },
+   {
+    "n": "4",
+    "primary": "jc-italian-0-4",
+    "secondary": "jc-italian-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-italian-0-4",
+    "secondary": "jc-italian-0-7"
+   },
+   {
+    "n": "6",
+    "primary": "jc-italian-0-4",
+    "secondary": "jc-italian-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "jc-italian-2-0",
+    "secondary": "jc-italian-0-7"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-italian",
+  "level": "common",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "JC013CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-italian-0-6"
+   },
+   {
+    "n": "2",
+    "primary": "jc-italian-0-5",
+    "secondary": "jc-italian-0-7"
+   },
+   {
+    "n": "3",
+    "primary": "jc-italian-0-7"
+   },
+   {
+    "n": "4",
+    "primary": "jc-italian-2-0",
+    "secondary": "jc-italian-0-7"
+   },
+   {
+    "n": "5",
+    "primary": "jc-italian-0-5",
+    "secondary": "jc-italian-0-7"
+   },
+   {
+    "n": "6",
+    "primary": "jc-italian-0-4",
+    "secondary": "jc-italian-0-7"
+   },
+   {
+    "n": "7",
+    "primary": "jc-italian-0-4",
+    "secondary": "jc-italian-0-7"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-italian",
+  "level": "common",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "JC013CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-italian-0-6"
+   },
+   {
+    "n": "2",
+    "primary": "jc-italian-0-5",
+    "secondary": "jc-italian-0-7"
+   },
+   {
+    "n": "3",
+    "primary": "jc-italian-0-6"
+   },
+   {
+    "n": "4",
+    "primary": "jc-italian-0-4"
+   },
+   {
+    "n": "5",
+    "primary": "jc-italian-0-4",
+    "secondary": "jc-italian-0-7"
+   },
+   {
+    "n": "6",
+    "primary": "jc-italian-0-4"
+   },
+   {
+    "n": "7",
+    "primary": "jc-italian-0-7"
+   }
+  ]
+ }
+]

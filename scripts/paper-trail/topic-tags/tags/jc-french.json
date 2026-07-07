@@ -1,0 +1,154 @@
+[
+ {
+  "subjectId": "jc-french",
+  "level": "common",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "JC010CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-french-0-6"
+   },
+   {
+    "n": "2",
+    "primary": "jc-french-0-6"
+   },
+   {
+    "n": "3",
+    "primary": "jc-french-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "jc-french-0-4"
+   },
+   {
+    "n": "5",
+    "primary": "jc-french-0-4"
+   },
+   {
+    "n": "6",
+    "primary": "jc-french-0-4"
+   },
+   {
+    "n": "7",
+    "primary": "jc-french-0-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-french",
+  "level": "common",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "JC010CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-french-0-6"
+   },
+   {
+    "n": "2",
+    "primary": "jc-french-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "jc-french-0-5",
+    "secondary": "jc-french-0-7"
+   },
+   {
+    "n": "4",
+    "primary": "jc-french-0-6"
+   },
+   {
+    "n": "5",
+    "primary": "jc-french-0-4"
+   },
+   {
+    "n": "6",
+    "primary": "jc-french-0-4"
+   },
+   {
+    "n": "7",
+    "primary": "jc-french-0-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-french",
+  "level": "common",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "JC010CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-french-0-6"
+   },
+   {
+    "n": "2",
+    "primary": "jc-french-0-5",
+    "secondary": "jc-french-0-7"
+   },
+   {
+    "n": "3",
+    "primary": "jc-french-0-5",
+    "secondary": "jc-french-0-7"
+   },
+   {
+    "n": "4",
+    "primary": "jc-french-0-6"
+   },
+   {
+    "n": "5",
+    "primary": "jc-french-0-4",
+    "secondary": "jc-french-0-7"
+   },
+   {
+    "n": "6",
+    "primary": "jc-french-0-4"
+   },
+   {
+    "n": "7",
+    "primary": "jc-french-0-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-french",
+  "level": "common",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "JC010CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-french-0-6"
+   },
+   {
+    "n": "2",
+    "primary": "jc-french-0-6"
+   },
+   {
+    "n": "3",
+    "primary": "jc-french-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "jc-french-0-4"
+   },
+   {
+    "n": "5",
+    "primary": "jc-french-0-4"
+   },
+   {
+    "n": "6",
+    "primary": "jc-french-0-4"
+   }
+  ]
+ }
+]

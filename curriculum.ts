@@ -1636,6 +1636,14 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "spanish-7-1",
             "name": "Relato de un náufrago (Gabriel García Márquez)"
+          },
+          {
+            "id": "spanish-7-2",
+            "name": "Prescribed Literature (La aventura de Saíd)"
+          },
+          {
+            "id": "spanish-7-3",
+            "name": "Prescribed Literature (Sin noticias de Gurb)"
           }
         ]
       }
@@ -2966,6 +2974,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "arabic-3-5",
             "name": "Higher Level: Inference & Analysis"
+          },
+          {
+            "id": "arabic-3-6",
+            "name": "Directed Written Response (Reading Q5–Q6)"
           }
         ]
       },

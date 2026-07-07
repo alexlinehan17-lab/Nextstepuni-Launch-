@@ -1,0 +1,475 @@
+[
+ {
+  "subjectId": "politics-and-society",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC568ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "politics-and-society-0-11",
+    "secondary": "politics-and-society-0-9"
+   },
+   {
+    "n": "2",
+    "primary": "politics-and-society-0-12",
+    "secondary": "politics-and-society-1-9"
+   },
+   {
+    "n": "3",
+    "primary": "politics-and-society-0-12",
+    "secondary": "politics-and-society-1-2"
+   },
+   {
+    "n": "4",
+    "primary": "politics-and-society-3-11"
+   },
+   {
+    "n": "5",
+    "primary": "politics-and-society-1-12",
+    "secondary": "politics-and-society-0-9"
+   },
+   {
+    "n": "6",
+    "primary": "politics-and-society-2-10",
+    "secondary": "politics-and-society-2-5"
+   },
+   {
+    "n": "7",
+    "primary": "politics-and-society-3-10",
+    "secondary": "politics-and-society-3-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "politics-and-society",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC568GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "politics-and-society-0-12",
+    "secondary": "politics-and-society-0-11"
+   },
+   {
+    "n": "2",
+    "primary": "politics-and-society-3-11",
+    "secondary": "politics-and-society-2-11"
+   },
+   {
+    "n": "3",
+    "primary": "politics-and-society-1-12",
+    "secondary": "politics-and-society-3-11"
+   },
+   {
+    "n": "4",
+    "primary": "politics-and-society-1-11",
+    "secondary": "politics-and-society-1-9"
+   },
+   {
+    "n": "5",
+    "primary": "politics-and-society-0-12"
+   },
+   {
+    "n": "6",
+    "primary": "politics-and-society-0-11",
+    "secondary": "politics-and-society-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "politics-and-society-3-11"
+   },
+   {
+    "n": "8",
+    "primary": "politics-and-society-1-12",
+    "secondary": "politics-and-society-0-9"
+   },
+   {
+    "n": "9",
+    "primary": "politics-and-society-2-11",
+    "secondary": "politics-and-society-2-7"
+   },
+   {
+    "n": "10",
+    "primary": "politics-and-society-2-10",
+    "secondary": "politics-and-society-2-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "politics-and-society",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC568GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "politics-and-society-2-11",
+    "secondary": "politics-and-society-0-12"
+   },
+   {
+    "n": "2",
+    "primary": "politics-and-society-1-11",
+    "secondary": "politics-and-society-2-10"
+   },
+   {
+    "n": "3",
+    "primary": "politics-and-society-1-12",
+    "secondary": "politics-and-society-1-9"
+   },
+   {
+    "n": "4",
+    "primary": "politics-and-society-1-11",
+    "secondary": "politics-and-society-1-9"
+   },
+   {
+    "n": "5",
+    "primary": "politics-and-society-2-11"
+   },
+   {
+    "n": "6",
+    "primary": "politics-and-society-1-12",
+    "secondary": "politics-and-society-0-9"
+   },
+   {
+    "n": "7",
+    "primary": "politics-and-society-2-10",
+    "secondary": "politics-and-society-2-2"
+   },
+   {
+    "n": "8",
+    "primary": "politics-and-society-1-11",
+    "secondary": "politics-and-society-0-12"
+   },
+   {
+    "n": "9",
+    "primary": "politics-and-society-0-11"
+   },
+   {
+    "n": "10",
+    "primary": "politics-and-society-3-11"
+   }
+  ]
+ },
+ {
+  "subjectId": "politics-and-society",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC568ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "politics-and-society-0-12",
+    "secondary": "politics-and-society-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "politics-and-society-1-12",
+    "secondary": "politics-and-society-1-9"
+   },
+   {
+    "n": "3",
+    "primary": "politics-and-society-1-11",
+    "secondary": "politics-and-society-0-12"
+   },
+   {
+    "n": "4",
+    "primary": "politics-and-society-2-10",
+    "secondary": "politics-and-society-2-5"
+   },
+   {
+    "n": "5",
+    "primary": "politics-and-society-1-12",
+    "secondary": "politics-and-society-0-9"
+   },
+   {
+    "n": "6",
+    "primary": "politics-and-society-2-11"
+   },
+   {
+    "n": "7",
+    "primary": "politics-and-society-2-11",
+    "secondary": "politics-and-society-3-11"
+   }
+  ]
+ },
+ {
+  "subjectId": "politics-and-society",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC568GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "politics-and-society-0-12",
+    "secondary": "politics-and-society-2-11"
+   },
+   {
+    "n": "2",
+    "primary": "politics-and-society-3-11",
+    "secondary": "politics-and-society-2-9"
+   },
+   {
+    "n": "3",
+    "primary": "politics-and-society-1-12",
+    "secondary": "politics-and-society-1-9"
+   },
+   {
+    "n": "4",
+    "primary": "politics-and-society-1-11",
+    "secondary": "politics-and-society-3-11"
+   },
+   {
+    "n": "5",
+    "primary": "politics-and-society-2-11",
+    "secondary": "politics-and-society-3-11"
+   },
+   {
+    "n": "6",
+    "primary": "politics-and-society-0-12"
+   },
+   {
+    "n": "7",
+    "primary": "politics-and-society-0-12",
+    "secondary": "politics-and-society-2-0"
+   },
+   {
+    "n": "8",
+    "primary": "politics-and-society-1-11",
+    "secondary": "politics-and-society-1-2"
+   },
+   {
+    "n": "9",
+    "primary": "politics-and-society-2-10",
+    "secondary": "politics-and-society-2-2"
+   },
+   {
+    "n": "10",
+    "primary": "politics-and-society-1-12",
+    "secondary": "politics-and-society-0-9"
+   }
+  ]
+ },
+ {
+  "subjectId": "politics-and-society",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC568GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "politics-and-society-0-12",
+    "secondary": "politics-and-society-0-6"
+   },
+   {
+    "n": "2",
+    "primary": "politics-and-society-2-10",
+    "secondary": "politics-and-society-2-2"
+   },
+   {
+    "n": "3",
+    "primary": "politics-and-society-1-12",
+    "secondary": "politics-and-society-1-9"
+   },
+   {
+    "n": "4",
+    "primary": "politics-and-society-2-10",
+    "secondary": "politics-and-society-1-11"
+   },
+   {
+    "n": "5",
+    "primary": "politics-and-society-1-12",
+    "secondary": "politics-and-society-0-9"
+   },
+   {
+    "n": "6",
+    "primary": "politics-and-society-2-10",
+    "secondary": "politics-and-society-1-11"
+   },
+   {
+    "n": "7",
+    "primary": "politics-and-society-3-11"
+   },
+   {
+    "n": "8",
+    "primary": "politics-and-society-3-10"
+   },
+   {
+    "n": "9",
+    "primary": "politics-and-society-0-12"
+   },
+   {
+    "n": "10",
+    "primary": "politics-and-society-2-10",
+    "secondary": "politics-and-society-2-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "politics-and-society",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC568GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "politics-and-society-1-12",
+    "secondary": "politics-and-society-0-12"
+   },
+   {
+    "n": "2",
+    "primary": "politics-and-society-2-11"
+   },
+   {
+    "n": "3",
+    "primary": "politics-and-society-1-12",
+    "secondary": "politics-and-society-1-9"
+   },
+   {
+    "n": "4",
+    "primary": "politics-and-society-3-11",
+    "secondary": "politics-and-society-1-11"
+   },
+   {
+    "n": "5",
+    "primary": "politics-and-society-3-10"
+   },
+   {
+    "n": "6",
+    "primary": "politics-and-society-1-11"
+   },
+   {
+    "n": "7",
+    "primary": "politics-and-society-0-12"
+   },
+   {
+    "n": "8",
+    "primary": "politics-and-society-0-11"
+   },
+   {
+    "n": "9",
+    "primary": "politics-and-society-1-12",
+    "secondary": "politics-and-society-3-11"
+   },
+   {
+    "n": "10",
+    "primary": "politics-and-society-2-10",
+    "secondary": "politics-and-society-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "politics-and-society",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC568ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "politics-and-society-0-12",
+    "secondary": "politics-and-society-2-10"
+   },
+   {
+    "n": "2",
+    "primary": "politics-and-society-3-11",
+    "secondary": "politics-and-society-1-9"
+   },
+   {
+    "n": "3",
+    "primary": "politics-and-society-0-12",
+    "secondary": "politics-and-society-0-10"
+   },
+   {
+    "n": "4",
+    "primary": "politics-and-society-2-10",
+    "secondary": "politics-and-society-0-6"
+   },
+   {
+    "n": "5",
+    "primary": "politics-and-society-3-10",
+    "secondary": "politics-and-society-3-0"
+   },
+   {
+    "n": "6",
+    "primary": "politics-and-society-3-11"
+   }
+  ]
+ },
+ {
+  "subjectId": "politics-and-society",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC568GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "politics-and-society-0-11",
+    "secondary": "politics-and-society-2-10"
+   },
+   {
+    "n": "2",
+    "primary": "politics-and-society-2-10",
+    "secondary": "politics-and-society-1-9"
+   },
+   {
+    "n": "3",
+    "primary": "politics-and-society-1-12",
+    "secondary": "politics-and-society-1-9"
+   },
+   {
+    "n": "4",
+    "primary": "politics-and-society-2-10",
+    "secondary": "politics-and-society-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "politics-and-society-1-11",
+    "secondary": "politics-and-society-1-12"
+   },
+   {
+    "n": "6",
+    "primary": "politics-and-society-2-10",
+    "secondary": "politics-and-society-2-2"
+   },
+   {
+    "n": "7",
+    "primary": "politics-and-society-3-10",
+    "secondary": "politics-and-society-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "politics-and-society-2-10",
+    "secondary": "politics-and-society-0-11"
+   },
+   {
+    "n": "9",
+    "primary": "politics-and-society-2-11",
+    "secondary": "politics-and-society-2-5"
+   },
+   {
+    "n": "10",
+    "primary": "politics-and-society-3-11",
+    "secondary": "politics-and-society-1-11"
+   }
+  ]
+ }
+]

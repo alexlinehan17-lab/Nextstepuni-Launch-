@@ -1,0 +1,2480 @@
+[
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC098ALP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-6"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-8"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-0-8"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-0-10",
+    "secondary": "home-economics-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "home-economics-0-4",
+    "secondary": "home-economics-0-9"
+   },
+   {
+    "n": "7",
+    "primary": "home-economics-0-11"
+   },
+   {
+    "n": "8",
+    "primary": "home-economics-0-3",
+    "secondary": "home-economics-0-2"
+   },
+   {
+    "n": "9",
+    "primary": "home-economics-0-11"
+   },
+   {
+    "n": "10",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "11",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "12",
+    "primary": "home-economics-1-2"
+   },
+   {
+    "n": "13",
+    "primary": "home-economics-1-2"
+   },
+   {
+    "n": "14",
+    "primary": "home-economics-1-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC098ALP039EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-1",
+    "secondary": "home-economics-0-7"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-1",
+    "secondary": "home-economics-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-1-3",
+    "secondary": "home-economics-1-5"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-2-0",
+    "secondary": "home-economics-2-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "LC098ALP014IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-6"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-8"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-0-8"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-0-10",
+    "secondary": "home-economics-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "home-economics-0-4",
+    "secondary": "home-economics-0-9"
+   },
+   {
+    "n": "7",
+    "primary": "home-economics-0-11"
+   },
+   {
+    "n": "8",
+    "primary": "home-economics-0-3",
+    "secondary": "home-economics-0-2"
+   },
+   {
+    "n": "9",
+    "primary": "home-economics-0-11"
+   },
+   {
+    "n": "10",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "11",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "12",
+    "primary": "home-economics-1-2"
+   },
+   {
+    "n": "13",
+    "primary": "home-economics-1-2"
+   },
+   {
+    "n": "14",
+    "primary": "home-economics-1-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "LC098ALP039IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-1",
+    "secondary": "home-economics-0-7"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-1",
+    "secondary": "home-economics-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-1-3",
+    "secondary": "home-economics-1-5"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-2-0",
+    "secondary": "home-economics-2-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC098GLP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-9"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-0-6"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-0-2"
+   },
+   {
+    "n": "6",
+    "primary": "home-economics-0-10"
+   },
+   {
+    "n": "7",
+    "primary": "home-economics-0-3",
+    "secondary": "home-economics-0-9"
+   },
+   {
+    "n": "8",
+    "primary": "home-economics-1-2"
+   },
+   {
+    "n": "9",
+    "primary": "home-economics-0-10"
+   },
+   {
+    "n": "10",
+    "primary": "home-economics-1-5",
+    "secondary": "home-economics-1-3"
+   },
+   {
+    "n": "11",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "12",
+    "primary": "home-economics-1-4"
+   },
+   {
+    "n": "13",
+    "primary": "home-economics-1-2"
+   },
+   {
+    "n": "14",
+    "primary": "home-economics-1-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC098GLP039EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-0",
+    "secondary": "home-economics-1-2"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-9",
+    "secondary": "home-economics-0-10"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "LC098GLP014IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-9"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-0-6"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-0-2"
+   },
+   {
+    "n": "6",
+    "primary": "home-economics-0-10"
+   },
+   {
+    "n": "7",
+    "primary": "home-economics-0-3",
+    "secondary": "home-economics-0-9"
+   },
+   {
+    "n": "8",
+    "primary": "home-economics-1-2"
+   },
+   {
+    "n": "9",
+    "primary": "home-economics-0-10"
+   },
+   {
+    "n": "10",
+    "primary": "home-economics-1-5",
+    "secondary": "home-economics-1-3"
+   },
+   {
+    "n": "11",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "12",
+    "primary": "home-economics-1-4"
+   },
+   {
+    "n": "13",
+    "primary": "home-economics-1-2"
+   },
+   {
+    "n": "14",
+    "primary": "home-economics-1-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "LC098GLP039IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-0",
+    "secondary": "home-economics-1-2"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-9",
+    "secondary": "home-economics-0-10"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC098ALP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-8"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-0-10",
+    "secondary": "home-economics-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-0-5"
+   },
+   {
+    "n": "6",
+    "primary": "home-economics-0-9",
+    "secondary": "home-economics-0-11"
+   },
+   {
+    "n": "7",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "8",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "9",
+    "primary": "home-economics-0-4",
+    "secondary": "home-economics-0-3"
+   },
+   {
+    "n": "10",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "11",
+    "primary": "home-economics-1-2"
+   },
+   {
+    "n": "12",
+    "primary": "home-economics-1-3"
+   },
+   {
+    "n": "13",
+    "primary": "home-economics-1-0"
+   },
+   {
+    "n": "14",
+    "primary": "home-economics-1-5",
+    "secondary": "home-economics-1-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC098ALP039EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-6",
+    "secondary": "home-economics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-10",
+    "secondary": "home-economics-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-1",
+    "secondary": "home-economics-0-9"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-1-2",
+    "secondary": "home-economics-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-2-0",
+    "secondary": "home-economics-2-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "LC098ALP014IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-8"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-0-10",
+    "secondary": "home-economics-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-0-5"
+   },
+   {
+    "n": "6",
+    "primary": "home-economics-0-9",
+    "secondary": "home-economics-0-11"
+   },
+   {
+    "n": "7",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "8",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "9",
+    "primary": "home-economics-0-4",
+    "secondary": "home-economics-0-3"
+   },
+   {
+    "n": "10",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "11",
+    "primary": "home-economics-1-2"
+   },
+   {
+    "n": "12",
+    "primary": "home-economics-1-3"
+   },
+   {
+    "n": "13",
+    "primary": "home-economics-1-0"
+   },
+   {
+    "n": "14",
+    "primary": "home-economics-1-5",
+    "secondary": "home-economics-1-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "LC098ALP039IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-6",
+    "secondary": "home-economics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-10",
+    "secondary": "home-economics-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-1",
+    "secondary": "home-economics-0-9"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-1-2",
+    "secondary": "home-economics-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-2-0",
+    "secondary": "home-economics-2-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC098GLP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-0-9"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-0-2"
+   },
+   {
+    "n": "6",
+    "primary": "home-economics-0-1"
+   },
+   {
+    "n": "7",
+    "primary": "home-economics-0-3"
+   },
+   {
+    "n": "8",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "9",
+    "primary": "home-economics-0-3"
+   },
+   {
+    "n": "10",
+    "primary": "home-economics-1-2"
+   },
+   {
+    "n": "11",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "12",
+    "primary": "home-economics-1-4"
+   },
+   {
+    "n": "13",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "14",
+    "primary": "home-economics-1-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC098GLP039EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-0",
+    "secondary": "home-economics-0-6"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-9",
+    "secondary": "home-economics-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-11"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-2-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "LC098GLP014IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-0-9"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-0-2"
+   },
+   {
+    "n": "6",
+    "primary": "home-economics-0-1"
+   },
+   {
+    "n": "7",
+    "primary": "home-economics-0-3"
+   },
+   {
+    "n": "8",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "9",
+    "primary": "home-economics-0-3"
+   },
+   {
+    "n": "10",
+    "primary": "home-economics-1-2"
+   },
+   {
+    "n": "11",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "12",
+    "primary": "home-economics-1-4"
+   },
+   {
+    "n": "13",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "14",
+    "primary": "home-economics-1-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "LC098GLP039IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-0",
+    "secondary": "home-economics-0-6"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-9",
+    "secondary": "home-economics-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-11"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-2-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC098ALP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-7"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-0-3"
+   },
+   {
+    "n": "6",
+    "primary": "home-economics-0-6",
+    "secondary": "home-economics-0-1"
+   },
+   {
+    "n": "7",
+    "primary": "home-economics-0-2"
+   },
+   {
+    "n": "8",
+    "primary": "home-economics-0-11",
+    "secondary": "home-economics-0-2"
+   },
+   {
+    "n": "9",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "10",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "11",
+    "primary": "home-economics-1-5"
+   },
+   {
+    "n": "12",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "13",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "14",
+    "primary": "home-economics-1-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC098ALP039EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-8",
+    "secondary": "home-economics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-9",
+    "secondary": "home-economics-0-4"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-11",
+    "secondary": "home-economics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-1-2",
+    "secondary": "home-economics-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-2-0",
+    "secondary": "home-economics-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "LC098ALP014IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-7"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-0-3"
+   },
+   {
+    "n": "6",
+    "primary": "home-economics-0-6",
+    "secondary": "home-economics-0-1"
+   },
+   {
+    "n": "7",
+    "primary": "home-economics-0-2"
+   },
+   {
+    "n": "8",
+    "primary": "home-economics-0-11",
+    "secondary": "home-economics-0-2"
+   },
+   {
+    "n": "9",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "10",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "11",
+    "primary": "home-economics-1-5"
+   },
+   {
+    "n": "12",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "13",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "14",
+    "primary": "home-economics-1-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "LC098ALP039IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-8",
+    "secondary": "home-economics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-9",
+    "secondary": "home-economics-0-4"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-11",
+    "secondary": "home-economics-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-1-2",
+    "secondary": "home-economics-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-2-0",
+    "secondary": "home-economics-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC098GLP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-7"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-0-8"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "home-economics-0-9"
+   },
+   {
+    "n": "7",
+    "primary": "home-economics-0-6"
+   },
+   {
+    "n": "8",
+    "primary": "home-economics-0-3"
+   },
+   {
+    "n": "9",
+    "primary": "home-economics-0-3"
+   },
+   {
+    "n": "10",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "11",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "12",
+    "primary": "home-economics-1-4"
+   },
+   {
+    "n": "13",
+    "primary": "home-economics-1-3"
+   },
+   {
+    "n": "14",
+    "primary": "home-economics-1-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC098GLP039EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-5",
+    "secondary": "home-economics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-9"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-1-0",
+    "secondary": "home-economics-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-2-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "LC098GLP014IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-7"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-0-8"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "home-economics-0-9"
+   },
+   {
+    "n": "7",
+    "primary": "home-economics-0-6"
+   },
+   {
+    "n": "8",
+    "primary": "home-economics-0-3"
+   },
+   {
+    "n": "9",
+    "primary": "home-economics-0-3"
+   },
+   {
+    "n": "10",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "11",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "12",
+    "primary": "home-economics-1-4"
+   },
+   {
+    "n": "13",
+    "primary": "home-economics-1-3"
+   },
+   {
+    "n": "14",
+    "primary": "home-economics-1-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "LC098GLP039IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-5",
+    "secondary": "home-economics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-9"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-1-0",
+    "secondary": "home-economics-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-2-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC098ALP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-8"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-6"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-0-7"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-0-3"
+   },
+   {
+    "n": "6",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "7",
+    "primary": "home-economics-0-11"
+   },
+   {
+    "n": "8",
+    "primary": "home-economics-0-3",
+    "secondary": "home-economics-0-9"
+   },
+   {
+    "n": "9",
+    "primary": "home-economics-0-11"
+   },
+   {
+    "n": "10",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "11",
+    "primary": "home-economics-1-2"
+   },
+   {
+    "n": "12",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "13",
+    "primary": "home-economics-1-4",
+    "secondary": "home-economics-1-2"
+   },
+   {
+    "n": "14",
+    "primary": "home-economics-1-5",
+    "secondary": "home-economics-1-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC098ALP039EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-10",
+    "secondary": "home-economics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-1",
+    "secondary": "home-economics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-4",
+    "secondary": "home-economics-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-1-1",
+    "secondary": "home-economics-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-2-1",
+    "secondary": "home-economics-2-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "LC098ALP014IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-8"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-6"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-0-7"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-0-3"
+   },
+   {
+    "n": "6",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "7",
+    "primary": "home-economics-0-11"
+   },
+   {
+    "n": "8",
+    "primary": "home-economics-0-3",
+    "secondary": "home-economics-0-9"
+   },
+   {
+    "n": "9",
+    "primary": "home-economics-0-11"
+   },
+   {
+    "n": "10",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "11",
+    "primary": "home-economics-1-2"
+   },
+   {
+    "n": "12",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "13",
+    "primary": "home-economics-1-4",
+    "secondary": "home-economics-1-2"
+   },
+   {
+    "n": "14",
+    "primary": "home-economics-1-5",
+    "secondary": "home-economics-1-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "LC098ALP039IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-10",
+    "secondary": "home-economics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-1",
+    "secondary": "home-economics-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-4",
+    "secondary": "home-economics-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-1-1",
+    "secondary": "home-economics-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-2-1",
+    "secondary": "home-economics-2-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC098GLP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-7"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-3"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-0-9"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-0-3"
+   },
+   {
+    "n": "6",
+    "primary": "home-economics-0-10"
+   },
+   {
+    "n": "7",
+    "primary": "home-economics-0-11"
+   },
+   {
+    "n": "8",
+    "primary": "home-economics-0-10"
+   },
+   {
+    "n": "9",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "10",
+    "primary": "home-economics-0-11"
+   },
+   {
+    "n": "11",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "12",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "13",
+    "primary": "home-economics-1-4"
+   },
+   {
+    "n": "14",
+    "primary": "home-economics-1-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC098GLP039EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-9",
+    "secondary": "home-economics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-9"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-1-2",
+    "secondary": "home-economics-1-3"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "LC098GLP014IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-7"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-3"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-0-9"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-0-3"
+   },
+   {
+    "n": "6",
+    "primary": "home-economics-0-10"
+   },
+   {
+    "n": "7",
+    "primary": "home-economics-0-11"
+   },
+   {
+    "n": "8",
+    "primary": "home-economics-0-10"
+   },
+   {
+    "n": "9",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "10",
+    "primary": "home-economics-0-11"
+   },
+   {
+    "n": "11",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "12",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "13",
+    "primary": "home-economics-1-4"
+   },
+   {
+    "n": "14",
+    "primary": "home-economics-1-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "LC098GLP039IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-9",
+    "secondary": "home-economics-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-9"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-1-2",
+    "secondary": "home-economics-1-3"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC098ALP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-7"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-8"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-0-2",
+    "secondary": "home-economics-0-6"
+   },
+   {
+    "n": "6",
+    "primary": "home-economics-0-10",
+    "secondary": "home-economics-0-4"
+   },
+   {
+    "n": "7",
+    "primary": "home-economics-0-4",
+    "secondary": "home-economics-0-9"
+   },
+   {
+    "n": "8",
+    "primary": "home-economics-0-5"
+   },
+   {
+    "n": "9",
+    "primary": "home-economics-0-2"
+   },
+   {
+    "n": "10",
+    "primary": "home-economics-1-3"
+   },
+   {
+    "n": "11",
+    "primary": "home-economics-1-2"
+   },
+   {
+    "n": "12",
+    "primary": "home-economics-1-2"
+   },
+   {
+    "n": "13",
+    "primary": "home-economics-1-0"
+   },
+   {
+    "n": "14",
+    "primary": "home-economics-1-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC098ALP039EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-1",
+    "secondary": "home-economics-0-8"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-9",
+    "secondary": "home-economics-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-1-0",
+    "secondary": "home-economics-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-2-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2021,
+  "fileid": "LC098ALP014IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-7"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-8"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-0-2",
+    "secondary": "home-economics-0-6"
+   },
+   {
+    "n": "6",
+    "primary": "home-economics-0-10",
+    "secondary": "home-economics-0-4"
+   },
+   {
+    "n": "7",
+    "primary": "home-economics-0-4",
+    "secondary": "home-economics-0-9"
+   },
+   {
+    "n": "8",
+    "primary": "home-economics-0-5"
+   },
+   {
+    "n": "9",
+    "primary": "home-economics-0-2"
+   },
+   {
+    "n": "10",
+    "primary": "home-economics-1-3"
+   },
+   {
+    "n": "11",
+    "primary": "home-economics-1-2"
+   },
+   {
+    "n": "12",
+    "primary": "home-economics-1-2"
+   },
+   {
+    "n": "13",
+    "primary": "home-economics-1-0"
+   },
+   {
+    "n": "14",
+    "primary": "home-economics-1-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2021,
+  "fileid": "LC098ALP039IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-1",
+    "secondary": "home-economics-0-8"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-9",
+    "secondary": "home-economics-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-1-0",
+    "secondary": "home-economics-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-2-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC098GLP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-9"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-0-9"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "7",
+    "primary": "home-economics-0-3"
+   },
+   {
+    "n": "8",
+    "primary": "home-economics-0-1"
+   },
+   {
+    "n": "9",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "10",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "11",
+    "primary": "home-economics-1-3",
+    "secondary": "home-economics-1-5"
+   },
+   {
+    "n": "12",
+    "primary": "home-economics-1-4"
+   },
+   {
+    "n": "13",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "14",
+    "primary": "home-economics-1-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC098GLP039EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-0",
+    "secondary": "home-economics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-1",
+    "secondary": "home-economics-0-10"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-9"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-2-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2021,
+  "fileid": "LC098GLP014IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-9"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-0-9"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "7",
+    "primary": "home-economics-0-3"
+   },
+   {
+    "n": "8",
+    "primary": "home-economics-0-1"
+   },
+   {
+    "n": "9",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "10",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "11",
+    "primary": "home-economics-1-3",
+    "secondary": "home-economics-1-5"
+   },
+   {
+    "n": "12",
+    "primary": "home-economics-1-4"
+   },
+   {
+    "n": "13",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "14",
+    "primary": "home-economics-1-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2021,
+  "fileid": "LC098GLP039IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-0",
+    "secondary": "home-economics-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-1",
+    "secondary": "home-economics-0-10"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-9"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-2-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2020,
+  "fileid": "LC098ALP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-6"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-7"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-0-8"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-0-11"
+   },
+   {
+    "n": "6",
+    "primary": "home-economics-0-9",
+    "secondary": "home-economics-0-3"
+   },
+   {
+    "n": "7",
+    "primary": "home-economics-0-9"
+   },
+   {
+    "n": "8",
+    "primary": "home-economics-0-11",
+    "secondary": "home-economics-0-6"
+   },
+   {
+    "n": "9",
+    "primary": "home-economics-1-5",
+    "secondary": "home-economics-1-2"
+   },
+   {
+    "n": "10",
+    "primary": "home-economics-1-4"
+   },
+   {
+    "n": "11",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "12",
+    "primary": "home-economics-1-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2020,
+  "fileid": "LC098ALP039EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-1",
+    "secondary": "home-economics-0-10"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-9",
+    "secondary": "home-economics-0-6"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-1-3",
+    "secondary": "home-economics-1-5"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-2-0",
+    "secondary": "home-economics-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2020,
+  "fileid": "LC098ALP014IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-6"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-7"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-0-8"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-0-11"
+   },
+   {
+    "n": "6",
+    "primary": "home-economics-0-9",
+    "secondary": "home-economics-0-3"
+   },
+   {
+    "n": "7",
+    "primary": "home-economics-0-9"
+   },
+   {
+    "n": "8",
+    "primary": "home-economics-0-11",
+    "secondary": "home-economics-0-6"
+   },
+   {
+    "n": "9",
+    "primary": "home-economics-1-5",
+    "secondary": "home-economics-1-2"
+   },
+   {
+    "n": "10",
+    "primary": "home-economics-1-4"
+   },
+   {
+    "n": "11",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "12",
+    "primary": "home-economics-1-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2020,
+  "fileid": "LC098ALP039IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-1",
+    "secondary": "home-economics-0-10"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-9",
+    "secondary": "home-economics-0-6"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-1-3",
+    "secondary": "home-economics-1-5"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-2-0",
+    "secondary": "home-economics-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2020,
+  "fileid": "LC098GLP014EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-6"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-7"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-9"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-0-3"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-0-3"
+   },
+   {
+    "n": "6",
+    "primary": "home-economics-0-11"
+   },
+   {
+    "n": "7",
+    "primary": "home-economics-0-1"
+   },
+   {
+    "n": "8",
+    "primary": "home-economics-0-11"
+   },
+   {
+    "n": "9",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "10",
+    "primary": "home-economics-1-2"
+   },
+   {
+    "n": "11",
+    "primary": "home-economics-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "home-economics-1-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2020,
+  "fileid": "LC098GLP039EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-0",
+    "secondary": "home-economics-0-9"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-9"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-1-3",
+    "secondary": "home-economics-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC098GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-6"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-8"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-0-8"
+   },
+   {
+    "n": "6",
+    "primary": "home-economics-0-9"
+   },
+   {
+    "n": "7",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "8",
+    "primary": "home-economics-0-9"
+   },
+   {
+    "n": "9",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "10",
+    "primary": "home-economics-1-4"
+   },
+   {
+    "n": "11",
+    "primary": "home-economics-1-3"
+   },
+   {
+    "n": "12",
+    "primary": "home-economics-1-5",
+    "secondary": "home-economics-1-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC098ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-6"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-8"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-0-5"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-0-8",
+    "secondary": "home-economics-0-4"
+   },
+   {
+    "n": "6",
+    "primary": "home-economics-0-11"
+   },
+   {
+    "n": "7",
+    "primary": "home-economics-0-9",
+    "secondary": "home-economics-0-3"
+   },
+   {
+    "n": "8",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "9",
+    "primary": "home-economics-1-0"
+   },
+   {
+    "n": "10",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "11",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "12",
+    "primary": "home-economics-1-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC098GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-6"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-6"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-8"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "6",
+    "primary": "home-economics-0-3"
+   },
+   {
+    "n": "7",
+    "primary": "home-economics-0-4"
+   },
+   {
+    "n": "8",
+    "primary": "home-economics-1-5"
+   },
+   {
+    "n": "9",
+    "primary": "home-economics-1-3",
+    "secondary": "home-economics-1-2"
+   },
+   {
+    "n": "10",
+    "primary": "home-economics-1-2"
+   },
+   {
+    "n": "11",
+    "primary": "home-economics-1-4"
+   },
+   {
+    "n": "12",
+    "primary": "home-economics-1-1"
+   }
+  ]
+ }
+]

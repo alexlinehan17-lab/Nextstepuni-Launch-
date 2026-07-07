@@ -1,0 +1,750 @@
+[
+ {
+  "subjectId": "jc-german",
+  "level": "common",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "JC011CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-german-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-german-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "jc-german-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "jc-german-0-2"
+   },
+   {
+    "n": "5",
+    "primary": "jc-german-0-3"
+   },
+   {
+    "n": "6",
+    "primary": "jc-german-0-1"
+   },
+   {
+    "n": "7",
+    "primary": "jc-german-0-3"
+   },
+   {
+    "n": "8",
+    "primary": "jc-german-0-2"
+   },
+   {
+    "n": "9",
+    "primary": "jc-german-0-1"
+   },
+   {
+    "n": "10",
+    "primary": "jc-german-0-2"
+   },
+   {
+    "n": "11",
+    "primary": "jc-german-0-6"
+   },
+   {
+    "n": "12",
+    "primary": "jc-german-0-5"
+   },
+   {
+    "n": "13",
+    "primary": "jc-german-1-0"
+   },
+   {
+    "n": "14",
+    "primary": "jc-german-0-7"
+   },
+   {
+    "n": "15",
+    "primary": "jc-german-0-4"
+   },
+   {
+    "n": "16",
+    "primary": "jc-german-0-4",
+    "secondary": "jc-german-0-7"
+   },
+   {
+    "n": "17",
+    "primary": "jc-german-0-7"
+   },
+   {
+    "n": "18",
+    "primary": "jc-german-0-4",
+    "secondary": "jc-german-2-0"
+   },
+   {
+    "n": "19",
+    "primary": "jc-german-0-9"
+   },
+   {
+    "n": "20",
+    "primary": "jc-german-0-9",
+    "secondary": "jc-german-2-0"
+   },
+   {
+    "n": "21",
+    "primary": "jc-german-0-10"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-german",
+  "level": "common",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "JC011CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-german-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-german-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "jc-german-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "jc-german-0-2"
+   },
+   {
+    "n": "5",
+    "primary": "jc-german-0-3"
+   },
+   {
+    "n": "6",
+    "primary": "jc-german-0-1"
+   },
+   {
+    "n": "7",
+    "primary": "jc-german-0-3"
+   },
+   {
+    "n": "8",
+    "primary": "jc-german-0-2"
+   },
+   {
+    "n": "9",
+    "primary": "jc-german-0-1"
+   },
+   {
+    "n": "10",
+    "primary": "jc-german-0-2"
+   },
+   {
+    "n": "11",
+    "primary": "jc-german-0-6"
+   },
+   {
+    "n": "12",
+    "primary": "jc-german-0-5"
+   },
+   {
+    "n": "13",
+    "primary": "jc-german-1-0"
+   },
+   {
+    "n": "14",
+    "primary": "jc-german-0-7"
+   },
+   {
+    "n": "15",
+    "primary": "jc-german-0-4"
+   },
+   {
+    "n": "16",
+    "primary": "jc-german-0-4",
+    "secondary": "jc-german-0-7"
+   },
+   {
+    "n": "17",
+    "primary": "jc-german-0-7"
+   },
+   {
+    "n": "18",
+    "primary": "jc-german-0-4",
+    "secondary": "jc-german-2-0"
+   },
+   {
+    "n": "19",
+    "primary": "jc-german-0-9"
+   },
+   {
+    "n": "20",
+    "primary": "jc-german-0-9",
+    "secondary": "jc-german-2-0"
+   },
+   {
+    "n": "21",
+    "primary": "jc-german-0-10"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-german",
+  "level": "common",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "JC011CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-german-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-german-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "jc-german-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "jc-german-0-2"
+   },
+   {
+    "n": "5",
+    "primary": "jc-german-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "jc-german-0-2"
+   },
+   {
+    "n": "7",
+    "primary": "jc-german-0-2"
+   },
+   {
+    "n": "8",
+    "primary": "jc-german-0-1"
+   },
+   {
+    "n": "9",
+    "primary": "jc-german-0-1"
+   },
+   {
+    "n": "10",
+    "primary": "jc-german-0-3"
+   },
+   {
+    "n": "11",
+    "primary": "jc-german-0-2"
+   },
+   {
+    "n": "12",
+    "primary": "jc-german-0-6"
+   },
+   {
+    "n": "13",
+    "primary": "jc-german-0-6"
+   },
+   {
+    "n": "14",
+    "primary": "jc-german-0-4"
+   },
+   {
+    "n": "15",
+    "primary": "jc-german-0-7"
+   },
+   {
+    "n": "16",
+    "primary": "jc-german-0-4"
+   },
+   {
+    "n": "17",
+    "primary": "jc-german-0-4",
+    "secondary": "jc-german-1-0"
+   },
+   {
+    "n": "18",
+    "primary": "jc-german-0-6"
+   },
+   {
+    "n": "19",
+    "primary": "jc-german-0-4",
+    "secondary": "jc-german-0-7"
+   },
+   {
+    "n": "20",
+    "primary": "jc-german-0-9"
+   },
+   {
+    "n": "21",
+    "primary": "jc-german-0-9"
+   },
+   {
+    "n": "22",
+    "primary": "jc-german-0-10"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-german",
+  "level": "common",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "JC011CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-german-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-german-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "jc-german-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "jc-german-0-2"
+   },
+   {
+    "n": "5",
+    "primary": "jc-german-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "jc-german-0-2"
+   },
+   {
+    "n": "7",
+    "primary": "jc-german-0-2"
+   },
+   {
+    "n": "8",
+    "primary": "jc-german-0-1"
+   },
+   {
+    "n": "9",
+    "primary": "jc-german-0-1"
+   },
+   {
+    "n": "10",
+    "primary": "jc-german-0-3"
+   },
+   {
+    "n": "11",
+    "primary": "jc-german-0-2"
+   },
+   {
+    "n": "12",
+    "primary": "jc-german-0-6"
+   },
+   {
+    "n": "13",
+    "primary": "jc-german-0-6"
+   },
+   {
+    "n": "14",
+    "primary": "jc-german-0-4"
+   },
+   {
+    "n": "15",
+    "primary": "jc-german-0-7"
+   },
+   {
+    "n": "16",
+    "primary": "jc-german-0-4"
+   },
+   {
+    "n": "17",
+    "primary": "jc-german-0-4",
+    "secondary": "jc-german-1-0"
+   },
+   {
+    "n": "18",
+    "primary": "jc-german-0-6"
+   },
+   {
+    "n": "19",
+    "primary": "jc-german-0-4",
+    "secondary": "jc-german-0-7"
+   },
+   {
+    "n": "20",
+    "primary": "jc-german-0-9"
+   },
+   {
+    "n": "21",
+    "primary": "jc-german-0-9"
+   },
+   {
+    "n": "22",
+    "primary": "jc-german-0-10"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-german",
+  "level": "common",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "JC011CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-german-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-german-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-german-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "jc-german-0-2"
+   },
+   {
+    "n": "5",
+    "primary": "jc-german-0-3"
+   },
+   {
+    "n": "6",
+    "primary": "jc-german-0-1"
+   },
+   {
+    "n": "7",
+    "primary": "jc-german-0-1"
+   },
+   {
+    "n": "8",
+    "primary": "jc-german-0-2"
+   },
+   {
+    "n": "9",
+    "primary": "jc-german-0-6"
+   },
+   {
+    "n": "10",
+    "primary": "jc-german-1-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-german-1-0",
+    "secondary": "jc-german-0-7"
+   },
+   {
+    "n": "12",
+    "primary": "jc-german-0-4"
+   },
+   {
+    "n": "13",
+    "primary": "jc-german-0-4",
+    "secondary": "jc-german-0-7"
+   },
+   {
+    "n": "14",
+    "primary": "jc-german-0-4"
+   },
+   {
+    "n": "15",
+    "primary": "jc-german-0-4"
+   },
+   {
+    "n": "16",
+    "primary": "jc-german-0-9"
+   },
+   {
+    "n": "17",
+    "primary": "jc-german-0-9",
+    "secondary": "jc-german-2-0"
+   },
+   {
+    "n": "18",
+    "primary": "jc-german-0-10"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-german",
+  "level": "common",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "JC011CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-german-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-german-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-german-0-1"
+   },
+   {
+    "n": "4",
+    "primary": "jc-german-0-2"
+   },
+   {
+    "n": "5",
+    "primary": "jc-german-0-3"
+   },
+   {
+    "n": "6",
+    "primary": "jc-german-0-1"
+   },
+   {
+    "n": "7",
+    "primary": "jc-german-0-1"
+   },
+   {
+    "n": "8",
+    "primary": "jc-german-0-2"
+   },
+   {
+    "n": "9",
+    "primary": "jc-german-0-6"
+   },
+   {
+    "n": "10",
+    "primary": "jc-german-1-0"
+   },
+   {
+    "n": "11",
+    "primary": "jc-german-1-0",
+    "secondary": "jc-german-0-7"
+   },
+   {
+    "n": "12",
+    "primary": "jc-german-0-4"
+   },
+   {
+    "n": "13",
+    "primary": "jc-german-0-4",
+    "secondary": "jc-german-0-7"
+   },
+   {
+    "n": "14",
+    "primary": "jc-german-0-4"
+   },
+   {
+    "n": "15",
+    "primary": "jc-german-0-4"
+   },
+   {
+    "n": "16",
+    "primary": "jc-german-0-9"
+   },
+   {
+    "n": "17",
+    "primary": "jc-german-0-9",
+    "secondary": "jc-german-2-0"
+   },
+   {
+    "n": "18",
+    "primary": "jc-german-0-10"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-german",
+  "level": "common",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "JC011CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-german-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-german-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-german-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "jc-german-0-2"
+   },
+   {
+    "n": "5",
+    "primary": "jc-german-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "jc-german-0-3"
+   },
+   {
+    "n": "7",
+    "primary": "jc-german-0-3"
+   },
+   {
+    "n": "8",
+    "primary": "jc-german-0-1"
+   },
+   {
+    "n": "9",
+    "primary": "jc-german-0-2"
+   },
+   {
+    "n": "10",
+    "primary": "jc-german-0-1"
+   },
+   {
+    "n": "11",
+    "primary": "jc-german-0-6"
+   },
+   {
+    "n": "12",
+    "primary": "jc-german-0-6"
+   },
+   {
+    "n": "13",
+    "primary": "jc-german-0-4"
+   },
+   {
+    "n": "14",
+    "primary": "jc-german-0-4",
+    "secondary": "jc-german-1-0"
+   },
+   {
+    "n": "15",
+    "primary": "jc-german-0-6"
+   },
+   {
+    "n": "16",
+    "primary": "jc-german-0-4"
+   },
+   {
+    "n": "17",
+    "primary": "jc-german-0-4"
+   },
+   {
+    "n": "18",
+    "primary": "jc-german-0-9",
+    "secondary": "jc-german-2-0"
+   },
+   {
+    "n": "19",
+    "primary": "jc-german-0-8"
+   },
+   {
+    "n": "20",
+    "primary": "jc-german-0-10"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-german",
+  "level": "common",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "JC011CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-german-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-german-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-german-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "jc-german-0-2"
+   },
+   {
+    "n": "5",
+    "primary": "jc-german-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "jc-german-0-3"
+   },
+   {
+    "n": "7",
+    "primary": "jc-german-0-3"
+   },
+   {
+    "n": "8",
+    "primary": "jc-german-0-1"
+   },
+   {
+    "n": "9",
+    "primary": "jc-german-0-2"
+   },
+   {
+    "n": "10",
+    "primary": "jc-german-0-1"
+   },
+   {
+    "n": "11",
+    "primary": "jc-german-0-6"
+   },
+   {
+    "n": "12",
+    "primary": "jc-german-0-6"
+   },
+   {
+    "n": "13",
+    "primary": "jc-german-0-4"
+   },
+   {
+    "n": "14",
+    "primary": "jc-german-0-4",
+    "secondary": "jc-german-1-0"
+   },
+   {
+    "n": "15",
+    "primary": "jc-german-0-6"
+   },
+   {
+    "n": "16",
+    "primary": "jc-german-0-4"
+   },
+   {
+    "n": "17",
+    "primary": "jc-german-0-4"
+   },
+   {
+    "n": "18",
+    "primary": "jc-german-0-9",
+    "secondary": "jc-german-2-0"
+   },
+   {
+    "n": "19",
+    "primary": "jc-german-0-8"
+   },
+   {
+    "n": "20",
+    "primary": "jc-german-0-10"
+   }
+  ]
+ }
+]
