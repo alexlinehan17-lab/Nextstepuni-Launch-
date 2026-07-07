@@ -173,3 +173,18 @@ Agriculture / Horticulture, Childcare / Community Care, Crafts & Design, English
 - Spanish — ✅ sidecars ready (P2C wave: 2025, 2024, 2023 EV — Section 2 reading/written-exercise
   Q1–6 with exact scheme answers; Section 1 aural skipped; IV papers have no scheme pair)
 - Technology — Q1 "Answer any Ten" instructions
+
+## Aural audio (probe, 2026-07-07)
+
+**FEASIBLE-AFTER-CREDS, not before.** The index already carries aural question
+booklets (368 across 11 languages) but no audio: the v1 harvest deliberately
+skipped .mp3 assets and the manifest holding their fileids was never committed
+(out/ is gitignored). examinations.ie now serves a Cloudflare interactive
+challenge to non-browser requests, so neither re-enumeration nor deep-linking
+is possible from CI; file-level deep links also have no precedent in the app
+and unverifiable stability. Route when credentials + a harvest path exist:
+re-enumerate the 11 aural languages' mp3 fileids → download → upload under
+papers/{cycle}/{sid}/{year}/audio/ → PaperItem gains optional audio doc →
+a small <audio> bar in the Viewer beside the aural booklet, same © SEC
+attribution. Sizing note: several hundred exam-length mp3s = real Storage/
+egress cost; size it from the recovered manifest first.

@@ -33,6 +33,7 @@ import {
   Play,
   ListChecks,
   PenLine,
+  Repeat2,
   RotateCcw,
   ScrollText,
   SlidersHorizontal,
@@ -515,6 +516,59 @@ const Viewer: React.FC<ViewerProps> = ({
     setToolsOpen(false);
   }, [ensureAnswerMap, scheme, load]);
 
+  // ── The Full Loop (PT-2): question → attempt → reveal → self-mark → next ──
+  // One guided pass through every mapped question of the paper, reusing the
+  // existing reveal + self-mark machinery; the loop only sequences them.
+  const [loop, setLoop] = useState<{ idx: number; qStartTs: number } | null>(null);
+  const [loopDone, setLoopDone] = useState(false);
+  const [loopTick, setLoopTick] = useState(0);
+
+  const scrollToQuestion = useCallback((q: PaperAnswerQuestion) => {
+    requestAnimationFrame(() => {
+      const el = scrollerRef.current;
+      if (!el) return;
+      const target = el.querySelector<HTMLElement>(`[data-page="${q.pP}"]`);
+      if (target) el.scrollTo({ top: target.offsetTop - 8 + target.clientHeight * Math.max(0, q.pY[0] - 0.02), behavior: 'smooth' });
+    });
+  }, []);
+
+  const startLoop = useCallback(() => {
+    ensureAnswerMap();
+    setSelfMarkOn(true);
+    setAnswersOn(true);
+    if (scheme && !sessions.current.scheme.pdf && !sessions.current.scheme.task) load('scheme');
+    setSide('paper');
+    setLoopDone(false);
+    setLoop({ idx: 0, qStartTs: Date.now() });
+    setToolsOpen(false);
+  }, [ensureAnswerMap, scheme, load]);
+
+  // Jump to the current loop question once the map is in.
+  useEffect(() => {
+    if (!loop || !answerMap) return;
+    const q = answerMap.q[loop.idx];
+    if (q) scrollToQuestion(q);
+  }, [loop, answerMap, scrollToQuestion]);
+
+  // Per-question elapsed readout, 1s cadence while the loop bar is showing.
+  useEffect(() => {
+    if (!loop) return;
+    const id = setInterval(() => setLoopTick(t => t + 1), 1000);
+    return () => clearInterval(id);
+  }, [loop]);
+
+  const loopNext = useCallback(() => {
+    setReveal(null);
+    setLoop(l => {
+      if (!l || !answerMap) return l;
+      if (l.idx + 1 >= answerMap.q.length) {
+        setLoopDone(true);
+        return null;
+      }
+      return { idx: l.idx + 1, qStartTs: Date.now() };
+    });
+  }, [answerMap]);
+
   const recordMark = useCallback(
     (n: string, mark: SelfMark | null) => {
       if (!storageNs) return;
@@ -922,6 +976,16 @@ const Viewer: React.FC<ViewerProps> = ({
                         onClick={toggleSelfMark}
                       />
                     )}
+                    {answersUrl && scheme && storageNs && (
+                      <ToolRow
+                        icon={<Repeat2 size={15} />}
+                        title="The Full Loop"
+                        sub="Work the paper question by question — attempt, reveal, mark"
+                        on={!!loop}
+                        busy={!!loop && answerState === 'loading'}
+                        onClick={startLoop}
+                      />
+                    )}
                     <ToolRow
                       icon={<Clock3 size={15} />}
                       title="Time budget"
@@ -1304,6 +1368,15 @@ const Viewer: React.FC<ViewerProps> = ({
                 selfMark={selfMarkOn}
                 existingMark={attempt.marks?.[reveal.n]}
                 licence={storageNs ? markerLicence(storageNs.split('|')[0]) : null}
+                siblings={(() => {
+                  if (!topics) return undefined;
+                  const tag = topics.q.find(t => t.n === reveal.n);
+                  if (!tag) return undefined;
+                  return siblingsFor(topics.subjectId, tag.primary)
+                    .filter(s => !(s.year === topics.year && s.level === topics.level && s.lang === topics.lang && s.fileid === topics.fileid))
+                    .slice(0, 3);
+                })()}
+                onJumpSibling={s => { setReveal(null); onCrossYear?.(s); }}
                 onRecordMark={m => recordMark(reveal.n, m)}
                 onClose={() => setReveal(null)}
                 onFullScheme={jumpSchemeToPage}
@@ -1312,6 +1385,88 @@ const Viewer: React.FC<ViewerProps> = ({
           </>
         )}
       </AnimatePresence>
+
+      {/* The Full Loop bar (PT-2) — sequences attempt → reveal → mark → next. */}
+      {loop && answerMap && !reveal && (() => {
+        const q = answerMap.q[loop.idx];
+        if (!q) return null;
+        void loopTick; // 1s cadence re-render for the elapsed readout
+        const marked = attempt.marks?.[q.n] !== undefined;
+        const secs = Math.max(0, Math.floor((Date.now() - loop.qStartTs) / 1000));
+        const mm = Math.floor(secs / 60);
+        const ss = String(secs % 60).padStart(2, '0');
+        return (
+          <div className="fixed bottom-4 inset-x-0 z-[105] flex justify-center px-4" style={{ paddingBottom: 'var(--sab, 0px)' }}>
+            <div className="w-full max-w-md rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-2xl px-4 py-3 flex items-center gap-3">
+              <div className="min-w-0 flex-1">
+                <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-zinc-400">
+                  The full loop · {loop.idx + 1} of {answerMap.q.length}
+                </p>
+                <p className="text-[14px] font-semibold truncate text-zinc-900 dark:text-white">
+                  {q.label ?? `Question ${q.n}`}
+                </p>
+              </div>
+              <span className="shrink-0 text-[12px] tabular-nums text-zinc-400">{mm}:{ss}</span>
+              {marked ? (
+                <button
+                  onClick={loopNext}
+                  className="shrink-0 rounded-full px-4 py-2 text-[13px] font-semibold text-white transition-transform active:translate-y-0.5"
+                  style={{ backgroundColor: '#3A8D5F' }}
+                >
+                  {loop.idx + 1 >= answerMap.q.length ? 'Finish' : 'Next →'}
+                </button>
+              ) : (
+                <button
+                  onClick={() => onReveal(q)}
+                  className="shrink-0 rounded-full px-4 py-2 text-[13px] font-semibold text-white transition-transform active:translate-y-0.5"
+                  style={{ backgroundColor: '#F26B1F', boxShadow: '0 3px 0 #B54D14' }}
+                >
+                  Reveal & mark
+                </button>
+              )}
+              <button onClick={() => setLoop(null)} aria-label="End the loop" className="shrink-0 p-1.5 text-zinc-400">
+                <X size={16} />
+              </button>
+            </div>
+          </div>
+        );
+      })()}
+
+      {/* Full Loop summary — the session in the student's own marks. */}
+      {loopDone && answerMap && (() => {
+        const qs = answerMap.q;
+        const marks = qs.map(q => attempt.marks?.[q.n]).filter((m): m is SelfMark => !!m);
+        const avg = marks.length ? Math.round(marks.reduce((a, m) => a + (m.max ? (m.score / m.max) * 100 : m.score), 0) / marks.length) : 0;
+        const gapCounts = new Map<GapKind, number>();
+        for (const m of marks) if (m.gap) gapCounts.set(m.gap, (gapCounts.get(m.gap) ?? 0) + 1);
+        const topGap = [...gapCounts.entries()].sort((a, b) => b[1] - a[1])[0];
+        const gapLabel: Record<GapKind, string> = { content: 'not knowing it', process: 'the wrong method', careless: 'careless slips', timing: 'the clock' };
+        return (
+          <div className="fixed inset-0 z-[120] flex items-center justify-center bg-black/40 px-4" role="dialog" aria-modal="true" aria-label="Full loop summary">
+            <div className="w-full max-w-sm rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-5 py-5 text-center">
+              <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-zinc-400 mb-1">The full loop · done</p>
+              <p className="text-[34px] font-bold leading-none mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: avg >= 66 ? '#3A8D5F' : '#F26B1F' }}>
+                {marks.length ? `${avg}%` : '—'}
+              </p>
+              <p className="text-[13px] text-zinc-600 dark:text-zinc-300 mb-2">
+                {marks.length} of {qs.length} questions self-marked against the real scheme.
+              </p>
+              {topGap && (
+                <p className="text-[12.5px] italic rounded-lg px-3 py-2 mb-3 text-left" style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E', borderLeft: '3px solid #F26B1F' }}>
+                  Most marks died to {gapLabel[topGap[0]]} ({topGap[1]}×) — your dashboard's autopsy has the fix.
+                </p>
+              )}
+              <button
+                onClick={() => setLoopDone(false)}
+                className="rounded-full px-6 py-2.5 text-[14px] font-semibold text-white transition-transform active:translate-y-0.5"
+                style={{ backgroundColor: '#F26B1F', boxShadow: '0 3px 0 #B54D14' }}
+              >
+                Done
+              </button>
+            </div>
+          </div>
+        );
+      })()}
 
       {/* Text-scan status while the overlay tools read the paper. */}
       {side === 'paper' && (paceOn || decodeOn) && scanState === 'loading' && !docTokens && (
@@ -2016,10 +2171,14 @@ const RevealContent: React.FC<{
   existingMark?: SelfMark;
   /** Marker's Licence — calibration earned in The Examiner's Chair (F3). */
   licence?: MarkerLicence | null;
+  /** Same-topic questions in other papers — threaded as next reps on a low
+   *  self-mark (PT-3). */
+  siblings?: TopicSibling[];
+  onJumpSibling?: (s: TopicSibling) => void;
   onRecordMark?: (mark: SelfMark | null) => void;
   onClose: () => void;
   onFullScheme: (page: number) => void;
-}> = ({ q, wide, reduced, schemePdf, schemeUrl, schemeErrored, copyright, selfMark, existingMark, licence, onRecordMark, onClose, onFullScheme }) => {
+}> = ({ q, wide, reduced, schemePdf, schemeUrl, schemeErrored, copyright, selfMark, existingMark, licence, siblings, onJumpSibling, onRecordMark, onClose, onFullScheme }) => {
   const firstPage = q.region[0]?.p;
   const closeRef = useRef<HTMLButtonElement | null>(null);
   useEffect(() => {
@@ -2121,6 +2280,27 @@ const RevealContent: React.FC<{
                     </button>
                   );
                 })}
+              </div>
+            </>
+          )}
+          {/* PT-3: a low mark turns into immediate next reps — the same topic,
+              other years. Failure becomes actionable in one tap. */}
+          {scored !== undefined && scored <= 50 && !!siblings?.length && onJumpSibling && (
+            <>
+              <p className="text-[11px] mt-2.5 mb-1.5" style={{ color: '#7a7068' }}>
+                Next reps — the same topic came up in other years:
+              </p>
+              <div className="flex flex-wrap gap-1.5">
+                {siblings.map(s => (
+                  <button
+                    key={s.paperKey + s.n}
+                    onClick={() => onJumpSibling(s)}
+                    className="px-2.5 py-1 rounded-full text-[11.5px] font-semibold border-2 transition-transform active:translate-y-0.5"
+                    style={{ backgroundColor: '#fff', borderColor: 'rgba(242,107,31,0.35)', color: '#F26B1F' }}
+                  >
+                    {s.year} · Q{s.n} →
+                  </button>
+                ))}
               </div>
             </>
           )}
