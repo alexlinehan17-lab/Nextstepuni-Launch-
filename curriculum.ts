@@ -8327,6 +8327,22 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "music-2-13",
             "name": "Irish Music Essay"
+          },
+          {
+            "id": "music-2-14",
+            "name": "Set Work: Freddie Mercury — Bohemian Rhapsody"
+          },
+          {
+            "id": "music-2-15",
+            "name": "Set Work: Tchaikovsky — Romeo and Juliet Fantasy Overture"
+          },
+          {
+            "id": "music-2-16",
+            "name": "Set Work: Gerald Barry — Piano Quartet No. 1"
+          },
+          {
+            "id": "music-2-17",
+            "name": "Set Work: J.S. Bach — Cantata Jesu, der du meine Seele (BWV 78)"
           }
         ]
       }
@@ -11416,8 +11432,7 @@ export const CURRICULUM: CurriculumSubject[] = [
         ]
       }
     ]
-  }
-,
+  },
   {
     "id": "lca-active-leisure-studies",
     "name": "Active Leisure Studies (LCA)",

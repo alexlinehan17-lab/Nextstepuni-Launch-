@@ -917,10 +917,13 @@ export const TOPIC_LABELS: Record<string, string> = {
   "music-1-13": "Harmony: Adding Bass and Chords to a Tune",
   "music-1-14": "Harmony: Composing Melody and Bass from Chords",
   "music-1-15": "Harmony: Adding a Countermelody/Descant and Chords",
-  "music-2-0": "Prescribed Works (Set Works)",
   "music-2-10": "Set Work: Berlioz — Symphonie Fantastique",
   "music-2-11": "Set Work: Deane — Seachanges (with Danse Macabre)",
   "music-2-12": "Set Work: The Beatles — Sgt. Pepper's Lonely Hearts Club Band",
+  "music-2-14": "Set Work: Freddie Mercury — Bohemian Rhapsody",
+  "music-2-15": "Set Work: Tchaikovsky — Romeo and Juliet Fantasy Overture",
+  "music-2-16": "Set Work: Gerald Barry — Piano Quartet No. 1",
+  "music-2-17": "Set Work: J.S. Bach — Cantata Jesu, der du meine Seele (BWV 78)",
   "music-2-2": "Irish Traditional Music",
   "music-2-3": "Aural Skills: Notation",
   "music-2-4": "Aural: Melody, Rhythm and Timbre",
@@ -89355,19 +89358,19 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
   "q": [
    {
     "n": "1",
-    "primary": "music-2-0"
+    "primary": "music-2-15"
    },
    {
     "n": "2",
-    "primary": "music-2-0"
+    "primary": "music-2-16"
    },
    {
     "n": "3",
-    "primary": "music-2-0"
+    "primary": "music-2-14"
    },
    {
     "n": "4",
-    "primary": "music-2-0"
+    "primary": "music-2-17"
    },
    {
     "n": "5",
@@ -89390,19 +89393,19 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
   "q": [
    {
     "n": "1",
-    "primary": "music-2-0"
+    "primary": "music-2-16"
    },
    {
     "n": "2",
-    "primary": "music-2-0"
+    "primary": "music-2-17"
    },
    {
     "n": "3",
-    "primary": "music-2-0"
+    "primary": "music-2-14"
    },
    {
     "n": "4",
-    "primary": "music-2-0"
+    "primary": "music-2-15"
    },
    {
     "n": "5",
@@ -89425,19 +89428,19 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
   "q": [
    {
     "n": "1",
-    "primary": "music-2-0"
+    "primary": "music-2-16"
    },
    {
     "n": "2",
-    "primary": "music-2-0"
+    "primary": "music-2-17"
    },
    {
     "n": "3",
-    "primary": "music-2-0"
+    "primary": "music-2-14"
    },
    {
     "n": "4",
-    "primary": "music-2-0"
+    "primary": "music-2-15"
    },
    {
     "n": "5",
@@ -89460,19 +89463,19 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
   "q": [
    {
     "n": "1",
-    "primary": "music-2-0"
+    "primary": "music-2-14"
    },
    {
     "n": "2",
-    "primary": "music-2-0"
+    "primary": "music-2-15"
    },
    {
     "n": "3",
-    "primary": "music-2-0"
+    "primary": "music-2-16"
    },
    {
     "n": "4",
-    "primary": "music-2-0"
+    "primary": "music-2-17"
    },
    {
     "n": "5",
