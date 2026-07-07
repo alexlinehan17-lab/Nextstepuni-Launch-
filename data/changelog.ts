@@ -19,6 +19,16 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: '2026-07-topic-vault',
+    date: 'July 2026',
+    title: 'Questions by topic, as printed',
+    lines: [
+      'Pick a subject and topic in Paper Trail → Revise: every past question on it, newest first, shown exactly as printed on the paper.',
+      'Tap "Show the marking scheme" under any question to reveal the official scheme — and hide it again.',
+      'Now covers 41 subjects including English (by poet and text), Irish, French, German, Spanish and Arabic.',
+    ],
+  },
+  {
     id: '2026-07-qol',
     date: 'July 2026',
     title: 'Faster ways around',

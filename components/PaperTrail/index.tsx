@@ -1047,7 +1047,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
 
       {/* Study launcher — Revise / Review / Mock / Cards (A1/A2/B1/E6). */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 mb-6">
-        <StudyTile icon={<Layers size={20} style={{ color: '#F26B1F' }} />} label="Revise" sub="by topic" onClick={() => setView({ v: 'revise' })} />
+        <StudyTile icon={<Layers size={20} style={{ color: '#F26B1F' }} />} label="Topics" sub="every question" onClick={() => setView({ v: 'revise' })} />
         <StudyTile icon={<Repeat size={20} style={{ color: '#F26B1F' }} />} label="Review" sub={reviewTileSub} badge={review.due} onClick={() => setView({ v: 'review' })} />
         <StudyTile icon={<FileStack size={20} style={{ color: '#F26B1F' }} />} label="Mock set" sub={activeMock ? 'resume' : 'timed set'} dot={!!activeMock} onClick={() => setView({ v: 'mock' })} />
         <StudyTile icon={<Layers3 size={20} style={{ color: '#F26B1F' }} />} label="Cards" sub={cardsInfo.total ? `${cardsInfo.total} card${cardsInfo.total === 1 ? '' : 's'}` : 'make your own'} badge={cardsInfo.due} onClick={() => setView({ v: 'cards' })} />
