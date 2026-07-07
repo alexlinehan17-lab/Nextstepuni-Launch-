@@ -10,7 +10,7 @@
  */
 import { describe, it, expect } from 'vitest';
 import { CURRICULUM } from '../curriculum';
-import { SYLLABUS_META } from '../syllabusMeta';
+import { SYLLABUS_META, XRAY_EXCLUDED_STRANDS } from '../syllabusMeta';
 import { SYLLABUS_DATA } from '../components/syllabusData';
 
 const subjectById = new Map(CURRICULUM.map((s) => [s.id, s]));
@@ -36,12 +36,23 @@ describe('Syllabus single source of truth', () => {
     }
   });
 
-  it('every curriculum strand of an overlaid subject has overlay metadata (no blind spots)', () => {
+  it('every curriculum strand of an overlaid subject has overlay metadata OR a documented exclusion (no silent blind spots)', () => {
     for (const subjectId of Object.keys(SYLLABUS_META)) {
       const subject = subjectById.get(subjectId)!;
       const meta = SYLLABUS_META[subjectId];
       for (const strand of subject.strands) {
-        expect(meta.strands[strand.id], `strand "${strand.id}" of "${subjectId}" has no overlay`).toBeDefined();
+        const covered = meta.strands[strand.id] !== undefined || XRAY_EXCLUDED_STRANDS[strand.id] !== undefined;
+        expect(covered, `strand "${strand.id}" of "${subjectId}" has neither overlay nor documented exclusion`).toBe(true);
+      }
+    }
+  });
+
+  it('X-Ray exclusions are real strands, carry a reason, and are not also overlaid', () => {
+    for (const [strandId, reason] of Object.entries(XRAY_EXCLUDED_STRANDS)) {
+      expect(allStrandIds.has(strandId), `excluded strand "${strandId}" is not a curriculum strand`).toBe(true);
+      expect(reason.trim().length, `excluded strand "${strandId}" has no reason`).toBeGreaterThan(10);
+      for (const meta of Object.values(SYLLABUS_META)) {
+        expect(meta.strands[strandId], `"${strandId}" is both excluded and overlaid`).toBeUndefined();
       }
     }
   });

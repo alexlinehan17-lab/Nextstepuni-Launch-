@@ -361,6 +361,7 @@ export const SYLLABUS_META: Record<string, SubjectMeta> = {
       'physics-and-chemistry-5': { section: 'Section I - Physics (a reliable long question, often with a mandatory experiment)', markWeight: 11.0, examFrequency: 9, difficulty: 3, studyHours: 12, tip: 'Refraction and lenses dominate - know Snell\'s law, total internal reflection (critical angle) and the lens/mirror formula 1/f = 1/u + 1/v with the sign convention, and have the measure-the-refractive-index and focal-length experiments ready, as one usually appears.' },
       'physics-and-chemistry-6': { section: 'Section I - Physics (the largest physics strand - multiple long questions including electromagnetism)', markWeight: 16.0, examFrequency: 10, difficulty: 4, studyHours: 18, tip: 'This is the biggest physics scoring area: master Ohm\'s law and series/parallel resistor circuits, Coulomb\'s law and capacitors, and electromagnetic induction (dynamo/transformer) - the resistivity experiment and the transformer/transmission bookwork recur almost every year.' },
       'physics-and-chemistry-7': { section: 'Section I - Physics (a popular final long question)', markWeight: 9.0, examFrequency: 8, difficulty: 3, studyHours: 9, tip: 'The photoelectric effect (E = hf, work function) and radioactivity (alpha/beta/gamma properties, half-life, fission vs fusion, E = mc-squared) are the guaranteed earners - the structure-of-the-atom and energy-levels bookwork (E1 - E2 = hf) is easy marks if learned word-perfect.' },
+      'physics-and-chemistry-8': { section: 'Section II - Chemistry (Q7-Q12 — six of the paper\'s twelve questions)', markWeight: 48.0, examFrequency: 10, difficulty: 3, studyHours: 50, tip: 'Half the paper\'s questions are chemistry (Q7-Q12) every year - if your class leans physics-heavy, working the chemistry section from past papers is where untouched marks sit; volumetric analysis and organic chemistry recur across the years we hold.' },
     },
   },
   'biology': {
@@ -676,4 +677,34 @@ export const SYLLABUS_META: Record<string, SubjectMeta> = {
       'home-economics-3': { section: 'Section C (Elective) — 80 marks (40 marks for Textiles candidates)', markWeight: 20.0, examFrequency: 10, difficulty: 3, studyHours: 30, tip: 'Pick ONE elective and answer ONLY its Section C question — Home Design & Management is the most popular and predictable choice (services to the home, planning/design of the kitchen or living space), so master that elective\'s recurring long-answer rather than spreading effort across all three.' },
     },
   },
+};
+
+/**
+ * Curriculum strands deliberately EXCLUDED from the Syllabus X-Ray overlay.
+ * These are exam-task VIEWS added for the Topic Vault (browse questions the way
+ * the exam asks them: per-poet, per-text, per aural/oral/writing task). Their
+ * marks are already weighted under the subject's syllabus strands above —
+ * giving them weights of their own would double-count the same marks in the
+ * X-Ray treemap. The source-of-truth test requires every strand of an overlaid
+ * subject to appear either in SYLLABUS_META or here, with a reason — exclusion
+ * is a documented decision, never a silent blind spot.
+ */
+export const XRAY_EXCLUDED_STRANDS: Record<string, string> = {
+  'irish-9': 'Foundation-level task view; FL sits outside the HL/OL X-Ray weighting',
+  'english-11': 'Per-poet view of the Prescribed Poetry section (weighted under the Paper 2 strands)',
+  'english-12': 'Per-text view of Single Text / Comparative (weighted under the Paper 2 strands)',
+  'french-3': 'Aural task view — aural marks weighted under the existing skill strands',
+  'french-4': 'Oral task view — oral marks weighted under the existing skill strands',
+  'french-5': 'Reading task view — reading marks weighted under the existing skill strands',
+  'french-6': 'Writing task view — written-production marks weighted under the existing skill strands',
+  'french-7': 'Opinion-theme view of the written-production section',
+  'german-4': 'Aural task view — marks weighted under the existing skill strands',
+  'german-5': 'Oral published-materials view — marks weighted under the existing skill strands',
+  'german-6': 'Reading task view — marks weighted under the existing skill strands',
+  'german-7': 'Writing task view — marks weighted under the existing skill strands',
+  'spanish-3': 'Aural task view — marks weighted under the existing skill strands',
+  'spanish-4': 'Oral published-materials view — marks weighted under the existing skill strands',
+  'spanish-5': 'Reading task view — marks weighted under the existing skill strands',
+  'spanish-6': 'Writing task view — marks weighted under the existing skill strands',
+  'spanish-7': 'Prescribed-literature view of the reading/written sections',
 };
