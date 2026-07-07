@@ -34,6 +34,7 @@ import {
   completeSession,
   dailyDone,
   dailyIndex,
+  dayKey,
   loadCohort,
   submitToCohort,
   topCohortMisses,
@@ -57,7 +58,16 @@ import {
   type MissDelta,
   type ScriptScore,
 } from './store';
-import { submitToCohortRemote, subscribeCohort } from './cohortSync';
+import {
+  fetchDailyHistogram,
+  fetchScriptDistribution,
+  histogramMedian,
+  submitDailyBucket,
+  submitDecisions,
+  submitToCohortRemote,
+  subscribeCohort,
+  type DecisionDelta,
+} from './cohortSync';
 import { createCard } from '../PaperTrail/flashcardStore';
 
 const INK = '#1a1a1a';
@@ -259,6 +269,13 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
   const [codexAdded, setCodexAdded] = useState(false);
   const [recallOpen, setRecallOpen] = useState<string | null>(null);
   const [remoteCohort, setRemoteCohort] = useState<CohortAgg | null>(null);
+  // Moderation Meeting (F5): decisions made this session (submitted with the
+  // explicit "Send to class" action) + the class's distribution on the current
+  // script, shown on reveal.
+  const [sessionDecisions, setSessionDecisions] = useState<DecisionDelta[]>([]);
+  const [classDist, setClassDist] = useState<Record<string, number> | null>(null);
+  // Daily Mark duel (F9): the class histogram after an explicit compare.
+  const [duel, setDuel] = useState<{ you: number; median: number; total: number } | null>(null);
 
   // Cross-device cohort: live-subscribe to the class code's Firestore aggregate
   // while the teacher view is open. Local loadCohort remains the offline fallback.
@@ -274,6 +291,30 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
     () => (sessionId ? allSessions().find(s => s.id === sessionId) : undefined),
     [sessionId],
   );
+
+  // The scripts actually being marked (borderline / daily filters applied) —
+  // shared by the session renderer and the moderation-fetch effect below.
+  const activeScripts = useMemo(() => {
+    if (!session) return [];
+    const all = session.scripts as (GridSession['scripts'][number] | ScaleSession['scripts'][number])[];
+    return restrictScriptId
+      ? all.filter(s => s.id === restrictScriptId)
+      : borderlineOnly
+        ? all.filter(s => isBorderlineScript(session, s))
+        : all;
+  }, [session, restrictScriptId, borderlineOnly]);
+
+  // Moderation Meeting: when the key drops and a class code is set, pull the
+  // class's anonymous distribution for this script (one-shot, best-effort).
+  useEffect(() => {
+    setClassDist(null);
+    const code = classCode.trim();
+    const s = activeScripts[Math.min(scriptIdx, activeScripts.length - 1)];
+    if (stage !== 'reveal' || !code || !session || !s) return;
+    let alive = true;
+    void fetchScriptDistribution(code, session.id, s.id).then(d => { if (alive) setClassDist(d); });
+    return () => { alive = false; };
+  }, [stage, scriptIdx, classCode, session, activeScripts]);
 
   const persist = (next: ChairState) => {
     setState(next);
@@ -301,6 +342,8 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
     setRestrictScriptId(null);
     setCodexAdded(false);
     setSubmittedToClass(false);
+    setSessionDecisions([]);
+    setDuel(null);
     setView('session');
   };
 
@@ -350,11 +393,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
   if (view === 'session' && session) {
     const allScriptsU = session.scripts as (GridSession['scripts'][number] | ScaleSession['scripts'][number])[];
     const borderlineCount = allScriptsU.filter(s => isBorderlineScript(session, s)).length;
-    const scripts = (
-      restrictScriptId ? allScriptsU.filter(s => s.id === restrictScriptId)
-      : borderlineOnly ? allScriptsU.filter(s => isBorderlineScript(session, s))
-      : session.scripts
-    ) as typeof session.scripts;
+    const scripts = activeScripts as typeof session.scripts;
     const script = scripts[Math.min(scriptIdx, scripts.length - 1)];
 
     const commitScript = () => {
@@ -366,6 +405,21 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
         session.mode === 'grid'
           ? gridScriptMisses(session, script as GridSession['scripts'][number], decisions)
           : scaleScriptMisses(session, script as ScaleSession['scripts'][number], chosenLevel);
+      // Moderation Meeting: remember this script's calls (anonymous choice
+      // strings only) — written ONLY if the student later taps "Send to class".
+      const dDeltas: DecisionDelta[] =
+        session.mode === 'grid'
+          ? (script as GridSession['scripts'][number]).attempts.flatMap(a =>
+              session.grid.perPoint.map(c => ({
+                sessionId: session.id,
+                scriptId: script.id,
+                choice: `${a.id}:${c.id}:${decisions[gridDecisionKey(a.id, c.id)] ? 'earned' : 'withheld'}`,
+              })),
+            )
+          : chosenLevel
+            ? [{ sessionId: session.id, scriptId: script.id, choice: chosenLevel }]
+            : [];
+      setSessionDecisions(prev => [...prev, ...dDeltas]);
       setScores(prev => [...prev, score]);
       setSessionMisses(prev => [...prev, ...deltas]);
       setStage('reveal');
@@ -785,6 +839,72 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
               </div>
             )}
 
+            {/* Moderation Meeting (F5): how the class before you called it — anonymous counts only. */}
+            {stage === 'reveal' && classDist && Object.values(classDist).some(n => n > 0) && (
+              <div className="rounded-xl border px-4 py-3 mb-4" style={{ borderColor: BORDER, background: '#FCFBF8' }}>
+                <Small className="mb-1.5">The moderation meeting — how your class called it</Small>
+                {session.mode === 'scale' ? (
+                  (() => {
+                    const total = session.scale.levels.reduce((a, l) => a + (classDist[l.id] ?? 0), 0);
+                    if (!total) return null;
+                    return (
+                      <div className="space-y-1">
+                        {session.scale.levels.filter(l => (classDist[l.id] ?? 0) > 0).map(l => {
+                          const n = classDist[l.id] ?? 0;
+                          const share = Math.round((n / total) * 100);
+                          const isKey = (script as ScaleSession['scripts'][number]).keyLevelId === l.id;
+                          return (
+                            <div key={l.id} className="flex items-center gap-2 text-[12px]">
+                              <span className="w-40 shrink-0 truncate font-medium" style={{ color: isKey ? INK : MUTED }}>
+                                {l.label}{isKey ? ' ✓' : ''}
+                              </span>
+                              <span className="flex-1 h-1.5 rounded-full overflow-hidden" style={{ backgroundColor: '#eceae6' }}>
+                                <span className="block h-full rounded-full" style={{ width: `${share}%`, backgroundColor: isKey ? SUCCESS : ACCENT }} />
+                              </span>
+                              <span className="w-10 shrink-0 text-right tabular-nums" style={{ color: MUTED }}>{share}%</span>
+                            </div>
+                          );
+                        })}
+                        <p className="text-[10.5px] mt-1.5" style={{ color: LABEL }}>
+                          {total} classmate{total === 1 ? '' : 's'} — anonymous counts, never names. ✓ = the examiner’s call.
+                        </p>
+                      </div>
+                    );
+                  })()
+                ) : (
+                  (() => {
+                    const rows = (script as GridSession['scripts'][number]).attempts.flatMap((a, ai) =>
+                      session.grid.perPoint.map(c => {
+                        const e = classDist[`${a.id}:${c.id}:earned`] ?? 0;
+                        const w = classDist[`${a.id}:${c.id}:withheld`] ?? 0;
+                        return { key: `${a.id}:${c.id}`, label: `Point ${ai + 1} · ${c.label}`, e, w, keyAwarded: (a.key[c.id] ?? 0) > 0 };
+                      }),
+                    ).filter(r => r.e + r.w > 0);
+                    if (!rows.length) return null;
+                    return (
+                      <div className="space-y-1">
+                        {rows.map(r => {
+                          const total = r.e + r.w;
+                          const awardShare = Math.round((r.e / total) * 100);
+                          return (
+                            <div key={r.key} className="flex items-center gap-2 text-[12px]">
+                              <span className="w-40 shrink-0 truncate font-medium" style={{ color: INK }}>{r.label}</span>
+                              <span className="flex-1" style={{ color: MUTED }}>
+                                {awardShare}% awarded it — the examiner {r.keyAwarded ? 'did' : 'didn’t'}
+                              </span>
+                            </div>
+                          );
+                        })}
+                        <p className="text-[10.5px] mt-1.5" style={{ color: LABEL }}>
+                          Anonymous counts from your class code, never names.
+                        </p>
+                      </div>
+                    );
+                  })()
+                )}
+              </div>
+            )}
+
             {stage === 'reveal' && script.embodies && (
               <div className="rounded-xl px-4 py-3 mb-4" style={{ backgroundColor: '#FDEEDF', borderLeft: `3px solid ${ACCENT}` }}>
                 <Small className="mb-1">The examiners have seen this before</Small>
@@ -846,6 +966,39 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                   Daily Mark done · {state.daily.streak}🔥 day streak
                   {state.daily.streak >= state.daily.best && state.daily.best > 1 ? ' — your best yet' : ''}
                 </p>
+              </div>
+            )}
+            {/* Daily Mark duel (F9): anonymous class histogram — you vs the class median. */}
+            {dailyMode && classCode.trim() !== '' && (
+              <div className="rounded-xl border px-4 py-3 mb-3 text-center" style={{ borderColor: BORDER, background: '#FCFBF8' }}>
+                {duel ? (
+                  <>
+                    <p className="text-[14px] font-semibold" style={{ color: INK }}>
+                      You {duel.you}/10 · class median {duel.median}/10
+                    </p>
+                    <p className="text-[11px] mt-0.5" style={{ color: LABEL }}>
+                      {duel.total} in class {classCode.trim()} marked today’s script — anonymous scores, never names.
+                    </p>
+                  </>
+                ) : (
+                  <button
+                    onClick={() => {
+                      const agreement = scores.length ? scores.reduce((a, s) => a + s.agreement, 0) / scores.length : 0;
+                      const you = Math.max(0, Math.min(10, Math.round(agreement * 10)));
+                      const day = dayKey(Date.now());
+                      void (async () => {
+                        await submitDailyBucket(classCode, day, you);
+                        const hist = await fetchDailyHistogram(classCode, day);
+                        const median = histogramMedian(hist);
+                        if (median !== null) setDuel({ you, median, total: hist.reduce((a, b) => a + b, 0) });
+                      })();
+                    }}
+                    className="text-[13px] font-semibold"
+                    style={{ color: ACCENT }}
+                  >
+                    Compare with your class — anonymous, scores only
+                  </button>
+                )}
               </div>
             )}
             {(() => {
@@ -933,6 +1086,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                         if (!classCode.trim()) return;
                         submitToCohort(classCode, sessionMisses);          // local fallback + single-device
                         void submitToCohortRemote(classCode, sessionMisses); // cross-device (best-effort)
+                        void submitDecisions(classCode, sessionDecisions);   // moderation meeting (anonymous)
                         try { localStorage.setItem('chair-class-code', classCode.trim()); } catch { /* ignore */ }
                         setSubmittedToClass(true);
                       }}

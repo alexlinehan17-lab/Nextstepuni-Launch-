@@ -354,6 +354,50 @@ service cloud.firestore {
                     && request.resource.data.submissions == resource.data.submissions + 1;
       allow delete: if false;
 
+      // Moderation Meeting (F5): one counter doc per marking DECISION the class
+      // has made on a script — "64% of your class gave this mark" — shown on
+      // the reveal so students conference like real SEC markers. Anonymous by
+      // construction: identity fields + a single pinned +1 counter, no uids.
+      match /decisions/{decisionId} {
+        allow read: if request.auth != null;
+        allow create: if request.auth != null
+                      && request.resource.data.keys().hasOnly(['sessionId', 'scriptId', 'choice', 'n'])
+                      && request.resource.data.sessionId is string
+                      && request.resource.data.sessionId.size() <= 80
+                      && request.resource.data.scriptId is string
+                      && request.resource.data.scriptId.size() <= 80
+                      && request.resource.data.choice is string
+                      && request.resource.data.choice.size() <= 160
+                      && request.resource.data.n == 1;
+        allow update: if request.auth != null
+                      && request.resource.data.keys().hasOnly(['sessionId', 'scriptId', 'choice', 'n'])
+                      && request.resource.data.sessionId == resource.data.sessionId
+                      && request.resource.data.scriptId == resource.data.scriptId
+                      && request.resource.data.choice == resource.data.choice
+                      && request.resource.data.n == resource.data.n + 1;
+        allow delete: if false;
+      }
+
+      // Daily Mark duel (F9): per class code + UTC day, one counter doc per
+      // agreement decile bucket (0–10) — an anonymous histogram the class
+      // compares against ("you 9/10, class median 6"). No uids.
+      match /daily/{bucketId} {
+        allow read: if request.auth != null;
+        allow create: if request.auth != null
+                      && request.resource.data.keys().hasOnly(['day', 'bucket', 'n'])
+                      && request.resource.data.day is string
+                      && request.resource.data.day.size() <= 12
+                      && request.resource.data.bucket is int
+                      && request.resource.data.bucket >= 0 && request.resource.data.bucket <= 10
+                      && request.resource.data.n == 1;
+        allow update: if request.auth != null
+                      && request.resource.data.keys().hasOnly(['day', 'bucket', 'n'])
+                      && request.resource.data.day == resource.data.day
+                      && request.resource.data.bucket == resource.data.bucket
+                      && request.resource.data.n == resource.data.n + 1;
+        allow delete: if false;
+      }
+
       // One doc per marking rule the class mis-marks — atomic increments.
       match /rules/{ruleId} {
         allow read: if request.auth != null;
@@ -384,6 +428,22 @@ service cloud.firestore {
                       && request.resource.data.under <= resource.data.under + 100;
         allow delete: if false;
       }
+    }
+
+    // Shared focus presence (F10): "N classmates at their desks right now".
+    // Per class code, one counter doc per 5-minute time bucket; each active
+    // student increments the current bucket once (client-enforced cadence),
+    // so the current bucket's count IS the presence number. No uids, no
+    // leave-tracking, nothing per-student — a stale bucket simply ages out.
+    match /focusPresence/{classCode}/buckets/{bucketId} {
+      allow read: if request.auth != null;
+      allow create: if request.auth != null
+                    && request.resource.data.keys().hasOnly(['n'])
+                    && request.resource.data.n == 1;
+      allow update: if request.auth != null
+                    && request.resource.data.keys().hasOnly(['n'])
+                    && request.resource.data.n == resource.data.n + 1;
+      allow delete: if false;
     }
 
     // Default deny — no other collections are accessible

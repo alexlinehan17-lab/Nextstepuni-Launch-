@@ -15,6 +15,7 @@ import {
   computeEfficiency, getQuadrant, QUADRANT_LABELS,
   fuzzyMatchTopic,
 } from './syllabusData';
+import { computeSubjectRoi } from './syllabusRoi';
 import { db } from '../firebase';
 import { doc, getDoc } from 'firebase/firestore';
 import { type DebriefEntry } from './StudyDebrief';
@@ -169,6 +170,14 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
   }, [studentSubjects]);
 
   const syllabus = selectedSubject ? getSyllabusForSubject(selectedSubject) : null;
+
+  // Personal ROI overlay (F6): historical marks-per-strand × the student's own
+  // Paper Trail self-mark accuracy. Null (renders nothing) unless the student
+  // has ≥3 self-marks in the subject AND at least one joins onto a strand.
+  const roi = useMemo(
+    () => (syllabus ? computeSubjectRoi(uid, syllabus) : null),
+    [uid, syllabus],
+  );
 
   // Compute mastery stats for the selected subject
   const _masteryStats = useMemo(() => {
@@ -576,6 +585,46 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
           </MotionDiv>
         )}
       </AnimatePresence>
+
+      {/* Personal ROI overlay (F6) — where YOUR next marks are. Only rendered
+          when the student has enough self-mark evidence; no empty shell. */}
+      {roi && roi.entries.length > 0 && (
+        <div
+          className="rounded-xl p-5 bg-[#FAF7F4] dark:bg-zinc-900"
+          style={{
+            border: '0.5px solid rgba(0,0,0,0.07)',
+          }}
+        >
+          <p className="text-[11px] text-zinc-400 uppercase tracking-wider mb-1">Where your next marks are</p>
+          <p className="text-[12px] text-zinc-400 dark:text-zinc-500 leading-relaxed mb-3">
+            What each topic has historically carried, crossed with your own self-marked accuracy from Paper Trail
+            ({roi.totalSelfMarks} question{roi.totalSelfMarks !== 1 ? 's' : ''} so far). Most room to gain first —
+            this is not a prediction of what will come up.
+          </p>
+          <div className="space-y-2">
+            {roi.entries.slice(0, 5).map((entry) => (
+              <button
+                key={entry.topicId}
+                onClick={() => setExpandedTopic(entry.topicName)}
+                className="w-full flex items-center gap-3 text-left rounded-[10px] p-3 bg-white dark:bg-zinc-800/60 hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors"
+                style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}
+              >
+                <div className="flex-1 min-w-0">
+                  <p className="text-[13px] font-medium text-zinc-700 dark:text-zinc-200 truncate">{entry.topicName}</p>
+                  <p className="text-[11px] text-zinc-400 mt-0.5">
+                    historically carried ~{entry.historicalMarks} marks &middot; your measured accuracy: {entry.accuracy}%
+                    (from {entry.sampleSize} self-marked question{entry.sampleSize !== 1 ? 's' : ''})
+                  </p>
+                </div>
+                <div className="text-right shrink-0">
+                  <p className="text-xl font-medium leading-none" style={{ color: COLORS.accent }}>{entry.roomToGain}</p>
+                  <p className="text-[10px] text-zinc-400 mt-0.5">marks of room</p>
+                </div>
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Exam Strategy Box */}
       {syllabus && (

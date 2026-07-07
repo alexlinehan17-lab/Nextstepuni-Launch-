@@ -9,6 +9,7 @@ import { MotionDiv } from './Motion';
 import {
   TrendingUp, Zap, Plus, Trash2,
   ArrowRight, Star, Calendar, Award, Rocket,
+  Shield, Target, Pencil,
 } from 'lucide-react';
 import {
   type StudentSubjectProfile, type Grade, type Level,
@@ -16,6 +17,11 @@ import {
 
   computeBargains,
 } from './subjectData';
+import {
+  type ScenarioSlot, type ScenarioMap, type ScenarioGradeEntry,
+  SCENARIO_SLOTS, loadScenarios, saveScenario, clearScenario,
+  computeBestSixTotal, bestLeverToward,
+} from './pointsScenarioStore';
 import { useToast } from './Toast';
 import { useMockResults } from '../hooks/useMockResults';
 import { doc, getDoc } from 'firebase/firestore';
@@ -62,18 +68,15 @@ const MICRO_STORIES = [
   { from: 255, to: 345, quote: 'Everyone told me I was a "300 student." I stopped listening and just focused on what I could control.', label: 'Student, 2024' },
 ];
 
-// ─── Utility ─────────────────────────────────────────────────────────────────
+// Scenario runway slot metadata (feature F7). computeBestSixTotal lives in
+// pointsScenarioStore so the pure math is unit-testable.
+const SLOT_META: Record<ScenarioSlot, { label: string; description: string; Icon: typeof Shield }> = {
+  safe: { label: 'Safe', description: 'Grades you\'re confident of', Icon: Shield },
+  target: { label: 'Target', description: 'Your realistic goal', Icon: Target },
+  stretch: { label: 'Stretch', description: 'If everything clicks', Icon: Rocket },
+};
 
-function computeBestSixTotal(
-  subjects: { subjectName: string; grade: Grade }[],
-): number {
-  const scored = subjects.map(s => {
-    const isMaths = LC_SUBJECTS.find(lc => lc.name === s.subjectName)?.isMaths ?? false;
-    return getPointsForGrade(s.grade, isMaths);
-  });
-  scored.sort((a, b) => b - a);
-  return scored.slice(0, 6).reduce((sum, p) => sum + p, 0);
-}
+// ─── Utility ─────────────────────────────────────────────────────────────────
 
 function getTrajectoryInfo(points: number) {
   if (points >= 500) return TRAJECTORY_DATA[6];
@@ -103,7 +106,7 @@ function getDot(name: string) { return SUBJECT_DOT[name] || 'bg-zinc-500'; }
 
 const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
   const { showToast } = useToast();
-  const [activeTab, setActiveTab] = useState<'overview' | 'mocks' | 'bargains'>('overview');
+  const [activeTab, setActiveTab] = useState<'overview' | 'mocks' | 'scenarios' | 'bargains'>('overview');
 
   // Shared mock results hook
   const mockResultsHook = useMockResults(uid);
@@ -143,6 +146,16 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
   const [showMockForm, setShowMockForm] = useState(false);
   const [mockLabel, setMockLabel] = useState('');
   const [mockGrades, setMockGrades] = useState<Record<string, Grade>>({});
+
+  // Scenario runway state (feature F7) — local-only, per uid
+  const [scenarios, setScenarios] = useState<ScenarioMap>({});
+  const [editingSlot, setEditingSlot] = useState<ScenarioSlot | null>(null);
+  const [scenarioGrades, setScenarioGrades] = useState<Record<string, Grade>>({});
+
+  useEffect(() => {
+    setScenarios(loadScenarios(uid));
+    setEditingSlot(null);
+  }, [uid]);
 
   // Current points from profile
   const currentPoints = useMemo(() => {
@@ -200,6 +213,77 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
     mockResultsHook.removeMockResult(id);
   };
 
+  // ── Scenario runway (feature F7) ──
+  // Baseline = the student's latest recorded mock (mocks are stored
+  // newest-first). Their own data, never a prediction. Falls back to the
+  // profile's current grades when no mocks are recorded yet.
+  const scenarioBaseline = useMemo(() => {
+    const latestMock = mockResults.length > 0 ? mockResults[0] : null;
+    if (latestMock) {
+      return {
+        entries: latestMock.grades as ScenarioGradeEntry[],
+        total: latestMock.totalPoints,
+        label: latestMock.label,
+        isMock: true,
+      };
+    }
+    return {
+      entries: profile.subjects.map(s => ({ subjectName: s.subjectName, grade: s.currentGrade, level: s.level })) as ScenarioGradeEntry[],
+      total: currentPoints,
+      label: 'your current grades',
+      isMock: false,
+    };
+  }, [mockResults, profile, currentPoints]);
+
+  const startEditScenario = (slot: ScenarioSlot) => {
+    const existing = scenarios[slot];
+    const grades: Record<string, Grade> = {};
+    profile.subjects.forEach(s => {
+      const saved = existing?.grades.find(g => g.subjectName === s.subjectName)?.grade;
+      grades[s.subjectName] = saved || s.currentGrade;
+    });
+    setScenarioGrades(grades);
+    setEditingSlot(slot);
+  };
+
+  const scenarioEntriesFromForm = (): ScenarioGradeEntry[] =>
+    profile.subjects.map(s => ({
+      subjectName: s.subjectName,
+      grade: scenarioGrades[s.subjectName] || s.currentGrade,
+      level: s.level,
+    }));
+
+  const saveScenarioForm = () => {
+    if (!editingSlot) return;
+    const grades = scenarioEntriesFromForm();
+    setScenarios(saveScenario(uid, {
+      slot: editingSlot,
+      grades,
+      savedAt: new Date().toISOString().split('T')[0],
+    }));
+    setEditingSlot(null);
+    showToast(`${SLOT_META[editingSlot].label} scenario saved — ${computeBestSixTotal(grades)} points`, 'success');
+  };
+
+  const cloneScenarioFromCurrent = (slot: ScenarioSlot) => {
+    const grades: ScenarioGradeEntry[] = profile.subjects.map(s => ({
+      subjectName: s.subjectName,
+      grade: s.currentGrade,
+      level: s.level,
+    }));
+    setScenarios(saveScenario(uid, {
+      slot,
+      grades,
+      savedAt: new Date().toISOString().split('T')[0],
+    }));
+    showToast(`${SLOT_META[slot].label} scenario started from your current grades`, 'success');
+  };
+
+  const deleteScenario = (slot: ScenarioSlot) => {
+    setScenarios(clearScenario(uid, slot));
+    if (editingSlot === slot) setEditingSlot(null);
+  };
+
   if (!loaded) {
     return (
       <div className="flex items-center justify-center py-20">
@@ -253,6 +337,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
         {([
           { key: 'overview' as const, label: 'Overview' },
           { key: 'mocks' as const, label: 'Mock Tracker' },
+          { key: 'scenarios' as const, label: 'Scenarios' },
           { key: 'bargains' as const, label: 'Best Bargains' },
         ]).map(tab => (
           <button
@@ -522,6 +607,183 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
                   </button>
                   <button
                     onClick={() => setShowMockForm(false)}
+                    className="px-4 py-2.5 rounded-xl text-sm font-medium text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors"
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </MotionDiv>
+            )}
+          </MotionDiv>
+        )}
+
+        {/* ── Scenarios Tab (feature F7: Safe / Target / Stretch runway) ── */}
+        {activeTab === 'scenarios' && (
+          <MotionDiv
+            key="scenarios"
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            className="space-y-5"
+          >
+            {/* Honesty framing: deltas compare against the student's own mocks */}
+            <div className="rounded-xl p-4 bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
+              <p className="text-sm font-bold text-zinc-800 dark:text-zinc-200">Scenario Runway</p>
+              <p className="text-xs leading-relaxed mt-1 text-zinc-600 dark:text-zinc-400">
+                Sketch a Safe, Target and Stretch grade set and compare them side by side.
+                Each delta is measured against {scenarioBaseline.isMock
+                  ? <>your latest recorded mock (<span className="font-semibold">{scenarioBaseline.label}</span>)</>
+                  : 'your current self-assessed grades'} — that&apos;s your own results so far, not a prediction of how the real exam will go.
+              </p>
+            </div>
+
+            {/* Baseline strip */}
+            <div className="flex items-center gap-3 p-3 rounded-xl bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
+              <TrendingUp size={14} className="shrink-0 text-[#9A9590] dark:text-zinc-500" />
+              <p className="flex-1 min-w-0 text-xs text-zinc-600 dark:text-zinc-400 truncate">
+                {scenarioBaseline.isMock ? 'Your mocks so far' : 'Your current grades'} &middot; {scenarioBaseline.label}
+              </p>
+              <span className="text-sm font-bold shrink-0" style={{ color: COLORS.accent }}>{scenarioBaseline.total} pts</span>
+            </div>
+
+            {/* Three slots side-by-side */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              {SCENARIO_SLOTS.map(slot => {
+                const meta = SLOT_META[slot];
+                const SlotIcon = meta.Icon;
+                const sc = scenarios[slot];
+                const total = sc ? computeBestSixTotal(sc.grades) : null;
+                const delta = total !== null ? total - scenarioBaseline.total : null;
+                const lever = sc ? bestLeverToward(scenarioBaseline.entries, sc.grades) : null;
+                return (
+                  <div key={slot} className="rounded-xl p-4 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 flex flex-col gap-2">
+                    <div className="flex items-center gap-2">
+                      <SlotIcon size={14} className="shrink-0" style={{ color: sc ? COLORS.accent : '#9A9590' }} />
+                      <span className="flex-1 text-xs font-bold uppercase tracking-widest text-zinc-500 dark:text-zinc-400">{meta.label}</span>
+                      {sc && (
+                        <>
+                          <button
+                            onClick={() => startEditScenario(slot)}
+                            className="p-1 rounded-md hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+                            aria-label={`Edit ${meta.label} scenario`}
+                          >
+                            <Pencil size={12} className="text-zinc-400" />
+                          </button>
+                          <button
+                            onClick={() => deleteScenario(slot)}
+                            className="p-1 rounded-md hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+                            aria-label={`Clear ${meta.label} scenario`}
+                          >
+                            <Trash2 size={12} className="text-zinc-400" />
+                          </button>
+                        </>
+                      )}
+                    </div>
+                    <p className="text-[11px] text-zinc-400 dark:text-zinc-500">{meta.description}</p>
+
+                    {sc && total !== null && delta !== null ? (
+                      <>
+                        <div>
+                          <span className="font-apercu text-3xl font-black" style={{ color: COLORS.accent }}>{total}</span>
+                          <span className="text-sm ml-1 text-[#9A9590] dark:text-zinc-500">/625</span>
+                        </div>
+                        <span
+                          className="self-start text-[10px] font-bold px-2 py-0.5 rounded-full"
+                          style={delta > 0
+                            ? { backgroundColor: '#FDF3E7', color: '#8B5E2A' }
+                            : { backgroundColor: '#EDF2EE', color: '#4A6B4F' }}
+                        >
+                          {delta > 0
+                            ? `+${delta} vs ${scenarioBaseline.isMock ? 'latest mock' : 'current'}`
+                            : delta === 0
+                              ? `Level with your ${scenarioBaseline.isMock ? 'latest mock' : 'current grades'}`
+                              : `Already ${-delta} ahead on your ${scenarioBaseline.isMock ? 'mocks' : 'grades'}`}
+                        </span>
+                        {lever && (
+                          <p className="text-[11px] leading-relaxed text-zinc-500 dark:text-zinc-400 mt-1">
+                            Biggest single step: <span className="font-semibold text-zinc-700 dark:text-zinc-300">{lever.subjectName} {lever.fromGrade} <ArrowRight size={9} className="inline" /> {lever.toGrade}</span>{' '}
+                            <span className="font-bold" style={{ color: '#4A6B4F' }}>+{lever.pointsGain} pts</span>
+                          </p>
+                        )}
+                      </>
+                    ) : (
+                      <div className="flex flex-col gap-2 mt-1">
+                        <button
+                          onClick={() => startEditScenario(slot)}
+                          className="w-full py-2 rounded-lg text-xs font-bold text-white transition-colors"
+                          style={{ backgroundColor: COLORS.accent }}
+                        >
+                          Set grades
+                        </button>
+                        <button
+                          onClick={() => cloneScenarioFromCurrent(slot)}
+                          className="w-full py-1.5 rounded-lg text-[11px] font-medium text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors"
+                        >
+                          Start from current grades
+                        </button>
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* Scenario grade editor */}
+            {editingSlot && (
+              <MotionDiv
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-5 space-y-4"
+              >
+                <div className="flex items-center justify-between">
+                  <p className="text-sm font-bold text-zinc-800 dark:text-zinc-200">
+                    {SLOT_META[editingSlot].label} scenario — pick a grade per subject
+                  </p>
+                  <span className="text-sm font-bold shrink-0" style={{ color: COLORS.accent }}>
+                    {computeBestSixTotal(scenarioEntriesFromForm())} pts
+                  </span>
+                </div>
+
+                <div className="space-y-3">
+                  {profile.subjects.map(sub => {
+                    const grades = getGradesForLevel(sub.level);
+                    return (
+                      <div key={sub.subjectName} className="space-y-1.5">
+                        <div className="flex items-center gap-2">
+                          <span className={`w-2 h-2 rounded-full ${getDot(sub.subjectName)}`} />
+                          <span className="text-xs font-semibold text-zinc-700 dark:text-zinc-300">{sub.subjectName}</span>
+                        </div>
+                        <div className="flex flex-wrap gap-1">
+                          {grades.map(g => (
+                            <button
+                              key={g}
+                              onClick={() => setScenarioGrades(prev => ({ ...prev, [sub.subjectName]: g }))}
+                              className={`px-2 py-1 rounded-md text-xs font-bold transition-all ${
+                                scenarioGrades[sub.subjectName] === g
+                                  ? 'text-white shadow-sm'
+                                  : 'bg-zinc-50 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-700'
+                              }`}
+                              style={scenarioGrades[sub.subjectName] === g ? { backgroundColor: COLORS.accent } : undefined}
+                            >
+                              {g}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+
+                <div className="flex gap-3">
+                  <button
+                    onClick={saveScenarioForm}
+                    className="flex-1 py-2.5 rounded-xl text-sm font-bold text-white transition-colors"
+                    style={{ backgroundColor: COLORS.accent }}
+                  >
+                    Save {SLOT_META[editingSlot].label} Scenario
+                  </button>
+                  <button
+                    onClick={() => setEditingSlot(null)}
                     className="px-4 py-2.5 rounded-xl text-sm font-medium text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors"
                   >
                     Cancel

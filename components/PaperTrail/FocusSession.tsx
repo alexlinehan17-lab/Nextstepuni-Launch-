@@ -12,6 +12,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { ArrowLeft, X } from 'lucide-react';
 import { drawPlant } from './focusArt';
 import { addSession, focusStats, loadGrove, type FocusRecord } from './focusStore';
+import { startPresence, subscribePresence } from './presenceSync';
 import { recordActivity } from './streakStore';
 
 const INK = '#1a1a1a';
@@ -49,7 +50,11 @@ const FocusSession: React.FC<Props> = ({ uid, onBack }) => {
   const [elapsed, setElapsed] = useState(0);
   const [seed, setSeed] = useState(1);
   const [grove, setGrove] = useState<FocusRecord[]>(() => loadGrove(uid));
+  const [classmates, setClassmates] = useState(0);
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  const classCode = (() => {
+    try { return localStorage.getItem('chair-class-code') ?? ''; } catch { return ''; }
+  })();
 
   const durationMs = minutes * 60_000;
   const progress = mode === 'running' ? Math.min(1, elapsed / durationMs) : 0;
@@ -60,6 +65,15 @@ const FocusSession: React.FC<Props> = ({ uid, onBack }) => {
     const id = setInterval(() => setElapsed(Date.now() - startTs), 250);
     return () => clearInterval(id);
   }, [mode, startTs]);
+
+  // Shared presence (F10): while running with a class code, broadcast one
+  // anonymous +1 per 5-minute bucket and watch the class count. No uids ever.
+  useEffect(() => {
+    if (mode !== 'running' || !classCode.trim()) { setClassmates(0); return; }
+    const stopSend = startPresence(classCode, Date.now());
+    const stopWatch = subscribePresence(classCode, Date.now(), setClassmates);
+    return () => { stopSend(); stopWatch(); };
+  }, [mode, classCode]);
 
   // Complete when the time is up.
   useEffect(() => {
@@ -114,6 +128,11 @@ const FocusSession: React.FC<Props> = ({ uid, onBack }) => {
               {mm}:{String(ss).padStart(2, '0')}
             </p>
             <p className="text-[13px] mt-2" style={{ color: '#7a7068' }}>Stay with it — the plant grows while you focus.</p>
+            {classmates > 1 && (
+              <p className="text-[12px] mt-1.5 font-medium" style={{ color: '#1F5F3E' }}>
+                {classmates - 1} classmate{classmates - 1 === 1 ? ' is' : 's are'} at their desk right now too
+              </p>
+            )}
           </>
         ) : (
           <>

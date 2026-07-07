@@ -24,9 +24,12 @@
 import {
   collection,
   doc,
+  getDocs,
   increment,
   onSnapshot,
+  query,
   setDoc,
+  where,
 } from 'firebase/firestore';
 import { db } from '../../firebase';
 import type { CohortAgg, CohortRule, MissDelta } from './store';
@@ -85,6 +88,116 @@ export async function submitToCohortRemote(code: string, deltas: MissDelta[]): P
   } catch (err) {
     console.error('[Chair] cohort submit failed:', err);
   }
+}
+
+// ── Moderation Meeting (F5): anonymous per-decision class distribution ──
+//
+// One counter doc per (session, script, choice). Grid choices are
+// "attemptId:criterionId:earned|withheld"; scale choices are the level id.
+// Written only as part of the student's explicit "Send to class" action;
+// read on the reveal so the class before you becomes your conference.
+
+export interface DecisionDelta {
+  sessionId: string;
+  scriptId: string;
+  choice: string;
+}
+
+const decisionsCol = (code: string) => collection(db, 'chairCohorts', codeId(code), 'decisions');
+
+/** Increment the class counters for one session's marking decisions (best-effort). */
+export async function submitDecisions(code: string, deltas: DecisionDelta[]): Promise<void> {
+  const c = code.trim();
+  if (!c || deltas.length === 0) return;
+  try {
+    await Promise.all(
+      deltas.map(d =>
+        setDoc(
+          doc(decisionsCol(c), ruleDocId(`${d.sessionId}|${d.scriptId}|${d.choice}`)),
+          { sessionId: d.sessionId, scriptId: d.scriptId, choice: d.choice, n: increment(1) },
+          { merge: true },
+        ),
+      ),
+    );
+  } catch (err) {
+    console.error('[Chair] decision submit failed:', err);
+  }
+}
+
+/** One script's class distribution: choice → count. Empty map on any failure. */
+export async function fetchScriptDistribution(
+  code: string,
+  sessionId: string,
+  scriptId: string,
+): Promise<Record<string, number>> {
+  const c = code.trim();
+  if (!c) return {};
+  try {
+    const snap = await getDocs(
+      query(decisionsCol(c), where('sessionId', '==', sessionId), where('scriptId', '==', scriptId)),
+    );
+    const out: Record<string, number> = {};
+    snap.forEach(d => {
+      const data = d.data() as Partial<DecisionDelta> & { n?: number };
+      if (data.choice) out[data.choice] = data.n ?? 0;
+    });
+    return out;
+  } catch {
+    return {};
+  }
+}
+
+// ── Daily Mark duel (F9): anonymous agreement histogram per class + day ──
+//
+// One counter doc per (day, decile bucket 0–10). "You 9/10, class median 6."
+
+const dailyCol = (code: string) => collection(db, 'chairCohorts', codeId(code), 'daily');
+
+/** Add one submission to the class histogram for the day (best-effort). */
+export async function submitDailyBucket(code: string, day: string, bucket: number): Promise<void> {
+  const c = code.trim();
+  const b = Math.max(0, Math.min(10, Math.round(bucket)));
+  if (!c || !day) return;
+  try {
+    await setDoc(
+      doc(dailyCol(c), `${day}-b${b}`),
+      { day, bucket: b, n: increment(1) },
+      { merge: true },
+    );
+  } catch (err) {
+    console.error('[Chair] daily duel submit failed:', err);
+  }
+}
+
+/** The day's histogram as an 11-slot array (bucket 0–10 → count). */
+export async function fetchDailyHistogram(code: string, day: string): Promise<number[]> {
+  const c = code.trim();
+  const out = new Array<number>(11).fill(0);
+  if (!c || !day) return out;
+  try {
+    const snap = await getDocs(query(dailyCol(c), where('day', '==', day)));
+    snap.forEach(d => {
+      const data = d.data() as { bucket?: number; n?: number };
+      if (typeof data.bucket === 'number' && data.bucket >= 0 && data.bucket <= 10) {
+        out[data.bucket] = data.n ?? 0;
+      }
+    });
+    return out;
+  } catch {
+    return out;
+  }
+}
+
+/** Class median agreement (0–10) from a histogram, or null when empty. */
+export function histogramMedian(hist: number[]): number | null {
+  const total = hist.reduce((a, b) => a + b, 0);
+  if (total === 0) return null;
+  let seen = 0;
+  for (let b = 0; b < hist.length; b++) {
+    seen += hist[b];
+    if (seen * 2 >= total) return b;
+  }
+  return null;
 }
 
 /** Live-subscribe to a class code's aggregate. Calls back with the current
