@@ -602,26 +602,26 @@ const Viewer: React.FC<ViewerProps> = ({
   /** Resume a saved loop place — same warm-up as startLoop, but the index and
    *  the wall clock pick up where the student left off. */
   const resumeLoop = useCallback(() => {
-    setResumePlace(place => {
-      if (!place) return place;
-      ensureAnswerMap();
-      setSelfMarkOn(true);
-      setAnswersOn(true);
-      if (scheme && !sessions.current.scheme.pdf && !sessions.current.scheme.task) load('scheme');
-      setSide('paper');
-      setLoopDone(false);
-      setReceiptSaved(false);
-      loopStartedAtRef.current = Date.now() - place.elapsedSec * 1000;
-      if (storageNs) clearLoopPlace(storageNs);
-      setPlaceSavedNote(false);
-      // If the map is already in, clamp against its live length (the saved
-      // total guards most drift; a re-generated shorter map is the edge case).
-      const liveTotal = answerMapRef.current?.q.length;
-      const idx = liveTotal ? Math.min(place.idx, liveTotal - 1) : place.idx;
-      setLoop({ idx, qStartTs: Date.now() });
-      return null;
-    });
-  }, [ensureAnswerMap, scheme, load, storageNs]);
+    const place = resumePlace;
+    if (!place) return;
+    ensureAnswerMap();
+    setSelfMarkOn(true);
+    setAnswersOn(true);
+    if (scheme && !sessions.current.scheme.pdf && !sessions.current.scheme.task) load('scheme');
+    setSide('paper');
+    setLoopDone(false);
+    setReceiptSaved(false);
+    loopStartedAtRef.current = Date.now() - place.elapsedSec * 1000;
+    if (storageNs) clearLoopPlace(storageNs);
+    setPlaceSavedNote(false);
+    // If the map is already in, clamp against its live length (the saved
+    // total guards most drift; a re-generated shorter map is the edge case —
+    // the clamp effect below covers a map that arrives after this tap).
+    const liveTotal = answerMapRef.current?.q.length;
+    const idx = liveTotal ? Math.min(place.idx, liveTotal - 1) : place.idx;
+    setLoop({ idx, qStartTs: Date.now() });
+    setResumePlace(null);
+  }, [resumePlace, ensureAnswerMap, scheme, load, storageNs]);
 
   /** The mid-loop exit path (the ✕ on the loop bar): save the place quietly. */
   const exitLoopSavingPlace = useCallback(() => {
