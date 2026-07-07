@@ -67,11 +67,14 @@ N_QUESTIONS = 7       # Section 1 Q1–Q3 + Section 2 Q4–Q7, every verified ye
 TOPICS = "abcde"      # Q7's five choose-two topics, every verified year
 MAX_REGION_PAGES = 5  # widest real region is Q1 (scheme pp.4–7)
 
-# `Section 1  Q1.` / `Q1.` / `Section 2  Q7 (a) Computer Aided Design (CAD)`
+# `Section 1  Q1.` / `Q1.` / `Section 2  Q7 (a) Computer Aided Design (CAD)`.
+# The topic name may be an empty tail: some years (2013) emit it as a separate
+# same-y text line, recovered by same_y_name().
 MARK_RE = re.compile(
     r"^(?:Section\s+(\d)\s+)?Q\.?\s*(\d{1,2})\s*"
-    r"(?:\.\s*$|\(([a-z])\)\s*(.+)$)"
+    r"(?:\.\s*$|\(([a-z])\)\s*(.*)$)"
 )
+MARKS_RE = re.compile(r"^\d{1,3}\s*marks?$", re.I)
 JUNK_RE = re.compile(r"^(?:Page\s+\d+\s+of\s+\d+|\d{1,3}(?:\s+Blank\s+Page)?)$", re.I)
 
 
@@ -98,6 +101,15 @@ def norm_topic(s):
     return re.sub(r"[^a-z0-9]+", " ", s.lower()).strip()
 
 
+def same_y_name(lines, marker_y, marker_x):
+    """Topic name emitted as its own text line (2013): the non-marks line
+    sitting on the marker's row, right of the marker."""
+    cands = [t for t, x, y in lines
+             if abs(y - marker_y) < 0.008 and x > marker_x
+             and not MARKS_RE.match(t) and not MARK_RE.match(t)]
+    return cands[0] if len(cands) == 1 else None
+
+
 def walk(doc):
     """Linear walk → validated anchors, or (None, err).
 
@@ -107,13 +119,19 @@ def walk(doc):
     qn = 0            # questions accepted so far
     topics = []       # letters accepted so far
     for pi in range(len(doc)):
-        for t, x, y in lines_with_pos(doc[pi]):
+        page_lines = lines_with_pos(doc[pi])
+        for t, x, y in page_lines:
             if x >= MARK_X:
                 continue
             m = MARK_RE.match(t)
             if not m:
                 continue
             sec, n, letter, name = m.group(1), int(m.group(2)), m.group(3), m.group(4)
+            if letter is not None and not (name or "").strip():
+                name = same_y_name(page_lines, y, x)
+                if name is None:
+                    return None, None, f"topic ({letter}) p{pi + 1}: name not found"
+                t = f"{t} {name}"
             if letter is None:
                 if n != qn + 1:
                     return None, None, f"Q{n} after Q{qn} (expected Q{qn + 1})"
