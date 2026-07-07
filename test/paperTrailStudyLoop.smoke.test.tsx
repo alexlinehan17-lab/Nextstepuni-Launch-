@@ -68,8 +68,8 @@ describe('Paper Trail — progress dashboard', () => {
 
     expect(screen.queryByText(/Nothing to show yet/i)).not.toBeInTheDocument();
     expect(screen.getByText(/Accuracy by subject/i)).toBeInTheDocument();
-    // The careless gap shows under "Where you lose marks" (bar label + nudge).
-    expect(screen.getByText(/Where you lose marks/i)).toBeInTheDocument();
+    // The careless gap shows under the error autopsy (bar label + nudge).
+    expect(screen.getByText(/why your marks die/i)).toBeInTheDocument();
     expect(screen.getAllByText(/Careless slips/i).length).toBeGreaterThan(0);
   });
 });

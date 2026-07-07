@@ -42,6 +42,7 @@ import { cardStats } from './flashcardStore';
 import { focusStats } from './focusStore';
 import { loadSet } from './mockSetStore';
 import { allMarks } from './attemptStore';
+import { composeCoach } from './coach';
 import { pendingMilestones, acknowledgeMilestone, type Milestone } from './milestones';
 import { paperAnswersPath, paperStoragePath, paperUrl, prettyBytes } from './storage';
 import {
@@ -161,6 +162,8 @@ interface PaperTrailProps {
   /** Subject name → chosen level, from the subject profile. */
   studentLevels?: { name: string; level: string }[];
   studentCycle?: 'junior-cycle' | 'leaving-cert';
+  /** Cross-tool routing (error autopsy) — opens another Launchpad tool by id. */
+  onOpenTool?: (toolId: string) => void;
 }
 
 const PaperTrail: React.FC<PaperTrailProps> = ({
@@ -168,6 +171,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   studentSubjects,
   studentLevels,
   studentCycle,
+  onOpenTool,
 }) => {
   const { state, isLoaded, recordRecent, updatePage, setFilters } = usePaperFinder(uid);
   const junior = studentCycle === 'junior-cycle';
@@ -500,6 +504,12 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
         subjectLabel={id => displayName(subjectById.get(id)?.name ?? id)}
         onDrill={openCrossYear}
         onBack={() => setView({ v: 'home' })}
+        onRoute={route => {
+          if (route === 'timed') setView({ v: 'mock' });
+          else if (route === 'drill') setView({ v: 'revise' });
+          else if (route === 'reflex') onOpenTool?.('command-word-reflex');
+          else if (route === 'chair') onOpenTool?.('examiners-chair');
+        }}
       />
     );
   }
@@ -762,6 +772,8 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   const activeMock = loadSet(uid);
   const cardsInfo = cardStats(uid, Date.now());
   const focus = focusStats(uid, Date.now());
+  // The Coach — tonight's session, composed across every tool's signals.
+  const coachPlan = composeCoach(uid, Date.now());
   // First-run coach: a live checklist that ticks as the student works the loop.
   const coachSteps = [
     { label: 'Open any paper beside its official marking scheme.', done: recents.length > 0 },
@@ -829,6 +841,42 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
 
       {/* First-run coach — a live checklist of the loop; retires once it's running. */}
       <FirstRunCoach uid={uid} steps={coachSteps} />
+
+      {/* The Coach — "your next 20 minutes", composed across every tool's signals. */}
+      {coachPlan.length > 0 && (
+        <section className="rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3.5 mb-6">
+          <div className="flex items-baseline justify-between mb-2.5">
+            <h3 className="text-[15px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>
+              Your next {coachPlan.reduce((a, i) => a + i.minutes, 0)} minutes
+            </h3>
+            <span className="text-[10.5px] font-bold uppercase tracking-[0.12em]" style={{ color: '#9e9186' }}>The Coach</span>
+          </div>
+          <div className="space-y-1.5">
+            {coachPlan.map((item, i) => (
+              <button
+                key={item.id}
+                onClick={() => {
+                  if (item.route === 'chair') onOpenTool?.('examiners-chair');
+                  else setView({ v: item.route });
+                }}
+                className="w-full flex items-center gap-3 rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 px-3 py-2.5 text-left transition-transform active:translate-y-0.5 hover:border-[#F26B1F]"
+              >
+                <span
+                  className="shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[13px] font-bold text-white"
+                  style={{ backgroundColor: '#F26B1F', fontFamily: "'Source Serif 4', serif" }}
+                >
+                  {i + 1}
+                </span>
+                <span className="flex-1 min-w-0">
+                  <span className="block text-[13.5px] font-semibold truncate" style={{ color: '#1a1a1a' }}>{item.title}</span>
+                  <span className="block text-[11.5px] leading-snug" style={{ color: '#7a7068' }}>{item.sub}</span>
+                </span>
+                <span className="shrink-0 text-[11px] tabular-nums" style={{ color: '#9e9186' }}>~{item.minutes}m</span>
+              </button>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Study launcher — Revise / Review / Mock / Cards (A1/A2/B1/E6). */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 mb-6">

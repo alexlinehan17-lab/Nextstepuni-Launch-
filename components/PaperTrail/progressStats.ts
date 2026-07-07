@@ -40,6 +40,10 @@ export interface ProgressStats {
   subjects: SubjectAccuracy[];
   weakestTopics: WeakTopic[];
   gaps: Record<GapKind, number>;
+  /** Percentage points LOST per tagged gap (marks-weighted, not just counts) —
+   *  the "error autopsy": a single 0/10 timing collapse outweighs three tiny
+   *  careless nicks, and the split should say so. */
+  gapLoss: Record<GapKind, number>;
   deck: DeckStats;
   streak: StreakSummary;
 }
@@ -49,6 +53,7 @@ const ZERO_GAPS = (): Record<GapKind, number> => ({ content: 0, process: 0, care
 export function computeProgress(uid: string | undefined, now: number): ProgressStats {
   const marks = allMarks(uid);
   const gaps = ZERO_GAPS();
+  const gapLoss = ZERO_GAPS();
   const papers = new Set<string>();
   const bySubject = new Map<string, { sum: number; n: number }>();
   const byTopic = new Map<string, { subjectId: string; subtopicId: string; sum: number; n: number }>();
@@ -57,7 +62,10 @@ export function computeProgress(uid: string | undefined, now: number): ProgressS
   for (const m of marks) {
     const pct = m.max ? (m.score / m.max) * 100 : m.score;
     sum += pct;
-    if (m.gap) gaps[m.gap]++;
+    if (m.gap) {
+      gaps[m.gap]++;
+      gapLoss[m.gap] += Math.max(0, 100 - pct);
+    }
     papers.add(`${m.subjectId}|${m.year}|${m.level}|${m.lang}|${m.fileid}`);
 
     const s = bySubject.get(m.subjectId) ?? { sum: 0, n: 0 };
@@ -91,6 +99,7 @@ export function computeProgress(uid: string | undefined, now: number): ProgressS
     subjects,
     weakestTopics,
     gaps,
+    gapLoss,
     deck: deckStats(uid, now),
     streak: getStreak(uid, now),
   };

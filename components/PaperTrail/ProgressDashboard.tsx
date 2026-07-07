@@ -35,6 +35,15 @@ const GAP_NUDGE: Record<GapKind, string> = {
   timing: 'Practise against the clock (Exam mode).',
 };
 
+/** Error autopsy: each loss cause routes to the tool that actually fixes it. */
+export type AutopsyRoute = 'drill' | 'reflex' | 'chair' | 'timed';
+const GAP_ROUTE: Record<GapKind, { route: AutopsyRoute; cta: string }> = {
+  content: { route: 'drill', cta: 'Drill the weak topic' },
+  process: { route: 'reflex', cta: 'Train question-reading' },
+  careless: { route: 'chair', cta: 'Train slip-spotting' },
+  timing: { route: 'timed', cta: 'Practise on the clock' },
+};
+
 /** Accuracy → token colour: red is never used; healthy is success, below is accent. */
 const accColour = (avg: number) => (avg >= 66 ? SUCCESS : ACCENT);
 
@@ -44,6 +53,8 @@ interface Props {
   subjectLabel: (id: string) => string;
   onDrill: (t: TopicSibling) => void;
   onBack: () => void;
+  /** Error-autopsy routing — opens the tool that fixes each loss cause. */
+  onRoute?: (route: AutopsyRoute) => void;
 }
 
 const Stat: React.FC<{ icon: React.ReactNode; value: string; label: string }> = ({ icon, value, label }) => (
@@ -54,7 +65,7 @@ const Stat: React.FC<{ icon: React.ReactNode; value: string; label: string }> = 
   </div>
 );
 
-const ProgressDashboard: React.FC<Props> = ({ uid, now, subjectLabel, onDrill, onBack }) => {
+const ProgressDashboard: React.FC<Props> = ({ uid, now, subjectLabel, onDrill, onBack, onRoute }) => {
   const p = useMemo(() => computeProgress(uid, now), [uid, now]);
   const mastered = useMemo(() => masteredCount(uid), [uid, now]);
 
@@ -159,23 +170,44 @@ const ProgressDashboard: React.FC<Props> = ({ uid, now, subjectLabel, onDrill, o
             </section>
           )}
 
-          {/* Where marks are lost */}
+          {/* The error autopsy — WHY marks die, weighted by how much each cause cost */}
           {gapTotal > 0 && (
             <section className="mb-2">
-              <h3 className="text-[11px] font-bold uppercase tracking-[0.12em] mb-2.5" style={{ color: '#9e9186' }}>Where you lose marks</h3>
+              <h3 className="text-[11px] font-bold uppercase tracking-[0.12em] mb-1" style={{ color: '#9e9186' }}>The autopsy — why your marks die</h3>
+              <p className="text-[11.5px] mb-2.5" style={{ color: '#7a7068' }}>
+                Weighted by marks lost, not just how often — and each cause has a fix.
+              </p>
               <div className="space-y-2">
-                {(Object.entries(p.gaps) as [GapKind, number][])
-                  .filter(([, c]) => c > 0)
+                {(Object.entries(p.gapLoss) as [GapKind, number][])
+                  .filter(([g]) => p.gaps[g] > 0)
                   .sort((a, b) => b[1] - a[1])
-                  .map(([g, c]) => (
-                    <div key={g} className="flex items-center gap-3">
-                      <span className="w-28 shrink-0 text-[12.5px] font-medium truncate" style={{ color: INK }}>{GAP_LABEL[g]}</span>
-                      <span className="flex-1 h-2.5 rounded-full overflow-hidden" style={{ backgroundColor: '#e0dbd4' }}>
-                        <span className="block h-full rounded-full" style={{ width: `${Math.round((c / gapTotal) * 100)}%`, backgroundColor: ACCENT }} />
-                      </span>
-                      <span className="w-10 shrink-0 text-right text-[12px] tabular-nums" style={{ color: '#7a7068' }}>{c}×</span>
-                    </div>
-                  ))}
+                  .map(([g, loss]) => {
+                    const lossTotal = Object.values(p.gapLoss).reduce((a, b) => a + b, 0) || 1;
+                    const share = Math.round((loss / lossTotal) * 100);
+                    const r = GAP_ROUTE[g];
+                    return (
+                      <div key={g} className="rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3 py-2.5">
+                        <div className="flex items-center gap-3">
+                          <span className="w-28 shrink-0 text-[12.5px] font-semibold truncate" style={{ color: INK }}>{GAP_LABEL[g]}</span>
+                          <span className="flex-1 h-2.5 rounded-full overflow-hidden" style={{ backgroundColor: '#e0dbd4' }}>
+                            <span className="block h-full rounded-full" style={{ width: `${share}%`, backgroundColor: ACCENT }} />
+                          </span>
+                          <span className="w-14 shrink-0 text-right text-[12px] tabular-nums" style={{ color: '#7a7068' }}>
+                            <b style={{ color: INK }}>{share}%</b> · {p.gaps[g]}×
+                          </span>
+                        </div>
+                        {onRoute && (
+                          <button
+                            onClick={() => onRoute(r.route)}
+                            className="mt-1.5 inline-flex items-center gap-1 text-[12px] font-semibold"
+                            style={{ color: ACCENT }}
+                          >
+                            {r.cta} <ArrowRight size={13} />
+                          </button>
+                        )}
+                      </div>
+                    );
+                  })}
               </div>
               {topGap && (
                 <p className="mt-3 text-[11.5px]" style={{ color: '#5a5550' }}>
