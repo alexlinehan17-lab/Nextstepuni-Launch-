@@ -686,3 +686,27 @@ are **anonymous by construction**. Design invariants, enforced by
   student's own "Send to class" / "Compare with your class" tap (focus
   presence broadcasts only while a session is actively running with a class
   code set, and stops with it).
+
+## Product features & their evidence basis (2026-07-07)
+
+The July feature wave makes NO new research or marking claims; each feature is
+bookkeeping over data the student generated, or over rules already verified in
+this dossier:
+
+- **The Coach / Sunday Debrief / Error Autopsy** — pure composition over the
+  student's own recorded practice (self-marks, reviews, focus minutes,
+  calibration results). Copy is descriptive ("your measured accuracy",
+  "marks you tagged as lost to the clock"); no outcome or prediction claims.
+- **Marker's Licence** — restates the tool's existing calibration metric
+  (agreement with verified SEC keys) as a label on self-marks; it asserts
+  nothing beyond that measured agreement, and requires 3+ sessions before
+  showing at all.
+- **Syllabus X-Ray ROI** — joins historical marks-per-topic (filed papers)
+  with the student's measured accuracy; framed strictly as "historically
+  carried X marks" + "your accuracy so far", never "will appear".
+- **Handwriting-speed budgets** — the student's own timed drill scales
+  guidance already derived from published exam durations; labelled
+  "personalised to your writing speed", clamped, and absent until measured.
+- **Class features** — see "Class-layer data protection" above; the teacher
+  one-pager (pilotKit.ts) repeats the privacy guarantee and the content-
+  honesty note verbatim and is unit-tested to keep carrying them.
