@@ -35,15 +35,15 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "irish-0-1",
-            "name": "Aithris Filiochta (Poetry Reading"
+            "name": "Aithris Filíochta (Poetry Reading)"
           },
           {
             "id": "irish-0-2",
-            "name": "Sraith Pictiur (Picture Sequence"
+            "name": "Sraith Pictiúr (Picture Sequence)"
           },
           {
             "id": "irish-0-3",
-            "name": "Comhra Ginearalta (General Conversation"
+            "name": "Comhrá Ginearálta (General Conversation)"
           },
           {
             "id": "irish-0-4",
@@ -4289,7 +4289,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "computer-science-2-10",
-            "name": "Computational Thinking Coursework Project (SEC-assessed"
+            "name": "Computational Thinking Coursework Project (SEC-assessed)"
           }
         ]
       }
