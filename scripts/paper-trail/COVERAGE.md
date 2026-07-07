@@ -163,10 +163,15 @@ Agriculture / Horticulture, Childcare / Community Care, Crafts & Design, English
 
 ### 🔧 Bespoke grammar needed (7) — deferred (wrong-answer risk if rushed)
 - Active Leisure Studies — needs per-subject grammar
-- Engineering — moved from ⛔: the "visual/drawing" record was WRONG (checked 2026-07-07, 2025 EV scheme + paper). LCA
-  Engineering is a WRITTEN exam (240 marks) whose scheme is an answered copy of the paper — Section 1 Q1–Q3 short
-  answers, Section 2 Q4–Q7 structured questions with per-question text answers and matching "QN." markers on both
-  sides. Feasible; needs its own generator run + per-paper QA (~11 EV papers)
+- Engineering — ✅ sidecars ready (CV2 wave 2026-07-07, `lca_engineering.py`: ALL 14 EV scheme years
+  2011–2019 + 2021–2025, 12 chips each = 168 regions; manifest `publish/cv2-upload.tsv`). The old "visual/drawing"
+  record was WRONG — it is a WRITTEN 240-mark exam whose scheme is an answered copy of the paper: Section 1 Q1–Q3,
+  Section 2 Q4–Q7, plus Q7's five choose-two topic pages "Q7 (a)"–"Q7 (e)" mapped as labelled chips (n=8–12). The
+  page grammar is identical every year ("Section N  Qn." fused marker lines; 2025 splits them, 2013 splits the
+  topic name — both handled); count reconcile = exact Q1..Q7 + topics (a)..(e) on both sides with topic-NAME
+  string match, else drop. QA: per-chip paper↔crop text echo matches on all 168 chips; `verify_all.py LB836`
+  = OK=168 MISMATCH=0 NOMARK=0. Drops: none (2010 has no scheme, 2020 not sat — not in scope). IV papers have
+  no scheme pair
 - Graphics And Construction Studies — project marking-criteria, not per-Q
 - Mathematical Applications — page-header framing
 - Social Education — Q15->Q12 mismatch
