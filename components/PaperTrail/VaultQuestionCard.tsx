@@ -43,8 +43,7 @@ const fetchAnswerMap = (url: string): Promise<PaperAnswerMap | null> => {
 };
 
 type CardState =
-  | { s: 'idle' }
-  | { s: 'loading' }
+  | { s: 'idle' } // idle = not started OR in flight — both render the skeleton
   | { s: 'ready'; pdf: PDFDocumentProxy; q: PaperAnswerQuestion; region: NonNullable<ReturnType<typeof paperRegionFor>>; schemeUrl: string | null }
   | { s: 'fallback' };
 
@@ -81,8 +80,10 @@ const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, on
   useEffect(() => {
     if (!visible || state.s !== 'idle') return;
     if (!resolved) { setState({ s: 'fallback' }); return; }
+    // NB: no intermediate "loading" setState here — state.s is in the deps, so
+    // a self-triggered transition re-runs this effect and its cleanup would
+    // cancel the in-flight load. The skeleton renders for 'idle' anyway.
     let cancelled = false;
-    setState({ s: 'loading' });
     (async () => {
       const map = await fetchAnswerMap(resolved.answersUrl);
       if (cancelled) return;
