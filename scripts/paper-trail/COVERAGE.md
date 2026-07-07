@@ -204,8 +204,15 @@ years (fused 'Question1' token + x-jitter were the real blockers); LCA
 Engineering complete (14 years); LCA Spanish, Estonian complete (15 years
 each); Mandarin written papers, JC French, JC Italian complete.
 
-OPEN: Arabic remaining years (~25 papers beyond the three committed) — the
-mapping run was interrupted by a session limit mid-QA and, per the honesty
-bar, nothing un-QA'd ships; resume with the P2-C explicit-fraction specs.
+CLOSED 2026-07-07: Arabic complete. OL (GLP) 2010–2019 + 2021/22/24/25 (14
+years; 2020 has no OL scheme in the corpus) and HL (ALP) 2010–2023 (14
+years) all mapped and QA'd — dual programmatic checks (scheme-side English
+question-word sets, paper-side Arabic-Indic numeral anchors) plus render
+verification; scanned 2010/2011 papers verified visually. 28 new sidecars,
+491 questions, 0 dropped. verify_all.py gained a documented LC059 clearing
+rule (strict spelled-number header lines like "Seven" / "*Nine ب" count as
+the question marker; the boxes' numbered indicative-material lists were
+false Q1 matches). Essay questions excluded by design (generic marking
+grid, matching the committed 2023–2025 pilots).
 Ship step for everything above: publish/cv1|cv2|cv3-upload.tsv + profiles +
-index rebuild (task-tracked).
+index rebuild (task-tracked, user-side).

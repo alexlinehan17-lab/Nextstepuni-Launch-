@@ -65,6 +65,30 @@ def first_marker(txt):
 
 LABEL_NUM = re.compile(r"(?:Q|Question|Ceist)\.?\s*(\d{1,2})", re.I)
 
+NUMWORDS = ["one", "two", "three", "four", "five", "six", "seven", "eight",
+            "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen"]
+WORDLINE = re.compile(
+    r"^\*?\s*(" + "|".join(NUMWORDS) + r")\b[^a-z]*$", re.I)
+
+
+def word_header_numbers(txt):
+    """Question numbers from strict spelled-number header lines, e.g. 'Seven',
+    'eight', '*Nine ب'.
+
+    The Arabic HL/OL scheme family (LC059) heads each answer box with the
+    spelled-out English number word (optionally followed by an Arabic part
+    letter) instead of 'Question N', while the box CONTENT is a numbered
+    indicative-material list ('1. ...') that first_marker misreads as Q1.
+    A full line consisting solely of a number word (no other latin text) is
+    strong evidence the crop belongs to that question, so a mismatching crop
+    whose expected number appears as such a header is cleared as OK."""
+    out = set()
+    for raw in txt.splitlines():
+        m = WORDLINE.match(delig(raw.strip()))
+        if m:
+            out.add(NUMWORDS.index(m.group(1).lower()) + 1)
+    return out
+
 
 def label_number(q):
     """Printed question number carried by a section-restart `label`, or None.
@@ -121,6 +145,8 @@ def main():
                     line0 = " ".join(t.strip() for t in delig(txt).splitlines() if t.strip())[:60]
                     nomarks.append(f"  NOMARK  {code} Q{n} p{seg0['p']}: {line0}")
                 elif fm == n or (ln_expect is not None and fm == ln_expect):
+                    n_ok += 1
+                elif n in (wn := word_header_numbers(txt)) or (ln_expect is not None and ln_expect in wn):
                     n_ok += 1
                 else:
                     n_mis += 1
