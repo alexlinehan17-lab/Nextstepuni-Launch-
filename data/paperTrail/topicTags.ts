@@ -6,7 +6,7 @@
  * scripts/paper-trail/topic-tags/build-tags.mjs from the verified per-subject
  * wave files. DO NOT hand-edit — edit the wave file + regenerate.
  *
- * Coverage: accounting, agricultural-economics, agricultural-science, ancient-greek, applied-mathematics, arabic, art, biology, bulgarian, business, chemistry, classical-studies, computer-science, construction-studies, croatian, czech, danish, design-and-communication-graphics, dutch, economics, engineering, english, estonian, finnish, french, geography, german, history, history-early-modern, home-economics-s-and-s, hungarian, irish, italian, japanese, jc-applied-technology, jc-business-studies, jc-classics, jc-engineering, jc-english, jc-french, jc-geography, jc-german, jc-history, jc-home-economics, jc-irish, jc-irish-t1, jc-italian, jc-jewish-studies, jc-mathematics, jc-music, jc-religious-education, jc-science, jc-spanish, jc-wood-technology, latin, latvian, lca-active-leisure-studies, lca-agriculture-horticulture, lca-childcare-community-care, lca-crafts-and-design, lca-engineering, lca-english-and-communications, lca-french, lca-gaeilge-chumarsaideach, lca-german, lca-graphics-and-construction-studies, lca-hair-and-beauty, lca-hotel-catering-and-tourism, lca-information-and-communication-tech, lca-italian, lca-mathematical-applications, lca-office-admin-and-customer, lca-sign-language, lca-social-education, lca-spanish, lca-technology, link-modules, lithuanian, maltese, mandarin-chinese, mathematics, modern-greek, music, physical-education, physics, physics-and-chemistry, polish, politics-and-society, portuguese, religious-education, romanian, russian, slovakian, slovenian, spanish, swedish, technology, ukrainian — 1713 papers, 17577 questions.
+ * Coverage: accounting, agricultural-economics, agricultural-science, ancient-greek, applied-mathematics, arabic, art, biology, bulgarian, business, chemistry, classical-studies, computer-science, construction-studies, croatian, czech, danish, design-and-communication-graphics, dutch, economics, engineering, english, estonian, finnish, french, geography, german, history, history-early-modern, home-economics-s-and-s, hungarian, irish, italian, japanese, jc-applied-technology, jc-business-studies, jc-classics, jc-engineering, jc-english, jc-french, jc-geography, jc-german, jc-history, jc-home-economics, jc-irish, jc-irish-t1, jc-italian, jc-jewish-studies, jc-mathematics, jc-music, jc-religious-education, jc-science, jc-spanish, jc-wood-technology, latin, latvian, lca-active-leisure-studies, lca-agriculture-horticulture, lca-childcare-community-care, lca-crafts-and-design, lca-engineering, lca-english-and-communications, lca-french, lca-gaeilge-chumarsaideach, lca-german, lca-graphics-and-construction-studies, lca-hair-and-beauty, lca-hotel-catering-and-tourism, lca-information-and-communication-tech, lca-italian, lca-mathematical-applications, lca-office-admin-and-customer, lca-sign-language, lca-social-education, lca-spanish, lca-technology, link-modules, lithuanian, maltese, mandarin-chinese, mathematics, modern-greek, music, physical-education, physics, physics-and-chemistry, polish, politics-and-society, portuguese, religious-education, romanian, russian, slovakian, slovenian, spanish, swedish, technology, ukrainian — 1949 papers, 20124 questions.
  */
 
 import { type PaperTopicTags } from '../../types/paperTrailTopics';
@@ -17,6 +17,7 @@ export const TOPIC_LABELS: Record<string, string> = {
   "accounting-2-3": "Suspense Accounts",
   "accounting-2-4": "Correction of Errors",
   "accounting-2-5": "Depreciation & Revaluation of Fixed Assets",
+  "accounting-2-6": "Tabular Statements",
   "accounting-3-1": "Sole Trader Final Accounts",
   "accounting-4-0": "Share Capital, Reserves and Loans",
   "accounting-4-1": "Company Final Accounts",
@@ -99,6 +100,7 @@ export const TOPIC_LABELS: Record<string, string> = {
   "art-2-0": "3.1 Analysis",
   "art-2-1": "3.2 Contextual Enquiries",
   "art-2-2": "3.3 Impact and Value",
+  "art-2-3": "3.4 Critical and Personal Reflection",
   "art-3-0": "Context",
   "art-3-1": "Artists and Artworks",
   "art-3-2": "Analysis",
@@ -441,6 +443,7 @@ export const TOPIC_LABELS: Record<string, string> = {
   "geography-0-0": "Plate Tectonics (The Tectonic Cycle)",
   "geography-0-1": "The Rock Cycle",
   "geography-0-10": "The Sea (Coastal Processes & Landforms)",
+  "geography-0-11": "Glaciation (Glacial Processes & Landforms)",
   "geography-0-2": "Folding & Faulting (Geological Structures)",
   "geography-0-3": "Karst Landscapes (Rock Characteristics)",
   "geography-0-4": "Surface Processes (General)",
@@ -522,6 +525,7 @@ export const TOPIC_LABELS: Record<string, string> = {
   "home-economics-2-3": "Older People & the Family (Care Provision)",
   "hungarian-0-0": "Vocabulary & expressions in context",
   "hungarian-0-1": "Comprehension & discussion of the set text",
+  "irish-1-3": "Tuiscint Éisteachta",
   "irish-3-0": "Léamhthuiscint A",
   "irish-3-1": "Léamhthuiscint B",
   "irish-3-3": "Cruinneas Teanga (Grammar within Léamhthuiscint B)",
@@ -906,12 +910,21 @@ export const TOPIC_LABELS: Record<string, string> = {
   "mathematics-4-1": "Calculus",
   "modern-greek-0-0": "Vocabulary & expressions in context",
   "modern-greek-0-1": "Comprehension & discussion of the set text",
+  "music-0-5": "Aural Memory Test",
   "music-1-10": "Melody: Continuation of a Given Opening",
   "music-1-11": "Melody: Setting Music to a Given Text",
   "music-1-12": "Melody: Composing to a Given Dance Rhythm or Metre",
   "music-1-13": "Harmony: Adding Bass and Chords to a Tune",
   "music-1-14": "Harmony: Composing Melody and Bass from Chords",
   "music-1-15": "Harmony: Adding a Countermelody/Descant and Chords",
+  "music-2-0": "Prescribed Works (Set Works)",
+  "music-2-10": "Set Work: Berlioz — Symphonie Fantastique",
+  "music-2-11": "Set Work: Deane — Seachanges (with Danse Macabre)",
+  "music-2-12": "Set Work: The Beatles — Sgt. Pepper's Lonely Hearts Club Band",
+  "music-2-2": "Irish Traditional Music",
+  "music-2-3": "Aural Skills: Notation",
+  "music-2-4": "Aural: Melody, Rhythm and Timbre",
+  "music-2-9": "Set Work: Mozart — Piano Concerto No. 23",
   "physical-education-0-1": "1.1 Defining a Skilled Performance",
   "physical-education-0-10": "2.6 Designing a Fitness Plan",
   "physical-education-0-11": "2.7 Psychological Preparation",
@@ -1103,7 +1116,9 @@ export const TOPIC_LABELS: Record<string, string> = {
   "religious-education-0-2": "2.1 The Language of Symbol",
   "religious-education-0-3": "2.2 The Tradition of Response",
   "religious-education-0-4": "3.1 The Gods of the Ancients",
+  "religious-education-0-5": "3.2 The Concept of Revelation",
   "religious-education-0-6": "3.3 Naming God, Past and Present",
+  "religious-education-0-7": "4.1 Religion and Communal Values",
   "romanian-0-0": "Vocabulary & expressions in context",
   "romanian-0-1": "Comprehension & discussion of the set text",
   "russian-3-0": "Comprehension — Reading Text with Questions in English",
@@ -1185,6 +1200,204 @@ export const TOPIC_LABELS: Record<string, string> = {
 };
 
 export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
+ {
+  "subjectId": "accounting",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2020,
+  "fileid": "LC032ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "accounting-3-1"
+   },
+   {
+    "n": "2",
+    "primary": "accounting-4-2",
+    "secondary": "accounting-4-1"
+   },
+   {
+    "n": "3",
+    "primary": "accounting-6-1",
+    "secondary": "accounting-6-0"
+   },
+   {
+    "n": "4",
+    "primary": "accounting-5-4"
+   },
+   {
+    "n": "5",
+    "primary": "accounting-8-1",
+    "secondary": "accounting-8-8"
+   },
+   {
+    "n": "6",
+    "primary": "accounting-2-4",
+    "secondary": "accounting-2-3"
+   },
+   {
+    "n": "7",
+    "primary": "accounting-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "accounting-9-3",
+    "secondary": "accounting-9-2"
+   },
+   {
+    "n": "9",
+    "primary": "accounting-9-6",
+    "secondary": "accounting-9-7"
+   }
+  ]
+ },
+ {
+  "subjectId": "accounting",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2020,
+  "fileid": "LC032ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "accounting-3-1"
+   },
+   {
+    "n": "2",
+    "primary": "accounting-4-2",
+    "secondary": "accounting-4-1"
+   },
+   {
+    "n": "3",
+    "primary": "accounting-6-1",
+    "secondary": "accounting-6-0"
+   },
+   {
+    "n": "4",
+    "primary": "accounting-5-4"
+   },
+   {
+    "n": "5",
+    "primary": "accounting-8-1",
+    "secondary": "accounting-8-8"
+   },
+   {
+    "n": "6",
+    "primary": "accounting-2-4",
+    "secondary": "accounting-2-3"
+   },
+   {
+    "n": "7",
+    "primary": "accounting-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "accounting-9-3",
+    "secondary": "accounting-9-2"
+   },
+   {
+    "n": "9",
+    "primary": "accounting-9-6",
+    "secondary": "accounting-9-7"
+   }
+  ]
+ },
+ {
+  "subjectId": "accounting",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC032ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "accounting-4-1"
+   },
+   {
+    "n": "2",
+    "primary": "accounting-2-2"
+   },
+   {
+    "n": "3",
+    "primary": "accounting-2-5"
+   },
+   {
+    "n": "4",
+    "primary": "accounting-2-6"
+   },
+   {
+    "n": "5",
+    "primary": "accounting-8-1",
+    "secondary": "accounting-8-8"
+   },
+   {
+    "n": "6",
+    "primary": "accounting-5-2"
+   },
+   {
+    "n": "7",
+    "primary": "accounting-7-5"
+   },
+   {
+    "n": "8",
+    "primary": "accounting-9-2"
+   },
+   {
+    "n": "9",
+    "primary": "accounting-9-7"
+   }
+  ]
+ },
+ {
+  "subjectId": "accounting",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2019,
+  "fileid": "LC032ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "accounting-4-1"
+   },
+   {
+    "n": "2",
+    "primary": "accounting-2-2"
+   },
+   {
+    "n": "3",
+    "primary": "accounting-2-5"
+   },
+   {
+    "n": "4",
+    "primary": "accounting-2-6"
+   },
+   {
+    "n": "5",
+    "primary": "accounting-8-1",
+    "secondary": "accounting-8-8"
+   },
+   {
+    "n": "6",
+    "primary": "accounting-5-2"
+   },
+   {
+    "n": "7",
+    "primary": "accounting-7-5"
+   },
+   {
+    "n": "8",
+    "primary": "accounting-9-2"
+   },
+   {
+    "n": "9",
+    "primary": "accounting-9-7"
+   }
+  ]
+ },
  {
   "subjectId": "accounting",
   "level": "ordinary",
@@ -1333,6 +1546,152 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  },
  {
   "subjectId": "accounting",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2018,
+  "fileid": "LC032ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "accounting-4-1",
+    "secondary": "accounting-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "accounting-2-5"
+   },
+   {
+    "n": "3",
+    "primary": "accounting-6-1",
+    "secondary": "accounting-6-0"
+   },
+   {
+    "n": "4",
+    "primary": "accounting-5-5"
+   },
+   {
+    "n": "5",
+    "primary": "accounting-8-1",
+    "secondary": "accounting-8-8"
+   },
+   {
+    "n": "6",
+    "primary": "accounting-4-2",
+    "secondary": "accounting-4-1"
+   },
+   {
+    "n": "7",
+    "primary": "accounting-2-4",
+    "secondary": "accounting-2-3"
+   },
+   {
+    "n": "8",
+    "primary": "accounting-5-1",
+    "secondary": "accounting-9-2"
+   },
+   {
+    "n": "9",
+    "primary": "accounting-9-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "accounting",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC032GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "accounting-3-1"
+   },
+   {
+    "n": "2",
+    "primary": "accounting-2-2"
+   },
+   {
+    "n": "3",
+    "primary": "accounting-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "accounting-2-6"
+   },
+   {
+    "n": "5",
+    "primary": "accounting-8-1",
+    "secondary": "accounting-8-9"
+   },
+   {
+    "n": "6",
+    "primary": "accounting-7-5"
+   },
+   {
+    "n": "7",
+    "primary": "accounting-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "accounting-9-3"
+   },
+   {
+    "n": "9",
+    "primary": "accounting-9-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "accounting",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2018,
+  "fileid": "LC032GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "accounting-3-1"
+   },
+   {
+    "n": "2",
+    "primary": "accounting-2-2"
+   },
+   {
+    "n": "3",
+    "primary": "accounting-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "accounting-2-6"
+   },
+   {
+    "n": "5",
+    "primary": "accounting-8-1",
+    "secondary": "accounting-8-9"
+   },
+   {
+    "n": "6",
+    "primary": "accounting-7-5"
+   },
+   {
+    "n": "7",
+    "primary": "accounting-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "accounting-9-3"
+   },
+   {
+    "n": "9",
+    "primary": "accounting-9-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "accounting",
   "level": "ordinary",
   "lang": "iv",
   "year": 2017,
@@ -1377,6 +1736,353 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "9",
     "primary": "accounting-9-7"
+   }
+  ]
+ },
+ {
+  "subjectId": "accounting",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC032GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "accounting-4-1",
+    "secondary": "accounting-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "accounting-2-5"
+   },
+   {
+    "n": "3",
+    "primary": "accounting-6-2"
+   },
+   {
+    "n": "4",
+    "primary": "accounting-2-4",
+    "secondary": "accounting-2-3"
+   },
+   {
+    "n": "5",
+    "primary": "accounting-8-1",
+    "secondary": "accounting-8-9"
+   },
+   {
+    "n": "6",
+    "primary": "accounting-7-5"
+   },
+   {
+    "n": "7",
+    "primary": "accounting-5-2"
+   },
+   {
+    "n": "8",
+    "primary": "accounting-9-2"
+   },
+   {
+    "n": "9",
+    "primary": "accounting-9-7"
+   }
+  ]
+ },
+ {
+  "subjectId": "accounting",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC032ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "accounting-4-1",
+    "secondary": "accounting-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "accounting-2-2"
+   },
+   {
+    "n": "3",
+    "primary": "accounting-5-2"
+   },
+   {
+    "n": "4",
+    "primary": "accounting-6-1",
+    "secondary": "accounting-6-0"
+   },
+   {
+    "n": "5",
+    "primary": "accounting-8-1",
+    "secondary": "accounting-8-8"
+   },
+   {
+    "n": "6",
+    "primary": "accounting-2-4",
+    "secondary": "accounting-2-3"
+   },
+   {
+    "n": "7",
+    "primary": "accounting-4-2",
+    "secondary": "accounting-4-1"
+   },
+   {
+    "n": "8",
+    "primary": "accounting-9-2"
+   },
+   {
+    "n": "9",
+    "primary": "accounting-9-6",
+    "secondary": "accounting-9-7"
+   }
+  ]
+ },
+ {
+  "subjectId": "accounting",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC032ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "accounting-4-1",
+    "secondary": "accounting-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "accounting-2-2"
+   },
+   {
+    "n": "3",
+    "primary": "accounting-5-2"
+   },
+   {
+    "n": "4",
+    "primary": "accounting-6-1",
+    "secondary": "accounting-6-0"
+   },
+   {
+    "n": "5",
+    "primary": "accounting-8-1",
+    "secondary": "accounting-8-8"
+   },
+   {
+    "n": "6",
+    "primary": "accounting-2-4",
+    "secondary": "accounting-2-3"
+   },
+   {
+    "n": "7",
+    "primary": "accounting-4-2",
+    "secondary": "accounting-4-1"
+   },
+   {
+    "n": "8",
+    "primary": "accounting-9-2"
+   },
+   {
+    "n": "9",
+    "primary": "accounting-9-6",
+    "secondary": "accounting-9-7"
+   }
+  ]
+ },
+ {
+  "subjectId": "accounting",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC032GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "accounting-4-1"
+   },
+   {
+    "n": "2",
+    "primary": "accounting-2-2"
+   },
+   {
+    "n": "3",
+    "primary": "accounting-4-1",
+    "secondary": "accounting-4-0"
+   },
+   {
+    "n": "4",
+    "primary": "accounting-2-6"
+   },
+   {
+    "n": "5",
+    "primary": "accounting-8-1",
+    "secondary": "accounting-8-9"
+   },
+   {
+    "n": "6",
+    "primary": "accounting-7-5"
+   },
+   {
+    "n": "7",
+    "primary": "accounting-5-4"
+   },
+   {
+    "n": "8",
+    "primary": "accounting-9-3"
+   },
+   {
+    "n": "9",
+    "primary": "accounting-9-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "accounting",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC032GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "accounting-4-1"
+   },
+   {
+    "n": "2",
+    "primary": "accounting-2-2"
+   },
+   {
+    "n": "3",
+    "primary": "accounting-4-1",
+    "secondary": "accounting-4-0"
+   },
+   {
+    "n": "4",
+    "primary": "accounting-2-6"
+   },
+   {
+    "n": "5",
+    "primary": "accounting-8-1",
+    "secondary": "accounting-8-9"
+   },
+   {
+    "n": "6",
+    "primary": "accounting-7-5"
+   },
+   {
+    "n": "7",
+    "primary": "accounting-5-4"
+   },
+   {
+    "n": "8",
+    "primary": "accounting-9-3"
+   },
+   {
+    "n": "9",
+    "primary": "accounting-9-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "accounting",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC032ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "accounting-4-1"
+   },
+   {
+    "n": "2",
+    "primary": "accounting-2-5"
+   },
+   {
+    "n": "3",
+    "primary": "accounting-2-6"
+   },
+   {
+    "n": "4",
+    "primary": "accounting-5-4"
+   },
+   {
+    "n": "5",
+    "primary": "accounting-8-1",
+    "secondary": "accounting-8-8"
+   },
+   {
+    "n": "6",
+    "primary": "accounting-7-5"
+   },
+   {
+    "n": "7",
+    "primary": "accounting-6-1",
+    "secondary": "accounting-6-0"
+   },
+   {
+    "n": "8",
+    "primary": "accounting-5-1",
+    "secondary": "accounting-9-5"
+   },
+   {
+    "n": "9",
+    "primary": "accounting-9-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "accounting",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC032ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "accounting-4-1"
+   },
+   {
+    "n": "2",
+    "primary": "accounting-2-5"
+   },
+   {
+    "n": "3",
+    "primary": "accounting-2-6"
+   },
+   {
+    "n": "4",
+    "primary": "accounting-5-4"
+   },
+   {
+    "n": "5",
+    "primary": "accounting-8-1",
+    "secondary": "accounting-8-8"
+   },
+   {
+    "n": "6",
+    "primary": "accounting-7-5"
+   },
+   {
+    "n": "7",
+    "primary": "accounting-6-1",
+    "secondary": "accounting-6-0"
+   },
+   {
+    "n": "8",
+    "primary": "accounting-5-1",
+    "secondary": "accounting-9-5"
+   },
+   {
+    "n": "9",
+    "primary": "accounting-9-6"
    }
   ]
  },
@@ -1473,6 +2179,100 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "9",
     "primary": "accounting-9-7"
+   }
+  ]
+ },
+ {
+  "subjectId": "accounting",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC032GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "accounting-4-1"
+   },
+   {
+    "n": "2",
+    "primary": "accounting-2-5"
+   },
+   {
+    "n": "3",
+    "primary": "accounting-2-6"
+   },
+   {
+    "n": "4",
+    "primary": "accounting-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "accounting-8-1",
+    "secondary": "accounting-8-9"
+   },
+   {
+    "n": "6",
+    "primary": "accounting-5-2"
+   },
+   {
+    "n": "7",
+    "primary": "accounting-7-5"
+   },
+   {
+    "n": "8",
+    "primary": "accounting-9-3"
+   },
+   {
+    "n": "9",
+    "primary": "accounting-9-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "accounting",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC032GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "accounting-4-1"
+   },
+   {
+    "n": "2",
+    "primary": "accounting-2-5"
+   },
+   {
+    "n": "3",
+    "primary": "accounting-2-6"
+   },
+   {
+    "n": "4",
+    "primary": "accounting-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "accounting-8-1",
+    "secondary": "accounting-8-9"
+   },
+   {
+    "n": "6",
+    "primary": "accounting-5-2"
+   },
+   {
+    "n": "7",
+    "primary": "accounting-7-5"
+   },
+   {
+    "n": "8",
+    "primary": "accounting-9-3"
+   },
+   {
+    "n": "9",
+    "primary": "accounting-9-6"
    }
   ]
  },
@@ -1623,6 +2423,56 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  },
  {
   "subjectId": "accounting",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2011,
+  "fileid": "LC032ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "accounting-4-1",
+    "secondary": "accounting-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "accounting-2-2"
+   },
+   {
+    "n": "3",
+    "primary": "accounting-4-2",
+    "secondary": "accounting-4-1"
+   },
+   {
+    "n": "4",
+    "primary": "accounting-6-1",
+    "secondary": "accounting-6-0"
+   },
+   {
+    "n": "5",
+    "primary": "accounting-8-1",
+    "secondary": "accounting-8-8"
+   },
+   {
+    "n": "6",
+    "primary": "accounting-5-2"
+   },
+   {
+    "n": "7",
+    "primary": "accounting-2-6"
+   },
+   {
+    "n": "8",
+    "primary": "accounting-9-3"
+   },
+   {
+    "n": "9",
+    "primary": "accounting-9-7"
+   }
+  ]
+ },
+ {
+  "subjectId": "accounting",
   "level": "ordinary",
   "lang": "ev",
   "year": 2011,
@@ -1714,6 +2564,198 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "9",
     "primary": "accounting-9-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "accounting",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC032ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "accounting-3-1"
+   },
+   {
+    "n": "2",
+    "primary": "accounting-7-5"
+   },
+   {
+    "n": "3",
+    "primary": "accounting-2-5"
+   },
+   {
+    "n": "4",
+    "primary": "accounting-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "accounting-8-1",
+    "secondary": "accounting-8-8"
+   },
+   {
+    "n": "6",
+    "primary": "accounting-5-5"
+   },
+   {
+    "n": "7",
+    "primary": "accounting-2-4",
+    "secondary": "accounting-2-3"
+   },
+   {
+    "n": "8",
+    "primary": "accounting-5-1",
+    "secondary": "accounting-9-2"
+   },
+   {
+    "n": "9",
+    "primary": "accounting-9-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "accounting",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2010,
+  "fileid": "LC032ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "accounting-3-1"
+   },
+   {
+    "n": "2",
+    "primary": "accounting-7-5"
+   },
+   {
+    "n": "3",
+    "primary": "accounting-2-5"
+   },
+   {
+    "n": "4",
+    "primary": "accounting-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "accounting-8-1",
+    "secondary": "accounting-8-8"
+   },
+   {
+    "n": "6",
+    "primary": "accounting-5-5"
+   },
+   {
+    "n": "7",
+    "primary": "accounting-2-4",
+    "secondary": "accounting-2-3"
+   },
+   {
+    "n": "8",
+    "primary": "accounting-5-1",
+    "secondary": "accounting-9-2"
+   },
+   {
+    "n": "9",
+    "primary": "accounting-9-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "accounting",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC032GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "accounting-4-1"
+   },
+   {
+    "n": "2",
+    "primary": "accounting-2-6"
+   },
+   {
+    "n": "3",
+    "primary": "accounting-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "accounting-5-5"
+   },
+   {
+    "n": "5",
+    "primary": "accounting-8-1",
+    "secondary": "accounting-8-9"
+   },
+   {
+    "n": "6",
+    "primary": "accounting-6-1"
+   },
+   {
+    "n": "7",
+    "primary": "accounting-7-5"
+   },
+   {
+    "n": "8",
+    "primary": "accounting-9-3"
+   },
+   {
+    "n": "9",
+    "primary": "accounting-9-7"
+   }
+  ]
+ },
+ {
+  "subjectId": "accounting",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2010,
+  "fileid": "LC032GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "accounting-4-1"
+   },
+   {
+    "n": "2",
+    "primary": "accounting-2-6"
+   },
+   {
+    "n": "3",
+    "primary": "accounting-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "accounting-5-5"
+   },
+   {
+    "n": "5",
+    "primary": "accounting-8-1",
+    "secondary": "accounting-8-9"
+   },
+   {
+    "n": "6",
+    "primary": "accounting-6-1"
+   },
+   {
+    "n": "7",
+    "primary": "accounting-7-5"
+   },
+   {
+    "n": "8",
+    "primary": "accounting-9-3"
+   },
+   {
+    "n": "9",
+    "primary": "accounting-9-7"
    }
   ]
  },
@@ -11774,10 +12816,221 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  },
  {
   "subjectId": "art",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "LC014ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-5",
+    "secondary": "art-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-2"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-6",
+    "secondary": "art-3-1"
+   },
+   {
+    "n": "15",
+    "primary": "art-4-6",
+    "secondary": "art-3-0"
+   },
+   {
+    "n": "16",
+    "primary": "art-2-2",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4"
+   },
+   {
+    "n": "19",
+    "primary": "art-3-4",
+    "secondary": "art-6-3"
+   },
+   {
+    "n": "20",
+    "primary": "art-6-3",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
   "level": "ordinary",
   "lang": "ev",
   "year": 2022,
   "fileid": "LC014GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1",
+    "secondary": "art-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3",
+    "secondary": "art-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4",
+    "secondary": "art-2-0"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-5",
+    "secondary": "art-2-0"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0",
+    "secondary": "art-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1",
+    "secondary": "art-2-0"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1",
+    "secondary": "art-2-0"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-1",
+    "secondary": "art-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3",
+    "secondary": "art-2-0"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4",
+    "secondary": "art-2-0"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-6",
+    "secondary": "art-3-2"
+   },
+   {
+    "n": "15",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "16",
+    "primary": "art-2-2",
+    "secondary": "art-3-0"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "19",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "21",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "LC014GLP000IV.pdf",
   "paperKey": "single",
   "q": [
    {
@@ -11988,10 +13241,215 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  },
  {
   "subjectId": "art",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2021,
+  "fileid": "LC014ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0",
+    "secondary": "art-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-0",
+    "secondary": "art-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1",
+    "secondary": "art-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-5",
+    "secondary": "art-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-6",
+    "secondary": "art-4-1"
+   },
+   {
+    "n": "15",
+    "primary": "art-4-6",
+    "secondary": "art-4-4"
+   },
+   {
+    "n": "16",
+    "primary": "art-6-1",
+    "secondary": "art-2-2"
+   },
+   {
+    "n": "17",
+    "primary": "art-6-2",
+    "secondary": "art-6-3"
+   },
+   {
+    "n": "18",
+    "primary": "art-6-1"
+   },
+   {
+    "n": "19",
+    "primary": "art-6-1",
+    "secondary": "art-6-3"
+   },
+   {
+    "n": "20",
+    "primary": "art-6-3",
+    "secondary": "art-6-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
   "level": "ordinary",
   "lang": "ev",
   "year": 2021,
   "fileid": "LC014GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-5",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0",
+    "secondary": "art-3-2"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-2"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-6",
+    "secondary": "art-4-2"
+   },
+   {
+    "n": "15",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
+   },
+   {
+    "n": "16",
+    "primary": "art-3-0",
+    "secondary": "art-2-2"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4"
+   },
+   {
+    "n": "19",
+    "primary": "art-6-3",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
+   },
+   {
+    "n": "21",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2021,
+  "fileid": "LC014GLP000IV.pdf",
   "paperKey": "single",
   "q": [
    {
@@ -12192,9 +13650,818 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  {
   "subjectId": "art",
   "level": "higher",
+  "lang": "iv",
+  "year": 2020,
+  "fileid": "LC014ALP013IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-6",
+    "secondary": "art-4-3"
+   },
+   {
+    "n": "15",
+    "primary": "art-4-6",
+    "secondary": "art-4-4"
+   },
+   {
+    "n": "16",
+    "primary": "art-2-2",
+    "secondary": "art-2-1"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4",
+    "secondary": "art-6-2"
+   },
+   {
+    "n": "19",
+    "primary": "art-6-3",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2020,
+  "fileid": "LC014GLP013EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-5"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-6",
+    "secondary": "art-4-2"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-6",
+    "secondary": "art-3-1"
+   },
+   {
+    "n": "15",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "16",
+    "primary": "art-2-2"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-6-3"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
+   },
+   {
+    "n": "19",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-5-0"
+   },
+   {
+    "n": "21",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2020,
+  "fileid": "LC014GLP013IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-5"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-6",
+    "secondary": "art-4-2"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-6",
+    "secondary": "art-3-1"
+   },
+   {
+    "n": "15",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "16",
+    "primary": "art-2-2"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-6-3"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
+   },
+   {
+    "n": "19",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-5-0"
+   },
+   {
+    "n": "21",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC014ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-5",
+    "secondary": "art-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-6",
+    "secondary": "art-3-1"
+   },
+   {
+    "n": "15",
+    "primary": "art-4-6",
+    "secondary": "art-3-0"
+   },
+   {
+    "n": "16",
+    "primary": "art-2-2"
+   },
+   {
+    "n": "17",
+    "primary": "art-6-3",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "19",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-6-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2019,
+  "fileid": "LC014ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-5",
+    "secondary": "art-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-6",
+    "secondary": "art-3-1"
+   },
+   {
+    "n": "15",
+    "primary": "art-4-6",
+    "secondary": "art-3-0"
+   },
+   {
+    "n": "16",
+    "primary": "art-2-2"
+   },
+   {
+    "n": "17",
+    "primary": "art-6-3",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "19",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-6-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC014GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-5"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-2"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-6",
+    "secondary": "art-3-1"
+   },
+   {
+    "n": "15",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "16",
+    "primary": "art-2-2"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4",
+    "secondary": "art-6-3"
+   },
+   {
+    "n": "19",
+    "primary": "art-6-3",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "21",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2019,
+  "fileid": "LC014GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-5"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-2"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-6",
+    "secondary": "art-3-1"
+   },
+   {
+    "n": "15",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "16",
+    "primary": "art-2-2"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4",
+    "secondary": "art-6-3"
+   },
+   {
+    "n": "19",
+    "primary": "art-6-3",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "21",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
   "lang": "ev",
   "year": 2018,
   "fileid": "LC014ALP013EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0",
+    "secondary": "art-5-1"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1",
+    "secondary": "art-3-2"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1",
+    "secondary": "art-3-2"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-2",
+    "secondary": "art-3-2"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3",
+    "secondary": "art-3-2"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-3",
+    "secondary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-6",
+    "secondary": "art-3-1"
+   },
+   {
+    "n": "15",
+    "primary": "art-4-6",
+    "secondary": "art-4-4"
+   },
+   {
+    "n": "16",
+    "primary": "art-3-4",
+    "secondary": "art-2-2"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
+   },
+   {
+    "n": "19",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-6-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2018,
+  "fileid": "LC014ALP013IV.pdf",
   "paperKey": "single",
   "q": [
    {
@@ -12401,10 +14668,549 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  },
  {
   "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2018,
+  "fileid": "LC014GLP013IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-5",
+    "secondary": "art-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1",
+    "secondary": "art-3-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1",
+    "secondary": "art-3-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-2"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-6",
+    "secondary": "art-3-1"
+   },
+   {
+    "n": "15",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "16",
+    "primary": "art-3-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "18",
+    "primary": "art-6-3",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "19",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "21",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
   "level": "higher",
   "lang": "ev",
   "year": 2017,
   "fileid": "LC014ALP013EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-0",
+    "secondary": "art-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-3-1"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-6",
+    "secondary": "art-4-1"
+   },
+   {
+    "n": "15",
+    "primary": "art-4-6",
+    "secondary": "art-3-0"
+   },
+   {
+    "n": "16",
+    "primary": "art-1-3",
+    "secondary": "art-2-2"
+   },
+   {
+    "n": "17",
+    "primary": "art-1-0",
+    "secondary": "art-2-0"
+   },
+   {
+    "n": "18",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "19",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "20",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC014ALP009EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2017,
+  "fileid": "LC014ALP009IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC014ALP010EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2017,
+  "fileid": "LC014ALP010IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC014ALP011EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "12",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "13",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2017,
+  "fileid": "LC014ALP011IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "12",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "13",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2017,
+  "fileid": "LC014ALP013IV.pdf",
   "paperKey": "single",
   "q": [
    {
@@ -12604,10 +15410,880 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  },
  {
   "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC014GLP009EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2017,
+  "fileid": "LC014GLP009IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC014GLP010EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2017,
+  "fileid": "LC014GLP010IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC014GLP011EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "12",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "13",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2017,
+  "fileid": "LC014GLP011IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "12",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "13",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2017,
+  "fileid": "LC014GLP013IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-5"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-0",
+    "secondary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-2"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-6",
+    "secondary": "art-4-3"
+   },
+   {
+    "n": "15",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "16",
+    "primary": "art-2-2",
+    "secondary": "art-1-3"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "19",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "21",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
   "level": "higher",
   "lang": "ev",
   "year": 2016,
   "fileid": "LC014ALP013EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-5"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-2"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-6",
+    "secondary": "art-4-1"
+   },
+   {
+    "n": "15",
+    "primary": "art-4-6",
+    "secondary": "art-4-3"
+   },
+   {
+    "n": "16",
+    "primary": "art-2-2",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "19",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC014ALP009EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC014ALP009IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC014ALP010EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC014ALP010IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC014ALP011EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "12",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "13",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC014ALP011IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "12",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "13",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC014ALP013IV.pdf",
   "paperKey": "single",
   "q": [
    {
@@ -12805,6 +16481,443 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  },
  {
   "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC014GLP009EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC014GLP009IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC014GLP010EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC014GLP010IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC014GLP011EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "12",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "13",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC014GLP011IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "12",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "13",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC014GLP013IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-5"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-2"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-6",
+    "secondary": "art-4-1"
+   },
+   {
+    "n": "15",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "16",
+    "primary": "art-2-2",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "19",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "21",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
   "level": "higher",
   "lang": "ev",
   "year": 2015,
@@ -12903,10 +17016,880 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  },
  {
   "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC014ALP009EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC014ALP009IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC014ALP010EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC014ALP010IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC014ALP011EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "12",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "13",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC014ALP011IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "12",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "13",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC014ALP013IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1",
+    "secondary": "art-5-2"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-5"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-6",
+    "secondary": "art-3-1"
+   },
+   {
+    "n": "15",
+    "primary": "art-4-6",
+    "secondary": "art-3-0"
+   },
+   {
+    "n": "16",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "17",
+    "primary": "art-2-2"
+   },
+   {
+    "n": "18",
+    "primary": "art-6-3",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "19",
+    "primary": "art-6-2",
+    "secondary": "art-6-3"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
   "level": "ordinary",
   "lang": "ev",
   "year": 2015,
   "fileid": "LC014GLP013EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-2"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-6",
+    "secondary": "art-4-3"
+   },
+   {
+    "n": "15",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "16",
+    "primary": "art-1-3",
+    "secondary": "art-2-2"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "18",
+    "primary": "art-6-3",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "19",
+    "primary": "art-5-5",
+    "secondary": "art-2-0"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "21",
+    "primary": "art-3-4",
+    "secondary": "art-6-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC014GLP009EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC014GLP009IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC014GLP010EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC014GLP010IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC014GLP011EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "12",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "13",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC014GLP011IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "12",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "13",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC014GLP013IV.pdf",
   "paperKey": "single",
   "q": [
    {
@@ -13106,6 +18089,439 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  },
  {
   "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC014ALP009EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC014ALP009IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC014ALP010EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC014ALP010IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC014ALP011EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "12",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "13",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC014ALP011IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "12",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "13",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC014ALP013IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-1",
+    "secondary": "art-4-2"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-6",
+    "secondary": "art-4-3"
+   },
+   {
+    "n": "15",
+    "primary": "art-4-6",
+    "secondary": "art-4-4"
+   },
+   {
+    "n": "16",
+    "primary": "art-2-2",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-6-1"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4",
+    "secondary": "art-1-3"
+   },
+   {
+    "n": "19",
+    "primary": "art-6-3",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-6-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
   "level": "ordinary",
   "lang": "ev",
   "year": 2014,
@@ -13202,6 +18618,1511 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
     "n": "21",
     "primary": "art-3-4",
     "secondary": "art-3-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC014GLP009EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC014GLP009IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC014GLP010EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC014GLP010IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC014GLP011EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "12",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "13",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC014GLP011IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "12",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "13",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC014GLP013IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-6",
+    "secondary": "art-4-1"
+   },
+   {
+    "n": "15",
+    "primary": "art-3-4"
+   },
+   {
+    "n": "16",
+    "primary": "art-2-2",
+    "secondary": "art-3-0"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4",
+    "secondary": "art-3-2"
+   },
+   {
+    "n": "19",
+    "primary": "art-3-3",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4"
+   },
+   {
+    "n": "21",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC014ALP009EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2013,
+  "fileid": "LC014ALP009IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC014ALP010EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2013,
+  "fileid": "LC014ALP010IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC014ALP011EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "12",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "13",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2013,
+  "fileid": "LC014ALP011IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "12",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "13",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC014ALP013EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-2"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-2"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-6",
+    "secondary": "art-3-1"
+   },
+   {
+    "n": "15",
+    "primary": "art-4-6",
+    "secondary": "art-3-0"
+   },
+   {
+    "n": "16",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "17",
+    "primary": "art-2-2",
+    "secondary": "art-1-3"
+   },
+   {
+    "n": "18",
+    "primary": "art-6-3",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "19",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2013,
+  "fileid": "LC014ALP013IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-2"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-2"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-6",
+    "secondary": "art-3-1"
+   },
+   {
+    "n": "15",
+    "primary": "art-4-6",
+    "secondary": "art-3-0"
+   },
+   {
+    "n": "16",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "17",
+    "primary": "art-2-2",
+    "secondary": "art-1-3"
+   },
+   {
+    "n": "18",
+    "primary": "art-6-3",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "19",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC014GLP009EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2013,
+  "fileid": "LC014GLP009IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC014GLP010EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2013,
+  "fileid": "LC014GLP010IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC014GLP011EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "12",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "13",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2013,
+  "fileid": "LC014GLP011IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "12",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "13",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC014GLP013EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-6",
+    "secondary": "art-3-1"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "15",
+    "primary": "art-3-4"
+   },
+   {
+    "n": "16",
+    "primary": "art-2-2",
+    "secondary": "art-1-3"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-2-3"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "19",
+    "primary": "art-6-3",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "21",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2013,
+  "fileid": "LC014GLP013IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-6",
+    "secondary": "art-3-1"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "15",
+    "primary": "art-3-4"
+   },
+   {
+    "n": "16",
+    "primary": "art-2-2",
+    "secondary": "art-1-3"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-2-3"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "19",
+    "primary": "art-6-3",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "21",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
    }
   ]
  },
@@ -13312,6 +20233,985 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
   "subjectId": "art",
   "level": "higher",
   "lang": "ev",
+  "year": 2012,
+  "fileid": "LC014ALP009EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2012,
+  "fileid": "LC014ALP009IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC014ALP010EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2012,
+  "fileid": "LC014ALP010IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC014ALP011EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "12",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "13",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2012,
+  "fileid": "LC014ALP011IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "12",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "13",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2012,
+  "fileid": "LC014ALP013IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-0",
+    "secondary": "art-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1",
+    "secondary": "art-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-5",
+    "secondary": "art-5-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-2"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3",
+    "secondary": "art-4-4"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-6",
+    "secondary": "art-4-1"
+   },
+   {
+    "n": "15",
+    "primary": "art-4-6",
+    "secondary": "art-4-2"
+   },
+   {
+    "n": "16",
+    "primary": "art-2-2",
+    "secondary": "art-2-1"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-6-1"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "19",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-6-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC014GLP009EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2012,
+  "fileid": "LC014GLP009IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC014GLP010EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2012,
+  "fileid": "LC014GLP010IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC014GLP011EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "12",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "13",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2012,
+  "fileid": "LC014GLP011IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "12",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "13",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC014GLP013EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-5",
+    "secondary": "art-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-6",
+    "secondary": "art-3-1"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "15",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "16",
+    "primary": "art-2-2",
+    "secondary": "art-1-3"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
+   },
+   {
+    "n": "19",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "21",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2012,
+  "fileid": "LC014GLP013IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-5",
+    "secondary": "art-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-6",
+    "secondary": "art-3-1"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "15",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "16",
+    "primary": "art-2-2",
+    "secondary": "art-1-3"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
+   },
+   {
+    "n": "19",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "21",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
   "year": 2011,
   "fileid": "LC014ALP013EV.pdf",
   "paperKey": "single",
@@ -13405,6 +21305,1378 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
     "n": "20",
     "primary": "art-6-3",
     "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC014ALP009EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2011,
+  "fileid": "LC014ALP009IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC014ALP010EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2011,
+  "fileid": "LC014ALP010IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC014ALP011EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "12",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "13",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2011,
+  "fileid": "LC014ALP011IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "12",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "13",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2011,
+  "fileid": "LC014ALP013IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0",
+    "secondary": "art-5-1"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-0",
+    "secondary": "art-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-2"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-6",
+    "secondary": "art-3-2"
+   },
+   {
+    "n": "15",
+    "primary": "art-4-6",
+    "secondary": "art-3-0"
+   },
+   {
+    "n": "16",
+    "primary": "art-6-1",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-6-3"
+   },
+   {
+    "n": "18",
+    "primary": "art-1-3",
+    "secondary": "art-2-2"
+   },
+   {
+    "n": "19",
+    "primary": "art-3-4",
+    "secondary": "art-6-3"
+   },
+   {
+    "n": "20",
+    "primary": "art-6-3",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC014GLP009EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2011,
+  "fileid": "LC014GLP009IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC014GLP010EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2011,
+  "fileid": "LC014GLP010IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC014GLP011EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "12",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "13",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2011,
+  "fileid": "LC014GLP011IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "4",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "9",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "11",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "12",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "13",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC014GLP013EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-5"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-6",
+    "secondary": "art-3-1"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "15",
+    "primary": "art-2-2"
+   },
+   {
+    "n": "16",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "19",
+    "primary": "art-6-3",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
+   },
+   {
+    "n": "21",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2011,
+  "fileid": "LC014GLP013IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-5"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-6",
+    "secondary": "art-3-1"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "15",
+    "primary": "art-2-2"
+   },
+   {
+    "n": "16",
+    "primary": "art-3-4",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "19",
+    "primary": "art-6-3",
+    "secondary": "art-1-0"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
+   },
+   {
+    "n": "21",
+    "primary": "art-1-0",
+    "secondary": "art-3-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC014ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0",
+    "secondary": "art-5-1"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-5",
+    "secondary": "art-5-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-6",
+    "secondary": "art-3-1"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "15",
+    "primary": "art-4-6",
+    "secondary": "art-3-0"
+   },
+   {
+    "n": "16",
+    "primary": "art-6-2",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "18",
+    "primary": "art-6-3",
+    "secondary": "art-5-3"
+   },
+   {
+    "n": "19",
+    "primary": "art-2-2"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2010,
+  "fileid": "LC014ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0",
+    "secondary": "art-5-1"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-5",
+    "secondary": "art-5-4"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-6",
+    "secondary": "art-3-1"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "15",
+    "primary": "art-4-6",
+    "secondary": "art-3-0"
+   },
+   {
+    "n": "16",
+    "primary": "art-6-2",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "18",
+    "primary": "art-6-3",
+    "secondary": "art-5-3"
+   },
+   {
+    "n": "19",
+    "primary": "art-2-2"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC014GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-5",
+    "secondary": "art-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-6",
+    "secondary": "art-3-1"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "15",
+    "primary": "art-2-2"
+   },
+   {
+    "n": "16",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4",
+    "secondary": "art-6-3"
+   },
+   {
+    "n": "19",
+    "primary": "art-6-3",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4"
+   },
+   {
+    "n": "21",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "art",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2010,
+  "fileid": "LC014GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "art-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "3",
+    "primary": "art-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "art-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "art-5-4"
+   },
+   {
+    "n": "6",
+    "primary": "art-5-5",
+    "secondary": "art-5-4"
+   },
+   {
+    "n": "7",
+    "primary": "art-5-4",
+    "secondary": "art-5-5"
+   },
+   {
+    "n": "8",
+    "primary": "art-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "10",
+    "primary": "art-4-1"
+   },
+   {
+    "n": "11",
+    "primary": "art-4-6",
+    "secondary": "art-3-1"
+   },
+   {
+    "n": "12",
+    "primary": "art-4-3"
+   },
+   {
+    "n": "13",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "14",
+    "primary": "art-4-4"
+   },
+   {
+    "n": "15",
+    "primary": "art-2-2"
+   },
+   {
+    "n": "16",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "17",
+    "primary": "art-3-4",
+    "secondary": "art-3-5"
+   },
+   {
+    "n": "18",
+    "primary": "art-3-4",
+    "secondary": "art-6-3"
+   },
+   {
+    "n": "19",
+    "primary": "art-6-3",
+    "secondary": "art-3-4"
+   },
+   {
+    "n": "20",
+    "primary": "art-3-4"
+   },
+   {
+    "n": "21",
+    "primary": "art-3-4",
+    "secondary": "art-3-3"
    }
   ]
  },
@@ -18920,6 +28192,56 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  },
  {
   "subjectId": "business",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "LC033ALP041IV.pdf",
+  "paperKey": "p2",
+  "q": [
+   {
+    "n": "1",
+    "primary": "business-0-14",
+    "secondary": "business-0-12"
+   },
+   {
+    "n": "2",
+    "primary": "business-5-15",
+    "secondary": "business-5-14"
+   },
+   {
+    "n": "3",
+    "primary": "business-6-13",
+    "secondary": "business-6-14"
+   },
+   {
+    "n": "4",
+    "primary": "business-0-12",
+    "secondary": "business-0-14"
+   },
+   {
+    "n": "5",
+    "primary": "business-2-12",
+    "secondary": "business-2-11"
+   },
+   {
+    "n": "6",
+    "primary": "business-3-17",
+    "secondary": "business-3-21"
+   },
+   {
+    "n": "7",
+    "primary": "business-4-18",
+    "secondary": "business-4-14"
+   },
+   {
+    "n": "8",
+    "primary": "business-4-16",
+    "secondary": "business-3-19"
+   }
+  ]
+ },
+ {
+  "subjectId": "business",
   "level": "ordinary",
   "lang": "ev",
   "year": 2025,
@@ -19027,7 +28349,115 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
   "level": "higher",
   "lang": "ev",
   "year": 2024,
+  "fileid": "LC033ALP032EV.pdf",
+  "paperKey": "p1",
+  "q": [
+   {
+    "n": "1",
+    "primary": "business-5-14",
+    "secondary": "business-4-18"
+   },
+   {
+    "n": "2",
+    "primary": "business-5-15",
+    "secondary": "business-6-13"
+   },
+   {
+    "n": "3",
+    "primary": "business-5-16"
+   },
+   {
+    "n": "4",
+    "primary": "business-3-19"
+   },
+   {
+    "n": "5",
+    "primary": "business-6-14"
+   },
+   {
+    "n": "6",
+    "primary": "business-6-13"
+   },
+   {
+    "n": "7",
+    "primary": "business-2-13"
+   },
+   {
+    "n": "8",
+    "primary": "business-2-13"
+   },
+   {
+    "n": "9",
+    "primary": "business-3-17"
+   },
+   {
+    "n": "10",
+    "primary": "business-4-17"
+   },
+   {
+    "n": "11",
+    "primary": "business-0-14"
+   },
+   {
+    "n": "12",
+    "primary": "business-3-20"
+   }
+  ]
+ },
+ {
+  "subjectId": "business",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
   "fileid": "LC033ALP041EV.pdf",
+  "paperKey": "p2",
+  "q": [
+   {
+    "n": "1",
+    "primary": "business-0-12",
+    "secondary": "business-0-13"
+   },
+   {
+    "n": "2",
+    "primary": "business-5-15",
+    "secondary": "business-5-13"
+   },
+   {
+    "n": "3",
+    "primary": "business-6-13",
+    "secondary": "business-6-15"
+   },
+   {
+    "n": "4",
+    "primary": "business-0-14",
+    "secondary": "business-0-13"
+   },
+   {
+    "n": "5",
+    "primary": "business-2-13",
+    "secondary": "business-1-5"
+   },
+   {
+    "n": "6",
+    "primary": "business-3-16"
+   },
+   {
+    "n": "7",
+    "primary": "business-4-15",
+    "secondary": "business-5-14"
+   },
+   {
+    "n": "8",
+    "primary": "business-4-17"
+   }
+  ]
+ },
+ {
+  "subjectId": "business",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "LC033ALP041IV.pdf",
   "paperKey": "p2",
   "q": [
    {
@@ -19300,6 +28730,161 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  {
   "subjectId": "business",
   "level": "higher",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "LC033ALP041IV.pdf",
+  "paperKey": "p2",
+  "q": [
+   {
+    "n": "1",
+    "primary": "business-0-12",
+    "secondary": "business-0-13"
+   },
+   {
+    "n": "2",
+    "primary": "business-5-14",
+    "secondary": "business-5-17"
+   },
+   {
+    "n": "3",
+    "primary": "business-6-14",
+    "secondary": "business-6-15"
+   },
+   {
+    "n": "4",
+    "primary": "business-0-14"
+   },
+   {
+    "n": "5",
+    "primary": "business-2-11",
+    "secondary": "business-2-13"
+   },
+   {
+    "n": "6",
+    "primary": "business-3-20",
+    "secondary": "business-3-17"
+   },
+   {
+    "n": "7",
+    "primary": "business-4-14",
+    "secondary": "business-3-18"
+   },
+   {
+    "n": "8",
+    "primary": "business-4-18",
+    "secondary": "business-4-16"
+   }
+  ]
+ },
+ {
+  "subjectId": "business",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC033GLP033EV.pdf",
+  "paperKey": "p2",
+  "q": [
+   {
+    "n": "1",
+    "primary": "business-0-14",
+    "secondary": "business-0-12"
+   },
+   {
+    "n": "2",
+    "primary": "business-5-15",
+    "secondary": "business-5-17"
+   },
+   {
+    "n": "3",
+    "primary": "business-6-13"
+   },
+   {
+    "n": "4",
+    "primary": "business-0-13",
+    "secondary": "business-0-14"
+   },
+   {
+    "n": "5",
+    "primary": "business-1-5",
+    "secondary": "business-2-11"
+   },
+   {
+    "n": "6",
+    "primary": "business-2-12"
+   },
+   {
+    "n": "7",
+    "primary": "business-3-20",
+    "secondary": "business-3-18"
+   },
+   {
+    "n": "8",
+    "primary": "business-4-17",
+    "secondary": "business-4-15"
+   },
+   {
+    "n": "9",
+    "primary": "business-4-14",
+    "secondary": "business-4-16"
+   }
+  ]
+ },
+ {
+  "subjectId": "business",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "LC033GLP033IV.pdf",
+  "paperKey": "p2",
+  "q": [
+   {
+    "n": "1",
+    "primary": "business-0-14",
+    "secondary": "business-0-12"
+   },
+   {
+    "n": "2",
+    "primary": "business-5-15",
+    "secondary": "business-5-17"
+   },
+   {
+    "n": "3",
+    "primary": "business-6-13"
+   },
+   {
+    "n": "4",
+    "primary": "business-0-13",
+    "secondary": "business-0-14"
+   },
+   {
+    "n": "5",
+    "primary": "business-1-5",
+    "secondary": "business-2-11"
+   },
+   {
+    "n": "6",
+    "primary": "business-2-12"
+   },
+   {
+    "n": "7",
+    "primary": "business-3-20",
+    "secondary": "business-3-18"
+   },
+   {
+    "n": "8",
+    "primary": "business-4-17",
+    "secondary": "business-4-15"
+   },
+   {
+    "n": "9",
+    "primary": "business-4-14",
+    "secondary": "business-4-16"
+   }
+  ]
+ },
+ {
+  "subjectId": "business",
+  "level": "higher",
   "lang": "ev",
   "year": 2022,
   "fileid": "LC033ALP032EV.pdf",
@@ -19364,6 +28949,53 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
   "lang": "ev",
   "year": 2022,
   "fileid": "LC033ALP041EV.pdf",
+  "paperKey": "p2",
+  "q": [
+   {
+    "n": "1",
+    "primary": "business-0-14"
+   },
+   {
+    "n": "2",
+    "primary": "business-5-14",
+    "secondary": "business-5-15"
+   },
+   {
+    "n": "3",
+    "primary": "business-6-15",
+    "secondary": "business-6-13"
+   },
+   {
+    "n": "4",
+    "primary": "business-0-13"
+   },
+   {
+    "n": "5",
+    "primary": "business-2-11",
+    "secondary": "business-1-5"
+   },
+   {
+    "n": "6",
+    "primary": "business-3-20",
+    "secondary": "business-3-17"
+   },
+   {
+    "n": "7",
+    "primary": "business-4-18",
+    "secondary": "business-3-16"
+   },
+   {
+    "n": "8",
+    "primary": "business-4-17"
+   }
+  ]
+ },
+ {
+  "subjectId": "business",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "LC033ALP041IV.pdf",
   "paperKey": "p2",
   "q": [
    {
@@ -19634,6 +29266,56 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
   "lang": "ev",
   "year": 2021,
   "fileid": "LC033ALP041EV.pdf",
+  "paperKey": "p2",
+  "q": [
+   {
+    "n": "1",
+    "primary": "business-0-12",
+    "secondary": "business-0-13"
+   },
+   {
+    "n": "2",
+    "primary": "business-5-15",
+    "secondary": "business-5-16"
+   },
+   {
+    "n": "3",
+    "primary": "business-6-13",
+    "secondary": "business-6-14"
+   },
+   {
+    "n": "4",
+    "primary": "business-0-14",
+    "secondary": "business-0-12"
+   },
+   {
+    "n": "5",
+    "primary": "business-1-5",
+    "secondary": "business-2-12"
+   },
+   {
+    "n": "6",
+    "primary": "business-3-20",
+    "secondary": "business-3-21"
+   },
+   {
+    "n": "7",
+    "primary": "business-4-14",
+    "secondary": "business-3-19"
+   },
+   {
+    "n": "8",
+    "primary": "business-4-15",
+    "secondary": "business-4-14"
+   }
+  ]
+ },
+ {
+  "subjectId": "business",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2021,
+  "fileid": "LC033ALP041IV.pdf",
   "paperKey": "p2",
   "q": [
    {
@@ -20192,6 +29874,76 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  {
   "subjectId": "business",
   "level": "ordinary",
+  "lang": "iv",
+  "year": 2020,
+  "fileid": "LC033GLP032IV.pdf",
+  "paperKey": "p1",
+  "q": [
+   {
+    "n": "1",
+    "primary": "business-2-13"
+   },
+   {
+    "n": "2",
+    "primary": "business-4-15"
+   },
+   {
+    "n": "3",
+    "primary": "business-1-5"
+   },
+   {
+    "n": "4",
+    "primary": "business-6-14"
+   },
+   {
+    "n": "5",
+    "primary": "business-4-16"
+   },
+   {
+    "n": "6",
+    "primary": "business-5-15"
+   },
+   {
+    "n": "7",
+    "primary": "business-4-17"
+   },
+   {
+    "n": "8",
+    "primary": "business-4-18"
+   },
+   {
+    "n": "9",
+    "primary": "business-6-13"
+   },
+   {
+    "n": "10",
+    "primary": "business-3-20"
+   },
+   {
+    "n": "11",
+    "primary": "business-3-18"
+   },
+   {
+    "n": "12",
+    "primary": "business-2-13"
+   },
+   {
+    "n": "13",
+    "primary": "business-5-15"
+   },
+   {
+    "n": "14",
+    "primary": "business-4-14"
+   },
+   {
+    "n": "15",
+    "primary": "business-0-12"
+   }
+  ]
+ },
+ {
+  "subjectId": "business",
+  "level": "ordinary",
   "lang": "ev",
   "year": 2020,
   "fileid": "LC033GLP033EV.pdf",
@@ -20233,6 +29985,157 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
     "n": "8",
     "primary": "business-4-18",
     "secondary": "business-4-15"
+   }
+  ]
+ },
+ {
+  "subjectId": "business",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2020,
+  "fileid": "LC033GLP033IV.pdf",
+  "paperKey": "p2",
+  "q": [
+   {
+    "n": "1",
+    "primary": "business-0-13",
+    "secondary": "business-0-12"
+   },
+   {
+    "n": "2",
+    "primary": "business-5-13"
+   },
+   {
+    "n": "3",
+    "primary": "business-6-13"
+   },
+   {
+    "n": "4",
+    "primary": "business-1-5",
+    "secondary": "business-2-11"
+   },
+   {
+    "n": "5",
+    "primary": "business-3-17"
+   },
+   {
+    "n": "6",
+    "primary": "business-3-20",
+    "secondary": "business-2-11"
+   },
+   {
+    "n": "7",
+    "primary": "business-4-17",
+    "secondary": "business-4-16"
+   },
+   {
+    "n": "8",
+    "primary": "business-4-18",
+    "secondary": "business-4-15"
+   }
+  ]
+ },
+ {
+  "subjectId": "business",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC033ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "business-3-20",
+    "secondary": "business-2-13"
+   },
+   {
+    "n": "2",
+    "primary": "business-5-13"
+   },
+   {
+    "n": "3",
+    "primary": "business-3-18"
+   },
+   {
+    "n": "4",
+    "primary": "business-5-15",
+    "secondary": "business-6-14"
+   },
+   {
+    "n": "5",
+    "primary": "business-5-15"
+   },
+   {
+    "n": "6",
+    "primary": "business-2-13"
+   },
+   {
+    "n": "7",
+    "primary": "business-6-13"
+   },
+   {
+    "n": "8",
+    "primary": "business-4-16"
+   },
+   {
+    "n": "9",
+    "primary": "business-0-12"
+   },
+   {
+    "n": "10",
+    "primary": "business-3-19"
+   }
+  ]
+ },
+ {
+  "subjectId": "business",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2019,
+  "fileid": "LC033ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "business-3-20",
+    "secondary": "business-2-13"
+   },
+   {
+    "n": "2",
+    "primary": "business-5-13"
+   },
+   {
+    "n": "3",
+    "primary": "business-3-18"
+   },
+   {
+    "n": "4",
+    "primary": "business-5-15",
+    "secondary": "business-6-14"
+   },
+   {
+    "n": "5",
+    "primary": "business-5-15"
+   },
+   {
+    "n": "6",
+    "primary": "business-2-13"
+   },
+   {
+    "n": "7",
+    "primary": "business-6-13"
+   },
+   {
+    "n": "8",
+    "primary": "business-4-16"
+   },
+   {
+    "n": "9",
+    "primary": "business-0-12"
+   },
+   {
+    "n": "10",
+    "primary": "business-3-19"
    }
   ]
  },
@@ -25265,6 +35168,84 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  },
  {
   "subjectId": "classical-studies",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "LC008GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "classical-studies-3-0"
+   },
+   {
+    "n": "2",
+    "primary": "classical-studies-3-1"
+   },
+   {
+    "n": "3",
+    "primary": "classical-studies-3-2"
+   },
+   {
+    "n": "4",
+    "primary": "classical-studies-0-4"
+   },
+   {
+    "n": "5",
+    "primary": "classical-studies-0-3",
+    "secondary": "classical-studies-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "classical-studies-2-1"
+   },
+   {
+    "n": "7",
+    "primary": "classical-studies-2-4",
+    "secondary": "classical-studies-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "classical-studies-1-3"
+   },
+   {
+    "n": "9",
+    "primary": "classical-studies-1-1"
+   },
+   {
+    "n": "10",
+    "primary": "classical-studies-1-2"
+   },
+   {
+    "n": "11",
+    "primary": "classical-studies-3-3"
+   },
+   {
+    "n": "12",
+    "primary": "classical-studies-1-3",
+    "secondary": "classical-studies-1-1"
+   },
+   {
+    "n": "13",
+    "primary": "classical-studies-3-0"
+   },
+   {
+    "n": "14",
+    "primary": "classical-studies-0-0"
+   },
+   {
+    "n": "15",
+    "primary": "classical-studies-2-3"
+   },
+   {
+    "n": "16",
+    "primary": "classical-studies-1-2",
+    "secondary": "classical-studies-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "classical-studies",
   "level": "higher",
   "lang": "ev",
   "year": 2024,
@@ -25337,6 +35318,51 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "16",
     "primary": "classical-studies-1-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "classical-studies",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC008ALP004BV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "classical-studies-2-1",
+    "secondary": "classical-studies-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "classical-studies-3-2"
+   },
+   {
+    "n": "3",
+    "primary": "classical-studies-3-1"
+   },
+   {
+    "n": "4",
+    "primary": "classical-studies-3-1"
+   },
+   {
+    "n": "5",
+    "primary": "classical-studies-1-1",
+    "secondary": "classical-studies-1-2"
+   },
+   {
+    "n": "6",
+    "primary": "classical-studies-1-0",
+    "secondary": "classical-studies-1-1"
+   },
+   {
+    "n": "7",
+    "primary": "classical-studies-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "classical-studies-0-3"
    }
   ]
  },
@@ -25420,6 +35446,42 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  },
  {
   "subjectId": "classical-studies",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC008GLP0004BV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "classical-studies-3-0"
+   },
+   {
+    "n": "2",
+    "primary": "classical-studies-3-1"
+   },
+   {
+    "n": "3",
+    "primary": "classical-studies-1-0",
+    "secondary": "classical-studies-1-1"
+   },
+   {
+    "n": "4",
+    "primary": "classical-studies-1-1",
+    "secondary": "classical-studies-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "classical-studies-0-3"
+   },
+   {
+    "n": "6",
+    "primary": "classical-studies-0-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "classical-studies",
   "level": "higher",
   "lang": "ev",
   "year": 2023,
@@ -25489,6 +35551,41 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "16",
     "primary": "classical-studies-3-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "classical-studies",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC008ALP004BV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "classical-studies-3-1"
+   },
+   {
+    "n": "2",
+    "primary": "classical-studies-3-0"
+   },
+   {
+    "n": "3",
+    "primary": "classical-studies-3-2"
+   },
+   {
+    "n": "4",
+    "primary": "classical-studies-1-3"
+   },
+   {
+    "n": "5",
+    "primary": "classical-studies-1-3"
+   },
+   {
+    "n": "6",
+    "primary": "classical-studies-3-0",
+    "secondary": "classical-studies-3-1"
    }
   ]
  },
@@ -25567,6 +35664,50 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "16",
     "primary": "classical-studies-3-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "classical-studies",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC008GLP004BV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "classical-studies-3-0"
+   },
+   {
+    "n": "2",
+    "primary": "classical-studies-3-0"
+   },
+   {
+    "n": "3",
+    "primary": "classical-studies-3-1"
+   },
+   {
+    "n": "4",
+    "primary": "classical-studies-2-1",
+    "secondary": "classical-studies-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "classical-studies-3-2"
+   },
+   {
+    "n": "6",
+    "primary": "classical-studies-1-2",
+    "secondary": "classical-studies-1-1"
+   },
+   {
+    "n": "7",
+    "primary": "classical-studies-1-3"
+   },
+   {
+    "n": "8",
+    "primary": "classical-studies-0-4"
    }
   ]
  },
@@ -31265,6 +41406,800 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  },
  {
   "subjectId": "economics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC034GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-0-0",
+    "secondary": "economics-3-3"
+   },
+   {
+    "n": "2",
+    "primary": "economics-3-1",
+    "secondary": "economics-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "economics-2-2",
+    "secondary": "economics-3-1"
+   },
+   {
+    "n": "4",
+    "primary": "economics-3-1",
+    "secondary": "economics-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "economics-3-0",
+    "secondary": "economics-3-5"
+   },
+   {
+    "n": "6",
+    "primary": "economics-2-2"
+   },
+   {
+    "n": "7",
+    "primary": "economics-3-1",
+    "secondary": "economics-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "economics-1-1"
+   },
+   {
+    "n": "10",
+    "primary": "economics-1-1",
+    "secondary": "economics-1-2"
+   },
+   {
+    "n": "11",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "13",
+    "primary": "economics-2-1",
+    "secondary": "economics-0-1"
+   },
+   {
+    "n": "14",
+    "primary": "economics-4-2",
+    "secondary": "economics-4-1"
+   },
+   {
+    "n": "15",
+    "primary": "economics-0-1",
+    "secondary": "economics-1-5"
+   },
+   {
+    "n": "16",
+    "primary": "economics-3-1",
+    "secondary": "economics-2-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "LC034GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-0-0",
+    "secondary": "economics-3-3"
+   },
+   {
+    "n": "2",
+    "primary": "economics-3-1",
+    "secondary": "economics-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "economics-2-2",
+    "secondary": "economics-3-1"
+   },
+   {
+    "n": "4",
+    "primary": "economics-3-1",
+    "secondary": "economics-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "economics-3-0",
+    "secondary": "economics-3-5"
+   },
+   {
+    "n": "6",
+    "primary": "economics-2-2"
+   },
+   {
+    "n": "7",
+    "primary": "economics-3-1",
+    "secondary": "economics-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "economics-1-1"
+   },
+   {
+    "n": "10",
+    "primary": "economics-1-1",
+    "secondary": "economics-1-2"
+   },
+   {
+    "n": "11",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "13",
+    "primary": "economics-2-1",
+    "secondary": "economics-0-1"
+   },
+   {
+    "n": "14",
+    "primary": "economics-4-2",
+    "secondary": "economics-4-1"
+   },
+   {
+    "n": "15",
+    "primary": "economics-0-1",
+    "secondary": "economics-1-5"
+   },
+   {
+    "n": "16",
+    "primary": "economics-3-1",
+    "secondary": "economics-2-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC034GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-0-2"
+   },
+   {
+    "n": "2",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "3",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "economics-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "economics-4-2"
+   },
+   {
+    "n": "6",
+    "primary": "economics-1-3"
+   },
+   {
+    "n": "7",
+    "primary": "economics-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "economics-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "economics-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "economics-1-0",
+    "secondary": "economics-1-1"
+   },
+   {
+    "n": "11",
+    "primary": "economics-3-3",
+    "secondary": "economics-3-1"
+   },
+   {
+    "n": "12",
+    "primary": "economics-3-2"
+   },
+   {
+    "n": "13",
+    "primary": "economics-1-5"
+   },
+   {
+    "n": "14",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "15",
+    "primary": "economics-0-1"
+   },
+   {
+    "n": "16",
+    "primary": "economics-2-1",
+    "secondary": "economics-4-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "LC034GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-0-2"
+   },
+   {
+    "n": "2",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "3",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "economics-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "economics-4-2"
+   },
+   {
+    "n": "6",
+    "primary": "economics-1-3"
+   },
+   {
+    "n": "7",
+    "primary": "economics-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "economics-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "economics-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "economics-1-0",
+    "secondary": "economics-1-1"
+   },
+   {
+    "n": "11",
+    "primary": "economics-3-3",
+    "secondary": "economics-3-1"
+   },
+   {
+    "n": "12",
+    "primary": "economics-3-2"
+   },
+   {
+    "n": "13",
+    "primary": "economics-1-5"
+   },
+   {
+    "n": "14",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "15",
+    "primary": "economics-0-1"
+   },
+   {
+    "n": "16",
+    "primary": "economics-2-1",
+    "secondary": "economics-4-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC034GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-3-2"
+   },
+   {
+    "n": "2",
+    "primary": "economics-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "economics-2-1",
+    "secondary": "economics-3-2"
+   },
+   {
+    "n": "4",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "economics-1-2"
+   },
+   {
+    "n": "6",
+    "primary": "economics-3-0",
+    "secondary": "economics-3-5"
+   },
+   {
+    "n": "7",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "8",
+    "primary": "economics-4-0",
+    "secondary": "economics-3-1"
+   },
+   {
+    "n": "9",
+    "primary": "economics-0-1",
+    "secondary": "economics-3-1"
+   },
+   {
+    "n": "10",
+    "primary": "economics-2-2",
+    "secondary": "economics-1-3"
+   },
+   {
+    "n": "11",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "13",
+    "primary": "economics-4-2"
+   },
+   {
+    "n": "14",
+    "primary": "economics-3-3",
+    "secondary": "economics-1-0"
+   },
+   {
+    "n": "15",
+    "primary": "economics-1-3"
+   },
+   {
+    "n": "16",
+    "primary": "economics-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "LC034GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-3-2"
+   },
+   {
+    "n": "2",
+    "primary": "economics-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "economics-2-1",
+    "secondary": "economics-3-2"
+   },
+   {
+    "n": "4",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "economics-1-2"
+   },
+   {
+    "n": "6",
+    "primary": "economics-3-0",
+    "secondary": "economics-3-5"
+   },
+   {
+    "n": "7",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "8",
+    "primary": "economics-4-0",
+    "secondary": "economics-3-1"
+   },
+   {
+    "n": "9",
+    "primary": "economics-0-1",
+    "secondary": "economics-3-1"
+   },
+   {
+    "n": "10",
+    "primary": "economics-2-2",
+    "secondary": "economics-1-3"
+   },
+   {
+    "n": "11",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "13",
+    "primary": "economics-4-2"
+   },
+   {
+    "n": "14",
+    "primary": "economics-3-3",
+    "secondary": "economics-1-0"
+   },
+   {
+    "n": "15",
+    "primary": "economics-1-3"
+   },
+   {
+    "n": "16",
+    "primary": "economics-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC034GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-3-5"
+   },
+   {
+    "n": "2",
+    "primary": "economics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "economics-1-1"
+   },
+   {
+    "n": "4",
+    "primary": "economics-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "economics-2-1",
+    "secondary": "economics-1-3"
+   },
+   {
+    "n": "6",
+    "primary": "economics-3-2"
+   },
+   {
+    "n": "7",
+    "primary": "economics-1-5"
+   },
+   {
+    "n": "8",
+    "primary": "economics-2-2",
+    "secondary": "economics-0-1"
+   },
+   {
+    "n": "9",
+    "primary": "economics-1-4"
+   },
+   {
+    "n": "10",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "11",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "economics-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "14",
+    "primary": "economics-0-1"
+   },
+   {
+    "n": "15",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "16",
+    "primary": "economics-1-3",
+    "secondary": "economics-2-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "LC034GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-3-5"
+   },
+   {
+    "n": "2",
+    "primary": "economics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "economics-1-1"
+   },
+   {
+    "n": "4",
+    "primary": "economics-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "economics-2-1",
+    "secondary": "economics-1-3"
+   },
+   {
+    "n": "6",
+    "primary": "economics-3-2"
+   },
+   {
+    "n": "7",
+    "primary": "economics-1-5"
+   },
+   {
+    "n": "8",
+    "primary": "economics-2-2",
+    "secondary": "economics-0-1"
+   },
+   {
+    "n": "9",
+    "primary": "economics-1-4"
+   },
+   {
+    "n": "10",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "11",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "economics-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "14",
+    "primary": "economics-0-1"
+   },
+   {
+    "n": "15",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "16",
+    "primary": "economics-1-3",
+    "secondary": "economics-2-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC034GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "2",
+    "primary": "economics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "economics-1-4"
+   },
+   {
+    "n": "4",
+    "primary": "economics-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "economics-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "economics-3-0",
+    "secondary": "economics-4-2"
+   },
+   {
+    "n": "7",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "8",
+    "primary": "economics-1-1"
+   },
+   {
+    "n": "9",
+    "primary": "economics-0-2"
+   },
+   {
+    "n": "10",
+    "primary": "economics-2-1"
+   },
+   {
+    "n": "11",
+    "primary": "economics-4-0"
+   },
+   {
+    "n": "12",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "13",
+    "primary": "economics-3-1",
+    "secondary": "economics-3-3"
+   },
+   {
+    "n": "14",
+    "primary": "economics-3-1",
+    "secondary": "economics-0-1"
+   },
+   {
+    "n": "15",
+    "primary": "economics-1-2"
+   },
+   {
+    "n": "16",
+    "primary": "economics-0-1",
+    "secondary": "economics-1-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2021,
+  "fileid": "LC034GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "2",
+    "primary": "economics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "economics-1-4"
+   },
+   {
+    "n": "4",
+    "primary": "economics-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "economics-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "economics-3-0",
+    "secondary": "economics-4-2"
+   },
+   {
+    "n": "7",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "8",
+    "primary": "economics-1-1"
+   },
+   {
+    "n": "9",
+    "primary": "economics-0-2"
+   },
+   {
+    "n": "10",
+    "primary": "economics-2-1"
+   },
+   {
+    "n": "11",
+    "primary": "economics-4-0"
+   },
+   {
+    "n": "12",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "13",
+    "primary": "economics-3-1",
+    "secondary": "economics-3-3"
+   },
+   {
+    "n": "14",
+    "primary": "economics-3-1",
+    "secondary": "economics-0-1"
+   },
+   {
+    "n": "15",
+    "primary": "economics-1-2"
+   },
+   {
+    "n": "16",
+    "primary": "economics-0-1",
+    "secondary": "economics-1-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
   "level": "higher",
   "lang": "ev",
   "year": 2020,
@@ -35073,6 +46008,44 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
   "level": "higher",
   "lang": "ev",
   "year": 2017,
+  "fileid": "LC002ALP100EV.pdf",
+  "paperKey": "p1",
+  "q": [
+   {
+    "n": "1",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "2",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "3",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "4",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "5",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "6",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "7",
+    "primary": "english-9-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "english",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2017,
   "fileid": "LC002ALP200EV.pdf",
   "paperKey": "p2",
   "q": [
@@ -35099,6 +46072,44 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
   "level": "higher",
   "lang": "ev",
   "year": 2016,
+  "fileid": "LC002ALP100EV.pdf",
+  "paperKey": "p1",
+  "q": [
+   {
+    "n": "1",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "2",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "3",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "4",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "5",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "6",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "7",
+    "primary": "english-9-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "english",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2016,
   "fileid": "LC002ALP200EV.pdf",
   "paperKey": "p2",
   "q": [
@@ -35117,6 +46128,44 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "4",
     "primary": "english-11-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "english",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC002ALP100EV.pdf",
+  "paperKey": "p1",
+  "q": [
+   {
+    "n": "1",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "2",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "3",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "4",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "5",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "6",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "7",
+    "primary": "english-9-1"
    }
   ]
  },
@@ -35177,6 +46226,44 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
   "level": "higher",
   "lang": "ev",
   "year": 2013,
+  "fileid": "LC002ALP100EV.pdf",
+  "paperKey": "p1",
+  "q": [
+   {
+    "n": "1",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "2",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "3",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "4",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "5",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "6",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "7",
+    "primary": "english-9-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "english",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2013,
   "fileid": "LC002ALP200EV.pdf",
   "paperKey": "p2",
   "q": [
@@ -35195,6 +46282,44 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "4",
     "primary": "english-11-19"
+   }
+  ]
+ },
+ {
+  "subjectId": "english",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC002ALP100EV.pdf",
+  "paperKey": "p1",
+  "q": [
+   {
+    "n": "1",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "2",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "3",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "4",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "5",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "6",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "7",
+    "primary": "english-9-1"
    }
   ]
  },
@@ -35229,6 +46354,44 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
   "level": "higher",
   "lang": "ev",
   "year": 2011,
+  "fileid": "LC002ALP100EV.pdf",
+  "paperKey": "p1",
+  "q": [
+   {
+    "n": "1",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "2",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "3",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "4",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "5",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "6",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "7",
+    "primary": "english-9-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "english",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2011,
   "fileid": "LC002ALP200EV.pdf",
   "paperKey": "p2",
   "q": [
@@ -35247,6 +46410,44 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "4",
     "primary": "english-11-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "english",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC002ALP100EV.pdf",
+  "paperKey": "p1",
+  "q": [
+   {
+    "n": "1",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "2",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "3",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "4",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "5",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "6",
+    "primary": "english-9-1"
+   },
+   {
+    "n": "7",
+    "primary": "english-9-1"
    }
   ]
  },
@@ -37508,6 +48709,69 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  {
   "subjectId": "geography",
   "level": "ordinary",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "LC005GLP042IV.pdf",
+  "paperKey": "p1",
+  "q": [
+   {
+    "n": "1",
+    "primary": "geography-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "geography-0-3",
+    "secondary": "geography-0-4"
+   },
+   {
+    "n": "3",
+    "primary": "geography-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "geography-0-1",
+    "secondary": "geography-0-3"
+   },
+   {
+    "n": "5",
+    "primary": "geography-2-6"
+   },
+   {
+    "n": "6",
+    "primary": "geography-2-6"
+   },
+   {
+    "n": "7",
+    "primary": "geography-2-8"
+   },
+   {
+    "n": "8",
+    "primary": "geography-1-0",
+    "secondary": "geography-1-3"
+   },
+   {
+    "n": "9",
+    "primary": "geography-3-3"
+   },
+   {
+    "n": "10",
+    "primary": "geography-2-7"
+   },
+   {
+    "n": "11",
+    "primary": "geography-2-0",
+    "secondary": "geography-4-1"
+   },
+   {
+    "n": "12",
+    "primary": "geography-2-8",
+    "secondary": "geography-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "geography",
+  "level": "ordinary",
   "lang": "ev",
   "year": 2025,
   "fileid": "LC005GLP043EV.pdf",
@@ -37567,6 +48831,191 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
     "n": "12",
     "primary": "geography-4-5",
     "secondary": "geography-4-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "geography",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "LC005GLP043IV.pdf",
+  "paperKey": "p2",
+  "q": [
+   {
+    "n": "1",
+    "primary": "geography-0-4",
+    "secondary": "geography-0-6"
+   },
+   {
+    "n": "2",
+    "primary": "geography-0-7"
+   },
+   {
+    "n": "3",
+    "primary": "geography-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "geography-1-5",
+    "secondary": "geography-1-0"
+   },
+   {
+    "n": "5",
+    "primary": "geography-3-0"
+   },
+   {
+    "n": "6",
+    "primary": "geography-3-0"
+   },
+   {
+    "n": "7",
+    "primary": "geography-3-4",
+    "secondary": "geography-2-8"
+   },
+   {
+    "n": "8",
+    "primary": "geography-3-0",
+    "secondary": "geography-3-2"
+   },
+   {
+    "n": "9",
+    "primary": "geography-3-2",
+    "secondary": "geography-3-4"
+   },
+   {
+    "n": "10",
+    "primary": "geography-4-2",
+    "secondary": "geography-4-5"
+   },
+   {
+    "n": "11",
+    "primary": "geography-4-0"
+   },
+   {
+    "n": "12",
+    "primary": "geography-4-5",
+    "secondary": "geography-4-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "geography",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC005ALP042EV.pdf",
+  "paperKey": "p1",
+  "q": [
+   {
+    "n": "1",
+    "primary": "geography-2-6",
+    "secondary": "geography-0-4"
+   },
+   {
+    "n": "2",
+    "primary": "geography-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "geography-0-9"
+   },
+   {
+    "n": "4",
+    "primary": "geography-0-10"
+   },
+   {
+    "n": "5",
+    "primary": "geography-0-7"
+   },
+   {
+    "n": "6",
+    "primary": "geography-1-0",
+    "secondary": "geography-1-3"
+   },
+   {
+    "n": "7",
+    "primary": "geography-2-6"
+   },
+   {
+    "n": "8",
+    "primary": "geography-2-8"
+   },
+   {
+    "n": "9",
+    "primary": "geography-2-6"
+   },
+   {
+    "n": "10",
+    "primary": "geography-2-7"
+   },
+   {
+    "n": "11",
+    "primary": "geography-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "geography-2-8"
+   }
+  ]
+ },
+ {
+  "subjectId": "geography",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "LC005ALP042IV.pdf",
+  "paperKey": "p1",
+  "q": [
+   {
+    "n": "1",
+    "primary": "geography-2-6",
+    "secondary": "geography-0-4"
+   },
+   {
+    "n": "2",
+    "primary": "geography-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "geography-0-9"
+   },
+   {
+    "n": "4",
+    "primary": "geography-0-10"
+   },
+   {
+    "n": "5",
+    "primary": "geography-0-7"
+   },
+   {
+    "n": "6",
+    "primary": "geography-1-0",
+    "secondary": "geography-1-3"
+   },
+   {
+    "n": "7",
+    "primary": "geography-2-6"
+   },
+   {
+    "n": "8",
+    "primary": "geography-2-8"
+   },
+   {
+    "n": "9",
+    "primary": "geography-2-6"
+   },
+   {
+    "n": "10",
+    "primary": "geography-2-7"
+   },
+   {
+    "n": "11",
+    "primary": "geography-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "geography-2-8"
    }
   ]
  },
@@ -37767,9 +49216,138 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  {
   "subjectId": "geography",
   "level": "ordinary",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "LC005GLP042IV.pdf",
+  "paperKey": "p1",
+  "q": [
+   {
+    "n": "1",
+    "primary": "geography-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "geography-0-1",
+    "secondary": "geography-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "geography-0-9"
+   },
+   {
+    "n": "4",
+    "primary": "geography-0-4"
+   },
+   {
+    "n": "5",
+    "primary": "geography-1-0",
+    "secondary": "geography-1-3"
+   },
+   {
+    "n": "6",
+    "primary": "geography-2-6"
+   },
+   {
+    "n": "7",
+    "primary": "geography-2-6"
+   },
+   {
+    "n": "8",
+    "primary": "geography-2-8"
+   },
+   {
+    "n": "9",
+    "primary": "geography-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "geography-2-7"
+   },
+   {
+    "n": "11",
+    "primary": "geography-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "geography-2-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "geography",
+  "level": "ordinary",
   "lang": "ev",
   "year": 2024,
   "fileid": "LC005GLP043EV.pdf",
+  "paperKey": "p2",
+  "q": [
+   {
+    "n": "1",
+    "primary": "geography-0-0",
+    "secondary": "geography-0-6"
+   },
+   {
+    "n": "2",
+    "primary": "geography-0-0",
+    "secondary": "geography-0-4"
+   },
+   {
+    "n": "3",
+    "primary": "geography-0-2",
+    "secondary": "geography-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "geography-1-4",
+    "secondary": "geography-3-3"
+   },
+   {
+    "n": "5",
+    "primary": "geography-3-0"
+   },
+   {
+    "n": "6",
+    "primary": "geography-3-1",
+    "secondary": "geography-3-3"
+   },
+   {
+    "n": "7",
+    "primary": "geography-3-2",
+    "secondary": "geography-2-8"
+   },
+   {
+    "n": "8",
+    "primary": "geography-3-2",
+    "secondary": "geography-3-3"
+   },
+   {
+    "n": "9",
+    "primary": "geography-3-0",
+    "secondary": "geography-2-6"
+   },
+   {
+    "n": "10",
+    "primary": "geography-4-2",
+    "secondary": "geography-2-6"
+   },
+   {
+    "n": "11",
+    "primary": "geography-4-5",
+    "secondary": "geography-4-1"
+   },
+   {
+    "n": "12",
+    "primary": "geography-4-0",
+    "secondary": "geography-4-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "geography",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "LC005GLP043IV.pdf",
   "paperKey": "p2",
   "q": [
    {
@@ -37901,10 +49479,135 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  },
  {
   "subjectId": "geography",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "LC005ALP043IV.pdf",
+  "paperKey": "p2",
+  "q": [
+   {
+    "n": "1",
+    "primary": "geography-0-1",
+    "secondary": "geography-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "geography-0-7"
+   },
+   {
+    "n": "3",
+    "primary": "geography-0-8"
+   },
+   {
+    "n": "4",
+    "primary": "geography-1-5",
+    "secondary": "geography-4-4"
+   },
+   {
+    "n": "5",
+    "primary": "geography-3-2",
+    "secondary": "geography-3-3"
+   },
+   {
+    "n": "6",
+    "primary": "geography-3-0"
+   },
+   {
+    "n": "7",
+    "primary": "geography-3-2",
+    "secondary": "geography-3-4"
+   },
+   {
+    "n": "8",
+    "primary": "geography-3-2",
+    "secondary": "geography-3-3"
+   },
+   {
+    "n": "9",
+    "primary": "geography-3-0",
+    "secondary": "geography-5-1"
+   },
+   {
+    "n": "10",
+    "primary": "geography-4-5",
+    "secondary": "geography-4-2"
+   },
+   {
+    "n": "11",
+    "primary": "geography-4-2",
+    "secondary": "geography-4-0"
+   },
+   {
+    "n": "12",
+    "primary": "geography-4-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "geography",
   "level": "ordinary",
   "lang": "ev",
   "year": 2023,
   "fileid": "LC005GLP042EV.pdf",
+  "paperKey": "p1",
+  "q": [
+   {
+    "n": "1",
+    "primary": "geography-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "geography-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "geography-0-7"
+   },
+   {
+    "n": "4",
+    "primary": "geography-0-4"
+   },
+   {
+    "n": "5",
+    "primary": "geography-1-0",
+    "secondary": "geography-1-3"
+   },
+   {
+    "n": "6",
+    "primary": "geography-2-6"
+   },
+   {
+    "n": "7",
+    "primary": "geography-2-6"
+   },
+   {
+    "n": "8",
+    "primary": "geography-2-8"
+   },
+   {
+    "n": "9",
+    "primary": "geography-2-7"
+   },
+   {
+    "n": "10",
+    "primary": "geography-2-8"
+   },
+   {
+    "n": "11",
+    "primary": "geography-4-0"
+   },
+   {
+    "n": "12",
+    "primary": "geography-2-7"
+   }
+  ]
+ },
+ {
+  "subjectId": "geography",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "LC005GLP042IV.pdf",
   "paperKey": "p1",
   "q": [
    {
@@ -38020,6 +49723,191 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
     "n": "12",
     "primary": "geography-4-4",
     "secondary": "geography-4-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "geography",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "LC005GLP043IV.pdf",
+  "paperKey": "p2",
+  "q": [
+   {
+    "n": "1",
+    "primary": "geography-0-1",
+    "secondary": "geography-0-2"
+   },
+   {
+    "n": "2",
+    "primary": "geography-0-4"
+   },
+   {
+    "n": "3",
+    "primary": "geography-0-7"
+   },
+   {
+    "n": "4",
+    "primary": "geography-1-5",
+    "secondary": "geography-1-3"
+   },
+   {
+    "n": "5",
+    "primary": "geography-1-2"
+   },
+   {
+    "n": "6",
+    "primary": "geography-4-0"
+   },
+   {
+    "n": "7",
+    "primary": "geography-3-4",
+    "secondary": "geography-5-1"
+   },
+   {
+    "n": "8",
+    "primary": "geography-3-0",
+    "secondary": "geography-2-6"
+   },
+   {
+    "n": "9",
+    "primary": "geography-3-5"
+   },
+   {
+    "n": "10",
+    "primary": "geography-4-2",
+    "secondary": "geography-4-5"
+   },
+   {
+    "n": "11",
+    "primary": "geography-4-0",
+    "secondary": "geography-4-3"
+   },
+   {
+    "n": "12",
+    "primary": "geography-4-4",
+    "secondary": "geography-4-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "geography",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC005ALP042EV.pdf",
+  "paperKey": "p1",
+  "q": [
+   {
+    "n": "1",
+    "primary": "geography-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "geography-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "geography-0-11"
+   },
+   {
+    "n": "4",
+    "primary": "geography-0-4",
+    "secondary": "geography-2-6"
+   },
+   {
+    "n": "5",
+    "primary": "geography-0-3"
+   },
+   {
+    "n": "6",
+    "primary": "geography-2-6"
+   },
+   {
+    "n": "7",
+    "primary": "geography-2-6"
+   },
+   {
+    "n": "8",
+    "primary": "geography-2-8"
+   },
+   {
+    "n": "9",
+    "primary": "geography-1-0",
+    "secondary": "geography-1-3"
+   },
+   {
+    "n": "10",
+    "primary": "geography-2-7"
+   },
+   {
+    "n": "11",
+    "primary": "geography-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "geography-2-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "geography",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "LC005ALP042IV.pdf",
+  "paperKey": "p1",
+  "q": [
+   {
+    "n": "1",
+    "primary": "geography-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "geography-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "geography-0-11"
+   },
+   {
+    "n": "4",
+    "primary": "geography-0-4",
+    "secondary": "geography-2-6"
+   },
+   {
+    "n": "5",
+    "primary": "geography-0-3"
+   },
+   {
+    "n": "6",
+    "primary": "geography-2-6"
+   },
+   {
+    "n": "7",
+    "primary": "geography-2-6"
+   },
+   {
+    "n": "8",
+    "primary": "geography-2-8"
+   },
+   {
+    "n": "9",
+    "primary": "geography-1-0",
+    "secondary": "geography-1-3"
+   },
+   {
+    "n": "10",
+    "primary": "geography-2-7"
+   },
+   {
+    "n": "11",
+    "primary": "geography-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "geography-2-0"
    }
   ]
  },
@@ -38163,6 +50051,130 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
   "level": "ordinary",
   "lang": "ev",
   "year": 2022,
+  "fileid": "LC005GLP042EV.pdf",
+  "paperKey": "p1",
+  "q": [
+   {
+    "n": "1",
+    "primary": "geography-0-7"
+   },
+   {
+    "n": "2",
+    "primary": "geography-0-4",
+    "secondary": "geography-0-9"
+   },
+   {
+    "n": "3",
+    "primary": "geography-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "geography-1-0",
+    "secondary": "geography-1-3"
+   },
+   {
+    "n": "5",
+    "primary": "geography-2-8"
+   },
+   {
+    "n": "6",
+    "primary": "geography-3-0"
+   },
+   {
+    "n": "7",
+    "primary": "geography-2-6"
+   },
+   {
+    "n": "8",
+    "primary": "geography-2-6"
+   },
+   {
+    "n": "9",
+    "primary": "geography-2-8"
+   },
+   {
+    "n": "10",
+    "primary": "geography-2-7"
+   },
+   {
+    "n": "11",
+    "primary": "geography-2-0",
+    "secondary": "geography-3-2"
+   },
+   {
+    "n": "12",
+    "primary": "geography-2-0",
+    "secondary": "geography-4-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "geography",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "LC005GLP042IV.pdf",
+  "paperKey": "p1",
+  "q": [
+   {
+    "n": "1",
+    "primary": "geography-0-7"
+   },
+   {
+    "n": "2",
+    "primary": "geography-0-4",
+    "secondary": "geography-0-9"
+   },
+   {
+    "n": "3",
+    "primary": "geography-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "geography-1-0",
+    "secondary": "geography-1-3"
+   },
+   {
+    "n": "5",
+    "primary": "geography-2-8"
+   },
+   {
+    "n": "6",
+    "primary": "geography-3-0"
+   },
+   {
+    "n": "7",
+    "primary": "geography-2-6"
+   },
+   {
+    "n": "8",
+    "primary": "geography-2-6"
+   },
+   {
+    "n": "9",
+    "primary": "geography-2-8"
+   },
+   {
+    "n": "10",
+    "primary": "geography-2-7"
+   },
+   {
+    "n": "11",
+    "primary": "geography-2-0",
+    "secondary": "geography-3-2"
+   },
+   {
+    "n": "12",
+    "primary": "geography-2-0",
+    "secondary": "geography-4-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "geography",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2022,
   "fileid": "LC005GLP043EV.pdf",
   "paperKey": "p2",
   "q": [
@@ -38289,6 +50301,138 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
     "n": "12",
     "primary": "geography-2-8",
     "secondary": "geography-4-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "geography",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC005ALP042EV.pdf",
+  "paperKey": "p1",
+  "q": [
+   {
+    "n": "1",
+    "primary": "geography-2-6",
+    "secondary": "geography-0-9"
+   },
+   {
+    "n": "2",
+    "primary": "geography-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "geography-0-4",
+    "secondary": "geography-0-11"
+   },
+   {
+    "n": "4",
+    "primary": "geography-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "geography-0-7",
+    "secondary": "geography-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "geography-1-0",
+    "secondary": "geography-1-3"
+   },
+   {
+    "n": "7",
+    "primary": "geography-2-6"
+   },
+   {
+    "n": "8",
+    "primary": "geography-2-8",
+    "secondary": "geography-2-6"
+   },
+   {
+    "n": "9",
+    "primary": "geography-2-8",
+    "secondary": "geography-4-4"
+   },
+   {
+    "n": "10",
+    "primary": "geography-2-7"
+   },
+   {
+    "n": "11",
+    "primary": "geography-2-0",
+    "secondary": "geography-3-0"
+   },
+   {
+    "n": "12",
+    "primary": "geography-2-0",
+    "secondary": "geography-4-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "geography",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2021,
+  "fileid": "LC005ALP042IV.pdf",
+  "paperKey": "p1",
+  "q": [
+   {
+    "n": "1",
+    "primary": "geography-2-6",
+    "secondary": "geography-0-9"
+   },
+   {
+    "n": "2",
+    "primary": "geography-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "geography-0-4",
+    "secondary": "geography-0-11"
+   },
+   {
+    "n": "4",
+    "primary": "geography-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "geography-0-7",
+    "secondary": "geography-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "geography-1-0",
+    "secondary": "geography-1-3"
+   },
+   {
+    "n": "7",
+    "primary": "geography-2-6"
+   },
+   {
+    "n": "8",
+    "primary": "geography-2-8",
+    "secondary": "geography-2-6"
+   },
+   {
+    "n": "9",
+    "primary": "geography-2-8",
+    "secondary": "geography-4-4"
+   },
+   {
+    "n": "10",
+    "primary": "geography-2-7"
+   },
+   {
+    "n": "11",
+    "primary": "geography-2-0",
+    "secondary": "geography-3-0"
+   },
+   {
+    "n": "12",
+    "primary": "geography-2-0",
+    "secondary": "geography-4-2"
    }
   ]
  },
@@ -38755,9 +50899,135 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  {
   "subjectId": "geography",
   "level": "ordinary",
+  "lang": "iv",
+  "year": 2020,
+  "fileid": "LC005GLP042IV.pdf",
+  "paperKey": "p1",
+  "q": [
+   {
+    "n": "1",
+    "primary": "geography-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "geography-0-7"
+   },
+   {
+    "n": "3",
+    "primary": "geography-0-9"
+   },
+   {
+    "n": "4",
+    "primary": "geography-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "geography-2-6"
+   },
+   {
+    "n": "6",
+    "primary": "geography-2-6"
+   },
+   {
+    "n": "7",
+    "primary": "geography-2-8"
+   },
+   {
+    "n": "8",
+    "primary": "geography-1-0"
+   },
+   {
+    "n": "9",
+    "primary": "geography-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "geography-2-7"
+   },
+   {
+    "n": "11",
+    "primary": "geography-3-0"
+   },
+   {
+    "n": "12",
+    "primary": "geography-2-8",
+    "secondary": "geography-0-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "geography",
+  "level": "ordinary",
   "lang": "ev",
   "year": 2020,
   "fileid": "LC005GLP043EV.pdf",
+  "paperKey": "p2",
+  "q": [
+   {
+    "n": "1",
+    "primary": "geography-0-1",
+    "secondary": "geography-0-6"
+   },
+   {
+    "n": "2",
+    "primary": "geography-0-7",
+    "secondary": "geography-0-6"
+   },
+   {
+    "n": "3",
+    "primary": "geography-0-4",
+    "secondary": "geography-0-3"
+   },
+   {
+    "n": "4",
+    "primary": "geography-1-4",
+    "secondary": "geography-3-3"
+   },
+   {
+    "n": "5",
+    "primary": "geography-4-0"
+   },
+   {
+    "n": "6",
+    "primary": "geography-3-0"
+   },
+   {
+    "n": "7",
+    "primary": "geography-3-0",
+    "secondary": "geography-2-6"
+   },
+   {
+    "n": "8",
+    "primary": "geography-3-2",
+    "secondary": "geography-2-6"
+   },
+   {
+    "n": "9",
+    "primary": "geography-3-5",
+    "secondary": "geography-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "geography-4-3",
+    "secondary": "geography-4-2"
+   },
+   {
+    "n": "11",
+    "primary": "geography-4-3",
+    "secondary": "geography-4-2"
+   },
+   {
+    "n": "12",
+    "primary": "geography-4-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "geography",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2020,
+  "fileid": "LC005GLP043IV.pdf",
   "paperKey": "p2",
   "q": [
    {
@@ -44193,6 +56463,96 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  {
   "subjectId": "home-economics-s-and-s",
   "level": "ordinary",
+  "lang": "iv",
+  "year": 2020,
+  "fileid": "LC098GLP014IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-6"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-7"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-9"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-0-3"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-0-3"
+   },
+   {
+    "n": "6",
+    "primary": "home-economics-0-11"
+   },
+   {
+    "n": "7",
+    "primary": "home-economics-0-1"
+   },
+   {
+    "n": "8",
+    "primary": "home-economics-0-11"
+   },
+   {
+    "n": "9",
+    "primary": "home-economics-1-1"
+   },
+   {
+    "n": "10",
+    "primary": "home-economics-1-2"
+   },
+   {
+    "n": "11",
+    "primary": "home-economics-1-0"
+   },
+   {
+    "n": "12",
+    "primary": "home-economics-1-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2020,
+  "fileid": "LC098GLP039IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "home-economics-0-0",
+    "secondary": "home-economics-0-9"
+   },
+   {
+    "n": "2",
+    "primary": "home-economics-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "home-economics-0-9"
+   },
+   {
+    "n": "4",
+    "primary": "home-economics-1-3",
+    "secondary": "home-economics-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "home-economics-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "home-economics-s-and-s",
+  "level": "ordinary",
   "lang": "ev",
   "year": 2016,
   "fileid": "LC098GLP000EV.pdf",
@@ -46185,6 +58545,122 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "10",
     "primary": "irish-3-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "irish",
+  "level": "foundation",
+  "lang": "iv",
+  "year": 2011,
+  "fileid": "LC001BLPA00IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "irish-1-3"
+   },
+   {
+    "n": "2",
+    "primary": "irish-1-3"
+   },
+   {
+    "n": "3",
+    "primary": "irish-1-3"
+   },
+   {
+    "n": "4",
+    "primary": "irish-1-3"
+   },
+   {
+    "n": "5",
+    "primary": "irish-1-3"
+   },
+   {
+    "n": "6",
+    "primary": "irish-1-3"
+   },
+   {
+    "n": "7",
+    "primary": "irish-1-3"
+   },
+   {
+    "n": "8",
+    "primary": "irish-1-3"
+   },
+   {
+    "n": "9",
+    "primary": "irish-1-3"
+   },
+   {
+    "n": "10",
+    "primary": "irish-1-3"
+   },
+   {
+    "n": "11",
+    "primary": "irish-1-3"
+   },
+   {
+    "n": "12",
+    "primary": "irish-1-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "irish",
+  "level": "foundation",
+  "lang": "iv",
+  "year": 2010,
+  "fileid": "LC001BLPA00IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "irish-1-3"
+   },
+   {
+    "n": "2",
+    "primary": "irish-1-3"
+   },
+   {
+    "n": "3",
+    "primary": "irish-1-3"
+   },
+   {
+    "n": "4",
+    "primary": "irish-1-3"
+   },
+   {
+    "n": "5",
+    "primary": "irish-1-3"
+   },
+   {
+    "n": "6",
+    "primary": "irish-1-3"
+   },
+   {
+    "n": "7",
+    "primary": "irish-1-3"
+   },
+   {
+    "n": "8",
+    "primary": "irish-1-3"
+   },
+   {
+    "n": "9",
+    "primary": "irish-1-3"
+   },
+   {
+    "n": "10",
+    "primary": "irish-1-3"
+   },
+   {
+    "n": "11",
+    "primary": "irish-1-3"
+   },
+   {
+    "n": "12",
+    "primary": "irish-1-3"
    }
   ]
  },
@@ -76871,6 +89347,216 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  },
  {
   "subjectId": "music",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "LC067GLP008IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "music-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "music-2-0"
+   },
+   {
+    "n": "3",
+    "primary": "music-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "music-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "music-2-2"
+   },
+   {
+    "n": "6",
+    "primary": "music-2-4",
+    "secondary": "music-2-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "music",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC067GLP008EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "music-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "music-2-0"
+   },
+   {
+    "n": "3",
+    "primary": "music-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "music-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "music-2-2"
+   },
+   {
+    "n": "6",
+    "primary": "music-2-4",
+    "secondary": "music-2-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "music",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "LC067GLP008IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "music-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "music-2-0"
+   },
+   {
+    "n": "3",
+    "primary": "music-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "music-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "music-2-2"
+   },
+   {
+    "n": "6",
+    "primary": "music-2-4",
+    "secondary": "music-2-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "music",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "LC067GLP008IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "music-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "music-2-0"
+   },
+   {
+    "n": "3",
+    "primary": "music-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "music-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "music-2-2"
+   },
+   {
+    "n": "6",
+    "primary": "music-2-4",
+    "secondary": "music-2-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "music",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC067GLP008EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "music-2-9"
+   },
+   {
+    "n": "2",
+    "primary": "music-2-10"
+   },
+   {
+    "n": "3",
+    "primary": "music-2-11"
+   },
+   {
+    "n": "4",
+    "primary": "music-2-12"
+   },
+   {
+    "n": "5",
+    "primary": "music-2-2"
+   },
+   {
+    "n": "6",
+    "primary": "music-2-4",
+    "secondary": "music-2-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "music",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "LC067GLP008IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "music-2-9"
+   },
+   {
+    "n": "2",
+    "primary": "music-2-10"
+   },
+   {
+    "n": "3",
+    "primary": "music-2-11"
+   },
+   {
+    "n": "4",
+    "primary": "music-2-12"
+   },
+   {
+    "n": "5",
+    "primary": "music-2-2"
+   },
+   {
+    "n": "6",
+    "primary": "music-2-4",
+    "secondary": "music-2-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "music",
   "level": "higher",
   "lang": "ev",
   "year": 2018,
@@ -76900,6 +89586,704 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "6",
     "primary": "music-1-15"
+   }
+  ]
+ },
+ {
+  "subjectId": "music",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC067ALPU00EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "5",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "6",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "7",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "8",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "9",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "10",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "11",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "12",
+    "primary": "music-0-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "music",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC067ALPU00IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "5",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "6",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "7",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "8",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "9",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "10",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "11",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "12",
+    "primary": "music-0-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "music",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC067GLPU00EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "5",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "6",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "7",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "8",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "9",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "10",
+    "primary": "music-0-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "music",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC067GLPU00IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "5",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "6",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "7",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "8",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "9",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "10",
+    "primary": "music-0-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "music",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC067ALPU00EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "5",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "6",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "7",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "8",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "9",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "10",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "11",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "12",
+    "primary": "music-0-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "music",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC067ALPU00IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "5",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "6",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "7",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "8",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "9",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "10",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "11",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "12",
+    "primary": "music-0-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "music",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC067GLPU00EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "5",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "6",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "7",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "8",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "9",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "10",
+    "primary": "music-0-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "music",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC067GLPU00IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "5",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "6",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "7",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "8",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "9",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "10",
+    "primary": "music-0-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "music",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC067ALPU00EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "5",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "6",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "7",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "8",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "9",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "10",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "11",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "12",
+    "primary": "music-0-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "music",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC067ALPU00IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "5",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "6",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "7",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "8",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "9",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "10",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "11",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "12",
+    "primary": "music-0-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "music",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC067GLPU00EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "5",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "6",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "7",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "8",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "9",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "10",
+    "primary": "music-0-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "music",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC067GLPU00IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "5",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "6",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "7",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "8",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "9",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "10",
+    "primary": "music-0-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "music",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC067GLPU00EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "2",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "4",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "5",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "6",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "7",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "8",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "9",
+    "primary": "music-0-5"
+   },
+   {
+    "n": "10",
+    "primary": "music-0-5"
    }
   ]
  },
@@ -84937,6 +98321,127 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
   "subjectId": "religious-education",
   "level": "ordinary",
   "lang": "ev",
+  "year": 2025,
+  "fileid": "LC223GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "religious-education-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "religious-education-0-0",
+    "secondary": "religious-education-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "religious-education-0-4",
+    "secondary": "religious-education-0-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "religious-education",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "LC223GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "religious-education-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "religious-education-0-0",
+    "secondary": "religious-education-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "religious-education-0-4",
+    "secondary": "religious-education-0-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "religious-education",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC223GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "religious-education-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "religious-education-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "religious-education-0-0",
+    "secondary": "religious-education-0-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "religious-education",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC223GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "religious-education-0-1",
+    "secondary": "religious-education-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "religious-education-0-6",
+    "secondary": "religious-education-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "religious-education-0-3",
+    "secondary": "religious-education-0-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "religious-education",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "LC223GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "religious-education-0-1",
+    "secondary": "religious-education-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "religious-education-0-6",
+    "secondary": "religious-education-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "religious-education-0-3",
+    "secondary": "religious-education-0-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "religious-education",
+  "level": "ordinary",
+  "lang": "ev",
   "year": 2022,
   "fileid": "LC223GLP000EV.pdf",
   "paperKey": "single",
@@ -84955,6 +98460,399 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
     "n": "3",
     "primary": "religious-education-0-3",
     "secondary": "religious-education-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "religious-education",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "LC223GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "religious-education-0-6",
+    "secondary": "religious-education-0-4"
+   },
+   {
+    "n": "2",
+    "primary": "religious-education-0-2",
+    "secondary": "religious-education-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "religious-education-0-3",
+    "secondary": "religious-education-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "religious-education",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC223GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "religious-education-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "religious-education-0-6",
+    "secondary": "religious-education-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "religious-education-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "religious-education",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2021,
+  "fileid": "LC223GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "religious-education-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "religious-education-0-6",
+    "secondary": "religious-education-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "religious-education-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "religious-education",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC223GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "religious-education-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "religious-education-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "religious-education-0-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "religious-education",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2019,
+  "fileid": "LC223GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "religious-education-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "religious-education-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "religious-education-0-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "religious-education",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC223GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "religious-education-0-4",
+    "secondary": "religious-education-0-2"
+   },
+   {
+    "n": "2",
+    "primary": "religious-education-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "religious-education-0-3",
+    "secondary": "religious-education-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "religious-education",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2018,
+  "fileid": "LC223GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "religious-education-0-4",
+    "secondary": "religious-education-0-2"
+   },
+   {
+    "n": "2",
+    "primary": "religious-education-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "religious-education-0-3",
+    "secondary": "religious-education-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "religious-education",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC223GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "religious-education-0-2",
+    "secondary": "religious-education-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "religious-education-0-4",
+    "secondary": "religious-education-0-6"
+   },
+   {
+    "n": "3",
+    "primary": "religious-education-0-7"
+   }
+  ]
+ },
+ {
+  "subjectId": "religious-education",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2017,
+  "fileid": "LC223GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "religious-education-0-2",
+    "secondary": "religious-education-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "religious-education-0-4",
+    "secondary": "religious-education-0-6"
+   },
+   {
+    "n": "3",
+    "primary": "religious-education-0-7"
+   }
+  ]
+ },
+ {
+  "subjectId": "religious-education",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC223GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "religious-education-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "religious-education-0-6"
+   },
+   {
+    "n": "3",
+    "primary": "religious-education-0-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "religious-education",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC223GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "religious-education-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "religious-education-0-6"
+   },
+   {
+    "n": "3",
+    "primary": "religious-education-0-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "religious-education",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC223GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "religious-education-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "religious-education-0-4",
+    "secondary": "religious-education-0-6"
+   },
+   {
+    "n": "3",
+    "primary": "religious-education-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "religious-education",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC223GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "religious-education-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "religious-education-0-4",
+    "secondary": "religious-education-0-6"
+   },
+   {
+    "n": "3",
+    "primary": "religious-education-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "religious-education",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC223GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "religious-education-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "religious-education-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "religious-education-0-3",
+    "secondary": "religious-education-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "religious-education",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2012,
+  "fileid": "LC223GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "religious-education-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "religious-education-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "religious-education-0-3",
+    "secondary": "religious-education-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "religious-education",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC223GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "religious-education-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "religious-education-0-6",
+    "secondary": "religious-education-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "religious-education-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "religious-education",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2010,
+  "fileid": "LC223GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "religious-education-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "religious-education-0-6",
+    "secondary": "religious-education-0-5"
+   },
+   {
+    "n": "3",
+    "primary": "religious-education-0-0"
    }
   ]
  },

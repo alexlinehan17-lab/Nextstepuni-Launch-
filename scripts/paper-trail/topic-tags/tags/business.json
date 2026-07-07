@@ -2165,5 +2165,636 @@
     "primary": "business-3-18"
    }
   ]
+ },
+ {
+  "subjectId": "business",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "LC033ALP041IV.pdf",
+  "paperKey": "p2",
+  "q": [
+   {
+    "n": "1",
+    "primary": "business-0-14",
+    "secondary": "business-0-12"
+   },
+   {
+    "n": "2",
+    "primary": "business-5-15",
+    "secondary": "business-5-14"
+   },
+   {
+    "n": "3",
+    "primary": "business-6-13",
+    "secondary": "business-6-14"
+   },
+   {
+    "n": "4",
+    "primary": "business-0-12",
+    "secondary": "business-0-14"
+   },
+   {
+    "n": "5",
+    "primary": "business-2-12",
+    "secondary": "business-2-11"
+   },
+   {
+    "n": "6",
+    "primary": "business-3-17",
+    "secondary": "business-3-21"
+   },
+   {
+    "n": "7",
+    "primary": "business-4-18",
+    "secondary": "business-4-14"
+   },
+   {
+    "n": "8",
+    "primary": "business-4-16",
+    "secondary": "business-3-19"
+   }
+  ]
+ },
+ {
+  "subjectId": "business",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC033ALP032EV.pdf",
+  "paperKey": "p1",
+  "q": [
+   {
+    "n": "1",
+    "primary": "business-5-14",
+    "secondary": "business-4-18"
+   },
+   {
+    "n": "2",
+    "primary": "business-5-15",
+    "secondary": "business-6-13"
+   },
+   {
+    "n": "3",
+    "primary": "business-5-16"
+   },
+   {
+    "n": "4",
+    "primary": "business-3-19"
+   },
+   {
+    "n": "5",
+    "primary": "business-6-14"
+   },
+   {
+    "n": "6",
+    "primary": "business-6-13"
+   },
+   {
+    "n": "7",
+    "primary": "business-2-13"
+   },
+   {
+    "n": "8",
+    "primary": "business-2-13"
+   },
+   {
+    "n": "9",
+    "primary": "business-3-17"
+   },
+   {
+    "n": "10",
+    "primary": "business-4-17"
+   },
+   {
+    "n": "11",
+    "primary": "business-0-14"
+   },
+   {
+    "n": "12",
+    "primary": "business-3-20"
+   }
+  ]
+ },
+ {
+  "subjectId": "business",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "LC033ALP041IV.pdf",
+  "paperKey": "p2",
+  "q": [
+   {
+    "n": "1",
+    "primary": "business-0-12",
+    "secondary": "business-0-13"
+   },
+   {
+    "n": "2",
+    "primary": "business-5-15",
+    "secondary": "business-5-13"
+   },
+   {
+    "n": "3",
+    "primary": "business-6-13",
+    "secondary": "business-6-15"
+   },
+   {
+    "n": "4",
+    "primary": "business-0-14",
+    "secondary": "business-0-13"
+   },
+   {
+    "n": "5",
+    "primary": "business-2-13",
+    "secondary": "business-1-5"
+   },
+   {
+    "n": "6",
+    "primary": "business-3-16"
+   },
+   {
+    "n": "7",
+    "primary": "business-4-15",
+    "secondary": "business-5-14"
+   },
+   {
+    "n": "8",
+    "primary": "business-4-17"
+   }
+  ]
+ },
+ {
+  "subjectId": "business",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "LC033ALP041IV.pdf",
+  "paperKey": "p2",
+  "q": [
+   {
+    "n": "1",
+    "primary": "business-0-12",
+    "secondary": "business-0-13"
+   },
+   {
+    "n": "2",
+    "primary": "business-5-14",
+    "secondary": "business-5-17"
+   },
+   {
+    "n": "3",
+    "primary": "business-6-14",
+    "secondary": "business-6-15"
+   },
+   {
+    "n": "4",
+    "primary": "business-0-14"
+   },
+   {
+    "n": "5",
+    "primary": "business-2-11",
+    "secondary": "business-2-13"
+   },
+   {
+    "n": "6",
+    "primary": "business-3-20",
+    "secondary": "business-3-17"
+   },
+   {
+    "n": "7",
+    "primary": "business-4-14",
+    "secondary": "business-3-18"
+   },
+   {
+    "n": "8",
+    "primary": "business-4-18",
+    "secondary": "business-4-16"
+   }
+  ]
+ },
+ {
+  "subjectId": "business",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC033GLP033EV.pdf",
+  "paperKey": "p2",
+  "q": [
+   {
+    "n": "1",
+    "primary": "business-0-14",
+    "secondary": "business-0-12"
+   },
+   {
+    "n": "2",
+    "primary": "business-5-15",
+    "secondary": "business-5-17"
+   },
+   {
+    "n": "3",
+    "primary": "business-6-13"
+   },
+   {
+    "n": "4",
+    "primary": "business-0-13",
+    "secondary": "business-0-14"
+   },
+   {
+    "n": "5",
+    "primary": "business-1-5",
+    "secondary": "business-2-11"
+   },
+   {
+    "n": "6",
+    "primary": "business-2-12"
+   },
+   {
+    "n": "7",
+    "primary": "business-3-20",
+    "secondary": "business-3-18"
+   },
+   {
+    "n": "8",
+    "primary": "business-4-17",
+    "secondary": "business-4-15"
+   },
+   {
+    "n": "9",
+    "primary": "business-4-14",
+    "secondary": "business-4-16"
+   }
+  ]
+ },
+ {
+  "subjectId": "business",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "LC033GLP033IV.pdf",
+  "paperKey": "p2",
+  "q": [
+   {
+    "n": "1",
+    "primary": "business-0-14",
+    "secondary": "business-0-12"
+   },
+   {
+    "n": "2",
+    "primary": "business-5-15",
+    "secondary": "business-5-17"
+   },
+   {
+    "n": "3",
+    "primary": "business-6-13"
+   },
+   {
+    "n": "4",
+    "primary": "business-0-13",
+    "secondary": "business-0-14"
+   },
+   {
+    "n": "5",
+    "primary": "business-1-5",
+    "secondary": "business-2-11"
+   },
+   {
+    "n": "6",
+    "primary": "business-2-12"
+   },
+   {
+    "n": "7",
+    "primary": "business-3-20",
+    "secondary": "business-3-18"
+   },
+   {
+    "n": "8",
+    "primary": "business-4-17",
+    "secondary": "business-4-15"
+   },
+   {
+    "n": "9",
+    "primary": "business-4-14",
+    "secondary": "business-4-16"
+   }
+  ]
+ },
+ {
+  "subjectId": "business",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "LC033ALP041IV.pdf",
+  "paperKey": "p2",
+  "q": [
+   {
+    "n": "1",
+    "primary": "business-0-14"
+   },
+   {
+    "n": "2",
+    "primary": "business-5-14",
+    "secondary": "business-5-15"
+   },
+   {
+    "n": "3",
+    "primary": "business-6-15",
+    "secondary": "business-6-13"
+   },
+   {
+    "n": "4",
+    "primary": "business-0-13"
+   },
+   {
+    "n": "5",
+    "primary": "business-2-11",
+    "secondary": "business-1-5"
+   },
+   {
+    "n": "6",
+    "primary": "business-3-20",
+    "secondary": "business-3-17"
+   },
+   {
+    "n": "7",
+    "primary": "business-4-18",
+    "secondary": "business-3-16"
+   },
+   {
+    "n": "8",
+    "primary": "business-4-17"
+   }
+  ]
+ },
+ {
+  "subjectId": "business",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2021,
+  "fileid": "LC033ALP041IV.pdf",
+  "paperKey": "p2",
+  "q": [
+   {
+    "n": "1",
+    "primary": "business-0-12",
+    "secondary": "business-0-13"
+   },
+   {
+    "n": "2",
+    "primary": "business-5-15",
+    "secondary": "business-5-16"
+   },
+   {
+    "n": "3",
+    "primary": "business-6-13",
+    "secondary": "business-6-14"
+   },
+   {
+    "n": "4",
+    "primary": "business-0-14",
+    "secondary": "business-0-12"
+   },
+   {
+    "n": "5",
+    "primary": "business-1-5",
+    "secondary": "business-2-12"
+   },
+   {
+    "n": "6",
+    "primary": "business-3-20",
+    "secondary": "business-3-21"
+   },
+   {
+    "n": "7",
+    "primary": "business-4-14",
+    "secondary": "business-3-19"
+   },
+   {
+    "n": "8",
+    "primary": "business-4-15",
+    "secondary": "business-4-14"
+   }
+  ]
+ },
+ {
+  "subjectId": "business",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2020,
+  "fileid": "LC033GLP032IV.pdf",
+  "paperKey": "p1",
+  "q": [
+   {
+    "n": "1",
+    "primary": "business-2-13"
+   },
+   {
+    "n": "2",
+    "primary": "business-4-15"
+   },
+   {
+    "n": "3",
+    "primary": "business-1-5"
+   },
+   {
+    "n": "4",
+    "primary": "business-6-14"
+   },
+   {
+    "n": "5",
+    "primary": "business-4-16"
+   },
+   {
+    "n": "6",
+    "primary": "business-5-15"
+   },
+   {
+    "n": "7",
+    "primary": "business-4-17"
+   },
+   {
+    "n": "8",
+    "primary": "business-4-18"
+   },
+   {
+    "n": "9",
+    "primary": "business-6-13"
+   },
+   {
+    "n": "10",
+    "primary": "business-3-20"
+   },
+   {
+    "n": "11",
+    "primary": "business-3-18"
+   },
+   {
+    "n": "12",
+    "primary": "business-2-13"
+   },
+   {
+    "n": "13",
+    "primary": "business-5-15"
+   },
+   {
+    "n": "14",
+    "primary": "business-4-14"
+   },
+   {
+    "n": "15",
+    "primary": "business-0-12"
+   }
+  ]
+ },
+ {
+  "subjectId": "business",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2020,
+  "fileid": "LC033GLP033IV.pdf",
+  "paperKey": "p2",
+  "q": [
+   {
+    "n": "1",
+    "primary": "business-0-13",
+    "secondary": "business-0-12"
+   },
+   {
+    "n": "2",
+    "primary": "business-5-13"
+   },
+   {
+    "n": "3",
+    "primary": "business-6-13"
+   },
+   {
+    "n": "4",
+    "primary": "business-1-5",
+    "secondary": "business-2-11"
+   },
+   {
+    "n": "5",
+    "primary": "business-3-17"
+   },
+   {
+    "n": "6",
+    "primary": "business-3-20",
+    "secondary": "business-2-11"
+   },
+   {
+    "n": "7",
+    "primary": "business-4-17",
+    "secondary": "business-4-16"
+   },
+   {
+    "n": "8",
+    "primary": "business-4-18",
+    "secondary": "business-4-15"
+   }
+  ]
+ },
+ {
+  "subjectId": "business",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC033ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "business-3-20",
+    "secondary": "business-2-13"
+   },
+   {
+    "n": "2",
+    "primary": "business-5-13"
+   },
+   {
+    "n": "3",
+    "primary": "business-3-18"
+   },
+   {
+    "n": "4",
+    "primary": "business-5-15",
+    "secondary": "business-6-14"
+   },
+   {
+    "n": "5",
+    "primary": "business-5-15"
+   },
+   {
+    "n": "6",
+    "primary": "business-2-13"
+   },
+   {
+    "n": "7",
+    "primary": "business-6-13"
+   },
+   {
+    "n": "8",
+    "primary": "business-4-16"
+   },
+   {
+    "n": "9",
+    "primary": "business-0-12"
+   },
+   {
+    "n": "10",
+    "primary": "business-3-19"
+   }
+  ]
+ },
+ {
+  "subjectId": "business",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2019,
+  "fileid": "LC033ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "business-3-20",
+    "secondary": "business-2-13"
+   },
+   {
+    "n": "2",
+    "primary": "business-5-13"
+   },
+   {
+    "n": "3",
+    "primary": "business-3-18"
+   },
+   {
+    "n": "4",
+    "primary": "business-5-15",
+    "secondary": "business-6-14"
+   },
+   {
+    "n": "5",
+    "primary": "business-5-15"
+   },
+   {
+    "n": "6",
+    "primary": "business-2-13"
+   },
+   {
+    "n": "7",
+    "primary": "business-6-13"
+   },
+   {
+    "n": "8",
+    "primary": "business-4-16"
+   },
+   {
+    "n": "9",
+    "primary": "business-0-12"
+   },
+   {
+    "n": "10",
+    "primary": "business-3-19"
+   }
+  ]
  }
 ]

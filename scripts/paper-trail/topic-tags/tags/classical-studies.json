@@ -462,5 +462,243 @@
     "primary": "classical-studies-3-1"
    }
   ]
+ },
+ {
+  "subjectId": "classical-studies",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "LC008GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "classical-studies-3-0"
+   },
+   {
+    "n": "2",
+    "primary": "classical-studies-3-1"
+   },
+   {
+    "n": "3",
+    "primary": "classical-studies-3-2"
+   },
+   {
+    "n": "4",
+    "primary": "classical-studies-0-4"
+   },
+   {
+    "n": "5",
+    "primary": "classical-studies-0-3",
+    "secondary": "classical-studies-0-0"
+   },
+   {
+    "n": "6",
+    "primary": "classical-studies-2-1"
+   },
+   {
+    "n": "7",
+    "primary": "classical-studies-2-4",
+    "secondary": "classical-studies-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "classical-studies-1-3"
+   },
+   {
+    "n": "9",
+    "primary": "classical-studies-1-1"
+   },
+   {
+    "n": "10",
+    "primary": "classical-studies-1-2"
+   },
+   {
+    "n": "11",
+    "primary": "classical-studies-3-3"
+   },
+   {
+    "n": "12",
+    "primary": "classical-studies-1-3",
+    "secondary": "classical-studies-1-1"
+   },
+   {
+    "n": "13",
+    "primary": "classical-studies-3-0"
+   },
+   {
+    "n": "14",
+    "primary": "classical-studies-0-0"
+   },
+   {
+    "n": "15",
+    "primary": "classical-studies-2-3"
+   },
+   {
+    "n": "16",
+    "primary": "classical-studies-1-2",
+    "secondary": "classical-studies-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "classical-studies",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC008ALP004BV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "classical-studies-2-1",
+    "secondary": "classical-studies-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "classical-studies-3-2"
+   },
+   {
+    "n": "3",
+    "primary": "classical-studies-3-1"
+   },
+   {
+    "n": "4",
+    "primary": "classical-studies-3-1"
+   },
+   {
+    "n": "5",
+    "primary": "classical-studies-1-1",
+    "secondary": "classical-studies-1-2"
+   },
+   {
+    "n": "6",
+    "primary": "classical-studies-1-0",
+    "secondary": "classical-studies-1-1"
+   },
+   {
+    "n": "7",
+    "primary": "classical-studies-3-0"
+   },
+   {
+    "n": "8",
+    "primary": "classical-studies-0-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "classical-studies",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC008GLP0004BV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "classical-studies-3-0"
+   },
+   {
+    "n": "2",
+    "primary": "classical-studies-3-1"
+   },
+   {
+    "n": "3",
+    "primary": "classical-studies-1-0",
+    "secondary": "classical-studies-1-1"
+   },
+   {
+    "n": "4",
+    "primary": "classical-studies-1-1",
+    "secondary": "classical-studies-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "classical-studies-0-3"
+   },
+   {
+    "n": "6",
+    "primary": "classical-studies-0-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "classical-studies",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC008ALP004BV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "classical-studies-3-1"
+   },
+   {
+    "n": "2",
+    "primary": "classical-studies-3-0"
+   },
+   {
+    "n": "3",
+    "primary": "classical-studies-3-2"
+   },
+   {
+    "n": "4",
+    "primary": "classical-studies-1-3"
+   },
+   {
+    "n": "5",
+    "primary": "classical-studies-1-3"
+   },
+   {
+    "n": "6",
+    "primary": "classical-studies-3-0",
+    "secondary": "classical-studies-3-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "classical-studies",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC008GLP004BV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "classical-studies-3-0"
+   },
+   {
+    "n": "2",
+    "primary": "classical-studies-3-0"
+   },
+   {
+    "n": "3",
+    "primary": "classical-studies-3-1"
+   },
+   {
+    "n": "4",
+    "primary": "classical-studies-2-1",
+    "secondary": "classical-studies-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "classical-studies-3-2"
+   },
+   {
+    "n": "6",
+    "primary": "classical-studies-1-2",
+    "secondary": "classical-studies-1-1"
+   },
+   {
+    "n": "7",
+    "primary": "classical-studies-1-3"
+   },
+   {
+    "n": "8",
+    "primary": "classical-studies-0-4"
+   }
+  ]
  }
 ]

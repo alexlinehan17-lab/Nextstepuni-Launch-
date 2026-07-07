@@ -796,5 +796,799 @@
     "primary": "economics-3-1"
    }
   ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC034GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-0-0",
+    "secondary": "economics-3-3"
+   },
+   {
+    "n": "2",
+    "primary": "economics-3-1",
+    "secondary": "economics-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "economics-2-2",
+    "secondary": "economics-3-1"
+   },
+   {
+    "n": "4",
+    "primary": "economics-3-1",
+    "secondary": "economics-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "economics-3-0",
+    "secondary": "economics-3-5"
+   },
+   {
+    "n": "6",
+    "primary": "economics-2-2"
+   },
+   {
+    "n": "7",
+    "primary": "economics-3-1",
+    "secondary": "economics-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "economics-1-1"
+   },
+   {
+    "n": "10",
+    "primary": "economics-1-1",
+    "secondary": "economics-1-2"
+   },
+   {
+    "n": "11",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "13",
+    "primary": "economics-2-1",
+    "secondary": "economics-0-1"
+   },
+   {
+    "n": "14",
+    "primary": "economics-4-2",
+    "secondary": "economics-4-1"
+   },
+   {
+    "n": "15",
+    "primary": "economics-0-1",
+    "secondary": "economics-1-5"
+   },
+   {
+    "n": "16",
+    "primary": "economics-3-1",
+    "secondary": "economics-2-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "LC034GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-0-0",
+    "secondary": "economics-3-3"
+   },
+   {
+    "n": "2",
+    "primary": "economics-3-1",
+    "secondary": "economics-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "economics-2-2",
+    "secondary": "economics-3-1"
+   },
+   {
+    "n": "4",
+    "primary": "economics-3-1",
+    "secondary": "economics-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "economics-3-0",
+    "secondary": "economics-3-5"
+   },
+   {
+    "n": "6",
+    "primary": "economics-2-2"
+   },
+   {
+    "n": "7",
+    "primary": "economics-3-1",
+    "secondary": "economics-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "economics-1-1"
+   },
+   {
+    "n": "10",
+    "primary": "economics-1-1",
+    "secondary": "economics-1-2"
+   },
+   {
+    "n": "11",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "13",
+    "primary": "economics-2-1",
+    "secondary": "economics-0-1"
+   },
+   {
+    "n": "14",
+    "primary": "economics-4-2",
+    "secondary": "economics-4-1"
+   },
+   {
+    "n": "15",
+    "primary": "economics-0-1",
+    "secondary": "economics-1-5"
+   },
+   {
+    "n": "16",
+    "primary": "economics-3-1",
+    "secondary": "economics-2-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC034GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-0-2"
+   },
+   {
+    "n": "2",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "3",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "economics-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "economics-4-2"
+   },
+   {
+    "n": "6",
+    "primary": "economics-1-3"
+   },
+   {
+    "n": "7",
+    "primary": "economics-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "economics-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "economics-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "economics-1-0",
+    "secondary": "economics-1-1"
+   },
+   {
+    "n": "11",
+    "primary": "economics-3-3",
+    "secondary": "economics-3-1"
+   },
+   {
+    "n": "12",
+    "primary": "economics-3-2"
+   },
+   {
+    "n": "13",
+    "primary": "economics-1-5"
+   },
+   {
+    "n": "14",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "15",
+    "primary": "economics-0-1"
+   },
+   {
+    "n": "16",
+    "primary": "economics-2-1",
+    "secondary": "economics-4-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "LC034GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-0-2"
+   },
+   {
+    "n": "2",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "3",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "4",
+    "primary": "economics-3-4"
+   },
+   {
+    "n": "5",
+    "primary": "economics-4-2"
+   },
+   {
+    "n": "6",
+    "primary": "economics-1-3"
+   },
+   {
+    "n": "7",
+    "primary": "economics-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "economics-4-0"
+   },
+   {
+    "n": "9",
+    "primary": "economics-3-0"
+   },
+   {
+    "n": "10",
+    "primary": "economics-1-0",
+    "secondary": "economics-1-1"
+   },
+   {
+    "n": "11",
+    "primary": "economics-3-3",
+    "secondary": "economics-3-1"
+   },
+   {
+    "n": "12",
+    "primary": "economics-3-2"
+   },
+   {
+    "n": "13",
+    "primary": "economics-1-5"
+   },
+   {
+    "n": "14",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "15",
+    "primary": "economics-0-1"
+   },
+   {
+    "n": "16",
+    "primary": "economics-2-1",
+    "secondary": "economics-4-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC034GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-3-2"
+   },
+   {
+    "n": "2",
+    "primary": "economics-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "economics-2-1",
+    "secondary": "economics-3-2"
+   },
+   {
+    "n": "4",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "economics-1-2"
+   },
+   {
+    "n": "6",
+    "primary": "economics-3-0",
+    "secondary": "economics-3-5"
+   },
+   {
+    "n": "7",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "8",
+    "primary": "economics-4-0",
+    "secondary": "economics-3-1"
+   },
+   {
+    "n": "9",
+    "primary": "economics-0-1",
+    "secondary": "economics-3-1"
+   },
+   {
+    "n": "10",
+    "primary": "economics-2-2",
+    "secondary": "economics-1-3"
+   },
+   {
+    "n": "11",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "13",
+    "primary": "economics-4-2"
+   },
+   {
+    "n": "14",
+    "primary": "economics-3-3",
+    "secondary": "economics-1-0"
+   },
+   {
+    "n": "15",
+    "primary": "economics-1-3"
+   },
+   {
+    "n": "16",
+    "primary": "economics-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "LC034GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-3-2"
+   },
+   {
+    "n": "2",
+    "primary": "economics-3-4"
+   },
+   {
+    "n": "3",
+    "primary": "economics-2-1",
+    "secondary": "economics-3-2"
+   },
+   {
+    "n": "4",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "economics-1-2"
+   },
+   {
+    "n": "6",
+    "primary": "economics-3-0",
+    "secondary": "economics-3-5"
+   },
+   {
+    "n": "7",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "8",
+    "primary": "economics-4-0",
+    "secondary": "economics-3-1"
+   },
+   {
+    "n": "9",
+    "primary": "economics-0-1",
+    "secondary": "economics-3-1"
+   },
+   {
+    "n": "10",
+    "primary": "economics-2-2",
+    "secondary": "economics-1-3"
+   },
+   {
+    "n": "11",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "13",
+    "primary": "economics-4-2"
+   },
+   {
+    "n": "14",
+    "primary": "economics-3-3",
+    "secondary": "economics-1-0"
+   },
+   {
+    "n": "15",
+    "primary": "economics-1-3"
+   },
+   {
+    "n": "16",
+    "primary": "economics-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC034GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-3-5"
+   },
+   {
+    "n": "2",
+    "primary": "economics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "economics-1-1"
+   },
+   {
+    "n": "4",
+    "primary": "economics-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "economics-2-1",
+    "secondary": "economics-1-3"
+   },
+   {
+    "n": "6",
+    "primary": "economics-3-2"
+   },
+   {
+    "n": "7",
+    "primary": "economics-1-5"
+   },
+   {
+    "n": "8",
+    "primary": "economics-2-2",
+    "secondary": "economics-0-1"
+   },
+   {
+    "n": "9",
+    "primary": "economics-1-4"
+   },
+   {
+    "n": "10",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "11",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "economics-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "14",
+    "primary": "economics-0-1"
+   },
+   {
+    "n": "15",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "16",
+    "primary": "economics-1-3",
+    "secondary": "economics-2-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "LC034GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-3-5"
+   },
+   {
+    "n": "2",
+    "primary": "economics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "economics-1-1"
+   },
+   {
+    "n": "4",
+    "primary": "economics-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "economics-2-1",
+    "secondary": "economics-1-3"
+   },
+   {
+    "n": "6",
+    "primary": "economics-3-2"
+   },
+   {
+    "n": "7",
+    "primary": "economics-1-5"
+   },
+   {
+    "n": "8",
+    "primary": "economics-2-2",
+    "secondary": "economics-0-1"
+   },
+   {
+    "n": "9",
+    "primary": "economics-1-4"
+   },
+   {
+    "n": "10",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "11",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "economics-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "14",
+    "primary": "economics-0-1"
+   },
+   {
+    "n": "15",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "16",
+    "primary": "economics-1-3",
+    "secondary": "economics-2-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC034GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "2",
+    "primary": "economics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "economics-1-4"
+   },
+   {
+    "n": "4",
+    "primary": "economics-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "economics-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "economics-3-0",
+    "secondary": "economics-4-2"
+   },
+   {
+    "n": "7",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "8",
+    "primary": "economics-1-1"
+   },
+   {
+    "n": "9",
+    "primary": "economics-0-2"
+   },
+   {
+    "n": "10",
+    "primary": "economics-2-1"
+   },
+   {
+    "n": "11",
+    "primary": "economics-4-0"
+   },
+   {
+    "n": "12",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "13",
+    "primary": "economics-3-1",
+    "secondary": "economics-3-3"
+   },
+   {
+    "n": "14",
+    "primary": "economics-3-1",
+    "secondary": "economics-0-1"
+   },
+   {
+    "n": "15",
+    "primary": "economics-1-2"
+   },
+   {
+    "n": "16",
+    "primary": "economics-0-1",
+    "secondary": "economics-1-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "economics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2021,
+  "fileid": "LC034GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "2",
+    "primary": "economics-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "economics-1-4"
+   },
+   {
+    "n": "4",
+    "primary": "economics-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "economics-1-1"
+   },
+   {
+    "n": "6",
+    "primary": "economics-3-0",
+    "secondary": "economics-4-2"
+   },
+   {
+    "n": "7",
+    "primary": "economics-3-1"
+   },
+   {
+    "n": "8",
+    "primary": "economics-1-1"
+   },
+   {
+    "n": "9",
+    "primary": "economics-0-2"
+   },
+   {
+    "n": "10",
+    "primary": "economics-2-1"
+   },
+   {
+    "n": "11",
+    "primary": "economics-4-0"
+   },
+   {
+    "n": "12",
+    "primary": "economics-2-0"
+   },
+   {
+    "n": "13",
+    "primary": "economics-3-1",
+    "secondary": "economics-3-3"
+   },
+   {
+    "n": "14",
+    "primary": "economics-3-1",
+    "secondary": "economics-0-1"
+   },
+   {
+    "n": "15",
+    "primary": "economics-1-2"
+   },
+   {
+    "n": "16",
+    "primary": "economics-0-1",
+    "secondary": "economics-1-3"
+   }
+  ]
  }
 ]
