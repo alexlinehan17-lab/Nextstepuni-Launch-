@@ -221,6 +221,26 @@ SUBJECT_GRAMMAR = {
     # answer-table rows — the pin is load-bearing there). jc-graphics
     # (rotated 90° sheets) and jc-music (no markers) drop wholesale under
     # any grammar; pinned for uniformity.
+    # lca-engineering ships NOTHING. CAUTION — worst instance of the
+    # cover-instructions trap (2026-07 wave): its only lead_int hits are the
+    # exam-cover instruction list ('1. Write your examination number…'..'6.'
+    # all on p1) and, because no other grammar marks any later page, the
+    # contiguity proof PASSES (single-page span, ratio 1.0, 23-page
+    # 'continuation' tail) and 30 garbage sidecars ship. The pin forces the
+    # question detector (sole hit: the 'If Question 7 is attempted…'
+    # instruction) so every paper drops on coverage. If a subject's anchors
+    # all sit on page 1, treat it as this trap class.
+    "lca-engineering": "question",
+    # lca-sign-language ships NOTHING: the docs are 4-page interview/
+    # presentation briefing sheets whose only lead_int hits are prompt/
+    # marking-criteria lists on the BACK page (back-cover trap class); the
+    # pin forces the hitless question grammar so all drop on coverage
+    # (2026-07 wave). Other LCA subjects that ship (crafts-and-design,
+    # mathematical-applications, office-admin-and-customer, active-leisure
+    # 2010) do so via genuine 'Question/Ceist N' booklet headers under auto;
+    # the rest drop wholesale at the span/hole/tail gates (LCA booklets give
+    # each question >3 pages of answer space, or restart per section).
+    "lca-sign-language": "question",
     "jc-french": "question",
     "jc-italian": "question",
     "jc-irish": "question",
