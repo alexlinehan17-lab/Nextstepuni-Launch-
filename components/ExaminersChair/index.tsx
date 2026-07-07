@@ -69,6 +69,7 @@ import {
   type DecisionDelta,
 } from './cohortSync';
 import { createCard } from '../PaperTrail/flashcardStore';
+import { downloadPilotKit } from './pilotKit';
 import { GREEN_INK_HEX, deskUnlocks, loadInk, saveInk, type ChairInk } from './desk';
 
 const INK = '#1a1a1a';
@@ -1355,7 +1356,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
           The marking rules your students systematically get wrong — the exact things to reteach. Students submit with a class code; you see the class, never a name.
         </p>
 
-        <div className="flex gap-2 mb-5">
+        <div className="flex gap-2 mb-3">
           <input
             value={classCode}
             onChange={e => { setClassCode(e.target.value); try { localStorage.setItem('chair-class-code', e.target.value.trim()); } catch { /* ignore */ } }}
@@ -1367,6 +1368,30 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
             {agg.submissions} {agg.submissions === 1 ? 'submission' : 'submissions'}
           </span>
         </div>
+
+        {/* Classroom pilot kit: the how-to, expandable + printable (F-pilot). */}
+        <details className="rounded-xl border px-4 py-3 mb-5" style={{ borderColor: BORDER, background: '#FCFBF8' }}>
+          <summary className="text-[13px] font-semibold cursor-pointer" style={{ color: INK }}>
+            How to run a marking class
+          </summary>
+          <ol className="mt-2.5 space-y-1.5 text-[12.5px] leading-relaxed list-decimal pl-4" style={{ color: '#3a3530' }}>
+            <li><b>Pick a class code</b> — any short phrase; students type it exactly.</li>
+            <li><b>Students mark a session</b> in The Examiner’s Chair, then tap <b>Send</b> with the code on their summary — one tap, their choice.</li>
+            <li><b>This screen ranks</b> the rules your class mis-marks, live, as submissions arrive.</li>
+            <li><b>Reveals turn into moderation</b> — once classmates have submitted, each script’s reveal shows students how the class called every decision beside the examiner’s key.</li>
+            <li><b>The Daily Mark</b> gives everyone the same script each day; students can compare with the class median, anonymously.</li>
+          </ol>
+          <p className="mt-2 text-[12px] rounded-lg px-3 py-2" style={{ backgroundColor: '#E8F2EC', color: '#1F5F3E' }}>
+            Only anonymous counts are ever stored under the code — no names, no accounts, no individual records exist, so nobody can see who answered.
+          </p>
+          <button
+            onClick={downloadPilotKit}
+            className="mt-2.5 inline-flex items-center gap-1.5 text-[12.5px] font-semibold"
+            style={{ color: ACCENT }}
+          >
+            <BookMarked size={14} /> Download the staff-room one-pager
+          </button>
+        </details>
 
         {top.length === 0 ? (
           <div className="rounded-xl border px-4 py-5" style={{ borderColor: BORDER, background: '#FCFBF8' }}>

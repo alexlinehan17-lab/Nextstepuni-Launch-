@@ -206,7 +206,17 @@ export function histogramMedian(hist: number[]): number | null {
 export function subscribeCohort(code: string, cb: (agg: CohortAgg) => void): () => void {
   const c = code.trim();
   if (!c) { cb({ submissions: 0, rules: {} }); return () => {}; }
+  try {
+    return subscribeCohortInner(c, cb);
+  } catch {
+    // A broken Firestore handle must never take the teacher view down —
+    // the local aggregate remains the fallback.
+    cb({ submissions: 0, rules: {} });
+    return () => {};
+  }
+}
 
+function subscribeCohortInner(c: string, cb: (agg: CohortAgg) => void): () => void {
   let submissions = 0;
   let rules: Record<string, CohortRule> = {};
   const emit = () => cb({ submissions, rules });
