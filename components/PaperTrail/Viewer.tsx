@@ -27,6 +27,7 @@ import {
   BookOpen,
   Clock3,
   Download,
+  Gauge,
   Highlighter,
   Pause,
   Play,
@@ -47,6 +48,8 @@ import { scanDocument, type CommandToken, type DocTokens, type MarkToken } from 
 import { frequencyFor, siblingsFor, topicLabel, type TopicSibling } from './topics';
 import { loadAttempt, setMark, setTriage, type GapKind, type SelfMark, type TriageRating } from './attemptStore';
 import { markerLicence, type MarkerLicence } from './trust';
+import { loadCalibration, paceScale } from './wpmStore';
+import WpmCalibrator from './WpmCalibrator';
 import { recordActivity } from './streakStore';
 import type { ExaminerInsightSet } from '../../data/paperTrail/examinerInsights';
 import type { FormulaeHandle, FormulaePageIndex } from '../../data/paperTrailFormulae';
@@ -235,7 +238,13 @@ const Viewer: React.FC<ViewerProps> = ({
   const [examOn, setExamOn] = useState(false);
   const [running, setRunning] = useState(false);
   const [elapsed, setElapsed] = useState(0); // seconds
-  const minsPerMark = timing ? timing.totalMinutes / timing.totalMarks : null;
+  // Handwriting-speed calibration (F4) — scales the minute budgets to the
+  // student's measured pace. attemptNs leads with the uid, so derive it from
+  // the storage namespace (this component deliberately has no uid prop).
+  const wpmUid = storageNs ? storageNs.split('|')[0] : undefined;
+  const [wpmCal, setWpmCal] = useState(() => loadCalibration(wpmUid));
+  const [calibratorOpen, setCalibratorOpen] = useState(false);
+  const minsPerMark = timing ? (timing.totalMinutes / timing.totalMarks) * paceScale(wpmCal) : null;
 
   // Reveal panel comes up from the bottom on phones, in from the right on
   // tablet/desktop (≥768px) — same glide as the GC dashboard student view.
@@ -916,11 +925,28 @@ const Viewer: React.FC<ViewerProps> = ({
                     <ToolRow
                       icon={<Clock3 size={15} />}
                       title="Time budget"
-                      sub={timing ? 'Minutes to spend per question' : 'Each question’s share of the paper'}
+                      sub={
+                        timing
+                          ? wpmCal
+                            ? `Personalised to your writing speed (${wpmCal.wpm} wpm)`
+                            : 'Minutes to spend per question'
+                          : 'Each question’s share of the paper'
+                      }
                       on={paceOn}
                       busy={paceOn && scanState === 'loading'}
                       onClick={() => toggleTool('pace')}
                     />
+                    {timing && (
+                      <ToolRow
+                        icon={<Gauge size={15} />}
+                        title="Handwriting speed"
+                        sub={wpmCal ? `${wpmCal.wpm} wpm — tap to redo the 2-min drill` : '2-min drill — personalise your time budgets'}
+                        onClick={() => {
+                          setCalibratorOpen(true);
+                          setToolsOpen(false);
+                        }}
+                      />
+                    )}
                     <ToolRow
                       icon={<Highlighter size={15} />}
                       title="Command words"
@@ -1097,6 +1123,27 @@ const Viewer: React.FC<ViewerProps> = ({
             paddingRight: 'calc(16px + var(--sar, 0px))',
           }}
         >
+          {/* Minute targets are writing-speed sensitive — say whose speed they
+              assume, with the one-line route into the 2-min calibration. */}
+          {paceOn && side === 'paper' && timing && hasAnyTokens && (
+            <div className="max-w-3xl mx-auto mb-1.5 flex items-center justify-center gap-1.5 text-[10.5px]" style={{ color: '#9e9186' }}>
+              {wpmCal ? (
+                <>
+                  <span>Minute targets personalised to your writing speed ({wpmCal.wpm} wpm)</span>
+                  <button onClick={() => setCalibratorOpen(true)} className="font-semibold underline underline-offset-2" style={{ color: '#F26B1F' }}>
+                    Redo
+                  </button>
+                </>
+              ) : (
+                <>
+                  <span>Minute targets assume a typical writing speed</span>
+                  <button onClick={() => setCalibratorOpen(true)} className="font-semibold underline underline-offset-2" style={{ color: '#F26B1F' }}>
+                    Personalise in 2 min
+                  </button>
+                </>
+              )}
+            </div>
+          )}
           {/* Marks heat-strip — where the marks live across the paper (pace tool). */}
           {paceOn && side === 'paper' && marksByPage && hasAnyTokens && session.numPages > 1 && (
             <div className="max-w-3xl mx-auto mb-2">
@@ -1286,6 +1333,12 @@ const Viewer: React.FC<ViewerProps> = ({
         >
           This paper is a scanned image — its text can’t be read for on-paper tools.
         </div>
+      )}
+
+      {/* Handwriting-speed calibrator (F4) — opened from the tools menu or the
+          pace footer line; result feeds straight back into the minute budgets. */}
+      {calibratorOpen && (
+        <WpmCalibrator uid={wpmUid} onSaved={setWpmCal} onClose={() => setCalibratorOpen(false)} />
       )}
 
       {/* Exam-mode clock — floating pill above the footer. */}

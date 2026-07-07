@@ -23,6 +23,12 @@ export interface MockSet {
   createdTs: number;
   /** Target working time in minutes (a guide, not enforced). */
   targetMin: number;
+  /** Rehearsal mode (F4): the set opens with a reading-time phase before the
+   *  working clock starts, like the real exam hall. */
+  rehearsal?: boolean;
+  /** When writing began (set by "Start writing" after reading time) — the
+   *  elapsed clock counts from here instead of createdTs. */
+  writingTs?: number;
   items: MockItem[];
 }
 
@@ -81,6 +87,15 @@ export function clearSet(uid?: string): void {
   } catch {
     /* ignore */
   }
+}
+
+/** End the rehearsal reading phase — stamp when writing began. */
+export function startWriting(uid: string | undefined, ts: number): MockSet | null {
+  const set = loadSet(uid);
+  if (!set) return null;
+  const next = { ...set, writingTs: ts };
+  saveSet(uid, next);
+  return next;
 }
 
 export function toggleDone(uid: string | undefined, index: number): MockSet | null {

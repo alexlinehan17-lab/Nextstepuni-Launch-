@@ -664,3 +664,25 @@ unverifiable added rung was reverted; the affected sessions remain honestly
 This mirrors the principled refusals recorded for all-or-nothing items in
 History, Home Economics, Accounting and Agricultural Science: the tool never
 fabricates a partial-credit band to manufacture a hard call.
+
+## Class-layer data protection (2026-07-07)
+
+The classroom features (class blind-spot aggregate, Moderation Meeting
+decision distributions, Daily Mark duel histogram, shared focus presence)
+are **anonymous by construction**. Design invariants, enforced by
+`firestore.rules`:
+
+- Shared collections (`chairCohorts/{code}/…`, `focusPresence/{code}/…`)
+  store ONLY aggregate counters — fixed identity fields (rule/decision/day/
+  bucket labels) plus a single count. **No uid, no name, no per-student
+  document exists anywhere in the shared paths**, so no rule change or query
+  could expose an individual: the data to identify one is never written.
+- Every write is pinned by rules to a +1 increment with immutable identity
+  fields; documents cannot be deleted or rewritten.
+- Class scope is a shared class code (a classroom secret), not school/uid
+  membership, and every student-facing surface states "anonymous counts,
+  never names".
+- Student writes are explicit: the class only ever receives data via the
+  student's own "Send to class" / "Compare with your class" tap (focus
+  presence broadcasts only while a session is actively running with a class
+  code set, and stops with it).

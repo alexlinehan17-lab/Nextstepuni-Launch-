@@ -69,6 +69,7 @@ import {
   type DecisionDelta,
 } from './cohortSync';
 import { createCard } from '../PaperTrail/flashcardStore';
+import { GREEN_INK_HEX, deskUnlocks, loadInk, saveInk, type ChairInk } from './desk';
 
 const INK = '#1a1a1a';
 const ACCENT = '#F26B1F';
@@ -176,11 +177,12 @@ const Gauge: React.FC<{ value: number; size?: number; caption?: string }> = ({ v
   );
 };
 
-/** The examiner's total, circled in red pen like a stamp on the script. */
-const MarkStamp: React.FC<{ marks: number; max: number }> = ({ marks, max }) => (
+/** The examiner's total, circled in pen like a stamp on the script.
+ * `ink` overrides the pen colour (the earned green ink); defaults to red. */
+const MarkStamp: React.FC<{ marks: number; max: number; ink?: string }> = ({ marks, max, ink = PEN }) => (
   <div
     className="shrink-0 flex flex-col items-center justify-center rounded-full"
-    style={{ width: 56, height: 56, border: `2.5px solid ${PEN}`, color: PEN, transform: 'rotate(-8deg)', fontFamily: SERIF }}
+    style={{ width: 56, height: 56, border: `2.5px solid ${ink}`, color: ink, transform: 'rotate(-8deg)', fontFamily: SERIF }}
     aria-label={`Examiner awards ${marks} of ${max}`}
   >
     <b className="leading-none" style={{ fontSize: 18 }}>
@@ -190,11 +192,43 @@ const MarkStamp: React.FC<{ marks: number; max: number }> = ({ marks, max }) => 
   </div>
 );
 
-/** A red-pen margin symbol: tick when the examiner awarded, cross when not. */
-const PenMark: React.FC<{ awarded: boolean }> = ({ awarded }) => (
-  <span aria-hidden="true" style={{ color: PEN, fontFamily: SERIF, fontWeight: 700, fontSize: 17, lineHeight: 1 }}>
+/** A pen margin symbol: tick when the examiner awarded, cross when not.
+ * `ink` overrides the pen colour (the earned green ink); defaults to red. */
+const PenMark: React.FC<{ awarded: boolean; ink?: string }> = ({ awarded, ink = PEN }) => (
+  <span aria-hidden="true" style={{ color: ink, fontFamily: SERIF, fontWeight: 700, fontSize: 17, lineHeight: 1 }}>
     {awarded ? '✓' : '✗'}
   </span>
+);
+
+// ── your desk, earned (F12): cosmetic unlocks from the Daily Mark streak ──
+
+/** 3-day streak — a small hand-drawn desk plant beside the Daily Mark card. */
+const DeskPlant: React.FC = () => (
+  <svg width={38} height={48} viewBox="0 0 38 48" fill="none" role="img" aria-label="Your desk plant — grown by a 3-day streak" className="shrink-0">
+    <path d="M19 33 C19 26 19 19 19 13" stroke={GREEN_INK_HEX} strokeWidth={2} strokeLinecap="round" />
+    <path d="M19 26 C15.5 24 12 20 10.5 15" stroke={GREEN_INK_HEX} strokeWidth={2} strokeLinecap="round" />
+    <path d="M19 27 C22.5 25 26 21.5 27.5 16.5" stroke={GREEN_INK_HEX} strokeWidth={2} strokeLinecap="round" />
+    <ellipse cx={19} cy={9.5} rx={3.2} ry={5} fill={GREEN_INK_HEX} opacity={0.85} />
+    <ellipse cx={9.5} cy={12} rx={3} ry={4.6} fill={GREEN_INK_HEX} opacity={0.7} transform="rotate(-32 9.5 12)" />
+    <ellipse cx={28.5} cy={13.5} rx={3} ry={4.6} fill={GREEN_INK_HEX} opacity={0.7} transform="rotate(30 28.5 13.5)" />
+    <path d="M11.5 34 L26.5 34 L24.5 45 L13.5 45 Z" fill="#f2efeb" stroke="#7a7068" strokeWidth={1.8} strokeLinejoin="round" />
+    <path d="M10 33.5 H28" stroke="#7a7068" strokeWidth={2.2} strokeLinecap="round" />
+  </svg>
+);
+
+/** 14-day streak — a brass desk lamp on the home header. Muted brass + grey. */
+const DeskLamp: React.FC = () => (
+  <svg width={46} height={40} viewBox="0 0 46 40" fill="none" role="img" aria-label="Brass desk lamp — earned at a 14-day streak" className="shrink-0">
+    {/* soft pool of light (accent tint) */}
+    <path d="M15 18 L5 34 L28 34 Z" fill="#FDEEDF" />
+    {/* arm */}
+    <path d="M32 32 C33 25 28 18 20 13.5" stroke="#8a7455" strokeWidth={2.2} strokeLinecap="round" />
+    {/* shade */}
+    <path d="M11.5 15 C12 8.5 21 5.5 25.5 10.5 C24 14 20 17.5 15.5 18 C13.5 17.5 12 16.5 11.5 15 Z" fill="#c9b285" stroke="#8a7455" strokeWidth={1.6} strokeLinejoin="round" />
+    {/* base */}
+    <path d="M27 34 C27 31 37 31 37 34" fill="#c9b285" stroke="#8a7455" strokeWidth={1.4} />
+    <path d="M23 34.5 H41" stroke="#8a7455" strokeWidth={2.4} strokeLinecap="round" />
+  </svg>
 );
 
 /** The "How this is marked" card, set in the marking scheme's own typographic
@@ -276,6 +310,9 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
   const [classDist, setClassDist] = useState<Record<string, number> | null>(null);
   // Daily Mark duel (F9): the class histogram after an explicit compare.
   const [duel, setDuel] = useState<{ you: number; median: number; total: number } | null>(null);
+  // Your desk, earned (F12): chosen examiner ink (local pref) + popover open.
+  const [ink, setInk] = useState<ChairInk>(() => loadInk(uid));
+  const [deskOpen, setDeskOpen] = useState(false);
 
   // Cross-device cohort: live-subscribe to the class code's Firestore aggregate
   // while the teacher view is open. Local loadCohort remains the offline fallback.
@@ -315,6 +352,11 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
     void fetchScriptDistribution(code, session.id, s.id).then(d => { if (alive) setClassDist(d); });
     return () => { alive = false; };
   }, [stage, scriptIdx, classCode, session, activeScripts]);
+
+  // Your desk, earned (F12): what the streak has unlocked, and the effective
+  // pen ink for MarkStamp/PenMark (green only once it's actually earned).
+  const desk = useMemo(() => deskUnlocks(state), [state]);
+  const penInk = desk.greenInk && ink === 'green' ? GREEN_INK_HEX : PEN;
 
   const persist = (next: ChairState) => {
     setState(next);
@@ -701,7 +743,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                       you {currentScore.studentMarks}m
                     </p>
                   </div>
-                  <MarkStamp marks={currentScore.examinerMarks} max={currentScore.maxMarks} />
+                  <MarkStamp marks={currentScore.examinerMarks} max={currentScore.maxMarks} ink={penInk} />
                 </div>
               )}
             </div>
@@ -755,7 +797,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                             className="inline-flex items-center gap-1.5 text-[12px] px-2 py-1 rounded-md"
                             style={{ backgroundColor: PEN_SOFT, border: '1px solid rgba(196,68,60,0.28)' }}
                           >
-                            <PenMark awarded={keyAwarded} />
+                            <PenMark awarded={keyAwarded} ink={penInk} />
                             <span className="font-semibold" style={{ color: INK }}>{c.label}</span>
                             <span style={{ fontFamily: MONO, fontSize: 11, color: PEN }}>{keyAwarded ? `${attempt.key[c.id]}m` : '0m'}</span>
                             {match ? (
@@ -820,7 +862,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                               : { backgroundColor: '#fff', borderColor: BORDER, color: '#b0a898' }
                         }
                       >
-                        {isKey && <PenMark awarded />}
+                        {isKey && <PenMark awarded ink={penInk} />}
                         {isKey && <span style={{ fontFamily: MONO, fontSize: 11, color: PEN }}>{l.annotation}</span>}
                         {l.label} · {l.marks}m
                         {isKey && (matched
@@ -1472,43 +1514,108 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
 
   return (
     <div className="w-full max-w-xl mx-auto pb-12">
-      <p className="text-[14px] leading-relaxed mb-4" style={{ color: '#5a5550' }}>
-        Mark sample answers against the SEC’s own rules. The closer your marking gets to the examiner’s, the better
-        you’ll judge your own work when it counts.
-      </p>
+      <div className="flex items-start gap-3 mb-4">
+        <p className="text-[14px] leading-relaxed flex-1" style={{ color: '#5a5550' }}>
+          Mark sample answers against the SEC’s own rules. The closer your marking gets to the examiner’s, the better
+          you’ll judge your own work when it counts.
+        </p>
+        {/* Your desk, earned (F12): the lamp (14-day streak) and the ink popover (7-day). */}
+        {(desk.lamp || desk.greenInk) && (
+          <div className="shrink-0 flex flex-col items-end gap-1">
+            {desk.lamp && <DeskLamp />}
+            {desk.greenInk && (
+              <div className="relative">
+                <button
+                  onClick={() => setDeskOpen(o => !o)}
+                  className="text-[11px] font-bold uppercase tracking-[0.1em]"
+                  style={{ color: LABEL }}
+                  aria-expanded={deskOpen}
+                >
+                  Your desk
+                </button>
+                {deskOpen && (
+                  <div className="absolute right-0 top-full mt-1.5 z-10 rounded-xl bg-white px-3.5 py-3 w-48" style={{ border: `2px solid ${INK}` }}>
+                    <Small className="mb-2">Pen ink</Small>
+                    <div className="flex gap-1.5">
+                      {([['red', PEN, 'Red'], ['green', GREEN_INK_HEX, 'Green']] as const).map(([id, hex, label]) => (
+                        <button
+                          key={id}
+                          onClick={() => { setInk(id); saveInk(uid, id); }}
+                          className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-full border px-2 py-1.5 text-[11.5px] font-semibold"
+                          style={ink === id ? { borderColor: ACCENT, backgroundColor: '#FDEEDF', color: '#8C3A0E' } : { borderColor: BORDER, backgroundColor: '#fff', color: MUTED }}
+                        >
+                          <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: hex }} />
+                          {label}
+                        </button>
+                      ))}
+                    </div>
+                    <p className="text-[10px] leading-snug mt-2" style={{ color: LABEL }}>
+                      The ink the examiner’s marks appear in — earned at a 7-day streak.
+                    </p>
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+        )}
+      </div>
 
       {(() => {
         const done = dailyDone(state, Date.now());
         return (
-          <button
-            onClick={done ? undefined : startDaily}
-            disabled={done}
-            className="w-full text-left rounded-2xl px-4 py-3.5 mb-3 transition-transform active:translate-y-0.5"
-            style={{ backgroundColor: done ? '#E8F2EC' : ACCENT, borderBottom: done ? 'none' : '3px solid #B54D14', boxShadow: done ? 'none' : '0 4px 0 #B54D14' }}
-          >
-            <div className="flex items-center justify-between gap-3">
-              <div className="min-w-0">
-                <p className="text-[10.5px] font-bold uppercase tracking-[0.1em]" style={{ color: done ? SUCCESS : 'rgba(255,255,255,0.85)' }}>
-                  The Daily Mark
-                </p>
-                <p className="text-[15px] font-semibold" style={{ fontFamily: SERIF, color: done ? INK : '#fff' }}>
-                  {done ? 'Done today — see you tomorrow' : 'Mark today’s script'}
-                </p>
-              </div>
-              <div className="shrink-0 text-right">
-                <p className="text-[20px] font-bold leading-none" style={{ fontFamily: SERIF, color: done ? SUCCESS : '#fff' }}>
-                  {state.daily.streak}🔥
-                </p>
-                <p className="text-[10px]" style={{ color: done ? MUTED : 'rgba(255,255,255,0.85)' }}>day streak</p>
-              </div>
+          <div className="mb-3">
+            <div className="flex items-end gap-2.5">
+              <button
+                onClick={done ? undefined : startDaily}
+                disabled={done}
+                className="flex-1 min-w-0 text-left rounded-2xl px-4 py-3.5 transition-transform active:translate-y-0.5"
+                style={{ backgroundColor: done ? '#E8F2EC' : ACCENT, borderBottom: done ? 'none' : '3px solid #B54D14', boxShadow: done ? 'none' : '0 4px 0 #B54D14' }}
+              >
+                <div className="flex items-center justify-between gap-3">
+                  <div className="min-w-0">
+                    <p className="text-[10.5px] font-bold uppercase tracking-[0.1em]" style={{ color: done ? SUCCESS : 'rgba(255,255,255,0.85)' }}>
+                      The Daily Mark
+                    </p>
+                    <p className="text-[15px] font-semibold" style={{ fontFamily: SERIF, color: done ? INK : '#fff' }}>
+                      {done ? 'Done today — see you tomorrow' : 'Mark today’s script'}
+                    </p>
+                  </div>
+                  <div className="shrink-0 text-right">
+                    <p className="text-[20px] font-bold leading-none" style={{ fontFamily: SERIF, color: done ? SUCCESS : '#fff' }}>
+                      {state.daily.streak}🔥
+                    </p>
+                    <p className="text-[10px]" style={{ color: done ? MUTED : 'rgba(255,255,255,0.85)' }}>day streak</p>
+                  </div>
+                </div>
+              </button>
+              {/* Your desk, earned (F12): the plant, grown by a 3-day streak. */}
+              {desk.plant && <DeskPlant />}
             </div>
-          </button>
+            {!desk.plant && state.daily.streak >= 1 && state.daily.streak < 3 && (
+              <p className="text-[11px] mt-1.5" style={{ color: LABEL }}>
+                3-day streak grows a desk plant
+              </p>
+            )}
+          </div>
         );
       })()}
 
       <div className="rounded-xl border bg-white dark:bg-zinc-900 dark:border-zinc-700 px-4 py-3 mb-5 flex items-center justify-between gap-3" style={{ borderColor: BORDER }}>
         <div className="min-w-0 flex items-center gap-3">
-          {calibration !== null && <Gauge value={calibration} size={72} caption="your eye" />}
+          {calibration !== null && (
+            <div className="shrink-0 flex flex-col items-center gap-1.5">
+              <Gauge value={calibration} size={72} caption="your eye" />
+              {/* Your desk, earned (F12): the nameplate — 25 sessions marked. */}
+              {desk.nameplate && (
+                <span
+                  className="px-2 py-0.5 rounded"
+                  style={{ background: PAPER, border: '1.5px solid #b0a898', color: '#5a5550', fontFamily: MONO, fontSize: 9, fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', whiteSpace: 'nowrap' }}
+                >
+                  Senior Marker
+                </span>
+              )}
+            </div>
+          )}
           <div className="min-w-0">
             <Small className="mb-0.5">Calibration</Small>
             {calibration === null ? (

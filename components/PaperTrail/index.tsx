@@ -43,6 +43,7 @@ import { focusStats } from './focusStore';
 import { loadSet } from './mockSetStore';
 import { allMarks } from './attemptStore';
 import { composeCoach } from './coach';
+import { composeDebrief, debriefSeen, markDebriefSeen } from './debrief';
 import { pendingMilestones, acknowledgeMilestone, type Milestone } from './milestones';
 import { paperAnswersPath, paperStoragePath, paperUrl, prettyBytes } from './storage';
 import {
@@ -774,6 +775,9 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   const focus = focusStats(uid, Date.now());
   // The Coach — tonight's session, composed across every tool's signals.
   const coachPlan = composeCoach(uid, Date.now());
+  // The Sunday Debrief — weekly recap, shown Sun/Mon until dismissed (F11).
+  const debriefDay = [0, 1].includes(new Date().getUTCDay());
+  const debrief = debriefDay && !debriefSeen(uid, Date.now()) ? composeDebrief(uid, Date.now()) : null;
   // First-run coach: a live checklist that ticks as the student works the loop.
   const coachSteps = [
     { label: 'Open any paper beside its official marking scheme.', done: recents.length > 0 },
@@ -841,6 +845,38 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
 
       {/* First-run coach — a live checklist of the loop; retires once it's running. */}
       <FirstRunCoach uid={uid} steps={coachSteps} />
+
+      {/* The Sunday Debrief — the week in the student's own numbers (F11). */}
+      {debrief && (
+        <section className="rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-4 mb-6">
+          <div className="flex items-start justify-between gap-2">
+            <div>
+              <p className="text-[10.5px] font-bold uppercase tracking-[0.12em] mb-1" style={{ color: '#9e9186' }}>The Sunday debrief</p>
+              <h3 className="text-[16px] font-semibold mb-2" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>
+                {debrief.headline}
+              </h3>
+            </div>
+            <button
+              onClick={() => { markDebriefSeen(uid, Date.now()); setView({ v: 'home' }); }}
+              aria-label="Dismiss debrief"
+              className="p-1.5 rounded-lg text-[12px] font-semibold"
+              style={{ color: '#9e9186' }}
+            >
+              ✕
+            </button>
+          </div>
+          <ul className="space-y-1 mb-2">
+            {debrief.lines.map((l, i) => (
+              <li key={i} className="text-[13px] leading-relaxed" style={{ color: '#3a3530' }}>{l}</li>
+            ))}
+          </ul>
+          {debrief.focus && (
+            <p className="text-[12.5px] italic rounded-lg px-3 py-2" style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E', borderLeft: '3px solid #F26B1F' }}>
+              {debrief.focus}
+            </p>
+          )}
+        </section>
+      )}
 
       {/* The Coach — "your next 20 minutes", composed across every tool's signals. */}
       {coachPlan.length > 0 && (
