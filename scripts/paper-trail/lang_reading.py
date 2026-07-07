@@ -24,6 +24,13 @@ Spec JSON:
     ...
   ]
 }
+
+Where a scheme has table-bounded blocks whose content sits slightly above the
+question-label cell (e.g. Arabic's RTL answer tables), text anchors would clip.
+Explicit fraction overrides are supported and take precedence when present:
+  "schemeStartY": 0.07, "schemeEndY": 0.44, "paperY": 0.418
+(schemeStartY/schemeEndY apply on schemeStartPage/schemeEndPage respectively;
+use them only for hand-verified page/block-bounded regions.)
 Usage: python3 lang_reading.py <spec.json>   (writes answers/<year>/<paper>.json)
 """
 import json, os, sys
@@ -71,13 +78,18 @@ def main():
     qout, report = [], []
     for i, q in enumerate(spec["questions"], start=1):
         sp0 = q["schemeStartPage"]
-        sy = find_y(sd[sp0 - 1], q["schemeStartAnchor"])
+        if "schemeStartY" in q:
+            sy = float(q["schemeStartY"])
+        else:
+            sy = find_y(sd[sp0 - 1], q["schemeStartAnchor"])
         if sy is None:
             report.append(f"!! {q['label']}: scheme start anchor {q['schemeStartAnchor']!r} NOT FOUND on p{sp0}")
             continue
         ep = q.get("schemeEndPage", sp0)
         ey = None
-        if q.get("schemeEndAnchor"):
+        if "schemeEndY" in q:
+            ey = float(q["schemeEndY"])
+        elif q.get("schemeEndAnchor"):
             ey = find_y(sd[ep - 1], q["schemeEndAnchor"])
         # region from (sp0, sy) to (ep, ey or page-bottom)
         region = []
@@ -91,8 +103,11 @@ def main():
                     region.append({"p": mid, "r": [0.0, 0.0, 1.0, 1.0]})
             end_y = ey if ey is not None else 1.0
             region.append({"p": ep, "r": [0.0, 0.0, 1.0, round(end_y, 4)]})
-        py = find_y(pd[q["paperPage"] - 1], q.get("paperAnchor", ""))
-        py = 0.0 if py is None else py
+        if "paperY" in q:
+            py = float(q["paperY"])
+        else:
+            py = find_y(pd[q["paperPage"] - 1], q.get("paperAnchor", ""))
+            py = 0.0 if py is None else py
         qout.append({"n": str(i), "label": q["label"], "pP": q["paperPage"],
                      "pY": [round(py, 4), 1.0], "region": region, "mode": "crop", "conf": 1.0})
         # report text actually inside the first segment
