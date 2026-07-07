@@ -58,10 +58,14 @@ describe('Paper Trail — progress dashboard', () => {
   beforeEach(() => localStorage.clear());
 
   test('reads empty honestly, then populates after a self-mark', () => {
+    const onStart = vi.fn();
     const { rerender } = render(
-      <ProgressDashboard uid="u1" now={NOW} subjectLabel={label} onDrill={noop} onBack={noop} />,
+      <ProgressDashboard uid="u1" now={NOW} subjectLabel={label} onDrill={noop} onBack={noop} onStart={onStart} />,
     );
     expect(screen.getByText(/Nothing to show yet/i)).toBeInTheDocument();
+    // The empty state carries ONE primary CTA into the obvious first action.
+    fireEvent.click(screen.getByRole('button', { name: /Open a paper/i }));
+    expect(onStart).toHaveBeenCalled();
 
     setMark('u1|business|2022|higher|ev|f1', '1', { score: 8, max: 20, gap: 'careless', ts: NOW });
     rerender(<ProgressDashboard uid="u1" now={NOW + 1} subjectLabel={label} onDrill={noop} onBack={noop} />);

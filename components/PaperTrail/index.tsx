@@ -18,7 +18,7 @@
  */
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { ArrowLeft, Clock3, FileStack, Layers, Layers3, Repeat, Search, Sprout } from 'lucide-react';
+import { ArrowLeft, Clock3, FileStack, Layers, Layers3, Repeat, Search, Sprout, Star } from 'lucide-react';
 import SubjectTilePicker from '../shared/SubjectTilePicker';
 import { baseName, displayName } from '../shared/subjectNames';
 import Viewer from './Viewer';
@@ -46,6 +46,8 @@ import { composeCoach } from './coach';
 import { composeDebrief, debriefSeen, markDebriefSeen } from './debrief';
 import { pendingMilestones, acknowledgeMilestone, type Milestone } from './milestones';
 import { paperAnswersPath, paperStoragePath, paperUrl, prettyBytes } from './storage';
+import { isPinned, listPins, listRecentOpens, recordRecentOpen, togglePin, type PaperRef } from './recentsStore';
+import { recordVisit } from '../lastVisited';
 import {
   FORMULAE_BOOKLET_LIVE,
   FORMULAE_BOOKLET_PATH,
@@ -68,7 +70,6 @@ import {
   type PaperLang,
   type PaperLevel,
   type PaperTrailSubject,
-  type RecentPaper,
 } from '../../types/paperTrail';
 
 const BLUE = '#33658A';
@@ -333,21 +334,6 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     [recordRecent, state.recents],
   );
 
-  const openRecent = useCallback((r: RecentPaper) => {
-    if (!subjectById.has(r.subjectId)) return;
-    setView({
-      v: 'viewer',
-      subjectId: r.subjectId,
-      year: r.year,
-      level: r.level,
-      lang: r.lang,
-      item: { label: r.label, doc: r.doc, ...(r.scheme ? { scheme: r.scheme } : {}) },
-      side: r.kind,
-      paperPage: r.paperPage,
-      schemePage: r.schemePage,
-    });
-  }, []);
-
   // Cross-year topic jump: resolve the sibling's paper from the index and open
   // it on the paper side, focused on the target question.
   const openCrossYear = useCallback((t: TopicSibling) => {
@@ -368,6 +354,64 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
       focusQuestion: t.n,
     });
   }, []);
+
+  // ── local recents + pins (recentsStore) ──
+  // Bumped whenever the localStorage-backed rails change, so home re-reads them.
+  const [, bumpRails] = useState(0);
+
+  // Record a recent (and the cross-tool last-visit for the home resume card)
+  // whenever a paper is ACTUALLY opened in the viewer — this catches openItem,
+  // the rails, cross-year jumps and deep links in one place. Idempotent, so a
+  // StrictMode double-fire is harmless.
+  useEffect(() => {
+    if (view.v !== 'viewer') return;
+    const subj = subjectById.get(view.subjectId);
+    if (!subj) return;
+    recordRecentOpen(
+      uid,
+      {
+        key: recentKey(view.subjectId, view.year, view.level, view.lang, view.item.doc.f),
+        subjectId: view.subjectId,
+        year: view.year,
+        level: view.level,
+        lang: view.lang,
+        fileid: view.item.doc.f,
+        label: paperLabel(view.item.label),
+        kind: view.side,
+      },
+      Date.now(),
+    );
+    recordVisit(uid, {
+      kind: 'tool',
+      id: 'paper-trail',
+      label: 'Paper Trail',
+      sub: `${displayName(subj.name)} · ${view.year} · ${LEVEL_LABEL[view.level]}`,
+    });
+    bumpRails(n => n + 1);
+  }, [view, uid]);
+
+  const handleTogglePin = useCallback(
+    (ref: Omit<PaperRef, 'at'>) => {
+      togglePin(uid, ref, Date.now());
+      bumpRails(n => n + 1);
+    },
+    [uid],
+  );
+
+  /** Open a stored (pinned/recent) paper — the live entry + item are resolved
+   *  from the index so a stale stored record can never open a dead link. */
+  const openStoredRef = useCallback(
+    (r: PaperRef) => {
+      const subj = subjectById.get(r.subjectId);
+      const entry = (PAPER_TRAIL_INDEX[r.subjectId] ?? []).find(
+        e => e.year === r.year && e.level === r.level && e.lang === r.lang,
+      );
+      const item = entry?.papers.find(p => p.doc.f === r.fileid);
+      if (!subj || !entry || !item) return;
+      openItem(subj, entry, item, r.kind);
+    },
+    [openItem],
+  );
 
   if (!isLoaded) {
     return (
@@ -505,6 +549,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
         subjectLabel={id => displayName(subjectById.get(id)?.name ?? id)}
         onDrill={openCrossYear}
         onBack={() => setView({ v: 'home' })}
+        onStart={() => setView({ v: 'home' })}
         onRoute={route => {
           if (route === 'timed') setView({ v: 'mock' });
           else if (route === 'drill') setView({ v: 'revise' });
@@ -701,8 +746,33 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
                             </span>
                           )}
                         </p>
-                        <span className="text-[11px] shrink-0" style={{ color: '#9e9186' }}>
-                          {activeYear} · {LEVEL_LABEL[activeLevel]}
+                        <span className="flex items-center gap-1 shrink-0">
+                          <span className="text-[11px]" style={{ color: '#9e9186' }}>
+                            {activeYear} · {LEVEL_LABEL[activeLevel]}
+                          </span>
+                          {(() => {
+                            const pinRef: Omit<PaperRef, 'at'> = {
+                              key: recentKey(subj.id, entry.year, entry.level, entry.lang, item.doc.f),
+                              subjectId: subj.id,
+                              year: entry.year,
+                              level: entry.level,
+                              lang: entry.lang,
+                              fileid: item.doc.f,
+                              label: paperLabel(item.label),
+                              kind: 'paper',
+                            };
+                            const pinned = isPinned(uid, pinRef.key);
+                            return (
+                              <button
+                                onClick={() => handleTogglePin(pinRef)}
+                                aria-pressed={pinned}
+                                aria-label={pinned ? `Unpin ${paperLabel(item.label)}` : `Pin ${paperLabel(item.label)} to your favourites`}
+                                className="p-1 -mr-1 rounded-lg transition-transform active:translate-y-0.5"
+                              >
+                                <Star size={15} fill={pinned ? '#F26B1F' : 'none'} color={pinned ? '#F26B1F' : '#d0cdc8'} aria-hidden />
+                              </button>
+                            );
+                          })()}
                         </span>
                       </div>
                       <div className="flex items-center gap-2.5">
@@ -764,6 +834,67 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     const s = subjectById.get(r.subjectId);
     return s && (junior ? s.cycle === 'jc' : s.cycle !== 'jc');
   });
+  const inCycle = (subjectId: string) => {
+    const s = subjectById.get(subjectId);
+    return !!s && (junior ? s.cycle === 'jc' : s.cycle !== 'jc');
+  };
+  // Pinned + recent rails from the per-account local store (recentsStore).
+  const pins = listPins(uid).filter(p => inCycle(p.subjectId));
+  const pinKeys = new Set(pins.map(p => p.key));
+  const localRecents = listRecentOpens(uid).filter(r => inCycle(r.subjectId) && !pinKeys.has(r.key));
+  // The local store is the rail's source of truth; accounts that predate it
+  // fall back to the synced recents until the local store fills.
+  const railRecents: PaperRef[] =
+    localRecents.length > 0
+      ? localRecents
+      : recents
+          .filter(r => !pinKeys.has(r.key))
+          .slice(0, 6)
+          .map(r => ({
+            key: r.key,
+            subjectId: r.subjectId,
+            year: r.year,
+            level: r.level,
+            lang: r.lang,
+            fileid: r.doc.f,
+            label: paperLabel(r.label),
+            kind: r.kind,
+            at: 0,
+          }));
+  /** One card in the pinned/recent rails — body re-opens the exact paper, the
+   *  star pins/unpins it. */
+  const railCard = (r: PaperRef, pinned: boolean) => {
+    const s = subjectById.get(r.subjectId)!;
+    const saved = state.recents.find(x => x.key === r.key);
+    const page = r.kind === 'scheme' ? saved?.schemePage : saved?.paperPage;
+    return (
+      <div
+        key={r.key}
+        className="relative shrink-0 min-w-[150px] rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46] transition-transform hover:-translate-y-0.5"
+      >
+        <button onClick={() => openStoredRef(r)} className="block w-full text-left px-3.5 py-3 pr-8">
+          <p className="text-[13px] font-bold leading-tight" style={{ color: '#1a1a1a' }}>
+            {displayName(s.name)} {r.year}
+          </p>
+          <p className="text-[11px] mt-0.5 flex items-center gap-1" style={{ color: '#7a7068' }}>
+            <Clock3 size={11} aria-hidden />
+            {r.label}
+            {r.kind === 'scheme' ? ' · scheme' : ''}
+            {page && page > 1 ? ` · p.${page}` : ''}
+          </p>
+          <p className="text-[10px] mt-0.5" style={{ color: '#9e9186' }}>{LEVEL_LABEL[r.level]}</p>
+        </button>
+        <button
+          onClick={() => handleTogglePin(r)}
+          aria-pressed={pinned}
+          aria-label={pinned ? `Unpin ${displayName(s.name)} ${r.year}` : `Pin ${displayName(s.name)} ${r.year} to your favourites`}
+          className="absolute top-2 right-2 p-1 rounded-lg transition-transform active:translate-y-0.5"
+        >
+          <Star size={13} fill={pinned ? '#F26B1F' : 'none'} color={pinned ? '#F26B1F' : '#d0cdc8'} aria-hidden />
+        </button>
+      </div>
+    );
+  };
   const showLcaSection =
     !junior &&
     groups.lca.length > 0 &&
@@ -936,34 +1067,26 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
         </span>
       </button>
 
-      {/* Recents rail */}
-      {recents.length > 0 && (
+      {/* Pinned papers — favourites a grinding student keeps one tap away. */}
+      {pins.length > 0 && (
+        <>
+          <h3 className="text-[11px] font-bold uppercase tracking-[0.14em] mb-2.5" style={{ color: '#9e9186' }}>
+            Pinned
+          </h3>
+          <div className="flex gap-2.5 overflow-x-auto pb-2 mb-5 -mx-1 px-1">
+            {pins.map(p => railCard(p, true))}
+          </div>
+        </>
+      )}
+
+      {/* Recents rail — the last papers this account actually opened. */}
+      {railRecents.length > 0 && (
         <>
           <h3 className="text-[11px] font-bold uppercase tracking-[0.14em] mb-2.5" style={{ color: '#9e9186' }}>
             Pick up where you left off
           </h3>
           <div className="flex gap-2.5 overflow-x-auto pb-2 mb-5 -mx-1 px-1">
-            {recents.map(r => {
-              const s = subjectById.get(r.subjectId)!;
-              const page = r.kind === 'scheme' ? r.schemePage : r.paperPage;
-              return (
-                <button
-                  key={r.key}
-                  onClick={() => openRecent(r)}
-                  className="shrink-0 text-left rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46] px-3.5 py-3 min-w-[150px] transition-transform hover:-translate-y-0.5"
-                >
-                  <p className="text-[13px] font-bold leading-tight" style={{ color: '#1a1a1a' }}>
-                    {displayName(s.name)} {r.year}
-                  </p>
-                  <p className="text-[11px] mt-0.5 flex items-center gap-1" style={{ color: '#7a7068' }}>
-                    <Clock3 size={11} aria-hidden />
-                    {paperLabel(r.label)}
-                    {r.kind === 'scheme' ? ' · scheme' : ''}
-                    {page > 1 ? ` · p.${page}` : ''}
-                  </p>
-                </button>
-              );
-            })}
+            {railRecents.map(r => railCard(r, false))}
           </div>
         </>
       )}

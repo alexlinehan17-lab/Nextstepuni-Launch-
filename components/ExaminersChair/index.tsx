@@ -16,8 +16,8 @@
  * compliance/evidence/examiners-chair.md). Scoring: ./store.ts (tested).
  */
 
-import React, { useEffect, useMemo, useState } from 'react';
-import { ArrowLeft, BookMarked, Check, ChevronRight } from 'lucide-react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
+import { ArrowLeft, BookMarked, Check, ChevronRight, Download } from 'lucide-react';
 import {
   CHAIR_SUBJECTS,
   LEVEL_LABEL,
@@ -71,6 +71,15 @@ import {
 import { createCard } from '../PaperTrail/flashcardStore';
 import { downloadPilotKit } from './pilotKit';
 import { GREEN_INK_HEX, deskUnlocks, loadInk, saveInk, type ChairInk } from './desk';
+import {
+  clearResume,
+  describeResume,
+  hasResumableProgress,
+  loadResume,
+  saveResume,
+  type ChairResumeSnapshot,
+} from './sessionResume';
+import { composeReceipt, downloadReceiptPng } from './receipt';
 
 const INK = '#1a1a1a';
 const ACCENT = '#F26B1F';
@@ -138,6 +147,13 @@ const levelsOf = (subject: ChairSubject): ChairLevel[] => {
 
 const sessionsFor = (subject: ChairSubject, level: ChairLevel): MarkingSession[] =>
   subject.sessions.filter(s => s.level === level || s.level === 'common');
+
+/** The saved mid-session desk (save-and-exit), only when its session still
+ * exists in the authored data — a slot pointing at removed content is dropped. */
+const readResumeSlot = (uid?: string): ChairResumeSnapshot | null => {
+  const snap = loadResume(uid, Date.now());
+  return snap && allSessions().some(s => s.id === snap.sessionId) ? snap : null;
+};
 
 // ── the calibration gauge: how close your eye is to the examiner's ──
 
@@ -314,6 +330,17 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
   // Your desk, earned (F12): chosen examiner ink (local pref) + popover open.
   const [ink, setInk] = useState<ChairInk>(() => loadInk(uid));
   const [deskOpen, setDeskOpen] = useState(false);
+  // Save-and-exit: the persisted mid-session desk (if any), the quiet
+  // "your place is saved" line after an explicit exit, and the marking clock.
+  const [resumeSlot, setResumeSlot] = useState<ChairResumeSnapshot | null>(() => readResumeSlot(uid));
+  const [exitSavedNote, setExitSavedNote] = useState(false);
+  const startedAtRef = useRef(0);
+  // Teacher empty state: the class-code input, so the CTA can focus it.
+  const codeInputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    setResumeSlot(readResumeSlot(uid));
+  }, [uid]);
 
   // Cross-device cohort: live-subscribe to the class code's Firestore aggregate
   // while the teacher view is open. Local loadCohort remains the offline fallback.
@@ -358,6 +385,44 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
   // pen ink for MarkStamp/PenMark (green only once it's actually earned).
   const desk = useMemo(() => deskUnlocks(state), [state]);
   const penInk = desk.greenInk && ink === 'green' ? GREEN_INK_HEX : PEN;
+
+  // Save-and-exit: persist the in-flight desk on every decision, so a session
+  // interrupted mid-marking (bell, tab close, back button) resumes exactly
+  // where it was. Cleared on completion and on an explicit "Start over".
+  useEffect(() => {
+    if (view !== 'session' || !session) return;
+    if (stage !== 'mark' && stage !== 'reveal') return;
+    if (!hasResumableProgress({ scores, decisions, chosenLevel })) return;
+    saveResume(uid, {
+      v: 1,
+      sessionId: session.id,
+      sessionTitle: session.title,
+      stage,
+      scriptIdx,
+      scriptCount: activeScripts.length,
+      decisions,
+      chosenLevel,
+      scores,
+      misses: sessionMisses,
+      decisionDeltas: sessionDecisions,
+      reason,
+      borderlineOnly,
+      dailyMode,
+      restrictScriptId,
+      elapsedMs: Math.max(0, Date.now() - (startedAtRef.current || Date.now())),
+      savedAt: Date.now(),
+    });
+  }, [
+    view, session, stage, scriptIdx, decisions, chosenLevel, scores, sessionMisses,
+    sessionDecisions, reason, borderlineOnly, dailyMode, restrictScriptId, activeScripts, uid,
+  ]);
+
+  // The quiet "your place is saved" line fades out on its own — non-blocking.
+  useEffect(() => {
+    if (!exitSavedNote) return;
+    const t = setTimeout(() => setExitSavedNote(false), 6000);
+    return () => clearTimeout(t);
+  }, [exitSavedNote]);
 
   const persist = (next: ChairState) => {
     setState(next);
@@ -414,6 +479,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
     setDailyMode(true);
     setRestrictScriptId(ref.scriptId);
     setCodexAdded(false);
+    startedAtRef.current = Date.now();
     setStage('mark');
     setView('session');
   };
@@ -429,6 +495,59 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
       setLevel(levelsOf(subj).includes(sess.level) ? sess.level : levelsOf(subj)[0] ?? 'higher');
     }
     openSession(id);
+  };
+
+  // ── save-and-exit handlers ──
+
+  /** Leave a mid-marking session. The effect above has already saved the
+   * place; this just surfaces the quiet confirmation on the way out. */
+  const exitSession = () => {
+    if ((stage === 'mark' || stage === 'reveal') && hasResumableProgress({ scores, decisions, chosenLevel })) {
+      setResumeSlot(readResumeSlot(uid));
+      setExitSavedNote(true);
+    }
+    setView('subject');
+  };
+
+  /** Put the desk back exactly where the saved place left it. */
+  const resumeSaved = () => {
+    const snap = readResumeSlot(uid);
+    if (!snap) { setResumeSlot(null); return; }
+    const sess = allSessions().find(s => s.id === snap.sessionId);
+    if (!sess) { clearResume(uid); setResumeSlot(null); return; }
+    const subj = CHAIR_SUBJECTS.find(c => c.id === sess.subject);
+    if (subj) {
+      setSubjectId(subj.id);
+      setLevel(levelsOf(subj).includes(sess.level) ? sess.level : levelsOf(subj)[0] ?? 'higher');
+    }
+    setSessionId(snap.sessionId);
+    setScriptIdx(snap.scriptIdx);
+    setDecisions(snap.decisions);
+    setChosenLevel(snap.chosenLevel);
+    setScores(snap.scores);
+    setSessionMisses(snap.misses);
+    setSessionDecisions(snap.decisionDeltas);
+    setReason(snap.reason);
+    setOwnText('');
+    setBorderlineOnly(snap.borderlineOnly);
+    setDailyMode(snap.dailyMode);
+    setRestrictScriptId(snap.restrictScriptId);
+    setCodexAdded(false);
+    setSubmittedToClass(false);
+    setDuel(null);
+    startedAtRef.current = Date.now() - snap.elapsedMs;
+    setStage(snap.stage);
+    setView('session');
+  };
+
+  /** Explicit "Start over": drop the saved place and begin afresh. */
+  const startOverSaved = () => {
+    const snap = resumeSlot;
+    clearResume(uid);
+    setResumeSlot(null);
+    if (!snap) return;
+    if (snap.dailyMode) startDaily();
+    else drillSession(snap.sessionId);
   };
 
   // ───────────────────────────── session flow ─────────────────────────────
@@ -483,6 +602,8 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
         base = mergeMisses(base, sessionMisses, now);
         if (dailyMode) base = recordDaily(base, now);
         persist(base);
+        clearResume(uid); // the desk is finished — nothing left to resume
+        setResumeSlot(null);
         setStage('summary');
       }
     };
@@ -491,7 +612,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
 
     return (
       <div className="w-full max-w-xl mx-auto pb-12">
-        <button onClick={() => setView('subject')} className="flex items-center gap-1.5 text-[13px] font-medium mb-4" style={{ color: MUTED }}>
+        <button onClick={exitSession} className="flex items-center gap-1.5 text-[13px] font-medium mb-4" style={{ color: MUTED }}>
           <ArrowLeft size={15} /> Sessions
         </button>
 
@@ -541,8 +662,34 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
             <Small className="mb-1.5">How this is marked</Small>
             <SchemeExtract session={session} />
 
+            {/* Save-and-exit: a saved place in THIS session — resume or start over. */}
+            {resumeSlot && resumeSlot.sessionId === session.id && (
+              <div className="rounded-xl px-4 py-3 mb-3 flex items-center justify-between gap-3" style={{ backgroundColor: '#FDEEDF', border: `2px solid ${ACCENT}` }}>
+                <div className="min-w-0">
+                  <Small className="mb-0.5">Saved place</Small>
+                  <p className="text-[12.5px]" style={{ color: '#8C3A0E' }}>{describeResume(resumeSlot)}</p>
+                </div>
+                <div className="flex gap-2 shrink-0">
+                  <button
+                    onClick={resumeSaved}
+                    className="rounded-full px-3.5 py-1.5 text-[12.5px] font-semibold text-white transition-transform active:translate-y-0.5"
+                    style={{ backgroundColor: ACCENT, borderBottom: '3px solid #B54D14', boxShadow: '0 3px 0 #B54D14' }}
+                  >
+                    Resume
+                  </button>
+                  <button
+                    onClick={() => { clearResume(uid); setResumeSlot(null); }}
+                    className="rounded-full px-3 py-1.5 text-[12.5px] font-semibold"
+                    style={{ backgroundColor: '#fff', color: MUTED, border: `2px solid ${BORDER}` }}
+                  >
+                    Start over
+                  </button>
+                </div>
+              </div>
+            )}
+
             <button
-              onClick={() => { setBorderlineOnly(false); setScriptIdx(0); setStage('mark'); }}
+              onClick={() => { startedAtRef.current = Date.now(); setBorderlineOnly(false); setScriptIdx(0); setStage('mark'); }}
               className="w-full rounded-full py-3 text-[15px] font-semibold text-white transition-transform active:translate-y-0.5"
               style={{ backgroundColor: ACCENT, borderBottom: '3px solid #B54D14', boxShadow: '0 4px 0 #B54D14' }}
             >
@@ -550,7 +697,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
             </button>
             {borderlineCount > 0 && borderlineCount < session.scripts.length && (
               <button
-                onClick={() => { setBorderlineOnly(true); setScriptIdx(0); setDecisions({}); setChosenLevel(null); setStage('mark'); }}
+                onClick={() => { startedAtRef.current = Date.now(); setBorderlineOnly(true); setScriptIdx(0); setDecisions({}); setChosenLevel(null); setStage('mark'); }}
                 className="w-full mt-2.5 rounded-full py-2.5 text-[13.5px] font-semibold transition-transform active:translate-y-0.5 inline-flex items-center justify-center gap-1.5"
                 style={{ backgroundColor: '#fff', color: PEN, border: `2px solid rgba(196,68,60,0.4)` }}
               >
@@ -1144,6 +1291,53 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
               </div>
             )}
 
+            {/* End-of-session receipt: the same composed model renders this card
+                and (via "Save image") a hand-drawn canvas PNG — no name, no uid. */}
+            {(() => {
+              const agreement = scores.length ? scores.reduce((a, s) => a + s.agreement, 0) / scores.length : 0;
+              const model = composeReceipt({
+                sessionTitle: session.title,
+                subjectLabel: subject?.label ?? session.subject,
+                levelLabel: LEVEL_LABEL[session.level],
+                scriptsMarked: scores.length,
+                agreement,
+                streak: state.daily.streak,
+                kind: dailyMode ? 'daily-mark' : borderlineOnly ? 'borderline-drill' : 'session',
+              }, Date.now());
+              return (
+                <div className="rounded-2xl bg-white px-4 py-4 mb-4" style={{ border: `2px solid ${INK}` }}>
+                  <div className="flex items-center justify-between gap-3 mb-1.5">
+                    <Small>Session receipt</Small>
+                    <button
+                      onClick={() => void downloadReceiptPng(model, Date.now())}
+                      className="inline-flex items-center gap-1.5 text-[12px] font-semibold rounded-full px-3 py-1.5 transition-transform active:translate-y-0.5"
+                      style={{ color: ACCENT, backgroundColor: '#fff', border: '2px solid rgba(242,107,31,0.3)' }}
+                    >
+                      <Download size={13} /> Save image
+                    </button>
+                  </div>
+                  <p className="text-[15px] font-semibold" style={{ fontFamily: SERIF, color: INK }}>{model.title}</p>
+                  <p className="text-[12px] mt-0.5" style={{ color: MUTED }}>{model.context}</p>
+                  <div className="mt-2.5" style={{ borderTop: `1px dashed ${BORDER}` }}>
+                    {model.rows.map(r => (
+                      <div key={r.label} className="flex items-center justify-between gap-3 py-1.5" style={{ borderBottom: '1px dotted #eceae6' }}>
+                        <span className="text-[12.5px]" style={{ color: MUTED }}>{r.label}</span>
+                        <span
+                          className="text-[14px] font-bold"
+                          style={{ fontFamily: SERIF, color: r.tone === 'success' ? SUCCESS : r.tone === 'accent' ? ACCENT : INK }}
+                        >
+                          {r.value}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                  <p className="text-[10.5px] italic mt-2" style={{ color: LABEL }}>
+                    {model.footnote} The image carries no name — it’s anonymous.
+                  </p>
+                </div>
+              );
+            })()}
+
             <button
               onClick={() => setView(dailyMode ? 'home' : 'subject')}
               className="w-full rounded-full py-3 text-[15px] font-semibold text-white transition-transform active:translate-y-0.5"
@@ -1358,6 +1552,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
 
         <div className="flex gap-2 mb-3">
           <input
+            ref={codeInputRef}
             value={classCode}
             onChange={e => { setClassCode(e.target.value); try { localStorage.setItem('chair-class-code', e.target.value.trim()); } catch { /* ignore */ } }}
             placeholder="Class code"
@@ -1393,7 +1588,27 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
           </button>
         </details>
 
-        {top.length === 0 ? (
+        {/* Empty-state guidance: no class code yet — one sentence on what will
+            appear, one clear first action (choose the code). */}
+        {classCode.trim() === '' ? (
+          <div className="rounded-2xl bg-white px-5 py-5" style={{ border: `2px solid ${INK}` }}>
+            <Small className="mb-1">No class code yet</Small>
+            <p className="text-[17px] font-semibold leading-snug" style={{ fontFamily: SERIF, color: INK }}>
+              Your class’s blind-spot list starts with a code
+            </p>
+            <p className="text-[13px] leading-relaxed mt-1" style={{ color: MUTED }}>
+              Pick any short code, share it with your class, and the marking rules they most often get wrong will
+              rank here as students send in their sessions — anonymous counts, never names.
+            </p>
+            <button
+              onClick={() => codeInputRef.current?.focus()}
+              className="w-full mt-3.5 rounded-full py-3 text-[15px] font-semibold text-white transition-transform active:translate-y-0.5"
+              style={{ backgroundColor: ACCENT, borderBottom: '3px solid #B54D14', boxShadow: '0 4px 0 #B54D14' }}
+            >
+              Set up a class code
+            </button>
+          </div>
+        ) : top.length === 0 ? (
           <div className="rounded-xl border px-4 py-5" style={{ borderColor: BORDER, background: '#FCFBF8' }}>
             <p className="text-[13.5px] leading-relaxed" style={{ color: MUTED }}>
               No submissions for <span className="font-semibold" style={{ color: INK }}>{classCode.trim() || 'this code'}</span> yet.
@@ -1450,6 +1665,12 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
         <button onClick={() => setView('home')} className="flex items-center gap-1.5 text-[13px] font-medium mb-4" style={{ color: MUTED }}>
           <ArrowLeft size={15} /> Subjects
         </button>
+        {/* Save-and-exit: the quiet, non-blocking confirmation after a mid-session exit. */}
+        {exitSavedNote && resumeSlot && (
+          <p className="text-[12px] mb-3 inline-flex items-center gap-1.5" style={{ color: MUTED }} role="status">
+            <Check size={13} color={SUCCESS} /> Your place is saved — resume any time.
+          </p>
+        )}
         <h2 className="text-[22px] font-semibold" style={{ fontFamily: SERIF, color: INK }}>
           {subject.label}
         </h2>
@@ -1512,6 +1733,9 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
                   </span>
                   <span className="block text-[11.5px] mt-0.5" style={{ color: MUTED }}>
                     {s.cue} · {s.scripts.length} scripts{result ? ` · ${pct(result.agreement)} match` : ''}
+                    {resumeSlot?.sessionId === s.id && (
+                      <span className="font-semibold" style={{ color: '#8C3A0E' }}> · saved place</span>
+                    )}
                   </span>
                 </span>
                 <ChevronRight size={16} color="#c9c4bd" className="shrink-0" />
@@ -1536,6 +1760,10 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
 
   const calibration = overallCalibration(state);
   const codexDueCount = codexDue(state, state.codex, Date.now()).length;
+  // Empty-state guidance: a genuinely untouched Chair (no session, no daily)
+  // gets one clear card + one clear first action instead of sparse hints.
+  const isFresh = calibration === null && state.daily.day === '';
+  const firstSession = CHAIR_SUBJECTS[0]?.sessions[0];
 
   return (
     <div className="w-full max-w-xl mx-auto pb-12">
@@ -1585,6 +1813,33 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
         )}
       </div>
 
+      {/* Save-and-exit: the resume card — back to the desk exactly as left. */}
+      {resumeSlot && (
+        <div className="rounded-2xl bg-white px-4 py-4 mb-3" style={{ border: `2px solid ${INK}` }}>
+          <Small className="mb-1">Pick up where you left off</Small>
+          <p className="text-[15px] font-semibold leading-snug" style={{ fontFamily: SERIF, color: INK }}>
+            You were partway through “{resumeSlot.sessionTitle}”
+          </p>
+          <p className="text-[12px] mt-0.5" style={{ color: MUTED }}>{describeResume(resumeSlot)}</p>
+          <div className="flex gap-2 mt-3">
+            <button
+              onClick={resumeSaved}
+              className="flex-1 rounded-full py-2.5 text-[13.5px] font-semibold text-white transition-transform active:translate-y-0.5"
+              style={{ backgroundColor: ACCENT, borderBottom: '3px solid #B54D14', boxShadow: '0 3px 0 #B54D14' }}
+            >
+              Resume
+            </button>
+            <button
+              onClick={startOverSaved}
+              className="flex-1 rounded-full py-2.5 text-[13.5px] font-semibold transition-transform active:translate-y-0.5"
+              style={{ backgroundColor: '#fff', color: MUTED, border: `2px solid ${BORDER}` }}
+            >
+              Start over
+            </button>
+          </div>
+        </div>
+      )}
+
       {(() => {
         const done = dailyDone(state, Date.now());
         return (
@@ -1625,6 +1880,27 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
         );
       })()}
 
+      {/* Empty-state guidance: before anything has been marked, say what will
+          appear here and offer the one obvious first action. */}
+      {isFresh && firstSession ? (
+        <div className="rounded-2xl bg-white px-5 py-5 mb-5" style={{ border: `2px solid ${INK}` }}>
+          <Small className="mb-1">Your first session</Small>
+          <p className="text-[17px] font-semibold leading-snug" style={{ fontFamily: SERIF, color: INK }}>
+            Take the examiner’s chair
+          </p>
+          <p className="text-[13px] leading-relaxed mt-1" style={{ color: MUTED }}>
+            Mark your first scripts and this screen fills in around you — a calibration gauge for how close your
+            eye is to the examiner’s, a map of your marking blind spots, and a codex of the rules you’ve earned.
+          </p>
+          <button
+            onClick={() => drillSession(firstSession.id)}
+            className="w-full mt-3.5 rounded-full py-3 text-[15px] font-semibold text-white transition-transform active:translate-y-0.5"
+            style={{ backgroundColor: ACCENT, borderBottom: '3px solid #B54D14', boxShadow: '0 4px 0 #B54D14' }}
+          >
+            Start your first marking session
+          </button>
+        </div>
+      ) : (
       <div className="rounded-xl border bg-white dark:bg-zinc-900 dark:border-zinc-700 px-4 py-3 mb-5 flex items-center justify-between gap-3" style={{ borderColor: BORDER }}>
         <div className="min-w-0 flex items-center gap-3">
           {calibration !== null && (
@@ -1662,6 +1938,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
           <BookMarked size={13} /> Codex · {state.codex.length}{codexDueCount > 0 ? ` · ${codexDueCount} due` : ''}
         </button>
       </div>
+      )}
 
       {(() => {
         const misses = topMisses(state, 1);

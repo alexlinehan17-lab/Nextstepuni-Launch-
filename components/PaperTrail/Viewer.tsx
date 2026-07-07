@@ -45,6 +45,9 @@ import {
 } from 'lucide-react';
 import { MotionDiv } from '../Motion';
 import { prettyBytes } from './storage';
+import { fetchPdfCached } from './pdfCache';
+import { clearLoopPlace, loadLoopPlace, saveLoopPlace } from './loopResume';
+import { composeReceipt, downloadReceipt, type LoopReceiptStats } from './receipt';
 import { scanDocument, type CommandToken, type DocTokens, type MarkToken } from './textOverlay';
 import { frequencyFor, siblingsFor, topicLabel, type TopicSibling } from './topics';
 import { loadAttempt, setMark, setTriage, type GapKind, type SelfMark, type TriageRating } from './attemptStore';
@@ -424,7 +427,16 @@ const Viewer: React.FC<ViewerProps> = ({
       }
       if (!mountedRef.current) return;
       try {
-        const task = pdfjs.getDocument({ url: target.url });
+        // Cache-first bytes (CacheStorage, LRU-capped) — instant on repeat
+        // opens and works offline. null → fall back to pdf.js's own URL
+        // loader, which surfaces the existing retry / open-in-browser UI.
+        const bytes = await withTimeout(fetchPdfCached(target.url), LOAD_TIMEOUT_MS).catch(
+          () => null,
+        );
+        if (!mountedRef.current) return;
+        const task = bytes
+          ? pdfjs.getDocument({ data: new Uint8Array(bytes) })
+          : pdfjs.getDocument({ url: target.url });
         s.task = task;
         const pdf = await withTimeout(task.promise, LOAD_TIMEOUT_MS);
         if (!mountedRef.current) {
@@ -522,6 +534,45 @@ const Viewer: React.FC<ViewerProps> = ({
   const [loop, setLoop] = useState<{ idx: number; qStartTs: number } | null>(null);
   const [loopDone, setLoopDone] = useState(false);
   const [loopTick, setLoopTick] = useState(0);
+  // ── save-and-exit: the loop place persists per uid+paper (loopResume.ts) ──
+  const [resumePlace, setResumePlace] = useState(() =>
+    storageNs ? loadLoopPlace(storageNs, Date.now()) : null,
+  );
+  // Quiet "your place is saved" line, shown briefly on the exit path.
+  const [placeSavedNote, setPlaceSavedNote] = useState(false);
+  const [receiptSaved, setReceiptSaved] = useState(false);
+  // Whole-loop wall clock: set on start (or back-dated on resume); the finish
+  // path snapshots it for the receipt.
+  const loopStartedAtRef = useRef(0);
+  const loopTotalSecRef = useRef(0);
+  // Ref mirrors so unmount/pagehide handlers see live state without re-binding.
+  const loopStateRef = useRef(loop);
+  loopStateRef.current = loop;
+  const answerMapRef = useRef<PaperAnswerMap | null>(null);
+  answerMapRef.current = answerMap;
+  const attemptMarkedRef = useRef(0);
+  attemptMarkedRef.current = Object.keys(attempt.marks ?? {}).length;
+
+  const persistLoopPlace = useCallback(() => {
+    const l = loopStateRef.current;
+    if (!l || !storageNs) return;
+    const total = answerMapRef.current?.q.length ?? 0;
+    if (total < 1) return;
+    saveLoopPlace(
+      storageNs,
+      {
+        idx: Math.min(l.idx, total - 1),
+        total,
+        elapsedSec: loopStartedAtRef.current
+          ? Math.max(0, Math.round((Date.now() - loopStartedAtRef.current) / 1000))
+          : 0,
+        marked: attemptMarkedRef.current,
+      },
+      Date.now(),
+    );
+  }, [storageNs]);
+  const persistLoopPlaceRef = useRef(persistLoopPlace);
+  persistLoopPlaceRef.current = persistLoopPlace;
 
   const scrollToQuestion = useCallback((q: PaperAnswerQuestion) => {
     requestAnimationFrame(() => {
@@ -539,9 +590,85 @@ const Viewer: React.FC<ViewerProps> = ({
     if (scheme && !sessions.current.scheme.pdf && !sessions.current.scheme.task) load('scheme');
     setSide('paper');
     setLoopDone(false);
+    setReceiptSaved(false);
+    loopStartedAtRef.current = Date.now();
+    if (storageNs) clearLoopPlace(storageNs);
+    setResumePlace(null);
+    setPlaceSavedNote(false);
     setLoop({ idx: 0, qStartTs: Date.now() });
     setToolsOpen(false);
-  }, [ensureAnswerMap, scheme, load]);
+  }, [ensureAnswerMap, scheme, load, storageNs]);
+
+  /** Resume a saved loop place — same warm-up as startLoop, but the index and
+   *  the wall clock pick up where the student left off. */
+  const resumeLoop = useCallback(() => {
+    setResumePlace(place => {
+      if (!place) return place;
+      ensureAnswerMap();
+      setSelfMarkOn(true);
+      setAnswersOn(true);
+      if (scheme && !sessions.current.scheme.pdf && !sessions.current.scheme.task) load('scheme');
+      setSide('paper');
+      setLoopDone(false);
+      setReceiptSaved(false);
+      loopStartedAtRef.current = Date.now() - place.elapsedSec * 1000;
+      if (storageNs) clearLoopPlace(storageNs);
+      setPlaceSavedNote(false);
+      // If the map is already in, clamp against its live length (the saved
+      // total guards most drift; a re-generated shorter map is the edge case).
+      const liveTotal = answerMapRef.current?.q.length;
+      const idx = liveTotal ? Math.min(place.idx, liveTotal - 1) : place.idx;
+      setLoop({ idx, qStartTs: Date.now() });
+      return null;
+    });
+  }, [ensureAnswerMap, scheme, load, storageNs]);
+
+  /** The mid-loop exit path (the ✕ on the loop bar): save the place quietly. */
+  const exitLoopSavingPlace = useCallback(() => {
+    persistLoopPlace();
+    setLoop(null);
+    if (storageNs) {
+      setResumePlace(loadLoopPlace(storageNs, Date.now()));
+      setPlaceSavedNote(true);
+    }
+  }, [persistLoopPlace, storageNs]);
+
+  // The saved-place note is a brief, quiet line — it fades out on its own.
+  useEffect(() => {
+    if (!placeSavedNote) return;
+    const id = setTimeout(() => setPlaceSavedNote(false), 4000);
+    return () => clearTimeout(id);
+  }, [placeSavedNote]);
+
+  // A resumed index can outrun a re-generated (shorter) answer map that arrives
+  // after the resume tap — clamp once the map is in.
+  useEffect(() => {
+    if (loop && answerMap && answerMap.q.length > 0 && loop.idx >= answerMap.q.length) {
+      setLoop({ idx: answerMap.q.length - 1, qStartTs: Date.now() });
+    }
+  }, [loop, answerMap]);
+
+  // Mid-loop persistence: save on every loop step, and on tab close / bfcache
+  // eviction while a loop is live. Unmount is covered separately below.
+  useEffect(() => {
+    if (!loop) return;
+    persistLoopPlace();
+    const save = () => persistLoopPlaceRef.current();
+    window.addEventListener('pagehide', save);
+    window.addEventListener('beforeunload', save);
+    return () => {
+      window.removeEventListener('pagehide', save);
+      window.removeEventListener('beforeunload', save);
+    };
+  }, [loop, persistLoopPlace]);
+
+  // Component unmount mid-loop (back out of the paper) saves the place too.
+  useEffect(
+    () => () => {
+      persistLoopPlaceRef.current();
+    },
+    [],
+  );
 
   // Jump to the current loop question once the map is in.
   useEffect(() => {
@@ -562,12 +689,19 @@ const Viewer: React.FC<ViewerProps> = ({
     setLoop(l => {
       if (!l || !answerMap) return l;
       if (l.idx + 1 >= answerMap.q.length) {
+        // Finished: snapshot the wall clock for the receipt and retire the
+        // saved place — a completed loop has nothing to resume.
+        loopTotalSecRef.current = loopStartedAtRef.current
+          ? Math.max(0, Math.round((Date.now() - loopStartedAtRef.current) / 1000))
+          : 0;
+        if (storageNs) clearLoopPlace(storageNs);
+        setReceiptSaved(false);
         setLoopDone(true);
         return null;
       }
       return { idx: l.idx + 1, qStartTs: Date.now() };
     });
-  }, [answerMap]);
+  }, [answerMap, storageNs]);
 
   const recordMark = useCallback(
     (n: string, mark: SelfMark | null) => {
@@ -584,10 +718,12 @@ const Viewer: React.FC<ViewerProps> = ({
   const onReveal = useCallback(
     (q: PaperAnswerQuestion) => {
       if (scheme && !schemePrefetched.current) {
-        // Mark done only on success, so a failed warm (offline) retries next tap.
-        fetch(scheme.url)
-          .then(() => {
-            schemePrefetched.current = true;
+        // Mark done only on success, so a failed warm (offline) retries next
+        // tap. Routed through the CacheStorage layer so the full scheme lands
+        // in BOTH the app cache and the SW cache for offline reveals.
+        fetchPdfCached(scheme.url)
+          .then(bytes => {
+            if (bytes) schemePrefetched.current = true;
           })
           .catch(() => {});
       }
@@ -1424,13 +1560,57 @@ const Viewer: React.FC<ViewerProps> = ({
                   Reveal & mark
                 </button>
               )}
-              <button onClick={() => setLoop(null)} aria-label="End the loop" className="shrink-0 p-1.5 text-zinc-400">
+              <button onClick={exitLoopSavingPlace} aria-label="End the loop — your place is saved" className="shrink-0 p-1.5 text-zinc-400">
                 <X size={16} />
               </button>
             </div>
           </div>
         );
       })()}
+
+      {/* Full Loop resume card — a saved place from a previous mid-loop exit. */}
+      {resumePlace && !loop && !loopDone && !reveal && side === 'paper' && answersUrl && scheme && storageNs && (
+        <div className="fixed bottom-4 inset-x-0 z-[105] flex justify-center px-4" style={{ paddingBottom: 'var(--sab, 0px)' }}>
+          <div className="w-full max-w-md rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-2xl px-4 py-3">
+            <div className="flex items-start gap-3">
+              <div className="min-w-0 flex-1">
+                <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-zinc-400">The full loop</p>
+                <p className="text-[13.5px] font-semibold text-zinc-900 dark:text-white">
+                  You were on question {resumePlace.idx + 1} of {resumePlace.total} — pick up where you left off.
+                </p>
+                {placeSavedNote && (
+                  <p className="text-[11.5px] italic mt-0.5" style={{ color: '#1F5F3E' }}>
+                    Your place is saved.
+                  </p>
+                )}
+              </div>
+              <button
+                onClick={() => setResumePlace(null)}
+                aria-label="Dismiss — keep the place saved for next time"
+                className="shrink-0 p-1.5 -mr-1 text-zinc-400"
+              >
+                <X size={15} />
+              </button>
+            </div>
+            <div className="mt-2.5 flex items-center gap-2">
+              <button
+                onClick={resumeLoop}
+                className="flex-1 rounded-full py-2 text-[13px] font-semibold text-white transition-transform active:translate-y-0.5"
+                style={{ backgroundColor: '#F26B1F', boxShadow: '0 3px 0 #B54D14' }}
+              >
+                Resume
+              </button>
+              <button
+                onClick={startLoop}
+                className="flex-1 rounded-full py-2 text-[13px] font-semibold border-2 bg-white dark:bg-zinc-900 transition-transform active:translate-y-0.5"
+                style={{ borderColor: '#d0cdc8', color: '#7a7068' }}
+              >
+                Start over
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Full Loop summary — the session in the student's own marks. */}
       {loopDone && answerMap && (() => {
@@ -1441,6 +1621,18 @@ const Viewer: React.FC<ViewerProps> = ({
         for (const m of marks) if (m.gap) gapCounts.set(m.gap, (gapCounts.get(m.gap) ?? 0) + 1);
         const topGap = [...gapCounts.entries()].sort((a, b) => b[1] - a[1])[0];
         const gapLabel: Record<GapKind, string> = { content: 'not knowing it', process: 'the wrong method', careless: 'careless slips', timing: 'the clock' };
+        // The receipt — anonymous by construction (no name, no uid).
+        const receiptStats: LoopReceiptStats = {
+          dateIso: new Date().toISOString().slice(0, 10),
+          paperTitle: title,
+          ...(subtitle ? { paperDetail: subtitle } : {}),
+          questionsWorked: marks.length,
+          questionsTotal: qs.length,
+          totalSec: loopTotalSecRef.current,
+          avgPct: marks.length ? avg : null,
+          gaps: Object.fromEntries(gapCounts) as Partial<Record<GapKind, number>>,
+        };
+        const receipt = composeReceipt(receiptStats);
         return (
           <div className="fixed inset-0 z-[120] flex items-center justify-center bg-black/40 px-4" role="dialog" aria-modal="true" aria-label="Full loop summary">
             <div className="w-full max-w-sm rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-5 py-5 text-center">
@@ -1456,13 +1648,37 @@ const Viewer: React.FC<ViewerProps> = ({
                   Most marks died to {gapLabel[topGap[0]]} ({topGap[1]}×) — your dashboard's autopsy has the fix.
                 </p>
               )}
-              <button
-                onClick={() => setLoopDone(false)}
-                className="rounded-full px-6 py-2.5 text-[14px] font-semibold text-white transition-transform active:translate-y-0.5"
-                style={{ backgroundColor: '#F26B1F', boxShadow: '0 3px 0 #B54D14' }}
-              >
-                Done
-              </button>
+              {/* The receipt — the session's numbers, saveable as an image. */}
+              <div className="rounded-xl border-2 border-[#1a1a1a] dark:border-zinc-700 px-3.5 py-2.5 mb-3 text-left">
+                <div className="flex items-center justify-between mb-1.5">
+                  <span className="text-[10px] font-bold uppercase tracking-[0.12em] text-zinc-400">Receipt</span>
+                  <span className="text-[10px] text-zinc-400">{receipt.date}</span>
+                </div>
+                {receipt.rows.map(r => (
+                  <div key={r.label} className="flex items-baseline justify-between gap-3 py-0.5">
+                    <span className="text-[11.5px]" style={{ color: '#7a7068' }}>{r.label}</span>
+                    <span className="text-[12px] font-semibold text-right text-zinc-900 dark:text-white">{r.value}</span>
+                  </div>
+                ))}
+              </div>
+              <div className="flex items-center justify-center gap-2.5">
+                <button
+                  onClick={() => {
+                    if (downloadReceipt(receiptStats)) setReceiptSaved(true);
+                  }}
+                  className="inline-flex items-center gap-1.5 rounded-full px-4 py-2.5 text-[13px] font-semibold border-2 bg-white dark:bg-zinc-900 transition-transform active:translate-y-0.5"
+                  style={{ borderColor: 'rgba(242,107,31,0.35)', color: '#F26B1F' }}
+                >
+                  <Download size={14} /> {receiptSaved ? 'Saved' : 'Save image'}
+                </button>
+                <button
+                  onClick={() => setLoopDone(false)}
+                  className="rounded-full px-6 py-2.5 text-[14px] font-semibold text-white transition-transform active:translate-y-0.5"
+                  style={{ backgroundColor: '#F26B1F', boxShadow: '0 3px 0 #B54D14' }}
+                >
+                  Done
+                </button>
+              </div>
             </div>
           </div>
         );

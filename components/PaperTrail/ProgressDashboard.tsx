@@ -56,6 +56,9 @@ interface Props {
   onBack: () => void;
   /** Error-autopsy routing — opens the tool that fixes each loss cause. */
   onRoute?: (route: AutopsyRoute) => void;
+  /** Empty-state CTA — takes the student to the obvious first action (the
+   *  subject picker, to open a paper). Falls back to onBack when absent. */
+  onStart?: () => void;
 }
 
 const Stat: React.FC<{ icon: React.ReactNode; value: string; label: string }> = ({ icon, value, label }) => (
@@ -66,7 +69,7 @@ const Stat: React.FC<{ icon: React.ReactNode; value: string; label: string }> = 
   </div>
 );
 
-const ProgressDashboard: React.FC<Props> = ({ uid, now, subjectLabel, onDrill, onBack, onRoute }) => {
+const ProgressDashboard: React.FC<Props> = ({ uid, now, subjectLabel, onDrill, onBack, onRoute, onStart }) => {
   const p = useMemo(() => computeProgress(uid, now), [uid, now]);
   const mastered = useMemo(() => masteredCount(uid), [uid, now]);
   const licence = useMemo(() => markerLicence(uid), [uid, now]);
@@ -110,9 +113,31 @@ const ProgressDashboard: React.FC<Props> = ({ uid, now, subjectLabel, onDrill, o
       )}
 
       {nothingYet ? (
-        <p className="text-[13.5px] rounded-2xl px-4 py-4" style={{ backgroundColor: '#E8EFF5', color: '#27506E' }}>
-          Nothing to show yet. Open a paper and self-mark a few questions, or start a daily review — your accuracy, weak topics and streak will build here.
-        </p>
+        /* Honest empty state — say what will appear here, then one primary CTA
+           into the obvious first action (open a paper beside its scheme). */
+        <div className="rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-5 py-6 text-center">
+          <span
+            className="inline-flex w-11 h-11 rounded-xl items-center justify-center mb-3"
+            style={{ backgroundColor: '#FDEEDF' }}
+            aria-hidden
+          >
+            <Target size={20} style={{ color: ACCENT }} />
+          </span>
+          <h3 className="text-[17px] font-semibold mb-1.5" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>
+            Nothing to show yet
+          </h3>
+          <p className="text-[13px] leading-relaxed max-w-sm mx-auto mb-4" style={{ color: '#5a5550' }}>
+            Your self-marks, gap map and licence progress build up as you work papers. Open one beside
+            its official marking scheme, score a few questions, and this page starts filling in.
+          </p>
+          <button
+            onClick={onStart ?? onBack}
+            className="inline-flex items-center gap-1.5 rounded-full px-7 text-[14px] font-semibold text-white transition-transform active:translate-y-0.5"
+            style={{ backgroundColor: ACCENT, boxShadow: '0 4px 0 #B54D14', borderBottom: '3px solid #B54D14', paddingTop: 12, paddingBottom: 12 }}
+          >
+            Open a paper <ArrowRight size={15} aria-hidden />
+          </button>
+        </div>
       ) : (
         <>
           {/* Stat band */}
