@@ -64,6 +64,14 @@ export interface PaperAnswerQuestion {
   mode: 'crop' | 'pagejump';
   /** Confidence 0..1 (1 = clean crop; lower = degraded to page-jump). */
   conf: number;
+  /** Optional explicit crop-END for the paper-side region (section-restart
+   *  "island" papers): the page + vertical fraction where this question's crop
+   *  must stop, INDEPENDENT of the next anchor. Set only when the next printed
+   *  anchor is not the natural end — e.g. a reading section's last question,
+   *  whose crop must end at the following passage/section rather than bleed
+   *  into it. When absent, the region runs to the next anchor as before. */
+  endP?: number;
+  endY?: number;
 }
 
 /** Per-paper answer map — the lazily-fetched Storage sidecar. Coordinates ONLY:

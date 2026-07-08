@@ -72,4 +72,45 @@ describe('paperRegionFor', () => {
     const r = paperRegionFor(qs, '1')!;
     expect(r[0].r![3]).toBeCloseTo(0.45, 5);
   });
+
+  // Section-restart "island" papers: an explicit crop-END stops the region
+  // before the following passage/section, ignoring where the next anchor sits.
+  const qe = (
+    n: string, pP: number, y0: number, y1: number, endP: number, endY: number,
+  ): PaperAnswerQuestion => ({ ...q(n, pP, y0, y1), endP, endY });
+
+  it('honours an explicit same-page crop-end over the next anchor', () => {
+    // Next anchor is far down page 5, but the island ends at 0.55 on page 3.
+    const qs = [qe('1', 3, 0.1, 0.9, 3, 0.55), q('2', 5, 0.6, 0.9)];
+    const r = paperRegionFor(qs, '1')!;
+    expect(r).toHaveLength(1);
+    expect(r[0].p).toBe(3);
+    expect(r[0].r![1]).toBeCloseTo(0.092, 3);
+    expect(r[0].r![3]).toBeCloseTo(0.55, 5);
+  });
+
+  it('honours a multi-page crop-end, spanning whole pages between', () => {
+    const qs = [qe('1', 2, 0.4, 1, 4, 0.3), q('2', 6, 0.1, 0.5)];
+    const r = paperRegionFor(qs, '1')!;
+    expect(r.map(s => s.p)).toEqual([2, 3, 4]);
+    expect(r[0].r![3]).toBe(1);
+    expect(r[1].r).toEqual([0, 0, 1, 1]);
+    expect(r[2].r![3]).toBeCloseTo(0.3, 5);
+  });
+
+  it('drops a negligible crop-end tail below MIN_TAIL', () => {
+    const qs = [qe('1', 2, 0.4, 1, 4, 0.02), q('2', 6, 0.1, 0.5)];
+    const r = paperRegionFor(qs, '1')!;
+    expect(r.map(s => s.p)).toEqual([2, 3]); // page-4 tail (0.02) dropped
+    expect(r[1].r).toEqual([0, 0, 1, 1]);
+  });
+
+  it('refuses a non-monotonic or oversized crop-end', () => {
+    // end before start
+    expect(paperRegionFor([qe('1', 3, 0.5, 0.9, 2, 0.4)], '1')).toBeNull();
+    // end at (essentially) the same spot
+    expect(paperRegionFor([qe('1', 3, 0.5, 0.9, 3, 0.503)], '1')).toBeNull();
+    // crop-end span exceeds MAX_PAGES
+    expect(paperRegionFor([qe('1', 1, 0.1, 0.9, 6, 0.5)], '1')).toBeNull();
+  });
 });

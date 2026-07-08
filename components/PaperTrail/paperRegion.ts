@@ -46,6 +46,24 @@ export function paperRegionFor(
   if (!q.pP || q.pP < 1 || !Array.isArray(q.pY)) return null;
 
   const y0 = Math.max(0, Math.min(1, q.pY[0]) - TOP_PAD);
+
+  // Explicit crop-END (section-restart "island" papers): the question's crop
+  // must stop at (endP, endY), independent of the next anchor, so a reading
+  // section's last question doesn't bleed into the following passage/section.
+  // Fully additive — questions without endP/endY fall through to the unchanged
+  // next-anchor derivation below.
+  if (typeof q.endP === 'number' && typeof q.endY === 'number') {
+    const endY = Math.min(1, Math.max(0, q.endY));
+    // End must lie strictly after the start (monotonic), else no confident crop.
+    if (q.endP < q.pP || (q.endP === q.pP && endY <= q.pY[0] + 0.005)) return null;
+    if (q.endP - q.pP > MAX_PAGES) return null;
+    if (q.endP === q.pP) return [{ p: q.pP, r: [0, y0, 1, endY] }];
+    const segs: PaperAnswerSeg[] = [{ p: q.pP, r: [0, y0, 1, 1] }];
+    for (let p = q.pP + 1; p < q.endP; p++) segs.push({ p, r: [0, 0, 1, 1] });
+    if (endY > MIN_TAIL) segs.push({ p: q.endP, r: [0, 0, 1, endY] });
+    return segs;
+  }
+
   const next = ordered[i + 1];
 
   // Last anchored question — trust its own band; if the band is degenerate,
