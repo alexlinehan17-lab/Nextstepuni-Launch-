@@ -8,13 +8,19 @@ Tags attach to the **answer-map anchors** (question `n` is the join key), so the
 
 ## Coverage
 
-**41 subjects, 786 papers, 8,884 questions built in** (`build-tags.mjs` output
-is the source of truth for this line; Wave 6+ additions below land here only
-once verified and rebuilt) — every subject that has both
-answer-map anchors and a fitting curriculum taxonomy. Each subject's anchored
-questions are 100% covered (reconstruction is diffed against the extracted stems
-and gaps re-run until zero; two honest nulls: the 2023/2024 Classical Studies
-HL Q12 cross-strand open essays).
+**98 subjects, 2,258 papers, 22,695 questions built in** (`build-tags.mjs`
+output is the source of truth for this line) — every paper that has a
+question anchor (an answer-map sidecar OR a hosted paper-anchor, see Waves
+8-9) and a fitting curriculum taxonomy is topic-tagged. Anchored questions
+are 100% covered per subject (a handful of honest nulls: the 2023/2024
+Classical Studies HL Q12 cross-strand open essays).
+
+Two coverage frontiers remain, both explicit (see "Not tagged yet"): the
+**section-restart class** (papers whose question numbering restarts per
+section — English P2, Irish, History essay papers, the continental
+languages' section-numbered papers — which the contiguity-gated anchor
+generator correctly refuses until it is section-aware), and papers with no
+anchor of any kind.
 
 - **Wave 1 — Mathematics** (25 papers, 249 q). Two verifiers, 0 disagreements.
 - **Wave 2 — 14 subjects** (3,272 q): biology, geography, chemistry, physics,
@@ -83,6 +89,27 @@ HL Q12 cross-strand open essays).
   the one two-verifier disagreement, Jewish Studies 2022 Q11 Exodus, resolved
   to the liberation strand for cross-year consistency). jc-graphics has no
   anchored papers, so it remains untagged.
+- **Waves 8-9 — the paper-anchor pipeline (2026-07-08)**: the vault stopped
+  being bounded to answer-sidecar papers. Paper-side-only anchor files
+  (`public/paper-anchors/`, PaperAnswerMap schema, mode:'pagejump', no scheme
+  claim; see `PAPER-ANCHORS.md`) were generated for ~700 previously
+  scheme-less papers under a contiguity gate (a numbering gap or a
+  non-monotonic/rotated/cover-page anchor set → the paper is dropped, never a
+  wrong crop), then tagged. This unlocked the modern eras of the highest-
+  traffic subjects — mathematics (25→140 papers), physics (0→63), biology
+  (20→89), chemistry, agricultural-science — plus DCG (496 q from anchors),
+  the business/humanities corpus (accounting, art 119 papers, business,
+  economics, geography, music, RE, ...), and the practical/STEM/language/JC/
+  LCA sweep (construction, engineering, technology, physics-and-chemistry,
+  spanish aural, latin, ancient-greek, mandarin, seven JC subjects, four LCA
+  subjects). Every wave carried classify + rigorous per-question verify +
+  an adversarial fresh re-classification; corrections applied at source
+  (e.g. ag-science's 21 keyword-bias fixes, construction's 2 consistency
+  fixes surfaced by the adversarial pass, geography's 29 body-text fixes).
+  Trap classes the gates cannot see were caught by post-run render/textual
+  QA and documented as SUBJECT_GRAMMAR CAUTIONs (marks-tables, answer-list
+  fabricated numbers, back-cover grids, cover-instruction lists that satisfy
+  the contiguity proof).
 
 Every question is classified against the subject's `curriculum.ts` taxonomy and
 re-checked by an independent adversarial verifier per chunk.
@@ -98,10 +125,23 @@ session transcripts). Accreditation-trustworthy.
 
 ### Not tagged yet (explicit, not silent)
 
-- **jc-graphics** has no anchored papers yet (Wave 7 covered every other
-  previously no-taxonomy subject).
-- Papers with no answer-map anchors at all cannot be tagged until they get
-  paper-side anchors (the sidecar pipeline).
+- **The section-restart class** — papers whose printed question numbering
+  restarts at 1 in each section (English P2 all years/levels + OL P1; Irish
+  HL/OL P1/P2 and aurals; History essay papers; the continental languages'
+  section-numbered reading/writing papers; pre-2020 combined
+  business/economics/home-ec papers; PE's stray instruction-page references).
+  The contiguity-gated anchor generator refuses these on purpose (restarting
+  numbers are non-monotonic → a naive anchor would let one section's crop
+  swallow the next). They need a **section-aware anchor generator** (detect
+  section headers, anchor within each section's own numbering) — the next
+  build-out. Enumerated per subject in the wave reports under
+  `scripts/paper-trail/out/`.
+- **Rotated/single-sheet formats** the vertical-band schema can't represent:
+  DCG Section-A A3 quadrant sheets, geography map/photo inserts, art studio
+  sheets, LCA practical/project sheets — correct wholesale refusals.
+- **jc-graphics** has no anchored papers at all (rot-90 sheets only).
+- A handful of genuine SEC misprints (dotless question headers, duplicate
+  numbers) that break contiguity — dropped with the paper named in the report.
 
 ## The pipeline (verify-don't-guess, like the answer maps)
 
