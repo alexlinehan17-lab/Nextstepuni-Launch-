@@ -40,13 +40,14 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
   const [subtopicId, setSubtopicId] = useState<string | null>(null);
   const [sort, setSort] = useState<'busiest' | 'frequent'>('busiest');
   const [levelFilter, setLevelFilter] = useState<'all' | string>('all');
+  const [yearFilter, setYearFilter] = useState<'all' | number>('all');
   const [topicQuery, setTopicQuery] = useState('');
   const [revVer, setRevVer] = useState(0); // bump to re-read review-deck membership
 
   // The vault feed keeps a small pool of open PDFs — release them on exit.
   useEffect(() => () => releaseVaultPdfs(), []);
-  // A new topic starts with a fresh level filter.
-  useEffect(() => { setLevelFilter('all'); }, [subtopicId]);
+  // A new topic starts with fresh level + year filters.
+  useEffect(() => { setLevelFilter('all'); setYearFilter('all'); }, [subtopicId]);
   // Reset the topic search when switching subjects.
   useEffect(() => { setTopicQuery(''); }, [subjectId]);
 
@@ -90,7 +91,10 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
   if (subjectId && subtopicId) {
     const years = new Set(questions.map(q => q.year));
     const levels = [...new Set(questions.map(q => q.level))];
-    const shown = levelFilter === 'all' ? questions : questions.filter(q => q.level === levelFilter);
+    const yearList = [...years].sort((a, b) => b - a); // newest first
+    const shown = questions.filter(
+      q => (levelFilter === 'all' || q.level === levelFilter) && (yearFilter === 'all' || q.year === yearFilter),
+    );
     return (
       <div className="w-full max-w-2xl mx-auto pb-12">
         <button onClick={() => setSubtopicId(null)} className="flex items-center gap-1.5 text-[13px] font-medium mb-4" style={{ color: '#7a7068' }}>
@@ -132,8 +136,40 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
             </button>
           )}
         </div>
+        {/* Year filter — jump straight to a sitting (Studyclix-style). */}
+        {yearList.length > 3 && (
+          <div className="flex items-center gap-1.5 overflow-x-auto pb-2 mb-3 -mx-1 px-1" role="group" aria-label="Filter by year">
+            <button
+              aria-pressed={yearFilter === 'all'}
+              onClick={() => setYearFilter('all')}
+              className={`shrink-0 px-3 py-1 rounded-full text-[12px] font-semibold border-2 transition-colors ${yearFilter === 'all' ? '' : 'bg-white dark:bg-zinc-900'}`}
+              style={yearFilter === 'all'
+                ? { backgroundColor: ACCENT, borderColor: ACCENT, color: '#fff' }
+                : { borderColor: '#d0cdc8', color: '#7a7068' }}
+            >
+              All years
+            </button>
+            {yearList.map(y => (
+              <button
+                key={y}
+                aria-pressed={yearFilter === y}
+                onClick={() => setYearFilter(y)}
+                className={`shrink-0 px-3 py-1 rounded-full text-[12px] font-semibold tabular-nums border-2 transition-colors ${yearFilter === y ? '' : 'bg-white dark:bg-zinc-900'}`}
+                style={yearFilter === y
+                  ? { backgroundColor: ACCENT, borderColor: ACCENT, color: '#fff' }
+                  : { borderColor: '#d0cdc8', color: '#7a7068' }}
+              >
+                {y}
+              </button>
+            ))}
+          </div>
+        )}
         <div className="space-y-4">
-          {shown.map(q => {
+          {shown.length === 0 ? (
+            <p className="text-[13px] rounded-xl px-4 py-3" style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E' }}>
+              No questions for that filter. <button onClick={() => { setLevelFilter('all'); setYearFilter('all'); }} className="font-semibold underline">Show all</button>
+            </p>
+          ) : shown.map(q => {
             void revVer; // recompute membership when the deck changes
             const saved = hasCard(uid, { subjectId: q.subjectId, year: q.year, level: q.level, lang: q.lang, fileid: q.fileid, n: q.n });
             return (
