@@ -208,7 +208,7 @@ viewer crops anchor → next-anchor with no anchor to bound a text's end:
 
 Evidence: `out/paper-anchors-{german,irish,french}-armed-report.md`.
 
-## Per-question crop-end (TV-9) — German shipped, the island problem solved for it
+## Per-question crop-end (TV-9 / TV-9b) — German + Irish P2 shipped, the island problem solved
 
 TV-8 left one residual: a reading section's **last** question had no bounding
 anchor, so its crop ran to the next section's Q1 across the intervening
@@ -240,16 +240,35 @@ tags (`german-6-1` Novel/Short-story, `german-6-0` Magazine) already reference
 tagging**. OL German (3-text layout) and the aural papers defer cleanly (0
 anchored — MISSING is acceptable).
 
-### Still deferred — the page-gate island problem (TV-9b)
+### TV-9b — armed-island page gating (Irish P2 shipped)
 
-- **irish reading papers** — `det_armed_sectioned` anchors them, and the span
-  gate is now island-aware, but the **page-level** contiguity/lead gates still
-  fire: Irish P2's reading passages are ≥4 content pages before Q1 (>
-  `MAX_LEAD_PAGES`) and the inter-text passage pages carry numbered paragraphs
-  that every context-free detector reads as question markers, so they can't be
-  proven passage-not-question cheaply. Unblocking needs the armed detector's
-  per-page armed/disarmed state threaded into the lead/hole gates (TV-9b) —
-  strictly more gate work, and deferred rather than shipped a wrong crop.
+TV-9's crop-ends stopped the *bleed*, but a reading paper's questions are small
+"islands" inside a much larger document (passages, answer space, non-anchored
+essay sections), and `contiguity_proof`'s document-**tiling** heuristics
+(`MAX_LEAD_PAGES` cap, `MIN_ANCHOR_SPAN` floor) assume questions fill the paper —
+so Irish P2 still dropped (its léamhthuiscint passage is ≥4 pages before Q1).
+Those heuristics exist to stop a **context-free** detector mistaking a decoy list
+for the question sequence — which the armed detector already precludes (arm/
+disarm headers + the `qa_verify` marker re-check). `paper_gates` now has an
+**armed-island branch** (active only when a run is pinned to `armed_sectioned`):
+it keeps the shared `stray_marker_check`, **requires every island boundary to be
+crop-end clamped** (else drop — an unclamped boundary is the one way to bleed),
+then tolerates the non-anchor pages. The safety argument is airtight: with every
+island clamped, a tolerated page can only cost a **MISSING** question, never a
+wrong crop.
+
+**Irish Paper 2 léamhthuiscint shipped:** 13 HL papers (2013–2025), 12 questions
+each (text A → E-1..6, text B → F-1..6), render-QA verified across 2016 + 2024
+(E-6/F-6 stop at the next `Léigh an sliocht` / `Ceist 2` header — no bleed).
+`irish.json` tags already reference `n` 1..12 (`irish-3-0` Léamhthuiscint A,
+`irish-3-1` Léamhthuiscint B), so the crops light up with **no new tagging**.
+irish stays pinned `question` (its foundation **aural** papers number
+continuously) and the P2 sidecars come from a **second, explicit**
+`--grammar armed_sectioned` pass — the two passes write disjoint fileids. OL P2
+(different layout) defers.
+
+### Still deferred
+
 - **french reading papers** — still inert (no reliable arm/disarm header;
   passage headed `Q.1`/`Q.2`, questions share the passage number space).
 - **other MFL reading papers** (italian, spanish 015/O15 handouts, russian,
