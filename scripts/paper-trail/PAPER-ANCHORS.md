@@ -267,6 +267,29 @@ continuously) and the P2 sidecars come from a **second, explicit**
 `--grammar armed_sectioned` pass — the two passes write disjoint fileids. OL P2
 (different layout) defers.
 
+### TV-10 — Geography Part One (shipped)
+
+Geography's HL/OL written paper is the same island shape from the other side:
+**Part One** is 12 short-answer questions (bare left-margin `N.`, 1..12), then
+**Part Two** is structured/essay questions printed as `Question N` *text* (no
+bare `N.`) — but the examiner marking grid near the end prints a **decoy bare-`N.`
+run 13..24**, which a context-free detector splices onto Part One as a fake
+1..24 sequence, so Q12→"Q13" spans ~18 pages and the paper drops. The armed
+config arms at `PART ONE` / `CUID A hAON` and disarms at `PART TWO` / `CUID A DÓ`
+(**case-sensitive uppercase**, so the title-case contents-page entries never
+fire), which excludes the decoy grid and clamps Q12 at the Part Two header.
+
+**Shipped:** 46 HL+OL papers (2016+ both languages, plus older HL; ~552
+questions), render-QA verified on 2019 HL EV+IV (Q1 self-contained *with its
+photo*, Q12 clamped at Part Two — no essay bleed). The `geography.json` tags are
+**entirely Part One** (every entry is `n` 1..12), so all 46 papers light up with
+**no new tagging**. Only Part One is cropped — Part Two essays are intentionally
+not (they're `Question N` set-pieces, not the drilled short questions). geography
+stays **unpinned** (its other components anchor via auto); the Part-One sidecars
+come from an explicit `--grammar armed_sectioned` pass. Pre-2016 OL Irish-medium
+papers (older format) and 2017 OL EV (no detected Part Two → conservative tiling
+gate) defer cleanly.
+
 ### Still deferred
 
 - **french reading papers** — still inert (no reliable arm/disarm header;

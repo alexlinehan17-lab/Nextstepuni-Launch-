@@ -454,6 +454,27 @@ SUBJECT_ARMED_PATTERNS = {
     # number space), and the 50-word sub-answers print their own '1.'/'2.'
     # answer-box numbers. There is no reliable header to arm/disarm — so french
     # stays inert (defers). See PAPER-ANCHORS.md.
+    #
+    # Geography HL/OL written paper (LC005[A|G]LP000). 'PART ONE' (EV) / 'CUID A
+    # hAON' (IV) opens the 12 short-answer questions (bare left-margin 'N.',
+    # 1..12); 'PART TWO' (EV) / 'CUID A DÓ' (IV) opens the structured/essay
+    # section, whose questions print as 'Question N' text (no bare 'N.') AND
+    # whose examiner marking grid prints a decoy bare-'N.' run 13..24 near the
+    # end — disarming at PART TWO keeps that grid, and everything after Part One,
+    # out of the anchored run. Case-sensitive uppercase so the title-case
+    # contents-page entries ('Part One', 'Cuid a hAon') never arm/open. This
+    # anchors ONLY Part One (the tagged n 1..12); Part Two is intentionally not
+    # cropped. Section 0 keeps bare 'N' labels so n matches the geography tags.
+    "geography": {
+        "open": [re.compile(p) for p in (
+            r"^PART TWO\b",
+            r"^PART THREE\b",
+            r"^CUID A DÓ\b",
+            r"^CUID A TRÍ\b",
+        )],
+        "arm": [re.compile(r"^PART ONE\b"), re.compile(r"^CUID A hAON\b")],
+        "disarm": [],
+    },
 }
 
 _LIGATURES = {
