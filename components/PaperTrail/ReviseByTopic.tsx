@@ -102,8 +102,9 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
         </button>
         <h2 className="text-2xl font-semibold mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{topicLabel(subtopicId)}</h2>
         <p className="text-[13px] mb-3" style={{ color: '#7a7068' }}>
-          {questions.length} question{questions.length === 1 ? '' : 's'} across {years.size} year{years.size === 1 ? '' : 's'}, newest first —
-          each shown as printed on the paper, marking scheme one tap below.
+          {levelFilter === 'all' && yearFilter === 'all'
+            ? <>{questions.length} question{questions.length === 1 ? '' : 's'} across {years.size} year{years.size === 1 ? '' : 's'}, newest first — each shown as printed on the paper, marking scheme one tap below.</>
+            : <>Showing {shown.length} of {questions.length} question{questions.length === 1 ? '' : 's'}{yearFilter !== 'all' ? ` from ${yearFilter}` : ''}{levelFilter !== 'all' ? ` · ${LVL[levelFilter] ?? levelFilter}` : ''}.</>}
         </p>
         <div className="flex items-center gap-2 flex-wrap mb-4">
           {levels.length > 1 && (
