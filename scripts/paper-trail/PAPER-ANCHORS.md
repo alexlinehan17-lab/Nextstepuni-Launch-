@@ -161,10 +161,70 @@ recognises the question-block header (`Ceisteanna`, `Beantworten Sie`,
 strictly more than section-restart tracking. Do not pin `irish` / `french` /
 `german` to `sectioned_lead_int` until that lands.
 
+## The `armed_sectioned` detector (TV-8) — decoys solved, structure still blocks
+
+TV-8 built that armed detector: `det_armed_sectioned` adds an **ARM/DISARM
+state machine** on top of `det_sectioned_lead_int`'s section tracking, keyed by
+`SUBJECT_ARMED_PATTERNS` (per subject: `open` = section boundary + disarm,
+`arm` = question-block header, `disarm` = passage/grammar/matching header). A
+bare `N.` emits a hit **only while armed**, so the numbered passage above the
+questions and the numbered sub-lists inside a question are ignored. Per-subject
+patterns were verified against the real 2019–2024 text layers. Same opt-in
+guard as `sectioned_lead_int` (`ARMED_ENABLED`, set only when a run is pinned to
+`armed_sectioned`): **inert = byte-identical to `det_lead_int`** — proven 0
+mismatches over 250 random corpus papers, so registering it regresses nothing.
+(One implementation note: while armed it walks each page in **visual (y,x)
+order**, not `line_groups`' word-stream order, so a header arms only the lines
+that visually follow it; the inert path keeps the raw order for byte-identity.)
+
+**Result: the decoy problem is solved, but these papers still cannot ship —
+`det_armed_sectioned` anchors EXACTLY the real reading questions (verified: on
+2024 HL german it returns Text I Q1–4 + Text II Q1–4 and nothing else — no
+grammar list, no `Satzhälften` 1–6, no `18.`; on 2024 HL irish P2 it returns
+léamhthuiscint A 1–6 + B 1–6 and nothing else), and mid-text question crops
+render perfectly. But the reading comprehension is only a *fraction* of each
+paper, so the LAST question of each reading text bleeds through the non-reading
+sections that follow it** (grammar / next passage / production), because the
+viewer crops anchor → next-anchor with no anchor to bound a text's end:
+
+- **german** (`LC011…P000`): `--grammar armed_sectioned --dry-run` over
+  2019–2024 → **1 anchored / 23 dropped** (24 papers). 23 drops are *correct*
+  refusals — HL papers hit the span gate (Text I Q4 → Text II Q1 is 4–5 pages
+  in 2019/2020) or the ≤3-lead-page / hole gate (the `Angewandte Grammatik`
+  page 9 sits between the two texts); OL/aural papers have no arm header and
+  anchor 0. The **one** paper that slipped the gates (2021 HL, Text I Q4 → Q1
+  exactly 3 pages) rendered a **catastrophic B-4 crop that swallowed the whole
+  grammar section AND the entire Text II passage** — dropped on visual QA.
+- **irish** (Paper Two léamhthuiscint): armed detection is clean (A 1–6, B 1–6),
+  but passage B sits on its own page *between* A's questions and B's, and
+  Ceist 2/3/4 (prós/filíocht/litríocht) fill the rest of the paper → every
+  paper drops at the hole/lead-page gate, and A-6's crop would bleed into
+  passage B anyway. **0 anchored / 30 dropped.**
+- **french** (`LC010…P000`): DELIBERATELY UNCONFIGURED — the questions follow
+  the passage with **no** question-block header to arm on (passage headed
+  `Q.1`/`Q.2`; questions unlabelled, sharing the passage's `1..n` space) and the
+  50-word sub-answers print their own `1.`/`2.` answer-box numbers. No reliable
+  arm/disarm header exists, so french stays inert → **0 anchored / 24 dropped.**
+
+Evidence: `out/paper-anchors-{german,irish,french}-armed-report.md`, and the
+rendered German 2021 HL crops in `out/qa-render/german/` (B-1 clean; B-4 bleeds
+through grammar + Text II passage). **Ship nothing, pin nothing.** The armed
+detector is the correct *infrastructure* — it never fabricates a phantom
+question — but these papers stay **deferred** for a deeper reason than TV-7:
+not decoy fabrication (solved), but that the reading comprehension is a partial
+document whose last-per-text question has no crop boundary. Unblocking them
+needs a viewer/schema change (a per-question crop *end* independent of the next
+anchor, e.g. a disarm-header sentinel) — out of scope here (would touch the
+shared gates / viewer, which TV-8 must not). English P2 and History (below) are
+blocked by the same partial-document shape.
+
 ### Still deferred (section-/subsection-restart backlog)
 
-- **irish / french / german reading papers** — passage/matching-task/grammar
-  decoy numbering (above). Needs armed question-block detection.
+- **irish / french / german reading papers** — decoy numbering is now solved by
+  `det_armed_sectioned` (TV-8), but the reading section is a *partial document*
+  whose last-per-text question crop bleeds into the following grammar/passage/
+  production with no bounding anchor. Needs a crop-end mechanism in the viewer,
+  not a better detector.
 - **other MFL reading papers** (italian, spanish 015/O15 handouts, russian,
   japanese, …) — same numbered-passage class.
 - **English Paper 2** — numbering restarts per **subsection** (comparative

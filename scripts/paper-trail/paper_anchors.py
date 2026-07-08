@@ -50,12 +50,19 @@ HONESTY GATES — a wrong crop is worse than none:
 
 Usage:
   python3 paper_anchors.py <subjectId>
-      [--grammar auto|section_token|question|lead_int|sectioned_lead_int]
+      [--grammar auto|section_token|question|lead_int|sectioned_lead_int
+                 |armed_sectioned]
       [--years 2010-2025] [--qa-render N] [--dry-run]
 
   sectioned_lead_int is the section-restart grammar (bare 'N.' numbering that
   restarts per section, keyed by SUBJECT_SECTION_PATTERNS). It is opt-in only —
   no subject is pinned to it in production (see that table's note).
+
+  armed_sectioned (TV-8) adds ARM/DISARM state on top of section tracking
+  (keyed by SUBJECT_ARMED_PATTERNS) for the section-restart READING papers,
+  whose passages / grammar sub-lists / matching tasks carry DECOY numbering in
+  the same per-section space as the real questions: a bare 'N.' is a question
+  only while a question-block header has ARMED detection. Opt-in only.
 
 Outputs (deterministic, sorted, idempotent):
   public/paper-anchors/<year>/<paperFileid>.json     (committed, hosted)
@@ -367,6 +374,75 @@ SUBJECT_SECTION_PATTERNS = {
 ACTIVE_SUBJECT = None
 SECTIONED_ENABLED = False
 
+# ── Armed section-aware grammar (det_armed_sectioned) — TV-8 ──────────────────
+# The section-restart reading papers (irish léamhthuiscint, french/german
+# reading) carry DECOY numbering that shares the per-section number space with
+# the real questions: numbered passage paragraphs, numbered reading-passage
+# sentences, matching-task item lists ('Satzhälften'), grammar sub-lists
+# ('Angewandte Grammatik'), and stray ordinals ('18. Geburtstag'). A bare-'N.'
+# detector — even the section-aware det_sectioned_lead_int — cannot tell a
+# question from a paragraph, so it fabricates phantom questions (TV-7).
+#
+# det_armed_sectioned adds an ARM/DISARM state machine on top of the section
+# tracking: bare-'N.' lines are IGNORED until a QUESTION-BLOCK header ARMS
+# detection, and a passage / grammar / matching-task header DISARMS it again.
+# So the numbered passage above the questions, and the numbered sub-lists inside
+# a question, never emit hits. Per subject:
+#   • 'open'   — a NEW section boundary (also disarms): bumps the section index
+#                so each reading text's 1..N run stays a distinct key, exactly
+#                as det_section_token's 'A-1'/'B-1' keys do for DCG. Matched at
+#                the LEFT MARGIN and anchored at line start (re.match).
+#   • 'arm'    — the question-block header that turns detection ON (re.search).
+#   • 'disarm' — a passage/matching/grammar header that turns detection OFF
+#                without opening a new section (re.search).
+# Every pattern below was verified against the real 2019–2024 text layers.
+#
+# SAFETY — INERT unless the run is EXPLICITLY pinned to 'armed_sectioned'
+# (SUBJECT_GRAMMAR or --grammar). When ARMED_ENABLED is False the config lookup
+# returns None: detection starts ARMED, the section index stays 0, and the
+# output is byte-identical to det_lead_int — so registering this detector cannot
+# regress any existing subject (proven in-session, like det_sectioned_lead_int).
+ARMED_ENABLED = False
+
+SUBJECT_ARMED_PATTERNS = {
+    # German written paper (LC011...P000). Two reading texts (HL) / three (OL),
+    # each 'TEXT n: LESEVERSTÄNDNIS' passage (dot-less line numbers) followed by
+    # 'Lesen Sie Text n. Beantworten Sie Frage ...' then questions 1..4. The
+    # 'TEXT n:' headers (incl. ANGEWANDTE GRAMMATIK, ÄUSSERUNG ZUM THEMA) and
+    # SCHRIFTLICHE PRODUKTION open new sections and disarm; the 'Satzhälften'
+    # matching task inside a question disarms so its 1..6 item list is ignored.
+    # NOTE case-sensitive open ('TEXT'≠'Text') so the arm line 'Lesen Sie Text
+    # I. Beantworten…' is NOT read as a section opener.
+    "german": {
+        "open": [re.compile(p) for p in (
+            r"^TEXT\s+[IVX]+\b",
+            r"^SCHRIFTLICHE\s+PRODUKTION\b",
+        )],
+        "arm": [re.compile(r"Beantworten\s+Sie\s+Frage", re.I)],
+        "disarm": [re.compile(r"Satzh[aä]lften", re.I)],
+    },
+    # Irish Paper Two léamhthuiscint (LC001[A|G]LP200IV). 'Ceist 1
+    # LÉAMHTHUISCINT' holds reading texts A and B; each is 'Léigh an sliocht seo
+    # a leanas …' (passage intro — opens a section, disarms) then numbered
+    # passage paragraphs 1..k (ignored while disarmed) then 'Ceisteanna' (arms)
+    # then questions 1..6. 'Ceist 2/3/4' (prós/filíocht/litríocht — no bare-'N.'
+    # questions) open sections and disarm so nothing leaks from them.
+    "irish": {
+        "open": [re.compile(p) for p in (
+            r"^Léigh\s+an\s+sliocht",
+            r"^Ceist\s+[2-9]\b",
+        )],
+        "arm": [re.compile(r"^Ceisteanna\b")],
+        "disarm": [],
+    },
+    # french: DELIBERATELY UNCONFIGURED. The reading questions follow the
+    # passage with NO question-block header to arm on (the passage is headed
+    # 'Q.1'/'Q.2'; the questions have no label and share the passage's 1..n
+    # number space), and the 50-word sub-answers print their own '1.'/'2.'
+    # answer-box numbers. There is no reliable header to arm/disarm — so french
+    # stays inert (defers). See PAPER-ANCHORS.md.
+}
+
 _LIGATURES = {
     "Ɵ": "ti", "Ʃ": "tt", "ϐ": "fi",
     "ﬀ": "ff", "ﬁ": "fi", "ﬂ": "fl",
@@ -568,11 +644,75 @@ def det_sectioned_lead_int(doc):
     return hits
 
 
+def det_armed_sectioned(doc):
+    """Armed section-aware det_lead_int (TV-8). A bare left-margin 'N.' is a
+    question ONLY while detection is ARMED — armed by a question-block header
+    and disarmed by a passage / grammar / matching-task header (per subject in
+    SUBJECT_ARMED_PATTERNS). So the numbered passage paragraphs ABOVE the
+    questions, and the numbered sub-lists INSIDE a question, never emit hits —
+    the decoy numbering that defeated det_sectioned_lead_int (TV-7). A section
+    boundary bumps the section index, so each reading text's 1..N run is a
+    distinct key (build_anchors keeps 'A-1' and 'B-1' apart, exactly as
+    det_section_token does for DCG); make_sidecar still renumbers `n`
+    sequentially.
+
+    INERT unless the run is explicitly pinned to this grammar: when
+    ARMED_ENABLED is False the config is None, detection starts ARMED, the
+    section index stays 0 and every label is the bare 'N' — byte-identical to
+    det_lead_int, so registering this detector cannot regress any subject."""
+    cfg = SUBJECT_ARMED_PATTERNS.get(ACTIVE_SUBJECT) if ARMED_ENABLED else None
+    hits = []
+    sec = 0
+    armed = cfg is None  # inert → always armed (== det_lead_int); pinned → wait
+    for pi, page in enumerate(doc):
+        if page.rotation:
+            continue
+        H = page.rect.height
+        # The arm/disarm state machine needs TRUE reading order (a header must
+        # arm/disarm the lines that visually follow it), but line_groups yields
+        # word-stream order. When PINNED, walk each page top→bottom, left→right
+        # so 'Ceisteanna' arms only the questions BELOW it, not a passage
+        # paragraph that happens to precede it in the word stream. When INERT
+        # (cfg None) keep the raw line_groups order so the emitted hit list is
+        # byte-identical to det_lead_int (proven zero-regression).
+        lines = line_groups(page)
+        if cfg is not None:
+            lines = sorted(lines, key=lambda lw: (round(lw[0][1], 1), lw[0][0]))
+        for lw in lines:
+            w = lw[0]
+            if cfg and w[0] < LEFT_MARGIN_X:
+                line = deligature(" ".join(x[4] for x in lw))
+                if any(p.match(line) for p in cfg["open"]):
+                    sec += 1
+                    armed = False
+                    continue
+                if any(p.search(line) for p in cfg["disarm"]):
+                    armed = False
+                    continue
+                if any(p.search(line) for p in cfg["arm"]):
+                    armed = True
+                    continue
+            if not armed:
+                continue
+            m = re.fullmatch(r"(\d{1,2})\.", w[4])
+            if m and w[0] < LEAD_INT_X:
+                n = int(m.group(1))
+                # section 0 (inert / before any section) keeps the bare 'N'
+                # label so the output is byte-identical to det_lead_int.
+                if sec == 0:
+                    lab = str(n)
+                else:
+                    lab = f"{chr(ord('A') + sec)}-{n}" if sec < 26 else f"S{sec}-{n}"
+                hits.append(((sec, n), lab, pi, w[0], w[1] / H))
+    return hits
+
+
 DETECTORS = {
     "section_token": det_section_token,
     "question": det_question_word,
     "lead_int": det_lead_int,
     "sectioned_lead_int": det_sectioned_lead_int,
+    "armed_sectioned": det_armed_sectioned,
 }
 
 
@@ -905,11 +1045,13 @@ def main():
     grammar_pin = args.grammar or SUBJECT_GRAMMAR.get(args.subject)
     rng = random.Random(args.seed)
 
-    # det_sectioned_lead_int only consults the section-pattern table when this
-    # run is explicitly pinned to it — otherwise it is a no-op clone of lead_int.
-    global ACTIVE_SUBJECT, SECTIONED_ENABLED
+    # det_sectioned_lead_int / det_armed_sectioned only consult their pattern
+    # tables when this run is explicitly pinned to them — otherwise each is a
+    # no-op clone of lead_int.
+    global ACTIVE_SUBJECT, SECTIONED_ENABLED, ARMED_ENABLED
     ACTIVE_SUBJECT = args.subject
     SECTIONED_ENABLED = grammar_pin == "sectioned_lead_int"
+    ARMED_ENABLED = grammar_pin == "armed_sectioned"
 
     log(f"paper-anchors: {args.subject} ({cycle}) — {len(rows)} papers, "
         f"grammar {grammar_pin or 'auto'}")
