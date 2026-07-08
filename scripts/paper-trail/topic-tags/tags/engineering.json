@@ -2735,5 +2735,236 @@
     "secondary": "engineering-6-0"
    }
   ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "LC027GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-2-1"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-2",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-1-7"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-1-5"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-12-9",
+    "secondary": "engineering-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "LC027GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-0-3",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-2",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-1-7"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-1-5"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-12-9",
+    "secondary": "engineering-1-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2020,
+  "fileid": "LC027ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-5-3",
+    "secondary": "engineering-1-13"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-0",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-4"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-2-4",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-1-8"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-1-5",
+    "secondary": "engineering-1-4"
+   },
+   {
+    "n": "8",
+    "primary": "engineering-7-3",
+    "secondary": "engineering-8-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2019,
+  "fileid": "LC027ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-2-1",
+    "secondary": "engineering-2-2"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-0",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-4"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-2-4"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-1-8"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-1-5",
+    "secondary": "engineering-1-4"
+   },
+   {
+    "n": "8",
+    "primary": "engineering-7-3",
+    "secondary": "engineering-7-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "engineering",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2017,
+  "fileid": "LC027GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "engineering-2-1",
+    "secondary": "engineering-5-3"
+   },
+   {
+    "n": "2",
+    "primary": "engineering-2-2",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "3",
+    "primary": "engineering-2-5",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "4",
+    "primary": "engineering-1-8",
+    "secondary": "engineering-1-7"
+   },
+   {
+    "n": "5",
+    "primary": "engineering-12-8",
+    "secondary": "engineering-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "engineering-1-4",
+    "secondary": "engineering-1-5"
+   },
+   {
+    "n": "7",
+    "primary": "engineering-12-9",
+    "secondary": "engineering-1-0"
+   }
+  ]
  }
 ]

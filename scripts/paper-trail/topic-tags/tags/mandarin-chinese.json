@@ -207,5 +207,175 @@
     "primary": "mandarin-chinese-3-3"
    }
   ]
+ },
+ {
+  "subjectId": "mandarin-chinese",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "LC566ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "mandarin-chinese-3-0"
+   },
+   {
+    "n": "2",
+    "primary": "mandarin-chinese-3-1"
+   },
+   {
+    "n": "3",
+    "primary": "mandarin-chinese-3-0"
+   },
+   {
+    "n": "4",
+    "primary": "mandarin-chinese-3-2"
+   },
+   {
+    "n": "5",
+    "primary": "mandarin-chinese-3-5"
+   },
+   {
+    "n": "6",
+    "primary": "mandarin-chinese-3-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "mandarin-chinese",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "LC566GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "mandarin-chinese-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "mandarin-chinese-3-3"
+   },
+   {
+    "n": "3",
+    "primary": "mandarin-chinese-3-3"
+   },
+   {
+    "n": "4",
+    "primary": "mandarin-chinese-3-0"
+   },
+   {
+    "n": "5",
+    "primary": "mandarin-chinese-3-5"
+   },
+   {
+    "n": "6",
+    "primary": "mandarin-chinese-3-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "mandarin-chinese",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "LC566ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "mandarin-chinese-3-0"
+   },
+   {
+    "n": "2",
+    "primary": "mandarin-chinese-3-0"
+   },
+   {
+    "n": "3",
+    "primary": "mandarin-chinese-3-1"
+   },
+   {
+    "n": "4",
+    "primary": "mandarin-chinese-3-2"
+   },
+   {
+    "n": "5",
+    "primary": "mandarin-chinese-3-5"
+   },
+   {
+    "n": "6",
+    "primary": "mandarin-chinese-3-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "mandarin-chinese",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "LC566GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "mandarin-chinese-3-4"
+   },
+   {
+    "n": "2",
+    "primary": "mandarin-chinese-3-0"
+   },
+   {
+    "n": "3",
+    "primary": "mandarin-chinese-3-2"
+   },
+   {
+    "n": "4",
+    "primary": "mandarin-chinese-3-3"
+   },
+   {
+    "n": "5",
+    "primary": "mandarin-chinese-3-5"
+   },
+   {
+    "n": "6",
+    "primary": "mandarin-chinese-3-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "mandarin-chinese",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "LC566ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "mandarin-chinese-3-1"
+   },
+   {
+    "n": "2",
+    "primary": "mandarin-chinese-3-2"
+   },
+   {
+    "n": "3",
+    "primary": "mandarin-chinese-3-2"
+   },
+   {
+    "n": "4",
+    "primary": "mandarin-chinese-3-3"
+   },
+   {
+    "n": "5",
+    "primary": "mandarin-chinese-3-5"
+   },
+   {
+    "n": "6",
+    "primary": "mandarin-chinese-3-5"
+   }
+  ]
  }
 ]

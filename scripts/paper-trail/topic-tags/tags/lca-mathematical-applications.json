@@ -217,5 +217,310 @@
     "primary": "lca-mathematical-applications-0-0"
    }
   ]
+ },
+ {
+  "subjectId": "lca-mathematical-applications",
+  "level": "common",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "LB830CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-mathematical-applications-0-0"
+   },
+   {
+    "n": "2",
+    "primary": "lca-mathematical-applications-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "lca-mathematical-applications-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "lca-mathematical-applications-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-mathematical-applications-0-0",
+    "secondary": "lca-mathematical-applications-0-2"
+   },
+   {
+    "n": "6",
+    "primary": "lca-mathematical-applications-0-1",
+    "secondary": "lca-mathematical-applications-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "lca-mathematical-applications-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-mathematical-applications",
+  "level": "common",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LB830CLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-mathematical-applications-0-0",
+    "secondary": "lca-mathematical-applications-0-2"
+   },
+   {
+    "n": "2",
+    "primary": "lca-mathematical-applications-0-3",
+    "secondary": "lca-mathematical-applications-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "lca-mathematical-applications-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-mathematical-applications-0-1",
+    "secondary": "lca-mathematical-applications-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-mathematical-applications-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-mathematical-applications",
+  "level": "common",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "LB830CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-mathematical-applications-0-0",
+    "secondary": "lca-mathematical-applications-0-2"
+   },
+   {
+    "n": "2",
+    "primary": "lca-mathematical-applications-0-3",
+    "secondary": "lca-mathematical-applications-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "lca-mathematical-applications-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-mathematical-applications-0-1",
+    "secondary": "lca-mathematical-applications-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-mathematical-applications-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-mathematical-applications",
+  "level": "common",
+  "lang": "iv",
+  "year": 2021,
+  "fileid": "LB830CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-mathematical-applications-0-0",
+    "secondary": "lca-mathematical-applications-0-2"
+   },
+   {
+    "n": "2",
+    "primary": "lca-mathematical-applications-0-3",
+    "secondary": "lca-mathematical-applications-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-mathematical-applications-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-mathematical-applications-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-mathematical-applications-0-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-mathematical-applications",
+  "level": "common",
+  "lang": "iv",
+  "year": 2019,
+  "fileid": "LB830CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-mathematical-applications-0-0",
+    "secondary": "lca-mathematical-applications-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "lca-mathematical-applications-0-3",
+    "secondary": "lca-mathematical-applications-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "lca-mathematical-applications-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-mathematical-applications-0-2"
+   },
+   {
+    "n": "5",
+    "primary": "lca-mathematical-applications-0-2",
+    "secondary": "lca-mathematical-applications-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-mathematical-applications",
+  "level": "common",
+  "lang": "iv",
+  "year": 2018,
+  "fileid": "LB830CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-mathematical-applications-0-0",
+    "secondary": "lca-mathematical-applications-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "lca-mathematical-applications-0-3",
+    "secondary": "lca-mathematical-applications-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-mathematical-applications-0-2",
+    "secondary": "lca-mathematical-applications-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-mathematical-applications-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "lca-mathematical-applications-0-0",
+    "secondary": "lca-mathematical-applications-0-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-mathematical-applications",
+  "level": "common",
+  "lang": "iv",
+  "year": 2017,
+  "fileid": "LB830CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-mathematical-applications-0-0",
+    "secondary": "lca-mathematical-applications-0-2"
+   },
+   {
+    "n": "2",
+    "primary": "lca-mathematical-applications-0-3",
+    "secondary": "lca-mathematical-applications-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "lca-mathematical-applications-0-1",
+    "secondary": "lca-mathematical-applications-0-0"
+   },
+   {
+    "n": "4",
+    "primary": "lca-mathematical-applications-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-mathematical-applications-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-mathematical-applications",
+  "level": "common",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LB830CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-mathematical-applications-0-0",
+    "secondary": "lca-mathematical-applications-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "lca-mathematical-applications-0-3",
+    "secondary": "lca-mathematical-applications-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-mathematical-applications-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "lca-mathematical-applications-0-1",
+    "secondary": "lca-mathematical-applications-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "lca-mathematical-applications-0-0",
+    "secondary": "lca-mathematical-applications-0-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "lca-mathematical-applications",
+  "level": "common",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LB830CLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "lca-mathematical-applications-0-0",
+    "secondary": "lca-mathematical-applications-0-1"
+   },
+   {
+    "n": "2",
+    "primary": "lca-mathematical-applications-0-3",
+    "secondary": "lca-mathematical-applications-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "lca-mathematical-applications-0-2"
+   },
+   {
+    "n": "4",
+    "primary": "lca-mathematical-applications-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "lca-mathematical-applications-0-0",
+    "secondary": "lca-mathematical-applications-0-1"
+   }
+  ]
  }
 ]
