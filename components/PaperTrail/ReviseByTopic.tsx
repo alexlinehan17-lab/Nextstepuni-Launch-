@@ -12,7 +12,7 @@
  */
 
 import React, { useEffect, useMemo, useState } from 'react';
-import { ArrowLeft, ChevronRight, Layers, Download } from 'lucide-react';
+import { ArrowLeft, ChevronRight, Layers, Download, Search, X } from 'lucide-react';
 import SubjectTilePicker from '../shared/SubjectTilePicker';
 import { siblingsFor, taggedYearsForSubject, topicLabel, topicsForSubject, type SubjectTopic, type TopicSibling } from './topics';
 import { addCard, hasCard, removeCard } from './reviewStore';
@@ -40,12 +40,15 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
   const [subtopicId, setSubtopicId] = useState<string | null>(null);
   const [sort, setSort] = useState<'busiest' | 'frequent'>('busiest');
   const [levelFilter, setLevelFilter] = useState<'all' | string>('all');
+  const [topicQuery, setTopicQuery] = useState('');
   const [revVer, setRevVer] = useState(0); // bump to re-read review-deck membership
 
   // The vault feed keeps a small pool of open PDFs — release them on exit.
   useEffect(() => () => releaseVaultPdfs(), []);
   // A new topic starts with a fresh level filter.
   useEffect(() => { setLevelFilter('all'); }, [subtopicId]);
+  // Reset the topic search when switching subjects.
+  useEffect(() => { setTopicQuery(''); }, [subjectId]);
 
   const toggleReview = (q: TopicSibling) => {
     const id = { subjectId: q.subjectId, year: q.year, level: q.level, lang: q.lang, fileid: q.fileid, n: q.n };
@@ -67,10 +70,16 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
   // "High-yield" = recurs in most tagged years (honest historical frequency,
   // never a prediction). Only meaningful once there are a few years to compare.
   const isHighYield = (t: SubjectTopic) => totalYears >= 3 && t.years / totalYears >= 0.6;
-  const topics: SubjectTopic[] = useMemo(() => {
+  const sortedTopics: SubjectTopic[] = useMemo(() => {
     if (sort === 'busiest') return baseTopics; // already count-sorted
     return [...baseTopics].sort((a, b) => b.years - a.years || b.count - a.count || a.label.localeCompare(b.label));
   }, [baseTopics, sort]);
+  // Type-to-filter topics — subjects like Geography carry 40+ topics.
+  const topics: SubjectTopic[] = useMemo(() => {
+    const q = topicQuery.trim().toLowerCase();
+    if (!q) return sortedTopics;
+    return sortedTopics.filter(t => t.label.toLowerCase().includes(q));
+  }, [sortedTopics, topicQuery]);
   const questions = useMemo(
     () => (subjectId && subtopicId ? siblingsFor(subjectId, subtopicId) : []),
     [subjectId, subtopicId],
@@ -165,6 +174,36 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
             </button>
           ))}
         </div>
+        {/* Type-to-filter — a fast way through a long topic list. */}
+        {sortedTopics.length > 8 && (
+          <div className="relative mb-3">
+            <Search size={15} className="absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" style={{ color: '#9e9186' }} />
+            <input
+              type="text"
+              value={topicQuery}
+              onChange={e => setTopicQuery(e.target.value)}
+              placeholder={`Search ${sortedTopics.length} topics…`}
+              aria-label="Search topics"
+              className="w-full rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-zinc-900 pl-9 pr-9 py-2.5 text-[13.5px] outline-none focus:border-[#F26B1F] transition-colors"
+              style={{ color: INK }}
+            />
+            {topicQuery && (
+              <button
+                onClick={() => setTopicQuery('')}
+                aria-label="Clear search"
+                className="absolute right-2.5 top-1/2 -translate-y-1/2 w-6 h-6 rounded-lg flex items-center justify-center hover:bg-zinc-100 dark:hover:bg-zinc-800"
+                style={{ color: '#9e9186' }}
+              >
+                <X size={14} />
+              </button>
+            )}
+          </div>
+        )}
+        {topics.length === 0 ? (
+          <p className="text-[13px] rounded-xl px-4 py-3" style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E' }}>
+            No topics match “{topicQuery.trim()}”. <button onClick={() => setTopicQuery('')} className="font-semibold underline">Clear</button>
+          </p>
+        ) : (
         <div className="space-y-1.5">
           {topics.map(t => {
             const m = masteryMap.get(t.subtopicId);
@@ -203,6 +242,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
             );
           })}
         </div>
+        )}
       </div>
     );
   }
