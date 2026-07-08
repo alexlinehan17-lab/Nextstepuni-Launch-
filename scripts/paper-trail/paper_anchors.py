@@ -49,8 +49,13 @@ HONESTY GATES — a wrong crop is worse than none:
   same-page trailing matter is included — verified visually per wave.
 
 Usage:
-  python3 paper_anchors.py <subjectId> [--grammar auto|section_token|question|lead_int]
-                           [--years 2010-2025] [--qa-render N] [--dry-run]
+  python3 paper_anchors.py <subjectId>
+      [--grammar auto|section_token|question|lead_int|sectioned_lead_int]
+      [--years 2010-2025] [--qa-render N] [--dry-run]
+
+  sectioned_lead_int is the section-restart grammar (bare 'N.' numbering that
+  restarts per section, keyed by SUBJECT_SECTION_PATTERNS). It is opt-in only —
+  no subject is pinned to it in production (see that table's note).
 
 Outputs (deterministic, sorted, idempotent):
   public/paper-anchors/<year>/<paperFileid>.json     (committed, hosted)
@@ -307,6 +312,61 @@ SUBJECT_GRAMMAR = {
     # wholesale refusals pending detector upgrades.
 }
 
+# ── Section-restart grammar (det_sectioned_lead_int) ─────────────────────────
+# Papers whose bare-'N.' question numbering RESTARTS per section (language
+# reading papers, léamhthuiscint A/B, etc.). Each entry is a list of compiled
+# line-start patterns; a left-margin line matching any of them opens a NEW
+# section, so a 'Ceist 1' under text B is a DIFFERENT question from 'Ceist 1'
+# under text A. The detector emits sort_key=(section_index, N), which keeps
+# per-section numbering unique (build_anchors dedups by that tuple, exactly as
+# det_section_token's 'A-1' keys do for DCG) — the human 'A-1'/'B-2' style id
+# lands in the sidecar `label`, while make_sidecar renumbers `n` sequentially.
+#
+# SAFETY — this table is INERT unless a subject is EXPLICITLY pinned to
+# 'sectioned_lead_int' (SUBJECT_GRAMMAR or --grammar). In auto mode the
+# detector falls back to plain det_lead_int behaviour (section_index always 0),
+# so populating an entry here can never change an unpinned subject's output.
+# The gate is SECTIONED_ENABLED, set once per run in main().
+#
+# The three entries below carry the VERIFIED section structure of the pilot
+# reading papers (confirmed against 2019–2024 text layers). They are recorded
+# for the next agent but DELIBERATELY LEFT UNPINNED: on every sampled paper the
+# reading passages / grammar sub-lists / matching tasks print their OWN bare
+# 'N.' runs (Irish/French number the passage paragraphs 1..k; German's Text-II
+# 'Satzhälften' matching task and 'Angewandte Grammatik' sub-lists number 1..n;
+# stray ordinals like '18. Geburtstag' fire too). Those decoys share the
+# per-section numbering space with the real questions, so a bare-'N.' detector
+# cannot tell a question from a paragraph — it fabricates phantom questions that
+# only the span/monotonic/tail gates catch by luck, not by guarantee. These
+# papers therefore DEFER to the same "armed / subsection-aware" frontier as
+# English P2 and History (see PAPER-ANCHORS.md). Do NOT pin them until a
+# refinement that recognises the question-block header (e.g. 'Ceisteanna',
+# 'Beantworten Sie', 'Répondez') arms detection and disarms the passages.
+SUBJECT_SECTION_PATTERNS = {
+    # Irish Paper Two léamhthuiscint: 'Ceist N' + the 'A – 50 marc' / 'B – 50
+    # marc' reading-text sub-headers restart the question run per text.
+    "irish": [re.compile(p, re.I) for p in (
+        r"^[AB]\s*[–—-]\s*\d+\s*marc\b",
+        r"^Ceist\s+\d",
+    )],
+    # French written paper: Section A/B + the 'Q.1'/'Q.2' reading groups.
+    "french": [re.compile(p, re.I) for p in (
+        r"^Section\s+[AB]\b",
+        r"^Q\.?\s*\d",
+    )],
+    # German written paper: 'TEXT I/II: <subsection>' + Schriftliche Produktion.
+    "german": [re.compile(p, re.I) for p in (
+        r"^TEXT\s+I{1,3}\s*:",
+        r"^SCHRIFTLICHE\s+PRODUKTION",
+    )],
+}
+
+# Set once per run in main(): the detector only consults SUBJECT_SECTION_PATTERNS
+# when the active grammar is 'sectioned_lead_int' (explicit opt-in), so the new
+# detector is a no-op clone of det_lead_int for every other subject/run.
+ACTIVE_SUBJECT = None
+SECTIONED_ENABLED = False
+
 _LIGATURES = {
     "Ɵ": "ti", "Ʃ": "tt", "ϐ": "fi",
     "ﬀ": "ff", "ﬁ": "fi", "ﬂ": "fl",
@@ -467,10 +527,52 @@ def det_lead_int(doc):
     return hits
 
 
+def det_sectioned_lead_int(doc):
+    """Section-aware det_lead_int: a bare left-margin 'N.' whose question number
+    RESTARTS per section (language reading papers). Scans pages in print order
+    maintaining a current section index; a left-margin line matching one of the
+    active subject's SUBJECT_SECTION_PATTERNS opens the next section, and each
+    bare 'N.' emits sort_key=(section_index, N) — so 'Ceist 1' under text B is a
+    distinct question from 'Ceist 1' under text A (build_anchors keeps both;
+    each section's run is validated contiguous 1..N by the unchanged gates).
+
+    INERT unless the run is explicitly pinned to this grammar: when
+    SECTIONED_ENABLED is False (auto mode, or any other pin) there are no section
+    patterns, section_index stays 0, and the output is byte-identical to
+    det_lead_int — so registering this detector cannot regress any subject."""
+    pats = SUBJECT_SECTION_PATTERNS.get(ACTIVE_SUBJECT) if SECTIONED_ENABLED else None
+    hits = []
+    sec = 0
+    for pi, page in enumerate(doc):
+        if page.rotation:
+            continue
+        H = page.rect.height
+        for lw in line_groups(page):
+            w = lw[0]
+            if pats and w[0] < LEFT_MARGIN_X:
+                line = deligature(" ".join(x[4] for x in lw))
+                if any(p.match(line) for p in pats):
+                    sec += 1
+                    continue
+            m = re.fullmatch(r"(\d{1,2})\.", w[4])
+            if m and w[0] < LEAD_INT_X:
+                n = int(m.group(1))
+                # section 0 (no header seen yet / detector inert) keeps the bare
+                # 'N' label so the output is byte-identical to det_lead_int;
+                # later sections carry an 'A-1'/'B-2' style id in the label.
+                if sec == 0:
+                    lab = str(n)
+                else:
+                    lab = f"{chr(ord('A') + sec)}-{n}" if sec < 26 else f"S{sec}-{n}"
+                hits.append(((sec, n), lab, pi, w[0], w[1] / H))
+    return hits
+
+
 DETECTORS = {
     "section_token": det_section_token,
     "question": det_question_word,
     "lead_int": det_lead_int,
+    "sectioned_lead_int": det_sectioned_lead_int,
 }
 
 
@@ -802,6 +904,12 @@ def main():
     rows = [r for r in rows if r["year"] in years]
     grammar_pin = args.grammar or SUBJECT_GRAMMAR.get(args.subject)
     rng = random.Random(args.seed)
+
+    # det_sectioned_lead_int only consults the section-pattern table when this
+    # run is explicitly pinned to it — otherwise it is a no-op clone of lead_int.
+    global ACTIVE_SUBJECT, SECTIONED_ENABLED
+    ACTIVE_SUBJECT = args.subject
+    SECTIONED_ENABLED = grammar_pin == "sectioned_lead_int"
 
     log(f"paper-anchors: {args.subject} ({cycle}) — {len(rows)} papers, "
         f"grammar {grammar_pin or 'auto'}")

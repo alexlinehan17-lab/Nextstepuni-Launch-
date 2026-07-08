@@ -88,11 +88,90 @@ valid-JSON-wrong-shape response reaching the renderer.
 3. Detects question-start markers in the text layer using the anchor-map.py
    detector conventions (left-margin line starts, unrotated pages, ligature
    normalisation): `section_token` (`A-1.` / `B-2` / `C-3.` — DCG-style
-   sectioned papers), `question` (`Question N` / `Ceist N`), `lead_int` (`N.`).
-   A subject pins its grammar in `SUBJECT_GRAMMAR`; unpinned subjects run all
-   detectors and the longest clean sequence wins.
+   sectioned papers), `question` (`Question N` / `Ceist N`), `lead_int` (`N.`),
+   `sectioned_lead_int` (`N.` whose numbering **restarts per section** — see
+   below). A subject pins its grammar in `SUBJECT_GRAMMAR`; unpinned subjects
+   run all detectors and the longest clean sequence wins.
 4. Emits the sidecar JSONs into `public/paper-anchors/<year>/` plus a per-run
    report in `scripts/paper-trail/out/` (gitignored).
+
+## The `sectioned_lead_int` detector (section-restart numbering)
+
+Some papers restart their bare `N.` question numbering **per section** — a
+language reading paper numbers Q1..Qk under text A and then Q1..Qk again under
+text B. `det_lead_int` collapses those into one broken run (two `1.`s, a gap,
+non-monotonic order) and the paper drops. `det_sectioned_lead_int` walks the
+pages in print order maintaining a **current section index**: a left-margin
+line matching one of the active subject's `SUBJECT_SECTION_PATTERNS` opens the
+next section, and each bare `N.` emits `sort_key=(section_index, N)`. Because
+the sort key carries the section, `build_anchors` keeps `(0,1)` and `(1,1)` as
+**distinct** questions (mirroring how `section_token`'s `A-1`/`B-1` keys stay
+distinct for DCG), and every unchanged gate then runs per section: each
+section's run must be contiguous `1..N`, monotonic, span-bounded. The human
+`A-1`/`B-2`-style id lands in the sidecar **`label`**; `make_sidecar` still
+renumbers `n` sequentially `1..N` in print order, so the `types/paperTrail.ts`
+"`n` is the sequential index" contract and `test/vaultAnchors.test.ts` hold.
+
+**Opt-in, zero-regression.** The detector is registered in `DETECTORS` but is
+a **byte-identical clone of `det_lead_int`** unless the run is explicitly
+pinned to `sectioned_lead_int` (via `SUBJECT_GRAMMAR` or `--grammar`): the
+module flag `SECTIONED_ENABLED` gates the section-pattern lookup, so in auto
+mode `section_index` stays `0`, every label is the bare `N`, and the output is
+identical hit-for-hit — proven in-session against Irish/French/German. On a tie
+`build_anchors` keeps the earlier detector, so adding it never displaces
+`lead_int`. Populating a `SUBJECT_SECTION_PATTERNS` entry therefore cannot
+change an unpinned subject's result.
+
+### Pilot outcome (TV-7): verified structure, **deferred** — do NOT pin yet
+
+`SUBJECT_SECTION_PATTERNS` carries the confirmed section grammar for the three
+cleanest-looking section-restart candidates, but **none are pinned in
+production** because a bare-`N.` detector cannot safely anchor them:
+
+- **irish** (Paper Two léamhthuiscint, `LC001[A|G]LP200IV`): the reading texts
+  A/B number their **passage paragraphs** `1.`..`k.` at the left margin, in the
+  *same* section as the real `1. (a)`.. questions. First-occurrence-wins anchors
+  land on the paragraphs, the real questions read as out-of-position duplicates,
+  and every HL/OL paper drops non-monotonic. Paper One (Cluastuiscint) is worse:
+  Cuid I → A/B/C → *Mír* → `1,2,3` restarts three levels deep.
+- **french** (`LC010…P000`): reading passages number their **sentences** `1.`..
+  `n.`; the `Q.1`/`Q.2` groups then restart `1.(a)`.. Same paragraph-collision
+  drop.
+- **german** (`LC011…P000`): the reading questions themselves *are* clean per
+  `TEXT I/II` section (passage line-numbers are dot-less, so they don't fire),
+  **but** the Text-II `Satzhälften` matching task and the `Angewandte Grammatik`
+  sub-lists print their own `1.`..`n.` runs inside a question, and stray
+  ordinals (`18. Geburtstag`) fire too — fabricating phantom Q5/Q6 that only the
+  span / numbering / tail gates catch **by luck, not by guarantee**.
+
+Evidence: `--grammar sectioned_lead_int --dry-run` over 2021–2024 anchored
+**0 / 20 irish, 0 / 16 french, 0 / 16 german** — every drop traced to a decoy
+(`duplicate marker … out of position (numbering restart?)`, `missing question
+number(s) … in the 1..25 run`). See `out/paper-anchors-{irish,french,german}-sectioned-report.md`.
+Because `qa_verify` only re-confirms the marker text *is present* at the anchor
+(it cannot tell a question from a numbered paragraph), a decoy-contaminated map
+that slipped the paper-level gates would still pass re-verify — so pinning these
+would risk a wrong crop on future automated runs. **Refusing all of them is the
+correct result** (cardinal rule: a wrong crop is worse than none).
+
+These reading papers belong to the same **armed / subsection-aware frontier**
+as English P2 and History (below). Unblocking them needs a detector that
+recognises the question-block header (`Ceisteanna`, `Beantworten Sie`,
+`Répondez`) to **arm** question detection and **disarm** the numbered passages —
+strictly more than section-restart tracking. Do not pin `irish` / `french` /
+`german` to `sectioned_lead_int` until that lands.
+
+### Still deferred (section-/subsection-restart backlog)
+
+- **irish / french / german reading papers** — passage/matching-task/grammar
+  decoy numbering (above). Needs armed question-block detection.
+- **other MFL reading papers** (italian, spanish 015/O15 handouts, russian,
+  japanese, …) — same numbered-passage class.
+- **English Paper 2** — numbering restarts per **subsection** (comparative
+  modes; unseen vs prescribed poetry) plus Section I's lettered A–E text
+  alternatives. Needs subsection-aware nesting, not just section-aware.
+- **History** — topic essays renumber per section behind the DBQ Q1–4;
+  topic-aware detection required.
 
 ## QA protocol — a wrong crop is worse than none
 
