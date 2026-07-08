@@ -92,9 +92,9 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
     const years = new Set(questions.map(q => q.year));
     const levels = [...new Set(questions.map(q => q.level))];
     const yearList = [...years].sort((a, b) => b - a); // newest first
-    const shown = questions.filter(
-      q => (levelFilter === 'all' || q.level === levelFilter) && (yearFilter === 'all' || q.year === yearFilter),
-    );
+    const inYear = yearFilter === 'all' ? questions : questions.filter(q => q.year === yearFilter);
+    const shown = levelFilter === 'all' ? inYear : inYear.filter(q => q.level === levelFilter);
+    const levelCount = (l: string) => (l === 'all' ? inYear.length : inYear.filter(q => q.level === l).length);
     return (
       <div className="w-full max-w-2xl mx-auto pb-12">
         <button onClick={() => setSubtopicId(null)} className="flex items-center gap-1.5 text-[13px] font-medium mb-4" style={{ color: '#7a7068' }}>
@@ -117,6 +117,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
                   style={{ color: levelFilter === l ? INK : '#7a7068' }}
                 >
                   {l === 'all' ? 'All levels' : LVL[l] ?? l}
+                  <span className="ml-1 tabular-nums" style={{ color: '#9e9186' }}>{levelCount(l)}</span>
                 </button>
               ))}
             </div>
