@@ -116,6 +116,15 @@ BLANK_PAGE_TEXTS = {
 # rolling a subject out. See PAPER-ANCHORS.md for the rollout recipe.
 SUBJECT_GRAMMAR = {
     "design-and-communication-graphics": "section_token",
+    # german runs armed_sectioned (TV-9): the HL written paper is a section-
+    # restart reading paper (TEXT I / TEXT II, questions 1..4 each) whose
+    # passages carry decoy line numbers and whose Satzhälften task carries a
+    # decoy 1..6 list — the armed state machine excludes both, and per-question
+    # crop-ends (endP/endY at the next TEXT/PRODUKTION header) stop each reading
+    # section's last question bleeding into the next. Render-QA verified on
+    # 2010-2021 HL; OL (3-text layout) defers cleanly. The already-live classic
+    # sidecars (answers:1) are skipped, not touched.
+    "german": "armed_sectioned",
     # Sciences wave: LC biology/chemistry/physics print questions as a bare
     # left-margin 'N.' in every era (pre- and post-2020 formats verified).
     "biology": "lead_int",
@@ -707,6 +716,57 @@ def det_armed_sectioned(doc):
     return hits
 
 
+def armed_section_boundaries(doc):
+    """Positions (page0, yFrac) of the active armed subject's 'open' headers —
+    each is the START of a new reading section / passage, hence the END of the
+    PREVIOUS section's questions (the "island" boundary). These feed the
+    per-question crop-END (endP/endY) so a reading section's last question stops
+    at the following passage instead of bleeding across it (TV-9).
+
+    Empty unless the run is pinned to armed_sectioned AND the subject has an
+    armed config — so it changes nothing for any other run. Mirrors the 'open'
+    branch of det_armed_sectioned exactly (same top→bottom line order, same
+    left-margin gate, same patterns)."""
+    cfg = SUBJECT_ARMED_PATTERNS.get(ACTIVE_SUBJECT) if ARMED_ENABLED else None
+    if not cfg:
+        return []
+    bounds = []
+    for pi, page in enumerate(doc):
+        if page.rotation:
+            continue
+        H = page.rect.height
+        lines = sorted(line_groups(page), key=lambda lw: (round(lw[0][1], 1), lw[0][0]))
+        for lw in lines:
+            w = lw[0]
+            if w[0] < LEFT_MARGIN_X:
+                line = deligature(" ".join(x[4] for x in lw))
+                if any(p.match(line) for p in cfg["open"]):
+                    bounds.append((pi, w[1] / H))
+    return bounds
+
+
+def clamp_ends(anchors, boundaries):
+    """{anchor_index: (page0, yFrac)} — the section boundary that ENDS each
+    last-in-island (or final) question's content. For anchor i, the first
+    boundary strictly after it; kept only when that boundary falls before the
+    NEXT anchor (i.e. i really is the last question of its island) or i is the
+    last anchor (a trailing writing/production section). Empty without
+    boundaries — so non-island papers are untouched."""
+    ends = {}
+    if not boundaries:
+        return ends
+    bounds = sorted(boundaries)
+    apos = [(a[2], a[4]) for a in anchors]
+    for i, pos in enumerate(apos):
+        nxt = apos[i + 1] if i + 1 < len(apos) else None
+        b = next((bp for bp in bounds if bp > pos), None)
+        if b is None:
+            continue
+        if nxt is None or b < nxt:
+            ends[i] = b
+    return ends
+
+
 DETECTORS = {
     "section_token": det_section_token,
     "question": det_question_word,
@@ -813,7 +873,7 @@ def contiguity_proof(doc, anchors, hits, content_pages):
     return None
 
 
-def paper_gates(doc, anchors, expected, reasons, gaps, hits):
+def paper_gates(doc, anchors, expected, reasons, gaps, hits, boundaries=None):
     """Paper-level honesty gates. Returns (drop_reason, notes): drop_reason is
     None when the paper passes; notes carry report-worthy judgment calls
     (continuation pages tolerated, offset numbering, …)."""
@@ -830,10 +890,15 @@ def paper_gates(doc, anchors, expected, reasons, gaps, hits):
                 + f" ({len(anchors)}/{expected} anchored)", notes)
 
     # Span gate: the viewer's paperRegionFor refuses a crop spanning more
-    # than MAX_PAGES pages to the next anchor — such a sidecar would fail CI.
-    for a, b in zip(anchors, anchors[1:]):
-        if b[2] - a[2] > MAX_PAGES:
-            return (f"Q{a[1]} runs {b[2] - a[2]} pages to the next anchor "
+    # than MAX_PAGES pages — such a sidecar would fail CI. For section-restart
+    # island papers, a last-in-island question's crop ENDS at the next section
+    # boundary (its clamp), not at the far next anchor across the passage, so it
+    # is measured to that clamp instead (TV-9 island-aware gating).
+    ends = clamp_ends(anchors, boundaries)
+    for i, (a, b) in enumerate(zip(anchors, anchors[1:])):
+        end_page = ends[i][0] if i in ends else b[2]
+        if end_page - a[2] > MAX_PAGES:
+            return (f"Q{a[1]} runs {end_page - a[2]} pages to its crop end "
                     f"(> {MAX_PAGES}) — the viewer would refuse the crop", notes)
 
     first = anchors[0][0]
@@ -908,12 +973,14 @@ def component_of(fileid):
     return m.group(4).upper() if m else ""
 
 
-def make_sidecar(fileid, anchors, doc):
+def make_sidecar(fileid, anchors, doc, boundaries=None):
     by_page = defaultdict(list)
     for a in anchors:
         by_page[a[2]].append(a[4])
     for pi in by_page:
         by_page[pi].sort()
+
+    ends = clamp_ends(anchors, boundaries)  # {0-based anchor idx: (page0, yFrac)}
 
     qout = []
     for i, (_key, label, pi, _x, y) in enumerate(anchors, start=1):
@@ -928,6 +995,13 @@ def make_sidecar(fileid, anchors, doc):
         }
         if label != str(i):
             q["label"] = label
+        # Section-restart "island" papers: pin the crop-END at the next section
+        # boundary so this question stops at the following passage/section
+        # instead of running to the next island's first question (TV-9).
+        end = ends.get(i - 1)
+        if end is not None:
+            q["endP"] = end[0] + 1
+            q["endY"] = round(end[1], 4)
         qout.append(q)
     return {
         "v": SIDECAR_V,
@@ -956,6 +1030,25 @@ def paper_region_for(qs, n):
         return None
     q = ordered[idx]
     y0 = max(0.0, min(1.0, q["pY"][0]) - TOP_PAD)
+
+    # Explicit crop-END (section-restart island papers) — mirror of the TS
+    # paperRegionFor branch: stop at (endP, endY) independent of the next anchor.
+    endP, endY = q.get("endP"), q.get("endY")
+    if isinstance(endP, int) and isinstance(endY, (int, float)):
+        ey = min(1.0, max(0.0, endY))
+        if endP < q["pP"] or (endP == q["pP"] and ey <= q["pY"][0] + 0.005):
+            return None
+        if endP - q["pP"] > MAX_PAGES:
+            return None
+        if endP == q["pP"]:
+            return [{"p": q["pP"], "r": [0, y0, 1, ey]}]
+        segs = [{"p": q["pP"], "r": [0, y0, 1, 1]}]
+        for p in range(q["pP"] + 1, endP):
+            segs.append({"p": p, "r": [0, 0, 1, 1]})
+        if ey > MIN_TAIL:
+            segs.append({"p": endP, "r": [0, 0, 1, ey]})
+        return segs
+
     nxt = ordered[idx + 1] if idx + 1 < len(ordered) else None
     if nxt is None:
         y1 = q["pY"][1] if q["pY"][1] > y0 + 0.01 else 1.0
@@ -1078,13 +1171,16 @@ def main():
             if best is None or len(anchors) > len(best[1]):
                 best = (g, anchors, expected, reasons, gaps, hits)
         g, anchors, expected, reasons, gaps, hits = best
-        drop, notes = paper_gates(doc, anchors, expected, reasons, gaps, hits)
+        # Section boundaries feed island-aware gating + per-question crop-ends;
+        # empty for every non-armed grammar, so this is inert elsewhere (TV-9).
+        boundaries = armed_section_boundaries(doc) if g == "armed_sectioned" else None
+        drop, notes = paper_gates(doc, anchors, expected, reasons, gaps, hits, boundaries)
         if drop:
             dropped += 1
             report.append((tag, "DROP", drop))
             continue
 
-        sidecar = make_sidecar(r["fileid"], anchors, doc)
+        sidecar = make_sidecar(r["fileid"], anchors, doc, boundaries)
         qa_fail = qa_verify(pdf_path, sidecar, g)
         if qa_fail:
             dropped += 1

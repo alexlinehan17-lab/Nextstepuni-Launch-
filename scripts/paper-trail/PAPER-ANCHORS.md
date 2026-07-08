@@ -206,25 +206,52 @@ viewer crops anchor → next-anchor with no anchor to bound a text's end:
   50-word sub-answers print their own `1.`/`2.` answer-box numbers. No reliable
   arm/disarm header exists, so french stays inert → **0 anchored / 24 dropped.**
 
-Evidence: `out/paper-anchors-{german,irish,french}-armed-report.md`, and the
-rendered German 2021 HL crops in `out/qa-render/german/` (B-1 clean; B-4 bleeds
-through grammar + Text II passage). **Ship nothing, pin nothing.** The armed
-detector is the correct *infrastructure* — it never fabricates a phantom
-question — but these papers stay **deferred** for a deeper reason than TV-7:
-not decoy fabrication (solved), but that the reading comprehension is a partial
-document whose last-per-text question has no crop boundary. Unblocking them
-needs a viewer/schema change (a per-question crop *end* independent of the next
-anchor, e.g. a disarm-header sentinel) — out of scope here (would touch the
-shared gates / viewer, which TV-8 must not). English P2 and History (below) are
-blocked by the same partial-document shape.
+Evidence: `out/paper-anchors-{german,irish,french}-armed-report.md`.
 
-### Still deferred (section-/subsection-restart backlog)
+## Per-question crop-end (TV-9) — German shipped, the island problem solved for it
 
-- **irish / french / german reading papers** — decoy numbering is now solved by
-  `det_armed_sectioned` (TV-8), but the reading section is a *partial document*
-  whose last-per-text question crop bleeds into the following grammar/passage/
-  production with no bounding anchor. Needs a crop-end mechanism in the viewer,
-  not a better detector.
+TV-8 left one residual: a reading section's **last** question had no bounding
+anchor, so its crop ran to the next section's Q1 across the intervening
+grammar/passage/production block (the "island" problem). TV-9 adds an optional
+per-question crop-**end** (`endP`/`endY` in `PaperAnswerQuestion`) that stops a
+crop at a fixed point independent of the next anchor:
+
+- **Shared renderer** — `paperRegionFor` (and its Python mirror `paper_region_for`)
+  grew an additive `endP`/`endY` branch: when set, the crop ends there; when
+  absent, the next-anchor derivation is byte-identical (every pre-TV-9 sidecar
+  unchanged). Refuses non-monotonic / >`MAX_PAGES` ends → null (fallback), never
+  a wrong crop.
+- **Generator** — `armed_section_boundaries()` records each `open`-header
+  position (a genuine new section/passage), and `clamp_ends()` pins the
+  last-in-island (and final) question's crop-end at the next such boundary.
+  Boundaries are taken **only** at `open` events, never at bare `disarm`s, so an
+  intra-question decoy list (e.g. German's *Satzhälften* 1..6) is still fully
+  inside its owning question's crop — verified by render.
+- **Island-aware span gate** — `paper_gates` now measures a last-in-island
+  question's span to its clamp, not to the far next-island anchor, so the paper
+  no longer drops at the `MAX_PAGES` viewer-contract gate.
+
+**German is pinned (`SUBJECT_GRAMMAR["german"] = "armed_sectioned"`) and shipped:**
+12 HL written papers (2010–2021, EV+IV), 8 reading questions each (TEXT I → B-1..4,
+TEXT II → C/D-1..4), render-QA verified (Q4/Q8 stop at the next TEXT/PRODUKTION
+header, no bleed; interior questions unchanged). The existing `german.json` topic
+tags (`german-6-1` Novel/Short-story, `german-6-0` Magazine) already reference
+`n` 1..8, so the crops light up on already-tagged questions with **no new
+tagging**. OL German (3-text layout) and the aural papers defer cleanly (0
+anchored — MISSING is acceptable).
+
+### Still deferred — the page-gate island problem (TV-9b)
+
+- **irish reading papers** — `det_armed_sectioned` anchors them, and the span
+  gate is now island-aware, but the **page-level** contiguity/lead gates still
+  fire: Irish P2's reading passages are ≥4 content pages before Q1 (>
+  `MAX_LEAD_PAGES`) and the inter-text passage pages carry numbered paragraphs
+  that every context-free detector reads as question markers, so they can't be
+  proven passage-not-question cheaply. Unblocking needs the armed detector's
+  per-page armed/disarmed state threaded into the lead/hole gates (TV-9b) —
+  strictly more gate work, and deferred rather than shipped a wrong crop.
+- **french reading papers** — still inert (no reliable arm/disarm header;
+  passage headed `Q.1`/`Q.2`, questions share the passage number space).
 - **other MFL reading papers** (italian, spanish 015/O15 handouts, russian,
   japanese, …) — same numbered-passage class.
 - **English Paper 2** — numbering restarts per **subsection** (comparative
