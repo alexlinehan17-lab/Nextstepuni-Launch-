@@ -6,7 +6,7 @@
  * scripts/paper-trail/topic-tags/build-tags.mjs from the verified per-subject
  * wave files. DO NOT hand-edit — edit the wave file + regenerate.
  *
- * Coverage: accounting, agricultural-economics, agricultural-science, ancient-greek, applied-mathematics, arabic, art, biology, bulgarian, business, chemistry, classical-studies, computer-science, construction-studies, croatian, czech, danish, design-and-communication-graphics, dutch, economics, engineering, english, estonian, finnish, french, geography, german, history, history-early-modern, home-economics-s-and-s, hungarian, irish, italian, japanese, jc-applied-technology, jc-business-studies, jc-classics, jc-engineering, jc-english, jc-french, jc-geography, jc-german, jc-history, jc-home-economics, jc-irish, jc-irish-t1, jc-italian, jc-jewish-studies, jc-mathematics, jc-music, jc-religious-education, jc-science, jc-spanish, jc-wood-technology, latin, latvian, lca-active-leisure-studies, lca-agriculture-horticulture, lca-childcare-community-care, lca-crafts-and-design, lca-engineering, lca-english-and-communications, lca-french, lca-gaeilge-chumarsaideach, lca-german, lca-graphics-and-construction-studies, lca-hair-and-beauty, lca-hotel-catering-and-tourism, lca-information-and-communication-tech, lca-italian, lca-mathematical-applications, lca-office-admin-and-customer, lca-sign-language, lca-social-education, lca-spanish, lca-technology, link-modules, lithuanian, maltese, mandarin-chinese, mathematics, modern-greek, music, physical-education, physics, physics-and-chemistry, polish, politics-and-society, portuguese, religious-education, romanian, russian, slovakian, slovenian, spanish, swedish, technology, ukrainian — 2163 papers, 21690 questions.
+ * Coverage: accounting, agricultural-economics, agricultural-science, ancient-greek, applied-mathematics, arabic, art, biology, bulgarian, business, chemistry, classical-studies, computer-science, construction-studies, croatian, czech, danish, design-and-communication-graphics, dutch, economics, engineering, english, estonian, finnish, french, geography, german, history, history-early-modern, home-economics-s-and-s, hungarian, irish, italian, japanese, jc-applied-technology, jc-business-studies, jc-classics, jc-engineering, jc-english, jc-french, jc-geography, jc-german, jc-history, jc-home-economics, jc-irish, jc-irish-t1, jc-italian, jc-jewish-studies, jc-mathematics, jc-music, jc-religious-education, jc-science, jc-spanish, jc-wood-technology, latin, latvian, lca-active-leisure-studies, lca-agriculture-horticulture, lca-childcare-community-care, lca-crafts-and-design, lca-engineering, lca-english-and-communications, lca-french, lca-gaeilge-chumarsaideach, lca-german, lca-graphics-and-construction-studies, lca-hair-and-beauty, lca-hotel-catering-and-tourism, lca-information-and-communication-tech, lca-italian, lca-mathematical-applications, lca-office-admin-and-customer, lca-sign-language, lca-social-education, lca-spanish, lca-technology, link-modules, lithuanian, maltese, mandarin-chinese, mathematics, modern-greek, music, physical-education, physics, physics-and-chemistry, polish, politics-and-society, portuguese, religious-education, romanian, russian, slovakian, slovenian, spanish, swedish, technology, ukrainian — 2258 papers, 22695 questions.
  */
 
 import { type PaperTopicTags } from '../../types/paperTrailTopics';
@@ -303,6 +303,7 @@ export const TOPIC_LABELS: Record<string, string> = {
   "construction-studies-0-16": "Site Safety",
   "construction-studies-0-17": "Condensation and Air Tightness",
   "construction-studies-0-18": "Hot Water and Space Heating",
+  "construction-studies-0-19": "Wood, Rot and Ventilation",
   "construction-studies-0-2": "Superstructure",
   "construction-studies-0-20": "Conservation and Restoration",
   "construction-studies-0-21": "Question 1: Drawing Questions",
@@ -313,7 +314,12 @@ export const TOPIC_LABELS: Record<string, string> = {
   "construction-studies-0-7": "Sound in Buildings",
   "construction-studies-0-8": "Sustainability, Passive House & U-Values",
   "construction-studies-0-9": "Foundations",
+  "construction-studies-1-0": "Tools",
+  "construction-studies-1-1": "Processes & Craft Practices",
+  "construction-studies-2-2": "Building Science: Timber & Adhesives",
   "construction-studies-2-3": "Building Science: Porosity & Durability",
+  "construction-studies-2-4": "Building Science: Aggregates & Concrete",
+  "construction-studies-2-6": "Building Science: Paints & Pigments",
   "croatian-0-0": "Vocabulary & expressions in context",
   "croatian-0-1": "Comprehension & discussion of the set text",
   "czech-0-0": "Vocabulary & expressions in context",
@@ -1083,6 +1089,7 @@ export const TOPIC_LABELS: Record<string, string> = {
   "physics-and-chemistry-5-2": "Laws of Refraction",
   "physics-and-chemistry-5-3": "Total Internal Reflection",
   "physics-and-chemistry-5-4": "Lenses",
+  "physics-and-chemistry-5-5": "Diffraction and Interference",
   "physics-and-chemistry-5-7": "Dispersion",
   "physics-and-chemistry-5-9": "Electromagnetic Spectrum",
   "physics-and-chemistry-6-11": "Resistance",
@@ -1090,12 +1097,14 @@ export const TOPIC_LABELS: Record<string, string> = {
   "physics-and-chemistry-6-13": "Domestic Circuits and Safety",
   "physics-and-chemistry-6-15": "Current in a Magnetic Field",
   "physics-and-chemistry-6-16": "Electromagnetic Induction",
+  "physics-and-chemistry-6-17": "Alternating Current",
   "physics-and-chemistry-6-18": "Mutual and Self-Induction",
   "physics-and-chemistry-6-2": "Distribution of Charge",
   "physics-and-chemistry-6-3": "The Electroscope",
   "physics-and-chemistry-6-4": "Force Between Charges",
   "physics-and-chemistry-6-5": "Electric Fields",
   "physics-and-chemistry-6-6": "Potential Difference",
+  "physics-and-chemistry-6-7": "Capacitors and Capacitance",
   "physics-and-chemistry-6-8": "Electric Current",
   "physics-and-chemistry-6-9": "Sources of EMF and Current",
   "physics-and-chemistry-7-0": "The Electron",
@@ -38771,6 +38780,159 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  {
   "subjectId": "construction-studies",
   "level": "higher",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "LC029ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-3",
+    "secondary": "construction-studies-0-6"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-10",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-15",
+    "secondary": "construction-studies-0-12"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-17",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "10",
+    "primary": "construction-studies-0-8"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2025,
+  "fileid": "LC029GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-12",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-18"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-14"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-0",
+    "secondary": "construction-studies-0-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "LC029GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-12",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-18"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-14"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-0",
+    "secondary": "construction-studies-0-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "higher",
   "lang": "ev",
   "year": 2024,
   "fileid": "LC029ALP000EV.pdf",
@@ -38825,6 +38987,162 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  {
   "subjectId": "construction-studies",
   "level": "higher",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "LC029ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-12",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-3",
+    "secondary": "construction-studies-0-6"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-2"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-18",
+    "secondary": "construction-studies-0-4"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-7"
+   },
+   {
+    "n": "10",
+    "primary": "construction-studies-0-8"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC029GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-12",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-10",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-18",
+    "secondary": "construction-studies-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-9",
+    "secondary": "construction-studies-0-10"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-13"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-0",
+    "secondary": "construction-studies-0-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "LC029GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-12",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-10",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-18",
+    "secondary": "construction-studies-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-9",
+    "secondary": "construction-studies-0-10"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-13"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-0",
+    "secondary": "construction-studies-0-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "higher",
   "lang": "ev",
   "year": 2023,
   "fileid": "LC029ALP000EV.pdf",
@@ -38872,6 +39190,159 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "10",
     "primary": "construction-studies-0-8"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "LC029ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-12",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-3"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-20",
+    "secondary": "construction-studies-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-2"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-6"
+   },
+   {
+    "n": "10",
+    "primary": "construction-studies-0-8"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC029GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-11",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-10",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-18"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-12"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-12"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-16",
+    "secondary": "construction-studies-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "LC029GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-11",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-10",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-18"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-12"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-12"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-16",
+    "secondary": "construction-studies-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-0"
    }
   ]
  },
@@ -38934,9 +39405,220 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  {
   "subjectId": "construction-studies",
   "level": "higher",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "LC029ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-12",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-3",
+    "secondary": "construction-studies-0-6"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-9",
+    "secondary": "construction-studies-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-14",
+    "secondary": "construction-studies-0-11"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-18",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-17",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "10",
+    "primary": "construction-studies-0-8"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2022,
+  "fileid": "LC029GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-12",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-3"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-14"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-0",
+    "secondary": "construction-studies-0-4"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-19",
+    "secondary": "construction-studies-0-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "LC029GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-12",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-3"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-14"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-0",
+    "secondary": "construction-studies-0-4"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-19",
+    "secondary": "construction-studies-0-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "higher",
   "lang": "ev",
   "year": 2021,
   "fileid": "LC029ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-3"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-0",
+    "secondary": "construction-studies-0-4"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-15",
+    "secondary": "construction-studies-0-12"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-18",
+    "secondary": "construction-studies-0-4"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "10",
+    "primary": "construction-studies-0-5",
+    "secondary": "construction-studies-0-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2021,
+  "fileid": "LC029ALP000IV.pdf",
   "paperKey": "single",
   "q": [
    {
@@ -39033,6 +39715,2289 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
     "n": "9",
     "primary": "construction-studies-0-4",
     "secondary": "construction-studies-2-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2021,
+  "fileid": "LC029GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-12",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-11",
+    "secondary": "construction-studies-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-2"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-4",
+    "secondary": "construction-studies-2-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2020,
+  "fileid": "LC029ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-12",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-3"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-8",
+    "secondary": "construction-studies-0-20"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-15"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-7"
+   },
+   {
+    "n": "10",
+    "primary": "construction-studies-0-17",
+    "secondary": "construction-studies-0-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2020,
+  "fileid": "LC029ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-12",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-3"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-8",
+    "secondary": "construction-studies-0-20"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-15"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-7"
+   },
+   {
+    "n": "10",
+    "primary": "construction-studies-0-17",
+    "secondary": "construction-studies-0-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2020,
+  "fileid": "LC029GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-9",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-10",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-18"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-12"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2020,
+  "fileid": "LC029GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-9",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-10",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-18"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-12"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC029ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-12"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-3"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-20"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-14"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-17",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "10",
+    "primary": "construction-studies-0-8"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2019,
+  "fileid": "LC029ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-12"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-3"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-20"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-14"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-17",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "10",
+    "primary": "construction-studies-0-8"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC029GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-12",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-9"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-3",
+    "secondary": "construction-studies-0-11"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-16",
+    "secondary": "construction-studies-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-19",
+    "secondary": "construction-studies-0-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2019,
+  "fileid": "LC029GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-12",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-9"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-3",
+    "secondary": "construction-studies-0-11"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-16",
+    "secondary": "construction-studies-1-0"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-19",
+    "secondary": "construction-studies-0-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC029ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-12",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-3"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-0",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-11"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-18"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-12"
+   },
+   {
+    "n": "10",
+    "primary": "construction-studies-0-8"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2018,
+  "fileid": "LC029ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-12",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-3"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-0",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-11"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-18"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-12"
+   },
+   {
+    "n": "10",
+    "primary": "construction-studies-0-8"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2018,
+  "fileid": "LC029GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-9",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-10",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-18"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-9"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-12"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2018,
+  "fileid": "LC029GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-9",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-10",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-18"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-9"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-12"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC029ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-11",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-3",
+    "secondary": "construction-studies-0-6"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-10",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-12"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-6"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-9",
+    "secondary": "construction-studies-2-4"
+   },
+   {
+    "n": "10",
+    "primary": "construction-studies-0-8"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2017,
+  "fileid": "LC029ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-11",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-3",
+    "secondary": "construction-studies-0-6"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-10",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-12"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-6"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-9",
+    "secondary": "construction-studies-2-4"
+   },
+   {
+    "n": "10",
+    "primary": "construction-studies-0-8"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC029GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-10",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-18"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-13"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-11",
+    "secondary": "construction-studies-0-12"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-1-1",
+    "secondary": "construction-studies-2-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2017,
+  "fileid": "LC029GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-10",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-18"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-13"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-11",
+    "secondary": "construction-studies-0-12"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-1-1",
+    "secondary": "construction-studies-2-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC029ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-12",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-3",
+    "secondary": "construction-studies-0-6"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-15",
+    "secondary": "construction-studies-0-12"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-20",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "10",
+    "primary": "construction-studies-0-8"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC029ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-12",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-3",
+    "secondary": "construction-studies-0-6"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-15",
+    "secondary": "construction-studies-0-12"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-20",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "10",
+    "primary": "construction-studies-0-8"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC029GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-9",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-12",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-18"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-14"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-3",
+    "secondary": "construction-studies-0-7"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-2-2",
+    "secondary": "construction-studies-2-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC029GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-9",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-12",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-18"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-14"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-3",
+    "secondary": "construction-studies-0-7"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-2-2",
+    "secondary": "construction-studies-2-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC029ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-10"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-3"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-20",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-12"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-18"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-17",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "10",
+    "primary": "construction-studies-0-8",
+    "secondary": "construction-studies-0-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC029ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-10"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-3"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-20",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-12"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-18"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-17",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "10",
+    "primary": "construction-studies-0-8",
+    "secondary": "construction-studies-0-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2015,
+  "fileid": "LC029GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-12",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-10",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-18"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-0",
+    "secondary": "construction-studies-0-4"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-9",
+    "secondary": "construction-studies-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-1-1",
+    "secondary": "construction-studies-2-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC029GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-12",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-10",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-18"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-0",
+    "secondary": "construction-studies-0-4"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-9",
+    "secondary": "construction-studies-0-1"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-1-1",
+    "secondary": "construction-studies-2-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC029ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-12",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-3",
+    "secondary": "construction-studies-0-6"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-20",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-2"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-3",
+    "secondary": "construction-studies-0-4"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-7"
+   },
+   {
+    "n": "10",
+    "primary": "construction-studies-0-8"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC029GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-11",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-10",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-18"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-3"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-12"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-0",
+    "secondary": "construction-studies-2-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC029GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-11",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-10",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-18"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-3"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-12"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-0",
+    "secondary": "construction-studies-2-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC029ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-14",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-3",
+    "secondary": "construction-studies-0-6"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-18"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-15",
+    "secondary": "construction-studies-0-11"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-9",
+    "secondary": "construction-studies-0-1"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-2",
+    "secondary": "construction-studies-0-17"
+   },
+   {
+    "n": "10",
+    "primary": "construction-studies-0-8"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2013,
+  "fileid": "LC029ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-14",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-3",
+    "secondary": "construction-studies-0-6"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-18"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-15",
+    "secondary": "construction-studies-0-11"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-9",
+    "secondary": "construction-studies-0-1"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-2",
+    "secondary": "construction-studies-0-17"
+   },
+   {
+    "n": "10",
+    "primary": "construction-studies-0-8"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC029GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-12",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-10",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-18"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-9",
+    "secondary": "construction-studies-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-3",
+    "secondary": "construction-studies-0-11"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-11",
+    "secondary": "construction-studies-0-17"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2013,
+  "fileid": "LC029GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-12",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-10",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-18"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-9",
+    "secondary": "construction-studies-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-3",
+    "secondary": "construction-studies-0-11"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-11",
+    "secondary": "construction-studies-0-17"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-1-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC029ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-3",
+    "secondary": "construction-studies-0-6"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-2"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-17",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "10",
+    "primary": "construction-studies-0-8"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2012,
+  "fileid": "LC029ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-3",
+    "secondary": "construction-studies-0-6"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-2"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-17",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "10",
+    "primary": "construction-studies-0-8"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2012,
+  "fileid": "LC029GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-12",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-10",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-9",
+    "secondary": "construction-studies-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-13"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-1-1",
+    "secondary": "construction-studies-2-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2012,
+  "fileid": "LC029GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-12",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-10",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-9",
+    "secondary": "construction-studies-0-1"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-13"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-1-1",
+    "secondary": "construction-studies-2-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC029ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-12"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-3",
+    "secondary": "construction-studies-0-6"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-7"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-15",
+    "secondary": "construction-studies-0-12"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-18"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-17",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "10",
+    "primary": "construction-studies-0-8"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2011,
+  "fileid": "LC029ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-12"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-3",
+    "secondary": "construction-studies-0-6"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-7"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-15",
+    "secondary": "construction-studies-0-12"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-18"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-17",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "10",
+    "primary": "construction-studies-0-8"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC029GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-10",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-18"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-1-1",
+    "secondary": "construction-studies-0-11"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-14"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-1-1",
+    "secondary": "construction-studies-2-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2011,
+  "fileid": "LC029GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-10",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-18"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-1-1",
+    "secondary": "construction-studies-0-11"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-14"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-1-1",
+    "secondary": "construction-studies-2-6"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC029ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-3",
+    "secondary": "construction-studies-0-13"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-10",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-14",
+    "secondary": "construction-studies-0-11"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-6",
+    "secondary": "construction-studies-0-13"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-17",
+    "secondary": "construction-studies-0-12"
+   },
+   {
+    "n": "10",
+    "primary": "construction-studies-0-8"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2010,
+  "fileid": "LC029ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-13",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-3",
+    "secondary": "construction-studies-0-13"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-10",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-8"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-14",
+    "secondary": "construction-studies-0-11"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-6",
+    "secondary": "construction-studies-0-13"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-17",
+    "secondary": "construction-studies-0-12"
+   },
+   {
+    "n": "10",
+    "primary": "construction-studies-0-8"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC029GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-9",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-10",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-18"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-13"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-3",
+    "secondary": "construction-studies-0-11"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-20",
+    "secondary": "construction-studies-0-13"
+   }
+  ]
+ },
+ {
+  "subjectId": "construction-studies",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2010,
+  "fileid": "LC029GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "construction-studies-0-9",
+    "secondary": "construction-studies-0-21"
+   },
+   {
+    "n": "2",
+    "primary": "construction-studies-0-10",
+    "secondary": "construction-studies-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "construction-studies-0-18"
+   },
+   {
+    "n": "4",
+    "primary": "construction-studies-0-13"
+   },
+   {
+    "n": "5",
+    "primary": "construction-studies-0-3",
+    "secondary": "construction-studies-0-11"
+   },
+   {
+    "n": "6",
+    "primary": "construction-studies-0-16"
+   },
+   {
+    "n": "7",
+    "primary": "construction-studies-0-4"
+   },
+   {
+    "n": "8",
+    "primary": "construction-studies-0-0"
+   },
+   {
+    "n": "9",
+    "primary": "construction-studies-0-20",
+    "secondary": "construction-studies-0-13"
    }
   ]
  },
@@ -71029,6 +73994,71 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  },
  {
   "subjectId": "jc-mathematics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "JC003ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-mathematics-4-0",
+    "secondary": "jc-mathematics-1-4"
+   },
+   {
+    "n": "2",
+    "primary": "jc-mathematics-3-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-mathematics-1-6"
+   },
+   {
+    "n": "4",
+    "primary": "jc-mathematics-4-3",
+    "secondary": "jc-mathematics-4-4"
+   },
+   {
+    "n": "5",
+    "primary": "jc-mathematics-2-5"
+   },
+   {
+    "n": "6",
+    "primary": "jc-mathematics-2-3"
+   },
+   {
+    "n": "7",
+    "primary": "jc-mathematics-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "jc-mathematics-2-4"
+   },
+   {
+    "n": "9",
+    "primary": "jc-mathematics-3-6"
+   },
+   {
+    "n": "10",
+    "primary": "jc-mathematics-1-7"
+   },
+   {
+    "n": "11",
+    "primary": "jc-mathematics-3-2"
+   },
+   {
+    "n": "12",
+    "primary": "jc-mathematics-3-6"
+   },
+   {
+    "n": "13",
+    "primary": "jc-mathematics-3-2",
+    "secondary": "jc-mathematics-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-mathematics",
   "level": "ordinary",
   "lang": "ev",
   "year": 2025,
@@ -71105,6 +74135,211 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  {
   "subjectId": "jc-mathematics",
   "level": "ordinary",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "JC003GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-mathematics-1-0",
+    "secondary": "jc-mathematics-4-4"
+   },
+   {
+    "n": "2",
+    "primary": "jc-mathematics-1-6",
+    "secondary": "jc-mathematics-1-5"
+   },
+   {
+    "n": "3",
+    "primary": "jc-mathematics-4-3"
+   },
+   {
+    "n": "4",
+    "primary": "jc-mathematics-2-1"
+   },
+   {
+    "n": "5",
+    "primary": "jc-mathematics-1-7",
+    "secondary": "jc-mathematics-4-1"
+   },
+   {
+    "n": "6",
+    "primary": "jc-mathematics-4-4",
+    "secondary": "jc-mathematics-4-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-mathematics-3-3"
+   },
+   {
+    "n": "8",
+    "primary": "jc-mathematics-1-2"
+   },
+   {
+    "n": "9",
+    "primary": "jc-mathematics-1-6"
+   },
+   {
+    "n": "10",
+    "primary": "jc-mathematics-3-2",
+    "secondary": "jc-mathematics-3-3"
+   },
+   {
+    "n": "11",
+    "primary": "jc-mathematics-2-1",
+    "secondary": "jc-mathematics-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-mathematics-2-2",
+    "secondary": "jc-mathematics-2-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-mathematics-1-8"
+   },
+   {
+    "n": "14",
+    "primary": "jc-mathematics-2-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-mathematics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "JC003ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-mathematics-4-1",
+    "secondary": "jc-mathematics-4-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-mathematics-4-3"
+   },
+   {
+    "n": "3",
+    "primary": "jc-mathematics-1-6"
+   },
+   {
+    "n": "4",
+    "primary": "jc-mathematics-1-5",
+    "secondary": "jc-mathematics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "jc-mathematics-1-7"
+   },
+   {
+    "n": "6",
+    "primary": "jc-mathematics-2-2"
+   },
+   {
+    "n": "7",
+    "primary": "jc-mathematics-2-2"
+   },
+   {
+    "n": "8",
+    "primary": "jc-mathematics-3-6"
+   },
+   {
+    "n": "9",
+    "primary": "jc-mathematics-2-5",
+    "secondary": "jc-mathematics-2-6"
+   },
+   {
+    "n": "10",
+    "primary": "jc-mathematics-2-5"
+   },
+   {
+    "n": "11",
+    "primary": "jc-mathematics-3-4",
+    "secondary": "jc-mathematics-3-2"
+   },
+   {
+    "n": "12",
+    "primary": "jc-mathematics-3-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-mathematics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-mathematics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "JC003ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-mathematics-4-1",
+    "secondary": "jc-mathematics-4-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-mathematics-4-3"
+   },
+   {
+    "n": "3",
+    "primary": "jc-mathematics-1-6"
+   },
+   {
+    "n": "4",
+    "primary": "jc-mathematics-1-5",
+    "secondary": "jc-mathematics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "jc-mathematics-1-7"
+   },
+   {
+    "n": "6",
+    "primary": "jc-mathematics-2-2"
+   },
+   {
+    "n": "7",
+    "primary": "jc-mathematics-2-2"
+   },
+   {
+    "n": "8",
+    "primary": "jc-mathematics-3-6"
+   },
+   {
+    "n": "9",
+    "primary": "jc-mathematics-2-5",
+    "secondary": "jc-mathematics-2-6"
+   },
+   {
+    "n": "10",
+    "primary": "jc-mathematics-2-5"
+   },
+   {
+    "n": "11",
+    "primary": "jc-mathematics-3-4",
+    "secondary": "jc-mathematics-3-2"
+   },
+   {
+    "n": "12",
+    "primary": "jc-mathematics-3-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-mathematics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-mathematics",
+  "level": "ordinary",
   "lang": "ev",
   "year": 2024,
   "fileid": "JC003GLP000EV.pdf",
@@ -71167,6 +74402,68 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  },
  {
   "subjectId": "jc-mathematics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "JC003GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-mathematics-1-2"
+   },
+   {
+    "n": "2",
+    "primary": "jc-mathematics-1-6"
+   },
+   {
+    "n": "3",
+    "primary": "jc-mathematics-1-7",
+    "secondary": "jc-mathematics-1-2"
+   },
+   {
+    "n": "4",
+    "primary": "jc-mathematics-1-8"
+   },
+   {
+    "n": "5",
+    "primary": "jc-mathematics-2-3"
+   },
+   {
+    "n": "6",
+    "primary": "jc-mathematics-2-3"
+   },
+   {
+    "n": "7",
+    "primary": "jc-mathematics-3-3"
+   },
+   {
+    "n": "8",
+    "primary": "jc-mathematics-4-4",
+    "secondary": "jc-mathematics-4-3"
+   },
+   {
+    "n": "9",
+    "primary": "jc-mathematics-2-2"
+   },
+   {
+    "n": "10",
+    "primary": "jc-mathematics-2-5"
+   },
+   {
+    "n": "11",
+    "primary": "jc-mathematics-2-1",
+    "secondary": "jc-mathematics-2-4"
+   },
+   {
+    "n": "12",
+    "primary": "jc-mathematics-3-2",
+    "secondary": "jc-mathematics-3-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-mathematics",
   "level": "higher",
   "lang": "ev",
   "year": 2023,
@@ -71219,6 +74516,80 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
     "n": "10",
     "primary": "jc-mathematics-1-6",
     "secondary": "jc-mathematics-3-1"
+   },
+   {
+    "n": "11",
+    "primary": "jc-mathematics-3-6"
+   },
+   {
+    "n": "12",
+    "primary": "jc-mathematics-2-3",
+    "secondary": "jc-mathematics-2-6"
+   },
+   {
+    "n": "13",
+    "primary": "jc-mathematics-3-3",
+    "secondary": "jc-mathematics-2-1"
+   },
+   {
+    "n": "14",
+    "primary": "jc-mathematics-2-3",
+    "secondary": "jc-mathematics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-mathematics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "JC003ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-mathematics-3-4",
+    "secondary": "jc-mathematics-1-3"
+   },
+   {
+    "n": "2",
+    "primary": "jc-mathematics-4-3"
+   },
+   {
+    "n": "3",
+    "primary": "jc-mathematics-2-2"
+   },
+   {
+    "n": "4",
+    "primary": "jc-mathematics-4-3",
+    "secondary": "jc-mathematics-1-4"
+   },
+   {
+    "n": "5",
+    "primary": "jc-mathematics-4-1",
+    "secondary": "jc-mathematics-4-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-mathematics-1-7"
+   },
+   {
+    "n": "7",
+    "primary": "jc-mathematics-2-5"
+   },
+   {
+    "n": "8",
+    "primary": "jc-mathematics-2-4",
+    "secondary": "jc-mathematics-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-mathematics-3-2",
+    "secondary": "jc-mathematics-1-1"
+   },
+   {
+    "n": "10",
+    "primary": "jc-mathematics-1-6"
    },
    {
     "n": "11",
@@ -71317,6 +74688,79 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  },
  {
   "subjectId": "jc-mathematics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "JC003GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-mathematics-1-0",
+    "secondary": "jc-mathematics-1-6"
+   },
+   {
+    "n": "2",
+    "primary": "jc-mathematics-3-3"
+   },
+   {
+    "n": "3",
+    "primary": "jc-mathematics-1-7"
+   },
+   {
+    "n": "4",
+    "primary": "jc-mathematics-2-1",
+    "secondary": "jc-mathematics-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-mathematics-4-3"
+   },
+   {
+    "n": "6",
+    "primary": "jc-mathematics-4-0",
+    "secondary": "jc-mathematics-4-1"
+   },
+   {
+    "n": "7",
+    "primary": "jc-mathematics-3-6"
+   },
+   {
+    "n": "8",
+    "primary": "jc-mathematics-4-4"
+   },
+   {
+    "n": "9",
+    "primary": "jc-mathematics-4-3",
+    "secondary": "jc-mathematics-3-6"
+   },
+   {
+    "n": "10",
+    "primary": "jc-mathematics-2-2",
+    "secondary": "jc-mathematics-1-5"
+   },
+   {
+    "n": "11",
+    "primary": "jc-mathematics-4-3"
+   },
+   {
+    "n": "12",
+    "primary": "jc-mathematics-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-mathematics-2-4",
+    "secondary": "jc-mathematics-2-6"
+   },
+   {
+    "n": "14",
+    "primary": "jc-mathematics-3-2",
+    "secondary": "jc-mathematics-3-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-mathematics",
   "level": "higher",
   "lang": "ev",
   "year": 2022,
@@ -71377,6 +74821,68 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
     "n": "12",
     "primary": "jc-mathematics-2-4",
     "secondary": "jc-mathematics-2-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-mathematics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "JC003ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-mathematics-1-6"
+   },
+   {
+    "n": "2",
+    "primary": "jc-mathematics-4-1",
+    "secondary": "jc-mathematics-4-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-mathematics-2-5"
+   },
+   {
+    "n": "4",
+    "primary": "jc-mathematics-2-1",
+    "secondary": "jc-mathematics-3-1"
+   },
+   {
+    "n": "5",
+    "primary": "jc-mathematics-2-2"
+   },
+   {
+    "n": "6",
+    "primary": "jc-mathematics-1-7"
+   },
+   {
+    "n": "7",
+    "primary": "jc-mathematics-1-1"
+   },
+   {
+    "n": "8",
+    "primary": "jc-mathematics-2-4",
+    "secondary": "jc-mathematics-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-mathematics-3-2"
+   },
+   {
+    "n": "10",
+    "primary": "jc-mathematics-1-8"
+   },
+   {
+    "n": "11",
+    "primary": "jc-mathematics-2-5"
+   },
+   {
+    "n": "12",
+    "primary": "jc-mathematics-2-3",
+    "secondary": "jc-mathematics-2-1"
    }
   ]
  },
@@ -71445,6 +74951,74 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
     "n": "12",
     "primary": "jc-mathematics-2-1",
     "secondary": "jc-mathematics-2-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-mathematics-3-2",
+    "secondary": "jc-mathematics-3-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-mathematics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "JC003GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-mathematics-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-mathematics-1-6",
+    "secondary": "jc-mathematics-4-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-mathematics-2-2"
+   },
+   {
+    "n": "4",
+    "primary": "jc-mathematics-4-3"
+   },
+   {
+    "n": "5",
+    "primary": "jc-mathematics-1-7",
+    "secondary": "jc-mathematics-4-1"
+   },
+   {
+    "n": "6",
+    "primary": "jc-mathematics-4-4",
+    "secondary": "jc-mathematics-4-3"
+   },
+   {
+    "n": "7",
+    "primary": "jc-mathematics-2-3"
+   },
+   {
+    "n": "8",
+    "primary": "jc-mathematics-3-6"
+   },
+   {
+    "n": "9",
+    "primary": "jc-mathematics-1-6"
+   },
+   {
+    "n": "10",
+    "primary": "jc-mathematics-3-3",
+    "secondary": "jc-mathematics-1-4"
+   },
+   {
+    "n": "11",
+    "primary": "jc-mathematics-2-3",
+    "secondary": "jc-mathematics-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-mathematics-2-1"
    },
    {
     "n": "13",
@@ -101714,6 +105288,204 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  },
  {
   "subjectId": "physics-and-chemistry",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "LC023GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-5-2"
+   },
+   {
+    "n": "2",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-0-9"
+   },
+   {
+    "n": "3",
+    "primary": "physics-and-chemistry-5-0",
+    "secondary": "physics-and-chemistry-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "physics-and-chemistry-1-3"
+   },
+   {
+    "n": "5",
+    "primary": "physics-and-chemistry-6-4",
+    "secondary": "physics-and-chemistry-6-11"
+   },
+   {
+    "n": "6",
+    "primary": "physics-and-chemistry-0-3",
+    "secondary": "physics-and-chemistry-6-12"
+   },
+   {
+    "n": "7",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "8",
+    "primary": "physics-and-chemistry-8-0",
+    "secondary": "physics-and-chemistry-8-1"
+   },
+   {
+    "n": "9",
+    "primary": "physics-and-chemistry-8-2",
+    "secondary": "physics-and-chemistry-8-3"
+   },
+   {
+    "n": "10",
+    "primary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "11",
+    "primary": "physics-and-chemistry-8-4"
+   },
+   {
+    "n": "12",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics-and-chemistry",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC023ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-0-4"
+   },
+   {
+    "n": "2",
+    "primary": "physics-and-chemistry-0-2",
+    "secondary": "physics-and-chemistry-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "physics-and-chemistry-5-1",
+    "secondary": "physics-and-chemistry-5-4"
+   },
+   {
+    "n": "4",
+    "primary": "physics-and-chemistry-1-3"
+   },
+   {
+    "n": "5",
+    "primary": "physics-and-chemistry-6-11",
+    "secondary": "physics-and-chemistry-6-12"
+   },
+   {
+    "n": "6",
+    "primary": "physics-and-chemistry-5-2",
+    "secondary": "physics-and-chemistry-5-3"
+   },
+   {
+    "n": "7",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "8",
+    "primary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "9",
+    "primary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "10",
+    "primary": "physics-and-chemistry-8-3"
+   },
+   {
+    "n": "11",
+    "primary": "physics-and-chemistry-8-4"
+   },
+   {
+    "n": "12",
+    "primary": "physics-and-chemistry-8-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics-and-chemistry",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "LC023GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-5-1"
+   },
+   {
+    "n": "2",
+    "primary": "physics-and-chemistry-0-9",
+    "secondary": "physics-and-chemistry-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "physics-and-chemistry-5-2",
+    "secondary": "physics-and-chemistry-5-3"
+   },
+   {
+    "n": "4",
+    "primary": "physics-and-chemistry-1-1",
+    "secondary": "physics-and-chemistry-1-3"
+   },
+   {
+    "n": "5",
+    "primary": "physics-and-chemistry-6-11",
+    "secondary": "physics-and-chemistry-6-7"
+   },
+   {
+    "n": "6",
+    "primary": "physics-and-chemistry-0-3",
+    "secondary": "physics-and-chemistry-5-5"
+   },
+   {
+    "n": "7",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "8",
+    "primary": "physics-and-chemistry-8-0",
+    "secondary": "physics-and-chemistry-8-1"
+   },
+   {
+    "n": "9",
+    "primary": "physics-and-chemistry-8-3",
+    "secondary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "10",
+    "primary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "11",
+    "primary": "physics-and-chemistry-8-4"
+   },
+   {
+    "n": "12",
+    "primary": "physics-and-chemistry-8-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics-and-chemistry",
   "level": "higher",
   "lang": "ev",
   "year": 2023,
@@ -101776,6 +105548,73 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  },
  {
   "subjectId": "physics-and-chemistry",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "LC023ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-0-3"
+   },
+   {
+    "n": "2",
+    "primary": "physics-and-chemistry-0-8",
+    "secondary": "physics-and-chemistry-0-9"
+   },
+   {
+    "n": "3",
+    "primary": "physics-and-chemistry-1-3",
+    "secondary": "physics-and-chemistry-1-2"
+   },
+   {
+    "n": "4",
+    "primary": "physics-and-chemistry-5-2",
+    "secondary": "physics-and-chemistry-5-4"
+   },
+   {
+    "n": "5",
+    "primary": "physics-and-chemistry-6-8",
+    "secondary": "physics-and-chemistry-6-16"
+   },
+   {
+    "n": "6",
+    "primary": "physics-and-chemistry-0-4",
+    "secondary": "physics-and-chemistry-3-0"
+   },
+   {
+    "n": "7",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "8",
+    "primary": "physics-and-chemistry-8-0",
+    "secondary": "physics-and-chemistry-8-1"
+   },
+   {
+    "n": "9",
+    "primary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "10",
+    "primary": "physics-and-chemistry-8-3"
+   },
+   {
+    "n": "11",
+    "primary": "physics-and-chemistry-8-4"
+   },
+   {
+    "n": "12",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics-and-chemistry",
   "level": "ordinary",
   "lang": "ev",
   "year": 2023,
@@ -101818,6 +105657,70 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
     "n": "8",
     "primary": "physics-and-chemistry-8-0",
     "secondary": "physics-and-chemistry-7-5"
+   },
+   {
+    "n": "9",
+    "primary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "10",
+    "primary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "11",
+    "primary": "physics-and-chemistry-8-4"
+   },
+   {
+    "n": "12",
+    "primary": "physics-and-chemistry-8-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics-and-chemistry",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "LC023GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-0-8"
+   },
+   {
+    "n": "2",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "physics-and-chemistry-5-0",
+    "secondary": "physics-and-chemistry-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "physics-and-chemistry-1-3"
+   },
+   {
+    "n": "5",
+    "primary": "physics-and-chemistry-6-12",
+    "secondary": "physics-and-chemistry-6-11"
+   },
+   {
+    "n": "6",
+    "primary": "physics-and-chemistry-0-3"
+   },
+   {
+    "n": "7",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "8",
+    "primary": "physics-and-chemistry-8-0",
+    "secondary": "physics-and-chemistry-8-1"
    },
    {
     "n": "9",
@@ -101902,6 +105805,70 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  },
  {
   "subjectId": "physics-and-chemistry",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "LC023ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-0-4"
+   },
+   {
+    "n": "2",
+    "primary": "physics-and-chemistry-0-9",
+    "secondary": "physics-and-chemistry-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "physics-and-chemistry-5-2",
+    "secondary": "physics-and-chemistry-5-3"
+   },
+   {
+    "n": "4",
+    "primary": "physics-and-chemistry-1-3"
+   },
+   {
+    "n": "5",
+    "primary": "physics-and-chemistry-6-11",
+    "secondary": "physics-and-chemistry-6-6"
+   },
+   {
+    "n": "6",
+    "primary": "physics-and-chemistry-0-3",
+    "secondary": "physics-and-chemistry-5-5"
+   },
+   {
+    "n": "7",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "8",
+    "primary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "9",
+    "primary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "10",
+    "primary": "physics-and-chemistry-8-3"
+   },
+   {
+    "n": "11",
+    "primary": "physics-and-chemistry-8-4"
+   },
+   {
+    "n": "12",
+    "primary": "physics-and-chemistry-8-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics-and-chemistry",
   "level": "ordinary",
   "lang": "ev",
   "year": 2022,
@@ -101968,6 +105935,138 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  {
   "subjectId": "physics-and-chemistry",
   "level": "ordinary",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "LC023GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-1-3"
+   },
+   {
+    "n": "2",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-0-9"
+   },
+   {
+    "n": "3",
+    "primary": "physics-and-chemistry-5-4",
+    "secondary": "physics-and-chemistry-5-2"
+   },
+   {
+    "n": "4",
+    "primary": "physics-and-chemistry-1-2",
+    "secondary": "physics-and-chemistry-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "physics-and-chemistry-6-13",
+    "secondary": "physics-and-chemistry-6-11"
+   },
+   {
+    "n": "6",
+    "primary": "physics-and-chemistry-0-3",
+    "secondary": "physics-and-chemistry-7-6"
+   },
+   {
+    "n": "7",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "8",
+    "primary": "physics-and-chemistry-8-0",
+    "secondary": "physics-and-chemistry-8-1"
+   },
+   {
+    "n": "9",
+    "primary": "physics-and-chemistry-8-3",
+    "secondary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "10",
+    "primary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "11",
+    "primary": "physics-and-chemistry-8-4"
+   },
+   {
+    "n": "12",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics-and-chemistry",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2021,
+  "fileid": "LC023ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-1-1"
+   },
+   {
+    "n": "2",
+    "primary": "physics-and-chemistry-0-2",
+    "secondary": "physics-and-chemistry-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "physics-and-chemistry-5-1",
+    "secondary": "physics-and-chemistry-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "physics-and-chemistry-1-3"
+   },
+   {
+    "n": "5",
+    "primary": "physics-and-chemistry-6-12",
+    "secondary": "physics-and-chemistry-6-11"
+   },
+   {
+    "n": "6",
+    "primary": "physics-and-chemistry-0-9",
+    "secondary": "physics-and-chemistry-0-4"
+   },
+   {
+    "n": "7",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "8",
+    "primary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "9",
+    "primary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "10",
+    "primary": "physics-and-chemistry-8-3"
+   },
+   {
+    "n": "11",
+    "primary": "physics-and-chemistry-8-4"
+   },
+   {
+    "n": "12",
+    "primary": "physics-and-chemistry-8-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics-and-chemistry",
+  "level": "ordinary",
   "lang": "ev",
   "year": 2021,
   "fileid": "LC023GLP000EV.pdf",
@@ -102014,6 +106113,73 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "9",
     "primary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "10",
+    "primary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "11",
+    "primary": "physics-and-chemistry-8-4"
+   },
+   {
+    "n": "12",
+    "primary": "physics-and-chemistry-8-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics-and-chemistry",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2021,
+  "fileid": "LC023GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-1-3"
+   },
+   {
+    "n": "2",
+    "primary": "physics-and-chemistry-0-9",
+    "secondary": "physics-and-chemistry-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "physics-and-chemistry-5-0",
+    "secondary": "physics-and-chemistry-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "physics-and-chemistry-1-3",
+    "secondary": "physics-and-chemistry-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "physics-and-chemistry-6-8",
+    "secondary": "physics-and-chemistry-6-11"
+   },
+   {
+    "n": "6",
+    "primary": "physics-and-chemistry-0-3",
+    "secondary": "physics-and-chemistry-7-6"
+   },
+   {
+    "n": "7",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "8",
+    "primary": "physics-and-chemistry-8-0",
+    "secondary": "physics-and-chemistry-8-1"
+   },
+   {
+    "n": "9",
+    "primary": "physics-and-chemistry-8-2",
+    "secondary": "physics-and-chemistry-8-3"
    },
    {
     "n": "10",
@@ -102096,6 +106262,72 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  },
  {
   "subjectId": "physics-and-chemistry",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2019,
+  "fileid": "LC023ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-5-1"
+   },
+   {
+    "n": "2",
+    "primary": "physics-and-chemistry-0-4",
+    "secondary": "physics-and-chemistry-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "physics-and-chemistry-1-3"
+   },
+   {
+    "n": "4",
+    "primary": "physics-and-chemistry-5-2",
+    "secondary": "physics-and-chemistry-5-3"
+   },
+   {
+    "n": "5",
+    "primary": "physics-and-chemistry-6-11",
+    "secondary": "physics-and-chemistry-6-12"
+   },
+   {
+    "n": "6",
+    "primary": "physics-and-chemistry-0-8",
+    "secondary": "physics-and-chemistry-6-3"
+   },
+   {
+    "n": "7",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "8",
+    "primary": "physics-and-chemistry-8-0",
+    "secondary": "physics-and-chemistry-8-1"
+   },
+   {
+    "n": "9",
+    "primary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "10",
+    "primary": "physics-and-chemistry-8-3"
+   },
+   {
+    "n": "11",
+    "primary": "physics-and-chemistry-8-4"
+   },
+   {
+    "n": "12",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics-and-chemistry",
   "level": "ordinary",
   "lang": "ev",
   "year": 2019,
@@ -102143,6 +106375,72 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "9",
     "primary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "10",
+    "primary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "11",
+    "primary": "physics-and-chemistry-8-4"
+   },
+   {
+    "n": "12",
+    "primary": "physics-and-chemistry-8-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics-and-chemistry",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2019,
+  "fileid": "LC023GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-5-4"
+   },
+   {
+    "n": "2",
+    "primary": "physics-and-chemistry-0-9",
+    "secondary": "physics-and-chemistry-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "physics-and-chemistry-5-0",
+    "secondary": "physics-and-chemistry-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "physics-and-chemistry-1-3"
+   },
+   {
+    "n": "5",
+    "primary": "physics-and-chemistry-6-11",
+    "secondary": "physics-and-chemistry-6-13"
+   },
+   {
+    "n": "6",
+    "primary": "physics-and-chemistry-0-3",
+    "secondary": "physics-and-chemistry-7-6"
+   },
+   {
+    "n": "7",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "8",
+    "primary": "physics-and-chemistry-8-0",
+    "secondary": "physics-and-chemistry-8-1"
+   },
+   {
+    "n": "9",
+    "primary": "physics-and-chemistry-8-2",
+    "secondary": "physics-and-chemistry-8-3"
    },
    {
     "n": "10",
@@ -102224,6 +106522,71 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  },
  {
   "subjectId": "physics-and-chemistry",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2018,
+  "fileid": "LC023ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-5-9"
+   },
+   {
+    "n": "2",
+    "primary": "physics-and-chemistry-0-3"
+   },
+   {
+    "n": "3",
+    "primary": "physics-and-chemistry-5-2",
+    "secondary": "physics-and-chemistry-5-3"
+   },
+   {
+    "n": "4",
+    "primary": "physics-and-chemistry-1-3",
+    "secondary": "physics-and-chemistry-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "physics-and-chemistry-6-12",
+    "secondary": "physics-and-chemistry-6-16"
+   },
+   {
+    "n": "6",
+    "primary": "physics-and-chemistry-0-9",
+    "secondary": "physics-and-chemistry-6-11"
+   },
+   {
+    "n": "7",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "8",
+    "primary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "9",
+    "primary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "10",
+    "primary": "physics-and-chemistry-8-3"
+   },
+   {
+    "n": "11",
+    "primary": "physics-and-chemistry-8-4"
+   },
+   {
+    "n": "12",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics-and-chemistry",
   "level": "ordinary",
   "lang": "ev",
   "year": 2018,
@@ -102291,6 +106654,138 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  {
   "subjectId": "physics-and-chemistry",
   "level": "ordinary",
+  "lang": "iv",
+  "year": 2018,
+  "fileid": "LC023GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-5-1"
+   },
+   {
+    "n": "2",
+    "primary": "physics-and-chemistry-0-9"
+   },
+   {
+    "n": "3",
+    "primary": "physics-and-chemistry-5-2",
+    "secondary": "physics-and-chemistry-5-4"
+   },
+   {
+    "n": "4",
+    "primary": "physics-and-chemistry-1-3",
+    "secondary": "physics-and-chemistry-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "physics-and-chemistry-6-16",
+    "secondary": "physics-and-chemistry-6-11"
+   },
+   {
+    "n": "6",
+    "primary": "physics-and-chemistry-0-3"
+   },
+   {
+    "n": "7",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "8",
+    "primary": "physics-and-chemistry-8-0",
+    "secondary": "physics-and-chemistry-8-1"
+   },
+   {
+    "n": "9",
+    "primary": "physics-and-chemistry-8-2",
+    "secondary": "physics-and-chemistry-8-3"
+   },
+   {
+    "n": "10",
+    "primary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "11",
+    "primary": "physics-and-chemistry-8-4",
+    "secondary": "physics-and-chemistry-8-5"
+   },
+   {
+    "n": "12",
+    "primary": "physics-and-chemistry-8-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics-and-chemistry",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC023ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-5-2"
+   },
+   {
+    "n": "2",
+    "primary": "physics-and-chemistry-0-2",
+    "secondary": "physics-and-chemistry-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "physics-and-chemistry-5-1",
+    "secondary": "physics-and-chemistry-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "physics-and-chemistry-1-3"
+   },
+   {
+    "n": "5",
+    "primary": "physics-and-chemistry-6-11",
+    "secondary": "physics-and-chemistry-6-12"
+   },
+   {
+    "n": "6",
+    "primary": "physics-and-chemistry-0-4",
+    "secondary": "physics-and-chemistry-7-2"
+   },
+   {
+    "n": "7",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "8",
+    "primary": "physics-and-chemistry-8-0",
+    "secondary": "physics-and-chemistry-8-1"
+   },
+   {
+    "n": "9",
+    "primary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "10",
+    "primary": "physics-and-chemistry-8-3"
+   },
+   {
+    "n": "11",
+    "primary": "physics-and-chemistry-8-4"
+   },
+   {
+    "n": "12",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics-and-chemistry",
+  "level": "ordinary",
   "lang": "ev",
   "year": 2017,
   "fileid": "LC023GLP000EV.pdf",
@@ -102337,6 +106832,72 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "9",
     "primary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "10",
+    "primary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "11",
+    "primary": "physics-and-chemistry-8-4"
+   },
+   {
+    "n": "12",
+    "primary": "physics-and-chemistry-8-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics-and-chemistry",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2017,
+  "fileid": "LC023GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-6-13"
+   },
+   {
+    "n": "2",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "physics-and-chemistry-5-1",
+    "secondary": "physics-and-chemistry-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "physics-and-chemistry-1-3",
+    "secondary": "physics-and-chemistry-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "physics-and-chemistry-6-13",
+    "secondary": "physics-and-chemistry-6-11"
+   },
+   {
+    "n": "6",
+    "primary": "physics-and-chemistry-0-3"
+   },
+   {
+    "n": "7",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "8",
+    "primary": "physics-and-chemistry-8-0",
+    "secondary": "physics-and-chemistry-8-1"
+   },
+   {
+    "n": "9",
+    "primary": "physics-and-chemistry-8-3",
+    "secondary": "physics-and-chemistry-8-2"
    },
    {
     "n": "10",
@@ -102419,6 +106980,71 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  },
  {
   "subjectId": "physics-and-chemistry",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC023ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-5-9"
+   },
+   {
+    "n": "2",
+    "primary": "physics-and-chemistry-0-4",
+    "secondary": "physics-and-chemistry-0-1"
+   },
+   {
+    "n": "3",
+    "primary": "physics-and-chemistry-5-2",
+    "secondary": "physics-and-chemistry-5-3"
+   },
+   {
+    "n": "4",
+    "primary": "physics-and-chemistry-1-3"
+   },
+   {
+    "n": "5",
+    "primary": "physics-and-chemistry-6-11",
+    "secondary": "physics-and-chemistry-6-6"
+   },
+   {
+    "n": "6",
+    "primary": "physics-and-chemistry-0-9",
+    "secondary": "physics-and-chemistry-3-1"
+   },
+   {
+    "n": "7",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "8",
+    "primary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "9",
+    "primary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "10",
+    "primary": "physics-and-chemistry-8-3"
+   },
+   {
+    "n": "11",
+    "primary": "physics-and-chemistry-8-4"
+   },
+   {
+    "n": "12",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics-and-chemistry",
   "level": "ordinary",
   "lang": "ev",
   "year": 2016,
@@ -102470,6 +107096,71 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "10",
     "primary": "physics-and-chemistry-8-3"
+   },
+   {
+    "n": "11",
+    "primary": "physics-and-chemistry-8-4"
+   },
+   {
+    "n": "12",
+    "primary": "physics-and-chemistry-8-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics-and-chemistry",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC023GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-5-7"
+   },
+   {
+    "n": "2",
+    "primary": "physics-and-chemistry-0-3",
+    "secondary": "physics-and-chemistry-0-4"
+   },
+   {
+    "n": "3",
+    "primary": "physics-and-chemistry-5-2",
+    "secondary": "physics-and-chemistry-5-4"
+   },
+   {
+    "n": "4",
+    "primary": "physics-and-chemistry-1-3"
+   },
+   {
+    "n": "5",
+    "primary": "physics-and-chemistry-6-11",
+    "secondary": "physics-and-chemistry-6-13"
+   },
+   {
+    "n": "6",
+    "primary": "physics-and-chemistry-0-0"
+   },
+   {
+    "n": "7",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "8",
+    "primary": "physics-and-chemistry-8-1",
+    "secondary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "9",
+    "primary": "physics-and-chemistry-8-2",
+    "secondary": "physics-and-chemistry-8-3"
+   },
+   {
+    "n": "10",
+    "primary": "physics-and-chemistry-8-2"
    },
    {
     "n": "11",
@@ -102543,6 +107234,72 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  },
  {
   "subjectId": "physics-and-chemistry",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC023ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-3-0"
+   },
+   {
+    "n": "2",
+    "primary": "physics-and-chemistry-0-3",
+    "secondary": "physics-and-chemistry-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "physics-and-chemistry-5-7",
+    "secondary": "physics-and-chemistry-5-1"
+   },
+   {
+    "n": "4",
+    "primary": "physics-and-chemistry-1-3",
+    "secondary": "physics-and-chemistry-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "physics-and-chemistry-6-11",
+    "secondary": "physics-and-chemistry-6-12"
+   },
+   {
+    "n": "6",
+    "primary": "physics-and-chemistry-7-2",
+    "secondary": "physics-and-chemistry-0-4"
+   },
+   {
+    "n": "7",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "8",
+    "primary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "9",
+    "primary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "10",
+    "primary": "physics-and-chemistry-8-3"
+   },
+   {
+    "n": "11",
+    "primary": "physics-and-chemistry-8-4"
+   },
+   {
+    "n": "12",
+    "primary": "physics-and-chemistry-8-1",
+    "secondary": "physics-and-chemistry-8-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics-and-chemistry",
   "level": "ordinary",
   "lang": "ev",
   "year": 2015,
@@ -102601,6 +107358,139 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "12",
     "primary": "physics-and-chemistry-8-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics-and-chemistry",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2015,
+  "fileid": "LC023GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-5-2"
+   },
+   {
+    "n": "2",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-0-2"
+   },
+   {
+    "n": "3",
+    "primary": "physics-and-chemistry-5-1",
+    "secondary": "physics-and-chemistry-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "physics-and-chemistry-1-3",
+    "secondary": "physics-and-chemistry-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "physics-and-chemistry-6-4",
+    "secondary": "physics-and-chemistry-6-7"
+   },
+   {
+    "n": "6",
+    "primary": "physics-and-chemistry-0-3"
+   },
+   {
+    "n": "7",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "8",
+    "primary": "physics-and-chemistry-8-0",
+    "secondary": "physics-and-chemistry-8-1"
+   },
+   {
+    "n": "9",
+    "primary": "physics-and-chemistry-8-3",
+    "secondary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "10",
+    "primary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "11",
+    "primary": "physics-and-chemistry-8-4"
+   },
+   {
+    "n": "12",
+    "primary": "physics-and-chemistry-8-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics-and-chemistry",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2014,
+  "fileid": "LC023ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-7-2"
+   },
+   {
+    "n": "2",
+    "primary": "physics-and-chemistry-0-2",
+    "secondary": "physics-and-chemistry-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "physics-and-chemistry-5-2",
+    "secondary": "physics-and-chemistry-5-3"
+   },
+   {
+    "n": "4",
+    "primary": "physics-and-chemistry-1-3",
+    "secondary": "physics-and-chemistry-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "physics-and-chemistry-6-16",
+    "secondary": "physics-and-chemistry-6-17"
+   },
+   {
+    "n": "6",
+    "primary": "physics-and-chemistry-0-4",
+    "secondary": "physics-and-chemistry-6-7"
+   },
+   {
+    "n": "7",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "8",
+    "primary": "physics-and-chemistry-8-0",
+    "secondary": "physics-and-chemistry-8-1"
+   },
+   {
+    "n": "9",
+    "primary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "10",
+    "primary": "physics-and-chemistry-8-3"
+   },
+   {
+    "n": "11",
+    "primary": "physics-and-chemistry-8-4"
+   },
+   {
+    "n": "12",
+    "primary": "physics-and-chemistry-8-0",
+    "secondary": "physics-and-chemistry-8-2"
    }
   ]
  },
@@ -102669,6 +107559,141 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  {
   "subjectId": "physics-and-chemistry",
   "level": "ordinary",
+  "lang": "iv",
+  "year": 2014,
+  "fileid": "LC023GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-1-3"
+   },
+   {
+    "n": "2",
+    "primary": "physics-and-chemistry-0-4",
+    "secondary": "physics-and-chemistry-0-9"
+   },
+   {
+    "n": "3",
+    "primary": "physics-and-chemistry-5-2",
+    "secondary": "physics-and-chemistry-5-3"
+   },
+   {
+    "n": "4",
+    "primary": "physics-and-chemistry-1-2",
+    "secondary": "physics-and-chemistry-1-3"
+   },
+   {
+    "n": "5",
+    "primary": "physics-and-chemistry-6-11",
+    "secondary": "physics-and-chemistry-6-17"
+   },
+   {
+    "n": "6",
+    "primary": "physics-and-chemistry-0-3",
+    "secondary": "physics-and-chemistry-5-9"
+   },
+   {
+    "n": "7",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "8",
+    "primary": "physics-and-chemistry-8-0",
+    "secondary": "physics-and-chemistry-8-1"
+   },
+   {
+    "n": "9",
+    "primary": "physics-and-chemistry-8-2",
+    "secondary": "physics-and-chemistry-8-3"
+   },
+   {
+    "n": "10",
+    "primary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "11",
+    "primary": "physics-and-chemistry-8-4"
+   },
+   {
+    "n": "12",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics-and-chemistry",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC023ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-6-16"
+   },
+   {
+    "n": "2",
+    "primary": "physics-and-chemistry-0-3",
+    "secondary": "physics-and-chemistry-0-9"
+   },
+   {
+    "n": "3",
+    "primary": "physics-and-chemistry-5-1",
+    "secondary": "physics-and-chemistry-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "physics-and-chemistry-1-3"
+   },
+   {
+    "n": "5",
+    "primary": "physics-and-chemistry-6-11",
+    "secondary": "physics-and-chemistry-6-12"
+   },
+   {
+    "n": "6",
+    "primary": "physics-and-chemistry-0-4",
+    "secondary": "physics-and-chemistry-5-3"
+   },
+   {
+    "n": "7",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "8",
+    "primary": "physics-and-chemistry-8-1",
+    "secondary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "9",
+    "primary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "10",
+    "primary": "physics-and-chemistry-8-3",
+    "secondary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "11",
+    "primary": "physics-and-chemistry-8-4"
+   },
+   {
+    "n": "12",
+    "primary": "physics-and-chemistry-8-0",
+    "secondary": "physics-and-chemistry-8-3"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics-and-chemistry",
+  "level": "ordinary",
   "lang": "ev",
   "year": 2013,
   "fileid": "LC023GLP000EV.pdf",
@@ -102726,6 +107751,74 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "12",
     "primary": "physics-and-chemistry-8-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics-and-chemistry",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2013,
+  "fileid": "LC023GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-5-4"
+   },
+   {
+    "n": "2",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "physics-and-chemistry-5-1",
+    "secondary": "physics-and-chemistry-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "physics-and-chemistry-1-2",
+    "secondary": "physics-and-chemistry-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "physics-and-chemistry-6-11",
+    "secondary": "physics-and-chemistry-6-3"
+   },
+   {
+    "n": "6",
+    "primary": "physics-and-chemistry-0-3",
+    "secondary": "physics-and-chemistry-1-3"
+   },
+   {
+    "n": "7",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "8",
+    "primary": "physics-and-chemistry-8-1",
+    "secondary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "9",
+    "primary": "physics-and-chemistry-8-3",
+    "secondary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "10",
+    "primary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "11",
+    "primary": "physics-and-chemistry-8-4"
+   },
+   {
+    "n": "12",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-0"
    }
   ]
  },
@@ -102794,6 +107887,73 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  },
  {
   "subjectId": "physics-and-chemistry",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2012,
+  "fileid": "LC023ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-5-3"
+   },
+   {
+    "n": "2",
+    "primary": "physics-and-chemistry-0-2",
+    "secondary": "physics-and-chemistry-0-9"
+   },
+   {
+    "n": "3",
+    "primary": "physics-and-chemistry-5-4",
+    "secondary": "physics-and-chemistry-5-2"
+   },
+   {
+    "n": "4",
+    "primary": "physics-and-chemistry-1-3"
+   },
+   {
+    "n": "5",
+    "primary": "physics-and-chemistry-6-11",
+    "secondary": "physics-and-chemistry-6-8"
+   },
+   {
+    "n": "6",
+    "primary": "physics-and-chemistry-0-4",
+    "secondary": "physics-and-chemistry-3-1"
+   },
+   {
+    "n": "7",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "8",
+    "primary": "physics-and-chemistry-8-0",
+    "secondary": "physics-and-chemistry-8-1"
+   },
+   {
+    "n": "9",
+    "primary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "10",
+    "primary": "physics-and-chemistry-8-3",
+    "secondary": "physics-and-chemistry-8-5"
+   },
+   {
+    "n": "11",
+    "primary": "physics-and-chemistry-8-4"
+   },
+   {
+    "n": "12",
+    "primary": "physics-and-chemistry-8-0",
+    "secondary": "physics-and-chemistry-8-2"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics-and-chemistry",
   "level": "ordinary",
   "lang": "ev",
   "year": 2012,
@@ -102842,6 +108002,72 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "10",
     "primary": "physics-and-chemistry-8-3"
+   },
+   {
+    "n": "11",
+    "primary": "physics-and-chemistry-8-4"
+   },
+   {
+    "n": "12",
+    "primary": "physics-and-chemistry-8-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics-and-chemistry",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2012,
+  "fileid": "LC023GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-0-4"
+   },
+   {
+    "n": "3",
+    "primary": "physics-and-chemistry-5-2",
+    "secondary": "physics-and-chemistry-5-4"
+   },
+   {
+    "n": "4",
+    "primary": "physics-and-chemistry-1-3"
+   },
+   {
+    "n": "5",
+    "primary": "physics-and-chemistry-6-11",
+    "secondary": "physics-and-chemistry-6-16"
+   },
+   {
+    "n": "6",
+    "primary": "physics-and-chemistry-0-3",
+    "secondary": "physics-and-chemistry-7-2"
+   },
+   {
+    "n": "7",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "8",
+    "primary": "physics-and-chemistry-8-0",
+    "secondary": "physics-and-chemistry-8-1"
+   },
+   {
+    "n": "9",
+    "primary": "physics-and-chemistry-8-2",
+    "secondary": "physics-and-chemistry-8-3"
+   },
+   {
+    "n": "10",
+    "primary": "physics-and-chemistry-8-2"
    },
    {
     "n": "11",
@@ -102918,6 +108144,72 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
  },
  {
   "subjectId": "physics-and-chemistry",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2011,
+  "fileid": "LC023ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-1-3"
+   },
+   {
+    "n": "2",
+    "primary": "physics-and-chemistry-0-3",
+    "secondary": "physics-and-chemistry-0-9"
+   },
+   {
+    "n": "3",
+    "primary": "physics-and-chemistry-5-2",
+    "secondary": "physics-and-chemistry-5-3"
+   },
+   {
+    "n": "4",
+    "primary": "physics-and-chemistry-1-3",
+    "secondary": "physics-and-chemistry-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "physics-and-chemistry-6-4",
+    "secondary": "physics-and-chemistry-6-7"
+   },
+   {
+    "n": "6",
+    "primary": "physics-and-chemistry-0-2",
+    "secondary": "physics-and-chemistry-7-2"
+   },
+   {
+    "n": "7",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "8",
+    "primary": "physics-and-chemistry-8-0",
+    "secondary": "physics-and-chemistry-8-1"
+   },
+   {
+    "n": "9",
+    "primary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "10",
+    "primary": "physics-and-chemistry-8-3"
+   },
+   {
+    "n": "11",
+    "primary": "physics-and-chemistry-8-4"
+   },
+   {
+    "n": "12",
+    "primary": "physics-and-chemistry-8-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics-and-chemistry",
   "level": "ordinary",
   "lang": "ev",
   "year": 2011,
@@ -102964,6 +108256,73 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "9",
     "primary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "10",
+    "primary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "11",
+    "primary": "physics-and-chemistry-8-4"
+   },
+   {
+    "n": "12",
+    "primary": "physics-and-chemistry-8-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics-and-chemistry",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2011,
+  "fileid": "LC023GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-5-4"
+   },
+   {
+    "n": "2",
+    "primary": "physics-and-chemistry-0-9",
+    "secondary": "physics-and-chemistry-0-8"
+   },
+   {
+    "n": "3",
+    "primary": "physics-and-chemistry-5-1",
+    "secondary": "physics-and-chemistry-5-0"
+   },
+   {
+    "n": "4",
+    "primary": "physics-and-chemistry-1-2",
+    "secondary": "physics-and-chemistry-1-1"
+   },
+   {
+    "n": "5",
+    "primary": "physics-and-chemistry-6-11",
+    "secondary": "physics-and-chemistry-6-17"
+   },
+   {
+    "n": "6",
+    "primary": "physics-and-chemistry-0-3",
+    "secondary": "physics-and-chemistry-5-9"
+   },
+   {
+    "n": "7",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "8",
+    "primary": "physics-and-chemistry-8-0",
+    "secondary": "physics-and-chemistry-8-1"
+   },
+   {
+    "n": "9",
+    "primary": "physics-and-chemistry-8-3",
+    "secondary": "physics-and-chemistry-8-2"
    },
    {
     "n": "10",
@@ -103032,6 +108391,138 @@ export const PAPER_TOPIC_TAGS: PaperTopicTags[] = [
    {
     "n": "10",
     "primary": "physics-and-chemistry-8-3"
+   },
+   {
+    "n": "11",
+    "primary": "physics-and-chemistry-8-4"
+   },
+   {
+    "n": "12",
+    "primary": "physics-and-chemistry-8-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics-and-chemistry",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2010,
+  "fileid": "LC023ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "physics-and-chemistry-0-4",
+    "secondary": "physics-and-chemistry-0-9"
+   },
+   {
+    "n": "3",
+    "primary": "physics-and-chemistry-5-1",
+    "secondary": "physics-and-chemistry-5-4"
+   },
+   {
+    "n": "4",
+    "primary": "physics-and-chemistry-1-3",
+    "secondary": "physics-and-chemistry-1-2"
+   },
+   {
+    "n": "5",
+    "primary": "physics-and-chemistry-6-11",
+    "secondary": "physics-and-chemistry-6-17"
+   },
+   {
+    "n": "6",
+    "primary": "physics-and-chemistry-0-3",
+    "secondary": "physics-and-chemistry-3-0"
+   },
+   {
+    "n": "7",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "8",
+    "primary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "9",
+    "primary": "physics-and-chemistry-8-2"
+   },
+   {
+    "n": "10",
+    "primary": "physics-and-chemistry-8-3",
+    "secondary": "physics-and-chemistry-8-5"
+   },
+   {
+    "n": "11",
+    "primary": "physics-and-chemistry-8-4"
+   },
+   {
+    "n": "12",
+    "primary": "physics-and-chemistry-8-1",
+    "secondary": "physics-and-chemistry-8-0"
+   }
+  ]
+ },
+ {
+  "subjectId": "physics-and-chemistry",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC023GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "physics-and-chemistry-0-0",
+    "secondary": "physics-and-chemistry-5-0"
+   },
+   {
+    "n": "2",
+    "primary": "physics-and-chemistry-0-3",
+    "secondary": "physics-and-chemistry-0-0"
+   },
+   {
+    "n": "3",
+    "primary": "physics-and-chemistry-5-2",
+    "secondary": "physics-and-chemistry-5-4"
+   },
+   {
+    "n": "4",
+    "primary": "physics-and-chemistry-1-3"
+   },
+   {
+    "n": "5",
+    "primary": "physics-and-chemistry-6-16",
+    "secondary": "physics-and-chemistry-6-12"
+   },
+   {
+    "n": "6",
+    "primary": "physics-and-chemistry-0-4",
+    "secondary": "physics-and-chemistry-5-5"
+   },
+   {
+    "n": "7",
+    "primary": "physics-and-chemistry-8-5",
+    "secondary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "8",
+    "primary": "physics-and-chemistry-8-0"
+   },
+   {
+    "n": "9",
+    "primary": "physics-and-chemistry-8-2",
+    "secondary": "physics-and-chemistry-8-1"
+   },
+   {
+    "n": "10",
+    "primary": "physics-and-chemistry-8-2"
    },
    {
     "n": "11",

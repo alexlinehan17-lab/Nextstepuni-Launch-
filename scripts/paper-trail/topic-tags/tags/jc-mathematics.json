@@ -492,5 +492,614 @@
     "secondary": "jc-mathematics-3-1"
    }
   ]
+ },
+ {
+  "subjectId": "jc-mathematics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "JC003ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-mathematics-4-0",
+    "secondary": "jc-mathematics-1-4"
+   },
+   {
+    "n": "2",
+    "primary": "jc-mathematics-3-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-mathematics-1-6"
+   },
+   {
+    "n": "4",
+    "primary": "jc-mathematics-4-3",
+    "secondary": "jc-mathematics-4-4"
+   },
+   {
+    "n": "5",
+    "primary": "jc-mathematics-2-5"
+   },
+   {
+    "n": "6",
+    "primary": "jc-mathematics-2-3"
+   },
+   {
+    "n": "7",
+    "primary": "jc-mathematics-2-1"
+   },
+   {
+    "n": "8",
+    "primary": "jc-mathematics-2-4"
+   },
+   {
+    "n": "9",
+    "primary": "jc-mathematics-3-6"
+   },
+   {
+    "n": "10",
+    "primary": "jc-mathematics-1-7"
+   },
+   {
+    "n": "11",
+    "primary": "jc-mathematics-3-2"
+   },
+   {
+    "n": "12",
+    "primary": "jc-mathematics-3-6"
+   },
+   {
+    "n": "13",
+    "primary": "jc-mathematics-3-2",
+    "secondary": "jc-mathematics-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-mathematics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2025,
+  "fileid": "JC003GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-mathematics-1-0",
+    "secondary": "jc-mathematics-4-4"
+   },
+   {
+    "n": "2",
+    "primary": "jc-mathematics-1-6",
+    "secondary": "jc-mathematics-1-5"
+   },
+   {
+    "n": "3",
+    "primary": "jc-mathematics-4-3"
+   },
+   {
+    "n": "4",
+    "primary": "jc-mathematics-2-1"
+   },
+   {
+    "n": "5",
+    "primary": "jc-mathematics-1-7",
+    "secondary": "jc-mathematics-4-1"
+   },
+   {
+    "n": "6",
+    "primary": "jc-mathematics-4-4",
+    "secondary": "jc-mathematics-4-0"
+   },
+   {
+    "n": "7",
+    "primary": "jc-mathematics-3-3"
+   },
+   {
+    "n": "8",
+    "primary": "jc-mathematics-1-2"
+   },
+   {
+    "n": "9",
+    "primary": "jc-mathematics-1-6"
+   },
+   {
+    "n": "10",
+    "primary": "jc-mathematics-3-2",
+    "secondary": "jc-mathematics-3-3"
+   },
+   {
+    "n": "11",
+    "primary": "jc-mathematics-2-1",
+    "secondary": "jc-mathematics-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-mathematics-2-2",
+    "secondary": "jc-mathematics-2-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-mathematics-1-8"
+   },
+   {
+    "n": "14",
+    "primary": "jc-mathematics-2-5"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-mathematics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2024,
+  "fileid": "JC003ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-mathematics-4-1",
+    "secondary": "jc-mathematics-4-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-mathematics-4-3"
+   },
+   {
+    "n": "3",
+    "primary": "jc-mathematics-1-6"
+   },
+   {
+    "n": "4",
+    "primary": "jc-mathematics-1-5",
+    "secondary": "jc-mathematics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "jc-mathematics-1-7"
+   },
+   {
+    "n": "6",
+    "primary": "jc-mathematics-2-2"
+   },
+   {
+    "n": "7",
+    "primary": "jc-mathematics-2-2"
+   },
+   {
+    "n": "8",
+    "primary": "jc-mathematics-3-6"
+   },
+   {
+    "n": "9",
+    "primary": "jc-mathematics-2-5",
+    "secondary": "jc-mathematics-2-6"
+   },
+   {
+    "n": "10",
+    "primary": "jc-mathematics-2-5"
+   },
+   {
+    "n": "11",
+    "primary": "jc-mathematics-3-4",
+    "secondary": "jc-mathematics-3-2"
+   },
+   {
+    "n": "12",
+    "primary": "jc-mathematics-3-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-mathematics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-mathematics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "JC003ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-mathematics-4-1",
+    "secondary": "jc-mathematics-4-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-mathematics-4-3"
+   },
+   {
+    "n": "3",
+    "primary": "jc-mathematics-1-6"
+   },
+   {
+    "n": "4",
+    "primary": "jc-mathematics-1-5",
+    "secondary": "jc-mathematics-2-2"
+   },
+   {
+    "n": "5",
+    "primary": "jc-mathematics-1-7"
+   },
+   {
+    "n": "6",
+    "primary": "jc-mathematics-2-2"
+   },
+   {
+    "n": "7",
+    "primary": "jc-mathematics-2-2"
+   },
+   {
+    "n": "8",
+    "primary": "jc-mathematics-3-6"
+   },
+   {
+    "n": "9",
+    "primary": "jc-mathematics-2-5",
+    "secondary": "jc-mathematics-2-6"
+   },
+   {
+    "n": "10",
+    "primary": "jc-mathematics-2-5"
+   },
+   {
+    "n": "11",
+    "primary": "jc-mathematics-3-4",
+    "secondary": "jc-mathematics-3-2"
+   },
+   {
+    "n": "12",
+    "primary": "jc-mathematics-3-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-mathematics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-mathematics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2024,
+  "fileid": "JC003GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-mathematics-1-2"
+   },
+   {
+    "n": "2",
+    "primary": "jc-mathematics-1-6"
+   },
+   {
+    "n": "3",
+    "primary": "jc-mathematics-1-7",
+    "secondary": "jc-mathematics-1-2"
+   },
+   {
+    "n": "4",
+    "primary": "jc-mathematics-1-8"
+   },
+   {
+    "n": "5",
+    "primary": "jc-mathematics-2-3"
+   },
+   {
+    "n": "6",
+    "primary": "jc-mathematics-2-3"
+   },
+   {
+    "n": "7",
+    "primary": "jc-mathematics-3-3"
+   },
+   {
+    "n": "8",
+    "primary": "jc-mathematics-4-4",
+    "secondary": "jc-mathematics-4-3"
+   },
+   {
+    "n": "9",
+    "primary": "jc-mathematics-2-2"
+   },
+   {
+    "n": "10",
+    "primary": "jc-mathematics-2-5"
+   },
+   {
+    "n": "11",
+    "primary": "jc-mathematics-2-1",
+    "secondary": "jc-mathematics-2-4"
+   },
+   {
+    "n": "12",
+    "primary": "jc-mathematics-3-2",
+    "secondary": "jc-mathematics-3-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-mathematics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "JC003ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-mathematics-3-4",
+    "secondary": "jc-mathematics-1-3"
+   },
+   {
+    "n": "2",
+    "primary": "jc-mathematics-4-3"
+   },
+   {
+    "n": "3",
+    "primary": "jc-mathematics-2-2"
+   },
+   {
+    "n": "4",
+    "primary": "jc-mathematics-4-3",
+    "secondary": "jc-mathematics-1-4"
+   },
+   {
+    "n": "5",
+    "primary": "jc-mathematics-4-1",
+    "secondary": "jc-mathematics-4-0"
+   },
+   {
+    "n": "6",
+    "primary": "jc-mathematics-1-7"
+   },
+   {
+    "n": "7",
+    "primary": "jc-mathematics-2-5"
+   },
+   {
+    "n": "8",
+    "primary": "jc-mathematics-2-4",
+    "secondary": "jc-mathematics-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-mathematics-3-2",
+    "secondary": "jc-mathematics-1-1"
+   },
+   {
+    "n": "10",
+    "primary": "jc-mathematics-1-6"
+   },
+   {
+    "n": "11",
+    "primary": "jc-mathematics-3-6"
+   },
+   {
+    "n": "12",
+    "primary": "jc-mathematics-2-3",
+    "secondary": "jc-mathematics-2-6"
+   },
+   {
+    "n": "13",
+    "primary": "jc-mathematics-3-3",
+    "secondary": "jc-mathematics-2-1"
+   },
+   {
+    "n": "14",
+    "primary": "jc-mathematics-2-3",
+    "secondary": "jc-mathematics-2-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-mathematics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2023,
+  "fileid": "JC003GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-mathematics-1-0",
+    "secondary": "jc-mathematics-1-6"
+   },
+   {
+    "n": "2",
+    "primary": "jc-mathematics-3-3"
+   },
+   {
+    "n": "3",
+    "primary": "jc-mathematics-1-7"
+   },
+   {
+    "n": "4",
+    "primary": "jc-mathematics-2-1",
+    "secondary": "jc-mathematics-2-0"
+   },
+   {
+    "n": "5",
+    "primary": "jc-mathematics-4-3"
+   },
+   {
+    "n": "6",
+    "primary": "jc-mathematics-4-0",
+    "secondary": "jc-mathematics-4-1"
+   },
+   {
+    "n": "7",
+    "primary": "jc-mathematics-3-6"
+   },
+   {
+    "n": "8",
+    "primary": "jc-mathematics-4-4"
+   },
+   {
+    "n": "9",
+    "primary": "jc-mathematics-4-3",
+    "secondary": "jc-mathematics-3-6"
+   },
+   {
+    "n": "10",
+    "primary": "jc-mathematics-2-2",
+    "secondary": "jc-mathematics-1-5"
+   },
+   {
+    "n": "11",
+    "primary": "jc-mathematics-4-3"
+   },
+   {
+    "n": "12",
+    "primary": "jc-mathematics-1-0"
+   },
+   {
+    "n": "13",
+    "primary": "jc-mathematics-2-4",
+    "secondary": "jc-mathematics-2-6"
+   },
+   {
+    "n": "14",
+    "primary": "jc-mathematics-3-2",
+    "secondary": "jc-mathematics-3-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-mathematics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "JC003ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-mathematics-1-6"
+   },
+   {
+    "n": "2",
+    "primary": "jc-mathematics-4-1",
+    "secondary": "jc-mathematics-4-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-mathematics-2-5"
+   },
+   {
+    "n": "4",
+    "primary": "jc-mathematics-2-1",
+    "secondary": "jc-mathematics-3-1"
+   },
+   {
+    "n": "5",
+    "primary": "jc-mathematics-2-2"
+   },
+   {
+    "n": "6",
+    "primary": "jc-mathematics-1-7"
+   },
+   {
+    "n": "7",
+    "primary": "jc-mathematics-1-1"
+   },
+   {
+    "n": "8",
+    "primary": "jc-mathematics-2-4",
+    "secondary": "jc-mathematics-2-0"
+   },
+   {
+    "n": "9",
+    "primary": "jc-mathematics-3-2"
+   },
+   {
+    "n": "10",
+    "primary": "jc-mathematics-1-8"
+   },
+   {
+    "n": "11",
+    "primary": "jc-mathematics-2-5"
+   },
+   {
+    "n": "12",
+    "primary": "jc-mathematics-2-3",
+    "secondary": "jc-mathematics-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "jc-mathematics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2022,
+  "fileid": "JC003GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "jc-mathematics-1-0"
+   },
+   {
+    "n": "2",
+    "primary": "jc-mathematics-1-6",
+    "secondary": "jc-mathematics-4-0"
+   },
+   {
+    "n": "3",
+    "primary": "jc-mathematics-2-2"
+   },
+   {
+    "n": "4",
+    "primary": "jc-mathematics-4-3"
+   },
+   {
+    "n": "5",
+    "primary": "jc-mathematics-1-7",
+    "secondary": "jc-mathematics-4-1"
+   },
+   {
+    "n": "6",
+    "primary": "jc-mathematics-4-4",
+    "secondary": "jc-mathematics-4-3"
+   },
+   {
+    "n": "7",
+    "primary": "jc-mathematics-2-3"
+   },
+   {
+    "n": "8",
+    "primary": "jc-mathematics-3-6"
+   },
+   {
+    "n": "9",
+    "primary": "jc-mathematics-1-6"
+   },
+   {
+    "n": "10",
+    "primary": "jc-mathematics-3-3",
+    "secondary": "jc-mathematics-1-4"
+   },
+   {
+    "n": "11",
+    "primary": "jc-mathematics-2-3",
+    "secondary": "jc-mathematics-2-0"
+   },
+   {
+    "n": "12",
+    "primary": "jc-mathematics-2-1"
+   },
+   {
+    "n": "13",
+    "primary": "jc-mathematics-3-2",
+    "secondary": "jc-mathematics-3-1"
+   }
+  ]
  }
 ]
