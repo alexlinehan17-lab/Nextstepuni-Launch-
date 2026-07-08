@@ -2001,5 +2001,491 @@
     "primary": "applied-mathematics-2-11"
    }
   ]
+ },
+ {
+  "subjectId": "applied-mathematics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2019,
+  "fileid": "LC020ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "applied-mathematics-2-0",
+    "secondary": "applied-mathematics-2-5"
+   },
+   {
+    "n": "2",
+    "primary": "applied-mathematics-2-9"
+   },
+   {
+    "n": "3",
+    "primary": "applied-mathematics-2-2"
+   },
+   {
+    "n": "4",
+    "primary": "applied-mathematics-2-5"
+   },
+   {
+    "n": "5",
+    "primary": "applied-mathematics-2-4"
+   },
+   {
+    "n": "6",
+    "primary": "applied-mathematics-2-7",
+    "secondary": "applied-mathematics-2-13"
+   },
+   {
+    "n": "7",
+    "primary": "applied-mathematics-2-10"
+   },
+   {
+    "n": "8",
+    "primary": "applied-mathematics-2-12"
+   },
+   {
+    "n": "9",
+    "primary": "applied-mathematics-2-11"
+   },
+   {
+    "n": "10",
+    "primary": "applied-mathematics-3-4",
+    "secondary": "applied-mathematics-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "applied-mathematics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2019,
+  "fileid": "LC020ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "applied-mathematics-2-0",
+    "secondary": "applied-mathematics-2-5"
+   },
+   {
+    "n": "2",
+    "primary": "applied-mathematics-2-9"
+   },
+   {
+    "n": "3",
+    "primary": "applied-mathematics-2-2"
+   },
+   {
+    "n": "4",
+    "primary": "applied-mathematics-2-5"
+   },
+   {
+    "n": "5",
+    "primary": "applied-mathematics-2-4"
+   },
+   {
+    "n": "6",
+    "primary": "applied-mathematics-2-7",
+    "secondary": "applied-mathematics-2-13"
+   },
+   {
+    "n": "7",
+    "primary": "applied-mathematics-2-10"
+   },
+   {
+    "n": "8",
+    "primary": "applied-mathematics-2-12"
+   },
+   {
+    "n": "9",
+    "primary": "applied-mathematics-2-11"
+   },
+   {
+    "n": "10",
+    "primary": "applied-mathematics-3-4",
+    "secondary": "applied-mathematics-2-1"
+   }
+  ]
+ },
+ {
+  "subjectId": "applied-mathematics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2019,
+  "fileid": "LC020GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "applied-mathematics-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "applied-mathematics-2-9"
+   },
+   {
+    "n": "3",
+    "primary": "applied-mathematics-2-2"
+   },
+   {
+    "n": "4",
+    "primary": "applied-mathematics-2-5"
+   },
+   {
+    "n": "5",
+    "primary": "applied-mathematics-2-4"
+   },
+   {
+    "n": "6",
+    "primary": "applied-mathematics-2-10"
+   },
+   {
+    "n": "7",
+    "primary": "applied-mathematics-2-10"
+   },
+   {
+    "n": "8",
+    "primary": "applied-mathematics-2-7"
+   },
+   {
+    "n": "9",
+    "primary": "applied-mathematics-2-11"
+   }
+  ]
+ },
+ {
+  "subjectId": "applied-mathematics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2017,
+  "fileid": "LC020GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "applied-mathematics-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "applied-mathematics-2-9"
+   },
+   {
+    "n": "3",
+    "primary": "applied-mathematics-2-2"
+   },
+   {
+    "n": "4",
+    "primary": "applied-mathematics-2-5"
+   },
+   {
+    "n": "5",
+    "primary": "applied-mathematics-2-4"
+   },
+   {
+    "n": "6",
+    "primary": "applied-mathematics-2-10"
+   },
+   {
+    "n": "7",
+    "primary": "applied-mathematics-2-10"
+   },
+   {
+    "n": "8",
+    "primary": "applied-mathematics-2-7"
+   },
+   {
+    "n": "9",
+    "primary": "applied-mathematics-2-11"
+   }
+  ]
+ },
+ {
+  "subjectId": "applied-mathematics",
+  "level": "higher",
+  "lang": "ev",
+  "year": 2016,
+  "fileid": "LC020ALP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "applied-mathematics-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "applied-mathematics-2-9"
+   },
+   {
+    "n": "3",
+    "primary": "applied-mathematics-2-2"
+   },
+   {
+    "n": "4",
+    "primary": "applied-mathematics-2-5"
+   },
+   {
+    "n": "5",
+    "primary": "applied-mathematics-2-4"
+   },
+   {
+    "n": "6",
+    "primary": "applied-mathematics-2-7",
+    "secondary": "applied-mathematics-2-13"
+   },
+   {
+    "n": "7",
+    "primary": "applied-mathematics-2-10"
+   },
+   {
+    "n": "8",
+    "primary": "applied-mathematics-2-12"
+   },
+   {
+    "n": "9",
+    "primary": "applied-mathematics-2-11"
+   },
+   {
+    "n": "10",
+    "primary": "applied-mathematics-2-1",
+    "secondary": "applied-mathematics-2-13"
+   }
+  ]
+ },
+ {
+  "subjectId": "applied-mathematics",
+  "level": "higher",
+  "lang": "iv",
+  "year": 2016,
+  "fileid": "LC020ALP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "applied-mathematics-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "applied-mathematics-2-9"
+   },
+   {
+    "n": "3",
+    "primary": "applied-mathematics-2-2"
+   },
+   {
+    "n": "4",
+    "primary": "applied-mathematics-2-5"
+   },
+   {
+    "n": "5",
+    "primary": "applied-mathematics-2-4"
+   },
+   {
+    "n": "6",
+    "primary": "applied-mathematics-2-7",
+    "secondary": "applied-mathematics-2-13"
+   },
+   {
+    "n": "7",
+    "primary": "applied-mathematics-2-10"
+   },
+   {
+    "n": "8",
+    "primary": "applied-mathematics-2-12"
+   },
+   {
+    "n": "9",
+    "primary": "applied-mathematics-2-11"
+   },
+   {
+    "n": "10",
+    "primary": "applied-mathematics-2-1",
+    "secondary": "applied-mathematics-2-13"
+   }
+  ]
+ },
+ {
+  "subjectId": "applied-mathematics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2013,
+  "fileid": "LC020GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "applied-mathematics-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "applied-mathematics-2-9"
+   },
+   {
+    "n": "3",
+    "primary": "applied-mathematics-2-2"
+   },
+   {
+    "n": "4",
+    "primary": "applied-mathematics-2-5"
+   },
+   {
+    "n": "5",
+    "primary": "applied-mathematics-2-4"
+   },
+   {
+    "n": "6",
+    "primary": "applied-mathematics-2-10"
+   },
+   {
+    "n": "7",
+    "primary": "applied-mathematics-2-10"
+   },
+   {
+    "n": "8",
+    "primary": "applied-mathematics-2-7"
+   },
+   {
+    "n": "9",
+    "primary": "applied-mathematics-2-11"
+   }
+  ]
+ },
+ {
+  "subjectId": "applied-mathematics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2011,
+  "fileid": "LC020GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "applied-mathematics-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "applied-mathematics-2-9"
+   },
+   {
+    "n": "3",
+    "primary": "applied-mathematics-2-2"
+   },
+   {
+    "n": "4",
+    "primary": "applied-mathematics-2-5"
+   },
+   {
+    "n": "5",
+    "primary": "applied-mathematics-2-4"
+   },
+   {
+    "n": "6",
+    "primary": "applied-mathematics-2-10"
+   },
+   {
+    "n": "7",
+    "primary": "applied-mathematics-2-10"
+   },
+   {
+    "n": "8",
+    "primary": "applied-mathematics-2-7"
+   },
+   {
+    "n": "9",
+    "primary": "applied-mathematics-2-11"
+   }
+  ]
+ },
+ {
+  "subjectId": "applied-mathematics",
+  "level": "ordinary",
+  "lang": "iv",
+  "year": 2011,
+  "fileid": "LC020GLP000IV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "applied-mathematics-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "applied-mathematics-2-9"
+   },
+   {
+    "n": "3",
+    "primary": "applied-mathematics-2-2"
+   },
+   {
+    "n": "4",
+    "primary": "applied-mathematics-2-5"
+   },
+   {
+    "n": "5",
+    "primary": "applied-mathematics-2-4"
+   },
+   {
+    "n": "6",
+    "primary": "applied-mathematics-2-10"
+   },
+   {
+    "n": "7",
+    "primary": "applied-mathematics-2-10"
+   },
+   {
+    "n": "8",
+    "primary": "applied-mathematics-2-7"
+   },
+   {
+    "n": "9",
+    "primary": "applied-mathematics-2-11"
+   }
+  ]
+ },
+ {
+  "subjectId": "applied-mathematics",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2010,
+  "fileid": "LC020GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "applied-mathematics-2-0"
+   },
+   {
+    "n": "2",
+    "primary": "applied-mathematics-2-9"
+   },
+   {
+    "n": "3",
+    "primary": "applied-mathematics-2-2"
+   },
+   {
+    "n": "4",
+    "primary": "applied-mathematics-2-5"
+   },
+   {
+    "n": "5",
+    "primary": "applied-mathematics-2-4"
+   },
+   {
+    "n": "6",
+    "primary": "applied-mathematics-2-10"
+   },
+   {
+    "n": "7",
+    "primary": "applied-mathematics-2-10"
+   },
+   {
+    "n": "8",
+    "primary": "applied-mathematics-2-7"
+   },
+   {
+    "n": "9",
+    "primary": "applied-mathematics-2-11"
+   }
+  ]
  }
 ]
