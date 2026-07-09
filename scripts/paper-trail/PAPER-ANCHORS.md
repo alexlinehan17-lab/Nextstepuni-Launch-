@@ -296,6 +296,15 @@ gate) defer cleanly.
   passage headed `Q.1`/`Q.2`, questions share the passage number space).
 - **other MFL reading papers** (italian, spanish 015/O15 handouts, russian,
   japanese, …) — same numbered-passage class.
+- **estonian / ukrainian (and the non-curriculum EU-language reading papers
+  without a classic sidecar)** — `auto` anchors them, but render-QA shows the
+  "questions" it finds are the reading passage's numbered **paragraphs** (a
+  Ukrainian 2025 "Q1" is the opening passage sentence, not a comprehension
+  question) — the same decoy trap, with no arm/disarm header to separate passage
+  from questions. Do NOT ship these from `paper_anchors` auto. NOTE the EU
+  languages that ARE covered (latvian, lithuanian, romanian, slovakian,
+  bulgarian, czech, hungarian, croatian) are backed by **classic scheme-mapped
+  sidecars** (`answers:1`), NOT this auto path, so they carry no decoy bug.
 - **English Paper 2** — numbering restarts per **subsection** (comparative
   modes; unseen vs prescribed poetry) plus Section I's lettered A–E text
   alternatives. Needs subsection-aware nesting, not just section-aware.
