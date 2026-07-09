@@ -26,6 +26,11 @@ const INK = '#1a1a1a';
 const ACCENT = '#F26B1F';
 const LVL: Record<string, string> = { higher: 'Higher', ordinary: 'Ordinary', foundation: 'Foundation', common: 'Common' };
 
+// Stable identity — CropView re-renders its (expensive) canvas whenever this
+// callback's reference changes, so it must NOT be an inline closure per render
+// (a scheme-reveal / review-star toggle would otherwise re-decode the crop).
+const paperCropLabel = (p: number) => `Exam paper page ${p}, shown as an image — © State Examinations Commission`;
+
 // Session-scoped answer-map memo (small JSON sidecars; null = fetch failed /
 // not published yet — the card degrades to a plain open-in-paper row).
 // isAnswerMap guards the shape: the hosted fallback path is served by Firebase
@@ -181,7 +186,7 @@ const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, on
           <CropView
             pdf={state.pdf}
             region={state.region}
-            ariaLabel={p => `Exam paper page ${p}, shown as an image — © State Examinations Commission`}
+            ariaLabel={paperCropLabel}
             failText="Couldn’t render this question — open the full paper."
           />
         </div>
