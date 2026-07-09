@@ -15,6 +15,8 @@ import {
   topicsForSubject,
   questionsForTopics,
   taggedSubjects,
+  frequencyFor,
+  topicsForPaper,
 } from '../components/PaperTrail/topics';
 import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
 
@@ -76,5 +78,34 @@ describe('Topic Vault feed primitives', () => {
     expect(siblingsFor('not-a-subject', 'nope')).toEqual([]);
     expect(topicsForSubject('not-a-subject')).toEqual([]);
     expect(questionsForTopics('not-a-subject', null)).toEqual([]);
+  });
+
+  // A real (subject, level, paperKey, subtopic) slice to drive frequency.
+  const sampleTag = PAPER_TOPIC_TAGS.find(p => p.q.length > 0)!;
+  const sampleSub = sampleTag.q[0].primary;
+
+  it('frequencyFor is honest: yearsWith ⊆ tagged years, distinct, newest-first', () => {
+    const f = frequencyFor(sampleTag.subjectId, sampleTag.level, sampleTag.paperKey, sampleSub);
+    expect(f.yearsWith.length).toBeLessThanOrEqual(f.totalYears);
+    expect(new Set(f.yearsWith).size).toBe(f.yearsWith.length); // distinct
+    for (let i = 1; i < f.yearsWith.length; i++) {
+      expect(f.yearsWith[i - 1]).toBeGreaterThan(f.yearsWith[i]); // strictly descending
+    }
+    // The sample's own year must be among the hits for its own subtopic.
+    expect(f.yearsWith).toContain(sampleTag.year);
+    expect(f.totalYears).toBeGreaterThan(0);
+  });
+
+  it('frequencyFor on an unexamined subtopic reports 0 hits but a real denominator', () => {
+    const f = frequencyFor(sampleTag.subjectId, sampleTag.level, sampleTag.paperKey, 'not-a-subtopic');
+    expect(f.yearsWith).toEqual([]);
+    expect(f.totalYears).toBeGreaterThan(0); // the pool still exists
+  });
+
+  it('topicsForPaper resolves a real paper and returns null for an unknown one', () => {
+    const got = topicsForPaper(sampleTag.subjectId, sampleTag.year, sampleTag.level, sampleTag.lang, sampleTag.fileid);
+    expect(got).not.toBeNull();
+    expect(got!.q.length).toBe(sampleTag.q.length);
+    expect(topicsForPaper('nope', 1900, 'higher', 'ev', 'nope.pdf')).toBeNull();
   });
 });
