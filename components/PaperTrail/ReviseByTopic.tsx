@@ -12,7 +12,7 @@
  */
 
 import React, { useEffect, useMemo, useState } from 'react';
-import { ArrowLeft, ChevronRight, Layers, Download, Search, X } from 'lucide-react';
+import { ArrowLeft, ChevronRight, Layers, Download, Search, X, Link2, Check as CheckIcon } from 'lucide-react';
 import SubjectTilePicker from '../shared/SubjectTilePicker';
 import { siblingsFor, taggedYearsForSubject, topicLabel, topicsForSubject, type SubjectTopic, type TopicSibling } from './topics';
 import { addCard, hasCard, removeCard } from './reviewStore';
@@ -20,6 +20,7 @@ import { masteryForSubject, type TopicMastery } from './topicMastery';
 import { downloadPack } from './revisionPack';
 import VaultQuestionCard from './VaultQuestionCard';
 import { releaseVaultPdfs } from './vaultDocs';
+import { buildVaultLink, consumeInitialVaultLocation } from './vaultDeepLink';
 
 const INK = '#1a1a1a';
 const ACCENT = '#F26B1F';
@@ -35,9 +36,13 @@ interface Props {
 }
 
 const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, onOpenQuestion, onBack }) => {
+  // A shared "?subject=…&topic=…" link opens the vault straight at that topic
+  // (consumed once per load — see vaultDeepLink; safe, never touches history).
+  const [boot] = useState(() => consumeInitialVaultLocation());
   const [scope, setScope] = useState<'mine' | 'all'>(mineIds.length ? 'mine' : 'all');
-  const [subjectId, setSubjectId] = useState<string | null>(null);
-  const [subtopicId, setSubtopicId] = useState<string | null>(null);
+  const [subjectId, setSubjectId] = useState<string | null>(boot?.subjectId ?? null);
+  const [subtopicId, setSubtopicId] = useState<string | null>(boot?.subtopicId ?? null);
+  const [copied, setCopied] = useState(false);
   const [sort, setSort] = useState<'busiest' | 'frequent'>('busiest');
   const [levelFilter, setLevelFilter] = useState<'all' | string>('all');
   const [yearFilter, setYearFilter] = useState<'all' | number>('all');
@@ -50,6 +55,22 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
   useEffect(() => { setLevelFilter('all'); setYearFilter('all'); }, [subtopicId]);
   // Reset the topic search when switching subjects.
   useEffect(() => { setTopicQuery(''); }, [subjectId]);
+  // The "Copied" confirmation is per-topic.
+  useEffect(() => { setCopied(false); }, [subtopicId]);
+
+  const copyTopicLink = async () => {
+    if (!subjectId || !subtopicId) return;
+    const url = buildVaultLink(subjectId, subtopicId);
+    try {
+      await navigator.clipboard.writeText(url);
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 2000);
+    } catch {
+      // Clipboard blocked (insecure context / permissions) — surface the URL so
+      // the student can still copy it by hand rather than failing silently.
+      window.prompt('Copy this link to share the topic:', url);
+    }
+  };
 
   const toggleReview = (q: TopicSibling) => {
     const id = { subjectId: q.subjectId, year: q.year, level: q.level, lang: q.lang, fileid: q.fileid, n: q.n };
@@ -137,6 +158,16 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
               <Download size={14} /> Export revision pack
             </button>
           )}
+          <button
+            onClick={copyTopicLink}
+            aria-label="Copy a shareable link to this topic"
+            className="inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-[12.5px] font-semibold border-2 transition-transform active:translate-y-0.5"
+            style={copied
+              ? { borderColor: '#3A8D5F', color: '#1F5F3E', backgroundColor: '#E8F2EC' }
+              : { borderColor: '#d0cdc8', color: '#7a7068' }}
+          >
+            {copied ? <><CheckIcon size={14} /> Link copied</> : <><Link2 size={14} /> Copy link</>}
+          </button>
         </div>
         {/* Year filter — jump straight to a sitting (Studyclix-style). */}
         {yearList.length > 3 && (

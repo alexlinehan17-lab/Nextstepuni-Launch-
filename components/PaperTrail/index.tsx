@@ -58,6 +58,7 @@ import {
 } from '../../data/paperTrailFormulae';
 import { usePaperFinder } from '../../hooks/usePaperFinder';
 import { getBootParam } from '../../utils/bootParams';
+import { hasInitialVaultTopic } from './vaultDeepLink';
 import {
   PAPER_TRAIL_GAPS,
   PAPER_TRAIL_INDEX,
@@ -199,6 +200,10 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   useEffect(() => {
     if (bootApplied) return;
     bootApplied = true;
+    // A shared Topic Vault link (?subject=…&topic=…) opens the vault feed; the
+    // feed itself consumes the target subject/topic. Wins over the paper-list
+    // deep link when a valid topic is present.
+    if (hasInitialVaultTopic()) { setView({ v: 'revise' }); return; }
     const subjectId = getBootParam('subject');
     if (!subjectId || !subjectById.has(subjectId)) return;
     const subj = subjectById.get(subjectId)!;
