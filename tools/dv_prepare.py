@@ -68,7 +68,10 @@ def main():
     candidates = []
     for t in papers:
         url = paper_url(cycle, subject, t['year'], t['fileid'])
-        pdf = f'{out}/{t["fileid"]}'
+        # The SEC reuses the same fileid across years — key the cached PDF by
+        # year+level+fileid so different sittings never collide (the bug that
+        # scrambled the first biology wave).
+        pdf = f'{out}/{t["year"]}-{t["level"][:3]}-{t["fileid"]}'
         if not os.path.exists(pdf):
             try:
                 if not download(url, pdf):
@@ -84,7 +87,9 @@ def main():
             continue
         doc = fitz.open(pdf)
         for i, c in enumerate(cands):
-            cid = f'{t["fileid"][:-4]}-p{c["page"]}-{i}'
+            # cand_id carries year+level so crops from different sittings that
+            # share a fileid never overwrite each other.
+            cid = f'{t["year"]}-{t["level"][:3]}-{t["fileid"][:-4]}-p{c["page"]}-{i}'
             png = f'{out}/crop-{cid}.png'
             page = doc[c['page'] - 1]
             pr = page.rect
