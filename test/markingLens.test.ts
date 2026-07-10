@@ -13,6 +13,12 @@
  *     doesn't add up misstates the scheme.
  *  3. Every entry cites its scheme; every pitfall cites its report.
  *  4. No duplicate keys.
+ *  5. Booklet-safety: when the same n is tagged under more than one booklet
+ *     (dual-booklet / dual-numbering papers), a lens for that n could silently
+ *     point at the WRONG booklet's question — the exact geography Part One/Part
+ *     Two miskey caught pre-ship 2026-07. Gate 5 forces every ambiguous booklet
+ *     a lens uses onto an explicit verified list, so the "which booklet does this
+ *     n belong to" check is done consciously, not assumed.
  */
 
 import { describe, it, expect } from 'vitest';
@@ -86,6 +92,50 @@ describe('Marking Lens integrity', () => {
         seen.add(k);
       }
     }
+  });
+
+  // Booklets a human has verified carry the questions their lens describes, for
+  // papers where the same n is tagged under more than one booklet. Adding a
+  // booklet here is an explicit statement: "I checked which booklet each n is on."
+  // (Geography 2024 HL / 2025 OL: LP042 = Part One shorts, NOT LP043 = Part Two.
+  //  Biology 2025: LP038 = Sections A+B Q1–10, LP040 = Section C Q11–17.
+  //  Business: LP032 = Section 1 (12 short questions), LP041 = Section 2 (applied
+  //  long questions, n1–8); the golden file keys shorts→LP032, longs→LP041.)
+  const VERIFIED_AMBIGUOUS_BOOKLETS = new Set<string>([
+    'business|LC033ALP032EV.pdf', 'business|LC033ALP041EV.pdf', 'business|LC033ALP041IV.pdf',
+    'business|LC033GLP033EV.pdf', 'business|LC033GLP033IV.pdf',
+    'biology|LC025ALP038EV.pdf', 'biology|LC025ALP040EV.pdf',
+    'biology|LC025ALP038IV.pdf', 'biology|LC025ALP040IV.pdf',
+    'biology|LC025GLP038EV.pdf', 'biology|LC025GLP040EV.pdf',
+    'biology|LC025GLP038IV.pdf', 'biology|LC025GLP040IV.pdf',
+    'geography|LC005ALP042EV.pdf', 'geography|LC005ALP042IV.pdf',
+    'geography|LC005GLP042EV.pdf',
+  ]);
+
+  it('booklet-ambiguous entries use only explicitly verified booklets', () => {
+    // (subjectId|year|level|lang|n) -> set of fileids that tag it.
+    const fileidsForN = new Map<string, Set<string>>();
+    for (const p of PAPER_TOPIC_TAGS) {
+      for (const q of p.q) {
+        const k = `${p.subjectId}|${p.year}|${p.level}|${p.lang}|${q.n}`;
+        let set = fileidsForN.get(k);
+        if (!set) { set = new Set(); fileidsForN.set(k, set); }
+        set.add(p.fileid);
+      }
+    }
+    const unverified = new Set<string>();
+    for (const s of MARKING_LENS) {
+      for (const e of s.entries) {
+        const fileids = fileidsForN.get(`${s.subjectId}|${e.year}|${e.level}|${e.lang}|${e.n}`);
+        if (fileids && fileids.size > 1) {
+          const bk = `${s.subjectId}|${e.fileid}`;
+          if (!VERIFIED_AMBIGUOUS_BOOKLETS.has(bk)) {
+            unverified.add(`${bk} (n${e.n} also tagged on: ${[...fileids].filter(f => f !== e.fileid).join(', ')})`);
+          }
+        }
+      }
+    }
+    expect([...unverified]).toEqual([]);
   });
 
   it('lensFor resolves a real key and misses an unknown one', () => {
