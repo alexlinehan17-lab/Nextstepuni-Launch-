@@ -11,9 +11,15 @@
 
 import { type QuestionLens, type SubjectLens } from './types';
 import BUSINESS_LENS from './business';
+import PHYSICS_LENS from './physics';
+import CHEMISTRY_LENS from './chemistry';
+import AG_SCIENCE_LENS from './agriculturalScience';
 
 export const MARKING_LENS: SubjectLens[] = [
   BUSINESS_LENS,
+  PHYSICS_LENS,
+  CHEMISTRY_LENS,
+  AG_SCIENCE_LENS,
 ];
 
 const key = (subjectId: string, year: number, level: string, lang: string, fileid: string, n: string) =>
