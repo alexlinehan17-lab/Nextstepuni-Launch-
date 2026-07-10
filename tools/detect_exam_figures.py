@@ -54,6 +54,38 @@ def _merge(rects):
     return out
 
 
+def _cluster_count(rects, pad=12):
+    """Union-find cluster rects by proximity; return (union_rect, member_count)
+    per cluster. A dense cluster of many small paths is a line diagram."""
+    n = len(rects)
+    parent = list(range(n))
+
+    def find(i):
+        while parent[i] != i:
+            parent[i] = parent[parent[i]]
+            i = parent[i]
+        return i
+
+    def union(i, j):
+        parent[find(i)] = find(j)
+
+    for i in range(n):
+        for j in range(i + 1, n):
+            if _overlaps(rects[i], rects[j], pad=pad):
+                union(i, j)
+    groups = {}
+    for i in range(n):
+        groups.setdefault(find(i), []).append(rects[i])
+    out_rects, out_counts = [], []
+    for members in groups.values():
+        u = fitz.Rect(members[0])
+        for r in members[1:]:
+            u |= r
+        out_rects.append(u)
+        out_counts.append(len(members))
+    return out_rects, out_counts
+
+
 def detect(pdf, min_area=11000):
     doc = fitz.open(pdf)
     cands = []
@@ -72,16 +104,38 @@ def detect(pdf, min_area=11000):
                 continue
             if w / pr.width > 0.85 and h < 45:
                 continue                       # full-width header banner
+            if w > pr.width * 0.9 and h > pr.height * 0.9:
+                continue                       # full-page scan / cover image
             if h / max(w, 1) > 8 or w / max(h, 1) > 10:
                 continue                       # extreme sliver
             rects.append(r)
-        # ── vector-drawing clusters (graphs, geometry, maps, apparatus) ──
-        big = [fitz.Rect(d['rect']) for d in page.get_drawings()
-               if fitz.Rect(d['rect']).width * fitz.Rect(d['rect']).height > 2500
-               and fitz.Rect(d['rect']).width > 40 and fitz.Rect(d['rect']).height > 40]
-        vclusters = _merge(big) if len(big) >= 6 else []
-        vrects = [r for r in vclusters if r.width * r.height >= max(min_area * 2, 20000)
-                  and r.width > 110 and r.height > 90]
+        # ── vector-drawing clusters (circuits, apparatus, ray/geometry
+        #    diagrams, graphs, maps) ── these are drawn as MANY small line/curve
+        #    paths, not a few big rects, so cluster ALL paths by proximity and
+        #    keep dense clusters. Hairlines and full-width table rules dropped.
+        paths = []
+        for d in page.get_drawings():
+            r = fitz.Rect(d['rect'])
+            if r.width < 2 and r.height < 2:
+                continue                                  # dot / hairline
+            if r.width > pr.width * 0.8 and r.height < 3:
+                continue                                  # full-width rule (table)
+            if r.width > pr.width * 0.92 and r.height > pr.height * 0.92:
+                continue                                  # page border
+            paths.append(r)
+        vrects = []
+        if len(paths) >= 10:
+            clusters, counts = _cluster_count(paths, pad=12)
+            for r, n in zip(clusters, counts):
+                if n < 10:
+                    continue                              # too few strokes to be a diagram
+                if r.width * r.height < max(min_area * 2, 18000):
+                    continue
+                if r.width < 90 or r.height < 70:
+                    continue
+                if r.width > pr.width * 0.95 and r.height > pr.height * 0.9:
+                    continue                              # whole-page cluster
+                vrects.append(r)
 
         for kind, group in (('raster', _merge(rects)), ('vector', vrects)):
             for r in group:
