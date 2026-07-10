@@ -130,6 +130,21 @@ yield little; older scanned papers also clip labels on some apparatus crops,
 which verify agents reject as half-cropped. MISSING is acceptable, a wrong crop
 is not.
 
+### Remaining LC diagram subjects — backfill underway (2021 shipped)
+
+The other diagram-bearing LC subjects (Mathematics, Agricultural Science,
+Economics, Technology, Computer Science, Home Economics) previously carried only
+2022–2025; a backfill has begun, year by year, from 2021 downward. These
+subjects are diagram-sparse relative to the big eight: Maths answer booklets are
+dominated by blank ruled work-boxes (the detector flags them, the verify agent
+rejects them — only genuinely printed figures survive), and Ag Science / Home
+Economics lean on identification photographs and fill-in tables, which are
+rejected as non-figures. 2021 added ~47 figures across the six (Maths 80, Ag
+Science 72, Computer Science 47, Economics 35, Technology 26, Home Economics 12,
+running totals). The corpus now stands at **~2,070 figures across 24 subject
+files**. Backfill continues to 2020 and earlier where papers exist (Computer
+Science was first examined in 2020, so its history floor is 2020).
+
 ## Next waves (planned)
 
 Continue the native pipeline until every paper with extractable diagrams is

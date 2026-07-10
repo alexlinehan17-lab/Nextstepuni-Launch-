@@ -82,4 +82,28 @@ export const HOME_ECONOMICS_S_AND_S_FIGURES: DiagramEntry[] = [
     alt: "A black fabric care symbol consisting of an outlined triangle with two lines crossing through it in an X shape.",
     source: "SEC Leaving Certificate Home Economics 2022 Ordinary Level, Q14 — © State Examinations Commission",
   }),
+  nf({
+    subjectId: "home-economics-s-and-s", subjectLabel: "Home Economics",
+    level: "ordinary", year: 2021,
+    topicLabel: "Textile care labelling symbol (ironing)", questionRef: null,
+    src: "/exam-figures/home-economics-s-and-s/home-economics-2021-ol-care-label-iron-two-dots.png",
+    alt: "A standard garment care labelling symbol showing the outline of an iron with two dots inside it.",
+    source: "SEC Leaving Certificate Home Economics 2021 Ordinary Level — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "home-economics-s-and-s", subjectLabel: "Home Economics",
+    level: "ordinary", year: 2021,
+    topicLabel: "Household heat loss diagram", questionRef: "2021 OL Elective 1(a)",
+    src: "/exam-figures/home-economics-s-and-s/home-economics-2021-ol-house-heat-loss-diagram.png",
+    alt: "A diagram of a two-storey house with red arrows indicating heat loss through different parts of the building, labelled 25% through the roof, 35% through the walls, 15% and 10% through windows and doors, and 15% through the floor.",
+    source: "SEC Leaving Certificate Home Economics 2021 Ordinary Level, Q Elective 1(a) — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "home-economics-s-and-s", subjectLabel: "Home Economics",
+    level: "ordinary", year: 2021,
+    topicLabel: "Nutritional information table for yoghurts", questionRef: null,
+    src: "/exam-figures/home-economics-s-and-s/home-economics-2021-ol-yoghurt-nutrition-table.png",
+    alt: "A nutritional information table comparing full fat, low fat and fat free natural yoghurt per 100 g, with rows for energy (kcal), fat and saturates, carbohydrates and sugars, fibre, protein and salt.",
+    source: "SEC Leaving Certificate Home Economics 2021 Ordinary Level — © State Examinations Commission",
+  }),
 ];
