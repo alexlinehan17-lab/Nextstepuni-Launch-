@@ -106,4 +106,28 @@ export const HOME_ECONOMICS_S_AND_S_FIGURES: DiagramEntry[] = [
     alt: "A nutritional information table comparing full fat, low fat and fat free natural yoghurt per 100 g, with rows for energy (kcal), fat and saturates, carbohydrates and sugars, fibre, protein and salt.",
     source: "SEC Leaving Certificate Home Economics 2021 Ordinary Level — © State Examinations Commission",
   }),
+  nf({
+    subjectId: "home-economics-s-and-s", subjectLabel: "Home Economics",
+    level: "higher", year: 2020,
+    topicLabel: "Consumer survey data on difficulty controlling eating in different situations", questionRef: null,
+    src: "/exam-figures/home-economics-s-and-s/home-economics-2020-hl-eating-situations-survey-table.png",
+    alt: "A data table titled Situations/Settings with three percentage columns: Sometimes Difficult (%), Always Difficult (%), and Never Difficult (%). Rows list ten situations including eating in, eating out, eating at work, eating with friends, stressful situations, lack of time, special occasions, eating late/after a night out, eating while watching TV, and preparing a meal, each with survey percentage values.",
+    source: "SEC Leaving Certificate Home Economics 2020 Higher Level — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "home-economics-s-and-s", subjectLabel: "Home Economics",
+    level: "ordinary", year: 2020,
+    topicLabel: "Ground floor plan of a house", questionRef: "2020 OL Section C Elective 1(a)",
+    src: "/exam-figures/home-economics-s-and-s/home-economics-2020-ol-elective-1a-house-ground-floor-plan.png",
+    alt: "An architectural ground floor plan of a house with rooms labelled Living room, Kitchen, Stairs, Utility, Sitting room, Patio, Dining room, Study, and Garage, with the front door marked on the right-hand side.",
+    source: "SEC Leaving Certificate Home Economics 2020 Ordinary Level, Section C Elective 1(a) — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "home-economics-s-and-s", subjectLabel: "Home Economics",
+    level: "ordinary", year: 2020,
+    topicLabel: "Reasons for reduced red meat consumption (survey data)", questionRef: "2020 OL Q1",
+    src: "/exam-figures/home-economics-s-and-s/home-economics-2020-ol-q1-red-meat-reduction-bar-chart.png",
+    alt: "A horizontal bar chart titled 'Reduction in red meat consumption' showing the percentage of people citing each reason for reducing red meat intake: Health 67%, Lifestyle change 30%, Environment 30%, Animal welfare 27%, Save money 17%, and Media influence 11%. The x-axis runs from 0% to 80%.",
+    source: "SEC Leaving Certificate Home Economics 2020 Ordinary Level, Q1 — © State Examinations Commission",
+  }),
 ];

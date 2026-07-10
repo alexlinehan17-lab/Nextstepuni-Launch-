@@ -290,4 +290,12 @@ export const ECONOMICS_FIGURES: DiagramEntry[] = [
     alt: "Graph with Price on the vertical axis and Quantity on the horizontal axis showing a U-shaped AC curve, an upward-sloping MC curve, and a horizontal line labelled D = AR = MR. The MC curve cuts the AC curve at its minimum, marked as point B on the horizontal line.",
     source: "SEC Leaving Certificate Economics 2021 Ordinary Level, Q12 — © State Examinations Commission",
   }),
+  nf({
+    subjectId: "economics", subjectLabel: "Economics",
+    level: "higher", year: 2020,
+    topicLabel: "Oligopoly long-run equilibrium", questionRef: "2020 HL Q9",
+    src: "/exam-figures/economics/economics-2020-hl-q9-oligopoly-long-run-equilibrium.png",
+    alt: "A Price-Quantity graph showing three unlabelled curves numbered 1 to 3, representing the long-run equilibrium of a firm in oligopoly. Beside the graph is a blank answer table with rows numbered 1 to 3 for writing the label of each line.",
+    source: "SEC Leaving Certificate Economics 2020 Higher Level, Q9 — © State Examinations Commission",
+  }),
 ];

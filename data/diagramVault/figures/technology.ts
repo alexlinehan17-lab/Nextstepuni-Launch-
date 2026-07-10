@@ -218,4 +218,28 @@ export const TECHNOLOGY_FIGURES: DiagramEntry[] = [
     alt: "A two-component gear mechanism: a black threaded worm screw labelled A meshing with a brass toothed gear wheel labelled B.",
     source: "SEC Leaving Certificate Technology 2021 Ordinary Level, Q5 — © State Examinations Commission",
   }),
+  nf({
+    subjectId: "technology", subjectLabel: "Technology",
+    level: "higher", year: 2020,
+    topicLabel: "Chain and sprocket drive mechanism on an e-scooter wheel", questionRef: "2020 HL Q14",
+    src: "/exam-figures/technology/technology-2020-hl-q14-escooter-chain-sprocket-drive.png",
+    alt: "Close-up of an e-scooter rear wheel showing a chain and sprocket drive mechanism, with a red arrow pointing to the large sprocket mounted on the wheel hub.",
+    source: "SEC Leaving Certificate Technology 2020 Higher Level, Q14 — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "technology", subjectLabel: "Technology",
+    level: "higher", year: 2020,
+    topicLabel: "Outline line drawing of a multifunction printer (graphics rendering stimulus)", questionRef: "2020 HL Q15",
+    src: "/exam-figures/technology/technology-2020-hl-q15-printer-outline-drawing.png",
+    alt: "Unshaded outline line drawing of a multifunction desktop printer with a document feeder on top, a control panel, and an open output paper tray at the front.",
+    source: "SEC Leaving Certificate Technology 2020 Higher Level, Q15 — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "technology", subjectLabel: "Technology",
+    level: "higher", year: 2020,
+    topicLabel: "Worm and worm wheel gear mechanism", questionRef: "2020 HL Q4",
+    src: "/exam-figures/technology/technology-2020-hl-q4-worm-and-worm-wheel-mechanism.png",
+    alt: "Cutaway view of a gear mechanism showing a steel worm screw meshing with a toothed worm wheel inside a blue housing, with a shaft and bearing visible below.",
+    source: "SEC Leaving Certificate Technology 2020 Higher Level, Q4 — © State Examinations Commission",
+  }),
 ];
