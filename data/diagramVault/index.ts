@@ -23,6 +23,7 @@
 
 import { RECOVERY_CARDS } from '../../catchUpLaneData';
 import { COMMAND_WORD_QUESTIONS } from '../../commandWordData';
+import { NATIVE_FIGURES } from './native';
 
 export interface DiagramEntry {
   /** Stable id derived from the figure's file path. */
@@ -66,6 +67,13 @@ const parseLevel = (source: string, fallback: string | null): string | null => {
 // entries are added first because they carry a topic; a later command-word entry
 // for the same figure only fills gaps (never overwrites a known topic).
 const bySrc = new Map<string, DiagramEntry>();
+
+// Native figures (extracted straight from the question papers) are added first,
+// so on the rare src collision they win over a derived exhibit — the paper crop
+// is the primary artifact.
+for (const e of NATIVE_FIGURES) {
+  if (!bySrc.has(e.src)) bySrc.set(e.src, e);
+}
 
 for (const c of RECOVERY_CARDS) {
   if (!c.figure) continue;
