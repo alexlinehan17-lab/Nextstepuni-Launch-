@@ -12,6 +12,30 @@ import type { DiagramEntry } from '../index';
 export const TECHNOLOGY_FIGURES: DiagramEntry[] = [
   nf({
     subjectId: "technology", subjectLabel: "Technology",
+    level: "higher", year: 2025,
+    topicLabel: "Diving springboard tilt angle", questionRef: null,
+    src: "/exam-figures/technology/technology-2025-hl-diving-springboard-tilt-angle.png",
+    alt: "A 3D rendered diagram of a diving springboard mounted on a stand, labelled with 'Ladder', 'Springboard' and a marked 'Tilt Angle' shown between the board and its support.",
+    source: "SEC Leaving Certificate Technology 2025 Higher Level — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "technology", subjectLabel: "Technology",
+    level: "higher", year: 2025,
+    topicLabel: "Games console controller line drawing", questionRef: null,
+    src: "/exam-figures/technology/technology-2025-hl-games-controller-line-drawing.png",
+    alt: "Black-and-white outline line drawing of a games console controller, showing two thumbsticks, a cross-shaped directional pad, a cluster of round face buttons, plus and minus buttons, and a central button group.",
+    source: "SEC Leaving Certificate Technology 2025 Higher Level — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "technology", subjectLabel: "Technology",
+    level: "higher", year: 2025,
+    topicLabel: "Butt hinge with pin labelled", questionRef: "2025 HL Q15",
+    src: "/exam-figures/technology/technology-2025-hl-q15-hinge-pin.png",
+    alt: "Photograph of a brass butt hinge with two leaves of screw holes and a central knuckle; a red arrow labels the hinge 'pin'.",
+    source: "SEC Leaving Certificate Technology 2025 Higher Level, Q15 — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "technology", subjectLabel: "Technology",
     level: "higher", year: 2024,
     topicLabel: "Resistor colour code and tolerance code chart", questionRef: "2024 HL Q5",
     src: "/exam-figures/technology/technology-2024-hl-q5-resistor-colour-code-table.png",

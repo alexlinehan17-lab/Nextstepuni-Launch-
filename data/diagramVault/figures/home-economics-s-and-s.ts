@@ -12,6 +12,22 @@ import type { DiagramEntry } from '../index';
 export const HOME_ECONOMICS_S_AND_S_FIGURES: DiagramEntry[] = [
   nf({
     subjectId: "home-economics-s-and-s", subjectLabel: "Home Economics",
+    level: "ordinary", year: 2025,
+    topicLabel: "Heat loss from a house", questionRef: "2025 OL Q1",
+    src: "/exam-figures/home-economics-s-and-s/home-economics-2025-ol-q1-house-heat-loss.png",
+    alt: "A cutaway illustration of a two-storey house with coloured arrows indicating percentage heat loss in different directions: 25% through the roof, 35% through the walls, 10% and 15% through windows, and 15% through the floor/gaps.",
+    source: "SEC Leaving Certificate Home Economics 2025 Ordinary Level, Q1 — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "home-economics-s-and-s", subjectLabel: "Home Economics",
+    level: "ordinary", year: 2025,
+    topicLabel: "Nutritional comparison of two convenience soups", questionRef: null,
+    src: "/exam-figures/home-economics-s-and-s/home-economics-2025-ol-soup-a-b-nutritional-comparison.png",
+    alt: "A comparison table headed Soup A (Cook-chill) and Soup B (Canned), each with a product image and price (€2.89 and €2.00). Rows give per-serving values for energy, protein, carbohydrates (of which sugars), fibre, fat (of which saturates) and salt for both soups.",
+    source: "SEC Leaving Certificate Home Economics 2025 Ordinary Level — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "home-economics-s-and-s", subjectLabel: "Home Economics",
     level: "ordinary", year: 2024,
     topicLabel: "Factors affecting food choice", questionRef: "2024 OL Q1",
     src: "/exam-figures/home-economics-s-and-s/home-economics-2024-ol-q1-factors-affecting-food-choice.png",

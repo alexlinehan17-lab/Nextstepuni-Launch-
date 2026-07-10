@@ -12,6 +12,30 @@ import type { DiagramEntry } from '../index';
 export const JC_HOME_ECONOMICS_FIGURES: DiagramEntry[] = [
   nf({
     subjectId: "jc-home-economics", subjectLabel: "Junior Cycle Home Economics",
+    level: null, year: 2025,
+    topicLabel: "Stages of the design brief process", questionRef: null,
+    src: "/exam-figures/jc-home-economics/home-economics-2025-common-design-brief-process-wheel.png",
+    alt: "A circular diagram with 'The Brief' at its centre, divided into eight coloured segments labelled Defining the problem/task, Investigation/research, Generating ideas, Developing possible solutions, Presenting ideas to others for feedback, Refining the design, Production of product, and Evaluation, with the word 'Reflection' repeated around the outer ring.",
+    source: "SEC Junior Certificate Home Economics 2025 — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "jc-home-economics", subjectLabel: "Junior Cycle Home Economics",
+    level: null, year: 2025,
+    topicLabel: "Energy drink nutritional content", questionRef: null,
+    src: "/exam-figures/jc-home-economics/home-economics-2025-common-energy-drink-nutrition-info.png",
+    alt: "An illustration of an energy drink can labelled 'May contain', showing sugar of 17 spoons / 69 g and caffeine of 2 cups / 160 mg.",
+    source: "SEC Junior Certificate Home Economics 2025 — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "jc-home-economics", subjectLabel: "Junior Cycle Home Economics",
+    level: null, year: 2025,
+    topicLabel: "Food storage and safety symbols", questionRef: null,
+    src: "/exam-figures/jc-home-economics/home-economics-2025-common-food-storage-safety-symbols.png",
+    alt: "A four-panel grid of line-icon symbols: a clock beside a snowflake and thermometer; plastic bottles and food containers; a fridge beside a cleaning spray bottle; and a fish beside a cut of meat.",
+    source: "SEC Junior Certificate Home Economics 2025 — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "jc-home-economics", subjectLabel: "Junior Cycle Home Economics",
     level: null, year: 2024,
     topicLabel: "Human digestive system", questionRef: "2024 Q6",
     src: "/exam-figures/jc-home-economics/jc-home-economics-2024-q6-digestive-system.png",

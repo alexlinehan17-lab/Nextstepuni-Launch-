@@ -108,11 +108,21 @@ Chemistry and the JC technical subjects (Applied Technology, Wood Technology,
 Engineering) are the richest veins — labelled apparatus, circuits, OS maps,
 synoptic charts, CAD/orthographic drawings, joints and mechanisms.
 
+### 2025 wave (most recent exam year, shipped)
+
+The 2025 papers were extracted for every diagram subject that lacked them
+(biology, chemistry, physics and geography already carried 2025). Each subject
+file was regenerated from the full set of its verified year-slices (2022–2025),
+never overwritten with 2025 alone. Highlights: Physics & Chemistry, Mathematics
+(incl. Foundation level), DCG, JC Applied Technology, JC Wood Technology and JC
+Science all gained a fresh year of figures. The native corpus now stands at
+**~970 figures across 24 subject files**.
+
 ## Next waves (planned)
 
 Continue the native pipeline until every paper with extractable diagrams is
 covered: LCA technical strands (engineering, graphics-and-construction,
 technology), any remaining JC diagram subjects (jc-music listening figures where
-present), and older-year backfill (pre-2022) for the subjects already covered.
-Every added figure is agent-verified with an SEC `source`, so the integrity gate
-covers it automatically.
+present), and older-year backfill (2010–2021) for the subjects already covered —
+the tagged corpus reaches back to 2010. Every added figure is agent-verified with
+an SEC `source`, so the integrity gate covers it automatically.
