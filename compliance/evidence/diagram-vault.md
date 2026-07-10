@@ -45,21 +45,59 @@ the vault follows.
 subjects; drilling into one shows figure tiles pointing at real `/exam-figures/…`
 files with SEC attribution and the description behind a toggle.
 
-## Coverage (wave 1 — the existing verified corpus)
+## Native corpus — the paper-extraction pipeline
 
-149 figures across 18 subjects, derived from the current exhibit set:
+Beyond the derived projection above, the vault now carries a **native** corpus:
+figures cropped straight from SEC question papers by a dedicated pipeline and
+confirmed one crop at a time by a verify agent. These land in
+`data/diagramVault/figures/<subject>.ts` (one file per subject), are aggregated
+by `data/diagramVault/native.ts`, and win on any `src` collision with a derived
+figure (native is the primary paper crop). The same integrity gate
+(`test/diagramVault.test.ts`) covers them.
 
-| Band | Subjects |
-|------|----------|
-| Richest (12+) | Applied Mathematics (21), Construction Studies (21), Art (17), Biology (14), Mathematics (13), Geography (12) |
-| Mid (5–8) | Politics & Society (8), Chemistry (7), Irish JC (7), Geography JC (5), Mathematics JC (5) |
-| Thin (1–4) | Business (4), History JC (4), Economics (3), Science JC (3), Business Studies JC (2), Physics (2), Agricultural Science (1) |
+Pipeline (`tools/`):
+
+1. **`dv_prepare.py <subjectId> <cycle> [--years …]`** — downloads each tagged
+   paper from the world-readable SEC corpus on Firebase Storage, runs
+   `detect_exam_figures.py`, and crops every candidate region to a PNG with a
+   `candidates.json` manifest. The cache key and `cand_id` include year + level
+   so SEC's reuse of one `fileid` across years can't scramble the attribution.
+2. **`detect_exam_figures.py`** — proposes candidate regions: raster images
+   (header/banner/cover/sliver-filtered) **plus** vector-drawing clusters
+   (union-find over all small paths — essential for line-art subjects whose
+   circuits/apparatus/CAD drawings are drawn, not rastered).
+3. **Agent verify** — one agent per (subject, year, level) VIEWS every crop and
+   accepts only a genuine technical figure, writing a claim-free `alt`, an SEC
+   `source` (paper + question label where confidently known, else `questionRef`
+   null — never a guessed number), and copying the crop path verbatim. This is
+   the accreditation gate: covers, decorative photos, blank answer grids and
+   generic number tables are rejected. "When unsure, REJECT."
+4. **`dv_apply.py <subjectId> <verified…>`** — copies accepted crops into
+   `public/exam-figures/<subject>/` and (re)writes the subject figure file.
+
+### Native coverage (2022–2024 waves shipped)
+
+| Subject | Figures | Subject | Figures |
+|---------|--------:|---------|--------:|
+| Chemistry | 68 | Geography | 60 |
+| Biology | 55 | Design & Communication Graphics | 49 |
+| Mathematics | 42 | Physics | 36 |
+| Agricultural Science | 40 | Construction Studies | 33 |
+| Computer Science | 28 | Economics | 25 |
+| Engineering | 25 | Technology | 17 |
+| Home Economics | 7 | Business | 4 |
+| Applied Mathematics | 1 | | |
+
+Art was run and yielded **no** diagrams (its papers are reproductions of
+artworks/photographs, not technical figures) — correctly empty, not skipped
+silently.
 
 ## Next waves (planned)
 
-Expand the corpus via `tools/extract_exam_figure.py` — the same extract-and-verify
-discipline that built the seed set — prioritising the thin subjects and the
-high-diagram LC subjects (biology labelled diagrams, geography OS-map / weather
-figures, business charts, physics/chemistry apparatus). Every added figure lands
-first as a verified exhibit (with `alt` + SEC `source`), so the vault picks it up
-automatically and the integrity gates cover it.
+Continue the native pipeline until every paper with extractable diagrams is
+covered: JC technical/science subjects (jc-science, jc-geography, jc-engineering,
+jc-applied-technology, jc-wood-technology, jc-mathematics, jc-music,
+jc-home-economics), LCA technical strands (engineering, graphics-and-construction,
+technology), physics-and-chemistry, and older-year backfill (pre-2022) for the
+subjects already covered. Every added figure is agent-verified with an SEC
+`source`, so the integrity gate covers it automatically.
