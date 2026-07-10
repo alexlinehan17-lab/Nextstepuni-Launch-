@@ -59,6 +59,23 @@ Pitfall sources in use:
 - SEC Marking Scheme 2025 Biology HL (p.4) and OL (pp.4–5) — the Section-A surplus rule
   and the Q16/Q17 best-two-of-four rule, printed verbatim in the schemes themselves.
 
+## Coverage ceiling — subjects assessed and NOT authored (why)
+
+Marking Lens is only honest where a scheme allocates marks by **named, additive
+point values** that sum to the printed question total. Two large families of
+subject do not, and were deliberately left uncovered rather than fabricated:
+
+- **Grade-banded subjects** (Religious Education, History, Classical Studies, and
+  the essay papers generally): these schemes award a part by a descriptor band
+  (Excellent / Very Good / Good / Fair / Weak / Poor → a mark *range*), not by
+  summing named points. There is no ladder to show without inventing sub-marks,
+  so no lens is authored. Verified directly: the RE OL 2024/2025 schemes are
+  band-only; History 2025 HL is band-only for source evaluation and essays (only
+  the RSR outline-plan citations are discretely marked).
+- **Blocked by data, not by marking style: Accounting.** Filed schemes are 2023/24
+  but the Topic Vault tags stop at 2020, so there is no tagged question to key a
+  lens to. Revisit if/when 2023–24 accounting papers are tagged.
+
 ## Presentation honesty
 
 - The panel is titled "How the marks are given" and footers every open state with
