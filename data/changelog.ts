@@ -19,6 +19,16 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: '2026-07-definition-drill',
+    date: 'July 2026',
+    title: 'Definition Drill — the wording that earns the marks',
+    lines: [
+      'New tool: drill the exact wording the marking scheme awards the definition marks for. Read the prompt, recall it, reveal, and rate yourself.',
+      'Every reveal is the SEC scheme’s own phrasing — not a model answer — so you learn the words the examiner is actually hunting for.',
+      'Starting with Physics and Chemistry; more definitions arrive as the scheme library grows.',
+    ],
+  },
+  {
     id: '2026-07-answer-architect',
     date: 'July 2026',
     title: 'Answer Architect — the skeleton of a top answer',
