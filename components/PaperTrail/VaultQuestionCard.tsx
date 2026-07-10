@@ -13,7 +13,7 @@
  */
 
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { BookOpenCheck, Check, ChevronDown, ExternalLink, Plus } from 'lucide-react';
+import { BookOpenCheck, Check, ChevronDown, ExternalLink, Plus, Scale } from 'lucide-react';
 import type { PDFDocumentProxy } from 'pdfjs-dist';
 import { type PaperAnswerMap, type PaperAnswerQuestion } from '../../types/paperTrail';
 import CropView from './CropView';
@@ -21,6 +21,7 @@ import { paperRegionFor } from './paperRegion';
 import { vaultPdf } from './vaultDocs';
 import { answerMapUrls, isAnswerMap, resolveSibling } from './vaultResolve';
 import { type TopicSibling } from './topics';
+import { lensFor } from '../../data/markingLens';
 
 const INK = '#1a1a1a';
 const ACCENT = '#F26B1F';
@@ -74,12 +75,16 @@ interface Props {
 const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, onOpenInPaper }) => {
   const [visible, setVisible] = useState(false);
   const [state, setState] = useState<CardState>({ s: 'idle' });
+  const [lensOpen, setLensOpen] = useState(false);
   const [schemeOpen, setSchemeOpen] = useState(false);
   const [schemePdf, setSchemePdf] = useState<PDFDocumentProxy | null>(null);
   const [schemeFailed, setSchemeFailed] = useState(false);
   const rootRef = useRef<HTMLDivElement | null>(null);
 
   const resolved = useMemo(() => resolveSibling(sibling), [sibling]);
+  // Marking Lens — the scheme-grounded marks breakdown, where one is authored.
+  // Independent of the crop state: it teaches even when no crop can render.
+  const lens = useMemo(() => lensFor(sibling), [sibling]);
 
   // Render lazily — a topic feed can span dozens of multi-MB papers.
   useEffect(() => {
@@ -199,6 +204,68 @@ const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, on
           <div className="h-3 rounded-full mb-2 animate-pulse" style={{ backgroundColor: '#f0efec', width: '82%' }} />
           <div className="h-3 rounded-full mb-2 animate-pulse" style={{ backgroundColor: '#f0efec', width: '64%' }} />
           <div className="h-3 rounded-full animate-pulse" style={{ backgroundColor: '#f0efec', width: '73%' }} />
+        </div>
+      )}
+
+      {/* Marking Lens — how the marks are given (scheme-grounded) */}
+      {lens && (
+        <div style={{ borderTop: '2px solid #f0efec' }}>
+          <button
+            onClick={() => setLensOpen(v => !v)}
+            aria-expanded={lensOpen}
+            className="w-full flex items-center justify-center gap-2 px-4 py-2.5 text-[13px] font-semibold transition-colors"
+            style={lensOpen ? { color: '#8C3A0E', backgroundColor: '#FDEEDF' } : { color: ACCENT }}
+          >
+            <Scale size={15} />
+            How the marks are given
+            <ChevronDown size={14} className="transition-transform" style={lensOpen ? { transform: 'rotate(180deg)' } : undefined} />
+          </button>
+          {lensOpen && (
+            <div className="px-3 pt-3 pb-3" style={{ backgroundColor: '#FDEEDF' }}>
+              <div className="flex items-start justify-between gap-3 px-1 mb-2.5">
+                <p className="text-[12.5px] italic leading-snug" style={{ color: '#8C3A0E' }}>{lens.headline}</p>
+                <span
+                  className="shrink-0 text-[11px] font-bold px-2.5 py-1 rounded-full bg-white tabular-nums"
+                  style={{ color: '#8C3A0E', border: '1px solid rgba(242,107,31,0.35)' }}
+                >
+                  {lens.totalMarks} marks
+                </span>
+              </div>
+              <div className="space-y-1.5">
+                {lens.parts.map((p, i) => (
+                  <div
+                    key={i}
+                    className="flex items-start gap-3 rounded-xl bg-white px-3 py-2.5"
+                    style={{ border: '1px solid rgba(242,107,31,0.25)' }}
+                  >
+                    <span className="flex-1 min-w-0">
+                      <span className="flex items-baseline gap-2 flex-wrap">
+                        {p.part && (
+                          <span className="text-[10px] font-bold uppercase tracking-[0.06em]" style={{ color: '#8C3A0E' }}>{p.part}</span>
+                        )}
+                        <span className="text-[12.5px] font-semibold" style={{ color: INK }}>{p.task}</span>
+                      </span>
+                      <span className="block text-[11.5px] font-bold mt-0.5 tabular-nums" style={{ color: '#8C3A0E' }}>{p.notation}</span>
+                      <span className="block text-[12px] mt-0.5 leading-snug" style={{ color: '#5a5550' }}>{p.decoded}</span>
+                    </span>
+                    <span className="shrink-0 text-right" aria-label={`${p.marks} marks`}>
+                      <span className="text-[18px] font-bold tabular-nums" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{p.marks}</span>
+                      <span className="text-[10px] font-semibold ml-0.5" style={{ color: '#9e9186' }}>m</span>
+                    </span>
+                  </div>
+                ))}
+              </div>
+              {lens.pitfall && (
+                <div className="mt-2 rounded-r-xl bg-white px-3 py-2.5" style={{ borderLeft: '3px solid #F26B1F' }}>
+                  <p className="text-[12px] italic leading-snug" style={{ color: '#8C3A0E' }}>Where marks are lost: {lens.pitfall.text}</p>
+                  <p className="text-[10px] mt-1" style={{ color: '#9e9186' }}>{lens.pitfall.cite}</p>
+                </div>
+              )}
+              <p className="text-[10px] font-bold uppercase tracking-[0.12em] mt-2.5 px-1" style={{ color: '#8C3A0E' }}>
+                {lens.cite} — © State Examinations Commission
+              </p>
+            </div>
+          )}
         </div>
       )}
 
