@@ -21,8 +21,10 @@
 import type { DiagramEntry } from './index';
 import { BIOLOGY_FIGURES } from './figures/biology';
 import { GEOGRAPHY_FIGURES } from './figures/geography';
+import { PHYSICS_FIGURES } from './figures/physics';
 
 export const NATIVE_FIGURES: DiagramEntry[] = [
   ...BIOLOGY_FIGURES,
   ...GEOGRAPHY_FIGURES,
+  ...PHYSICS_FIGURES,
 ];
