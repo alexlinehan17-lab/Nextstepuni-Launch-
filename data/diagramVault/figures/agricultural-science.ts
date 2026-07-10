@@ -498,4 +498,12 @@ export const AGRICULTURAL_SCIENCE_FIGURES: DiagramEntry[] = [
     alt: "Line diagram of the mammalian urinary system with three parts labelled. A points to one of the two bean-shaped organs at the top, B points to a tube running down the middle, and C points to the rounded sac at the bottom.",
     source: "SEC Leaving Certificate Agricultural Science 2020 Ordinary Level — © State Examinations Commission",
   }),
+  nf({
+    subjectId: "agricultural-science", subjectLabel: "Agricultural Science",
+    level: "ordinary", year: 2019,
+    topicLabel: "Dissected sheep's heart (anatomy)", questionRef: null,
+    src: "/exam-figures/agricultural-science/agricultural-science-2019-ol-dissected-sheep-heart.png",
+    alt: "Line diagram of a dissected sheep's heart shown in section, with leader lines to labels including A, the aorta, and D. Chambers and major vessels are outlined.",
+    source: "SEC Leaving Certificate Agricultural Science 2019 Ordinary Level — © State Examinations Commission",
+  }),
 ];
