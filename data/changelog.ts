@@ -19,6 +19,16 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: '2026-07-marking-lens',
+    date: 'July 2026',
+    title: 'Marking Lens — how the marks are given',
+    lines: [
+      'Under questions in the Topic Vault you’ll now find "How the marks are given": the official scheme’s own marks grid, decoded part by part.',
+      'See exactly what each mark is for — state, develop, link, example — before you look at the scheme itself.',
+      'Starting with Business; more subjects are being added from the filed SEC schemes.',
+    ],
+  },
+  {
     id: '2026-07-topic-vault',
     date: 'July 2026',
     title: 'Questions by topic, as printed',
