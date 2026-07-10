@@ -810,4 +810,12 @@ export const AGRICULTURAL_SCIENCE_FIGURES: DiagramEntry[] = [
     alt: "Line drawings of a common crop pest, showing the winged adult insect labelled \"Adult\" and its elongated segmented grub labelled \"Larva\".",
     source: "SEC Leaving Certificate Agricultural Science 2014 Ordinary Level, Q4 — © State Examinations Commission",
   }),
+  nf({
+    subjectId: "agricultural-science", subjectLabel: "Agricultural Science",
+    level: "ordinary", year: 2013,
+    topicLabel: "Plant cell structure", questionRef: null,
+    src: "/exam-figures/agricultural-science/agricultural-science-2013-ol-plant-cell-diagram.png",
+    alt: "A schematic diagram of a plant cell showing an outer wall enclosing the cell, a dark circular nucleus, several small oval organelles, and a large clear body, with label lines pointing outward to the named structures.",
+    source: "SEC Leaving Certificate Agricultural Science 2013 Ordinary Level — © State Examinations Commission",
+  }),
 ];
