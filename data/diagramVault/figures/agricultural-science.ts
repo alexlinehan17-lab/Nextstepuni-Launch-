@@ -818,4 +818,12 @@ export const AGRICULTURAL_SCIENCE_FIGURES: DiagramEntry[] = [
     alt: "A schematic diagram of a plant cell showing an outer wall enclosing the cell, a dark circular nucleus, several small oval organelles, and a large clear body, with label lines pointing outward to the named structures.",
     source: "SEC Leaving Certificate Agricultural Science 2013 Ordinary Level — © State Examinations Commission",
   }),
+  nf({
+    subjectId: "agricultural-science", subjectLabel: "Agricultural Science",
+    level: "higher", year: 2011,
+    topicLabel: "Dissected mammalian heart cross-section", questionRef: null,
+    src: "/exam-figures/agricultural-science/agricultural-science-2011-hl-dissected-mammalian-heart.png",
+    alt: "Line drawing of a longitudinally dissected mammalian heart in cross-section, with lead lines pointing to six labelled parts marked X, Y, D, C, B and A.",
+    source: "SEC Leaving Certificate Agricultural Science 2011 Higher Level — © State Examinations Commission",
+  }),
 ];
