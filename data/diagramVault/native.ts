@@ -25,6 +25,7 @@ import { PHYSICS_FIGURES } from './figures/physics';
 import { CHEMISTRY_FIGURES } from './figures/chemistry';
 import { BUSINESS_FIGURES } from './figures/business';
 import { MATHEMATICS_FIGURES } from './figures/mathematics';
+import { APPLIED_MATHEMATICS_FIGURES } from './figures/applied-mathematics';
 
 export const NATIVE_FIGURES: DiagramEntry[] = [
   ...BIOLOGY_FIGURES,
@@ -33,4 +34,5 @@ export const NATIVE_FIGURES: DiagramEntry[] = [
   ...CHEMISTRY_FIGURES,
   ...BUSINESS_FIGURES,
   ...MATHEMATICS_FIGURES,
+  ...APPLIED_MATHEMATICS_FIGURES,
 ];
