@@ -311,6 +311,32 @@ gate) defer cleanly.
 - **History** — topic essays renumber per section behind the DBQ Q1–4;
   topic-aware detection required.
 
+## The dual-numbering trap (audit 2026-07) — verify the SERVED sidecar, not just yours
+
+A paper can carry **two valid `Q1..N` runs**, and the classic Storage sidecar
+(built for the full-paper Viewer) and the Topic Vault tags can pick *different*
+ones — so the vault serves crops the tags don't describe. Render-QA of your own
+`paper_anchors` output is **not enough**: you must confirm what the vault
+actually SERVES (it fetches `answerMapUrls` = Storage classic first, then hosted
+anchors), because a live classic sidecar silently overrides your hosted anchors.
+
+Cases found and fixed:
+- **geography** — the classic sidecar numbers the **Part-Two essays** 1..12; the
+  vault tags number the **Part-One short questions** 1..12. Classic was live on
+  Storage → it served (e.g. an Ordnance Survey map under 'Surface Processes').
+  Fix: `VAULT_PREFER_ANCHORS` (vaultResolve.ts) makes the vault use ONLY the
+  hosted anchors for such subjects — the classic is wrong for *every* tag.
+- **jc-italian / jc-french** — mirror: the classic is **reading-section-numbered**
+  (matches the tags) but 404 on Storage; the hosted anchors are **printed-numbered**
+  (Q1 = aural). Removed those anchors → honest fallback.
+- **jc-irish** (tags printed-numbered = anchors) and **mandarin** (classic live +
+  matches) are correct.
+
+Rule going forward: before shipping vault anchors for a paper that also has a
+classic sidecar, diff their per-question `pP` and confirm the SERVED one matches
+the tag numbering. A curl of the Storage `answers/<fileid>.json` tells you which
+is live.
+
 ## QA protocol — a wrong crop is worse than none
 
 Question-level (drop the question):
