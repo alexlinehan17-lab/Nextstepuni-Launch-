@@ -130,24 +130,34 @@ yield little; older scanned papers also clip labels on some apparatus crops,
 which verify agents reject as half-cropped. MISSING is acceptable, a wrong crop
 is not.
 
-### Remaining LC diagram subjects — backfill underway (2021 shipped)
+### Remaining LC diagram subjects — backfill COMPLETE (2010–2025)
 
 The other diagram-bearing LC subjects (Mathematics, Agricultural Science,
 Economics, Technology, Computer Science, Home Economics) previously carried only
-2022–2025; a backfill has begun, year by year, from 2021 downward. These
-subjects are diagram-sparse relative to the big eight: Maths answer booklets are
-dominated by blank ruled work-boxes (the detector flags them, the verify agent
-rejects them — only genuinely printed figures survive), and Ag Science / Home
-Economics lean on identification photographs and fill-in tables, which are
-rejected as non-figures. 2021 added ~47 figures across the six (Maths 80, Ag
-Science 72, Computer Science 47, Economics 35, Technology 26, Home Economics 12,
-running totals). The corpus now stands at **~2,260 figures across 24 subject
-files** after continuing this backfill down through 2011 (Maths 175, Ag Science
-102, Technology 89; Computer Science complete at 2020–2025, its full history;
-Economics and Home Economics have no tagged papers before 2020). Backfill
-continues to 2010 (the archive floor) for Maths, Ag Science and Technology.
+2022–2025; the backfill was then driven year by year down to the archive floor.
+These subjects are diagram-sparse relative to the big eight: Maths answer
+booklets are dominated by blank ruled work-boxes (the detector flags them, the
+verify agent rejects them — only genuinely printed figures survive), and Ag
+Science / Home Economics lean on identification photographs and fill-in tables,
+which are rejected as non-figures. The corpus now stands at **~2,290 figures
+across 24 subject files** with the backfill complete: Mathematics 184, Ag
+Science 108 and Technology 98 now span the **full tagged archive, 2010–2025**;
+Computer Science is complete at 2020–2025 (its whole history — first examined
+2020); Economics 36 and Home Economics 15 have no tagged papers before 2020.
 Pre-Project-Maths years (2012 and earlier) are thin — the older maths papers
-carry few printed figures — and several yield zero, which is the honest result. Maths Paper 1 (algebra/functions/finance) genuinely carries no
+carry few printed figures — and several year-slices yield zero, which is the
+honest result.
+
+### Coverage status — every tagged paper with extractable diagrams is now in
+
+With this final wave, **every subject the topic-tag corpus covers has been
+extracted across its entire tagged year range** (2010–2025 for the LC diagram
+subjects that reach that far back; 2020–2025 for Computer Science; 2022–2025 for
+Economics and Home Economics; the JC subjects across their tagged ranges). What
+remains uncovered is only what genuinely has no extractable figure: text/photo
+papers, blank answer booklets, and any subject with no diagram-bearing content.
+Every added figure is agent-verified with an SEC `source`, so the integrity gate
+covers the whole corpus automatically. Maths Paper 1 (algebra/functions/finance) genuinely carries no
 diagrams — those year-slices correctly yield zero.
 
 ## Next waves (planned)
