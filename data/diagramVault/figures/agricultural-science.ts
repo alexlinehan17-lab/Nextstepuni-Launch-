@@ -581,9 +581,9 @@ export const AGRICULTURAL_SCIENCE_FIGURES: DiagramEntry[] = [
   nf({
     subjectId: "agricultural-science", subjectLabel: "Agricultural Science",
     level: "ordinary", year: 2019,
-    topicLabel: "Dissected sheep's heart (anatomy)", questionRef: null,
-    src: "/exam-figures/agricultural-science/agricultural-science-2019-ol-dissected-sheep-heart.png",
-    alt: "Line diagram of a dissected sheep's heart shown in section, with leader lines to labels including A, the aorta, and D. Chambers and major vessels are outlined.",
+    topicLabel: "Dissected sheep's heart (cross-section)", questionRef: null,
+    src: "/exam-figures/agricultural-science/agricultural-science-2019-ol-dissected-sheep-heart-diagram.png",
+    alt: "Line diagram of a dissected sheep's heart shown in cross-section, with the aorta and several structures indicated by leader lines and letter labels including A and D.",
     source: "SEC Leaving Certificate Agricultural Science 2019 Ordinary Level — © State Examinations Commission",
   }),
 ];
