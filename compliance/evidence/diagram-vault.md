@@ -162,10 +162,18 @@ so most extracted crops are blank grids) and **Agricultural Economics 1** (a
 supply-curve graph — the subject is otherwise table/ledger heavy). **LCA Crafts
 & Design was probed and correctly yielded zero** — its papers are photographic
 and poster stimuli, not technical drawings. Backfill of earlier years for the
-three high-yield LCA technical strands followed: **LCA Engineering 132** and
-**LCA Graphics & Construction Studies 62** now span their full tagged archive
-(2010–2025), and LCA Technology and LCA Agriculture/Horticulture backfills are
-in progress.
+LCA technical strands is now COMPLETE across their full tagged archives:
+**LCA Engineering 132**, **LCA Graphics & Construction Studies 62**, **LCA
+Technology 133** and **LCA Agriculture/Horticulture 13** now span every tagged
+year (2010–2025 where papers reach that far). LCA Technology is the richest LCA
+strand — labelled mechanisms, gear trains, orthographic/CAD renders, wiring
+cutaways, water-system schematics and tool-identification figures; the richest
+years (2018/2019 = 23 each, 2022 = 22, 2015/2017 = 17 each) reflect its
+figure-dense structured questions. LCA Agriculture/Horticulture is genuinely
+diagram-sparse — its papers are dominated by identification photographs, matching
+tables and answer grids (all correctly rejected), leaving only occasional safety
+pictograms, apparatus/weather-station setups, a tree cross-section, an Ireland
+outline map and two data graphs across six years.
 
 ### Coverage status — every tagged paper with extractable diagrams is now in
 
