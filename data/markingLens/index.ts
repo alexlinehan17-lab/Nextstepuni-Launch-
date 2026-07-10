@@ -16,6 +16,7 @@ import CHEMISTRY_LENS from './chemistry';
 import AG_SCIENCE_LENS from './agriculturalScience';
 import BIOLOGY_LENS from './biology';
 import GEOGRAPHY_LENS from './geography';
+import ECONOMICS_LENS from './economics';
 
 export const MARKING_LENS: SubjectLens[] = [
   BUSINESS_LENS,
@@ -24,6 +25,7 @@ export const MARKING_LENS: SubjectLens[] = [
   AG_SCIENCE_LENS,
   BIOLOGY_LENS,
   GEOGRAPHY_LENS,
+  ECONOMICS_LENS,
 ];
 
 const key = (subjectId: string, year: number, level: string, lang: string, fileid: string, n: string) =>
