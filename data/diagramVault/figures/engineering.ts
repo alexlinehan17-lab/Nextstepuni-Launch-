@@ -314,4 +314,20 @@ export const ENGINEERING_FIGURES: DiagramEntry[] = [
     alt: "A cross-sectional illustration of a furnace with three vertical electrodes descending from the top into the chamber, above a pool of molten metal, with a tap-hole spout on the side.",
     source: "SEC Leaving Certificate Engineering 2021 Ordinary Level, Q2 — © State Examinations Commission",
   }),
+  nf({
+    subjectId: "engineering", subjectLabel: "Engineering",
+    level: "higher", year: 2020,
+    topicLabel: "Autonomous vehicle sensor locations", questionRef: null,
+    src: "/exam-figures/engineering/engineering-2020-hl-autonomous-vehicle-sensor-locations.png",
+    alt: "Line drawing of a car in three-quarter view with a roof-mounted unit and callout lines pointing to several positions on the front, side and rear of the vehicle marking sensor locations.",
+    source: "SEC Leaving Certificate Engineering 2020 Higher Level — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "engineering", subjectLabel: "Engineering",
+    level: "higher", year: 2020,
+    topicLabel: "Iron-carbon equilibrium (phase) diagram", questionRef: "2020 HL Q3",
+    src: "/exam-figures/engineering/engineering-2020-hl-q3-iron-carbon-equilibrium-diagram.png",
+    alt: "A simplified iron-carbon equilibrium diagram with axes, phase boundary lines and four labelled regions marked A, B, C and D. A vertical red dashed line with end markers runs from the lower axis up into region C.",
+    source: "SEC Leaving Certificate Engineering 2020 Higher Level, Q3 — © State Examinations Commission",
+  }),
 ];

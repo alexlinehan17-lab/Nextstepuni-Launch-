@@ -474,4 +474,28 @@ export const AGRICULTURAL_SCIENCE_FIGURES: DiagramEntry[] = [
     alt: "Illustrated diagram of a green plant with the sun, arrows labelled Gas A and Gas B, an arrow labelled C, and Water entering the roots, indicating the inputs and outputs of photosynthesis.",
     source: "SEC Leaving Certificate Agricultural Science 2022 Ordinary Level, Q7 — © State Examinations Commission",
   }),
+  nf({
+    subjectId: "agricultural-science", subjectLabel: "Agricultural Science",
+    level: "ordinary", year: 2020,
+    topicLabel: "Flower cross-section (structure of a flower)", questionRef: null,
+    src: "/exam-figures/agricultural-science/agricultural-science-2020-ol-flower-cross-section.png",
+    alt: "Line diagram of a longitudinal cross-section through a flower with five parts labelled A to E, including an outer petal, a stalked structure with a rounded head, and a central swollen base containing a small circular structure.",
+    source: "SEC Leaving Certificate Agricultural Science 2020 Ordinary Level — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "agricultural-science", subjectLabel: "Agricultural Science",
+    level: "ordinary", year: 2020,
+    topicLabel: "Ruminant stomach / digestive system", questionRef: "2020 OL Q6",
+    src: "/exam-figures/agricultural-science/agricultural-science-2020-ol-q6-ruminant-stomach-diagram.png",
+    alt: "Line diagram of a ruminant stomach in outline, with five regions labelled A to E. A is a tube entering at the upper right, B is the large upper chamber, C and D are rounded lower chambers and E is a lower sac.",
+    source: "SEC Leaving Certificate Agricultural Science 2020 Ordinary Level, Q6 — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "agricultural-science", subjectLabel: "Agricultural Science",
+    level: "ordinary", year: 2020,
+    topicLabel: "Urinary system (kidneys, ureters, bladder)", questionRef: null,
+    src: "/exam-figures/agricultural-science/agricultural-science-2020-ol-urinary-system-diagram.png",
+    alt: "Line diagram of the mammalian urinary system with three parts labelled. A points to one of the two bean-shaped organs at the top, B points to a tube running down the middle, and C points to the rounded sac at the bottom.",
+    source: "SEC Leaving Certificate Agricultural Science 2020 Ordinary Level — © State Examinations Commission",
+  }),
 ];

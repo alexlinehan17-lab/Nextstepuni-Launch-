@@ -298,4 +298,28 @@ export const PHYSICS_FIGURES: DiagramEntry[] = [
     alt: "Diagram of the interior of a three-pin plug showing wires connected to terminals, a fuse and a cable grip. Labels read P, Neutral, Fuse, Cable grip, Cable and Q.",
     source: "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
   }),
+  nf({
+    subjectId: "physics", subjectLabel: "Physics",
+    level: "ordinary", year: 2020,
+    topicLabel: "Length vs frequency graph", questionRef: null,
+    src: "/exam-figures/physics/physics-2020-ol-length-frequency-graph.png",
+    alt: "A line graph on a gridded background showing nine plotted data points that rise from lower-left to upper-right, with a dotted straight best-fit line drawn through them.",
+    source: "SEC Leaving Certificate Physics 2020 Ordinary Level — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "physics", subjectLabel: "Physics",
+    level: "ordinary", year: 2020,
+    topicLabel: "Weight in air and in water (buoyancy)", questionRef: "2020 OL Q5",
+    src: "/exam-figures/physics/physics-2020-ol-q5-spring-balance-buoyancy.png",
+    alt: "A diagram of two spring balances (newton meters). The left reads 5 N with a small mass hanging in air above a container; the right reads 3 N with a 2 kg mass suspended in a beaker of water, annotated with a smaller force in water.",
+    source: "SEC Leaving Certificate Physics 2020 Ordinary Level, Q5 — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "physics", subjectLabel: "Physics",
+    level: "ordinary", year: 2020,
+    topicLabel: "Gold leaf electroscope", questionRef: "2020 OL Q8",
+    src: "/exam-figures/physics/physics-2020-ol-q8-gold-leaf-electroscope.png",
+    alt: "A labelled line diagram of a gold leaf electroscope showing a top cap and stem inside a metal case, with lead lines labelled A, B, Metal, Rod, C and Plate, and an earth symbol at the base.",
+    source: "SEC Leaving Certificate Physics 2020 Ordinary Level, Q8 — © State Examinations Commission",
+  }),
 ];
