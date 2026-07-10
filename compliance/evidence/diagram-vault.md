@@ -175,6 +175,50 @@ tables and answer grids (all correctly rejected), leaving only occasional safety
 pictograms, apparatus/weather-station setups, a tree cross-section, an Ireland
 outline map and two data graphs across six years.
 
+### Final completeness sweep — probing every remaining uncovered subject
+
+After the LCA technical strands, a full sweep compared the topic-tag corpus (98
+subjects) against the vault's subject files. Every uncovered subject that could
+*plausibly* carry figures was PROBED (a recent-year extraction + agent verify)
+rather than assumed — the accreditation rule is that MISSING is acceptable but
+nothing diagram-bearing may be silently skipped. Results:
+
+**Newly added from the sweep (three subjects, full tagged ranges):**
+- **Politics and Society 25** (2018–2025, Higher + Ordinary) — genuine published
+  statistical infographics and charts used as documents-based-question stimuli
+  (CSO census, IOM/UNHCR migration data, EU-election turnout charts, SILC
+  poverty, Focus Ireland homelessness). Roughly 2–5 real data figures per paper;
+  the papers' many political cartoons, campaign posters, stock photos and
+  concept clip-art were all correctly rejected.
+- **LCA Mathematical Applications 29** (2015–2023) — real-world stimulus figures
+  (priced-item graphics, timetables, flight-price calendars, bills, an Ireland
+  map, labelled geometric diagrams, bar/pie charts, a heart-rate-zone graph). An
+  answer-booklet format whose dominant false positive is blank squared working
+  grids — all rejected — so yield is ~1–7 printed figures per paper.
+- **LCA Information & Communication Technology 10** (2021, 2022, 2025) — the
+  recurring Section 3 spreadsheet stimulus, database-table structures and
+  word-processing passages annotated with proofreading marks. Blank answer grids
+  and minimal retype-tables rejected.
+
+**Probed and confirmed HONEST ZERO (no full backfill warranted):**
+- **Music / JC Music** — score notation is rendered as music-font vector text the
+  detector does not surface as a figure region; the only candidate was a cover
+  page. No extractable figures through this pipeline.
+- **History** — its documents-question sources are prose extracts, documentary
+  photographs and political cartoons (all reject categories); the probe surfaced
+  only cover/back-cover furniture.
+- **Accounting** — 24 candidates across a HL+OL pair, every one a trial balance /
+  balance sheet / P&L / costing table. No charts, graphs or break-even diagrams
+  anywhere; a table of numbers is not a figure.
+- **LCA Active Leisure Studies** — entirely stock action photography (swimmers,
+  exercises, injuries) plus blank answer tables; no anatomical diagrams, court
+  markings or data graphics.
+
+This exhausts the plausibly-diagram-bearing subjects. What remains uncovered is
+languages, English, humanities (History/Classical Studies/Religious Education),
+the non-technical LCA vocational strands and JC language/humanities papers —
+none of which carry technical figures.
+
 ### Coverage status — every tagged paper with extractable diagrams is now in
 
 With this final wave, **every subject the topic-tag corpus covers has been
@@ -189,7 +233,11 @@ diagram-bearing content, and a few tagged JC year-slices (JC Home Economics
 2022, JC Business Studies 2023) whose paper PDFs are not present on the
 world-readable SEC corpus, so there is nothing to extract. Every added figure is
 agent-verified with an SEC `source`, so the integrity gate covers the whole
-corpus automatically. Maths Paper 1 (algebra/functions/finance) genuinely carries no
+corpus automatically. **The native corpus now stands at 2,706 figures across 33
+subject files** — after the full LCA technical-strand backfill and the final
+completeness sweep above, every subject the topic-tag corpus covers has either
+been extracted across its full tagged range or probed and confirmed to carry no
+extractable figures. Maths Paper 1 (algebra/functions/finance) genuinely carries no
 diagrams — those year-slices correctly yield zero.
 
 ## Next waves (planned)

@@ -49,6 +49,9 @@ import { LCA_TECHNOLOGY_FIGURES } from './figures/lca-technology';
 import { LCA_AGRICULTURE_HORTICULTURE_FIGURES } from './figures/lca-agriculture-horticulture';
 import { PHYSICAL_EDUCATION_FIGURES } from './figures/physical-education';
 import { AGRICULTURAL_ECONOMICS_FIGURES } from './figures/agricultural-economics';
+import { POLITICS_AND_SOCIETY_FIGURES } from './figures/politics-and-society';
+import { LCA_MATHEMATICAL_APPLICATIONS_FIGURES } from './figures/lca-mathematical-applications';
+import { LCA_INFORMATION_AND_COMMUNICATION_TECH_FIGURES } from './figures/lca-information-and-communication-tech';
 
 export const NATIVE_FIGURES: DiagramEntry[] = [
   ...BIOLOGY_FIGURES,
@@ -81,4 +84,7 @@ export const NATIVE_FIGURES: DiagramEntry[] = [
   ...LCA_AGRICULTURE_HORTICULTURE_FIGURES,
   ...PHYSICAL_EDUCATION_FIGURES,
   ...AGRICULTURAL_ECONOMICS_FIGURES,
+  ...POLITICS_AND_SOCIETY_FIGURES,
+  ...LCA_MATHEMATICAL_APPLICATIONS_FIGURES,
+  ...LCA_INFORMATION_AND_COMMUNICATION_TECH_FIGURES,
 ];
