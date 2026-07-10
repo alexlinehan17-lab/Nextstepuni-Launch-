@@ -116,15 +116,19 @@ file was regenerated from the full set of its verified year-slices (2022–2025)
 never overwritten with 2025 alone. Highlights: Physics & Chemistry, Mathematics
 (incl. Foundation level), DCG, JC Applied Technology, JC Wood Technology and JC
 Science all gained a fresh year of figures. The native corpus now stands at
-**~1,920 figures across 24 subject files** (after 2011–2021 backfill for
-Biology, Chemistry, Physics, Geography, DCG, Construction, Engineering,
+**~2,020 figures across 24 subject files** (after a complete 2010–2021 backfill
+for Biology, Chemistry, Physics, Geography, DCG, Construction, Engineering,
 Agricultural Science and Physics & Chemistry, plus filling Biology's 2022–2023
-gap). The richest subjects (Geography 304, Biology 225, Physics & Chemistry 177,
-DCG 172, Construction 142, Chemistry 139, Engineering 120, Physics 88) now span
-**2011–2025**. 2020 was a COVID-disrupted year — several papers
-were figure-light and correctly yielded few or no diagrams. Older physics and
-agricultural-science HL papers are text/photo-heavy and correctly yield little;
-MISSING is acceptable, a wrong crop is not.
+gap). The richest subjects (Geography 338, Biology 235, Physics & Chemistry 185,
+DCG 185, Construction 148, Chemistry 143, Engineering 135, Physics 93) now span
+the **full tagged archive, 2010–2025** — 2010 is the earliest year the
+topic-tag corpus reaches, so for these eight subjects every extractable diagram
+from every tagged paper is now in the vault. 2020 was a COVID-disrupted year —
+several papers were figure-light and correctly yielded few or no diagrams. Older
+physics and agricultural-science HL papers are text/photo-heavy and correctly
+yield little; older scanned papers also clip labels on some apparatus crops,
+which verify agents reject as half-cropped. MISSING is acceptable, a wrong crop
+is not.
 
 ## Next waves (planned)
 
