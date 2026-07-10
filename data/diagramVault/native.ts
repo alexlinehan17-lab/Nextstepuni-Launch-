@@ -27,6 +27,13 @@ import { BUSINESS_FIGURES } from './figures/business';
 import { MATHEMATICS_FIGURES } from './figures/mathematics';
 import { APPLIED_MATHEMATICS_FIGURES } from './figures/applied-mathematics';
 import { DESIGN_AND_COMMUNICATION_GRAPHICS_FIGURES } from './figures/design-and-communication-graphics';
+import { CONSTRUCTION_STUDIES_FIGURES } from './figures/construction-studies';
+import { ENGINEERING_FIGURES } from './figures/engineering';
+import { TECHNOLOGY_FIGURES } from './figures/technology';
+import { ECONOMICS_FIGURES } from './figures/economics';
+import { AGRICULTURAL_SCIENCE_FIGURES } from './figures/agricultural-science';
+import { HOME_ECONOMICS_S_AND_S_FIGURES } from './figures/home-economics-s-and-s';
+import { COMPUTER_SCIENCE_FIGURES } from './figures/computer-science';
 
 export const NATIVE_FIGURES: DiagramEntry[] = [
   ...BIOLOGY_FIGURES,
@@ -37,4 +44,11 @@ export const NATIVE_FIGURES: DiagramEntry[] = [
   ...MATHEMATICS_FIGURES,
   ...APPLIED_MATHEMATICS_FIGURES,
   ...DESIGN_AND_COMMUNICATION_GRAPHICS_FIGURES,
+  ...CONSTRUCTION_STUDIES_FIGURES,
+  ...ENGINEERING_FIGURES,
+  ...TECHNOLOGY_FIGURES,
+  ...ECONOMICS_FIGURES,
+  ...AGRICULTURAL_SCIENCE_FIGURES,
+  ...HOME_ECONOMICS_S_AND_S_FIGURES,
+  ...COMPUTER_SCIENCE_FIGURES,
 ];
