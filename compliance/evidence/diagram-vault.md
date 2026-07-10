@@ -148,6 +148,22 @@ Pre-Project-Maths years (2012 and earlier) are thin — the older maths papers
 carry few printed figures — and several year-slices yield zero, which is the
 honest result.
 
+### New diagram subjects added (2024/2023/2019 first waves)
+
+A completeness sweep (comparing the topic-tag corpus against the vault's subject
+files) surfaced diagram-bearing subjects that had never been extracted: the LCA
+technical strands and two LC subjects. Recent-year probes confirmed real yields
+and these are now in the vault (native.ts wired for each new subject):
+**LCA Technology 11, LCA Graphics & Construction Studies 8, LCA Engineering 7**
+(genuine CAD, orthographic, mechanism, circuit and net drawings), **LCA
+Agriculture/Horticulture 3**, **Physical Education 4** (WHO-guideline
+infographics and energy-system/doping graphs — PE is an answer-booklet paper,
+so most extracted crops are blank grids) and **Agricultural Economics 1** (a
+supply-curve graph — the subject is otherwise table/ledger heavy). **LCA Crafts
+& Design was probed and correctly yielded zero** — its papers are photographic
+and poster stimuli, not technical drawings. Backfill of earlier years for the
+three high-yield LCA technical strands follows.
+
 ### Coverage status — every tagged paper with extractable diagrams is now in
 
 With this final wave, **every subject the topic-tag corpus covers has been
