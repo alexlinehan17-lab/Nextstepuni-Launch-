@@ -794,4 +794,20 @@ export const AGRICULTURAL_SCIENCE_FIGURES: DiagramEntry[] = [
     alt: "Photograph of a fabric net bag attached to a rigid rim and handle, a piece of apparatus used in habitat study.",
     source: "SEC Leaving Certificate Agricultural Science 2015 Ordinary Level — © State Examinations Commission",
   }),
+  nf({
+    subjectId: "agricultural-science", subjectLabel: "Agricultural Science",
+    level: "ordinary", year: 2014,
+    topicLabel: "Stage of mitosis", questionRef: null,
+    src: "/exam-figures/agricultural-science/agricultural-science-2014-ol-mitosis-stage-diagram.png",
+    alt: "Diagram of a single cell during mitosis, showing spindle fibres running between two poles and chromosomes aligned across the middle of the cell.",
+    source: "SEC Leaving Certificate Agricultural Science 2014 Ordinary Level — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "agricultural-science", subjectLabel: "Agricultural Science",
+    level: "ordinary", year: 2014,
+    topicLabel: "Crop pest adult and larva", questionRef: "2014 OL Q4",
+    src: "/exam-figures/agricultural-science/agricultural-science-2014-ol-q4-crop-pest-adult-larva.png",
+    alt: "Line drawings of a common crop pest, showing the winged adult insect labelled \"Adult\" and its elongated segmented grub labelled \"Larva\".",
+    source: "SEC Leaving Certificate Agricultural Science 2014 Ordinary Level, Q4 — © State Examinations Commission",
+  }),
 ];
