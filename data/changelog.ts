@@ -19,6 +19,16 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: '2026-07-answer-architect',
+    date: 'July 2026',
+    title: 'Answer Architect — the skeleton of a top answer',
+    lines: [
+      'New tool: for real exam questions, see the shape of a full-marks answer and every beat it is built from — in order.',
+      'Each beat shows what to deliver and exactly what earns the marks, straight from the SEC scheme — not a model answer, the mark-earning bones.',
+      'Starting with Business, Biology, Chemistry, Physics, Economics, Agricultural Science and Home Economics.',
+    ],
+  },
+  {
     id: '2026-07-diagram-vault',
     date: 'July 2026',
     title: 'Diagram Vault — the exam diagrams, decoded',

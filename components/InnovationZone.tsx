@@ -12,7 +12,7 @@ import { FileSearch,
     ArrowLeft,
     Lock, Compass, Target,
     Settings, CalendarDays, Calculator, GitBranch, Rocket,
-    Map, ScanSearch, Milestone, Waypoints, Highlighter, Users, Briefcase, Sunrise, Mic, Stamp, Images
+    Map, ScanSearch, Milestone, Waypoints, Highlighter, Users, Briefcase, Sunrise, Mic, Stamp, Images, ListChecks
 } from 'lucide-react';
 import { doc, setDoc, getDoc, increment } from 'firebase/firestore';
 import { db } from '../firebase';
@@ -39,6 +39,7 @@ const CatchUpLane = lazy(() => import('./CatchUpLane'));
 const CommandWordReflex = lazy(() => import('./CommandWordReflex'));
 const PaperTrail = lazy(() => import('./PaperTrail'));
 const DiagramVault = lazy(() => import('./DiagramVault/DiagramVault'));
+const AnswerArchitect = lazy(() => import('./AnswerArchitect/AnswerArchitect'));
 const HowTheyDidIt = lazy(() => import('./HowTheyDidIt'));
 const CareerPaths = lazy(() => import('./CareerPaths'));
 const YourPossibleLife = lazy(() => import('./YourPossibleLife'));
@@ -92,6 +93,7 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   'catch-up-lane':   { themeColor: '#0E9AA8', eyebrow: 'Catch up · Recovery',         subtitle: 'Missed some classes? Pick a subject and get caught up one quick topic at a time — no catch-up is too small.', showHeader: true  },
   'paper-trail':     { themeColor: '#33658A', eyebrow: 'Understand · Exam archive',   subtitle: 'Every past paper and marking scheme, free — your subjects, your level, three taps.', showHeader: true },
   'diagram-vault':   { themeColor: '#F26B1F', eyebrow: 'Understand · Exam diagrams',  subtitle: 'Every diagram, graph, map and chart that has come up — cropped from the paper and decoded.', showHeader: true },
+  'answer-architect': { themeColor: '#F26B1F', eyebrow: 'Understand · Top-answer skeletons', subtitle: 'The mark-earning skeleton of a top answer — the beats a full-marks answer hits, in order, from the SEC scheme.', showHeader: true },
   'command-word-reflex': { themeColor: '#6366F1', eyebrow: 'Technique · Exam skills', subtitle: 'Half of exam technique is reading the question right. Spot the command word in real questions and learn what it’s really asking — and the trap that loses marks.', showHeader: true },
   'how-they-did-it':  { themeColor: '#0E7C6B', eyebrow: 'Mindset · Real stories', subtitle: 'Real people who started where you are — money tight, learning differently, new to the country, first in the family — and the actual moves they made.', showHeader: true },
   'career-paths':     { themeColor: '#0E7C6B', eyebrow: 'Understand · Career discovery', subtitle: 'Real careers — what they pay, the day-to-day, the skills, and the courses that lead there.', showHeader: true },
@@ -584,6 +586,15 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             component: <DiagramVault studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} />,
         },
         {
+            id: 'answer-architect', title: 'Answer Architect', description: 'The mark-earning skeleton of a top answer — the beats a full-marks answer is built from, in order.', icon: ListChecks, needsProfile: false,
+            curriculum: 'senior' as const,
+            tag: 'Top-answer skeletons', accentHex: '#F26B1F', gridClass: 'md:col-span-2',
+            iconBg: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-700 dark:text-orange-300',
+            accentBarColor: 'bg-orange-500', tagBg: 'bg-orange-100 dark:bg-orange-900/30', tagText: 'text-orange-700 dark:text-orange-400',
+            hoverBorder: 'hover:border-orange-400/50 dark:hover:border-orange-500/40',
+            component: <AnswerArchitect studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} />,
+        },
+        {
             id: 'oral-trainer', title: 'Irish Oral Trainer', description: 'Rehearse the Irish oral out loud, record yourself, and track your readiness on every part.', icon: Mic, needsProfile: false,
             curriculum: 'senior' as const,
             tag: 'Speaking exam', accentHex: '#4C8C5E', gridClass: 'md:col-span-2',
@@ -656,6 +667,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         'catch-up-lane': 'plan',
         'paper-trail': 'understand',
         'diagram-vault': 'understand',
+        'answer-architect': 'understand',
         'command-word-reflex': 'understand',
         'oral-trainer': 'understand',
         'examiners-chair': 'understand',
