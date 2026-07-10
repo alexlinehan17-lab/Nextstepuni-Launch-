@@ -31,10 +31,33 @@ documents held in `/examiner-reports/` (PDF + markdown), not CrossRef/DOI record
 | Wave | Subject / papers | Source document(s) | Verification |
 |------|------------------|--------------------|--------------|
 | 1 (golden) | Business 2024 HL — 12 Section-1 shorts + 8 long questions (EV + IV mirror), 28 entries | `examiner-reports/business/2024-marking-scheme.md` | Hand-authored; every notation transcribed from the scheme and every sum checked line-by-line against its "Available Marks"; CI gates green |
-| 2 | biology, geography (Part One), chemistry, physics, agricultural-science, business 2025 HL+OL | respective `examiner-reports/<subject>/*-marking-scheme.md` | Agent-authored under wave-1 rules; CI gates + human spot-checks of notation fidelity against the scheme markdown before shipping (recorded below when merged) |
+| 2 | business 2025 HL+OL, physics 2023+2025 HL, chemistry 2024+2025 HL, agricultural-science 2023+2024 HL (EV + IV mirrors) | respective `examiner-reports/<subject>/*-marking-scheme.md` | Agent-authored under wave-1 rules; CI gates + notation spot-checks; shipped |
+| 2b | biology 2025 HL+OL (68 entries), geography Part One 2024 HL + 2025 OL (36 entries), EV + IV mirrors | `biology/2025-{hl,ol}-marking-scheme.md`; `geography/2024-marking-scheme.md`, `geography/2025-ol-marking-scheme.md` | Booklet/keying re-verified against the served Topic Vault tags before registering (see keying notes below); CI gates green; 1735 tests pass |
 
-Pitfall sources in use: Chief Examiner's Report 2015 (Business HL), pp.14 & 17 —
-the same page-cited insights surfaced by `data/paperTrail/examinerInsights.ts`.
+**Keying notes (wave 2b — the checks that matter for "a wrong lens is worse than a missing one"):**
+
+- **Biology booklet split** — each sitting is served as two booklets. The `…LP038…`
+  booklet carries vault `n 1–10` = scheme Q1–Q10 (Sections A + B); the `…LP040…`
+  booklet carries `n 1–7` = scheme Q11–Q17 (Section C). Confirmed against the tags by
+  three unambiguous topic matches on the LP040 booklet (n2 Genetics ↔ Q12, n4 Responses
+  to Stimuli ↔ Q14, n5 Ecology ↔ Q15). IV papers mirror EV under the same scheme.
+- **Geography is two booklets, and the lens covers Part One only.** Part One shorts are
+  served on the `…LP042…` (p1) booklet; Part Two structured questions on `…LP043…` (p2).
+  An earlier draft mis-keyed the Part One lens to the LP043 booklet — that would have
+  shown Part One 8-mark marking on Part Two questions (a wrong-crop error), so it was
+  corrected to LP042 before registering.
+- **Geography 2025 HL Part One is deliberately omitted.** The Topic Vault only tags the
+  2025 HL Part Two booklet (LC005ALP043EV); the Part One booklet (LC005ALP042EV) is not
+  served, so there is no vault question to attach the (already-authored) Part One marks
+  to. Held back rather than mis-keyed — a missing lens is acceptable, a wrong one is not.
+
+Pitfall sources in use:
+- Chief Examiner's Report 2015 (Business HL), pp.14 & 17 — surfaced by `data/paperTrail/examinerInsights.ts`.
+- Chief Examiner's Report 2012 (Geography HL), p.23 — Part One short-answer commentary
+  (Q1 Glacial Landforms: arête/pyramidal peak/lateral moraine confusion; Q6 Regions:
+  brief definitions in part (ii)), filed at `examiner-reports/geography/2012-chief-examiner.md`.
+- SEC Marking Scheme 2025 Biology HL (p.4) and OL (pp.4–5) — the Section-A surplus rule
+  and the Q16/Q17 best-two-of-four rule, printed verbatim in the schemes themselves.
 
 ## Presentation honesty
 

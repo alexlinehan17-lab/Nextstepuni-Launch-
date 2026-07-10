@@ -25,19 +25,26 @@
  * the vault tags' n = 1..12 are the PART ONE short-answer questions, not the
  * Part Two structured questions. This lens therefore covers ONLY Part One.
  *
- * Keys (year/level/lang/fileid/n) match the Topic Vault tags exactly:
- *  - 2024 HL (LC005ALP043EV + IV mirror) Q1–12 — Part One shorts, 8m each.
- *  - 2025 HL (LC005ALP043EV + IV mirror) Q1–12 — Part One shorts, 8m each.
+ * Keys (year/level/lang/fileid/n) match the Topic Vault tags exactly. The paper
+ * is served as two booklets — Part One shorts (…LP042…, paperKey "p1") and
+ * Part Two structured questions (…LP043…, paperKey "p2"). This lens covers Part
+ * One only, so it keys to the LP042 booklet:
+ *  - 2024 HL (LC005ALP042EV + IV mirror) Q1–12 — Part One shorts, 8m each.
  *  - 2025 OL (LC005GLP042EV, no IV tag) Q1–12 — Part One shorts, 10m each.
- * Deliberately omitted: the 2025 OL LC005GLP043EV tag run (its 12 questions
- * are the Part Two structured questions — out of this lens's Part One scope),
- * and 2024 OL / earlier years (no marking scheme filed in examiner-reports/).
+ * Deliberately omitted:
+ *  - 2025 HL Part One — the Topic Vault only tags the 2025 HL Part Two booklet
+ *    (LC005ALP043EV); the Part One booklet (LC005ALP042EV) is not served, so
+ *    there is no vault question to attach the Part One marks to. Keying it to
+ *    the served Part Two booklet would show Part One marks on Part Two
+ *    questions (a wrong-crop error), so the authored 2025 HL Part One lens is
+ *    held back until the Part One booklet is tagged.
+ *  - the LP043 Part Two runs (out of this lens's Part One scope) and 2024 OL /
+ *    earlier years (no marking scheme filed in examiner-reports/).
  */
 
 import { type QuestionLens, type SubjectLens } from './types';
 
 const CITE24 = (q: string) => `SEC Marking Scheme 2024, Geography Higher Level, ${q}`;
-const CITE25 = (q: string) => `SEC Marking Scheme 2025, Geography Higher Level, ${q}`;
 const CITE25OL = (q: string) => `SEC Marking Scheme 2025, Geography Ordinary Level, ${q}`;
 
 // The IV paper is the same exam marked by the same scheme — mirror EV entries.
@@ -55,7 +62,7 @@ const hl24 = (n: string, notation: string, decoded: string): QuestionLens => ({
   year: 2024,
   level: 'higher',
   lang: 'ev',
-  fileid: 'LC005ALP043EV.pdf',
+  fileid: 'LC005ALP042EV.pdf',
   n,
   totalMarks: 8,
   headline: HL_HEADLINE,
@@ -134,89 +141,6 @@ const HL_2024: QuestionLens[] = [
   hl24('12', 'C 2m · B 2m · A 2m · D 2m', 'Four letters, 2 marks each.'),
 ];
 
-// ── 2025 Higher Level — Part One (12 short answers, 8 marks each) ────────────
-
-const hl25 = (n: string, notation: string, decoded: string): QuestionLens => ({
-  year: 2025,
-  level: 'higher',
-  lang: 'ev',
-  fileid: 'LC005ALP043EV.pdf',
-  n,
-  totalMarks: 8,
-  headline: HL_HEADLINE,
-  parts: [{ part: '', task: 'Short-answer question', notation, decoded, marks: 8 }],
-  cite: CITE25(`Part One Q${n}`),
-});
-
-const HL_2025: QuestionLens[] = [
-  {
-    ...hl25(
-      '1',
-      '(i) Convection Current 2 marks · (ii) Subduction 2 marks · (iii) Ocean Trench 2 marks · (iv) Lithosphere 2 marks',
-      'Four terms identified, 2 marks each.'
-    ),
-    pitfall: {
-      text: 'On the equivalent plate-tectonics short question the Chief Examiner reports candidates had difficulty identifying the asthenosphere — each named feature here carries its own 2 marks.',
-      cite: "Chief Examiner's Report 2012 (Geography HL), p.23",
-    },
-  },
-  hl25(
-    '2',
-    '(i) B 1 mark · D 1 mark · A 1 mark · C 1 mark · (ii) (a) True 2 marks · (b) True 2 marks',
-    'Part (i): four letters, 1 mark each. Part (ii): two true/false answers, 2 marks each.'
-  ),
-  hl25(
-    '3',
-    '(i) A 1 mark · D 1 mark · B 1 mark · C 1 mark · (ii) Valid answer 2 marks · (iii) Valid answer 2 marks',
-    'Part (i): four letters, 1 mark each. Parts (ii) and (iii): a valid answer, 2 marks each.'
-  ),
-  hl25(
-    '4',
-    '(i) @ 1 mark each — table: Sand · Sandstone · Quartzite · Molten Rock · Basalt · Schist · (ii) Valid answer 1 + 1 mark',
-    'Part (i): the six table entries, 1 mark each. Part (ii): a valid answer marked 1 + 1.'
-  ),
-  hl25(
-    '5',
-    '(i) D 1 mark · A 1 mark · B 1 mark · C 1 mark · (ii) Valid answer 2 + 2 marks',
-    'Part (i): four letters, 1 mark each. Part (ii): a valid answer marked 2 + 2.'
-  ),
-  hl25(
-    '6',
-    '@ 1 mark each — table: Dingle · Co. Kerry · Ruhr Valley · Germany · Wicklow Mountains · Leinster · Paris Basin · France',
-    'The eight table entries, 1 mark each.'
-  ),
-  hl25(
-    '7',
-    '(i) M 123 432 2 marks · (ii) 6 - 7 (km²) 2 marks · (iii) 7.8 (km) 2 marks · (iv) Irish Speaking Area 2 marks',
-    'Four answers, 2 marks each.'
-  ),
-  hl25(
-    '8',
-    '(i) Owenriff river 2 marks · (ii) M 122 427 2 marks · (iii) N59 2 marks · (iv) North East 2 marks',
-    'Four answers, 2 marks each.'
-  ),
-  hl25(
-    '9',
-    'A Centre foreground 2 marks · B Right background 2 marks · C Left foreground 2 marks · D Left middleground 2 marks',
-    'Four photograph positions, 2 marks each.'
-  ),
-  hl25(
-    '10',
-    '(i) 1013 2 marks · (ii) False 2 marks · (iii) Isobars 2 marks · (iv) Occluded 2 marks',
-    'Four answers, 2 marks each.'
-  ),
-  hl25(
-    '11',
-    '(i) Australian 2 marks · (ii) 1,034,132 2 marks · (iii) 34.4 (%) 2 marks · (iv) Valid answer 2 marks',
-    'Four answers, 2 marks each.'
-  ),
-  hl25(
-    '12',
-    '(i) 3 (%) 2 marks · (ii) 13 (%) 2 marks · (iii) True 2 marks · (iv) Valid answer 1 + 1 mark',
-    'Parts (i)–(iii): 2 marks each. Part (iv): a valid answer marked 1 + 1.'
-  ),
-];
-
 // ── 2025 Ordinary Level — Part One (12 short answers, 10 marks each) ─────────
 
 const ol25 = (n: string, notation: string, decoded: string): QuestionLens => ({
@@ -286,9 +210,7 @@ const GEOGRAPHY_LENS: SubjectLens = {
   subjectId: 'geography',
   entries: [
     ...HL_2024,
-    ...mirrorIV(HL_2024, 'LC005ALP043IV.pdf'),
-    ...HL_2025,
-    ...mirrorIV(HL_2025, 'LC005ALP043IV.pdf'),
+    ...mirrorIV(HL_2024, 'LC005ALP042IV.pdf'),
     ...OL_2025,
   ],
 };

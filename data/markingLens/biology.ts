@@ -9,8 +9,8 @@
  *    (SEC Marking Scheme 2025, Biology Higher Level — main sitting).
  *  - examiner-reports/biology/2025-ol-marking-scheme.md
  *    (SEC Marking Scheme 2025, Biology Ordinary Level — main sitting).
- * Pitfalls cite examiner-reports/biology/2023-insights.md and
- * examiner-reports/biology/2025-ol-insights.md (page-cited marking behaviour).
+ * Pitfalls cite the Section-A surplus rule and the best-two-options rule as
+ * printed verbatim in the filed 2025 HL and OL marking schemes (page-cited).
  *
  * Every notation below is transcribed from those schemes in the SEC `n(m)`
  * points grammar (e.g. "8(3)" = eight correct points, 3 marks each). Each
@@ -40,16 +40,16 @@ const mirrorIV = (entries: QuestionLens[]): QuestionLens[] =>
 // ── Documented, page-cited pitfalls (question-type matches only) ─────────────
 
 const SURPLUS_HL: LensPitfall = {
-  text: 'In Section A a surplus wrong answer cancels a correct one — padding a part with an extra, incorrect item actively loses a mark you had already earned.',
-  cite: 'Biology 2023 (Higher Level) Examiner Insights, p.4 (Section-A surplus rule)',
+  text: 'In Section A a surplus wrong answer cancels a correct one — padding a part with an extra, incorrect item actively loses a mark you had already earned. The scheme’s own worked example: "Chitin, lignin" scores 4 − 4 = 0.',
+  cite: 'SEC Marking Scheme 2025, Biology Higher Level, p.4 (Section A surplus rule)',
 };
 const SURPLUS_OL: LensPitfall = {
-  text: 'In Section A a surplus wrong answer cancels a correct one — adding an extra incorrect item (e.g. "…, aluminium") drops a 3(3) to 2(3). Over-answering is penalised.',
-  cite: 'Biology 2025 (Ordinary Level) Examiner Insights, p.5 (Section-A surplus rule)',
+  text: 'In Section A a surplus wrong answer cancels a correct one — the scheme’s worked example drops a five-element list to 2(3) when "aluminium" is added ("Carbon, hydrogen, oxygen, calcium, aluminium"). Over-answering is penalised.',
+  cite: 'SEC Marking Scheme 2025, Biology Ordinary Level, pp.4–5 (Section A surplus rule)',
 };
 const BEST2_OL: LensPitfall = {
   text: 'Q16/Q17 are "any two of (a)–(d)", 30 marks each — only your best two sub-parts score, so spreading effort thinly across all four wastes time the best-2 rule will not reward.',
-  cite: 'Biology 2025 (Ordinary Level) Examiner Insights, pp.27, 31',
+  cite: 'SEC Marking Scheme 2025, Biology Ordinary Level, Q16–Q17 (any two of (a)–(d))',
 };
 
 // ════════════════════════════════════════════════════════════════════════════

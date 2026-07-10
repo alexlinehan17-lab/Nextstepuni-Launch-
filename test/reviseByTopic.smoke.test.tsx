@@ -10,7 +10,7 @@
  * chips, per-level counts, filter-aware header) against render regressions.
  */
 import { describe, test, expect, beforeEach, vi } from 'vitest';
-import { render, screen, fireEvent, within } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import ReviseByTopic from '@/components/PaperTrail/ReviseByTopic';
 import { taggedSubjects, topicsForSubject } from '@/components/PaperTrail/topics';
 
