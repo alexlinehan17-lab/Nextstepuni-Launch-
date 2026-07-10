@@ -34,6 +34,12 @@ documents held in `/examiner-reports/` (PDF + markdown), not CrossRef/DOI record
 | 2 | business 2025 HL+OL, physics 2023+2025 HL, chemistry 2024+2025 HL, agricultural-science 2023+2024 HL (EV + IV mirrors) | respective `examiner-reports/<subject>/*-marking-scheme.md` | Agent-authored under wave-1 rules; CI gates + notation spot-checks; shipped |
 | 2b | biology 2025 HL+OL (68 entries), geography Part One 2024 HL + 2025 OL (36 entries), EV + IV mirrors | `biology/2025-{hl,ol}-marking-scheme.md`; `geography/2024-marking-scheme.md`, `geography/2025-ol-marking-scheme.md` | Booklet/keying re-verified against the served Topic Vault tags before registering (see keying notes below); CI gates green; 1735 tests pass |
 | 2c | economics 2025 OL + 2023 OL (64 entries: Q1–16 each year, EV + IV mirror) | `economics/2025-ol-marking-scheme.md/.pdf`, `economics/2023-ol-marking-scheme.md/.pdf` | The prose scheme's Max-Mark column does not bind to its parts in the flattened markdown, so the part↔mark ladder was extracted with **PyMuPDF `find_tables()`** off the source PDF (Section A = 12 marks each; Section B = 75 = (a)+(b)+(c) with printed per-part totals). Every internal notation and every question total independently re-verified against the extraction before registering; single booklet, so not booklet-ambiguous. CI gates green |
+| 2d | home-economics S&S 2025 HL + 2024 HL + 2025 OL + 2024 OL (152 entries: 14 Section-A shorts + 5 Section-B longs per paper, EV + IV mirror) | `home-economics/2025-marking-scheme.md/.pdf`, `2024-…`, `2025-ol-…`, `2024-ol-…` | Two-booklet split solved independently against the tags before authoring (the first attempt stalled on exactly this): **LP014 = Section A** (14 short questions, 6 marks each), **LP039 = Section B** (Q1 = 80, Q2–5 = 50). Notation is the scheme's additive "N points @ M marks (graded M:…:0)" tokens, verbatim. Both booklets share n1–5, so all 8 home-ec booklets are on the booklet-safety gate's verified list (gate 5). Sums, keys and the LP014→Section-A / LP039→Section-B direction all re-verified; CI gates green |
+
+**Home Economics is the last cleanly-authorable subject from the currently filed
+schemes.** With it, Marking Lens covers **8 subjects**; the remaining filed
+subjects are ruled out for the reasons in "Coverage ceiling" above (grade-banded,
+or no scheme∩tag overlap).
 
 **Keying notes (wave 2b — the checks that matter for "a wrong lens is worse than a missing one"):**
 

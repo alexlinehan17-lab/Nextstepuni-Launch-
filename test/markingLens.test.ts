@@ -110,6 +110,12 @@ describe('Marking Lens integrity', () => {
     'biology|LC025GLP038IV.pdf', 'biology|LC025GLP040IV.pdf',
     'geography|LC005ALP042EV.pdf', 'geography|LC005ALP042IV.pdf',
     'geography|LC005GLP042EV.pdf',
+    // Home Economics: LP014 = Section A (14 short questions, 6 marks each),
+    // LP039 = Section B (long questions, Q1=80 / Q2–5=50). They share n1–5.
+    'home-economics-s-and-s|LC098ALP014EV.pdf', 'home-economics-s-and-s|LC098ALP039EV.pdf',
+    'home-economics-s-and-s|LC098ALP014IV.pdf', 'home-economics-s-and-s|LC098ALP039IV.pdf',
+    'home-economics-s-and-s|LC098GLP014EV.pdf', 'home-economics-s-and-s|LC098GLP039EV.pdf',
+    'home-economics-s-and-s|LC098GLP014IV.pdf', 'home-economics-s-and-s|LC098GLP039IV.pdf',
   ]);
 
   it('booklet-ambiguous entries use only explicitly verified booklets', () => {
