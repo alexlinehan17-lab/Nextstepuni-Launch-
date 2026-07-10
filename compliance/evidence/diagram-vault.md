@@ -153,11 +153,16 @@ honest result.
 With this final wave, **every subject the topic-tag corpus covers has been
 extracted across its entire tagged year range** (2010–2025 for the LC diagram
 subjects that reach that far back; 2020–2025 for Computer Science; 2022–2025 for
-Economics and Home Economics; the JC subjects across their tagged ranges). What
-remains uncovered is only what genuinely has no extractable figure: text/photo
-papers, blank answer booklets, and any subject with no diagram-bearing content.
-Every added figure is agent-verified with an SEC `source`, so the integrity gate
-covers the whole corpus automatically. Maths Paper 1 (algebra/functions/finance) genuinely carries no
+Economics and Home Economics; the JC subjects across their tagged ranges,
+including JC Science 2019 — the only pre-2022 JC year with a tagged, fetchable
+paper). The native corpus now stands at **~2,300 figures**. What remains
+uncovered is only what genuinely has no extractable figure or no fetchable
+source: text/photo papers, blank answer booklets, subjects with no
+diagram-bearing content, and a few tagged JC year-slices (JC Home Economics
+2022, JC Business Studies 2023) whose paper PDFs are not present on the
+world-readable SEC corpus, so there is nothing to extract. Every added figure is
+agent-verified with an SEC `source`, so the integrity gate covers the whole
+corpus automatically. Maths Paper 1 (algebra/functions/finance) genuinely carries no
 diagrams — those year-slices correctly yield zero.
 
 ## Next waves (planned)
