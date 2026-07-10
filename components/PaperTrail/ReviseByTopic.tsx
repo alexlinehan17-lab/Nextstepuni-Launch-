@@ -323,7 +323,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
         <ArrowLeft size={15} /> Paper Trail
       </button>
       <h2 className="text-2xl font-semibold mb-1 flex items-center gap-2" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>
-        <Layers size={20} style={{ color: ACCENT }} /> Revise by topic
+        <Layers size={20} style={{ color: ACCENT }} /> Topic Vault
       </h2>
       <p className="text-[13.5px] leading-relaxed mb-5" style={{ color: '#5a5550' }}>
         Every past-paper question, sorted by topic. Weak on one thing? Drill every question on it across every year — with the marking scheme one tap away.
