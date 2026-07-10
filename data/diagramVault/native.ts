@@ -26,6 +26,7 @@ import { CHEMISTRY_FIGURES } from './figures/chemistry';
 import { BUSINESS_FIGURES } from './figures/business';
 import { MATHEMATICS_FIGURES } from './figures/mathematics';
 import { APPLIED_MATHEMATICS_FIGURES } from './figures/applied-mathematics';
+import { DESIGN_AND_COMMUNICATION_GRAPHICS_FIGURES } from './figures/design-and-communication-graphics';
 
 export const NATIVE_FIGURES: DiagramEntry[] = [
   ...BIOLOGY_FIGURES,
@@ -35,4 +36,5 @@ export const NATIVE_FIGURES: DiagramEntry[] = [
   ...BUSINESS_FIGURES,
   ...MATHEMATICS_FIGURES,
   ...APPLIED_MATHEMATICS_FIGURES,
+  ...DESIGN_AND_COMMUNICATION_GRAPHICS_FIGURES,
 ];
