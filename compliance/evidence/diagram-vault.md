@@ -116,12 +116,12 @@ file was regenerated from the full set of its verified year-slices (2022–2025)
 never overwritten with 2025 alone. Highlights: Physics & Chemistry, Mathematics
 (incl. Foundation level), DCG, JC Applied Technology, JC Wood Technology and JC
 Science all gained a fresh year of figures. The native corpus now stands at
-**~1,860 figures across 24 subject files** (after 2012–2021 backfill for
+**~1,920 figures across 24 subject files** (after 2011–2021 backfill for
 Biology, Chemistry, Physics, Geography, DCG, Construction, Engineering,
 Agricultural Science and Physics & Chemistry, plus filling Biology's 2022–2023
-gap). The richest subjects (Geography 283, Biology 214, Physics & Chemistry 172,
-DCG 167, Construction 140, Chemistry 134, Engineering 107, Physics 85) now span
-**2012–2025**. 2020 was a COVID-disrupted year — several papers
+gap). The richest subjects (Geography 304, Biology 225, Physics & Chemistry 177,
+DCG 172, Construction 142, Chemistry 139, Engineering 120, Physics 88) now span
+**2011–2025**. 2020 was a COVID-disrupted year — several papers
 were figure-light and correctly yielded few or no diagrams. Older physics and
 agricultural-science HL papers are text/photo-heavy and correctly yield little;
 MISSING is acceptable, a wrong crop is not.

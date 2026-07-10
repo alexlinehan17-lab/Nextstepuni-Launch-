@@ -1130,4 +1130,20 @@ export const CONSTRUCTION_STUDIES_FIGURES: DiagramEntry[] = [
     alt: "Pictorial sketch of a rectangular dining table with a plank top and four square legs joined by rails, drawn from an oblique viewpoint.",
     source: "SEC Leaving Certificate Construction Studies 2012 Ordinary Level, Q9 — © State Examinations Commission",
   }),
+  nf({
+    subjectId: "construction-studies", subjectLabel: "Construction Studies",
+    level: "higher", year: 2011,
+    topicLabel: "House elevation and floor plan (thirty-year-old house)", questionRef: "2011 HL Q3",
+    src: "/exam-figures/construction-studies/construction-studies-2011-hl-q3-house-elevation-floor-plan.png",
+    alt: "Front elevation of a single-storey house with a pitched roof and chimney, above a ground floor plan showing room layouts with furniture, doors and windows. A section line marked A-A crosses the plan.",
+    source: "SEC Leaving Certificate Construction Studies 2011 Higher Level, Q3 — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "construction-studies", subjectLabel: "Construction Studies",
+    level: "higher", year: 2011,
+    topicLabel: "House elevation and ground floor plan", questionRef: "2011 HL Q6",
+    src: "/exam-figures/construction-studies/construction-studies-2011-hl-q6-house-elevation-ground-floor-plan.png",
+    alt: "Front elevation of a dormer-style house with roof windows, above a ground floor plan showing rooms with furniture, a staircase, doors and windows, with directional arrows at the left side of the plan.",
+    source: "SEC Leaving Certificate Construction Studies 2011 Higher Level, Q6 — © State Examinations Commission",
+  }),
 ];

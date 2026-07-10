@@ -690,4 +690,28 @@ export const PHYSICS_FIGURES: DiagramEntry[] = [
     alt: "Circuit diagram showing two copper electrodes immersed in copper sulfate solution in a container. The electrodes are connected to a circuit containing a battery, a meter labelled X, a variable resistor labelled Y, and a meter labelled Z. Labels point to the copper electrodes and the copper sulfate solution.",
     source: "SEC Leaving Certificate Physics 2012 Ordinary Level, Q4 — © State Examinations Commission",
   }),
+  nf({
+    subjectId: "physics", subjectLabel: "Physics",
+    level: "higher", year: 2011,
+    topicLabel: "Diffraction grating experiment data", questionRef: null,
+    src: "/exam-figures/physics/physics-2011-hl-diffraction-grating-angle-data-table.png",
+    alt: "A data table recording angles theta in degrees between a central bright image and diffracted images: 30.98 for the 2nd image to the left, 14.90 for the 1st image to the left, 14.81 for the 1st image to the right, and 31.01 for the 2nd image to the right.",
+    source: "SEC Leaving Certificate Physics 2011 Higher Level — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "physics", subjectLabel: "Physics",
+    level: "higher", year: 2011,
+    topicLabel: "Radioisotope paper-thickness monitoring system", questionRef: null,
+    src: "/exam-figures/physics/physics-2011-hl-paper-thickness-sr90-detector-diagram.png",
+    alt: "A schematic diagram of a paper-thickness monitoring arrangement: paper moves horizontally between an Sr-90 source below and a detector above; the detector is connected to a control unit, which is linked to a pair of rollers through which the paper passes.",
+    source: "SEC Leaving Certificate Physics 2011 Higher Level — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "physics", subjectLabel: "Physics",
+    level: "higher", year: 2011,
+    topicLabel: "Rocking toy stability / centre of gravity stimulus", questionRef: null,
+    src: "/exam-figures/physics/physics-2011-hl-rocking-toy-point-c.png",
+    alt: "A round-bottomed rocking toy shaped like a sailor figure, shown mid-wobble with motion blur. An arrow labelled C points to a location near the base of its rounded body.",
+    source: "SEC Leaving Certificate Physics 2011 Higher Level — © State Examinations Commission",
+  }),
 ];
