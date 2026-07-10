@@ -162,7 +162,10 @@ so most extracted crops are blank grids) and **Agricultural Economics 1** (a
 supply-curve graph — the subject is otherwise table/ledger heavy). **LCA Crafts
 & Design was probed and correctly yielded zero** — its papers are photographic
 and poster stimuli, not technical drawings. Backfill of earlier years for the
-three high-yield LCA technical strands follows.
+three high-yield LCA technical strands followed: **LCA Engineering 132** and
+**LCA Graphics & Construction Studies 62** now span their full tagged archive
+(2010–2025), and LCA Technology and LCA Agriculture/Horticulture backfills are
+in progress.
 
 ### Coverage status — every tagged paper with extractable diagrams is now in
 
