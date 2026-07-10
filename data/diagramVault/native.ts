@@ -23,10 +23,12 @@ import { BIOLOGY_FIGURES } from './figures/biology';
 import { GEOGRAPHY_FIGURES } from './figures/geography';
 import { PHYSICS_FIGURES } from './figures/physics';
 import { CHEMISTRY_FIGURES } from './figures/chemistry';
+import { BUSINESS_FIGURES } from './figures/business';
 
 export const NATIVE_FIGURES: DiagramEntry[] = [
   ...BIOLOGY_FIGURES,
   ...GEOGRAPHY_FIGURES,
   ...PHYSICS_FIGURES,
   ...CHEMISTRY_FIGURES,
+  ...BUSINESS_FIGURES,
 ];
