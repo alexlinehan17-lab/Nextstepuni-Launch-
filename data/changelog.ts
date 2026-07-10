@@ -19,6 +19,16 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: '2026-07-diagram-vault',
+    date: 'July 2026',
+    title: 'Diagram Vault — the exam diagrams, decoded',
+    lines: [
+      'New tool: every diagram, graph, map and chart that has come up in the exams, cropped straight from the paper and grouped by subject.',
+      'Tap "What this diagram shows" on any figure for a plain-English decode — the labels, the axes, what you’re actually being asked to read or draw.',
+      'Each one carries its exact exam source. Starting with 18 subjects; more figures are being added.',
+    ],
+  },
+  {
     id: '2026-07-marking-lens',
     date: 'July 2026',
     title: 'Marking Lens — how the marks are given',
