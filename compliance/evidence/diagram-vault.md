@@ -141,9 +141,12 @@ rejects them — only genuinely printed figures survive), and Ag Science / Home
 Economics lean on identification photographs and fill-in tables, which are
 rejected as non-figures. 2021 added ~47 figures across the six (Maths 80, Ag
 Science 72, Computer Science 47, Economics 35, Technology 26, Home Economics 12,
-running totals). The corpus now stands at **~2,070 figures across 24 subject
-files**. Backfill continues to 2020 and earlier where papers exist (Computer
-Science was first examined in 2020, so its history floor is 2020).
+running totals). The corpus now stands at **~2,130 figures across 24 subject
+files** after continuing this backfill down through 2018 (Maths 110, Ag Science
+76, Technology 43; Computer Science complete at 2020–2025, its full history;
+Economics and Home Economics have no tagged papers before 2020). Backfill
+continues to 2017 and earlier for Maths, Ag Science and Technology where tagged
+papers exist.
 
 ## Next waves (planned)
 
