@@ -37,7 +37,7 @@ describe('Topic Vault — ReviseByTopic', () => {
         onBack={noop}
       />,
     );
-    expect(screen.getByText(/Revise by topic/i)).toBeInTheDocument();
+    expect(screen.getByText(/Topic Vault/i)).toBeInTheDocument();
     expect(screen.getByText(/Every past-paper question, sorted by topic/i)).toBeInTheDocument();
   });
 

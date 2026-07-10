@@ -23,6 +23,9 @@ export interface ResolvedSibling {
    *  "Open beside its marking scheme" fallback. */
   anchorsUrl: string;
   paperLabel: string;
+  /** True when the hosted anchors must be tried before the Storage sidecar
+   *  (numbering-conflict subject — see VAULT_PREFER_ANCHORS). */
+  preferAnchors: boolean;
 }
 
 /** Hosting path for a paper's committed paper-anchors sidecar. Year + fileid
@@ -31,9 +34,32 @@ export interface ResolvedSibling {
 export const hostedAnchorsUrl = (year: number, fileid: string) =>
   `/paper-anchors/${year}/${encodeURIComponent(fileid)}.json`;
 
-/** Ordered answer-map candidates: the verified Storage sidecar first (it may
- *  carry scheme crops), then the hosted paper-only anchors. */
-export const answerMapUrls = (r: ResolvedSibling): string[] => [r.answersUrl, r.anchorsUrl];
+/**
+ * Subjects whose classic Storage sidecar uses a DIFFERENT question numbering
+ * than the Topic Vault tags, so the hosted paper-anchors (generated to match
+ * the tags) must be tried FIRST — otherwise the vault serves crops the tags
+ * don't describe.
+ *
+ * Geography: the classic sidecar (built for the full-paper Viewer) numbers the
+ * Part-Two structured/essay questions 1..12; the vault tags number the Part-One
+ * short questions 1..12 — the same paper carries two "Q1..12" runs. Without this
+ * preference the vault shows a Part-Two essay crop under a Part-One topic.
+ * (jc-italian / jc-french have the mirror problem the other way — their hosted
+ * anchors are printed-numbered while the tags are reading-section-numbered — so
+ * those anchors are REMOVED rather than preferred; see the audit.)
+ */
+export const VAULT_PREFER_ANCHORS = new Set<string>(['geography']);
+
+/** Ordered answer-map candidates. Normally the verified Storage sidecar first
+ *  (it may carry scheme crops), then the hosted paper-only anchors. But for a
+ *  numbering-conflict subject (VAULT_PREFER_ANCHORS) the classic Storage sidecar
+ *  is systematically numbered against a DIFFERENT question run than the tags
+ *  (geography: Part-Two essays vs the tags' Part-One shorts), so it is WRONG for
+ *  every vault tag — we use only the hosted anchors, and a paper with no anchor
+ *  falls back honestly to "open in the full paper" rather than showing the wrong
+ *  crop. */
+export const answerMapUrls = (r: ResolvedSibling): string[] =>
+  r.preferAnchors ? [r.anchorsUrl] : [r.answersUrl, r.anchorsUrl];
 
 /**
  * Shape guard for a fetched answer map. Firebase Hosting rewrites every
@@ -80,6 +106,7 @@ export function resolveSibling(t: TopicSibling): ResolvedSibling | null {
         answersUrl: paperUrl(paperAnswersPath(cycle, t.subjectId, t.year, item.doc.f)),
         anchorsUrl: hostedAnchorsUrl(t.year, item.doc.f),
         paperLabel: item.label,
+        preferAnchors: VAULT_PREFER_ANCHORS.has(t.subjectId),
       }
     : null;
   memo.set(key, out);

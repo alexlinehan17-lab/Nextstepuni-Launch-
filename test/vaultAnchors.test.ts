@@ -19,7 +19,7 @@
 import { existsSync, readdirSync, readFileSync } from 'fs';
 import path from 'path';
 import { describe, it, expect } from 'vitest';
-import { answerMapUrls, hostedAnchorsUrl, isAnswerMap, type ResolvedSibling } from '../components/PaperTrail/vaultResolve';
+import { answerMapUrls, hostedAnchorsUrl, isAnswerMap, resolveSibling, type ResolvedSibling } from '../components/PaperTrail/vaultResolve';
 import { paperRegionFor } from '../components/PaperTrail/paperRegion';
 import type { PaperAnswerMap } from '../types/paperTrail';
 
@@ -39,18 +39,33 @@ describe('hostedAnchorsUrl', () => {
 });
 
 describe('answerMapUrls', () => {
+  const base: ResolvedSibling = {
+    paperUrl: 'https://storage/paper.pdf',
+    schemeUrl: null,
+    answersUrl: 'https://storage/answers/X.pdf.json',
+    anchorsUrl: '/paper-anchors/2024/X.pdf.json',
+    paperLabel: 'Exam Paper',
+    preferAnchors: false,
+  };
+
   it('tries the verified Storage sidecar before the hosted paper anchors', () => {
-    const r: ResolvedSibling = {
-      paperUrl: 'https://storage/paper.pdf',
-      schemeUrl: null,
-      answersUrl: 'https://storage/answers/X.pdf.json',
-      anchorsUrl: '/paper-anchors/2024/X.pdf.json',
-      paperLabel: 'Exam Paper',
-    };
-    expect(answerMapUrls(r)).toEqual([
-      'https://storage/answers/X.pdf.json',
-      '/paper-anchors/2024/X.pdf.json',
-    ]);
+    expect(answerMapUrls(base)).toEqual([base.answersUrl, base.anchorsUrl]);
+  });
+
+  it('uses ONLY the hosted anchors for a numbering-conflict subject', () => {
+    // Geography's Storage sidecar numbers Part-Two essays 1..12 while the vault
+    // tags number Part-One short questions 1..12 — the Storage sidecar is wrong
+    // for every tag, so it must never be served; a paper with no anchor falls
+    // back honestly rather than showing a Part-Two crop under a Part-One topic.
+    expect(answerMapUrls({ ...base, preferAnchors: true })).toEqual([base.anchorsUrl]);
+  });
+
+  it('geography resolves with preferAnchors set', () => {
+    const geo = resolveSibling({ subjectId: 'geography', year: 2019, level: 'higher', lang: 'ev', fileid: 'LC005ALP000EV.pdf', paperKey: 'single', n: '1' });
+    // Only assert the flag when the paper is in the committed index.
+    if (geo) expect(geo.preferAnchors).toBe(true);
+    const bio = resolveSibling({ subjectId: 'biology', year: 2019, level: 'higher', lang: 'ev', fileid: 'LC002ALP000EV.pdf', paperKey: 'single', n: '1' });
+    if (bio) expect(bio.preferAnchors).toBe(false);
   });
 });
 
