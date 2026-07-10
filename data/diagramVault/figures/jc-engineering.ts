@@ -1,0 +1,173 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Diagram Vault — jc-engineering figures extracted from SEC question papers. Written by
+ * tools/dv_apply.py from agent-verified crops; do not hand-edit (re-run apply).
+ */
+
+import { nf } from '../nf';
+import type { DiagramEntry } from '../index';
+
+export const JC_ENGINEERING_FIGURES: DiagramEntry[] = [
+  nf({
+    subjectId: "jc-engineering", subjectLabel: "Junior Cycle Engineering",
+    level: null, year: 2024,
+    topicLabel: "Four-stroke engine cross-section", questionRef: null,
+    src: "/exam-figures/jc-engineering/engineering-2024-com-four-stroke-engine-cross-section.png",
+    alt: "Colour cross-section diagram of a single-cylinder four-stroke engine showing the two valves, piston, connecting rod and crankshaft, with a rectangular highlight box around the upper valve area.",
+    source: "SEC Junior Certificate Engineering 2024 — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "jc-engineering", subjectLabel: "Junior Cycle Engineering",
+    level: null, year: 2024,
+    topicLabel: "Logic gate circuit (OR and AND gates)", questionRef: null,
+    src: "/exam-figures/jc-engineering/engineering-2024-com-logic-gate-circuit.png",
+    alt: "Logic circuit diagram with three inputs feeding a gate labelled X (OR gate) whose output combines with another input at a gate labelled Y (AND gate), leading to a single output.",
+    source: "SEC Junior Certificate Engineering 2024 — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "jc-engineering", subjectLabel: "Junior Cycle Engineering",
+    level: null, year: 2024,
+    topicLabel: "Valve mechanism detail (Mechanism A)", questionRef: null,
+    src: "/exam-figures/jc-engineering/engineering-2024-com-mechanism-a-valve-detail.png",
+    alt: "Enlarged cross-section detail of an engine valve mechanism showing a cam lobe acting on a valve stem and return spring within the cylinder head.",
+    source: "SEC Junior Certificate Engineering 2024 — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "jc-engineering", subjectLabel: "Junior Cycle Engineering",
+    level: null, year: 2024,
+    topicLabel: "Ohm's law triangle (V = I × R)", questionRef: null,
+    src: "/exam-figures/jc-engineering/engineering-2024-com-ohms-law-triangle.png",
+    alt: "Ohm's law triangle divided into three segments labelled V at the top and I and R below, with the formula V = I x R shown beneath it.",
+    source: "SEC Junior Certificate Engineering 2024 — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "jc-engineering", subjectLabel: "Junior Cycle Engineering",
+    level: null, year: 2024,
+    topicLabel: "Isometric drawing of a machined component (Part Y)", questionRef: "2024 Q1",
+    src: "/exam-figures/jc-engineering/engineering-2024-com-q1-part-y-orthographic.png",
+    alt: "Isometric line drawing of a stepped cylindrical machined part with a flanged head, dimensioned Ø30 and Ø20 diameters, an overall length of 50 and a 5 flange thickness, with a viewing arrow labelled 'A'.",
+    source: "SEC Junior Certificate Engineering 2024, Q1 — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "jc-engineering", subjectLabel: "Junior Cycle Engineering",
+    level: null, year: 2024,
+    topicLabel: "Vee belt and pulley drive", questionRef: null,
+    src: "/exam-figures/jc-engineering/engineering-2024-com-vee-belt-pulley.png",
+    alt: "Three-dimensional drawing of a vee belt and pulley drive: a larger driven pulley and a smaller pulley connected by a red vee belt, each pulley having drilled holes in its face.",
+    source: "SEC Junior Certificate Engineering 2024 — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "jc-engineering", subjectLabel: "Junior Cycle Engineering",
+    level: null, year: 2023,
+    topicLabel: "Compression spring mechanism", questionRef: "2023 Q1",
+    src: "/exam-figures/jc-engineering/engineering-2023-q1-compression-spring-mechanism.png",
+    alt: "Close-up photograph of the 2023 Junior Cycle Engineering project, with a red arrow indicating a coiled metal compression spring mounted on a vertical guide rod between metal brackets.",
+    source: "SEC Junior Certificate Engineering 2023, Q1 — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "jc-engineering", subjectLabel: "Junior Cycle Engineering",
+    level: null, year: 2023,
+    topicLabel: "Separator mechanism", questionRef: "2023 Q1",
+    src: "/exam-figures/jc-engineering/engineering-2023-q1-separator-mechanism.png",
+    alt: "Close-up photograph of part of the 2023 Junior Cycle Engineering project, with a red arrow pointing to a metal separator component mounted on a clear acrylic panel with rows of round-headed fasteners.",
+    source: "SEC Junior Certificate Engineering 2023, Q1 — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "jc-engineering", subjectLabel: "Junior Cycle Engineering",
+    level: null, year: 2023,
+    topicLabel: "Dimensioned drawing of acrylic body part", questionRef: "2023 Q2",
+    src: "/exam-figures/jc-engineering/engineering-2023-q2-acrylic-body-part-drawing.png",
+    alt: "Dimensioned engineering drawing of an elongated acrylic body part with a hole at each end, labelled with radii R15 and R10, a diameter of 5, and an overall length of 80.",
+    source: "SEC Junior Certificate Engineering 2023, Q2 — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "jc-engineering", subjectLabel: "Junior Cycle Engineering",
+    level: null, year: 2023,
+    topicLabel: "Pillar drilling machine", questionRef: "2023 Q2",
+    src: "/exam-figures/jc-engineering/engineering-2023-q2-drilling-machine.png",
+    alt: "Photograph of a pillar (bench) drilling machine, with two blue arrows pointing to the flat worktable and to the base at the bottom of the column.",
+    source: "SEC Junior Certificate Engineering 2023, Q2 — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "jc-engineering", subjectLabel: "Junior Cycle Engineering",
+    level: null, year: 2023,
+    topicLabel: "Interior wiring of a three-pin plug", questionRef: "2023 Q2",
+    src: "/exam-figures/jc-engineering/engineering-2023-q2-three-pin-plug-wiring.png",
+    alt: "Diagram of the interior of a three-pin electrical plug showing the three brass terminals and a cartridge fuse marked 13A, with red pointer lines to the terminals.",
+    source: "SEC Junior Certificate Engineering 2023, Q2 — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "jc-engineering", subjectLabel: "Junior Cycle Engineering",
+    level: null, year: 2023,
+    topicLabel: "Automated barrier system", questionRef: "2023 Q4",
+    src: "/exam-figures/jc-engineering/engineering-2023-q4-automated-barrier-system.png",
+    alt: "Three-dimensional illustration of a car passing a raised entry barrier, with labels and arrows indicating a keypad on a post and a vehicle detection system in the road surface.",
+    source: "SEC Junior Certificate Engineering 2023, Q4 — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "jc-engineering", subjectLabel: "Junior Cycle Engineering",
+    level: null, year: 2023,
+    topicLabel: "Automated sliding gate with rack-and-pinion mechanism", questionRef: "2023 Q4",
+    src: "/exam-figures/jc-engineering/engineering-2023-q4-automated-sliding-gate-mechanism.png",
+    alt: "Three-dimensional illustration of a car park automated sliding gate mounted on a wall, with red arrows to the gate and to a toothed rack, and a separate rack-and-pinion labelled Mechanism A.",
+    source: "SEC Junior Certificate Engineering 2023, Q4 — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "jc-engineering", subjectLabel: "Junior Cycle Engineering",
+    level: null, year: 2023,
+    topicLabel: "Meshing gear pair (driver and driven)", questionRef: "2023 Q4",
+    src: "/exam-figures/jc-engineering/engineering-2023-q4-gear-pair.png",
+    alt: "Diagram of two meshing spur gears: a smaller gear labelled 14T meshing with a larger gear, each drawn with teeth around the rim and a central bore.",
+    source: "SEC Junior Certificate Engineering 2023, Q4 — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "jc-engineering", subjectLabel: "Junior Cycle Engineering",
+    level: null, year: 2022,
+    topicLabel: "Bicycle drive mechanism (chain and sprockets)", questionRef: null,
+    src: "/exam-figures/jc-engineering/engineering-2022-com-bicycle-drive-mechanism.png",
+    alt: "A diagram of a bicycle chain drive showing a large front chainwheel with crank arm, a rear sprocket, two smaller red idler/tensioner sprockets, and a chain routed around them.",
+    source: "SEC Junior Certificate Engineering 2022 — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "jc-engineering", subjectLabel: "Junior Cycle Engineering",
+    level: null, year: 2022,
+    topicLabel: "Bird Buddy roof dimensioned working drawing", questionRef: null,
+    src: "/exam-figures/jc-engineering/engineering-2022-com-bird-buddy-roof-working-drawing.png",
+    alt: "A dimensioned orthographic drawing of a rectangular sheet-metal roof labelled 'Bird Buddy roof', 250 wide by 140 high, with four corner holes, a centre fold line marked 'Bend 60°', a radiused corner, and an edge view showing 3 thickness. A lined answer box headed 'Description:' sits to the left.",
+    source: "SEC Junior Certificate Engineering 2022 — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "jc-engineering", subjectLabel: "Junior Cycle Engineering",
+    level: null, year: 2022,
+    topicLabel: "Controller unit electronic components (numbered identification figure)", questionRef: null,
+    src: "/exam-figures/jc-engineering/engineering-2022-com-controller-unit-electronic-components.png",
+    alt: "A central labelled 'Controller Unit' enclosure surrounded by six numbered call-out boxes each showing an electronic component: 1 a capacitor, 2 an LED, 3 a resistor, 4 a transistor, 5 a printed circuit board, and 6 a rocker on/off switch.",
+    source: "SEC Junior Certificate Engineering 2022 — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "jc-engineering", subjectLabel: "Junior Cycle Engineering",
+    level: null, year: 2022,
+    topicLabel: "Junior Cycle Engineering Project mechanism (CAD assembly)", questionRef: null,
+    src: "/exam-figures/jc-engineering/engineering-2022-com-engineering-project-mechanism.png",
+    alt: "Rendered CAD assembly of a mechanism mounted on a baseplate, showing electric motors, a blue linkage arm, a large disc/flywheel and interconnecting wiring. A red callout line points to a component near the disc.",
+    source: "SEC Junior Certificate Engineering 2022 — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "jc-engineering", subjectLabel: "Junior Cycle Engineering",
+    level: null, year: 2022,
+    topicLabel: "Kevlar reinforced pneumatic tyre (labelled cross-section)", questionRef: null,
+    src: "/exam-figures/jc-engineering/engineering-2022-com-kevlar-pneumatic-tyre-cross-section.png",
+    alt: "A labelled cutaway of a bicycle tyre with callouts to 'Kevlar' and 'Rubber' layers, connected by lines to a bicycle wheel and a car tyre, captioned 'Kevlar reinforced pneumatic tyres'. Adjacent question text asks to explain the term pneumatic, with a blank answer box.",
+    source: "SEC Junior Certificate Engineering 2022 — © State Examinations Commission",
+  }),
+  nf({
+    subjectId: "jc-engineering", subjectLabel: "Junior Cycle Engineering",
+    level: null, year: 2022,
+    topicLabel: "Skateboard exploded assembly diagram", questionRef: null,
+    src: "/exam-figures/jc-engineering/engineering-2022-com-skateboard-exploded-assembly.png",
+    alt: "An exploded assembly diagram of a skateboard showing the deck, two trucks with wheels, and separated bushings, bearings, washers and nut. Callouts label an 'Allen CSK screw' (enlarged in a bubble) and the 'Baseplate'.",
+    source: "SEC Junior Certificate Engineering 2022 — © State Examinations Commission",
+  }),
+];

@@ -92,12 +92,27 @@ Art was run and yielded **no** diagrams (its papers are reproductions of
 artworks/photographs, not technical figures) — correctly empty, not skipped
 silently.
 
+### Junior Cycle + Physics & Chemistry wave (2022–2024, shipped)
+
+| Subject | Figures | Subject | Figures |
+|---------|--------:|---------|--------:|
+| Physics & Chemistry (LC) | 52 | JC Applied Technology | 42 |
+| JC Science | 40 | JC Geography | 40 |
+| JC Wood Technology | 40 | JC Mathematics | 38 |
+| JC Engineering | 20 | JC Home Economics | 7 |
+| JC Business Studies | 6 | | |
+
+JC papers are common-level, so their entries carry `level: null` and an SEC
+"Junior Certificate/Junior Cycle" source string. JC Science, Geography, Physics &
+Chemistry and the JC technical subjects (Applied Technology, Wood Technology,
+Engineering) are the richest veins — labelled apparatus, circuits, OS maps,
+synoptic charts, CAD/orthographic drawings, joints and mechanisms.
+
 ## Next waves (planned)
 
 Continue the native pipeline until every paper with extractable diagrams is
-covered: JC technical/science subjects (jc-science, jc-geography, jc-engineering,
-jc-applied-technology, jc-wood-technology, jc-mathematics, jc-music,
-jc-home-economics), LCA technical strands (engineering, graphics-and-construction,
-technology), physics-and-chemistry, and older-year backfill (pre-2022) for the
-subjects already covered. Every added figure is agent-verified with an SEC
-`source`, so the integrity gate covers it automatically.
+covered: LCA technical strands (engineering, graphics-and-construction,
+technology), any remaining JC diagram subjects (jc-music listening figures where
+present), and older-year backfill (pre-2022) for the subjects already covered.
+Every added figure is agent-verified with an SEC `source`, so the integrity gate
+covers it automatically.

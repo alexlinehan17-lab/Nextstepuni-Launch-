@@ -34,6 +34,15 @@ import { ECONOMICS_FIGURES } from './figures/economics';
 import { AGRICULTURAL_SCIENCE_FIGURES } from './figures/agricultural-science';
 import { HOME_ECONOMICS_S_AND_S_FIGURES } from './figures/home-economics-s-and-s';
 import { COMPUTER_SCIENCE_FIGURES } from './figures/computer-science';
+import { PHYSICS_AND_CHEMISTRY_FIGURES } from './figures/physics-and-chemistry';
+import { JC_SCIENCE_FIGURES } from './figures/jc-science';
+import { JC_GEOGRAPHY_FIGURES } from './figures/jc-geography';
+import { JC_MATHEMATICS_FIGURES } from './figures/jc-mathematics';
+import { JC_ENGINEERING_FIGURES } from './figures/jc-engineering';
+import { JC_APPLIED_TECHNOLOGY_FIGURES } from './figures/jc-applied-technology';
+import { JC_WOOD_TECHNOLOGY_FIGURES } from './figures/jc-wood-technology';
+import { JC_HOME_ECONOMICS_FIGURES } from './figures/jc-home-economics';
+import { JC_BUSINESS_STUDIES_FIGURES } from './figures/jc-business-studies';
 
 export const NATIVE_FIGURES: DiagramEntry[] = [
   ...BIOLOGY_FIGURES,
@@ -51,4 +60,13 @@ export const NATIVE_FIGURES: DiagramEntry[] = [
   ...AGRICULTURAL_SCIENCE_FIGURES,
   ...HOME_ECONOMICS_S_AND_S_FIGURES,
   ...COMPUTER_SCIENCE_FIGURES,
+  ...PHYSICS_AND_CHEMISTRY_FIGURES,
+  ...JC_SCIENCE_FIGURES,
+  ...JC_GEOGRAPHY_FIGURES,
+  ...JC_MATHEMATICS_FIGURES,
+  ...JC_ENGINEERING_FIGURES,
+  ...JC_APPLIED_TECHNOLOGY_FIGURES,
+  ...JC_WOOD_TECHNOLOGY_FIGURES,
+  ...JC_HOME_ECONOMICS_FIGURES,
+  ...JC_BUSINESS_STUDIES_FIGURES,
 ];
