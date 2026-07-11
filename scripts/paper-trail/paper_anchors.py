@@ -385,6 +385,8 @@ SUBJECT_SECTION_PATTERNS = {
 # when the active grammar is 'sectioned_lead_int' (explicit opt-in), so the new
 # detector is a no-op clone of det_lead_int for every other subject/run.
 ACTIVE_SUBJECT = None
+ACTIVE_FILEID = None    # current paper's fileid — set per paper in main() so
+                        # fileid-scoped armed configs (TV-12) can key off it
 SECTIONED_ENABLED = False
 
 # ── Armed section-aware grammar (det_armed_sectioned) — TV-8 ──────────────────
@@ -458,7 +460,9 @@ SUBJECT_ARMED_PATTERNS = {
     # 'Q.1'/'Q.2'; the questions have no label and share the passage's 1..n
     # number space), and the 50-word sub-answers print their own '1.'/'2.'
     # answer-box numbers. There is no reliable header to arm/disarm — so french
-    # stays inert (defers). See PAPER-ANCHORS.md.
+    # stays inert (defers). See PAPER-ANCHORS.md. (Not the irish-OL case below:
+    # the french questions also have no per-question SHAPE marker, so the
+    # `question` row-shape key cannot separate them either.)
     #
     # Geography HL/OL written paper (LC005[A|G]LP000). 'PART ONE' (EV) / 'CUID A
     # hAON' (IV) opens the 12 short-answer questions (bare left-margin 'N.',
@@ -497,6 +501,68 @@ SUBJECT_ARMED_PATTERNS = {
         "margin": 150,
     },
 }
+
+# ── Fileid-scoped armed configs (TV-12) ───────────────────────────────────────
+# One subject can print DIFFERENT armed grammars per paper class: irish HL P2
+# (LC001ALP200IV) has a 'Ceisteanna' header that arms question detection, but
+# irish OL P2 (LC001GLP200IV) prints its questions DIRECTLY under the passage
+# with no arm header at all. Entries here are (subjectId, fileid regex, config)
+# — consulted before SUBJECT_ARMED_PATTERNS, first match wins, and a paper that
+# matches no row falls through to the subject-level entry unchanged. Same
+# INERT-unless-pinned guard as the subject table (ARMED_ENABLED).
+#
+# Two OPTIONAL config keys (unused by the subject-level entries, so they change
+# nothing for german/irish-HL/geography):
+#   • 'always_armed' — detection starts ARMED and 'open' headers do NOT disarm
+#     (there is no arm header to re-arm afterwards). Only safe together with a
+#     'question' shape key: with detection always on, the shape test is the
+#     ONLY thing separating questions from decoy numbering.
+#   • 'question'     — row-shape regex: a bare left-margin 'N.' emits a hit
+#     ONLY if the text following it in the same VISUAL ROW (all words within
+#     ±3pt of the marker's top, left→right, any line group) matches. Verified
+#     against every OL P2 text layer 2013-2025: question rows are 'N. (a) …'
+#     (sub-part '(a)' immediately follows the number, even when the PDF splits
+#     the row across line groups), passage-paragraph rows are 'N. <prose>' —
+#     zero overlap in 13 sittings (130 questions / ~110 paragraph decoys).
+ARMED_FILEID_CONFIGS = [
+    # Irish Paper Two léamhthuiscint, ORDINARY level (LC001GLP200IV, TV-12).
+    # Layout (verified 2013-2025): p4-5 text A — 'Léigh an sliocht seo a
+    # leanas …' intro, numbered passage paragraphs 1..5, then questions
+    # '1. (a) … (Alt 1)' .. '5. (a/b) …' directly below the passage (NO
+    # 'Ceisteanna' header, unlike HL); p6-7 text B repeats the shape; then
+    # Ceist 2 (prós) / Ceist 3 (filíocht) with no bare-'N.' markers. The two
+    # 'Léigh an sliocht' intros open the A/B islands (so each 1..5 run keys
+    # distinctly and text A's Q5 crop-end clamps at text B's intro); the
+    # 'Ceist/CEIST N' headers (2013-2019 print 'CEIST 2' uppercase, 2020+
+    # 'Ceist 2') open the post-reading sections so Q10's crop-end clamps
+    # there when present. The instruction-page 'Ceist 2:'/'Ceist 3:' lines
+    # (p3) also fire 'open' — harmlessly, before any anchor. Passage
+    # paragraphs are excluded by the 'question' row shape, not by arming.
+    ("irish", re.compile(r"^LC001GLP200", re.I), {
+        "open": [re.compile(p) for p in (
+            r"^Léigh\s+an\s+sliocht",
+            r"^Ceist\s+[2-9]\b",
+            r"^CEIST\s+[2-9]\b",
+        )],
+        "arm": [],
+        "disarm": [],
+        "always_armed": True,
+        "question": re.compile(r"^\(a\)"),
+    }),
+]
+
+
+def armed_cfg_for(subject, fileid):
+    """Armed config for the CURRENT paper: fileid-scoped override first
+    (ARMED_FILEID_CONFIGS), else the subject-level entry. None unless the run
+    is pinned to armed_sectioned — exactly the old lookup for every paper that
+    matches no override row."""
+    if not ARMED_ENABLED:
+        return None
+    for subj, pat, cfg in ARMED_FILEID_CONFIGS:
+        if subj == subject and fileid and pat.match(fileid):
+            return cfg
+    return SUBJECT_ARMED_PATTERNS.get(subject)
 
 _LIGATURES = {
     "Ɵ": "ti", "Ʃ": "tt", "ϐ": "fi",
@@ -714,15 +780,30 @@ def det_armed_sectioned(doc):
     INERT unless the run is explicitly pinned to this grammar: when
     ARMED_ENABLED is False the config is None, detection starts ARMED, the
     section index stays 0 and every label is the bare 'N' — byte-identical to
-    det_lead_int, so registering this detector cannot regress any subject."""
-    cfg = SUBJECT_ARMED_PATTERNS.get(ACTIVE_SUBJECT) if ARMED_ENABLED else None
+    det_lead_int, so registering this detector cannot regress any subject.
+
+    TV-12 extensions (both keyed by OPTIONAL config keys, so configs without
+    them — german, irish HL, geography — behave exactly as before):
+      • 'always_armed' — papers with no arm header (irish OL P2 prints its
+        questions directly under the passage): detection starts ARMED and
+        'open' headers only bump the section index instead of disarming.
+      • 'question' — row-shape regex: the bare 'N.' emits a hit only if the
+        text following it in the same VISUAL ROW matches (irish OL P2:
+        '^\\(a\\)' — questions are 'N. (a) …', passage paragraphs 'N. <prose>').
+        The row is assembled from the page's word list because the PDFs often
+        split 'N.' and '(a) …' into separate line groups."""
+    cfg = armed_cfg_for(ACTIVE_SUBJECT, ACTIVE_FILEID)
     # Header-eligibility x-gate: per-subject override for papers whose PART/CUID
     # headers print just past LEFT_MARGIN_X (geography 2017 OL EV / 2013 OL IV).
     # Applies ONLY to arm/open/disarm header lines — never to question markers.
     hdr_x = cfg.get("margin", LEFT_MARGIN_X) if cfg else LEFT_MARGIN_X
+    qshape = cfg.get("question") if cfg else None
+    always = bool(cfg.get("always_armed")) if cfg else False
     hits = []
     sec = 0
-    armed = cfg is None  # inert → always armed (== det_lead_int); pinned → wait
+    # inert → always armed (== det_lead_int); pinned → wait for an arm header,
+    # unless the config declares there is none (always_armed).
+    armed = cfg is None or always
     for pi, page in enumerate(doc):
         if page.rotation:
             continue
@@ -737,13 +818,14 @@ def det_armed_sectioned(doc):
         lines = line_groups(page)
         if cfg is not None:
             lines = sorted(lines, key=lambda lw: (round(lw[0][1], 1), lw[0][0]))
+        words = page.get_text("words") if qshape is not None else None
         for lw in lines:
             w = lw[0]
             if cfg and w[0] < hdr_x:
                 line = deligature(" ".join(x[4] for x in lw))
                 if any(p.match(line) for p in cfg["open"]):
                     sec += 1
-                    armed = False
+                    armed = always
                     continue
                 if any(p.search(line) for p in cfg["disarm"]):
                     armed = False
@@ -755,6 +837,8 @@ def det_armed_sectioned(doc):
                 continue
             m = re.fullmatch(r"(\d{1,2})\.", w[4])
             if m and w[0] < LEAD_INT_X:
+                if qshape is not None and not qshape.match(_row_rest(words, w)):
+                    continue
                 n = int(m.group(1))
                 # section 0 (inert / before any section) keeps the bare 'N'
                 # label so the output is byte-identical to det_lead_int.
@@ -764,6 +848,17 @@ def det_armed_sectioned(doc):
                     lab = f"{chr(ord('A') + sec)}-{n}" if sec < 26 else f"S{sec}-{n}"
                 hits.append(((sec, n), lab, pi, w[0], w[1] / H))
     return hits
+
+
+def _row_rest(words, w):
+    """Text that VISUALLY follows word `w` on its row: every page word whose
+    top is within 3pt of w's and that starts right of w, joined left→right.
+    Row assembly must come from the raw word list, not w's line group — the
+    reading papers often split a question row ('5.' + '(a) Cén …') into
+    separate line groups (TV-12, `question` row-shape key)."""
+    same = sorted((x for x in words if abs(x[1] - w[1]) < 3.0 and x[0] > w[0]),
+                  key=lambda x: x[0])
+    return deligature(" ".join(x[4] for x in same))
 
 
 def armed_section_boundaries(doc):
@@ -776,8 +871,8 @@ def armed_section_boundaries(doc):
     Empty unless the run is pinned to armed_sectioned AND the subject has an
     armed config — so it changes nothing for any other run. Mirrors the 'open'
     branch of det_armed_sectioned exactly (same top→bottom line order, same
-    left-margin gate, same patterns)."""
-    cfg = SUBJECT_ARMED_PATTERNS.get(ACTIVE_SUBJECT) if ARMED_ENABLED else None
+    left-margin gate, same patterns, same fileid-scoped config)."""
+    cfg = armed_cfg_for(ACTIVE_SUBJECT, ACTIVE_FILEID)
     if not cfg:
         return []
     hdr_x = cfg.get("margin", LEFT_MARGIN_X)  # same header x-gate as the detector
@@ -1233,7 +1328,7 @@ def main():
     # det_sectioned_lead_int / det_armed_sectioned only consult their pattern
     # tables when this run is explicitly pinned to them — otherwise each is a
     # no-op clone of lead_int.
-    global ACTIVE_SUBJECT, SECTIONED_ENABLED, ARMED_ENABLED
+    global ACTIVE_SUBJECT, ACTIVE_FILEID, SECTIONED_ENABLED, ARMED_ENABLED
     ACTIVE_SUBJECT = args.subject
     SECTIONED_ENABLED = grammar_pin == "sectioned_lead_int"
     ARMED_ENABLED = grammar_pin == "armed_sectioned"
@@ -1254,6 +1349,9 @@ def main():
             report.append((tag, "DROP", "download failed"))
             continue
 
+        # Fileid-scoped armed configs (TV-12) key off the CURRENT paper; the
+        # global stays set through qa_verify/qa_render for this iteration.
+        ACTIVE_FILEID = r["fileid"]
         doc = fitz.open(pdf_path)
         cands = [grammar_pin] if grammar_pin else list(DETECTORS)
         best = None  # (grammar, anchors, expected, reasons, gaps, hits)

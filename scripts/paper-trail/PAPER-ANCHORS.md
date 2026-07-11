@@ -265,7 +265,52 @@ each (text A → E-1..6, text B → F-1..6), render-QA verified across 2016 + 20
 irish stays pinned `question` (its foundation **aural** papers number
 continuously) and the P2 sidecars come from a **second, explicit**
 `--grammar armed_sectioned` pass — the two passes write disjoint fileids. OL P2
-(different layout) defers.
+(different layout) deferred until TV-12 (below).
+
+### TV-12 — Irish ORDINARY-level Paper 2 (shipped): fileid-scoped armed configs + the `question` row-shape key
+
+OL P2 (`LC001GLP200IV`) is the same A/B-island léamhthuiscint as HL but prints
+**no `Ceisteanna` arm header** — the questions start directly under the passage,
+and both the passage paragraphs and the questions are bare left-margin `N.`
+runs (the `A – (50 marc)` / `B – (50 marc)` text headers sit at x≈264, past the
+state machine's left-margin gate, so no header separates them). What *does*
+separate them, in every sitting 2013–2025, is the **row shape**: question rows
+are `N. (a) … (Alt N)` (the sub-part `(a)` immediately follows the number),
+paragraph rows are `N. <prose>` — zero overlap across 130 questions / ~110
+paragraph decoys. Two pipeline extensions (both optional config keys, inert
+for every existing config):
+
+- **`ARMED_FILEID_CONFIGS`** — fileid-scoped armed configs consulted before
+  `SUBJECT_ARMED_PATTERNS`, because HL and OL are the *same subject* with
+  different grammars: a shared config would break HL (its 2015/2016-era
+  question rows print as a bare `N.` line group, and they already ship via the
+  `Ceisteanna` arm).
+- **`question` row-shape key + `always_armed`** — a bare `N.` emits a hit only
+  when the text following it in the same **visual row** (assembled from the
+  page word list — the PDFs often split `5.` and `(a) Cén …` into separate
+  line groups) matches the regex (`^\(a\)`). With the shape doing the
+  question/paragraph separation, detection runs `always_armed` and the `open`
+  headers (`Léigh an sliocht`, `Ceist/CEIST 2..9`) only track the A/B islands
+  and the crop-end clamps.
+
+**Shipped:** 13 OL papers (2013–2025), 10 questions each (text A 1..5 → n 1..5,
+text B 1..5 → n 6..10) — exactly the sittings and numbering the `irish.json`
+tags use (`irish-3-0` n 1-5, `irish-3-1` n 6-10). **Cross-validated 130/130**:
+every generated anchor agrees (page + y within 0.01) with the independently
+text-matched, scheme-verified classic sidecars from the answers wave
+(`scripts/paper-trail/answers/<year>/LC001GLP200IV.pdf.json`). Render-QA
+verified across 7 papers (2013/2019/2021/2022/2023/2024/2025): Q1 starts clean,
+Q5 clamps at text B's `Léigh an sliocht` (only the `B – 50 marc` header strip
+shows), Q10 clamps at `Ceist 2` / ends its own page. Zero regression: the full
+2013–2025 armed re-run reproduced all 13 HL sidecars **byte-identical**.
+2010–2012 OL (older format, untagged) stay unattempted.
+
+**Serving fix (dual-numbering audit rule):** the LIVE Storage classics for
+irish P2 are stale early maps anchoring the passage **paragraphs** (HL 6 q
+non-monotonic, OL 5 q) — they'd shadow the hosted anchors and serve paragraph
+crops. `'irish'` is therefore in `VAULT_PREFER_ANCHORS` (vaultResolve.ts) until
+task #94 lets the corrected `answers/` sidecars replace them on Storage — then
+remove it to restore crop+reveal.
 
 ### TV-10 — Geography Part One (shipped)
 

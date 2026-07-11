@@ -47,8 +47,20 @@ export const hostedAnchorsUrl = (year: number, fileid: string) =>
  * (jc-italian / jc-french have the mirror problem the other way — their hosted
  * anchors are printed-numbered while the tags are reading-section-numbered — so
  * those anchors are REMOVED rather than preferred; see the audit.)
+ *
+ * Irish (TV-12): the LIVE Storage sidecars for Paper 2 (HL and OL) are STALE
+ * early maps that anchor the léamhthuiscint passage's numbered PARAGRAPHS
+ * (HL: 6 q, non-monotonic; OL: 5 q on the passage pages) — not the reading
+ * questions the tags number 1..12 / 1..10. The corrected scheme-mapped
+ * sidecars exist in scripts/paper-trail/answers/ but can't be uploaded while
+ * Storage credentials are blocked (task #94), so without this preference the
+ * vault serves paragraph crops. Every tagged irish fileid has hosted anchors
+ * (HL P2 2013-25, OL P2 2013-25, foundation aural 2010-11 — the latter's
+ * Storage sidecar 404s anyway, so it changes nothing there). When #94 lands
+ * and the corrected answers/ sidecars go live, remove 'irish' from this set
+ * to restore the richer crop+reveal maps.
  */
-export const VAULT_PREFER_ANCHORS = new Set<string>(['geography']);
+export const VAULT_PREFER_ANCHORS = new Set<string>(['geography', 'irish']);
 
 /** Ordered answer-map candidates. Normally the verified Storage sidecar first
  *  (it may carry scheme crops), then the hosted paper-only anchors. But for a
