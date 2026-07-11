@@ -36,6 +36,9 @@ const SUBJECT_LABELS: Record<string, string> = {
   geography: 'Geography',
   economics: 'Economics',
   'home-economics-s-and-s': 'Home Economics',
+  engineering: 'Engineering',
+  'construction-studies': 'Construction Studies',
+  'design-and-communication-graphics': 'Design & Communication Graphics',
 };
 
 const LEVEL_LABEL: Record<string, string> = {

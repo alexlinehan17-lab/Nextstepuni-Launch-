@@ -36,10 +36,26 @@ documents held in `/examiner-reports/` (PDF + markdown), not CrossRef/DOI record
 | 2c | economics 2025 OL + 2023 OL (64 entries: Q1–16 each year, EV + IV mirror) | `economics/2025-ol-marking-scheme.md/.pdf`, `economics/2023-ol-marking-scheme.md/.pdf` | The prose scheme's Max-Mark column does not bind to its parts in the flattened markdown, so the part↔mark ladder was extracted with **PyMuPDF `find_tables()`** off the source PDF (Section A = 12 marks each; Section B = 75 = (a)+(b)+(c) with printed per-part totals). Every internal notation and every question total independently re-verified against the extraction before registering; single booklet, so not booklet-ambiguous. CI gates green |
 | 2d | home-economics S&S 2025 HL + 2024 HL + 2025 OL + 2024 OL (152 entries: 14 Section-A shorts + 5 Section-B longs per paper, EV + IV mirror) | `home-economics/2025-marking-scheme.md/.pdf`, `2024-…`, `2025-ol-…`, `2024-ol-…` | Two-booklet split solved independently against the tags before authoring (the first attempt stalled on exactly this): **LP014 = Section A** (14 short questions, 6 marks each), **LP039 = Section B** (Q1 = 80, Q2–5 = 50). Notation is the scheme's additive "N points @ M marks (graded M:…:0)" tokens, verbatim. Both booklets share n1–5, so all 8 home-ec booklets are on the booklet-safety gate's verified list (gate 5). Sums, keys and the LP014→Section-A / LP039→Section-B direction all re-verified; CI gates green |
 
-**Home Economics is the last cleanly-authorable subject from the currently filed
-schemes.** With it, Marking Lens covers **8 subjects**; the remaining filed
-subjects are ruled out for the reasons in "Coverage ceiling" above (grade-banded,
-or no scheme∩tag overlap).
+**Home Economics closed wave 2 at 8 subjects.** A later re-assessment probed the
+filed subjects the ceiling section had covered only by a blanket claim, and
+three proved cleanly authorable — see wave 3 below. The remaining filed subjects
+stay ruled out for the reasons in "Coverage ceiling" (grade-banded, or no
+scheme∩tag overlap).
+
+**Wave 3 — technical subjects (probe-then-author):**
+
+| Wave | Coverage | Source schemes | Verification notes |
+|------|----------|----------------|--------------------|
+| 3a | engineering 2024 HL + 2025 HL (36 entries: Q1–9 each year, EV + IV mirror) | `engineering/2024-marking-scheme.md/.pdf`, `engineering/2025-marking-scheme.md/.pdf` | Fully additive scheme ("Any ten @ 5 marks each", per-part notation repeated verbatim under each model answer). The mark-grid pages are column-scrambled in the md extraction, so every notation was taken from the per-question body pages and cross-checked against the grid. Choice menus modelled at the capped total (Q1's 13 printed 5-mark options would sum to 65 — the row is the printed "Any ten @ 5 marks each" at 50). Part-(c) OR forks carry both printed routes in one row (both sum to the same 16). Single fileid per sitting, n=1–9 maps 1:1 — no booklet ambiguity. OL sittings are tagged but no OL scheme is filed, so OL is NOT authored. No pitfalls: no LC Engineering Chief Examiner's Report exists (confirmed in `engineering/2025-insights.md`). CI gates green |
+| 3b | construction-studies 2024 HL + 2025 HL (40 entries: Q1–10 each year, EV + IV mirror) | `construction-studies/2024-marking-scheme.md/.pdf`, `construction-studies/2025-marking-scheme.md/.pdf` | PERFORMANCE CRITERIA / MAXIMUM MARK tables summing to a printed TOTAL 60 per question. Because the md extraction scrambles table columns, **every mark-grid page of both PDFs was rendered to images and read visually** — this caught the filed `2025-insights.md` misquoting 2025 Q7's slate-courses row (it is 6 marks, not 4; the insights arithmetic would give 64 ≠ 60). The 8-mark Scale/Drafting row (Q1/Q7 both years) is decoded exactly as printed ("Excellent 8, Good 6, Fair 4") as its own additive row. Both years also print a "Question 10 (Alternative)" grid; the tagged Q10 was resolved to the **main** version both years via the Topic Vault stem texts (2024 EnerPHit retrofit, 2025 Passive House) — the Alternative grids are unkeyed, not silently merged. Single booklet per sitting; OL tagged but no OL scheme filed → not authored; no CE report filed → no pitfalls. CI gates green |
+| 3c | design-and-communication-graphics 2024 HL + 2025 HL (32 entries: n1–8 each year, EV + IV mirror) | `dcg/2024-marking-scheme.md/.pdf`, `dcg/2025-marking-scheme.md/.pdf` | Additive graphical step-ladders (roman-indexed steps with explicit marks) summing to 60 per question. **Keying verified 8/8 per year** by matching tag topic labels to scheme question content (e.g. 2024 n2 "Developments and Envelopments" ↔ B-2 salad-box surface development; 2025 n4 "Geologic Geometry" ↔ C-1 strike/dip/thickness) — the Biology-precedent check, exceeded. Tag n `'1'`–`'8'` = scheme B-1…B-3, C-1…C-5 on the LC562ALP039* booklet. **Section A (A-1…A-4) is authorable on scheme evidence but its booklet (LC562ALP014*) carries no Topic Vault tags — dropped as orphan keys rather than mis-keyed.** OL tagged but no OL scheme filed → not authored; no CE report → no pitfalls. Marks re-extracted from the PDFs (pypdf) and cross-checked against the md. CI gates green |
+
+**Applied Maths** (additive, but tags stop at 2022 vs 2023/24 schemes across a
+syllabus change) and **French** (reading comprehension additive, but tags stop
+at 2018) join Accounting in the blocked-by-data family: authorable in marking
+style, but no scheme∩tag overlap to key to today. With wave 3, Marking Lens
+covers **11 subjects (~603 entries)** — and the Answer Architect and Definition
+Drill projections deepen automatically with it.
 
 **Keying notes (wave 2b — the checks that matter for "a wrong lens is worse than a missing one"):**
 
