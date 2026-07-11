@@ -88,7 +88,7 @@ const DrillDeck: React.FC<{ definitions: DrillDefinition[]; subjectLabel: string
       <button onClick={onBack} className="flex items-center gap-1.5 text-[13px] font-medium mb-4" style={{ color: '#7a7068' }}>
         <ArrowLeft size={15} /> All subjects
       </button>
-      <h2 className="text-2xl font-semibold mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{subjectLabel}</h2>
+      <h2 className="text-2xl font-semibold mb-1 text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>{subjectLabel}</h2>
     </>
   );
 
@@ -210,10 +210,10 @@ const DefinitionDrill: React.FC<Props> = ({ studentSubjects = [] }) => {
   // ── Level 0: subject picker ──
   return (
     <div className="w-full max-w-xl mx-auto pb-12">
-      <h2 className="text-2xl font-semibold mb-1 flex items-center gap-2" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>
+      <h2 className="text-2xl font-semibold mb-1 flex items-center gap-2 text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>
         <SpellCheck size={20} style={{ color: ACCENT }} /> Definition Drill
       </h2>
-      <p className="text-[13.5px] leading-relaxed mb-5" style={{ color: '#5a5550' }}>
+      <p className="text-[13.5px] leading-relaxed mb-5 text-[#5a5550] dark:text-zinc-400">
         Drill the exact wording the marking scheme awards the definition marks for. Read the prompt, recall the wording, then reveal the scheme’s own allocation — and rate yourself.
       </p>
       {subjects.length === 0 ? (

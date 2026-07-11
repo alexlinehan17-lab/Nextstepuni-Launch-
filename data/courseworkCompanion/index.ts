@@ -343,6 +343,168 @@ export const COURSEWORK_COMPONENTS: CourseworkComponent[] = [
     sourceUrl: ARCHIVE,
   },
 
+  // ── Music — Performing practical (2024 scheme, Higher Level) ──────────────
+  {
+    id: 'music|performing',
+    subjectId: 'music',
+    subjectLabel: 'Music',
+    name: 'Performing (Practical Examination)',
+    whatItIs:
+      'A practical performing examination in a chosen activity (solo or group performance, solo singing to own accompaniment, music technology, conducting or improvisation), plus unprepared tests.',
+    totalMarks: 100,
+    criteria: [
+      {
+        name: 'I — Control of the medium',
+        marks: 20,
+        whatItRewards: 'Command of the instrument/voice (or the chosen medium) across the performance.',
+      },
+      {
+        name: 'II — Chosen music and standard of performance',
+        marks: 60,
+        whatItRewards: 'The programme performed and the standard achieved in it.',
+      },
+      {
+        name: 'III — Unprepared tests',
+        marks: 20,
+        whatItRewards: 'Sight reading, aural memory or improvisation test, marked on the printed grid.',
+      },
+    ],
+    criteriaComplete: true,
+    structure:
+      'The grid above is the printed one-activity structure; the scheme prints variant grids for each activity (music technology splits I and II between technology and performing), a two-activity split (10 + 30 per activity, plus the 20-mark unprepared tests), and a 200-mark Higher Level Elective variant (40 + 140 + 20). No percentage weighting is printed in the scheme.',
+    source:
+      'SEC Marking Scheme 2024, Music Higher Level — Performing — © State Examinations Commission',
+    filed: 'examiner-reports/music/2024-marking-scheme.md',
+    sourceUrl: ARCHIVE,
+  },
+
+  // ── Music — Composing elective (2024 scheme, Higher Level) ────────────────
+  {
+    id: 'music|composing-elective',
+    subjectId: 'music',
+    subjectLabel: 'Music',
+    name: 'Composing (Higher Level Elective)',
+    whatItIs:
+      'A portfolio of original composition submitted for the Higher Level Composing elective, marked holistically against printed descriptor bands.',
+    totalMarks: 100,
+    criteria: [
+      {
+        name: 'Holistic descriptor bands',
+        marks: 100,
+        whatItRewards: 'One holistic judgement against the printed bands: 85–100 / 70–84 / 55–69 / 40–54 / 25–39 / 10–24 / 0–9.',
+      },
+    ],
+    criteriaComplete: true,
+    structure:
+      'Marked as a whole against the printed descriptor bands — the scheme prints no per-element mark breakdown for the elective portfolio.',
+    source:
+      'SEC Marking Scheme 2024, Music Higher Level — Composing Elective — © State Examinations Commission',
+    filed: 'examiner-reports/music/2024-marking-scheme.md',
+    sourceUrl: ARCHIVE,
+  },
+
+  // ── History — Research Study Report (2025 scheme, Higher Level) ───────────
+  {
+    id: 'history|research-study-report',
+    subjectId: 'history',
+    subjectLabel: 'History',
+    name: 'Research Study Report (RSR)',
+    whatItIs:
+      'A pre-submitted report on a self-chosen historical research study: an outline plan, an evaluation of the sources, and an extended essay.',
+    totalMarks: 100,
+    criteria: [
+      {
+        name: 'Outline Plan',
+        marks: 15,
+        whatItRewards: 'Citation of three sources (2 marks each, 6); defining/justifying the subject (3), aims (3) and approach (3).',
+      },
+      {
+        name: 'Evaluation of the Sources',
+        marks: 25,
+        whatItRewards: 'Banded; the printed ceiling depends on how many sources are referenced (three / two / one).',
+      },
+      {
+        name: 'Extended Essay',
+        marks: 60,
+        whatItRewards: 'Banded across historical knowledge (25), research skills (15), presentation (10) and review of the research process (10).',
+      },
+    ],
+    criteriaComplete: true,
+    structure:
+      'The 2024 and 2025 Higher Level schemes print the identical 100-mark grid. No percentage weighting or submission deadline is printed in the schemes.',
+    source:
+      'SEC Marking Scheme 2025, History Higher Level — Research Study Report — © State Examinations Commission',
+    filed: 'examiner-reports/history/2025-marking-scheme.md',
+    sourceUrl: ARCHIVE,
+  },
+
+  // ── Politics & Society — Citizenship Project (2025 scheme, Higher Level) ──
+  {
+    id: 'politics-and-society|citizenship-project',
+    subjectId: 'politics-and-society',
+    subjectLabel: 'Politics and Society',
+    name: 'Citizenship Project Report',
+    whatItIs:
+      'A written report on a citizenship project (individual or group action), marked across three sections: rationale and research, execution, and reflections.',
+    // The scheme prints the three section totals but no overall project total.
+    totalMarks: null,
+    criteria: [
+      {
+        name: 'Section A — Rationale and Research',
+        marks: 35,
+        whatItRewards: 'Rationale for the action (7), aims and action plan (12), findings and sources (12), references and bibliography (4) — banded.',
+      },
+      {
+        name: 'Section B — Execution of citizenship project',
+        marks: 45,
+        whatItRewards: 'Summary of the actions undertaken (15), critical analysis of the action plan (15), outcomes (15) — banded.',
+      },
+      {
+        name: 'Section C — Reflections on knowledge gained and skills developed',
+        marks: 20,
+        whatItRewards: 'Knowledge gained (6), skills developed (6), reflection (4), feedback and learning (4) — banded.',
+      },
+    ],
+    criteriaComplete: true,
+    structure:
+      'Each element is marked by a printed Excellent/Very Good/Good/Fair band within its marks. The criteria and bands are identical in the 2024 and 2025 Higher Level schemes; no overall project total or percentage weighting is printed.',
+    source:
+      'SEC Marking Scheme 2025, Politics and Society Higher Level — Citizenship Project — © State Examinations Commission',
+    filed: 'examiner-reports/politics-society/2025-marking-scheme.md',
+    sourceUrl: ARCHIVE,
+  },
+
+  // ── Religious Education — Coursework (2025 scheme, Higher Level) ──────────
+  {
+    id: 'religious-education|coursework',
+    subjectId: 'religious-education',
+    subjectLabel: 'Religious Education',
+    name: 'Coursework (Coursework Booklet)',
+    whatItIs:
+      'A coursework booklet on one prescribed title: Part A summarises the investigation undertaken, Part B is a personal reflection on it.',
+    // The scheme prints a banded 0–40 grid per part but no coursework total.
+    totalMarks: null,
+    criteria: [
+      {
+        name: 'Part A — Summary of the investigation',
+        marks: 40,
+        whatItRewards: 'Banded (40>34 / 33>28 / 27>22 / 21>16 / 15>0) across sources, steps and skills, and findings with supporting evidence.',
+      },
+      {
+        name: 'Part B — Personal reflection',
+        marks: 40,
+        whatItRewards: 'Banded (same grid) across interest in the title, perspectives encountered, questions arising, insights gained and its value.',
+      },
+    ],
+    criteriaComplete: true,
+    structure:
+      'Each part is marked by one printed 0–40 band; the listed elements are the scheme’s descriptor rows and carry no individual marks. The schemes print no coursework total or percentage weighting.',
+    source:
+      'SEC Marking Scheme 2025, Religious Education Higher Level — Coursework — © State Examinations Commission',
+    filed: 'examiner-reports/religious-education/2025-marking-scheme.md',
+    sourceUrl: ARCHIVE,
+  },
+
   // ── Geography — Geographical Investigation (2025 scheme) ──────────────────
   {
     id: 'geography|geographical-investigation',

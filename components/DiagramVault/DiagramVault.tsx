@@ -51,8 +51,10 @@ const DiagramTile: React.FC<{ entry: DiagramEntry }> = ({ entry }) => {
     .filter(Boolean)
     .join(' · ');
   return (
-    <figure className="rounded-2xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-zinc-900 overflow-hidden flex flex-col">
-      <div className="bg-[#f7f6f4] dark:bg-zinc-800 border-b border-[#e6e2dc] dark:border-zinc-700 p-3 flex items-center justify-center">
+    // Cards stay white in dark mode (design system: all cards white) — the
+    // inline ink text depends on it.
+    <figure className="rounded-2xl border-2 border-[#d0cdc8] bg-white overflow-hidden flex flex-col">
+      <div className="bg-[#f7f6f4] border-b border-[#e6e2dc] p-3 flex items-center justify-center">
         <img
           src={entry.src}
           alt={entry.alt}
@@ -123,8 +125,8 @@ const DiagramVault: React.FC<Props> = ({ studentSubjects = [] }) => {
         <button onClick={() => { setSubjectId(null); setTopicFilter('all'); }} className="flex items-center gap-1.5 text-[13px] font-medium mb-4" style={{ color: '#7a7068' }}>
           <ArrowLeft size={15} /> All subjects
         </button>
-        <h2 className="text-2xl font-semibold mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{subjectLabel(subjectId)}</h2>
-        <p className="text-[13px] mb-4" style={{ color: '#7a7068' }}>
+        <h2 className="text-2xl font-semibold mb-1 text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>{subjectLabel(subjectId)}</h2>
+        <p className="text-[13px] mb-4 text-[#7a7068] dark:text-zinc-400">
           {entries.length} exam figure{entries.length === 1 ? '' : 's'} — each cropped from a real paper, with its decoded description and exam source.
         </p>
         {topicChips.length > 1 && (
@@ -134,7 +136,7 @@ const DiagramVault: React.FC<Props> = ({ studentSubjects = [] }) => {
                 key={t}
                 aria-pressed={topicFilter === t}
                 onClick={() => setTopicFilter(t)}
-                className={`shrink-0 px-3 py-1 rounded-full text-[12px] font-semibold border-2 transition-colors ${topicFilter === t ? '' : 'bg-white dark:bg-zinc-900'}`}
+                className={`shrink-0 px-3 py-1 rounded-full text-[12px] font-semibold border-2 transition-colors ${topicFilter === t ? '' : 'bg-white'}`}
                 style={topicFilter === t
                   ? { backgroundColor: ACCENT, borderColor: ACCENT, color: '#fff' }
                   : { borderColor: '#d0cdc8', color: '#7a7068' }}
@@ -154,10 +156,10 @@ const DiagramVault: React.FC<Props> = ({ studentSubjects = [] }) => {
   // ── Level 0: subject picker (tool exit is handled by the zone's ToolHeader) ──
   return (
     <div className="w-full max-w-xl mx-auto pb-12">
-      <h2 className="text-2xl font-semibold mb-1 flex items-center gap-2" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>
+      <h2 className="text-2xl font-semibold mb-1 flex items-center gap-2 text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>
         <ImageIcon size={20} style={{ color: ACCENT }} /> Diagram Vault
       </h2>
-      <p className="text-[13.5px] leading-relaxed mb-5" style={{ color: '#5a5550' }}>
+      <p className="text-[13.5px] leading-relaxed mb-5 text-[#5a5550] dark:text-zinc-400">
         Every diagram, graph, map and chart that has come up in the exams — cropped straight from the paper and decoded. The one you have to draw or read for the marks, shown to you first.
       </p>
       {subjects.length === 0 ? (

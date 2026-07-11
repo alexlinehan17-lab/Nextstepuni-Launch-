@@ -57,8 +57,15 @@ below.
 | Engineering | Practical Examination | 100 ("100 Marks (× 1.5 = 150 Total)" printed) | Five 20-mark sections (test-piece + four part groups); Day 1/2/3 grids identical in structure | `engineering/2025-marking-scheme.md` |
 | Art | Practical Coursework & Invigilated Practical | — (printed separately: 250 = 50%, 100 = 20%) | Per-artefact criteria: Investigation 10, Primary sources 25, Development 40, Realised artefact 90, Areas of practice 10; Low/Moderate/High banding printed | `art/2024-visual-studies-marking-scheme.md` |
 | Geography | Geographical Investigation | — (no total printed) | Introduction 5, Planning 5, Gathering 40, Results/Conclusions/Evaluation 30, Organisation & Presentation 20; section-locked marking printed | `geography/2025-marking-scheme.md` |
+| Music | Performing (Practical Examination) | 100 | Control of medium 20, Chosen music & standard 60, Unprepared tests 20 (one-activity grid; variants for each activity, the two-activity split and the 200-mark Elective are printed and noted in `structure`) | `music/2024-marking-scheme.md` |
+| Music | Composing (Higher Level Elective) | 100 | Holistic descriptor bands (85–100 … 0–9) as printed — no per-element breakdown exists | `music/2024-marking-scheme.md` |
+| History | Research Study Report | 100 | Outline Plan 15 (citation 6 = 2×3 sources; define/justify 3, aims 3, approach 3), Evaluation of Sources 25 (banded, ceiling by source count), Extended Essay 60 (knowledge 25, research 15, presentation 10, review 10); grid identical 2024/2025 | `history/2025-marking-scheme.md` |
+| Politics & Society | Citizenship Project Report | — (no overall total printed) | Section A Rationale & Research 35 (7/12/12/4), Section B Execution 45 (15/15/15), Section C Reflections 20 (6/6/4/4) — banded; identical 2024/2025 | `politics-society/2025-marking-scheme.md` |
+| Religious Education | Coursework (Coursework Booklet) | — (no total printed) | Part A summary 40 (banded 40>34…15>0), Part B reflection 40 (same grid); descriptor rows carry no individual marks — reproduced as banded, never invented ("20%" appears only in repo insights files, so it is NOT stated) | `religious-education/2025-marking-scheme.md` |
 
-**8 components across 7 subjects.** Honest omissions:
+**13 components across 11 subjects** (wave 2 added Music ×2, History RSR,
+Politics & Society Citizenship Project and Religious Education coursework).
+Honest omissions:
 - **LCVP** — its filed scheme covers the written paper only (no portfolio
   criteria printed), so it is absent rather than padded from uncited sources.
 - **Engineering Technology Project** — the filed scheme carries no project

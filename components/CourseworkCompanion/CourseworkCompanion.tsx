@@ -36,7 +36,9 @@ interface Props {
 const ComponentCard: React.FC<{ component: CourseworkComponent }> = ({ component }) => {
   const [open, setOpen] = useState(false);
   return (
-    <article className="rounded-2xl border-2 bg-white dark:bg-zinc-900 overflow-hidden" style={{ borderColor: '#d0cdc8' }}>
+    // Cards stay white in dark mode (design system: all cards white) — the
+    // inline ink text depends on it.
+    <article className="rounded-2xl border-2 bg-white overflow-hidden" style={{ borderColor: '#d0cdc8' }}>
       <div className="p-4 sm:p-5">
         <div className="flex items-start justify-between gap-2 mb-1.5">
           <h3 className="text-[17px] font-semibold leading-snug" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>
@@ -124,8 +126,8 @@ const CourseworkCompanion: React.FC<Props> = ({ studentSubjects = [] }) => {
         <button onClick={() => setSubjectId(null)} className="flex items-center gap-1.5 text-[13px] font-medium mb-4" style={{ color: '#7a7068' }}>
           <ArrowLeft size={15} /> All subjects
         </button>
-        <h2 className="text-2xl font-semibold mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{subjectLabel(subjectId)}</h2>
-        <p className="text-[13px] mb-4" style={{ color: '#7a7068' }}>
+        <h2 className="text-2xl font-semibold mb-1 text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>{subjectLabel(subjectId)}</h2>
+        <p className="text-[13px] mb-4 text-[#7a7068] dark:text-zinc-400">
           {components.length} coursework component{components.length === 1 ? '' : 's'} — each marked exactly as the filed SEC scheme prints it.
         </p>
         <div className="flex flex-col gap-4">
@@ -138,10 +140,10 @@ const CourseworkCompanion: React.FC<Props> = ({ studentSubjects = [] }) => {
   // ── Level 0: subject picker ──
   return (
     <div className="w-full max-w-xl mx-auto pb-12">
-      <h2 className="text-2xl font-semibold mb-1 flex items-center gap-2" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>
+      <h2 className="text-2xl font-semibold mb-1 flex items-center gap-2 text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>
         <FolderCheck size={20} style={{ color: ACCENT }} /> Coursework Companion
       </h2>
-      <p className="text-[13.5px] leading-relaxed mb-5" style={{ color: '#5a5550' }}>
+      <p className="text-[13.5px] leading-relaxed mb-5 text-[#5a5550] dark:text-zinc-400">
         The coursework, project and practical components — what each one is and exactly how the SEC scheme marks it, criterion by criterion, straight from the filed marking scheme.
       </p>
       {subjects.length === 0 ? (

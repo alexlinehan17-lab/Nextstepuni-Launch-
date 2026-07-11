@@ -67,7 +67,9 @@ const SkeletonCard: React.FC<{ skeleton: AnswerSkeleton }> = ({ skeleton }) => {
   const [open, setOpen] = useState(false);
   const meta = `${levelLabel(skeleton.level)} · ${skeleton.year}`;
   return (
-    <article className="rounded-2xl border-2 bg-white dark:bg-zinc-900 overflow-hidden" style={{ borderColor: '#d0cdc8' }}>
+    // Cards stay white in dark mode (design system: all cards white) — the
+    // inline ink text depends on it.
+    <article className="rounded-2xl border-2 bg-white overflow-hidden" style={{ borderColor: '#d0cdc8' }}>
       <div className="p-4 sm:p-5">
         <div className="flex items-start justify-between gap-2 mb-2">
           <div>
@@ -150,8 +152,8 @@ const AnswerArchitect: React.FC<Props> = ({ studentSubjects = [] }) => {
         <button onClick={() => setSubjectId(null)} className="flex items-center gap-1.5 text-[13px] font-medium mb-4" style={{ color: '#7a7068' }}>
           <ArrowLeft size={15} /> All subjects
         </button>
-        <h2 className="text-2xl font-semibold mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{subjectLabel(subjectId)}</h2>
-        <p className="text-[13px] mb-4" style={{ color: '#7a7068' }}>
+        <h2 className="text-2xl font-semibold mb-1 text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>{subjectLabel(subjectId)}</h2>
+        <p className="text-[13px] mb-4 text-[#7a7068] dark:text-zinc-400">
           {skeletons.length} answer skeleton{skeletons.length === 1 ? '' : 's'} — each a real exam question, built as the ordered beats the SEC scheme awards marks for.
         </p>
         <div className="flex flex-col gap-4">
@@ -164,10 +166,10 @@ const AnswerArchitect: React.FC<Props> = ({ studentSubjects = [] }) => {
   // ── Level 0: subject picker (tool exit handled by the zone's ToolHeader) ──
   return (
     <div className="w-full max-w-xl mx-auto pb-12">
-      <h2 className="text-2xl font-semibold mb-1 flex items-center gap-2" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>
+      <h2 className="text-2xl font-semibold mb-1 flex items-center gap-2 text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>
         <ListChecks size={20} style={{ color: ACCENT }} /> Answer Architect
       </h2>
-      <p className="text-[13.5px] leading-relaxed mb-5" style={{ color: '#5a5550' }}>
+      <p className="text-[13.5px] leading-relaxed mb-5 text-[#5a5550] dark:text-zinc-400">
         The mark-earning skeleton of a top answer. For real exam questions, see the shape of a full-marks answer and every beat it is built from — in order, with the marks the SEC scheme awards each one.
       </p>
       {subjects.length === 0 ? (
