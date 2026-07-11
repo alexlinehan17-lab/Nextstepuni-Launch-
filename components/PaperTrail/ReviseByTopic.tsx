@@ -11,7 +11,7 @@
  * (which reuses the cross-year jump).
  */
 
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { ArrowLeft, ChevronRight, Layers, Download, Search, X, Link2, Check as CheckIcon } from 'lucide-react';
 import SubjectTilePicker from '../shared/SubjectTilePicker';
 import { siblingsFor, taggedYearsForSubject, topicLabel, topicsForSubject, type SubjectTopic, type TopicSibling } from './topics';
@@ -31,17 +31,20 @@ interface Props {
   mineIds: string[];
   uid?: string;
   subjectLabel: (id: string) => string;
-  onOpenQuestion: (t: TopicSibling) => void;
+  /** Re-open the feed at this subject/topic — set when returning from a
+   *  "Full paper" round-trip (the parent carries it on the viewer view). */
+  restore?: { subjectId: string; subtopicId: string };
+  onOpenQuestion: (t: TopicSibling, origin: { subjectId: string; subtopicId: string }) => void;
   onBack: () => void;
 }
 
-const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, onOpenQuestion, onBack }) => {
+const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, restore, onOpenQuestion, onBack }) => {
   // A shared "?subject=…&topic=…" link opens the vault straight at that topic
   // (consumed once per load — see vaultDeepLink; safe, never touches history).
   const [boot] = useState(() => consumeInitialVaultLocation());
   const [scope, setScope] = useState<'mine' | 'all'>(mineIds.length ? 'mine' : 'all');
-  const [subjectId, setSubjectId] = useState<string | null>(boot?.subjectId ?? null);
-  const [subtopicId, setSubtopicId] = useState<string | null>(boot?.subtopicId ?? null);
+  const [subjectId, setSubjectId] = useState<string | null>(restore?.subjectId ?? boot?.subjectId ?? null);
+  const [subtopicId, setSubtopicId] = useState<string | null>(restore?.subtopicId ?? boot?.subtopicId ?? null);
   const [copied, setCopied] = useState(false);
   const [sort, setSort] = useState<'busiest' | 'frequent'>('busiest');
   const [levelFilter, setLevelFilter] = useState<'all' | string>('all');
@@ -51,6 +54,16 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
 
   // The vault feed keeps a small pool of open PDFs — release them on exit.
   useEffect(() => () => releaseVaultPdfs(), []);
+  // Drilling in/out replaces the whole view, so the focused element vanishes
+  // and focus falls back to <body>. Land keyboard/screen-reader users on the
+  // new level's heading instead (skipping the initial mount — no focus theft).
+  const level = subjectId ? (subtopicId ? 2 : 1) : 0;
+  const headingRef = useRef<HTMLHeadingElement | null>(null);
+  const prevLevel = useRef(level);
+  useEffect(() => {
+    if (prevLevel.current !== level) headingRef.current?.focus();
+    prevLevel.current = level;
+  }, [level]);
   // A new topic starts with fresh level + year filters.
   useEffect(() => { setLevelFilter('all'); setYearFilter('all'); }, [subtopicId]);
   // Reset the topic search when switching subjects.
@@ -121,7 +134,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
         <button onClick={() => setSubtopicId(null)} className="flex items-center gap-1.5 text-[13px] font-medium mb-4" style={{ color: '#7a7068' }}>
           <ArrowLeft size={15} /> {subjectLabel(subjectId)} topics
         </button>
-        <h2 className="text-2xl font-semibold mb-1 text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>{topicLabel(subtopicId)}</h2>
+        <h2 ref={headingRef} tabIndex={-1} className="text-2xl font-semibold mb-1 outline-none text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>{topicLabel(subtopicId)}</h2>
         <p aria-live="polite" className="text-[13px] mb-3" style={{ color: '#7a7068' }}>
           {levelFilter === 'all' && yearFilter === 'all'
             ? <>{questions.length} question{questions.length === 1 ? '' : 's'} across {years.size} year{years.size === 1 ? '' : 's'}, newest first — each shown as printed on the paper, marking scheme one tap below.</>
@@ -211,7 +224,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
                 sibling={q}
                 saved={saved}
                 onToggleReview={() => toggleReview(q)}
-                onOpenInPaper={() => onOpenQuestion(q)}
+                onOpenInPaper={() => onOpenQuestion(q, { subjectId, subtopicId })}
               />
             );
           })}
@@ -227,7 +240,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
         <button onClick={() => setSubjectId(null)} className="flex items-center gap-1.5 text-[13px] font-medium mb-4" style={{ color: '#7a7068' }}>
           <ArrowLeft size={15} /> All subjects
         </button>
-        <h2 className="text-2xl font-semibold mb-1 text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>{subjectLabel(subjectId)}</h2>
+        <h2 ref={headingRef} tabIndex={-1} className="text-2xl font-semibold mb-1 outline-none text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>{subjectLabel(subjectId)}</h2>
         <p className="text-[13px] mb-3" style={{ color: '#7a7068' }}>Pick a topic to drill every past question on it.</p>
         {/* Sort: busiest by question count, or by how many years it recurs. */}
         <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50 w-fit mb-4" role="group" aria-label="Sort topics">
@@ -322,7 +335,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
       <button onClick={onBack} className="flex items-center gap-1.5 text-[13px] font-medium mb-4" style={{ color: '#7a7068' }}>
         <ArrowLeft size={15} /> Paper Trail
       </button>
-      <h2 className="text-2xl font-semibold mb-1 flex items-center gap-2" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>
+      <h2 ref={headingRef} tabIndex={-1} className="text-2xl font-semibold mb-1 flex items-center gap-2 outline-none" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>
         <Layers size={20} style={{ color: ACCENT }} /> Topic Vault
       </h2>
       <p className="text-[13.5px] leading-relaxed mb-5" style={{ color: '#5a5550' }}>

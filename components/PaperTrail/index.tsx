@@ -136,9 +136,13 @@ const StudyTile: React.FC<{
 // simulated remount, and the module flag stops a second application).
 let bootApplied = false;
 
+/** A Topic Vault feed launch origin — closing the viewer returns here instead
+ *  of the subject paper list, so a "Full paper" round-trip keeps the feed. */
+type VaultOrigin = { subjectId: string; subtopicId: string };
+
 type View =
   | { v: 'home' }
-  | { v: 'revise' }
+  | { v: 'revise'; restore?: VaultOrigin }
   | { v: 'review' }
   | { v: 'progress' }
   | { v: 'mock' }
@@ -157,6 +161,9 @@ type View =
       schemePage?: number;
       /** Cross-year jump landing target — scroll here once anchors load. */
       focusQuestion?: string;
+      /** Set when launched from the Topic Vault feed — onClose routes back
+       *  there (with the subject/topic restored) instead of the paper list. */
+      from?: VaultOrigin;
     };
 
 interface PaperTrailProps {
@@ -340,15 +347,18 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   );
 
   // Cross-year topic jump: resolve the sibling's paper from the index and open
-  // it on the paper side, focused on the target question.
-  const openCrossYear = useCallback((t: TopicSibling) => {
+  // it on the paper side, focused on the target question. `from` marks a Topic
+  // Vault feed launch so close returns there; a cross-year jump made INSIDE a
+  // viewer inherits the previous viewer's origin (the round-trip still ends
+  // back at the feed). Non-vault callers pass nothing — behaviour unchanged.
+  const openCrossYear = useCallback((t: TopicSibling, from?: VaultOrigin) => {
     if (!subjectById.has(t.subjectId)) return;
     const entry = (PAPER_TRAIL_INDEX[t.subjectId] ?? []).find(
       e => e.year === t.year && e.level === t.level && e.lang === t.lang,
     );
     const item = entry?.papers.find(p => p.doc.f === t.fileid);
     if (!item) return;
-    setView({
+    setView(prev => ({
       v: 'viewer',
       subjectId: t.subjectId,
       year: t.year,
@@ -357,7 +367,8 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
       item,
       side: 'paper',
       focusQuestion: t.n,
-    });
+      from: from ?? (prev.v === 'viewer' ? prev.from : undefined),
+    }));
   }, []);
 
   // ── local recents + pins (recentsStore) ──
@@ -477,7 +488,13 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
         initialSide={view.side}
         initialPaperPage={view.paperPage ?? 1}
         initialSchemePage={view.schemePage ?? 1}
-        onClose={() => setView({ v: 'subject', subjectId: view.subjectId })}
+        onClose={() =>
+          setView(
+            view.from
+              ? { v: 'revise', restore: view.from }
+              : { v: 'subject', subjectId: view.subjectId },
+          )
+        }
         onPosition={(side, page) => updatePage(key, page, side)}
       />
     );
@@ -496,6 +513,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
         mineIds={inCycleTagged.filter(s => matchesStudent(s, mineNames)).map(s => s.id)}
         uid={uid}
         subjectLabel={id => displayName(subjectById.get(id)?.name ?? id)}
+        restore={view.restore}
         onOpenQuestion={openCrossYear}
         onBack={() => setView({ v: 'home' })}
       />

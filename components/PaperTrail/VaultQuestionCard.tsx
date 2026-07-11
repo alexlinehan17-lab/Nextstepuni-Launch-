@@ -32,21 +32,33 @@ const LVL: Record<string, string> = { higher: 'Higher', ordinary: 'Ordinary', fo
 // (a scheme-reveal / review-star toggle would otherwise re-decode the crop).
 const paperCropLabel = (p: number) => `Exam paper page ${p}, shown as an image — © State Examinations Commission`;
 
-// Session-scoped answer-map memo (small JSON sidecars; null = fetch failed /
-// not published yet — the card degrades to a plain open-in-paper row).
-// isAnswerMap guards the shape: the hosted fallback path is served by Firebase
-// Hosting, whose SPA rewrite answers missing files with index.html (200).
+// Session-scoped answer-map memo (small JSON sidecars; null = miss — the card
+// degrades to a plain open-in-paper row). PERMANENT misses stay memoised: a
+// 404 (sidecar not published) or a shape/parse failure — the hosted fallback
+// path is served by Firebase Hosting, whose SPA rewrite answers missing files
+// with index.html (200), which isAnswerMap rejects — won't change this session,
+// and every card in a feed re-asks as it scrolls into view. Only TRANSIENT
+// failures (network throw, non-404 error status) are forgotten, so a retry
+// after coming back online gets a fresh attempt.
 const mapMemo = new Map<string, Promise<PaperAnswerMap | null>>();
 const fetchOneMap = (url: string): Promise<PaperAnswerMap | null> => {
   let p = mapMemo.get(url);
   if (!p) {
-    p = fetch(url)
-      .then(r => (r.ok ? r.json() : null))
-      .then(v => (isAnswerMap(v) ? v : null))
-      .catch(() => null);
+    p = (async () => {
+      try {
+        const r = await fetch(url);
+        if (!r.ok) {
+          if (r.status !== 404) mapMemo.delete(url); // 5xx/429 may recover
+          return null;
+        }
+        const v = await r.json().catch(() => null); // HTML from the SPA rewrite
+        return isAnswerMap(v) ? v : null;
+      } catch {
+        mapMemo.delete(url); // offline / network blip — let a remount retry
+        return null;
+      }
+    })();
     mapMemo.set(url, p);
-    // Don't memoise transient failures forever.
-    p.then(v => { if (v === null) mapMemo.delete(url); });
   }
   return p;
 };
