@@ -213,12 +213,18 @@ SUBJECT_GRAMMAR = {
     # every era (2026-07 wave).
     "latin": "lead_int",
     "ancient-greek": "lead_int",
-    # arabic ships NOTHING: the text layer carries no per-question markers of
-    # any grammar. CAUTION — the ONLY lead_int hits are the cover-page
-    # instructions list ('1. Read these directions…', all five on p1), which
-    # would PASS the contiguity proof (single-page anchor span, no other
-    # markers → span ratio 1.0) and ship a garbage sidecar; the pin keeps
-    # lead_int out so every paper drops on coverage (2026-07 wave).
+    # arabic ships NOTHING from THIS pipeline: it is an RTL paper whose
+    # markers are right-margin Arabic-Indic numerals (invisible to every
+    # left-margin detector), and its vault tags are SUBPART-numbered, so even
+    # the TV-14 RTL marker scan must not anchor it directly (dual-numbering
+    # trap — printed 1..14 vs tag n 1..17/20). Its hosted sidecars come from
+    # anchors_from_answers.py (TV-14): the scheme-verified classics converted
+    # to paper-only anchors after per-anchor verification against
+    # rtl_marker_rows. CAUTION — the ONLY lead_int hits here are the
+    # cover-page instructions list ('1. Read these directions…', all five on
+    # p1), which would PASS the contiguity proof (single-page anchor span, no
+    # other markers → span ratio 1.0) and ship a garbage sidecar; the pin
+    # keeps lead_int out so every paper drops on coverage (2026-07 wave).
     "arabic": "question",
     # mandarin-chinese prints 'Question N' (new-spec subject, 2022+).
     # CAUTION: cover/instruction lines ('Answer either Question 1 OR
@@ -911,6 +917,113 @@ def clamp_ends(anchors, boundaries):
         if nxt is None or b < nxt:
             ends[i] = b
     return ends
+
+
+# ── RTL / Arabic-Indic marker capability (TV-14) ─────────────────────────────
+# Right-to-left papers (arabic, LC059) print their question markers at the
+# RIGHT page margin as Arabic-Indic numerals ('٧ .' — U+0660-0669, sometimes
+# the U+06F0-06F9 forms or even ASCII digits, era-dependent), so none of the
+# left-margin detectors above can see them. rtl_marker_rows() is the RTL
+# mirror of det_lead_int's marker scan: it walks each unrotated page's words
+# grouped into VISUAL rows and yields every row whose rightmost band carries a
+# small numeral, with ALL plausible numeric readings of that token —
+# extraction order of multi-digit Arabic-Indic numbers is inconsistent
+# ('٠١' and '١۰' both mean 10 in different sittings), so a candidate SET
+# {as-printed, digit-reversed} is returned rather than one guessed value.
+#
+# DELIBERATELY NOT REGISTERED IN `DETECTORS`, so it is fully inert: nothing in
+# this module's pipeline calls it, auto runs never compete against it, and
+# contiguity_proof's cross-grammar marked-page scan is unchanged (zero
+# regression by construction). The reason it must not feed build_anchors
+# directly is the dual-numbering trap (see PAPER-ANCHORS.md): arabic's vault
+# tags are SUBPART-numbered (printed Q7's (أ)/(ب)/(ج) parts are separate
+# sequential n), so a printed-number detector would emit n 1..14 against tags
+# n 1..17/20 — wrong crops for every n ≥ 7. Instead, anchors_from_answers.py
+# uses these marker rows as INDEPENDENT VERIFICATION of the scheme-verified
+# classic sidecars (answers/<year>/) before converting them into hosted
+# paper-only anchors (TV-14).
+
+RTL_DIGIT_MAP = {
+    **{chr(0x660 + i): str(i) for i in range(10)},   # ٠-٩ Arabic-Indic
+    **{chr(0x6F0 + i): str(i) for i in range(10)},   # ۰-۹ extended (Persian)
+    **{chr(0x30 + i): str(i) for i in range(10)},    # ASCII (2017 HL mixes them)
+    # Damaged-cmap fold: some sittings (2022 OL, 2023 HL arabic) embed a font
+    # whose ToUnicode maps the whole Arabic block DOWN by 0x447, so the digits
+    # ٠..٩ (U+0660-0669) extract as U+0219-0222 ('ș','Ț',…,'Ȣ'). The shift is
+    # exactly reversible and the folded range collides with nothing else in
+    # those text layers (Arabic LETTERS fold to U+01DA+, punctuation to
+    # U+0225+), verified against every classic anchor of both sittings.
+    **{chr(0x219 + i): str(i) for i in range(10)},
+}
+RTL_MARGIN = 130   # a marker row must END within this of the RIGHT page edge
+                   # (2018-era literature markers '( ٧ )' sit ~108pt in)
+RTL_ZONE = 20      # rightmost band of a row searched for the marker token.
+                   # RTL lines START at the right edge, so a question marker is
+                   # always the row's rightmost element (verified across eras,
+                   # incl. split '1'+'۰' and parenthesised '( ٧ )' forms); a
+                   # WIDER band admits in-question word-count tokens
+                   # ('٧٠ كلمة' ~30pt in) as phantom marker rows.
+RTL_MAX_N = 20     # numeral readings above this are noise (LC059 prints 1..15)
+
+
+def rtl_digit_values(s):
+    """All plausible question-number readings of a word: digits mapped to
+    ASCII, read as-printed AND digit-reversed (multi-digit Arabic-Indic tokens
+    extract in either order), filtered to 1..RTL_MAX_N. Empty when the word
+    carries no digits (or too many to be a marker)."""
+    ds = "".join(RTL_DIGIT_MAP[c] for c in s if c in RTL_DIGIT_MAP)
+    if not ds or len(ds) > 3:
+        return set()
+    return {v for v in (int(ds), int(ds[::-1])) if 1 <= v <= RTL_MAX_N}
+
+
+def rtl_marker_rows(doc):
+    """[(page0, yFrac, value_candidates, row_text)] for every visual row whose
+    rightmost RTL_ZONE band carries a numeral, on rows reaching the right
+    margin of an unrotated page. yFrac is the top of the numeral word. Rows
+    are the RTL analogue of det_lead_int hits, but carry candidate SETS and
+    are meant for cross-validation, not direct anchoring (see block comment)."""
+    rows = []
+    for pi, page in enumerate(doc):
+        if page.rotation:
+            continue
+        W, H = page.rect.width, page.rect.height
+        clusters = []  # [y_top, [words]] — visual rows (±3pt like _row_rest)
+        for w in sorted(page.get_text("words"), key=lambda w: w[1]):
+            for cl in clusters:
+                if abs(cl[0] - w[1]) < 3.0:
+                    cl[1].append(w)
+                    break
+            else:
+                clusters.append([w[1], [w]])
+        for _ytop, ws in clusters:
+            x1 = max(w[2] for w in ws)
+            if x1 < W - RTL_MARGIN:
+                continue
+            vals, ymark = set(), None
+            zone = [w for w in sorted(ws, key=lambda w: w[0])
+                    if w[2] >= x1 - RTL_ZONE]
+            for w in zone:
+                c = rtl_digit_values(w[4])
+                if c:
+                    vals |= c
+                    ymark = w[1] if ymark is None else min(ymark, w[1])
+            # Some sittings split a multi-digit marker ACROSS words ('1' + '۰'
+            # for Q10, 2017 HL), so no single word carries the full reading —
+            # also parse the concatenation of the zone's digit characters.
+            # This only ADDS candidate readings; verification still requires
+            # the expected number at the classic anchor's position.
+            joined = rtl_digit_values("".join(w[4] for w in zone))
+            if joined:
+                vals |= joined
+                if ymark is None:
+                    ymark = min(w[1] for w in zone
+                                if any(ch in RTL_DIGIT_MAP for ch in w[4]))
+            if vals:
+                txt = " ".join(w[4] for w in sorted(ws, key=lambda w: w[0]))
+                rows.append((pi, ymark / H, frozenset(vals), txt))
+    rows.sort(key=lambda r: (r[0], r[1]))
+    return rows
 
 
 DETECTORS = {

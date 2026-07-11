@@ -362,6 +362,71 @@ Note the OL IV LP000 sittings have **no topic-tag entries yet** (tags are keyed
 per year/level/lang/fileid and the LP000-era tags are EV-only); their sidecars
 ship like TV-10's 2016–2019 OL IV ones did, ready for IV tagging.
 
+### TV-14 — Arabic (RTL) shipped via classic-conversion + RTL marker verification
+
+arabic (LC059, one written paper per level, EV only) needed two new pieces:
+
+- **RTL / Arabic-Indic marker capability** — `rtl_marker_rows()` in
+  paper_anchors.py, the right-margin mirror of `det_lead_int`: visual rows
+  whose RIGHTMOST band (20pt — word-count tokens like '٧٠ كلمة' sit ~30pt in
+  and must not read as markers) carries a numeral, on unrotated pages.
+  `RTL_DIGIT_MAP` folds four digit encodings seen in the real corpus:
+  Arabic-Indic ٠-٩, extended ۰-۹, ASCII (2017 HL mixes '1'+'۰' for Q10,
+  split across words — the zone concatenation catches it), and a
+  **damaged-cmap fold** (2022 OL / 2023 HL embed a font whose ToUnicode maps
+  the whole Arabic block down by 0x447, so digits extract as U+0219-0222
+  'ș'…'Ȣ' — exactly reversible, verified against every classic anchor of both
+  sittings). Multi-digit tokens extract in EITHER digit order ('٠١' and '١۰'
+  both mean 10), so rows carry candidate SETS, not one guessed value.
+  **Deliberately NOT registered in `DETECTORS`** — fully inert (nothing in
+  paper_anchors.py calls it; auto runs and the contiguity marked-page scan
+  are unchanged), because a printed-number detector must never anchor arabic
+  directly:
+- **The dual-numbering trap, subpart edition.** The paper numbers its printed
+  questions 1..14 (+15 composition), but the vault tags and the answers-wave
+  classics give each literature subpart its own sequential n ('Q7 (أ)' = n7 …
+  n 1..17 pre-2021, 1..20 after). Detector-emitted n 1..14 would serve wrong
+  crops for every tag n ≥ 7. The repo already carries **scheme-verified
+  classic sidecars for all 31 tagged sittings**
+  (`answers/<year>/LC059…json`, lang_reading.py hand-specs) — but they are
+  NOT live on Storage (all 404; task #94), so the vault served nothing.
+- **`anchors_from_answers.py`** (new) converts those classics into hosted
+  paper-only sidecars, gated by per-anchor cross-validation against
+  `rtl_marker_rows`: every classic anchor must claim its own printed-marker
+  row (right number, right page, anchor at-or-above the row within 0.10;
+  greedy monotonic assignment inside each printed-number group so subpart
+  ORDER is proven; no marker row between crop start and the claimed row; no
+  unclaimed same-number row inside a group's span). The tags are also checked
+  (tag n ⊆ sidecar n). Any failure drops the PAPER.
+- **The verification caught a real classic bug**: 2025 HL n7/n8/n9
+  (Q7 أ/ب/ج) were anchored one row low (0.13/0.24/0.33 — each showing the
+  NEXT subpart; the أ/ب/ج rows print at 0.086/0.128/0.244). Fixed in the
+  classic (paper-side pY only; scheme regions untouched) and re-verified +
+  render-verified — when #94 uploads the classics, the fix ships with them.
+- **Island clamps** — the paper is passage-island shaped (each literature
+  question opens with its own poem/Quran passage), so the LAST question
+  before each boundary (printed groups 6/7/8/9) gets a TV-9 `endP`/`endY`
+  clamp at the end of its OWN page when the next anchor is on a later page
+  (render-proven necessary: 2025 HL n9's unclamped crop swallowed Q8's whole
+  poem page). Completeness is safe by construction — the next printed marker
+  was independently verified on a later page. NOTE the clamps exist only in
+  the hosted copies; when #94 makes the classics live (they'd shadow the
+  hosted files), either port the clamps to `answers/` or accept the bleedier
+  next-anchor crops there.
+
+**Shipped: 27 of 31 sittings** (2012–2025 both levels, plus 2020 HL; 17q or
+20q each, labels preserved), every anchor marker-verified, all clamped crops
+(92) render-QA'd via contact sheets plus targeted crops across eras/encodings
+(2025 HL fixed trio, 2022 OL cmap-fold, 2021 HL generous Q7, 2017 HL
+split-digit Q10, first/last questions). **Dropped 4, correctly**: 2010 HL+OL
+(scanned, no text layer at all) and 2011 HL+OL (custom font cmap extracts as
+'A'-soup — no recoverable digits). Those four classics stay unverified and
+unshipped until #94 uploads them as regular Storage sidecars (they were
+scheme-verified by hand in the answers wave; this pipeline just cannot
+independently confirm them). No `VAULT_PREFER_ANCHORS` entry is needed:
+nothing is live on Storage for arabic, and the future classics carry
+identical anchors by construction.
+
 ### Still deferred
 
 - **french reading papers** — still inert (no reliable arm/disarm header;
