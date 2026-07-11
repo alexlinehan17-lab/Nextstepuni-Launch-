@@ -144,7 +144,9 @@ const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, on
   return (
     <div
       ref={rootRef}
-      className="rounded-2xl bg-white dark:bg-zinc-900 overflow-hidden"
+      // Card stays white in dark mode (design system: all cards white) — the
+      // inline ink text depends on it.
+      className="rounded-2xl bg-white overflow-hidden"
       style={{ border: '2px solid #1a1a1a' }}
     >
       {/* Header row */}

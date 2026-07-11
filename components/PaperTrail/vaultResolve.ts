@@ -57,10 +57,20 @@ export const hostedAnchorsUrl = (year: number, fileid: string) =>
  * vault serves paragraph crops. Every tagged irish fileid has hosted anchors
  * (HL P2 2013-25, OL P2 2013-25, foundation aural 2010-11 — the latter's
  * Storage sidecar 404s anyway, so it changes nothing there). When #94 lands
- * and the corrected answers/ sidecars go live, remove 'irish' from this set
+ * and the corrected answers/ sidecars go live, remove 'irish' from this map
  * to restore the richer crop+reveal maps.
+ *
+ * The preference is PER-FILEID, not per-subject (TV-Q audit finding 1): the
+ * geography dual-numbering conflict only exists on the combined-era single
+ * booklets (…LP000…, one PDF carrying both Part One 1..12 and Part Two 1..12).
+ * The split-era 2020+ booklets (…LP042/LP043…) have unambiguous numbering,
+ * correct Storage sidecars, and NO hosted anchors — a blanket subject rule
+ * starved them into the "can't be shown as a crop yet" fallback.
  */
-export const VAULT_PREFER_ANCHORS = new Set<string>(['geography', 'irish']);
+export const VAULT_PREFER_ANCHORS = new Map<string, (fileid: string) => boolean>([
+  ['geography', fileid => fileid.includes('LP000')],
+  ['irish', () => true],
+]);
 
 /** Ordered answer-map candidates. Normally the verified Storage sidecar first
  *  (it may carry scheme crops), then the hosted paper-only anchors. But for a
@@ -118,7 +128,7 @@ export function resolveSibling(t: TopicSibling): ResolvedSibling | null {
         answersUrl: paperUrl(paperAnswersPath(cycle, t.subjectId, t.year, item.doc.f)),
         anchorsUrl: hostedAnchorsUrl(t.year, item.doc.f),
         paperLabel: item.label,
-        preferAnchors: VAULT_PREFER_ANCHORS.has(t.subjectId),
+        preferAnchors: VAULT_PREFER_ANCHORS.get(t.subjectId)?.(item.doc.f) ?? false,
       }
     : null;
   memo.set(key, out);

@@ -121,7 +121,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
         <button onClick={() => setSubtopicId(null)} className="flex items-center gap-1.5 text-[13px] font-medium mb-4" style={{ color: '#7a7068' }}>
           <ArrowLeft size={15} /> {subjectLabel(subjectId)} topics
         </button>
-        <h2 className="text-2xl font-semibold mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{topicLabel(subtopicId)}</h2>
+        <h2 className="text-2xl font-semibold mb-1 text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>{topicLabel(subtopicId)}</h2>
         <p aria-live="polite" className="text-[13px] mb-3" style={{ color: '#7a7068' }}>
           {levelFilter === 'all' && yearFilter === 'all'
             ? <>{questions.length} question{questions.length === 1 ? '' : 's'} across {years.size} year{years.size === 1 ? '' : 's'}, newest first — each shown as printed on the paper, marking scheme one tap below.</>
@@ -175,7 +175,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
             <button
               aria-pressed={yearFilter === 'all'}
               onClick={() => setYearFilter('all')}
-              className={`shrink-0 px-3 py-1 rounded-full text-[12px] font-semibold border-2 transition-colors ${yearFilter === 'all' ? '' : 'bg-white dark:bg-zinc-900'}`}
+              className={`shrink-0 px-3 py-1 rounded-full text-[12px] font-semibold border-2 transition-colors ${yearFilter === 'all' ? '' : 'bg-white'}`}
               style={yearFilter === 'all'
                 ? { backgroundColor: ACCENT, borderColor: ACCENT, color: '#fff' }
                 : { borderColor: '#d0cdc8', color: '#7a7068' }}
@@ -187,7 +187,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
                 key={y}
                 aria-pressed={yearFilter === y}
                 onClick={() => setYearFilter(y)}
-                className={`shrink-0 px-3 py-1 rounded-full text-[12px] font-semibold tabular-nums border-2 transition-colors ${yearFilter === y ? '' : 'bg-white dark:bg-zinc-900'}`}
+                className={`shrink-0 px-3 py-1 rounded-full text-[12px] font-semibold tabular-nums border-2 transition-colors ${yearFilter === y ? '' : 'bg-white'}`}
                 style={yearFilter === y
                   ? { backgroundColor: ACCENT, borderColor: ACCENT, color: '#fff' }
                   : { borderColor: '#d0cdc8', color: '#7a7068' }}
@@ -227,7 +227,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
         <button onClick={() => setSubjectId(null)} className="flex items-center gap-1.5 text-[13px] font-medium mb-4" style={{ color: '#7a7068' }}>
           <ArrowLeft size={15} /> All subjects
         </button>
-        <h2 className="text-2xl font-semibold mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{subjectLabel(subjectId)}</h2>
+        <h2 className="text-2xl font-semibold mb-1 text-[#1a1a1a] dark:text-zinc-100" style={{ fontFamily: "'Source Serif 4', serif" }}>{subjectLabel(subjectId)}</h2>
         <p className="text-[13px] mb-3" style={{ color: '#7a7068' }}>Pick a topic to drill every past question on it.</p>
         {/* Sort: busiest by question count, or by how many years it recurs. */}
         <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50 w-fit mb-4" role="group" aria-label="Sort topics">
@@ -253,7 +253,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
               onChange={e => setTopicQuery(e.target.value)}
               placeholder={`Search ${sortedTopics.length} topics…`}
               aria-label="Search topics"
-              className="w-full rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-zinc-900 pl-9 pr-9 py-2.5 text-[13.5px] outline-none focus:border-[#F26B1F] transition-colors"
+              className="w-full rounded-xl border-2 border-[#d0cdc8] bg-white pl-9 pr-9 py-2.5 text-[13.5px] outline-none focus:border-[#F26B1F] transition-colors"
               style={{ color: INK }}
             />
             {topicQuery && (
@@ -282,7 +282,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
               <button
                 key={t.subtopicId}
                 onClick={() => setSubtopicId(t.subtopicId)}
-                className="w-full flex items-center gap-3 rounded-xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3.5 py-3 text-left transition-transform active:translate-y-0.5 hover:border-[#F26B1F]"
+                className="w-full flex items-center gap-3 rounded-xl border-2 border-[#d0cdc8] bg-white px-3.5 py-3 text-left transition-transform active:translate-y-0.5 hover:border-[#F26B1F]"
               >
                 <span className="flex-1 min-w-0">
                   <span className="flex items-center gap-2">
