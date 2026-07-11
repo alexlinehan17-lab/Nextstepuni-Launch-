@@ -19,6 +19,16 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    id: '2026-07-coursework-companion',
+    date: 'July 2026',
+    title: 'Coursework Companion — how the projects are marked',
+    lines: [
+      'New tool: the coursework, project and practical components — what each one is and exactly how the SEC scheme marks it, criterion by criterion.',
+      'Every marks figure comes straight from the filed marking scheme, with the source named on every card.',
+      'Starting with Home Economics, Construction Studies, Engineering, DCG, Art, Agricultural Science and Geography.',
+    ],
+  },
+  {
     id: '2026-07-definition-drill',
     date: 'July 2026',
     title: 'Definition Drill — the wording that earns the marks',

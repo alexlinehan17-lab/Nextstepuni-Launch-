@@ -12,7 +12,7 @@ import { FileSearch,
     ArrowLeft,
     Lock, Compass, Target,
     Settings, CalendarDays, Calculator, GitBranch, Rocket,
-    Map, ScanSearch, Milestone, Waypoints, Highlighter, Users, Briefcase, Sunrise, Mic, Stamp, Images, ListChecks, SpellCheck
+    Map, ScanSearch, Milestone, Waypoints, Highlighter, Users, Briefcase, Sunrise, Mic, Stamp, Images, ListChecks, SpellCheck, FolderCheck
 } from 'lucide-react';
 import { doc, setDoc, getDoc, increment } from 'firebase/firestore';
 import { db } from '../firebase';
@@ -41,6 +41,7 @@ const PaperTrail = lazy(() => import('./PaperTrail'));
 const DiagramVault = lazy(() => import('./DiagramVault/DiagramVault'));
 const AnswerArchitect = lazy(() => import('./AnswerArchitect/AnswerArchitect'));
 const DefinitionDrill = lazy(() => import('./DefinitionDrill/DefinitionDrill'));
+const CourseworkCompanion = lazy(() => import('./CourseworkCompanion/CourseworkCompanion'));
 const HowTheyDidIt = lazy(() => import('./HowTheyDidIt'));
 const CareerPaths = lazy(() => import('./CareerPaths'));
 const YourPossibleLife = lazy(() => import('./YourPossibleLife'));
@@ -96,6 +97,7 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   'diagram-vault':   { themeColor: '#F26B1F', eyebrow: 'Understand · Exam diagrams',  subtitle: 'Every diagram, graph, map and chart that has come up — cropped from the paper and decoded.', showHeader: true },
   'answer-architect': { themeColor: '#F26B1F', eyebrow: 'Understand · Top-answer skeletons', subtitle: 'The mark-earning skeleton of a top answer — the beats a full-marks answer hits, in order, from the SEC scheme.', showHeader: true },
   'definition-drill': { themeColor: '#F26B1F', eyebrow: 'Understand · Key definitions', subtitle: 'Drill the exact mark-earning wording the SEC scheme awards the definition marks for.', showHeader: true },
+  'coursework-companion': { themeColor: '#F26B1F', eyebrow: 'Understand · Coursework & projects', subtitle: 'The coursework, project and practical components — marked exactly as the filed SEC scheme prints it.', showHeader: true },
   'command-word-reflex': { themeColor: '#6366F1', eyebrow: 'Technique · Exam skills', subtitle: 'Half of exam technique is reading the question right. Spot the command word in real questions and learn what it’s really asking — and the trap that loses marks.', showHeader: true },
   'how-they-did-it':  { themeColor: '#0E7C6B', eyebrow: 'Mindset · Real stories', subtitle: 'Real people who started where you are — money tight, learning differently, new to the country, first in the family — and the actual moves they made.', showHeader: true },
   'career-paths':     { themeColor: '#0E7C6B', eyebrow: 'Understand · Career discovery', subtitle: 'Real careers — what they pay, the day-to-day, the skills, and the courses that lead there.', showHeader: true },
@@ -606,6 +608,15 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             component: <DefinitionDrill studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} />,
         },
         {
+            id: 'coursework-companion', title: 'Coursework Companion', description: 'The coursework, project and practical components — and exactly how the SEC scheme marks them.', icon: FolderCheck, needsProfile: false,
+            curriculum: 'senior' as const,
+            tag: 'Coursework & projects', accentHex: '#F26B1F', gridClass: 'md:col-span-2',
+            iconBg: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-700 dark:text-orange-300',
+            accentBarColor: 'bg-orange-500', tagBg: 'bg-orange-100 dark:bg-orange-900/30', tagText: 'text-orange-700 dark:text-orange-400',
+            hoverBorder: 'hover:border-orange-400/50 dark:hover:border-orange-500/40',
+            component: <CourseworkCompanion studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} />,
+        },
+        {
             id: 'oral-trainer', title: 'Irish Oral Trainer', description: 'Rehearse the Irish oral out loud, record yourself, and track your readiness on every part.', icon: Mic, needsProfile: false,
             curriculum: 'senior' as const,
             tag: 'Speaking exam', accentHex: '#4C8C5E', gridClass: 'md:col-span-2',
@@ -680,6 +691,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         'diagram-vault': 'understand',
         'answer-architect': 'understand',
         'definition-drill': 'understand',
+        'coursework-companion': 'understand',
         'command-word-reflex': 'understand',
         'oral-trainer': 'understand',
         'examiners-chair': 'understand',

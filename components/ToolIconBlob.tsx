@@ -15,7 +15,7 @@
  *   - IZ active-tool ToolHeader: size=108
  */
 import React from 'react';
-import { type LucideIcon, Mic, Stamp, ListChecks, SpellCheck } from 'lucide-react';
+import { type LucideIcon, Mic, Stamp, ListChecks, SpellCheck, FolderCheck } from 'lucide-react';
 
 export type ToolIconKey =
   | 'journey'
@@ -38,7 +38,8 @@ export type ToolIconKey =
   | 'examiners-chair'
   | 'paper-trail'
   | 'answer-architect'
-  | 'definition-drill';
+  | 'definition-drill'
+  | 'coursework-companion';
 
 interface ToolIconConfig {
   blob: string;
@@ -179,6 +180,13 @@ const TOOLS: Record<ToolIconKey, ToolIconConfig> = {
     blob: '#F3C9B6',
     blobPath: 'M 8 26 Q 0 52 8 78 Q 22 96 54 96 Q 88 94 96 64 Q 100 32 80 10 Q 56 -2 28 8 Q 12 16 8 26 Z',
     icon: SpellCheck,
+    iconColor: '#B54D14',
+    iconScale: 1.0,
+  },
+  'coursework-companion': {
+    blob: '#EFD3A8',
+    blobPath: 'M 4 26 Q 2 56 12 82 Q 26 98 52 96 Q 88 94 96 64 Q 100 34 84 10 Q 60 -4 30 6 Q 10 18 4 26 Z',
+    icon: FolderCheck,
     iconColor: '#B54D14',
     iconScale: 1.0,
   },

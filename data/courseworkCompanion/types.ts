@@ -48,8 +48,10 @@ export interface CourseworkComponent {
   name: string;
   /** One neutral sentence: what the component is. */
   whatItIs: string;
-  /** Total marks the component is marked out of, as printed. */
-  totalMarks: number;
+  /** Total marks the component is marked out of, as printed — null when the
+   *  scheme prints no component total (we never assert an unprinted total,
+   *  even when the criteria happen to sum to a round number). */
+  totalMarks: number | null;
   /** The assessed criteria with printed marks. May be a partial breakdown —
    *  `criteriaComplete` says whether the scheme presents it as the full total. */
   criteria: CourseworkCriterion[];
