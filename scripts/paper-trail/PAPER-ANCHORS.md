@@ -286,9 +286,36 @@ photo*, Q12 clamped at Part Two — no essay bleed). The `geography.json` tags a
 **no new tagging**. Only Part One is cropped — Part Two essays are intentionally
 not (they're `Question N` set-pieces, not the drilled short questions). geography
 stays **unpinned** (its other components anchor via auto); the Part-One sidecars
-come from an explicit `--grammar armed_sectioned` pass. Pre-2016 OL Irish-medium
-papers (older format) and 2017 OL EV (no detected Part Two → conservative tiling
-gate) defer cleanly.
+come from an explicit `--grammar armed_sectioned` pass.
+
+### TV-13 — Geography anchor stragglers recovered (2017 OL EV + 2010–2015 OL IV)
+
+TV-10 deferred 7 LP000 sittings; both classes were **config mismatches**, not
+layout problems, verified against the text layers and fixed in the geography
+armed config only:
+
+- **2017 OL EV** (`LC005GLP000EV`): its `PART TWO – STRUCTURED QUESTIONS` header
+  starts at **x0 = 140.46** — just past the `LEFT_MARGIN_X` (140) strict `<`
+  gate — so the open never fired, Q12 had no clamp, and the paper fell to the
+  conservative tiling gate. (2013 OL IV's `CUID 1` header sits at x0 = 141.1,
+  same failure class.) Fix: an optional per-subject **`margin`** key in
+  `SUBJECT_ARMED_PATTERNS` (geography: 150) that widens the x-gate for
+  **arm/open/disarm header lines only** — question-marker detection still uses
+  `LEAD_INT_X`, and subjects without the key (german, irish) are untouched.
+- **Pre-2016 OL IV** (2010–2015 `LC005GLP000IV`): those years print **`CUID 1 –
+  CEISTEANNA GEARRFHREAGRA`** instead of `CUID A hAON`, so the arm never fired
+  (0 anchored). Fix: extra arm pattern `^CUID 1\b` (`1\b` cannot match `CUID
+  12`; HL IV and 2016+ OL IV print `CUID A hAON`, so it is inert there). Their
+  `CUID A DÓ` open header was already matched.
+
+Re-run of the full 2010–2017 armed pass: **32/32 LP000 papers anchored 12q**;
+the 25 previously-shipped sidecars regenerated **byte-identical** (git-clean),
+only the 7 recovered files are new. Render-QA viewed 2017 EV Q1/Q8/Q12 and IV
+2010 Q1/Q12, 2013 Q1/Q12, 2015 Q11 — right question, complete with figures,
+Q12 clamped just before the PART TWO / CUID A DÓ header (no essay bleed).
+Note the OL IV LP000 sittings have **no topic-tag entries yet** (tags are keyed
+per year/level/lang/fileid and the LP000-era tags are EV-only); their sidecars
+ship like TV-10's 2016–2019 OL IV ones did, ready for IV tagging.
 
 ### Still deferred
 

@@ -408,6 +408,11 @@ SECTIONED_ENABLED = False
 #   • 'arm'    — the question-block header that turns detection ON (re.search).
 #   • 'disarm' — a passage/matching/grammar header that turns detection OFF
 #                without opening a new section (re.search).
+#   • 'margin' — OPTIONAL per-subject x-gate for the header lines above
+#                (default LEFT_MARGIN_X). Question-marker detection is never
+#                affected (still LEAD_INT_X). Added for geography, whose 2017
+#                OL EV 'PART TWO' / 2013 OL IV 'CUID 1' headers print at
+#                x0≈140-142, just past the default 140 gate (TV-13).
 # Every pattern below was verified against the real 2019–2024 text layers.
 #
 # SAFETY — INERT unless the run is EXPLICITLY pinned to 'armed_sectioned'
@@ -465,6 +470,20 @@ SUBJECT_ARMED_PATTERNS = {
     # contents-page entries ('Part One', 'Cuid a hAon') never arm/open. This
     # anchors ONLY Part One (the tagged n 1..12); Part Two is intentionally not
     # cropped. Section 0 keeps bare 'N' labels so n matches the geography tags.
+    #
+    # TV-13 stragglers (verified against the text layers):
+    #   • pre-2016 OL IV (2010-2015 LC005GLP000IV) print 'CUID 1 – CEISTEANNA
+    #     GEARRFHREAGRA' instead of 'CUID A hAON' — hence the extra arm pattern
+    #     ('1\b' cannot match 'CUID 12'; HL IV and 2016+ OL IV keep 'CUID A
+    #     hAON', so the extra pattern is inert there).
+    #   • 2017 OL EV's 'PART TWO …' header starts at x0=140.46 and 2013 OL IV's
+    #     'CUID 1 …' at x0=141.1 — both just past the default LEFT_MARGIN_X
+    #     (140) strict gate, so the open/arm never fired and the papers dropped.
+    #     'margin' widens the HEADER-eligibility x-gate (arm/open/disarm lines
+    #     only — question-marker detection still uses LEAD_INT_X) for this
+    #     subject; every other year's headers sit at x0 ≤ 136, so the widened
+    #     gate matches the same lines (regenerated 2010-2017 sidecars verified
+    #     byte-identical except the two recovered stragglers).
     "geography": {
         "open": [re.compile(p) for p in (
             r"^PART TWO\b",
@@ -472,8 +491,10 @@ SUBJECT_ARMED_PATTERNS = {
             r"^CUID A DÓ\b",
             r"^CUID A TRÍ\b",
         )],
-        "arm": [re.compile(r"^PART ONE\b"), re.compile(r"^CUID A hAON\b")],
+        "arm": [re.compile(r"^PART ONE\b"), re.compile(r"^CUID A hAON\b"),
+                re.compile(r"^CUID 1\b")],
         "disarm": [],
+        "margin": 150,
     },
 }
 
@@ -695,6 +716,10 @@ def det_armed_sectioned(doc):
     section index stays 0 and every label is the bare 'N' — byte-identical to
     det_lead_int, so registering this detector cannot regress any subject."""
     cfg = SUBJECT_ARMED_PATTERNS.get(ACTIVE_SUBJECT) if ARMED_ENABLED else None
+    # Header-eligibility x-gate: per-subject override for papers whose PART/CUID
+    # headers print just past LEFT_MARGIN_X (geography 2017 OL EV / 2013 OL IV).
+    # Applies ONLY to arm/open/disarm header lines — never to question markers.
+    hdr_x = cfg.get("margin", LEFT_MARGIN_X) if cfg else LEFT_MARGIN_X
     hits = []
     sec = 0
     armed = cfg is None  # inert → always armed (== det_lead_int); pinned → wait
@@ -714,7 +739,7 @@ def det_armed_sectioned(doc):
             lines = sorted(lines, key=lambda lw: (round(lw[0][1], 1), lw[0][0]))
         for lw in lines:
             w = lw[0]
-            if cfg and w[0] < LEFT_MARGIN_X:
+            if cfg and w[0] < hdr_x:
                 line = deligature(" ".join(x[4] for x in lw))
                 if any(p.match(line) for p in cfg["open"]):
                     sec += 1
@@ -755,6 +780,7 @@ def armed_section_boundaries(doc):
     cfg = SUBJECT_ARMED_PATTERNS.get(ACTIVE_SUBJECT) if ARMED_ENABLED else None
     if not cfg:
         return []
+    hdr_x = cfg.get("margin", LEFT_MARGIN_X)  # same header x-gate as the detector
     bounds = []
     for pi, page in enumerate(doc):
         if page.rotation:
@@ -763,7 +789,7 @@ def armed_section_boundaries(doc):
         lines = sorted(line_groups(page), key=lambda lw: (round(lw[0][1], 1), lw[0][0]))
         for lw in lines:
             w = lw[0]
-            if w[0] < LEFT_MARGIN_X:
+            if w[0] < hdr_x:
                 line = deligature(" ".join(x[4] for x in lw))
                 if any(p.match(line) for p in cfg["open"]):
                     bounds.append((pi, w[1] / H))
