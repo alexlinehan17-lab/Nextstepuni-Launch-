@@ -50,9 +50,12 @@ exact phrase.
 | Physics | 18 | projected from Marking Lens |
 | Chemistry | 5 | 4 projected + 1 authored (acid, Brønsted–Lowry) |
 | Biology | 2 | authored (enzyme, osmosis) |
-| Engineering | 1 | projected from Marking Lens |
 
-**26 definitions across 4 subjects.** Most are a projection of the Marking Lens
+**25 definitions across 3 subjects.** (Engineering's only definition prompt —
+"define material toughness" — is one the filed scheme awards a bare "4 marks"
+with no wording, encoded in the lens as "a single 4-mark granule", so it carries
+nothing to reveal and is correctly filtered out; `granule` is in the mark-split
+exclusion set alongside "State (2m) + develop (3m)" and the rest.) Most are a projection of the Marking Lens
 corpus — Physics and Chemistry schemes fix the phrase ("Force towards centre of
 circle; that keeps an object moving in a circle"; "−log₁₀; [H⁺]"), whereas most
 subjects' schemes fix only a mark structure for open-ended terms, so those are

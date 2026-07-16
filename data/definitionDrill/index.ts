@@ -84,6 +84,7 @@ const MARK_SPLIT_ONLY = [
   /\d-mark elements?\s+of\s+the\b/i,            // "Two 3-mark elements of the explanation"
   /^three elements\b/i,                        // "Three elements: 4m + 2m + 1m"
   /\bboth terms treated\b/i,                    // "Both terms treated: state (2m) + develop (3m) each"
+  /\bgranule\b/i,                               // Engineering/Physics one-chunk convention: "A single 4-mark granule for the definition" — describes the allocation, no wording to reveal
 ];
 const isMarkSplitOnly = (decoded: string): boolean =>
   MARK_SPLIT_ONLY.some(re => re.test(decoded.trim()));

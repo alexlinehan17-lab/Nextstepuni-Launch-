@@ -39,6 +39,7 @@ const MARK_SPLIT_SHAPES = [
   /\d-mark elements?\s+of\s+the\b/i,
   /^three elements\b/i,
   /\bboth terms treated\b/i,
+  /\bgranule\b/i,
 ];
 
 describe('Definition Drill integrity', () => {
