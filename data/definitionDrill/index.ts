@@ -20,6 +20,7 @@
 
 import { MARKING_LENS } from '../markingLens';
 import type { LensPart, QuestionLens } from '../markingLens/types';
+import { AUTHORED_DEFINITIONS } from './authored';
 
 const SUBJECT_LABELS: Record<string, string> = {
   business: 'Business',
@@ -135,10 +136,18 @@ for (const s of MARKING_LENS) {
   }
 }
 
-/** All drillable definitions, ordered subject → term. */
-export const DRILL_DEFINITIONS: DrillDefinition[] = [...byKey.values()].sort(
-  (a, b) => a.subjectLabel.localeCompare(b.subjectLabel) || a.term.localeCompare(b.term),
-);
+/** All drillable definitions — the Marking Lens projection plus the
+ *  authored-but-strictly-cited extension (./authored.ts) — ordered subject →
+ *  term. Authored entries are deduped against the projection by (subjectId,
+ *  term) so a term the corpus later gains doesn't double up. */
+export const DRILL_DEFINITIONS: DrillDefinition[] = (() => {
+  const projected = [...byKey.values()];
+  const seen = new Set(projected.map(d => `${d.subjectId}|${d.term.toLowerCase()}`));
+  const extra = AUTHORED_DEFINITIONS.filter(d => !seen.has(`${d.subjectId}|${d.term.toLowerCase()}`));
+  return [...projected, ...extra].sort(
+    (a, b) => a.subjectLabel.localeCompare(b.subjectLabel) || a.term.localeCompare(b.term),
+  );
+})();
 
 export interface DrillSubject {
   id: string;

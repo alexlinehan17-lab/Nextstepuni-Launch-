@@ -46,9 +46,19 @@ describe('Definition Drill integrity', () => {
     expect(DRILL_DEFINITIONS.length).toBeGreaterThan(0);
   });
 
-  it('every definition traces to a real Marking Lens part', () => {
-    const orphans = DRILL_DEFINITIONS.filter(d => !partKeys.has(d.id)).map(d => d.id);
+  it('every definition traces to a real Marking Lens part or is an authored-cited entry', () => {
+    // Projected cards key back to a real lens part; authored-but-cited cards
+    // (id "authored|…", verified verbatim against a filed scheme) are exempt
+    // from the lens-key check but still pass the SEC-attribution + wording gates.
+    const orphans = DRILL_DEFINITIONS
+      .filter(d => !d.id.startsWith('authored|') && !partKeys.has(d.id))
+      .map(d => d.id);
     expect(orphans).toEqual([]);
+    // Authored ids must be SEC-attributed to a named filed scheme.
+    const badAuthored = DRILL_DEFINITIONS
+      .filter(d => d.id.startsWith('authored|') && !/SEC Marking Scheme \d{4}/.test(d.source))
+      .map(d => d.id);
+    expect(badAuthored).toEqual([]);
   });
 
   it('no answer is a mark-split description — every reveal carries real wording', () => {

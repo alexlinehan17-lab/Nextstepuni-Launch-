@@ -45,29 +45,39 @@ exact phrase.
 
 ## Coverage (launch — honestly narrow)
 
-| Subject | Definitions |
-|---------|------------:|
-| Physics | 18 |
-| Chemistry | 4 |
+| Subject | Definitions | Source |
+|---------|------------:|--------|
+| Physics | 18 | projected from Marking Lens |
+| Chemistry | 5 | 4 projected + 1 authored (acid, Brønsted–Lowry) |
+| Biology | 2 | authored (enzyme, osmosis) |
+| Engineering | 1 | projected from Marking Lens |
 
-**22 definitions across 2 subjects.** This is the honest ceiling of what the
-*filed schemes currently in the corpus* fix as definition wording — Physics and
-Chemistry schemes fix the phrase ("Force towards centre of circle; that keeps an
-object moving in a circle"; "−log₁₀; [H⁺]"), whereas most other subjects' schemes
-fix only a mark structure for open-ended terms. Definition Drill deepens
-automatically as the Marking Lens corpus adds more fixed-wording definitions — no
-separate authoring step. It is shipped truthfully as "starting with Physics and
-Chemistry" rather than padded with wordless mark-splits.
+**26 definitions across 4 subjects.** Most are a projection of the Marking Lens
+corpus — Physics and Chemistry schemes fix the phrase ("Force towards centre of
+circle; that keeps an object moving in a circle"; "−log₁₀; [H⁺]"), whereas most
+subjects' schemes fix only a mark structure for open-ended terms, so those are
+correctly absent. Definition Drill deepens automatically as the Marking Lens
+corpus adds more fixed-wording definitions.
 
-**Not used:** `data/knowledge/phraseMatch.ts` carries 18 more science
-term→canonical-phrase entries, but its source is the internal knowledge dossier
-(§ B4), **not** a filed SEC scheme. Under Definition Drill's strict rule those
-would each need re-citing to a filed scheme before use — a source-verification
-step (never invention), noted as the honest expansion path.
+**Authored-but-strictly-cited extension (`data/definitionDrill/authored.ts`).**
+A few high-value definitions live in filed schemes not yet in the Marking Lens
+corpus (notably Biology, whose lens entries are marks-only for these terms). Each
+was verified verbatim against its named filed scheme — a re-citation pass over
+`data/knowledge/phraseMatch.ts` (whose original source was the internal § B4
+dossier, not a scheme) confirmed exactly which entries a filed SEC scheme
+literally prints the wording for: **enzyme** ("Protein catalyst", 2023 HL
+Q15(c)(i)), **osmosis** ("Movement of water; from higher to lower water
+concentration across a selectively permeable membrane", 2025 HL Q9(a)) and the
+**Brønsted–Lowry acid** ("proton donor", 2025 HL Q7(a)(i)). The other 15
+phraseMatch entries did NOT verify against a filed scheme (no matching question,
+mark-split only, or materially different wording) and were left out — never
+invented to fill breadth. Authored cards carry an `authored|…` id and are held
+to the same SEC-attribution and real-wording gates as the projected cards.
 
 ## Machine-checked integrity (`test/definitionDrill.test.ts`, every CI run)
 
-1. Non-empty; **every definition traces to a real Marking Lens part**.
+1. Non-empty; **every definition traces to a real Marking Lens part, or is an
+   `authored|…` entry SEC-attributed to a named filed scheme**.
 2. **THE ACCREDITATION GATE** — no `answer` is a mark-split description: every
    reveal carries real wording (asserted against the mark-split pattern set, plus
    a minimum-substance check after stripping mark tags). A card whose reveal is
