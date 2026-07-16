@@ -57,21 +57,45 @@ export const claimStaffAccess = onCall({ cors: true }, async (request) => {
     return { success: true, alreadyStaff: true };
   }
 
+  // Brute-force throttle (security review 2026-07-16, L-7): the staff code is a
+  // guessable shared secret and a correct guess grants full access to minors'
+  // data, so cap failed attempts per caller. Server-side state in a
+  // client-unreadable doc (default-deny covers staffClaimAttempts). Counts only
+  // failures; a success clears the record.
+  const WINDOW_MS = 15 * 60 * 1000;
+  const MAX_FAILURES = 6;
+  const attemptsRef = db.collection("staffClaimAttempts").doc(uid);
+  const now = Date.now();
+  const attempt = (await attemptsRef.get()).data() || {};
+  let failCount = typeof attempt.count === "number" ? attempt.count : 0;
+  let windowStart = typeof attempt.windowStart === "number" ? attempt.windowStart : now;
+  if (now - windowStart > WINDOW_MS) { failCount = 0; windowStart = now; }
+  if (failCount >= MAX_FAILURES) {
+    throw new HttpsError("resource-exhausted", "Too many attempts. Please wait a few minutes and try again.");
+  }
+
+  const recordFailure = async () => {
+    await attemptsRef.set({ count: failCount + 1, windowStart, updatedAt: now }).catch(() => {});
+  };
+
   // Read the school's staff code (Admin SDK bypasses the student-deny rule).
   const settingsSnap = await db.collection("gcSettings").doc(school).get();
   const staffCode = settingsSnap.exists ? (settingsSnap.data()?.staffCode as string | undefined) : undefined;
   if (!staffCode || typeof staffCode !== "string") {
+    await recordFailure();
     throw new HttpsError("permission-denied", "No staff access is set up for this school. Ask your school's counsellor to generate a code.");
   }
 
   if (!safeEqual(code.trim(), staffCode.trim())) {
-    logger.info(`claimStaffAccess: bad code attempt by ${uid} for school "${school}"`);
+    await recordFailure();
+    logger.info(`claimStaffAccess: bad code attempt by ${uid} for school "${school}" (${failCount + 1}/${MAX_FAILURES})`);
     throw new HttpsError("permission-denied", "That staff code is not correct.");
   }
 
   // Grant staff. role is set here (server-side) because the /users rule forbids
-  // clients from writing role themselves.
+  // clients from writing role themselves. Clear the throttle record on success.
   await userRef.set({ role: "staff", school }, { merge: true });
+  await attemptsRef.delete().catch(() => {});
   logger.info(`claimStaffAccess: granted staff to ${uid} for school "${school}"`);
   return { success: true };
 });
