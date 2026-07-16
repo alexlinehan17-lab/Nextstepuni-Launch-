@@ -33,6 +33,7 @@ interface CascadeReport {
   giftsDeleted: number;
   teachbacksDeleted: number;
   flaresDeleted: number;
+  flareResponsesDeleted: number;
   gcNotesDeleted: number;
   gcFlagsDeleted: number;
   islandPublicDeleted: number;
@@ -96,8 +97,16 @@ async function authorize(
   if (caller.role === "gc") {
     const targetDoc = await db.collection("users").doc(targetUid).get();
     if (!targetDoc.exists) throw new HttpsError("not-found", "Student not found.");
-    if (targetDoc.data()?.school !== caller.school) {
+    const target = targetDoc.data() || {};
+    if (target.school !== caller.school) {
       throw new HttpsError("permission-denied", "Student is not in your school.");
+    }
+    // A GC may only export/erase *student* accounts — never another GC or an
+    // admin. Without this a GC could pass a colleague-GC/admin uid (same
+    // school) and cascade-delete that staff account. (Security review
+    // 2026-07-16, HIGH.)
+    if (target.role === "gc" || target.role === "admin" || target.isAdmin === true) {
+      throw new HttpsError("permission-denied", "Guidance counsellors can only act on student accounts.");
     }
     return "gc";
   }
@@ -115,8 +124,8 @@ async function cascadeDeleteUser(
   const r: CascadeReport = {
     usersDeleted: 0, progressDeleted: 0, sessionsDeleted: 0, settingsDeleted: 0,
     responsesDeleted: 0, notificationsDeleted: 0, kudosDeleted: 0, giftsDeleted: 0,
-    teachbacksDeleted: 0, flaresDeleted: 0, gcNotesDeleted: 0, gcFlagsDeleted: 0,
-    islandPublicDeleted: 0, authDeleted: false,
+    teachbacksDeleted: 0, flaresDeleted: 0, flareResponsesDeleted: 0, gcNotesDeleted: 0,
+    gcFlagsDeleted: 0, islandPublicDeleted: 0, authDeleted: false,
   };
 
   // School is needed for the gcNotes path; read it before deleting the doc.
@@ -155,6 +164,17 @@ async function cascadeDeleteUser(
     await deleteAll(db, f.ref.collection("responses"));
     await f.ref.delete();
     r.flaresDeleted++;
+  }
+
+  // Responses this student authored on *other* students' flares (Art 17 must
+  // erase the subject's authored free text wherever it lives, not only under
+  // their own flares). The flares feature is decommissioned, so any legacy
+  // volume here is negligible — fetch the collection group and filter in
+  // memory (matching the flaggedStudents sweep below), avoiding a dedicated
+  // collection-group index. (Security review 2026-07-16, MEDIUM.)
+  const authoredResponses = await db.collectionGroup("responses").get();
+  for (const d of authoredResponses.docs) {
+    if (d.get("responderUid") === uid) { await d.ref.delete(); r.flareResponsesDeleted++; }
   }
 
   // GC private notes about this student (path keyed by school).
@@ -253,8 +273,13 @@ export const exportMyData = onCall({ cors: true }, async (request) => {
   });
   data.teachbacks = (await db.collection("teachbacks").where("authorUid", "==", targetUid).get()).docs.map((d) => d.data());
 
+  // GC private notes are staff pastoral/safeguarding records that commonly
+  // contain third-party data and fall under subject-access exemptions — they
+  // must NOT be handed back to the student on a self-export. Only include them
+  // when a GC/admin is performing the export. (Security review 2026-07-16,
+  // MEDIUM.)
   const school = (data.profile as { school?: string } | null)?.school;
-  if (school) {
+  if (school && (actorRole === "gc" || actorRole === "admin")) {
     data.gcNotes = (await db.collection("gcNotes").doc(school).collection("students").doc(targetUid).get()).data() ?? null;
   }
 

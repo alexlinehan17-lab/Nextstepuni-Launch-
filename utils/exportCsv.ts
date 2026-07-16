@@ -10,10 +10,17 @@ import { getRankForPoints } from '../gamificationConfig';
 // ─── Helpers ────────────────────────────────────────────────────────────────
 
 function escapeCSV(value: string): string {
-  if (value.includes(',') || value.includes('"') || value.includes('\n')) {
-    return `"${value.replace(/"/g, '""')}"`;
+  let v = value;
+  // Neutralise spreadsheet formula/macro injection: a cell beginning with
+  // = + - @ (or a leading tab / carriage return) is executed as a formula by
+  // Excel / Google Sheets. Student-controlled fields (name, subject, mock
+  // subject) flow into GC-exported CSVs, so prefix any such value with an
+  // apostrophe to force text. (Security review 2026-07-16, MEDIUM.)
+  if (/^[=+\-@\t\r]/.test(v)) v = `'${v}`;
+  if (v.includes(',') || v.includes('"') || v.includes('\n') || v.includes('\r')) {
+    return `"${v.replace(/"/g, '""')}"`;
   }
-  return value;
+  return v;
 }
 
 function getModulesCompleted(student: GCStudentFullData, allCourses: CourseData[]): number {

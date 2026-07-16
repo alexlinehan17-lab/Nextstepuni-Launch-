@@ -184,7 +184,7 @@ Verify the GCDashboard query still works (it does — each returned doc is autho
 ### LOW (12)
 
 **[secrets] Unused live Gemini API key in .env with unconfirmed rotation status (historically bundle-exposed)**  
-- File: `.env` (line 1: GEMINI_API_KEY=AIzaSyC0P025jDmbuYzIHD9G6tcLfNDU0lNpVvE)
+- File: `.env` (line 1: GEMINI_API_KEY=AIza…VvE — full value redacted 2026-07-16; a plaintext key in a tracked doc is itself an exposure. Revoke in Google Cloud Console; see compliance/evidence/security-review-2026-07.md H-1.)
 - Impact: No current leak: the key ships in no bundle and powers no feature (there is no Gemini integration in client, functions, or native apps). The residual risk is purely upstream — if any production build was deployed between the initial commit (2026-02-07) and the fix (2026-04-06) while this .env value was set, the key may have been served in public client JS and could still be live/abusable for Gemini billing. compliance/ALEX_TO_CONFIRM.md Q17 leaves rotation status unanswered. Because the key is now used by nothing, leaving it valid is pure unnecessary exposure.
 - Fix: Revoke/regenerate this Gemini API key in Google Cloud Console (APIs & Services > Credentials) since nothing consumes it, then delete the dead GEMINI_API_KEY line from .env. Answer compliance/ALEX_TO_CONFIRM.md Q17 to close the audit item. No code change is required — current vite.config.ts already has no define block and the build is clean.
 - _Verifier correction:_ None. The finding is accurate as written, including the self-acknowledged caveat that there is no current leak and the risk is purely the historically-bundled-but-now-unused key. Severity 'low' is appropriate — this is a historical/hygiene item with unconfirmed rotation, not an active vulnerability,

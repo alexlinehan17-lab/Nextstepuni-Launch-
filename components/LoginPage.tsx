@@ -280,7 +280,10 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
             uid: cred.user.uid,
             name: data.name || 'Student',
             avatar: data.avatar || 'James',
-            isAdmin: data.isAdmin || false,
+            // Admin is the verified auth identity, not a doc field — matches
+            // AuthContext and firestore.rules' server-side admin check.
+            // (Security review 2026-07-16, LOW — single source of truth.)
+            isAdmin: cred.user.email === 'admin@nextstep.app',
             role: data.role || 'student',
             school: data.school || '',
             yearGroup: data.yearGroup,
@@ -310,7 +313,9 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           uid: cred.user.uid,
           name: data.name || cred.user.displayName || 'Student',
           avatar: data.avatar || AVATAR_SEEDS[0],
-          isAdmin: data.isAdmin || false,
+          // Admin is the verified auth identity, not a doc field. (Security
+          // review 2026-07-16, LOW — single source of truth.)
+          isAdmin: cred.user.email === 'admin@nextstep.app',
           role: data.role || 'student',
           school: data.school || '',
           yearGroup: data.yearGroup,
@@ -370,15 +375,16 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     } catch (err: any) {
       // Surface a more specific message so we know whether the GC account is
       // missing entirely vs. wrong password vs. network issue.
+      // Use a single generic message for all credential errors. GC emails are
+      // deterministic (gc-{schoolId}@nextstep.app) and the school list is
+      // public, so a "no account for this school" vs "wrong password" split
+      // would let anyone enumerate which schools have a provisioned GC account
+      // to target. (Security review 2026-07-16, MEDIUM — account enumeration.)
       console.error('GC login failed:', err.code, err.message);
-      if (err.code === 'auth/user-not-found' || err.code === 'auth/invalid-credential' || err.code === 'auth/invalid-login-credentials') {
-        setError('No counsellor account exists for this school yet. Contact support to provision one.');
-      } else if (err.code === 'auth/wrong-password') {
-        setError('Wrong password. Try again or contact support.');
-      } else if (err.code === 'auth/network-request-failed') {
+      if (err.code === 'auth/network-request-failed') {
         setError('Network error. Check your connection and try again.');
       } else {
-        setError(`Sign-in failed (${err.code || 'unknown'}). Try again.`);
+        setError('Sign-in failed. Check your school and password, or contact support.');
       }
     }
     setIsLoading(false);
@@ -396,7 +402,9 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       return true;
     }
     if (registerStep === 2) {
-      if (password.length < 6) { setError('Password must be at least 6 characters.'); return false; }
+      // 8-char floor for a platform used by minors. (Security review
+      // 2026-07-16, MEDIUM — weak password policy.)
+      if (password.length < 8) { setError('Password must be at least 8 characters.'); return false; }
       return true;
     }
     return true;
@@ -455,7 +463,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         }
       }
       if (err.code === 'auth/weak-password') {
-        setError('Password must be at least 6 characters.');
+        setError('Password must be at least 8 characters.');
         setRegisterStep(2);
       } else if (err.code === 'auth/email-already-in-use') {
         setError('An account with this email already exists. Try signing in instead.');
@@ -809,10 +817,10 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                             {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
                           </button>
                         </div>
-                        {password.length > 0 && password.length < 6 && (
-                          <p className="text-xs mt-1.5" style={{ color: '#9e9186' }}>{6 - password.length} more character{6 - password.length !== 1 ? 's' : ''} needed</p>
+                        {password.length > 0 && password.length < 8 && (
+                          <p className="text-xs mt-1.5" style={{ color: '#9e9186' }}>{8 - password.length} more character{8 - password.length !== 1 ? 's' : ''} needed</p>
                         )}
-                        {password.length >= 6 && (
+                        {password.length >= 8 && (
                           <p className="text-xs mt-1.5 flex items-center gap-1" style={{ color: '#F26B1F' }}><Check size={12} /> Looks good</p>
                         )}
                       </div>

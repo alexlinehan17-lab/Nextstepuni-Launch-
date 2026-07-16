@@ -4,6 +4,7 @@ import { logger } from "firebase-functions/v2";
 import { initializeApp } from "firebase-admin/app";
 import { getAuth } from "firebase-admin/auth";
 import { getFirestore, FieldValue } from "firebase-admin/firestore";
+import { randomInt } from "crypto";
 import { buildPublicProjection } from "./islandProjection";
 
 initializeApp();
@@ -56,12 +57,20 @@ export const resetStudentPassword = onCall(
     if (studentData.school !== callerData.school) {
       throw new HttpsError("permission-denied", "Student is not in your school.");
     }
+    // A GC may only reset *student* accounts — never another GC or an admin.
+    // Without this a GC could pass a colleague-GC/admin uid (same school) and
+    // take over that staff account. (Security review 2026-07-16, HIGH.)
+    if (studentData.role === "gc" || studentData.role === "admin" || studentData.isAdmin === true) {
+      throw new HttpsError("permission-denied", "You can only reset student accounts.");
+    }
 
-    // Generate a temporary password (8 chars, alphanumeric, easy to read aloud)
+    // Generate a temporary password (8 chars, alphanumeric, easy to read aloud).
+    // randomInt() is a CSPRNG (crypto), not Math.random(), so the temp
+    // credential isn't predictable. (Security review 2026-07-16, LOW.)
     const chars = "abcdefghjkmnpqrstuvwxyz23456789"; // no i/l/o/0/1 to avoid confusion
     let tempPassword = "";
     for (let i = 0; i < 8; i++) {
-      tempPassword += chars.charAt(Math.floor(Math.random() * chars.length));
+      tempPassword += chars.charAt(randomInt(chars.length));
     }
 
     // Reset the password and flag account for password change
@@ -91,8 +100,8 @@ export const changeOwnPassword = onCall(
     }
 
     const { newPassword } = request.data as { newPassword?: string };
-    if (!newPassword || typeof newPassword !== "string" || newPassword.length < 6) {
-      throw new HttpsError("invalid-argument", "Password must be at least 6 characters.");
+    if (!newPassword || typeof newPassword !== "string" || newPassword.length < 8) {
+      throw new HttpsError("invalid-argument", "Password must be at least 8 characters.");
     }
 
     const db = getFirestore();

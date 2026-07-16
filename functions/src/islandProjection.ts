@@ -57,6 +57,15 @@ export interface IslandPublicProjection {
  * state, or if no NorthStar category can be determined — in any of those
  * cases the caller should ensure no /islandPublic/{uid} document exists.
  */
+// The projection is fanned out to every same-school peer, so a student's own
+// (client-writable) islandState must not be able to bloat it. Cap the number
+// of placements copied and the length of each string field. (Security review
+// 2026-07-16, MEDIUM — read-amplification / cost DoS.)
+const MAX_PLACEMENTS = 500;
+const MAX_FIELD_LEN = 120;
+const clampStr = (v: unknown): string =>
+  typeof v === "string" ? v.slice(0, MAX_FIELD_LEN) : "";
+
 export function buildPublicProjection(
   userData: Record<string, unknown> | undefined,
   progressData: Record<string, unknown> | undefined,
@@ -82,16 +91,16 @@ export function buildPublicProjection(
   const category = islandState.category ?? northStar?.category;
   if (!category) return null;
 
-  const placements: IslandPlacement[] = islandState.placements ?? [];
-  const purchaseHistory: string[] = islandState.purchaseHistory ?? [];
+  const placements: IslandPlacement[] = (islandState.placements ?? []).slice(0, MAX_PLACEMENTS);
+  const purchaseHistory: string[] = (islandState.purchaseHistory ?? []).slice(0, MAX_PLACEMENTS);
 
   const publicPlacements: IslandPlacementPublic[] = placements.map((p) => {
     const projected: IslandPlacementPublic = {
-      itemId: p.itemId,
-      model: p.model,
-      type: p.type,
-      q: p.q,
-      r: p.r,
+      itemId: clampStr(p.itemId),
+      model: clampStr(p.model),
+      type: p.type === "decoration" ? "decoration" : "hex",
+      q: typeof p.q === "number" ? p.q : 0,
+      r: typeof p.r === "number" ? p.r : 0,
     };
     if (p.rotation !== undefined) projected.rotation = p.rotation;
     if (p.scale !== undefined) projected.scale = p.scale;
