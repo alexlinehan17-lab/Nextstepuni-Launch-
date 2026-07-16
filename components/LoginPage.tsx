@@ -6,11 +6,12 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv, MotionP } from './Motion';
-import { ArrowLeft, Eye, EyeOff, School, GraduationCap, ArrowRight, Check } from 'lucide-react';
+import { ArrowLeft, Eye, EyeOff, School, GraduationCap, ArrowRight, Check, KeyRound } from 'lucide-react';
 import { Capacitor } from '@capacitor/core';
-import { auth, db } from '../firebase';
-import { signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile, deleteUser, sendPasswordResetEmail, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+import app, { auth, db } from '../firebase';
+import { signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile, deleteUser, sendPasswordResetEmail, sendEmailVerification, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
+import { getFunctions, httpsCallable } from 'firebase/functions';
 import { type SessionUser, getAvatarUrl, AVATAR_SEEDS } from '../utils/authUtils';
 import { SCHOOLS } from '../schoolData';
 import { LegalModal, type LegalDoc, PRIVACY_POLICY_VERSION, CONSENT_BASIS } from './legal/LegalModal';
@@ -47,6 +48,7 @@ const VIEW_DEPTH: Record<string, number> = {
   login: 1,
   register: 1,
   gc: 1,
+  staff: 1,
   forgot: 2,
 };
 
@@ -207,7 +209,7 @@ interface LoginPageProps {
 
 const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   // ── Top-level mode ──
-  const [view, setView] = useState<'welcome' | 'login' | 'register' | 'gc' | 'forgot'>('welcome');
+  const [view, setView] = useState<'welcome' | 'login' | 'register' | 'gc' | 'staff' | 'forgot'>('welcome');
   const [registerStep, setRegisterStep] = useState(1); // 1: email+name+school, 2: password, 3: avatar
 
   // ── Form state ──
@@ -216,6 +218,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const [name, setName] = useState('');
   const [school, setSchool] = useState('');
   const [gcSchool, setGcSchool] = useState('');
+  const [staffCode, setStaffCode] = useState('');
   const [avatar, setAvatar] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
@@ -257,7 +260,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
 
   const resetForm = () => {
     setEmail(''); setPassword(''); setName(''); setSchool('');
-    setGcSchool(''); setAvatar(''); setError('');
+    setGcSchool(''); setStaffCode(''); setAvatar(''); setError('');
     setShowPassword(false); setRegisterStep(1); setResetSent(false);
     setResendCountdown(0); setAgreedToTerms(false);
   };
@@ -390,6 +393,59 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     setIsLoading(false);
   };
 
+  // ── Staff access handler ──
+  // A teacher redeems their school's staff code to gain dashboard access.
+  // Signs in an existing account or creates one, then calls the
+  // claimStaffAccess Cloud Function, which verifies the code SERVER-SIDE and
+  // sets role:'staff' (clients can't self-assign role). See
+  // compliance/STAFF_DASHBOARD_PLAN.md.
+  const handleStaffAccess = async () => {
+    if (!school) { setError('Please select your school.'); return; }
+    if (!name.trim()) { setError('Please enter your name.'); return; }
+    const normalisedEmail = email.trim().toLowerCase();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(normalisedEmail)) { setError('Please enter a valid email address.'); return; }
+    if (password.length < 8) { setError('Password must be at least 8 characters.'); return; }
+    if (!staffCode.trim()) { setError('Please enter your staff access code.'); return; }
+    if (normalisedEmail === 'admin@nextstep.app' || /^gc-.*@nextstep\.app$/.test(normalisedEmail)) { setError('This email is reserved.'); return; }
+    setIsLoading(true); setError('');
+    try {
+      // Sign in if the teacher already has an account; otherwise create one.
+      let uid: string;
+      try {
+        const cred = await signInWithEmailAndPassword(auth, normalisedEmail, password);
+        uid = cred.user.uid;
+      } catch {
+        const cred = await createUserWithEmailAndPassword(auth, normalisedEmail, password);
+        uid = cred.user.uid;
+        await updateProfile(cred.user, { displayName: name.trim() });
+      }
+      // Ensure a minimal user doc exists (role is set server-side by the function).
+      const selectedAvatar = AVATAR_SEEDS[Math.floor(Math.random() * AVATAR_SEEDS.length)];
+      await setDoc(doc(db, 'users', uid), { name: name.trim(), avatar: selectedAvatar, school }, { merge: true });
+      // Redeem the code — server verifies + grants role:'staff'.
+      const claimFn = httpsCallable<{ school: string; code: string }, { success: boolean }>(getFunctions(app), 'claimStaffAccess');
+      await claimFn({ school, code: staffCode.trim() });
+      // Reload so AuthContext re-reads role:'staff' and routes to the Staff Dashboard.
+      window.location.reload();
+    } catch (err: any) {
+      const msg = String(err?.message || '');
+      const code = String(err?.code || '');
+      if (/staff code is not correct/i.test(msg)) {
+        setError('That staff code is not correct. Check with your school.');
+      } else if (/No staff access is set up/i.test(msg)) {
+        setError("Your school hasn't set up staff access yet. Ask your guidance counsellor to generate a code.");
+      } else if (/wrong-password|invalid-credential|invalid-login/.test(code)) {
+        setError('That email already has an account, but the password is wrong.');
+      } else if (/email-already-in-use/.test(code)) {
+        setError('That email already has an account. Enter its password to continue.');
+      } else {
+        console.error('Staff access failed:', err);
+        setError('Could not verify staff access. Try again.');
+      }
+      setIsLoading(false);
+    }
+  };
+
   // ── Register step validation ──
   const validateRegisterStep = (): boolean => {
     if (registerStep === 1) {
@@ -436,6 +492,10 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       const cred = await createUserWithEmailAndPassword(auth, registrationEmail, password);
       createdUser = cred.user;
       await updateProfile(createdUser, { displayName: name.trim() });
+      // Send a verification email (fire-and-forget) so the address is provable.
+      // Non-blocking: registration still proceeds (security review 2026-07-16,
+      // L-5). Deliverability failures must not block sign-up.
+      sendEmailVerification(createdUser).catch(err => console.error('Failed to send verification email:', err));
       await setDoc(doc(db, 'users', createdUser.uid), {
         name: name.trim(),
         avatar: selectedAvatar,
@@ -577,6 +637,13 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
               >
                 <GraduationCap size={16} /> Sign in as Guidance Counsellor
               </button>
+              <button
+                onClick={() => { resetForm(); setView('staff'); }}
+                className="w-full py-3 rounded-xl text-sm font-medium transition-all flex items-center justify-center gap-2 mt-3 border-2"
+                style={{ color: '#7a7068', borderColor: '#d0cdc8', backgroundColor: 'white' }}
+              >
+                <KeyRound size={16} /> Teacher / staff access
+              </button>
             </div>
           )}
 
@@ -666,6 +733,57 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                 <AnimatePresence>{error && <MotionDiv {...errorAnim} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
                 <MotionButton type="submit" disabled={isLoading} whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} className={primaryBtn} style={primaryBtnStyle}>
                   {isLoading ? 'Signing in...' : 'Sign In'}
+                </MotionButton>
+              </form>
+            </>
+          )}
+
+          {/* ── STAFF / TEACHER ACCESS ──────────────────────── */}
+          {view === 'staff' && (
+            <>
+              <button type="button" onClick={() => setView('welcome')} className="flex items-center gap-1.5 text-sm font-medium mb-6 transition-colors" style={{ color: '#9e9186' }}>
+                <ArrowLeft size={14} /> Back
+              </button>
+              <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Teacher / staff access</h2>
+              <p className="text-sm mb-6" style={{ color: '#7a7068' }}>Enter your details and the staff access code from your school. New to NextStepUni? This creates your staff account. Already have an account? Use the same email and password.</p>
+              <form onSubmit={e => { e.preventDefault(); handleStaffAccess(); }} className="space-y-4">
+                <div>
+                  <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Your name</label>
+                  <input type="text" value={name} onChange={e => { setName(e.target.value); setError(''); }} placeholder="Jane Murphy" className={inputClass} autoFocus autoComplete="name" />
+                </div>
+                <div>
+                  <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>School</label>
+                  <div className="relative">
+                    <select value={school} onChange={e => { setSchool(e.target.value); setError(''); }} className={`${inputClass} appearance-none cursor-pointer ${!school ? 'text-zinc-400' : ''}`}>
+                      <option value="" disabled>Select your school</option>
+                      {SCHOOLS.map(s => (<option key={s.id} value={s.id}>{s.name}</option>))}
+                    </select>
+                    <School size={16} className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" style={{ color: '#9e9186' }} />
+                  </div>
+                </div>
+                <div>
+                  <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Email</label>
+                  <input type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@school.ie" className={inputClass} autoComplete="email" autoCapitalize="off" autoCorrect="off" inputMode="email" spellCheck={false} />
+                </div>
+                <div>
+                  <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Password</label>
+                  <div className="relative">
+                    <input type={showPassword ? 'text' : 'password'} value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder="At least 8 characters" className={passwordInputClass} autoComplete="current-password" autoCapitalize="off" autoCorrect="off" spellCheck={false} />
+                    <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-1/2 -translate-y-1/2 transition-colors" style={{ color: '#9e9186' }}>
+                      {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
+                    </button>
+                  </div>
+                </div>
+                <div>
+                  <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Staff access code</label>
+                  <div className="relative">
+                    <input type="text" value={staffCode} onChange={e => { setStaffCode(e.target.value); setError(''); }} placeholder="Code from your school" className={`${inputClass} pr-10`} autoCapitalize="characters" autoCorrect="off" spellCheck={false} />
+                    <KeyRound size={16} className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" style={{ color: '#9e9186' }} />
+                  </div>
+                </div>
+                <AnimatePresence>{error && <MotionDiv {...errorAnim} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
+                <MotionButton type="submit" disabled={isLoading} whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} className={primaryBtn} style={primaryBtnStyle}>
+                  {isLoading ? 'Verifying...' : 'Get staff access'}
                 </MotionButton>
               </form>
             </>

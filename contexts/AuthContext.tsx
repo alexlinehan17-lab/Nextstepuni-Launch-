@@ -7,7 +7,7 @@ import React, { createContext, useContext, useState, useEffect, useCallback, use
 import { auth, db } from '../firebase';
 import { onAuthStateChanged, signOut, type User as FirebaseUser } from 'firebase/auth';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
-import { type SessionUser, yearGroupToCurriculumLevel, type CurriculumLevel } from '../utils/authUtils';
+import { type SessionUser, yearGroupToCurriculumLevel, type CurriculumLevel, isSchoolStaff } from '../utils/authUtils';
 import { type UserProgress, type NorthStar } from '../types';
 import { type StudentSubjectProfile } from '../components/subjectData';
 import { generateAutoNotifications } from '../components/gc/gcNotifications';
@@ -176,8 +176,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
                 timetableCompletions: pd.timetableCompletions || {},
                 rawProgressDoc: pd,
               });
-              // Fire-and-forget auto-notifications
-              if (userData.role !== 'gc') {
+              // Fire-and-forget auto-notifications (students only — not staff)
+              if (!isSchoolStaff(userData.role)) {
                 generateAutoNotifications(firebaseUser.uid, pd).catch((e) => logError('AuthContext.autoNotifications', e));
               }
             } else {

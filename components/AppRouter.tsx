@@ -9,7 +9,7 @@ import { ArrowLeft, Eye, EyeOff, Check } from 'lucide-react';
 import { useNavigation } from '../contexts/NavigationContext';
 import { useAuth } from '../contexts/AuthContext';
 import { useToast } from './Toast';
-import { type SessionUser } from '../utils/authUtils';
+import { type SessionUser, isSchoolStaff } from '../utils/authUtils';
 import { LoadingSpinner } from './LoadingSpinner';
 import { KnowledgeTree, type CategoryType } from './KnowledgeTree';
 import { Library } from './Library';
@@ -276,7 +276,9 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     return <Suspense fallback={<LoadingSpinner />}><AdminDashboard allCourses={ALL_COURSES} onLogout={handleLogout} /></Suspense>;
   }
 
-  if (user.role === 'gc' && user.school) {
+  // Guidance counsellors AND teaching staff both get the Staff Dashboard
+  // (full parity — owner decision 2026-07-16).
+  if (isSchoolStaff(user.role) && user.school) {
     return <Suspense fallback={<LoadingSpinner />}><GCDashboard school={user.school} onLogout={handleLogout} allCourses={ALL_COURSES} gcName={user.name} gcUid={user.uid} /></Suspense>;
   }
 

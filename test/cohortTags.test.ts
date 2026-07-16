@@ -2,14 +2,17 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * Guards the GC cohort-tag store (feature E8): toggling adds/removes, tags are
- * scoped per school + student, and clearing the last tag drops the entry.
+ * Guards the school-staff cohort-tag store (feature E8): toggling adds/removes,
+ * tags are scoped per school + student, and clearing the last tag drops the
+ * entry. As of the M-8 security fix the store is Firestore-backed with an
+ * in-memory cache; the pure toggle logic against that cache is what's tested
+ * here (the background Firestore persist is fire-and-forget).
  */
 import { describe, it, expect, beforeEach } from 'vitest';
-import { getTags, toggleTag } from '../components/gc/cohortTags';
+import { getTags, toggleTag, _resetCohortCacheForTests } from '../components/gc/cohortTags';
 
-describe('GC cohort tags', () => {
-  beforeEach(() => localStorage.clear());
+describe('school-staff cohort tags', () => {
+  beforeEach(() => _resetCohortCacheForTests());
 
   it('toggles a tag on and off', () => {
     expect(getTags('stA', 'u1')).toEqual([]);

@@ -48,6 +48,7 @@ import NotificationBell from './components/NotificationBell';
 import { POINTS, isModuleJustCompleted, isCategoryJustCompleted } from './journeyPointsConfig';
 import { SettingsContext } from './contexts/SettingsContext';
 import { useAuth } from './contexts/AuthContext';
+import { isSchoolStaff } from './utils/authUtils';
 import { useNavigation } from './contexts/NavigationContext';
 import { useProgress } from './contexts/ProgressContext';
 
@@ -291,7 +292,7 @@ const App: React.FC = () => {
   // Redirect to onboarding for users without a subject profile.
   // Gated on authResolved AND progressLoaded to prevent redirect during initial load.
   useEffect(() => {
-    if (authResolved && progressLoaded && user && !user.isAdmin && user.role !== 'gc' && needsOnboarding && viewState === 'tree') {
+    if (authResolved && progressLoaded && user && !user.isAdmin && !isSchoolStaff(user.role) && needsOnboarding && viewState === 'tree') {
       nav.navigateToOnboarding();
     }
   }, [authResolved, progressLoaded, user, needsOnboarding, viewState]);
@@ -304,7 +305,7 @@ const App: React.FC = () => {
   // entry path (tiles, command palette, deep links). Tools that know more
   // (e.g. Paper Trail's subject/year) overwrite with a richer record.
   useEffect(() => {
-    if (!user || user.isAdmin || user.role === 'gc') return;
+    if (!user || user.isAdmin || isSchoolStaff(user.role)) return;
     if (viewState === 'module' && currentModuleId) {
       const course = ALL_COURSES.find(c => c.id === currentModuleId);
       if (course) recordVisit(user.uid, { kind: 'module', id: course.id, label: course.title });
@@ -642,7 +643,7 @@ const App: React.FC = () => {
     <SettingsContext.Provider value={{ settings, updateSetting, unlockedThemes, unlockedCardStyles }}>
     <OfflineBanner />
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500">
-      {user && viewState !== 'onboarding' && user.role !== 'gc' && !user.isAdmin && (
+      {user && viewState !== 'onboarding' && !isSchoolStaff(user.role) && !user.isAdmin && (
         <div className={`fixed top-6 right-6 z-[100] ${viewState === 'my-journey' ? 'hidden' : 'hidden md:block'}`}>
           <div className="flex items-center gap-2">
             <div>
@@ -668,7 +669,7 @@ const App: React.FC = () => {
       {/* Mobile achievement toast — TrainingPulse removed on mobile per design feedback.
           AchievementToast still needs a mount point on mobile so it appears
           unobtrusively at top-left when a new achievement fires. */}
-      {user && viewState !== 'onboarding' && viewState !== 'module' && user.role !== 'gc' && !user.isAdmin && (
+      {user && viewState !== 'onboarding' && viewState !== 'module' && !isSchoolStaff(user.role) && !user.isAdmin && (
         <div className="fixed top-4 left-4 z-[100] md:hidden pointer-events-none">
           <div className="pointer-events-auto">
             <AchievementToast
@@ -682,14 +683,14 @@ const App: React.FC = () => {
       <AppRouter {...routerProps} />
 
       {/* Global QoL overlays — ⌘K jump-to + "?" shortcut card (students only) */}
-      {user && !user.isAdmin && user.role !== 'gc' && viewState !== 'onboarding' && (
+      {user && !user.isAdmin && !isSchoolStaff(user.role) && viewState !== 'onboarding' && (
         <>
           <CommandPalette courses={studentCourses} />
           <ShortcutsOverlay suppressQuestionKey={viewState === 'tree'} />
         </>
       )}
 
-      {user && viewState !== 'onboarding' && viewState !== 'module' && !user.isAdmin && user.role !== 'gc' && (
+      {user && viewState !== 'onboarding' && viewState !== 'module' && !user.isAdmin && !isSchoolStaff(user.role) && (
         <MobileBottomNav
           viewState={viewState}
           onGoHome={handleGoHome}
@@ -702,7 +703,7 @@ const App: React.FC = () => {
         />
       )}
 
-      {user && !user.isAdmin && user.role !== 'gc' && (
+      {user && !user.isAdmin && !isSchoolStaff(user.role) && (
         <MobileProfileSheet
           isOpen={mobileProfileOpen}
           onClose={() => setMobileProfileOpen(false)}

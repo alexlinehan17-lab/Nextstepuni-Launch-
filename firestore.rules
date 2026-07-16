@@ -3,13 +3,18 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
 
-    // Helper: check if the requesting user is a GC
-    function isGC() {
-      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'gc';
+    // Helper: is the requesting user school staff (guidance counsellor OR
+    // teaching staff)? Both have full dashboard parity (owner decision
+    // 2026-07-16; compliance/STAFF_DASHBOARD_PLAN.md). `staff` accounts are
+    // only ever created by the claimStaffAccess Cloud Function (server-side,
+    // per-school code); `role` is client-immutable in the /users update rule,
+    // so a client can never self-assign 'gc' or 'staff'.
+    function isSchoolStaff() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role in ['gc', 'staff'];
     }
 
-    // Helper: get the GC's school
-    function gcSchool() {
+    // Helper: the requesting staff member's own school.
+    function callerSchool() {
       return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school;
     }
 
@@ -21,7 +26,7 @@ service cloud.firestore {
       // users doc — including minors' real names + year group. Peer features
       // now read the /islandPublic projection instead of /users, so no student
       // path needs same-school /users access. GC + admin reads are granted
-      // explicitly below (lines for isGC()/admin), so the GCDashboard — the
+      // explicitly below (lines for isSchoolStaff()/admin), so the GCDashboard — the
       // only legitimate cross-student consumer — stays authorized.
       allow read: if request.auth != null && request.auth.uid == userId;
       allow create: if request.auth != null && request.auth.uid == userId
@@ -61,8 +66,8 @@ service cloud.firestore {
                   && request.auth.token.email == 'admin@nextstep.app';
       // GC can read + delete user docs where school matches their own school
       allow read, delete: if request.auth != null
-                  && isGC()
-                  && resource.data.school == gcSchool();
+                  && isSchoolStaff()
+                  && resource.data.school == callerSchool();
     }
 
     // GC student-flagging: each GC owns gcFlags/{their-uid}/flaggedStudents/*.
@@ -72,7 +77,7 @@ service cloud.firestore {
     // Path written by hooks/useGCFlags.ts.
     match /gcFlags/{gcUid}/flaggedStudents/{studentUid} {
       allow read, write: if request.auth != null
-                  && isGC()
+                  && isSchoolStaff()
                   && gcUid == request.auth.uid;
     }
 
@@ -85,8 +90,8 @@ service cloud.firestore {
                   && request.auth.token.email == 'admin@nextstep.app';
       // GC can read + delete progress docs for students in their school
       allow read, delete: if request.auth != null
-                  && isGC()
-                  && get(/databases/$(database)/documents/users/$(userId)).data.school == gcSchool();
+                  && isSchoolStaff()
+                  && get(/databases/$(database)/documents/users/$(userId)).data.school == callerSchool();
       // Remediation 2026-04-29 (DPIA risk R1): the previous same-school
       // "Peer Islands" peer-read rule on /progress/{userId} was removed.
       // Read access is now restricted to: self, admin, GC of same school.
@@ -127,8 +132,8 @@ service cloud.firestore {
                     && request.auth.token.email == 'admin@nextstep.app';
         // GC of the same school can read (mirrors the parent /progress read above)
         allow read: if request.auth != null
-                    && isGC()
-                    && get(/databases/$(database)/documents/users/$(userId)).data.school == gcSchool();
+                    && isSchoolStaff()
+                    && get(/databases/$(database)/documents/users/$(userId)).data.school == callerSchool();
       }
     }
 
@@ -151,15 +156,26 @@ service cloud.firestore {
     // GC Notes: GCs can read/write notes for their own school
     match /gcNotes/{schoolId}/students/{studentId} {
       allow read, write: if request.auth != null
-                         && isGC()
-                         && schoolId == gcSchool();
+                         && isSchoolStaff()
+                         && schoolId == callerSchool();
     }
 
-    // GC Settings: GCs can read/write settings for their own school (dismissed alerts etc.)
+    // GC Settings: staff can read/write settings for their own school (dismissed
+    // alerts, the staff-access code, etc.)
     match /gcSettings/{schoolId} {
       allow read, write: if request.auth != null
-                         && isGC()
-                         && schoolId == gcSchool();
+                         && isSchoolStaff()
+                         && schoolId == callerSchool();
+    }
+
+    // Cohort tags (DEIS / At-risk / Priority) — welfare-sensitive labels about
+    // students. Security review 2026-07-16 (M-8): moved off plaintext
+    // localStorage into this rules-protected doc, readable/writable only by
+    // school staff of that school, and removed by the GDPR erasure cascade.
+    match /cohortTags/{schoolId} {
+      allow read, write: if request.auth != null
+                         && isSchoolStaff()
+                         && schoolId == callerSchool();
     }
 
     // Notifications: self read/write + GC read/write for same-school students
@@ -170,8 +186,8 @@ service cloud.firestore {
       // GCs can read/write notifications for students in their school
       // (read needed because addNotification uses runTransaction with txn.get)
       allow read, create, update: if request.auth != null
-                   && isGC()
-                   && get(/databases/$(database)/documents/users/$(userId)).data.school == gcSchool();
+                   && isSchoolStaff()
+                   && get(/databases/$(database)/documents/users/$(userId)).data.school == callerSchool();
     }
 
     // Kudos collection: peer encouragement notes
@@ -293,8 +309,8 @@ service cloud.firestore {
     match /gcEvents/{schoolId} {
       // GCs can read/write events for their own school
       allow read, write: if request.auth != null
-                         && isGC()
-                         && schoolId == gcSchool();
+                         && isSchoolStaff()
+                         && schoolId == callerSchool();
       // Students can read their school's events (for timetable integration)
       allow read: if request.auth != null
                   && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school == schoolId;
@@ -309,8 +325,8 @@ service cloud.firestore {
     // is flipped on AND these rules are deployed — see compliance/assignments-plan.md.
     match /assignments/{schoolId} {
       allow read, write: if request.auth != null
-                         && isGC()
-                         && schoolId == gcSchool();
+                         && isSchoolStaff()
+                         && schoolId == callerSchool();
       allow read: if request.auth != null
                   && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school == schoolId;
     }

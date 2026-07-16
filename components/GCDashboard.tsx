@@ -7,7 +7,7 @@ import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { type CourseData } from './Library';
 import { type SessionUser, getAvatarUrl, yearGroupToCurriculumLevel } from '../utils/authUtils';
-import { LogOut, LayoutDashboard, Users, BarChart3, PanelLeft, StickyNote, AlertTriangle, CalendarDays, ListChecks } from 'lucide-react';
+import { LogOut, LayoutDashboard, Users, BarChart3, PanelLeft, StickyNote, AlertTriangle, CalendarDays, ListChecks, KeyRound } from 'lucide-react';
 import app, { db } from '../firebase';
 import { collection, query, where, limit, getDocs, doc, getDoc, setDoc, documentId } from 'firebase/firestore';
 import { getFunctions, httpsCallable } from 'firebase/functions';
@@ -24,6 +24,7 @@ import {
 import { type DebriefEntry } from './StudyDebrief';
 import { GCOverview } from './gc/GCOverview';
 import { GCKeyEvents } from './gc/GCKeyEvents';
+import { StaffAccessPanel } from './gc/StaffAccessPanel';
 import { GCStudentDetail } from './gc/GCStudentDetail';
 import GCHandInGrid from './gc/GCHandInGrid';
 import GCAssignPanel from './gc/GCAssignPanel';
@@ -168,6 +169,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
     { id: 'gc-analytics', label: 'Analytics', icon: BarChart3, active: activeNav === 'gc-analytics' },
     { id: 'gc-students', label: 'Students', icon: Users, active: activeNav === 'gc-students' },
     { id: 'gc-notes', label: 'Notes', icon: StickyNote, active: activeNav === 'gc-notes' },
+    { id: 'gc-staff-access', label: 'Staff access', icon: KeyRound, active: activeNav === 'gc-staff-access' },
   ];
 
   // Body scroll lock when tray is open
@@ -204,7 +206,8 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
         const userSnapshot = await getDocs(schoolQuery);
         const users = userSnapshot.docs.map(d => ({ uid: d.id, ...d.data() })) as SessionUser[];
 
-        const students = users.filter(u => u.role !== 'gc' && u.role !== 'admin');
+        // Exclude all staff roles (gc/staff/admin) — the dashboard lists students only.
+        const students = users.filter(u => u.role !== 'gc' && u.role !== 'staff' && u.role !== 'admin');
 
         // Batch-read progress in chunks of 30 (Firestore 'in' limit) rather than
         // one getDoc per student — removes the N+1 read on the dashboard. (item 17)
@@ -412,6 +415,8 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
           <div className="p-6 max-w-4xl mx-auto w-full">
             <GCKeyEvents school={school} />
           </div>
+        ) : activeNav === 'gc-staff-access' ? (
+          <StaffAccessPanel school={school} />
         ) : activeNav === 'gc-handin' ? (
           <>
             <GCAssignPanel school={school} gcName={gcName} />

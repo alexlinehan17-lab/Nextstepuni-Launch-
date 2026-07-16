@@ -147,7 +147,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
                 const users = userSnapshot.docs.map(doc => ({ uid: doc.id, ...doc.data() })) as SessionUser[];
 
                 // Students only (exclude admin and GC accounts)
-                const students = users.filter(u => !u.isAdmin && (u as any).role !== 'gc' && (u as any).role !== 'admin');
+                const students = users.filter(u => !u.isAdmin && (u as any).role !== 'gc' && (u as any).role !== 'staff' && (u as any).role !== 'admin');
 
                 const allProgress: AllUserProgress = {};
                 const ids = students.map(s => s.uid);

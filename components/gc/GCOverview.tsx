@@ -691,7 +691,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
           ═══════════════════════════════════════════════════════════════════ */}
       <div id="gc-overview" className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
         <div>
-          <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Guidance Dashboard</p>
+          <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Staff Dashboard</p>
           <h1 className="font-serif text-3xl font-semibold text-zinc-900 dark:text-white tracking-tight">{greeting}</h1>
           <p className={`text-sm mt-0.5 ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{getSchoolName(school)}</p>
         </div>
@@ -947,7 +947,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                     const uids = broadcastRecipients.map(s => s.user.uid);
                     await addNotificationToMultiple(uids, {
                       type: 'gc-broadcast',
-                      title: 'Message from your Guidance Counsellor',
+                      title: 'Message from your school',
                       body: broadcastMessage.trim(),
                       fromGCName: gcName,
                       severity: 'info',

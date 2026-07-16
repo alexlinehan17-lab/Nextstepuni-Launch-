@@ -9,11 +9,11 @@
  * data the dashboard already loads; tags are the counsellor's local annotations.
  */
 
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
 import { type CourseData } from '../Library';
 import { type GCStudentFullData, type StudentStatus } from './gcTypes';
 import { getOverallProgress, isActiveThisWeek, getStudentStatus } from './gcUtils';
-import { COHORT_TAGS, getTags, toggleTag, type CohortTag } from './cohortTags';
+import { COHORT_TAGS, getTags, toggleTag, loadCohortTags, type CohortTag } from './cohortTags';
 
 type Rag = 'red' | 'amber' | 'green';
 const RAG_OF: Record<StudentStatus, Rag> = {
@@ -39,7 +39,15 @@ interface Props {
 
 const GCHandInGrid: React.FC<Props> = ({ students, allCourses, school, onSelectStudent }) => {
   const [filter, setFilter] = useState<CohortTag | null>(null);
-  const [ver, setVer] = useState(0); // re-read tags after a toggle
+  const [ver, setVer] = useState(0); // re-read tags after load / a toggle
+
+  // Cohort tags now live in Firestore (security review M-8). Hydrate the cache
+  // once for this school, then bump `ver` so the rows re-read getTags().
+  useEffect(() => {
+    let cancelled = false;
+    loadCohortTags(school).then(() => { if (!cancelled) setVer(v => v + 1); });
+    return () => { cancelled = true; };
+  }, [school]);
 
   const rows = useMemo(() => {
     void ver;

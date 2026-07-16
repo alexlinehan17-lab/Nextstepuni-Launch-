@@ -13,6 +13,8 @@ initializeApp();
 // Handlers call getFirestore()/getAuth() lazily, so they run after the
 // initializeApp() above despite the import being hoisted.
 export { requestAccountDeletion, exportMyData } from "./dataRights";
+// Staff-access provisioning (Staff Dashboard) — see ./staffAccess.ts.
+export { claimStaffAccess } from "./staffAccess";
 
 /**
  * resetStudentPassword
@@ -205,7 +207,7 @@ export const onUserWritten = onDocumentWritten(
       return;
     }
 
-    if (userData.role === "gc" || userData.role === "admin" || userData.isAdmin === true) {
+    if (userData.role === "gc" || userData.role === "staff" || userData.role === "admin" || userData.isAdmin === true) {
       await islandPublicRef.delete().catch(() => {});
       return;
     }

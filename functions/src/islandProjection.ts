@@ -74,7 +74,7 @@ export function buildPublicProjection(
 
   // Filter out staff accounts — they don't appear in the peer view.
   const role = userData.role;
-  if (role === "gc" || role === "admin" || userData.isAdmin === true) {
+  if (role === "gc" || role === "staff" || role === "admin" || userData.isAdmin === true) {
     return null;
   }
 

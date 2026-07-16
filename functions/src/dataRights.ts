@@ -181,6 +181,16 @@ async function cascadeDeleteUser(
   if (school) {
     const ref = db.collection("gcNotes").doc(school).collection("students").doc(uid);
     if ((await ref.get()).exists) { await ref.delete(); r.gcNotesDeleted = 1; }
+
+    // Cohort tags (DEIS/At-risk/Priority) about this student, held in
+    // cohortTags/{school}.tags[uid]. Remove the student's entry (security
+    // review 2026-07-16, M-8 — these must be in the erasure cascade).
+    const cohortRef = db.collection("cohortTags").doc(school);
+    if ((await cohortRef.get()).exists) {
+      await cohortRef.update({ [`tags.${uid}`]: FieldValue.delete() }).catch((err) => {
+        logger.warn(`cascadeDeleteUser: failed to remove cohort tag for ${uid}`, err);
+      });
+    }
   }
 
   // GC flags on this student, under any GC's gcFlags/{gcUid}/flaggedStudents/{uid}.
