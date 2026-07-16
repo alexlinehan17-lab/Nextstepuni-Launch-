@@ -56,13 +56,16 @@ fix a lens entry at its source and the skeleton follows.
 |---------|----------:|---------|----------:|
 | Agricultural Science | 31 | Business | 24 |
 | Physics | 22 | Biology | 20 |
-| Home Economics | 20 | Chemistry | 18 |
-| Economics | 12 | | |
+| Construction Studies | 20 | Home Economics | 20 |
+| Chemistry | 18 | Design & Communication Graphics | 16 |
+| Engineering | 16 | Economics | 12 |
 
-**147 answer skeletons across 7 subjects.** Geography is present in the Marking
-Lens corpus but carries no multi-beat questions, so it correctly does not appear
-here. Coverage grows automatically as the Marking Lens corpus does — no separate
-authoring step.
+**199 answer skeletons across 10 subjects.** Construction Studies, Engineering
+and Design & Communication Graphics joined automatically when their Marking Lens
+entries were authored (wave 3) — no separate work in this tool. Geography is
+present in the Marking Lens corpus but carries no multi-beat questions, so it
+correctly does not appear here. Coverage grows automatically as the Marking Lens
+corpus does.
 
 ## Machine-checked integrity (`test/answerArchitect.test.ts`, every CI run)
 
