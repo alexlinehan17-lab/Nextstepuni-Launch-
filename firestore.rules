@@ -227,11 +227,16 @@ service cloud.firestore {
       allow delete: if false;
     }
 
-    // Teach-backs collection: anonymous peer explanations
+    // Teach-backs (source docs). Security review 2026-07-16 (M-7): teach-backs
+    // are shown to students as ANONYMOUS, but this doc holds authorUid. The
+    // source is now readable ONLY by its author; same-school peers read the
+    // /teachbacksPublic projection (Cloud-Function-written, no authorUid). Peers
+    // can still blind-increment helpfulCount (they know the id from the
+    // projection) without being able to read the source.
     match /teachbacks/{teachbackId} {
-      // Same-school students can read teach-backs
+      // Author-only read (peers use /teachbacksPublic instead).
       allow read: if request.auth != null
-                  && resource.data.school == get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school;
+                  && resource.data.authorUid == request.auth.uid;
       // Can create if: authed, authorUid is self, school matches own school
       allow create: if request.auth != null
                     && request.resource.data.authorUid == request.auth.uid
@@ -248,6 +253,16 @@ service cloud.firestore {
                     && request.resource.data.createdAt == resource.data.createdAt
                     && request.resource.data.helpfulCount == resource.data.helpfulCount + 1;
       allow delete: if false;
+    }
+
+    // Teach-backs PUBLIC projection — the anonymous, peer-readable view
+    // (Cloud-Function-written by onTeachbackWritten; carries no raw authorUid,
+    // only a non-reversible authorHash so a reader can filter out their own).
+    // Same-school students read it; clients can never write it.
+    match /teachbacksPublic/{teachbackId} {
+      allow read: if request.auth != null
+                  && resource.data.school == get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school;
+      allow write: if false;
     }
 
     // Flares collection: anonymous peer help (SOS Flares)

@@ -22,6 +22,19 @@ export interface TeachBackEntry {
   createdAt: number;
 }
 
+// One-way hash of a uid, matching the server's teachbackAuthorHash
+// (SHA-256 hex, first 16 chars). Used only to filter out the reader's OWN
+// teach-backs from the anonymous /teachbacksPublic projection (M-7). Falls back
+// to '' if WebCrypto is unavailable, in which case self-filtering is skipped.
+async function authorHash16(uid: string): Promise<string> {
+  try {
+    const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(uid));
+    return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('').slice(0, 16);
+  } catch {
+    return '';
+  }
+}
+
 // ── Weighted random selection (helpful = shown more) ──────
 
 function weightedPick(items: TeachBackEntry[]): TeachBackEntry {
@@ -41,6 +54,7 @@ export function useTeachBack(uid?: string, school?: string) {
   const [teachBackToRead, setTeachBackToRead] = useState<TeachBackEntry | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const seenIdsRef = useRef<Set<string>>(new Set());
+  const myHashRef = useRef<string>('');
   const fetchedForSubjectRef = useRef('');
   const isMountedRef = useRef(true);
   useEffect(() => () => { isMountedRef.current = false; }, []);
@@ -58,22 +72,26 @@ export function useTeachBack(uid?: string, school?: string) {
     fetchedForSubjectRef.current = subject;
 
     try {
+      // Read the anonymous projection, not the source docs (M-7). The
+      // projection carries no raw authorUid — only a one-way authorHash so we
+      // can drop the reader's OWN teach-backs.
+      if (!myHashRef.current) myHashRef.current = await authorHash16(uid);
       const q = query(
-        collection(db, 'teachbacks'),
+        collection(db, 'teachbacksPublic'),
         where('school', '==', school),
         where('subject', '==', subject),
       );
       const snapshot = await getDocs(q);
 
-      // Filter: not self, not already seen
+      // Filter: not self (by hash), not already seen
       const candidates: TeachBackEntry[] = snapshot.docs
-        .filter(d => d.data().authorUid !== uid && !seenIdsRef.current.has(d.id))
+        .filter(d => d.data().authorHash !== myHashRef.current && !seenIdsRef.current.has(d.id))
         .map(d => ({
           id: d.id,
           subject: d.data().subject,
           explanation: d.data().explanation,
           helpfulCount: d.data().helpfulCount || 0,
-          createdAt: d.data().createdAt,
+          createdAt: d.data().createdAt ?? 0,
         }));
 
       if (candidates.length === 0) {

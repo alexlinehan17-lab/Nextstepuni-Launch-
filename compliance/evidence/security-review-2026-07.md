@@ -26,11 +26,18 @@ instance.
 
 ## Severity summary (consolidated, de-duplicated)
 
-| Sev | Count | Fixed in this change | Flagged for owner decision / action |
-|-----|------:|---------------------:|------------------------------------:|
+| Sev | Count | Fixed | Flagged for owner decision / action |
+|-----|------:|------:|------------------------------------:|
 | HIGH | 3 | 1 | 2 |
-| MEDIUM | 8 | 6 | 2 |
-| LOW / Info | 8 | 4 | 4 |
+| MEDIUM | 8 | 8 | 0 |
+| LOW / Info | 8 | 5 | 3 |
+
+> **Two remediation waves.** Wave 1 (initial) fixed the first batch below. Wave 2
+> (2026-07-16, shipped alongside the Staff Dashboard) closed **M-7** (teach-back
+> anonymity projection), **M-8** (cohort tags off localStorage), and **L-5**
+> (email verification). The remaining HIGH items are owner decisions: **H-2**
+> (student school binding — deferred by the owner) and **H-3** (guardian-consent
+> double-opt-in — feature still ship-gated OFF).
 
 "Fixed" = shipped in the same change as this report and verified through the
 gate (lint 0 / typecheck 0 / 1770 tests / app build / functions `tsc`).
@@ -91,14 +98,14 @@ in Google Cloud Console).
 - **Detail:** distinct "no account for this school" vs "wrong password" messages let anyone enumerate provisioned GC accounts (GC emails are deterministic; the school list is public) to target for brute-force.
 - **Fix shipped:** collapsed to a single generic "Sign-in failed" message (network error kept separate). **Owner follow-up:** ensure Identity Platform email-enumeration protection is ON at the project level (hardens the reset flow too).
 
-### M-7 — "Anonymous" teach-backs are de-anonymisable by same-school peers  ⚠️ FLAGGED (needs projection like islandPublic)
+### M-7 — "Anonymous" teach-backs are de-anonymisable by same-school peers  ✅ FIXED (2026-07-16, second wave)
 - **Where:** `firestore.rules` teachbacks read rule; `components/study/TeachBackCard.tsx` ("A classmate shared…").
-- **Detail:** the stored doc carries `authorUid` and the read rule grants every same-school student the whole document → a peer can map an "anonymous" explanation back to its author's UID. For minors this is a real anonymity-promise gap.
-- **Why not auto-fixed:** the correct fix mirrors `islandPublic` — serve teach-backs through a **Cloud-Function-written projection** holding only `subject` + `explanation` + counts (no `authorUid`), and deny direct peer reads of the source doc. That's a new trigger + rules change + client read-path change that should be built and tested deliberately rather than rushed under a security patch. Recommended as the next backend task.
+- **Detail:** the stored doc carried `authorUid` and the read rule granted every same-school student the whole document → a peer could map an "anonymous" explanation back to its author's UID.
+- **Fix shipped:** the source `teachbacks/{id}` doc is now readable **only by its author**; same-school peers read a new Cloud-Function-written projection `teachbacksPublic/{id}` (`functions/src/teachbackProjection.ts` + `onTeachbackWritten` trigger) that carries **no raw `authorUid`** — only a one-way `authorHash` (SHA-256, 64-bit) so a reader can filter out their own. `teachbacksPublic` is `write: if false` (trigger only). Client (`hooks/useTeachBack.ts`) reads the projection and self-filters by hash. **Coordinated deploy:** rules + functions must be deployed for peers to see teach-backs again; the client goes quiet (no teach-backs shown) until then — no hard error. Pre-launch, so no backfill needed.
 
-### M-8 — Special-category minor welfare labels (DEIS / At-risk / Priority) in plaintext localStorage  ⚠️ FLAGGED (recommend server-side move)
-- **Where:** `components/gc/cohortTags.ts` — keyed by student UID under `gc:cohortTags:{school}`, unencrypted, school-scoped (not GC-scoped), never cleared on logout, and outside the DSAR cascade.
-- **Why not auto-fixed:** the right fix is to move these labels into a **GC-scoped, rules-protected Firestore collection** (like `gcNotes`) so they get access control, DSAR export/erasure coverage, and no shared-device exposure. That's a data-model change with a migration, not a one-line patch. Interim hardening (bind the key to the GC's UID + clear on logout) is possible but leaves the data client-side; recommend the server-side move.
+### M-8 — Special-category minor welfare labels (DEIS / At-risk / Priority) in plaintext localStorage  ✅ FIXED (2026-07-16, second wave)
+- **Where:** `components/gc/cohortTags.ts` — was keyed by student UID under `gc:cohortTags:{school}`, unencrypted, school-scoped, never cleared on logout, outside the DSAR cascade.
+- **Fix shipped:** moved into a rules-protected `cohortTags/{school}` Firestore doc, gated on `isSchoolStaff()` + same school (staff-only, student-unreadable). Client keeps a synchronous optimistic cache (`loadCohortTags`/`getTags`/`toggleTag`) with a background persist and a one-time local→Firestore migration. The GDPR erasure cascade now removes the student's entry (`functions/src/dataRights.ts`).
 
 ---
 
@@ -118,8 +125,8 @@ in Google Cloud Console).
 - **Fixed here:** the literal value is redacted in the doc.
 - **Owner must do:** **revoke/regenerate the key** in Google Cloud Console → APIs & Services → Credentials (it powers nothing, so revocation is zero-risk). Because it's in git history, revocation is the real remediation. Close `compliance/ALEX_TO_CONFIRM.md` Q17. Also set **HTTP-referrer restrictions** on the (expected-public) Firebase web `apiKey` in `firebase.ts`.
 
-### L-5 — No email verification before account use  ⚠️ FLAGGED
-Registration grants a session with no email-ownership proof. Low escalation potential (no privileged role reachable this way), but it undermines the enrolment consent basis and account recovery. Recommend sending a verification email and gating password-reset (or sensitive actions) on it. Not auto-fixed because it changes the onboarding flow and needs a "check your email" UI.
+### L-5 — No email verification before account use  ✅ PARTIALLY FIXED (2026-07-16, second wave)
+Registration now sends a verification email (`sendEmailVerification`, fire-and-forget so it never blocks sign-up). **Owner follow-up:** gate password-reset (or an unverified banner) on verified status for the full remediation — deferred to avoid changing the onboarding gate mid-flight.
 
 ### L-6 — Dependency CVEs (non-reachable) + `npm audit fix`  ⚠️ FLAGGED (owner, low priority)
 Root: 1 critical (`websocket-driver` via unused `@firebase/database`) + 1 high (`undici` via test-only `jsdom`) — both non-reachable at client runtime. `functions/`: 18 transitive under `firebase-admin`, low practical exploitability. Recommend `cd functions && npm audit fix` at next maintenance and re-verify the functions build/deploy; not launch-blocking.
