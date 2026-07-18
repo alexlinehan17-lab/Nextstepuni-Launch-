@@ -3,25 +3,20 @@
  * SPDX-License-Identifier: Apache-2.0
  *
  * Guards the Oral Exam Trainer readiness-delta helpers (feature F8): the light
- * 1/3/8/21-day re-record schedule, the neutral words-per-minute pace estimate,
- * and the keep-only-previous+latest take pruning. Privacy invariant pinned in
- * code review: these helpers store timestamps and blobs on-device only —
- * nothing here touches the network or Firestore.
+ * 1/3/8/21-day re-record schedule and the take-metadata history. Privacy
+ * invariant pinned in code review: these helpers store timestamps and blobs
+ * on-device only — nothing here touches the network or Firestore.
  */
 import { describe, it, expect } from 'vitest';
 import {
   DAY_MS,
   MAX_TAKES_PER_PART,
-  PACE_COMFORT,
   RERECORD_INTERVALS,
   appendTake,
   daysAgoLabel,
   daysBetween,
-  estimateWpm,
   intervalDaysFor,
   isDueForRerecord,
-  paceNote,
-  wordCount,
 } from '../components/oralReadiness';
 
 const NOW = 1_750_000_000_000;
@@ -74,46 +69,20 @@ describe('Oral trainer — spaced re-record schedule', () => {
   });
 });
 
-describe('Oral trainer — pace (WPM) estimate', () => {
-  it('counts whitespace-separated words, fadas and all', () => {
-    expect(wordCount('')).toBe(0);
-    expect(wordCount('   ')).toBe(0);
-    expect(wordCount('Dia duit')).toBe(2);
-    expect(wordCount('  Tá   mé go   maith  ')).toBe(4);
-    expect(wordCount('Ar dtús, ansin, ina dhiaidh sin, ar deireadh.')).toBe(8);
-  });
-
-  it('estimates words per minute from script words and duration', () => {
-    expect(estimateWpm(120, 60_000)).toBe(120);
-    expect(estimateWpm(60, 30_000)).toBe(120);
-    expect(estimateWpm(100, 45_000)).toBe(133);
-  });
-
-  it('returns null when there is no script or the clip is too short', () => {
-    expect(estimateWpm(0, 60_000)).toBeNull(); // no script text to count from
-    expect(estimateWpm(120, 1_000)).toBeNull(); // sub-3s clip → meaningless estimate
-    expect(estimateWpm(120, 0)).toBeNull();
-  });
-
-  it('pace note is neutral: quick / unhurried / nothing in the comfort band', () => {
-    expect(paceNote(PACE_COMFORT.min)).toBeNull();
-    expect(paceNote(PACE_COMFORT.max)).toBeNull();
-    expect(paceNote(130)).toBeNull();
-    expect(paceNote(PACE_COMFORT.min - 1)).toBe('unhurried');
-    expect(paceNote(PACE_COMFORT.max + 1)).toBe('quick');
-  });
-});
-
-describe('Oral trainer — take history pruning', () => {
-  it('keeps at most the previous + latest take per part, in order', () => {
+describe('Oral trainer — take history', () => {
+  it('keeps the FULL take history so the 1/3/8/21 ladder can be walked', () => {
+    // Only audio blobs are capped at 2; the lightweight metadata history is not,
+    // otherwise intervalDaysFor never sees takeCount >= 3 and the 8/21-day rungs
+    // are unreachable.
     expect(MAX_TAKES_PER_PART).toBe(2);
     let meta: Record<string, { at: number; durationMs: number }[]> = {};
     meta = appendTake(meta, 'comhra', { at: 1, durationMs: 10_000 });
-    expect(meta.comhra.map(t => t.at)).toEqual([1]);
     meta = appendTake(meta, 'comhra', { at: 2, durationMs: 11_000 });
-    expect(meta.comhra.map(t => t.at)).toEqual([1, 2]);
     meta = appendTake(meta, 'comhra', { at: 3, durationMs: 12_000 });
-    expect(meta.comhra.map(t => t.at)).toEqual([2, 3]); // oldest pruned
+    meta = appendTake(meta, 'comhra', { at: 4, durationMs: 13_000 });
+    expect(meta.comhra.map(t => t.at)).toEqual([1, 2, 3, 4]);
+    // Take count now reaches the top rungs of the ladder.
+    expect(intervalDaysFor(meta.comhra.length)).toBe(21);
   });
 
   it('is pure and keeps other parts untouched', () => {

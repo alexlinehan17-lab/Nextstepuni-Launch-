@@ -36,7 +36,8 @@ import {
 const INK = '#1a1a1a';
 const ACCENT = '#F26B1F';
 const SUCCESS = '#3A8D5F';
-const GREEN = '#4C8C5E';
+// Darker success for the record button's chunky drop-shadow.
+const SUCCESS_DARK = '#2C6B47';
 
 const READINESS = ['Not yet', 'Shaky', 'Getting there', 'Ready'];
 const readyColor = (n: number) => (n >= 3 ? SUCCESS : n >= 1 ? ACCENT : '#9e9186');
@@ -232,7 +233,7 @@ const OralExamTrainer: React.FC<Props> = ({ uid }) => {
         <div className="rounded-2xl border-2 border-[#d0cdc8] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-5 py-5 mb-4 text-center">
           <p className="text-[12.5px] mb-3" style={{ color: '#7a7068' }}>Say your answer out loud, then play it back. Recordings stay on this device — never uploaded. Your latest and previous take are kept so you can hear the difference.</p>
           {!recording ? (
-            <button onClick={startRecording} className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-[15px] font-semibold text-white transition-transform active:translate-y-0.5" style={{ backgroundColor: GREEN, boxShadow: '0 4px 0 #366B44' }}>
+            <button onClick={startRecording} className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-[15px] font-semibold text-white transition-transform active:translate-y-0.5" style={{ backgroundColor: SUCCESS, boxShadow: `0 4px 0 ${SUCCESS_DARK}` }}>
               <Mic size={18} /> Record
             </button>
           ) : (
@@ -293,7 +294,7 @@ const OralExamTrainer: React.FC<Props> = ({ uid }) => {
   return (
     <div className="w-full max-w-xl mx-auto pb-12">
       <p className="text-[14px] leading-relaxed mb-4" style={{ color: '#5a5550' }}>{exam.intro}</p>
-      <div className="rounded-xl px-4 py-3 mb-5" style={{ backgroundColor: '#EAF3EC', border: `1.5px solid ${GREEN}` }}>
+      <div className="rounded-xl px-4 py-3 mb-5" style={{ backgroundColor: '#E8F2EC', border: `1.5px solid ${SUCCESS}` }}>
         <p className="text-[13px] font-semibold" style={{ color: '#1F5F3E' }}>{exam.totalWeight}</p>
         {exam.levelNote && <p className="text-[12px] mt-0.5" style={{ color: '#3a5a45' }}>{exam.levelNote}</p>}
       </div>

@@ -4,9 +4,8 @@
  *
  * Readiness-delta helpers for the Oral Exam Trainer (feature F8): a light
  * spaced re-record schedule (mirroring the CODEX_INTERVALS ladder in
- * ExaminersChair/store.ts), a neutral words-per-minute pace estimate, and the
- * tiny on-device stores that back them. The pure schedule/WPM functions are
- * exported for unit testing (test/oralReadiness.test.ts).
+ * ExaminersChair/store.ts) and the tiny on-device stores that back it. The pure
+ * schedule functions are exported for unit testing (test/oralReadiness.test.ts).
  *
  * Privacy is absolute here: recording audio lives ONLY on the device — at most
  * the previous + latest take per oral part in this browser's IndexedDB, with
@@ -28,7 +27,10 @@ export interface TakeMeta {
   durationMs: number;
 }
 
-/** How many takes we keep per part: the previous one and the latest. */
+/** How many take AUDIO BLOBS we keep per part: the previous one and the
+ * latest. Metadata (timestamps) is NOT capped — the schedule ladder is indexed
+ * by total takes made, so pruning meta to 2 made the 8- and 21-day rungs
+ * unreachable (the advertised 1/3/8/21 collapsed to 1/3). */
 export const MAX_TAKES_PER_PART = 2;
 
 /** Days before a part is due again, given how many takes it has. */
@@ -56,32 +58,6 @@ export const daysAgoLabel = (recordedAt: number, now: number): string => {
   return d === 0 ? 'today' : d === 1 ? 'yesterday' : `${d} days ago`;
 };
 
-// ── pace (words per minute) ──
-
-/** Words in a script/prompt — whitespace-separated tokens. */
-export const wordCount = (text: string): number => {
-  const trimmed = text.trim();
-  return trimmed ? trimmed.split(/\s+/).length : 0;
-};
-
-/** Minimum recording length before a WPM estimate is meaningful. */
-export const MIN_PACE_DURATION_MS = 3_000;
-
-/** Estimated words per minute, or null when there's nothing sound to estimate
- * from (no script words, or a clip too short to divide by). */
-export const estimateWpm = (words: number, durationMs: number): number | null =>
-  words > 0 && durationMs >= MIN_PACE_DURATION_MS
-    ? Math.round(words / (durationMs / 60_000))
-    : null;
-
-/** Comfortable spoken range. Outside it we only *note* the pace in muted text
- * — never a judgment colour. */
-export const PACE_COMFORT = { min: 100, max: 160 };
-
-/** Neutral pace note: 'quick', 'unhurried', or null when comfortably in range. */
-export const paceNote = (wpm: number): 'quick' | 'unhurried' | null =>
-  wpm > PACE_COMFORT.max ? 'quick' : wpm < PACE_COMFORT.min ? 'unhurried' : null;
-
 // ── take metadata store (localStorage, timestamps only — no audio) ──
 
 const tKey = (uid?: string) => `oral:takes:${uid || 'anon'}`;
@@ -103,14 +79,17 @@ export const saveTakeMeta = (uid: string | undefined, meta: Record<string, TakeM
   }
 };
 
-/** Append a take to a part's history, keeping only the previous + latest (pure). */
+/** Append a take to a part's history (pure). The FULL history is kept — each
+ * entry is a tiny {at, durationMs} pair, and the total count is what walks the
+ * 1/3/8/21 re-record ladder. Only the audio blobs are pruned to the previous +
+ * latest (saveTakeBlobs). */
 export const appendTake = (
   meta: Record<string, TakeMeta[]>,
   partId: string,
   take: TakeMeta
 ): Record<string, TakeMeta[]> => ({
   ...meta,
-  [partId]: [...(meta[partId] ?? []), take].slice(-MAX_TAKES_PER_PART),
+  [partId]: [...(meta[partId] ?? []), take],
 });
 
 // ── take audio store (IndexedDB, on-device only) ──

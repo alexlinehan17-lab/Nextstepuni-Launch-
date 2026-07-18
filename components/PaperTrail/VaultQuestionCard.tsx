@@ -201,7 +201,9 @@ const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, on
 
       {/* Body */}
       {state.s === 'ready' ? (
-        <div className="px-3 pt-3 pb-1 bg-[#fafafa] dark:bg-zinc-950">
+        // Stays light in dark mode too — the card itself is forced white
+        // (design system), so a zinc-950 strip here read as a black band.
+        <div className="px-3 pt-3 pb-1 bg-[#fafafa]">
           <CropView
             pdf={state.pdf}
             region={state.region}
