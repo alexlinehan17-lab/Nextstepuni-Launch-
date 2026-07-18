@@ -26,14 +26,11 @@ import {
   type TakeMeta,
   appendTake,
   daysAgoLabel,
-  estimateWpm,
   isDueForRerecord,
   loadTakeBlobs,
   loadTakeMeta,
-  paceNote,
   saveTakeBlobs,
   saveTakeMeta,
-  wordCount,
 } from './oralReadiness';
 
 const INK = '#1a1a1a';
@@ -43,6 +40,18 @@ const GREEN = '#4C8C5E';
 
 const READINESS = ['Not yet', 'Shaky', 'Getting there', 'Ready'];
 const readyColor = (n: number) => (n >= 3 ? SUCCESS : n >= 1 ? ACCENT : '#9e9186');
+
+// Honest, measurable feedback on a take: how long the student actually spoke.
+// (We can't compute true words-per-minute without transcribing their answer —
+// the old estimate divided the Irish scaffold's word count by their speaking
+// time, which was not their pace.)
+const formatSpokenDuration = (ms: number): string => {
+  const totalSec = Math.round(ms / 1000);
+  if (totalSec < 60) return `${totalSec}s`;
+  const m = Math.floor(totalSec / 60);
+  const s = totalSec % 60;
+  return `${m}m ${s.toString().padStart(2, '0')}s`;
+};
 
 // ── readiness store (local, per uid) ──
 const rKey = (uid?: string) => `oral:readiness:${uid || 'anon'}`;
@@ -77,7 +86,6 @@ const OralExamTrainer: React.FC<Props> = ({ uid }) => {
   const [recording, setRecording] = useState(false);
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
   const [prevUrl, setPrevUrl] = useState<string | null>(null);
-  const [paceWpm, setPaceWpm] = useState<number | null>(null);
   const [micError, setMicError] = useState<string | null>(null);
   const recorderRef = useRef<MediaRecorder | null>(null);
   const streamRef = useRef<MediaStream | null>(null);
@@ -88,7 +96,6 @@ const OralExamTrainer: React.FC<Props> = ({ uid }) => {
   const activeIdRef = useRef<string | null>(null);
   const latestBlobRef = useRef<Blob | null>(null);
   const recStartRef = useRef(0);
-  const recScriptWordsRef = useRef(0);
   const recPartIdRef = useRef<string | null>(null);
 
   const stopStream = () => {
@@ -101,7 +108,6 @@ const OralExamTrainer: React.FC<Props> = ({ uid }) => {
     if (prevUrlRef.current) URL.revokeObjectURL(prevUrlRef.current);
     setPrevUrl(null);
     latestBlobRef.current = null;
-    setPaceWpm(null);
   }, []);
 
   useEffect(() => () => {
@@ -113,9 +119,6 @@ const OralExamTrainer: React.FC<Props> = ({ uid }) => {
   const startRecording = async () => {
     setMicError(null);
     recPartIdRef.current = active?.id ?? null;
-    // Pace is only estimable when there's a script text (the Irish scaffold) to count words from.
-    const script = active ? active.prompts[promptIdx % Math.max(1, active.prompts.length)]?.ga : undefined;
-    recScriptWordsRef.current = wordCount(script ?? '');
     const md = typeof navigator !== 'undefined' ? navigator.mediaDevices : undefined;
     if (!md?.getUserMedia || typeof MediaRecorder === 'undefined') {
       setMicError('Recording isn’t supported on this device — you can still practise out loud and set your readiness below.');
@@ -138,7 +141,6 @@ const OralExamTrainer: React.FC<Props> = ({ uid }) => {
         if (audioUrlRef.current) URL.revokeObjectURL(audioUrlRef.current);
         setAudioUrl(URL.createObjectURL(blob));
         latestBlobRef.current = blob;
-        setPaceWpm(estimateWpm(recScriptWordsRef.current, durationMs));
         if (partId) {
           setTakesMeta(cur => {
             const next = appendTake(cur, partId, { at: Date.now(), durationMs });
@@ -204,7 +206,6 @@ const OralExamTrainer: React.FC<Props> = ({ uid }) => {
     const meta = takesMeta[active.id] ?? [];
     const latestMeta = meta[meta.length - 1];
     const prevMeta = meta.length >= 2 ? meta[meta.length - 2] : undefined;
-    const pace = paceWpm !== null ? paceNote(paceWpm) : null;
     return (
       <div className="w-full max-w-xl mx-auto pb-12">
         <button onClick={backHome} className="flex items-center gap-1.5 text-[13px] font-medium mb-4" style={{ color: '#7a7068' }}>
@@ -246,9 +247,9 @@ const OralExamTrainer: React.FC<Props> = ({ uid }) => {
                 Latest take{latestMeta ? ` · ${daysAgoLabel(latestMeta.at, now)}` : ''}
               </p>
               <audio controls src={audioUrl} className="w-full" />
-              {paceWpm !== null && (
+              {latestMeta && latestMeta.durationMs > 0 && (
                 <p className="text-[11.5px] mt-1.5" style={{ color: '#9e9186' }}>
-                  Pace: about {paceWpm} words per minute{pace ? ` · a touch ${pace}` : ''} (rough estimate from the Irish scaffold)
+                  You spoke for {formatSpokenDuration(latestMeta.durationMs)}
                 </p>
               )}
               {prevUrl && (

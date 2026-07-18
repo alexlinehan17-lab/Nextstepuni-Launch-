@@ -102,8 +102,30 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[]; studentC
 
   const subjectCards = subjectId ? cardsForSubject(subjectId).filter(matchesLevel) : [];
   const card = cardId ? RECOVERY_CARDS.find(c => c.id === cardId) ?? null : null;
-  const totalCards = RECOVERY_CARDS.length;
   const recoveredCount = recovered.size;
+
+  // Denominator for the "caught up so far" bar: the unique TOPICS recoverable
+  // for the student's own subjects at the selected level — not RECOVERY_CARDS
+  // .length (676 cards across all subjects/levels), which no student could ever
+  // clear, so the bar was permanently a sliver. Falls back to every available
+  // subject when we don't know the student's subjects.
+  const catchUpTopicUniverse = useMemo(() => {
+    const ids = new Set<string>();
+    for (const a of available) {
+      if (studentSet.size > 0 && !studentSet.has(baseName(a.subjectLabel))) continue;
+      for (const c of cardsForSubject(a.subjectId)) {
+        if (c.level === 'common' || c.level === levelFilter) ids.add(c.topicId);
+      }
+    }
+    return ids;
+  }, [available, studentSet, levelFilter]);
+  const recoveredInUniverse = useMemo(
+    () => state.recoveredTopicIds.filter(id => catchUpTopicUniverse.has(id)).length,
+    [state.recoveredTopicIds, catchUpTopicUniverse],
+  );
+  const caughtUpPercent = catchUpTopicUniverse.size > 0
+    ? Math.min(100, Math.round((recoveredInUniverse / catchUpTopicUniverse.size) * 100))
+    : 0;
 
   // ── navigation ──
   const openSubject = (sid: string) => { setSubjectId(sid); setView('queue'); };
@@ -256,7 +278,7 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[]; studentC
               {recoveredCount} {recoveredCount === 1 ? 'topic' : 'topics'} recovered
             </p>
             <div className="h-2.5 rounded-full overflow-hidden" style={{ backgroundColor: '#ffffff' }}>
-              <div className="h-full rounded-full transition-all" style={{ width: `${Math.round((recoveredCount / totalCards) * 100)}%`, backgroundColor: CYAN }} />
+              <div className="h-full rounded-full transition-all" style={{ width: `${caughtUpPercent}%`, backgroundColor: CYAN }} />
             </div>
           </div>
         )}

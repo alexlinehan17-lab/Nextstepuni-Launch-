@@ -689,7 +689,7 @@ const ExaminersChair: React.FC<Props> = ({ uid }) => {
             )}
 
             <button
-              onClick={() => { startedAtRef.current = Date.now(); setBorderlineOnly(false); setScriptIdx(0); setStage('mark'); }}
+              onClick={() => { startedAtRef.current = Date.now(); setBorderlineOnly(false); setScriptIdx(0); setDecisions({}); setChosenLevel(null); setStage('mark'); }}
               className="w-full rounded-full py-3 text-[15px] font-semibold text-white transition-transform active:translate-y-0.5"
               style={{ backgroundColor: ACCENT, borderBottom: '3px solid #B54D14', boxShadow: '0 4px 0 #B54D14' }}
             >

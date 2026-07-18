@@ -97,12 +97,19 @@ export function useCatchUpLane(uid?: string) {
     });
   }, [persist]);
 
-  // Arm 2: save the student's re-entry plan (stamps savedAt).
+  // Arm 2: save the student's re-entry plan (stamps savedAt). Preserve any
+  // First-Week-Back timeline the student has already completed — the incoming
+  // `plan` from Comeback.finish() carries no `firstWeek`, so without this a
+  // "Redo my plan" would silently wipe their day-by-day progress.
   const saveComeback = useCallback((plan: Omit<ComebackPlan, 'savedAt'>) => {
     setState(prev => {
       const next: CatchUpLaneState = {
         ...prev,
-        comeback: { ...plan, savedAt: new Date().toISOString() },
+        comeback: {
+          ...plan,
+          savedAt: new Date().toISOString(),
+          ...(prev.comeback?.firstWeek ? { firstWeek: prev.comeback.firstWeek } : {}),
+        },
         updatedAt: new Date().toISOString(),
       };
       persist(next);
@@ -132,10 +139,16 @@ export function useCatchUpLane(uid?: string) {
     });
   }, [persist]);
 
-  // Total marks "protected" so far — conservative sum of recovered topics' weights.
+  // Total marks "protected" so far — conservative sum of recovered topics'
+  // weights. Many topics have multiple recovery cards sharing one topicId, so we
+  // count each recovered TOPIC once (not once per card) to avoid inflating the
+  // figure many-fold.
   const marksProtected = useMemo(() => {
-    const recovered = new Set(state.recoveredTopicIds);
-    return RECOVERY_CARDS.reduce((sum, c) => sum + (recovered.has(c.topicId) ? c.marksWeight : 0), 0);
+    const weightByTopic = new Map<string, number>();
+    for (const c of RECOVERY_CARDS) {
+      if (!weightByTopic.has(c.topicId)) weightByTopic.set(c.topicId, c.marksWeight);
+    }
+    return state.recoveredTopicIds.reduce((sum, id) => sum + (weightByTopic.get(id) ?? 0), 0);
   }, [state.recoveredTopicIds]);
 
   return { state, isLoaded, markRecovered, markShaky, logAbsence, saveComeback, setFirstWeekDay, marksProtected };
