@@ -138,6 +138,9 @@ interface DocSession {
   /** The loading task owns teardown in pdf.js — destroy() lives here. */
   task: { destroy: () => Promise<void> } | null;
   state: LoadState;
+  /** Set when the server ANSWERED with an error (4xx/5xx) — the connection is
+   *  fine, so the failure copy must not blame it (e.g. 402 = billing lapsed). */
+  httpStatus?: number;
   numPages: number;
   scrollTop: number;
   page: number;
@@ -389,6 +392,7 @@ const Viewer: React.FC<ViewerProps> = ({
       if (!target) return;
       const s = sessions.current[which];
       s.state = 'loading';
+      s.httpStatus = undefined;
       bump();
       let pdfjs: PdfjsModule;
       try {
@@ -422,9 +426,20 @@ const Viewer: React.FC<ViewerProps> = ({
         s.numPages = pdf.numPages;
         s.state = 'ready';
         bump();
-      } catch {
+      } catch (e) {
         if (mountedRef.current) {
           s.state = 'error';
+          // pdf.js's URL loader throws UnexpectedResponseException with the
+          // HTTP status when the server answered but refused (402/403/5xx),
+          // and MissingPDFException on 404. A status here means the network
+          // is fine — the failure copy must say so instead of blaming it.
+          const status = (e as { status?: unknown }).status;
+          s.httpStatus =
+            typeof status === 'number' && status >= 400
+              ? status
+              : (e as { name?: string }).name === 'MissingPDFException'
+                ? 404
+                : undefined;
           bump();
         }
       }
@@ -1258,12 +1273,18 @@ const Viewer: React.FC<ViewerProps> = ({
       ) : (
         <div className="flex-1 flex flex-col items-center justify-center gap-4 px-8 text-center">
           <p className="text-[15px] font-semibold text-zinc-800 dark:text-zinc-100">
-            {session.state === 'unsupported' ? 'This phone can’t show PDFs inside the app.' : 'That didn’t load.'}
+            {session.state === 'unsupported'
+              ? 'This phone can’t show PDFs inside the app.'
+              : session.httpStatus != null
+                ? 'The paper archive is temporarily unavailable.'
+                : 'That didn’t load.'}
           </p>
           <p className="text-[13px] text-zinc-500 max-w-sm">
             {session.state === 'unsupported'
               ? 'No problem — the document will open in your browser instead.'
-              : 'It might be the connection. Try again, or open it in your browser.'}
+              : session.httpStatus != null
+                ? 'The problem is on our side — not your connection or your phone. Please try again in a little while.'
+                : 'It might be the connection. Try again, or open it in your browser.'}
           </p>
           <div className="flex items-center gap-2.5">
             {session.state === 'error' && (
@@ -1275,14 +1296,18 @@ const Viewer: React.FC<ViewerProps> = ({
                 <RotateCcw size={14} /> Try again
               </button>
             )}
-            <a
-              href={activeDoc.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 rounded-full text-[13px] font-semibold border-2 border-zinc-300 dark:border-zinc-700 text-zinc-600 dark:text-zinc-300"
-            >
-              Open in browser
-            </a>
+            {/* When the server itself refused (402/403/…), the same URL is just
+                as dead in a browser tab — offering it would be a dead link. */}
+            {session.httpStatus == null && (
+              <a
+                href={activeDoc.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 rounded-full text-[13px] font-semibold border-2 border-zinc-300 dark:border-zinc-700 text-zinc-600 dark:text-zinc-300"
+              >
+                Open in browser
+              </a>
+            )}
           </div>
         </div>
       )}
