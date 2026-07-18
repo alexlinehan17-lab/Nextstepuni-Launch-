@@ -46,6 +46,7 @@ import { composeCoach } from './coach';
 import { composeDebrief, debriefSeen, markDebriefSeen } from './debrief';
 import { pendingMilestones, acknowledgeMilestone, type Milestone } from './milestones';
 import { paperAnswersPath, paperStoragePath, paperUrl, prettyBytes } from './storage';
+import { archiveHealth } from './archiveHealth';
 import { isPinned, listPins, listRecentOpens, recordRecentOpen, togglePin, type PaperRef } from './recentsStore';
 import { recordVisit } from '../lastVisited';
 import {
@@ -202,6 +203,24 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     });
   }, [uid]);
   const searchBoxRef = useRef<HTMLDivElement | null>(null);
+
+  // Archive outage banner — one tiny probe per page load; shown only on a
+  // CONFIRMED server-side refusal (billing/rules/outage), never on the
+  // student's own connection problems (see archiveHealth.ts).
+  const [archiveDown, setArchiveDown] = useState(false);
+  useEffect(() => {
+    const subj = PAPER_TRAIL_SUBJECTS.find(s => (PAPER_TRAIL_INDEX[s.id] ?? []).some(e => e.papers.length > 0));
+    const entry = subj && PAPER_TRAIL_INDEX[subj.id]!.find(e => e.papers.length > 0);
+    if (!subj || !entry) return;
+    let cancelled = false;
+    archiveHealth(paperUrl(paperStoragePath(subj.cycle, subj.id, entry.year, 'paper', entry.papers[0].doc.f)))
+      .then(h => {
+        if (!cancelled) setArchiveDown(h === 'down');
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   // ── deep link (?tool=paper-trail&subject=…&year=…), applied once per load ──
   useEffect(() => {
@@ -948,6 +967,14 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
         Pick a subject — every paper opens with its marking scheme one tap away,
         {junior ? ' for every Junior Cycle exam you can sit.' : ' for every exam year back to 2010.'}
       </p>
+
+      {archiveDown && (
+        <p className="text-[13px] leading-relaxed rounded-2xl px-4 py-3.5 mb-5" style={{ backgroundColor: BLUE_TINT, color: '#27506E' }}>
+          <strong>The paper archive is temporarily unavailable.</strong> Papers and marking
+          schemes won’t open right now — the problem is on our side, not your connection.
+          Your pins, progress and review decks are safe; please check back a little later.
+        </p>
+      )}
 
       {/* Search accelerator */}
       <div className="relative mb-5" ref={searchBoxRef}>
