@@ -298,22 +298,25 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
       {/* Points overview cards — stack on phones where 3-up makes "+133 pts"
           and similar widths overflow the card edges. */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        {/* Design system: white/cream cards only — the previous green "Target"
+            and amber "Gap" coloured surfaces are banned. Accent marks the goal;
+            current + gap are neutral facts. */}
         <div className="rounded-xl p-4 bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
           <p className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#9A9590] dark:text-zinc-500">Current</p>
-          <span className="font-apercu text-3xl font-black" style={{ color: COLORS.accent }}>{currentPoints}</span>
+          <span className="font-apercu text-3xl font-black text-[#1a1a1a] dark:text-white">{currentPoints}</span>
           <span className="text-sm ml-1 text-[#9A9590] dark:text-zinc-500">/625</span>
         </div>
-        <div className="rounded-xl p-4" style={{ backgroundColor: '#EDF2EE', border: '0.5px solid rgba(0,0,0,0.07)' }}>
-          <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: '#6B8F71' }}>Target</p>
-          <span className="font-apercu text-3xl font-black" style={{ color: '#4A6B4F' }}>{targetPoints}</span>
-          <span className="text-sm ml-1" style={{ color: '#6B8F71' }}>/625</span>
+        <div className="rounded-xl p-4 bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
+          <p className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#9A9590] dark:text-zinc-500">Target</p>
+          <span className="font-apercu text-3xl font-black" style={{ color: COLORS.accent }}>{targetPoints}</span>
+          <span className="text-sm ml-1 text-[#9A9590] dark:text-zinc-500">/625</span>
         </div>
-        <div className="rounded-xl p-4" style={{ backgroundColor: '#FDF3E7', border: '0.5px solid rgba(0,0,0,0.07)' }}>
-          <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: '#C4873B' }}>Gap</p>
-          <span className="font-apercu text-3xl font-black" style={{ color: '#8B5E2A' }}>
+        <div className="rounded-xl p-4 bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
+          <p className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#9A9590] dark:text-zinc-500">Gap</p>
+          <span className="font-apercu text-3xl font-black text-[#1a1a1a] dark:text-white">
             {targetPoints - currentPoints > 0 ? '+' : ''}{targetPoints - currentPoints}
           </span>
-          <span className="text-sm ml-1" style={{ color: '#C4873B' }}>pts</span>
+          <span className="text-sm ml-1 text-[#9A9590] dark:text-zinc-500">pts</span>
         </div>
       </div>
 
@@ -420,7 +423,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
             {/* Micro-story */}
             <div className="bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-5">
               <div className="flex items-start gap-3">
-                <Award size={18} className="text-amber-500 shrink-0 mt-1" />
+                <Award size={18} className="shrink-0 mt-1" style={{ color: COLORS.accent }} />
                 <div>
                   <p className="text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed italic">
                     "{relevantStory.quote}"
@@ -451,15 +454,19 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
                 </p>
                 <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-4">
                   <div className="flex items-end gap-2 h-32">
-                    {mockResults.map((mock, idx) => {
+                    {/* mockResults is newest-first (sorted desc by timestamp).
+                        Render oldest→newest left-to-right so the timeline reads
+                        correctly and each delta compares against the PREVIOUS
+                        (older) mock — otherwise improvements showed as negative. */}
+                    {[...mockResults].reverse().map((mock, idx, chrono) => {
                       const pct = Math.min(100, (mock.totalPoints / 625) * 100);
-                      const prevPts = idx > 0 ? mockResults[idx - 1].totalPoints : null;
+                      const prevPts = idx > 0 ? chrono[idx - 1].totalPoints : null;
                       const delta = prevPts !== null ? mock.totalPoints - prevPts : null;
                       return (
                         <div key={mock.id} className="flex-1 flex flex-col items-center gap-1">
                           <span className="text-[10px] font-bold text-zinc-600 dark:text-zinc-400">{mock.totalPoints}</span>
                           {delta !== null && (
-                            <span className="text-[9px] font-bold" style={{ color: delta >= 0 ? '#6B8F71' : '#C4873B' }}>
+                            <span className="text-[9px] font-bold" style={{ color: delta >= 0 ? '#3A8D5F' : '#7a7068' }}>
                               {delta >= 0 ? '+' : ''}{delta}
                             </span>
                           )}
@@ -690,8 +697,8 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
                         <span
                           className="self-start text-[10px] font-bold px-2 py-0.5 rounded-full"
                           style={delta > 0
-                            ? { backgroundColor: '#FDF3E7', color: '#8B5E2A' }
-                            : { backgroundColor: '#EDF2EE', color: '#4A6B4F' }}
+                            ? { backgroundColor: '#FDEEDF', color: '#8C3A0E' }
+                            : { backgroundColor: '#E8F2EC', color: '#1F5F3E' }}
                         >
                           {delta > 0
                             ? `+${delta} vs ${scenarioBaseline.isMock ? 'latest mock' : 'current'}`
@@ -702,7 +709,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
                         {lever && (
                           <p className="text-[11px] leading-relaxed text-zinc-500 dark:text-zinc-400 mt-1">
                             Biggest single step: <span className="font-semibold text-zinc-700 dark:text-zinc-300">{lever.subjectName} {lever.fromGrade} <ArrowRight size={9} className="inline" /> {lever.toGrade}</span>{' '}
-                            <span className="font-bold" style={{ color: '#4A6B4F' }}>+{lever.pointsGain} pts</span>
+                            <span className="font-bold" style={{ color: '#1F5F3E' }}>+{lever.pointsGain} pts</span>
                           </p>
                         )}
                       </>
@@ -803,11 +810,11 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
             exit={{ opacity: 0, y: -8 }}
             className="space-y-5"
           >
-            <div className="flex items-start gap-3 p-4 bg-amber-50 dark:bg-amber-900/15 border border-amber-200 dark:border-amber-800/30 rounded-xl">
-              <Zap size={16} className="text-amber-500 shrink-0 mt-0.5" />
+            <div className="flex items-start gap-3 p-4 rounded-xl" style={{ backgroundColor: '#FDEEDF', borderLeft: `3px solid ${COLORS.accent}` }}>
+              <Zap size={16} className="shrink-0 mt-0.5" style={{ color: COLORS.accent }} />
               <div>
-                <p className="text-sm font-bold text-amber-700 dark:text-amber-300">Best Points Bargains</p>
-                <p className="text-xs text-amber-600 dark:text-amber-400 leading-relaxed mt-1">
+                <p className="text-sm font-bold" style={{ color: '#8C3A0E' }}>Best Points Bargains</p>
+                <p className="text-xs leading-relaxed mt-1" style={{ color: '#8C3A0E' }}>
                   These are the grade improvements that give you the most points for the least effort. Focus here first.
                 </p>
               </div>
@@ -824,7 +831,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
                     className="p-4 rounded-xl bg-white/60 dark:bg-white/5 border border-zinc-200/60 dark:border-white/10"
                   >
                     <div className="flex items-center gap-3">
-                      <span className="text-lg font-bold text-amber-500 w-6 text-center">#{idx + 1}</span>
+                      <span className="text-lg font-bold w-6 text-center" style={{ color: COLORS.accent }}>#{idx + 1}</span>
                       <span className={`w-2.5 h-2.5 rounded-full shrink-0 ${getDot(b.subjectName)}`} />
                       <div className="flex-1 min-w-0">
                         <p className="text-sm font-bold text-zinc-800 dark:text-zinc-200">{b.subjectName}</p>
@@ -833,7 +840,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
                         </p>
                       </div>
                       <div className="text-right shrink-0">
-                        <span className="text-sm font-bold px-2.5 py-1 rounded-full" style={{ backgroundColor: '#EDF2EE', color: '#4A6B4F' }}>
+                        <span className="text-sm font-bold px-2.5 py-1 rounded-full" style={{ backgroundColor: '#E8F2EC', color: '#1F5F3E' }}>
                           +{b.pointsGain} pts
                         </span>
                       </div>
@@ -843,7 +850,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
                         Estimated effort: {b.effortHint}
                       </span>
                       {b.isMathsBonus && (
-                        <span className="text-[9px] font-bold px-2 py-0.5 rounded-full bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400">
+                        <span className="text-[9px] font-bold px-2 py-0.5 rounded-full" style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E' }}>
                           Unlocks +25 Maths Bonus!
                         </span>
                       )}

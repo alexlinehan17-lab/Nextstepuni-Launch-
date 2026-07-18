@@ -122,14 +122,21 @@ function genId(): string {
 
 // ── Quickest Wins Calculator ───────────────────────────────
 
-function getOneGradeUp(grade: Grade): Grade | null {
+function getOneGradeUp(grade: Grade | undefined): Grade | null {
+  // JC subjects carry no currentGrade (they use bands). getGradeIndex maps
+  // undefined to the off-scale index, so without this guard the code below
+  // would call undefined.startsWith('H') and crash the whole tool for every
+  // Junior Cycle user. The senior points memos run unconditionally, so this
+  // must be undefined-safe.
+  if (!grade) return null;
   const idx = getGradeIndex(grade);
   if (idx <= 0) return null; // already at top
   if (grade.startsWith('H')) return HIGHER_GRADES[idx - 1];
   return ORDINARY_GRADES[idx - 1];
 }
 
-function _getTwoGradesUp(grade: Grade): Grade | null {
+function _getTwoGradesUp(grade: Grade | undefined): Grade | null {
+  if (!grade) return null;
   const idx = getGradeIndex(grade);
   if (idx <= 1) return getOneGradeUp(grade);
   if (grade.startsWith('H')) return HIGHER_GRADES[idx - 2];
@@ -633,7 +640,13 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
 
   const handleNewWeek = () => {
     if (!comebackData) return;
-    const missions = generateMissions(quickWins, daysUntilExam, whatIfScenarios, topicMasteryData);
+    // Regenerate with the same curriculum branch used when the plan was first
+    // created (handleSetAnchor). Without this, a JC user's "next week" fell back
+    // to senior generateMissions with an empty quickWins list — collapsing to a
+    // single generic mission and dropping all band/retrieval missions.
+    const missions = isJunior
+      ? generateMissionsJC(quickWinsJC, topicMasteryData)
+      : generateMissions(quickWins, daysUntilExam, whatIfScenarios, topicMasteryData);
     const today = new Date().toISOString().split('T')[0];
     const updated: ComebackData = {
       ...comebackData,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useMemo, useEffect, useCallback } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import {
@@ -34,8 +34,6 @@ type TopicStatus = 'not-started' | 'in-progress' | 'confident';
 
 type SortKey = 'efficiency' | 'frequency' | 'weight' | 'difficulty';
 
-type QuadrantFilter = 'all' | 'start-here' | 'high-value' | 'worth-knowing' | 'only-if-time';
-
 interface TopicMastery {
   [topicName: string]: TopicStatus;
 }
@@ -44,21 +42,22 @@ interface SubjectMastery {
   [subject: string]: TopicMastery;
 }
 
-// ── Visual helpers ───────────────────────────────────────────────────────────
+// ── Sort control ─────────────────────────────────────────────────────────────
 
-const _STATUS_CONFIG: Record<TopicStatus, { label: string; color: string; dot: string }> = {
-  'not-started': { label: 'Not started', color: 'text-zinc-400 dark:text-zinc-500', dot: 'bg-zinc-300 dark:bg-zinc-600' },
-  'in-progress': { label: 'In progress', color: 'text-amber-600 dark:text-amber-400', dot: 'bg-amber-400' },
-  'confident': { label: 'Confident', color: 'text-emerald-600 dark:text-emerald-400', dot: 'bg-emerald-500' },
-};
+const SORT_OPTIONS: { key: SortKey; label: string }[] = [
+  { key: 'efficiency', label: 'Efficiency' },
+  { key: 'frequency', label: 'Frequency' },
+  { key: 'weight', label: 'Marks' },
+  { key: 'difficulty', label: 'Difficulty' },
+];
 
 // ── Treemap layout ───────────────────────────────────────────────────────────
 
+// Tiles are sized by mark weight but rendered in the caller-supplied order, so
+// the active sort (efficiency / frequency / marks / difficulty) drives the
+// reading order while block size always reflects marks.
 function computeTreemapLayout(topics: SyllabusTopic[], _totalMarks: number): { topic: SyllabusTopic; cols: number; rows: number }[] {
-  // Sort by mark weight descending
-  const sorted = [...topics].sort((a, b) => b.markWeight - a.markWeight);
-
-  return sorted.map(topic => {
+  return topics.map(topic => {
     const area = Math.max(2, Math.round((topic.markWeight / 100) * 20)); // Scale to ~20 units total
 
     let cols: number;
@@ -100,11 +99,9 @@ function displayToUnified(s: TopicStatus): UnifiedConfidence {
 
 const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => {
   const [selectedSubject, setSelectedSubject] = useState<string | null>(null);
-  const [sortBy, _setSortBy] = useState<SortKey>('efficiency');
+  const [sortBy, setSortBy] = useState<SortKey>('efficiency');
   const [expandedTopic, setExpandedTopic] = useState<string | null>(null);
   const [debriefs, setDebriefs] = useState<DebriefEntry[]>([]);
-  const [quadrantFilter, setQuadrantFilter] = useState<QuadrantFilter>('all');
-  const [searchQuery, setSearchQuery] = useState('');
 
   // Shared topic mastery hook
   const topicMastery = useTopicMastery(uid);
@@ -139,14 +136,6 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
     return () => { cancelled = true; };
   }, [uid]);
 
-  const _handleStatusChange = useCallback((subject: string, topicName: string) => {
-    const current = mastery[subject]?.[topicName] || 'not-started';
-    const cycle: TopicStatus[] = ['not-started', 'in-progress', 'confident'];
-    const nextIdx = (cycle.indexOf(current) + 1) % cycle.length;
-    const newDisplayStatus = cycle[nextIdx];
-    topicMastery.setTopicConfidence(subject, topicName, displayToUnified(newDisplayStatus), 'manual');
-  }, [mastery, topicMastery]);
-
   // Compute hours per topic for the selected subject via fuzzy matching
   const topicHoursMap = useMemo(() => {
     if (!selectedSubject || debriefs.length === 0) return {};
@@ -179,22 +168,6 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
     [uid, syllabus],
   );
 
-  // Compute mastery stats for the selected subject
-  const _masteryStats = useMemo(() => {
-    if (!syllabus || !selectedSubject) return { notStarted: 0, inProgress: 0, confident: 0, total: 0, progressPercent: 0 };
-    const subjectMastery = mastery[selectedSubject] || {};
-    let notStarted = 0, inProgress = 0, confident = 0;
-    for (const topic of syllabus.topics) {
-      const status = subjectMastery[topic.name] || 'not-started';
-      if (status === 'not-started') notStarted++;
-      else if (status === 'in-progress') inProgress++;
-      else confident++;
-    }
-    const total = syllabus.topics.length;
-    const progressPercent = total > 0 ? Math.round(((confident + inProgress * 0.5) / total) * 100) : 0;
-    return { notStarted, inProgress, confident, total, progressPercent };
-  }, [syllabus, selectedSubject, mastery]);
-
   // Study time stats
   const studyTimeStats = useMemo(() => {
     if (!syllabus || !selectedSubject) return { totalNeeded: 0, totalLogged: 0, remaining: 0 };
@@ -216,51 +189,22 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
     return { totalNeeded, totalLogged: Math.round(totalLogged * 10) / 10, remaining: Math.round(remaining) };
   }, [syllabus, selectedSubject, topicHoursMap, mastery]);
 
-  // Filtered and sorted topics
-  const _filteredTopics = useMemo(() => {
+  // Topics in the active sort order — drives the treemap reading order.
+  const sortedTopics = useMemo(() => {
     if (!syllabus) return [];
-    let topics = [...syllabus.topics];
-
-    // Quadrant filter
-    if (quadrantFilter !== 'all') {
-      topics = topics.filter(t => getQuadrant(t) === quadrantFilter);
-    }
-
-    // Search filter
-    if (searchQuery.trim()) {
-      const q = searchQuery.toLowerCase();
-      topics = topics.filter(t =>
-        t.name.toLowerCase().includes(q) ||
-        t.section.toLowerCase().includes(q) ||
-        t.tip.toLowerCase().includes(q)
-      );
-    }
-
-    // Sort
+    const topics = [...syllabus.topics];
     switch (sortBy) {
-      case 'efficiency':
-        return topics.sort((a, b) => computeEfficiency(b, syllabus.totalMarks) - computeEfficiency(a, syllabus.totalMarks));
       case 'frequency':
         return topics.sort((a, b) => b.examFrequency - a.examFrequency);
       case 'weight':
         return topics.sort((a, b) => b.markWeight - a.markWeight);
       case 'difficulty':
         return topics.sort((a, b) => a.difficulty - b.difficulty);
+      case 'efficiency':
       default:
-        return topics;
+        return topics.sort((a, b) => computeEfficiency(b, syllabus.totalMarks) - computeEfficiency(a, syllabus.totalMarks));
     }
-  }, [syllabus, sortBy, quadrantFilter, searchQuery]);
-
-  const _topicsByQuadrant = useMemo(() => {
-    if (!syllabus) return {};
-    const groups: Record<string, SyllabusTopic[]> = {};
-    for (const topic of syllabus.topics) {
-      const q = getQuadrant(topic);
-      if (!groups[q]) groups[q] = [];
-      groups[q].push(topic);
-    }
-    return groups;
-  }, [syllabus]);
+  }, [syllabus, sortBy]);
 
   // Subject-level progress for subject picker (mastery-based)
   const subjectProgress = useMemo(() => {
@@ -287,8 +231,8 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
       return (
         <div className="space-y-6">
           <div className="text-center py-16 space-y-4">
-            <div className="w-16 h-16 mx-auto rounded-2xl bg-rose-100 dark:bg-rose-900/30 flex items-center justify-center">
-              <ScanSearch size={32} className="text-rose-500" />
+            <div className="w-16 h-16 mx-auto rounded-2xl flex items-center justify-center" style={{ backgroundColor: '#FDEEDF' }}>
+              <ScanSearch size={32} style={{ color: COLORS.accent }} />
             </div>
             <h3 className="text-lg font-bold text-zinc-800 dark:text-white">See what's really worth marks</h3>
             <p className="text-sm text-zinc-500 dark:text-zinc-400 max-w-sm mx-auto leading-relaxed">
@@ -309,7 +253,7 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
             return (
               <button
                 key={subject}
-                onClick={() => { setSelectedSubject(subject); setQuadrantFilter('all'); setSearchQuery(''); }}
+                onClick={() => setSelectedSubject(subject)}
                 className="rounded-xl p-3.5 text-left transition-colors bg-[#FAF7F4] dark:bg-zinc-900"
                 style={{
                   border: '0.5px solid rgba(0,0,0,0.07)',
@@ -324,8 +268,8 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
                 {/* Progress bar */}
                 <div className="mt-2.5 h-1 rounded-full bg-zinc-200 dark:bg-zinc-700 overflow-hidden">
                   <div
-                    className="h-full rounded-full bg-emerald-500 transition-all"
-                    style={{ width: `${progress}%` }}
+                    className="h-full rounded-full transition-all"
+                    style={{ width: `${progress}%`, backgroundColor: COLORS.accent }}
                   />
                 </div>
                 {data && (
@@ -343,7 +287,7 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
 
   // ── Subject Detail View — Treemap ──
   const subjectMastery = mastery[selectedSubject] || {};
-  const treemapLayout = syllabus ? computeTreemapLayout(syllabus.topics, syllabus.totalMarks) : [];
+  const treemapLayout = syllabus ? computeTreemapLayout(sortedTopics, syllabus.totalMarks) : [];
 
   // Selected topic data
   const selectedTopicData = expandedTopic && syllabus
@@ -356,7 +300,8 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
       <div>
         <div className="flex items-center gap-2">
           <button
-            onClick={() => { setSelectedSubject(null); setExpandedTopic(null); setQuadrantFilter('all'); setSearchQuery(''); }}
+            onClick={() => { setSelectedSubject(null); setExpandedTopic(null); }}
+            aria-label="Back to subjects"
             className="p-1 -ml-1 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800/60 transition-colors"
           >
             <ChevronRight size={16} className="text-zinc-400 rotate-180" />
@@ -369,6 +314,30 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
           </p>
         )}
       </div>
+
+      {/* Sort control — reorders the treemap. Efficiency (marks per study hour)
+          is the default "where the marks are hiding" view. */}
+      {syllabus && (
+        <div className="flex items-center gap-1.5 overflow-x-auto -mx-1 px-1 pb-1" role="group" aria-label="Sort topics by">
+          <span className="text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 shrink-0 mr-1">Sort</span>
+          {SORT_OPTIONS.map(opt => {
+            const active = sortBy === opt.key;
+            return (
+              <button
+                key={opt.key}
+                onClick={() => setSortBy(opt.key)}
+                aria-pressed={active}
+                className="shrink-0 px-3 py-1.5 rounded-full text-xs font-semibold transition-colors border-2"
+                style={active
+                  ? { backgroundColor: '#FDEEDF', color: '#8C3A0E', borderColor: COLORS.accent }
+                  : { backgroundColor: 'white', color: '#7a7068', borderColor: '#d0cdc8' }}
+              >
+                {opt.label}
+              </button>
+            );
+          })}
+        </div>
+      )}
 
       {/* Treemap Grid */}
       {syllabus && (
@@ -402,15 +371,15 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
             let markColor: string;
 
             if (isSelected) {
-              bgClass = 'bg-[#E0F0ED] dark:bg-emerald-900/30';
-              borderColor = 'rgba(0,0,0,0.18)';
+              bgClass = 'bg-[#FDEEDF] dark:bg-zinc-800';
+              borderColor = COLORS.accent;
               nameClass = 'text-zinc-700 dark:text-zinc-300';
               markColor = COLORS.accent;
             } else if (hasSelection) {
               bgClass = 'bg-[#F7F5F2] dark:bg-zinc-800/50';
               borderColor = 'rgba(0,0,0,0.03)';
               nameClass = 'text-zinc-300 dark:text-zinc-600';
-              markColor = '#A3CDC4';
+              markColor = '#c9c2b8';
             } else {
               bgClass = 'bg-[#FAF7F4] dark:bg-zinc-900';
               borderColor = 'rgba(0,0,0,0.07)';
@@ -495,8 +464,8 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
                 const topicStatus = subjectMastery[selectedTopicData.name] || 'not-started';
                 const segments: { key: TopicStatus; label: string; dotClass: string; activeClasses: string }[] = [
                   { key: 'not-started', label: 'Not started', dotClass: 'bg-zinc-400', activeClasses: 'bg-zinc-200 dark:bg-zinc-700 text-zinc-700 dark:text-zinc-200' },
-                  { key: 'in-progress', label: 'In progress', dotClass: 'bg-amber-400', activeClasses: 'bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300' },
-                  { key: 'confident', label: 'Confident', dotClass: 'bg-emerald-500', activeClasses: 'bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300' },
+                  { key: 'in-progress', label: 'In progress', dotClass: 'bg-accent', activeClasses: 'bg-accentTint text-accentDarkText' },
+                  { key: 'confident', label: 'Confident', dotClass: 'bg-success', activeClasses: 'bg-successTint text-successDarkText' },
                 ];
                 return (
                   <div className="flex gap-1.5 mb-5 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50">
