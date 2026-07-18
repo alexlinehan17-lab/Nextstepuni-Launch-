@@ -41,6 +41,25 @@ and (b) embedded senior content.
 
 Gates at time of change: typecheck 0 / lint 0 / 1766 tests / build — all clean.
 
+## Follow-up shipped — senior testimonials reframed for JC (2026-07)
+
+`PersonalStory` (`components/ModuleShared.tsx`) now takes an optional `junior`
+variant ({name?, role?, children}) rendered only when the reader is a Junior
+Cycle student (`curriculumLevel === 'junior'`). JC-appropriate variants were
+added to every JC-visible module whose testimonial carried senior framing —
+peer stories reframed to a JC year (2nd/3rd) with "mocks"/"the exam" changed to
+class tests / Junior Cert, and the founder "Alex" stories trimmed of the
+senior-only epilogue ("nearly 600 points in the Leaving Cert and a UCC
+Scholarship", "In 4th year") while keeping the true Junior-Cert turnaround.
+Modules updated: DigitalDistraction, ExamCrisisManagement, ExamHallStrategies,
+GameDay, ReverseEngineering, TheCognitiveLoad, TheContextEffect, TheLearningRadar,
+TheNoteTakingParadox, GrowthMindset (×2), AgencyArchitecture. GrowthMindset's JC
+variant also drops an underage-drinking mention. Separately, SelfEfficacy's
+RoleModelSelector copy ("625 points … doctor"; "failed their mocks … dream
+course") was made age-neutral for all users. Stories that were already
+JC-appropriate (about the Junior Cert itself, no senior epilogue) were left as-is:
+TheScienceOfMakingMistakes, SelfEfficacy's founder story, GrowthMindset story #1.
+
 ## What Essentials Mode does NOT fix (remaining work — content, staged)
 
 Essentials swaps the **reading prose** only. It does not touch **PersonalStory

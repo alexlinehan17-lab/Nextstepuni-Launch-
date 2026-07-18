@@ -885,7 +885,9 @@ const TheLearningRadarModule: React.FC<{ onBack: () => void; progress: ModulePro
                 ]}
                 accentNote="If you can do all three, you're genuinely learning. If you can't, you're in the familiarity trap — and now you know to switch up your approach."
               />
-              <PersonalStory name="Ciara" role="5th Year, Cork">
+              <PersonalStory name="Ciara" role="5th Year, Cork" junior={{ name: 'Ciara', role: '2nd Year, Cork', children: (
+                <>I used to spend hours reading my Science notes and feel grand about it. Then I tried the "Close the Book" test and I literally couldn't remember a single thing I'd just read. It was a shock. Now I stop every 20 minutes and try to write down the main points without looking. It's way harder but I actually remember stuff for tests now.</>
+              ) }}>
                 I used to spend hours reading my Biology notes and feel grand about it. Then I tried the "Close the Book" test and I literally couldn't remember a single thing I'd just read. It was a shock. Now I stop every 20 minutes and try to write down the main points without looking. It's way harder but I actually remember stuff for tests now.
               </PersonalStory>
             </ReadingSection>

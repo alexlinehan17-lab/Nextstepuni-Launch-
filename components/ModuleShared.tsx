@@ -9,6 +9,7 @@ import { MotionDiv } from './Motion';
 import { Zap, Quote, Sparkles, ArrowRight } from 'lucide-react';
 import { type ModuleTheme } from '../types';
 import { useNavigation } from '../contexts/NavigationContext';
+import { useAuth } from '../contexts/AuthContext';
 import { COLORS } from '../design/tokens';
 
 /* ═══════════════════════════════════════════════════════
@@ -299,9 +300,20 @@ interface PersonalStoryProps {
   children: React.ReactNode;
   name: string;
   role?: string;
+  /** Junior Cycle variant. When the reader is a JC student (1st–3rd year) and
+   *  this is supplied, it replaces name/role/children so 12–15 year-olds aren't
+   *  shown senior-only framing (mocks, CAO points, 5th/6th year, college).
+   *  Content complexity audit 2026-07 — see compliance/JC_READABILITY_AUDIT.md. */
+  junior?: { name?: string; role?: string; children: React.ReactNode };
 }
 
-export const PersonalStory = ({ children, name, role }: PersonalStoryProps) => (
+export const PersonalStory = ({ children, name, role, junior }: PersonalStoryProps) => {
+  const { user } = useAuth();
+  const useJunior = user?.curriculumLevel === 'junior' && !!junior;
+  const shownName = useJunior ? (junior!.name ?? name) : name;
+  const shownRole = useJunior ? junior!.role : role;
+  const shownChildren = useJunior ? junior!.children : children;
+  return (
   <MotionDiv
     initial={{ opacity: 0, y: 8 }}
     whileInView={{ opacity: 1, y: 0 }}
@@ -319,19 +331,20 @@ export const PersonalStory = ({ children, name, role }: PersonalStoryProps) => (
             <Quote size={14} style={{ color: 'var(--accent-hex)' }} />
           </div>
           <div>
-            <span className="text-sm font-bold text-zinc-800 dark:text-zinc-200">{name}</span>
-            {role && (
-              <span className="text-[10px] font-semibold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 ml-2">{role}</span>
+            <span className="text-sm font-bold text-zinc-800 dark:text-zinc-200">{shownName}</span>
+            {shownRole && (
+              <span className="text-[10px] font-semibold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 ml-2">{shownRole}</span>
             )}
           </div>
         </div>
         <div className="text-[15px] leading-[1.8] text-zinc-600 dark:text-zinc-400 italic font-serif">
-          {children}
+          {shownChildren}
         </div>
       </div>
     </div>
   </MotionDiv>
-);
+  );
+};
 
 /* ═══════════════════════════════════════════════════════
    DualChartComparison

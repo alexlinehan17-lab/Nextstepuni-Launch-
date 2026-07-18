@@ -223,14 +223,14 @@ const RoleModelSelector = () => {
                 <button onClick={() => setChoice('mastery')} className="p-6 rounded-xl text-left flex flex-col justify-between h-48" style={{ backgroundColor: choice === 'mastery' ? '#FCA5A5' : '#FFFFFF', border: `2.5px solid ${choice === 'mastery' ? '#DC2626' : '#1C1917'}`, borderRadius: 14, boxShadow: choice === 'mastery' ? 'none' : '3px 3px 0px 0px #1C1917', color: choice === 'mastery' ? '#7F1D1D' : '#1C1917' }}>
                     <div>
                         <p className="font-bold text-lg">The Genius (Mastery Model)</p>
-                        <p className="text-xs mt-1">A past pupil who got 625 points, found school easy, and is now a doctor.</p>
+                        <p className="text-xs mt-1">A past pupil who always got top marks, found school easy, and never really had to study.</p>
                     </div>
                     <p className="text-xs font-mono self-end">"Just work hard."</p>
                 </button>
                  <button onClick={() => setChoice('coping')} className="p-6 rounded-xl text-left flex flex-col justify-between h-48" style={{ backgroundColor: choice === 'coping' ? '#6EE7B7' : '#FFFFFF', border: `2.5px solid ${choice === 'coping' ? '#059669' : '#1C1917'}`, borderRadius: 14, boxShadow: choice === 'coping' ? 'none' : '3px 3px 0px 0px #1C1917', color: choice === 'coping' ? '#064E3B' : '#1C1917' }}>
                     <div>
                         <p className="font-bold text-lg">The Grafter (Coping Model)</p>
-                        <p className="text-xs mt-1">A past pupil who failed their mocks, changed their study habits, and got into their dream course.</p>
+                        <p className="text-xs mt-1">A past pupil who used to struggle in tests, changed how they studied, and completely turned things around.</p>
                     </div>
                      <p className="text-xs font-mono self-end">"Here's how I recovered."</p>
                 </button>
