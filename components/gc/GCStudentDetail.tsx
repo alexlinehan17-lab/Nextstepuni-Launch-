@@ -3,12 +3,10 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
-import { ArrowLeft, Flame, Coins, ChevronDown, ChevronRight, BookOpen, AlertTriangle, FileText, X, Save, Compass, BarChart3, Brain, Lightbulb, Heart, UserPlus, TrendingDown, TrendingUp, CheckCircle, MinusCircle, Flag, type LucideIcon } from 'lucide-react';
-import { db } from '../../firebase';
-import { doc, getDoc, setDoc } from 'firebase/firestore';
+import { ArrowLeft, Flame, Coins, ChevronDown, ChevronRight, BookOpen, AlertTriangle, X, Compass, BarChart3, Brain, Lightbulb, Heart, UserPlus, TrendingDown, TrendingUp, CheckCircle, MinusCircle, Flag, type LucideIcon } from 'lucide-react';
 import { addNotification } from './gcNotifications';
 import { type CourseData } from '../Library';
 import { type CategoryType } from '../KnowledgeTree';
@@ -56,9 +54,8 @@ const SectionLabel: React.FC<{ label: string }> = ({ label }) => (
 
 interface GCFlagsAPI {
   flags: Record<string, FlagData>;
-  flagStudent: (uid: string, note?: string, priority?: FlagPriority) => Promise<void>;
+  flagStudent: (uid: string, priority?: FlagPriority) => Promise<void>;
   unflagStudent: (uid: string) => Promise<void>;
-  updateFlagNote: (uid: string, note: string) => Promise<void>;
   updateFlagPriority: (uid: string, priority: FlagPriority) => Promise<void>;
   isFlagged: (uid: string) => boolean;
   getFlagData: (uid: string) => FlagData | null;
@@ -71,7 +68,6 @@ interface GCStudentDetailProps {
   onBack: () => void;
   school?: string;
   isTrayMode?: boolean;
-  onNoteSaved?: (uid: string, notes: string, updatedAt: string) => void;
   alerts?: EarlyWarningAlert[];
   gcName?: string;
   gcFlags?: GCFlagsAPI;
@@ -94,7 +90,7 @@ const INNOVATION_TOOLS: { id: string; title: string; jcTitle?: string; curriculu
   { id: 'syllabus-xray',    title: 'Syllabus X-Ray',             curriculum: 'senior' },
 ];
 
-export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCourses, onBack, school, isTrayMode, onNoteSaved, alerts = [], gcName, gcFlags }) => {
+export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCourses, onBack, isTrayMode, alerts = [], gcName, gcFlags }) => {
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
   const [showRecommendModal, setShowRecommendModal] = useState(false);
   const [showKudosModal, setShowKudosModal] = useState(false);
@@ -166,55 +162,6 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
   const maxBlocks = Math.max(1, ...engagementTimeline.map(d => d.count));
   const totalBlocks = engagementTimeline.reduce((sum, d) => sum + d.count, 0);
   const activeDays = engagementTimeline.filter(d => d.count > 0).length;
-
-  // ─── GC Notes ───────────────────────────────────────────────────────
-
-  const [noteText, setNoteText] = useState('');
-  const [savedNotes, setSavedNotes] = useState('');
-  const [noteLoading, setNoteLoading] = useState(false);
-  const [noteSaving, setNoteSaving] = useState(false);
-  const [noteError, setNoteError] = useState<string | null>(null);
-
-  // Load existing notes on student change
-  useEffect(() => {
-    if (!school) return;
-    let cancelled = false;
-    setNoteText('');
-    setSavedNotes('');
-    setNoteLoading(true);
-
-    const loadNotes = async () => {
-      try {
-        const noteDoc = await getDoc(doc(db, 'gcNotes', school, 'students', student.user.uid));
-        if (!cancelled && noteDoc.exists()) {
-          setSavedNotes(noteDoc.data().notes ?? '');
-        }
-      } catch (err) { console.error('Failed to load student notes:', err); }
-      if (!cancelled) setNoteLoading(false);
-    };
-    loadNotes();
-
-    return () => { cancelled = true; };
-  }, [student.user.uid, school]);
-
-  const handleSaveNote = useCallback(async () => {
-    if (!school || !noteText.trim()) return;
-    setNoteSaving(true);
-    setNoteError(null);
-    try {
-      const now = new Date().toISOString();
-      const ref = doc(db, 'gcNotes', school, 'students', student.user.uid);
-      const updated = savedNotes ? `${savedNotes}\n\n${noteText.trim()}` : noteText.trim();
-      await setDoc(ref, { notes: updated, updatedAt: now });
-      setSavedNotes(updated);
-      setNoteText('');
-      onNoteSaved?.(student.user.uid, updated, now);
-    } catch (err) {
-      console.error('Failed to save note:', err);
-      setNoteError('Failed to save. Please try again.');
-    }
-    setNoteSaving(false);
-  }, [school, student.user.uid, noteText, savedNotes, onNoteSaved]);
 
   // ─── Tray Header (sticky, compact) ──────────────────────────────────
 
@@ -1037,64 +984,6 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
     );
   };
 
-  // ─── GC Notes ─────────────────────────────────────────────────────────
-
-  const renderCounsellorNotes = () => {
-    if (!school) return null;
-    return (
-      <div className="relative rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-6 overflow-hidden">
-        <div className="absolute top-0 left-0 right-0 h-[3px] bg-[var(--accent-hex)]" />
-        <div className="flex items-center gap-2 mb-4">
-          <FileText size={16} className="text-[var(--accent-hex)]" />
-          <h3 className="text-lg font-semibold tracking-tight text-zinc-900 dark:text-white">Counsellor Notes</h3>
-        </div>
-
-        {noteLoading ? (
-          <div className="h-32 bg-zinc-100 dark:bg-zinc-800 rounded-xl animate-pulse" />
-        ) : (
-          <>
-            {/* Saved notes display */}
-            {savedNotes && (
-              <div className="mb-4 rounded-xl bg-zinc-50 dark:bg-zinc-800/40 border border-zinc-200/60 dark:border-zinc-700/40 p-4 max-h-60 overflow-y-auto">
-                <p className="text-xs font-medium text-zinc-400 dark:text-zinc-500 uppercase tracking-wider mb-2">Saved Notes</p>
-                <div className="text-sm text-zinc-700 dark:text-zinc-300 whitespace-pre-wrap leading-relaxed">{savedNotes}</div>
-              </div>
-            )}
-
-            {/* New note input */}
-            <textarea
-              value={noteText}
-              onChange={(e) => setNoteText(e.target.value)}
-              placeholder="Add a note about this student..."
-              className="w-full h-24 bg-white dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-xl p-4 text-sm text-zinc-900 dark:text-white placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:border-[rgba(var(--accent),0.6)] focus:ring-1 focus:ring-[rgba(var(--accent),0.3)] transition-colors resize-y"
-            />
-            <div className="flex items-center justify-between mt-3">
-              <div className="flex items-center gap-2 text-xs">
-                {noteSaving && (
-                  <span className="flex items-center gap-1.5 text-[var(--accent-hex)]">
-                    <div className="w-3 h-3 border-2 border-[var(--accent-hex)] border-t-transparent rounded-full animate-spin" />
-                    Saving...
-                  </span>
-                )}
-                {noteError && (
-                  <span className="text-rose-500">{noteError}</span>
-                )}
-              </div>
-              <button
-                onClick={handleSaveNote}
-                disabled={noteSaving || !noteText.trim()}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[rgba(var(--accent),0.1)] text-[var(--accent-hex)] hover:bg-[rgba(var(--accent),0.2)] text-xs font-medium transition-colors disabled:opacity-50"
-              >
-                <Save size={13} />
-                Save Note
-              </button>
-            </div>
-          </>
-        )}
-      </div>
-    );
-  };
-
   // ─── Render ─────────────────────────────────────────────────────────
 
   // ─── Quick Actions (Recommend / Kudos) ───────────────────────────────
@@ -1276,12 +1165,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
         <span className="text-xs font-semibold" style={{ color: bannerColor }}>
           {isHigh ? 'High Priority' : 'Flagged'}
         </span>
-        {flagData.note && (
-          <>
-            <span className="text-zinc-300 dark:text-zinc-600" aria-hidden="true">&middot;</span>
-            <span className="text-xs text-zinc-500 dark:text-zinc-400 truncate flex-1">{flagData.note}</span>
-          </>
-        )}
+        <span className="flex-1" />
         <button
           onClick={() => gcFlags?.unflagStudent(student.user.uid)}
           className="text-xs font-medium shrink-0 px-2 py-1 rounded-md hover:bg-zinc-200/50 dark:hover:bg-zinc-700/50 transition-colors"
@@ -1384,8 +1268,6 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
               </div>
             </div>
           )}
-
-          {renderCounsellorNotes()}
         </div>
       </div>
     );
@@ -1444,9 +1326,6 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
           </div>
         </div>
       )}
-
-      {/* Counsellor Notes section */}
-      {renderCounsellorNotes()}
     </MotionDiv>
   );
 };

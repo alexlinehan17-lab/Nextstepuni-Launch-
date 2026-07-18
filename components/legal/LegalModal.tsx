@@ -89,8 +89,8 @@ const PRIVACY_NOTICE: Section[] = [
     heading: 'Who can see your information',
     body: [
       '• You can see all of your own information.',
-      '• Your school’s guidance counsellor can see your progress and can write private notes to support you.',
-      '• Other students at your school can see a limited public version of your island (your name, avatar, school, chosen goal category, and your island decorations and score), plus any kudos you choose to send. Your study sessions, reflections, grades, points and purchases are never shown to other students.',
+      '• Your school’s guidance counsellor can see your progress to support you.',
+      '• Other students at your school can see a limited public version of your island (your first name, avatar, school, chosen goal category, and your island decorations and score), plus any kudos you choose to send. Your full name, study sessions, reflections, grades, points and purchases are never shown to other students.',
       '• NextStepUni staff do not routinely read your information by hand — only occasionally to fix a technical problem.',
     ],
   },

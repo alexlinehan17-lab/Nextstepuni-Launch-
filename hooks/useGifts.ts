@@ -8,6 +8,7 @@ import { collection, query, where, orderBy, limit, getDocs, writeBatch, doc, ser
 import { db } from '../firebase';
 import { type ShopItem } from '../types';
 import { SHOP_CATALOG } from '../islandShopData';
+import { firstName } from '../utils/firstName';
 
 /** Max price for giftable items */
 const GIFT_MAX_PRICE = 50;
@@ -105,7 +106,8 @@ export function useGifts(uid?: string) {
       const giftRef = doc(collection(db, 'gifts'));
       batch.set(giftRef, {
         fromUid: uid,
-        fromName,
+        // Peers see first name only (data minimisation, 2026-07-18).
+        fromName: firstName(fromName),
         toUid,
         school,
         itemId: item.id,

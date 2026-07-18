@@ -6,7 +6,7 @@
 import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
-import { TrendingUp, TrendingDown, AlertTriangle, Search, ChevronLeft, ChevronRight, Flame, UserX, Download, FileText, StickyNote, Trash2, X, AlertCircle, Eye, Megaphone, FileDown, UserPlus, CheckCircle, MinusCircle, Flag, Sparkles, KeyRound, type LucideIcon } from 'lucide-react';
+import { TrendingUp, TrendingDown, AlertTriangle, Search, ChevronLeft, ChevronRight, Flame, UserX, Download, Trash2, X, AlertCircle, Eye, Megaphone, FileDown, UserPlus, CheckCircle, MinusCircle, Flag, Sparkles, KeyRound, type LucideIcon } from 'lucide-react';
 import { type CourseData } from '../Library';
 import { type CategoryType } from '../KnowledgeTree';
 import { getAvatarUrl, type CurriculumLevel } from '../../utils/authUtils';
@@ -144,9 +144,8 @@ const MONTH_NAMES = ['January', 'February', 'March', 'April', 'May', 'June', 'Ju
 
 interface GCFlagsAPI {
   flags: Record<string, FlagData>;
-  flagStudent: (uid: string, note?: string, priority?: FlagPriority) => Promise<void>;
+  flagStudent: (uid: string, priority?: FlagPriority) => Promise<void>;
   unflagStudent: (uid: string) => Promise<void>;
-  updateFlagNote: (uid: string, note: string) => Promise<void>;
   updateFlagPriority: (uid: string, priority: FlagPriority) => Promise<void>;
   isFlagged: (uid: string) => boolean;
   getFlagData: (uid: string) => FlagData | null;
@@ -157,7 +156,6 @@ interface GCOverviewProps {
   studentData: GCStudentFullData[];
   allCourses: CourseData[];
   school: string;
-  studentNotes: Record<string, { notes: string; updatedAt: string }>;
   onSelectStudent: (uid: string) => void;
   onDeleteStudent?: (user: any) => void;
   onResetPassword?: (studentUid: string) => void;
@@ -167,7 +165,7 @@ interface GCOverviewProps {
   gcFlags?: GCFlagsAPI;
 }
 
-export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses, school, studentNotes, onSelectStudent, onDeleteStudent, onResetPassword, alerts = [], onDismissAlert, gcName, gcFlags }) => {
+export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses, school, onSelectStudent, onDeleteStudent, onResetPassword, alerts = [], onDismissAlert, gcName, gcFlags }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [showStatusGuide, setShowStatusGuide] = useState(false);
   const [showBroadcastModal, setShowBroadcastModal] = useState(false);
@@ -197,7 +195,6 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
   const [sortKey, setSortKey] = useState<SortKey>('name');
   const [sortDir, setSortDir] = useState<SortDir>('asc');
   const [flagPopoverUid, setFlagPopoverUid] = useState<string | null>(null);
-  const [flagNote, setFlagNote] = useState('');
   const [flagPriority, setFlagPriority] = useState<FlagPriority>('normal');
   const flagPopoverRef = useRef<HTMLDivElement>(null);
 
@@ -652,7 +649,6 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
   const openFlagPopover = (uid: string, e: React.MouseEvent) => {
     e.stopPropagation();
     const existing = gcFlags?.getFlagData(uid);
-    setFlagNote(existing?.note ?? '');
     setFlagPriority(existing?.priority ?? 'normal');
     setFlagPopoverUid(uid);
   };
@@ -1628,12 +1624,6 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                               <p className="text-xs font-semibold text-zinc-700 dark:text-zinc-300 mb-3">
                                 {rowFlagged ? 'Edit Flag' : 'Flag Student'}
                               </p>
-                              <textarea
-                                value={flagNote}
-                                onChange={(e) => setFlagNote(e.target.value)}
-                                placeholder="Add a private note..."
-                                className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-lg p-2.5 text-sm text-zinc-800 dark:text-white placeholder:text-zinc-400 resize-none h-16 focus:outline-none focus:border-[rgba(242,107,31,0.5)] mb-3"
-                              />
                               <div className="flex items-center gap-2 mb-3">
                                 <span className="text-[10px] font-semibold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">Priority:</span>
                                 <button
@@ -1663,10 +1653,9 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                                   onClick={async (e) => {
                                     e.stopPropagation();
                                     if (rowFlagged) {
-                                      await gcFlags.updateFlagNote(uid, flagNote);
                                       await gcFlags.updateFlagPriority(uid, flagPriority);
                                     } else {
-                                      await gcFlags.flagStudent(uid, flagNote, flagPriority);
+                                      await gcFlags.flagStudent(uid, flagPriority);
                                     }
                                     setFlagPopoverUid(null);
                                   }}
@@ -1735,74 +1724,6 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
             </p>
           </div>
         )}
-      </div>
-
-      {/* ═══════════════════════════════════════════════════════════════════
-          Counsellor Notes (warm cream card)
-          ═══════════════════════════════════════════════════════════════════ */}
-      <div id="gc-notes" className={`rounded-xl overflow-hidden ${CARD_STYLE_DARK_CLASS}`} style={{ backgroundColor: '#FAF7F4', border: '0.5px solid rgba(0,0,0,0.07)' }}>
-        <div className="p-5 border-b border-zinc-100 dark:border-zinc-800">
-          <div className="flex items-center gap-2">
-            <StickyNote size={16} style={{ color: ACCENT }} className={TEXT_ACCENT_DARK} />
-            <p className={`text-[11px] font-medium uppercase tracking-widest ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Counsellor Notes</p>
-          </div>
-          <p className="text-lg font-medium text-zinc-900 dark:text-white mt-1">Student Notes</p>
-          <p className={`text-xs mt-0.5 ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>Private notes on each student. Click a student to view or edit.</p>
-        </div>
-
-        {(() => {
-          const studentsWithNotes = studentData
-            .filter(s => studentNotes[s.user.uid]?.notes)
-            .sort((a, b) => {
-              const aTime = studentNotes[a.user.uid]?.updatedAt ?? '';
-              const bTime = studentNotes[b.user.uid]?.updatedAt ?? '';
-              return bTime.localeCompare(aTime);
-            });
-
-          if (studentsWithNotes.length === 0) {
-            return (
-              <div className="text-center py-12">
-                <FileText size={28} className="mx-auto text-zinc-300 dark:text-zinc-600 mb-3" />
-                <p className="text-zinc-500 dark:text-zinc-400 text-sm font-medium">No notes yet.</p>
-                <p className="text-zinc-400 dark:text-zinc-500 text-xs mt-1">
-                  Open a student profile to add private notes.
-                </p>
-              </div>
-            );
-          }
-
-          return (
-            <div className="divide-y divide-zinc-100 dark:divide-zinc-800">
-              {studentsWithNotes.map(s => {
-                const note = studentNotes[s.user.uid];
-                const preview = note.notes.length > 120 ? note.notes.slice(0, 120) + '...' : note.notes;
-                const updatedDate = note.updatedAt ? new Date(note.updatedAt) : null;
-                const timeLabel = updatedDate
-                  ? `${updatedDate.toLocaleDateString('en-IE', { day: 'numeric', month: 'short' })} at ${updatedDate.toLocaleTimeString('en-IE', { hour: '2-digit', minute: '2-digit' })}`
-                  : '';
-
-                return (
-                  <button
-                    key={s.user.uid}
-                    onClick={() => onSelectStudent(s.user.uid)}
-                    className="w-full flex items-start gap-4 p-5 hover:bg-zinc-50 dark:hover:bg-zinc-800/30 transition-colors text-left"
-                  >
-                    <img src={getAvatarUrl(s.user.avatar)} alt="" className="w-9 h-9 rounded-full bg-zinc-200 shrink-0 mt-0.5" />
-                    <div className="min-w-0 flex-1">
-                      <div className="flex items-center justify-between gap-3">
-                        <p className="text-sm font-medium text-zinc-800 dark:text-white truncate">{s.user.name}</p>
-                        {timeLabel && (
-                          <span className={`text-[10px] shrink-0 ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>{timeLabel}</span>
-                        )}
-                      </div>
-                      <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1 leading-relaxed">{preview}</p>
-                    </div>
-                  </button>
-                );
-              })}
-            </div>
-          );
-        })()}
       </div>
 
       {/* Export Modal */}

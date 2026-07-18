@@ -63,6 +63,47 @@ migration was required. Gates: typecheck 0, lint 0, 1770 tests, app build, funct
 
 ---
 
+## Addendum 2 — 2026-07-18 — Verified school binding, first-name-only peers, GC notes removed
+
+Three follow-up changes (owner-directed) after the teach-back/flares removal:
+
+**1. Student school binding via verified join code (fixes H-2).** School is no
+longer client-asserted. The `/users` create rule now FORBIDS a client-supplied
+`school`, and the update rule keeps it immutable, so `school` can be set only by
+a Cloud Function (Admin SDK). A student presents their school's join code, which
+`claimStudentSchool` (`functions/src/schoolAccess.ts`) verifies server-side
+before binding them — exactly mirroring the staff-code flow (`claimStaffAccess`).
+A per-caller brute-force throttle (`schoolClaimAttempts/{uid}`, 6 / 15 min,
+default-deny) matches the staff path. Registration/staff/Google-first-login
+client writes were updated to stop sending `school`. **Interim join codes are
+deterministic** (school display name + a two-digit index by SCHOOLS order) — a
+temporary, low-entropy scheme to be replaced by per-school rotatable codes in
+`gcSettings` + App Check (L-7) before wide rollout. This closes the dominant
+tenant-isolation gap: an outsider can no longer type any school name to enter its
+peer graph.
+
+**2. Peers see first name only (data minimisation).** The island projection
+(`functions/src/islandProjection.ts`) and kudos/gifts sender labels
+(`hooks/useKudos.ts`, `hooks/useGifts.ts`) now carry only the student's first
+name — same-school classmates never receive each other's full names. Staff views
+(which read `/users`) keep full names. Helper: `utils/firstName.ts`. Privacy
+notice updated to match.
+
+**3. GC free-text notes removed (owner decision).** The dedicated `gcNotes`
+pastoral-notes feature AND the free-text `note` field on student flags were
+removed — flags are now priority-only labels. Rationale: minimise free-text
+records about minors (third-party-data / DSAR surface). Removed: the `gcNotes`
+rule (now default-deny), gcNotes handling in the DSAR export + erasure cascade,
+the Counsellor Notes UI (`GCStudentDetail`), the notes summary + flag-note input
+(`GCOverview`), the notes loader/wiring (`GCDashboard`), and `note`/
+`updateFlagNote` from `useGCFlags`. Privacy notice updated (GC no longer "writes
+private notes").
+
+Gates: typecheck 0, lint 0, 1770 tests, app build, functions `tsc` — all clean.
+Pre-launch, no data migration required.
+
+---
+
 ## Severity summary (consolidated, de-duplicated)
 
 | Sev | Count | Fixed | Flagged for owner decision / action |
@@ -93,7 +134,7 @@ in Google Cloud Console).
 - **Exploit:** A GC (role `gc`) passed the UID of *another GC at the same school* as the target. The code verified same-school but never that the target was a **student**, so a malicious/compromised GC could reset (→ impersonate) or cascade-delete a colleague GC — and, if an admin ever carried a matching `school`, admin too.
 - **Fix shipped:** both GC paths now reject a target whose `role` is `gc`/`admin` or whose `isAdmin === true`. GCs can only act on student accounts.
 
-### H-2 — Self-asserted `school` = no verified tenant isolation  ⚠️ FLAGGED (design decision)
+### H-2 — Self-asserted `school` = no verified tenant isolation  ✅ FIXED 2026-07-18 (student join codes — see Addendum 2)
 - **Where:** `firestore.rules` `/users` create rule — `school` is any client-supplied string ≤50 chars, immutable after.
 - **Exploit:** A student (or anyone who can register) types *any* school name and thereby joins that school's peer graph — reads same-school peers' free-text posts (teachbacks), becomes visible to that school's GC, and can inject content into that school's student feed (a safeguarding concern, not just privacy). There is no join-code / GC-approval / email-domain verification binding a user to a school.
 - **Why not auto-fixed:** the remedy is a product decision that changes onboarding UX. Options: (a) per-school **join codes** issued by the GC; (b) **GC approval** of new students before they enter the peer graph; (c) **email-domain allow-list** per school. See the question at the end of this document.

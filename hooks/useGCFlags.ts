@@ -14,7 +14,6 @@ export type FlagPriority = 'normal' | 'high';
 export interface FlagData {
   studentUid: string;
   flaggedAt: number; // millis
-  note: string;
   priority: FlagPriority;
 }
 
@@ -39,7 +38,6 @@ export function useGCFlags(gcUid: string | undefined) {
           loaded[d.id] = {
             studentUid: d.id,
             flaggedAt: data.flaggedAt?.toMillis?.() ?? data.flaggedAt ?? Date.now(),
-            note: data.note ?? '',
             priority: data.priority === 'high' ? 'high' : 'normal',
           };
         });
@@ -54,12 +52,11 @@ export function useGCFlags(gcUid: string | undefined) {
     return () => { cancelled = true; };
   }, [gcUid]);
 
-  const flagStudent = useCallback(async (studentUid: string, note?: string, priority?: FlagPriority) => {
+  const flagStudent = useCallback(async (studentUid: string, priority?: FlagPriority) => {
     if (!gcUid) return;
     const data: FlagData = {
       studentUid,
       flaggedAt: Date.now(),
-      note: note ?? '',
       priority: priority ?? 'normal',
     };
     setFlags(prev => ({ ...prev, [studentUid]: data }));
@@ -67,7 +64,6 @@ export function useGCFlags(gcUid: string | undefined) {
       await setDoc(doc(db, 'gcFlags', gcUid, 'flaggedStudents', studentUid), {
         studentUid,
         flaggedAt: Timestamp.now(),
-        note: data.note,
         priority: data.priority,
       });
     } catch (err) {
@@ -86,20 +82,6 @@ export function useGCFlags(gcUid: string | undefined) {
       await deleteDoc(doc(db, 'gcFlags', gcUid, 'flaggedStudents', studentUid));
     } catch (err) {
       console.error('[useGCFlags] Failed to unflag student:', err);
-    }
-  }, [gcUid]);
-
-  const updateFlagNote = useCallback(async (studentUid: string, note: string) => {
-    if (!gcUid) return;
-    setFlags(prev => {
-      const existing = prev[studentUid];
-      if (!existing) return prev;
-      return { ...prev, [studentUid]: { ...existing, note } };
-    });
-    try {
-      await setDoc(doc(db, 'gcFlags', gcUid, 'flaggedStudents', studentUid), { note }, { merge: true });
-    } catch (err) {
-      console.error('[useGCFlags] Failed to update flag note:', err);
     }
   }, [gcUid]);
 
@@ -128,7 +110,6 @@ export function useGCFlags(gcUid: string | undefined) {
     isLoaded,
     flagStudent,
     unflagStudent,
-    updateFlagNote,
     updateFlagPriority,
     isFlagged,
     getFlagData,

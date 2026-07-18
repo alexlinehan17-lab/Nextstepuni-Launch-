@@ -87,7 +87,6 @@ const LoadingSkeleton: React.FC = () => (
 
 export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allCourses, gcName, gcUid }) => {
   const [studentData, setStudentData] = useState<GCStudentFullData[]>([]);
-  const [studentNotes, setStudentNotes] = useState<Record<string, { notes: string; updatedAt: string }>>({});
   const [isLoading, setIsLoading] = useState(true);
   const [selectedStudentUid, setSelectedStudentUid] = useState<string | null>(null);
   const [activeNav, setActiveNav] = useState<string>('gc-overview');
@@ -283,21 +282,6 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
         if (cancelled) return;
         setStudentData(fullData);
 
-        // Fetch all GC notes for this school
-        try {
-          const notesCol = collection(db, 'gcNotes', school, 'students');
-          const notesSnapshot = await getDocs(notesCol);
-          if (cancelled) return;
-          const notes: Record<string, { notes: string; updatedAt: string }> = {};
-          notesSnapshot.docs.forEach(d => {
-            const data = d.data();
-            if (data.notes) {
-              notes[d.id] = { notes: data.notes, updatedAt: data.updatedAt ?? '' };
-            }
-          });
-          setStudentNotes(notes);
-        } catch (err) { console.error('Failed to load GC notes:', err); }
-
         // Load dismissed alerts
         try {
           const settingsSnap = await getDoc(doc(db, 'gcSettings', school));
@@ -432,7 +416,6 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
             studentData={studentData}
             allCourses={allCourses}
             school={school}
-            studentNotes={studentNotes}
             onSelectStudent={(uid) => setSelectedStudentUid(prev => prev === uid ? null : uid)}
             onDeleteStudent={setDeleteTarget}
             onResetPassword={handleResetPassword}
@@ -474,9 +457,6 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
                 onBack={() => setSelectedStudentUid(null)}
                 school={school}
                 isTrayMode
-                onNoteSaved={(uid, notes, updatedAt) => {
-                  setStudentNotes(prev => ({ ...prev, [uid]: { notes, updatedAt } }));
-                }}
                 alerts={getStudentAlerts(selectedStudent.user.uid)}
                 gcName={gcName}
                 gcFlags={gcFlags}

@@ -31,7 +31,6 @@ interface CascadeReport {
   notificationsDeleted: number;
   kudosDeleted: number;
   giftsDeleted: number;
-  gcNotesDeleted: number;
   gcFlagsDeleted: number;
   islandPublicDeleted: number;
   authDeleted: boolean;
@@ -121,10 +120,10 @@ async function cascadeDeleteUser(
   const r: CascadeReport = {
     usersDeleted: 0, progressDeleted: 0, sessionsDeleted: 0, settingsDeleted: 0,
     responsesDeleted: 0, notificationsDeleted: 0, kudosDeleted: 0, giftsDeleted: 0,
-    gcNotesDeleted: 0, gcFlagsDeleted: 0, islandPublicDeleted: 0, authDeleted: false,
+    gcFlagsDeleted: 0, islandPublicDeleted: 0, authDeleted: false,
   };
 
-  // School is needed for the gcNotes path; read it before deleting the doc.
+  // School is needed for the cohortTags path; read it before deleting the doc.
   const userSnap = await db.collection("users").doc(uid).get();
   const school = userSnap.exists ? (userSnap.data()?.school as string | undefined) : undefined;
 
@@ -152,11 +151,9 @@ async function cascadeDeleteUser(
     (await deleteAll(db, db.collection("gifts").where("fromUid", "==", uid))) +
     (await deleteAll(db, db.collection("gifts").where("toUid", "==", uid)));
 
-  // GC private notes about this student (path keyed by school).
+  // GC notes (gcNotes) were removed 2026-07-18, so there is nothing to erase
+  // there. Cohort tags remain and are keyed by school.
   if (school) {
-    const ref = db.collection("gcNotes").doc(school).collection("students").doc(uid);
-    if ((await ref.get()).exists) { await ref.delete(); r.gcNotesDeleted = 1; }
-
     // Cohort tags (DEIS/At-risk/Priority) about this student, held in
     // cohortTags/{school}.tags[uid]. Remove the student's entry (security
     // review 2026-07-16, M-8 — these must be in the erasure cascade).
@@ -257,15 +254,8 @@ export const exportMyData = onCall({ cors: true }, async (request) => {
     const x = { ...d.data() }; if (x.fromUid) x.fromUid = peerHash(x.fromUid); return x;
   });
 
-  // GC private notes are staff pastoral/safeguarding records that commonly
-  // contain third-party data and fall under subject-access exemptions — they
-  // must NOT be handed back to the student on a self-export. Only include them
-  // when a GC/admin is performing the export. (Security review 2026-07-16,
-  // MEDIUM.)
-  const school = (data.profile as { school?: string } | null)?.school;
-  if (school && (actorRole === "gc" || actorRole === "admin")) {
-    data.gcNotes = (await db.collection("gcNotes").doc(school).collection("students").doc(targetUid).get()).data() ?? null;
-  }
+  // (GC free-text notes were removed 2026-07-18, so there is nothing to export
+  // from gcNotes.)
 
   try {
     const u = await auth.getUser(targetUid);

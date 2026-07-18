@@ -29,14 +29,19 @@ service cloud.firestore {
       // explicitly below (lines for isSchoolStaff()/admin), so the GCDashboard — the
       // only legitimate cross-student consumer — stays authorized.
       allow read: if request.auth != null && request.auth.uid == userId;
+      // `school` is NOT accepted from the client on create. It is set only by
+      // the claimStudentSchool / claimStaffAccess Cloud Functions after the
+      // caller proves a valid per-school join / staff code (security review
+      // H-2, 2026-07-18). The update rule keeps it immutable thereafter, so a
+      // student can never self-assert or switch schools.
       allow create: if request.auth != null && request.auth.uid == userId
                    && !('isAdmin' in request.resource.data)
                    && !('role' in request.resource.data)
+                   && !('school' in request.resource.data)
                    && request.resource.data.name is string
                    && request.resource.data.name.size() <= 50
                    && request.resource.data.avatar is string
-                   && request.resource.data.avatar.size() <= 100
-                   && (!('school' in request.resource.data) || (request.resource.data.school is string && request.resource.data.school.size() <= 50));
+                   && request.resource.data.avatar.size() <= 100;
       // Update: self-write with immutability guarantees on role/school +
       // length validation on name/avatar.
       //
@@ -153,12 +158,9 @@ service cloud.firestore {
       allow write: if request.auth != null && request.auth.uid == userId;
     }
 
-    // GC Notes: GCs can read/write notes for their own school
-    match /gcNotes/{schoolId}/students/{studentId} {
-      allow read, write: if request.auth != null
-                         && isSchoolStaff()
-                         && schoolId == callerSchool();
-    }
+    // GC Notes (free-text pastoral notes about students) were REMOVED
+    // 2026-07-18 (owner decision). The collection has no rules and falls through
+    // to the default-deny catch-all. See compliance/evidence/security-review-2026-07.md.
 
     // GC Settings: staff can read/write settings for their own school (dismissed
     // alerts, the staff-access code, etc.)

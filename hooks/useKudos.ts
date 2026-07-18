@@ -7,6 +7,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { collection, query, where, orderBy, limit, getDocs, addDoc, serverTimestamp, Timestamp } from 'firebase/firestore';
 import { db } from '../firebase';
 import { KUDOS_MESSAGES } from '../kudosData';
+import { firstName } from '../utils/firstName';
 
 export interface ReceivedKudos {
   messageId: string;
@@ -88,7 +89,8 @@ export function useKudos(uid?: string) {
     try {
       await addDoc(collection(db, 'kudos'), {
         fromUid: uid,
-        fromName,
+        // Peers see first name only (data minimisation, 2026-07-18).
+        fromName: firstName(fromName),
         toUid,
         school,
         messageId,

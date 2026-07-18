@@ -66,6 +66,13 @@ const MAX_FIELD_LEN = 120;
 const clampStr = (v: unknown): string =>
   typeof v === "string" ? v.slice(0, MAX_FIELD_LEN) : "";
 
+// Peers see FIRST NAME ONLY — the projection is fanned out to every same-school
+// student, so it must not carry a classmate's full name (data minimisation,
+// security review 2026-07-18). Staff-facing views read /users directly and keep
+// the full name.
+const firstName = (v: unknown): string =>
+  typeof v === "string" && v.trim() ? v.trim().split(/\s+/)[0] : "";
+
 export function buildPublicProjection(
   userData: Record<string, unknown> | undefined,
   progressData: Record<string, unknown> | undefined,
@@ -116,7 +123,7 @@ export function buildPublicProjection(
   const score = placementCount * 2 + uniqueItems * 3;
 
   return {
-    name: typeof userData.name === "string" ? userData.name : "Student",
+    name: firstName(userData.name) || "Student",
     avatar: typeof userData.avatar === "string" ? userData.avatar : "James",
     school: typeof userData.school === "string" ? userData.school : "",
     category,

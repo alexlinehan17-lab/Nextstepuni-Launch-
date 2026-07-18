@@ -15,6 +15,8 @@ initializeApp();
 export { requestAccountDeletion, exportMyData } from "./dataRights";
 // Staff-access provisioning (Staff Dashboard) — see ./staffAccess.ts.
 export { claimStaffAccess } from "./staffAccess";
+// Student school binding (verified join code) — see ./schoolAccess.ts.
+export { claimStudentSchool } from "./schoolAccess";
 
 /**
  * resetStudentPassword
@@ -223,8 +225,10 @@ export const onUserWritten = onDocumentWritten(
     if (!progressSnap.exists) {
       // Existing projection but progress now missing — refresh identity
       // fields only. (Edge case: progress was deleted out-of-band.)
+      const first = typeof userData.name === "string" && userData.name.trim()
+        ? userData.name.trim().split(/\s+/)[0] : "Student";
       await islandPublicRef.update({
-        name: typeof userData.name === "string" ? userData.name : "Student",
+        name: first,
         avatar: typeof userData.avatar === "string" ? userData.avatar : "James",
         school: typeof userData.school === "string" ? userData.school : "",
         updatedAt: FieldValue.serverTimestamp(),

@@ -217,6 +217,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const [password, setPassword] = useState('');
   const [name, setName] = useState('');
   const [school, setSchool] = useState('');
+  const [joinCode, setJoinCode] = useState('');
   const [gcSchool, setGcSchool] = useState('');
   const [staffCode, setStaffCode] = useState('');
   const [avatar, setAvatar] = useState('');
@@ -259,7 +260,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const defaultAvatar = useMemo(() => AVATAR_SEEDS[Math.floor(Math.random() * AVATAR_SEEDS.length)], []);
 
   const resetForm = () => {
-    setEmail(''); setPassword(''); setName(''); setSchool('');
+    setEmail(''); setPassword(''); setName(''); setSchool(''); setJoinCode('');
     setGcSchool(''); setStaffCode(''); setAvatar(''); setError('');
     setShowPassword(false); setRegisterStep(1); setResetSent(false);
     setResendCountdown(0); setAgreedToTerms(false);
@@ -324,11 +325,13 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           yearGroup: data.yearGroup,
         });
       } else {
-        // First-time Google sign-in: create the user doc with school empty;
-        // they can set it later in-app.
+        // First-time Google sign-in: create the user doc WITHOUT a school —
+        // `school` is set only by the claimStudentSchool Cloud Function once a
+        // valid join code is presented (security review H-2). The client is
+        // forbidden from writing `school` by the /users create rule.
         const newName = cred.user.displayName || (cred.user.email?.split('@')[0]) || 'Student';
         const newAvatar = AVATAR_SEEDS[Math.floor(Math.random() * AVATAR_SEEDS.length)];
-        await setDoc(userRef, { name: newName, avatar: newAvatar, school: '' });
+        await setDoc(userRef, { name: newName, avatar: newAvatar });
         handleLoginSuccess({
           uid: cred.user.uid,
           name: newName,
@@ -419,10 +422,12 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         uid = cred.user.uid;
         await updateProfile(cred.user, { displayName: name.trim() });
       }
-      // Ensure a minimal user doc exists (role is set server-side by the function).
+      // Ensure a minimal user doc exists. `role` AND `school` are set
+      // server-side by claimStaffAccess (clients can't write either), so the
+      // client write carries neither.
       const selectedAvatar = AVATAR_SEEDS[Math.floor(Math.random() * AVATAR_SEEDS.length)];
-      await setDoc(doc(db, 'users', uid), { name: name.trim(), avatar: selectedAvatar, school }, { merge: true });
-      // Redeem the code — server verifies + grants role:'staff'.
+      await setDoc(doc(db, 'users', uid), { name: name.trim(), avatar: selectedAvatar }, { merge: true });
+      // Redeem the code — server verifies + grants role:'staff' and sets school.
       const claimFn = httpsCallable<{ school: string; code: string }, { success: boolean }>(getFunctions(app), 'claimStaffAccess');
       await claimFn({ school, code: staffCode.trim() });
       // Reload so AuthContext re-reads role:'staff' and routes to the Staff Dashboard.
@@ -455,6 +460,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       if (normalised === 'admin@nextstep.app' || /^gc-.*@nextstep\.app$/.test(normalised)) { setError('This email is reserved.'); return false; }
       if (!name.trim()) { setError('Please enter your name.'); return false; }
       if (!school) { setError('Please select your school.'); return false; }
+      if (!joinCode.trim()) { setError('Please enter your school join code.'); return false; }
       return true;
     }
     if (registerStep === 2) {
@@ -496,10 +502,15 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       // Non-blocking: registration still proceeds (security review 2026-07-16,
       // L-5). Deliverability failures must not block sign-up.
       sendEmailVerification(createdUser).catch(err => console.error('Failed to send verification email:', err));
+      // Verify the school join code SERVER-SIDE and bind the student to the
+      // school (security review H-2). `school` is set by the function, not the
+      // client — the /users rules forbid a client-supplied school. A wrong code
+      // throws here and the account is rolled back below.
+      const joinFn = httpsCallable<{ school: string; code: string }, { success: boolean }>(getFunctions(app), 'claimStudentSchool');
+      await joinFn({ school, code: joinCode.trim() });
       await setDoc(doc(db, 'users', createdUser.uid), {
         name: name.trim(),
         avatar: selectedAvatar,
-        school,
         // B4 (audit 2026-06-01): record acceptance of the transparency notice +
         // terms. The Art 8 parental consent itself is captured at school
         // enrolment (basis = school-enrolment); see compliance/DPIA.md.
@@ -508,7 +519,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           acceptedAt: new Date().toISOString(),
           basis: CONSENT_BASIS,
         },
-      });
+      }, { merge: true });
       handleLoginSuccess({
         uid: createdUser.uid,
         name: name.trim(),
@@ -522,6 +533,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           console.error('Failed to clean up auth account after registration failure:', rollbackErr);
         }
       }
+      const msg = String(err?.message || '');
       if (err.code === 'auth/weak-password') {
         setError('Password must be at least 8 characters.');
         setRegisterStep(2);
@@ -530,6 +542,12 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         setRegisterStep(1);
       } else if (err.code === 'auth/invalid-email') {
         setError('Please enter a valid email address.');
+        setRegisterStep(1);
+      } else if (/join code is not correct/i.test(msg)) {
+        setError('That school join code is not correct. Check the code from your school.');
+        setRegisterStep(1);
+      } else if (/Too many attempts/i.test(msg)) {
+        setError('Too many attempts. Please wait a few minutes and try again.');
         setRegisterStep(1);
       } else {
         setError('Registration failed. Try again.');
@@ -910,6 +928,14 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                           </select>
                           <School size={16} className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" style={{ color: '#9e9186' }} />
                         </div>
+                      </div>
+                      <div>
+                        <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>School join code</label>
+                        <div className="relative">
+                          <input type="text" value={joinCode} onChange={e => { setJoinCode(e.target.value); setError(''); }} placeholder="From your school" className={`${inputClass} pr-10`} autoComplete="off" autoCapitalize="off" autoCorrect="off" spellCheck={false} />
+                          <KeyRound size={16} className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" style={{ color: '#9e9186' }} />
+                        </div>
+                        <p className="text-xs mt-1.5" style={{ color: '#9e9186' }}>Your school gives you this code. It confirms you belong to your school.</p>
                       </div>
                       <AnimatePresence>{error && <MotionDiv {...errorAnim} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
                       <MotionButton whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} onClick={handleRegisterNext} className={primaryBtn} style={primaryBtnStyle}>
