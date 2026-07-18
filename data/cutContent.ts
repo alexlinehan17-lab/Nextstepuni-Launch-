@@ -822,4 +822,95 @@ export const CUT_CONTENT: CutContentEntry[] = [
       'Second-year verification (2024): the Overall-Quality band edges are year-specific (2024 = 1–10/11–15/16–20 vs 2025 = 1–12/13–17/18–20), and the "57" ceiling is the 2025 value (2024 = 55). Removed the year-specific numbers from the student-facing scale while keeping the stable structure and the confirmed "relies mostly on narrative" descriptor.',
     date: '2026-07-06',
   },
+  {
+    id: 'subject-english-001',
+    module: 'Mastering English',
+    section: '§1 Exam Structure / §3 High-Value Zones',
+    action: 'corrected',
+    original:
+      'Section I has two comprehension texts (Question A, worth 50 marks each — you do both) … The comprehension section (Question A on Paper 1) delivers 100 marks across two texts.',
+    reframedTo:
+      'Section I — Comprehending — is worth 100 marks: a Question A (50 marks, reading comprehension on one text) and a Question B (50 marks, a short functional writing task) — and you may not answer A and B on the same text.',
+    reason:
+      'The 2025 HL marking scheme (p.4) defines Section I as Question A (50) on one text plus Question B (50) — a functional-writing task — on a different text, with an explicit rule that A and B may not be answered on the same text. There is no "two Question As" structure.',
+    date: '2026-07-18',
+  },
+  {
+    id: 'subject-english-002',
+    module: 'Mastering English',
+    section: '§1 Exam Structure / §3 High-Value Zones / §4 Common Pitfalls',
+    action: 'corrected',
+    original:
+      'Unseen Poetry (a poem you have never seen before, followed by a comparison with a second poem — 70 marks) … You get a poem you have never seen and answer a guided question on it (20 marks), then get a second poem and compare both (30 marks for the comparison, 20 marks for the second poem individually). Total: 70 marks.',
+    reframedTo:
+      'Poetry (70 marks) — which is not all unseen: it pairs a short Unseen Poem question (20 marks) with Prescribed Poetry on your studied poets (50 marks), and both parts are compulsory.',
+    reason:
+      'The 2025 HL marking scheme (p.42) defines Paper 2 Section III — Poetry (70) as A: Unseen Poem (20 marks, either Q1 10+10 or Q2 20) plus B: Prescribed Poetry (50 marks), both compulsory. The described two-poem comparison structure does not exist, and calling the whole 70-mark section "Unseen Poetry" misstates where 50 of the marks are.',
+    date: '2026-07-18',
+  },
+  {
+    id: 'subject-english-003',
+    module: 'Mastering English',
+    section: '§2 Marking Criteria',
+    action: 'corrected',
+    original:
+      'This stands for Purpose, Coherence of Delivery, Language, and Mechanics … Each criterion carries roughly equal weight, and together they define the difference between an H5 and an H1.',
+    reframedTo:
+      'Clarity of Purpose, Coherence of Delivery, Efficiency of Language Use, and Accuracy of Mechanics … The weighting for every task is 30% Purpose, 30% Coherence, 30% Language, and 10% Mechanics — and marks for Coherence or Language can never exceed the Purpose mark.',
+    reason:
+      'The 2025 HL marking scheme (p.3) weights the criteria 30/30/30/10 — Mechanics is not "roughly equal" — and states the primacy-of-P rule verbatim. Criterion names corrected to the scheme’s own terms. Weightings and primacy rule confirmed identical in the 2024 HL and 2025 OL schemes.',
+    date: '2026-07-18',
+  },
+  {
+    id: 'subject-english-004',
+    module: 'Mastering English',
+    section: '§1 highlight / §3 High-Value Zones',
+    action: 'reframed',
+    original:
+      'The Comparative is highly formulaic. Once you learn the structure — linking your three texts through the mode of comparison, using clear comparative language ("Similarly", "In contrast", "While Text 1...") — you can consistently score well. It rewards preparation and technique more than inspiration. / Worth 70 marks and often the highest-scoring section when done well. / Highly structured and very learnable. Students who master the comparative framework (linking all three texts in every paragraph) consistently score well.',
+    reframedTo:
+      'The Chief Examiner’s Report found the Comparative was the section where candidates scored least well, and warns that formulaic approaches "can hinder candidates by inhibiting their engagement with the terms of the questions". What actually scores is engaging with the question asked and the quality of evidence cited.',
+    reason:
+      'The 2013 Chief Examiner’s Report directly contradicts the original advice: the Comparative was the weakest-scoring section at both levels (HL 60%, OL 58%, p.7), and the report explicitly identifies "a rigid and formulaic approach" as a cause of under-achievement (pp.8, 19–20). Teaching students to learn a formula here reproduces the exact failure mode the examiner flags.',
+    date: '2026-07-18',
+  },
+  {
+    id: 'subject-english-005',
+    module: 'Mastering English',
+    section: '§4 Common Pitfalls',
+    action: 'reframed',
+    original:
+      'A five-paragraph essay will not score in the top bracket. Examiners want to see sustained, developed writing — think seven to nine substantial paragraphs for a personal essay. / Top-scoring compositions are sustained pieces of writing — 1,000+ words, rich in detail and developed thought.',
+    reframedTo:
+      'The Chief Examiner’s words: "it is difficult to sustain a response or develop a range of ideas necessary to acquire maximum marks if the answer is brief in the extreme" — and the strongest compositions showed real command of their chosen genre.',
+    reason:
+      'The paragraph counts and the 1,000+ word figure are invented — no SEC source specifies them. The report supports the qualitative principle (brevity prevents development, pp.15–16; genre control discriminates, p.16), so the claim was reframed to what the source actually says.',
+    date: '2026-07-18',
+  },
+  {
+    id: 'subject-english-006',
+    module: 'Mastering English',
+    section: '§5 Study Techniques',
+    action: 'reframed',
+    original:
+      'For Unseen Poetry, practise the TPCASLT method: Title, Paraphrase, Connotation, Attitude, Shifts, Literary devices, Theme. Work through one unseen poem per week using this method. Within six weeks, you will approach any poem with confidence and a clear analytical framework.',
+    reframedTo:
+      'For the Unseen Poem, build a consistent reading routine: what is literally happening; the tone or attitude, and where it shifts; the imagery and sound of the language; and what the poem suggests rather than states — mirroring the scheme’s instruction to reward "the patterned nature of the language of poetry, its imagery, its sensuous qualities, and its suggestiveness".',
+    reason:
+      'The "TPCASLT method" is not locatable in any SEC source (it appears to be a variant of a US classroom mnemonic, TPCASTT). Replaced the branded method with a routine grounded in the 2025 marking scheme’s own unseen-poetry marking stance (p.42).',
+    date: '2026-07-18',
+  },
+  {
+    id: 'subject-english-007',
+    module: 'Mastering English',
+    section: '§2 Marking Criteria / §4 Common Pitfalls',
+    action: 'reframed',
+    original:
+      'the most common reason students lose marks is writing a beautiful answer to a question that was not asked … Every year, the Chief Examiner’s Report says the same thing … The number one mark-killer in English is not answering the question. / The most common reason for mid-range marks across all of English.',
+    reframedTo:
+      'The biggest mark-killer in English is not answering the question … The Chief Examiner’s Report ties under-achievement to "a loss of focus in terms of the requirements of the task", and notes that prepared "banks of knowledge" earn marks only when shaped to the specific question asked.',
+    reason:
+      'The report supports task-focus as a leading, recurring cause of lost marks (pp.11, 18, 20) but provides no ranking that would verify "the most common reason", and "every year" overstates a single report (2013 is the most recent Chief Examiner’s Report for LC English). Softened the superlatives and attributed the claim to what the report states.',
+    date: '2026-07-18',
+  },
 ];

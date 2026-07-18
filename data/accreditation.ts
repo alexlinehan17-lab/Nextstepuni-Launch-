@@ -90,7 +90,7 @@ export const ACCREDITATION: AccreditationSnapshot = {
     },
     {
       name: 'Subject-specific',
-      accredited: 2,
+      accredited: 3,
       total: 37,
       basis: 'each subject’s own SEC Chief Examiner report / marking scheme',
     },
@@ -118,9 +118,9 @@ export const ACCREDITATION: AccreditationSnapshot = {
 
   limitations: [
     {
-      title: '35 subject modules not yet presented as verified',
+      title: '34 subject modules not yet presented as verified',
       detail:
-        'Subject modules are accredited only once that subject’s own SEC report is in hand. Business and Mathematics are complete (and both had factual exam-structure errors corrected against the official marking schemes). The remaining 35 await their reports — examinations.ie blocks automated downloads, so these are sourced as the reports are supplied, and are not claimed as verified until then.',
+        'Subject modules are accredited only once that subject’s own SEC report is in hand. Business, Mathematics and English are complete (and all three had factual exam-structure errors corrected against the official marking schemes). The remaining 34 are worked through as their reports are supplied and verified, and are not claimed as verified until then.',
     },
     {
       title: 'Two figures await a paywalled primary source',
@@ -145,5 +145,5 @@ export const ACCREDITATION: AccreditationSnapshot = {
     date: '2026-06-26',
   },
 
-  asOf: '2026-06-26',
+  asOf: '2026-07-18',
 };
