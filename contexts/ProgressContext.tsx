@@ -73,7 +73,6 @@ interface ProgressContextValue {
   topicMastery: TopicMasteryMap | undefined;
   unifiedMockResults: UnifiedMockResult[];
   questRewards: Record<string, string>;
-  teachBacksSeen: string[];
 
   /** Escape hatch — only for hooks that own their own field on the progress
    *  doc (useGamification, useIslandShop, useWeeklyChallenge,
@@ -249,7 +248,6 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   const topicMastery: TopicMasteryMap | undefined = rawProgressDoc.topicMastery ?? undefined;
   const unifiedMockResults: UnifiedMockResult[] = rawProgressDoc.unifiedMockResults ?? [];
   const questRewards: Record<string, string> = rawProgressDoc.questRewards ?? {};
-  const teachBacksSeen: string[] = rawProgressDoc.teachBacksSeen ?? [];
 
   const value: ProgressContextValue = {
     userProgress,
@@ -276,7 +274,6 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     topicMastery,
     unifiedMockResults,
     questRewards,
-    teachBacksSeen,
     rawProgressDoc,
     reloadProgress,
   };

@@ -31,9 +31,6 @@ interface CascadeReport {
   notificationsDeleted: number;
   kudosDeleted: number;
   giftsDeleted: number;
-  teachbacksDeleted: number;
-  flaresDeleted: number;
-  flareResponsesDeleted: number;
   gcNotesDeleted: number;
   gcFlagsDeleted: number;
   islandPublicDeleted: number;
@@ -124,8 +121,7 @@ async function cascadeDeleteUser(
   const r: CascadeReport = {
     usersDeleted: 0, progressDeleted: 0, sessionsDeleted: 0, settingsDeleted: 0,
     responsesDeleted: 0, notificationsDeleted: 0, kudosDeleted: 0, giftsDeleted: 0,
-    teachbacksDeleted: 0, flaresDeleted: 0, flareResponsesDeleted: 0, gcNotesDeleted: 0,
-    gcFlagsDeleted: 0, islandPublicDeleted: 0, authDeleted: false,
+    gcNotesDeleted: 0, gcFlagsDeleted: 0, islandPublicDeleted: 0, authDeleted: false,
   };
 
   // School is needed for the gcNotes path; read it before deleting the doc.
@@ -155,27 +151,6 @@ async function cascadeDeleteUser(
   r.giftsDeleted =
     (await deleteAll(db, db.collection("gifts").where("fromUid", "==", uid))) +
     (await deleteAll(db, db.collection("gifts").where("toUid", "==", uid)));
-  r.teachbacksDeleted = await deleteAll(db, db.collection("teachbacks").where("authorUid", "==", uid));
-
-  // Flares (feature decommissioned; defensive cleanup of anything sent by uid
-  // plus its responses subcollection).
-  const flares = await db.collection("flares").where("senderUid", "==", uid).get();
-  for (const f of flares.docs) {
-    await deleteAll(db, f.ref.collection("responses"));
-    await f.ref.delete();
-    r.flaresDeleted++;
-  }
-
-  // Responses this student authored on *other* students' flares (Art 17 must
-  // erase the subject's authored free text wherever it lives, not only under
-  // their own flares). The flares feature is decommissioned, so any legacy
-  // volume here is negligible — fetch the collection group and filter in
-  // memory (matching the flaggedStudents sweep below), avoiding a dedicated
-  // collection-group index. (Security review 2026-07-16, MEDIUM.)
-  const authoredResponses = await db.collectionGroup("responses").get();
-  for (const d of authoredResponses.docs) {
-    if (d.get("responderUid") === uid) { await d.ref.delete(); r.flareResponsesDeleted++; }
-  }
 
   // GC private notes about this student (path keyed by school).
   if (school) {
@@ -281,7 +256,6 @@ export const exportMyData = onCall({ cors: true }, async (request) => {
   data.giftsReceived = (await db.collection("gifts").where("toUid", "==", targetUid).get()).docs.map((d) => {
     const x = { ...d.data() }; if (x.fromUid) x.fromUid = peerHash(x.fromUid); return x;
   });
-  data.teachbacks = (await db.collection("teachbacks").where("authorUid", "==", targetUid).get()).docs.map((d) => d.data());
 
   // GC private notes are staff pastoral/safeguarding records that commonly
   // contain third-party data and fall under subject-access exemptions — they

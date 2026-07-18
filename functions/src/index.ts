@@ -6,7 +6,6 @@ import { getAuth } from "firebase-admin/auth";
 import { getFirestore, FieldValue } from "firebase-admin/firestore";
 import { randomInt } from "crypto";
 import { buildPublicProjection } from "./islandProjection";
-import { buildTeachbackPublic } from "./teachbackProjection";
 
 initializeApp();
 
@@ -177,43 +176,6 @@ export const onProgressWritten = onDocumentWritten(
     }
 
     await islandPublicRef.set({
-      ...projection,
-      updatedAt: FieldValue.serverTimestamp(),
-    });
-  }
-);
-
-/**
- * onTeachbackWritten
- *
- * Maintains /teachbacksPublic/{id} — the anonymous, peer-readable projection of
- * a teach-back (security review 2026-07-16, M-7). The source /teachbacks/{id}
- * doc is readable only by its author; peers read this projection, which carries
- * no raw authorUid. Same doc id as the source so a peer's helpfulCount
- * increment on the source re-projects here.
- */
-export const onTeachbackWritten = onDocumentWritten(
-  "teachbacks/{tid}",
-  async (event) => {
-    const tid = event.params.tid;
-    const db = getFirestore();
-    const publicRef = db.collection("teachbacksPublic").doc(tid);
-
-    const data = event.data?.after?.data();
-    if (!data) {
-      await publicRef.delete().catch((err) => {
-        logger.warn(`onTeachbackWritten: failed to delete projection for ${tid}`, err);
-      });
-      return;
-    }
-
-    const projection = buildTeachbackPublic(data);
-    if (!projection) {
-      await publicRef.delete().catch(() => {});
-      return;
-    }
-
-    await publicRef.set({
       ...projection,
       updatedAt: FieldValue.serverTimestamp(),
     });

@@ -57,7 +57,7 @@ const PRIVACY_NOTICE: Section[] = [
       '• Your study setup: the subjects and levels you take, your target grades, your exam start date, your rest days, and your “North Star” goal for after school.',
       '• Your activity: how far you’ve got in each module, your study sessions, points and achievements, mock exam results, and your topic confidence/mastery.',
       '• Your reflections: short notes you write after a study session, and free-text answers to module exercises.',
-      '• Peer features: the kudos and gifts you send to classmates, and any “teach-back” explanations you post for other students at your school.',
+      '• Peer features: the kudos and gifts you send to classmates at your school.',
       '• Settings: your display preferences, such as dark mode, language and theme.',
     ],
   },
@@ -90,7 +90,7 @@ const PRIVACY_NOTICE: Section[] = [
     body: [
       '• You can see all of your own information.',
       '• Your school’s guidance counsellor can see your progress and can write private notes to support you.',
-      '• Other students at your school can see a limited public version of your island (your name, avatar, school, chosen goal category, and your island decorations and score), plus any teach-backs or kudos you choose to send. Your study sessions, reflections, grades, points and purchases are never shown to other students.',
+      '• Other students at your school can see a limited public version of your island (your name, avatar, school, chosen goal category, and your island decorations and score), plus any kudos you choose to send. Your study sessions, reflections, grades, points and purchases are never shown to other students.',
       '• NextStepUni staff do not routinely read your information by hand — only occasionally to fix a technical problem.',
     ],
   },
@@ -152,8 +152,8 @@ const TERMS_OF_USE: Section[] = [
   {
     heading: 'Being a good classmate',
     body: [
-      'The peer features (kudos, gifts and teach-backs) are for supporting other students at your school. Be kind and respectful.',
-      'No bullying, harassment, or inappropriate content. What you post is checked for bad language and can be seen by classmates and your guidance counsellor.',
+      'The peer features (kudos and gifts) are for supporting other students at your school. Be kind and respectful.',
+      'No bullying, harassment, or inappropriate content. Your peer activity can be seen by your guidance counsellor.',
       'Misusing these features can lead to them — or your account — being suspended.',
     ],
   },

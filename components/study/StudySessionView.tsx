@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useRef, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import { ArrowLeft, BookOpen, Target, RotateCcw, Play, Pause, Clock, Sparkles, X, ChevronRight, Brain, Repeat, Shuffle, HelpCircle, Compass, Sprout, Shield, Radar, ClipboardCheck, Trophy, CalendarCheck, type LucideIcon } from 'lucide-react';
@@ -25,8 +25,6 @@ import { QUICK_DEBRIEF_POINTS, FULL_REFLECTION_POINTS } from '../ReflectionModal
 import StudyJournalModal from '../StudyJournalModal';
 import { type DebriefEntry } from '../StudyDebrief';
 import { type WeeklyChallengeState } from '../../hooks/useWeeklyChallenge';
-import { useTeachBack } from '../../hooks/useTeachBack';
-import { TeachBackReadCard, TeachBackWriteCard } from './TeachBackCard';
 import { computeSubjectPriorities, allocateSessions, generateWeeklyTimetable, computeWeeksUntilExam } from '../timetableAlgorithm';
 import { getBlockId, toDateKey } from '../subjectData';
 import { processDebriefSideEffects } from '../../hooks/useDebriefSideEffects';
@@ -134,7 +132,6 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   onStudyBlock,
 }) => {
   const session = useStudySession(user.uid, userProgress, allCourses);
-  const teachBack = useTeachBack(user.uid, user.school);
 
   // Setup selections — pre-fill from timetable block if provided
   const [selectedSubject, setSelectedSubject] = useState(timetableBlock?.subject ?? '');
@@ -195,18 +192,6 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     return subjectDebriefs[0] || null;
   }, [selectedSubject, prevDebriefs]);
 
-  // Teach-back state
-  const [teachBackPhase, setTeachBackPhase] = useState<'none' | 'reading' | 'writing' | 'write-done'>('none');
-  const teachBackReadShownRef = useRef(false);
-  const teachBackWriteShownRef = useRef(false);
-  const teachBackDoneTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-
-  useEffect(() => {
-    return () => {
-      if (teachBackDoneTimerRef.current) clearTimeout(teachBackDoneTimerRef.current);
-    };
-  }, []);
-
   const subjects = studentProfile?.subjects ?? [];
 
   // Compute today's remaining timetable blocks for quick-start shortcuts
@@ -255,44 +240,8 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
 
   const handleStart = () => {
     if (!canStart || !selectedType) return;
-    teachBack.fetchTeachBack(selectedSubject);
-    teachBackReadShownRef.current = false;
-    teachBackWriteShownRef.current = false;
-    setTeachBackPhase('none');
     session.startSession(selectedSubject, selectedType, selectedMinutes);
   };
-
-  // Show teach-back cards at timed intervals during active session
-  const tbReadTime = Math.min(480, Math.floor(session.totalDuration * 0.35));  // ~8 min or 35%
-  const tbWriteTime = Math.min(1080, Math.floor(session.totalDuration * 0.70)); // ~18 min or 70%
-
-  useEffect(() => {
-    if (session.phase !== 'active') return;
-
-    // Show read card at ~35% / 8 min if a teach-back is available
-    if (
-      !teachBackReadShownRef.current &&
-      session.elapsedSeconds >= tbReadTime &&
-      teachBack.teachBackToRead &&
-      teachBackPhase === 'none'
-    ) {
-      teachBackReadShownRef.current = true;
-      setTeachBackPhase('reading');
-      session.dismissPrompt();
-    }
-
-    // Show write card at ~70% / 18 min (only for sessions >= 15 min)
-    if (
-      !teachBackWriteShownRef.current &&
-      session.elapsedSeconds >= tbWriteTime &&
-      session.totalDuration >= 900 &&
-      teachBackPhase === 'none'
-    ) {
-      teachBackWriteShownRef.current = true;
-      setTeachBackPhase('writing');
-      session.dismissPrompt();
-    }
-  }, [session.elapsedSeconds, session.phase, teachBack.teachBackToRead, teachBackPhase, tbReadTime, tbWriteTime, session.totalDuration]);
 
   // Auto-complete timetable block after saving session
   const completeTimetableBlock = () => {
@@ -868,7 +817,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
         <div className="relative z-20 px-6 pb-8 pt-4">
           {/* Paused label — absolute so it doesn't shift layout */}
           <AnimatePresence>
-            {session.phase === 'paused' && teachBackPhase === 'none' && !session.currentPrompt && (
+            {session.phase === 'paused' && !session.currentPrompt && (
               <MotionDiv
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -929,57 +878,10 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
           </div>
         </div>
 
-        {/* Coaching prompts / Teach-back cards — overlay from bottom */}
+        {/* Coaching prompts — overlay from bottom */}
         <AnimatePresence mode="wait">
-          {/* Teach-back read card */}
-          {teachBackPhase === 'reading' && teachBack.teachBackToRead && (
-            <TeachBackReadCard
-              key="tb-read"
-              subject={session.subject}
-              explanation={teachBack.teachBackToRead.explanation}
-              onHelpful={() => {
-                teachBack.markHelpful(teachBack.teachBackToRead!.id);
-                setTeachBackPhase('none');
-              }}
-              onSkip={() => {
-                teachBack.markSeen(teachBack.teachBackToRead!.id);
-                setTeachBackPhase('none');
-              }}
-            />
-          )}
-
-          {/* Teach-back write card */}
-          {teachBackPhase === 'writing' && (
-            <TeachBackWriteCard
-              key="tb-write"
-              subject={session.subject}
-              isSubmitting={teachBack.isSubmitting}
-              onSubmit={async (text) => {
-                await teachBack.submitTeachBack(session.subject, text);
-                setTeachBackPhase('write-done');
-                teachBackDoneTimerRef.current = setTimeout(() => setTeachBackPhase('none'), 2000);
-              }}
-              onSkip={() => setTeachBackPhase('none')}
-            />
-          )}
-
-          {/* Teach-back write success */}
-          {teachBackPhase === 'write-done' && (
-            <MotionDiv
-              key="tb-done"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              className="fixed bottom-24 left-4 right-4 z-30 max-w-md mx-auto"
-            >
-              <div className="bg-white/90 backdrop-blur-xl border border-white/60 rounded-2xl p-4 shadow-2xl text-center">
-                <p className="text-sm font-semibold text-emerald-600">Sent! A classmate will see your explanation.</p>
-              </div>
-            </MotionDiv>
-          )}
-
           {/* Coaching prompt */}
-          {teachBackPhase === 'none' && session.currentPrompt && (
+          {session.currentPrompt && (
             <MotionDiv
               key={session.currentPrompt.prompt}
               initial={{ opacity: 0, y: 30 }}

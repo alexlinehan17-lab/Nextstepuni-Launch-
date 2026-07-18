@@ -24,6 +24,45 @@ instance.
 
 ---
 
+## Addendum 2026-07-18 — Teach-backs & SOS Flares REMOVED (safeguarding)
+
+Two peer free-text features were **removed entirely** (owner decision, safeguarding):
+
+- **Teach-backs** — student-authored explanations shown anonymously to same-school peers.
+- **SOS Flares** — anonymous same-school peer help questions + responses (already decommissioned; rules were still live).
+
+**Why.** Student-authored free text visible to other students is an unbounded
+moderation/safeguarding surface (bullying, grooming, PII disclosure, inappropriate
+content) that a profanity word-list cannot contain. It was also the subject of a
+follow-up finding that **defeated the M-7 anonymity fix** (below).
+
+**Follow-up finding that removal resolves (would have been HIGH):** the M-7
+`authorHash` was an *unsalted* `SHA-256(uid)` truncated to 64 bits, and same-school
+peer UIDs are **enumerable** — `islandPublic/{uid}` documents are keyed by UID and
+`usePeerIslands` exposes each peer's UID paired with their real name; `kudos` docs
+additionally expose a sender's `fromUid`+`fromName` to the recipient. Any student
+could therefore hash every enumerated peer UID, join on `authorHash`, and
+de-anonymise every "anonymous" teach-back in their school. The dossier's M-7 claim
+("no other student's uid is exposed anywhere in the app") was incorrect. Removing
+the feature removes the vector; the underlying UID-enumeration fact is noted below
+for the surviving peer features.
+
+**What was removed (this change):**
+- Client: `hooks/useTeachBack.ts`, `components/study/TeachBackCard.tsx`, all wiring in
+  `components/study/StudySessionView.tsx`, the `teachBacksSeen` field in
+  `contexts/ProgressContext.tsx`, and `utils/profanityFilter.ts` (its only consumer).
+- Functions: `functions/src/teachbackProjection.ts`, the `onTeachbackWritten` trigger,
+  and the teachbacks/flares/flare-responses handling in the DSAR export + erasure cascade.
+- Rules: the `teachbacks`, `teachbacksPublic`, and `flares` (+ `responses`) blocks in
+  `firestore.rules` — these collections now fall through to the default-deny catch-all.
+- Indexes: the `teachbacks` and two `flares` composite indexes in `firestore.indexes.json`.
+- Legal: teach-back mentions removed from the privacy notice in `components/legal/LegalModal.tsx`.
+
+Safe because pre-launch (no live users / no minors' data), so no data backfill or
+migration was required. Gates: typecheck 0, lint 0, 1770 tests, app build, functions `tsc` — all clean.
+
+---
+
 ## Severity summary (consolidated, de-duplicated)
 
 | Sev | Count | Fixed | Flagged for owner decision / action |
@@ -98,7 +137,7 @@ in Google Cloud Console).
 - **Detail:** distinct "no account for this school" vs "wrong password" messages let anyone enumerate provisioned GC accounts (GC emails are deterministic; the school list is public) to target for brute-force.
 - **Fix shipped:** collapsed to a single generic "Sign-in failed" message (network error kept separate). **Owner follow-up:** ensure Identity Platform email-enumeration protection is ON at the project level (hardens the reset flow too).
 
-### M-7 — "Anonymous" teach-backs are de-anonymisable by same-school peers  ✅ FIXED (2026-07-16, second wave)
+### M-7 — "Anonymous" teach-backs are de-anonymisable by same-school peers  ⛔ SUPERSEDED — feature removed 2026-07-18 (see Addendum). The projection fix was later found insufficient (unsalted hash + enumerable peer UIDs); the feature was removed entirely rather than re-patched.
 - **Where:** `firestore.rules` teachbacks read rule; `components/study/TeachBackCard.tsx` ("A classmate shared…").
 - **Detail:** the stored doc carried `authorUid` and the read rule granted every same-school student the whole document → a peer could map an "anonymous" explanation back to its author's UID.
 - **Fix shipped:** the source `teachbacks/{id}` doc is now readable **only by its author**; same-school peers read a new Cloud-Function-written projection `teachbacksPublic/{id}` (`functions/src/teachbackProjection.ts` + `onTeachbackWritten` trigger) that carries **no raw `authorUid`** — only a one-way `authorHash` (SHA-256, 64-bit) so a reader can filter out their own. `teachbacksPublic` is `write: if false` (trigger only). Client (`hooks/useTeachBack.ts`) reads the projection and self-filters by hash. **Coordinated deploy:** rules + functions must be deployed for peers to see teach-backs again; the client goes quiet (no teach-backs shown) until then — no hard error. Pre-launch, so no backfill needed.

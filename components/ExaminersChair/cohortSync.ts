@@ -10,7 +10,7 @@
  * mis-marks this rule" work across a real classroom: students write their
  * anonymised blind-spots to a class code, the teacher view subscribes.
  *
- * Storage shape (mirrors the teachbacks/flares validated-increment pattern):
+ * Storage shape (bounded, validated-increment counter pattern):
  *   chairCohorts/{classCode}                 → { submissions }
  *   chairCohorts/{classCode}/rules/{ruleId}  → { key, subject, label, over, under, students }
  *
