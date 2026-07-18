@@ -11,7 +11,7 @@ import { X, Check, Lock, Sun, Moon, RefreshCw, LogOut, ChevronRight, Compass, Gr
 import { useModal } from '../hooks/useModal';
 import { LegalModal, type LegalDoc } from './legal/LegalModal';
 import { DataRightsModal } from './account/DataRightsModal';
-import { AVATAR_SEEDS, getAvatarUrl, nextYearAction, yearGroupLabel } from '../utils/authUtils';
+import { AVATAR_SEEDS, getAvatarUrl, nextYearAction, yearGroupLabel, yearGroupToCurriculumLevel } from '../utils/authUtils';
 import { type YearGroup } from './subjectData';
 
 const EXTRA_AVATAR_SEEDS = ['Luna', 'Kai', 'Suki', 'Dara', 'Nico', 'Asha', 'Finn', 'Yuki'];
@@ -44,6 +44,9 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
   userName, userSchool, userYearGroup, onChangeSubjects, onResetNorthStar, onAdvanceYear, onLogout,
 }) => {
   useModal(isOpen, onClose);
+  // Junior Cycle always runs in Essentials Mode (simpler, shorter modules) — the
+  // toggle is shown as locked-on rather than editable. See useEssentialsMode.
+  const isJunior = userYearGroup ? yearGroupToCurriculumLevel(userYearGroup) === 'junior' : false;
   const [showSaved, setShowSaved] = useState(false);
   const [legalDoc, setLegalDoc] = useState<LegalDoc | null>(null);
   const [dataRightsOpen, setDataRightsOpen] = useState(false);
@@ -229,23 +232,28 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                     </div>
                   </button>
 
-                  {/* Essentials mode toggle */}
+                  {/* Essentials mode toggle. Junior Cycle is always on (locked);
+                      senior students can toggle it. */}
                   <button
                     onClick={() => {
+                      if (isJunior) return;
                       updateSetting('essentialsMode', !settings.essentialsMode);
                       flash();
                     }}
-                    className="w-full flex items-center justify-between p-3 rounded-xl bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] hover:ring-zinc-300 dark:hover:ring-white/[0.15] transition-all"
+                    disabled={isJunior}
+                    className={`w-full flex items-center justify-between p-3 rounded-xl bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] transition-all ${isJunior ? 'cursor-default' : 'hover:ring-zinc-300 dark:hover:ring-white/[0.15]'}`}
                   >
                     <div className="flex-1 text-left">
                       <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">Essentials Mode</p>
-                      <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mt-0.5">Shorter modules with simpler language</p>
+                      <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mt-0.5">
+                        {isJunior ? 'Always on for Junior Cycle — shorter modules with simpler language' : 'Shorter modules with simpler language'}
+                      </p>
                     </div>
                     <div className={`relative w-10 h-6 rounded-full transition-colors ${
-                      settings.essentialsMode ? 'bg-[var(--accent-hex)]' : 'bg-zinc-300 dark:bg-zinc-600'
+                      (isJunior || settings.essentialsMode) ? 'bg-[var(--accent-hex)]' : 'bg-zinc-300 dark:bg-zinc-600'
                     }`}>
                       <div className={`absolute top-0.5 w-5 h-5 rounded-full bg-white shadow-sm transition-transform ${
-                        settings.essentialsMode ? 'translate-x-[18px]' : 'translate-x-0.5'
+                        (isJunior || settings.essentialsMode) ? 'translate-x-[18px]' : 'translate-x-0.5'
                       }`} />
                     </div>
                   </button>

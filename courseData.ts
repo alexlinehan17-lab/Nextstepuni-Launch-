@@ -108,6 +108,10 @@ const COURSE_DEFINITIONS = [
     description: 'Learn how to take the tough parts of your story and turn them into your biggest strength -- in school, in exams, and in life.',
     sectionsCount: 5,
     curriculum: 'both' as const,
+    // Content audit 2026-07: level-4 academic prose (McAdams narrative identity,
+    // "radical authorship") plus senior-only examples (mock points, 600 points +
+    // UCC Scholarship). Needs a JC rewrite; until then JC sees "coming soon".
+    jcStatus: 'coming-soon' as const,
     tags: ['Mindset', 'Resilience'],
   },
   {
@@ -198,6 +202,10 @@ const COURSE_DEFINITIONS = [
     description: 'That frustrated feeling when you\'re stuck on a hard question? It\'s not a sign you\'re failing — it\'s how real learning actually happens. Learn to find the sweet spot of difficulty and reset your idea of what good study feels like.',
     sectionsCount: 6,
     curriculum: 'both' as const,
+    // Content audit 2026-07: university-register prose (ZPD, retrieval/storage
+    // strength, metacognitive calibration) that stays hard even in Essentials —
+    // not JC-ready yet, so JC sees the "coming soon" placeholder.
+    jcStatus: 'coming-soon' as const,
     tags: ['Learning Strategy', 'Brain Science'],
   },
   {
@@ -338,6 +346,10 @@ const COURSE_DEFINITIONS = [
     description: 'Learn to see the answer in your head before you put pen to paper. In subjects like DCG, Graphics and Engineering, the real skill isn\'t drawing — it\'s picturing 3D objects in your mind. This module shows you how.',
     sectionsCount: 6,
     curriculum: 'both' as const,
+    // Content audit 2026-07: built entirely on Leaving Cert DCG (Traces of a
+    // Plane, Interpenetration, FCC/BCC) — a subject that doesn't exist at Junior
+    // Cycle. Inherently senior; JC sees the "coming soon" placeholder.
+    jcStatus: 'coming-soon' as const,
     tags: ['Learning Strategy', 'Subject Strategy'],
   },
   {
