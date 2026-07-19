@@ -517,21 +517,21 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
         eyebrow: '01 // Exam Structure',
         paragraphs: [
           'The Biology Leaving Cert is a **single exam paper** lasting **3 hours** and worth **400 marks**. It is divided into three sections: [[Section A]] (short questions), [[Section B]] (short answer and experiment questions), and [[Section C]] (long questions). Each section has a distinct format and tests different skills, so your preparation needs to cover all three.',
-          '[[Section A]] is worth **100 marks** and contains **6 short questions** -- you must answer **5 of them**. Each question is worth **20 marks**. These are typically based on diagrams, experiments, data interpretation, and basic recall. They are shorter and more accessible than the other sections, but they still demand precise knowledge.',
-          '[[Section B]] is worth **100 marks** and contains **3 questions** -- you must answer **2 of them**. Each question is worth **50 marks**. This section focuses on [[mandatory experiments]] and practical biology. Questions ask you to describe experimental procedures, interpret results, draw diagrams of apparatus, and explain scientific reasoning. Section B is where your experiment knowledge is tested most directly.',
-          '[[Section C]] is worth **200 marks** and contains **6 long questions** -- you must answer **4 of them**. Each question is worth **50 marks**. These are the big essay-style questions covering major syllabus topics: Ecology, Cell Biology, Genetics, Plant Biology, Human Biology (including the digestive, circulatory, respiratory, excretory, and reproductive systems), and Microbiology. Section C is where most of your marks will come from -- and where the best-prepared students pull ahead.'
+          '[[Section A]] is worth **100 marks** and contains **7 short questions** -- you must answer **5 of them**. Each question is worth **20 marks**. These are typically based on diagrams, experiments, data interpretation, and basic recall. They are shorter and more accessible than the other sections, but they still demand precise knowledge.',
+          '[[Section B]] is worth **60 marks** and contains **3 questions** -- you must answer **2 of them**. Each question is worth **30 marks**. This section focuses on [[mandatory experiments]] and practical biology. Questions ask you to describe experimental procedures, interpret results, draw diagrams of apparatus, and explain scientific reasoning. Section B is where your experiment knowledge is tested most directly.',
+          '[[Section C]] is worth **240 marks** and contains **7 long questions** -- you must answer **4 of them**. Each question is worth **60 marks**. These are the big essay-style questions covering major syllabus topics: Ecology, Cell Biology, Genetics, Plant Biology, Human Biology (including the digestive, circulatory, respiratory, excretory, and reproductive systems), and Microbiology. Section C is where most of your marks will come from -- and where the best-prepared students pull ahead.'
         ],
         highlights: [
-          { term: 'Section A', description: 'Short questions: 6 available, answer 5. Worth 100 marks (20 each). Tests diagrams, data, experiments, and quick recall.' },
-          { term: 'Section B', description: 'Experiment and short-answer questions: 3 available, answer 2. Worth 100 marks (50 each). Focuses on mandatory experiments.' },
-          { term: 'Section C', description: 'Long essay questions: 6 available, answer 4. Worth 200 marks (50 each). Major topics from the full syllabus.' },
+          { term: 'Section A', description: 'Short questions: 7 available, answer 5. Worth 100 marks (20 each). Tests diagrams, data, experiments, and quick recall.' },
+          { term: 'Section B', description: 'Experiment and short-answer questions: 3 available, answer 2. Worth 60 marks (30 each). Focuses on mandatory experiments.' },
+          { term: 'Section C', description: 'Long essay questions: 7 available, answer 4. Worth 240 marks (60 each). Major topics from the full syllabus.' },
           { term: 'mandatory experiments', description: 'A set of prescribed experiments covering food tests, enzyme activity, osmosis, photosynthesis, ecology fieldwork, and more.' }
         ],
         bullets: [
           'Single paper: 3 hours, 400 marks total',
-          'Section A: 5 from 6 short questions (100 marks)',
-          'Section B: 2 from 3 experiment questions (100 marks)',
-          'Section C: 4 from 6 long questions (200 marks)'
+          'Section A: 5 from 7 short questions (100 marks)',
+          'Section B: 2 from 3 experiment questions (60 marks)',
+          'Section C: 4 from 7 long questions (240 marks)'
         ]
       },
       // Section 2: Marking Criteria
@@ -557,14 +557,14 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'Where Your Marks Are',
         eyebrow: '03 // High-Value Zones',
         paragraphs: [
-          '[[Section C]] is where 50% of your marks are. Four questions at 50 marks each means Section C alone determines whether you get a H3 or a H5. The topics that appear most frequently and carry the most weight are: **Human Biology** (the digestive, circulatory, respiratory, and excretory systems), **Genetics** (Mendelian genetics, DNA, and gene expression), and **Ecology** (food webs, nutrient recycling, and ecological fieldwork). These three areas should be your top revision priorities.',
+          '[[Section C]] is where **60% of your marks** are -- 240 of the 400. Four questions at 60 marks each means Section C alone determines whether you get a H3 or a H5. The topics that appear most frequently and carry the most weight are: **Human Biology** (the digestive, circulatory, respiratory, and excretory systems), **Genetics** (Mendelian genetics, DNA, and gene expression), and **Ecology** (food webs, nutrient recycling, and ecological fieldwork). These three areas should be your top revision priorities.',
           '[[Mandatory experiments]] are your next highest-value zone. They are tested directly in Section B and frequently appear in Section A as well. There are approximately 20 mandatory experiments on the syllabus, covering food tests (Benedict\'s, iodine, biuret), enzyme experiments, osmosis demonstrations, photosynthesis and respiration investigations, and ecological fieldwork techniques. A student who knows all of them can expect to score well across both Sections A and B.',
           '[[Section A]] short questions are often undervalued by students, but they add up fast. Five questions at 20 marks each is **100 marks** -- a quarter of the entire paper. These questions tend to test diagrams (e.g., label a cell, identify parts of the heart), experiment knowledge, and data interpretation. They reward broad knowledge rather than deep expertise, making them ideal for students who have covered the full syllabus.',
-          'Within Section C, the [[Ecology question]] has been one of the most predictable and accessible questions in recent years. It frequently asks about food webs, nutrient recycling (carbon or nitrogen cycle), ecological terms and definitions, and the biotic/abiotic factors in an ecosystem. Students who know their ecology vocabulary and can describe a fieldwork technique can reliably score 40-50 marks here.'
+          'Within Section C, the [[Ecology question]] has been one of the most predictable and accessible questions in recent years. It frequently asks about food webs, nutrient recycling (carbon or nitrogen cycle), ecological terms and definitions, and the biotic/abiotic factors in an ecosystem. Students who know their ecology vocabulary and can describe a fieldwork technique can reliably score highly on this 60-mark question.'
         ],
         highlights: [
-          { term: 'Section C', description: 'Worth 200 marks (50% of the exam). Four long questions on major syllabus topics. Your biggest marks opportunity.' },
-          { term: 'Mandatory experiments', description: 'Approximately 20 experiments tested in Sections A and B. Thorough preparation here secures up to 200 marks across the paper.' },
+          { term: 'Section C', description: 'Worth 240 marks (60% of the exam). Four long questions at 60 marks each on major syllabus topics. Your biggest marks opportunity.' },
+          { term: 'Mandatory experiments', description: 'Approximately 20 experiments tested in Sections A and B. Thorough preparation here pays off across both sections.' },
           { term: 'Section A', description: 'Short questions worth 100 marks total. Tests diagrams, data, and broad recall. Good coverage of the syllabus pays off here.' },
           { term: 'Ecology question', description: 'One of the most predictable questions in Section C. Learn ecology vocabulary, nutrient cycles, and fieldwork techniques.' }
         ]
@@ -577,13 +577,13 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
           'The biggest mark-killer in Biology is writing [[vague, general answers]] instead of specific, detailed ones. "The heart pumps blood around the body" is not worth marks in Section C. "The left ventricle contracts, forcing oxygenated blood through the aorta to the body\'s tissues via the systemic circulation" is. The examiner is counting distinct, correct points. Every specific term you include is potentially another mark.',
           'Students consistently lose marks by [[not answering the question asked]]. Biology questions often use specific command words: "Describe" means give a detailed account; "Explain" means give reasons why; "State" means give a brief, precise answer. Writing a long description when the question asks you to "explain" means you may earn no marks at all for that part, because you have not addressed the actual question.',
           'In experiment questions, the most common error is [[forgetting the control]]. If you are describing how you tested for starch in a leaf, you need to mention that you also tested a leaf that was kept in the dark (the control). Without describing the control and why it matters, you cannot earn full marks on most experiment questions.',
-          'Finally, poor [[time allocation in Section C]] costs students dearly. Some students write 3 pages for their favourite topic and then have only 10 minutes left for their fourth question. Each Section C question is worth the same 50 marks, so spending 40 minutes on one and 10 minutes on another is poor strategy. Aim for roughly **20-22 minutes per long question** and move on.'
+          'Finally, poor [[time allocation in Section C]] costs students dearly. Some students write 3 pages for their favourite topic and then have only 10 minutes left for their fourth question. Each Section C question is worth the same 60 marks, so spending 40 minutes on one and 10 minutes on another is poor strategy. Aim for roughly **25 minutes per long question** and move on.'
         ],
         highlights: [
           { term: 'vague, general answers', description: 'Answers that show general awareness but lack specific terms and detail. The examiner counts precise, named points.' },
           { term: 'not answering the question asked', description: 'Ignoring the command word (Describe, Explain, State) and writing the wrong type of answer. Read the question carefully.' },
           { term: 'forgetting the control', description: 'Experiment answers that do not describe the control setup lose significant marks. Always state what you kept constant.' },
-          { term: 'time allocation in Section C', description: 'Spending too long on one question and rushing others. Each question is 50 marks -- allocate time equally.' }
+          { term: 'time allocation in Section C', description: 'Spending too long on one question and rushing others. Each question is 60 marks -- allocate time equally.' }
         ]
       },
       // Section 5: Study Techniques
@@ -594,7 +594,7 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
           'Biology is primarily a **recall-based subject**. The exam rewards students who can reproduce specific facts, definitions, diagrams, and experiment procedures. This means your study strategy should centre on [[active recall]] -- testing yourself on what you know rather than passively re-reading notes. Flashcards, blank diagrams to label, and practice questions are far more effective than highlighting textbooks.',
           'Create [[topic summary sheets]] for each major area: one page per system in Human Biology, one page for Genetics, one for Ecology, one for Cell Biology, one for Plant Biology, and one for Microbiology. Each sheet should include: key definitions, labelled diagrams, named examples, and important processes described step by step. These sheets become your revision backbone.',
           'For experiments, use the same approach as the science subjects above: write a [[structured experiment summary]] for each mandatory experiment (diagram, equipment, procedure, observations, control, conclusion). Practise writing these out from memory. The experiment knowledge tested in Sections A and B is pure recall -- if you have practised writing them, you will score well.',
-          'Use [[past paper practice]] as your primary assessment tool. Work through Section C questions by writing full answers under timed conditions (20-22 minutes each). Then mark your answers against the marking scheme, counting how many distinct points you made. This tells you exactly where your knowledge gaps are. Any topic where you score below 35/50 needs more focused revision.'
+          'Use [[past paper practice]] as your primary assessment tool. Work through Section C questions by writing full answers under timed conditions (about 25 minutes each). Then mark your answers against the marking scheme, counting how many distinct points you made. This tells you exactly where your knowledge gaps are. Any topic where you score below about 70% needs more focused revision.'
         ],
         highlights: [
           { term: 'active recall', description: 'Testing yourself on material rather than re-reading it. Use flashcards, blank diagrams, and practice questions.' },
@@ -609,7 +609,7 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
         eyebrow: '06 // Action Plan',
         paragraphs: [
           'Start by making a checklist of all mandatory experiments and all Section C topics. Tick off each one as you create a summary sheet and can reproduce it from memory. Prioritise **Human Biology**, **Genetics**, and **Ecology** first -- these cover the most Section C marks. In parallel, start your definition flashcards and test yourself for 10 minutes at the beginning of every study session.',
-          'Once you have covered the major topics, practise writing full Section C answers under timed conditions. Do at least 2-3 past paper long questions per study session, mark them yourself, and count the points. Where you are losing marks, go back to your summary sheet and fill in the missing details. Repeat this cycle until you can consistently score 40+ on Section C questions.',
+          'Once you have covered the major topics, practise writing full Section C answers under timed conditions. Do at least 2-3 past paper long questions per study session, mark them yourself, and count the points. Where you are losing marks, go back to your summary sheet and fill in the missing details. Repeat this cycle until you can consistently score around 70% or better on Section C questions.',
           'In the final two weeks, do two complete timed papers (3 hours each) and mark them fully. Review your experiment summaries, run through all your flashcards, and focus your final sessions on your weakest topics. On exam day, read all questions before choosing -- especially in Section C, where picking the right 4 questions can make or break your grade.'
         ],
         highlights: [],

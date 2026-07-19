@@ -901,6 +901,32 @@ export const CUT_CONTENT: CutContentEntry[] = [
     date: '2026-07-18',
   },
   {
+    id: 'subject-biology-001',
+    module: 'Mastering Biology',
+    section: '§1 Exam Structure',
+    action: 'corrected',
+    original:
+      'Section A … contains 6 short questions … Section C … contains 6 long questions — you must answer 4 of them.',
+    reframedTo:
+      'Section A … contains 7 short questions … Section C … contains 7 long questions — you must answer 4 of them.',
+    reason:
+      'The SEC 2025 HL and 2023 HL Biology marking schemes both present seven questions in Section A (Q1–Q7) and seven in Section C (Q11–Q17); the module said six for each. Confirmed in examiner-reports/biology/2025-hl-verification.md, which flags the correction as an action item. The number answered (5 / 4) was already correct.',
+    date: '2026-07-19',
+  },
+  {
+    id: 'subject-biology-002',
+    module: 'Mastering Biology',
+    section: '§1 Exam Structure / §3 High-Value Zones / §4 Common Pitfalls',
+    action: 'corrected',
+    original:
+      'Section B is worth 100 marks … Each question is worth 50 marks. / Section C is worth 200 marks … Each question is worth 50 marks. / Section C is where 50% of your marks are. Four questions at 50 marks each.',
+    reframedTo:
+      'Section B is worth 60 marks … Each question is worth 30 marks. / Section C is worth 240 marks … Each question is worth 60 marks. / Section C is where 60% of your marks are — 240 of the 400. Four questions at 60 marks each.',
+    reason:
+      'The module misstated the section weightings: the real Biology paper is Section A 100 + Section B 60 + Section C 240 = 400 (SEC 2025 HL scheme, "Section A Best 5 100" p.8, "Section B Best 2 60" p.15, "Section C Best 4 4(60)" p.18). The module had Section B at 100 (50 each) and Section C at 200/50% (50 each), understating Section C\'s weight and misstating per-question marks. Dependent study-target figures (per-question denominators) reframed to percentages to stay accurate.',
+    date: '2026-07-19',
+  },
+  {
     id: 'subject-english-007',
     module: 'Mastering English',
     section: '§2 Marking Criteria / §4 Common Pitfalls',
