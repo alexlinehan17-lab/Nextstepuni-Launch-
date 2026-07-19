@@ -222,6 +222,16 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     };
   }, []);
 
+  /** Outage notice — rendered on home AND the subject view (deep links land on
+   *  the subject view without ever passing through home). */
+  const archiveDownBanner = archiveDown ? (
+    <p className="text-[13px] leading-relaxed rounded-2xl px-4 py-3.5 mb-5" style={{ backgroundColor: BLUE_TINT, color: '#27506E' }}>
+      <strong>The paper archive is temporarily unavailable.</strong> Papers and marking
+      schemes won’t open right now — the problem is on our side, not your connection.
+      Your pins, progress and review decks are safe; please check back a little later.
+    </p>
+  ) : null;
+
   // ── deep link (?tool=paper-trail&subject=…&year=…), applied once per load ──
   useEffect(() => {
     if (bootApplied) return;
@@ -666,6 +676,8 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
           Real SEC papers with their marking schemes — pick a year.
         </p>
 
+        {archiveDownBanner}
+
         {/* Level + language controls */}
         <div className="flex flex-wrap items-center gap-2.5 mb-4">
           {subj.levels.length > 1 && (
@@ -968,13 +980,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
         {junior ? ' for every Junior Cycle exam you can sit.' : ' for every exam year back to 2010.'}
       </p>
 
-      {archiveDown && (
-        <p className="text-[13px] leading-relaxed rounded-2xl px-4 py-3.5 mb-5" style={{ backgroundColor: BLUE_TINT, color: '#27506E' }}>
-          <strong>The paper archive is temporarily unavailable.</strong> Papers and marking
-          schemes won’t open right now — the problem is on our side, not your connection.
-          Your pins, progress and review decks are safe; please check back a little later.
-        </p>
-      )}
+      {archiveDownBanner}
 
       {/* Search accelerator */}
       <div className="relative mb-5" ref={searchBoxRef}>
