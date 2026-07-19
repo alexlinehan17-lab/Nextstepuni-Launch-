@@ -927,6 +927,45 @@ export const CUT_CONTENT: CutContentEntry[] = [
     date: '2026-07-19',
   },
   {
+    id: 'subject-history-001',
+    module: 'Mastering History',
+    section: '§1 Exam Structure',
+    action: 'corrected',
+    original:
+      'The Leaving Certificate History Higher Level exam is a single paper … worth a total of 400 marks. There is no second paper and no coursework component — everything rides on this one sitting.',
+    reframedTo:
+      'Leaving Certificate History Higher Level has two assessment components. The Research Study Report (RSR) is a coursework project worth 100 marks — 20% of your final grade … The written examination is a single paper … worth 400 marks — 80% of your grade. Together they total 500 marks.',
+    reason:
+      'The module wrongly stated History has no coursework. LC History HL includes the Research Study Report (RSR), a coursework project worth 100 marks (20%), so the subject totals 500 marks (RSR 100 + written 400). Confirmed in the SEC 2025 HL marking scheme (RSR marked out of 100 across three grids, pp.4–6; distilled in examiner-reports/history/2025-insights.md). Mirrors the correct two-component framing already used in the Geography module.',
+    date: '2026-07-19',
+  },
+  {
+    id: 'subject-history-002',
+    module: 'Mastering History',
+    section: '§2 Marking Criteria (High-Value Zones)',
+    action: 'corrected',
+    original:
+      'It is worth 100 marks — a full 25% of your grade',
+    reframedTo:
+      'It is worth 100 marks — a quarter of the written paper (and 20% of your overall grade)',
+    reason:
+      'Dependent on subject-history-001: the Document Question is 100 of the written paper\'s 400 marks (a quarter of the paper) but only 20% of the 500-mark subject total once the RSR coursework is counted. "25% of your grade" treated the written paper as the whole grade.',
+    date: '2026-07-19',
+  },
+  {
+    id: 'subject-history-003',
+    module: 'Mastering History',
+    section: '§2 Marking Criteria',
+    action: 'corrected',
+    original:
+      'the contextualisation sub-question (typically worth 20 marks) asks you to write a short paragraph … The comprehension and comparison questions are the easiest marks on the paper',
+    reframedTo:
+      'the contextualisation sub-question (worth 40 marks — the largest single part of the Document Question) asks you to write a developed mini-essay … The comprehension and comparison questions (20 marks each) are the easiest marks on the paper',
+    reason:
+      'The Document Question is Comprehension 20 + Comparison 20 + Criticism 20 + Contextualisation 40 = 100 marks (SEC 2025 HL scheme pp.8–12: Contextualisation is a mini-essay marked Max CM 24 + Max OE 16 = 40, where paragraph marking begins). The module understated contextualisation as 20 marks and mislabelled it a short paragraph.',
+    date: '2026-07-19',
+  },
+  {
     id: 'subject-english-007',
     module: 'Mastering English',
     section: '§2 Marking Criteria / §4 Common Pitfalls',
