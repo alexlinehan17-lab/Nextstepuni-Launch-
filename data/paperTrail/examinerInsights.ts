@@ -8,8 +8,9 @@
  * source page. Verbatim quotes are kept short per the content rules; the full
  * traceable source lives in /examiner-reports/<subject>/.
  *
- * Gated by report coverage — currently Business + Mathematics (the two subjects
- * whose Chief Examiner reports are in-repo). Grows as more reports land.
+ * Gated by report coverage — a subject gets a set only once its Chief
+ * Examiner's report is in-repo and the set is verified against it (currently
+ * Business, Mathematics, English). Grows as more reports are verified.
  */
 
 export interface ExaminerInsight {
@@ -30,6 +31,43 @@ export interface ExaminerInsightSet {
 }
 
 const SETS: ExaminerInsightSet[] = [
+  {
+    subjectId: 'english',
+    subjectLabel: 'English',
+    source: "SEC Chief Examiner's Report 2013 (Higher & Ordinary Level)",
+    insights: [
+      {
+        pitfall: 'Comparative answers built from a pre-learned formula — the report found "a significant minority of candidates were hampered by a rigid and formulaic approach", and the Comparative was the weakest-scoring section at both levels.',
+        fix: 'Engage with the terms of the actual question in every paragraph. The quality of the evidence you cite was "a significant discriminator used by examiners".',
+        cite: "Chief Examiner's Report 2013, pp.8, 18–20",
+      },
+      {
+        pitfall: 'Skipping the Unseen Poem — "a number of candidates did not answer on this compulsory section", losing up to twenty marks outright, and it was the lowest-scoring element on Paper 2.',
+        fix: 'Always attempt it. Examiners are told there is no single "correct" reading — a well-argued personal response to the poem\'s language and imagery is exactly what is rewarded.',
+        cite: "Chief Examiner's Report 2013, pp.7–9",
+      },
+      {
+        pitfall: 'Careless quotation in Single Text answers — "the careless use of quotation, observed in a significant number of responses, served to undermine answers".',
+        fix: 'Short, apt, accurate quotes woven into your point beat long misremembered ones. Check each quote actually supports the sentence it sits in.',
+        cite: "Chief Examiner's Report 2013, p.8",
+      },
+      {
+        pitfall: 'Reproducing prepared "banks of knowledge" — material delivered regardless of what was asked. Knowledge alone did not score; unmanaged, it read as not answering the question.',
+        fix: 'Shape everything to the specific question asked. Under-achievement was traced to "a loss of focus in terms of the requirements of the task".',
+        cite: "Chief Examiner's Report 2013, pp.11, 18, 20",
+      },
+      {
+        pitfall: 'Compositions that are "extremely brief and lacked development" — it is difficult to reach the top marks "if the answer is brief in the extreme".',
+        fix: 'Sustain and develop the piece, and honour your chosen genre: a short story needs narrative shape, characterisation, setting and atmosphere, not just good sentences.',
+        cite: "Chief Examiner's Report 2013, pp.15–16",
+      },
+      {
+        pitfall: 'Treating the question with too much reverence — assuming you must agree with its premise, which "can affect candidates\' ability to demonstrate skills in critical literacy".',
+        fix: 'You may challenge or disagree with part or all of a question\'s premise — the marking schemes explicitly cater for disputation. A defended independent view scores.',
+        cite: "Chief Examiner's Report 2013, p.17",
+      },
+    ],
+  },
   {
     subjectId: 'business',
     subjectLabel: 'Business',
