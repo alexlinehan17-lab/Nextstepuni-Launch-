@@ -10,8 +10,8 @@
  *
  * Gated by report coverage — a subject gets a set only once its Chief
  * Examiner's report is in-repo and the set is verified against it (currently
- * Business, Mathematics, English, Geography). Grows as more reports are
- * verified.
+ * Business, Mathematics, English, Geography, Chemistry). Grows as more
+ * reports are verified.
  */
 
 export interface ExaminerInsight {
@@ -66,6 +66,43 @@ const SETS: ExaminerInsightSet[] = [
         pitfall: 'Small-mark leaks: omitting units (the euro symbol on a calculation), unlabelled graph axes, or sketching the OS map when the question asked for the aerial photograph.',
         fix: 'Attach units to every figure, label both axes every time, and sketch the exact source the question names.',
         cite: "Chief Examiner's Report 2012, pp.25–30",
+      },
+    ],
+  },
+  {
+    subjectId: 'chemistry',
+    subjectLabel: 'Chemistry',
+    source: "SEC Chief Examiner's Report 2013 (Higher & Ordinary Level)",
+    insights: [
+      {
+        pitfall: 'Definitions recalled loosely — candidates omitted "average" from relative atomic mass, and stated Charles\' law without the fixed mass of gas or the kelvin (absolute) temperature scale.',
+        fix: 'Learn definitions to full-marks precision. Every qualifier in the syllabus definition is mark-bearing — a definition missing its conditions is a partial answer.',
+        cite: "Chief Examiner's Report 2013, pp.12–13",
+      },
+      {
+        pitfall: 'Recurring calculation slips: using the wrong mole ratio, taking 16 as the relative molecular mass of O₂, and multiplying by 100 instead of 1000 (or dividing) when converting to ppm.',
+        fix: 'Take the ratio from the balanced equation every time, double the Ar for diatomic molecules, and write the unit conversion as its own labelled step.',
+        cite: "Chief Examiner's Report 2013, p.14",
+      },
+      {
+        pitfall: 'Using shell, sub-level and orbital interchangeably — "as in other years, many candidates used the terms... incorrectly" — especially on ionisation-energy graph questions, traditionally poorly answered.',
+        fix: 'Keep the hierarchy exact: shell → sub-level → orbital. Ionisation-energy anomalies are explained by nuclear charge, screening and stable configurations — name the specific factor.',
+        cite: "Chief Examiner's Report 2013, p.14",
+      },
+      {
+        pitfall: 'Stating a bonding fact but never developing the argument — answers on boiling points "referred to the single bond in hydrogen and the double bond in oxygen but did not develop any argument", and confused intramolecular bonding with intermolecular forces.',
+        fix: 'Boiling points are about forces BETWEEN molecules. State the relevant intermolecular force, compare its strength, then draw the conclusion — three explicit steps.',
+        cite: "Chief Examiner's Report 2013, pp.14–15",
+      },
+      {
+        pitfall: 'Reaching the correct conclusion but failing the "justify" — on the equilibrium question "some were able to critically analyse the information... but were unable to satisfactorily justify their decision".',
+        fix: 'A justify answer is the decision PLUS the principle it rests on (e.g. the shift predicted by Le Chatelier for that specific change). The reason carries the marks.',
+        cite: "Chief Examiner's Report 2013, pp.15–16",
+      },
+      {
+        pitfall: 'Not attempting the required number of questions — at Ordinary Level 22.5% of candidates did not attempt the required 8, an automatic loss under best-of marking.',
+        fix: 'Always attempt at least the required number. Marking is best-of, so a weak extra attempt can only help you — but a missing one always costs its full weight.',
+        cite: "Chief Examiner's Report 2013, p.12",
       },
     ],
   },
