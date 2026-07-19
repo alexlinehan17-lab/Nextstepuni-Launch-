@@ -10,7 +10,8 @@
  *
  * Gated by report coverage — a subject gets a set only once its Chief
  * Examiner's report is in-repo and the set is verified against it (currently
- * Business, Mathematics, English). Grows as more reports are verified.
+ * Business, Mathematics, English, Geography). Grows as more reports are
+ * verified.
  */
 
 export interface ExaminerInsight {
@@ -31,6 +32,43 @@ export interface ExaminerInsightSet {
 }
 
 const SETS: ExaminerInsightSet[] = [
+  {
+    subjectId: 'geography',
+    subjectLabel: 'Geography',
+    source: "SEC Chief Examiner's Report 2012 (Higher Level)",
+    insights: [
+      {
+        pitfall: 'Explaining the wrong process in detail — candidates asked about landforms of deposition "presented very detailed explanations on the formation of waterfalls which are landforms of erosion and were therefore awarded no marks".',
+        fix: 'Before writing, check the process the question names (erosion vs deposition, weathering vs erosion). No amount of accurate detail rescues the wrong landform.',
+        cite: "Chief Examiner's Report 2012, pp.25–26",
+      },
+      {
+        pitfall: 'Describing the theory but never making the link the question asks for — plate tectonics described "and failed to link the theory to the distribution of earthquakes"; an activity described with no reference to the factors influencing it.',
+        fix: 'The marked part is the link: theory → the specific distribution, activity → the influencing factors. Anchor every paragraph to the question\'s exact demand.',
+        cite: "Chief Examiner's Report 2012, pp.25–28",
+      },
+      {
+        pitfall: 'Options essays spread across too many themes — "a significant number of candidates continue to ignore this instruction and instead provide too little detail on far too many themes/arguments".',
+        fix: 'Develop three or four aspects of the theme deeply — the report\'s own recommendation — rather than a superficial treatment of many points.',
+        cite: "Chief Examiner's Report 2012, pp.30, 34",
+      },
+      {
+        pitfall: 'Answering the topic instead of the question — "extensive descriptive material that related to the topic of the question but did not answer the specific question asked" (e.g. describing activities but never their impact on biomes).',
+        fix: 'Circle the instruction word and the object of the question ("examine the IMPACT"), and make every paragraph deliver that, not background.',
+        cite: "Chief Examiner's Report 2012, pp.30–31",
+      },
+      {
+        pitfall: 'Rubric errors that bleed whole sections: attempting more questions than required (even both electives), leaving required parts unanswered, or skipping the Options essay entirely.',
+        fix: 'Answer exactly the required number, cover every lettered part, and never leave the Options section blank — omissions had "a negative impact on overall grade outcomes".',
+        cite: "Chief Examiner's Report 2012, pp.24, 30, 32",
+      },
+      {
+        pitfall: 'Small-mark leaks: omitting units (the euro symbol on a calculation), unlabelled graph axes, or sketching the OS map when the question asked for the aerial photograph.',
+        fix: 'Attach units to every figure, label both axes every time, and sketch the exact source the question names.',
+        cite: "Chief Examiner's Report 2012, pp.25–30",
+      },
+    ],
+  },
   {
     subjectId: 'english',
     subjectLabel: 'English',
