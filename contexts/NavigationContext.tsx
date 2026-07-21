@@ -13,7 +13,7 @@ export type ViewState =
   | 'tree' | 'modules' | 'category' | 'module' | 'innovation-zone'
   | 'dashboard' | 'learning-paths' | 'onboarding'
   | 'my-journey' | 'gamification-hub' | 'study-session' | 'insights'
-  | 'jc-coming-soon' | 'cut-content' | 'accreditation';
+  | 'jc-coming-soon' | 'cut-content' | 'accreditation' | 'year-plans';
 
 export interface NavigationState {
   viewState: ViewState;
@@ -39,6 +39,7 @@ type NavigationAction =
   | { type: 'NAVIGATE_TO_JC_COMING_SOON'; fromModuleId: string }
   | { type: 'NAVIGATE_TO_CUT_CONTENT' }
   | { type: 'NAVIGATE_TO_ACCREDITATION' }
+  | { type: 'NAVIGATE_TO_YEAR_PLANS' }
   | { type: 'SET_ACTIVE_TOOL'; tool: string | null }
   | { type: 'RESTORE_STATE'; state: Partial<NavigationState> };
 
@@ -60,6 +61,7 @@ interface NavigationContextValue {
   navigateToJCComingSoon: (fromModuleId: string) => void;
   navigateToCutContent: () => void;
   navigateToAccreditation: () => void;
+  navigateToYearPlans: () => void;
   setActiveTool: (tool: string | null) => void;
   goBack: () => void;
 }
@@ -70,7 +72,7 @@ const VALID_VIEWS = new Set<string>([
   'tree', 'modules', 'category', 'module', 'innovation-zone',
   'dashboard', 'learning-paths', 'onboarding',
   'my-journey', 'gamification-hub', 'study-session', 'insights',
-  'jc-coming-soon', 'cut-content', 'accreditation',
+  'jc-coming-soon', 'cut-content', 'accreditation', 'year-plans',
 ]);
 
 function serializeToURL(state: NavigationState): string {
@@ -142,6 +144,8 @@ function navigationReducer(state: NavigationState, action: NavigationAction): Na
       return { ...state, viewState: 'cut-content', currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'NAVIGATE_TO_ACCREDITATION':
       return { ...state, viewState: 'accreditation', currentModuleId: null, cameFromJourney: false, activeTool: null };
+    case 'NAVIGATE_TO_YEAR_PLANS':
+      return { ...state, viewState: 'year-plans', currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'SET_ACTIVE_TOOL':
       if (state.activeTool === action.tool) return state;
       return { ...state, activeTool: action.tool };
@@ -348,6 +352,11 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     window.scrollTo(0, 0);
   }, [navigate]);
 
+  const navigateToYearPlans = useCallback(() => {
+    navigate({ type: 'NAVIGATE_TO_YEAR_PLANS' });
+    window.scrollTo(0, 0);
+  }, [navigate]);
+
   const navigateToAccreditation = useCallback(() => {
     navigate({ type: 'NAVIGATE_TO_ACCREDITATION' });
     window.scrollTo(0, 0);
@@ -379,6 +388,7 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     navigateToJCComingSoon,
     navigateToCutContent,
     navigateToAccreditation,
+    navigateToYearPlans,
     setActiveTool,
     goBack,
   };

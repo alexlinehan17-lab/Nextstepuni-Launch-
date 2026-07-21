@@ -25,6 +25,7 @@ const AdminDashboard = lazy(() => import('./AdminDashboard').then(m => ({ defaul
 const GCDashboard = lazy(() => import('./GCDashboard').then(m => ({ default: m.GCDashboard })));
 const DashboardView = lazy(() => import('./DashboardView'));
 const LearningPathsView = lazy(() => import('./LearningPathsView'));
+const YearPlansView = lazy(() => import('./YearPlansView'));
 const ModulesView = lazy(() => import('./ModulesView').then(m => ({ default: m.ModulesView })));
 import { moduleComponents, InnovationZone } from '../moduleRegistry';
 import { ALL_COURSES, categoryTitles, SUBJECT_TO_MODULE } from '../courseData';
@@ -222,6 +223,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   const handleGoToInnovationZone = () => { nav.navigateToInnovationZone(); };
   const handleGoToDashboard = () => { nav.navigateToDashboard(); };
   const handleGoToLearningPaths = () => { nav.navigateToLearningPaths(); };
+  const handleGoToYearPlans = () => { nav.navigateToYearPlans(); };
   const handleGoToJourney = () => { nav.navigateToJourney(); };
   const handleGoToGamificationHub = () => { nav.navigateToGamificationHub(); };
   const handleGoToStudy = () => {
@@ -402,6 +404,19 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     );
   }
 
+  if (viewState === 'year-plans') {
+    return (
+      <Suspense fallback={<LoadingSpinner />}>
+        <YearPlansView
+          allCourses={studentCourses}
+          userProgress={userProgress}
+          onSelectModule={handleSelectModule}
+          onBack={handleBackToTree}
+        />
+      </Suspense>
+    );
+  }
+
   if (viewState === 'onboarding') {
     return (
       <Suspense fallback={<LoadingSpinner />}>
@@ -466,6 +481,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
       onGoToInnovationZone={handleGoToInnovationZone}
       onGoToDashboard={handleGoToDashboard}
       onGoToLearningPaths={handleGoToLearningPaths}
+      onGoToYearPlans={handleGoToYearPlans}
       onGoToJourney={handleGoToJourney}
       onGoToStudy={handleGoToStudy}
       onGoToInsights={handleGoToInsights}

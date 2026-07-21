@@ -136,6 +136,7 @@ const CommandPalette: React.FC<Props> = ({ courses }) => {
       { kind: 'page', id: 'insights', title: 'Insights', go: () => nav.navigateToInsights() },
       { kind: 'page', id: 'cut-content', title: 'Cut Content', go: () => nav.navigateToCutContent() },
       { kind: 'page', id: 'accreditation', title: 'References', go: () => nav.navigateToAccreditation() },
+      { kind: 'page', id: 'year-plans', title: 'Year Plans', go: () => nav.navigateToYearPlans() },
     ];
     const tools: PaletteEntry[] = Object.entries(TOOL_TITLES).map(([id, title]) => ({
       kind: 'tool' as const,
