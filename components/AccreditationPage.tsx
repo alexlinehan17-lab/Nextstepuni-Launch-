@@ -206,7 +206,7 @@ const AccreditationPage: React.FC<AccreditationPageProps> = ({ onBack }) => {
           </button>
           <div className="min-w-0">
             <h1 className="text-lg md:text-xl font-semibold leading-tight" style={{ fontFamily: SERIF, color: INK }}>
-              Accreditation
+              References
             </h1>
             <p className="text-[12px] leading-tight mt-0.5 hidden sm:block" style={{ color: MUTED, fontFamily: SANS }}>
               Every module, the evidence behind it, and why it earns its place.

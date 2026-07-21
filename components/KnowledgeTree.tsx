@@ -7,7 +7,7 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { MotionDiv } from './Motion';
 import {
   Rocket, ArrowRight, BarChart3, Compass,
-  User, Home, PanelLeft, Award, Settings, LogOut, Sun, Moon, RefreshCw, Mountain, Timer, Dumbbell, Bell, MessageSquare, Scissors, HelpCircle, Search, Sparkles
+  User, Home, PanelLeft, Award, BookOpen, Settings, LogOut, Sun, Moon, RefreshCw, Mountain, Timer, Dumbbell, Bell, MessageSquare, Scissors, HelpCircle, Search, Sparkles
 } from 'lucide-react';
 import SiteGuide, { type GuideAction } from './SiteGuide';
 import FirstVisitCoachMarks, { coachMarksSeen } from './FirstVisitCoachMarks';
@@ -116,7 +116,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
     { icon: Search, label: 'Jump to… (⌘K)', onClick: openCommandPalette, active: false },
     { icon: Dumbbell, label: 'Training Hub', onClick: onGoToTrainingHub ?? (() => {}), active: false },
     { icon: Scissors, label: 'Cut Content', onClick: onGoToCutContent ?? (() => {}), active: false },
-    { icon: Award, label: 'Accreditation', onClick: onGoToAccreditation ?? (() => {}), active: false },
+    { icon: BookOpen, label: 'References', onClick: onGoToAccreditation ?? (() => {}), active: false },
     { icon: Mountain, label: 'My Journey', onClick: onGoToJourney, active: false },
     { icon: Timer, label: 'Study Session', onClick: onGoToStudy ?? (() => {}), active: false },
     { icon: BarChart3, label: 'Dashboard', onClick: onGoToDashboard, active: false },
