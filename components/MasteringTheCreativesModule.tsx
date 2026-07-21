@@ -217,7 +217,7 @@ const DeliberatePracticeWheel: React.FC = () => {
         Deliberate Practice Wheel
       </h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-8">
-        Talent is a myth. Spin the wheel and practice a real technique for 2 minutes.
+        You don’t need to be naturally gifted — the marking scheme rewards process. Spin the wheel and practice a real technique for 2 minutes.
       </p>
 
       {/* Progress counter */}
@@ -523,7 +523,7 @@ const MasteringTheCreativesModule: React.FC<{ onBack: () => void; progress: Modu
            {activeSection === 5 && (
             <ReadingSection title="Your Creative Game Plan." eyebrow="Step 6" icon={Wrench} theme={theme}>
               {essentials ? (
-                <p>Talent is a myth. You now know the Visual Journal, melody structure, film analysis, and exam nerves management. Pick one thing and do it this week.</p>
+                <p>You don’t need to be naturally gifted — the marking scheme rewards process. You now know the Visual Journal, melody structure, film analysis, and exam nerves management. Pick one thing and do it this week.</p>
               ) : (
                 <p>Here's the bottom line: "talent" is a myth. Doing well in Art, Music, and Film comes down to learning the process, practising with purpose, and not being afraid to make mistakes along the way. You now know how the Visual Journal works, how to structure a melody, how to read a film like an examiner, and how to handle your nerves. That's a serious toolkit.</p>
               )}

@@ -151,12 +151,12 @@ const ReframingProgressModule: React.FC<{ onBack: () => void; progress: ModulePr
             <ReadingSection title="The 80/20 Protocol." eyebrow="Step 2" icon={BarChart} theme={theme}>
                 {essentials ? (
                   <>
-                    <p>Use the <Highlight description="Roughly 80% of your marks come from about 20% of the syllabus. So if you figure out which topics come up again and again, you can lock in most of your grade by nailing those first." theme={theme}>Pareto Principle</Highlight>. About 80% of your marks come from 20% of the syllabus. Find the topics that always come up. Nail those first. In Biology, Ecology and Genetics are guaranteed long questions. Master these and you lock in a huge chunk of your grade. Bank the easy wins before tackling the rest.</p>
+                    <p>Use the <Highlight description="Roughly 80% of your marks come from about 20% of the syllabus. So if you figure out which topics come up again and again, you can lock in most of your grade by nailing those first." theme={theme}>Pareto Principle</Highlight>. About 80% of your marks come from 20% of the syllabus. Find the topics that always come up. Nail those first. In Biology, for example, Ecology and Genetics have appeared as long questions in almost every recent paper — check the last five years yourself. Weight them heavily, but still cover the rest of the course, because no topic is ever guaranteed.</p>
                   </>
                 ) : (
                   <>
                     <p>The <Highlight description="Roughly 80% of your marks come from about 20% of the syllabus. So if you figure out which topics come up again and again, you can lock in most of your grade by nailing those first." theme={theme}>Pareto Principle</Highlight> is your cheat code for prioritising. Your job is to figure out which topics give you the most marks for the least effort, and tackle those first.</p>
-                    <p>In Biology, for example, Ecology and Genetics are guaranteed long questions. Mastering these secures a huge chunk of your grade before you even touch the sprawling Unit 3. This isn't about ignoring everything else -- it's about banking the easy wins first so you're already in a strong position.</p>
+                    <p>In Biology, for example, Ecology and Genetics have appeared as long questions in almost every recent paper (check the last five years yourself). Weighting them heavily puts you in a strong position before you even touch the sprawling Unit 3 — though no topic is ever guaranteed. This isn't about ignoring everything else -- it's about banking the easy wins first so you're already in a strong position.</p>
                   </>
                 )}
             </ReadingSection>

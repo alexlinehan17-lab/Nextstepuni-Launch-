@@ -727,15 +727,15 @@ const MasteringSpacedRepetitionModule: React.FC<{ onBack: () => void; progress: 
            {activeSection === 4 && (
             <ReadingSection title="Apps That Do It For You." eyebrow="Step 5" icon={RadioTower} theme={theme}>
               {essentials ? (
-                <p>Use <Highlight description="Free apps like Anki that automatically figure out when you're about to forget something and remind you to review it at just the right time." theme={theme}>Spaced Repetition Apps</Highlight> like Anki. You make flashcards. The app tracks when you're about to forget each one. It shows you the right card at the right time. No guesswork.</p>
+                <p>Use <Highlight description="Apps like Anki (free on computer and Android; the iPhone app is paid — the AnkiWeb site is free in a browser) that automatically figure out when you're about to forget something and remind you to review it at the right time." theme={theme}>Spaced Repetition Apps</Highlight> like Anki. You make flashcards. The app tracks when you're about to forget each one. It shows you the right card at the right time. No guesswork.</p>
               ) : (
                 <>
-                  <p>Keeping track of the perfect review schedule for thousands of facts across all your subjects is basically impossible to do by hand. That's where <Highlight description="Free apps like Anki that automatically figure out when you're about to forget something and remind you to review it at just the right time." theme={theme}>Spaced Repetition Apps</Highlight> come in. Think of them as a personal tutor for your memory.</p>
+                  <p>Keeping track of the perfect review schedule for thousands of facts across all your subjects is basically impossible to do by hand. That's where <Highlight description="Apps like Anki (free on computer and Android; the iPhone app is paid — the AnkiWeb site is free in a browser) that automatically figure out when you're about to forget something and remind you to review it at the right time." theme={theme}>Spaced Repetition Apps</Highlight> come in. Think of them as a personal tutor for your memory.</p>
                   <p>Using an app like Anki, you create digital flashcards. Each time you review a card, you tell the app how hard it was ("Again," "Hard," "Good," "Easy"). The app then uses your answers to figure out when you're about to forget that card and puts it in front of you at just the right moment. It takes all the guesswork out of scheduling -- you just show up and review whatever the app tells you to.</p>
                 </>
               )}
               <MicroCommitment theme={theme}>
-                <p>Download Anki on your phone or computer. Don't worry about making cards yet. Just get the tool. This is the first step to building an automated, long-term memory system.</p>
+                <p>Get Anki — it’s free on computer and Android; on iPhone the official app is paid, so use ankiweb.net free in your browser instead. Don't worry about making cards yet. Just get the tool. This is the first step to building an automated, long-term memory system.</p>
               </MicroCommitment>
             </ReadingSection>
           )}

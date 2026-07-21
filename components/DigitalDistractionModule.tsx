@@ -91,9 +91,9 @@ const AttentionDeficitCalculator = () => {
             {/* Insight callout */}
             <div className="text-sm italic" style={{ ...calloutStyle, borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
                 {checks === 0 && <span className="font-semibold not-italic">Phone away = full hour of deep work. This is the goal.</span>}
-                {checks === 1 && <span>Even <strong>one check</strong> costs 23 minutes of recovery. You lose over a third of your hour.</span>}
-                {checks === 2 && <span><strong>Two checks</strong> and you&apos;ve lost 46 minutes. Only 14 minutes of real studying.</span>}
-                {checks === 3 && <span>At <strong>3 checks</strong>, you&apos;re losing over an hour of focus time. Your brain never reaches deep processing.</span>}
+                {checks === 1 && <span>Even <strong>one check</strong> can cost around 23 minutes of recovery — on this model, over a third of your hour.</span>}
+                {checks === 2 && <span><strong>Two checks</strong> could cost you up to 46 minutes on this model — leaving little of the hour for real studying.</span>}
+                {checks === 3 && <span>At <strong>3 checks</strong>, on this model almost the whole hour is eaten by recovery time — your brain barely reaches deep processing.</span>}
                 {checks >= 4 && checks <= 6 && <span>At <strong>{checks} checks per hour</strong>, virtually none of your study time is productive. You&apos;re just sitting with a book open.</span>}
                 {checks > 6 && <span><strong>{checks} checks per hour</strong> means you&apos;re checking your phone every {(60 / checks).toFixed(0)} minutes. This isn&apos;t studying — it&apos;s scrolling with extra steps.</span>}
             </div>
@@ -425,7 +425,7 @@ const DigitalDistractionModule: React.FC<{ onBack: () => void; progress: ModuleP
                 </>
               ) : (
                 <>
-                  <p>Your laptop is both your best study tool and your biggest trap. You open it to study, and twenty minutes later you're watching YouTube. Browser extensions that "block" sites are easy to turn off when you're tempted. What you need are proper <Highlight description="Free apps like Cold Turkey or Freedom that block distracting websites and apps on your laptop. The best ones have a 'locked mode' that makes it literally impossible to undo the block until the timer runs out -- even if you restart your computer." theme={theme}>website blockers</Highlight> that you genuinely can't get around.</p>
+                  <p>Your laptop is both your best study tool and your biggest trap. You open it to study, and twenty minutes later you're watching YouTube. Browser extensions that "block" sites are easy to turn off when you're tempted. What you need are proper <Highlight description="Apps like Cold Turkey (free tier) or Freedom, or your device’s built-in Screen Time / Digital Wellbeing / Focus mode, that block distracting websites and apps on your laptop. The best ones have a 'locked mode' that makes it literally impossible to undo the block until the timer runs out -- even if you restart your computer." theme={theme}>website blockers</Highlight> that you genuinely can't get around.</p>
                   <p>The best approach is an <Highlight description="Instead of blocking individual bad sites (you'll always miss one), you block everything and then only allow the specific sites you need -- like Studyclix, Examinations.ie, or your school portal. This way, only useful stuff gets through." theme={theme}>allowlist</Highlight> -- block everything except the handful of sites you actually need for study, like Studyclix or Examinations.ie. And if you're worried about needing to look something up, try downloading what you need beforehand. You can save Wikipedia articles, past papers, or notes for <Highlight description="You can use tools like Kiwix to save entire websites (like Wikipedia) onto your laptop so you can access them without the internet. That way you get the information without the temptation of going online." theme={theme}>offline use</Highlight> so you have the information without the temptation of a live internet connection.</p>
                 </>
               )}

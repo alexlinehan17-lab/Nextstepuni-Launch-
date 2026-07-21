@@ -222,7 +222,7 @@ const AppliedSciencesModule: React.FC<{ onBack: () => void; progress: ModuleProg
                 <>
                   <p>These subjects test more than workshop skills. You need to show <Highlight description="Combining knowledge, hands-on skills, and design ideas into one piece of work." theme={theme}>technological capability</Highlight>. The biggest reason students lose marks is a gap between the <Highlight description="The thing you build." theme={theme}>"made artefact"</Highlight> and the <Highlight description="The report documenting your design process." theme={theme}>"written account"</Highlight>. Your folio matters just as much as your finished project. Start documenting from day one.</p>
                   <PersonalStory name="Oisin" role="6th Year, Waterford">
-                    <p>I did Engineering and Construction Studies for my LC. In 5th year, I spent ages on my Engineering project but barely touched the folio -- I thought the project would speak for itself. I got a B2. In 6th year, I started the folio from day one, documenting every decision and sketch. Same skill level, way better grade. The folio is where the marks actually are.</p>
+                    <p>I did Engineering and Construction Studies for my LC. In 5th year, I spent ages on my Engineering project but barely touched the folio -- I thought the project would speak for itself. It didn’t go well. In 6th year, I started the folio from day one, documenting every decision and sketch. Same skill level, way better grade. The folio is where the marks actually are.</p>
                   </PersonalStory>
                 </>
               ) : (

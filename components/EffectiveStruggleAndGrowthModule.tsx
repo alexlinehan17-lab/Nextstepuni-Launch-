@@ -681,7 +681,7 @@ const EffectiveStruggleAndGrowthModule: React.FC<{ onBack: () => void; progress:
             <ReadingSection title="Recalibrate Your Dashboard." eyebrow="Step 6" icon={BarChartHorizontal} theme={theme}>
               {essentials ? (
                 <>
-                  <p>If studying feels hard and frustrating, that means it is working. Your brain is rewiring. Do not stop. Easy study is wasted study.</p>
+                  <p>If it feels hard but you are still making some progress, keep going — that is learning. But if you are completely lost, that is a signal to step back and get a worked example or ask for help, not to push harder. Comfortable review has its place too; the aim is effort you can actually make progress with.</p>
                   <p>Regular low-stakes self-testing can also ease exam anxiety.<Cite n={5} /> You walk in knowing exactly what you know and where your gaps are. Fewer surprises.</p>
                 </>
               ) : (

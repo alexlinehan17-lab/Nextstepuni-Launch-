@@ -236,7 +236,7 @@ const MasteringEnglishModule: React.FC<{ onBack: () => void; progress: ModulePro
     { id: 'pclm-blueprint', title: 'How You Actually Get Marked', eyebrow: '01 // The Marking Scheme', icon: Settings },
     { id: 'paper1-engine', title: 'Paper 1: Where the Marks Are', eyebrow: '02 // Language & Comprehension', icon: BookOpen },
     { id: 'composing', title: 'Paper 1: The 100-Mark Essay', eyebrow: '03 // Composing', icon: PenSquare },
-    { id: 'single-text', title: 'Paper 2: The Single Text', eyebrow: '04 // Macbeth 2026', icon: MessageSquare },
+    { id: 'single-text', title: 'Paper 2: The Single Text', eyebrow: '04 // Your Single Text', icon: MessageSquare },
     { id: 'comparative-study', title: 'Paper 2: The Comparative Study', eyebrow: '05 // The Modes', icon: BarChart },
     { id: 'poetry', title: 'Paper 2: Prescribed Poetry', eyebrow: '06 // The "Big 4" Rule', icon: Mic },
     { id: 'toolkit', title: 'Your English Toolkit', eyebrow: '07 // Smart Techniques', icon: BrainCircuit },
@@ -314,7 +314,7 @@ const MasteringEnglishModule: React.FC<{ onBack: () => void; progress: ModulePro
                 </>
               ) : (
                 <>
-                  <p>For 2026, the Shakespeare play is Macbeth. To get top marks, you can't just talk about themes on their own -- you need to show how themes, characters, and imagery all connect to each other. The big themes are: <Highlight description="Ambition isn't just about wanting power. It's about what that wanting does to you as a person -- the guilt, the paranoia, the destruction." theme={theme}>Ambition and what it does to people</Highlight>, good leadership vs. tyranny, the supernatural and fate, and how things aren't always what they seem.</p>
+                  <p>Check which Shakespeare play is prescribed for your exam year — in recent years it has been Macbeth, which we use as the worked example here. To get top marks, you can't just talk about themes on their own -- you need to show how themes, characters, and imagery all connect to each other. The big themes are: <Highlight description="Ambition isn't just about wanting power. It's about what that wanting does to you as a person -- the guilt, the paranoia, the destruction." theme={theme}>Ambition and what it does to people</Highlight>, good leadership vs. tyranny, the supernatural and fate, and how things aren't always what they seem.</p>
                   <p>When you're writing about characters, focus on how they change over the course of the play. Macbeth goes from being called "brave Macbeth" at the start to being called a "butcher" by the end. Lady Macbeth goes the opposite way -- she starts off ruthless and in control, but by the end she's sleepwalking and falling apart with guilt. Showing you understand these journeys is what gets you the big marks.</p>
                 </>
               )}
@@ -329,7 +329,7 @@ const MasteringEnglishModule: React.FC<{ onBack: () => void; progress: ModulePro
                 </>
               ) : (
                 <>
-                  <p>For Higher Level 2026, the three comparative modes are <strong>Cultural Context</strong>, <strong>General Vision and Viewpoint (GVV)</strong>, and <strong>Literary Genre</strong>. Important: "Theme or Issue" is NOT a mode for Higher Level. Don't waste your time preparing for it.</p>
+                  <p>Check which three comparative modes are prescribed for your exam year (the SEC sets them per cohort). In recent Higher Level years they have been <strong>Cultural Context</strong>, <strong>General Vision and Viewpoint (GVV)</strong>, and <strong>Literary Genre</strong> — so prepare the modes on your year’s prescribed list rather than every possible mode.</p>
                   <p>The secret to getting top marks here is linking your texts together constantly. Don't write about Text A, then Text B, then Text C separately. In every paragraph, compare and contrast them side by side. The best way to prepare is the <Highlight description="Pick 4-5 key moments from each text. These are scenes or turning points you can talk about no matter which mode comes up on the exam." theme={theme}>"Key Moment" method</Highlight> -- pick 4-5 key moments from each text that you can use flexibly no matter which mode comes up.</p>
                 </>
               )}

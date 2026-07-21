@@ -612,7 +612,7 @@ const DumpSheetBuilder = () => {
                 })}
             </div>
             <div style={{ borderLeft: `3px solid ${COLORS.accent}`, backgroundColor: COLORS.accentTint, borderRadius: '0 10px 10px 0', padding: '12px 16px', marginBottom: 16 }}>
-                <p className="text-sm italic" style={{ color: COLORS.accentDarkText }}>In the real exam, your dump sheet prevents interference — facts written down can't be displaced by exam stress. Do this in the first 2 minutes of every paper.</p>
+                <p className="text-sm italic" style={{ color: COLORS.accentDarkText }}>In the real exam, your dump sheet is a safety net — facts already on the page are safe even if stress makes them harder to recall. Do this in the first 2 minutes of every paper.</p>
             </div>
             <div className="text-center">
                 <button onClick={tryAgain} style={{ backgroundColor: COLORS.accent, borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>Try Again</button>

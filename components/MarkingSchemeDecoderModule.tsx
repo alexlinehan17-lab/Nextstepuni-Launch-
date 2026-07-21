@@ -220,11 +220,11 @@ const schemeExtracts = [
     ]
   },
   {
-    text: 'Q3(c) Define osmosis in your own words or equivalent. (9 marks — PCLM)',
+    text: 'Q3(c) Define osmosis in your own words or equivalent. (9 marks)',
     annotations: [
       { term: 'or equivalent', start: 40, end: 53, explanation: 'Your phrasing doesn\'t need to match the textbook exactly. The examiner is flexible.' },
       { term: '9 marks', start: 56, end: 63, explanation: '9 marks for a definition means they want detail — not just one sentence.' },
-      { term: 'PCLM', start: 66, end: 70, explanation: 'Partial Credit Level Marks = you get marks for each correct element. Even 2 right keywords out of 5 earns marks.' },
+      { term: 'your own words', start: 24, end: 38, explanation: 'Science schemes credit each correct element separately, so a definition in your own words still scores mark-by-mark — you don\'t need the exact textbook wording.' },
     ]
   },
 ];

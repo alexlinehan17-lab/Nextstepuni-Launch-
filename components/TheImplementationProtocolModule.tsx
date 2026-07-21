@@ -385,7 +385,7 @@ const TheImplementationProtocolModule: React.FC<{ onBack: () => void; progress: 
             <ReadingSection title="The Intention-Action Gap." eyebrow="Step 1" icon={Target} theme={theme}>
               {essentials ? (
                 <>
-                  <p>Motivation only explains about 28% of whether you actually study.<Cite n={1} /> The other 72% comes down to strategy, not willpower. Saying "I will study more" barely helps.</p>
+                  <p>Intentions on their own explain only a modest part of whether you actually study.<Cite n={1} /> Much of the rest comes down to things you can control — like having a specific plan. Saying "I will study more" barely helps.</p>
                   <p>This gap between wanting to study and actually doing it is the <strong>Intention-Action Gap</strong>. It is worst for long-term goals like preparing for your big exams. You need specific plans, not just good intentions.</p>
                 </>
               ) : (

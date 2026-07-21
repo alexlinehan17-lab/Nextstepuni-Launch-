@@ -219,7 +219,7 @@ const H1RateDashboard = () => {
   return (
     <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
       <h4 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white text-center">Subject H1 Rate Dashboard</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Real H1 percentages from recent Leaving Cert results. Sort to see which subjects have the highest H1 rates.</p>
+      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Indicative H1 rates (illustrative, not official SEC figures). Sort to compare which subjects tend to have higher H1 rates.</p>
 
       <div className="flex justify-center gap-2 mb-6">
         {[

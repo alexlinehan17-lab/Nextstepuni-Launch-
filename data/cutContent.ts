@@ -1472,4 +1472,225 @@ export const CUT_CONTENT: CutContentEntry[] = [
       'Inverted the real weighting (Listening is not 50%) and misdescribed Composing as revisable coursework. With the common Performing elective, Performing is typically 50%; Composing is a timed written paper. Source: syllabusMeta.ts line 555-560 keyAdvice + strands music-0/music-1.',
     date: '2026-07-21',
   },
+  {
+    id: 'cite-understanding-illusions-001',
+    module: 'Understanding Illusions',
+    section: 'Implementation Playbook',
+    action: 'reframed',
+    original:
+      'Motivation only explains about 28% ... The other 72% comes down to strategy, not willpower.',
+    reframedTo:
+      'Intentions on their own explain only a modest part ... Much of the rest comes down to things you can control — like having a specific plan.',
+    reason:
+      'Sheeran (2002) reports intentions explain ~28% of behaviour variance; the flat "72% = strategy" split overstated it. Hedged.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'cite-reverse-engineering-your-schedule-002',
+    module: 'Reverse Engineering Your Schedule',
+    section: '80/20 Rule',
+    action: 'reframed',
+    original:
+      'roughly 20% of topics come up for about 80% of the marks',
+    reframedTo:
+      'some topics come up far more often than others — weight them first, but still cover the whole syllabus (the SEC guarantees no topic)',
+    reason:
+      'The precise 80/20 figure is not a verifiable SEC statistic and encourages question-spotting. Reframed to hedged frequency language with an anti-spotting caveat.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'cite-exam-hall-strategies-003',
+    module: 'Exam Hall Strategies',
+    section: 'Dump Sheet',
+    action: 'reframed',
+    original:
+      'facts written down can\'t be displaced by exam stress',
+    reframedTo:
+      'facts already on the page are safe even if stress makes them harder to recall',
+    reason:
+      '"Can\'t be displaced" asserted an uncited cognitive mechanism as fact. Softened.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'cite-answer-engineering-004',
+    module: 'Answer Engineering',
+    section: 'The 60% Answer',
+    action: 'reframed',
+    original:
+      'a structured 60% answer scores higher than an unstructured 80% answer',
+    reframedTo:
+      'a well-structured partial answer collects every mark it earns — and can outscore a stronger but muddled one',
+    reason:
+      'The 60-vs-80 figures were invented; the dossier supports only the qualitative claim. Reframed.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'cite-digital-distraction-005',
+    module: 'Digital Distraction',
+    section: 'Blocking apps / calculator',
+    action: 'reframed',
+    original:
+      'Free apps like Cold Turkey or Freedom ... At 3 checks you\'re losing over an hour of focus time',
+    reframedTo:
+      'Apps like Cold Turkey (free tier) or Freedom, or built-in Screen Time/Focus mode ... conditional "on this model" register; removed the >1-hour impossibility',
+    reason:
+      'Freedom is a paid product; "over an hour lost in an hour" is impossible. Corrected free/paid distinction and put derived figures in conditional register.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'cite-mastering-spaced-repetition-006',
+    module: 'Mastering Spaced Repetition',
+    section: 'Anki tooltips + setup',
+    action: 'reframed',
+    original:
+      'Free apps like Anki ... Download Anki on your phone or computer',
+    reframedTo:
+      'Apps like Anki (free on computer and Android; the iPhone app is paid — AnkiWeb is free in a browser)',
+    reason:
+      'The official Anki iPhone app is paid; "free" was misleading for iPhone-only DEIS students. Corrected.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'cite-the-learning-radar-007',
+    module: 'The Learning Radar',
+    section: 'The Prediction Game',
+    action: 'reframed',
+    original:
+      'their predictions were about 50% more accurate',
+    reframedTo:
+      'they had got noticeably better at predicting their own performance',
+    reason:
+      'The "50% more accurate" figure is not verifiable (dossier LR-003). Reframed to qualitative.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'cite-the-power-of-praise-008',
+    module: 'The Power of Praise',
+    section: 'Error Signal Visualizer',
+    action: 'reframed',
+    original:
+      'growth-minded students improve after mistakes while fixed-minded students keep making the same ones',
+    reframedTo:
+      'students with a growth mindset tend to pay more attention to an error and improve on the next try',
+    reason:
+      'Deterministic overreach beyond what the Pe/mindset literature supports. Hedged to match the §3 prose.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'cite-linking-study-to-future-goals-009',
+    module: 'Linking Study to Future Goals',
+    section: 'Hacking the System (HEAR)',
+    action: 'reframed',
+    original:
+      'It can knock 30-50 points off the score you need',
+    reframedTo:
+      'It can reduce the points you need — the size varies by course and college, places are limited, and you still need the minimum entry requirements',
+    reason:
+      'The 30-50 point figure is not a fixed rule; HEAR reductions vary. Reframed accurately.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'cite-marking-scheme-decoder-010',
+    module: 'Marking Scheme Decoder',
+    section: 'Scheme Decoder extract',
+    action: 'reframed',
+    original:
+      '(9 marks — PCLM) / "Partial Credit Level Marks"',
+    reframedTo:
+      '(9 marks) with an own-words partial-credit note',
+    reason:
+      '"PCLM = Partial Credit Level Marks" is invented; in SEC usage PCLM is the English Purpose/Coherence/Language/Mechanics criteria. Removed the fabricated acronym.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'cite-mastering-english-011',
+    module: 'Mastering English',
+    section: 'Comparative modes + Single Text',
+    action: 'reframed',
+    original:
+      'For Higher Level 2026 ... "Theme or Issue" is NOT a mode ... Don\'t waste your time; For 2026 the Shakespeare play is Macbeth',
+    reframedTo:
+      'Check which modes/text are prescribed for your exam year (the SEC sets them per cohort); recent HL years used Cultural Context, GVV and Literary Genre, with Macbeth as the worked example',
+    reason:
+      'Hard-coded 2026 prescriptions are already stale for the 2027 cohort and told students not to prepare. Reframed to per-cohort, non-directive language.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'cite-applied-sciences-012',
+    module: 'Applied Sciences',
+    section: 'Folio testimonial',
+    action: 'reframed',
+    original:
+      'I got a B2',
+    reframedTo:
+      'It didn\'t go well',
+    reason:
+      '"B2" is the pre-2017 grading scale. Removed the anachronistic grade.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'cite-points-optimization-013',
+    module: 'Points Optimization',
+    section: 'H1 Rate Dashboard',
+    action: 'reframed',
+    original:
+      'Real H1 percentages from recent Leaving Cert results',
+    reframedTo:
+      'Indicative H1 rates (illustrative, not official SEC figures)',
+    reason:
+      'The figures are illustrative, not published SEC data; header now matches the footnote.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'cite-reframing-progress-014',
+    module: 'Reframing Progress',
+    section: '80/20 Protocol',
+    action: 'reframed',
+    original:
+      'In Biology, Ecology and Genetics are guaranteed long questions',
+    reframedTo:
+      '... have appeared as long questions in almost every recent paper (check the last five years yourself) ... no topic is ever guaranteed',
+    reason:
+      '"Guaranteed" is false — the SEC guarantees no topic. Reframed to frequency language.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'cite-mastering-the-creatives-015',
+    module: 'Mastering the Creatives',
+    section: 'Talent framing',
+    action: 'reframed',
+    original:
+      'Talent is a myth',
+    reframedTo:
+      'You don\'t need to be naturally gifted — the marking scheme rewards process',
+    reason:
+      '"Talent is a myth" stated as fact is overreach; reframed to a defensible, marking-scheme-anchored claim.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'cite-cognitive-endurance-016',
+    module: 'Cognitive Endurance',
+    section: 'Sports Drink Mouth Rinse (essentials)',
+    action: 'reframed',
+    original:
+      'Try the Sports Drink Mouth Rinse ... in the last hour',
+    reframedTo:
+      'Some athletes find the Sports Drink Mouth Rinse helps — you could try it',
+    reason:
+      'Carried the dossier CE-001 caveat into the essentials/junior branch (evidence for mental tasks is less settled).',
+    date: '2026-07-21',
+  },
+  {
+    id: 'cite-effective-struggle-and-growth-017',
+    module: 'Effective Struggle and Growth',
+    section: 'Recalibrate Your Dashboard (essentials)',
+    action: 'reframed',
+    original:
+      'If studying feels hard and frustrating, that means it is working ... Easy study is wasted study',
+    reframedTo:
+      'If it feels hard but you are still making progress, keep going ... if you are completely lost, step back and get a worked example or ask for help',
+    reason:
+      'Restored the ZPD/Frustration-Zone caveat in the essentials branch so "hard = working" isn\'t unconditional.',
+    date: '2026-07-21',
+  },
 ];
