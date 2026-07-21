@@ -13,7 +13,6 @@ _Draft for the NextStepUni iOS submission. Fill these into App Store Connect onc
 ## URLs
 - **Privacy Policy URL** (required): `https://nextstepuni-app.web.app/privacy.html`
   - Switch to `https://nextstepuni.com/privacy.html` once that domain is live.
-  - ⚠️ Requires a `firebase deploy --only hosting` first — the page exists in `dist/` but isn't on the live site yet.
 - **Support URL** (required): `https://nextstepuni-app.web.app/` (or a dedicated support/contact page)
 - **Marketing URL** (optional): `https://nextstepuni.com`
 
@@ -54,9 +53,9 @@ _Draft for the NextStepUni iOS submission. Fill these into App Store Connect onc
 ## Age rating questionnaire — recommended answers
 - Violence / sexual content / profanity / drugs etc.: **None**
 - **Unrestricted web access:** No
-- **User-Generated Content:** **Yes** — the app has peer features (teach-backs, kudos visible to classmates + the school counsellor).
-  - ⚠️ **App Review Guideline 1.2 (UGC) implications — verify before submitting:** Apple requires apps with UGC to have (a) a content filter, (b) a way to **report** objectionable content, (c) a way to **block** abusive users, and (d) a published contact. The app already filters profanity and exposes posts to the counsellor; confirm there is an in-app **report/block** affordance (or be ready to explain the closed, school-supervised nature of the audience in the review notes). This can otherwise trigger a rejection or a forced 17+ rating.
-- Likely resulting rating with proper moderation: **12+** (or 4+ if UGC controls satisfy the reviewer). Confirm via the questionnaire.
+- **User-Generated / peer content:** **Minimal and NOT free-text.** As of 2026-07 the teach-back and SOS-Flare features were removed. The only remaining peer interactions are: (a) **preset kudos** — students send classmates a message chosen from a fixed list (`kudosData.ts`), with **no free-text input**; and (b) a **limited public "island" projection** — first name, avatar, school, chosen goal *category*, and preset decorations/score. Students cannot post arbitrary text that other students see. Reflections and free-text module answers are **private** (visible only to the student and their school guidance counsellor — never to classmates).
+  - **App Review Guideline 1.2 (UGC):** Because there is no free-text peer content, the filter/report/block requirements are largely satisfied by design — preset messages cannot carry abuse, and there is nothing free-text to moderate. The audience is closed and school-supervised (a guidance counsellor oversees each student). Explain this in the review notes rather than claiming a report/block UI the app doesn't need.
+  - When Apple's age questionnaire asks about **communication / sharing user-generated content**, answer honestly: limited, preset, non-free-text peer interaction within a closed school group. Expected rating **4+ / 12+**.
 
 ## App Privacy ("nutrition label") — from compliance/DPIA.md
 Declare **Data Collected → Linked to the user → used for App Functionality** (NOT for Tracking). No data used for tracking; no third-party advertising SDKs.
@@ -65,7 +64,7 @@ Declare **Data Collected → Linked to the user → used for App Functionality**
 |---|---|---|---|
 | Name | Contact Info | Yes | App Functionality |
 | Email Address | Contact Info | Yes | App Functionality, Account |
-| User Content (reflections, free-text answers, teach-backs, kudos) | User Content | Yes | App Functionality |
+| User Content (reflections, free-text module answers) | User Content | Yes | App Functionality |
 | User ID (Firebase UID) | Identifiers | Yes | App Functionality |
 | Product Interaction (module progress, sessions, points) | Usage Data | Yes | App Functionality |
 | Other (school name, year group) | Other Data | Yes | App Functionality |
@@ -76,7 +75,7 @@ Declare **Data Collected → Linked to the user → used for App Functionality**
 
 ## Review notes (App Store Connect "Notes for Reviewer")
 Suggested text:
-> NextStepUni is an educational study app delivered through participating Irish secondary schools for Leaving Certificate students. Accounts are normally provisioned via the school with parental consent obtained at enrolment. For review, a demo account is provided below. The peer features are limited to students within the same school and are supervised by a school guidance counsellor; posted text is profanity-filtered.
+> NextStepUni is an educational study app delivered through participating Irish secondary schools for Leaving Certificate students. Accounts are normally provisioned via the school with parental consent obtained at enrolment. For review, a demo account is provided below. Peer interaction is limited to students within the same school and is supervised by a school guidance counsellor: students can send classmates preset "kudos" messages (chosen from a fixed list — there is no free-text peer posting) and see a limited public profile (first name, avatar, chosen goal category, decorations). A student's written reflections and answers are private to them and their counsellor.
 >
 > Demo login: **appreview@nextstepuni.app** / **NextStep-Demo-2026**
 > (Seeded demo student "Aoife Brennan" — 6th year, 5 subjects, 5 completed modules, populated progress. This is a demo-only account.)
@@ -86,4 +85,4 @@ Suggested text:
 - [x] iPhone 6.7" screenshots (1290×2796) captured — `~/Downloads/_cap/ns-shots2/`: `home`, `progress`, `modules-mind`, `launchpad`, `module-interior` (Training Hub). Fully populated via the seeded demo account.
 - [x] **Privacy Policy URL live** — https://nextstepuni-app.web.app/privacy.html (deployed)
 - [x] **Reviewer demo account created + seeded** — appreview@nextstepuni.app / NextStep-Demo-2026
-- [ ] Export-compliance answer (uses HTTPS only → standard exempt encryption)
+- [x] Export-compliance handled in Info.plist (`ITSAppUsesNonExemptEncryption=false`) — no per-upload question.
