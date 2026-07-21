@@ -156,6 +156,11 @@ export default defineConfig(() => {
         globIgnores: ['**/pdf.worker*.js', '**/vendor-pdfjs*.js'],
             maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
             navigateFallback: 'index.html',
+            // Legal pages are real static files (privacy.html / terms.html) emitted
+            // by legalStaticPages(). Keep them OUT of the SPA navigate-fallback so an
+            // installed PWA serves the actual page (not the app shell) — the public
+            // Privacy Policy URL Apple/users hit must resolve to the notice itself.
+            navigateFallbackDenylist: [/\/privacy(\.html)?$/, /\/terms(\.html)?$/],
             runtimeCaching: [
               // Paper Trail answer sidecars — small per-paper coordinate JSON on
               // Firebase Storage. SWR: serve cache instantly, refetch in the
