@@ -7,7 +7,7 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { MotionDiv } from './Motion';
 import {
   Rocket, ArrowRight, BarChart3, Compass,
-  User, Home, PanelLeft, Award, BookOpen, CalendarRange, Settings, LogOut, Sun, Moon, RefreshCw, Mountain, Timer, Dumbbell, Bell, MessageSquare, Scissors, HelpCircle, Search, Sparkles
+  User, Home, PanelLeft, Award, BookOpen, CalendarRange, Settings, LogOut, Sun, Moon, RefreshCw, Mountain, Timer, Dumbbell, Bell, MessageSquare, HelpCircle, Search, Sparkles
 } from 'lucide-react';
 import SiteGuide, { type GuideAction } from './SiteGuide';
 import FirstVisitCoachMarks, { coachMarksSeen } from './FirstVisitCoachMarks';
@@ -79,7 +79,7 @@ interface KnowledgeTreeProps {
 }
 
 
-export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: _onSelectCategory, onGoToModules, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, onGoToInsights: _onGoToInsights, onGoToTrainingHub, onGoToCutContent, onGoToAccreditation, onGoToYearPlans, allCourses, onSelectModule, categoryTitles: _categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes: _unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction, onOpenTool, uid }) => {
+export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: _onSelectCategory, onGoToModules, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, onGoToInsights: _onGoToInsights, onGoToTrainingHub, onGoToAccreditation, onGoToYearPlans, allCourses, onSelectModule, categoryTitles: _categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes: _unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction, onOpenTool, uid }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [feedbackQrOpen, setFeedbackQrOpen] = useState(false);
   // Site Guide (the "?") + one-time first-visit coach marks.
@@ -116,7 +116,6 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
     { icon: Home, label: 'Home', onClick: () => {}, active: true },
     { icon: Search, label: 'Jump to… (⌘K)', onClick: openCommandPalette, active: false },
     { icon: Dumbbell, label: 'Training Hub', onClick: onGoToTrainingHub ?? (() => {}), active: false },
-    { icon: Scissors, label: 'Cut Content', onClick: onGoToCutContent ?? (() => {}), active: false },
     { icon: BookOpen, label: 'References', onClick: onGoToAccreditation ?? (() => {}), active: false },
     { icon: Mountain, label: 'My Journey', onClick: onGoToJourney, active: false },
     { icon: Timer, label: 'Study Session', onClick: onGoToStudy ?? (() => {}), active: false },

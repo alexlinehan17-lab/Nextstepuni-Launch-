@@ -541,6 +541,16 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     }
     let categoryCourses = ALL_COURSES.filter(c => c.category === currentCategory);
 
+    // Curriculum gate: senior-only (LC) modules must never surface for a Junior
+    // Cycle user browsing a category. The JC click-interceptor in App.tsx only
+    // catches jcStatus: 'coming-soon', so senior-only tiles that lack that flag
+    // (e.g. agency-protocol) would otherwise open with LC-framed content in
+    // auto-essentials mode. Filtering here closes that leak for ALL senior
+    // modules at once. See docs/module-content-audit-2026-07-21.md.
+    if (user?.curriculumLevel === 'junior') {
+      categoryCourses = categoryCourses.filter(c => c.curriculum !== 'senior');
+    }
+
     // For subject-specific-science, only show modules relevant to the student's chosen subjects
     if (currentCategory === 'subject-specific-science' && studentProfile) {
       const relevantModuleIds = new Set(
