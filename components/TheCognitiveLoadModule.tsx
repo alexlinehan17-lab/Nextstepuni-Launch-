@@ -411,7 +411,7 @@ const TheCognitiveLoadModule: React.FC<{ onBack: () => void; progress: ModulePro
             <ReadingSection title="The Bottleneck." eyebrow="Step 1" icon={Cpu} theme={theme}>
               {essentials ? (
                 <>
-                  <p>Your brain can only juggle about <strong>4 items</strong> at once.<Cite n={2} /> When you go over that limit, information quietly drops out.<Cite n={3} /> You will not even notice it happening.</p>
+                  <p>Scientists once thought your brain could juggle about 7 things at once.<Cite n={1} /> The real number is smaller: about <strong>4 items</strong>.<Cite n={2} /> When you go over that limit, information quietly drops out.<Cite n={3} /> You will not even notice it happening.</p>
                   <p>This is why re-reading a dense paragraph three times still does not make sense. Your brain overflows each time. Break material into small chunks and test yourself after each one.</p>
                 </>
               ) : (

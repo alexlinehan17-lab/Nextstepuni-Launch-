@@ -58,3 +58,11 @@ established interleaving finding. Citations added only.
 
 ## Reframed / cut content
 None.
+
+## Citation-order audit (2026-07-21)
+A full-site sweep verified the invariant that inline citation numbers ascend by first
+appearance on every render path. This module violated it (§3 cited the
+desirable-difficulty claim before the discrimination claim, but the list numbered them
+the other way round). Fixed by swapping entries 3↔4 in `data/references/interleaving.ts`
+(now 1 rohrer2007 · 2 rohrer2015 · 3 sb2015 · 4 kornell2008) and renumbering the §3
+markers to match. Every claim→source pairing is unchanged; both paths now read 1,2,3,4.

@@ -10,10 +10,10 @@ import { REF } from './library';
 //
 // DOIs confirmed via CrossRef (see compliance/evidence/interleaving.md).
 // Ordered by first appearance — defines the inline <Cite/> numbering.
-//   1 rohrer2007 · 2 rohrer2015 · 3 kornell2008 · 4 sb2015
+//   1 rohrer2007 · 2 rohrer2015 · 3 sb2015 · 4 kornell2008
 export const INTERLEAVING_REFERENCE_LIST: Reference[] = [
   REF.rohrer2007,
   REF.rohrer2015,
-  REF.kornell2008,
   REF.sb2015,
+  REF.kornell2008,
 ];

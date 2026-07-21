@@ -228,13 +228,13 @@ const TheMyelinManualModule: React.FC<{ onBack: () => void; progress: ModuleProg
             <ReadingSection title="Deep Practice." eyebrow="Step 3" icon={SlidersHorizontal} theme={theme}>
               {essentials ? (
                 <>
-                  <p><strong>Deep practice</strong> is the effortful, focused kind that drives skill.<Cite n={4} /> It means doing past papers without notes, recalling from scratch, and pushing just outside your comfort zone.<Cite n={5} /> Easy practice barely registers with your brain.</p>
+                  <p><strong>Deep practice</strong> is the effortful, focused kind that drives skill.<Cite n={3} /> It means doing past papers without notes, recalling from scratch, and pushing just outside your comfort zone.<Cite n={4} /> Easy practice barely registers with your brain.</p>
                   <p>The discomfort you feel during hard practice is the signal. That is your brain building faster wiring.</p>
                 </>
               ) : (
                 <>
-                  <p>The type of practice that drives this change is what's often called <Highlight description="A way of practising where you really focus, push yourself to the edge of what you can do, make mistakes, fix them, and repeat. It's the effortful kind of practice that actually builds skill." theme={theme}>Deep Practice</Highlight> — a close cousin of "deliberate practice".<Cite n={4} /> It's the opposite of passively re-reading your notes. Easy practice feels productive, but it barely registers with your brain — it doesn't trigger the upgrade. It just gives you a false sense of confidence.</p>
-                  <p>Deep practice is hard, uncomfortable, and full of mistakes. It means doing past papers without your notes, forcing yourself to recall things from scratch, and pushing yourself just outside your comfort zone.<Cite n={5} /> That discomfort is a sign you're working at the right level — the effortful practice that drives your brain to strengthen and insulate the circuits that matter.</p>
+                  <p>The type of practice that drives this change is what's often called <Highlight description="A way of practising where you really focus, push yourself to the edge of what you can do, make mistakes, fix them, and repeat. It's the effortful kind of practice that actually builds skill." theme={theme}>Deep Practice</Highlight> — a close cousin of "deliberate practice".<Cite n={3} /> It's the opposite of passively re-reading your notes. Easy practice feels productive, but it barely registers with your brain — it doesn't trigger the upgrade. It just gives you a false sense of confidence.</p>
+                  <p>Deep practice is hard, uncomfortable, and full of mistakes. It means doing past papers without your notes, forcing yourself to recall things from scratch, and pushing yourself just outside your comfort zone.<Cite n={4} /> That discomfort is a sign you're working at the right level — the effortful practice that drives your brain to strengthen and insulate the circuits that matter.</p>
                 </>
               )}
               <DeepPracticeSorter />
@@ -247,7 +247,7 @@ const TheMyelinManualModule: React.FC<{ onBack: () => void; progress: ModuleProg
               ) : (
                 <>
                   <p>To really picture what's going on, here are a couple of ways to think about it.</p>
-                  <p>Imagine upgrading your home internet from dial-up to fibre <strong>broadband</strong>. Before the upgrade, your brain can only handle one simple idea at a time — it buffers and lags. After deep practice wraps your circuits in myelin, you can handle multiple ideas at once without slowing down. Or think of it as paving a <strong>dirt road into a motorway</strong>. The first time you learn something, it's slow and bumpy. With deep practice, you pave that road, and information starts flowing at speed, almost on autopilot.<Cite n={3} /></p>
+                  <p>Imagine upgrading your home internet from dial-up to fibre <strong>broadband</strong>. Before the upgrade, your brain can only handle one simple idea at a time — it buffers and lags. After deep practice wraps your circuits in myelin, you can handle multiple ideas at once without slowing down. Or think of it as paving a <strong>dirt road into a motorway</strong>. The first time you learn something, it's slow and bumpy. With deep practice, you pave that road, and information starts flowing at speed, almost on autopilot.<Cite n={5} /></p>
                 </>
               )}
               <MyelinWrapper/>
@@ -257,12 +257,12 @@ const TheMyelinManualModule: React.FC<{ onBack: () => void; progress: ModuleProg
             <ReadingSection title="The Rules of Myelination." eyebrow="Step 5" icon={Construction} theme={theme}>
               {essentials ? (
                 <>
-                  <p><strong>Struggle is not optional.</strong> Easy practice doesn't drive the change. You need the sweet spot where you make mistakes and fix them.<Cite n={5} /></p>
+                  <p><strong>Struggle is not optional.</strong> Easy practice doesn't drive the change. You need the sweet spot where you make mistakes and fix them.<Cite n={4} /></p>
                   <p><strong>It is durable but slow.</strong> Skills built through proper practice last far longer than crammed knowledge — but, like any brain change, they need topping up; stop practising entirely and they fade. Every session adds another layer.</p>
                 </>
               ) : (
                 <>
-                  <p>There are a few simple rules here that you can't skip. First, <strong>struggle is not optional</strong>. Easy practice doesn't drive the change. You need to be in the "sweet spot" where you're making mistakes and fixing them.<Cite n={5} /> That loop of getting it wrong and then getting it right is what builds skill.</p>
+                  <p>There are a few simple rules here that you can't skip. First, <strong>struggle is not optional</strong>. Easy practice doesn't drive the change. You need to be in the "sweet spot" where you're making mistakes and fixing them.<Cite n={4} /> That loop of getting it wrong and then getting it right is what builds skill.</p>
                   <p>Second, <strong>it's durable but slow</strong>. A skill built through proper practice lasts far longer than anything you cram the night before. You can't build a motorway overnight — every session of deep practice adds another thin layer. But, like the juggling study in the last module showed, brain changes aren't frozen forever: stop practising completely and they gradually fade, so keep topping skills up.</p>
                 </>
               )}

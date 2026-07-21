@@ -52,3 +52,12 @@ framework. One specific figure ("30–50% better") reframed; everything else ver
 | ID | Section | Original → Reframed | Reason |
 |----|---------|---------------------|--------|
 | CL-001 | § 3 | "performed 30 to 50% better" → "learned substantially better" | Split-attention effect is real (chandlersweller1992) but the specific 30–50% range is not a single verifiable figure. |
+
+## Citation-order audit (2026-07-21)
+A full-site sweep verified the invariant that inline citation numbers ascend by first
+appearance on every render path. The Essentials path violated it: the §1 simplified
+branch omitted the ~7-item historical estimate, so its first visible marker was ².
+Fixed by adding the miller1956-backed sentence ("Scientists once thought ~7… the real
+number is about 4") to the Essentials branch — the same two-claim structure the full
+path already carries (miller1956 for ~7, cowan2001 for ~4). No numbering changed; both
+paths now read 1,2,3… in order.

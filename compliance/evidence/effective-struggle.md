@@ -63,3 +63,12 @@ not claimed study data.
 | ID | Section | Original → Reframed | Reason |
 |----|---------|---------------------|--------|
 | ES-001 | § 1 (prose + "Great Deception" chart) | "predicted 90% … predicted 40%" → confidence stated qualitatively; chart shows only the verified 40% vs 61% one-week retention | The 40%/61% retention is RK2006's headline result (kept + cited); the precise prediction percentages are not what the study reported (predictions were ~half for both; the paper supports only that re-reading raised confidence). Fabricated predictions removed. |
+
+## Citation-order audit (2026-07-21)
+A full-site sweep verified the invariant that inline citation numbers ascend by first
+appearance on every render path. This module violated it (§2 cited the working-memory
+capacity claim before the load-types claim, but the list numbered them the other way
+round). Fixed by swapping entries 2↔3 in `data/references/effectiveStruggle.ts`
+(now 1 rk2006 · 2 cowan2001 · 3 sweller1998 · 4 sb2015 · 5 agarwal2014) and renumbering
+the §2 markers to match. Every claim→source pairing is unchanged; both the Essentials
+and full paths now read 1,2,3,4,5.

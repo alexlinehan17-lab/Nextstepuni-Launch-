@@ -55,3 +55,11 @@ are practical productivity tools, not empirical claims.
 None cut. Pareto (§2) and the Irish LC weightings (§3) are correctly treated as heuristic /
 administrative content outside the peer-reviewed scope (see reviewer note); no removals, so
 no `data/cutContent.ts` entry for this module.
+
+## Citation-order audit (2026-07-21)
+A full-site sweep verified the invariant that inline citation numbers ascend by first
+appearance on every render path. The Essentials path violated it: the §1 simplified
+branch omitted the Illusion-of-Competence claim, so its first visible marker was ².
+Fixed by restoring the koriat2005-backed claim (recognition-driven false confidence
+during re-reading — exactly what Koriat & Bjork 2005 demonstrates) with its ¹ marker to
+the Essentials branch. No numbering changed; both paths now read 1,2,3.

@@ -144,7 +144,7 @@ const SubjectModule: React.FC<SubjectModuleProps> = ({ subjectId, onBack, progre
                 )}
                 {section.commitmentText && (
                   <MicroCommitment theme={theme}>
-                    <p>{section.commitmentText}</p>
+                    <p>{renderParagraph(section.commitmentText, section.highlights, theme)}</p>
                   </MicroCommitment>
                 )}
               </ReadingSection>

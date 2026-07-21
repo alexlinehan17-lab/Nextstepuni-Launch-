@@ -58,3 +58,12 @@ module's use-it-or-lose-it juggling study).
 |----|---------|---------------------|--------|
 | MM-001 | § 2 | "struggle = your brain placing the order for myelin; no struggle, no upgrade" → effortful focused practice drives the change | Activity-dependent myelination is real (gibson2014, mckenzie2014), but the *feeling of struggle* as the literal myelin trigger is popularised overreach. |
 | MM-002 | § 5 | "permanent … sticks for good" → "durable but reversible if abandoned" | Contradicts use-it-or-lose-it (draganski2004 juggling study reversal); reframed for internal consistency. |
+
+## Citation-order audit (2026-07-21)
+A full-site sweep verified the invariant that inline citation numbers ascend by first
+appearance on every render path. This module violated it (scholz2009 was numbered 3 but
+first appears in §4, after ericsson1993 and sb2015 which appear in §3). Fixed by
+reordering `data/references/myelinManual.ts` to true first-appearance order
+(1 gibson2014 · 2 mckenzie2014 · 3 ericsson1993 · 4 sb2015 · 5 scholz2009) and remapping
+the module markers (ericsson 4→3, sb2015 5→4, scholz 3→5). Every claim→source pairing is
+unchanged; the full path now reads 1,2,3,4,5 and Essentials 1,2,3,4.
