@@ -115,7 +115,7 @@ const FOODS: FoodItem[] = [
   { id: 10, name: 'White bread with jam', category: 'High-GI', score: -1 },
   { id: 11, name: 'Energy drink', category: 'High-GI + Caffeine', score: -3 },
   { id: 12, name: 'Chocolate bar', category: 'High-GI', score: -2 },
-  { id: 13, name: 'Black coffee (moderate)', category: 'Caffeine', score: 1 },
+  { id: 13, name: 'Black coffee (moderate)', category: 'Caffeine', score: 0 },
   { id: 14, name: 'Glass of water', category: 'Hydration', score: 2 },
   { id: 15, name: 'Nothing (skip breakfast)', category: 'Empty', score: -4 },
 ];

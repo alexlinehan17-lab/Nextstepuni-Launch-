@@ -10,7 +10,7 @@ import {
 } from 'lucide-react';
 import { type ModuleProgress } from '../types';
 import { cyanTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, SupportSignpost } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { EMOTIONAL_INTELLIGENCE_REFERENCE_LIST } from '../data/references/emotionalIntelligence';
@@ -803,6 +803,7 @@ const EmotionalIntelligenceModule: React.FC<{ onBack: () => void; progress: Modu
                   </div>
                 </div>
               </div>
+              <SupportSignpost />
               <MicroCommitment theme={theme}><p>Pick one technique from this module. Commit to practising it for 5 minutes every day for one week. This isn't just studying -- you're building a skill that kicks in automatically when you need it most.</p></MicroCommitment>
             </ReadingSection>
           )}

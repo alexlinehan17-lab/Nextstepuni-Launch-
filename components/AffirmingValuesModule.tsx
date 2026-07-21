@@ -373,7 +373,7 @@ const AffirmingValuesModule: React.FC<{ onBack: () => void; progress: ModuleProg
             <ReadingSection title="The Invisible Threat." eyebrow="Step 1" icon={AlertTriangle} theme={theme}>
               {essentials ? (
                 <>
-                  <p>Here's the thing: in exams, your brain fights two battles. You fight the questions. You also fight a background voice saying "people like me don't get these results." That voice is called <Highlight description="That nagging background voice during an exam that says 'people like me don't get these results.' It's not just nerves — it actually takes up space in your brain, leaving less room for the actual questions." theme={theme}>Stereotype Threat</Highlight>.<Cite n={1} /></p>
+                  <p>Here's the thing: in exams, your brain can end up fighting two battles. You fight the questions. And many students also fight a background voice saying "people like me don't get these results." That voice is called <Highlight description="That nagging background voice during an exam that says 'people like me don't get these results.' It's not just nerves — it actually takes up space in your brain, leaving less room for the actual questions." theme={theme}>Stereotype Threat</Highlight>.<Cite n={1} /></p>
                   <p>It hijacks your working memory.<Cite n={2} /> You lose brainpower to anxiety. You know the material, but your brain can't access it properly. This costs you real marks.</p>
                 </>
               ) : (

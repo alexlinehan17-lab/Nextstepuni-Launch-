@@ -236,12 +236,12 @@ const getZone = (hoursAwake: number): { fill: string; bg: string; border: string
   if (hoursAwake < 12) return { fill: '#F26B1F', bg: '#FDEEDF', border: '#F26B1F', text: '#8C3A0E', label: 'Sharp', desc: 'Peak cognitive performance window', zoneIdx: 0 };
   if (hoursAwake < 15) return { fill: '#9e9186', bg: '#f4f0eb', border: '#d0cdc8', text: '#5a5550', label: 'Declining', desc: 'Focus and recall starting to dip', zoneIdx: 1 };
   if (hoursAwake < 17) return { fill: '#A8746E', bg: '#F1F0ED', border: '#A8746E', text: '#A8746E', label: 'Impaired', desc: 'Significant reduction in working memory', zoneIdx: 2 };
-  return { fill: '#b33030', bg: '#fde4e4', border: '#b33030', text: '#7a0000', label: 'Critical', desc: 'Equivalent to mild alcohol impairment', zoneIdx: 3 };
+  return { fill: '#b33030', bg: '#fde4e4', border: '#b33030', text: '#7a0000', label: 'Critical', desc: 'Reactions and focus seriously slowed', zoneIdx: 3 };
 };
 
 const getMilestone = (hoursAwake: number): string | null => {
-  if (hoursAwake >= 19) return 'Your impairment now rivals being over the drink-drive limit';
-  if (hoursAwake >= 17) return 'You are now as impaired as someone who has been drinking';
+  if (hoursAwake >= 19) return 'Your reaction time and focus are now seriously reduced';
+  if (hoursAwake >= 17) return 'Your concentration is now badly affected';
   if (hoursAwake >= 16) return 'Working memory is now clearly impaired';
   return null;
 };
@@ -449,7 +449,7 @@ const CognitiveImpairmentClock = () => {
               <span className="font-bold">{impairedTime}</span>.
             </p>
             <p className="text-sm font-bold mt-1" style={{ color: '#A8746E' }}>
-              Studying after {impairedTime} is like studying drunk.
+              Studying after {impairedTime} is like studying with the handbrake on — your brain can barely hold anything new.
             </p>
           </div>
 
@@ -553,7 +553,7 @@ const ControllableVariablesModule: React.FC<{ onBack: () => void; progress: Modu
             <ReadingSection title={essentials ? "Sleep & Nutrition." : "The Save Button: Sleep."} eyebrow="Step 2" icon={Moon} theme={theme}>
               {essentials ? (
                 <>
-                  <p>Sleep is your brain's save button.<Cite n={3} /> Without it, what you studied gets wiped. After a week of 5-hour nights, your working memory takes a real hit.<Cite n={4} /> After about 17 hours awake, you're as impaired as someone who's been drinking.<Cite n={5} /></p>
+                  <p>Sleep is your brain's save button.<Cite n={3} /> Without it, what you studied gets wiped. After a week of 5-hour nights, your working memory takes a real hit.<Cite n={4} /> After about 17 hours awake, your focus and reaction time drop sharply — your brain is working well below its best.<Cite n={5} /></p>
                   <CognitiveImpairmentClock />
                   <p>Your brain also needs steady fuel. High-<Highlight description="This is basically a measure of how fast a food hits your blood sugar. Sugary cereal and white bread spike it fast and then you crash. Porridge and brown bread release energy slowly and keep you steady." theme={theme}>GI</Highlight> food causes a spike-and-crash. Porridge keeps you steady for hours. Stay hydrated too — even mild dehydration can sap your concentration.</p>
                   <GlycemicIndexSimulator />

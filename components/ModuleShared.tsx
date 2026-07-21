@@ -6,7 +6,7 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import { Zap, Quote, Sparkles, ArrowRight } from 'lucide-react';
+import { Zap, Quote, Sparkles, ArrowRight, Heart } from 'lucide-react';
 import { type ModuleTheme } from '../types';
 import { useNavigation } from '../contexts/NavigationContext';
 import { useAuth } from '../contexts/AuthContext';
@@ -330,12 +330,22 @@ export const PersonalStory = ({ children, name, role, junior }: PersonalStoryPro
           <div className="w-9 h-9 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: 'rgba(var(--accent),0.1)' }}>
             <Quote size={14} style={{ color: 'var(--accent-hex)' }} />
           </div>
-          <div>
+          <div className="min-w-0">
             <span className="text-sm font-bold text-zinc-800 dark:text-zinc-200">{shownName}</span>
             {shownRole && (
               <span className="text-[10px] font-semibold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 ml-2">{shownRole}</span>
             )}
           </div>
+          {/* Honesty label: these voices are illustrative composites drawn from
+              common student experiences, not quotes from identifiable named
+              students. Rendered app-wide so no PersonalStory implies a real,
+              traceable individual. See docs/module-content-audit-2026-07-21.md. */}
+          <span
+            className="ml-auto shrink-0 text-[9px] font-semibold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 border border-zinc-200 dark:border-zinc-700 rounded-full px-2 py-0.5"
+            title="An illustrative example based on common student experiences — not a quote from a specific named student."
+          >
+            Illustrative
+          </span>
         </div>
         <div className="text-[15px] leading-[1.8] text-zinc-600 dark:text-zinc-400 italic font-serif">
           {shownChildren}
@@ -345,6 +355,40 @@ export const PersonalStory = ({ children, name, role, junior }: PersonalStoryPro
   </MotionDiv>
   );
 };
+
+/* ═══════════════════════════════════════════════════════
+   SupportSignpost — wellbeing safety net
+   Rendered in modules that touch exam stress, anxiety or crisis
+   (Catastrophic Thinking, Exam Crisis Management, Emotional
+   Intelligence…). These modules coach students through distressing
+   feelings, so they must always point to real human support for
+   anything bigger than exam nerves. Shown in BOTH essentials and
+   full render paths. See docs/module-content-audit-2026-07-21.md.
+   ═══════════════════════════════════════════════════════ */
+
+export const SupportSignpost = ({ children }: { children?: React.ReactNode }) => (
+  <div
+    className="my-8 rounded-2xl px-5 py-4 flex gap-3.5 items-start"
+    style={{ backgroundColor: '#E8F2EC', border: '1px solid rgba(58,141,95,0.3)' }}
+  >
+    <div className="w-8 h-8 rounded-full flex items-center justify-center shrink-0 mt-0.5" style={{ backgroundColor: 'rgba(58,141,95,0.15)' }}>
+      <Heart size={15} style={{ color: '#3A8D5F' }} />
+    </div>
+    <div className="text-[13.5px] leading-relaxed" style={{ color: '#1F5F3E' }}>
+      {children ?? (
+        <>
+          <span className="font-semibold">These tools are for exam nerves.</span>{' '}
+          If your worries feel bigger than exams, or they don&rsquo;t ease off, please talk to
+          someone you trust — a parent, a teacher, or your school&rsquo;s guidance counsellor.
+          You can also reach <span className="font-semibold">Jigsaw</span> (jigsaw.ie) or free-text{' '}
+          <span className="font-semibold">50808</span> any time, or call{' '}
+          <span className="font-semibold">Childline on 1800 66 66 66</span>. Reaching out is a strong move,
+          not a weak one.
+        </>
+      )}
+    </div>
+  </div>
+);
 
 /* ═══════════════════════════════════════════════════════
    DualChartComparison

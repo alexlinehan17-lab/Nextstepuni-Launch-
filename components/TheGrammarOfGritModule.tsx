@@ -100,7 +100,7 @@ const ThoughtReframer = () => {
         Thought Reframer
       </h4>
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-8">
-        Type a negative thought, then flip the 3 Ps to rewrite the script.
+        Type a negative thought about school or study, then flip the 3 Ps to rewrite the script.
       </p>
 
       {/* Input */}
@@ -113,6 +113,9 @@ const ThoughtReframer = () => {
           className="w-full bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none"
           style={{ border: '1.5px solid #E7E5E4' }}
         />
+        <p className="text-center text-[11px] text-zinc-400 dark:text-zinc-500 mt-2.5">
+          This is about school and study. If something feels bigger than that, talk to someone you trust.
+        </p>
       </div>
 
       {/* Toggles */}

@@ -11,7 +11,7 @@ import {
 } from 'lucide-react';
 import { type ModuleProgress } from '../types';
 import { slateTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, ConceptCardGrid } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, ConceptCardGrid, SupportSignpost } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { CATASTROPHIC_THINKING_REFERENCE_LIST } from '../data/references/catastrophicThinking';
@@ -333,7 +333,7 @@ const DownwardArrowDrill = () => {
                   }}
                 >
                   <p className="text-[11px] font-bold uppercase tracking-wider mb-2" style={{ color: isLocked ? '#b0a898' : '#F26B1F' }}>
-                    {index === 0 ? 'Your worst fear' : `Level ${index + 1}: And then what?`}
+                    {index === 0 ? 'The exam thought that scares you most' : `Level ${index + 1}: And then what?`}
                   </p>
 
                   {committed[index] ? (
@@ -508,6 +508,7 @@ const CatastrophicThinkingModule: React.FC<{ onBack: () => void; progress: Modul
           {(essentials ? activeSection === 3 : activeSection === 7) && (
             <ReadingSection title="The Action Plan." eyebrow={essentials ? "Step 4" : "Step 8"} icon={Flag} theme={theme}>
               <p>{essentials ? 'You now have tools to challenge thoughts (Thought Record) and step back from them (defusion). Pick one and use it once this week.' : 'You now have a proper toolkit for dealing with exam anxiety. You\'ve got ways to challenge your thoughts (CBT) and ways to step back from them (ACT), alongside the physical stuff (sleep, food, exercise) from other modules. Now it\'s about actually using them.'}</p>
+              <SupportSignpost />
               <MicroCommitment theme={theme}><p>Pick ONE tool from this module -- the Thought Record, Downward Arrow, or an Exposure task. Use it just once this week. That's it. The more you practise, the more automatic it becomes.</p></MicroCommitment>
             </ReadingSection>
           )}

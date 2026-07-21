@@ -9,7 +9,7 @@ import { MotionDiv } from './Motion';
 import { Cpu, Zap, Shield, Moon, Utensils, ClipboardList, Flag, Brain } from 'lucide-react';
 import { type ModuleProgress } from '../types';
 import { skyTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
+import { Highlight, ReadingSection, MicroCommitment, PersonalStory, SupportSignpost } from './ModuleShared';
 import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
 import { EXAM_CRISIS_MANAGEMENT_REFERENCE_LIST } from '../data/references/examCrisisManagement';
@@ -1050,13 +1050,14 @@ const ExamCrisisManagementModule: React.FC<{ onBack: () => void; progress: Modul
           {activeSection === 6 && (
             <ReadingSection title="The 7-Day Countdown." eyebrow="Step 7" icon={Flag} theme={theme}>
               {essentials ? (
-                <p>7 days out: cut caffeine. 5 days out: fix your sleep to exam times. 3 days out: switch to steady-energy food. Day before: stop heavy study by 6pm. You are getting your brain ready to perform, not cramming more in.</p>
+                <p>7 days out: ease off energy drinks and fizzy drinks. 5 days out: fix your sleep to exam times. 3 days out: switch to steady-energy food. Day before: stop heavy study by 6pm. You are getting your brain ready to perform, not cramming more in.</p>
               ) : (
                 <>
                   <p>This is where it all comes together. The final week before the exams is your countdown. Just like an athlete before a final, you ease off to let your body and mind recover and peak at the right moment. This is not the time for cramming.</p>
                   <p>Your 7-day countdown should include: <strong>Cut back on caffeine</strong> (7 days out), <strong>Fix your sleep schedule</strong> (5 days out -- start waking up at exam time), and <strong>Switch to steady-energy food</strong> (3 days out -- porridge, pasta, plenty of water). The day before the exam, stop all heavy study. You're not building knowledge any more; you're getting your brain ready to use what it already knows.</p>
                 </>
               )}
+              <SupportSignpost />
               <MicroCommitment theme={theme}>
                 <p>Take out your phone. Find the date one week before your first exam. Set a reminder called "Start 7-Day Countdown." That's it -- you've just taken the first step.</p>
               </MicroCommitment>
