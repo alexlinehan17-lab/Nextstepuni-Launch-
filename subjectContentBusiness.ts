@@ -27,15 +27,15 @@ export const BUSINESS_CONTENT: Record<string, SubjectModuleContent> = {
         eyebrow: '01 // Exam Structure',
         paragraphs: [
           'The Leaving Certificate Accounting Higher Level exam is a **single paper** lasting **3 hours** and worth a total of **400 marks**. That is your entire result decided in one sitting, so understanding exactly how the paper is laid out is non-negotiable. There are no coursework elements, no orals, and no practicals — just this one paper and the skill you bring into the exam hall.',
-          'The paper is split into [[three sections]]. **Section 1** contains short questions worth **120 marks** in total — you answer **four** out of six questions, each carrying 30 marks. These are designed to be completed relatively quickly and test breadth across the syllabus. **Section 2** has three compulsory long questions worth **60 marks each** (180 marks total). **Section 3** is one extended question worth **100 marks** — this is the big one, typically a full set of final accounts.',
-          'The time pressure in Accounting is real. With 3 hours and 400 marks, you have roughly **27 seconds per mark**. That means a 100-mark question deserves about 45 minutes. Students who do not plan their time carefully run out before they reach the high-value Section 3 question, and that is where the biggest single block of marks sits.',
+          'The paper is split into [[three sections]]. **Section 1 — Financial Accounting** is worth **120 marks**: you either answer the single **120-mark Q1** (a full set of final accounts — the sole trader, company, or manufacturing account) **or** answer **any two of Q2–Q4 at 60 marks each**. **Section 2 — Financial Accounting** is worth **200 marks**: you answer **two of Q5–Q7, each worth 100 marks** (areas like interpretation of accounts, cash flow or abridged accounts, or correction of errors and suspense). **Section 3 — Management Accounting** is worth **80 marks**: you answer **one of Q8–Q9** (budgeting, costing, or flexible budgets).',
+          'The time pressure in Accounting is real. With 3 hours and 400 marks, you have roughly **27 seconds per mark** (about 0.45 minutes). That means the 120-mark Q1 deserves around 54 minutes and a 100-mark Section 2 question about 45 minutes. Students who do not plan their time carefully run out before they finish the high-value Section 1 and Section 2 questions, and that is where the biggest blocks of marks sit.',
           'One thing that catches students off guard: [[presentation marks]] are awarded throughout the paper. The examiner is not just checking your figures — they are looking at whether your accounts are properly formatted, labelled, and laid out. Sloppy presentation loses marks even when your calculations are correct.',
         ],
         highlights: [
           {
             term: 'three sections',
             description:
-              'Section 1 (120 marks, 4 short Qs), Section 2 (180 marks, 3 compulsory long Qs), Section 3 (100 marks, 1 extended Q).',
+              'Section 1 — Financial Accounting (120 marks: Q1 alone, or any two of Q2–Q4 at 60 each), Section 2 — Financial Accounting (200 marks: two of Q5–Q7 at 100 each), Section 3 — Management Accounting (80 marks: one of Q8–Q9).',
           },
           {
             term: 'presentation marks',
@@ -72,21 +72,16 @@ export const BUSINESS_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'Where Your Marks Are',
         eyebrow: '03 // High-Value Zones',
         paragraphs: [
-          'The **Section 3 question** is worth **100 marks** — that is **25% of the entire paper** in a single question. It almost always involves preparing a full set of [[final accounts]]: a Trading, Profit and Loss Account and a Balance Sheet. Some years it focuses on a sole trader, other years on a company or a manufacturing account. This question is your biggest opportunity and your biggest risk.',
-          'In Section 2, the three compulsory questions (60 marks each) typically cover distinct areas. One usually involves **cash flow statements** or **club accounts**, another focuses on **published accounts** or **company accounts**, and the third often deals with **farm accounts**, **departmental accounts**, or **correction of errors and suspense**. Knowing this pattern helps you prioritise your revision.',
-          'Section 1 is your [[quick wins]] zone. Each of the four short questions you answer is worth 30 marks, and they tend to test isolated skills — bank reconciliations, depreciation calculations, simple ratio work, or VAT. These are marks you can secure quickly if you have drilled the fundamentals. Do not rush them, but recognise that they are designed to reward breadth of knowledge.',
-          'Here is the strategic point most students miss: **Section 1 and Section 3 together account for 220 of 400 marks** — over half the paper. If you nail the short questions and the final accounts, you are already well above the halfway line before Section 2 even comes into play.',
+          'The single biggest question on the paper is **Section 1 Q1**, worth **120 marks** — that is **30% of the entire paper** in one question. It almost always involves preparing a full set of [[final accounts]]: a Trading, Profit and Loss Account and a Balance Sheet, for a sole trader, a company, or a manufacturing business. This question is your biggest opportunity and your biggest risk. (If you prefer, you can instead answer any two of Q2–Q4 at 60 marks each — but Q1 is where most of the final-accounts practice pays off.)',
+          'Section 2 is where the second-largest block of marks lives — **200 marks**, from which you answer **two of Q5–Q7 at 100 marks each**. These questions typically cover distinct areas: **interpretation of accounts (ratios)**, **cash flow statements** or **abridged accounts**, and **correction of errors and suspense**. (Published accounts sits in Section 1 as Q2.) Knowing this pattern helps you prioritise your revision — securing two strong 100-mark answers here is half the paper on its own.',
+          'Section 3 is **Management Accounting**, worth **80 marks** — you answer **one of Q8–Q9**. This is where **budgeting** (production, purchases, cash, and budgeted trading & P&L), **costing**, **flexible budgets**, and break-even / marginal-costing analysis are tested. It is a smaller block than Sections 1 and 2, but a well-drilled student can bank it reliably because the question types are predictable.',
+          'Here is the strategic point most students miss: **Section 1 (120 marks) and Section 2 (200 marks) together account for 320 of 400 marks** — four-fifths of the paper. If you can produce a clean set of final accounts and two strong Section 2 answers, you are already deep into the paper before Section 3 even comes into play.',
         ],
         highlights: [
           {
             term: 'final accounts',
             description:
-              'A Trading, Profit and Loss Account plus Balance Sheet — the centrepiece of the Accounting exam, worth 100 marks in Section 3.',
-          },
-          {
-            term: 'quick wins',
-            description:
-              'Section 1 short questions (120 marks total) test discrete skills and can be completed relatively quickly with solid fundamentals.',
+              'A Trading, Profit and Loss Account plus Balance Sheet — the centrepiece of the Accounting exam, worth 120 marks as Section 1 Q1.',
           },
         ],
       },
@@ -95,7 +90,7 @@ export const BUSINESS_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'What Costs You Marks',
         eyebrow: '04 // Common Pitfalls',
         paragraphs: [
-          'The number one mark-killer in Accounting is **poor time management**. Students spend too long perfecting Section 2 and then have 20 minutes left for a 100-mark question. You must allocate time proportionally: roughly 25 minutes for Section 1, 75 minutes for Section 2 (25 each), and 45 minutes for Section 3, with a few minutes for review.',
+          'The number one mark-killer in Accounting is **poor time management**. Students spend too long perfecting one question and then run short on another. Allocate time in proportion to the marks — roughly **0.45 minutes per mark**: about **54 minutes for the 120-mark Section 1 Q1**, about **90 minutes for Section 2** (roughly 45 minutes for each 100-mark question), and about **36 minutes for the 80-mark Section 3**, with a few minutes left for review.',
           'The second biggest pitfall is [[missing presentation marks]]. Students who write their balance sheet as a running list, skip headings, or forget to double-underline totals throw away marks that require zero calculation skill. Presentation marks are essentially free if you practise proper layouts — but invisible if you do not know they exist.',
           'Many students also lose marks by **not showing workings**. If a question asks you to calculate gross profit and you just write a figure, the examiner can only mark it right or wrong. If you show "Sales minus Cost of Goods Sold = Gross Profit" and your COS is slightly off, you still earn method marks for the correct process.',
           'Finally, watch out for [[adjustment traps]]. In final accounts, adjustments like closing stock, depreciation, prepayments, and accruals are where the detail marks sit. Students who skip or mishandle adjustments lose marks across multiple lines of the account — one missed adjustment can cost you 8-12 marks because it affects several totals downstream.',
@@ -119,8 +114,8 @@ export const BUSINESS_CONTENT: Record<string, SubjectModuleContent> = {
         eyebrow: '05 // Study Techniques',
         paragraphs: [
           'Accounting is a **doing subject** — you cannot learn it by reading notes. The single most effective study method is [[active practice]]: sit down with a past paper question, cover up the solution, and work through it yourself. Time yourself. Check your answer against the marking scheme. Repeat. Students who do this regularly outperform those who just read over model answers every single time.',
-          'Build your revision around **question types, not chapters**. Create a rotation that cycles through final accounts, cash flow statements, club accounts, published accounts, farm accounts, and correction of errors. Do at least two full past-paper questions per week from November onward. By exam time, you want to have completed every Section 3 question from the last 8-10 years.',
-          'For Section 1, create a [[formula bank]] — a single A4 sheet with every formula you need: depreciation methods, ratios (current ratio, acid test, ROCE, gross profit percentage, net profit percentage), break-even calculations, and VAT rules. Test yourself on these weekly. Section 1 questions are predictable, and a student who knows every formula cold can pick up 120 marks with confidence.',
+          'Build your revision around **question types, not chapters**. Create a rotation that cycles through final accounts, interpretation of accounts (ratios), cash flow statements, published accounts, correction of errors, and the management-accounting topics (budgeting, costing, flexible budgets). Do at least two full past-paper questions per week from November onward. By exam time, you want to have completed every full-accounts Section 1 Q1 from the last 8-10 years.',
+          'Build a [[formula bank]] — a single A4 sheet with every formula you need: depreciation methods, ratios (current ratio, acid test, ROCE, gross profit percentage, net profit percentage), break-even and marginal-costing calculations, and VAT rules. Test yourself on these weekly. The ratio and management-accounting questions are predictable, and a student who knows every formula cold can pick up marks with confidence.',
           'One underrated technique: practise your **layouts from memory**. Draw out a blank Trading, Profit and Loss Account template and a Balance Sheet template until you can produce them with correct headings and structure without looking. On exam day, this automatic recall frees your brain to focus on the actual numbers and adjustments rather than stressing about format.',
         ],
         highlights: [
@@ -132,12 +127,12 @@ export const BUSINESS_CONTENT: Record<string, SubjectModuleContent> = {
           {
             term: 'formula bank',
             description:
-              'A single-page summary of every formula, ratio, and rule needed for Section 1 — tested weekly until automatic.',
+              'A single-page summary of every formula, ratio, and rule needed for ratios and management accounting — tested weekly until automatic.',
           },
         ],
         bullets: [
-          'Complete every Section 3 final accounts question from the last 8-10 years',
-          'Time yourself strictly: 45 minutes for 100-mark questions, 25 minutes for 60-mark questions',
+          'Complete every full-accounts Section 1 Q1 from the last 8-10 years',
+          'Time yourself strictly: about 54 minutes for the 120-mark Q1, 45 minutes for each 100-mark Section 2 question, 36 minutes for the 80-mark Section 3',
           'Practise account layouts from memory until headings and format are automatic',
           'Build and test your formula bank weekly — cover ratios, depreciation, break-even, and VAT',
           'Always show workings, even in practice — build the habit before the exam',
@@ -148,24 +143,24 @@ export const BUSINESS_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'Your Accounting Action Plan',
         eyebrow: '06 // Action Plan',
         paragraphs: [
-          'Here is your roadmap. **This week**, gather past papers from the last 10 years and the corresponding marking schemes from the SEC website. Organise them by question type: final accounts, cash flow, club accounts, published accounts, farm accounts, and correction of errors. This becomes your practice library.',
-          'Start with [[Section 3 mastery]]. Do one full final accounts question per week under timed conditions (45 minutes). After completing it, go through the marking scheme line by line and note every mark you missed. Focus on adjustments and presentation. Once you can consistently score 80+ out of 100, you have secured a quarter of the paper.',
-          'Simultaneously, drill Section 1 using your formula bank. Set a timer for 25 minutes and attempt four short questions. Your goal is to reach the point where Section 1 feels routine — these 120 marks should be your [[safe foundation]]. Combined with a strong Section 3, that puts you at 220 out of 400 before you even look at Section 2.',
+          'Here is your roadmap. **This week**, gather past papers from the last 10 years and the corresponding marking schemes from the SEC website. Organise them by question type: final accounts, interpretation of accounts, cash flow, published accounts, correction of errors, and management accounting (budgeting, costing, flexible budgets). This becomes your practice library.',
+          'Start with [[final accounts mastery]]. Do one full final accounts question (Section 1 Q1) per week under timed conditions (about 54 minutes). After completing it, go through the marking scheme line by line and note every mark you missed. Focus on adjustments and presentation. Once you can consistently score highly on the 120-mark Q1, you have secured nearly a third of the paper.',
+          'Simultaneously, drill your Section 2 answers (interpretation of accounts, cash flow, correction of errors) and your management-accounting questions using your formula bank. Two strong 100-mark Section 2 answers plus a clean Q1 are your [[safe foundation]] — that puts you at 320 out of 400 before you even look at Section 3.',
         ],
         highlights: [
           {
-            term: 'Section 3 mastery',
+            term: 'final accounts mastery',
             description:
-              'The ability to complete a full set of final accounts with correct layout and adjustments in 45 minutes — worth 100 marks (25% of the paper).',
+              'The ability to complete a full set of final accounts with correct layout and adjustments in about 54 minutes — worth 120 marks (30% of the paper) as Section 1 Q1.',
           },
           {
             term: 'safe foundation',
             description:
-              'Section 1 (120 marks) plus Section 3 (100 marks) = 220 marks secured before tackling Section 2.',
+              'Section 1 (120 marks) plus Section 2 (200 marks) = 320 marks in play before tackling Section 3.',
           },
         ],
         commitmentText:
-          'I will complete one full Section 3 past paper question under timed conditions this week and mark it against the SEC marking scheme.',
+          'I will complete one full final accounts question (Section 1 Q1) under timed conditions this week and mark it against the SEC marking scheme.',
       },
     ],
   },
@@ -344,7 +339,7 @@ export const BUSINESS_CONTENT: Record<string, SubjectModuleContent> = {
     moduleTitle: 'Mastering Economics',
     moduleSubtitle: 'Your Complete Economics Exam Guide',
     moduleDescription:
-      'Decode the Economics exam — understand how Section A and B work, where the easy marks are, and how to write answers that hit every marking point.',
+      'Decode the Economics exam — understand how the written paper and the Student Research Project work, how Section A and B are marked, and how to write answers that hit every marking point.',
     themeName: 'teal',
     finishButtonText: 'Cash In',
     sections: [
@@ -353,16 +348,16 @@ export const BUSINESS_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'How Economics Actually Works',
         eyebrow: '01 // Exam Structure',
         paragraphs: [
-          'The Leaving Certificate Economics Higher Level exam is a **single paper** lasting **2 hours and 30 minutes**, worth a total of **400 marks**. It is divided into [[two sections]], and the balance between them is something every student needs to understand from day one.',
-          '**Section A** contains short questions worth **100 marks (25%)**. You answer **5 out of 9** questions, each worth **20 marks**. These are relatively concise — definitions, brief calculations, short explanations, or labelling a diagram. Section A is designed to test breadth across both microeconomics and macroeconomics, and it should take about 30-35 minutes.',
-          '**Section B** is where your grade is really decided. It contains long questions worth **300 marks (75%)**. You choose **4 from 7** questions, each worth **75 marks**. These are multi-part essay-style questions that demand definitions, explanations, analysis, and often [[diagrams]]. Each question typically has 3-4 sub-parts that build in complexity.',
-          'The time constraint is tighter than many students expect. With 150 minutes for 400 marks, you have about **22 seconds per mark**. After spending 30-35 minutes on Section A, you have roughly **28-30 minutes per long question**. Going over time on one question directly cannibalises another, so disciplined pacing is essential.',
+          'Leaving Certificate Economics has **two assessment components**: a **written examination worth 80%** of your grade and a **Student Research Project (SRP) worth 20%**. Many students forget the SRP entirely and treat the subject as one exam — but a fifth of your result is decided before you ever sit the paper, so both components need a plan from day one.',
+          'The written paper lasts **two and a half hours** and is divided into [[two sections]] — Section A (short-answer questions) and Section B (extended-response questions). Understanding how each is marked, and how the SRP is graded, is the first step toward a top grade.',
+          '**Section A** is worth **75 marks**. It is a set of short questions built around stimulus material — a news extract, a CSO table, a chart, or a diagram — followed by short parts that test definitions, brief calculations, short explanations, or reading a diagram. Some questions offer an internal choice (e.g. "answer either (b) or (c)"). Section A is designed to test breadth across the five strands of the specification.',
+          '**Section B** is the extended-response section — six themed long questions (**Q11–Q16**), each threading a real-world stimulus (CSO data, news headlines) through several parts. These parts mix developed-point answers, calculations, and [[diagrams]], and build in complexity. This is where most of the written-paper marks sit, so disciplined pacing across the two and a half hours is essential.',
         ],
         highlights: [
           {
             term: 'two sections',
             description:
-              'Section A (100 marks, 5 from 9 short Qs) and Section B (300 marks, 4 from 7 long Qs worth 75 marks each).',
+              'Section A (75 marks, stimulus-based short questions across the five strands) and Section B (six themed extended-response long questions, Q11–Q16). The written paper is 80% of the grade; the Student Research Project is the other 20%.',
           },
           {
             term: 'diagrams',
@@ -399,10 +394,10 @@ export const BUSINESS_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'Where Your Marks Are',
         eyebrow: '03 // High-Value Zones',
         paragraphs: [
-          'Section B dominates — it is worth **300 of 400 marks (75%)**. Each of the four long questions you answer is worth **75 marks**, meaning each one represents nearly **19% of your total result**. Performing well on just one extra long question can jump you an entire grade. This is where your revision energy should be concentrated.',
+          'Section B — the six themed long questions (Q11–Q16) — is where most of the written-paper marks are decided. These extended-response questions carry far more marks than the short Section A questions, so performing well across your Section B answers is what jumps you a grade. This is where the bulk of your revision energy should be concentrated.',
           'Within Section B, certain topic areas appear with [[predictable regularity]]. On the micro side: demand and supply, elasticity, market structures (perfect competition, monopoly, imperfect competition), costs and revenue curves, and factors of production are staples. On the macro side: national income, fiscal and monetary policy, inflation, unemployment, international trade and the balance of payments, and economic growth are near-guaranteed appearances.',
-          'Section A is your [[efficiency zone]]. With 5 questions at 20 marks each, these are designed to be answered quickly. They often involve labelling diagrams, writing short definitions, performing simple calculations (like elasticity or national income components), or explaining a concept in a few lines. A well-prepared student can secure 80-90 of these 100 marks in under 30 minutes.',
-          'Here is the strategic insight: **if you score 90 in Section A and average 60 out of 75 on your four long questions, that gives you 330 out of 400 — a comfortable H1.** The path to a top grade is not about knowing everything; it is about being excellent at the high-frequency topics and disciplined on time.',
+          'Section A (**75 marks**) is your [[efficiency zone]]. Its stimulus-based short questions are designed to be answered quickly — reading a chart or diagram, writing short definitions, performing simple calculations (like a savings rate or an export percentage), or explaining a concept in a few lines. A well-prepared student can bank a strong share of these 75 marks efficiently and save time for the higher-value Section B questions.',
+          'Here is the strategic insight: because the written paper is **80% of your grade** and the Student Research Project is the other **20%**, the top grades come from being strong on **both** components — excellent on the high-frequency Section B topics, efficient in Section A, and deliberate about the SRP rather than treating it as an afterthought. The path to a top grade is not about knowing everything; it is about depth on the topics that recur and discipline across both components.',
         ],
         highlights: [
           {
@@ -413,7 +408,7 @@ export const BUSINESS_CONTENT: Record<string, SubjectModuleContent> = {
           {
             term: 'efficiency zone',
             description:
-              'Section A (100 marks) — quick questions where a well-prepared student can bank marks fast and save time for the higher-value Section B.',
+              'Section A (75 marks) — stimulus-based short questions where a well-prepared student can bank marks fast and save time for the higher-value Section B.',
           },
         ],
       },
@@ -422,16 +417,16 @@ export const BUSINESS_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'What Costs You Marks',
         eyebrow: '04 // Common Pitfalls',
         paragraphs: [
-          'The most damaging mistake in Economics is [[skipping diagrams]]. Students who write excellent prose but omit the diagram are leaving marks on the table. Many long-question sub-parts allocate 10-15 marks specifically for a correctly drawn and labelled diagram. You cannot talk your way into those marks — you must draw the diagram. Supply and demand, cost curves, market structure diagrams, and the Keynesian Cross are all commonly required.',
+          'The most damaging mistake in Economics is [[skipping diagrams]] — and, just as costly, drawing them **unlabelled**. Diagrams are not decoration: they are broken into named, itemised marks, and the labels and axes are separately marked. On the 2025 paper a full supply-and-demand graph was worth 17 marks (2 for the axes, 6 for each curve, plus the equilibrium point and price/quantity labels); a monopoly long-run-equilibrium diagram was worth 12 marks; a minimum-wage labour-market diagram 6 marks. Cues like "Label your diagram fully" and "Do not use abbreviations" are enforced mark-by-mark — writing "MC" where "Marginal cost" is demanded scores nothing for that item. You cannot talk your way into these marks — you must draw and fully label the diagram. Supply and demand, cost curves, market-structure diagrams (including the kinked-demand curve), and the LRAC construction are all commonly required.',
           'The second big pitfall is **vague definitions**. Economics is a precision subject. Defining inflation as "prices going up" earns maybe 2 out of 5 marks. Defining it as "a persistent and sustained increase in the general price level of goods and services in an economy over time" earns full marks. The difference is knowing the key qualifiers — persistent, sustained, general price level — that the marking scheme looks for.',
           'Many students also fall into the [[one-sided analysis]] trap. When a question asks you to "evaluate" or "discuss" a policy, it expects you to consider both sides. Students who write passionately about why minimum wage increases are great without mentioning potential unemployment effects or business cost impacts are not answering the question fully. Always address advantages and disadvantages when the action word demands it.',
-          'Time pressure causes the fourth major issue. With only about 28 minutes per long question, students who write extended answers on their favourite topics run out of time on later questions. An unfinished question is devastating — even a brief, structured answer to every part scores far higher than a perfect answer to three parts and a blank fourth question.',
+          'Time pressure causes the fourth major issue. With only two and a half hours for the whole paper, students who write extended answers on their favourite topics run out of time on later questions. An unfinished question is devastating — even a brief, structured answer to every part scores far higher than a perfect answer to some parts and a blank on the rest. Remember, too, that over-supplying points earns nothing: a part marked "two factors" counts only the first two, so a third point wastes time it can never buy back.',
         ],
         highlights: [
           {
             term: 'skipping diagrams',
             description:
-              'The most common high-cost mistake — diagrams carry their own marks (often 10-15 per question) and cannot be replaced by written explanation.',
+              'The most common high-cost mistake — diagrams carry their own itemised marks (e.g. 17 for a full supply-and-demand graph, 12 for a monopoly diagram in 2025), with labels and axes separately marked, and cannot be replaced by written explanation.',
           },
           {
             term: 'one-sided analysis',
@@ -446,8 +441,8 @@ export const BUSINESS_CONTENT: Record<string, SubjectModuleContent> = {
         eyebrow: '05 // Study Techniques',
         paragraphs: [
           'Economics rewards a structured approach. Start by building a [[definition bank]] — a comprehensive list of every key economic term with its full, precise definition. There are roughly 80-100 core definitions across the syllabus. Test yourself on these regularly using flashcards or active recall. Getting definitions right is the easiest way to pick up marks across both sections.',
-          'Next, master your [[diagram library]]. You need to be able to draw, from memory, approximately 15-20 key diagrams: basic supply and demand, shifts in supply and demand, price ceiling and floor, individual firm under perfect competition (short-run and long-run), monopoly profit maximisation, kinked demand curve, cost curves (MC, AC, AVC), the circular flow of income, and the Keynesian Cross. Practise each one until you can draw it quickly with correct labels.',
-          'For Section B preparation, use **past papers aggressively**. Work through every question from the last 10 years by topic. You will notice that question structures repeat — the way elasticity is examined, the way market structures are tested, the way fiscal policy is asked about all follow recognisable patterns. Familiarity with these patterns lets you plan your answer instantly in the exam.',
+          'Next, master your [[diagram library]]. You need to be able to draw, from memory, the key diagrams the paper keeps returning to: basic supply and demand and shifts in supply and demand, individual firm under perfect competition (short-run and long-run), monopoly profit maximisation, the minimum-wage / price-control labour-market diagram, the kinked-demand curve, cost curves (MC, AC, AVC), and the long-run average cost (LRAC) construction. Practise each one until you can draw it quickly with **every curve, axis, and equilibrium point fully labelled** — because the labels are separately marked.',
+          'For Section B preparation, use **past papers aggressively** — but note the syllabus change. The current Economics specification (with its 80% written paper plus 20% Student Research Project) has been examined only from **2021 onward**, so work through the papers from **2021 to the present** by topic. Papers from before 2021 sit under the old syllabus with a different paper structure, so they are not a reliable guide to the current exam. Across the current papers you will notice question structures repeat — the way elasticity is examined, the way market structures are tested, the way fiscal policy is asked about all follow recognisable patterns.',
           'Finally, keep a **current affairs file** with 2-3 real-world examples per major topic. For inflation: recent ECB interest rate decisions and Irish CPI trends. For unemployment: Irish labour market data and government policy responses. For international trade: Brexit effects on Irish exports, EU single market developments. These examples add depth and demonstrate genuine understanding.',
         ],
         highlights: [
@@ -463,11 +458,12 @@ export const BUSINESS_CONTENT: Record<string, SubjectModuleContent> = {
           },
         ],
         bullets: [
-          'Build a definition bank of 80-100 key terms and test yourself weekly using active recall',
-          'Practise drawing all 15-20 core diagrams from memory with correct labels and annotations',
-          'Work through every Section B question from the last 10 years, organised by topic',
+          'Build a definition bank of key terms and test yourself weekly using active recall',
+          'Practise drawing the core diagrams from memory with every curve, axis, and label complete',
+          'Work through every Section B question from 2021 onward (the current specification), organised by topic',
           'Collect 2-3 real-world examples per major topic for current affairs application',
-          'Time yourself strictly: 30-35 minutes for Section A, 28-30 minutes per Section B question',
+          'Do not forget the Student Research Project — it is 20% of your grade and marked on analysis and evaluation supported by data',
+          'Time yourself against the full two-and-a-half-hour paper, in proportion to each part’s marks',
         ],
       },
       // ── Section 6: Your Economics Action Plan ──────────────────────
@@ -475,15 +471,15 @@ export const BUSINESS_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'Your Economics Action Plan',
         eyebrow: '06 // Action Plan',
         paragraphs: [
-          'Begin this week by downloading the last 10 years of Economics HL papers and marking schemes. Create a [[topic frequency table]] — list every Section B topic and tally how often it appears. This reveals your must-know areas and lets you allocate study time intelligently. You will find that about 8-10 core topics cover the vast majority of questions.',
-          'Over the next fortnight, start two parallel tracks. Track one: build your definition bank and diagram library, spending 20 minutes per day on active recall. Track two: begin working through past Section B questions by topic, starting with the highest-frequency areas — supply and demand, market structures, and fiscal/monetary policy.',
-          'Set a weekly target of completing **two full long questions under timed conditions** (28 minutes each) and marking them against the SEC scheme. For each question, ask yourself: did I include a diagram? Were my definitions precise? Did I trace through the [[economic logic]] step by step? These three checkpoints alone will drive consistent improvement.',
+          'Begin this week by downloading the Economics HL papers and marking schemes **from 2021 onward** — the years examined under the current specification. (Older papers use a different paper structure, so building a frequency table from them would mislead your priorities.) Create a [[topic frequency table]] — list every Section B topic and tally how often it appears across the current papers. This reveals your must-know areas and lets you allocate study time intelligently.',
+          'Over the next fortnight, start two parallel tracks. Track one: build your definition bank and diagram library, spending 20 minutes per day on active recall. Track two: begin working through past Section B questions by topic, starting with the highest-frequency areas — supply and demand, market structures, and fiscal/monetary policy. And set aside dedicated time for the **Student Research Project** — worth 20% of your grade — planning your line of inquiry and data sources early rather than leaving it to the end.',
+          'Set a weekly target of completing **two full long questions under timed conditions** — pacing yourself in proportion to each part’s marks — and marking them against the SEC scheme. For each question, ask yourself: did I include a fully labelled diagram? Were my definitions precise, using the key phrases the scheme looks for? Did I trace through the [[economic logic]] step by step? These three checkpoints alone will drive consistent improvement.',
         ],
         highlights: [
           {
             term: 'topic frequency table',
             description:
-              'A tally of Section B topics from the last 10 years — reveals the 8-10 core areas that appear almost every year.',
+              'A tally of Section B topics across the current-specification papers (2021 onward) — reveals the core areas that recur and where to focus revision.',
           },
           {
             term: 'economic logic',

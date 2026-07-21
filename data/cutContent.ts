@@ -822,4 +822,654 @@ export const CUT_CONTENT: CutContentEntry[] = [
       'Second-year verification (2024): the Overall-Quality band edges are year-specific (2024 = 1–10/11–15/16–20 vs 2025 = 1–12/13–17/18–20), and the "57" ceiling is the 2025 value (2024 = 55). Removed the year-specific numbers from the student-facing scale while keeping the stable structure and the confirmed "relies mostly on narrative" descriptor.',
     date: '2026-07-06',
   },
+  {
+    id: 'subject-english-001',
+    module: 'Mastering English',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'Section I has two comprehension texts (Question A, worth 50 marks each — you do both)',
+    reframedTo:
+      'Section I — Comprehending (100 marks), which presents three texts on a shared theme — you answer a Question A (50 marks, comprehension) on one text and a Question B (50 marks, a functional writing task) on a different text (you may not answer both on the same text)',
+    reason:
+      'Paper 1 Section I is Question A on one text + Question B on a different text, not two Question A\'s. Confirmed examiner-reports/english/2025-marking-scheme.md lines 143-144. The old text omitted Question B (a 50-mark / 12.5% functional-writing task).',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-english-002',
+    module: 'Mastering English',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'and [[Unseen Poetry]] (a poem you have never seen before, followed by a comparison with a second poem — 70 marks). [Highlight: \'a guided question on it (20 marks), then get a second poem and compare both (30 marks for the comparison, 20 marks for the second poem individually). Total: 70 marks.\']',
+    reframedTo:
+      'and [[Poetry]] (70 marks total, in two parts: an Unseen Poem — 20 marks — and Prescribed Poetry, an essay on one of your studied poets — 50 marks). [Highlight rewritten to Unseen 20 + Prescribed 50.]',
+    reason:
+      'The 70-mark two-poem unseen comparison does not exist. The real Paper 2 Section III is Unseen Poem 20 + Prescribed Poetry 50. Confirmed examiner-reports/english/2024-marking-scheme.md lines 1801-1857. Prescribed Poetry (50 marks, the studied poets) had been omitted entirely.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-english-003',
+    module: 'Mastering English',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'Each criterion carries roughly equal weight, and together they define the difference between an H5 and an H1.',
+    reframedTo:
+      'The published split is Purpose 30%, Coherence 30%, Language 30%, Mechanics 10% — so the first three criteria dominate, and Purpose has primacy (the marks for Coherence or Language can never exceed the marks awarded for Purpose).',
+    reason:
+      'PCLM is not equally weighted: Mechanics is 10%. Confirmed examiner-reports/english/2025-marking-scheme.md lines 66-69 and the Purpose-primacy rule at lines 85-86.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-irish-001',
+    module: 'Mastering Irish',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'the [[Scrúdú Béil (Oral Exam)]] worth 240 marks (40%), Paper 1 worth 120 marks (20%), Paper 2 worth 160 marks (approximately 27%), and the [[Scrúdú Cluastuisceana (Aural Exam)]] worth 80 marks (approximately 13%). At Ordinary Level, the oral is worth 240 marks out of 500, making it an even larger proportion — 48%.',
+    reframedTo:
+      'the [[Scrúdú Béil (Oral Exam)]] worth 240 marks (40%), Paper 1 worth 160 marks (approximately 27%), and Paper 2 worth 200 marks (approximately 33%). Paper 1 contains the [[Scrúdú Cluastuisceana (Aural Exam)]], An Chluastuiscint, worth 60 marks (10% of your grade), alongside the composition. The oral is a common paper at both levels — 240 marks out of 600, 40%.',
+    reason:
+      'SEC HL breakdown is Oral 240 / Paper 1 160 (Cluastuiscint 60 + Ceapadóireacht 100) / Paper 2 200; total 600. Confirmed examiner-reports/irish/2026-assessment-arrangements-oral.md pp.39-40. The old 120/160/80 split and the OL 240/500=48% claim were wrong.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-irish-002',
+    module: 'Mastering Irish',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'The essay is typically worth 50 marks or more.',
+    reframedTo:
+      'worth 100 marks at Higher Level. You choose one piece from a range of formats (essay, story, debate/speech, or discussion), so you can play to your strengths.',
+    reason:
+      'The HL Ceapadóireacht is 100 marks, not \'50 or more\'. Confirmed examiner-reports/irish/2026-assessment-arrangements-oral.md (\'An Cheapadóireacht (100 marc)\') and 2025-insights.md line 29.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-irish-003',
+    module: 'Mastering Irish',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'It runs for 2 hours 50 minutes. ... It runs for 3 hours 20 minutes.',
+    reframedTo:
+      '[duration specifics removed; papers described by component instead]',
+    reason:
+      'These were the English Paper 1/2 durations copy-carried into Irish. No Irish paper duration is confirmable from examiner-reports or subjectTiming.ts (which gives Irish P2=165min, conflicting with the audit\'s 3h05, and no P1 figure) — so the unverified specifics were dropped per the HARD RULE rather than replaced with a guess.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-french-001',
+    module: 'Mastering French',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'the [[Aural Exam (Listening)]] worth 100 marks (25%), and the [[Written Exam]] worth 200 marks (50%) ... the oral and aural together account for 50% of your total. ... The written exam is a 2 hour 50 minute paper worth 200 marks ... reading and writing sections are each worth approximately 100 marks.',
+    reframedTo:
+      'the [[Aural Exam (Listening)]] worth 80 marks (20%), and the [[Written Exam]] worth 220 marks (55%) ... oral and aural together account for 45%. ... a 2 hour 30 minute paper worth 220 marks ... Reading Comprehension (120 marks) and Written Expression (100 marks).',
+    reason:
+      'The 25/25/50 split is the OL allocation; HL is Oral 25 / Aural 20 / Reading 30 / Writing 25. Confirmed examiner-reports/french/2025-marking-scheme.md (Section A 120, Section B 100, Listening 80) + lc-french-syllabus.md HL table. Duration 150 min per subjectTiming.ts \'mfl\'.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-german-001',
+    module: 'Mastering German',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      '[[Aural Exam]] worth 100 marks (25%), and the [[Written Exam]] worth 200 marks (50%) ... determine half your grade ... written paper runs for 2 hours 50 minutes ... Reading Comprehension (approximately 100 marks) and Written Production (approximately 100 marks).',
+    reframedTo:
+      '[[Aural Exam]] worth 80 marks (20%), and the [[Written Exam]] worth 220 marks (55%) ... determine 45% of your grade ... 2 hours 30 minutes ... Reading Comprehension (120 marks) and Written Production (100 marks).',
+    reason:
+      'HL split is Oral 25 / Aural 20 / Reading 30 / Writing 25. Confirmed examiner-reports/german/2025-marking-scheme.md line 922 (Listening 80) + german-syllabus.md lines 800-805. Duration 150 min per subjectTiming.ts.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-german-002',
+    module: 'Mastering German',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'Students who invest in oral preparation often score 15 to 20 marks higher than their written paper performance would predict.',
+    reframedTo:
+      'Because so much of the oral is within your control, students who invest in it reliably outperform what their written paper alone would predict.',
+    reason:
+      'Uncited invented statistic; no SEC or peer-reviewed source. Reframed qualitatively per the accreditation cut-log rule.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-spanish-001',
+    module: 'Mastering Spanish',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'the [[Aural Exam]] is worth 100 marks (25%), and the [[Written Exam]] is worth 200 marks (50%) ... 50% of your grade is determined by your speaking and listening ... covering: your prepared topic (tema preparado) ... and discussion of visual or situational stimuli. ... 2 hours 50 minutes ... Reading Comprehension (approximately 100 marks) and Written Expression (approximately 100 marks).',
+    reframedTo:
+      'the [[Aural Exam]] is worth 80 marks (20%), and the [[Written Exam]] is worth 220 marks (55%) ... 45% ... (a) a general conversation (optional literary-work discussion) and (b) a role-play situation, 15 minutes ... 2 hours 30 minutes ... three sections; reading ~120 + written production ~100 incl. the 50-mark Linked Question.',
+    reason:
+      'Marks corrected against examiner-reports/spanish/2025-insights.md (aural 80, written 220, Sections A/B/C, 50-mark Linked Question). The \'tema preparado\' component does not exist — the LC Spanish oral is general conversation + role-play (spanish-syllabus.md \'Oral Assessment\'). Duration 150 min per subjectTiming.ts.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-italian-001',
+    module: 'Mastering Italian',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      '[[Aural Exam]] worth 100 marks (25%), and the [[Written Exam]] worth 200 marks (50%). The structure is identical to French, German, and Spanish ... 2 hours 50 minutes ... Reading Comprehension (approximately 100 marks) and Written Production (approximately 100 marks).',
+    reframedTo:
+      '[[Aural Exam]] worth 80 marks (20%), and the [[Written Exam]] worth 220 marks (55%). Italian shares the same broad shape ... but has a distinctive prescribed-literature strand ... 2 hours 30 minutes ... Reading Comprehension (120 marks: Section A journalistic 60 + Section B literary 60) and Written Production (Section C, 100 marks).',
+    reason:
+      'Marks corrected against examiner-reports/italian/2025-marking-scheme.md lines 142-150 (Listening 80/Reading 120/Writing 100) + italian-syllabus.md HL table. The \'identical structure\' claim is refuted by the prescribed-literature strand (2025-insights.md lines 100-104), now added. Duration 150 min per subjectTiming.ts.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-japanese-001',
+    module: 'Mastering Japanese',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'follows the same three-component structure as the European languages ... The [[Oral Exam]] is worth 100 marks (25%), the [[Aural Exam]] is worth 100 marks (25%), and the [[Written Exam]] is worth 200 marks (50%) ... approximately 40 minutes ... 2 hours 50 minutes ... reading section is worth approximately 100 marks and the writing section approximately 100 marks. ... Kanji written with incorrect stroke order often look \'off\' to the examiner [and] may not be accepted.',
+    reframedTo:
+      'assesses the same core skills ... through an Oral, Aural and Written Exam. Confirm the exact mark allocation and weighting for your year from the SEC paper and your teacher ... [all durations/marks removed] ... a Kanji the examiner cannot read clearly cannot earn its marks; practising correct stroke order is the reliable route to clean, legible characters.',
+    reason:
+      'No in-repo source (no examiner-reports/japanese, not in subjectTiming.ts) and SEC/NCCA/curriculumonline pages were unreachable (403/404), so none of the Japanese weightings, durations, or the 25/25/50 split (internally inconsistent with the HL 25/20/55 pattern it claimed to match) could be grounded. All specifics reframed per the HARD RULE; the stroke-order marking-consequence claim softened to legibility.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-mathematics-001',
+    module: 'Mastering Mathematics',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'Both papers have the same format: each is split into [[two sections]] — Section A and Section B — and you must answer **all** questions. There is no choice -- every question counts.{{cite:1}}',
+    reframedTo:
+      'Both papers have the same format: each is split into [[two sections]] — Section A (Concepts and Skills) and Section B (Contexts and Applications) — and there **is** some choice within each section, so you do not have to answer every question. Always check the instructions box on the front of the current year\'s paper for the exact number to answer.',
+    reason:
+      'Stale/false: the 2025 SEC HL Maths papers (P1 & P2) rubric reads \'Answer any five questions from Section A\' and \'any three from Section B\' — there IS choice. The old claim described the pre-reform no-choice paper and was mis-cited to the 2015 Chief Examiner report; cite removed because that source does not ground the current structure.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-mathematics-002',
+    module: 'Mastering Mathematics',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      '**Section A (Concepts and Skills)** is 6 questions at 25 marks each (150 marks); **Section B (Contexts and Applications)** is typically 3 longer questions making up the other 150 marks.{{cite:1}}',
+    reframedTo:
+      'On the recent papers, **Section A (Concepts and Skills)** presents 6 questions worth 150 marks and asks you to answer **any five** of them; **Section B (Contexts and Applications)** presents 4 questions worth 150 marks and asks you to answer **any three**. ... Because the exact number of questions and the choice can be adjusted from year to year, read the instructions on the front of your paper first.',
+    reason:
+      'Wrong figures: Section A questions are 30 marks each (150 / any 5 of 6), not 25; Section B is 4 questions (answer any 3), not \'typically 3\'. Grounded in SEC 2025 HL Maths P1/P2 front-page Instructions. Cite:1 (2015 report) removed as it does not support the current structure.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-applied-maths-001',
+    module: 'Mastering Applied Maths',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'Applied Maths consists of a **single exam paper** lasting **2 hours and 30 minutes**. The paper contains **10 questions**, and you must answer **6 of them**. Each question is worth **50 marks**, giving a total of **300 marks**. ... There is no coursework, no practical component, and no oral or aural. It is purely an exam-based subject.',
+    reframedTo:
+      'Under the current specification (first examined 2023), Applied Maths is assessed in **two components**: a **written paper worth 400 marks (80% of your grade)** lasting **2 hours and 30 minutes**, and a separate **Mathematical Modelling Project worth 100 marks (20%)**. ... On the written paper there are **10 questions, each worth 50 marks, and you answer any 8 of them**.',
+    reason:
+      'The entry described the discontinued pre-2023 syllabus. SEC 2025 HL Applied Maths paper: 400 marks, \'Answer any eight questions\' of ten at 50 marks each; examiner-reports/applied-maths/2024-insights.md confirms a separate 100-mark (20%) Mathematical Modelling Project. The 300-marks / answer-6 / no-coursework claims are all false for current students.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-applied-maths-002',
+    module: 'Mastering Applied Maths',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'The 10 questions map directly onto 10 topics from the syllabus: [[Linear Motion]], [[Projectiles]], [[Newton\'s Laws]], [[Connected Particles]], [[Moments and Equilibrium]], [[Statics]] (including inclined planes), [[Collisions]] (including oblique impacts), [[Circular Motion]], [[Simple Harmonic Motion]] (SHM), and [[Differential Equations]]. Each topic gets exactly one question every year, so the paper is highly predictable.',
+    reframedTo:
+      'The questions are drawn from across the current strands: [[Mathematical Modelling]], [[Kinematics and Dynamics]] (linear motion, projectiles, connected particles, collisions, circular and relative motion, friction), [[Difference Equations]], [[Networks and Graph Theory]], and [[Algorithms]]. Recent papers mix these throughout ...',
+    reason:
+      'Old-syllabus topic list. SHM, conical pendulums, oblique impacts and statics/ladders are not the current standalone topics; the revised spec (first examined 2023) introduced networks/graph theory, difference equations and algorithms. Topics verified from the 2025 SEC HL Applied Maths paper and examiner-reports/applied-maths/2024-marking-scheme.md (Prim\'s/Kruskal\'s/Dijkstra\'s algorithms, adjacency matrices, difference-equation models).',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-applied-maths-003',
+    module: 'Mastering Applied Maths',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'The marking scheme uses a **cumulative approach** -- if you make an error early in a solution but then solve correctly from that point, you can still earn [[follow-through marks]] for all subsequent correct work. ... Drawing a correct [[free-body diagram]] ... can be worth **10-15 marks** before you even start solving.',
+    reframedTo:
+      'The marking scheme runs on a **penalty model**: examiners start from the full mark for a step and deduct for classified errors -- a method error (\'blunder\') costs 3 marks, while a minor arithmetic or transcription **slip costs only 1 mark**. ... a slip that *oversimplifies* the problem is re-priced as a 3-mark blunder. (Setup paragraph reframed to remove the \'10-15 marks\' specific.)',
+    reason:
+      'The scheme is subtractive (blunder -3, slip -1), not an additive \'cumulative/follow-through\' model, per examiner-reports/applied-maths/2024-insights.md and 2024-marking-scheme.md instruction 4-5. The \'10-15 marks before you start\' figure is unverifiable and was removed per the HARD RULE.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-applied-maths-004',
+    module: 'Mastering Applied Maths',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'Most students can master both topics with 4-5 hours of focused practice. ... you can solve nearly every collision problem that has appeared in the last 15 years. ... You only need 6 ... Pick your 6 best topics ... approximately 25 minutes per question.',
+    reframedTo:
+      'You answer 8 of the 10 written-paper questions, so the biggest strategic move is breadth ... (effort/\'15 years\' claims removed; timing corrected to ~18-19 minutes per question, 8 questions in 150 minutes).',
+    reason:
+      'The whole \'pick 6, ignore the rest\' strategy is unsafe: current students answer any 8 of 10 and must also do the 20% project. The \'4-5 hours\', \'last 15 years\' and 25-min-per-question specifics are unverifiable/wrong and were removed or corrected against the SEC 2025 paper.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-chemistry-001',
+    module: 'Mastering Chemistry',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      '[[Section A]] is worth **120 marks** and typically contains around **5 experiment-based questions** -- you must answer **3 of them**. Each is worth **40 marks**. ... [[Section B]] is worth **280 marks** and contains **8 questions** -- you must answer **5 of them**. Each question is worth **56 marks**.',
+    reframedTo:
+      'Across the whole paper there are **11 questions**, every one worth **50 marks**, and you answer **8 of them** -- 400 marks. [[Section A]] is the experiment section: **3 questions (Q1-Q3)**, answer **at least two**, 50 marks each. [[Section B]] is the theory section: **8 questions (Q4-Q11)**, each 50 marks.',
+    reason:
+      'These were the Leaving Cert PHYSICS figures (the text even said \'Like Physics\'). Real SEC Chemistry structure per examiner-reports/chemistry/2024-insights.md: 11 questions, all 50 marks, answer 8 = 400 marks; Q1-Q3 experiments (answer at least two), Q4-Q11 theory.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-chemistry-002',
+    module: 'Mastering Chemistry',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'A student who thoroughly prepares all the experiments can realistically score **100-120 marks** in Section A. ... On exam day, allocate roughly 45 minutes for Section A and 2 hours 15 minutes for Section B.',
+    reframedTo:
+      'You must answer at least two of the three experiment questions, each worth 50 marks ... can realistically bank **100-150 marks** here. ... if you answer two experiment questions from Section A and six from Section B, that works out at about 45 minutes on Section A and 2 hours 15 minutes on Section B.',
+    reason:
+      'Section A ceiling recomputed for the real 50-marks-per-question paper (2 x 50 = 100 up to 3 x 50 = 150), not the false 120. Timing re-tied to the real answer pattern (2 from A + 6 from B); the 45/135 split is consistent with data/knowledge/subjectTiming.ts.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-computer-science-001',
+    module: 'Mastering Computer Science',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'The [[written exam]] is a **2-hour paper** worth **70%** of your grade. ... The [[Applied Learning Task]] (ALT) ... submitted as a portfolio including your code, documentation, and a reflective journal.',
+    reframedTo:
+      'The [[end-of-course exam]] is worth **70%** of your grade and is delivered as a **computer-based examination** -- you sit it at a computer ... there are **practical questions that require you to use a programming language at the computer** (writing, running, testing, and debugging code in the exam environment). ... The [[coursework project]] ... develop, and document a computational artefact ... submitted with a report.',
+    reason:
+      'LCCS is a computer-based exam, not a conventional written paper (a defining feature that changes prep). Official curriculumonline.ie specification: exam is \'Written and computer-based\', with \'Practical questions requiring the use of a programming language\'; the 30% component is \'One computational artefact with report\', not the formative ALTs. Unverifiable \'2-hour\' duration removed rather than replaced (no source-1/2/3 confirmation).',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-ag-science-001',
+    module: 'Mastering Agricultural Science',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'The assessment consists of a **written exam paper** ... and [[Classroom-Based Assessments]] (CBAs) completed during the course. ... While the CBAs themselves do not carry a direct percentage of the final exam mark in the same way as the CS ALT ... The written paper is divided into three sections. [[Section A]] ... [[Section B]] ... [[Section C]] ...',
+    reframedTo:
+      'Agricultural Science is assessed in **two components**: a **written exam paper** worth **75%** (300 marks) and the [[Individual Investigative Study]] (IIS) coursework worth **25%** (100 marks), for a total of **400 marks**. ... The written paper is divided into two sections. [[Section A]] ... **any 10 questions at 10 marks each** (100 marks) ... [[Section B]] ... **any 4 questions at 50 marks each** (200 marks).',
+    reason:
+      'LC Ag Science has NO CBAs (a Junior Cycle construct). The practical component is the Individual Investigative Study, worth 25% (written paper 75%) — not a component with \'no direct percentage\'. The paper has two sections (A short / B long), not three A/B/C. All grounded in examiner-reports/agricultural-science/2024-insights.md and 2024-marking-scheme.md.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-accounting-001',
+    module: 'Mastering Accounting',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'The paper is split into [[three sections]]. **Section 1** contains short questions worth **120 marks** in total — you answer **four** out of six questions, each carrying 30 marks. These are designed to be completed relatively quickly and test breadth across the syllabus. **Section 2** has three compulsory long questions worth **60 marks each** (180 marks total). **Section 3** is one extended question worth **100 marks** — this is the big one, typically a full set of final accounts.',
+    reframedTo:
+      'The paper is split into [[three sections]]. **Section 1 — Financial Accounting** is worth **120 marks**: you either answer the single **120-mark Q1** (a full set of final accounts — the sole trader, company, or manufacturing account) **or** answer **any two of Q2–Q4 at 60 marks each**. **Section 2 — Financial Accounting** is worth **200 marks**: you answer **two of Q5–Q7, each worth 100 marks** (areas like interpretation of accounts, cash flow, published accounts, or correction of errors). **Section 3 — Management Accounting** is worth **80 marks**: you answer **one of Q8–Q9** (budgeting, costing, or flexible budgets).',
+    reason:
+      'The described structure is fabricated and contradicts the SEC paper. Per examiner-reports/accounting/2024-insights.md (verified against the 2024 SEC marking scheme) and data/knowledge/subjectTiming.ts: Section 1 = Financial Accounting 120 marks (Q1 alone or two of Q2–Q4 at 60); Section 2 = Financial Accounting 200 marks (two of Q5–Q7 at 100); Section 3 = Management Accounting 80 marks (one of Q8–Q9). Final accounts are Section 1 Q1, not a 100-mark Section 3.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-accounting-002',
+    module: 'Mastering Accounting',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'The **Section 3 question** is worth **100 marks** — that is **25% of the entire paper** in a single question. It almost always involves preparing a full set of [[final accounts]] … Here is the strategic point most students miss: **Section 1 and Section 3 together account for 220 of 400 marks** — over half the paper.',
+    reframedTo:
+      'The single biggest question on the paper is **Section 1 Q1**, worth **120 marks** — that is **30% of the entire paper** in one question. It almost always involves preparing a full set of [[final accounts]] … Here is the strategic point most students miss: **Section 1 (120 marks) and Section 2 (200 marks) together account for 320 of 400 marks** — four-fifths of the paper.',
+    reason:
+      'Every downstream strategic claim inherited the fabricated structure. Final accounts are Section 1 Q1 (120 marks = 30%), not Section 3 (which is Management Accounting, 80 marks). The \'220 of 400\' figure was built on the wrong section sizes; corrected to the verified Section 1 (120) + Section 2 (200) = 320. Source: examiner-reports/accounting/2024-insights.md.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-accounting-003',
+    module: 'Mastering Accounting',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'You must allocate time proportionally: roughly 25 minutes for Section 1, 75 minutes for Section 2 (25 each), and 45 minutes for Section 3, with a few minutes for review.',
+    reframedTo:
+      'Allocate time in proportion to the marks — roughly **0.45 minutes per mark**: about **54 minutes for the 120-mark Section 1 Q1**, about **90 minutes for Section 2** (roughly 45 minutes for each 100-mark question), and about **36 minutes for the 80-mark Section 3**, with a few minutes left for review.',
+    reason:
+      'Timing computed from the wrong structure would starve the highest-value question. Recomputed at the verified 0.45 min/mark on the real 120/200/80 split. Source: examiner-reports/accounting/2024-insights.md (\'≈ 0.45 min/mark, so the 120-mark Q1 warrants ~54 minutes\'); subjectTiming.ts lines 83-85 (54/90/36).',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-economics-001',
+    module: 'Mastering Economics',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'The Leaving Certificate Economics Higher Level exam is a **single paper** lasting **2 hours and 30 minutes**, worth a total of **400 marks**. It is divided into [[two sections]] … **Section A** contains short questions worth **100 marks (25%)**. You answer **5 out of 9** questions, each worth **20 marks** … **Section B** … It contains long questions worth **300 marks (75%)**. You choose **4 from 7** questions, each worth **75 marks** … With 150 minutes for 400 marks, you have about **22 seconds per mark** … roughly **28-30 minutes per long question**.',
+    reframedTo:
+      'Leaving Certificate Economics has **two assessment components**: a **written examination worth 80%** … and a **Student Research Project (SRP) worth 20%** … The written paper lasts **two and a half hours** … **Section A** is worth **75 marks**. It is a set of short questions built around stimulus material … **Section B** is the extended-response section — six themed long questions (**Q11–Q16**) … This is where most of the written-paper marks sit, so disciplined pacing across the two and a half hours is essential.',
+    reason:
+      'The module described the pre-2019 Economics exam, retired after 2020. The current specification (curriculumonline.ie LCEconomics_0219_EN.pdf) is 80% written + 20% research study, two-and-a-half-hour paper; the 2025 SEC marking scheme confirms Section A = 75 marks and Section B = Q11–Q16 six themed questions. Total paper marks, Section A/B choice and per-question marks are not stated in any grounded source, so those specifics were reframed out per the accreditation HARD RULE rather than guessed.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-economics-002',
+    module: 'Mastering Economics',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'Here is the strategic insight: **if you score 90 in Section A and average 60 out of 75 on your four long questions, that gives you 330 out of 400 — a comfortable H1.** The path to a top grade is not about knowing everything; it is about being excellent at the high-frequency topics and disciplined on time.',
+    reframedTo:
+      'Here is the strategic insight: because the written paper is **80% of your grade** and the Student Research Project is the other **20%**, the top grades come from being strong on **both** components — excellent on the high-frequency Section B topics, efficient in Section A, and deliberate about the SRP rather than treating it as an afterthought. The path to a top grade is not about knowing everything; it is about depth on the topics that recur and discipline across both components.',
+    reason:
+      'The worked example rested on the retired 400-mark structure AND was arithmetically wrong: 330/400 = 82.5%, which is a H2, not a H1 (H1 requires 90%+). Reframed to the verified 80/20 component split with no fabricated mark total. Source: 2019 specification (80% written + 20% SRP); examiner-reports/economics/2025-insights.md gives no paper total to substitute.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-economics-003',
+    module: 'Mastering Economics',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'Next, master your [[diagram library]]. You need to be able to draw, from memory, approximately 15-20 key diagrams: basic supply and demand, shifts in supply and demand, price ceiling and floor, individual firm under perfect competition (short-run and long-run), monopoly profit maximisation, kinked demand curve, cost curves (MC, AC, AVC), the circular flow of income, and the Keynesian Cross.',
+    reframedTo:
+      'Next, master your [[diagram library]]. You need to be able to draw, from memory, the key diagrams the paper keeps returning to: basic supply and demand and shifts in supply and demand, individual firm under perfect competition (short-run and long-run), monopoly profit maximisation, the minimum-wage / price-control labour-market diagram, the kinked-demand curve, cost curves (MC, AC, AVC), and the long-run average cost (LRAC) construction. Practise each one until you can draw it quickly with **every curve, axis, and equilibrium point fully labelled** — because the labels are separately marked.',
+    reason:
+      '\'Keynesian Cross\' and \'circular flow of income\' could not be grounded in the current-spec source (examiner-reports/economics/2025-insights.md), so they were dropped per HARD RULE and replaced with diagrams the 2025 scheme verifies as examined (minimum-wage labour market, monopoly, kinked-demand, LRAC construction), plus the verified point that labelling is separately marked.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-economics-004',
+    module: 'Mastering Economics',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'For Section B preparation, use **past papers aggressively**. Work through every question from the last 10 years by topic. … Begin this week by downloading the last 10 years of Economics HL papers and marking schemes. Create a [[topic frequency table]] … You will find that about 8-10 core topics cover the vast majority of questions.',
+    reframedTo:
+      'For Section B preparation, use **past papers aggressively** — but note the syllabus change. The current Economics specification … has been examined only from **2021 onward**, so work through the papers from **2021 to the present** by topic. … Begin this week by downloading the Economics HL papers and marking schemes **from 2021 onward** … (Older papers use a different paper structure, so building a frequency table from them would mislead your priorities.)',
+    reason:
+      'Only 2021–2025 papers exist under the current specification (repo holds economics-2021 through 2025). A 10-year table would be built mostly from old-syllabus papers with a different structure, misleading topic prioritisation. Scoped to 2021+ with an explicit note on the syllabus change. Source: examiner-reports/economics/2025-insights.md; 2019 specification.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-history-001',
+    module: 'Mastering History',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'The Leaving Certificate History Higher Level exam is a single paper lasting **2 hours and 50 minutes**, worth a total of **400 marks**. There is no second paper and no coursework component — everything rides on this one sitting. That makes understanding the layout absolutely critical.',
+    reframedTo:
+      'Leaving Certificate History Higher Level has two components. The **Research Study Report (RSR)** is a project you complete and submit *before* the exam — it is worth **100 marks (20% of your overall grade)**. The **written paper** lasts **2 hours and 50 minutes** and is worth the other **400 marks**. Together they total **500 marks**. Getting your RSR done well banks a fifth of your grade before you sit down for the written exam, so it is not something to leave until the last minute.',
+    reason:
+      'False: LC History HL/OL both include the pre-submitted Research Study Report worth 20% (100 of 500 marks). Grounded in examiner-reports/history/2025-insights.md (RSR 100 marks, pp.4–6) and data/knowledge/subjectTiming.ts (history totalMarks: 500).',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-history-002',
+    module: 'Mastering History',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'In essays, the key scoring unit is the [[SIP]] — a Significant Individual Point. Each SIP is a distinct historical point that is explained and, ideally, supported with evidence. A strong essay will contain **5 to 7 well-developed SIPs** in the body paragraphs. Examiners allocate marks per SIP, so more developed points means more marks.',
+    reframedTo:
+      'In essays, the marking scheme splits every long answer into two headings that always sum to 100% of the question: the [[Cumulative Mark]] (CM, max 60) for accurate, relevant historical content, and the [[Overall Evaluation]] (OE, max 40) for how well the whole answer addresses the question set — a fixed 60/40 ratio. The CM is built up **paragraph by paragraph**, each paragraph graded on a band, so a well-developed answer of roughly **5 to 6 strong paragraphs** reaches the CM ceiling. Writing more paragraphs than that earns nothing extra — the marks come from developing each point, not from piling on more of them.',
+    reason:
+      '\'SIP\' is not SEC terminology and essays are not marked by tallying marks per point. Real model is CM (cumulative, by paragraph) + OE, 60/40, per examiner-reports/history/2025-insights.md and 2024-verification.md.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-history-003',
+    module: 'Mastering History',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'Within the Document Question, the **contextualisation** sub-question (typically worth 20 marks) asks you to write a short paragraph setting the documents in their historical context.',
+    reframedTo:
+      'Within the Document Question, the **contextualisation** sub-question (worth **40 marks** — the largest single part of the DBQ) asks you to write a mini-essay setting the documents in their historical context.',
+    reason:
+      'Contextualisation is 40 marks (Max CM 24 + Max OE 16), the largest DBQ sub-question, per examiner-reports/history/2025-insights.md p.11–12; the \'20 marks\' understatement misweighted student effort.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-geography-001',
+    module: 'Mastering Geography',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      '[[Physical Geography]] (including your elective — Geoecology or the Atmosphere), [[Regional Geography]] ... and [[Human and Economic Geography]] along with an option topic.',
+    reframedTo:
+      'one from **[[Physical Geography]]** (core), one from **[[Regional Geography]]** (core ...), one from your **[[Elective]]** (you choose Economic Activities *or* the Human Environment), and — at Higher Level only — one from the **[[Options]]** (a specialised topic such as Global Interdependence, Geoecology, Culture and Identity, or the Atmosphere-Ocean Environment).',
+    reason:
+      'Conflated the LC Geography electives with the HL Options. Electives are Economic Activities vs Human Environment; Geoecology and Atmosphere-Ocean are HL-only Options, not part of Physical Geography core. Grounded in examiner-reports/geography/2025-insights.md paper structure (Sections 3 Electives Q7–12; Section 4 Options Q13–24).',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-politics-and-society-001',
+    module: 'Mastering Politics & Society',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      '[[Section A]] consists of **short-answer questions** worth a total of **80 marks**.',
+    reframedTo:
+      '[[Section A]] is a **short-answer question** worth **50 marks**: you answer **any 10 of 15** short items at 5 marks each.',
+    reason:
+      'Section A is 50 marks (10 x 5, best 10 of 15), not 80. Grounded in examiner-reports/politics-society/2025-insights.md \'Section A — Question 1, 50 marks\'.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-religious-education-001',
+    module: 'Mastering Religious Education',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      '[[Section C]] is the extended essay section, worth **200 marks** — a full **half of the exam paper**. You write longer, essay-style answers on major topics from the syllabus.',
+    reframedTo:
+      '**[[Unit Two]]** is worth **160 marks — the largest part of the paper**. You answer **two of three sections**: Christianity (Origins and Contemporary Expressions), World Religions, and Moral Decision-Making. These are *content areas*, not a stimulus format — each section you choose is worth 80 marks from its parts.',
+    reason:
+      'Invented exam anatomy. The RE written paper is 320 marks built from Unit One (80) / Unit Two (160) / Unit Three (80); there is no 200-mark essay section. Grounded in examiner-reports/religious-education/2025-insights.md \'the written paper is 320 marks\'.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-religious-education-002',
+    module: 'Mastering Religious Education',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'The examiner uses [[cumulative marking]] — each relevant, well-explained point adds to your total, so more developed points means more marks.',
+    reframedTo:
+      'RE answers are graded [[holistically, band by band]] — not by counting points. The examiner reads your whole answer and places it in one of six bands (Excellent, Very Good, Good, Fair, Weak, Poor) against that question\'s Marking Criteria ... if a question uses a higher-order command word (Assess, Compare, Evaluate) and you only *describe* ... your answer is **capped at the Fair band**.',
+    reason:
+      'Opposite of how LC RE is marked. RE is holistic band-by-band with a descriptive-answer Fair cap; there is no adding-up of points. Grounded in examiner-reports/religious-education/2025-insights.md marking-system section and the implicit-reference cap (p.5, p.18).',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-religious-education-003',
+    module: 'Mastering Religious Education',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      '[[Coursework Journal]] ... A reflective journal completed during the course, covering your engagement with religious education topics.',
+    reframedTo:
+      '[[Coursework]] — a written report on one prescribed title (chosen from the SEC list), completed during the course ... marked on research/summary-of-findings/skills/personal-reflection grids.',
+    reason:
+      'Mischaracterised the 20% coursework. It is a Coursework Booklet on ONE prescribed title (Section E or H) marked on Part A/Part B descriptor grids, not a reflective journal with per-topic entries. Grounded in examiner-reports/religious-education/2025-insights.md coursework section (pp.33–36).',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-home-economics-001',
+    module: 'Mastering Home Economics',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'The [[Food Practical Exam]] is the timed cooking test, typically held in April or early May in your school\'s home ec room. It is worth roughly **35% of your total mark**. You receive a brief with a set of dishes to prepare, and you are assessed on planning, execution, presentation, and hygiene. This is the single biggest block of marks outside the written paper.',
+    reframedTo:
+      'In [[Section C]] you answer **one** option: one of the three electives — Home Design and Management, Textiles Fashion and Design, or Social Studies — or the Section C core question. Note that Food Studies is NOT an elective; it is the compulsory core of the course, examined in Section B. There is **no timed food practical exam** in Leaving Certificate Home Economics — the timed cooking test you may have done in Junior Cycle does not carry over to the Leaving Cert.',
+    reason:
+      'There is no timed food practical exam in LC Home Economics; the 35% figure is invented. The subject is assessed by written paper (320/400, 80%) + Food Studies coursework journal (80/400, 20%). The described timed cooking exam is a Junior Cycle component. Confirmed by examiner-reports/home-economics/2025-marking-scheme.md (paper is Sections A/B/C only) and curriculumonline.ie SCSEC21 Home Economics syllabus (written 80% / practical coursework journal 20%).',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-home-economics-002',
+    module: 'Mastering Home Economics',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      '{ term: \'Food Practical Exam\', description: \'A timed cooking examination, usually 2.5–3 hours, where you prepare a number of dishes under exam conditions. Marked on planning, skill, presentation, and food safety.\' }',
+    reframedTo:
+      '{ term: \'Section C\', description: \'The elective/core section, worth up to 80 marks. You answer one option: Home Design and Management, Textiles Fashion and Design, Social Studies, or the Section C core question.\' }',
+    reason:
+      'The Food Practical Exam highlight tooltip described a non-existent LC component. Replaced with the real Section C structure per examiner-reports/home-economics/2025-insights.md.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-home-economics-003',
+    module: 'Mastering Home Economics',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'You choose one of two electives: [[Elective 1 — Food Studies]] or [[Elective 2 — Social Studies]]. Most students take Elective 1. ... { term: \'Elective 1 — Food Studies\', description: \'The most popular elective, covering food science, nutrition, food technology, and cookery. Taken by the vast majority of HL students.\' }',
+    reframedTo:
+      'In [[Section C]] you answer **one** option: one of the three electives — Home Design and Management, Textiles Fashion and Design, or Social Studies — or the Section C core question. Note that Food Studies is NOT an elective; it is the compulsory core of the course, examined in Section B.',
+    reason:
+      'Food Studies is the compulsory core (Section B), not an elective. The real electives are Home Design & Management, Textiles Fashion & Design, and Social Studies, examined in Section C. Confirmed by examiner-reports/home-economics/2025-insights.md Section C options list.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-home-economics-004',
+    module: 'Mastering Home Economics',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'For the Food Practical, there is no substitute for **cooking practice at home**. Aim to practise your core dishes at least 3–4 times each before the exam. Time yourself. Get feedback from family. Practise your planning sheet alongside the cooking — write it out as if it were the real exam. The goal is that by the day of the practical, every dish feels automatic and your time plan is second nature.',
+    reframedTo:
+      'For the long questions, **practise structuring your answers as distinct, developed points**. Because the marking scheme distributes a fixed number of points across named headings, take a past question, write out the separate points it deserves, and develop each one. Rehearsing the shape of a full 80-mark or 50-mark answer is as important as knowing the content, because it is how the marks are actually awarded.',
+    reason:
+      'Study advice for a non-existent timed food practical. Replaced with advice grounded in the real points-based marking grammar documented in examiner-reports/home-economics/2025-insights.md.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-construction-studies-001',
+    module: 'Mastering Construction Studies',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'Construction Studies is split almost perfectly down the middle: **roughly 50% for the written exam and 50% for the practical project**. ... The [[written paper]] is a **3-hour exam worth 400 marks**.',
+    reframedTo:
+      'Construction Studies is assessed across **three components**: the **written exam (50%)**, a **practical skills test (25%)**, and a **project (25%)**. ... The [[written paper]] is a **3-hour exam worth 300 marks (50% of your total grade)**.',
+    reason:
+      'The written paper is 300 marks (not 400), and the assessment is three components (written 50% / practical skills test 25% / project 25% of 600), not a 50/50 written-vs-project split. The practical skills examination — a whole component worth 25% — was omitted entirely. Confirmed by examiner-reports/construction-studies/2025-insights.md (Theory HL 300 marks; Practical Test 150; Practical Coursework 150) and WebSearch.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-engineering-001',
+    module: 'Mastering Engineering',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'The assessment is split roughly **50/50 between the written exam and the practical project**. ... The project is half your grade — it deserves your best effort.',
+    reframedTo:
+      'The assessment has **three components**: the **written exam (roughly 50%)**, the **practical project (roughly 25%)**, and a separate **day practical examination (roughly 25%)**. ... The project and the day practical examination together are half your grade — the workshop deserves your best effort.',
+    reason:
+      'LC Engineering HL has THREE components: 300-mark written paper (~50%), project (~25%), and a separate SEC Day Practical Examination (~25%), documented in examiner-reports/engineering/2025-insights.md as the \'Day 2 Practical Examination\' marked out of 100. The project alone is ~25%, not half the grade. The day practical exam was never mentioned. Confirmed by the insights file and WebSearch.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-art-001',
+    module: 'Mastering Art',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'Together the practical exam accounts for roughly **62.5%** of your total mark — that is **250 out of 400 marks**.',
+    reframedTo:
+      'Artefact A is worth **250 marks — 50% of your total**, so half your grade is decided in the studio, not the exam hall. This is the single biggest mark zone in the whole subject. [and] This invigilated exam runs for around **five hours** and is worth **100 marks — 20% of your total**.',
+    reason:
+      'Described the discontinued pre-2021 400-mark syllabus. Current spec is 500 marks (Artefact A 250/50%, Artefact B 100/20%, Visual Studies 150/30%). Source: syllabusMeta.ts lines 531-538; examiner-reports/art/2023-verification.md lines 20-23.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-art-002',
+    module: 'Mastering Art',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'Later the same day (or on a separate scheduled sitting), you complete a [[Life Drawing]] session, typically lasting one and a half hours, working from a live model.',
+    reframedTo:
+      'The second practical component is the [[Invigilated Practical Examination]] — Artefact B. On a single scheduled exam day you produce a further piece of practical work, developed from the same SEC brief and stimulus as your coursework.',
+    reason:
+      'Life Drawing was abolished under the revised specification; there is no separate live-model session. Replaced with the current Artefact B invigilated exam. Source: syllabusMeta.ts lines 534-547 (no Life Drawing component; Artefact A/B + Visual Studies).',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-art-003',
+    module: 'Mastering Art',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'The second component is the [[Art History and Appreciation]] written paper ... This paper is worth **150 marks — 37.5% of your total**. It covers Irish art, European art from the Renaissance to the present, and appreciation of art and design.',
+    reframedTo:
+      'The third component is the [[Visual Studies]] written paper ... This paper is worth **150 marks — 30% of your total** and runs for **two and a half hours**. It has three sections: Section A "Today\'s World", Section B "Europe and the wider world", and Section C "Ireland and its place in the wider world".',
+    reason:
+      'The \'Art History and Appreciation\' paper (37.5% of 400) is the old syllabus. Current paper is \'Visual Studies\', 150 marks = 30% of 500, with named Sections A/B/C. Source: syllabusMeta.ts line 536 + strands art-4/art-5/art-6; examiner-reports/art/2023-verification.md lines 20-23.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-art-004',
+    module: 'Mastering Art',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'The single biggest mark zone in Leaving Cert Art is your [[Craftwork or Imaginative Composition]] — the five-hour practical. It carries the heaviest weighting within the 250-mark practical component ...',
+    reframedTo:
+      'The single biggest mark zone in Leaving Cert Art is your [[Practical Coursework]] — Artefact A and its workbook, worth **250 marks (50%)**. This is half your entire grade, and it is decided over a coursework period rather than in one high-pressure sitting, which means it is also the most controllable.',
+    reason:
+      'Named the 5-hour exam piece as the biggest zone and never mentioned coursework — actively harmful, since coursework/Artefact A is 50% (the true largest component). Source: syllabusMeta.ts line 538 keyAdvice + strand art-1 markWeight 45.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-music-001',
+    module: 'Mastering Music',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'The [[Listening Paper]] is the written exam, sat in June, and it is worth **200 marks — 50% of your total**. It runs for approximately **two and a half hours** ...',
+    reframedTo:
+      'The [[Listening Paper]] is a written exam, sat in June. As a core activity it is worth **100 marks — 25% of your total** and runs for approximately **one and a half hours** ...',
+    reason:
+      'Marks, weighting and duration all wrong. Listening core = 100 marks (25%), ~1.5 hrs. Source: syllabusMeta.ts line 554 + line 557 keyAdvice.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-music-002',
+    module: 'Mastering Music',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'The [[Composing]] component is also worth **100 marks — 25%**. You submit a portfolio of compositions as coursework, usually including a melody composition and a harmony exercise or arrangement task as well as an original composition. The portfolio is prepared throughout the year and submitted before a set deadline.',
+    reframedTo:
+      'The [[Composing]] component is also worth **100 marks — 25%** as a core activity. This is a **written exam of about one and a half hours**, not submitted coursework: you answer melody-writing questions and a harmony question under timed conditions in June. (A large-scale original composition exists only for the minority of students who choose the Composing elective.)',
+    reason:
+      'Composing core is a timed written exam (melody + harmony), not a submitted portfolio; portfolio applies only to the minority Composing elective. Source: syllabusMeta.ts line 553 + strand music-1 line 560; examiner-reports/music/2022-insights.md lines 15-30.',
+    date: '2026-07-21',
+  },
+  {
+    id: 'subject-music-003',
+    module: 'Mastering Music',
+    section: 'Exam structure & assessment',
+    action: 'corrected',
+    original:
+      'The [[Listening Paper]] is the single largest mark zone at **200 marks (50%)**. ... The [[Composing]] portfolio (100 marks) is often the most overlooked area ... your composition portfolio is coursework — you can draft, revise, get feedback, and refine before you submit.',
+    reframedTo:
+      'For most Higher Level students, the largest mark zone is [[Performing]]. Because the great majority take the Performing elective, Performing is typically worth **50%** ... The [[Composing]] paper (100 marks / 25% as a core activity) is a timed written exam of melody and harmony ...',
+    reason:
+      'Inverted the real weighting (Listening is not 50%) and misdescribed Composing as revisable coursework. With the common Performing elective, Performing is typically 50%; Composing is a timed written paper. Source: syllabusMeta.ts line 555-560 keyAdvice + strands music-0/music-1.',
+    date: '2026-07-21',
+  },
 ];

@@ -25,13 +25,13 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'How Mathematics Actually Works',
         eyebrow: '01 // Exam Structure',
         paragraphs: [
-          'Higher Level Maths is split across **two papers**, each worth **300 marks** and lasting **2 hours and 30 minutes**. That gives you a total of **600 marks** across five hours of exam time. Both papers have the same format: each is split into [[two sections]] — Section A and Section B — and you must answer **all** questions. There is no choice -- every question counts.{{cite:1}}',
+          'Higher Level Maths is split across **two papers**, each worth **300 marks** and lasting **2 hours and 30 minutes**. That gives you a total of **600 marks** across five hours of exam time. Both papers have the same format: each is split into [[two sections]] — Section A (Concepts and Skills) and Section B (Contexts and Applications) — and there **is** some choice within each section, so you do not have to answer every question. Always check the instructions box on the front of the current year\'s paper for the exact number to answer.',
           'Paper 1 covers [[Algebra]], [[Functions and Graphs]], [[Complex Numbers]], [[Calculus]] (differentiation and integration), and [[Financial Maths]]. Paper 2 covers [[Geometry]], [[Trigonometry]], and [[Probability and Statistics]]. The split is clean, so you can focus your revision on one paper at a time without overlap.',
-          '**Section A (Concepts and Skills)** is 6 questions at 25 marks each (150 marks); **Section B (Contexts and Applications)** is typically 3 longer questions making up the other 150 marks.{{cite:1}} Questions are broken into parts (a), (b), and often (c), with part (a) designed to be more accessible. The examiner expects to see your working clearly laid out -- not just final answers.',
+          'On the recent papers, **Section A (Concepts and Skills)** presents 6 questions worth 150 marks and asks you to answer **any five** of them; **Section B (Contexts and Applications)** presents 4 questions worth 150 marks and asks you to answer **any three**. Questions are broken into parts (a), (b), and often (c), with part (a) designed to be more accessible. Because the exact number of questions and the choice can be adjusted from year to year, read the instructions on the front of your paper first. The examiner expects to see your working clearly laid out -- not just final answers.',
           'Here is the big bonus: if you score a **H6 or above** (that is 40% or higher at Higher Level), you receive an extra **25 CAO points** on top of your grade points.{{cite:2}} This makes Maths one of the most strategically valuable subjects on your entire Leaving Cert. Even students who find Maths challenging can benefit enormously from sitting Higher Level and targeting that bonus.'
         ],
         highlights: [
-          { term: 'two sections', description: 'Each paper has Section A (Concepts & Skills, 6 questions at 25 marks) and Section B (Contexts & Applications, usually 3 questions). You must answer all questions on both papers -- there is no choice.' },
+          { term: 'two sections', description: 'Each paper has Section A (Concepts & Skills) and Section B (Contexts & Applications), each worth 150 marks. There is choice within each section -- on recent papers you answer any five of six in Section A and any three of four in Section B. Check the front-page instructions for the current year.' },
           { term: 'Algebra', description: 'Covers expressions, equations, inequalities, indices, logs, and sequences & series. A huge chunk of Paper 1.' },
           { term: 'Functions and Graphs', description: 'Function notation, transformations, graph sketching, and interpreting graphs. Frequently combined with Calculus questions.' },
           { term: 'Complex Numbers', description: 'Operations with complex numbers, Argand diagrams, De Moivre\'s theorem, and roots of unity.' },
@@ -44,7 +44,7 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
         bullets: [
           'Paper 1: Algebra, Complex Numbers, Functions, Calculus, Financial Maths -- 300 marks, 2.5 hours',
           'Paper 2: Geometry, Trigonometry, Probability & Statistics -- 300 marks, 2.5 hours',
-          'All questions compulsory on each paper (Section A: 6 x 25; Section B: usually 3) -- no choice',
+          'Each paper: Section A + Section B, 150 marks each. Recent papers: answer any 5 of 6 in A, any 3 of 4 in B -- check the front-page instructions',
           '+25 CAO bonus points for H6 (40%) or above at Higher Level'
         ]
       },
@@ -71,7 +71,7 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
         paragraphs: [
           'The single most valuable topic across both papers is [[Calculus]]. Differentiation and integration questions appear on Paper 1 every single year, typically accounting for **50 marks or more** -- that is one-third of the entire paper. If you can differentiate confidently, apply max/min problems, and integrate with reasonable accuracy, you are sitting on a huge chunk of marks.',
           'On Paper 2, [[Probability and Statistics]] is a goldmine for well-prepared students. The questions follow predictable patterns: Normal distribution calculations, hypothesis testing at the 5% significance level, and expected value problems. Once you learn the standard steps, these questions become almost mechanical. They regularly account for **40-50 marks** on Paper 2.',
-          'The [[part (a) questions]] across both papers are designed to be accessible. They test foundational skills -- basic differentiation, solving a simple equation, plotting a point, or stating a definition. Across 12 questions, these opening parts can add up to **60+ marks** if you answer them all correctly. That alone could be worth close to a H5.',
+          'The [[part (a) questions]] across both papers are designed to be accessible. They test foundational skills -- basic differentiation, solving a simple equation, plotting a point, or stating a definition. Across the Section A questions on both papers, these opening parts can add up to **60+ marks** if you answer them all correctly. That alone could be worth close to a H5.',
           'Do not overlook [[Financial Maths]] on Paper 1. It typically appears as one part of a question and uses a small number of formulas (present value, amortisation). Students who learn these formulas and practise 3-4 past paper examples can often score full marks on this section with minimal revision time. It has one of the best marks-to-effort ratios on the entire exam.'
         ],
         highlights: [
@@ -87,7 +87,7 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
         eyebrow: '04 // Common Pitfalls',
         paragraphs: [
           'The number one mark-killer in Maths is **skipping steps**. Students who do working in their heads and write only the final answer lose marks every single year. The Chief Examiner confirms marks are generally not awarded for an incorrect answer with no supporting work shown. If the examiner cannot see your logic, they cannot award [[attempt marks]].{{cite:1}}',
-          'The second major pitfall is [[poor time management]]. Each paper is 300 marks in 150 minutes, so a useful rule of thumb is about a minute for every two marks -- roughly 12-13 minutes on a 25-mark Section A question and around 25 minutes on a 50-mark Section B one. Students who spend 40 minutes on a single difficult question and then rush the rest are throwing away easy marks. If you are stuck, write down everything you know about the problem, move on, and come back later.',
+          'The second major pitfall is [[poor time management]]. Each paper is 300 marks in 150 minutes, so a useful rule of thumb is about a minute for every two marks -- roughly 15 minutes on a 30-mark Section A question and around 25 minutes on a 50-mark Section B one. Students who spend 40 minutes on a single difficult question and then rush the rest are throwing away easy marks. If you are stuck, write down everything you know about the problem, move on, and come back later.',
           'Many students lose marks through [[sign errors and arithmetic slips]] rather than conceptual misunderstanding. A minus sign dropped during differentiation or a factor of 2 forgotten in an integration can cascade through an entire solution. The fix is simple: write each step on a separate line, and double-check your algebra before moving to the next step.',
           'Finally, students consistently underperform on [[Geometry proofs]] because they try to wing them. The proofs on the syllabus are finite and examinable -- there are only a handful of them. Students who learn these proofs step-by-step and practise writing them out in full will pick up marks that most of their classmates leave behind.'
         ],
@@ -140,7 +140,7 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
     moduleNumber: '09',
     moduleTitle: 'Mastering Applied Maths',
     moduleSubtitle: 'Your Complete Applied Maths Guide',
-    moduleDescription: 'Decode the Applied Maths exam -- understand the topic weighting, how to set up problems correctly, and where students leave the most marks on the table.',
+    moduleDescription: 'Decode the current Applied Maths assessment -- the 400-mark written paper and the 100-mark Modelling Project -- how to set up problems correctly, and where students leave the most marks on the table.',
     themeName: 'violet',
     finishButtonText: 'Set Up and Solve',
     sections: [
@@ -149,28 +149,24 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'How Applied Maths Actually Works',
         eyebrow: '01 // Exam Structure',
         paragraphs: [
-          'Applied Maths consists of a **single exam paper** lasting **2 hours and 30 minutes**. The paper contains **10 questions**, and you must answer **6 of them**. Each question is worth **50 marks**, giving a total of **300 marks**. The beauty of this exam is the choice -- you pick the 6 topics you are strongest in and ignore the rest.',
-          'The 10 questions map directly onto 10 topics from the syllabus: [[Linear Motion]], [[Projectiles]], [[Newton\'s Laws]], [[Connected Particles]], [[Moments and Equilibrium]], [[Statics]] (including inclined planes), [[Collisions]] (including oblique impacts), [[Circular Motion]], [[Simple Harmonic Motion]] (SHM), and [[Differential Equations]]. Each topic gets exactly one question every year, so the paper is highly predictable.',
-          'Most students focus on **6 to 8 topics** during their revision and aim to be confident in at least 7, giving themselves one spare topic as insurance. The questions follow recognisable patterns -- once you have seen the types of problems that appear in each topic, you can practise them systematically.',
-          'There is no coursework, no practical component, and no oral or aural. It is purely an exam-based subject. This means your entire grade is determined by what you produce in those 150 minutes. The upside is that revision is straightforward: learn the methods, practise the problems, and execute on the day.'
+          'Under the current specification (first examined 2023), Applied Maths is assessed in **two components**: a **written paper worth 400 marks (80% of your grade)** lasting **2 hours and 30 minutes**, and a separate **Mathematical Modelling Project worth 100 marks (20%)**. So the project is a real one-fifth of your result -- it is not optional, and skipping it throws away a full grade band or more.',
+          'On the written paper there are **10 questions, each worth 50 marks, and you answer any 8 of them**. That still gives you choice -- you can leave out two questions -- but the safety margin is much smaller than it used to be, so you need a broad base rather than a handful of favourite topics.',
+          'The questions are drawn from across the current strands: [[Mathematical Modelling]], [[Kinematics and Dynamics]] (linear motion, projectiles, connected particles, collisions, circular and relative motion, friction), [[Difference Equations]], [[Networks and Graph Theory]], and [[Algorithms]]. Recent papers mix these throughout -- a single paper can include directed graphs and adjacency matrices, shortest-route networks, difference-equation models of growth or infection, and several dynamics questions.',
+          'The [[Mathematical Modelling Project]] is a piece of coursework in which you build, test, and refine a mathematical model of a real situation and write it up as a report. It is marked on descriptive bands (introduction and research, the modelling process, interpretation of results, and communication) rather than by counting steps, so clear reasoning and judgement matter more than length.'
         ],
         highlights: [
-          { term: 'Linear Motion', description: 'Equations of motion (suvat), velocity-time graphs, and multi-stage journeys. Usually one of the more accessible questions.' },
-          { term: 'Projectiles', description: 'Objects launched at angles -- finding range, max height, time of flight. A very popular choice among students.' },
-          { term: 'Newton\'s Laws', description: 'F=ma applied to particles on surfaces, in lifts, or on inclines. Core topic that connects to several others.' },
-          { term: 'Connected Particles', description: 'Pulleys, tow-ropes, and systems of particles. Requires careful free-body diagrams and simultaneous equations.' },
-          { term: 'Moments and Equilibrium', description: 'Turning effects of forces, balancing beams, and ladders against walls. Setting up the moment equation correctly is key.' },
-          { term: 'Statics', description: 'Resolving forces on inclined planes, friction, and equilibrium problems. Requires clean force diagrams.' },
-          { term: 'Collisions', description: 'Conservation of momentum and coefficient of restitution. Direct and oblique impacts between particles and walls.' },
-          { term: 'Circular Motion', description: 'Objects moving in circles -- conical pendulums, cars on banked tracks, vertical circles.' },
-          { term: 'Simple Harmonic Motion', description: 'Oscillating systems -- springs, pendulums. Requires knowledge of SHM equations and period formulas.' },
-          { term: 'Differential Equations', description: 'First and second order differential equations modelling physical situations. Often the most challenging question.' }
+          { term: 'Mathematical Modelling', description: 'Building, testing, and refining a mathematical model of a real situation. Runs through the written paper AND is the focus of the separate 100-mark project.' },
+          { term: 'Kinematics and Dynamics', description: 'Motion and forces: linear motion (suvat), projectiles, connected particles, collisions, circular and relative motion, and friction. The largest strand on the written paper.' },
+          { term: 'Difference Equations', description: 'Recurrence relations that model step-by-step change over time -- e.g. population growth, the spread of an infection, or customer numbers.' },
+          { term: 'Networks and Graph Theory', description: 'Directed graphs, adjacency matrices, and shortest-/longest-path problems on weighted networks.' },
+          { term: 'Algorithms', description: 'Named algorithms such as Prim\'s, Kruskal\'s, Dijkstra\'s and Bellman\'s principle. Naming the correct algorithm is itself worth marks.' },
+          { term: 'Mathematical Modelling Project', description: 'The 100-mark (20%) coursework component. You model a real situation, iterate on it, and write it up as a report marked on descriptive bands.' }
         ],
         bullets: [
-          'Single paper: 2.5 hours, 10 questions, answer any 6',
-          'Each question: 50 marks. Total: 300 marks',
-          'One question per topic -- highly predictable structure',
-          'No coursework or practical -- 100% exam-based'
+          'Two components: written paper 400 marks (80%) + Mathematical Modelling Project 100 marks (20%)',
+          'Written paper: 2.5 hours, 10 questions at 50 marks each -- answer any 8',
+          'Strands: mathematical modelling, kinematics & dynamics, difference equations, networks & graph theory, algorithms',
+          'The project is 20% of your grade -- do not skip it'
         ]
       },
       // Section 2: Marking Criteria
@@ -178,16 +174,16 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'What the Examiner Rewards',
         eyebrow: '02 // Marking Criteria',
         paragraphs: [
-          'Applied Maths questions follow a consistent internal structure. Each 50-mark question is typically split into **two or three parts**, and the marking scheme awards marks at each stage of the solution. The examiner is looking for three things: a correct [[problem setup]], accurate [[mathematical execution]], and a clear final answer with appropriate units.',
-          'The most important marks in Applied Maths are earned in the **setup phase**. Drawing a correct [[free-body diagram]], identifying the right equations of motion, or establishing the correct coordinate system can be worth **10-15 marks** before you even start solving. Students who skip the diagram and dive straight into algebra are gambling with a huge portion of the marks.',
-          'The marking scheme uses a **cumulative approach** -- if you make an error early in a solution but then solve correctly from that point, you can still earn [[follow-through marks]] for all subsequent correct work. This means you should never abandon a question just because you think you made a mistake halfway through. Keep going -- the examiner will credit your method.',
-          'Presentation matters more in Applied Maths than in pure Maths. Because problems involve physical scenarios, the examiner expects to see: a clear diagram, forces labelled with their correct directions, variables defined (e.g., "Let a = acceleration"), and the final answer clearly stated with units. Answers without units can lose marks even if the numerical value is correct.'
+          'Applied Maths questions follow a consistent internal structure. Each 50-mark question is typically split into **two or three parts**, and most of the paper is built from small, individually-marked steps (commonly worth about 5 marks each). The examiner is looking for three things: a correct [[problem setup]], accurate [[mathematical execution]], and a clear final answer.',
+          'A lot of the value is earned in the **setup phase**. Drawing a correct [[free-body diagram]], identifying the right equations of motion, or establishing the correct coordinate system sets up everything that follows -- and for some questions naming the right method earns marks in its own right (the scheme, for example, allows marks just for correctly naming the right algorithm, and deducts marks if it is not named). Students who skip the setup and dive straight into algebra gamble with a large part of the question.',
+          'The marking scheme runs on a **penalty model**: examiners start from the full mark for a step and deduct for classified errors -- a method error ("blunder") costs 3 marks, while a minor arithmetic or transcription **slip costs only 1 mark**. Crucially, a slip is penalised once at its source and your later work built on it still scores, so you should never abandon a question just because you think you slipped halfway through. Keep going -- the examiner still credits your correct method. (The one exception: a slip that *oversimplifies* the problem is re-priced as a 3-mark blunder.)',
+          'Presentation matters more in Applied Maths than in pure Maths. Because problems involve physical scenarios, the examiner expects to see: a clear diagram, forces labelled with their correct directions, and variables defined (e.g., "Let a = acceleration"). State your final answer clearly to a sensible precision.'
         ],
         highlights: [
-          { term: 'problem setup', description: 'The initial stage where you define variables, draw diagrams, and identify which equations apply. Worth a significant portion of marks on every question.' },
-          { term: 'mathematical execution', description: 'The algebra and arithmetic you perform after setting up. Clean, step-by-step working is essential.' },
-          { term: 'free-body diagram', description: 'A diagram showing all forces acting on a particle or body. This is your single most important tool for earning setup marks.' },
-          { term: 'follow-through marks', description: 'If you make an early error but solve correctly from that point, the examiner still awards marks for your correct method.' }
+          { term: 'problem setup', description: 'The initial stage where you define variables, draw diagrams, and identify which equations or method apply. Sets up the marks for everything that follows.' },
+          { term: 'mathematical execution', description: 'The algebra and arithmetic you perform after setting up. Clean, step-by-step working is essential -- most steps are individually marked.' },
+          { term: 'free-body diagram', description: 'A diagram showing all forces acting on a particle or body. Your single most important tool for setting up dynamics questions correctly.' },
+          { term: 'penalty model', description: 'Examiners deduct from full marks: a method blunder costs 3 marks, a numerical slip only 1. A slip is charged once and your later work still scores -- so never give up mid-question.' }
         ]
       },
       // Section 3: High-Value Zones
@@ -195,19 +191,21 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'Where Your Marks Are',
         eyebrow: '03 // High-Value Zones',
         paragraphs: [
-          'The highest-value topics in terms of marks-to-effort ratio are [[Linear Motion]] and [[Projectiles]]. Both follow predictable patterns, use the same small set of suvat equations, and appear in recognisable formats year after year. Most students can master both topics with 4-5 hours of focused practice. Together they represent **100 marks** -- one-third of your total.',
-          '[[Newton\'s Laws]] and [[Connected Particles]] are the next tier. They require slightly more setup work (free-body diagrams, simultaneous equations), but the question types are finite and learnable. If you add these to Linear Motion and Projectiles, you now have 4 confident topics worth **200 marks**. You only need 2 more.',
-          '[[Collisions]] is often underestimated by students but is one of the most reliable scoring topics. The questions almost always involve conservation of momentum and the coefficient of restitution formula. Once you learn the two-step method (momentum equation + restitution equation), you can solve nearly every collision problem that has appeared in the last 15 years.',
-          'For your sixth topic, [[Moments and Equilibrium]] or [[Circular Motion]] tend to be the most popular choices. Moments questions involve balancing forces around a pivot -- if you can set up the moment equation correctly, the rest is straightforward algebra. Circular Motion questions follow a small number of standard setups (conical pendulum, banked track, vertical circle).'
+          'Because you answer 8 of the 10 written-paper questions, the biggest strategic move is breadth: you can only afford to leave out two questions, so you cannot rely on a handful of favourites. [[Kinematics and Dynamics]] is the strand that pays back that effort most -- on recent papers it accounts for several of the ten questions (linear motion, projectiles, connected particles, collisions, circular and relative motion, and friction), so being fluent across it protects a large block of your paper.',
+          'Within dynamics, [[Linear Motion]] and [[Projectiles]] follow the most predictable patterns and use the same small set of suvat equations, so they are usually the most accessible marks. [[Connected Particles]] and [[Collisions]] are the next tier -- they need more setup (free-body diagrams, simultaneous equations, conservation of momentum and the restitution formula) but the question types are finite and learnable.',
+          '[[Networks and Graph Theory]] and [[Algorithms]] are high-value precisely because many students under-prepare them. Directed graphs, adjacency matrices, and shortest-route problems reward a clear method, and naming the correct algorithm (Prim\'s, Kruskal\'s, Dijkstra\'s) is itself worth marks, so a little preparation here goes a long way.',
+          '[[Difference Equations]] and [[Mathematical Modelling]] appear throughout the paper and are the core of the separate project. Difference-equation questions model step-by-step change (growth, decay, the spread of an infection), and the modelling mindset -- set up, test, refine -- is exactly what the 100-mark project rewards, so time spent here counts twice.'
         ],
         highlights: [
-          { term: 'Linear Motion', description: 'Uses suvat equations in predictable formats. One of the easiest topics to score 50/50 on with focused practice.' },
+          { term: 'Kinematics and Dynamics', description: 'Linear motion, projectiles, connected particles, collisions, circular and relative motion, friction. The largest strand -- several of the ten questions on recent papers.' },
+          { term: 'Linear Motion', description: 'Uses suvat equations in predictable formats. One of the more accessible dynamics questions with focused practice.' },
           { term: 'Projectiles', description: 'Launches at angles using suvat + trig. Highly patterned questions that reward systematic practice.' },
-          { term: 'Newton\'s Laws', description: 'F=ma applied to standard setups. Requires good diagrams but the algebra is manageable.' },
           { term: 'Connected Particles', description: 'Pulley systems and tow-ropes. Once you master the free-body diagram technique, these become very scorable.' },
-          { term: 'Collisions', description: 'Conservation of momentum + restitution formula. A reliable 50 marks once you learn the two-step method.' },
-          { term: 'Moments and Equilibrium', description: 'Balancing forces around a pivot. Clean setup leads to straightforward algebra.' },
-          { term: 'Circular Motion', description: 'Standard setups like conical pendulums and banked tracks. Learn the key formula and apply to each scenario.' }
+          { term: 'Collisions', description: 'Conservation of momentum + coefficient of restitution. Reliable once you learn the two-step method.' },
+          { term: 'Networks and Graph Theory', description: 'Directed graphs, adjacency matrices, shortest-/longest-path problems. Rewards a clear, named method and is often under-prepared.' },
+          { term: 'Algorithms', description: 'Named algorithms (Prim\'s, Kruskal\'s, Dijkstra\'s, Bellman\'s principle). Correctly naming the algorithm is worth marks in itself.' },
+          { term: 'Difference Equations', description: 'Recurrence relations modelling step-by-step change -- growth, decay, spread of infection. Appears on recent papers and links to the project.' },
+          { term: 'Mathematical Modelling', description: 'Setting up, testing, and refining a model of a real situation. Runs through the paper and is the focus of the separate 100-mark project.' }
         ]
       },
       // Section 4: Common Pitfalls
@@ -218,13 +216,13 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
           'The single biggest mark-killer in Applied Maths is a **missing or incorrect diagram**. Every year, students lose setup marks because they did not draw a free-body diagram, or they drew one with forces pointing in the wrong direction. The diagram is not decoration -- it is where the examiner looks first to see if you understand the problem. A wrong diagram means wrong equations, which means a wrong answer and [[lost setup marks]].',
           'The second critical error is [[sign convention mistakes]]. In Applied Maths, positive and negative directions matter enormously. If you define "up" as positive for one equation but accidentally treat "down" as positive in the next, your entire solution collapses. Always write your sign convention at the top of your answer (e.g., "Taking right and up as positive") and stick to it.',
           'Students also lose marks by [[not defining variables]]. The examiner needs to know what your letters represent. Writing "Let T = tension in the string, a = acceleration of the system" takes five seconds but makes your solution readable and earns you marks. Jumping into algebra with undefined variables makes the examiner guess at your reasoning.',
-          'Finally, many students attempt too many questions. You only need 6, but some students start 7 or 8 and finish none of them properly. A half-finished question is worth far less than a complete one. Pick your 6 best topics, commit to them, and [[finish each question fully]] before moving on.'
+          'Finally, manage the fact that you answer **8 of 10** questions. You have only two questions of slack, so do not start more than you can finish -- a half-finished ninth question is worth far less than a complete eighth. Pick the 8 you are strongest on, commit to them, and [[finish each question fully]] before moving on. And because a "valid attempt" always banks the bottom of the marking scale, it is worth putting down a genuine attempt at every part you reach rather than leaving it blank.'
         ],
         highlights: [
           { term: 'lost setup marks', description: 'Marks allocated for the initial diagram, variable definition, and equation setup. These are lost when diagrams are missing or incorrect.' },
           { term: 'sign convention mistakes', description: 'Using inconsistent positive/negative directions across equations. Always state your convention and stick to it throughout.' },
           { term: 'not defining variables', description: 'Jumping into algebra without stating what each letter represents. This costs marks and makes your work harder to follow.' },
-          { term: 'finish each question fully', description: 'A complete answer to 6 questions beats partial answers to 8. Commit to your chosen 6 and see each one through to the end.' }
+          { term: 'finish each question fully', description: 'You answer 8 of 10, so you have little slack. A complete answer beats a half-finished extra question -- commit to your best 8 and see each one through.' }
         ]
       },
       // Section 5: Study Techniques
@@ -232,16 +230,16 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'How to Study Applied Maths',
         eyebrow: '05 // Study Techniques',
         paragraphs: [
-          'Applied Maths is the most pattern-based subject on the Leaving Cert. The same question types repeat year after year with different numbers. Your study strategy should centre on [[topic-by-topic past papers]]: take one topic (e.g., Projectiles), pull out that question from every available past paper, and work through them all in sequence. You will quickly see the 3-4 standard problem types that appear.',
-          'For each topic, build a [[method sheet]] -- a single page that lists the key formulas, the standard setup steps, and the common variations. For Projectiles, this might be: "Step 1: Resolve initial velocity into horizontal and vertical components. Step 2: Use suvat equations for vertical motion. Step 3: Use constant velocity for horizontal motion." These sheets become your revision backbone.',
-          'Practice under [[time pressure]] is essential. In the exam, you have approximately 25 minutes per question. Time yourself when doing past papers and build up to completing questions within this window. If a question consistently takes you more than 30 minutes, you either need more practice on that topic or should consider swapping it for a different one.',
-          'Finally, use the [[marking scheme as a study tool]]. After attempting a question, mark it yourself using the official scheme. This teaches you exactly what the examiner is looking for, where the marks are allocated, and what level of working is expected. You will learn to write solutions that hit every marking checkpoint.'
+          'Applied Maths is a highly pattern-based subject. The same question types recur with different numbers, so your study strategy should centre on [[strand-by-strand past papers]]: take one strand (e.g. projectiles within dynamics, or shortest-route networks), pull out those questions from the papers on the current specification (2023 onwards), and work through them in sequence. You will quickly see the standard problem types that appear. Note that pre-2023 papers are on the old syllabus and cover some topics no longer examined, so treat them as extra practice, not a guide to the current paper.',
+          'For each strand, build a [[method sheet]] -- a single page that lists the key formulas, the standard setup steps, and the common variations. For projectiles, this might be: "Step 1: Resolve initial velocity into horizontal and vertical components. Step 2: Use suvat equations for vertical motion. Step 3: Use constant velocity for horizontal motion." These sheets become your revision backbone.',
+          'Practise under [[time pressure]] is essential. On the written paper you answer 8 questions in 150 minutes, so budget roughly **18-19 minutes per question** and leave time to check. Time yourself on past papers and build up to completing questions within that window. If a question type consistently overruns, it flags where you need more practice.',
+          'Finally, run the [[Mathematical Modelling Project]] alongside your paper revision rather than leaving it to the end. It is 20% of your grade and is marked on how you build, test, and communicate a model -- so treat it as a real, iterative piece of work, and use the official marking descriptors (introduction and research, modelling process, interpretation, communication) to check your own report as you write it.'
         ],
         highlights: [
-          { term: 'topic-by-topic past papers', description: 'Group past paper questions by topic and work through all available examples for each. This reveals the repeating patterns.' },
-          { term: 'method sheet', description: 'A single-page summary of the key steps, formulas, and common variations for each topic. Your core revision tool.' },
-          { term: 'time pressure', description: 'Practise completing questions in 25 minutes or less. If a topic consistently takes too long, consider swapping it out.' },
-          { term: 'marking scheme as a study tool', description: 'Mark your own practice answers using the official scheme. This teaches you exactly what the examiner rewards.' }
+          { term: 'strand-by-strand past papers', description: 'Group current-specification (2023+) past questions by strand and work through them. This reveals the repeating patterns. Older papers are on the previous syllabus.' },
+          { term: 'method sheet', description: 'A single-page summary of the key steps, formulas, and common variations for each strand. Your core revision tool.' },
+          { term: 'time pressure', description: 'You answer 8 questions in 150 minutes -- aim for roughly 18-19 minutes each and leave time to check.' },
+          { term: 'Mathematical Modelling Project', description: 'The 100-mark (20%) coursework. Work on it alongside your paper revision and self-check against the official marking descriptors.' }
         ]
       },
       // Section 6: Action Plan
@@ -249,12 +247,12 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'Your Applied Maths Action Plan',
         eyebrow: '06 // Action Plan',
         paragraphs: [
-          'Choose your **6 core topics** and 1-2 backup topics. For most students, a strong starting six is: Linear Motion, Projectiles, Newton\'s Laws, Connected Particles, Collisions, and either Moments or Circular Motion. Print out the past paper questions for each of these topics (examinations.ie has papers going back decades) and organise them by topic.',
-          'Work through each topic in order, spending 2-3 study sessions per topic. On the first session, learn the method and do 2-3 questions with the textbook open. On the second session, do 3-4 questions without help. On the third session, do them under timed conditions. After completing all 6 topics, do at least two full mock exams under exam conditions -- picking your 6 questions and finishing within 2.5 hours.',
-          'In the final week, review your method sheets, redo any questions you previously got wrong, and do one final timed paper. On exam day, read all 10 questions before committing to your 6. Start with the topic you are most confident in to settle your nerves and build momentum.'
+          'Aim to be able to attempt at least 8 -- ideally 9 -- of the ten question types, since you answer 8 and want a safety margin. Build your base across the strands: kinematics and dynamics (linear motion, projectiles, connected particles, collisions, circular/relative motion, friction), difference equations, networks and graph theory, and algorithms. Use the current-specification papers (examinations.ie, 2023 onwards) and organise the questions by strand.',
+          'Work through each strand in turn, spending 2-3 study sessions on it. On the first session, learn the method and do a couple of questions with the textbook open; on the second, do more without help; on the third, do them under timed conditions. Alongside this, keep making progress on your Mathematical Modelling Project -- it is 20% of your grade. After covering the strands, do at least two full timed written papers, choosing your best 8 questions and finishing within 2.5 hours.',
+          'In the final week, review your method sheets, redo any questions you previously got wrong, and do one final timed paper. Make sure your project report is complete and self-checked against the marking descriptors. On exam day, read all 10 questions before committing to your 8, and start with the ones you are most confident in to settle your nerves and build momentum.'
         ],
         highlights: [],
-        commitmentText: 'This week, I will choose my 6 core topics and complete 3 past paper questions from my strongest topic under timed conditions (25 minutes each).'
+        commitmentText: 'This week, I will complete 3 past paper questions from my strongest strand under timed conditions (about 18-19 minutes each), and spend one session making progress on my Mathematical Modelling Project.'
       }
     ]
   },
@@ -396,21 +394,22 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'How Chemistry Actually Works',
         eyebrow: '01 // Exam Structure',
         paragraphs: [
-          'The Chemistry Leaving Cert is a **single exam paper** lasting **3 hours** with a total of **400 marks**. Like Physics, it is divided into two main sections: [[Section A]] (experiments) and [[Section B]] (theory, calculations, and applied chemistry). The structure rewards students who prepare both their experimental knowledge and their theory comprehensively.',
-          '[[Section A]] is worth **120 marks** and typically contains around **5 experiment-based questions** -- you must answer **3 of them**. Each is worth **40 marks**. These are drawn from the [[mandatory experiments]] on the syllabus, covering areas like titrations, organic preparations, tests for ions and gases, and calorimetry. The format is predictable: describe, draw, explain results, and state precautions.',
-          '[[Section B]] is worth **280 marks** and contains **8 questions** -- you must answer **5 of them**. Each question is worth **56 marks**. These questions span the major syllabus areas: Atomic Theory and the Periodic Table, Chemical Bonding, Stoichiometry and the Mole, Organic Chemistry, Rates of Reaction, Equilibrium, Acids and Bases, Oxidation-Reduction, and Industrial Chemistry/Environmental Chemistry.',
-          'The exam demands 8 answers in 180 minutes, giving roughly **22 minutes per question**. However, the experiment questions in Section A tend to be shorter and more formulaic, so experienced students often allocate about 15 minutes each for Section A and 24-25 minutes each for Section B.'
+          'The Chemistry Leaving Cert is a **single exam paper** lasting **3 hours** with a total of **400 marks**. It is divided into two sections: [[Section A]] (experiments) and [[Section B]] (theory, calculations, and applied chemistry). Across the whole paper there are **11 questions**, every one worth **50 marks**, and you answer **8 of them** -- so your total is **400 marks**. The structure rewards students who prepare both their experimental knowledge and their theory comprehensively.',
+          '[[Section A]] is the experiment section: it contains **3 questions** (Q1-Q3), and you must answer **at least two** of them. Each is worth **50 marks**. These are drawn from the [[mandatory experiments]] on the syllabus, covering areas like titrations, organic preparations, tests for ions and gases, and calorimetry. The format is predictable: describe, draw, explain results, and state precautions.',
+          '[[Section B]] is the theory section: it contains **8 questions** (Q4-Q11), each worth **50 marks**. Between the two sections you answer 8 questions in total, so once you have done at least two from Section A you make up the rest from Section B. These questions span the major syllabus areas: Atomic Theory and the Periodic Table, Chemical Bonding, Stoichiometry and the Mole, Organic Chemistry, Rates of Reaction, Equilibrium, Acids and Bases, Oxidation-Reduction, and Industrial Chemistry/Environmental Chemistry.',
+          'The exam demands 8 answers in 180 minutes, giving roughly **22 minutes per question**. The experiment questions in Section A tend to be shorter and more formulaic, so many students move a little faster through their Section A answers and give the extra time to the longer theory questions.'
         ],
         highlights: [
-          { term: 'Section A', description: 'Experiment questions: typically 5 available, answer 3. Worth 120 marks total (40 each). Based on mandatory practical work.' },
-          { term: 'Section B', description: 'Theory and calculations: 8 questions, answer 5. Worth 280 marks total (56 each). Covers the full Chemistry syllabus.' },
+          { term: 'Section A', description: 'Experiment questions (Q1-Q3): answer at least two, 50 marks each. Based on mandatory practical work.' },
+          { term: 'Section B', description: 'Theory and calculations (Q4-Q11): 8 questions at 50 marks each. You answer 8 questions across the whole paper (at least two from Section A), for 400 marks total.' },
           { term: 'mandatory experiments', description: 'Prescribed experiments including titrations, preparations, tests, and measurements. These form the basis of Section A and can appear in Section B.' }
         ],
         bullets: [
           'Single paper: 3 hours, 400 marks total',
-          'Section A: 3 from ~5 experiment questions (120 marks)',
-          'Section B: 5 from 8 theory questions (280 marks)',
-          'Roughly 15 min per Section A question, 24 min per Section B question'
+          '11 questions in all, each worth 50 marks -- answer any 8 (400 marks)',
+          'Section A (Q1-Q3): experiments -- answer at least two',
+          'Section B (Q4-Q11): theory -- make up the rest of your 8 answers here',
+          'Roughly 22 minutes per question on average'
         ]
       },
       // Section 2: Marking Criteria
@@ -435,13 +434,13 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'Where Your Marks Are',
         eyebrow: '03 // High-Value Zones',
         paragraphs: [
-          'Just like Physics, [[Section A]] is your most reliable mark-earner. The mandatory experiments repeat in predictable patterns, and the format is always the same. A student who thoroughly prepares all the experiments can realistically score **100-120 marks** in Section A. That is 30% of the exam from a section that rewards rote preparation rather than deep problem-solving.',
+          '[[Section A]] is your most reliable mark-earner. The mandatory experiments repeat in predictable patterns, and the format is always the same. You must answer at least two of the three experiment questions, each worth 50 marks -- and you can answer all three if you are confident, since every question on the paper is worth the same 50 marks. A student who thoroughly prepares all the experiments can realistically bank **100-150 marks** here from a section that rewards rote preparation rather than deep problem-solving.',
           '[[Organic Chemistry]] is the single most valuable topic in Section B. It appears every year, often across two questions -- one on reactions and mechanisms, another on analysis or structure determination. Organic Chemistry questions follow learnable patterns: functional group tests, preparation methods, and reaction mechanisms (especially the addition, substitution, and elimination reactions). This topic alone can be worth **80-100 marks**.',
           '[[Acids and Bases]] is another high-yield area. Questions on pH calculations, buffer solutions, and acid-base titrations appear frequently. The calculations follow a small number of standard types, and the definitions (pH, acid, base, buffer, conjugate pair) come up repeatedly. Mastering this topic is excellent value for revision time.',
           '[[Definitions across the syllabus]] represent the easiest marks on the entire paper. Chemistry has roughly 50-60 examinable definitions, and they appear throughout Section B. A student who learns all of them by heart using flashcards can pick up **40-50 marks** scattered across the paper with minimal effort. This is the single best return on a few hours of revision.'
         ],
         highlights: [
-          { term: 'Section A', description: 'The most predictable and learnable section. Master all mandatory experiments for up to 120 reliable marks.' },
+          { term: 'Section A', description: 'The most predictable and learnable section (Q1-Q3, 50 marks each). Answer at least two; master all the mandatory experiments to bank 100-150 reliable marks.' },
           { term: 'Organic Chemistry', description: 'The highest-value topic in Section B. Learn functional groups, reactions, mechanisms, and tests for a huge mark payoff.' },
           { term: 'Acids and Bases', description: 'pH calculations, buffers, and titrations. A small number of calculation types with high predictability.' },
           { term: 'Definitions across the syllabus', description: 'Roughly 50-60 definitions worth 40-50 marks total. Flashcard revision gives the best return per hour of study.' }
@@ -490,7 +489,7 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
         paragraphs: [
           'In week one, focus on Section A. List every mandatory experiment, write out a one-page summary for each, and practise reproducing them from memory. In parallel, begin making definition flashcards -- aim to cover all definitions within the first two weeks of revision. Test yourself on definitions for 10 minutes at the start of every study session.',
           'In weeks two and three, tackle Section B topic by topic. Spend one session on Organic Chemistry reactions and mechanisms, one on Acids & Bases calculations, one on Stoichiometry, and so on. For each topic, do at least 4-5 past paper questions and mark them against the official scheme. Keep a running list of your weakest areas and revisit them.',
-          'In the final week, do two full timed practice papers (3 hours each) and mark them. Review your experiment write-ups one more time, run through your flashcards, and rework any questions you scored below 60% on. On exam day, allocate roughly 45 minutes for Section A and 2 hours 15 minutes for Section B.'
+          'In the final week, do two full timed practice papers (3 hours each) and mark them. Review your experiment write-ups one more time, run through your flashcards, and rework any questions you scored below 60% on. On exam day, plan for roughly 22 minutes per question -- if you answer two experiment questions from Section A and six from Section B, that works out at about 45 minutes on Section A and 2 hours 15 minutes on Section B.'
         ],
         highlights: [],
         commitmentText: 'This week, I will create definition flashcards for one complete Chemistry topic (e.g., Acids and Bases) and test myself on them every day for 10 minutes using active recall.'
@@ -627,7 +626,7 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
     moduleNumber: '13',
     moduleTitle: 'Mastering Computer Science',
     moduleSubtitle: 'Your Complete CS Exam Guide',
-    moduleDescription: 'Navigate the Computer Science exam and coursework -- understand the ALT project, the written paper structure, and how to maximise marks across both.',
+    moduleDescription: 'Navigate the Computer Science exam and coursework -- understand the coursework project, the computer-based exam structure, and how to maximise marks across both.',
     themeName: 'sky',
     finishButtonText: 'Run Your Program',
     sections: [
@@ -636,21 +635,21 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'How Computer Science Actually Works',
         eyebrow: '01 // Exam Structure',
         paragraphs: [
-          'Computer Science is unique among Leaving Cert subjects because it has a significant **coursework component**. Your final grade is made up of two parts: the [[Applied Learning Task]] (ALT), worth **30%** of your overall mark, and the [[written exam]], worth **70%**. Both components must be taken seriously, but the ALT is completed before the exam and represents a major opportunity to bank marks early.',
-          'The [[Applied Learning Task]] is a substantial project completed during 5th or 6th year. You are given a brief by the SEC and must design, develop, and document a computational solution. The ALT assesses your ability to apply programming, computational thinking, and problem-solving to a real-world scenario. It is submitted as a portfolio including your code, documentation, and a reflective journal. The marking criteria emphasise [[process and documentation]] as much as the final product.',
-          'The [[written exam]] is a **2-hour paper** worth **70%** of your grade. It tests your understanding of computational thinking, programming concepts, algorithms, data structures, computer systems, and the societal impact of computing. The paper typically contains a mix of short-answer questions, code-reading questions, code-writing questions, and longer structured questions.',
-          'Because the ALT is worth 30%, a strong project can significantly boost your overall grade. A student who scores very well on the ALT effectively needs a lower exam mark to reach each grade boundary. This makes the ALT one of the most strategically important components in your entire Leaving Cert.'
+          'Computer Science is unique among Leaving Cert subjects because it has a significant **coursework component**. Your final grade is made up of two parts: the [[coursework project]], worth **30%** of your overall mark, and the [[end-of-course exam]], worth **70%**. Both components must be taken seriously, but the coursework is completed before the exam and represents a major opportunity to bank marks early.',
+          'The [[coursework project]] is a substantial piece of work in which you respond to a brief set by the SEC and design, develop, and document a computational artefact (for example a program in Python or JavaScript). It assesses your ability to apply programming, computational thinking, and problem-solving to a real-world scenario, and it is submitted with a report on your work. The marking criteria emphasise [[process and documentation]] as much as the final product.',
+          'The [[end-of-course exam]] is worth **70%** of your grade and is delivered as a **computer-based examination** -- you sit it at a computer, not with a handwritten script alone. It has both written and on-computer parts: alongside questions on computational thinking, algorithms, data structures, computer systems, and the societal impact of computing, there are **practical questions that require you to use a programming language at the computer** (writing, running, testing, and debugging code in the exam environment).',
+          'Because the coursework is worth 30%, a strong project can significantly boost your overall grade. A student who scores very well on the coursework effectively needs a lower exam mark to reach each grade boundary. This makes the coursework one of the most strategically important components in your entire Leaving Cert.'
         ],
         highlights: [
-          { term: 'Applied Learning Task', description: 'A coursework project worth 30% of your grade. Involves designing and coding a computational solution to a given brief.' },
-          { term: 'written exam', description: 'A 2-hour exam paper worth 70% of your grade. Covers computational thinking, programming, algorithms, data structures, and more.' },
-          { term: 'process and documentation', description: 'The ALT is marked on your development process and documentation as much as the final code. Keep a detailed journal.' }
+          { term: 'coursework project', description: 'A project worth 30% of your grade: you respond to an SEC brief by designing, coding, and documenting a computational artefact (e.g. in Python or JavaScript), submitted with a report.' },
+          { term: 'end-of-course exam', description: 'A computer-based examination worth 70% of your grade, sat at a computer. Covers computational thinking, programming, algorithms, data structures, and more -- including practical questions coded at the computer.' },
+          { term: 'process and documentation', description: 'The coursework is marked on your development process and documentation as much as the final code. Keep a detailed record as you build.' }
         ],
         bullets: [
-          'ALT coursework: 30% of final grade (completed during the year)',
-          'Written exam: 2 hours, 70% of final grade',
-          'Exam covers: computational thinking, programming, algorithms, data structures, computer systems',
-          'Strong ALT performance can significantly offset a weaker exam result'
+          'Coursework project: 30% of final grade (completed during the year)',
+          'End-of-course exam: 70% of final grade, delivered as a computer-based exam (sat at a computer)',
+          'Exam covers computational thinking, programming, algorithms, data structures, computer systems -- with practical questions coded at the computer',
+          'Strong coursework performance can significantly offset a weaker exam result'
         ]
       },
       // Section 2: Marking Criteria
@@ -658,13 +657,13 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'What the Examiner Rewards',
         eyebrow: '02 // Marking Criteria',
         paragraphs: [
-          'For the ALT, the examiner rewards a clear [[development process]]. This means showing that you planned your solution before coding it, tested it systematically, iterated on your design, and reflected on your decisions. Students who jump straight into coding and submit a working program but no documentation or planning evidence will score poorly. The journal and portfolio are as important as the code itself.',
-          'In the ALT, [[code quality]] matters but it is not just about whether the program works. The examiner looks for: clear variable naming, use of functions and modularity, comments explaining your logic, appropriate use of data structures, and evidence that you tested edge cases. A simple, well-structured program with clear documentation often scores higher than a complex program with messy code and no explanation.',
+          'For the coursework, the examiner rewards a clear [[development process]]. This means showing that you planned your solution before coding it, tested it systematically, iterated on your design, and reflected on your decisions. Students who jump straight into coding and submit a working program but no documentation or planning evidence will score poorly. Your report on the work is as important as the code itself.',
+          'In the coursework, [[code quality]] matters but it is not just about whether the program works. The examiner looks for: clear variable naming, use of functions and modularity, comments explaining your logic, appropriate use of data structures, and evidence that you tested edge cases. A simple, well-structured program with clear documentation often scores higher than a complex program with messy code and no explanation.',
           'On the written exam, the examiner rewards [[precise technical vocabulary]]. Questions about algorithms expect you to use terms like "time complexity," "iteration," "recursion," "sorting," and "searching" correctly. Questions about data structures expect you to distinguish between arrays, lists, stacks, queues, and dictionaries with specific examples.',
-          'For code-writing questions on the exam, the examiner values [[logical correctness]] over syntactic perfection. If your pseudocode or code demonstrates the correct logic and approach but has a minor syntax error, you will typically still earn most of the marks. However, if your logic is fundamentally wrong -- even if the syntax looks right -- you will score poorly. Focus on getting the algorithm right first.'
+          'For code-writing questions on the exam, the examiner values [[logical correctness]] over syntactic perfection. Because the exam is computer-based, the practical questions have you writing and running code at the computer -- so you can test and debug as you go. If your code demonstrates the correct logic and approach but has a minor syntax error, you will typically still earn most of the marks. However, if your logic is fundamentally wrong -- even if the syntax looks right -- you will score poorly. Focus on getting the algorithm right first.'
         ],
         highlights: [
-          { term: 'development process', description: 'Planning, iterating, testing, and reflecting. The ALT rewards the journey as much as the destination.' },
+          { term: 'development process', description: 'Planning, iterating, testing, and reflecting. The coursework rewards the journey as much as the destination.' },
           { term: 'code quality', description: 'Clear naming, modularity, comments, appropriate data structures, and edge-case testing. Well-structured beats complex.' },
           { term: 'precise technical vocabulary', description: 'Using correct CS terminology (time complexity, recursion, iteration, etc.) in exam answers.' },
           { term: 'logical correctness', description: 'Getting the algorithm and logic right matters more than perfect syntax in code-writing questions.' }
@@ -675,13 +674,13 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'Where Your Marks Are',
         eyebrow: '03 // High-Value Zones',
         paragraphs: [
-          'The [[ALT project]] at 30% of your total grade is the single biggest marks opportunity you have control over before exam day. Unlike the exam, you have weeks to work on it, can get feedback from your teacher, and can iterate until it is right. Investing serious time in the ALT is one of the smartest strategic moves in the entire Leaving Cert. Aim for an ALT score that puts you ahead before you even sit the exam.',
+          'The [[coursework project]] at 30% of your total grade is the single biggest marks opportunity you have control over before exam day. Unlike the exam, you have weeks to work on it, can get feedback from your teacher, and can iterate until it is right. Investing serious time in the coursework is one of the smartest strategic moves in the entire Leaving Cert. Aim for a coursework score that puts you ahead before you even sit the exam.',
           'On the written exam, [[programming and algorithms]] questions are the highest-value section. These test your ability to read code, trace through algorithms, write pseudocode, and solve problems computationally. Students who have practised coding regularly throughout the year find these questions significantly easier than those who relied on theory alone. Practising actual coding -- writing programs, debugging, and solving problems -- is the best preparation.',
           '[[Computational thinking]] questions test your ability to decompose problems, recognise patterns, abstract away unnecessary detail, and design algorithmic solutions. These questions are often more accessible than they look because they test a way of thinking rather than specific knowledge. If you practise breaking down problems step by step, you can score well even on unfamiliar problem types.',
           'Questions on [[computer systems and societal impact]] tend to be the most accessible for students who have not been strong coders. These cover topics like hardware vs software, networks, data representation, cybersecurity, and the ethical/social implications of technology. They reward clear, structured writing with specific examples rather than coding ability.'
         ],
         highlights: [
-          { term: 'ALT project', description: 'Worth 30% of your final grade and completed before the exam. The biggest controllable marks opportunity in CS.' },
+          { term: 'coursework project', description: 'Worth 30% of your final grade and completed before the exam. The biggest controllable marks opportunity in CS.' },
           { term: 'programming and algorithms', description: 'The highest-value section on the written exam. Regular coding practice is the best preparation.' },
           { term: 'Computational thinking', description: 'Problem decomposition, pattern recognition, and abstraction. Tests thinking skills rather than memorisation.' },
           { term: 'computer systems and societal impact', description: 'Hardware, networks, data, ethics. More accessible for students who are stronger in theory than coding.' }
@@ -692,13 +691,13 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'What Costs You Marks',
         eyebrow: '04 // Common Pitfalls',
         paragraphs: [
-          'The biggest mark-killer in CS is [[neglecting the ALT documentation]]. Many students build a working program but submit thin documentation -- no planning diagrams, no testing evidence, no reflective journal entries. The ALT is not just marked on the final product. The SEC marking criteria explicitly allocate significant marks to the development process, and students who skip this documentation are throwing away easy marks.',
+          'The biggest mark-killer in CS is [[neglecting the coursework documentation]]. Many students build a working program but submit a thin report -- no planning, no testing evidence, no account of the decisions they made. The coursework is not just marked on the final product. The SEC marking criteria explicitly allocate significant marks to the development process, and students who skip this documentation are throwing away easy marks.',
           'On the written exam, students lose marks by [[writing vague explanations]] when precise technical language is expected. "The program goes through the list and finds the biggest number" is not as strong as "The algorithm iterates through the array, comparing each element to a running maximum, and returns the largest value." Using correct terminology demonstrates genuine understanding.',
           'In code-writing questions, the most common error is [[not planning before coding]]. Students who start writing code immediately often produce tangled, incorrect logic. Taking 60 seconds to sketch out the steps (in plain English or pseudocode) before writing the actual code dramatically improves the quality and correctness of your answer.',
           'Finally, students who [[do not practise coding regularly]] throughout the year find the exam extremely difficult. CS is a skills-based subject -- you cannot cram programming ability in the last few weeks. The students who score best on the code-reading and code-writing questions are those who have been writing and debugging code consistently all year. Start early and code often.'
         ],
         highlights: [
-          { term: 'neglecting the ALT documentation', description: 'Submitting code without planning, testing evidence, or reflective journal. Documentation marks are significant and easy to earn.' },
+          { term: 'neglecting the coursework documentation', description: 'Submitting code without planning, testing evidence, or an account of your decisions. Documentation marks are significant and easy to earn.' },
           { term: 'writing vague explanations', description: 'Using imprecise language instead of correct CS terminology. Be specific: "iterates," "time complexity," "data structure."' },
           { term: 'not planning before coding', description: 'Jumping into code-writing without sketching the algorithm first. A 60-second plan prevents logic errors.' },
           { term: 'do not practise coding regularly', description: 'Programming ability cannot be crammed. Regular coding practice throughout the year is essential.' }
@@ -712,14 +711,14 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
           'CS study should be split between [[active coding practice]] and [[theory revision]]. For coding, spend at least 2-3 sessions per week actually writing programs. Use platforms like repl.it, CodeHS, or just a simple text editor and terminal. Solve small problems: sort a list, search for an item, build a simple calculator, parse a string. The more problems you solve, the more fluent you become.',
           'For theory, make [[concept summary cards]] for each topic: algorithms (searching, sorting, time complexity), data structures (arrays, lists, stacks, queues, trees), computer systems (CPU, memory, storage, networking), and societal issues (privacy, security, AI ethics). Each card should include a definition, a diagram or example, and a past paper question that tests it.',
           'Practise [[code tracing]] regularly. The exam will give you a block of code and ask what it outputs, or ask you to identify an error. The only way to get good at this is practice: take a piece of code, trace through it line by line (writing down variable values at each step), and predict the output. Then run the code to check. This skill transfers directly to the exam.',
-          'For the ALT, keep a [[project journal]] from day one. Every time you work on your project, write a short entry: what you did, what decisions you made and why, what problems you encountered, and how you solved them. This journal becomes the core of your documentation and is much easier to write as you go than to reconstruct at the end.'
+          'For the coursework, keep a [[project journal]] from day one. Every time you work on your project, write a short entry: what you did, what decisions you made and why, what problems you encountered, and how you solved them. This running record becomes the core of your report and is much easier to write as you go than to reconstruct at the end.'
         ],
         highlights: [
           { term: 'active coding practice', description: 'Writing actual programs 2-3 times per week. Solve small problems to build fluency in programming logic.' },
           { term: 'theory revision', description: 'Concept cards covering algorithms, data structures, computer systems, and societal impact.' },
           { term: 'concept summary cards', description: 'One card per concept with definition, diagram/example, and a linked past paper question.' },
           { term: 'code tracing', description: 'Stepping through code line by line, tracking variable values, and predicting output. A key exam skill.' },
-          { term: 'project journal', description: 'A running log of your ALT development process. Write entries as you work, not at the end.' }
+          { term: 'project journal', description: 'A running log of your coursework development process. Write entries as you work, not at the end.' }
         ]
       },
       // Section 6: Action Plan
@@ -727,12 +726,12 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'Your Computer Science Action Plan',
         eyebrow: '06 // Action Plan',
         paragraphs: [
-          'If you have not started your ALT, start now. Create a project plan, begin your reflective journal, and aim to have a working prototype at least 4 weeks before the submission deadline. Document every step as you go -- screenshots, code snippets, design decisions, and test results. The documentation is worth as much as the code itself.',
+          'If you have not started your coursework project, start now. Create a project plan, begin your running journal, and aim to have a working prototype at least 4 weeks before the submission deadline. Document every step as you go -- screenshots, code snippets, design decisions, and test results. The documentation is worth as much as the code itself.',
           'For the written exam, build a revision schedule that alternates between **coding practice** (solving problems, tracing code) and **theory review** (concept cards, past paper questions). Aim for at least 3 coding sessions and 2 theory sessions per week in the lead-up to the exam. Work through every available past paper, as the question styles and topics are still settling into predictable patterns.',
-          'In the final two weeks, focus on timed practice: do a full 2-hour paper under exam conditions, mark it, and identify gaps. Spend your remaining sessions filling those gaps. On exam day, read every question before starting, answer the ones you are most confident in first, and remember that clear, well-explained logic earns more marks than clever but unclear code.'
+          'In the final two weeks, focus on timed practice: sit a full past paper under exam conditions -- and because the real exam is computer-based, practise the programming questions at a computer so you are used to writing, running, and debugging code on screen. Mark your attempt, identify gaps, and spend your remaining sessions filling them. On exam day, read every question before starting, answer the ones you are most confident in first, and remember that clear, well-explained logic earns more marks than clever but unclear code.'
         ],
         highlights: [],
-        commitmentText: 'This week, I will complete one coding challenge per day (e.g., sort a list, search for an element, reverse a string) and write a 200-word reflective journal entry for my ALT project.'
+        commitmentText: 'This week, I will complete one coding challenge per day (e.g., sort a list, search for an element, reverse a string) and write a 200-word journal entry for my coursework project.'
       }
     ]
   },
@@ -746,7 +745,7 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
     moduleNumber: '14',
     moduleTitle: 'Mastering Ag Science',
     moduleSubtitle: 'Your Complete Ag Science Guide',
-    moduleDescription: 'Crack the Agricultural Science exam -- from the CBAs and mandatory experiments to the written paper -- and learn what the examiner rewards.',
+    moduleDescription: 'Crack the Agricultural Science exam -- from the Individual Investigative Study and experiments to the written paper -- and learn what the examiner rewards.',
     themeName: 'yellow',
     finishButtonText: 'Cultivate Your Marks',
     sections: [
@@ -755,29 +754,25 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'How Agricultural Science Actually Works',
         eyebrow: '01 // Exam Structure',
         paragraphs: [
-          'Agricultural Science has undergone significant syllabus changes in recent years, reflecting its move to the new specification. The assessment consists of a **written exam paper** lasting **2 hours and 30 minutes** and [[Classroom-Based Assessments]] (CBAs) completed during the course. The written exam is the primary determinant of your Leaving Cert grade, but the CBAs build essential practical knowledge that feeds directly into the exam.',
-          'The written paper is divided into three sections. [[Section A]] contains **short questions** testing broad recall across the syllabus -- definitions, diagrams, and quick calculations. [[Section B]] focuses on **experiments and investigations**, testing your knowledge of the [[mandatory experiments]] and practical procedures. [[Section C]] contains **long answer questions** that require detailed, structured responses on major syllabus topics.',
+          'Under the current specification, Agricultural Science is assessed in **two components**: a **written exam paper** worth **75%** (300 marks) and the [[Individual Investigative Study]] (IIS) coursework worth **25%** (100 marks), for a total of **400 marks**. Both count directly towards your grade, so the IIS is a real quarter of your result -- not just preparation.',
+          'The written paper is divided into two sections. [[Section A]] contains **short questions** worth **100 marks** -- you answer **any 10 questions at 10 marks each**, testing broad recall across the syllabus (definitions, diagrams, and quick calculations). [[Section B]] contains **long answer questions** worth **200 marks** -- you answer **any 4 questions at 50 marks each**, requiring detailed, structured responses (including experiments and investigations) on major syllabus topics.',
           'The syllabus covers four main strands: [[Soils, Crops and the Environment]], [[Animal Science and Production]], [[Food Science and Human Health]], and [[Sustainability and the Agri-Food Industry]]. Questions can draw from any of these strands, and the best-performing students are those who have covered all four comprehensively rather than betting on a few topics appearing.',
-          'The CBAs include practical investigations and research activities completed during 5th and 6th year. While the CBAs themselves do not carry a direct percentage of the final exam mark in the same way as the CS ALT, the [[practical knowledge and skills]] developed through the CBAs are directly examinable on the written paper. Students who engaged seriously with their CBAs have a significant advantage in Sections A and B of the exam.'
+          'The [[Individual Investigative Study]] (IIS) is a piece of coursework completed during the course, in which you carry out and write up your own investigation. It is worth **25% of your grade in its own right**, and the practical knowledge and skills you build through it also feed directly into the written paper. Students who engage seriously with the IIS have a significant advantage across the whole exam.'
         ],
         highlights: [
-          { term: 'Classroom-Based Assessments', description: 'Practical investigations and research activities completed during the course. The skills developed are directly tested on the written exam.' },
-          { term: 'Section A', description: 'Short questions testing broad recall: definitions, diagrams, and quick calculations across all syllabus strands.' },
-          { term: 'Section B', description: 'Experiment and investigation questions. Tests your knowledge of mandatory experiments and practical procedures.' },
-          { term: 'Section C', description: 'Long answer questions requiring detailed, structured responses on major agricultural science topics.' },
-          { term: 'mandatory experiments', description: 'Prescribed experiments on soils, plant growth, food testing, and animal science that form the basis of Section B questions.' },
+          { term: 'Individual Investigative Study', description: 'The IIS coursework, worth 25% (100 marks). You carry out and write up your own investigation during the course. Marked on a five-band rubric across sections like the investigative process and results/analysis.' },
+          { term: 'Section A', description: 'Short questions worth 100 marks -- answer any 10 at 10 marks each. Tests broad recall: definitions, diagrams, and quick calculations across all syllabus strands.' },
+          { term: 'Section B', description: 'Long answer questions worth 200 marks -- answer any 4 at 50 marks each. Detailed, structured responses (including experiments and investigations) on major topics.' },
           { term: 'Soils, Crops and the Environment', description: 'Soil types, nutrients, crop growth, pest management, and environmental impact. A major syllabus strand.' },
           { term: 'Animal Science and Production', description: 'Animal nutrition, reproduction, genetics, breeding, and livestock management systems.' },
           { term: 'Food Science and Human Health', description: 'Food composition, food processing, nutrition, food safety, and the link between diet and health.' },
-          { term: 'Sustainability and the Agri-Food Industry', description: 'Sustainable farming practices, the food chain, agricultural economics, and environmental stewardship.' },
-          { term: 'practical knowledge and skills', description: 'Hands-on experience from CBAs feeds directly into exam questions, especially in Sections A and B.' }
+          { term: 'Sustainability and the Agri-Food Industry', description: 'Sustainable farming practices, the food chain, agricultural economics, and environmental stewardship.' }
         ],
         bullets: [
-          'Written paper: 2.5 hours with three sections',
-          'Section A: Short questions (broad recall)',
-          'Section B: Experiments and investigations',
-          'Section C: Long structured questions',
-          'CBAs completed during the course build exam-relevant skills'
+          'Written exam: 75% (300 marks); Individual Investigative Study (IIS): 25% (100 marks) -- 400 marks total',
+          'Section A: short questions -- answer any 10 at 10 marks each (100 marks)',
+          'Section B: long questions -- answer any 4 at 50 marks each (200 marks)',
+          'The IIS is completed during the course and counts for a full quarter of your grade'
         ]
       },
       // Section 2: Marking Criteria
@@ -786,14 +781,14 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
         eyebrow: '02 // Marking Criteria',
         paragraphs: [
           'Agricultural Science rewards students who combine **scientific precision** with **practical agricultural knowledge**. The examiner is looking for answers that demonstrate both theoretical understanding and awareness of real-world farming and food production. Writing "nitrogen is important for plant growth" is too vague. Writing "nitrogen promotes vegetative growth and is a key component of chlorophyll and amino acids" shows the depth the examiner expects.',
-          'In Section B experiment questions, the examiner applies the same standards as in the other sciences: [[specific procedural detail]]. You must name the chemicals, describe the steps in order, state your results and observations precisely, and explain what your results demonstrate. For Ag Science experiments specifically, you also need to show awareness of [[agricultural context]] -- how the experiment relates to farming practice.',
-          'Section C long answers are marked on a [[points-based system]] similar to Biology. The examiner has a list of valid marking points, and you earn marks for each correct, distinct point you make. This means that well-structured answers with clear, separate points score better than long, rambling paragraphs. Use numbered points or separate paragraphs for each distinct piece of information.',
+          'When a question asks about an experiment or investigation, the examiner applies the same standards as in the other sciences: [[specific procedural detail]]. You must name the chemicals, describe the steps in order, state your results and observations precisely, and explain what your results demonstrate. For Ag Science experiments specifically, you also need to show awareness of [[agricultural context]] -- how the experiment relates to farming practice.',
+          'The long answers in Section B are marked on a [[points-based system]] similar to Biology. The examiner has a list of valid marking points, and you earn marks for each correct, distinct point you make. This means that well-structured answers with clear, separate points score better than long, rambling paragraphs. Use numbered points or separate paragraphs for each distinct piece of information.',
           'The examiner values [[real-world examples]] highly. When discussing crop management, name specific crops (e.g., barley, potatoes, grass silage). When discussing animal production, name specific breeds and systems (e.g., Friesian dairy cattle, spring calving system). Specific examples demonstrate genuine knowledge and earn marks that generic answers miss.'
         ],
         highlights: [
           { term: 'specific procedural detail', description: 'Name chemicals, describe steps precisely, state observations clearly. Vague experiment descriptions score poorly.' },
           { term: 'agricultural context', description: 'Relating experiments and theory to real farming practice. Shows the examiner you understand the practical relevance.' },
-          { term: 'points-based system', description: 'Section C answers are marked by counting valid points. Structure your answer clearly with distinct, separate points.' },
+          { term: 'points-based system', description: 'Section B long answers are marked by counting valid points. Structure your answer clearly with distinct, separate points.' },
           { term: 'real-world examples', description: 'Naming specific crops, breeds, farming systems, and practices. Specific examples earn marks that generic answers miss.' }
         ]
       },
@@ -802,16 +797,16 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'Where Your Marks Are',
         eyebrow: '03 // High-Value Zones',
         paragraphs: [
-          '[[Section B experiments]] are the most predictable and learnable part of the paper. The mandatory experiments cover a finite set of procedures -- soil testing (pH, organic matter, water content), plant growth experiments, food tests (starch, protein, fat, vitamin C), and animal science investigations. Learning these experiments thoroughly is the fastest way to secure reliable marks. The format is always the same: describe, diagram, results, conclusion.',
-          '[[Section A short questions]] are a goldmine for well-prepared students. They test breadth rather than depth -- a little knowledge about every topic goes a long way. Definitions, labelled diagrams, and simple calculations make up most of Section A. Students who have covered the full syllabus (even superficially) consistently outperform those who know three topics inside out but have gaps elsewhere.',
-          'In Section C, [[Animal Science]] and [[Soils and Crops]] are the highest-value topics. Animal Science covers nutrition, reproduction, genetics, and production systems -- it is a rich area with many examinable points. Soils and Crops covers soil types, nutrient management, crop establishment, and pest/disease control. Together, these two strands typically account for the majority of Section C marks.',
+          '[[Experiment and investigation content]] is among the most predictable and learnable material on the paper. The practical work covers a finite set of procedures -- soil testing (pH, organic matter, water content), plant growth experiments, food tests (starch, protein, fat, vitamin C), and animal science investigations -- and it can be examined in both the short questions and the long questions. Learning these thoroughly is a fast way to secure reliable marks. The write-up format is always the same: describe, diagram, results, conclusion.',
+          '[[Section A short questions]] are a goldmine for well-prepared students. They test breadth rather than depth -- a little knowledge about every topic goes a long way, and you answer any 10 at 10 marks each. Definitions, labelled diagrams, and simple calculations make up most of Section A. Students who have covered the full syllabus (even superficially) consistently outperform those who know three topics inside out but have gaps elsewhere.',
+          'In the Section B long questions, [[Animal Science]] and [[Soils and Crops]] are the highest-value topics. Animal Science covers nutrition, reproduction, genetics, and production systems -- it is a rich area with many examinable points. Soils and Crops covers soil types, nutrient management, crop establishment, and pest/disease control. Together, these two strands typically account for a large share of the Section B marks.',
           '[[Food Science]] questions have become increasingly important under the new specification. Questions on food composition, processing, preservation, and the relationship between diet and health appear regularly. Students who understand the science behind food production (not just farming) have access to a whole set of questions that others may struggle with.'
         ],
         highlights: [
-          { term: 'Section B experiments', description: 'A finite set of mandatory experiments with predictable exam formats. Learn them all for reliable, scorable marks.' },
-          { term: 'Section A short questions', description: 'Tests breadth of knowledge. Covering the full syllabus -- even lightly -- pays dividends in this section.' },
+          { term: 'Experiment and investigation content', description: 'A finite set of practical procedures with predictable write-up formats, examinable in both short and long questions. Learn them all for reliable, scorable marks.' },
+          { term: 'Section A short questions', description: 'Tests breadth of knowledge; answer any 10 at 10 marks each. Covering the full syllabus -- even lightly -- pays dividends in this section.' },
           { term: 'Animal Science', description: 'Nutrition, reproduction, genetics, and production systems. A rich topic with many examinable marking points.' },
-          { term: 'Soils and Crops', description: 'Soil types, nutrients, crop management, and pest control. Frequently the highest-weighted area in Section C.' },
+          { term: 'Soils and Crops', description: 'Soil types, nutrients, crop management, and pest control. Frequently a high-weighted area in the Section B long questions.' },
           { term: 'Food Science', description: 'Food composition, processing, preservation, and diet-health links. Increasingly important under the new specification.' }
         ]
       },
@@ -822,7 +817,7 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
         paragraphs: [
           'The biggest mistake in Ag Science is assuming that **common sense and farm knowledge** are enough. Students from farming backgrounds sometimes think they can answer questions based on practical experience alone. But the examiner wants [[scientific terminology]], not colloquial descriptions. "The soil was wet and sticky" is not the same as "the soil had a high clay content and poor drainage." Always use the scientific language from the syllabus.',
           'In experiment questions, students lose marks by [[not quantifying their results]]. "The plant grew taller in the light" is weaker than "the plant in the light grew to 15cm over 10 days, while the plant in the dark grew to only 3cm." Including actual numbers (even approximate ones from your experiment) demonstrates rigour and earns extra marks.',
-          'Section C answers often suffer from [[poor structure]]. Students write one long paragraph and expect the examiner to find the marking points buried in it. Instead, separate your answer into clear, distinct points or short paragraphs. Each new point should be clearly identifiable. This makes the examiner\'s job easier and ensures you get credit for every valid point.',
+          'Long answers often suffer from [[poor structure]]. Students write one long paragraph and expect the examiner to find the marking points buried in it. Instead, separate your answer into clear, distinct points or short paragraphs. Each new point should be clearly identifiable. This makes the examiner\'s job easier and ensures you get credit for every valid point.',
           'Finally, students often [[neglect the newer syllabus strands]] -- particularly Food Science and Sustainability. These strands are fully examinable and questions on them appear regularly. Students who only revise the traditional topics (soils, crops, animals) are limiting their options on the exam paper and missing marks in Section A.'
         ],
         highlights: [
@@ -838,8 +833,8 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
         eyebrow: '05 // Study Techniques',
         paragraphs: [
           'Ag Science revision should be organised around the **four syllabus strands**: Soils/Crops/Environment, Animal Science, Food Science, and Sustainability. Create a [[revision checklist]] for each strand listing every topic, and tick each one off as you study it. This ensures you cover the full syllabus and do not leave gaps that cost you marks in Section A.',
-          'For experiments, use the same [[structured write-up approach]] as the other sciences. For each mandatory experiment, prepare: a labelled diagram, equipment and materials list, step-by-step procedure, results (with numbers where possible), conclusion, and agricultural relevance. Practise writing these from memory until they are automatic. This preparation pays off directly in Section B.',
-          'For Section C long questions, use [[past paper practice with self-marking]]. Write full answers to past questions under timed conditions, then mark them against the marking scheme (where available) or your textbook. Count the number of distinct, valid points in your answer. If you are consistently making fewer than 8-10 points per question, you need to add more specific detail to your answers.',
+          'For experiments, use the same [[structured write-up approach]] as the other sciences. For each experiment, prepare: a labelled diagram, equipment and materials list, step-by-step procedure, results (with numbers where possible), conclusion, and agricultural relevance. Practise writing these from memory until they are automatic. This preparation pays off directly in both the short and long questions.',
+          'For the Section B long questions, use [[past paper practice with self-marking]]. Write full answers to past questions under timed conditions, then mark them against the marking scheme (where available) or your textbook. Count the number of distinct, valid points in your answer. If you are consistently making fewer than 8-10 points per question, you need to add more specific detail to your answers.',
           'Make [[agricultural vocabulary flashcards]] covering definitions from every strand. Ag Science has a large number of specific terms (e.g., leaching, nitrification, colostrum, pasteurisation, silage, photosynthesis, sustainability). The examiner expects these terms to appear in your answers. Flashcard revision for 10 minutes at the start of each study session builds your vocabulary steadily over time.'
         ],
         highlights: [
@@ -855,8 +850,8 @@ export const STEM_CONTENT: Record<string, SubjectModuleContent> = {
         eyebrow: '06 // Action Plan',
         paragraphs: [
           'Create a **four-strand revision plan**. In week one, focus on Soils, Crops and the Environment -- create your topic summaries, experiment write-ups, and flashcards for this strand. In week two, do the same for Animal Science. Week three covers Food Science, and week four covers Sustainability. By the end of four weeks, you will have the full syllabus covered with revision materials you can return to.',
-          'In parallel with your strand revision, practise Section B experiment questions from past papers. Aim to complete all available experiment questions for each mandatory experiment. After covering all four strands, move to Section C past paper practice -- write at least 3-4 long answers per week under timed conditions and mark them yourself.',
-          'In the final two weeks, do two full timed practice papers (2.5 hours each). Identify your weakest strand and spend extra time there. On exam day, answer Section A first (it is the quickest and builds confidence), then Section B (experiments -- your most predictable marks), and finally Section C (where you choose your strongest topics). Read all Section C questions before committing to your choices.'
+          'In parallel with your strand revision, practise the experiment and investigation questions from past papers. Aim to complete all available practical questions for each experiment. After covering all four strands, move to Section B long-question practice -- write at least 3-4 long answers per week under timed conditions and mark them yourself.',
+          'In the final two weeks, do two full timed practice papers. Identify your weakest strand and spend extra time there. On exam day, answer Section A first (the short questions are quick and build confidence -- answer any 10), then move to the Section B long questions and choose the 4 that play to your strongest topics. Read all the Section B questions before committing to your choices.'
         ],
         highlights: [],
         commitmentText: 'This week, I will create a complete revision checklist covering all four syllabus strands and write structured experiment summaries for 3 mandatory experiments from memory.'

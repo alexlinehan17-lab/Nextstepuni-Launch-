@@ -23,7 +23,7 @@ export const PRACTICAL_CONTENT: Record<string, SubjectModuleContent> = {
     moduleTitle: 'Mastering Home Economics',
     moduleSubtitle: 'Your Complete Home Ec Exam Guide',
     moduleDescription:
-      'Master the Home Economics exam and practical components — from the food practical to the journal and written paper — and learn where the marks really are.',
+      'Master the Home Economics exam — the written paper and the Food Studies coursework journal — and learn where the marks really are.',
     themeName: 'pink',
     finishButtonText: 'Bring It Home',
     sections: [
@@ -32,16 +32,16 @@ export const PRACTICAL_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'How Home Economics Actually Works',
         eyebrow: '01 // Exam Structure',
         paragraphs: [
-          'Home Economics is one of the most unique subjects on the Leaving Cert because it is assessed across **three separate components** — a written exam, a food practical, and a coursework journal. Understanding how each piece fits together is the first step to maximising your grade. Too many students pour all their energy into the written paper and neglect the practical and journal, which is a strategic mistake because those components collectively account for roughly **half of your total mark**.',
-          'The **written paper** is sat in June, lasts **2 hours 30 minutes**, and is worth approximately **250 marks** (around 50% of the total). You choose one of two electives: [[Elective 1 — Food Studies]] or [[Elective 2 — Social Studies]]. Most students take Elective 1. Section A is a compulsory short-answer section, and Section B contains longer structured and essay-style questions from your chosen elective.',
-          'The [[Food Practical Exam]] is the timed cooking test, typically held in April or early May in your school\'s home ec room. It is worth roughly **35% of your total mark**. You receive a brief with a set of dishes to prepare, and you are assessed on planning, execution, presentation, and hygiene. This is the single biggest block of marks outside the written paper.',
-          'The [[Coursework Journal]] — sometimes called the food studies assignment — is worth approximately **80 marks (around 15%)**. It documents your research, practical experiments, and evaluations throughout the year. If done properly, these are among the most reliable marks in the entire subject because they are completed under your own control with time to polish your work.'
+          'Home Economics is assessed across **two separate components** — a written exam and a coursework journal. Understanding how each piece fits together is the first step to maximising your grade. Too many students pour all their energy into the written paper and neglect the journal, which is a strategic mistake because the journal is worth **20% of your total mark before you sit the written paper at all**.',
+          'The **written paper** is sat in June and is worth **320 marks — 80% of your total grade (400 marks)**. It is structured in three sections. [[Section A]] is a compulsory short-answer section worth 60 marks (answer any ten of the printed questions). [[Section B]] is worth 180 marks and centres on Food Studies, which is the core of the course — you answer the compulsory Question 1 (80 marks) plus any two of the remaining questions (50 marks each). [[Section C]] is worth up to 80 marks and is where you answer an elective question.',
+          'In [[Section C]] you answer **one** option: one of the three electives — Home Design and Management, Textiles Fashion and Design, or Social Studies — or the Section C core question. Note that Food Studies is NOT an elective; it is the compulsory core of the course, examined in Section B. There is **no timed food practical exam** in Leaving Certificate Home Economics — the timed cooking test you may have done in Junior Cycle does not carry over to the Leaving Cert.',
+          'The [[Coursework Journal]] — the Food Studies coursework — is worth **80 marks (20% of the total)**. It documents your research, practical food investigations, and evaluations, and is completed and submitted earlier in your Leaving Cert year. If done properly, these are among the most reliable marks in the entire subject because they are completed under your own control with time to polish your work.'
         ],
         highlights: [
-          { term: 'Elective 1 — Food Studies', description: 'The most popular elective, covering food science, nutrition, food technology, and cookery. Taken by the vast majority of HL students.' },
-          { term: 'Elective 2 — Social Studies', description: 'Covers family resource management, consumer studies, and social aspects of home economics. Chosen less frequently at HL.' },
-          { term: 'Food Practical Exam', description: 'A timed cooking examination, usually 2.5–3 hours, where you prepare a number of dishes under exam conditions. Marked on planning, skill, presentation, and food safety.' },
-          { term: 'Coursework Journal', description: 'A structured written assignment completed during the year. Covers research, practical investigations, and evaluations. Marked by the SEC.' }
+          { term: 'Section A', description: 'A compulsory short-answer section worth 60 marks. Fourteen short questions are printed and you answer any ten, each worth 6 marks.' },
+          { term: 'Section B', description: 'The main long-question section, worth 180 marks. Question 1 (80 marks, on Food Studies) is compulsory; you then answer any two of Questions 2–5 (50 marks each).' },
+          { term: 'Section C', description: 'The elective/core section, worth up to 80 marks. You answer one option: Home Design and Management, Textiles Fashion and Design, Social Studies, or the Section C core question.' },
+          { term: 'Coursework Journal', description: 'The Food Studies coursework, worth 80 marks (20% of the total). A structured written assignment covering research, practical food investigations, and evaluations, submitted earlier in the year and marked by the SEC.' }
         ],
       },
       /* ---- Section 2: Marking Criteria ---- */
@@ -49,17 +49,15 @@ export const PRACTICAL_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'What the Examiner Rewards',
         eyebrow: '02 // Marking Criteria',
         paragraphs: [
-          'On the **written paper**, examiners reward depth and precision. In Elective 1, they want you to demonstrate real understanding of food science — not just list facts, but **explain the why**. If a question asks about protein denaturation, they want the process explained, the factors that cause it, and ideally a practical example. Using correct terminology like [[denaturation]], [[gelatinisation]], and [[caramelisation]] signals that you genuinely understand the material.',
-          'For the **Food Practical**, the marking scheme is broken into clear categories: the quality of your [[planning sheet]], your practical skills during cooking (technique, timing, multi-tasking), the final [[presentation and garnish]] of your dishes, and your hygiene and safety throughout. The planning sheet alone can earn you significant marks — it must show a realistic time plan, a clear sequence of tasks, and evidence that you have thought through every step.',
-          'In the **Coursework Journal**, examiners look for clear structure, genuine investigation (not just copied notes), and honest evaluation. The best journals include well-photographed practical work, nutritional analysis, sensory evaluation charts, and thoughtful conclusions. A journal that reads like a textbook will score lower than one that shows [[genuine experimentation]] — where you tried something, assessed the result, and drew your own conclusions.',
-          'Across all three components, the consistent theme is **application over recall**. Examiners do not want you to simply repeat what the textbook says. They want you to apply knowledge to real scenarios — whether that is explaining why a sauce split, adapting a recipe for a dietary requirement, or evaluating a food product against nutritional guidelines.'
+          'On the **written paper**, examiners reward depth and precision. In the Food Studies core, they want you to demonstrate real understanding of food science — not just list facts, but **explain the why**. If a question asks about protein denaturation, they want the process explained, the factors that cause it, and ideally a practical example. Using correct terminology like [[denaturation]], [[gelatinisation]], and [[caramelisation]] signals that you genuinely understand the material.',
+          'Because the long questions in Sections B and C are marked as a fixed number of points distributed across named headings, **structure matters as much as content**. The marking scheme awards a set number of graded points per part, so a well-organised answer that hits distinct, developed points scores far better than a single dense paragraph. Make each point clearly separate and develop it — the examiner is ticking off points against a list.',
+          'In the **Coursework Journal**, examiners look for clear structure, genuine investigation (not just copied notes), and honest evaluation. The best journals include well-documented practical food investigations, nutritional analysis, sensory evaluation charts, and thoughtful conclusions. A journal that reads like a textbook will score lower than one that shows [[genuine experimentation]] — where you tried something, assessed the result, and drew your own conclusions.',
+          'Across both components, the consistent theme is **application over recall**. Examiners do not want you to simply repeat what the textbook says. They want you to apply knowledge to real scenarios — whether that is explaining why a sauce split, adapting a recipe for a dietary requirement, or evaluating a food product against nutritional guidelines.'
         ],
         highlights: [
           { term: 'denaturation', description: 'The process by which proteins lose their structure due to heat, acid, or mechanical action. A frequently examined concept in food science.' },
           { term: 'gelatinisation', description: 'The process where starch granules absorb water and swell when heated, thickening liquids. Key to understanding sauces and soups.' },
           { term: 'caramelisation', description: 'The browning of sugar when heated above its melting point. Important in understanding flavour development and cooking techniques.' },
-          { term: 'planning sheet', description: 'A detailed written plan for the food practical, including time plan, order of work, equipment needed, and recipe adaptations. Worth significant marks.' },
-          { term: 'presentation and garnish', description: 'How the finished dishes look on the plate. Examiners mark for colour, arrangement, appropriate garnishing, and overall visual appeal.' },
           { term: 'genuine experimentation', description: 'The journal should show real trial and error — testing variables, recording results honestly, and drawing conclusions based on evidence.' }
         ],
       },
@@ -68,15 +66,14 @@ export const PRACTICAL_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'Where Your Marks Are',
         eyebrow: '03 // High-Value Zones',
         paragraphs: [
-          'The biggest strategic insight in Home Economics is that **the practical and journal together are worth roughly half your total grade**. That is enormous. In most subjects you sit a single written exam and that determines everything. Here, you walk into the June written paper with potentially 50% of your marks already banked. If you have scored well in the food practical and journal, you only need a solid — not spectacular — written paper to achieve a high grade.',
-          'Within the written paper, the [[compulsory short-answer section]] (Section A) is a gift if you have been studying consistently. These are quick, factual questions that test breadth of knowledge. They are worth a significant chunk of the paper, and most well-prepared students can score very highly here. Do not rush through them — read each question carefully and give complete answers.',
-          'The Food Practical is the single highest-value event in the subject. The marks for **execution and presentation** are substantial, but do not overlook the marks for your [[planning sheet]] and [[hygiene practices]]. Students who walk in without a thorough, realistic time plan leave marks on the table. Similarly, consistent hand-washing, clean-as-you-go habits, and correct food storage are all observed and marked.',
+          'The biggest strategic insight in Home Economics is that **the coursework journal is worth 20% of your total grade and is completed before the written exam**. That is a fifth of your grade you can bank in advance, under your own control, with time to polish. If you score well on the journal, you walk into June needing a solid — not spectacular — written paper to reach a high grade. Neglecting the journal, by contrast, means the written paper has to carry the full weight alone.',
+          'Within the written paper, the [[compulsory short-answer section]] (Section A, 60 marks) is a gift if you have been studying consistently. These are quick, factual questions that test breadth of knowledge — you answer any ten of the fourteen printed. Most well-prepared students can score very highly here. Do not rush through them — read each question carefully and give complete answers.',
+          'The largest block of written marks is [[Section B]] (180 marks), built around the compulsory 80-mark Food Studies question plus your two chosen 50-mark questions. This is where the paper is won or lost. Because it is Food Studies — the core of the whole course — the food science, nutrition, and food technology you have studied all year pays off directly here.',
           'In the journal, the [[sensory analysis]] section and the [[nutritional analysis]] are high-mark areas that many students underperform in. A sensory analysis with a proper hedonic scale, tasting panel data, and a star diagram will outscore a vague paragraph saying "it tasted nice." The nutritional analysis should use actual data — reference values, RDAs, and percentage breakdowns — not just generic statements.'
         ],
         highlights: [
-          { term: 'compulsory short-answer section', description: 'Section A of the written paper — a series of short, factual questions covering the core syllabus. High marks are achievable with consistent study.' },
-          { term: 'planning sheet', description: 'Your written plan for the practical exam. A detailed, realistic time plan with clear sequencing can earn you 15–20+ marks before you even start cooking.' },
-          { term: 'hygiene practices', description: 'Observed throughout the practical — hand-washing, apron use, clean work surfaces, correct storage temperatures. Marked as a distinct category.' },
+          { term: 'compulsory short-answer section', description: 'Section A of the written paper — a series of short, factual questions covering the core syllabus, worth 60 marks. High marks are achievable with consistent study.' },
+          { term: 'Section B', description: 'The main long-question section, worth 180 marks. The compulsory Question 1 (80 marks) is on Food Studies; you add any two of the 50-mark questions. The largest block of marks on the paper.' },
           { term: 'sensory analysis', description: 'Structured evaluation of food using appearance, aroma, taste, texture, and overall acceptability. Best done with hedonic scales and tasting panel data.' },
           { term: 'nutritional analysis', description: 'Detailed breakdown of the nutritional content of dishes prepared, compared against recommended daily allowances (RDAs). Strengthened by using actual data tables.' }
         ],
@@ -86,21 +83,20 @@ export const PRACTICAL_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'What Costs You Marks',
         eyebrow: '04 // Common Pitfalls',
         paragraphs: [
-          'The number one mistake in Home Economics is **neglecting the practical components**. Students who spend all their time on the written paper and treat the food practical as something that will "just happen" are throwing away the easiest marks in the subject. The practical and journal reward preparation and practice — skills you build over time, not the night before.',
+          'The number one mistake in Home Economics is **neglecting the coursework journal**. Students who spend all their time on the written paper and treat the journal as an afterthought are throwing away the easiest 20% in the subject. The journal rewards preparation and steady work — marks you build over time, not the night before the deadline.',
           'In the written paper, a common error is [[vague answering]]. If a question asks you to explain the role of vitamin C in the diet, writing "vitamin C is good for your health" will earn almost nothing. The examiner wants specific functions (antioxidant, aids iron absorption, collagen formation), specific sources, and the consequences of deficiency. Every answer should aim for precision.',
-          'During the Food Practical, the biggest mark-killer is **poor time management**. Students who attempt overly ambitious dishes and cannot finish them will score lower than students who execute simpler dishes perfectly and on time. The other critical error is ignoring [[cross-contamination]] rules — using the same chopping board for raw meat and salad, or not washing hands after handling raw poultry. Examiners watch for this.',
+          'A structural mistake in Section C is **answering more than one option**. The marking scheme applies a discount rule — if you attempt two Section C questions, only the higher-scoring one counts, so the time you spent on the second is wasted. Commit to one elective (or the Section C core question) and give it your full time budget.',
           'In the journal, the pitfall is [[superficial evaluation]]. Concluding every experiment with "this went well" does not earn marks. Strong evaluation identifies what worked, what did not, what you would change, and why. It connects back to the food science principles you studied. The difference between a good journal and a great one is the depth of your critical reflection.'
         ],
         highlights: [
           { term: 'vague answering', description: 'Giving general, non-specific responses that could apply to anything. Examiners reward precise terminology, specific examples, and clear explanations.' },
-          { term: 'cross-contamination', description: 'The transfer of harmful bacteria from one food to another, typically from raw to cooked foods. A serious food safety issue marked in the practical.' },
           { term: 'superficial evaluation', description: 'Conclusions that lack depth or critical analysis. The best evaluations identify specific successes, failures, and improvements with scientific reasoning.' }
         ],
         bullets: [
-          'Skipping the planning sheet or writing it vaguely — this is **free marks** you are giving up',
-          'Attempting dishes in the practical that you have never practised at home',
           'Leaving the journal until the last week — it takes time to build genuine content',
+          'Answering more than one Section C option — only the higher mark counts, so the extra time is wasted',
           'Ignoring dietary modifications — questions often ask you to adapt recipes for specific needs',
+          'Writing long questions as one dense paragraph instead of distinct, developed points the examiner can tick off',
           'Writing essays without using correct food science terminology'
         ],
       },
@@ -109,9 +105,9 @@ export const PRACTICAL_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'How to Study Home Economics',
         eyebrow: '05 // Study Techniques',
         paragraphs: [
-          'The best Home Economics students study with a **dual approach**: theory and practice. For the written paper, build a set of concise notes organised by topic — nutrition, food science, food technology, consumer studies. Use [[active recall]] by covering your notes and writing out key processes from memory. Flashcards are excellent for terminology-heavy topics like vitamins, minerals, and food additives.',
-          'For the Food Practical, there is no substitute for **cooking practice at home**. Aim to practise your core dishes at least 3–4 times each before the exam. Time yourself. Get feedback from family. Practise your planning sheet alongside the cooking — write it out as if it were the real exam. The goal is that by the day of the practical, every dish feels automatic and your time plan is second nature.',
-          'For the journal, work on it **steadily throughout the year**. Do not try to produce it all in a sprint. Each practical class is an opportunity to photograph your work, record observations, and write up evaluations while the experience is fresh. A journal built gradually over months will always outperform one assembled in a panic, because the depth and authenticity are visible to the examiner.',
+          'The best Home Economics students study with a **dual approach**: theory and application. For the written paper, build a set of concise notes organised by topic — nutrition, food science, food technology, consumer studies. Use [[active recall]] by covering your notes and writing out key processes from memory. Flashcards are excellent for terminology-heavy topics like vitamins, minerals, and food additives.',
+          'For the long questions, **practise structuring your answers as distinct, developed points**. Because the marking scheme distributes a fixed number of points across named headings, take a past question, write out the separate points it deserves, and develop each one. Rehearsing the shape of a full 80-mark or 50-mark answer is as important as knowing the content, because it is how the marks are actually awarded.',
+          'For the journal, work on it **steadily throughout the year**. Do not try to produce it all in a sprint. Each practical food investigation is an opportunity to document your work, record observations, and write up evaluations while the experience is fresh. A journal built gradually over months will always outperform one assembled in a panic, because the depth and authenticity are visible to the examiner.',
           'When revising the written paper, work through [[past exam papers]] methodically. The SEC publishes papers and marking schemes going back years. Study the marking scheme closely — it reveals exactly what language and level of detail earns full marks. You will also notice that certain topics recur frequently. Nutrition, food safety, and consumer protection are perennial favourites.'
         ],
         highlights: [
@@ -124,15 +120,15 @@ export const PRACTICAL_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'Your Home Economics Action Plan',
         eyebrow: '06 // Action Plan',
         paragraphs: [
-          'Start by auditing where your marks are right now. Have you been building your journal consistently? Have you practised your practical dishes? If the answer to either is no, **those are your immediate priorities** — they represent roughly half your total grade and they reward effort directly. Every hour spent practising a dish or improving a journal section translates into tangible marks.',
+          'Start by auditing where your marks are right now. Have you been building your journal consistently? If not, **that is your immediate priority** — it is worth 20% of your total grade, it is completed before the written exam, and it rewards effort directly. Every hour spent improving a journal section translates into tangible marks you can bank in advance.',
           'For the written paper, create a focused revision plan that covers the core topics: nutrition (macronutrients, micronutrients, dietary guidelines), food science (protein, carbohydrate, and fat cookery), food safety (HACCP, food spoilage, preservation), and consumer studies. Use past papers to identify your weak areas, then target those topics specifically.',
-          'Set a concrete goal: complete your journal to a standard you are proud of at least **two weeks before the deadline**. Practise each practical dish until you can execute it confidently within the time limit. And commit to working through at least **five full past papers** under timed conditions before the written exam. If you follow this plan, you will walk into each component feeling prepared rather than panicked.'
+          'Set a concrete goal: complete your journal to a standard you are proud of at least **two weeks before the deadline**. Practise structuring full long-question answers as distinct, developed points. And commit to working through at least **five full past papers** under timed conditions before the written exam. If you follow this plan, you will walk into each component feeling prepared rather than panicked.'
         ],
         highlights: [
           { term: 'HACCP', description: 'Hazard Analysis and Critical Control Points — a systematic food safety framework. A high-frequency topic on the written paper.' }
         ],
         commitmentText:
-          'I will practise my food practical dishes this week and spend 30 minutes improving one section of my journal.',
+          'I will spend 30 minutes improving one section of my journal and practise structuring one full long-question answer this week.',
       },
     ],
   },
@@ -147,7 +143,7 @@ export const PRACTICAL_CONTENT: Record<string, SubjectModuleContent> = {
     moduleTitle: 'Mastering Construction Studies',
     moduleSubtitle: 'Your Complete Construction Guide',
     moduleDescription:
-      'Understand the Construction Studies exam and project — how marks are split between practical and written, and what the examiner rewards in each.',
+      'Understand the Construction Studies exam, practical test, and project — how the marks are split across the three components, and what the examiner rewards in each.',
     themeName: 'slate',
     finishButtonText: 'Build Your Grade',
     sections: [
@@ -156,14 +152,16 @@ export const PRACTICAL_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'How Construction Studies Actually Works',
         eyebrow: '01 // Exam Structure',
         paragraphs: [
-          'Construction Studies is split almost perfectly down the middle: **roughly 50% for the written exam and 50% for the practical project**. This means the project you build in the school workshop is worth just as much as the three-hour paper you sit in June. Students who treat the project as a side task and focus only on theory are leaving half their grade to chance.',
-          'The [[written paper]] is a **3-hour exam worth 400 marks**. It is divided into sections covering building construction, building services, and materials science. Section A typically contains short-answer questions, while Section B has longer, more detailed questions requiring sketches, diagrams, and extended written answers. You do not have to answer every question — there is usually a choice, so you can lean into your strongest topics.',
-          'The [[practical project]] is completed in your school workshop over the course of fifth and sixth year. You select a project brief from the options provided by the SEC, and you build a piece that demonstrates your skills in woodwork, or a combination of materials. The project is assessed by a visiting examiner who evaluates the quality of construction, accuracy of dimensions, finish, and adherence to the brief.',
-          'The key insight is that both components reward the same underlying quality: **attention to detail**. On the written paper, detailed sketches and precise terminology score highest. On the project, accuracy of joints, quality of finish, and closeness to specified dimensions are what separate the top grades from the rest.'
+          'Construction Studies is assessed across **three components**: the **written exam (50%)**, a **practical skills test (25%)**, and a **project (25%)**. So the two hands-on components together — the practical test and the project — are worth exactly as much as the written paper. Students who treat either practical component as a side task and focus only on theory are leaving half their grade to chance.',
+          'The [[written paper]] is a **3-hour exam worth 300 marks (50% of your total grade)**. It covers building construction, building services, and materials science. You answer the compulsory Question 1 plus any four of the remaining questions — every question is worth the same 60 marks (5 × 60 = 300). There is a choice, so you can lean into your strongest topics.',
+          'The [[practical skills test]] is a separate, timed workshop examination worth **150 marks (25%)**, in which you make a test piece to a set brief under exam conditions. It is marked on the accuracy of your marking-out, the quality of your assembly and joints, how well the piece functions, and the finish. This is a distinct component from the long project — do not confuse the two.',
+          'The [[project]] is a substantial piece completed in your school workshop over the senior cycle, worth **150 marks (25%)**. You select a brief from the options provided by the SEC and build a piece that demonstrates your skills in woodwork or a combination of materials, supported by a design portfolio. It is assessed on planning, quality of construction, accuracy of dimensions, finish, and adherence to the brief.',
+          'The key insight is that all three components reward the same underlying quality: **attention to detail**. On the written paper, detailed sketches and precise terminology score highest. On the practical test and the project, accuracy of joints, quality of finish, and closeness to specified dimensions are what separate the top grades from the rest.'
         ],
         highlights: [
-          { term: 'written paper', description: 'A 3-hour exam worth 400 marks, covering building construction, services (plumbing, heating, electrics), and materials. Requires both written answers and technical sketches.' },
-          { term: 'practical project', description: 'A substantial piece of work built in the school workshop over the senior cycle. Worth approximately 50% of your total grade. Assessed by a visiting SEC examiner.' }
+          { term: 'written paper', description: 'A 3-hour exam worth 300 marks (50% of the grade), covering building construction, services (plumbing, heating, electrics), and materials. Answer Question 1 and any four others; each is worth 60 marks. Requires both written answers and technical sketches.' },
+          { term: 'practical skills test', description: 'A separate timed workshop examination worth 150 marks (25%). You make a test piece to a set brief under exam conditions, marked on marking-out, assembly, joints, function, and finish.' },
+          { term: 'project', description: 'A substantial piece built in the school workshop over the senior cycle, worth 150 marks (25%), supported by a design portfolio. Assessed on planning, construction quality, dimensional accuracy, finish, and adherence to the SEC brief.' }
         ],
       },
       /* ---- Section 2: Marking Criteria ---- */
@@ -191,7 +189,7 @@ export const PRACTICAL_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'Where Your Marks Are',
         eyebrow: '03 // High-Value Zones',
         paragraphs: [
-          'Your **practical project is the single largest block of marks** in Construction Studies. At roughly 50% of your total, this is where your grade is won or lost. The project is assessed before the written exam, so you walk into June with half your marks already determined. A well-executed project gives you a massive cushion — you can afford a mediocre written paper and still achieve a high grade. A rushed project does the opposite.',
+          'Your **two practical components — the skills test and the project — together carry half your marks** in Construction Studies (25% each). They are completed and assessed before you sit the written exam, so a large share of your grade is already determined when you walk into June. Score well across both and you have a real cushion — a solid written paper then secures a high grade. Rush either one and you put that cushion at risk.',
           'Within the written paper, the [[building construction section]] is the highest-value area. Questions on wall construction, roof construction, foundations, and floor construction appear every year and carry heavy marks. These are the bread-and-butter topics — if you can draw and explain a cavity wall, a cut roof, a strip foundation, and a suspended timber floor with confidence, you have the core of the paper covered.',
           'The [[building services]] section — covering plumbing, heating systems, and electrical installations — is another reliable source of marks. Students often underestimate these topics, but they appear consistently and the questions tend to be structured and predictable. A solid understanding of a [[central heating system]], a domestic water supply layout, or a ring main circuit can earn you full marks on questions that many students leave half-answered.',
           'On the project side, the marks for [[joint quality and accuracy]] are disproportionately important. A project with four perfectly executed joints and a clean finish will outscore a more ambitious project with sloppy joints and a rushed finish every time. The examiner knows what good craftsmanship looks like — there are no shortcuts.'
@@ -246,7 +244,7 @@ export const PRACTICAL_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'Your Construction Studies Action Plan',
         eyebrow: '06 // Action Plan',
         paragraphs: [
-          'First, assess your project status honestly. If you are behind on your practical project, that is your **top priority** — it is worth half your grade and cannot be crammed. Set a realistic completion timeline with your teacher and commit to using every available workshop session productively. Focus on joint quality and finish rather than adding unnecessary complexity.',
+          'First, assess your practical status honestly. Your project and your preparation for the practical skills test together are worth **half your grade** and cannot be crammed, so if you are behind on either, that is your **top priority**. Set a realistic completion timeline with your teacher, commit to using every available workshop session productively, and practise the skills the timed test demands. Focus on joint quality and finish rather than adding unnecessary complexity.',
           'For the written paper, identify the 15–20 key construction details and begin practising them as sketches from memory. Aim to draw and label **two details per study session**. Work through past papers to identify which topics appear most frequently, and focus your revision there. Building construction and building services should be your primary targets.',
           'Set a target: be able to draw and fully explain at least **15 construction details from memory** before the exam. Complete at least **four full past papers** under timed conditions. And ensure your project is finished, measured against the brief, and properly finished at least **two weeks before the submission deadline**. With your project marks banked high and your construction details memorised, you will be in a strong position for a top grade.'
         ],
@@ -269,7 +267,7 @@ export const PRACTICAL_CONTENT: Record<string, SubjectModuleContent> = {
     moduleTitle: 'Mastering Engineering',
     moduleSubtitle: 'Your Complete Engineering Guide',
     moduleDescription:
-      'Break down the Engineering exam and project — understand the practical marks, the written paper structure, and how to maximise your overall grade.',
+      'Break down the Engineering exam, project, and day practical examination — understand the practical marks, the written paper structure, and how to maximise your overall grade.',
     themeName: 'gray',
     finishButtonText: 'Engineer Your Success',
     sections: [
@@ -278,14 +276,16 @@ export const PRACTICAL_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'How Engineering Actually Works',
         eyebrow: '01 // Exam Structure',
         paragraphs: [
-          'Leaving Certificate Engineering is a subject where you **build something real** and that project counts for half your final grade. The assessment is split roughly **50/50 between the written exam and the practical project**. This dual structure means that your workshop skills matter just as much as your ability to answer questions on paper — and it means you have two separate opportunities to earn marks.',
-          'The [[written exam]] is a **3-hour paper** covering the core theory of engineering: materials and their properties, manufacturing processes, mechanisms and motion, and electronics and electricity. The paper typically has a Section A with shorter, more structured questions and a Section B with longer questions that require deeper analysis, calculations, and diagrams. There is usually a choice of questions, so you can play to your strengths.',
-          'The [[practical project]] is a piece of engineered work that you design, plan, and manufacture in the school workshop over the course of your senior cycle. The SEC provides a set of project briefs, and you choose one to execute. The project is assessed by a visiting examiner who evaluates the quality of your machining, fitting, assembly, finish, and adherence to the design brief.',
-          'The relationship between the two components is important to understand: strong project marks give you a **safety net** for the written paper. If you score well on the project, you need fewer marks on the written paper to hit your target grade. Conversely, a weak project means you need an exceptional written paper just to compensate — and that is much harder to guarantee.'
+          'Leaving Certificate Engineering is a subject where you **build something real**, and the hands-on work carries half your grade. The assessment has **three components**: the **written exam (roughly 50%)**, the **practical project (roughly 25%)**, and a separate **day practical examination (roughly 25%)**. This structure means your workshop skills matter just as much as your ability to answer questions on paper — and it means you have three separate opportunities to earn marks.',
+          'The [[written exam]] is a **3-hour paper worth 300 marks**, covering the core theory of engineering: materials and their properties, manufacturing processes, mechanisms and motion, and electronics and electricity. You answer any six of the nine questions, each worth 50 marks (6 × 50 = 300). Question 1 is the short-answer question (answer any ten of its parts). There is a choice of questions, so you can play to your strengths.',
+          'The [[practical project]] is a piece of engineered work that you design, plan, and manufacture in the school workshop over the course of your senior cycle. The SEC provides a set of project briefs, and you choose one to execute. It is assessed on the quality of your machining, fitting, assembly, finish, and adherence to the design brief, and is worth roughly a quarter of your grade.',
+          'The [[day practical examination]] is a separate, SEC-set timed workshop test — do not overlook it. You make a specified test piece under exam conditions, marked feature-by-feature against a checklist (marking-out, slots, drilling and tapping, and an assembly/function/finish block). It is a distinct component from the long project, worth roughly another quarter of your grade.',
+          'The relationship between the components is important: strong project and practical marks give you a **safety net** for the written paper. Score well on the hands-on work and you need fewer marks on the written paper to hit your target grade. Neglect either practical component and you need an exceptional written paper just to compensate — much harder to guarantee.'
         ],
         highlights: [
-          { term: 'written exam', description: 'A 3-hour paper covering engineering materials, processes, mechanisms, electronics, and design. Worth approximately 50% of the total mark.' },
-          { term: 'practical project', description: 'A manufactured piece completed in the school workshop over the senior cycle. Worth approximately 50% of the total mark. Assessed by a visiting SEC examiner.' }
+          { term: 'written exam', description: 'A 3-hour paper worth 300 marks (roughly 50% of the total), covering engineering materials, processes, mechanisms, electronics, and design. Answer any six of nine questions, each worth 50 marks.' },
+          { term: 'practical project', description: 'A manufactured piece completed in the school workshop over the senior cycle. Worth roughly 25% of the total mark. Assessed on machining, fitting, assembly, finish, and adherence to the SEC brief.' },
+          { term: 'day practical examination', description: 'A separate SEC-set timed workshop test worth roughly 25% of the total. You make a specified test piece under exam conditions, marked feature-by-feature (marking-out, slots, drilling/tapping) plus an assembly, function, and finish block.' }
         ],
       },
       /* ---- Section 2: Marking Criteria ---- */
@@ -312,7 +312,7 @@ export const PRACTICAL_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'Where Your Marks Are',
         eyebrow: '03 // High-Value Zones',
         paragraphs: [
-          'As with all practical subjects, your **project is the single biggest mark opportunity**. At roughly 50% of your total, a well-executed project is the most reliable way to secure a high grade. The marks are awarded for tangible, measurable qualities — how accurate are your dimensions, how clean is your machining, how well do the parts fit together. There is no ambiguity. Good work gets good marks.',
+          'As with all practical subjects, your **hands-on work is a huge mark opportunity**. The project and the day practical examination together carry roughly half your total (about 25% each), and both reward tangible, measurable qualities — how accurate are your dimensions, how clean is your machining, how well do the parts fit together. There is no ambiguity. Good work gets good marks. Treat the day practical examination as its own preparation target, not an afterthought to the project.',
           'Within the written paper, the [[materials and processes]] section is the highest-value area because it appears every year and the questions follow predictable patterns. You will be asked to identify materials, describe their properties, explain heat treatment processes (like [[hardening and tempering]]), and describe manufacturing operations. These topics are highly learnable — there is a finite body of knowledge and the exam draws from it consistently.',
           'The [[mechanisms section]] is another area where well-prepared students score heavily. Questions on gear trains, linkages, cams, and belt drives involve calculations and diagrams. If you know the formulas (gear ratio, velocity ratio, mechanical advantage) and can draw the mechanisms clearly, these are some of the most predictable marks on the paper.',
           'The [[electronics section]] covers basic circuit theory, components (resistors, capacitors, transistors, logic gates), and simple circuit analysis. Many students find this section intimidating, but the questions are often straightforward if you have practised the calculations. Ohm\'s Law, series and parallel circuits, and truth tables for logic gates are high-frequency topics that reward focused revision.'
@@ -329,7 +329,7 @@ export const PRACTICAL_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'What Costs You Marks',
         eyebrow: '04 // Common Pitfalls',
         paragraphs: [
-          'The most common mistake in Engineering is **underinvesting in the project**. Half your total marks depend on workshop output, but many students spend disproportionately more time on written revision and treat workshop sessions casually. Every workshop session is an opportunity to improve your project — sanding a surface smoother, filing a fit tighter, checking a dimension against the brief. These small improvements accumulate into significant marks.',
+          'The most common mistake in Engineering is **underinvesting in the workshop components**. Half your total marks depend on workshop output — the project and the day practical examination combined — but many students spend disproportionately more time on written revision and treat workshop sessions casually. Every workshop session is an opportunity to improve your project and sharpen the skills the day practical exam tests — sanding a surface smoother, filing a fit tighter, checking a dimension against the brief. These small improvements accumulate into significant marks.',
           'On the written paper, the biggest pitfall is [[incomplete answers]]. Engineering questions often have multiple parts, and students who answer only the first part and move on are leaving marks behind. If a question asks you to name a material, state two properties, and explain a suitable application, each element carries marks. Skipping the application paragraph because you are unsure costs you marks you could have earned with a reasonable attempt.',
           'Another common error is **neglecting diagrams**. Engineering questions frequently ask for sketches of mechanisms, manufacturing setups, or circuit diagrams. Students who write paragraphs of text but skip the diagram are missing the point — the diagram often carries as many marks as the written explanation. A clear, labelled diagram of a [[lathe setup]] or a gear train is worth significant marks.',
           'On the project, the most costly mistake is [[poor planning]]. Students who start machining without a clear plan of operations — what to cut first, what to drill, what tolerances to hold — end up with parts that do not fit together properly. The order of operations matters in engineering. A part that is drilled before being turned may end up with the hole off-centre. Think before you cut.'
@@ -340,7 +340,7 @@ export const PRACTICAL_CONTENT: Record<string, SubjectModuleContent> = {
           { term: 'poor planning', description: 'Starting workshop work without a clear sequence of operations. Leads to parts that do not fit together and dimensions that are off-specification.' }
         ],
         bullets: [
-          'Treating workshop time as less important than classroom study — both are worth 50%',
+          'Treating workshop time as less important than classroom study — the practical components together are worth 50%',
           'Writing answers without diagrams — sketches carry heavy marks in Engineering',
           'Skipping the electronics section because it feels difficult — the questions are often formulaic',
           'Rushing the project finish — surface preparation, deburring, and coating all carry marks',
@@ -368,9 +368,9 @@ export const PRACTICAL_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'Your Engineering Action Plan',
         eyebrow: '06 // Action Plan',
         paragraphs: [
-          'Assess your project right now. What is its current state? What still needs to be done? Set a **completion deadline at least two weeks before submission** so you have time for finishing and quality checks. If specific machining operations are not going well, ask your teacher for guidance or practice on scrap material. The project is half your grade — it deserves your best effort.',
+          'Assess your project right now. What is its current state? What still needs to be done? Set a **completion deadline at least two weeks before submission** so you have time for finishing and quality checks. If specific machining operations are not going well, ask your teacher for guidance or practice on scrap material. The project and the day practical examination together are half your grade — the workshop deserves your best effort.',
           'For the written paper, start with the materials and processes section — it is the highest-value, most predictable area. Build your process revision bank and practise sketching manufacturing setups from memory. Then tackle mechanisms and electronics through calculation practice. Aim to complete at least **four past papers** under timed conditions.',
-          'Your final push should integrate both components. As your project nears completion, shift more time to written revision. But do not abandon the project — use every remaining workshop session to refine the finish. A well-finished project combined with solid written exam preparation is the formula for a top grade in Engineering.'
+          'Your final push should integrate all three components. As your project nears completion, shift more time to written revision — but keep sharpening the machining skills the day practical exam tests, and do not abandon the project finish. A well-finished project, a rehearsed practical, and solid written revision together are the formula for a top grade in Engineering.'
         ],
         highlights: [
           { term: 'process revision bank', description: 'One-page summaries per manufacturing process — your most efficient revision tool for the materials and processes section.' }

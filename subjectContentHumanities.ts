@@ -25,8 +25,8 @@ export const HUMANITIES_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'How History Actually Works',
         eyebrow: '01 // Exam Structure',
         paragraphs: [
-          'The Leaving Certificate History Higher Level exam is a single paper lasting **2 hours and 50 minutes**, worth a total of **400 marks**. There is no second paper and no coursework component — everything rides on this one sitting. That makes understanding the layout absolutely critical.',
-          'The paper is divided into three sections. [[Section 1]] is the Document Question, which is **compulsory** and worth **100 marks**. You will be given a set of primary or secondary sources on a topic from your course and asked a series of structured questions about them. This is the only part of the exam where you work directly with sources rather than writing from memory.',
+          'Leaving Certificate History Higher Level has two components. The **Research Study Report (RSR)** is a project you complete and submit *before* the exam — it is worth **100 marks (20% of your overall grade)**. The **written paper** lasts **2 hours and 50 minutes** and is worth the other **400 marks**. Together they total **500 marks**. Getting your RSR done well banks a fifth of your grade before you sit down for the written exam, so it is not something to leave until the last minute.',
+          'The written paper is divided into three sections. [[Section 1]] is the Document Question, which is **compulsory** and worth **100 marks**. You will be given a set of primary or secondary sources on a topic from your course and asked a series of structured questions about them. This is the only part of the exam where you work directly with sources rather than writing from memory.',
           'In [[Section 2]] you answer on Ireland topics. You must write **two essays**, each worth **100 marks**, chosen from a range of topics in early modern and modern Irish history. Then in [[Section 3]] you answer **one essay** worth **100 marks** on a Europe and the wider world topic. That gives you three full essays plus the document question — four answers in total.',
           'Time management is everything. You have roughly **40 minutes** for the Document Question and about **43 minutes** for each essay. Many students run out of time on the final essay because they spend too long on earlier answers. Plan your timing before you open the paper.'
         ],
@@ -43,12 +43,13 @@ export const HUMANITIES_CONTENT: Record<string, SubjectModuleContent> = {
         paragraphs: [
           'History examiners are looking for more than just facts dumped onto the page. The marking scheme rewards [[structured argument]] above everything else. An essay that is well-organised with a clear introduction, developed body paragraphs, and a definite conclusion will always outscore one that has more facts but no shape.',
           'For the Document Question, examiners reward your ability to **comprehend**, **compare**, and **critically evaluate** the sources provided. You need to show you can extract information from documents, identify bias or perspective, and place the sources in their historical context. Direct quotation from the documents scores well when used to support a point.',
-          'In essays, the key scoring unit is the [[SIP]] — a Significant Individual Point. Each SIP is a distinct historical point that is explained and, ideally, supported with evidence. A strong essay will contain **5 to 7 well-developed SIPs** in the body paragraphs. Examiners allocate marks per SIP, so more developed points means more marks.',
+          'In essays, the marking scheme splits every long answer into two headings that always sum to 100% of the question: the [[Cumulative Mark]] (CM, max 60) for accurate, relevant historical content, and the [[Overall Evaluation]] (OE, max 40) for how well the whole answer addresses the question set — a fixed 60/40 ratio. The CM is built up **paragraph by paragraph**, each paragraph graded on a band, so a well-developed answer of roughly **5 to 6 strong paragraphs** reaches the CM ceiling. Writing more paragraphs than that earns nothing extra — the marks come from developing each point, not from piling on more of them.',
           'Your [[introduction]] should define the scope of your answer and signal the argument you will make. The conclusion should draw your points together and offer a judgement. Both the introduction and conclusion carry marks — they are not optional extras. An essay without either will lose marks even if the body is excellent.'
         ],
         highlights: [
-          { term: 'structured argument', description: 'Essays must follow a clear structure: introduction setting up the argument, developed body paragraphs with SIPs, and a conclusion with a judgement.' },
-          { term: 'SIP', description: 'Significant Individual Point — the basic scoring unit in History essays. Each SIP is a distinct historical point, explained and supported with evidence.' },
+          { term: 'structured argument', description: 'Essays must follow a clear structure: introduction setting up the argument, developed body paragraphs, and a conclusion with a judgement. This is what the Overall Evaluation mark rewards.' },
+          { term: 'Cumulative Mark', description: 'CM (max 60) — the content half of the essay mark, built up paragraph by paragraph. Each paragraph is graded on a band; padding past the ceiling earns nothing.' },
+          { term: 'Overall Evaluation', description: 'OE (max 40) — a single holistic judgement of how well the whole answer addresses the question, rewarding analysis over narrative. CM and OE always split 60/40.' },
           { term: 'introduction', description: 'Must define the topic, set the scope, and indicate your line of argument. Carries its own marks in the marking scheme.' }
         ]
       },
@@ -57,13 +58,13 @@ export const HUMANITIES_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'Where Your Marks Are',
         eyebrow: '03 // High-Value Zones',
         paragraphs: [
-          'The [[Document Question]] is the single highest-value opportunity on the entire paper. It is worth **100 marks** — a full 25% of your grade — and it is the most accessible section because **the answers are in the documents in front of you**. You do not need to recall facts from memory; you need to read carefully and respond to what is on the page. Students who prepare well for the Document Question format can score 80+ marks here relatively comfortably.',
-          'Within the Document Question, the **contextualisation** sub-question (typically worth 20 marks) asks you to write a short paragraph setting the documents in their historical context. This is the one part where you do need memorised knowledge, so prepare the context for each topic you study. The **comprehension** and **comparison** questions are the easiest marks on the paper — they literally ask you to find information in the sources and compare what two documents say.',
+          'The [[Document Question]] is the single highest-value opportunity on the written paper. It is worth **100 marks** — a full **25% of the written paper** (and 20% of your overall grade) — and it is the most accessible section because **the answers are in the documents in front of you**. You do not need to recall facts from memory; you need to read carefully and respond to what is on the page. Students who prepare well for the Document Question format can score 80+ marks here relatively comfortably.',
+          'Within the Document Question, the **contextualisation** sub-question (worth **40 marks** — the largest single part of the DBQ) asks you to write a mini-essay setting the documents in their historical context. This is the one part where you do need memorised knowledge, so prepare the context for each topic you study. The **comprehension** and **comparison** questions are the easiest marks on the paper — they literally ask you to find information in the sources and compare what two documents say.',
           'For the essays, [[Section 2]] gives you the most choice because you answer two from a range of Ireland topics. If you have studied three Ireland topics thoroughly, you will always find two comfortable questions. Many students only study two topics, which leaves zero margin if a question is phrased awkwardly.',
           'The final essay in [[Section 3]] is where many students drop marks — not because the question is harder, but because they are running out of time. If you protect your timing, this essay is worth the same 100 marks as the others and should be treated with the same seriousness.'
         ],
         highlights: [
-          { term: 'Document Question', description: 'Worth 100 marks (25% of total). Answers come from the sources provided, making it the most accessible high-value section of the paper.' },
+          { term: 'Document Question', description: 'Worth 100 marks (25% of the written paper, 20% of your overall grade). Answers come from the sources provided, making it the most accessible high-value section of the paper.' },
           { term: 'Section 2', description: 'Two Ireland essays, 100 marks each. Study at least three topics to guarantee comfortable choice on the day.' },
           { term: 'Section 3', description: 'One Europe/world essay, 100 marks. Often where students lose marks due to poor time management rather than lack of knowledge.' }
         ]
@@ -89,13 +90,13 @@ export const HUMANITIES_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'How to Study History',
         eyebrow: '05 // Study Techniques',
         paragraphs: [
-          'History is a subject where [[essay plans]] are worth their weight in gold. For every topic, write out a one-page plan with your introduction, 5-7 SIPs with key evidence for each, and a conclusion. Practise writing from the plan under timed conditions. On exam day, you will spend 2-3 minutes writing a quick plan before each essay, and this habit starts now.',
+          'History is a subject where [[essay plans]] are worth their weight in gold. For every topic, write out a one-page plan with your introduction, 5-6 well-developed points (each becoming a paragraph) with key evidence, and a conclusion. Practise writing from the plan under timed conditions. On exam day, you will spend 2-3 minutes writing a quick plan before each essay, and this habit starts now.',
           'For the Document Question, practise with **past papers**. The format barely changes from year to year: comprehension, comparison, criticism, and contextualisation. Do at least five past Document Questions under timed conditions. You will quickly see the patterns in how questions are asked and learn exactly how to structure your responses.',
-          'Use [[key-evidence flashcards]] for each topic. On one side, write the SIP (e.g., "Parnell used obstructionism to gain attention at Westminster"). On the other side, write the supporting evidence — dates, names, statistics, quotes. Test yourself regularly using active recall rather than just re-reading notes.',
+          'Use [[key-evidence flashcards]] for each topic. On one side, write the point (e.g., "Parnell used obstructionism to gain attention at Westminster"). On the other side, write the supporting evidence — dates, names, statistics, quotes. Test yourself regularly using active recall rather than just re-reading notes.',
           'Group your topics into [[themes]] rather than studying them as isolated events. For example, if you are studying the Irish independence movement, connect the themes of leadership, public opinion, British policy, and international context. This thematic understanding lets you adapt to any question wording on the day.'
         ],
         highlights: [
-          { term: 'essay plans', description: 'One-page structured outlines with introduction, 5-7 SIPs with evidence, and conclusion. The single most effective study tool for History.' },
+          { term: 'essay plans', description: 'One-page structured outlines with introduction, 5-6 well-developed points with evidence, and conclusion. The single most effective study tool for History.' },
           { term: 'key-evidence flashcards', description: 'Active recall cards with a historical point on one side and supporting evidence (dates, names, quotes) on the other.' },
           { term: 'themes', description: 'Group topics by recurring themes (leadership, public opinion, policy) rather than studying events in isolation. Builds adaptable knowledge.' }
         ]
@@ -105,9 +106,9 @@ export const HUMANITIES_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'Your History Action Plan',
         eyebrow: '06 // Action Plan',
         paragraphs: [
-          'Start by listing your topics: at least **three Ireland topics** and **two Europe/world topics**. For each topic, build a complete set of [[essay plans]] with 5-7 SIPs and supporting evidence. This is your exam toolkit — everything else is supplementary.',
+          'Start by listing your topics: at least **three Ireland topics** and **two Europe/world topics**. For each topic, build a complete set of [[essay plans]] with 5-6 well-developed points and supporting evidence. This is your exam toolkit — everything else is supplementary.',
           'Next, commit to doing one **timed Document Question** per week from past papers. Mark it yourself using the published marking schemes from examinations.ie. Track your scores and identify which question types (comprehension, comparison, criticism) you need to sharpen.',
-          'Finally, in the last four weeks before the exam, switch to full **timed essay practice**. Write one full essay (43 minutes) at least three times a week. Review against the marking scheme, count your SIPs, and check that every essay has a clear introduction and conclusion. This is the drill that turns your knowledge into exam performance.'
+          'Finally, in the last four weeks before the exam, switch to full **timed essay practice**. Write one full essay (43 minutes) at least three times a week. Review against the marking scheme, check that each of your points is developed into a proper paragraph, and make sure every essay has a clear introduction and conclusion. This is the drill that turns your knowledge into exam performance.'
         ],
         highlights: [
           { term: 'essay plans', description: 'Your core study tool. Build a plan for every potential question across all your topics before you start timed practice.' }
@@ -116,7 +117,7 @@ export const HUMANITIES_CONTENT: Record<string, SubjectModuleContent> = {
           'Build essay plans for all topics — minimum 3 Ireland, 2 Europe/world',
           'Complete one timed Document Question per week from past papers',
           'Practise timed essays (43 minutes each) at least 3 times per week in the final month',
-          'Use the published marking schemes to self-assess and count your SIPs',
+          'Use the published marking schemes to self-assess your Cumulative Mark and Overall Evaluation',
           'Review your contextualisation knowledge for each Document Question topic'
         ],
         commitmentText:
@@ -146,14 +147,16 @@ export const HUMANITIES_CONTENT: Record<string, SubjectModuleContent> = {
         paragraphs: [
           'Leaving Certificate Geography Higher Level has two assessment components. The **written exam** is a single paper lasting **2 hours and 50 minutes**, worth **80%** of your final grade. The [[Geographical Investigation]] (GI) is a separate fieldwork-based project worth **20%** of your grade. Both matter enormously.',
           'The written paper is worth **400 marks** and is divided into sections. It opens with [[Short Questions]] worth **80 marks** — you answer questions from a selection covering the full syllabus. These are quick-fire factual and skills-based questions, typically taking about 25-30 minutes.',
-          'The long questions are where the bulk of your marks sit. You answer questions across the core and elective areas: [[Physical Geography]] (including your elective — Geoecology or the Atmosphere), [[Regional Geography]] (covering an Irish region and a continental/sub-continental region), and [[Human and Economic Geography]] along with an option topic. Each long question is typically worth **80 marks**.',
+          'The long questions are where the bulk of your marks sit, and each is worth **80 marks**. You answer one from **[[Physical Geography]]** (core), one from **[[Regional Geography]]** (core — covering an Irish region and a continental/sub-continental region), one from your **[[Elective]]** (you choose Economic Activities *or* the Human Environment), and — at Higher Level only — one from the **[[Options]]** (a specialised topic such as Global Interdependence, Geoecology, Culture and Identity, or the Atmosphere-Ocean Environment).',
           'You also need to be prepared for [[OSI map]] work, which can appear in any section. Map-reading skills — grid references, measuring distance, interpreting contour patterns — are tested regularly and are reliable marks if you practise them.'
         ],
         highlights: [
           { term: 'Geographical Investigation', description: 'The GI is a fieldwork project worth 20% of your final grade. It is submitted separately from the written exam and must follow a specific structure.' },
           { term: 'Short Questions', description: '80 marks, broad syllabus coverage. Quick factual and skills-based questions that open the paper.' },
-          { term: 'Physical Geography', description: 'Core physical processes plus your chosen elective (Geoecology or the Atmosphere). Diagrams are essential here.' },
-          { term: 'Regional Geography', description: 'Covers an Irish region and a continental region. Requires detailed case study knowledge.' },
+          { term: 'Physical Geography', description: 'A core section on physical processes (rivers, coasts, plate tectonics, mass movement). Diagrams are essential here.' },
+          { term: 'Regional Geography', description: 'A core section covering an Irish region and a continental/sub-continental region. Requires detailed case study knowledge.' },
+          { term: 'Elective', description: 'You choose ONE elective: Patterns and Processes in Economic Activities, or Patterns and Processes in the Human Environment. One long question comes from your chosen elective.' },
+          { term: 'Options', description: 'At Higher Level only, you answer one Option question from a specialised topic: Global Interdependence, Geoecology, Culture and Identity, or the Atmosphere-Ocean Environment.' },
           { term: 'OSI map', description: 'Ordnance Survey Ireland maps may appear in any section. Grid references, scale, contour interpretation are commonly tested.' }
         ]
       },
@@ -266,15 +269,15 @@ export const HUMANITIES_CONTENT: Record<string, SubjectModuleContent> = {
         eyebrow: '01 // Exam Structure',
         paragraphs: [
           'Politics & Society is one of the newer Leaving Certificate subjects, introduced in 2016, and it works differently from traditional humanities exams. Your final grade is split: the **written examination** is worth **80%** and a [[Citizenship Project]] is worth **20%**. This two-component structure means you can bank a significant portion of your grade before exam day.',
-          'The written paper is divided into three sections. [[Section A]] consists of **short-answer questions** worth a total of **80 marks**. You answer from a selection, and these questions test your knowledge of key political concepts, thinkers, and definitions. They are quick and factual.',
-          'In [[Section B]] you face **source-based questions** — you are given documents, data, or images and must analyse them. This section tests your ability to interpret information, identify perspectives, and evaluate arguments. It is similar in spirit to the History document question but focused on political and social concepts.',
-          'Finally, [[Section C]] requires **extended writing** — longer essay-style responses where you develop arguments on topics such as human rights, globalisation, democracy, or inequality. This is where the heaviest marks sit and where the depth of your understanding is tested. The total paper is worth **400 marks** over approximately **2 hours and 30 minutes**.'
+          'The written paper is worth **400 marks** and is divided into three sections. [[Section A]] is a **short-answer question** worth **50 marks**: you answer **any 10 of 15** short items at 5 marks each. These test your knowledge of key political concepts, thinkers, and definitions. They are quick and factual.',
+          'In [[Section B]] you face a single **data/documents-based question** worth **150 marks** — you are given stimulus documents (data, quotes, images) and answer a set of escalating sub-questions that build to a 50-mark conclusion. This section tests your ability to interpret information, identify perspectives, critique methodology, and evaluate arguments using the documents. It is similar in spirit to the History document question but focused on political and social concepts.',
+          'Finally, [[Section C]] requires **extended writing** worth **200 marks** — you write **two discursive essays at 100 marks each** on topics such as human rights, globalisation, democracy, or inequality. This is where the heaviest marks sit and where the depth of your understanding is tested. The whole subject is 500 marks: this 400-mark written paper (80%) plus the Citizenship Project (100 marks, 20%).'
         ],
         highlights: [
           { term: 'Citizenship Project', description: 'Worth 20% of your final grade. A research-based project on a social or political issue, completed during the course and submitted separately.' },
-          { term: 'Section A', description: 'Short-answer questions, 80 marks. Tests knowledge of key concepts, political thinkers, and definitions.' },
-          { term: 'Section B', description: 'Source-based analysis questions. Requires interpretation of documents, data, or images and evaluation of perspectives.' },
-          { term: 'Section C', description: 'Extended writing section. Essay-style responses on major topics like human rights, globalisation, and democracy. Carries the heaviest marks.' }
+          { term: 'Section A', description: 'Short-answer question, 50 marks — answer any 10 of 15 items at 5 marks each. Tests knowledge of key concepts, political thinkers, and definitions.' },
+          { term: 'Section B', description: 'The single data/documents-based question, 150 marks. Escalating sub-questions built on stimulus documents, ending in a 50-mark conclusion. Requires interpretation, methodology critique, and evaluation.' },
+          { term: 'Section C', description: 'Extended writing section, 200 marks — two discursive essays at 100 marks each on major topics like human rights, globalisation, and democracy. Carries the heaviest marks.' }
         ]
       },
       // Section 2 — Marking Criteria
@@ -300,7 +303,7 @@ export const HUMANITIES_CONTENT: Record<string, SubjectModuleContent> = {
         paragraphs: [
           'The [[Citizenship Project]] is your highest-value strategic asset. Worth **20% of your final grade**, it is completed during the year with time to research, draft, and refine. A well-executed project with a clear research question, proper methodology, and thoughtful analysis can score very highly. Unlike the exam, you control the conditions — use that advantage.',
           'On the written paper, [[Section C]] carries the most marks and is where the grade differentiation happens. Students who can write structured, evidence-based essays with clear arguments will outscore those who write vaguely about broad topics. Preparing strong essay frameworks for each major topic area (democracy, human rights, globalisation, power and decision-making) gives you a significant edge.',
-          'Section A short questions are your [[quick wins]]. They test definitions, knowledge of thinkers, and basic concepts. If you have revised systematically, these marks come quickly. Aim to spend no more than **25-30 minutes** on Section A and secure as many marks as possible before moving to the more demanding sections.',
+          'Section A short questions are your [[quick wins]]. They test definitions, knowledge of thinkers, and basic concepts. If you have revised systematically, these marks come quickly. At just **50 marks** (one-eighth of the paper), keep Section A tight and move on quickly to the higher-value Sections B and C.',
           'Section B source analysis is often underestimated. Students who practise source analysis techniques — identifying perspective, evaluating evidence, spotting bias — can score strongly here. The skill set is very transferable from subject to subject, so if you also study History, you already have a head start.'
         ],
         highlights: [
@@ -348,7 +351,7 @@ export const HUMANITIES_CONTENT: Record<string, SubjectModuleContent> = {
         paragraphs: [
           'If your Citizenship Project is not yet submitted, make it your top priority. Choose a focused research question, gather at least **five diverse sources**, and write a clear analysis with a reasoned conclusion. Get teacher feedback on at least two drafts before final submission.',
           'For the written paper, build concept maps for each syllabus strand and compile your [[thinker references]]. Then practise writing Section C essays under timed conditions — one per week minimum. Mark them against past marking schemes and focus on building structured arguments rather than just recalling information.',
-          'In the final weeks, do full past papers under exam conditions. Focus on time management — aim to spend no more than 30 minutes on Section A, allocate time for Section B, and protect at least half your exam time for the high-value Section C essays.'
+          'In the final weeks, do full past papers under exam conditions. Focus on time management — keep Section A tight (it is only 50 marks), give Section B the time its 150 marks deserve, and protect at least half your exam time for the 200-mark Section C essays.'
         ],
         highlights: [
           { term: 'thinker references', description: 'Your bank of key political thinkers and their arguments, organised by concept. Build this early and reference them in every essay.' }
@@ -385,16 +388,16 @@ export const HUMANITIES_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'How Religious Education Actually Works',
         eyebrow: '01 // Exam Structure',
         paragraphs: [
-          'The Leaving Certificate Religious Education Higher Level exam is a single paper lasting **2 hours and 30 minutes**, worth a total of **400 marks**. It is divided into three sections of increasing depth and marks, plus a separate [[Coursework Journal]] component that forms part of your overall assessment.',
-          '[[Section A]] is the short-answer section, worth **80 marks**. You answer a selection of brief questions that test your knowledge of key terms, figures, beliefs, and practices across the syllabus. These are designed to be quick — factual recall and concise definitions are what is needed here.',
-          '[[Section B]] is worth **120 marks** and consists of **response-to-stimulus** material. You are given passages, images, or scenarios and must respond to structured questions about them. This tests your ability to interpret material, connect it to your course knowledge, and discuss its significance. It sits between pure recall and full essay writing in terms of demand.',
-          '[[Section C]] is the extended essay section, worth **200 marks** — a full **half of the exam paper**. You write longer, essay-style answers on major topics from the syllabus. This is where the most marks are available and where detailed, structured writing is essential. Topics span the major world religions, moral issues, and the relationship between religion and contemporary life.'
+          'Leaving Certificate Religious Education Higher Level has two components. The **written paper** is worth **320 marks (80%)** and lasts **2 hours and 30 minutes**. The **[[Coursework]]** — a written report on one prescribed title, completed during the course — is worth the remaining **20%**. The written paper is built from three Units, and you make choices within each one.',
+          '**[[Unit One]]** — *The Search for Meaning and Values* — is worth **80 marks**. It is compulsory as a Unit, but you choose **one of two questions**. Each question is a structured set of parts (short outlines building to a longer 40-mark part), so it mixes concise recall with more developed writing.',
+          '**[[Unit Two]]** is worth **160 marks — the largest part of the paper**. You answer **two of three sections**: Christianity (Origins and Contemporary Expressions), World Religions, and Moral Decision-Making. These are *content areas*, not a stimulus format — each section you choose is worth 80 marks from its parts. Because this Unit is half the paper, the two content areas you prepare here matter most.',
+          '**[[Unit Three]]** is worth **80 marks**. You answer **two parts from one of four sections**: Issues of Justice and Peace, Worship/Prayer and Ritual, Religion: The Irish Experience, or Religion and Science. So the written total is 80 + 160 + 80 = **320 marks**.'
         ],
         highlights: [
-          { term: 'Coursework Journal', description: 'A reflective journal completed during the course, covering your engagement with religious education topics. Submitted separately from the exam.' },
-          { term: 'Section A', description: 'Short-answer questions worth 80 marks. Tests factual recall of key terms, figures, beliefs, and practices.' },
-          { term: 'Section B', description: 'Response to stimulus, 120 marks. Structured questions based on passages, images, or scenarios requiring interpretation and connection to course material.' },
-          { term: 'Section C', description: 'Extended essays worth 200 marks (half the paper). Longer responses on major topics requiring detailed, structured writing.' }
+          { term: 'Coursework', description: 'A written report on ONE prescribed title, completed during the course. Worth 20% of your grade and submitted before the exam.' },
+          { term: 'Unit One', description: 'The Search for Meaning and Values, 80 marks. You answer one of two structured questions, each building from short parts to a 40-mark part.' },
+          { term: 'Unit Two', description: 'The largest Unit at 160 marks. You answer two of three content areas: Christianity, World Religions, Moral Decision-Making. Each chosen section is worth 80 marks.' },
+          { term: 'Unit Three', description: '80 marks. You answer two parts from one of four sections (Justice and Peace, Worship, Religion: The Irish Experience, Religion and Science).' }
         ]
       },
       // Section 2 — Marking Criteria
@@ -403,14 +406,14 @@ export const HUMANITIES_CONTENT: Record<string, SubjectModuleContent> = {
         eyebrow: '02 // Marking Criteria',
         paragraphs: [
           'Religious Education examiners reward [[balanced, respectful engagement]] with religious traditions and moral questions. This does not mean you cannot have a personal perspective — you can and should — but your answers must show that you understand multiple viewpoints. Dismissive or one-sided answers that ignore the complexity of religious questions will score poorly.',
-          'In Section C, the examiner is looking for **depth of knowledge** demonstrated through specific references. If you are discussing Christianity, reference specific Scripture passages, Church documents, or theological positions. If you are writing about Islam, reference the Quran, Hadith, or specific scholars. [[Textual references]] show the examiner that your knowledge goes beyond surface-level understanding.',
-          'Structure matters in the extended answers. A strong Section C response will have a clear introduction that addresses the question directly, well-developed body paragraphs each making a distinct point, and a conclusion that ties your argument together. The examiner uses [[cumulative marking]] — each relevant, well-explained point adds to your total, so more developed points means more marks.',
-          'For Section B, the examiner rewards your ability to **connect the stimulus to your wider knowledge**. Do not just describe what you see in the image or read in the passage — explain its significance, relate it to the beliefs and practices you have studied, and show that you understand the deeper meaning behind the surface.'
+          'In the longer answers, the examiner is looking for **depth of knowledge** demonstrated through specific references. If you are discussing Christianity, reference specific Scripture passages, Church documents, or theological positions. If you are writing about a world religion, reference its sacred texts and key figures. [[Textual references]] show the examiner that your knowledge goes beyond surface-level understanding.',
+          'RE answers are graded [[holistically, band by band]] — not by counting points. The examiner reads your whole answer and places it in one of six bands (Excellent, Very Good, Good, Fair, Weak, Poor) against that question\'s Marking Criteria, judging four things: evidence of the marking criteria, relevance, use of the required skill, and factual accuracy. Crucially, if a question uses a higher-order command word (Assess, Compare, Evaluate) and you only *describe* without actually assessing or comparing, your answer is **capped at the Fair band** no matter how accurate it is. Do what the command word asks.',
+          'For the higher-order and structured questions, the examiner rewards your ability to **address the exact skill the question demands**. Do not just describe or set out information — if the question says "compare", give a genuine similarity or difference; if it says "assess", weigh it up and reach a judgement. The command word tells you which skill unlocks the top bands.'
         ],
         highlights: [
           { term: 'balanced, respectful engagement', description: 'Show understanding of multiple viewpoints on religious and moral questions. Personal perspective is welcome but must demonstrate genuine engagement with different positions.' },
           { term: 'textual references', description: 'Specific references to sacred texts, Church documents, or theological positions. Demonstrates depth beyond surface-level knowledge.' },
-          { term: 'cumulative marking', description: 'Each relevant, well-explained point adds to your mark total. More developed points means more marks — there is no cap on quality.' }
+          { term: 'holistically, band by band', description: 'RE is not marked by adding up points. The examiner reads the whole answer and places it in one of six bands (Excellent to Poor) against the Marking Criteria, judging evidence, relevance, skill, and accuracy. A descriptive answer to a "compare" or "assess" question is capped at the Fair band.' }
         ]
       },
       // Section 3 — High-Value Zones
@@ -418,15 +421,15 @@ export const HUMANITIES_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'Where Your Marks Are',
         eyebrow: '03 // High-Value Zones',
         paragraphs: [
-          '[[Section C]] is the undisputed high-value zone in Religious Education. At **200 marks**, it accounts for exactly half of the entire paper. If you perform strongly in Section C, you are in a very strong position regardless of minor slips elsewhere. Conversely, a weak Section C makes it nearly impossible to reach the top grades. Your exam preparation should reflect this — the majority of your study time should go toward the extended essay topics.',
-          'The [[Coursework Journal]] is your off-exam opportunity. Like the Geography GI or the Politics & Society Citizenship Project, it is completed during the year without exam pressure. A thoughtful, well-written journal that demonstrates genuine reflection on your learning can contribute meaningfully to your grade. Take it seriously from the start of the course.',
-          'Within Section B, the [[response-to-stimulus questions]] are often more accessible than students expect. If the stimulus is a passage about a moral issue, for example, you can draw directly from the material provided and connect it to your studied content. Students who practise this format find it becomes a reliable scoring section.',
-          'In Section A, the short questions are your fastest marks. They reward systematic revision of key terms and definitions across the syllabus. A student who has used flashcards to learn the core vocabulary of each topic area can move through Section A quickly and confidently, banking marks early in the exam.'
+          '[[Unit Two]] is the undisputed high-value zone in Religious Education. At **160 marks**, it accounts for exactly half of the written paper. You choose two of its three content areas (Christianity, World Religions, Moral Decision-Making), so preparing your two strongest areas in real depth is the single biggest lever on your grade. A weak Unit Two makes it nearly impossible to reach the top grades — the majority of your study time should go here.',
+          'The [[Coursework]] is your off-exam opportunity. Like the Geography GI or the Politics & Society Citizenship Project, it is completed during the year without exam pressure. It is a written report on **one prescribed title** (chosen from the SEC list), and a well-researched, well-structured report that shows genuine investigation and reflection can contribute meaningfully to your grade. Take it seriously from the start of the course.',
+          '[[Question choice]] is where marks are won or lost in RE. Because whole answers are banded, choosing a question or section you have thin material on is expensive — there is no way to accumulate partial points, so a thin answer simply bands low. The students who score well pick the Units and sections they have genuinely prepared and avoid gambling on a topic they only half-know.',
+          'The **shorter, structured parts** in Unit One are your fastest marks. They reward systematic revision of key terms, figures, beliefs, and practices. A student who has used flashcards to learn the core vocabulary of each topic area can move through the shorter parts quickly and confidently, banking marks before the longer 40-mark parts.'
         ],
         highlights: [
-          { term: 'Section C', description: '200 marks — half the entire paper. Your performance here largely determines your final grade. Allocate study time accordingly.' },
-          { term: 'Coursework Journal', description: 'Completed during the course without exam pressure. Genuine reflection and thoughtful writing can boost your overall grade.' },
-          { term: 'response-to-stimulus questions', description: 'Section B questions that provide material to work with. More accessible than many students expect with the right preparation.' }
+          { term: 'Unit Two', description: '160 marks — half the written paper. You choose two of three content areas, so your two strongest areas largely determine your grade. Allocate study time accordingly.' },
+          { term: 'Coursework', description: 'A written report on one prescribed title, completed during the course without exam pressure. Solid research, structure and reflection can boost your overall grade.' },
+          { term: 'Question choice', description: 'Because whole answers are banded, choosing a section you have thin material on bands low with no partial credit. Prepare your chosen areas in depth and do not gamble on half-known topics.' }
         ]
       },
       // Section 4 — Common Pitfalls
@@ -434,15 +437,15 @@ export const HUMANITIES_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'What Costs You Marks',
         eyebrow: '04 // Common Pitfalls',
         paragraphs: [
-          'The most common pitfall in Religious Education is [[superficial knowledge]]. Students who have only a surface-level understanding of religious traditions — who know the basics but cannot reference specific texts, practices, or theological positions — will hit a ceiling in Section C. Depth is what the examiner rewards, and depth requires study beyond the textbook summaries.',
+          'The most common pitfall in Religious Education is [[superficial knowledge]]. Students who have only a surface-level understanding of religious traditions — who know the basics but cannot reference specific texts, practices, or theological positions — will hit a ceiling in the longer 40-mark parts. Depth is what the examiner rewards, and depth requires study beyond the textbook summaries.',
           'Another significant error is [[opinion without evidence]]. On moral and ethical questions, some students write personal opinions without grounding them in the religious or philosophical frameworks they have studied. "I think euthanasia is wrong" is not a Religious Education answer. "The Catholic Church opposes euthanasia based on the principle of the sanctity of life, as expressed in Evangelium Vitae" is.',
-          'Many students also [[mismanage time across sections]]. Section A and B together are worth 200 marks, and Section C alone is worth 200 marks. If you spend too long on the first two sections, you will not have enough time to develop your Section C essays properly. Aim to finish Sections A and B within the first 60-70 minutes, leaving at least 80 minutes for Section C.',
-          'Finally, neglecting the Coursework Journal is a missed opportunity. Students who submit a minimal, last-minute journal are leaving marks on the table. Start your journal entries early in the year and build them up progressively as you study each topic.'
+          'A related trap is the [[descriptive-answer cap]]. If a question uses a higher-order command word — Assess, Compare, Evaluate, Discuss the reliability — and you only *describe* the topic without doing that higher-order skill, the marking scheme ceilings your answer at the Fair band no matter how accurate it is. Read the command word and make sure your answer actually does what it asks.',
+          'Manage your time across the three Units in proportion to their marks: **Unit Two is 160 marks (half the paper)**, while Unit One and Unit Three are 80 marks each. Spending too long on the smaller Units leaves you rushing the Unit that carries the most marks. Finally, neglecting the Coursework is a missed opportunity — a minimal, last-minute report leaves marks on the table. Start your prescribed-title research early and build it up as the year goes on.'
         ],
         highlights: [
-          { term: 'superficial knowledge', description: 'Surface-level understanding without specific textual or theological references. Cannot score highly in Section C without depth.' },
+          { term: 'superficial knowledge', description: 'Surface-level understanding without specific textual or theological references. Cannot reach the top bands on the longer 40-mark parts without depth.' },
           { term: 'opinion without evidence', description: 'Personal views on moral questions without grounding in religious or philosophical frameworks. Examiners require evidence-based reasoning.' },
-          { term: 'mismanage time across sections', description: 'Spending too long on Sections A and B at the expense of Section C, which is worth half the paper.' }
+          { term: 'descriptive-answer cap', description: 'If a question demands a higher-order skill (assess, compare, evaluate) and you only describe, the marking scheme caps your answer at the Fair band. Do what the command word asks.' }
         ]
       },
       // Section 5 — Study Techniques
@@ -450,13 +453,13 @@ export const HUMANITIES_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'How to Study Religious Education',
         eyebrow: '05 // Study Techniques',
         paragraphs: [
-          'Build a [[key references sheet]] for each major topic. For each religion or moral issue you study, list the 5-10 most important textual references, documents, or thinkers. For Christianity, this might include Genesis, the Gospels, Vatican II documents, and key encyclicals. For Islam, the key Surahs, Hadith, and the Five Pillars. Having these references at your fingertips transforms your Section C answers.',
-          'Use [[comparative tables]] to study different religious perspectives on the same issue. For example, create a table comparing Christian, Islamic, and secular perspectives on the sanctity of life, or on the purpose of suffering. This comparative approach is exactly what examiners reward — it shows balanced engagement with multiple viewpoints.',
-          'For Section B, practise with past paper stimulus materials. Get comfortable with the format: read the passage or look at the image, identify the key themes, and then connect those themes to your course material. Do at least **five past Section B questions** under timed conditions to build confidence with this format.',
-          'For the Coursework Journal, write reflective entries as you go through the course rather than trying to write them all at the end. A journal that shows genuine progression in your thinking and engagement with the material is far more impressive than one clearly written in a rush.'
+          'Build a [[key references sheet]] for each major topic. For each religion or moral issue you study, list the 5-10 most important textual references, documents, or thinkers. For Christianity, this might include Genesis, the Gospels, Vatican II documents, and key encyclicals. For a world religion, its key sacred texts and figures. Having these references at your fingertips transforms your longer answers.',
+          'Use [[comparative tables]] to study different religious perspectives on the same issue. For example, create a table comparing Christian, Islamic, and secular perspectives on the sanctity of life, or on the purpose of suffering. Because so many RE questions ask you to *compare*, and a purely descriptive answer is capped at the Fair band, this comparative approach is exactly what unlocks the top bands — it shows the balanced, comparative engagement examiners reward.',
+          'Practise past papers by **command word**. Sort past questions into "describe/outline" (lower-order) and "assess/compare/evaluate/discuss" (higher-order), and drill answering the higher-order ones so you actually do the assessing or comparing rather than just describing. Do at least **five past long questions** under timed conditions to get used to matching your answer to the skill the question demands.',
+          'For the Coursework, choose your prescribed title early and research it as you go rather than trying to write the whole report at the end. A report that shows genuine investigation, a clear summary of findings, and honest personal reflection is far more impressive than one clearly written in a rush.'
         ],
         highlights: [
-          { term: 'key references sheet', description: 'A list of the 5-10 most important textual references, documents, and thinkers for each major topic. Your toolkit for Section C depth.' },
+          { term: 'key references sheet', description: 'A list of the 5-10 most important textual references, documents, and thinkers for each major topic. Your toolkit for depth in the longer answers.' },
           { term: 'comparative tables', description: 'Tables comparing different religious or philosophical perspectives on the same issue. Builds the balanced analysis examiners reward.' }
         ]
       },
@@ -465,22 +468,22 @@ export const HUMANITIES_CONTENT: Record<string, SubjectModuleContent> = {
         title: 'Your Religious Education Action Plan',
         eyebrow: '06 // Action Plan',
         paragraphs: [
-          'Start by identifying your Section C topics — these are the ones you will write extended essays on. For each topic, build your [[key references sheet]] with specific textual citations and theological positions. This is the foundation of everything else.',
-          'Next, create comparative tables for at least three major moral or theological issues where multiple perspectives apply. Practise writing Section C essays under timed conditions — one per week — and mark them against past marking schemes to track your development.',
-          'Keep your Coursework Journal up to date throughout the year. Write reflective entries after each topic, connecting what you have learned to your own thinking and to the wider world. A strong journal is marks in the bank before exam day.'
+          'Start by choosing your two Unit Two content areas plus your Unit One and Unit Three sections — these are what you will actually answer. For each, build your [[key references sheet]] with specific textual citations and theological positions. This is the foundation of everything else.',
+          'Next, create comparative tables for at least three major moral or theological issues where multiple perspectives apply. Practise writing full past questions under timed conditions — one per week — and mark them against past marking schemes, checking that you actually did the higher-order skill (assess/compare) the command word asked for.',
+          'Work on your Coursework steadily throughout the year. Once you have chosen your prescribed title, gather sources, record your steps and findings, and write an honest personal reflection — rather than leaving it all to the end. A strong report is marks in the bank before exam day.'
         ],
         highlights: [
-          { term: 'key references sheet', description: 'Your essential study tool: specific textual citations and theological positions for each major topic, ready to deploy in Section C.' }
+          { term: 'key references sheet', description: 'Your essential study tool: specific textual citations and theological positions for each chosen topic, ready to deploy in the longer answers.' }
         ],
         bullets: [
-          'Build key references sheets for each Section C topic with 5-10 specific citations',
+          'Build key references sheets for each chosen topic with 5-10 specific citations',
           'Create comparative tables for at least 3 moral/theological issues',
-          'Write one timed Section C essay per week from past papers',
-          'Practise 5 past Section B stimulus questions under exam conditions',
-          'Maintain your Coursework Journal with reflective entries after each topic'
+          'Write one timed past question per week and check you did the command word\'s skill',
+          'Sort past questions by command word and drill the higher-order (assess/compare) ones',
+          'Work on your Coursework prescribed-title report steadily across the year'
         ],
         commitmentText:
-          'I will build my key references sheets for two Section C topics this week and write my first timed essay.'
+          'I will build my key references sheets for two topics this week and write my first timed answer.'
       }
     ]
   },
