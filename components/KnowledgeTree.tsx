@@ -6,14 +6,13 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { MotionDiv } from './Motion';
 import {
-  Rocket, ArrowRight, BarChart3, Compass,
-  User, Home, PanelLeft, Award, BookOpen, CalendarRange, Settings, LogOut, Sun, Moon, RefreshCw, Mountain, Timer, Dumbbell, Bell, MessageSquare, HelpCircle, Search, Sparkles
+  Rocket, ArrowRight, BarChart3,
+  User, Home, PanelLeft, Award, BookOpen, CalendarRange, Settings, LogOut, Sun, Moon, RefreshCw, Mountain, Timer, Dumbbell, Bell, MessageSquare, HelpCircle, Sparkles
 } from 'lucide-react';
 import SiteGuide, { type GuideAction } from './SiteGuide';
 import FirstVisitCoachMarks, { coachMarksSeen } from './FirstVisitCoachMarks';
 import WhatsNew, { hasUnseenChangelog, markChangelogSeen } from './WhatsNew';
 import ResumeCard from './ResumeCard';
-import { openCommandPalette } from './CommandPalette';
 import FeedbackQrModal from './FeedbackQrModal';
 import { getAvatarUrl } from '../utils/authUtils';
 import { type CourseData } from './Library';
@@ -114,13 +113,11 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
 
   const sidebarItems = [
     { icon: Home, label: 'Home', onClick: () => {}, active: true },
-    { icon: Search, label: 'Jump to… (⌘K)', onClick: openCommandPalette, active: false },
     { icon: Dumbbell, label: 'Training Hub', onClick: onGoToTrainingHub ?? (() => {}), active: false },
     { icon: BookOpen, label: 'References', onClick: onGoToAccreditation ?? (() => {}), active: false },
     { icon: Mountain, label: 'My Journey', onClick: onGoToJourney, active: false },
     { icon: Timer, label: 'Study Session', onClick: onGoToStudy ?? (() => {}), active: false },
     { icon: BarChart3, label: 'Dashboard', onClick: onGoToDashboard, active: false },
-    { icon: Compass, label: 'Learning Paths', onClick: onGoToLearningPaths, active: false },
     { icon: CalendarRange, label: 'Year Plans', onClick: onGoToYearPlans ?? (() => {}), active: false },
     { icon: Rocket, label: 'Launchpad', onClick: onGoToInnovationZone, active: false },
   ];

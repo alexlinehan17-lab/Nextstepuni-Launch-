@@ -9,7 +9,7 @@
  * computed from the student's own data — no invented SEC timetable, no promises.
  */
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { CalendarDays, ChevronRight, Pencil } from 'lucide-react';
 import { getExamDate, setExamDate, daysUntil } from './examDateStore';
 import { dayKey } from './streakStore';
@@ -26,16 +26,31 @@ const prettyDate = (iso: string) => {
   return `${d} ${MONTHS[m - 1]} ${y}`;
 };
 
+const ISO = /^\d{4}-\d{2}-\d{2}$/;
+
 interface Props {
   uid?: string;
   now: number;
   onOpen?: () => void;
+  /** The exam start date the student gave at onboarding (subjectProfile
+   *  .examStartDate, ISO). Used to pre-fill the countdown so a student never
+   *  has to re-enter a date they already told us. A locally-set date always
+   *  wins (they can still edit it here). */
+  onboardingExamDate?: string;
 }
 
-const CountdownCard: React.FC<Props> = ({ uid, now, onOpen }) => {
-  const [date, setDate] = useState<string | null>(() => getExamDate(uid));
+const CountdownCard: React.FC<Props> = ({ uid, now, onOpen, onboardingExamDate }) => {
+  const onboardingSeed = onboardingExamDate && ISO.test(onboardingExamDate) ? onboardingExamDate : null;
+  const [date, setDate] = useState<string | null>(() => getExamDate(uid) ?? onboardingSeed);
   const [editing, setEditing] = useState(false);
   const [draft, setDraft] = useState(date ?? '');
+
+  // Persist the onboarding date to the Paper Trail store the first time, so the
+  // countdown is consistent across the tool and survives a reload — without
+  // clobbering a date the student has since set/edited here.
+  useEffect(() => {
+    if (onboardingSeed && !getExamDate(uid)) setExamDate(uid, onboardingSeed);
+  }, [uid, onboardingSeed]);
 
   const save = () => {
     if (!draft) return;

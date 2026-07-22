@@ -18,7 +18,7 @@
  */
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { ArrowLeft, Clock3, FileStack, Layers, Layers3, Repeat, Search, Sprout, Star } from 'lucide-react';
+import { ArrowLeft, Clock3, FileStack, Layers, Layers3, Repeat, Search, Star } from 'lucide-react';
 import SubjectTilePicker from '../shared/SubjectTilePicker';
 import { baseName, displayName } from '../shared/subjectNames';
 import Viewer from './Viewer';
@@ -34,12 +34,10 @@ import CountdownCard from './CountdownCard';
 import ProgressDashboard from './ProgressDashboard';
 import MockExamBuilder from './MockExamBuilder';
 import Flashcards from './Flashcards';
-import FocusSession from './FocusSession';
 import FirstRunCoach from './FirstRunCoach';
 import MilestoneCelebration from './MilestoneCelebration';
 import { deckStats } from './reviewStore';
 import { cardStats } from './flashcardStore';
-import { focusStats } from './focusStore';
 import { loadSet } from './mockSetStore';
 import { allMarks } from './attemptStore';
 import { composeCoach } from './coach';
@@ -147,7 +145,6 @@ type View =
   | { v: 'progress' }
   | { v: 'mock' }
   | { v: 'cards' }
-  | { v: 'focus' }
   | { v: 'subject'; subjectId: string }
   | {
       v: 'viewer';
@@ -175,6 +172,9 @@ interface PaperTrailProps {
   /** Subject name → chosen level, from the subject profile. */
   studentLevels?: { name: string; level: string }[];
   studentCycle?: 'junior-cycle' | 'leaving-cert';
+  /** Exam start date from onboarding (subjectProfile.examStartDate, ISO) —
+   *  pre-fills the countdown so the student needn't re-enter it. */
+  onboardingExamDate?: string;
   /** Cross-tool routing (error autopsy) — opens another Launchpad tool by id. */
   onOpenTool?: (toolId: string) => void;
 }
@@ -184,6 +184,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   studentSubjects,
   studentLevels,
   studentCycle,
+  onboardingExamDate,
   onOpenTool,
 }) => {
   const { state, isLoaded, recordRecent, updatePage, setFilters } = usePaperFinder(uid);
@@ -553,11 +554,6 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   // ═══════════════════════ FLASHCARDS ═══════════════════════
   if (view.v === 'cards') {
     return <Flashcards uid={uid} now={Date.now()} onBack={() => setView({ v: 'home' })} />;
-  }
-
-  // ═══════════════════════ FOCUS SESSION ═══════════════════════
-  if (view.v === 'focus') {
-    return <FocusSession uid={uid} onBack={() => setView({ v: 'home' })} />;
   }
 
   // ═══════════════════════ DAILY REVIEW (SRS) ═══════════════════════
@@ -936,7 +932,6 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   const reviewTileSub = review.due > 0 ? `${review.due} due` : review.total > 0 ? 'all caught up' : 'spaced recall';
   const activeMock = loadSet(uid);
   const cardsInfo = cardStats(uid, Date.now());
-  const focus = focusStats(uid, Date.now());
   // The Coach — tonight's session, composed across every tool's signals.
   const coachPlan = composeCoach(uid, Date.now());
   // The Sunday Debrief — weekly recap, shown Sun/Mon until dismissed (F11).
@@ -1001,7 +996,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
       </div>
 
       {/* Exam countdown + daily focus (A3). */}
-      <CountdownCard uid={uid} now={Date.now()} onOpen={() => setView({ v: 'progress' })} />
+      <CountdownCard uid={uid} now={Date.now()} onboardingExamDate={onboardingExamDate} onOpen={() => setView({ v: 'progress' })} />
 
       {/* Practice streak + daily goal (B3) — hidden until first practice; opens
           the progress dashboard when tapped. */}
@@ -1085,20 +1080,6 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
         <StudyTile icon={<FileStack size={20} style={{ color: '#F26B1F' }} />} label="Mock set" sub={activeMock ? 'resume' : 'timed set'} dot={!!activeMock} onClick={() => setView({ v: 'mock' })} />
         <StudyTile icon={<Layers3 size={20} style={{ color: '#F26B1F' }} />} label="Cards" sub={cardsInfo.total ? `${cardsInfo.total} card${cardsInfo.total === 1 ? '' : 's'}` : 'make your own'} badge={cardsInfo.due} onClick={() => setView({ v: 'cards' })} />
       </div>
-
-      {/* Focus session — a calm timer that grows a grove (E7). */}
-      <button
-        onClick={() => setView({ v: 'focus' })}
-        className="w-full flex items-center gap-3 rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 px-4 py-3 mb-6 text-left transition-transform active:translate-y-0.5 hover:-translate-y-0.5"
-      >
-        <span className="shrink-0 w-9 h-9 rounded-xl flex items-center justify-center" style={{ backgroundColor: '#E8F2EC' }}>
-          <Sprout size={18} style={{ color: '#3A8D5F' }} />
-        </span>
-        <span className="flex-1 min-w-0">
-          <span className="block text-[14px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Focus session</span>
-          <span className="block text-[12px]" style={{ color: '#7a7068' }}>{focus.todayMinutes > 0 ? `${focus.todayMinutes} min focused today · grow your grove` : 'A calm timer that grows your grove'}</span>
-        </span>
-      </button>
 
       {/* Pinned papers — favourites a grinding student keeps one tap away. */}
       {pins.length > 0 && (

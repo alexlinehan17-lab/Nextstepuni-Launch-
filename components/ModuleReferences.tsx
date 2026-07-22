@@ -4,6 +4,7 @@
  */
 
 import React from 'react';
+import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, BookOpen } from 'lucide-react';
 import { type Reference } from '../data/references/types';
@@ -30,7 +31,13 @@ export const ReferencesModal: React.FC<{
   open: boolean;
   onClose: () => void;
   references: Reference[];
-}> = ({ open, onClose, references }) => (
+}> = ({ open, onClose, references }) => {
+  // Portal to <body>: the module content column carries a CSS transform (its
+  // section-enter / Framer animations), which would otherwise trap this
+  // position:fixed overlay inside that transformed ancestor — centring it on
+  // the content column instead of the viewport and pushing it off-screen.
+  if (typeof document === 'undefined') return null;
+  return createPortal(
   <AnimatePresence>
     {open && (
       <>
@@ -99,5 +106,7 @@ export const ReferencesModal: React.FC<{
         </motion.div>
       </>
     )}
-  </AnimatePresence>
-);
+  </AnimatePresence>,
+  document.body,
+  );
+};
