@@ -13,7 +13,7 @@
 
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowLeft, ArrowRight, BookOpen, Check, ChevronRight, Search, ShieldCheck } from 'lucide-react';
+import { ArrowLeft, ArrowRight, ArrowUpRight, BookOpen, Check, ChevronRight, Search, ShieldCheck } from 'lucide-react';
 import { ACCREDITED_MODULES, type AccreditedModuleEntry } from '../data/accreditationCatalog';
 import { type Reference } from '../data/references/types';
 import { ALL_COURSES, categoryTitles } from '../courseData';
@@ -21,6 +21,8 @@ import { type CategoryType } from './KnowledgeTree';
 
 interface AccreditationPageProps {
   onBack: () => void;
+  /** Jump straight into the module being inspected. */
+  onOpenModule?: (moduleId: string) => void;
 }
 
 const SERIF = "'Source Serif 4', serif";
@@ -106,7 +108,7 @@ const RefRow: React.FC<{ r: Reference; n: number }> = ({ r, n }) => {
   );
 };
 
-const AccreditationPage: React.FC<AccreditationPageProps> = ({ onBack }) => {
+const AccreditationPage: React.FC<AccreditationPageProps> = ({ onBack, onOpenModule }) => {
   const entryById = useMemo(() => {
     const m = new Map<string, AccreditedModuleEntry>();
     ACCREDITED_MODULES.forEach(e => m.set(e.id, e));
@@ -124,7 +126,11 @@ const AccreditationPage: React.FC<AccreditationPageProps> = ({ onBack }) => {
           accredited: courses.filter(c => entryById.has(c.id)),
           inReview: courses.filter(c => !entryById.has(c.id)),
         };
-      }).filter(g => g.accredited.length + g.inReview.length > 0),
+      })
+        .filter(g => g.accredited.length + g.inReview.length > 0)
+        // Decoding the Subjects is withheld entirely until EVERY subject module
+        // has passed evidence review — no partial list, no greyed rows.
+        .filter(g => !(g.cat === 'subject-specific-science' && g.inReview.length > 0)),
     [entryById]
   );
 
@@ -324,13 +330,27 @@ const AccreditationPage: React.FC<AccreditationPageProps> = ({ onBack }) => {
                 transition={{ duration: 0.22, ease: 'easeOut' }}
               >
                 <div className="rounded-2xl bg-white px-5 md:px-8 py-6 md:py-8" style={{ border: `1px solid ${HAIRLINE}` }}>
-                  <MicroLabel color={ACCENT}>{categoryTitles[selectedCourse.category as CategoryType]}</MicroLabel>
-                  <h2 className="text-[24px] md:text-[28px] font-semibold leading-tight mt-1.5" style={{ fontFamily: SERIF, color: INK }}>
-                    {selectedCourse.title}
-                  </h2>
-                  <p className="text-[13.5px] mt-1" style={{ color: MUTED, fontFamily: SANS }}>
-                    {selectedCourse.subtitle}
-                  </p>
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="min-w-0">
+                      <MicroLabel color={ACCENT}>{categoryTitles[selectedCourse.category as CategoryType]}</MicroLabel>
+                      <h2 className="text-[24px] md:text-[28px] font-semibold leading-tight mt-1.5" style={{ fontFamily: SERIF, color: INK }}>
+                        {selectedCourse.title}
+                      </h2>
+                      <p className="text-[13.5px] mt-1" style={{ color: MUTED, fontFamily: SANS }}>
+                        {selectedCourse.subtitle}
+                      </p>
+                    </div>
+                    {onOpenModule && (
+                      <button
+                        onClick={() => onOpenModule(selected.id)}
+                        className="shrink-0 inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full text-[12.5px] font-semibold transition-colors hover:bg-[#FDEEDF]"
+                        style={{ border: '1px solid rgba(242,107,31,0.3)', color: ACCENT, fontFamily: SANS, backgroundColor: 'white' }}
+                        aria-label={`Open the ${selectedCourse.title} module`}
+                      >
+                        Open module <ArrowUpRight size={14} />
+                      </button>
+                    )}
+                  </div>
 
                   <div className="grid md:grid-cols-2 gap-5 md:gap-8 mt-6">
                     <div>

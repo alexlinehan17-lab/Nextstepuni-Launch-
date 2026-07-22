@@ -450,7 +450,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   if (viewState === 'accreditation') {
     return (
       <Suspense fallback={<LoadingSpinner />}>
-        <AccreditationPage onBack={handleBackToTree} />
+        <AccreditationPage onBack={handleBackToTree} onOpenModule={handleSelectModule} />
       </Suspense>
     );
   }
