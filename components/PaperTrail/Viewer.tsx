@@ -27,7 +27,6 @@ import {
   BookOpen,
   Clock3,
   Download,
-  Gauge,
   Highlighter,
   Pause,
   Play,
@@ -35,7 +34,6 @@ import {
   PenLine,
   Repeat2,
   RotateCcw,
-  ScrollText,
   SlidersHorizontal,
   Sparkles,
   TrendingUp,
@@ -1023,6 +1021,22 @@ const Viewer: React.FC<ViewerProps> = ({
               </button>
             </div>
           )}
+          {/* Answers — the flagship per-question marking-scheme reveal. A
+              standalone one-tap toggle (not buried in the Tools menu), shown
+              whenever this paper has a verified answer map. */}
+          {side === 'paper' && answersUrl && (
+            <button
+              onClick={toggleAnswers}
+              aria-pressed={answersOn}
+              aria-label="Show the marking scheme beside each question"
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-[13px] font-semibold transition-all ${
+                answersOn ? 'text-white' : 'text-[#F26B1F] bg-[#FDEEDF]'
+              }`}
+              style={answersOn ? { backgroundColor: '#F26B1F', boxShadow: '0 2px 0 #B54D14' } : undefined}
+            >
+              <Sparkles size={14} /> Answers
+            </button>
+          )}
           {side === 'paper' && (
             <div className="relative" data-tools-anchor>
               <button
@@ -1098,31 +1112,6 @@ const Viewer: React.FC<ViewerProps> = ({
                       />
                     )}
                     <ToolRow
-                      icon={<Clock3 size={15} />}
-                      title="Time budget"
-                      sub={
-                        timing
-                          ? wpmCal
-                            ? `Personalised to your writing speed (${wpmCal.wpm} wpm)`
-                            : 'Minutes to spend per question'
-                          : 'Each question’s share of the paper'
-                      }
-                      on={paceOn}
-                      busy={paceOn && scanState === 'loading'}
-                      onClick={() => toggleTool('pace')}
-                    />
-                    {timing && (
-                      <ToolRow
-                        icon={<Gauge size={15} />}
-                        title="Handwriting speed"
-                        sub={wpmCal ? `${wpmCal.wpm} wpm — tap to redo the 2-min drill` : '2-min drill — personalise your time budgets'}
-                        onClick={() => {
-                          setCalibratorOpen(true);
-                          setToolsOpen(false);
-                        }}
-                      />
-                    )}
-                    <ToolRow
                       icon={<Highlighter size={15} />}
                       title="Command words"
                       sub="Decode what each question demands"
@@ -1155,28 +1144,6 @@ const Viewer: React.FC<ViewerProps> = ({
                         on={topicsOn}
                         busy={topicsOn && answerState === 'loading'}
                         onClick={toggleTopics}
-                      />
-                    )}
-                    {grammar && (
-                      <ToolRow
-                        icon={<ScrollText size={15} />}
-                        title="How it’s marked"
-                        sub={grammar.subjectLabel}
-                        onClick={() => {
-                          setMarkingOpen(true);
-                          setToolsOpen(false);
-                        }}
-                      />
-                    )}
-                    {examinerInsights && (
-                      <ToolRow
-                        icon={<ScrollText size={15} />}
-                        title="Examiner insights"
-                        sub="Where the Chief Examiner says marks are lost"
-                        onClick={() => {
-                          setExaminerOpen(true);
-                          setToolsOpen(false);
-                        }}
                       />
                     )}
                     {formulae && (

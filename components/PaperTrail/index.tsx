@@ -18,7 +18,7 @@
  */
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { ArrowLeft, Clock3, FileStack, Layers, Layers3, Repeat, Search, Star } from 'lucide-react';
+import { ArrowLeft, Clock3, Layers, Search, Star } from 'lucide-react';
 import SubjectTilePicker from '../shared/SubjectTilePicker';
 import { baseName, displayName } from '../shared/subjectNames';
 import Viewer from './Viewer';
@@ -37,8 +37,6 @@ import Flashcards from './Flashcards';
 import FirstRunCoach from './FirstRunCoach';
 import MilestoneCelebration from './MilestoneCelebration';
 import { deckStats } from './reviewStore';
-import { cardStats } from './flashcardStore';
-import { loadSet } from './mockSetStore';
 import { allMarks } from './attemptStore';
 import { composeCoach } from './coach';
 import { composeDebrief, debriefSeen, markDebriefSeen } from './debrief';
@@ -102,31 +100,6 @@ const paperLabel = (label: string) => label.replace(/\s*\([A-Z]{2}\)\s*$/, '').t
 
 const subjectById = new Map(PAPER_TRAIL_SUBJECTS.map(s => [s.id, s]));
 
-/** One tile in the home study launcher (Revise / Review / Mock set). Compact,
- *  vertical, launcher-style — three read as a single row rather than three
- *  stacked full-width cards. */
-const StudyTile: React.FC<{
-  icon: React.ReactNode;
-  label: string;
-  sub: string;
-  badge?: number;
-  dot?: boolean;
-  onClick: () => void;
-}> = ({ icon, label, sub, badge, dot, onClick }) => (
-  <button
-    onClick={onClick}
-    className="relative flex flex-col items-center gap-2 rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46] px-2 py-4 text-center transition-transform active:translate-y-0.5 hover:-translate-y-0.5"
-  >
-    <span className="w-11 h-11 rounded-xl flex items-center justify-center" style={{ backgroundColor: '#FDEEDF' }}>{icon}</span>
-    <span className="text-[13px] font-semibold leading-tight" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>{label}</span>
-    <span className="text-[10.5px] leading-tight" style={{ color: '#9e9186' }}>{sub}</span>
-    {badge != null && badge > 0 ? (
-      <span className="absolute top-2 right-2 min-w-[18px] h-[18px] px-1 rounded-full text-[10.5px] font-bold flex items-center justify-center tabular-nums" style={{ backgroundColor: '#F26B1F', color: '#fff' }}>{badge}</span>
-    ) : dot ? (
-      <span className="absolute top-2.5 right-2.5 w-2 h-2 rounded-full" style={{ backgroundColor: '#F26B1F' }} />
-    ) : null}
-  </button>
-);
 
 // Deep-link params are snapshotted at boot by utils/bootParams (this lazy
 // chunk loads long after NavigationContext rewrites the URL). Applied at most
@@ -929,9 +902,6 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     groups.lca.length > 0 &&
     (scope === 'all' || groups.mineIds.length === 0 || groups.lca.some(s => groups.mineIds.includes(s.id)));
   const review = deckStats(uid, Date.now());
-  const reviewTileSub = review.due > 0 ? `${review.due} due` : review.total > 0 ? 'all caught up' : 'spaced recall';
-  const activeMock = loadSet(uid);
-  const cardsInfo = cardStats(uid, Date.now());
   // The Coach — tonight's session, composed across every tool's signals.
   const coachPlan = composeCoach(uid, Date.now());
   // The Sunday Debrief — weekly recap, shown Sun/Mon until dismissed (F11).
@@ -1073,13 +1043,20 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
         </section>
       )}
 
-      {/* Study launcher — Revise / Review / Mock / Cards (A1/A2/B1/E6). */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 mb-6">
-        <StudyTile icon={<Layers size={20} style={{ color: '#F26B1F' }} />} label="Topic Vault" sub="every question by topic" onClick={() => setView({ v: 'revise' })} />
-        <StudyTile icon={<Repeat size={20} style={{ color: '#F26B1F' }} />} label="Review" sub={reviewTileSub} badge={review.due} onClick={() => setView({ v: 'review' })} />
-        <StudyTile icon={<FileStack size={20} style={{ color: '#F26B1F' }} />} label="Mock set" sub={activeMock ? 'resume' : 'timed set'} dot={!!activeMock} onClick={() => setView({ v: 'mock' })} />
-        <StudyTile icon={<Layers3 size={20} style={{ color: '#F26B1F' }} />} label="Cards" sub={cardsInfo.total ? `${cardsInfo.total} card${cardsInfo.total === 1 ? '' : 's'}` : 'make your own'} badge={cardsInfo.due} onClick={() => setView({ v: 'cards' })} />
-      </div>
+      {/* Study launcher — Topic Vault (A1). Review / Mock set / Cards are
+          parked for now (2026-07-22); their views + stores remain intact. */}
+      <button
+        onClick={() => setView({ v: 'revise' })}
+        className="w-full flex items-center gap-3 rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46] px-4 py-3 mb-6 text-left transition-transform active:translate-y-0.5 hover:-translate-y-0.5"
+      >
+        <span className="shrink-0 w-9 h-9 rounded-xl flex items-center justify-center" style={{ backgroundColor: '#FDEEDF' }}>
+          <Layers size={18} style={{ color: '#F26B1F' }} />
+        </span>
+        <span className="flex-1 min-w-0">
+          <span className="block text-[14px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Topic Vault</span>
+          <span className="block text-[12px]" style={{ color: '#7a7068' }}>Every question by topic</span>
+        </span>
+      </button>
 
       {/* Pinned papers — favourites a grinding student keeps one tap away. */}
       {pins.length > 0 && (
