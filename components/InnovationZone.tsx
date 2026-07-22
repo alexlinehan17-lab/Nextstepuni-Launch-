@@ -704,7 +704,11 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     // Curriculum gating (Phase 4): JC users only see tools tagged 'both'
     // or 'junior'. Senior users see everything (incl. tools without a tag).
     // (curriculumLevel itself is now declared above the tools array.)
+    // Workshop (WIP) tools — parked out of the main grid but still openable via
+    // the sidebar Workshop page's deep-links (currentTool lookup is unfiltered).
+    const WIP_TOOL_IDS = new Set(['diagram-vault', 'answer-architect', 'definition-drill', 'oral-trainer', 'examiners-chair']);
     const curriculumVisibleTools = tools.filter(t => {
+      if (WIP_TOOL_IDS.has(t.id)) return false;
       const tag = t.curriculum ?? 'senior';
       const okCurriculum = tag === 'both' || tag === curriculumLevel;
       // Tools flagged `seniorYearsOnly` must ALSO be an active senior year

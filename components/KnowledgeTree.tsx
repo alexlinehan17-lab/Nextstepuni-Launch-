@@ -6,7 +6,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { MotionDiv } from './Motion';
 import {
-  Rocket, ArrowRight, BarChart3,
+  Rocket, ArrowRight, BarChart3, Hammer,
   User, Home, PanelLeft, Award, BookOpen, CalendarRange, Settings, LogOut, Sun, Moon, RefreshCw, Mountain, Timer, Dumbbell, Bell, MessageSquare, HelpCircle, Sparkles
 } from 'lucide-react';
 import SiteGuide, { type GuideAction } from './SiteGuide';
@@ -47,6 +47,7 @@ interface KnowledgeTreeProps {
   onGoToCutContent?: () => void;
   onGoToAccreditation?: () => void;
   onGoToYearPlans?: () => void;
+  onGoToWipTools?: () => void;
   onSelectModule: (moduleId: string) => void;
   allCourses: CourseData[];
   categoryTitles: Record<CategoryType, string>;
@@ -78,7 +79,7 @@ interface KnowledgeTreeProps {
 }
 
 
-export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: _onSelectCategory, onGoToModules, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, onGoToInsights: _onGoToInsights, onGoToTrainingHub, onGoToAccreditation, onGoToYearPlans, allCourses, onSelectModule, categoryTitles: _categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes: _unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction, onOpenTool, uid }) => {
+export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: _onSelectCategory, onGoToModules, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, onGoToInsights: _onGoToInsights, onGoToTrainingHub, onGoToAccreditation, onGoToYearPlans, onGoToWipTools, allCourses, onSelectModule, categoryTitles: _categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes: _unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction, onOpenTool, uid }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [feedbackQrOpen, setFeedbackQrOpen] = useState(false);
   // Site Guide (the "?") + one-time first-visit coach marks.
@@ -120,6 +121,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
     { icon: BarChart3, label: 'Dashboard', onClick: onGoToDashboard, active: false },
     { icon: CalendarRange, label: 'Year Plans', onClick: onGoToYearPlans ?? (() => {}), active: false },
     { icon: Rocket, label: 'Launchpad', onClick: onGoToInnovationZone, active: false },
+    { icon: Hammer, label: 'WIP', onClick: onGoToWipTools ?? (() => {}), active: false },
   ];
   
   // Aggregate + per-category progress for the Modules hero

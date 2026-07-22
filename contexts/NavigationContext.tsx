@@ -13,7 +13,7 @@ export type ViewState =
   | 'tree' | 'modules' | 'category' | 'module' | 'innovation-zone'
   | 'dashboard' | 'learning-paths' | 'onboarding'
   | 'my-journey' | 'gamification-hub' | 'study-session' | 'insights'
-  | 'jc-coming-soon' | 'cut-content' | 'accreditation' | 'year-plans';
+  | 'jc-coming-soon' | 'cut-content' | 'accreditation' | 'year-plans' | 'wip-tools';
 
 export interface NavigationState {
   viewState: ViewState;
@@ -40,6 +40,7 @@ type NavigationAction =
   | { type: 'NAVIGATE_TO_CUT_CONTENT' }
   | { type: 'NAVIGATE_TO_ACCREDITATION' }
   | { type: 'NAVIGATE_TO_YEAR_PLANS' }
+  | { type: 'NAVIGATE_TO_WIP_TOOLS' }
   | { type: 'SET_ACTIVE_TOOL'; tool: string | null }
   | { type: 'RESTORE_STATE'; state: Partial<NavigationState> };
 
@@ -62,6 +63,7 @@ interface NavigationContextValue {
   navigateToCutContent: () => void;
   navigateToAccreditation: () => void;
   navigateToYearPlans: () => void;
+  navigateToWipTools: () => void;
   setActiveTool: (tool: string | null) => void;
   goBack: () => void;
 }
@@ -72,7 +74,7 @@ const VALID_VIEWS = new Set<string>([
   'tree', 'modules', 'category', 'module', 'innovation-zone',
   'dashboard', 'learning-paths', 'onboarding',
   'my-journey', 'gamification-hub', 'study-session', 'insights',
-  'jc-coming-soon', 'cut-content', 'accreditation', 'year-plans',
+  'jc-coming-soon', 'cut-content', 'accreditation', 'year-plans', 'wip-tools',
 ]);
 
 function serializeToURL(state: NavigationState): string {
@@ -146,6 +148,8 @@ function navigationReducer(state: NavigationState, action: NavigationAction): Na
       return { ...state, viewState: 'accreditation', currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'NAVIGATE_TO_YEAR_PLANS':
       return { ...state, viewState: 'year-plans', currentModuleId: null, cameFromJourney: false, activeTool: null };
+    case 'NAVIGATE_TO_WIP_TOOLS':
+      return { ...state, viewState: 'wip-tools', currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'SET_ACTIVE_TOOL':
       if (state.activeTool === action.tool) return state;
       return { ...state, activeTool: action.tool };
@@ -357,6 +361,11 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     window.scrollTo(0, 0);
   }, [navigate]);
 
+  const navigateToWipTools = useCallback(() => {
+    navigate({ type: 'NAVIGATE_TO_WIP_TOOLS' });
+    window.scrollTo(0, 0);
+  }, [navigate]);
+
   const navigateToAccreditation = useCallback(() => {
     navigate({ type: 'NAVIGATE_TO_ACCREDITATION' });
     window.scrollTo(0, 0);
@@ -389,6 +398,7 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     navigateToCutContent,
     navigateToAccreditation,
     navigateToYearPlans,
+    navigateToWipTools,
     setActiveTool,
     goBack,
   };

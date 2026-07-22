@@ -26,6 +26,7 @@ const GCDashboard = lazy(() => import('./GCDashboard').then(m => ({ default: m.G
 const DashboardView = lazy(() => import('./DashboardView'));
 const LearningPathsView = lazy(() => import('./LearningPathsView'));
 const YearPlansView = lazy(() => import('./YearPlansView'));
+const WipTools = lazy(() => import('./WipTools'));
 const ModulesView = lazy(() => import('./ModulesView').then(m => ({ default: m.ModulesView })));
 import { moduleComponents, InnovationZone } from '../moduleRegistry';
 import { ALL_COURSES, categoryTitles, SUBJECT_TO_MODULE } from '../courseData';
@@ -224,6 +225,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   const handleGoToDashboard = () => { nav.navigateToDashboard(); };
   const handleGoToLearningPaths = () => { nav.navigateToLearningPaths(); };
   const handleGoToYearPlans = () => { nav.navigateToYearPlans(); };
+  const handleGoToWipTools = () => { nav.navigateToWipTools(); };
   const handleGoToJourney = () => { nav.navigateToJourney(); };
   const handleGoToGamificationHub = () => { nav.navigateToGamificationHub(); };
   const handleGoToStudy = () => {
@@ -404,6 +406,14 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     );
   }
 
+  if (viewState === 'wip-tools') {
+    return (
+      <Suspense fallback={<LoadingSpinner />}>
+        <WipTools onBack={handleBackToTree} onOpenTool={(toolId: string) => nav.navigateToInnovationZone(toolId)} />
+      </Suspense>
+    );
+  }
+
   if (viewState === 'year-plans') {
     return (
       <Suspense fallback={<LoadingSpinner />}>
@@ -482,6 +492,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
       onGoToDashboard={handleGoToDashboard}
       onGoToLearningPaths={handleGoToLearningPaths}
       onGoToYearPlans={handleGoToYearPlans}
+      onGoToWipTools={handleGoToWipTools}
       onGoToJourney={handleGoToJourney}
       onGoToStudy={handleGoToStudy}
       onGoToInsights={handleGoToInsights}
