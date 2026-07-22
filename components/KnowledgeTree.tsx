@@ -338,7 +338,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
             </span>
           </button>
 
-          {/* How the site works — the Site Guide */}
+          {/* How the app works — the Site Guide */}
           <button
             data-coach="help"
             onClick={() => setGuideOpen(true)}
@@ -348,7 +348,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
               <HelpCircle size={18} strokeWidth={1.5} className="text-[#F26B1F]" />
             </div>
             <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
-              How the site works
+              How the app works
             </span>
           </button>
 
@@ -458,6 +458,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
           >
             {/* ── Day stats — Mercury-styled inline strip ── */}
             <div
+              data-coach="study"
               className="rounded-2xl px-5 py-3.5 mb-4 flex items-center justify-between flex-wrap gap-3 bg-white dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800"
               style={{ boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}
             >

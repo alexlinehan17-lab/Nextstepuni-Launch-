@@ -19,6 +19,11 @@ const STEPS: { target: string; title: string; body: string }[] = [
     body: 'Interactive modules that teach you how to learn — memory, focus, exam craft. They unlock section by section.',
   },
   {
+    target: 'study',
+    title: 'Sit down and focus here',
+    body: 'Your day at a glance — sessions, points and your streak. Start a timed, distraction-free study session whenever you’re ready.',
+  },
+  {
     target: 'launchpad',
     title: 'Your exam tools live here',
     body: 'The Launchpad: past papers beside their marking schemes, marking practice, CAO planning and more.',
