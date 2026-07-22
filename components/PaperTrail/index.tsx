@@ -18,7 +18,7 @@
  */
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { ArrowLeft, Clock3, Layers, Search, Star } from 'lucide-react';
+import { ArrowLeft, Clock3, Layers, Search, Sparkles, Star } from 'lucide-react';
 import SubjectTilePicker from '../shared/SubjectTilePicker';
 import { baseName, displayName } from '../shared/subjectNames';
 import Viewer from './Viewer';
@@ -751,6 +751,17 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
                           {item.modified && (
                             <span className="ml-2 text-[11px] font-sans font-medium" style={{ color: '#7a7068' }}>
                               accessible format
+                            </span>
+                          )}
+                          {/* Verified per-question answer map shipped for this paper —
+                              tells students BEFORE opening that the Answers reveal is
+                              available here (discoverability; coverage is per-paper). */}
+                          {item.answers === 1 && item.scheme && (
+                            <span
+                              className="ml-2 inline-flex items-center gap-1 align-middle px-2 py-0.5 rounded-full text-[10.5px] font-sans font-bold"
+                              style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E' }}
+                            >
+                              <Sparkles size={11} aria-hidden /> Answers
                             </span>
                           )}
                         </p>
