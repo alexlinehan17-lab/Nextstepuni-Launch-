@@ -2,8 +2,13 @@
 
 Per-question marking-scheme answer chips. Status of EVERY SEC subject across the three cycles.
 
-**Coverage (2026-07-02, audited against `paperTrailData.ts`): 83 subject-cycles carry the
-`answers` flag on ≥1 paper — 1,121 papers mapped (including 20 wave-10 sidecars).** The
+**Coverage (2026-07-22, audited against `paperTrailData.ts`): 1,262 papers flagged
+`answers:1`, every one verified live on Storage (1,262/1,262 HTTP 200 presence check).**
+Shipped 2026-07-22: the outstanding wave-10 (Politics & Society, Classical Studies) and
+P2C (Estonian, Ukrainian, Arabic, Mandarin Chinese, LCA Spanish, JC French, JC Italian)
+upload passes — 238 sidecars uploaded across all 8 publish manifests, 9 new QA profiles
+added, flags rebuilt via build-index.py.
+Previous audit line (2026-07-02): 83 subject-cycles, 1,121 papers. The
 prose sections below predate several coverage waves and undercount; the authoritative,
 per-paper source of truth is the committed sidecars in `answers/<year>/` plus
 `QA_PASSED_ANSWER_PROFILES` in `build-index.py`. An audit script (see the repo audit note)
@@ -18,8 +23,7 @@ subjects that can't are documented below with the reason.
 > **Classical Studies** (LC008, HL+OL EV new-spec 2023–2025 — Section A `N.` markers +
 > the common Q11b–16 / Q12–16 essay rubric). 20 sidecars, render+text QA verified. Old-spec
 > CS (pre-2023) and P&S HL "choose N of M" years drop cleanly (non-1..N paper sequence).
-> **Ship step outstanding:** upload the 20 sidecars to Storage (`out/wave10-upload.tsv`),
-> then re-run `build-index.py` to light the flags. See `WAVE10.md`.
+> **Shipped 2026-07-22** (uploaded + flags lit).
 
 > **P2C wave (2026-07-07): zero-coverage minor-language tail re-examined.** Agent-authored
 > `lang_reading.py` specs (the reading-only mechanism; script gained optional explicit
@@ -33,8 +37,7 @@ subjects that can't are documented below with the reason.
 > Q8–14}, **JC Italian** {2024, 2025 — Section B Q9–15}. **Hebrew Studies is
 > confirmed-infeasible** (scheme is generic marking guidance, no per-question answers).
 > Remaining years of these subjects need the same per-paper spec authoring before they
-> can light. **Ship step outstanding:** upload the 17 sidecars (`out/p2c-upload.tsv`),
-> then re-run `build-index.py`.
+> can light. **Shipped 2026-07-22** (uploaded + flags lit; 9 QA profiles added).
 
 
 ## Leaving Cert

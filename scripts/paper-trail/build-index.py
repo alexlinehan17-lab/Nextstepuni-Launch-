@@ -138,6 +138,17 @@ QA_PASSED_ANSWER_PROFILES = {
     ('politics-and-society', 'ordinary', 'ev'),
     ('classical-studies', 'higher', 'ev'),
     ('classical-studies', 'ordinary', 'ev'),
+    # P2C wave (2026-07-07, shipped 2026-07-22): minor-language reading tails —
+    # per-question crop-text QA done in the P2C session (see COVERAGE.md).
+    ('estonian', 'higher', 'ev'),
+    ('ukrainian', 'higher', 'ev'),
+    ('arabic', 'higher', 'ev'),
+    ('arabic', 'ordinary', 'ev'),
+    ('mandarin-chinese', 'higher', 'ev'),
+    ('mandarin-chinese', 'ordinary', 'ev'),
+    ('lca-spanish', 'common', 'ev'),
+    ('jc-french', 'common', 'ev'),
+    ('jc-italian', 'common', 'ev'),
     # Coverage wave (2026-06-14): JC + LCA + LC Common/extra-year structured
     # subjects, render-verified per-paper (125-agent workflow + adversarial
     # refute, 235 ship / 257 drop). Languages/Art/essays/older-Maths dropped.
