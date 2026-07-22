@@ -145,6 +145,9 @@ interface PaperTrailProps {
   /** Subject name → chosen level, from the subject profile. */
   studentLevels?: { name: string; level: string }[];
   studentCycle?: 'junior-cycle' | 'leaving-cert';
+  /** Leaving Cert Applied student — shows the LCA archive group (hidden for
+   *  everyone else). */
+  isLca?: boolean;
   /** Exam start date from onboarding (subjectProfile.examStartDate, ISO) —
    *  pre-fills the countdown so the student needn't re-enter it. */
   onboardingExamDate?: string;
@@ -157,6 +160,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   studentSubjects,
   studentLevels,
   studentCycle,
+  isLca = false,
   onboardingExamDate,
   onOpenTool,
 }) => {
@@ -212,7 +216,9 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     const main = inCycle
       .filter(s => (junior ? true : s.cycle === 'lc'))
       .sort((a, b) => displayName(a.name).localeCompare(displayName(b.name)));
-    const lca = (junior ? [] : inCycle.filter(s => s.cycle === 'lca')).sort((a, b) =>
+    // The LCA archive group only surfaces for LCA students — everyone else
+    // never sees Leaving Cert Applied subjects in their picker.
+    const lca = (junior || !isLca ? [] : inCycle.filter(s => s.cycle === 'lca')).sort((a, b) =>
       displayName(a.name).localeCompare(displayName(b.name)),
     );
     const mineIds = [
@@ -220,7 +226,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
       ...lca.filter(s => matchesStudent(s, mineNames)).map(s => s.id),
     ];
     return { main, lca, mineIds };
-  }, [junior, studentSubjects, matchesStudent]);
+  }, [junior, isLca, studentSubjects, matchesStudent]);
 
   /** Distinct-paper count (English-version only — IV duplicates would ~double it). */
   const paperCount = useCallback((id: string) => {

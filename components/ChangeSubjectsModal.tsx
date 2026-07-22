@@ -10,7 +10,7 @@ import { ArrowRight, ArrowLeft, Check, X } from 'lucide-react';
 import { useModal } from '../hooks/useModal';
 import {
   type Grade, type Level, type StudentSubject, type StudentSubjectProfile,
-  LC_SUBJECTS, SUBJECT_GROUP_LABELS, getGradesForLevel, getPointsForGrade,
+  LC_SUBJECTS, LCA_SUBJECTS, SUBJECT_GROUP_LABELS, getGradesForLevel, getPointsForGrade,
   getGradeIndex,
   type LCSubject,
 } from './subjectData';
@@ -129,14 +129,16 @@ const ChangeSubjectsModal: React.FC<ChangeSubjectsModalProps> = ({ isOpen, onClo
 
   // ─── Grouped subjects ───────────────────────────────────────────────────
 
+  // LCA students pick from the LCA course list; everyone else the LC list.
+  const isLca = currentProfile.yearGroup === 'LCA1' || currentProfile.yearGroup === 'LCA2';
   const groupedSubjects = useMemo(() => {
     const groups: Record<string, LCSubject[]> = {};
-    for (const subj of LC_SUBJECTS) {
+    for (const subj of (isLca ? LCA_SUBJECTS : LC_SUBJECTS)) {
       if (!groups[subj.group]) groups[subj.group] = [];
       groups[subj.group].push(subj);
     }
     return groups;
-  }, []);
+  }, [isLca]);
 
   // ─── Save handler ───────────────────────────────────────────────────────
 

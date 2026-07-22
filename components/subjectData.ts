@@ -41,7 +41,7 @@ export interface StudentSubject {
 // Leaving Cert via Settings → School Year. Graduated users retain full
 // app access; the value just drives a different label in Settings and a
 // muted treatment on the GC dashboard.
-export type YearGroup = '1st' | '2nd' | '3rd' | 'TY' | '5th' | '6th' | 'graduated';
+export type YearGroup = '1st' | '2nd' | '3rd' | 'TY' | '5th' | '6th' | 'LCA1' | 'LCA2' | 'graduated';
 
 import type { CurriculumLevel } from '../utils/authUtils';
 
@@ -77,6 +77,40 @@ export interface LCSubject {
   group: 'languages' | 'stem' | 'business' | 'humanities' | 'practical' | 'creative';
   isMaths?: boolean;
 }
+
+
+/** Leaving Cert Applied courses. Names match the Paper Trail archive display
+ *  names (paperTrailData cycle 'lca') so a student's chosen subjects link
+ *  straight to their papers. All LCA courses are assessed at common level —
+ *  credits (Distinction / Merit / Pass), not H/O grades. */
+export const LCA_SUBJECTS: LCSubject[] = [
+  // Languages & communication
+  { name: 'English and Communications', group: 'languages' },
+  { name: 'Gaeilge Chumarsáideach', group: 'languages' },
+  { name: 'French', group: 'languages' },
+  { name: 'German', group: 'languages' },
+  { name: 'Spanish', group: 'languages' },
+  { name: 'Italian', group: 'languages' },
+  { name: 'Sign Language', group: 'languages' },
+  // STEM
+  { name: 'Mathematical Applications', group: 'stem', isMaths: true },
+  { name: 'Information & Communication Tech.', group: 'stem' },
+  // Business / vocational
+  { name: 'Office Admin And Customer', group: 'business' },
+  { name: 'Hotel / Catering & Tourism', group: 'business' },
+  // Humanities
+  { name: 'Social Education', group: 'humanities' },
+  // Practical / vocational specialisms
+  { name: 'Engineering', group: 'practical' },
+  { name: 'Graphics And Construction Studies', group: 'practical' },
+  { name: 'Agriculture / Horticulture', group: 'practical' },
+  { name: 'Childcare / Community Care', group: 'practical' },
+  { name: 'Hair And Beauty', group: 'practical' },
+  { name: 'Active Leisure Studies', group: 'practical' },
+  { name: 'Technology', group: 'practical' },
+  // Creative
+  { name: 'Crafts & Design', group: 'creative' },
+];
 
 export const LC_SUBJECTS: LCSubject[] = [
   // Languages

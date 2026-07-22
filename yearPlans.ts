@@ -15,7 +15,7 @@
  * Ordering within a year is the intended teaching order.
  */
 
-export type YearPlanCycle = 'junior' | 'ty' | 'senior';
+export type YearPlanCycle = 'junior' | 'ty' | 'senior' | 'lca';
 
 export interface YearPlan {
   id: string;
@@ -175,6 +175,52 @@ export const YEAR_PLANS: YearPlan[] = [
       'emotional-intelligence-protocol',
       'illusion-of-competence-protocol',
       'strategic-advantage-protocol',
+    ],
+  },
+  {
+    id: 'lca-year-1',
+    year: 1,
+    title: 'LCA Year 1',
+    subtitle: 'Tasks, habits, momentum',
+    description:
+      'Most of your LCA marks come from tasks and steady module completion — so this year builds the habits that bank them: organisation, follow-through, and the learning science that makes coursework stick.',
+    cycle: 'lca',
+    moduleIds: [
+      'growth-mindset-protocol',
+      'agency-architecture-protocol',
+      'hope-protocol',
+      'self-efficacy-protocol',
+      'implementation-protocol',
+      'procrastination-protocol',
+      'mastering-active-recall-protocol',
+      'mastering-spaced-repetition-protocol',
+      'cognitive-load-protocol',
+      'digital-distraction-protocol',
+      'controllable-variables-protocol',
+      'teaching-effect-protocol',
+    ],
+  },
+  {
+    id: 'lca-year-2',
+    year: 2,
+    title: 'LCA Year 2',
+    subtitle: 'Finish strong',
+    description:
+      'Keep banking task credits, then get ready for the examined part: sharper study technique, steady nerves, and performing on the day.',
+    cycle: 'lca',
+    moduleIds: [
+      'reframing-progress-protocol',
+      'linking-study-future-goals-protocol',
+      'effective-struggle-protocol',
+      'elaborative-interrogation-protocol',
+      'mastering-interleaving-protocol',
+      'learning-radar-protocol',
+      'note-taking-paradox-protocol',
+      'exam-hall-strategies-protocol',
+      'exam-crisis-management-protocol',
+      'emotional-intelligence-protocol',
+      'game-day-protocol',
+      'cognitive-endurance-protocol',
     ],
   },
 ];

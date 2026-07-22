@@ -27,6 +27,8 @@ interface YearPlansViewProps {
   userProgress: UserProgress;
   onSelectModule: (moduleId: string) => void;
   onBack: () => void;
+  /** LCA students see the two LCA year plans instead of the six LC/JC years. */
+  isLca?: boolean;
 }
 
 // Muted per-cycle accents in the LearningPathsView register — tiny details
@@ -35,6 +37,7 @@ const CYCLE_META: Record<YearPlan['cycle'], { eyebrow: string; accent: string }>
   junior: { eyebrow: 'Junior Cycle', accent: '#5B7DB0' },
   ty: { eyebrow: 'Transition Year', accent: '#8B82B8' },
   senior: { eyebrow: 'Senior Cycle', accent: '#D85F47' },
+  lca: { eyebrow: 'Leaving Cert Applied', accent: '#7DA37A' },
 };
 
 const SERIF: React.CSSProperties = { fontFamily: "'Source Serif 4', serif" };
@@ -45,8 +48,10 @@ const YearPlansView: React.FC<YearPlansViewProps> = ({
   userProgress,
   onSelectModule,
   onBack,
+  isLca = false,
 }) => {
   const [expandedId, setExpandedId] = useState<string | null>(null);
+  const plans = YEAR_PLANS.filter(p => (isLca ? p.cycle === 'lca' : p.cycle !== 'lca'));
 
   const isModuleComplete = (moduleId: string) => {
     const course = allCourses.find(c => c.id === moduleId);
@@ -104,7 +109,7 @@ const YearPlansView: React.FC<YearPlansViewProps> = ({
 
         {/* ── Card grid ── */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-          {YEAR_PLANS.map((plan, i) => {
+          {plans.map((plan, i) => {
             const meta = CYCLE_META[plan.cycle];
             const completed = plan.moduleIds.filter(id => isModuleComplete(id)).length;
             const total = plan.moduleIds.length;

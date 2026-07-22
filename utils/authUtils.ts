@@ -33,6 +33,14 @@ export function isGraduated(yg: YearGroup | undefined): boolean {
   return yg === 'graduated';
 }
 
+/** Leaving Cert Applied students. LCA maps to the 'senior' curriculum level
+ *  (it IS senior cycle — full module rendering, all tools), but a handful of
+ *  surfaces branch on the programme: subject choices, Paper Trail's LCA
+ *  archive group, and the LCA Year Plans. */
+export function isLcaYear(yg: YearGroup | undefined): boolean {
+  return yg === 'LCA1' || yg === 'LCA2';
+}
+
 // ─── Active senior cycle ────────────────────────────────────
 //
 // The TRUE "4th/5th/6th year" set — active senior cycle EXCLUDING
@@ -47,7 +55,7 @@ export function isGraduated(yg: YearGroup | undefined): boolean {
 export const ACTIVE_SENIOR_YEARS = ['TY', '5th', '6th'] as const;
 
 export function isActiveSeniorYear(yg: YearGroup | undefined): boolean {
-  return yg === 'TY' || yg === '5th' || yg === '6th';
+  return yg === 'TY' || yg === '5th' || yg === '6th' || yg === 'LCA1' || yg === 'LCA2';
 }
 
 // ─── Year progression ──────────────────────────────────────

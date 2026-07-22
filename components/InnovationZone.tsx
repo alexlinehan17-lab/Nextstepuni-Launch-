@@ -59,7 +59,7 @@ import PointsPanel from './PointsPanel';
 import { useNavigation } from '../contexts/NavigationContext';
 import { ToolHeader } from './ToolHeader';
 import ToolIconBlob, { type ToolIconKey } from './ToolIconBlob';
-import { isActiveSeniorYear } from '../utils/authUtils';
+import { isActiveSeniorYear, isLcaYear } from '../utils/authUtils';
 
 // ── Editorial chrome registry ──────────────────────────────────────────
 //
@@ -577,7 +577,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             iconBg: 'bg-sky-100 dark:bg-sky-900/30', iconColor: 'text-sky-800 dark:text-sky-300',
             accentBarColor: 'bg-sky-700', tagBg: 'bg-sky-100 dark:bg-sky-900/30', tagText: 'text-sky-800 dark:text-sky-400',
             hoverBorder: 'hover:border-sky-400/50 dark:hover:border-sky-500/40',
-            component: <PaperTrail uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} studentLevels={subjectProfile?.subjects.map(s => ({ name: s.subjectName, level: s.level }))} studentCycle={curriculumLevel === 'junior' ? 'junior-cycle' : 'leaving-cert'} onboardingExamDate={subjectProfile?.examStartDate} onOpenTool={setActiveTool} />,
+            component: <PaperTrail uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} studentLevels={subjectProfile?.subjects.map(s => ({ name: s.subjectName, level: s.level }))} studentCycle={curriculumLevel === 'junior' ? 'junior-cycle' : 'leaving-cert'} isLca={isLcaYear(user?.yearGroup)} onboardingExamDate={subjectProfile?.examStartDate} onOpenTool={setActiveTool} />,
         },
         {
             id: 'diagram-vault', title: 'Diagram Vault', description: 'Every diagram, graph, map and chart that has come up in the exams — decoded.', icon: Images, needsProfile: false,

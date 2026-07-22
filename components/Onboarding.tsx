@@ -11,12 +11,12 @@ import PrimaryActionButton from './ui/PrimaryActionButton';
 import {
   type Grade, type Level, type StudentSubject, type StudentSubjectProfile,
   type YearGroup, type JCBand, type JCSubject,
-  LC_SUBJECTS, JC_SUBJECTS, JC_BANDS, SUBJECT_GROUP_LABELS, getGradesForLevel, getPointsForGrade,
+  LC_SUBJECTS, JC_SUBJECTS, LCA_SUBJECTS, JC_BANDS, SUBJECT_GROUP_LABELS, getGradesForLevel, getPointsForGrade,
   getGradeIndex, DAYS_OF_WEEK,
   type LCSubject,
 } from './subjectData';
 import { type NorthStar } from '../types';
-import { type CurriculumLevel, yearGroupToCurriculumLevel } from '../utils/authUtils';
+import { type CurriculumLevel, isLcaYear, yearGroupToCurriculumLevel } from '../utils/authUtils';
 import NorthStarOnboarding from './NorthStarOnboarding';
 import { COLORS } from '../design/tokens';
 
@@ -276,6 +276,9 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
   const curriculumLevel: CurriculumLevel | null = yearGroup
     ? yearGroupToCurriculumLevel(yearGroup)
     : null;
+  // LCA maps to 'senior' for curriculum gating, but drives its own subject
+  // list and skips the H/O grade-config step (LCA is credit-based, common level).
+  const isLca = isLcaYear(yearGroup ?? undefined);
 
   const shouldSkipStep = (s: Step): boolean => {
     // Phase 8: transition-to-senior mode only runs Subjects (5), Grades
@@ -285,6 +288,9 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
     if (isTransition) {
       return s !== 4 && s !== 5 && s !== 6;
     }
+    // LCA: skip the H/O grade-config step entirely — all courses are common
+    // level and credit-based (Distinction / Merit / Pass), nothing to set.
+    if (isLca && s === 6) return true;
     if (curriculumLevel !== 'junior') return false;
     // Step 4: JC North Star lands in Phase 5 — no longer skipped.
     // Step 6: JC descriptor band picker lands in Phase 4 — no longer skipped.
@@ -431,6 +437,10 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
         const band = subjectBands[name] || { level: 'common' as Level, currentBand: 'Merit' as JCBand, targetBand: 'Higher Merit' as JCBand };
         return { subjectName: name, level: band.level, currentBand: band.currentBand, targetBand: band.targetBand };
       }
+      if (isLcaYear(finalYearGroup)) {
+        // LCA courses are common level and credit-based — no H/O grades.
+        return { subjectName: name, level: 'common' as Level };
+      }
       const config = subjectConfigs[name] || { level: 'higher' as Level, currentGrade: 'H4' as Grade, targetGrade: 'H2' as Grade };
       return { subjectName: name, level: config.level, currentGrade: config.currentGrade, targetGrade: config.targetGrade };
     });
@@ -473,14 +483,14 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
   // unchanged. The 6 group buckets and GROUP_DOT_HEX map work for both.
 
   const groupedSubjects = useMemo(() => {
-    const list = curriculumLevel === 'junior' ? JC_SUBJECTS : LC_SUBJECTS;
+    const list = curriculumLevel === 'junior' ? JC_SUBJECTS : isLca ? LCA_SUBJECTS : LC_SUBJECTS;
     const groups: Record<string, LCSubject[]> = {};
     for (const subj of list) {
       if (!groups[subj.group]) groups[subj.group] = [];
       groups[subj.group].push(subj as LCSubject);
     }
     return groups;
-  }, [curriculumLevel]);
+  }, [curriculumLevel, isLca]);
 
   // ─── Step validation ───────────────────────────────────────────────────
 
@@ -492,6 +502,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
       case 4: return northStarData !== null;
       case 5: return selectedSubjects.size > 0;
       case 6: {
+        // LCA: nothing to configure — all courses are common level, credit-based.
+        if (isLca) return true;
         // Curriculum-aware: JC checks subjectBands, senior checks subjectConfigs.
         const map = curriculumLevel === 'junior' ? subjectBands : subjectConfigs;
         for (const name of selectedSubjects) {
@@ -701,6 +713,34 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
                             >
                               <span className="text-2xl font-bold leading-none">{label}</span>
                               <span className="text-[11px] font-medium mt-1 opacity-80">{sub}</span>
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </motion.div>
+
+                    {/* Leaving Cert Applied band */}
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
+                    >
+                      <p className="text-[11px] font-semibold uppercase tracking-wider mb-3 text-[#6B6B6B] font-sans text-left">
+                        Leaving Cert Applied
+                      </p>
+                      <div className="grid grid-cols-2 gap-3">
+                        {(['LCA1', 'LCA2'] as const).map(yr => {
+                          const selected = yearGroup === yr;
+                          return (
+                            <button
+                              key={yr}
+                              onClick={() => setYearGroup(yr)}
+                              className={`group flex flex-col items-center justify-center py-5 rounded-2xl border-2 border-[#1A1A1A] font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] ${
+                                selected ? 'bg-[#F26B1F] text-[#FDF8F0]' : 'bg-[#FDF8F0] text-[#1A1A1A]'
+                              }`}
+                            >
+                              <span className="text-2xl font-bold leading-none">{yr === 'LCA1' ? 'Year 1' : 'Year 2'}</span>
+                              <span className="text-[11px] font-medium mt-1 opacity-80">LCA</span>
                             </button>
                           );
                         })}
@@ -961,7 +1001,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
               </MotionDiv>
             )}
 
-            {step === 6 && curriculumLevel !== 'junior' && (
+            {step === 6 && curriculumLevel !== 'junior' && !isLca && (
               <MotionDiv key="step6" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 {isTransition && (
                   <div className="mb-4 px-4 py-3 rounded-xl border-2 border-[#F26B1F] bg-[rgba(242,107,31,0.08)] text-center">

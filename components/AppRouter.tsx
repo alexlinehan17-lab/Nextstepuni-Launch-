@@ -9,7 +9,7 @@ import { ArrowLeft, Eye, EyeOff, Check } from 'lucide-react';
 import { useNavigation } from '../contexts/NavigationContext';
 import { useAuth } from '../contexts/AuthContext';
 import { useToast } from './Toast';
-import { type SessionUser, isSchoolStaff } from '../utils/authUtils';
+import { type SessionUser, isLcaYear, isSchoolStaff } from '../utils/authUtils';
 import { LoadingSpinner } from './LoadingSpinner';
 import { KnowledgeTree, type CategoryType } from './KnowledgeTree';
 import { Library } from './Library';
@@ -422,6 +422,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
           userProgress={userProgress}
           onSelectModule={handleSelectModule}
           onBack={handleBackToTree}
+          isLca={isLcaYear(user?.yearGroup)}
         />
       </Suspense>
     );
