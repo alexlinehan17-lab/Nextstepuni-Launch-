@@ -117,7 +117,8 @@ const TOOLS: Record<ToolIconKey, ToolIconConfig> = {
     blob: '#C7D8E8',
     iconPath: '/assets/tools/paper-trail.png',
     blobPath: 'M 5 26 Q -1 54 9 80 Q 25 99 53 95 Q 87 91 95 61 Q 101 29 83 9 Q 57 -5 31 5 Q 11 14 5 26 Z',
-    iconScale: 1.25,
+    // 2026-07-22 art (papers in the wind) is pre-normalised with ~12% margin.
+    iconScale: 1.05,
   },
   'catch-up-lane': {
     blob: '#AEDDE2',
