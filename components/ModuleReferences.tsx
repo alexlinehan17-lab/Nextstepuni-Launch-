@@ -49,6 +49,12 @@ export const ReferencesModal: React.FC<{
           onClick={onClose}
           className="fixed inset-0 z-[120] bg-black/40"
         />
+        {/* Flex wrapper does the centring. The panel is a Framer motion.div
+            whose animate={{ y, scale }} writes an inline `transform`, which
+            would override any Tailwind -translate-x/y centring on the panel
+            itself — so centre via the wrapper and let the transform drive only
+            the entrance animation. */}
+        <div className="fixed inset-0 z-[121] flex items-center justify-center p-4 pointer-events-none">
         <motion.div
           key="refs-panel"
           initial={{ opacity: 0, y: 16, scale: 0.98 }}
@@ -58,7 +64,7 @@ export const ReferencesModal: React.FC<{
           role="dialog"
           aria-modal="true"
           aria-label="References"
-          className="fixed left-1/2 top-1/2 z-[121] w-[calc(100%-2rem)] max-w-lg -translate-x-1/2 -translate-y-1/2 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-2xl max-h-[80vh] overflow-y-auto"
+          className="pointer-events-auto w-full max-w-lg rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-2xl max-h-[80vh] overflow-y-auto"
         >
           <div className="sticky top-0 flex items-center justify-between gap-3 px-5 py-4 bg-white/95 dark:bg-zinc-900/95 backdrop-blur-sm border-b border-zinc-100 dark:border-zinc-800">
             <div className="flex items-center gap-2.5">
@@ -104,6 +110,7 @@ export const ReferencesModal: React.FC<{
             ))}
           </ol>
         </motion.div>
+        </div>
       </>
     )}
   </AnimatePresence>,

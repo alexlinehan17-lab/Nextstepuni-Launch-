@@ -342,17 +342,22 @@ const BridgeBuilder = () => {
           {/* Crack overlay */}
           <AnimatePresence>
             {wobbling && (
-              <MotionDiv
-                key="wobble"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1, x: [-4, 4, -4, 4, 0] }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.3 }}
-                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
-                style={{ height: 48, width: '30%', borderRadius: 8, backgroundColor: '#F1F0ED', border: '2px solid #A8746E' }}
-              >
-                <span style={{ fontSize: 12, fontWeight: 600, color: '#A8746E' }}>Crack!</span>
-              </MotionDiv>
+              // Centre via the wrapper: the MotionDiv animates `x` (the shake),
+              // which writes an inline transform that would override any
+              // -translate-x/y centring on the element itself.
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <MotionDiv
+                  key="wobble"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1, x: [-4, 4, -4, 4, 0] }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="flex items-center justify-center"
+                  style={{ height: 48, width: '30%', borderRadius: 8, backgroundColor: '#F1F0ED', border: '2px solid #A8746E' }}
+                >
+                  <span style={{ fontSize: 12, fontWeight: 600, color: '#A8746E' }}>Crack!</span>
+                </MotionDiv>
+              </div>
             )}
           </AnimatePresence>
         </div>
