@@ -690,6 +690,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                      className="mb-8"
                     >
                       <p className="text-[11px] font-semibold uppercase tracking-wider mb-3 text-[#6B6B6B] font-sans text-left">
                         Senior Cycle

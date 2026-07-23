@@ -132,23 +132,15 @@ const YearPlansView: React.FC<YearPlansViewProps> = ({
                   boxShadow: '0 4px 28px rgba(28,25,23,0.06), 0 1px 3px rgba(28,25,23,0.04)',
                 }}
               >
-                {/* Ghost year numeral — quiet, editorial, upper right */}
-                <span
+                {/* Hand-drawn year numeral — upper right, marker-style PNG */}
+                <img
+                  src={`/assets/year-plans/${plan.year}.png`}
+                  alt=""
                   aria-hidden
+                  draggable={false}
                   className="absolute pointer-events-none select-none"
-                  style={{
-                    ...SERIF,
-                    top: 6,
-                    right: 22,
-                    fontSize: 92,
-                    fontWeight: 600,
-                    lineHeight: 1,
-                    color: meta.accent,
-                    opacity: 0.1,
-                  }}
-                >
-                  {plan.year}
-                </span>
+                  style={{ top: 14, right: 20, height: 76, width: 'auto' }}
+                />
 
                 <div className="p-7 md:p-8">
                   {/* Eyebrow */}

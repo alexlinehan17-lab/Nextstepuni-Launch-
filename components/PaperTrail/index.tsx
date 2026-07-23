@@ -228,10 +228,19 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     return { main, lca, mineIds };
   }, [junior, isLca, studentSubjects, matchesStudent]);
 
-  /** Distinct-paper count (English-version only — IV duplicates would ~double it). */
+  /**
+   * Distinct-paper count. Count one language only — IV duplicates would ~double
+   * it — preferring the English version. Irish-medium subjects (Irish) have NO
+   * 'ev' entries at all, so fall back to whatever language they do carry ('iv')
+   * rather than reporting 0 papers.
+   */
   const paperCount = useCallback((id: string) => {
-    const n = (PAPER_TRAIL_INDEX[id] ?? [])
-      .filter(e => e.lang === 'ev')
+    const entries = PAPER_TRAIL_INDEX[id] ?? [];
+    const countLang = entries.some(e => e.lang === 'ev')
+      ? 'ev'
+      : (entries[0]?.lang ?? 'ev');
+    const n = entries
+      .filter(e => e.lang === countLang)
       .reduce((acc, e) => acc + e.papers.filter(p => !p.modified).length, 0);
     return `${n} ${n === 1 ? 'paper' : 'papers'}`;
   }, []);

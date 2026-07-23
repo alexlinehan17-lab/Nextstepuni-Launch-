@@ -10,7 +10,7 @@
 
 import React from 'react';
 import { MotionDiv } from './Motion';
-import { ArrowLeft, Hammer, Images, ListChecks, Mic, SpellCheck, Stamp } from 'lucide-react';
+import { ArrowLeft, Hammer, Images, ListChecks, Mic, SpellCheck, Stamp, FolderCheck } from 'lucide-react';
 
 const SERIF: React.CSSProperties = { fontFamily: "'Source Serif 4', serif" };
 const SANS: React.CSSProperties = { fontFamily: "'DM Sans', system-ui, sans-serif" };
@@ -23,6 +23,7 @@ const WIP_TOOLS: { id: string; title: string; description: string; icon: React.C
   { id: 'definition-drill', title: 'Definition Drill', description: 'Drill the exact mark-earning wording the SEC scheme awards the definition marks for.', icon: SpellCheck },
   { id: 'oral-trainer', title: 'Irish Oral Trainer', description: 'Rehearse the Irish oral out loud, record yourself, and track your readiness on every part.', icon: Mic },
   { id: 'examiners-chair', title: 'The Examiner’s Chair', description: 'Mark scripts against the real SEC rules — and learn exactly where marks are won and lost.', icon: Stamp },
+  { id: 'coursework-companion', title: 'Coursework Companion', description: 'The coursework, project and practical components — and exactly how the SEC scheme marks them.', icon: FolderCheck },
 ];
 
 interface WipToolsProps {

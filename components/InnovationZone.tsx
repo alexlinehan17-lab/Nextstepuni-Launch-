@@ -706,7 +706,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     // (curriculumLevel itself is now declared above the tools array.)
     // Workshop (WIP) tools — parked out of the main grid but still openable via
     // the sidebar Workshop page's deep-links (currentTool lookup is unfiltered).
-    const WIP_TOOL_IDS = new Set(['diagram-vault', 'answer-architect', 'definition-drill', 'oral-trainer', 'examiners-chair']);
+    const WIP_TOOL_IDS = new Set(['diagram-vault', 'answer-architect', 'definition-drill', 'oral-trainer', 'examiners-chair', 'coursework-companion']);
     const curriculumVisibleTools = tools.filter(t => {
       if (WIP_TOOL_IDS.has(t.id)) return false;
       const tag = t.curriculum ?? 'senior';

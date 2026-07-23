@@ -19,11 +19,6 @@ const STEPS: { target: string; title: string; body: string }[] = [
     body: 'Interactive modules that teach you how to learn — memory, focus, exam craft. They unlock section by section.',
   },
   {
-    target: 'study',
-    title: 'Sit down and focus here',
-    body: 'Your day at a glance — sessions, points and your streak. Start a timed, distraction-free study session whenever you’re ready.',
-  },
-  {
     target: 'launchpad',
     title: 'Your exam tools live here',
     body: 'The Launchpad: past papers beside their marking schemes, marking practice, CAO planning and more.',
@@ -70,22 +65,51 @@ const FirstVisitCoachMarks: React.FC<Props> = ({ uid, onFinish, onOpenGuide }) =
   }, [uid, onFinish]);
 
   // Measure the current step's target; re-measure on resize/scroll.
+  // A target can mount a beat late (home cards still hydrating right after
+  // login), so if it isn't in the DOM yet, retry briefly. If it never appears,
+  // skip the step rather than show a caption that points at nothing.
   useEffect(() => {
-    const measure = () => {
+    let cancelled = false;
+    let timer: ReturnType<typeof setTimeout> | undefined;
+    let tries = 0;
+    const MAX_TRIES = 15; // ~1.5s at 100ms
+
+    // Returns true when the target EXISTS in the DOM (even if offscreen).
+    const measure = (): boolean => {
       const el = document.querySelector<HTMLElement>(`[data-coach="${STEPS[step].target}"]`);
-      if (!el) { setRect(null); return; }
+      if (!el) { setRect(null); return false; }
       const r = el.getBoundingClientRect();
       // A collapsed/offscreen target gets the centred-card fallback.
       setRect(r.width > 4 && r.height > 4 && r.bottom > 0 && r.top < window.innerHeight ? r : null);
+      return true;
     };
-    measure();
+
+    if (!measure()) {
+      const retry = () => {
+        if (cancelled) return;
+        tries += 1;
+        if (measure()) return;
+        if (tries >= MAX_TRIES) {
+          // Target genuinely absent — advance past this step (or end the tour
+          // if it was the last), so we never highlight nothing.
+          if (step < STEPS.length - 1) setStep(v => v + 1);
+          else { markSeen(uid); onFinish(); }
+          return;
+        }
+        timer = setTimeout(retry, 100);
+      };
+      timer = setTimeout(retry, 100);
+    }
+
     window.addEventListener('resize', measure);
     window.addEventListener('scroll', measure, true);
     return () => {
+      cancelled = true;
+      if (timer) clearTimeout(timer);
       window.removeEventListener('resize', measure);
       window.removeEventListener('scroll', measure, true);
     };
-  }, [step]);
+  }, [step, uid, onFinish]);
 
   const s = STEPS[step];
   const last = step === STEPS.length - 1;
