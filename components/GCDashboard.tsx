@@ -9,7 +9,7 @@ import { type CourseData } from './Library';
 import { type SessionUser, getAvatarUrl, yearGroupToCurriculumLevel } from '../utils/authUtils';
 import { LogOut, LayoutDashboard, Users, BarChart3, PanelLeft, StickyNote, AlertTriangle, CalendarDays, ListChecks, KeyRound } from 'lucide-react';
 import app, { db } from '../firebase';
-import { collection, query, where, limit, getDocs, doc, getDoc, setDoc, documentId } from 'firebase/firestore';
+import { collection, query, where, limit, getDocs, doc, getDoc, setDoc } from 'firebase/firestore';
 import { getFunctions, httpsCallable } from 'firebase/functions';
 import { getSchoolName } from '../schoolData';
 import { type UserProgress, type PointsData, type CollegeCompassState } from '../types';
@@ -208,17 +208,30 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
         // Exclude all staff roles (gc/staff/admin) — the dashboard lists students only.
         const students = users.filter(u => u.role !== 'gc' && u.role !== 'staff' && u.role !== 'admin');
 
-        // Batch-read progress in chunks of 30 (Firestore 'in' limit) rather than
-        // one getDoc per student — removes the N+1 read on the dashboard. (item 17)
+        // Read each student's progress with an individual getDoc, in parallel.
+        //
+        // IMPORTANT — do NOT "optimise" this into a batched
+        //   getDocs(query(collection('progress'), where(documentId(),'in',chunk)))
+        // The /progress read rule authorises GC access via a per-document
+        // get(users/$(userId)).school == callerSchool() check. Firestore permits
+        // get()-based rules for `get` operations but REJECTS them for `list`
+        // (query) operations — so the batched query fails for EVERY chunk, the
+        // error is swallowed, and the whole dashboard reads back empty
+        // (subjectProfile null → CAO shows '—' for all students). Regression
+        // introduced in e1450e3; reverted 2026-07-23. Per-student get() is the
+        // only read the rules allow here.
         const progressByUid = new Map<string, Record<string, any>>();
-        const studentIds = students.map(s => s.uid);
-        for (let i = 0; i < studentIds.length; i += 30) {
-          const chunk = studentIds.slice(i, i + 30);
-          try {
-            const chunkSnap = await getDocs(query(collection(db, 'progress'), where(documentId(), 'in', chunk)));
-            chunkSnap.docs.forEach(d => progressByUid.set(d.id, d.data()));
-          } catch (err) { console.error('Failed to batch-fetch student progress:', err); }
-        }
+        const progressSnaps = await Promise.all(
+          students.map(s =>
+            getDoc(doc(db, 'progress', s.uid)).catch(err => {
+              console.error('Failed to fetch progress for student:', s.uid, err);
+              return null;
+            }),
+          ),
+        );
+        progressSnaps.forEach((snap, i) => {
+          if (snap && snap.exists()) progressByUid.set(students[i].uid, snap.data());
+        });
 
         const fullData: GCStudentFullData[] = students.map((user) => {
             const progressDoc: Record<string, any> | null = progressByUid.get(user.uid) ?? null;
