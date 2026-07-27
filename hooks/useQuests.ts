@@ -6,6 +6,7 @@
 import { useState, useCallback, useMemo, useRef, useEffect } from 'react';
 import { doc, increment, runTransaction } from 'firebase/firestore';
 import { db } from '../firebase';
+import { awaitWriteOrTimeout } from '../utils/firestoreWrite';
 import { useProgress } from '../contexts/ProgressContext';
 import { type UserProgress } from '../types';
 import { type StreakData } from './useStreak';
@@ -255,7 +256,10 @@ export function useQuests(
       // claimed (covers the multi-tab race where two tabs both pass the optimistic
       // gate). Firestore rules also reject overwrites, but failing fast here
       // avoids a useless round-trip and a confusing rules error in the console.
-      await runTransaction(db, async (txn) => {
+      // Bounded: a transaction needs a server round-trip, so offline it can
+      // stall long past any useful UI deadline — which would leave claimingRef
+      // latched and the Claim button dead for the rest of the session.
+      const outcome = await awaitWriteOrTimeout(runTransaction(db, async (txn) => {
         const ref = doc(db, 'progress', uid);
         const snap = await txn.get(ref);
         const existing = (snap.data()?.questRewards ?? {}) as Record<string, string>;
@@ -264,7 +268,10 @@ export function useQuests(
           pointsData: { totalEarned: increment(rewardPoints) },
           questRewards: { [questId]: new Date().toISOString() },
         }, { merge: true });
-      });
+      }), 'useQuests.claimReward');
+      // 'pending' means queued — treat it as claimed; only a real rejection
+      // unwinds the optimistic update below.
+      if (outcome === 'failed') throw new Error('useQuests.claimReward: rejected');
     } catch (err) {
       console.error('Failed to claim quest reward:', err);
       // Roll back optimistic update

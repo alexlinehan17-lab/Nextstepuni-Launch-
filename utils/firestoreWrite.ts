@@ -58,20 +58,21 @@ import { reportSaveError, logError } from './logError';
  *
  * @param write    the promise returned by setDoc/updateDoc/addDoc/deleteDoc/commit
  * @param context  stable "Area.action" label for logs, e.g. 'App.saveNorthStar'
- * @param rollback optional undo, run ONLY if the write is genuinely rejected
+ * @param rollback optional undo, run ONLY if the write is genuinely rejected;
+ *                 receives the rejection so callers can branch on error.code
  * @param opts.silent  log without raising a toast (best-effort/background writes)
  */
 export function saveInBackground(
   write: Promise<unknown>,
   context: string,
-  rollback?: () => void,
+  rollback?: (err: unknown) => void,
   opts: { silent?: boolean } = {},
 ): void {
   write.catch((err: unknown) => {
     if (opts.silent) logError(context, err);
     else reportSaveError(context, err);
     try {
-      rollback?.();
+      rollback?.(err);
     } catch (rollbackErr) {
       logError(`${context}.rollback`, rollbackErr);
     }

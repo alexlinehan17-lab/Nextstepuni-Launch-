@@ -73,7 +73,9 @@ export async function submitToCohortRemote(code: string, deltas: MissDelta[]): P
     // never blocked waiting for a class-aggregate write to be acknowledged.
     saveInBackground(setDoc(cohortDoc(c), { submissions: increment(1) }, { merge: true }),
       'cohortSync.submitToCohortRemote', undefined, { silent: true });
-    await Promise.all(
+    // Promise.all over writes has the same offline semantics as one write —
+    // it settles only when every member is server-acked. Fired, not awaited.
+    saveInBackground(Promise.all(
       collapse(deltas).map(d =>
         setDoc(
           doc(rulesCol(c), ruleDocId(d.key)),
@@ -88,7 +90,7 @@ export async function submitToCohortRemote(code: string, deltas: MissDelta[]): P
           { merge: true },
         ),
       ),
-    );
+    ), 'cohortSync.submitToCohortRemote.rules', undefined, { silent: true });
   } catch (err) {
     console.error('[Chair] cohort submit failed:', err);
   }
@@ -114,7 +116,7 @@ export async function submitDecisions(code: string, deltas: DecisionDelta[]): Pr
   const c = code.trim();
   if (!c || deltas.length === 0) return;
   try {
-    await Promise.all(
+    saveInBackground(Promise.all(
       deltas.map(d =>
         setDoc(
           doc(decisionsCol(c), ruleDocId(`${d.sessionId}|${d.scriptId}|${d.choice}`)),
@@ -122,7 +124,7 @@ export async function submitDecisions(code: string, deltas: DecisionDelta[]): Pr
           { merge: true },
         ),
       ),
-    );
+    ), 'cohortSync.submitDecisions', undefined, { silent: true });
   } catch (err) {
     console.error('[Chair] decision submit failed:', err);
   }

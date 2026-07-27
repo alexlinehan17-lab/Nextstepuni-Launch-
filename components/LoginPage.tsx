@@ -251,9 +251,24 @@ interface LoginPageProps {
  * (so handleRegisterSubmit's deleteUser rollback still fires), while a write
  * that is merely queued resolves normally — it will flush on reconnect.
  */
-async function writeUserDoc(write: Promise<void>, context: string): Promise<void> {
-  const outcome = await awaitWriteOrTimeout(write, context, 8000);
-  if (outcome === 'failed') throw new Error(`${context}: write rejected`);
+async function writeUserDoc(
+  write: Promise<void>,
+  context: string,
+  onLateRejection?: (err: unknown) => void,
+): Promise<void> {
+  // Capture the ORIGINAL error. awaitWriteOrTimeout collapses a rejection to
+  // the string 'failed', and throwing a bare Error in its place strips
+  // `err.code` — which silently re-broke LoginPage's 'permission-denied'
+  // branch, the very branch added so a rules denial stops masquerading as an
+  // auth failure.
+  let captured: unknown;
+  const watched = write.catch((err: unknown) => { captured = err; throw err; });
+  // Swallow the late rejection so an 8s timeout can't leave an unhandled
+  // rejection, and give the caller a chance to clean up (e.g. delete a
+  // half-created account) if the answer arrives after we stopped waiting.
+  watched.catch((err: unknown) => { onLateRejection?.(err); });
+  const outcome = await awaitWriteOrTimeout(watched, context, 8000);
+  if (outcome === 'failed') throw captured ?? new Error(`${context}: write rejected`);
 }
 
 const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
@@ -639,6 +654,13 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       // throws here and the account is rolled back below.
       const joinFn = httpsCallable<{ school: string; code: string }, { success: boolean }>(getFunctions(app), 'claimStudentSchool');
       await joinFn({ school, code: joinCode.trim() });
+      // Late-rejection cleanup: if the /users write is rejected AFTER we stop
+      // waiting, the Auth account would otherwise survive with no name, avatar,
+      // createdAt or consent record — an orphan the GC sees as "New" forever.
+      const rollbackAccount = (err: unknown) => {
+        console.error('[LoginPage] user doc rejected after sign-up completed:', err);
+        deleteUser(createdUser!).catch(e => console.error('[LoginPage] orphan cleanup failed:', e));
+      };
       await writeUserDoc(setDoc(doc(db, 'users', createdUser.uid), {
         name: name.trim(),
         avatar: selectedAvatar,
@@ -654,7 +676,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           acceptedAt: new Date().toISOString(),
           basis: CONSENT_BASIS,
         },
-      }, { merge: true }), 'LoginPage.registerUserDoc');
+      }, { merge: true }), 'LoginPage.registerUserDoc', rollbackAccount);
       handleLoginSuccess({
         uid: createdUser.uid,
         name: name.trim(),

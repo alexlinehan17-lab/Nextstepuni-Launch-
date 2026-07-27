@@ -44,6 +44,11 @@ interface AuthContextValue {
   /** Called by App.tsx after the onboarding flow saves a subject profile, so
    *  the redirect at App.tsx:252 doesn't fire again on the next render. */
   markOnboardingComplete: () => void;
+  /** Re-raise the onboarding gate. Needed because the onboarding save is now
+   *  fired rather than awaited: if it is genuinely rejected we must be able to
+   *  put the student back into onboarding, or they sit in the app with no
+   *  profile — the exact state that hid a rules bug for weeks in May 2026. */
+  markOnboardingNeeded: () => void;
   /** Patch in-memory user fields after a Firestore write to users/{uid} so
    *  callers don't have to wait for the next sign-in to see the change.
    *  Used after onboarding writes yearGroup, and after year-progression
@@ -76,6 +81,7 @@ const AuthContext = createContext<AuthContextValue>({
   handleLoginSuccess: () => {},
   handleLogout: async () => {},
   markOnboardingComplete: () => {},
+  markOnboardingNeeded: () => {},
   patchUser: () => {},
 });
 
@@ -271,6 +277,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     setLoadedData(prev => ({ ...prev, needsOnboarding: false }));
   }, []);
 
+  const markOnboardingNeeded = useCallback(() => {
+    setLoadedData(prev => ({ ...prev, needsOnboarding: true }));
+  }, []);
+
   const patchUser = useCallback((patch: Partial<SessionUser>) => {
     setUser(prev => (prev ? { ...prev, ...patch } : prev));
   }, []);
@@ -285,6 +295,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     handleLoginSuccess,
     handleLogout,
     markOnboardingComplete,
+    markOnboardingNeeded,
     patchUser,
   };
 

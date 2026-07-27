@@ -20,7 +20,7 @@ import { type YearGroup, type StudentSubject } from './components/subjectData';
 import { type PastJCData } from './types';
 import StudyPassportModal from './components/StudyPassportModal';
 import { db } from './firebase';
-import { doc, getDoc, setDoc, updateDoc, increment, arrayUnion } from 'firebase/firestore';
+import { doc, getDoc, setDoc, updateDoc, increment, arrayUnion, writeBatch } from 'firebase/firestore';
 import { type ModuleProgress, type NorthStar } from './types';
 import { useToast } from './components/Toast';
 import { ALL_COURSES, categoryTitles } from './courseData';
@@ -128,7 +128,7 @@ const App: React.FC = () => {
   const nav = useNavigation();
   const { viewState, currentCategory, currentModuleId, cameFromJourney: _cameFromJourney, activeTool } = nav.state;
   const [journeyResult, setJourneyResult] = useState<{ endingId: string; finalStats?: any } | null>(null);
-  const { user, authResolved, needsOnboarding, handleLogout, markOnboardingComplete, patchUser } = useAuth();
+  const { user, authResolved, needsOnboarding, handleLogout, markOnboardingComplete, markOnboardingNeeded, patchUser } = useAuth();
 
   // Progress state from context
   const progress = useProgress();
@@ -145,6 +145,13 @@ const App: React.FC = () => {
     progressLoaded,
     reloadProgress,
   } = progress;
+  // Live mirror of studentProfile, for rollbacks that may run long after the
+  // handler returned. A queued Firestore write can be rejected minutes later,
+  // and a rollback closure captured at call time would otherwise clobber
+  // whatever the student has done since.
+  const studentProfileRef = useRef(studentProfile);
+  useEffect(() => { studentProfileRef.current = studentProfile; }, [studentProfile]);
+
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [passportOpen, setPassportOpen] = useState(false);
   const [northStarEditOpen, setNorthStarEditOpen] = useState(false);
@@ -430,6 +437,15 @@ const App: React.FC = () => {
     const rollback = (err: unknown) => {
       if (rolledBack) return;
       rolledBack = true;
+      // A queued write can be rejected minutes later, long after the student
+      // has moved on. Only unwind if THIS profile is still the live one —
+      // otherwise we'd clobber a newer, successful onboarding and yank them
+      // out of whatever they were doing.
+      if (studentProfileRef.current !== profile) {
+        console.error('Onboarding save rejected after the profile moved on:', err);
+        showToast('An earlier change could not be saved.', 'error');
+        return;
+      }
       console.error('Failed to save subject profile:', err);
       // Surface the actual Firebase error so silent bugs (rules rejection,
       // App Check, quota, malformed data) can't hide behind a generic
@@ -440,6 +456,11 @@ const App: React.FC = () => {
       setStudentProfile(previousProfile);
       setNorthStar(previousNorthStar);
       patchUser({ yearGroup: previousYearGroup, curriculumLevel: previousCurriculumLevel });
+      // Re-raise the gate. markOnboardingComplete() has already run by the time
+      // a rejection arrives, and it is one-way — without this the student stays
+      // "onboarded" with no profile and AppRouter's gate is dead for the rest
+      // of the session.
+      markOnboardingNeeded();
       nav.navigateToOnboarding();
     };
 
@@ -570,6 +591,13 @@ const App: React.FC = () => {
     const rollback = (err: unknown) => {
       if (rolledBack) return;
       rolledBack = true;
+      // Only unwind if the student is still mid-transition — a late rejection
+      // must not drag them out of a re-onboarding they've since completed.
+      if (studentProfileRef.current !== null) {
+        console.error('JC->senior rejected after the profile moved on:', err);
+        showToast('An earlier change could not be saved.', 'error');
+        return;
+      }
       console.error('Failed to transition to senior cycle:', err);
       showToast('Couldn\'t move you up a year — please try again.', 'error');
       setStudentProfile(previousProfile);
@@ -579,20 +607,27 @@ const App: React.FC = () => {
       nav.navigateToTree();
     };
 
-    // 2. Write archive + new yearGroup + senior curriculumLevel to users/{uid}.
-    setDoc(doc(db, 'users', user.uid), {
+    // 2+3. ONE ATOMIC BATCH across both documents.
+    //
+    // These must not be two independent writes. The users doc carries the ONLY
+    // copy of the JC archive; the progress doc write DESTROYS the live profile.
+    // Issued separately, a rejected archive with a successful clear loses the
+    // student's entire Junior Cycle subject list and North Star permanently —
+    // and the rollback can't help, because it only restores React state while
+    // reloadProgress() re-reads the cleared doc. A batch is all-or-nothing and
+    // still queues offline as a single unit, so the offline fix is preserved.
+    const batch = writeBatch(db);
+    batch.set(doc(db, 'users', user.uid), {
       yearGroup: target,
       curriculumLevel: 'senior',
       pastJCData: archive,
-    }, { merge: true }).catch(rollback);
-    patchUser({ yearGroup: target, curriculumLevel: 'senior' });
-    // 3. Clear the active progress doc fields that need re-onboarding:
-    //    subjectProfile (will be rebuilt with LC subjects) and northStar
-    //    (will be rebuilt with senior NS).
-    setDoc(doc(db, 'progress', user.uid), {
+    }, { merge: true });
+    batch.set(doc(db, 'progress', user.uid), {
       subjectProfile: null,
       northStar: null,
-    }, { merge: true }).catch(rollback);
+    }, { merge: true });
+    saveInBackground(batch.commit(), 'App.jcToSenior', rollback);
+    patchUser({ yearGroup: target, curriculumLevel: 'senior' });
     // 4. Flip local state and open the transition re-onboarding shell.
     setStudentProfile(null);
     setNorthStar(null);

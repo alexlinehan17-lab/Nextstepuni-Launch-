@@ -6,7 +6,7 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { db } from '../../firebase';
-import { saveInBackground } from '../../utils/firestoreWrite';
+import { awaitWriteOrTimeout } from '../../utils/firestoreWrite';
 import { KeyRound, Copy, Check, RefreshCw, ShieldCheck } from 'lucide-react';
 import { getSchoolName } from '../../schoolData';
 
@@ -56,19 +56,28 @@ export const StaffAccessPanel: React.FC<{ school: string }> = ({ school }) => {
   const regenerate = useCallback(async () => {
     setSaving(true); setError(''); setCopied(false);
     const next = generateCode();
-    const previous = code;
-    // Show the new code at once and clear the spinner — awaiting the write left
-    // the button stuck on "Saving…" forever on a throttled school network,
-    // with no code shown and no error.
-    setCode(next);
-    setSaving(false);
-    saveInBackground(
+    // This is the ONE flow that must be durable before it is reported.
+    //
+    // The code is verified server-side by the claimStaffAccess function reading
+    // gcSettings directly, so a locally-cached-but-unflushed code does not work
+    // yet: the OLD code still grants staff access (the revocation silently
+    // hasn't happened), and every teacher trying the NEW one gets a mismatch —
+    // burning the 6-attempt/15-minute brute-force lockout on a code the server
+    // has never seen. So: bounded wait, and only reveal on a real ack.
+    const outcome = await awaitWriteOrTimeout(
       setDoc(doc(db, 'gcSettings', school), { staffCode: next }, { merge: true }),
       'StaffAccess.regenerateCode',
-      () => { setCode(previous); setError('Could not save the new code. Try again.'); },
-      { silent: true },
+      8000,
     );
-  }, [school, code]);
+    setSaving(false);
+    if (outcome === 'acked') {
+      setCode(next);
+    } else if (outcome === 'pending') {
+      setError('Not saved yet — still syncing. The old code is still active; don\'t share the new one until this succeeds.');
+    } else {
+      setError('Could not save the new code. Try again.');
+    }
+  }, [school]);
 
   const copy = useCallback(async () => {
     if (!code) return;

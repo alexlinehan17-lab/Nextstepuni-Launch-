@@ -24,6 +24,19 @@ import { saveInBackground, awaitWriteOrTimeout } from '../utils/firestoreWrite';
 const ROOT = resolve(__dirname, '..');
 const SCAN_DIRS = ['components', 'hooks', 'contexts', 'utils', 'data'];
 
+/** Text between `openIdx` (a '(') and its matching ')'. */
+function balancedFrom(src: string, openIdx: number): string {
+  let depth = 0;
+  for (let i = openIdx; i < src.length; i++) {
+    if (src[i] === '(') depth++;
+    else if (src[i] === ')') {
+      depth--;
+      if (depth === 0) return src.slice(openIdx, i + 1);
+    }
+  }
+  return src.slice(openIdx);
+}
+
 function sourceFiles(dir: string): string[] {
   const out: string[] = [];
   const walk = (d: string) => {
@@ -38,10 +51,23 @@ function sourceFiles(dir: string): string[] {
   return out;
 }
 
-const FILES = SCAN_DIRS.flatMap(sourceFiles).concat([join(ROOT, 'App.tsx')]);
+// Root-level .ts/.tsx too — App.tsx is not the only file up there.
+const ROOT_FILES = readdirSync(ROOT)
+  .filter(f => /\.tsx?$/.test(f))
+  .map(f => join(ROOT, f));
+
+const FILES = SCAN_DIRS.flatMap(sourceFiles).concat(ROOT_FILES);
 
 // Writes only. getDoc/getDocs resolve from cache offline and are fine to await.
-const AWAITED_WRITE = /\bawait\s+(setDoc|updateDoc|addDoc|deleteDoc)\s*\(/g;
+//
+// Covers the indirect shapes too — the first version of this guard only matched
+// the four bare verbs and so missed `await batch.commit()`, `await
+// runTransaction(...)` and `await Promise.all([...writes])`, one of which was
+// live in a file the same commit had edited.
+const AWAITED_WRITE =
+  /\bawait\s+(?:[A-Za-z_$][\w$]*\s*\.\s*)?(setDoc|updateDoc|addDoc|deleteDoc|runTransaction|commit)\s*\(/g;
+/** `await Promise.all([...])` in a file that talks to Firestore. */
+const AWAITED_PROMISE_ALL = /\bawait\s+Promise\s*\.\s*(all|allSettled)\s*\(/g;
 
 describe('no awaited Firestore writes', () => {
   it('finds none in app source', () => {
@@ -49,13 +75,26 @@ describe('no awaited Firestore writes', () => {
     for (const file of FILES) {
       // utils/firestoreWrite.ts documents the banned pattern in its comment.
       if (file.endsWith('utils/firestoreWrite.ts')) continue;
-      // Strip comments so documentation of the anti-pattern doesn't self-trip.
-      const src = readFileSync(file, 'utf8')
-        .replace(/\/\*[\s\S]*?\*\//g, '')
-        .replace(/^\s*\/\/.*$/gm, '');
+      const raw = readFileSync(file, 'utf8');
+      // Blank comments out rather than deleting them, so reported line numbers
+      // still point at the real line in the file.
+      const src = raw
+        .replace(/\/\*[\s\S]*?\*\//g, c => c.replace(/[^\n]/g, ' '))
+        .replace(/^([ \t]*)\/\/.*$/gm, (_m, indent) => indent);
+      const lineOf = (idx: number) => src.slice(0, idx).split('\n').length;
+
       for (const m of src.matchAll(AWAITED_WRITE)) {
-        const line = src.slice(0, m.index).split('\n').length;
-        offenders.push(`${file.replace(ROOT + '/', '')}:${line}  await ${m[1]}(`);
+        offenders.push(`${file.replace(ROOT + '/', '')}:${lineOf(m.index!)}  await …${m[1]}(`);
+      }
+      // Promise.all over WRITES settles only when every member is server-acked,
+      // so it hangs offline exactly like a single write. Promise.all over READS
+      // is fine — reads resolve from the local cache — so inspect the body
+      // rather than flagging every Promise.all in a Firestore-importing file.
+      for (const m of src.matchAll(AWAITED_PROMISE_ALL)) {
+        const body = balancedFrom(src, m.index! + m[0].length - 1);
+        if (/\b(setDoc|updateDoc|addDoc|deleteDoc)\s*\(/.test(body)) {
+          offenders.push(`${file.replace(ROOT + '/', '')}:${lineOf(m.index!)}  await Promise.${m[1]}([…writes])`);
+        }
       }
     }
     expect(
