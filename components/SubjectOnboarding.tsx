@@ -171,15 +171,43 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user: _user, exis
   // ─── Build final profile ────────────────────────────────────────────────
 
   const buildProfile = (): StudentSubjectProfile => {
+    // Same rule as ChangeSubjectsModal: never emit an undefined grade. JC
+    // subjects carry bands and LCA subjects carry level only — writing
+    // `currentGrade: undefined` for them makes setDoc throw and the edit is
+    // silently lost behind a connectivity toast.
+    const isJunior = existingProfile?.curriculumLevel === 'junior';
+    const isLca = existingProfile?.yearGroup === 'LCA1' || existingProfile?.yearGroup === 'LCA2';
     const subjects: StudentSubject[] = Array.from(selectedSubjects).map(name => {
+      if (isJunior) {
+        const prev = existingProfile?.subjects.find(s => s.subjectName === name);
+        return {
+          subjectName: name,
+          level: prev?.level ?? 'common',
+          currentBand: prev?.currentBand ?? 'Merit',
+          targetBand: prev?.targetBand ?? 'Higher Merit',
+        };
+      }
+      if (isLca) return { subjectName: name, level: 'common' as Level };
       const config = subjectConfigs[name] || { level: 'higher' as Level, currentGrade: 'H4' as Grade, targetGrade: 'H2' as Grade };
-      return { subjectName: name, level: config.level, currentGrade: config.currentGrade, targetGrade: config.targetGrade };
+      return {
+        subjectName: name,
+        level: config.level,
+        ...(config.currentGrade ? { currentGrade: config.currentGrade } : {}),
+        ...(config.targetGrade ? { targetGrade: config.targetGrade } : {}),
+      };
     });
     const now = new Date().toISOString();
     return {
       subjects,
       examStartDate: examDate,
       restDays: Array.from(restDays),
+      // Preserve the curriculum plumbing — rebuilding the profile without it
+      // leaves the student curriculum-less for the rest of the session.
+      // Conditional spreads, not plain assignment: an absent optional field
+      // must be omitted, never written as undefined (see the grades above).
+      ...(existingProfile?.yearGroup ? { yearGroup: existingProfile.yearGroup } : {}),
+      ...(existingProfile?.curriculumLevel ? { curriculumLevel: existingProfile.curriculumLevel } : {}),
+      ...(existingProfile?.defaultBlockDuration ? { defaultBlockDuration: existingProfile.defaultBlockDuration } : {}),
       createdAt: existingProfile?.createdAt || now,
       updatedAt: now,
     };

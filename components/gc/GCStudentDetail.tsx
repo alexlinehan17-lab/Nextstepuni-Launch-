@@ -27,6 +27,11 @@ import {
   getDaysUntilLC,
   getStudentStatus,
   getEngagementTimeline,
+  getVisibleCourses,
+  hasCAOGrades,
+  getStudentSubjectsCovered,
+  getStudentTopBandsCount,
+  getStudentTargetTopBandsCount,
 } from './gcUtils';
 import { getStatusReasons, STATUS_CONFIG } from '../../utils/studentStatus';
 import { type FlagData, type FlagPriority } from '../../hooks/useGCFlags';
@@ -99,12 +104,19 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
   const [kudosMessage, setKudosMessage] = useState('');
   const [isSendingAction, setIsSendingAction] = useState(false);
 
-  const overallProgress = getOverallProgress(student.progress, allCourses);
+  // Score the student against the modules THEY can open, not the full
+  // catalogue — a 7-subject senior who had finished everything available to
+  // them was being shown to their counsellor as ~73% complete, and a JC
+  // student as ~20%. `visibleCourses` is the same list the student's own
+  // progress counter uses (utils/courseVisibility).
+  const visibleCourses = getVisibleCourses(student, allCourses);
+  const overallProgress = getOverallProgress(student.progress, visibleCourses);
+  const hasGrades = hasCAOGrades(student);
   const currentCAO = getStudentCurrentCAO(student);
   const targetCAO = getStudentTargetCAO(student);
   const daysUntilLC = getDaysUntilLC();
-  const status = getStudentStatus(student, allCourses);
-  const statusReasons = getStatusReasons(student, allCourses);
+  const status = getStudentStatus(student, visibleCourses);
+  const statusReasons = getStatusReasons(student, visibleCourses);
   const supportReasons = statusReasons;
 
   // ─── Curriculum branch (Phase 6) ────────────────────────────────────────
@@ -147,6 +159,86 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
       setPreviousStatus(null);
     }
   }, [student.user.uid, status]);
+
+  // ─── Stat tiles (shared by the tray and the full page) ────────────────
+  //
+  // These used to be duplicated: the full-page copy was curriculum-guarded and
+  // the tray copy was not. Since GCDashboard only ever renders the TRAY, the
+  // guard was dead code — every Junior Cycle student was shown "Current CAO 0 /
+  // Target CAO 0" and an LC countdown, and every LCA student fell through to the
+  // CAO path too (LCA maps to 'senior'). One renderer, so the guard can't drift
+  // out of the branch that's actually on screen again.
+  const renderStatTiles = () => (
+    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+      {/* Progress ring */}
+      <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 flex items-center gap-3">
+        <svg width={44} height={44} viewBox="0 0 44 44">
+          <circle cx={22} cy={22} r={18} fill="none" stroke="currentColor" className="text-zinc-200 dark:text-zinc-700" strokeWidth={3} />
+          <circle
+            cx={22} cy={22} r={18} fill="none"
+            stroke="currentColor"
+            className="text-[var(--accent-hex)]"
+            strokeWidth={3}
+            strokeLinecap="round"
+            strokeDasharray={`${(overallProgress / 100) * 113.1} 113.1`}
+            transform="rotate(-90 22 22)"
+          />
+        </svg>
+        <div>
+          <p className="text-xl font-bold text-zinc-900 dark:text-white">{overallProgress.toFixed(0)}%</p>
+          <p className="text-[10px] font-medium text-zinc-500">Progress</p>
+        </div>
+      </div>
+
+      {/* Junior Cycle: bands, not points. */}
+      {isJunior ? (() => {
+        const subjectsCovered = getStudentSubjectsCovered(student);
+        const atMerit = getStudentTopBandsCount(student);
+        const targetMerit = getStudentTargetTopBandsCount(student);
+        return (
+          <>
+            <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
+              <p className="text-xl font-bold text-zinc-900 dark:text-white">{subjectsCovered || '—'}</p>
+              <p className="text-[10px] font-medium text-zinc-500">Subjects</p>
+            </div>
+            <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
+              <p className="text-xl font-bold text-zinc-900 dark:text-white">{subjectsCovered ? `${atMerit}/${subjectsCovered}` : '—'}</p>
+              <p className="text-[10px] font-medium text-zinc-500">At Merit+</p>
+            </div>
+            <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
+              <p className="text-xl font-bold text-zinc-900 dark:text-white">{subjectsCovered ? `${targetMerit}/${subjectsCovered}` : '—'}</p>
+              <p className="text-[10px] font-medium text-zinc-500">Target Merit+</p>
+            </div>
+          </>
+        );
+      })() : (
+        <>
+          {/* hasCAOGrades, not "has a profile": an LCA profile is complete and
+              valid but has no H/O grade anywhere, so the CAO total is not 0 —
+              it doesn't exist. An em-dash says that; a 0 lies about it. */}
+          <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
+            <p className="text-xl font-bold text-zinc-900 dark:text-white">{hasGrades ? currentCAO : '—'}</p>
+            <p className="text-[10px] font-medium text-zinc-500">Current CAO</p>
+          </div>
+          <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
+            <p className="text-xl font-bold text-zinc-900 dark:text-white">{hasGrades ? targetCAO : '—'}</p>
+            <p className="text-[10px] font-medium text-zinc-500">Target CAO</p>
+          </div>
+          {isGraduated ? (
+            <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
+              <p className="text-base font-semibold text-zinc-600 dark:text-zinc-300">Best of luck</p>
+              <p className="text-[10px] font-medium text-zinc-500">Past cohort</p>
+            </div>
+          ) : (
+            <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
+              <p className="text-xl font-bold text-zinc-900 dark:text-white">{daysUntilLC}</p>
+              <p className="text-[10px] font-medium text-zinc-500">Days to Exam</p>
+            </div>
+          )}
+        </>
+      )}
+    </div>
+  );
 
   const toggleCategory = (id: string) => {
     setExpandedCategories(prev => {
@@ -298,86 +390,8 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
           </div>
         </div>
 
-        {/* Stat chips grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-          {/* Progress ring chip */}
-          <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 flex items-center gap-3">
-            <svg width={44} height={44} viewBox="0 0 44 44">
-              <circle cx={22} cy={22} r={18} fill="none" stroke="currentColor" className="text-zinc-200 dark:text-zinc-700" strokeWidth={3} />
-              <circle
-                cx={22} cy={22} r={18} fill="none"
-                stroke="currentColor"
-                className="text-[var(--accent-hex)]"
-                strokeWidth={3}
-                strokeLinecap="round"
-                strokeDasharray={`${(overallProgress / 100) * 113.1} 113.1`}
-                transform="rotate(-90 22 22)"
-              />
-            </svg>
-            <div>
-              <p className="text-xl font-bold text-zinc-900 dark:text-white">{overallProgress.toFixed(0)}%</p>
-              <p className="text-[10px] font-medium text-zinc-500">Progress</p>
-            </div>
-          </div>
-          {/* Curriculum-aware tiles (Phase 6). Senior: Current CAO, Target
-              CAO, Days to LC. Junior: Subjects covered, At Merit+, Target
-              Merit+. The Days-to-Exam tile is senior-only \u2014 JC users either
-              have no imminent exam (1st/2nd year) or a Junior Cert date
-              that would need its own getDaysUntilJC helper; for Phase 6 we
-              just drop the tile for JC. */}
-          {!isJunior && (
-            <>
-              <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
-                <p className="text-xl font-bold text-zinc-900 dark:text-white">{student.subjectProfile ? currentCAO : '\u2014'}</p>
-                <p className="text-[10px] font-medium text-zinc-500">Current CAO</p>
-              </div>
-              <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
-                <p className="text-xl font-bold text-zinc-900 dark:text-white">{student.subjectProfile ? targetCAO : '\u2014'}</p>
-                <p className="text-[10px] font-medium text-zinc-500">Target CAO</p>
-              </div>
-              {/* Days-to-Exam \u2014 hidden for graduated students (LC already done). */}
-              {!isGraduated && (
-                <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
-                  <p className="text-xl font-bold text-zinc-900 dark:text-white">{daysUntilLC}</p>
-                  <p className="text-[10px] font-medium text-zinc-500">Days to Exam</p>
-                </div>
-              )}
-              {isGraduated && (
-                <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
-                  <p className="text-base font-semibold text-zinc-600 dark:text-zinc-300">Best of luck</p>
-                  <p className="text-[10px] font-medium text-zinc-500">Past cohort</p>
-                </div>
-              )}
-            </>
-          )}
-          {isJunior && (() => {
-            const subjectsCovered = student.subjectProfile?.subjects.length ?? 0;
-            const atMerit = (student.subjectProfile?.subjects ?? []).filter(s => {
-              const b = s.currentBand;
-              return b === 'Distinction' || b === 'Higher Merit' || b === 'Merit';
-            }).length;
-            const targetMerit = (student.subjectProfile?.subjects ?? []).filter(s => {
-              const b = s.targetBand;
-              return b === 'Distinction' || b === 'Higher Merit' || b === 'Merit';
-            }).length;
-            return (
-              <>
-                <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
-                  <p className="text-xl font-bold text-zinc-900 dark:text-white">{subjectsCovered || '\u2014'}</p>
-                  <p className="text-[10px] font-medium text-zinc-500">Subjects</p>
-                </div>
-                <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
-                  <p className="text-xl font-bold text-zinc-900 dark:text-white">{subjectsCovered ? `${atMerit}/${subjectsCovered}` : '\u2014'}</p>
-                  <p className="text-[10px] font-medium text-zinc-500">At Merit+</p>
-                </div>
-                <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
-                  <p className="text-xl font-bold text-zinc-900 dark:text-white">{subjectsCovered ? `${targetMerit}/${subjectsCovered}` : '\u2014'}</p>
-                  <p className="text-[10px] font-medium text-zinc-500">Target Merit+</p>
-                </div>
-              </>
-            );
-          })()}
-        </div>
+        {/* Stat chips grid — shared renderer, curriculum-aware */}
+        {renderStatTiles()}
 
         {/* Status explainer for at-risk / drifting */}
         {(status === 'at-risk' || status === 'drifting') && statusReasons.length > 0 && (() => {
@@ -446,10 +460,13 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
       <div className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-6">
         <h3 className="font-serif text-lg font-semibold tracking-tight text-zinc-900 dark:text-white mb-4">Subject Profile</h3>
 
-        {/* CAO bar — senior only (JC has no points concept). For JC the
-            band-by-band breakdown in the table below carries the same
-            information without a single "total" number to anchor to. */}
-        {!isJunior && (
+        {/* CAO bar — senior only (JC has no points concept), and only for
+            students who actually have H/O grades. LCA students map to
+            'senior' but are assessed on credits, so this bar used to draw a
+            confident 0-of-625 for them. For JC the band-by-band breakdown in
+            the table below carries the same information without a single
+            "total" number to anchor to. */}
+        {!isJunior && hasGrades && (
           <div className="mb-5">
             <div className="flex justify-between text-xs text-zinc-500 dark:text-zinc-400 mb-1">
               <span>Current: {currentCAO} pts</span>
@@ -609,12 +626,15 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
       <h3 className="font-serif text-lg font-semibold tracking-tight text-zinc-900 dark:text-white mb-4">Module Progress</h3>
       <div className="space-y-2">
         {CATEGORIES.map(cat => {
-          const catCourses = allCourses.filter(c => c.category === cat.id);
+          // visibleCourses, not allCourses — the per-subject Decode modules
+          // for subjects this student doesn't take were being listed as
+          // "Not Started" work they had never been offered.
+          const catCourses = visibleCourses.filter(c => c.category === cat.id);
           const completedCount = catCourses.filter(c => {
             const p = student.progress[c.id];
             return p && p.unlockedSection >= c.sectionsCount;
           }).length;
-          const catProgress = getCategoryProgress(student.progress, allCourses, cat.id);
+          const catProgress = getCategoryProgress(student.progress, visibleCourses, cat.id);
           const isExpanded = expandedCategories.has(cat.id);
 
           return (
@@ -818,20 +838,33 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
   // ─── Insights: Career Direction (FF picks) ─────────────────────────────
 
   const renderCareerDirection = () => {
-    if (!student.futureFinder?.topPicks?.length) return null;
-    const courses = hydrateCourses(student.futureFinder.topPicks).slice(0, 3);
+    const ff = student.futureFinder;
+    if (!ff?.topPicks?.length) return null;
+    const courses = hydrateCourses(ff.topPicks).slice(0, 3);
     if (courses.length === 0) return null;
+
+    // `source` matters to a counsellor reading this. Saved picks are the
+    // student's own bookmarks in save-order — numbering them 1/2/3 would
+    // present an arbitrary order as a ranking. Only 'ranked' is a real
+    // ranking, and 'legacy' comes from the retired tool so it may be stale.
+    const isRanking = ff.source === 'ranked' || ff.source === 'legacy';
+    const heading = ff.source === 'saved' ? 'Courses they saved' : 'Career Direction';
+    const completed = ff.completedAt ? new Date(ff.completedAt) : null;
 
     return (
       <div className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-5">
-        <div className="flex items-center gap-2 mb-3">
+        <div className="flex items-center gap-2 mb-1">
           <Compass size={16} className="text-blue-500" />
-          <h4 className="text-sm font-semibold text-zinc-900 dark:text-white">Career Direction</h4>
+          <h4 className="text-sm font-semibold text-zinc-900 dark:text-white">{heading}</h4>
         </div>
+        <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mb-3">
+          {ff.source === 'saved' ? 'Their own picks, in the order they saved them' : ff.source === 'ranked' ? 'Top matches from Future Finder' : 'From the earlier Future Finder — may be out of date'}
+          {completed && !isNaN(completed.getTime()) ? ` · ${completed.toLocaleDateString('en-IE', { day: 'numeric', month: 'short', year: 'numeric' })}` : ''}
+        </p>
         <div className="space-y-2">
           {courses.map((c, i) => (
             <div key={c.code} className="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-zinc-50 dark:bg-zinc-800/30">
-              <span className="text-xs font-bold text-zinc-400 w-5 text-center">{i + 1}</span>
+              <span className="text-xs font-bold text-zinc-400 w-5 text-center">{isRanking ? i + 1 : '·'}</span>
               <div className="flex-1 min-w-0">
                 <p className="text-xs font-semibold text-zinc-700 dark:text-zinc-300 truncate">{c.title}</p>
                 <p className="text-[10px] text-zinc-400 dark:text-zinc-500">{c.institution} &middot; Level {c.level}</p>
@@ -1188,31 +1221,9 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
           {/* Quick Actions */}
           {renderQuickActions()}
 
-          {/* Stat chips — stays 4-col, fits 672px */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-            <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 flex items-center gap-3">
-              <svg width={44} height={44} viewBox="0 0 44 44">
-                <circle cx={22} cy={22} r={18} fill="none" stroke="currentColor" className="text-zinc-200 dark:text-zinc-700" strokeWidth={3} />
-                <circle cx={22} cy={22} r={18} fill="none" stroke="currentColor" className="text-[var(--accent-hex)]" strokeWidth={3} strokeLinecap="round" strokeDasharray={`${(overallProgress / 100) * 113.1} 113.1`} transform="rotate(-90 22 22)" />
-              </svg>
-              <div>
-                <p className="text-xl font-bold text-zinc-900 dark:text-white">{overallProgress.toFixed(0)}%</p>
-                <p className="text-[10px] font-medium text-zinc-500">Progress</p>
-              </div>
-            </div>
-            <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
-              <p className="text-xl font-bold text-zinc-900 dark:text-white">{student.subjectProfile ? currentCAO : '\u2014'}</p>
-              <p className="text-[10px] font-medium text-zinc-500">Current CAO</p>
-            </div>
-            <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
-              <p className="text-xl font-bold text-zinc-900 dark:text-white">{student.subjectProfile ? targetCAO : '\u2014'}</p>
-              <p className="text-[10px] font-medium text-zinc-500">Target CAO</p>
-            </div>
-            <div className="bg-zinc-50 dark:bg-zinc-800/40 rounded-xl p-3 text-center flex flex-col items-center justify-center">
-              <p className="text-xl font-bold text-zinc-900 dark:text-white">{daysUntilLC}</p>
-              <p className="text-[10px] font-medium text-zinc-500">Days to Exam</p>
-            </div>
-          </div>
+          {/* Stat chips — same renderer as the full page, so the
+              curriculum guard can never drift out of the tray again. */}
+          {renderStatTiles()}
 
           {/* Needs Support (at-risk / drifting — mirrors the full-mode panel).
               Audit 2026-06-01: previously compared to 'needs-support', which is

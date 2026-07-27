@@ -10,6 +10,34 @@ import { getPointsForGrade, LC_SUBJECTS, JC_BANDS, type JCBand } from '../subjec
 import { type TimetableCompletions } from '../subjectData';
 import { type GCStudentFullData, type SubjectGapData } from './gcTypes';
 import { getStudentStatus } from '../../utils/studentStatus';
+import { filterCoursesForStudent } from '../../utils/courseVisibility';
+import { startOfWeek, parseDateKey, lastActiveDateFrom, activeDayCount } from '../../utils/weekDates';
+
+// ─── Visible-course denominator ─────────────────────────────────────────────
+
+/**
+ * The modules THIS student can actually open. The GC must score a student
+ * against the same list the student's own progress counter uses — dividing by
+ * the full 83-module catalogue made a fully-completed 7-subject senior read as
+ * ~73%, and a JC student read as ~20%.
+ */
+export function getVisibleCourses(student: GCStudentFullData, allCourses: CourseData[]): CourseData[] {
+  return filterCoursesForStudent(allCourses, student.curriculumLevel, student.subjectProfile);
+}
+
+// ─── Grade availability ─────────────────────────────────────────────────────
+
+/**
+ * Does this student have LC-style grades at all?
+ *
+ * `subjectProfile != null` was used as the proxy, but a Junior Cycle profile
+ * carries currentBand/targetBand and an LCA profile carries level only — both
+ * are complete, valid profiles with no H/O grade anywhere. Treating them as
+ * "has grades" ran them through the CAO path and printed a confident `0`.
+ */
+export function hasCAOGrades(student: GCStudentFullData): boolean {
+  return !!student.subjectProfile?.subjects.some(s => !!s.currentGrade || !!s.targetGrade);
+}
 
 // ─── Progress Helpers ───────────────────────────────────────────────────────
 
@@ -152,15 +180,20 @@ export function getDaysUntilLC(): number {
 
 // ─── Active This Week ───────────────────────────────────────────────────────
 
+/**
+ * Monday-to-now, matching the exports and the student-status helpers. This
+ * previously used a rolling 7-day window AND parsed date keys with the bare
+ * Date constructor (UTC midnight vs. the writer's local-parts keys), so the
+ * same dashboard answered "active this week" two different ways and shifted a
+ * day every summer.
+ */
 export function isActiveThisWeek(student: GCStudentFullData): boolean {
   if (!student.timetableCompletions) return false;
-  const now = new Date();
-  const sevenDaysAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
+  const monday = startOfWeek(new Date());
 
-  return Object.keys(student.timetableCompletions).some(dateKey => {
-    const d = new Date(dateKey);
-    return d >= sevenDaysAgo && d <= now;
-  });
+  return Object.entries(student.timetableCompletions).some(([dateKey, blocks]) =>
+    Array.isArray(blocks) && blocks.length > 0 && parseDateKey(dateKey) >= monday,
+  );
 }
 
 // ─── Engagement Timeline ────────────────────────────────────────────────────
@@ -182,6 +215,56 @@ export function getEngagementTimeline(
     result.push({ date: key, count: Array.isArray(blocks) ? blocks.length : 0 });
   }
   return result;
+}
+
+// ─── Attendance helpers (shared by both exporters) ──────────────────────────
+//
+// These lived as byte-identical private copies in utils/exportCsv.ts and
+// utils/exportPdf.ts, which is how they came to share the same two bugs: a
+// Sunday off-by-one week and a hardcoded 45-minute block. One definition now,
+// so the copies cannot drift again.
+
+/** Days with at least one completed block. Empty day-keys left behind by the
+ *  old un-tick bug are not study days. */
+export function getSessionCount(completions: Record<string, string[]> | null | undefined): number {
+  return activeDayCount(completions);
+}
+
+/** Total minutes studied. `blockMinutes` must come from the student's
+ *  `subjectProfile.defaultBlockDuration` — hardcoding 45 put the export out by
+ *  up to 50% for anyone who changed their block length in settings. */
+export function getTotalMinutes(
+  completions: Record<string, string[]> | null | undefined,
+  blockMinutes: number = 45,
+): number {
+  if (!completions) return 0;
+  const totalBlocks = Object.values(completions).reduce((sum, blocks) => sum + (Array.isArray(blocks) ? blocks.length : 0), 0);
+  return totalBlocks * blockMinutes;
+}
+
+/** Study days in the Monday–Sunday week `weeksAgo` weeks back. */
+export function getSessionsInWeek(
+  completions: Record<string, string[]> | null | undefined,
+  weeksAgo: number,
+): number {
+  if (!completions) return 0;
+  // Was `now.getDate() - now.getDay() + 1`, which on a Sunday (getDay() === 0)
+  // resolves to NEXT Monday — so every export run on a Sunday reported zero
+  // sessions this week for the entire school.
+  const weekStart = startOfWeek(new Date(), weeksAgo);
+  const weekEnd = new Date(weekStart);
+  weekEnd.setDate(weekStart.getDate() + 7);
+
+  return Object.entries(completions).filter(([dateKey, blocks]) => {
+    if (!Array.isArray(blocks) || blocks.length === 0) return false;
+    const d = parseDateKey(dateKey);
+    return d >= weekStart && d < weekEnd;
+  }).length;
+}
+
+/** The student's configured study-block length, defaulting to the app's 45. */
+export function getBlockMinutes(student: GCStudentFullData): number {
+  return student.subjectProfile?.defaultBlockDuration ?? 45;
 }
 
 // ─── Subject-Level Gaps ─────────────────────────────────────────────────────
@@ -229,21 +312,26 @@ function escapeCSV(val: string): string {
 }
 
 export function generateStudentCSV(students: GCStudentFullData[], allCourses: CourseData[]): string {
-  const headers = ['Name', 'Progress %', 'CAO Current', 'CAO Target', 'Gap', 'Streak', 'Status'];
+  const headers = ['Name', 'Year', 'Progress %', 'CAO Current', 'CAO Target', 'Gap', 'Streak', 'Status'];
   const rows = students.map(s => {
-    const progress = getOverallProgress(s.progress, allCourses);
+    // Score each student against the modules they can actually open, and only
+    // print CAO figures for students who have LC grades — a JC or LCA student
+    // has no CAO total, so a blank cell is the truth and '0' is a fabrication.
+    const visible = getVisibleCourses(s, allCourses);
+    const progress = getOverallProgress(s.progress, visible);
+    const hasGrades = hasCAOGrades(s);
     const currentCAO = getStudentCurrentCAO(s);
     const targetCAO = getStudentTargetCAO(s);
-    const gap = targetCAO - currentCAO;
     const streak = s.streak?.currentStreak ?? 0;
-    const status = getStudentStatus(s, allCourses);
+    const status = getStudentStatus(s, visible);
 
     return [
       escapeCSV(s.user.name),
+      escapeCSV(s.yearGroup ?? ''),
       progress.toFixed(1),
-      String(currentCAO),
-      String(targetCAO),
-      String(gap),
+      hasGrades ? String(currentCAO) : '',
+      hasGrades ? String(targetCAO) : '',
+      hasGrades ? String(targetCAO - currentCAO) : '',
       String(streak),
       status,
     ].join(',');
@@ -257,7 +345,7 @@ export function generateStudentCSV(students: GCStudentFullData[], allCourses: Co
 export function getProgressDistribution(students: GCStudentFullData[], allCourses: CourseData[]): [number, number, number, number] {
   const buckets: [number, number, number, number] = [0, 0, 0, 0];
   students.forEach(s => {
-    const p = getOverallProgress(s.progress, allCourses);
+    const p = getOverallProgress(s.progress, getVisibleCourses(s, allCourses));
     if (p < 25) buckets[0]++;
     else if (p < 50) buckets[1]++;
     else if (p < 75) buckets[2]++;
@@ -284,21 +372,21 @@ export function getRecentlyActiveStudents(students: GCStudentFullData[], limit: 
   const withActivity = students
     .map(s => {
       if (!s.timetableCompletions) return null;
-      const dateKeys = Object.keys(s.timetableCompletions);
-      if (dateKeys.length === 0) return null;
-
-      // Find the most recent date key
-      dateKeys.sort((a, b) => b.localeCompare(a));
-      const lastActiveDate = dateKeys[0];
+      // Days left behind with an empty array (the un-tick bug) are not study
+      // days — lastActiveDateFrom skips them.
+      const lastActiveDate = lastActiveDateFrom(s.timetableCompletions);
+      if (!lastActiveDate) return null;
 
       // Count blocks completed today
       const todayBlocks = s.timetableCompletions[todayKey];
       const blocksCompletedToday = Array.isArray(todayBlocks) ? todayBlocks.length : 0;
 
-      // Compute timeAgo
-      const lastDate = new Date(lastActiveDate);
-      const diffMs = now.getTime() - lastDate.getTime();
-      const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+      // Compute timeAgo — parseDateKey keeps this in local time, so a key
+      // written last night doesn't read as "1 day ago" all of today.
+      const lastDate = parseDateKey(lastActiveDate);
+      const todayMidnight = new Date(now);
+      todayMidnight.setHours(0, 0, 0, 0);
+      const diffDays = Math.round((todayMidnight.getTime() - lastDate.getTime()) / (1000 * 60 * 60 * 24));
       let timeAgo: string;
       if (lastActiveDate === todayKey) {
         timeAgo = 'Today';

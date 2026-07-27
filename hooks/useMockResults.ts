@@ -46,11 +46,19 @@ export function useMockResults(uid: string | undefined) {
         const existingIds = new Set(migrated.map(m => m.id));
         for (const m of data.warRoom.mockResults) {
           if (!existingIds.has(m.id)) {
+            // `m.grades` never existed on the legacy WarRoom shape — those
+            // records are one-per-subject, `{ id, subject, grade, date, … }`.
+            // So this migration used to write `entries: []` for every one of
+            // them, destroying the grade while marking the record migrated.
+            // Map the real shape, and keep `grades` first for any doc that
+            // genuinely has it.
+            const entries = m.grades
+              ?? (m.subject ? [{ subjectName: m.subject, grade: m.grade, level: m.level ?? 'higher' }] : []);
             migrated.push({
               id: m.id || `wr-${Date.now()}-${Math.random().toString(36).slice(2,6)}`,
               label: m.label || 'Mock Exam',
               date: m.date || new Date().toISOString().split('T')[0],
-              entries: m.grades || [],
+              entries,
               totalPoints: m.totalPoints || 0,
               timestamp: m.timestamp || Date.now(),
             });

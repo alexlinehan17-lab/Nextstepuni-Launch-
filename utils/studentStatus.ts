@@ -116,10 +116,17 @@ export function getStudentStatus(student: GCStudentFullData, allCourses: CourseD
   const now = new Date();
 
   // ── 1. NEW — account created within last 7 days ──
-  const createdAt = student.subjectProfile?.createdAt;
-  if (!createdAt) return 'new';
-  const daysSinceSignup = Math.floor((now.getTime() - new Date(createdAt).getTime()) / DAY_MS);
-  if (daysSinceSignup <= 7) return 'new';
+  //
+  // A missing createdAt used to RETURN 'new', which froze every student who
+  // skipped onboarding (there is a permanent "Skip for now" and skipping
+  // writes nothing to Firestore) as "New" forever — they could never surface
+  // as inactive or at-risk no matter how long they were gone. Fall through
+  // instead, so an unknown signup date is judged on actual session history.
+  const createdAt = student.user.createdAt ?? student.subjectProfile?.createdAt;
+  if (createdAt) {
+    const daysSinceSignup = Math.floor((now.getTime() - new Date(createdAt).getTime()) / DAY_MS);
+    if (daysSinceSignup <= 7) return 'new';
+  }
 
   // ── Compute signals ──
   const daysSinceLast = daysSinceLastSession(student.timetableCompletions);

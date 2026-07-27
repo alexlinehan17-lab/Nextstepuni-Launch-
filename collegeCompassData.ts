@@ -120,7 +120,7 @@ export const JOURNEY_STOPS: JourneyStop[] = [
       { id: 'pay-discount', label: 'Apply + pay before the discounted-fee deadline', detail: 'The early rate is cheaper than the standard rate — verify both on cao.ie.' },
     ],
     crossLinks: [
-      { toolId: 'future-finder', title: 'Not sure what to put down?', description: 'Explore courses and careers that fit who you are in Future Finder.' },
+      { toolId: 'future-finder-revamped', title: 'Not sure what to put down?', description: 'Explore courses and careers that fit who you are in Future Finder.' },
     ],
     verify: { sourceLabel: 'cao.ie — How to Apply & Important Dates', sourceUrl: 'https://www.cao.ie/apply.php', lastChecked: COMPASS_LAST_VERIFIED },
   },
@@ -153,7 +153,7 @@ export const JOURNEY_STOPS: JourneyStop[] = [
       { id: 'tests-registered', label: 'Registered for HPAT / portfolio / audition if needed' },
     ],
     crossLinks: [
-      { toolId: 'future-finder', title: 'Still weighing options?', description: 'Compare courses side by side in Future Finder before you lock your list.' },
+      { toolId: 'future-finder-revamped', title: 'Still weighing options?', description: 'Compare courses side by side in Future Finder before you lock your list.' },
     ],
     verify: { sourceLabel: 'cao.ie — Restricted-Application Courses', sourceUrl: 'https://www.cao.ie/index.php?page=restrictedcourses&bb=restrictions', lastChecked: COMPASS_LAST_VERIFIED },
   },

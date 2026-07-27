@@ -14,7 +14,7 @@ import { FileSearch,
     Settings, CalendarDays, Calculator, GitBranch, Rocket,
     Map, ScanSearch, Milestone, Waypoints, Highlighter, Users, Briefcase, Sunrise, Mic, Stamp, Images, ListChecks, SpellCheck, FolderCheck
 } from 'lucide-react';
-import { doc, setDoc, getDoc, increment } from 'firebase/firestore';
+import { doc, setDoc, getDoc, increment, deleteField } from 'firebase/firestore';
 import { db } from '../firebase';
 import { type StudentSubjectProfile, type TimetableCompletions, type TimetableStreak, type YearGroup, getBlockId, toDateKey } from './subjectData';
 import { type SchoolEvent } from './gc/GCKeyEvents';
@@ -282,21 +282,33 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     }, [user?.uid]);
 
     const handleOnboardingComplete = useCallback(async (profile: StudentSubjectProfile) => {
-        setSubjectProfile(profile);
         setShowOnboarding(false);
         if (pendingToolId) {
             setActiveTool(pendingToolId);
             setPendingToolId(null);
         }
+        // Commit OPTIMISTICALLY, then roll back if the write is actually
+        // rejected.
+        //
+        // Do NOT gate this on the awaited setDoc: firebase.ts enables
+        // persistentLocalCache, and with offline persistence a setDoc promise
+        // settles only on SERVER acknowledgement. Offline it never resolves
+        // AND never rejects — so awaiting first would leave a student on flaky
+        // school wifi staring at an empty tool body with every profile-gated
+        // tool locked until they fully reloaded the app, with no error and no
+        // spinner. The write itself is safe: Firestore applies it to the local
+        // cache immediately and flushes it when the connection returns.
+        const previousProfile = subjectProfile;
+        setSubjectProfile(profile);
         if (user?.uid) {
-            try {
-                await setDoc(doc(db, 'progress', user.uid), { subjectProfile: profile }, { merge: true });
-            } catch (err) {
-                console.error('Failed to save subject profile:', err);
-                showToast('Couldn\'t save — check your connection', 'error');
-            }
+            setDoc(doc(db, 'progress', user.uid), { subjectProfile: profile }, { merge: true })
+                .catch(err => {
+                    console.error('Failed to save subject profile:', err);
+                    showToast('Couldn\'t save your subjects — please try again', 'error');
+                    setSubjectProfile(previousProfile);
+                });
         }
-    }, [user?.uid, pendingToolId, setActiveTool]);
+    }, [user?.uid, pendingToolId, setActiveTool, subjectProfile]);
 
     const _getStreakMultiplier = useCallback((streak: number): number => {
         if (streak >= 14) return 2.5;
@@ -315,7 +327,8 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                 const idx = dayArr.indexOf(blockId);
                 if (idx >= 0) dayArr.splice(idx, 1);
             }
-            if (dayArr.length === 0) {
+            const dayEmptied = dayArr.length === 0;
+            if (dayEmptied) {
                 delete updated[dateKey];
             } else {
                 updated[dateKey] = dayArr;
@@ -328,8 +341,19 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             setTimetableStreak(newStreak);
 
             if (user?.uid) {
+                // `delete updated[dateKey]` only removes the day locally — a
+                // merge:true setDoc builds its field mask from the keys that ARE
+                // present, so an omitted key is left untouched on the server.
+                // Un-ticking the last block of a day therefore looked like it
+                // worked and silently came back on reload, leaving the GC's
+                // "active days" permanently ahead of the student's own count.
+                // deleteField() is legal inside a merge setDoc; a dotted path
+                // string is not (that's updateDoc-only syntax).
+                const completionsPayload: Record<string, any> = { ...updated };
+                if (dayEmptied) completionsPayload[dateKey] = deleteField();
+
                 setDoc(doc(db, 'progress', user.uid), {
-                    timetableCompletions: updated,
+                    timetableCompletions: completionsPayload,
                     timetableStreak: newStreak,
                     ...extraFirestoreData,
                 }, { merge: true }).catch(err => { console.error('Failed to save completions:', err); showToast('Couldn\'t save — check your connection', 'error'); });
@@ -341,19 +365,39 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
 
     const handleToggleCompletion = useCallback(async (dateKey: string, blockId: string, completed: boolean) => {
         if (completed) {
-            // "Already Studied" flow: 2 pts flat, no reflection
+            // "Already Studied" flow: 5 pts flat, no reflection.
+            //
+            // Award ONCE PER BLOCK. Un-ticking deducts nothing, so without this
+            // guard a student could tick/un-tick the same block repeatedly and
+            // farm points indefinitely. That was previously harmless because
+            // the award went to a dead root field and local state reset on
+            // reload — fixing the write path makes it permanent and spendable
+            // (rest-day passes feed computeStreak), so it has to be idempotent
+            // now. executeToggle is already idempotent about the completion.
+            const alreadyCredited = (timetableCompletions[dateKey] ?? []).includes(blockId);
+            if (alreadyCredited) {
+                executeToggle(dateKey, blockId, true);
+                return;
+            }
             const ALREADY_STUDIED_POINTS = 5;
             setPointsData(prev => ({
                 ...prev,
                 totalEarned: prev.totalEarned + ALREADY_STUDIED_POINTS,
             }));
+            // A dotted key inside setDoc is NOT a field path — setDoc treats it
+            // as one literal segment, so this used to create a root field
+            // called "pointsData.totalEarned" and the real total never moved.
+            // Every timetable tick's points were lost. (Dotted paths only work
+            // in updateDoc, which can't be used here: the progress doc may not
+            // exist yet.) merge:true deep-merges maps, so the sibling
+            // pointsData.totalSpent written elsewhere is preserved.
             executeToggle(dateKey, blockId, true, {
-                'pointsData.totalEarned': increment(ALREADY_STUDIED_POINTS),
+                pointsData: { totalEarned: increment(ALREADY_STUDIED_POINTS) },
             });
         } else {
             executeToggle(dateKey, blockId, false);
         }
-    }, [executeToggle, pointsData]);
+    }, [executeToggle, pointsData, timetableCompletions]);
 
     const handleSpendPoints = useCallback((type: 'skip-session' | 'rest-day-pass', detail?: string) => {
         const costs: Record<string, number> = {

@@ -30,9 +30,8 @@ import {
   HybridCard, Band, ProgressDots, OrangeBtn, NeutralBtn, Eyebrow, Segment, BackLink,
   SERIF, INK, BODY, MUTED, LABEL, HAIRLINE,
 } from './immersiveDeck';
-import { CAO_COURSES, type CAOCourse, hydrateCourses } from './futureFinderData';
+import { CAO_COURSES, type CAOCourse } from './futureFinderData';
 import { useInnovationData } from '../contexts/InnovationDataContext';
-import { useProgress } from '../contexts/ProgressContext';
 import { useEffortLifeSim } from '../hooks/useEffortLifeSim';
 import { type StudentSubjectProfile, computeBargains, type Bargain } from './subjectData';
 import {
@@ -68,7 +67,6 @@ const CareerChip: React.FC<{ c: CareerCard; onClick: () => void }> = ({ c, onCli
 
 const YourPossibleLife: React.FC<{ uid?: string; profile: StudentSubjectProfile }> = ({ uid, profile }) => {
   const { futureFinderPicks } = useInnovationData();
-  const { rawProgressDoc } = useProgress();
   const { saved, isLoaded: simLoaded, save, reset } = useEffortLifeSim(uid);
 
   const [step, setStep] = useState<Step>('pick');
@@ -84,10 +82,11 @@ const YourPossibleLife: React.FC<{ uid?: string; profile: StudentSubjectProfile 
   const hasGrades = currentPoints > 0 || targetPoints > 0;
   const bargains = useMemo<Bargain[]>(() => computeBargains(profile), [profile]);
 
-  const ffCourses = useMemo(() => {
-    const revamped = hydrateCourses((rawProgressDoc?.futureFinderRevamped?.picks as string[] | undefined) ?? []);
-    return [...futureFinderPicks, ...revamped];
-  }, [futureFinderPicks, rawProgressDoc]);
+  // futureFinderPicks now unions both namespaces itself (see
+  // InnovationDataContext), so this no longer has to concatenate — which it did
+  // without deduping, putting the abandoned legacy list first for any student
+  // who had used both tools.
+  const ffCourses = futureFinderPicks;
 
   const matchedCareers = useMemo<CareerCard[]>(() => {
     const seen = new Set<string>();

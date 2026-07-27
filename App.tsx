@@ -23,8 +23,8 @@ import { db } from './firebase';
 import { doc, getDoc, setDoc, updateDoc, increment, arrayUnion } from 'firebase/firestore';
 import { type ModuleProgress, type NorthStar } from './types';
 import { useToast } from './components/Toast';
-import { ALL_COURSES, categoryTitles, SUBJECT_TO_MODULE } from './courseData';
-import { type CourseData } from './components/Library';
+import { ALL_COURSES, categoryTitles } from './courseData';
+import { filterCoursesForStudent } from './utils/courseVisibility';
 import { useSettings } from './hooks/useSettings';
 import { useTodaysFocus } from './hooks/useTodaysFocus';
 import { useStrategyMastery } from './hooks/useStrategyMastery';
@@ -239,43 +239,13 @@ const App: React.FC = () => {
     lastStreakRef.current = current;
   }, [streak.currentStreak]);
 
-  const studentCourses = useMemo(() => {
-    const level = user?.curriculumLevel ?? 'senior';
-
-    // Curriculum gating (Phase 4): a module is visible if it's tagged for
-    // the user's level or for 'both'. Pre-Phase-1 modules without a tag are
-    // assumed senior (every existing module was seeded 'senior' in Phase 1).
-    const passesCurriculum = (c: CourseData) => {
-      const tag = c.curriculum ?? 'senior';
-      return tag === 'both' || tag === level;
-    };
-
-    const relevantModuleIds = studentProfile
-      ? new Set(studentProfile.subjects.map(s => SUBJECT_TO_MODULE[s.subjectName]).filter(Boolean))
-      : null;
-
-    return ALL_COURSES.filter(c => {
-      if (!passesCurriculum(c)) return false;
-
-      if (c.category === 'subject-specific-science') {
-        // Per-subject Decode (subject-*-protocol): only show for picked
-        // subjects (existing senior behaviour, applied to both levels).
-        if (c.id.startsWith('subject-')) {
-          return !relevantModuleIds || relevantModuleIds.has(c.id);
-        }
-        // General strategy modules (mastering-*-protocol, applied-sciences,
-        // digital-distraction, etc.): for JC users with a coming-soon tag,
-        // surface them as "JC version coming" tiles regardless of picked
-        // subjects. Senior behaviour unchanged (pre-existing filter quirk:
-        // these are invisible to senior unless they're in SUBJECT_TO_MODULE
-        // — separate cleanup, not Phase 4 scope).
-        if (level === 'junior' && c.jcStatus === 'coming-soon') return true;
-        return !relevantModuleIds || relevantModuleIds.has(c.id);
-      }
-
-      return true;
-    });
-  }, [studentProfile, user?.curriculumLevel]);
+  // Shared with the GC dashboard via utils/courseVisibility — the GC must
+  // score a student against the modules that student can actually open, not
+  // the full catalogue. Do not re-inline this.
+  const studentCourses = useMemo(
+    () => filterCoursesForStudent(ALL_COURSES, user?.curriculumLevel, studentProfile),
+    [studentProfile, user?.curriculumLevel],
+  );
 
   const strategyMastery = useStrategyMastery(user?.uid, userProgress, studentCourses);
   const weeklyChallenge = useWeeklyChallenge(user?.uid);
@@ -588,16 +558,23 @@ const App: React.FC = () => {
   };
 
   const handleChangeSubjectsSave = async (profile: StudentSubjectProfile) => {
-    setStudentProfile(profile);
     setChangeSubjectsOpen(false);
-    if (!user) return;
-    try {
-      const progressDocRef = doc(db, 'progress', user.uid);
-      await setDoc(progressDocRef, { subjectProfile: profile }, { merge: true });
-    } catch (err) {
-      console.error('Failed to save updated subject profile:', err);
-      showToast('Couldn\'t save — check your connection', 'error');
-    }
+    if (!user) { setStudentProfile(profile); return; }
+    // Optimistic commit + rollback on a real rejection. Awaiting the write
+    // before committing would hang forever offline — with persistentLocalCache
+    // a setDoc promise settles only on server acknowledgement, so it neither
+    // resolves nor rejects, and the student's subject change would silently do
+    // nothing with no error shown. The write is still safe offline: Firestore
+    // applies it locally at once and flushes it on reconnect.
+    const previousProfile = studentProfile;
+    setStudentProfile(profile);
+    const progressDocRef = doc(db, 'progress', user.uid);
+    setDoc(progressDocRef, { subjectProfile: profile }, { merge: true })
+      .catch(err => {
+        console.error('Failed to save updated subject profile:', err);
+        showToast('Couldn\'t save your subjects — please try again', 'error');
+        setStudentProfile(previousProfile);
+      });
   };
 
   const _handleBackToTree = () => { nav.goBack(); };

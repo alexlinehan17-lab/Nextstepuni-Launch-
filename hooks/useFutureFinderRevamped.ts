@@ -26,6 +26,13 @@ export interface FutureFinderRevampedState {
   valueResponses: Record<string, number>;
   /** Saved-pick course codes (the shared results UI's "Save to Picks"). */
   picks?: string[];
+  /** The algorithm's top-10 ranked course codes, captured when the quiz
+   *  completes. Distinct from `picks`, which are the student's explicit
+   *  bookmarks — most students never bookmark anything, so without this the
+   *  results the student actually read were never persisted and every
+   *  downstream consumer (Your Possible Life, War Room, the GC dashboard) saw
+   *  an empty list. */
+  topMatches?: string[];
   /** Course codes selected for the compare view. */
   compareCodes?: string[];
   completedAt: string;

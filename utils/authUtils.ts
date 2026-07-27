@@ -118,6 +118,11 @@ export type SessionUser = {
   yearGroup?: YearGroup;
   curriculumLevel?: CurriculumLevel;
   needsPasswordChange?: boolean;
+  /** ISO date the account was created. Written at registration; absent on docs
+   *  created before that (backfill from Auth metadata). Used by the GC's
+   *  student-status classifier so a student who skipped onboarding — and so has
+   *  no subjectProfile.createdAt — isn't stuck reading "New" forever. */
+  createdAt?: string;
 };
 
 /**

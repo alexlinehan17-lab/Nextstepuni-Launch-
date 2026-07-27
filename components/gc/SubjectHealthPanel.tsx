@@ -68,7 +68,8 @@ export const SubjectHealthPanel: React.FC<SubjectHealthPanelProps> = ({ studentD
     const lastMonth = `${lastMonthDate.getFullYear()}-${String(lastMonthDate.getMonth() + 1).padStart(2, '0')}`;
 
     // Aggregate mock results per subject
-    const subjectMocks: Record<string, { thisMonth: number[]; lastMonth: number[]; isHigher: boolean; studentUids: Set<string> }> = {};
+    // Keyed `${subject}|H` / `${subject}|O` — see the level split below.
+    const subjectMocks: Record<string, { subject: string; thisMonth: number[]; lastMonth: number[]; isHigher: boolean; studentUids: Set<string> }> = {};
     // Aggregate debrief confidence per subject
     const subjectConfidence: Record<string, { thisMonth: number[]; lastMonth: number[] }> = {};
 
@@ -81,12 +82,20 @@ export const SubjectHealthPanel: React.FC<SubjectHealthPanelProps> = ({ studentD
         const mockMonth = mock.date?.slice(0, 7);
         if (!mockMonth) continue;
 
-        if (!subjectMocks[mock.subject]) {
-          subjectMocks[mock.subject] = { thisMonth: [], lastMonth: [], isHigher: mock.grade.startsWith('H'), studentUids: new Set() };
+        // Key by subject AND level. `isHigher` used to latch from the first
+        // mock seen for a subject, so Higher and Ordinary results were averaged
+        // into one number and labelled with whichever level happened to arrive
+        // first — an H1 and an O1 are not the same grade. This never surfaced
+        // because no mock data reached this panel at all (the GC was reading a
+        // dead field); it goes live the moment that is fixed, so split it now.
+        const isHigher = mock.grade.startsWith('H');
+        const key = `${mock.subject}|${isHigher ? 'H' : 'O'}`;
+        if (!subjectMocks[key]) {
+          subjectMocks[key] = { subject: mock.subject, thisMonth: [], lastMonth: [], isHigher, studentUids: new Set() };
         }
-        subjectMocks[mock.subject].studentUids.add(student.user.uid);
-        if (mockMonth === thisMonth) subjectMocks[mock.subject].thisMonth.push(pts);
-        else if (mockMonth === lastMonth) subjectMocks[mock.subject].lastMonth.push(pts);
+        subjectMocks[key].studentUids.add(student.user.uid);
+        if (mockMonth === thisMonth) subjectMocks[key].thisMonth.push(pts);
+        else if (mockMonth === lastMonth) subjectMocks[key].lastMonth.push(pts);
       }
 
       // Debrief confidence
@@ -107,8 +116,9 @@ export const SubjectHealthPanel: React.FC<SubjectHealthPanelProps> = ({ studentD
 
     // Build health data per subject (only subjects with 3+ students)
     const results: SubjectHealth[] = [];
-    for (const [subject, data] of Object.entries(subjectMocks)) {
+    for (const data of Object.values(subjectMocks)) {
       if (data.studentUids.size < 3) continue;
+      const subject = data.subject;
 
       const allMocks = [...data.thisMonth, ...data.lastMonth];
       if (allMocks.length === 0) continue;
@@ -121,6 +131,8 @@ export const SubjectHealthPanel: React.FC<SubjectHealthPanelProps> = ({ studentD
         : 'stable';
 
       // Confidence
+      // Confidence is not level-split (debriefs carry no level), so both the
+      // HL and OL card for a subject show the same subject-wide confidence.
       const conf = subjectConfidence[subject];
       let avgConfidence: number | null = null;
       let confidenceTrend: Trend | null = null;
@@ -135,7 +147,7 @@ export const SubjectHealthPanel: React.FC<SubjectHealthPanelProps> = ({ studentD
       }
 
       results.push({
-        subject,
+        subject: `${subject} · ${data.isHigher ? 'HL' : 'OL'}`,
         studentCount: data.studentUids.size,
         avgGradePoints: currentAvg,
         avgGradeLabel: numericToGrade(currentAvg, data.isHigher),

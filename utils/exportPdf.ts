@@ -10,17 +10,22 @@
 import { type GCStudentFullData } from '../components/gc/gcTypes';
 import { type CourseData } from '../components/Library';
 import { getRankForPoints } from '../gamificationConfig';
+import { getSessionCount, getTotalMinutes, getSessionsInWeek, getBlockMinutes, getVisibleCourses } from '../components/gc/gcUtils';
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
 
+// Both of these scope to the modules the student can actually open — the whole
+// catalogue as a denominator understated every student's completion (a
+// finished 7-subject senior exported as ~73%).
 function getModulesCompleted(student: GCStudentFullData, allCourses: CourseData[]): number {
-  return allCourses.filter(course => {
+  return getVisibleCourses(student, allCourses).filter(course => {
     const p = student.progress[course.id];
     return p && p.unlockedSection >= course.sectionsCount;
   }).length;
 }
 
-function getCompletionPercent(student: GCStudentFullData, allCourses: CourseData[]): number {
+function getCompletionPercent(student: GCStudentFullData, catalogue: CourseData[]): number {
+  const allCourses = getVisibleCourses(student, catalogue);
   if (allCourses.length === 0) return 0;
   const totalProgressSum = allCourses.reduce((sum, course) => {
     const p = student.progress[course.id];
@@ -32,31 +37,6 @@ function getCompletionPercent(student: GCStudentFullData, allCourses: CourseData
   return totalProgressSum / allCourses.length;
 }
 
-function getSessionCount(completions: Record<string, string[]> | null): number {
-  if (!completions) return 0;
-  return Object.keys(completions).length;
-}
-
-function getTotalMinutes(completions: Record<string, string[]> | null): number {
-  if (!completions) return 0;
-  const totalBlocks = Object.values(completions).reduce((sum, blocks) => sum + blocks.length, 0);
-  return totalBlocks * 45;
-}
-
-function getSessionsInWeek(completions: Record<string, string[]> | null, weeksAgo: number): number {
-  if (!completions) return 0;
-  const now = new Date();
-  const startOfCurrentWeek = new Date(now);
-  startOfCurrentWeek.setDate(now.getDate() - now.getDay() + 1 - weeksAgo * 7);
-  startOfCurrentWeek.setHours(0, 0, 0, 0);
-  const endOfWeek = new Date(startOfCurrentWeek);
-  endOfWeek.setDate(startOfCurrentWeek.getDate() + 7);
-
-  return Object.keys(completions).filter(dateKey => {
-    const d = new Date(dateKey + 'T00:00:00');
-    return d >= startOfCurrentWeek && d < endOfWeek;
-  }).length;
-}
 
 // ─── Shared table styles ────────────────────────────────────────────────────
 
@@ -155,7 +135,7 @@ export async function generateReport(options: {
       return [
         s.user.name,
         String(getSessionCount(completions)),
-        String(getTotalMinutes(completions)),
+        String(getTotalMinutes(completions, getBlockMinutes(s))),
         String(getSessionsInWeek(completions, 0)),
         String(getSessionsInWeek(completions, 1)),
       ];
@@ -253,7 +233,9 @@ export async function generateReport(options: {
         head: [['Subject', 'Level', 'Current Grade', 'Target Grade']],
         body: individualStudent.subjectProfile.subjects.map(sub => [
           sub.subjectName,
-          sub.level === 'higher' ? 'Higher' : 'Ordinary',
+          // 'common' is a real level (all LCA courses, most JC subjects) —
+          // printing it as 'Ordinary' misreported every one of them.
+          sub.level === 'higher' ? 'Higher' : sub.level === 'ordinary' ? 'Ordinary' : 'Common',
           sub.currentGrade,
           sub.targetGrade,
         ]),

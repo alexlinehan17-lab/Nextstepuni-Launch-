@@ -7,12 +7,14 @@ import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { type CourseData } from './Library';
 import { type SessionUser, getAvatarUrl, yearGroupToCurriculumLevel } from '../utils/authUtils';
-import { LogOut, LayoutDashboard, Users, BarChart3, PanelLeft, StickyNote, AlertTriangle, CalendarDays, ListChecks, KeyRound } from 'lucide-react';
+import { LogOut, LayoutDashboard, Users, BarChart3, PanelLeft, StickyNote, AlertTriangle, CalendarDays, ListChecks, KeyRound, RefreshCw } from 'lucide-react';
 import app, { db } from '../firebase';
 import { collection, query, where, limit, getDocs, doc, getDoc, setDoc } from 'firebase/firestore';
 import { getFunctions, httpsCallable } from 'firebase/functions';
 import { getSchoolName } from '../schoolData';
-import { type UserProgress, type PointsData, type CollegeCompassState } from '../types';
+import { type UserProgress, type PointsData, type CollegeCompassState, type UnifiedMockResult } from '../types';
+import { computeStreak } from './timetableAlgorithm';
+import { lastActiveDateFrom } from '../utils/weekDates';
 import { type StudentSubjectProfile, type TimetableCompletions, type TimetableStreak } from './subjectData';
 import { type NorthStar } from '../types';
 import { type GameState } from './journeySimulatorData';
@@ -83,6 +85,157 @@ const LoadingSkeleton: React.FC = () => (
   </div>
 );
 
+// ─── Progress-doc → GC record ───────────────────────────────────────────────
+
+/**
+ * The single place a raw `progress/{uid}` document becomes a GC record.
+ *
+ * This is a pure function on purpose: it is the contract between what every
+ * student-facing tool WRITES and what the guidance counsellor READS, and it is
+ * the only consumer of those fields outside the tool that owns them. When a
+ * refactor moved mock results to a top-level `mockResults` array and Future
+ * Finder to a `futureFinderRevamped` namespace, nothing caught it — the GC just
+ * silently read fields nobody wrote any more. test/gcLoaderContract.test.ts now
+ * locks every one of these hops.
+ *
+ * Rule for anyone adding a field: read the field the tool actually writes, keep
+ * a fallback for docs written before the last migration, and never let "absent"
+ * collapse into a confident zero — hand `null` to the render layer and let it
+ * show an em-dash.
+ */
+export function mapProgressDocToStudent(
+  user: SessionUser,
+  progressDoc: Record<string, any> | null,
+): GCStudentFullData {
+  const progress: UserProgress = {};
+  if (progressDoc) {
+    for (const [key, val] of Object.entries(progressDoc)) {
+      if (val && typeof val === 'object' && 'unlockedSection' in val) {
+        progress[key] = val as { unlockedSection: number };
+      }
+    }
+  }
+
+  const subjectProfile = (progressDoc?.subjectProfile as StudentSubjectProfile) ?? null;
+  const northStar = (progressDoc?.northStar as NorthStar) ?? null;
+  const journeyRaw = progressDoc?.['journey-simulator'] as { endingId?: string; finalStats?: GameState; completedAt?: string; decisionsCount?: number } | undefined;
+  const journeyResult: JourneyResult | null = journeyRaw?.endingId
+    ? { endingId: journeyRaw.endingId, finalStats: journeyRaw.finalStats!, completedAt: journeyRaw.completedAt, decisionsCount: journeyRaw.decisionsCount }
+    : null;
+  const points = (progressDoc?.pointsData as PointsData) ?? null;
+  const timetableCompletions = (progressDoc?.timetableCompletions as TimetableCompletions) ?? null;
+
+  // Streak — DERIVED, not read.
+  //
+  // `timetableStreak` is a snapshot only ever written by one of the two
+  // completion paths (the Innovation Zone toggle), so a student who studies
+  // via "Study Now" had a live 9-day streak on their own screen and 0 here,
+  // and a student who stopped a fortnight ago still showed 12. Recomputing with
+  // the exact two-argument call ProgressContext makes puts the GC on the same
+  // number the student sees. `longestStreak` is preserved from the snapshot so
+  // the streak-broken alert's "had a 7+ run" gate still works.
+  //
+  // lastActiveDate comes from the completions map, NOT from computeStreak —
+  // that returns TODAY whenever the streak is 0, which would mark every dormant
+  // student as active today and silently disable the at-risk alerts.
+  const savedStreak = (progressDoc?.timetableStreak as TimetableStreak) ?? null;
+  // restDayPasses matters: a student can spend 60 points on a rest-day pass,
+  // and computeStreak treats a passed day as a continuation rather than a
+  // break. Omitting the 4th argument would show the GC a SHORTER streak than
+  // the student's own timetable card — and could push a student who paid to
+  // protect their streak into 'drifting' or 'at-risk' in the counsellor's view.
+  const restDayPasses = (progressDoc?.earnedRest as { restDayPasses?: string[] })?.restDayPasses ?? [];
+  const computedStreak = progressDoc
+    ? computeStreak(timetableCompletions ?? {}, subjectProfile?.restDays ?? [], new Date(), restDayPasses)
+    : null;
+  const streak: TimetableStreak | null = computedStreak
+    ? {
+        currentStreak: computedStreak.currentStreak,
+        longestStreak: Math.max(computedStreak.currentStreak, savedStreak?.longestStreak ?? 0),
+        lastActiveDate: lastActiveDateFrom(timetableCompletions) ?? '',
+      }
+    : savedStreak;
+
+  // Future Finder — two namespaces.
+  //
+  // The live senior tool is `future-finder-revamped`, which writes
+  // `futureFinderRevamped`; the tile that writes the legacy `futureFinder`
+  // namespace is tagged junior-only and titled "Future Finder Old". Reading
+  // only the legacy field meant the GC showed a superseded list — or nothing —
+  // for a student who had just finished the quiz. `picks` is the student's
+  // explicit bookmarks (save-order); `topMatches` is the algorithm's ranking.
+  const ffNew = progressDoc?.futureFinderRevamped as { picks?: string[]; topMatches?: string[]; completedAt?: string; updatedAt?: string } | undefined;
+  const ffOld = progressDoc?.futureFinder as { topPicks?: string[]; completedAt?: string } | undefined;
+  const newPicks = ffNew?.picks?.length ? ffNew.picks : [];
+  const newRanked = ffNew?.topMatches?.length ? ffNew.topMatches : [];
+  const oldPicks = ffOld?.topPicks?.length ? ffOld.topPicks : [];
+  // `.length` matters: the JC Subject Explorer writes `topPicks: []`, and an
+  // empty array is truthy — that alone rendered an empty "Insights" heading.
+  const futureFinder: GCStudentFullData['futureFinder'] =
+    newPicks.length
+      ? { topPicks: newPicks, completedAt: ffNew?.completedAt ?? ffNew?.updatedAt ?? '', source: 'saved' }
+      : newRanked.length
+        ? { topPicks: newRanked, completedAt: ffNew?.completedAt ?? ffNew?.updatedAt ?? '', source: 'ranked' }
+        : oldPicks.length
+          ? { topPicks: oldPicks, completedAt: ffOld?.completedAt ?? '', source: 'legacy' }
+          : null;
+
+  // Mock results — students write a top-level `mockResults` array of
+  // UnifiedMockResult (one record per sitting, subjects nested under
+  // `entries`). The GC used to read `warRoom.mockResults`, which nothing has
+  // written since the mock-results refactor, so the Mock Trajectory table and
+  // the whole school-wide Subject Health card silently never rendered. Flatten
+  // to one row per subject, exactly as WarRoom does for the student.
+  const unifiedMocks = (progressDoc?.mockResults as UnifiedMockResult[] | undefined) ?? [];
+  const legacyMocks = (progressDoc?.warRoom as { mockResults?: MockResultEntry[] })?.mockResults ?? null;
+  const flattenedMocks: MockResultEntry[] = unifiedMocks.flatMap(m => (m.entries ?? []).map(e => ({
+    id: `${m.id}-${e.subjectName}`,
+    subject: e.subjectName,
+    grade: String(e.grade ?? ''),
+    date: m.date,
+    label: m.label,
+    timestamp: m.timestamp,
+  })));
+  // Fall back on the FLATTENED length, not on `unifiedMocks.length`. The
+  // forward-migration in useMockResults maps `entries: m.grades || []`, but
+  // legacy records have no `grades` key — so a migrated doc can hold a
+  // non-empty mockResults array whose every record has `entries: []`. Testing
+  // the raw array would make that shadow the still-intact legacy blob and hide
+  // the student's real grades. Students dormant since the refactor hold only
+  // the legacy blob; both cases land here.
+  const mockResults: MockResultEntry[] | null = flattenedMocks.length ? flattenedMocks : legacyMocks;
+
+  const debriefArr = progressDoc?.studyDebriefs as DebriefEntry[] | undefined;
+  const recentDebriefs = debriefArr ? debriefArr.slice(-20) : null;
+
+  // College Compass — read the SAME field the student writes (no copy, no drift).
+  const collegeCompass = (progressDoc?.collegeCompass as CollegeCompassState) ?? null;
+
+  // Derive year-group / curriculum-level (Phase 1 JC plumbing).
+  // Prefer the user doc (set during onboarding + by AuthContext
+  // migration), fall back to subjectProfile (legacy location).
+  const yearGroup = user.yearGroup ?? subjectProfile?.yearGroup;
+  const curriculumLevel = user.curriculumLevel
+    ?? (yearGroup ? yearGroupToCurriculumLevel(yearGroup) : undefined);
+
+  return {
+    user,
+    progress,
+    subjectProfile,
+    northStar,
+    journeyResult,
+    streak,
+    points,
+    timetableCompletions,
+    futureFinder,
+    mockResults,
+    recentDebriefs,
+    collegeCompass,
+    yearGroup,
+    curriculumLevel,
+  };
+}
+
 // ─── Component ──────────────────────────────────────────────────────────────
 
 export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allCourses, gcName, gcUid }) => {
@@ -91,6 +244,12 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
   const [selectedStudentUid, setSelectedStudentUid] = useState<string | null>(null);
   const [activeNav, setActiveNav] = useState<string>('gc-overview');
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  // The dashboard is a one-shot snapshot (the /progress read rule authorises
+  // get()-shaped reads only, so onSnapshot is not available here). Make the
+  // staleness visible instead of silent, and give the GC a way to re-pull.
+  const [lastLoadedAt, setLastLoadedAt] = useState<Date | null>(null);
+  const [reloadVersion, setReloadVersion] = useState(0);
+  const [truncated, setTruncated] = useState(false);
 
   // GC dashboard is always dark mode
   useEffect(() => {
@@ -181,17 +340,22 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
     return () => { document.body.style.overflow = ''; };
   }, [selectedStudentUid]);
 
-  // On opening a student's tray, re-pull their latest College Compass marks so
-  // the GC always sees the most recent committed state. Reads the SAME
-  // progress/{uid} doc the student writes — single source of truth, no drift.
+  // On opening a student's tray, re-pull their progress doc so the GC sees the
+  // most recent committed state.
+  //
+  // This used to keep ONLY collegeCompass off the fresh snapshot and throw the
+  // rest away, so every other tray metric — points, streak, today's blocks,
+  // mocks — stayed frozen at whatever it was when the dashboard first loaded.
+  // Same getDoc, same cost; now the whole record is rehydrated.
   useEffect(() => {
     if (!selectedStudentUid) return;
     let cancelled = false;
     getDoc(doc(db, 'progress', selectedStudentUid)).then(snap => {
       if (cancelled || !snap.exists()) return;
-      const cc = (snap.data()?.collegeCompass as CollegeCompassState) ?? null;
-      setStudentData(prev => prev.map(s => s.user.uid === selectedStudentUid ? { ...s, collegeCompass: cc } : s));
-    }).catch((e) => logError('GCDashboard.reloadStudentCompass', e));
+      setStudentData(prev => prev.map(s =>
+        s.user.uid === selectedStudentUid ? mapProgressDocToStudent(s.user, snap.data()) : s,
+      ));
+    }).catch((e) => logError('GCDashboard.reloadStudentProgress', e));
     return () => { cancelled = true; };
   }, [selectedStudentUid]);
 
@@ -201,9 +365,13 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
       setIsLoading(true);
       try {
         const usersCol = collection(db, 'users');
-        const schoolQuery = query(usersCol, where('school', '==', school), limit(500));
+        // Truncation used to be silent: a school over the cap simply lost
+        // students with no error anywhere. Surface it instead.
+        const USER_CAP = 1000;
+        const schoolQuery = query(usersCol, where('school', '==', school), limit(USER_CAP));
         const userSnapshot = await getDocs(schoolQuery);
         const users = userSnapshot.docs.map(d => ({ uid: d.id, ...d.data() })) as SessionUser[];
+        setTruncated(users.length >= USER_CAP);
 
         // Exclude all staff roles (gc/staff/admin) — the dashboard lists students only.
         const students = users.filter(u => u.role !== 'gc' && u.role !== 'staff' && u.role !== 'admin');
@@ -233,67 +401,13 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
           if (snap && snap.exists()) progressByUid.set(students[i].uid, snap.data());
         });
 
-        const fullData: GCStudentFullData[] = students.map((user) => {
-            const progressDoc: Record<string, any> | null = progressByUid.get(user.uid) ?? null;
-
-            const progress: UserProgress = {};
-            if (progressDoc) {
-              for (const [key, val] of Object.entries(progressDoc)) {
-                if (val && typeof val === 'object' && 'unlockedSection' in val) {
-                  progress[key] = val as { unlockedSection: number };
-                }
-              }
-            }
-
-            const subjectProfile = (progressDoc?.subjectProfile as StudentSubjectProfile) ?? null;
-            const northStar = (progressDoc?.northStar as NorthStar) ?? null;
-            const journeyRaw = progressDoc?.['journey-simulator'] as { endingId?: string; finalStats?: GameState; completedAt?: string; decisionsCount?: number } | undefined;
-            const journeyResult: JourneyResult | null = journeyRaw?.endingId
-              ? { endingId: journeyRaw.endingId, finalStats: journeyRaw.finalStats!, completedAt: journeyRaw.completedAt, decisionsCount: journeyRaw.decisionsCount }
-              : null;
-            const streak = (progressDoc?.timetableStreak as TimetableStreak) ?? null;
-            const points = (progressDoc?.pointsData as PointsData) ?? null;
-            const timetableCompletions = (progressDoc?.timetableCompletions as TimetableCompletions) ?? null;
-
-            // Cross-tool integration fields
-            const ffRaw = progressDoc?.futureFinder as { topPicks?: string[]; completedAt?: string } | undefined;
-            const futureFinder = ffRaw?.topPicks ? { topPicks: ffRaw.topPicks, completedAt: ffRaw.completedAt ?? '' } : null;
-
-            const wrMocks = (progressDoc?.warRoom as { mockResults?: MockResultEntry[] })?.mockResults ?? null;
-
-            const debriefArr = progressDoc?.studyDebriefs as DebriefEntry[] | undefined;
-            const recentDebriefs = debriefArr ? debriefArr.slice(-20) : null;
-
-            // College Compass — read the SAME field the student writes (no copy, no drift).
-            const collegeCompass = (progressDoc?.collegeCompass as CollegeCompassState) ?? null;
-
-            // Derive year-group / curriculum-level (Phase 1 JC plumbing).
-            // Prefer the user doc (set during onboarding + by AuthContext
-            // migration), fall back to subjectProfile (legacy location).
-            const yearGroup = user.yearGroup ?? subjectProfile?.yearGroup;
-            const curriculumLevel = user.curriculumLevel
-              ?? (yearGroup ? yearGroupToCurriculumLevel(yearGroup) : undefined);
-
-            return {
-              user,
-              progress,
-              subjectProfile,
-              northStar,
-              journeyResult,
-              streak,
-              points,
-              timetableCompletions,
-              futureFinder,
-              mockResults: wrMocks,
-              recentDebriefs,
-              collegeCompass,
-              yearGroup,
-              curriculumLevel,
-            };
-        });
+        const fullData: GCStudentFullData[] = students.map(user =>
+          mapProgressDocToStudent(user, progressByUid.get(user.uid) ?? null),
+        );
 
         if (cancelled) return;
         setStudentData(fullData);
+        setLastLoadedAt(new Date());
 
         // Load dismissed alerts
         try {
@@ -311,7 +425,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
 
     fetchData();
     return () => { cancelled = true; };
-  }, [school]);
+  }, [school, reloadVersion]);
 
   const selectedStudent = selectedStudentUid
     ? studentData.find(s => s.user.uid === selectedStudentUid) ?? null
@@ -406,6 +520,29 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
 
       {/* ─── Main Content ─────────────────────────────────────────────── */}
       <main className={`flex-1 flex flex-col transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${sidebarOpen ? 'md:ml-56' : 'md:ml-[60px]'}`}>
+        {/* Freshness strip — this dashboard is a snapshot, not a live feed.
+            Saying so beats a GC quietly reading yesterday's numbers. */}
+        {!isLoading && (
+          <div className="flex items-center justify-end gap-3 px-6 pt-4 pb-1">
+            {truncated && (
+              <span className="text-[11px] font-medium text-amber-600 dark:text-amber-500">
+                Showing the first 1000 accounts — some students may be missing.
+              </span>
+            )}
+            {lastLoadedAt && (
+              <span className="text-[11px] text-zinc-400 dark:text-zinc-500">
+                Data as of {lastLoadedAt.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+              </span>
+            )}
+            <button
+              onClick={() => setReloadVersion(v => v + 1)}
+              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-[11px] font-medium text-zinc-500 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+            >
+              <RefreshCw size={12} />
+              Refresh
+            </button>
+          </div>
+        )}
         {isLoading ? (
           <LoadingSkeleton />
         ) : activeNav === 'gc-events' ? (
@@ -464,7 +601,12 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
               transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
               className="fixed top-0 right-0 z-50 h-screen w-full max-w-2xl bg-white dark:bg-zinc-900 shadow-2xl overflow-y-auto border-l border-zinc-200 dark:border-zinc-800"
             >
+              {/* Keyed by uid so switching students remounts the tray. Without
+                  it React reuses the instance and the previous student's local
+                  state (unsent kudos/recommend drafts, the status-change badge)
+                  bleeds into the next student's profile. */}
               <GCStudentDetail
+                key={selectedStudent.user.uid}
                 student={selectedStudent}
                 allCourses={allCourses}
                 onBack={() => setSelectedStudentUid(null)}

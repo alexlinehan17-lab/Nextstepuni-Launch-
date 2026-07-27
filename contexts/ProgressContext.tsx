@@ -9,6 +9,7 @@ import { collection, doc, getDoc, getDocs } from 'firebase/firestore';
 import { type UserProgress, type NorthStar, type TopicMasteryMap, type UnifiedMockResult } from '../types';
 import { type StudentSubjectProfile } from '../components/subjectData';
 import { computeStreak } from '../components/timetableAlgorithm';
+import { lastActiveDateFrom } from '../utils/weekDates';
 import { useAuth } from './AuthContext';
 import { type StudySessionRecord } from '../utils/strategyRegistry';
 import { type DebriefEntry } from '../components/StudyDebrief';
@@ -134,11 +135,18 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     const completions = rawProgressDoc.timetableCompletions || timetableCompletions || {};
     const restDays = rawProgressDoc.subjectProfile?.restDays || studentProfile?.restDays || [];
     const saved = rawProgressDoc.timetableStreak;
-    const computed = computeStreak(completions, restDays);
+    // Same four-argument call the GC loader and the timetable toggle make, so
+    // all three agree for a student who bought a rest-day pass.
+    const restDayPasses = (rawProgressDoc.earnedRest?.restDayPasses as string[] | undefined) ?? [];
+    const computed = computeStreak(completions, restDays, new Date(), restDayPasses);
     return {
       currentStreak: computed.currentStreak,
       longestStreak: Math.max(computed.currentStreak, saved?.longestStreak ?? 0),
-      lastActiveDate: computed.lastActiveDate || saved?.lastActiveDate || '',
+      // Derived from the completions map, NOT computeStreak's lastActiveDate —
+      // that returns TODAY whenever the streak is 0 (`lastActiveDate ||
+      // todayKey`), so the `||` fallbacks here were dead and a dormant student
+      // read as active today. The GC loader derives it the same way.
+      lastActiveDate: lastActiveDateFrom(completions) ?? saved?.lastActiveDate ?? '',
     };
   }, [rawProgressDoc, timetableCompletions, studentProfile?.restDays]);
 

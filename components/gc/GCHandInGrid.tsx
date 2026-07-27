@@ -12,7 +12,7 @@
 import React, { useMemo, useState, useEffect } from 'react';
 import { type CourseData } from '../Library';
 import { type GCStudentFullData, type StudentStatus } from './gcTypes';
-import { getOverallProgress, isActiveThisWeek, getStudentStatus } from './gcUtils';
+import { getOverallProgress, isActiveThisWeek, getStudentStatus, getVisibleCourses } from './gcUtils';
 import { COHORT_TAGS, getTags, toggleTag, loadCohortTags, type CohortTag } from './cohortTags';
 
 type Rag = 'red' | 'amber' | 'green';
@@ -53,14 +53,18 @@ const GCHandInGrid: React.FC<Props> = ({ students, allCourses, school, onSelectS
     void ver;
     return students
       .map(s => {
-        const status = getStudentStatus(s, allCourses);
+        // Score against the modules this student can actually open — every
+        // other GC surface does, and using the full catalogue here made the
+        // Practice grid contradict the overview table for the same student.
+        const visible = getVisibleCourses(s, allCourses);
+        const status = getStudentStatus(s, visible);
         return {
           uid: s.user.uid,
           name: s.user.name || 'Student',
           status,
           rag: RAG_OF[status],
           active: isActiveThisWeek(s),
-          progress: Math.round(getOverallProgress(s.progress, allCourses)),
+          progress: Math.round(getOverallProgress(s.progress, visible)),
           streak: s.streak?.currentStreak ?? 0,
           tags: getTags(school, s.user.uid),
         };

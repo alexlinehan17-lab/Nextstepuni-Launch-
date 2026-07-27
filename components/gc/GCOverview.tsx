@@ -31,6 +31,8 @@ import {
   getSubjectGaps,
   generateStudentCSV,
   getRecentlyActiveStudents,
+  getVisibleCourses,
+  hasCAOGrades,
 } from './gcUtils';
 import { type EarlyWarningAlert, type AlertSeverity } from './gcAlerts';
 import { GCKeyEvents } from './GCKeyEvents';
@@ -200,20 +202,43 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
 
   // ─── Computed stats ─────────────────────────────────────────────────────
 
+  // A student's curriculum, with a definite answer for everyone.
+  //
+  // The four places that derived this used to leave it `undefined` when the
+  // user doc had neither field, and `undefined` matches NEITHER the 'junior'
+  // nor the 'senior' filter — so those students disappeared from the table
+  // under every setting except "All". That set is exactly the students who
+  // haven't signed in since the curriculumLevel backfill shipped: the
+  // disengaged ones a counsellor is looking for. Defaulting to 'senior'
+  // matches what the backfill itself does, and can only ever ADD a row.
+  const levelOf = (s: GCStudentFullData): CurriculumLevel =>
+    s.curriculumLevel ?? (s.yearGroup ? (isJuniorYear(s.yearGroup) ? 'junior' : 'senior') : 'senior');
+
   const studentStats = useMemo(() => {
-    return studentData.map(s => ({
-      student: s,
-      progress: getOverallProgress(s.progress, allCourses),
-      status: getStudentStatus(s, allCourses),
-      currentCAO: getStudentCurrentCAO(s),  // returns 0 for JC (silent no-op)
-      targetCAO: getStudentTargetCAO(s),    // returns 0 for JC (silent no-op)
-      // JC metrics — non-zero only when the student has currentBand/targetBand
-      subjectsCovered: getStudentSubjectsCovered(s),
-      topBandsCount: getStudentTopBandsCount(s),
-      targetTopBandsCount: getStudentTargetTopBandsCount(s),
-      streak: s.streak?.currentStreak ?? 0,
-      activeThisWeek: isActiveThisWeek(s),
-    }));
+    return studentData.map(s => {
+      // Score each student against the modules THEY can open — dividing by the
+      // whole catalogue understated every student's progress (a completed
+      // 7-subject senior read ~73%, a JC student ~20%).
+      const visible = getVisibleCourses(s, allCourses);
+      return {
+        student: s,
+        progress: getOverallProgress(s.progress, visible),
+        status: getStudentStatus(s, visible),
+        isJunior: levelOf(s) === 'junior',
+        // Whether a CAO total means anything for this student at all. JC uses
+        // bands and LCA uses credits — neither has an H/O grade, so their CAO
+        // is not 0, it doesn't exist.
+        hasGrades: hasCAOGrades(s),
+        currentCAO: getStudentCurrentCAO(s),
+        targetCAO: getStudentTargetCAO(s),
+        // JC metrics — non-zero only when the student has currentBand/targetBand
+        subjectsCovered: getStudentSubjectsCovered(s),
+        topBandsCount: getStudentTopBandsCount(s),
+        targetTopBandsCount: getStudentTargetTopBandsCount(s),
+        streak: s.streak?.currentStreak ?? 0,
+        activeThisWeek: isActiveThisWeek(s),
+      };
+    });
   }, [studentData, allCourses]);
 
   // ─── Cohort breakdown (Phase 6) ─────────────────────────────────────────
@@ -248,12 +273,27 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
     return Array.from(groups).sort(yearGroupSortOrder);
   }, [studentData, curriculumFilter]);
 
-  const avgProgress = studentStats.length > 0
-    ? studentStats.reduce((sum, s) => sum + s.progress, 0) / studentStats.length
+  // ─── Cohort scope ───────────────────────────────────────────────────────
+  //
+  // ONE scoped array that every headline number derives from. Previously the
+  // table rows were cohort-filtered but the status pills, stat cards, the
+  // Attention list, the activity charts and the exports were not — so a GC who
+  // filtered to "Junior Cycle · 2nd Year" read school-wide totals under a
+  // cohort-scoped heading, and exported the entire school.
+  const cohortScopedStats = useMemo(() => {
+    return studentStats.filter(s => {
+      if (curriculumFilter !== 'all' && levelOf(s.student) !== curriculumFilter) return false;
+      if (yearGroupFilter !== 'all' && s.student.yearGroup !== yearGroupFilter) return false;
+      return true;
+    });
+  }, [studentStats, curriculumFilter, yearGroupFilter]);
+
+  const avgProgress = cohortScopedStats.length > 0
+    ? cohortScopedStats.reduce((sum, s) => sum + s.progress, 0) / cohortScopedStats.length
     : 0;
 
-  const driftingCount = studentStats.filter(s => s.status === 'drifting').length;
-  const atRiskCount = studentStats.filter(s => s.status === 'at-risk').length;
+  const driftingCount = cohortScopedStats.filter(s => s.status === 'drifting').length;
+  const atRiskCount = cohortScopedStats.filter(s => s.status === 'at-risk').length;
   const flaggedCount = gcFlags?.flaggedStudentUids.length ?? 0;
 
   // Deduplicated attention set: drifting + at-risk + flagged
@@ -282,11 +322,11 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
     };
 
     // At Risk and Drifting
-    studentStats.filter(s => s.status === 'at-risk' || s.status === 'drifting').forEach(addStudent);
+    cohortScopedStats.filter(s => s.status === 'at-risk' || s.status === 'drifting').forEach(addStudent);
     // Flagged (may overlap)
     if (gcFlags) {
       gcFlags.flaggedStudentUids.forEach(uid => {
-        const s = studentStats.find(ss => ss.student.user.uid === uid);
+        const s = cohortScopedStats.find(ss => ss.student.user.uid === uid);
         if (s) addStudent(s);
       });
     }
@@ -307,26 +347,26 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
     });
 
     return list;
-  }, [studentStats, gcFlags]);
+  }, [cohortScopedStats, gcFlags]);
 
   const needsAttentionCount = attentionStudents.length;
   // Count only-flagged students (flagged but NOT at-risk/drifting)
   const flaggedOnlyCount = attentionStudents.filter(s => s.flag && s.status !== 'at-risk' && s.status !== 'drifting').length;
 
-  const _avgCurrentCAO = studentStats.length > 0
-    ? Math.round(studentStats.filter(s => s.student.subjectProfile).reduce((sum, s) => sum + s.currentCAO, 0) / Math.max(1, studentStats.filter(s => s.student.subjectProfile).length))
+  const _avgCurrentCAO = cohortScopedStats.length > 0
+    ? Math.round(cohortScopedStats.filter(s => s.hasGrades).reduce((sum, s) => sum + s.currentCAO, 0) / Math.max(1, cohortScopedStats.filter(s => s.hasGrades).length))
     : 0;
 
-  const _activeThisWeekCount = studentStats.filter(s => s.activeThisWeek).length;
+  const _activeThisWeekCount = cohortScopedStats.filter(s => s.activeThisWeek).length;
 
   // Status counts for filter pills
   const statusCounts = useMemo(() => {
-    const counts: Record<string, number> = { all: studentStats.length };
-    studentStats.forEach(s => { counts[s.status] = (counts[s.status] ?? 0) + 1; });
+    const counts: Record<string, number> = { all: cohortScopedStats.length };
+    cohortScopedStats.forEach(s => { counts[s.status] = (counts[s.status] ?? 0) + 1; });
     counts['flagged'] = flaggedCount;
     counts['needs-attention'] = needsAttentionCount;
     return counts;
-  }, [studentStats, flaggedCount, needsAttentionCount]);
+  }, [cohortScopedStats, flaggedCount, needsAttentionCount]);
   const daysUntilLC = getDaysUntilLC();
 
   // Cohort-scoped student list — drives Progress Breakdown + Subject-Level
@@ -335,18 +375,32 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
   // breakdowns scoped to that slice.
   const cohortScopedStudents = useMemo(() => {
     return studentData.filter(s => {
-      if (curriculumFilter !== 'all') {
-        const lvl: CurriculumLevel | undefined =
-          s.curriculumLevel ?? (s.yearGroup ? (isJuniorYear(s.yearGroup) ? 'junior' : 'senior') : undefined);
-        if (lvl !== curriculumFilter) return false;
-      }
+      if (curriculumFilter !== 'all' && levelOf(s) !== curriculumFilter) return false;
       if (yearGroupFilter !== 'all' && s.yearGroup !== yearGroupFilter) return false;
       return true;
     });
   }, [studentData, curriculumFilter, yearGroupFilter]);
 
+  // Column headings for the three attainment columns, matched to whoever is
+  // actually in the current cohort. In a mixed school they stay generic and
+  // the tooltip explains the two scales.
+  const attainmentHeadings = useMemo(() => {
+    const hasJunior = cohortScopedStats.some(s => s.isJunior);
+    const hasSenior = cohortScopedStats.some(s => !s.isJunior);
+    if (hasJunior && !hasSenior) {
+      return { current: 'At Merit+', target: 'Target Merit+', gap: 'To Gain', hint: 'Subjects at Merit or above, out of subjects taken' };
+    }
+    if (hasSenior && !hasJunior) {
+      return { current: 'CAO Current', target: 'CAO Target', gap: 'Gap', hint: 'Best-six CAO points from current and target grades' };
+    }
+    return { current: 'Current', target: 'Target', gap: 'Gap', hint: 'CAO points for Senior Cycle students; subjects at Merit or above for Junior Cycle' };
+  }, [cohortScopedStats]);
+
   const distribution = getProgressDistribution(cohortScopedStudents, allCourses);
-  const distributionTotal = Math.max(1, distribution.reduce((a, b) => a + b, 0));
+  // NOT clamped to 1 — this is a population count shown as "N students", and
+  // the clamp printed "1 students" for a cohort filter that matched nobody.
+  // (distributionMax below stays clamped: it is used as a divisor.)
+  const distributionTotal = distribution.reduce((a, b) => a + b, 0);
   const distributionMax = Math.max(1, ...distribution);
 
   // Human-readable label for the active cohort filter — used in panel
@@ -380,7 +434,9 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
 
   // ─── New widgets data ──────────────────────────────────────────────────
 
-  const recentlyActive = useMemo(() => getRecentlyActiveStudents(studentData), [studentData]);
+  // Cohort-scoped, like every other panel — a GC filtered to 2nd Year should
+  // not see 6th years in "Recently active".
+  const recentlyActive = useMemo(() => getRecentlyActiveStudents(cohortScopedStudents), [cohortScopedStudents]);
 
   // ─── Activity range toggle ────────────────────────────────────────────
 
@@ -397,7 +453,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
       const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
       counts[key] = 0;
     }
-    studentData.forEach(s => {
+    cohortScopedStudents.forEach(s => {
       if (!s.timetableCompletions) return;
       Object.entries(s.timetableCompletions).forEach(([date, blocks]) => {
         if (date in counts && Array.isArray(blocks)) {
@@ -409,7 +465,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
       .sort(([a], [b]) => a.localeCompare(b))
       .map(([date, count]) => ({ date, count }));
     return activityRange === '7d' ? all.slice(-7) : all;
-  }, [studentData, activityRange]);
+  }, [cohortScopedStudents, activityRange]);
 
   // ─── Weekly trends (week-over-week comparison) ────────────────────────
 
@@ -430,7 +486,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
     const activeThisWeekSet = new Set<string>();
     const activeLastWeekSet = new Set<string>();
 
-    studentData.forEach(s => {
+    cohortScopedStudents.forEach(s => {
       if (!s.timetableCompletions) return;
       Object.entries(s.timetableCompletions).forEach(([date, blocks]) => {
         if (!Array.isArray(blocks)) return;
@@ -450,28 +506,22 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
       : blocksThisWeek > 0 ? 100 : 0;
 
     return { blocksThisWeek, blocksLastWeek, blocksTrend };
-  }, [studentData]);
+    // Must match the array the body actually reads. Leaving this as
+    // [studentData] froze "Blocks This Week" at the school-wide total under
+    // every cohort filter — and made it order-dependent, since the next
+    // setStudentData (a tray open, or Refresh) would recompute it against
+    // whatever the filter happened to be at that moment.
+  }, [cohortScopedStudents]);
 
   // ─── Filter + Sort ──────────────────────────────────────────────────────
 
   const filtered = useMemo(() => {
-    let result = studentStats;
+    // Starts from the cohort-scoped array so the table and the headline
+    // numbers above it are guaranteed to describe the same population.
+    let result = cohortScopedStats;
     if (searchQuery) {
       const q = searchQuery.toLowerCase();
       result = result.filter(s => s.student.user.name.toLowerCase().includes(q));
-    }
-    // Curriculum gate (Phase 6) — applied before status so curriculum is
-    // the broadest cut.
-    if (curriculumFilter !== 'all') {
-      result = result.filter(s => {
-        const lvl: CurriculumLevel | undefined =
-          s.student.curriculumLevel ?? (s.student.yearGroup ? (isJuniorYear(s.student.yearGroup) ? 'junior' : 'senior') : undefined);
-        return lvl === curriculumFilter;
-      });
-    }
-    // Year-group gate (Phase 6)
-    if (yearGroupFilter !== 'all') {
-      result = result.filter(s => s.student.yearGroup === yearGroupFilter);
     }
     if (statusFilter === 'flagged') {
       result = result.filter(s => gcFlags?.isFlagged(s.student.user.uid));
@@ -480,7 +530,10 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
     } else if (statusFilter !== 'all') {
       result = result.filter(s => s.status === statusFilter);
     }
-    result.sort((a, b) => {
+    // Copy before sorting — Array.prototype.sort mutates in place, and when no
+    // filter is active `result` IS the memoised array, so this was quietly
+    // reordering shared state that other panels read.
+    result = [...result].sort((a, b) => {
       // Flagged students always pinned to top
       const aFlag = gcFlags?.getFlagData(a.student.user.uid);
       const bFlag = gcFlags?.getFlagData(b.student.user.uid);
@@ -498,15 +551,18 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
       switch (sortKey) {
         case 'name': cmp = a.student.user.name.localeCompare(b.student.user.name); break;
         case 'progress': cmp = a.progress - b.progress; break;
-        case 'cao-current': cmp = a.currentCAO - b.currentCAO; break;
-        case 'cao-target': cmp = a.targetCAO - b.targetCAO; break;
-        case 'gap': cmp = (a.targetCAO - a.currentCAO) - (b.targetCAO - b.currentCAO); break;
+        // In a mixed cohort these columns hold CAO points for senior rows and
+        // Merit+ counts for JC rows, so compare each row on its own metric
+        // rather than reading a JC student's absent CAO as 0.
+        case 'cao-current': cmp = (a.isJunior ? a.topBandsCount : a.currentCAO) - (b.isJunior ? b.topBandsCount : b.currentCAO); break;
+        case 'cao-target': cmp = (a.isJunior ? a.targetTopBandsCount : a.targetCAO) - (b.isJunior ? b.targetTopBandsCount : b.targetCAO); break;
+        case 'gap': cmp = (a.isJunior ? a.targetTopBandsCount - a.topBandsCount : a.targetCAO - a.currentCAO) - (b.isJunior ? b.targetTopBandsCount - b.topBandsCount : b.targetCAO - b.currentCAO); break;
         case 'streak': cmp = a.streak - b.streak; break;
       }
       return sortDir === 'desc' ? -cmp : cmp;
     });
     return result;
-  }, [studentStats, searchQuery, statusFilter, curriculumFilter, yearGroupFilter, sortKey, sortDir, gcFlags]);
+  }, [cohortScopedStats, searchQuery, statusFilter, sortKey, sortDir, gcFlags]);
 
   const handleSort = (key: SortKey) => {
     if (sortKey === key) {
@@ -575,7 +631,9 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
   // ─── CSV Export ────────────────────────────────────────────────────────
 
   const handleExportCSV = () => {
-    const csv = generateStudentCSV(studentData, allCourses);
+    // Exports follow the on-screen filter — a GC who narrows to "Junior Cycle
+    // · 2nd Year" and hits Export used to download the whole school.
+    const csv = generateStudentCSV(cohortScopedStudents, allCourses);
     const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
@@ -1066,7 +1124,10 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
           ═══════════════════════════════════════════════════════════════════ */}
       <div className="grid grid-cols-3 gap-4">
         {[
-          { label: 'Total Students', value: String(studentData.length), trend: null as number | null },
+          // Cohort-scoped like the two cards beside it — a school-wide count
+          // under a cohort-scoped heading is exactly the inconsistency this
+          // dashboard was reported for.
+          { label: 'Total Students', value: String(cohortScopedStudents.length), trend: null as number | null },
           { label: 'Avg Progress', value: `${avgProgress.toFixed(0)}%`, trend: null },
           { label: 'Blocks This Week', value: String(weeklyTrends.blocksThisWeek), trend: weeklyTrends.blocksTrend },
         ].map((kpi, i) => (
@@ -1510,22 +1571,17 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                     {col.label}{sortIndicator(col.key)}
                   </th>
                 ))}
-                {/* Curriculum-specific column headers */}
-                {curriculumFilter === 'senior' && (
-                  <>
-                    <th onClick={() => handleSort('cao-current')} className="px-5 py-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 cursor-pointer hover:text-zinc-700 dark:hover:text-zinc-200 select-none whitespace-nowrap">CAO Current{sortIndicator('cao-current')}</th>
-                    <th onClick={() => handleSort('cao-target')} className="px-5 py-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 cursor-pointer hover:text-zinc-700 dark:hover:text-zinc-200 select-none whitespace-nowrap">CAO Target{sortIndicator('cao-target')}</th>
-                    <th onClick={() => handleSort('gap')} className="px-5 py-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 cursor-pointer hover:text-zinc-700 dark:hover:text-zinc-200 select-none whitespace-nowrap">Gap{sortIndicator('gap')}</th>
-                  </>
-                )}
-                {curriculumFilter === 'junior' && (
-                  <>
-                    <th className="px-5 py-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 whitespace-nowrap">Subjects</th>
-                    <th className="px-5 py-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 whitespace-nowrap" title="Subjects with a current band of Merit or above">At Merit+</th>
-                    <th className="px-5 py-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 whitespace-nowrap" title="Subjects targeted to reach Merit or above">Target Merit+</th>
-                  </>
-                )}
-                {/* curriculumFilter === 'all' renders no curriculum-specific cols */}
+                {/* Attainment columns.
+                    These used to be dropped ENTIRELY whenever the curriculum
+                    filter was 'all' — which is the default on every page load —
+                    so the most common view of the dashboard had no points column
+                    anywhere, even in an all-senior school. That is the literal
+                    "it says they have no points" complaint.
+                    Now they always render, with headings that match whoever is
+                    actually in the cohort and per-row values underneath. */}
+                <th onClick={() => handleSort('cao-current')} className="px-5 py-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 cursor-pointer hover:text-zinc-700 dark:hover:text-zinc-200 select-none whitespace-nowrap" title={attainmentHeadings.hint}>{attainmentHeadings.current}{sortIndicator('cao-current')}</th>
+                <th onClick={() => handleSort('cao-target')} className="px-5 py-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 cursor-pointer hover:text-zinc-700 dark:hover:text-zinc-200 select-none whitespace-nowrap" title={attainmentHeadings.hint}>{attainmentHeadings.target}{sortIndicator('cao-target')}</th>
+                <th onClick={() => handleSort('gap')} className="px-5 py-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 cursor-pointer hover:text-zinc-700 dark:hover:text-zinc-200 select-none whitespace-nowrap" title={attainmentHeadings.hint}>{attainmentHeadings.gap}{sortIndicator('gap')}</th>
                 <th onClick={() => handleSort('streak')} className="px-5 py-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 cursor-pointer hover:text-zinc-700 dark:hover:text-zinc-200 select-none whitespace-nowrap">Streak{sortIndicator('streak')}</th>
                 <th className="px-5 py-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 whitespace-nowrap">Status</th>
                 {gcFlags && <th className="px-2 py-3 w-10"></th>}
@@ -1566,20 +1622,23 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                         </div>
                       </div>
                     </td>
-                    {curriculumFilter === 'senior' && (
+                    {/* Per-row, not per-filter: a mixed school shows each
+                        student in their own terms \u2014 CAO points for senior,
+                        Merit+ counts for JC \u2014 instead of hiding the column or
+                        printing a JC student's non-existent CAO as 0. */}
+                    {row.isJunior ? (
                       <>
-                        <td className="px-5 py-4 align-middle text-zinc-600 dark:text-zinc-300">{row.student.subjectProfile ? row.currentCAO : '\u2014'}</td>
-                        <td className="px-5 py-4 align-middle text-zinc-600 dark:text-zinc-300">{row.student.subjectProfile ? row.targetCAO : '\u2014'}</td>
-                        <td className="px-5 py-4 align-middle">
-                          {row.student.subjectProfile ? gapPill(gap) : '\u2014'}
-                        </td>
-                      </>
-                    )}
-                    {curriculumFilter === 'junior' && (
-                      <>
-                        <td className="px-5 py-4 align-middle text-zinc-600 dark:text-zinc-300">{row.subjectsCovered || '\u2014'}</td>
                         <td className="px-5 py-4 align-middle text-zinc-600 dark:text-zinc-300">{row.subjectsCovered ? `${row.topBandsCount}/${row.subjectsCovered}` : '\u2014'}</td>
                         <td className="px-5 py-4 align-middle text-zinc-600 dark:text-zinc-300">{row.subjectsCovered ? `${row.targetTopBandsCount}/${row.subjectsCovered}` : '\u2014'}</td>
+                        <td className="px-5 py-4 align-middle text-zinc-600 dark:text-zinc-300">{row.subjectsCovered ? `+${Math.max(0, row.targetTopBandsCount - row.topBandsCount)}` : '\u2014'}</td>
+                      </>
+                    ) : (
+                      <>
+                        <td className="px-5 py-4 align-middle text-zinc-600 dark:text-zinc-300">{row.hasGrades ? row.currentCAO : '\u2014'}</td>
+                        <td className="px-5 py-4 align-middle text-zinc-600 dark:text-zinc-300">{row.hasGrades ? row.targetCAO : '\u2014'}</td>
+                        <td className="px-5 py-4 align-middle">
+                          {row.hasGrades ? gapPill(gap) : '\u2014'}
+                        </td>
                       </>
                     )}
                     <td className="px-5 py-4 align-middle">
@@ -1730,7 +1789,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
       <GCExportModal
         isOpen={showExportModal}
         onClose={() => setShowExportModal(false)}
-        studentData={studentData}
+        studentData={cohortScopedStudents}
         allCourses={allCourses}
         school={school}
       />

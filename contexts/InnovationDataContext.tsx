@@ -69,11 +69,19 @@ export const InnovationDataProvider: React.FC<InnovationDataProviderProps> = ({
     getDoc(doc(db, 'progress', uid)).then(snap => {
       if (cancelled) return;
       const data = snap.data();
-      if (data?.futureFinder?.topPicks) {
-        setFutureFinderPicks(hydrateCourses(data.futureFinder.topPicks).slice(0, 5));
-      } else {
-        setFutureFinderPicks([]);
-      }
+      // Union both Future Finder namespaces. The live senior tool writes
+      // `futureFinderRevamped`; only the retired tile writes `futureFinder`.
+      // Reading the legacy field alone meant War Room's target course, the CAO
+      // Simulator's gap panel, the Comeback anchor and the Career Paths seed
+      // all pointed at a list the student had abandoned — or at nothing.
+      // Preference order: explicit bookmarks → the algorithm's ranking → legacy.
+      const revamped = data?.futureFinderRevamped as { picks?: string[]; topMatches?: string[] } | undefined;
+      const codes = revamped?.picks?.length
+        ? revamped.picks
+        : revamped?.topMatches?.length
+          ? revamped.topMatches
+          : (data?.futureFinder?.topPicks ?? []);
+      setFutureFinderPicks(codes.length ? hydrateCourses(codes).slice(0, 5) : []);
       setFutureFinderLoading(false);
     }).catch(() => {
       if (!cancelled) setFutureFinderLoading(false);

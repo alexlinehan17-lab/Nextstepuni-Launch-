@@ -143,15 +143,45 @@ const ChangeSubjectsModal: React.FC<ChangeSubjectsModalProps> = ({ isOpen, onClo
   // ─── Save handler ───────────────────────────────────────────────────────
 
   const handleSave = () => {
+    // Junior Cycle subjects carry bands, LCA subjects carry level only, and
+    // neither has an H/O grade. Emitting `currentGrade: undefined` for them
+    // made setDoc throw before anything was written (the SDK rejects undefined
+    // unless ignoreUndefinedProperties is set, and it deliberately isn't), so
+    // a JC or LCA student's subject edit failed with a misleading
+    // "check your connection" toast every single time. Mirror Onboarding's
+    // curriculum branch and never put an undefined in the payload.
+    const isJunior = currentProfile.curriculumLevel === 'junior';
     const subjects: StudentSubject[] = Array.from(selectedSubjects).map(name => {
+      if (isJunior) {
+        const prev = currentProfile.subjects.find(s => s.subjectName === name);
+        return {
+          subjectName: name,
+          level: prev?.level ?? 'common',
+          currentBand: prev?.currentBand ?? 'Merit',
+          targetBand: prev?.targetBand ?? 'Higher Merit',
+        };
+      }
+      if (isLca) return { subjectName: name, level: 'common' as Level };
       const config = subjectConfigs[name] || { level: 'higher' as Level, currentGrade: 'H4' as Grade, targetGrade: 'H2' as Grade };
-      return { subjectName: name, level: config.level, currentGrade: config.currentGrade, targetGrade: config.targetGrade };
+      return {
+        subjectName: name,
+        level: config.level,
+        ...(config.currentGrade ? { currentGrade: config.currentGrade } : {}),
+        ...(config.targetGrade ? { targetGrade: config.targetGrade } : {}),
+      };
     });
     const now = new Date().toISOString();
     onSave({
       subjects,
       examStartDate: currentProfile.examStartDate,
       restDays: currentProfile.restDays,
+      // Carried through deliberately: dropping these rebuilt the in-memory
+      // profile without a curriculum, so the rest of the session ran as if the
+      // student had no year group. Conditional spreads, not plain assignment —
+      // an absent optional field must be omitted, never written as undefined.
+      ...(currentProfile.yearGroup ? { yearGroup: currentProfile.yearGroup } : {}),
+      ...(currentProfile.curriculumLevel ? { curriculumLevel: currentProfile.curriculumLevel } : {}),
+      ...(currentProfile.defaultBlockDuration ? { defaultBlockDuration: currentProfile.defaultBlockDuration } : {}),
       createdAt: currentProfile.createdAt,
       updatedAt: now,
     });

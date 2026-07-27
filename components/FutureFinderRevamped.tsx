@@ -51,6 +51,42 @@ function computeCurrentPoints(profile: StudentSubjectProfile): number {
     .reduce((sum, p) => sum + p, 0);
 }
 
+/**
+ * The ranking, as a pure function.
+ *
+ * Extracted from the `analysis` useMemo so the top matches can be computed and
+ * PERSISTED at the moment the quiz completes. Previously only the student's
+ * manually-bookmarked picks were stored, so a student who finished the quiz and
+ * never pressed "Save to Picks" — most of them — left `picks: []` behind. Their
+ * Your Possible Life screen showed no careers and their guidance counsellor had
+ * nothing to see, even though the ranking was right there on screen.
+ */
+function computeAnalysis(
+  responses: Record<string, number>,
+  valueResponses: Record<string, number>,
+  studentPoints: number,
+  studentSubjectNames: string[],
+) {
+  const byScale: Partial<Record<RiasecLetter, number[]>> = {};
+  for (const it of RIASEC_ITEMS) { const r = responses[it.id]; if (r) (byScale[it.scale] ??= []).push(r); }
+  const studentProfile = buildStudentProfile(byScale);
+  const studentCode = codeFromProfile(studentProfile);
+  const valScore: Partial<Record<WorkValue, number>> = {};
+  for (const v of VALUE_ITEMS) { const r = valueResponses[v.id]; if (r) valScore[v.value] = (valScore[v.value] ?? 0) + r; }
+  const studentValues = (Object.entries(valScore).sort((a, b) => (b[1] as number) - (a[1] as number)).slice(0, 3).map((x) => x[0]) as WorkValue[]);
+  const scored = CAO_COURSES
+    .map((course) => {
+      const cr = COURSE_RIASEC[course.code];
+      if (!cr) return null;
+      const fit = scoreCourseFit({ studentProfile, studentCode, studentPoints, studentSubjects: studentSubjectNames, studentValues, course: { ...cr, typicalPoints: course.typicalPoints } });
+      return { course, fit };
+    })
+    .filter((x): x is { course: CAOCourse; fit: CourseFitResult } => x !== null)
+    .sort((a, b) => b.fit.fitR - a.fit.fitR);
+  const maxScale = Math.max(1, ...RIASEC_LETTERS.map((l) => studentProfile[l]));
+  return { studentProfile, studentCode, studentValues, maxScale, shown: scored.filter((s) => s.fit.fitBucket !== 'none').slice(0, 24) };
+}
+
 const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProfile; studentSubjects?: string[]; onOpenCareerPaths?: (careerStrings: string[]) => void }> = ({ uid, profile, onOpenCareerPaths }) => {
   const { saved, isLoaded, persist, reset } = useFutureFinderRevamped(uid);
   const [phase, setPhase] = useState<'intro' | 'quiz' | 'results'>('intro');
@@ -88,26 +124,10 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
   const studentPoints = useMemo(() => computeCurrentPoints(profile), [profile]);
   const studentSubjectNames = useMemo(() => profile.subjects.map((s) => s.subjectName), [profile]);
 
-  const analysis = useMemo(() => {
-    const byScale: Partial<Record<RiasecLetter, number[]>> = {};
-    for (const it of RIASEC_ITEMS) { const r = responses[it.id]; if (r) (byScale[it.scale] ??= []).push(r); }
-    const studentProfile = buildStudentProfile(byScale);
-    const studentCode = codeFromProfile(studentProfile);
-    const valScore: Partial<Record<WorkValue, number>> = {};
-    for (const v of VALUE_ITEMS) { const r = valueResponses[v.id]; if (r) valScore[v.value] = (valScore[v.value] ?? 0) + r; }
-    const studentValues = (Object.entries(valScore).sort((a, b) => (b[1] as number) - (a[1] as number)).slice(0, 3).map((x) => x[0]) as WorkValue[]);
-    const scored = CAO_COURSES
-      .map((course) => {
-        const cr = COURSE_RIASEC[course.code];
-        if (!cr) return null;
-        const fit = scoreCourseFit({ studentProfile, studentCode, studentPoints, studentSubjects: studentSubjectNames, studentValues, course: { ...cr, typicalPoints: course.typicalPoints } });
-        return { course, fit };
-      })
-      .filter((x): x is { course: CAOCourse; fit: CourseFitResult } => x !== null)
-      .sort((a, b) => b.fit.fitR - a.fit.fitR);
-    const maxScale = Math.max(1, ...RIASEC_LETTERS.map((l) => studentProfile[l]));
-    return { studentProfile, studentCode, studentValues, maxScale, shown: scored.filter((s) => s.fit.fitBucket !== 'none').slice(0, 24) };
-  }, [responses, valueResponses, studentPoints, studentSubjectNames]);
+  const analysis = useMemo(
+    () => computeAnalysis(responses, valueResponses, studentPoints, studentSubjectNames),
+    [responses, valueResponses, studentPoints, studentSubjectNames],
+  );
 
   // Holds true between selecting an answer and the (brief) auto-advance, so the
   // orange selected state is actually visible and a fast double-tap can't skip
@@ -123,7 +143,14 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
     window.setTimeout(() => {
       advancingRef.current = false;
       if (idx + 1 >= questions.length) {
-        const next: FutureFinderRevampedState = { length, responses: q.kind === 'interest' ? { ...responses, [q.id]: val } : responses, valueResponses: q.kind === 'value' ? { ...valueResponses, [q.id]: val } : valueResponses, picks: savedPicks, compareCodes, completedAt: new Date().toISOString(), updatedAt: new Date().toISOString() };
+        // The final answer isn't in `responses` yet (setResponses above is
+        // async), so merge it in before scoring — otherwise the persisted
+        // ranking is computed one answer short of the one on screen.
+        const finalResponses = q.kind === 'interest' ? { ...responses, [q.id]: val } : responses;
+        const finalValues = q.kind === 'value' ? { ...valueResponses, [q.id]: val } : valueResponses;
+        const ranked = computeAnalysis(finalResponses, finalValues, studentPoints, studentSubjectNames)
+          .shown.slice(0, 10).map((s) => s.course.code);
+        const next: FutureFinderRevampedState = { length, responses: finalResponses, valueResponses: finalValues, picks: savedPicks, topMatches: ranked, compareCodes, completedAt: new Date().toISOString(), updatedAt: new Date().toISOString() };
         persist(next);
         setPhase('results');
       } else {
@@ -142,6 +169,8 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
       responses: saved?.responses ?? responses,
       valueResponses: saved?.valueResponses ?? valueResponses,
       picks,
+      // Carry the ranking through — a later bookmark toggle must not erase it.
+      topMatches: saved?.topMatches ?? [],
       compareCodes: compares,
       completedAt: saved?.completedAt ?? new Date().toISOString(),
       updatedAt: new Date().toISOString(),

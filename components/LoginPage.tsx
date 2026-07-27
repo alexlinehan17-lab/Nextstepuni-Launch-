@@ -362,7 +362,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         // forbidden from writing `school` by the /users create rule.
         const newName = cred.user.displayName || (cred.user.email?.split('@')[0]) || 'Student';
         const newAvatar = AVATAR_SEEDS[Math.floor(Math.random() * AVATAR_SEEDS.length)];
-        await setDoc(userRef, { name: newName, avatar: newAvatar });
+        await setDoc(userRef, { name: newName, avatar: newAvatar, createdAt: new Date().toISOString() });
         handleLoginSuccess({
           uid: cred.user.uid,
           name: newName,
@@ -376,6 +376,11 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         // Silent — user dismissed the popup
       } else if (err.code === 'auth/operation-not-allowed') {
         setError('Google sign-in is not enabled. Contact support.');
+      } else if (err?.code === 'permission-denied') {
+        // A Firestore rules rejection is NOT an auth failure — say so, or the
+        // real cause stays invisible behind a generic sign-in error.
+        console.error('Google sign-in: user doc write rejected by rules:', err);
+        setError('Signed in, but your profile could not be created. Please contact your school.');
       } else {
         console.error('Google sign-in failed:', err);
         setError('Could not sign in with Google. Try again or use email.');
@@ -432,7 +437,12 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         await setDoc(userRef, {
           name: newName,
           avatar: newAvatar,
-          school: '',
+          // NO `school` field. The /users create rule rejects the doc if the
+          // key is present AT ALL, whatever its value — so `school: ''` made
+          // this create fail permission-denied every time, and the catch below
+          // reported it as "Could not sign in with Apple" on a sign-in that had
+          // actually succeeded. The in-memory session passes school: '' itself.
+          createdAt: new Date().toISOString(),
           consent: {
             policyVersion: PRIVACY_POLICY_VERSION,
             acceptedAt: new Date().toISOString(),
@@ -445,6 +455,9 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       // The plugin rejects with code 'USER_CANCELLED' when the user dismisses the sheet.
       if (err?.code === 'USER_CANCELLED' || /cancel/i.test(err?.message || '')) {
         // Silent — user dismissed the Apple sheet
+      } else if (err?.code === 'permission-denied') {
+        console.error('Apple sign-in: user doc write rejected by rules:', err);
+        setError('Signed in, but your profile could not be created. Please contact your school.');
       } else {
         console.error('Apple sign-in failed:', err);
         setError('Could not sign in with Apple. Try again or use email.');
@@ -611,6 +624,10 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       await setDoc(doc(db, 'users', createdUser.uid), {
         name: name.trim(),
         avatar: selectedAvatar,
+        // Signup date on the user doc, not just on subjectProfile — a student
+        // who skips onboarding never gets a subjectProfile, and without any
+        // createdAt the GC's status classifier pinned them at "New" forever.
+        createdAt: new Date().toISOString(),
         // B4 (audit 2026-06-01): record acceptance of the transparency notice +
         // terms. The Art 8 parental consent itself is captured at school
         // enrolment (basis = school-enrolment); see compliance/DPIA.md.

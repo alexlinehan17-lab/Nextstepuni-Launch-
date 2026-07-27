@@ -41,7 +41,13 @@ export interface GCStudentFullData {
   streak: TimetableStreak | null;
   points: PointsData | null;
   timetableCompletions: TimetableCompletions | null;
-  futureFinder: { topPicks: string[]; completedAt: string } | null;
+  /** Course picks, unified across both Future Finder namespaces.
+   *  `source` tells the render layer what it is looking at:
+   *   - 'saved'  — the student's explicit bookmarks from the live tool
+   *                (save-order, NOT a ranking — don't print 1/2/3 badges)
+   *   - 'ranked' — the live tool's algorithmic top matches (a real ranking)
+   *   - 'legacy' — the retired Future Finder's list (may be stale) */
+  futureFinder: { topPicks: string[]; completedAt: string; source: 'saved' | 'ranked' | 'legacy' } | null;
   mockResults: MockResultEntry[] | null;
   recentDebriefs: DebriefEntry[] | null;
   /** College Compass checklist completions — the student's marks, read-only on the GC side. */
