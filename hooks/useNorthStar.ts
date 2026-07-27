@@ -6,6 +6,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { db, auth } from '../firebase';
+import { saveInBackground } from '../utils/firestoreWrite';
 import { type NorthStar } from '../types';
 
 export function useNorthStar() {
@@ -48,7 +49,7 @@ export function useNorthStar() {
     const uid = auth.currentUser?.uid;
     if (uid) {
       try {
-        await setDoc(doc(db, 'progress', uid), { northStar: ns }, { merge: true });
+        saveInBackground(setDoc(doc(db, 'progress', uid), { northStar: ns }, { merge: true }), 'useNorthStar.save');
       } catch (err) {
         console.error('Failed to save North Star:', err);
       }

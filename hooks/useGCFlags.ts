@@ -5,6 +5,7 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import { db } from '../firebase';
+import { saveInBackground } from '../utils/firestoreWrite';
 import { collection, getDocs, doc, setDoc, deleteDoc, Timestamp } from 'firebase/firestore';
 
 // ─── Types ──────────────────────────────────────────────────────────────────
@@ -59,45 +60,59 @@ export function useGCFlags(gcUid: string | undefined) {
       flaggedAt: Date.now(),
       priority: priority ?? 'normal',
     };
+    // The optimistic update was already here, but the awaited write had no
+    // rollback — so a rules rejection left the flag showing as saved when it
+    // wasn't. (Offline the await never settles at all, so the catch was dead.)
+    const previous = flags[studentUid];
     setFlags(prev => ({ ...prev, [studentUid]: data }));
-    try {
-      await setDoc(doc(db, 'gcFlags', gcUid, 'flaggedStudents', studentUid), {
+    saveInBackground(
+      setDoc(doc(db, 'gcFlags', gcUid, 'flaggedStudents', studentUid), {
         studentUid,
         flaggedAt: Timestamp.now(),
         priority: data.priority,
-      });
-    } catch (err) {
-      console.error('[useGCFlags] Failed to flag student:', err);
-    }
-  }, [gcUid]);
+      }),
+      'useGCFlags.flagStudent',
+      () => setFlags(prev => {
+        const next = { ...prev };
+        if (previous) next[studentUid] = previous; else delete next[studentUid];
+        return next;
+      }),
+    );
+  }, [gcUid, flags]);
 
   const unflagStudent = useCallback(async (studentUid: string) => {
     if (!gcUid) return;
+    const previous = flags[studentUid];
     setFlags(prev => {
       const next = { ...prev };
       delete next[studentUid];
       return next;
     });
-    try {
-      await deleteDoc(doc(db, 'gcFlags', gcUid, 'flaggedStudents', studentUid));
-    } catch (err) {
-      console.error('[useGCFlags] Failed to unflag student:', err);
-    }
-  }, [gcUid]);
+    saveInBackground(
+      deleteDoc(doc(db, 'gcFlags', gcUid, 'flaggedStudents', studentUid)),
+      'useGCFlags.unflagStudent',
+      () => { if (previous) setFlags(prev => ({ ...prev, [studentUid]: previous })); },
+    );
+  }, [gcUid, flags]);
 
   const updateFlagPriority = useCallback(async (studentUid: string, priority: FlagPriority) => {
     if (!gcUid) return;
+    const previousPriority = flags[studentUid]?.priority;
     setFlags(prev => {
       const existing = prev[studentUid];
       if (!existing) return prev;
       return { ...prev, [studentUid]: { ...existing, priority } };
     });
-    try {
-      await setDoc(doc(db, 'gcFlags', gcUid, 'flaggedStudents', studentUid), { priority }, { merge: true });
-    } catch (err) {
-      console.error('[useGCFlags] Failed to update flag priority:', err);
-    }
-  }, [gcUid]);
+    saveInBackground(
+      setDoc(doc(db, 'gcFlags', gcUid, 'flaggedStudents', studentUid), { priority }, { merge: true }),
+      'useGCFlags.updateFlagPriority',
+      () => setFlags(prev => {
+        const existing = prev[studentUid];
+        if (!existing || !previousPriority) return prev;
+        return { ...prev, [studentUid]: { ...existing, priority: previousPriority } };
+      }),
+    );
+  }, [gcUid, flags]);
 
   const isFlagged = useCallback((studentUid: string) => studentUid in flags, [flags]);
 

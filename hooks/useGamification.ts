@@ -6,6 +6,7 @@
 import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import { doc, getDoc, setDoc, arrayUnion, increment } from 'firebase/firestore';
 import { db } from '../firebase';
+import { saveInBackground } from '../utils/firestoreWrite';
 import { useProgress } from '../contexts/ProgressContext';
 import { type UserProgress, type NorthStar, type IslandState } from '../types';
 import { type StreakData } from './useStreak';
@@ -292,7 +293,10 @@ export function useGamification({
             if (totalBonus > 0) {
               updates.pointsData = { totalEarned: increment(totalBonus) };
             }
-            await setDoc(progressRef, updates, { merge: true });
+            // Fired, not awaited: offline this promise never settles, so the
+            // student unlocked an achievement and saw nothing — no toast, no
+            // points, no badge — until the next full reload.
+            saveInBackground(setDoc(progressRef, updates, { merge: true }), 'useGamification.unlockAchievements');
 
             // Update local state to match what was written
             setGamificationData(prev => ({

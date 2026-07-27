@@ -15,6 +15,7 @@ import { getSchoolName } from '../schoolData';
 import { type UserProgress, type PointsData, type CollegeCompassState, type UnifiedMockResult } from '../types';
 import { computeStreak } from './timetableAlgorithm';
 import { lastActiveDateFrom } from '../utils/weekDates';
+import { saveInBackground } from '../utils/firestoreWrite';
 import { type StudentSubjectProfile, type TimetableCompletions, type TimetableStreak } from './subjectData';
 import { type NorthStar } from '../types';
 import { type GameState } from './journeySimulatorData';
@@ -301,11 +302,12 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
     const entry: DismissedAlert = { dismissedAt: Date.now(), metricAtDismissal: alert.metric };
     const updated = { ...dismissedAlerts, [alert.id]: entry };
     setDismissedAlerts(updated);
-    try {
-      await setDoc(doc(db, 'gcSettings', school), { dismissedAlerts: updated }, { merge: true });
-    } catch (err) {
-      console.error('[GCAlerts] Failed to save dismissal:', err);
-    }
+    saveInBackground(
+      setDoc(doc(db, 'gcSettings', school), { dismissedAlerts: updated }, { merge: true }),
+      'GCDashboard.dismissAlert',
+      () => setDismissedAlerts(dismissedAlerts),
+      { silent: true },
+    );
   };
 
   // ── Compute alerts ──

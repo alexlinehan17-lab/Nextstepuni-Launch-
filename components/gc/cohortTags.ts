@@ -20,6 +20,7 @@
 
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { db } from '../../firebase';
+import { saveInBackground } from '../../utils/firestoreWrite';
 
 export const COHORT_TAGS = ['DEIS', 'At-risk', 'Priority'] as const;
 export type CohortTag = (typeof COHORT_TAGS)[number];
@@ -49,7 +50,10 @@ export async function loadCohortTags(school: string): Promise<TagMap> {
           const legacy = JSON.parse(raw) as TagMap;
           if (legacy && Object.keys(legacy).length > 0) {
             map = legacy;
-            await setDoc(doc(db, 'cohortTags', school), { tags: map });
+            // Fire, don't await — this runs inside the dashboard's initial
+            // load, and an unsettled write would stall the whole tag load.
+            saveInBackground(setDoc(doc(db, 'cohortTags', school), { tags: map }),
+              'cohortTags.migrateLegacy', undefined, { silent: true });
           }
           localStorage.removeItem(legacyKeyFor(school));
         }

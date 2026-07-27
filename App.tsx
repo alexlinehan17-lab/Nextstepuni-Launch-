@@ -25,6 +25,7 @@ import { type ModuleProgress, type NorthStar } from './types';
 import { useToast } from './components/Toast';
 import { ALL_COURSES, categoryTitles } from './courseData';
 import { filterCoursesForStudent } from './utils/courseVisibility';
+import { saveInBackground } from './utils/firestoreWrite';
 import { useSettings } from './hooks/useSettings';
 import { useTodaysFocus } from './hooks/useTodaysFocus';
 import { useStrategyMastery } from './hooks/useStrategyMastery';
@@ -205,10 +206,10 @@ const App: React.FC = () => {
       }
       // Atomic append (arrayUnion) so a concurrent purchase/claim can't clobber
       // these rank-up tiles via a whole-array overwrite. (audit item 18)
-      await updateDoc(doc(db, 'progress', uid), {
+      saveInBackground(updateDoc(doc(db, 'progress', uid), {
         'islandState.placements': arrayUnion(...tiles),
         'islandState.lastPurchaseTimestamp': now,
-      });
+      }), 'App.grantRankUpTiles', undefined, { silent: true });
     } catch (err) {
       console.error('Failed to grant rank-up tiles:', err);
     }
@@ -325,7 +326,18 @@ const App: React.FC = () => {
       if (pointsToAward > 0) {
         updates.pointsData = { totalEarned: increment(pointsToAward) };
       }
-      await setDoc(progressDocRef, updates, { merge: true });
+      // Fired, not awaited. Awaiting meant a student working through a module
+      // on bad wifi got no points, no achievement toasts and no weekly-goal
+      // credit — everything below sat behind a promise that never settles
+      // offline. The write itself queues and flushes on reconnect, and
+      // increment() is still resolved server-side at flush time, so concurrent
+      // section completions remain safe.
+      saveInBackground(
+        setDoc(progressDocRef, updates, { merge: true }),
+        'App.saveModuleProgress',
+        // Roll back optimistic update — restore the full previous object, not a minimal stub
+        () => setUserProgress(prev => ({ ...prev, [moduleId]: prevModuleProgress ?? { unlockedSection: 0 } })),
+      );
 
       pointsData.reload();
 
@@ -342,7 +354,7 @@ const App: React.FC = () => {
       gamification.reload();
     } catch (error) {
       console.error("Failed to save progress:", error);
-      showToast('Couldn\'t save your progress — check your connection', 'error');
+      showToast('Couldn\'t save your progress — please try again', 'error');
       // Roll back optimistic update — restore the full previous object, not a minimal stub
       setUserProgress(prev => ({ ...prev, [moduleId]: prevModuleProgress ?? { unlockedSection: 0 } }));
     }
@@ -392,63 +404,86 @@ const App: React.FC = () => {
 
   const handleOnboardingComplete = async (profile: StudentSubjectProfile, northStarData?: NorthStar, essentialsMode?: boolean) => {
     if (!user) return;
-    try {
-      const progressDocRef = doc(db, 'progress', user.uid);
-      const saveData: Record<string, any> = { subjectProfile: profile };
-      if (northStarData) {
-        saveData.northStar = northStarData;
-        saveData.islandState = createStarterState(northStarData.category);
-        setNorthStar(northStarData);
-      }
-      await setDoc(progressDocRef, saveData, { merge: true });
-      // Also save yearGroup + curriculumLevel to the users doc for GC dashboard
-      // filtering and content gating (Phase 1 JC plumbing).
-      if (profile.yearGroup) {
-        const userDocRef = doc(db, 'users', user.uid);
-        const userPatch: Record<string, any> = { yearGroup: profile.yearGroup };
-        if (profile.curriculumLevel) userPatch.curriculumLevel = profile.curriculumLevel;
-        await setDoc(userDocRef, userPatch, { merge: true });
-        // Mirror the write into the in-memory SessionUser so the rest of
-        // the app (Settings → School Year, GC dashboard filters, etc.)
-        // doesn't have to wait for the next sign-in to see the values.
-        patchUser({
-          yearGroup: profile.yearGroup,
-          curriculumLevel: profile.curriculumLevel,
-        });
-      }
-      // Save essentials mode preference to settings (use updateSetting to sync local state)
-      if (essentialsMode !== undefined) {
-        updateSetting('essentialsMode', essentialsMode);
-      }
-      // Trigger a Firestore re-fetch so local state matches the just-written
-      // doc. Defensive against any setter drift between handleOnboardingComplete
-      // and the next render — surfaced 2026-05-24 when JourneyView reported
-      // northStar=null right after a successful onboarding.
-      reloadProgress();
-      // Phase 8: if this was a JC→senior re-onboarding, clear the
-      // transition flag and show a celebratory toast. The flag-clear
-      // hands control back to the regular fresh-mode flow for any
-      // future re-runs (which wouldn't happen anyway).
-      if (transitionToSeniorMode) {
-        setTransitionToSeniorMode(false);
-        showToast('Welcome to senior cycle!', 'success');
-      }
-    } catch (err) {
+    // These writes are fired, NOT awaited.
+    //
+    // Awaiting them stranded any student who finished onboarding without a
+    // live connection: with persistentLocalCache a setDoc promise settles only
+    // on server acknowledgement, so offline it never resolves and never
+    // rejects. markOnboardingComplete() — the only thing that clears
+    // AppRouter's needsOnboarding gate — sat after the await, so the student
+    // tapped the final button and NOTHING happened: no navigation, no error,
+    // no spinner, and the catch below could never fire. The offline banner
+    // doesn't rescue it either, because it keys off navigator.onLine, which
+    // stays true on captive-portal school wifi — exactly the case that hangs.
+    //
+    // The writes themselves are safe: Firestore applies them to the local
+    // cache immediately and flushes them on reconnect. A rejection here is a
+    // REAL failure (rules, quota, malformed data), and only then do we roll
+    // back and return the student to onboarding — keeping the 2026-05-23
+    // lesson that a student must never end up "onboarded" with no profile.
+    const previousProfile = studentProfile;
+    const previousNorthStar = northStar;
+    const previousYearGroup = user.yearGroup;
+    const previousCurriculumLevel = user.curriculumLevel;
+
+    let rolledBack = false;
+    const rollback = (err: unknown) => {
+      if (rolledBack) return;
+      rolledBack = true;
       console.error('Failed to save subject profile:', err);
-      // Surface the actual Firebase error in the toast itself so silent
-      // bugs (rules rejection, App Check, quota, malformed data) can't
-      // hide behind a generic "check your connection" message. We saw a
-      // case on 2026-05-23 where this masked a real Firestore rules bug.
+      // Surface the actual Firebase error so silent bugs (rules rejection,
+      // App Check, quota, malformed data) can't hide behind a generic
+      // "check your connection" message.
       const rawMsg = err instanceof Error ? err.message : String(err);
-      // Truncate to keep the toast readable; full error still in console.
       const trimmed = rawMsg.length > 120 ? rawMsg.slice(0, 120) + '…' : rawMsg;
       showToast(`Couldn't save: ${trimmed}`, 'error');
-      // Don't navigate away on error — leave the user on the final
-      // onboarding step so they can hit Finish again after the issue
-      // is resolved. If we navigate, the user lands on the home screen
-      // with no profile and looks "onboarded" — which is exactly the
-      // confusing state that hid the rules bug for so long.
-      return;
+      setStudentProfile(previousProfile);
+      setNorthStar(previousNorthStar);
+      patchUser({ yearGroup: previousYearGroup, curriculumLevel: previousCurriculumLevel });
+      nav.navigateToOnboarding();
+    };
+
+    const progressDocRef = doc(db, 'progress', user.uid);
+    const saveData: Record<string, any> = { subjectProfile: profile };
+    if (northStarData) {
+      saveData.northStar = northStarData;
+      saveData.islandState = createStarterState(northStarData.category);
+      setNorthStar(northStarData);
+    }
+    setDoc(progressDocRef, saveData, { merge: true }).catch(rollback);
+
+    // Also save yearGroup + curriculumLevel to the users doc for GC dashboard
+    // filtering and content gating (Phase 1 JC plumbing).
+    if (profile.yearGroup) {
+      const userDocRef = doc(db, 'users', user.uid);
+      const userPatch: Record<string, any> = { yearGroup: profile.yearGroup };
+      if (profile.curriculumLevel) userPatch.curriculumLevel = profile.curriculumLevel;
+      setDoc(userDocRef, userPatch, { merge: true }).catch(rollback);
+      // Mirror the write into the in-memory SessionUser so the rest of
+      // the app (Settings → School Year, GC dashboard filters, etc.)
+      // doesn't have to wait for the next sign-in to see the values.
+      patchUser({
+        yearGroup: profile.yearGroup,
+        curriculumLevel: profile.curriculumLevel,
+      });
+    }
+    // Save essentials mode preference to settings (use updateSetting to sync local state)
+    if (essentialsMode !== undefined) {
+      updateSetting('essentialsMode', essentialsMode);
+    }
+    // Trigger a Firestore re-fetch so local state matches the just-written
+    // doc. Defensive against any setter drift between handleOnboardingComplete
+    // and the next render — surfaced 2026-05-24 when JourneyView reported
+    // northStar=null right after a successful onboarding. Safe offline: reads
+    // resolve from the persistent cache, which already holds the write above.
+    reloadProgress();
+    // Phase 8: if this was a JC→senior re-onboarding, clear the
+    // transition flag and show a celebratory toast. The flag-clear
+    // hands control back to the regular fresh-mode flow for any
+    // future re-runs (which wouldn't happen anyway).
+    if (transitionToSeniorMode) {
+      setTransitionToSeniorMode(false);
+      showToast('Welcome to senior cycle!', 'success');
     }
     setStudentProfile(profile);
     markOnboardingComplete();
@@ -460,7 +495,9 @@ const App: React.FC = () => {
     if (!user) return;
     try {
       const progressDocRef = doc(db, 'progress', user.uid);
-      await setDoc(progressDocRef, { northStar: ns }, { merge: true });
+      // setNorthStar already ran above — fire the write so an offline student
+      // still keeps their North Star on screen.
+      saveInBackground(setDoc(progressDocRef, { northStar: ns }, { merge: true }), 'App.saveNorthStar');
     } catch (err) {
       console.error('Failed to save North Star:', err);
       showToast('Couldn\'t save — check your connection', 'error');
@@ -485,14 +522,20 @@ const App: React.FC = () => {
   // stay junior; TY→5th, 5th→6th stay senior).
   const handleConfirmYearBump = async (next: YearGroup) => {
     if (!user) return;
-    try {
-      await setDoc(doc(db, 'users', user.uid), { yearGroup: next }, { merge: true });
-      patchUser({ yearGroup: next });
-      showToast(`Welcome to ${next === 'TY' ? 'TY' : next + ' Year'}!`, 'success');
-    } catch (err) {
-      console.error('Failed to bump year:', err);
-      showToast('Couldn\'t update — check your connection.', 'error');
-    }
+    // Optimistic: patch the session first, then fire the write. Awaiting it
+    // left the year-progression modal open forever offline — the promise never
+    // settles, so neither patchUser nor the toast ever ran.
+    const previousYearGroup = user.yearGroup;
+    patchUser({ yearGroup: next });
+    showToast(`Welcome to ${next === 'TY' ? 'TY' : next + ' Year'}!`, 'success');
+    saveInBackground(
+      setDoc(doc(db, 'users', user.uid), { yearGroup: next }, { merge: true }),
+      'App.confirmYearBump',
+      () => {
+        patchUser({ yearGroup: previousYearGroup });
+        showToast('Couldn\'t update your year — please try again.', 'error');
+      },
+    );
   };
 
   // JC → senior crossover: archive JC data, clear active JC fields,
@@ -500,46 +543,70 @@ const App: React.FC = () => {
   // wrapper so the user picks fresh senior subjects/grades/NS.
   const handleConfirmJCtoSenior = async (target: 'TY' | '5th') => {
     if (!user || !studentProfile) return;
-    try {
-      const now = new Date().toISOString();
-      // 1. Build the PastJCData archive from the current active state.
-      const archive: PastJCData = {
-        transitionedAt: now,
-        jcYearGroup: '3rd',
-        jcSubjects: studentProfile.subjects.map((s: StudentSubject) => ({ ...s })),
-        ...(northStar ? { jcNorthStar: northStar } : {}),
-      };
-      // 2. Write archive + new yearGroup + senior curriculumLevel to users/{uid}.
-      await setDoc(doc(db, 'users', user.uid), {
-        yearGroup: target,
-        curriculumLevel: 'senior',
-        pastJCData: archive,
-      }, { merge: true });
-      patchUser({ yearGroup: target, curriculumLevel: 'senior' });
-      // 3. Clear the active progress doc fields that need re-onboarding:
-      //    subjectProfile (will be rebuilt with LC subjects) and northStar
-      //    (will be rebuilt with senior NS).
-      await setDoc(doc(db, 'progress', user.uid), {
-        subjectProfile: null,
-        northStar: null,
-      }, { merge: true });
-      // 4. Flip local state and open the transition re-onboarding shell.
-      setStudentProfile(null);
-      setNorthStar(null);
-      setTransitionToSeniorMode(true);
-      // Onboarding gate in AppRouter will catch needsOnboarding=true and
-      // render Onboarding. The transitionToSeniorMode flag passes through
-      // to switch the flow to Subjects → Grades → NS.
-      // We need to mark onboarding as needed again so the gate fires.
-      // markOnboardingNeeded is set via the progressDoc subjectProfile=null
-      // write above; AuthContext's loadedData.needsOnboarding derives
-      // from that, but it won't auto-refresh — trigger a reload.
-      reloadProgress();
-      nav.navigateToOnboarding();
-    } catch (err) {
+    // Both writes are fired, not awaited. Awaiting them offline left the
+    // student in the worst possible state: the modal stayed open, nothing
+    // happened, and re-tapping re-ran the whole archive-and-clear. Because the
+    // archive is built from CURRENT state, a half-applied retry could also
+    // archive an already-cleared profile.
+    //
+    // Ordering matters here. The archive write must be issued BEFORE local
+    // state is nulled, so `studentProfile` is still populated when we read it.
+    // Both writes hit the local cache synchronously, so the archive is durable
+    // (queued) before we clear anything — offline included.
+    const now = new Date().toISOString();
+    // 1. Build the PastJCData archive from the current active state.
+    const archive: PastJCData = {
+      transitionedAt: now,
+      jcYearGroup: '3rd',
+      jcSubjects: studentProfile.subjects.map((s: StudentSubject) => ({ ...s })),
+      ...(northStar ? { jcNorthStar: northStar } : {}),
+    };
+
+    const previousProfile = studentProfile;
+    const previousNorthStar = northStar;
+    const previousYearGroup = user.yearGroup;
+    const previousCurriculumLevel = user.curriculumLevel;
+    let rolledBack = false;
+    const rollback = (err: unknown) => {
+      if (rolledBack) return;
+      rolledBack = true;
       console.error('Failed to transition to senior cycle:', err);
-      showToast('Couldn\'t update — check your connection.', 'error');
-    }
+      showToast('Couldn\'t move you up a year — please try again.', 'error');
+      setStudentProfile(previousProfile);
+      setNorthStar(previousNorthStar);
+      setTransitionToSeniorMode(false);
+      patchUser({ yearGroup: previousYearGroup, curriculumLevel: previousCurriculumLevel });
+      nav.navigateToTree();
+    };
+
+    // 2. Write archive + new yearGroup + senior curriculumLevel to users/{uid}.
+    setDoc(doc(db, 'users', user.uid), {
+      yearGroup: target,
+      curriculumLevel: 'senior',
+      pastJCData: archive,
+    }, { merge: true }).catch(rollback);
+    patchUser({ yearGroup: target, curriculumLevel: 'senior' });
+    // 3. Clear the active progress doc fields that need re-onboarding:
+    //    subjectProfile (will be rebuilt with LC subjects) and northStar
+    //    (will be rebuilt with senior NS).
+    setDoc(doc(db, 'progress', user.uid), {
+      subjectProfile: null,
+      northStar: null,
+    }, { merge: true }).catch(rollback);
+    // 4. Flip local state and open the transition re-onboarding shell.
+    setStudentProfile(null);
+    setNorthStar(null);
+    setTransitionToSeniorMode(true);
+    // Onboarding gate in AppRouter will catch needsOnboarding=true and
+    // render Onboarding. The transitionToSeniorMode flag passes through
+    // to switch the flow to Subjects → Grades → NS.
+    // We need to mark onboarding as needed again so the gate fires.
+    // markOnboardingNeeded is set via the progressDoc subjectProfile=null
+    // write above; AuthContext's loadedData.needsOnboarding derives
+    // from that, but it won't auto-refresh — trigger a reload. Safe offline:
+    // reads resolve from the persistent cache, which holds the writes above.
+    reloadProgress();
+    nav.navigateToOnboarding();
   };
 
   // Graduation: write yearGroup='graduated'. No sign-out, no special
@@ -547,14 +614,17 @@ const App: React.FC = () => {
   // soft post-LC label on next render.
   const handleConfirmGraduate = async () => {
     if (!user) return;
-    try {
-      await setDoc(doc(db, 'users', user.uid), { yearGroup: 'graduated' }, { merge: true });
-      patchUser({ yearGroup: 'graduated' });
-      showToast('Best of luck with what\'s next.', 'success');
-    } catch (err) {
-      console.error('Failed to mark graduated:', err);
-      showToast('Couldn\'t update — check your connection.', 'error');
-    }
+    const previousYearGroup = user.yearGroup;
+    patchUser({ yearGroup: 'graduated' });
+    showToast('Best of luck with what\'s next.', 'success');
+    saveInBackground(
+      setDoc(doc(db, 'users', user.uid), { yearGroup: 'graduated' }, { merge: true }),
+      'App.confirmGraduate',
+      () => {
+        patchUser({ yearGroup: previousYearGroup });
+        showToast('Couldn\'t update — please try again.', 'error');
+      },
+    );
   };
 
   const handleChangeSubjectsSave = async (profile: StudentSubjectProfile) => {
@@ -585,10 +655,10 @@ const App: React.FC = () => {
     setDismissedGuides(prev => ({ ...prev, [guideId]: new Date().toISOString() }));
     if (user?.uid) {
       try {
-        await setDoc(doc(db, 'progress', user.uid),
+        saveInBackground(setDoc(doc(db, 'progress', user.uid),
           { dismissedGuides: { [guideId]: new Date().toISOString() } },
           { merge: true }
-        );
+        ), 'App.dismissGuide', undefined, { silent: true });
       } catch (err) {
         console.error('Failed to persist guide dismissal:', err);
         showToast('Couldn\'t save — check your connection', 'error');

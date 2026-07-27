@@ -8,6 +8,7 @@ import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import { CalendarPlus, Trash2, Calendar, ChevronDown, Plus, X } from 'lucide-react';
 import { db } from '../../firebase';
+import { saveInBackground } from '../../utils/firestoreWrite';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 
 // ─── Types ──────────────────────────────────────────────────────────────────
@@ -159,13 +160,14 @@ export const GCKeyEvents: React.FC<GCKeyEventsProps> = ({ school, studentContext
   }, [school]);
 
   // Save events
-  const saveEvents = async (updated: SchoolEvent[]) => {
+  const saveEvents = (updated: SchoolEvent[]) => {
+    const previous = events;
     setEvents(updated);
-    try {
-      await setDoc(doc(db, 'gcEvents', school), { events: updated }, { merge: true });
-    } catch (err) {
-      console.error('[GCKeyEvents] Failed to save:', err);
-    }
+    saveInBackground(
+      setDoc(doc(db, 'gcEvents', school), { events: updated }, { merge: true }),
+      'GCKeyEvents.saveEvents',
+      () => setEvents(previous),
+    );
   };
 
   const handleAdd = () => {

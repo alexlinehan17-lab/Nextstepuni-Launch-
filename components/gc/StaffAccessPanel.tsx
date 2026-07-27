@@ -6,6 +6,7 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { db } from '../../firebase';
+import { saveInBackground } from '../../utils/firestoreWrite';
 import { KeyRound, Copy, Check, RefreshCw, ShieldCheck } from 'lucide-react';
 import { getSchoolName } from '../../schoolData';
 
@@ -55,16 +56,19 @@ export const StaffAccessPanel: React.FC<{ school: string }> = ({ school }) => {
   const regenerate = useCallback(async () => {
     setSaving(true); setError(''); setCopied(false);
     const next = generateCode();
-    try {
-      await setDoc(doc(db, 'gcSettings', school), { staffCode: next }, { merge: true });
-      setCode(next);
-    } catch (err) {
-      console.error('[StaffAccess] failed to save code:', err);
-      setError('Could not save the new code. Try again.');
-    } finally {
-      setSaving(false);
-    }
-  }, [school]);
+    const previous = code;
+    // Show the new code at once and clear the spinner — awaiting the write left
+    // the button stuck on "Saving…" forever on a throttled school network,
+    // with no code shown and no error.
+    setCode(next);
+    setSaving(false);
+    saveInBackground(
+      setDoc(doc(db, 'gcSettings', school), { staffCode: next }, { merge: true }),
+      'StaffAccess.regenerateCode',
+      () => { setCode(previous); setError('Could not save the new code. Try again.'); },
+      { silent: true },
+    );
+  }, [school, code]);
 
   const copy = useCallback(async () => {
     if (!code) return;

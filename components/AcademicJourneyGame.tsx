@@ -4,12 +4,12 @@
 */
 
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { useToast } from './Toast';
 import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv, MotionPolygon, MotionSpan } from './Motion';
 import { Lock } from 'lucide-react';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
+import { saveInBackground } from '../utils/firestoreWrite';
 import {
     type GameState, type Choice, type HistoryItem, type StatKey, type Phase,
     type Location,
@@ -918,7 +918,6 @@ function strongestStat(state: GameState): StatKey {
 // ════════════════════════════════════════════════════════════════════════════
 
 const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => void; user?: { uid: string } | null; savedJourneyResult?: JourneyResult | null; onJourneyComplete?: (result: JourneyResult) => void }> = ({ onSelectModule, user, savedJourneyResult, onJourneyComplete }) => {
-    const { showToast } = useToast();
     const [gameState, setGameState] = useState<GameState>({ ...INITIAL_GAME_STATE });
     const [_prevState, setPrevState] = useState<GameState>({ ...INITIAL_GAME_STATE });
     const [currentSceneId, setCurrentSceneId] = useState('START');
@@ -960,31 +959,23 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
     useEffect(() => {
         if (!isEndScene || hasSavedRef.current) return;
         hasSavedRef.current = true;
-        let cancelled = false;
         const result = { endingId: currentSceneId, finalStats: gameState };
         setPreviousResult(result);
         onJourneyComplete?.(result);
         if (user?.uid) {
-            const saveResult = async () => {
-                try {
-                    const progressDocRef = doc(db, 'progress', user.uid);
-                    await setDoc(progressDocRef, {
-                        'journey-simulator': {
-                            completedAt: new Date().toISOString(),
-                            endingId: currentSceneId,
-                            finalStats: gameState,
-                            decisionsCount: history.length,
-                        }
-                    }, { merge: true });
-                } catch (err) {
-                    if (cancelled) return;
-                    console.error('Failed to save journey result:', err);
-                    showToast('Couldn\'t save — check your connection', 'error');
-                }
-            };
-            saveResult();
+            const progressDocRef = doc(db, 'progress', user.uid);
+            saveInBackground(
+                setDoc(progressDocRef, {
+                    'journey-simulator': {
+                        completedAt: new Date().toISOString(),
+                        endingId: currentSceneId,
+                        finalStats: gameState,
+                        decisionsCount: history.length,
+                    }
+                }, { merge: true }),
+                'AcademicJourneyGame.saveResult',
+            );
         }
-        return () => { cancelled = true; };
     }, [isEndScene, user?.uid, currentSceneId, gameState, history.length]);
 
     const handleChoice = useCallback((choice: Choice) => {

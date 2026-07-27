@@ -11,6 +11,7 @@ import PrimaryActionButton from '../ui/PrimaryActionButton';
 import PointsExplainer from '../PointsExplainer';
 import { doc, updateDoc, arrayUnion, getDoc } from 'firebase/firestore';
 import { db } from '../../firebase';
+import { saveInBackground } from '../../utils/firestoreWrite';
 import { type SessionUser } from '../../utils/authUtils';
 import { type StudentSubjectProfile } from '../subjectData';
 import { type UserProgress, type StrategyMasteryMap, type MasteryTier, type StudyReflection } from '../../types';
@@ -302,9 +303,11 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     await session.saveSession(10, selectedStrategies);
     // Save debrief entry
     try {
-      await updateDoc(doc(db, 'progress', user.uid), {
+      // Fired, not awaited: a student finishing a debrief on bad wifi would
+      // otherwise never reach the completion screen below.
+      saveInBackground(updateDoc(doc(db, 'progress', user.uid), {
         studyDebriefs: arrayUnion(fullEntry),
-      });
+      }), 'StudySessionView.saveDebrief');
     } catch (err) {
       console.error('Failed to save debrief:', err);
     }

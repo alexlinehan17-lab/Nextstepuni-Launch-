@@ -6,6 +6,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { collection, doc, getDocs, increment, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
+import { saveInBackground } from '../utils/firestoreWrite';
 import { useProgress } from '../contexts/ProgressContext';
 import { getWeekNumber, getWeekStartDate } from '../gamificationConfig';
 import { getWeeklyChallenge, type WeeklyChallengeDefinition } from '../weeklyChallengeData';
@@ -120,15 +121,18 @@ export function useWeeklyChallenge(uid: string | undefined): WeeklyChallengeStat
 
   const claimReward = useCallback(async () => {
     if (!uid || isClaimed || !challenge) return;
-    try {
-      await setDoc(doc(db, 'progress', uid), {
+    // Marked claimed immediately, then the write is fired. Awaiting it left the
+    // Claim button spinning forever offline (a setDoc promise only settles on
+    // server ack), so the student could never collect a reward they had earned.
+    if (isMountedRef.current) setIsClaimed(true);
+    saveInBackground(
+      setDoc(doc(db, 'progress', uid), {
         pointsData: { totalEarned: increment(challenge.rewardPoints) },
         weeklyChallengeRewards: { [challenge.id]: new Date().toISOString() },
-      }, { merge: true });
-      if (isMountedRef.current) setIsClaimed(true);
-    } catch (err) {
-      console.error('Failed to claim weekly challenge reward:', err);
-    }
+      }, { merge: true }),
+      'useWeeklyChallenge.claimReward',
+      () => { if (isMountedRef.current) setIsClaimed(false); },
+    );
   }, [uid, isClaimed, challenge?.id, challenge?.rewardPoints]);
 
   const isCompleted = challenge ? current >= challenge.target : false;

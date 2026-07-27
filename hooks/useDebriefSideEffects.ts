@@ -5,6 +5,7 @@
 
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
+import { saveInBackground } from '../utils/firestoreWrite';
 import { type UnifiedConfidence } from '../types';
 import { type DebriefEntry } from '../components/StudyDebrief';
 import { qualityFromDebrief, updateSM2, initSM2States, type SubjectSM2State } from '../components/timetableAlgorithm';
@@ -101,7 +102,7 @@ export async function processDebriefSideEffects(
 
     // 3. Write all updates at once
     if (Object.keys(updates).length > 0) {
-      await setDoc(progressRef, updates, { merge: true });
+      saveInBackground(setDoc(progressRef, updates, { merge: true }), 'useDebriefSideEffects.save');
     }
   } catch (err) {
     console.error('Failed to process debrief side effects:', err);

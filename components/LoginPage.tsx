@@ -14,6 +14,7 @@ import { signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfi
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { getFunctions, httpsCallable } from 'firebase/functions';
 import { type SessionUser, getAvatarUrl, AVATAR_SEEDS } from '../utils/authUtils';
+import { awaitWriteOrTimeout } from '../utils/firestoreWrite';
 import { SCHOOLS } from '../schoolData';
 import { LegalModal, type LegalDoc, PRIVACY_POLICY_VERSION, CONSENT_BASIS } from './legal/LegalModal';
 
@@ -238,6 +239,23 @@ interface LoginPageProps {
   handleLoginSuccess: (u: SessionUser) => void;
 }
 
+/**
+ * Write a user doc during sign-up without the possibility of an infinite stall.
+ *
+ * These writes run immediately after a successful Auth call, so the client is
+ * essentially always online here — but a connection can drop in the gap, and a
+ * Firestore write promise settles only on SERVER acknowledgement, so a plain
+ * await could hang the registration screen forever with no error.
+ *
+ * A bounded wait keeps the existing contract: a genuine rejection still throws
+ * (so handleRegisterSubmit's deleteUser rollback still fires), while a write
+ * that is merely queued resolves normally — it will flush on reconnect.
+ */
+async function writeUserDoc(write: Promise<void>, context: string): Promise<void> {
+  const outcome = await awaitWriteOrTimeout(write, context, 8000);
+  if (outcome === 'failed') throw new Error(`${context}: write rejected`);
+}
+
 const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   // ── Top-level mode ──
   const [view, setView] = useState<'welcome' | 'login' | 'register' | 'gc' | 'staff' | 'forgot'>('welcome');
@@ -362,7 +380,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         // forbidden from writing `school` by the /users create rule.
         const newName = cred.user.displayName || (cred.user.email?.split('@')[0]) || 'Student';
         const newAvatar = AVATAR_SEEDS[Math.floor(Math.random() * AVATAR_SEEDS.length)];
-        await setDoc(userRef, { name: newName, avatar: newAvatar, createdAt: new Date().toISOString() });
+        await writeUserDoc(setDoc(userRef, { name: newName, avatar: newAvatar, createdAt: new Date().toISOString() }), 'LoginPage.googleCreateUserDoc');
         handleLoginSuccess({
           uid: cred.user.uid,
           name: newName,
@@ -434,7 +452,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         // (basis = school-enrolment). See compliance/DPIA.md.
         const newName = appleName || cred.user.displayName || 'Student';
         const newAvatar = AVATAR_SEEDS[Math.floor(Math.random() * AVATAR_SEEDS.length)];
-        await setDoc(userRef, {
+        await writeUserDoc(setDoc(userRef, {
           name: newName,
           avatar: newAvatar,
           // NO `school` field. The /users create rule rejects the doc if the
@@ -448,7 +466,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
             acceptedAt: new Date().toISOString(),
             basis: CONSENT_BASIS,
           },
-        });
+        }), 'LoginPage.appleCreateUserDoc');
         handleLoginSuccess({ uid: cred.user.uid, name: newName, avatar: newAvatar, school: '', role: 'student' });
       }
     } catch (err: any) {
@@ -539,7 +557,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       // server-side by claimStaffAccess (clients can't write either), so the
       // client write carries neither.
       const selectedAvatar = AVATAR_SEEDS[Math.floor(Math.random() * AVATAR_SEEDS.length)];
-      await setDoc(doc(db, 'users', uid), { name: name.trim(), avatar: selectedAvatar }, { merge: true });
+      await writeUserDoc(setDoc(doc(db, 'users', uid), { name: name.trim(), avatar: selectedAvatar }, { merge: true }), 'LoginPage.staffAccessUserDoc');
       // Redeem the code — server verifies + grants role:'staff' and sets school.
       const claimFn = httpsCallable<{ school: string; code: string }, { success: boolean }>(getFunctions(app), 'claimStaffAccess');
       await claimFn({ school, code: staffCode.trim() });
@@ -621,7 +639,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       // throws here and the account is rolled back below.
       const joinFn = httpsCallable<{ school: string; code: string }, { success: boolean }>(getFunctions(app), 'claimStudentSchool');
       await joinFn({ school, code: joinCode.trim() });
-      await setDoc(doc(db, 'users', createdUser.uid), {
+      await writeUserDoc(setDoc(doc(db, 'users', createdUser.uid), {
         name: name.trim(),
         avatar: selectedAvatar,
         // Signup date on the user doc, not just on subjectProfile — a student
@@ -636,7 +654,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           acceptedAt: new Date().toISOString(),
           basis: CONSENT_BASIS,
         },
-      }, { merge: true });
+      }, { merge: true }), 'LoginPage.registerUserDoc');
       handleLoginSuccess({
         uid: createdUser.uid,
         name: name.trim(),

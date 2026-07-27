@@ -70,10 +70,8 @@ export async function loadGuardianConsent(uid: string): Promise<GuardianConsent 
   }
 }
 
-export async function saveGuardianConsent(uid: string, consent: GuardianConsent): Promise<void> {
-  try {
-    await setDoc(doc(db, 'settings', uid), { guardianSummary: consent }, { merge: true });
-  } catch {
-    /* degrade silently */
-  }
+export function saveGuardianConsent(uid: string, consent: GuardianConsent): Promise<void> {
+  // See data/assignments.saveAssignments — return the promise, don't await or
+  // swallow it. The caller chooses the offline-safe wrapper.
+  return setDoc(doc(db, 'settings', uid), { guardianSummary: consent }, { merge: true });
 }

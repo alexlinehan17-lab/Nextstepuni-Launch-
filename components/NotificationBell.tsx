@@ -78,16 +78,18 @@ const NotificationBell: React.FC<NotificationBellProps> = ({ uid, onUnreadCountC
   const newItems = notifications.filter(n => !n.read);
   const earlierItems = notifications.filter(n => n.read).slice(0, 20);
 
-  const handleMarkRead = async (id: string) => {
-    await markNotificationRead(uid, id);
+  // Mark-read updates the UI first. Awaiting the write meant a tap did nothing
+  // visible offline — the badge stayed lit until a reload.
+  const handleMarkRead = (id: string) => {
     setNotifications(prev => prev.map(n => n.id === id ? { ...n, read: true } : n));
     onUnreadCountChange?.(Math.max(0, unreadCount - 1));
+    void markNotificationRead(uid, id);
   };
 
-  const handleMarkAllRead = async () => {
-    await markAllRead(uid);
+  const handleMarkAllRead = () => {
     setNotifications(prev => prev.map(n => ({ ...n, read: true })));
     onUnreadCountChange?.(0);
+    void markAllRead(uid);
   };
 
   return (

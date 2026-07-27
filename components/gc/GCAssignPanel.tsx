@@ -9,6 +9,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { Plus, Trash2 } from 'lucide-react';
+import { saveInBackground } from '../../utils/firestoreWrite';
 import {
   ASSIGNMENTS_LIVE,
   loadAssignments,
@@ -30,7 +31,6 @@ const GCAssignPanel: React.FC<{ school: string; gcName?: string }> = ({ school, 
   const [title, setTitle] = useState('');
   const [kind, setKind] = useState<AssignmentKind>('topic');
   const [dueIso, setDueIso] = useState('');
-  const [busy, setBusy] = useState(false);
 
   useEffect(() => {
     if (!ASSIGNMENTS_LIVE) return;
@@ -40,10 +40,16 @@ const GCAssignPanel: React.FC<{ school: string; gcName?: string }> = ({ school, 
   if (!ASSIGNMENTS_LIVE) return null;
 
   const persist = async (next: Assignment[]) => {
-    setBusy(true);
+    // No busy flag around the write: awaiting it left the panel permanently
+    // disabled on a throttled school network, because a write promise only
+    // settles on server ack. The list updates instantly and the save queues.
+    const previous = items;
     setItems(next);
-    await saveAssignments(school, next);
-    setBusy(false);
+    saveInBackground(
+      saveAssignments(school, next),
+      'GCAssignPanel.saveAssignments',
+      () => setItems(previous),
+    );
   };
   const add = () => {
     if (!title.trim()) return;
@@ -74,7 +80,7 @@ const GCAssignPanel: React.FC<{ school: string; gcName?: string }> = ({ school, 
             {KINDS.map(x => <option key={x.k} value={x.k}>{x.label}</option>)}
           </select>
           <input type="date" value={dueIso} onChange={e => setDueIso(e.target.value)} className="px-3 py-2 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-sm" />
-          <button onClick={add} disabled={!title.trim() || busy} className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-sm font-medium disabled:opacity-40">
+          <button onClick={add} disabled={!title.trim()} className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-sm font-medium disabled:opacity-40">
             <Plus size={15} /> Assign
           </button>
         </div>

@@ -4,6 +4,7 @@
  */
 
 import { db } from '../../firebase';
+import { awaitWriteOrTimeout } from '../../utils/firestoreWrite';
 import { doc, getDoc, runTransaction } from 'firebase/firestore';
 
 // ─── Types ──────────────────────────────────────────────────────────────────
@@ -54,7 +55,7 @@ export async function getNotifications(uid: string): Promise<AppNotification[]> 
 export async function addNotification(uid: string, notification: Omit<AppNotification, 'id' | 'timestamp' | 'read'>): Promise<void> {
   const ref = doc(db, 'notifications', uid);
   try {
-    await runTransaction(db, async (txn) => {
+    await awaitWriteOrTimeout(runTransaction(db, async (txn) => {
       const snap = await txn.get(ref);
       const existing: AppNotification[] = snap.exists() ? (snap.data().items || []) : [];
       const newItem: AppNotification = {
@@ -65,7 +66,7 @@ export async function addNotification(uid: string, notification: Omit<AppNotific
       };
       const updated = [newItem, ...existing].slice(0, MAX_ITEMS);
       txn.set(ref, { items: updated });
-    });
+    }), 'gcNotifications.txn');
   } catch (err) {
     console.error('Failed to add notification:', err);
   }
@@ -75,13 +76,13 @@ export async function addNotification(uid: string, notification: Omit<AppNotific
 export async function markNotificationRead(uid: string, notificationId: string): Promise<void> {
   const ref = doc(db, 'notifications', uid);
   try {
-    await runTransaction(db, async (txn) => {
+    await awaitWriteOrTimeout(runTransaction(db, async (txn) => {
       const snap = await txn.get(ref);
       if (!snap.exists()) return;
       const items: AppNotification[] = snap.data().items || [];
       const updated = items.map(n => n.id === notificationId ? { ...n, read: true } : n);
       txn.set(ref, { items: updated });
-    });
+    }), 'gcNotifications.txn');
   } catch (err) {
     console.error('Failed to mark notification read:', err);
   }
@@ -91,13 +92,13 @@ export async function markNotificationRead(uid: string, notificationId: string):
 export async function markAllRead(uid: string): Promise<void> {
   const ref = doc(db, 'notifications', uid);
   try {
-    await runTransaction(db, async (txn) => {
+    await awaitWriteOrTimeout(runTransaction(db, async (txn) => {
       const snap = await txn.get(ref);
       if (!snap.exists()) return;
       const items: AppNotification[] = snap.data().items || [];
       const updated = items.map(n => ({ ...n, read: true }));
       txn.set(ref, { items: updated });
-    });
+    }), 'gcNotifications.txn');
   } catch (err) {
     console.error('Failed to mark all read:', err);
   }

@@ -32,6 +32,7 @@ import {
   where,
 } from 'firebase/firestore';
 import { db } from '../../firebase';
+import { saveInBackground } from '../../utils/firestoreWrite';
 import type { CohortAgg, CohortRule, MissDelta } from './store';
 
 const codeId = (code: string) => code.trim().toLowerCase();
@@ -68,7 +69,10 @@ export async function submitToCohortRemote(code: string, deltas: MissDelta[]): P
   const c = code.trim();
   if (!c) return;
   try {
-    await setDoc(cohortDoc(c), { submissions: increment(1) }, { merge: true });
+    // Best-effort by contract — fired, not awaited, so an offline student is
+    // never blocked waiting for a class-aggregate write to be acknowledged.
+    saveInBackground(setDoc(cohortDoc(c), { submissions: increment(1) }, { merge: true }),
+      'cohortSync.submitToCohortRemote', undefined, { silent: true });
     await Promise.all(
       collapse(deltas).map(d =>
         setDoc(
@@ -159,10 +163,13 @@ export async function submitDailyBucket(code: string, day: string, bucket: numbe
   const b = Math.max(0, Math.min(10, Math.round(bucket)));
   if (!c || !day) return;
   try {
-    await setDoc(
-      doc(dailyCol(c), `${day}-b${b}`),
-      { day, bucket: b, n: increment(1) },
-      { merge: true },
+    saveInBackground(
+      setDoc(
+        doc(dailyCol(c), `${day}-b${b}`),
+        { day, bucket: b, n: increment(1) },
+        { merge: true },
+      ),
+      'cohortSync.submitDailyBucket', undefined, { silent: true },
     );
   } catch (err) {
     console.error('[Chair] daily duel submit failed:', err);

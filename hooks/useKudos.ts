@@ -6,6 +6,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { collection, query, where, orderBy, limit, getDocs, addDoc, serverTimestamp, Timestamp } from 'firebase/firestore';
 import { db } from '../firebase';
+import { awaitWriteOrTimeout } from '../utils/firestoreWrite';
 import { KUDOS_MESSAGES } from '../kudosData';
 import { firstName } from '../utils/firstName';
 
@@ -87,7 +88,11 @@ export function useKudos(uid?: string) {
   ): Promise<boolean> => {
     if (!uid) return false;
     try {
-      await addDoc(collection(db, 'kudos'), {
+      // Bounded wait, not an open-ended await: a write promise only settles on
+      // server ack, so offline the Send button used to spin forever. A queued
+      // write WILL reach the peer on reconnect, so 'pending' counts as sent —
+      // only an outright rejection is a failure.
+      const outcome = await awaitWriteOrTimeout(addDoc(collection(db, 'kudos'), {
         fromUid: uid,
         // Peers see first name only (data minimisation, 2026-07-18).
         fromName: firstName(fromName),
@@ -95,8 +100,8 @@ export function useKudos(uid?: string) {
         school,
         messageId,
         createdAt: serverTimestamp(),
-      });
-      return true;
+      }), 'useKudos.sendKudos');
+      return outcome !== 'failed';
     } catch (err) {
       console.error('[useKudos] Failed to send kudos:', err);
       return false;

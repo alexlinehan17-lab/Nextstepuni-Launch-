@@ -8,7 +8,6 @@ import { motion } from 'framer-motion';
 import { ArrowLeft, Eye, EyeOff, Check } from 'lucide-react';
 import { useNavigation } from '../contexts/NavigationContext';
 import { useAuth } from '../contexts/AuthContext';
-import { useToast } from './Toast';
 import { type SessionUser, isLcaYear, isSchoolStaff } from '../utils/authUtils';
 import { LoadingSpinner } from './LoadingSpinner';
 import { KnowledgeTree, type CategoryType } from './KnowledgeTree';
@@ -42,6 +41,7 @@ import { type GamificationState, type AchievementDefinition } from '../gamificat
 import { type CourseData } from './Library';
 import { doc, setDoc, arrayUnion } from 'firebase/firestore';
 import { db } from '../firebase';
+import { saveInBackground } from '../utils/firestoreWrite';
 
 const Onboarding = lazy(() => import('./Onboarding'));
 const JCComingSoon = lazy(() => import('./JCComingSoon'));
@@ -187,7 +187,6 @@ export interface AppRouterProps {
 }
 
 const AppRouter: React.FC<AppRouterProps> = (props) => {
-  const { showToast } = useToast();
   const nav = useNavigation();
   const { viewState, currentCategory, currentModuleId, cameFromJourney } = nav.state;
   const { user, userResolved, needsOnboarding, handleLoginSuccess, handleLogout } = useAuth();
@@ -322,16 +321,16 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
           timetableBlock={timetableBlockContext}
           onTimetableBlockComplete={async (dateKey, blockId, _actualMinutes) => {
             if (!user?.uid) return;
-            try {
-              // arrayUnion is atomic — concurrent tabs can't clobber each other's completions
-              const progressRef = doc(db, 'progress', user.uid);
-              await setDoc(progressRef, {
+            // arrayUnion is atomic — concurrent tabs can't clobber each other's
+            // completions. Fired, not awaited: a student finishing a study
+            // session offline would otherwise never see the block clear.
+            const progressRef = doc(db, 'progress', user.uid);
+            saveInBackground(
+              setDoc(progressRef, {
                 timetableCompletions: { [dateKey]: arrayUnion(blockId) },
-              }, { merge: true });
-            } catch (err) {
-              console.error('Failed to auto-complete timetable block:', err);
-              showToast('Couldn\'t save — check your connection', 'error');
-            }
+              }, { merge: true }),
+              'AppRouter.autoCompleteTimetableBlock',
+            );
             setTimetableBlockContext(null);
           }}
         />

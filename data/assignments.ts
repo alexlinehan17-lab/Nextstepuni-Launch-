@@ -68,19 +68,15 @@ export async function loadAssignments(school: string): Promise<Assignment[]> {
 }
 
 /** GC-only: write the school's full assignment list. */
-export async function saveAssignments(school: string, items: Assignment[]): Promise<void> {
-  try {
-    await setDoc(doc(db, 'assignments', school), { items });
-  } catch {
-    /* permission denied until rules deployed — surfaced by the caller */
-  }
+export function saveAssignments(school: string, items: Assignment[]): Promise<void> {
+  // Returns the write promise WITHOUT awaiting or swallowing. Awaiting here
+  // would hang offline (a write settles only on server ack), and the empty
+  // catch silently ate rules rejections — which made the caller's rollback
+  // dead code. The caller decides: saveInBackground() or awaitWriteOrTimeout().
+  return setDoc(doc(db, 'assignments', school), { items });
 }
 
 /** Student marks an assignment done in their own progress doc (self-write). */
-export async function markAssignmentComplete(uid: string, assignmentId: string, now: number): Promise<void> {
-  try {
-    await setDoc(doc(db, 'progress', uid), { assignmentCompletions: { [assignmentId]: now } }, { merge: true });
-  } catch {
-    /* degrade silently */
-  }
+export function markAssignmentComplete(uid: string, assignmentId: string, now: number): Promise<void> {
+  return setDoc(doc(db, 'progress', uid), { assignmentCompletions: { [assignmentId]: now } }, { merge: true });
 }

@@ -6,6 +6,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { collection, query, where, orderBy, limit, getDocs, writeBatch, doc, serverTimestamp, Timestamp, increment } from 'firebase/firestore';
 import { db } from '../firebase';
+import { saveInBackground, awaitWriteOrTimeout } from '../utils/firestoreWrite';
 import { type ShopItem } from '../types';
 import { SHOP_CATALOG } from '../islandShopData';
 import { firstName } from '../utils/firstName';
@@ -121,8 +122,10 @@ export function useGifts(uid?: string) {
         'pointsData.totalSpent': increment(item.price),
       });
 
-      await batch.commit();
-      return true;
+      // Bounded wait — see useKudos.sendKudos. A queued batch still reaches the
+      // recipient on reconnect, so only an outright rejection is a failure.
+      const outcome = await awaitWriteOrTimeout(batch.commit(), 'useGifts.sendGift');
+      return outcome !== 'failed';
     } catch (err) {
       console.error('[useGifts] Failed to send gift:', err);
       return false;
@@ -131,14 +134,19 @@ export function useGifts(uid?: string) {
 
   // Mark a gift as placed
   const markGiftPlaced = useCallback(async (giftId: string): Promise<void> => {
-    try {
-      const batch = writeBatch(db);
-      batch.update(doc(db, 'gifts', giftId), { status: 'placed' });
-      await batch.commit();
-      if (isMountedRef.current) setPendingGifts(prev => prev.filter(g => g.id !== giftId));
-    } catch (err) {
-      console.error('[useGifts] Failed to mark gift placed:', err);
-    }
+    const batch = writeBatch(db);
+    batch.update(doc(db, 'gifts', giftId), { status: 'placed' });
+    // Remove from the pending list immediately; batch.commit() has the same
+    // server-ack semantics as any other write, so awaiting it meant the gift
+    // stayed stuck in "pending" offline and the student could place it twice.
+    const removed = giftId;
+    if (isMountedRef.current) setPendingGifts(prev => prev.filter(g => g.id !== removed));
+    saveInBackground(
+      batch.commit(),
+      'useGifts.markGiftPlaced',
+      undefined,
+      { silent: true },
+    );
   }, []);
 
   return { pendingGifts, isLoading, canSendGiftToday, sendGift, markGiftPlaced, GIFTABLE_ITEMS };
