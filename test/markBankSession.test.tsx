@@ -24,7 +24,7 @@ import SessionScreen, {
   showsRowMarks,
   suggestGrade,
 } from '@/components/MarkBank/SessionScreen';
-import type { MarkRow, SecCard, SecDiagramCard } from '@/types/markBank';
+import { tariffReconciles, type MarkRow, type SecCard, type SecDiagramCard } from '@/types/markBank';
 import type { CardMemory } from '@/components/MarkBank/scheduler';
 
 const NOW = Date.UTC(2026, 6, 30, 12, 0, 0);
@@ -136,6 +136,44 @@ describe('mark arithmetic follows the scheme, not a convenient default', () => {
   test('a card with no routes is unaffected', () => {
     expect(committedRoute(card(), { r0: 'yes' })).toBe(null);
     expect(marksClaimed(card(), { r0: 'yes', r1: 'yes' })).toBe(4);
+  });
+
+  test('the reachable total counts the routes once, not both', () => {
+    // Summing every row states a total no student can reach, and then tells one
+    // who answered a full route perfectly that they left half the marks behind.
+    const c = card({
+      totalMarks: 6,
+      rows: [
+        row({ id: 'a1', verbatim: 'Route A first point', marks: 3, route: 'a' }),
+        row({ id: 'a2', verbatim: 'Route A second point', marks: 3, route: 'a' }),
+        row({ id: 'b1', verbatim: 'Route B, in one step', marks: 6, route: 'b' }),
+      ],
+    });
+    expect(claimableTotal(c)).toBe(6);
+    expect(tariffReconciles(c)).toBe(true);
+    // A row outside both routes is claimable whichever route is taken.
+    const withCommon = card({
+      totalMarks: 8,
+      rows: [
+        row({ id: 'r0', verbatim: 'Claimable either way', marks: 2 }),
+        row({ id: 'a1', verbatim: 'Route A', marks: 6, route: 'a' }),
+        row({ id: 'b1', verbatim: 'Route B', marks: 6, route: 'b' }),
+      ],
+    });
+    expect(claimableTotal(withCommon)).toBe(8);
+    expect(tariffReconciles(withCommon)).toBe(true);
+  });
+
+  test('a route that cannot reach the tariff fails the check', () => {
+    // Each route must be a complete answer on its own. One that falls short is a
+    // transcription error, not a cheaper way to the same marks.
+    expect(tariffReconciles(card({
+      totalMarks: 6,
+      rows: [
+        row({ id: 'a1', verbatim: 'Route A', marks: 6, route: 'a' }),
+        row({ id: 'b1', verbatim: 'Route B, short', marks: 3, route: 'b' }),
+      ],
+    }))).toBe(false);
   });
 
   test('a synonym claim earns the mark', () => {

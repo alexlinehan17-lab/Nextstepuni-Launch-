@@ -189,6 +189,40 @@ const isContentFree = (v) => {
 };
 
 /**
+ * Whether a card's rows add up to the tariff the paper prints.
+ *
+ * Mirrors tariffReconciles in types/markBank.ts, including its handling of the
+ * double solidus: mutually exclusive routes are counted ONCE and each must reach
+ * the tariff alone, because a student takes one route or the other. Checked here
+ * so a bad card is DROPPED with a reason rather than failing the whole suite.
+ */
+function tariffFault(c) {
+  const t = c.tariffModel ?? { kind: 'fixed' };
+  if (t.kind === 'orderedSplit') {
+    return c.rows.every(r => r.marks === null || r.marks === undefined)
+      ? null : 'an ordered split cannot give rows their own marks';
+  }
+  if (t.kind === 'bestNofParts') {
+    return t.answer * t.perPart === c.totalMarks
+      ? null : `best-of tariff ${t.answer}x${t.perPart} does not make ${c.totalMarks}`;
+  }
+  const worth = (r) => (r.kind === 'anyN' && r.group ? r.group.claimMax * r.group.perOption : (r.marks ?? 0));
+  const byRoute = new Map();
+  let common = 0;
+  for (const r of c.rows) {
+    if (!r.route) common += worth(r);
+    else byRoute.set(r.route, (byRoute.get(r.route) ?? 0) + worth(r));
+  }
+  if (!byRoute.size) {
+    return common === c.totalMarks ? null : `rows sum to ${common}, tariff is ${c.totalMarks}`;
+  }
+  const short = [...byRoute.entries()].filter(([, n]) => common + n !== c.totalMarks);
+  return short.length
+    ? `route ${short.map(([k, n]) => `"${k}" sums to ${common + n}`).join(', ')}, tariff is ${c.totalMarks}`
+    : null;
+}
+
+/**
  * One card per question.
  *
  * A question first carded without its diagram, then re-carded once a verified
@@ -227,6 +261,9 @@ for (const c of cards) {
 
   const badQ = badQuestion(c.questionText);
   if (badQ) { dropped.push(`${c.id}: ${badQ} — "${c.questionText}"`); continue; }
+
+  const badTariff = tariffFault(c);
+  if (badTariff) { dropped.push(`${c.id}: ${badTariff}`); continue; }
 
   // A question naming lettered parts is unanswerable without the figure.
   const invitesDrawing = /you may include a labelled/i.test(c.questionText);

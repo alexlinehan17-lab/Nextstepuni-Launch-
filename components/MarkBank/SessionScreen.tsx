@@ -96,14 +96,28 @@ export function rowMarks(row: MarkRow): number {
   return row.marks ?? 0;
 }
 
-/** Total marks a student can claim on this card. Falls back to the printed
- *  tariff when the scheme leaves per-row values undefined. */
+/**
+ * Total marks a student can claim on this card. Falls back to the printed tariff
+ * when the scheme leaves per-row values undefined.
+ *
+ * Mutually exclusive routes are counted ONCE. A question the scheme answers two
+ * ways with a // offers both routes' rows, but a student may only take one, so
+ * summing every row states a total nobody can reach — and then tells a student
+ * who answered a full route perfectly that they left half the marks behind.
+ */
 export function claimableTotal(card: SecCard): number {
   if (card.tariffModel.kind === 'orderedSplit') return card.totalMarks;
   if (card.tariffModel.kind === 'bestNofParts') {
     return card.tariffModel.answer * card.tariffModel.perPart;
   }
-  return card.rows.reduce((n, r) => n + rowMarks(r), 0);
+  const byRoute = new Map<string, number>();
+  let common = 0;
+  for (const r of card.rows) {
+    // A row outside every route is claimable whichever route is taken.
+    if (!r.route) common += rowMarks(r);
+    else byRoute.set(r.route, (byRoute.get(r.route) ?? 0) + rowMarks(r));
+  }
+  return common + Math.max(0, ...byRoute.values());
 }
 
 /** Only a `fixed` tariff may show per-row mark chips: for the other conventions

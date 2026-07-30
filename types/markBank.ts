@@ -322,9 +322,16 @@ export function tariffReconciles(card: SecCard): boolean {
   if (t.kind === 'orderedSplit') return rows.every(r => r.marks === null);
   if (t.kind === 'bestNofParts') return t.answer * t.perPart === totalMarks;
   // Asterisked rows count: the asterisk constrains the wording, not the value.
-  const sum = rows.reduce((n, r) => {
-    if (r.kind === 'anyN' && r.group) return n + r.group.claimMax * r.group.perOption;
-    return n + (r.marks ?? 0);
-  }, 0);
-  return sum === totalMarks;
+  const worth = (r: MarkRow) =>
+    r.kind === 'anyN' && r.group ? r.group.claimMax * r.group.perOption : (r.marks ?? 0);
+  // Mutually exclusive routes are counted ONCE, and each must reach the tariff on
+  // its own — a student takes one route or the other, never a total of both.
+  const byRoute = new Map<string, number>();
+  let common = 0;
+  for (const r of rows) {
+    if (!r.route) common += worth(r);
+    else byRoute.set(r.route, (byRoute.get(r.route) ?? 0) + worth(r));
+  }
+  if (!byRoute.size) return common === totalMarks;
+  return [...byRoute.values()].every(n => common + n === totalMarks);
 }
