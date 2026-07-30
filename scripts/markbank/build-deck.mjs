@@ -149,12 +149,34 @@ const isContentFree = (v) => {
   return /^(named piece of apparatus( used)?|control named( and setup described)?|safety precaution described|correct (sketch|matching result|position)|suitable (time|temperature|volume)|left for a (suitable )?time|any correct|the description earns|description how|matching result)/.test(t);
 };
 
+/**
+ * One card per question.
+ *
+ * A question first carded without its diagram, then re-carded once a verified
+ * figure existed, would otherwise ship twice — and the figureless version is the
+ * broken one: "Explain how you know the ventricles are contracting" cannot be
+ * answered without seeing which diagram is meant. Where two cards claim the same
+ * question, the one carrying a figure wins.
+ */
+const byQuestion = new Map();
+for (const c of cards) {
+  const prev = byQuestion.get(c.questionRef);
+  if (!prev) { byQuestion.set(c.questionRef, c); continue; }
+  const prevHasFigure = Boolean(prev.figureKey);
+  const thisHasFigure = Boolean(c.figureKey);
+  if (thisHasFigure && !prevHasFigure) byQuestion.set(c.questionRef, c);
+}
+
 const out = [];
 const dropped = [];
 const seenId = new Set();
 const seenHash = new Map();
 
 for (const c of cards) {
+  if (byQuestion.get(c.questionRef) !== c) {
+    dropped.push(`${c.id}: superseded for ${c.questionRef} by a card carrying its figure`);
+    continue;
+  }
   if (seenId.has(c.id)) { dropped.push(`${c.id}: duplicate id`); continue; }
 
   const contentFree = c.rows.filter(r => r.kind !== 'anyN' && isContentFree(r.verbatim));
@@ -170,8 +192,10 @@ for (const c of cards) {
   const invitesDrawing = /you may include a labelled/i.test(c.questionText);
   const namesLetters = !invitesDrawing
     && /\blabelled [A-Z]\b|\bstructures? [A-Z](,| and )|\bparts? [A-Z](,| and )|\blabelled\s+(parts|structures)\b/i.test(c.questionText);
-  if (namesLetters && !c.figureKey) {
-    dropped.push(`${c.id}: names lettered parts but carries no figure`);
+  // Not merely "has a figure": a question about labelled parts needs those
+  // labels DECODED, so it must be a full diagram card with a label key.
+  if (namesLetters && !(c.figureKey && Array.isArray(c.labelKey) && c.labelKey.length)) {
+    dropped.push(`${c.id}: names lettered parts but carries no labelled figure`);
     continue;
   }
 
