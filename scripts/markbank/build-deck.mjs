@@ -27,7 +27,7 @@ const FIG_DIR = 'public/exam-figures/biology';
  *  question asks about. Never bindable. Mirrors BLOCKED_FIGURES in deck.ts. */
 const BLOCKED = new Set([
   'alveolus-gas-exchange', 'lymphocyte', 'shoulder-joint', 'neuron',
-  'root-longitudinal-section',
+  'root-longitudinal-section', 'cell-membrane',
 ]);
 
 /**
@@ -36,11 +36,15 @@ const BLOCKED = new Set([
  * is how Diagram Vault ended up confidently captioning bread mould as an alveolus.
  */
 const ALT = {
-  'digestive-system': 'Outline of a human torso showing the digestive tract. A leader line marks the tube running down the neck and chest; a second marks an organ below the liver. The pancreas and small intestine are named on the diagram.',
-  'rhizopus': 'Rhizopus growing on a substrate: rounded heads on upright stalks, a cluster of small spores being released at the right, and a horizontal filament running across the surface.',
-  'cell-division': 'A cell late in division: two daughter nuclei have formed, each with chromosomes drawn on a spindle, and the cell is pinching in at the middle.',
-  'circulatory-system': 'A whole-body circulatory diagram: the heart at the centre, lungs above, and vessels running to the liver, gut, kidneys and the capillary beds of the head and lower body.',
-  'pupil-eyes': 'Two eyes side by side, drawn identically except that the pupil is small in the left and much larger in the right.',
+  "digestive-system": "Outline of a human torso showing the digestive tract. A leader line marks the tube running down the neck and chest; a second marks an organ below the liver. The pancreas and small intestine are named on the diagram.",
+  "rhizopus": "Rhizopus growing on a substrate: rounded heads on upright stalks, a cluster of small spores being released at the right, and a horizontal filament running across the surface.",
+  "cell-division": "A cell late in division: two daughter nuclei have formed, each with chromosomes drawn on a spindle, and the cell is pinching in at the middle.",
+  "circulatory-system": "A whole-body circulatory diagram: the heart at the centre, lungs above, and vessels running to the liver, gut, kidneys and the capillary beds of the head and lower body.",
+  "pupil-eyes": "Two eyes side by side, drawn identically except that the pupil is small in the left and much larger in the right.",
+  "mitochondrion": "Cross-section of a mitochondrion: a smooth outer membrane and an inner membrane folded into long finger-like cristae, with small dots scattered through the interior.",
+  "chloroplast": "Cross-section of a chloroplast: an outer envelope enclosing four stacks of disc-shaped compartments joined by flattened channels, with small dots in the surrounding fluid. No parts are lettered.",
+  "embryo-sac": "A carpel in section on the left, with an arrow enlarging its ovule on the right. Inside the enlarged ovule, leader lines mark P at a pair of central nuclei and Q at a cell below them.",
+  "fermenter": "Photograph of an industrial stainless-steel fermenter: a sealed cylindrical vessel on a wheeled frame, with pipework, valves and gauges around it. No parts are lettered.",
 };
 
 const cardsPath = process.argv[2];
