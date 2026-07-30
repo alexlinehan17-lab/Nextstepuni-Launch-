@@ -23,7 +23,12 @@ import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { createHash } from 'node:crypto';
 
-import { SAMPLE_CARDS, STRANDS, ALL_TOPICS, BLOCKED_FIGURES } from '../components/MarkBank/deck';
+import { STRANDS, ALL_TOPICS, BLOCKED_FIGURES } from '../components/MarkBank/deck';
+import { CARDS as HIGHER } from '../components/MarkBank/cards/higher';
+import { CARDS as ORDINARY } from '../components/MarkBank/cards/ordinary';
+
+/** The whole deck. The app loads one level at a time; the guards check both. */
+const SAMPLE_CARDS = [...HIGHER, ...ORDINARY];
 import {
   isDiagramCard, isContentFreeRow, looksLikeSectionLabel, tariffReconciles,
   MAX_ROWS, isValidCardId,

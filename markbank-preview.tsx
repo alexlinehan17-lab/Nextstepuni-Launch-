@@ -20,10 +20,10 @@ import {
   NEW_CARD, RETENTION_BASE, grade as gradeCard, intervalWords,
   type CardMemory,
 } from '@/components/MarkBank/scheduler';
-import { SAMPLE_CARDS } from '@/components/MarkBank/deck';
+import { CARDS as SAMPLE_CARDS } from '@/components/MarkBank/cards/higher';
 import type { SecCard } from '@/types/markBank';
 
-const CARDS: SecCard[] = SAMPLE_CARDS;
+const CARDS: SecCard[] = SAMPLE_CARDS.slice(0, 12);
 
 const seenAWeekAgo = (): CardMemory => ({
   s: 6, d: 5, last: Date.now() - 6 * 86_400_000, reps: 3, lapses: 0, state: 2,
@@ -35,7 +35,7 @@ const Harness: React.FC = () => {
   const [width, setWidth] = useState(390);
   const [run, setRun] = useState(0);
   const [memories, setMemories] = useState<Record<string, CardMemory>>(
-    () => Object.fromEntries(SAMPLE_CARDS.map(c => [c.id, seenAWeekAgo()])),
+    () => Object.fromEntries(CARDS.map(c => [c.id, seenAWeekAgo()])),
   );
   const [log, setLog] = useState<string[]>([]);
 

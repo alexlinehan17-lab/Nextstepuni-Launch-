@@ -25,9 +25,7 @@ import {
   NEW_CARD, dueAt, grade as gradeCard, intervalWords,
   isDue, planSession, retentionFor, retrievability,
 } from './scheduler';
-import {
-  IS_SAMPLE_DECK, SAMPLE_CARDS, STRANDS, cardsForTopic, topicMarks,
-} from './deck';
+import { STRANDS, cardsForTopic, loadCards, topicMarks } from './deck';
 import {
   commitReview, ensureDeck, fetchDeck, mergeDecks, readLocal, writeLocal,
   type DeckState,
@@ -114,8 +112,22 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
     return () => { cancelled = true; };
   }, [uid, deckId]);
 
-  const cards = useMemo(() => SAMPLE_CARDS.filter(c => c.level === level), [level]);
-  const levelUnbuilt = cards.length === 0;
+  // Cards for the current level only, fetched on demand so a student never
+  // downloads the level they are not sitting.
+  const [cards, setCards] = useState<SecCard[]>([]);
+  const [cardsLoading, setCardsLoading] = useState(true);
+  useEffect(() => {
+    let cancelled = false;
+    setCardsLoading(true);
+    loadCards(level).then(loaded => {
+      if (cancelled) return;
+      setCards(loaded);
+      setCardsLoading(false);
+    });
+    return () => { cancelled = true; };
+  }, [level]);
+
+  const levelUnbuilt = !cardsLoading && cards.length === 0;
   const memories = deck.cards;
   const retention = retentionFor(now(), deck.examTs);
 
@@ -147,6 +159,11 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
     subset.reduce((n, c) => (memories[c.id]?.last ? n + c.totalMarks : n), 0), [memories]);
 
   const totalMarks = cards.reduce((n, c) => n + c.totalMarks, 0);
+  const examYears = useMemo(() => {
+    const years = [...new Set(cards.map(c => c.year))].sort();
+    if (!years.length) return '';
+    return years.length === 1 ? `${years[0]}` : `${years[0]}\u2013${years[years.length - 1]}`;
+  }, [cards]);
 
   const startSession = (topicId?: string) => {
     const pool = topicId ? cards.filter(c => c.topicId === topicId) : cards;
@@ -483,14 +500,13 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
           <MarkBar secure={secure} met={met} total={totalMarks} />
         </button>
 
-        {IS_SAMPLE_DECK && (
+        {cards.length > 0 && (
           <div style={{ marginTop: 16, padding: '13px 15px', background: PLATE, borderRadius: 12 }}>
-            <Eyebrow>Sample deck</Eyebrow>
+            <Eyebrow>What&rsquo;s in here</Eyebrow>
             <p style={{ margin: '6px 0 0', font: `400 12.5px/1.5 ${SANS}`, color: INK_2 }}>
-              These {SAMPLE_CARDS.length} cards exist so the tool can be walked through before authoring
-              begins. Their marking points are quoted from real SEC schemes; the diagram is a labelled
-              placeholder. Topics are the twelve units of the redeveloped specification, first examined
-              June 2027.
+              {cards.length} questions from the {examYears} Leaving Certificate papers, each one marked
+              against the real State Examinations Commission scheme. Topics follow the redeveloped
+              Biology specification, first examined in June 2027.
             </p>
           </div>
         )}

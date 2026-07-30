@@ -21,7 +21,7 @@
  */
 
 import type { SecCard, SecDiagramCard } from '../../types/markBank';
-import { AUTHORED_CARDS } from './cards';
+
 
 export interface TopicRef {
   id: string;
@@ -263,18 +263,25 @@ const HAND_BUILT: SecCard[] = [
   digestiveParts, peristalsis, rhizopus, rhizopusSexual, scientificMethod,
 ];
 
-const generatedRefs = new Set(AUTHORED_CARDS.map(c => c.questionRef));
-export const SAMPLE_CARDS: SecCard[] = [
-  ...AUTHORED_CARDS,
-  ...HAND_BUILT.filter(c => !generatedRefs.has(c.questionRef)),
-];
+/**
+ * Cards for one level, loaded on demand.
+ *
+ * A student is on Higher or Ordinary, never both, so the two levels are separate
+ * modules and only the one in front of the student is fetched. Shipping the whole
+ * deck in a single chunk would make every student download the half they will
+ * never open, and that cost grows with each authoring wave.
+ */
+export async function loadCards(level: 'higher' | 'ordinary'): Promise<SecCard[]> {
+  const mod = level === 'higher'
+    ? await import('./cards/higher')
+    : await import('./cards/ordinary');
+  const refs = new Set(mod.CARDS.map(c => c.questionRef));
+  return [...mod.CARDS, ...HAND_BUILT.filter(c => c.level === level && !refs.has(c.questionRef))];
+}
 
-/** True while the deck covers one paper rather than the full syllabus. */
-export const IS_SAMPLE_DECK = true;
-
-export const cardsForTopic = (topicId: string, cards: SecCard[] = SAMPLE_CARDS) =>
+export const cardsForTopic = (topicId: string, cards: SecCard[]) =>
   cards.filter(c => c.topicId === topicId);
 
 /** Total marks available in a topic — the denominator for "marks secure". */
-export const topicMarks = (topicId: string, cards: SecCard[] = SAMPLE_CARDS) =>
+export const topicMarks = (topicId: string, cards: SecCard[]) =>
   cardsForTopic(topicId, cards).reduce((n, c) => n + c.totalMarks, 0);
