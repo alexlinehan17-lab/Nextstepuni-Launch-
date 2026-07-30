@@ -5082,5 +5082,33 @@ export const AUTHORED_CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Growth", marks: 3, accepts: ["repair (of tissue)"] },
     ],
   } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2025, level: "higher",
+    paperFileid: "LC025ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Higher Level — © State Examinations Commission.",
+    id: "bio-2025-hl-q4-ab", topicId: "bio-1-3", conceptId: "cell-membrane-structure",
+    section: "A", questionRef: "2025 HL Q4(a)-(b)",
+    stem: "The diagram below shows part of the ultrastructure of a cell membrane.",
+    questionText: "Name the parts labelled X and Y. Give a function of the cell membrane.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
+    rows: [
+    { id: "r-x", kind: "point", verbatim: "X — Phospholipid", marks: 2 },
+    { id: "r-y", kind: "point", verbatim: "Y — Protein", marks: 2 },
+    { id: "r-fn", kind: "point", verbatim: "Controls what substances pass through", marks: 3 },
+    ],
+    figure: {
+          "candId": "biology-2025-hl-cell-membrane-labelled",
+          "src": "/exam-figures/biology/biology-2025-hl-cell-membrane-labelled.png",
+          "srcHash": "e9ce456edc6edb2282b34fe9021d2c70",
+          "alt": "Cross-section of a cell membrane: a curved phospholipid bilayer with proteins embedded in and across it. A brace marks X at the bilayer itself on the left, and an arrow marks Y at a protein spanning the membrane.",
+          "attribution": "SEC Leaving Certificate Biology 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "X",
+                "Y"
+          ]
+    },
+    labelKey: [{"letter":"X","meaning":"Phospholipid","askedInThisQuestion":true},{"letter":"Y","meaning":"Protein","askedInThisQuestion":true}],
+  } as SecCard,
 ];
 
