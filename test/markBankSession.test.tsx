@@ -401,6 +401,47 @@ describe('grading', () => {
     expect(onFinish).toHaveBeenCalledWith([expect.objectContaining({ cardId: 'bio-2025-hl-q6-ab', grade: 'got' })]);
   });
 
+  test('a missed card really does come back, even when it is not the last one', () => {
+    // Regression: the re-queued card was appended and then discarded by a
+    // "finished" heuristic unless it happened to be last, silently killing the
+    // one mechanic that brings a failed card back.
+    const three = [card(), card({ id: 'bio-q7', questionText: 'Second.' }), card({ id: 'bio-q8', questionText: 'Third.' })];
+    const { onFinish } = renderSession(three, {});
+    // Miss the first, then answer the other two.
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    fireEvent.click(screen.getByRole('button', { name: 'Missed it' }));
+    for (const q of ['Second.', 'Third.']) {
+      expect(screen.getByText(q)).toBeInTheDocument();
+      fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+      fireEvent.click(screen.getByRole('button', { name: 'Got it' }));
+    }
+    // The missed card must be served again before the session can end.
+    expect(onFinish).not.toHaveBeenCalled();
+    expect(screen.getByText('Name the parts labelled A and B.')).toBeInTheDocument();
+  });
+
+  test('an asterisked row shows the marks it is worth', () => {
+    // Regression: gate rows were treated as worth zero, so their chip was
+    // suppressed — but the scheme awards "A: *Sporangium 1".
+    const c = card({
+      totalMarks: 4,
+      rows: [row({ id: 'g', kind: 'gate', verbatim: 'Sporangium', marks: 1, exactTermRequired: true }), row({ id: 'r1', verbatim: 'Stomach', marks: 3 })],
+    });
+    renderSession([c], { 'bio-2025-hl-q6-ab': seen });
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    expect(screen.getByText('−1m')).toBeInTheDocument();
+  });
+
+  test('reports no total for a card whose scheme defines no per-row marks', () => {
+    // Otherwise the close screen reads "0 of 20 marks" for a card the student
+    // may have answered perfectly.
+    const c = card({ tariffModel: { kind: 'orderedSplit', notation: '2(5) + 5(2)' }, totalMarks: 20 });
+    const { onGrade } = renderSession([c], { 'bio-2025-hl-q6-ab': seen });
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    fireEvent.click(screen.getByRole('button', { name: 'Got it' }));
+    expect(onGrade).toHaveBeenCalledWith(expect.objectContaining({ marksClaimed: 0, marksAvailable: 0 }));
+  });
+
   test('a missed card comes back later in the same sitting', () => {
     const two = [card(), card({ id: 'bio-2025-hl-q7', questionText: 'Second question.' })];
     const { onFinish } = renderSession(two, { 'bio-2025-hl-q6-ab': seen, 'bio-2025-hl-q7': seen });

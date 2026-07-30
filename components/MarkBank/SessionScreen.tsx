@@ -221,7 +221,6 @@ const MarkRowView: React.FC<{
 }> = ({ row, id, index, claim, showMarks, blocked, reduced, picks, onClaim, onPick }) => {
   const claimed = claim !== 'no';
   const marks = rowMarks(row);
-  const isGate = row.kind === 'gate';
   const canSynonym = !row.exactTermRequired && (row.openList || row.kind === 'alt');
 
   // A bounded "Any four 4(3)" group. The scheme lets a student bank any four of
@@ -367,7 +366,7 @@ const MarkRowView: React.FC<{
           )}
         </span>
 
-        {showMarks && !isGate && (
+        {showMarks && (
           <span style={{
             font: `700 10.5px/1.7 ${MONO}`, borderRadius: 6, padding: '0 6px', whiteSpace: 'nowrap',
             fontVariantNumeric: 'tabular-nums',
@@ -505,7 +504,12 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const commit = useCallback((grade: MarkBankGrade) => {
     if (!card) return;
     const result: SessionCardResult = {
-      cardId: card.id, grade, marksClaimed: got, marksAvailable: total,
+      cardId: card.id, grade,
+      marksClaimed: got,
+      // Where the scheme leaves per-row values undefined we score no marks, so
+      // we must not report a total either — otherwise the close screen reads
+      // "0 of 20 marks" for a card the student may have answered perfectly.
+      marksAvailable: showsRowMarks(card) ? total : 0,
     };
     const words = onGrade(result);
     const nextResults = [...results, result];
@@ -531,17 +535,18 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     );
 
     // "Missed it" re-serves the card at the end of the sitting, so the number of
-    // presentations exceeds twelve while the number of distinct cards does not.
+    // presentations exceeds the session size while the number of DISTINCT cards
+    // does not. The session simply ends when the queue runs out — an earlier
+    // "finished" heuristic discarded the re-queued card unless it was last, which
+    // silently broke the one mechanic that makes a missed card come back.
     const nextQueue = grade === 'missed' ? [...queue, card.id] : queue;
-    const seen = new Set(nextResults.map(r => r.cardId));
-    const finished = nextQueue.slice(position + 1).every(id => seen.has(id) && grade !== 'missed');
 
     setQueue(nextQueue);
     setClaims({});
     setPicks({});
     setRevealed(false);
 
-    if (position + 1 >= nextQueue.length || finished) onFinish(nextResults);
+    if (position + 1 >= nextQueue.length) onFinish(nextResults);
     else setPosition(position + 1);
   }, [card, got, total, onGrade, results, queue, position, onFinish]);
 
@@ -635,7 +640,10 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               </p>
               <button
                 type="button"
-                onClick={() => setRevealed(true)}
+                // Clear any lingering interval whisper: it shares the bottom bar with
+                // the grade buttons, so a student who moves quickly would otherwise
+                // reveal the next card and find no way to grade it for a second.
+                onClick={() => { setWhisper(null); setRevealed(true); }}
                 style={{
                   width: '100%', padding: '13px 18px', borderRadius: 14,
                   background: INK, color: '#FFFFFF', border: 'none',

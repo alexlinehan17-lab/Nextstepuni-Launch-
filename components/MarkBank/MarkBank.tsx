@@ -29,7 +29,7 @@ import {
   IS_SAMPLE_DECK, SAMPLE_CARDS, STRANDS, cardsForTopic, topicMarks,
 } from './deck';
 import {
-  commitReview, fetchDeck, mergeDecks, readLocal, writeLocal,
+  commitReview, ensureDeck, fetchDeck, mergeDecks, readLocal, writeLocal,
   type DeckState,
 } from './store';
 import type { SecCard } from '../../types/markBank';
@@ -97,11 +97,16 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
   useEffect(() => {
     let cancelled = false;
     setLoaded(false);
-    const local = readLocal(uid, deckId);
-    setDeck(local);
+    setDeck(readLocal(uid, deckId));
+    // The deck document must exist before any per-card updateDoc: updateDoc
+    // fails on a missing document, and those writes are fired and never awaited,
+    // so without this every single review was silently lost.
+    ensureDeck(uid, deckId, Date.now());
     fetchDeck(uid, deckId).then(remote => {
       if (cancelled) return;
-      const merged = mergeDecks(local, remote);
+      // Re-read rather than closing over the snapshot taken before the fetch —
+      // a grade made while the read was in flight would otherwise be overwritten.
+      const merged = mergeDecks(readLocal(uid, deckId), remote);
       writeLocal(uid, deckId, merged);
       setDeck(merged);
       setLoaded(true);
@@ -110,6 +115,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
   }, [uid, deckId]);
 
   const cards = useMemo(() => SAMPLE_CARDS.filter(c => c.level === level), [level]);
+  const levelUnbuilt = cards.length === 0;
   const memories = deck.cards;
   const retention = retentionFor(now(), deck.examTs);
 
@@ -122,12 +128,19 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
   );
   const unmet = cards.filter(c => !memories[c.id]?.last);
 
-  /** Marks on cards the scheduler still predicts the student would recall. */
+  /**
+   * Marks on cards the scheduler predicts the student would still recall
+   * TOMORROW, and only for cards that have graduated out of learning.
+   *
+   * Measuring at this instant is meaningless: retrievability at zero elapsed time
+   * is exactly 1 whatever the stability, so a card graded "Missed it" counted its
+   * full marks as secure the moment it was failed.
+   */
   const marksSecure = useCallback((subset: SecCard[]) =>
     subset.reduce((n, c) => {
       const m = memories[c.id];
-      if (!m?.last) return n;
-      return retrievability(m, now()) >= 0.9 ? n + c.totalMarks : n;
+      if (!m?.last || m.state !== 2) return n;
+      return retrievability(m, now() + 86_400_000) >= 0.9 ? n + c.totalMarks : n;
     }, 0), [memories, now]);
 
   const marksMet = useCallback((subset: SecCard[]) =>
@@ -137,8 +150,18 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
 
   const startSession = (topicId?: string) => {
     const pool = topicId ? cards.filter(c => c.topicId === topicId) : cards;
+    if (!pool.length) return;
     const plan = planSession(pool.map(c => c.id), memories, now(), { size: SESSION_SIZE, examTs: deck.examTs });
-    const queue = plan.queue.map(id => pool.find(c => c.id === id)).filter(Boolean) as SecCard[];
+    let queue = plan.queue.map(id => pool.find(c => c.id === id)).filter(Boolean) as SecCard[];
+    // Nothing due and nothing new does NOT mean "do nothing". A student who taps
+    // a topic, or "Another twelve" at the end of a session, is asking to practise
+    // — so serve the weakest cards they have already met rather than silently
+    // ignoring the tap.
+    if (!queue.length) {
+      queue = [...pool]
+        .sort((a, b) => retrievability(memories[a.id] ?? NEW_CARD, now()) - retrievability(memories[b.id] ?? NEW_CARD, now()))
+        .slice(0, SESSION_SIZE);
+    }
     if (!queue.length) return;
     setScreen({ name: 'session', cards: queue, topicId });
   };
@@ -341,7 +364,17 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
     <div style={{ minHeight: '100dvh', fontFamily: SANS }}>
       <div style={{ padding: '26px 16px 4px' }}>
         <div style={{ maxWidth: 560, margin: '0 auto' }}>
-          {nothingMet ? (
+          {levelUnbuilt ? (
+            <>
+              <h2 style={{ font: `700 27px/1.18 ${SERIF}`, color: INK, margin: '0 0 10px' }}>
+                Ordinary Level isn&rsquo;t built yet.
+              </h2>
+              <p style={{ font: `400 14.5px/1.55 ${SANS}`, color: MUTED, margin: '0 0 20px', maxWidth: '36ch' }}>
+                Every card so far comes from the Higher Level paper. Ordinary Level is next —
+                switch back to Higher in the meantime.
+              </p>
+            </>
+          ) : nothingMet ? (
             <>
               <h2 style={{ font: `700 27px/1.18 ${SERIF}`, color: INK, margin: '0 0 10px' }}>
                 Nothing in the bank yet.
@@ -378,14 +411,21 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
           <div style={{ display: 'flex', gap: 9, flexWrap: 'wrap' }}>
             <button
               type="button"
-              onClick={() => (dueCount > 0 ? startSession() : setScreen({ name: 'topics' }))}
+              disabled={levelUnbuilt}
+              onClick={() => {
+                if (levelUnbuilt) return;
+                if (dueCount > 0) startSession(); else setScreen({ name: 'topics' });
+              }}
               style={{
-                padding: '13px 24px', borderRadius: 100, border: 'none', cursor: 'pointer',
-                background: '#F26B1F', color: '#fff', font: `600 15px/1 ${SANS}`,
-                borderBottom: '3px solid #B54D14', boxShadow: '0 4px 0 #B54D14',
+                padding: '13px 24px', borderRadius: 100, border: 'none',
+                background: levelUnbuilt ? MUTED_BORDER : '#F26B1F', color: '#fff',
+                font: `600 15px/1 ${SANS}`,
+                borderBottom: levelUnbuilt ? 'none' : '3px solid #B54D14',
+                boxShadow: levelUnbuilt ? 'none' : '0 4px 0 #B54D14',
+                cursor: levelUnbuilt ? 'not-allowed' : 'pointer',
               }}
             >
-              {dueCount > 0 ? "Start today's mix" : nothingMet ? 'Choose a topic' : 'Pick a topic anyway'}
+              {levelUnbuilt ? 'Nothing to review yet' : dueCount > 0 ? "Start today's mix" : nothingMet ? 'Choose a topic' : 'Pick a topic anyway'}
             </button>
             {dueCount > 0 && (
               <button
