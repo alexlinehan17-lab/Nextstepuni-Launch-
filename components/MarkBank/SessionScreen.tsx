@@ -379,6 +379,11 @@ const MarkRowView: React.FC<{
         )}
       </button>
 
+      {blocked && (
+        <span style={{ display: 'block', marginTop: 4, marginLeft: 42, font: `400 11.5px/1.5 ${SANS}`, color: MUTED }}>
+          This mark only counts if the point above was right.
+        </span>
+      )}
       {canSynonym && !claimed && (
         <button
           type="button"

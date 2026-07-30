@@ -110,8 +110,15 @@ export interface MarkRow {
   openList?: boolean;
   /** Asterisked: exact term required, so synonym claiming is disabled. */
   exactTermRequired?: boolean;
-  /** Unclaimable until `dependsOn` is claimed — a "justify" mark is unreachable
-   *  if the structure it justifies was named wrongly. */
+  /**
+   * Unclaimable until `dependsOn` is claimed — a "justify" mark is genuinely
+   * unreachable if the structure it justifies was named wrongly.
+   *
+   * Set this ONLY where the scheme itself gates one mark on another. Where the
+   * scheme simply lists two marks in sequence ("Name: Peristalsis 3 /
+   * Description: … 3") they are independent, and inventing a dependency denies a
+   * student a mark the examiner would have awarded.
+   */
   dependsOn?: string;
   /** `anyN` only: how many of the listed options may be claimed, and for how much. */
   group?: { claimMax: number; perOption: number; options: string[] };

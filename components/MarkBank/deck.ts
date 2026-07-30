@@ -163,7 +163,10 @@ const peristalsis: SecDiagramCard = {
   tariffModel: { kind: 'fixed' }, totalMarks: 8,
   rows: [
     { id: 'r-name', kind: 'point', verbatim: 'Name — Peristalsis', marks: 3 },
-    { id: 'r-desc', kind: 'point', verbatim: 'Description — (involuntary) muscular contractions (that push food)', marks: 3, dependsOn: 'r-name' },
+    // No dependsOn: the scheme awards the name and the description as two
+    // independent marks. Gating one on the other would deny a student a mark the
+    // examiner would have given them.
+    { id: 'r-desc', kind: 'point', verbatim: 'Description — (involuntary) muscular contractions (that push food)', marks: 3 },
     { id: 'r-ph', kind: 'point', verbatim: 'pH — Lowers', marks: 2 },
   ],
   figure: DIGESTIVE,
