@@ -20,20 +20,21 @@ import { SAMPLE_CARDS, STRANDS, ALL_TOPICS, BLOCKED_FIGURES } from '../component
 import { isDiagramCard, isContentFreeRow, looksLikeSectionLabel, tariffReconciles, MAX_ROWS, isValidCardId } from '../types/markBank';
 
 const ROOT = resolve(__dirname, '..');
-const SCHEME = resolve(ROOT, 'examiner-reports/biology/2025-hl-marking-scheme.md');
+const SCHEME = resolve(ROOT, 'examiner-reports/biology/schemes/2025-hl.md');
 
 /** Normalise for substring matching against the extracted scheme text. */
 const norm = (s: string) =>
   s.toLowerCase().replace(/[‐-―]/g, '-').replace(/[^a-z0-9]+/g, ' ').trim();
 
 /**
- * The PDF extraction splits words at line and column breaks — the 2025 Higher
- * Level file contains "th at contains", "prey numbe rs" and "ammoni a". A card
- * quoting the scheme correctly therefore will not match it character for
- * character. Comparing with all spacing removed proves the content came from the
- * scheme without demanding the card reproduce the extraction's damage.
+ * Strict comparison. This is only possible because the schemes are re-extracted
+ * by scripts/markbank/extract-scheme.py, which rejoins spans by measuring the
+ * gap between them. The earlier extractions split words mid-token ("th at
+ * contains", "prey numbe rs", "ammoni a") and a correctly-quoted card could not
+ * match them, which forced a looser check. With clean source, a marking point
+ * must appear in the scheme exactly.
  */
-const tight = (s: string) => norm(s).replace(/ /g, '');
+const tight = (s: string) => norm(s);
 
 describe('every card traces to the marking scheme on disk', () => {
   const scheme = existsSync(SCHEME) ? norm(readFileSync(SCHEME, 'utf8')) : '';
