@@ -58,6 +58,60 @@ def question_hint(page) -> str:
     return ",".join(seen[:6])
 
 
+def cluster(rects, gap=64.0):
+    """Group image boxes that belong to the same figure.
+
+    An SEC diagram is rarely one image. A three-panel enzyme sequence, a heart
+    drawn beside its inset, a karyotype and its caption are each SEVERAL image
+    objects sitting side by side, with the letter labels drawn as vector text
+    between them. Cropping per object returns fragments — an enzyme with no
+    substrate, an arrow whose letter is in the next crop along — so boxes closer
+    than `gap` are merged and rendered as one region.
+    """
+    groups = []
+    for r in rects:
+        merged = None
+        for g in groups:
+            probe = fitz.Rect(r.x0 - gap, r.y0 - gap, r.x1 + gap, r.y1 + gap)
+            if probe.intersects(g):
+                if merged is None:
+                    g |= r
+                    merged = g
+                else:
+                    merged |= g
+                    groups.remove(g)
+        if merged is None:
+            groups.append(fitz.Rect(r))
+    return groups
+
+
+def include_labels(page, area, reach=52.0, max_chars=34):
+    """Grow a figure region to take in the label text sitting beside it.
+
+    Labels are vector text, not image objects, so clustering image boxes alone
+    still slices them: a leader line survives while the words it points from are
+    cut off at the edge. Short text blocks close to the figure are captions and
+    labels; long ones are the question itself and are left out.
+    """
+    grown = fitz.Rect(area)
+    probe = fitz.Rect(area.x0 - reach, area.y0 - reach, area.x1 + reach, area.y1 + reach)
+    for block in page.get_text("blocks"):
+        x0, y0, x1, y1, text = block[0], block[1], block[2], block[3], block[4]
+        label = " ".join(str(text).split())
+        if not label or len(label) > max_chars:
+            continue
+        box = fitz.Rect(x0, y0, x1, y1)
+        # Question prose runs the width of the text column; a label does not.
+        # Answer boxes and part markers are excluded the same way.
+        if box.width > page.rect.width * 0.34:
+            continue
+        if re.match(r"^\(?[a-z]\)|^\(?i+v?\)|^\d+\.", label, re.I):
+            continue
+        if box.intersects(probe):
+            grown |= box
+    return grown
+
+
 def extract(pdf: Path, outdir: Path) -> list:
     doc = fitz.open(pdf)
     outdir.mkdir(parents=True, exist_ok=True)
@@ -66,14 +120,12 @@ def extract(pdf: Path, outdir: Path) -> list:
 
     for pno in range(len(doc)):
         page = doc[pno]
-        for i, info in enumerate(page.get_images(full=True)):
-            xref = info[0]
-            rects = page.get_image_rects(xref)
-            if not rects:
-                continue
-            rect = rects[0]
-            if rect.width < MIN_W / 4 or rect.height < MIN_H / 4:
-                continue
+        boxes = []
+        for info in page.get_images(full=True):
+            for r in page.get_image_rects(info[0]):
+                if r.width >= MIN_W / 4 and r.height >= MIN_H / 4:
+                    boxes.append(r)
+        for i, rect in enumerate(cluster(boxes)):
 
             # RENDER the page region rather than pulling the embedded object.
             # SEC figures are a raster drawing with the letter labels — "X", "Y",
@@ -89,6 +141,7 @@ def extract(pdf: Path, outdir: Path) -> list:
                 rect.x1 + rect.width * PAD,
                 rect.y1 + rect.height * PAD,
             ) & page.rect
+            area = include_labels(page, area) & page.rect
             pix = page.get_pixmap(clip=area, matrix=fitz.Matrix(ZOOM, ZOOM))
             if pix.width < MIN_W or pix.height < MIN_H:
                 continue
