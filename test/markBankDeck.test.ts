@@ -40,14 +40,26 @@ const norm = (s: string) =>
   s.toLowerCase().replace(/[‐-―]/g, '-').replace(/[^a-z0-9]+/g, ' ').trim();
 
 /**
- * Strict comparison. This is only possible because the schemes are re-extracted
- * by scripts/markbank/extract-scheme.py, which rejoins spans by measuring the
- * gap between them. The earlier extractions split words mid-token ("th at
- * contains", "prey numbe rs", "ammoni a") and a correctly-quoted card could not
- * match them, which forced a looser check. With clean source, a marking point
- * must appear in the scheme exactly.
+ * Comparison text, whitespace-insensitive.
+ *
+ * The schemes are re-extracted by scripts/markbank/extract-scheme.py, which
+ * rejoins spans by measuring the gap between them — so the mid-token damage that
+ * used to force a loose check is gone. Two layout facts still stand in the way of
+ * a character-exact match, and neither is damage:
+ *
+ *  - Chemical subscripts sit on their own baseline and extract with gaps:
+ *    the carbohydrate formula comes out as "C x ( H 2 O )y".
+ *  - A marks cell is vertically centred against a multi-line answer cell, so the
+ *    mark lands BETWEEN the two lines of the answer it belongs to:
+ *    "…to produce" / "3" / "fertile offspring."
+ *
+ * So mark-only lines are dropped and spacing is ignored. Every character of the
+ * answer must still be present, in order.
  */
-const tight = (s: string) => norm(s);
+const MARKS_ONLY = /^\s*\d+\s*(\(\s*\d+\s*\))?\s*$/;
+const comparable = (schemeText: string) =>
+  norm(schemeText.split('\n').filter(l => !MARKS_ONLY.test(l)).join(' ')).replace(/ /g, '');
+const tight = (s: string) => norm(s).replace(/ /g, '');
 
 describe('every card traces to the marking scheme on disk', () => {
   test('every year and level the deck draws on has its scheme present', () => {
@@ -60,7 +72,7 @@ describe('every card traces to the marking scheme on disk', () => {
   test.each(SAMPLE_CARDS.map(c => [c.questionRef, c] as const))(
     '%s — every marking point appears in the scheme',
     (_ref, card) => {
-      const scheme = tight(schemeText(card));
+      const scheme = comparable(schemeText(card));
       for (const row of card.rows) {
         if (row.kind === 'anyN' && row.group) {
           for (const option of row.group.options) {

@@ -21,7 +21,7 @@
  */
 
 import type { SecCard, SecDiagramCard } from '../../types/markBank';
-import { CARDS_2025_HL } from './cards2025hl';
+import { AUTHORED_CARDS } from './cards';
 
 export interface TopicRef {
   id: string;
@@ -263,9 +263,9 @@ const HAND_BUILT: SecCard[] = [
   digestiveParts, peristalsis, rhizopus, rhizopusSexual, scientificMethod,
 ];
 
-const generatedRefs = new Set(CARDS_2025_HL.map(c => c.questionRef));
+const generatedRefs = new Set(AUTHORED_CARDS.map(c => c.questionRef));
 export const SAMPLE_CARDS: SecCard[] = [
-  ...CARDS_2025_HL,
+  ...AUTHORED_CARDS,
   ...HAND_BUILT.filter(c => !generatedRefs.has(c.questionRef)),
 ];
 
