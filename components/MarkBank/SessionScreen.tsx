@@ -413,9 +413,19 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     setResults(nextResults);
 
     // Never "correct" or "failed" — only when it comes back, and always warmly.
+    //
+    // A first encounter graded well still returns within the hour: that is the
+    // learning step doing its job, consolidating before the card is spaced out.
+    // Said plainly it would read as a punishment for getting it right, so a
+    // same-day return after a positive grade is framed as what it is.
+    const soon = !!words && /today/.test(words);
     setWhisper(
       words
-        ? (grade === 'missed' ? `No bother. It's back ${words}.` : `Nice. This one's back ${words}.`)
+        ? grade === 'missed'
+          ? `No bother. It's back ${words}.`
+          : soon
+            ? `Good — one more look ${words}, then it starts spacing out.`
+            : `Nice. This one's back ${words}.`
         : grade === 'got' ? "Nice. You won't see this one for a while."
         : grade === 'shaky' ? 'Good — that one comes back soon.'
         : "No bother. It'll come back before you finish today.",
@@ -609,9 +619,38 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         </div>
       </div>
 
+      {/* The interval whisper lives OUTSIDE the grade bar on purpose. Grading
+          advances the card and closes the scheme, so anything rendered inside
+          the bar unmounts at exactly the moment it has something to say — the
+          message would only ever be seen by a student who tapped through fast
+          enough to keep the bar alive. The schedule speaks on its own surface. */}
+      <AnimatePresence>
+        {whisper && (
+          <MotionDiv
+            key="whisper"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: reduced ? 0.12 : 0.22, ease: EASE }}
+            style={{
+              position: 'fixed', left: 0, right: 0, bottom: 0, zIndex: 5,
+              background: '#FFFFFF', borderTop: `1px solid ${HAIRLINE}`,
+              padding: `14px 16px calc(14px + var(--sab, 0px))`,
+            }}
+          >
+            <p style={{
+              maxWidth: 560, margin: '0 auto',
+              font: `500 13.5px/1.45 ${SANS}`, color: SUCCESS_TEXT,
+            }}>
+              {whisper}
+            </p>
+          </MotionDiv>
+        )}
+      </AnimatePresence>
+
       {/* Grade bar. Solid white, never translucent — blurred glass over a
           saturated colour goes muddy and reads as generated UI. */}
-      {revealed && (
+      {revealed && !whisper && (
         <div style={{
           position: 'fixed', left: 0, right: 0, bottom: 0, zIndex: 4,
           background: '#FFFFFF', borderTop: `1px solid ${HAIRLINE}`,
@@ -645,16 +684,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             )}
 
             <AnimatePresence mode="wait">
-              {whisper ? (
-                <MotionDiv
-                  key="whisper"
-                  initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}
-                  transition={{ duration: 0.22, ease: EASE }}
-                  style={{ font: `500 13px/1.4 ${SANS}`, color: SUCCESS_TEXT, padding: '10px 0' }}
-                >
-                  {whisper}
-                </MotionDiv>
-              ) : (
+              {(
                 <MotionDiv key="grades" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.18 }}>
                   <p style={{ margin: '0 0 9px', font: `400 12px/1.45 ${SANS}`, color: INK_2 }}>
                     {missedGate

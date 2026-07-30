@@ -39,6 +39,7 @@ const PointsPassport = lazy(() => import('./PointsPassport'));
 const CatchUpLane = lazy(() => import('./CatchUpLane'));
 const CommandWordReflex = lazy(() => import('./CommandWordReflex'));
 const PaperTrail = lazy(() => import('./PaperTrail'));
+const MarkBank = lazy(() => import('./MarkBank/MarkBank'));
 const DiagramVault = lazy(() => import('./DiagramVault/DiagramVault'));
 const AnswerArchitect = lazy(() => import('./AnswerArchitect/AnswerArchitect'));
 const DefinitionDrill = lazy(() => import('./DefinitionDrill/DefinitionDrill'));
@@ -94,6 +95,7 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   'exam-reps':       { themeColor: '#5E9C7B', eyebrow: 'Technique · Practice',        subtitle: 'One real exam question at a time — marked the examiner’s way, so you see exactly where the marks were.', showHeader: true  },
   'college-compass': { themeColor: '#2A7D6F', eyebrow: 'Plan · Roadmap',              subtitle: 'Your year-by-year runway to college — every CAO, HEAR, DARE and scholarship deadline, in order.', showHeader: false },
   'catch-up-lane':   { themeColor: '#0E9AA8', eyebrow: 'Catch up · Recovery',         subtitle: 'Missed some classes? Pick a subject and get caught up one quick topic at a time — no catch-up is too small.', showHeader: true  },
+  'mark-bank':       { themeColor: '#123B2B', eyebrow: 'Practise · Spaced repetition', subtitle: 'Real exam questions, marked point by point against the real scheme, brought back to you right before you\u2019d forget them.', showHeader: true },
   'paper-trail':     { themeColor: '#33658A', eyebrow: 'Understand · Exam archive',   subtitle: 'Every past paper and marking scheme, free — your subjects, your level, three taps.', showHeader: true },
   'diagram-vault':   { themeColor: '#F26B1F', eyebrow: 'Understand · Exam diagrams',  subtitle: 'Every diagram, graph, map and chart that has come up — cropped from the paper and decoded.', showHeader: true },
   'answer-architect': { themeColor: '#F26B1F', eyebrow: 'Understand · Top-answer skeletons', subtitle: 'The mark-earning skeleton of a top answer — the beats a full-marks answer hits, in order, from the SEC scheme.', showHeader: true },
@@ -615,6 +617,15 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             component: <CatchUpLane uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} studentCycle={curriculumLevel === 'junior' ? 'junior-cycle' : 'leaving-cert'} />,
         },
         {
+            id: 'mark-bank', title: 'Mark Bank', description: 'Real exam questions, marked point by point \u2014 brought back before you forget.', icon: ListChecks, needsProfile: false,
+            curriculum: 'senior' as const,
+            tag: 'Spaced repetition', accentHex: '#123B2B', gridClass: 'md:col-span-2',
+            iconBg: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-900 dark:text-emerald-300',
+            accentBarColor: 'bg-emerald-800', tagBg: 'bg-emerald-100 dark:bg-emerald-900/30', tagText: 'text-emerald-900 dark:text-emerald-400',
+            hoverBorder: 'hover:border-emerald-400/50 dark:hover:border-emerald-500/40',
+            component: <MarkBank uid={user?.uid} />,
+        },
+        {
             id: 'paper-trail', title: 'Paper Trail', description: 'Every SEC past paper and marking scheme — three taps away.', icon: FileSearch, needsProfile: false,
             // 'both': serves Junior Cycle (new-spec) AND Leaving Cert / LCA papers (cycle-filtered picker).
             curriculum: 'both' as const,
@@ -718,9 +729,10 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         },
     ];
 
-    const [activeFilter, setActiveFilter] = useState<'all' | 'understand' | 'plan' | 'track'>('all');
+    const [activeFilter, setActiveFilter] = useState<'all' | 'understand' | 'practise' | 'plan' | 'track'>('all');
 
-    const TOOL_CATEGORIES: Record<string, 'understand' | 'plan' | 'track'> = {
+    const TOOL_CATEGORIES: Record<string, 'understand' | 'practise' | 'plan' | 'track'> = {
+        'mark-bank': 'practise',
         'syllabus-xray': 'understand',
         'cao-simulator': 'understand',
         'future-finder': 'understand',
@@ -823,7 +835,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                     {/* Filter pills + Points trigger — same row, opposite ends */}
                     <div className="mb-8 flex items-center justify-between gap-3 flex-wrap">
                         <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50 w-fit">
-                            {(['all', 'understand', 'plan', 'track'] as const).map(filter => (
+                            {(['all', 'understand', 'practise', 'plan', 'track'] as const).map(filter => (
                                 <button
                                     key={filter}
                                     onClick={() => setActiveFilter(filter)}

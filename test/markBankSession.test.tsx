@@ -329,6 +329,29 @@ describe('grading', () => {
     expect(style).not.toMatch(/red|#e\d|#f00|rgb\(2[0-5]\d,\s*[0-5]\d,/i);
   });
 
+  test('never makes a success read like a punishment', () => {
+    // A first encounter graded well still returns within the hour — that is the
+    // FSRS learning step consolidating, not a penalty. Said plainly it would read
+    // as being punished for getting it right, so the words must reframe it.
+    render(
+      <SessionScreen
+        cards={[card(), card({ id: 'bio-q7', questionText: 'Second.' })]}
+        memories={{ 'bio-2025-hl-q6-ab': seen }}
+        subjectLabel="Biology"
+        onGrade={() => 'before you finish today'}
+        onExit={() => undefined}
+        onFinish={() => undefined}
+      />,
+    );
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    fireEvent.click(screen.getByRole('button', { name: /I had them all/i }));
+    fireEvent.click(screen.getByRole('button', { name: 'Got it' }));
+
+    const whisper = screen.getByText(/one more look|Nice\.|No bother/).textContent || '';
+    expect(whisper).not.toMatch(/No bother/);
+    expect(whisper).toMatch(/one more look before you finish today, then it starts spacing out/);
+  });
+
   test('finishes the session and reports every result', () => {
     const { onFinish } = renderSession([card()], { 'bio-2025-hl-q6-ab': seen });
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
