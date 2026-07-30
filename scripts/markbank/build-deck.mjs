@@ -93,8 +93,34 @@ if (!cardsPath) {
 const input = JSON.parse(readFileSync(cardsPath, 'utf8'));
 const cards = Array.isArray(input) ? input : (input.accepted ?? input.cards ?? []);
 
+/**
+ * Figures published by bind-figures.mjs: every one was OPENED by an inspecting
+ * agent, and only those it marked complete and non-truncated are in here. Its id
+ * is the extractor's own name, derived from the figure's page and index in the
+ * PDF, so an authoring agent naming a figure cannot invent a path.
+ */
+const MANIFEST_PATH = resolve(ROOT, 'components/MarkBank/figures.json');
+const MANIFEST = existsSync(MANIFEST_PATH) ? JSON.parse(readFileSync(MANIFEST_PATH, 'utf8')) : {};
+
 const figureRecord = (key) => {
   if (BLOCKED.has(key)) return { error: `figure "${key}" is on the blocklist` };
+
+  const inspected = MANIFEST[key];
+  if (inspected) {
+    const abs = resolve(ROOT, 'public', inspected.src.replace(/^\//, ''));
+    if (!existsSync(abs)) return { error: `figure file missing: ${inspected.src}` };
+    const md5 = createHash('md5').update(readFileSync(abs)).digest('hex');
+    if (md5 !== inspected.md5) return { error: `figure "${key}" changed on disk since it was inspected` };
+    return {
+      candId: key,
+      src: inspected.src,
+      srcHash: md5,
+      alt: inspected.alt,
+      attribution: inspected.attribution,
+    };
+  }
+
+  // Legacy 2025 Higher Level crops, bound before the manifest existed.
   if (!ALT[key]) return { error: `figure "${key}" has not been inspected, so it has no verified alt text` };
   const rel = `${FIG_DIR}/biology-2025-hl-${key}.png`;
   const abs = resolve(ROOT, rel);
