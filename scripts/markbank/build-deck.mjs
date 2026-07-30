@@ -85,7 +85,23 @@ const schemeCache = new Map();
  * on their own baseline ("C x ( H 2 O )y").
  */
 const MARKS_ONLY = /^\s*\d+\s*(\(\s*\d+\s*\))?\s*$/;
-const normalise = (t) => t.toLowerCase().replace(/[‐-―]/g, '-').replace(/[^a-z0-9]+/g, '');
+
+/**
+ * Sub- and superscript digits folded to the digits they stand for.
+ *
+ * The SEC's PDFs extract formulae as plain ASCII — "H2SO4", not "H₂SO₄" — but an
+ * author writing the answer out is liable to typeset it properly. Without this
+ * fold the two normalise to "hso" and "h2so4", and a correct card gets dropped
+ * for being untraceable. Folding maps a character to the digit it already means;
+ * it does not loosen what counts as a match.
+ */
+const SUP = { '⁰': '0', '¹': '1', '²': '2', '³': '3', '⁴': '4', '⁵': '5', '⁶': '6', '⁷': '7', '⁸': '8', '⁹': '9' };
+const foldDigits = (t) => t
+  .replace(/[₀-₉]/g, (c) => String(c.charCodeAt(0) - 0x2080))
+  .replace(/[⁰¹²³⁴-⁹]/g, (c) => SUP[c] ?? c);
+
+const normalise = (t) =>
+  foldDigits(t).toLowerCase().replace(/[‐-―]/g, '-').replace(/[^a-z0-9]+/g, '');
 
 function schemeFor(subjectId, card) {
   const stem = `${card.year ?? 2025}-${(card.level ?? 'higher') === 'higher' ? 'hl' : 'ol'}`;

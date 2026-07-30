@@ -39,8 +39,20 @@ import {
 
 const ROOT = resolve(__dirname, '..');
 
+/**
+ * Sub- and superscript digits stand for the digits they look like.
+ *
+ * SEC PDFs extract formulae as plain ASCII — "H2SO4" — while an author writing
+ * the same answer out is liable to typeset it properly as "H₂SO₄". Without this
+ * the two normalise to "h2so4" and "hso", and a correct card reads as untraceable.
+ */
+const SUPERSCRIPT = '⁰¹²³⁴⁵⁶⁷⁸⁹';
+const foldDigits = (s: string) => s
+  .replace(/[₀-₉]/g, c => String(c.charCodeAt(0) - 0x2080))
+  .replace(/[⁰¹²³⁴-⁹]/g, c => String(SUPERSCRIPT.indexOf(c)));
+
 const norm = (s: string) =>
-  s.toLowerCase().replace(/[‐-―]/g, '-').replace(/[^a-z0-9]+/g, ' ').trim();
+  foldDigits(s).toLowerCase().replace(/[‐-―]/g, '-').replace(/[^a-z0-9]+/g, ' ').trim();
 
 /**
  * Comparison text, whitespace-insensitive. Two layout facts stand in the way of a
