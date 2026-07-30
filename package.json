@@ -31,7 +31,8 @@
     "pdfjs-dist": "^6.0.227",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "three": "^0.181.1"
+    "three": "^0.181.1",
+    "ts-fsrs": "^5.4.1"
   },
   "devDependencies": {
     "@capacitor/cli": "^8.3.4",

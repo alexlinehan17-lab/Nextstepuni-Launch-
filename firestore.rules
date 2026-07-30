@@ -140,6 +140,29 @@ service cloud.firestore {
                     && isSchoolStaff()
                     && get(/databases/$(database)/documents/users/$(userId)).data.school == callerSchool();
       }
+
+      // Mark Bank spaced-repetition decks. One document per deck
+      // (e.g. biology-higher), holding a map of per-card FSRS memory state.
+      // Kept off the parent /progress doc so ~800 cards of review state never
+      // inflate app-boot reads for a student who has not opened the tool.
+      //
+      // As with /sessions above: rules are non-hierarchical, so this block must
+      // be declared explicitly. Without it, every review save AND every reload
+      // falls through to the default-deny at the bottom and fails SILENTLY —
+      // which for a spaced-repetition tool means the student's entire deck
+      // appears to reset. This is the same failure mode as audit blocker B3.
+      match /srs/{deckId} {
+        // Self read + write
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+        // Admin read (AdminDashboard)
+        allow read: if request.auth != null
+                    && request.auth.token.email == 'admin@nextstep.app';
+        // GC of the same school can read, so a Guidance Counsellor view can be
+        // added later without a rules change (mirrors /progress and /sessions).
+        allow read: if request.auth != null
+                    && isSchoolStaff()
+                    && get(/databases/$(database)/documents/users/$(userId)).data.school == callerSchool();
+      }
     }
 
     // Settings collection: each user can only read/write their own doc
