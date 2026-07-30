@@ -78,7 +78,73 @@ export const STRANDS: StrandRef[] = [
   },
 ];
 
-export const ALL_TOPICS: TopicRef[] = STRANDS.flatMap(s => s.topics);
+
+/** The redeveloped Leaving Certificate Chemistry specification (NCCA, introduced
+ *  September 2025, first examined June 2027), read from the specification PDF.
+ *  Five strands, twenty units. Note the spec numbers its units with a trailing
+ *  dot ("1.1.") — the codes here drop it for display consistency with Biology. */
+export const CHEMISTRY_STRANDS: StrandRef[] = [
+  {
+    id: 'cu', label: 'Unifying strand', title: 'The Nature of Science',
+    topics: [
+      { id: 'chem-u1', code: 'U1', title: 'Understanding about chemistry' },
+      { id: 'chem-u2', code: 'U2', title: 'Investigating in chemistry' },
+      { id: 'chem-u3', code: 'U3', title: 'Chemistry in society' },
+      { id: 'chem-u4', code: 'U4', title: 'Abstraction to representation' },
+    ],
+  },
+  {
+    id: 'cs1', label: 'Strand 1', title: 'Nature of Matter',
+    topics: [
+      { id: 'chem-1-1', code: '1.1', title: 'Matter' },
+      { id: 'chem-1-2', code: '1.2', title: 'Atomic structure' },
+      { id: 'chem-1-3', code: '1.3', title: 'The periodic table' },
+      { id: 'chem-1-4', code: '1.4', title: 'Quantifying matter' },
+    ],
+  },
+  {
+    id: 'cs2', label: 'Strand 2', title: 'Behaviour of Matter',
+    topics: [
+      { id: 'chem-2-1', code: '2.1', title: 'Chemical bonding' },
+      { id: 'chem-2-2', code: '2.2', title: 'Intermolecular forces and molecular shapes' },
+      { id: 'chem-2-3', code: '2.3', title: 'Behaviour of gases' },
+      { id: 'chem-2-4', code: '2.4', title: 'Hydrocarbons' },
+    ],
+  },
+  {
+    id: 'cs3', label: 'Strand 3', title: 'Interactions of Matter',
+    topics: [
+      { id: 'chem-3-1', code: '3.1', title: 'Thermochemistry' },
+      { id: 'chem-3-2', code: '3.2', title: 'Rates of reaction' },
+      { id: 'chem-3-3', code: '3.3', title: 'Chemical equilibrium' },
+      { id: 'chem-3-4', code: '3.4', title: 'Acid-base systems' },
+      { id: 'chem-3-5', code: '3.5', title: 'Electrochemistry' },
+    ],
+  },
+  {
+    id: 'cs4', label: 'Strand 4', title: 'Matter in our World',
+    topics: [
+      { id: 'chem-4-1', code: '4.1', title: 'Volumetric analysis' },
+      { id: 'chem-4-2', code: '4.2', title: 'Reactivity of organic compounds' },
+      { id: 'chem-4-3', code: '4.3', title: 'Our chemical environment' },
+    ],
+  },
+];
+
+/** Every subject the deck covers, with the strand structure of its own
+ *  specification. Card topicIds are namespaced by subject, so a card can only
+ *  ever be filed under a unit of the subject it belongs to. */
+export const SUBJECTS = [
+  { id: 'biology', title: 'Biology', strands: STRANDS },
+  { id: 'chemistry', title: 'Chemistry', strands: CHEMISTRY_STRANDS },
+] as const;
+
+export type SubjectId = (typeof SUBJECTS)[number]['id'];
+
+export const strandsFor = (subjectId: string) =>
+  SUBJECTS.find(s => s.id === subjectId)?.strands ?? STRANDS;
+
+export const ALL_TOPICS: TopicRef[] = SUBJECTS.flatMap(s => s.strands).flatMap(s => s.topics);
 export const topicById = (id: string) => ALL_TOPICS.find(t => t.id === id);
 
 /**

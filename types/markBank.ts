@@ -120,6 +120,20 @@ export interface MarkRow {
    * student a mark the examiner would have awarded.
    */
   dependsOn?: string;
+  /**
+   * Mutually exclusive answer routes, from the SEC's double solidus.
+   *
+   * Chemistry schemes use `//` where `/` means "equally acceptable": "a double
+   * solidus separates answers which are mutually exclusive. A partial answer
+   * from one side of the // may not be taken in conjunction with a partial
+   * answer from the other side."
+   *
+   * So a question may accept two different complete routes to the answer, and a
+   * student who takes points from both is not entitled to the marks. Rows
+   * sharing a `route` belong to the same side; claiming any row commits the card
+   * to that route and locks the others.
+   */
+  route?: string;
   /** `anyN` only: how many of the listed options may be claimed, and for how much. */
   group?: { claimMax: number; perOption: number; options: string[] };
 }

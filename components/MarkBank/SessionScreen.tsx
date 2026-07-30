@@ -59,6 +59,10 @@ const MONO = "'Roboto Mono', ui-monospace, monospace";
 /** How the student answered one row. */
 type RowClaim = 'no' | 'yes' | 'synonym';
 
+/** A row absent from the claims map has not been claimed. Defaulting the other
+ *  way silently credits every row a caller forgot to mention. */
+const isClaimed = (claims: Record<string, RowClaim>, id: string) => (claims[id] ?? 'no') !== 'no';
+
 export interface SessionCardResult {
   cardId: string;
   grade: MarkBankGrade;
@@ -106,21 +110,37 @@ export function claimableTotal(card: SecCard): number {
  *  a per-row number would be arithmetically wrong, so we show none. */
 export const showsRowMarks = (card: SecCard) => card.tariffModel.kind === 'fixed';
 
+/**
+ * Which mutually exclusive answer route the student has committed to, if any.
+ * The SEC's double solidus separates routes that may not be mixed.
+ */
+export function committedRoute(card: SecCard, claims: Record<string, RowClaim>): string | null {
+  for (let i = 0; i < card.rows.length; i++) {
+    const r = card.rows[i];
+    if (r.route && isClaimed(claims, rowId(r, i))) return r.route;
+  }
+  return null;
+}
+
 export function marksClaimed(
   card: SecCard,
   claims: Record<string, RowClaim>,
   picks: Record<string, number[]> = {},
 ): number {
   if (!showsRowMarks(card)) return 0;
+  const route = committedRoute(card, claims);
   return card.rows.reduce((n, r, i) => {
     const id = rowId(r, i);
+    // Points from an abandoned route earn nothing: the scheme forbids taking a
+    // partial answer from one side of a // together with one from the other.
+    if (r.route && route && r.route !== route) return n;
     // A bounded "Any four 4(3)" group is scored by how many the student actually
     // had, not as one all-or-nothing block worth twelve marks.
     if (r.kind === 'anyN' && r.group) {
       const chosen = Math.min(picks[id]?.length ?? 0, r.group.claimMax);
       return n + chosen * r.group.perOption;
     }
-    return claims[id] !== 'no' ? n + rowMarks(r) : n;
+    return isClaimed(claims, id) ? n + rowMarks(r) : n;
   }, 0);
 }
 
@@ -149,7 +169,7 @@ export function suggestGrade(
   const total = claimableTotal(card);
   const got = marksClaimed(card, claims, picks);
   if (!showsRowMarks(card)) {
-    const claimedRows = card.rows.filter((r, i) => claims[rowId(r, i)] !== 'no').length;
+    const claimedRows = card.rows.filter((r, i) => isClaimed(claims, rowId(r, i))).length;
     if (claimedRows === 0) return 'missed';
     return claimedRows === card.rows.length ? 'got' : 'shaky';
   }
@@ -214,11 +234,12 @@ const MarkRowView: React.FC<{
   claim: RowClaim;
   showMarks: boolean;
   blocked: boolean;
+  blockedReason?: string;
   reduced: boolean;
   picks: number[];
   onClaim: (id: string, next: RowClaim) => void;
   onPick: (id: string, optionIndex: number) => void;
-}> = ({ row, id, index, claim, showMarks, blocked, reduced, picks, onClaim, onPick }) => {
+}> = ({ row, id, index, claim, showMarks, blocked, blockedReason, reduced, picks, onClaim, onPick }) => {
   const claimed = claim !== 'no';
   const marks = rowMarks(row);
   const canSynonym = !row.exactTermRequired && (row.openList || row.kind === 'alt');
@@ -380,7 +401,7 @@ const MarkRowView: React.FC<{
 
       {blocked && (
         <span style={{ display: 'block', marginTop: 4, marginLeft: 42, font: `400 11.5px/1.5 ${SANS}`, color: MUTED }}>
-          This mark only counts if the point above was right.
+          {blockedReason ?? 'This mark only counts if the point above was right.'}
         </span>
       )}
       {canSynonym && !claimed && (
@@ -470,6 +491,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const got = card ? marksClaimed(card, rowClaims, picks) : 0;
   const left = Math.max(0, total - got);
   const suggested = card ? suggestGrade(card, rowClaims, picks) : 'shaky';
+  const routeTaken = card ? committedRoute(card, rowClaims) : null;
 
   const setClaim = useCallback((id: string, next: RowClaim) => {
     setClaims(prev => ({ ...prev, [id]: next }));
@@ -696,7 +718,15 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                         row={row} id={id} index={i}
                         claim={claimOf(id)}
                         showMarks={showsRowMarks(card)}
-                        blocked={!!row.dependsOn && claimOf(row.dependsOn) === 'no'}
+                        blocked={
+                          (!!row.dependsOn && claimOf(row.dependsOn) === 'no')
+                          || (!!row.route && !!routeTaken && row.route !== routeTaken)
+                        }
+                        blockedReason={
+                          !!row.route && !!routeTaken && row.route !== routeTaken
+                            ? 'The examiner marks one route or the other — not a mix of both.'
+                            : undefined
+                        }
                         reduced={reduced}
                         picks={picks[id] ?? []}
                         onClaim={setClaim}

@@ -23,7 +23,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { createHash } from 'node:crypto';
 
-import { STRANDS, ALL_TOPICS, BLOCKED_FIGURES } from '../components/MarkBank/deck';
+import { STRANDS, CHEMISTRY_STRANDS, ALL_TOPICS, SUBJECTS, BLOCKED_FIGURES } from '../components/MarkBank/deck';
 import { CARDS as HIGHER } from '../components/MarkBank/cards/higher';
 import { CARDS as ORDINARY } from '../components/MarkBank/cards/ordinary';
 
@@ -222,15 +222,38 @@ describe('figures are real crops from the paper', () => {
 /* -------------------------------------------------------------- taxonomy --- */
 
 describe('the taxonomy is the redeveloped specification', () => {
-  test('has the four strands and their units', () => {
+  test('Biology has its four strands and fourteen numbered units', () => {
     expect(STRANDS).toHaveLength(4);
-    expect(ALL_TOPICS.filter(t => /^\d/.test(t.code))).toHaveLength(14);
+    expect(STRANDS.flatMap(s => s.topics).filter(t => /^\d/.test(t.code))).toHaveLength(14);
     expect(STRANDS.map(s => s.title)).toEqual([
       'Nature of Science',
       'Organisation of Life',
       'Structures and Processes of Life',
       'Interactions of Life',
     ]);
+  });
+
+  test('Chemistry has its five strands and twenty units, as the specification states', () => {
+    expect(CHEMISTRY_STRANDS).toHaveLength(5);
+    expect(CHEMISTRY_STRANDS.flatMap(s => s.topics)).toHaveLength(20);
+    expect(CHEMISTRY_STRANDS.map(s => s.title)).toEqual([
+      'The Nature of Science',
+      'Nature of Matter',
+      'Behaviour of Matter',
+      'Interactions of Matter',
+      'Matter in our World',
+    ]);
+  });
+
+  test('subject taxonomies do not collide', () => {
+    // A card can only ever be filed under a unit of its own subject.
+    const ids = ALL_TOPICS.map(t => t.id);
+    expect(new Set(ids).size).toBe(ids.length);
+    for (const subject of SUBJECTS) {
+      for (const topic of subject.strands.flatMap(s => s.topics)) {
+        expect(topic.id.startsWith(subject.id === 'biology' ? 'bio-' : 'chem-')).toBe(true);
+      }
+    }
   });
 
   test('carries no trace of the retired Unit One/Two/Three syllabus', () => {

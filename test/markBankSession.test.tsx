@@ -18,6 +18,7 @@ import { resolve } from 'node:path';
 
 import SessionScreen, {
   claimableTotal,
+  committedRoute,
   marksClaimed,
   rowMarks,
   showsRowMarks,
@@ -111,6 +112,30 @@ describe('mark arithmetic follows the scheme, not a convenient default', () => {
     });
     expect(marksClaimed(c, { g: 'no', r1: 'yes' })).toBe(4);
     expect(marksClaimed(c, { g: 'yes', r1: 'yes' })).toBe(5);
+  });
+
+  test('mutually exclusive routes cannot be mixed', () => {
+    // Chemistry's double solidus: "a partial answer from one side of the // may
+    // not be taken in conjunction with a partial answer from the other side."
+    const c = card({
+      totalMarks: 6,
+      rows: [
+        row({ id: 'a1', verbatim: 'Route A first point', marks: 3, route: 'a' }),
+        row({ id: 'a2', verbatim: 'Route A second point', marks: 3, route: 'a' }),
+        row({ id: 'b1', verbatim: 'Route B first point', marks: 3, route: 'b' }),
+        row({ id: 'b2', verbatim: 'Route B second point', marks: 3, route: 'b' }),
+      ],
+    });
+    expect(committedRoute(c, { a1: 'yes' })).toBe('a');
+    // Both of route A scores in full.
+    expect(marksClaimed(c, { a1: 'yes', a2: 'yes' })).toBe(6);
+    // Mixing sides earns nothing extra — the far side is not credited.
+    expect(marksClaimed(c, { a1: 'yes', b1: 'yes', b2: 'yes' })).toBe(3);
+  });
+
+  test('a card with no routes is unaffected', () => {
+    expect(committedRoute(card(), { r0: 'yes' })).toBe(null);
+    expect(marksClaimed(card(), { r0: 'yes', r1: 'yes' })).toBe(4);
   });
 
   test('a synonym claim earns the mark', () => {
@@ -297,6 +322,22 @@ describe('claiming marks', () => {
     fireEvent.click(screen.getByRole('button', { name: /beta/ }));
     expect(screen.getByRole('button', { name: /gamma/ })).toBeDisabled();
     expect(screen.getByText(/any more score nothing/i)).toBeInTheDocument();
+  });
+
+  test('locks the route not taken, and says why', () => {
+    const c = card({
+      totalMarks: 6,
+      rows: [
+        row({ id: 'a1', verbatim: 'Oxidation route', marks: 6, route: 'a' }),
+        row({ id: 'b1', verbatim: 'Reduction route', marks: 6, route: 'b' }),
+      ],
+    });
+    renderSession([c], { 'bio-2025-hl-q6-ab': seen });
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    expect(screen.getByRole('button', { name: /Reduction route/ })).not.toBeDisabled();
+    fireEvent.click(screen.getByRole('button', { name: /Oxidation route/ }));
+    expect(screen.getByRole('button', { name: /Reduction route/ })).toBeDisabled();
+    expect(screen.getByText(/one route or the other/i)).toBeInTheDocument();
   });
 
   test('shows no per-row mark chips when the scheme does not define them', () => {
