@@ -85,6 +85,35 @@ def cluster(rects, gap=64.0):
     return groups
 
 
+def content_box(page):
+    """The page's text column, from where its content actually sits."""
+    xs = []
+    for block in page.get_text("blocks"):
+        if str(block[4]).strip():
+            xs.append((block[0], block[2]))
+    for info in page.get_images(full=True):
+        for r in page.get_image_rects(info[0]):
+            xs.append((r.x0, r.x1))
+    if not xs:
+        return page.rect
+    return fitz.Rect(min(a for a, _ in xs), page.rect.y0, max(b for _, b in xs), page.rect.y1)
+
+
+def widen_to_column(page, area):
+    """Take a figure region out to the full text column.
+
+    The commonest truncation left was horizontal: a multi-panel diagram — an
+    enzyme sequence, three hearts in a row — spreads wider than any sane
+    clustering gap, so a panel and its letter fall outside the crop. SEC pages
+    are a single column, so the sides are margin, not neighbouring content:
+    widening to the column captures the whole diagram without dragging anything
+    unrelated in. Vertical extent is left alone, which is what keeps the question
+    text and answer boxes out.
+    """
+    col = content_box(page)
+    return fitz.Rect(col.x0, area.y0, col.x1, area.y1) & page.rect
+
+
 def include_labels(page, area, reach=52.0, max_chars=34):
     """Grow a figure region to take in the label text sitting beside it.
 
@@ -142,6 +171,7 @@ def extract(pdf: Path, outdir: Path) -> list:
                 rect.y1 + rect.height * PAD,
             ) & page.rect
             area = include_labels(page, area) & page.rect
+            area = widen_to_column(page, area)
             pix = page.get_pixmap(clip=area, matrix=fitz.Matrix(ZOOM, ZOOM))
             if pix.width < MIN_W or pix.height < MIN_H:
                 continue
