@@ -72,9 +72,10 @@ export type RowKind =
   | 'anyN'
   /** A judgement rather than a phrase. Section B / practical work only. */
   | 'criterion'
-  /** Asterisked in the scheme: the exact scientific term is required, and a wrong
-   *  addition nullifies the mark. Carries 0 marks of its own; failing it collapses
-   *  the answer. */
+  /** Asterisked in the scheme: only the exact scientific term scores, and adding
+   *  a wrong answer alongside it cancels THIS row's mark. It carries its own real
+   *  marks (the 2025 scheme awards "A: *Sporangium 1") and does not zero the rest
+   *  of the question — each asterisked item stands or falls alone. */
   | 'gate';
 
 export interface MarkRow {
@@ -95,8 +96,9 @@ export interface MarkRow {
    * requirement is spelled out on the row.
    */
   contextNote?: string;
-  /** Marks for this row. 0 for a gate. `null` when the tariff model leaves
-   *  per-row values undefined — render no chip rather than a wrong one. */
+  /** Marks for this row, exactly as the scheme awards them. `null` only when the
+   *  tariff model leaves per-row values undefined — render no chip rather than a
+   *  wrong one. */
   marks: number | null;
   /** Alternatives the scheme prints explicitly. */
   accepts?: string[];
@@ -285,10 +287,10 @@ export function isContentFreeRow(verbatim: string): boolean {
  */
 export function tariffReconciles(card: SecCard): boolean {
   const { tariffModel: t, rows, totalMarks } = card;
-  const gated = rows.filter(r => r.kind !== 'gate');
-  if (t.kind === 'orderedSplit') return gated.every(r => r.marks === null);
+  if (t.kind === 'orderedSplit') return rows.every(r => r.marks === null);
   if (t.kind === 'bestNofParts') return t.answer * t.perPart === totalMarks;
-  const sum = gated.reduce((n, r) => {
+  // Asterisked rows count: the asterisk constrains the wording, not the value.
+  const sum = rows.reduce((n, r) => {
     if (r.kind === 'anyN' && r.group) return n + r.group.claimMax * r.group.perOption;
     return n + (r.marks ?? 0);
   }, 0);

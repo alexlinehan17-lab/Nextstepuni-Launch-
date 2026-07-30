@@ -4,11 +4,14 @@
  *
  * Mark Bank — deck structure and SAMPLE content.
  *
- * ⚠️ THE CARDS IN THIS FILE ARE SAMPLES, not the authored deck. They exist so the
- * tool's shape can be walked through end to end before any real authoring
- * begins. Every sample card's marking points are quoted from a real SEC scheme
- * that was read directly; nothing here is invented. Topics without sample cards
- * report themselves honestly as not built yet rather than being padded.
+ * These five cards are a SAMPLE SLICE, not full coverage — but they are real.
+ * Every question, every marking point and every mark value is transcribed from
+ * `examiner-reports/biology/2025-hl-marking-scheme.md`, and both figures are real
+ * crops from the 2025 Higher Level paper, opened and checked by eye before being
+ * bound (the Biology corpus has four known duplicate-crop pairs, and the alveolus
+ * file is one of them — it holds the Rhizopus crop, so it is not used here).
+ * Nothing is drawn, approximated or invented. Topics without cards report
+ * themselves as not built yet rather than being padded.
  *
  * The taxonomy IS real: these are the twelve units of the redeveloped Leaving
  * Certificate Biology specification (NCCA, introduced September 2025, first
@@ -78,60 +81,98 @@ export const ALL_TOPICS: TopicRef[] = STRANDS.flatMap(s => s.topics);
 export const topicById = (id: string) => ALL_TOPICS.find(t => t.id === id);
 
 const SCHEME_2025 = 'Marking points quoted from the SEC marking scheme, Biology 2025 Higher Level — © State Examinations Commission.';
-const SCHEME_2023 = 'Marking points quoted from the SEC marking scheme, Biology 2023 Higher Level — © State Examinations Commission.';
 
 const shared = {
   subjectId: 'biology',
   level: 'higher' as const,
+  year: 2025,
+  paperFileid: 'LC025ALP038EV',
   /* Sourced from the final old-syllabus papers. Retained because the SEC will
    * publish no marking scheme for the new specification until roughly August
    * 2027, which makes the 2010–2026 schemes the only official marking-point
    * corpus in existence. Re-tagged to the new units above. */
   specVersion: 'lc-biology-2002',
-  qa: { gates: ['verbatim', 'tariff'], humanReviewedBy: 'sample', humanReviewedAt: '2026-07-30' },
+  qa: { gates: ['verbatim', 'tariff', 'figure'], humanReviewedBy: 'agent-verified', humanReviewedAt: '2026-07-30' },
 };
 
-/** A stand-in illustration, clearly labelled. Real cards bind a cropped SEC
- *  figure by machine-emitted candidate id; drawing over a primary source is the
- *  failure this tool exists to prevent. */
-const placeholderFungus = 'data:image/svg+xml;utf8,' + encodeURIComponent(`
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200">
-    <rect x="0" y="150" width="300" height="50" fill="#9a9a9a"/>
-    <g stroke="#c4c4c4" stroke-width="4" fill="none">
-      <path d="M60 150 V95"/><path d="M110 150 V70"/><path d="M160 150 V60"/><path d="M210 150 V85"/>
-      <path d="M60 150 C 95 140, 130 140, 160 150"/>
-    </g>
-    <circle cx="60" cy="88" r="13" fill="#9a9a9a"/><circle cx="110" cy="63" r="15" fill="#9a9a9a"/>
-    <circle cx="160" cy="52" r="16" fill="#9a9a9a"/><circle cx="210" cy="78" r="13" fill="#9a9a9a"/>
-    <g fill="#9a9a9a"><circle cx="238" cy="70" r="3"/><circle cx="250" cy="62" r="3"/><circle cx="246" cy="80" r="3"/><circle cx="258" cy="74" r="3"/></g>
-    <g font-family="Georgia" font-size="17" font-weight="bold" fill="#111">
-      <text x="150" y="26">A</text><text x="252" y="46">B</text><text x="92" y="140">C</text>
-    </g>
-    <g stroke="#111" stroke-width="1.6" fill="none">
-      <path d="M155 30 L 160 36"/><path d="M250 50 L 246 58"/><path d="M97 136 L 104 146"/>
-    </g>
-  </svg>`);
+/** Real cropped figures from the 2025 Higher Level paper, verified by eye against
+ *  the paper before binding. Both were checked for the duplicate-crop defect. */
+const DIGESTIVE = {
+  candId: 'biology-2025-hl-digestive-system',
+  src: '/exam-figures/biology/biology-2025-hl-digestive-system.png',
+  srcHash: '471fe80f7312c2c5a68413fb3494428c',
+  alt: 'Outline of a human torso showing the digestive tract. A leader line marks the tube running down the neck and chest; a second marks an organ below the liver. The pancreas and small intestine are named on the diagram.',
+  lettersVisible: ['A', 'B'],
+  attribution: 'SEC Leaving Certificate Biology 2025 Higher Level, Q6 — © State Examinations Commission',
+};
 
+const RHIZOPUS = {
+  candId: 'biology-2025-hl-rhizopus',
+  src: '/exam-figures/biology/biology-2025-hl-rhizopus.png',
+  srcHash: 'c12e3971d83734db54a96bd67ecd3b7f',
+  alt: 'Rhizopus growing on a substrate: rounded heads on upright stalks, a cluster of small spores being released at the right, and a horizontal filament running across the surface.',
+  lettersVisible: ['A', 'B', 'C'],
+  attribution: 'SEC Leaving Certificate Biology 2025 Higher Level, Q16 — © State Examinations Commission',
+};
+
+/** Q6(a). Scheme: "A: Oesophagus 2 / B: Stomach 2". */
+const digestiveParts: SecDiagramCard = {
+  ...shared, source: 'sec', kind: 'diagram',
+  id: 'bio-2025-hl-q6-a', topicId: 'bio-2-6', conceptId: 'digestive-parts',
+  section: 'A', questionRef: '2025 HL Q6(a)',
+  questionText: 'Name the parts labelled A and B.',
+  tariffModel: { kind: 'fixed' }, totalMarks: 4,
+  rows: [
+    { id: 'r-a', kind: 'point', verbatim: 'A — Oesophagus', marks: 2 },
+    { id: 'r-b', kind: 'point', verbatim: 'B — Stomach', marks: 2 },
+  ],
+  figure: DIGESTIVE,
+  labelKey: [
+    { letter: 'A', meaning: 'Oesophagus', askedInThisQuestion: true },
+    { letter: 'B', meaning: 'Stomach', askedInThisQuestion: true },
+  ],
+  schemeCitation: SCHEME_2025,
+};
+
+/** Q6(b)–(c). Scheme: "Name: Peristalsis 3 / Description: (involuntary) muscular
+ *  contractions (that push food) 3" and "Lowers 2". */
+const peristalsis: SecDiagramCard = {
+  ...shared, source: 'sec', kind: 'diagram',
+  id: 'bio-2025-hl-q6-bc', topicId: 'bio-2-6', conceptId: 'peristalsis',
+  section: 'A', questionRef: '2025 HL Q6(b)–(c)',
+  questionText: 'Name and describe briefly the method by which food travels through structure A. How does the pH of the food material change as it travels from A to B?',
+  tariffModel: { kind: 'fixed' }, totalMarks: 8,
+  rows: [
+    { id: 'r-name', kind: 'point', verbatim: 'Name — Peristalsis', marks: 3 },
+    { id: 'r-desc', kind: 'point', verbatim: 'Description — (involuntary) muscular contractions (that push food)', marks: 3, dependsOn: 'r-name' },
+    { id: 'r-ph', kind: 'point', verbatim: 'pH — Lowers', marks: 2 },
+  ],
+  figure: DIGESTIVE,
+  labelKey: [
+    { letter: 'A', meaning: 'Oesophagus', askedInThisQuestion: true },
+    { letter: 'B', meaning: 'Stomach', askedInThisQuestion: true },
+  ],
+  schemeCitation: SCHEME_2025,
+};
+
+/** Q16(a)(i)–(iii). Scheme: "A: *Sporangium 1 / B: *Spore 1 / C: *Stolon 1",
+ *  "Spread the fungus 3", "Saprophytic or heterotrophic 3". The asterisks mean
+ *  the exact term is required — they do NOT mean the row is worth nothing. */
 const rhizopus: SecDiagramCard = {
   ...shared, source: 'sec', kind: 'diagram',
-  id: 'bio-2025-hl-q16a', topicId: 'bio-3-2', conceptId: 'rhizopus-structure',
-  year: 2025, paperFileid: 'LC025ALP040EV', section: 'C', questionRef: '2025 HL Q16(a)',
-  stem: 'The diagram shows a fungus grown on bread.',
-  questionText: 'Name the structures labelled A, B and C, and give one function of C.',
+  id: 'bio-2025-hl-q16a-i', topicId: 'bio-3-2', conceptId: 'rhizopus-structure',
+  paperFileid: 'LC025ALP040EV', section: 'C', questionRef: '2025 HL Q16(a)(i)–(iii)',
+  stem: 'The diagram shows Rhizopus growing on bread.',
+  questionText: 'Name the structures A, B and C. Give one function of structure C, and name the method of nutrition used by Rhizopus.',
   tariffModel: { kind: 'fixed' }, totalMarks: 9,
   rows: [
-    { id: 'g-a', kind: 'gate', verbatim: 'A — Sporangium', marks: 0, exactTermRequired: true },
-    { id: 'g-b', kind: 'gate', verbatim: 'B — Spore', marks: 0, exactTermRequired: true },
-    { id: 'g-c', kind: 'gate', verbatim: 'C — Stolon', marks: 0, exactTermRequired: true },
-    { id: 'r-fn', kind: 'point', verbatim: 'One function of C — spreads the fungus (to a new food source)', marks: 3 },
-    { id: 'r-nut', kind: 'alt', verbatim: 'Method of nutrition — saprophytic', accepts: ['heterotrophic'], openList: true, marks: 6 },
+    { id: 'g-a', kind: 'gate', verbatim: 'A — Sporangium', marks: 1, exactTermRequired: true },
+    { id: 'g-b', kind: 'gate', verbatim: 'B — Spore', marks: 1, exactTermRequired: true },
+    { id: 'g-c', kind: 'gate', verbatim: 'C — Stolon', marks: 1, exactTermRequired: true },
+    { id: 'r-fn', kind: 'point', verbatim: 'One function of C — spread the fungus', marks: 3 },
+    { id: 'r-nut', kind: 'alt', verbatim: 'Method of nutrition — saprophytic', accepts: ['heterotrophic'], marks: 3 },
   ],
-  figure: {
-    candId: 'sample-placeholder', src: placeholderFungus, srcHash: 'sample',
-    alt: 'Placeholder illustration: rounded heads on upright stalks, spores dispersing to the right, and a filament running along the surface',
-    lettersVisible: ['A', 'B', 'C'],
-    attribution: 'Placeholder illustration — not the SEC figure',
-  },
+  figure: RHIZOPUS,
   labelKey: [
     { letter: 'A', meaning: 'Sporangium', askedInThisQuestion: true },
     { letter: 'B', meaning: 'Spore', askedInThisQuestion: true },
@@ -140,68 +181,59 @@ const rhizopus: SecDiagramCard = {
   schemeCitation: SCHEME_2025,
 };
 
-const digestive: SecCard = {
+/** Q16(a)(iv)2. Scheme lists nine points, "Any four 4(3)" — a bounded group. */
+const rhizopusSexual: SecCard = {
   ...shared, source: 'sec', kind: 'question',
-  id: 'bio-2025-hl-q6-ab', topicId: 'bio-2-6', conceptId: 'digestive-parts',
-  year: 2025, paperFileid: 'LC025ALP038EV', section: 'A', questionRef: '2025 HL Q6(a)',
-  questionText: 'Name the parts labelled A and B.',
-  tariffModel: { kind: 'fixed' }, totalMarks: 4,
-  rows: [
-    { id: 'r-a', kind: 'point', verbatim: 'A — Oesophagus', marks: 2 },
-    { id: 'r-b', kind: 'point', verbatim: 'B — Stomach', marks: 2 },
-  ],
-  schemeCitation: SCHEME_2025,
-};
-
-const peristalsis: SecCard = {
-  ...shared, source: 'sec', kind: 'question',
-  id: 'bio-2025-hl-q6-bc', topicId: 'bio-2-6', conceptId: 'peristalsis',
-  year: 2025, paperFileid: 'LC025ALP038EV', section: 'A', questionRef: '2025 HL Q6(b)–(c)',
-  questionText: 'Name and describe briefly the method by which food travels through structure A.',
-  tariffModel: { kind: 'fixed' }, totalMarks: 8,
-  rows: [
-    { id: 'r-name', kind: 'point', verbatim: 'Name — Peristalsis', marks: 3 },
-    { id: 'r-desc', kind: 'point', verbatim: '(involuntary) muscular contractions that push food along', marks: 3, dependsOn: 'r-name' },
-    { id: 'r-ph', kind: 'point', verbatim: 'The pH lowers as food travels from A to B', marks: 2 },
-  ],
-  schemeCitation: SCHEME_2025,
-};
-
-const waterUptake: SecCard = {
-  ...shared, source: 'sec', kind: 'question',
-  id: 'bio-2023-hl-q3', topicId: 'bio-2-6', conceptId: 'water-transport',
-  year: 2023, paperFileid: 'LC025ALP038EV', section: 'A', questionRef: '2023 HL Q3',
-  questionText: 'Outline how water from the soil reaches the leaf of a plant.',
-  tariffModel: { kind: 'orderedSplit', notation: '2(5) + 5(2)' }, totalMarks: 20,
-  rows: [
-    { id: 'w1', kind: 'point', verbatim: 'Root hair', marks: null },
-    { id: 'w2', kind: 'point', verbatim: 'Osmosis', marks: null, contextNote: 'The word alone scores nothing — it must be stated as the mechanism of uptake.' },
-    { id: 'w3', kind: 'point', verbatim: 'Xylem', marks: null, contextNote: 'Named as the vessel the water travels up.' },
-    { id: 'w4', kind: 'point', verbatim: 'Transpiration (pull)', marks: null },
-    { id: 'w5', kind: 'point', verbatim: 'Cohesion / adhesion of water molecules', marks: null, openList: true },
-  ],
-  schemeCitation: SCHEME_2023,
-};
-
-const enzymeTemp: SecCard = {
-  ...shared, source: 'sec', kind: 'question',
-  id: 'bio-2025-hl-q10a', topicId: 'bio-2-1', conceptId: 'enzyme-temperature',
-  year: 2025, paperFileid: 'LC025ALP038EV', section: 'B', questionRef: '2025 HL Q10(a)',
-  questionText: 'Describe the effect of increasing temperature on the rate of an enzyme-controlled reaction.',
+  id: 'bio-2025-hl-q16a-iv', topicId: 'bio-3-2', conceptId: 'rhizopus-sexual-reproduction',
+  paperFileid: 'LC025ALP040EV', section: 'C', questionRef: '2025 HL Q16(a)(iv)',
+  questionText: 'Describe the process of sexual reproduction in Rhizopus.',
   tariffModel: { kind: 'fixed' }, totalMarks: 12,
   rows: [
-    { id: 'e1', kind: 'point', verbatim: 'Rate increases up to the optimum', marks: 3 },
-    { id: 'e2', kind: 'point', verbatim: 'Optimum temperature is approximately 37 °C in humans', marks: 3 },
-    { id: 'e3', kind: 'point', verbatim: 'Above the optimum the enzyme denatures', marks: 3 },
-    { id: 'e4', kind: 'point', verbatim: 'The shape of the active site changes, so substrate no longer fits', marks: 3 },
+    {
+      id: 'r-group', kind: 'anyN', verbatim: 'Any four of the following', marks: null,
+      group: {
+        claimMax: 4, perOption: 3,
+        options: [
+          '+ and − strains grow close together',
+          'swellings form (opposite each other)',
+          'progametangia are formed',
+          'gametangium formed',
+          'fertilisations of haploid nuclei occur',
+          'diploid nuclei formed',
+          'zygospore formed',
+          'survives adverse conditions',
+          'germinates by meiosis when suitable conditions are present',
+        ],
+      },
+    },
   ],
   schemeCitation: SCHEME_2025,
 };
 
-/** Sample deck. Real authoring replaces this wholesale. */
-export const SAMPLE_CARDS: SecCard[] = [rhizopus, digestive, peristalsis, waterUptake, enzymeTemp];
+/** Q7(a)–(c). Scheme: "Hypothesis 2", "Conducting an experiment 3",
+ *  "A comparison to the experiment 3". */
+const scientificMethod: SecCard = {
+  ...shared, source: 'sec', kind: 'question',
+  id: 'bio-2025-hl-q7-abc', topicId: 'bio-u2', conceptId: 'scientific-method',
+  section: 'A', questionRef: '2025 HL Q7(a)–(c)',
+  questionText: 'In the scientific method, a testable statement is known as a ______. How can this statement be tested, and what is the function of a scientific control?',
+  tariffModel: { kind: 'fixed' }, totalMarks: 8,
+  rows: [
+    { id: 'r-hyp', kind: 'point', verbatim: 'Hypothesis', marks: 2 },
+    { id: 'r-test', kind: 'point', verbatim: 'Conducting an experiment', marks: 3 },
+    { id: 'r-ctrl', kind: 'point', verbatim: 'A comparison to the experiment', marks: 3 },
+  ],
+  schemeCitation: SCHEME_2025,
+};
 
-/** True while the deck is sample content, so the UI can say so plainly. */
+/** Sample deck: five real cards, every marking point and mark value transcribed
+ *  from the 2025 Higher Level scheme on disk, every figure a real crop from the
+ *  paper. Real authoring extends this; it does not replace its provenance. */
+export const SAMPLE_CARDS: SecCard[] = [
+  digestiveParts, peristalsis, rhizopus, rhizopusSexual, scientificMethod,
+];
+
+/** True while the deck is a sample slice rather than full coverage. */
 export const IS_SAMPLE_DECK = true;
 
 export const cardsForTopic = (topicId: string, cards: SecCard[] = SAMPLE_CARDS) =>

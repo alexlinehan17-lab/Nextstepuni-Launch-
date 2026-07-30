@@ -19,7 +19,6 @@ import { resolve } from 'node:path';
 import SessionScreen, {
   ENVIRONMENT,
   claimableTotal,
-  gateMissed,
   marksClaimed,
   rowMarks,
   showsRowMarks,
@@ -54,7 +53,7 @@ const renderSession = (cards: SecCard[], memories: Record<string, CardMemory> = 
   const onExit = vi.fn();
   const utils = render(
     <SessionScreen
-      cards={cards} memories={memories} subjectLabel="Biology"
+      cards={cards} subjectLabel="Biology"
       onGrade={onGrade} onFinish={onFinish} onExit={onExit}
     />,
   );
@@ -81,21 +80,25 @@ describe('mark arithmetic follows the scheme, not a convenient default', () => {
     expect(showsRowMarks(c)).toBe(false);
   });
 
-  test('a gate row is worth nothing on its own', () => {
-    expect(rowMarks(row({ kind: 'gate', marks: 0 }))).toBe(0);
+  test('an asterisked row carries its real marks', () => {
+    // The SEC asterisk means the exact term is required, not that the row is
+    // worth nothing: the 2025 scheme awards "A: *Sporangium 1".
+    expect(rowMarks(row({ kind: 'gate', marks: 1 }))).toBe(1);
   });
 
   test('an anyN group counts its claimable maximum', () => {
     expect(rowMarks(row({ kind: 'anyN', marks: null, group: { claimMax: 4, perOption: 3, options: ['a', 'b', 'c', 'd', 'e'] } }))).toBe(12);
   });
 
-  test('an unclaimed gate collapses the answer to zero', () => {
+  test('an unclaimed asterisked row costs only its own marks', () => {
+    // It does not zero the rest of the question — each asterisked item stands or
+    // falls alone, per the scheme's own preamble.
     const c = card({
-      totalMarks: 4,
-      rows: [row({ id: 'g', kind: 'gate', verbatim: 'Sporangium', marks: 0, exactTermRequired: true }), row({ id: 'r1', verbatim: 'Stomach', marks: 4 })],
+      totalMarks: 5,
+      rows: [row({ id: 'g', kind: 'gate', verbatim: 'Sporangium', marks: 1, exactTermRequired: true }), row({ id: 'r1', verbatim: 'Stomach', marks: 4 })],
     });
-    expect(gateMissed(c, { g: 'no', r1: 'yes' })).toBe(true);
-    expect(gateMissed(c, { g: 'yes', r1: 'yes' })).toBe(false);
+    expect(marksClaimed(c, { g: 'no', r1: 'yes' })).toBe(4);
+    expect(marksClaimed(c, { g: 'yes', r1: 'yes' })).toBe(5);
   });
 
   test('a synonym claim earns the mark', () => {
@@ -104,23 +107,17 @@ describe('mark arithmetic follows the scheme, not a convenient default', () => {
 });
 
 describe('the suggested grade', () => {
-  test('is always Shaky on a card the student has never met, whatever they ticked', () => {
-    // Guard: no card may leap to a long interval on a single self-graded pass.
-    expect(suggestGrade(card(), { r0: 'yes', r1: 'yes' }, undefined)).toBe('shaky');
+  test('says Got it when every mark was claimed, even on a first encounter', () => {
+    // Regression: an override used to force Shaky on a card's first showing, so a
+    // student who claimed 12 of 12 marks was told "that looks like Shaky" directly
+    // beneath "ALL 12 MARKS. NOTHING LEFT BEHIND." FSRS learning steps already
+    // stop a single pass buying a long interval, so the override bought nothing.
+    expect(suggestGrade(card(), { r0: 'yes', r1: 'yes' })).toBe('got');
   });
 
-  test('follows the ticks once the card has been met before', () => {
-    expect(suggestGrade(card(), { r0: 'yes', r1: 'yes' }, seen)).toBe('got');
-    expect(suggestGrade(card(), { r0: 'yes', r1: 'no' }, seen)).toBe('shaky');
-    expect(suggestGrade(card(), { r0: 'no', r1: 'no' }, seen)).toBe('missed');
-  });
-
-  test('is Missed it whenever a gate was left unclaimed, however much else was right', () => {
-    const c = card({
-      totalMarks: 4,
-      rows: [row({ id: 'g', kind: 'gate', verbatim: 'Sporangium', marks: 0 }), row({ id: 'r1', verbatim: 'Stomach', marks: 4 })],
-    });
-    expect(suggestGrade(c, { g: 'no', r1: 'yes' }, seen)).toBe('missed');
+  test('follows the marks', () => {
+    expect(suggestGrade(card(), { r0: 'yes', r1: 'no' })).toBe('shaky');
+    expect(suggestGrade(card(), { r0: 'no', r1: 'no' })).toBe('missed');
   });
 });
 
@@ -226,7 +223,7 @@ describe('claiming marks', () => {
   test('an asterisked row says it needs the exact term and offers no synonym escape', () => {
     const c = card({
       totalMarks: 4,
-      rows: [row({ id: 'g', kind: 'gate', verbatim: 'Sporangium', marks: 0, exactTermRequired: true }), row({ id: 'r1', verbatim: 'Stomach', marks: 4 })],
+      rows: [row({ id: 'g', kind: 'gate', verbatim: 'Sporangium', marks: 1, exactTermRequired: true }), row({ id: 'r1', verbatim: 'Stomach', marks: 3 })],
     });
     renderSession([c], { 'bio-2025-hl-q6-ab': seen });
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
@@ -336,7 +333,6 @@ describe('grading', () => {
     render(
       <SessionScreen
         cards={[card(), card({ id: 'bio-q7', questionText: 'Second.' })]}
-        memories={{ 'bio-2025-hl-q6-ab': seen }}
         subjectLabel="Biology"
         onGrade={() => 'before you finish today'}
         onExit={() => undefined}

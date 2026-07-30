@@ -35,7 +35,7 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { AnimatePresence, MotionDiv, MotionSpan, useReducedMotion } from '../Motion';
 import { rowId, type LabelKey, type MarkRow, type SecCard } from '../../types/markBank';
-import type { CardMemory, MarkBankGrade } from './scheduler';
+import type { MarkBankGrade } from './scheduler';
 
 const EASE = [0.16, 1, 0.3, 1] as number[];
 
@@ -74,7 +74,6 @@ export interface SessionScreenProps {
   /** Resolved queue for this sitting. Snapshotted by the caller so it cannot
    *  shrink underneath the student mid-session. */
   cards: SecCard[];
-  memories: Record<string, CardMemory>;
   subjectLabel: string;
   /**
    * Called on every graded card. Grades commit per card, never batched, so
@@ -94,7 +93,6 @@ export interface SessionScreenProps {
 
 /** Marks a row is worth when claimed. `anyN` groups count their claimable max. */
 export function rowMarks(row: MarkRow): number {
-  if (row.kind === 'gate') return 0;
   if (row.kind === 'anyN' && row.group) return row.group.claimMax * row.group.perOption;
   return row.marks ?? 0;
 }
@@ -118,27 +116,27 @@ export function marksClaimed(card: SecCard, claims: Record<string, RowClaim>): n
   return card.rows.reduce((n, r, i) => (claims[rowId(r, i)] !== 'no' ? n + rowMarks(r) : n), 0);
 }
 
-/** An unclaimed asterisked row collapses the whole answer to zero — that is what
- *  the SEC's asterisk convention means. */
-export function gateMissed(card: SecCard, claims: Record<string, RowClaim>): boolean {
-  return card.rows.some((r, i) => r.kind === 'gate' && claims[rowId(r, i)] === 'no');
-}
+/**
+ * The SEC's asterisk marks a row where only the exact scientific term scores, and
+ * where adding a wrong answer alongside it cancels THAT row's mark. It does not
+ * zero the rest of the question — each asterisked item stands or falls alone.
+ */
+export const needsExactTerm = (row: MarkRow) => row.kind === 'gate' || !!row.exactTermRequired;
 
 /**
- * Which grade the ticks point at.
+ * Which grade the ticks point at. It follows the marks and nothing else — a
+ * student who claimed every mark is told it looks like Got it.
  *
- * Guard: on a card's first-ever presentation the suggestion is always Shaky,
- * whatever the ticks say, so no card can leap to a long interval on a single
- * self-graded pass.
+ * There is no first-encounter override here. One used to force Shaky on a card's
+ * first showing, on the theory that a single self-graded pass should not buy a
+ * long interval; but FSRS already guarantees that through its learning steps, so
+ * the override bought nothing and produced the absurdity of "you claimed 12 of 12
+ * marks — that looks like Shaky".
  */
 export function suggestGrade(
   card: SecCard,
   claims: Record<string, RowClaim>,
-  memory: CardMemory | undefined,
 ): MarkBankGrade {
-  const firstEver = !memory || (!memory.last && memory.reps === 0);
-  if (firstEver) return 'shaky';
-  if (gateMissed(card, claims)) return 'missed';
   const total = claimableTotal(card);
   const got = marksClaimed(card, claims);
   if (!showsRowMarks(card)) {
@@ -363,7 +361,7 @@ const GRADE_COPY: Record<MarkBankGrade, string> = {
 };
 
 const SessionScreen: React.FC<SessionScreenProps> = ({
-  cards, memories, subjectLabel, onGrade, onExit, onFinish,
+  cards, subjectLabel, onGrade, onExit, onFinish,
   environmentColor = ENVIRONMENT,
 }) => {
   const reduced = useReducedMotion() ?? false;
@@ -388,9 +386,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
 
   const total = card ? claimableTotal(card) : 0;
   const got = card ? marksClaimed(card, rowClaims) : 0;
-  const missedGate = card ? gateMissed(card, rowClaims) : false;
-  const left = missedGate ? total : Math.max(0, total - got);
-  const suggested = card ? suggestGrade(card, rowClaims, memories[card.id]) : 'shaky';
+  const left = Math.max(0, total - got);
+  const suggested = card ? suggestGrade(card, rowClaims) : 'shaky';
 
   const setClaim = useCallback((id: string, next: RowClaim) => {
     setClaims(prev => ({ ...prev, [id]: next }));
@@ -462,6 +459,13 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
       minHeight: '100dvh', background: environmentColor,
       paddingBottom: 'calc(150px + var(--sab, 0px))',
       fontFamily: SANS,
+      // Full-bleed: the tool renders inside a max-width app shell, so without
+      // this the environment reads as a green column with page background either
+      // side rather than as the environment it is meant to be.
+      width: '100vw', marginLeft: 'calc(50% - 50vw)', marginRight: 'calc(50% - 50vw)',
+      // Centre the card on tall desktop viewports instead of stranding it at the
+      // top above a large empty field.
+      display: 'flex', flexDirection: 'column',
     }}>
       {/* Top rail — leaving is always safe, grades commit per card. */}
       <div style={{
@@ -486,7 +490,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
       </div>
 
       {/* The card. White, always — the environment colour never enters it. */}
-      <div style={{ maxWidth: 560, margin: '0 auto', padding: '4px 12px 0' }}>
+      <div style={{ maxWidth: 560, width: '100%', margin: '0 auto', padding: '4px 12px 0', flex: '0 0 auto' }}>
         <div style={{ background: '#FFFFFF', borderRadius: 20, overflow: 'hidden' }}>
           <div style={{ padding: '16px 18px 0' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 10 }}>
@@ -664,14 +668,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                 color: left === 0 ? SUCCESS_TEXT : RISK_TEXT,
                 font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.11em', textTransform: 'uppercase',
               }}>
-                {missedGate ? (
-                  <MotionDiv
-                    animate={reduced ? {} : { x: [0, -2, 2, 0] }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    The essential point is missing — this answer scores 0
-                  </MotionDiv>
-                ) : left === 0 ? (
+                {left === 0 ? (
                   <>All {total} marks. Nothing left behind.</>
                 ) : (
                   <>
@@ -687,11 +684,9 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               {(
                 <MotionDiv key="grades" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.18 }}>
                   <p style={{ margin: '0 0 9px', font: `400 12px/1.45 ${SANS}`, color: INK_2 }}>
-                    {missedGate
-                      ? <>You left the essential point out — that&rsquo;s a Missed it, whatever else you had.</>
-                      : showsRowMarks(card)
-                        ? <>You claimed {got} of {total} marks — that looks like {GRADE_COPY[suggested]}.</>
-                        : <>That looks like {GRADE_COPY[suggested]}.</>}
+                    {showsRowMarks(card)
+                      ? <>You claimed {got} of {total} marks — that looks like {GRADE_COPY[suggested]}.</>
+                      : <>That looks like {GRADE_COPY[suggested]}.</>}
                     <br />
                     <em style={{ color: MUTED }}>You decide. Tap any of the three.</em>
                   </p>

@@ -161,7 +161,6 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
     return (
       <SessionScreen
         cards={screen.cards}
-        memories={memories}
         subjectLabel="Biology"
         onGrade={handleGrade}
         onExit={() => setScreen({ name: 'topics' })}
@@ -184,7 +183,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
     const distinct = new Set(screen.results.map(r => r.cardId)).size;
 
     return (
-      <div style={{ minHeight: '100dvh', background: PAGE, fontFamily: SANS, padding: '28px 16px 60px' }}>
+      <div style={{ minHeight: '100dvh', background: PAGE, fontFamily: SANS, width: '100vw', marginLeft: 'calc(50% - 50vw)', marginRight: 'calc(50% - 50vw)', padding: '28px 16px 60px' }}>
         <div style={{ maxWidth: 560, margin: '0 auto' }}>
           <h2 style={{ font: `700 26px/1.2 ${SERIF}`, color: INK, margin: '0 0 18px' }}>
             {distinct === 1 ? "That's the card." : `That's the ${distinct}.`}
@@ -244,7 +243,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
 
   if (screen.name === 'topics') {
     return (
-      <div style={{ minHeight: '100dvh', background: PAGE, fontFamily: SANS }}>
+      <div style={{ minHeight: '100dvh', background: PAGE, fontFamily: SANS, width: '100vw', marginLeft: 'calc(50% - 50vw)', marginRight: 'calc(50% - 50vw)' }}>
         <div style={{ background: ENVIRONMENT, padding: '20px 16px 24px', borderRadius: '0 0 26px 26px' }}>
           <div style={{ maxWidth: 560, margin: '0 auto' }}>
             <button
@@ -343,7 +342,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
     .sort((a, b) => a - b)[0];
 
   return (
-    <div style={{ minHeight: '100dvh', background: PAGE, fontFamily: SANS }}>
+    <div style={{ minHeight: '100dvh', background: PAGE, fontFamily: SANS, width: '100vw', marginLeft: 'calc(50% - 50vw)', marginRight: 'calc(50% - 50vw)' }}>
       <MotionDiv
         initial={reduced ? false : { opacity: 0, y: -8 }}
         animate={{ opacity: 1, y: 0 }}
