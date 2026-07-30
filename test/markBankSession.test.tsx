@@ -1,0 +1,410 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Mark Bank session screen — behaviour and design guards.
+ *
+ * The design tests here are not fussiness. Two of the rules they enforce exist
+ * because breaking them silently destroys meaning: if the environment green ever
+ * shares a surface with the success green, "you had this mark" stops reading as
+ * a state; and if the suggested grade is signalled with colour rather than
+ * shape, orange starts to mean "correct", which it must never do.
+ */
+
+import { describe, test, expect, vi } from 'vitest';
+import { render, screen, fireEvent, within, waitFor } from '@testing-library/react';
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+
+import SessionScreen, {
+  ENVIRONMENT,
+  claimableTotal,
+  gateMissed,
+  marksClaimed,
+  rowMarks,
+  showsRowMarks,
+  suggestGrade,
+} from '@/components/MarkBank/SessionScreen';
+import type { MarkRow, SecCard, SecDiagramCard } from '@/types/markBank';
+import type { CardMemory } from '@/components/MarkBank/scheduler';
+
+const NOW = Date.UTC(2026, 6, 30, 12, 0, 0);
+const seen: CardMemory = { s: 6, d: 5, last: NOW - 6 * 86_400_000, reps: 3, lapses: 0, state: 2 };
+
+const row = (o: Partial<MarkRow> = {}): MarkRow => ({ id: 'r0', kind: 'point', verbatim: 'Oesophagus', marks: 2, ...o });
+
+const card = (o: Partial<SecCard> = {}): SecCard => ({
+  source: 'sec', kind: 'question',
+  id: 'bio-2025-hl-q6-ab', subjectId: 'biology', level: 'higher',
+  topicId: 'biology-2-3', conceptId: 'digestive-parts',
+  year: 2025, paperFileid: 'LC025ALP038EV', section: 'A',
+  questionRef: '2025 HL Q6(a)–(b)',
+  questionText: 'Name the parts labelled A and B.',
+  tariffModel: { kind: 'fixed' }, totalMarks: 4,
+  rows: [row({ id: 'r0', verbatim: 'Oesophagus', marks: 2 }), row({ id: 'r1', verbatim: 'Stomach', marks: 2 })],
+  schemeCitation: 'SEC marking scheme, Biology 2025 Higher Level — © State Examinations Commission',
+  specVersion: 'lc-biology-2002',
+  qa: { gates: [], humanReviewedBy: 'al', humanReviewedAt: '2026-07-30' },
+  ...o,
+} as SecCard);
+
+const renderSession = (cards: SecCard[], memories: Record<string, CardMemory> = {}) => {
+  const onGrade = vi.fn();
+  const onFinish = vi.fn();
+  const onExit = vi.fn();
+  const utils = render(
+    <SessionScreen
+      cards={cards} memories={memories} subjectLabel="Biology"
+      onGrade={onGrade} onFinish={onFinish} onExit={onExit}
+    />,
+  );
+  return { ...utils, onGrade, onFinish, onExit };
+};
+
+/* ------------------------------------------------------------ mark logic ---- */
+
+describe('mark arithmetic follows the scheme, not a convenient default', () => {
+  test('sums a fixed tariff from its rows', () => {
+    expect(claimableTotal(card())).toBe(4);
+  });
+
+  test('a best-N-of-parts card counts only the claimable subset', () => {
+    const rows = Array.from({ length: 6 }, (_, i) => row({ id: `r${i}`, verbatim: `p${i}`, marks: 4 }));
+    const c = card({ tariffModel: { kind: 'bestNofParts', answer: 5, ofParts: 6, perPart: 4 }, totalMarks: 20, rows });
+    // Six rows at 4m would read as 24 on a 20-mark question.
+    expect(claimableTotal(c)).toBe(20);
+    expect(showsRowMarks(c)).toBe(false);
+  });
+
+  test('an order-dependent split shows no per-row marks at all', () => {
+    const c = card({ tariffModel: { kind: 'orderedSplit', notation: '2(5) + 5(2)' }, totalMarks: 20 });
+    expect(showsRowMarks(c)).toBe(false);
+  });
+
+  test('a gate row is worth nothing on its own', () => {
+    expect(rowMarks(row({ kind: 'gate', marks: 0 }))).toBe(0);
+  });
+
+  test('an anyN group counts its claimable maximum', () => {
+    expect(rowMarks(row({ kind: 'anyN', marks: null, group: { claimMax: 4, perOption: 3, options: ['a', 'b', 'c', 'd', 'e'] } }))).toBe(12);
+  });
+
+  test('an unclaimed gate collapses the answer to zero', () => {
+    const c = card({
+      totalMarks: 4,
+      rows: [row({ id: 'g', kind: 'gate', verbatim: 'Sporangium', marks: 0, exactTermRequired: true }), row({ id: 'r1', verbatim: 'Stomach', marks: 4 })],
+    });
+    expect(gateMissed(c, { g: 'no', r1: 'yes' })).toBe(true);
+    expect(gateMissed(c, { g: 'yes', r1: 'yes' })).toBe(false);
+  });
+
+  test('a synonym claim earns the mark', () => {
+    expect(marksClaimed(card(), { r0: 'synonym', r1: 'no' })).toBe(2);
+  });
+});
+
+describe('the suggested grade', () => {
+  test('is always Shaky on a card the student has never met, whatever they ticked', () => {
+    // Guard: no card may leap to a long interval on a single self-graded pass.
+    expect(suggestGrade(card(), { r0: 'yes', r1: 'yes' }, undefined)).toBe('shaky');
+  });
+
+  test('follows the ticks once the card has been met before', () => {
+    expect(suggestGrade(card(), { r0: 'yes', r1: 'yes' }, seen)).toBe('got');
+    expect(suggestGrade(card(), { r0: 'yes', r1: 'no' }, seen)).toBe('shaky');
+    expect(suggestGrade(card(), { r0: 'no', r1: 'no' }, seen)).toBe('missed');
+  });
+
+  test('is Missed it whenever a gate was left unclaimed, however much else was right', () => {
+    const c = card({
+      totalMarks: 4,
+      rows: [row({ id: 'g', kind: 'gate', verbatim: 'Sporangium', marks: 0 }), row({ id: 'r1', verbatim: 'Stomach', marks: 4 })],
+    });
+    expect(suggestGrade(c, { g: 'no', r1: 'yes' }, seen)).toBe('missed');
+  });
+});
+
+/* -------------------------------------------------------------- the screen -- */
+
+describe('the question comes first and stays', () => {
+  test('shows the verbatim question, the tariff and the provenance before any reveal', () => {
+    renderSession([card()]);
+    expect(screen.getByText('Name the parts labelled A and B.')).toBeInTheDocument();
+    expect(screen.getByText('4m')).toBeInTheDocument();
+    expect(screen.getByText(/BIOLOGY · HIGHER LEVEL · 2025/i)).toBeInTheDocument();
+  });
+
+  test('hides the scheme until the student asks for it', () => {
+    renderSession([card()]);
+    expect(screen.queryByText('Oesophagus')).not.toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    expect(screen.getByText('Oesophagus')).toBeInTheDocument();
+  });
+
+  test('keeps the question on screen after the reveal, because a flip would hide it', () => {
+    // Judging yourself against an answer you can no longer see is the foresight
+    // bias that inflates self-assessment.
+    renderSession([card()]);
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    expect(screen.getByText('Name the parts labelled A and B.')).toBeInTheDocument();
+  });
+
+  test('always credits the marking scheme', () => {
+    renderSession([card()]);
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    expect(screen.getByText(/State Examinations Commission/)).toBeInTheDocument();
+  });
+});
+
+describe('claiming marks', () => {
+  test('rows start unclaimed, so overconfidence takes an action rather than an omission', () => {
+    renderSession([card()], { 'bio-2025-hl-q6-ab': seen });
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    expect(screen.getByRole('button', { name: /Oesophagus/ })).toHaveAttribute('aria-pressed', 'false');
+    expect(screen.getByText(/Marks left behind/i)).toBeInTheDocument();
+  });
+
+  test('one tap claims a row and the marks-left figure falls', () => {
+    renderSession([card()], { 'bio-2025-hl-q6-ab': seen });
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    fireEvent.click(screen.getByRole('button', { name: /Oesophagus/ }));
+    expect(screen.getByRole('button', { name: /Oesophagus/ })).toHaveAttribute('aria-pressed', 'true');
+    expect(screen.getByText(/You claimed 2 of 4 marks/)).toBeInTheDocument();
+  });
+
+  test('the marks-left figure settles on the right number', async () => {
+    // It counts DOWN as marks are claimed, so a stuck animation would leave a
+    // wrong number on screen — the one thing this strip must never do.
+    renderSession([card()], { 'bio-2025-hl-q6-ab': seen });
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    fireEvent.click(screen.getByRole('button', { name: /Oesophagus/ }));
+    const strip = screen.getByText(/Marks left behind/i);
+    await waitFor(() => expect(strip.textContent).toMatch(/2\s*$/), { timeout: 1000 });
+  });
+
+  test('the marks-left figure can never exceed the marks on the card', async () => {
+    // Regression: the count-down animation seeded its clock from
+    // performance.now() while receiving rAF's own timestamp. Where those epochs
+    // differ, progress went negative, the easing inverted, and a 9-mark card
+    // displayed "11 marks left behind" — a number the card cannot produce.
+    const c = card({
+      totalMarks: 9,
+      rows: [
+        row({ id: 'g-a', kind: 'gate', verbatim: 'A — Sporangium', marks: 0, exactTermRequired: true }),
+        row({ id: 'r-fn', verbatim: 'One function of C — spreads the fungus', marks: 3 }),
+        row({ id: 'r-nut', kind: 'alt', verbatim: 'Method of nutrition — saprophytic', marks: 6 }),
+      ],
+    });
+    renderSession([c], { 'bio-2025-hl-q6-ab': seen });
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    fireEvent.click(screen.getByRole('button', { name: /A — Sporangium/ }));
+    fireEvent.click(screen.getByRole('button', { name: /One function of C/ }));
+    const strip = screen.getByText(/Marks left behind/i);
+    await waitFor(() => {
+      const n = Number((strip.textContent || '').replace(/\D+/g, ''));
+      expect(n).toBe(6);
+    }, { timeout: 1500 });
+  });
+
+  test('shows the scheme\'s own accepted alternatives, not just the first word', () => {
+    const c = card({
+      totalMarks: 6,
+      rows: [row({ id: 'r0', kind: 'alt', verbatim: 'saprophytic', marks: 6, accepts: ['heterotrophic'] })],
+    });
+    renderSession([c], { 'bio-2025-hl-q6-ab': seen });
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    expect(screen.getByText(/heterotrophic/)).toBeInTheDocument();
+  });
+
+  test('"I had them all" claims every row at once', () => {
+    renderSession([card()], { 'bio-2025-hl-q6-ab': seen });
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    fireEvent.click(screen.getByRole('button', { name: /I had them all/i }));
+    expect(screen.getByText(/Nothing left behind/i)).toBeInTheDocument();
+  });
+
+  test('an asterisked row says it needs the exact term and offers no synonym escape', () => {
+    const c = card({
+      totalMarks: 4,
+      rows: [row({ id: 'g', kind: 'gate', verbatim: 'Sporangium', marks: 0, exactTermRequired: true }), row({ id: 'r1', verbatim: 'Stomach', marks: 4 })],
+    });
+    renderSession([c], { 'bio-2025-hl-q6-ab': seen });
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    expect(screen.getByText(/needs the exact term/i)).toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /I had something like this/i })).not.toBeInTheDocument();
+  });
+
+  test('an open-ended list lets a correct student say so', () => {
+    // The scheme's ellipsis means the list is not exhaustive; a student who
+    // wrote "cartilage" was right and must not be told otherwise.
+    const c = card({ rows: [row({ id: 'r0', verbatim: 'muscles or tendons or ligament', marks: 4, openList: true })], totalMarks: 4 });
+    renderSession([c], { 'bio-2025-hl-q6-ab': seen });
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    fireEvent.click(screen.getByRole('button', { name: /I had something like this/i }));
+    expect(screen.getByText(/accepts synonyms here/i)).toBeInTheDocument();
+  });
+
+  test('a dependent row cannot be claimed until the row it rests on is', () => {
+    const c = card({
+      totalMarks: 6,
+      rows: [row({ id: 'r0', verbatim: 'X — the neuron', marks: 2 }), row({ id: 'r1', verbatim: 'Justify: it is connected to a muscle cell', marks: 4, dependsOn: 'r0' })],
+    });
+    renderSession([c], { 'bio-2025-hl-q6-ab': seen });
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    expect(screen.getByRole('button', { name: /Justify/ })).toBeDisabled();
+    fireEvent.click(screen.getByRole('button', { name: /X — the neuron/ }));
+    expect(screen.getByRole('button', { name: /Justify/ })).not.toBeDisabled();
+  });
+
+  test('shows no per-row mark chips when the scheme does not define them', () => {
+    const c = card({ tariffModel: { kind: 'orderedSplit', notation: '2(5) + 5(2)' }, totalMarks: 20 });
+    renderSession([c], { 'bio-2025-hl-q6-ab': seen });
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    expect(screen.queryByText('−2m')).not.toBeInTheDocument();
+    expect(screen.getByText(/depends on how many you got/i)).toBeInTheDocument();
+  });
+});
+
+describe('a diagram card always decodes its figure', () => {
+  test('shows every label, including the ones this question never asked about', () => {
+    const diagram: SecDiagramCard = {
+      ...card(),
+      kind: 'diagram',
+      figure: {
+        candId: 'cand_1', src: '/exam-figures/biology/x.png', srcHash: 'h',
+        alt: 'Digestive tract with lettered leader lines',
+        lettersVisible: ['A', 'B', 'C'], attribution: 'SEC Biology 2025 HL Q6',
+      },
+      labelKey: [
+        { letter: 'A', meaning: 'Oesophagus', askedInThisQuestion: true },
+        { letter: 'B', meaning: 'Stomach', askedInThisQuestion: true },
+        { letter: 'C', meaning: 'Small intestine', askedInThisQuestion: false },
+      ],
+    };
+    renderSession([diagram], { 'bio-2025-hl-q6-ab': seen });
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    const key = screen.getByText(/What every label means/i).parentElement!;
+    expect(within(key).getByText(/Small intestine/)).toBeInTheDocument();
+    expect(within(key).getByText(/not asked/i)).toBeInTheDocument();
+    // The figure carries its attribution.
+    expect(screen.getByAltText(/Digestive tract/)).toBeInTheDocument();
+  });
+});
+
+describe('grading', () => {
+  test('offers all three grades and lets the student overrule the suggestion', () => {
+    const { onGrade } = renderSession([card()], { 'bio-2025-hl-q6-ab': seen });
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    fireEvent.click(screen.getByRole('button', { name: /I had them all/i }));
+    for (const label of ['Missed it', 'Shaky', 'Got it']) {
+      expect(screen.getByRole('button', { name: label })).toBeEnabled();
+    }
+    fireEvent.click(screen.getByRole('button', { name: 'Missed it' }));
+    expect(onGrade).toHaveBeenCalledWith(expect.objectContaining({ grade: 'missed', marksClaimed: 4, marksAvailable: 4 }));
+  });
+
+  test('says the decision is the student\'s', () => {
+    renderSession([card()], { 'bio-2025-hl-q6-ab': seen });
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    expect(screen.getByText(/You decide\. Tap any of the three\./)).toBeInTheDocument();
+  });
+
+  test('marks the suggestion with shape, never with colour', () => {
+    renderSession([card()], { 'bio-2025-hl-q6-ab': seen });
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    fireEvent.click(screen.getByRole('button', { name: /I had them all/i }));
+    const suggestedBtn = screen.getByRole('button', { name: 'Got it' });
+    expect(suggestedBtn).toHaveAttribute('data-suggested');
+    // Every grade button keeps the same neutral surface — no green "right" button.
+    for (const label of ['Missed it', 'Shaky', 'Got it']) {
+      const style = screen.getByRole('button', { name: label }).getAttribute('style') || '';
+      expect(style).toMatch(/background:\s*(rgb\(255,\s*255,\s*255\)|#FFFFFF|white)/i);
+    }
+  });
+
+  test('never renders "Missed it" in red', () => {
+    renderSession([card()], { 'bio-2025-hl-q6-ab': seen });
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    const style = screen.getByRole('button', { name: 'Missed it' }).getAttribute('style') || '';
+    expect(style).not.toMatch(/red|#e\d|#f00|rgb\(2[0-5]\d,\s*[0-5]\d,/i);
+  });
+
+  test('finishes the session and reports every result', () => {
+    const { onFinish } = renderSession([card()], { 'bio-2025-hl-q6-ab': seen });
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    fireEvent.click(screen.getByRole('button', { name: 'Got it' }));
+    expect(onFinish).toHaveBeenCalledWith([expect.objectContaining({ cardId: 'bio-2025-hl-q6-ab', grade: 'got' })]);
+  });
+
+  test('a missed card comes back later in the same sitting', () => {
+    const two = [card(), card({ id: 'bio-2025-hl-q7', questionText: 'Second question.' })];
+    const { onFinish } = renderSession(two, { 'bio-2025-hl-q6-ab': seen, 'bio-2025-hl-q7': seen });
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    fireEvent.click(screen.getByRole('button', { name: 'Missed it' }));
+    // Still going: the missed card was re-queued rather than the session ending.
+    expect(onFinish).not.toHaveBeenCalled();
+    expect(screen.getByText('Second question.')).toBeInTheDocument();
+  });
+
+  test('leaving mid-session is safe because grades commit per card', () => {
+    const { onGrade, onExit } = renderSession([card(), card({ id: 'bio-q7', questionText: 'Second.' })], { 'bio-2025-hl-q6-ab': seen });
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    fireEvent.click(screen.getByRole('button', { name: 'Got it' }));
+    expect(onGrade).toHaveBeenCalledTimes(1);
+    fireEvent.click(screen.getByRole('button', { name: /Leave this session/i }));
+    expect(onExit).toHaveBeenCalled();
+  });
+});
+
+/* ------------------------------------------------------- design guardrails -- */
+
+describe('design rules that carry meaning', () => {
+  const source = readFileSync(resolve(__dirname, '..', 'components/MarkBank/SessionScreen.tsx'), 'utf8');
+
+  test('the environment colour is far from the success token, so the two can never be confused', () => {
+    // Both are green by the founder's choice, which makes distance and
+    // containment load-bearing rather than cosmetic.
+    const lum = (hex: string) => {
+      const n = parseInt(hex.slice(1), 16);
+      return (0.2126 * ((n >> 16) & 255) + 0.7152 * ((n >> 8) & 255) + 0.0722 * (n & 255)) / 255;
+    };
+    expect(Math.abs(lum(ENVIRONMENT) - lum('#3A8D5F'))).toBeGreaterThan(0.2);
+  });
+
+  test('containment: the environment colour never appears inside a card surface', () => {
+    // Card interiors are white or the cool plate; state colours live only there.
+    expect(source).not.toMatch(new RegExp(`background:\\s*['\`]?${ENVIRONMENT}`, 'i'));
+    const envUses = source.match(/environmentColor/g) || [];
+    expect(envUses.length).toBeGreaterThan(0);
+  });
+
+  test('no banned surfaces: warm cream, coloured left borders, gradients or emoji', () => {
+    expect(source).not.toMatch(/#FDF8F0|#FAF7F4|#F9F9F7/i);
+    expect(source).not.toMatch(/borderLeft(?!Radius)|border-l-4/);
+    expect(source).not.toMatch(/linear-gradient|backdrop-filter/);
+    expect(source).not.toMatch(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}]/u);
+  });
+
+  test('the grade bar is solid, never translucent glass over the colour field', () => {
+    // Blurred or translucent white over a saturated ground goes muddy and is a
+    // reliable tell of generated UI. Translucent white is fine ON the
+    // environment itself — the progress rail and counter use it correctly —
+    // so this checks the fixed bar's own surface rather than banning the value.
+    const bar = source.slice(source.indexOf("position: 'fixed'"));
+    expect(bar).toMatch(/background:\s*'#FFFFFF'/);
+    expect(bar.slice(0, bar.indexOf('</div>'))).not.toMatch(/rgba\(255,\s*255,\s*255,\s*0\.\d/);
+    expect(source).not.toMatch(/backdrop-filter|backdropFilter/);
+  });
+
+  test('marks are set in the mono face so a tariff can never be mistaken for a word', () => {
+    expect(source).toMatch(/MONO/);
+  });
+
+  test('respects a reduced-motion preference', () => {
+    expect(source).toMatch(/useReducedMotion/);
+  });
+
+  test('the safe area is honoured, so the grade bar clears the home indicator', () => {
+    expect(source).toMatch(/--sab/);
+  });
+});
