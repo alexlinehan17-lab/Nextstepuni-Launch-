@@ -80,6 +80,25 @@ export const STRANDS: StrandRef[] = [
 export const ALL_TOPICS: TopicRef[] = STRANDS.flatMap(s => s.topics);
 export const topicById = (id: string) => ALL_TOPICS.find(t => t.id === id);
 
+/**
+ * Figure files that hold the WRONG image and must never be bound to a card.
+ *
+ * The Biology corpus contains four byte-identical pairs. In each pair one name
+ * matches its content and the other inherited its neighbour's crop, because a
+ * verifying agent hand-transcribed the crop path and the apply script deduped on
+ * destination filename rather than source hash. I opened all four and resolved
+ * which side is which: the file named for what it actually shows is kept, its
+ * twin is blocked here. The four figures those blocked names should have held
+ * were never shipped at all and need re-cropping from the paper.
+ */
+export const BLOCKED_FIGURES: readonly string[] = [
+  'biology-2025-hl-alveolus-gas-exchange', // holds the Rhizopus crop
+  'biology-2025-hl-lymphocyte',            // holds the cell-division crop
+  'biology-2025-hl-shoulder-joint',        // holds the circulatory-system crop
+  'biology-2025-hl-neuron',                // holds the pupil-eyes crop
+  'biology-2025-hl-root-longitudinal-section', // crop truncates labels the question asks for
+];
+
 const SCHEME_2025 = 'Marking points quoted from the SEC marking scheme, Biology 2025 Higher Level — © State Examinations Commission.';
 
 const shared = {

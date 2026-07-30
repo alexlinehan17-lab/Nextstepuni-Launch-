@@ -85,8 +85,21 @@ describe('mark arithmetic follows the scheme, not a convenient default', () => {
     expect(rowMarks(row({ kind: 'gate', marks: 1 }))).toBe(1);
   });
 
-  test('an anyN group counts its claimable maximum', () => {
+  test('an anyN group is worth its claimable maximum in total', () => {
     expect(rowMarks(row({ kind: 'anyN', marks: null, group: { claimMax: 4, perOption: 3, options: ['a', 'b', 'c', 'd', 'e'] } }))).toBe(12);
+  });
+
+  test('an anyN group scores by how many options the student actually had', () => {
+    // Treating "Any four 4(3)" as one tick makes a 12-mark row all-or-nothing and
+    // leaves a student who had two of them no way to say so.
+    const c = card({
+      totalMarks: 12,
+      rows: [row({ id: 'g', kind: 'anyN', marks: null, group: { claimMax: 4, perOption: 3, options: ['a', 'b', 'c', 'd', 'e'] } })],
+    });
+    expect(marksClaimed(c, {}, { g: [0, 1] })).toBe(6);
+    expect(marksClaimed(c, {}, { g: [0, 1, 2, 3] })).toBe(12);
+    // Never more than the examiner marks, however many are ticked.
+    expect(marksClaimed(c, {}, { g: [0, 1, 2, 3, 4] })).toBe(12);
   });
 
   test('an unclaimed asterisked row costs only its own marks', () => {
@@ -252,6 +265,38 @@ describe('claiming marks', () => {
     expect(screen.getByRole('button', { name: /Justify/ })).toBeDisabled();
     fireEvent.click(screen.getByRole('button', { name: /X — the neuron/ }));
     expect(screen.getByRole('button', { name: /Justify/ })).not.toBeDisabled();
+  });
+
+  test('lets a student claim options inside an "Any four" group one by one', () => {
+    const c = card({
+      totalMarks: 12,
+      rows: [row({
+        id: 'g', kind: 'anyN', verbatim: 'Any four of the following', marks: null,
+        group: { claimMax: 4, perOption: 3, options: ['zygospore formed', 'diploid nuclei formed', 'gametangium formed', 'progametangia are formed', 'survives adverse conditions'] },
+      })],
+    });
+    renderSession([c], { 'bio-2025-hl-q6-ab': seen });
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    expect(screen.getByText(/Any 4 of these — 3 marks each/)).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /zygospore formed/ }));
+    fireEvent.click(screen.getByRole('button', { name: /diploid nuclei formed/ }));
+    expect(screen.getByText(/You claimed 6 of 12 marks/)).toBeInTheDocument();
+  });
+
+  test('stops a student claiming more of a group than the examiner marks', () => {
+    const c = card({
+      totalMarks: 6,
+      rows: [row({
+        id: 'g', kind: 'anyN', verbatim: 'Any two', marks: null,
+        group: { claimMax: 2, perOption: 3, options: ['alpha', 'beta', 'gamma'] },
+      })],
+    });
+    renderSession([c], { 'bio-2025-hl-q6-ab': seen });
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    fireEvent.click(screen.getByRole('button', { name: /alpha/ }));
+    fireEvent.click(screen.getByRole('button', { name: /beta/ }));
+    expect(screen.getByRole('button', { name: /gamma/ })).toBeDisabled();
+    expect(screen.getByText(/any more score nothing/i)).toBeInTheDocument();
   });
 
   test('shows no per-row mark chips when the scheme does not define them', () => {

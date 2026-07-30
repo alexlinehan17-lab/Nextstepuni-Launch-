@@ -45,7 +45,6 @@ const PLATE = '#F0FAF8';
 const SUCCESS = '#3A8D5F';
 const SUCCESS_TINT = '#E8F2EC';
 const SUCCESS_TEXT = '#1F5F3E';
-const PAGE = '#f0f0f0';
 
 const SERIF = "'Source Serif 4', Georgia, serif";
 const SANS = "'DM Sans', system-ui, sans-serif";
@@ -180,7 +179,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
     const distinct = new Set(screen.results.map(r => r.cardId)).size;
 
     return (
-      <div style={{ minHeight: '100dvh', background: PAGE, fontFamily: SANS, width: '100vw', marginLeft: 'calc(50% - 50vw)', marginRight: 'calc(50% - 50vw)', padding: '28px 16px 60px' }}>
+      <div style={{ minHeight: '100dvh', fontFamily: SANS, padding: '28px 16px 60px' }}>
         <div style={{ maxWidth: 560, margin: '0 auto' }}>
           <h2 style={{ font: `700 26px/1.2 ${SERIF}`, color: INK, margin: '0 0 18px' }}>
             {distinct === 1 ? "That's the card." : `That's the ${distinct}.`}
@@ -240,7 +239,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
 
   if (screen.name === 'topics') {
     return (
-      <div style={{ minHeight: '100dvh', background: PAGE, fontFamily: SANS, width: '100vw', marginLeft: 'calc(50% - 50vw)', marginRight: 'calc(50% - 50vw)' }}>
+      <div style={{ minHeight: '100dvh', fontFamily: SANS }}>
         <div style={{ padding: '20px 16px 4px' }}>
           <div style={{ maxWidth: 560, margin: '0 auto' }}>
             <button
@@ -339,7 +338,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
     .sort((a, b) => a - b)[0];
 
   return (
-    <div style={{ minHeight: '100dvh', background: PAGE, fontFamily: SANS, width: '100vw', marginLeft: 'calc(50% - 50vw)', marginRight: 'calc(50% - 50vw)' }}>
+    <div style={{ minHeight: '100dvh', fontFamily: SANS }}>
       <div style={{ padding: '26px 16px 4px' }}>
         <div style={{ maxWidth: 560, margin: '0 auto' }}>
           {nothingMet ? (

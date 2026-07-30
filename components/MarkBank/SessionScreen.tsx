@@ -46,7 +46,6 @@ const LABEL = '#9e9186';
 const HAIRLINE = '#ece9e4';
 const MUTED_BORDER = '#d0cdc8';
 const PLATE = '#F0FAF8';
-const PAGE = '#f0f0f0';
 const SUCCESS = '#3A8D5F';
 const SUCCESS_TINT = '#E8F2EC';
 const SUCCESS_TEXT = '#1F5F3E';
@@ -107,9 +106,22 @@ export function claimableTotal(card: SecCard): number {
  *  a per-row number would be arithmetically wrong, so we show none. */
 export const showsRowMarks = (card: SecCard) => card.tariffModel.kind === 'fixed';
 
-export function marksClaimed(card: SecCard, claims: Record<string, RowClaim>): number {
+export function marksClaimed(
+  card: SecCard,
+  claims: Record<string, RowClaim>,
+  picks: Record<string, number[]> = {},
+): number {
   if (!showsRowMarks(card)) return 0;
-  return card.rows.reduce((n, r, i) => (claims[rowId(r, i)] !== 'no' ? n + rowMarks(r) : n), 0);
+  return card.rows.reduce((n, r, i) => {
+    const id = rowId(r, i);
+    // A bounded "Any four 4(3)" group is scored by how many the student actually
+    // had, not as one all-or-nothing block worth twelve marks.
+    if (r.kind === 'anyN' && r.group) {
+      const chosen = Math.min(picks[id]?.length ?? 0, r.group.claimMax);
+      return n + chosen * r.group.perOption;
+    }
+    return claims[id] !== 'no' ? n + rowMarks(r) : n;
+  }, 0);
 }
 
 /**
@@ -132,9 +144,10 @@ export const needsExactTerm = (row: MarkRow) => row.kind === 'gate' || !!row.exa
 export function suggestGrade(
   card: SecCard,
   claims: Record<string, RowClaim>,
+  picks: Record<string, number[]> = {},
 ): MarkBankGrade {
   const total = claimableTotal(card);
-  const got = marksClaimed(card, claims);
+  const got = marksClaimed(card, claims, picks);
   if (!showsRowMarks(card)) {
     const claimedRows = card.rows.filter((r, i) => claims[rowId(r, i)] !== 'no').length;
     if (claimedRows === 0) return 'missed';
@@ -202,12 +215,96 @@ const MarkRowView: React.FC<{
   showMarks: boolean;
   blocked: boolean;
   reduced: boolean;
+  picks: number[];
   onClaim: (id: string, next: RowClaim) => void;
-}> = ({ row, id, index, claim, showMarks, blocked, reduced, onClaim }) => {
+  onPick: (id: string, optionIndex: number) => void;
+}> = ({ row, id, index, claim, showMarks, blocked, reduced, picks, onClaim, onPick }) => {
   const claimed = claim !== 'no';
   const marks = rowMarks(row);
   const isGate = row.kind === 'gate';
   const canSynonym = !row.exactTermRequired && (row.openList || row.kind === 'alt');
+
+  // A bounded "Any four 4(3)" group. The scheme lets a student bank any four of
+  // nine, so each option is claimed on its own: treating the whole group as one
+  // tick makes a twelve-mark row all-or-nothing and gives a student who had two
+  // of them no way to say so.
+  if (row.kind === 'anyN' && row.group) {
+    const g = row.group;
+    const chosen = Math.min(picks.length, g.claimMax);
+    const atCap = chosen >= g.claimMax;
+    return (
+      <MotionDiv
+        initial={reduced ? false : { opacity: 0, x: -8 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.24, ease: EASE, delay: reduced ? 0 : index * 0.055 }}
+        style={{
+          marginBottom: 8, padding: '12px 13px', borderRadius: 12,
+          border: `1.5px solid ${chosen ? SUCCESS : MUTED_BORDER}`,
+          background: chosen ? SUCCESS_TINT : '#FFFFFF',
+        }}
+      >
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 10, marginBottom: 9 }}>
+          <span style={{ font: `600 12.5px/1.35 ${SANS}`, color: chosen ? SUCCESS_TEXT : INK_2 }}>
+            Any {g.claimMax} of these — {g.perOption} marks each
+          </span>
+          {showMarks && (
+            <span style={{
+              font: `700 10.5px/1.7 ${MONO}`, borderRadius: 6, padding: '0 6px', whiteSpace: 'nowrap',
+              fontVariantNumeric: 'tabular-nums',
+              background: chosen ? SUCCESS_TINT : RISK_TINT,
+              color: chosen ? SUCCESS_TEXT : RISK_TEXT,
+            }}>
+              {chosen} of {g.claimMax}
+            </span>
+          )}
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
+          {g.options.map((option, oi) => {
+            const on = picks.includes(oi);
+            const disabled = !on && atCap;
+            return (
+              <button
+                key={oi}
+                type="button"
+                onClick={() => onPick(id, oi)}
+                disabled={disabled}
+                aria-pressed={on}
+                style={{
+                  width: '100%', textAlign: 'left', display: 'grid',
+                  gridTemplateColumns: '16px 1fr', gap: 8, alignItems: 'start',
+                  padding: '7px 9px', borderRadius: 9,
+                  border: `1px solid ${on ? SUCCESS : '#e4e0da'}`,
+                  background: on ? '#FFFFFF' : 'transparent',
+                  cursor: disabled ? 'not-allowed' : 'pointer',
+                  opacity: disabled ? 0.45 : 1,
+                  font: `500 12.5px/1.4 ${SANS}`, color: on ? SUCCESS_TEXT : INK_2,
+                }}
+              >
+                <span style={{
+                  width: 14, height: 14, borderRadius: 4, marginTop: 2, flex: 'none',
+                  background: on ? SUCCESS : 'transparent',
+                  border: on ? 'none' : `1.5px solid ${MUTED_BORDER}`,
+                  display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+                }}>
+                  {on && (
+                    <svg width="9" height="9" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                      <path d="M2.5 6.2l2.4 2.4L9.5 3.9" stroke="#FFFFFF" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  )}
+                </span>
+                <span>{option}</span>
+              </button>
+            );
+          })}
+        </div>
+        {atCap && (
+          <p style={{ margin: '8px 0 0', font: `400 11.5px/1.4 ${SANS}`, color: MUTED }}>
+            That&rsquo;s the {g.claimMax} the examiner marks — any more score nothing.
+          </p>
+        )}
+      </MotionDiv>
+    );
+  }
 
   return (
     <MotionDiv
@@ -266,11 +363,6 @@ const MarkRowView: React.FC<{
           {row.contextNote && (
             <span style={{ display: 'block', marginTop: 3, font: `400 12px/1.4 ${SANS}`, color: MUTED }}>
               {row.contextNote}
-            </span>
-          )}
-          {row.kind === 'anyN' && row.group && (
-            <span style={{ display: 'block', marginTop: 5, font: `400 11.5px/1.4 ${SANS}`, color: MUTED }}>
-              Any {row.group.claimMax} of: {row.group.options.join(' · ')}
             </span>
           )}
         </span>
@@ -354,6 +446,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const [position, setPosition] = useState(0);
   const [revealed, setRevealed] = useState(false);
   const [claims, setClaims] = useState<Record<string, RowClaim>>({});
+  const [picks, setPicks] = useState<Record<string, number[]>>({});
   const [results, setResults] = useState<SessionCardResult[]>([]);
   const [whisper, setWhisper] = useState<string | null>(null);
   const byId = useMemo(() => new Map(cards.map(c => [c.id, c])), [cards]);
@@ -370,19 +463,38 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   }, [card, claimOf]);
 
   const total = card ? claimableTotal(card) : 0;
-  const got = card ? marksClaimed(card, rowClaims) : 0;
+  const got = card ? marksClaimed(card, rowClaims, picks) : 0;
   const left = Math.max(0, total - got);
-  const suggested = card ? suggestGrade(card, rowClaims) : 'shaky';
+  const suggested = card ? suggestGrade(card, rowClaims, picks) : 'shaky';
 
   const setClaim = useCallback((id: string, next: RowClaim) => {
     setClaims(prev => ({ ...prev, [id]: next }));
   }, []);
 
+  /** Toggle one option inside a bounded "Any N" group. */
+  const togglePick = useCallback((id: string, optionIndex: number) => {
+    setPicks(prev => {
+      const current = prev[id] ?? [];
+      const next = current.includes(optionIndex)
+        ? current.filter(i => i !== optionIndex)
+        : [...current, optionIndex];
+      return { ...prev, [id]: next };
+    });
+  }, []);
+
   const claimAll = useCallback(() => {
     if (!card) return;
     const all: Record<string, RowClaim> = {};
-    card.rows.forEach((r, i) => { all[rowId(r, i)] = 'yes'; });
+    const allPicks: Record<string, number[]> = {};
+    card.rows.forEach((r, i) => {
+      const id = rowId(r, i);
+      all[id] = 'yes';
+      if (r.kind === 'anyN' && r.group) {
+        allPicks[id] = Array.from({ length: r.group.claimMax }, (_, k) => k);
+      }
+    });
     setClaims(prev => ({ ...prev, ...all }));
+    setPicks(prev => ({ ...prev, ...allPicks }));
   }, [card]);
 
   const commit = useCallback((grade: MarkBankGrade) => {
@@ -421,6 +533,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
 
     setQueue(nextQueue);
     setClaims({});
+    setPicks({});
     setRevealed(false);
 
     if (position + 1 >= nextQueue.length || finished) onFinish(nextResults);
@@ -441,21 +554,15 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
 
   return (
     <div style={{
-      minHeight: '100dvh', background: PAGE,
+      minHeight: '100dvh',
       paddingBottom: 'calc(150px + var(--sab, 0px))',
       fontFamily: SANS,
-      // Full-bleed: the tool renders inside a max-width app shell, so without
-      // this the environment reads as a green column with page background either
-      // side rather than as the environment it is meant to be.
-      width: '100vw', marginLeft: 'calc(50% - 50vw)', marginRight: 'calc(50% - 50vw)',
-      // Centre the card on tall desktop viewports instead of stranding it at the
-      // top above a large empty field.
       display: 'flex', flexDirection: 'column',
     }}>
       {/* Top rail — leaving is always safe, grades commit per card. */}
       <div style={{
         position: 'sticky', top: 0, zIndex: 3, display: 'flex', alignItems: 'center', gap: 12,
-        padding: '14px 16px', background: PAGE,
+        padding: '14px 16px',
       }}>
         <button
           type="button" onClick={onExit} aria-label="Leave this session"
@@ -578,7 +685,9 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                         showMarks={showsRowMarks(card)}
                         blocked={!!row.dependsOn && claimOf(row.dependsOn) === 'no'}
                         reduced={reduced}
+                        picks={picks[id] ?? []}
                         onClaim={setClaim}
+                        onPick={togglePick}
                       />
                     );
                   })}

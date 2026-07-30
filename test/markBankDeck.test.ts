@@ -16,7 +16,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { createHash } from 'node:crypto';
 
-import { SAMPLE_CARDS, STRANDS, ALL_TOPICS } from '../components/MarkBank/deck';
+import { SAMPLE_CARDS, STRANDS, ALL_TOPICS, BLOCKED_FIGURES } from '../components/MarkBank/deck';
 import { isDiagramCard, isContentFreeRow, looksLikeSectionLabel, tariffReconciles, MAX_ROWS, isValidCardId } from '../types/markBank';
 
 const ROOT = resolve(__dirname, '..');
@@ -125,6 +125,15 @@ describe('figures are real crops from the paper', () => {
       expect(createHash('md5').update(bytes).digest('hex')).toBe(fig.srcHash);
     },
   );
+
+  test('no card binds a figure known to hold the wrong image', () => {
+    // Four files in the Biology corpus carry a neighbour's crop. Binding one puts
+    // a confidently-captioned wrong diagram in front of a student — the exact
+    // defect that made Diagram Vault unusable.
+    for (const fig of figures) {
+      expect(BLOCKED_FIGURES, `${fig.candId} is a known-corrupt crop`).not.toContain(fig.candId);
+    }
+  });
 
   test('no two cards bind the same source crop', () => {
     // The Biology corpus has four byte-identical duplicate pairs; binding both
