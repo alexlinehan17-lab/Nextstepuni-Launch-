@@ -76,7 +76,7 @@ const Harness: React.FC = () => {
           Restart session
         </button>
         <span style={{ color: '#8a8a8a' }}>
-          {CARDS.length} real cards from the 2025 Higher Level paper and scheme
+          {CARDS.length} cards from the Higher Level deck
         </span>
       </div>
 

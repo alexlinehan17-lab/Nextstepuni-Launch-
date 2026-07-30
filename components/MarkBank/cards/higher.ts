@@ -6845,8 +6845,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-HL-paper1-p05-i0",
           "src": "/exam-figures/biology/markbank/biology-2021-HL-paper1-p05-i0.png",
-          "srcHash": "d9718a837b10198f4b0b39b5ba4a8ea6",
-          "alt": "A single ovoid cell outline containing fine fibres fanning out from two dark poles (top and bottom) and meeting in the middle. Short, thick, curved chromosomes are drawn in two separated groups being pulled toward the poles. A horizontal leader line labelled \"Chromosome (sister chromatid)\" points to one chromosome on the left, and a diagonal arrow labelled X points into the fan of fibres just below the top pole. Clipped fragments of the printed question sit outside the drawing at the top (\"...ng in relation to mitosis.\") and bottom (\"...me the stage of mitosis shown in the diagram.\") — the diagram itself and both its labels are complete (verified against page 5 of the source PDF).",
+          "srcHash": "7ad8a20d66770a6f4d13d34d1fab9ecc",
+          "alt": "Black-and-white line drawing of a single oval cell/nucleus caught mid-division. A dark centriole pair with radiating aster lines sits at the top pole and another at the bottom pole; thin spindle fibres run pole to pole; eight thick black hook/V-shaped chromatids sit in two groups of four, one group drawn toward each pole. A leader line from the printed words 'Chromosome (sister chromatid)' points to one of the upper chromatids; a bold arrow labelled X points to one of the spindle fibres near the top pole. The crop carries the tail of a text line above ('following in relation to mitosis.') and slices the next line of question text across the bottom edge ('(a) Name the stage of mitosis shown in the diagram') — the diagram itself and both its labels are intact.",
           "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "X"
@@ -6870,8 +6870,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-HL-paper1-p05-i0",
           "src": "/exam-figures/biology/markbank/biology-2021-HL-paper1-p05-i0.png",
-          "srcHash": "d9718a837b10198f4b0b39b5ba4a8ea6",
-          "alt": "A single ovoid cell outline containing fine fibres fanning out from two dark poles (top and bottom) and meeting in the middle. Short, thick, curved chromosomes are drawn in two separated groups being pulled toward the poles. A horizontal leader line labelled \"Chromosome (sister chromatid)\" points to one chromosome on the left, and a diagonal arrow labelled X points into the fan of fibres just below the top pole. Clipped fragments of the printed question sit outside the drawing at the top (\"...ng in relation to mitosis.\") and bottom (\"...me the stage of mitosis shown in the diagram.\") — the diagram itself and both its labels are complete (verified against page 5 of the source PDF).",
+          "srcHash": "7ad8a20d66770a6f4d13d34d1fab9ecc",
+          "alt": "Black-and-white line drawing of a single oval cell/nucleus caught mid-division. A dark centriole pair with radiating aster lines sits at the top pole and another at the bottom pole; thin spindle fibres run pole to pole; eight thick black hook/V-shaped chromatids sit in two groups of four, one group drawn toward each pole. A leader line from the printed words 'Chromosome (sister chromatid)' points to one of the upper chromatids; a bold arrow labelled X points to one of the spindle fibres near the top pole. The crop carries the tail of a text line above ('following in relation to mitosis.') and slices the next line of question text across the bottom edge ('(a) Name the stage of mitosis shown in the diagram') — the diagram itself and both its labels are intact.",
           "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "X"
@@ -6895,8 +6895,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-HL-paper1-p05-i0",
           "src": "/exam-figures/biology/markbank/biology-2021-HL-paper1-p05-i0.png",
-          "srcHash": "d9718a837b10198f4b0b39b5ba4a8ea6",
-          "alt": "A single ovoid cell outline containing fine fibres fanning out from two dark poles (top and bottom) and meeting in the middle. Short, thick, curved chromosomes are drawn in two separated groups being pulled toward the poles. A horizontal leader line labelled \"Chromosome (sister chromatid)\" points to one chromosome on the left, and a diagonal arrow labelled X points into the fan of fibres just below the top pole. Clipped fragments of the printed question sit outside the drawing at the top (\"...ng in relation to mitosis.\") and bottom (\"...me the stage of mitosis shown in the diagram.\") — the diagram itself and both its labels are complete (verified against page 5 of the source PDF).",
+          "srcHash": "7ad8a20d66770a6f4d13d34d1fab9ecc",
+          "alt": "Black-and-white line drawing of a single oval cell/nucleus caught mid-division. A dark centriole pair with radiating aster lines sits at the top pole and another at the bottom pole; thin spindle fibres run pole to pole; eight thick black hook/V-shaped chromatids sit in two groups of four, one group drawn toward each pole. A leader line from the printed words 'Chromosome (sister chromatid)' points to one of the upper chromatids; a bold arrow labelled X points to one of the spindle fibres near the top pole. The crop carries the tail of a text line above ('following in relation to mitosis.') and slices the next line of question text across the bottom edge ('(a) Name the stage of mitosis shown in the diagram') — the diagram itself and both its labels are intact.",
           "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "X"
@@ -6920,8 +6920,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-HL-paper1-p05-i0",
           "src": "/exam-figures/biology/markbank/biology-2021-HL-paper1-p05-i0.png",
-          "srcHash": "d9718a837b10198f4b0b39b5ba4a8ea6",
-          "alt": "A single ovoid cell outline containing fine fibres fanning out from two dark poles (top and bottom) and meeting in the middle. Short, thick, curved chromosomes are drawn in two separated groups being pulled toward the poles. A horizontal leader line labelled \"Chromosome (sister chromatid)\" points to one chromosome on the left, and a diagonal arrow labelled X points into the fan of fibres just below the top pole. Clipped fragments of the printed question sit outside the drawing at the top (\"...ng in relation to mitosis.\") and bottom (\"...me the stage of mitosis shown in the diagram.\") — the diagram itself and both its labels are complete (verified against page 5 of the source PDF).",
+          "srcHash": "7ad8a20d66770a6f4d13d34d1fab9ecc",
+          "alt": "Black-and-white line drawing of a single oval cell/nucleus caught mid-division. A dark centriole pair with radiating aster lines sits at the top pole and another at the bottom pole; thin spindle fibres run pole to pole; eight thick black hook/V-shaped chromatids sit in two groups of four, one group drawn toward each pole. A leader line from the printed words 'Chromosome (sister chromatid)' points to one of the upper chromatids; a bold arrow labelled X points to one of the spindle fibres near the top pole. The crop carries the tail of a text line above ('following in relation to mitosis.') and slices the next line of question text across the bottom edge ('(a) Name the stage of mitosis shown in the diagram') — the diagram itself and both its labels are intact.",
           "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "X"
@@ -6945,8 +6945,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-HL-paper2-p05-i0",
           "src": "/exam-figures/biology/markbank/biology-2021-HL-paper2-p05-i0.png",
-          "srcHash": "29b7b4e5805d11e515d6cbf939bded45",
-          "alt": "A shaded, three-dimensional cutaway drawing of finger-shaped intestinal villi. The front villus is sliced open to reveal one straight central vessel running up its core surrounded by a dense mesh of fine looping vessels; its outer surface is drawn as a beaded brush-border epithelium, and a band of connective/muscle tissue with two circular vessel cross-sections forms the base slab. Three leaders: \"Epithelium\" with an arrow to the beaded outer layer, a bold X with a horizontal arrow into the straight central vessel, and \"Blood capillary\" with an arrow to the looping network beside it. The mark tally \"(27)\" is printed at the bottom right. Fragments of question text are clipped at the top and bottom edges; the drawing and all three labels are complete (verified against page 5 of the source PDF).",
+          "srcHash": "15df0f33b89d0b4faaa02cd2c65a978a",
+          "alt": "Composite crop: the left two-thirds is the printed question text (parts (i)–(vii) about villi, ending with the mark allocation '(27)'), and the right third is a shaded three-dimensional cutaway drawing of a longitudinal section through intestinal villi. Several finger-like projections stand side by side; the front one is cut open to show its interior. An arrow from 'Epithelium' points to the brush-bordered surface layer, a bold arrow labelled X points to the pale straight central vessel running up the middle of the cut villus, and an arrow from 'Blood capillary' points to the mesh of looping vessels surrounding it. At the base are layers of tissue containing two small dark circular cross-sections. The bottom edge slices the first line of the next part ('(c) The...'); the drawing and its labels are intact.",
           "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "X"
@@ -6971,8 +6971,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-HL-paper2-p05-i0",
           "src": "/exam-figures/biology/markbank/biology-2021-HL-paper2-p05-i0.png",
-          "srcHash": "29b7b4e5805d11e515d6cbf939bded45",
-          "alt": "A shaded, three-dimensional cutaway drawing of finger-shaped intestinal villi. The front villus is sliced open to reveal one straight central vessel running up its core surrounded by a dense mesh of fine looping vessels; its outer surface is drawn as a beaded brush-border epithelium, and a band of connective/muscle tissue with two circular vessel cross-sections forms the base slab. Three leaders: \"Epithelium\" with an arrow to the beaded outer layer, a bold X with a horizontal arrow into the straight central vessel, and \"Blood capillary\" with an arrow to the looping network beside it. The mark tally \"(27)\" is printed at the bottom right. Fragments of question text are clipped at the top and bottom edges; the drawing and all three labels are complete (verified against page 5 of the source PDF).",
+          "srcHash": "15df0f33b89d0b4faaa02cd2c65a978a",
+          "alt": "Composite crop: the left two-thirds is the printed question text (parts (i)–(vii) about villi, ending with the mark allocation '(27)'), and the right third is a shaded three-dimensional cutaway drawing of a longitudinal section through intestinal villi. Several finger-like projections stand side by side; the front one is cut open to show its interior. An arrow from 'Epithelium' points to the brush-bordered surface layer, a bold arrow labelled X points to the pale straight central vessel running up the middle of the cut villus, and an arrow from 'Blood capillary' points to the mesh of looping vessels surrounding it. At the base are layers of tissue containing two small dark circular cross-sections. The bottom edge slices the first line of the next part ('(c) The...'); the drawing and its labels are intact.",
           "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "X"
@@ -6998,8 +6998,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-HL-paper2-p06-i0",
           "src": "/exam-figures/biology/markbank/biology-2021-HL-paper2-p06-i0.png",
-          "srcHash": "b5161abe291be1a8be07642bfcd0b877",
-          "alt": "A plain black-line drawing of a single flower with no showy petals. Two long, narrow, sharply pointed bracts enclose the centre. Three club-shaped anthers hang outside the flower on thin stalks — one at the top right (A), one at the mid-left and one at the lower left. B labels a stalk running inside the flower. C labels a small sac-like body at the centre whose upper edge is drawn as a zig-zag. D labels a dense tuft of fine feathery hairs hanging down from the centre. Question text is clipped at the top (\"...agram is of a flower.\") and bottom (\"Name the structures labelled A, B and C.\"); the drawing and all four letters are complete (verified against page 6 of the source PDF).",
+          "srcHash": "b47f1f1b47ade8fa339f47e442bd7285",
+          "alt": "Outline line drawing of a single flower of the grass type, headed by the printed line '(b) The diagram is of a flower.' Two long pointed lance-shaped bracts enclose the flower; four elongated capsule-shaped anthers dangle outside on long slender filaments; a lumpy rounded structure sits at the centre; and a long fine feathery brush hangs down below it. Four horizontal leader arrows run in from the right: A to one of the dangling anthers at top right, B to the slender stalk carrying it, C to the lumpy central structure, and D to the feathery brush at the bottom. The complete question line '(i) Name the structures labelled A, B and C.' sits below the drawing.",
           "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "A",
@@ -7026,8 +7026,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-HL-paper2-p06-i0",
           "src": "/exam-figures/biology/markbank/biology-2021-HL-paper2-p06-i0.png",
-          "srcHash": "b5161abe291be1a8be07642bfcd0b877",
-          "alt": "A plain black-line drawing of a single flower with no showy petals. Two long, narrow, sharply pointed bracts enclose the centre. Three club-shaped anthers hang outside the flower on thin stalks — one at the top right (A), one at the mid-left and one at the lower left. B labels a stalk running inside the flower. C labels a small sac-like body at the centre whose upper edge is drawn as a zig-zag. D labels a dense tuft of fine feathery hairs hanging down from the centre. Question text is clipped at the top (\"...agram is of a flower.\") and bottom (\"Name the structures labelled A, B and C.\"); the drawing and all four letters are complete (verified against page 6 of the source PDF).",
+          "srcHash": "b47f1f1b47ade8fa339f47e442bd7285",
+          "alt": "Outline line drawing of a single flower of the grass type, headed by the printed line '(b) The diagram is of a flower.' Two long pointed lance-shaped bracts enclose the flower; four elongated capsule-shaped anthers dangle outside on long slender filaments; a lumpy rounded structure sits at the centre; and a long fine feathery brush hangs down below it. Four horizontal leader arrows run in from the right: A to one of the dangling anthers at top right, B to the slender stalk carrying it, C to the lumpy central structure, and D to the feathery brush at the bottom. The complete question line '(i) Name the structures labelled A, B and C.' sits below the drawing.",
           "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "A",
@@ -7054,8 +7054,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-HL-paper2-p06-i0",
           "src": "/exam-figures/biology/markbank/biology-2021-HL-paper2-p06-i0.png",
-          "srcHash": "b5161abe291be1a8be07642bfcd0b877",
-          "alt": "A plain black-line drawing of a single flower with no showy petals. Two long, narrow, sharply pointed bracts enclose the centre. Three club-shaped anthers hang outside the flower on thin stalks — one at the top right (A), one at the mid-left and one at the lower left. B labels a stalk running inside the flower. C labels a small sac-like body at the centre whose upper edge is drawn as a zig-zag. D labels a dense tuft of fine feathery hairs hanging down from the centre. Question text is clipped at the top (\"...agram is of a flower.\") and bottom (\"Name the structures labelled A, B and C.\"); the drawing and all four letters are complete (verified against page 6 of the source PDF).",
+          "srcHash": "b47f1f1b47ade8fa339f47e442bd7285",
+          "alt": "Outline line drawing of a single flower of the grass type, headed by the printed line '(b) The diagram is of a flower.' Two long pointed lance-shaped bracts enclose the flower; four elongated capsule-shaped anthers dangle outside on long slender filaments; a lumpy rounded structure sits at the centre; and a long fine feathery brush hangs down below it. Four horizontal leader arrows run in from the right: A to one of the dangling anthers at top right, B to the slender stalk carrying it, C to the lumpy central structure, and D to the feathery brush at the bottom. The complete question line '(i) Name the structures labelled A, B and C.' sits below the drawing.",
           "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "A",
@@ -7083,8 +7083,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-HL-paper2-p06-i0",
           "src": "/exam-figures/biology/markbank/biology-2021-HL-paper2-p06-i0.png",
-          "srcHash": "b5161abe291be1a8be07642bfcd0b877",
-          "alt": "A plain black-line drawing of a single flower with no showy petals. Two long, narrow, sharply pointed bracts enclose the centre. Three club-shaped anthers hang outside the flower on thin stalks — one at the top right (A), one at the mid-left and one at the lower left. B labels a stalk running inside the flower. C labels a small sac-like body at the centre whose upper edge is drawn as a zig-zag. D labels a dense tuft of fine feathery hairs hanging down from the centre. Question text is clipped at the top (\"...agram is of a flower.\") and bottom (\"Name the structures labelled A, B and C.\"); the drawing and all four letters are complete (verified against page 6 of the source PDF).",
+          "srcHash": "b47f1f1b47ade8fa339f47e442bd7285",
+          "alt": "Outline line drawing of a single flower of the grass type, headed by the printed line '(b) The diagram is of a flower.' Two long pointed lance-shaped bracts enclose the flower; four elongated capsule-shaped anthers dangle outside on long slender filaments; a lumpy rounded structure sits at the centre; and a long fine feathery brush hangs down below it. Four horizontal leader arrows run in from the right: A to one of the dangling anthers at top right, B to the slender stalk carrying it, C to the lumpy central structure, and D to the feathery brush at the bottom. The complete question line '(i) Name the structures labelled A, B and C.' sits below the drawing.",
           "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "A",
@@ -7111,8 +7111,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-HL-paper2-p06-i0",
           "src": "/exam-figures/biology/markbank/biology-2021-HL-paper2-p06-i0.png",
-          "srcHash": "b5161abe291be1a8be07642bfcd0b877",
-          "alt": "A plain black-line drawing of a single flower with no showy petals. Two long, narrow, sharply pointed bracts enclose the centre. Three club-shaped anthers hang outside the flower on thin stalks — one at the top right (A), one at the mid-left and one at the lower left. B labels a stalk running inside the flower. C labels a small sac-like body at the centre whose upper edge is drawn as a zig-zag. D labels a dense tuft of fine feathery hairs hanging down from the centre. Question text is clipped at the top (\"...agram is of a flower.\") and bottom (\"Name the structures labelled A, B and C.\"); the drawing and all four letters are complete (verified against page 6 of the source PDF).",
+          "srcHash": "b47f1f1b47ade8fa339f47e442bd7285",
+          "alt": "Outline line drawing of a single flower of the grass type, headed by the printed line '(b) The diagram is of a flower.' Two long pointed lance-shaped bracts enclose the flower; four elongated capsule-shaped anthers dangle outside on long slender filaments; a lumpy rounded structure sits at the centre; and a long fine feathery brush hangs down below it. Four horizontal leader arrows run in from the right: A to one of the dangling anthers at top right, B to the slender stalk carrying it, C to the lumpy central structure, and D to the feathery brush at the bottom. The complete question line '(i) Name the structures labelled A, B and C.' sits below the drawing.",
           "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "A",
@@ -7139,8 +7139,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-HL-paper2-p07-i0",
           "src": "/exam-figures/biology/markbank/biology-2021-HL-paper2-p07-i0.png",
-          "srcHash": "fc8ac5f628ddb3bffcf134202204a02b",
-          "alt": "A shaded three-dimensional block of human skin, cut open on the front and right faces, with five hairs projecting at an angle from the top surface. A has a long horizontal arrow from the left pointing to a dark, deep hair follicle with a hair inside it and a lobed gland attached to its side. B has a long horizontal arrow from the right pointing to a hollow, thick-walled tube that arches up to just beneath the surface, with fine branching vessels spreading around it. C has a short arrow from the right pointing to a tight coil of tubing low on the right, connected by a dark wavy duct that runs up and opens at the skin surface. A grey cobbled subcutaneous layer forms the base. Question text is clipped at the top and bottom edges; the drawing and all three letters are complete (verified against page 7 of the source PDF).",
+          "srcHash": "2941e9c87203901d4dadf1f32e3a2f25",
+          "alt": "Grey-shaded three-dimensional block diagram of a section through skin, with five hairs emerging from the top surface. On the left, a dark hair sits in its follicle with a lobed gland beside it; in the centre, a vessel loops up from the deep tissue to just beneath the surface layer; on the right, a tightly coiled ball of tubing connects by a wavy duct to a pore on the surface. A layer of rounded fat-like cells runs along the base with vessels threading through it. Three bold horizontal arrows: A points to the hair in its follicle, B to the crest of the central vessel loop, C to the coiled ball of tubing. The top line of question text ('...skin is important in excretion and temperature regulation.') is complete; the bottom edge slices the line '(i) Which labelled structure is involved in vasoconstriction?' — the diagram and all three labels are intact.",
           "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "A",
@@ -7166,8 +7166,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-HL-paper2-p07-i0",
           "src": "/exam-figures/biology/markbank/biology-2021-HL-paper2-p07-i0.png",
-          "srcHash": "fc8ac5f628ddb3bffcf134202204a02b",
-          "alt": "A shaded three-dimensional block of human skin, cut open on the front and right faces, with five hairs projecting at an angle from the top surface. A has a long horizontal arrow from the left pointing to a dark, deep hair follicle with a hair inside it and a lobed gland attached to its side. B has a long horizontal arrow from the right pointing to a hollow, thick-walled tube that arches up to just beneath the surface, with fine branching vessels spreading around it. C has a short arrow from the right pointing to a tight coil of tubing low on the right, connected by a dark wavy duct that runs up and opens at the skin surface. A grey cobbled subcutaneous layer forms the base. Question text is clipped at the top and bottom edges; the drawing and all three letters are complete (verified against page 7 of the source PDF).",
+          "srcHash": "2941e9c87203901d4dadf1f32e3a2f25",
+          "alt": "Grey-shaded three-dimensional block diagram of a section through skin, with five hairs emerging from the top surface. On the left, a dark hair sits in its follicle with a lobed gland beside it; in the centre, a vessel loops up from the deep tissue to just beneath the surface layer; on the right, a tightly coiled ball of tubing connects by a wavy duct to a pore on the surface. A layer of rounded fat-like cells runs along the base with vessels threading through it. Three bold horizontal arrows: A points to the hair in its follicle, B to the crest of the central vessel loop, C to the coiled ball of tubing. The top line of question text ('...skin is important in excretion and temperature regulation.') is complete; the bottom edge slices the line '(i) Which labelled structure is involved in vasoconstriction?' — the diagram and all three labels are intact.",
           "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "A",
@@ -7193,8 +7193,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-HL-paper2-p07-i0",
           "src": "/exam-figures/biology/markbank/biology-2021-HL-paper2-p07-i0.png",
-          "srcHash": "fc8ac5f628ddb3bffcf134202204a02b",
-          "alt": "A shaded three-dimensional block of human skin, cut open on the front and right faces, with five hairs projecting at an angle from the top surface. A has a long horizontal arrow from the left pointing to a dark, deep hair follicle with a hair inside it and a lobed gland attached to its side. B has a long horizontal arrow from the right pointing to a hollow, thick-walled tube that arches up to just beneath the surface, with fine branching vessels spreading around it. C has a short arrow from the right pointing to a tight coil of tubing low on the right, connected by a dark wavy duct that runs up and opens at the skin surface. A grey cobbled subcutaneous layer forms the base. Question text is clipped at the top and bottom edges; the drawing and all three letters are complete (verified against page 7 of the source PDF).",
+          "srcHash": "2941e9c87203901d4dadf1f32e3a2f25",
+          "alt": "Grey-shaded three-dimensional block diagram of a section through skin, with five hairs emerging from the top surface. On the left, a dark hair sits in its follicle with a lobed gland beside it; in the centre, a vessel loops up from the deep tissue to just beneath the surface layer; on the right, a tightly coiled ball of tubing connects by a wavy duct to a pore on the surface. A layer of rounded fat-like cells runs along the base with vessels threading through it. Three bold horizontal arrows: A points to the hair in its follicle, B to the crest of the central vessel loop, C to the coiled ball of tubing. The top line of question text ('...skin is important in excretion and temperature regulation.') is complete; the bottom edge slices the line '(i) Which labelled structure is involved in vasoconstriction?' — the diagram and all three labels are intact.",
           "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "A",
@@ -7220,8 +7220,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-HL-paper2-p07-i0",
           "src": "/exam-figures/biology/markbank/biology-2021-HL-paper2-p07-i0.png",
-          "srcHash": "fc8ac5f628ddb3bffcf134202204a02b",
-          "alt": "A shaded three-dimensional block of human skin, cut open on the front and right faces, with five hairs projecting at an angle from the top surface. A has a long horizontal arrow from the left pointing to a dark, deep hair follicle with a hair inside it and a lobed gland attached to its side. B has a long horizontal arrow from the right pointing to a hollow, thick-walled tube that arches up to just beneath the surface, with fine branching vessels spreading around it. C has a short arrow from the right pointing to a tight coil of tubing low on the right, connected by a dark wavy duct that runs up and opens at the skin surface. A grey cobbled subcutaneous layer forms the base. Question text is clipped at the top and bottom edges; the drawing and all three letters are complete (verified against page 7 of the source PDF).",
+          "srcHash": "2941e9c87203901d4dadf1f32e3a2f25",
+          "alt": "Grey-shaded three-dimensional block diagram of a section through skin, with five hairs emerging from the top surface. On the left, a dark hair sits in its follicle with a lobed gland beside it; in the centre, a vessel loops up from the deep tissue to just beneath the surface layer; on the right, a tightly coiled ball of tubing connects by a wavy duct to a pore on the surface. A layer of rounded fat-like cells runs along the base with vessels threading through it. Three bold horizontal arrows: A points to the hair in its follicle, B to the crest of the central vessel loop, C to the coiled ball of tubing. The top line of question text ('...skin is important in excretion and temperature regulation.') is complete; the bottom edge slices the line '(i) Which labelled structure is involved in vasoconstriction?' — the diagram and all three labels are intact.",
           "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "A",
@@ -7248,8 +7248,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-HL-paper2-p08-i0",
           "src": "/exam-figures/biology/markbank/biology-2021-HL-paper2-p08-i0.png",
-          "srcHash": "a13d67d12078f0cf22c6fd8380405d69",
-          "alt": "A hand-drawn line graph with unscaled axes: a vertical axis labelled \"Relative antibody concentration\" and a horizontal axis labelled \"Time (days)\". A single continuous curve runs flat along the baseline, rises into a small, low, broad bump, settles back near the baseline, then climbs steeply into a peak roughly four times taller, falls away and levels off on a raised plateau at the right. A bold A with a diagonal arrow points down to the baseline just before the small bump; a bold B with a diagonal arrow points down to the baseline just before the tall peak. Nothing is clipped — the whole graph, both axis labels and both letters are inside the frame.",
+          "srcHash": "68f9fba34370022ab31fbc3d74318b70",
+          "alt": "A sketch graph with no gridlines, numbers or tick marks. The vertical axis is labelled 'Relative antibody concentration', the horizontal axis 'Time (days)'. A single continuous curve runs along the baseline, rises to a small low bump, drops back to a low plateau, then climbs steeply to a peak roughly four times the height of the first bump before falling to a plateau that stays well above the baseline. Two bold arrows label points on the curve: A points to the very start of the curve at the origin, B points to the foot of the steep second rise.",
           "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "A",
@@ -7274,8 +7274,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-HL-paper2-p08-i0",
           "src": "/exam-figures/biology/markbank/biology-2021-HL-paper2-p08-i0.png",
-          "srcHash": "a13d67d12078f0cf22c6fd8380405d69",
-          "alt": "A hand-drawn line graph with unscaled axes: a vertical axis labelled \"Relative antibody concentration\" and a horizontal axis labelled \"Time (days)\". A single continuous curve runs flat along the baseline, rises into a small, low, broad bump, settles back near the baseline, then climbs steeply into a peak roughly four times taller, falls away and levels off on a raised plateau at the right. A bold A with a diagonal arrow points down to the baseline just before the small bump; a bold B with a diagonal arrow points down to the baseline just before the tall peak. Nothing is clipped — the whole graph, both axis labels and both letters are inside the frame.",
+          "srcHash": "68f9fba34370022ab31fbc3d74318b70",
+          "alt": "A sketch graph with no gridlines, numbers or tick marks. The vertical axis is labelled 'Relative antibody concentration', the horizontal axis 'Time (days)'. A single continuous curve runs along the baseline, rises to a small low bump, drops back to a low plateau, then climbs steeply to a peak roughly four times the height of the first bump before falling to a plateau that stays well above the baseline. Two bold arrows label points on the curve: A points to the very start of the curve at the origin, B points to the foot of the steep second rise.",
           "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "A",
@@ -7301,8 +7301,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-HL-paper2-p09-i1",
           "src": "/exam-figures/biology/markbank/biology-2021-HL-paper2-p09-i1.png",
-          "srcHash": "3951b4397992c8c5b400f3406a20a20a",
-          "alt": "A black-line drawing of a mould. Four upright stalks rise from a common base, each capped by a round head speckled with dots; the head at the far left has split open and a loose cloud of small circles is drifting away from it, labelled \"Spores\" by two arrows from the left. A bold A at the top has an arrow pointing down onto the upright stalk just below one of the round heads. A bold B on the right has two arrows, one pointing left to the horizontal thread running off to the left and one pointing down to the horizontal thread running off to the right at the base. \"Rhizoid\" at the lower left has an arrow to the branching root-like threads spreading down from the base. The bottom line of clipped question text is sliced in half by the bottom edge; the drawing and both letters are complete (verified against page 9 of the source PDF).",
+          "srcHash": "0f9cb003fa20c60e1cdb4e96fbe4fec3",
+          "alt": "Line drawing of a mould/fungus (bread mould), headed by '(a) The diagram shows an organism you have studied.' Four round stippled heads sit on top of long wavy upright stalks; the left-hand head has burst and a cloud of small open circles streams away from it, with two arrows running in from the word 'Spores' to individual circles. Horizontal threads run along the base connecting two clusters, and fine branching root-like threads spread downward from each cluster, with an arrow from the word 'Rhizoid' pointing to one branch. Label A has a single arrow to the upright stalk just beneath the top-right round head; label B has two arrows, both pointing to the horizontal threads at the base. NOTE: this is the bread-mould figure — do not bind it to any respiratory/alveolus question.",
           "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "A",
@@ -7327,8 +7327,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-HL-paper2-p09-i1",
           "src": "/exam-figures/biology/markbank/biology-2021-HL-paper2-p09-i1.png",
-          "srcHash": "3951b4397992c8c5b400f3406a20a20a",
-          "alt": "A black-line drawing of a mould. Four upright stalks rise from a common base, each capped by a round head speckled with dots; the head at the far left has split open and a loose cloud of small circles is drifting away from it, labelled \"Spores\" by two arrows from the left. A bold A at the top has an arrow pointing down onto the upright stalk just below one of the round heads. A bold B on the right has two arrows, one pointing left to the horizontal thread running off to the left and one pointing down to the horizontal thread running off to the right at the base. \"Rhizoid\" at the lower left has an arrow to the branching root-like threads spreading down from the base. The bottom line of clipped question text is sliced in half by the bottom edge; the drawing and both letters are complete (verified against page 9 of the source PDF).",
+          "srcHash": "0f9cb003fa20c60e1cdb4e96fbe4fec3",
+          "alt": "Line drawing of a mould/fungus (bread mould), headed by '(a) The diagram shows an organism you have studied.' Four round stippled heads sit on top of long wavy upright stalks; the left-hand head has burst and a cloud of small open circles streams away from it, with two arrows running in from the word 'Spores' to individual circles. Horizontal threads run along the base connecting two clusters, and fine branching root-like threads spread downward from each cluster, with an arrow from the word 'Rhizoid' pointing to one branch. Label A has a single arrow to the upright stalk just beneath the top-right round head; label B has two arrows, both pointing to the horizontal threads at the base. NOTE: this is the bread-mould figure — do not bind it to any respiratory/alveolus question.",
           "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "A",
@@ -7354,8 +7354,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-HL-paper2-p09-i1",
           "src": "/exam-figures/biology/markbank/biology-2021-HL-paper2-p09-i1.png",
-          "srcHash": "3951b4397992c8c5b400f3406a20a20a",
-          "alt": "A black-line drawing of a mould. Four upright stalks rise from a common base, each capped by a round head speckled with dots; the head at the far left has split open and a loose cloud of small circles is drifting away from it, labelled \"Spores\" by two arrows from the left. A bold A at the top has an arrow pointing down onto the upright stalk just below one of the round heads. A bold B on the right has two arrows, one pointing left to the horizontal thread running off to the left and one pointing down to the horizontal thread running off to the right at the base. \"Rhizoid\" at the lower left has an arrow to the branching root-like threads spreading down from the base. The bottom line of clipped question text is sliced in half by the bottom edge; the drawing and both letters are complete (verified against page 9 of the source PDF).",
+          "srcHash": "0f9cb003fa20c60e1cdb4e96fbe4fec3",
+          "alt": "Line drawing of a mould/fungus (bread mould), headed by '(a) The diagram shows an organism you have studied.' Four round stippled heads sit on top of long wavy upright stalks; the left-hand head has burst and a cloud of small open circles streams away from it, with two arrows running in from the word 'Spores' to individual circles. Horizontal threads run along the base connecting two clusters, and fine branching root-like threads spread downward from each cluster, with an arrow from the word 'Rhizoid' pointing to one branch. Label A has a single arrow to the upright stalk just beneath the top-right round head; label B has two arrows, both pointing to the horizontal threads at the base. NOTE: this is the bread-mould figure — do not bind it to any respiratory/alveolus question.",
           "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "A",
@@ -7381,8 +7381,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-HL-paper2-p09-i0",
           "src": "/exam-figures/biology/markbank/biology-2021-HL-paper2-p09-i0.png",
-          "srcHash": "7c591d693c4e844cab32d2aaf6c4d96b",
-          "alt": "A single large cell with an irregular, lobed outline and cytoplasm drawn as dense stippling. B has a long leader from the upper left to a clear, empty round vacuole in the upper middle. \"Nucleus\" is written at the lower left with a leader to a large, darkly stippled oval left of centre. C has a leader from the lower right to a small oval body enclosing a dark stippled object. A is a square bracket at the top right spanning a blunt lobed projection of the cell that is curling around a much smaller stippled organism, which is labelled \"Euglena\" in italics with its own arrow. Three or four smaller empty vacuoles are scattered through the cytoplasm. Clipped question text runs along the top and bottom edges; the drawing and all letters are complete (verified against page 9 of the source PDF).",
+          "srcHash": "521549e760910120fcc006aa4c1895c7",
+          "alt": "Pen-and-ink drawing of a single irregular blob-shaped cell with a stippled interior and several blunt lobes bulging from its edge. A large stippled oval near the centre is picked out by an arrow from the word 'Nucleus'. A clear empty circle in the upper middle is picked out by a line labelled B. A square bracket at the right spans one blunt lobe and is labelled A. A small vacuole containing a dark ingested body, lower centre, is picked out by an arrow labelled C. At the right edge, two lobes curve around a small elongated organism labelled in italics 'Euglena', which is in the act of being engulfed. The top edge slices the printed line '(b) The diagram below shows a unicellular organism.'; the drawing and all three letter labels are intact.",
           "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "A",
@@ -7408,8 +7408,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-HL-paper2-p09-i0",
           "src": "/exam-figures/biology/markbank/biology-2021-HL-paper2-p09-i0.png",
-          "srcHash": "7c591d693c4e844cab32d2aaf6c4d96b",
-          "alt": "A single large cell with an irregular, lobed outline and cytoplasm drawn as dense stippling. B has a long leader from the upper left to a clear, empty round vacuole in the upper middle. \"Nucleus\" is written at the lower left with a leader to a large, darkly stippled oval left of centre. C has a leader from the lower right to a small oval body enclosing a dark stippled object. A is a square bracket at the top right spanning a blunt lobed projection of the cell that is curling around a much smaller stippled organism, which is labelled \"Euglena\" in italics with its own arrow. Three or four smaller empty vacuoles are scattered through the cytoplasm. Clipped question text runs along the top and bottom edges; the drawing and all letters are complete (verified against page 9 of the source PDF).",
+          "srcHash": "521549e760910120fcc006aa4c1895c7",
+          "alt": "Pen-and-ink drawing of a single irregular blob-shaped cell with a stippled interior and several blunt lobes bulging from its edge. A large stippled oval near the centre is picked out by an arrow from the word 'Nucleus'. A clear empty circle in the upper middle is picked out by a line labelled B. A square bracket at the right spans one blunt lobe and is labelled A. A small vacuole containing a dark ingested body, lower centre, is picked out by an arrow labelled C. At the right edge, two lobes curve around a small elongated organism labelled in italics 'Euglena', which is in the act of being engulfed. The top edge slices the printed line '(b) The diagram below shows a unicellular organism.'; the drawing and all three letter labels are intact.",
           "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "A",
@@ -7435,8 +7435,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-HL-paper2-p09-i0",
           "src": "/exam-figures/biology/markbank/biology-2021-HL-paper2-p09-i0.png",
-          "srcHash": "7c591d693c4e844cab32d2aaf6c4d96b",
-          "alt": "A single large cell with an irregular, lobed outline and cytoplasm drawn as dense stippling. B has a long leader from the upper left to a clear, empty round vacuole in the upper middle. \"Nucleus\" is written at the lower left with a leader to a large, darkly stippled oval left of centre. C has a leader from the lower right to a small oval body enclosing a dark stippled object. A is a square bracket at the top right spanning a blunt lobed projection of the cell that is curling around a much smaller stippled organism, which is labelled \"Euglena\" in italics with its own arrow. Three or four smaller empty vacuoles are scattered through the cytoplasm. Clipped question text runs along the top and bottom edges; the drawing and all letters are complete (verified against page 9 of the source PDF).",
+          "srcHash": "521549e760910120fcc006aa4c1895c7",
+          "alt": "Pen-and-ink drawing of a single irregular blob-shaped cell with a stippled interior and several blunt lobes bulging from its edge. A large stippled oval near the centre is picked out by an arrow from the word 'Nucleus'. A clear empty circle in the upper middle is picked out by a line labelled B. A square bracket at the right spans one blunt lobe and is labelled A. A small vacuole containing a dark ingested body, lower centre, is picked out by an arrow labelled C. At the right edge, two lobes curve around a small elongated organism labelled in italics 'Euglena', which is in the act of being engulfed. The top edge slices the printed line '(b) The diagram below shows a unicellular organism.'; the drawing and all three letter labels are intact.",
           "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "A",
@@ -7463,8 +7463,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-HL-paper2-p09-i0",
           "src": "/exam-figures/biology/markbank/biology-2021-HL-paper2-p09-i0.png",
-          "srcHash": "7c591d693c4e844cab32d2aaf6c4d96b",
-          "alt": "A single large cell with an irregular, lobed outline and cytoplasm drawn as dense stippling. B has a long leader from the upper left to a clear, empty round vacuole in the upper middle. \"Nucleus\" is written at the lower left with a leader to a large, darkly stippled oval left of centre. C has a leader from the lower right to a small oval body enclosing a dark stippled object. A is a square bracket at the top right spanning a blunt lobed projection of the cell that is curling around a much smaller stippled organism, which is labelled \"Euglena\" in italics with its own arrow. Three or four smaller empty vacuoles are scattered through the cytoplasm. Clipped question text runs along the top and bottom edges; the drawing and all letters are complete (verified against page 9 of the source PDF).",
+          "srcHash": "521549e760910120fcc006aa4c1895c7",
+          "alt": "Pen-and-ink drawing of a single irregular blob-shaped cell with a stippled interior and several blunt lobes bulging from its edge. A large stippled oval near the centre is picked out by an arrow from the word 'Nucleus'. A clear empty circle in the upper middle is picked out by a line labelled B. A square bracket at the right spans one blunt lobe and is labelled A. A small vacuole containing a dark ingested body, lower centre, is picked out by an arrow labelled C. At the right edge, two lobes curve around a small elongated organism labelled in italics 'Euglena', which is in the act of being engulfed. The top edge slices the printed line '(b) The diagram below shows a unicellular organism.'; the drawing and all three letter labels are intact.",
           "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "A",
@@ -7490,8 +7490,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-HL-paper2-p09-i0",
           "src": "/exam-figures/biology/markbank/biology-2021-HL-paper2-p09-i0.png",
-          "srcHash": "7c591d693c4e844cab32d2aaf6c4d96b",
-          "alt": "A single large cell with an irregular, lobed outline and cytoplasm drawn as dense stippling. B has a long leader from the upper left to a clear, empty round vacuole in the upper middle. \"Nucleus\" is written at the lower left with a leader to a large, darkly stippled oval left of centre. C has a leader from the lower right to a small oval body enclosing a dark stippled object. A is a square bracket at the top right spanning a blunt lobed projection of the cell that is curling around a much smaller stippled organism, which is labelled \"Euglena\" in italics with its own arrow. Three or four smaller empty vacuoles are scattered through the cytoplasm. Clipped question text runs along the top and bottom edges; the drawing and all letters are complete (verified against page 9 of the source PDF).",
+          "srcHash": "521549e760910120fcc006aa4c1895c7",
+          "alt": "Pen-and-ink drawing of a single irregular blob-shaped cell with a stippled interior and several blunt lobes bulging from its edge. A large stippled oval near the centre is picked out by an arrow from the word 'Nucleus'. A clear empty circle in the upper middle is picked out by a line labelled B. A square bracket at the right spans one blunt lobe and is labelled A. A small vacuole containing a dark ingested body, lower centre, is picked out by an arrow labelled C. At the right edge, two lobes curve around a small elongated organism labelled in italics 'Euglena', which is in the act of being engulfed. The top edge slices the printed line '(b) The diagram below shows a unicellular organism.'; the drawing and all three letter labels are intact.",
           "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "A",
@@ -7517,8 +7517,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-HL-paper2-p10-i1",
           "src": "/exam-figures/biology/markbank/biology-2021-HL-paper2-p10-i1.png",
-          "srcHash": "39e1da0ada411de08231a5e8bb755775",
-          "alt": "A black-line drawing of the spinal cord in cross section — the butterfly-shaped inner outline with a small central canal, sitting at the right of the frame — with a reflex arc drawn onto its left side. A bold X at the top has a short arrow pointing down onto the outer boundary line of the cord. \"Neuron B\" has an arrow to the fibre entering from the upper left, which carries a cell body drawn as a small circled dot part-way along it. \"Neuron A\" has an arrow to the fibre leaving at the lower left. \"Neuron C\" has a long arrow up to the short neuron with a circled cell body lying inside the butterfly-shaped region. Two plain rectangular boxes at the lower left read \"Receptor\" and \"Effector\", each joined to one of the fibres; the Receptor box's left border sits flush against the left edge of the image. The question line below (\"Name the tissue labelled X which covers and protects the spinal cord.\") is sliced by the bottom edge; the drawing and all four letters are complete (verified against page 10 of the source PDF).",
+          "srcHash": "20eb1ba9230f71a454d26f77a94314c7",
+          "alt": "Outline drawing of a section through the spinal cord — a rounded outline enclosing a butterfly/H-shaped inner region, drawn lying on its side with the cord to the right. Neurons run out to the left: an upper pathway leading from a boxed label 'Receptor', a lower pathway leading to a boxed label 'Effector', and a short neuron looping inside the inner region between them, with small ringed cell bodies marked along the routes. Labels: a bold arrow marked X points down to the outer covering layer of the cord at the top; 'Neuron B' arrows to the upper pathway; 'Neuron A' arrows to the lower pathway; 'Neuron C' arrows to the short neuron inside the cord. The bottom edge slices the line '(i) Name the tissue labelled X which covers and protects the spinal cord.'; the diagram and all four labels are intact.",
           "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "X",
@@ -7545,8 +7545,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-HL-paper2-p10-i0",
           "src": "/exam-figures/biology/markbank/biology-2021-HL-paper2-p10-i0.png",
-          "srcHash": "a23aea76cf86d0d6b2dd1920a2aeb447",
-          "alt": "A grey micrograph-style image with a bold A centred above it and the caption \"Epidermal cells in solution A\" below. It shows roughly a dozen long, brick-shaped plant cells in overlapping rows. Each cell is filled edge to edge with uniform mid-grey shading that presses right up against its wall, and the walls appear as thin bright pale lines between neighbouring cells. Each cell contains one small darker grey oval. IMPORTANT: this is only the first of a pair — the companion image B from the same question (the same cells in the second solution) is not present anywhere in this figure set, and Q17(d)(iii)–(vi) all depend on it.",
+          "srcHash": "9085f645806c989e6775e4cea5a6ac00",
+          "alt": "Two greyscale micrograph-style images side by side, each headed by a bold letter and captioned beneath. Left, headed A and captioned 'Epidermal cells in solution A': a sheet of brick-shaped plant cells in which the mid-grey interior fills each cell right out to its pale cell wall, with a small darker dot in each cell. Right, headed B and captioned 'Epidermal cells in solution B': the same kind of cells, but the mid-grey interior has shrunk into a rounded blob that has pulled away from the cell wall, leaving a pale gap between the two; the small dark dot is still present in each. Both captions are complete.",
           "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "A"
@@ -7570,8 +7570,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-HL-paper2-p10-i0",
           "src": "/exam-figures/biology/markbank/biology-2021-HL-paper2-p10-i0.png",
-          "srcHash": "a23aea76cf86d0d6b2dd1920a2aeb447",
-          "alt": "A grey micrograph-style image with a bold A centred above it and the caption \"Epidermal cells in solution A\" below. It shows roughly a dozen long, brick-shaped plant cells in overlapping rows. Each cell is filled edge to edge with uniform mid-grey shading that presses right up against its wall, and the walls appear as thin bright pale lines between neighbouring cells. Each cell contains one small darker grey oval. IMPORTANT: this is only the first of a pair — the companion image B from the same question (the same cells in the second solution) is not present anywhere in this figure set, and Q17(d)(iii)–(vi) all depend on it.",
+          "srcHash": "9085f645806c989e6775e4cea5a6ac00",
+          "alt": "Two greyscale micrograph-style images side by side, each headed by a bold letter and captioned beneath. Left, headed A and captioned 'Epidermal cells in solution A': a sheet of brick-shaped plant cells in which the mid-grey interior fills each cell right out to its pale cell wall, with a small darker dot in each cell. Right, headed B and captioned 'Epidermal cells in solution B': the same kind of cells, but the mid-grey interior has shrunk into a rounded blob that has pulled away from the cell wall, leaving a pale gap between the two; the small dark dot is still present in each. Both captions are complete.",
           "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "A"
@@ -7596,8 +7596,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2022-HL-paper1-p05-i0",
           "src": "/exam-figures/biology/markbank/biology-2022-HL-paper1-p05-i0.png",
-          "srcHash": "c89fbd7d71b8954c601e8251bdc6ad7d",
-          "alt": "A human karyotype: black-and-white banded chromosomes arranged in four rows as numbered pairs 1 to 22, with the last two columns headed X and Y. Every numbered group holds exactly two chromosomes EXCEPT group 21, which clearly holds THREE (verified at 3x zoom) — the trisomy the question hangs on. The X column holds two chromosomes; the Y column is empty. The line of question stem text directly above the chromosomes ('The karyotype shown is from an individual with a genetic condition called Down's syndrome.') is fully readable, but the line above that is sliced horizontally by the top edge of the crop. The karyotype itself and all its labels are complete.",
+          "srcHash": "16b8ab5903cb132867c727567c4628be",
+          "alt": "A human karyotype photomicrograph: 24 columns of stained, banded chromosomes laid out in homologous sets in four rows, numbered 1-22 with X and Y at the end of the bottom row. Every column holds exactly two chromosomes EXCEPT column 21, which clearly holds three, and column Y, which is labelled but has no chromosome under it at all (column X holds two). Above it sits the printed line \"The karyotype shown is from an individual with a genetic condition called Down's syndrome.\"; below it \"(a) Name the two chemical components that make up chromosomes.\" and the top of an empty answer box. A stray earlier line of question text is sliced through mid-glyph along the very top edge, but the karyotype and all 24 of its labels are intact.",
           "attribution": "SEC Leaving Certificate Biology 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "X",
@@ -7622,8 +7622,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2022-HL-paper1-p05-i0",
           "src": "/exam-figures/biology/markbank/biology-2022-HL-paper1-p05-i0.png",
-          "srcHash": "c89fbd7d71b8954c601e8251bdc6ad7d",
-          "alt": "A human karyotype: black-and-white banded chromosomes arranged in four rows as numbered pairs 1 to 22, with the last two columns headed X and Y. Every numbered group holds exactly two chromosomes EXCEPT group 21, which clearly holds THREE (verified at 3x zoom) — the trisomy the question hangs on. The X column holds two chromosomes; the Y column is empty. The line of question stem text directly above the chromosomes ('The karyotype shown is from an individual with a genetic condition called Down's syndrome.') is fully readable, but the line above that is sliced horizontally by the top edge of the crop. The karyotype itself and all its labels are complete.",
+          "srcHash": "16b8ab5903cb132867c727567c4628be",
+          "alt": "A human karyotype photomicrograph: 24 columns of stained, banded chromosomes laid out in homologous sets in four rows, numbered 1-22 with X and Y at the end of the bottom row. Every column holds exactly two chromosomes EXCEPT column 21, which clearly holds three, and column Y, which is labelled but has no chromosome under it at all (column X holds two). Above it sits the printed line \"The karyotype shown is from an individual with a genetic condition called Down's syndrome.\"; below it \"(a) Name the two chemical components that make up chromosomes.\" and the top of an empty answer box. A stray earlier line of question text is sliced through mid-glyph along the very top edge, but the karyotype and all 24 of its labels are intact.",
           "attribution": "SEC Leaving Certificate Biology 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "X",
@@ -7648,8 +7648,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2022-HL-paper1-p09-i0",
           "src": "/exam-figures/biology/markbank/biology-2022-HL-paper1-p09-i0.png",
-          "srcHash": "f8b3762600c68fe5ac980b2085819dc2",
-          "alt": "A cartoon-style cutaway of a spherical virus particle drawn in greys: a circular envelope studded all the way round with mushroom-headed spike proteins on short stalks, a pale grey interior, and inside it a long white outlined wiggly strand in the upper half plus a tight series of loops/coils in the lower half. A horizontal leader line from the left, labelled 'A' in bold, ends in an arrowhead on the wiggly strand. I checked all four edges at 3x: 'A' is the only letter drawn on the figure — the 'X' referred to in Q7(b) is not present anywhere in this image. Question-stem text is clipped at the top ('...e example of a harmful virus and it causes COVID-1[9]') and bottom ('...e A.'); the virus drawing itself is complete.",
+          "srcHash": "755953300591b4c29828d80231f8cb77",
+          "alt": "A line drawing of a virus in the SARS-CoV-2 style: a circular particle with a pale grey interior and a double envelope ring, ringed by roughly twenty dark grey club/mushroom-headed spikes projecting outwards. Inside the particle a single short wavy strand sits near the top with a plain arrow running to it from a bold \"A\" at the left, and a long tightly coiled looped strand fills the lower half. Well clear of the particle, to its right, is a small empty square outline box containing a bold \"X\". Question text is sliced at the top (\"coronavirus). It is one example of a harmful virus and it causes COVID-19 in humans.\") and at the bottom (\"(a) Name molecule A.\"), but the drawing and both letters are complete.",
           "attribution": "SEC Leaving Certificate Biology 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "A"
@@ -7675,8 +7675,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2022-HL-paper2-p07-i0",
           "src": "/exam-figures/biology/markbank/biology-2022-HL-paper2-p07-i0.png",
-          "srcHash": "e38e165fd534c8c5bb875ab0656ad572",
-          "alt": "A shaded horizontal section through the human eye, front facing right. Word labels with arrows: 'Retina' to the dark inner lining at the back, 'Blind spot' to the notch where the thick stalk joins the eyeball, 'Iris' to the dark wedge in front of the lens, 'Pupil' to the gap at its centre. Bold letters: 'P' printed inside the white lens-shaped body behind the iris; 'Q' at the far right with an arrow to the outermost transparent front curve; 'R' printed on the broad stalk leaving the back of the eye to the left. All three letters are fully legible and the diagram is complete; only the leading word of the stem line at the top ('The') is shaved off by the left edge.",
+          "srcHash": "e1afb37bce42730f0d4435a2c79d147e",
+          "alt": "A labelled sagittal section of the human eye, drawn in greys and facing right. Printed leader-arrow labels mark \"Retina\" (the inner lining on the left), \"Blind spot\" (where the thick stalk meets the eyeball at the lower left), \"Iris\" (the dark wedge at the front, upper right) and \"Pupil\" (the front opening, arrow coming up from the lower right). A bold \"P\" is printed inside the white oval body sitting immediately behind the pupil; a bold \"Q\" at the far right has a horizontal arrow pointing to the frontmost curved layer of the eye; a bold \"R\" labels the thick stalk leaving the back of the eye at the lower left. The header \"(b) The diagram shows the internal structure of the human eye.\" and the question \"(i) Name the parts of the eye labelled P, Q and R.\" are both fully within the crop and nothing is cut off.",
           "attribution": "SEC Leaving Certificate Biology 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "P",
@@ -7702,8 +7702,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2022-HL-paper2-p07-i0",
           "src": "/exam-figures/biology/markbank/biology-2022-HL-paper2-p07-i0.png",
-          "srcHash": "e38e165fd534c8c5bb875ab0656ad572",
-          "alt": "A shaded horizontal section through the human eye, front facing right. Word labels with arrows: 'Retina' to the dark inner lining at the back, 'Blind spot' to the notch where the thick stalk joins the eyeball, 'Iris' to the dark wedge in front of the lens, 'Pupil' to the gap at its centre. Bold letters: 'P' printed inside the white lens-shaped body behind the iris; 'Q' at the far right with an arrow to the outermost transparent front curve; 'R' printed on the broad stalk leaving the back of the eye to the left. All three letters are fully legible and the diagram is complete; only the leading word of the stem line at the top ('The') is shaved off by the left edge.",
+          "srcHash": "e1afb37bce42730f0d4435a2c79d147e",
+          "alt": "A labelled sagittal section of the human eye, drawn in greys and facing right. Printed leader-arrow labels mark \"Retina\" (the inner lining on the left), \"Blind spot\" (where the thick stalk meets the eyeball at the lower left), \"Iris\" (the dark wedge at the front, upper right) and \"Pupil\" (the front opening, arrow coming up from the lower right). A bold \"P\" is printed inside the white oval body sitting immediately behind the pupil; a bold \"Q\" at the far right has a horizontal arrow pointing to the frontmost curved layer of the eye; a bold \"R\" labels the thick stalk leaving the back of the eye at the lower left. The header \"(b) The diagram shows the internal structure of the human eye.\" and the question \"(i) Name the parts of the eye labelled P, Q and R.\" are both fully within the crop and nothing is cut off.",
           "attribution": "SEC Leaving Certificate Biology 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "P",
@@ -7730,8 +7730,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2022-HL-paper2-p10-i0",
           "src": "/exam-figures/biology/markbank/biology-2022-HL-paper2-p10-i0.png",
-          "srcHash": "c8b506a67163f5adcb14e29fdd803b21",
-          "alt": "Three schematic frontal sections of the heart drawn side by side in identical grey outline, differing only in their arrows and chamber shapes, labelled X, Y and Z beneath. X: two thick black arrows point inwards from outside the heart into the two atria (blood entering); chambers all appear open. Y: two thick black arrows point downwards from the atria through the AV valves into the ventricles, and the atrial spaces look reduced. Z: two thick black arrows point upwards out of the ventricles into the great vessels, the ventricle spaces are visibly narrowed and the white AV valve flaps are drawn meeting in the midline (closed). The stem line 'Study these diagrams carefully and answer the questions that follow.' is sliced by the top edge; the three drawings and their letters are complete.",
+          "srcHash": "665d85302adf25830110a9bd729b4426",
+          "alt": "Three simplified outline diagrams of a heart, side by side and identical in shape (grey walls, four chambers, great vessels branching at the top), labelled X, Y and Z beneath. They differ only in their thick black arrows: in X, two arrows point inward at the top-left and top-right, towards the upper chambers; in Y, two arrows point downward from each upper chamber into the chamber below, past valve flaps drawn hanging open; in Z, two arrows point upward out of the lower chambers into the central vessels at the top. Only the line \"Study these diagrams carefully and answer the questions that follow.\" is sliced at the top edge - all three hearts and all three letters are complete.",
           "attribution": "SEC Leaving Certificate Biology 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "X",
@@ -7757,8 +7757,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2023-HL-paper1-p07-i0",
           "src": "/exam-figures/biology/markbank/biology-2023-HL-paper1-p07-i0.png",
-          "srcHash": "c4596cfcc94250a66ee2d648bf22c7f2",
-          "alt": "A greyscale transmission electron micrograph of bacteria. The central cell is a long rod that is visibly pinched/constricted at its middle into two joined halves (a cell caught mid-division), its interior mottled dark and light, with a distinctly darker continuous outer boundary layer. Dark fragments of three neighbouring cells sit in the top-left, top-right and bottom-right corners against a pale grainy background. A bold letter X inside a thin black square box is printed on the pale background above the central cell, touching no structure. The crop also carries clipped page prose along the top and bottom and part of an empty answer box at the left; the micrograph itself and the X box are complete.",
+          "srcHash": "a65292ba6440461e05d0ac8cd138fa2d",
+          "alt": "A greyscale transmission electron micrograph occupying the right half of the crop. It shows one long rod-shaped (bacillus) bacterium running diagonally across the field, with a clear pinch/constriction about two-thirds along its length — a cell caught mid-binary-fission — and a granular, mottled interior with pale patches. Parts of three other rod cells intrude at the top-left, top-right and bottom-right corners. A bold letter X sits inside a thin black square box in the pale background at the upper-left of the micrograph, clear of any cell. To the left is the question text for (a) (three bacterial shapes, with an empty answer box) and (b) (draw an arrow from X to the cell wall); the first line of part (c) is sliced by the bottom edge of the crop. The micrograph itself and the X box are complete.",
           "attribution": "SEC Leaving Certificate Biology 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "X"
@@ -7784,8 +7784,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2023-HL-paper1-p09-i0",
           "src": "/exam-figures/biology/markbank/biology-2023-HL-paper1-p09-i0.png",
-          "srcHash": "56e71326a67d6a749ed7ca827c2e3803",
-          "alt": "An absorption-spectrum line graph. The y-axis is labelled \"Absorption of light\" (no scale numbers); the x-axis is labelled \"Colour of light\" and carries a grey bar divided into six italic segments: Violet, Blue, Green, Yellow, Orange, Red. Two curves are keyed inside the plot area: \"Chlorophyll a\" as a dotted line and \"Chlorophyll b\" as a solid line. The dotted (a) curve has a tall peak over Violet and a second tall peak over Red; the solid (b) curve has its tallest peak over Blue and a peak over Orange/Red. Both curves run low and nearly flat across Green and Yellow. Only a clipped line of question prose along the top is cut; the graph, its key and all axis labels are whole.",
+          "srcHash": "e0f1a1de68e8eba8b42564173dad6525",
+          "alt": "An absorption-spectrum line graph. The y-axis reads \"Absorption of light\"; the x-axis is a horizontal grey bar divided into six shaded colour bands labelled Violet, Blue, Green, Yellow, Orange, Red, under the axis title \"Colour of light\". Two curves are plotted with an inset legend: \"Chlorophyll a\" as a dotted line and \"Chlorophyll b\" as a solid line. The dotted (a) curve has a tall peak in the violet band and a second tall peak in the red band; the solid (b) curve has its tallest peak in the blue band and a lower peak just before the red band. Both curves run near zero across green and yellow. The line above the graph reads \"Answer the following questions based on the graph and the process of photosynthesis.\" The only characters drawn on the figure are the italic a and b inside the legend text \"Chlorophyll a\" / \"Chlorophyll b\"; there are no standalone letter labels. Nothing is cut off.",
           "attribution": "SEC Leaving Certificate Biology 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "a",
@@ -7810,8 +7810,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2023-HL-paper2-p04-i0",
           "src": "/exam-figures/biology/markbank/biology-2023-HL-paper2-p04-i0.png",
-          "srcHash": "78083e647bbe07fe448b4fa18937d256",
-          "alt": "A two-generation pedigree chart. The parent generation, tagged \"Parents\", is individual 1 (a circle with the right half filled black) joined by a marriage line to individual 2 (an empty square). A vertical line drops to a sibship line carrying five children left to right: 3 (half-filled circle), 4 (fully filled square), 5 (half-filled circle), 6 (fully filled square) and 7 (empty circle); each is numbered beneath. A boxed \"Key\" on the right defines four symbols: empty circle = Non-sufferer female, half-filled circle = Heterozygous female, empty square = Non-sufferer male, filled square = Haemophiliac male. The chart and key are complete.",
+          "srcHash": "d803a5d950f8902ab78640561aee22de",
+          "alt": "A three-generation-style pedigree (family) chart for haemophilia with a key. Top row, bracketed by the word \"Parents\": individual 1 is a circle with the right half filled black, joined by a horizontal marriage line to individual 2, an empty square. A vertical line drops to a sibship line carrying five children, numbered left to right: 3 a half-filled circle, 4 a completely filled square, 5 a half-filled circle, 6 a completely filled square, 7 an empty circle. On the right is a boxed \"Key\" with four entries: empty circle = Non-sufferer female; half-filled circle = Heterozygous female; empty square = Non-sufferer male; filled square = Haemophiliac male. All seven numbers and the whole key are fully readable; only the trailing word \"children.\" of the sentence above is sliced at the top edge.",
           "attribution": "SEC Leaving Certificate Biology 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "1",
@@ -7843,8 +7843,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2023-HL-paper2-p05-i0",
           "src": "/exam-figures/biology/markbank/biology-2023-HL-paper2-p05-i0.png",
-          "srcHash": "0e84647936fc1a52d5250f4796084a14",
-          "alt": "A longitudinal (cut-through) diagram of a typical animal-pollinated flower. Broad petals flare left and right; a central column runs from a swollen base up to a notched, slightly lobed tip; four stalks bearing oval heads arch out among the petals; a rounded ovary at the base is cut open to show a single seed-like body inside; small pointed structures sit below the petals, and a stalk descends. Pre-printed word labels with arrows: \"Style\" (to the central column), \"Filament\" (to one of the stalks bearing an oval head) and \"Ovule\" (to the body inside the ovary). Three bold letters with arrows: A points to the notched tip at the very top of the style, B points to one of the oval heads on a filament, C points to one of the small pointed structures below the petals. Question prose above and below is clipped; the drawing and all six labels are whole.",
+          "srcHash": "72638cfdb0bf9a5187c4c0c89aff0c05",
+          "alt": "A greyscale longitudinal-section diagram of a typical animal-pollinated flower: a cut-away showing spreading petals, four stamens (filament plus a shaded anther head), a central carpel with a swollen ovary containing a large ovule, and small pointed structures below the petals. Three parts are pre-printed with leader lines — \"Style\" to the central stalk, \"Filament\" to a stamen stalk, \"Ovule\" to the body inside the ovary — and three parts are lettered with arrows: A points to the very top of the central style, B points to the head of a stamen, C points to one of the small pointed structures beneath the petals. All three letters are bold and fully readable. The stem line above (\"The diagram shows a typical animal-pollinated flower.\") and the line below (\"(i) Name the structures A, B and C.\") are sliced by the crop edges; the diagram itself is complete.",
           "attribution": "SEC Leaving Certificate Biology 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "A",
@@ -7871,8 +7871,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2023-HL-paper2-p05-i0",
           "src": "/exam-figures/biology/markbank/biology-2023-HL-paper2-p05-i0.png",
-          "srcHash": "0e84647936fc1a52d5250f4796084a14",
-          "alt": "A longitudinal (cut-through) diagram of a typical animal-pollinated flower. Broad petals flare left and right; a central column runs from a swollen base up to a notched, slightly lobed tip; four stalks bearing oval heads arch out among the petals; a rounded ovary at the base is cut open to show a single seed-like body inside; small pointed structures sit below the petals, and a stalk descends. Pre-printed word labels with arrows: \"Style\" (to the central column), \"Filament\" (to one of the stalks bearing an oval head) and \"Ovule\" (to the body inside the ovary). Three bold letters with arrows: A points to the notched tip at the very top of the style, B points to one of the oval heads on a filament, C points to one of the small pointed structures below the petals. Question prose above and below is clipped; the drawing and all six labels are whole.",
+          "srcHash": "72638cfdb0bf9a5187c4c0c89aff0c05",
+          "alt": "A greyscale longitudinal-section diagram of a typical animal-pollinated flower: a cut-away showing spreading petals, four stamens (filament plus a shaded anther head), a central carpel with a swollen ovary containing a large ovule, and small pointed structures below the petals. Three parts are pre-printed with leader lines — \"Style\" to the central stalk, \"Filament\" to a stamen stalk, \"Ovule\" to the body inside the ovary — and three parts are lettered with arrows: A points to the very top of the central style, B points to the head of a stamen, C points to one of the small pointed structures beneath the petals. All three letters are bold and fully readable. The stem line above (\"The diagram shows a typical animal-pollinated flower.\") and the line below (\"(i) Name the structures A, B and C.\") are sliced by the crop edges; the diagram itself is complete.",
           "attribution": "SEC Leaving Certificate Biology 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "A",
@@ -7881,33 +7881,6 @@ export const CARDS: SecCard[] = [
           ]
     },
     labelKey: [{"letter":"A","meaning":"Stigma","askedInThisQuestion":true},{"letter":"B","meaning":"Anther","askedInThisQuestion":true},{"letter":"C","meaning":"Sepal","askedInThisQuestion":false}],
-  } as SecCard,
-  {
-    ...base, kind: "diagram",
-    year: 2023, level: "higher",
-    paperFileid: "LC025ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Higher Level — © State Examinations Commission.",
-    id: "bio-2023-hl-q16-c-i-fig", topicId: "bio-3-2", conceptId: "virus-structure",
-    section: "C", questionRef: "2023 HL Q16(c)(i)",
-    stem: "The diagram shows a typical spherical-shaped virus.",
-    questionText: "Name structures X and Y.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-x", kind: "point", verbatim: "X — Protein (coat) or capsid", marks: 3, accepts: ["Protein coat","Protein","Capsid"] },
-    { id: "r-y", kind: "point", verbatim: "Y — Nucleic acid or DNA or RNA", marks: 3, accepts: ["Nucleic acid","DNA","RNA"] },
-    ],
-    figure: {
-          "candId": "biology-2023-HL-paper2-p08-i0",
-          "src": "/exam-figures/biology/markbank/biology-2023-HL-paper2-p08-i0.png",
-          "srcHash": "30d99a557b1dfcae6d67a7ff69d40f41",
-          "alt": "A diagram of a spherical virus: one thick dark grey ring drawn as a circle, enclosing a single long zig-zag/wavy coiled strand that snakes from the lower left up to the upper right within the ring. Two bold letters at the left, each with a long straight arrow: X's arrow lands on the thick ring itself, Y's arrow lands on the coiled strand inside. I zoomed the left edge to check — both letters are fully drawn and nothing of the circle is cut.",
-          "attribution": "SEC Leaving Certificate Biology 2023 Higher Level — © State Examinations Commission",
-          "lettersVisible": [
-                "X",
-                "Y"
-          ]
-    },
-    labelKey: [{"letter":"X","meaning":"Protein (coat) or capsid","askedInThisQuestion":true},{"letter":"Y","meaning":"Nucleic acid, or DNA or RNA","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, kind: "diagram",
@@ -7925,8 +7898,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2023-HL-paper2-p09-i0",
           "src": "/exam-figures/biology/markbank/biology-2023-HL-paper2-p09-i0.png",
-          "srcHash": "8f248bf9585b0d6990dd6e917dbc2fa1",
-          "alt": "A diagram of the junction between two nerve cells. A pale grey fibre enters from the left, widens into a broad ending whose right face is flat, and a second pale grey structure to the right has a rounded knob that projects into a hollow in that face; a narrow clear gap separates the two membranes along their whole length, and the right-hand structure tapers into a fibre leaving to the right. Three small dark grey dots sit in the gap beside the knob. Bold letter A above has an arrow pointing down onto those dots; bold letter B below has an arrow pointing up into the empty gap between the two membranes.",
+          "srcHash": "ea2e5d0328e9d76478888a93ee3727e4",
+          "alt": "A grey diagram of a synapse: two neuron endings face each other, each drawn as a pale grey bulb flaring out of a horizontal band (the axon) that runs off to the left and right; a narrow vertical gap separates the two bulbs, and the right-hand bulb has a small knob protruding into it. The letter A at the top has an arrow pointing to two or three small dark grey dots sitting in the gap; the letter B at the bottom has an arrow pointing up into the gap itself between the two membranes. Both letters are bold and fully readable and the whole diagram sits inside the crop; only a line of question text below is sliced at the bottom edge.",
           "attribution": "SEC Leaving Certificate Biology 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "A",
@@ -7951,8 +7924,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2023-HL-paper2-p09-i0",
           "src": "/exam-figures/biology/markbank/biology-2023-HL-paper2-p09-i0.png",
-          "srcHash": "8f248bf9585b0d6990dd6e917dbc2fa1",
-          "alt": "A diagram of the junction between two nerve cells. A pale grey fibre enters from the left, widens into a broad ending whose right face is flat, and a second pale grey structure to the right has a rounded knob that projects into a hollow in that face; a narrow clear gap separates the two membranes along their whole length, and the right-hand structure tapers into a fibre leaving to the right. Three small dark grey dots sit in the gap beside the knob. Bold letter A above has an arrow pointing down onto those dots; bold letter B below has an arrow pointing up into the empty gap between the two membranes.",
+          "srcHash": "ea2e5d0328e9d76478888a93ee3727e4",
+          "alt": "A grey diagram of a synapse: two neuron endings face each other, each drawn as a pale grey bulb flaring out of a horizontal band (the axon) that runs off to the left and right; a narrow vertical gap separates the two bulbs, and the right-hand bulb has a small knob protruding into it. The letter A at the top has an arrow pointing to two or three small dark grey dots sitting in the gap; the letter B at the bottom has an arrow pointing up into the gap itself between the two membranes. Both letters are bold and fully readable and the whole diagram sits inside the crop; only a line of question text below is sliced at the bottom edge.",
           "attribution": "SEC Leaving Certificate Biology 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "A",
@@ -7977,8 +7950,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2023-HL-paper2-p09-i0",
           "src": "/exam-figures/biology/markbank/biology-2023-HL-paper2-p09-i0.png",
-          "srcHash": "8f248bf9585b0d6990dd6e917dbc2fa1",
-          "alt": "A diagram of the junction between two nerve cells. A pale grey fibre enters from the left, widens into a broad ending whose right face is flat, and a second pale grey structure to the right has a rounded knob that projects into a hollow in that face; a narrow clear gap separates the two membranes along their whole length, and the right-hand structure tapers into a fibre leaving to the right. Three small dark grey dots sit in the gap beside the knob. Bold letter A above has an arrow pointing down onto those dots; bold letter B below has an arrow pointing up into the empty gap between the two membranes.",
+          "srcHash": "ea2e5d0328e9d76478888a93ee3727e4",
+          "alt": "A grey diagram of a synapse: two neuron endings face each other, each drawn as a pale grey bulb flaring out of a horizontal band (the axon) that runs off to the left and right; a narrow vertical gap separates the two bulbs, and the right-hand bulb has a small knob protruding into it. The letter A at the top has an arrow pointing to two or three small dark grey dots sitting in the gap; the letter B at the bottom has an arrow pointing up into the gap itself between the two membranes. Both letters are bold and fully readable and the whole diagram sits inside the crop; only a line of question text below is sliced at the bottom edge.",
           "attribution": "SEC Leaving Certificate Biology 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "A",
@@ -8003,8 +7976,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2023-HL-paper2-p10-i0",
           "src": "/exam-figures/biology/markbank/biology-2023-HL-paper2-p10-i0.png",
-          "srcHash": "8e3bf2df5cb5bc40bc67c9a69f1487ae",
-          "alt": "Two side-view diagrams of a human head, neck and chest, drawn identically in pale grey with a white ribcage of about ten ribs, the airway running down from the mouth, and the diaphragm drawn as a line across the base of the ribcage. The left one is marked X: the two black block arrows at the ribs point outwards and upwards, and a large black arrow at the diaphragm points straight down, with the diaphragm shown flattened and low. The right one is marked Y: the two rib arrows point inwards, and the arrows at the diaphragm point upwards, with the diaphragm shown domed and higher. IMPORTANT: the clipped text above this crop reads \"…ure of an alveolus and its associated blood\", but this picture is NOT an alveolus — the alveolus is something candidates must sketch themselves in Q17(c)(ii), and no alveolus artwork exists anywhere in this paper.",
+          "srcHash": "07befbb2dd6899655d5b336e798d4e43",
+          "alt": "WARNING — this is NOT an alveolus diagram, even though the clipped text line at the top mentions sketching an alveolus (that sketch is something the candidate must draw themselves; the paper prints no alveolus). What is actually drawn are two side-view outlines of a human head and upper body, shaded pale grey, each showing the nasal cavity, mouth, trachea, a rib cage of about ten ribs and the diaphragm. The left one is labelled X and the right one Y, and they differ only in their arrows: in X the two thick black arrows at the upper chest point outward and upward, away from the body, and a thick black arrow at the diaphragm points downward; in Y the two chest arrows point inward, into the body, and the diaphragm arrow points upward. Both letters are fully readable and both bodies are complete inside the crop; the (ii) question line at the top is sliced through the middle of its letters.",
           "attribution": "SEC Leaving Certificate Biology 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "X",
@@ -8029,8 +8002,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2023-HL-paper2-p10-i0",
           "src": "/exam-figures/biology/markbank/biology-2023-HL-paper2-p10-i0.png",
-          "srcHash": "8e3bf2df5cb5bc40bc67c9a69f1487ae",
-          "alt": "Two side-view diagrams of a human head, neck and chest, drawn identically in pale grey with a white ribcage of about ten ribs, the airway running down from the mouth, and the diaphragm drawn as a line across the base of the ribcage. The left one is marked X: the two black block arrows at the ribs point outwards and upwards, and a large black arrow at the diaphragm points straight down, with the diaphragm shown flattened and low. The right one is marked Y: the two rib arrows point inwards, and the arrows at the diaphragm point upwards, with the diaphragm shown domed and higher. IMPORTANT: the clipped text above this crop reads \"…ure of an alveolus and its associated blood\", but this picture is NOT an alveolus — the alveolus is something candidates must sketch themselves in Q17(c)(ii), and no alveolus artwork exists anywhere in this paper.",
+          "srcHash": "07befbb2dd6899655d5b336e798d4e43",
+          "alt": "WARNING — this is NOT an alveolus diagram, even though the clipped text line at the top mentions sketching an alveolus (that sketch is something the candidate must draw themselves; the paper prints no alveolus). What is actually drawn are two side-view outlines of a human head and upper body, shaded pale grey, each showing the nasal cavity, mouth, trachea, a rib cage of about ten ribs and the diaphragm. The left one is labelled X and the right one Y, and they differ only in their arrows: in X the two thick black arrows at the upper chest point outward and upward, away from the body, and a thick black arrow at the diaphragm points downward; in Y the two chest arrows point inward, into the body, and the diaphragm arrow points upward. Both letters are fully readable and both bodies are complete inside the crop; the (ii) question line at the top is sliced through the middle of its letters.",
           "attribution": "SEC Leaving Certificate Biology 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "X",
@@ -8055,8 +8028,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2023-HL-paper2-p10-i1",
           "src": "/exam-figures/biology/markbank/biology-2023-HL-paper2-p10-i1.png",
-          "srcHash": "2de1bee81207dc6446c0411a45ace654",
-          "alt": "A three-dimensional cutaway drawing of a cylindrical plant organ with a wedge removed like a slice of cake. From the outside inwards you can see: a single outer layer of small brick-like cells forming the rim; several layers of larger rounded cells filling the bulk of the cylinder; and a central star/cross-shaped core of small tightly packed cells in the middle. Fine hair-like projections stick out from the outer surface around the base. Labels with arrows: A points to the single outer cell layer at the top rim, B points to the layers of large rounded cells exposed on the cut face, C points to one of the hair-like projections at the lower outside, and the words \"Vascular tissue\" point to the central star-shaped core. The bottom edge clips the question line \"…tify the plant organ.\"; the diagram and all four labels are whole.",
+          "srcHash": "f3dddb86a5fe0b331f663e43c91425ec",
+          "alt": "A three-dimensional cut-away diagram of a short cylindrical section of a plant organ, drawn in grey shading. From the outside in: a thin outer skin of small rectangular cells; a thick wide zone of larger rounded cells; and a central core containing a star-shaped bundle of packed cells. Several thin hair-like projections stick out sideways from the outer surface. Four leader lines label it: A points to the thin outer skin at the top rim, \"Vascular tissue\" (printed in words) points to the star-shaped central core, B points to the thick middle zone, and C points to one of the thin hair-like projections on the lower right. All three letters are bold and fully readable and the diagram is complete; the stem line above is intact and only \"(i) Identify the plant organ.\" is sliced at the bottom edge.",
           "attribution": "SEC Leaving Certificate Biology 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "A",
@@ -8084,8 +8057,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2023-HL-paper2-p10-i1",
           "src": "/exam-figures/biology/markbank/biology-2023-HL-paper2-p10-i1.png",
-          "srcHash": "2de1bee81207dc6446c0411a45ace654",
-          "alt": "A three-dimensional cutaway drawing of a cylindrical plant organ with a wedge removed like a slice of cake. From the outside inwards you can see: a single outer layer of small brick-like cells forming the rim; several layers of larger rounded cells filling the bulk of the cylinder; and a central star/cross-shaped core of small tightly packed cells in the middle. Fine hair-like projections stick out from the outer surface around the base. Labels with arrows: A points to the single outer cell layer at the top rim, B points to the layers of large rounded cells exposed on the cut face, C points to one of the hair-like projections at the lower outside, and the words \"Vascular tissue\" point to the central star-shaped core. The bottom edge clips the question line \"…tify the plant organ.\"; the diagram and all four labels are whole.",
+          "srcHash": "f3dddb86a5fe0b331f663e43c91425ec",
+          "alt": "A three-dimensional cut-away diagram of a short cylindrical section of a plant organ, drawn in grey shading. From the outside in: a thin outer skin of small rectangular cells; a thick wide zone of larger rounded cells; and a central core containing a star-shaped bundle of packed cells. Several thin hair-like projections stick out sideways from the outer surface. Four leader lines label it: A points to the thin outer skin at the top rim, \"Vascular tissue\" (printed in words) points to the star-shaped central core, B points to the thick middle zone, and C points to one of the thin hair-like projections on the lower right. All three letters are bold and fully readable and the diagram is complete; the stem line above is intact and only \"(i) Identify the plant organ.\" is sliced at the bottom edge.",
           "attribution": "SEC Leaving Certificate Biology 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "A",
@@ -8094,64 +8067,6 @@ export const CARDS: SecCard[] = [
           ]
     },
     labelKey: [{"letter":"A","meaning":"Dermal tissue","askedInThisQuestion":true},{"letter":"B","meaning":"Ground tissue","askedInThisQuestion":true},{"letter":"C","meaning":"Root hair","askedInThisQuestion":true}],
-  } as SecCard,
-  {
-    ...base, kind: "diagram",
-    year: 2024, level: "higher",
-    paperFileid: "LC025ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Higher Level — © State Examinations Commission.",
-    id: "bio-2024-hl-q16-a-i-1-fig", topicId: "bio-2-5", conceptId: "male-reproductive-system-parts",
-    section: "C", questionRef: "2024 HL Q16(a)(i)1",
-    stem: "The diagram shows the human male reproductive system.",
-    questionText: "Give the names of tubes A and B and the name of gland C.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 3,
-    rows: [
-    { id: "g-a", kind: "gate", verbatim: "A — Urethra", marks: 1, exactTermRequired: true },
-    { id: "g-b", kind: "gate", verbatim: "B — Sperm duct (or vas deferens)", marks: 1, exactTermRequired: true },
-    { id: "g-c", kind: "gate", verbatim: "C — Prostate (gland)", marks: 1, exactTermRequired: true },
-    ],
-    figure: {
-          "candId": "biology-2024-HL-paper2-p07-i0",
-          "src": "/exam-figures/biology/markbank/biology-2024-HL-paper2-p07-i0.png",
-          "srcHash": "b3deed8028d3e588133dea6d246d956f",
-          "alt": "A side-view (sagittal) diagram of the human male reproductive system on a pale grey panel: a dark grey bladder at the top, the penis running down to the left with a tube visible along its length, a testis in the scrotum at the bottom, and a small gland plus a lobed structure sitting behind and below the bladder. Three bold letters with arrows: A points to the tube inside the penis, B points to the tube rising from the testis, C points to the gland behind the bladder. All three letters and their arrowheads are complete. Clipped question text runs down the left edge, and the source illustration itself runs off the right edge of its own grey frame (a dark oval is half-shown) — that is how it is printed in the paper, not an extraction defect.",
-          "attribution": "SEC Leaving Certificate Biology 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": [
-                "A",
-                "B",
-                "C"
-          ]
-    },
-    labelKey: [{"letter":"A","meaning":"Urethra","askedInThisQuestion":true},{"letter":"B","meaning":"Sperm duct (vas deferens)","askedInThisQuestion":true},{"letter":"C","meaning":"Prostate gland","askedInThisQuestion":true}],
-  } as SecCard,
-  {
-    ...base, kind: "diagram",
-    year: 2024, level: "higher",
-    paperFileid: "LC025ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Higher Level — © State Examinations Commission.",
-    id: "bio-2024-hl-q16-a-i-2-fig", topicId: "bio-2-5", conceptId: "male-reproductive-system-functions",
-    section: "C", questionRef: "2024 HL Q16(a)(i)2",
-    stem: "The diagram shows the human male reproductive system.",
-    questionText: "Give one function for each structure labelled A, B and C.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 3,
-    rows: [
-    { id: "r-a", kind: "alt", verbatim: "A — Release semen", marks: 1, accepts: ["release urine"], contextNote: "Scheme prints: 'A: Release semen or release urine'." },
-    { id: "r-b", kind: "point", verbatim: "B — Carries sperm from testes to urethra (or penis)", marks: 1 },
-    { id: "r-c", kind: "point", verbatim: "C — Produces seminal fluid", marks: 1 },
-    ],
-    figure: {
-          "candId": "biology-2024-HL-paper2-p07-i0",
-          "src": "/exam-figures/biology/markbank/biology-2024-HL-paper2-p07-i0.png",
-          "srcHash": "b3deed8028d3e588133dea6d246d956f",
-          "alt": "A side-view (sagittal) diagram of the human male reproductive system on a pale grey panel: a dark grey bladder at the top, the penis running down to the left with a tube visible along its length, a testis in the scrotum at the bottom, and a small gland plus a lobed structure sitting behind and below the bladder. Three bold letters with arrows: A points to the tube inside the penis, B points to the tube rising from the testis, C points to the gland behind the bladder. All three letters and their arrowheads are complete. Clipped question text runs down the left edge, and the source illustration itself runs off the right edge of its own grey frame (a dark oval is half-shown) — that is how it is printed in the paper, not an extraction defect.",
-          "attribution": "SEC Leaving Certificate Biology 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": [
-                "A",
-                "B",
-                "C"
-          ]
-    },
-    labelKey: [{"letter":"A","meaning":"Urethra","askedInThisQuestion":true},{"letter":"B","meaning":"Sperm duct (vas deferens)","askedInThisQuestion":true},{"letter":"C","meaning":"Prostate gland","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, kind: "diagram",
@@ -8171,8 +8086,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2024-HL-paper2-p07-i1",
           "src": "/exam-figures/biology/markbank/biology-2024-HL-paper2-p07-i1.png",
-          "srcHash": "9ae34f438b012afa74d5755c0e5ec547",
-          "alt": "A full-length outline drawing of a female human body, front view, complete from head to feet, with four sets of internal structures shaded grey: a small butterfly-shaped gland in the neck, two bean-shaped kidneys in the abdomen each capped by a small separate gland, and a uterus with a small rounded structure at each side in the pelvis. A bold X on the left sends one arrow to the neck gland; a bold Y sends two arrows to the two caps sitting on top of the kidneys; a separate word label \"Kidney\" on the right has its own arrow to the right kidney; a bold Z at the bottom left sends two arrows to the two small structures flanking the uterus. All labels are complete; only stray text fragments from the question column intrude at the left edge.",
+          "srcHash": "23dc8251ebf0d2bcb611a36295c4c4af",
+          "alt": "A full-page capture: on the right, a simple outline drawing of a human female body seen from the front, with three grey endocrine structures drawn in place. X (at the neck) arrows to a small butterfly-shaped gland over the windpipe. Y arrows — two of them — to the pair of small caps sitting on top of the two kidneys. \"Kidney\" is separately labelled with its own arrow to the right kidney. Z (lower left) arrows — again two — to the two small rounded bodies at the ends of the uterus in the pelvis. On the left is the full question text for 16(b) (name glands X, Y and Z; name a hormone and function for each; deficiency/excess/corrective measure; feedback mechanism). The page footer \"Leaving Certificate Examination 2024   7\" is included. Nothing is clipped.",
           "attribution": "SEC Leaving Certificate Biology 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "X",
@@ -8197,8 +8112,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2024-HL-paper2-p04-i1",
           "src": "/exam-figures/biology/markbank/biology-2024-HL-paper2-p04-i1.png",
-          "srcHash": "df12248b9c9b73be8048a50612569f9b",
-          "alt": "A transmission electron micrograph of a single organelle in transverse section: an oval body bounded by a double membrane, its interior filled with long, wavy infolded internal membranes (cristae) running roughly across the short axis, sitting in speckled grey cytoplasm. Unlabelled. Complete apart from a stray letter \"a\" from the question text at the left edge. (The marking scheme's answer is mitochondrion.)",
+          "srcHash": "2f2505c2005b902f1594066486fcd705",
+          "alt": "A transmission electron micrograph of a single mitochondrion in transverse section: an elongated oval organelle with a clearly doubled (two-layered) outer boundary membrane and a dozen or so roughly parallel, wavy inner folds (cristae) crossing the granular matrix, set against speckled cytoplasm. Beside it is the question text for (b): identify the organelle, write the balanced equation for aerobic respiration, name and describe stage 1, and the role of NAD in stage 2. The micrograph is complete; only the last line of question text is clipped.",
           "attribution": "SEC Leaving Certificate Biology 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -8219,8 +8134,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2024-HL-paper2-p04-i0",
           "src": "/exam-figures/biology/markbank/biology-2024-HL-paper2-p04-i0.png",
-          "srcHash": "db9f960ff4aba8860be3020bfe1151f5",
-          "alt": "A light micrograph of leaf cells: a mosaic of large, thick-walled, roughly hexagonal cells, each packed with dozens of small dark oval bodies crowded around a pale central region. A printed label \"Organelles\" above the micrograph sends two black arrows down into two of the dark bodies. No letter labels. The micrograph is complete; only a stray letter \"o\" from the body text intrudes at the left edge. (The marking scheme's answer for these organelles is chloroplasts.)",
+          "srcHash": "89f1d140ccb0dd0beb204f1d617f3874",
+          "alt": "A light micrograph of plant leaf cells: a tessellation of large pale polygonal cells with dark outlines, each packed with dozens of small dark ellipsoidal bodies (chloroplasts) crowded mainly around the cell periphery. Above the micrograph the word \"Organelles\" splits into two arrows pointing down into two different cells. Alongside is the question text for (c) about leaf cells under the light microscope, the light stage and the light-independent stage, pathway 1 and pathway 2. The micrograph and its label are complete; only the last line of question text is clipped at the bottom.",
           "attribution": "SEC Leaving Certificate Biology 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "Organelles"
@@ -8245,8 +8160,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2024-HL-paper2-p10-i0",
           "src": "/exam-figures/biology/markbank/biology-2024-HL-paper2-p10-i0.png",
-          "srcHash": "dffa791d15f2c85183438ee3d132c4b5",
-          "alt": "A light micrograph of a single stained plant cell (onion) with dark cell walls, filling most of the frame, with slivers of neighbouring cells at the left and right edges. Inside the cell, two separate clusters of short, dark, rod-shaped chromosomes are drawn apart towards opposite ends of the cell, with a clear pale gap between the two groups. Unlabelled. Complete apart from a stray letter \"n\" from the question text at the left edge. (The marking scheme's answer for this stage is anaphase.)",
+          "srcHash": "4ae15e577624131f54e2e010a8d11139",
+          "alt": "A stained light micrograph of a rectangular onion cell, its neighbours' walls visible around it. Inside, the chromosomes are in two distinct separated clusters — a group of dark V- and rod-shaped chromosomes gathered towards the left end and a matching group towards the right end, with a clear pale gap between them. Beside it is the question text for 17(d) (name the non-dividing stage of the cell cycle, two activities during it, name the stage of mitosis shown and explain how you know). The micrograph sits complete inside its own white frame; only the question text below is cut off mid-list.",
           "attribution": "SEC Leaving Certificate Biology 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -8267,8 +8182,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2024-HL-paper2-p10-i0",
           "src": "/exam-figures/biology/markbank/biology-2024-HL-paper2-p10-i0.png",
-          "srcHash": "dffa791d15f2c85183438ee3d132c4b5",
-          "alt": "A light micrograph of a single stained plant cell (onion) with dark cell walls, filling most of the frame, with slivers of neighbouring cells at the left and right edges. Inside the cell, two separate clusters of short, dark, rod-shaped chromosomes are drawn apart towards opposite ends of the cell, with a clear pale gap between the two groups. Unlabelled. Complete apart from a stray letter \"n\" from the question text at the left edge. (The marking scheme's answer for this stage is anaphase.)",
+          "srcHash": "4ae15e577624131f54e2e010a8d11139",
+          "alt": "A stained light micrograph of a rectangular onion cell, its neighbours' walls visible around it. Inside, the chromosomes are in two distinct separated clusters — a group of dark V- and rod-shaped chromosomes gathered towards the left end and a matching group towards the right end, with a clear pale gap between them. Beside it is the question text for 17(d) (name the non-dividing stage of the cell cycle, two activities during it, name the stage of mitosis shown and explain how you know). The micrograph sits complete inside its own white frame; only the question text below is cut off mid-list.",
           "attribution": "SEC Leaving Certificate Biology 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -8290,8 +8205,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2024-HL-paper1-p06-i0",
           "src": "/exam-figures/biology/markbank/biology-2024-HL-paper1-p06-i0.png",
-          "srcHash": "46507157b883e214fb8c6a6906d263cf",
-          "alt": "A transverse section of a stem: a near-circular section with pale speckled ground tissue, a dark textured rim (epidermis), a dense ring of small dark vascular bundles just inside the rim, and roughly forty more dark bundles scattered irregularly right across the centre. No labels are printed on it (the scattered-bundle pattern is the whole point of the question). The crop also carries two horizontal black rules top and bottom (the borders of the adjacent answer boxes) and a stray letter fragment \"a\" from the question text at the left edge; the section itself is complete.",
+          "srcHash": "ebf45aa58fe1d93bc935f4afce987c9a",
+          "alt": "A complete circular line drawing of a transverse section of a stem: an outer dark epidermal rim with a dense ring of small vascular bundles just inside it, and about 20 further bundles scattered irregularly right through the pale speckled ground tissue — i.e. scattered bundles, the monocot pattern. Printed to the left is the question text: \"(e) The image shows how the tissue containing xylem and phloem is arranged in a transverse section (TS) of a stem. (i) Is this stem a monocotyledonous (monocot) stem or a dicotyledonous (dicot) stem?\" and \"(ii) Justify your answer above\", with two blank answer boxes. The stem drawing itself is intact; only the surrounding blank answer boxes are clipped at the top and bottom edges.",
           "attribution": "SEC Leaving Certificate Biology 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -8316,8 +8231,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2025-HL-paper1-p04-i1",
           "src": "/exam-figures/biology/markbank/biology-2025-HL-paper1-p04-i1.png",
-          "srcHash": "d85414c429d12c9ef5665e4f10907653",
-          "alt": "Line drawing of a longitudinal section through a plant root, cell by cell. Wispy root hairs project from the flanks near the top; a bold horizontal dashed line cuts right across the root just below them; a narrow column of darker, elongated cells runs down the centre; the root tip at the bottom is rounded and capped with small cells, with a small circle drawn around a patch of cells just inside the tip. X has an arrow to one of the root hairs, Y is a brace over the central darker column, Z has an arrow to the circled patch near the tip. Clipped empty answer-box rectangles from the page layout intrude at the left edge; the root drawing and all three labels are intact.",
+          "srcHash": "53ce65f912d760d559d6a050f3d14862",
+          "alt": "The whole of Question 2: printed question text with three empty answer boxes down the left, and on the right a black-and-white line drawing of a longitudinal section through a plant root. The root is drawn as columns of small box-shaped cells; five long thin hair-like outgrowths project sideways from the outer layer, a narrow column of elongated darker-shaded cells runs down the centre, and the rounded root tip at the bottom is packed with tiny cells. A bold horizontal dashed line cuts straight across the root near the top (the plane students must draw in part (d)). X has an arrow to one of the hair-like outgrowths; Y is a curly brace spanning the central column of cells; Z has a leader line to a small circled patch of densely packed cells just behind the root tip.",
           "attribution": "SEC Leaving Certificate Biology 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "X",
@@ -8344,8 +8259,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2025-HL-paper2-p05-i1",
           "src": "/exam-figures/biology/markbank/biology-2025-HL-paper2-p05-i1.png",
-          "srcHash": "51edd718ed27619483ca939b289370e4",
-          "alt": "Two eyes drawn identically — bold almond-shaped outline with a plain mid-grey circular iris — and differing in exactly one respect: the left eye (A) has a tiny black dot for a pupil at the centre of the iris, while the right eye (B) has a large black pupil filling most of the iris. Bold A and B sit above the respective eyes. Two clipped body-text fragments (\"to\", \"e\") sit at the left edge.",
+          "srcHash": "19147cce033156241ac7697e8fd71d24",
+          "alt": "Two eyes drawn identically — same almond-shaped outline in thick black, same mid-grey iris disc — except for the pupil: eye A (left) has a tiny black pupil dot at the centre of the iris, while eye B (right) has a large black pupil that fills most of the iris. Bold letters A and B are printed above the respective eyes. The Q14(b)(ii) text sits to the left; the '4. Lens.' line at the top of the crop is sliced, but both eyes and both letters are complete.",
           "attribution": "SEC Leaving Certificate Biology 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "A",
@@ -8373,8 +8288,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2025-HL-paper2-p07-i0",
           "src": "/exam-figures/biology/markbank/biology-2025-HL-paper2-p07-i0.png",
-          "srcHash": "a1404e886c0697715fd4f0fb6cb34fa7",
-          "alt": "Gas exchange at an alveolus. One large rounded air sac is shown in cut-away (pale and glossy inside), opening upward into a short wide airway with a double-headed vertical arrow above it. A dark capillary wraps around the sac from upper left to upper right, and pale ring-shaped cells are visible inside it. A grey arrow enters the left vessel from above; another leaves the right vessel upward. A has an arrow to the left-hand vessel; C has an arrow to one of the ring-shaped cells inside the right-hand vessel; B is printed in the middle of the air space. X's curved arrow runs from the capillary at the lower left INTO the air space, arrowhead at the top beside the X. Y's curved arrow runs the opposite way, from inside the air space OUT to the capillary at the lower right, arrowhead at the bottom. The crop clips question text down the left edge and two lines of text along the bottom, but the diagram and all five labels are complete.",
+          "srcHash": "9997211615a50c6784f71d5529510925",
+          "alt": "A gas-exchange diagram at the right of the crop, with the Q16(b) text on the left. A large pale sphere sits in the centre, opening at the top into a short tube with a double-headed grey arrow in it showing air moving in and out; two further tubes branch away left and right at the top, each with a grey arrow. A thick dark grey vessel wraps around the lower two-thirds of the sphere, with a dozen small pale ring-shaped bodies dotted along inside it. B is printed on the pale sphere itself. A has an arrow pointing to the vessel where it curves down on the left. C has an arrow pointing to one of the small ring-shaped bodies inside the vessel on the right. At the bottom of the sphere, X labels a fine curved arrow running from the vessel inwards into the sphere, and Y labels a fine curved arrow running from inside the sphere outwards into the vessel. The last question line is sliced at the bottom; the diagram and all five letters are complete.",
           "attribution": "SEC Leaving Certificate Biology 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "A",
@@ -8403,8 +8318,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2025-HL-paper2-p07-i0",
           "src": "/exam-figures/biology/markbank/biology-2025-HL-paper2-p07-i0.png",
-          "srcHash": "a1404e886c0697715fd4f0fb6cb34fa7",
-          "alt": "Gas exchange at an alveolus. One large rounded air sac is shown in cut-away (pale and glossy inside), opening upward into a short wide airway with a double-headed vertical arrow above it. A dark capillary wraps around the sac from upper left to upper right, and pale ring-shaped cells are visible inside it. A grey arrow enters the left vessel from above; another leaves the right vessel upward. A has an arrow to the left-hand vessel; C has an arrow to one of the ring-shaped cells inside the right-hand vessel; B is printed in the middle of the air space. X's curved arrow runs from the capillary at the lower left INTO the air space, arrowhead at the top beside the X. Y's curved arrow runs the opposite way, from inside the air space OUT to the capillary at the lower right, arrowhead at the bottom. The crop clips question text down the left edge and two lines of text along the bottom, but the diagram and all five labels are complete.",
+          "srcHash": "9997211615a50c6784f71d5529510925",
+          "alt": "A gas-exchange diagram at the right of the crop, with the Q16(b) text on the left. A large pale sphere sits in the centre, opening at the top into a short tube with a double-headed grey arrow in it showing air moving in and out; two further tubes branch away left and right at the top, each with a grey arrow. A thick dark grey vessel wraps around the lower two-thirds of the sphere, with a dozen small pale ring-shaped bodies dotted along inside it. B is printed on the pale sphere itself. A has an arrow pointing to the vessel where it curves down on the left. C has an arrow pointing to one of the small ring-shaped bodies inside the vessel on the right. At the bottom of the sphere, X labels a fine curved arrow running from the vessel inwards into the sphere, and Y labels a fine curved arrow running from inside the sphere outwards into the vessel. The last question line is sliced at the bottom; the diagram and all five letters are complete.",
           "attribution": "SEC Leaving Certificate Biology 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": [
                 "A",
