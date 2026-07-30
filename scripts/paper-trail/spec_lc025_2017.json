@@ -1,0 +1,22 @@
+{
+  "year": 2017,
+  "paperFileid": "LC025GLP000EV.pdf",
+  "schemeFileid": "LC025GLP000EV.pdf",
+  "q": [
+    {"n":"1","paperPage":2,"paperAnchor":"1.","schemePage":5,"schemeAnchor":"Lipids composed of C","schemeEnd":"Helix:"},
+    {"n":"2","paperPage":2,"paperAnchor":"2.","schemePage":5,"schemeAnchor":"Helix:","schemeEnd":"DNA cut with:"},
+    {"n":"3","paperPage":3,"paperAnchor":"3.","schemePage":5,"schemeAnchor":"DNA cut with:","schemeEnd":"A = Liver"},
+    {"n":"4","paperPage":3,"paperAnchor":"4.","schemePage":5,"schemeAnchor":"A = Liver","schemeEnd":"Enzymes made from carbohydrates"},
+    {"n":"5","paperPage":4,"paperAnchor":"5.","schemePage":5,"schemeAnchor":"Enzymes made from carbohydrates","schemeEnd":"Rhizopus kingdom"},
+    {"n":"6","paperPage":4,"paperAnchor":"6.","schemePage":5,"schemeAnchor":"Rhizopus kingdom"},
+    {"n":"7","paperPage":5,"paperAnchor":"7.","schemePage":6,"schemeAnchor":"Two stem functions","schemeEnd":"Gas absent in anaerobic"},
+    {"n":"8","paperPage":6,"paperAnchor":"8.","schemePage":6,"schemeAnchor":"Gas absent in anaerobic","schemeEnd":"From:"},
+    {"n":"9","paperPage":7,"paperAnchor":"9.","schemePage":6,"schemeAnchor":"From:"},
+    {"n":"10","paperPage":8,"paperAnchor":"10.","schemePage":7,"schemeAnchor":"Phenotype:","schemeEnd":"Why plants producers"},
+    {"n":"11","paperPage":9,"paperAnchor":"11.","schemePage":7,"schemeAnchor":"Why plants producers"},
+    {"n":"12","paperPage":10,"paperAnchor":"12.","schemePage":8,"schemeAnchor":"Main types of reproduction","schemeEnd":"Chemical messengers"},
+    {"n":"13","paperPage":11,"paperAnchor":"13.","schemePage":8,"schemeAnchor":"Chemical messengers"},
+    {"n":"14","paperPage":12,"paperAnchor":"14.","schemePage":9,"schemeAnchor":"Metabolism:"},
+    {"n":"15","paperPage":14,"paperAnchor":"15.","schemePage":10,"schemeAnchor":"A = Optic nerve"}
+  ]
+}

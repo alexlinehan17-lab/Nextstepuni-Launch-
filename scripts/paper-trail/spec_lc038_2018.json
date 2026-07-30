@@ -1,0 +1,15 @@
+{
+  "year": 2018,
+  "paperFileid": "LC038ALP000EV.pdf",
+  "schemeFileid": "LC038ALP000EV.pdf",
+  "q": [
+    {"n": "1", "paperPage": 3, "paperAnchor": "1.", "schemePage": 3, "schemeAnchor": "1.", "schemeEnd": "2."},
+    {"n": "2", "paperPage": 3, "paperAnchor": "2.", "schemePage": 3, "schemeAnchor": "2."},
+    {"n": "3", "paperPage": 3, "paperAnchor": "3.", "schemePage": 4, "schemeAnchor": "3.", "schemeEnd": "4."},
+    {"n": "4", "paperPage": 4, "paperAnchor": "4.", "schemePage": 4, "schemeAnchor": "4.", "schemeEnd": "5."},
+    {"n": "5", "paperPage": 4, "paperAnchor": "5.", "schemePage": 4, "schemeAnchor": "5.", "schemeEnd": "6."},
+    {"n": "6", "paperPage": 4, "paperAnchor": "6", "schemePage": 4, "schemeAnchor": "6.", "schemeEnd": "Opgave II"},
+    {"n": "Opgave II", "paperPage": 4, "paperAnchor": "Opgave II", "schemePage": 4, "schemeAnchor": "Opgave II"},
+    {"n": "Opgave III", "paperPage": 4, "paperAnchor": "Opgave III", "schemePage": 5, "schemeAnchor": "Opgave III", "schemeEnd": "sprog."}
+  ]
+}

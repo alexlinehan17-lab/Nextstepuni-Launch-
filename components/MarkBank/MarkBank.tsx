@@ -25,7 +25,7 @@ import {
   NEW_CARD, dueAt, grade as gradeCard, intervalWords,
   isDue, planSession, retentionFor, retrievability,
 } from './scheduler';
-import { STRANDS, cardsForTopic, loadCards, topicMarks } from './deck';
+import { SUBJECTS, builtDecks, cardsForTopic, deckSize, loadCards, strandsFor, topicMarks, type Level } from './deck';
 import {
   commitReview, ensureDeck, fetchDeck, mergeDecks, readLocal, writeLocal,
   type DeckState,
@@ -48,7 +48,6 @@ const SERIF = "'Source Serif 4', Georgia, serif";
 const SANS = "'DM Sans', system-ui, sans-serif";
 const MONO = "'Roboto Mono', ui-monospace, monospace";
 
-type Level = 'higher' | 'ordinary';
 type Screen =
   | { name: 'bank' }
   | { name: 'topics' }
@@ -70,6 +69,49 @@ const Eyebrow: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   }}>{children}</span>
 );
 
+/**
+ * A pill of mutually exclusive choices.
+ *
+ * An option with no cards behind it stays selectable and says so, rather than
+ * being hidden or disabled: a student looking for Chemistry needs to see that it
+ * exists and is being written, not to wonder whether the tool has it at all.
+ */
+const Segment: React.FC<{
+  options: { value: string; label: string; empty?: boolean }[];
+  value: string;
+  onChange: (value: string) => void;
+}> = ({ options, value, onChange }) => (
+  <div style={{ display: 'inline-flex', background: '#fff', border: `2px solid ${INK}`, borderRadius: 100, padding: 3 }}>
+    {options.map(o => {
+      const on = o.value === value;
+      return (
+        <button
+          key={o.value} type="button" onClick={() => onChange(o.value)}
+          aria-pressed={on}
+          style={{
+            display: 'flex', alignItems: 'center', gap: 5,
+            padding: '7px 16px', borderRadius: 100, border: 'none', cursor: 'pointer',
+            background: on ? INK : 'transparent',
+            color: on ? '#fff' : MUTED, font: `600 12.5px/1 ${SANS}`,
+          }}
+        >
+          {o.label}
+          {o.empty && (
+            <span
+              aria-hidden
+              title="No cards yet"
+              style={{
+                width: 5, height: 5, borderRadius: '50%',
+                background: on ? 'rgba(255,255,255,.55)' : MUTED_BORDER,
+              }}
+            />
+          )}
+        </button>
+      );
+    })}
+  </div>
+);
+
 /** Three-zone bar: secure, met-but-fading, not yet met. Never a percentage. */
 const MarkBar: React.FC<{ secure: number; met: number; total: number }> = ({ secure, met, total }) => {
   const pct = (n: number) => (total > 0 ? Math.min(100, (n / total) * 100) : 0);
@@ -84,8 +126,12 @@ const MarkBar: React.FC<{ secure: number; met: number; total: number }> = ({ sec
 /* ------------------------------------------------------------------ tool ---- */
 
 const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
+  const [subjectId, setSubjectId] = useState<string>(SUBJECTS[0].id);
   const [level, setLevel] = useState<Level>('higher');
-  const deckId = `biology-${level}`;
+  const subject = SUBJECTS.find(s => s.id === subjectId) ?? SUBJECTS[0];
+  // One deck per subject AND level, so a student's Biology work is untouched by
+  // anything they do in Chemistry, and dropping a level never disturbs either.
+  const deckId = `${subjectId}-${level}`;
   const [deck, setDeck] = useState<DeckState>(() => readLocal(uid, deckId));
   const [screen, setScreen] = useState<Screen>({ name: 'bank' });
   const [loaded, setLoaded] = useState(false);
@@ -119,13 +165,13 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
   useEffect(() => {
     let cancelled = false;
     setCardsLoading(true);
-    loadCards(level).then(loaded => {
+    loadCards(subjectId, level).then(loaded => {
       if (cancelled) return;
       setCards(loaded);
       setCardsLoading(false);
     });
     return () => { cancelled = true; };
-  }, [level]);
+  }, [subjectId, level]);
 
   const levelUnbuilt = !cardsLoading && cards.length === 0;
   const memories = deck.cards;
@@ -197,7 +243,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
     return (
       <SessionScreen
         cards={screen.cards}
-        subjectLabel="Biology"
+        subjectLabel={subject.title}
         onGrade={handleGrade}
         onExit={() => setScreen({ name: 'topics' })}
         onFinish={results => setScreen({ name: 'close', results, topicId: screen.topicId })}
@@ -288,7 +334,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
             >
               ‹ The Bank
             </button>
-            <h2 style={{ font: `700 26px/1.15 ${SERIF}`, color: INK, margin: '12px 0 4px' }}>Biology</h2>
+            <h2 style={{ font: `700 26px/1.15 ${SERIF}`, color: INK, margin: '12px 0 4px' }}>{subject.title}</h2>
             <Eyebrow>
               {level === 'higher' ? 'Higher level' : 'Ordinary level'} · redeveloped specification
             </Eyebrow>
@@ -296,7 +342,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
         </div>
 
         <div style={{ maxWidth: 560, margin: '0 auto', padding: '20px 16px 60px' }}>
-          {STRANDS.map(strand => (
+          {strandsFor(subjectId).map(strand => (
             <section key={strand.id} style={{ marginBottom: 26 }}>
               <div style={{ marginBottom: 10 }}>
                 <Eyebrow>{strand.label}</Eyebrow>
@@ -371,6 +417,12 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
   const secure = marksSecure(cards);
   const met = marksMet(cards);
   const dueCount = dueIds.length;
+  // Named from the build's own card counts, so an empty deck can point at one
+  // that isn't — without downloading a deck to find out whether it has anything.
+  const elsewhere = builtDecks().filter(d => d.subjectId !== subjectId || d.level !== level);
+  const builtElsewhere = elsewhere.length
+    ? `${elsewhere.map(d => d.label).join(', ').replace(/, ([^,]*)$/, ' and $1')} ${elsewhere.length === 1 ? 'is' : 'are'} ready now`
+    : null;
   const nothingMet = met === 0;
   const nextReturn = cards
     .map(c => (memories[c.id]?.last ? dueAt(c.id, memories[c.id], retention) : Infinity))
@@ -384,11 +436,11 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
           {levelUnbuilt ? (
             <>
               <h2 style={{ font: `700 27px/1.18 ${SERIF}`, color: INK, margin: '0 0 10px' }}>
-                Ordinary Level isn&rsquo;t built yet.
+                {subject.title} {level === 'higher' ? 'Higher' : 'Ordinary'} Level isn&rsquo;t built yet.
               </h2>
               <p style={{ font: `400 14.5px/1.55 ${SANS}`, color: MUTED, margin: '0 0 20px', maxWidth: '36ch' }}>
-                Every card so far comes from the Higher Level paper. Ordinary Level is next —
-                switch back to Higher in the meantime.
+                Cards are written one paper at a time, straight from the marking schemes. This one is
+                still being written — {builtElsewhere ?? 'try another subject or level in the meantime'}.
               </p>
             </>
           ) : nothingMet ? (
@@ -397,8 +449,8 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
                 Nothing in the bank yet.
               </h2>
               <p style={{ font: `400 14.5px/1.55 ${SANS}`, color: MUTED, margin: '0 0 20px', maxWidth: '34ch' }}>
-                Pick a topic and you&rsquo;ll get real Leaving Cert Biology questions — the exact wording
-                from the paper — marked point by point against the real scheme.
+                Pick a topic and you&rsquo;ll get real Leaving Cert {subject.title} questions — the exact
+                wording from the paper — marked point by point against the real scheme.
               </p>
             </>
           ) : dueCount > 0 ? (
@@ -462,20 +514,24 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
       </div>
 
       <div style={{ maxWidth: 560, margin: '0 auto', padding: '16px 16px 60px' }}>
-        {/* Level segment. Switching never wipes state — both decks survive. */}
-        <div style={{ display: 'inline-flex', background: '#fff', border: `2px solid ${INK}`, borderRadius: 100, padding: 3, marginBottom: 18 }}>
-          {(['higher', 'ordinary'] as Level[]).map(l => (
-            <button
-              key={l} type="button" onClick={() => setLevel(l)}
-              style={{
-                padding: '7px 16px', borderRadius: 100, border: 'none', cursor: 'pointer',
-                background: level === l ? INK : 'transparent',
-                color: level === l ? '#fff' : MUTED, font: `600 12.5px/1 ${SANS}`,
-              }}
-            >
-              {l === 'higher' ? 'Higher' : 'Ordinary'}
-            </button>
-          ))}
+        {/* Subject and level. Switching either never wipes state — every deck is
+            stored separately, so a student can move between them freely. */}
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 9, marginBottom: 18 }}>
+          <Segment
+            options={SUBJECTS.map(s => ({
+              value: s.id, label: s.title, empty: deckSize(s.id, level) === 0,
+            }))}
+            value={subjectId}
+            onChange={setSubjectId}
+          />
+          <Segment
+            options={(['higher', 'ordinary'] as Level[]).map(l => ({
+              value: l, label: l === 'higher' ? 'Higher' : 'Ordinary',
+              empty: deckSize(subjectId, l) === 0,
+            }))}
+            value={level}
+            onChange={v => setLevel(v as Level)}
+          />
         </div>
 
         <button
@@ -487,14 +543,14 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
           }}
         >
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 10 }}>
-            <span style={{ font: `600 17px/1.2 ${SERIF}`, color: INK }}>Biology</span>
+            <span style={{ font: `600 17px/1.2 ${SERIF}`, color: INK }}>{subject.title}</span>
             <span style={{ font: `700 11px/1 ${MONO}`, color: MUTED, fontVariantNumeric: 'tabular-nums' }}>
               {secure} / {totalMarks} marks
             </span>
           </div>
           <p style={{ margin: '9px 0 8px', font: `400 12.5px/1.45 ${SANS}`, color: MUTED }}>
             {nothingMet
-              ? `${cards.length} sample ${cards.length === 1 ? 'card' : 'cards'} across ${new Set(cards.map(c => c.topicId)).size} topics`
+              ? `${cards.length} ${cards.length === 1 ? 'card' : 'cards'} across ${new Set(cards.map(c => c.topicId)).size} topics`
               : `${secure} of ${totalMarks} marks secure · ${unmet.length} not met yet`}
           </p>
           <MarkBar secure={secure} met={met} total={totalMarks} />
@@ -506,7 +562,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
             <p style={{ margin: '6px 0 0', font: `400 12.5px/1.5 ${SANS}`, color: INK_2 }}>
               {cards.length} questions from the {examYears} Leaving Certificate papers, each one marked
               against the real State Examinations Commission scheme. Topics follow the redeveloped
-              Biology specification, first examined in June 2027.
+              {' '}{subject.title} specification, first examined in June 2027.
             </p>
           </div>
         )}

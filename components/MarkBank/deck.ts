@@ -21,6 +21,7 @@
  */
 
 import type { SecCard, SecDiagramCard } from '../../types/markBank';
+import DECK_SIZES from './cards/sizes.json';
 
 
 export interface TopicRef {
@@ -330,17 +331,55 @@ const HAND_BUILT: SecCard[] = [
 ];
 
 /**
- * Cards for one level, loaded on demand.
+ * Cards for one subject at one level, loaded on demand.
  *
- * A student is on Higher or Ordinary, never both, so the two levels are separate
- * modules and only the one in front of the student is fetched. Shipping the whole
- * deck in a single chunk would make every student download the half they will
- * never open, and that cost grows with each authoring wave.
+ * A student sits one subject at one level, so each pairing is its own module and
+ * only the one in front of them is fetched. Shipping the whole deck in a single
+ * chunk would make every student download decks they will never open, and that
+ * cost grows with every subject and every authoring wave.
+ *
+ * The imports are spelled out rather than built from a template because the
+ * bundler has to see each one to split it; a computed specifier either fails to
+ * resolve or drags every deck into one chunk, which is the thing this avoids.
  */
-export async function loadCards(level: 'higher' | 'ordinary'): Promise<SecCard[]> {
-  const mod = level === 'higher'
-    ? await import('./cards/higher')
-    : await import('./cards/ordinary');
+const DECKS: Record<string, Record<Level, () => Promise<{ CARDS: SecCard[] }>>> = {
+  biology: {
+    higher: () => import('./cards/biology/higher'),
+    ordinary: () => import('./cards/biology/ordinary'),
+  },
+  chemistry: {
+    higher: () => import('./cards/chemistry/higher'),
+    ordinary: () => import('./cards/chemistry/ordinary'),
+  },
+};
+
+export type Level = 'higher' | 'ordinary';
+
+/**
+ * How many cards each deck holds, written by the build script.
+ *
+ * Read eagerly, unlike the decks themselves, because the tool has to say which
+ * decks are ready BEFORE a student taps one — and answering that by downloading
+ * every deck would defeat the splitting above. A subject absent here has nothing
+ * built yet.
+ */
+export const deckSize = (subjectId: string, level: Level): number =>
+  (DECK_SIZES as Record<string, Partial<Record<Level, number>>>)[subjectId]?.[level] ?? 0;
+
+/** Decks with cards in them, as "Biology Higher"-style labels. */
+export const builtDecks = (): { subjectId: string; level: Level; label: string }[] =>
+  SUBJECTS.flatMap(s => (['higher', 'ordinary'] as Level[])
+    .filter(l => deckSize(s.id, l) > 0)
+    .map(l => ({ subjectId: s.id, level: l, label: `${s.title} ${l === 'higher' ? 'Higher' : 'Ordinary'}` })));
+
+export async function loadCards(subjectId: string, level: Level): Promise<SecCard[]> {
+  const load = DECKS[subjectId]?.[level];
+  if (!load) return [];
+  const mod = await load();
+  if (subjectId !== 'biology') return mod.CARDS;
+  // The five hand-built Biology cards predate the build script. A generated card
+  // for the same question supersedes one, because that one went through
+  // independent verification and these were written while the model was settling.
   const refs = new Set(mod.CARDS.map(c => c.questionRef));
   return [...mod.CARDS, ...HAND_BUILT.filter(c => c.level === level && !refs.has(c.questionRef))];
 }

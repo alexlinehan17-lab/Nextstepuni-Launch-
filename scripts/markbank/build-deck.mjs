@@ -3,16 +3,20 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * Mark Bank — compile authored cards into the deck module.
+ * Mark Bank — compile authored cards into the deck modules.
  *
- * Input is the JSON produced by the authoring workflow. This script does the one
- * thing an authoring agent is never allowed to do: bind a figure. Agents name a
- * figure by KEY only; the real path, hash and attribution are resolved here from
- * the file on disk. Both historical figure corruptions in this repo entered
- * through a hand-transcribed path, so no path in the output was ever typed by a
- * model.
+ * Input is the JSON produced by an authoring workflow. This script does the two
+ * things an authoring agent is never allowed to do: bind a figure, and name a
+ * paper. Agents name a figure by KEY only and never name a paper at all; the real
+ * path, hash, attribution and SEC file id are resolved here from data on disk.
+ * Both historical figure corruptions in this repo entered through a
+ * hand-transcribed path, and the first Biology build pointed every card at the
+ * marking scheme PDF instead of the question paper for the same reason.
  *
- *   node scripts/markbank/build-deck.mjs <cards.json> > components/MarkBank/cards.ts
+ * The subject is taken from the cards themselves, not a flag — a flag that
+ * disagreed with the data would file a deck under the wrong subject silently.
+ *
+ *   node scripts/markbank/build-deck.mjs <cards.json>
  */
 
 import { readFileSync, existsSync, writeFileSync, mkdirSync } from 'node:fs';
@@ -20,20 +24,40 @@ import { createHash } from 'node:crypto';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
-const FIG_DIR = 'public/exam-figures/biology';
+import { resolvePaperFileid } from './paperIndex.mjs';
 
-/** Figures that hold a neighbour's crop, or whose crop truncates a label the
- *  question asks about. Never bindable. Mirrors BLOCKED_FIGURES in deck.ts. */
-const BLOCKED = new Set([
-  'alveolus-gas-exchange', 'lymphocyte', 'shoulder-joint', 'neuron',
-  'root-longitudinal-section', 'cell-membrane',
-]);
+const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
+
+/** Per-subject facts the generated module needs. Adding a subject means adding
+ *  a row here, and nothing else in this script changes. */
+const SUBJECTS = {
+  biology: {
+    title: 'Biology',
+    specVersion: 'lc-biology-2002',
+    figureDir: 'public/exam-figures/biology',
+    /** Crops that hold a neighbour's image, or truncate a label the question
+     *  asks about. Never bindable. Mirrors BLOCKED_FIGURES in deck.ts. */
+    blocked: new Set([
+      'alveolus-gas-exchange', 'lymphocyte', 'shoulder-joint', 'neuron',
+      'root-longitudinal-section', 'cell-membrane',
+    ]),
+  },
+  chemistry: {
+    title: 'Chemistry',
+    /* The syllabus examined before the 2027 redevelopment. Named by what it is
+     * rather than by a year, because I have not verified its publication year
+     * and an unverified date in a provenance field is worse than none. */
+    specVersion: 'lc-chemistry-legacy',
+    figureDir: 'public/exam-figures/chemistry',
+    blocked: new Set(),
+  },
+};
 
 /**
- * Alt text for the figures actually looked at. A figure with no entry here has
- * not been inspected, so it cannot be bound — describing an image nobody opened
- * is how Diagram Vault ended up confidently captioning bread mould as an alveolus.
+ * Alt text for the Biology figures actually looked at, from before the figure
+ * manifest existed. A figure with no entry here has not been inspected, so it
+ * cannot be bound — describing an image nobody opened is how Diagram Vault ended
+ * up confidently captioning bread mould as an alveolus.
  */
 const ALT = {
   "cell-membrane-labelled": "Cross-section of a cell membrane: a curved phospholipid bilayer with proteins embedded in and across it. A brace marks X at the bilayer itself on the left, and an arrow marks Y at a protein spanning the membrane.",
@@ -52,7 +76,6 @@ const ALT = {
 
 /* ------------------------------------------------------- provenance gate ---- */
 
-const SCHEME_DIR = 'examiner-reports/biology/schemes';
 const schemeCache = new Map();
 
 /**
@@ -62,16 +85,16 @@ const schemeCache = new Map();
  * on their own baseline ("C x ( H 2 O )y").
  */
 const MARKS_ONLY = /^\s*\d+\s*(\(\s*\d+\s*\))?\s*$/;
-const normalise = (t) => t.toLowerCase().replace(/[\u2010-\u2015]/g, '-').replace(/[^a-z0-9]+/g, '');
+const normalise = (t) => t.toLowerCase().replace(/[‐-―]/g, '-').replace(/[^a-z0-9]+/g, '');
 
-function schemeFor(card) {
-  const key = `${card.year ?? 2025}-${(card.level ?? 'higher') === 'higher' ? 'hl' : 'ol'}`;
-  if (!schemeCache.has(key)) {
-    const file = resolve(ROOT, SCHEME_DIR, `${key}.md`);
+function schemeFor(subjectId, card) {
+  const stem = `${card.year ?? 2025}-${(card.level ?? 'higher') === 'higher' ? 'hl' : 'ol'}`;
+  const file = resolve(ROOT, 'examiner-reports', subjectId, 'schemes', `${stem}.md`);
+  if (!schemeCache.has(file)) {
     const raw = existsSync(file) ? readFileSync(file, 'utf8') : '';
-    schemeCache.set(key, normalise(raw.split('\n').filter(l => !MARKS_ONLY.test(l)).join(' ')));
+    schemeCache.set(file, normalise(raw.split('\n').filter(l => !MARKS_ONLY.test(l)).join(' ')));
   }
-  return schemeCache.get(key);
+  return schemeCache.get(file);
 }
 
 /** Text that is a table fragment or a header rather than an answerable question. */
@@ -93,6 +116,20 @@ if (!cardsPath) {
 const input = JSON.parse(readFileSync(cardsPath, 'utf8'));
 const cards = Array.isArray(input) ? input : (input.accepted ?? input.cards ?? []);
 
+/* The subject comes from the cards. Mixed input is a mistake, not a feature:
+ * one run writes one subject's modules, so a stray card would vanish silently. */
+const subjectIds = [...new Set(cards.map(c => c.subjectId ?? 'biology'))];
+if (subjectIds.length !== 1) {
+  console.error(`cards span ${subjectIds.length} subjects (${subjectIds.join(', ')}) — build one subject at a time`);
+  process.exit(1);
+}
+const SUBJECT_ID = subjectIds[0];
+const SUBJECT = SUBJECTS[SUBJECT_ID];
+if (!SUBJECT) {
+  console.error(`unknown subject "${SUBJECT_ID}" — add it to SUBJECTS in this script`);
+  process.exit(1);
+}
+
 /**
  * Figures published by bind-figures.mjs: every one was OPENED by an inspecting
  * agent, and only those it marked complete and non-truncated are in here. Its id
@@ -103,7 +140,7 @@ const MANIFEST_PATH = resolve(ROOT, 'components/MarkBank/figures.json');
 const MANIFEST = existsSync(MANIFEST_PATH) ? JSON.parse(readFileSync(MANIFEST_PATH, 'utf8')) : {};
 
 const figureRecord = (key) => {
-  if (BLOCKED.has(key)) return { error: `figure "${key}" is on the blocklist` };
+  if (SUBJECT.blocked.has(key)) return { error: `figure "${key}" is on the blocklist` };
 
   const inspected = MANIFEST[key];
   if (inspected) {
@@ -120,9 +157,11 @@ const figureRecord = (key) => {
     };
   }
 
-  // Legacy 2025 Higher Level crops, bound before the manifest existed.
-  if (!ALT[key]) return { error: `figure "${key}" has not been inspected, so it has no verified alt text` };
-  const rel = `${FIG_DIR}/biology-2025-hl-${key}.png`;
+  // Legacy 2025 Biology Higher Level crops, bound before the manifest existed.
+  if (SUBJECT_ID !== 'biology' || !ALT[key]) {
+    return { error: `figure "${key}" has not been inspected, so it has no verified alt text` };
+  }
+  const rel = `${SUBJECT.figureDir}/biology-2025-hl-${key}.png`;
   const abs = resolve(ROOT, rel);
   if (!existsSync(abs)) return { error: `figure file missing: ${rel}` };
   return {
@@ -171,6 +210,7 @@ const out = [];
 const dropped = [];
 const seenId = new Set();
 const seenHash = new Map();
+let unresolvedPapers = 0;
 
 for (const c of cards) {
   if (byQuestion.get(c.questionRef) !== c) {
@@ -200,7 +240,7 @@ for (const c of cards) {
   }
 
   // Every marking point must actually appear in its own scheme.
-  const scheme = schemeFor(c);
+  const scheme = schemeFor(SUBJECT_ID, c);
   if (!scheme) { dropped.push(`${c.id}: no scheme on disk for ${c.year} ${c.level}`); continue; }
   const untraceable = [];
   for (const r of c.rows) {
@@ -237,6 +277,7 @@ for (const c of cards) {
     if (r.contextNote) parts.push(`contextNote: ${q(r.contextNote)}`);
     if (r.openList) parts.push('openList: true');
     if (r.exactTermRequired) parts.push('exactTermRequired: true');
+    if (r.route) parts.push(`route: ${q(r.route)}`);
     if (r.dependsOn) parts.push(`dependsOn: ${q(r.dependsOn)}`);
     if (r.group) parts.push(`group: ${JSON.stringify(r.group)}`);
     return `    { ${parts.join(', ')} },`;
@@ -245,11 +286,14 @@ for (const c of cards) {
   const year = c.year ?? 2025;
   const level = c.level ?? 'higher';
   const levelWord = level === 'higher' ? 'Higher' : 'Ordinary';
+  const fileid = resolvePaperFileid(SUBJECT_ID, year, level, c.section);
+  if (!fileid) unresolvedPapers++;
+
   out.push({ level, code: `  {
     ...base, kind: ${q(labelKey ? 'diagram' : 'question')},
     year: ${year}, level: ${q(level)},
-    paperFileid: ${q(c.paperFileid ?? `LC025${level === 'higher' ? 'A' : 'G'}LP000EV`)},
-    schemeCitation: ${q(`Marking points quoted from the SEC marking scheme, Biology ${year} ${levelWord} Level — © State Examinations Commission.`)},
+    paperFileid: ${fileid ? q(fileid) : 'null'},
+    schemeCitation: ${q(`Marking points quoted from the SEC marking scheme, ${SUBJECT.title} ${year} ${levelWord} Level — © State Examinations Commission.`)},
     id: ${q(c.id)}, topicId: ${q(c.topicId)}, conceptId: ${q(c.conceptId)},
     section: ${q(c.section)}, questionRef: ${q(c.questionRef)},${c.stem ? `\n    stem: ${q(c.stem)},` : ''}
     questionText: ${q(c.questionText)},
@@ -260,46 +304,49 @@ ${rows}
   } as SecCard,` });
 }
 
-process.stderr.write(`built ${out.length} cards, dropped ${dropped.length}\n`);
+process.stderr.write(`${SUBJECT.title}: built ${out.length} cards, dropped ${dropped.length}\n`);
 for (const d of dropped) process.stderr.write(`  DROPPED ${d}\n`);
+if (unresolvedPapers) {
+  process.stderr.write(`  ${unresolvedPapers} card(s) have no paper in the Paper Trail index; paperFileid is null rather than guessed\n`);
+}
 
 /**
- * One module per level, not one for the whole deck.
+ * One module per subject and level, not one for the whole deck.
  *
- * A student is on Higher or Ordinary, never both, so shipping every card in one
- * chunk makes them download the half they will never open — and the cost grows
- * with every wave. Splitting here lets the tool dynamic-import only the level in
- * front of the student.
+ * A student sits one subject at one level, so shipping everything in a single
+ * chunk makes them download decks they will never open — and that cost grows with
+ * every authoring wave. Splitting here lets the tool dynamic-import only what is
+ * in front of the student.
  */
-const OUT_DIR = resolve(ROOT, 'components/MarkBank/cards');
+const OUT_DIR = resolve(ROOT, 'components/MarkBank/cards', SUBJECT_ID);
 mkdirSync(OUT_DIR, { recursive: true });
 
 const moduleFor = (level, cards) => `/**
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * Mark Bank — authored Biology cards, ${level === 'higher' ? 'Higher' : 'Ordinary'} Level.
+ * Mark Bank — authored ${SUBJECT.title} cards, ${level === 'higher' ? 'Higher' : 'Ordinary'} Level.
  *
  * GENERATED by scripts/markbank/build-deck.mjs. Do not edit by hand.
  *
  * Every question, marking point and mark value is transcribed from the marking
- * scheme for that card's own year and level in examiner-reports/biology/schemes/,
- * and the build drops any card whose content cannot be found there. Figure paths
- * and hashes are resolved from the files on disk by the build script — never
- * typed — because both historical figure corruptions in this repo entered
- * through a hand-transcribed path.
+ * scheme for that card's own year and level in examiner-reports/${SUBJECT_ID}/schemes/,
+ * and the build drops any card whose content cannot be found there. Figure paths,
+ * hashes and SEC paper file ids are resolved from data on disk by the build
+ * script — never typed — because both historical figure corruptions in this repo
+ * entered through a hand-transcribed path.
  *
- * Cards are tagged to the REDEVELOPED specification's units, not the retired
- * Unit One/Two/Three syllabus.
+ * Cards are tagged to the units of the REDEVELOPED ${SUBJECT.title} specification,
+ * first examined June 2027, not to the retired syllabus the papers were sat under.
  */
 
-import type { SecCard } from '../../../types/markBank';
+import type { SecCard } from '../../../../types/markBank';
 
 const base = {
   source: 'sec' as const,
-  subjectId: 'biology',
-  specVersion: 'lc-biology-2002',
-  qa: { gates: ['verbatim', 'tariff', 'figure'], humanReviewedBy: 'agent-verified', humanReviewedAt: '2026-07-30' },
+  subjectId: ${q(SUBJECT_ID)},
+  specVersion: ${q(SUBJECT.specVersion)},
+  qa: { gates: ['verbatim', 'tariff', 'figure'], humanReviewedBy: 'agent-verified', humanReviewedAt: '2026-07-31' },
 };
 
 export const CARDS: SecCard[] = [
@@ -307,8 +354,23 @@ ${cards.join('\n')}
 ];
 `;
 
+const sizes = {};
 for (const level of ['higher', 'ordinary']) {
-  const cards = out.filter(c => c.level === level).map(c => c.code);
-  writeFileSync(resolve(OUT_DIR, `${level}.ts`), moduleFor(level, cards));
-  process.stderr.write(`  ${level}: ${cards.length} cards -> components/MarkBank/cards/${level}.ts\n`);
+  const levelCards = out.filter(c => c.level === level).map(c => c.code);
+  writeFileSync(resolve(OUT_DIR, `${level}.ts`), moduleFor(level, levelCards));
+  sizes[level] = levelCards.length;
+  process.stderr.write(`  ${level}: ${levelCards.length} cards -> components/MarkBank/cards/${SUBJECT_ID}/${level}.ts\n`);
 }
+
+/**
+ * How many cards each deck holds, so the tool can say which decks are ready
+ * WITHOUT importing them. Knowing that Chemistry Ordinary is empty is exactly
+ * the thing a student needs before they tap it, and finding out by downloading
+ * the deck defeats the point of splitting the decks in the first place.
+ *
+ * Merged rather than overwritten: one run builds one subject, and clobbering the
+ * file would erase every other subject's counts.
+ */
+const MANIFEST_OUT = resolve(ROOT, 'components/MarkBank/cards/sizes.json');
+const existing = existsSync(MANIFEST_OUT) ? JSON.parse(readFileSync(MANIFEST_OUT, 'utf8')) : {};
+writeFileSync(MANIFEST_OUT, `${JSON.stringify({ ...existing, [SUBJECT_ID]: sizes }, null, 1)}\n`);

@@ -23,19 +23,21 @@ import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { createHash } from 'node:crypto';
 
-import { STRANDS, CHEMISTRY_STRANDS, ALL_TOPICS, SUBJECTS, BLOCKED_FIGURES } from '../components/MarkBank/deck';
-import { CARDS as HIGHER } from '../components/MarkBank/cards/higher';
-import { CARDS as ORDINARY } from '../components/MarkBank/cards/ordinary';
+import { STRANDS, CHEMISTRY_STRANDS, ALL_TOPICS, SUBJECTS, BLOCKED_FIGURES, deckSize } from '../components/MarkBank/deck';
+import { CARDS as BIO_HIGHER } from '../components/MarkBank/cards/biology/higher';
+import { CARDS as BIO_ORDINARY } from '../components/MarkBank/cards/biology/ordinary';
+import { CARDS as CHEM_HIGHER } from '../components/MarkBank/cards/chemistry/higher';
+import { CARDS as CHEM_ORDINARY } from '../components/MarkBank/cards/chemistry/ordinary';
 
-/** The whole deck. The app loads one level at a time; the guards check both. */
-const SAMPLE_CARDS = [...HIGHER, ...ORDINARY];
+/** Every deck at once. The app loads one at a time; the guards check them all,
+ *  so a new subject inherits the whole net the day its first cards land. */
+const SAMPLE_CARDS = [...BIO_HIGHER, ...BIO_ORDINARY, ...CHEM_HIGHER, ...CHEM_ORDINARY];
 import {
   isDiagramCard, isContentFreeRow, looksLikeSectionLabel, tariffReconciles,
   MAX_ROWS, isValidCardId,
 } from '../types/markBank';
 
 const ROOT = resolve(__dirname, '..');
-const SCHEME_DIR = resolve(ROOT, 'examiner-reports/biology/schemes');
 
 const norm = (s: string) =>
   s.toLowerCase().replace(/[‐-―]/g, '-').replace(/[^a-z0-9]+/g, ' ').trim();
@@ -53,11 +55,12 @@ const tight = (s: string) => norm(s).replace(/ /g, '');
 const comparable = (text: string) =>
   tight(text.split('\n').filter(l => !MARKS_ONLY.test(l)).join(' '));
 
-const schemeFor = (card: { year: number; level: string }) =>
-  resolve(SCHEME_DIR, `${card.year}-${card.level === 'higher' ? 'hl' : 'ol'}.md`);
+const schemeFor = (card: { year: number; level: string; subjectId: string }) =>
+  resolve(ROOT, 'examiner-reports', card.subjectId, 'schemes',
+    `${card.year}-${card.level === 'higher' ? 'hl' : 'ol'}.md`);
 
 const schemeCache = new Map<string, string>();
-const schemeText = (card: { year: number; level: string }) => {
+const schemeText = (card: { year: number; level: string; subjectId: string }) => {
   const path = schemeFor(card);
   if (!schemeCache.has(path)) {
     schemeCache.set(path, existsSync(path) ? comparable(readFileSync(path, 'utf8')) : '');
@@ -216,6 +219,56 @@ describe('figures are real crops from the paper', () => {
       }
     }
     expect(bad, show(bad)).toEqual([]);
+  });
+});
+
+/* ------------------------------------------------------------ paper ids --- */
+
+describe('every card points at the question paper it came from', () => {
+  test('never at the marking scheme', async () => {
+    // The first Biology build defaulted paperFileid to a literal, and that
+    // literal was the SCHEME's id — so a deep link would have opened the answers
+    // instead of the question, on 1,104 of 1,112 cards. Nothing read the field
+    // yet, which is exactly why it went unnoticed.
+    const { paperEntry } = await import('../scripts/markbank/paperIndex.mjs');
+    const bad: string[] = [];
+    for (const card of SAMPLE_CARDS) {
+      if (card.paperFileid === null) continue;
+      const entry = paperEntry(card.subjectId, card.year, card.level);
+      if (!entry) { bad.push(`${card.questionRef}: no ${card.subjectId} paper for ${card.year} ${card.level}`); continue; }
+      const strip = (f?: string) => f?.replace(/\.pdf$/, '');
+      const papers = entry.papers.map((p: { doc?: { f?: string } }) => strip(p.doc?.f));
+      const schemes = entry.papers.map((p: { scheme?: { f?: string } }) => strip(p.scheme?.f));
+      if (papers.includes(card.paperFileid)) continue;
+      bad.push(schemes.includes(card.paperFileid)
+        ? `${card.questionRef}: ${card.paperFileid} is the MARKING SCHEME, not the paper`
+        : `${card.questionRef}: ${card.paperFileid} is not a ${card.year} ${card.level} paper at all`);
+    }
+    expect(bad, show(bad)).toEqual([]);
+  });
+
+  test('and at the paper holding its own section', async () => {
+    const { resolvePaperFileid } = await import('../scripts/markbank/paperIndex.mjs');
+    const bad = SAMPLE_CARDS
+      .filter(c => c.paperFileid !== null
+        && c.paperFileid !== resolvePaperFileid(c.subjectId, c.year, c.level, c.section))
+      .map(c => `${c.questionRef} (Section ${c.section}) -> ${c.paperFileid}`);
+    expect(bad, show(bad)).toEqual([]);
+  });
+});
+
+/* --------------------------------------------------------- deck manifest --- */
+
+describe('the size manifest matches the decks it describes', () => {
+  // The tool reads these counts to say which decks are ready WITHOUT importing
+  // them. A stale count either hides a finished deck or offers an empty one.
+  test.each([
+    ['biology', 'higher', BIO_HIGHER],
+    ['biology', 'ordinary', BIO_ORDINARY],
+    ['chemistry', 'higher', CHEM_HIGHER],
+    ['chemistry', 'ordinary', CHEM_ORDINARY],
+  ] as const)('%s %s', (subjectId, level, cards) => {
+    expect(deckSize(subjectId, level)).toBe(cards.length);
   });
 });
 

@@ -1,0 +1,27 @@
+{
+  "year": 2011,
+  "paperFileid": "LC014ALP013EV.pdf",
+  "schemeFileid": "LC014ALP000EV.pdf",
+  "q": [
+    {"n": "1",  "paperPage": 2, "paperAnchor": "1.",  "schemePage": 11, "schemeAnchor": "Q1",   "schemeEnd": "Q2"},
+    {"n": "2",  "paperPage": 2, "paperAnchor": "2.",  "schemePage": 11, "schemeAnchor": "Q2",   "schemeEnd": "Q3"},
+    {"n": "3",  "paperPage": 2, "paperAnchor": "3.",  "schemePage": 11, "schemeAnchor": "Q3"},
+    {"n": "4",  "paperPage": 2, "paperAnchor": "4.",  "schemePage": 12, "schemeAnchor": "Q4",   "schemeEnd": "Q5"},
+    {"n": "5",  "paperPage": 2, "paperAnchor": "5.",  "schemePage": 12, "schemeAnchor": "Q5",   "schemeEnd": "Q6"},
+    {"n": "6",  "paperPage": 3, "paperAnchor": "6.",  "schemePage": 12, "schemeAnchor": "Q6",   "schemeEnd": "Q7"},
+    {"n": "7",  "paperPage": 3, "paperAnchor": "7.",  "schemePage": 12, "schemeAnchor": "Q7"},
+    {"n": "8",  "paperPage": 3, "paperAnchor": "8.",  "schemePage": 13, "schemeAnchor": "Q.8",  "schemeEnd": "Q.9"},
+    {"n": "9",  "paperPage": 3, "paperAnchor": "9.",  "schemePage": 13, "schemeAnchor": "Q.9",  "schemeEnd": "Q.10"},
+    {"n": "10", "paperPage": 3, "paperAnchor": "10.", "schemePage": 13, "schemeAnchor": "Q.10"},
+    {"n": "11", "paperPage": 4, "paperAnchor": "11.", "schemePage": 14, "schemeAnchor": "Q.11", "schemeEnd": "Q.12"},
+    {"n": "12", "paperPage": 4, "paperAnchor": "12.", "schemePage": 14, "schemeAnchor": "Q.12", "schemeEnd": "Q.13"},
+    {"n": "13", "paperPage": 4, "paperAnchor": "13.", "schemePage": 14, "schemeAnchor": "Q.13"},
+    {"n": "14", "paperPage": 4, "paperAnchor": "14.", "schemePage": 15, "schemeAnchor": "Q.14", "schemeEnd": "Q.15"},
+    {"n": "15", "paperPage": 5, "paperAnchor": "15.", "schemePage": 15, "schemeAnchor": "Q.15"},
+    {"n": "16", "paperPage": 5, "paperAnchor": "16.", "schemePage": 16, "schemeAnchor": "Q16",  "schemeEnd": "Q17"},
+    {"n": "17", "paperPage": 5, "paperAnchor": "17.", "schemePage": 16, "schemeAnchor": "Q17",  "schemeEnd": "Q18"},
+    {"n": "18", "paperPage": 5, "paperAnchor": "18.", "schemePage": 16, "schemeAnchor": "Q18"},
+    {"n": "19", "paperPage": 6, "paperAnchor": "19.", "schemePage": 17, "schemeAnchor": "Q19",  "schemeEnd": "Q20"},
+    {"n": "20", "paperPage": 6, "paperAnchor": "20.", "schemePage": 17, "schemeAnchor": "Q20"}
+  ]
+}

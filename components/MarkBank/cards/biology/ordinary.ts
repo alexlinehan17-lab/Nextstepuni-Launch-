@@ -8,29 +8,29 @@
  *
  * Every question, marking point and mark value is transcribed from the marking
  * scheme for that card's own year and level in examiner-reports/biology/schemes/,
- * and the build drops any card whose content cannot be found there. Figure paths
- * and hashes are resolved from the files on disk by the build script — never
- * typed — because both historical figure corruptions in this repo entered
- * through a hand-transcribed path.
+ * and the build drops any card whose content cannot be found there. Figure paths,
+ * hashes and SEC paper file ids are resolved from data on disk by the build
+ * script — never typed — because both historical figure corruptions in this repo
+ * entered through a hand-transcribed path.
  *
- * Cards are tagged to the REDEVELOPED specification's units, not the retired
- * Unit One/Two/Three syllabus.
+ * Cards are tagged to the units of the REDEVELOPED Biology specification,
+ * first examined June 2027, not to the retired syllabus the papers were sat under.
  */
 
-import type { SecCard } from '../../../types/markBank';
+import type { SecCard } from '../../../../types/markBank';
 
 const base = {
   source: 'sec' as const,
-  subjectId: 'biology',
-  specVersion: 'lc-biology-2002',
-  qa: { gates: ['verbatim', 'tariff', 'figure'], humanReviewedBy: 'agent-verified', humanReviewedAt: '2026-07-30' },
+  subjectId: "biology",
+  specVersion: "lc-biology-2002",
+  qa: { gates: ['verbatim', 'tariff', 'figure'], humanReviewedBy: 'agent-verified', humanReviewedAt: '2026-07-31' },
 };
 
 export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q1-a", topicId: "bio-1-2", conceptId: "main-energy-source-carbohydrate",
     section: "A", questionRef: "2025 OL Q1(a)",
@@ -43,7 +43,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q1-b", topicId: "bio-1-2", conceptId: "carbohydrate-general-formula",
     section: "A", questionRef: "2025 OL Q1(b)",
@@ -56,7 +56,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q1-d", topicId: "bio-1-2", conceptId: "water-soluble-vitamins",
     section: "A", questionRef: "2025 OL Q1(d)",
@@ -69,7 +69,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q1-e", topicId: "bio-1-2", conceptId: "fat-soluble-vitamins",
     section: "A", questionRef: "2025 OL Q1(e)",
@@ -82,7 +82,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q2-a-e", topicId: "bio-3-1", conceptId: "ecology-key-terms",
     section: "A", questionRef: "2025 OL Q2(a)–(e)",
@@ -100,7 +100,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q3-a", topicId: "bio-u2", conceptId: "safety-in-experiments",
     section: "A", questionRef: "2025 OL Q3(a)",
@@ -114,7 +114,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q3-b", topicId: "bio-3-1", conceptId: "fauna-meaning",
     section: "A", questionRef: "2025 OL Q3(b)",
@@ -128,7 +128,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q3-c", topicId: "bio-1-3", conceptId: "osmosis-as-diffusion",
     section: "A", questionRef: "2025 OL Q3(c)",
@@ -142,7 +142,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q3-d", topicId: "bio-3-2", conceptId: "salt-and-sugar-food-preservation",
     section: "A", questionRef: "2025 OL Q3(d)",
@@ -156,7 +156,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q3-e", topicId: "bio-2-4", conceptId: "endocrine-glands-ductless",
     section: "A", questionRef: "2025 OL Q3(e)",
@@ -170,7 +170,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q3-f", topicId: "bio-2-4", conceptId: "meninges-location",
     section: "A", questionRef: "2025 OL Q3(f)",
@@ -184,7 +184,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q3-g", topicId: "bio-2-6", conceptId: "lenticels-plant-stems",
     section: "A", questionRef: "2025 OL Q3(g)",
@@ -198,7 +198,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q5-b", topicId: "bio-2-4", conceptId: "importance-of-tropisms",
     section: "A", questionRef: "2025 OL Q5(b)",
@@ -211,7 +211,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q5-c", topicId: "bio-2-4", conceptId: "auxin-transport-tissue",
     section: "A", questionRef: "2025 OL Q5(c)",
@@ -224,7 +224,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q6-a", topicId: "bio-2-4", conceptId: "endocrine-vs-nervous-communication",
     section: "A", questionRef: "2025 OL Q6(a)",
@@ -241,7 +241,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q6-b", topicId: "bio-2-4", conceptId: "central-nervous-system",
     section: "A", questionRef: "2025 OL Q6(b)",
@@ -255,7 +255,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q7-c", topicId: "bio-2-3", conceptId: "spindle-fibres-mitosis",
     section: "A", questionRef: "2025 OL Q7(c)",
@@ -268,7 +268,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q7-d", topicId: "bio-2-3", conceptId: "meiosis-vs-mitosis-difference",
     section: "A", questionRef: "2025 OL Q7(d)",
@@ -281,7 +281,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q7-e", topicId: "bio-2-3", conceptId: "cancer-uncontrolled-cell-division",
     section: "A", questionRef: "2025 OL Q7(e)",
@@ -294,7 +294,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q8-a-i", topicId: "bio-1-2", conceptId: "protein-element-nitrogen",
     section: "B", questionRef: "2025 OL Q8(a)(i)",
@@ -307,7 +307,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q8-a-ii", topicId: "bio-1-2", conceptId: "carbohydrate-smallest-unit",
     section: "B", questionRef: "2025 OL Q8(a)(ii)",
@@ -320,7 +320,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q9-a-i", topicId: "bio-2-1", conceptId: "enzymes-are-proteins",
     section: "B", questionRef: "2025 OL Q9(a)(i)",
@@ -333,7 +333,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q9-a-ii", topicId: "bio-2-1", conceptId: "factors-affecting-enzyme-activity",
     section: "B", questionRef: "2025 OL Q9(a)(ii)",
@@ -346,7 +346,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q9-b-iii", topicId: "bio-u2", conceptId: "varying-ph-with-buffers",
     section: "B", questionRef: "2025 OL Q9(b)(iii)",
@@ -360,7 +360,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q9-b-iv-v", topicId: "bio-u2", conceptId: "controlling-variables-enzyme-experiment",
     section: "B", questionRef: "2025 OL Q9(b)(iv)–(v)",
@@ -375,7 +375,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q10-a-i", topicId: "bio-2-5", conceptId: "seed-dormancy",
     section: "B", questionRef: "2025 OL Q10(a)(i)",
@@ -389,7 +389,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q10-a-ii", topicId: "bio-2-5", conceptId: "seed-food-store",
     section: "B", questionRef: "2025 OL Q10(a)(ii)",
@@ -402,7 +402,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q10-b-vi", topicId: "bio-u2", conceptId: "improving-reliability-germination",
     section: "B", questionRef: "2025 OL Q10(b)(vi)",
@@ -416,7 +416,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q11-a-i", topicId: "bio-3-1", conceptId: "energy-source-ecosystems",
     section: "C", questionRef: "2025 OL Q11(a)(i)",
@@ -429,7 +429,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q11-a-ii", topicId: "bio-3-1", conceptId: "food-chain-length-energy-loss",
     section: "C", questionRef: "2025 OL Q11(a)(ii)",
@@ -442,7 +442,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q11-a-iii", topicId: "bio-3-1", conceptId: "food-web-definition",
     section: "C", questionRef: "2025 OL Q11(a)(iii)",
@@ -455,7 +455,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q11-b-iii", topicId: "bio-3-1", conceptId: "niche-lesser-horseshoe-bat",
     section: "C", questionRef: "2025 OL Q11(b)(iii)",
@@ -469,7 +469,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q11-b-iv", topicId: "bio-3-1", conceptId: "protecting-bat-population",
     section: "C", questionRef: "2025 OL Q11(b)(iv)",
@@ -483,7 +483,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q11-b-v", topicId: "bio-3-1", conceptId: "trophic-levels-food-chain",
     section: "C", questionRef: "2025 OL Q11(b)(v)",
@@ -499,7 +499,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q12-a-i", topicId: "bio-1-4", conceptId: "genotype-phenotype",
     section: "C", questionRef: "2025 OL Q12(a)(i)",
@@ -513,7 +513,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q12-a-ii", topicId: "bio-1-4", conceptId: "chromosome-composition",
     section: "C", questionRef: "2025 OL Q12(a)(ii)",
@@ -526,7 +526,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q12-b-i", topicId: "bio-1-4", conceptId: "allele-recessive-terms",
     section: "C", questionRef: "2025 OL Q12(b)(i)",
@@ -540,7 +540,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q12-b-ii", topicId: "bio-1-4", conceptId: "genotypes-tall-plant",
     section: "C", questionRef: "2025 OL Q12(b)(ii)",
@@ -555,7 +555,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q12-b-iii", topicId: "bio-1-4", conceptId: "genotype-short-plant",
     section: "C", questionRef: "2025 OL Q12(b)(iii)",
@@ -569,7 +569,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q12-c-ii", topicId: "bio-1-4", conceptId: "dna-shape",
     section: "C", questionRef: "2025 OL Q12(c)(ii)",
@@ -582,7 +582,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q12-c-iii", topicId: "bio-1-4", conceptId: "dna-rna-differences",
     section: "C", questionRef: "2025 OL Q12(c)(iii)",
@@ -597,7 +597,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q12-c-iv", topicId: "bio-3-3", conceptId: "dna-profiling-applications",
     section: "C", questionRef: "2025 OL Q12(c)(iv)1",
@@ -610,7 +610,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q13-a-ii", topicId: "bio-2-2", conceptId: "organelles-photosynthesis-respiration",
     section: "C", questionRef: "2025 OL Q13(a)(ii)",
@@ -624,7 +624,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q13-b-i", topicId: "bio-2-2", conceptId: "chlorophyll",
     section: "C", questionRef: "2025 OL Q13(b)(i)",
@@ -637,7 +637,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q13-b-iii", topicId: "bio-2-2", conceptId: "water-source-photosynthesis",
     section: "C", questionRef: "2025 OL Q13(b)(iii)",
@@ -650,7 +650,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q13-b-iv", topicId: "bio-2-2", conceptId: "fate-of-oxygen-photosynthesis",
     section: "C", questionRef: "2025 OL Q13(b)(iv)",
@@ -664,7 +664,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q13-b-v", topicId: "bio-2-2", conceptId: "photosynthesis-anabolic",
     section: "C", questionRef: "2025 OL Q13(b)(v)",
@@ -678,7 +678,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q13-b-vii", topicId: "bio-2-2", conceptId: "importance-of-photosynthesis",
     section: "C", questionRef: "2025 OL Q13(b)(vii)",
@@ -691,7 +691,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q13-c-i", topicId: "bio-2-2", conceptId: "muscle-cell-respiration-energy",
     section: "C", questionRef: "2025 OL Q13(c)(i)",
@@ -704,7 +704,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q13-c-ii-1", topicId: "bio-2-2", conceptId: "stage-one-respiration-location",
     section: "C", questionRef: "2025 OL Q13(c)(ii)1",
@@ -718,7 +718,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q13-c-ii-2", topicId: "bio-2-2", conceptId: "respiration-stages-comparison",
     section: "C", questionRef: "2025 OL Q13(c)(ii)2",
@@ -735,7 +735,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q13-c-iii", topicId: "bio-2-2", conceptId: "anaerobic-respiration-muscle",
     section: "C", questionRef: "2025 OL Q13(c)(iii)",
@@ -748,7 +748,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q14-a-i", topicId: "bio-2-6", conceptId: "root-system-function",
     section: "C", questionRef: "2025 OL Q14(a)(i)",
@@ -761,7 +761,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q14-a-iii", topicId: "bio-2-6", conceptId: "shoot-system-function",
     section: "C", questionRef: "2025 OL Q14(a)(iii)",
@@ -775,7 +775,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q14-b-iv", topicId: "bio-2-6", conceptId: "vascular-tissue-xylem-phloem",
     section: "C", questionRef: "2025 OL Q14(b)(iv)",
@@ -789,7 +789,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q14-b-v", topicId: "bio-2-6", conceptId: "xylem-phloem-functions",
     section: "C", questionRef: "2025 OL Q14(b)(v)",
@@ -802,7 +802,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q14-c-i", topicId: "bio-2-5", conceptId: "seed-formation-dispersal",
     section: "C", questionRef: "2025 OL Q14(c)(i)1–2",
@@ -816,7 +816,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q14-c-ii", topicId: "bio-2-5", conceptId: "vegetative-propagation",
     section: "C", questionRef: "2025 OL Q14(c)(ii)1–2",
@@ -831,7 +831,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q15-a-i", topicId: "bio-2-5", conceptId: "testosterone",
     section: "C", questionRef: "2025 OL Q15(a)(i)",
@@ -844,7 +844,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q15-a-ii", topicId: "bio-2-5", conceptId: "oestrogen-progesterone-endometrium",
     section: "C", questionRef: "2025 OL Q15(a)(ii)",
@@ -858,7 +858,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q15-b-i", topicId: "bio-2-5", conceptId: "menstruation-uterus",
     section: "C", questionRef: "2025 OL Q15(b)(i)",
@@ -871,7 +871,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q15-b-ii", topicId: "bio-2-5", conceptId: "ovulation",
     section: "C", questionRef: "2025 OL Q15(b)(ii)",
@@ -884,7 +884,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q15-b-iii", topicId: "bio-2-5", conceptId: "site-of-fertilisation",
     section: "C", questionRef: "2025 OL Q15(b)(iii)",
@@ -897,7 +897,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q15-b-iv", topicId: "bio-2-5", conceptId: "infertility-definition",
     section: "C", questionRef: "2025 OL Q15(b)(iv)",
@@ -910,7 +910,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q15-b-v", topicId: "bio-2-5", conceptId: "infertility-treatment",
     section: "C", questionRef: "2025 OL Q15(b)(v)",
@@ -923,7 +923,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q15-b-vii", topicId: "bio-2-5", conceptId: "placenta-function",
     section: "C", questionRef: "2025 OL Q15(b)(vii)",
@@ -936,7 +936,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q15-b-viii", topicId: "bio-2-5", conceptId: "lactation-hormone",
     section: "C", questionRef: "2025 OL Q15(b)(viii)",
@@ -949,7 +949,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q15-c-ii", topicId: "bio-2-5", conceptId: "sperm-production-site",
     section: "C", questionRef: "2025 OL Q15(c)(ii)",
@@ -963,7 +963,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q16-a-i", topicId: "bio-2-1", conceptId: "enzyme-shape-globular",
     section: "C", questionRef: "2025 OL Q16(a)(i)",
@@ -976,7 +976,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q16-a-iii-2", topicId: "bio-2-1", conceptId: "immobilised-enzyme-advantages",
     section: "C", questionRef: "2025 OL Q16(a)(iii)2",
@@ -989,7 +989,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q16-a-iii-3", topicId: "bio-2-1", conceptId: "bioreactor",
     section: "C", questionRef: "2025 OL Q16(a)(iii)3",
@@ -1002,7 +1002,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q16-b-i", topicId: "bio-1-4", conceptId: "non-coding-dna",
     section: "C", questionRef: "2025 OL Q16(b)(i)",
@@ -1015,7 +1015,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q16-b-ii-1", topicId: "bio-1-4", conceptId: "mutation-definition",
     section: "C", questionRef: "2025 OL Q16(b)(ii)1",
@@ -1028,7 +1028,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q16-b-ii-2", topicId: "bio-1-4", conceptId: "causes-of-mutation",
     section: "C", questionRef: "2025 OL Q16(b)(ii)2",
@@ -1041,7 +1041,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q16-b-iii", topicId: "bio-1-4", conceptId: "heredity-species-gene-expression",
     section: "C", questionRef: "2025 OL Q16(b)(iii)",
@@ -1056,7 +1056,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q16-b-iv-2", topicId: "bio-1-5", conceptId: "evidence-for-evolution",
     section: "C", questionRef: "2025 OL Q16(b)(iv)2",
@@ -1071,7 +1071,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q16-c-i", topicId: "bio-3-2", conceptId: "fungi-kingdom-rhizopus",
     section: "C", questionRef: "2025 OL Q16(c)(i)",
@@ -1085,7 +1085,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q16-c-iii", topicId: "bio-3-2", conceptId: "sporangium-spores",
     section: "C", questionRef: "2025 OL Q16(c)(iii)",
@@ -1099,7 +1099,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q16-c-iv", topicId: "bio-3-2", conceptId: "spore-function",
     section: "C", questionRef: "2025 OL Q16(c)(iv)",
@@ -1112,7 +1112,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q16-c-v", topicId: "bio-3-2", conceptId: "saprophytic-nutrition",
     section: "C", questionRef: "2025 OL Q16(c)(v)",
@@ -1125,7 +1125,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q16-c-vi", topicId: "bio-3-2", conceptId: "yeast-unicellular-budding",
     section: "C", questionRef: "2025 OL Q16(c)(vi)",
@@ -1139,7 +1139,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q16-d-ii", topicId: "bio-3-2", conceptId: "viruses-classification",
     section: "C", questionRef: "2025 OL Q16(d)(ii)",
@@ -1152,7 +1152,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q16-d-iv", topicId: "bio-3-2", conceptId: "antibiotics-and-viruses",
     section: "C", questionRef: "2025 OL Q16(d)(iv)",
@@ -1165,7 +1165,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q17-a-ii", topicId: "bio-2-6", conceptId: "heart-chambers-blood-type",
     section: "C", questionRef: "2025 OL Q17(a)(ii)",
@@ -1179,7 +1179,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q17-a-iii", topicId: "bio-2-6", conceptId: "heart-valve-function",
     section: "C", questionRef: "2025 OL Q17(a)(iii)",
@@ -1193,7 +1193,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q17-a-v", topicId: "bio-2-6", conceptId: "human-blood-groups",
     section: "C", questionRef: "2025 OL Q17(a)(v)",
@@ -1206,7 +1206,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q17-b-i", topicId: "bio-2-4", conceptId: "skeleton-functions",
     section: "C", questionRef: "2025 OL Q17(b)(i)",
@@ -1219,7 +1219,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q17-b-ii", topicId: "bio-2-4", conceptId: "vertebra-types",
     section: "C", questionRef: "2025 OL Q17(b)(ii)",
@@ -1233,7 +1233,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q17-b-iii", topicId: "bio-2-4", conceptId: "axial-skeleton-bones",
     section: "C", questionRef: "2025 OL Q17(b)(iii)",
@@ -1246,7 +1246,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q17-c-ii", topicId: "bio-2-6", conceptId: "alveolus-function-adaptation",
     section: "C", questionRef: "2025 OL Q17(c)(ii)",
@@ -1260,7 +1260,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q17-c-vi", topicId: "bio-2-6", conceptId: "tracheal-cartilage-rings",
     section: "C", questionRef: "2025 OL Q17(c)(vi)",
@@ -1274,7 +1274,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q17-d-i", topicId: "bio-3-2", conceptId: "pathogen-definition",
     section: "C", questionRef: "2025 OL Q17(d)(i)",
@@ -1287,7 +1287,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q17-d-ii", topicId: "bio-3-2", conceptId: "general-defence-system",
     section: "C", questionRef: "2025 OL Q17(d)(ii)",
@@ -1300,7 +1300,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q17-d-iii", topicId: "bio-3-2", conceptId: "immune-system-organs",
     section: "C", questionRef: "2025 OL Q17(d)(iii)",
@@ -1315,7 +1315,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q17-d-iv", topicId: "bio-3-2", conceptId: "active-passive-immunity",
     section: "C", questionRef: "2025 OL Q17(d)(iv)",
@@ -1329,7 +1329,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q17-d-v", topicId: "bio-2-6", conceptId: "lymph-and-lymph-vessels",
     section: "C", questionRef: "2025 OL Q17(d)(v)",
@@ -1344,7 +1344,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q1-a", topicId: "bio-1-2", conceptId: "why-food-is-required",
     section: "A", questionRef: "2024 OL Q1(a)",
@@ -1358,7 +1358,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q1-d", topicId: "bio-1-2", conceptId: "structural-role-of-protein",
     section: "A", questionRef: "2024 OL Q1(d)",
@@ -1372,7 +1372,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q1-e", topicId: "bio-1-2", conceptId: "amino-acids",
     section: "A", questionRef: "2024 OL Q1(e)",
@@ -1386,7 +1386,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q2-a", topicId: "bio-3-2", conceptId: "yeast-unicellular",
     section: "A", questionRef: "2024 OL Q2(a)",
@@ -1400,7 +1400,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q2-b", topicId: "bio-3-2", conceptId: "yeast-budding",
     section: "A", questionRef: "2024 OL Q2(b)",
@@ -1414,7 +1414,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q2-d", topicId: "bio-3-2", conceptId: "yeast-bud-fate",
     section: "A", questionRef: "2024 OL Q2(d)",
@@ -1428,7 +1428,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q2-g", topicId: "bio-1-1", conceptId: "yeast-kingdom",
     section: "A", questionRef: "2024 OL Q2(g)",
@@ -1442,7 +1442,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q3-e", topicId: "bio-2-3", conceptId: "mitosis-daughter-cell-number",
     section: "A", questionRef: "2024 OL Q3(e)",
@@ -1456,7 +1456,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q3-f", topicId: "bio-2-3", conceptId: "mitosis-function",
     section: "A", questionRef: "2024 OL Q3(f)",
@@ -1470,7 +1470,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q4-c", topicId: "bio-1-1", conceptId: "beneficial-uses-of-viruses",
     section: "A", questionRef: "2024 OL Q4(c)",
@@ -1484,7 +1484,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q4-d", topicId: "bio-1-1", conceptId: "virus-replication",
     section: "A", questionRef: "2024 OL Q4(d)",
@@ -1498,7 +1498,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q5-a", topicId: "bio-2-4", conceptId: "skeleton-functions",
     section: "A", questionRef: "2024 OL Q5(a)",
@@ -1512,7 +1512,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q5-d", topicId: "bio-2-4", conceptId: "synovial-joints",
     section: "A", questionRef: "2024 OL Q5(d)",
@@ -1526,7 +1526,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q7", topicId: "bio-u2", conceptId: "scientific-method-terms",
     section: "A", questionRef: "2024 OL Q7",
@@ -1544,7 +1544,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q8-a-i", topicId: "bio-3-1", conceptId: "habitat-definition",
     section: "B", questionRef: "2024 OL Q8(a)(i)",
@@ -1557,7 +1557,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q8-a-ii", topicId: "bio-u2", conceptId: "identifying-fauna-and-flora",
     section: "B", questionRef: "2024 OL Q8(a)(ii)",
@@ -1570,7 +1570,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q8-b-i", topicId: "bio-u2", conceptId: "abiotic-factors-and-measurement",
     section: "B", questionRef: "2024 OL Q8(b)(i)",
@@ -1584,7 +1584,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q8-b-ii", topicId: "bio-u2", conceptId: "collecting-organisms-apparatus",
     section: "B", questionRef: "2024 OL Q8(b)(ii)",
@@ -1597,7 +1597,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q9-a", topicId: "bio-2-1", conceptId: "enzyme-definition-and-factors",
     section: "B", questionRef: "2024 OL Q9(a)",
@@ -1611,7 +1611,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q9-b-i", topicId: "bio-2-1", conceptId: "enzyme-and-its-substrate",
     section: "B", questionRef: "2024 OL Q9(b)(i)",
@@ -1625,7 +1625,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q9-b-iii-v", topicId: "bio-u2", conceptId: "enzyme-experiment-variables",
     section: "B", questionRef: "2024 OL Q9(b)(iii)–(v)",
@@ -1641,7 +1641,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q10-a", topicId: "bio-2-6", conceptId: "factors-affecting-circulatory-system",
     section: "B", questionRef: "2024 OL Q10(a)",
@@ -1654,7 +1654,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q10-b-i", topicId: "bio-u2", conceptId: "measuring-resting-pulse-and-breathing-rate",
     section: "B", questionRef: "2024 OL Q10(b)(i)",
@@ -1668,7 +1668,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q10-b-iii", topicId: "bio-2-6", conceptId: "recovery-rate-after-exercise",
     section: "B", questionRef: "2024 OL Q10(b)(iii)",
@@ -1682,7 +1682,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q10-b-iv", topicId: "bio-u2", conceptId: "repeating-an-investigation",
     section: "B", questionRef: "2024 OL Q10(b)(iv)",
@@ -1695,7 +1695,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q11-a", topicId: "bio-3-1", conceptId: "energy-source-biosphere-niche",
     section: "C", questionRef: "2024 OL Q11(a)",
@@ -1710,7 +1710,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q11-c-i", topicId: "bio-3-1", conceptId: "pollution-example-and-control",
     section: "C", questionRef: "2024 OL Q11(c)(i)",
@@ -1726,7 +1726,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q11-c-ii", topicId: "bio-3-1", conceptId: "waste-minimisation",
     section: "C", questionRef: "2024 OL Q11(c)(ii) 2.",
@@ -1739,7 +1739,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q11-c-iii", topicId: "bio-3-1", conceptId: "conservation-definition",
     section: "C", questionRef: "2024 OL Q11(c)(iii) 1.",
@@ -1752,7 +1752,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q12-a-i", topicId: "bio-1-1", conceptId: "metabolism-definition",
     section: "C", questionRef: "2024 OL Q12(a)(i)",
@@ -1765,7 +1765,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q12-a-ii", topicId: "bio-2-2", conceptId: "anabolic-versus-catabolic",
     section: "C", questionRef: "2024 OL Q12(a)(ii)",
@@ -1779,7 +1779,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q12-b-i", topicId: "bio-2-2", conceptId: "aerobic-respiration-equation",
     section: "C", questionRef: "2024 OL Q12(b)(i)",
@@ -1794,7 +1794,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q12-b-ii", topicId: "bio-1-2", conceptId: "glucose-formula",
     section: "C", questionRef: "2024 OL Q12(b)(ii)",
@@ -1807,7 +1807,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q12-b-iii", topicId: "bio-2-2", conceptId: "site-of-stage-1-respiration",
     section: "C", questionRef: "2024 OL Q12(b)(iii)",
@@ -1821,7 +1821,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q12-b-v", topicId: "bio-2-2", conceptId: "stage-1-versus-stage-2-respiration",
     section: "C", questionRef: "2024 OL Q12(b)(v)",
@@ -1837,7 +1837,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q12-c-ii", topicId: "bio-2-2", conceptId: "chlorophyll-traps-light",
     section: "C", questionRef: "2024 OL Q12(c)(ii)",
@@ -1851,7 +1851,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q12-c-iii", topicId: "bio-2-2", conceptId: "splitting-of-water-products",
     section: "C", questionRef: "2024 OL Q12(c)(iii)",
@@ -1866,7 +1866,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q12-c-iv", topicId: "bio-2-2", conceptId: "fate-of-water-splitting-products",
     section: "C", questionRef: "2024 OL Q12(c)(iv)",
@@ -1882,7 +1882,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q13-a", topicId: "bio-1-5", conceptId: "evolution-and-natural-selection",
     section: "C", questionRef: "2024 OL Q13(a)",
@@ -1897,7 +1897,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q13-b-i", topicId: "bio-1-4", conceptId: "homozygous-and-heterozygous",
     section: "C", questionRef: "2024 OL Q13(b)(i)",
@@ -1911,7 +1911,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q13-b-ii", topicId: "bio-1-4", conceptId: "homozygous-parent-genotypes",
     section: "C", questionRef: "2024 OL Q13(b)(ii)",
@@ -1926,7 +1926,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q13-c-i", topicId: "bio-2-3", conceptId: "meiosis-produces-gametes",
     section: "C", questionRef: "2024 OL Q13(c)(i)",
@@ -1939,7 +1939,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q13-c-ii", topicId: "bio-1-4", conceptId: "mutation-agents",
     section: "C", questionRef: "2024 OL Q13(c)(ii)",
@@ -1952,7 +1952,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q13-c-iii", topicId: "bio-1-5", conceptId: "species-definition",
     section: "C", questionRef: "2024 OL Q13(c)(iii)",
@@ -1966,7 +1966,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q13-c-iv", topicId: "bio-3-3", conceptId: "dna-profiling-applications",
     section: "C", questionRef: "2024 OL Q13(c)(iv)",
@@ -1979,7 +1979,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q13-c-v", topicId: "bio-3-3", conceptId: "genetic-screening-application",
     section: "C", questionRef: "2024 OL Q13(c)(v)",
@@ -1992,7 +1992,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q14-a", topicId: "bio-3-2", conceptId: "kingdoms-of-microorganisms",
     section: "C", questionRef: "2024 OL Q14(a)",
@@ -2007,7 +2007,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q14-b-ii-iii", topicId: "bio-3-2", conceptId: "bacterial-shape-and-pathogens",
     section: "C", questionRef: "2024 OL Q14(b)(ii)–(iii)",
@@ -2021,7 +2021,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q14-b-v-vi", topicId: "bio-3-2", conceptId: "binary-fission-and-bacterial-growth",
     section: "C", questionRef: "2024 OL Q14(b)(v)–(vi)",
@@ -2035,7 +2035,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q14-c-ii-iii", topicId: "bio-3-2", conceptId: "amoeba-part-functions",
     section: "C", questionRef: "2024 OL Q14(c)(ii)–(iii)",
@@ -2050,7 +2050,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q14-c-iv", topicId: "bio-3-2", conceptId: "asepsis-versus-sterility",
     section: "C", questionRef: "2024 OL Q14(c)(iv)",
@@ -2064,7 +2064,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q14-c-v", topicId: "bio-u2", conceptId: "safe-disposal-of-microorganisms",
     section: "C", questionRef: "2024 OL Q14(c)(v)",
@@ -2077,7 +2077,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q15-a", topicId: "bio-2-5", conceptId: "secondary-sexual-characteristics",
     section: "C", questionRef: "2024 OL Q15(a)",
@@ -2092,7 +2092,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q15-b-iv", topicId: "bio-2-5", conceptId: "relative-gamete-size",
     section: "C", questionRef: "2024 OL Q15(b)(iv)",
@@ -2105,7 +2105,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q15-b-vi", topicId: "bio-2-5", conceptId: "vagina-and-endometrium-functions",
     section: "C", questionRef: "2024 OL Q15(b)(vi)",
@@ -2119,7 +2119,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q15-c-i-iii", topicId: "bio-2-5", conceptId: "infertility-cause-and-treatment",
     section: "C", questionRef: "2024 OL Q15(c)(i)–(iii)",
@@ -2134,7 +2134,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q15-c-iv", topicId: "bio-2-5", conceptId: "birth-control",
     section: "C", questionRef: "2024 OL Q15(c)(iv)",
@@ -2148,7 +2148,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q15-c-v", topicId: "bio-2-5", conceptId: "benefits-of-breastfeeding",
     section: "C", questionRef: "2024 OL Q15(c)(v)",
@@ -2161,7 +2161,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q16-a-ii-iii", topicId: "bio-2-6", conceptId: "xylem-phloem-transpiration",
     section: "C", questionRef: "2024 OL Q16(a)(ii)–(iii)",
@@ -2176,7 +2176,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q16-a-vi", topicId: "bio-2-6", conceptId: "monocot-dicot-leaf-venation",
     section: "C", questionRef: "2024 OL Q16(a)(vi)",
@@ -2190,7 +2190,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q16-b-ii-iii", topicId: "bio-2-6", conceptId: "ingestion-digestion-absorption",
     section: "C", questionRef: "2024 OL Q16(b)(ii)–(iii)",
@@ -2205,7 +2205,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q16-b-iv-vi", topicId: "bio-2-6", conceptId: "liver-gut-bacteria-fibre",
     section: "C", questionRef: "2024 OL Q16(b)(iv)–(vi)",
@@ -2220,7 +2220,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q16-c-ii", topicId: "bio-2-5", conceptId: "flower-part-functions",
     section: "C", questionRef: "2024 OL Q16(c)(ii)",
@@ -2235,7 +2235,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q16-c-iii-iv", topicId: "bio-2-5", conceptId: "pollination-and-its-types",
     section: "C", questionRef: "2024 OL Q16(c)(iii)–(iv)",
@@ -2249,7 +2249,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q16-d-ii-iv", topicId: "bio-2-6", conceptId: "skin-excretion-defence-thermoregulation",
     section: "C", questionRef: "2024 OL Q16(d)(ii)–(iv)",
@@ -2265,7 +2265,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q16-d-v", topicId: "bio-2-6", conceptId: "excretory-organs-and-products",
     section: "C", questionRef: "2024 OL Q16(d)(v)",
@@ -2282,7 +2282,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q17-a-ii", topicId: "bio-2-5", conceptId: "testa-location-and-function",
     section: "C", questionRef: "2024 OL Q17(a)(ii)",
@@ -2296,7 +2296,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q17-a-iii", topicId: "bio-2-5", conceptId: "seed-dormancy",
     section: "C", questionRef: "2024 OL Q17(a)(iii)",
@@ -2310,7 +2310,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q17-a-iv", topicId: "bio-2-5", conceptId: "factors-essential-for-germination",
     section: "C", questionRef: "2024 OL Q17(a)(iv)",
@@ -2325,7 +2325,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q17-b-i", topicId: "bio-2-4", conceptId: "nerve-impulses-to-the-brain",
     section: "C", questionRef: "2024 OL Q17(b)(i)",
@@ -2339,7 +2339,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q17-b-iii", topicId: "bio-2-4", conceptId: "ear-part-functions",
     section: "C", questionRef: "2024 OL Q17(b)(iii)",
@@ -2354,7 +2354,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q17-b-iv-v", topicId: "bio-2-4", conceptId: "eustachian-tube-and-the-senses",
     section: "C", questionRef: "2024 OL Q17(b)(iv)–(v)",
@@ -2369,7 +2369,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q17-c-i-iii", topicId: "bio-2-5", conceptId: "vegetative-propagation-versus-seed",
     section: "C", questionRef: "2024 OL Q17(c)(i), (iii)",
@@ -2384,7 +2384,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q17-c-iv", topicId: "bio-2-5", conceptId: "artificial-propagation-methods",
     section: "C", questionRef: "2024 OL Q17(c)(iv)",
@@ -2397,7 +2397,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q17-d-i", topicId: "bio-2-4", conceptId: "hormone-definition",
     section: "C", questionRef: "2024 OL Q17(d)(i)",
@@ -2410,7 +2410,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q17-d-iv-v", topicId: "bio-2-4", conceptId: "endocrine-exocrine-gland-and-supplements",
     section: "C", questionRef: "2024 OL Q17(d)(iv)–(v)",
@@ -2424,7 +2424,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q1-b", topicId: "bio-1-2", conceptId: "carbohydrate-elements",
     section: "A", questionRef: "2023 OL Q1(b)",
@@ -2437,7 +2437,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q1-c", topicId: "bio-1-2", conceptId: "carbohydrate-structural-role",
     section: "A", questionRef: "2023 OL Q1(c)",
@@ -2450,7 +2450,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q1-d", topicId: "bio-1-2", conceptId: "disaccharide-formation",
     section: "A", questionRef: "2023 OL Q1(d)",
@@ -2463,7 +2463,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q1-e", topicId: "bio-1-2", conceptId: "plant-polysaccharides",
     section: "A", questionRef: "2023 OL Q1(e)",
@@ -2476,7 +2476,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q3", topicId: "bio-2-6", conceptId: "digestive-structures-and-their-functions",
     section: "A", questionRef: "2023 OL Q3",
@@ -2494,7 +2494,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q4-b", topicId: "bio-2-2", conceptId: "respiration-two-stages-energy-yield",
     section: "A", questionRef: "2023 OL Q4(b)",
@@ -2509,7 +2509,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q4-c", topicId: "bio-2-2", conceptId: "uses-of-released-energy",
     section: "A", questionRef: "2023 OL Q4(c)",
@@ -2522,7 +2522,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q4-d", topicId: "bio-2-2", conceptId: "anaerobic-respiration-product-in-muscle",
     section: "A", questionRef: "2023 OL Q4(d)",
@@ -2535,7 +2535,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q5-c", topicId: "bio-u2", conceptId: "microscope-stage-function",
     section: "A", questionRef: "2023 OL Q5(c)",
@@ -2548,7 +2548,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q5-d", topicId: "bio-u2", conceptId: "total-magnification-calculation",
     section: "A", questionRef: "2023 OL Q5(d)",
@@ -2561,7 +2561,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q5-e", topicId: "bio-u2", conceptId: "function-of-a-stain",
     section: "A", questionRef: "2023 OL Q5(e)",
@@ -2574,7 +2574,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q5-f", topicId: "bio-u2", conceptId: "types-of-microscope",
     section: "A", questionRef: "2023 OL Q5(f)",
@@ -2588,7 +2588,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q6-a", topicId: "bio-1-4", conceptId: "dna-number-of-strands",
     section: "A", questionRef: "2023 OL Q6(a)",
@@ -2601,7 +2601,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q6-b", topicId: "bio-1-4", conceptId: "dna-nitrogenous-bases",
     section: "A", questionRef: "2023 OL Q6(b)",
@@ -2614,7 +2614,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q6-c", topicId: "bio-2-3", conceptId: "codon-triplet",
     section: "A", questionRef: "2023 OL Q6(c)",
@@ -2627,7 +2627,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q6-d", topicId: "bio-1-4", conceptId: "dna-location-in-the-cell",
     section: "A", questionRef: "2023 OL Q6(d)",
@@ -2640,7 +2640,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q6-e", topicId: "bio-2-3", conceptId: "genetic-code",
     section: "A", questionRef: "2023 OL Q6(e)",
@@ -2653,7 +2653,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q6-f", topicId: "bio-2-3", conceptId: "rna-in-protein-synthesis",
     section: "A", questionRef: "2023 OL Q6(f)",
@@ -2666,7 +2666,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q7-d", topicId: "bio-2-4", conceptId: "neurotransmitters-at-the-synapse",
     section: "A", questionRef: "2023 OL Q7(d)",
@@ -2679,7 +2679,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q7-e", topicId: "bio-2-4", conceptId: "nervous-system-disorders",
     section: "A", questionRef: "2023 OL Q7(e)",
@@ -2692,7 +2692,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q8-a", topicId: "bio-3-1", conceptId: "flora-and-fauna",
     section: "B", questionRef: "2023 OL Q8(a)",
@@ -2706,7 +2706,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q8-b-i", topicId: "bio-u2", conceptId: "quadrat-percentage-frequency-survey",
     section: "B", questionRef: "2023 OL Q8(b)(i)",
@@ -2720,7 +2720,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q9-a", topicId: "bio-1-3", conceptId: "osmosis-definition",
     section: "B", questionRef: "2023 OL Q9(a)",
@@ -2734,7 +2734,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q9-b-ii", topicId: "bio-u2", conceptId: "osmosis-experiment-method",
     section: "B", questionRef: "2023 OL Q9(b)(ii)",
@@ -2747,7 +2747,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q9-b-iii", topicId: "bio-u2", conceptId: "osmosis-experiment-result",
     section: "B", questionRef: "2023 OL Q9(b)(iii)",
@@ -2760,7 +2760,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q10-a", topicId: "bio-u2", conceptId: "sterile-and-sterilising-apparatus",
     section: "B", questionRef: "2023 OL Q10(a)(i)–(ii)",
@@ -2774,7 +2774,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q10-b-i-iii", topicId: "bio-u2", conceptId: "leaf-yeast-investigation-setup",
     section: "B", questionRef: "2023 OL Q10(b)(i)–(iii)",
@@ -2790,7 +2790,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q10-b-iv-v", topicId: "bio-u2", conceptId: "leaf-yeast-inoculation-and-control",
     section: "B", questionRef: "2023 OL Q10(b)(iv)–(v)",
@@ -2805,7 +2805,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q10-b-vi-vii", topicId: "bio-u2", conceptId: "leaf-yeast-results",
     section: "B", questionRef: "2023 OL Q10(b)(vi)–(vii)",
@@ -2819,7 +2819,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q11-a-i", topicId: "bio-3-1", conceptId: "pollution-definition",
     section: "C", questionRef: "2023 OL Q11(a)(i)",
@@ -2832,7 +2832,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q11-b-iii-v-viii", topicId: "bio-3-1", conceptId: "ecological-pyramids",
     section: "C", questionRef: "2023 OL Q11(b)(iii), (v), (viii)",
@@ -2847,7 +2847,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q11-c-i-iii", topicId: "bio-3-1", conceptId: "edaphic-soil-factors",
     section: "C", questionRef: "2023 OL Q11(c)(i)–(iii)",
@@ -2862,7 +2862,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q11-c-v-vi", topicId: "bio-3-2", conceptId: "soil-nitrogen-and-nutrient-recycling",
     section: "C", questionRef: "2023 OL Q11(c)(v)–(vi)",
@@ -2876,7 +2876,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q12-a", topicId: "bio-1-4", conceptId: "chromosome-composition-and-diploid-number",
     section: "C", questionRef: "2023 OL Q12(a)(i)–(ii)",
@@ -2891,7 +2891,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q12-b-i", topicId: "bio-1-4", conceptId: "allele-and-dominant",
     section: "C", questionRef: "2023 OL Q12(b)(i)",
@@ -2906,7 +2906,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q12-c-i-ii", topicId: "bio-1-3", conceptId: "tissue-and-organ",
     section: "C", questionRef: "2023 OL Q12(c)(i)–(ii)",
@@ -2921,7 +2921,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q12-c-iii-vi", topicId: "bio-2-3", conceptId: "tissue-culture-and-mitosis",
     section: "C", questionRef: "2023 OL Q12(c)(iii)–(vi)",
@@ -2937,7 +2937,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q13-a", topicId: "bio-2-2", conceptId: "chlorophyll-and-light-energy",
     section: "C", questionRef: "2023 OL Q13(a)(i)–(iii)",
@@ -2953,7 +2953,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q13-b-i", topicId: "bio-2-2", conceptId: "photolysis-products",
     section: "C", questionRef: "2023 OL Q13(b)(i)",
@@ -2968,7 +2968,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q13-b-ii-vi", topicId: "bio-2-2", conceptId: "photosynthesis-leaf-and-crop-yield",
     section: "C", questionRef: "2023 OL Q13(b)(ii), (iii), (v), (vi)",
@@ -2984,7 +2984,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q13-c-i-iii", topicId: "bio-2-1", conceptId: "enzymes-and-metabolism",
     section: "C", questionRef: "2023 OL Q13(c)(i)–(iii)",
@@ -3001,7 +3001,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q13-c-iv-v", topicId: "bio-2-1", conceptId: "immobilised-enzymes",
     section: "C", questionRef: "2023 OL Q13(c)(iv)–(v)",
@@ -3015,7 +3015,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q14-a", topicId: "bio-2-5", conceptId: "female-reproductive-hormones",
     section: "C", questionRef: "2023 OL Q14(a)(i)–(ii)",
@@ -3030,7 +3030,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q14-b-ii-iv", topicId: "bio-2-5", conceptId: "ovum-formation-and-meiosis",
     section: "C", questionRef: "2023 OL Q14(b)(ii)–(iv)",
@@ -3046,7 +3046,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q14-b-v-vi", topicId: "bio-2-5", conceptId: "fertilisation-and-implantation-sites",
     section: "C", questionRef: "2023 OL Q14(b)(v)–(vi)",
@@ -3062,7 +3062,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q14-c-i-ii", topicId: "bio-2-5", conceptId: "placenta-and-birth-process",
     section: "C", questionRef: "2023 OL Q14(c)(i)–(ii)",
@@ -3078,7 +3078,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q14-c-iii", topicId: "bio-2-5", conceptId: "breastfeeding-benefits",
     section: "C", questionRef: "2023 OL Q14(c)(iii)",
@@ -3091,7 +3091,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q15-a", topicId: "bio-2-6", conceptId: "arteries-veins-capillaries",
     section: "C", questionRef: "2023 OL Q15(a)(i)–(ii)",
@@ -3105,7 +3105,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q15-b-i-iii", topicId: "bio-2-6", conceptId: "lungs-trachea-alveoli",
     section: "C", questionRef: "2023 OL Q15(b)(i)–(iii)",
@@ -3121,7 +3121,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q15-b-iv", topicId: "bio-2-6", conceptId: "inhalation-mechanism",
     section: "C", questionRef: "2023 OL Q15(b)(iv)",
@@ -3136,7 +3136,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q15-c-iii-v", topicId: "bio-2-6", conceptId: "heart-valves-septum-coronary-artery",
     section: "C", questionRef: "2023 OL Q15(c)(iii)–(v)",
@@ -3152,7 +3152,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q15-c-vi-vii", topicId: "bio-2-6", conceptId: "heart-rate-and-diet",
     section: "C", questionRef: "2023 OL Q15(c)(vi)–(vii)",
@@ -3166,7 +3166,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q16a-i", topicId: "bio-2-6", conceptId: "excretion-definition",
     section: "C", questionRef: "2023 OL Q16(a)(i)",
@@ -3180,7 +3180,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q16a-v-vi", topicId: "bio-2-6", conceptId: "kidney-filtration-and-reabsorption",
     section: "C", questionRef: "2023 OL Q16(a)(v)–(vi)",
@@ -3195,7 +3195,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q16c-vi", topicId: "bio-2-4", conceptId: "geotropism",
     section: "C", questionRef: "2023 OL Q16(c)(vi)",
@@ -3208,7 +3208,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q16d-vi-viii", topicId: "bio-2-5", conceptId: "seed-fruit-and-dormancy",
     section: "C", questionRef: "2023 OL Q16(d)(vi)–(viii)",
@@ -3224,7 +3224,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q17a-i-iii", topicId: "bio-2-4", conceptId: "skeleton-functions-and-joints",
     section: "C", questionRef: "2023 OL Q17(a)(i)–(iii)",
@@ -3239,7 +3239,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q17a-v-vi", topicId: "bio-2-4", conceptId: "vertebrae-and-musculoskeletal-disorders",
     section: "C", questionRef: "2023 OL Q17(a)(v)–(vi)",
@@ -3253,7 +3253,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q17b-i", topicId: "bio-2-4", conceptId: "hormone-definition",
     section: "C", questionRef: "2023 OL Q17(b)(i)",
@@ -3267,7 +3267,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q17b-iii-iv", topicId: "bio-2-4", conceptId: "hormone-versus-nerve-action",
     section: "C", questionRef: "2023 OL Q17(b)(iii)–(iv)",
@@ -3281,7 +3281,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q17c-i-iv", topicId: "bio-3-2", conceptId: "rhizopus-classification-and-nutrition",
     section: "C", questionRef: "2023 OL Q17(c)(i), (iii), (iv)",
@@ -3297,7 +3297,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q17c-v-vi", topicId: "bio-3-2", conceptId: "asexual-reproduction-fungi-yeast",
     section: "C", questionRef: "2023 OL Q17(c)(v)–(vi)",
@@ -3312,7 +3312,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q17d-i-iv", topicId: "bio-3-2", conceptId: "bacteria-kingdom-reproduction-nutrition",
     section: "C", questionRef: "2023 OL Q17(d)(i), (iii), (iv)",
@@ -3329,7 +3329,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q17d-v-vi", topicId: "bio-3-2", conceptId: "useful-and-pathogenic-bacteria",
     section: "C", questionRef: "2023 OL Q17(d)(v), (vi)1",
@@ -3343,7 +3343,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q17d-vii", topicId: "bio-3-2", conceptId: "antibiotics-and-resistance",
     section: "C", questionRef: "2023 OL Q17(d)(vii)",
@@ -3357,7 +3357,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q1-a", topicId: "bio-1-2", conceptId: "elements-in-fats",
     section: "A", questionRef: "2022 OL Q1(a)",
@@ -3370,7 +3370,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q1-b", topicId: "bio-1-2", conceptId: "glycerol-in-fats",
     section: "A", questionRef: "2022 OL Q1(b)",
@@ -3383,7 +3383,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q1-c", topicId: "bio-1-2", conceptId: "fat-soluble-vitamins",
     section: "A", questionRef: "2022 OL Q1(c)",
@@ -3396,7 +3396,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q1-d", topicId: "bio-1-2", conceptId: "food-test-for-fats",
     section: "A", questionRef: "2022 OL Q1(d)",
@@ -3409,7 +3409,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q1-e", topicId: "bio-1-2", conceptId: "fats-versus-oils",
     section: "A", questionRef: "2022 OL Q1(e)",
@@ -3422,7 +3422,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q2-a", topicId: "bio-2-2", conceptId: "definition-of-respiration",
     section: "A", questionRef: "2022 OL Q2(a)",
@@ -3435,7 +3435,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q2-b", topicId: "bio-2-2", conceptId: "products-of-aerobic-respiration",
     section: "A", questionRef: "2022 OL Q2(b)",
@@ -3448,7 +3448,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q2-c", topicId: "bio-2-2", conceptId: "gas-needed-for-aerobic-respiration",
     section: "A", questionRef: "2022 OL Q2(c)",
@@ -3461,7 +3461,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q2-d", topicId: "bio-2-2", conceptId: "sites-of-respiration-stages",
     section: "A", questionRef: "2022 OL Q2(d)",
@@ -3475,7 +3475,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q2-e", topicId: "bio-2-2", conceptId: "energy-yield-of-respiration-stages",
     section: "A", questionRef: "2022 OL Q2(e)",
@@ -3488,7 +3488,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q3-b", topicId: "bio-3-2", conceptId: "function-of-fungal-spores",
     section: "A", questionRef: "2022 OL Q3(b)",
@@ -3501,7 +3501,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q3-c", topicId: "bio-3-2", conceptId: "saprophytic-nutrition",
     section: "A", questionRef: "2022 OL Q3(c)",
@@ -3514,7 +3514,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q3-d", topicId: "bio-3-2", conceptId: "kingdom-of-rhizopus",
     section: "A", questionRef: "2022 OL Q3(d)",
@@ -3527,7 +3527,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q3-e", topicId: "bio-3-2", conceptId: "organisms-in-kingdom-fungi",
     section: "A", questionRef: "2022 OL Q3(e)",
@@ -3541,7 +3541,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q4-b", topicId: "bio-2-6", conceptId: "composition-of-sweat",
     section: "A", questionRef: "2022 OL Q4(b)",
@@ -3554,7 +3554,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q4-c", topicId: "bio-2-4", conceptId: "body-responses-to-cold",
     section: "A", questionRef: "2022 OL Q4(c)",
@@ -3567,7 +3567,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q4-d", topicId: "bio-2-4", conceptId: "ectotherm-examples",
     section: "A", questionRef: "2022 OL Q4(d)",
@@ -3580,7 +3580,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q5-b", topicId: "bio-3-3", conceptId: "dna-profiling-steps",
     section: "A", questionRef: "2022 OL Q5(b)",
@@ -3597,7 +3597,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q5-c", topicId: "bio-1-4", conceptId: "dna-base-pairs",
     section: "A", questionRef: "2022 OL Q5(c)",
@@ -3610,7 +3610,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q5-d", topicId: "bio-3-3", conceptId: "applications-of-dna-profiling",
     section: "A", questionRef: "2022 OL Q5(d)",
@@ -3624,7 +3624,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q7-a-e", topicId: "bio-u2", conceptId: "scientific-method-terms",
     section: "A", questionRef: "2022 OL Q7(a)–(e)",
@@ -3642,7 +3642,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q8-a", topicId: "bio-3-1", conceptId: "quantitative-vs-qualitative-survey",
     section: "B", questionRef: "2022 OL Q8(a)",
@@ -3657,7 +3657,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q8-b-i", topicId: "bio-u2", conceptId: "quadrat-survey-procedure",
     section: "B", questionRef: "2022 OL Q8(b)(i)",
@@ -3671,7 +3671,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q8-b-iv", topicId: "bio-u2", conceptId: "identifying-plants-with-a-key",
     section: "B", questionRef: "2022 OL Q8(b)(iv)",
@@ -3684,7 +3684,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q9-a-i", topicId: "bio-2-2", conceptId: "fermentation-is-anaerobic",
     section: "B", questionRef: "2022 OL Q9(a)(i)",
@@ -3697,7 +3697,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q9-a-ii", topicId: "bio-2-2", conceptId: "alcohol-fermentation-gas",
     section: "B", questionRef: "2022 OL Q9(a)(ii)",
@@ -3710,7 +3710,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q9-b-ii", topicId: "bio-u2", conceptId: "alcohol-prep-safety-precaution",
     section: "B", questionRef: "2022 OL Q9(b)(ii)",
@@ -3724,7 +3724,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q9-b-iv", topicId: "bio-u2", conceptId: "fermentation-endpoint-bubbles",
     section: "B", questionRef: "2022 OL Q9(b)(iv)",
@@ -3738,7 +3738,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q9-b-vi", topicId: "bio-u2", conceptId: "test-for-alcohol-iodoform",
     section: "B", questionRef: "2022 OL Q9(b)(vi)",
@@ -3751,7 +3751,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q10-a-i", topicId: "bio-2-5", conceptId: "seed-dormancy",
     section: "B", questionRef: "2022 OL Q10(a)(i)",
@@ -3765,7 +3765,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q10-a-ii", topicId: "bio-2-5", conceptId: "seed-food-store",
     section: "B", questionRef: "2022 OL Q10(a)(ii)",
@@ -3778,7 +3778,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q10-b-i", topicId: "bio-u2", conceptId: "germination-investigation-seed-choice",
     section: "B", questionRef: "2022 OL Q10(b)(i)",
@@ -3792,7 +3792,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q10-b-ii", topicId: "bio-u2", conceptId: "germination-excluding-water",
     section: "B", questionRef: "2022 OL Q10(b)(ii)",
@@ -3805,7 +3805,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q10-b-iii", topicId: "bio-u2", conceptId: "germination-excluding-oxygen",
     section: "B", questionRef: "2022 OL Q10(b)(iii)",
@@ -3818,7 +3818,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q10-b-iv", topicId: "bio-u2", conceptId: "germination-low-temperature-setup",
     section: "B", questionRef: "2022 OL Q10(b)(iv)",
@@ -3831,7 +3831,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q11-a", topicId: "bio-3-1", conceptId: "ecology-terms-biosphere-abiotic-niche",
     section: "C", questionRef: "2022 OL Q11(a)",
@@ -3846,7 +3846,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q11-b-i", topicId: "bio-3-1", conceptId: "food-web-definition",
     section: "C", questionRef: "2022 OL Q11(b)(i)",
@@ -3859,7 +3859,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q11-b-ii", topicId: "bio-3-1", conceptId: "producer-energy-source",
     section: "C", questionRef: "2022 OL Q11(b)(ii)",
@@ -3872,7 +3872,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q11-b-v", topicId: "bio-3-1", conceptId: "omnivore-definition",
     section: "C", questionRef: "2022 OL Q11(b)(v)",
@@ -3885,7 +3885,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q11-b-viii", topicId: "bio-3-1", conceptId: "predator-removal-prey-increase",
     section: "C", questionRef: "2022 OL Q11(b)(viii)",
@@ -3898,7 +3898,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q11-c-i", topicId: "bio-3-1", conceptId: "ecosystem-and-flora-terms",
     section: "C", questionRef: "2022 OL Q11(c)(i)",
@@ -3912,7 +3912,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q11-c-ii", topicId: "bio-3-1", conceptId: "river-pollution-sources",
     section: "C", questionRef: "2022 OL Q11(c)(ii)",
@@ -3926,7 +3926,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q11-c-iii", topicId: "bio-3-1", conceptId: "river-pollution-effects",
     section: "C", questionRef: "2022 OL Q11(c)(iii)",
@@ -3939,7 +3939,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q11-c-iv", topicId: "bio-1-2", conceptId: "nitrogen-containing-biomolecule",
     section: "C", questionRef: "2022 OL Q11(c)(iv)",
@@ -3952,7 +3952,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q11-c-v", topicId: "bio-3-2", conceptId: "nitrogen-cycle-decomposers",
     section: "C", questionRef: "2022 OL Q11(c)(v)",
@@ -3965,7 +3965,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q12-a", topicId: "bio-1-4", conceptId: "genetics-terms-diploid-haploid-allele",
     section: "C", questionRef: "2022 OL Q12(a)",
@@ -3980,7 +3980,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q12-b-i", topicId: "bio-1-4", conceptId: "cystic-fibrosis-cause",
     section: "C", questionRef: "2022 OL Q12(b)(i)",
@@ -3993,7 +3993,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q12-b-ii", topicId: "bio-1-4", conceptId: "cf-genotypes",
     section: "C", questionRef: "2022 OL Q12(b)(ii)",
@@ -4009,7 +4009,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q12-b-iii", topicId: "bio-1-4", conceptId: "cf-punnett-25-percent",
     section: "C", questionRef: "2022 OL Q12(b)(iii)",
@@ -4023,7 +4023,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q12-b-iv", topicId: "bio-1-4", conceptId: "cf-safe-parent-genotype",
     section: "C", questionRef: "2022 OL Q12(b)(iv)",
@@ -4037,7 +4037,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q12-b-v", topicId: "bio-1-4", conceptId: "genetic-screening-purpose",
     section: "C", questionRef: "2022 OL Q12(b)(v)",
@@ -4050,7 +4050,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q12-c-i", topicId: "bio-2-3", conceptId: "interphase-definition",
     section: "C", questionRef: "2022 OL Q12(c)(i)",
@@ -4063,7 +4063,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q12-c-ii", topicId: "bio-2-3", conceptId: "mitosis-stages",
     section: "C", questionRef: "2022 OL Q12(c)(ii)",
@@ -4079,7 +4079,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q12-c-iii", topicId: "bio-2-3", conceptId: "meiosis-other-cell-division",
     section: "C", questionRef: "2022 OL Q12(c)(iii)",
@@ -4093,7 +4093,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q12-c-iv", topicId: "bio-2-3", conceptId: "meiosis-produces-gametes",
     section: "C", questionRef: "2022 OL Q12(c)(iv)",
@@ -4107,7 +4107,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q12-c-v", topicId: "bio-2-3", conceptId: "meiosis-organs",
     section: "C", questionRef: "2022 OL Q12(c)(v)",
@@ -4121,7 +4121,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q13-a-i", topicId: "bio-2-6", conceptId: "lung-location",
     section: "C", questionRef: "2022 OL Q13(a)(i)",
@@ -4134,7 +4134,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q13-a-ii", topicId: "bio-2-6", conceptId: "lung-excretory-products",
     section: "C", questionRef: "2022 OL Q13(a)(ii)",
@@ -4148,7 +4148,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q13-b-ii", topicId: "bio-2-6", conceptId: "trachea-function",
     section: "C", questionRef: "2022 OL Q13(b)(ii)",
@@ -4161,7 +4161,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q13-b-iii", topicId: "bio-2-6", conceptId: "breathing-muscles",
     section: "C", questionRef: "2022 OL Q13(b)(iii)",
@@ -4175,7 +4175,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q13-b-iv", topicId: "bio-2-6", conceptId: "alveoli-name",
     section: "C", questionRef: "2022 OL Q13(b)(iv)",
@@ -4188,7 +4188,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q13-b-v", topicId: "bio-2-6", conceptId: "alveoli-adaptations",
     section: "C", questionRef: "2022 OL Q13(b)(v)",
@@ -4202,7 +4202,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q13-c-ii", topicId: "bio-u2", conceptId: "measuring-breathing-or-pulse-rate",
     section: "C", questionRef: "2022 OL Q13(c)(ii)",
@@ -4216,7 +4216,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q13-c-iii", topicId: "bio-u2", conceptId: "exercise-investigation-steps",
     section: "C", questionRef: "2022 OL Q13(c)(iii)",
@@ -4231,7 +4231,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q13-c-iv", topicId: "bio-2-6", conceptId: "exercise-effect-on-rate",
     section: "C", questionRef: "2022 OL Q13(c)(iv)",
@@ -4244,7 +4244,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q14-a-i", topicId: "bio-2-1", conceptId: "enzyme-definition",
     section: "C", questionRef: "2022 OL Q14(a)(i)",
@@ -4258,7 +4258,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q14-a-ii", topicId: "bio-2-1", conceptId: "enzyme-rate-factors",
     section: "C", questionRef: "2022 OL Q14(a)(ii)",
@@ -4271,7 +4271,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q14-b-i", topicId: "bio-2-2", conceptId: "anabolic-definition",
     section: "C", questionRef: "2022 OL Q14(b)(i)",
@@ -4284,7 +4284,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q14-b-ii", topicId: "bio-2-2", conceptId: "photosynthesis-organelle",
     section: "C", questionRef: "2022 OL Q14(b)(ii)",
@@ -4297,7 +4297,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q14-b-iii", topicId: "bio-2-2", conceptId: "photosynthesis-pigment",
     section: "C", questionRef: "2022 OL Q14(b)(iii)",
@@ -4310,7 +4310,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q14-b-v-1", topicId: "bio-2-2", conceptId: "photolysis-products",
     section: "C", questionRef: "2022 OL Q14(b)(v)1",
@@ -4325,7 +4325,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q14-b-v-2", topicId: "bio-2-2", conceptId: "fate-of-photosynthetic-oxygen",
     section: "C", questionRef: "2022 OL Q14(b)(v)2",
@@ -4339,7 +4339,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q14-b-vi-1", topicId: "bio-2-2", conceptId: "co2-source-for-photosynthesis",
     section: "C", questionRef: "2022 OL Q14(b)(vi)1",
@@ -4352,7 +4352,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q14-b-vi-2", topicId: "bio-2-2", conceptId: "co2-entry-stomata",
     section: "C", questionRef: "2022 OL Q14(b)(vi)2",
@@ -4365,7 +4365,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q14-c-i", topicId: "bio-1-3", conceptId: "osmosis-definition",
     section: "C", questionRef: "2022 OL Q14(c)(i)",
@@ -4378,7 +4378,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q14-c-ii", topicId: "bio-1-3", conceptId: "turgor-definition",
     section: "C", questionRef: "2022 OL Q14(c)(ii)",
@@ -4391,7 +4391,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q14-c-iv", topicId: "bio-1-3", conceptId: "cell-wall-prevents-bursting",
     section: "C", questionRef: "2022 OL Q14(c)(iv)",
@@ -4404,7 +4404,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q15-a-i", topicId: "bio-2-4", conceptId: "phototropism",
     section: "C", questionRef: "2022 OL Q15(a)(i)",
@@ -4417,7 +4417,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q15-a-ii", topicId: "bio-2-2", conceptId: "light-intensity-benefit",
     section: "C", questionRef: "2022 OL Q15(a)(ii)",
@@ -4430,7 +4430,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q15-a-iii", topicId: "bio-2-4", conceptId: "environmental-factors-plant-growth",
     section: "C", questionRef: "2022 OL Q15(a)(iii)",
@@ -4444,7 +4444,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q15-b-ii", topicId: "bio-2-6", conceptId: "dermal-and-ground-tissue-functions",
     section: "C", questionRef: "2022 OL Q15(b)(ii)",
@@ -4459,7 +4459,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q15-b-iv", topicId: "bio-2-6", conceptId: "xylem-water-transport-cells",
     section: "C", questionRef: "2022 OL Q15(b)(iv)",
@@ -4473,7 +4473,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q15-b-v", topicId: "bio-2-6", conceptId: "phloem-food-transport-cells",
     section: "C", questionRef: "2022 OL Q15(b)(v)",
@@ -4487,7 +4487,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q15-b-vi", topicId: "bio-2-6", conceptId: "root-vs-stem-section",
     section: "C", questionRef: "2022 OL Q15(b)(vi)",
@@ -4501,7 +4501,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q15-c-ii", topicId: "bio-2-5", conceptId: "ovary-forms-fruit",
     section: "C", questionRef: "2022 OL Q15(c)(ii)",
@@ -4514,7 +4514,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q15-c-iii", topicId: "bio-2-5", conceptId: "pollination-definition",
     section: "C", questionRef: "2022 OL Q15(c)(iii)",
@@ -4528,7 +4528,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q15-c-iv", topicId: "bio-2-5", conceptId: "pollination-methods",
     section: "C", questionRef: "2022 OL Q15(c)(iv)",
@@ -4541,7 +4541,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q16-a-iii", topicId: "bio-2-5", conceptId: "testosterone-function",
     section: "C", questionRef: "2022 OL Q16(a)(iii)",
@@ -4555,7 +4555,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q16-a-iv", topicId: "bio-2-5", conceptId: "infertility-definition",
     section: "C", questionRef: "2022 OL Q16(a)(iv)",
@@ -4568,7 +4568,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q16-a-v", topicId: "bio-2-5", conceptId: "infertility-causes",
     section: "C", questionRef: "2022 OL Q16(a)(v)",
@@ -4581,7 +4581,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q16-a-vi", topicId: "bio-2-5", conceptId: "contraception-definition-example",
     section: "C", questionRef: "2022 OL Q16(a)(vi)",
@@ -4595,7 +4595,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q16-b-ii", topicId: "bio-3-2", conceptId: "bacterial-shapes",
     section: "C", questionRef: "2022 OL Q16(b)(ii)",
@@ -4608,7 +4608,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q16-b-iii", topicId: "bio-3-2", conceptId: "binary-fission",
     section: "C", questionRef: "2022 OL Q16(b)(iii)",
@@ -4621,7 +4621,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q16-b-iv", topicId: "bio-3-2", conceptId: "pathogen-definition",
     section: "C", questionRef: "2022 OL Q16(b)(iv)",
@@ -4634,7 +4634,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q16-b-v", topicId: "bio-3-2", conceptId: "antibiotics-definition",
     section: "C", questionRef: "2022 OL Q16(b)(v)",
@@ -4648,7 +4648,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q16-b-vi", topicId: "bio-3-2", conceptId: "antibiotic-overuse-resistance",
     section: "C", questionRef: "2022 OL Q16(b)(vi)",
@@ -4661,7 +4661,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q16-c-i", topicId: "bio-2-4", conceptId: "skeleton-functions",
     section: "C", questionRef: "2022 OL Q16(c)(i)",
@@ -4674,7 +4674,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q16-c-ii-1", topicId: "bio-2-4", conceptId: "axial-skeleton-bones",
     section: "C", questionRef: "2022 OL Q16(c)(ii)1",
@@ -4687,7 +4687,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q16-c-ii-2", topicId: "bio-2-4", conceptId: "appendicular-skeleton-bones",
     section: "C", questionRef: "2022 OL Q16(c)(ii)2",
@@ -4700,7 +4700,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q16-c-iv", topicId: "bio-2-4", conceptId: "cartilage-name-function",
     section: "C", questionRef: "2022 OL Q16(c)(iv)",
@@ -4715,7 +4715,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q16-d-i", topicId: "bio-2-5", conceptId: "vegetative-propagation-definition",
     section: "C", questionRef: "2022 OL Q16(d)(i)",
@@ -4728,7 +4728,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q16-d-iv", topicId: "bio-2-5", conceptId: "artificial-propagation-methods",
     section: "C", questionRef: "2022 OL Q16(d)(iv)",
@@ -4741,7 +4741,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q16-d-v", topicId: "bio-2-5", conceptId: "artificial-propagation-advantage",
     section: "C", questionRef: "2022 OL Q16(d)(v)",
@@ -4754,7 +4754,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q16-d-vi", topicId: "bio-2-5", conceptId: "seed-vs-vegetative-comparison",
     section: "C", questionRef: "2022 OL Q16(d)(vi)",
@@ -4768,7 +4768,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q17-a-i", topicId: "bio-2-4", conceptId: "axon-function",
     section: "C", questionRef: "2022 OL Q17(a)(i)",
@@ -4782,7 +4782,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q17-a-ii", topicId: "bio-2-4", conceptId: "dendrite-function",
     section: "C", questionRef: "2022 OL Q17(a)(ii)",
@@ -4796,7 +4796,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q17-a-iv", topicId: "bio-2-4", conceptId: "sense-organs",
     section: "C", questionRef: "2022 OL Q17(a)(iv)",
@@ -4809,7 +4809,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q17-a-v", topicId: "bio-2-4", conceptId: "reflex-response",
     section: "C", questionRef: "2022 OL Q17(a)(v)",
@@ -4823,7 +4823,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q17-a-vi", topicId: "bio-2-4", conceptId: "reflex-benefit",
     section: "C", questionRef: "2022 OL Q17(a)(vi)",
@@ -4837,7 +4837,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q17-a-vii", topicId: "bio-2-4", conceptId: "nervous-vs-hormonal-response",
     section: "C", questionRef: "2022 OL Q17(a)(vii)",
@@ -4851,7 +4851,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q17-b-i-evolution", topicId: "bio-1-5", conceptId: "evolution-definition",
     section: "C", questionRef: "2022 OL Q17(b)(i) [evolution]",
@@ -4865,7 +4865,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q17-b-i-natural-selection", topicId: "bio-1-5", conceptId: "natural-selection-definition",
     section: "C", questionRef: "2022 OL Q17(b)(i) [natural selection]",
@@ -4880,7 +4880,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q17-b-ii", topicId: "bio-1-5", conceptId: "darwin-and-wallace",
     section: "C", questionRef: "2022 OL Q17(b)(ii)",
@@ -4895,7 +4895,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q17-b-iii", topicId: "bio-3-3", conceptId: "genetic-engineering-definition",
     section: "C", questionRef: "2022 OL Q17(b)(iii)",
@@ -4908,7 +4908,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q17-c-iii", topicId: "bio-2-6", conceptId: "platelet-role",
     section: "C", questionRef: "2022 OL Q17(c)(iii)",
@@ -4921,7 +4921,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q17-c-iv", topicId: "bio-2-6", conceptId: "human-blood-groups",
     section: "C", questionRef: "2022 OL Q17(c)(iv)",
@@ -4934,7 +4934,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q17-c-v", topicId: "bio-2-6", conceptId: "lymphatic-system",
     section: "C", questionRef: "2022 OL Q17(c)(v)",
@@ -4948,7 +4948,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q17-c-vi", topicId: "bio-2-6", conceptId: "lymph-fluid",
     section: "C", questionRef: "2022 OL Q17(c)(vi)",
@@ -4962,7 +4962,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q17-d-i", topicId: "bio-1-1", conceptId: "autotrophic-vs-heterotrophic",
     section: "C", questionRef: "2022 OL Q17(d)(i)",
@@ -4976,7 +4976,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q17-d-ii-1", topicId: "bio-2-6", conceptId: "digestion-in-the-mouth",
     section: "C", questionRef: "2022 OL Q17(d)(ii)1",
@@ -4990,7 +4990,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q17-d-ii-2", topicId: "bio-2-6", conceptId: "other-digestion-location",
     section: "C", questionRef: "2022 OL Q17(d)(ii)2",
@@ -5004,7 +5004,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q17-d-iii", topicId: "bio-2-6", conceptId: "peristalsis",
     section: "C", questionRef: "2022 OL Q17(d)(iii)",
@@ -5017,7 +5017,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q17-d-v", topicId: "bio-2-6", conceptId: "egestion-definition",
     section: "C", questionRef: "2022 OL Q17(d)(v)",
@@ -5030,7 +5030,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q17-d-vi", topicId: "bio-2-6", conceptId: "symbiotic-gut-bacteria-functions",
     section: "C", questionRef: "2022 OL Q17(d)(vi)",
@@ -5043,7 +5043,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q1-a", topicId: "bio-1-2", conceptId: "glycerol-fat-biomolecule",
     section: "A", questionRef: "2021 OL Q1(a)",
@@ -5056,7 +5056,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q1-b", topicId: "bio-1-2", conceptId: "reducing-sugar-test-reagent",
     section: "A", questionRef: "2021 OL Q1(b)",
@@ -5069,7 +5069,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q1-c", topicId: "bio-1-2", conceptId: "elements-in-protein",
     section: "A", questionRef: "2021 OL Q1(c)",
@@ -5083,7 +5083,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q1-d", topicId: "bio-1-2", conceptId: "fibrous-proteins",
     section: "A", questionRef: "2021 OL Q1(d)",
@@ -5096,7 +5096,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q1-e", topicId: "bio-1-2", conceptId: "water-soluble-vitamins",
     section: "A", questionRef: "2021 OL Q1(e)",
@@ -5109,7 +5109,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q2-a", topicId: "bio-1-3", conceptId: "tissue-definition",
     section: "A", questionRef: "2021 OL Q2(a)",
@@ -5122,7 +5122,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q2-b", topicId: "bio-1-3", conceptId: "animal-and-plant-tissues",
     section: "A", questionRef: "2021 OL Q2(b)",
@@ -5136,7 +5136,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q2-c", topicId: "bio-1-3", conceptId: "organ-definition",
     section: "A", questionRef: "2021 OL Q2(c)",
@@ -5149,7 +5149,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q2-e", topicId: "bio-1-3", conceptId: "tissue-culture",
     section: "A", questionRef: "2021 OL Q2(e)",
@@ -5162,7 +5162,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q3-ab", topicId: "bio-2-4", conceptId: "nervous-and-sensory-structure-locations",
     section: "A", questionRef: "2021 OL Q3(a)–(b)",
@@ -5177,7 +5177,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q3-cde", topicId: "bio-2-6", conceptId: "transport-system-structure-locations",
     section: "A", questionRef: "2021 OL Q3(c)–(e)",
@@ -5193,7 +5193,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q4-abc", topicId: "bio-1-4", conceptId: "monohybrid-cross-squirrel-coat-colour",
     section: "A", questionRef: "2021 OL Q4(a)–(c)",
@@ -5210,7 +5210,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q5-a", topicId: "bio-1-1", conceptId: "viruses-not-living",
     section: "A", questionRef: "2021 OL Q5(a)",
@@ -5223,7 +5223,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q5-c", topicId: "bio-3-2", conceptId: "virus-transmission",
     section: "A", questionRef: "2021 OL Q5(c)",
@@ -5236,7 +5236,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q5-d", topicId: "bio-3-2", conceptId: "body-defence-against-viruses",
     section: "A", questionRef: "2021 OL Q5(d)",
@@ -5249,7 +5249,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q5-e", topicId: "bio-3-2", conceptId: "beneficial-uses-of-viruses",
     section: "A", questionRef: "2021 OL Q5(e)",
@@ -5262,7 +5262,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q5-f", topicId: "bio-3-2", conceptId: "obligate-parasite",
     section: "A", questionRef: "2021 OL Q5(f)",
@@ -5275,7 +5275,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q6-abc", topicId: "bio-u2", conceptId: "ecological-collection-apparatus",
     section: "A", questionRef: "2021 OL Q6(a)–(c)",
@@ -5290,7 +5290,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q6-def", topicId: "bio-u2", conceptId: "ecological-collection-apparatus",
     section: "A", questionRef: "2021 OL Q6(d)–(f)",
@@ -5305,7 +5305,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q6-g", topicId: "bio-3-1", conceptId: "abiotic-factors",
     section: "A", questionRef: "2021 OL Q6(g)",
@@ -5318,7 +5318,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q7-a", topicId: "bio-2-4", conceptId: "skull-joint-type",
     section: "A", questionRef: "2021 OL Q7(a)",
@@ -5331,7 +5331,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q7-e", topicId: "bio-2-4", conceptId: "functions-of-the-skeleton",
     section: "A", questionRef: "2021 OL Q7(e)",
@@ -5344,7 +5344,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q7-f", topicId: "bio-2-4", conceptId: "musculoskeletal-disorders-cause-and-treatment",
     section: "A", questionRef: "2021 OL Q7(f)",
@@ -5361,7 +5361,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q8-b-i", topicId: "bio-u2", conceptId: "microscope-plant-cell-material",
     section: "B", questionRef: "2021 OL Q8(b)(i)",
@@ -5375,7 +5375,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q8-b-ii", topicId: "bio-u2", conceptId: "unstained-plant-cell-slide-preparation",
     section: "B", questionRef: "2021 OL Q8(b)(ii)",
@@ -5389,7 +5389,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q8-b-iii", topicId: "bio-u2", conceptId: "stain-for-plant-cells",
     section: "B", questionRef: "2021 OL Q8(b)(iii)",
@@ -5403,7 +5403,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q8-b-iv", topicId: "bio-u2", conceptId: "purpose-of-stain",
     section: "B", questionRef: "2021 OL Q8(b)(iv)",
@@ -5417,7 +5417,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q8-b-v", topicId: "bio-u2", conceptId: "objective-lens-function",
     section: "B", questionRef: "2021 OL Q8(b)(v)",
@@ -5431,7 +5431,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q8-b-vi", topicId: "bio-1-3", conceptId: "plant-cell-identifying-structures",
     section: "B", questionRef: "2021 OL Q8(b)(vi)",
@@ -5445,7 +5445,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q9-a-i", topicId: "bio-2-1", conceptId: "enzyme-definition",
     section: "B", questionRef: "2021 OL Q9(a)(i)",
@@ -5458,7 +5458,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q9-a-ii", topicId: "bio-1-1", conceptId: "metabolism-definition",
     section: "B", questionRef: "2021 OL Q9(a)(ii)",
@@ -5471,7 +5471,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q9-b-ii", topicId: "bio-2-1", conceptId: "enzyme-substrate-pairs",
     section: "B", questionRef: "2021 OL Q9(b)(ii)",
@@ -5485,7 +5485,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q9-b-iii", topicId: "bio-u2", conceptId: "varying-ph-with-buffers",
     section: "B", questionRef: "2021 OL Q9(b)(iii)",
@@ -5499,7 +5499,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q9-b-iv", topicId: "bio-u2", conceptId: "enzyme-experiment-controlled-variable",
     section: "B", questionRef: "2021 OL Q9(b)(iv)",
@@ -5513,7 +5513,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q9-b-v", topicId: "bio-u2", conceptId: "keeping-temperature-constant",
     section: "B", questionRef: "2021 OL Q9(b)(v)",
@@ -5527,7 +5527,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q9-b-vi", topicId: "bio-u2", conceptId: "measuring-rate-of-enzyme-activity",
     section: "B", questionRef: "2021 OL Q9(b)(vi)",
@@ -5542,7 +5542,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q10-a-i", topicId: "bio-2-6", conceptId: "digestion-definition",
     section: "B", questionRef: "2021 OL Q10(a)(i)",
@@ -5555,7 +5555,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q10-a-ii", topicId: "bio-2-6", conceptId: "product-of-starch-digestion-in-plants",
     section: "B", questionRef: "2021 OL Q10(a)(ii)",
@@ -5568,7 +5568,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q10-b-i", topicId: "bio-u2", conceptId: "seed-choice-for-digestion-investigation",
     section: "B", questionRef: "2021 OL Q10(b)(i)",
@@ -5582,7 +5582,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q10-b-ii", topicId: "bio-u2", conceptId: "agar-choice-for-digestion-investigation",
     section: "B", questionRef: "2021 OL Q10(b)(ii)",
@@ -5596,7 +5596,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q10-b-iii", topicId: "bio-u2", conceptId: "minimising-contamination",
     section: "B", questionRef: "2021 OL Q10(b)(iii)",
@@ -5610,7 +5610,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q10-b-iv", topicId: "bio-u2", conceptId: "why-multiple-seeds-per-dish",
     section: "B", questionRef: "2021 OL Q10(b)(iv)",
@@ -5624,7 +5624,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q10-b-v", topicId: "bio-u2", conceptId: "reagent-to-detect-digestion",
     section: "B", questionRef: "2021 OL Q10(b)(v)",
@@ -5638,7 +5638,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q10-b-vi", topicId: "bio-u2", conceptId: "control-dish-no-clear-patches",
     section: "B", questionRef: "2021 OL Q10(b)(vi)",
@@ -5652,7 +5652,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q10-b-vii", topicId: "bio-u2", conceptId: "purpose-of-a-control",
     section: "B", questionRef: "2021 OL Q10(b)(vii)",
@@ -5665,7 +5665,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q11-a", topicId: "bio-3-1", conceptId: "ecology-key-terms",
     section: "C", questionRef: "2021 OL Q11(a)",
@@ -5680,7 +5680,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q11-b-i", topicId: "bio-3-1", conceptId: "fauna-definition",
     section: "C", questionRef: "2021 OL Q11(b)(i)",
@@ -5693,7 +5693,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q11-b-ii", topicId: "bio-3-1", conceptId: "red-squirrel-decline",
     section: "C", questionRef: "2021 OL Q11(b)(ii)",
@@ -5706,7 +5706,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q11-b-iii", topicId: "bio-u2", conceptId: "estimating-animal-populations",
     section: "C", questionRef: "2021 OL Q11(b)(iii)",
@@ -5719,7 +5719,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q11-b-v", topicId: "bio-3-1", conceptId: "human-impact-on-pine-marten",
     section: "C", questionRef: "2021 OL Q11(b)(v)",
@@ -5734,7 +5734,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q11-b-vi", topicId: "bio-3-1", conceptId: "grey-squirrel-decline-predation",
     section: "C", questionRef: "2021 OL Q11(b)(vi)",
@@ -5747,7 +5747,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q11-c-i", topicId: "bio-3-1", conceptId: "pollution-definition",
     section: "C", questionRef: "2021 OL Q11(c)(i)",
@@ -5760,7 +5760,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q11-c-iv", topicId: "bio-3-1", conceptId: "importance-of-waste-management",
     section: "C", questionRef: "2021 OL Q11(c)(iv)",
@@ -5773,7 +5773,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q11-c-v", topicId: "bio-3-1", conceptId: "good-waste-management-practice",
     section: "C", questionRef: "2021 OL Q11(c)(v)",
@@ -5786,7 +5786,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q11-c-vi", topicId: "bio-3-1", conceptId: "factors-affecting-distribution",
     section: "C", questionRef: "2021 OL Q11(c)(vi)",
@@ -5799,7 +5799,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q12-a", topicId: "bio-1-4", conceptId: "genetics-key-terms",
     section: "C", questionRef: "2021 OL Q12(a)",
@@ -5814,7 +5814,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q12-b-i", topicId: "bio-1-4", conceptId: "dna-strand-number",
     section: "C", questionRef: "2021 OL Q12(b)(i)",
@@ -5827,7 +5827,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q12-b-ii", topicId: "bio-1-4", conceptId: "junk-dna",
     section: "C", questionRef: "2021 OL Q12(b)(ii)",
@@ -5840,7 +5840,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q12-b-iii", topicId: "bio-1-4", conceptId: "complementary-base-pairs",
     section: "C", questionRef: "2021 OL Q12(b)(iii)",
@@ -5853,7 +5853,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q12-b-iv", topicId: "bio-1-4", conceptId: "dna-unzipping-before-replication",
     section: "C", questionRef: "2021 OL Q12(b)(iv)",
@@ -5866,7 +5866,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q12-b-v", topicId: "bio-2-3", conceptId: "rna-in-protein-synthesis",
     section: "C", questionRef: "2021 OL Q12(b)(v)",
@@ -5879,7 +5879,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q12-b-vi", topicId: "bio-2-3", conceptId: "rna-versus-dna",
     section: "C", questionRef: "2021 OL Q12(b)(vi)",
@@ -5893,7 +5893,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q12-b-vii", topicId: "bio-2-3", conceptId: "codon-definition",
     section: "C", questionRef: "2021 OL Q12(b)(vii)",
@@ -5906,7 +5906,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q12-b-viii", topicId: "bio-1-2", conceptId: "protein-subunits",
     section: "C", questionRef: "2021 OL Q12(b)(viii)",
@@ -5919,7 +5919,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q12-b-ix", topicId: "bio-2-3", conceptId: "protein-folding",
     section: "C", questionRef: "2021 OL Q12(b)(ix)",
@@ -5933,7 +5933,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q12-c-ii", topicId: "bio-2-3", conceptId: "causes-of-cancer",
     section: "C", questionRef: "2021 OL Q12(c)(ii)",
@@ -5946,7 +5946,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q12-c-iii", topicId: "bio-2-3", conceptId: "mitosis-versus-meiosis",
     section: "C", questionRef: "2021 OL Q12(c)(iii)",
@@ -5961,7 +5961,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q13-a-i", topicId: "bio-2-6", conceptId: "blood-plasma",
     section: "C", questionRef: "2021 OL Q13(a)(i)",
@@ -5974,7 +5974,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q13-b-ii", topicId: "bio-2-6", conceptId: "oxygenated-versus-deoxygenated-blood",
     section: "C", questionRef: "2021 OL Q13(b)(ii)",
@@ -5988,7 +5988,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q13-b-iv", topicId: "bio-2-6", conceptId: "heart-valve-function",
     section: "C", questionRef: "2021 OL Q13(b)(iv)",
@@ -6002,7 +6002,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q13-b-v", topicId: "bio-2-6", conceptId: "factors-raising-pulse-rate",
     section: "C", questionRef: "2021 OL Q13(b)(v)",
@@ -6015,7 +6015,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q13-c-i", topicId: "bio-2-6", conceptId: "closed-circulatory-system",
     section: "C", questionRef: "2021 OL Q13(c)(i)",
@@ -6028,7 +6028,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q13-c-ii", topicId: "bio-2-6", conceptId: "artery-versus-vein",
     section: "C", questionRef: "2021 OL Q13(c)(ii)",
@@ -6042,7 +6042,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q13-c-iii", topicId: "bio-2-6", conceptId: "capillary-adaptations",
     section: "C", questionRef: "2021 OL Q13(c)(iii)",
@@ -6055,7 +6055,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q13-c-iv", topicId: "bio-2-6", conceptId: "lymphatic-system",
     section: "C", questionRef: "2021 OL Q13(c)(iv)",
@@ -6069,7 +6069,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q13-c-v", topicId: "bio-2-6", conceptId: "lymph-fluid",
     section: "C", questionRef: "2021 OL Q13(c)(v)",
@@ -6083,7 +6083,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q13-c-vi", topicId: "bio-2-6", conceptId: "functions-of-lymphatic-system",
     section: "C", questionRef: "2021 OL Q13(c)(vi)",
@@ -6097,7 +6097,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q14-a-i", topicId: "bio-2-6", conceptId: "types-of-digestion",
     section: "C", questionRef: "2021 OL Q14(a)(i)",
@@ -6111,7 +6111,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q14-a-ii", topicId: "bio-2-6", conceptId: "peristalsis",
     section: "C", questionRef: "2021 OL Q14(a)(ii)",
@@ -6124,7 +6124,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q14-b-ii", topicId: "bio-2-6", conceptId: "stomach-acid",
     section: "C", questionRef: "2021 OL Q14(b)(ii)",
@@ -6138,7 +6138,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q14-b-iii", topicId: "bio-2-6", conceptId: "gall-bladder-contents",
     section: "C", questionRef: "2021 OL Q14(b)(iii)",
@@ -6151,7 +6151,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q14-c-i", topicId: "bio-2-4", conceptId: "hormone-definition",
     section: "C", questionRef: "2021 OL Q14(c)(i)",
@@ -6164,7 +6164,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q14-c-iii", topicId: "bio-2-4", conceptId: "endocrine-glands-and-hormones",
     section: "C", questionRef: "2021 OL Q14(c)(iii)",
@@ -6178,7 +6178,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q14-c-iv", topicId: "bio-2-4", conceptId: "endocrine-and-exocrine-glands",
     section: "C", questionRef: "2021 OL Q14(c)(iv)",
@@ -6192,7 +6192,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q15-a-i", topicId: "bio-2-4", conceptId: "phototropism-definition",
     section: "C", questionRef: "2021 OL Q15(a)(i)",
@@ -6205,7 +6205,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q15-a-ii", topicId: "bio-2-4", conceptId: "positively-phototropic-plant-parts",
     section: "C", questionRef: "2021 OL Q15(a)(ii)",
@@ -6218,7 +6218,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q15-a-iii", topicId: "bio-2-4", conceptId: "benefit-of-phototropism",
     section: "C", questionRef: "2021 OL Q15(a)(iii)",
@@ -6231,7 +6231,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q15-b-i", topicId: "bio-2-6", conceptId: "water-uptake-by-osmosis",
     section: "C", questionRef: "2021 OL Q15(b)(i)",
@@ -6244,7 +6244,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q15-b-iii", topicId: "bio-2-6", conceptId: "mineral-uptake-by-roots",
     section: "C", questionRef: "2021 OL Q15(b)(iii)",
@@ -6258,7 +6258,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q15-b-viii", topicId: "bio-2-6", conceptId: "phloem-adaptations",
     section: "C", questionRef: "2021 OL Q15(b)(viii)",
@@ -6272,7 +6272,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q15-c-i", topicId: "bio-1-1", conceptId: "homeostasis-definition",
     section: "C", questionRef: "2021 OL Q15(c)(i)",
@@ -6285,7 +6285,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q15-c-ii", topicId: "bio-1-1", conceptId: "why-homeostasis-matters",
     section: "C", questionRef: "2021 OL Q15(c)(ii)",
@@ -6298,7 +6298,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q15-c-iv", topicId: "bio-2-6", conceptId: "gases-excreted-through-stomata",
     section: "C", questionRef: "2021 OL Q15(c)(iv)",
@@ -6312,7 +6312,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q15-c-vi", topicId: "bio-2-6", conceptId: "lenticels",
     section: "C", questionRef: "2021 OL Q15(c)(vi)",
@@ -6325,7 +6325,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q15-c-vii", topicId: "bio-2-4", conceptId: "plant-protective-adaptations",
     section: "C", questionRef: "2021 OL Q15(c)(vii)",
@@ -6338,7 +6338,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q16a-iv", topicId: "bio-2-4", conceptId: "eustachian-tube",
     section: "C", questionRef: "2021 OL Q16(a)(iv)",
@@ -6351,7 +6351,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q16a-v", topicId: "bio-2-4", conceptId: "auditory-nerve",
     section: "C", questionRef: "2021 OL Q16(a)(v)",
@@ -6364,7 +6364,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q16b-i", topicId: "bio-2-2", conceptId: "respiration-definition",
     section: "C", questionRef: "2021 OL Q16(b)(i)",
@@ -6377,7 +6377,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q16b-ii", topicId: "bio-2-2", conceptId: "aerobic-respiration-equation",
     section: "C", questionRef: "2021 OL Q16(b)(ii)",
@@ -6390,7 +6390,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q16b-iii", topicId: "bio-2-2", conceptId: "sites-of-respiration-stages",
     section: "C", questionRef: "2021 OL Q16(b)(iii)",
@@ -6404,7 +6404,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q16b-iv", topicId: "bio-2-2", conceptId: "fermentation-definition",
     section: "C", questionRef: "2021 OL Q16(b)(iv)",
@@ -6417,7 +6417,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q16b-v", topicId: "bio-2-2", conceptId: "products-of-yeast-fermentation",
     section: "C", questionRef: "2021 OL Q16(b)(v)",
@@ -6431,7 +6431,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q16c-i", topicId: "bio-2-5", conceptId: "flower-part-forming-fruit",
     section: "C", questionRef: "2021 OL Q16(c)(i)",
@@ -6444,7 +6444,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q16c-ii", topicId: "bio-2-5", conceptId: "importance-of-seed-dispersal",
     section: "C", questionRef: "2021 OL Q16(c)(ii)",
@@ -6457,7 +6457,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q16c-iii", topicId: "bio-2-5", conceptId: "methods-of-seed-dispersal",
     section: "C", questionRef: "2021 OL Q16(c)(iii)",
@@ -6470,7 +6470,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q16c-iv-1", topicId: "bio-2-5", conceptId: "testa-function",
     section: "C", questionRef: "2021 OL Q16(c)(iv)1",
@@ -6483,7 +6483,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q16c-iv-2", topicId: "bio-2-5", conceptId: "seed-food-store",
     section: "C", questionRef: "2021 OL Q16(c)(iv)2",
@@ -6496,7 +6496,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q16c-iv-3", topicId: "bio-2-5", conceptId: "radicle-and-plumule",
     section: "C", questionRef: "2021 OL Q16(c)(iv)3",
@@ -6510,7 +6510,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q16c-v", topicId: "bio-2-5", conceptId: "seed-dormancy",
     section: "C", questionRef: "2021 OL Q16(c)(v)",
@@ -6523,7 +6523,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q16d-i", topicId: "bio-2-6", conceptId: "excretion-definition",
     section: "C", questionRef: "2021 OL Q16(d)(i)",
@@ -6536,7 +6536,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q16d-iii", topicId: "bio-2-6", conceptId: "substances-excreted-by-kidney",
     section: "C", questionRef: "2021 OL Q16(d)(iii)",
@@ -6550,7 +6550,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q16d-v", topicId: "bio-2-6", conceptId: "kidney-regions-filtration-reabsorption",
     section: "C", questionRef: "2021 OL Q16(d)(v)",
@@ -6565,7 +6565,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q16d-vi", topicId: "bio-2-6", conceptId: "urethra-function",
     section: "C", questionRef: "2021 OL Q16(d)(vi)",
@@ -6578,7 +6578,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q17a-ii", topicId: "bio-2-5", conceptId: "functions-of-the-placenta",
     section: "C", questionRef: "2021 OL Q17(a)(ii)",
@@ -6591,7 +6591,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q17a-iii", topicId: "bio-2-5", conceptId: "stages-of-childbirth",
     section: "C", questionRef: "2021 OL Q17(a)(iii)",
@@ -6604,7 +6604,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q17a-iv", topicId: "bio-2-5", conceptId: "prolactin",
     section: "C", questionRef: "2021 OL Q17(a)(iv)",
@@ -6617,7 +6617,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q17a-v", topicId: "bio-2-5", conceptId: "benefits-of-breastfeeding",
     section: "C", questionRef: "2021 OL Q17(a)(v)",
@@ -6630,7 +6630,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q17b-i", topicId: "bio-2-2", conceptId: "photosynthesis-definition",
     section: "C", questionRef: "2021 OL Q17(b)(i)",
@@ -6643,7 +6643,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q17b-ii", topicId: "bio-2-2", conceptId: "gas-needed-for-photosynthesis",
     section: "C", questionRef: "2021 OL Q17(b)(ii)",
@@ -6656,7 +6656,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q17b-iii", topicId: "bio-2-2", conceptId: "site-of-photosynthesis",
     section: "C", questionRef: "2021 OL Q17(b)(iii)",
@@ -6669,7 +6669,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q17b-iv", topicId: "bio-2-2", conceptId: "products-of-water-splitting",
     section: "C", questionRef: "2021 OL Q17(b)(iv)",
@@ -6685,7 +6685,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q17b-v", topicId: "bio-2-2", conceptId: "carbohydrate-formed-in-photosynthesis",
     section: "C", questionRef: "2021 OL Q17(b)(v)",
@@ -6698,7 +6698,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q17b-vi", topicId: "bio-2-2", conceptId: "role-of-chlorophyll",
     section: "C", questionRef: "2021 OL Q17(b)(vi)",
@@ -6711,7 +6711,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q17b-vii", topicId: "bio-2-2", conceptId: "factors-affecting-photosynthesis-rate",
     section: "C", questionRef: "2021 OL Q17(b)(vii)",
@@ -6724,7 +6724,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q17c-iii", topicId: "bio-2-5", conceptId: "asexual-reproduction-definition",
     section: "C", questionRef: "2021 OL Q17(c)(iii)",
@@ -6737,7 +6737,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q17c-iv", topicId: "bio-3-2", conceptId: "binary-fission",
     section: "C", questionRef: "2021 OL Q17(c)(iv)",
@@ -6750,7 +6750,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q17c-v", topicId: "bio-3-2", conceptId: "factors-affecting-bacterial-growth",
     section: "C", questionRef: "2021 OL Q17(c)(v)",
@@ -6763,7 +6763,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q17c-vi", topicId: "bio-3-2", conceptId: "economic-importance-of-bacteria",
     section: "C", questionRef: "2021 OL Q17(c)(vi)",
@@ -6776,7 +6776,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q17d-iii", topicId: "bio-2-4", conceptId: "synapse",
     section: "C", questionRef: "2021 OL Q17(d)(iii)",
@@ -6789,7 +6789,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q17d-iv", topicId: "bio-2-4", conceptId: "neurotransmitters",
     section: "C", questionRef: "2021 OL Q17(d)(iv)",
@@ -6803,7 +6803,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q17d-v", topicId: "bio-2-4", conceptId: "nervous-system-disorders",
     section: "C", questionRef: "2021 OL Q17(d)(v)",
@@ -6816,7 +6816,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q17d-vi", topicId: "bio-2-4", conceptId: "nervous-disorder-cause-and-treatment",
     section: "C", questionRef: "2021 OL Q17(d)(vi)",
@@ -6831,7 +6831,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q5-b-fig", topicId: "bio-3-2", conceptId: "virus-structure-parts",
     section: "A", questionRef: "2021 OL Q5(b)",
@@ -6858,7 +6858,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q13-b-i-fig", topicId: "bio-2-6", conceptId: "heart-structures-letter-match",
     section: "C", questionRef: "2021 OL Q13(b)(i)",
@@ -6892,7 +6892,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q13-b-iii-fig", topicId: "bio-2-6", conceptId: "blood-flow-from-structure-b",
     section: "C", questionRef: "2021 OL Q13(b)(iii)",
@@ -6923,7 +6923,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q14-b-i-fig", topicId: "bio-2-6", conceptId: "digestive-system-parts",
     section: "C", questionRef: "2021 OL Q14(b)(i)",
@@ -6957,7 +6957,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q14-b-iv-fig", topicId: "bio-2-6", conceptId: "functions-of-the-liver",
     section: "C", questionRef: "2021 OL Q14(b)(iv)",
@@ -6987,7 +6987,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q15-b-ii-fig", topicId: "bio-2-6", conceptId: "root-hair-water-absorption",
     section: "C", questionRef: "2021 OL Q15(b)(ii)",
@@ -7014,7 +7014,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q15-b-iv-fig", topicId: "bio-2-6", conceptId: "xylem-identification",
     section: "C", questionRef: "2021 OL Q15(b)(iv)",
@@ -7041,7 +7041,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q15-b-v-fig", topicId: "bio-2-6", conceptId: "xylem-adaptations",
     section: "C", questionRef: "2021 OL Q15(b)(v)",
@@ -7068,7 +7068,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q15-b-vi-fig", topicId: "bio-2-6", conceptId: "upward-movement-of-water",
     section: "C", questionRef: "2021 OL Q15(b)(vi)",
@@ -7095,7 +7095,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q15-b-vii-fig", topicId: "bio-2-6", conceptId: "phloem-identification",
     section: "C", questionRef: "2021 OL Q15(b)(vii)",
@@ -7122,7 +7122,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q15-c-iii-fig", topicId: "bio-2-6", conceptId: "stomata-identification",
     section: "C", questionRef: "2021 OL Q15(c)(iii)",
@@ -7148,7 +7148,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q15-c-v-fig", topicId: "bio-2-6", conceptId: "guard-cells",
     section: "C", questionRef: "2021 OL Q15(c)(v)",
@@ -7174,7 +7174,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q16a-i-fig", topicId: "bio-2-4", conceptId: "semi-circular-canals",
     section: "C", questionRef: "2021 OL Q16(a)(i)",
@@ -7205,7 +7205,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q16a-ii-fig", topicId: "bio-2-4", conceptId: "cochlea",
     section: "C", questionRef: "2021 OL Q16(a)(ii)",
@@ -7236,7 +7236,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q16a-iii-fig", topicId: "bio-2-4", conceptId: "eardrum",
     section: "C", questionRef: "2021 OL Q16(a)(iii)",
@@ -7267,7 +7267,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q16d-ii-fig", topicId: "bio-2-6", conceptId: "urinary-system-parts",
     section: "C", questionRef: "2021 OL Q16(d)(ii)",
@@ -7297,7 +7297,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q16d-iv-fig", topicId: "bio-2-6", conceptId: "bladder-function",
     section: "C", questionRef: "2021 OL Q16(d)(iv)",
@@ -7325,7 +7325,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q17a-i-fig", topicId: "bio-2-5", conceptId: "female-reproductive-structures",
     section: "C", questionRef: "2021 OL Q17(a)(i)",
@@ -7357,7 +7357,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q17c-i-fig", topicId: "bio-3-2", conceptId: "bacterial-cell-structures",
     section: "C", questionRef: "2021 OL Q17(c)(i)",
@@ -7386,7 +7386,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q17c-ii-fig", topicId: "bio-3-2", conceptId: "cytosol-function",
     section: "C", questionRef: "2021 OL Q17(c)(ii)",
@@ -7413,7 +7413,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q17d-i-fig", topicId: "bio-2-4", conceptId: "neuron-structures",
     section: "C", questionRef: "2021 OL Q17(d)(i)",
@@ -7444,7 +7444,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q17d-ii-fig", topicId: "bio-2-4", conceptId: "neuron-type-identification",
     section: "C", questionRef: "2021 OL Q17(d)(ii)",
@@ -7472,7 +7472,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q3-a-fig", topicId: "bio-3-2", conceptId: "rhizopus-structure",
     section: "A", questionRef: "2022 OL Q3(a)",
@@ -7501,7 +7501,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q15-c-i-fig", topicId: "bio-2-5", conceptId: "flower-structure-letters",
     section: "C", questionRef: "2022 OL Q15(c)(i)",
@@ -7530,7 +7530,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q16-a-i-fig", topicId: "bio-2-5", conceptId: "male-reproductive-system-parts",
     section: "C", questionRef: "2022 OL Q16(a)(i)",
@@ -7561,7 +7561,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q16-a-ii-fig", topicId: "bio-2-5", conceptId: "testosterone-source",
     section: "C", questionRef: "2022 OL Q16(a)(ii)",
@@ -7589,7 +7589,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q16-d-iii-fig", topicId: "bio-2-5", conceptId: "grafting-plant-parts",
     section: "C", questionRef: "2022 OL Q16(d)(iii)",
@@ -7616,7 +7616,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q17-c-ii-fig", topicId: "bio-2-6", conceptId: "blood-cell-types",
     section: "C", questionRef: "2022 OL Q17(c)(ii)",
@@ -7643,7 +7643,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q11-b-i-ii-iv-fig", topicId: "bio-3-1", conceptId: "ecological-pyramid-ecosystems-and-trophic-levels",
     section: "C", questionRef: "2023 OL Q11(b)(i), (ii), (iv)",
@@ -7672,7 +7672,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q11-b-vi-vii-fig", topicId: "bio-3-1", conceptId: "ecological-pyramid-disruption",
     section: "C", questionRef: "2023 OL Q11(b)(vi)–(vii)",
@@ -7699,7 +7699,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q15-c-i-ii-fig", topicId: "bio-2-6", conceptId: "heart-aorta-and-ventricle-wall-thickness",
     section: "C", questionRef: "2023 OL Q15(c)(i)–(ii)",
@@ -7727,7 +7727,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q16b-i-fig", topicId: "bio-2-4", conceptId: "eye-parts-iris-cornea-lens",
     section: "C", questionRef: "2023 OL Q16(b)(i)",
@@ -7757,7 +7757,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q16b-ii-v-fig", topicId: "bio-2-4", conceptId: "eye-function-focusing-and-pupil-response",
     section: "C", questionRef: "2023 OL Q16(b)(ii)–(v)",
@@ -7788,7 +7788,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q16d-i-fig", topicId: "bio-2-5", conceptId: "flower-parts-stigma-ovule-sepal",
     section: "C", questionRef: "2023 OL Q16(d)(i)",
@@ -7817,7 +7817,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q16d-ii-iii-fig", topicId: "bio-2-5", conceptId: "sepal-function-and-pollen-reception",
     section: "C", questionRef: "2023 OL Q16(d)(ii)–(iii)",
@@ -7845,7 +7845,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q16d-iv-v-fig", topicId: "bio-2-5", conceptId: "animal-versus-wind-pollination",
     section: "C", questionRef: "2023 OL Q16(d)(iv)–(v)",
@@ -7873,7 +7873,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q2-c-fig", topicId: "bio-3-2", conceptId: "yeast-bud-identification",
     section: "A", questionRef: "2024 OL Q2(c)",
@@ -7900,7 +7900,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q2-e-fig", topicId: "bio-1-3", conceptId: "nucleus-identification",
     section: "A", questionRef: "2024 OL Q2(e)",
@@ -7927,7 +7927,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q4-a-fig", topicId: "bio-1-1", conceptId: "virus-structure",
     section: "A", questionRef: "2024 OL Q4(a)",
@@ -7954,7 +7954,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q12-b-iv-fig", topicId: "bio-2-2", conceptId: "mitochondrion-site-of-stage-2",
     section: "C", questionRef: "2024 OL Q12(b)(iv)",
@@ -7976,7 +7976,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q12-c-i-fig", topicId: "bio-2-2", conceptId: "chloroplast-identification",
     section: "C", questionRef: "2024 OL Q12(c)(i)",
@@ -7998,7 +7998,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q15-b-i-fig", topicId: "bio-2-5", conceptId: "female-reproductive-system-parts",
     section: "C", questionRef: "2024 OL Q15(b)(i)",
@@ -8027,7 +8027,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q15-b-ii-iii-fig", topicId: "bio-2-5", conceptId: "site-of-egg-production-and-fertilisation",
     section: "C", questionRef: "2024 OL Q15(b)(ii)–(iii)",
@@ -8055,7 +8055,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q16-a-i-fig", topicId: "bio-2-6", conceptId: "plant-dermal-and-ground-tissue",
     section: "C", questionRef: "2024 OL Q16(a)(i)",
@@ -8082,7 +8082,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q16-a-iv-fig", topicId: "bio-2-6", conceptId: "stomata-water-exit",
     section: "C", questionRef: "2024 OL Q16(a)(iv)",
@@ -8108,7 +8108,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q16-c-i-fig", topicId: "bio-2-5", conceptId: "flower-structure-parts",
     section: "C", questionRef: "2024 OL Q16(c)(i)",
@@ -8137,7 +8137,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q16-c-v-fig", topicId: "bio-2-5", conceptId: "anther-is-male-part",
     section: "C", questionRef: "2024 OL Q16(c)(v)",
@@ -8164,7 +8164,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q16-d-i-fig", topicId: "bio-2-6", conceptId: "skin-structure-parts",
     section: "C", questionRef: "2024 OL Q16(d)(i)",
@@ -8193,7 +8193,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q17-a-i-fig", topicId: "bio-2-5", conceptId: "seed-food-store-and-embryo",
     section: "C", questionRef: "2024 OL Q17(a)(i)",
@@ -8221,7 +8221,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q17-d-ii-fig", topicId: "bio-2-4", conceptId: "endocrine-gland-locations",
     section: "C", questionRef: "2024 OL Q17(d)(ii)",
@@ -8250,7 +8250,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q17-d-iii-fig", topicId: "bio-2-4", conceptId: "gland-hormone-matching",
     section: "C", questionRef: "2024 OL Q17(d)(iii)",
@@ -8279,7 +8279,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q4-a-fig", topicId: "bio-1-3", conceptId: "plant-vs-animal-cell",
     section: "A", questionRef: "2025 OL Q4(a)",
@@ -8306,7 +8306,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q4-b-fig", topicId: "bio-1-3", conceptId: "plant-cell-structure",
     section: "A", questionRef: "2025 OL Q4(b)",
@@ -8333,7 +8333,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q4-c-fig", topicId: "bio-1-3", conceptId: "cell-organelle-functions",
     section: "A", questionRef: "2025 OL Q4(c)",
@@ -8360,7 +8360,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q13-b-fig", topicId: "bio-2-2", conceptId: "photosynthesis-inputs-outputs",
     section: "C", questionRef: "2025 OL Q13(b)(ii)",
@@ -8385,7 +8385,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q16-ci-fig", topicId: "bio-3-2", conceptId: "rhizopus-structure",
     section: "C", questionRef: "2025 OL Q16(c)(i)–(ii)",
@@ -8417,7 +8417,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q16-ciii-fig", topicId: "bio-3-2", conceptId: "fungal-spores",
     section: "C", questionRef: "2025 OL Q16(c)(iii)–(iv)",
@@ -8446,7 +8446,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q16-dv-fig", topicId: "bio-3-2", conceptId: "bacterial-cell-shapes",
     section: "C", questionRef: "2025 OL Q16(d)(v)",
@@ -8475,7 +8475,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q17-biv-fig", topicId: "bio-2-4", conceptId: "synovial-joint-structure",
     section: "C", questionRef: "2025 OL Q17(b)(iv)",
@@ -8504,7 +8504,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q17-a-iii-fig", topicId: "bio-2-4", conceptId: "reflex-arc-neuron-types",
     section: "C", questionRef: "2022 OL Q17(a)(iii)",
@@ -8533,7 +8533,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q16-a-v-fig", topicId: "bio-2-6", conceptId: "parallel-and-net-leaf-venation",
     section: "C", questionRef: "2024 OL Q16(a)(v)",
@@ -8560,7 +8560,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2024, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q16-b-i-fig", topicId: "bio-2-6", conceptId: "human-digestive-system-parts",
     section: "C", questionRef: "2024 OL Q16(b)(i)",
@@ -8593,7 +8593,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q6-c-fig", topicId: "bio-2-4", conceptId: "eye-parts-and-functions",
     section: "A", questionRef: "2025 OL Q6(c)",
@@ -8616,7 +8616,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q10-b-ii-fig", topicId: "bio-u2", conceptId: "germination-control-dish",
     section: "B", questionRef: "2025 OL Q10(b)(ii)",
@@ -8645,7 +8645,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q10-b-iii-v-fig", topicId: "bio-u2", conceptId: "germination-factors-investigated",
     section: "B", questionRef: "2025 OL Q10(b)(iii)–(v)",
@@ -8676,7 +8676,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q14-b-i-ii-fig", topicId: "bio-2-6", conceptId: "root-vs-stem-transverse-section",
     section: "C", questionRef: "2025 OL Q14(b)(i)–(ii)",
@@ -8708,7 +8708,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q14-b-iii-fig", topicId: "bio-2-6", conceptId: "plant-tissue-types",
     section: "C", questionRef: "2025 OL Q14(b)(iii)",
@@ -8739,7 +8739,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2025, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q14-c-i3-fig", topicId: "bio-2-5", conceptId: "seed-dispersal-types",
     section: "C", questionRef: "2025 OL Q14(c)(i)3",
@@ -8768,7 +8768,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q7-d-fig", topicId: "bio-2-4", conceptId: "femur-location-on-skeleton",
     section: "A", questionRef: "2021 OL Q7(d)",
@@ -8790,7 +8790,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q12-b-ii-iv-fig", topicId: "bio-1-4", conceptId: "eye-colour-genotype-and-phenotype",
     section: "C", questionRef: "2023 OL Q12(b)(ii)–(iv)",
@@ -8818,7 +8818,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP000EV",
+    paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q12-b-v-vi-fig", topicId: "bio-1-4", conceptId: "eye-colour-gametes-and-offspring-phenotypes",
     section: "C", questionRef: "2023 OL Q12(b)(v)–(vi)",

@@ -189,7 +189,18 @@ interface CardBase {
 export interface SecCardBase extends CardBase {
   source: 'sec';
   year: number;
-  paperFileid: string;
+  /**
+   * SEC file id of the QUESTION PAPER, resolved from Paper Trail's harvested
+   * index by the build script — never typed by an author. Null where that index
+   * has no paper for the card's year and level; a guessed id is worse than none,
+   * because the first Biology build defaulted this field to a literal that turned
+   * out to be the marking SCHEME's id, which would have deep-linked a student
+   * straight to the answers.
+   *
+   * Not unique on its own: the SEC reuses ids across years and disambiguates by
+   * folder, so it identifies a paper only alongside subjectId, year and level.
+   */
+  paperFileid: string | null;
   section: 'A' | 'B' | 'C';
   /** Real paper numbering, e.g. "2025 HL Q6(a)–(b)". */
   questionRef: string;
