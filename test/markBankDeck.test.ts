@@ -26,6 +26,15 @@ const SCHEME = resolve(ROOT, 'examiner-reports/biology/2025-hl-marking-scheme.md
 const norm = (s: string) =>
   s.toLowerCase().replace(/[‐-―]/g, '-').replace(/[^a-z0-9]+/g, ' ').trim();
 
+/**
+ * The PDF extraction splits words at line and column breaks — the 2025 Higher
+ * Level file contains "th at contains", "prey numbe rs" and "ammoni a". A card
+ * quoting the scheme correctly therefore will not match it character for
+ * character. Comparing with all spacing removed proves the content came from the
+ * scheme without demanding the card reproduce the extraction's damage.
+ */
+const tight = (s: string) => norm(s).replace(/ /g, '');
+
 describe('every card traces to the marking scheme on disk', () => {
   const scheme = existsSync(SCHEME) ? norm(readFileSync(SCHEME, 'utf8')) : '';
 
@@ -39,13 +48,13 @@ describe('every card traces to the marking scheme on disk', () => {
       for (const row of card.rows) {
         if (row.kind === 'anyN' && row.group) {
           for (const option of row.group.options) {
-            expect(scheme).toContain(norm(option));
+            expect(tight(scheme)).toContain(tight(option));
           }
           continue;
         }
         // Rows are written "Label — answer"; the answer is what the scheme prints.
         const answer = row.verbatim.split(/\s[—-]\s/).pop() ?? row.verbatim;
-        expect(scheme).toContain(norm(answer));
+        expect(tight(scheme)).toContain(tight(answer));
       }
     },
   );
@@ -89,7 +98,11 @@ describe('no card can repeat the fabrication that shipped first time', () => {
   test('a question that references a lettered figure actually has one', () => {
     // The first deck asked "Name the parts labelled A and B" with no diagram.
     for (const card of SAMPLE_CARDS) {
-      const refsLetters = /\blabelled\b|\bstructures? [ABC]\b|\bparts? [ABC]\b/i.test(card.questionText);
+      // "You may include a labelled diagram if you wish" invites the student to
+      // draw one; it does not mean the card must carry a figure.
+      const invitesDrawing = /you may include a labelled/i.test(card.questionText);
+      const refsLetters = !invitesDrawing
+        && /\blabelled [A-Z]\b|\bstructures? [A-Z](,| and )|\bparts? [A-Z](,| and )|\blabelled\s+(parts|structures)\b/i.test(card.questionText);
       if (refsLetters) {
         expect(isDiagramCard(card), `${card.questionRef} references letters but has no figure`).toBe(true);
       }

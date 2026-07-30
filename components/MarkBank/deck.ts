@@ -21,6 +21,7 @@
  */
 
 import type { SecCard, SecDiagramCard } from '../../types/markBank';
+import { CARDS_2025_HL } from './cards2025hl';
 
 export interface TopicRef {
   id: string;
@@ -251,11 +252,24 @@ const scientificMethod: SecCard = {
 /** Sample deck: five real cards, every marking point and mark value transcribed
  *  from the 2025 Higher Level scheme on disk, every figure a real crop from the
  *  paper. Real authoring extends this; it does not replace its provenance. */
-export const SAMPLE_CARDS: SecCard[] = [
+/**
+ * The deck. The five hand-built cards below were the first, written by hand while
+ * the card model was being settled; the rest are compiled from the same 2025
+ * Higher Level scheme by scripts/markbank/build-deck.mjs. Cards whose question
+ * reference collides with a generated one are dropped in favour of the generated
+ * version, which went through independent verification.
+ */
+const HAND_BUILT: SecCard[] = [
   digestiveParts, peristalsis, rhizopus, rhizopusSexual, scientificMethod,
 ];
 
-/** True while the deck is a sample slice rather than full coverage. */
+const generatedRefs = new Set(CARDS_2025_HL.map(c => c.questionRef));
+export const SAMPLE_CARDS: SecCard[] = [
+  ...CARDS_2025_HL,
+  ...HAND_BUILT.filter(c => !generatedRefs.has(c.questionRef)),
+];
+
+/** True while the deck covers one paper rather than the full syllabus. */
 export const IS_SAMPLE_DECK = true;
 
 export const cardsForTopic = (topicId: string, cards: SecCard[] = SAMPLE_CARDS) =>

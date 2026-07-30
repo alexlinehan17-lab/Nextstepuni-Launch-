@@ -44,6 +44,8 @@ const ALT = {
   "mitochondrion": "Cross-section of a mitochondrion: a smooth outer membrane and an inner membrane folded into long finger-like cristae, with small dots scattered through the interior.",
   "chloroplast": "Cross-section of a chloroplast: an outer envelope enclosing four stacks of disc-shaped compartments joined by flattened channels, with small dots in the surrounding fluid. No parts are lettered.",
   "embryo-sac": "A carpel in section on the left, with an arrow enlarging its ovule on the right. Inside the enlarged ovule, leader lines mark P at a pair of central nuclei and Q at a cell below them.",
+  "neurons": "Two neurons drawn side by side. Neuron X has a branched cell body at the top and runs down to a block of muscle cells; Neuron Y runs from a patch of skin at the bottom up past its cell body. A brace marks Z at the fine branches at the top of Y, and arrows name the Schwann cells along both axons.",
+  "sperm-sem": "Electron micrograph of a single sperm cell against a dark background, with a 2 micrometre scale bar. An arrow marks A at the rounded head and a second marks B partway along the tail.",
   "fermenter": "Photograph of an industrial stainless-steel fermenter: a sealed cylindrical vessel on a wheeled frame, with pipework, valves and gauges around it. No parts are lettered.",
 };
 
@@ -73,6 +75,19 @@ const figureRecord = (key) => {
 
 const q = (s) => JSON.stringify(String(s));
 
+/**
+ * A row that states only what the marks are worth, with no answer in it. Roughly
+ * a third of Section B scheme rows read this way ("Control named and setup
+ * described"), and transcribing them is precisely how Answer Architect failed.
+ * Mirrors isContentFreeRow in types/markBank.ts.
+ */
+const isContentFree = (v) => {
+  const t = String(v).trim().toLowerCase();
+  if (!t) return true;
+  if (/^\d+\s*(items?|points?|answers?)?[,\s]*\d*\s*marks?\s*(each)?\.?$/.test(t)) return true;
+  return /^(named piece of apparatus( used)?|control named( and setup described)?|safety precaution described|correct (sketch|matching result|position)|suitable (time|temperature|volume)|left for a (suitable )?time|any correct|the description earns|description how|matching result)/.test(t);
+};
+
 const out = [];
 const dropped = [];
 const seenId = new Set();
@@ -81,19 +96,25 @@ const seenHash = new Map();
 for (const c of cards) {
   if (seenId.has(c.id)) { dropped.push(`${c.id}: duplicate id`); continue; }
 
+  const contentFree = c.rows.filter(r => r.kind !== 'anyN' && isContentFree(r.verbatim));
+  if (contentFree.length) {
+    dropped.push(`${c.id}: ${contentFree.length} content-free row(s), e.g. "${contentFree[0].verbatim}"`);
+    continue;
+  }
+
   let figure = null;
   let labelKey = null;
   if (c.figureKey) {
     const rec = figureRecord(c.figureKey);
     if (rec.error) { dropped.push(`${c.id}: ${rec.error}`); continue; }
-    if (!Array.isArray(c.labelKey) || !c.labelKey.length) {
-      dropped.push(`${c.id}: has a figure but no label key`); continue;
-    }
+    // A lettered figure MUST decode its letters; an unlettered one has nothing
+    // to decode and rides on a plain question card instead.
+    const lettered = Array.isArray(c.labelKey) && c.labelKey.length > 0;
     const prev = seenHash.get(rec.srcHash);
     if (prev && prev !== c.figureKey) { dropped.push(`${c.id}: crop already bound as "${prev}"`); continue; }
     seenHash.set(rec.srcHash, c.figureKey);
-    figure = { ...rec, lettersVisible: c.labelKey.map(k => k.letter) };
-    labelKey = c.labelKey;
+    figure = { ...rec, lettersVisible: lettered ? c.labelKey.map(k => k.letter) : [] };
+    labelKey = lettered ? c.labelKey : null;
   }
 
   seenId.add(c.id);
@@ -110,14 +131,14 @@ for (const c of cards) {
   }).join('\n');
 
   out.push(`  {
-    ...base, kind: ${q(figure ? 'diagram' : 'question')},
+    ...base, kind: ${q(labelKey ? 'diagram' : 'question')},
     id: ${q(c.id)}, topicId: ${q(c.topicId)}, conceptId: ${q(c.conceptId)},
     section: ${q(c.section)}, questionRef: ${q(c.questionRef)},${c.paperFileid ? `\n    paperFileid: ${q(c.paperFileid)},` : ''}${c.stem ? `\n    stem: ${q(c.stem)},` : ''}
     questionText: ${q(c.questionText)},
     tariffModel: ${JSON.stringify(c.tariffModel)}, totalMarks: ${c.totalMarks},
     rows: [
 ${rows}
-    ],${figure ? `\n    figure: ${JSON.stringify(figure, null, 6).replace(/\n/g, '\n    ')},\n    labelKey: ${JSON.stringify(labelKey)},` : ''}
+    ],${figure ? `\n    figure: ${JSON.stringify(figure, null, 6).replace(/\n/g, '\n    ')},` : ''}${labelKey ? `\n    labelKey: ${JSON.stringify(labelKey)},` : ''}
   } as SecCard,`);
 }
 
