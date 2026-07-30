@@ -50,6 +50,40 @@ const ALT = {
   "fermenter": "Photograph of an industrial stainless-steel fermenter: a sealed cylindrical vessel on a wheeled frame, with pipework, valves and gauges around it. No parts are lettered.",
 };
 
+/* ------------------------------------------------------- provenance gate ---- */
+
+const SCHEME_DIR = 'examiner-reports/biology/schemes';
+const schemeCache = new Map();
+
+/**
+ * The scheme a card must be traceable to. Comparison drops mark-only lines and
+ * ignores spacing: a marks cell is vertically centred against a multi-line answer
+ * so the mark lands BETWEEN the lines it belongs to, and chemical subscripts sit
+ * on their own baseline ("C x ( H 2 O )y").
+ */
+const MARKS_ONLY = /^\s*\d+\s*(\(\s*\d+\s*\))?\s*$/;
+const normalise = (t) => t.toLowerCase().replace(/[\u2010-\u2015]/g, '-').replace(/[^a-z0-9]+/g, '');
+
+function schemeFor(card) {
+  const key = `${card.year ?? 2025}-${(card.level ?? 'higher') === 'higher' ? 'hl' : 'ol'}`;
+  if (!schemeCache.has(key)) {
+    const file = resolve(ROOT, SCHEME_DIR, `${key}.md`);
+    const raw = existsSync(file) ? readFileSync(file, 'utf8') : '';
+    schemeCache.set(key, normalise(raw.split('\n').filter(l => !MARKS_ONLY.test(l)).join(' ')));
+  }
+  return schemeCache.get(key);
+}
+
+/** Text that is a table fragment or a header rather than an answerable question. */
+function badQuestion(text) {
+  const t = String(text).trim();
+  if (t.length < 16) return 'question text is too short to stand alone';
+  if (/^section\s+[abc]\b/i.test(t)) return 'question text is a section header';
+  if (/^question\s+\d+\.?$/i.test(t)) return 'question text is just a question number';
+  if (/^\(?\d+\s*m(arks)?\)?\.?$/i.test(t)) return 'question text is a bare tariff';
+  return null;
+}
+
 const cardsPath = process.argv[2];
 if (!cardsPath) {
   console.error('usage: build-deck.mjs <cards.json>');
@@ -100,6 +134,33 @@ for (const c of cards) {
   const contentFree = c.rows.filter(r => r.kind !== 'anyN' && isContentFree(r.verbatim));
   if (contentFree.length) {
     dropped.push(`${c.id}: ${contentFree.length} content-free row(s), e.g. "${contentFree[0].verbatim}"`);
+    continue;
+  }
+
+  const badQ = badQuestion(c.questionText);
+  if (badQ) { dropped.push(`${c.id}: ${badQ} — "${c.questionText}"`); continue; }
+
+  // A question naming lettered parts is unanswerable without the figure.
+  const invitesDrawing = /you may include a labelled/i.test(c.questionText);
+  const namesLetters = !invitesDrawing
+    && /\blabelled [A-Z]\b|\bstructures? [A-Z](,| and )|\bparts? [A-Z](,| and )|\blabelled\s+(parts|structures)\b/i.test(c.questionText);
+  if (namesLetters && !c.figureKey) {
+    dropped.push(`${c.id}: names lettered parts but carries no figure`);
+    continue;
+  }
+
+  // Every marking point must actually appear in its own scheme.
+  const scheme = schemeFor(c);
+  if (!scheme) { dropped.push(`${c.id}: no scheme on disk for ${c.year} ${c.level}`); continue; }
+  const untraceable = [];
+  for (const r of c.rows) {
+    const claims = r.kind === 'anyN' && r.group ? r.group.options : [String(r.verbatim).split(/\s[—-]\s/).pop()];
+    for (const claim of claims) {
+      if (!scheme.includes(normalise(claim))) untraceable.push(claim);
+    }
+  }
+  if (untraceable.length) {
+    dropped.push(`${c.id}: ${untraceable.length} marking point(s) not found in the ${c.year} ${c.level} scheme, e.g. "${String(untraceable[0]).slice(0, 60)}"`);
     continue;
   }
 
