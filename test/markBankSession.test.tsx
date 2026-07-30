@@ -17,7 +17,6 @@ import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 import SessionScreen, {
-  ENVIRONMENT,
   claimableTotal,
   marksClaimed,
   rowMarks,
@@ -220,14 +219,16 @@ describe('claiming marks', () => {
     expect(screen.getByText(/Nothing left behind/i)).toBeInTheDocument();
   });
 
-  test('an asterisked row says it needs the exact term and offers no synonym escape', () => {
+  test('an asterisked row offers no synonym escape, and says nothing about why', () => {
+    // The asterisk is marking-scheme mechanics. It changes what the tool accepts;
+    // it is not a caption for the student to read and act on.
     const c = card({
       totalMarks: 4,
       rows: [row({ id: 'g', kind: 'gate', verbatim: 'Sporangium', marks: 1, exactTermRequired: true }), row({ id: 'r1', verbatim: 'Stomach', marks: 3 })],
     });
     renderSession([c], { 'bio-2025-hl-q6-ab': seen });
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
-    expect(screen.getByText(/needs the exact term/i)).toBeInTheDocument();
+    expect(screen.queryByText(/exact term/i)).not.toBeInTheDocument();
     expect(screen.queryByRole('button', { name: /I had something like this/i })).not.toBeInTheDocument();
   });
 
@@ -380,21 +381,8 @@ describe('grading', () => {
 describe('design rules that carry meaning', () => {
   const source = readFileSync(resolve(__dirname, '..', 'components/MarkBank/SessionScreen.tsx'), 'utf8');
 
-  test('the environment colour is far from the success token, so the two can never be confused', () => {
-    // Both are green by the founder's choice, which makes distance and
-    // containment load-bearing rather than cosmetic.
-    const lum = (hex: string) => {
-      const n = parseInt(hex.slice(1), 16);
-      return (0.2126 * ((n >> 16) & 255) + 0.7152 * ((n >> 8) & 255) + 0.0722 * (n & 255)) / 255;
-    };
-    expect(Math.abs(lum(ENVIRONMENT) - lum('#3A8D5F'))).toBeGreaterThan(0.2);
-  });
-
-  test('containment: the environment colour never appears inside a card surface', () => {
-    // Card interiors are white or the cool plate; state colours live only there.
-    expect(source).not.toMatch(new RegExp(`background:\\s*['\`]?${ENVIRONMENT}`, 'i'));
-    const envUses = source.match(/environmentColor/g) || [];
-    expect(envUses.length).toBeGreaterThan(0);
+  test('carries no decorative colour field — surfaces stay plain until designed', () => {
+    expect(source).not.toMatch(/#123B2B|environmentColor/);
   });
 
   test('no banned surfaces: warm cream, coloured left borders, gradients or emoji', () => {

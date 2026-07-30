@@ -20,8 +20,7 @@
  */
 
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
-import { MotionDiv, useReducedMotion } from '../Motion';
-import SessionScreen, { ENVIRONMENT, type SessionCardResult } from './SessionScreen';
+import SessionScreen, { type SessionCardResult } from './SessionScreen';
 import {
   NEW_CARD, dueAt, grade as gradeCard, intervalWords,
   isDue, planSession, retentionFor, retrievability,
@@ -35,7 +34,6 @@ import {
 } from './store';
 import type { SecCard } from '../../types/markBank';
 
-const EASE = [0.16, 1, 0.3, 1] as number[];
 const SESSION_SIZE = 12;
 
 const INK = '#1a1a1a';
@@ -89,7 +87,6 @@ const MarkBar: React.FC<{ secure: number; met: number; total: number }> = ({ sec
 /* ------------------------------------------------------------------ tool ---- */
 
 const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
-  const reduced = useReducedMotion() ?? false;
   const [level, setLevel] = useState<Level>('higher');
   const deckId = `biology-${level}`;
   const [deck, setDeck] = useState<DeckState>(() => readLocal(uid, deckId));
@@ -244,18 +241,18 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
   if (screen.name === 'topics') {
     return (
       <div style={{ minHeight: '100dvh', background: PAGE, fontFamily: SANS, width: '100vw', marginLeft: 'calc(50% - 50vw)', marginRight: 'calc(50% - 50vw)' }}>
-        <div style={{ background: ENVIRONMENT, padding: '20px 16px 24px', borderRadius: '0 0 26px 26px' }}>
+        <div style={{ padding: '20px 16px 4px' }}>
           <div style={{ maxWidth: 560, margin: '0 auto' }}>
             <button
               type="button" onClick={() => setScreen({ name: 'bank' })}
-              style={{ background: 'none', border: 'none', padding: 0, color: 'rgba(255,255,255,.75)', font: `600 12.5px/1 ${SANS}`, cursor: 'pointer' }}
+              style={{ background: 'none', border: 'none', padding: 0, color: MUTED, font: `600 12.5px/1 ${SANS}`, cursor: 'pointer' }}
             >
               ‹ The Bank
             </button>
-            <h2 style={{ font: `700 26px/1.15 ${SERIF}`, color: '#fff', margin: '12px 0 4px' }}>Biology</h2>
-            <span style={{ font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.13em', textTransform: 'uppercase', color: 'rgba(255,255,255,.6)' }}>
+            <h2 style={{ font: `700 26px/1.15 ${SERIF}`, color: INK, margin: '12px 0 4px' }}>Biology</h2>
+            <Eyebrow>
               {level === 'higher' ? 'Higher level' : 'Ordinary level'} · redeveloped specification
-            </span>
+            </Eyebrow>
           </div>
         </div>
 
@@ -343,38 +340,33 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
 
   return (
     <div style={{ minHeight: '100dvh', background: PAGE, fontFamily: SANS, width: '100vw', marginLeft: 'calc(50% - 50vw)', marginRight: 'calc(50% - 50vw)' }}>
-      <MotionDiv
-        initial={reduced ? false : { opacity: 0, y: -8 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.35, ease: EASE }}
-        style={{ background: ENVIRONMENT, padding: '30px 16px 34px', borderRadius: '0 0 28px 28px' }}
-      >
+      <div style={{ padding: '26px 16px 4px' }}>
         <div style={{ maxWidth: 560, margin: '0 auto' }}>
           {nothingMet ? (
             <>
-              <h2 style={{ font: `700 27px/1.18 ${SERIF}`, color: '#fff', margin: '0 0 10px' }}>
+              <h2 style={{ font: `700 27px/1.18 ${SERIF}`, color: INK, margin: '0 0 10px' }}>
                 Nothing in the bank yet.
               </h2>
-              <p style={{ font: `400 14.5px/1.55 ${SANS}`, color: 'rgba(255,255,255,.8)', margin: '0 0 20px', maxWidth: '34ch' }}>
+              <p style={{ font: `400 14.5px/1.55 ${SANS}`, color: MUTED, margin: '0 0 20px', maxWidth: '34ch' }}>
                 Pick a topic and you&rsquo;ll get real Leaving Cert Biology questions — the exact wording
                 from the paper — marked point by point against the real scheme.
               </p>
             </>
           ) : dueCount > 0 ? (
             <>
-              <h2 style={{ font: `700 27px/1.18 ${SERIF}`, color: '#fff', margin: '0 0 8px' }}>
+              <h2 style={{ font: `700 27px/1.18 ${SERIF}`, color: INK, margin: '0 0 8px' }}>
                 {dueCount} {dueCount === 1 ? 'question is' : 'questions are'} ready for you.
               </h2>
-              <p style={{ font: `400 14px/1.5 ${SANS}`, color: 'rgba(255,255,255,.75)', margin: '0 0 20px' }}>
+              <p style={{ font: `400 14px/1.5 ${SANS}`, color: MUTED, margin: '0 0 20px' }}>
                 About {Math.max(2, Math.round(dueCount * 1.2))} minutes.
               </p>
             </>
           ) : (
             <>
-              <h2 style={{ font: `700 27px/1.18 ${SERIF}`, color: '#fff', margin: '0 0 10px' }}>
+              <h2 style={{ font: `700 27px/1.18 ${SERIF}`, color: INK, margin: '0 0 10px' }}>
                 Nothing due today.
               </h2>
-              <p style={{ font: `400 14.5px/1.55 ${SANS}`, color: 'rgba(255,255,255,.8)', margin: '0 0 20px', maxWidth: '36ch' }}>
+              <p style={{ font: `400 14.5px/1.55 ${SANS}`, color: MUTED, margin: '0 0 20px', maxWidth: '36ch' }}>
                 That&rsquo;s not you slacking — it&rsquo;s the schedule doing its job. Everything you&rsquo;ve
                 met is still fresh enough that showing it now would waste your time.
                 {nextReturn && Number.isFinite(nextReturn) && (
@@ -402,8 +394,8 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
                 onClick={() => setScreen({ name: 'topics' })}
                 style={{
                   padding: '13px 20px', borderRadius: 100, cursor: 'pointer',
-                  background: 'transparent', color: '#fff',
-                  border: '2px solid rgba(255,255,255,.35)', font: `600 14px/1 ${SANS}`,
+                  background: '#fff', color: MUTED,
+                  border: `2px solid ${MUTED_BORDER}`, font: `600 14px/1 ${SANS}`,
                 }}
               >
                 Pick a topic
@@ -411,9 +403,9 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
             )}
           </div>
         </div>
-      </MotionDiv>
+      </div>
 
-      <div style={{ maxWidth: 560, margin: '0 auto', padding: '20px 16px 60px' }}>
+      <div style={{ maxWidth: 560, margin: '0 auto', padding: '16px 16px 60px' }}>
         {/* Level segment. Switching never wipes state — both decks survive. */}
         <div style={{ display: 'inline-flex', background: '#fff', border: `2px solid ${INK}`, borderRadius: 100, padding: 3, marginBottom: 18 }}>
           {(['higher', 'ordinary'] as Level[]).map(l => (

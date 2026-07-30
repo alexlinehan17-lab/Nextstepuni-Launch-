@@ -39,10 +39,6 @@ import type { MarkBankGrade } from './scheduler';
 
 const EASE = [0.16, 1, 0.3, 1] as number[];
 
-/** Deep forest green. Far darker than the success token so the two can never be
- *  mistaken for each other even if a future layout breaks containment. */
-export const ENVIRONMENT = '#123B2B';
-
 const INK = '#1a1a1a';
 const INK_2 = '#3a3530';
 const MUTED = '#7a7068';
@@ -50,6 +46,7 @@ const LABEL = '#9e9186';
 const HAIRLINE = '#ece9e4';
 const MUTED_BORDER = '#d0cdc8';
 const PLATE = '#F0FAF8';
+const PAGE = '#f0f0f0';
 const SUCCESS = '#3A8D5F';
 const SUCCESS_TINT = '#E8F2EC';
 const SUCCESS_TEXT = '#1F5F3E';
@@ -86,7 +83,6 @@ export interface SessionScreenProps {
   onGrade: (result: SessionCardResult) => string | void;
   onExit: () => void;
   onFinish: (results: SessionCardResult[]) => void;
-  environmentColor?: string;
 }
 
 /* ------------------------------------------------------------- mark logic ---- */
@@ -188,7 +184,7 @@ const ProgressRail: React.FC<{ total: number; done: number }> = ({ total, done }
         key={i}
         style={{
           height: 3, flex: 1, borderRadius: 2,
-          background: i < done ? '#FFFFFF' : 'rgba(255,255,255,0.26)',
+          background: i < done ? INK : '#d6d2cc',
           transition: 'background 240ms',
         }}
       />
@@ -267,16 +263,6 @@ const MarkRowView: React.FC<{
               </span>
             ) : null}
           </span>
-          {row.exactTermRequired && (
-            <span style={{
-              display: 'inline-block', marginLeft: 6, padding: '0 6px', borderRadius: 4,
-              background: RISK_TINT, color: RISK_TEXT,
-              font: `600 9px/1.6 ${SANS}`, letterSpacing: '.06em', textTransform: 'uppercase',
-              verticalAlign: 1,
-            }}>
-              needs the exact term
-            </span>
-          )}
           {row.contextNote && (
             <span style={{ display: 'block', marginTop: 3, font: `400 12px/1.4 ${SANS}`, color: MUTED }}>
               {row.contextNote}
@@ -362,7 +348,6 @@ const GRADE_COPY: Record<MarkBankGrade, string> = {
 
 const SessionScreen: React.FC<SessionScreenProps> = ({
   cards, subjectLabel, onGrade, onExit, onFinish,
-  environmentColor = ENVIRONMENT,
 }) => {
   const reduced = useReducedMotion() ?? false;
   const [queue, setQueue] = useState(() => cards.map(c => c.id));
@@ -456,7 +441,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
 
   return (
     <div style={{
-      minHeight: '100dvh', background: environmentColor,
+      minHeight: '100dvh', background: PAGE,
       paddingBottom: 'calc(150px + var(--sab, 0px))',
       fontFamily: SANS,
       // Full-bleed: the tool renders inside a max-width app shell, so without
@@ -470,11 +455,11 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
       {/* Top rail — leaving is always safe, grades commit per card. */}
       <div style={{
         position: 'sticky', top: 0, zIndex: 3, display: 'flex', alignItems: 'center', gap: 12,
-        padding: '14px 16px', background: environmentColor,
+        padding: '14px 16px', background: PAGE,
       }}>
         <button
           type="button" onClick={onExit} aria-label="Leave this session"
-          style={{ background: 'none', border: 'none', padding: 4, cursor: 'pointer', color: '#FFFFFF', lineHeight: 0 }}
+          style={{ background: 'none', border: 'none', padding: 4, cursor: 'pointer', color: INK, lineHeight: 0 }}
         >
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -482,7 +467,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         </button>
         <ProgressRail total={cards.length} done={distinctDone} />
         <span style={{
-          font: `700 11px/1 ${MONO}`, color: 'rgba(255,255,255,0.82)',
+          font: `700 11px/1 ${MONO}`, color: MUTED,
           fontVariantNumeric: 'tabular-nums', whiteSpace: 'nowrap',
         }}>
           {Math.min(distinctDone + 1, cards.length)} of {cards.length}
@@ -491,7 +476,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
 
       {/* The card. White, always — the environment colour never enters it. */}
       <div style={{ maxWidth: 560, width: '100%', margin: '0 auto', padding: '4px 12px 0', flex: '0 0 auto' }}>
-        <div style={{ background: '#FFFFFF', borderRadius: 20, overflow: 'hidden' }}>
+        <div style={{ background: '#FFFFFF', borderRadius: 18, overflow: 'hidden', border: `2px solid ${INK}` }}>
           <div style={{ padding: '16px 18px 0' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 10 }}>
               <span style={{
