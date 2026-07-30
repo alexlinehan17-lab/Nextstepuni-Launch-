@@ -130,10 +130,16 @@ for (const c of cards) {
     return `    { ${parts.join(', ')} },`;
   }).join('\n');
 
+  const year = c.year ?? 2025;
+  const level = c.level ?? 'higher';
+  const levelWord = level === 'higher' ? 'Higher' : 'Ordinary';
   out.push(`  {
     ...base, kind: ${q(labelKey ? 'diagram' : 'question')},
+    year: ${year}, level: ${q(level)},
+    paperFileid: ${q(c.paperFileid ?? `LC025${level === 'higher' ? 'A' : 'G'}LP000EV`)},
+    schemeCitation: ${q(`Marking points quoted from the SEC marking scheme, Biology ${year} ${levelWord} Level — © State Examinations Commission.`)},
     id: ${q(c.id)}, topicId: ${q(c.topicId)}, conceptId: ${q(c.conceptId)},
-    section: ${q(c.section)}, questionRef: ${q(c.questionRef)},${c.paperFileid ? `\n    paperFileid: ${q(c.paperFileid)},` : ''}${c.stem ? `\n    stem: ${q(c.stem)},` : ''}
+    section: ${q(c.section)}, questionRef: ${q(c.questionRef)},${c.stem ? `\n    stem: ${q(c.stem)},` : ''}
     questionText: ${q(c.questionText)},
     tariffModel: ${JSON.stringify(c.tariffModel)}, totalMarks: ${c.totalMarks},
     rows: [
@@ -168,12 +174,8 @@ import type { SecCard } from '../../types/markBank';
 const base = {
   source: 'sec' as const,
   subjectId: 'biology',
-  level: 'higher' as const,
-  year: 2025,
-  paperFileid: 'LC025ALP038EV',
   specVersion: 'lc-biology-2002',
   qa: { gates: ['verbatim', 'tariff', 'figure'], humanReviewedBy: 'agent-verified', humanReviewedAt: '2026-07-30' },
-  schemeCitation: 'Marking points quoted from the SEC marking scheme, Biology 2025 Higher Level — © State Examinations Commission.',
 };
 
 export const CARDS_2025_HL: SecCard[] = [

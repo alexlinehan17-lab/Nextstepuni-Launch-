@@ -20,7 +20,20 @@ import { SAMPLE_CARDS, STRANDS, ALL_TOPICS, BLOCKED_FIGURES } from '../component
 import { isDiagramCard, isContentFreeRow, looksLikeSectionLabel, tariffReconciles, MAX_ROWS, isValidCardId } from '../types/markBank';
 
 const ROOT = resolve(__dirname, '..');
-const SCHEME = resolve(ROOT, 'examiner-reports/biology/schemes/2025-hl.md');
+const SCHEME_DIR = resolve(ROOT, 'examiner-reports/biology/schemes');
+
+/** The scheme a card must be traceable to, keyed by its own year and level. */
+const schemeFor = (card: { year: number; level: string }) =>
+  resolve(SCHEME_DIR, `${card.year}-${card.level === 'higher' ? 'hl' : 'ol'}.md`);
+
+const schemeCache = new Map<string, string>();
+const schemeText = (card: { year: number; level: string }) => {
+  const path = schemeFor(card);
+  if (!schemeCache.has(path)) {
+    schemeCache.set(path, existsSync(path) ? readFileSync(path, 'utf8') : '');
+  }
+  return schemeCache.get(path)!;
+};
 
 /** Normalise for substring matching against the extracted scheme text. */
 const norm = (s: string) =>
@@ -37,25 +50,27 @@ const norm = (s: string) =>
 const tight = (s: string) => norm(s);
 
 describe('every card traces to the marking scheme on disk', () => {
-  const scheme = existsSync(SCHEME) ? norm(readFileSync(SCHEME, 'utf8')) : '';
-
-  test('the scheme this deck cites is actually present', () => {
-    expect(scheme.length).toBeGreaterThan(1000);
+  test('every year and level the deck draws on has its scheme present', () => {
+    const needed = new Set(SAMPLE_CARDS.map(c => schemeFor(c)));
+    for (const path of needed) {
+      expect(existsSync(path), `missing scheme: ${path}`).toBe(true);
+    }
   });
 
   test.each(SAMPLE_CARDS.map(c => [c.questionRef, c] as const))(
     '%s — every marking point appears in the scheme',
     (_ref, card) => {
+      const scheme = tight(schemeText(card));
       for (const row of card.rows) {
         if (row.kind === 'anyN' && row.group) {
           for (const option of row.group.options) {
-            expect(tight(scheme)).toContain(tight(option));
+            expect(scheme).toContain(tight(option));
           }
           continue;
         }
         // Rows are written "Label — answer"; the answer is what the scheme prints.
         const answer = row.verbatim.split(/\s[—-]\s/).pop() ?? row.verbatim;
-        expect(tight(scheme)).toContain(tight(answer));
+        expect(scheme).toContain(tight(answer));
       }
     },
   );
