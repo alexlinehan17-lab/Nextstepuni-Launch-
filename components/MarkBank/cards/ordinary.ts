@@ -8195,6 +8195,34 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC025GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2024-ol-q17-a-i-fig", topicId: "bio-2-5", conceptId: "seed-food-store-and-embryo",
+    section: "C", questionRef: "2024 OL Q17(a)(i)",
+    stem: "Answer the following questions in relation to seeds and germination. The diagram shows the internal structure of a seed.",
+    questionText: "1. Which of the labelled structures contains food? 2. Which of the labelled parts consists of a radicle and plumule?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Endosperm or cotyledon", marks: 3, accepts: ["Endosperm","Cotyledon"] },
+    { id: "r-2", kind: "point", verbatim: "Embryo", marks: 3 },
+    ],
+    figure: {
+          "candId": "biology-2024-OL-paper2-p09-i0",
+          "src": "/exam-figures/biology/markbank/biology-2024-OL-paper2-p09-i0.png",
+          "srcHash": "c19a3fd837fd772dfabbed991eac7b77",
+          "alt": "Internal structure of a seed: two large pale stippled ovals side by side, drawn as a seed split open. Inside the left oval sits a dark structure — a frilly, leaf-like part at the upper left joined to a smooth elongated rod that runs down the join between the two ovals. Three word labels with leader lines: \"Cotyledon\" points to the frilly leaf-like part, \"Embryo\" points to the smooth elongated rod at the join, \"Endosperm\" points into the pale stippled body of the left oval. No letter labels, and the testa is deliberately not marked (part (ii) states this). Complete — no ink touches any edge.",
+          "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "Cotyledon",
+                "Endosperm",
+                "Embryo"
+          ]
+    },
+    labelKey: [{"letter":"Cotyledon","meaning":"Cotyledon — a labelled structure that contains food","askedInThisQuestion":true},{"letter":"Endosperm","meaning":"Endosperm — a labelled structure that contains food","askedInThisQuestion":true},{"letter":"Embryo","meaning":"Embryo — the labelled part that consists of a radicle and plumule","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC025GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q17-d-ii-fig", topicId: "bio-2-4", conceptId: "endocrine-gland-locations",
     section: "C", questionRef: "2024 OL Q17(d)(ii)",
     stem: "The diagram shows some parts of the human male endocrine system. The endocrine system produces hormones.",
@@ -8472,5 +8500,348 @@ export const CARDS: SecCard[] = [
           ]
     },
     labelKey: [{"letter":"P","meaning":"Cartilage","askedInThisQuestion":true},{"letter":"Q","meaning":"Synovial fluid","askedInThisQuestion":true},{"letter":"R","meaning":"Ligament","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC025GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2022-ol-q17-a-iii-fig", topicId: "bio-2-4", conceptId: "reflex-arc-neuron-types",
+    section: "C", questionRef: "2022 OL Q17(a)(iii)",
+    stem: "The diagram shows a section through the spinal cord with attached nerves.",
+    questionText: "Name the nerve cells labelled A, B, C in the diagram.",
+    tariffModel: {"kind":"orderedSplit","notation":"2(7) + 8(2)"}, totalMarks: 16,
+    rows: [
+    { id: "r-a", kind: "point", verbatim: "A — Sensory neuron", marks: null, contextNote: "Q17(a) is marked 2(7) + 8(2) across its ten responses: the first two correct responses score 7 each and every later one scores 2, so no guaranteed per-part value exists. The scheme's table awards 16 marks for three correct responses. A is the fibre running in from the sense organ, swelling into a cell body just outside the cord." },
+    { id: "r-b", kind: "point", verbatim: "B — Interneuron", marks: null, contextNote: "B is arrowed into the grey matter, linking the incoming and outgoing fibres inside the cord." },
+    { id: "r-c", kind: "point", verbatim: "C — Motor neuron", marks: null, contextNote: "C is the cell body in the lower grey matter whose fibre runs out to the effector." },
+    ],
+    figure: {
+          "candId": "biology-2022-OL-paper2-p09-i0",
+          "src": "/exam-figures/biology/markbank/biology-2022-OL-paper2-p09-i0.png",
+          "srcHash": "3c419076e314951a60d19ce0b75749a6",
+          "alt": "Cross-section through the spinal cord with a reflex arc, complete and uncut. A butterfly/H-shaped grey shaded region in the middle (captioned 'Grey matter' with an arrow) inside a lobed cord outline whose outer region is captioned 'White matter'; a tiny circle marks the central canal. On the right, two nerve tracks leave the cord and run to boxed captions 'Sense organ' (upper) and 'Effector' (lower). A is arrowed to the upper nerve fibre where it swells into a round cell body sitting just outside the cord; B is arrowed horizontally into the grey matter; C is arrowed up to a small cell body drawn in the lower grey matter, from which a fibre runs out to the effector. Only a sliver of the question line above is clipped; the diagram and all three letters are whole.",
+          "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Sensory neuron","askedInThisQuestion":true},{"letter":"B","meaning":"Interneuron","askedInThisQuestion":true},{"letter":"C","meaning":"Motor neuron","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC025GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2024-ol-q16-a-v-fig", topicId: "bio-2-6", conceptId: "parallel-and-net-leaf-venation",
+    section: "C", questionRef: "2024 OL Q16(a)(v)",
+    stem: "Veins in leaves can be arranged in a parallel pattern or a net (reticulate) pattern.",
+    questionText: "Match each of the leaves X and Y to the following terms: 1. Parallel venation 2. Net venation",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Parallel venation — Y", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Net venation — X", marks: 3 },
+    ],
+    figure: {
+          "candId": "biology-2024-OL-paper2-p07-i2",
+          "src": "/exam-figures/biology/markbank/biology-2024-OL-paper2-p07-i2.png",
+          "srcHash": "fb27a2788c93c14c35f0c717f1823fed",
+          "alt": "Two leaf silhouettes side by side. The left leaf is broad and heart-shaped with a thick midrib and a dense branching, net-like vein pattern; it is labelled X beneath. The right leaf is narrow and lance-shaped with fine veins running parallel from base to tip; it is labelled Y beneath. Both leaves and both letters are fully inside the frame. Only the instruction line above (\"Match each of the leaves X and Y to the following terms:\") is sliced at the top edge.",
+          "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "X",
+                "Y"
+          ]
+    },
+    labelKey: [{"letter":"X","meaning":"Net venation (dicotyledonous)","askedInThisQuestion":true},{"letter":"Y","meaning":"Parallel venation (monocotyledonous)","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC025GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2024-ol-q16-b-i-fig", topicId: "bio-2-6", conceptId: "human-digestive-system-parts",
+    section: "C", questionRef: "2024 OL Q16(b)(i)",
+    stem: "The diagram shows the human digestive system.",
+    questionText: "In your answerbook, match each of the parts labelled A, B, C and D with the following terms: 1. Stomach 2. Large intestine 3. Oesophagus 4. Small intestine",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Stomach — B", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Large intestine — D", marks: 3 },
+    { id: "r-3", kind: "point", verbatim: "Oesophagus — A", marks: 3 },
+    { id: "r-4", kind: "point", verbatim: "Small intestine — C", marks: 3 },
+    ],
+    figure: {
+          "candId": "biology-2024-OL-paper2-p07-i1",
+          "src": "/exam-figures/biology/markbank/biology-2024-OL-paper2-p07-i1.png",
+          "srcHash": "183c03528ad8b1f4de29494b82e93b1c",
+          "alt": "The human digestive system: an outline of a head and torso with the gut drawn inside — the oesophagus running down from the mouth, a labelled \"Liver\" wedge, the stomach behind it, a coiled small intestine and the large intestine framing it. Letter A arrows to the oesophagus, B to the stomach behind the liver, C to the coiled small intestine, D to the large intestine. WARNING: two stray letters, X and Y, sit alone at the very top of this crop with no drawing under them — they belong to the leaf-venation figure of Q16(a)(v) (the leaves themselves are in p07-i2), and must not be read as labels on the digestive-system diagram. The digestive diagram itself is complete; no ink touches any edge.",
+          "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "X",
+                "Y"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Oesophagus","askedInThisQuestion":true},{"letter":"B","meaning":"Stomach","askedInThisQuestion":true},{"letter":"C","meaning":"Small intestine","askedInThisQuestion":true},{"letter":"D","meaning":"Large intestine","askedInThisQuestion":true},{"letter":"X","meaning":"Net venation — a stray label belonging to the Q16(a)(v) leaf figure, not part of this diagram","askedInThisQuestion":false},{"letter":"Y","meaning":"Parallel venation — a stray label belonging to the Q16(a)(v) leaf figure, not part of this diagram","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC025GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2025-ol-q6-c-fig", topicId: "bio-2-4", conceptId: "eye-parts-and-functions",
+    section: "A", questionRef: "2025 OL Q6(c)",
+    stem: "The eye is one of the sense organs of the human nervous system.",
+    questionText: "Using information provided on the diagram of the human eye, name the part of the eye that has each of the following functions: (i) Controls the amount of light entering the eye. (ii) Contains receptors that detect light.",
+    tariffModel: {"kind":"orderedSplit","notation":"6(3) + 2"}, totalMarks: 6,
+    rows: [
+    { id: "r-c-i", kind: "point", verbatim: "Iris", marks: null, contextNote: "(i) Controls the amount of light entering the eye. Q6 is marked 6(3) + 2 across its seven response items — the first six correct responses score 3 each and each subsequent one scores 2 — so the scheme prints no per-response value beside the answers; the scheme's own table values two correct responses at 6." },
+    { id: "r-c-ii", kind: "point", verbatim: "Retina", marks: null, contextNote: "(ii) Contains receptors that detect light." },
+    ],
+    figure: {
+          "candId": "biology-2025-OL-paper1-p07-i0",
+          "src": "/exam-figures/biology/markbank/biology-2025-OL-paper1-p07-i0.png",
+          "srcHash": "c11e1e97e9c7f02683d86b900596bc0e",
+          "alt": "Right half: a sectioned human eye in greys — a large sphere with a curved front surface, a white lens just behind the front, a small dark structure above and below the lens, and a short stalk leaving the back-right. Six word labels with leader lines: \"Retina\" (to the outer rear layer), \"Iris\" (to the structure in front beside the lens), \"Lens\" (to the white lens), \"Cornea\" (to the front curved surface), \"Vitreous humour\" (into the large interior), \"Optic nerve\" (to the stalk at the back). Left half is the printed Q6(c) text and the empty answer box for part (i). Complete on all four edges; no letters are used on this diagram.",
+          "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC025GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2025-ol-q10-b-ii-fig", topicId: "bio-u2", conceptId: "germination-control-dish",
+    section: "B", questionRef: "2025 OL Q10(b)(ii)",
+    stem: "Four dishes, A, B, C and D, were set up as shown for an activity on the factors necessary for germination.",
+    questionText: "Which dish (A, B, C or D) represents the control? Justify your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-b-ii-dish", kind: "point", verbatim: "Dish: A", marks: 3 },
+    { id: "r-b-ii-just", kind: "point", verbatim: "Justify: Dish has all three factors necessary for germination", marks: 3 },
+    ],
+    figure: {
+          "candId": "biology-2025-OL-paper1-p11-i0",
+          "src": "/exam-figures/biology/markbank/biology-2025-OL-paper1-p11-i0.png",
+          "srcHash": "e10ef94027719dfb8b358a74cbff57d4",
+          "alt": "Four petri dishes drawn in perspective side by side for the germination activity. Headings above them read \"Dish A: stored at room temperature\", \"Dish B: stored in the refrigerator\", \"Dish C: stored in an anaerobic jar\", \"Dish D: stored at room temperature\". Dishes A, B and C contain a grey shaded mass of cotton wool with a small black seed on it; dish D's cotton wool is drawn unshaded/white. Leader lines below point from \"One seed\" to the seed in dish A, from \"Wet cotton wool\" to the contents of dishes A, B and C, and from \"Dry cotton wool\" to the contents of dish D. Complete on all edges.",
+          "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "D"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"The control dish — it has all three factors necessary for germination","askedInThisQuestion":true},{"letter":"B","meaning":"The dish in which the factor being investigated is temperature","askedInThisQuestion":false},{"letter":"C","meaning":"The dish in the anaerobic jar; the jar removes oxygen from the air","askedInThisQuestion":false},{"letter":"D","meaning":"The other dish where germination is unlikely, because Dish D is lacking water","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC025GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2025-ol-q10-b-iii-v-fig", topicId: "bio-u2", conceptId: "germination-factors-investigated",
+    section: "B", questionRef: "2025 OL Q10(b)(iii)–(v)",
+    stem: "A student drew the following diagram to show how they carried out an activity to investigate the factors that affect germination.",
+    questionText: "(iii) Dish C was placed in an anaerobic jar. What gas does this remove from the air? (iv) Which factor affecting germination is being investigated in dish B? (v) There is unlikely to be germination in dishes B and C. Identify one other dish where germination is unlikely to happen. Justify your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-b-iii", kind: "point", verbatim: "Oxygen", marks: 3, contextNote: "(iii)" },
+    { id: "r-b-iv", kind: "point", verbatim: "Temperature", marks: 3, contextNote: "(iv)" },
+    { id: "r-b-v-dish", kind: "point", verbatim: "Dish: D", marks: 3, contextNote: "(v)" },
+    { id: "r-b-v-just", kind: "point", verbatim: "Justify: Dish D is lacking water.", marks: 3, contextNote: "(v)" },
+    ],
+    figure: {
+          "candId": "biology-2025-OL-paper1-p11-i0",
+          "src": "/exam-figures/biology/markbank/biology-2025-OL-paper1-p11-i0.png",
+          "srcHash": "e10ef94027719dfb8b358a74cbff57d4",
+          "alt": "Four petri dishes drawn in perspective side by side for the germination activity. Headings above them read \"Dish A: stored at room temperature\", \"Dish B: stored in the refrigerator\", \"Dish C: stored in an anaerobic jar\", \"Dish D: stored at room temperature\". Dishes A, B and C contain a grey shaded mass of cotton wool with a small black seed on it; dish D's cotton wool is drawn unshaded/white. Leader lines below point from \"One seed\" to the seed in dish A, from \"Wet cotton wool\" to the contents of dishes A, B and C, and from \"Dry cotton wool\" to the contents of dish D. Complete on all edges.",
+          "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "D"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"The control dish — it has all three factors necessary for germination","askedInThisQuestion":false},{"letter":"B","meaning":"The dish in which the factor being investigated is temperature","askedInThisQuestion":true},{"letter":"C","meaning":"The dish in the anaerobic jar; the jar removes oxygen from the air","askedInThisQuestion":true},{"letter":"D","meaning":"The other dish where germination is unlikely, because Dish D is lacking water","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC025GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2025-ol-q14-b-i-ii-fig", topicId: "bio-2-6", conceptId: "root-vs-stem-transverse-section",
+    section: "C", questionRef: "2025 OL Q14(b)(i)–(ii)",
+    stem: "The diagrams show transverse sections of the plant, labelled 1 and 2.",
+    questionText: "(i) Which diagram, 1 or 2, represents the transverse section of the root? Justify your answer. (ii) Is this plant monocotyledonous or dicotyledonous? Justify your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-b-i-dia", kind: "point", verbatim: "2", marks: 3, contextNote: "(i)" },
+    { id: "r-b-i-just", kind: "point", verbatim: "Justify: There are root hairs present", marks: 3, contextNote: "(i)" },
+    { id: "r-b-ii-type", kind: "point", verbatim: "Dicotyledonous", marks: 3, contextNote: "(ii)" },
+    { id: "r-b-ii-just", kind: "point", verbatim: "Justify: The vascular bundles are arranged in a circle in the stem", marks: 3, contextNote: "(ii)" },
+    ],
+    figure: {
+          "candId": "biology-2025-OL-paper2-p05-i3",
+          "src": "/exam-figures/biology/markbank/biology-2025-OL-paper2-p05-i3.png",
+          "srcHash": "e944b8926846babf14c1ff895228fcfd",
+          "alt": "The complete Q14(b) pair of transverse sections, headed \"1.\" (left) and \"2.\" (right). Section 1 is a line drawing of a circular section with a ring of roughly eighteen dark, striped vascular bundles sitting just inside the outer rim, a rim of small cells and a centre packed with larger pale cells. Section 2 is a photograph-like circular section with an outer layer of cells from which two long hair-like projections extend at the upper right, a broad pale middle zone, and a dense speckled core in the centre. Three labels sit between the sections, each with an arrow to BOTH sections: A points to the outermost cell layer, B points to the pale zone between edge and centre, C points to the dark bundles in section 1 and to the central core in section 2. Complete on all edges.",
+          "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "1",
+                "2",
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"1","meaning":"The transverse section of the stem — its vascular bundles are arranged in a circle","askedInThisQuestion":true},{"letter":"2","meaning":"The transverse section of the root — justified by root hairs being present","askedInThisQuestion":true},{"letter":"A","meaning":"Dermal tissue","askedInThisQuestion":false},{"letter":"B","meaning":"Ground tissue","askedInThisQuestion":false},{"letter":"C","meaning":"Vascular tissue — the tissue that contains xylem and phloem","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC025GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2025-ol-q14-b-iii-fig", topicId: "bio-2-6", conceptId: "plant-tissue-types",
+    section: "C", questionRef: "2025 OL Q14(b)(iii)",
+    stem: "The transverse sections have three tissues labelled A, B and C.",
+    questionText: "Match the tissues labelled A, B and C with the following terms: Ground, Dermal, Vascular.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-b-iii-a", kind: "point", verbatim: "A — Dermal", marks: 3 },
+    { id: "r-b-iii-b", kind: "point", verbatim: "B — Ground", marks: 3 },
+    { id: "r-b-iii-c", kind: "point", verbatim: "C — Vascular", marks: 3 },
+    ],
+    figure: {
+          "candId": "biology-2025-OL-paper2-p05-i3",
+          "src": "/exam-figures/biology/markbank/biology-2025-OL-paper2-p05-i3.png",
+          "srcHash": "e944b8926846babf14c1ff895228fcfd",
+          "alt": "The complete Q14(b) pair of transverse sections, headed \"1.\" (left) and \"2.\" (right). Section 1 is a line drawing of a circular section with a ring of roughly eighteen dark, striped vascular bundles sitting just inside the outer rim, a rim of small cells and a centre packed with larger pale cells. Section 2 is a photograph-like circular section with an outer layer of cells from which two long hair-like projections extend at the upper right, a broad pale middle zone, and a dense speckled core in the centre. Three labels sit between the sections, each with an arrow to BOTH sections: A points to the outermost cell layer, B points to the pale zone between edge and centre, C points to the dark bundles in section 1 and to the central core in section 2. Complete on all edges.",
+          "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "1",
+                "2"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Dermal tissue","askedInThisQuestion":true},{"letter":"B","meaning":"Ground tissue","askedInThisQuestion":true},{"letter":"C","meaning":"Vascular tissue — the tissue that contains xylem and phloem","askedInThisQuestion":true},{"letter":"1","meaning":"The transverse section of the stem — its vascular bundles are arranged in a circle","askedInThisQuestion":false},{"letter":"2","meaning":"The transverse section of the root — justified by root hairs being present","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC025GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2025-ol-q14-c-i3-fig", topicId: "bio-2-5", conceptId: "seed-dispersal-types",
+    section: "C", questionRef: "2025 OL Q14(c)(i)3",
+    stem: "The images A, B and C show three different types of seed dispersal.",
+    questionText: "Match each type of seed dispersal to the following images, A, B and C.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-c-i3-a", kind: "point", verbatim: "A — Water", marks: 3 },
+    { id: "r-c-i3-b", kind: "point", verbatim: "B — Wind", marks: 3 },
+    { id: "r-c-i3-c", kind: "point", verbatim: "C — Animal", marks: 3 },
+    ],
+    figure: {
+          "candId": "biology-2025-OL-paper2-p05-i0",
+          "src": "/exam-figures/biology/markbank/biology-2025-OL-paper2-p05-i0.png",
+          "srcHash": "151dd209de724c0af316f97f19eb3bd3",
+          "alt": "Three greyscale photographs in a row, each with a bold white letter in its lower-left corner. A: a large hard-shelled seed/nut floating at the waterline in front of dense vegetation, with the submerged view below the surface. B: a dandelion seed head with its plumed seeds streaming off to the left. C: a small perched bird holding a pale round berry in its beak. The photographs and all three letters are complete; the only clipped element is the last line of the question text along the very top edge (\"...following images, A, B and C.\"), whose letters are sliced.",
+          "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Water","askedInThisQuestion":true},{"letter":"B","meaning":"Wind","askedInThisQuestion":true},{"letter":"C","meaning":"Animal","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC025GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2021-ol-q7-d-fig", topicId: "bio-2-4", conceptId: "femur-location-on-skeleton",
+    section: "A", questionRef: "2021 OL Q7(d)",
+    stem: "The diagram shows the structure of a human skeleton.",
+    questionText: "Place an F on the diagram to show the femur.",
+    tariffModel: {"kind":"orderedSplit","notation":"2(6) + 3(2) + 2(1)"}, totalMarks: 20,
+    rows: [
+    { id: "r-d", kind: "point", verbatim: "F located on either long bone in the upper leg (thigh)", marks: null },
+    ],
+    figure: {
+          "candId": "biology-2021-OL-paper1-p07-i0",
+          "src": "/exam-figures/biology/markbank/biology-2021-OL-paper1-p07-i0.png",
+          "srcHash": "cf5412cf15f6736acaee93fbefa034b2",
+          "alt": "A page crop combining the Q7 question text (left column) with a grey photo-realistic rendering of a complete human skeleton, front view, arms held slightly out from the body. The only mark printed on the skeleton is the word \"Skull\" at the top right with a short arrow pointing down-left to the cranium. Skull, ribcage, pelvis, both arms with full hands and both legs with full feet are all inside the frame. IMPORTANT: no letters are pre-printed on the skeleton — the visible text asks the candidate to \"Place an X\" (synovial joint) and \"Place an F\" (femur) themselves, so this figure must never be captioned as already carrying X or F. Empty ruled answer boxes for parts (a), (c) and (e) are part of the crop. The last text line, \"Name of disorder:\", and its grey answer box are sliced through at the bottom edge; the skeleton itself is not cut.",
+          "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC025GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2023-ol-q12-b-ii-iv-fig", topicId: "bio-1-4", conceptId: "eye-colour-genotype-and-phenotype",
+    section: "C", questionRef: "2023 OL Q12(b)(ii)–(iv)",
+    stem: "Part (b) opens: 'In humans, the allele for brown eyes (B) is dominant to the allele for blue eyes (b).' Beside the question the paper prints two eye drawings, captioned 'Blue eye' and 'Brown eye'.",
+    questionText: "Jack’s genotype is Bb. What colour are Jack’s eyes? Which of the following terms describes Jack’s genotype? homozygous; heterozygous. Sarah has blue eyes. Write out Sarah’s genotype for eye colour.",
+    tariffModel: {"kind":"orderedSplit","notation":"3(5) + 6(2)"}, totalMarks: 15,
+    rows: [
+    { id: "r-jack-colour", kind: "point", verbatim: "Brown", marks: null },
+    { id: "r-jack-genotype", kind: "point", verbatim: "Heterozygous", marks: null },
+    { id: "r-sarah-genotype", kind: "point", verbatim: "bb", marks: null },
+    ],
+    figure: {
+          "candId": "biology-2023-OL-paper2-p03-i0",
+          "src": "/exam-figures/biology/markbank/biology-2023-OL-paper2-p03-i0.png",
+          "srcHash": "930f322900300cbb56d14e77c18f1b97",
+          "alt": "Two separate drawings of a single human eye, side by side, each with brow, lids, lashes and iris, captioned in text beneath: 'Blue eye' on the left and 'Brown eye' on the right. They are not the same drawing mirrored — the left eye has a thin arched brow, heavy eyeliner and long lashes with a pale, light-grey iris; the right eye has a thick solid-black brow, a heavier lid fold and a distinctly darker mid-grey iris. Both are reproduced in greyscale, so the actual colours cannot be seen; only the printed captions (and the lighter vs darker iris) distinguish them.",
+          "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "Brown eye",
+                "Blue eye"
+          ]
+    },
+    labelKey: [{"letter":"Brown eye","meaning":"Brown eyes — the phenotype of the dominant allele B; the scheme's answer for Jack's eye colour is 'Brown'","askedInThisQuestion":true},{"letter":"Blue eye","meaning":"Blue eyes — the recessive phenotype Sarah shows; the scheme gives her genotype as 'bb'","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC025GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2023-ol-q12-b-v-vi-fig", topicId: "bio-1-4", conceptId: "eye-colour-gametes-and-offspring-phenotypes",
+    section: "C", questionRef: "2023 OL Q12(b)(v)–(vi)",
+    stem: "Part (b) opens: 'In humans, the allele for brown eyes (B) is dominant to the allele for blue eyes (b).' Earlier parts give Jack’s genotype as Bb and tell you Sarah has blue eyes. Beside the question the paper prints two eye drawings, captioned 'Blue eye' and 'Brown eye'.",
+    questionText: "Give the genotypes of the two possible gametes that Jack can produce. If Sarah and Jack were to have children, write out the two phenotypes of their possible offspring.",
+    tariffModel: {"kind":"orderedSplit","notation":"3(5) + 6(2)"}, totalMarks: 17,
+    rows: [
+    { id: "r-gamete-b-upper", kind: "point", verbatim: "B", marks: null, contextNote: "The scheme lists the two gametes on separate lines, so B and b are two separate responses on the mark table." },
+    { id: "r-gamete-b-lower", kind: "point", verbatim: "b", marks: null },
+    { id: "r-offspring-brown", kind: "point", verbatim: "Brown eyes", marks: null },
+    { id: "r-offspring-blue", kind: "point", verbatim: "Blue eyes", marks: null },
+    ],
+    figure: {
+          "candId": "biology-2023-OL-paper2-p03-i0",
+          "src": "/exam-figures/biology/markbank/biology-2023-OL-paper2-p03-i0.png",
+          "srcHash": "930f322900300cbb56d14e77c18f1b97",
+          "alt": "Two separate drawings of a single human eye, side by side, each with brow, lids, lashes and iris, captioned in text beneath: 'Blue eye' on the left and 'Brown eye' on the right. They are not the same drawing mirrored — the left eye has a thin arched brow, heavy eyeliner and long lashes with a pale, light-grey iris; the right eye has a thick solid-black brow, a heavier lid fold and a distinctly darker mid-grey iris. Both are reproduced in greyscale, so the actual colours cannot be seen; only the printed captions (and the lighter vs darker iris) distinguish them.",
+          "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "Brown eye",
+                "Blue eye"
+          ]
+    },
+    labelKey: [{"letter":"Brown eye","meaning":"Brown eyes — the phenotype of the dominant allele B; one of the two offspring phenotypes in the scheme's answer to (vi)","askedInThisQuestion":true},{"letter":"Blue eye","meaning":"Blue eyes — the recessive phenotype (genotype bb); the other offspring phenotype in the scheme's answer to (vi)","askedInThisQuestion":true}],
   } as SecCard,
 ];

@@ -8331,4 +8331,296 @@ export const CARDS: SecCard[] = [
     },
     labelKey: [{"letter":"A","meaning":"Capillary","askedInThisQuestion":false},{"letter":"B","meaning":"Alveolus","askedInThisQuestion":false},{"letter":"C","meaning":"Red blood cell","askedInThisQuestion":false},{"letter":"X","meaning":"Carbon dioxide (CO2)","askedInThisQuestion":true},{"letter":"Y","meaning":"Oxygen (O2)","askedInThisQuestion":true}],
   } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2021, level: "higher",
+    paperFileid: "LC025ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Higher Level — © State Examinations Commission.",
+    id: "bio-2021-hl-q4-a-fig", topicId: "bio-2-1", conceptId: "substrate-and-enzyme-substrate-complex",
+    section: "A", questionRef: "2021 HL Q4(a)",
+    stem: "A current theory of enzyme action is illustrated in the diagram below.",
+    questionText: "Identify what is represented by each of the labels A and B.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-a", kind: "point", verbatim: "A — Substrate", marks: 3 },
+    { id: "r-b", kind: "point", verbatim: "B — Enzyme-substrate complex", marks: 3 },
+    ],
+    figure: {
+          "candId": "biology-2021-HL-paper1-p06-i0",
+          "src": "/exam-figures/biology/markbank/biology-2021-HL-paper1-p06-i0.png",
+          "srcHash": "1ce5111272ce60af67fbe744abbb43e6",
+          "alt": "Three-panel enzyme-action cartoon read left to right with arrows between panels. Panel 1: a large pale-grey C-shaped molecule with a notched cleft, labelled by an arrow from the word 'Enzyme', and a small darker-grey lumpy molecule beside the cleft marked A. Panel 2: the small molecule is now seated inside the cleft, and a square bracket spanning the whole combined shape is labelled B. Panel 3: the large molecule alone with its cleft empty, and two separate darker-grey fragments to its right, both picked out by lines from a single label C. This is the clean, complete crop of the figure.",
+          "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Substrate","askedInThisQuestion":true},{"letter":"B","meaning":"Enzyme-substrate complex","askedInThisQuestion":true},{"letter":"C","meaning":"Not named anywhere in the marking scheme — the scheme gives no answer for label C","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2021, level: "higher",
+    paperFileid: "LC025ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Higher Level — © State Examinations Commission.",
+    id: "bio-2021-hl-q4-b-fig", topicId: "bio-2-1", conceptId: "theory-of-enzyme-action",
+    section: "A", questionRef: "2021 HL Q4(b)",
+    stem: "A current theory of enzyme action is illustrated in the diagram below.",
+    questionText: "Which theory of enzyme action is illustrated by the diagram?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Induced fit or active site (theory)", marks: 3, accepts: ["lock and key"], contextNote: "The scheme adds: (Accept ‘lock and key’)." },
+    ],
+    figure: {
+          "candId": "biology-2021-HL-paper1-p06-i0",
+          "src": "/exam-figures/biology/markbank/biology-2021-HL-paper1-p06-i0.png",
+          "srcHash": "1ce5111272ce60af67fbe744abbb43e6",
+          "alt": "Three-panel enzyme-action cartoon read left to right with arrows between panels. Panel 1: a large pale-grey C-shaped molecule with a notched cleft, labelled by an arrow from the word 'Enzyme', and a small darker-grey lumpy molecule beside the cleft marked A. Panel 2: the small molecule is now seated inside the cleft, and a square bracket spanning the whole combined shape is labelled B. Panel 3: the large molecule alone with its cleft empty, and two separate darker-grey fragments to its right, both picked out by lines from a single label C. This is the clean, complete crop of the figure.",
+          "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Substrate","askedInThisQuestion":false},{"letter":"B","meaning":"Enzyme-substrate complex","askedInThisQuestion":false},{"letter":"C","meaning":"Not named anywhere in the marking scheme — the scheme gives no answer for label C","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2021, level: "higher",
+    paperFileid: "LC025ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Higher Level — © State Examinations Commission.",
+    id: "bio-2021-hl-q4-c-fig", topicId: "bio-2-1", conceptId: "catabolic-reaction-type",
+    section: "A", questionRef: "2021 HL Q4(c)",
+    stem: "A current theory of enzyme action is illustrated in the diagram below.",
+    questionText: "What type of metabolic reaction is illustrated by the diagram?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Catabolic", marks: 3 },
+    ],
+    figure: {
+          "candId": "biology-2021-HL-paper1-p06-i0",
+          "src": "/exam-figures/biology/markbank/biology-2021-HL-paper1-p06-i0.png",
+          "srcHash": "1ce5111272ce60af67fbe744abbb43e6",
+          "alt": "Three-panel enzyme-action cartoon read left to right with arrows between panels. Panel 1: a large pale-grey C-shaped molecule with a notched cleft, labelled by an arrow from the word 'Enzyme', and a small darker-grey lumpy molecule beside the cleft marked A. Panel 2: the small molecule is now seated inside the cleft, and a square bracket spanning the whole combined shape is labelled B. Panel 3: the large molecule alone with its cleft empty, and two separate darker-grey fragments to its right, both picked out by lines from a single label C. This is the clean, complete crop of the figure.",
+          "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Substrate","askedInThisQuestion":false},{"letter":"B","meaning":"Enzyme-substrate complex","askedInThisQuestion":false},{"letter":"C","meaning":"Not named anywhere in the marking scheme — the scheme gives no answer for label C","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2021, level: "higher",
+    paperFileid: "LC025ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Higher Level — © State Examinations Commission.",
+    id: "bio-2021-hl-q4-d-fig", topicId: "bio-2-1", conceptId: "catabolic-reaction-justification",
+    section: "A", questionRef: "2021 HL Q4(d)",
+    stem: "A current theory of enzyme action is illustrated in the diagram below. At part (c) you named the type of metabolic reaction illustrated.",
+    questionText: "Justify your answer at part (c) above.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Substrate (or molecule or A) broken down", marks: 3, contextNote: "The scheme accepts the diagram's letter A in place of the word substrate." },
+    ],
+    figure: {
+          "candId": "biology-2021-HL-paper1-p06-i0",
+          "src": "/exam-figures/biology/markbank/biology-2021-HL-paper1-p06-i0.png",
+          "srcHash": "1ce5111272ce60af67fbe744abbb43e6",
+          "alt": "Three-panel enzyme-action cartoon read left to right with arrows between panels. Panel 1: a large pale-grey C-shaped molecule with a notched cleft, labelled by an arrow from the word 'Enzyme', and a small darker-grey lumpy molecule beside the cleft marked A. Panel 2: the small molecule is now seated inside the cleft, and a square bracket spanning the whole combined shape is labelled B. Panel 3: the large molecule alone with its cleft empty, and two separate darker-grey fragments to its right, both picked out by lines from a single label C. This is the clean, complete crop of the figure.",
+          "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Substrate","askedInThisQuestion":true},{"letter":"B","meaning":"Enzyme-substrate complex","askedInThisQuestion":false},{"letter":"C","meaning":"Not named anywhere in the marking scheme — the scheme gives no answer for label C","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2023, level: "higher",
+    paperFileid: "LC025ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Higher Level — © State Examinations Commission.",
+    id: "bio-2023-hl-q8-b-i-fig", topicId: "bio-3-1", conceptId: "pooter-tullgren-funnel-identify-and-use",
+    section: "B", questionRef: "2023 HL Q8(b)(i)",
+    stem: "The diagrams show two pieces of animal collection apparatus. On the left-hand apparatus the two tubes are labelled A and B.",
+    questionText: "Identify the following animal collection apparatus and describe how they would be used to collect animals.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-app1", kind: "point", verbatim: "Left apparatus — Pooter", marks: 3, contextNote: "Q8(b)(i)–(ii) share one 8(3) allocation: every correct response is worth 3 marks, and the scheme prints 3 beside each of the four responses in (b)(i)." },
+    { id: "r-use1", kind: "point", verbatim: "Left apparatus, how used — Suck through A and animal enters through B.", marks: 3 },
+    { id: "r-app2", kind: "point", verbatim: "Right apparatus — Tullgren funnel", marks: 3 },
+    { id: "r-use2", kind: "alt", verbatim: "Right apparatus, how used — Heat (or warmth or light) causes animals to move downwards", marks: 3, accepts: ["Heat causes animals to move downwards","Warmth causes animals to move downwards","Light causes animals to move downwards"] },
+    ],
+    figure: {
+          "candId": "biology-2023-HL-paper1-p10-i0",
+          "src": "/exam-figures/biology/markbank/biology-2023-HL-paper1-p10-i0.png",
+          "srcHash": "1dfc3f430b7d34ac1a3b9c354cc02baa",
+          "alt": "Two apparatus drawings side by side. LEFT: a pooter — a clear jar closed by a dark stopper through which two bent glass tubes pass; the upward-bent tube on the left is labelled \"Tube A\", the taller tube on the right is labelled \"Tube B\", and a dashed mesh across the lower end of one tube inside the jar is labelled \"Gauze filter\". RIGHT: a Tullgren funnel — a light bulb hanging inside a hood over a funnel clamped to a retort stand, with a mound of soil labelled \"Soil\" resting on a dashed mesh inside the funnel and a small beaker beneath the funnel stem. Below both drawings is a two-column answer table with the rows \"Apparatus:\" and \"How used:\" for each apparatus. Both drawings and both letter labels are complete; the question line above is sliced at the top edge and the bottom rule of the answer table is sliced at the bottom edge.",
+          "attribution": "SEC Leaving Certificate Biology 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"The tube of the pooter that is sucked through","askedInThisQuestion":true},{"letter":"B","meaning":"The tube of the pooter through which the animal enters","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2023, level: "higher",
+    paperFileid: "LC025ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Higher Level — © State Examinations Commission.",
+    id: "bio-2023-hl-q15-c-ii-fig", topicId: "bio-2-5", conceptId: "menstrual-cycle-hormone-graph-oestrogen-progesterone",
+    section: "C", questionRef: "2023 HL Q15(c)(ii)",
+    stem: "The graphs show the levels of female reproductive hormones (A and B) in the blood at various stages during one typical menstrual cycle. These hormones are released by the female reproductive system.",
+    questionText: "Name each of the hormones A and B.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-a", kind: "gate", verbatim: "A — Oestrogen", marks: 3, contextNote: "Asterisked in the scheme (*Oestrogen): only the exact term earns the mark, and adding an incorrect alternative cancels it. Q15(c)(i)–(vii) share one 8(3) allocation, with 3 printed beside each of A and B.", exactTermRequired: true },
+    { id: "r-b", kind: "gate", verbatim: "B — Progesterone", marks: 3, exactTermRequired: true },
+    ],
+    figure: {
+          "candId": "biology-2023-HL-paper2-p06-i0",
+          "src": "/exam-figures/biology/markbank/biology-2023-HL-paper2-p06-i0.png",
+          "srcHash": "b835fb5b42dd92d3d9bff0739b958052",
+          "alt": "A two-curve line graph of hormone levels through one menstrual cycle. The y-axis reads \"Levels in the blood\" with no numerical scale; the x-axis reads \"Days\" and is marked at 1, 5 and 14, with a dotted vertical line rising from day 14. A legend at the right pairs the letter A with a grey dashed line and the letter B with a solid black line. Curve A starts at a low-moderate level, rises to a sharp peak just before day 14, dips at day 14, then rises to a second broader peak in the second half of the cycle before falling. Curve B stays flat and near-zero until day 14, then climbs to a tall rounded peak after day 14 and drops steeply at the end of the cycle. Both letters are fully readable and the whole graph is inside the crop.",
+          "attribution": "SEC Leaving Certificate Biology 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Oestrogen","askedInThisQuestion":true},{"letter":"B","meaning":"Progesterone","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2025, level: "higher",
+    paperFileid: "LC025ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Higher Level — © State Examinations Commission.",
+    id: "bio-2025-hl-q5-c-fig", topicId: "bio-3-2", conceptId: "microbial-growth-curve-stages",
+    section: "A", questionRef: "2025 HL Q5(c)",
+    stem: "The graph shows the growth of a population of bacteria in the piece of equipment shown.",
+    questionText: "Name the two stages X and Y on the population growth curve.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-x", kind: "point", verbatim: "Stage X — Log", marks: 3 },
+    { id: "r-y", kind: "point", verbatim: "Stage Y — Stationary", marks: 3 },
+    ],
+    figure: {
+          "candId": "biology-2025-HL-paper1-p07-i0",
+          "src": "/exam-figures/biology/markbank/biology-2025-HL-paper1-p07-i0.png",
+          "srcHash": "cee8f982ddb77929629f289ac3acb72f",
+          "alt": "Two images side by side. Left: a greyscale photograph of a large industrial stainless-steel fermentation vessel mounted on a wheeled frame, with pipework, valves, pressure gauges, a stirrer head on top and a control box on the side. Right: a hand-drawn line graph with a vertical axis labelled 'Population' and a horizontal axis labelled 'Time' (both with arrowheads, no scale numbers); the curve runs flat, then rises steeply, then flattens into a long plateau. X sits immediately to the left of the steep rising section; Y sits just above the start of the plateau.",
+          "attribution": "SEC Leaving Certificate Biology 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "X",
+                "Y"
+          ]
+    },
+    labelKey: [{"letter":"X","meaning":"Log stage of the population growth curve","askedInThisQuestion":true},{"letter":"Y","meaning":"Stationary stage of the population growth curve","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2025, level: "higher",
+    paperFileid: "LC025ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Higher Level — © State Examinations Commission.",
+    id: "bio-2025-hl-q5-d-fig", topicId: "bio-3-2", conceptId: "continuous-food-processing",
+    section: "A", questionRef: "2025 HL Q5(d)",
+    stem: "The image shows a piece of equipment that may be used in food processing. The graph shows the population growth curve of a species of bacteria in the piece of equipment shown. The piece of equipment is keeping the population of bacteria steady in growth phase Y.",
+    questionText: "Which type of food processing technique is represented by the growth curve shown?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-technique", kind: "point", verbatim: "Continuous", marks: 3 },
+    ],
+    figure: {
+          "candId": "biology-2025-HL-paper1-p07-i0",
+          "src": "/exam-figures/biology/markbank/biology-2025-HL-paper1-p07-i0.png",
+          "srcHash": "cee8f982ddb77929629f289ac3acb72f",
+          "alt": "Two images side by side. Left: a greyscale photograph of a large industrial stainless-steel fermentation vessel mounted on a wheeled frame, with pipework, valves, pressure gauges, a stirrer head on top and a control box on the side. Right: a hand-drawn line graph with a vertical axis labelled 'Population' and a horizontal axis labelled 'Time' (both with arrowheads, no scale numbers); the curve runs flat, then rises steeply, then flattens into a long plateau. X sits immediately to the left of the steep rising section; Y sits just above the start of the plateau.",
+          "attribution": "SEC Leaving Certificate Biology 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "X",
+                "Y"
+          ]
+    },
+    labelKey: [{"letter":"X","meaning":"Log stage of the population growth curve","askedInThisQuestion":false},{"letter":"Y","meaning":"Stationary stage of the population growth curve","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2025, level: "higher",
+    paperFileid: "LC025ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Higher Level — © State Examinations Commission.",
+    id: "bio-2025-hl-q16-a-i-ii-fig", topicId: "bio-3-2", conceptId: "rhizopus-structures",
+    section: "C", questionRef: "2025 HL Q16(a)(i)–(ii)",
+    stem: "The diagram shows Rhizopus.",
+    questionText: "(i) Name the structures A, B and C. (ii) Give one function of structure C.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "g-a", kind: "gate", verbatim: "(i) A — Sporangium", marks: 1, contextNote: "Asterisked in the scheme (*Sporangium): the exact term is required and each asterisked item stands or falls alone.", exactTermRequired: true },
+    { id: "g-b", kind: "gate", verbatim: "(i) B — Spore", marks: 1, exactTermRequired: true },
+    { id: "g-c", kind: "gate", verbatim: "(i) C — Stolon", marks: 1, exactTermRequired: true },
+    { id: "r-c-function", kind: "point", verbatim: "(ii) — Spread the fungus", marks: 3 },
+    ],
+    figure: {
+          "candId": "biology-2025-HL-paper2-p07-i1",
+          "src": "/exam-figures/biology/markbank/biology-2025-HL-paper2-p07-i1.png",
+          "srcHash": "f4b9de030666f00fc4e7ce2e4c113484",
+          "alt": "A fungus drawing at the right of the crop, with the Q16(a) text on the left. A solid grey slab across the bottom represents the substrate; branching root-like threads spread over and down into it at two anchor points. From each anchor point rise several pale upright stalks, most tipped by a solid dark grey ball. At the far right one stalk ends in a splayed open tip from which about fifteen small dark dots are scattering into the air. A running horizontal thread links the left-hand anchor point to the right-hand one across the top of the slab. A has an arrow to one of the dark balls on a stalk; B has an arrow pointing down into the scattered dots; C has a short arrow to the horizontal thread joining the two anchor points. The '(30, 30)' line at the top of the crop is sliced; the drawing and all three letters are complete.",
+          "attribution": "SEC Leaving Certificate Biology 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Sporangium","askedInThisQuestion":true},{"letter":"B","meaning":"Spore","askedInThisQuestion":true},{"letter":"C","meaning":"Stolon","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC025ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Higher Level — © State Examinations Commission.",
+    id: "bio-2022-hl-q4-a-fig", topicId: "bio-1-3", conceptId: "light-microscope-resolution-limit",
+    section: "A", questionRef: "2022 HL Q4(a)",
+    stem: "The image shows a transverse section through a mitochondrion, produced using a transmission electron microscope.",
+    questionText: "Explain why the image above cannot be produced using a light microscope.",
+    tariffModel: {"kind":"orderedSplit","notation":"6(3) + 2"}, totalMarks: 3,
+    rows: [
+    { id: "r-a", kind: "point", verbatim: "(Mitochondria) are too small (to be seen using a light microscope).", marks: null, accepts: ["are too small","too small to be seen using a light microscope"], contextNote: "Question 4 is marked 6(3) + 2 across the seven responses in parts (a)–(d): the first six correct responses score 3 each and the seventh scores 2, so no guaranteed per-part value exists. The scheme's table awards 3 marks for one correct response." },
+    ],
+    figure: {
+          "candId": "biology-2022-HL-paper1-p06-i0",
+          "src": "/exam-figures/biology/markbank/biology-2022-HL-paper1-p06-i0.png",
+          "srcHash": "38b203a4ab244345748e5b6fc408e274",
+          "alt": "A greyscale transmission electron micrograph of a single mitochondrion in transverse section: an elongated capsule-shaped organelle with a distinct double outer boundary and many closely spaced finger-like inner folds (cristae) running in from the long edges, with scattered small dark granules in the matrix. Around it, stacked parallel membranes run across the top-right corner and two very dark rounded bodies sit at the bottom-left. The micrograph carries no labels or letters. The line \"transmission electron microscope.\" sits above it and \"(a) Explain why the image above cannot be produced using a light microscope.\" is sliced through its descenders at the bottom edge; the micrograph itself is complete.",
+          "attribution": "SEC Leaving Certificate Biology 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC025ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Higher Level — © State Examinations Commission.",
+    id: "bio-2024-hl-q16-c-v-fig", topicId: "bio-2-4", conceptId: "plant-tropism-mechanism",
+    section: "C", questionRef: "2024 HL Q16(c)(v)",
+    stem: "The photograph shows a plant growing towards light.",
+    questionText: "Describe the mechanism of any one plant growth response to an external stimulus.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-unequal", kind: "point", verbatim: "Unequal distribution of growth regulator", marks: 3, contextNote: "The scheme awards \"Any three 3(3)\" (9 marks) here from five printed points: \"Where regulator produced / Movement of regulator / Unequal distribution of growth regulator / How growth affected / Result on growth\". This is the only one of the five that states biology — the other four name the slot the examiner wants filled rather than the answer itself, so they are not carded (same treatment the deck already gives the slot-style point in 2024 HL Q8(b))." },
+    ],
+    figure: {
+          "candId": "biology-2024-HL-paper2-p08-i0",
+          "src": "/exam-figures/biology/markbank/biology-2024-HL-paper2-p08-i0.png",
+          "srcHash": "74880e156b82479c1a688776db5f8dbd",
+          "alt": "A black-and-white photograph of a young seedling in a black square plastic pot on a plain pale surface. The stem emerges vertically from the soil then bends sharply to the left, carrying its two broad heart-shaped leaves round to face a bright disc-shaped lamp/reflector standing at the left edge of the frame — i.e. the shoot has curved towards the light. Alongside is the question text for 16(c) (name the growth response to light, how it benefits plants, name another growth response, growth regulators). The photograph is complete; only the last line of question text is clipped.",
+          "attribution": "SEC Leaving Certificate Biology 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
 ];
