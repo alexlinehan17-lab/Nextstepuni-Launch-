@@ -27,8 +27,8 @@ import {
 } from './scheduler';
 import { SUBJECTS, builtDecks, cardsForTopic, deckSize, loadCards, strandsFor, topicMarks, type Level } from './deck';
 import {
-  commitReview, ensureDeck, fetchDeck, mergeDecks, readLocal, writeLocal,
-  type DeckState,
+  commitReview, ensureDeck, fetchDeck, mergeDecks, readChoice, readLocal,
+  writeChoice, writeLocal, type DeckState,
 } from './store';
 import type { SecCard } from '../../types/markBank';
 
@@ -39,18 +39,29 @@ const INK_2 = '#3a3530';
 const MUTED = '#7a7068';
 const LABEL = '#9e9186';
 const MUTED_BORDER = '#d0cdc8';
-const PLATE = '#F0FAF8';
 const SUCCESS = '#3A8D5F';
-const SUCCESS_TINT = '#E8F2EC';
 const SUCCESS_TEXT = '#1F5F3E';
 
 const SERIF = "'Source Serif 4', Georgia, serif";
 const SANS = "'DM Sans', system-ui, sans-serif";
 const MONO = "'Roboto Mono', ui-monospace, monospace";
 
+/** Accent means "this is the action / do this now". Never "correct". */
+const ACCENT = '#F26B1F';
+const HAIRLINE = '#ece9e4';
+
+/* One work surface for the whole tool, at every window width above the split.
+   280 rail + 32 gutter + 780 list. It never grows: at 1920px the margins are
+   414px and that is correct — filling a wide window with rails is the instinct
+   that produced the layout this replaces. */
+const SURFACE = 1092;
+const RAIL = 280;
+const GUTTER = 32;
+const LIST = 780;
+const TWO_PANE = 1200;
+
 type Screen =
-  | { name: 'bank' }
-  | { name: 'topics' }
+  | { name: 'board' }
   | { name: 'session'; cards: SecCard[]; topicId?: string }
   | { name: 'close'; results: SessionCardResult[]; topicId?: string };
 
@@ -112,6 +123,21 @@ const Segment: React.FC<{
   </div>
 );
 
+/** Rail-plus-list above this, single column below. Same threshold as the review
+ *  screen's split, so the tool changes shape once rather than twice. */
+const useWide = () => {
+  const [wide, setWide] = useState(
+    () => typeof window !== 'undefined' && window.matchMedia(`(min-width: ${TWO_PANE}px)`).matches,
+  );
+  useEffect(() => {
+    const mq = window.matchMedia(`(min-width: ${TWO_PANE}px)`);
+    const onChange = (e: MediaQueryListEvent) => setWide(e.matches);
+    mq.addEventListener('change', onChange);
+    return () => mq.removeEventListener('change', onChange);
+  }, []);
+  return wide;
+};
+
 /** Three-zone bar: secure, met-but-fading, not yet met. Never a percentage. */
 const MarkBar: React.FC<{ secure: number; met: number; total: number }> = ({ secure, met, total }) => {
   const pct = (n: number) => (total > 0 ? Math.min(100, (n / total) * 100) : 0);
@@ -126,14 +152,27 @@ const MarkBar: React.FC<{ secure: number; met: number; total: number }> = ({ sec
 /* ------------------------------------------------------------------ tool ---- */
 
 const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
-  const [subjectId, setSubjectId] = useState<string>(SUBJECTS[0].id);
-  const [level, setLevel] = useState<Level>('higher');
+  /* Read synchronously on mount. A Chemistry Ordinary student must never watch
+     the tool open on Biology Higher and correct it — that is two clicks every
+     session, forever. */
+  const saved = useMemo(() => readChoice(uid), [uid]);
+  const [subjectId, setSubjectId] = useState<string>(saved?.subjectId ?? SUBJECTS[0].id);
+  const [level, setLevel] = useState<Level>(saved?.level ?? 'higher');
+  const chooseSubject = useCallback((id: string) => {
+    setSubjectId(id);
+    writeChoice(uid, { subjectId: id, level });
+  }, [uid, level]);
+  const chooseLevel = useCallback((l: Level) => {
+    setLevel(l);
+    writeChoice(uid, { subjectId, level: l });
+  }, [uid, subjectId]);
+  const wide = useWide();
   const subject = SUBJECTS.find(s => s.id === subjectId) ?? SUBJECTS[0];
   // One deck per subject AND level, so a student's Biology work is untouched by
   // anything they do in Chemistry, and dropping a level never disturbs either.
   const deckId = `${subjectId}-${level}`;
   const [deck, setDeck] = useState<DeckState>(() => readLocal(uid, deckId));
-  const [screen, setScreen] = useState<Screen>({ name: 'bank' });
+  const [screen, setScreen] = useState<Screen>({ name: 'board' });
   const [loaded, setLoaded] = useState(false);
 
   // Seed FRESH from Firestore on mount — never from the app-start progress
@@ -184,7 +223,6 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
     }).map(c => c.id),
     [cards, memories, retention, now],
   );
-  const unmet = cards.filter(c => !memories[c.id]?.last);
 
   /**
    * Marks on cards the scheduler predicts the student would still recall
@@ -203,8 +241,6 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
 
   const marksMet = useCallback((subset: SecCard[]) =>
     subset.reduce((n, c) => (memories[c.id]?.last ? n + c.totalMarks : n), 0), [memories]);
-
-  const totalMarks = cards.reduce((n, c) => n + c.totalMarks, 0);
   const examYears = useMemo(() => {
     const years = [...new Set(cards.map(c => c.year))].sort();
     if (!years.length) return '';
@@ -245,7 +281,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
         cards={screen.cards}
         subjectLabel={subject.title}
         onGrade={handleGrade}
-        onExit={() => setScreen({ name: 'topics' })}
+        onExit={() => setScreen({ name: 'board' })}
         onFinish={results => setScreen({ name: 'close', results, topicId: screen.topicId })}
       />
     );
@@ -295,7 +331,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
           <div style={{ display: 'flex', flexDirection: 'column', gap: 9, marginTop: 20 }}>
             <button
               type="button"
-              onClick={() => { setScreen({ name: 'bank' }); }}
+              onClick={() => { setScreen({ name: 'board' }); }}
               style={{
                 padding: '13px 20px', borderRadius: 100, border: 'none', cursor: 'pointer',
                 background: '#F26B1F', color: '#fff', font: `600 15px/1 ${SANS}`,
@@ -321,258 +357,234 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
     );
   }
 
-  /* ------------------------------------------------------------- topics ---- */
+  /* -------------------------------------------------------------- board ---- */
 
-  if (screen.name === 'topics') {
-    return (
-      <div style={{ minHeight: '100dvh', fontFamily: SANS }}>
-        <div style={{ padding: '20px 16px 4px' }}>
-          <div style={{ maxWidth: 560, margin: '0 auto' }}>
-            <button
-              type="button" onClick={() => setScreen({ name: 'bank' })}
-              style={{ background: 'none', border: 'none', padding: 0, color: MUTED, font: `600 12.5px/1 ${SANS}`, cursor: 'pointer' }}
-            >
-              ‹ The Bank
-            </button>
-            <h2 style={{ font: `700 26px/1.15 ${SERIF}`, color: INK, margin: '12px 0 4px' }}>{subject.title}</h2>
-            <Eyebrow>
-              {level === 'higher' ? 'Higher level' : 'Ordinary level'} · redeveloped specification
-            </Eyebrow>
-          </div>
-        </div>
-
-        <div style={{ maxWidth: 560, margin: '0 auto', padding: '20px 16px 60px' }}>
-          {strandsFor(subjectId).map(strand => (
-            <section key={strand.id} style={{ marginBottom: 26 }}>
-              <div style={{ marginBottom: 10 }}>
-                <Eyebrow>{strand.label}</Eyebrow>
-                <h3 style={{ font: `600 16px/1.25 ${SERIF}`, color: INK, margin: '3px 0 0' }}>{strand.title}</h3>
-              </div>
-
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-                {strand.topics.map(topic => {
-                  const topicCards = cardsForTopic(topic.id, cards);
-                  const total = topicMarks(topic.id, cards);
-                  const built = topicCards.length > 0;
-                  const due = topicCards.filter(c => {
-                    const m = memories[c.id];
-                    return m?.last ? isDue(c.id, m, now(), retention) : false;
-                  }).length;
-                  const secure = marksSecure(topicCards);
-                  const met = marksMet(topicCards);
-
-                  return (
-                    <button
-                      key={topic.id}
-                      type="button"
-                      disabled={!built}
-                      onClick={() => startSession(topic.id)}
-                      style={{
-                        textAlign: 'left', width: '100%', cursor: built ? 'pointer' : 'default',
-                        background: '#fff', borderRadius: 14, padding: '13px 15px',
-                        border: `2px solid ${built ? INK : MUTED_BORDER}`,
-                        opacity: built ? 1 : 0.7,
-                      }}
-                    >
-                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 10 }}>
-                        <span style={{ font: `600 14.5px/1.3 ${SANS}`, color: built ? INK : MUTED }}>
-                          <span style={{ font: `700 11px/1 ${MONO}`, color: LABEL, marginRight: 7 }}>{topic.code}</span>
-                          {topic.title}
-                        </span>
-                        {due > 0 && (
-                          <span style={{
-                            font: `700 10.5px/1.7 ${MONO}`, background: SUCCESS_TINT, color: SUCCESS_TEXT,
-                            borderRadius: 6, padding: '0 7px', whiteSpace: 'nowrap',
-                          }}>{due} due</span>
-                        )}
-                      </div>
-
-                      {built ? (
-                        <>
-                          <p style={{ margin: '8px 0 6px', font: `400 12px/1.4 ${SANS}`, color: MUTED }}>
-                            {met === 0
-                              ? `${topicCards.length} ${topicCards.length === 1 ? 'card' : 'cards'} · none met yet`
-                              : `${secure} of ${total} marks secure`}
-                          </p>
-                          <MarkBar secure={secure} met={met} total={total} />
-                        </>
-                      ) : (
-                        <p style={{ margin: '7px 0 0', font: `400 12px/1.4 ${SANS}`, color: LABEL }}>
-                          Not built yet — this topic is coming.
-                        </p>
-                      )}
-                    </button>
-                  );
-                })}
-              </div>
-            </section>
-          ))}
-        </div>
-      </div>
-    );
-  }
-
-  /* --------------------------------------------------------------- bank ---- */
-
-  const secure = marksSecure(cards);
-  const met = marksMet(cards);
+  /* The bank home and the topic board were two screens showing the same thing.
+     Once the subject and level are remembered, the home screen's whole job is one
+     readout and one button — that is a rail, not a screen. */
   const dueCount = dueIds.length;
-  // Named from the build's own card counts, so an empty deck can point at one
-  // that isn't — without downloading a deck to find out whether it has anything.
-  const elsewhere = builtDecks().filter(d => d.subjectId !== subjectId || d.level !== level);
-  const builtElsewhere = elsewhere.length
-    ? `${elsewhere.map(d => d.label).join(', ').replace(/, ([^,]*)$/, ' and $1')} ${elsewhere.length === 1 ? 'is' : 'are'} ready now`
-    : null;
-  const nothingMet = met === 0;
+  const strands = strandsFor(subjectId);
+  const dueTopics = strands.flatMap(s => s.topics).filter(t => {
+    const tc = cardsForTopic(t.id, cards);
+    return tc.some(c => { const m = memories[c.id]; return m?.last ? isDue(c.id, m, now(), retention) : false; });
+  }).length;
+  const dueMarks = cards
+    .filter(c => { const m = memories[c.id]; return m?.last ? isDue(c.id, m, now(), retention) : false; })
+    .reduce((n, c) => n + c.totalMarks, 0);
+
   const nextReturn = cards
     .map(c => (memories[c.id]?.last ? dueAt(c.id, memories[c.id], retention) : Infinity))
     .filter(ts => ts > now() && Number.isFinite(ts))
     .sort((a, b) => a - b)[0];
 
+  const elsewhere = builtDecks().filter(d => d.subjectId !== subjectId || d.level !== level);
+  const builtElsewhere = elsewhere.length
+    ? `${elsewhere.map(d => d.label).join(', ').replace(/, ([^,]*)$/, ' and $1')} ${elsewhere.length === 1 ? 'is' : 'are'} ready now`
+    : null;
+
   return (
-    <div style={{ minHeight: '100dvh', fontFamily: SANS }}>
-      <div style={{ padding: '26px 16px 4px' }}>
-        <div style={{ maxWidth: 560, margin: '0 auto' }}>
+    <div style={{ fontFamily: SANS, padding: '28px 0 72px' }}>
+      <div style={{
+        maxWidth: SURFACE, margin: '0 auto', padding: '0 16px',
+        display: 'flex', alignItems: 'flex-start', gap: wide ? GUTTER : 0,
+        flexDirection: wide ? 'row' : 'column',
+      }}>
+
+        {/* ---- the rail: what you sit, what is waiting, and the way in ---- */}
+        <div style={{
+          width: wide ? RAIL : '100%', flex: '0 0 auto',
+          position: wide ? 'sticky' : 'static', top: 24,
+          marginBottom: wide ? 0 : 22,
+        }}>
+          <h2 style={{ font: `700 24px/1.15 ${SERIF}`, color: INK, margin: '0 0 3px' }}>
+            {subject.title}
+          </h2>
+          <Eyebrow>{level === 'higher' ? 'Higher level' : 'Ordinary level'} · redeveloped specification</Eyebrow>
+
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 8, margin: '16px 0 0' }}>
+            <Segment
+              options={SUBJECTS.map(s => ({ value: s.id, label: s.title, empty: deckSize(s.id, level) === 0 }))}
+              value={subjectId}
+              onChange={chooseSubject}
+            />
+            <Segment
+              options={(['higher', 'ordinary'] as Level[]).map(l => ({
+                value: l, label: l === 'higher' ? 'Higher' : 'Ordinary',
+                empty: deckSize(subjectId, l) === 0,
+              }))}
+              value={level}
+              onChange={v => chooseLevel(v as Level)}
+            />
+          </div>
+
           {levelUnbuilt ? (
-            <>
-              <h2 style={{ font: `700 27px/1.18 ${SERIF}`, color: INK, margin: '0 0 10px' }}>
-                {subject.title} {level === 'higher' ? 'Higher' : 'Ordinary'} Level isn&rsquo;t built yet.
-              </h2>
-              <p style={{ font: `400 14.5px/1.55 ${SANS}`, color: MUTED, margin: '0 0 20px', maxWidth: '36ch' }}>
-                Cards are written one paper at a time, straight from the marking schemes. This one is
-                still being written — {builtElsewhere ?? 'try another subject or level in the meantime'}.
-              </p>
-            </>
-          ) : nothingMet ? (
-            <>
-              <h2 style={{ font: `700 27px/1.18 ${SERIF}`, color: INK, margin: '0 0 10px' }}>
-                Nothing in the bank yet.
-              </h2>
-              <p style={{ font: `400 14.5px/1.55 ${SANS}`, color: MUTED, margin: '0 0 20px', maxWidth: '34ch' }}>
-                Pick a topic and you&rsquo;ll get real Leaving Cert {subject.title} questions — the exact
-                wording from the paper — marked point by point against the real scheme.
-              </p>
-            </>
-          ) : dueCount > 0 ? (
-            <>
-              <h2 style={{ font: `700 27px/1.18 ${SERIF}`, color: INK, margin: '0 0 8px' }}>
-                {dueCount} {dueCount === 1 ? 'question is' : 'questions are'} ready for you.
-              </h2>
-              <p style={{ font: `400 14px/1.5 ${SANS}`, color: MUTED, margin: '0 0 20px' }}>
-                About {Math.max(2, Math.round(dueCount * 1.2))} minutes.
-              </p>
-            </>
+            <p style={{ margin: '18px 0 0', font: `400 13.5px/1.55 ${SANS}`, color: MUTED }}>
+              Cards are written one paper at a time, straight from the marking schemes.
+              This one is still being written — {builtElsewhere ?? 'try another subject or level in the meantime'}.
+            </p>
           ) : (
             <>
-              <h2 style={{ font: `700 27px/1.18 ${SERIF}`, color: INK, margin: '0 0 10px' }}>
-                Nothing due today.
-              </h2>
-              <p style={{ font: `400 14.5px/1.55 ${SANS}`, color: MUTED, margin: '0 0 20px', maxWidth: '36ch' }}>
-                That&rsquo;s not you slacking — it&rsquo;s the schedule doing its job. Everything you&rsquo;ve
-                met is still fresh enough that showing it now would waste your time.
-                {nextReturn && Number.isFinite(nextReturn) && (
-                  <> Next one back {new Date(nextReturn).toLocaleDateString('en-IE', { weekday: 'long' })}.</>
-                )}
+              {/* Never a backlog. Today's work, and nothing about what was missed. */}
+              <p style={{
+                margin: '18px 0 0', font: `700 13px/1.5 ${MONO}`, color: dueCount > 0 ? INK : MUTED,
+                fontVariantNumeric: 'tabular-nums',
+              }}>
+                {dueCount > 0
+                  ? `${dueMarks} marks due · ${dueTopics} ${dueTopics === 1 ? 'topic' : 'topics'}`
+                  : 'Nothing due today'}
               </p>
-            </>
-          )}
+              {dueCount === 0 && (
+                <p style={{ margin: '6px 0 0', font: `400 13px/1.5 ${SANS}`, color: MUTED }}>
+                  That&rsquo;s the schedule doing its job, not you slacking.
+                  {nextReturn && Number.isFinite(nextReturn) && (
+                    <> Next one back {new Date(nextReturn).toLocaleDateString('en-IE', { weekday: 'long' })}.</>
+                  )}
+                </p>
+              )}
 
-          <div style={{ display: 'flex', gap: 9, flexWrap: 'wrap' }}>
-            <button
-              type="button"
-              disabled={levelUnbuilt}
-              onClick={() => {
-                if (levelUnbuilt) return;
-                if (dueCount > 0) startSession(); else setScreen({ name: 'topics' });
-              }}
-              style={{
-                padding: '13px 24px', borderRadius: 100, border: 'none',
-                background: levelUnbuilt ? MUTED_BORDER : '#F26B1F', color: '#fff',
-                font: `600 15px/1 ${SANS}`,
-                borderBottom: levelUnbuilt ? 'none' : '3px solid #B54D14',
-                boxShadow: levelUnbuilt ? 'none' : '0 4px 0 #B54D14',
-                cursor: levelUnbuilt ? 'not-allowed' : 'pointer',
-              }}
-            >
-              {levelUnbuilt ? 'Nothing to review yet' : dueCount > 0 ? "Start today's mix" : nothingMet ? 'Choose a topic' : 'Pick a topic anyway'}
-            </button>
-            {dueCount > 0 && (
               <button
                 type="button"
-                onClick={() => setScreen({ name: 'topics' })}
+                autoFocus
+                onClick={() => startSession()}
                 style={{
-                  padding: '13px 20px', borderRadius: 100, cursor: 'pointer',
-                  background: '#fff', color: MUTED,
-                  border: `2px solid ${MUTED_BORDER}`, font: `600 14px/1 ${SANS}`,
+                  width: '100%', marginTop: 14, padding: '15px 20px', borderRadius: 100,
+                  border: 'none', cursor: 'pointer',
+                  background: ACCENT, color: '#fff', font: `650 15px/1 ${SANS}`,
+                  borderBottom: '3px solid #B54D14', boxShadow: '0 4px 0 #B54D14',
                 }}
               >
-                Pick a topic
+                {dueCount > 0 ? `Start today's ${Math.min(dueCount, SESSION_SIZE)}` : 'Practise anyway'}
               </button>
-            )}
-          </div>
+
+              {/* Jump links: five strands, so the list never needs a search box. */}
+              {wide && (
+                <nav style={{ display: 'flex', flexDirection: 'column', gap: 5, marginTop: 20 }}>
+                  {strands.map(s => (
+                    <a
+                      key={s.id}
+                      href={`#strand-${s.id}`}
+                      style={{ font: `400 13.5px/1.5 ${SANS}`, color: MUTED, textDecoration: 'none' }}
+                    >
+                      {s.title}
+                    </a>
+                  ))}
+                </nav>
+              )}
+
+              {cards.length > 0 && (
+                <p style={{ margin: '20px 0 0', font: `400 11.5px/1.5 ${SANS}`, color: LABEL }}>
+                  {cards.length} questions from the {examYears} Leaving Certificate papers,
+                  each marked against the real State Examinations Commission scheme.
+                </p>
+              )}
+            </>
+          )}
         </div>
-      </div>
 
-      <div style={{ maxWidth: 560, margin: '0 auto', padding: '16px 16px 60px' }}>
-        {/* Subject and level. Switching either never wipes state — every deck is
-            stored separately, so a student can move between them freely. */}
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 9, marginBottom: 18 }}>
-          <Segment
-            options={SUBJECTS.map(s => ({
-              value: s.id, label: s.title, empty: deckSize(s.id, level) === 0,
-            }))}
-            value={subjectId}
-            onChange={setSubjectId}
-          />
-          <Segment
-            options={(['higher', 'ordinary'] as Level[]).map(l => ({
-              value: l, label: l === 'higher' ? 'Higher' : 'Ordinary',
-              empty: deckSize(subjectId, l) === 0,
-            }))}
-            value={level}
-            onChange={v => setLevel(v as Level)}
-          />
-        </div>
+        {/* ---- the list: one card, aligned columns, hairlines not boxes ---- */}
+        {!levelUnbuilt && (
+          <div style={{
+            width: wide ? LIST : '100%', flex: '0 0 auto', maxWidth: '100%',
+            background: '#fff', border: `2px solid ${INK}`, borderRadius: 16, overflow: 'hidden',
+          }}>
+            {strands.map((strand, si) => (
+              <section key={strand.id} id={`strand-${strand.id}`}>
+                <div style={{
+                  height: 44, display: 'flex', alignItems: 'center', gap: 9,
+                  padding: '0 18px', background: '#fbfaf8',
+                  borderTop: si === 0 ? 'none' : `1px solid ${HAIRLINE}`,
+                  borderBottom: `1px solid ${HAIRLINE}`,
+                }}>
+                  <span style={{ font: `600 14px/1 ${SERIF}`, color: INK }}>{strand.title}</span>
+                  <span style={{ font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.12em', textTransform: 'uppercase', color: LABEL }}>
+                    {strand.label}
+                  </span>
+                </div>
 
-        <button
-          type="button"
-          onClick={() => setScreen({ name: 'topics' })}
-          style={{
-            width: '100%', textAlign: 'left', cursor: 'pointer',
-            background: '#fff', border: `2px solid ${INK}`, borderRadius: 16, padding: '17px 19px',
-          }}
-        >
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 10 }}>
-            <span style={{ font: `600 17px/1.2 ${SERIF}`, color: INK }}>{subject.title}</span>
-            <span style={{ font: `700 11px/1 ${MONO}`, color: MUTED, fontVariantNumeric: 'tabular-nums' }}>
-              {secure} / {totalMarks} marks
-            </span>
-          </div>
-          <p style={{ margin: '9px 0 8px', font: `400 12.5px/1.45 ${SANS}`, color: MUTED }}>
-            {nothingMet
-              ? `${cards.length} ${cards.length === 1 ? 'card' : 'cards'} across ${new Set(cards.map(c => c.topicId)).size} topics`
-              : `${secure} of ${totalMarks} marks secure · ${unmet.length} not met yet`}
-          </p>
-          <MarkBar secure={secure} met={met} total={totalMarks} />
-        </button>
+                <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
+                  {strand.topics.map((topic, ti) => {
+                    const topicCards = cardsForTopic(topic.id, cards);
+                    const total = topicMarks(topic.id, cards);
+                    const built = topicCards.length > 0;
+                    const due = topicCards.filter(c => {
+                      const m = memories[c.id];
+                      return m?.last ? isDue(c.id, m, now(), retention) : false;
+                    }).length;
+                    const tSecure = marksSecure(topicCards);
+                    const tMet = marksMet(topicCards);
+                    const dueHere = topicCards
+                      .filter(c => { const m = memories[c.id]; return m?.last ? isDue(c.id, m, now(), retention) : false; })
+                      .reduce((n, c) => n + c.totalMarks, 0);
 
-        {cards.length > 0 && (
-          <div style={{ marginTop: 16, padding: '13px 15px', background: PLATE, borderRadius: 12 }}>
-            <Eyebrow>What&rsquo;s in here</Eyebrow>
-            <p style={{ margin: '6px 0 0', font: `400 12.5px/1.5 ${SANS}`, color: INK_2 }}>
-              {cards.length} questions from the {examYears} Leaving Certificate papers, each one marked
-              against the real State Examinations Commission scheme. Topics follow the redeveloped
-              {' '}{subject.title} specification, first examined in June 2027.
-            </p>
+                    return (
+                      <li key={topic.id} style={{ borderTop: ti === 0 ? 'none' : `1px solid ${HAIRLINE}` }}>
+                        <button
+                          type="button"
+                          disabled={!built}
+                          onClick={() => startSession(topic.id)}
+                          style={{
+                            width: '100%', height: 56, display: 'flex', alignItems: 'center', gap: 16,
+                            padding: '0 18px', textAlign: 'left', background: 'none', border: 'none',
+                            cursor: built ? 'pointer' : 'default',
+                          }}
+                        >
+                          <span style={{
+                            width: 30, flex: '0 0 auto',
+                            font: `700 11px/1 ${MONO}`, color: LABEL,
+                          }}>
+                            {topic.code}
+                          </span>
+                          <span style={{
+                            flex: 1, minWidth: 0,
+                            font: `500 14.5px/1.3 ${SANS}`, color: built ? INK : LABEL,
+                            overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap',
+                          }}>
+                            {topic.title}
+                          </span>
+
+                          {/* Every bar at the same x. Twenty bars scattered across
+                              twenty cards cannot be compared, which is the one
+                              thing a marks-based progress model exists to do. */}
+                          <span style={{ width: 120, flex: '0 0 auto' }}>
+                            {built && <MarkBar secure={tSecure} met={tMet} total={total} />}
+                          </span>
+
+                          <span style={{
+                            width: 96, flex: '0 0 auto', textAlign: 'right',
+                            font: `700 11px/1.5 ${MONO}`, fontVariantNumeric: 'tabular-nums',
+                            // Orange is the ONE colour here, and it means "do this
+                            // now". It used to be the success green, so the same
+                            // green said "start here" and "you finished this".
+                            color: !built ? LABEL : due > 0 ? ACCENT : MUTED,
+                            whiteSpace: 'nowrap',
+                          }}>
+                            {!built
+                              ? 'Being built'
+                              : due > 0
+                                ? `${dueHere} due`
+                                : tMet > 0
+                                  ? `${tSecure} of ${total}`
+                                  /* Never a zero on a topic nobody has opened. A
+                                     first look at a subject must not be a column
+                                     of "0 of 104 marks secure". */
+                                  : `${topicCards.length} cards`}
+                          </span>
+                        </button>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </section>
+            ))}
           </div>
         )}
-
-        {!loaded && uid && (
-          <p style={{ marginTop: 14, font: `400 11.5px/1.4 ${SANS}`, color: LABEL }}>
-            Syncing your deck…
-          </p>
-        )}
       </div>
+
+      {!loaded && uid && (
+        <p style={{ maxWidth: SURFACE, margin: '14px auto 0', padding: '0 16px', font: `400 11.5px/1.4 ${SANS}`, color: LABEL }}>
+          Syncing your deck…
+        </p>
+      )}
     </div>
   );
 };

@@ -75,6 +75,40 @@ export function readLocal(uid: string | undefined, deckId: DeckId): DeckState {
   }
 }
 
+/* --------------------------------------------------------- what you sit ---- */
+
+/**
+ * The subject and level this student actually sits.
+ *
+ * Local only, and deliberately so: it is a UI preference, not schedule state, and
+ * it must be readable synchronously on mount — a student who does Chemistry
+ * Ordinary should never watch the tool open on Biology Higher and correct it,
+ * which is two clicks every single session forever.
+ */
+export interface DeckChoice { subjectId: string; level: 'higher' | 'ordinary' }
+
+const choiceKey = (uid: string | undefined) => `mb:choice:${uid || 'anon'}`;
+
+export function readChoice(uid: string | undefined): DeckChoice | null {
+  try {
+    const raw = localStorage.getItem(choiceKey(uid));
+    if (!raw) return null;
+    const parsed = JSON.parse(raw) as DeckChoice;
+    if (!parsed?.subjectId) return null;
+    return parsed.level === 'ordinary' || parsed.level === 'higher' ? parsed : null;
+  } catch {
+    return null;
+  }
+}
+
+export function writeChoice(uid: string | undefined, choice: DeckChoice): void {
+  try {
+    localStorage.setItem(choiceKey(uid), JSON.stringify(choice));
+  } catch {
+    /* quota or private mode — the student just re-picks, which is the old behaviour */
+  }
+}
+
 export function writeLocal(uid: string | undefined, deckId: DeckId, deck: DeckState): void {
   try {
     localStorage.setItem(lsKey(uid, deckId), JSON.stringify(deck));

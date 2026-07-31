@@ -233,7 +233,7 @@ describe('claiming marks', () => {
     renderSession([card()], { 'bio-2025-hl-q6-ab': seen });
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     expect(screen.getByRole('button', { name: /Oesophagus/ })).toHaveAttribute('aria-pressed', 'false');
-    expect(screen.getByText(/Marks left behind/i)).toBeInTheDocument();
+    expect(screen.getByText(/Not claimed yet/i)).toBeInTheDocument();
   });
 
   test('one tap claims a row and the marks-left figure falls', () => {
@@ -250,8 +250,9 @@ describe('claiming marks', () => {
     renderSession([card()], { 'bio-2025-hl-q6-ab': seen });
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     fireEvent.click(screen.getByRole('button', { name: /Oesophagus/ }));
-    const strip = screen.getByText(/Marks left behind/i);
-    await waitFor(() => expect(strip.textContent).toMatch(/2\s*$/), { timeout: 1000 });
+    // The label is its own span; the count lives beside it, so read the band.
+    const strip = screen.getByText(/Not claimed yet/i).parentElement!;
+    await waitFor(() => expect(strip.textContent).toMatch(/\b2\b/), { timeout: 1000 });
   });
 
   test('the marks-left figure can never exceed the marks on the card', async () => {
@@ -271,9 +272,10 @@ describe('claiming marks', () => {
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     fireEvent.click(screen.getByRole('button', { name: /A — Sporangium/ }));
     fireEvent.click(screen.getByRole('button', { name: /One function of C/ }));
-    const strip = screen.getByText(/Marks left behind/i);
+    const strip = screen.getByText(/Not claimed yet/i).parentElement!;
     await waitFor(() => {
-      const n = Number((strip.textContent || '').replace(/\D+/g, ''));
+      // The count, not the named points beside it.
+      const n = Number(/·\s*(\d+)\s*marks?/.exec(strip.textContent || '')?.[1]);
       expect(n).toBe(6);
     }, { timeout: 1500 });
   });
@@ -508,7 +510,10 @@ describe('grading', () => {
     });
     renderSession([c], { 'bio-2025-hl-q6-ab': seen });
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
-    expect(screen.getByText('−1m')).toBeInTheDocument();
+    // Shown as what the point is WORTH, not as a deduction. An unclaimed row used
+    // to render "−1m" in the accent tint, so revealing a card greeted the student
+    // with a column of orange minus signs before they had touched anything.
+    expect(screen.getByText('1m')).toBeInTheDocument();
   });
 
   test('reports no total for a card whose scheme defines no per-row marks', () => {
@@ -536,7 +541,7 @@ describe('grading', () => {
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     fireEvent.click(screen.getByRole('button', { name: 'Got it' }));
     expect(onGrade).toHaveBeenCalledTimes(1);
-    fireEvent.click(screen.getByRole('button', { name: /Leave this session/i }));
+    fireEvent.click(screen.getByRole('button', { name: /^Leave$/i }));
     expect(onExit).toHaveBeenCalled();
   });
 });

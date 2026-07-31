@@ -33,6 +33,7 @@
  */
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { AnimatePresence, MotionDiv, MotionSpan, useReducedMotion } from '../Motion';
 import { rowId, type LabelKey, type MarkRow, type SecCard } from '../../types/markBank';
 import type { MarkBankGrade } from './scheduler';
@@ -43,14 +44,18 @@ const INK = '#1a1a1a';
 const INK_2 = '#3a3530';
 const MUTED = '#7a7068';
 const LABEL = '#9e9186';
-const HAIRLINE = '#ece9e4';
 const MUTED_BORDER = '#d0cdc8';
 const PLATE = '#F0FAF8';
 const SUCCESS = '#3A8D5F';
 const SUCCESS_TINT = '#E8F2EC';
 const SUCCESS_TEXT = '#1F5F3E';
-const RISK_TINT = '#FDEEDF';
-const RISK_TEXT = '#8C3A0E';
+/** Accent means "this is the action / you are here". Never "correct". */
+const ACCENT = '#F26B1F';
+const PAPER = '#f0f0f0';
+/** One work surface for the whole tool: 620 question + 32 gutter + 440 scheme. */
+const SURFACE = 1092;
+const QUESTION_W = 620;
+const SCHEME_W = 440;
 
 const SERIF = "'Source Serif 4', Georgia, serif";
 const SANS = "'DM Sans', system-ui, sans-serif";
@@ -224,14 +229,23 @@ const Tally: React.FC<{ value: number; reduced: boolean }> = ({ value, reduced }
   return <span style={{ fontVariantNumeric: 'tabular-nums' }}>{shown}</span>;
 };
 
-const ProgressRail: React.FC<{ total: number; done: number }> = ({ total, done }) => (
-  <div style={{ display: 'flex', gap: 3, flex: 1 }} aria-hidden="true">
+/**
+ * Where you are in the session — three states, never two.
+ *
+ * Done / not-done alone reads as a score creeping up. Marking the CURRENT card
+ * makes it read as position instead: this one, these behind me, those ahead. And
+ * no segment is ever tinted by the GRADE it earned — that turns the rail into a
+ * running scoreboard, which is the ego-involving feedback that cancels the value
+ * of everything beside it.
+ */
+const ProgressRail: React.FC<{ total: number; done: number; current: number }> = ({ total, done, current }) => (
+  <div style={{ display: 'flex', gap: 2, width: '100%' }} aria-hidden="true">
     {Array.from({ length: total }, (_, i) => (
       <div
         key={i}
         style={{
-          height: 3, flex: 1, borderRadius: 2,
-          background: i < done ? INK : '#d6d2cc',
+          height: 6, flex: 1,
+          background: i < done ? INK : i === current ? ACCENT : '#d6d2cc',
           transition: 'background 240ms',
         }}
       />
@@ -268,9 +282,14 @@ const MarkRowView: React.FC<{
     const atCap = chosen >= g.claimMax;
     return (
       <MotionDiv
-        initial={reduced ? false : { opacity: 0, x: -8 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.24, ease: EASE, delay: reduced ? 0 : index * 0.055 }}
+        /* The rows arrive one after another, and the stagger IS the message:
+           these are discrete, countable things and you are going to work down
+           them one at a time. They RISE rather than slide in from the side —
+           a slide says "this was hidden from you". Capped at eight steps so a
+           long list never drags. */
+        initial={reduced ? false : { opacity: 0, y: 8 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.14, ease: EASE, delay: reduced ? 0 : Math.min(index, 8) * 0.024 }}
         style={{
           marginBottom: 8, padding: '12px 13px', borderRadius: 12,
           border: `1.5px solid ${chosen ? SUCCESS : MUTED_BORDER}`,
@@ -285,8 +304,8 @@ const MarkRowView: React.FC<{
             <span style={{
               font: `700 10.5px/1.7 ${MONO}`, borderRadius: 6, padding: '0 6px', whiteSpace: 'nowrap',
               fontVariantNumeric: 'tabular-nums',
-              background: chosen ? SUCCESS_TINT : RISK_TINT,
-              color: chosen ? SUCCESS_TEXT : RISK_TEXT,
+              background: chosen ? SUCCESS_TINT : '#f2efea',
+              color: chosen ? SUCCESS_TEXT : MUTED,
             }}>
               {chosen} of {g.claimMax}
             </span>
@@ -342,9 +361,14 @@ const MarkRowView: React.FC<{
 
   return (
     <MotionDiv
-      initial={reduced ? false : { opacity: 0, x: -8 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.24, ease: EASE, delay: reduced ? 0 : index * 0.055 }}
+      /* The rows arrive one after another, and the stagger IS the message:
+         these are discrete, countable things and you are going to work down
+         them one at a time. They RISE rather than slide in from the side —
+         a slide says "this was hidden from you". Capped at eight steps so a
+         long list never drags. */
+      initial={reduced ? false : { opacity: 0, y: 8 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.14, ease: EASE, delay: reduced ? 0 : Math.min(index, 8) * 0.024 }}
       style={{ marginBottom: 8 }}
     >
       <button
@@ -402,13 +426,18 @@ const MarkRowView: React.FC<{
         </span>
 
         {showMarks && (
+          /* An unclaimed point is UNCLAIMED, not wrong. This chip used to open
+             in the accent tint, and `claims` starts empty — so revealing a card
+             greeted the student with a column of orange before they had touched
+             anything. That is both an accusation and a misuse of the token:
+             orange means "this is the action", never "you got this wrong". */
           <span style={{
             font: `700 10.5px/1.7 ${MONO}`, borderRadius: 6, padding: '0 6px', whiteSpace: 'nowrap',
             fontVariantNumeric: 'tabular-nums',
-            background: claimed ? SUCCESS_TINT : RISK_TINT,
-            color: claimed ? SUCCESS_TEXT : RISK_TEXT,
+            background: claimed ? SUCCESS_TINT : '#f2efea',
+            color: claimed ? SUCCESS_TEXT : MUTED,
           }}>
-            {claimed ? `${marks}m` : `−${marks}m`}
+            {claimed ? `${marks}m` : `${marks}m`}
           </span>
         )}
       </button>
@@ -477,10 +506,34 @@ const GRADE_COPY: Record<MarkBankGrade, string> = {
   got: 'Got it',
 };
 
+/**
+ * The two-pane threshold.
+ *
+ * 620 question + 32 gutter + 440 scheme + margins does not fit honestly below
+ * this, and the phone layout below it is correct and shipping — so there are
+ * three layouts, not a fluid one: phone, single column with a sticky question,
+ * and the split. Android puts multi-pane at 1200dp for the same arithmetic.
+ */
+const TWO_PANE = 1200;
+
+const useTwoPane = () => {
+  const [wide, setWide] = useState(
+    () => typeof window !== 'undefined' && window.matchMedia(`(min-width: ${TWO_PANE}px)`).matches,
+  );
+  useEffect(() => {
+    const mq = window.matchMedia(`(min-width: ${TWO_PANE}px)`);
+    const onChange = (e: MediaQueryListEvent) => setWide(e.matches);
+    mq.addEventListener('change', onChange);
+    return () => mq.removeEventListener('change', onChange);
+  }, []);
+  return wide;
+};
+
 const SessionScreen: React.FC<SessionScreenProps> = ({
   cards, subjectLabel, onGrade, onExit, onFinish,
 }) => {
   const reduced = useReducedMotion() ?? false;
+  const wide = useTwoPane();
   const [queue, setQueue] = useState(() => cards.map(c => c.id));
   const [position, setPosition] = useState(0);
   const [revealed, setRevealed] = useState(false);
@@ -504,6 +557,32 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const total = card ? claimableTotal(card) : 0;
   const got = card ? marksClaimed(card, rowClaims, picks) : 0;
   const left = Math.max(0, total - got);
+
+  /**
+   * What the student has not ticked, named rather than counted.
+   *
+   * "You left 6 marks behind" makes the student the subject of a failure verb.
+   * The same six marks listed as "cohesion · root pressure" is task-focused, and
+   * doubles as the revision list for the card they are about to grade. Rows on a
+   * route they did not take are excluded — those marks were never theirs to get.
+   */
+  const unclaimed = useMemo(() => {
+    if (!card) return [];
+    const route = committedRoute(card, rowClaims);
+    return card.rows
+      .filter((r, i) => {
+        if (r.route && route && r.route !== route) return false;
+        // An anyN group is partially claimable, so it is never simply "unclaimed".
+        if (r.kind === 'anyN') return false;
+        return (rowClaims[rowId(r, i)] ?? 'no') === 'no';
+      })
+      // The scheme's own wording, minus any "Label — " prefix the card carries.
+      .map(r => (r.verbatim.split(/\s[—-]\s/).pop() ?? r.verbatim).toLowerCase());
+  }, [card, rowClaims]);
+  /* Three names fit the band; beyond that the count carries it. Naming all six
+     would wrap the bar and push the grade buttons around. */
+  const unclaimedNames = unclaimed.slice(0, 3);
+  const unclaimedMore = unclaimed.length - unclaimedNames.length;
   const suggested = card ? suggestGrade(card, rowClaims, picks) : 'shaky';
   const routeTaken = card ? committedRoute(card, rowClaims) : null;
 
@@ -598,39 +677,99 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const figure = 'figure' in card ? card.figure : undefined;
   const labelKey = card.kind === 'diagram' ? card.labelKey : undefined;
 
-  return (
+  const banked = results.reduce((n, r) => n + r.marksClaimed, 0);
+
+  /* PORTALLED TO THE BODY, and that is load-bearing rather than tidiness. The
+     tool renders inside `<main class="relative z-10">`, which opens a stacking
+     context — so a z-index of 70 on a descendant is resolved INSIDE that context
+     and still loses to the app header's z-60. The takeover appeared correctly in
+     the DOM and rendered underneath the header. Portalling escapes the context. */
+  return createPortal(
+    /* A full-viewport takeover, not a page inside the tool shell. Review is one
+       task with one action, and every mature reviewer treats it that way — Anki
+       ships a fullscreen mode, RemNote drops its sidebar, Mochi dims the app.
+       Sitting inside the shell means the app's own header competes with the exam
+       question for the top of the screen, and loses the student ~150px of it. */
     <div style={{
-      minHeight: '100dvh',
-      paddingBottom: 'calc(150px + var(--sab, 0px))',
-      fontFamily: SANS,
-      display: 'flex', flexDirection: 'column',
+      /* Above the app's own z-100 chrome overlay. During a review the points
+         chip and notification bell are exactly what should step aside — and the
+         points chip is doubly wrong here, since Mark Bank is deliberately exempt
+         from the points system. */
+      position: 'fixed', inset: 0, zIndex: 120,
+      background: PAPER, fontFamily: SANS,
+      overflowY: 'auto', overscrollBehavior: 'contain',
+      paddingBottom: 'calc(112px + var(--sab, 0px))',
     }}>
-      {/* Top rail — leaving is always safe, grades commit per card. */}
+      {/* Session bar. Full-bleed, so the work surface below reads as contained
+          by a declared edge rather than adrift in a wide window. */}
       <div style={{
-        position: 'sticky', top: 0, zIndex: 3, display: 'flex', alignItems: 'center', gap: 12,
-        padding: '14px 16px',
+        position: 'sticky', top: 0, zIndex: 3,
+        background: '#FFFFFF', borderBottom: `2px solid ${INK}`,
       }}>
-        <button
-          type="button" onClick={onExit} aria-label="Leave this session"
-          style={{ background: 'none', border: 'none', padding: 4, cursor: 'pointer', color: INK, lineHeight: 0 }}
-        >
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-        </button>
-        <ProgressRail total={cards.length} done={distinctDone} />
-        <span style={{
-          font: `700 11px/1 ${MONO}`, color: MUTED,
-          fontVariantNumeric: 'tabular-nums', whiteSpace: 'nowrap',
+        <div style={{
+          maxWidth: SURFACE, margin: '0 auto', padding: '0 16px',
+          height: 56, display: 'flex', alignItems: 'center', gap: 16,
         }}>
-          {Math.min(distinctDone + 1, cards.length)} of {cards.length}
-        </span>
+          <button
+            type="button" onClick={onExit}
+            style={{
+              display: 'flex', alignItems: 'center', gap: 6,
+              background: 'none', border: 'none', padding: '4px 2px', cursor: 'pointer',
+              color: INK, font: `600 13px/1 ${SANS}`,
+            }}
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+            Leave
+          </button>
+
+          {/* One line where four stacked headings used to be. */}
+          <span style={{
+            font: `400 13px/1 ${SANS}`, color: MUTED,
+            overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap',
+          }}>
+            {subjectLabel} · {card.level === 'higher' ? 'Higher' : 'Ordinary'}
+          </span>
+
+          <span style={{ flex: 1 }} />
+
+          <span style={{
+            font: `700 12.5px/1 ${MONO}`, color: MUTED,
+            fontVariantNumeric: 'tabular-nums', whiteSpace: 'nowrap',
+          }}>
+            Card {Math.min(distinctDone + 1, cards.length)} of {cards.length}
+          </span>
+          {banked > 0 && (
+            <span style={{
+              font: `700 12.5px/1 ${MONO}`, color: SUCCESS_TEXT,
+              fontVariantNumeric: 'tabular-nums', whiteSpace: 'nowrap',
+            }}>
+              {banked} banked
+            </span>
+          )}
+        </div>
+        <ProgressRail total={cards.length} done={distinctDone} current={distinctDone} />
       </div>
 
-      {/* The card. White, always — the environment colour never enters it. */}
-      <div style={{ maxWidth: 560, width: '100%', margin: '0 auto', padding: '4px 12px 0', flex: '0 0 auto' }}>
+      {/* The work surface. Two panes from the FIRST frame, never assembled at the
+          moment of reveal — re-laying out exactly when the student starts reading
+          evidence is the worst possible time to move anything. */}
+      <div style={{
+        maxWidth: SURFACE, margin: '0 auto', padding: '34px 16px 0',
+        display: 'flex', alignItems: 'flex-start',
+        gap: wide ? 32 : 0, flexDirection: wide ? 'row' : 'column',
+      }}>
+      <div style={{
+        width: wide ? QUESTION_W : '100%',
+        maxWidth: '100%',
+        flex: '0 0 auto',
+        // Stays put while the marking points scroll beneath it: the exact wording
+        // is the evidence a student marks against, so it must never leave view.
+        position: wide ? 'sticky' : 'static', top: 96,
+      }}>
         <div style={{ background: '#FFFFFF', borderRadius: 18, overflow: 'hidden', border: `2px solid ${INK}` }}>
-          <div style={{ padding: '16px 18px 0' }}>
+          <div style={{ padding: '16px 18px 18px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 10 }}>
               <span style={{
                 font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.11em',
@@ -659,7 +798,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                 <div style={{ background: PLATE, borderRadius: 12, padding: 10, textAlign: 'center' }}>
                   <img
                     src={figure.src} alt={figure.alt}
-                    style={{ maxWidth: '100%', maxHeight: 260, objectFit: 'contain', display: 'inline-block' }}
+                    style={{ maxWidth: '100%', maxHeight: 420, objectFit: 'contain', display: 'inline-block' }}
                   />
                 </div>
                 <figcaption style={{ marginTop: 6, font: `400 10.5px/1.4 ${SANS}`, color: LABEL }}>
@@ -668,26 +807,32 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               </figure>
             )}
           </div>
+        </div>
+      </div>
 
+      {/* The scheme pane. Present from the first frame so nothing moves on
+          reveal — before it, it holds the tariff and the instruction; after, the
+          marking points themselves. */}
+      <div style={{
+        width: wide ? SCHEME_W : '100%',
+        maxWidth: '100%',
+        flex: '0 0 auto',
+        marginTop: wide ? 0 : 14,
+      }}>
+        <div style={{ background: '#FFFFFF', borderRadius: 18, overflow: 'hidden', border: `2px solid ${INK}` }}>
           {!revealed && (
             <div style={{ padding: '16px 18px 18px' }}>
-              <p style={{ margin: '0 0 11px', font: `italic 400 13px/1.5 ${SANS}`, color: MUTED }}>
-                Answer it in your head, or write it out. Then reveal the scheme.
+              <span style={{
+                display: 'block', marginBottom: 9,
+                font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.12em',
+                textTransform: 'uppercase', color: LABEL,
+              }}>
+                The scheme
+              </span>
+              <p style={{ margin: '0 0 4px', font: `italic 400 13px/1.5 ${SANS}`, color: MUTED }}>
+                Answer it in your head, or write it out. Then reveal the scheme and
+                tick off what you had.
               </p>
-              <button
-                type="button"
-                // Clear any lingering interval whisper: it shares the bottom bar with
-                // the grade buttons, so a student who moves quickly would otherwise
-                // reveal the next card and find no way to grade it for a second.
-                onClick={() => { setWhisper(null); setRevealed(true); }}
-                style={{
-                  width: '100%', padding: '13px 18px', borderRadius: 14,
-                  background: INK, color: '#FFFFFF', border: 'none',
-                  font: `650 14.5px/1 ${SANS}`, cursor: 'pointer',
-                }}
-              >
-                Reveal the marking scheme
-              </button>
             </div>
           )}
 
@@ -695,13 +840,12 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             {revealed && (
               <MotionDiv
                 key="scheme"
-                initial={reduced ? { opacity: 0 } : { height: 0, opacity: 0, y: 8 }}
-                animate={reduced ? { opacity: 1 } : { height: 'auto', opacity: 1, y: 0 }}
+                initial={reduced ? { opacity: 0 } : { opacity: 0 }}
+                animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                transition={{ duration: reduced ? 0.12 : 0.32, ease: EASE }}
-                style={{ overflow: 'hidden' }}
+                transition={{ duration: reduced ? 0.12 : 0.18, ease: EASE }}
               >
-                <div style={{ padding: '4px 18px 18px', borderTop: `1px solid ${HAIRLINE}`, marginTop: 14 }}>
+                <div style={{ padding: '4px 18px 18px' }}>
                   <div style={{
                     display: 'flex', justifyContent: 'space-between', alignItems: 'center',
                     padding: '12px 0 9px',
@@ -773,59 +917,101 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
           </AnimatePresence>
         </div>
       </div>
+      </div>
 
       {/* The interval whisper lives OUTSIDE the grade bar on purpose. Grading
           advances the card and closes the scheme, so anything rendered inside
           the bar unmounts at exactly the moment it has something to say — the
           message would only ever be seen by a student who tapped through fast
           enough to keep the bar alive. The schedule speaks on its own surface. */}
-      <AnimatePresence>
-        {whisper && (
-          <MotionDiv
-            key="whisper"
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: reduced ? 0.12 : 0.22, ease: EASE }}
-            style={{
-              position: 'fixed', left: 0, right: 0, bottom: 0, zIndex: 5,
-              background: '#FFFFFF', borderTop: `1px solid ${HAIRLINE}`,
-              padding: `14px 16px calc(14px + var(--sab, 0px))`,
-            }}
-          >
-            <p style={{
-              maxWidth: 560, margin: '0 auto',
-              font: `500 13.5px/1.45 ${SANS}`, color: SUCCESS_TEXT,
-            }}>
-              {whisper}
-            </p>
-          </MotionDiv>
+      {/* ONE bottom rail, not three fixed siblings competing for bottom: 0.
+          The whisper STACKS above the action rather than replacing it — an
+          earlier arrangement suppressed the reveal button for the 1.1s the
+          whisper was on screen, so the next card briefly had no way in. */}
+      <div style={{
+        position: 'fixed', left: 0, right: 0, bottom: 0, zIndex: 2,
+        background: '#FFFFFF', borderTop: `2px solid ${INK}`,
+      }}>
+        <AnimatePresence>
+          {whisper && (
+            <MotionDiv
+              key="whisper"
+              initial={reduced ? { opacity: 0 } : { opacity: 0, height: 0 }}
+              animate={reduced ? { opacity: 1 } : { opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: reduced ? 0.12 : 0.22, ease: EASE }}
+              style={{ overflow: 'hidden' }}
+            >
+              <p style={{
+                maxWidth: SURFACE, margin: '0 auto', padding: '12px 16px 0',
+                font: `500 13.5px/1.45 ${SANS}`, color: SUCCESS_TEXT,
+              }}>
+                {whisper}
+              </p>
+            </MotionDiv>
+          )}
+        </AnimatePresence>
+
+        {/* The action. Reveal and grade occupy the same band, so nothing shifts
+            at the moment the student's attention moves to the marking points. */}
+        {!revealed && (
+          <div style={{ padding: `16px 16px calc(16px + var(--sab, 0px))` }}>
+            <div style={{ maxWidth: SURFACE, margin: '0 auto' }}>
+              <button
+                type="button"
+                autoFocus
+                // Clear any lingering whisper so the schedule note for the card
+                // just graded does not hang over the one now in front of them.
+                onClick={() => { setWhisper(null); setRevealed(true); }}
+                style={{
+                  width: '100%', padding: '15px 18px', borderRadius: 100,
+                  background: ACCENT, color: '#FFFFFF', border: 'none',
+                  borderBottom: '3px solid #B54D14', boxShadow: '0 4px 0 #B54D14',
+                  font: `650 15px/1 ${SANS}`, cursor: 'pointer',
+                }}
+              >
+                Reveal the marking scheme
+              </button>
+            </div>
+          </div>
         )}
-      </AnimatePresence>
 
       {/* Grade bar. Solid white, never translucent — blurred glass over a
           saturated colour goes muddy and reads as generated UI. */}
-      {revealed && !whisper && (
-        <div style={{
-          position: 'fixed', left: 0, right: 0, bottom: 0, zIndex: 4,
-          background: '#FFFFFF', borderTop: `1px solid ${HAIRLINE}`,
-          padding: `12px 16px calc(12px + var(--sab, 0px))`,
-        }}>
-          <div style={{ maxWidth: 560, margin: '0 auto' }}>
+      {revealed && (
+        <div style={{ padding: `12px 16px calc(12px + var(--sab, 0px))` }}>
+          <div style={{ maxWidth: SURFACE, margin: '0 auto' }}>
             {showsRowMarks(card) && (
+              /* Never "you left 6 marks behind". Same information, but the
+                 student is not the subject of a failure verb — and naming the
+                 points turns the tally into a revision list instead of a
+                 verdict. An unclaimed point is neutral, so this band is too. */
               <div style={{
                 marginBottom: 10, padding: '8px 11px', borderRadius: 10,
-                background: left === 0 ? SUCCESS_TINT : RISK_TINT,
-                color: left === 0 ? SUCCESS_TEXT : RISK_TEXT,
-                font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.11em', textTransform: 'uppercase',
+                background: left === 0 ? SUCCESS_TINT : '#f2efea',
+                color: left === 0 ? SUCCESS_TEXT : INK_2,
+                font: `500 12px/1.5 ${SANS}`,
               }}>
                 {left === 0 ? (
-                  <>All {total} marks. Nothing left behind.</>
+                  <span style={{
+                    font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.11em', textTransform: 'uppercase',
+                  }}>
+                    All {total} marks. Nothing left behind.
+                  </span>
                 ) : (
                   <>
-                    Marks left behind · <span style={{ font: `700 14px/1 ${MONO}`, letterSpacing: 0 }}>
+                    <span style={{ color: MUTED }}>Not claimed yet · </span>
+                    <span style={{ font: `700 13px/1 ${MONO}`, fontVariantNumeric: 'tabular-nums' }}>
                       <Tally value={left} reduced={reduced} />
                     </span>
+                    <span style={{ color: MUTED }}>{left === 1 ? ' mark' : ' marks'}</span>
+                    {unclaimedNames.length > 0 && (
+                      <>
+                        {' · '}
+                        {unclaimedNames.join(' · ')}
+                        {unclaimedMore > 0 && <span style={{ color: MUTED }}> and {unclaimedMore} more</span>}
+                      </>
+                    )}
                   </>
                 )}
               </div>
@@ -872,7 +1058,9 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
           </div>
         </div>
       )}
-    </div>
+      </div>
+    </div>,
+    document.body,
   );
 };
 

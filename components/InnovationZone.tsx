@@ -82,6 +82,13 @@ interface ToolChrome {
   showHeader: boolean;
 }
 
+/**
+ * Tools that lay out their own work surface rather than living in the shared
+ * reading column. `max-w-4xl` yields 848px of usable width, which is right for a
+ * page of prose and wrong for a two-pane workspace.
+ */
+const WIDE_TOOLS = new Set(['mark-bank']);
+
 const TOOL_CHROME: Record<string, ToolChrome> = {
   'journey':         { themeColor: '#8B82B8', eyebrow: 'Track · Simulator',           subtitle: 'Navigate the choices of your final school year. Test-drive your future.',         showHeader: false },
   'cao-simulator':   { themeColor: '#5B7DB0', eyebrow: 'Understand · Simulator',      subtitle: 'Run the numbers. See how grade changes ripple through your CAO total.',           showHeader: true  },
@@ -95,7 +102,11 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   'exam-reps':       { themeColor: '#5E9C7B', eyebrow: 'Technique · Practice',        subtitle: 'One real exam question at a time — marked the examiner’s way, so you see exactly where the marks were.', showHeader: true  },
   'college-compass': { themeColor: '#2A7D6F', eyebrow: 'Plan · Roadmap',              subtitle: 'Your year-by-year runway to college — every CAO, HEAR, DARE and scholarship deadline, in order.', showHeader: false },
   'catch-up-lane':   { themeColor: '#0E9AA8', eyebrow: 'Catch up · Recovery',         subtitle: 'Missed some classes? Pick a subject and get caught up one quick topic at a time — no catch-up is too small.', showHeader: true  },
-  'mark-bank':       { themeColor: '#123B2B', eyebrow: 'Practise · Spaced repetition', subtitle: 'Real exam questions, marked point by point against the real scheme, brought back to you right before you\u2019d forget them.', showHeader: true },
+  // No header. Mark Bank is used daily, and a tool built for daily use must not
+  // re-explain itself daily: the eyebrow, title and subtitle cost ~238px at the top
+  // of every screen INCLUDING every review card, which is where the exam question
+  // should be. The subtitle still does its job on the tool tile, read once.
+  'mark-bank':       { themeColor: '#123B2B', eyebrow: 'Practise · Spaced repetition', subtitle: 'Real exam questions, marked point by point against the real scheme, brought back to you right before you\u2019d forget them.', showHeader: false },
   'paper-trail':     { themeColor: '#33658A', eyebrow: 'Understand · Exam archive',   subtitle: 'Every past paper and marking scheme, free — your subjects, your level, three taps.', showHeader: true },
   'diagram-vault':   { themeColor: '#F26B1F', eyebrow: 'Understand · Exam diagrams',  subtitle: 'Every diagram, graph, map and chart that has come up — cropped from the paper and decoded.', showHeader: true },
   'answer-architect': { themeColor: '#F26B1F', eyebrow: 'Understand · Top-answer skeletons', subtitle: 'The mark-earning skeleton of a top answer — the beats a full-marks answer hits, in order, from the SEC scheme.', showHeader: true },
@@ -820,7 +831,11 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         </div>
       </header>
 
-      <main className={`flex-grow w-full max-w-4xl relative z-10 ${activeTool === 'journey' || activeTool === 'war-room' || activeTool === 'college-compass' ? 'px-6 pt-0' : 'px-6 pt-16'}`}>
+      {/* Tools that lay out their own work surface. `max-w-4xl` gives 848px of
+          usable width, which is a reading column, not a desk: Mark Bank puts a
+          question and its marking scheme side by side and needs 1092px. Tools
+          listed here also own their top spacing, so `pt-16` comes off. */}
+      <main className={`flex-grow w-full relative z-10 ${WIDE_TOOLS.has(activeTool ?? '') ? 'max-w-[1140px]' : 'max-w-4xl'} ${activeTool === 'journey' || activeTool === 'war-room' || activeTool === 'college-compass' || WIDE_TOOLS.has(activeTool ?? '') ? 'px-6 pt-0' : 'px-6 pt-16'}`}>
          <AnimatePresence mode="wait">
             {!activeTool ? (
                 <MotionDiv
