@@ -2,5 +2,9 @@
  "biology": {
   "higher": 548,
   "ordinary": 564
+ },
+ "chemistry": {
+  "higher": 397,
+  "ordinary": 264
  }
 }
