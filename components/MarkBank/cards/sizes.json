@@ -10,5 +10,9 @@
  "physics": {
   "higher": 390,
   "ordinary": 415
+ },
+ "agricultural-science": {
+  "higher": 171,
+  "ordinary": 135
  }
 }

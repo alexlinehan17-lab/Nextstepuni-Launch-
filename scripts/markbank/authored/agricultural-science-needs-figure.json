@@ -1,0 +1,397 @@
+[
+ {
+  "questionRef": "2021 HL Q1(a)",
+  "reason": "\"Identify each of the following plants. A B C\" — three photographs of weeds. The scheme answers are A = Buttercup, B = Thistle, C = Dock (leaf), 3 x 2 marks; without the images the card is a dangling reference.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 HL Q3(a)(i)",
+  "reason": "\"State the meaning of symbols A and B on the sign\" — the two pictograms on a reproduced farm safety notice. Nothing in the text says what A and B depict.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 HL Q3(a)(ii)",
+  "reason": "\"State the function of C and D\" — two photographs of farm equipment printed on the safety notice page. Unanswerable without the images.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 HL Q3(a)(iii)",
+  "reason": "\"In relation to picture C at part (ii) above, state one advantage of using this piece of equipment to enhance sustainability of the farm.\" Depends entirely on identifying the equipment in picture C.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 HL Q3(b)(i)",
+  "reason": "\"Identify the farm machines, labelled A and B, which are attached to each tractor\" — two photographs. Scheme: A = seed drill / combine drill / one pass system, B = zero grazer.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 HL Q3(b)(iii)",
+  "reason": "\"State one way machine A can enhance environmental sustainability.\" Machine A is only identifiable from the photograph in part (b)(i), so the card would ask about an unnamed machine.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 HL Q3(b)(iv)",
+  "reason": "\"Outline one disadvantage of using machine (method) B when feeding high producing animals.\" Machine B is only identifiable from the photograph in part (b)(i).",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 HL Q4(a)",
+  "reason": "\"Identify one way in which the farm in the photograph could become more energy efficient.\" The whole question is anchored to an aerial photograph of a farm layout that has not been extracted.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 HL Q4(b)",
+  "reason": "\"State two ways in which the farmyard is suited to economy of labour.\" Every scheme answer reads off the photograph (sheds situated close together, silage bales and pit close to the sheds, cow housing close to parlour).",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 HL Q4(c)",
+  "reason": "\"Suggest two ways in which the farmer could make the farmyard more environmentally sustainable.\" Scheme answers name features of the photograph (the bank beside the shed, the collecting yard, the open lagoon).",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 OL Q1(a)(i)",
+  "reason": "Tick-box identification of a plant shown only as a photograph (scheme: 'Oilseed rape*'). Nothing in the text identifies it.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 OL Q1(a)(ii)",
+  "reason": "Tick-box identification of a plant shown only as a photograph (scheme: 'Barley*').",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 OL Q1(a)(iii)",
+  "reason": "Tick-box identification of a plant shown only as a photograph (scheme: 'Clover*').",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 OL Q1(b)(i)",
+  "reason": "'Identify each of the following plants commonly found in grassland' — four photographs labelled A–D (daisy, dock leaf, buttercup, thistle). Pure image identification.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 OL Q1(b)(ii)",
+  "reason": "'Describe one method used to kill plant B.' Plant B is identifiable only from the photograph in (b)(i), so the card would carry a dangling reference. Should be authored in the same wave as (b)(i).",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 OL Q2(a)",
+  "reason": "'Identify the labelled parts A, B, C on the diagram using the correct word from the list' — labels on a diagram of the sheep digestive system (rumen, abomasum, omasum).",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 OL Q4(a)",
+  "reason": "'Identify the two types of soils shown in profile diagrams A and B' — brown earth and podzol, distinguishable only from the two profile drawings.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 OL Q4(b)",
+  "reason": "'Outline one use for soil A.' Which profile is soil A comes only from the diagram, so a text-only card cannot say what soil is being asked about.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 OL Q4(c)",
+  "reason": "'Describe two disadvantages associated with the use of soil B.' The scheme's answers are podzol-specific (iron pan, leaching); the student can only know B is a podzol from the profile diagram.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 OL Q8(a)(ii)",
+  "reason": "'What is meant by this farm safety sign?' — the sign is an image (overhead power lines / electric shock risk).",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 OL Q8(b)(i)",
+  "reason": "'Explain this farm safety sign.' — the sign is an image (moving farm machinery).",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 OL Q9(a)",
+  "reason": "'Where would you rank the greenhouse gas emissions from agriculture in 2018?' — answered by reading agriculture's 34% slice on the EPA pie chart printed on the paper.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 OL Q10(a)",
+  "reason": "'Name the part labelled A on the diagram' — label on the cow reproductive-tract diagram (scheme: 'Ovary*').",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 OL Q10(b)",
+  "reason": "'Outline the function of the part labelled A.' Which structure A is comes only from the diagram.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 OL Q10(d)",
+  "reason": "'Indicate by placing an X on the diagram exactly where the top of the insemination gun needs to be positioned' — the answer is a mark made on the diagram, not a phrase.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 OL Q11(a)(i)",
+  "reason": "'Identify the structure located at B' on the 3D farmyard plan (scheme: silage pit).",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 OL Q11(a)(ii)",
+  "reason": "'Describe one environmental hazard and one potential safety hazard of structure B.' Structure B is identified only from the 3D plan.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 OL Q11(a)(iii)",
+  "reason": "'Outline one way in which the farmyard layout is economically sustainable.' The scheme credits observations read off the layout (buildings close together, good access roads).",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 OL Q11(a)(iv)",
+  "reason": "'Explain how one named piece of new technology could enhance economy of labour on this farm.' 'This farm' is defined only by the 3D plan, so the part travels with (a)(i)–(iii).",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 OL Q11(b)(iv)",
+  "reason": "'Place an X on the plan view above to show one place where you would advise Claire and John to install slatted tanks. Give a reason for your answer.' The 2-mark placement is a mark on the plan.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 OL Q12(a)",
+  "reason": "'Identify each breed using the list of names' — four photographs of cattle and sheep breeds (Charolais, Limousin, Jacob, Border Leicester).",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2022 HL Q2(a)",
+  "reason": "'Identify any four of the following breeds of animals' with six photographs labelled A–F (scheme: A = Landrace, B = Blue Leicester, C = Connemara (pony), D = Rhode Island red, E = Limousine, F = (Holstein) Friesian — 4(1), 4 marks). Unanswerable without the images, and no figures have been extracted for agricultural science yet, so a text-only card would be a dangling reference. Pick up in a figure wave: the crop needed is page 5 of the 2022 HL paper, the six-photo breed grid.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2022 HL Q9(a)(i)",
+  "reason": "'Draw a labelled diagram of a calf's stomach in its first week of life' (6 marks: D = 3, 2, 0 for the drawing plus L = 3(1) for any three labels). The scheme band-marks the drawing and never names the labels, so there are no discrete text marking points to tick — transcribing 'Candidates diagram must clearly show all four chambers...' would be a criterion, not an answer. The MarkBank row model deliberately excludes band rubrics until a renderer exists. Would need a reference diagram of the four-chambered calf stomach plus a named label key before it can be carded.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2022 OL Q1(a)",
+  "reason": "'Identify and state the function of machine A and B' — both machines are only identifiable from the two photographs. No figures extracted for this subject yet, so a text-only card would be a dangling reference. Scheme rows on disk: A = (fertiliser) spreader / Function = spread (shake or broadcast) fertiliser / spreading grass seed / B = Slurry spreader or slurry tanker or trailing shoe or injector / Function = spreading slurry or effluent, 2+2+2+2 = 8 marks.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2022 OL Q2(a)(i)",
+  "reason": "'Identify any three of the following breeds' — A, B, C and D are four photographs of cattle, pigs and sheep. Pure photo identification. Scheme: A = Simmental / B = Landrace / C = Blackface mountain or Swaledale / D = Jersey, tariff 3(2) = 6 marks.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2022 OL Q2(b)(i)",
+  "reason": "'Identify breed E and F' — two ram photographs. Pure photo identification. Scheme: E = Border Leister / F = Texel or Beltex, tariff 3+1 = 4 marks.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2022 OL Q2(b)(ii)",
+  "reason": "'Advise Jessica with reasons which breed to choose' — depends on identifying breeds E and F from the photographs, and the scheme prints two separate answer pools (one for E, one for F) at 3+1 = 4 marks total, so a single card cannot carry both routes without inflating the tariff. Needs the figure plus a route-aware card model.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2022 OL Q6(b)",
+  "reason": "'Identify the safety symbols labelled A and B above' — the two GHS pictograms are images on the paper. Scheme: A = Health hazard / carcinogenic (2), B = Harmful / caution / danger / warning / irritant (2) = 4 marks.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2022 OL Q7(b)(i)",
+  "reason": "'Identify what A, B and C are representing in the picture illustrating photosynthesis' — A, B and C are arrows on a labelled plant diagram. Scheme: A = Carbon dioxide (CO2) / B = Oxygen (O2) or water vapour / C = Glucose (C6H12O6) or oxygen or water vapour, tariff 4+1+1 = 6 marks.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2022 OL Q8(a)",
+  "reason": "'Identify each piece of equipment A and B above' — two laboratory-equipment photographs. Scheme: A = Inoculating loop (2), B = Petri dish or agar plate (2) = 4 marks.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2023 HL Q1(a)(i)",
+  "reason": "'Identify each of the following breeds of animals' — A, B and C are photographs of cattle printed on page 3 of the paper (the scheme gives A – Short horn, B – Belgian Blue, C – Simmental, 3(2) = 6 marks). Unanswerable without the images, so a text-only card would be a dangling reference.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2023 HL Q1(b)(i)",
+  "reason": "'Identify each of the following breeds of animals' — D, E and F are photographs on page 4 (scheme: D – Jersey, E – Suffolk, F – Texel, 3(2) = 6 marks). Same figure dependency as (a)(i).",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2023 HL Q2(b)",
+  "reason": "'Identify any two of the weeds that can be found in Irish fields using the list below' — page 5 of the paper carries three ~473x350 photographs of weeds to be matched against the printed name list (Chickweed, Charlock, Shepard's Purse). The scheme answer is 'Shepherd's purse Chickweed Charlock 2(2)', which is meaningless without seeing which photograph is which.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2023 HL Q8(c)",
+  "reason": "'Analyse the graph and briefly describe the conclusion the student made from his investigation.' The scheme's answer quotes values read off the printed bar chart (250mg/l unprotected urea vs 50mg/l protected urea) which are not in the paper's text. Needs the graph crop.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2023 HL Q10(a)(i)",
+  "reason": "'Label the diagram below of the monogastric digestive system' — A, B and C on a 1350x946 diagram on page 14 (scheme: A: Liver, B: Stomach, C: Small intestine, 3(2) = 6 marks). A labelling question with no diagram is exactly the failure this tool exists to prevent.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2023 OL Q1(a)",
+  "reason": "\"Identify any two pieces of equipment labelled A, B or C required for this investigation.\" The candidate names equipment shown in the paper's photograph (scheme: A = pH paper or (universal) indicator paper, B = graduated cylinder, C = electronic or mass balance, 2(3) = 6 marks). A text-only card would be a dangling reference to a picture that has not been extracted for this subject.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2023 OL Q1(b)",
+  "reason": "\"State the pH of the soil filtrate.\" The answer (6.5*, 3 marks, asterisked so only the exact value scores) is read off the pH probe / universal indicator shown in the paper's photograph. Not answerable from text alone.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2023 OL Q6(a)(ii)",
+  "reason": "\"Identify the best quality silage and state for which animals this silage is suitable.\" The answer (\"Best quality silage = 76%+ DMD or A\", 2 marks; \"Suitable animals = freshly calved dairy cows in winter milk\", 1 mark) is read off the paper's grass-growth-cycle diagram, whose DMD bands are lettered A-D. The lettered band cannot be resolved without the figure.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2023 OL Q6(a)(iii)",
+  "reason": "\"State which silage DMD % is suitable for dry suckler cows that have a good BCS.\" Answer \"<67(%) or D\", 1 mark — a specific band read off the same lettered DMD table in the paper's diagram.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2023 OL Q9(a)(i)",
+  "reason": "\"Identify the stomach chamber A.\" Answer \"Abomasum*\", 3 marks, asterisked. The letter A is on the paper's ruminant-stomach diagrams; without the figure the question has no referent.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2024 HL Q1(a)",
+  "reason": "\"Identify the items of farm machinery or equipment shown in A, B and C\" — the three items (bale wrapper, stomach tube, head gate / fostering crate) exist only as photographs on the paper. No figures have been extracted for Agricultural Science yet, so a text-only card would be a dangling reference. Tariff 3(2) = 6 marks; part (b) of the same question IS carded.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2024 HL Q2(a)(i)",
+  "reason": "\"Identify any two of the following breeds\" — A Landrace, B Blue Leicester, C Simmental are shown only as breed photographs. Tariff 2(2) = 4 marks. Parts (a)(ii) and (a)(iii) are carded, with the breed identities supplied as editor context.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2024 HL Q9(b)(i)",
+  "reason": "\"Based on your knowledge of soil structure, identify the soil quality of each of the different soils in A, B and C\" — the three soils are photographs of soil structure, and the judgement is entirely visual. Tariff 3(2) = 6 marks. Part (b)(ii) is carded.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2024 HL Q10(a)",
+  "reason": "\"Identify which picture A or B is more likely to be a multi-species (polyculture) sward\" — answer is \"B\", readable only from the two sward photographs. Tariff 4 marks. Parts (b) and (c) are carded.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2024 OL Q1(a)",
+  "reason": "The answer is a tick showing which way the grazing arrow points in the strip-grazing diagram. Nothing is answerable without the diagram, and the scheme prints no answer text — only the tick in the correct box.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2024 OL Q1(b)",
+  "reason": "\"Label A in the diagram.\" The answer '(Moveable)(Electric) Fence' is a label on a specific part of the strip-grazing diagram, which has not been extracted.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2024 OL Q1(c)",
+  "reason": "\"Identify the type of grazing system shown in the diagram.\" Answer 'Strip grazing' is read directly off the diagram; a text-only card would give the answer away or be unanswerable.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2024 OL Q2(b)(ii)",
+  "reason": "\"Briefly explain one reason why handling facility B is better for animal movement.\" The scheme's answer turns on the curved race in picture B versus the straight 'wrong way' race in picture A; without the two photographs the comparison has no referent.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2024 OL Q5(a)",
+  "reason": "\"Label any three parts of the diagram\" (A–D on the calf's ruminant digestive system: Omasum, Rumen, Abomasum, Reticulum). Pure figure-labelling — 3(2) = 6 marks awaiting the diagram.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2024 OL Q6(a)(i)",
+  "reason": "\"Identify any three of the following breeds\" from photographs A–D (Charolais, Border Leicester, Texel, Suffolk). Pure photo identification — 3(2) = 6 marks awaiting the images.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2024 OL Q11(a)(ii)",
+  "reason": "\"In step 2, state which hen A, B or C is the best offspring to breed future generations.\" The answer 'A' can only be reached by reading the egg numbers on each hen in the selective-breeding diagram.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2024 OL Q11(b)(ii)",
+  "reason": "\"State with reason which cow A or B a farmer would choose to cross with the Belgian Blue bull.\" The scheme's answer 'Cow: B or Charolais / Reason: Big frame / continental breed / wide pelvis' depends on seeing the two cow photographs.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2025 HL Q1(a)",
+  "reason": "'Identify both cattle breeds in A and B.' The two breeds are only shown as photographs (scheme: A: Aberdeen Angus, B: Hereford, 5+1). Unanswerable as text; needs the paper's two breed images.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2025 HL Q1(b)",
+  "reason": "'State which breed A or B has a dominant polled trait as a characteristic of the breed' (2 marks, answer 'A or Aberdeen Angus'). The student cannot know which photograph is A without seeing them, so the question dangles without the figure. The 2-mark part (c) that follows was carded because it only explains the term 'polled'.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2025 HL Q6(a)",
+  "reason": "'Identify the three pieces of equipment needed for lambing from the six images below' (3x1 names + 3x1 identified = 6 marks). Answers are letter-keyed to six photographs (A: Stomach tube / C: heat lamp / D: ropes). Needs the six-image plate. Part (b) was carded separately since it carries its own 4-mark tariff and is answerable in words.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2025 OL Q1(a)(i)",
+  "reason": "Photo-identification: 'Identify any three breeds A, B, C or D using the list below' over four cattle photographs. Answer key is A: Charolais / B: Jersey / C: Limousin / D: Holstein Friesian, tariff 3x2 = 6 (any three of the four at 2 each — a bestNofParts card, not a fixed one). Unanswerable and unmarkable without the four crops.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2025 OL Q4(a)",
+  "reason": "'Suggest two ways in which this farm allows for efficient labour' is read off an aerial photograph of a dairy farm layout; every scheme answer (paddocks near yard, roadways for access, sheds near farmhouse, silage storage near sheds) is an observation about that specific photograph. Tariff 3+2 = 5. Scheme pool ends 'any two valid examples', so the future card needs openList.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2025 OL Q4(b)",
+  "reason": "'Identify which structure A, B or C is most suitable for slurry storage' — answer 'A', 3 marks — requires the labelled photograph, and the paper's response mode is marking an X on the image itself.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2025 OL Q4(c)",
+  "reason": "'Suggest why this farm may be suited to either method of grazing' (2 marks); the scheme's answers (paddocks adjacent for rotational grazing, roadways for access, little or no hedgerows, farmyard central to the fields) all describe features of the photograph.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2025 OL Q5(a)",
+  "reason": "'Identify with reason which picture A, B, or C has the ideal soil composition' over three pie-style soil composition diagrams. Tariff 3+2 = 5 (Picture 3, Reason 2). The reason ('seedling is largest in picture B', '25% air or 25% water') is a direct reading of the figure.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2025 OL Q5(b)",
+  "reason": "'Outline one reason why soil C has a high percentage of mineral and organic matter' (2 marks) names a lettered element of the same soil-composition diagram; carding it text-only would leave 'soil C' dangling.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2025 OL Q7(a)",
+  "reason": "Photo-identification: 'Identify any three plants shown in the table' over four plant photographs. Answer key A: (Perennial) ryegrass / B: (White) clover / C: Nettle / D: Chicory, tariff 3x2 = 6 (any three of four at 2 each — bestNofParts).",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2025 OL Q8(b)",
+  "reason": "'Choose the two warning signs by placing a tick in the correct boxes to identify these signs' — answer 'Symbols 2 and 3', tariff 3+2 = 5. The hazard pictograms exist only as images; there is no text form of the options.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2025 OL Q9(a)(i)",
+  "reason": "'Identify with reason which picture A or B is the correct position for a calf at birth' over two calf-presentation drawings. Tariff 3+2 = 5 (Picture 3, Reason 2); the reason ('Fore or front legs first with head lying flat on top of legs') describes what is drawn.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2025 OL Q10(a)",
+  "reason": "'Identify the sex cell labelled A' on the sex-sorting diagram — answer 'Sperm or male', 3 marks. A labelling question with no diagram is exactly the failure the deck guard blocks.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2025 OL Q12(a)(i)",
+  "reason": "'Identify the main cause of lamb mortality' — answer 'Abortion and stillbirth', 3 marks — is read off the bar chart of causes; the bar heights are not present as text.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2025 OL Q12(a)(ii)",
+  "reason": "'Complete the graph above to show that 20% of lambs die due to disease' — the scheme's answer is 'Bar inserted in graph to height of 20', 2 marks. Needs the chart, and also needs a drawing-response renderer that Mark Bank's tick model does not yet have.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2025 OL Q12(b)(i)",
+  "reason": "'Identify which lamb (single or twin) had a higher growth rate over the 25 weeks' — answer 'Single', 3 marks — is read off the lamb growth-rate line graph.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2025 OL Q12(b)(iii)",
+  "reason": "'Predict which lamb will have a higher weight at slaughter' — answer 'Single', 3 marks — extrapolates the same growth-rate graph; without the plotted lines there is nothing to predict from.",
+  "needsFigure": true
+ }
+]

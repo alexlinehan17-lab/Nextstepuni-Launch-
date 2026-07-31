@@ -485,9 +485,10 @@ const DECKS: Record<string, Record<Level, () => Promise<{ CARDS: SecCard[] }>>> 
     higher: () => import('./cards/physics/higher'),
     ordinary: () => import('./cards/physics/ordinary'),
   },
-  // agricultural-science has no entry yet: its cards are still being authored.
-  // SUBJECTS lists it so the picker shows it as a deck being written, and
-  // sizes.json has no row for it, so deckSize() is 0 and it is never openable.
+  'agricultural-science': {
+    higher: () => import('./cards/agricultural-science/higher'),
+    ordinary: () => import('./cards/agricultural-science/ordinary'),
+  },
 };
 
 export type Level = 'higher' | 'ordinary';

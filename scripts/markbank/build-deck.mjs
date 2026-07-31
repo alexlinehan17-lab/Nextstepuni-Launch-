@@ -60,6 +60,15 @@ const SUBJECTS = {
     figureDir: 'public/exam-figures/chemistry',
     blocked: new Set(),
   },
+  'agricultural-science': {
+    title: 'Agricultural Science',
+    /* The NCCA specification published 2019 and first examined in 2021 — dated
+     * here because it IS verified: every paper in the corpus (2021-2025) sits on
+     * it, with no syllabus change to straddle. */
+    specVersion: 'lc-agricultural-science-2019',
+    figureDir: 'public/exam-figures/agricultural-science',
+    blocked: new Set(),
+  },
 };
 
 /**
