@@ -57,6 +57,37 @@ describe('Paper Trail answer sidecars — shape', () => {
       // question numbers strictly increasing (monotonic, no dupes)
       for (let i = 1; i < nums.length; i++) expect(nums[i]).toBeGreaterThan(nums[i - 1]);
 
+      // PRINT-ORDER gate. paperRegion.ts derives a question's crop by sorting
+      // the anchors into print order (page, then y) and running each one to the
+      // next — so a marker matched somewhere it does not belong silently steals
+      // a crop. The decoy-numbering families are the ones that do it: a matching
+      // exercise ("1. Jobs bei der EU … a. die für …"), a numbered passage
+      // paragraph, or an instructions page naming a later question ("Question 13
+      // in Section B"). Reading DOWN the paper, question numbers must ascend.
+      //
+      // Scoped to page granularity on purpose: a bilingual two-column page
+      // prints the same question twice side by side, so y alone orders those
+      // legitimately-equal anchors arbitrarily. Crossing a PAGE backwards has no
+      // such excuse. anchor-map.py never applied this gate; paper_anchors.py
+      // always has.
+      const byPage = new Map<number, number[]>();
+      for (const q of map.q) {
+        const list = byPage.get(q.pP);
+        if (list) list.push(Number(q.n));
+        else byPage.set(q.pP, [Number(q.n)]);
+      }
+      let priorPagesMax = 0;
+      for (const page of [...byPage.keys()].sort((a, b) => a - b)) {
+        const here = byPage.get(page)!;
+        for (const n of here) {
+          expect(
+            n > priorPagesMax,
+            `${file} Q${n} anchors on page ${page}, behind Q${priorPagesMax} on an earlier page — anchor matched decoy numbering`,
+          ).toBe(true);
+        }
+        priorPagesMax = Math.max(priorPagesMax, ...here);
+      }
+
       for (const q of map.q) {
         expect(q.mode === 'crop' || q.mode === 'pagejump', `${q.n} mode`).toBe(true);
         expect(q.pP).toBeGreaterThanOrEqual(1);
