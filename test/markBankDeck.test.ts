@@ -334,10 +334,16 @@ describe('the taxonomy is the redeveloped specification', () => {
     // A card can only ever be filed under a unit of its own subject.
     const ids = ALL_TOPICS.map(t => t.id);
     expect(new Set(ids).size).toBe(ids.length);
+    const PREFIX: Record<string, string> = {
+      biology: 'bio-', chemistry: 'chem-', physics: 'phys-',
+      'agricultural-science': 'agsci-',
+    };
     for (const subject of SUBJECTS) {
+      const prefix = PREFIX[subject.id];
+      // A new subject must be added here deliberately, not default to passing.
+      expect(prefix, `no topic-id prefix registered for ${subject.id}`).toBeDefined();
       for (const topic of subject.strands.flatMap(s => s.topics)) {
-        const prefix = { biology: 'bio-', chemistry: 'chem-', physics: 'phys-' }[subject.id];
-        expect(topic.id.startsWith(prefix!)).toBe(true);
+        expect(topic.id.startsWith(prefix), `${topic.id} is not a ${subject.id} topic`).toBe(true);
       }
     }
   });

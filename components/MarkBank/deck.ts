@@ -201,6 +201,65 @@ export const PHYSICS_STRANDS: StrandRef[] = [
   },
 ];
 
+/** Agricultural Science, from the NCCA specification (the 2019 document, first
+ *  examined 2021 — so every paper in the corpus sits on this one spec, with no
+ *  syllabus change to straddle).
+ *
+ *  Four strands: a unifying Scientific practices strand whose outcomes permeate
+ *  the other three, then Soils, Crops and Animals. Strands 2-4 each carry one
+ *  topic that the spec itself subdivides a level deeper — Soil properties into
+ *  chemical/physical/biological, and Production into its three stages — and
+ *  those subdivisions are kept, because they are how the papers actually
+ *  examine: a soil question is a chemistry question or a biology question, and
+ *  filing both under "Properties" would hide the distinction the student needs.
+ *
+ *  The Individual Investigative Study is deliberately absent. It is 100 of the
+ *  subject's 400 marks, but it is coursework marked on banded descriptors with
+ *  no named answer, so it can never become a card. The deck covers the 300-mark
+ *  written paper and the UI should not imply otherwise. */
+export const AGRICULTURAL_SCIENCE_STRANDS: StrandRef[] = [
+  {
+    id: 'as1', label: 'Strand 1', title: 'Scientific practices',
+    topics: [
+      { id: 'agsci-1-1', code: '1.1', title: 'Hypothesising' },
+      { id: 'agsci-1-2', code: '1.2', title: 'Experimenting' },
+      { id: 'agsci-1-3', code: '1.3', title: 'Evaluating evidence' },
+      { id: 'agsci-1-4', code: '1.4', title: 'Communicating' },
+      { id: 'agsci-1-5', code: '1.5', title: 'Working safely' },
+    ],
+  },
+  {
+    id: 'as2', label: 'Strand 2', title: 'Soils',
+    topics: [
+      { id: 'agsci-2-1', code: '2.1', title: 'Formation and classification' },
+      { id: 'agsci-2-2-1', code: '2.2.1', title: 'Properties — chemical' },
+      { id: 'agsci-2-2-2', code: '2.2.2', title: 'Properties — physical' },
+      { id: 'agsci-2-2-3', code: '2.2.3', title: 'Properties — biological' },
+      { id: 'agsci-2-3', code: '2.3', title: 'Management' },
+    ],
+  },
+  {
+    id: 'as3', label: 'Strand 3', title: 'Crops',
+    topics: [
+      { id: 'agsci-3-1', code: '3.1', title: 'Plant physiology' },
+      { id: 'agsci-3-2', code: '3.2', title: 'Classification/identification' },
+      { id: 'agsci-3-3-1', code: '3.3.1', title: 'Production — establishment' },
+      { id: 'agsci-3-3-2', code: '3.3.2', title: 'Production — management' },
+      { id: 'agsci-3-3-3', code: '3.3.3', title: 'Production — harvesting' },
+    ],
+  },
+  {
+    id: 'as4', label: 'Strand 4', title: 'Animals',
+    topics: [
+      { id: 'agsci-4-1', code: '4.1', title: 'Animal physiology' },
+      { id: 'agsci-4-2', code: '4.2', title: 'Classification/identification' },
+      { id: 'agsci-4-3-1', code: '4.3.1', title: 'Production — system/enterprise' },
+      { id: 'agsci-4-3-2', code: '4.3.2', title: 'Production — management' },
+      { id: 'agsci-4-3-3', code: '4.3.3', title: 'Production — animal husbandry' },
+    ],
+  },
+];
+
 /** Every subject the deck covers, with the strand structure of its own
  *  specification. Card topicIds are namespaced by subject, so a card can only
  *  ever be filed under a unit of the subject it belongs to. */
@@ -208,6 +267,7 @@ export const SUBJECTS = [
   { id: 'biology', title: 'Biology', strands: STRANDS },
   { id: 'chemistry', title: 'Chemistry', strands: CHEMISTRY_STRANDS },
   { id: 'physics', title: 'Physics', strands: PHYSICS_STRANDS },
+  { id: 'agricultural-science', title: 'Agricultural Science', strands: AGRICULTURAL_SCIENCE_STRANDS },
 ] as const;
 
 export type SubjectId = (typeof SUBJECTS)[number]['id'];
@@ -425,6 +485,9 @@ const DECKS: Record<string, Record<Level, () => Promise<{ CARDS: SecCard[] }>>> 
     higher: () => import('./cards/physics/higher'),
     ordinary: () => import('./cards/physics/ordinary'),
   },
+  // agricultural-science has no entry yet: its cards are still being authored.
+  // SUBJECTS lists it so the picker shows it as a deck being written, and
+  // sizes.json has no row for it, so deckSize() is 0 and it is never openable.
 };
 
 export type Level = 'higher' | 'ordinary';
