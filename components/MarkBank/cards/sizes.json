@@ -6,5 +6,9 @@
  "chemistry": {
   "higher": 410,
   "ordinary": 306
+ },
+ "physics": {
+  "higher": 388,
+  "ordinary": 404
  }
 }

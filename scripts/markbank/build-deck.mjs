@@ -42,6 +42,15 @@ const SUBJECTS = {
       'root-longitudinal-section', 'cell-membrane',
     ]),
   },
+  physics: {
+    title: 'Physics',
+    /* The syllabus examined before the 2027 redevelopment, named by what it is
+     * rather than by a year — its publication year is unverified here, and an
+     * unverified date in a provenance field is worse than none. */
+    specVersion: 'lc-physics-legacy',
+    figureDir: 'public/exam-figures/physics',
+    blocked: new Set(),
+  },
   chemistry: {
     title: 'Chemistry',
     /* The syllabus examined before the 2027 redevelopment. Named by what it is
