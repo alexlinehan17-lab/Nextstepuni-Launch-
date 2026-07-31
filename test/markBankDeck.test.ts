@@ -23,15 +23,17 @@ import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { createHash } from 'node:crypto';
 
-import { STRANDS, CHEMISTRY_STRANDS, ALL_TOPICS, SUBJECTS, BLOCKED_FIGURES, deckSize } from '../components/MarkBank/deck';
+import { STRANDS, CHEMISTRY_STRANDS, PHYSICS_STRANDS, ALL_TOPICS, SUBJECTS, BLOCKED_FIGURES, deckSize } from '../components/MarkBank/deck';
 import { CARDS as BIO_HIGHER } from '../components/MarkBank/cards/biology/higher';
 import { CARDS as BIO_ORDINARY } from '../components/MarkBank/cards/biology/ordinary';
 import { CARDS as CHEM_HIGHER } from '../components/MarkBank/cards/chemistry/higher';
 import { CARDS as CHEM_ORDINARY } from '../components/MarkBank/cards/chemistry/ordinary';
+import { CARDS as PHYS_HIGHER } from '../components/MarkBank/cards/physics/higher';
+import { CARDS as PHYS_ORDINARY } from '../components/MarkBank/cards/physics/ordinary';
 
 /** Every deck at once. The app loads one at a time; the guards check them all,
  *  so a new subject inherits the whole net the day its first cards land. */
-const SAMPLE_CARDS = [...BIO_HIGHER, ...BIO_ORDINARY, ...CHEM_HIGHER, ...CHEM_ORDINARY];
+const SAMPLE_CARDS = [...BIO_HIGHER, ...BIO_ORDINARY, ...CHEM_HIGHER, ...CHEM_ORDINARY, ...PHYS_HIGHER, ...PHYS_ORDINARY];
 import {
   isDiagramCard, isContentFreeRow, looksLikeSectionLabel, tariffReconciles,
   MAX_ROWS, isValidCardId,
@@ -279,6 +281,8 @@ describe('the size manifest matches the decks it describes', () => {
     ['biology', 'ordinary', BIO_ORDINARY],
     ['chemistry', 'higher', CHEM_HIGHER],
     ['chemistry', 'ordinary', CHEM_ORDINARY],
+    ['physics', 'higher', PHYS_HIGHER],
+    ['physics', 'ordinary', PHYS_ORDINARY],
   ] as const)('%s %s', (subjectId, level, cards) => {
     expect(deckSize(subjectId, level)).toBe(cards.length);
   });
@@ -310,13 +314,30 @@ describe('the taxonomy is the redeveloped specification', () => {
     ]);
   });
 
+  test('Physics has its five strands and thirty units', () => {
+    expect(PHYSICS_STRANDS).toHaveLength(5);
+    expect(PHYSICS_STRANDS.flatMap(s => s.topics)).toHaveLength(30);
+    expect(PHYSICS_STRANDS.map(s => s.title)).toEqual([
+      'The Nature of Science',
+      'Forces and Motion: Kinematics and Dynamics',
+      'Wave Motion and Energy Transfer',
+      'Electric and Magnetic Fields and their Interactions',
+      'Modern Physics: Atomic and Nuclear',
+    ]);
+    // The published spec prints U4 twice and has no U5; the second is renumbered
+    // here, so the codes must still run U1..U5 without a repeat.
+    const codes = PHYSICS_STRANDS[0].topics.map(t => t.code);
+    expect(codes).toEqual(['U1', 'U2', 'U3', 'U4', 'U5']);
+  });
+
   test('subject taxonomies do not collide', () => {
     // A card can only ever be filed under a unit of its own subject.
     const ids = ALL_TOPICS.map(t => t.id);
     expect(new Set(ids).size).toBe(ids.length);
     for (const subject of SUBJECTS) {
       for (const topic of subject.strands.flatMap(s => s.topics)) {
-        expect(topic.id.startsWith(subject.id === 'biology' ? 'bio-' : 'chem-')).toBe(true);
+        const prefix = { biology: 'bio-', chemistry: 'chem-', physics: 'phys-' }[subject.id];
+        expect(topic.id.startsWith(prefix!)).toBe(true);
       }
     }
   });

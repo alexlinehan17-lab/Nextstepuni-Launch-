@@ -132,12 +132,82 @@ export const CHEMISTRY_STRANDS: StrandRef[] = [
   },
 ];
 
+
+/** The redeveloped Leaving Certificate Physics specification (NCCA, introduced
+ *  September 2025, first examined June 2027), read from the specification PDF.
+ *  Five strands, thirty units.
+ *
+ *  ONE DEPARTURE FROM THE DOCUMENT, and it is the document's error, not a
+ *  reading of it: the spec prints "U4." twice — once for Modelling in Physics
+ *  and again for Unit analysis — and contains no U5 anywhere. They are plainly
+ *  separate units, with their own learning outcomes (generating and verifying
+ *  models; dimensional analysis and order-of-magnitude estimates), so the second
+ *  is numbered U5 here. Anything citing the printed code should expect U4. */
+export const PHYSICS_STRANDS: StrandRef[] = [
+  {
+    id: 'pu', label: 'Unifying strand', title: 'The Nature of Science',
+    topics: [
+      { id: 'phys-u1', code: 'U1', title: 'Scientific knowledge' },
+      { id: 'phys-u2', code: 'U2', title: 'Investigating in science' },
+      { id: 'phys-u3', code: 'U3', title: 'Science in society' },
+      { id: 'phys-u4', code: 'U4', title: 'Modelling in Physics' },
+      { id: 'phys-u5', code: 'U5', title: 'Unit analysis' },
+    ],
+  },
+  {
+    id: 'ps1', label: 'Strand 1', title: 'Forces and Motion: Kinematics and Dynamics',
+    topics: [
+      { id: 'phys-1-1', code: '1.1', title: 'Particle motion in a straight line' },
+      { id: 'phys-1-2', code: '1.2', title: 'Forces acting on a particle' },
+      { id: 'phys-1-3', code: '1.3', title: 'Stretching and compressing objects' },
+      { id: 'phys-1-4', code: '1.4', title: 'A work-energy model for analysing particle motion' },
+      { id: 'phys-1-5', code: '1.5', title: 'Forces acting in a gravitational field' },
+      { id: 'phys-1-6', code: '1.6', title: 'Uniform circular motion' },
+    ],
+  },
+  {
+    id: 'ps2', label: 'Strand 2', title: 'Wave Motion and Energy Transfer',
+    topics: [
+      { id: 'phys-2-1', code: '2.1', title: 'The transfer of heat energy and temperature change' },
+      { id: 'phys-2-2', code: '2.2', title: 'Travelling waves as models of disturbances' },
+      { id: 'phys-2-3', code: '2.3', title: 'Wave behaviour caused by interaction with the environment' },
+      { id: 'phys-2-4', code: '2.4', title: 'Electromagnetic energy' },
+      { id: 'phys-2-5', code: '2.5', title: 'Sound energy' },
+      { id: 'phys-2-6', code: '2.6', title: 'Principle of superposition of waves' },
+      { id: 'phys-2-7', code: '2.7', title: 'Wave effects' },
+    ],
+  },
+  {
+    id: 'ps3', label: 'Strand 3', title: 'Electric and Magnetic Fields and their Interactions',
+    topics: [
+      { id: 'phys-3-1', code: '3.1', title: 'Charge interactions' },
+      { id: 'phys-3-2', code: '3.2', title: 'Modelling electric fields' },
+      { id: 'phys-3-3', code: '3.3', title: 'Electric circuits' },
+      { id: 'phys-3-4', code: '3.4', title: 'Magnetic fields around permanent and temporary magnets' },
+      { id: 'phys-3-5', code: '3.5', title: 'The force on a current-carrying conductor in a magnetic field' },
+      { id: 'phys-3-6', code: '3.6', title: 'Induced potential difference and the generator effect' },
+    ],
+  },
+  {
+    id: 'ps4', label: 'Strand 4', title: 'Modern Physics: Atomic and Nuclear',
+    topics: [
+      { id: 'phys-4-1', code: '4.1', title: 'The electron' },
+      { id: 'phys-4-2', code: '4.2', title: 'Photoelectric emission and X-ray production' },
+      { id: 'phys-4-3', code: '4.3', title: 'Early models of the atom' },
+      { id: 'phys-4-4', code: '4.4', title: 'Radioactivity' },
+      { id: 'phys-4-5', code: '4.5', title: 'Mass-energy equivalence' },
+      { id: 'phys-4-6', code: '4.6', title: 'Harnessing energy from nuclear processes' },
+    ],
+  },
+];
+
 /** Every subject the deck covers, with the strand structure of its own
  *  specification. Card topicIds are namespaced by subject, so a card can only
  *  ever be filed under a unit of the subject it belongs to. */
 export const SUBJECTS = [
   { id: 'biology', title: 'Biology', strands: STRANDS },
   { id: 'chemistry', title: 'Chemistry', strands: CHEMISTRY_STRANDS },
+  { id: 'physics', title: 'Physics', strands: PHYSICS_STRANDS },
 ] as const;
 
 export type SubjectId = (typeof SUBJECTS)[number]['id'];
@@ -350,6 +420,10 @@ const DECKS: Record<string, Record<Level, () => Promise<{ CARDS: SecCard[] }>>> 
   chemistry: {
     higher: () => import('./cards/chemistry/higher'),
     ordinary: () => import('./cards/chemistry/ordinary'),
+  },
+  physics: {
+    higher: () => import('./cards/physics/higher'),
+    ordinary: () => import('./cards/physics/ordinary'),
   },
 };
 
