@@ -30,7 +30,7 @@ import { fileURLToPath } from 'node:url';
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 const MANIFEST = resolve(ROOT, 'components/MarkBank/figures.json');
 
-const SUBJECT_TITLE = { biology: 'Biology', chemistry: 'Chemistry' };
+const SUBJECT_TITLE = { biology: 'Biology', chemistry: 'Chemistry', physics: 'Physics' };
 
 const catalogue = JSON.parse(readFileSync(process.argv[2] ?? '', 'utf8'));
 
