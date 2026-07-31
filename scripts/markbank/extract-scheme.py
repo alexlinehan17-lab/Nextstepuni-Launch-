@@ -76,6 +76,39 @@ def render_row(row) -> str:
     return " ".join(cells)
 
 
+
+# ------------------------------------------------------------- ligatures ----
+
+# Some SEC PDFs embed a subsetted font whose LIGATURE glyphs carry no sensible
+# Unicode mapping, so the extractor faithfully reports the wrong codepoint. The
+# 2024 Chemistry Ordinary scheme came out with 213 instances of "Ɵ" standing for
+# "ti" — "unsaturaƟon", "addiƟon reacƟon", "separaƟon" — plus 73 f-ligatures.
+#
+# This costs far more than legibility. The authoring agents READ these files, and
+# a diligent one silently corrects "reacƟon" to "reaction" in its head; the card
+# is then right and the provenance check, which compares against the corrupted
+# source, throws it away. That one file was losing 43% of its cards while every
+# other paper lost under 17%.
+LIGATURES = {
+    "\u019f": "ti",   # Ɵ  LATIN CAPITAL LETTER O WITH MIDDLE TILDE
+    "\u0166": "ti",   # Ŧ
+    "\ufb00": "ff",
+    "\ufb01": "fi",
+    "\ufb02": "fl",
+    "\ufb03": "ffi",
+    "\ufb04": "ffl",
+    "\ufb05": "st",
+    "\ufb06": "st",
+}
+
+
+def unligature(text: str) -> str:
+    """Restore ligature glyphs that the PDF's font encoding mangled."""
+    for bad, good in LIGATURES.items():
+        text = text.replace(bad, good)
+    return text
+
+
 def join_spans(spans) -> str:
     """Join spans, inserting a space only where the geometry shows one."""
     parts = []
@@ -98,7 +131,7 @@ def join_spans(spans) -> str:
                 continue
         parts.append((" " if parts and not parts[-1].endswith(" ") and not text.startswith(" ") else "") + text)
         prev = span
-    return re.sub(r"[ \t]+", " ", "".join(parts)).rstrip()
+    return unligature(re.sub(r"[ \t]+", " ", "".join(parts)).rstrip())
 
 
 # ---------------------------------------------------------------- quality ----

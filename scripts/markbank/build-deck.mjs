@@ -281,6 +281,14 @@ for (const c of cards) {
   const badTariff = tariffFault(c);
   if (badTariff) { dropped.push(`${c.id}: ${badTariff}`); continue; }
 
+  /* A row id repeated inside one card is not cosmetic: rowId() keys the claims
+   * map, so two rows sharing an id are one claim to the scorer — ticking either
+   * credits both — and React collapses them to a single element. Seen in the
+   * wild, so the build refuses it rather than the deck carrying it. */
+  const rowIds = new Set();
+  const dupeRow = c.rows.map(r => r.id).find(id => rowIds.has(id) || (rowIds.add(id), false));
+  if (dupeRow) { dropped.push(`${c.id}: row id "${dupeRow}" appears twice`); continue; }
+
   // A question naming lettered parts is unanswerable without the figure.
   const invitesDrawing = /you may include a labelled/i.test(c.questionText);
   const namesLetters = !invitesDrawing
