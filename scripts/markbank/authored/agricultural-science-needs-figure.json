@@ -393,5 +393,395 @@
   "questionRef": "2025 OL Q12(b)(iii)",
   "reason": "'Predict which lamb will have a higher weight at slaughter' — answer 'Single', 3 marks — extrapolates the same growth-rate graph; without the plotted lines there is nothing to predict from.",
   "needsFigure": true
+ },
+ {
+  "questionRef": "2021 HL Q14(b)(i)",
+  "reason": "'Identify each of the following cattle and sheep breeds' over four photographs labelled A, B, C, D (scheme: A = Suffolk, B = Shorthorn, C = Belgian blue, D = Texel, 4(1)). The answers are meaningless without the images, and the build additionally drops any card whose questionText names lettered parts and carries no labelled figure. No agricultural-science figures have been extracted yet.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 HL Q15(b)(i)",
+  "reason": "'Identify which treatment is the most beneficial organic fertiliser for a steady supply of herbage over the five month period' is answered by reading the printed line graph of total available kg DM/ha for five treatments across November to March. The scheme's answer ('FYM ‐ High', 3 marks) cannot be reasoned to from text alone, and unlike the Q14(c) report the graph is not a data table that can be reproduced faithfully in a stem.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 HL Q15(b)(ii)",
+  "reason": "A calculation read straight off the same graph (3+2 marks), comparing the increase in kg DM/ha for the chosen treatment against the control. The scheme gives two accepted solutions using values lifted from the graph (3700 - 1400, 3400 - 1000 etc.); without the graph the student cannot check where those numbers come from.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 HL Q15(b)(iii)",
+  "reason": "'Using evidence from the data, outline the advice you would give him in relation to the source and application rates of organic fertiliser' (4 marks). The scheme's answer is anchored to a graph reading — 'The highest Kg DM per ha availability in Feb for early turnout in spring was in the FYM High (25 ton / ha) treatment as there was 3200 kg DM per ha available for grazing' — so a text-only card would be a dangling reference to the figure.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 HL Q15(b)(iv)",
+  "reason": "Three specific recommendations, 3(2) = 6 marks, where the scheme states outright 'All statements above must be backed up by relevant evidence from graph'. Every marking point is a comparison between plotted treatment lines (FYM v slurry, high v low rates, March availability), so the part is unanswerable and unmarkable without the graph.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 HL Q16(a)(i)",
+  "reason": "Calculate which farmer (Dan or Joe) earns a higher price for their milk. The whole task is arithmetic on the paper's printed payment table (supply in litres and kg, protein and fat percentages and kilograms for each farmer, the €5.48/kg protein and €3.35/kg fat prices, the €0.04/litre processing deduction, and Joe's already-computed €9,316 and €6,830 lines). The scheme's answer is the worked calculation itself (1803 x 5.48 = 9880.44 ... Total = 15,558.64 against Joe's 14,146), which is meaningless without the table it operates on. Worth 6 marks (4 for correct totals, 2 for naming Dan) — bind the table crop and this becomes a strong card.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 HL Q17(b)(i)",
+  "reason": "Determine the P and K soil indexes for field 2. This is table-reading twice over: the candidate must take field 2's P result (6.42 mg/l) and K result (157 mg/l) off one printed table and look each up against the printed Reference Soil Index table (P index 3 = 5.1-8.0 mg/l, K index 4 = 151 mg/l and above) to reach the scheme's 'P = 3 / K = 4 (both answers must be correct for 3 marks)'. Without both tables on screen there is nothing to determine. 3 marks.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 OL Q13(b)(i)",
+  "reason": "Reads 'Which county has the highest % fluke damage?' against a printed county map of liver fluke damage to beef cattle livers (Q3 2020 Beef HealthCheck data). The scheme's answer is 'Louth* (at 17%)' — unreachable without reading the map, so a text-only card would be a dangling reference. 4 marks.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 OL Q17(b)(i)",
+  "reason": "'Complete the graph below by plotting the percentage germination of the grass seeds at 20°C as calculated at part (a) and at 30°C.' The answer is a plotting act on the printed bar chart ('Correct bar drawn at 20oC up to 60', 'Correct bar drawn at 30oC up to 65'), which cannot be ticked off a text-only card. Worth 3+3 = 6 marks.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 OL Q18(b)(iii)",
+  "reason": "'The following are pictures of two beef cattle breeds... State one physical trait, in either of the animals above, and give one reason why this trait is an advantage to beef farmers.' The trait is to be read off the two breed photographs, so a text-only card leaves a dangling reference. Worth 2+2 = 4 marks. (Scheme answers exist and are transcribable — 'polled (no horns)' / 'less dangerous' — so this becomes cardable the moment the figure is extracted.)",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 OL Q18(c)(ii)",
+  "reason": "'Using the graph, determine the minimum number of weeks for the lambs to reach this liveweight.' The question instructs the candidate to read the printed liveweight graph, and the scheme's answer is '14 ( can be indicated on the graph)'. Worth 4 marks.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2021 OL Q18(d)(ii)",
+  "reason": "'Identify which treatment group had the greatest effect on plant growth.' The answer ('All nutrients (NPK)') is read off the printed bar chart of mean shoot length by treatment group; the chart's series-to-value mapping could not be reconstructed from the extracted text with certainty, so it is not inlined. Worth 2 marks.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2022 HL Q13(a)(iii)",
+  "reason": "Pure photograph identification — 'Identify any two of the following plants A, B or C from the sward', where A, B and C are three photographs printed on page 20 of the paper. The scheme's answers (A = Italian ryegrass, B = Chicory, C = Cocksfoot) are meaningless without the images. 2 marks (2(1)).",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2022 HL Q13(a)(iv)",
+  "reason": "'Identify the growth cycle stage of the plants in part (iii) and describe briefly what happens at this stage.' Both halves dangle on the same three photographs: the stage ('Reproductive stage') can only be read off the pictured seed heads, and the description row credits 'wind pollination occurs in A or insect pollination occurs in B', which names the lettered photographs directly. Naming A/B/C in a stem would not fix it, because the plant names alone do not tell a student what growth stage the plants were photographed at. 6 marks (3 + 3).",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2022 HL Q14(c)(i)",
+  "reason": "'Analyse the picture of calf housing below … Identify three aspects of the shed which make it a suitable environment for calves and provide a reason for each aspect identified.' The scheme's answers name features of the pictured shed specifically (space sheeting or high roof, board or concrete walls, clean roof lights, large lying area, clean bedding, long feed barrier), so the whole part hangs on the photograph on page 25 of the paper. 9 marks (3(3)).",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2022 HL Q14(c)(ii)",
+  "reason": "'Complete the diagram using arrows to show the natural airflow he should expect through the shed.' The student annotates a printed cross-section of the shed, and the scheme's answer ('Correct indication of arrows coming in at side / going out through roof') is a judgement about marks drawn on that diagram. 5 marks (4 + 1).",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2022 HL Q18(b)(ii)",
+  "reason": "'Using the Integrated Management System for controlling weeds (outlined on previous page), provide advice to them on the future of weed control on their farms', 3(4) = 12 marks. The question sends the candidate to the Teagasc IMS diagram printed on the previous page, which has not been extracted for this subject. Separately, the scheme's answer is a two-column table (IMS component -> advice) whose left column — Integrated Management, Use of herbicides, Increased seed rates, Cover crops, Competitive crops, Rogueing, Crop rotation, Whole cropping, Crop destruction, On-farm hygiene, Machinery hygiene — is interleaved into the middle of the right-hand advice text by the PDF extractor, so not one marking point can be transcribed with its component name intact. Both reasons independently rule the card out.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2022 OL Q13(b)(i)",
+  "reason": "\"Sketch onto the photograph of field A below, the pattern the farmer would use when taking a number of soil samples.\" The whole answer (\"W shape on photograph\", 4 marks) is a mark made on the photograph printed in the paper, and no figures have been extracted for Agricultural Science, so a text-only card would be a dangling reference to an image the student cannot see.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2022 OL Q16(a)(ii)",
+  "reason": "Requires the printed grass-growth curve AND is a drawing task on it: 'Shade onto the graph above the portion which represents the excess grass in summer months.' The scheme answer ('Shaded area between continous blue line and orange dash line') is meaningless without the two plotted lines. No figure extracted for this subject yet.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2022 OL Q16(c)(i)",
+  "reason": "'Identify each of the plants A and B' — the plants exist only as photographs on page 31. The scheme answers (Ragwort; Plantain or Ribwort) cannot be reached from text.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2022 OL Q16(c)(ii)",
+  "reason": "'State one impact plant A has on farming or the environment.' Plant A is identifiable only from the photograph, so the card would be answerless without it, even though the scheme's answers are text.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2022 OL Q16(d)(i)",
+  "reason": "'Identify each of the following plants commonly found on Irish farms' — plants C and D are photographs only (scheme: Thistle; Oats (wild)).",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2022 OL Q16(d)(ii)",
+  "reason": "'State one use for plant D.' Plant D (wild oats) is identifiable only from the photograph.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2022 OL Q17(b)(i)",
+  "reason": "'Calculate the total bovine nitrogen (figure A) for John's 1-2 year-old cattle' — the multipliers (40 livestock, 57 kg N) come only from the printed bovine-nitrogen data table, and the answer cell is the lettered item A. Note for a later pass: this table is plain text/numbers, not an image, so if the deck ever supports an inlined data table in the stem, Q17(b)(i)-(iii) become 20 further marks of good cards.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2022 OL Q17(b)(ii)",
+  "reason": "'Calculate the total bovine nitrogen (figure B) for all animals on John's farm' — the five addends (2990, 1056, 2280, 57, 65) come from the printed data table and the answer cell is the lettered item B.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2022 OL Q17(b)(iii)",
+  "reason": "'State if John achieved his target of 5% bovine nitrogen reduction.' The comparison depends on figure B, which is only obtainable from the printed data table in (b)(ii).",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2022 OL Q18(a)(ii)",
+  "reason": "'Identify which variety of perennial ryegrass produces the highest yield.' The scheme answer (Moyola, 105 t DM/ha) is read straight off the printed DAFM variety table; without it the card has no data to analyse.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2022 OL Q18(a)(iii)",
+  "reason": "'Identify which variety would produce more grass in autumn.' Same printed DAFM variety table (scheme: Moyola, 107); unanswerable as text.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2023 HL Q13(b)(i)",
+  "reason": "Asks the candidate to identify the soil water content level for each of three soil-sample diagrams labelled A, B and C printed in the paper (brown = soil particles, blue = water, white = air spaces). The scheme's answer is positional (A: Saturation / B: Permanent wilting point / C: Field capacity), so without the figure the card would be an unanswerable dangling reference. Worth 3(3) = 9 marks; card it once the figure is extracted.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2023 HL Q15(c)(i)",
+  "reason": "Requires reading the bar chart 'Effect of soil pH on nitrous oxide (N2O) emissions' printed in the paper to pick the pH with the lowest cumulative emissions. The scheme answer is the starred value '*6.9', which cannot be derived from text alone. Worth 6 marks; card it once the graph is extracted.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2023 HL Q15(c)(ii)",
+  "reason": "Asks the candidate to discuss the relationship between pH and N2O emissions 'on the graph' and its implications for farming practice, so it depends on the same bar chart as (c)(i). Worth 5 + 3 = 8 marks; card it once the graph is extracted.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2023 HL Q16(a)(i)",
+  "reason": "'Identify the main source of carbon emissions on the farm.' The answer (*Animal digestion) is read straight off the Bord Bia bar chart of percentage share by source. The bar values are not extractable text and no figure has been bound for this subject, so a text-only card would be unanswerable.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2023 HL Q16(a)(ii)",
+  "reason": "'State with reason if the main source of emissions is above or below the national average for the enterprise.' The scheme's answer ('Below' / 'As the average for the enterprise is over 40% / is less for the current and previous assessments') is a direct read of the graph's national-average series against the farm's bars.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2023 HL Q16(a)(iii)",
+  "reason": "'Comment on the overall carbon emissions on the farm since Anna and Lucy joined the scheme and justify your answer.' Requires comparing the 2021 and 2019 assessment series bar by bar against the national average, including 'correct use of percentages from graph'.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2023 HL Q17(b)(iii)",
+  "reason": "'Identify any two of the plant species commonly found in Irish multi species seed mixtures.' The paper prints three photographs labelled A, B and C and the scheme answers them as A = Perennial ryegrass or PRG, B = (Ribwort) plantain, C = Chicory. Pure photo identification.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2023 HL Q18(a)(i)",
+  "reason": "'Label any three parts of the structure of the udder.' The paper prints an udder diagram with leader lines A, B, C and D; the scheme is a label key (A Teat, B Median suspensory ligament, C Connective tissue / fine membrane, D Epidermis / hind quarter / outer wall). Unanswerable without the labelled diagram, and the build gate also refuses a lettered-parts question that carries no bound figure.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2023 HL Q18(a)(v)",
+  "reason": "'Assist Jenny in placing each step in the correct order by matching the correct letter to the number in the box.' The four California Mastitis Test steps are printed as a lettered picture-and-caption grid (A-D) and the scheme answer is the ordering '1 A 2 D 3 B 4 C'. The letters must be decoded from the paper's figure.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2023 OL Q13(a)(ii)",
+  "reason": "Pure identification from the paper's three plant photographs — the scheme's answers are 'A: Red clover / B: Perennial ryegrass / C: White clover' (6+3+3 = 12 marks), which cannot be asked without the pictures. No figures have been extracted for Agricultural Science yet. The three identities are carried in the stem of the Q13(a)(iii) card so that part's reference to 'plants A and C' is not dangling.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2023 OL Q13(b)(i)",
+  "reason": "Answer is 'Disc' (6 marks), read straight off the paper's bar chart comparing plough, disc, one pass and direct drill. Unanswerable without the graph.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2023 OL Q13(b)(ii)",
+  "reason": "Asks for the conclusion the researchers can draw, and the scheme's answer explicitly references the data ('correct ranking in relation to sustainability (using data from graph)', 2 marks). Unanswerable without the graph.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2023 OL Q14(b)(i)",
+  "reason": "'State which diagram A, B or C has a higher biodiversity level and give a reason' — the scheme answers 'Diagram: C' plus reasons drawn from what is drawn in that diagram (4 + 4 marks). Unanswerable without the three farm diagrams.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2023 OL Q14(b)(ii)",
+  "reason": "Asks about 'the crop X being sown between the cows and the river in diagram A' — the lettered crop and its position exist only in the diagram (4 marks).",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2023 OL Q14(b)(iv)",
+  "reason": "'State which diagram represents farming in the least environmentally friendly way and give two reasons' — the scheme answers 'Diagram: B' plus two reasons about what is drawn there (4 + 2(4) = 12 marks). Unanswerable without the diagrams.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2023 OL Q15(a)(ii)",
+  "reason": "'Identify which soil is compacted and give a reason' — the scheme answers 'Soil sample – B' with the reason 'less (air) spaces or soil particles closer together' (5 + 5 marks), both read off the two soil-particle diagrams. Unanswerable without them.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2023 OL Q15(b)",
+  "reason": "'Assist Brian in labelling the diagram' of a brown earth profile — the scheme answers 'A: Top Soil / B: Sub soil' (6+4 = 10 marks) against letters printed on the paper's soil-profile drawing. Unanswerable without it. Its alternative, part (c), is carded instead.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2024 HL Q13(a)(ii)",
+  "reason": "'Identify the plants A, B, C and D using the list below.' The paper prints four photographs labelled A–D and the scheme answer is simply the mapping A=Primrose, B=Nettle, C=Ragwort, D=Meadow Thistle. Without the four images the card is a dangling reference — nothing on it tells the student which plant is which. Worth 4(2) = 8 marks, so this is the single largest gap in the Q13 coverage and should be re-carded once agricultural-science figures are extracted and inspected.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2024 HL Q15(c)(i)",
+  "reason": "'Calculate the average (mean) daily liveweight gain of the calves from birth to 15 weeks.' The two numbers the calculation starts from (125 kg at 15 weeks, 40 kg at birth) are only readable off the printed bar chart 'Average Liveweight Gain of Dairy Beef Calves', which the question explicitly points at ('shown in the graph below', 'Analyse the graph'). Worth 6 marks. Re-card once the graph is extracted and inspected.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2024 HL Q16(b)(i)",
+  "reason": "\"Based on the results shown, state if there is any difference in colostrum quality when pooled.\" The answer (\"Pooled colostrum is best or valid comparison with Sample 2 or Sample 3\") requires reading the IgG / birthweight / weaning-weight results table printed in the paper. No figure has been extracted for this subject, so a text-only card would be a dangling reference.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2024 HL Q16(b)(ii)",
+  "reason": "\"Outline advice Ella and Sadie would give to farmers based on the results of their investigation.\" The 4-mark answer compares the three treatment groups' weaning weights, which only exist in the results table printed in the paper.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2024 HL Q17(c)(ii)",
+  "reason": "\"Calculate A the % soil organic matter in the peat sample.\" The scheme's working is 55.2/90 X 100 = 61.3(%); the 55.2 g loss in mass is only given in the results table printed in the paper.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2024 HL Q17(c)(iii)",
+  "reason": "\"Calculate B the % soil organic carbon in the peat sample.\" Depends on value A from the same results table (61.3 x 0.58 = 35.55 or 36%), which is not available without the table.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2024 HL Q18(a)(ii)",
+  "reason": "\"Identify the breeds shown in A and B.\" A and B are photographs of cattle printed in the paper; the answers (Hereford, Holstein Friesian) cannot be reached without seeing them.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2024 HL Q18(a)(iii)",
+  "reason": "\"List two dominant features from parents in A and B in part (ii) above that are passed to the offspring C.\" Depends on three photographs (parents A and B, offspring C) printed in the paper.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2024 HL Q18(c)",
+  "reason": "\"Using the information shown in the diagram on IPM, advise farmers on ways they can reduce chemical inputs on their farm.\" The 16-mark answer is structured around the IPM pyramid diagram printed in the paper (Chemical / Biological / Physical-Mechanical / Cultural-Sanitation / Prevention). Worth re-carding as a diagram card once that figure is extracted — it is the single largest part in these three questions.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2024 OL Q13(a)(ii)",
+  "reason": "Asks 'Identify any three of the plants' from four photographs labelled A-D printed in the paper; the scheme answers A: Nettle / B: Dock leaf / C: Clover / D: Perennial Ryegrass. Without the images the letters are dangling references. 12 marks (3(4)).",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2024 OL Q13(b)(i)",
+  "reason": "'Calculate the average % frequency A for the dock leaf' — the 4-of-10 quadrat count can only be read off the results table printed in the paper, and the scheme's answer (4/10 x 100/1 = 40%) is meaningless without it. 6 marks.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2024 OL Q13(b)(iii)",
+  "reason": "'Identify the most suitable chart or graph ... by placing a tick in the correct box' — options A, B and C are three chart images. The scheme's entry is a tick mark on image B with no answer text at all, so it is also a tariff-only row under LAW 3. 6 marks.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2024 OL Q14(a)(ii)",
+  "reason": "'Identify the best time of the year to cut grass for silage by placing an X on the diagram' — the answer is an X on the seasonal grass-growth curve printed in the paper. The scheme's entire entry is the single character 'X', which is a tariff/placement instruction and not an answer (LAW 3). 3 marks.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2024 OL Q14(b)(i)",
+  "reason": "'Identify the correct stage of cutting the grass for silage by placing a tick in the correct box' — A and B are two photographs of grass swards. The scheme's entry is a tick under image B with no answer text. 2 marks.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2024 OL Q14(b)(ii)",
+  "reason": "'Briefly outline one reason for your choice in part (i)' — the creditable answer depends on which photograph the candidate ticked in (b)(i) (the scheme adds 'Allow opposite points for A'), so the card cannot stand alone without both images. 2 marks.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2024 OL Q14(b)(iii)",
+  "reason": "'Identify the growth stage of plant B' — plant B is one of the two grass photographs from (b)(i). The answer (Vegetative) is text, but 'plant B' is a dangling reference without the image. 2 marks.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2024 OL Q15(a)(ii)",
+  "reason": "'Label the diagram of the ewe reproductive system' — A, B, C and D are leader lines on a diagram printed in the paper (A Uterus, B Fallopian tube, C Ovary, D Cervix). Unanswerable without the labelled figure. 12 marks (4(3)).",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2024 OL Q15(b)(iv)",
+  "reason": "'Using the colours in the box below, list the colours in order of sequence used by the farmer during mating' — the box is three photographs of raddle tubs labelled A (green), B (blue), C (yellow), and the scheme answers as 'Yellow / C', 'Green / A', 'Blue / B'. The letter half of every answer is a dangling reference without the photographs. 6 marks (4 + 1 + 1).",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2024 OL Q18(a)(iii)",
+  "reason": "The question is 'Identify the breed of dairy cow shown in the picture below.' and the scheme answers '(Holstein) Friesian' (6 marks). The answer can only be read off the photograph printed on the paper, and no figures have been extracted for Agricultural Science yet, so a text-only card would be a dangling reference. Card it in a later figure wave once the crop is extracted and inspected.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2025 HL Q13(d)(i)",
+  "reason": "'Identify the hormone labelled X responsible for milk let down.' The paper prints a picture of the cow/udder with the hormone marked 'Hormone X'; the scheme answer is Oxytocin. Text-only the letter X decodes to nothing, and the build's lettered-parts guard would drop the card anyway (it names 'labelled X' with no bound figure). Worth 5 marks.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2025 HL Q14(a)(i)",
+  "reason": "'Identify which soil A or B is most compacted and outline a reason for your answer.' A and B are the two halves of a photograph of crop growth in compacted vs uncompacted soil; the scheme answer is 'Soil: B' with the reason 'hard pan or little space for roots to grow'. Nothing in the text says which of A or B is which. Worth 10 marks (6+4).",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2025 HL Q14(a)(ii)",
+  "reason": "'Calculate the % available water in a silt loam soil.' The scheme's working is '30 – 10 = 20%' — both figures are read off the paper's graph of water availability by soil type (field capacity and permanent wilting point bars for silt loam). Without the graph the numbers have no source. Worth 6 marks.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2025 HL Q15(b)",
+  "reason": "'Identify any three common plants found on Irish farms in the photographs below.' Pure photo-identification of four plants A–D (scheme key: A cleavers, B chicory, C silverweed, D oilseed rape), 3x1. Unanswerable and unmarkable without the four crops.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2025 HL Q15(c)",
+  "reason": "'Using the diagram below, outline the advice you would give them under the following headings: types of weed control; negative effects of weed control on farms; safety considerations...'. The question names the diagram explicitly and the scheme even credits 'any valid qualified description of a point from diagram'. Separately, its 4x4 tariff spreads sixteen printed marking points across three headings ('One point under each heading and the fourth point from any heading'), which cannot be represented inside the five-row cap without distorting the structure. Worth 16 marks — the single biggest part left uncarded.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2025 OL Q13(a)(i)",
+  "reason": "Figure-dependent. The part reads \"Identify which method of soil sampling A, B or C she should carry out and explain one reason why she should use this method\", and the paper prints three photographs of a field overlaid with three different sampling paths (a zig-zag, scattered crosses, a W). The scheme's answer is \"Method: C\" plus a reason about that pattern; neither the choice nor the reason is answerable without seeing the three pictures. Worth 9 marks (5 + 4).",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2025 OL Q14(c)(iii)",
+  "reason": "Figure-dependent. \"The photographs below J, K and L show three common crops grown in Ireland. Identify any two of these crops\" — the answer (J: Maize, K: Wheat, L: Oilseed rape) can only be reached by looking at the three photographs, which are not extracted. Worth 8 marks (4 + 4).",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2025 OL Q15(b)(iii)",
+  "reason": "Figure-dependent. The paper prints a pie chart of average milk composition with two of its segments lettered A and B, and asks the candidate to identify them (scheme: A = (Butter) fat, B = Water). The segment values do appear as extracted text, but matching a value to the letter A or B depends on the chart's layout, which is an inference rather than a transcription — exactly the \"items labelled A/B/C\" case. Worth 6 marks (4 + 2).",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2025 OL Q15(d)(i)",
+  "reason": "Figure-dependent. \"The photographs below show four stages of calf nutrition from birth to six weeks old. Place each step in the correct order\" — the answer is the letter sequence D – A – B – C, which refers to four lettered photographs that are not extracted. Worth 8 marks (4x2).",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2025 OL Q16(a)(i)",
+  "reason": "\"Identify three things that make the housing in the photograph suitable for beef animals\" (10 marks, 4+4+2). Every scheme answer — slatted floor / rubber mats / natural lighting / straw bedding / adequate space in pens / (adequate) feeding space / good ventilation / high roof for good air circulation / headlock gates / pen gates — is read off the photograph of the beef shed on page 28. Unanswerable as a text-only card.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2025 OL Q16(c)(i)",
+  "reason": "\"The DM% of typical forage crops is shown below in the table. Identify which DM% represents Tom's silage, by placing a tick in the correct box\" (6 marks, answer 25%). The forage-crop DM table is printed as an image on page 30 and did not extract as text, so the card would carry a dangling \"shown below in the table\" reference even though the three tick-box options (25% / 45% / 65%) are text.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2025 OL Q17(b)(ii)",
+  "reason": "\"Describe how a student would show that flocculation has occurred in a soil by arranging the steps of the investigation shown below in the correct order\" (16 marks, 4x4). The scheme's entire answer is the letter sequence \"D - A - B - C\", and the letters are bound to four photographed test-tube boxes by page layout, not by printed text. A text-only card would show a bare letter string with nothing to attach it to. (The four step captions themselves ARE text, and are reproduced in the stems of the (b)(iii) and (b)(iv) cards, which is what makes those two answerable.)",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2025 OL Q18(c)(i)",
+  "reason": "\"Identify the dairy product which decreased in exports between 2015 and 2021\" (6 marks, answer Infant food). Read directly off the Bord Bia bar chart of Irish dairy exports on page 36; only the axis labels and category names extracted, not the bar values.",
+  "needsFigure": true
+ },
+ {
+  "questionRef": "2025 OL Q18(c)(ii)",
+  "reason": "\"Using the graph, estimate the value of Irish butter exports to Ireland in 2021\" (6 marks, answer 265,000 to 275,000). The answer is a reading off the same bar chart; the question names the graph explicitly and cannot be answered without it.",
+  "needsFigure": true
  }
 ]
