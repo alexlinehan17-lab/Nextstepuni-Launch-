@@ -27499,5 +27499,2705 @@
    }
   ],
   "notes": "The scheme pools (i) and (ii) as one ordered split (9 + 3 = 12)."
+ },
+ {
+  "id": "chem-2025-ol-q1-b-fig",
+  "topicId": "chem-u2",
+  "conceptId": "reflux-vs-distillation-apparatus",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2025 OL Q1(b)",
+  "stem": "Soap is a product of the reaction between a solution of sodium hydroxide (NaOH) and a common household substance A. A student mixed suitable amounts of substance A with solid NaOH in a solvent mixture of water and ethanol. The mixture was heated gently for about 20 minutes using a hot-water bath, as shown in Diagram 1. Ethanol was then removed from the reaction mixture as shown in Diagram 2.",
+  "questionText": "(i) Name the technique shown in Diagram 1, which is used to heat the reaction mixture without loss of solvent. (ii) Name the technique shown in Diagram 2, which is used to separate the ethanol from the reaction mixture.",
+  "figureKey": "chemistry-2025-OL-paper-p02-i0",
+  "labelKey": [
+   {
+    "letter": "Diagram 1",
+    "meaning": "the set-up in which the mixture was heated gently for about 20 minutes using a hot-water bath",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "Diagram 2",
+    "meaning": "the set-up by which ethanol was removed from the reaction mixture",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "(liebig) condenser",
+    "askedInThisQuestion": false
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Diagram 1 — reflux",
+    "marks": 6
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Diagram 2 — distillation",
+    "marks": 6
+   }
+  ],
+  "notes": "Figure opened and verified: chemistry-2025-OL-paper-p02-i0 shows Diagram 1 (a vertical water-jacketed condenser on a round-bottomed flask standing in a trough of hot water, with arrows labelling C, 'reaction mixture' and 'hot water') and Diagram 2 (flask in 'boiling water', still head with thermometer, condenser sloping down to a conical receiver, arrow labelling C). The card carries the figure because the question NAMES 'Diagram 1' and 'Diagram 2' — without the crop the question points at something the student cannot see. It supersedes the figureless chem-2025-ol-q1-b for this questionRef (build-deck.mjs:252-256). The answers are not read off the apparatus: each part states the technique's function ('heat without loss of solvent' / 'separate the ethanol'), so the figure makes the question coherent rather than answerable. C is decoded as not-asked so the 'What every label means' panel does not leave a visible arrow-label unexplained; that panel renders only inside the post-reveal 'The scheme' block."
+ },
+ {
+  "id": "chem-2025-ol-q1-c-fig",
+  "topicId": "chem-u2",
+  "conceptId": "liebig-condenser-and-condensation",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2025 OL Q1(c)",
+  "stem": "Soap is a product of the reaction between a solution of sodium hydroxide (NaOH) and a common household substance A. A student mixed suitable amounts of substance A with solid NaOH in a solvent mixture of water and ethanol. The mixture was heated gently for about 20 minutes using a hot-water bath, as shown in Diagram 1. Ethanol was then removed from the reaction mixture as shown in Diagram 2.",
+  "questionText": "(i) Name the piece of apparatus labelled C in the diagrams. (ii) Identify the change of state that occurs in C.",
+  "figureKey": "chemistry-2025-OL-paper-p02-i0",
+  "labelKey": [
+   {
+    "letter": "C",
+    "meaning": "(liebig) condenser",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "Diagram 1",
+    "meaning": "the set-up in which the mixture was heated gently for about 20 minutes using a hot-water bath",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "Diagram 2",
+    "meaning": "the set-up by which ethanol was removed from the reaction mixture",
+    "askedInThisQuestion": false
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "C — (liebig) condenser",
+    "marks": 6,
+    "contextNote": "The bracketed word was not required in 2025 — 'condenser' on its own scores."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "gas (vapour)",
+    "marks": 3,
+    "contextNote": "The scheme allows 3 marks for 'condensation' on its own, and awards 3 marks if the two states are given the wrong way round."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "to liquid",
+    "marks": 3
+   }
+  ],
+  "notes": "Genuinely figure-dependent: 'the apparatus labelled C' cannot be answered without seeing where the two C arrows point. Figure opened and verified — in chemistry-2025-OL-paper-p02-i0, C points at the vertical water-jacketed condenser in Diagram 1 and at the sloping water-jacketed condenser in Diagram 2, both drawn with the two side arms of a Liebig condenser. (c)(i) and (c)(ii) share one card because the paper prints a single (12) tariff over both; the scheme's own 6 / 3 / 3 split gives the per-row marks. Decoding C in the label key does not pre-empt the question: LabelKeyPanel renders inside the post-reveal 'The scheme' block, never alongside the question."
+ },
+ {
+  "id": "chem-2025-ol-q1-e-fig",
+  "topicId": "chem-u2",
+  "conceptId": "hazard-warning-pictograms",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2025 OL Q1(e)",
+  "stem": "Warning pictograms found on containers of NaOH and ethanol are shown on the right.",
+  "questionText": "State the chemical hazard indicated by each of these pictograms.",
+  "figureKey": "chemistry-2025-OL-paper-p02-i1",
+  "labelKey": [
+   {
+    "letter": "NaOH",
+    "meaning": "the warning pictogram found on containers of sodium hydroxide (NaOH)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "Ethanol",
+    "meaning": "the warning pictogram found on containers of ethanol",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "NaOH — corrosive",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Ethanol — flammable",
+    "marks": 4
+   }
+  ],
+  "notes": "The purest figure question on this paper — the words give nothing at all, the whole answer is read off the two GHS diamonds. I opened chemistry-2025-OL-paper-p02-i1 and confirmed the left diamond (headed NaOH) shows liquid poured from a test tube eating into a block and into a hand, and the right diamond (headed Ethanol) shows a single flame. Marks 4 + 4 are the scheme's own."
+ },
+ {
+  "id": "chem-2025-ol-q2-b-fig",
+  "topicId": "chem-4-1",
+  "conceptId": "titration-apparatus-and-burette-technique",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2025 OL Q2(b)",
+  "stem": "A student used a standard solution of sodium carbonate (Na2CO3) to find the concentration of a solution of hydrochloric acid (HCl) by titration. The sodium carbonate solution was supplied in the piece of apparatus labelled P. Some of this solution was placed in a clean, dry beaker. 25.0 cm3 portions were measured using another piece of apparatus and then transferred to a conical flask. The solution was titrated against HCl, which was added from a burette. A number of titrations were carried out.",
+  "questionText": "(i) Identify the piece of apparatus labelled P. (ii) Name a suitable piece of apparatus that can be used to accurately measure out a 25.0 cm3 portion of the sodium carbonate solution. (iii) Describe how the burette was rinsed before use. (iv) State one precaution that could be taken to ensure accuracy when taking a burette reading.",
+  "figureKey": "chemistry-2025-OL-paper-p03-i0",
+  "labelKey": [
+   {
+    "letter": "P",
+    "meaning": "volumetric flask",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "9 + 9 + 2 + 2 + 2"
+  },
+  "totalMarks": 24,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "P — volumetric flask",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "pipette",
+    "marks": null,
+    "accepts": [
+     "burette"
+    ]
+   },
+   {
+    "id": "r-3",
+    "kind": "alt",
+    "verbatim": "deionised water",
+    "marks": null,
+    "accepts": [
+     "distilled water",
+     "pure water"
+    ],
+    "contextNote": "First rinse. The scheme's preamble accepts distilled water or pure water for deionised water."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "(HCl) solution",
+    "marks": null,
+    "contextNote": "Second rinse. The scheme prints '[-1 if reversed]' — one mark is lost if the two rinses are given in the wrong order. The bracketed word was not required in 2025."
+   },
+   {
+    "id": "r-5",
+    "kind": "alt",
+    "verbatim": "read from eye level",
+    "marks": null,
+    "accepts": [
+     "meniscus on mark",
+     "burette clamped vertically"
+    ]
+   }
+  ],
+  "notes": "Part (i) is the figure-dependent one. Figure opened and verified: chemistry-2025-OL-paper-p03-i0 is a pear-shaped flask with a long narrow neck, a single graduation ring and a ground-glass stopper, marked '250 cm3' with a bold P beneath it. The paper prints one (24) tariff over (i)-(iv) and the scheme gives only the ordered split 9 + 9 + 2 + 2 + 2 across the five answer elements, so every row mark is null and (ii)-(iv) ride along because the tariff cannot honestly be broken up. The notation carries no parentheses of its own: SessionScreen already wraps it in brackets when it renders the orderedSplit line. Tagged chem-4-1 (Volumetric analysis) to match the sibling Q2 cards. This card rescues 2025 OL Q2(b): the figureless chem-2025-ol-q2-b cannot ship at all, because 'labelled P' trips the build's namesLetters guard and it is dropped as 'names lettered parts but carries no labelled figure'."
+ },
+ {
+  "id": "chem-2022-ol-q11-b-iii-fig",
+  "topicId": "chem-1-1",
+  "conceptId": "diffusion-of-gases-in-air",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 OL Q11(b)(iii)",
+  "stem": "Erupting volcanoes release rivers of hot molten rock that cool and solidify as they move away from the volcano cone.",
+  "questionText": "What term is used to describe the spreading out of smoke in air as shown in the photograph of the 2021 eruption of the Cumbre Vieja volcano in the Canary Islands?",
+  "figureKey": "chemistry-2022-OL-paper-p12-i0",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "diffusion / dissipation",
+    "accepts": [
+     "diffusion",
+     "dissipation"
+    ],
+    "marks": 3
+   }
+  ],
+  "notes": "Figure opened and checked: an aerial black-and-white photograph of an erupting ash-covered cone with a dark billowing column of ash and smoke rising from the vent and spreading sideways, paler steam beside it, and ripple-like flow lines on the flanks. The question sentence points directly at this photograph, which is why it belongs in the figure wave rather than the text-only one. Part (iii) carries its own printed 3 marks within Q11(b)'s 25 (9 + 3 + 3 + 10), so the tariff is fixed and the single row takes all 3. SKIPPED from Q11(b): (i) and (ii) need no photograph and (iv) is a gas-law calculation, so none of them is figure-dependent. ALSO SKIPPED: chemistry-2022-OL-paper-p05-i0 (Q4(i) porcelain jar photo), chemistry-2022-OL-paper-p05-i1 (Q4(c) hydrogen bus photo) and chemistry-2022-OL-paper-p14-i0 (Q11(d)B chocolate-bar-in-foil photo) — all three opened, all three purely illustrative: the cobalt percentage-by-mass calculation, the electrolysis-of-water equation and the \"select two of the five properties above\" answer come entirely from the printed text, and nothing is asked about the images. NOTE for the wave: the paper's other genuinely diagram-dependent parts — Q4(k) (read the phenol structure to give its molecular formula), Q6 (identify hydrocarbons A–E from their structural formulae) and Q11(c) (chromatography diagrams P, T and C carrying the letters S, X and Y) — have no extracted figure on disk (they are vector line art, not embedded rasters), so no figureKey exists for them and they could not be carded."
+ },
+ {
+  "id": "chem-2023-hl-q4-f-fig",
+  "topicId": "chem-1-2",
+  "conceptId": "mass-spectrometer-fundamental-processes",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2023 HL Q4(f)",
+  "questionText": "Five fundamental processes occur during mass spectrometry. These are numbered 1 to 5 on the outline diagram of a mass spectrometer on the right. Identify the fundamental processes corresponding to stages 2 and 4.",
+  "figureKey": "chemistry-2023-HL-paper-p05-i1",
+  "labelKey": [
+   {
+    "letter": "2",
+    "meaning": "ionisation",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "4",
+    "meaning": "separation",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "2: ionisation",
+    "marks": 3,
+    "contextNote": "[Take order of question unless answers clearly labelled.]"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "4: separation",
+    "marks": 3
+   }
+  ],
+  "notes": "Figure opened and inspected. The crop is the mass-spectrometer outline sitting beside the printed text of Q4 parts (c) to (f); no answers are visible in the crop. All five numerals are legible on the drawing — 1 at the inlet chamber, 2 at the small coiled filament, 3 at the charged plate stacks (circled + and -), 4 in the fanning trajectory region inside the arc labelled 'magnetic field', 5 at the flat detector plate feeding the 'recorder'. Stages 2 and 4 are therefore both genuinely present, and the question is unanswerable without the diagram: this is the one part of the 2023 HL paper that words alone cannot carry, and the text-only wave skipped it for exactly that reason. labelKey decodes only 2 and 4 — the marking scheme states those two meanings ('2: ionisation // 4: separation') and nothing else; 1, 3 and 5 are deliberately left undecoded because neither the paper nor the scheme says what they are, and inferring them from the picture is forbidden. Marks: Q4 items carry 6 marks each and the scheme prints (2 × 3) for this item; the paper-level '+1 mark to each of the first two items for which the highest marks are awarded' is a whole-question adjustment, not attached to any individual item, so it is not modelled."
+ },
+ {
+  "id": "chem-2023-hl-q4-k-fig",
+  "topicId": "chem-1-4",
+  "conceptId": "molecules-from-mass-using-avogadro-constant",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2023 HL Q4(k)",
+  "questionText": "Real manuka honey from New Zealand, considered to have exceptional taste, is supplied with certification of authenticity. Correct to one significant figure, calculate the minimum number of molecules of 2-methoxybenzoic acid (Mr = 152) present in the jar containing 250 g of manuka honey shown on the right, certified to contain at least 1 × 10⁻³ g per kg of this substance.",
+  "figureKey": "chemistry-2023-HL-paper-p05-i0",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.001 ÷ 152 = 6.6 × 10⁻⁶ moles per kg",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "6.6 × 10⁻⁶ × 6.0 × 10²³ = 3.96 × 10¹⁸ molecules per kg",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3.96 × 10¹⁸ ÷ 4 = 1 × 10¹⁸ molecules per jar",
+    "marks": 1,
+    "contextNote": "[–1 if final answer expressed as 9.87 × 10¹⁷ molecules per jar.]"
+   }
+  ],
+  "notes": "Figure opened and inspected: a greyscale product photograph of the manuka honey jar, its label reading 'NEW ZEALAND HONEY CO. / MANUKA / RAW MANUKA HONEY / NET WT 8.8OZ (250g)', printed beside the text of part (k). Honest assessment: the photo is illustrative, not load-bearing — the 250 g is also stated in the question text — but the question points at it directly ('the jar containing 250 g of manuka honey shown on the right'), so the card is only complete with the image carried, and Q4(k) is absent from the text-only wave. No letters on the figure, so no labelKey. Rows are the scheme's first printed route (3 + 2 + 1 = 6). The scheme prints two further routes to the same answer with the marks split differently — 'moles per kg (3), ÷ 4 moles per jar (1), × Avogadro (2)' and '0.001 ÷ 4 = 0.00025 g per jar (1), ÷ 152 = 1.64 × 10⁻⁶ moles per jar (3), × Avogadro (2)' — which are not modelled as separate rows because the scheme separates them with 'or', not '//', and each reaches the same 6. 'Mr 2-methoxybenzoic acid = 152' is printed in the scheme without a mark because the question supplies it, so it is not a row."
+ },
+ {
+  "id": "chem-2023-ol-q1-a-fig",
+  "topicId": "chem-u2",
+  "conceptId": "ethyne-preparation-reagents",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2023 OL Q1(a)",
+  "stem": "The apparatus shown in the diagram below can be used to make and collect the hydrocarbon gas ethyne (C2H2) in the school laboratory.",
+  "questionText": "Identify (i) liquid A, (ii) solid B.",
+  "figureKey": "chemistry-2023-OL-paper-p02-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "The liquid held in the dropping funnel above the conical flask — the diagram prints \"liquid A\" on a leader line to it. The paper does not say what the liquid is.",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "The lumps of solid lying on the floor of the conical flask — the diagram prints \"solid B\" on a leader line to them. The paper does not say what the solid is.",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "(8 + 3)"
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "A — H2O / water",
+    "accepts": [
+     "H2O",
+     "water"
+    ],
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "B — calcium dicarbide / CaC2 / calcium (II) carbide",
+    "accepts": [
+     "calcium dicarbide",
+     "CaC2",
+     "calcium (II) carbide",
+     "carbide"
+    ],
+    "contextNote": "[Allow carbide]",
+    "marks": null
+   }
+  ],
+  "notes": "Figure opened and checked: a dropping funnel with a stopcock feeds a conical flask; \"liquid A\" labels the liquid in the funnel and \"solid B\" labels the grey lumps on the flask floor; a delivery tube runs into a water trough under an inverted tube labelled \"ethyne\". The part is unanswerable without it. The scheme prints the pair tariff as (8 + 3) with \"[Allow any order of responses.]\", so the split is ordered rather than per-sub-part — hence orderedSplit with both rows marks: null. Q1(b), (c) and (d) are answerable from words alone (and (c)(i) is a drawing question, banned), so they are left to the text-only wave."
+ },
+ {
+  "id": "chem-2023-ol-q2-b-i-fig",
+  "topicId": "chem-4-1",
+  "conceptId": "titration-apparatus-identification",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2023 OL Q2(b)(i)",
+  "stem": "A student titrated 25.0 cm3 portions of a 0.05 M solution of sodium carbonate (Na2CO3) with a solution of hydrochloric acid (HCl) of unknown concentration.  A burette was used to add the HCl to the Na2CO3 solution in a conical flask until an indicator showed that the end point had been reached.  This procedure was repeated a number of times.  Some pieces of apparatus used to carry out the titration are shown below.",
+  "questionText": "Identify the pieces of apparatus A and B above.",
+  "figureKey": "chemistry-2023-OL-paper-p03-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "The middle of the three drawings — the letter A is printed to its right. The paper does not name it (naming it is the answer).",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "The right-hand drawing, a tall thin vertical piece of glassware — the letter B is printed beside it. The paper does not name it (naming it is the answer).",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: wash bottle",
+    "exactTermRequired": true,
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: pipette",
+    "exactTermRequired": true,
+    "contextNote": "[Take order of responses unless answers clearly labelled.]",
+    "marks": 3
+   }
+  ],
+  "notes": "Figure opened and checked: three unconnected pieces of glassware side by side — a conical flask (captioned on the paper), a plastic wash bottle with a ribbed screw cap and a bent delivery spout marked A, and a long thin pipette with a swollen bulb and a graduation mark marked B. This is the wave's target case: the letters have no meaning without the picture. The scheme's own preamble for 2023 says \"A double solidus (//) separates points for which separate marks are allocated in a part of the question\" — so the // between A and B is two separately marked points, NOT mutually exclusive routes, and no route field is used. The scheme's order note '[Take order of responses unless answers clearly labelled.]' is carried as r-2's contextNote; it is not given a row of its own, because a row whose verbatim is an examiner instruction carries no answer content."
+ },
+ {
+  "id": "chem-2023-ol-q2-b-ii-fig",
+  "topicId": "chem-4-1",
+  "conceptId": "wash-bottle-use-in-titration",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2023 OL Q2(b)(ii)",
+  "stem": "A student titrated 25.0 cm3 portions of a 0.05 M solution of sodium carbonate (Na2CO3) with a solution of hydrochloric acid (HCl) of unknown concentration.  Some pieces of apparatus used to carry out the titration are shown below.",
+  "questionText": "Give one use for A during the titration.",
+  "figureKey": "chemistry-2023-OL-paper-p03-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "The middle of the three drawings — the letter A is printed to its right. The paper does not name it.",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "The right-hand drawing, a tall thin vertical piece of glassware — the letter B is printed beside it. The paper does not name it; the scheme's answer to Q2(b)(i) is that B is a pipette.",
+    "askedInThisQuestion": false
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "rinse pipette (B) / rinse burette / rinse conical flask / wash down sides of conical flask during titration / so all added substances can react",
+    "accepts": [
+     "rinse pipette (B)",
+     "rinse burette",
+     "rinse conical flask",
+     "wash down sides of conical flask during titration",
+     "so all added substances can react"
+    ],
+    "marks": 6
+   }
+  ],
+  "notes": "Same figure as Q2(b)(i), re-checked. The part cannot be attempted without the diagram because \"A\" is defined only by the drawing. One 6-mark point with five scheme alternatives separated by single solidi, so one alt row. Q2(b)(iv) (why a beaker is less suitable than the conical flask) is answerable from words alone and is left to the text-only wave."
+ },
+ {
+  "id": "chem-2023-ol-q2-b-iii-fig",
+  "topicId": "chem-4-1",
+  "conceptId": "rinsing-the-pipette",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2023 OL Q2(b)(iii)",
+  "stem": "A student titrated 25.0 cm3 portions of a 0.05 M solution of sodium carbonate (Na2CO3) with a solution of hydrochloric acid (HCl) of unknown concentration.  Some pieces of apparatus used to carry out the titration are shown below.",
+  "questionText": "Describe how B was rinsed for use in the titration.",
+  "figureKey": "chemistry-2023-OL-paper-p03-i0",
+  "labelKey": [
+   {
+    "letter": "B",
+    "meaning": "The right-hand drawing, a tall thin vertical piece of glassware — the letter B is printed beside it. The paper does not name it; the scheme's answer to Q2(b)(i) is that B is a pipette.",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "A",
+    "meaning": "The middle of the three drawings — the letter A is printed to its right. The paper does not name it.",
+    "askedInThisQuestion": false
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "rinsed with deionised (distilled, pure) water",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "rinse with sodium carbonate (Na2CO3) solution / rinse with solution pipette (it) will hold",
+    "accepts": [
+     "rinse with sodium carbonate (Na2CO3) solution",
+     "rinse with solution pipette (it) will hold"
+    ],
+    "contextNote": "[Allow (2) for correct responses in reverse order.]  [Allow (2) for rinse with sodium carbonate (Na2CO3) only.]",
+    "marks": 2
+   }
+  ],
+  "notes": "Same figure as Q2(b)(i), re-checked — the pipette marked B is drawn full length with its bulb, graduation mark and drawn-out tip. The part names a letter, so it needs the diagram. The two scheme points sit either side of a // (separate marks, per this year's preamble) at (2 × 2), giving a fixed 2 + 2 tariff."
+ },
+ {
+  "id": "chem-2023-ol-q4-k-fig",
+  "topicId": "chem-u2",
+  "conceptId": "reflux-apparatus-and-process",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2023 OL Q4(k)",
+  "stem": "The diagram shows one of the stages of soap-making.  The flask contains coconut oil, sodium hydroxide, ethanol and a few anti-bumping granules.",
+  "questionText": "(i) Name the piece of apparatus labelled X.  (ii) What name is given to the process of heating a reaction mixture as shown?",
+  "figureKey": "chemistry-2023-OL-paper-p06-i0",
+  "labelKey": [
+   {
+    "letter": "X",
+    "meaning": "The tall vertical jacketed tube fitted upright into the neck of the round-bottomed flask, between the \"water out\" side-arm above and the \"water in\" side-arm below; the leader line from the bold X points to it. The paper does not name it (naming it is the answer).",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "(4 + 2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "X — Liebig (reflux) condenser",
+    "accepts": [
+     "Liebig condenser",
+     "reflux condenser"
+    ],
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "refluxing",
+    "exactTermRequired": true,
+    "marks": null
+   }
+  ],
+  "notes": "Figure opened and checked: a round-bottomed flask in a dish-shaped electric heating mantle on a retort stand, with a long vertical jacketed condenser clamped above it, closed at the top, water in at the bottom side-arm and water out at the top. Both sub-parts depend on the drawing — (i) names X and (ii) asks about \"heating a reaction mixture as shown\", i.e. vertical condenser, so nothing escapes. Tariff: the scheme's Q4 rubric is \"Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded\" — that extra mark is a question-level bonus applied across the eight chosen items, not part of this item, so totalMarks is 6 split (4 + 2) as printed."
+ },
+ {
+  "id": "chem-2023-ol-q10-a-iii-iv-fig",
+  "topicId": "chem-2-1",
+  "conceptId": "nacl-lattice-coordination-and-bonding",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2023 OL Q10(a)(iii)–(iv)",
+  "stem": "Refer to page 79 of the Formulae and Tables booklet when answering this question.  The diagram shows the arrangement of sodium ions and chloride ions in an NaCl crystal with a chloride ion at its centre.",
+  "questionText": "(iii) What is the maximum number of sodium ions that can surround (as its nearest neighbours) a chloride ion in the crystal?  (iv) What holds the ions together in the NaCl crystal structure?",
+  "figureKey": "chemistry-2023-OL-paper-p11-i0",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "6",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "electrostatic attraction (force) / opposite charged ions attract / ionic bonds",
+    "accepts": [
+     "electrostatic attraction",
+     "electrostatic force",
+     "opposite charged ions attract",
+     "ionic bonds"
+    ],
+    "marks": 3
+   }
+  ],
+  "notes": "Figure opened and checked: a ball-and-stick cube of the NaCl lattice, large pale spheres alternating with small dark spheres, with a two-line key beneath reading \"= chloride ion\" (large pale) and \"= sodium ion\" (small dark). No letters appear on it, so labelKey is omitted; the key is a shape key, not a lettered one. Part (iii) is the figure-dependent one — the count of nearest neighbours is read off the lattice — and (iv) is carded with it because both concern the structure shown and each carries its own printed (3). Parts (i), (ii) and (v) are answerable from words alone and are left to the text-only wave."
+ },
+ {
+  "id": "chem-2024-hl-q2-a-iii-fig",
+  "topicId": "chem-u2",
+  "conceptId": "hot-filtration-fluted-funnel",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2024 HL Q2(a)(iii)",
+  "stem": "A student carried out an experiment to purify benzoic acid by recrystallisation, using water as the solvent.",
+  "questionText": "Fluted filter paper in a warm funnel, as shown on the right, is used in the hot filtration. Explain why this arrangement is suitable for hot filtration.",
+  "figureKey": "chemistry-2024-HL-paper-p03-i0",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "increased surface area / faster filtration / keeps solution warm / avoids benzoic acid coming out of solution / increases yield",
+    "accepts": [
+     "faster filtration",
+     "keeps solution warm",
+     "avoids benzoic acid coming out of solution",
+     "increases yield"
+    ],
+    "marks": 4,
+    "contextNote": "Any one of these alternatives earns the full 4 marks."
+   }
+  ],
+  "notes": "I opened the PNG: a retort stand with a clamp/ring holding a filter funnel that carries a cone of fluted (concertina-folded) filter paper fanning out above the funnel rim, with the funnel stem pointing into a conical flask. That is exactly the arrangement the question points at with 'as shown on the right', so the figure is what makes this part answerable. No letters appear anywhere on the drawing, so no labelKey. Skipped Q2(a)(i), (ii), (iv) and (v) from this wave: each is answerable from the words alone and belongs to the text-only wave. Whole of Q2(a) is 20 marks; this part carries 4 per the scheme."
+ },
+ {
+  "id": "chem-2024-hl-q4-d-fig",
+  "topicId": "chem-2-3",
+  "conceptId": "avogadros-law-equal-volumes",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2024 HL Q4(d)",
+  "stem": "Answer eight of the following (a), (b), (c), etc.",
+  "questionText": "The diagram on the right shows two identical flasks, one filled with helium gas and the other filled with oxygen gas. The flasks are kept at the same temperature and pressure. There are 2.4 g of gas in the flask of oxygen. Calculate the mass of helium present.",
+  "figureKey": "chemistry-2024-HL-paper-p05-i0",
+  "labelKey": [
+   {
+    "letter": "He",
+    "meaning": "The flask filled with helium gas",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "O2",
+    "meaning": "The flask filled with oxygen gas, the one holding 2.4 g of gas",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "(4 + 2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "reference to masses of 4 and 32 / ratio of 1:8",
+    "accepts": [
+     "ratio of 1:8"
+    ],
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2.4 × 4 ÷ 32 = 0.3 (g)",
+    "marks": null,
+    "contextNote": "The scheme prints this as a fraction: numerator 2.4 × 4, denominator 32."
+   }
+  ],
+  "notes": "I opened the PNG: two identical round-bottomed flasks side by side, each stoppered and topped with a pressure gauge whose needle sits in the same position, the left bulb labelled 'He' and the right bulb labelled 'O2'. Both labels are stated in the paper's own wording ('one filled with helium gas and the other filled with oxygen gas'; 'There are 2.4 g of gas in the flask of oxygen'), so the labelKey repeats the paper, not the picture. Borderline for this wave — the question restates the set-up in words — but it opens with 'The diagram on the right shows', so the verbatim question does not stand up without the figure. Scheme prints the split as (4 + 2) for the item as a whole rather than a mark per line, hence orderedSplit with both rows null. Q4's preamble adds one extra mark to each of the first two items a candidate attempts; that bonus is outside the 6-mark item tariff and is not modelled here."
+ },
+ {
+  "id": "chem-2024-hl-q4-k-fig",
+  "topicId": "chem-1-4",
+  "conceptId": "percentage-yield-calculation",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2024 HL Q4(k)",
+  "stem": "Answer eight of the following (a), (b), (c), etc.",
+  "questionText": "The structure of the painkiller benzocaine is shown on the right. Calculate the percentage yield of a reaction in which 2412.3 g of pure benzocaine was obtained when the theoretical yield was 21.5 moles.",
+  "figureKey": "chemistry-2024-HL-paper-p05-i1",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "(4 + 2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Mr = 165",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2412.3 ÷ (21.5 × 165) = 0.68, i.e. 68 (%)",
+    "marks": null,
+    "contextNote": "The scheme prints this as a fraction: numerator 2412.3, denominator 21.5 × 165."
+   }
+  ],
+  "notes": "I opened the PNG: a benzene ring drawn as a hexagon with an inscribed circle, an H2N- group on one side and, para to it, a carbon double-bonded to O and single-bonded to O-CH2-CH3 (the ethyl ester). This is the purest figure-dependent card on the paper — the molecular formula is nowhere in the text, so Mr = 165 can only come from reading the structure. The visible characters (H2N, O, O, CH2, CH3) are chemical groups, not question letters, and neither paper nor scheme assigns any letter a meaning, so labelKey is omitted per the label rule. Scheme prints one combined (4 + 2) for the item, so orderedSplit with null row marks."
+ },
+ {
+  "id": "chem-2024-hl-q6-a-ii-fig",
+  "topicId": "chem-2-4",
+  "conceptId": "iupac-naming-alkanes",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2024 HL Q6(a)(ii)",
+  "stem": "Hydrocarbon A may be converted to hydrocarbon B, as shown below. Hydrocarbon A is obtained in the naphtha fraction when crude oil is fractionally distilled during oil refining.",
+  "questionText": "State the systematic IUPAC names of compounds A and B.",
+  "figureKey": "chemistry-2024-HL-paper-p07-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Hydrocarbon A, obtained in the naphtha fraction when crude oil is fractionally distilled during oil refining",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Hydrocarbon B, the hydrocarbon that A may be converted to",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: octane",
+    "marks": 3,
+    "exactTermRequired": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: 2, 2, 4-trimethylpentane",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "I opened the PNG: two full structural formulae with a reaction arrow between them. Left, labelled A beneath it, is an unbranched eight-carbon chain with every C-H bond drawn. Right, labelled B, is a five-carbon chain carrying two CH3 groups on the second carbon and one CH3 on the fourth. Neither name can be produced without reading those skeletons, so this is a true figure-dependent card. The labelKey deliberately gives only the paper's own descriptions of A and B — writing the scheme's 'octane' / '2,2,4-trimethylpentane' into a label meaning would hand over the answer. Scheme prints '(3 + 3)' once, but the split is symmetric and unambiguous (3 per named compound), so modelled as fixed. Q6(a)(i) is skipped here: it asks about a property shared across the naphtha fraction and needs no diagram."
+ },
+ {
+  "id": "chem-2024-hl-q6-a-iii-fig",
+  "topicId": "chem-2-4",
+  "conceptId": "saturated-alkanes-definition",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2024 HL Q6(a)(iii)",
+  "stem": "Hydrocarbon A may be converted to hydrocarbon B, as shown below. Hydrocarbon A is obtained in the naphtha fraction when crude oil is fractionally distilled during oil refining.",
+  "questionText": "Explain why compounds A and B are referred to as saturated alkanes.",
+  "figureKey": "chemistry-2024-HL-paper-p07-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Hydrocarbon A, obtained in the naphtha fraction when crude oil is fractionally distilled during oil refining",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Hydrocarbon B, the hydrocarbon that A may be converted to",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "only single bonds / no addition reactions possible / maximum H present",
+    "accepts": [
+     "no addition reactions possible",
+     "maximum H present"
+    ],
+    "marks": 3
+   }
+  ],
+  "notes": "Same figure as Q6(a)(ii), reopened and checked: every bond in both structures is drawn as a single line and every spare carbon position carries an H, which is precisely the evidence 'only single bonds' and 'maximum H present' rest on. The question names lettered compounds A and B, so it carries figureKey plus a labelKey using the paper's own descriptions of A and B."
+ },
+ {
+  "id": "chem-2024-hl-q6-b-fig",
+  "topicId": "chem-2-4",
+  "conceptId": "isomerisation-octane-number",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2024 HL Q6(b)",
+  "stem": "Hydrocarbon A may be converted to hydrocarbon B, as shown below. The conversion of compound A to compound B occurs in a process that takes place in some oil refineries after fractional distillation.",
+  "questionText": "(i) Name the process that can convert compound A to compound B.\n(ii) Why is this conversion carried out?",
+  "figureKey": "chemistry-2024-HL-paper-p07-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Hydrocarbon A, obtained in the naphtha fraction when crude oil is fractionally distilled during oil refining",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Hydrocarbon B, the hydrocarbon that A may be converted to",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "isomerisation",
+    "marks": 3,
+    "exactTermRequired": true
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "increase octane number / reduce auto-ignition / smoother combustion / increase branching",
+    "accepts": [
+     "reduce auto-ignition",
+     "smoother combustion",
+     "increase branching"
+    ],
+    "marks": 3
+   }
+  ],
+  "notes": "Carded because the diagram is how a student knows the process is isomerisation rather than cracking or reforming: I checked the two structures atom by atom and both are C8H18 — the straight chain on the left is rearranged into the branched skeleton on the right with no change in carbon count. Parts (i) and (ii) are kept on one card because (ii)'s wording ('this conversion') is meaningless without (i); each has its own printed 3 in the scheme, summing to the paper's printed (6) for part (b). Q6(c) is excluded — both sub-parts require drawing molecular structures. Q6(d) is excluded from this wave: both calculations run off heats of formation given in the text and need no diagram."
+ },
+ {
+  "id": "chem-2024-hl-q11-d-b-fig",
+  "topicId": "chem-u3",
+  "conceptId": "blast-furnace-iron-extraction",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2024 HL Q11(d) part B(i)-(iii)",
+  "stem": "Answer part A or part B. B: Iron metal is extracted from its ores by reduction in a blast furnace like that illustrated in the diagram on the right.",
+  "questionText": "(i) Identify the two solid materials that are continually added with the iron ore in the charge at the top of the furnace.\n(ii) Identify the hot gas that is blown into the furnace above the hearth during production.\n(iii) Identify by-product B that is removed at the bottom of the furnace.",
+  "figureKey": "chemistry-2024-HL-paper-p13-i1",
+  "labelKey": [
+   {
+    "letter": "B",
+    "meaning": "The by-product removed at the bottom of the furnace",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 13,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "coke / carbon",
+    "accepts": [
+     "carbon",
+     "C"
+    ],
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "limestone / calcium carbonate",
+    "accepts": [
+     "calcium carbonate",
+     "CaCO3"
+    ],
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "alt",
+    "verbatim": "air / oxygen",
+    "accepts": [
+     "oxygen",
+     "O2"
+    ],
+    "marks": 3
+   },
+   {
+    "id": "r-4",
+    "kind": "alt",
+    "verbatim": "slag / CaSiO3 / CaAl2O4",
+    "accepts": [
+     "CaSiO3",
+     "CaAl2O4"
+    ],
+    "marks": 4
+   }
+  ],
+  "notes": "I opened the PNG: a shaded cutaway blast furnace with a skip hoist tipping material into the throat (leader line 'charge'), the vessel body labelled 'furnace', a pipe entering low on the right labelled 'hot gas', a tap-hole running left into a vessel labelled 'molten iron' and a matching outlet running right into a vessel labelled with a bold 'B'. Part (iii) names that letter, so the card carries the figure and a labelKey; the meaning given is the paper's own ('by-product B that is removed at the bottom of the furnace'), not the scheme's answer. Caution the figure itself contains a second, unrelated bold 'B' in the left margin — that one is the paper's 'Answer part A or part B' selector, not the by-product. The other four annotations (charge, furnace, hot gas, molten iron) are printed words on the diagram, not letters needing decoding, so they are left out of labelKey. Parts (iv) and (v) are skipped: the CO/iron(III) oxide equation and the electric-arc steel stages are answerable from the text alone. Marks are the scheme's own 3+3+3+4 for (i)-(iii); the full 11(d) part B is 25.\n\nWave-level note on figures I was not given: the 2024 HL paper also carries a titration curve at Q9(d), a reaction scheme at Q8 and the compounds A-E structure table at Q11(b), all of which are strongly figure-dependent, but none appears in the 2024-hl figure list, so no cards were written for them."
+ },
+ {
+  "id": "chem-2024-ol-q1-b-fig",
+  "topicId": "chem-u2",
+  "conceptId": "ethyne-lab-preparation",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2024 OL Q1(b)",
+  "stem": "The diagram below shows the apparatus used for the preparation of ethyne (C2H2) gas in the laboratory.",
+  "questionText": "(i) Identify solid X.\n(ii) Why is water added dropwise rather than poured directly onto X?\n(iii) What is observed when water is added to X?\n(iv) State one property of ethyne that allows it to be collected above water as shown.",
+  "figureKey": "chemistry-2024-OL-paper-p02-i0",
+  "labelKey": [
+   {
+    "letter": "X",
+    "meaning": "solid X — the solid reactant lying in the conical flask that water is dripped onto from the dropping funnel; the marking scheme identifies it as (calcium) carbide",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 8 + 3 + 3"
+  },
+  "totalMarks": 22,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(calcium) carbide",
+    "marks": null,
+    "accepts": [
+     "CaC2"
+    ],
+    "contextNote": "(b)(i). Scheme preamble point 6: when asked to identify a chemical substance, either the name or the formula is accepted."
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "so that the reaction happens slowly / safety [state/imply]",
+    "marks": null,
+    "accepts": [
+     "so that the reaction happens slowly",
+     "safety"
+    ],
+    "contextNote": "(b)(ii). The scheme notes safety may be stated or implied."
+   },
+   {
+    "id": "r-3",
+    "kind": "alt",
+    "verbatim": "fizzing / bubbling / gas produced / heat produced",
+    "marks": null,
+    "accepts": [
+     "fizzing",
+     "bubbling",
+     "gas produced",
+     "heat produced"
+    ],
+    "contextNote": "(b)(iii)."
+   },
+   {
+    "id": "r-4",
+    "kind": "alt",
+    "verbatim": "less dense than water / sparingly soluble in water",
+    "marks": null,
+    "accepts": [
+     "less dense than water",
+     "sparingly soluble in water"
+    ],
+    "contextNote": "(b)(iv)."
+   }
+  ],
+  "notes": "FIGURE OPENED AND VERIFIED: chemistry-2024-OL-paper-p02-i0 is a line drawing of a pear-shaped dropping funnel (arrow labelled 'water') feeding through a stopcock and rubber stopper into a conical flask holding small dark lumps (arrow labelled 'solid X'), with a side delivery tube running right, down over the rim of a trough of water and up into an inverted round-topped tube (arrow labelled 'ethyne'), i.e. collection over water. This directly supports all four parts of Q1(b): (i)-(iii) name X, which exists only on the diagram, and (iv) says 'collected above water as shown'. TARIFF: the scheme prints one bundled total (8 + 8 + 3 + 3) = 22 across the four sub-parts rather than a printed mark per part, so this is modelled as an orderedSplit with every row marks: null; 22 matches the (22) printed on the paper.\n\nSKIPPED, Q1: (a)(i) 'what is meant by unsaturation' and (a)(ii) 'what is a hydrocarbon' (12 marks), and (c)(i)-(iii) combustion observation, balanced equation and use of ethyne (16 marks) — all answerable from words alone, so they belong to the text-only wave, not this one.\n\nSKIPPED, FIGURE chemistry-2024-OL-paper-p08-i0 (Q7): opened and inspected. It is a correct, fully legible rate-of-reaction set-up — conical flask with a shallow liquid layer, a dark lump of solid on a small raised stand, a bung and delivery tube bending into a gas syringe graduated 10-100, plus a separate stopwatch — with leader labels 'hydrogen peroxide', 'manganese dioxide (catalyst)', 'gas syringe' and 'stopwatch'. No card written because no part of Q7 asks anything about the apparatus: (a)(i) defines rate of reaction, (a)(ii) is a graph-plotting instruction (excluded — a student cannot self-mark a drawn graph), (a)(iii) reads a value off the student's own graph, (a)(iv) and both parts of (b) work from the printed results table, and (c) is about enzymes. Every one is answerable from words alone and already belongs to the text wave.\n\nSKIPPED, FIGURE chemistry-2024-OL-paper-p11-i0 (Q10(c)): opened and inspected. It is not a diagram at all — it is a crop of the printed page showing the Q10(c) text and parts (i)-(v), alongside a greyscale map of Ireland shaded for radon levels. The map's four-row key is printed far too small and at too low a resolution to read, there is no letter or callout on it, and no part of Q10(c) refers to it (the parts ask about half-life, protons, neutrons and electrons in Rn-222, and what an alpha particle is). The figure therefore supports no question and the card is skipped.\n\nNOT AVAILABLE: this paper's other lettered-figure questions — Q2(a) 'Identify A' (the pipette drawn in the margin), Q4(f) hazard warning symbols A and B, Q4(k) cyclic structures X and Y, Q4(l)B the scientist portrait, and Q8's Q/R/S/T reaction scheme — are vector artwork in the PDF and no figureKey was supplied for any of them, so they cannot be carded in this wave."
+ },
+ {
+  "id": "chem-2025-hl-q4-lb-fig",
+  "topicId": "chem-2-4",
+  "conceptId": "addition-polymers-from-monomer-structures",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2025 HL Q4(l)B",
+  "stem": "Answer part A or part B.",
+  "questionText": "Monomers for two addition polymers are shown on the right. Identify each of the corresponding addition polymers.",
+  "figureKey": "chemistry-2025-HL-paper-p05-i1",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "X — polyphenylethene",
+    "accepts": [
+     "polystyrene"
+    ],
+    "contextNote": "Left-hand monomer",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "Y — polypropylene",
+    "accepts": [
+     "polypropene"
+    ],
+    "contextNote": "Right-hand monomer",
+    "marks": 3
+   }
+  ],
+  "notes": "Figure opened and read. X labels a benzene ring bonded to a C=C (phenylethene/styrene); Y labels a C=C carrying a CH3 (propene). Word-position check on the PDF confirms X sits at x=393 (left structure) and Y at x=501 (right structure), so the label placement in the crop is unambiguous. This part is unanswerable without the figure — the monomers exist only as drawn structures. labelKey OMITTED: X and Y are answer identifiers, not parts — the paper prints them under the two monomer structures purely so each answer can be matched to a structure. The only thing they could decode to is the answer itself (scheme: X = polyphenylethene / polystyrene, Y = polypropylene / polypropene), which stays in the rows, so the card shows its figure with no decode panel. Q4(l) part A (industrial separation of oxygen from air) has no figure and is text-only, so it is not carded here."
+ },
+ {
+  "id": "chem-2025-hl-q11-db-i-iii-fig",
+  "topicId": "chem-3-5",
+  "conceptId": "electrolysis-molten-lead-bromide-apparatus",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2025 HL Q11(d)B(i)-(iii)",
+  "stem": "Answer part A or part B. B The electrolysis of lead(II) bromide (PbBr2) produces lead and bromine. The electrolysis can be carried out in an arrangement of apparatus as shown, using a pair of inert electrodes immersed in molten lead bromide.",
+  "questionText": "(i) Explain what is meant by electrolysis. (ii) Identify a suitable material to use for the inert electrodes. (iii) Compare the electrical conductivity of solid lead(II) bromide to molten lead(II) bromide. Explain your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 14,
+  "figureKey": "chemistry-2025-HL-paper-p14-i0",
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "breaking down of a chemical compound",
+    "contextNote": "Part (i)",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "using electricity",
+    "contextNote": "Part (i)",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "alt",
+    "verbatim": "graphite (C)",
+    "accepts": [
+     "platinum (Pt)"
+    ],
+    "contextNote": "Part (ii)",
+    "marks": 3
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "molten form conducts",
+    "contextNote": "Part (iii)",
+    "marks": 3
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "ions free to move",
+    "contextNote": "Part (iii)",
+    "marks": 3
+   }
+  ],
+  "notes": "Figure opened and read: battery, circled A in the circuit, two rods dipping into a grey liquid in a crucible labelled 'molten PbBr2' by a leader line, Bunsen burner beneath. The question stem says 'an arrangement of apparatus as shown', so the diagram is the apparatus being described and is carried for context. No labelKey: the only letter on the diagram is the circled A (a circuit symbol), and neither the paper nor the scheme states what it stands for — inferring 'ammeter' from the picture is not allowed, and the question does not ask about it. Parts (iv)-(vi) of Q11(d)B are deliberately SKIPPED: the diagram does not label the anode or cathode, so it cannot help a student answer 'which element is formed at the anode' — those parts are answerable from words alone and belong to the text-only wave. Q11(d) part A (nitrogen cycle) has no figure. Also noted: Q5(b) on paper page 6 refers to 'An atomic orbital diagram for a bromine atom ... shown on the right', which would be a genuine figure-dependent question, but no figureKey for it was supplied in my figure list, so it could not be carded."
+ },
+ {
+  "id": "chem-2021-hl-q2-b-i-fig",
+  "topicId": "chem-4-2",
+  "conceptId": "ester-hydrolysis-co-product-glycerol",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2021 HL Q2(b)(i)",
+  "stem": "Sodium cocoate soap is manufactured by the base hydrolysis of tri-ester molecules in coconut oil.  The following is a balanced equation for the hydrolysis of a tri-ester molecule in coconut oil.",
+  "questionText": "Name the co-product of the reaction.",
+  "figureKey": "chemistry-2021-HL-paper-p03-i1",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "propane-1,2,3-triol",
+    "accepts": [
+     "1,2,3-propanetriol",
+     "glycerol",
+     "glycerine"
+    ],
+    "marks": 6
+   }
+  ],
+  "notes": "Figure opened and checked: the crop carries the whole balanced equation with the paper's own captions 'tri-ester', 'soap' and 'co-product'. The co-product is only identifiable from the right-hand structure drawn in this equation (a three-carbon backbone each carbon bearing HO—), so the part genuinely needs the figure. Carded (b)(i) alone — the paper prints (12) for (b)(i)+(ii)+(iii) together and the scheme splits it 6/3/3, so this card takes the scheme's 6. (b)(ii) 'What is brine?' and (b)(iii) need no figure and belong to the text-only wave. labelKey OMITTED: the equation's three printed captions are self-describing — 'tri-ester' names the tri-ester, 'soap' names the soap and 'co-product' names the co-product, each sitting under the structure it names. The co-product's chemical identity (propane-1,2,3-triol / glycerol) is this card's answer and stays in the rows, so nothing is left to decode."
+ },
+ {
+  "id": "chem-2021-hl-q2-d-fig",
+  "topicId": "chem-2-2",
+  "conceptId": "soap-molecule-hydrophilic-head",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2021 HL Q2(d)",
+  "stem": "Sodium cocoate soap is manufactured by the base hydrolysis of tri-ester molecules in coconut oil.",
+  "questionText": "The diagram represents the arrangement of a number of soap molecules in water.  Explain why one end of a soap molecule is described as water loving (hydrophilic).",
+  "figureKey": "chemistry-2021-HL-paper-p03-i0",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "COONa (COO–Na+, CH3(CH2)10COO–, COO–, Na+)",
+    "accepts": [
+     "one end ionic (polar)"
+    ],
+    "marks": 6
+   }
+  ],
+  "notes": "Figure opened: a micelle of roughly twenty soap molecules — a shaded circular head on each, all heads facing outwards, every zig-zag hydrocarbon tail pointing inwards to a central void. Nothing on it is lettered or labelled, so labelKey is omitted. The question names 'the diagram' explicitly, so it is figure-dependent."
+ },
+ {
+  "id": "chem-2021-hl-q2-e-fig",
+  "topicId": "chem-1-4",
+  "conceptId": "theoretical-yield-from-tri-ester-hydrolysis",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2021 HL Q2(e)",
+  "stem": "Sodium cocoate soap is manufactured by the base hydrolysis of tri-ester molecules in coconut oil.  The following is a balanced equation for the hydrolysis of a tri-ester molecule in coconut oil.",
+  "questionText": "When 0.03 moles of the tri-ester shown in the equation above are hydrolysed, what is the theoretical yield, in grams, of CH3(CH2)10COONa?",
+  "figureKey": "chemistry-2021-HL-paper-p03-i1",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.03 moles tri-ester → 0.09 moles soap",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Mr soap = 222",
+    "contextNote": "Scheme: [*Addition must be shown for error to be treated as slip.  Mr of 222.294 and subsequent work based on Ar values in Formula and Tables booklet acceptable.]",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "0.09 × 222 = 19.98 g (19.98 – 20 g) CH3(CH2)10COONa",
+    "marks": 3
+   }
+  ],
+  "notes": "Figure opened: the balanced equation crop. The question says 'the tri-ester shown in the equation above', and the 1 tri-ester → 3 soap stoichiometry that gives 0.09 mol can only be read off this figure, so it is figure-dependent. Carded under the calculation rule because the scheme awards three discrete checkable points (0.09 mol soap, Mr = 222, 19.98 g) rather than bare worked arithmetic. labelKey OMITTED: 'tri-ester', 'soap' and 'co-product' are self-describing captions — each names the part of the balanced equation it sits under — so there is nothing for a decode panel to add."
+ },
+ {
+  "id": "chem-2021-hl-q4-d-fig",
+  "topicId": "chem-2-3",
+  "conceptId": "avogadro-law-atoms-in-equal-gas-volumes",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2021 HL Q4(d)",
+  "stem": "Answer eight of the following (a), (b), (c), etc.",
+  "questionText": "The diagram shows three containers, each filled with a different gas.  Each container holds the same volume of gas at the same temperature and pressure.  Which contains the largest number of atoms?  Explain.",
+  "figureKey": "chemistry-2021-HL-paper-p05-i1",
+  "labelKey": [
+   {
+    "letter": "He",
+    "meaning": "helium",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "Cl2",
+    "meaning": "chlorine",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "CO2",
+    "meaning": "carbon dioxide",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "gate",
+    "verbatim": "CO2 container",
+    "accepts": [
+     "last (third) one"
+    ],
+    "contextNote": "Scheme: [Award second (3) only if first (3) is given.]",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "equal numbers of molecules (moles)",
+    "accepts": [
+     "according to Avogadro's law",
+     "CO2 triatomic (three atoms in CO2 molecule)",
+     "CO2 molecule has more atoms"
+    ],
+    "marks": 3
+   }
+  ],
+  "notes": "Figure opened: three identical stoppered round-bottomed flasks side by side, labelled in bold across the belly He, Cl2 and CO2. The three gases are named nowhere in the question text, so the part is completely unanswerable without the figure — a prime target for this wave. Q4 items carry six marks each (plus one extra mark for each of the first two items attempted, which is a rubric bonus, not a content point), and the scheme splits this item 2 × 3. labelKey now decodes each formula printed on a flask to the gas it denotes."
+ },
+ {
+  "id": "chem-2021-hl-q4-k-fig",
+  "topicId": "chem-2-1",
+  "conceptId": "electrons-shared-cyclohexane-vs-benzene",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2021 HL Q4(k)",
+  "stem": "Answer eight of the following (a), (b), (c), etc.",
+  "questionText": "What is the average number of electrons shared between any two adjacent carbon atoms in a molecule of (i) cyclohexane, (ii) benzene?",
+  "figureKey": "chemistry-2021-HL-paper-p06-i0",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "cyclohexane — 2",
+    "contextNote": "Scheme: [Take order of question unless answers clearly labelled.]",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "benzene — 3",
+    "marks": 3
+   }
+  ],
+  "notes": "Figure opened: a plain hexagon captioned 'cyclohexane' and a hexagon with a complete inner circle captioned 'benzene' — the delocalised-ring notation printed beside the question is the representation that makes 'average number of electrons shared' meaningful, and it is why benzene's answer is 3 rather than 2 or 4. Honest caveat: both compounds are also named in the question text, so this is a weaker figure dependency than the flasks or the graph. labelKey OMITTED: 'cyclohexane' and 'benzene' are self-describing captions — each names the ring structure it sits under — so a decode panel would only repeat them."
+ },
+ {
+  "id": "chem-2021-hl-q9-a-fig",
+  "topicId": "chem-3-3",
+  "conceptId": "haber-graph-select-conditions",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2021 HL Q9(a)",
+  "stem": "In the Haber process the following chemical equilibrium is established using an iron catalyst.  N2 (g) + 3H2 (g) ⇌ 2NH3 (g)  The graph shows how, starting with N2 and H2 in a 1:3 molar ratio, the percentage NH3 by volume at equilibrium varies with temperature for three different pressures.",
+  "questionText": "Select the area of the graph (box A, B or C) corresponding to the conditions most closely associated with (i) good yields and slower rates of reaction, (ii) higher yields but more costly and less safe ammonia production?",
+  "figureKey": "chemistry-2021-HL-paper-p10-i0",
+  "labelKey": [
+   {
+    "letter": "100 MPa",
+    "meaning": "the curve of % ammonia at equilibrium for a reaction pressure of 100 MPa",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "20 MPa",
+    "meaning": "the curve of % ammonia at equilibrium for a reaction pressure of 20 MPa",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "1 MPa",
+    "meaning": "the curve of % ammonia at equilibrium for a reaction pressure of 1 MPa",
+    "askedInThisQuestion": false
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "good yields and slower rates of reaction — A",
+    "contextNote": "Scheme: [Take order of question unless answers clearly labelled.]",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "higher yields but more costly and less safe ammonia production — B",
+    "marks": 3
+   }
+  ],
+  "notes": "Figure opened: % Ammonia at Equilibrium against Temperature (K), three falling curves labelled 100 MPa (dotted, uppermost), 20 MPa (solid) and 1 MPa (heavy dashed), with three grey boxes on the plot — A at the far left just under 80% around 373–473 K, B near the top at about 573 K under the 100 MPa curve, and C on the right at about 20% near 773 K on the 20 MPa curve. All three letters exist only on the graph, so the part is unanswerable without it. labelKey now decodes only the three pressure labels — each tags one of the three equilibrium curves. A, B and C are dropped from it: they are the answer options the candidate picks between rather than parts of the figure, and the scheme's letter answers stay in the rows."
+ },
+ {
+  "id": "chem-2021-hl-q9-b-fig",
+  "topicId": "chem-3-3",
+  "conceptId": "haber-graph-deduce-exothermic",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2021 HL Q9(b)",
+  "stem": "In the Haber process the following chemical equilibrium is established using an iron catalyst.  N2 (g) + 3H2 (g) ⇌ 2NH3 (g)  The graph shows how, starting with N2 and H2 in a 1:3 molar ratio, the percentage NH3 by volume at equilibrium varies with temperature for three different pressures.",
+  "questionText": "Use the information in the graph to deduce whether the production of ammonia in the Haber process is exothermic or endothermic and justify your answer.",
+  "figureKey": "chemistry-2021-HL-paper-p10-i0",
+  "labelKey": [
+   {
+    "letter": "100 MPa",
+    "meaning": "the curve of % ammonia at equilibrium for a reaction pressure of 100 MPa",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "20 MPa",
+    "meaning": "the curve of % ammonia at equilibrium for a reaction pressure of 20 MPa",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "1 MPa",
+    "meaning": "the curve of % ammonia at equilibrium for a reaction pressure of 1 MPa",
+    "askedInThisQuestion": false
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "gate",
+    "verbatim": "exothermic",
+    "contextNote": "Scheme: [USE must be correct for JUSTIFY to be awarded marks]",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "less ammonia (lower yield) at higher temperature",
+    "accepts": [
+     "more ammonia (higher yield) at lower temperature",
+     "reverse reaction favoured when temperature increases (to absorb heat)",
+     "forward heat releasing reaction not favoured when temperature increases"
+    ],
+    "marks": 6
+   }
+  ],
+  "notes": "Same graph as Q9(a); opened and checked — every curve falls from left to right, which is the trend the answer rests on. 'Use the information in the graph' makes it figure-dependent. Q9(c) (Kc expression and calculation) and Q9(d) (pressure and catalyst effects) need no graph and are left to the text-only wave. labelKey now decodes only the three pressure labels — each tags one of the three equilibrium curves; A, B and C are dropped as the answer options belonging to Q9(a), not parts of the figure.\n\nCONSOLIDATED SKIP LIST for this paper — every figure below was opened with the Read tool and rejected:\n• chemistry-2021-HL-paper-p04-i0 (Q3(a)): two shallow clock glasses in perspective, each holding a heaped mound of grey-stippled powder. No letters, no captions, and nothing whatever distinguishes the sodium sulfite from the barium chloride, so it cannot support a 'which is which' card. Q3(a) is fully answerable from the printed words, and its 15 marks are a 5 × 3 three-column method table.\n• chemistry-2021-HL-paper-p05-i0 (Q4(h)): photograph of a Pillsbury BALANCER HI GLUTEN FLOUR sack. Purely illustrative — 'find the value of x' needs only the 47.9% figure in the text.\n• chemistry-2021-HL-paper-p12-i0 (Q11(b)): photograph of two pigs over a wooden board. Purely illustrative; the BOD parts are word-answerable.\n• chemistry-2021-HL-paper-p13-i0 (Q11(c)(i)): photograph of five wooden balls with peg holes. Purely illustrative; 'What was Dalton's atomic theory?' needs no figure.\n• chemistry-2021-HL-paper-p14-i0 (Q11(d) A): photograph of a lightning bolt. Purely illustrative.\n• chemistry-2021-HL-paper-p14-i1 (Q11(d) B): photograph of a native-copper boulder on grass. Purely illustrative; its only visible 'letter' is the sliced bottom sliver of the part heading B, which is not something a question asks about.\nAlso not carded: Q11(a)(iv) does say 'The diagram above shows an arrangement of apparatus used to compare the solubilities of ethene in water and in cyclohexane' and would have been a fair target, but no crop of that syringe apparatus exists in the supplied figure list, so there is no figureKey to name. Q10(a)(i), Q10(b)(ii), Q11(a)(ii) and Q11(a)(iii) are drawing/plotting questions and are excluded by rule."
+ },
+ {
+  "id": "chem-2021-ol-q1-a-fig",
+  "topicId": "chem-2-4",
+  "conceptId": "ethyne-preparation-identify-reagents",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2021 OL Q1(a)",
+  "stem": "Before battery-powered lamps became available in the early 1900s, carbide lamps that made use of a chemical reaction to produce a flammable hydrocarbon gas that burned with a bright, sooty flame were commonly used on bicycles and motor cars. The apparatus shown in the diagram can be used to make and collect this hydrocarbon gas B in the school laboratory.",
+  "questionText": "Identify (i) liquid A, (ii) gas B.",
+  "figureKey": "chemistry-2021-OL-paper-p02-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "water / H2O",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "ethyne",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "(6 + 5)"
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "A — water / H2O",
+    "marks": null,
+    "accepts": [
+     "H2O"
+    ]
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B — ethyne",
+    "marks": null,
+    "accepts": [
+     "C2H2"
+    ],
+    "contextNote": "The scheme prints only \"ethyne\" here. The formula is accepted under the scheme's own Introduction, point 5: \"In general, names and formulas of elements and compounds are equally acceptable except in cases where either the name or the formula is specifically asked for in the question.\""
+   }
+  ],
+  "notes": "Figure opened and verified: dropping funnel labelled \"liquid A\" over a conical flask of \"calcium carbide\", side-arm \"tube\" running into a trough of \"water\" under an inverted tube of \"gas B\". The letters A and B appear ONLY on the diagram — the printed question text never says liquid A is added to calcium carbide from a funnel, so this part is unanswerable without the figure. Scheme prints the tariff as a combined \"(6 + 5)\" for (i) and (ii) together rather than a mark against each sub-part, so this is modelled as an orderedSplit with marks null rather than guessing which sub-part carries the 6. C2H2 is not printed against Q1(a)(ii); it is licensed by Introduction point 5 of the same scheme, and that provenance is now stated on the row."
+ },
+ {
+  "id": "chem-2021-ol-q1-b-fig",
+  "topicId": "chem-u2",
+  "conceptId": "ethyne-preparation-flask-observations",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2021 OL Q1(b)",
+  "stem": "The apparatus shown in the diagram can be used to make and collect hydrocarbon gas B in the school laboratory.",
+  "questionText": "Describe what happens in the reaction flask when liquid A is added slowly to calcium carbide.",
+  "figureKey": "chemistry-2021-OL-paper-p02-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "water / H2O",
+    "askedInThisQuestion": false
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "effervescence / fizzing / bubbling (bubbles) / flask gets hot / steam / white smoke (vapour) / solid disappearing / dirty brown liquid produced / carbide reacts / gas formed (evolved) / gas flows along delivery tube",
+    "marks": 6,
+    "accepts": [
+     "fizzing",
+     "bubbling (bubbles)",
+     "flask gets hot",
+     "steam",
+     "white smoke (vapour)",
+     "solid disappearing",
+     "dirty brown liquid produced",
+     "carbide reacts",
+     "gas formed (evolved)",
+     "gas flows along delivery tube"
+    ]
+   }
+  ],
+  "notes": "Carded here because the question names lettered part A, which only the diagram places (in the dropping funnel above the flask), and because one of the scheme's accepted observations — \"gas flows along delivery tube\" — is only available to a student who can see the side-arm delivery tube in the figure. A is decoded in the labelKey as the scheme states it; A's identity is not what this part asks for."
+ },
+ {
+  "id": "chem-2021-ol-q1-c-fig",
+  "topicId": "chem-u2",
+  "conceptId": "gas-collection-over-water-solubility",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2021 OL Q1(c)",
+  "stem": "The apparatus shown in the diagram can be used to make and collect hydrocarbon gas B in the school laboratory.",
+  "questionText": "(i) What does the method of collection of B tell you about its solubility in water? (ii) Why are the first few test-tubes of gas produced not used in tests?",
+  "figureKey": "chemistry-2021-OL-paper-p02-i0",
+  "labelKey": [
+   {
+    "letter": "B",
+    "meaning": "ethyne",
+    "askedInThisQuestion": false
+   }
+  ],
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "(6 + 3)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(i) — insoluble in water",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "(ii) — impure / contain air (oxygen, nitrogen)",
+    "marks": null,
+    "accepts": [
+     "contain air (oxygen, nitrogen)"
+    ]
+   }
+  ],
+  "notes": "This is the strongest figure dependency on the paper: \"the method of collection of B\" is nowhere described in words — the student must read off the inverted tube standing over water in the trough to conclude the gas is insoluble in water. Part (ii) is in the same tariff block and is also supported by the figure (the flask and delivery tube are full of air at the start). Scheme prints a combined \"(6 + 3)\" for (i) and (ii) with no per-sub-part mark, hence orderedSplit with marks null. Skipped from Q1: (d)(i)/(ii) unsaturation test and (e) flame characteristics — both answerable from the printed words with no reference to the diagram, so they belong to the text-only wave."
+ },
+ {
+  "id": "chem-2021-ol-q2-a-i-fig",
+  "topicId": "chem-4-1",
+  "conceptId": "titration-apparatus-identification",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2021 OL Q2(a)(i)",
+  "stem": "In order to prepare a pure sample of sodium chloride, a student first carried out one rough and two accurate titrations of 25.0 cm3 portions of a sodium hydroxide solution with 0.3 M hydrochloric acid solution. A burette was used to add the HCl to the NaOH in a conical flask until an indicator showed that the end point had been reached.",
+  "questionText": "Identify the pieces of apparatus A and C shown on the right.",
+  "figureKey": "chemistry-2021-OL-paper-p03-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "pipette",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "graduated cylinder",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "evaporating basin",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A — pipette",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "C — evaporating basin",
+    "marks": 3
+   }
+  ],
+  "notes": "Figure opened and verified: three drawn pieces of glassware — a long stem with a central bulb and fine tip labelled A, a tall scaled cylinder printed on the paper as \"B = graduated cylinder\", and a shallow round dish with a pouring spout labelled C. Nothing in the printed text identifies A or C, so the question is pure figure-reading. B is included in the labelKey with askedInThisQuestion false because its meaning is printed on the exam figure itself; A and C are not decoded on the paper. Total is 6 of the 18 marks printed for part (a) — (a)(ii) and (a)(iii) are separate."
+ },
+ {
+  "id": "chem-2021-ol-q2-a-ii-fig",
+  "topicId": "chem-4-1",
+  "conceptId": "pipette-vs-graduated-cylinder-accuracy",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2021 OL Q2(a)(ii)",
+  "stem": "In order to prepare a pure sample of sodium chloride, a student first carried out one rough and two accurate titrations of 25.0 cm3 portions of a sodium hydroxide solution with 0.3 M hydrochloric acid solution.",
+  "questionText": "Would A or B have been more suitable to measure accurately 25.0 cm3 of the NaOH solution into the conical flask? Explain your answer.",
+  "figureKey": "chemistry-2021-OL-paper-p03-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "pipette",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "graduated cylinder",
+    "askedInThisQuestion": false
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "pipette / A",
+    "marks": 3,
+    "accepts": [
+     "A"
+    ],
+    "contextNote": "[Accept opposites in terms of B.]"
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "pipette has narrower neck / pipette designed to deliver fixed volume",
+    "marks": 3,
+    "accepts": [
+     "pipette designed to deliver fixed volume"
+    ],
+    "contextNote": "[Accept opposites in terms of B.]"
+   }
+  ],
+  "notes": "Unanswerable without the figure: the question offers a choice between two letters and only the drawing shows that A is a pipette. B's identity is printed on the exam figure, so it is decoded here with askedInThisQuestion false; A is not decoded on the paper. Skipped: (a)(iii) (\"how should the piece of apparatus you selected in (ii) have been rinsed\") — once the apparatus is known its answer is the standard rinse-with-deionised-water-then-with-the-solution answer, so it needs no figure and belongs to the text-only wave."
+ },
+ {
+  "id": "chem-2021-ol-q2-d-i-fig",
+  "topicId": "chem-4-1",
+  "conceptId": "evaporating-basin-obtain-dry-salt",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2021 OL Q2(d)(i)",
+  "stem": "The student then added exactly 23.0 cm3 of the 0.3 M HCl to another 25.0 cm3 portion of the NaOH solution in the conical flask, this time without the indicator.",
+  "questionText": "How could the student have then obtained a pure, dry sample of sodium chloride using the piece of apparatus C?",
+  "figureKey": "chemistry-2021-OL-paper-p03-i0",
+  "labelKey": [
+   {
+    "letter": "C",
+    "meaning": "evaporating basin",
+    "askedInThisQuestion": false
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "evaporate all water (solvent) / evaporate to dryness / boil away (off) all water (solvent)",
+    "marks": 4,
+    "accepts": [
+     "evaporate to dryness",
+     "boil away (off) all water (solvent)"
+    ]
+   }
+  ],
+  "notes": "The question names apparatus C, which is identified only by the drawing on the right of the page, so the figure and its labelKey are required. C is decoded (askedInThisQuestion false) because this part asks what to DO with it, not what it is. Skipped: (d)(ii), the 4-mark mass calculation (Mr NaCl = 58.5, then 58.5 × 0.0069 = 0.40365 g) — it has discrete checkable points but needs no figure at all."
+ },
+ {
+  "id": "chem-2021-ol-q3-d-fig",
+  "topicId": "chem-u2",
+  "conceptId": "corrosive-hazard-pictogram",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2021 OL Q3(d)",
+  "stem": "The container in which the 1.0 M NaOH solution was provided carried the warning pictogram shown on the right.",
+  "questionText": "(i) What chemical hazard is indicated by this pictogram? (ii) Describe one precaution that should have been taken when using this solution.",
+  "figureKey": "chemistry-2021-OL-paper-p04-i1",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(i) — corrosive",
+    "marks": 6,
+    "accepts": [
+     "harmful",
+     "burning",
+     "irritating"
+    ],
+    "contextNote": "[Allow harmful, burning, irritating.]"
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "(ii) — wear gloves (PPE) / wear eye protection / mop up spillages, etc",
+    "marks": 6,
+    "accepts": [
+     "wear eye protection",
+     "mop up spillages"
+    ],
+    "openList": true
+   }
+  ],
+  "notes": "Figure opened and verified: the GHS diamond showing two tilted test tubes pouring liquid, one stream eating into a solid block and the other into an open hand. The paper never names the hazard, so (i) is answerable only by reading the pictogram. No letters on this figure, so no labelKey. Skipped elsewhere on this paper: figure chemistry-2021-OL-paper-p05-i1 (night photograph of a distress flare beside Q4(c)) and chemistry-2021-OL-paper-p05-i0 (photograph of a toothpaste tube beside Q4(i)) — both are decorative stock photographs; the questions (\"name a metal whose salts have a red flame colour\", the p.p.m. calculation) are fully answerable from the printed words and neither photo carries any data."
+ },
+ {
+  "id": "chem-2021-ol-q10-b-v-fig",
+  "topicId": "chem-3-5",
+  "conceptId": "electrolysis-oxidation-at-anode",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2021 OL Q10(b)(v)",
+  "stem": "The diagram shows how acidified water can be electrolysed using inert electrodes. The overall reaction that takes place during the electrolysis is: H2O (l) → H2 (g) + ½O2 (g). This is a redox reaction.",
+  "questionText": "At which electrode, X or Y, does oxidation take place?",
+  "figureKey": "chemistry-2021-OL-paper-p11-i0",
+  "labelKey": [
+   {
+    "letter": "X",
+    "meaning": "anode",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "Y",
+    "meaning": "cathode",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "X / anode",
+    "marks": 6,
+    "accepts": [
+     "anode"
+    ]
+   }
+  ],
+  "notes": "Figure opened and verified: beaker of acidified water with two inverted collecting tubes, the left one labelled O2 with \"X (anode)\" printed sideways beside it and the right one labelled H2 with \"Y (cathode)\", the electrodes wired to + (left) and – (right) terminals of a battery. The question offers a choice of two letters that exist only on the diagram, so both figure and labelKey are required; the meanings \"anode\" and \"cathode\" are printed on the exam figure itself, so decoding them matches real exam conditions. Skipped from Q10(b): (i)/(ii) definitions of oxidation and reduction, (iii) the 2:1 volume ratio (from the equation), (iv) inert electrode material — all answerable from the printed text. Remaining unused 2021 OL figures, each opened and rejected with reason: chemistry-2021-OL-paper-p08-i0 (fractionating column, Q6) — carries no letters and Q6(c) high-up/low-down is standard recall the words already support; chemistry-2021-OL-paper-p10-i0 (rate apparatus, Q9) — every part is word-labelled and no Q9 part asks about the apparatus, while Q9(b)(i) is a graph plot and Q9(c) reads off the candidate's own graph, both barred; chemistry-2021-OL-paper-p12-i0 (photograph of a scallop shell, Q11(b)) — decorative; chemistry-2021-OL-paper-p13-i0 (crucible on tripod over a Bunsen, Q11(c)) — the raised lid is described in the printed text, so (c)(i) needs no figure; chemistry-2021-OL-paper-p14-i0 (blast furnace, Q11(d)B) — the paper's own text defines X (\"a third substance, X\" in the charge that reduces the ore and fuels the furnace) and Y (\"co-product Y\" from calcium oxide and the ore impurities) in full prose, so (ii) and (iii) are text-answerable and X does not appear on the drawing at all; chemistry-2021-OL-paper-p14-i1 (cutaway photograph of a triple-glazing unit, Q11(d)A) — decorative."
+ },
+ {
+  "id": "chem-2022-hl-q2-c-i-fig",
+  "topicId": "chem-u2",
+  "conceptId": "recrystallisation-filtration-products",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 HL Q2(c)(i)",
+  "stem": "A student practiced the technique of recrystallisation using benzoic acid containing small quantities of two solid impurities: water-soluble potassium chloride (KCl) and black, insoluble charcoal (C).  The two filtration stages in the recrystallisation of the benzoic acid using water as the solvent are shown in the diagrams below in the order in which they are carried out.",
+  "questionText": "Identify the substance(s) collected at locations X, Y and Z.",
+  "figureKey": "chemistry-2022-HL-paper-p03-i2",
+  "labelKey": [
+   {
+    "letter": "X",
+    "meaning": "charcoal / carbon / C (SEC 2022 HL marking scheme, Q2(c)(i))",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "Y",
+    "meaning": "benzoic acid / C6H5COOH (SEC 2022 HL marking scheme, Q2(c)(i))",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "Z",
+    "meaning": "potassium chloride (KCl) / water (H2O) (SEC 2022 HL marking scheme, Q2(c)(i))",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "X: charcoal / carbon / C",
+    "marks": 3,
+    "accepts": [
+     "charcoal",
+     "carbon",
+     "C"
+    ],
+    "contextNote": "X labels the residue left on the fluted filter paper in the first (gravity) filtration."
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "Y: benzoic acid / C6H5COOH",
+    "marks": 3,
+    "accepts": [
+     "benzoic acid",
+     "C6H5COOH"
+    ],
+    "contextNote": "Y labels the solid collected on the plate of the Buchner funnel in the second (suction) filtration."
+   },
+   {
+    "id": "r-3",
+    "kind": "alt",
+    "verbatim": "Z: potassium chloride (KCl) / water (H2O)",
+    "marks": 3,
+    "accepts": [
+     "potassium chloride",
+     "KCl",
+     "water",
+     "H2O"
+    ],
+    "contextNote": "Z labels the liquid collected in the base of the filter flask. Scheme accepts either substance."
+   }
+  ],
+  "notes": "Figure opened and verified: the crop shows both filtration set-ups in order — gravity filtration with a fluted paper into a conical flask (leader line to X) and suction filtration into a Buchner funnel on a filter flask (leader lines to Y, to the side arm marked 'suction', and to the liquid pooled at Z). All three letters and the printed part-(i) line are fully visible, so the question is answerable from this crop. Scheme rule to apply when self-marking: '[Take order of question unless responses are clearly labelled.]' Marks are 3 x 3 = 9 (part (c) totals 21 across (i)-(iv)). SKIPPED from this figure: 2(c)(ii) 'between the first and second filtrations' (3), 2(c)(iii) 'after the second filtration' (3) and 2(c)(iv) melting point (6) — all answerable from recrystallisation knowledge in words alone, so they belong to the text-only wave, not this diagram wave. The 'suction' label on the diagram is a plain caption, not a question label, so it is not in labelKey. SKIPPED FIGURE: chemistry-2022-HL-paper-p03-i0 was opened — it is the Q2(b) ethene delivery-tube/test-tube bubbling set-up labelled C2H4. The Q2(b) parts (colour change with acidified KMnO4, with bromine water, reaction type, organic product) are fully answerable without the picture, so no card was written from it."
+ },
+ {
+  "id": "chem-2022-hl-q4-k-fig",
+  "topicId": "chem-1-4",
+  "conceptId": "aspirin-structure-to-molar-mass",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q4(k)",
+  "stem": "Answer eight of the following (a), (b), (c), etc.",
+  "questionText": "The structure of aspirin is shown.  Calculate the average daily dose (in mg) when a person took a total of 0.146 moles of ‘low dose’ aspirin over 365 days.",
+  "figureKey": "chemistry-2022-HL-paper-p05-i1",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.146 × 180* = 26.280 g aspirin",
+    "marks": 3,
+    "contextNote": "Mr aspirin (C9H8O4) = 180 — the molecular formula has to be counted off the drawn structure. [*Addition must be shown for error to be treated as slip.]"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "26.28 ÷ 365 = 0.0720 (9/125) g per day",
+    "marks": 2,
+    "accepts": [
+     "0.0720 g per day",
+     "9/125 g per day"
+    ]
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "0.0720 × 1000 = 72.0 mg per day",
+    "marks": 1,
+    "accepts": [
+     "72.0 mg",
+     "72 mg"
+    ]
+   }
+  ],
+  "notes": "Figure opened and verified: the crop shows the skeletal structure of aspirin — a benzene ring with an inscribed circle, a -C(=O)OH carboxylic acid group and an -O-C(=O)CH3 ester group (labels O, OH, C, CH3 visible). The diagram is load-bearing: the candidate must read C9H8O4 off it to get Mr = 180, so this is a genuine diagram-dependent calculation. No labelKey: the question names no lettered parts and the symbols on the structure are ordinary chemical notation, not question labels the sources decode. Scheme headline is 'CALCULATE: 72.0 mg (6)'; rows follow the scheme's first box (3 + 2 + 1 = 6). The scheme prints an equally-valid alternative box for the reverse order, worth the same 6: '0.146 ÷ 365 = 4 × 10–4 (1/2500) mol per day (2)' then '4 × 10–4 × 180* = 0.0720 (9/125) g per day (3)' then '0.0720 × 1000 = 72.0 mg aspirin per day (1)' — a student who worked that way should award 2/3/1 on the same three steps. Q4 items are 6 marks each, with one extra mark added to each of the two best-answered items overall; that bonus is not part of this item's tariff. SKIPPED FIGURE: chemistry-2022-HL-paper-p05-i0 was opened — it is a photograph of a rough diamond held in a hand beside Q4(d)/(e)/(f), with no labels or scale. Q4(f) (mass of one carat) is a pure mole calculation from the printed numbers, so the photo is decorative and no card was written from it."
+ },
+ {
+  "id": "chem-2022-hl-q11-c-ii-iv-fig",
+  "topicId": "chem-3-2",
+  "conceptId": "reaction-profile-energy-values",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q11(c)(ii)–(iv)",
+  "stem": "The reaction profile diagram for the reaction X → Y, with and without catalyst C, is shown below.",
+  "questionText": "(ii) What is the value of Ea for the reaction X → Y without the catalyst?\n(iii) By how much does catalyst C lower the value of Ea for the reaction?\n(iv) What is the value of ΔH for the reverse reaction Y → X?",
+  "figureKey": "chemistry-2022-HL-paper-p13-i0",
+  "labelKey": [
+   {
+    "letter": "X",
+    "meaning": "The reactant — the paper introduces the figure as 'The reaction profile diagram for the reaction X → Y, with and without catalyst C'. The label sits on the flat starting level at 20 kJ mol–1.",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "Y",
+    "meaning": "The product — the paper introduces the figure as 'The reaction profile diagram for the reaction X → Y, with and without catalyst C'. The label sits on the flat finishing level at 50 kJ mol–1.",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "100 kJ mol–1",
+    "marks": 3,
+    "accepts": [
+     "100 kJ/mol",
+     "100 kJ per mol"
+    ],
+    "contextNote": "(ii) Ea for X → Y without the catalyst — read from the solid curve (peak 120, start 20)."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "40 kJ mol–1",
+    "marks": 3,
+    "accepts": [
+     "40 kJ/mol",
+     "40 kJ per mol"
+    ],
+    "contextNote": "(iii) The amount by which catalyst C lowers Ea — solid peak 120 against dashed peak 80. The figure's key marks the dashed curve 'Reaction with catalyst'; the letter C is the paper's name for that catalyst and is not printed on the graph."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "–30 kJ mol–1",
+    "marks": 3,
+    "accepts": [
+     "-30 kJ mol-1",
+     "–30 kJ/mol",
+     "minus 30 kJ mol-1"
+    ],
+    "contextNote": "(iv) ΔH for the reverse reaction Y → X — sign is essential; it is the reverse direction, Y at 50 back down to X at 20."
+   }
+  ],
+  "notes": "Figure opened and verified: an energy-profile graph on a square grid, y-axis 'Energy (kJ mol-1)' scaled 0–140 in 20s, x-axis 'Reaction progress' with no scale, and an in-plot key giving a solid line for 'Reaction without catalyst' and a dashed line for 'Reaction with catalyst'. Both curves start flat at 20 (bold X printed there), the solid peaks at 120, the dashed peaks at 80, and both finish flat at 50 (bold Y printed there). Every value the three parts ask for is readable off this crop, and none of them is obtainable from the words alone. All three parts are 3 marks each in the scheme (100 kJ mol–1, 40 kJ mol–1, –30 kJ mol–1), so the card totals 9 of part (c)'s 25. Only X and Y are printed on the figure, so only those two are in labelKey — 'catalyst C' is defined in the paper's own lead-in and the catalysed curve is identified by the figure's key, so (iii) stays answerable without claiming a label the crop does not carry. SKIPPED from this question: (i) 'Explain the term activation energy (Ea)', (v) 'Explain the underlined term' (heterogeneous catalysis) and (vi) the catalyst-mechanism 'ANY TWO' list — all text-only and independent of the figure. SKIPPED FIGURES elsewhere on this paper, all opened first: chemistry-2022-HL-paper-p04-i0 is a photograph of a mound of fine black manganese(IV) oxide powder beside Q3 with no apparatus, labels or scale — Q3's parts are a balanced equation, a risk/control pair, and graph plotting and sketching (which are excluded anyway), so the photo supports nothing; chemistry-2022-HL-paper-p07-i0 is a photograph of the side panel of a hydrogen Dublin Bus at Q6, carrying only the painted slogan and an (H2)+(O2)=(power symbol)+(H2O) pictogram, while the actual equations Q6 needs are printed in the question text; chemistry-2022-HL-paper-p09-i0 is a photograph of a single raspberry at Q8(b) with no labels — the 'E' in that crop is in the printed question text, not on the image, so it is not a figure label and the ester questions are answered from the words."
+ },
+ {
+  "id": "chem-2022-ol-q3-a-fig",
+  "topicId": "chem-u2",
+  "conceptId": "h2o2-decomposition-catalyst-addition",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 OL Q3(a)",
+  "stem": "Solutions of hydrogen peroxide (H2O2) are unstable and decompose according to the following balanced equation: 2H2O2 → 2H2O + O2. A student measured the rate of decomposition, in the presence of a catalyst, of a hydrogen peroxide solution that had been in storage for some time. The student measured 25 cm3 of the hydrogen peroxide solution into a flask and, having added a small quantity of a suitable catalyst, recorded the volume of oxygen collected at intervals over several minutes using the apparatus shown below.",
+  "questionText": "(i) Identify a suitable catalyst for the decomposition of H2O2. (ii) Describe the appearance of the catalyst. (iii) Explain how the catalyst could have been added to the hydrogen peroxide solution in the flask without loss of oxygen gas.",
+  "figureKey": "chemistry-2022-OL-paper-p04-i0",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "FOUR POINTS: [9 + 5 + 2 + 2]"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "manganese(IV) oxide (manganese dioxide, MnO2) / celery / liver, etc",
+    "accepts": [
+     "manganese(IV) oxide",
+     "manganese dioxide",
+     "MnO2",
+     "celery",
+     "liver"
+    ],
+    "openList": true,
+    "marks": null,
+    "contextNote": "Scheme note: \"Apply (–2) for manganese oxide.\""
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "black (brown) / powder / pellets (grains) / small pieces of stalks (stems) / small meaty (minced, red, bloody) pieces, etc",
+    "accepts": [
+     "black",
+     "brown",
+     "powder",
+     "pellets",
+     "grains",
+     "small pieces of stalks (stems)",
+     "small meaty (minced, red, bloody) pieces"
+    ],
+    "openList": true,
+    "marks": null,
+    "contextNote": "The appearance you give must match the catalyst you named in (i)."
+   },
+   {
+    "id": "r-3",
+    "kind": "alt",
+    "verbatim": "catalyst initially in neck of flask lying on its side",
+    "accepts": [
+     "catalyst initially in neck of flask lying on its side",
+     "catalyst and peroxide initially separated using small test tube",
+     "open (replace, insert) stopper"
+    ],
+    "marks": null,
+    "contextNote": "First of the two marking points in (iii). The scheme gives three alternative methods separated by \"or\"; your second point must come from the same method."
+   },
+   {
+    "id": "r-4",
+    "kind": "alt",
+    "verbatim": "rotate flask so combine catalyst with solution",
+    "accepts": [
+     "rotate flask so combine catalyst with solution",
+     "disturb to mix catalyst and solution",
+     "add catalyst quickly"
+    ],
+    "marks": null,
+    "contextNote": "Second of the two marking points in (iii), and it must pair with the method you chose in the previous row."
+   }
+  ],
+  "notes": "Figure opened and checked: a conical flask sealed with a rubber stopper carrying a delivery tube, a shallow liquid layer over dark speckled granular solid on the flask floor, \"flexible tubing\" running down into a water trough and up under an inverted graduated cylinder, \"O2\" labelling the gas space, plus a separate digital timer reading 00:00. The diagram carries word labels but no letters, so no labelKey. It is the diagram that shows the flask is closed and connected to the collecting cylinder, which is the whole basis of part (iii) — a student cannot reason about \"without loss of oxygen gas\" without seeing the stoppered flask. SKIPPED from Q3: (b)(i) is a graph-plotting instruction (a student cannot self-mark their own graph); (b)(ii) and (b)(iii) are read off the student's own plotted graph, not off this figure, so this figure does not support them; (c) needs no figure. Marks: the scheme pools (i), (ii) and (iii) into one four-point ordered split worth 18, so all three parts are carded together and every row carries marks: null. ALSO SKIPPED in Section A: chemistry-2022-OL-paper-p02-i1 (Q1(a) ethene apparatus) — (a)(i) is \"copy and complete the diagram by labelling…\", a drawing task, and its 29 marks are one six-point split shared with (a)(ii) and (a)(iii), so the answerable parts cannot be given a truthful tariff; chemistry-2022-OL-paper-p02-i0 (Q1(b) oxidation apparatus, labelled \"phenylmethanol, water, KMnO4 and base\" / \"water bath\" / \"hotplate\") — (b)(iii) and (b)(iv) are answered from the three reagents printed in the question text, not from the diagram, and (b)'s 21 marks are one six-point ordered split across (i)–(vi), which exceeds the five-row limit and has no honest sub-tariff."
+ },
+ {
+  "id": "chem-2022-ol-q5-d-fig",
+  "topicId": "chem-2-2",
+  "conceptId": "ammonia-bonding-pairs-and-shape",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 OL Q5(d)",
+  "stem": "The diagram represents the arrangement of electrons in an ammonia (NH3) molecule.",
+  "questionText": "(i) How many pairs of bonding electrons are there around the nitrogen atom in an ammonia molecule? (ii) What is the shape of an NH3 molecule?",
+  "figureKey": "chemistry-2022-OL-paper-p07-i0",
+  "labelKey": [
+   {
+    "letter": "N",
+    "meaning": "nitrogen atom",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "H",
+    "meaning": "hydrogen atom",
+    "askedInThisQuestion": false
+   }
+  ],
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "(9 + 2)"
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "three / 3",
+    "accepts": [
+     "three",
+     "3"
+    ],
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "trigonal pyramidal",
+    "marks": null
+   }
+  ],
+  "notes": "Figure opened and checked: a dot-and-cross electron diagram — a central grey disc labelled N inside two concentric rings, three smaller rings each drawn around a grey disc labelled H (above, left and right), one small dot plus one star-shaped cross side by side in each of the three N–H overlap regions (three shared pairs), and a touching pair of dots at the bottom of the nitrogen's outer ring (the lone pair). This is the paper's clearest diagram-dependent part: (i) is answered by counting the shared pairs drawn around the nitrogen, and the lone pair visible at the bottom is what forces the pyramidal answer in (ii). labelKey covers only N and H, whose meanings the paper itself states by calling the diagram an ammonia (NH3) molecule and by naming \"the nitrogen atom\" in part (i); no other meaning is inferred from the picture. Marks: the scheme prints one ordered split (9 + 2) across the two parts rather than a mark per part, so both rows carry marks: null and the card totals 11. The scheme prints \"trigonal pyramidal\" with no asterisk, so no exact-term flag is set — a student who wrote \"pyramidal\" can still claim the point as a synonym. ALSO SKIPPED: chemistry-2022-OL-paper-p03-i0 and chemistry-2022-OL-paper-p03-i1 (Q2) — opened, and they are decorative outline drawings of a 250 cm3 volumetric flask and an empty conical flask; no part of Q2 asks anything about them and every part (a)–(f) is answerable from the printed text alone."
+ },
+ {
+  "id": "chem-2021-ol-q6-bc-fig",
+  "subjectId": "chemistry",
+  "level": "ordinary",
+  "year": 2021,
+  "topicId": "chem-2-4",
+  "conceptId": "crude-oil-fractional-distillation",
+  "section": "B",
+  "questionRef": "2021 OL Q6(b)–(c)",
+  "figureKey": "chemistry-2021-OL-paper-p08-i0",
+  "stem": "Crude oil is a useful resource which is recovered from sedimentary rock by drilling. Crude oil is a mixture of hydrocarbons and is separated into a number of different fractions during oil refining. Three of the fractions obtained from the fractional distillation of crude oil are: gas oil (diesel oil)   light gasoline   kerosene",
+  "questionText": "(b) List the three fractions named above in order of increasing boiling point. (c) As they separate in a fractionating column, where (high up or low down) would you expect to collect the hydrocarbons (i) with the fewest carbon atoms, (ii) with the highest boiling points?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "allOf",
+    "verbatim": "light gasoline, kerosene, gas oil (diesel oil)",
+    "marks": 6,
+    "contextNote": "All three in increasing boiling-point order; the scheme gives reduced credit for the list in reverse order."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "(i) — high",
+    "marks": 6
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "(ii) — low",
+    "marks": 6
+   }
+  ],
+  "notes": "Figure opened: the crop carries the fractionating-column schematic (crude oil → coiled pipe in the furnace → tall column with four rows of bubble-cap trays, five side draw-offs, dark-to-white shading up the column and a long upward 'cooling' arrow) AND, along its top edge, the printed list of the three fractions the question refers to. The column is exactly what parts (b) and (c) reason over, so the crop is the question's own apparatus, not decoration. All figure captions ('crude oil', 'furnace', 'cooling') are self-describing English words — no letters to decode — so no labelKey. Part (a) (5) and parts (d)–(e) are outside this card, hence totalMarks 18 rather than the printed 50."
+ },
+ {
+  "id": "chem-2021-ol-q9-abd-fig",
+  "subjectId": "chemistry",
+  "level": "ordinary",
+  "year": 2021,
+  "topicId": "chem-3-2",
+  "conceptId": "rate-of-reaction-factors",
+  "section": "B",
+  "questionRef": "2021 OL Q9(a), (b)(ii), (d)",
+  "figureKey": "chemistry-2021-OL-paper-p10-i0",
+  "stem": "The apparatus shown below was used to investigate the rate of formation of hydrogen gas according to the following balanced equation: Zn + 2HCl → ZnCl2 + H2. The reaction was started by bending the flexible tubing and standing the flask on its base so that the zinc pellets fell into the acid. A stop-watch was started at the same time. The volume of hydrogen gas collected was measured at intervals over a 12-minute period using a gas syringe. A set of results obtained at room temperature in such an investigation is given in the table — Time (minutes): 0, 2, 4, 6, 8, 10, 12; Volume H2 (cm3): 0, 32, 50, 62, 69, 72, 72.",
+  "questionText": "(a) What is meant by the rate of a chemical reaction? (b) (ii) Does the rate of this reaction increase or decrease with time? Give a reason for your answer. (d) How would you expect the initial rate of this reaction to be affected by (i) using the same volume of a more concentrated HCl solution, (ii) using the same mass of powdered zinc instead of the pellets of zinc?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "change in concentration per unit time (rate of change of concentration) of one reactant or product",
+    "marks": 6,
+    "accepts": [
+     "change in concentration per unit time of one reactant or product",
+     "rate of change of concentration of one reactant or product",
+     "change in concentration ÷ time"
+    ]
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "(b)(ii) — decreases",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "alt",
+    "verbatim": "Zn (zinc, HCl, hydrochloric acid, reactants) used up (concentration decreases) / graph becomes less steep / graph levels off",
+    "marks": 3,
+    "accepts": [
+     "Zn (zinc) used up",
+     "HCl (hydrochloric acid) used up",
+     "reactants used up (concentration decreases)",
+     "graph becomes less steep",
+     "graph levels off"
+    ]
+   },
+   {
+    "id": "r4",
+    "kind": "alt",
+    "verbatim": "(d)(i) — increased / greater / speeded up",
+    "marks": 4,
+    "accepts": [
+     "increased",
+     "greater",
+     "speeded up"
+    ]
+   },
+   {
+    "id": "r5",
+    "kind": "alt",
+    "verbatim": "(d)(ii) — increased / greater / speeded up",
+    "marks": 4,
+    "accepts": [
+     "increased",
+     "greater",
+     "speeded up"
+    ]
+   }
+  ],
+  "notes": "Figure opened: the full rate-of-reaction rig drawn lying on its side — conical flask with shaded 'HCl solution' in the body and black 'Zn pellets' resting in the neck, bung and short glass tube into a black concertina 'flexible tubing', then a graduated horizontal 'gas syringe' with plunger and ring pull. The picture is what makes the stem intelligible ('started by bending the flexible tubing and standing the flask on its base so that the zinc pellets fell into the acid') and it is what part (d)(ii) contrasts against ('powdered zinc instead of the pellets of zinc'). All four captions are self-describing apparatus names — no letters — so no labelKey. Stem carries the paper's 'shown below' verbatim; the figure renders below the stem in SessionScreen, so the deixis is true in the app. Deliberately excluded: (b)(i) 'Plot a graph' is a plotting task, and (c) reads values off the candidate's own plotted graph, so neither is card-able; totalMarks 20 covers only (a) + (b)(ii) + (d)."
+ },
+ {
+  "id": "chem-2021-ol-q11c-fig",
+  "subjectId": "chemistry",
+  "level": "ordinary",
+  "year": 2021,
+  "topicId": "chem-u2",
+  "conceptId": "preparation-of-magnesium-oxide",
+  "section": "B",
+  "questionRef": "2021 OL Q11(c)",
+  "figureKey": "chemistry-2021-OL-paper-p13-i0",
+  "stem": "To prepare a sample of magnesium oxide, a small strip of magnesium ribbon was placed inside a crucible and heated strongly as shown in the diagram. The lid of the crucible was raised slightly several times during the heating process. The magnesium ignited as it reacted in air and magnesium oxide was formed according to the word equation: magnesium + oxygen gas → magnesium oxide",
+  "questionText": "(i) Suggest a reason why the lid of the crucible was raised during the heating process. (ii) Use the valencies of magnesium and oxygen to write the chemical formula of magnesium oxide. (iii) Replace the words in the word equation above with chemical formulae and balance your equation. (iv) Would you expect the mass of the crucible and its contents to increase, decrease or remain constant as the reaction proceeded? Explain your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 25,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(i) — so there is sufficient oxygen (air)",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "(ii) — MgO",
+    "marks": 9,
+    "contextNote": "The scheme's alternative route awards Mg: 2 (II) and O: 2 (II) as 2 × 3, so the valencies alone reach 6 of the 9.",
+    "exactTermRequired": false
+   },
+   {
+    "id": "r3",
+    "kind": "alt",
+    "verbatim": "(iii) — Mg + ½ O2 → MgO // 2Mg + O2 → 2MgO",
+    "marks": 6,
+    "accepts": [
+     "Mg + ½ O2 → MgO",
+     "2Mg + O2 → 2MgO"
+    ],
+    "contextNote": "The scheme separates the two equations with a double solidus — mutually exclusive routes, not a mix. Either one earns the full 6, awarded as FORMULAE (3) and BALANCING (3)."
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "(iv) — increase",
+    "marks": 3
+   },
+   {
+    "id": "r5",
+    "kind": "alt",
+    "verbatim": "oxygen (air) absorbed or reacted / MgO heavier than Mg",
+    "marks": 3,
+    "accepts": [
+     "oxygen (air) absorbed or reacted",
+     "MgO heavier than Mg"
+    ],
+    "openList": true
+   }
+  ],
+  "notes": "Figure opened: the heating assembly the stem points at — crucible with its lid tilted up and propped on the rim, sitting in a pipe-clay triangle on the top ring of a three-legged tripod, Bunsen burner with gas hose beneath. The stem says 'heated strongly as shown in the diagram' and part (i) asks about the raised lid, which the drawing shows explicitly, so the crop is load-bearing. No letters anywhere on the drawing, so no labelKey. Row (iii) is one 6-mark row because the scheme's two printed equations are mutually exclusive full answers, not separate mark points; the scheme's own double solidus is carried."
+ },
+ {
+  "id": "chem-2021-ol-q11d-b-fig",
+  "subjectId": "chemistry",
+  "level": "ordinary",
+  "year": 2021,
+  "topicId": "chem-u3",
+  "conceptId": "blast-furnace-iron-extraction",
+  "section": "B",
+  "questionRef": "2021 OL Q11(d) part B",
+  "figureKey": "chemistry-2021-OL-paper-p14-i0",
+  "labelKey": [
+   {
+    "letter": "X",
+    "meaning": "coke (carbon)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "Y",
+    "meaning": "slag (calcium silicate)",
+    "askedInThisQuestion": true
+   }
+  ],
+  "stem": "Answer part A or part B. B — The diagram shows a blast furnace used to extract iron, a transition element, from its ores by chemical reduction. The charge, a mixture of iron ore, limestone and a third substance, X, is added in at the top of the furnace. The molten iron collected at the base of the furnace is called pig iron and it is usually converted to steel.",
+  "questionText": "(i) Give one general property of transition elements. (ii) Identify X added in the charge to bring about the reduction of the iron ore and to act as a fuel for the furnace. (iii) Calcium oxide obtained from the limestone reacts with impurities in the iron ore to make co-product Y that is collected at the base of the furnace. What name is usually given to Y? Give a use for Y. (iv) Identify the main impurity in the pig iron whose concentration is reduced during steel making.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 25,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "metals (metallic) / often good catalysts / variable valency / form coloured compounds",
+    "marks": 4,
+    "accepts": [
+     "metals (metallic)",
+     "often good catalysts",
+     "variable valency",
+     "form coloured compounds"
+    ],
+    "openList": true
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "X — coke (carbon, C)",
+    "marks": 6,
+    "accepts": [
+     "coke",
+     "carbon",
+     "C"
+    ]
+   },
+   {
+    "id": "r3",
+    "kind": "alt",
+    "verbatim": "Y — slag / calcium silicate (CaSiO4)",
+    "marks": 6,
+    "accepts": [
+     "slag",
+     "calcium silicate",
+     "CaSiO4"
+    ]
+   },
+   {
+    "id": "r4",
+    "kind": "alt",
+    "verbatim": "roadmaking (hardcore) / lightweight building blocks / cement making",
+    "marks": 3,
+    "accepts": [
+     "roadmaking (hardcore)",
+     "lightweight building blocks",
+     "cement making"
+    ]
+   },
+   {
+    "id": "r5",
+    "kind": "alt",
+    "verbatim": "carbon (C)",
+    "marks": 6,
+    "accepts": [
+     "carbon",
+     "C",
+     "sand",
+     "silicon",
+     "silica"
+    ],
+    "contextNote": "The scheme also allows sand, silicon or silica."
+   }
+  ],
+  "notes": "Figure opened: cutaway blast furnace — skip hoist on a diagonal track tipping the 'charge' in at the top, tall vessel labelled 'furnace' with upward arrows for the rising gases, 'hot air' pipes entering both sides near the base, and two tap-holes feeding small containers labelled 'molten iron' (lower left) and 'molten Y' (upper right). Y is a real letter printed on the diagram; X is printed in the stem. Both are decoded in labelKey from the marking scheme (X = coke/carbon, Y = slag/calcium silicate) and both are flagged askedInThisQuestion so the decode panel does not hand the student the answers to (ii) and (iii). The other captions (charge, furnace, hot air, molten iron) are self-describing and need no entry. SKIPPED on the same page: chemistry-2021-OL-paper-p14-i1 — a greyscale cutaway render of a triple-glazing unit corner with no labels, purely illustrative of the phrase 'double and triple glazed windows' in part A(ii); the question ('give one major use for each of N2 and O2') is pure recall and the picture contributes nothing markable. Also skipped after opening: chemistry-2021-OL-paper-p05-i0 (photograph of a 'GLEAM' toothpaste tube beside Q4(i), a bare p.p.m. arithmetic conversion — decorative), chemistry-2021-OL-paper-p05-i1 (night photograph of an aerial distress flare arcing over a treeline beside Q4(c) 'Name a metal whose salts have a red flame colour' — illustrative only, and Q4's tariff is the eight-items-plus-bonus model rather than a fixed one), and chemistry-2021-OL-paper-p12-i0 (photograph of a single fan-shaped scallop shell beside Q11(b)(iv); the question is answered from the printed equilibrium equation and Le Châtelier's principle, and the crop also slices the top line of the stem)."
+ },
+ {
+  "id": "chem-2022-hl-q2-b-fig",
+  "topicId": "chem-2-4",
+  "conceptId": "ethene-tests-for-unsaturation",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 HL Q2(b)",
+  "stem": "Some ethene was bubbled through a reagent as shown in the diagram on the right.",
+  "questionText": "What colour change is observed when the reagent used is (i) dilute acidified KMnO4, (ii) bromine water? (iii) Name the organic reaction type that occurs in the case of the bromine reagent. (iv) Identify an organic product of the reaction between ethene and the bromine solution.",
+  "figureKey": "chemistry-2022-HL-paper-p03-i0",
+  "labelKey": [
+   {
+    "letter": "C2H4",
+    "meaning": "ethene",
+    "askedInThisQuestion": false
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "KMnO4 — purple (lilac, violet, pink) decolourises (to colourless)",
+    "marks": 3,
+    "contextNote": "Correct order essential. 'Decolourises' on its own is insufficient, and 'clear' is not acceptable instead of colourless."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Bromine water — brown (red, orange, yellow) decolourises (to colourless)",
+    "marks": 3,
+    "contextNote": "Correct order essential. 'Decolourises' on its own is insufficient, and 'clear' is not acceptable instead of colourless."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "addition",
+    "marks": 3,
+    "exactTermRequired": true
+   },
+   {
+    "id": "r-4",
+    "kind": "alt",
+    "verbatim": "1,2-dibromoethane (BrCH2CH2Br)",
+    "accepts": [
+     "2-bromoethanol (BrCH2CH2OH)"
+    ],
+    "marks": 3,
+    "contextNote": "Expanded structures are acceptable and the H's need not be shown explicitly."
+   }
+  ],
+  "notes": "Figure opened and checked by eye: the SEC line drawing of the gas-bubbling set-up — a bold 'C2H4' with an arrow into a bent delivery tube that runs down inside a test tube about two-thirds full of liquid, with a column of bubbles rising through it. It is the diagram the printed stem points to, so the stem is carried verbatim here ('as shown in the diagram on the right'). Marking scheme p.7: four printed 3-mark points, summing to the 12 on the paper. OVERLAP WARNING: the text-only wave already carded this part as chem-2022-hl-q2-b, having dropped the diagram pointer and paraphrased the stem to 'in a test tube' (a detail it took from the diagram it did not carry). This figure card should REPLACE chem-2022-hl-q2-b, not sit beside it — two cards on the same four rows would double-schedule in an SRS deck."
+ },
+ {
+  "id": "chem-2022-ol-q1-b-fig",
+  "topicId": "chem-u2",
+  "conceptId": "oxidation-of-phenylmethanol-to-benzoic-acid",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 OL Q1(b)",
+  "figureKey": "chemistry-2022-OL-paper-p02-i0",
+  "stem": "The diagram below shows an arrangement of apparatus and chemicals for the oxidation of phenylmethanol (benzyl alcohol) to benzoic acid using KMnO4 under basic conditions. In the process, insoluble MnO2 was also formed. After the oxidation reaction was complete the benzoic acid produced was separated from the reaction mixture. Three of the reagents used in the preparation and isolation of the benzoic acid were: concentrated hydrochloric acid (HCl), sodium carbonate (Na2CO3) and sodium sulfite (Na2SO3).",
+  "questionText": "Describe the appearance at room temperature of (i) phenylmethanol, (ii) benzoic acid. Which one of these reagents (iii) was the base added to the conical flask shown in the diagram above, (iv) was added after the oxidation stage to reduce the MnO2 to soluble Mn2+ ions? What colour change was observed as (v) the oxidation of the phenylmethanol took place, (vi) the MnO2 was converted to Mn2+?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "SIX POINTS: [11 + 6 + 1 + 1 + 1 + 1]"
+  },
+  "totalMarks": 21,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "(i) phenylmethanol — colourless / pale yellow / oily / liquid",
+    "marks": null,
+    "accepts": [
+     "colourless",
+     "pale yellow",
+     "oily",
+     "liquid"
+    ]
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "(ii) benzoic acid — white / crystalline / solid",
+    "marks": null,
+    "accepts": [
+     "white",
+     "crystalline",
+     "solid"
+    ]
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "(iii) sodium carbonate (Na2CO3)",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "(iv) sodium sulfite (Na2SO3)",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "(v) colourless to purple to brown (black, muddy); (vi) — brown (black, muddy, final colour in (v)) to colourless (decolourises)",
+    "marks": null,
+    "contextNote": "Two of the scheme's six marking points share this row, because the card model caps a card at five rows. Claim it only if you had BOTH colour changes: one mark point for the change as the oxidation took place, one for the change as the MnO2 was converted to Mn2+. The scheme writes (vi)'s starting colour as 'final colour in (v)', so it marks them as a linked sequence. Words in brackets are the scheme's own accepted alternatives."
+   }
+  ],
+  "notes": "The paper's part (iii) says 'the base added to the conical flask shown in the diagram above', so the question does not stand up without this figure — which is why the text-only wave produced no Q1 card at all for this paper. Figure opened and checked: conical flask of dark liquid in a glass water bath on a hotplate, all three printed labels intact and no glassware cut. No labelKey: the three labels ('phenylmethanol, water, KMnO4 and base', 'water bath', 'hotplate') each name the thing they point at, so they decode to themselves. Row structure: the scheme lists six marking points against a five-row cap, so (v) and (vi) — the two halves of the single sentence 'What colour change was observed as…', which the scheme itself cross-references — ride in one row with the split spelled out in its contextNote and each half carried word-for-word; no marking content is dropped. Marks are null on every row because the tariff is an ordered split (11 + 6 + 1 + 1 + 1 + 1 = 21), where a point's value depends on how many the candidate got right, not which point it is."
+ },
+ {
+  "id": "chem-2023-hl-q3-c-fig",
+  "topicId": "chem-u2",
+  "conceptId": "polystyrene-cup-calorimeter",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2023 HL Q3(c)",
+  "stem": "A student carried out an experiment to measure the heat of reaction (ΔH) for the neutralisation of hydrochloric acid by sodium hydroxide according to the following equation. HCl (aq) + NaOH (aq) → NaCl (aq) + H2O (l). In the experiment the student used an expanded foam polystyrene cup with a plastic lid through which a thermometer and a plastic stirrer were inserted, as shown on the right. The student first added 50 cm3 of 1.0 M HCl solution at room temperature to the polystyrene cup and then quickly added 50 cm3 of 1.0 M NaOH solution, also at room temperature, and having lowered the lid stirred the mixture while observing the thermometer. The temperature of the mixture rose rapidly by 6.8 K and then began to fall very slowly.",
+  "questionText": "(i) Why did the temperature rise when the solutions were mixed? (ii) Suggest a reason why the temperature, having risen, then began to fall gradually. (iii) Explain the advantage of using an expanded foam polystyrene cup in preference to a glass beaker as the reaction vessel for this experiment.",
+  "figureKey": "chemistry-2023-HL-paper-p04-i0",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "(i) — exothermic reaction",
+    "accepts": [
+     "heat given out (generated)",
+     "∆H negative"
+    ],
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "(ii) — heat loss to the surroundings",
+    "accepts": [
+     "polystyrene is not a perfect insulator",
+     "the solution is hotter than the room (surroundings)"
+    ],
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "alt",
+    "verbatim": "(iii) — better insulator (doesn't get hot, doesn't absorb heat)",
+    "accepts": [
+     "low heat capacity",
+     "glass not as good an insulator",
+     "glass gets hot",
+     "glass absorbs heat",
+     "specific heat capacity of glass (beaker) would have to be allowed for in calculations"
+    ],
+    "marks": 3
+   }
+  ],
+  "notes": "Figure opened and checked by eye: p04-i0 is the SEC's line drawing of the polystyrene-cup calorimeter — a double-walled tapered expanded-foam cup, a flat plastic lid pierced by two holes, a graduated thermometer down one hole with its bulb in the liquid, and a bent plastic stirrer with a hooked end down the other. No burner, clamp or stand; nothing on the drawing carries a printed label, so there is no labelKey. It is exactly the apparatus the stem points at with 'as shown on the right' — the clause the first, text-only pass had to paraphrase into words. Tariff: the paper prints (9) for part (c) and the scheme awards (3) to each of (i), (ii), (iii). Tagged chem-u2 (experiment/apparatus) because all three sub-parts are about the reaction vessel and heat loss from it."
+ },
+ {
+  "id": "chem-2023-hl-q11-b-fig",
+  "topicId": "chem-3-5",
+  "conceptId": "electrolysis-of-potassium-iodide-electrode-observations",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2023 HL Q11(b)(iv)–(vi)",
+  "stem": "The electrolysis of aqueous potassium iodide (KI) using inert electrodes was demonstrated using the arrangement shown in the diagram. The petri dish contained KI solution to which a few drops of phenolphthalein indicator had been added; the solution was initially colourless. Iodine (I2) was formed at one electrode and hydrogen gas at the other.",
+  "questionText": "(iv) Was the iodine formed at the positive electrode or at the negative electrode during the electrolysis? (v) Explain why the pink colour of phenolphthalein appeared near the electrode at which hydrogen gas was produced. (vi) What colour appeared in the solution near the other electrode?",
+  "figureKey": "chemistry-2023-HL-paper-p12-i0",
+  "labelKey": [
+   {
+    "letter": "H2 gas",
+    "meaning": "hydrogen gas",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "pink colour",
+    "meaning": "the pink colour of phenolphthalein indicator",
+    "askedInThisQuestion": false
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(iv) — positive (+)",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "(v) — OH– ions formed at this electrode",
+    "marks": 6
+   },
+   {
+    "id": "r-3",
+    "kind": "alt",
+    "verbatim": "(vi) — brown",
+    "accepts": [
+     "red",
+     "yellow"
+    ],
+    "marks": 3
+   }
+  ],
+  "notes": "Figure opened and checked by eye: p12-i0 is the plan view of the petri-dish electrolysis — a large circle for the dish, two short thick black bars for the inert electrodes, a wire loop out to a cell symbol and an open switch, and two leader lines to the right-hand electrode labelled 'H2 gas' (pointing at fine bubbles on the electrode) and 'pink colour' (pointing at the shaded region beside it). This is the diagram the first pass could not carry: its own note records that it deleted the stem clause 'using the arrangement shown in the diagram', which is restored verbatim here. Both leader labels are decoded as things stated by the paper (the stem names hydrogen gas; the stem and part (v) name phenolphthalein); neither is what the candidate is asked to identify, so askedInThisQuestion is false for both and no answer is given away — (v) is answered by OH– formation, not by the label. The drawing is greyscale, so it does not leak the brown colour asked for in (vi). Marks are the scheme's 3 + 6 + 3; the remaining 13 of the printed (25) sit in (i)–(iii), which are not carried on this card."
+ },
+ {
+  "id": "chem-2023-hl-q11-c-fig",
+  "topicId": "chem-3-2",
+  "conceptId": "increasing-rate-tartrate-hydrogen-peroxide",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2023 HL Q11(c)(v)",
+  "stem": "The reaction between sodium potassium tartrate and hydrogen peroxide in solution is quite slow at room temperature. Both reactants contain covalent bonds. Take the following as the balanced equation for the reaction that takes place:",
+  "questionText": "Suggest three practical ways that the rate of the reaction of sodium potassium tartrate solution with hydrogen peroxide solution, according to the equation given above, could be increased.",
+  "figureKey": "chemistry-2023-HL-paper-p13-i0",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "add catalyst (Co2+, cobalt(II) ions) // increase temperature // increase concentration hydrogen peroxide // increase concentration sodium potassium tartrate",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "add catalyst (Co2+, cobalt(II) ions)",
+      "increase temperature",
+      "increase concentration hydrogen peroxide",
+      "increase concentration sodium potassium tartrate"
+     ]
+    },
+    "contextNote": "Allow (3) for increase concentration, but once only if neither hydrogen peroxide nor sodium potassium tartrate specified."
+   }
+  ],
+  "notes": "Figure opened and checked by eye: p13-i0 is the printed balanced equation itself — a displayed structural formula of sodium potassium tartrate (four-carbon chain, top carboxylate O–/Na+, two central CHOH carbons, bottom carboxylate O–/K+) followed by '+ 3H2O2 → HCOONa + HCOOK + 4H2O + 2CO2'. Everything printed on it is a chemical formula that reads as itself, and the compound is named in the stem, so there is nothing to decode and no labelKey is carried. This is the figure the first pass could not carry: its own note records that it deleted the clause ', according to the equation given above,' from the question text, which is restored verbatim here. Scheme prints ANY THREE: (3 × 3), hence one anyN row at claimMax 3 × perOption 3 = 9; the list is closed (no ellipsis), so openList is not set. The bracketed contextNote is the scheme's own qualifier."
+ },
+ {
+  "id": "chem-2024-ol-q7-b-fig",
+  "topicId": "chem-3-2",
+  "conceptId": "rate-and-surface-area",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2024 OL Q7(b)",
+  "stem": "The rate of decomposition of hydrogen peroxide (H2O2) using manganese dioxide as a catalyst was investigated using the apparatus shown below. The oxygen (O2) gas produced was collected in the gas syringe. The results are shown in the table below.\n\nTime (minutes): 0, 2, 4, 6, 8, 10, 12, 14, 16, 18\nVolume of O2 (cm3): 0, 29, 48, 63, 73, 81, 87, 90, 92, 92",
+  "questionText": "(i) Explain why the reaction slows down as it proceeds.\n\n(ii) The results in the table above were obtained using a fine powder of manganese dioxide. How might the rate of reaction be different if the same mass of manganese dioxide was used but in the form of large pellets? Explain your answer.",
+  "figureKey": "chemistry-2024-OL-paper-p08-i0",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "reactant / hydrogen peroxide",
+    "accepts": [
+     "reactant",
+     "hydrogen peroxide"
+    ],
+    "marks": 4,
+    "contextNote": "(b)(i) why the reaction slows down"
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "decreases concentration / used up",
+    "accepts": [
+     "decreases concentration",
+     "used up"
+    ],
+    "marks": 2,
+    "contextNote": "(b)(i) why the reaction slows down"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "rate decreases",
+    "marks": 6,
+    "contextNote": "(b)(ii) large pellets instead of fine powder"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "smaller surface area (of catalyst)",
+    "marks": 2,
+    "contextNote": "(b)(ii) explanation"
+   }
+  ],
+  "notes": "Figure opened and read. The diagram is the rate-of-reaction apparatus: a conical flask holding a shallow layer of liquid labelled 'hydrogen peroxide', a small dark lump of solid on a raised stand inside it labelled 'manganese dioxide (catalyst)', a bung with a glass delivery tube bending right into a horizontal graduated gas syringe (10-100) labelled 'gas syringe', and a separate round stopwatch drawn alongside labelled 'stopwatch'. Carried as SHOW-for-context: the stem says the reaction was 'investigated using the apparatus shown below' and (b)(ii) turns on the physical form of the manganese dioxide shown inside the flask. No labelKey: all four printed labels ('gas syringe', 'hydrogen peroxide', 'manganese dioxide (catalyst)', 'stopwatch') are self-describing and decode to themselves, so per the label decode law the field is omitted. Marks: scheme gives (4 + 2) for (b)(i) and (6 + 2) for (b)(ii); rows sum to 14, matching the paper's (14). Q7(a) was not carded - (a)(ii) is a graph-plotting task, (a)(iii) can only be answered off the candidate's own graph, and (a)(iv) is bare worked arithmetic (48 divided by 4 = 12). Q7(c) (enzyme / name an enzyme) needs no figure."
+ },
+ {
+  "id": "chem-2025-ol-q6-c-fig",
+  "topicId": "chem-2-4",
+  "conceptId": "ethyne-use-and-bromine-decolourisation",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2025 OL Q6(c)",
+  "stem": "When C2H2 is bubbled through a solution of bromine (Br2), as shown in the diagram, the orange-coloured solution decolourises.",
+  "questionText": "(i) State one major use for the gaseous hydrocarbon C2H2. (ii) What information does this give about the nature of the bonding in a molecule of C2H2?",
+  "figureKey": "chemistry-2025-OL-paper-p07-i0",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "9 + 3"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "welding",
+    "marks": null,
+    "accepts": [
+     "cutting"
+    ],
+    "contextNote": "The scheme gives no per-part mark for (c): the paper prints one (12) tariff and the scheme splits it 9 + 3 over the two answer elements."
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "double or triple bond",
+    "marks": null,
+    "accepts": [
+     "unsaturated"
+    ]
+   }
+  ],
+  "notes": "Figure opened and verified at 2.6x zoom: chemistry-2025-OL-paper-p07-i0 is the bubbling apparatus the printed sentence points at — an upright test tube half filled with shaded liquid, a delivery tube bent over the rim and reaching almost to the base, a column of bubbles rising through the liquid, an arrow into the delivery tube labelled C2H2 and an arrow into the liquid labelled 'Br2 solution'. Nothing else is labelled and the crop is complete (no cut glassware, no clipped label). Carried because the paper's own words say 'as shown in the diagram' — the same rationale as chem-2025-ol-q1-b-fig: the figure makes the question coherent rather than answerable, since the observation (decolourisation) is stated in print. This restores the five verbatim words the figureless chem-2025-ol-q6-c had to delete, and supersedes it on the shared questionRef '2025 OL Q6(c)' (build-deck.mjs:250-256). labelKey deliberately OMITTED: both labels are self-describing — C2H2 labels the C2H2 being bubbled in and 'Br2 solution' labels the bromine solution, and the question text already names both, so a decode panel would tell a student nothing. Tagged chem-2-4 (Hydrocarbons) to match the sibling Q6 cards; (c)(ii) is about bonding in a hydrocarbon molecule, not an experimental procedure."
  }
 ]

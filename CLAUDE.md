@@ -63,27 +63,12 @@ Pilot reference implementation: **Mastering Active Recall** (`compliance/evidenc
 
 **Stack:** React 19 + TypeScript, Vite, Tailwind CSS (v3, compiled at build time via PostCSS + autoprefixer — `tailwind.config.ts` + `index.css`, NOT a CDN), Framer Motion, Three.js (@react-three/fiber), Firebase (Auth + Firestore)
 
-**Entry flow:** `index.html` → `index.tsx` → `App.tsx`
-
 **App.tsx** (~780 lines) is a **data-assembly shell**: it pulls from `useProgress()`, runs the gameplay hooks, defines the `handleX` handlers, bundles them into a `routerProps` object, and renders `<AppRouter {...routerProps}/>`. The three cross-cutting concerns live in **contexts**, not App.tsx (see CONVENTIONS.md §1):
 - Authentication + the initial progress read → `contexts/AuthContext.tsx` (`onAuthStateChanged`)
 - Navigation (no router; a `ViewState` reducer + History-API sync) → `contexts/NavigationContext.tsx`; the view switch is `components/AppRouter.tsx`
 - Progress persistence (Firestore `users/{uid}` + `progress/{uid}`) → `contexts/ProgressContext.tsx`
 
-**Root-level modules:**
-- `moduleRegistry.ts` — Lazy-loads ~83 registered modules (≈55 `*Module.tsx` component files; the per-subject modules all share one `SubjectModule.tsx`) + InnovationZone via `React.lazy()` with default imports
-- `courseData.ts` — Course metadata definitions (titles, descriptions, categories, tags) and `categoryColorMap`
-- `moduleThemes.ts` — Per-color Tailwind theme objects (literal class strings required for Tailwind's JIT content scan)
-- `types.ts` — Shared types: `ModuleProgress`, `UserProgress`, `SectionDefinition`, `ModuleTheme`
-
-**Key components in `components/`:**
-- `Auth.tsx` — Login/registration modal with Firebase Auth. Admin login uses Firebase Auth with the `admin@nextstep.app` account (password managed in Firebase Console, not in code).
-- `KnowledgeTree.tsx` — Main navigation hub showing categories with activity ring progress indicators
-- `Library.tsx` — Grid view of modules within a category using `BentoModuleTile` components
-- `AdminDashboard.tsx` — Admin-only analytics view
-- `ModuleLayout.tsx` — Shared sidebar + content layout used by all educational modules
-- `ModuleShared.tsx` — Reusable UI primitives: `Highlight`, `ReadingSection`, `MicroCommitment`, `ActivityRing`
-- `*Module.tsx` (~55 files) — Individual educational modules, each using `ModuleLayout` with default exports
+**Auth.tsx** — admin login uses Firebase Auth with the `admin@nextstep.app` account; the password is managed in the Firebase Console, not in code.
 
 **Module component interface** — there is **no exported `ModuleProps` type**; every module is an `FC` with this inlined 3-field signature (don't add a `ModuleProps` import):
 ```typescript
@@ -366,76 +351,3 @@ All Tailwind class strings must be FULL LITERALS. Never dynamically construct cl
 ### Build Verification
 
 Always run `npm run typecheck` and `npm run build` after any non-trivial visual change. Vitest smoke tests run via `npm test`; CI runs lint (strict) → typecheck → test → build.
-
-## Examiner reports library
-
-`/examiner-reports/` holds State Examinations Commission Chief Examiner Reports and marking-scheme commentaries, structured per subject and year:
-
-```
-examiner-reports/
-├── README.md
-├── <subject>/
-│   ├── <year>-chief-examiner.pdf      (original PDF, kebab-case subject slug)
-│   ├── <year>-chief-examiner.md       (markdown extraction)
-│   └── <year>-insights.md             (structured summary — schema below)
-```
-
-Multi-year syntheses use `<start-year>-<end-year>-` as the prefix (e.g. `2019-2022-chief-examiner.pdf`).
-
-### Insights file schema
-
-```
-# [Subject] [Year] — Examiner Insights
-
-## Source
-Report type, year, level(s), original filename, renamed filename, brief
-context if relevant (e.g. syllabus changes, cohort shifts).
-
-## Common errors by question type
-Broken down by paper section. For each question/area:
-- Specific errors examiners flagged (with page refs)
-- What separated higher-grade answers from lower-grade ones
-- Direct examiner phrasing quoted where useful (with page refs)
-Where the report distinguishes between Higher and Ordinary in its
-commentary, preserve that distinction.
-
-## Strategic / structural observations
-Timing, question choice, rubric handling, anything about exam strategy.
-
-## Misconceptions
-Factual or conceptual errors the report flags as widespread.
-
-## Quotable lines
-2-3 examiner quotes that would land well in student-facing content
-(with page refs).
-```
-
-### When to consult the library
-
-When generating any of the following kinds of student-facing content, **read the relevant `<subject>/<year>-insights.md` file first**:
-
-- "Common pitfalls" or "where students lose marks" sections
-- `commonTraps` arrays in `data/examQuestions/<subject>.ts` entries
-- `topAnswerIncludes` insights for new questions
-- Subject strategy preambles in `data/examStrategy/<subject>.ts`
-- Trap pattern descriptions in `data/examStrategy/trapPatterns.ts`
-
-The insights file is the curated synthesis. The `<year>-chief-examiner.md` is there for deeper context or for pulling quotes the insights file didn't surface — read it when the insights file points at a section but doesn't quote the exact phrasing you need.
-
-### Adding a new report
-
-1. Drop the PDF into `/tmp/examiner-reports-batch/` (or `~/Downloads/` if staging is informal).
-2. Read the cover page to determine subject, year(s), levels.
-3. Move into `examiner-reports/<subject>/`, renamed to the canonical filename.
-4. Convert to markdown (PyPDF2 if `pdftotext` is unavailable — see prior session for the conversion script pattern).
-5. Author the insights file against the schema above.
-6. Update `examiner-reports/README.md` index.
-
-### Source types
-
-The library holds two source types per subject/year:
-
-- `<year>-chief-examiner.{pdf,md}` — SEC Chief Examiner's Report
-- `<year>-marking-scheme.{pdf,md}` — SEC marking scheme
-
-Both are examiner-authored and citable. Marking schemes are particularly useful for per-question rules ("Max X SRPs if…", "Apply a *", indicative material lists). Cite as `Marking scheme YYYY` inline.

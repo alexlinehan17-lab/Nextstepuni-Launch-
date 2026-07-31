@@ -1,3 +1,8 @@
+---
+name: plan
+description: Write a numbered implementation plan for a feature to plans/<feature>-plan.md, without implementing it. Use when scoping work before building.
+---
+
 ## Planning Skill
 1. Read the current codebase state for the feature area
 2. List what exists vs what's needed
