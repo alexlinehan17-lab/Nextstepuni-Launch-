@@ -25263,5 +25263,982 @@
    }
   ],
   "notes": "The solidus separates the two verbs, which share the same qualifying condition; both strings are exact substrings of the scheme."
+ },
+ {
+  "id": "phys-2021-hl-q9-vii-viii-fig",
+  "topicId": "phys-2-1",
+  "conceptId": "water-poor-conductor-experiment",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2021 HL Q9(vii)–(viii)",
+  "questionText": "(vii) What observations did the student make? (viii) What conclusion could the student have made?",
+  "stem": "A student used the apparatus shown below to investigate how heat travels through water.",
+  "figureKey": "physics-2021-HL-paper-p08-i1",
+  "labelKey": [],
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ice didn’t melt / bottom of the tube stayed cold",
+    "marks": 4,
+    "contextNote": "Part (vii). The single solidus in the scheme separates two equivalent acceptable observations — either wording scores the full 4 marks."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "water is a poor conductor (of heat)",
+    "marks": 4,
+    "contextNote": "Part (viii). The bracketed \"(of heat)\" is the scheme's optional wording — \"water is a poor conductor\" scores."
+   }
+  ],
+  "notes": "Opened the figure: a line drawing of a test tube held at about 45 degrees, closed end low-left, mouth up-right. The tube is full of water; a cube of ice is trapped at the closed bottom end under a mesh metal weight; a Bunsen burner heats the tube near the TOP, where bubbles show the upper water boiling. Labels (full words, no letters): Water, Metal weight, Ice, Bunsen burner. Matches the worklist description. The paper says \"the apparatus shown below\" — without the diagram the student cannot know that the ice is weighted at the bottom while heat is applied at the top, which is the entire basis for the observation (ice didn't melt / bottom stayed cold) and the conclusion (water is a poor conductor). The paper prints one tariff, (8), covering parts (vii) and (viii) together; the scheme awards 4 marks to each, so I carded them together following the deck's existing grouped-part precedent (phys-2021-hl-q14c-i-iii). The text wave has no q9-vii or q9-viii card.",
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "phys-2021-hl-q14d-i-fig",
+  "topicId": "phys-2-3",
+  "conceptId": "lens-ray-diagram-real-image",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2021 HL Q14(d)(i)",
+  "questionText": "The photograph shows the inverted image of a mountain formed in a ball lens. Draw a ray diagram to show how an inverted image is formed in a lens. Is the image real or virtual?",
+  "stem": "Ball lenses are glass spheres which can be used for special effects in photography. Light travels at a different speed in air and in glass.",
+  "figureKey": "physics-2021-HL-paper-p15-i0",
+  "labelKey": [
+   {
+    "letter": "PaulReiffer",
+    "meaning": "Photographer's watermark in the bottom-right corner of the photograph (image credit paulreiffer.com, listed in the paper's acknowledgements page) — not part of the physics content",
+    "askedInThisQuestion": false
+   }
+  ],
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "converging lens",
+    "marks": 3,
+    "contextNote": "Ray-diagram mark: the lens drawn must be a converging lens."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "object outside f",
+    "marks": 3,
+    "contextNote": "Ray-diagram mark: f is the focal length — the object must be drawn beyond the focal point, which is what makes the image inverted."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "correct rays shown",
+    "marks": 3,
+    "contextNote": "Ray-diagram mark: standard construction rays drawn correctly to locate the inverted image."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "the image is real",
+    "marks": 3,
+    "contextNote": "Answers the \"Is the image real or virtual?\" part of the question."
+   }
+  ],
+  "notes": "Opened the figure: black-and-white landscape photograph of a glass sphere resting on a pebble beach with a mountain range and lake behind; inside the sphere the mountain scene appears clearly INVERTED — the phenomenon the question is about. \"PaulReiffer\" watermark visible bottom-right (decoded in labelKey). Matches the worklist description. The question's first sentence points directly at the photograph (\"The photograph shows the inverted image of a mountain formed in a ball lens\"), which is why the text wave skipped this part (deck has q14d-ii/iii/iv but no q14d-i); seeing the inverted image in the ball lens is the premise the ray diagram must explain. Tariff (12) is printed against part (i) in the paper and the four scheme rows of 3 reconcile to it.",
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "phys-2021-ol-q6i-fig",
+  "topicId": "phys-4-2",
+  "conceptId": "x-ray-tube-target-tungsten",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2021 OL Q6(i)",
+  "stem": "Answer any eight of the following parts (a), (b), (c), etc.",
+  "questionText": "The picture on the right is an X-ray tube. The target in an X-ray tube is usually made of tungsten. What property of tungsten makes it suitable for this use?",
+  "figureKey": "physics-2021-OL-paper-p05-i0",
+  "labelKey": [],
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "high melting point",
+    "marks": 7,
+    "route": "melting-point",
+    "contextNote": "Any one of the three routes scores the full 7. The scheme also allows 'partial answer (4)' as a fallback."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "high atomic number",
+    "marks": 7,
+    "route": "atomic-number"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "high density",
+    "marks": 7,
+    "route": "density"
+   }
+  ],
+  "notes": "Opened the crop: it shows the printed text of Q6 parts (g), (h) and (i) with, on the right, a grey-scale photograph of a sealed glass X-ray tube lying at an angle with a cylindrical metal electrode assembly along its axis — matches the worklist description. The question part itself begins 'The picture on the right is an X-ray tube', so a text-only card would carry a dangling reference; the crop restores the picture the question points at. Physics answer does not depend on reading detail from the photo (context figure).",
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "phys-2021-ol-q9iii-fig",
+  "topicId": "phys-3-3",
+  "conceptId": "resistance-length-proportionality",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2021 OL Q9(iii)",
+  "stem": "The photograph shows a rheostat, which is a variable resistor. When the sliding contact is moved, the current flows through a different length of wire, thus changing the resistance of the rheostat.",
+  "questionText": "State the relationship between resistance and length.",
+  "figureKey": "physics-2021-OL-paper-p08-i0",
+  "labelKey": [],
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "R ∝ l / proportional",
+    "marks": 6,
+    "contextNote": "Single solidus = equally acceptable phrasings of the same point. The scheme also allows 'partial answer (3)' as a fallback."
+   }
+  ],
+  "notes": "Opened the crop: stem text on the left and, on the right, a grey-scale photograph of a laboratory rheostat — a ceramic tube closely wound with resistance wire between two end-plates with the sliding-contact bar on top — matches the worklist description. The stem opens 'The photograph shows a rheostat', so the part is anchored to this photo; the crop shows the actual apparatus whose sliding contact the stem describes.",
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "phys-2021-ol-q9ix-fig",
+  "topicId": "phys-3-3",
+  "conceptId": "mains-plug-earth-wire",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2021 OL Q9(ix)",
+  "stem": "The diagram on the left shows the parts of an electrical plug.",
+  "questionText": "The wire labelled P is yellow and green. What is the function of this wire?",
+  "figureKey": "physics-2021-OL-paper-p08-i1",
+  "labelKey": [
+   {
+    "letter": "P",
+    "meaning": "The earth wire (yellow and green insulation) — runs to the top (earth) pin",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "Q",
+    "meaning": "The live wire (brown insulation) — the wire named in part (x)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "Fuse",
+    "meaning": "Printed label — the cartridge fuse on the live side of the plug",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "Neutral",
+    "meaning": "Printed label — the neutral wire and its terminal on the left of the plug",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "Cable grip",
+    "meaning": "Printed label — the clamp holding the cable where it enters the plug",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "Cable",
+    "meaning": "Printed label — the three-core flex entering the plug from below",
+    "askedInThisQuestion": false
+   }
+  ],
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "safety/ earth (the equipment)",
+    "marks": 4
+   }
+  ],
+  "notes": "Opened the crop: on the left is the labelled line diagram of a three-pin plug with its cover removed (labels P, Q, Fuse, Neutral, Cable grip, Cable), and the printed text of parts (ix) and (x) on the right — matches the worklist description. The question is unanswerable without the figure: 'the wire labelled P' only means anything when the student can see which wire P points to.",
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "phys-2021-ol-q9x-fig",
+  "topicId": "phys-3-3",
+  "conceptId": "mains-plug-live-wire",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2021 OL Q9(x)",
+  "stem": "The diagram on the left shows the parts of an electrical plug.",
+  "questionText": "Name the wire labelled Q.",
+  "figureKey": "physics-2021-OL-paper-p08-i1",
+  "labelKey": [
+   {
+    "letter": "P",
+    "meaning": "The earth wire (yellow and green insulation) — its function is asked in part (ix)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "Q",
+    "meaning": "The live wire (brown insulation)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "Fuse",
+    "meaning": "Printed label — the cartridge fuse on the live side of the plug",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "Neutral",
+    "meaning": "Printed label — the neutral wire and its terminal on the left of the plug",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "Cable grip",
+    "meaning": "Printed label — the clamp holding the cable where it enters the plug",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "Cable",
+    "meaning": "Printed label — the three-core flex entering the plug from below",
+    "askedInThisQuestion": false
+   }
+  ],
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "live",
+    "marks": 4,
+    "contextNote": "The scheme allows 'partial answer e.g. brown (2)' as a fallback."
+   }
+  ],
+  "notes": "Same crop as part (ix): labelled cutaway diagram of a three-pin mains plug. This part is unanswerable without the figure — 'the wire labelled Q' requires seeing where Q points (the wire running through the fuse on the right of the plug).",
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "phys-2021-ol-q14b-iii-fig",
+  "topicId": "phys-3-1",
+  "conceptId": "charge-distribution-pointed-conductor",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2021 OL Q14(b)(iii)",
+  "stem": "Lightning is a naturally occurring electrostatic discharge. It is caused by an imbalance between two electrically charged regions, usually a cloud and the ground.",
+  "questionText": "Draw a diagram to show the distribution of charge on a pear shaped conductor.",
+  "figureKey": "physics-2021-OL-paper-p13-i1",
+  "labelKey": [],
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "diagram showing more concentration at point",
+    "marks": 6,
+    "contextNote": "The scheme allows 'partial answer (3)' as a fallback."
+   }
+  ],
+  "notes": "Opened the crop: the printed text of Q14(b) parts (ii)-(iv) on the left and, on the right, the blank pear-shaped conductor outline — a thin closed grey curve, broad and rounded on the left narrowing to a blunt point on the right — matches the worklist description. The outline printed on the paper is the very conductor the question refers to; the crop shows the student the given shape they annotate with the charge distribution (more charge concentrated at the point).",
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "phys-2021-ol-q14d-iii-fig",
+  "topicId": "phys-2-5",
+  "conceptId": "sonometer-frequency-vs-length",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2021 OL Q14(d)(iii)",
+  "stem": "Sounds are produced when something vibrates.",
+  "questionText": "A sonometer, shown above, can be used to investigate the relationship between the frequency of a stretched string and its length. State this relationship.",
+  "figureKey": "physics-2021-OL-paper-p14-i0",
+  "labelKey": [],
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "frequency is inversely proportional to the length",
+    "marks": 6,
+    "route": "words",
+    "contextNote": "Any one of the three routes scores the full 6. The scheme also allows 'partial answer (3)' as a fallback."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "fl = k",
+    "marks": 6,
+    "route": "fl-equals-k"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "𝑓∝ 𝑙",
+    "marks": 6,
+    "route": "f-prop-1-over-l",
+    "contextNote": "Extraction flattened a fraction here: in the printed scheme this route reads f ∝ 1/l (frequency proportional to 1 over length) — the displaced '1' sits on the previous line of the extracted markdown. It is NOT f proportional to l."
+   }
+  ],
+  "notes": "Opened the crop: a grey-scale photograph of a sonometer seen at an angle — a long wooden sound box with a circular sound hole, two movable bridges on top and the string/tensioning fittings at the near end — matches the worklist description; slivers of part (ii) text above and part (iii) text below are included in the crop. The question part itself says 'A sonometer, shown above' — without the photograph that reference dangles, and OL students are expected to recognise the real apparatus.",
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "phys-2021-ol-q14d-iv-fig",
+  "topicId": "phys-2-6",
+  "conceptId": "stationary-wave-wavelength-from-nodes",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2021 OL Q14(d)(iv)",
+  "stem": "Waves on a stretched string travel at a speed of 380 m s−1. When a stationary wave is set up on a string, the distance between two adjacent nodes is 40 cm.",
+  "questionText": "Calculate the wavelength of the wave.",
+  "figureKey": "physics-2021-OL-paper-p14-i1",
+  "labelKey": [
+   {
+    "letter": "40 cm",
+    "meaning": "The distance between two adjacent nodes of the stationary wave — one loop of the standing-wave envelope, equal to half a wavelength",
+    "askedInThisQuestion": true
+   }
+  ],
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(𝜆 = 2(0.4) = ) 0.8 m",
+    "marks": 6,
+    "contextNote": "The scheme allows 'partial answer (3)' as a fallback."
+   }
+  ],
+  "notes": "Opened the crop: two thin curves cross at a node on the left, bow apart into one wide symmetrical loop, cross again at a node on the right, with short tails beyond each crossing; a dashed double-headed arrow labelled '40 cm' spans the loop below — matches the worklist description. The diagram is what gives the 40 cm its meaning: the calculation hinges on seeing that node-to-node is one loop = half a wavelength, which is exactly what the figure shows.",
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "phys-2021-ol-q14d-v-fig",
+  "topicId": "phys-2-6",
+  "conceptId": "stationary-wave-frequency",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2021 OL Q14(d)(v)",
+  "stem": "Waves on a stretched string travel at a speed of 380 m s−1. When a stationary wave is set up on a string, the distance between two adjacent nodes is 40 cm.",
+  "questionText": "Calculate the frequency of the wave.",
+  "figureKey": "physics-2021-OL-paper-p14-i1",
+  "labelKey": [
+   {
+    "letter": "40 cm",
+    "meaning": "The distance between two adjacent nodes of the stationary wave (half a wavelength) — used in part (iv) to find the wavelength this part relies on",
+    "askedInThisQuestion": false
+   }
+  ],
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(𝑓= 𝜆 = 0.8 =) 475 Hz",
+    "marks": 4,
+    "contextNote": "Extraction flattened the fractions: the printed scheme reads f = v/λ = 380/0.8 = 475 Hz — the numerators '𝑣 380' sit on the previous line of the extracted markdown. The scheme also allows 'partial answer (2)' as a fallback."
+   }
+  ],
+  "notes": "Same stationary-wave crop as part (iv): one full loop between two nodes with the dashed '40 cm' arrow. The frequency calculation uses the wavelength read off this diagram (via part (iv)) together with the 380 m s−1 speed from the stem, so the same figure grounds the part.",
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "phys-2023-ol-q9vi-fig",
+  "topicId": "phys-1-2",
+  "conceptId": "pressure-force-area",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2023 OL Q9(vi)",
+  "stem": "Another reason for bricks being such a popular building material is that that they are durable and strong. A brick has length l = 20 cm, width w = 9 cm and height h = 6 cm, as shown in the diagram. The brick has a mass of 2 kg.",
+  "questionText": "The bricks are stacked to build a wall. On which side, A, B or C, should a brick be stacked so that it exerts the least amount of pressure on the bricks below it? Explain your answer.",
+  "figureKey": "physics-2023-OL-paper-p08-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "The end face of the brick (width x height, 9 cm x 6 cm) — the smallest face",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "The top face of the brick (length x width, 20 cm x 9 cm) — the largest face",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "The front face of the brick (length x height, 20 cm x 6 cm)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "h",
+    "meaning": "Height of the brick, h = 6 cm",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "w",
+    "meaning": "Width of the brick, w = 9 cm",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "l",
+    "meaning": "Length of the brick, l = 20 cm",
+    "askedInThisQuestion": false
+   }
+  ],
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "B",
+    "marks": 4,
+    "contextNote": "B is the top face — the face with the largest area (20 cm x 9 cm)."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "greatest area",
+    "marks": 4,
+    "contextNote": "The explanation mark: pressure = force / area, so the face with the greatest area exerts the least pressure."
+   }
+  ],
+  "notes": "Opened the figure: it shows Q9 parts (iv)-(vi) beside a photographed grey brick in three-quarter view. A is printed on the small left end face, B on the top face, C on the long front face, with h = 6 cm, w = 9 cm and l = 20 cm annotated on the edges — matches the worklist description. Part (vi) asks the student to choose between faces A, B and C, which exist only on this diagram, so the question is unanswerable without the crop. Parts (iv) and (v) were NOT carded here because their dimensions are printed in the question prose and they stand without the figure (text-wave territory). Tariff check: the paper's (20) for (iv)-(vi) splits as 6 + 6 + 8 in the scheme, so this part carries 8 marks. Stem transcribed verbatim including the paper's printed 'that that'.",
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "phys-2023-ol-q11iii-fig",
+  "topicId": "phys-3-3",
+  "conceptId": "circuit-diagram-from-apparatus",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2023 OL Q11(iii)",
+  "stem": "Electric current is the movement of charged particles through a conductor.",
+  "questionText": "Draw a circuit diagram for the arrangement of apparatus shown in the diagram on the right.",
+  "figureKey": "physics-2023-OL-paper-p10-i0",
+  "labelKey": [
+   {
+    "letter": "+",
+    "meaning": "The positive terminal of the battery",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "−",
+    "meaning": "The negative terminal of the battery",
+    "askedInThisQuestion": false
+   }
+  ],
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "symbol for battery/cell",
+    "marks": 3,
+    "contextNote": "The single solidus means battery symbol and cell symbol are equally acceptable."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "symbol for bulb",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "connected in series",
+    "marks": 3,
+    "contextNote": "The scheme prints these three elements on one line as 'symbol for battery/cell, symbol for bulb, connected in series [3 × 3]' — split here into its three 3-mark elements."
+   }
+  ],
+  "notes": "Opened the figure: a pictorial (not symbolic) drawing — a filament light bulb in a screw holder at the top, labelled 'light bulb', joined by two curved wires to a black cylindrical battery labelled 'battery' with its + terminal on the left and − terminal on the right. Matches the worklist description. The task is to translate this pictorial arrangement into a symbolic circuit diagram, which is impossible without seeing the arrangement, so the figure is essential. The paper also prints beneath part (iv): 'Note: You may refer to the electrical circuit symbols on pages 72 to 78 of the Formulae and Tables booklet when answering parts (iii) and (iv).' Part (iv) (two bulbs in parallel) was not carded — it stands without the figure. Tariff check: (24) for (i)-(iv) = 3 + 6 + 9 + 6, so this part carries 9 marks.",
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "phys-2023-ol-q14ci-fig",
+  "topicId": "phys-3-2",
+  "conceptId": "electric-field-lines",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2023 OL Q14(c)(i)",
+  "stem": "The diagram shows the electric field around two oppositely charged particles.",
+  "questionText": "Draw the electric field lines around two positively charged particles held close to each other.",
+  "figureKey": "physics-2023-OL-paper-p14-i1",
+  "labelKey": [
+   {
+    "letter": "+",
+    "meaning": "The positively charged particle (left circle) — field lines point away from it",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "−",
+    "meaning": "The negatively charged particle (right circle) — field lines point towards it",
+    "askedInThisQuestion": false
+   }
+  ],
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "shape",
+    "marks": 3,
+    "contextNote": "For two like (positive) charges the field lines repel — they curve away from the midpoint, unlike the shown dipole pattern where lines connect the two charges."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "direction",
+    "marks": 3,
+    "contextNote": "Arrows must point away from both positive charges."
+   }
+  ],
+  "notes": "Opened the figure: a line diagram of the electric field around an electric dipole — two small circles side by side, the left marked + and the right marked −, with arrowed field lines leaving the + charge and entering the − charge, curving between and around them. Matches the worklist description. The stem points directly at this diagram ('The diagram shows the electric field around two oppositely charged particles') and the question asks the student to adapt the shown pattern for two positive charges, so the exemplar diagram is what the question is anchored to. Tariff check: (12) for (c)(i)-(ii) = 6 + 6 in the scheme, so this part carries 6 marks (shape 3 + direction 3).",
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "phys-2024-hl-q6h-fig",
+  "topicId": "phys-3-1",
+  "conceptId": "lightning-conductor-point-discharge",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2024 HL Q6(h)",
+  "stem": "Answer any eight of the following parts, (a), (b), (c), etc.",
+  "questionText": "A lightning conductor can be placed on top of a tall building as shown. Explain how a lightning conductor works.",
+  "figureKey": "physics-2024-HL-paper-p05-i0",
+  "labelKey": [],
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "point discharge",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "transfers charge to ground",
+    "marks": 3,
+    "contextNote": "The scheme prints the two points on separate consecutive lines, with the combined tariff '[4 + 3]' at the end of this second line: first point 4 marks, second point 3 marks. There is no solidus between them - both points are required and credited separately, not alternatives."
+   }
+  ],
+  "notes": "Skeptic-verified against sources on disk. Both rows word-for-word from the 2024 HL scheme page 11, where 'point discharge' and 'transfers charge to ground [4 + 3]' appear on two consecutive lines (no solidus). Tariff 7 confirmed by the paper's '(8 x 7)' for Q6. Figure crop verified by opening the PNG: left two-thirds is the printed wording of Q6 parts (e)-(k); at right is a perspective drawing of a tall multi-window office block with a pointed lightning-conductor rod on its roof and an earthing wire down the side - this is what part (h)'s 'as shown' refers to, so the figure is bound show-for-context; the marking points themselves do not depend on the drawing. Worklist entry for this figure gives letters: [], so labelKey is correctly empty (the (e)-(k) visible in the crop are question-part enumerators in printed text, not diagram labels). Note for merge: a text-only card phys-2024-hl-q6-h for this same part already exists in cards/physics/higher.ts and should be superseded or deduplicated.",
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "phys-2024-ol-q1-iii-fig",
+  "topicId": "phys-1-2",
+  "conceptId": "laws-of-equilibrium-force-diagram",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2024 OL Q1(iii)",
+  "questionText": "Copy the diagram of the metre stick below into your answerbook. Two of the forces have been included. Complete your diagram to show all upward and downward forces and their positions.",
+  "stem": "A student carried out an experiment to investigate the laws of equilibrium. He suspended a metre stick from two Newton spring balances and hung two weights from the metre stick, as outlined in the tables below, until it was balanced and level. Before setting up the experiment, the student took two measurements. He measured the weight of the metre stick to be 3 N. He found its centre of gravity at the 50 cm mark. His results are shown in the tables below. Newton Spring Balances — Upward forces (N): 6, 4; Position (cm): 20, 70. Weights — Downward forces (N): 5, 2; Position (cm): 26, 60.",
+  "figureKey": "physics-2024-OL-paper-p02-i0",
+  "labelKey": [
+   {
+    "letter": "6 N",
+    "meaning": "One of the two forces already included: the upward force of 6 N from the first Newton spring balance, drawn acting at the 20 cm mark",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "3 N",
+    "meaning": "One of the two forces already included: the downward weight of the metre stick (3 N), drawn acting at the 50 cm mark, its centre of gravity",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "10 cm",
+    "meaning": "The 10 cm graduation of the metre stick's scale; positions along the stick are read in centimetres against this scale",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "20",
+    "meaning": "The 20 cm graduation — the point where the 6 N upward spring-balance force is already drawn",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "30",
+    "meaning": "The 30 cm graduation on the metre stick scale",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "40",
+    "meaning": "The 40 cm graduation on the metre stick scale",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "50",
+    "meaning": "The 50 cm graduation — the metre stick's centre of gravity, where its 3 N weight is drawn acting",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "60",
+    "meaning": "The 60 cm graduation — the results table places the 2 N hanging weight (downward force) at this position",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "70",
+    "meaning": "The 70 cm graduation — the results table places the second spring balance's 4 N upward force at this position",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "80",
+    "meaning": "The 80 cm graduation on the metre stick scale",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "90",
+    "meaning": "The 90 cm graduation on the metre stick scale",
+    "askedInThisQuestion": false
+   }
+  ],
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "upward force of 4 N at 70 cm",
+    "marks": 2,
+    "contextNote": "Scheme tariff for (iii) is [3×2]: each missing force correctly drawn at its position earns 2 marks."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "downward force of 5 N at 26 cm",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "downward force of 2 N at 60 cm",
+    "marks": 2
+   }
+  ],
+  "notes": "Opened the figure: it is the metre-stick diagram exactly as the worklist describes — a horizontal rectangle with a cm scale (10 cm, 20 … 90), a 6 N arrow drawn upward at the 20 mark and a 3 N arrow drawn downward at the 50 mark. The question is 'copy the diagram … complete your diagram', so it is meaningless without this crop — this is the diagram being completed. The three scheme points are the three forces the student must add; their magnitudes/positions come from the results tables, which I transcribed into the stem because the crop does not include them. Marks: (i) 6 + (ii) 6 + (iii) 6 reconcile with the paper's printed (18) for parts (i)–(iii).",
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "phys-2024-ol-q6-c-fig",
+  "topicId": "phys-1-2",
+  "conceptId": "archimedes-principle",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2024 OL Q6(c)",
+  "questionText": "Explain Archimedes' principle. The diagram on the right may help your answer.",
+  "stem": "Answer any eight of the following parts (a), (b), (c), etc.",
+  "figureKey": "physics-2024-OL-paper-p05-i0",
+  "labelKey": [
+   {
+    "letter": "5 N",
+    "meaning": "The spring-balance reading with the object hanging in air — the object's weight is 5 N",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "3 N",
+    "meaning": "The spring-balance reading with the same object fully immersed in the vessel of water — its apparent weight is 3 N",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "2 N of water",
+    "meaning": "The water displaced by the immersed object, collected in the small dish — it weighs 2 N",
+    "askedInThisQuestion": false
+   }
+  ],
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "upthrust = weight of the fluid displaced / upthrust 5 – 3 = 2 N, weight of fluid = 2 N",
+    "marks": 7,
+    "contextNote": "The single solidus / separates equally acceptable alternatives: either the general statement of the principle, or the numerical demonstration read off the diagram (5 N in air, 3 N immersed, 2 N of displaced water). Scheme also notes [accept partial answer for 4]."
+   }
+  ],
+  "notes": "Opened the figure: left side is the printed prose of Q6(a)–(d); right side shows two spring-balance setups — an object weighing 5 N in air, then the same object immersed reading 3 N, with a small dish labelled '2 N of water' catching the displaced water. Carded WITH the figure because the marking scheme's second acceptable route ('upthrust 5 – 3 = 2 N, weight of fluid = 2 N') reads those three values directly off this diagram — that scheme row is unintelligible without the crop, so a text-only card could not carry it. Q6 parts are 7 marks each (8 × 7 = 56).",
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "phys-2024-ol-q8-vi-fig",
+  "topicId": "phys-2-3",
+  "conceptId": "concave-mirror-image-orientation",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2024 OL Q8(vi)",
+  "questionText": "Explain why the image of person A in the picture on the right is upright but the image of person B is upside down.",
+  "stem": "Light is also reflected from curved mirrors. The picture on the right shows images in a concave mirror.",
+  "figureKey": "physics-2024-OL-paper-p07-i2",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "The person standing close to the concave mirror; the picture shows their image in the mirror upright",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "The person standing further back from the concave mirror; the picture shows their image in the mirror upside down",
+    "askedInThisQuestion": true
+   }
+  ],
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "person A is upright because they are inside the focal point of the mirror / person B is inverted because they are outside the focal point of the mirror",
+    "marks": 6,
+    "contextNote": "The single solidus / separates equally acceptable alternatives — explaining either person correctly earns the marks. Scheme also notes [accept partial answer for 3]."
+   }
+  ],
+  "notes": "Opened the figure: a photograph of a large circular concave mirror mounted in a wall (science-museum setting). Label B is printed on a boy standing well back from the mirror; label A sits within the mirror on the upright image beside a child standing right at the mirror; an upside-down reflection is visible higher in the mirror. The question explicitly interrogates 'person A in the picture' and 'person B', so it cannot be asked without this crop. The worklist description matches what I saw.",
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "phys-2024-ol-q11-iii-fig",
+  "topicId": "phys-3-3",
+  "conceptId": "mains-plug-wiring",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2024 OL Q11(iii)",
+  "questionText": "The diagram on the right shows the parts of an electrical plug. Name the wires labelled A and B.",
+  "stem": "Electric current is the movement of charged particles through a conductor.",
+  "figureKey": "physics-2024-OL-paper-p10-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "The earth wire — the wire running to the top pin of the plug",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "The live wire — the wire connected through the fuse to the live pin",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "neutral",
+    "meaning": "Printed label for the neutral wire, connected to the left-hand pin",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "fuse",
+    "meaning": "Printed label for the cartridge fuse fitted in the live side of the plug",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "cable",
+    "meaning": "Printed label for the flex cable carrying the three wires into the plug",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "cable grip",
+    "meaning": "Printed label for the clamp that grips the cable where it enters the plug",
+    "askedInThisQuestion": false
+   }
+  ],
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A = earth wire",
+    "marks": 3,
+    "contextNote": "Scheme also notes [accept partial answer for 3] across the pair."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B = live wire",
+    "marks": 3
+   }
+  ],
+  "notes": "Opened the figure: left side is the printed Q11 stem and parts (i)–(iii); right side is a line diagram of an opened three-pin mains plug. A points to the wire running to the top (earth) pin; B points to the wire on the fuse side (live); 'neutral', 'fuse', 'cable' and 'cable grip' are printed in full on the diagram. The question is 'name the wires labelled A and B' — unaskable without the crop. Group marks (i)–(vi): 5+6+6+6+6+3 = the paper's printed (32).",
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "phys-2025-ol-q6a-fig",
+  "topicId": "phys-1-2",
+  "conceptId": "moment-of-a-force",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2025 OL Q6(a)",
+  "stem": "Answer any eight of the following parts (a), (b), (c), etc.",
+  "questionText": "The diagram shows a force of 50 N applied to a wrench. Calculate the moment of the force about the fulcrum at the centre of the nut.",
+  "figureKey": "physics-2025-OL-paper-p06-i1",
+  "labelKey": [
+   {
+    "letter": "force applied = 50 N",
+    "meaning": "The 50 N force applied to the end of the wrench handle, shown by the downward arrow",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "distance = 15 cm",
+    "meaning": "The distance from the fulcrum at the centre of the nut to the point where the force is applied — this value appears only on the diagram, not in the question prose",
+    "askedInThisQuestion": true
+   }
+  ],
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "moment = 7.5 N m",
+    "marks": 7,
+    "contextNote": "Scheme tariff [7]; scheme adds '[accept partial answer for 4]'. Q6 instructs 'Answer any eight of the following parts' at (8 x 7), so each part is worth 7 marks."
+   }
+  ],
+  "notes": "Opened the figure: it shows the opening of Q6 with parts (a)-(d) on the left and, on the right, a grey drawing of an adjustable wrench gripping a nut, annotated 'force applied = 50 N' (arrow down onto the handle end) and 'distance = 15 cm' (double-headed arrow along the handle from the nut). Matches the worklist description. The question NEEDS this figure: the 15 cm distance required to compute moment = 50 N x 0.15 m exists only on the diagram — the prose states just the 50 N.",
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "phys-2025-ol-q10vii-fig",
+  "topicId": "phys-3-6",
+  "conceptId": "induced-current-moving-magnet",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2025 OL Q10(vii)",
+  "stem": "An electrical generator is based on the principle of electromagnetic induction. It can be demonstrated by moving a magnet towards a coil as shown.",
+  "questionText": "What is observed on the meter when the magnet is moved in and out of the coil?",
+  "figureKey": "physics-2025-OL-paper-p10-i0",
+  "labelKey": [
+   {
+    "letter": "S",
+    "meaning": "The south pole of the bar magnet (the end facing away from the coil)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "N",
+    "meaning": "The north pole of the bar magnet — the end facing the coil, with an arrow showing the magnet being moved towards the coil",
+    "askedInThisQuestion": false
+   }
+  ],
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "non-zero reading on meter",
+    "marks": 4,
+    "contextNote": "Scheme tariff [4]; scheme adds '[accept partial answer for 2]'."
+   }
+  ],
+  "notes": "Opened the figure: a simple line diagram under one clipped line of stem prose — a bar magnet labelled S (left end) and N (right end) with an arrow pointing towards a multi-loop coil, which is wired in a rectangular circuit to a meter (circle with a needle) at the bottom. Matches the worklist description. The question NEEDS this figure: 'the meter' and the magnet-and-coil arrangement it asks about exist only in the diagram ('as shown').",
+  "tariffModel": {
+   "kind": "fixed"
+  }
+ },
+ {
+  "id": "phys-2025-ol-q10viii-fig",
+  "topicId": "phys-3-6",
+  "conceptId": "no-induction-stationary-magnet",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2025 OL Q10(viii)",
+  "stem": "An electrical generator is based on the principle of electromagnetic induction. It can be demonstrated by moving a magnet towards a coil as shown.",
+  "questionText": "What is observed on the meter when the magnet is stationary within the coil?",
+  "figureKey": "physics-2025-OL-paper-p10-i0",
+  "labelKey": [
+   {
+    "letter": "S",
+    "meaning": "The south pole of the bar magnet (the end facing away from the coil)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "N",
+    "meaning": "The north pole of the bar magnet — the end facing the coil, with an arrow showing the magnet being moved towards the coil",
+    "askedInThisQuestion": false
+   }
+  ],
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "constant 0 A reading",
+    "marks": 4,
+    "contextNote": "Scheme tariff [4]; scheme adds '[accept partial answer for 2]'."
+   }
+  ],
+  "notes": "Same diagram as Q10(vii): bar magnet (S / N labels, arrow towards coil), coil, and a circuit containing a meter. The question NEEDS the figure for the same reason — 'the meter' and 'the coil' are defined only by the diagram. Block tariff check: paper prints (14) for parts (vi)-(viii); scheme gives (vi) 6 + (vii) 4 + (viii) 4 = 14, so this part is 4 marks.",
+  "tariffModel": {
+   "kind": "fixed"
+  }
  }
 ]

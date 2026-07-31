@@ -408,21 +408,6 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2021-ol-q6-i", topicId: "phys-4-2", conceptId: "x-ray-target-material",
-    section: "B", questionRef: "2021 OL Q6(i)",
-    questionText: "The target in an X-ray tube is usually made of tungsten. What property of tungsten makes it suitable for this use?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 7,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "high melting point", marks: 7, route: "a" },
-    { id: "r-2", kind: "point", verbatim: "high atomic number", marks: 7, route: "b" },
-    { id: "r-3", kind: "point", verbatim: "high density", marks: 7, route: "c" },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC021GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q6-j", topicId: "phys-3-3", conceptId: "semiconductor",
     section: "B", questionRef: "2021 OL Q6(j)",
     questionText: "Silicon is an example of a semiconductor. What is a semiconductor?",
@@ -696,20 +681,6 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "ohmmeter", marks: 6, contextNote: "'multimeter' is listed only as a partial answer (3), not as an equivalent.", exactTermRequired: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC021GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2021-ol-q9-iii", topicId: "phys-3-3", conceptId: "resistance-proportional-to-length",
-    section: "B", questionRef: "2021 OL Q9(iii)",
-    stem: "A rheostat is a variable resistor. When the sliding contact is moved, the current flows through a different length of wire, thus changing the resistance of the rheostat.",
-    questionText: "State the relationship between resistance and length.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "R ∝ l", marks: 6, accepts: ["proportional"], contextNote: "'proportional' is a key word — it only scores inside the correct statement that resistance is proportional to length." },
     ],
   } as SecCard,
   {
@@ -1188,20 +1159,6 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "two objects with the same natural frequency e.g. two mounted tuning forks (of the same frequency)", marks: 3, openList: true },
     { id: "r-2", kind: "point", verbatim: "set one vibrating and bring the other close", marks: 3, openList: true },
     { id: "r-3", kind: "point", verbatim: "energy transfer e.g. the second tuning fork vibrates", marks: 3, openList: true },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC021GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2021-ol-q14d-iii", topicId: "phys-2-6", conceptId: "frequency-inversely-proportional-to-length",
-    section: "B", questionRef: "2021 OL Q14(d)(iii)",
-    questionText: "A sonometer, shown above, can be used to investigate the relationship between the frequency of a stretched string and its length. State this relationship.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "frequency is inversely proportional to the length", marks: 6, route: "a" },
-    { id: "r-2", kind: "point", verbatim: "fl = k", marks: 6, route: "b" },
     ],
   } as SecCard,
   {
@@ -3529,20 +3486,6 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2024-ol-q6-c", topicId: "phys-1-2", conceptId: "archimedes-principle",
-    section: "B", questionRef: "2024 OL Q6(c)",
-    stem: "Answer any eight of the following parts (a), (b), (c), etc.",
-    questionText: "Explain Archimedes’ principle.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 7,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "upthrust = weight of the fluid displaced", marks: 7 },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "ordinary",
-    paperFileid: "LC021GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q6-e", topicId: "phys-2-2", conceptId: "light-waves-versus-sound-waves",
     section: "B", questionRef: "2024 OL Q6(e)",
     stem: "Answer any eight of the following parts (a), (b), (c), etc.",
@@ -4286,20 +4229,6 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "ρ ≈ 1.6 × 10-6 Ω m", marks: 6, contextNote: "The scheme prints this as 1.6 × 10⁻⁶ Ω m." },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2025, level: "ordinary",
-    paperFileid: "LC021GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2025-ol-q6-a", topicId: "phys-1-2", conceptId: "moment-of-a-force",
-    section: "B", questionRef: "2025 OL Q6(a)",
-    stem: "From the diagram: force applied = 50 N, distance = 15 cm.",
-    questionText: "The diagram shows a force of 50 N applied to a wrench. Calculate the moment of the force about the fulcrum at the centre of the nut.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 7,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "moment = 7.5 N m", marks: 7 },
     ],
   } as SecCard,
   {
@@ -5285,34 +5214,6 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2025-ol-q10-vii", topicId: "phys-3-6", conceptId: "induction-moving-magnet",
-    section: "B", questionRef: "2025 OL Q10(vii)",
-    stem: "An electrical generator is based on the principle of electromagnetic induction. It can be demonstrated by moving a magnet towards a coil.",
-    questionText: "What is observed on the meter when the magnet is moved in and out of the coil?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "non-zero reading on meter", marks: 4, contextNote: "Partial answer accepted for 2." },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2025, level: "ordinary",
-    paperFileid: "LC021GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2025-ol-q10-viii", topicId: "phys-3-6", conceptId: "induction-stationary-magnet",
-    section: "B", questionRef: "2025 OL Q10(viii)",
-    stem: "An electrical generator is based on the principle of electromagnetic induction. It can be demonstrated by moving a magnet towards a coil.",
-    questionText: "What is observed on the meter when the magnet is stationary within the coil?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "constant 0 A reading", marks: 4, contextNote: "Partial answer accepted for 2." },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2025, level: "ordinary",
-    paperFileid: "LC021GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q10-ix", topicId: "phys-3-6", conceptId: "transformer-turns-ratio",
     section: "B", questionRef: "2025 OL Q10(ix)",
     stem: "A transformer is also based on the principle of electromagnetic induction. An a.c. source is connected to the primary coil of a transformer to provide an input voltage.",
@@ -5609,5 +5510,492 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "melts", marks: 7, accepts: ["breaks if current is too high"], contextNote: "The scheme prints 'melts / breaks if current is too high' — the condition 'if current is too high' applies to either verb, and the key word only scores inside that correct statement. Partial answer accepted for 4." },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2021-ol-q6i-fig", topicId: "phys-4-2", conceptId: "x-ray-tube-target-tungsten",
+    section: "B", questionRef: "2021 OL Q6(i)",
+    stem: "Answer any eight of the following parts (a), (b), (c), etc.",
+    questionText: "The picture on the right is an X-ray tube. The target in an X-ray tube is usually made of tungsten. What property of tungsten makes it suitable for this use?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "high melting point", marks: 7, contextNote: "Any one of the three routes scores the full 7. The scheme also allows 'partial answer (4)' as a fallback.", route: "melting-point" },
+    { id: "r-2", kind: "point", verbatim: "high atomic number", marks: 7, route: "atomic-number" },
+    { id: "r-3", kind: "point", verbatim: "high density", marks: 7, route: "density" },
+    ],
+    figure: {
+          "candId": "physics-2021-OL-paper-p05-i0",
+          "src": "/exam-figures/physics/markbank/physics-2021-OL-paper-p05-i0.png",
+          "srcHash": "1933214e1bd3682823ed8cd9cd67ce56",
+          "alt": "On the right of the crop is a grey-scale photograph of an X-ray tube lying at an angle: a sealed glass envelope with a long cylindrical metal insert running down its axis, a ribbed metal collar around the middle, a dark cap on the right-hand end, and a thin curled wire lead trailing away from the lower-left end. To the left of the photograph is the printed exam text for Q6(g) (Coulomb's law written as F = (1/4pi.epsilon)(q1q2/d^2), asking what F, q and d stand for), Q6(h) (SI unit of magnetic flux density and of capacitance) and Q6(i), which refers to \"the picture on the right\".",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2021-ol-q9iii-fig", topicId: "phys-3-3", conceptId: "resistance-length-proportionality",
+    section: "B", questionRef: "2021 OL Q9(iii)",
+    stem: "The photograph shows a rheostat, which is a variable resistor. When the sliding contact is moved, the current flows through a different length of wire, thus changing the resistance of the rheostat.",
+    questionText: "State the relationship between resistance and length.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "R ∝ l / proportional", marks: 6, contextNote: "Single solidus = equally acceptable phrasings of the same point. The scheme also allows 'partial answer (3)' as a fallback." },
+    ],
+    figure: {
+          "candId": "physics-2021-OL-paper-p08-i0",
+          "src": "/exam-figures/physics/markbank/physics-2021-OL-paper-p08-i0.png",
+          "srcHash": "ead6511d8d24f28fc14b57b4b7dfbdca",
+          "alt": "On the right is a grey-scale photograph of a laboratory rheostat: a long ceramic tube closely wound with resistance wire, mounted horizontally between two metal end-plates on a small stand with terminals, and a sliding contact riding on a bar above the winding, with a lead running off the right-hand end. To the left is the printed text explaining that the photograph shows a rheostat (a variable resistor) whose resistance changes when the sliding contact is moved, followed by Q9(iii).",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2021-ol-q9ix-fig", topicId: "phys-3-3", conceptId: "mains-plug-earth-wire",
+    section: "B", questionRef: "2021 OL Q9(ix)",
+    stem: "The diagram on the left shows the parts of an electrical plug.",
+    questionText: "The wire labelled P is yellow and green. What is the function of this wire?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "safety/ earth (the equipment)", marks: 4 },
+    ],
+    figure: {
+          "candId": "physics-2021-OL-paper-p08-i1",
+          "src": "/exam-figures/physics/markbank/physics-2021-OL-paper-p08-i1.png",
+          "srcHash": "a2a55b69ae712a5fa98f5ebd449b29d7",
+          "alt": "On the left of the crop is a labelled line diagram of the inside of a three-pin mains plug with its cover removed, drawn as a rounded outline with grey-shaded internal metalwork and two dark round screw holes near the bottom corners. Three insulated wires enter from a sheathed cable at the bottom, pass under a clamp, and fan out to screw terminals: one arcs up to the terminal at the top, one goes left to a terminal on the left-hand side, and one goes right to a terminal beside a cartridge fuse held in clips on the right. Leader lines label: \"P\" to the wire running up to the top terminal, \"Neutral\" to the wire running to the left terminal, \"Fuse\" to the cartridge fuse, \"Q\" to the wire running to the right-hand terminal, \"Cable grip\" to the clamp at the bottom, and \"Cable\" to the sheathed cable leaving the bottom. To the right is the printed text for Q9(ix) and Q9(x) and the mark allocation (8).",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "P",
+                "Q",
+                "Fuse",
+                "Neutral",
+                "Cable grip",
+                "Cable"
+          ]
+    },
+    labelKey: [{"letter":"P","meaning":"The earth wire (yellow and green insulation) — runs to the top (earth) pin","askedInThisQuestion":true},{"letter":"Q","meaning":"The live wire (brown insulation) — the wire named in part (x)","askedInThisQuestion":false},{"letter":"Fuse","meaning":"Printed label — the cartridge fuse on the live side of the plug","askedInThisQuestion":false},{"letter":"Neutral","meaning":"Printed label — the neutral wire and its terminal on the left of the plug","askedInThisQuestion":false},{"letter":"Cable grip","meaning":"Printed label — the clamp holding the cable where it enters the plug","askedInThisQuestion":false},{"letter":"Cable","meaning":"Printed label — the three-core flex entering the plug from below","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2021-ol-q9x-fig", topicId: "phys-3-3", conceptId: "mains-plug-live-wire",
+    section: "B", questionRef: "2021 OL Q9(x)",
+    stem: "The diagram on the left shows the parts of an electrical plug.",
+    questionText: "Name the wire labelled Q.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "live", marks: 4, contextNote: "The scheme allows 'partial answer e.g. brown (2)' as a fallback." },
+    ],
+    figure: {
+          "candId": "physics-2021-OL-paper-p08-i1",
+          "src": "/exam-figures/physics/markbank/physics-2021-OL-paper-p08-i1.png",
+          "srcHash": "a2a55b69ae712a5fa98f5ebd449b29d7",
+          "alt": "On the left of the crop is a labelled line diagram of the inside of a three-pin mains plug with its cover removed, drawn as a rounded outline with grey-shaded internal metalwork and two dark round screw holes near the bottom corners. Three insulated wires enter from a sheathed cable at the bottom, pass under a clamp, and fan out to screw terminals: one arcs up to the terminal at the top, one goes left to a terminal on the left-hand side, and one goes right to a terminal beside a cartridge fuse held in clips on the right. Leader lines label: \"P\" to the wire running up to the top terminal, \"Neutral\" to the wire running to the left terminal, \"Fuse\" to the cartridge fuse, \"Q\" to the wire running to the right-hand terminal, \"Cable grip\" to the clamp at the bottom, and \"Cable\" to the sheathed cable leaving the bottom. To the right is the printed text for Q9(ix) and Q9(x) and the mark allocation (8).",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "P",
+                "Q",
+                "Fuse",
+                "Neutral",
+                "Cable grip",
+                "Cable"
+          ]
+    },
+    labelKey: [{"letter":"P","meaning":"The earth wire (yellow and green insulation) — its function is asked in part (ix)","askedInThisQuestion":false},{"letter":"Q","meaning":"The live wire (brown insulation)","askedInThisQuestion":true},{"letter":"Fuse","meaning":"Printed label — the cartridge fuse on the live side of the plug","askedInThisQuestion":false},{"letter":"Neutral","meaning":"Printed label — the neutral wire and its terminal on the left of the plug","askedInThisQuestion":false},{"letter":"Cable grip","meaning":"Printed label — the clamp holding the cable where it enters the plug","askedInThisQuestion":false},{"letter":"Cable","meaning":"Printed label — the three-core flex entering the plug from below","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2021-ol-q14b-iii-fig", topicId: "phys-3-1", conceptId: "charge-distribution-pointed-conductor",
+    section: "B", questionRef: "2021 OL Q14(b)(iii)",
+    stem: "Lightning is a naturally occurring electrostatic discharge. It is caused by an imbalance between two electrically charged regions, usually a cloud and the ground.",
+    questionText: "Draw a diagram to show the distribution of charge on a pear shaped conductor.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "diagram showing more concentration at point", marks: 6, contextNote: "The scheme allows 'partial answer (3)' as a fallback." },
+    ],
+    figure: {
+          "candId": "physics-2021-OL-paper-p13-i1",
+          "src": "/exam-figures/physics/markbank/physics-2021-OL-paper-p13-i1.png",
+          "srcHash": "1c811f7968384d5774ae432554916a48",
+          "alt": "On the right of the crop is a single closed pear-shaped outline drawn as a thin grey line on white: rounded and broad at the left, narrowing to a blunt point at the right. Nothing is drawn inside it, and it has no labels, charges or arrows. To the left is the printed text for Q14(b) parts (ii), (iii) and (iv), and the mark allocation (18) at the lower right.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2021-ol-q14d-iii-fig", topicId: "phys-2-5", conceptId: "sonometer-frequency-vs-length",
+    section: "B", questionRef: "2021 OL Q14(d)(iii)",
+    stem: "Sounds are produced when something vibrates.",
+    questionText: "A sonometer, shown above, can be used to investigate the relationship between the frequency of a stretched string and its length. State this relationship.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "frequency is inversely proportional to the length", marks: 6, contextNote: "Any one of the three routes scores the full 6. The scheme also allows 'partial answer (3)' as a fallback.", route: "words" },
+    { id: "r-2", kind: "point", verbatim: "fl = k", marks: 6, route: "fl-equals-k" },
+    { id: "r-3", kind: "point", verbatim: "𝑓∝ 𝑙", marks: 6, contextNote: "Extraction flattened a fraction here: in the printed scheme this route reads f ∝ 1/l (frequency proportional to 1 over length) — the displaced '1' sits on the previous line of the extracted markdown. It is NOT f proportional to l.", route: "f-prop-1-over-l" },
+    ],
+    figure: {
+          "candId": "physics-2021-OL-paper-p14-i0",
+          "src": "/exam-figures/physics/markbank/physics-2021-OL-paper-p14-i0.png",
+          "srcHash": "4a81ff781d90775641631b0d91b025ce",
+          "alt": "A grey-scale photograph of a sonometer seen at an angle from the lower left: a long rectangular wooden sound box with a circular sound hole in its near face and a second hole further along, a wire stretched along its top surface passing over two movable wedge-shaped bridges, a peg or tensioning assembly with two uprights at the far right end, and a metal end-piece at the near left end from which a cord hangs down. The photograph is centred on the page between the sliced last line of Q14(d)(ii) above it and the line of Q14(d)(iii) below it, which reads \"A sonometer, shown above, can be used to investigate the relationship between\".",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2021-ol-q14d-iv-fig", topicId: "phys-2-6", conceptId: "stationary-wave-wavelength-from-nodes",
+    section: "B", questionRef: "2021 OL Q14(d)(iv)",
+    stem: "Waves on a stretched string travel at a speed of 380 m s−1. When a stationary wave is set up on a string, the distance between two adjacent nodes is 40 cm.",
+    questionText: "Calculate the wavelength of the wave.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(𝜆 = 2(0.4) = ) 0.8 m", marks: 6, contextNote: "The scheme allows 'partial answer (3)' as a fallback." },
+    ],
+    figure: {
+          "candId": "physics-2021-OL-paper-p14-i1",
+          "src": "/exam-figures/physics/markbank/physics-2021-OL-paper-p14-i1.png",
+          "srcHash": "332d81063124279399bd1ef5d9036db4",
+          "alt": "A stationary-wave diagram drawn as two thin curves that cross at a point on the left, bow apart into one wide symmetrical loop, cross again at a point on the right, and continue as straighter lines beyond both crossing points - the classic node / antinode / node shape. Below the loop a horizontal dashed double-headed arrow spans from the left crossing point to the right crossing point and is labelled \"40 cm\" beneath its centre. There are no axes. The line of question text above the wave is sliced by the top edge of the crop.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "40 cm"
+          ]
+    },
+    labelKey: [{"letter":"40 cm","meaning":"The distance between two adjacent nodes of the stationary wave — one loop of the standing-wave envelope, equal to half a wavelength","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2021-ol-q14d-v-fig", topicId: "phys-2-6", conceptId: "stationary-wave-frequency",
+    section: "B", questionRef: "2021 OL Q14(d)(v)",
+    stem: "Waves on a stretched string travel at a speed of 380 m s−1. When a stationary wave is set up on a string, the distance between two adjacent nodes is 40 cm.",
+    questionText: "Calculate the frequency of the wave.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(𝑓= 𝜆 = 0.8 =) 475 Hz", marks: 4, contextNote: "Extraction flattened the fractions: the printed scheme reads f = v/λ = 380/0.8 = 475 Hz — the numerators '𝑣 380' sit on the previous line of the extracted markdown. The scheme also allows 'partial answer (2)' as a fallback." },
+    ],
+    figure: {
+          "candId": "physics-2021-OL-paper-p14-i1",
+          "src": "/exam-figures/physics/markbank/physics-2021-OL-paper-p14-i1.png",
+          "srcHash": "332d81063124279399bd1ef5d9036db4",
+          "alt": "A stationary-wave diagram drawn as two thin curves that cross at a point on the left, bow apart into one wide symmetrical loop, cross again at a point on the right, and continue as straighter lines beyond both crossing points - the classic node / antinode / node shape. Below the loop a horizontal dashed double-headed arrow spans from the left crossing point to the right crossing point and is labelled \"40 cm\" beneath its centre. There are no axes. The line of question text above the wave is sliced by the top edge of the crop.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "40 cm"
+          ]
+    },
+    labelKey: [{"letter":"40 cm","meaning":"The distance between two adjacent nodes of the stationary wave (half a wavelength) — used in part (iv) to find the wavelength this part relies on","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2023-ol-q9vi-fig", topicId: "phys-1-2", conceptId: "pressure-force-area",
+    section: "B", questionRef: "2023 OL Q9(vi)",
+    stem: "Another reason for bricks being such a popular building material is that that they are durable and strong. A brick has length l = 20 cm, width w = 9 cm and height h = 6 cm, as shown in the diagram. The brick has a mass of 2 kg.",
+    questionText: "The bricks are stacked to build a wall. On which side, A, B or C, should a brick be stacked so that it exerts the least amount of pressure on the bricks below it? Explain your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "B", marks: 4, contextNote: "B is the top face — the face with the largest area (20 cm x 9 cm)." },
+    { id: "r-2", kind: "point", verbatim: "greatest area", marks: 4, contextNote: "The explanation mark: pressure = force / area, so the face with the greatest area exerts the least pressure." },
+    ],
+    figure: {
+          "candId": "physics-2023-OL-paper-p08-i0",
+          "src": "/exam-figures/physics/markbank/physics-2023-OL-paper-p08-i0.png",
+          "srcHash": "f53d1d8a2dd39a6a7b4ff3dbf928b100",
+          "alt": "Question 9 parts (iv) to (vi) on the left, beside a three-quarter view of a single rectangular grey brick on the right. Three faces of the brick are lettered directly on the image: \"B\" on the large top face, \"A\" on the small end face at the left, and \"C\" on the long front face. Dimension captions surround the brick — \"h = 6 cm\" with the vertical height at the right-hand end, \"l = 20 cm\" beneath the long bottom front edge, and \"w = 9 cm\" at the lower left beside the short edge. All three letters, all three dimension captions and the whole brick are inside the crop.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "h",
+                "w",
+                "l"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"The end face of the brick (width x height, 9 cm x 6 cm) — the smallest face","askedInThisQuestion":true},{"letter":"B","meaning":"The top face of the brick (length x width, 20 cm x 9 cm) — the largest face","askedInThisQuestion":true},{"letter":"C","meaning":"The front face of the brick (length x height, 20 cm x 6 cm)","askedInThisQuestion":true},{"letter":"h","meaning":"Height of the brick, h = 6 cm","askedInThisQuestion":false},{"letter":"w","meaning":"Width of the brick, w = 9 cm","askedInThisQuestion":false},{"letter":"l","meaning":"Length of the brick, l = 20 cm","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2023-ol-q11iii-fig", topicId: "phys-3-3", conceptId: "circuit-diagram-from-apparatus",
+    section: "B", questionRef: "2023 OL Q11(iii)",
+    stem: "Electric current is the movement of charged particles through a conductor.",
+    questionText: "Draw a circuit diagram for the arrangement of apparatus shown in the diagram on the right.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "symbol for battery/cell", marks: 3, contextNote: "The single solidus means battery symbol and cell symbol are equally acceptable." },
+    { id: "r-2", kind: "point", verbatim: "symbol for bulb", marks: 3 },
+    { id: "r-3", kind: "point", verbatim: "connected in series", marks: 3, contextNote: "The scheme prints these three elements on one line as 'symbol for battery/cell, symbol for bulb, connected in series [3 × 3]' — split here into its three 3-mark elements." },
+    ],
+    figure: {
+          "candId": "physics-2023-OL-paper-p10-i0",
+          "src": "/exam-figures/physics/markbank/physics-2023-OL-paper-p10-i0.png",
+          "srcHash": "022fe30d5aba8ee1377a806300245698",
+          "alt": "Question 11 parts (iii) and (iv) on the left, with a pictorial (not symbolic) circuit on the right. A single filament light bulb sits at the top in a screw holder; two wires leave the holder, curve down to the left and to the right, and run to the two ends of one cylindrical battery drawn as a black cell lying horizontally at the bottom. The result is a single closed series loop of bulb and battery. The battery's left end is marked with a circled \"+\" and its right end with a circled \"−\", and the word \"battery\" is printed across the black cell. A leader arrow coming from the right, captioned \"light bulb\", points at the bulb. Both ends of the loop and both captions are fully inside the crop.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "+",
+                "−"
+          ]
+    },
+    labelKey: [{"letter":"+","meaning":"The positive terminal of the battery","askedInThisQuestion":false},{"letter":"−","meaning":"The negative terminal of the battery","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2023-ol-q14ci-fig", topicId: "phys-3-2", conceptId: "electric-field-lines",
+    section: "B", questionRef: "2023 OL Q14(c)(i)",
+    stem: "The diagram shows the electric field around two oppositely charged particles.",
+    questionText: "Draw the electric field lines around two positively charged particles held close to each other.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "shape", marks: 3, contextNote: "For two like (positive) charges the field lines repel — they curve away from the midpoint, unlike the shown dipole pattern where lines connect the two charges." },
+    { id: "r-2", kind: "point", verbatim: "direction", marks: 3, contextNote: "Arrows must point away from both positive charges." },
+    ],
+    figure: {
+          "candId": "physics-2023-OL-paper-p14-i1",
+          "src": "/exam-figures/physics/markbank/physics-2023-OL-paper-p14-i1.png",
+          "srcHash": "5a9816dceb925447509c87cd80d7dd71",
+          "alt": "Question 14 part (c) opening text on the left, and on the right a line diagram of the electric field around an electric dipole. Two small circles sit side by side, the left one containing \"+\" and the right one containing \"−\". Curved field lines carrying arrowheads run from the left circle to the right circle: short tight loops directly between the two, and progressively wider loops arching above and below them. Further out, straighter lines with arrowheads radiate outwards away from the \"+\" circle and converge inwards onto the \"−\" circle. Every arrowhead points away from \"+\" and towards \"−\". All the field lines terminate inside the crop on all four sides.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "+",
+                "−"
+          ]
+    },
+    labelKey: [{"letter":"+","meaning":"The positively charged particle (left circle) — field lines point away from it","askedInThisQuestion":false},{"letter":"−","meaning":"The negatively charged particle (right circle) — field lines point towards it","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2024-ol-q1-iii-fig", topicId: "phys-1-2", conceptId: "laws-of-equilibrium-force-diagram",
+    section: "A", questionRef: "2024 OL Q1(iii)",
+    stem: "A student carried out an experiment to investigate the laws of equilibrium. He suspended a metre stick from two Newton spring balances and hung two weights from the metre stick, as outlined in the tables below, until it was balanced and level. Before setting up the experiment, the student took two measurements. He measured the weight of the metre stick to be 3 N. He found its centre of gravity at the 50 cm mark. His results are shown in the tables below. Newton Spring Balances — Upward forces (N): 6, 4; Position (cm): 20, 70. Weights — Downward forces (N): 5, 2; Position (cm): 26, 60.",
+    questionText: "Copy the diagram of the metre stick below into your answerbook. Two of the forces have been included. Complete your diagram to show all upward and downward forces and their positions.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "upward force of 4 N at 70 cm", marks: 2, contextNote: "Scheme tariff for (iii) is [3×2]: each missing force correctly drawn at its position earns 2 marks." },
+    { id: "r-2", kind: "point", verbatim: "downward force of 5 N at 26 cm", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "downward force of 2 N at 60 cm", marks: 2 },
+    ],
+    figure: {
+          "candId": "physics-2024-OL-paper-p02-i0",
+          "src": "/exam-figures/physics/markbank/physics-2024-OL-paper-p02-i0.png",
+          "srcHash": "ea514a6243ae7b078afe63739f7e22f4",
+          "alt": "The metre-stick force diagram for the laws-of-equilibrium experiment. A long horizontal rectangle drawn in thick black outline represents the metre stick, with the scale printed inside it: '10 cm' then 20, 30, 40, 50, 60, 70, 80, 90, each with a short tick mark rising from the top edge of the rectangle. A vertical arrow points straight UP out of the stick at the 20 cm mark, labelled '6 N'. A vertical arrow points straight DOWN out of the stick at the 50 cm mark, labelled '3 N'. Both ends of the rectangle, both arrowheads and every scale number are inside the crop. Nothing else is drawn — the student is meant to copy this and add the remaining forces.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "6 N",
+                "3 N",
+                "10 cm",
+                "20",
+                "30",
+                "40",
+                "50",
+                "60",
+                "70",
+                "80",
+                "90"
+          ]
+    },
+    labelKey: [{"letter":"6 N","meaning":"One of the two forces already included: the upward force of 6 N from the first Newton spring balance, drawn acting at the 20 cm mark","askedInThisQuestion":false},{"letter":"3 N","meaning":"One of the two forces already included: the downward weight of the metre stick (3 N), drawn acting at the 50 cm mark, its centre of gravity","askedInThisQuestion":false},{"letter":"10 cm","meaning":"The 10 cm graduation of the metre stick's scale; positions along the stick are read in centimetres against this scale","askedInThisQuestion":false},{"letter":"20","meaning":"The 20 cm graduation — the point where the 6 N upward spring-balance force is already drawn","askedInThisQuestion":false},{"letter":"30","meaning":"The 30 cm graduation on the metre stick scale","askedInThisQuestion":false},{"letter":"40","meaning":"The 40 cm graduation on the metre stick scale","askedInThisQuestion":false},{"letter":"50","meaning":"The 50 cm graduation — the metre stick's centre of gravity, where its 3 N weight is drawn acting","askedInThisQuestion":false},{"letter":"60","meaning":"The 60 cm graduation — the results table places the 2 N hanging weight (downward force) at this position","askedInThisQuestion":false},{"letter":"70","meaning":"The 70 cm graduation — the results table places the second spring balance's 4 N upward force at this position","askedInThisQuestion":false},{"letter":"80","meaning":"The 80 cm graduation on the metre stick scale","askedInThisQuestion":false},{"letter":"90","meaning":"The 90 cm graduation on the metre stick scale","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2024-ol-q6-c-fig", topicId: "phys-1-2", conceptId: "archimedes-principle",
+    section: "B", questionRef: "2024 OL Q6(c)",
+    stem: "Answer any eight of the following parts (a), (b), (c), etc.",
+    questionText: "Explain Archimedes' principle. The diagram on the right may help your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "upthrust = weight of the fluid displaced / upthrust 5 – 3 = 2 N, weight of fluid = 2 N", marks: 7, contextNote: "The single solidus / separates equally acceptable alternatives: either the general statement of the principle, or the numerical demonstration read off the diagram (5 N in air, 3 N immersed, 2 N of displaced water). Scheme also notes [accept partial answer for 4]." },
+    ],
+    figure: {
+          "candId": "physics-2024-OL-paper-p05-i0",
+          "src": "/exam-figures/physics/markbank/physics-2024-OL-paper-p05-i0.png",
+          "srcHash": "f64538789b5d7706218f8f75d25624e3",
+          "alt": "Left two-thirds is question prose (parts (a) to (d) of Q6). Right third carries a greyscale drawing of an Archimedes'-principle demonstration, shown as two side-by-side set-ups. In the left set-up a round dial spring balance (Newton meter) hangs at the top with the label '5 N' beside it; a short chain runs down from its hook to a small tapered weight hanging freely in air; below and to the left sits a tall grey beaker/overflow can with a spout on its right side, and a small shallow empty dish stands beside the can. In the right set-up a second round dial spring balance is labelled '3 N'; its chain runs down and the same tapered weight now hangs INSIDE the can, which is filled with shaded liquid up to the spout; a small dish sits beside that can, and a black arrow runs from the label '2 N of water' down to that dish. Both cans, both balances, the weight and the dish are fully inside the crop.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "5 N",
+                "3 N",
+                "2 N of water"
+          ]
+    },
+    labelKey: [{"letter":"5 N","meaning":"The spring-balance reading with the object hanging in air — the object's weight is 5 N","askedInThisQuestion":false},{"letter":"3 N","meaning":"The spring-balance reading with the same object fully immersed in the vessel of water — its apparent weight is 3 N","askedInThisQuestion":false},{"letter":"2 N of water","meaning":"The water displaced by the immersed object, collected in the small dish — it weighs 2 N","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2024-ol-q8-vi-fig", topicId: "phys-2-3", conceptId: "concave-mirror-image-orientation",
+    section: "B", questionRef: "2024 OL Q8(vi)",
+    stem: "Light is also reflected from curved mirrors. The picture on the right shows images in a concave mirror.",
+    questionText: "Explain why the image of person A in the picture on the right is upright but the image of person B is upside down.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "person A is upright because they are inside the focal point of the mirror / person B is inverted because they are outside the focal point of the mirror", marks: 6, contextNote: "The single solidus / separates equally acceptable alternatives — explaining either person correctly earns the marks. Scheme also notes [accept partial answer for 3]." },
+    ],
+    figure: {
+          "candId": "physics-2024-OL-paper-p07-i2",
+          "src": "/exam-figures/physics/markbank/physics-2024-OL-paper-p07-i2.png",
+          "srcHash": "fa5fb32a29b318f1bf9323c49b72b722",
+          "alt": "Left side is question prose for Q8(vi) to (vii). Right side is a black-and-white photograph of a large circular concave mirror mounted flush in a dark wall panel, in what looks like a museum or science centre. Standing close in front of the mirror, seen from behind, is a girl in a horizontally striped long-sleeved top and light shorts; a bold white capital 'A' is printed on the photograph just above her shoulder. Filling the right-hand side of the mirror is a large upright reflected head and shoulders of a dark-haired child looking back out. In the upper part of the mirror the reflected ceiling, hanging drapes and a lit display case appear inverted. To the left of the mirror, outside it, a person in a checked shirt stands side-on facing right with one arm stretched out towards the wall; a bold white capital 'B' is printed beside that person's head. The photograph is fully inside the crop.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"The person standing close to the concave mirror; the picture shows their image in the mirror upright","askedInThisQuestion":true},{"letter":"B","meaning":"The person standing further back from the concave mirror; the picture shows their image in the mirror upside down","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2024-ol-q11-iii-fig", topicId: "phys-3-3", conceptId: "mains-plug-wiring",
+    section: "B", questionRef: "2024 OL Q11(iii)",
+    stem: "Electric current is the movement of charged particles through a conductor.",
+    questionText: "The diagram on the right shows the parts of an electrical plug. Name the wires labelled A and B.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A = earth wire", marks: 3, contextNote: "Scheme also notes [accept partial answer for 3] across the pair." },
+    { id: "r-2", kind: "point", verbatim: "B = live wire", marks: 3 },
+    ],
+    figure: {
+          "candId": "physics-2024-OL-paper-p10-i0",
+          "src": "/exam-figures/physics/markbank/physics-2024-OL-paper-p10-i0.png",
+          "srcHash": "7070b7aad28de06ce8e9bce2593c6f36",
+          "alt": "Left side is the Q11 stem and parts (i) to (iii) in print. Right side is a line diagram of the inside of a three-pin mains plug with its cover removed, seen face-on. The rounded triangular plug body is drawn in outline with the three pins shown as two solid black rectangles/circles at the bottom corners and the larger earth pin at the top. Inside, three insulated wires run up from a cable that enters at the bottom, pass under a screwed-down cable grip, and fan out to three screw terminals. A cylindrical cartridge fuse sits in a holder on the right of the body. Six leader lines run to labels around the drawing: bold 'A' at the top left points to the wire going to the top (earth) terminal; 'neutral' on the left points to the wire going to the left-hand terminal; 'fuse' on the right points to the cartridge; bold 'B' on the right points to the wire running to the terminal beside the fuse; 'cable grip' at the bottom left points to the screwed clamp; 'cable' at the bottom right points to the sheathed cable emerging below the plug. All labels, leader lines and the whole plug outline are inside the crop.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "neutral",
+                "fuse",
+                "cable",
+                "cable grip"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"The earth wire — the wire running to the top pin of the plug","askedInThisQuestion":true},{"letter":"B","meaning":"The live wire — the wire connected through the fuse to the live pin","askedInThisQuestion":true},{"letter":"neutral","meaning":"Printed label for the neutral wire, connected to the left-hand pin","askedInThisQuestion":false},{"letter":"fuse","meaning":"Printed label for the cartridge fuse fitted in the live side of the plug","askedInThisQuestion":false},{"letter":"cable","meaning":"Printed label for the flex cable carrying the three wires into the plug","askedInThisQuestion":false},{"letter":"cable grip","meaning":"Printed label for the clamp that grips the cable where it enters the plug","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2025-ol-q6a-fig", topicId: "phys-1-2", conceptId: "moment-of-a-force",
+    section: "B", questionRef: "2025 OL Q6(a)",
+    stem: "Answer any eight of the following parts (a), (b), (c), etc.",
+    questionText: "The diagram shows a force of 50 N applied to a wrench. Calculate the moment of the force about the fulcrum at the centre of the nut.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "moment = 7.5 N m", marks: 7, contextNote: "Scheme tariff [7]; scheme adds '[accept partial answer for 4]'. Q6 instructs 'Answer any eight of the following parts' at (8 x 7), so each part is worth 7 marks." },
+    ],
+    figure: {
+          "candId": "physics-2025-OL-paper-p06-i1",
+          "src": "/exam-figures/physics/markbank/physics-2025-OL-paper-p06-i1.png",
+          "srcHash": "0c7e441e1674ca6032ced5ea890b30a0",
+          "alt": "On the left, the opening of Question 6 ('Answer any eight of the following parts') with parts (a) to (d) in prose. On the right is the figure for part (a): a grey shaded 3-D clip-art drawing of an adjustable wrench (spanner) lying horizontally, seen from above/side. Its adjustable jaws are at the left end and grip a hexagonal nut; the long straight handle runs off to the right and ends in a small round hole. A short vertical arrow points straight down onto the far right end of the handle, and the text above it reads 'force applied = 50 N'. Beneath the wrench a double-headed horizontal arrow spans from the nut at the left to the end of the handle at the right, labelled 'distance = 15 cm'.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "force applied = 50 N",
+                "distance = 15 cm"
+          ]
+    },
+    labelKey: [{"letter":"force applied = 50 N","meaning":"The 50 N force applied to the end of the wrench handle, shown by the downward arrow","askedInThisQuestion":true},{"letter":"distance = 15 cm","meaning":"The distance from the fulcrum at the centre of the nut to the point where the force is applied — this value appears only on the diagram, not in the question prose","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2025-ol-q10vii-fig", topicId: "phys-3-6", conceptId: "induced-current-moving-magnet",
+    section: "B", questionRef: "2025 OL Q10(vii)",
+    stem: "An electrical generator is based on the principle of electromagnetic induction. It can be demonstrated by moving a magnet towards a coil as shown.",
+    questionText: "What is observed on the meter when the magnet is moved in and out of the coil?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "non-zero reading on meter", marks: 4, contextNote: "Scheme tariff [4]; scheme adds '[accept partial answer for 2]'." },
+    ],
+    figure: {
+          "candId": "physics-2025-OL-paper-p10-i0",
+          "src": "/exam-figures/physics/markbank/physics-2025-OL-paper-p10-i0.png",
+          "srcHash": "ff1e89e104cab1fed177dd5919f2deac",
+          "alt": "A simple line diagram of the electromagnetic-induction demonstration, sitting under one clipped line of prose ('...demonstrated by moving a magnet towards a coil as shown.'). On the left is a long thin outlined rectangle representing a bar magnet, with 'S' printed inside its left-hand end and 'N' inside its right-hand end. A short solid horizontal arrow points from the magnet's N end towards the right. To the right of that arrow is a tall rectangular circuit loop: along its top edge the wire is drawn as five open loops (the coil). The two ends of the coil continue down the left and right sides of the rectangle and along the bottom, where they meet a small circle containing an upward-pointing arrow — the meter. The magnet is outside and to the left of the coil, pointing into it.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "S",
+                "N"
+          ]
+    },
+    labelKey: [{"letter":"S","meaning":"The south pole of the bar magnet (the end facing away from the coil)","askedInThisQuestion":false},{"letter":"N","meaning":"The north pole of the bar magnet — the end facing the coil, with an arrow showing the magnet being moved towards the coil","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2025-ol-q10viii-fig", topicId: "phys-3-6", conceptId: "no-induction-stationary-magnet",
+    section: "B", questionRef: "2025 OL Q10(viii)",
+    stem: "An electrical generator is based on the principle of electromagnetic induction. It can be demonstrated by moving a magnet towards a coil as shown.",
+    questionText: "What is observed on the meter when the magnet is stationary within the coil?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "constant 0 A reading", marks: 4, contextNote: "Scheme tariff [4]; scheme adds '[accept partial answer for 2]'." },
+    ],
+    figure: {
+          "candId": "physics-2025-OL-paper-p10-i0",
+          "src": "/exam-figures/physics/markbank/physics-2025-OL-paper-p10-i0.png",
+          "srcHash": "ff1e89e104cab1fed177dd5919f2deac",
+          "alt": "A simple line diagram of the electromagnetic-induction demonstration, sitting under one clipped line of prose ('...demonstrated by moving a magnet towards a coil as shown.'). On the left is a long thin outlined rectangle representing a bar magnet, with 'S' printed inside its left-hand end and 'N' inside its right-hand end. A short solid horizontal arrow points from the magnet's N end towards the right. To the right of that arrow is a tall rectangular circuit loop: along its top edge the wire is drawn as five open loops (the coil). The two ends of the coil continue down the left and right sides of the rectangle and along the bottom, where they meet a small circle containing an upward-pointing arrow — the meter. The magnet is outside and to the left of the coil, pointing into it.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "S",
+                "N"
+          ]
+    },
+    labelKey: [{"letter":"S","meaning":"The south pole of the bar magnet (the end facing away from the coil)","askedInThisQuestion":false},{"letter":"N","meaning":"The north pole of the bar magnet — the end facing the coil, with an arrow showing the magnet being moved towards the coil","askedInThisQuestion":false}],
   } as SecCard,
 ];
