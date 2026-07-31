@@ -52,10 +52,21 @@ const SUCCESS_TEXT = '#1F5F3E';
 /** Accent means "this is the action / you are here". Never "correct". */
 const ACCENT = '#F26B1F';
 const PAPER = '#f0f0f0';
+/** A rule, not a fill: enough to bound a figure without adding a surface. */
+const HAIRLINE_2 = '#e0ddd8';
 /** One work surface for the whole tool: 620 question + 32 gutter + 440 scheme. */
 const SURFACE = 1092;
 const QUESTION_W = 620;
 const SCHEME_W = 440;
+/**
+ * The single-column width between the phone layout and the split.
+ *
+ * The whole design rests on ~60 characters per line, and an uncapped column
+ * blows straight past it: at 1100px the question was setting 110 characters,
+ * wider than the 80 WCAG caps at and wider than the SEC's own printed paper.
+ * One column, same measure, at every width.
+ */
+const COLUMN = 664;
 
 const SERIF = "'Source Serif 4', Georgia, serif";
 const SANS = "'DM Sans', system-ui, sans-serif";
@@ -392,7 +403,10 @@ const MarkRowView: React.FC<{
           animate={reduced ? {} : { scale: claimed ? 1 : 0.85 }}
           transition={{ type: 'spring', stiffness: 420, damping: 26 }}
           style={{
-            width: 18, height: 18, borderRadius: '50%', marginTop: 1,
+            // A circle is a RADIO — one of many. Every marking point here is
+            // claimed independently, so the control is a checkbox: rounded
+            // square, not round.
+            width: 18, height: 18, borderRadius: 5, marginTop: 1,
             background: claimed ? SUCCESS : 'transparent',
             border: claimed ? 'none' : `1.5px solid ${MUTED_BORDER}`,
             display: 'inline-flex', alignItems: 'center', justifyContent: 'center', flex: 'none',
@@ -453,8 +467,8 @@ const MarkRowView: React.FC<{
           onClick={() => onClaim(id, 'synonym')}
           style={{
             marginTop: 4, marginLeft: 42, background: 'none', border: 'none', padding: 0,
-            font: `600 11.5px/1.5 ${SANS}`, color: SUCCESS_TEXT,
-            borderBottom: `1px solid ${SUCCESS}`, cursor: 'pointer',
+            font: `600 11.5px/1.5 ${SANS}`, color: INK_2,
+            borderBottom: `1px solid ${MUTED_BORDER}`, cursor: 'pointer',
           }}
         >
           I had something like this
@@ -471,32 +485,92 @@ const MarkRowView: React.FC<{
 
 /* ------------------------------------------------------------ label key ----- */
 
-const LabelKeyPanel: React.FC<{ keys: LabelKey[] }> = ({ keys }) => (
+/**
+ * What the letters on the diagram mean — for the ones this question does NOT ask
+ * about.
+ *
+ * It used to print every letter, which on a labelling card meant the answer
+ * appeared twice: "A — Oesophagus" as a marking point the student is asked to
+ * self-mark, and then "A — Oesophagus" again in the panel directly beneath it.
+ * The panel gave away the rows it sat under. It earns its place only where the
+ * diagram carries letters the question leaves alone, and renders nothing when it
+ * has nothing to add.
+ */
+const LabelKeyPanel: React.FC<{ keys: LabelKey[] }> = ({ keys }) => {
+  const extra = keys.filter(k => !k.askedInThisQuestion);
+  if (!extra.length) return null;
+  return (
   <div style={{ marginTop: 12, padding: '11px 13px', borderRadius: 10, background: PLATE }}>
     <span style={{
       display: 'block', marginBottom: 6, font: `700 9px/1.6 ${SANS}`,
       letterSpacing: '.11em', textTransform: 'uppercase', color: LABEL,
     }}>
-      What every label means
+      Also on the diagram
     </span>
     <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
-      {keys.map(k => (
+      {extra.map(k => (
         <span
           key={k.letter}
           style={{
             font: `500 12px/1.5 ${SANS}`, background: '#FFFFFF', borderRadius: 6,
-            padding: '3px 9px', color: k.askedInThisQuestion ? INK_2 : MUTED,
+            padding: '3px 9px', color: MUTED,
           }}
         >
           <strong style={{ fontFamily: MONO, fontSize: 11.5 }}>{k.letter}</strong> — {k.meaning}
-          {!k.askedInThisQuestion && (
-            <span style={{ marginLeft: 5, font: `400 10px/1 ${SANS}`, color: LABEL }}>not asked</span>
-          )}
         </span>
       ))}
     </div>
   </div>
-);
+  );
+};
+
+
+/**
+ * The question, set the way the paper sets it.
+ *
+ * SEC papers hang their part labels — (i), (ii), (a) — in the left margin so the
+ * prose of each part starts on a common line, and a student's eye can find "(ii)"
+ * without reading. Run inline, as a single paragraph, the labels disappear into
+ * the sentence and a two-part question reads as one long instruction.
+ *
+ * This splits on labels only where the paper actually printed them; a question
+ * with no parts renders as one block, unchanged.
+ */
+const PART = /\s*(\((?:[ivx]+|[a-h])\))\s+/gi;
+
+const QuestionText: React.FC<{ text: string }> = ({ text }) => {
+  const pieces = text.split(PART).filter(s => s !== undefined && s !== '');
+  // No label at the head means no hanging: one block, as before.
+  if (pieces.length < 3 || !/^\([ivx]+\)$|^\([a-h]\)$/i.test(pieces[0])) {
+    return (
+      <p style={{ margin: '9px 0 0', font: `500 20px/1.5 ${SERIF}`, color: INK }}>{text}</p>
+    );
+  }
+  const parts: { label: string; body: string }[] = [];
+  for (let i = 0; i < pieces.length - 1; i += 2) {
+    parts.push({ label: pieces[i], body: (pieces[i + 1] ?? '').trim() });
+  }
+  return (
+    <div style={{ margin: '9px 0 0' }}>
+      {parts.map(part => (
+        <p
+          key={part.label}
+          style={{
+            display: 'flex', gap: 12, margin: '0 0 8px',
+            font: `500 20px/1.5 ${SERIF}`, color: INK,
+          }}
+        >
+          <span style={{
+            flex: '0 0 34px', font: `500 15px/1.95 ${MONO}`, color: MUTED,
+          }}>
+            {part.label}
+          </span>
+          <span>{part.body}</span>
+        </p>
+      ))}
+    </div>
+  );
+};
 
 /* ------------------------------------------------------------ the screen ---- */
 
@@ -707,7 +781,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         background: '#FFFFFF', borderBottom: `2px solid ${INK}`,
       }}>
         <div style={{
-          maxWidth: SURFACE, margin: '0 auto', padding: '0 16px',
+          maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto', padding: '0 16px',
           height: 56, display: 'flex', alignItems: 'center', gap: 16,
         }}>
           <button
@@ -756,7 +830,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
           moment of reveal — re-laying out exactly when the student starts reading
           evidence is the worst possible time to move anything. */}
       <div style={{
-        maxWidth: SURFACE, margin: '0 auto', padding: '34px 16px 0',
+        maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto', padding: '34px 16px 0',
         display: 'flex', alignItems: 'flex-start',
         gap: wide ? 32 : 0, flexDirection: wide ? 'row' : 'column',
       }}>
@@ -778,8 +852,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                 {subjectLabel} · {levelLabel} · {card.year} · {card.questionRef.replace(/^\d{4}\s+(HL|OL)\s+/, '')}
               </span>
               <span style={{
-                font: `700 11.5px/1 ${MONO}`, background: PLATE, color: INK,
-                borderRadius: 6, padding: '4px 7px', fontVariantNumeric: 'tabular-nums', whiteSpace: 'nowrap',
+                font: `700 11.5px/1 ${MONO}`, background: INK, color: '#FFFFFF',
+                borderRadius: 6, padding: '5px 8px', fontVariantNumeric: 'tabular-nums', whiteSpace: 'nowrap',
               }}>
                 {card.totalMarks}m
               </span>
@@ -789,19 +863,20 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               <p style={{ margin: '10px 0 0', font: `400 14px/1.55 ${SANS}`, color: MUTED }}>{card.stem}</p>
             )}
 
-            <p style={{ margin: '9px 0 0', font: `500 19px/1.45 ${SERIF}`, color: INK }}>
-              {card.questionText}
-            </p>
+            <QuestionText text={card.questionText} />
 
             {figure && (
-              <figure style={{ margin: '13px 0 0' }}>
-                <div style={{ background: PLATE, borderRadius: 12, padding: 10, textAlign: 'center' }}>
+              <figure style={{ margin: '14px 0 0' }}>
+                <div style={{
+                  border: `1px solid ${HAIRLINE_2}`, borderRadius: 10,
+                  padding: 8, textAlign: 'center', background: '#FFFFFF',
+                }}>
                   <img
                     src={figure.src} alt={figure.alt}
-                    style={{ maxWidth: '100%', maxHeight: 420, objectFit: 'contain', display: 'inline-block' }}
+                    style={{ maxWidth: '100%', maxHeight: 340, objectFit: 'contain', display: 'inline-block' }}
                   />
                 </div>
-                <figcaption style={{ marginTop: 6, font: `400 10.5px/1.4 ${SANS}`, color: LABEL }}>
+                <figcaption style={{ marginTop: 7, font: `400 10.5px/1.4 ${SANS}`, color: LABEL }}>
                   {figure.attribution}
                 </figcaption>
               </figure>
@@ -860,8 +935,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                       type="button" onClick={claimAll}
                       style={{
                         background: 'none', border: 'none', padding: 0, cursor: 'pointer',
-                        font: `600 11.5px/1.5 ${SANS}`, color: SUCCESS_TEXT,
-                        borderBottom: `1px solid ${SUCCESS}`,
+                        font: `600 11.5px/1.5 ${SANS}`, color: INK_2,
+                        borderBottom: `1px solid ${MUTED_BORDER}`,
                       }}
                     >
                       I had them all
@@ -943,7 +1018,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               style={{ overflow: 'hidden' }}
             >
               <p style={{
-                maxWidth: SURFACE, margin: '0 auto', padding: '12px 16px 0',
+                maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto', padding: '12px 16px 0',
                 font: `500 13.5px/1.45 ${SANS}`, color: SUCCESS_TEXT,
               }}>
                 {whisper}
@@ -956,7 +1031,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             at the moment the student's attention moves to the marking points. */}
         {!revealed && (
           <div style={{ padding: `16px 16px calc(16px + var(--sab, 0px))` }}>
-            <div style={{ maxWidth: SURFACE, margin: '0 auto' }}>
+            <div style={{ maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto' }}>
               <button
                 type="button"
                 autoFocus
@@ -980,7 +1055,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
           saturated colour goes muddy and reads as generated UI. */}
       {revealed && (
         <div style={{ padding: `12px 16px calc(12px + var(--sab, 0px))` }}>
-          <div style={{ maxWidth: SURFACE, margin: '0 auto' }}>
+          <div style={{ maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto' }}>
             {showsRowMarks(card) && (
               /* Never "you left 6 marks behind". Same information, but the
                  student is not the subject of a failure verb — and naming the
@@ -1027,7 +1102,10 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                     <br />
                     <em style={{ color: MUTED }}>You decide. Tap any of the three.</em>
                   </p>
-                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 8 }}>
+                  {/* Capped and left-aligned under the copy that explains them.
+                      Stretching three two-word labels across 1092px gives each a
+                      360px hit area and makes the rail read as a toolbar. */}
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 168px))', gap: 8 }}>
                     {(['missed', 'shaky', 'got'] as MarkBankGrade[]).map(g => {
                       const isSuggested = g === suggested;
                       return (

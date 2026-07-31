@@ -407,11 +407,36 @@ describe('a diagram card always decodes its figure', () => {
     };
     renderSession([diagram], { 'bio-2025-hl-q6-ab': seen });
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
-    const key = screen.getByText(/What every label means/i).parentElement!;
+    const key = screen.getByText(/Also on the diagram/i).parentElement!;
+    // C is on the diagram but this question never asks about it, so the panel
+    // explains it — that is the whole reason the panel exists.
     expect(within(key).getByText(/Small intestine/)).toBeInTheDocument();
-    expect(within(key).getByText(/not asked/i)).toBeInTheDocument();
+    // A and B ARE asked, and they are the marking points the student is about to
+    // self-mark. Repeating them here printed the answer twice, directly beneath
+    // itself, and gave away the rows the panel sits under.
+    expect(within(key).queryByText(/Oesophagus/)).toBeNull();
+    expect(within(key).queryByText(/Stomach/)).toBeNull();
     // The figure carries its attribution.
     expect(screen.getByAltText(/Digestive tract/)).toBeInTheDocument();
+  });
+
+  test('the label panel disappears when it has nothing the question left alone', () => {
+    const diagram: SecDiagramCard = {
+      ...card(),
+      kind: 'diagram',
+      figure: {
+        candId: 'cand_2', src: '/exam-figures/biology/y.png', srcHash: 'h2',
+        alt: 'Two lettered structures',
+        lettersVisible: ['A', 'B'], attribution: 'SEC Biology 2025 HL Q6',
+      },
+      labelKey: [
+        { letter: 'A', meaning: 'Oesophagus', askedInThisQuestion: true },
+        { letter: 'B', meaning: 'Stomach', askedInThisQuestion: true },
+      ],
+    };
+    renderSession([diagram], { 'bio-2025-hl-q6-ab': seen });
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    expect(screen.queryByText(/Also on the diagram/i)).toBeNull();
   });
 });
 

@@ -59,6 +59,8 @@ const RAIL = 280;
 const GUTTER = 32;
 const LIST = 780;
 const TWO_PANE = 1200;
+/** Single-column width between the phone layout and the rail-plus-list split. */
+const COLUMN = 664;
 
 type Screen =
   | { name: 'board' }
@@ -385,7 +387,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
   return (
     <div style={{ fontFamily: SANS, padding: '28px 0 72px' }}>
       <div style={{
-        maxWidth: SURFACE, margin: '0 auto', padding: '0 16px',
+        maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto', padding: '0 16px',
         display: 'flex', alignItems: 'flex-start', gap: wide ? GUTTER : 0,
         flexDirection: wide ? 'row' : 'column',
       }}>
@@ -401,7 +403,13 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
           </h2>
           <Eyebrow>{level === 'higher' ? 'Higher level' : 'Ordinary level'} · redeveloped specification</Eyebrow>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 8, margin: '16px 0 0' }}>
+          {/* alignItems, or the pills stretch: a flex column stretches its
+              children by default, which overrides the Segment's own inline-flex
+              and leaves the options huddled at the left end of a 664px pill. */}
+          <div style={{
+            display: 'flex', flexDirection: 'column', alignItems: 'flex-start',
+            gap: 8, margin: '16px 0 0',
+          }}>
             <Segment
               options={SUBJECTS.map(s => ({ value: s.id, label: s.title, empty: deckSize(s.id, level) === 0 }))}
               value={subjectId}
@@ -447,29 +455,21 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
                 autoFocus
                 onClick={() => startSession()}
                 style={{
-                  width: '100%', marginTop: 14, padding: '15px 20px', borderRadius: 100,
-                  border: 'none', cursor: 'pointer',
-                  background: ACCENT, color: '#fff', font: `650 15px/1 ${SANS}`,
-                  borderBottom: '3px solid #B54D14', boxShadow: '0 4px 0 #B54D14',
+                  width: '100%', maxWidth: wide ? '100%' : 320,
+                  marginTop: 14, padding: '15px 20px', borderRadius: 100, cursor: 'pointer',
+                  font: `650 15px/1 ${SANS}`,
+                  ...(dueCount > 0
+                    ? {
+                      border: 'none', background: ACCENT, color: '#fff',
+                      borderBottom: '3px solid #B54D14', boxShadow: '0 4px 0 #B54D14',
+                    }
+                    : {
+                      border: `2px solid ${INK}`, background: '#fff', color: INK,
+                    }),
                 }}
               >
                 {dueCount > 0 ? `Start today's ${Math.min(dueCount, SESSION_SIZE)}` : 'Practise anyway'}
               </button>
-
-              {/* Jump links: five strands, so the list never needs a search box. */}
-              {wide && (
-                <nav style={{ display: 'flex', flexDirection: 'column', gap: 5, marginTop: 20 }}>
-                  {strands.map(s => (
-                    <a
-                      key={s.id}
-                      href={`#strand-${s.id}`}
-                      style={{ font: `400 13.5px/1.5 ${SANS}`, color: MUTED, textDecoration: 'none' }}
-                    >
-                      {s.title}
-                    </a>
-                  ))}
-                </nav>
-              )}
 
               {cards.length > 0 && (
                 <p style={{ margin: '20px 0 0', font: `400 11.5px/1.5 ${SANS}`, color: LABEL }}>
@@ -491,8 +491,8 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
               <section key={strand.id} id={`strand-${strand.id}`}>
                 <div style={{
                   height: 44, display: 'flex', alignItems: 'center', gap: 9,
-                  padding: '0 18px', background: '#fbfaf8',
-                  borderTop: si === 0 ? 'none' : `1px solid ${HAIRLINE}`,
+                  padding: '0 18px', background: '#f4f2ee',
+                  borderTop: si === 0 ? 'none' : `2px solid ${INK}`,
                   borderBottom: `1px solid ${HAIRLINE}`,
                 }}>
                   <span style={{ font: `600 14px/1 ${SERIF}`, color: INK }}>{strand.title}</span>
@@ -546,7 +546,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
                               twenty cards cannot be compared, which is the one
                               thing a marks-based progress model exists to do. */}
                           <span style={{ width: 120, flex: '0 0 auto' }}>
-                            {built && <MarkBar secure={tSecure} met={tMet} total={total} />}
+                            {built && tMet > 0 && <MarkBar secure={tSecure} met={tMet} total={total} />}
                           </span>
 
                           <span style={{
@@ -581,7 +581,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
       </div>
 
       {!loaded && uid && (
-        <p style={{ maxWidth: SURFACE, margin: '14px auto 0', padding: '0 16px', font: `400 11.5px/1.4 ${SANS}`, color: LABEL }}>
+        <p style={{ maxWidth: wide ? SURFACE : COLUMN, margin: '14px auto 0', padding: '0 16px', font: `400 11.5px/1.4 ${SANS}`, color: LABEL }}>
           Syncing your deck…
         </p>
       )}
