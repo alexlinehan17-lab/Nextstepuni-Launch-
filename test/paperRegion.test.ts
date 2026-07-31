@@ -113,4 +113,25 @@ describe('paperRegionFor', () => {
     // crop-end span exceeds MAX_PAGES
     expect(paperRegionFor([qe('1', 1, 0.1, 0.9, 6, 0.5)], '1')).toBeNull();
   });
+
+  it('refuses an anchor that collapsed to the top of a page it shares with an earlier question', () => {
+    // lang_reading.py substituted 0.0 when it could not find a question's paper
+    // anchor. Q5 cannot start above Q2 on the same page, so its anchor is a
+    // failed lookup, not a position — cropping it would show Q1's tail.
+    // (Shape taken from 2014 Italian LC013ALP000EV page 3.)
+    const qs = [q('2', 3, 0.1259, 1), q('3', 3, 0.2789, 1), q('4', 3, 0.4373, 1), q('5', 3, 0, 1)];
+    expect(paperRegionFor(qs, '5')).toBeNull();
+    // its neighbours on that page are untouched
+    expect(paperRegionFor(qs, '2')).not.toBeNull();
+    expect(paperRegionFor(qs, '3')).not.toBeNull();
+  });
+
+  it('still crops a question that legitimately opens a page', () => {
+    // Same 0.0, but nothing lower-numbered shares the page — a real
+    // continuation-page opening, which must keep its crop.
+    const qs = [q('1', 2, 0.4, 1), q('2', 3, 0, 1), q('3', 3, 0.5, 1)];
+    const r = paperRegionFor(qs, '2')!;
+    expect(r).not.toBeNull();
+    expect(r[0].p).toBe(3);
+  });
 });

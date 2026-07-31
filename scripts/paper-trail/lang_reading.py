@@ -107,7 +107,16 @@ def main():
             py = float(q["paperY"])
         else:
             py = find_y(pd[q["paperPage"] - 1], q.get("paperAnchor", ""))
-            py = 0.0 if py is None else py
+            if py is None:
+                # A miss used to become 0.0 — the top of the page — which reads
+                # downstream as a confident "the question starts here" and hands
+                # paperRegion.ts a crop of whatever precedes it. Drop the
+                # question instead, exactly as the scheme side above already
+                # does for its own anchor: not knowing where a question starts
+                # is not the same as it starting at the top.
+                report.append(f"!! {q['label']}: paper anchor "
+                              f"{q.get('paperAnchor', '')!r} NOT FOUND on p{q['paperPage']}")
+                continue
         qout.append({"n": str(i), "label": q["label"], "pP": q["paperPage"],
                      "pY": [round(py, 4), 1.0], "region": region, "mode": "crop", "conf": 1.0})
         # report text actually inside the first segment

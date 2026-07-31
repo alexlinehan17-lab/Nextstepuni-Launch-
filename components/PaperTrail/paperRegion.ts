@@ -45,6 +45,18 @@ export function paperRegionFor(
   const q = ordered[i];
   if (!q.pP || q.pP < 1 || !Array.isArray(q.pY)) return null;
 
+  // A COLLAPSED anchor is not an anchor. lang_reading.py resolved a question's
+  // paper position by searching the page for an anchor string, and on a miss it
+  // substituted 0 — the top of the page — which reads downstream as a confident
+  // "this question starts here". The tell is arithmetic: this question sits at
+  // the very top of a page that also carries a LOWER-numbered question, which in
+  // print order cannot happen. Cropping it hands the student a sliver of the
+  // previous question's tail (2014 Italian Q5 shows Q1's last line), so refuse,
+  // and let the caller fall back to opening the full paper.
+  if (q.pY[0] === 0 && ordered.some(o => o.pP === q.pP && Number(o.n) < Number(q.n))) {
+    return null;
+  }
+
   const y0 = Math.max(0, Math.min(1, q.pY[0]) - TOP_PAD);
 
   // Explicit crop-END (section-restart "island" papers): the question's crop
