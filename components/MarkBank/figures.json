@@ -2303,5 +2303,1417 @@
   "year": 2025,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2022-OL-paper-p02-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2022-OL-paper-p02-i0.png",
+  "md5": "023267b440dc884a2c6a61efa310a4b9",
+  "alt": "Apparatus for the oxidation of phenylmethanol, drawn on the right of the crop. A conical (Erlenmeyer) flask containing a pool of very dark liquid stands inside a rectangular glass tank of water, and the tank sits on top of an electric hotplate unit drawn with three round control knobs (the two right-hand knobs have radiating 'on' marks), a dark strip along its top edge and four small feet. Two leader lines run from the label 'phenylmethanol, water, KMnO4 and base' down into the dark liquid in the flask; a leader from 'water bath' points to the water in the tank; a leader from 'hotplate' points up to the hotplate body. The left of the crop is printed question text (describe the appearance of phenylmethanol and of benzoic acid; the reagents concentrated HCl, Na2CO3 and Na2SO3).",
+  "lettersVisible": [
+   "phenylmethanol, water, KMnO4 and base",
+   "water bath",
+   "hotplate"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "phenylmethanol, water, KMnO4 and base",
+    "meaning": "The reaction mixture inside the conical flask; the paper states the diagram shows apparatus and chemicals for the oxidation of phenylmethanol to benzoic acid using KMnO4 under basic conditions, and part (iii) refers to 'the base added to the conical flask shown in the diagram above'."
+   },
+   {
+    "letter": "water bath",
+    "meaning": "The tank of water the conical flask stands in (leader line points to the water in the tank)."
+   },
+   {
+    "letter": "hotplate",
+    "meaning": "The electric heating unit beneath the water bath (leader line points to its front panel)."
+   }
+  ],
+  "questionRef": "2022 OL Q1(b)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2022-OL-paper-p02-i1": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2022-OL-paper-p02-i1.png",
+  "md5": "503cd13d85fd47ef747c2259087e4165",
+  "alt": "Apparatus for preparing ethene by dehydrating ethanol, drawn on the right of the crop. A hard-glass test tube lies horizontally: its rounded closed end at the left is packed with a scribbled/hatched wad (mineral or glass wool), a small mound of granular solid sits on the floor of the tube at its midpoint, and a grey rubber bung closes the open right-hand end with a delivery tube passing through it that runs to the right and then bends downward, ending in mid-air with no collection vessel drawn. Directly beneath the mound a Bunsen burner heats the tube, its flame drawn as a dashed outline; the burner has a barrel with an air-hole collar near the top, a gas inlet spigot on the left of its base and a wide flared base. Nothing on the diagram carries a printed label. The left of the crop is the printed Q1(a) text about preparing ethene (C2H4) by dehydrating ethanol using a catalyst.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q1(a)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2022-OL-paper-p03-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2022-OL-paper-p03-i0.png",
+  "md5": "505cb1859363064bf6a1da3202e968f6",
+  "alt": "A volumetric flask drawn in outline on the right: pear-shaped body with a flat base, a long narrow neck carrying a calibration ring part-way up, and a ground-glass stopper on top. '250 cm3' is printed in large outline lettering across the body. The left two thirds of the crop is the printed text of question 2 - preparing a 0.05 M sodium carbonate solution - with parts (a), (b) and (c)(i)-(ii).",
+  "lettersVisible": [
+   "250 cm3"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "250 cm3",
+    "meaning": "The capacity of the volumetric flask; the stem states the solution was transferred to a 250 cm3 volumetric flask and then made up to the mark with deionised water."
+   }
+  ],
+  "questionRef": "2022 OL Q2",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2022-OL-paper-p03-i1": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2022-OL-paper-p03-i1.png",
+  "md5": "308c1997287fca16ec0b25952095c4ed",
+  "alt": "A plain conical (Erlenmeyer) flask drawn in outline on the right - flat base, sloping sides, short straight neck with a lipped rim, no contents, no graduations and no labels. The left two thirds of the crop is the printed text of question 2 parts (d) (how the conical flask was prepared, 6 marks), (e)(i)-(ii) (indicator and end-point colour change, 9 marks) and (f) (calculate the concentration of the HCl solution from 20.1 cm3 average titre, 9 marks).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q2",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2022-OL-paper-p04-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2022-OL-paper-p04-i0.png",
+  "md5": "fa58cff508d7ef9036b2dd649e6ba65b",
+  "alt": "Apparatus for measuring the rate of decomposition of hydrogen peroxide. A conical flask closed with a grey rubber stopper carries a glass delivery tube through the stopper; inside the flask a shallow layer of liquid lies over a dark speckled granular solid on the flask floor, and the label 'H2O2 solution and catalyst' points to that solid. From the stopper the tube bends over and becomes 'flexible tubing' (labelled) which slopes down into a rectangular trough of water, curves along the bottom of the trough and delivers gas up under a graduated measuring cylinder. The cylinder stands on a small support block in the trough with its wide flat base uppermost, i.e. inverted, graduation scale running down its side; the lower part of the cylinder is shaded to show water, small bubbles are drawn rising inside it, and a leader from the label 'O2' points to the clear gas space at the top. Drawn separately at the right is a digital timer: a grey rounded case with 'MIN' and 'SEC' above a display reading '00:00' and an oval 'START / STOP' button.",
+  "lettersVisible": [
+   "H2O2 solution and catalyst",
+   "flexible tubing",
+   "O2",
+   "MIN",
+   "SEC",
+   "00:00",
+   "START / STOP"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "H2O2 solution and catalyst",
+    "meaning": "The contents of the flask; the stem states the student measured 25 cm3 of the hydrogen peroxide solution into a flask and added a small quantity of a suitable catalyst."
+   },
+   {
+    "letter": "O2",
+    "meaning": "The oxygen gas collected; the stem states the student 'recorded the volume of oxygen collected at intervals over several minutes using the apparatus shown'."
+   },
+   {
+    "letter": "flexible tubing",
+    "meaning": "The tubing running from the flask's delivery tube down into the trough to the collecting cylinder (leader line points to it)."
+   }
+  ],
+  "questionRef": "2022 OL Q3",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2022-OL-paper-p05-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2022-OL-paper-p05-i0.png",
+  "md5": "b0eb4a0ab1b2d534a0e8e98af27222cf",
+  "alt": "A greyscale photograph on the right of a globular Chinese porcelain jar with a short neck, standing on a plain grey studio background. It is decorated in the blue-and-white manner with a large coiled, scaly dragon among cloud and flame scrolls, a floral scroll band around the neck and a band of upright lotus-petal panels around the foot. The left of the crop is printed text: the tail of an earlier part ('Explain the underlined term.'), then Q4(i) about cobalt blue / cobalt(II) aluminate (CoAl2O4) used as a colouring agent in blue and white Chinese porcelain, then the start of Q4(j) about sherbet powder.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q4(i)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2022-OL-paper-p05-i1": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2022-OL-paper-p05-i1.png",
+  "md5": "be171bf6b882e57b85cad1c3d54fb40a",
+  "alt": "A greyscale photograph on the right showing the rear of a double-deck Transport for Ireland bus parked at a kerb, with cars visible on both sides and trees behind. Lettering readable on the bus: the 'TFI' roundel with 'TRANSPORT FOR IRELAND' on the upper-deck rear window; 'Bus Saor o Astaiochtai' above 'Zero Emission Bus' on the panel below; the fleet code 'HWD1' at the upper right; a wide black grille; a small diamond H2 gas badge at the right; then 'Cumhacht Hidrigin a usaideann an bus seo' above 'This bus is powered by Hydrogen'; below that a row of circled symbols reading H2 + O2 = (power on/off symbol) + H2O; and a registration plate '211-D-24708' on the rear bumper. The left of the crop is printed text: Q4(b) (formulae for potassium bromide and beryllium chloride), Q4(c) (hydrogen buses and electrolysis of water) and Q4(d) (equipment for measuring energy content of foods and fuels).",
+  "lettersVisible": [
+   "TFI",
+   "TRANSPORT FOR IRELAND",
+   "Bus Saor o Astaiochtai",
+   "Zero Emission Bus",
+   "HWD1",
+   "Cumhacht Hidrigin a usaideann an bus seo",
+   "This bus is powered by Hydrogen",
+   "H2 + O2 = (power symbol) + H2O",
+   "211-D-24708"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q4(c)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2022-OL-paper-p07-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2022-OL-paper-p07-i0.png",
+  "md5": "221bb6fcc54f8d368ed90122c7f1a152",
+  "alt": "Electron-arrangement (dot-and-cross style) diagram of an ammonia molecule. A large grey disc labelled N sits at the centre of two concentric rings. The inner ring carries two small round dots (one upper-left, one lower-right). The outer ring carries a pair of touching dots at the bottom - a lone pair - and intersects three smaller rings, each drawn around a grey disc labelled H, positioned above, to the left and to the right of the nitrogen. In each of the three overlap regions between the nitrogen's outer ring and a hydrogen's ring there is one small round dot and one star-shaped cross side by side, i.e. a shared pair per N-H bond.",
+  "lettersVisible": [
+   "N",
+   "H",
+   "H",
+   "H"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "N",
+    "meaning": "The nitrogen atom of the ammonia molecule; the paper says the diagram 'represents the arrangement of electrons in an ammonia (NH3) molecule' and part (i) asks about pairs of bonding electrons 'around the nitrogen atom'."
+   },
+   {
+    "letter": "H",
+    "meaning": "A hydrogen atom of the NH3 molecule (three are shown)."
+   }
+  ],
+  "questionRef": "2022 OL Q5(d)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2022-OL-paper-p12-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2022-OL-paper-p12-i0.png",
+  "md5": "cb0e66a093a1e55551b9b5b7239c820f",
+  "alt": "Black-and-white aerial photograph of an erupting volcano: a broad ash-covered cone with a dark, billowing column of ash and smoke rising from a vent near its summit and spreading sideways to the right, with paler steam beside and below it. The flanks of the cone show ripple-like flow lines and scattered blocks, and the top-left of the frame is rough, textured terrain. A single line of question text, 'the Canary Islands?', sits above the photograph.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q11(b)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2022-OL-paper-p14-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2022-OL-paper-p14-i0.png",
+  "md5": "7a1556bf4be803c3d4a8ba4efe67f00d",
+  "alt": "Greyscale photograph on the right of a bar of dark chocolate lying on a white background with its aluminium foil wrapper torn open and crumpled back around all four sides, the foil catching the light along its creases and folds. The left of the crop is printed text: the list of material-property terms (electrical conductivity, malleability, lustre, chemical inertness, melting point), part (i) 'Explain the terms malleability and lustre', part (ii) 'Select two of the five properties above that make aluminium a suitable material for wrapping food', and the start of part (iii) about addition polymers.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q11(d) part B",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2021-OL-paper-p02-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2021-OL-paper-p02-i0.png",
+  "md5": "418b0919d0f967844fea7fc17d4796de",
+  "alt": "Line-drawn laboratory apparatus for making and collecting a gas over water. On the left a dropping funnel with a tap sits in the neck of a conical flask; the funnel is labelled \"liquid A\" and grey lumps in the bottom of the flask are labelled \"calcium carbide\". A side-arm delivery tube leaves the flask bung, is labelled \"tube\", bends downwards and runs into a rectangular trough of \"water\", ending under the open mouth of an inverted graduated test-tube/gas jar that stands on a shelf in the trough. The gas already collected in the top of the inverted tube is labelled \"gas B\". Small circles in the trough show gas bubbles rising into the tube.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "liquid A = water (H2O) - stated in the 2021 OL marking scheme, Q1(a)(i)"
+   },
+   {
+    "letter": "B",
+    "meaning": "gas B = ethyne - stated in the 2021 OL marking scheme, Q1(a)(ii)"
+   }
+  ],
+  "questionRef": "2021 OL Q1",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2021-OL-paper-p03-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2021-OL-paper-p03-i0.png",
+  "md5": "7b5b4ee608691a7a0326f78aa83999c5",
+  "alt": "Left two thirds is the printed text of question 2 parts (a) and (b). Right third shows three drawn pieces of glassware standing side by side: a long thin pipette with a bulb part-way up its stem and a fine tapered tip, labelled \"A\" beneath it; a tall graduated measuring cylinder with a scale up its side and a pouring lip, labelled \"B = graduated cylinder\"; and below them a shallow round dish with a pouring spout, labelled \"C\".",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "A = pipette - stated in the 2021 OL marking scheme, Q2(a)(i)"
+   },
+   {
+    "letter": "B",
+    "meaning": "B = graduated cylinder - printed on the figure itself in the exam paper"
+   },
+   {
+    "letter": "C",
+    "meaning": "C = evaporating basin - stated in the 2021 OL marking scheme, Q2(a)(i)"
+   }
+  ],
+  "questionRef": "2021 OL Q2",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2021-OL-paper-p04-i1": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2021-OL-paper-p04-i1.png",
+  "md5": "cd9b284ad8196770d4f88a0a516886cf",
+  "alt": "Printed text of question 3(d) on the left and, on the right, a hazard warning pictogram: a diamond (square standing on a corner) with a thick grey border and white interior. Inside, two tilted test tubes pour liquid downwards - the left stream falls onto a solid black rectangular block and the right stream falls onto an open human hand, with small jagged marks showing the surface and the skin being eaten away.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q3(d)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2021-OL-paper-p05-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2021-OL-paper-p05-i0.png",
+  "md5": "1551984369a87966432954fec5e92c0a",
+  "alt": "Printed text of question 4 parts (g), (h), (i) and (j) on the left, and on the right a greyscale photograph of a toothpaste tube standing on its cap, tilted, with a soft reflection beneath it. The tube's wrap reads \"GLEAM\" in large letters with \"MULTI-ACTION\" running up one side, \"fluoride toothpaste\" up the other, and \"e 75 ml\" near the base.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q4(i)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2021-OL-paper-p05-i1": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2021-OL-paper-p05-i1.png",
+  "md5": "cfd2b6879552dea47f2224469d84612d",
+  "alt": "Printed text of question 4 parts (c) and (d) on the left, and on the right a greyscale night photograph: a bright flare arcs up and over against a dark sky, leaving a curved white trail, with a silhouetted treeline and a small boat on water at the bottom of the frame. A thin diagonal wire or cable crosses the top right of the photo.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q4(c)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2021-OL-paper-p08-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2021-OL-paper-p08-i0.png",
+  "md5": "d2df34f4ca842f9d7e0ddcf251beb8bf",
+  "alt": "Printed text of question 6 parts (a) to (d) on the left, and on the right a schematic of an oil refinery fractionating column. \"crude oil\" enters from the left through a coiled pipe inside a box marked \"furnace\" (drawn with a zig-zag heating element), and the heated oil passes into a tall vertical column that is rounded at the top and bulges at the base. Inside the column four horizontal rows of small bubble-cap trays are drawn; five pipes leave the right-hand side, each ending in an arrow showing a fraction being drawn off, plus one at the very top. The column is shaded dark at the bottom fading to white at the top, and a long vertical arrow to the left of the column, labelled \"cooling\", points upwards.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q6",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2021-OL-paper-p10-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2021-OL-paper-p10-i0.png",
+  "md5": "eab14ce1ee6924a222b70cc408ba34b6",
+  "alt": "Line-drawn rate-of-reaction apparatus lying horizontally. A conical flask rests on its side; pale shading in its lower body is labelled \"HCl solution\" and small black lumps sitting in the neck are labelled \"Zn pellets\". A bung in the flask neck carries a short glass tube that connects to a thick black concertina-shaped hose labelled \"flexible tubing\", which in turn connects to a horizontal gas syringe drawn with a graduated barrel, a plunger and a ring pull, labelled \"gas syringe\".",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q9",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2021-OL-paper-p11-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2021-OL-paper-p11-i0.png",
+  "md5": "2445e3f0a19ae36a5773080d3347f0b1",
+  "alt": "Printed text of question 10(b) on the left and, on the right, a drawing of an electrolysis cell: a large open beaker of liquid with two inverted test-tubes/collecting tubes standing in it, one on each side. Each inverted tube sits over an electrode rod that rises from the base of the beaker, and stippling inside the tubes shows gas bubbles collecting. The left tube is labelled \"O2\" at the top with a leader line, and \"X (anode)\" printed sideways beside it; the right tube is labelled \"H2\" with a leader line and \"Y (cathode)\" printed sideways beside it. Below the beaker the two electrodes connect by wires to terminals marked + (left) and - (right) and on to a battery symbol.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "X",
+    "meaning": "X = the anode (the positive electrode, under the O2 tube) - printed on the figure in the exam paper; the marking scheme confirms oxidation takes place at X/anode"
+   },
+   {
+    "letter": "Y",
+    "meaning": "Y = the cathode (the negative electrode, under the H2 tube) - printed on the figure in the exam paper"
+   }
+  ],
+  "questionRef": "2021 OL Q10(b)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2021-OL-paper-p12-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2021-OL-paper-p12-i0.png",
+  "md5": "6ba726fd793e1a523203f7d9fa85d52b",
+  "alt": "Printed text about marine shellfish and coral making calcium carbonate shell, plus the start of question 11(b)(iv), on the left. On the right is a greyscale photograph of a single scallop-type bivalve seashell, fan-shaped, with strong radiating ribs running from the small hinge at the bottom out to the scalloped upper rim.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q11(b)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2021-OL-paper-p13-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2021-OL-paper-p13-i0.png",
+  "md5": "9d541e72a8166033b1bea310198d4822",
+  "alt": "Printed text of question 11(c) on the left and, on the right, a drawing of heating apparatus: a ceramic crucible sits in a pipe-clay triangle resting on the flat top ring of a three-legged tripod, with the crucible lid tilted up and propped against the crucible rim. Directly beneath, standing on the bench, is a Bunsen burner drawn with a round base, a vertical barrel and a collar, with a black rubber gas hose running off to the right. The burner flame is not drawn.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q11(c)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2021-OL-paper-p14-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2021-OL-paper-p14-i0.png",
+  "md5": "a9198924b09555e90f2d07b78342b0b6",
+  "alt": "Printed text of question 11(d) part B on the left and, on the right, a cutaway drawing of a blast furnace. A skip hoist runs up a diagonal track at the left and tips solid material in at the top of the furnace, labelled \"charge\". The tall vessel itself is labelled \"furnace\" and its interior is shaded dark with upward arrows showing the rising gases. Near the base, pipes entering from both sides are labelled \"hot air\". Two tap-holes at the bottom lead to small containers: the lower one labelled \"molten iron\" on the left and the upper one labelled \"molten Y\" on the right.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "Y",
+    "meaning": "Y = the co-product tapped from the base, i.e. slag (calcium silicate) - 2021 OL marking scheme Q11(d)B(iii); the paper states only that Y is made when calcium oxide from the limestone reacts with impurities in the ore"
+   },
+   {
+    "letter": "X",
+    "meaning": "X = the third substance in the charge, coke (carbon) - 2021 OL marking scheme Q11(d)B(ii); the paper states only that X brings about reduction of the ore and acts as fuel"
+   }
+  ],
+  "questionRef": "2021 OL Q11(d) part B",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2021-OL-paper-p14-i1": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2021-OL-paper-p14-i1.png",
+  "md5": "203f0edbd2f1c22ab7d71b54290b4cb8",
+  "alt": "Printed text of question 11(d) part A items (i), (ii) and (iii) on the left, and on the right a greyscale cutaway photograph/render of the corner of a multi-pane glazing unit: three parallel sheets of glass held in a white plastic frame, seen end-on at an angle so the sealed air (argon) gaps between the panes and the spacer bars are visible.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q11(d) part A",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2023-HL-paper-p03-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2023-HL-paper-p03-i0.png",
+  "md5": "cc5f89132bf5d05004ea14b99fb11b93",
+  "alt": "A black-and-white photograph, fully framed within a white margin, of a person leaning over a metal grating and cutting or welding metal. They wear dark goggles and a work jacket; an intense white flare of light bursts from the workpiece and a fan of sparks sprays out to the left and upward. A dark ribbed metal grid runs across the foreground and a spiral/fan-shaped metal offcut sits to the left of the flame. Above the photo the tail of the question text is visible - \"in a combustion test? (15)\" - and below it part (d) reads \"The balanced equation for the reaction between calcium carbide and water in the preparation of ethyne is:\" followed by the equation CaC2 + 2H2O -> C2H2 + Ca(OH)2.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q2",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2023 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2023-HL-paper-p04-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2023-HL-paper-p04-i0.png",
+  "md5": "c6483798b337b9086b2430a723c9cd01",
+  "alt": "Left two-thirds is the printed text of Question 3 (heat of neutralisation of HCl by NaOH). Right third is a line drawing of a simple polystyrene-cup calorimeter, drawn in outline: a tapered expanded-foam polystyrene cup, shown with a double wall, sitting on its base. A flat circular plastic lid rests on the cup's rim with two holes pierced through it. A long thin thermometer with a graduated scale passes vertically down through one hole so its bulb reaches the liquid near the bottom of the cup. A bent plastic stirrer with a looped/hooked lower end passes down through the second hole; its handle bends over to the upper left, outside the cup. Nothing else is connected to the apparatus - no burner, clamp or stand.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q3",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2023 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2023-HL-paper-p05-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2023-HL-paper-p05-i0.png",
+  "md5": "e1d392c6d80a773790f3744f836f9af3",
+  "alt": "Right-hand side shows a greyscale product photograph of a squat cylindrical honey jar with a black screw lid. The label has a dark upper band carrying a small fern motif with \"NEW ZEALAND HONEY CO.\", then a white band reading \"MANUKA\" in large spaced capitals with \"RAW MANUKA HONEY\" beneath, two small certification symbols side by side, and a bottom strip reading \"NET WT 8.8OZ (250g)\". Left-hand side is the printed text of part (k), which asks the candidate to calculate, to one significant figure, the minimum number of molecules of 2-methoxybenzoic acid (Mr = 152) in the 250 g jar shown, certified to contain at least 1 x 10^-3 g per kg.",
+  "lettersVisible": [
+   "NEW ZEALAND HONEY CO.",
+   "MANUKA",
+   "RAW MANUKA HONEY",
+   "NET WT 8.8OZ (250g)"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q4(k)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2023 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2023-HL-paper-p05-i1": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2023-HL-paper-p05-i1.png",
+  "md5": "f8b310591f0426e86d523fc437507aa6",
+  "alt": "Right-hand side is a schematic outline diagram of a mass spectrometer, drawn in thin line with grey shading. Reading left to right: a graduated syringe/reservoir labelled \"sample injected\" feeds through a narrow inlet into a chamber marked with the numeral 1; a small coiled filament sits just below and is marked 2; a pair of stacked grid/plate stacks between two vertical bars is marked 3, with a circled + sign above the left plate and a circled - sign above the right one. The beam then travels right into a curved grey arc labelled \"magnetic field\", where fine dotted trajectory lines fan out into three separate curving paths - this fanning region is marked 4. The paths converge on a flat horizontal detector plate marked 5, from which a wavy wire loops down and left to a rectangular screen box showing three vertical peaks of unequal height, labelled \"recorder\" beneath. Left-hand side is the printed text of Q4 parts (c) to (f).",
+  "lettersVisible": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "+",
+   "-",
+   "sample injected",
+   "magnetic field",
+   "recorder"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "2",
+    "meaning": "Ionisation - stated in the SEC 2023 HL marking scheme, Q4(f): \"2: ionisation\""
+   },
+   {
+    "letter": "4",
+    "meaning": "Separation - stated in the SEC 2023 HL marking scheme, Q4(f): \"4: separation\""
+   }
+  ],
+  "questionRef": "2023 HL Q4(f)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2023 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2023-HL-paper-p08-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2023-HL-paper-p08-i0.png",
+  "md5": "2be85c636cd90d4467b8203d9e0c5e15",
+  "alt": "A black-and-white photograph, complete within its white frame, of five white swans on a shallow lake or river. Three swans are in the foreground on wet, partly icy ground with one standing in very shallow water, a fourth is just behind them, and a fifth swims alone in open water in the upper left. The far bank and bright rippled water fill the top of the frame. Above the photo the tail of the question stem is visible - \"reduced during tertiary sewage treatment.\" - and the top of the next sub-part is clipped at the bottom.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q7(d)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2023 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2023-HL-paper-p11-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2023-HL-paper-p11-i0.png",
+  "md5": "0c73bdacc51c5b9e0f0df0b217efa831",
+  "alt": "Right side carries a greyscale product photograph, complete on a white background, of a rectangular medicine carton standing behind a foil blister strip of round white tablets. The carton reads \"ThyroSafe\" in large script with a registered-trademark symbol, \"Potassium Iodide Tablets, USP, 65 mg\" beneath it, then in italics \"Thyroid blocking in a radiation emergency\" and \"20 tablets, 65 mg\"; the same wording is repeated small along the carton's top edge and down its side. The blister strip lies diagonally in front, showing about ten domed tablets in individual foil pockets, with a second partly hidden strip behind it. Left side is the printed text of Q10(c) parts (i) to (iii), including the incomplete nuclear equation \"131-over-53 I -> ___ + 0-over-minus-1 e\".",
+  "lettersVisible": [
+   "ThyroSafe",
+   "Potassium Iodide Tablets, USP, 65 mg",
+   "Thyroid blocking in a radiation emergency",
+   "20 tablets, 65 mg"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q10(c)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2023 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2023-HL-paper-p11-i1": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2023-HL-paper-p11-i1.png",
+  "md5": "7ad1cd10c1f3f3274e41b64b41acb13a",
+  "alt": "Right side shows the skeletal structure of a benzene molecule: a bold regular hexagon with a plain circle drawn inside it, representing the delocalised pi electron ring. No atoms, letters or bond lengths are marked on it. Left side is the printed text of Q10(a) parts (iii) to (vii), asking how many of benzene's 42 electrons are involved in carbon-to-hydrogen bonding, carbon-to-carbon sigma bonding, delocalised pi bonding, carbon-to-carbon bonding, and how many are not involved in bonding.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q10(a)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2023 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2023-HL-paper-p12-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2023-HL-paper-p12-i0.png",
+  "md5": "ad65cb844a7bac0604a67e5271b1590e",
+  "alt": "A line drawing of an electrolysis demonstration seen from above. A large circle represents a Petri dish holding solution; the fill is pale grey with a darker smudge spreading around the right-hand side. Two short thick black bars stand vertically inside the dish, one to the left of centre and one to the right of centre - the inert electrodes. A rectangular circuit loop of plain wire runs from each electrode out of the dish, down and around, meeting at the bottom in a battery/cell symbol (long and short parallel lines) next to an open switch drawn as two small circles. Two straight leader lines run to the right of the dish: the upper one points at fine speckling/bubbles on the right-hand electrode and is labelled \"H2 gas\"; the lower one points at the darker shaded region beside that same electrode and is labelled \"pink colour\". Above the drawing the tail of the question stem reads \"hydrogen gas at the other.\" and below it part (i) reads \"Identify a suitable material for the inert electrodes.\"",
+  "lettersVisible": [
+   "H2 gas",
+   "pink colour"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "H2 gas",
+    "meaning": "Hydrogen gas being produced at one electrode - the Q11(b) stem states \"Iodine (I2) was formed at one electrode and hydrogen gas at the other\""
+   },
+   {
+    "letter": "pink colour",
+    "meaning": "The pink colour of the phenolphthalein indicator appearing near the electrode at which hydrogen gas was produced - the Q11(b) stem says a few drops of phenolphthalein were added and the solution was initially colourless, and part (v) asks candidates to explain the pink colour near the hydrogen electrode"
+   }
+  ],
+  "questionRef": "2023 HL Q11(b)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2023 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2023-HL-paper-p13-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2023-HL-paper-p13-i0.png",
+  "md5": "71d4451885ab8940cfc4264772f6cd2d",
+  "alt": "A displayed structural formula written out with explicit bonds, followed by the rest of a balanced equation. The structure is a vertical four-carbon chain: the top carbon is a carboxylate carbon double-bonded to O and single-bonded to O-minus with Na-plus beside it; the second carbon carries H on the left and OH on the right; the third carbon carries HO on the left and H on the right; the bottom carbon is a second carboxylate carbon double-bonded to O and single-bonded to O-minus with K-plus beside it. To the right of the structure, on one line, is \"+ 3H2O2 -> HCOONa + HCOOK + 4H2O + 2CO2\". White space surrounds the whole thing; no apparatus and no axes.",
+  "lettersVisible": [
+   "Na+",
+   "O-",
+   "O",
+   "C",
+   "H",
+   "OH",
+   "HO",
+   "K+",
+   "3H2O2",
+   "HCOONa",
+   "HCOOK",
+   "4H2O",
+   "2CO2"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q11(c)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2023 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2023-OL-paper-p02-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2023-OL-paper-p02-i0.png",
+  "md5": "77b716c9b81ef2db792ed68869c582ee",
+  "alt": "A school-laboratory apparatus for making ethyne and collecting it over water. On the left, a dropping funnel (drawn as an open-topped straight tube tapering to a stopcock with a tap handle) is fitted through a stopper into the neck of a conical flask; a leader line points from the liquid inside the funnel to the words \"liquid A\". Several grey lumps sit on the floor of the conical flask, with a leader line labelling them \"solid B\". A delivery tube leaves a short side-arm at the flask's neck, curves down and to the right into an open rectangular water trough, then turns upward and ends beneath an inverted round-topped tube that stands in the trough; small circles are drawn rising up inside that tube. A leader labels the tube \"tube\", one labels the gas space in the inverted tube \"ethyne\", and one labels the liquid in the trough \"water\". A line of question text runs along the top: \"hydrocarbon gas ethyne (C2H2) in the school laboratory.\"",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "The paper prints \"liquid A\" beside the liquid held in the dropping funnel, and Q1(a)(i) asks the candidate to identify liquid A. The paper does not state what the liquid is."
+   },
+   {
+    "letter": "B",
+    "meaning": "The paper prints \"solid B\" beside the lumps in the bottom of the conical flask, and Q1(a)(ii) asks the candidate to identify solid B. The paper does not state what the solid is."
+   }
+  ],
+  "questionRef": "2023 OL Q1",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2023-OL-paper-p03-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2023-OL-paper-p03-i0.png",
+  "md5": "9637e81af842b02fcb137240e49f337c",
+  "alt": "Three separate pieces of titration glassware drawn side by side with no connections between them, set among the question text. Left: a conical (Erlenmeyer) flask with a narrow neck, captioned \"conical flask\". Middle: a plastic wash bottle — a cylindrical bottle with a ribbed screw cap, an internal dip tube, and a bent delivery spout rising from the cap and angling down to the right — labelled \"A\". Right: a very long thin pipette standing vertically, with a swollen bulb part-way down its stem, a graduation mark above the bulb, and a drawn-out pointed tip at the bottom — labelled \"B\". Above the drawings are the last three lines of the question stem, ending \"Some pieces of apparatus used to carry out the titration are shown below.\" Below them are part (a) about the underlined term \"standard solution\" (5) and part (b)(i) \"Identify the pieces of apparatus A and B above.\"",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "One of the two unnamed pieces of titration apparatus that Q2(b)(i) asks the candidate to identify (Q2(b)(ii) then asks for one use of A during the titration). The label sits beside the middle drawing. The paper does not name it."
+   },
+   {
+    "letter": "B",
+    "meaning": "The other unnamed piece of titration apparatus that Q2(b)(i) asks the candidate to identify (Q2(b)(iii) asks how B was rinsed for use). The label sits beside the right-hand drawing. The paper does not name it."
+   }
+  ],
+  "questionRef": "2023 OL Q2(b)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2023-OL-paper-p06-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2023-OL-paper-p06-i0.png",
+  "md5": "c75afdcfe0d27150756b33b6b0ac0543",
+  "alt": "A reflux apparatus clamped to a retort stand, drawn on the right of the question text. A thick vertical stand rod rises from a heavy flat base; two boss-head clamps grip the assembly, one high and one low. At the bottom a round-bottomed flask sits inside a dish-shaped electric heating mantle, with a power lead trailing across the base. A long vertical jacketed condenser is fitted into the flask's neck and stands upright, closed off at the top. Four leader lines and arrows label the parts: an arrow pointing away from the upper side-arm to \"water out\", a short leader from the condenser body to a bold \"X\", an arrow pointing into the lower side-arm from \"water in\", a leader to \"flask with reaction mixture\", and a leader to \"electric heater\". On the left is the text of part (k) — the flask contains coconut oil, sodium hydroxide, ethanol and anti-bumping granules — with sub-parts (i) and (ii), and below it the start of part (l).",
+  "lettersVisible": [
+   "X"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "X",
+    "meaning": "The piece of apparatus Q4(k)(i) asks the candidate to name; its leader line points at the tall vertical jacketed tube standing above the flask, between the \"water out\" and \"water in\" side-arms. The paper does not name it."
+   }
+  ],
+  "questionRef": "2023 OL Q4(k)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2023-OL-paper-p11-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2023-OL-paper-p11-i0.png",
+  "md5": "c0412fecd1504581154cdca2751ff4bd",
+  "alt": "On the right, a three-dimensional ball-and-stick drawing of a sodium chloride crystal lattice: a cube-shaped framework of straight connecting rods with spheres at every intersection, alternating between large pale-grey spheres and smaller dark-grey spheres so that each sphere is surrounded by spheres of the other kind. Beneath the lattice is a two-line key: a large pale sphere followed by \"= chloride ion\", and a small dark sphere followed by \"= sodium ion\". On the left is the question header \"10. Answer any two of the parts (a), (b) and (c). (2 x 25)\" and the text of part (a) — a note to refer to page 79 of the Formulae and Tables booklet, the statement that the diagram shows sodium and chloride ions in an NaCl crystal with a chloride ion at its centre, and sub-parts (i) to (iv), with (v) beginning at the bottom.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q10(a)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2023-OL-paper-p13-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2023-OL-paper-p13-i0.png",
+  "md5": "91c1aac87bcf0103b44294f5f601418e",
+  "alt": "A cross-section of an oil-refinery fractionating column. On the left, an arrow labelled \"crude oil\" feeds a pipe that coils inside a box drawn above a row of small burner flames, captioned \"furnace\"; a pipe carries the heated oil from the furnace into the lower part of a tall rounded column. Inside the column are five horizontal rows of small bubble-cap trays. Side-outlet pipes leave the column at each tray level, each ending in an arrow with a caption; from top to bottom these read: a bold \"D\" at the very top of the column, then \"light gasoline\", \"naphtha\", \"kerosene\", \"gas oil\", and a bold \"F\" at the very bottom. To the left of the column a long vertical arrow points upwards beside the rotated caption \"temperature decreasing\". The column is shaded, dark grey at the base fading to white at the top. Above the diagram is the line \"to each of the letters A to G.\" and below it the first line of the cloze passage, \"In oil refining, fractional distillation is used to separate the hydrocarbons in crude oil\".",
+  "lettersVisible": [
+   "D",
+   "F"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "D",
+    "meaning": "The passage states: \"The fraction collected at the top of the column is called D and it consists of E hydrocarbon molecules.\" D is a blank the candidate fills from the supplied word list (high, residue, small, kerosene, low, refinery gas, large). The paper does not give the answer."
+   },
+   {
+    "letter": "F",
+    "meaning": "The passage states: \"The bottom fraction collected at the base of the column is called F and it is made up of G hydrocarbon molecules.\" F is likewise a blank filled from the same word list. The paper does not give the answer."
+   }
+  ],
+  "questionRef": "2023 OL Q11(c)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2022-HL-paper-p03-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2022-HL-paper-p03-i0.png",
+  "md5": "7b32d07c10bd07171d1cf09d7219a325",
+  "alt": "On the right is a line drawing of a gas-bubbling set-up. A bold label 'C2H4' sits at the top left of the drawing with a long horizontal arrow pointing right into the open end of a glass delivery tube. The tube bends through about 90 degrees, runs vertically down inside a test tube and ends near the bottom of it. The test tube is roughly two-thirds filled with a pale grey liquid, and a column of small bubbles rises from the tube outlet up through the liquid. On the left is the printed text of question 2(b): ethene bubbled through a reagent, asking the colour change observed with (i) dilute acidified KMnO4 and (ii) bromine water, (iii) to name the organic reaction type with the bromine reagent, and (iv) to identify an organic product of the ethene/bromine reaction.",
+  "lettersVisible": [
+   "C2H4"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "C2H4",
+    "meaning": "Ethene gas entering the delivery tube. The paper states: 'Some ethene was bubbled through a reagent as shown in the diagram on the right.'"
+   }
+  ],
+  "questionRef": "2022 HL Q2(b)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2022 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2022-HL-paper-p03-i2": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2022-HL-paper-p03-i2.png",
+  "md5": "321783587b6f32ff1d4a65493905ee0f",
+  "alt": "The complete pair of filtration diagrams for the recrystallisation of benzoic acid. Left (first filtration, gravity): a beaker being poured into a cone-shaped filter funnel holding a fluted filter paper, the funnel stem resting in the neck of a conical flask; a leader line from the filter paper runs right to a bold 'X'. Right (second filtration, suction): a conical flask being poured into a cylindrical Buchner funnel whose flat perforated plate carries a bed of solid shown as a dashed line, with a leader line to a bold 'Y'; the funnel sits in a black bung on a conical filter flask, a leader line points to the flask's side arm labelled 'suction', and a leader line from the pool of liquid in the base of the flask runs right to a bold 'Z'. Beneath the diagrams is the printed line '(i) Identify the substance(s) collected at locations X, Y and Z.'",
+  "lettersVisible": [
+   "X",
+   "Y",
+   "suction",
+   "Z"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "X",
+    "meaning": "charcoal / carbon / C (SEC 2022 HL marking scheme, Q2(c)(i))"
+   },
+   {
+    "letter": "Y",
+    "meaning": "benzoic acid / C6H5COOH (SEC 2022 HL marking scheme, Q2(c)(i))"
+   },
+   {
+    "letter": "Z",
+    "meaning": "potassium chloride (KCl) / water (H2O) (SEC 2022 HL marking scheme, Q2(c)(i))"
+   }
+  ],
+  "questionRef": "2022 HL Q2(c)(i)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2022 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2022-HL-paper-p04-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2022-HL-paper-p04-i0.png",
+  "md5": "93a69138f18d24e3b245b0a746af696b",
+  "alt": "On the right is a photograph of a mound of very fine black powder sitting on a plain white background, with a spray of black specks radiating outwards from it as though the powder had been dropped. It is a photograph, not a diagram — there is no apparatus, no scale and no labelling. On the left is the printed stem of question 3, numbered '3.': the rate of decomposition of a hydrogen peroxide solution using manganese(IV) oxide as a catalyst, 25.0 cm3 of hydrogen peroxide decomposed in the presence of 0.5 g of manganese(IV) oxide 'in the form of a fine black powder, as illustrated', with the volume of oxygen produced monitored over time.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q3",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2022 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2022-HL-paper-p05-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2022-HL-paper-p05-i0.png",
+  "md5": "3f5fe85b8d3b5031107c261f5cd9329b",
+  "alt": "On the right is a black-and-white photograph of a large rough diamond: an irregular, many-faced translucent stone with visible internal fractures, held up between the thumb and fingers of a hand against a plain pale background. No labels, no scale. On the left is the printed text of question 4 parts (d), (e) and (f): the colour observed in a flame test on a salt of (i) lithium and (ii) copper; 'State Avogadro's law'; and the diamond calculation — a diamond found in Botswana in June 2021 of mass 1098 carats containing exactly 18.3 moles of carbon, calculate the mass of one carat in grams.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q4(f)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2022 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2022-HL-paper-p05-i1": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2022-HL-paper-p05-i1.png",
+  "md5": "eaae4566e3fc7cacc4732d712ba12063",
+  "alt": "On the right is a skeletal structural formula. A benzene ring is drawn as a hexagon with an inscribed circle for delocalisation. One ring carbon has a bond up to a 'C' which is double-bonded to an 'O' on its left and single-bonded to 'OH' on its right — a carboxylic acid group. The neighbouring ring carbon is bonded to an 'O' which joins a second 'C'; that carbon is double-bonded down to another 'O' and single-bonded right to 'CH3' — an ester group. On the left is printed text: the tail of question 4(j) ('carbon to carbon bonding: ethane, ethene, ethyne, benzene?'), then 4(k) 'The structure of aspirin is shown. Calculate the average daily dose (in mg) when a person took a total of 0.146 moles of low dose aspirin over 365 days.', then the opening line of 4(l).",
+  "lettersVisible": [
+   "C",
+   "O",
+   "OH",
+   "CH3"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "C",
+    "meaning": "Carbon atom in the drawn structure — the paper states the structure shown is aspirin (Q4(k))."
+   },
+   {
+    "letter": "O",
+    "meaning": "Oxygen atom in the drawn structure — the paper states the structure shown is aspirin (Q4(k))."
+   },
+   {
+    "letter": "OH",
+    "meaning": "Hydroxyl of the carboxylic acid group in the drawn aspirin structure (Q4(k))."
+   },
+   {
+    "letter": "CH3",
+    "meaning": "Methyl group of the ester in the drawn aspirin structure (Q4(k))."
+   }
+  ],
+  "questionRef": "2022 HL Q4(k)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2022 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2022-HL-paper-p07-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2022-HL-paper-p07-i0.png",
+  "md5": "fc3265d6206cb2acfd39ed2bd4aa4db9",
+  "alt": "On the right is a black-and-white photograph of the lower side panel and one rear wheel of a bus standing at a kerb, with a pavement and railings behind. Painted on the panel is a bilingual slogan, 'Cumhacht Hidrigin a usaideann an bus seo' above 'This bus is powered by Hydrogen', and below that a pictogram equation of circled symbols reading (H2) + (O2) = (a power on/off symbol) + (H2O). On the left is the printed stem of question 6: Dublin Bus testing hydrogen fuel-cell electric double-decker buses since July 2021, the statement that hydrogen combines with oxygen to form water releasing energy as an electric current, the equation H2 (g) + 1/2 O2 (g) -> H2O (l), and the introduction to steam reforming of natural gas.",
+  "lettersVisible": [
+   "H2",
+   "O2",
+   "H2O"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q6",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2022 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2022-HL-paper-p09-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2022-HL-paper-p09-i0.png",
+  "md5": "f9a61a542120b2caeb4ce5f907a3bf21",
+  "alt": "On the right is a close-up black-and-white photograph of a single raspberry: a rounded cluster of individual drupelets, each glossy with a highlight, with fine hairs projecting around the edges, isolated on a white background. No labels, no scale, no apparatus. On the left is the printed text of question 8(b): the tail of the stem, 'and is partially responsible for the flavour of raspberries', then (i) write a balanced chemical equation for the formation of E from methanoic acid and ethanol, (ii) give the systematic IUPAC name for E, (iii) how many carbon atoms in a molecule of the ester E are in planar geometry, and (iv) classify this esterification reaction as a redox, acid-base or substitution reaction.",
+  "lettersVisible": [
+   "E"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "E",
+    "meaning": "The pure ester with a rum-like aroma partially responsible for the flavour of raspberries (paper, Q8(b) stem). Note: E appears in the printed question text in this crop, not as a label on the photograph."
+   }
+  ],
+  "questionRef": "2022 HL Q8(b)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2022 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2022-HL-paper-p13-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2022-HL-paper-p13-i0.png",
+  "md5": "dbc5afd33fec6a14df6bcd961fd21440",
+  "alt": "A reaction-profile (energy profile) graph plotted on a faint square grid inside a plot frame. The vertical axis is labelled 'Energy (kJ mol-1)' and is scaled 0, 20, 40, 60, 80, 100, 120, 140. The horizontal axis is labelled 'Reaction progress' and carries no scale. A key inside the top-left of the plot shows a solid line for 'Reaction without catalyst' and a dashed line for 'Reaction with catalyst'. Both curves begin together on a flat level at 20 on the energy axis, with a bold 'X' printed just above that starting level. The solid curve rises to a rounded peak at 120 and falls away to a flat level at 50. The dashed curve leaves the same start, rises to a lower rounded peak at 80, then merges back into the solid curve, finishing on the same flat level at 50, with a bold 'Y' printed just above that finishing level.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "X",
+    "meaning": "Reactant X. The paper introduces the diagram as 'The reaction profile diagram for the reaction X -> Y, with and without catalyst C'; the label sits on the flat starting level at 20 kJ mol-1, which the marking scheme's answers confirm (Ea without catalyst = 100 kJ mol-1, i.e. 120 - 20)."
+   },
+   {
+    "letter": "Y",
+    "meaning": "Product Y of the same reaction X -> Y. The label sits on the flat finishing level at 50 kJ mol-1, confirmed by the marking scheme's answer that H for the reverse reaction Y -> X is -30 kJ mol-1 (i.e. 20 - 50)."
+   }
+  ],
+  "questionRef": "2022 HL Q11(c)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2022 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2021-HL-paper-p03-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2021-HL-paper-p03-i0.png",
+  "md5": "18be1a22bc9a12f01b097a657e2754d5",
+  "alt": "Left two-thirds is question text: (b)(i) \"Name the co-product of the reaction.\", (ii) \"What is brine?\", (iii) \"Explain the function of the brine in the procedure.\" (12); (c)(i) \"Describe how the solid soap was separated from the solution in the beaker.\", (ii) \"Where is the excess NaOH at this stage of the procedure?\" (9); (d) \"The diagram represents the arrangement of a number of soap molecules in water. Explain why one end of a soap molecule is described as water loving (hydrophilic).\" (6). The right third is a thin-ruled square box with a very pale grey fill containing the diagram: roughly twenty soap molecules arranged radially around a common centre to form a micelle. Each molecule is drawn as a small shaded grey circle (the head) attached to a long zig-zag line (the hydrocarbon tail). Every grey circular head faces outwards around the rim of the circle and every zig-zag tail points inwards, the tails converging on a small white void at the centre. Nothing on the diagram is lettered or labelled.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q2(d)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2021 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2021-HL-paper-p03-i1": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2021-HL-paper-p03-i1.png",
+  "md5": "7e6936ff7970aada03e19e39b1a9f4d4",
+  "alt": "The balanced equation for the base hydrolysis of a coconut-oil tri-ester, drawn as structural formulae. On the left, a three-carbon backbone written vertically — three C atoms each bonded to an H on the right, with an H above the top carbon and an H below the bottom carbon — and each of the three carbons carries a CH3(CH2)10COO— group on its left; this structure is captioned \"tri-ester\". Then \"+ 3NaOH\", a single reaction arrow, then \"3CH3(CH2)10COONa\" captioned \"soap\", a \"+\", and on the right a second vertical three-carbon backbone in which each carbon carries an HO— group, with an H above and an H below, captioned \"co-product\". Along the very top edge the tail of the printed stem line \"in coconut oil.\" is sliced horizontally through the middle of the type.",
+  "lettersVisible": [
+   "tri-ester",
+   "soap",
+   "co-product",
+   "CH3(CH2)10COO",
+   "3NaOH",
+   "3CH3(CH2)10COONa",
+   "HO",
+   "H",
+   "C"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "tri-ester",
+    "meaning": "Paper caption: the left-hand structure is the tri-ester molecule in coconut oil being hydrolysed."
+   },
+   {
+    "letter": "soap",
+    "meaning": "Paper caption: 3CH3(CH2)10COONa is the soap product (sodium cocoate)."
+   },
+   {
+    "letter": "co-product",
+    "meaning": "Paper caption for the right-hand structure. The 2021 HL marking scheme, Q2(b)(i), names it as propane-1,2,3-triol / 1,2,3-propanetriol / glycerol / glycerine."
+   }
+  ],
+  "questionRef": "2021 HL Q2 (stem equation; referenced again by Q2(b)(i) and Q2(e))",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2021 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2021-HL-paper-p04-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2021-HL-paper-p04-i0.png",
+  "md5": "eeb84d5abcd5390ab355d3cca21d188f",
+  "alt": "Two simple line drawings of shallow clock glasses shown side by side in perspective, each drawn as an ellipse with a curved underside and a doubled rim line. Each holds a small heaped mound of powder rendered in grey stipple: the mound on the left is drawn with finer, more uniform grey shading, the mound on the right with coarser, more granular speckling. Neither dish carries any label, letter or caption. Across the top edge the question line \"3. (a) Sodium sulfite and barium chloride are both white crystalline salts.\" is sliced horizontally through the middle of the type.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q3(a)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2021 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2021-HL-paper-p05-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2021-HL-paper-p05-i0.png",
+  "md5": "f3fa00c72b0b4f23de8dfef8043ba54b",
+  "alt": "Left: question text — (h) \"The use of KBrOx as a flour additive has been banned in the EU for many years but it is sometimes used to bleach flour and strengthen dough in some jurisdictions. KBrOx contains 47.9% bromine by mass. Find the value of x.\"; (i) \"Show by means of an equilibrium equation the self-ionisation of water that occurs even in 'deionised' water.\"; (j) \"Give a use that propanoic acid, benzoic acid and the salts of these acids have in common.\" Right: a black-and-white photograph of a paper sack of flour standing upright, printed with \"Pillsbury\" inside a dotted oval, then \"BALANCER®\", \"HI GLUTEN\", \"FLOUR\", a rule reading \"BLEACHED BROMATED ENRICHED\", a block of unreadable small print, \"NET WT. 50 LB (22.68 kg)\" and the number \"33724\". A small pale mascot figure (the Pillsbury Doughboy) sits at the left edge of the sack. Along the very top edge the line \"measured at the same conditions of temperature and pressure.\" is sliced through the middle of the type.",
+  "lettersVisible": [
+   "Pillsbury",
+   "BALANCER",
+   "HI GLUTEN",
+   "FLOUR",
+   "BLEACHED BROMATED ENRICHED",
+   "NET WT. 50 LB (22.68 kg)",
+   "33724"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q4(h)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2021 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2021-HL-paper-p05-i1": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2021-HL-paper-p05-i1.png",
+  "md5": "658804c129eabd0712092ceed0d5006f",
+  "alt": "Left: question text — (d) \"The diagram shows three containers, each filled with a different gas. Each container holds the same volume of gas at the same temperature and pressure. Which contains the largest number of atoms? Explain.\", and below it (e) \"Define electronegativity.\" Right: outline line-drawings of three identical flat-based round-bodied flasks standing side by side, each with a narrow neck closed by a dark grey tapered stopper and a small hatched tick mark drawn on the right of each neck. The gas is written in bold across the belly of each flask: \"He\" on the left flask, \"Cl2\" on the middle flask (drawn with a faint grey tint to the glass), \"CO2\" on the right flask. Along the very top edge a line of preceding question text is sliced through, leaving only the bottoms of the letters.",
+  "lettersVisible": [
+   "He",
+   "Cl2",
+   "CO2"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "He",
+    "meaning": "Paper states each container is filled with a different gas; this flask contains helium."
+   },
+   {
+    "letter": "Cl2",
+    "meaning": "This flask contains chlorine."
+   },
+   {
+    "letter": "CO2",
+    "meaning": "This flask contains carbon dioxide."
+   }
+  ],
+  "questionRef": "2021 HL Q4(d)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2021 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2021-HL-paper-p06-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2021-HL-paper-p06-i0.png",
+  "md5": "c18f6b658d5de9ae11c58cbb20a4ac3f",
+  "alt": "Left: question text — (k) \"What is the average number of electrons shared between any two adjacent carbon atoms in a molecule of (i) cyclohexane, (ii) benzene?\" Right: two skeletal ring structures side by side. The left one is a plain regular hexagon drawn with six single lines, captioned \"cyclohexane\" beneath. The right one is a regular hexagon with a complete circle drawn inside it — the delocalised-ring notation — captioned \"benzene\" beneath. Neither ring shows atom symbols or hydrogens. Along the bottom edge the line \"(l) Answer part A or part B.\" is sliced horizontally through the middle of the type.",
+  "lettersVisible": [
+   "cyclohexane",
+   "benzene"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "cyclohexane",
+    "meaning": "Paper caption for the plain six-sided hexagon (left)."
+   },
+   {
+    "letter": "benzene",
+    "meaning": "Paper caption for the hexagon containing an inner circle (right)."
+   }
+  ],
+  "questionRef": "2021 HL Q4(k)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2021 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2021-HL-paper-p10-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2021-HL-paper-p10-i0.png",
+  "md5": "28ba5489f0dad9e0656c1c98461eee87",
+  "alt": "A line graph. The y-axis is labelled \"% Ammonia at Equilibrium\" with ticks at 0, 20, 40, 60, 80 and 100; the x-axis is labelled \"Temperature (K)\" with ticks at 373, 473, 573, 673, 773 and 873. Faint grey gridlines cross the plot area. Three curves all fall from left to right: a fine dotted curve that starts at 100%, stays high to about 573 K and is still near 30% at 873 K, labelled \"100 MPa\"; a solid curve that starts near 98%, falls steeply through the middle of the range and reaches about 8% at 873 K, labelled \"20 MPa\"; and a heavy dashed curve that starts near 90%, drops very steeply and lies almost flat on the axis from about 673 K, labelled \"1 MPa\". Three grey square boxes with bold black capitals sit on the plot: box A on the far left just below the 80% line at the 373–473 K end; box B near the top of the plot at about 573 K, just under the dotted 100 MPa curve; and box C on the right at roughly 20% near 773 K, on the solid 20 MPa curve. Beneath the plot the line \"(a) Select the area of the graph (box A, B or C) corresponding to the conditions most\" runs to the crop's lower edge and its sentence continues off-crop.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "100 MPa",
+   "20 MPa",
+   "1 MPa"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "One of three selectable areas of the graph. The 2021 HL marking scheme, Question 9(a), gives A as the answer to (a)(i) — the conditions most closely associated with good yields and slower rates of reaction."
+   },
+   {
+    "letter": "B",
+    "meaning": "The 2021 HL marking scheme gives B as the answer to (a)(ii) — the conditions most closely associated with higher yields but more costly and less safe ammonia production."
+   },
+   {
+    "letter": "100 MPa",
+    "meaning": "Paper states the three curves are for three different pressures; this labels the uppermost (dotted) curve."
+   },
+   {
+    "letter": "20 MPa",
+    "meaning": "Labels the middle (solid) curve."
+   },
+   {
+    "letter": "1 MPa",
+    "meaning": "Labels the lowest (heavy dashed) curve."
+   }
+  ],
+  "questionRef": "2021 HL Q9(a) (the same graph is also used by Q9(b))",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2021 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2021-HL-paper-p12-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2021-HL-paper-p12-i0.png",
+  "md5": "cb5aecf80d6515aa6631b4e6037289b5",
+  "alt": "Left: question text — \"(b) Pig slurry has a very high biochemical oxygen demand (BOD) and therefore effluent from pig farming must be very carefully managed. Spreading it on the ground as a fertilizer is one option for disposing of pig slurry and transfer to a treatment works is another.\" with \"biochemical oxygen demand\" underlined; then \"(i) Explain the underlined term.\" and \"(ii) Why is the run-off from pig slurry fertilizer, or the addition of any other solution with a high BOD, into waterways undesirable?\" Right: a square black-and-white photograph of two young pigs lying side by side with their snouts and forelegs resting over the top of a horizontal wooden board, dark vertical planking forming the background. The photograph carries no labels, letters or arrows.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q11(b)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2021 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2021-HL-paper-p13-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2021-HL-paper-p13-i0.png",
+  "md5": "e00491a11b718f0e5ab09406bd3f2763",
+  "alt": "A black-and-white photograph, centred on the page, of five wooden spheres of differing sizes resting on a plain pale surface with soft cast shadows. The balls are dark and matte with a slightly worn, grainy finish; several have small drilled peg-holes visible on their surfaces (two clearly show a single dark hole facing the camera, one shows a cluster of holes). They lie in a loose cluster, two larger balls behind and three smaller ones in front. Along the top edge the line \"(i) The photograph shows wooden balls used by John Dalton to represent atoms.\" is sliced through the middle of the type, and along the bottom edge the line \"What was Dalton's atomic theory?\" is sliced through the middle of the type.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q11(c)(i)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2021 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2021-HL-paper-p14-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2021-HL-paper-p14-i0.png",
+  "md5": "5a7ea703f8aec39451f5cc3cdab6f217",
+  "alt": "Left: the tail of the stem paragraph plus the five parts of Q11(d) part A — \"food chains. Nitrogen in soil, in plants and in animals is continuously being restored to the atmosphere as nitrogen gas.\"; (i) \"Why is nitrogen gas unreactive?\"; (ii) \"Describe, using equations or otherwise, how lightning generates the gases NO and NO2 in the atmosphere.\"; (iii) \"Atmospheric NO2 lowers the pH of rainwater. Write a balanced equation for the reaction of NO2 with water forming acid rain.\"; (iv) \"This rainwater forms nitrate compounds in soil that are absorbed by some plants through their root systems. What use do plants make of these nitrate compounds?\"; (v) \"Describe one pathway by which nitrogen in animals is restored to the atmosphere completing the nitrogen cycle.\" (25). Right: a tall black-and-white photograph of a single brilliant forked lightning bolt striking down through a black night sky, its branches spreading to the left, ending at a dark silhouetted treeline along the bottom of the frame. There are no labels or letters on the photograph.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q11(d) part A",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2021 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2021-HL-paper-p14-i1": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2021-HL-paper-p14-i1.png",
+  "md5": "230ad083c0f280960381086768b68da9",
+  "alt": "Left: the stem of Q11(d) part B — \"Strongly electropositive metals, e.g. aluminium and sodium, are extracted from their ores by electrolysis. Chemical methods can be used to extract other metals, e.g. iron and zinc from their ores. Occasionally nuggets of metallic elements are found free in nature. The photograph shows a large piece of elemental copper found in Michigan, U.S.A. It was torn away from a vein of copper by a moving glacier during the ice age.\" with \"electrolysis\" underlined, followed by \"(i) Explain the underlined term.\" Right: a black-and-white landscape photograph of a very large, irregular, pale boulder-like mass of native copper lying on mown grass, with bare woodland and tree trunks behind it. Its surface is rough and lumpy, creased with dark pits and folds. No scale bar, label or lettering appears on the photograph. Along the very top edge only the bottom sliver of a bold capital \"B\" — the part heading — is visible.",
+  "lettersVisible": [
+   "B"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "B",
+    "meaning": "The paper's part label. Q11(d) reads \"Answer part A or part B\"; this crop is part B."
+   }
+  ],
+  "questionRef": "2021 HL Q11(d) part B",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2021 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2024-HL-paper-p03-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2024-HL-paper-p03-i0.png",
+  "md5": "88387c359fe9ab87312af7a4002821a4",
+  "alt": "Question 2(a) printed in full on the left with its apparatus line drawing on the right. The drawing shows a hot-filtration set-up: a vertical retort-stand rod standing on a heavy solid rectangular base, with a boss and a horizontal clamp arm gripping the rod about a third of the way up and carrying a ring/collar. Resting in that ring is a filter funnel holding a cone of fluted (pleated, concertina-folded) filter paper whose folds fan out well above the funnel rim, and the funnel's stem points down into the neck of a conical (Erlenmeyer) flask that stands on the same base. Nothing is drawn inside the flask; no liquid, no heat source, no letters or arrows on the apparatus. The question text asks about purifying benzoic acid by recrystallisation with water, parts (i) to (v), ending '(20)'.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q2(a)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2024 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2024-HL-paper-p05-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2024-HL-paper-p05-i0.png",
+  "md5": "09bc5745d711993aaccb9ef9aa29abe0",
+  "alt": "Question text from Q4 with the Q4(d) diagram at the right. The diagram shows two identical round-bottomed flasks standing side by side. Each flask neck is closed by a stepped stopper/valve assembly (a wide cylindrical collar above a narrower ring, with a short tube reaching down into the neck), and from the top of each assembly a short vertical tube rises to a circular dial pressure gauge with tick marks around its rim and a needle pointing to the right; both needles sit in the same position. The bulb of the left flask carries the bold label 'He' and the bulb of the right flask the bold label 'O2', each with a small curly shading/highlight mark on its upper right. The text alongside covers Q4(c) to Q4(f), including the Q4(d) wording about two identical flasks at the same temperature and pressure, 2.4 g of gas in the oxygen flask, and calculating the mass of helium.",
+  "lettersVisible": [
+   "He",
+   "O2"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "He",
+    "meaning": "The flask filled with helium gas - the paper states 'two identical flasks, one filled with helium gas and the other filled with oxygen gas'."
+   },
+   {
+    "letter": "O2",
+    "meaning": "The flask filled with oxygen gas; the paper states there are 2.4 g of gas in the flask of oxygen."
+   }
+  ],
+  "questionRef": "2024 HL Q4(d)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2024 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2024-HL-paper-p05-i1": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2024-HL-paper-p05-i1.png",
+  "md5": "3c8e393672852036a9c9539c05f1c3d4",
+  "alt": "Question 4(k) with the structural formula of benzocaine drawn at the right. The structure is a benzene ring drawn as a hexagon with a circle inscribed in it; an 'H2N-' group is bonded at the left-hand (para) position, and from the opposite ring position a bond runs to a carbon that is double-bonded to an 'O' drawn above it and single-bonded to an 'O' below-right, which in turn connects to '-CH2-CH3'. The text says the structure of the painkiller benzocaine is shown on the right and asks for the percentage yield when 2412.3 g of pure benzocaine was obtained against a theoretical yield of 21.5 moles.",
+  "lettersVisible": [
+   "H2N",
+   "O",
+   "O",
+   "CH2",
+   "CH3"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q4(k)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2024 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2024-HL-paper-p07-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2024-HL-paper-p07-i0.png",
+  "md5": "11e425f563ef2f951212099406840f9f",
+  "alt": "The two full structural formulae from the stem of Question 6, drawn side by side with a reaction arrow pointing from the left one to the right one. The left structure, labelled 'A' beneath it, is a straight chain of eight carbons written C-C-C-C-C-C-C-C with a vertical bond to an H above and an H below every carbon and an H bonded at each end of the chain. The right structure, labelled 'B' beneath it, is a five-carbon chain with an H at each end; the second carbon carries a CH3 above and a CH3 below, the fourth carbon carries a CH3 above and an H below, and every other position carries an H - a branched skeleton. All bonds are drawn explicitly.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "H",
+   "C",
+   "CH3"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Hydrocarbon A, which the paper says is obtained in the naphtha fraction when crude oil is fractionally distilled and which may be converted to hydrocarbon B. The 2024 HL marking scheme gives its IUPAC name as octane."
+   },
+   {
+    "letter": "B",
+    "meaning": "Hydrocarbon B, the product of converting A. The 2024 HL marking scheme gives its IUPAC name as 2,2,4-trimethylpentane."
+   }
+  ],
+  "questionRef": "2024 HL Q6",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2024 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2024-HL-paper-p13-i1": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2024-HL-paper-p13-i1.png",
+  "md5": "2b17aa54de2ca1cba4804e645ce03849",
+  "alt": "Question 11(d) part B with a shaded cutaway diagram of a blast furnace on the right. The furnace is drawn in section as a tall, waisted vertical vessel, dark inside, with a group of upward-pointing arrows through its lower half showing gas rising. An inclined skip-hoist track runs up the left-hand side to the top opening, where a tipped container is discharging material into the throat; a leader line from that opening is labelled 'charge'. A leader line to the vessel body on the right is labelled 'furnace'. Lower down on the right, a horizontal pipe entering the furnace is labelled 'hot gas'. The furnace stands on a pale rectangular hearth/base block: a tapping channel runs out to the left into a small vessel and is labelled 'molten iron', and a matching outlet runs out to the right into a small vessel labelled with a bold 'B'. The word 'or' is centred above the whole item, and a bold 'B' in the left margin introduces the question text, which asks students to identify the two solids added with the iron ore in the charge, the hot gas blown in above the hearth, and by-product B removed at the bottom.",
+  "lettersVisible": [
+   "B",
+   "charge",
+   "furnace",
+   "hot gas",
+   "molten iron",
+   "or"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "B (label on the diagram, bottom right)",
+    "meaning": "The by-product removed at the bottom of the furnace, which part (iii) asks students to identify. The 2024 HL marking scheme's answer is slag / CaSiO3 / CaAl2O4."
+   },
+   {
+    "letter": "B (bold letter in the left margin)",
+    "meaning": "Part B of Question 11(d) - the blast-furnace alternative to part A, per the paper's 'Answer part A or part B'. This is a different B from the one on the diagram."
+   },
+   {
+    "letter": "charge",
+    "meaning": "The material continually added at the top of the furnace; part (i) states it contains iron ore plus two other solid materials (marking scheme: coke/carbon and limestone/calcium carbonate)."
+   },
+   {
+    "letter": "hot gas",
+    "meaning": "The hot gas blown into the furnace above the hearth during production, which part (ii) asks students to identify (marking scheme: air / oxygen)."
+   },
+   {
+    "letter": "molten iron",
+    "meaning": "The molten iron run out at the bottom of the furnace; the stem states iron metal is extracted from its ores by reduction in the blast furnace."
+   },
+   {
+    "letter": "furnace",
+    "meaning": "Points to the body of the blast furnace itself, described in the stem as 'a blast furnace like that illustrated in the diagram on the right'."
+   }
+  ],
+  "questionRef": "2024 HL Q11(d) part B",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2024 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2025-HL-paper-p05-i1": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2025-HL-paper-p05-i1.png",
+  "md5": "232a8d221209359fd381b1d2579ff9f8",
+  "alt": "Question 4 part (l), option B. At the left, the italic word 'or' centred above, then bold 'B' and the text 'Monomers for two addition polymers are shown on the right. Identify each of the corresponding addition polymers.' At the right, two structural formulae drawn with explicit atoms and bonds. The left structure, labelled X beneath it, is a benzene ring (hexagon with an inscribed circle) bonded to the left-hand carbon of a C=C double bond; that carbon also carries an H directly above it, and the right-hand carbon of the double bond carries an H to its right and an H below - i.e. phenylethene/styrene. The right structure, labelled Y beneath it, is a C=C double bond whose left carbon carries an H above and an H to the left, while the right carbon carries an H to the right and a CH3 group below - i.e. propene. Both structures and both letters sit clear of every crop edge.",
+  "lettersVisible": [
+   "B",
+   "X",
+   "Y",
+   "H",
+   "C",
+   "CH3"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "X",
+    "meaning": "The left-hand monomer structure. The 2025 marking scheme states X = polyphenylethene / polystyrene for the corresponding addition polymer."
+   },
+   {
+    "letter": "Y",
+    "meaning": "The right-hand monomer structure. The 2025 marking scheme states Y = polypropylene / polypropene for the corresponding addition polymer."
+   },
+   {
+    "letter": "B",
+    "meaning": "Option B of Q4(l), which instructs 'Answer part A or part B'."
+   }
+  ],
+  "questionRef": "2025 HL Q4(l) part B",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2025 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2025-HL-paper-p14-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2025-HL-paper-p14-i0.png",
+  "md5": "4b06368c28e356637a3e9d633dea9636",
+  "alt": "Question 11(d) option B with its electrolysis apparatus diagram at the right. The diagram is a line drawing of a complete circuit: at the top, a two-cell battery symbol (two pairs of long and short parallel plates with a dashed line between them); wires run from each side of the battery down and round, the left-hand wire passing through a small circle containing the letter A; the two wires then run down as two vertical rods (the inert electrodes) that dip into a shallow crucible/dish holding a grey-shaded liquid. A leader line from the liquid points right to the two-line label 'molten PbBr2'. Below the crucible a Bunsen burner with a visible flame stands on a round base, heating it. The question text at the left reads: 'The electrolysis can be carried out in an arrangement of apparatus as shown, using a pair of inert electrodes immersed in molten lead bromide.' then (i) explain electrolysis, (ii) suitable inert-electrode material, (iii) compare conductivity of solid vs molten lead(II) bromide, the line 'During the electrolysis, oxidation occurs at the anode.', then (iv) oxidation in terms of electron transfer, (v) which element forms at the anode, (vi) balanced half-equation at the anode, (25).",
+  "lettersVisible": [
+   "B",
+   "A",
+   "PbBr2"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "molten PbBr2",
+    "meaning": "Printed on the diagram with a leader line pointing to the grey liquid in the crucible - the molten lead(II) bromide being electrolysed."
+   },
+   {
+    "letter": "B",
+    "meaning": "Option B of Q11(d), which instructs 'Answer part A or part B'."
+   }
+  ],
+  "questionRef": "2025 HL Q11(d) part B",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2025 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2024-OL-paper-p02-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2024-OL-paper-p02-i0.png",
+  "md5": "f0c28ce388b85f51577c839328241fba",
+  "alt": "Line drawing of a laboratory gas-preparation and collection set-up. Top left: a pear-shaped dropping funnel, drawn with a liquid level in it and with its stem left open at the top of the artwork, feeding through a stopcock/tap and then through a hatched rubber stopper into the neck of a conical (Erlenmeyer) flask; an arrow labelled \"water\" points into the funnel. A few small dark lumps sit on the flat bottom of the flask, with an arrow labelled \"solid X\" pointing at them. A short side tube leaves the flask just under the neck, runs right as a delivery tube, then bends down over the rim of a rectangular trough of water, dips below the water line and turns up under the open mouth of a tall round-topped tube (gas jar / boiling tube) that stands upright on a small block inside the trough; two tiny bubbles are drawn inside that tube and an arrow labelled \"ethyne\" points into its gas space. Gas is therefore being collected over water.",
+  "lettersVisible": [
+   "X",
+   "water",
+   "ethyne"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "X",
+    "meaning": "\"solid X\" = the solid reactant lying in the conical flask that water is dripped onto. Q1(b)(i) asks students to identify it; the 2024 OL marking scheme gives the answer as \"(calcium) carbide\"."
+   },
+   {
+    "letter": "water",
+    "meaning": "the liquid in the dropping funnel, added dropwise onto X (paper Q1(b)(ii): \"Why is water added dropwise rather than poured directly onto X?\")."
+   },
+   {
+    "letter": "ethyne",
+    "meaning": "the gas being collected in the inverted tube over water; the paper stem states the diagram \"shows the apparatus used for the preparation of ethyne (C2H2) gas in the laboratory\"."
+   }
+  ],
+  "questionRef": "2024 OL Q1",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2024-OL-paper-p08-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2024-OL-paper-p08-i0.png",
+  "md5": "be495411026d67161d107258a2137717",
+  "alt": "Line drawing of a rate-of-reaction apparatus, with a separate stopwatch drawn alongside. A conical (Erlenmeyer) flask holds a shallow layer of liquid; standing in that liquid on a small raised stand or shelf is a small dark lump of solid. The flask's neck is sealed by a dark rubber bung through which a glass delivery tube passes; the tube rises vertically above the bung, bends through a right angle and runs horizontally to the right into the nozzle of a gas syringe lying on its side, whose barrel is graduated with sideways numerals 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 and which has a plunger with an end flange at the far right. Leader lines label \"hydrogen peroxide\" (pointing to the liquid in the flask), \"manganese dioxide (catalyst)\" (pointing to the dark solid on the stand inside the flask) and \"gas syringe\" (beneath the syringe). Well to the right, physically unconnected to the apparatus, is a drawing of a round stopwatch with a ring and crown on top, a finely ticked dial and a single needle, labelled \"stopwatch\". A line of body text sits above the drawing (\"investigated using the apparatus shown below.\") and another below it (\"The oxygen (O2) gas produced was collected in the gas syringe.\").",
+  "lettersVisible": [
+   "gas syringe",
+   "hydrogen peroxide",
+   "manganese dioxide (catalyst)",
+   "stopwatch"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q7",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2024-OL-paper-p11-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2024-OL-paper-p11-i0.png",
+  "md5": "9db53b6692f31f66e231593259df7c21",
+  "alt": "On the right, a greyscale map of the island of Ireland set on a light grey sea background inside a rectangular panel: the land is mottled with black, mid-grey and white patches, with the north-east of the island largely white and dense black patching running through the south-west, west and midlands; a fine line traces the coastline and internal boundaries. At the bottom-left of the panel is a small north arrow with a scale bar under it, and at the bottom centre a four-row key of shaded swatches whose caption text is printed far too small and at too low a resolution to be legible. On the left, the printed text of Q10(c): \"In Ireland, high levels of radon-222 (222/86 Rn) are found in areas such as Galway and Wicklow, which have a lot of granite rock. Radon-222 is the most stable isotope of radon, with a half-life of approximately 3.8 days. It decays by emitting an alpha particle.\", followed by parts (i) explain the underlined term, (ii) protons, (iii) neutrons, (iv) electrons, (v) what is an alpha particle.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q10(c)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2025-OL-paper-p02-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2025-OL-paper-p02-i0.png",
+  "md5": "34619bd065b4fabef206d0f8a0a59492",
+  "alt": "Two labelled glassware set-ups side by side. Diagram 1 (left): a round-bottomed flask holding the reaction mixture stands in a rectangular trough of hot water; a long vertical water-jacketed condenser with two side arms is fitted upright into the flask neck. An arrow labelled C points at this vertical condenser; further arrows label \"reaction mixture\" (the liquid in the flask) and \"hot water\" (the bath). Diagram 2 (right): a round-bottomed flask sits in a trough labelled \"boiling water\"; a still head on the flask carries a graduated thermometer standing vertically, and a long condenser sloping down to the right, labelled C by an arrow, with two side arms; the condenser ends in a bent adapter that delivers into a small conical flask receiver at the bottom right. Printed question text runs above and below the diagrams.",
+  "lettersVisible": [
+   "C",
+   "Diagram 1",
+   "Diagram 2",
+   "reaction mixture",
+   "hot water",
+   "boiling water"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "C",
+    "meaning": "(Liebig) condenser — stated in the 2025 OL marking scheme, Q1(c)(i)"
+   }
+  ],
+  "questionRef": "2025 OL Q1(b)/(c)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2025-OL-paper-p02-i1": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2025-OL-paper-p02-i1.png",
+  "md5": "77c94503bf73ae15e705ac3f7a37179d",
+  "alt": "Two black-outlined GHS hazard diamonds on the right of the crop, each with a heading above it. The left one, headed \"NaOH\", shows a test tube pouring liquid onto a flat block and a second stream falling onto a hand, with both the block surface and the hand being eaten away. The right one, headed \"Ethanol\", shows a single flame burning on a horizontal line. To the left is the printed question asking students to state the chemical hazard indicated by each pictogram, with the (8) mark allocation.",
+  "lettersVisible": [
+   "NaOH",
+   "Ethanol"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "NaOH",
+    "meaning": "heads the pictogram found on sodium hydroxide containers; the 2025 OL marking scheme, Q1(e), gives the hazard as corrosive"
+   },
+   {
+    "letter": "Ethanol",
+    "meaning": "heads the pictogram found on ethanol containers; the 2025 OL marking scheme, Q1(e), gives the hazard as flammable"
+   }
+  ],
+  "questionRef": "2025 OL Q1(e)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2025-OL-paper-p03-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2025-OL-paper-p03-i0.png",
+  "md5": "228f6feec8c9f9c553eef4dc440378a1",
+  "alt": "On the right, a line drawing of a volumetric flask: a pear-shaped bulb with a long narrow neck, a single graduation ring part-way up the neck and a ground-glass stopper in the top. \"250 cm3\" is printed inside the bulb and a bold \"P\" sits directly beneath the flask. The left two-thirds of the crop is the printed stem of Q2 (a titration of Na2CO3 against HCl) with parts (a) and (b)(i)–(iv).",
+  "lettersVisible": [
+   "P",
+   "250 cm3"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "P",
+    "meaning": "volumetric flask — stated in the 2025 OL marking scheme, Q2(b)(i)"
+   }
+  ],
+  "questionRef": "2025 OL Q2(b)(i)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2025-OL-paper-p05-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2025-OL-paper-p05-i0.png",
+  "md5": "cbbcbd74270a57315d6b62fe683f2326",
+  "alt": "A black-and-white photograph at the right of a reed diffuser: a squat round glass bottle with a metal collar, part-filled with clear liquid, standing on a white surface against a dark grey wall, with about seven thin black reed sticks fanning upwards out of the neck. The left two-thirds of the crop is printed Q4 text, parts (i) to (l), including the diffusion question the photograph illustrates.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q4(k)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2025-OL-paper-p06-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2025-OL-paper-p06-i0.png",
+  "md5": "07baa8b08db7ea80f095469b1d9b8228",
+  "alt": "A small three-dimensional shaded grey illustration at the right of the crop: a ball studded with many small spheres, with a wedge-shaped segment cut out of it and floating above and to the right; the exposed cut faces are pale grey and also carry embedded small spheres, and a tiny dot sits at the centre of the hollowed cavity. It sits beside the paragraph describing the 1897 idea of a spherical atom with small negative particles embedded in positive matter. The rest of the crop is Q5 text about how descriptions of atomic structure changed between 1808 and 1913.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q5",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2025-OL-paper-p07-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2025-OL-paper-p07-i0.png",
+  "md5": "ab3da3bab009143bb8e83e8369fd39cd",
+  "alt": "On the right, a line drawing of a test tube standing upright, roughly half filled with a pale shaded liquid; small bubbles are drawn rising through the liquid. A narrow delivery tube runs down inside the test tube almost to the base and bends over to the right at the top, where an arrow labels the incoming gas \"C2H2\". A second arrow points to the liquid at the bottom of the tube and is labelled \"Br2 solution\". The left side of the crop carries Q6(c)(i)–(ii) and Q6(d), including the equation to balance, \"CH4 + O2 → ___ + ___\".",
+  "lettersVisible": [
+   "C2H2",
+   "Br2 solution"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "C2H2",
+    "meaning": "the gaseous hydrocarbon being bubbled in through the delivery tube — the paper states \"When C2H2 is bubbled through a solution of bromine (Br2), as shown in the diagram\" (Q6(c))"
+   },
+   {
+    "letter": "Br2 solution",
+    "meaning": "the orange-coloured bromine solution in the test tube, which decolourises — stated in the paper, Q6(c)"
+   }
+  ],
+  "questionRef": "2025 OL Q6(c)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2025-OL-paper-p08-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2025-OL-paper-p08-i0.png",
+  "md5": "249d8913b3f0c0259d1df506432c7192",
+  "alt": "A black-and-white photograph of a shallow cylindrical glass dish, roughly half full of water, standing on a bench. At the top right a hand holds a pair of tweezers gripping a small dark piece of metal just above the water surface. An arrow from the printed word \"potassium\" above the dish points to the piece held in the tweezers; an arrow from the printed word \"water\" at the right points to the liquid in the dish.",
+  "lettersVisible": [
+   "potassium",
+   "water"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "potassium",
+    "meaning": "the tiny piece of potassium metal about to be added to the water — the paper states \"A tiny piece of potassium metal is added to water\" (Q7(b))"
+   },
+   {
+    "letter": "water",
+    "meaning": "the water in the dish that the potassium reacts with — stated in the paper, Q7(b)"
+   }
+  ],
+  "questionRef": "2025 OL Q7(b)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2025-OL-paper-p08-i1": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2025-OL-paper-p08-i1.png",
+  "md5": "7ab94f5287de4c7b89a2ad7794cdd42b",
+  "alt": "On the right, a heavy black line drawing of a squat bottle with a screw cap. The upper half of its label reads \"'pH up' solution\"; the lower half of the label is a picture of an aquarium — a rectangular tank of water containing two fish, a plant at the right, and an air stone at the left releasing a column of bubbles. The left side of the crop carries Q7(c)(i)–(iv): define pH, the pH of a neutral solution, calculate the pH of 0.1 M HCl, and whether the 'pH up' solution is acidic or basic, with the (24) mark allocation.",
+  "lettersVisible": [
+   "'pH up' solution"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q7(c)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2025-OL-paper-p10-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2025-OL-paper-p10-i0.png",
+  "md5": "a0a35ea766b09e2a1a75649b91312836",
+  "alt": "On the right, a three-dimensional line drawing of the electrolysis of water. A clear cylindrical vessel holds the liquid electrolyte; two inverted collection tubes stand in the liquid, one over each of two small dark electrodes, and dense streams of small bubbles rise up inside both tubes. A wire runs from each electrode out through the base of the vessel and down to a battery / direct-current supply symbol (paired long and short parallel plates) drawn below; the left wire is marked \"+\" and the right wire \"–\". The left side of the crop carries the Q9(c) stem about splitting water by electrolysis with inert electrodes and parts (i) and (ii).",
+  "lettersVisible": [
+   "+",
+   "–"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "+",
+    "meaning": "the electrode connected to the positive terminal of the direct current power supply — the paper states the electrodes are connected to the positive and negative terminals of a d.c. supply (Q9(c))"
+   },
+   {
+    "letter": "–",
+    "meaning": "the electrode connected to the negative terminal of the direct current power supply — the paper states the volume of gas collected at the negative electrode is twice that at the positive electrode (Q9(c))"
+   }
+  ],
+  "questionRef": "2025 OL Q9(c)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2025-OL-paper-p12-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2025-OL-paper-p12-i0.png",
+  "md5": "afeb65026c9aeb08e9e03d91bc5d1e16",
+  "alt": "At the right, a black-and-white photograph of a smiling woman with shoulder-length curly dark hair and dark-framed glasses, wearing a light cardigan over a plain top, photographed in front of a pale wall with dark framed pictures behind her; the adjacent text identifies her as Clarice Phelps. The left side of the crop is the tail of Q11(a)'s cloze passage about the periodic table, with the numbered blanks 6 and 7 and the (25) mark allocation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q11(a)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2025-OL-paper-p14-i2": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2025-OL-paper-p14-i2.png",
+  "md5": "61331ebcb17df6ae6c1b62860dcfe7b7",
+  "alt": "At the right, a black-and-white photograph of a heap of used drink and food cans piled on top of one another, many crushed or dented, with partly legible printed labels — a pile of cans for recycling. The left side of the crop carries Q11(d) part B: the stem about cans made of tin-coated steel or of aluminium, and parts (i) to (iv) on corrosion, protective coatings, galvanising and the advantage of recycling aluminium.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q11(d) part B",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2025 Ordinary Level — © State Examinations Commission"
  }
 }
