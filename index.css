@@ -79,3 +79,22 @@
 .chunky-slider-coral::-moz-range-thumb { background: #DC2626; border: 2.5px solid #B91C1C; box-shadow: 3px 3px 0px 0px #B91C1C; }
 .chunky-slider-coral:hover::-webkit-slider-thumb { box-shadow: 4px 4px 0px 0px #B91C1C; }
 .chunky-slider-coral:active::-webkit-slider-thumb { box-shadow: 1px 1px 0px 0px #B91C1C; }
+
+/* Mark Bank — the card-to-card change.
+ *
+ * A CSS animation, deliberately, not framer's initial/animate. The session
+ * re-renders often (the marks tally drives one per frame), and a JS mount
+ * animation restarts from its `initial` on every one of them: the card was
+ * measured sitting at opacity 0.22 three seconds after it appeared, and at 0
+ * after grading. A keyed element genuinely remounts when the card changes, so a
+ * CSS animation runs exactly once and the browser guarantees the end state
+ * whatever React does above it. */
+@keyframes mb-card-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.mb-card-in { animation: mb-card-in 220ms cubic-bezier(.16, 1, .3, 1) both; }
+
+@media (prefers-reduced-motion: reduce) {
+  .mb-card-in { animation-duration: 1ms; }
+}

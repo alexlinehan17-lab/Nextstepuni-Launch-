@@ -764,6 +764,12 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
        ships a fullscreen mode, RemNote drops its sidebar, Mochi dims the app.
        Sitting inside the shell means the app's own header competes with the exam
        question for the top of the screen, and loses the student ~150px of it. */
+    /* NO entrance fade on this element. It is the whole screen, and an opacity
+       animation here restarts on every re-render of the session — the tool was
+       measured sitting at opacity 0.2 four seconds after opening. A decorative
+       fade whose failure mode is an invisible tool is not worth having; the
+       transitions that earn their place are inside, where a stall costs one card
+       rather than everything. */
     <div style={{
       /* Above the app's own z-100 chrome overlay. During a review the points
          chip and notification bell are exactly what should step aside — and the
@@ -789,7 +795,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             style={{
               display: 'flex', alignItems: 'center', gap: 6,
               background: 'none', border: 'none', padding: '4px 2px', cursor: 'pointer',
-              color: INK, font: `600 13px/1 ${SANS}`,
+              color: INK, font: `600 13px/1.5 ${SANS}`,
             }}
           >
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -800,8 +806,12 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
 
           {/* One line where four stacked headings used to be. */}
           <span style={{
-            font: `400 13px/1 ${SANS}`, color: MUTED,
+            // 1.5, not 1: a line box the same height as the type clips every
+            // descender, and `overflow: hidden` — needed for the ellipsis —
+            // turns that clip into a straight cut through the g's.
+            font: `400 13px/1.5 ${SANS}`, color: MUTED,
             overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap',
+            flexShrink: 0,
           }}>
             {subjectLabel} · {card.level === 'higher' ? 'Higher' : 'Ordinary'}
           </span>
@@ -809,14 +819,14 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
           <span style={{ flex: 1 }} />
 
           <span style={{
-            font: `700 12.5px/1 ${MONO}`, color: MUTED,
+            font: `700 12.5px/1.5 ${MONO}`, color: MUTED,
             fontVariantNumeric: 'tabular-nums', whiteSpace: 'nowrap',
           }}>
             Card {Math.min(distinctDone + 1, cards.length)} of {cards.length}
           </span>
           {banked > 0 && (
             <span style={{
-              font: `700 12.5px/1 ${MONO}`, color: SUCCESS_TEXT,
+              font: `700 12.5px/1.5 ${MONO}`, color: SUCCESS_TEXT,
               fontVariantNumeric: 'tabular-nums', whiteSpace: 'nowrap',
             }}>
               {banked} banked
@@ -829,11 +839,24 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
       {/* The work surface. Two panes from the FIRST frame, never assembled at the
           moment of reveal — re-laying out exactly when the student starts reading
           evidence is the worst possible time to move anything. */}
-      <div style={{
-        maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto', padding: '34px 16px 0',
-        display: 'flex', alignItems: 'flex-start',
-        gap: wide ? 32 : 0, flexDirection: wide ? 'row' : 'column',
-      }}>
+      {/* Keyed, but NOT inside an AnimatePresence: `mode="wait"` holds the next
+          question back until the old one has finished leaving, which adds a third
+          of a second to every card in a twelve-card sitting. Re-keying alone
+          re-runs `initial -> animate`, so the new card fades up immediately while
+          the panes below ease to their new heights.
+
+          Opacity ONLY. A y-offset leaves a transform on this element, and a
+          transformed ancestor becomes the containing block for position:sticky —
+          which would silently kill the sticky question pane inside it. */}
+      <div
+        key={card.id}
+        className="mb-card-in"
+        style={{
+          maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto', padding: '34px 16px 0',
+          display: 'flex', alignItems: 'flex-start',
+          gap: wide ? 32 : 0, flexDirection: wide ? 'row' : 'column',
+        }}
+      >
       <div style={{
         width: wide ? QUESTION_W : '100%',
         maxWidth: '100%',
@@ -842,7 +865,11 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         // is the evidence a student marks against, so it must never leave view.
         position: wide ? 'sticky' : 'static', top: 96,
       }}>
-        <div style={{ background: '#FFFFFF', borderRadius: 18, overflow: 'hidden', border: `2px solid ${INK}` }}>
+        <MotionDiv
+          layout={reduced ? false : true}
+          transition={{ duration: 0.26, ease: EASE }}
+          style={{ background: '#FFFFFF', borderRadius: 18, overflow: 'hidden', border: `2px solid ${INK}` }}
+        >
           <div style={{ padding: '16px 18px 18px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 10 }}>
               <span style={{
@@ -882,7 +909,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               </figure>
             )}
           </div>
-        </div>
+        </MotionDiv>
       </div>
 
       {/* The scheme pane. Present from the first frame so nothing moves on
@@ -894,7 +921,13 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         flex: '0 0 auto',
         marginTop: wide ? 0 : 14,
       }}>
-        <div style={{ background: '#FFFFFF', borderRadius: 18, overflow: 'hidden', border: `2px solid ${INK}` }}>
+        <MotionDiv
+          /* The pane still grows from the prompt to the marking points within a
+             single card; `layout` eases that instead of snapping to the new size. */
+          layout={reduced ? false : true}
+          transition={{ duration: 0.26, ease: EASE }}
+          style={{ background: '#FFFFFF', borderRadius: 18, overflow: 'hidden', border: `2px solid ${INK}` }}
+        >
           {!revealed && (
             <div style={{ padding: '16px 18px 18px' }}>
               <span style={{
@@ -990,7 +1023,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               </MotionDiv>
             )}
           </AnimatePresence>
-        </div>
+        </MotionDiv>
       </div>
       </div>
 
@@ -1007,25 +1040,23 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         position: 'fixed', left: 0, right: 0, bottom: 0, zIndex: 2,
         background: '#FFFFFF', borderTop: `2px solid ${INK}`,
       }}>
-        <AnimatePresence>
-          {whisper && (
-            <MotionDiv
-              key="whisper"
-              initial={reduced ? { opacity: 0 } : { opacity: 0, height: 0 }}
-              animate={reduced ? { opacity: 1 } : { opacity: 1, height: 'auto' }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: reduced ? 0.12 : 0.22, ease: EASE }}
-              style={{ overflow: 'hidden' }}
-            >
-              <p style={{
-                maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto', padding: '12px 16px 0',
-                font: `500 13.5px/1.45 ${SANS}`, color: SUCCESS_TEXT,
-              }}>
-                {whisper}
-              </p>
-            </MotionDiv>
-          )}
-        </AnimatePresence>
+        {/* A plain element with a CSS fade, for the same reason as the card: an
+            animated HEIGHT that stalls leaves the sentence sliced in half by the
+            rail's edge, which is exactly what it did. It appears when the
+            schedule has something to say and disappears when the timer clears
+            it — no exit animation to get stuck partway. */}
+        {whisper && (
+          <p
+            key={whisper}
+            className="mb-card-in"
+            style={{
+              maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto', padding: '12px 16px 0',
+              font: `500 13.5px/1.45 ${SANS}`, color: SUCCESS_TEXT,
+            }}
+          >
+            {whisper}
+          </p>
+        )}
 
         {/* The action. Reveal and grade occupy the same band, so nothing shifts
             at the moment the student's attention moves to the marking points. */}

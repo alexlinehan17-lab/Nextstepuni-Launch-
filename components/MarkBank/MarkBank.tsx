@@ -522,10 +522,13 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
                           type="button"
                           disabled={!built}
                           onClick={() => startSession(topic.id)}
+                          onMouseEnter={e => { if (built) e.currentTarget.style.background = '#faf9f7'; }}
+                          onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; }}
                           style={{
                             width: '100%', height: 56, display: 'flex', alignItems: 'center', gap: 16,
-                            padding: '0 18px', textAlign: 'left', background: 'none', border: 'none',
+                            padding: '0 18px', textAlign: 'left', background: 'transparent', border: 'none',
                             cursor: built ? 'pointer' : 'default',
+                            transition: 'background 140ms ease',
                           }}
                         >
                           <span style={{
