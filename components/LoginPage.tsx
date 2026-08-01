@@ -8,9 +8,9 @@ import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv, MotionP } from './Motion';
 import { ArrowLeft, Eye, EyeOff, School, GraduationCap, ArrowRight, Check, KeyRound } from 'lucide-react';
 import { Capacitor } from '@capacitor/core';
-import { SignInWithApple } from '../utils/signInWithApple';
+import { authorizeWithApple } from '../utils/appleAuth';
 import app, { auth, db } from '../firebase';
-import { signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile, deleteUser, sendPasswordResetEmail, sendEmailVerification, GoogleAuthProvider, signInWithPopup, OAuthProvider, signInWithCredential } from 'firebase/auth';
+import { signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile, deleteUser, sendPasswordResetEmail, sendEmailVerification, GoogleAuthProvider, signInWithPopup, signInWithCredential } from 'firebase/auth';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { getFunctions, httpsCallable } from 'firebase/functions';
 import { type SessionUser, getAvatarUrl, AVATAR_SEEDS } from '../utils/authUtils';
@@ -35,16 +35,6 @@ const SHOW_APPLE_SIGN_IN = Capacitor.isNativePlatform();
 // Apple Sign-In + Firebase replay protection: send Apple a SHA-256 hash of a
 // random nonce, then hand Firebase the *raw* nonce so it can verify the hash in
 // the returned identity token.
-const generateNonce = (length = 32): string => {
-  const charset = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-._';
-  const bytes = new Uint8Array(length);
-  crypto.getRandomValues(bytes);
-  return Array.from(bytes, (b) => charset[b % charset.length]).join('');
-};
-const sha256Hex = async (input: string): Promise<string> => {
-  const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(input));
-  return Array.from(new Uint8Array(digest), (b) => b.toString(16).padStart(2, '0')).join('');
-};
 
 // ── Shared animation tokens ──
 const SPRING_FAST = { type: 'spring' as const, stiffness: 500, damping: 28 };
@@ -426,19 +416,10 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const handleAppleSignIn = async () => {
     setIsLoading(true); setError('');
     try {
-      const rawNonce = generateNonce();
-      const hashedNonce = await sha256Hex(rawNonce);
       // Native Apple sign-in via AuthenticationServices (no third-party SDK).
-      // Apple receives the SHA-256 hash of the nonce; Firebase verifies it
-      // against the raw nonce below.
-      const result = await SignInWithApple.authorize({ nonce: hashedNonce });
-      const idToken = result.identityToken;
-      if (!idToken) { setError('Apple sign-in did not return a token. Try again.'); setIsLoading(false); return; }
-
-      // Exchange the Apple identity token for a Firebase session. rawNonce lets
-      // Firebase verify the token's hashed nonce.
-      const provider = new OAuthProvider('apple.com');
-      const credential = provider.credential({ idToken, rawNonce });
+      // The nonce pairing lives in utils/appleAuth so the deletion flow's
+      // re-authentication uses the identical exchange.
+      const { credential, result } = await authorizeWithApple();
       const cred = await signInWithCredential(auth, credential);
 
       // Apple returns the user's name ONLY on the first authorization.

@@ -7,7 +7,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import { X, Check, Lock, Sun, Moon, RefreshCw, LogOut, ChevronRight, Compass, GraduationCap, ArrowRight, ShieldCheck, FileText, Database } from 'lucide-react';
+import { X, Check, Lock, Sun, Moon, RefreshCw, LogOut, ChevronRight, Compass, GraduationCap, ArrowRight, ShieldCheck, FileText, Trash2 } from 'lucide-react';
 import { useModal } from '../hooks/useModal';
 import { LegalModal, type LegalDoc } from './legal/LegalModal';
 import { DataRightsModal } from './account/DataRightsModal';
@@ -330,13 +330,33 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                     </div>
                     <ChevronRight size={14} className="text-zinc-300 dark:text-zinc-600" />
                   </button>
+                </div>
+              </section>
+
+              {/* Account — its own section on purpose.
+                  App Review rejected 1.0 (1) under Guideline 5.1.1(v) saying the
+                  app had no way to delete an account. It did: this button, then
+                  "Delete my account". But it was labelled "Download or delete my
+                  data", sat third in the LEGAL list under Privacy Notice and
+                  Terms, and wore a database icon — so it read as a GDPR export
+                  control and a reviewer scanning for the words "Delete Account"
+                  went straight past it. The feature was never the problem; the
+                  wording was. Keep "Delete Account" in this label. */}
+              <section>
+                <h3 className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-3">
+                  Account
+                </h3>
+                <div className="space-y-1">
                   <button
                     onClick={() => setDataRightsOpen(true)}
                     className="w-full flex items-center justify-between p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-white/[0.04] transition-colors"
                   >
                     <div className="flex items-center gap-3">
-                      <Database size={16} className="text-zinc-400" />
-                      <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">Download or delete my data</p>
+                      <Trash2 size={16} className="text-rose-500" />
+                      <div className="text-left">
+                        <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">Delete Account</p>
+                        <p className="text-[12px] text-zinc-500">Permanently erase your account, or download your data first.</p>
+                      </div>
                     </div>
                     <ChevronRight size={14} className="text-zinc-300 dark:text-zinc-600" />
                   </button>

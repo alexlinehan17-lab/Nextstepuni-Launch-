@@ -8,11 +8,12 @@ import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import { X, Download, Trash2, ShieldAlert, Loader2, Check } from 'lucide-react';
-import { EmailAuthProvider, reauthenticateWithCredential, signOut } from 'firebase/auth';
+import { signOut } from 'firebase/auth';
 import { getFunctions, httpsCallable } from 'firebase/functions';
 import app, { auth } from '../../firebase';
 import { useModal } from '../../hooks/useModal';
 import { logError } from '../../utils/logError';
+import { reauthMethodFor, reauthenticateCurrentUser } from '../../utils/reauthenticate';
 
 // Self-service GDPR Article 15 (export) + Article 17 (erasure) — audit item 15.
 // Backed by the exportMyData / requestAccountDeletion Cloud Functions.
@@ -39,6 +40,10 @@ export const DataRightsModal: React.FC<DataRightsModalProps> = ({ open, onClose,
   const [password, setPassword] = useState('');
   const [typed, setTyped] = useState('');
   const [error, setError] = useState('');
+  const [reauthBusy, setReauthBusy] = useState(false);
+  // How this user proves who they are. An Apple or Google account has no
+  // password, so asking for one is a dead end rather than a security step.
+  const reauthMethod = reauthMethodFor(auth.currentUser);
   // Don't allow Esc / backdrop to dismiss mid-deletion.
   useModal(open, () => { if (phase !== 'deleting' && phase !== 'deleted') reset(); });
 
@@ -73,16 +78,27 @@ export const DataRightsModal: React.FC<DataRightsModalProps> = ({ open, onClose,
   const handleReauth = async () => {
     setError('');
     const user = auth.currentUser;
-    if (!user?.email) { setError('Could not verify your account. Please sign out and back in.'); return; }
+    if (!user) { setError('Could not verify your account. Please sign out and back in.'); return; }
+    setReauthBusy(true);
     try {
-      await reauthenticateWithCredential(user, EmailAuthProvider.credential(user.email, password));
-      // Force a fresh ID token so the deletion function sees a recent auth_time.
-      await user.getIdToken(true);
+      await reauthenticateCurrentUser(user, password);
       setPassword('');
       setPhase('delete-type');
     } catch (err) {
       console.error('Re-authentication failed:', err);
-      setError('Incorrect password. Please try again.');
+      // Say what actually went wrong. Telling an Apple user their password is
+      // wrong when they have never had one is how this stayed hidden.
+      setError(
+        reauthMethod === 'password'
+          ? 'Incorrect password. Please try again.'
+          : reauthMethod === 'apple'
+            ? 'Apple could not confirm it was you. Please try again.'
+            : reauthMethod === 'google'
+              ? 'Google could not confirm it was you. Please try again.'
+              : 'We could not verify your account. Please contact nextstepuniinfo@gmail.com.',
+      );
+    } finally {
+      setReauthBusy(false);
     }
   };
 
@@ -188,18 +204,39 @@ export const DataRightsModal: React.FC<DataRightsModalProps> = ({ open, onClose,
         <>
           {header('Confirm it’s you')}
           <div className="p-5">
-            <p className="text-sm text-zinc-600 dark:text-zinc-300 mb-3">Please re-enter your password to continue.</p>
-            <input
-              type="password" value={password} autoFocus
-              onChange={e => { setPassword(e.target.value); setError(''); }}
-              onKeyDown={e => { if (e.key === 'Enter' && password) handleReauth(); }}
-              placeholder="Your password"
-              className="w-full py-3 px-4 rounded-xl text-sm bg-white dark:bg-zinc-800 border-2 border-zinc-200 dark:border-zinc-700 focus:border-rose-400 outline-none text-zinc-800 dark:text-zinc-100"
-            />
+            <p className="text-sm text-zinc-600 dark:text-zinc-300 mb-3">
+              {reauthMethod === 'password'
+                ? 'Please re-enter your password to continue.'
+                : reauthMethod === 'apple'
+                  ? 'Confirm with Apple to continue. You’ll be asked to sign in again.'
+                  : reauthMethod === 'google'
+                    ? 'Confirm with Google to continue. You’ll be asked to sign in again.'
+                    : 'We can’t verify this account automatically. Please contact nextstepuniinfo@gmail.com and we’ll delete it for you.'}
+            </p>
+            {reauthMethod === 'password' && (
+              <input
+                type="password" value={password} autoFocus
+                onChange={e => { setPassword(e.target.value); setError(''); }}
+                onKeyDown={e => { if (e.key === 'Enter' && password) handleReauth(); }}
+                placeholder="Your password"
+                className="w-full py-3 px-4 rounded-xl text-sm bg-white dark:bg-zinc-800 border-2 border-zinc-200 dark:border-zinc-700 focus:border-rose-400 outline-none text-zinc-800 dark:text-zinc-100"
+              />
+            )}
             {errLine}
             <div className="flex gap-2 mt-4">
               <button onClick={reset} className="flex-1 py-3 rounded-xl border-2 border-zinc-200 dark:border-zinc-700 text-sm font-medium text-zinc-600 dark:text-zinc-300">Cancel</button>
-              <button onClick={handleReauth} disabled={!password} className="flex-1 py-3 rounded-xl text-sm font-semibold text-white disabled:opacity-50" style={{ backgroundColor: '#e11d48' }}>Continue</button>
+              <button
+                onClick={handleReauth}
+                disabled={reauthBusy || reauthMethod === 'unsupported' || (reauthMethod === 'password' && !password)}
+                className="flex-1 py-3 rounded-xl text-sm font-semibold text-white disabled:opacity-50 flex items-center justify-center gap-2"
+                style={{ backgroundColor: '#e11d48' }}
+              >
+                {reauthBusy
+                  ? <><Loader2 size={16} className="animate-spin" /> Confirming…</>
+                  : reauthMethod === 'apple' ? 'Confirm with Apple'
+                    : reauthMethod === 'google' ? 'Confirm with Google'
+                      : 'Continue'}
+              </button>
             </div>
           </div>
         </>
