@@ -25,10 +25,6 @@ import SessionScreen, {
   suggestGrade,
 } from '@/components/MarkBank/SessionScreen';
 import { tariffReconciles, type MarkRow, type SecCard, type SecDiagramCard } from '@/types/markBank';
-import type { CardMemory } from '@/components/MarkBank/scheduler';
-
-const NOW = Date.UTC(2026, 6, 30, 12, 0, 0);
-const seen: CardMemory = { s: 6, d: 5, last: NOW - 6 * 86_400_000, reps: 3, lapses: 0, state: 2 };
 
 const row = (o: Partial<MarkRow> = {}): MarkRow => ({ id: 'r0', kind: 'point', verbatim: 'Oesophagus', marks: 2, ...o });
 
@@ -47,7 +43,7 @@ const card = (o: Partial<SecCard> = {}): SecCard => ({
   ...o,
 } as SecCard);
 
-const renderSession = (cards: SecCard[], memories: Record<string, CardMemory> = {}) => {
+const renderSession = (cards: SecCard[]) => {
   const onGrade = vi.fn();
   const onFinish = vi.fn();
   const onExit = vi.fn();
@@ -230,14 +226,14 @@ describe('the question comes first and stays', () => {
 
 describe('claiming marks', () => {
   test('rows start unclaimed, so overconfidence takes an action rather than an omission', () => {
-    renderSession([card()], { 'bio-2025-hl-q6-ab': seen });
+    renderSession([card()]);
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     expect(screen.getByRole('button', { name: /Oesophagus/ })).toHaveAttribute('aria-pressed', 'false');
     expect(screen.getByText(/Not claimed yet/i)).toBeInTheDocument();
   });
 
   test('one tap claims a row and the marks-left figure falls', () => {
-    renderSession([card()], { 'bio-2025-hl-q6-ab': seen });
+    renderSession([card()]);
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     fireEvent.click(screen.getByRole('button', { name: /Oesophagus/ }));
     expect(screen.getByRole('button', { name: /Oesophagus/ })).toHaveAttribute('aria-pressed', 'true');
@@ -247,7 +243,7 @@ describe('claiming marks', () => {
   test('the marks-left figure settles on the right number', async () => {
     // It counts DOWN as marks are claimed, so a stuck animation would leave a
     // wrong number on screen — the one thing this strip must never do.
-    renderSession([card()], { 'bio-2025-hl-q6-ab': seen });
+    renderSession([card()]);
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     fireEvent.click(screen.getByRole('button', { name: /Oesophagus/ }));
     // The label is its own span; the count lives beside it, so read the band.
@@ -268,7 +264,7 @@ describe('claiming marks', () => {
         row({ id: 'r-nut', kind: 'alt', verbatim: 'Method of nutrition — saprophytic', marks: 6 }),
       ],
     });
-    renderSession([c], { 'bio-2025-hl-q6-ab': seen });
+    renderSession([c]);
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     fireEvent.click(screen.getByRole('button', { name: /A — Sporangium/ }));
     fireEvent.click(screen.getByRole('button', { name: /One function of C/ }));
@@ -285,13 +281,13 @@ describe('claiming marks', () => {
       totalMarks: 6,
       rows: [row({ id: 'r0', kind: 'alt', verbatim: 'saprophytic', marks: 6, accepts: ['heterotrophic'] })],
     });
-    renderSession([c], { 'bio-2025-hl-q6-ab': seen });
+    renderSession([c]);
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     expect(screen.getByText(/heterotrophic/)).toBeInTheDocument();
   });
 
   test('"I had them all" claims every row at once', () => {
-    renderSession([card()], { 'bio-2025-hl-q6-ab': seen });
+    renderSession([card()]);
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     fireEvent.click(screen.getByRole('button', { name: /I had them all/i }));
     expect(screen.getByText(/Nothing left behind/i)).toBeInTheDocument();
@@ -304,7 +300,7 @@ describe('claiming marks', () => {
       totalMarks: 4,
       rows: [row({ id: 'g', kind: 'gate', verbatim: 'Sporangium', marks: 1, exactTermRequired: true }), row({ id: 'r1', verbatim: 'Stomach', marks: 3 })],
     });
-    renderSession([c], { 'bio-2025-hl-q6-ab': seen });
+    renderSession([c]);
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     expect(screen.queryByText(/exact term/i)).not.toBeInTheDocument();
     expect(screen.queryByRole('button', { name: /I had something like this/i })).not.toBeInTheDocument();
@@ -314,7 +310,7 @@ describe('claiming marks', () => {
     // The scheme's ellipsis means the list is not exhaustive; a student who
     // wrote "cartilage" was right and must not be told otherwise.
     const c = card({ rows: [row({ id: 'r0', verbatim: 'muscles or tendons or ligament', marks: 4, openList: true })], totalMarks: 4 });
-    renderSession([c], { 'bio-2025-hl-q6-ab': seen });
+    renderSession([c]);
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     fireEvent.click(screen.getByRole('button', { name: /I had something like this/i }));
     expect(screen.getByText(/accepts synonyms here/i)).toBeInTheDocument();
@@ -325,7 +321,7 @@ describe('claiming marks', () => {
       totalMarks: 6,
       rows: [row({ id: 'r0', verbatim: 'X — the neuron', marks: 2 }), row({ id: 'r1', verbatim: 'Justify: it is connected to a muscle cell', marks: 4, dependsOn: 'r0' })],
     });
-    renderSession([c], { 'bio-2025-hl-q6-ab': seen });
+    renderSession([c]);
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     expect(screen.getByRole('button', { name: /Justify/ })).toBeDisabled();
     fireEvent.click(screen.getByRole('button', { name: /X — the neuron/ }));
@@ -340,7 +336,7 @@ describe('claiming marks', () => {
         group: { claimMax: 4, perOption: 3, options: ['zygospore formed', 'diploid nuclei formed', 'gametangium formed', 'progametangia are formed', 'survives adverse conditions'] },
       })],
     });
-    renderSession([c], { 'bio-2025-hl-q6-ab': seen });
+    renderSession([c]);
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     expect(screen.getByText(/Any 4 of these — 3 marks each/)).toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: /zygospore formed/ }));
@@ -356,7 +352,7 @@ describe('claiming marks', () => {
         group: { claimMax: 2, perOption: 3, options: ['alpha', 'beta', 'gamma'] },
       })],
     });
-    renderSession([c], { 'bio-2025-hl-q6-ab': seen });
+    renderSession([c]);
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     fireEvent.click(screen.getByRole('button', { name: /alpha/ }));
     fireEvent.click(screen.getByRole('button', { name: /beta/ }));
@@ -372,7 +368,7 @@ describe('claiming marks', () => {
         row({ id: 'b1', verbatim: 'Reduction route', marks: 6, route: 'b' }),
       ],
     });
-    renderSession([c], { 'bio-2025-hl-q6-ab': seen });
+    renderSession([c]);
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     expect(screen.getByRole('button', { name: /Reduction route/ })).not.toBeDisabled();
     fireEvent.click(screen.getByRole('button', { name: /Oxidation route/ }));
@@ -382,7 +378,7 @@ describe('claiming marks', () => {
 
   test('shows no per-row mark chips when the scheme does not define them', () => {
     const c = card({ tariffModel: { kind: 'orderedSplit', notation: '2(5) + 5(2)' }, totalMarks: 20 });
-    renderSession([c], { 'bio-2025-hl-q6-ab': seen });
+    renderSession([c]);
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     expect(screen.queryByText('−2m')).not.toBeInTheDocument();
     expect(screen.getByText(/depends on how many you got/i)).toBeInTheDocument();
@@ -405,7 +401,7 @@ describe('a diagram card always decodes its figure', () => {
         { letter: 'C', meaning: 'Small intestine', askedInThisQuestion: false },
       ],
     };
-    renderSession([diagram], { 'bio-2025-hl-q6-ab': seen });
+    renderSession([diagram]);
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     const key = screen.getByText(/Also on the diagram/i).parentElement!;
     // C is on the diagram but this question never asks about it, so the panel
@@ -434,7 +430,7 @@ describe('a diagram card always decodes its figure', () => {
         { letter: 'B', meaning: 'Stomach', askedInThisQuestion: true },
       ],
     };
-    renderSession([diagram], { 'bio-2025-hl-q6-ab': seen });
+    renderSession([diagram]);
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     expect(screen.queryByText(/Also on the diagram/i)).toBeNull();
   });
@@ -442,7 +438,7 @@ describe('a diagram card always decodes its figure', () => {
 
 describe('grading', () => {
   test('offers all three grades and lets the student overrule the suggestion', () => {
-    const { onGrade } = renderSession([card()], { 'bio-2025-hl-q6-ab': seen });
+    const { onGrade } = renderSession([card()]);
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     fireEvent.click(screen.getByRole('button', { name: /I had them all/i }));
     for (const label of ['Missed it', 'Shaky', 'Got it']) {
@@ -453,13 +449,13 @@ describe('grading', () => {
   });
 
   test('says the decision is the student\'s', () => {
-    renderSession([card()], { 'bio-2025-hl-q6-ab': seen });
+    renderSession([card()]);
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     expect(screen.getByText(/You decide\. Tap any of the three\./)).toBeInTheDocument();
   });
 
   test('marks the suggestion with shape, never with colour', () => {
-    renderSession([card()], { 'bio-2025-hl-q6-ab': seen });
+    renderSession([card()]);
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     fireEvent.click(screen.getByRole('button', { name: /I had them all/i }));
     const suggestedBtn = screen.getByRole('button', { name: 'Got it' });
@@ -472,7 +468,7 @@ describe('grading', () => {
   });
 
   test('never renders "Missed it" in red', () => {
-    renderSession([card()], { 'bio-2025-hl-q6-ab': seen });
+    renderSession([card()]);
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     const style = screen.getByRole('button', { name: 'Missed it' }).getAttribute('style') || '';
     expect(style).not.toMatch(/red|#e\d|#f00|rgb\(2[0-5]\d,\s*[0-5]\d,/i);
@@ -501,7 +497,7 @@ describe('grading', () => {
   });
 
   test('finishes the session and reports every result', () => {
-    const { onFinish } = renderSession([card()], { 'bio-2025-hl-q6-ab': seen });
+    const { onFinish } = renderSession([card()]);
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     fireEvent.click(screen.getByRole('button', { name: 'Got it' }));
     expect(onFinish).toHaveBeenCalledWith([expect.objectContaining({ cardId: 'bio-2025-hl-q6-ab', grade: 'got' })]);
@@ -533,7 +529,7 @@ describe('grading', () => {
       totalMarks: 4,
       rows: [row({ id: 'g', kind: 'gate', verbatim: 'Sporangium', marks: 1, exactTermRequired: true }), row({ id: 'r1', verbatim: 'Stomach', marks: 3 })],
     });
-    renderSession([c], { 'bio-2025-hl-q6-ab': seen });
+    renderSession([c]);
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     // Shown as what the point is WORTH, not as a deduction. An unclaimed row used
     // to render "−1m" in the accent tint, so revealing a card greeted the student
@@ -545,7 +541,7 @@ describe('grading', () => {
     // Otherwise the close screen reads "0 of 20 marks" for a card the student
     // may have answered perfectly.
     const c = card({ tariffModel: { kind: 'orderedSplit', notation: '2(5) + 5(2)' }, totalMarks: 20 });
-    const { onGrade } = renderSession([c], { 'bio-2025-hl-q6-ab': seen });
+    const { onGrade } = renderSession([c]);
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     fireEvent.click(screen.getByRole('button', { name: 'Got it' }));
     expect(onGrade).toHaveBeenCalledWith(expect.objectContaining({ marksClaimed: 0, marksAvailable: 0 }));
@@ -553,7 +549,7 @@ describe('grading', () => {
 
   test('a missed card comes back later in the same sitting', () => {
     const two = [card(), card({ id: 'bio-2025-hl-q7', questionText: 'Second question.' })];
-    const { onFinish } = renderSession(two, { 'bio-2025-hl-q6-ab': seen, 'bio-2025-hl-q7': seen });
+    const { onFinish } = renderSession(two);
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     fireEvent.click(screen.getByRole('button', { name: 'Missed it' }));
     // Still going: the missed card was re-queued rather than the session ending.
@@ -562,7 +558,7 @@ describe('grading', () => {
   });
 
   test('leaving mid-session is safe because grades commit per card', () => {
-    const { onGrade, onExit } = renderSession([card(), card({ id: 'bio-q7', questionText: 'Second.' })], { 'bio-2025-hl-q6-ab': seen });
+    const { onGrade, onExit } = renderSession([card(), card({ id: 'bio-q7', questionText: 'Second.' })]);
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     fireEvent.click(screen.getByRole('button', { name: 'Got it' }));
     expect(onGrade).toHaveBeenCalledTimes(1);
