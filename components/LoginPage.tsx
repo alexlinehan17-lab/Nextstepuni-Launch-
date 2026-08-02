@@ -18,19 +18,23 @@ import { awaitWriteOrTimeout } from '../utils/firestoreWrite';
 import { SCHOOLS } from '../schoolData';
 import { LegalModal, type LegalDoc, PRIVACY_POLICY_VERSION, CONSENT_BASIS } from './legal/LegalModal';
 
-// Google Sign-In uses signInWithPopup which doesn't work inside Capacitor's
-// WKWebView (no real popup support). We hide the button on native iOS/Android
-// builds until the native @capacitor-firebase/authentication plugin is wired up.
+// Google Sign-In uses signInWithPopup, which has no real popup to open inside
+// Capacitor's webview on EITHER platform. Web only, until a native Google plugin
+// is wired up — on Android that also means registering the release signing
+// SHA-1 with Firebase, which is why v1 of the Android app ships without it.
 const SHOW_GOOGLE_SIGN_IN = !Capacitor.isNativePlatform();
 
-// Sign in with Apple uses the native AuthenticationServices sheet (via the
-// @capacitor-community/apple-sign-in plugin), so it is shown ONLY on the native
-// iOS app — exactly where the Google popup flow above is unavailable (WKWebView
-// has no popup). On the web the Firebase popup handles Google instead.
-// Final wiring still needs: the "Sign in with Apple" capability on the App ID
-// and the Apple provider enabled in the Firebase console — both require the
-// company Apple Developer account. See docs/app-store-submission.md.
-const SHOW_APPLE_SIGN_IN = Capacitor.isNativePlatform();
+// Sign in with Apple runs through this app's own native plugin
+// (ios/App/App/SignInWithApplePlugin.swift, built on Apple's system
+// AuthenticationServices — no third-party SDK), which exists on iOS and nowhere
+// else.
+//
+// This used to read `Capacitor.isNativePlatform()`. That is equally true on
+// Android, where there is no implementation behind the bridge — so the Android
+// build would have shown an Apple button that could only fail when tapped. It
+// was written when iOS was the only native target and "native" and "iOS" were
+// accidentally synonymous. Gate on the platform, not on nativeness.
+const SHOW_APPLE_SIGN_IN = Capacitor.getPlatform() === 'ios';
 
 // Apple Sign-In + Firebase replay protection: send Apple a SHA-256 hash of a
 // random nonce, then hand Firebase the *raw* nonce so it can verify the hash in

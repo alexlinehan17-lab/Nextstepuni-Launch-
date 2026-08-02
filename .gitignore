@@ -37,3 +37,10 @@ scripts/paper-trail/topic-tags/out/
 # transient topic-tag pipeline scratch (root)
 /_*.json
 /_*.mjs
+
+# Android release signing — the upload key and its passwords. Never commit these.
+# Losing the keystore is recoverable (Play App Signing lets you reset an upload
+# key) but leaking it is not, so it stays out of the repo entirely.
+android/keystore.properties
+*.jks
+*.keystore
