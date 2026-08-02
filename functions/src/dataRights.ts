@@ -26,6 +26,7 @@ interface CascadeReport {
   usersDeleted: number;
   progressDeleted: number;
   sessionsDeleted: number;
+  srsDeleted: number;
   settingsDeleted: number;
   responsesDeleted: number;
   notificationsDeleted: number;
@@ -118,7 +119,7 @@ async function cascadeDeleteUser(
   uid: string,
 ): Promise<CascadeReport> {
   const r: CascadeReport = {
-    usersDeleted: 0, progressDeleted: 0, sessionsDeleted: 0, settingsDeleted: 0,
+    usersDeleted: 0, progressDeleted: 0, sessionsDeleted: 0, srsDeleted: 0, settingsDeleted: 0,
     responsesDeleted: 0, notificationsDeleted: 0, kudosDeleted: 0, giftsDeleted: 0,
     gcFlagsDeleted: 0, islandPublicDeleted: 0, authDeleted: false,
   };
@@ -129,6 +130,14 @@ async function cascadeDeleteUser(
 
   // progress/{uid}/sessions/* subcollection
   r.sessionsDeleted = await deleteAll(db, db.collection("progress").doc(uid).collection("sessions"));
+
+  // progress/{uid}/srs/* — Mark Bank's spaced-repetition memory, one document
+  // per deck. Deleting a Firestore DOCUMENT does not delete its subcollections,
+  // so erasing progress/{uid} below would leave this behind: a live record of
+  // what a named student has and has not learned, keyed by their uid, surviving
+  // an account deletion. Every subcollection under progress/ must be listed here
+  // explicitly — add the next one at the same time you add the feature.
+  r.srsDeleted = await deleteAll(db, db.collection("progress").doc(uid).collection("srs"));
 
   // Single docs keyed by uid.
   const singles: Array<[string, keyof CascadeReport]> = [
@@ -240,6 +249,11 @@ export const exportMyData = onCall({ cors: true }, async (request) => {
   data.responses = await get1("responses");
   data.notifications = await get1("notifications");
   data.studySessions = (await db.collection("progress").doc(targetUid).collection("sessions").get()).docs.map((d) => d.data());
+  // Mark Bank spaced-repetition memory, one document per deck. Held in a
+  // SUBCOLLECTION of progress/{uid}, so data.progress above does not contain
+  // it — an Article 15 export that omitted this would be incomplete.
+  data.markBankMemory = (await db.collection("progress").doc(targetUid).collection("srs").get())
+    .docs.map((d) => ({ deckId: d.id, ...d.data() }));
 
   data.kudosSent = (await db.collection("kudos").where("fromUid", "==", targetUid).get()).docs.map((d) => {
     const x = { ...d.data() }; if (x.toUid) x.toUid = peerHash(x.toUid); return x;
