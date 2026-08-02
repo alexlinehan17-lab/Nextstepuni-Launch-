@@ -93,8 +93,29 @@ const Segment: React.FC<{
   options: { value: string; label: string; empty?: boolean }[];
   value: string;
   onChange: (value: string) => void;
-}> = ({ options, value, onChange }) => (
-  <div style={{ display: 'inline-flex', background: '#fff', border: `2px solid ${INK}`, borderRadius: 100, padding: 3 }}>
+  /**
+   * Let the options run onto more than one row.
+   *
+   * A single-row stadium works only while every label is short. "Agricultural
+   * Science" is 20 characters and needs about 160px of the 280px rail on its
+   * own, so the four-subject control could not fit one row at any sensible size:
+   * the label broke mid-phrase onto two lines at line-height 1, and the row
+   * overflowed the rounded border it was supposed to sit inside. Wrapping is
+   * opt-in rather than automatic so the two-option level toggle keeps its pill.
+   */
+  wrap?: boolean;
+}> = ({ options, value, onChange, wrap = false }) => (
+  <div style={{
+    display: wrap ? 'flex' : 'inline-flex',
+    flexWrap: wrap ? 'wrap' : 'nowrap',
+    gap: wrap ? 3 : 0,
+    maxWidth: '100%',
+    background: '#fff', border: `2px solid ${INK}`,
+    // A stadium radius around two stacked rows reads as a mistake; square it off
+    // just enough to look deliberate.
+    borderRadius: wrap ? 20 : 100,
+    padding: 3,
+  }}>
     {options.map(o => {
       const on = o.value === value;
       return (
@@ -106,6 +127,9 @@ const Segment: React.FC<{
             padding: '7px 16px', borderRadius: 100, border: 'none', cursor: 'pointer',
             background: on ? INK : 'transparent',
             color: on ? '#fff' : MUTED, font: `600 12.5px/1 ${SANS}`,
+            // Never break a subject name across lines — that is what made
+            // "Agricultural Science" collide with itself at line-height 1.
+            whiteSpace: 'nowrap',
           }}
         >
           {o.label}
@@ -411,6 +435,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
             gap: 8, margin: '16px 0 0',
           }}>
             <Segment
+              wrap
               options={SUBJECTS.map(s => ({ value: s.id, label: s.title, empty: deckSize(s.id, level) === 0 }))}
               value={subjectId}
               onChange={chooseSubject}
