@@ -13,13 +13,20 @@ that file at build time.
 Run from the repo root, and answer the prompts (name, organisation, country —
 "NEXTSTEPUNI LIMITED" / "IE" is fine; the values are not shown to users):
 
+Use the JDK that Android Studio bundles. macOS ships a `/usr/bin/keytool` stub
+that only tells you to install Java, so the full path matters:
+
 ```bash
-keytool -genkeypair -v \
+"/Applications/Android Studio.app/Contents/jbr/Contents/Home/bin/keytool" \
+  -genkeypair -v \
   -keystore ~/nextstepuni-upload-key.jks \
   -alias nextstepuni-upload \
   -keyalg RSA -keysize 2048 -validity 10000 \
   -storetype PKCS12
 ```
+
+PKCS12 keystores use one password for both the store and the key, so the
+`storePassword` and `keyPassword` below are the same value.
 
 Keep `~/nextstepuni-upload-key.jks` and its password somewhere durable — a
 password manager, not just this Mac. If the machine dies with the only copy, you
@@ -46,8 +53,31 @@ works for debug, but the release bundle will be unsigned and Play will reject it
 ```bash
 npm run build                    # compile the web app into dist/
 npx cap sync android             # copy dist/ into the Android project
-cd android && ./gradlew bundleRelease
+cd android && JAVA_HOME="$HOME/.jdks/jdk-21.0.12+8/Contents/Home" ./gradlew bundleRelease
 ```
+
+**JAVA_HOME is not optional.** Android Studio Quail 3 bundles Java 25, and this
+project's Gradle 8.14.3 supports Java 24 at most — building with the bundled JDK
+fails with `Unsupported class file major version 69`. Bumping Gradle to 9.x is
+the obvious-looking fix, but AGP 8.13.0 expects Gradle 8.x, so it trades one
+incompatibility for a worse one. A Temurin JDK 21 (the version AGP 8.x targets)
+lives in `~/.jdks/` — self-contained, no system install, and it leaves both the
+system Java and Android Studio's own JDK alone.
+
+## ⚠️ The bundle is far too large to publish
+
+A clean build currently produces a **569 MB** `.aab`, which Google Play will
+reject outright. The cause is not the app: `dist/exam-figures` is 539 MB across
+3,114 PNGs, and Capacitor copies the whole of `dist/` into the native shell.
+
+This is not Android-specific — the iOS app ships the same payload
+(`ios/App/App/public` is 608 MB).
+
+The fix is to serve `/exam-figures/**` from Firebase Hosting on native rather
+than bundling it, which the app is already positioned for: the files are hosted
+today, and the app needs the network for Firebase regardless. That takes the
+download from roughly 600 MB to roughly 70 MB. Until that lands, no Android
+release can be published.
 
 The bundle lands at:
 
