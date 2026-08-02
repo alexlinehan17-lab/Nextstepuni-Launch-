@@ -35,6 +35,9 @@ MIN_W, MIN_H, MIN_BYTES = 90, 70, 3000
 # Fraction of the figure's own size added on each side, so labels sitting just
 # outside the image box are captured rather than cropped away.
 PAD = 0.14
+# Absolute floors in points, so a shallow figure still gets a real margin.
+# Larger below than above: letters under a photo row and table bodies live there.
+MIN_PAD_X, MIN_PAD_TOP, MIN_PAD_BOTTOM = 22, 55, 125
 ZOOM = 2.0
 
 
@@ -164,11 +167,26 @@ def extract(pdf: Path, outdir: Path) -> list:
             #
             # The region is padded because a label sits OUTSIDE the image box: two
             # shipped crops cut off the very letter their question asked about.
+            # A fraction of the figure's own size is not enough on its own. A wide,
+            # shallow photo strip has a small height, so 14% of it is a few points —
+            # and the Agricultural Science breed-identification questions print their
+            # letters BELOW the photographs, in the answer row. Every one of those
+            # crops sliced through D, E and F: the highest-value figures in the paper,
+            # lost to a proportional pad. Tables fail the same way, keeping their
+            # header row and losing every line of data beneath it.
+            #
+            # So the pad also has an absolute floor in points, and reaches further
+            # DOWN than up, because that is where labels and table bodies sit. The
+            # cost is some question prose inside the crop, which is harmless — the
+            # card prints the question anyway.
+            pad_x = max(rect.width * PAD, MIN_PAD_X)
+            pad_top = max(rect.height * PAD, MIN_PAD_TOP)
+            pad_bottom = max(rect.height * PAD, MIN_PAD_BOTTOM)
             area = fitz.Rect(
-                rect.x0 - rect.width * PAD,
-                rect.y0 - rect.height * PAD,
-                rect.x1 + rect.width * PAD,
-                rect.y1 + rect.height * PAD,
+                rect.x0 - pad_x,
+                rect.y0 - pad_top,
+                rect.x1 + pad_x,
+                rect.y1 + pad_bottom,
             ) & page.rect
             area = include_labels(page, area) & page.rect
             area = widen_to_column(page, area)

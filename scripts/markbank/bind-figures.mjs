@@ -30,7 +30,10 @@ import { fileURLToPath } from 'node:url';
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 const MANIFEST = resolve(ROOT, 'components/MarkBank/figures.json');
 
-const SUBJECT_TITLE = { biology: 'Biology', chemistry: 'Chemistry', physics: 'Physics' };
+const SUBJECT_TITLE = {
+  biology: 'Biology', chemistry: 'Chemistry', physics: 'Physics',
+  'agricultural-science': 'Agricultural Science',
+};
 
 const catalogue = JSON.parse(readFileSync(process.argv[2] ?? '', 'utf8'));
 
@@ -52,7 +55,11 @@ for (const f of catalogue) {
   // and writes it into a <year>-<level> directory under its subject. Derive both
   // from the name, never guess.
   const stem = f.file.replace(/-p\d+-i\d+\.png$/, '');
-  const parsed = /^([a-z]+)-(\d{4})-(hl|ol)\b/i.exec(stem);
+  // The subject id may contain hyphens ("agricultural-science"), so the first
+  // group cannot be [a-z]+ — that matched "agricultural", then demanded a year
+  // and found "-science", and every crop for such a subject was skipped as
+  // "name does not identify a subject". Non-greedy, anchored on the year.
+  const parsed = /^([a-z][a-z-]*?)-(\d{4})-(hl|ol)\b/i.exec(stem);
   if (!parsed) { skipped.push(`${f.file}: name does not identify a subject, year and level`); continue; }
   const subjectId = parsed[1].toLowerCase();
   const year = parsed[2];
