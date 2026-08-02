@@ -19,6 +19,7 @@ import {
   topicsForSubjectDiagrams,
   type DiagramEntry,
 } from '../../data/diagramVault';
+import { figureUrl } from '../../utils/figureUrl';
 
 const INK = '#1a1a1a';
 const ACCENT = '#F26B1F';
@@ -56,7 +57,7 @@ const DiagramTile: React.FC<{ entry: DiagramEntry }> = ({ entry }) => {
     <figure className="rounded-2xl border-2 border-[#d0cdc8] bg-white overflow-hidden flex flex-col">
       <div className="bg-[#f7f6f4] border-b border-[#e6e2dc] p-3 flex items-center justify-center">
         <img
-          src={entry.src}
+          src={figureUrl(entry.src)}
           alt={entry.alt}
           loading="lazy"
           className="max-h-72 w-auto max-w-full object-contain"

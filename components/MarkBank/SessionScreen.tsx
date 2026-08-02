@@ -37,6 +37,7 @@ import { createPortal } from 'react-dom';
 import { AnimatePresence, MotionDiv, MotionSpan, useReducedMotion } from '../Motion';
 import { rowId, type LabelKey, type MarkRow, type SecCard } from '../../types/markBank';
 import type { MarkBankGrade } from './scheduler';
+import { figureUrl } from '../../utils/figureUrl';
 
 const EASE = [0.16, 1, 0.3, 1] as number[];
 
@@ -899,7 +900,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                   padding: 8, textAlign: 'center', background: '#FFFFFF',
                 }}>
                   <img
-                    src={figure.src} alt={figure.alt}
+                    src={figureUrl(figure.src)} alt={figure.alt}
                     style={{ maxWidth: '100%', maxHeight: 340, objectFit: 'contain', display: 'inline-block' }}
                   />
                 </div>

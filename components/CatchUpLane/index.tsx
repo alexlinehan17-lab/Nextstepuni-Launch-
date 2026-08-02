@@ -32,6 +32,7 @@ import { CURRICULUM } from '../../curriculum';
 import SubjectTilePicker from '../shared/SubjectTilePicker';
 import { baseName, displayName } from '../shared/subjectNames';
 import Comeback from './Comeback';
+import { figureUrl } from '../../utils/figureUrl';
 
 const CYAN = '#0E9AA8';
 const CYAN_TINT = '#E6F4F5';
@@ -416,7 +417,7 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[]; studentC
                   (not described), with attribution. Persists across the beats. */}
               {card.figure && (
                 <figure className="mb-5 rounded-xl border-2 border-[#1A1A1A] dark:border-zinc-700 overflow-hidden bg-white">
-                  <img src={card.figure.src} alt={card.figure.alt} loading="lazy" className="w-full h-auto block" />
+                  <img src={figureUrl(card.figure.src)} alt={card.figure.alt} loading="lazy" className="w-full h-auto block" />
                   <figcaption className="text-[10px] px-3 py-1.5" style={{ color: CYAN_DARK_TEXT, backgroundColor: CYAN_TINT }}>{card.figure.source}</figcaption>
                 </figure>
               )}

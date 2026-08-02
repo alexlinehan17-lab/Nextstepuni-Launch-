@@ -24,6 +24,7 @@ import { COMMAND_WORD_QUESTIONS, commandSubjects, questionsForSubject } from '..
 import { type CommandWordQuestion } from '../../types/commandWord';
 import SubjectTilePicker from '../shared/SubjectTilePicker';
 import { baseName, displayName } from '../shared/subjectNames';
+import { figureUrl } from '../../utils/figureUrl';
 
 const INDIGO = '#6366F1';
 const INDIGO_DARK_TEXT = '#3730A3';
@@ -210,7 +211,7 @@ const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[]; st
                 the cue depends on, shown above the tappable stem, with attribution. */}
             {q.figure && (
               <figure className="mb-4 rounded-xl border-2 border-[#1A1A1A] dark:border-zinc-700 overflow-hidden bg-white">
-                <img src={q.figure.src} alt={q.figure.alt} loading="lazy" className="w-full h-auto block" />
+                <img src={figureUrl(q.figure.src)} alt={q.figure.alt} loading="lazy" className="w-full h-auto block" />
                 <figcaption className="text-[10px] px-3 py-1.5" style={{ color: INDIGO_DARK_TEXT, backgroundColor: INDIGO_TINT }}>{q.figure.source}</figcaption>
               </figure>
             )}
