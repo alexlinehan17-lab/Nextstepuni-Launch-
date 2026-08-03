@@ -25,7 +25,19 @@ interface DashboardViewProps {
   recommendation: FocusRecommendation | null;
   onSelectModule: (moduleId: string) => void;
   onBack: () => void;
-  pointsBalance: number;
+  /**
+   * Lifetime points, NOT the spendable balance.
+   *
+   * This stat is captioned "earned to date", and it was being fed
+   * `pointsData.balance` — earned minus spent. A student who had bought
+   * anything from the island shop therefore saw a figure lower than what they
+   * had actually earned, and one who had spent more than their current
+   * earnings saw it go NEGATIVE ("−23 earned to date"), which reads as a
+   * penalty for having used the shop. `totalEarned` only ever increments, so
+   * the stat can no longer contradict its own caption. The spendable balance
+   * is still what the header pill and the shop show.
+   */
+  pointsEarned: number;
 }
 
 // Map the five world ids to their backing course categories. The five
@@ -107,7 +119,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
   recommendation,
   onSelectModule,
   onBack,
-  pointsBalance,
+  pointsEarned,
 }) => {
   // Per-world progress: count modules in each of the five categories and
   // how many are completed. The mountain landscape, the page subtitle,
@@ -246,7 +258,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
             />
             <StatCell
               eyebrow="Journey points"
-              value={String(pointsBalance)}
+              value={String(pointsEarned)}
               meta="earned to date"
             />
             <StatCell

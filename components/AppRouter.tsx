@@ -116,7 +116,11 @@ export interface AppRouterProps {
   userProgress: UserProgress;
   northStar: NorthStar | null;
   timetableCompletions: Record<string, string[]>;
-  pointsData: { balance: number; reload: () => void };
+  // `balance` is spendable (earned − spent) and drives the header pill and the
+  // shop; `totalEarned` is lifetime and drives the Progress page's "earned to
+  // date" stat. Keeping both here stops that stat from being fed the balance,
+  // which is what made it read "−23 earned to date" after shop purchases.
+  pointsData: { balance: number; totalEarned: number; reload: () => void };
   streak: StreakData;
 
   // Settings
@@ -386,7 +390,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
           recommendation={recommendation}
           onSelectModule={handleSelectModule}
           onBack={handleBackToTree}
-          pointsBalance={pointsData.balance}
+          pointsEarned={pointsData.totalEarned}
         />
       </Suspense>
     );
