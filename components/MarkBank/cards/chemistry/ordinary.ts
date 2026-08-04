@@ -170,13 +170,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2021 Ordinary Level — © State Examinations Commission.",
     id: "chem-2021-ol-q3-b-ii", topicId: "chem-3-1", conceptId: "exothermic-neutralisation",
     section: "A", questionRef: "2021 OL Q3(b)(ii)",
-    stem: "100 cm3 of 1.0 M hydrochloric acid at 16.0 °C was added quickly to 100 cm3 of 1.0 M sodium hydroxide solution in an insulated cup, the mixture was stirred, and the temperature of the contents was recorded at 0.5-minute intervals. HCl + NaOH → NaCl + H2O",
+    stem: "100 cm3 of 1.0 M hydrochloric acid at 16.0 °C was added quickly to 100 cm3 of 1.0 M sodium hydroxide solution in an insulated cup, the mixture was stirred, and the temperature of the contents was recorded at 0.5-minute intervals. HCl + NaOH → NaCl + H2O. The results are given in the table.",
     questionText: "Is the neutralisation of sodium hydroxide solution by hydrochloric acid exothermic or endothermic? Justify your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "exothermic", marks: 3, exactTermRequired: true },
     { id: "r-2", kind: "alt", verbatim: "temperature goes up / heat given out in reaction", marks: 3, accepts: ["temperature goes up","heat given out in reaction"] },
     ],
+    figure: {
+          "candId": "chemistry-2021-OL-paper-p04-i0",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2021-OL-paper-p04-i0.png",
+          "srcHash": "2448b6a1ad588016d1e0862a235b69e6",
+          "alt": "The whole Q3 stimulus. Left: the printed preamble describing a thermometer through the plastic lid of an insulated cup holding 100 cm3 of 1.0 M NaOH, readings every 0.5 min for 5 min, 100 cm3 of 1.0 M HCl added between the 2.0 and 2.5 min readings, initial HCl temperature 16.0 °C, the equation HCl + NaOH → NaCl + H2O, and the note that the overall temperature change was used to calculate ΔH. Right: a photograph of a black insulated coffee cup with a white plastic lid and a long thermometer inserted through the lid. Below, a fully enclosed two-row ruled table (I measured the closing right-hand rule — full ink, nothing missing): row 'Time (minutes)' = 0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0; row 'Temperature (°C)' = 16.0, 16.0, 16.0, 16.0, 16.0, 22.1, 22.7, 22.6, 22.5, 22.4, 22.3. Part (a) ('Plot a graph (on graph paper) of temperature versus time (x-axis). (15)') is fully visible below the table.",
+          "attribution": "SEC Leaving Certificate Chemistry 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",

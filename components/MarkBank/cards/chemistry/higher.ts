@@ -1057,13 +1057,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2021 Higher Level — © State Examinations Commission.",
     id: "chem-2021-hl-q11-a-iv", topicId: "chem-2-2", conceptId: "solubility-ethene-polarity",
     section: "B", questionRef: "2021 HL Q11(a)(iv)",
-    stem: "An arrangement of apparatus is used to compare the solubilities of ethene in water and in cyclohexane.",
+    stem: "The diagram shows an arrangement of apparatus used to compare the solubilities of ethene in water and in cyclohexane.",
     questionText: "Explain how and why the solubility of ethene in water differs from its solubility in cyclohexane.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "ethene is soluble in cyclohexane, insoluble in water", marks: 3 },
     { id: "r-2", kind: "alt", verbatim: "cyclohexane non-polar", marks: 3, accepts: ["water polar","no partial charges (dipoles) in ethene to interact with partial charges (dipoles) in water","ethene cannot disrupt hydrogen bonding of water molecules","ethene cannot form hydrogen bonds with water","ethene and cyclohexane have similar intermolecular forces"], contextNote: "['Like dissolves like' unacceptable.]" },
     ],
+    figure: {
+          "candId": "chemistry-2021-HL-paper-p12-i2",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2021-HL-paper-p12-i2.png",
+          "srcHash": "16eb78ea6035e3b2248b8105308d02f4",
+          "alt": "The same gas-solubility apparatus, cropped tight with clear margin above and the full question text below. A grey block arrow captioned 'push plunger slowly' drives the plunger of a graduated syringe labelled 'syringe full of ethene'; its nozzle runs through a tap and a bent glass tube into a stoppered reagent bottle about half full of liquid labelled 'water or cyclohexane', the tube dipping under the surface; a second bent tube leaves the bottle through a tap into a graduated syringe labelled 'empty syringe'. Below the drawing, part (iv) reads in full: 'The diagram above shows an arrangement of apparatus used to compare the solubilities of ethene in water and in cyclohexane. Explain how and why the solubility of ethene in water differs from its solubility in cyclohexane. (25)'. No edge of the drawing is cut.",
+          "attribution": "SEC Leaving Certificate Chemistry 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",

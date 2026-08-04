@@ -7924,5 +7924,40 @@
   "year": 2025,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2021-OL-paper-p04-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2021-OL-paper-p04-i0.png",
+  "md5": "2448b6a1ad588016d1e0862a235b69e6",
+  "alt": "The whole Q3 stimulus. Left: the printed preamble describing a thermometer through the plastic lid of an insulated cup holding 100 cm3 of 1.0 M NaOH, readings every 0.5 min for 5 min, 100 cm3 of 1.0 M HCl added between the 2.0 and 2.5 min readings, initial HCl temperature 16.0 °C, the equation HCl + NaOH → NaCl + H2O, and the note that the overall temperature change was used to calculate ΔH. Right: a photograph of a black insulated coffee cup with a white plastic lid and a long thermometer inserted through the lid. Below, a fully enclosed two-row ruled table (I measured the closing right-hand rule — full ink, nothing missing): row 'Time (minutes)' = 0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0; row 'Temperature (°C)' = 16.0, 16.0, 16.0, 16.0, 16.0, 22.1, 22.7, 22.6, 22.5, 22.4, 22.3. Part (a) ('Plot a graph (on graph paper) of temperature versus time (x-axis). (15)') is fully visible below the table.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q3",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2021-HL-paper-p12-i2": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2021-HL-paper-p12-i2.png",
+  "md5": "16eb78ea6035e3b2248b8105308d02f4",
+  "alt": "The same gas-solubility apparatus, cropped tight with clear margin above and the full question text below. A grey block arrow captioned 'push plunger slowly' drives the plunger of a graduated syringe labelled 'syringe full of ethene'; its nozzle runs through a tap and a bent glass tube into a stoppered reagent bottle about half full of liquid labelled 'water or cyclohexane', the tube dipping under the surface; a second bent tube leaves the bottle through a tap into a graduated syringe labelled 'empty syringe'. Below the drawing, part (iv) reads in full: 'The diagram above shows an arrangement of apparatus used to compare the solubilities of ethene in water and in cyclohexane. Explain how and why the solubility of ethene in water differs from its solubility in cyclohexane. (25)'. No edge of the drawing is cut.",
+  "lettersVisible": [],
+  "labelMeanings": [
+   {
+    "letter": "syringe full of ethene",
+    "meaning": "Labels the left-hand syringe (shown in the companion crop) as the one charged with ethene gas."
+   },
+   {
+    "letter": "empty syringe",
+    "meaning": "Labels the right-hand syringe as the empty one."
+   },
+   {
+    "letter": "water or cyclohexane",
+    "meaning": "Labels the liquid in the bottle. The paper states the apparatus is used to compare the solubility of ethene in water and in cyclohexane."
+   }
+  ],
+  "questionRef": "2021 HL Q11(a)(iv)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2021 Higher Level — © State Examinations Commission"
  }
 }

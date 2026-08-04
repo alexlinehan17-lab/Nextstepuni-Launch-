@@ -134,7 +134,7 @@
   ],
   "labelMeanings": [],
   "questionRef": "2022 HL Q13",
-  "notes": "Both pictures are illustrative context for the Huygens passage; neither carries data needed to answer. The banknote itself is complete — the incompleteness is the truncated second image.",
+  "notes": "Both pictures are illustrative context for the Huygens passage; neither carries data needed to answer. The banknote itself is complete — the incompleteness is the truncated second image.  [Re-inspected after the column fix: still truncated.]",
   "truncated": true
  },
  {
@@ -450,7 +450,7 @@
    }
   ],
   "questionRef": "2021 HL Q6(b) and Q6(e)",
-  "notes": "One crop covering two unrelated figures: the (cut) Q6(b) projectile diagram and the intact Q6(e) thermometer photograph. M, R and 2R appear in the question prose inside the crop, not on the drawing. If Q6(b) is ever carded, this crop must be re-cut higher up the page - the arrow and trajectory it needs are missing.",
+  "notes": "One crop covering two unrelated figures: the (cut) Q6(b) projectile diagram and the intact Q6(e) thermometer photograph. M, R and 2R appear in the question prose inside the crop, not on the drawing. If Q6(b) is ever carded, this crop must be re-cut higher up the page - the arrow and trajectory it needs are missing.  [Re-inspected after the column fix: still truncated.]",
   "truncated": true
  },
  {
@@ -765,11 +765,12 @@
  {
   "file": "physics-2023-HL-paper-p12-i0.png",
   "kind": "figure",
-  "drawingComplete": false,
+  "drawingComplete": true,
   "whatIsCut": "Roughly the bottom two thirds of the cross-section diagram. Cut off below the image edge are: the lower half of the descending pipe, the turbine/generator symbol and its label B, the pipe's horizontal run and its rise back up to the right, the lower reservoir (Lough Nahanagan) at the right-hand side, and the lower part of the mountain profile. The pipe carrying label A runs straight off the bottom edge of the crop.",
-  "description": "A greyscale schematic cross-section through a mountain, above it a clipped line of prose '...attached to electric generators along the way.' At the top left a dark horizontal band represents a body of water (the upper reservoir) with a small intake structure on its edge — a squat tower with a valve/gantry on top. From that intake a pipe, drawn as a double line with regular short tick marks along both sides to show it is buried, curves downward and then runs in a long straight diagonal down and to the right; a bold capital 'A' is printed just above this diagonal pipe. A heavy black line traces the mountain's surface profile, running right from the reservoir edge, dipping, then falling steeply away to the lower right. The image stops abruptly partway down the slope.",
+  "description": "A greyscale cross-section drawing of the Turlough Hill pumped-storage station, boxed in a light rectangular panel. At the upper left a small intake structure sits at the top of the hillside; from it a long dark pipe with regular cross-hatched supports runs diagonally down to the right, labelled 'A' near its upper section. The pipe reaches the valley floor and continues to a cog-like turbine wheel, beneath which the label 'B' is printed. A second heavy dark line traces the hillside profile above the pipe, and at the lower right the pipe passes through a second structure and continues off to the right. Passage text about the upper and lower reservoirs sits above; the flywheel and battery bullet points sit below.",
   "lettersVisible": [
-   "A"
+   "A",
+   "B"
   ],
   "labelMeanings": [
    {
@@ -777,9 +778,9 @@
     "meaning": "A position on the pipe — Q13(ii)(a) asks for 'the main energy conversion that takes place ... as the water flows down through the pipe at position A'."
    }
   ],
-  "questionRef": "2023 HL Q13(ii)",
-  "notes": "THE ONE GENUINELY BROKEN CROP IN THIS SET, and the only load-bearing figure in the paper. In the PDF the diagram is stored as two stacked image strips (plus a small third graphic); the extractor captured only the upper strip. The full figure also carries a bold 'B' beside a small toothed turbine wheel near the bottom of the pipe — the paper and the 2023 HL marking scheme define B as the generator ('as the water flows through the generator at position B'). Because B is missing, Q13(ii)(b) is unanswerable from this crop. It must be re-cropped from PDF page 12 over roughly rect [119,302]–[504,497] before use.",
-  "truncated": true
+  "questionRef": "2023 HL Q13 — passage diagram; A and B are decoded by Q13(ii)",
+  "notes": "THE ONE GENUINELY BROKEN CROP IN THIS SET, and the only load-bearing figure in the paper. In the PDF the diagram is stored as two stacked image strips (plus a small third graphic); the extractor captured only the upper strip. The full figure also carries a bold 'B' beside a small toothed turbine wheel near the bottom of the pipe — the paper and the 2023 HL marking scheme define B as the generator ('as the water flows through the generator at position B'). Because B is missing, Q13(ii)(b) is unanswerable from this crop. It must be re-cropped from PDF page 12 over roughly rect [119,302]–[504,497] before use.  [Re-inspected after the column fix: complete.]",
+  "truncated": false
  },
  {
   "file": "physics-2023-HL-paper-p14-i0.png",
@@ -900,16 +901,17 @@
   ],
   "questionRef": "2023 OL Q3",
   "whatIsCut": "The top of the drawing is missing: the upper part of the thermometer stem and its \"A\" label with leader arrow, and the top rims of both the calorimeter and the outer lagging, are above the top edge. The base of the pale grey lagging block runs off the bottom edge. On the right, the cloth's caption \"cloth with crushed ice\" and its leader line are cut off above, leaving only an arrowhead tip.",
-  "notes": "The missing top strip of this same figure is the separate file physics-2023-OL-paper-p03-i1.png; neither crop shows the whole diagram.",
+  "notes": "The missing top strip of this same figure is the separate file physics-2023-OL-paper-p03-i1.png; neither crop shows the whole diagram.  [Re-inspected after the column fix: still truncated.]",
   "truncated": true
  },
  {
   "file": "physics-2023-OL-paper-p03-i1.png",
   "kind": "figure",
-  "drawingComplete": false,
-  "description": "A narrow horizontal strip cut from the top of the same latent-heat apparatus diagram. At the left the letter \"A\" carries a long horizontal leader arrow running rightwards to the top of a thick black vertical bar — the upper end of the thermometer stem. Below and to either side are two short curved black rim segments with small pale grey blocks beside them: the top rims of the calorimeter and its surrounding lagging. At the right is the caption \"cloth with crushed ice\" with the start of its leader line, and beneath it the top edge of a black shape.",
+  "drawingComplete": true,
+  "description": "The full latent-heat-of-fusion apparatus under the line 'Below is a diagram of the apparatus used in this experiment.' On the left a thermometer drawn as a thick black vertical rod with a rounded bulb, labelled 'A' by a long horizontal leader arrow, dips into a black-outlined calorimeter. The calorimeter stands inside a larger pale-grey lagging container labelled 'B' by an arrow from the left. The calorimeter holds mid-grey water with white angular ice fragments at the surface; an arrow from the right labels the inner vessel 'calorimeter' and an arrow from the lower right labels the contents 'water with crushed ice'. To the right of the apparatus a black draped cloth with white ice-shaped voids is labelled 'cloth with crushed ice' by an arrow.",
   "lettersVisible": [
-   "A"
+   "A",
+   "B"
   ],
   "labelMeanings": [
    {
@@ -917,10 +919,10 @@
     "meaning": "thermometer (marking scheme, Q3(i))"
    }
   ],
-  "questionRef": "2023 OL Q3",
+  "questionRef": "2023 OL Q3 — apparatus diagram; A and B are decoded by Q3(i) and Q3(ii)",
   "whatIsCut": "Almost the entire figure is below the bottom edge — the body of the calorimeter, the surrounding lagging, the water and crushed ice, the thermometer bulb, the \"B\" label and the cloth itself. Only the top rims and the \"A\" leader survive.",
-  "notes": "This is the top strip that is missing from physics-2023-OL-paper-p03-i0.png.",
-  "truncated": true
+  "notes": "This is the top strip that is missing from physics-2023-OL-paper-p03-i0.png.  [Re-inspected after the column fix: complete.]",
+  "truncated": false
  },
  {
   "file": "physics-2023-OL-paper-p05-i0.png",
@@ -1094,7 +1096,7 @@
   "labelMeanings": [],
   "questionRef": "2023 OL Q14(c)(iii)-(iv)",
   "whatIsCut": "The Van de Graaff photograph itself is complete. What is cut is the Q14(d) magnetic-field diagram at the bottom of the crop: only the tops of the concentric field-line loops, the \"magnetic field\" caption and the corner of the grey conductor are inside the frame. The current-carrying conductor, the arrowheads on the field lines and the \"current\" label with its arrow are all below the bottom edge.",
-  "notes": "Two unrelated figures share this crop. If only the Van de Graaff photo is wanted it is intact; the part (d) diagram is unusable as cropped.",
+  "notes": "Two unrelated figures share this crop. If only the Van de Graaff photo is wanted it is intact; the part (d) diagram is unusable as cropped.  [Re-inspected after the column fix: still truncated.]",
   "truncated": true
  },
  {
@@ -1247,12 +1249,12 @@
  {
   "file": "physics-2021-OL-paper-p06-i1.png",
   "kind": "figure",
-  "drawingComplete": false,
+  "drawingComplete": true,
   "whatIsCut": "The bottom of both train blocks and their round wheels are sliced off by the crop's bottom edge (only faint grey wheel-tops survive), and the velocity arrow labelled \"0.05 m s^-1\" that belongs above train X is not in this crop at all.",
-  "description": "Two toy-train trucks drawn side-on as plain rectangular blocks on white. The left block is mid-grey and labelled \"X = 133 g\", with a small solid black buffer on its right-hand end; the right block is lighter grey and labelled \"Y = 46 g\", with a matching black buffer on its left-hand end, so the two buffers face each other across a gap. The lower border of both blocks and the wheels beneath them are missing at the bottom edge of the image.",
+  "description": "Line diagram of two toy trains on a track, sitting above the question list. A horizontal arrow pointing right, labelled '0.05 m s⁻¹', runs above the left-hand train. The left train is a dark-grey rectangular body lettered 'X = 133 g', standing on two grey circular wheels, with a solid black buffer block on its right-hand end. Separated by a gap to the right is a lighter-grey rectangular body lettered 'Y = 46 g', also on two grey wheels, with a solid black buffer block on its left-hand end facing X. Below the diagram sit parts (vi) to (ix) as prose.",
   "lettersVisible": [
-   "X = 133 g",
-   "Y = 46 g"
+   "X",
+   "Y"
   ],
   "labelMeanings": [
    {
@@ -1264,20 +1266,19 @@
     "meaning": "Toy train Y - the paper states it has a mass of 46 g and is at rest before the collision."
    }
   ],
-  "questionRef": "2021 OL Q7(vi)-(x)",
-  "notes": "This and p06-i2 are two overlapping partial crops of the SAME collision diagram; neither contains the whole figure. The complete figure (velocity arrow + both trucks with four wheels) spans y342.0-422pt on page 6, while this crop covers y381.0-418.0pt.",
-  "truncated": true
+  "questionRef": "2021 OL Q7 — shared diagram for parts (vi)–(x)",
+  "notes": "This and p06-i2 are two overlapping partial crops of the SAME collision diagram; neither contains the whole figure. The complete figure (velocity arrow + both trucks with four wheels) spans y342.0-422pt on page 6, while this crop covers y381.0-418.0pt.  [Re-inspected after the column fix: complete.]",
+  "truncated": false
  },
  {
   "file": "physics-2021-OL-paper-p06-i2.png",
   "kind": "figure",
-  "drawingComplete": false,
+  "drawingComplete": true,
   "whatIsCut": "The crop's bottom edge cuts straight through both train blocks - their lower halves, the bottom borders and all four wheels are missing.",
-  "description": "The upper part of the two-truck collision diagram. A horizontal black arrow pointing to the right, labelled \"0.05 m s^-1\" above it, sits over the left-hand truck. Beneath the arrow are the tops of two rectangular blocks: the darker one labelled \"X = 133 g\" with a solid black buffer on its right end, and the lighter one labelled \"Y = 46 g\" with a black buffer on its left end, the two buffers facing each other across a gap. Both blocks run off the bottom of the image.",
+  "description": "The same two-train collision diagram, framed with the introductory sentence above it. Text at the top reads that toy train X has a mass of 133 g and moves at 0.05 m s⁻¹ to the right and collides with toy train Y of mass 46 g at rest. Beneath it: a right-pointing arrow labelled '0.05 m s⁻¹'; a dark-grey wagon lettered 'X = 133 g' on two grey wheels with a black buffer on its right end; a lighter-grey wagon lettered 'Y = 46 g' on two grey wheels with a black buffer on its left end. Parts (vi) and (vii) follow underneath.",
   "lettersVisible": [
-   "0.05 m s^-1",
-   "X = 133 g",
-   "Y = 46 g"
+   "X",
+   "Y"
   ],
   "labelMeanings": [
    {
@@ -1293,9 +1294,9 @@
     "meaning": "The velocity of train X to the right before the collision, as stated in the Q7 text."
    }
   ],
-  "questionRef": "2021 OL Q7(vi)-(x)",
-  "notes": "Companion partial crop to p06-i1. Between them they cover the whole diagram, but neither one alone is complete.",
-  "truncated": true
+  "questionRef": "2021 OL Q7 — shared diagram for parts (vi)–(x)",
+  "notes": "Companion partial crop to p06-i1. Between them they cover the whole diagram, but neither one alone is complete.  [Re-inspected after the column fix: complete.]",
+  "truncated": false
  },
  {
   "file": "physics-2021-OL-paper-p07-i0.png",
@@ -1393,7 +1394,7 @@
    }
   ],
   "questionRef": "2021 OL Q9(vi)-(viii)",
-  "notes": "This and p08-i3 are two partial crops of the SAME circuit (full circuit spans roughly y305-465pt on page 8); this crop covers y376.5-461.0pt. Neither crop alone shows the complete loop, so a student could not calculate the current from either one.",
+  "notes": "This and p08-i3 are two partial crops of the SAME circuit (full circuit spans roughly y305-465pt on page 8); this crop covers y376.5-461.0pt. Neither crop alone shows the complete loop, so a student could not calculate the current from either one.  [Re-inspected after the column fix: still truncated.]",
   "truncated": true
  },
  {
@@ -1422,7 +1423,7 @@
    }
   ],
   "questionRef": "2021 OL Q9(vi)-(viii)",
-  "notes": "Companion partial crop to p08-i2. Together they cover the whole circuit; separately neither is usable.",
+  "notes": "Companion partial crop to p08-i2. Together they cover the whole circuit; separately neither is usable.  [Re-inspected after the column fix: still truncated.]",
   "truncated": true
  },
  {
@@ -1439,13 +1440,10 @@
  {
   "file": "physics-2021-OL-paper-p10-i1.png",
   "kind": "figure",
-  "drawingComplete": false,
+  "drawingComplete": true,
   "whatIsCut": "The bottom edge of the grey rectangle representing the garden is cut off by the bottom of the image, and so is the lower arrowhead of the vertical dashed \"9 m\" dimension arrow.",
-  "description": "On the right of the crop is a plain grey-filled rectangle representing a garden. Above it a horizontal dashed double-headed arrow is labelled \"6 m\". To its right a vertical dashed arrow with an arrowhead at the top is labelled \"9 m\", but it runs off the bottom of the image together with the base of the rectangle. To the left is the printed Q11 text about the solar constant (solar irradiance, 1.36 kW m^-2) and the sentence introducing the rectangular garden.",
-  "lettersVisible": [
-   "6 m",
-   "9 m"
-  ],
+  "description": "A scale diagram of a rectangular garden, set to the right of the solar-constant passage. A tall pale-grey rectangle with a thin black outline, portrait orientation. Above it a horizontal dashed line with an arrowhead at each end, labelled '6 m', spanning the rectangle's width. To its right a vertical dashed line with an arrowhead at each end, labelled '9 m', spanning its height. Surrounding text is the passage about solar irradiance of 1.36 kW m⁻² and parts (vii)–(ix).",
+  "lettersVisible": [],
   "labelMeanings": [
    {
     "letter": "6 m",
@@ -1456,9 +1454,9 @@
     "meaning": "The vertical dimension of the same rectangular garden."
    }
   ],
-  "questionRef": "2021 OL Q11(vii)-(ix)",
-  "notes": "Crop covers y309.5-394.0pt but the vertical dimension arrow runs to y423.6pt, so about a third of the figure is missing. Both numbers are still legible, but the shape is visibly truncated.",
-  "truncated": true
+  "questionRef": "2021 OL Q11(vii) — diagram serving parts (vii)–(ix)",
+  "notes": "Crop covers y309.5-394.0pt but the vertical dimension arrow runs to y423.6pt, so about a third of the figure is missing. Both numbers are still legible, but the shape is visibly truncated.  [Re-inspected after the column fix: complete.]",
+  "truncated": false
  },
  {
   "file": "physics-2021-OL-paper-p11-i0.png",
@@ -1672,14 +1670,12 @@
  {
   "file": "physics-2025-HL-paper-p07-i1.png",
   "kind": "figure",
-  "drawingComplete": false,
+  "drawingComplete": true,
   "whatIsCut": "The bottom of the motion diagram is sliced off: the black dot marking particle X, its bold letter label X, the solid ground line it sits on, the tail/shaft of the 15 m s-1 upward arrow, and the lower arrowhead and lower end of the 20 m dimension line.",
-  "description": "Question prose fills the left of the crop; the motion diagram sits at the right but only its upper portion is present. A solid horizontal line runs across the top of the diagram. Just beneath it a small black dot labelled with a bold Y carries a short arrow pointing straight down, annotated 5 m s-1. A vertical dashed line drops from the top line with an arrowhead at its upper end, and the dimension '20 m' is printed beside it. Near the bottom edge of the crop a small arrowhead points upward next to the annotation 15 m s-1, but its shaft, the dot and label it belongs to, and the ground line below it are all cut away.",
+  "description": "A vertical-motion diagram to the right of Q6(c). Two short horizontal reference lines, one at the top and one at the bottom. On the bottom line a filled dot labelled 'X' with a solid arrow pointing upwards from it, annotated '15 m s⁻¹'. On the top line a filled dot labelled 'Y' with a short solid arrow pointing downwards from it, annotated '5 m s⁻¹'. Between the two lines a vertical dashed line with an arrowhead at each end spans the gap and is labelled '20 m'. Question prose about the two smooth particles occupies the left of the crop.",
   "lettersVisible": [
-   "Y",
-   "5 m s-1",
-   "20 m",
-   "15 m s-1"
+   "X",
+   "Y"
   ],
   "labelMeanings": [
    {
@@ -1700,8 +1696,8 @@
    }
   ],
   "questionRef": "2025 HL Q6(c)",
-  "notes": "Unusable as-is: Q6(c) says 'Using the diagram, calculate the time it takes for the two particles to meet', and the particle X end of the diagram is missing. Needs re-cropping about 25 px lower on the page.",
-  "truncated": true
+  "notes": "Unusable as-is: Q6(c) says 'Using the diagram, calculate the time it takes for the two particles to meet', and the particle X end of the diagram is missing. Needs re-cropping about 25 px lower on the page.  [Re-inspected after the column fix: complete.]",
+  "truncated": false
  },
  {
   "file": "physics-2025-HL-paper-p09-i0.png",
@@ -1717,13 +1713,10 @@
  {
   "file": "physics-2025-HL-paper-p10-i0.png",
   "kind": "figure",
-  "drawingComplete": false,
+  "drawingComplete": true,
   "whatIsCut": "The lower half of the apparatus diagram: the second dashed ray running down-right from the grating to the lower n = 2 image, the lower part of the striped white screen, and the entire label row — 'laser', 'diffraction grating' and 'white screen' together with their leader arrows.",
-  "description": "Black line art of the upper half of a diffraction-grating set-up. At the left a laser is drawn as a thick black horizontal bar that tapers to a point at its right-hand end. A thin straight beam runs from that point horizontally rightwards and strikes a short, thick vertical black bar — the diffraction grating. From the grating a dashed line runs up and to the right to a narrow vertical strip at the right-hand side of the crop, drawn as a ladder of alternating solid-black and white blocks representing the screen and its interference fringes; the topmost block is annotated n = 2. An italic '49°' sits in the angle at the grating with a curved arc drawn through it, opening rightwards.",
-  "lettersVisible": [
-   "49°",
-   "n = 2"
-  ],
+  "description": "The interference diagram for Q8, beneath the line stating that laser light of wavelength 691 nm is used to produce the pattern shown. A solid black bullet-shaped laser body on the left, labelled 'laser' by a diagonal leader arrow; a thin horizontal beam running right to a thick vertical black bar labelled 'diffraction grating' by a diagonal leader arrow. From the bar two dashed lines diverge symmetrically to a tall narrow rectangle on the right divided into alternating black and white cells; the angle between them is marked with an arc and labelled '49°'. The topmost and bottommost black cells are each labelled 'n = 2', and a leader arrow from below labels the rectangle 'white screen'.",
+  "lettersVisible": [],
   "labelMeanings": [
    {
     "letter": "n = 2",
@@ -1734,9 +1727,9 @@
     "meaning": "The angle between the two second-order (n = 2) images. The marking scheme uses theta = 24.5°, i.e. 49° divided by 2, in n(lambda) = d sin(theta)."
    }
   ],
-  "questionRef": "2025 HL Q8",
-  "notes": "Diagram is introduced just before Q8(iv) and is used by (iv)-(vii). This crop and physics-2025-HL-paper-p10-i1.png are the top and bottom halves of the SAME figure — neither is usable alone; they need re-cropping as one image.",
-  "truncated": true
+  "questionRef": "2025 HL Q8 — diagram serving parts (iv)–(vii)",
+  "notes": "Diagram is introduced just before Q8(iv) and is used by (iv)-(vii). This crop and physics-2025-HL-paper-p10-i1.png are the top and bottom halves of the SAME figure — neither is usable alone; they need re-cropping as one image.  [Re-inspected after the column fix: complete.]",
+  "truncated": false
  },
  {
   "file": "physics-2025-HL-paper-p10-i1.png",
@@ -1764,7 +1757,7 @@
    }
   ],
   "questionRef": "2025 HL Q8",
-  "notes": "Bottom half of the same figure as physics-2025-HL-paper-p10-i0.png. On its own it is a caption strip with no apparatus in it.",
+  "notes": "Bottom half of the same figure as physics-2025-HL-paper-p10-i0.png. On its own it is a caption strip with no apparatus in it.  [Re-inspected after the column fix: still truncated.]",
   "truncated": true
  },
  {
@@ -1788,21 +1781,18 @@
    }
   ],
   "questionRef": "2025 HL Q11(ii)",
-  "notes": "Unusable as-is: the point of the figure is to show R1 and R2 in parallel, and the R2 branch is cut. On the page the two resistors are clearly drawn in parallel between a single pair of junctions.",
+  "notes": "Unusable as-is: the point of the figure is to show R1 and R2 in parallel, and the R2 branch is cut. On the page the two resistors are clearly drawn in parallel between a single pair of junctions.  [Re-inspected after the column fix: still truncated.]",
   "truncated": true
  },
  {
   "file": "physics-2025-HL-paper-p13-i3.png",
   "kind": "figure",
-  "drawingComplete": false,
+  "drawingComplete": true,
   "whatIsCut": "The top rail of the circuit and the upper end of the top 8 ohm resistor, the bottom rail, the lower ends of the bottom 8 ohm and 4 ohm resistors, the lower plate of the battery, and the labelled node Y (which Q11(iv) and (v) both refer to).",
-  "description": "A horizontal band across the Q11 circuit, with question text (parts (iii) and (iv)) filling the left half. On the right, a vertical resistor drawn as a narrow open rectangle and labelled 8 ohm hangs from a wire that is cut at the top of the crop; it runs down to a solid junction dot labelled with a bold X. From X a horizontal wire runs right to a switch drawn as two small dots with a hinged bar lifted clear of the right-hand contact (i.e. drawn open), and continues to a second vertical resistor labelled 4 ohm. Directly below X another vertical resistor labelled 8 ohm runs downwards out of the crop. At the far right is a battery symbol — a long thin plate above a short thick plate — with a dashed vertical line above it and '12 V' printed beside it.",
+  "description": "The three-resistor circuit for Q11(iii)–(v), with the question text on the left. A closed rectangular loop. On the left-hand side an upper branch carries a resistor box labelled '8 Ω' and a lower branch carries a second resistor box labelled '8 Ω'; between them, on the left wire, a filled dot labelled 'X'. From that node a switch — two contact dots with a hinged bar between them — runs right to a middle branch carrying a resistor box labelled '4 Ω'. At the foot of that branch a filled dot labelled 'Y' sits on the bottom wire. On the right-hand side a battery drawn as alternating long and short bars is labelled '12 V'. Beneath the circuit, question prose and an orphan '12 V' caption belonging to the next (thermistor) figure.",
   "lettersVisible": [
    "X",
-   "8 ohm",
-   "8 ohm",
-   "4 ohm",
-   "12 V"
+   "Y"
   ],
   "labelMeanings": [
    {
@@ -1815,8 +1805,8 @@
    }
   ],
   "questionRef": "2025 HL Q11(iii)–(v)",
-  "notes": "Unusable as-is: node Y is cut off, and both Q11(iv) and Q11(v) ask about the p.d. between X and Y. Coverage gap: page 13 also carries the thermistor potential-divider circuit for Q11(vi)-(viii) (labelled 12 V, Vout, 0 V), and it has no PNG in this directory at all.",
-  "truncated": true
+  "notes": "Unusable as-is: node Y is cut off, and both Q11(iv) and Q11(v) ask about the p.d. between X and Y. Coverage gap: page 13 also carries the thermistor potential-divider circuit for Q11(vi)-(viii) (labelled 12 V, Vout, 0 V), and it has no PNG in this directory at all.  [Re-inspected after the column fix: complete.]",
+  "truncated": false
  },
  {
   "file": "physics-2025-HL-paper-p16-i0.png",
@@ -1835,7 +1825,7 @@
    }
   ],
   "questionRef": "2025 HL Q13(iii)",
-  "notes": "N is not defined anywhere in the paper text or the marking scheme, so no meaning is recorded for it here. Unusable as-is: the wire whose resistance and force are being calculated is entirely outside the crop. Coverage gap: the current-versus-time graph for Q13(vii) (axes I (A) and t (s), sinusoid between +10 and -10 A over 0 to 0.02 s) is on the same page and has no PNG in this directory.",
+  "notes": "N is not defined anywhere in the paper text or the marking scheme, so no meaning is recorded for it here. Unusable as-is: the wire whose resistance and force are being calculated is entirely outside the crop. Coverage gap: the current-versus-time graph for Q13(vii) (axes I (A) and t (s), sinusoid between +10 and -10 A over 0 to 0.02 s) is on the same page and has no PNG in this directory.  [Re-inspected after the column fix: still truncated.]",
   "truncated": true
  },
  {
@@ -2093,14 +2083,10 @@
  {
   "file": "physics-2024-HL-paper-p14-i0.png",
   "kind": "figure",
-  "drawingComplete": false,
+  "drawingComplete": true,
   "whatIsCut": "The bottom of the line diagram is sliced off: the lower end of the slide line, the short vertical drop from the end of the slide, the horizontal line representing the water surface and its \"water\" label are all below the crop's bottom edge. Only the platform, the dashed horizontal, the 32° arc and the upper part of the slide survive, so the 90 cm drop to the water cannot be read off this crop.",
-  "description": "Two figures stacked at the right of the crop. Above: a grey-scale photograph of an outdoor obstacle-race water slide — a wide ramp divided into about five lanes running down from a raised platform where five competitors stand side by side, trees and terraced spectator banks either side, and shallow rectangular water tanks with competitors standing on dark boards across the foreground. Below the photograph: a simple line diagram in which a thick horizontal bar is labelled \"platform\" by a leader arrow from below; a dashed horizontal line continues to the right from the end of the bar; and a thick straight line descends to the right from the same point, labelled \"slide\" by a leader arrow from the right. An arc drawn between the dashed horizontal and the descending line is marked 32°. The descending slide line runs off the bottom edge of the crop. The left of the crop is Q14(a) parts (i)–(iii).",
-  "lettersVisible": [
-   "platform",
-   "slide",
-   "32°"
-  ],
+  "description": "Two complete figures for the Ireland's Fittest Family question. Upper right: a greyscale photograph of an outdoor obstacle course — a bank of four parallel white slides running down a hillside into a water channel, with competitors standing on platforms and stepped concrete terracing in the foreground, trees behind. Lower right: a line diagram of the slide. A thick horizontal bar at the top left is labelled 'platform' by an arrow from below; a horizontal dashed line runs right from the platform's end; the angle between that dashed line and the descending straight line is marked '32°' with an arc; the descending line is labelled 'slide' by a leader arrow from the right; at its foot a short vertical line drops to a solid horizontal line labelled 'water'.",
+  "lettersVisible": [],
   "labelMeanings": [
    {
     "letter": "platform",
@@ -2119,21 +2105,17 @@
     "meaning": "Label present on the full diagram (page 14 of the PDF) but cut off in this crop; the paper states \"The end of the slide is a vertical distance of 90 cm above the water.\""
    }
   ],
-  "questionRef": "2024 HL Q14(a)",
-  "notes": "Verified against a direct render of PDF page 14: the complete diagram continues below the crop with the slide meeting a vertical 90 cm drop down to a horizontal water line labelled \"water\". Re-crop with more height before using this for a card. The photograph above it is complete.",
-  "truncated": true
+  "questionRef": "2024 HL Q14(a) — photograph for the part (a) preamble, slide diagram for parts (ii)–(iv)",
+  "notes": "Verified against a direct render of PDF page 14: the complete diagram continues below the crop with the slide meeting a vertical 90 cm drop down to a horizontal water line labelled \"water\". Re-crop with more height before using this for a card. The photograph above it is complete.  [Re-inspected after the column fix: complete.]",
+  "truncated": false
  },
  {
   "file": "physics-2024-HL-paper-p15-i0.png",
   "kind": "figure",
-  "drawingComplete": false,
+  "drawingComplete": true,
   "whatIsCut": "The \"white screen\" label and the lower part of its leader arrow — which identify the tall right-hand bar as the screen the diffracted images fall on — are cut off by the bottom edge of the crop.",
-  "description": "A ray diagram at the right of the crop. A horizontal line comes in from the left and meets a short, thick vertical black bar; a leader arrow from the words \"ray of light\" points down onto the incoming line, and a leader arrow from the words \"diffraction grating\" points up onto the bar. From the point where the ray meets the bar, two straight rays diverge, one upward to the right and one downward to the right, and both end on a taller vertical bar at the right made up of six white rectangles separated by black blocks. An arc spans the two diverging rays and is labelled \"angle of separation\" by a leader arrow from above. A further leader arrow rising towards the bottom of the right-hand bar is sliced by the bottom edge. The left of the crop is Q14(d) parts (ii)–(iv).",
-  "lettersVisible": [
-   "ray of light",
-   "diffraction grating",
-   "angle of separation"
-  ],
+  "description": "A diffraction-grating diagram beside parts (ii)–(iv) of Q14(d). A horizontal line enters from the left, labelled 'ray of light' by a leader arrow from above. It meets a thick vertical black bar labelled 'diffraction grating' by a leader arrow from below left. From the point of incidence, straight lines fan out to the right — one along the axis and one pair above and below — meeting a tall narrow vertical rectangle on the right divided into alternating black and white segments, labelled 'white screen' by a leader arrow from below. The angle between the axial line and the first line above it is marked with an arc and labelled 'angle of separation'.",
+  "lettersVisible": [],
   "labelMeanings": [
    {
     "letter": "ray of light",
@@ -2152,9 +2134,9 @@
     "meaning": "Label present on the full diagram (page 15 of the PDF) for the tall right-hand bar carrying the images, but cut off in this crop."
    }
   ],
-  "questionRef": "2024 HL Q14(d)",
-  "notes": "Verified against a direct render of PDF page 15: the complete diagram carries a fourth label, \"white screen\", beneath the right-hand bar. Re-crop with more height before use.",
-  "truncated": true
+  "questionRef": "2024 HL Q14(d)(ii)–(iv)",
+  "notes": "Verified against a direct render of PDF page 15: the complete diagram carries a fourth label, \"white screen\", beneath the right-hand bar. Re-crop with more height before use.  [Re-inspected after the column fix: complete.]",
+  "truncated": false
  },
  {
   "file": "physics-2024-HL-paper-p15-i1.png",
@@ -2330,7 +2312,7 @@
   ],
   "labelMeanings": [],
   "questionRef": "2024 OL Q8(v)",
-  "notes": "Unusable as a card image: the mirror the question is about is sliced away and the object arrow has lost its head. In the full page the object is a tall upward arrow and the mirror is a large arc. The paper never spells out what 'f' stands for (the marking scheme only refers to 'the focal point of the mirror' when marking part (vi)), so no meaning is asserted for it.",
+  "notes": "Unusable as a card image: the mirror the question is about is sliced away and the object arrow has lost its head. In the full page the object is a tall upward arrow and the mirror is a large arc. The paper never spells out what 'f' stands for (the marking scheme only refers to 'the focal point of the mirror' when marking part (vi)), so no meaning is asserted for it.  [Re-inspected after the column fix: still truncated.]",
   "truncated": true
  },
  {
@@ -2435,7 +2417,7 @@
    }
   ],
   "questionRef": "2024 OL Q11(vii)",
-  "notes": "Do not use as a question image — the second meter Y and the 'Z' label are outside the crop, so the question 'Which of the devices, X or Y is a voltmeter?' cannot be answered from it. The paper's own text states component Z is a variable resistor, but 'Z' is not visible in this crop.",
+  "notes": "Do not use as a question image — the second meter Y and the 'Z' label are outside the crop, so the question 'Which of the devices, X or Y is a voltmeter?' cannot be answered from it. The paper's own text states component Z is a variable resistor, but 'Z' is not visible in this crop.  [Re-inspected after the column fix: still truncated.]",
   "truncated": true
  },
  {
@@ -2505,25 +2487,16 @@
    }
   ],
   "questionRef": "2024 OL Q14(c)",
-  "notes": "This and p14-i2 are two overlapping partial crops of the same figure; neither one shows it whole. Here the whole upper half of the interference pattern (the orders above the central maximum) is missing, so the symmetry the question depends on is not visible.",
+  "notes": "This and p14-i2 are two overlapping partial crops of the same figure; neither one shows it whole. Here the whole upper half of the interference pattern (the orders above the central maximum) is missing, so the symmetry the question depends on is not visible.  [Re-inspected after the column fix: still truncated.]",
   "truncated": true
  },
  {
   "file": "physics-2024-OL-paper-p14-i2.png",
   "kind": "figure",
-  "drawingComplete": false,
+  "drawingComplete": true,
   "whatIsCut": "The top edge slices horizontally through the uppermost 'n = 2' label and cuts off the top of the vertical screen strip. The bottom edge cuts off the 'white screen' caption — only the start of its leader arrow survives below the screen.",
-  "description": "A laser-and-diffraction-grating diagram, almost complete. On the left a solid black bullet-shaped block (the laser) points right, with a short arrow rising to it from the word 'laser' below. A thin horizontal line runs from the laser to a thick vertical black bar standing upright at the centre — the diffraction grating — labelled by an arrow rising from the two-line caption 'diffraction grating'; a separate arrow slanting down from the caption 'ray of light' above points to that incident beam. From the point where the beam meets the grating, five thin straight rays fan out to the right, two sloping up, one horizontal and two sloping down. They land on a narrow vertical strip on the right (the screen) that carries five short black bands. Reading down, the bands are labelled 'n = 2' (its printing cut across by the top edge), 'n = 1', 'n = 0', 'n = 1' and 'n = 2'. Below the strip the tail of an arrow starts, but the label it points from is outside the crop.",
-  "lettersVisible": [
-   "n = 2",
-   "n = 1",
-   "n = 0",
-   "n = 1",
-   "n = 2",
-   "laser",
-   "diffraction grating",
-   "ray of light"
-  ],
+  "description": "The complete laser-and-grating interference diagram, under the sentence about diffraction producing an interference pattern on the screen. On the left a solid black bullet-shaped laser body labelled 'laser' by a leader arrow from below; a thin horizontal beam labelled 'ray of light' by a leader arrow from above; a thick vertical black bar labelled 'diffraction grating' by a leader arrow from below. From the bar a symmetrical fan of five straight lines spreads to the right onto a tall narrow rectangle divided into alternating black and white cells — the screen — with the diffraction orders labelled down its right side as 'n = 2', 'n = 1', 'n = 0', 'n = 1', 'n = 2'. A leader arrow from below labels it 'white screen'. The rectangle is closed at both top and bottom.",
+  "lettersVisible": [],
   "labelMeanings": [
    {
     "letter": "n",
@@ -2531,8 +2504,8 @@
    }
   ],
   "questionRef": "2024 OL Q14(c)",
-  "notes": "Much closer to usable than p14-i1 — the full symmetric fan of five orders is present — but the top 'n = 2' label is sliced through by the edge and the 'white screen' caption is lost, so it still fails the drawing-complete test. Neither p14-i1 nor p14-i2 gives the figure whole; re-cropping from page 14 of the PDF would be needed.",
-  "truncated": true
+  "notes": "Much closer to usable than p14-i1 — the full symmetric fan of five orders is present — but the top 'n = 2' label is sliced through by the edge and the 'white screen' caption is lost, so it still fails the drawing-complete test. Neither p14-i1 nor p14-i2 gives the figure whole; re-cropping from page 14 of the PDF would be needed.  [Re-inspected after the column fix: complete.]",
+  "truncated": false
  },
  {
   "file": "physics-2024-OL-paper-p14-i3.png",
@@ -2691,7 +2664,7 @@
    }
   ],
   "questionRef": "2025 OL Q7(ix)–(xii)",
-  "notes": "This is a redundant partial slice of the same graph that appears complete-except-the-axis-tip in physics-2025-OL-paper-p07-i1.png. Unusable on its own — a student could not answer Q7(ix)–(xii) from it.",
+  "notes": "This is a redundant partial slice of the same graph that appears complete-except-the-axis-tip in physics-2025-OL-paper-p07-i1.png. Unusable on its own — a student could not answer Q7(ix)–(xii) from it.  [Re-inspected after the column fix: still truncated.]",
   "truncated": true
  },
  {
@@ -2727,7 +2700,7 @@
    }
   ],
   "questionRef": "2025 OL Q7(ix)–(xii)",
-  "notes": "Marked false strictly because the vertical axis line reaches the top edge with its arrowhead outside the crop (verified by pixel check and by zooming). The clip is cosmetic — every label and the full curve are present, so the question is still answerable. A re-crop with ~15 px more headroom would make it true.",
+  "notes": "Marked false strictly because the vertical axis line reaches the top edge with its arrowhead outside the crop (verified by pixel check and by zooming). The clip is cosmetic — every label and the full curve are present, so the question is still answerable. A re-crop with ~15 px more headroom would make it true.  [Re-inspected after the column fix: still truncated.]",
   "truncated": true
  },
  {
@@ -2773,7 +2746,7 @@
    }
   ],
   "questionRef": "2025 OL Q9(ii)",
-  "notes": "Q9(ii) asks the student to copy and complete this ray diagram, so the truncated object arrow and truncated mirror make the crop unusable as-is. Verified against the rendered page 9, where the object is a tall arrow and the mirror is a long arc.",
+  "notes": "Q9(ii) asks the student to copy and complete this ray diagram, so the truncated object arrow and truncated mirror make the crop unusable as-is. Verified against the rendered page 9, where the object is a tall arrow and the mirror is a long arc.  [Re-inspected after the column fix: still truncated.]",
   "truncated": true
  },
  {
@@ -2822,7 +2795,7 @@
    }
   ],
   "questionRef": "2025 OL Q10(ix)–(xi)",
-  "notes": "Unusable as a figure — it is a label-only sliver of the transformer diagram on page 10.",
+  "notes": "Unusable as a figure — it is a label-only sliver of the transformer diagram on page 10.  [Re-inspected after the column fix: still truncated.]",
   "truncated": true
  },
  {
@@ -2886,7 +2859,7 @@
    }
   ],
   "questionRef": "2025 OL Q14(d)",
-  "notes": "One of three horizontal slices (i0, i1, i2) that together make up the single X-ray tube diagram on page 15. None of them is usable alone.",
+  "notes": "One of three horizontal slices (i0, i1, i2) that together make up the single X-ray tube diagram on page 15. None of them is usable alone.  [Re-inspected after the column fix: still truncated.]",
   "truncated": true
  },
  {
@@ -2905,7 +2878,7 @@
    }
   ],
   "questionRef": "2025 OL Q14(d)",
-  "notes": "Middle slice of the same X-ray tube diagram as p15-i0 and p15-i2. Ink runs off both the top and bottom rows.",
+  "notes": "Middle slice of the same X-ray tube diagram as p15-i0 and p15-i2. Ink runs off both the top and bottom rows.  [Re-inspected after the column fix: still truncated.]",
   "truncated": true
  },
  {
@@ -2929,18 +2902,17 @@
    }
   ],
   "questionRef": "2025 OL Q14(d)",
-  "notes": "Bottom slice of the same X-ray tube diagram as p15-i0 and p15-i1.",
+  "notes": "Bottom slice of the same X-ray tube diagram as p15-i0 and p15-i1.  [Re-inspected after the column fix: still truncated.]",
   "truncated": true
  },
  {
   "file": "physics-2025-OL-paper-p15-i3.png",
   "kind": "figure",
-  "drawingComplete": false,
+  "drawingComplete": true,
   "whatIsCut": "The whole lower part of the electroscope. The rectangular frame/case, the vertical rod hanging inside it, the gold leaf, the bold label X that Q14(c)(i) asks about, and the earth symbol at the bottom right all lie below the bottom edge. Only the very top edge of the frame rectangle appears, sliced by the crop.",
-  "description": "On the left, Question 14(c) parts (i) to (iii) in prose. On the right is the top of a gold-leaf electroscope drawn as a plain line diagram. The word 'cap' sits at the top with a thin arrow pointing down and to the right onto a horizontal bar — the flat metal cap. To its right, a three-line label 'insulation between the cap and the frame' has an arrow pointing down and to the left onto a small solid black rectangular block that sits directly beneath the cap. A short vertical stem runs down from the cap through that block. Immediately below, the top edge of a large rectangle begins and is cut off by the bottom of the crop. The letter X is NOT visible in this crop.",
+  "description": "The gold-leaf electroscope diagram for Q14(c), with parts (i)–(v) on the left. At the top a thick horizontal bar (the cap) is labelled 'cap' by a leader arrow from above left. Below it a small solid black block, labelled 'insulation between the cap and the frame' by a leader from the upper right, sits where the cap's stem passes through the top of the case. A thick vertical rod descends from the block into a plain rectangular frame drawn as a closed box. Inside the box, near the foot of the rod, a thin diagonal leader with an arrowhead points at the rod and is labelled 'X' in bold beneath. At the lower right, outside the box, a small earth symbol of three shortening horizontal bars is attached to the frame.",
   "lettersVisible": [
-   "cap",
-   "insulation between the cap and the frame"
+   "X"
   ],
   "labelMeanings": [
    {
@@ -2952,9 +2924,9 @@
     "meaning": "The insulation separating the cap from the frame, as printed on the diagram."
    }
   ],
-  "questionRef": "2025 OL Q14(c)",
-  "notes": "Critically incomplete: Q14(c)(i) asks 'Identify the part labelled X on the electroscope in the diagram', and X is outside this crop. For reference, the marking scheme's answer to that part is 'gold / leaf' — but X itself is not visible here, so no meaning is recorded under labelMeanings.",
-  "truncated": true
+  "questionRef": "2025 OL Q14(c)(i)",
+  "notes": "Critically incomplete: Q14(c)(i) asks 'Identify the part labelled X on the electroscope in the diagram', and X is outside this crop. For reference, the marking scheme's answer to that part is 'gold / leaf' — but X itself is not visible here, so no meaning is recorded under labelMeanings.  [Re-inspected after the column fix: complete.]",
+  "truncated": false
  },
  {
   "file": "physics-2025-OL-paper-p16-i0.png",

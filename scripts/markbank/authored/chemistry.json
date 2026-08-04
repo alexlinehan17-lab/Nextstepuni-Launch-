@@ -952,7 +952,7 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2021 OL Q3(b)(ii)",
-  "stem": "100 cm3 of 1.0 M hydrochloric acid at 16.0 °C was added quickly to 100 cm3 of 1.0 M sodium hydroxide solution in an insulated cup, the mixture was stirred, and the temperature of the contents was recorded at 0.5-minute intervals. HCl + NaOH → NaCl + H2O",
+  "stem": "100 cm3 of 1.0 M hydrochloric acid at 16.0 °C was added quickly to 100 cm3 of 1.0 M sodium hydroxide solution in an insulated cup, the mixture was stirred, and the temperature of the contents was recorded at 0.5-minute intervals. HCl + NaOH → NaCl + H2O. The results are given in the table.",
   "questionText": "Is the neutralisation of sodium hydroxide solution by hydrochloric acid exothermic or endothermic? Justify your answer.",
   "tariffModel": {
    "kind": "fixed"
@@ -977,7 +977,8 @@
     "marks": 3
    }
   ],
-  "notes": "SKIPPED from Q3: (a) 'Plot a graph (on graph paper) of temperature versus time' — a graph-plotting task; and (b)(i) 'Estimate the maximum temperature change as a result of the reaction' (answer 6.7 – 7.0 °C) — answerable only from the results table / plotted graph, which the scheme does not reproduce."
+  "notes": "SKIPPED from Q3: (a) 'Plot a graph (on graph paper) of temperature versus time' — a graph-plotting task; and (b)(i) 'Estimate the maximum temperature change as a result of the reaction' (answer 6.7 – 7.0 °C) — answerable only from the results table / plotted graph, which the scheme does not reproduce.",
+  "figureKey": "chemistry-2021-OL-paper-p04-i0"
  },
  {
   "id": "chem-2021-ol-q3-c",
@@ -4055,7 +4056,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 HL Q11(a)(iv)",
-  "stem": "An arrangement of apparatus is used to compare the solubilities of ethene in water and in cyclohexane.",
+  "stem": "The diagram shows an arrangement of apparatus used to compare the solubilities of ethene in water and in cyclohexane.",
   "questionText": "Explain how and why the solubility of ethene in water differs from its solubility in cyclohexane.",
   "tariffModel": {
    "kind": "fixed"
@@ -4083,7 +4084,8 @@
     "contextNote": "['Like dissolves like' unacceptable.]"
    }
   ],
-  "notes": "The question's opening sentence refers to a printed diagram of the syringe apparatus; only the second, self-contained sentence is used as the questionText, so no figure is carried."
+  "notes": "The question's opening sentence refers to a printed diagram of the syringe apparatus; only the second, self-contained sentence is used as the questionText, so no figure is carried.",
+  "figureKey": "chemistry-2021-HL-paper-p12-i2"
  },
  {
   "id": "chem-2021-hl-q11-b-i",

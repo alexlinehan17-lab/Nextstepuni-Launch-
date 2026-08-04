@@ -341,13 +341,14 @@
  {
   "file": "chemistry-2021-OL-paper-p04-i0.png",
   "kind": "figure",
-  "truncated": true,
-  "description": "Left side is the printed stem of question 3 (insulated cup, 100 cm3 of 1.0 M NaOH, temperature recorded every 0.5 min, HCl added between 2 and 2.5 min, the equation HCl + NaOH -> NaCl + H2O). Right side is a photograph of a black disposable insulated cup printed with a white steaming-coffee-cup motif, closed with a white plastic lid, with a long glass thermometer pushed vertically down through the lid. At the very bottom the header cell \"Time\" of the results table and the row of readings below it are sliced off by the crop.",
+  "truncated": false,
+  "description": "The whole Q3 stimulus. Left: the printed preamble describing a thermometer through the plastic lid of an insulated cup holding 100 cm3 of 1.0 M NaOH, readings every 0.5 min for 5 min, 100 cm3 of 1.0 M HCl added between the 2.0 and 2.5 min readings, initial HCl temperature 16.0 °C, the equation HCl + NaOH → NaCl + H2O, and the note that the overall temperature change was used to calculate ΔH. Right: a photograph of a black insulated coffee cup with a white plastic lid and a long thermometer inserted through the lid. Below, a fully enclosed two-row ruled table (I measured the closing right-hand rule — full ink, nothing missing): row 'Time (minutes)' = 0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0; row 'Temperature (°C)' = 16.0, 16.0, 16.0, 16.0, 16.0, 22.1, 22.7, 22.6, 22.5, 22.4, 22.3. Part (a) ('Plot a graph (on graph paper) of temperature versus time (x-axis). (15)') is fully visible below the table.",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2021 OL Q3",
-  "notes": "TRUNCATED: the time/temperature results table needed for Q3(a) (plot the graph) is cut through by the bottom edge - only the word \"Time\" and the tops of the first numbers survive. The full table on page 4 reads Time 0-5.0 min in 0.5 steps against Temperature 16.0, 16.0, 16.0, 16.0, 16.0, 22.1, 22.7, 22.6, 22.5, 22.4, 22.3 degrees C. The cup photograph itself is complete.",
-  "recheckCut": "the results data table below the photo — the entire Time row of values (0, 0.5 ... 5.0) and the whole Temperature row (16.0 ... 22.3) are sliced off by the bottom edge, leaving only a half-height 'Time' header cell"
+  "notes": "TRUNCATED: the time/temperature results table needed for Q3(a) (plot the graph) is cut through by the bottom edge - only the word \"Time\" and the tops of the first numbers survive. The full table on page 4 reads Time 0-5.0 min in 0.5 steps against Temperature 16.0, 16.0, 16.0, 16.0, 16.0, 22.1, 22.7, 22.6, 22.5, 22.4, 22.3 degrees C. The cup photograph itself is complete.  [Re-inspected after the column fix: complete.]",
+  "recheckCut": "the results data table below the photo — the entire Time row of values (0, 0.5 ... 5.0) and the whole Temperature row (16.0 ... 22.3) are sliced off by the bottom edge, leaving only a half-height 'Time' header cell",
+  "drawingComplete": true
  },
  {
   "file": "chemistry-2021-OL-paper-p04-i1.png",
@@ -419,8 +420,9 @@
    }
   ],
   "questionRef": "2021 OL Q8",
-  "notes": "TRUNCATED: the entire top row of the scheme is missing. On page 9 the arrows labelled A and B run to boxes reading \"1,2-dibromoethane\" (left) and \"chloroethane\" (right), and the downward Al2O3 arrow starts from a box reading \"ethanol\" - all three boxes are cut off above the crop, and both arrowheads are sliced by the top edge. Q8(b)(ii) asks what is added in reactions A and B, so a student shown only this crop cannot see the products.",
-  "recheckCut": "the entire top row of the scheme — the '1,2-dibromoethane', 'ethanol' and 'chloroethane' boxes, the arrowheads of arrows A and B, and the top of the 'Al2O3' label; the bottom borders of the X / ethene / polymer Y boxes are also flush with the bottom edge"
+  "notes": "TRUNCATED: the entire top row of the scheme is missing. On page 9 the arrows labelled A and B run to boxes reading \"1,2-dibromoethane\" (left) and \"chloroethane\" (right), and the downward Al2O3 arrow starts from a box reading \"ethanol\" - all three boxes are cut off above the crop, and both arrowheads are sliced by the top edge. Q8(b)(ii) asks what is added in reactions A and B, so a student shown only this crop cannot see the products.  [Re-inspected after the column fix: still truncated.]",
+  "recheckCut": "the entire top row of the scheme — the '1,2-dibromoethane', 'ethanol' and 'chloroethane' boxes, the arrowheads of arrows A and B, and the top of the 'Al2O3' label; the bottom borders of the X / ethene / polymer Y boxes are also flush with the bottom edge",
+  "drawingComplete": false
  },
  {
   "file": "chemistry-2021-OL-paper-p09-i1.png",
@@ -690,44 +692,26 @@
  {
   "file": "chemistry-2023-HL-paper-p06-i0.png",
   "kind": "figure",
-  "truncated": true,
-  "description": "Upper portion of a line graph of electronegativity against atomic number, on a faint square grid. The y-axis runs from a visible 1.5 at the bottom of the crop up to 4 at the top, with ticks at 1.5, 2, 2.5, 3, 3.5 and 4. A steep solid line rises from the bottom left through filled points labelled Be, B, C, N, O and peaks at F at 4.0. From F a dashed line falls sharply to Cl at about 3.15, then slopes gently down and to the right through Br (about 2.95) and I (about 2.65) to At (about 2.2) at the far right. The rotated y-axis title is cut to read \"lectronegativity\".",
-  "lettersVisible": [
-   "F",
-   "O",
-   "N",
-   "C",
-   "B",
-   "Be",
-   "Cl",
-   "Br",
-   "I",
-   "At",
-   "lectronegativity (y-axis title, first letter cut off)"
-  ],
+  "truncated": false,
+  "description": "A line graph, now whole. Rotated y-axis title 'Electronegativity' with the scale 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4 running all the way down to zero. x-axis titled 'Atomic Number' with ticks 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85. A solid line with filled circular markers climbs steeply from Li (~1.0) through Be, B, C, N, O to F (~4.0) — each point labelled with its element symbol. A dashed line with markers falls gently from F through Cl (~3.15), Br (~2.95), I (~2.65) to At (~2.2), each labelled. A legend sits inside the plot at lower right: a solid line with a filled circle for 'Period 2', a dashed line with a filled circle for 'Group 17'. The (b) preamble prints in full above. Nothing is clipped on any edge.",
+  "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2023 HL Q5(b)",
-  "notes": "BADLY TRUNCATED at the bottom. Missing from the crop: the entire x-axis (\"Atomic Number\", ticks 0 to 85), the Li data point at electronegativity 1.0, the 0.5 and 1 y-ticks, the initial \"E\" of the rotated axis title \"Electronegativity\", and the whole legend that distinguishes the solid line (\"Period 2\") from the dashed line (\"Group 17\"). Without the legend the two series cannot be identified from this crop alone. Point labels are standard element symbols; no explicit key is given in the paper, so labelMeanings is left empty.",
-  "recheckCut": "Bottom of the y-axis and its title (the 'E' of Electronegativity), the entire x-axis with its element labels, and the plotted points below Be (1.5)."
+  "notes": "BADLY TRUNCATED at the bottom. Missing from the crop: the entire x-axis (\"Atomic Number\", ticks 0 to 85), the Li data point at electronegativity 1.0, the 0.5 and 1 y-ticks, the initial \"E\" of the rotated axis title \"Electronegativity\", and the whole legend that distinguishes the solid line (\"Period 2\") from the dashed line (\"Group 17\"). Without the legend the two series cannot be identified from this crop alone. Point labels are standard element symbols; no explicit key is given in the paper, so labelMeanings is left empty.  [Re-inspected after the column fix: complete.]",
+  "recheckCut": "Bottom of the y-axis and its title (the 'E' of Electronegativity), the entire x-axis with its element labels, and the plotted points below Be (1.5).",
+  "drawingComplete": true
  },
  {
   "file": "chemistry-2023-HL-paper-p07-i0.png",
   "kind": "figure",
-  "truncated": true,
-  "description": "Upper portion of a line graph plotted on fine gridded graph paper, showing heat of combustion for the alkanes. The vertical axis is on the RIGHT-hand side and is titled \"Number of carbons\", with visible ticks at 3, 4, 5, 6, 7 and 8. A straight solid line descends steeply from a filled point at 8 near the top left, through filled points at 7, 6, 5, 4 and 3, and continues off the bottom edge of the crop. Above the plot the tail of the question text reads \"members of the alkane homologous series.\"",
-  "lettersVisible": [
-   "3",
-   "4",
-   "5",
-   "6",
-   "7",
-   "8",
-   "Number of carbons"
-  ],
+  "truncated": false,
+  "description": "A near-linear line graph on a fine gridded field. x-axis runs right-to-left in negative values with ticks −6000, −5000, −4000, −3000, −2000, −1000, 0 and the title 'ΔH (kJ mol−1)' printed below the ticks (I checked the source page: nothing else belongs under it). y-axis is on the right-hand side, ticks 0 to 8 in unit steps, with the rotated title 'Number of carbons'. Eight filled circular markers joined by a straight line run from (about −5450, 8) down to (about −890, 1). The (e) preamble prints in full above; only the tail of the preceding line ('respectively. (12)') is clipped at the top — prose only.",
+  "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2023 HL Q6(e)",
-  "notes": "TRUNCATED at the bottom. Missing: the whole horizontal axis with its title \"delta-H (kJ mol^-1)\" and its scale from -6000 to 0, the 0/1/2 ticks on the vertical axis, and the two lowest data points (1 and 2 carbons). The crop cannot be used to read values off the graph because the quantitative axis is gone. The line of question text at the top is also clipped.",
-  "recheckCut": "The x-axis with its tick numbers and axis label, plus the lower continuation of the plotted line below the 3-carbon point."
+  "notes": "TRUNCATED at the bottom. Missing: the whole horizontal axis with its title \"delta-H (kJ mol^-1)\" and its scale from -6000 to 0, the 0/1/2 ticks on the vertical axis, and the two lowest data points (1 and 2 carbons). The crop cannot be used to read values off the graph because the quantitative axis is gone. The line of question text at the top is also clipped.  [Re-inspected after the column fix: complete.]",
+  "recheckCut": "The x-axis with its tick numbers and axis label, plus the lower continuation of the plotted line below the 3-carbon point.",
+  "drawingComplete": true
  },
  {
   "file": "chemistry-2023-HL-paper-p08-i0.png",
@@ -762,27 +746,21 @@
    }
   ],
   "questionRef": "2023 HL Q8(e)",
-  "notes": "TRUNCATED at the bottom. Missing: the whole horizontal axis with its title \"No. carbon atoms\" and scale 0 to 4, the -150 and -200 y-ticks, and the first data point of curve D (about -162 degrees C at 1 carbon). All four letters A, B, C and D are present and readable. A and B are left without meanings on purpose - the paper only says each of A-D is one of the alkanes, primary alcohols, aldehydes or carboxylic acids, and the marking scheme names only C and D.",
-  "recheckCut": "Bottom of the plot: curve D's lower points, the x-axis with its tick labels and axis title, and the base of the y-axis."
+  "notes": "TRUNCATED at the bottom. Missing: the whole horizontal axis with its title \"No. carbon atoms\" and scale 0 to 4, the -150 and -200 y-ticks, and the first data point of curve D (about -162 degrees C at 1 carbon). All four letters A, B, C and D are present and readable. A and B are left without meanings on purpose - the paper only says each of A-D is one of the alkanes, primary alcohols, aldehydes or carboxylic acids, and the marking scheme names only C and D.  [Re-inspected after the column fix: still truncated.]",
+  "recheckCut": "Bottom of the plot: curve D's lower points, the x-axis with its tick labels and axis title, and the base of the y-axis.",
+  "drawingComplete": false
  },
  {
   "file": "chemistry-2023-HL-paper-p09-i1.png",
   "kind": "figure",
-  "truncated": true,
-  "description": "An organic reaction scheme drawn as pale grey boxes joined by arrows. Top row: a box \"Ethane\" with an arrow pointing right to a box \"Chloroethane\"; the arrow is labelled A above and \"uv, Cl2\" below. Bottom row, read from right to left: a box \"Ethanal\" with an arrow labelled E pointing left to a box \"Ethanol\"; from \"Ethanol\" an arrow labelled D points left to a box \"Ethene\"; from \"Ethene\" an arrow labelled C points left to a box \"Poly(ethene)\". A vertical arrow labelled B runs upward from the \"Ethene\" box to the \"Ethane\" box.",
+  "truncated": false,
+  "description": "A six-box reaction scheme, boxes fully ruled (I checked the top row numerically — the borders are present, not sliced). Top row: 'Ethane' — a rightward arrow labelled A above and 'uv, Cl2' below — 'Chloroethane'. An upward arrow labelled B rises from the box below into 'Ethane'. Bottom row, right to left: 'Ethanal' — leftward arrow labelled E — 'Ethanol' — leftward arrow labelled D — 'Ethene' — leftward arrow labelled C — 'Poly(ethene)'. Parts (a)(i)–(ii), (b) and (c)(i) print below the scheme.",
   "lettersVisible": [
    "A",
    "B",
    "C",
    "D",
-   "E",
-   "Ethane",
-   "Chloroethane",
-   "uv, Cl2",
-   "Poly(ethene)",
-   "Ethene",
-   "Ethanol",
-   "Ethanal"
+   "E"
   ],
   "labelMeanings": [
    {
@@ -806,9 +784,10 @@
     "meaning": "The conversion of ethanal into ethanol - read directly off the arrow in the paper's scheme"
    }
   ],
-  "questionRef": "2023 HL Q8",
-  "notes": "Marginally truncated: the bottom outline of the \"Poly(ethene)\" and \"Ethene\" boxes is shaved off by the bottom edge (their grey fill runs to the edge), and the top borders of the \"Ethane\"/\"Chloroethane\" boxes sit flush on the top edge. Every box caption and all five letters A-E are fully legible, so the scheme is still usable.",
-  "recheckCut": "The top border of the 'Ethane' box and the bottom borders of the 'Poly(ethene)' and 'Ethene' boxes - the boxes are sliced by the top and bottom edges of the crop."
+  "questionRef": "2023 HL Q8 (scheme heading the question)",
+  "notes": "Marginally truncated: the bottom outline of the \"Poly(ethene)\" and \"Ethene\" boxes is shaved off by the bottom edge (their grey fill runs to the edge), and the top borders of the \"Ethane\"/\"Chloroethane\" boxes sit flush on the top edge. Every box caption and all five letters A-E are fully legible, so the scheme is still usable.  [Re-inspected after the column fix: complete.]",
+  "recheckCut": "The top border of the 'Ethane' box and the bottom borders of the 'Poly(ethene)' and 'Ethene' boxes - the boxes are sliced by the top and bottom edges of the crop.",
+  "drawingComplete": true
  },
  {
   "file": "chemistry-2023-HL-paper-p10-i0.png",
@@ -827,8 +806,9 @@
    }
   ],
   "questionRef": "2023 HL Q9(d)",
-  "notes": "HEAVILY TRUNCATED - this is only a horizontal slice of the full graph. Missing above: the PCl3 solid curve with its own delta-x bracket, and the rotated y-axis title \"Concentration (M)\". Missing below: the horizontal axis, the \"Time\" label, and the upward arrow captioned \"Cl2 added\" that marks when extra chlorine was injected. Pages 10 crops i0, i1 and i2 are three overlapping bands of this one graph; none of them shows it whole.",
-  "recheckCut": "Both axes and their labels, the top curve of the set, the top of the PCl5 curve and the lower part of the Cl2 curve - the figure is a mid-band slice of a taller graph."
+  "notes": "HEAVILY TRUNCATED - this is only a horizontal slice of the full graph. Missing above: the PCl3 solid curve with its own delta-x bracket, and the rotated y-axis title \"Concentration (M)\". Missing below: the horizontal axis, the \"Time\" label, and the upward arrow captioned \"Cl2 added\" that marks when extra chlorine was injected. Pages 10 crops i0, i1 and i2 are three overlapping bands of this one graph; none of them shows it whole.  [Re-inspected after the column fix: still truncated.]",
+  "recheckCut": "Both axes and their labels, the top curve of the set, the top of the PCl5 curve and the lower part of the Cl2 curve - the figure is a mid-band slice of a taller graph.",
+  "drawingComplete": false
  },
  {
   "file": "chemistry-2023-HL-paper-p10-i1.png",
@@ -847,8 +827,9 @@
    }
   ],
   "questionRef": "2023 HL Q9(d)",
-  "notes": "HEAVILY TRUNCATED. The solid falling curve in this band is PCl3 but its \"PCl3\" label is above the crop and is NOT visible, so the curve is unidentifiable from this crop alone. The y-axis title is cut to \"Concentrati\", the \"PCl5\" label is sliced in half at the bottom, and the entire time axis and the \"Cl2 added\" arrow are missing.",
-  "recheckCut": "The y-axis title (shows only 'Concentrati'), the top of the y-axis and upper curve, the whole x-axis, and the PCl5 curve/label sliced off the bottom."
+  "notes": "HEAVILY TRUNCATED. The solid falling curve in this band is PCl3 but its \"PCl3\" label is above the crop and is NOT visible, so the curve is unidentifiable from this crop alone. The y-axis title is cut to \"Concentrati\", the \"PCl5\" label is sliced in half at the bottom, and the entire time axis and the \"Cl2 added\" arrow are missing.  [Re-inspected after the column fix: still truncated.]",
+  "recheckCut": "The y-axis title (shows only 'Concentrati'), the top of the y-axis and upper curve, the whole x-axis, and the PCl5 curve/label sliced off the bottom.",
+  "drawingComplete": false
  },
  {
   "file": "chemistry-2023-HL-paper-p10-i2.png",
@@ -867,8 +848,9 @@
    }
   ],
   "questionRef": "2023 HL Q9(d)",
-  "notes": "HEAVILY TRUNCATED and near-duplicate of p10-i0 (different md5, slightly different vertical window). The \"Cl2\" curve label is sliced so only the tops of the glyphs remain. Missing: the PCl3 curve and its bracket, the y-axis title, the time axis, and the \"Cl2 added\" arrow.",
-  "recheckCut": "The 'Cl2' curve label sliced by the bottom edge, the Cl2 curve itself, a data point clipped at the top edge, and both axes with their scales."
+  "notes": "HEAVILY TRUNCATED and near-duplicate of p10-i0 (different md5, slightly different vertical window). The \"Cl2\" curve label is sliced so only the tops of the glyphs remain. Missing: the PCl3 curve and its bracket, the y-axis title, the time axis, and the \"Cl2 added\" arrow.  [Re-inspected after the column fix: still truncated.]",
+  "recheckCut": "The 'Cl2' curve label sliced by the bottom edge, the Cl2 curve itself, a data point clipped at the top edge, and both axes with their scales.",
+  "drawingComplete": false
  },
  {
   "file": "chemistry-2023-HL-paper-p11-i0.png",
@@ -944,20 +926,14 @@
  {
   "file": "chemistry-2023-HL-paper-p14-i0.png",
   "kind": "figure",
-  "truncated": true,
-  "description": "A six-stage flow diagram of the extraction of aluminium, drawn as pale grey rectangular boxes joined by plain arrows. Top row, left to right: \"Al2O3.3H2O from bauxite\" -> \"NaAlO2 in solution\" -> \"suspension of pure Al2O3.3H2O\". From the right-hand box the path drops down and doubles back to the left. Bottom row, right to left: \"pure solid Al2O3\" -> \"Al2O3 in cryolite\" -> \"molten Al\".",
-  "lettersVisible": [
-   "Al2O3·3H2O from bauxite",
-   "NaAlO2 in solution",
-   "suspension of pure Al2O3·3H2O",
-   "pure solid Al2O3",
-   "Al2O3 in cryolite",
-   " molten Al"
-  ],
+  "truncated": false,
+  "description": "A six-box flow chart of aluminium extraction, all boxes fully ruled and all arrows intact. Top row left to right: 'Al2O3·3H2O from bauxite' → 'NaAlO2 in solution' → 'suspension of pure Al2O3·3H2O'. From the third box the path drops down the right-hand side and returns leftward along the bottom row: 'pure solid Al2O3' → 'Al2O3 in cryolite' → 'molten Al'. Above the chart the part B preamble prints (pure alumina from bauxite, about 50% alumina by mass, aluminium then extracted electrochemically); below it parts (i) and (ii) print in full.",
+  "lettersVisible": [],
   "labelMeanings": [],
-  "questionRef": "2023 HL Q11(d) part B",
-  "notes": "Truncated at the bottom: the bottom border lines of the \"molten Al\", \"Al2O3 in cryolite\" and \"pure solid Al2O3\" boxes are sliced off and their grey fill runs off the edge. All six box captions and every arrow are still fully readable, so the process sequence survives intact. The top borders of the upper row sit flush against the top edge.",
-  "recheckCut": "Bottom row of the bauxite→aluminium flow chart: the 'pure solid Al2O3', 'Al2O3 in cryolite' and 'molten Al' boxes are sliced through — their bottom borders are missing at the image edge"
+  "questionRef": "2023 HL Q11(d)B",
+  "notes": "Truncated at the bottom: the bottom border lines of the \"molten Al\", \"Al2O3 in cryolite\" and \"pure solid Al2O3\" boxes are sliced off and their grey fill runs off the edge. All six box captions and every arrow are still fully readable, so the process sequence survives intact. The top borders of the upper row sit flush against the top edge.  [Re-inspected after the column fix: complete.]",
+  "recheckCut": "Bottom row of the bauxite→aluminium flow chart: the 'pure solid Al2O3', 'Al2O3 in cryolite' and 'molten Al' boxes are sliced through — their bottom borders are missing at the image edge",
+  "drawingComplete": true
  },
  {
   "file": "chemistry-2023-HL-paper-p16-i0.png",
@@ -1088,8 +1064,8 @@
  {
   "file": "chemistry-2023-OL-paper-p03-i1.png",
   "kind": "figure",
-  "truncated": true,
-  "description": "A tighter crop of the same three titration apparatus drawings. Left: a conical flask captioned \"conical flask\". Middle: a plastic wash bottle with a ribbed screw cap and a bent delivery spout, labelled \"A\". Right: a long thin vertical pipette with a bulb in its stem, labelled \"B\" — but only the middle portion of the pipette is present; its stem runs off both the top and the bottom edge of the crop. Along the very top, the stem line \"Some pieces of apparatus used to carry out the titration are shown below.\" is sliced through horizontally.",
+  "truncated": false,
+  "description": "Three pieces of titration apparatus drawn in outline on one row. Left: an Erlenmeyer flask captioned 'conical flask' beneath it. Centre: a wash bottle — a squat bottle with a screw cap and a long bent delivery spout — with the letter A printed to its right. Right: a bulb pipette drawn full length, a narrow stem with a central bulb, its drawn-out tip complete at the bottom, with the letter B printed beside it. Above, the Q2 preamble prints (burette adding HCl to Na2CO3 in a conical flask to an indicator end point, repeated a number of times, 'Some pieces of apparatus used to carry out the titration are shown below'). Below, part (a) and (b)(i)–(ii) print, with the (iii) line clipped at the bottom edge — prose only.",
   "lettersVisible": [
    "A",
    "B"
@@ -1105,14 +1081,15 @@
    }
   ],
   "questionRef": "2023 OL Q2(b)",
-  "notes": "TRUNCATED FIGURE CONTENT: apparatus B (the pipette) is cut at both the top and the bottom edge — its drawn-out tip is missing (pipette stem pixels sit on the final row, x 824-835). Q2(b)(i)/(iii) turn on identifying B, so this crop is unsafe to ship. Prefer p03-i0, which contains the same three items complete.",
-  "recheckCut": "Apparatus B (the pipette) — its top is sliced by the top edge and its stem/tip runs off the bottom edge, so the piece the student must identify is a headless, tipless fragment"
+  "notes": "TRUNCATED FIGURE CONTENT: apparatus B (the pipette) is cut at both the top and the bottom edge — its drawn-out tip is missing (pipette stem pixels sit on the final row, x 824-835). Q2(b)(i)/(iii) turn on identifying B, so this crop is unsafe to ship. Prefer p03-i0, which contains the same three items complete.  [Re-inspected after the column fix: complete.]",
+  "recheckCut": "Apparatus B (the pipette) — its top is sliced by the top edge and its stem/tip runs off the bottom edge, so the piece the student must identify is a headless, tipless fragment",
+  "drawingComplete": true
  },
  {
   "file": "chemistry-2023-OL-paper-p03-i2.png",
   "kind": "figure",
-  "truncated": true,
-  "description": "A near-identical duplicate of the previous crop: the same three titration apparatus drawings — conical flask captioned \"conical flask\", a plastic wash bottle with ribbed cap and bent spout labelled \"A\", and a long thin pipette with a bulbed stem labelled \"B\" whose stem runs off both the top and the bottom edge. The sliced stem line \"Some pieces of apparatus used to carry out the titration are shown below.\" runs along the top.",
+  "truncated": false,
+  "description": "The same three pieces of titration apparatus: an Erlenmeyer flask captioned 'conical flask', a wash bottle with screw cap and bent delivery spout labelled A, and a full-length bulb pipette labelled B, with the Q2 preamble above and parts (a) and (b)(i)–(ii) below. Identical content to p03-i1, shifted two pixels.",
   "lettersVisible": [
    "A",
    "B"
@@ -1128,8 +1105,9 @@
    }
   ],
   "questionRef": "2023 OL Q2(b)",
-  "notes": "Pixel-verified duplicate of p03-i1: rows 2-356 of p03-i1 are byte-identical to rows 0-354 of this file (it is the same crop with 2 rows shaved off the top and 1 off the bottom). Same defect — the pipette labelled B is cut at both edges and its tip is missing. Prefer p03-i0.",
-  "recheckCut": "Apparatus B (the pipette) — top sliced by the top edge, stem and tip sliced by the bottom edge"
+  "notes": "Pixel-verified duplicate of p03-i1: rows 2-356 of p03-i1 are byte-identical to rows 0-354 of this file (it is the same crop with 2 rows shaved off the top and 1 off the bottom). Same defect — the pipette labelled B is cut at both edges and its tip is missing. Prefer p03-i0.  [Re-inspected after the column fix: complete.]",
+  "recheckCut": "Apparatus B (the pipette) — top sliced by the top edge, stem and tip sliced by the bottom edge",
+  "drawingComplete": true
  },
  {
   "file": "chemistry-2023-OL-paper-p05-i0.png",
@@ -1172,18 +1150,9 @@
  {
   "file": "chemistry-2023-OL-paper-p07-i0.png",
   "kind": "figure",
-  "truncated": true,
-  "description": "Grey shaded circles of different sizes, drawn on a common baseline, representing relative atomic radii. A single small circle labelled \"H\" sits alone above and to the left. Below it runs a row of seven circles, left to right, each smaller than the last: \"Li\" (much the largest), \"Be\", \"B\", \"C\", \"N\", \"O\", \"F\" (smallest). At the bottom edge of the crop only the very top arc of an eighth, larger circle is visible, cut off; nothing else of it is shown.",
-  "lettersVisible": [
-   "H",
-   "Li",
-   "Be",
-   "B",
-   "C",
-   "N",
-   "O",
-   "F"
-  ],
+  "truncated": false,
+  "description": "A relative-atomic-size diagram: grey circles of decreasing diameter arranged in two rows, each labelled with its element symbol inside. A small circled H sits alone above and left of the first row. Top row, largest to smallest: Li, Be, B, C, N, O, F. Bottom row, largest to smallest and all noticeably larger than the element above them: Na, Mg, Al, Si, P, S, Cl. Every circle is closed and the rightmost (Cl) has clear margin before the frame edge. The part (c) preamble prints above (top line clipped — prose) and part (c)(i) prints below.",
+  "lettersVisible": [],
   "labelMeanings": [
    {
     "letter": "H",
@@ -1219,8 +1188,9 @@
    }
   ],
   "questionRef": "2023 OL Q5(c)",
-  "notes": "CRITICAL TRUNCATION — do not ship this crop. The full figure on page 7 has TWO rows: H alone, then Li Be B C N O F, then a second row Na Mg Al Si P S Cl. This crop keeps only the first row; the entire second row is missing except the top sliver of the Na circle at the bottom edge. Q5(c)(i) asks why the atomic radius of sodium is larger than that of lithium — the sodium circle the question depends on is not in the crop. Re-crop from the page to include both rows.",
-  "recheckCut": "The next row of atomic-radius circles — the top arc of a further atom (the period-3 element under Li) is visible at the bottom edge with the rest of the circle and its element symbol cut away"
+  "notes": "CRITICAL TRUNCATION — do not ship this crop. The full figure on page 7 has TWO rows: H alone, then Li Be B C N O F, then a second row Na Mg Al Si P S Cl. This crop keeps only the first row; the entire second row is missing except the top sliver of the Na circle at the bottom edge. Q5(c)(i) asks why the atomic radius of sodium is larger than that of lithium — the sodium circle the question depends on is not in the crop. Re-crop from the page to include both rows.  [Re-inspected after the column fix: complete.]",
+  "recheckCut": "The next row of atomic-radius circles — the top arc of a further atom (the period-3 element under Li) is visible at the bottom edge with the rest of the circle and its element symbol cut away",
+  "drawingComplete": true
  },
  {
   "file": "chemistry-2023-OL-paper-p09-i0.png",
@@ -1247,8 +1217,9 @@
    }
   ],
   "questionRef": "2023 OL Q8",
-  "notes": "CRITICAL TRUNCATION — do not ship this crop. On page 9 the top-left box reads \"X\" above \"C2H5OH\" and the top-right box reads \"ethene\" above \"C2H4\", joined by a two-way arrow whose upper label is \"solid S\". This crop cuts straight through both top boxes, removing the letter X, the word \"ethene\" and the \"solid S\" arrow label entirely. Q8(a)(i) asks for the IUPAC name of X and Q8(c)(i) asks to identify solid S — neither label survives the crop.",
-  "recheckCut": "The top row of the organic reaction scheme: the C2H5OH and C2H4 boxes are sliced through their upper halves, and the arrow entering C2H5OH comes from a starting-material box that is entirely off-image"
+  "notes": "CRITICAL TRUNCATION — do not ship this crop. On page 9 the top-left box reads \"X\" above \"C2H5OH\" and the top-right box reads \"ethene\" above \"C2H4\", joined by a two-way arrow whose upper label is \"solid S\". This crop cuts straight through both top boxes, removing the letter X, the word \"ethene\" and the \"solid S\" arrow label entirely. Q8(a)(i) asks for the IUPAC name of X and Q8(c)(i) asks to identify solid S — neither label survives the crop.  [Re-inspected after the column fix: still truncated.]",
+  "recheckCut": "The top row of the organic reaction scheme: the C2H5OH and C2H4 boxes are sliced through their upper halves, and the arrow entering C2H5OH comes from a starting-material box that is entirely off-image",
+  "drawingComplete": false
  },
  {
   "file": "chemistry-2023-OL-paper-p09-i1.png",
@@ -1286,8 +1257,9 @@
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2023 OL Q9",
-  "notes": "CRITICAL TRUNCATION — do not ship this crop. Verified against the rendered page 10: the real figure is two conical flasks standing on digital mass balances, captioned \"before\" (display reading 0.00 g, with the CaCO3 lumps sitting on the balance pan beside the flask) and \"during\" (display reading -0.26 g). This crop keeps only the top third — both balances, both digital readings, the \"before\"/\"during\" panel captions and the CaCO3 lumps are all cut off below the bottom edge, and the top edge slices the stem text. The only printed labels surviving are the word labels \"CaCO3\" and \"HCl solution\" (no single-letter tags on this figure).",
-  "recheckCut": "Both conical flasks are sliced through mid-body — their bases, the balance the flasks stand on, and the CaCO3 marble chips its leader line points to are all below the cut"
+  "notes": "CRITICAL TRUNCATION — do not ship this crop. Verified against the rendered page 10: the real figure is two conical flasks standing on digital mass balances, captioned \"before\" (display reading 0.00 g, with the CaCO3 lumps sitting on the balance pan beside the flask) and \"during\" (display reading -0.26 g). This crop keeps only the top third — both balances, both digital readings, the \"before\"/\"during\" panel captions and the CaCO3 lumps are all cut off below the bottom edge, and the top edge slices the stem text. The only printed labels surviving are the word labels \"CaCO3\" and \"HCl solution\" (no single-letter tags on this figure).  [Re-inspected after the column fix: still truncated.]",
+  "recheckCut": "Both conical flasks are sliced through mid-body — their bases, the balance the flasks stand on, and the CaCO3 marble chips its leader line points to are all below the cut",
+  "drawingComplete": false
  },
  {
   "file": "chemistry-2023-OL-paper-p11-i0.png",
@@ -1326,13 +1298,14 @@
  {
   "file": "chemistry-2023-OL-paper-p14-i0.png",
   "kind": "figure",
-  "truncated": true,
-  "description": "Four greyscale photographs in a row, each with a single-word caption printed above it. Under \"copper\": a tall bulbous onion-shaped church spire clad in vertical metal panels, topped by an ornate cross with a weather-vane. Under \"gold\": a large smooth ribbed dome rising from a decorated building whose facade below is tiled and pierced by a row of arches (the Dome of the Rock). Under \"iron\": a steeply pitched, heavily corroded and buckled metal roof on a small building, with a bare tree and an overcast sky behind it. Under \"lead\": a rooftop terrace carrying a row of small ribbed domes, with a distant city skyline on the horizon.",
+  "truncated": false,
+  "description": "Four black-and-white photographs of metal roofs in a row, each with its metal named in a caption above it: 'copper' — a bulbous, ribbed church spire topped by a cross; 'gold' — a large ribbed dome over an arcaded stone facade; 'iron' — a corrugated pitched roof, visibly rusted and streaked, with a bare tree in front; 'lead' — several small domed roof turrets above a parapet with a city skyline behind. I measured the horizontal extent: all four photographs end inside the frame with clear white margin, so none is clipped. Below, parts (i)–(v) of part B print in full. The line of preamble above is clipped — prose only.",
   "lettersVisible": [],
   "labelMeanings": [],
-  "questionRef": "2023 OL Q11(d) B",
-  "notes": "Treated as a figure rather than decoration because the four panels are captioned and the question turns on them: the stem states \"Copper (Cu), gold (Au), iron (Fe) and lead (Pb)... All four elements are used in roofing\" and Q11(d)B(iii) asks why iron corrodes more easily than copper, gold or lead — the iron panel shows a corroded roof. Each caption names the metal the roof in that photograph is made of, per the stem. All four photographs are complete. Truncation is minor: the very top row of pixels shaves roughly 2 px off the ascenders of the caption words (dark pixels at x 441-908 on row 0); all four words remain legible. The question text above and below is outside the crop.",
-  "recheckCut": "The top of the figure's caption row - the metal-name labels. The dot (tittle) over the i in 'iron' is entirely gone, and the ascenders of the l/d in 'gold' and 'lead' are shaved flat against row 0 (ink measured at row 0, columns 441-455 and 871-908)."
+  "questionRef": "2023 OL Q11(d)B",
+  "notes": "Treated as a figure rather than decoration because the four panels are captioned and the question turns on them: the stem states \"Copper (Cu), gold (Au), iron (Fe) and lead (Pb)... All four elements are used in roofing\" and Q11(d)B(iii) asks why iron corrodes more easily than copper, gold or lead — the iron panel shows a corroded roof. Each caption names the metal the roof in that photograph is made of, per the stem. All four photographs are complete. Truncation is minor: the very top row of pixels shaves roughly 2 px off the ascenders of the caption words (dark pixels at x 441-908 on row 0); all four words remain legible. The question text above and below is outside the crop.  [Re-inspected after the column fix: complete.]",
+  "recheckCut": "The top of the figure's caption row - the metal-name labels. The dot (tittle) over the i in 'iron' is entirely gone, and the ascenders of the l/d in 'gold' and 'lead' are shaved flat against row 0 (ink measured at row 0, columns 441-455 and 871-908).",
+  "drawingComplete": true
  },
  {
   "file": "chemistry-2023-OL-paper-p16-i0.png",
@@ -1438,13 +1411,12 @@
  {
   "file": "chemistry-2022-HL-paper-p03-i1.png",
   "kind": "figure",
-  "truncated": true,
-  "description": "Two filtration set-ups drawn side by side. Left: a beaker tipped over a cone-shaped filter funnel that holds a fluted filter paper; the funnel stem sits in the neck of a conical flask, and a leader line from the filter paper runs right to a bold 'X'. Right: a conical flask tipped over a cylindrical Buchner funnel whose flat perforated plate carries a bed of solid drawn as a dashed line, with a leader line to a bold 'Y'; the funnel is seated in a black bung on top of a filter flask, and a leader line points to the flask's side arm labelled 'suction'. The filter flask is cut off by the bottom edge of the crop — its base and contents are missing — and the letter 'Z' at the lower right is sliced horizontally so only the top stroke of the Z is visible.",
+  "truncated": false,
+  "description": "Two recrystallisation filtration diagrams side by side, in the order carried out. Left (gravity/hot filtration): a flask tilted above a fluted filter paper seated in a filter funnel whose stem enters a conical flask; a leader line runs from the tip of the filter paper out to the letter X. Right (suction filtration): a tilted conical flask pours into a Büchner funnel whose flat filter paper is drawn as a dotted line, a leader running from the material resting on that paper out to the letter Y; the funnel is seated in a rubber bung on a filter flask whose side-arm is labelled 'suction'; a leader from the liquid pooled in the bottom of the filter flask runs out to the letter Z. Both apparatus are whole — no glassware is cut at any edge. The first prose line above ('black, insoluble charcoal (C). The two filtration stages in the recrystallisation of the') is clipped, and the (iv) line is clipped at the foot — prose only. Parts (i)–(iv) print below.",
   "lettersVisible": [
    "X",
    "Y",
-   "suction",
-   "Z (only the top half is visible)"
+   "Z"
   ],
   "labelMeanings": [
    {
@@ -1460,9 +1432,10 @@
     "meaning": "potassium chloride (KCl) / water (H2O) (SEC 2022 HL marking scheme, Q2(c)(i))"
    }
   ],
-  "questionRef": "2022 HL Q2(c)(i)",
-  "notes": "DO NOT USE. This is a short duplicate crop of the same figure as chemistry-2022-HL-paper-p03-i2.png, and it is truncated in exactly the way that matters: Q2(c)(i) asks the student to identify the substance collected at X, Y AND Z, and the Z label plus the whole base of the filter flask it points into are sliced off at the bottom edge. Prose is also cut at the top ('in which they are carried out'). Use p03-i2 instead.",
-  "recheckCut": "the bottom of the suction-filtration flask in the right-hand panel and the label 'Z' plus its leader line"
+  "questionRef": "2022 HL Q2(c)",
+  "notes": "DO NOT USE. This is a short duplicate crop of the same figure as chemistry-2022-HL-paper-p03-i2.png, and it is truncated in exactly the way that matters: Q2(c)(i) asks the student to identify the substance collected at X, Y AND Z, and the Z label plus the whole base of the filter flask it points into are sliced off at the bottom edge. Prose is also cut at the top ('in which they are carried out'). Use p03-i2 instead.  [Re-inspected after the column fix: complete.]",
+  "recheckCut": "the bottom of the suction-filtration flask in the right-hand panel and the label 'Z' plus its leader line",
+  "drawingComplete": true
  },
  {
   "file": "chemistry-2022-HL-paper-p03-i2.png",
@@ -1613,8 +1586,9 @@
   ],
   "labelMeanings": [],
   "questionRef": "2022 HL Q11(d) part B",
-  "notes": "Severely truncated: this is only the top slice of the electrolysis apparatus for Q11(d)B(v)-(vi), and the circled 'A' is cut in half at the bottom edge. The rest of the apparatus continues in chemistry-2022-HL-paper-p14-i1.png; NEITHER crop contains the whole diagram. labelMeanings is deliberately empty for 'A' — a circled A is the conventional ammeter symbol, but neither the exam paper nor the 2022 HL marking scheme states what it stands for, so no meaning is asserted. The printed question text in this crop (sacrificial anodes) does not belong to this diagram.",
-  "recheckCut": "The lower two-thirds of the electrolysis apparatus — the ammeter circle, the connecting wires (ink runs off the bottom edge at x≈604, 628 and 773), the electrodes and the crucible of molten PbBr2 with its label and heat source."
+  "notes": "Severely truncated: this is only the top slice of the electrolysis apparatus for Q11(d)B(v)-(vi), and the circled 'A' is cut in half at the bottom edge. The rest of the apparatus continues in chemistry-2022-HL-paper-p14-i1.png; NEITHER crop contains the whole diagram. labelMeanings is deliberately empty for 'A' — a circled A is the conventional ammeter symbol, but neither the exam paper nor the 2022 HL marking scheme states what it stands for, so no meaning is asserted. The printed question text in this crop (sacrificial anodes) does not belong to this diagram.  [Re-inspected after the column fix: still truncated.]",
+  "recheckCut": "The lower two-thirds of the electrolysis apparatus — the ammeter circle, the connecting wires (ink runs off the bottom edge at x≈604, 628 and 773), the electrodes and the crucible of molten PbBr2 with its label and heat source.",
+  "drawingComplete": false
  },
  {
   "file": "chemistry-2022-HL-paper-p14-i1.png",
@@ -1632,8 +1606,9 @@
    }
   ],
   "questionRef": "2022 HL Q11(d) part B(v)-(vi)",
-  "notes": "Truncated at both ends: the circled 'A' is cut off at the top edge and the heat-source triangle under the crucible is cut off at the bottom edge, along with the line 'using inert electrodes in a fume-cupboard'. The upper part of the same circuit (the battery) is in chemistry-2022-HL-paper-p14-i0.png. No meaning is given for 'A' because neither the paper nor the marking scheme defines it.",
-  "recheckCut": "Top: the ammeter 'A' circle is sliced (its upper arc is missing) and both circuit wires run off the top edge, so the battery/power supply is absent. Bottom: the heat-source symbol under the crucible is sliced by the bottom edge."
+  "notes": "Truncated at both ends: the circled 'A' is cut off at the top edge and the heat-source triangle under the crucible is cut off at the bottom edge, along with the line 'using inert electrodes in a fume-cupboard'. The upper part of the same circuit (the battery) is in chemistry-2022-HL-paper-p14-i0.png. No meaning is given for 'A' because neither the paper nor the marking scheme defines it.  [Re-inspected after the column fix: still truncated.]",
+  "recheckCut": "Top: the ammeter 'A' circle is sliced (its upper arc is missing) and both circuit wires run off the top edge, so the battery/power supply is absent. Bottom: the heat-source symbol under the crucible is sliced by the bottom edge.",
+  "drawingComplete": false
  },
  {
   "file": "chemistry-2022-HL-paper-p16-i0.png",
@@ -1885,17 +1860,11 @@
  {
   "file": "chemistry-2021-HL-paper-p11-i0.png",
   "kind": "figure",
-  "truncated": true,
-  "description": "The top-left corner of a four-column table plus a fragment of the question text beside it. Visible text on the left: \"(i) Draw a dot and cross diagram to show the arrangement of the valence electrons in an NH3 molecule.\" and \"(ii) Why are NH3 molecules\" — the rest of (ii) is cut off at the bottom edge, with only the tops of the following line's letters showing. The table's header row reads \"Formula | Boiling point (°C) | Bond angle (°) | Shape\". Only one data row is visible: \"CH4\", \"−161.5\", \"109.5\", and in the Shape column a ball-and-stick model of methane — a large dark central sphere with small white spheres on bonds radiating from it — whose lower portion is sliced off by the crop's bottom edge. The gridlines and the top of a second data row begin at the very bottom and are cut.",
+  "truncated": false,
+  "description": "A four-column ruled table, closed on all four sides (I measured the closing right-hand rule: it carries the same ink as the interior rules, so the wall is fully drawn). Headings: Formula | Boiling point (°C) | Bond angle (°) | Shape. Four data rows. CH4: −161.5, 109.5, and a ball-and-stick model of a tetrahedral molecule (one large dark sphere with four small pale spheres). BF3: −100.3, 120, and a flat trigonal model (dark central sphere with three dark spheres splayed in a Y). NH3: −33.3, 107.0, and a pyramidal model (large black sphere with three small white spheres angled below it). QX2: a dash in both numeric columns and '??' in the Shape cell. The question prose for parts (i)–(iv) runs down the left-hand side of the table and the part (v) line is clipped at the bottom edge — prose only, the table itself is intact.",
   "lettersVisible": [
-   "Formula",
-   "Boiling point (°C)",
-   "Bond angle (°)",
-   "Shape",
-   "CH4",
-   "−161.5",
-   "109.5",
-   "NH3"
+   "Q",
+   "X"
   ],
   "labelMeanings": [
    {
@@ -1916,8 +1885,9 @@
    }
   ],
   "questionRef": "2021 HL Q10(a)",
-  "notes": "SEVERELY TRUNCATED — do not use as a standalone figure. The paper's table has four data rows: CH4 (−161.5, 109.5), BF3 (−100.3, 120), NH3 (−33.3, 107.0) and QX2 (−, −, ??), each with a ball-and-stick shape image. This crop keeps only the header row and the CH4 row, and even the CH4 shape image is cut in half. Q10(a)(v) asks what evidence in the table supports bp–bp repulsions being weaker than lp–bp repulsions, which needs the CH4 (109.5°) vs NH3 (107.0°) comparison — the NH3 row is missing here.",
-  "recheckCut": "The BF3, NH3 and QX2 rows of the data table are missing entirely, the CH4 shape model is sliced by the bottom edge, and the table's right-hand border/Shape column is cut by the right edge."
+  "notes": "SEVERELY TRUNCATED — do not use as a standalone figure. The paper's table has four data rows: CH4 (−161.5, 109.5), BF3 (−100.3, 120), NH3 (−33.3, 107.0) and QX2 (−, −, ??), each with a ball-and-stick shape image. This crop keeps only the header row and the CH4 row, and even the CH4 shape image is cut in half. Q10(a)(v) asks what evidence in the table supports bp–bp repulsions being weaker than lp–bp repulsions, which needs the CH4 (109.5°) vs NH3 (107.0°) comparison — the NH3 row is missing here.  [Re-inspected after the column fix: complete.]",
+  "recheckCut": "The BF3, NH3 and QX2 rows of the data table are missing entirely, the CH4 shape model is sliced by the bottom edge, and the table's right-hand border/Shape column is cut by the right edge.",
+  "drawingComplete": true
  },
  {
   "file": "chemistry-2021-HL-paper-p12-i0.png",
@@ -1932,11 +1902,9 @@
  {
   "file": "chemistry-2021-HL-paper-p12-i1.png",
   "kind": "figure",
-  "truncated": true,
-  "description": "The upper strip of a gas-solubility apparatus diagram, cut away from its labels. At the far left the words \"push plunger slowly\" sit beside a thick grey block arrow pointing right at the flanged end of a large syringe plunger. That syringe is drawn in outline with a graduated scale printed along its barrel; its nozzle joins a short connector fitted with a small tap/clip, which runs into a right-angled tube junction. From the junction one branch turns downwards towards a vessel of which only the stoppered neck and the very top of the shoulder survive before the bottom edge cuts it off, and the other branch continues right through a second small tap into a second graduated syringe whose plunger is drawn fully withdrawn. Two blank leader lines descend from the first and second syringes and disappear over the bottom edge — the labels they point to are not in this crop.",
-  "lettersVisible": [
-   "push plunger slowly"
-  ],
+  "truncated": false,
+  "description": "Line drawing of a gas-solubility apparatus. Left: a grey block arrow captioned 'push plunger slowly' pushes the plunger of a large graduated syringe labelled 'syringe full of ethene'. Its nozzle passes through a tap and a bent glass tube down into a stoppered reagent bottle roughly half full of liquid, labelled 'water or cyclohexane', the delivery tube dipping below the liquid surface. A second bent tube leaves the bottle through another tap into a second graduated syringe on the right labelled 'empty syringe'. Two lines of part (iii) prose sit above the drawing and the opening line of part (iv) is clipped at the bottom edge — prose only; the apparatus is whole.",
+  "lettersVisible": [],
   "labelMeanings": [
    {
     "letter": "push plunger slowly",
@@ -1944,19 +1912,16 @@
    }
   ],
   "questionRef": "2021 HL Q11(a)(iv)",
-  "notes": "TOP HALF ONLY of one diagram — the matching bottom half is chemistry-2021-HL-paper-p12-i2.png. The labels \"syringe full of ethene\", \"empty syringe\" and \"water or cyclohexane\", and the body of the reagent bottle, are all in the other crop. Neither crop is usable on its own; they must be recombined.",
-  "recheckCut": "The bottom half of the apparatus - the bottle of water/cyclohexane and the ends of the leader lines with their labels ('syringe full of ethene', 'water or cyclohexane', 'empty syringe') - is sliced off by the bottom edge."
+  "notes": "TOP HALF ONLY of one diagram — the matching bottom half is chemistry-2021-HL-paper-p12-i2.png. The labels \"syringe full of ethene\", \"empty syringe\" and \"water or cyclohexane\", and the body of the reagent bottle, are all in the other crop. Neither crop is usable on its own; they must be recombined.  [Re-inspected after the column fix: complete.]",
+  "recheckCut": "The bottom half of the apparatus - the bottle of water/cyclohexane and the ends of the leader lines with their labels ('syringe full of ethene', 'water or cyclohexane', 'empty syringe') - is sliced off by the bottom edge.",
+  "drawingComplete": true
  },
  {
   "file": "chemistry-2021-HL-paper-p12-i2.png",
   "kind": "figure",
-  "truncated": true,
-  "description": "The lower strip of the same gas-solubility apparatus diagram, containing the labels but not the syringes. At the left is the label \"syringe full of ethene\" with a leader line running up to the right and off the top edge. At the top right is the label \"empty syringe\", its leader line likewise running off the top edge. In the middle is the body of a glass reagent bottle drawn in outline, with a horizontal liquid-level line across it and a narrow tube reaching down through the liquid; the bottle's neck and shoulders are cut off by the top edge and its base is cut off by the bottom edge. To the bottle's right the label \"water or cyclohexane\" has a leader line pointing at the liquid inside it.",
-  "lettersVisible": [
-   "syringe full of ethene",
-   "empty syringe",
-   "water or cyclohexane"
-  ],
+  "truncated": false,
+  "description": "The same gas-solubility apparatus, cropped tight with clear margin above and the full question text below. A grey block arrow captioned 'push plunger slowly' drives the plunger of a graduated syringe labelled 'syringe full of ethene'; its nozzle runs through a tap and a bent glass tube into a stoppered reagent bottle about half full of liquid labelled 'water or cyclohexane', the tube dipping under the surface; a second bent tube leaves the bottle through a tap into a graduated syringe labelled 'empty syringe'. Below the drawing, part (iv) reads in full: 'The diagram above shows an arrangement of apparatus used to compare the solubilities of ethene in water and in cyclohexane. Explain how and why the solubility of ethene in water differs from its solubility in cyclohexane. (25)'. No edge of the drawing is cut.",
+  "lettersVisible": [],
   "labelMeanings": [
    {
     "letter": "syringe full of ethene",
@@ -1972,8 +1937,9 @@
    }
   ],
   "questionRef": "2021 HL Q11(a)(iv)",
-  "notes": "BOTTOM HALF ONLY of the diagram whose top half is chemistry-2021-HL-paper-p12-i1.png. Both syringes, the taps and the tube junction are missing from this crop.",
-  "recheckCut": "The two syringes and the 'push plunger slowly' arrow are missing above the top edge, the bottle neck/tubing is sliced at the top, and the base of the bottle is sliced at the bottom edge."
+  "notes": "BOTTOM HALF ONLY of the diagram whose top half is chemistry-2021-HL-paper-p12-i1.png. Both syringes, the taps and the tube junction are missing from this crop.  [Re-inspected after the column fix: complete.]",
+  "recheckCut": "The two syringes and the 'push plunger slowly' arrow are missing above the top edge, the bottle neck/tubing is sliced at the top, and the base of the bottle is sliced at the bottom edge.",
+  "drawingComplete": true
  },
  {
   "file": "chemistry-2021-HL-paper-p13-i0.png",
@@ -2317,15 +2283,14 @@
  {
   "file": "chemistry-2025-HL-paper-p03-i0.png",
   "kind": "figure",
-  "truncated": true,
-  "description": "The TOP PORTION ONLY of the steam-distillation apparatus for the clove-oil question. Visible: a three-line label 'steam from a steam generator' at the left with a solid black arrow pointing right into a horizontal glass delivery tube; the tube bends downwards through a right angle and passes into a dark bung/ground-glass joint at the head of a vertical glass tube; the vertical tube runs down through a second ground-glass joint; near the bottom of the crop a side arm leaves the still head to the right and enters the angled ground-glass joint of a sloping condenser, whose body runs off the bottom-right corner. The lower two-thirds of the apparatus is missing: the round-bottomed flask containing the cloves and its 'cloves' label, the condenser jacket with its water side arms, the receiving conical flask and its 'distillate' label are all cut off below the crop boundary. The stem line 'buds by steam distillation using apparatus like that shown below.' is also sliced through at the top edge.",
-  "lettersVisible": [
-   "steam from a steam generator"
-  ],
+  "truncated": false,
+  "description": "A steam-distillation apparatus in full. From the left, an arrow and the caption 'steam from a steam generator' feed a horizontal tube that bends down into a vertical tube fitted through a ground-glass joint into a round-bottomed flask; a leader from the dark material in the base of the flask is captioned 'cloves'. A side tube leaves the top of the vertical section and slopes down into a Liebig condenser drawn with two side-arm ports, which bends down through a joint into a conical receiving flask; a leader with an arrow into the liquid in that flask is captioned 'distillate'. The Q2 preamble prints in full above. No part of the glassware is cut — clear margin on all four sides.",
+  "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2025 HL Q2",
-  "notes": "UNUSABLE AS-IS - needs re-cropping from PDF page 3. The complete figure additionally carries the labels 'cloves' (arrow into the round-bottomed flask) and 'distillate' (arrow to the receiving conical flask). Substance A asked about in Q2(a)(i) is NOT printed on the diagram; the 2025 marking scheme gives A = water / H2O.",
-  "recheckCut": "The lower two thirds of the steam-distillation apparatus: the round-bottom flask containing the cloves, the whole angled Liebig condenser, the receiving conical flask, and the 'cloves' and 'distillate' labels - all run off the bottom edge. Only the steam inlet, the vertical column and the top of the condenser survive."
+  "notes": "UNUSABLE AS-IS - needs re-cropping from PDF page 3. The complete figure additionally carries the labels 'cloves' (arrow into the round-bottomed flask) and 'distillate' (arrow to the receiving conical flask). Substance A asked about in Q2(a)(i) is NOT printed on the diagram; the 2025 marking scheme gives A = water / H2O.  [Re-inspected after the column fix: complete.]",
+  "recheckCut": "The lower two thirds of the steam-distillation apparatus: the round-bottom flask containing the cloves, the whole angled Liebig condenser, the receiving conical flask, and the 'cloves' and 'distillate' labels - all run off the bottom edge. Only the steam inlet, the vertical column and the top of the condenser survive.",
+  "drawingComplete": true
  },
  {
   "file": "chemistry-2025-HL-paper-p05-i0.png",
@@ -2388,8 +2353,9 @@
   ],
   "labelMeanings": [],
   "questionRef": "2025 HL Q5(b)",
-  "notes": "One of three overlapping horizontal bands (p06-i0/i1/i2) that between them chop a single orbital diagram into pieces. None is usable alone; the whole diagram must be re-cropped as one image from PDF page 6.",
-  "recheckCut": "The energy axis (both ends), the 3p orbital boxes and their half-sliced '3p' label at the top, and the lower energy levels (1s) below the bottom edge"
+  "notes": "One of three overlapping horizontal bands (p06-i0/i1/i2) that between them chop a single orbital diagram into pieces. None is usable alone; the whole diagram must be re-cropped as one image from PDF page 6.  [Re-inspected after the column fix: still truncated.]",
+  "recheckCut": "The energy axis (both ends), the 3p orbital boxes and their half-sliced '3p' label at the top, and the lower energy levels (1s) below the bottom edge",
+  "drawingComplete": false
  },
  {
   "file": "chemistry-2025-HL-paper-p06-i1.png",
@@ -2406,8 +2372,9 @@
   ],
   "labelMeanings": [],
   "questionRef": "2025 HL Q5(b)",
-  "notes": "Truncated top and bottom. Useful detail confirmed at high zoom: 4p holds two paired electrons plus one single electron, and 3d is full with five paired boxes - consistent with a ground-state bromine atom.",
-  "recheckCut": "The 5s orbital box at the top edge, the orbital-box row (3p) at the bottom edge, and the Energy axis at both ends"
+  "notes": "Truncated top and bottom. Useful detail confirmed at high zoom: 4p holds two paired electrons plus one single electron, and 3d is full with five paired boxes - consistent with a ground-state bromine atom.  [Re-inspected after the column fix: still truncated.]",
+  "recheckCut": "The 5s orbital box at the top edge, the orbital-box row (3p) at the bottom edge, and the Energy axis at both ends",
+  "drawingComplete": false
  },
  {
   "file": "chemistry-2025-HL-paper-p06-i2.png",
@@ -2421,8 +2388,9 @@
   ],
   "labelMeanings": [],
   "questionRef": "2025 HL Q5(b)",
-  "notes": "Worst crop in the set - a sliver with boxes cut through top and bottom. Discard; re-crop the full diagram from PDF page 6.",
-  "recheckCut": "The 3d orbital boxes at the top edge, the orbital boxes at the bottom edge, and the Energy axis"
+  "notes": "Worst crop in the set - a sliver with boxes cut through top and bottom. Discard; re-crop the full diagram from PDF page 6.  [Re-inspected after the column fix: still truncated.]",
+  "recheckCut": "The 3d orbital boxes at the top edge, the orbital boxes at the bottom edge, and the Energy axis",
+  "drawingComplete": false
  },
  {
   "file": "chemistry-2025-HL-paper-p12-i0.png",
@@ -2613,8 +2581,9 @@
    }
   ],
   "questionRef": "2024 OL Q4(l) (the stray X and Y labels belong to Q4(k))",
-  "notes": "TRUNCATION, the serious kind: the crop keeps the labels X and Y but the two ring structures they point at are cut off above the top edge (on page 5 the drawings sit directly above these letters - a benzene ring with an inscribed circle for X and a plain hexagon for Y). Ink starts at pixel row 3, i.e. the letters sit hard against the top edge. The portrait itself is complete (rows 127-348 of 380, clear margin below and right). The paper does not name the scientist - that is the answer being examined; the marking scheme gives \"Hodgkin\" (Dorothy Hodgkin). Separately worth flagging to whoever built this directory: page 5 of the PDF embeds five images, but only two crops exist here - there is NO crop for the Q4(f) hazard-warning symbols labelled A and B (oxidising / corrosive per the marking scheme) nor for the Q4(k) ring structures, so those question parts have no figure in this catalogue at all.",
-  "recheckCut": "The two cyclic-hydrocarbon hexagons from part (k) - the drawing they belong to is entirely above the top edge; only their captions 'X' and 'Y' survive inside the crop. (The Dorothy Hodgkin photograph lower down is itself complete.)"
+  "notes": "TRUNCATION, the serious kind: the crop keeps the labels X and Y but the two ring structures they point at are cut off above the top edge (on page 5 the drawings sit directly above these letters - a benzene ring with an inscribed circle for X and a plain hexagon for Y). Ink starts at pixel row 3, i.e. the letters sit hard against the top edge. The portrait itself is complete (rows 127-348 of 380, clear margin below and right). The paper does not name the scientist - that is the answer being examined; the marking scheme gives \"Hodgkin\" (Dorothy Hodgkin). Separately worth flagging to whoever built this directory: page 5 of the PDF embeds five images, but only two crops exist here - there is NO crop for the Q4(f) hazard-warning symbols labelled A and B (oxidising / corrosive per the marking scheme) nor for the Q4(k) ring structures, so those question parts have no figure in this catalogue at all.  [Re-inspected after the column fix: still truncated.]",
+  "recheckCut": "The two cyclic-hydrocarbon hexagons from part (k) - the drawing they belong to is entirely above the top edge; only their captions 'X' and 'Y' survive inside the crop. (The Dorothy Hodgkin photograph lower down is itself complete.)",
+  "drawingComplete": false
  },
  {
   "file": "chemistry-2024-OL-paper-p05-i1.png",
@@ -2821,8 +2790,9 @@
    "cross obscured after t seconds"
   ],
   "labelMeanings": [],
-  "notes": "Severely truncated — checked against page 4 of the PDF, where the full figure shows two conical flasks standing on sheets of paper, the left one clear with a bold cross visible through it and the right one cloudy with the cross hidden. This crop is unusable on its own: it is captions only.",
-  "recheckCut": "Both panels of the two-panel figure - the flask-over-a-cross drawings themselves; only their bottom border lines and the captions remain"
+  "notes": "Severely truncated — checked against page 4 of the PDF, where the full figure shows two conical flasks standing on sheets of paper, the left one clear with a bold cross visible through it and the right one cloudy with the cross hidden. This crop is unusable on its own: it is captions only.  [Re-inspected after the column fix: still truncated.]",
+  "recheckCut": "Both panels of the two-panel figure - the flask-over-a-cross drawings themselves; only their bottom border lines and the captions remain",
+  "drawingComplete": false
  },
  {
   "file": "chemistry-2025-OL-paper-p05-i0.png",
@@ -2923,8 +2893,9 @@
     "meaning": "the heated white solid over which ethanol vapour is passed: aluminium oxide / Al2O3 — stated in the 2025 OL marking scheme, Q8(b)(i)"
    }
   ],
-  "notes": "Badly truncated at both the top and bottom edges. Verified against page 9 of the PDF: the full scheme has the ethene box captioned \"ethene\" and the four-carbon chain box labelled \"P\", neither of which is in this crop.",
-  "recheckCut": "Top and bottom of the C=C ethene structure (H atoms and bonds), the 'ethene' caption, the top/bottom of every box in the scheme, and the entire lower branch (CH3CHO/ethanal box, HCl and Cl2 arrows, boxes X and Y)"
+  "notes": "Badly truncated at both the top and bottom edges. Verified against page 9 of the PDF: the full scheme has the ethene box captioned \"ethene\" and the four-carbon chain box labelled \"P\", neither of which is in this crop.  [Re-inspected after the column fix: still truncated.]",
+  "recheckCut": "Top and bottom of the C=C ethene structure (H atoms and bonds), the 'ethene' caption, the top/bottom of every box in the scheme, and the entire lower branch (CH3CHO/ethanal box, HCl and Cl2 arrows, boxes X and Y)",
+  "drawingComplete": false
  },
  {
   "file": "chemistry-2025-OL-paper-p09-i1.png",
@@ -2956,8 +2927,9 @@
     "meaning": "the compound produced when Cl2 is added to ethene: 1,2-dichloroethane / C2H4Cl2 — stated in the 2025 OL marking scheme, Q8(c)(ii)"
    }
   ],
-  "notes": "Truncated at both top and bottom: the ethene structural formula, the polymer structure inside box P and the \"heated / solid S\" step are all above the crop, and the bottoms of the X, Y and ethanal boxes are below it.",
-  "recheckCut": "The upper row of the scheme (C2H5OH/ethanol box, the C=C ethene structure, the polymer P structure - only the label 'P' remains) and the bottom borders of the ethanal, X and Y boxes"
+  "notes": "Truncated at both top and bottom: the ethene structural formula, the polymer structure inside box P and the \"heated / solid S\" step are all above the crop, and the bottoms of the X, Y and ethanal boxes are below it.  [Re-inspected after the column fix: still truncated.]",
+  "recheckCut": "The upper row of the scheme (C2H5OH/ethanol box, the C=C ethene structure, the polymer P structure - only the label 'P' remains) and the bottom borders of the ethanal, X and Y boxes",
+  "drawingComplete": false
  },
  {
   "file": "chemistry-2025-OL-paper-p09-i2.png",
@@ -2981,8 +2953,9 @@
     "meaning": "the compound produced when Cl2 is added to ethene: 1,2-dichloroethane / C2H4Cl2 — stated in the 2025 OL marking scheme, Q8(c)(ii)"
    }
   ],
-  "notes": "Severely truncated at top and bottom — this is a duplicate fragment of the same scheme already partly covered by p09-i1, and it shows the X and Y boxes without the HCl / Cl2 arrows that define them.",
-  "recheckCut": "Nearly the whole reaction scheme: ethanol box, heated/solid S arrow, C=C ethene structure, polymer P, the HCl and Cl2 labels and their arrows, and the borders of the ethanal box"
+  "notes": "Severely truncated at top and bottom — this is a duplicate fragment of the same scheme already partly covered by p09-i1, and it shows the X and Y boxes without the HCl / Cl2 arrows that define them.  [Re-inspected after the column fix: still truncated.]",
+  "recheckCut": "Nearly the whole reaction scheme: ethanol box, heated/solid S arrow, C=C ethene structure, polymer P, the HCl and Cl2 labels and their arrows, and the borders of the ethanal box",
+  "drawingComplete": false
  },
  {
   "file": "chemistry-2025-OL-paper-p10-i0.png",
@@ -3010,37 +2983,26 @@
  {
   "file": "chemistry-2025-OL-paper-p11-i0.png",
   "kind": "figure",
-  "truncated": true,
+  "truncated": false,
   "questionRef": "2025 OL Q10(a)",
-  "description": "A flow chart of sewage treatment: five shaded rectangular boxes in a row joined left to right by short arrows — \"sewage\" → \"primary treatment\" → \"secondary treatment\" → \"tertiary treatment\" → \"the sea, a river or a lake\". Above the row, a bypass line labelled \"no sewage treatment\" leaves the sewage box, runs right across the top and turns down into an arrowhead entering the top of the final box.",
-  "lettersVisible": [
-   "no sewage treatment",
-   "sewage",
-   "primary treatment",
-   "secondary treatment",
-   "tertiary treatment",
-   "the sea, a river or a lake"
-  ],
+  "description": "A sewage-treatment flow chart, complete. Five ruled boxes in a row joined left to right by short arrows: 'sewage' → 'primary treatment' → 'secondary treatment' → 'tertiary treatment' → 'the sea, a river or a lake'. Above the row, a bypass line labelled 'no sewage treatment' runs from the 'sewage' box across the top and turns down with an arrowhead into the final box. Below the row, a second bypass line runs from the 'secondary treatment' box along the bottom and turns up with an arrowhead into the final box. Every box is closed, both bypass routes are complete with their arrowheads, and the label is fully inside the frame. Parts (a)(i)–(iii) print below.",
+  "lettersVisible": [],
   "labelMeanings": [],
-  "notes": "Truncated at the bottom: on page 11 of the PDF there is a SECOND bypass loop running underneath the boxes (from below the secondary-treatment stage, right and back up into the \"the sea, a river or a lake\" box). In this crop only the box bottom borders and the first tick of that lower loop survive, so one of the two routes shown in the paper is missing.",
-  "recheckCut": "The lower return/bypass arrow of the flow chart - its horizontal run and most of the vertical connectors - leaving an orphaned arrowhead at the bottom edge"
+  "notes": "Truncated at the bottom: on page 11 of the PDF there is a SECOND bypass loop running underneath the boxes (from below the secondary-treatment stage, right and back up into the \"the sea, a river or a lake\" box). In this crop only the box bottom borders and the first tick of that lower loop survive, so one of the two routes shown in the paper is missing.  [Re-inspected after the column fix: complete.]",
+  "recheckCut": "The lower return/bypass arrow of the flow chart - its horizontal run and most of the vertical connectors - leaving an orphaned arrowhead at the bottom edge",
+  "drawingComplete": true
  },
  {
   "file": "chemistry-2025-OL-paper-p11-i1.png",
   "kind": "figure",
-  "truncated": true,
+  "truncated": false,
   "questionRef": "2025 OL Q10(a)",
-  "description": "A tighter, second crop of the same sewage-treatment flow chart: the five boxes \"sewage\", \"primary treatment\", \"secondary treatment\", \"tertiary treatment\" and \"the sea, a river or a lake\" with the connecting right-pointing arrows between them. The top borders of the boxes are sliced off by the top edge and their bottom borders run into the bottom edge.",
-  "lettersVisible": [
-   "sewage",
-   "primary treatment",
-   "secondary treatment",
-   "tertiary treatment",
-   "the sea, a river or a lake"
-  ],
+  "description": "The same sewage-treatment flow chart: five boxes, 'sewage' → 'primary treatment' → 'secondary treatment' → 'tertiary treatment' → 'the sea, a river or a lake', with the 'no sewage treatment' bypass arcing over the top into the final box and a second bypass running from 'secondary treatment' along the bottom into the final box, parts (a)(i)–(iii) below. Identical content to p11-i0, shifted one pixel.",
+  "lettersVisible": [],
   "labelMeanings": [],
-  "notes": "Worse than p11-i0 and largely duplicates it. Truncated at both edges: the whole \"no sewage treatment\" bypass line above the boxes is missing, as is the lower bypass loop beneath them. Only the linear chain of stages remains.",
-  "recheckCut": "The 'no sewage treatment' label and its bypass arrow at the top, and the lower feedback arrow at the bottom"
+  "notes": "Worse than p11-i0 and largely duplicates it. Truncated at both edges: the whole \"no sewage treatment\" bypass line above the boxes is missing, as is the lower bypass loop beneath them. Only the linear chain of stages remains.  [Re-inspected after the column fix: complete.]",
+  "recheckCut": "The 'no sewage treatment' label and its bypass arrow at the top, and the lower feedback arrow at the bottom",
+  "drawingComplete": true
  },
  {
   "file": "chemistry-2025-OL-paper-p12-i0.png",
@@ -3067,8 +3029,9 @@
    "carbon (C) in oceans"
   ],
   "labelMeanings": [],
-  "notes": "Truncated at the bottom: the sixth box, \"carbon (C) in rock\", and the arrow from the oceans box down into it are missing, as are the lower halves of the fossil fuels / plants / animals boxes. Verified against page 14 of the PDF.",
-  "recheckCut": "Bottom borders of the fossil-fuels / plants / animals boxes, the lower part of the oceans box, and the entire 'carbon (C) in rock' box with its two connecting arrows"
+  "notes": "Truncated at the bottom: the sixth box, \"carbon (C) in rock\", and the arrow from the oceans box down into it are missing, as are the lower halves of the fossil fuels / plants / animals boxes. Verified against page 14 of the PDF.  [Re-inspected after the column fix: still truncated.]",
+  "recheckCut": "Bottom borders of the fossil-fuels / plants / animals boxes, the lower part of the oceans box, and the entire 'carbon (C) in rock' box with its two connecting arrows",
+  "drawingComplete": false
  },
  {
   "file": "chemistry-2025-OL-paper-p14-i1.png",
@@ -3084,8 +3047,9 @@
    "carbon (C) in rock"
   ],
   "labelMeanings": [],
-  "notes": "Truncated at the top: the \"atmospheric carbon (CO2)\" box — the hub the whole diagram points to — is entirely missing, along with all the arrowheads that connect to it. Overlaps p14-i0; neither crop contains the whole diagram.",
-  "recheckCut": "The 'atmospheric carbon (CO2)' box and all its arrowheads, plus the top border and incoming arrow of the 'carbon (C) in oceans' box"
+  "notes": "Truncated at the top: the \"atmospheric carbon (CO2)\" box — the hub the whole diagram points to — is entirely missing, along with all the arrowheads that connect to it. Overlaps p14-i0; neither crop contains the whole diagram.  [Re-inspected after the column fix: still truncated.]",
+  "recheckCut": "The 'atmospheric carbon (CO2)' box and all its arrowheads, plus the top border and incoming arrow of the 'carbon (C) in oceans' box",
+  "drawingComplete": false
  },
  {
   "file": "chemistry-2025-OL-paper-p14-i2.png",
