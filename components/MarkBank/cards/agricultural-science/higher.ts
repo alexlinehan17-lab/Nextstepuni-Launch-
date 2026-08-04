@@ -6033,4 +6033,379 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "alt", verbatim: "cold temperatures delay germination", marks: 6, accepts: ["Difficulties to cultivate land","anaerobic conditions in soil prevent root respiration","increased risk of attack by diseases or pests (such as slugs and snails)","difficult to control weeds which compete with germinating seeds","leaching of nutrients","heavy rain washes seeds away"] },
     ],
   } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2021, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
+    id: "agsci-2021-hl-q3biv", topicId: "agsci-3-3-2", conceptId: "zero-grazing-disadvantages",
+    section: "A", questionRef: "2021 HL Q3(b)(iv)",
+    stem: "Question 3(b) continued, and the last part of the question. Machine (method) B is the implement arrowed in the right-hand photograph at part (b)(i) — the high-sided wagon with the yellow pick-up head, filled with cut grass, working a green pasture. \"High producing animals\" means stock at peak output, such as a dairy cow in early lactation. This part carries 2 marks.",
+    questionText: "Outline one disadvantage of using machine (method) B when feeding high producing animals.",
+    tariffModel: {"kind":"fixed","notation":"2"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Stressed animals due to too much confinement (leading to reduced animal performance) / spoiling of cut grass ‐ reduced intake / increased labour required to feed animals", marks: 2, accepts: ["increased capital investment on housing for animals","increased slurry storage requirement as animals housed all year round","bloat in livestock","lameness in livestock indoors"], contextNote: "One 2-mark point with seven alternative wordings across the scheme's block. The question asks for one disadvantage, so one wording earns the full 2 and further ones add nothing." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2021-HL-paper-p07-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-HL-paper-p07-i0.png",
+          "srcHash": "1b87696a06a30635d81f69d1ea1ca394",
+          "alt": "The Question 3(b)(i) farm-machinery identification figure. Centred word \"Or\" at the top, then \"(b) (i) Identify the farm machines, labelled A and B, which are attached to each tractor.\" Two colour photographs sit side by side, each with a thick red downward arrow (blue outline) pointing at the implement, and a bold capital letter above the arrow. A: a crawler tractor running on rubber tracks instead of rear wheels, working across bare brown cultivated soil under a blue cloudy sky, towing a large orange implement — a tall hopper/tank with the manufacturer's name on its side, from which a bank of flexible delivery pipes runs down and back to a wide rear frame carrying a long row of tine/coulter units with small press wheels; the red arrow labelled A points at the orange hopper unit. B: a green grass field, with the rear wheel and drawbar of a tractor visible at the right, towing a red trailed wagon on a tandem twin-wheel axle; the wagon has high mesh sides and is loaded with green cut grass, with a yellow rotor/beater at the top of the body and a yellow pick-up/mowing header slung at the front bottom of the wagon cutting the standing grass; the red arrow labelled B points at the top of the wagon body. Below is a two-row answer table printed \"A:\" and \"B:\", then \"(ii) The tractor in picture A is fitted with two tracks instead of four wheels. Suggest one advantage of using a tractor fitted with tracks.\" with the top of its answer box.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"the red arrow in the left-hand photograph, pointing down at the wide orange hopper-and-tine implement behind a tracked tractor on cultivated ground; printed on the same crop but asked about at part (iii), not here","askedInThisQuestion":false},{"letter":"B","meaning":"the red arrow in the right-hand photograph, pointing down at the high-sided trailer loaded with cut green grass, with a yellow pick-up head slung at its front, drawn behind a tractor across green pasture; this is the machine this part asks about","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2022, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
+    id: "agsci-2022-hl-q2a", topicId: "agsci-4-2", conceptId: "identifying-livestock-breeds",
+    section: "A", questionRef: "2022 HL Q2(a)",
+    stem: "Section A, Question 2, part (a). Six colour photographs of farm animals are printed in two rows of three: A, B and C captioned above the top row, D, E and F captioned below the bottom row. Under them the paper prints an answer box running A: to F:. Only four of the six have to be named. The scheme's front matter uses this exact question type as its worked example of the surplus-answer rule: a candidate who names five and gets one of them wrong scores 4 - 1 = 3, so there is nothing to gain from filling in all six. Part (b), on selecting a female replacement animal for breeding, is carded separately.",
+    questionText: "Identify any four of the following breeds of animals.",
+    tariffModel: {"kind":"bestNofParts","notation":"4(1)","answer":4,"ofParts":6,"perPart":1}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A — Landrace", marks: 1, contextNote: "Photograph A, the pig. Any four of the six letters score 1 mark each; a fifth, wrong answer cancels a correct one." },
+    { id: "r-2", kind: "point", verbatim: "B — Blue Leicester", marks: 1, contextNote: "Photograph B, the sheep. The scheme prints 'Blue Leicester'; the breed is usually written Bluefaced Leicester." },
+    { id: "r-3", kind: "point", verbatim: "C — Connemara (pony)", marks: 1, contextNote: "Photograph C, the grey horse. Brackets in an SEC scheme mark words that are not required, so 'Connemara' on its own takes the mark." },
+    { id: "r-4", kind: "point", verbatim: "D — Rhode Island red", marks: 1, contextNote: "Photograph D, the hen. The scheme prints 'red' in lower case; the breed name is normally capitalised as Rhode Island Red." },
+    { id: "r-5", kind: "point", verbatim: "E — Limousine", marks: 1, contextNote: "Photograph E, the tan beef cattle. The scheme's spelling is 'Limousine'; the breed is normally written Limousin. Both name the same animal." },
+    { id: "r-6", kind: "point", verbatim: "F — (Holstein) Friesian", marks: 1, contextNote: "Photograph F, the black-and-white dairy cow. 'Holstein' is bracketed, so 'Friesian' alone takes the mark." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2022-HL-paper-p05-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p05-i0.png",
+          "srcHash": "a10ba511724b6c846fb62df404f4b74d",
+          "alt": "The breed identification panel for Question 2. Headed 'Question 2' and '(a) Identify any four of the following breeds of animals.' Six colour photographs are arranged in two rows of three. The top row carries the captions A, B and C printed above the images; the bottom row carries D, E and F printed below the images. A: a large white/pale pink pig standing side-on in a pen, long deep body, lop ears falling forward over the face, concrete floor with vertical metal railings behind. B: a sheep standing side-on on grass in front of a dry-stone wall with green hills behind, body covered in a tightly crimped light brown fleece, head clean-woolled and white-grey with a strongly arched Roman-nosed profile, dark-rimmed eyes and erect dark-tipped ears, bare white legs. C: a dapple-grey horse walking side-on across grass beside a hedge, grey-white coat with darker dappling over the barrel, dark mane, tail and lower legs. D: a red-brown hen standing on grass, upright stance, bright red single comb and wattles, dark tail feathers, yellow legs. E: a group of four tan/golden-brown cattle standing in a green field, heavily muscled hindquarters, pale rings around the muzzle and eyes, one animal facing the camera in the foreground. F: a black-and-white cow grazing head-down in a green field with a treeline behind, large irregular black patches over a white body, white legs, udder visible. Beneath the photographs the first two rows of the answer table are visible, labelled 'A:' and 'B:'.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Top row, left - a long-bodied white pig standing side-on in a pen, metal railings behind it","askedInThisQuestion":true},{"letter":"B","meaning":"Top row, centre - a sheep standing side-on on grass in front of a dry-stone wall, dense brown fleece, pale face, dark lower legs","askedInThisQuestion":true},{"letter":"C","meaning":"Top row, right - a dapple-grey horse standing side-on on rough hillside grass","askedInThisQuestion":true},{"letter":"D","meaning":"Bottom row, left - a single reddish-brown hen standing on grass","askedInThisQuestion":true},{"letter":"E","meaning":"Bottom row, centre - a group of tan-coloured cattle standing together in a field","askedInThisQuestion":true},{"letter":"F","meaning":"Bottom row, right - a black-and-white cow grazing in a field","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2022, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
+    id: "agsci-2022-hl-q13aiii", topicId: "agsci-3-2", conceptId: "identifying-sward-plants",
+    section: "B", questionRef: "2022 HL Q13(a)(iii)",
+    stem: "Section B, Question 13, part (a)(iii). Part (a) opens: 'Maintaining a constant supply of high quality leafy grass can be easily achieved by managing and measuring the amount of grass on the farm.' Parts (i) and (ii) covered the advantages of grass measuring and the kg DM/ha calculation; (iii) turns to what is actually growing in the sward. Three photographs are printed side by side in a bordered three-column table, with answer cells beneath reading A:, B: and C:. Only two of the three have to be named.",
+    questionText: "A farmer identified different plants in the sward while measuring the grass. Identify any two of the following plants A, B or C from the sward.",
+    tariffModel: {"kind":"bestNofParts","notation":"2(1)","answer":2,"ofParts":3,"perPart":1}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A — Italian ryegrass", marks: 1, contextNote: "Photograph A, the single upright spiked seed head. Any two of the three letters score 1 mark each." },
+    { id: "r-2", kind: "point", verbatim: "B — Chicory", marks: 1, contextNote: "Photograph B, the pale blue flowers. Chicory is the odd one out here - a deep-rooting herb sown in multi-species swards, not a grass." },
+    { id: "r-3", kind: "point", verbatim: "C — Cocksfoot", marks: 1, contextNote: "Photograph C, the branched, clumped seed head on fine stems." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2022-HL-paper-p20-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p20-i0.png",
+          "srcHash": "c339c00dccc5f1be58ee8ed155bc5f20",
+          "alt": "The plant identification panel for Question 13(a)(iii). Instruction above: '(iii) A farmer identified different plants in the sward while measuring the grass. Identify any two of the following plants A, B or C from the sward.' Below sits a three-column bordered table. The upper row of the table holds three colour photographs. Left photograph: a single upright grass flowering stem carrying pale green-yellow spikelets set alternately in two ranks directly against the stem axis, each spikelet with fine bristle-like tips, against a background of blurred green grass leaves. Centre photograph: four or five open flowers with pale blue-lilac strap-shaped ray florets whose tips are squared off and finely toothed, radiating around a paler centre with visible stamens, growing among coarse green leaves and stems. Right photograph: a grass flowering stem branching into several dense one-sided clumped clusters of purplish-green spikelets held on stiff spreading branches, against a blurred green background. The lower row of the table carries the bold labels 'A:', 'B:' and 'C:' beneath the left, centre and right photographs respectively, each followed by blank writing space. Below the table is empty page space and the running footer.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Left cell - a close-up of one upright, densely packed green seed head, broad flat leaf blades behind it","askedInThisQuestion":true},{"letter":"B","meaning":"Centre cell - several pale blue, daisy-like flowers on leafy stems, a bee on one of them","askedInThisQuestion":true},{"letter":"C","meaning":"Right cell - a branched, open seed head of greenish-purple clustered spikelets on fine stems","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
+    id: "agsci-2022-hl-q14ci", topicId: "agsci-4-3-3", conceptId: "calf-housing-suitable-environment",
+    section: "B", questionRef: "2022 HL Q14(c)(i)",
+    stem: "Section B, Question 14, which is answered as 'both (a) and (b) with either (c) or (d)'. Part (c) opens: 'Analyse the picture of calf housing below and answer the questions which follow.' The photograph is taken inside a calf shed looking down the length of a straw-bedded pen: black-and-white calves lying and standing on deep clean straw, a low solid wall along the front of the pen with a galvanised barrier above it, spaced vertical timber boarding running along the upper side wall under the eaves, translucent roof panels letting daylight in, and a steel-framed pitched roof well above the calves. Three numbered answer slots are printed (1., 2., 3.), and each has to carry an aspect together with its reason - the question asks for both, and the scheme's options are printed as aspect-and-reason pairs.",
+    questionText: "Identify three aspects of the shed which make it a suitable environment for calves and provide a reason for each aspect identified.",
+    tariffModel: {"kind":"fixed","notation":"3(3)"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Space sheeting or high roof ‐ good airflow (ventilation)", marks: 3, accepts: ["board or concrete walls ensuring pen is draft free","(clean) roof lights ‐ plenty of natural light","large area with adequate lying space","clean bedding or smooth surfaces for good hygiene or disease reduction","long feed barrier ‐ adequate feeding space"], contextNote: "3(3) = any three aspects at 3 marks each. This row is a slot, not a required answer: any one of the six aspect-and-reason pairs the scheme prints takes the 3 marks, and the aspect alone does not - the question asks for a reason too." },
+    { id: "r-2", kind: "alt", verbatim: "board or concrete walls ensuring pen is draft free", marks: 3, accepts: ["Space sheeting or high roof ‐ good airflow (ventilation)","(clean) roof lights ‐ plenty of natural light","large area with adequate lying space","clean bedding or smooth surfaces for good hygiene or disease reduction","long feed barrier ‐ adequate feeding space"], contextNote: "A second, different aspect. Ventilation without draughts is the pairing the picture is built around: air moves in high through the spaced boarding, while the solid lower wall keeps it off the lying calves." },
+    { id: "r-3", kind: "alt", verbatim: "(clean) roof lights ‐ plenty of natural light", marks: 3, accepts: ["Space sheeting or high roof ‐ good airflow (ventilation)","board or concrete walls ensuring pen is draft free","large area with adequate lying space","clean bedding or smooth surfaces for good hygiene or disease reduction","long feed barrier ‐ adequate feeding space"], contextNote: "A third, different aspect. 'Clean' is bracketed, so it is not required - naming the roof lights and giving natural light as the reason is enough." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2022-HL-paper-p25-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p25-i1.png",
+          "srcHash": "429bed94a040bd011cbfa672779ffabb",
+          "alt": "The Question 14(c)(i) calf housing photograph. Instruction above: '(c) Analyse the picture of calf housing below and answer the questions which follow.' and '(i) Identify three aspects of the shed which make it a suitable environment for calves and provide a reason for each aspect identified.' The photograph shows the inside of a modern calf shed looking along its length. Visible features: red-painted steel portal frames and roof trusses; a pitched corrugated roof carrying two long translucent roof-light panels that flood the shed with daylight; the upper part of the near side wall clad in vertical timber boards spaced apart to leave narrow ventilation gaps, with a horizontal rail below; a smooth rendered/blockwork lower wall; a deep bed of clean golden straw across the pen floor; roughly a dozen black-and-white calves lying and standing on the straw; a galvanised steel penning gate and feed barrier running down the right-hand side with feed buckets hung on it; a swept concrete passage beyond the gate; and an electrical control box mounted on the far wall. Below the photograph a ruled answer table with the numbered prompts '1.', '2.' and the top of '3.'",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q1ai", topicId: "agsci-4-2", conceptId: "cattle-breed-identification",
+    section: "A", questionRef: "2023 HL Q1(a)(i)",
+    stem: "Question 1. Answer either (a) or (b). This is option (a): three colour photographs of cattle side by side, lettered A, B and C beneath, over an 'A: / B: / C:' answer table. The rest of option (a) then works off breed C — '(ii) Breed C is a dual-purpose breed' — and asks about buying a purebred bull.",
+    questionText: "Identify each of the following breeds of animals.",
+    tariffModel: {"kind":"fixed","notation":"3(2)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A — Short horn", marks: 2, contextNote: "This scheme's own worked example is a breed-identification question: a surplus WRONG breed written beside a correct one cancels the correct answer, so writing two names in one box costs the mark rather than hedging it." },
+    { id: "r-2", kind: "point", verbatim: "B — Belgian Blue", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "C — Simmental", marks: 2 },
+    ],
+    figure: {
+          "candId": "agricultural-science-2023-HL-paper-p03-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p03-i0.png",
+          "srcHash": "316dd50f1424a144e44db9de90d83614",
+          "alt": "Three colour photographs of cattle side by side, each captioned with a bold letter beneath it. A (left) is a heavily muscled bull with a roan red-and-white coat, broad white patches over the shoulder and flank, a mostly dark red head with white markings, short horns, standing side-on in grass with a grey stone wall and hedgerow behind. B (centre) is a black-and-white cow, predominantly black with irregular white patches over the barrel and a white blaze up the face, standing side-on in a green field. C (right) is a very heavily muscled bull with a pale cream/white body and a reddish-tan head and neck, standing side-on in grass with another animal partly visible behind. Beneath the photographs is an empty three-row answer table with the row prompts 'A:', 'B:' and 'C:'. Above the photographs is the printed instruction 'Question 1 — Answer either (a) or (b). (a) (i) Identify each of the following breeds of animals.'",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Left photograph — the heavily muscled bull with a roan red-and-white coat, broad white patches over the shoulder and flank, a dark red head and short horns, in front of a stone wall (Shorthorn)","askedInThisQuestion":true},{"letter":"B","meaning":"Centre photograph — the heavily muscled black cow with irregular white patches over the back and flank and a white band across the face (Belgian Blue)","askedInThisQuestion":true},{"letter":"C","meaning":"Right photograph — the tan/golden bull with a white face, white legs and a white tail switch (Simmental)","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q1bi", topicId: "agsci-4-2", conceptId: "cattle-and-sheep-breed-identification",
+    section: "A", questionRef: "2023 HL Q1(b)(i)",
+    stem: "Question 1. Answer either (a) or (b). This is option (b): three colour photographs lettered D, E and F beneath, over a 'D: / E: / F:' answer table. One is a dairy cow and two are sheep. Option (b) then moves on to the 'Fleckvieh Cattle' article and asks which Irish cattle industry that breed suits.",
+    questionText: "Identify each of the following breeds of animals.",
+    tariffModel: {"kind":"fixed","notation":"3(2)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "D — Jersey", marks: 2, contextNote: "This scheme's own worked example is a breed-identification question: a surplus WRONG breed written beside a correct one cancels the correct answer, so writing two names in one box costs the mark rather than hedging it." },
+    { id: "r-2", kind: "point", verbatim: "E — Suffolk", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "F — Texel", marks: 2 },
+    ],
+    figure: {
+          "candId": "agricultural-science-2023-HL-paper-p04-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p04-i0.png",
+          "srcHash": "88eb6dd82aaf56bfb9880ec356435d80",
+          "alt": "Three colour photographs of livestock side by side, each captioned with a bold letter beneath. D (left) is a fawn/light-brown cow with a darker muzzle ringed by a pale cream band, a dark tail switch and a visible udder, standing side-on on grass beside a road, with the hindquarters of another animal behind her. E (centre) is a group of three sheep with dense cream-white fleece, entirely black faces and black legs, standing facing the camera in a green field. F (right) is a single sheep with a white face, pink nose, short white fleece and very heavily muscled hindquarters, standing side-on on grass in front of a wire fence with bare trees behind. Beneath the photographs is an empty three-row answer table with prompts 'D:', 'E:' and 'F:'. Above them is the printed heading 'Or  (b) (i) Identify each of the following breeds of animals.' The bottom of the crop shows the top of a bordered article box with the blue heading 'Fleckvieh Cattle'.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "D",
+                "E",
+                "F"
+          ]
+    },
+    labelKey: [{"letter":"D","meaning":"Left photograph — the small fawn/light-brown cow with a dark muzzle ringed by a pale cream band, a dark tail switch and a visible udder, standing on grass beside a road (Jersey)","askedInThisQuestion":true},{"letter":"E","meaning":"Centre photograph — the three sheep with dense white fleece and completely black faces, ears and legs (Suffolk)","askedInThisQuestion":true},{"letter":"F","meaning":"Right photograph — the blocky, heavily muscled sheep with a bare white face, short white ears and white legs (Texel)","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q2b", topicId: "agsci-3-2", conceptId: "weed-identification",
+    section: "A", questionRef: "2023 HL Q2(b)",
+    stem: "Question 2 opens with a five-panel diagram of the growth cycle of barley, which part (a) uses. Part (b) prints a word bank of three names — Chickweed, Charlock, Shepard's Purse (the paper's own spelling) — above three close-up photographs of flowering weeds, with an empty answer cell under each photograph. The photographs are not lettered: you write a name under each one, and only two of the three are needed.",
+    questionText: "Identify any two of the weeds that can be found in Irish fields using the list below.",
+    tariffModel: {"kind":"bestNofParts","answer":2,"ofParts":3,"perPart":2,"notation":"2(2)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Left photograph — Shepherd’s purse", marks: 2, contextNote: "The tall stalk carrying small four-petalled white flowers with flat, heart-shaped seed pods spreading below them. The paper's word bank spells it 'Shepard's Purse'; the scheme spells it 'Shepherd's purse'." },
+    { id: "r-2", kind: "point", verbatim: "Centre photograph — Chickweed", marks: 2, contextNote: "The low, sprawling plant with broad oval pointed leaves and small white star-shaped flowers whose petals are deeply split." },
+    { id: "r-3", kind: "point", verbatim: "Right photograph — Charlock", marks: 2, contextNote: "The bright yellow four-petalled flowers on a branched stem with coarse, toothed green leaves." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2023-HL-paper-p05-i2",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p05-i2.png",
+          "srcHash": "b53d5415e987485f2f964c90cef30757",
+          "alt": "The same weed-identification panel as p05-i1 but cropped tightly and cleanly. At the top, a three-cell peach-tinted word bank reading 'Chickweed', 'Charlock', 'Shepard's Purse'. Below it three colour photographs of flowering weeds: left, an upright branching stalk with many small white flowers and numerous flat triangular/heart-shaped seed pods on a pale grassy background; centre, a sprawling leafy plant with pairs of oval pointed bright-green leaves and small white star-shaped flowers with deeply notched petals; right, a plant with bright yellow four-petalled flowers, green buds and broad coarsely toothed leaves. Beneath the photographs is an empty three-cell answer row. The page footer 'Leaving Certificate Examination 2023 / Agricultural Science – Higher Level / 5' sits below in whitespace.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q10ai", topicId: "agsci-4-1", conceptId: "monogastric-digestive-system-labelled",
+    section: "A", questionRef: "2023 HL Q10(a)(i)",
+    stem: "Question 10. Answer either (a) or (b). This is option (a): a cartoon side view of a pig, facing left, with its digestive tract drawn inside the body outline and three thick pale-blue arrows lettered A, B and C pointing into it, over an 'A: / B: / C:' answer table. Part (ii) then asks about the role of microorganisms in the same system.",
+    questionText: "Label the diagram below of the monogastric digestive system.",
+    tariffModel: {"kind":"fixed","notation":"3(2)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A — Liver", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "B — Stomach", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "C — Small intestine", marks: 2 },
+    ],
+    figure: {
+          "candId": "agricultural-science-2023-HL-paper-p14-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p14-i0.png",
+          "srcHash": "28d247f060e555f6a7ef04cae607b2b7",
+          "alt": "A labelled cartoon diagram of a pig in side view (facing left) with its digestive tract drawn inside the pale pink body outline, above an empty answer table. Three thick pale-blue arrows point into the tract, each with a bold black capital letter at its tail: A, from upper left, points down into a large solid red kidney-bean-shaped organ in the mid-body; B, from top centre, points down into the pale cream/white sac lying immediately behind and above the red organ, which is outlined with a dashed line; C, from lower right, points up-left into a tightly coiled pale tube in the hindquarters. Also drawn but unlettered: a pale blue structure at the throat/neck, a long narrow tube running from the mouth back to the red organ, a small pink-lilac organ behind the cream sac, and long looping intestines filling the rear of the abdomen. Above the diagram is the heading 'Question 10 — Answer either (a) or (b). (a) (i) Label the diagram below of the monogastric digestive system.' Below it is an empty three-row answer table with prompts 'A:', 'B:' and 'C:', then '(ii) Outline the role of microorganisms in the monogastric digestive system.'",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Arrow from the upper left into the large solid dark red organ sitting behind the chest (liver)","askedInThisQuestion":true},{"letter":"B","meaning":"Arrow from above into the pale cream sac immediately behind and to the right of the red organ, where the oesophagus ends (stomach)","askedInThisQuestion":true},{"letter":"C","meaning":"Arrow from the lower right into the long narrow coiled tube filling the hindquarters (small intestine)","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q13bi", topicId: "agsci-2-2-2", conceptId: "soil-water-content-levels",
+    section: "B", questionRef: "2023 HL Q13(b)(i)",
+    stem: "Question 13. Answer both (a) and (b) with either (c) or (d). Part (b) prints three square schematics of a soil sample side by side under a blue banner carrying the letters A, B and C, with a word bank above them — Permanent wilting point, Field capacity, Saturation — and an empty answer cell under each schematic. The paper states the colour code: brown represents soil particles, blue represents water and white represents air spaces. Part (ii) then asks for the implications for a farmer of any two of the three states.",
+    questionText: "Identify the soil water content level for each diagram using the words in the box below.",
+    tariffModel: {"kind":"fixed","notation":"3(3)"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A — Saturation", marks: 3, contextNote: "Order the three by how much blue is left, not by where they sit on the page: most water and no air = saturation, least water = permanent wilting point, and the middle one is field capacity." },
+    { id: "r-2", kind: "point", verbatim: "B — Permanent wilting point", marks: 3 },
+    { id: "r-3", kind: "point", verbatim: "C — Field Capacity", marks: 3 },
+    ],
+    figure: {
+          "candId": "agricultural-science-2023-HL-paper-p21-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p21-i0.png",
+          "srcHash": "93248b92d3e7d9fc3aacd2b9f39d282e",
+          "alt": "A three-panel soil-water diagram with a word bank above it. The top row is a cream-tinted three-cell word bank reading 'Permanent wilting point', 'Field capacity', 'Saturation'. Immediately below is a dark blue banner divided into three cells carrying the white capital letters A, B and C. Beneath each letter is a square schematic of a soil sample drawn as an assortment of irregular rounded brown particles of varying size, with the spaces between them filled either with pale blue (water) or left white (air). In A the spaces between the brown particles are filled uniformly with pale blue and no white gaps are visible. In B the brown particles are separated by broad white spaces with only a thin pale blue film outlining each particle. In C the spaces are mostly pale blue with a few small white pockets remaining between particles. Below the three panels is an empty three-cell answer row. Beneath that is the printed instruction '(ii) Briefly describe the implications for a farmer of any two of the following.' and the start of an answer box reading 'Field capacity:'. The question stem above states that brown represents soil particles, blue represents water and white represents air spaces.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Left schematic — blue water fills every gap between the brown particles and almost no white air space is left (saturation)","askedInThisQuestion":true},{"letter":"B","meaning":"Centre schematic — only a thin blue film clings around each particle and most of the pore space is white air (permanent wilting point)","askedInThisQuestion":true},{"letter":"C","meaning":"Right schematic — blue water holds in the narrow pores and around the particles while the wider pores are white air (field capacity)","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q15ci", topicId: "agsci-1-3", conceptId: "soil-ph-with-least-n2o-emissions",
+    section: "B", questionRef: "2023 HL Q15(c)(i)",
+    stem: "Question 15. A secondary school installed a new garden and polytunnel and the agricultural science class investigated the donated topsoil. Part (c) says 'Analyse the graph showing the effect soil pH has on nitrous oxide (N20) emissions and answer the questions which follow' and prints a bar chart titled 'Effect of soil pH on nitrous oxide (N20) emissions': cumulative N20 emissions in g N20/ha/year up the vertical axis, scaled 0 to 7000 in thousands, against four soil pH values along the bottom — 5.1, 5.4, 6.2 and 6.9. (The paper and the scheme both print nitrous oxide as 'N20'.)",
+    questionText: "State the soil pH that produces the least amount of N20 emissions.",
+    tariffModel: {"kind":"fixed","notation":"6"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "gate", verbatim: "6.9", marks: 6, contextNote: "Asterisked in the scheme — printed as '*6.9'. Only that value scores, and a second value written beside it cancels this row. It is the shortest bar: emissions fall steadily as pH rises, from about 6500 g/ha/year at pH 5.1 to about 4000 at pH 6.9. The question asks for the pH, not the emissions figure." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2023-HL-paper-p28-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p28-i0.png",
+          "srcHash": "76078bda4eb6c0e5809db08d83e49a45",
+          "alt": "A vertical bar chart on a light grey plot background, titled in dark blue 'Effect of soil pH on nitrous oxide (N2O) emissions'. The vertical axis is labelled in red 'Cumulaitve N2O Emissions (g N2O/ha/year)' (spelt 'Cumulaitve' in the original) and is scaled 0 to 7000 in steps of 1000 with horizontal gridlines. The horizontal axis is labelled in red 'Soil pH' with four categories: 5.1, 5.4, 6.2 and 6.9. Four bars of equal width, each a different colour, step downwards from left to right: red at 5.1 reaching about 6500, yellow at 5.4 reaching about 6000, green at 6.2 reaching about 5000, and blue at 6.9 reaching about 4000. Above the chart is the sliced line 'answer the questions which follow.'; below it the printed question '(i) State the soil pH that produces the least amount of N2O emissions.' with an empty answer box.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q16ai", topicId: "agsci-1-3", conceptId: "main-source-of-farm-carbon-emissions",
+    section: "B", questionRef: "2023 HL Q16(a)(i)",
+    stem: "Question 16. Answer both (a) and (b) with either (c) or (d). As part of the governments' climate action plan targets, agriculture has to reduce its greenhouse gas emissions by 25% by 2030. Anna and Lucy examined the percentage share of the carbon emissions from their beef enterprise, which they received through their Bord Bia farmer feedback report, and the graph highlights where the emissions are coming from on their farm. It is a grouped bar chart, 'Percentage Share of Farm Carbon Emissions': percentage share (%) up the vertical axis, scaled 0 to 50, against four sources — Animal digestion, Manure usage, Fertiliser used, Forage / Feed — with three bars in each group: current farm assessment (2021), previous farm assessment (2019) and national average. (Adapted from Teagasc, 2022)",
+    questionText: "Identify the main source of carbon emissions on the farm.",
+    tariffModel: {"kind":"fixed","notation":"5"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "gate", verbatim: "Animal digestion", marks: 5, contextNote: "Asterisked in the scheme — printed as '*Animal digestion'; only that term scores. It is the tallest group on the chart, at roughly 38% of the farm's emissions in both the 2021 and the 2019 assessment, against about 20% for manure and 16-17% for the other two." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2023-HL-paper-p30-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p30-i0.png",
+          "srcHash": "2cc93543764df4485ecbd232f5e2bca4",
+          "alt": "A grouped vertical bar chart drawn over a cartoon illustration of a green field and blue cloudy sky, inside a rounded blue-bordered frame, titled 'Percentage Share of Farm Carbon Emissions'. The vertical axis is labelled in purple 'Percentage Share (%)' and scaled 0 to 50 in steps of 10 with faint gridlines. The horizontal axis is labelled in purple 'Sources of Carbon Emissions' with four category groups: 'Animal digestion', 'Manure usage', 'Fertiliser used' and 'Forage / Feed'. A legend at the top right gives three series: blue = 'Current farm assessment (2021)', orange = 'Previous farm assessment (2019)', dark grey/black = 'National average'. Reading the bars: Animal digestion — blue about 38, orange about 38, black about 40.5; Manure usage — blue about 19.5, orange about 19.5, black about 21.5; Fertiliser used — blue about 17, orange about 17, black about 16; Forage / Feed — blue about 16, orange about 16, black about 12. In each group the blue and orange bars are essentially the same height. Below the chart is '(Adapted from Teagasc, 2022)' then '(i) Identify the main source of carbon emissions on the farm.' with an empty box, and '(ii) State with reason if the main source of emissions is above or below the national average for the enterprise.' with an answer table whose rows read 'State:' and 'Reason:'.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q16aiii", topicId: "agsci-1-3", conceptId: "farm-carbon-emissions-trend",
+    section: "B", questionRef: "2023 HL Q16(a)(iii)",
+    stem: "Question 16, part (a), third question on the same grouped bar chart: 'Percentage Share of Farm Carbon Emissions', with three bars for each of Animal digestion, Manure usage, Fertiliser used and Forage / Feed — current farm assessment (2021), previous farm assessment (2019) and national average. The two farm bars are what 'since Anna and Lucy joined the scheme' means: 2019 was the previous assessment, 2021 the current one.",
+    questionText: "Comment on the overall carbon emissions on the farm since Anna and Lucy joined the scheme and justify your answer.",
+    tariffModel: {"kind":"fixed","notation":"2(3)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Comment — Since Anna and Lucy joined the scheme, their carbon emissions have remained fairly constant", marks: 3, contextNote: "The 2021 bar sits level with the 2019 bar in all four groups, so the honest comment is 'no real change' — not 'improved'. A comment with no justification earns half the marks here." },
+    { id: "r-2", kind: "alt", verbatim: "Justify — No increase in emissions from any source", marks: 3, accepts: ["farm remains below national average in animal digestion and manure usage","farm emissions is still slightly higher than national average in fertiliser usage and forage or feed","correct use of percentages from graph"], contextNote: "Any ONE of these justifications earns the 3 marks, and the scheme credits quoting the percentages off the graph as a justification in its own right." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2023-HL-paper-p30-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p30-i0.png",
+          "srcHash": "2cc93543764df4485ecbd232f5e2bca4",
+          "alt": "A grouped vertical bar chart drawn over a cartoon illustration of a green field and blue cloudy sky, inside a rounded blue-bordered frame, titled 'Percentage Share of Farm Carbon Emissions'. The vertical axis is labelled in purple 'Percentage Share (%)' and scaled 0 to 50 in steps of 10 with faint gridlines. The horizontal axis is labelled in purple 'Sources of Carbon Emissions' with four category groups: 'Animal digestion', 'Manure usage', 'Fertiliser used' and 'Forage / Feed'. A legend at the top right gives three series: blue = 'Current farm assessment (2021)', orange = 'Previous farm assessment (2019)', dark grey/black = 'National average'. Reading the bars: Animal digestion — blue about 38, orange about 38, black about 40.5; Manure usage — blue about 19.5, orange about 19.5, black about 21.5; Fertiliser used — blue about 17, orange about 17, black about 16; Forage / Feed — blue about 16, orange about 16, black about 12. In each group the blue and orange bars are essentially the same height. Below the chart is '(Adapted from Teagasc, 2022)' then '(i) Identify the main source of carbon emissions on the farm.' with an empty box, and '(ii) State with reason if the main source of emissions is above or below the national average for the enterprise.' with an answer table whose rows read 'State:' and 'Reason:'.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q17biii", topicId: "agsci-3-2", conceptId: "multi-species-sward-species",
+    section: "B", questionRef: "2023 HL Q17(b)(iii)",
+    stem: "Question 17. Mark is reseeding 20% of his 150 hectare dairy and beef farm and researching which sward composition suits his soil type and enterprise. Part (b) is about the seed mixture; (b)(iii) prints three colour close-up photographs of plants side by side, each headed with a bold capital letter — A, B and C — over an empty three-cell answer row. Only two of the three are needed.",
+    questionText: "Identify any two of the plant species commonly found in Irish multi species seed mixtures.",
+    tariffModel: {"kind":"bestNofParts","answer":2,"ofParts":3,"perPart":2,"notation":"2(2)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "A = Perennial ryegrass or PRG", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "B = (Ribwort) plantain", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "C = Chicory", marks: 2 },
+    ],
+    figure: {
+          "candId": "agricultural-science-2023-HL-paper-p36-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p36-i0.png",
+          "srcHash": "f5f747b3368eb0e5212a097dd8cda38c",
+          "alt": "Three colour close-up photographs of plants side by side, each headed by a bold capital letter above it, with an empty three-cell answer row beneath. A (left): a slender arching grass flowering head, straw-green fading to buff, with narrow spikelets clustered along one side of the stem, photographed against a blurred green background. B (centre): several upright plants with long narrow strap-like ribbed leaves, each carrying a dark brown-black cone/egg-shaped flower head on a long slender stalk, with a ring of small white and cream stamens standing out around each head, against bright green grass. C (right): several pale blue-violet flowers with flat, strap-shaped ray petals whose square tips are finely toothed and with a paler star-like centre, borne on thin wiry stems with narrow green buds and a blurred reddish-brown and green background. Above the photographs is the printed instruction '(iii) Identify any two of the plant species commonly found in Irish multi species seed mixtures.' Below the answer row is '(c) Grass has the ability to reproduce sexually and asexually. Explain, with the aid of a labelled diagram, how a grass plant reproduces either sexually or asexually.' and a grey bar reading 'Type of reproduction:'.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Left photograph — a slender arching grass flowering head, straw-green fading to buff, with flattened spikelets set alternately edge-on along the stem (perennial ryegrass)","askedInThisQuestion":true},{"letter":"B","meaning":"Centre photograph — leafless stalks each topped by a short dark cylindrical seed head ringed with a collar of white anthers (ribwort plantain)","askedInThisQuestion":true},{"letter":"C","meaning":"Right photograph — bright blue, many-rayed daisy-like flowers on wiry branched stems (chicory)","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2025, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
+    id: "agsci-2025-hl-q13di", topicId: "agsci-4-1", conceptId: "milk-let-down-hormone",
+    section: "B", questionRef: "2025 HL Q13(d)(i)",
+    stem: "Question 13, part (d) — answered instead of part (c). The paper prints: 'A hormone is responsible for milk let down in cows. Analyse the picture and answer the questions that follow.' The picture below is that picture. Part (ii), printed under the same picture, then asks for one trigger of milk let down.",
+    questionText: "Identify the hormone labelled X responsible for milk let down.",
+    tariffModel: {"kind":"fixed","notation":"5"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Oxytocin", marks: 5 },
+    ],
+    figure: {
+          "candId": "agricultural-science-2025-HL-paper-p24-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-p24-i0.png",
+          "srcHash": "d51165a7fc8dfb2d7772c176d9d8d993",
+          "alt": "The milk let-down figure for Question 13(d). Printed above it: 'Or', '(d) A hormone is responsible for milk let down in cows.' and 'Analyse the picture and answer the questions that follow.' The figure is a cut-out side-view photograph of a black-and-white Holstein Friesian cow standing facing right, with a white head bearing a black patch around the eye and short pale upward-curving horns, black patches over the body, a full pink-and-white udder between the hind legs and a swishing tail. Overlaid on the animal in red is a pathway: a solid red dot sits high on the head just behind the poll, a heavy red dashed line runs from that dot down the neck to a point at the shoulder, then turns and runs horizontally backwards along the underline of the body, then turns down and ends in a red arrowhead pointing at the udder. A solid red arrow rises from a rectangular blue-outlined label box to the point on the shoulder where the dashed line bends; the label box contains the bold blue text 'Hormone X'. Beneath the figure are part (i) 'Identify the hormone labelled X responsible for milk let down.' with a two-row blank answer box, and part (ii) 'Identify one trigger of milk let down in cows.' with the top of a further blank box.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "X"
+          ]
+    },
+    labelKey: [{"letter":"X","meaning":"Oxytocin","askedInThisQuestion":true}],
+  } as SecCard,
 ];

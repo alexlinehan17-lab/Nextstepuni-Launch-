@@ -30720,5 +30720,2330 @@
    }
   ],
   "notes": "Q18(c)(i) and (c)(ii) are skipped: both are read off the Bord Bia dairy-exports bar chart. This part is a knowledge question about grass-fed produce and needs no graph, so the stem carries only the sentence the paper prints above it. Tariff '2+2' = 4, five-point pool, two equal answer slots. REVIEWER CORRECTION: row 2 previously seeded a TRUNCATED point ('higher in Vitamin A or D or E', cut before 'or anti-oxidants') and listed 'anti-oxidants' as a separate accept, which showed a half point as a row headline. Row 2 now seeds 'high in omega 3 or omega 6', a complete point contiguous in the scheme, and both rows carry the same four-item pool with the Vitamin/anti-oxidant point reassembled whole — it reads non-contiguously in the extraction only because the '2+2' marks cell falls inside that line."
+ },
+ {
+  "id": "agsci-2021-hl-q3biv",
+  "topicId": "agsci-3-3-2",
+  "conceptId": "zero-grazing-disadvantages",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2021 HL Q3(b)(iv)",
+  "questionText": "Outline one disadvantage of using machine (method) B when feeding high producing animals.",
+  "stem": "Question 3(b) continued, and the last part of the question. Machine (method) B is the implement arrowed in the right-hand photograph at part (b)(i) — the high-sided wagon with the yellow pick-up head, filled with cut grass, working a green pasture. \"High producing animals\" means stock at peak output, such as a dairy cow in early lactation. This part carries 2 marks.",
+  "figureKey": "agricultural-science-2021-HL-paper-p07-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "the red arrow in the left-hand photograph, pointing down at the wide orange hopper-and-tine implement behind a tracked tractor on cultivated ground; printed on the same crop but asked about at part (iii), not here",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "the red arrow in the right-hand photograph, pointing down at the high-sided trailer loaded with cut green grass, with a yellow pick-up head slung at its front, drawn behind a tractor across green pasture; this is the machine this part asks about",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Stressed animals due to too much confinement (leading to reduced animal performance) / spoiling of cut grass ‐ reduced intake / increased labour required to feed animals",
+    "marks": 2,
+    "contextNote": "One 2-mark point with seven alternative wordings across the scheme's block. The question asks for one disadvantage, so one wording earns the full 2 and further ones add nothing.",
+    "accepts": [
+     "increased capital investment on housing for animals",
+     "increased slurry storage requirement as animals housed all year round",
+     "bloat in livestock",
+     "lameness in livestock indoors"
+    ]
+   }
+  ],
+  "notes": "Bound to the inspected crop agricultural-science-2021-HL-paper-p07-i0.png, the same figure as part (b)(i): the paper never names machine B in words, so without the photograph this part asks about an unidentified method. Verbatim stops before the point where the scheme's marks column interrupts the block; the four wordings on the far side of it are carried in accepts. One row, not seven — the scheme prints a single 2 for the whole list."
+ },
+ {
+  "id": "agsci-2021-ol-q1b-i",
+  "topicId": "agsci-3-2",
+  "conceptId": "grassland-weed-identification",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2021 OL Q1(b)(i)",
+  "questionText": "Identify each of the following plants commonly found in grassland.",
+  "stem": "Question 1 offers a choice of (a) or (b); this is part (b). Four colour photographs of plants commonly found in grassland are printed in a two-by-two grid, each with a bold letter above it: A top left, B top right, C bottom left, D bottom right. The letters carry across to part (b)(ii), which asks for a method of killing plant B.",
+  "figureKey": "agricultural-science-2021-OL-paper-p04-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "the top-left photograph — a dense grass sward studded with many small flowers with white petals and yellow centres: daisy",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "the top-right photograph — a low rosette of broad, oval, red-veined leaves growing in rough grass: dock leaf",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "the bottom-left photograph — a single glossy yellow five-petalled flower among deeply lobed green leaves: buttercup",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "D",
+    "meaning": "the bottom-right photograph — a flat rosette of spiny, blue-green, deeply cut leaves lying in grass: thistle",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 + 2 + 2 + 2"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A = Daisy",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B = Dock leaf",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C = Buttercup",
+    "marks": 2
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "D = Thistle",
+    "marks": 2
+   }
+  ],
+  "notes": "Figure opened and verified. agricultural-science-2021-OL-paper-p04-i0 IS the Q1(b)(i) grid: the 'Or' line, the instruction, then A (a sward of small white daisies), B (a rosette of broad red-veined dock leaves), C (one yellow buttercup flower among lobed leaves) and D (a spiny thistle rosette), ending at the 'A:' answer box — nothing truncated. Pure photograph identification, so the card is meaningless without the crop. The scheme prints 2 beside each of A–D, giving a fixed 8; Q1(b)(ii) takes the remaining 2 of Q1's 10. A surplus wrong name written beside a correct one cancels that letter's mark (see the scheme's own worked example on surplus answers)."
+ },
+ {
+  "id": "agsci-2021-ol-q1b-ii",
+  "topicId": "agsci-3-3-2",
+  "conceptId": "grassland-weed-control",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2021 OL Q1(b)(ii)",
+  "questionText": "Describe one method used to kill plant B.",
+  "stem": "Question 1 offers a choice of (a) or (b); this is part (b)(ii). Part (b)(i) printed four photographs of grassland plants lettered A to D and asked you to name them. Plant B is the one in the top-right photograph — the broad-leaved rosette growing in rough grass.",
+  "figureKey": "agricultural-science-2021-OL-paper-p04-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "the top-left photograph — a grass sward studded with small white, yellow-centred flowers: daisy",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "the top-right photograph — a rosette of broad, oval, red-veined leaves: dock leaf. This is the plant this part asks you to kill.",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "the bottom-left photograph — a yellow five-petalled flower among lobed leaves: buttercup",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "D",
+    "meaning": "the bottom-right photograph — a spiny, deeply cut rosette in grass: thistle",
+    "askedInThisQuestion": false
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Spray (with herbicide or weed killer)",
+    "marks": 2,
+    "accepts": [
+     "digging up or ploughing (to remove weeds)",
+     "crop rotation to disturb (break) weed cycle"
+    ],
+    "contextNote": "The solidi separate three wordings of ONE 2-mark point, not three marks. Only one method is asked for and it carries the whole 2."
+   }
+  ],
+  "notes": "Figure opened and verified — the same Q1(b)(i) crop, bound because 'plant B' is a dangling reference without it. The card does not hand over the identification: the scheme's methods (spray, dig/plough, rotation) score for any broad-leaved weed, and B is decoded only in the label key, which renders after the reveal. Solidus discipline: three alternatives, one mark point."
+ },
+ {
+  "id": "agsci-2021-ol-q2a",
+  "topicId": "agsci-4-1",
+  "conceptId": "ruminant-stomach-parts",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2021 OL Q2(a)",
+  "questionText": "Identify the labelled parts A, B, C on the diagram using the correct word from the list.",
+  "stem": "Question 2 prints a diagram of part of the digestive system of a sheep, with a photograph of grazing ewes beside it. Three chambers are lettered A, B and C; the oesophagus, the reticulum and the small intestine are already named on the diagram itself. The word list printed under the diagram is: Omasum, Rumen, Abomasum — three words for three letters, so every word is used once. Part (b) then asks for two functions of the microorganisms in a ruminant's digestive system.",
+  "figureKey": "agricultural-science-2021-OL-paper-p05-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "the arrow entering the large rounded chamber that fills the right-hand half of the diagram — the rumen, the biggest compartment",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "the arrow pointing up into the chamber at the bottom centre of the diagram — the abomasum, the true stomach",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "the leader pointing into the chamber in the middle of the diagram, above and to the left of B — the omasum",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 + 2 + 2"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A = Rumen",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B = Abomasum",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C = Omasum",
+    "marks": 2
+   }
+  ],
+  "notes": "Figure opened and verified: agricultural-science-2021-OL-paper-p05-i0 carries the Question 2 heading, the sheep photograph, the full pink ruminant-stomach diagram with the A, B and C leaders, the printed word list (Omasum, Rumen, Abomasum) and the (a) instruction, ending at the 'C:' answer box. The letters are decoded to the scheme's own answers because the label-key panel renders only inside the post-reveal block. Q2 is 10 marks: 6 here (2 per letter, fixed) and 4 for part (b)."
+ },
+ {
+  "id": "agsci-2021-ol-q4a",
+  "topicId": "agsci-2-1",
+  "conceptId": "soil-profile-identification",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2021 OL Q4(a)",
+  "questionText": "Identify the two types of soils shown in profile diagrams A and B above.",
+  "stem": "Question 4 prints two cutaway soil profiles side by side under a pale banner heading the left column A and the right column B. The left profile is drawn to 3 m, the right to 2 m. Inside each profile the horizons are bracketed A, B and C and annotated: on the left 'Humus, rich dark brown colour', 'Stony' and 'Parent rock'; on the right 'Pale grey, heavily leached', 'Darker brown, leached minerals' and 'Parent rock'. Parts (b) and (c) then ask for one use of soil A and two disadvantages of soil B.",
+  "figureKey": "agricultural-science-2021-OL-paper-p07-i1",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "the left-hand column — the soil the question calls A, a deep dark-brown profile over stony material: brown earth. (Inside each profile, A also brackets the top horizon: 'Humus, rich dark brown colour' on the left, 'Pale grey, heavily leached' on the right.)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "the right-hand column — the soil the question calls B, a pale leached surface over an orange-brown band of redeposited minerals: podzol. (Inside each profile, B also brackets the middle horizon: 'Stony' on the left, 'Darker brown, leached minerals' on the right.)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "the bottom bracket in both profiles, against the brick-patterned band — parent rock. C is not one of the soils the question asks you to name.",
+    "askedInThisQuestion": false
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 + 2"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A = Brown earth",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B = Podzol",
+    "marks": 2
+   }
+  ],
+  "notes": "Figure opened and verified: agricultural-science-2021-OL-paper-p07-i1 carries the 'Question 4' heading, the lead line, the A/B banner, both annotated profiles with their depth scales, and the (a) instruction. The crop's letters are genuinely double-duty — A and B head the two COLUMNS (the soils being named) and also bracket the top and middle HORIZONS inside each profile — so the label key spells out both senses rather than leaving a student to guess which A the question means. Q4 is 10 marks: 4 here, 2 at (b), 4 at (c)."
+ },
+ {
+  "id": "agsci-2021-ol-q9a",
+  "topicId": "agsci-1-3",
+  "conceptId": "ranking-agricultural-emissions-from-chart",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2021 OL Q9(a)",
+  "questionText": "Where would you rank the greenhouse gas emissions from agriculture in 2018?",
+  "stem": "Question 9 prints a doughnut chart of Ireland's greenhouse gas emissions in 2018, adapted from the Environmental Protection Agency (2020), and instructs: 'Analyse the chart and answer the question which follow.' Every sector on the chart carries its own percentage label, so the ranking is read off, not recalled. Parts (b) and (c) then ask for two sources of greenhouse gases from agriculture and for two ways of increasing biodiversity on a farm.",
+  "figureKey": "agricultural-science-2021-OL-paper-p12-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "1st (highest ranking) or most or top",
+    "marks": 2,
+    "contextNote": "The 'or's are three wordings of one answer, not three marks. A rank is wanted, not the percentage — but a student who writes '34%, the largest sector' has said the same thing and the examiner is directed to consider answers on their merits."
+   }
+  ],
+  "notes": "Figure opened and verified: agricultural-science-2021-OL-paper-p12-i0 shows the Question 9 heading, the full stem, the complete doughnut chart with every sector labelled (Agriculture 34%, Transport 20%, Energy industries 17%, Residential 10%, Manufacturing Combustion 8%, Industrial processes 4%, F-gases 2%, Commercial Services 2%, Public Services 2%, Waste 1%), the EPA attribution and the (a) and (b) instructions. Bound because the answer is a chart reading — agriculture's 34% slice is the largest — and the figureless version of this part was deferred for exactly that reason. Filed under Evaluating evidence (1.3) rather than a farming topic, because the mark is for reading data."
+ },
+ {
+  "id": "agsci-2021-ol-q10a",
+  "topicId": "agsci-4-1",
+  "conceptId": "cow-reproductive-tract-ovary",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2021 OL Q10(a)",
+  "questionText": "Name the part labelled A on the diagram.",
+  "stem": "Question 10 prints a side-view line drawing of the reproductive system of a cow and says: 'Look at the diagram and answer the questions which follow.' One structure is picked out by a short red arrow labelled A; the bladder and the vulva are already named on the drawing. Parts (b), (c) and (d) go on to ask for A's function, the cow's gestation and oestrous cycle lengths, and where the insemination gun must reach.",
+  "figureKey": "agricultural-science-2021-OL-paper-p13-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "the red arrow left of centre, pointing to the small oval body at the end of the coiled uterine horn — the ovary",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "gate",
+    "verbatim": "Ovary",
+    "marks": 2,
+    "contextNote": "Printed in the scheme as 'Ovary*'. The SEC asterisk means only this exact term scores — 'egg sac' or a description does not — and a surplus wrong name written alongside it cancels this mark."
+   }
+  ],
+  "notes": "Figure opened and verified: agricultural-science-2021-OL-paper-p13-i0 carries the Question 10 heading, the stem, the whole reproductive-tract drawing with the red A arrow and the 'Vulva' and 'Bladder' labels, and the (a), (b) and (c) instructions down to the 'Number of days' table head. Bound because 'the part labelled A' is unanswerable without seeing where the arrow points. Asterisked in the scheme, hence kind 'gate'."
+ },
+ {
+  "id": "agsci-2021-ol-q11a-i",
+  "topicId": "agsci-4-3-1",
+  "conceptId": "farmyard-structure-identification",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2021 OL Q11(a)(i)",
+  "questionText": "Identify the structure located at B.",
+  "stem": "Question 11 offers a choice of (a) or (b); this is part (a), introduced by 'The use of 3D plans are likely to become more common in the future development of new infrastructure of farms.' The figure is a three-dimensional aerial render of a dairy farmyard. Two structures are named on the render — the dairy cow collecting yard on the left and the cow cubicle house in the centre — and a red pointer coming in from the right-hand edge marks B. Parts (a)(ii) to (a)(iv) then ask for B's hazards, for a way the layout is economically sustainable, and for a labour-saving technology.",
+  "figureKey": "agricultural-science-2021-OL-paper-p14-i0",
+  "labelKey": [
+   {
+    "letter": "B",
+    "meaning": "the red pointer entering from the right-hand edge of the render, indicating the two long open-fronted bays on the right of the yard, filled to the brim and covered with dark plastic weighted down by tyres — a silage pit",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Silage (pit)",
+    "marks": 2,
+    "contextNote": "'Pit' is bracketed in the scheme, so 'silage' on its own scores; 'silage clamp' says the same thing."
+   }
+  ],
+  "notes": "Figure opened and verified: agricultural-science-2021-OL-paper-p14-i0 carries the Question 11 choice line, the part (a) stem, the full 3D render with the 'Cow cubicle house' and 'Dairy cow collecting yard' callouts and the red B pointer, plus the (a)(i) and (a)(ii) instructions. The B pointer lands on two adjacent walled bays covered in dark sheeting held down by tyres — a silage pit, which is what the scheme awards. Bound because the question names a structure the student can only see."
+ },
+ {
+  "id": "agsci-2021-ol-q11a-ii",
+  "topicId": "agsci-1-5",
+  "conceptId": "silage-pit-hazards",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2021 OL Q11(a)(ii)",
+  "questionText": "Describe one environmental hazard and one potential safety hazard of structure B.",
+  "stem": "Question 11 offers a choice of (a) or (b); this is part (a)(ii). The figure is a 3D aerial render of a dairy farmyard, with a red pointer from the right-hand edge marking B — the two walled bays covered in dark plastic and weighted with tyres that part (a)(i) identifies as the silage pit. The paper prints two answer lines, one headed 'Environmental:' and one headed 'Safety hazard:'.",
+  "figureKey": "agricultural-science-2021-OL-paper-p14-i0",
+  "labelKey": [
+   {
+    "letter": "B",
+    "meaning": "the red pointer entering from the right of the render, indicating the two walled bays covered with dark plastic and tyres on the right of the yard — the silage pit",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3+1"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Environmental hazard = (silage effluent) run off (into water sources)",
+    "accepts": [
+     "plastic wrapping"
+    ],
+    "contextNote": "The scheme prints '3+1' across the two hazards: the first correct hazard the examiner meets scores 3 and the second scores 1, so neither line can be given a fixed value. The solidus offers 'plastic wrapping' as an alternative environmental hazard, not as an extra mark.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "Safety hazard = fall off silage pit or walls (no safety rails)",
+    "accepts": [
+     "machinery injury"
+    ],
+    "contextNote": "One safety hazard is wanted. 'machinery injury' is the scheme's alternative wording, not a second mark.",
+    "marks": null
+   }
+  ],
+  "notes": "Figure opened and verified: agricultural-science-2021-OL-paper-p14-i0. Bound because both hazards are hazards OF structure B, which is identifiable only from the render. Tariff is the scheme's '3+1', so orderedSplit with both rows null. Filed under Working safely (1.5) because the question is framed as hazards and the deck's other 2021 OL hazard cards sit there; a student revising silage storage (3.3.3) would also want it, since silage effluent run-off is a storage problem."
+ },
+ {
+  "id": "agsci-2021-ol-q13b-i",
+  "topicId": "agsci-4-3-3",
+  "conceptId": "liver-fluke-map-interpretation",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2021 OL Q13(b)(i)",
+  "questionText": "Which county has the highest % fluke damage?",
+  "stem": "Question 13 opens with an article on liver fluke, then part (b) prints a map of the island of Ireland showing the incidence of liver fluke damage to beef cattle livers in the third quarter of 2020, from Beef HealthCheck slaughter data (adapted from Animalhealthireland, 2020). Counties are shaded by band, and three carry a percentage callout on the map. Part (b)(ii) then asks why the fluke damage in Cork is less than in more northern counties. Read the answer off the map — the shading and the callouts are the evidence.",
+  "figureKey": "agricultural-science-2021-OL-paper-p20-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "gate",
+    "verbatim": "Louth (at 17%)",
+    "marks": 4,
+    "contextNote": "Printed in the scheme as 'Louth* (at 17%)'. The SEC asterisk means only this county scores; the percentage in brackets contextualises it rather than being required. A surplus wrong county named alongside Louth cancels the mark."
+   }
+  ],
+  "notes": "Figure opened and verified: agricultural-science-2021-OL-paper-p20-i0 carries the part (b) stem, the Beef HealthCheck map with its three callouts — Mayo 7.87%, Louth 17.0%, Cork 1.54% — the Animalhealthireland attribution, and the (b)(i) and (b)(ii) instructions. Bound because the answer is unreachable without reading the map; the deferred, figureless version of this part would have been a dangling reference. The companion part (b)(ii) already ships as a figureless card, since the question itself states the Cork/north comparison."
+ },
+ {
+  "id": "agsci-2021-ol-q17b-i",
+  "topicId": "agsci-1-4",
+  "conceptId": "plotting-germination-bar-chart",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2021 OL Q17(b)(i)",
+  "questionText": "Complete the graph below by plotting the percentage germination of the grass seeds at 20 °C as calculated at part (a) and at 30 °C.",
+  "stem": "Question 17(a) had a student investigate the effect of temperature on the percentage germination of certified grass seeds. One hundred seeds were sown at each of five temperatures (15, 20, 25, 30 and 35 °C) and the whole investigation was repeated four times. Part (a)(v) gave the number of seeds that germinated at 20 °C in the four trials — 62, 59, 61 and 58 — and asked for the mean percentage germination; that value is the one this part asks you to plot. The results table printed with the graph reads: 15 °C, 15 %; 20 °C, 'Calculated at part (a)'; 25 °C, 80 %; 30 °C, 65 %; 35 °C, 35 %. The bars for 15, 25 and 35 °C are already drawn; the 20 °C and 30 °C positions are blank.",
+  "figureKey": "agricultural-science-2021-OL-paper-p32-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 + 3"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Correct bar drawn at 20oC up to 60",
+    "marks": 3,
+    "contextNote": "The scheme awards 2 of these 3 marks where the value calculated at part (a)(v) was wrong but that wrong value is then plotted correctly — the plotting mark survives a bad calculation."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Correct bar drawn at 30oC up to 65",
+    "marks": 3,
+    "contextNote": "Read straight off the results table printed under the graph; no calculation is involved in this one."
+   }
+  ],
+  "notes": "Figure opened and verified: agricultural-science-2021-OL-paper-p32-i0 shows the (b)(i) instruction, the complete bar chart 'Effect of Temperature on the Germination % of Grass Seeds' with a 0–85 axis in steps of 5, the three bars already drawn (15 at 15 °C, 80 at 25 °C, 35 at 35 °C) and the gaps at 20 and 30 °C, plus the results table with 'Calculated at part (a)' highlighted in the 20 °C cell. Bound because the answer is a plotting act on this printed chart. The stem deliberately carries the four raw trial counts rather than the mean, so the student still has to do part (a)(v)'s arithmetic to earn row 1. Filed under Communicating (1.4) — the mark is for presenting data, not for interpreting it."
+ },
+ {
+  "id": "agsci-2021-ol-q18c-ii",
+  "topicId": "agsci-1-3",
+  "conceptId": "reading-liveweight-from-graph",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2021 OL Q18(c)(ii)",
+  "questionText": "The farmer aims to sell the lambs at a minimum average liveweight of 45 kg. Using the graph, determine the minimum number of weeks for the lambs to reach this liveweight.",
+  "stem": "Question 18 — answer both (a) and (b), with either (c) or (d). Part (c): a farmer is producing early lambs for the Easter market. The lambs were born in January with an average birthweight of 4 kg and were weighed every two weeks. Part (c)(i) asked for their average daily liveweight gain over the 16-week period (112 days). The graph plots average liveweight in kilograms against age in weeks, from birth to week 16, with the y-axis marked every 5 kg. The question says 'using the graph', so the answer is a reading, and the paper prints a single 'Minimum number of weeks:' box for it.",
+  "figureKey": "agricultural-science-2021-OL-paper-p35-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "14 ( can be indicated on the graph)",
+    "marks": 4,
+    "contextNote": "The bracketed note is the examiner's: a candidate who marks the point on the graph instead of writing the number still scores. 'Minimum' matters — the lambs pass 45 kg at week 14, so week 16 is not the answer even though the lambs are heavier by then."
+   }
+  ],
+  "notes": "Figure opened and verified: agricultural-science-2021-OL-paper-p35-i0 shows the (c)(ii) instruction, the whole line graph 'Average Liveweight Gain of Lambs from Birth to Slaughter' with all nine plotted points (Birth to week 16) and a 0–55 kg axis in steps of 5, and the 'Minimum number of weeks:' answer box. Bound because the question instructs the candidate to read this graph. The stem deliberately does NOT transcribe the liveweight table the paper also prints — that would hand over the reading the mark is for."
+ },
+ {
+  "id": "agsci-2021-ol-q18d-ii",
+  "topicId": "agsci-1-3",
+  "conceptId": "npk-effect-on-plant-growth",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2021 OL Q18(d)(ii)",
+  "questionText": "Identify which treatment group had the greatest effect on plant growth.",
+  "stem": "Question 18 — answer both (a) and (b), with either (c) or (d). Part (d): a student investigated whether the nutrients N, P and K affected the growth rate of grass and barley plants, recorded the shoot length of multiple plants, calculated the mean and graphed the results. The bar chart plots average shoot length in centimetres against four treatment groups — Nutrients-NPK, N only, P only and K only — with a dark blue bar for barley and a yellow bar for grass in each group, every bar carrying its own value. Part (d)(i) asked why a mean was used; part (d)(iii) asks how the shoot length could have been measured. The answer here is one treatment group, read off the chart.",
+  "figureKey": "agricultural-science-2021-OL-paper-p37-i0",
+  "labelKey": [
+   {
+    "letter": "N",
+    "meaning": "Nitrogen — decoded in the key printed under the chart. It names the second treatment group, 'N Only'.",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "P",
+    "meaning": "Phosphorus — decoded in the key printed under the chart. It names the third treatment group, 'P Only'.",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "K",
+    "meaning": "Potassium — decoded in the key printed under the chart. It names the fourth treatment group, 'K Only'.",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "All nutrients (NPK)",
+    "marks": 2,
+    "contextNote": "The group the chart labels 'Nutrients - NPK'. It is the tallest pair on the chart for BOTH species, which is what makes it the answer — naming a group that is tallest for only one species does not score."
+   }
+  ],
+  "notes": "Figure opened and verified: agricultural-science-2021-OL-paper-p37-i0 shows the 'Or' line, the part (d) stem, the full bar chart 'Effect of nutrients on growth of grass and barley plants' with the Barley/Grass legend and every bar valued (NPK 25/15, N only 15/9, P only 19/11, K only 21/12), the printed key 'N = Nitrogen  P = Phosphorus  K = Potassium', and the (d)(i) instruction. Bound because the batch flagged that the chart's series-to-value mapping could not be reconstructed from the extracted text with certainty — it can be read directly off this crop. The N/P/K letters are decoded from the key printed on the crop itself, not inferred. Filed under Evaluating evidence (1.3): the mark is for reading the chart."
+ },
+ {
+  "id": "agsci-2022-hl-q2a",
+  "topicId": "agsci-4-2",
+  "conceptId": "identifying-livestock-breeds",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2022 HL Q2(a)",
+  "questionText": "Identify any four of the following breeds of animals.",
+  "stem": "Section A, Question 2, part (a). Six colour photographs of farm animals are printed in two rows of three: A, B and C captioned above the top row, D, E and F captioned below the bottom row. Under them the paper prints an answer box running A: to F:. Only four of the six have to be named. The scheme's front matter uses this exact question type as its worked example of the surplus-answer rule: a candidate who names five and gets one of them wrong scores 4 - 1 = 3, so there is nothing to gain from filling in all six. Part (b), on selecting a female replacement animal for breeding, is carded separately.",
+  "figureKey": "agricultural-science-2022-HL-paper-p05-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Top row, left - a long-bodied white pig standing side-on in a pen, metal railings behind it",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Top row, centre - a sheep standing side-on on grass in front of a dry-stone wall, dense brown fleece, pale face, dark lower legs",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Top row, right - a dapple-grey horse standing side-on on rough hillside grass",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "D",
+    "meaning": "Bottom row, left - a single reddish-brown hen standing on grass",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "E",
+    "meaning": "Bottom row, centre - a group of tan-coloured cattle standing together in a field",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "F",
+    "meaning": "Bottom row, right - a black-and-white cow grazing in a field",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4(1)",
+   "answer": 4,
+   "ofParts": 6,
+   "perPart": 1
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A — Landrace",
+    "marks": 1,
+    "contextNote": "Photograph A, the pig. Any four of the six letters score 1 mark each; a fifth, wrong answer cancels a correct one."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B — Blue Leicester",
+    "marks": 1,
+    "contextNote": "Photograph B, the sheep. The scheme prints 'Blue Leicester'; the breed is usually written Bluefaced Leicester."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C — Connemara (pony)",
+    "marks": 1,
+    "contextNote": "Photograph C, the grey horse. Brackets in an SEC scheme mark words that are not required, so 'Connemara' on its own takes the mark."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "D — Rhode Island red",
+    "marks": 1,
+    "contextNote": "Photograph D, the hen. The scheme prints 'red' in lower case; the breed name is normally capitalised as Rhode Island Red."
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "E — Limousine",
+    "marks": 1,
+    "contextNote": "Photograph E, the tan beef cattle. The scheme's spelling is 'Limousine'; the breed is normally written Limousin. Both name the same animal."
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "F — (Holstein) Friesian",
+    "marks": 1,
+    "contextNote": "Photograph F, the black-and-white dairy cow. 'Holstein' is bracketed, so 'Friesian' alone takes the mark."
+   }
+  ],
+  "notes": "Figure opened before writing: agricultural-science-2022-HL-paper-p05-i0.png is the Question 2 breed grid, six photographs with A, B, C printed above the top row and D, E, F below the bottom row, exactly as the batch's candidate list describes. bestNofParts is used because the card shows all six lettered options while a student can only claim four - that is what the model exists for. 4 x 1 = 4 reconciles the tariff, and Q2 totals 10 with part (b)'s 2(3) = 6. The label key decodes which photograph each letter sits on rather than naming the breed, so the card does not give away its own answer before the student self-marks. Scheme lines: 'A = Landrace / B = Blue Leicester / C = Connemara (pony) / D = Rhode Island red / E = Limousine / F = (Holstein) Friesian', 4(1). Every row's text after the em dash was checked against the normalised scheme and found verbatim."
+ },
+ {
+  "id": "agsci-2022-hl-q13aiii",
+  "topicId": "agsci-3-2",
+  "conceptId": "identifying-sward-plants",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2022 HL Q13(a)(iii)",
+  "questionText": "A farmer identified different plants in the sward while measuring the grass. Identify any two of the following plants A, B or C from the sward.",
+  "stem": "Section B, Question 13, part (a)(iii). Part (a) opens: 'Maintaining a constant supply of high quality leafy grass can be easily achieved by managing and measuring the amount of grass on the farm.' Parts (i) and (ii) covered the advantages of grass measuring and the kg DM/ha calculation; (iii) turns to what is actually growing in the sward. Three photographs are printed side by side in a bordered three-column table, with answer cells beneath reading A:, B: and C:. Only two of the three have to be named.",
+  "figureKey": "agricultural-science-2022-HL-paper-p20-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Left cell - a close-up of one upright, densely packed green seed head, broad flat leaf blades behind it",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Centre cell - several pale blue, daisy-like flowers on leafy stems, a bee on one of them",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Right cell - a branched, open seed head of greenish-purple clustered spikelets on fine stems",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2(1)",
+   "answer": 2,
+   "ofParts": 3,
+   "perPart": 1
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A — Italian ryegrass",
+    "marks": 1,
+    "contextNote": "Photograph A, the single upright spiked seed head. Any two of the three letters score 1 mark each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B — Chicory",
+    "marks": 1,
+    "contextNote": "Photograph B, the pale blue flowers. Chicory is the odd one out here - a deep-rooting herb sown in multi-species swards, not a grass."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C — Cocksfoot",
+    "marks": 1,
+    "contextNote": "Photograph C, the branched, clumped seed head on fine stems."
+   }
+  ],
+  "notes": "Figure opened before writing: agricultural-science-2022-HL-paper-p20-i0.png carries the (iii) instruction in full plus the three-cell table of photographs with the A:, B:, C: answer cells beneath, so the crop is the whole question. bestNofParts fits exactly - three lettered options displayed, two claimable, 2 x 1 = 2 marks. Q13 reconciles as (a) 8 + 6 + 2 + 6 = 22 and (b) 12 + 4 + 8 + 4 = 28, total 50. Scheme: 'A = Italian ryegrass / B = Chicory / C = Cocksfoot', 2(1). Each row's text after the em dash was checked against the normalised scheme and found verbatim. The label key describes which photograph carries each letter without naming the plant, so the answer is not leaked before self-marking."
+ },
+ {
+  "id": "agsci-2022-hl-q14ci",
+  "topicId": "agsci-4-3-3",
+  "conceptId": "calf-housing-suitable-environment",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2022 HL Q14(c)(i)",
+  "questionText": "Identify three aspects of the shed which make it a suitable environment for calves and provide a reason for each aspect identified.",
+  "stem": "Section B, Question 14, which is answered as 'both (a) and (b) with either (c) or (d)'. Part (c) opens: 'Analyse the picture of calf housing below and answer the questions which follow.' The photograph is taken inside a calf shed looking down the length of a straw-bedded pen: black-and-white calves lying and standing on deep clean straw, a low solid wall along the front of the pen with a galvanised barrier above it, spaced vertical timber boarding running along the upper side wall under the eaves, translucent roof panels letting daylight in, and a steel-framed pitched roof well above the calves. Three numbered answer slots are printed (1., 2., 3.), and each has to carry an aspect together with its reason - the question asks for both, and the scheme's options are printed as aspect-and-reason pairs.",
+  "figureKey": "agricultural-science-2022-HL-paper-p25-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3(3)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Space sheeting or high roof ‐ good airflow (ventilation)",
+    "marks": 3,
+    "accepts": [
+     "board or concrete walls ensuring pen is draft free",
+     "(clean) roof lights ‐ plenty of natural light",
+     "large area with adequate lying space",
+     "clean bedding or smooth surfaces for good hygiene or disease reduction",
+     "long feed barrier ‐ adequate feeding space"
+    ],
+    "contextNote": "3(3) = any three aspects at 3 marks each. This row is a slot, not a required answer: any one of the six aspect-and-reason pairs the scheme prints takes the 3 marks, and the aspect alone does not - the question asks for a reason too."
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "board or concrete walls ensuring pen is draft free",
+    "marks": 3,
+    "accepts": [
+     "Space sheeting or high roof ‐ good airflow (ventilation)",
+     "(clean) roof lights ‐ plenty of natural light",
+     "large area with adequate lying space",
+     "clean bedding or smooth surfaces for good hygiene or disease reduction",
+     "long feed barrier ‐ adequate feeding space"
+    ],
+    "contextNote": "A second, different aspect. Ventilation without draughts is the pairing the picture is built around: air moves in high through the spaced boarding, while the solid lower wall keeps it off the lying calves."
+   },
+   {
+    "id": "r-3",
+    "kind": "alt",
+    "verbatim": "(clean) roof lights ‐ plenty of natural light",
+    "marks": 3,
+    "accepts": [
+     "Space sheeting or high roof ‐ good airflow (ventilation)",
+     "board or concrete walls ensuring pen is draft free",
+     "large area with adequate lying space",
+     "clean bedding or smooth surfaces for good hygiene or disease reduction",
+     "long feed barrier ‐ adequate feeding space"
+    ],
+    "contextNote": "A third, different aspect. 'Clean' is bracketed, so it is not required - naming the roof lights and giving natural light as the reason is enough."
+   }
+  ],
+  "notes": "Figure opened before writing: agricultural-science-2022-HL-paper-p25-i1.png is the Question 14(c) calf-housing photograph with the (c) and (i) instructions above it and the numbered answer grid below. The crop carries no letters, so labelKey is empty and the build files it as a question card carrying a figure rather than a diagram card. Tariff: scheme prints 3(3) = 9, and Q14 reconciles as (a) 10 + 2 + 3 + 3 + 4 = 22, (b) 6 + 8 = 14, (c) 9 + 5 = 14, total 50. The scheme prints six pooled aspect-and-reason pairs separated by solidi, so this is three slot rows with the pool in accepts, not six rows. Each row verbatim was checked against the normalised scheme and found contiguous. 'clean bedding or smooth surfaces for good hygiene or disease reduction' is NOT contiguous - the typeset marks cell '3(3)' lands between 'clean' and 'bedding' - so it appears only in accepts, which the build does not provenance-check."
+ },
+ {
+  "id": "agsci-2022-ol-q2bi",
+  "topicId": "agsci-4-2",
+  "conceptId": "sheep-breed-identification",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2022 OL Q2(b)(i)",
+  "questionText": "Identify breed E and F.",
+  "stem": "Question 2 part (b) — the alternative to part (a). Jessica is a young sheep farmer and she is looking to buy a ram to breed replacements with her Suffolk cross ewes; two rams are photographed, lettered E and F. Parts (ii) and (iii) go on to ask which ram she should buy and why she keeps crossbred rather than purebred ewes.",
+  "figureKey": "agricultural-science-2022-OL-paper-p05-i0",
+  "labelKey": [
+   {
+    "letter": "E",
+    "meaning": "The ram in the left-hand photograph: tall and leggy with a long, bare, white face, a slightly Roman nose, upright ears, no wool on the head, and a tight curly tan-white fleece.",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "F",
+    "meaning": "The ram in the right-hand photograph: short-legged, deep and blocky through the body with heavy hindquarters, a wide flat white face with black nose and black eye markings, and short erect ears.",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3+1"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "E = Border Leister",
+    "contextNote": "The scheme spells it 'Leister'; the breed is the Border Leicester and the correct spelling is the same answer.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "F = Texel or Beltex",
+    "marks": null
+   }
+  ],
+  "notes": "Bound to the p05 crop, opened and checked: it carries Jessica's stem sentence, both ram photographs with bold E and F above them, and the (i) answer boxes. The scheme prints a single '3+1' between the two answers and does not say which identification takes the 3, so this is an orderedSplit with both rows null — the first correct breed named scores 3 and the second 1. Q2 = 10 = 4 here + 4 for (b)(ii) + 2 for (b)(iii)."
+ },
+ {
+  "id": "agsci-2022-ol-q6b",
+  "topicId": "agsci-1-5",
+  "conceptId": "chemical-hazard-symbol-identification",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2022 OL Q6(b)",
+  "questionText": "Identify the safety symbols labelled A and B above.",
+  "stem": "Question 6 of Section A. The safety symbols shown are present on a selective herbicide used to control all species of docks in an established grassland sward (the crop also carries the paper's photograph of a dock plant growing in grass). Part (a) asks you to explain the underlined term 'selective herbicide' and part (c) asks for two precautions when applying herbicides.",
+  "figureKey": "agricultural-science-2022-OL-paper-p09-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "The left-hand pictogram: a red-outlined diamond standing on its point containing a solid black human torso and head, with a white star-burst radiating out of the chest.",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "The right-hand pictogram: a red-outlined diamond standing on its point containing a single bold black exclamation mark.",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 + 2"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "A = Health hazard / carcinogenic",
+    "marks": 2,
+    "contextNote": "One 2-mark point with two accepted wordings — 'health hazard' and 'carcinogenic' are the same mark, not two."
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "B = Harmful / caution / danger / warning / irritant",
+    "marks": 2,
+    "contextNote": "Five accepted wordings of the same 2-mark point. Any one of them scores it."
+   }
+  ],
+  "notes": "Bound to the p09-i0 crop, opened and checked: it shows both GHS pictograms with the bold A and B beneath them and runs down to the (b) answer boxes, so it is the crop that actually carries what this part asks about. (p09-i1 is the same stimulus framed higher and is deliberately not used, so the two near-duplicate crops are never both bound.) The question text says 'labelled A and B', which is exactly the case the build refuses without a decoded label key — hence the labelKey above. Two mark digits of 2 printed against two separate answers, so a fixed tariff summing to 4; Q6 = 10 = 2 (a) + 4 here + 4 (c)."
+ },
+ {
+  "id": "agsci-2022-ol-q7bi",
+  "topicId": "agsci-3-1",
+  "conceptId": "photosynthesis-inputs-and-outputs",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2022 OL Q7(b)(i)",
+  "questionText": "Identify what A, B and C are representing in the picture illustrating photosynthesis.",
+  "stem": "Question 7 part (b) — the alternative to part (a). Photosynthesis is the method by which green plants make their own food using chlorophyll. In the picture a black arrow runs from the sun onto the leaves and a black arrow labelled 'Water' runs into the roots; the three arrows you are asked about are printed 'Gas A', 'Gas B' and 'C'. Part (ii) then asks for two ways a leaf is adapted to carry out photosynthesis.",
+  "figureKey": "agricultural-science-2022-OL-paper-p10-i1",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Printed on the picture as 'Gas A' — a black arrow travelling from the left-hand air INTO a leaf. The figure itself tells you it is a gas and that it is going in.",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Printed on the picture as 'Gas B' — a pale arrow travelling OUT of the plant to the right, at the top of the shoot.",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Printed on the picture as 'C' — a second pale arrow leaving the plant lower down and to the right. Unlike A and B it is not labelled 'Gas', so it need not be one.",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4+1+1"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A = Carbon dioxide (CO2)",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "B = Oxygen (O2) or water vapour",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "alt",
+    "verbatim": "C = Glucose (C6H12O6) or oxygen or water vapour",
+    "contextNote": "The scheme lets the two outgoing arrows be answered either way round: whichever of oxygen and water vapour you did not use for B is accepted here, and glucose is accepted too.",
+    "marks": null
+   }
+  ],
+  "notes": "Bound to the p10-i1 crop, opened and checked: it carries the whole of part (b) — the stem sentence, the A/B/C answer boxes and the photosynthesis illustration with 'Gas A', 'Gas B', 'C' and 'Water' printed on it. Tariff '4+1+1' is printed once against the block of three answers with no statement of which letter takes the 4, so orderedSplit with all rows null: the first correct identification scores 4 and each further one 1. Q7(b) = 10 = 6 here + 4 for (b)(ii)."
+ },
+ {
+  "id": "agsci-2022-ol-q8a",
+  "topicId": "agsci-1-2",
+  "conceptId": "microbiology-apparatus-identification",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2022 OL Q8(a)",
+  "questionText": "Identify each piece of equipment A and B above.",
+  "stem": "Question 8 of Section A. A student was asked to carry out an investigation to isolate and grow bacteria from clover root nodules, and the two photographs show equipment the student may use. The later parts ask for a prediction, why the clover roots are washed in disinfectant first, and which bacterium in the nodules fixes nitrogen.",
+  "figureKey": "agricultural-science-2022-OL-paper-p11-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "The left-hand photograph: a long thin twisted-wire instrument with a plain handle at one end and a small closed circle of wire at the tip.",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "The right-hand photograph: shallow round clear plastic dishes with straight sides and a loose overlapping lid, shown empty.",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 + 2"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A = Inoculating loop",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "B = Petri dish or agar plate",
+    "marks": 2
+   }
+  ],
+  "notes": "Bound to the p11-i0 crop, opened and checked: it carries the Q8 stem, both equipment photographs with bold A and B above them, and the (a) answer boxes. Two separate mark digits of 2 in the scheme, so a fixed tariff summing to 4; Q8 = 10 = 4 here + 1 + 2 + 3 for (b), (c) and (d), all three already carded."
+ },
+ {
+  "id": "agsci-2022-ol-q16ci",
+  "topicId": "agsci-3-2",
+  "conceptId": "farm-plant-identification",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2022 OL Q16(c)(i)",
+  "questionText": "Identify each of the plants A and B.",
+  "stem": "Question 16 part (c) of Section B — chosen instead of part (d). The pictures are of common plants found growing on Irish farms. Part (ii) then asks for one impact plant A has on farming or the environment, so the identification here decides what you can write there.",
+  "figureKey": "agricultural-science-2022-OL-paper-p31-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "The left-hand photograph: a single dense, rounded, dome-shaped head made up of dozens of small bright yellow daisy-like flowers, standing against dark green foliage.",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "The right-hand photograph: one upright leafless stalk rising out of grass, topped by a short dark brown-black cylindrical flower head ringed with a collar of tiny cream-white stamens.",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4+2"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A = Ragwort",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "B = Plantain or Ribwort",
+    "marks": null
+   }
+  ],
+  "notes": "Bound to the p31-i0 crop, opened and checked: it carries the (c) stem line, both plant photographs with bold A and B beneath them, and the (i) answer boxes. (p31-i1 is the same plate in a slightly taller window and is deliberately not used so the near-duplicate crops are never both bound.) The scheme prints '4+2' once, against A, with no statement of which plant takes the 4, so orderedSplit with both rows null. Q16(c) = 8 = 6 here + 2 for (c)(ii)."
+ },
+ {
+  "id": "agsci-2022-ol-q16cii",
+  "topicId": "agsci-3-3-2",
+  "conceptId": "ragwort-impact-on-farming",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2022 OL Q16(c)(ii)",
+  "questionText": "State one impact plant A has on farming or the environment.",
+  "stem": "Question 16 part (c)(ii), following the plant plate in (c)(i): plant A is the yellow-flowered plant on the left of the pair, plant B the one on the right. One impact only is asked for and it is worth 2 marks, so a second impact adds nothing — and a wrong one written alongside a right one can cancel it.",
+  "figureKey": "agricultural-science-2022-OL-paper-p31-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "The left-hand photograph: a dense rounded dome of many small bright yellow daisy-like flowers against dark green foliage. This is the plant this part asks about.",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "The right-hand photograph: an upright leafless stalk topped by a short dark cylindrical head ringed with cream-white stamens. Printed on the same plate but not asked about here.",
+    "askedInThisQuestion": false
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Noxious plant (harmful to animals)",
+    "marks": 2,
+    "accepts": [
+     "competes with crop",
+     "supports many species of wildlife (biodiversity)"
+    ],
+    "contextNote": "One 2-mark point with three accepted wordings. Note the scheme accepts a POSITIVE impact as well as a negative one — supporting wildlife scores exactly the same as poisoning stock."
+   }
+  ],
+  "notes": "Bound to the same p31-i0 plate as q16ci, because the answer depends entirely on which plant A is. The scheme prints one 2-mark line whose solidus separates three alternatives for the same point, so a single row with the other two in accepts rather than three rows inventing three marks. The third alternative is quoted in full in accepts even though the typeset mark digit splits it across two scheme lines ('supports many 2' / 'species of wildlife (biodiversity)') — accepts are not traced by the build, and the row's own verbatim is a contiguous span."
+ },
+ {
+  "id": "agsci-2022-ol-q16di",
+  "topicId": "agsci-3-2",
+  "conceptId": "farm-plant-identification",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2022 OL Q16(d)(i)",
+  "questionText": "Identify each of the following plants commonly found on Irish farms.",
+  "stem": "Question 16 part (d) of Section B — the alternative to part (c). Two photographs of plants commonly found on Irish farms are printed side by side, with the answer boxes lettered C (left) and D (right). Part (ii) then asks for one use for plant D.",
+  "figureKey": "agricultural-science-2022-OL-paper-p31-i2",
+  "labelKey": [
+   {
+    "letter": "C",
+    "meaning": "The left-hand photograph: a coarse plant in rough grass carrying several globular heads covered in spiny grey-green bracts, one open into a magenta-purple tuft and one withered brown, with prickly leaves.",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "D",
+    "meaning": "The right-hand photograph: a ripe golden cereal against a blue sky, its seeds hanging singly on fine drooping stalks in a loose open head rather than packed onto a spike.",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4+2"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "C = Thistle",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "D = Oats (wild)",
+    "contextNote": "'Wild' is bracketed, so 'oats' alone scores. The loose drooping head is what separates oats from wheat or barley, whose seeds sit tight on a spike.",
+    "marks": null
+   }
+  ],
+  "notes": "Bound to the p31-i2 crop, opened and checked: it carries the 'Or', the (d)(i) instruction, both photographs, the lettered C and D answer boxes and the (d)(ii) instruction. (p31-i3 is the same plate in a near-identical window and is deliberately not used.) '4+2' is printed once, against C, without saying which plant takes the 4, so orderedSplit with both rows null. Q16(d) = 8 = 6 here + 2 for (d)(ii)."
+ },
+ {
+  "id": "agsci-2022-ol-q16dii",
+  "topicId": "agsci-3-3-3",
+  "conceptId": "oats-crop-uses",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2022 OL Q16(d)(ii)",
+  "questionText": "State one use for plant D.",
+  "stem": "Question 16 part (d)(ii), following the plant plate in (d)(i): plant C is the spiny purple-headed plant on the left, plant D the ripe golden cereal on the right. One use only is asked for and it is worth 2 marks.",
+  "figureKey": "agricultural-science-2022-OL-paper-p31-i2",
+  "labelKey": [
+   {
+    "letter": "C",
+    "meaning": "The left-hand photograph: spiny grey-green globular heads, one open into a magenta-purple tuft, with prickly leaves. Printed on the same plate but not asked about here.",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "D",
+    "meaning": "The right-hand photograph: a ripe golden cereal with its seeds hanging singly on fine drooping stalks in a loose open head. This is the plant this part asks about.",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Animal feed",
+    "marks": 2,
+    "accepts": [
+     "human consumption"
+    ],
+    "contextNote": "One 2-mark point with two accepted wordings — feeding stock and feeding people are the same mark here, not two."
+   }
+  ],
+  "notes": "Bound to the same p31-i2 plate as q16di: the use asked for is the use of the plant you identified as D. One scheme line, one solidus, one 2-mark point — so one row with the alternative in accepts. Filed under 3.3.3 because it is about what the harvested cereal is used for rather than how it is identified; a taxonomy reviewer could reasonably move it to 3.2 alongside q16di."
+ },
+ {
+  "id": "agsci-2022-ol-q17bii",
+  "topicId": "agsci-1-3",
+  "conceptId": "bovine-nitrogen-farm-total",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2022 OL Q17(b)(ii)",
+  "questionText": "Calculate the total bovine nitrogen (figure B) for all animals on John's farm for 2020-21.",
+  "stem": "Question 17 part (b)(ii), from the same table as (b)(i). The right-hand column, 'Bovine nitrogen produced on John's farm', reads: suckler cows 2990 kg; cattle 0-1 year 1056 kg; cattle 1-2 year A, which you worked out in part (i) as 2280 kg; bull 1-2 year 57 kg; bull over 2 years 65 kg. Figure B is the bottom line of that column, 'Total bovine nitrogen produced on John's farm'. Show your calculation in the box.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 + 3"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "2990 + 1056 + 2280 + 57 + 65",
+    "marks": 3,
+    "contextNote": "All five livestock rows, including the 2280 you calculated in part (i). Leaving out the two single bulls is the common way to lose this."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "= 6448 (kg)",
+    "marks": 3,
+    "contextNote": "The scheme adds: '(If a candidate gives 6448 (kg) without showing any calculations they may be awarded 6m)'."
+   }
+  ],
+  "notes": "NO FIGURE, DELIBERATELY — same reasoning as q17bi: the stimulus is a typeset data table with no crop among this card's candidates, so the five addends are carried in the stem and figureKey is ''. Two mark digits of 3, so a fixed tariff summing to 6. Q17 = 50 = 18 for (a) + 8 + 6 + 6 + 6 for (b)(i)-(iv) + 6 for (c)."
+ },
+ {
+  "id": "agsci-2022-ol-q18aii",
+  "topicId": "agsci-1-3",
+  "conceptId": "reading-highest-yield-from-a-variety-table",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2022 OL Q18(a)(ii)",
+  "questionText": "Identify which variety of perennial ryegrass produces the highest yield.",
+  "stem": "Question 18 part (a) of Section B. The Department of Agriculture, Food and the Marine (DAFM) produce a recommended list of perennial ryegrass seed varieties annually, and the paper prints two of them for you to analyse. Part (a)(i) asks for three of the physical traits the table assesses; this part sends you to one specific column of it.",
+  "figureKey": "agricultural-science-2022-OL-paper-p35-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Moyola (105 ton DM/ha)",
+    "marks": 5,
+    "contextNote": "Read the Total Yield column: Moyola 105, Genesis 103. Do not be pulled to Genesis by its bigger Spring Growth figure (118 against 109) — that is a different column. The scheme writes the unit as 'ton DM/ha'; the table heading is t DM/ha."
+   }
+  ],
+  "notes": "Bound to the p35-i0 crop, opened and checked: it carries the Q18(a) stem, the DAFM logo and the full six-column variety table with both varieties' figures — Moyola 11 May, 105, 6.4, 109, 107, 100 and Genesis 12 May, 103, 6.7, 118, 102, 99.7. No letters on the crop, so labelKey is empty and this rides as a plain question card carrying a figure. One mark digit of 5 in the scheme, and 5 is what the paper allots. Filed under 1.3 (Evaluating evidence) rather than 3.3.1 because the whole task is reading a data table, matching agsci-2025-hl-q17cii; the sibling q18ai, which lists the traits from memory, stays at 3.3.1."
+ },
+ {
+  "id": "agsci-2022-ol-q18aiii",
+  "topicId": "agsci-1-3",
+  "conceptId": "reading-autumn-growth-from-a-variety-table",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2022 OL Q18(a)(iii)",
+  "questionText": "Identify which variety would produce more grass in autumn.",
+  "stem": "Question 18 part (a)(iii), from the same DAFM recommended-list table as (a)(i) and (a)(ii). The table has six columns of data — Heading Date, Total Yield, Ground Cover, Spring Growth, Autumn Growth and % Dry Matter Digestibility — and this part names the season, which names the column.",
+  "figureKey": "agricultural-science-2022-OL-paper-p35-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Moyola (107 ton DM/ha)",
+    "marks": 5,
+    "contextNote": "Read the Autumn Growth column: Moyola 107, Genesis 102. The 105 in the scheme's answer to (a)(ii) came from Total Yield — quoting that figure here shows you read the wrong column, even though the variety happens to be the same one."
+   }
+  ],
+  "notes": "Bound to the same p35-i0 crop as q18aii, since it is the same table. One mark digit of 5 in the scheme; Q18 = 50 = 12 + 5 + 5 for (a), 6 + 2 for (b) and 12 + 4 + 4 for (c). The trap this card exists to teach is column confusion: both answers are 'Moyola', but only one of the two figures is right for each part, and the scheme prints the figure alongside the variety."
+ },
+ {
+  "id": "agsci-2023-hl-q1ai",
+  "topicId": "agsci-4-2",
+  "conceptId": "cattle-breed-identification",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2023 HL Q1(a)(i)",
+  "questionText": "Identify each of the following breeds of animals.",
+  "stem": "Question 1. Answer either (a) or (b). This is option (a): three colour photographs of cattle side by side, lettered A, B and C beneath, over an 'A: / B: / C:' answer table. The rest of option (a) then works off breed C — '(ii) Breed C is a dual-purpose breed' — and asks about buying a purebred bull.",
+  "figureKey": "agricultural-science-2023-HL-paper-p03-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Left photograph — the heavily muscled bull with a roan red-and-white coat, broad white patches over the shoulder and flank, a dark red head and short horns, in front of a stone wall (Shorthorn)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Centre photograph — the heavily muscled black cow with irregular white patches over the back and flank and a white band across the face (Belgian Blue)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Right photograph — the tan/golden bull with a white face, white legs and a white tail switch (Simmental)",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A — Short horn",
+    "marks": 2,
+    "contextNote": "This scheme's own worked example is a breed-identification question: a surplus WRONG breed written beside a correct one cancels the correct answer, so writing two names in one box costs the mark rather than hedging it."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B — Belgian Blue",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C — Simmental",
+    "marks": 2
+   }
+  ],
+  "notes": "Tariff 3(2) = three breeds at 2 marks each = 6, and Q1(a) reconciles as (i) 6 + (ii) 2 + (iii) 2 = 10. Crop opened and checked letter by letter before binding: A is the roan, short-horned bull, B the double-muscled black-and-white cow, C the tan-and-white bull — the same left-to-right order the scheme answers in. All three letters are asked about, so the 'also on the diagram' panel stays empty."
+ },
+ {
+  "id": "agsci-2023-hl-q1bi",
+  "topicId": "agsci-4-2",
+  "conceptId": "cattle-and-sheep-breed-identification",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2023 HL Q1(b)(i)",
+  "questionText": "Identify each of the following breeds of animals.",
+  "stem": "Question 1. Answer either (a) or (b). This is option (b): three colour photographs lettered D, E and F beneath, over a 'D: / E: / F:' answer table. One is a dairy cow and two are sheep. Option (b) then moves on to the 'Fleckvieh Cattle' article and asks which Irish cattle industry that breed suits.",
+  "figureKey": "agricultural-science-2023-HL-paper-p04-i0",
+  "labelKey": [
+   {
+    "letter": "D",
+    "meaning": "Left photograph — the small fawn/light-brown cow with a dark muzzle ringed by a pale cream band, a dark tail switch and a visible udder, standing on grass beside a road (Jersey)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "E",
+    "meaning": "Centre photograph — the three sheep with dense white fleece and completely black faces, ears and legs (Suffolk)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "F",
+    "meaning": "Right photograph — the blocky, heavily muscled sheep with a bare white face, short white ears and white legs (Texel)",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "D — Jersey",
+    "marks": 2,
+    "contextNote": "This scheme's own worked example is a breed-identification question: a surplus WRONG breed written beside a correct one cancels the correct answer, so writing two names in one box costs the mark rather than hedging it."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "E — Suffolk",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "F — Texel",
+    "marks": 2
+   }
+  ],
+  "notes": "Tariff 3(2) = three breeds at 2 marks each = 6; Q1(b) reconciles as (i) 6 + (ii) 2 + 2 = 10. Crop opened before binding: D is the fawn dairy cow, E the black-faced sheep, F the white-faced meat sheep — the same left-to-right order the scheme answers in. Two of the three are sheep, which is what makes the question harder than it looks: it is titled 'breeds of animals', not 'breeds of cattle'."
+ },
+ {
+  "id": "agsci-2023-hl-q2b",
+  "topicId": "agsci-3-2",
+  "conceptId": "weed-identification",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2023 HL Q2(b)",
+  "questionText": "Identify any two of the weeds that can be found in Irish fields using the list below.",
+  "stem": "Question 2 opens with a five-panel diagram of the growth cycle of barley, which part (a) uses. Part (b) prints a word bank of three names — Chickweed, Charlock, Shepard's Purse (the paper's own spelling) — above three close-up photographs of flowering weeds, with an empty answer cell under each photograph. The photographs are not lettered: you write a name under each one, and only two of the three are needed.",
+  "figureKey": "agricultural-science-2023-HL-paper-p05-i2",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "answer": 2,
+   "ofParts": 3,
+   "perPart": 2,
+   "notation": "2(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Left photograph — Shepherd’s purse",
+    "marks": 2,
+    "contextNote": "The tall stalk carrying small four-petalled white flowers with flat, heart-shaped seed pods spreading below them. The paper's word bank spells it 'Shepard's Purse'; the scheme spells it 'Shepherd's purse'."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Centre photograph — Chickweed",
+    "marks": 2,
+    "contextNote": "The low, sprawling plant with broad oval pointed leaves and small white star-shaped flowers whose petals are deeply split."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Right photograph — Charlock",
+    "marks": 2,
+    "contextNote": "The bright yellow four-petalled flowers on a branched stem with coarse, toothed green leaves."
+   }
+  ],
+  "notes": "Tariff 2(2) = any two at 2 marks each = 4, and Q2 reconciles as (a) 2(3) = 6 plus this 4. bestNofParts rather than fixed because all three photographs are shown and only two can be claimed. The scheme prints the answer as one row — 'Shepherd’s purse Chickweed Charlock' — in the same left-to-right order as the three answer cells under the photographs, which is how each row is anchored; the crop was opened and each plant checked against that order (pods = shepherd's purse, oval leaves and split white petals = chickweed, yellow crucifer = charlock)."
+ },
+ {
+  "id": "agsci-2023-hl-q10ai",
+  "topicId": "agsci-4-1",
+  "conceptId": "monogastric-digestive-system-labelled",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2023 HL Q10(a)(i)",
+  "questionText": "Label the diagram below of the monogastric digestive system.",
+  "stem": "Question 10. Answer either (a) or (b). This is option (a): a cartoon side view of a pig, facing left, with its digestive tract drawn inside the body outline and three thick pale-blue arrows lettered A, B and C pointing into it, over an 'A: / B: / C:' answer table. Part (ii) then asks about the role of microorganisms in the same system.",
+  "figureKey": "agricultural-science-2023-HL-paper-p14-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Arrow from the upper left into the large solid dark red organ sitting behind the chest (liver)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Arrow from above into the pale cream sac immediately behind and to the right of the red organ, where the oesophagus ends (stomach)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Arrow from the lower right into the long narrow coiled tube filling the hindquarters (small intestine)",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A — Liver",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B — Stomach",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C — Small intestine",
+    "marks": 2
+   }
+  ],
+  "notes": "Tariff 3(2) = three labels at 2 marks each = 6, and Q10(a) reconciles as (i) 6 + (ii) 4 = 10. Crop opened before binding and each arrow traced to the organ it lands on: A on the solid red organ, B on the pale sac at the end of the oesophagus, C on the coiled tube. A labelling question is exactly the card type that must never ship without its diagram."
+ },
+ {
+  "id": "agsci-2023-hl-q13bi",
+  "topicId": "agsci-2-2-2",
+  "conceptId": "soil-water-content-levels",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2023 HL Q13(b)(i)",
+  "questionText": "Identify the soil water content level for each diagram using the words in the box below.",
+  "stem": "Question 13. Answer both (a) and (b) with either (c) or (d). Part (b) prints three square schematics of a soil sample side by side under a blue banner carrying the letters A, B and C, with a word bank above them — Permanent wilting point, Field capacity, Saturation — and an empty answer cell under each schematic. The paper states the colour code: brown represents soil particles, blue represents water and white represents air spaces. Part (ii) then asks for the implications for a farmer of any two of the three states.",
+  "figureKey": "agricultural-science-2023-HL-paper-p21-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Left schematic — blue water fills every gap between the brown particles and almost no white air space is left (saturation)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Centre schematic — only a thin blue film clings around each particle and most of the pore space is white air (permanent wilting point)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Right schematic — blue water holds in the narrow pores and around the particles while the wider pores are white air (field capacity)",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3(3)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A — Saturation",
+    "marks": 3,
+    "contextNote": "Order the three by how much blue is left, not by where they sit on the page: most water and no air = saturation, least water = permanent wilting point, and the middle one is field capacity."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B — Permanent wilting point",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C — Field Capacity",
+    "marks": 3
+   }
+  ],
+  "notes": "Tariff 3(3) = three at 3 marks each = 9. Q13 reconciles as (a)(i) 14 + (a)(ii) 12 + (b)(i) 9 + (b)(ii) 3 + (c) or (d) 12 = 50. The word bank prints the three terms in a DIFFERENT order from the answer (permanent wilting point, field capacity, saturation), so the card is useless without the crop — it was opened and each panel checked against the water/air ratio it draws before binding."
+ },
+ {
+  "id": "agsci-2023-hl-q15ci",
+  "topicId": "agsci-1-3",
+  "conceptId": "soil-ph-with-least-n2o-emissions",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2023 HL Q15(c)(i)",
+  "questionText": "State the soil pH that produces the least amount of N20 emissions.",
+  "stem": "Question 15. A secondary school installed a new garden and polytunnel and the agricultural science class investigated the donated topsoil. Part (c) says 'Analyse the graph showing the effect soil pH has on nitrous oxide (N20) emissions and answer the questions which follow' and prints a bar chart titled 'Effect of soil pH on nitrous oxide (N20) emissions': cumulative N20 emissions in g N20/ha/year up the vertical axis, scaled 0 to 7000 in thousands, against four soil pH values along the bottom — 5.1, 5.4, 6.2 and 6.9. (The paper and the scheme both print nitrous oxide as 'N20'.)",
+  "figureKey": "agricultural-science-2023-HL-paper-p28-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "gate",
+    "verbatim": "6.9",
+    "marks": 6,
+    "contextNote": "Asterisked in the scheme — printed as '*6.9'. Only that value scores, and a second value written beside it cancels this row. It is the shortest bar: emissions fall steadily as pH rises, from about 6500 g/ha/year at pH 5.1 to about 4000 at pH 6.9. The question asks for the pH, not the emissions figure."
+   }
+  ],
+  "notes": "6 marks on one asterisked value. Q15 reconciles as (a) 12 + (b) 6 + 3 + 7 + (c)(i) 6 + (c)(ii) 8 = 42 with (d) 8 = 50. Figure bound because the four pH values exist only on the chart's horizontal axis; the crop was opened and the bar heights read before writing the note."
+ },
+ {
+  "id": "agsci-2023-hl-q16ai",
+  "topicId": "agsci-1-3",
+  "conceptId": "main-source-of-farm-carbon-emissions",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2023 HL Q16(a)(i)",
+  "questionText": "Identify the main source of carbon emissions on the farm.",
+  "stem": "Question 16. Answer both (a) and (b) with either (c) or (d). As part of the governments' climate action plan targets, agriculture has to reduce its greenhouse gas emissions by 25% by 2030. Anna and Lucy examined the percentage share of the carbon emissions from their beef enterprise, which they received through their Bord Bia farmer feedback report, and the graph highlights where the emissions are coming from on their farm. It is a grouped bar chart, 'Percentage Share of Farm Carbon Emissions': percentage share (%) up the vertical axis, scaled 0 to 50, against four sources — Animal digestion, Manure usage, Fertiliser used, Forage / Feed — with three bars in each group: current farm assessment (2021), previous farm assessment (2019) and national average. (Adapted from Teagasc, 2022)",
+  "figureKey": "agricultural-science-2023-HL-paper-p30-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "gate",
+    "verbatim": "Animal digestion",
+    "marks": 5,
+    "contextNote": "Asterisked in the scheme — printed as '*Animal digestion'; only that term scores. It is the tallest group on the chart, at roughly 38% of the farm's emissions in both the 2021 and the 2019 assessment, against about 20% for manure and 16-17% for the other two."
+   }
+  ],
+  "notes": "5 marks on one asterisked term. Q16 reconciles as (a) 5 + 6 + 6, (b) 12 + 6, and (c) or (d) 15 = 50. Figure bound because nothing in the paper's text names the sources or their sizes — the ranking exists only in the bars, which were read off the opened crop."
+ },
+ {
+  "id": "agsci-2023-hl-q16aiii",
+  "topicId": "agsci-1-3",
+  "conceptId": "farm-carbon-emissions-trend",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2023 HL Q16(a)(iii)",
+  "questionText": "Comment on the overall carbon emissions on the farm since Anna and Lucy joined the scheme and justify your answer.",
+  "stem": "Question 16, part (a), third question on the same grouped bar chart: 'Percentage Share of Farm Carbon Emissions', with three bars for each of Animal digestion, Manure usage, Fertiliser used and Forage / Feed — current farm assessment (2021), previous farm assessment (2019) and national average. The two farm bars are what 'since Anna and Lucy joined the scheme' means: 2019 was the previous assessment, 2021 the current one.",
+  "figureKey": "agricultural-science-2023-HL-paper-p30-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2(3)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Comment — Since Anna and Lucy joined the scheme, their carbon emissions have remained fairly constant",
+    "marks": 3,
+    "contextNote": "The 2021 bar sits level with the 2019 bar in all four groups, so the honest comment is 'no real change' — not 'improved'. A comment with no justification earns half the marks here."
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "Justify — No increase in emissions from any source",
+    "marks": 3,
+    "accepts": [
+     "farm remains below national average in animal digestion and manure usage",
+     "farm emissions is still slightly higher than national average in fertiliser usage and forage or feed",
+     "correct use of percentages from graph"
+    ],
+    "contextNote": "Any ONE of these justifications earns the 3 marks, and the scheme credits quoting the percentages off the graph as a justification in its own right."
+   }
+  ],
+  "notes": "Tariff 2(3) = two parts at 3 marks each = 6: the comment, then one justification. The scheme lays the answer out under its own 'Comment' and 'Justify' headings, which is why the rows carry those labels. Figure bound because the whole answer is a bar-by-bar comparison of the 2019 and 2021 series against the national average."
+ },
+ {
+  "id": "agsci-2023-hl-q17biii",
+  "topicId": "agsci-3-2",
+  "conceptId": "multi-species-sward-species",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2023 HL Q17(b)(iii)",
+  "questionText": "Identify any two of the plant species commonly found in Irish multi species seed mixtures.",
+  "stem": "Question 17. Mark is reseeding 20% of his 150 hectare dairy and beef farm and researching which sward composition suits his soil type and enterprise. Part (b) is about the seed mixture; (b)(iii) prints three colour close-up photographs of plants side by side, each headed with a bold capital letter — A, B and C — over an empty three-cell answer row. Only two of the three are needed.",
+  "figureKey": "agricultural-science-2023-HL-paper-p36-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Left photograph — a slender arching grass flowering head, straw-green fading to buff, with flattened spikelets set alternately edge-on along the stem (perennial ryegrass)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Centre photograph — leafless stalks each topped by a short dark cylindrical seed head ringed with a collar of white anthers (ribwort plantain)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Right photograph — bright blue, many-rayed daisy-like flowers on wiry branched stems (chicory)",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "answer": 2,
+   "ofParts": 3,
+   "perPart": 2,
+   "notation": "2(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "A = Perennial ryegrass or PRG",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B = (Ribwort) plantain",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C = Chicory",
+    "marks": 2
+   }
+  ],
+  "notes": "Tariff 2(2) = any two at 2 marks each = 4, so bestNofParts: three photographs shown, two claimable. Q17 reconciles as (a) 16 + 8, (b) 12 + 4 + 4, (c) 6 = 50. The scheme uses '=' between the letter and the name, so the rows keep that form. Crop opened before binding and each photograph checked: the seed head with alternate flattened spikelets is ryegrass, the dark heads ringed with white anthers are ribwort plantain, the blue rayed flowers are chicory."
+ },
+ {
+  "id": "agsci-2023-ol-q1a",
+  "topicId": "agsci-1-2",
+  "conceptId": "soil-ph-test-equipment",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2023 OL Q1(a)",
+  "questionText": "Identify any two pieces of equipment labelled A, B or C required for this investigation.",
+  "stem": "Question 1, part (a). An agricultural science student wanted to test the pH of a sample of soil before deciding what crops to sow. The paper draws the whole bench of apparatus. Two items are already named in words on the drawing — the pH probe (its display reading 6.5) and the Universal Indicator — and three more are picked out by blue arrows lettered A, B and C. Only the lettered three are claimable, and the paper prints an answer line for each of A, B and C even though any two score.",
+  "figureKey": "agricultural-science-2023-OL-paper-p03-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "pH paper or (universal) indicator paper — the yellow/orange test strip standing upright in a small beaker of pale filtrate, its submerged tip turned green",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Graduated cylinder — the tall measuring cylinder with a filter funnel of dark soil sitting in its mouth",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Electronic or mass balance — the flat balance with a soil sample on the pan, its display reading 100.00 g",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2(3)",
+   "answer": 2,
+   "ofParts": 3,
+   "perPart": 3
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A — pH paper or (universal) indicator paper",
+    "marks": 3,
+    "contextNote": "The scheme's \"or\" here offers two names for one item, not two marking points — pH paper and universal indicator paper are the same strip. A arrows the yellow strip in the beaker of soil filtrate whose submerged tip has gone green."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B — Graduated cylinder",
+    "marks": 3,
+    "contextNote": "B arrows the tall graduated tube with the filter funnel of soil resting in its mouth — it is catching the filtrate. This point is not asterisked, so the SEC's general synonym rule applies to how the apparatus is named."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C — Electronic or mass balance",
+    "marks": 3,
+    "contextNote": "Again one item with two names, not two points. C arrows the balance under the soil sample, reading 100.00 g — it is how the fixed mass of soil is weighed out before water is added."
+   }
+  ],
+  "notes": "Bound to agricultural-science-2023-OL-paper-p03-i0, which I opened before writing: it is the Question 1 bench drawing and it carries this part's own A:/B:/C: answer table underneath, so it is unambiguously this question's figure. Verified on the image: blue arrow A → the upright yellow/orange test strip in a beaker of pale liquid with a green submerged tip; arrow B → the tall graduated cylinder with a filter funnel of dark soil in its mouth; arrow C → the electronic balance with a soil sample on the pan reading 100.00 g. The 'pH probe' (display 6.5) and 'Universal Indicator' (pipette in a beaker) are labelled in words, NOT lettered, so they are not claimable answers here. Tariff: the scheme prints '2(3)' against the block of three lettered answers — three options are displayed but only two can be claimed, at 3 marks each = 6, which is exactly what bestNofParts exists for. Each of the scheme's three lines uses a plain 'or' between two names of the same instrument; none of them is a solidus list of separate points."
+ },
+ {
+  "id": "agsci-2023-ol-q13b-i",
+  "topicId": "agsci-3-3-1",
+  "conceptId": "reseeding-method-grass-production",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2023 OL Q13(b)(i)",
+  "questionText": "Identify which sustainable reseeding method has the highest potential for grass production.",
+  "stem": "Question 13, part (b)(i), Section B. The paper's lead-in reads: traditional reseeding methods involve mainly ploughing the land; research into more sustainable practices (disc, one pass and direct drill) is shown in the graph; the sustainable practices are being compared to ploughing, which has a grass growth potential of 1. The column chart is titled 'Comparison of reseeding methods in terms of grass production potential', with 'Grass production relative to plough method' up the y-axis from 0 to 1.2 and 'Reseeding method' along the x-axis. Its four bars carry printed data labels: Plough 1, Disc 1, One pass 0.95, Direct drill 0.87. Source: (Adapted from Teagasc, 2022).",
+  "figureKey": "agricultural-science-2023-OL-paper-p21-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Disc",
+    "marks": 6,
+    "contextNote": "Plough also reads 1 on the graph, but plough is the traditional method the others are being measured against — the question asks which SUSTAINABLE method is highest, and the paper names those as disc, one pass and direct drill. Of those three, disc reads 1, one pass 0.95 and direct drill 0.87, so disc matches ploughing outright. Answering \"plough\" reads the tallest bar rather than the question."
+   }
+  ],
+  "notes": "Bound to agricultural-science-2023-OL-paper-p21-i0, opened before writing. Verified on the image: the (b) stem naming disc, one pass and direct drill as the sustainable practices and ploughing as the benchmark of 1; a four-bar column chart over a faded photograph of a grazing field, titled 'Comparison of reseeding methods in terms of grass production potential'; y-axis 'Grass production relative to plough method' gridded 0 to 1.2; legend Plough / Disc / One pass / Direct drill; printed data labels 1, 1, 0.95, 0.87 above the blue, green, pink and yellow bars in that order; caption '(Adapted from Teagasc, 2022)'; and beneath it the (i) and (ii) instruction lines, which ties the crop to this question. No letters appear on this crop, so labelKey is empty and the card rides as a plain question card carrying a figure. Tariff: the scheme prints a bare 6 against 'Disc'."
+ },
+ {
+  "id": "agsci-2024-ol-q2bii",
+  "topicId": "agsci-4-3-3",
+  "conceptId": "curved-race-cattle-movement",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2024 OL Q2(b)(ii)",
+  "questionText": "Briefly explain one reason why handling facility B is better for animal movement.",
+  "stem": "Answer either (a) or (b). The picture shows different cattle handling facilities. Analyse the pictures and answer the questions that follow. Part (i) asked for one use of cattle handling facilities on the farm; part (iii) then asks about the head gate arrowed in picture A.",
+  "figureKey": "agricultural-science-2024-OL-paper-p05-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "photograph of a straight galvanised steel race and crush built along a yard wall, with an orange callout arrow labelled \"Headgate\" pointing at the gate at the end of the race",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "plan-view drawing of a curved single file race leading out of a round crowd pen, with the curve marked \"Right way\", a straight dashed path marked \"Wrong way\", and the note \"Cattle see place to go\"",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(As the animals go around the curve) they think they are going back to where they came from",
+    "marks": 3,
+    "accepts": [
+     "the animals cannot see people and other moving objects (at the end of the chute)",
+     "it takes advantage of the natural circling behaviour of cattle",
+     "one-way system for ease of movement"
+    ],
+    "contextNote": "One reason only is asked for — any one of the scheme's four wordings scores the full 3 marks."
+   }
+  ],
+  "notes": "Flat 3-mark tariff, so fixed with a single row. The scheme's four solidus-separated reasons are alternative wordings of ONE 3-mark point, not four points, so they sit in accepts rather than in four rows. The displayed verbatim is the first alternative because it is the only one whose text does not run across the scheme's inline mark digit. Figure p05-i0 opened and checked before binding: picture A is the straight race photograph with the orange 'Headgate' callout, picture B is the curved-race plan view with 'Right way' / 'Wrong way' paths — the comparison the question turns on. Letter A is decoded but marked not-asked, since this part asks only about B."
+ },
+ {
+  "id": "agsci-2024-ol-q5a",
+  "topicId": "agsci-4-1",
+  "conceptId": "ruminant-stomach-compartments",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2024 OL Q5(a)",
+  "questionText": "Label any three parts of the diagram using the words in the list below.",
+  "stem": "The diagram shows the digestive system of a calf. Analyse the diagram and answer the questions that follow. The oesophagus is already named on the diagram and is not one of the four lettered parts; the word bank printed under the diagram is Omasum, Abomasum, Rumen, Reticulum. Part (b) then asks for the first feed required by the calf.",
+  "figureKey": "agricultural-science-2024-OL-paper-p07-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "the rounded orange sac in the middle of the abdomen, sitting between the yellow compartment in front of it and the brown one behind it",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "the large yellow sac filling the upper front of the abdomen, above where the blue oesophagus runs in",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "the large brown sac at the back of the abdomen, which also runs forward along the floor of the belly",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "D",
+    "meaning": "the smaller gold lobe at the lower front of the yellow area, just behind and below the point where the oesophagus enters",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3(2)",
+   "answer": 3,
+   "ofParts": 4,
+   "perPart": 2
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A — Omasum",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B — Rumen",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C — Abomasum",
+    "marks": 2
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "D — Reticulum",
+    "marks": 2
+   }
+  ],
+  "notes": "Tariff '3(2)' with a question that asks for ANY THREE of four lettered parts, so bestNofParts: four rows are displayed, three are claimable at 2 marks each = 6, which is what Q5 allots to part (a) (the other 4 marks are part (b)). Figure p07-i0 opened before writing: a cartoon calf in side view with four black leader arrows, and the letter-to-compartment mapping in the rows is the scheme's own (A Omasum, B Rumen, C Abomasum, D Reticulum) — the label key describes only where each arrow lands, so it does not pre-empt the answer. The abomasum being drawn as the largest compartment is correct for a CALF, which is what the paper says the diagram shows."
+ },
+ {
+  "id": "agsci-2024-ol-q6ai",
+  "topicId": "agsci-4-2",
+  "conceptId": "sheep-breed-identification",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2024 OL Q6(a)(i)",
+  "questionText": "Identify any three of the following breeds using the list below.",
+  "stem": "Answer either (a) or (b). The photographs below show some breeds of sheep found on Irish farms, with the word bank Texel, Suffolk, Charolais, Border Leicester printed above them. Only three of the four letters need to be named — and under the scheme's surplus-answer rule a wrong extra answer cancels a correct one. Part (ii) then asks for one reason why a named breed is suitable for sheep meat production.",
+  "figureKey": "agricultural-science-2024-OL-paper-p08-i1",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "top left — a stocky cream-coloured ram standing side-on in a grassy paddock with autumn trees behind, pale face and pale legs, wool right down over the body",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "top right — two white-faced sheep photographed head-on, with long upright ears and Roman (convex) noses, standing in a coastal field",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "bottom left — a short, heavily muscled ram held by a handler, with a bare white face and white legs and a very deep, blocky body",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "D",
+    "meaning": "bottom right — a white-fleeced sheep with a black head and black legs standing side-on in a dry paddock",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3(2)",
+   "answer": 3,
+   "ofParts": 4,
+   "perPart": 2
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A — Charolais",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B — Border Leicester",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C — Texel",
+    "marks": 2
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "D — Suffolk",
+    "marks": 2
+   }
+  ],
+  "notes": "Tariff '3(2)' against 'identify any three', so bestNofParts — four options displayed, three claimable at 2 each = 6, leaving 4 marks for part (a)(ii) out of the 10 for Q6. Figure p08-i1 opened before writing: the word bank plus the two-by-two photograph grid, all four letters legible and uncut. Letter-to-breed mapping is the scheme's. The scheme spells the breed 'Charolais' here and 'Charollais' in part (ii); this card reproduces the (i) spelling as printed."
+ },
+ {
+  "id": "agsci-2024-ol-q11bii",
+  "topicId": "agsci-4-3-2",
+  "conceptId": "choosing-a-cow-for-a-belgian-blue-cross",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2024 OL Q11(b)(ii)",
+  "questionText": "State with reason which cow A or B a farmer would choose to cross with the Belgian Blue bull shown in the picture above.",
+  "stem": "Answer either (a) or (b). The picture at the head of part (b) — not carried in this crop — shows the Belgian Blue beef breed: an extremely heavily muscled, double-muscled continental bull, white to pale roan in colour. Part (i) asked for two of its physical characteristics.",
+  "figureKey": "agricultural-science-2024-OL-paper-p15-i1",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "left — a fawn/tan cow grazing head-down, fine-boned and angular with a large well-filled udder and a pale tail switch",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "right — a large white-cream cow standing facing the camera, deep and thick through the shoulder and hindquarter with a broad frame",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Cow: B or Charolais",
+    "marks": 2,
+    "contextNote": "The scheme accepts either the letter or the breed name."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Big frame",
+    "marks": 2,
+    "accepts": [
+     "continental breed",
+     "wide pelvis"
+    ],
+    "contextNote": "Reason — any ONE of the scheme's three reasons scores the 2 marks. All three say the same thing: she is big enough to calve down to a double-muscled bull."
+   }
+  ],
+  "notes": "Tariff '2(2)' = the cow (2) plus the reason (2) = 4, fixed. Figure p15-i1 opened before binding and it carries the part (ii) instruction line and both lettered photographs; p15-i2 is a one-pixel-taller duplicate of the same crop and is left unbound so the two do not collide on hash. The bull photograph sits on the same page but in a separate crop (p15-i0), so what it shows is carried in the stem instead — the question's phrase 'shown in the picture above' would otherwise dangle. Reason row keeps the scheme's three solidus alternatives as accepts rather than as extra rows, which would inflate a 4-mark part to 8."
+ },
+ {
+  "id": "agsci-2024-ol-q14bii",
+  "topicId": "agsci-3-3-3",
+  "conceptId": "correct-grass-stage-for-silage",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2024 OL Q14(b)(ii)",
+  "questionText": "Briefly outline one reason for your choice in part (i).",
+  "stem": "Silage making is a very important aspect of farm life as it is an essential feedstuff for ruminant animals on farms. Part (b)(i) printed the two grass photographs below and asked which shows the correct stage of cutting the grass for silage. The marking points here are the ones credited for choosing photograph B; the scheme adds '(Allow opposite points for A)'.",
+  "figureKey": "agricultural-science-2024-OL-paper-p22-i1",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "left — a stemmy, pale sward that has run to seed, with many tall stems carrying open branched seed heads standing above the leaves",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "right — a dense, deep-green sward of broad leaf blades with no stems or seed heads showing",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Leafy grass",
+    "marks": 2,
+    "accepts": [
+     "no seed heads",
+     "more digestible"
+    ],
+    "contextNote": "One reason only — any ONE of the scheme's three scores the full 2 marks. A candidate who ticked A in part (i) scores by naming the opposite point (stemmy, seed heads out, less digestible)."
+   }
+  ],
+  "notes": "Flat 2-mark tariff, fixed, one row. The scheme's three solidus alternatives are one point stated three ways and live in accepts. Figure p22-i1 opened before binding: it carries the part (b)(i) instruction and both lettered close-ups, A headed out and B leafy — which is exactly what the reason turns on, so the card cannot stand without it. The same crop is bound by the (b)(iii) card, which is allowed because it is the same figure key. Part (b)(i) itself is skipped: its scheme entry is a bare tick with no answer text."
+ },
+ {
+  "id": "agsci-2024-ol-q14biii",
+  "topicId": "agsci-3-1",
+  "conceptId": "grass-growth-stages",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2024 OL Q14(b)(iii)",
+  "questionText": "Identify the growth stage of plant B by placing a tick (✓) in the correct box. [Inflorescence / Vegetative / Elongation]",
+  "stem": "Silage making is a very important aspect of farm life as it is an essential feedstuff for ruminant animals on farms. Part (b)(i) printed the two grass photographs below; this part asks about photograph B only. The three options are printed as text boxes on the paper and are reproduced in the question.",
+  "figureKey": "agricultural-science-2024-OL-paper-p22-i1",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "left — a stemmy, pale sward that has run to seed, with many tall stems carrying open branched seed heads standing above the leaves",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "right — a dense, deep-green sward of broad leaf blades with no stems or seed heads showing",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Vegetative",
+    "marks": 2,
+    "contextNote": "The box the scheme ticks. Photograph B is all leaf with no stem elongation and no seed head showing, so the sward is still vegetative."
+   }
+  ],
+  "notes": "Flat 2-mark tick-box. The three options are TEXT on the paper, so unlike (b)(i) this part has a real answer in the scheme ('Vegetative') and is fully cardable; the options are transcribed into questionText as printed. The figure is still needed because 'plant B' is a dangling reference without it — p22-i1 was opened and carries both lettered photographs. Letter A is decoded but marked not-asked, so the student still leaves with the whole figure read."
+ },
+ {
+  "id": "agsci-2024-ol-q15aii",
+  "topicId": "agsci-4-1",
+  "conceptId": "ewe-reproductive-system",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2024 OL Q15(a)(ii)",
+  "questionText": "Label the diagram of the ewe reproductive system using the list of words in the box below.",
+  "stem": "Answer both (a) and (b) with either (c) or (d). The breeding season is an important and busy time on sheep farms to ensure successful lamb production. Part (a)(i) asked about the management of the ewe at mating. All four lettered parts are to be labelled here, from the word bank Ovary, Uterus, Fallopian tube, Cervix.",
+  "figureKey": "agricultural-science-2024-OL-paper-p25-i1",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "arrow into the thick pink horn-shaped structure at the top left of the tract, the body and horns seen from the front",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "arrow to the fine coiled tube at the outer end of the left horn, just before the small pale round body",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "arrow to the small pale round body at the outer end of the right horn",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "D",
+    "meaning": "arrow to the narrow ridged neck on the midline, where the body of the tract narrows into the passage below it",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4(3)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A — Uterus",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B — Fallopian tube",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C — Ovary",
+    "marks": 3
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "D — Cervix",
+    "marks": 3
+   }
+  ],
+  "notes": "Tariff '4(3)' = four labels at 3 marks each = 12, and the question asks for all four (not 'any three'), so this is fixed, not bestNofParts — the rows sum exactly to the tariff. Figure p25-i1 opened before binding: the front-view illustration with four blue leader arrows and the word bank beside it, all four letters legible. Letter-to-part mapping is the scheme's own; the label key describes only where each arrow lands. Note the scheme heads this part 'the female reproductive system' while the paper prints 'the ewe reproductive system' — the paper's wording is used for questionText."
+ },
+ {
+  "id": "agsci-2024-ol-q15biv",
+  "topicId": "agsci-4-3-3",
+  "conceptId": "raddle-colour-sequence",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2024 OL Q15(b)(iv)",
+  "questionText": "Using the colours in the box below, list the colours in order of sequence used by the farmer during mating.",
+  "stem": "Answer both (a) and (b) with either (c) or (d). At mating the farmer straps a raddle on the ram to mark the ewes that have been served, and part (b)(iii) established that the colour is changed every 13–15 days so that any ewe repeating shows up. The answer table on the paper has three rows: 1st colour, 2nd colour, 3rd colour. The scheme accepts either the colour name or the letter of the tub.",
+  "figureKey": "agricultural-science-2024-OL-paper-p26-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "left — a 1 kg tub of pale green raddle powder",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "centre — a 1 kg tub of pale blue raddle powder",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "right — a 1 kg tub of pale yellow raddle powder",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 1 + 1"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1st colour — Yellow / C",
+    "contextNote": "The sequence runs lightest to darkest so that each new mark shows up over the one before it.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2nd colour — Green / A",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3rd colour — Blue / B",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints the tariff as '4 + 1 + 1' for a 6-mark part without saying which colour carries which value — under the scheme's own front matter the FIRST correct answer encountered takes the 4 — so this is orderedSplit and every row is marks: null. Putting 4/1/1 on specific rows would be a claim the scheme does not make. Figure p26-i0 opened before binding: three identical 1 kg raddle tubs headed A (green), B (blue), C (yellow), which is what makes the scheme's 'Yellow / C' pairing readable. The solidus in each row separates two wordings of one answer (the colour or its letter), not two marking points."
+ },
+ {
+  "id": "agsci-2024-ol-q18aiii",
+  "topicId": "agsci-4-2",
+  "conceptId": "dairy-breed-identification",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2024 OL Q18(a)(iii)",
+  "questionText": "Identify the breed of dairy cow shown in the picture below.",
+  "stem": "Answer both (a) and (b) with either (c) or (d). Calving is a very busy time on all beef and dairy farms, so it is important for farmers to be prepared in advance. Parts (a)(i) and (a)(ii) dealt with preparing for the calving season and with the practices carried out on the calf at birth.",
+  "figureKey": "agricultural-science-2024-OL-paper-p34-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(Holstein) Friesian",
+    "marks": 6,
+    "contextNote": "The brackets are the scheme's: 'Friesian' alone is enough, and 'Holstein Friesian' is equally acceptable."
+   }
+  ],
+  "notes": "Flat 6-mark tariff, one answer, fixed. Figure p34-i0 opened before binding: the part (iii) instruction line above a single photograph of a black-and-white cow grazing, lean and angular with a large udder — no letters on it, so the card carries a figure with an empty label key and stays a question card rather than a diagram card. Nothing in the photograph is cut."
+ },
+ {
+  "id": "agsci-2025-hl-q13di",
+  "topicId": "agsci-4-1",
+  "conceptId": "milk-let-down-hormone",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2025 HL Q13(d)(i)",
+  "questionText": "Identify the hormone labelled X responsible for milk let down.",
+  "stem": "Question 13, part (d) — answered instead of part (c). The paper prints: 'A hormone is responsible for milk let down in cows. Analyse the picture and answer the questions that follow.' The picture below is that picture. Part (ii), printed under the same picture, then asks for one trigger of milk let down.",
+  "figureKey": "agricultural-science-2025-HL-paper-p24-i0",
+  "labelKey": [
+   {
+    "letter": "X",
+    "meaning": "Oxytocin",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Oxytocin",
+    "marks": 5
+   }
+  ],
+  "notes": "Figure opened before writing (public/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-p24-i0.png): a cut-out side view of a black-and-white Holstein Friesian facing right, with a red pathway overlaid — a solid red dot high on the head behind the poll, a heavy red dashed line running down the neck to a point at the shoulder, then back horizontally along the underline, then down to a red arrowhead at the udder. A blue-outlined label box reading 'Hormone X' sits lower right with a solid red arrow pointing at the shoulder bend of that pathway. Parts (i) and (ii) with their blank answer boxes are printed beneath the picture on the same crop, so the student sees the question exactly as the paper set it. Scheme p.18 prints a single answer, 'Oxytocin', against the full 5 marks — one row, fixed tariff, no solidus and no alternatives to split. labelKey decodes X so the build's lettered-parts guard is satisfied; askedInThisQuestion is true because X is precisely what this part asks for, which also keeps the 'Also on the diagram' panel from printing the answer. The companion card agsci-2025-hl-q13dii (part (ii), milk let-down triggers) already exists and carries no figure, so this crop is bound exactly once in the subject deck."
+ },
+ {
+  "id": "agsci-2025-ol-q15b-iii",
+  "topicId": "agsci-4-1",
+  "conceptId": "milk-composition-components",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2025 OL Q15(b)(iii)",
+  "questionText": "Identify A and B in the chart above of the composition of milk.",
+  "stem": "Question 15, part (b). A north Clare dairy farm sells its value-added milk to local people through a milk vending machine, and to produce milk for human consumption it must be of the highest standard. The chart shows the typical composition of cow's milk. Its five sectors carry the values 3.40%, 4.00%, 87.5%, 4.20% and 0.90%; the legend names three of them — Protein, Lactose and Minerals — and leaves the other two lettered A and B. The paper's answer table has one column, Component, with a row for A and a row for B.",
+  "figureKey": "agricultural-science-2025-OL-paper-p25-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "The 4.00% sector, drawn in purple and pulled out from the pie — (butter) fat.",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "The large green 87.5% sector that forms the body of the pie — water.",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4+2"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: (Butter) fat",
+    "contextNote": "The bracketed word is context, not a requirement — \"fat\" scores.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: Water",
+    "marks": null
+   }
+  ],
+  "notes": "Figure opened and checked by eye: agricultural-science-2025-OL-paper-p25-i0.png is this part's own exploded pie, titled \"Average Milk Composition\", with the red bold B inside the 87.5% green sector and the white A on the 4.00% purple sector, the legend listing Protein, A, B, Lactose and Minerals, and the Component answer table underneath. The percentages extract as text but which value carries A and which carries B is only readable from the chart, so the crop is what makes the part answerable. Tariff: the scheme prints a single combined \"4+2\" against the A and B lines, so no per-row value is claimed — same treatment as sibling part (b)(ii), whose \"5+2\" was also modelled as an ordered split. Q15 reconciles as 13 (part a) + 12 + 7 + 6 (part b) + 12 (part c) = 50."
  }
 ]

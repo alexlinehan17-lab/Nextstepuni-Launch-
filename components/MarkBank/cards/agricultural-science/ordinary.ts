@@ -5406,4 +5406,914 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "alt", verbatim: "high in omega 3 or omega 6", marks: 2, accepts: ["Yellow (due to carotene in grass)","higher in Vitamin A or D or E or anti-oxidants","higher in CLA","richer flavour"], contextNote: "Your second correct characteristic, whichever it was, also scores 2. Note that 'higher in Vitamin A or D or E or anti-oxidants' is ONE point with four wordings — any one of them scores it, and naming two of them does not score twice." },
     ],
   } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q1b-i", topicId: "agsci-3-2", conceptId: "grassland-weed-identification",
+    section: "A", questionRef: "2021 OL Q1(b)(i)",
+    stem: "Question 1 offers a choice of (a) or (b); this is part (b). Four colour photographs of plants commonly found in grassland are printed in a two-by-two grid, each with a bold letter above it: A top left, B top right, C bottom left, D bottom right. The letters carry across to part (b)(ii), which asks for a method of killing plant B.",
+    questionText: "Identify each of the following plants commonly found in grassland.",
+    tariffModel: {"kind":"fixed","notation":"2 + 2 + 2 + 2"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A = Daisy", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "B = Dock leaf", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "C = Buttercup", marks: 2 },
+    { id: "r-4", kind: "point", verbatim: "D = Thistle", marks: 2 },
+    ],
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p04-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p04-i0.png",
+          "srcHash": "323752fe08e5cca3d3e003cf75c78d9c",
+          "alt": "Question 1 part (b)(i), headed Or and Identify each of the following plants commonly found in grassland. Four colour photographs are arranged in a two by two grid, each with a bold letter centred above it. A shows a dense grass sward thickly studded with many small flowers that have white petals and yellow centres, viewed from above. B shows a single plant growing in grass with a spreading rosette of large, long, broad green leaves whose midribs and veins are distinctly reddish, the surrounding ground reddish-brown. C is a close-up of one bright yellow glossy five-petalled flower with deeply divided, toothed dark green leaves above it against a dark background. D shows a flat ground-hugging rosette of grey-green, deeply cut, very spiny prickly leaves radiating from a central point in short grass. Below the photographs the top row of the answer grid begins with A: .",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "D"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"the top-left photograph — a dense grass sward studded with many small flowers with white petals and yellow centres: daisy","askedInThisQuestion":true},{"letter":"B","meaning":"the top-right photograph — a low rosette of broad, oval, red-veined leaves growing in rough grass: dock leaf","askedInThisQuestion":true},{"letter":"C","meaning":"the bottom-left photograph — a single glossy yellow five-petalled flower among deeply lobed green leaves: buttercup","askedInThisQuestion":true},{"letter":"D","meaning":"the bottom-right photograph — a flat rosette of spiny, blue-green, deeply cut leaves lying in grass: thistle","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q1b-ii", topicId: "agsci-3-3-2", conceptId: "grassland-weed-control",
+    section: "A", questionRef: "2021 OL Q1(b)(ii)",
+    stem: "Question 1 offers a choice of (a) or (b); this is part (b)(ii). Part (b)(i) printed four photographs of grassland plants lettered A to D and asked you to name them. Plant B is the one in the top-right photograph — the broad-leaved rosette growing in rough grass.",
+    questionText: "Describe one method used to kill plant B.",
+    tariffModel: {"kind":"fixed","notation":"2"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Spray (with herbicide or weed killer)", marks: 2, accepts: ["digging up or ploughing (to remove weeds)","crop rotation to disturb (break) weed cycle"], contextNote: "The solidi separate three wordings of ONE 2-mark point, not three marks. Only one method is asked for and it carries the whole 2." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p04-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p04-i0.png",
+          "srcHash": "323752fe08e5cca3d3e003cf75c78d9c",
+          "alt": "Question 1 part (b)(i), headed Or and Identify each of the following plants commonly found in grassland. Four colour photographs are arranged in a two by two grid, each with a bold letter centred above it. A shows a dense grass sward thickly studded with many small flowers that have white petals and yellow centres, viewed from above. B shows a single plant growing in grass with a spreading rosette of large, long, broad green leaves whose midribs and veins are distinctly reddish, the surrounding ground reddish-brown. C is a close-up of one bright yellow glossy five-petalled flower with deeply divided, toothed dark green leaves above it against a dark background. D shows a flat ground-hugging rosette of grey-green, deeply cut, very spiny prickly leaves radiating from a central point in short grass. Below the photographs the top row of the answer grid begins with A: .",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "D"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"the top-left photograph — a grass sward studded with small white, yellow-centred flowers: daisy","askedInThisQuestion":false},{"letter":"B","meaning":"the top-right photograph — a rosette of broad, oval, red-veined leaves: dock leaf. This is the plant this part asks you to kill.","askedInThisQuestion":true},{"letter":"C","meaning":"the bottom-left photograph — a yellow five-petalled flower among lobed leaves: buttercup","askedInThisQuestion":false},{"letter":"D","meaning":"the bottom-right photograph — a spiny, deeply cut rosette in grass: thistle","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q2a", topicId: "agsci-4-1", conceptId: "ruminant-stomach-parts",
+    section: "A", questionRef: "2021 OL Q2(a)",
+    stem: "Question 2 prints a diagram of part of the digestive system of a sheep, with a photograph of grazing ewes beside it. Three chambers are lettered A, B and C; the oesophagus, the reticulum and the small intestine are already named on the diagram itself. The word list printed under the diagram is: Omasum, Rumen, Abomasum — three words for three letters, so every word is used once. Part (b) then asks for two functions of the microorganisms in a ruminant's digestive system.",
+    questionText: "Identify the labelled parts A, B, C on the diagram using the correct word from the list.",
+    tariffModel: {"kind":"fixed","notation":"2 + 2 + 2"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A = Rumen", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "B = Abomasum", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "C = Omasum", marks: 2 },
+    ],
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p05-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p05-i0.png",
+          "srcHash": "1d96d3fb8a1de9de8e1cf59197d4569f",
+          "alt": "Question 2, headed The diagram shows part of the digestive system of a sheep. At the top right is a small colour photograph of four white-fleeced sheep grazing in a green pasture. Below is a large cartoon-style anatomical diagram of a ruminant stomach drawn in pink with red outlines, showing several interconnected sacs. Three parts are named in blue text with pointer arrows: Oesophagus, arrowed to the narrow tube entering from the upper left; Small Intestine, arrowed to the looped narrow tube emerging at the top centre; and Reticulum, arrowed to the small rounded sac on the far left. Three further parts are marked only with bold black letters and leader lines: A points from the right into the large rounded chamber occupying the right-hand side of the diagram; B points from below into the large lower chamber on the left of centre; and C points from the lower left into the medium-sized sac lying in the middle of the diagram behind the small intestine loop. Underneath the diagram is a pale green three-cell word bank reading Omasum, Rumen, Abomasum. Beneath that is part (a), Identify the labelled parts A, B, C on the diagram using the correct word from the list, and the answer grid rows A:, B:, C:.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"the arrow entering the large rounded chamber that fills the right-hand half of the diagram — the rumen, the biggest compartment","askedInThisQuestion":true},{"letter":"B","meaning":"the arrow pointing up into the chamber at the bottom centre of the diagram — the abomasum, the true stomach","askedInThisQuestion":true},{"letter":"C","meaning":"the leader pointing into the chamber in the middle of the diagram, above and to the left of B — the omasum","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q4a", topicId: "agsci-2-1", conceptId: "soil-profile-identification",
+    section: "A", questionRef: "2021 OL Q4(a)",
+    stem: "Question 4 prints two cutaway soil profiles side by side under a pale banner heading the left column A and the right column B. The left profile is drawn to 3 m, the right to 2 m. Inside each profile the horizons are bracketed A, B and C and annotated: on the left 'Humus, rich dark brown colour', 'Stony' and 'Parent rock'; on the right 'Pale grey, heavily leached', 'Darker brown, leached minerals' and 'Parent rock'. Parts (b) and (c) then ask for one use of soil A and two disadvantages of soil B.",
+    questionText: "Identify the two types of soils shown in profile diagrams A and B above.",
+    tariffModel: {"kind":"fixed","notation":"2 + 2"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A = Brown earth", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "B = Podzol", marks: 2 },
+    ],
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p07-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p07-i1.png",
+          "srcHash": "b6b27aacc91d00f3375fd6ebe6124608",
+          "alt": "The same Question 4 soil profile figure as p07-i0, but the crop starts higher so it includes the bold heading Question 4 above the line Diagrams A and B show the profiles of two common soil types in Ireland, and ends lower down at the first row of the answer grid. The pale green banner heads the left column A and the right column B. Profile A shows a dark chocolate-brown top horizon bracketed A labelled Humus, rich dark brown colour, an orange-brown stony middle horizon full of pale rounded stones bracketed B labelled Stony, and a grey-blue brickwork base bracketed C labelled Parent rock, with a 3 m depth bar. Profile B shows a plain pale grey top horizon bracketed A labelled Pale grey, heavily leached, a rust-orange middle horizon bracketed B labelled Darker brown, leached minerals, and the same grey-blue brickwork base bracketed C labelled Parent rock, with a 2 m depth bar. Part (a), Identify the two types of soils shown in profile diagrams A and B above, appears at the bottom with the answer row beginning A: sliced by the crop edge.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"the left-hand column — the soil the question calls A, a deep dark-brown profile over stony material: brown earth. (Inside each profile, A also brackets the top horizon: 'Humus, rich dark brown colour' on the left, 'Pale grey, heavily leached' on the right.)","askedInThisQuestion":true},{"letter":"B","meaning":"the right-hand column — the soil the question calls B, a pale leached surface over an orange-brown band of redeposited minerals: podzol. (Inside each profile, B also brackets the middle horizon: 'Stony' on the left, 'Darker brown, leached minerals' on the right.)","askedInThisQuestion":true},{"letter":"C","meaning":"the bottom bracket in both profiles, against the brick-patterned band — parent rock. C is not one of the soils the question asks you to name.","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q9a", topicId: "agsci-1-3", conceptId: "ranking-agricultural-emissions-from-chart",
+    section: "A", questionRef: "2021 OL Q9(a)",
+    stem: "Question 9 prints a doughnut chart of Ireland's greenhouse gas emissions in 2018, adapted from the Environmental Protection Agency (2020), and instructs: 'Analyse the chart and answer the question which follow.' Every sector on the chart carries its own percentage label, so the ranking is read off, not recalled. Parts (b) and (c) then ask for two sources of greenhouse gases from agriculture and for two ways of increasing biodiversity on a farm.",
+    questionText: "Where would you rank the greenhouse gas emissions from agriculture in 2018?",
+    tariffModel: {"kind":"fixed","notation":"2"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "1st (highest ranking) or most or top", marks: 2, contextNote: "The 'or's are three wordings of one answer, not three marks. A rank is wanted, not the percentage — but a student who writes '34%, the largest sector' has said the same thing and the examiner is directed to consider answers on their merits." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p12-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p12-i0.png",
+          "srcHash": "7532f34aece88facf89399c80fc414ab",
+          "alt": "Question 9 with its stimulus doughnut chart. The stem on the left reads: This chart shows the greenhouse gas emissions in 2018. Analyse the chart and answer the question which follow. The chart is a ring (doughnut) pie chart on a grey gradient background with the dark blue centre label Greenhouse Gas Emissions 2018. Each segment has a dark grey callout box with white text giving a sector name and its percentage, arranged clockwise: Agriculture 34% (the large pale blue segment on the right), F-gases 2%, Industrial processes 4%, Transport 20% (yellow segment at the bottom), Waste 1%, Energy industries 17% (green segment on the left), Residential 10% (mid blue), Manufacturing Combustion 8% (brown), Commercial Services 2%, and Public Services 2%. Beneath the chart in italics is the source line (Adapted from Environmental Protection Agency, 2020). Below that are part (a), Where would you rank the greenhouse gas emissions from agriculture in 2018?, with a blank answer box, and part (b), List two sources of greenhouse gases from agriculture, whose numbered answer box begins with 1.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q10a", topicId: "agsci-4-1", conceptId: "cow-reproductive-tract-ovary",
+    section: "A", questionRef: "2021 OL Q10(a)",
+    stem: "Question 10 prints a side-view line drawing of the reproductive system of a cow and says: 'Look at the diagram and answer the questions which follow.' One structure is picked out by a short red arrow labelled A; the bladder and the vulva are already named on the drawing. Parts (b), (c) and (d) go on to ask for A's function, the cow's gestation and oestrous cycle lengths, and where the insemination gun must reach.",
+    questionText: "Name the part labelled A on the diagram.",
+    tariffModel: {"kind":"fixed","notation":"2"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "gate", verbatim: "Ovary", marks: 2, contextNote: "Printed in the scheme as 'Ovary*'. The SEC asterisk means only this exact term scores — 'egg sac' or a description does not — and a surplus wrong name written alongside it cancels this mark." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p13-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p13-i0.png",
+          "srcHash": "d1b95294948f47d9cf490f13ac4850f6",
+          "alt": "Question 10 with a black-and-white line drawing of the reproductive tract of a cow, viewed from the side, drawn in outline with hatched shading. The stem reads: The following is the reproductive system of a cow. Look at the diagram and answer the questions which follow. Two parts are named in black text with thin pointer arrows: Vulva, arrowed from the upper right to the flared opening at the far right end of the tract, and Bladder, arrowed from below to the elongated oval organ lying underneath the tract towards the right. One further part is marked with a thick red horizontal arrow and a bold red capital A, sitting at the middle of the drawing and pointing left into the narrow constricted region where the tubular body of the tract meets the coiled and horned structures on the left of the diagram. Below the drawing are part (a), Name the part labelled A on the diagram, with a blank answer box; part (b), Outline the function of the part labelled A, with a two-row blank answer box; and part (c), State the gestation length and the oestrous cycle length (number of days) of a cow, with the pale green table header cell Number of days visible at the bottom.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"the red arrow left of centre, pointing to the small oval body at the end of the coiled uterine horn — the ovary","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q11a-i", topicId: "agsci-4-3-1", conceptId: "farmyard-structure-identification",
+    section: "A", questionRef: "2021 OL Q11(a)(i)",
+    stem: "Question 11 offers a choice of (a) or (b); this is part (a), introduced by 'The use of 3D plans are likely to become more common in the future development of new infrastructure of farms.' The figure is a three-dimensional aerial render of a dairy farmyard. Two structures are named on the render — the dairy cow collecting yard on the left and the cow cubicle house in the centre — and a red pointer coming in from the right-hand edge marks B. Parts (a)(ii) to (a)(iv) then ask for B's hazards, for a way the layout is economically sustainable, and for a labour-saving technology.",
+    questionText: "Identify the structure located at B.",
+    tariffModel: {"kind":"fixed","notation":"2"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Silage (pit)", marks: 2, contextNote: "'Pit' is bracketed in the scheme, so 'silage' on its own scores; 'silage clamp' says the same thing." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p14-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p14-i0.png",
+          "srcHash": "d0c0b305865b9596fe6547b7ffdd2e2c",
+          "alt": "Question 11 part (a), introduced by The use of 3D plans are likely to become more common in the future development of new infrastructure of farms. The figure is a three-dimensional computer-generated aerial render of a dairy farmyard set in bright green fields. It shows a cluster of long farm buildings with green and dark grey roofs arranged around pale concrete yards, a large dark circular tank or store with a tan-brown top at the left of centre, small groups of black and white cows on the concrete at the left, belts of dark green trees along the top, and curved sand-coloured roadways bordered by post fencing sweeping across the foreground. On the right-hand side of the render are three long parallel walled bays with dark sloping side walls; the contents of the nearest bays are heaped up and covered with a mottled blue and white sheeting. Two pale green callout boxes with thick black arrows label parts of the yard: Cow cubicle house, pointing to the large grey-roofed shed in the centre, and Dairy cow collecting yard, pointing to the concreted area at the left where the cows stand. A thick red horizontal arrow on the right, with the bold black letter B beside it, points left into the end of the nearest sheeted bay. Below the render are part (i), Identify the structure located at B, with a blank answer box, and part (ii), Describe one environmental hazard and one potential safety hazard of structure B, with an answer grid whose rows read Environmental: and Safety hazard:.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"B","meaning":"the red pointer entering from the right-hand edge of the render, indicating the two long open-fronted bays on the right of the yard, filled to the brim and covered with dark plastic weighted down by tyres — a silage pit","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q11a-ii", topicId: "agsci-1-5", conceptId: "silage-pit-hazards",
+    section: "A", questionRef: "2021 OL Q11(a)(ii)",
+    stem: "Question 11 offers a choice of (a) or (b); this is part (a)(ii). The figure is a 3D aerial render of a dairy farmyard, with a red pointer from the right-hand edge marking B — the two walled bays covered in dark plastic and weighted with tyres that part (a)(i) identifies as the silage pit. The paper prints two answer lines, one headed 'Environmental:' and one headed 'Safety hazard:'.",
+    questionText: "Describe one environmental hazard and one potential safety hazard of structure B.",
+    tariffModel: {"kind":"orderedSplit","notation":"3+1"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Environmental hazard = (silage effluent) run off (into water sources)", marks: null, accepts: ["plastic wrapping"], contextNote: "The scheme prints '3+1' across the two hazards: the first correct hazard the examiner meets scores 3 and the second scores 1, so neither line can be given a fixed value. The solidus offers 'plastic wrapping' as an alternative environmental hazard, not as an extra mark." },
+    { id: "r-2", kind: "alt", verbatim: "Safety hazard = fall off silage pit or walls (no safety rails)", marks: null, accepts: ["machinery injury"], contextNote: "One safety hazard is wanted. 'machinery injury' is the scheme's alternative wording, not a second mark." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p14-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p14-i0.png",
+          "srcHash": "d0c0b305865b9596fe6547b7ffdd2e2c",
+          "alt": "Question 11 part (a), introduced by The use of 3D plans are likely to become more common in the future development of new infrastructure of farms. The figure is a three-dimensional computer-generated aerial render of a dairy farmyard set in bright green fields. It shows a cluster of long farm buildings with green and dark grey roofs arranged around pale concrete yards, a large dark circular tank or store with a tan-brown top at the left of centre, small groups of black and white cows on the concrete at the left, belts of dark green trees along the top, and curved sand-coloured roadways bordered by post fencing sweeping across the foreground. On the right-hand side of the render are three long parallel walled bays with dark sloping side walls; the contents of the nearest bays are heaped up and covered with a mottled blue and white sheeting. Two pale green callout boxes with thick black arrows label parts of the yard: Cow cubicle house, pointing to the large grey-roofed shed in the centre, and Dairy cow collecting yard, pointing to the concreted area at the left where the cows stand. A thick red horizontal arrow on the right, with the bold black letter B beside it, points left into the end of the nearest sheeted bay. Below the render are part (i), Identify the structure located at B, with a blank answer box, and part (ii), Describe one environmental hazard and one potential safety hazard of structure B, with an answer grid whose rows read Environmental: and Safety hazard:.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"B","meaning":"the red pointer entering from the right of the render, indicating the two walled bays covered with dark plastic and tyres on the right of the yard — the silage pit","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q13b-i", topicId: "agsci-4-3-3", conceptId: "liver-fluke-map-interpretation",
+    section: "B", questionRef: "2021 OL Q13(b)(i)",
+    stem: "Question 13 opens with an article on liver fluke, then part (b) prints a map of the island of Ireland showing the incidence of liver fluke damage to beef cattle livers in the third quarter of 2020, from Beef HealthCheck slaughter data (adapted from Animalhealthireland, 2020). Counties are shaded by band, and three carry a percentage callout on the map. Part (b)(ii) then asks why the fluke damage in Cork is less than in more northern counties. Read the answer off the map — the shading and the callouts are the evidence.",
+    questionText: "Which county has the highest % fluke damage?",
+    tariffModel: {"kind":"fixed","notation":"4"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "gate", verbatim: "Louth (at 17%)", marks: 4, contextNote: "Printed in the scheme as 'Louth* (at 17%)'. The SEC asterisk means only this county scores; the percentage in brackets contextualises it rather than being required. A surplus wrong county named alongside Louth cancels the mark." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p20-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p20-i0.png",
+          "srcHash": "c416488654160e210877c5382fd39297",
+          "alt": "Question 13 part (b), introduced by The following is a map showing the incidence of liver fluke damage to beef cattle livers in the third quarter of 2020 based on Beef HealthCheck slaughter data. Look at the map and answer the questions which follow. The figure is a choropleth map of the island of Ireland on a mid-blue sea background, with every county outlined in black and shaded in a colour band: several northern and north-midlands counties are shaded deep pink or rose, one northern county is salmon/peach, a group of midlands counties are pale khaki-yellow, one western county is pale blue-grey, and most of the southern half of the island is very pale mint green. The Beef HealthCheck logo (a green oval with a white cow silhouette above the words HealthCheck and animalhealthireland.ie) sits in the top left of the map panel. Three white rounded callout boxes with green borders point to individual counties and give figures: Mayo 7.87% fluke damage (pointing to the west), Louth 17.0% fluke damage (pointing to a small deep-pink county on the east coast) and Cork 1.54% fluke damage (pointing to the south). Faint pale grey map text reading IRELAND and UNITED KINGDOM is partly visible. Under the map in italics is (Adapted from Animalhealthireland, 2020). To the left of the map is part (i), Which county has the highest % fluke damage?, with a three-row blank answer box; below the map are part (ii), State one reason why the fluke damage in Cork is less than in more northern counties, and the start of part (c)(i), Explain notifiable disease.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q17b-i", topicId: "agsci-1-4", conceptId: "plotting-germination-bar-chart",
+    section: "B", questionRef: "2021 OL Q17(b)(i)",
+    stem: "Question 17(a) had a student investigate the effect of temperature on the percentage germination of certified grass seeds. One hundred seeds were sown at each of five temperatures (15, 20, 25, 30 and 35 °C) and the whole investigation was repeated four times. Part (a)(v) gave the number of seeds that germinated at 20 °C in the four trials — 62, 59, 61 and 58 — and asked for the mean percentage germination; that value is the one this part asks you to plot. The results table printed with the graph reads: 15 °C, 15 %; 20 °C, 'Calculated at part (a)'; 25 °C, 80 %; 30 °C, 65 %; 35 °C, 35 %. The bars for 15, 25 and 35 °C are already drawn; the 20 °C and 30 °C positions are blank.",
+    questionText: "Complete the graph below by plotting the percentage germination of the grass seeds at 20 °C as calculated at part (a) and at 30 °C.",
+    tariffModel: {"kind":"fixed","notation":"3 + 3"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Correct bar drawn at 20oC up to 60", marks: 3, contextNote: "The scheme awards 2 of these 3 marks where the value calculated at part (a)(v) was wrong but that wrong value is then plotted correctly — the plotting mark survives a bad calculation." },
+    { id: "r-2", kind: "point", verbatim: "Correct bar drawn at 30oC up to 65", marks: 3, contextNote: "Read straight off the results table printed under the graph; no calculation is involved in this one." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p32-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p32-i0.png",
+          "srcHash": "7703f515fee672b32e319eca4e8a44ef",
+          "alt": "Question 17 part (b)(i), the graph-completion item. The instruction above reads: The percentage germination of the grass seeds at 15 degrees C and 25 degrees C are already plotted on the graph. Complete the graph below by plotting the percentage germination of the grass seeds at 20 degrees C as calculated at part (a) and at 30 degrees C. The figure is a partly-completed bar chart on a pale blue gradient panel, titled in red Effect of Temperature on the Germination % of Grass Seeds. The vertical axis is labelled % Germination and is scaled 0 to 85 in steps of 5 with horizontal gridlines at every step. The horizontal axis is labelled Temperature (oC) with five category positions: 15, 20, 25, 30 and 35. Three black bars are already drawn, each with its value printed in white inside the top of the bar: a short bar of 15 at 15 degrees C, a tall bar of 80 at 25 degrees C, and a bar of 35 at 35 degrees C. The 20 degrees C and 30 degrees C positions are deliberately empty for the student to plot. Beneath the chart is a results table with two rows: the header row Temperature (oC) with entries 15, 20, 25, 30, 35, and the row % Germination with entries 15, then a yellow-highlighted cell reading Calculated at part (a) for the 20 degrees C column, then 80, 65 and 35. Below the table is part (ii), State one piece of advice you would give to farmers on the sowing of grass seed based on your conclusion and also supported by the results of this investigation.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q18c-ii", topicId: "agsci-1-3", conceptId: "reading-liveweight-from-graph",
+    section: "B", questionRef: "2021 OL Q18(c)(ii)",
+    stem: "Question 18 — answer both (a) and (b), with either (c) or (d). Part (c): a farmer is producing early lambs for the Easter market. The lambs were born in January with an average birthweight of 4 kg and were weighed every two weeks. Part (c)(i) asked for their average daily liveweight gain over the 16-week period (112 days). The graph plots average liveweight in kilograms against age in weeks, from birth to week 16, with the y-axis marked every 5 kg. The question says 'using the graph', so the answer is a reading, and the paper prints a single 'Minimum number of weeks:' box for it.",
+    questionText: "The farmer aims to sell the lambs at a minimum average liveweight of 45 kg. Using the graph, determine the minimum number of weeks for the lambs to reach this liveweight.",
+    tariffModel: {"kind":"fixed","notation":"4"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "14 ( can be indicated on the graph)", marks: 4, contextNote: "The bracketed note is the examiner's: a candidate who marks the point on the graph instead of writing the number still scores. 'Minimum' matters — the lambs pass 45 kg at week 14, so week 16 is not the answer even though the lambs are heavier by then." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p35-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p35-i0.png",
+          "srcHash": "7982e81c94fb51defb59848a64d5382a",
+          "alt": "Question 18 part (c)(ii) and its graph. The text above reads: The farmer aims to sell the lambs at a minimum average liveweight of 45 kg. Using the graph, determine the minimum number of weeks for the lambs to reach this liveweight. The figure is a line graph on a pale blue gradient panel titled in blue Average Liveweight Gain of Lambs from Birth to Slaughter. The vertical axis is labelled Average Liveweight (kg) and runs 0 to 55 in steps of 5 with horizontal gridlines. The horizontal axis is labelled Age (weeks) with categories Birth, 2, 4, 6, 8, 10, 12, 14 and 16. A single mid-blue straight-running line with round markers rises steadily from left to right, with markers reading approximately 4 kg at Birth, 10 at week 2, 16 at week 4, 22 at week 6, 28 at week 8, 34 at week 10, 40 at week 12, 45 at week 14 and 51 at week 16. Below the graph is a single-row answer box beginning Minimum number of weeks:, and the remainder of the crop is blank white page.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q18d-ii", topicId: "agsci-1-3", conceptId: "npk-effect-on-plant-growth",
+    section: "B", questionRef: "2021 OL Q18(d)(ii)",
+    stem: "Question 18 — answer both (a) and (b), with either (c) or (d). Part (d): a student investigated whether the nutrients N, P and K affected the growth rate of grass and barley plants, recorded the shoot length of multiple plants, calculated the mean and graphed the results. The bar chart plots average shoot length in centimetres against four treatment groups — Nutrients-NPK, N only, P only and K only — with a dark blue bar for barley and a yellow bar for grass in each group, every bar carrying its own value. Part (d)(i) asked why a mean was used; part (d)(iii) asks how the shoot length could have been measured. The answer here is one treatment group, read off the chart.",
+    questionText: "Identify which treatment group had the greatest effect on plant growth.",
+    tariffModel: {"kind":"fixed","notation":"2"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "All nutrients (NPK)", marks: 2, contextNote: "The group the chart labels 'Nutrients - NPK'. It is the tallest pair on the chart for BOTH species, which is what makes it the answer — naming a group that is tallest for only one species does not score." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p37-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p37-i0.png",
+          "srcHash": "91522c2612741b6d0ed9e718d728d245",
+          "alt": "Question 18 part (d), headed Or, with the stem: A student carried out an investigation to see if nutrients, N, P, K effected the growth rate of grass and barley plants. The student recorded the shoot length of multiple plants, calculated the mean (average) and graphed the results as shown. The figure is a grouped vertical bar chart on a pale grey panel, titled in white on a blue banner Effect of nutrients on growth of grass and barley plants. The vertical axis is labelled Average Shoot length (cm) and runs 0 to 30 in steps of 5 with horizontal gridlines. The horizontal axis is labelled Treatment Group - Available Nutrients with four category groups: Nutrients - NPK, N Only, P Only and K Only. A legend at the top right shows dark navy for Barley and amber-yellow for Grass. Each group has a navy Barley bar and a yellow Grass bar with the value printed above each bar: Nutrients - NPK gives Barley 25 and Grass 15; N Only gives Barley 15 and Grass 9; P Only gives Barley 19 and Grass 11; K Only gives Barley 21 and Grass 12. Immediately under the chart is a pale pink key strip reading N = Nitrogen, P = Phosphorus, K = Potassium. Below that is part (i), State one reason why the student calculated the mean shoot length of multiple plants in the investigation, with a blank two-row answer box.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "N",
+                "P",
+                "K"
+          ]
+    },
+    labelKey: [{"letter":"N","meaning":"Nitrogen — decoded in the key printed under the chart. It names the second treatment group, 'N Only'.","askedInThisQuestion":true},{"letter":"P","meaning":"Phosphorus — decoded in the key printed under the chart. It names the third treatment group, 'P Only'.","askedInThisQuestion":true},{"letter":"K","meaning":"Potassium — decoded in the key printed under the chart. It names the fourth treatment group, 'K Only'.","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2022-ol-q2bi", topicId: "agsci-4-2", conceptId: "sheep-breed-identification",
+    section: "A", questionRef: "2022 OL Q2(b)(i)",
+    stem: "Question 2 part (b) — the alternative to part (a). Jessica is a young sheep farmer and she is looking to buy a ram to breed replacements with her Suffolk cross ewes; two rams are photographed, lettered E and F. Parts (ii) and (iii) go on to ask which ram she should buy and why she keeps crossbred rather than purebred ewes.",
+    questionText: "Identify breed E and F.",
+    tariffModel: {"kind":"orderedSplit","notation":"3+1"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "E = Border Leister", marks: null, contextNote: "The scheme spells it 'Leister'; the breed is the Border Leicester and the correct spelling is the same answer." },
+    { id: "r-2", kind: "alt", verbatim: "F = Texel or Beltex", marks: null },
+    ],
+    figure: {
+          "candId": "agricultural-science-2022-OL-paper-p05-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-OL-paper-p05-i0.png",
+          "srcHash": "393f0e122576cd1ea2359e75abc19ec8",
+          "alt": "Q2(b) sheep-breed plate. Stem text at top: 'Jessica is a young sheep farmer and she is looking to buy a ram to breed replacements with her Suffolk cross ewes. Look at the pictures below and answer the questions which follow.' Two colour photographs side by side, each with a bold capital letter centred above it. E (left): a ram standing side-on in a grass field with a hill and a fence post behind, tan/fawn face, ears and lower legs, a slightly paler creamy-tan fleece over a deep body, head turned to the right. F (right): a ram standing side-on in lush deep grass, very blocky heavy white fleece, broad white face with dark grey shading around the eyes and over the muzzle, short ears held horizontally, white legs. Below the photographs: '(i) Identify breed E and F.' with an answer table ruled 'E:' and 'F:', then '(ii) Jessica could choose either breed E or F to cross with her Suffolk cross ewes for replacements in her flock. Advise Jessica with reasons which breed to choose.' and the top of a grey 'Breed:' answer bar.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "E",
+                "F"
+          ]
+    },
+    labelKey: [{"letter":"E","meaning":"The ram in the left-hand photograph: tall and leggy with a long, bare, white face, a slightly Roman nose, upright ears, no wool on the head, and a tight curly tan-white fleece.","askedInThisQuestion":true},{"letter":"F","meaning":"The ram in the right-hand photograph: short-legged, deep and blocky through the body with heavy hindquarters, a wide flat white face with black nose and black eye markings, and short erect ears.","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2022-ol-q6b", topicId: "agsci-1-5", conceptId: "chemical-hazard-symbol-identification",
+    section: "A", questionRef: "2022 OL Q6(b)",
+    stem: "Question 6 of Section A. The safety symbols shown are present on a selective herbicide used to control all species of docks in an established grassland sward (the crop also carries the paper's photograph of a dock plant growing in grass). Part (a) asks you to explain the underlined term 'selective herbicide' and part (c) asks for two precautions when applying herbicides.",
+    questionText: "Identify the safety symbols labelled A and B above.",
+    tariffModel: {"kind":"fixed","notation":"2 + 2"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "A = Health hazard / carcinogenic", marks: 2, contextNote: "One 2-mark point with two accepted wordings — 'health hazard' and 'carcinogenic' are the same mark, not two." },
+    { id: "r-2", kind: "alt", verbatim: "B = Harmful / caution / danger / warning / irritant", marks: 2, contextNote: "Five accepted wordings of the same 2-mark point. Any one of them scores it." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2022-OL-paper-p09-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-OL-paper-p09-i0.png",
+          "srcHash": "28f69bc27d02724541d3f6c1fddf1f0b",
+          "alt": "Q6 stimulus. Stem text: 'The safety symbols below are present on a selective herbicide used to control all species of docks in an established grassland sward' (the words 'selective herbicide' underlined). Beneath it two GHS hazard pictograms, each a red-outlined diamond standing on a point with a white field and a black symbol. Left, labelled A: the silhouette of a human head and upper torso seen from the front with a white eight-pointed starburst radiating from the chest (the GHS serious-health-hazard pictogram). Right, labelled B: a single large black exclamation mark (the GHS 'warning' / irritant-harmful pictogram). To the right of the symbols is a colour photograph of broad-leaved dock plants growing through a grass sward — large oval-oblong green leaves with a pale midrib, some showing rust-brown spotting and insect damage, surrounded by grass. Below: '(a) Explain the underlined term.' with three blank ruled rows, then '(b) Identify the safety symbols labelled A and B above.' and the start of an 'A:' answer box.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"The left-hand pictogram: a red-outlined diamond standing on its point containing a solid black human torso and head, with a white star-burst radiating out of the chest.","askedInThisQuestion":true},{"letter":"B","meaning":"The right-hand pictogram: a red-outlined diamond standing on its point containing a single bold black exclamation mark.","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2022-ol-q7bi", topicId: "agsci-3-1", conceptId: "photosynthesis-inputs-and-outputs",
+    section: "A", questionRef: "2022 OL Q7(b)(i)",
+    stem: "Question 7 part (b) — the alternative to part (a). Photosynthesis is the method by which green plants make their own food using chlorophyll. In the picture a black arrow runs from the sun onto the leaves and a black arrow labelled 'Water' runs into the roots; the three arrows you are asked about are printed 'Gas A', 'Gas B' and 'C'. Part (ii) then asks for two ways a leaf is adapted to carry out photosynthesis.",
+    questionText: "Identify what A, B and C are representing in the picture illustrating photosynthesis.",
+    tariffModel: {"kind":"orderedSplit","notation":"4+1+1"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A = Carbon dioxide (CO2)", marks: null },
+    { id: "r-2", kind: "alt", verbatim: "B = Oxygen (O2) or water vapour", marks: null },
+    { id: "r-3", kind: "alt", verbatim: "C = Glucose (C6H12O6) or oxygen or water vapour", marks: null, contextNote: "The scheme lets the two outgoing arrows be answered either way round: whichever of oxygen and water vapour you did not use for B is accepted here, and glucose is accepted too." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2022-OL-paper-p10-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-OL-paper-p10-i1.png",
+          "srcHash": "16f6fb1b500d7f518ce24b71d614e6a5",
+          "alt": "Q7(b) photosynthesis diagram — a simple cartoon illustration with a blue sky upper half and a brown soil lower half. In the centre a young green plant with a slender stem, several broad green leaves and a fine root system reaching down into the soil. Top left a yellow sun with radiating rays; a thick black arrow runs from the sun down to the plant's leaves (unlettered — represents light). A second thick black arrow comes in from the left into a lower leaf and is labelled 'Gas A' in bold black text. A pale salmon-pink arrow points out to the right from the upper leaves and is labelled 'Gas B'. A second pale salmon-pink arrow points down and to the right away from the plant and is labelled only with the bold letter 'C'. At the bottom left a bold white 'Water' label with a cluster of small blue droplets sits beside a black arrow running rightwards through the soil into the plant's roots. Printed beside the diagram: 'Photosynthesis is the method by which green plants make their own food using chlorophyll. (i) Identify what A, B and C are representing in the picture illustrating photosynthesis.' with an answer table ruled 'A:', 'B:', 'C:', then '(ii) Describe two ways a leaf is adapted to carry out photosynthesis.'",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Printed on the picture as 'Gas A' — a black arrow travelling from the left-hand air INTO a leaf. The figure itself tells you it is a gas and that it is going in.","askedInThisQuestion":true},{"letter":"B","meaning":"Printed on the picture as 'Gas B' — a pale arrow travelling OUT of the plant to the right, at the top of the shoot.","askedInThisQuestion":true},{"letter":"C","meaning":"Printed on the picture as 'C' — a second pale arrow leaving the plant lower down and to the right. Unlike A and B it is not labelled 'Gas', so it need not be one.","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2022-ol-q8a", topicId: "agsci-1-2", conceptId: "microbiology-apparatus-identification",
+    section: "A", questionRef: "2022 OL Q8(a)",
+    stem: "Question 8 of Section A. A student was asked to carry out an investigation to isolate and grow bacteria from clover root nodules, and the two photographs show equipment the student may use. The later parts ask for a prediction, why the clover roots are washed in disinfectant first, and which bacterium in the nodules fixes nitrogen.",
+    questionText: "Identify each piece of equipment A and B above.",
+    tariffModel: {"kind":"fixed","notation":"2 + 2"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A = Inoculating loop", marks: 2 },
+    { id: "r-2", kind: "alt", verbatim: "B = Petri dish or agar plate", marks: 2 },
+    ],
+    figure: {
+          "candId": "agricultural-science-2022-OL-paper-p11-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-OL-paper-p11-i0.png",
+          "srcHash": "c0838b58bc60bb2adc552fd553913cff",
+          "alt": "Q8 equipment plate. Stem: 'A student was asked to carry out an investigation to isolate and grow bacteria from clover root nodules. The following pictures represent some of the equipment a student may use during this investigation.' Two photographs on a plain white/grey background, each with a bold capital letter centred above. A (left): a long slender metal implement lying diagonally — a fine twisted/coiled wire shaft with a small closed circular loop at its upper tip, fixed into a plain light-coloured handle at the lower end (an inoculating loop). B (right): clear glass or plastic circular dishes with shallow vertical sides — one shown complete in the centre and part of a second at the right edge, the two halves of a Petri dish. Below: '(a) Identify each piece of equipment A and B above.' with an answer table ruled 'A:' and 'B:', then '(b) State a suitable prediction for this investigation.'",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"The left-hand photograph: a long thin twisted-wire instrument with a plain handle at one end and a small closed circle of wire at the tip.","askedInThisQuestion":true},{"letter":"B","meaning":"The right-hand photograph: shallow round clear plastic dishes with straight sides and a loose overlapping lid, shown empty.","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2022-ol-q16ci", topicId: "agsci-3-2", conceptId: "farm-plant-identification",
+    section: "B", questionRef: "2022 OL Q16(c)(i)",
+    stem: "Question 16 part (c) of Section B — chosen instead of part (d). The pictures are of common plants found growing on Irish farms. Part (ii) then asks for one impact plant A has on farming or the environment, so the identification here decides what you can write there.",
+    questionText: "Identify each of the plants A and B.",
+    tariffModel: {"kind":"orderedSplit","notation":"4+2"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A = Ragwort", marks: null },
+    { id: "r-2", kind: "alt", verbatim: "B = Plantain or Ribwort", marks: null },
+    ],
+    figure: {
+          "candId": "agricultural-science-2022-OL-paper-p31-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-OL-paper-p31-i0.png",
+          "srcHash": "b6b4d764cbbe62c215896cdcfd601de9",
+          "alt": "Q16(c) plant-identification plate. Printed above: '(c) The pictures are of common plants found growing on Irish farms.' Two colour photographs with a bold capital letter centred beneath each. A (left): a dense rounded mass of many small bright yellow daisy-like flower heads, each with a ring of narrow yellow ray florets around a yellow centre, borne in flat-topped clusters on a leafy plant, with darker green vegetation behind. B (right): a single erect slender stem rising from a tuft of grass, topped by a short compact dark brown/blackish cylindrical flower head encircled by a ring of pale cream-white stamens; long narrow green grass blades fill the background and a second smaller head is visible lower down. Below the photographs: '(i) Identify each of the plants A and B.' with an answer table ruled 'A:' and 'B:', then '(ii) State one impact plant A has on farming or the environment.'",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"The left-hand photograph: a single dense, rounded, dome-shaped head made up of dozens of small bright yellow daisy-like flowers, standing against dark green foliage.","askedInThisQuestion":true},{"letter":"B","meaning":"The right-hand photograph: one upright leafless stalk rising out of grass, topped by a short dark brown-black cylindrical flower head ringed with a collar of tiny cream-white stamens.","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2022-ol-q16cii", topicId: "agsci-3-3-2", conceptId: "ragwort-impact-on-farming",
+    section: "B", questionRef: "2022 OL Q16(c)(ii)",
+    stem: "Question 16 part (c)(ii), following the plant plate in (c)(i): plant A is the yellow-flowered plant on the left of the pair, plant B the one on the right. One impact only is asked for and it is worth 2 marks, so a second impact adds nothing — and a wrong one written alongside a right one can cancel it.",
+    questionText: "State one impact plant A has on farming or the environment.",
+    tariffModel: {"kind":"fixed","notation":"2"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Noxious plant (harmful to animals)", marks: 2, accepts: ["competes with crop","supports many species of wildlife (biodiversity)"], contextNote: "One 2-mark point with three accepted wordings. Note the scheme accepts a POSITIVE impact as well as a negative one — supporting wildlife scores exactly the same as poisoning stock." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2022-OL-paper-p31-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-OL-paper-p31-i0.png",
+          "srcHash": "b6b4d764cbbe62c215896cdcfd601de9",
+          "alt": "Q16(c) plant-identification plate. Printed above: '(c) The pictures are of common plants found growing on Irish farms.' Two colour photographs with a bold capital letter centred beneath each. A (left): a dense rounded mass of many small bright yellow daisy-like flower heads, each with a ring of narrow yellow ray florets around a yellow centre, borne in flat-topped clusters on a leafy plant, with darker green vegetation behind. B (right): a single erect slender stem rising from a tuft of grass, topped by a short compact dark brown/blackish cylindrical flower head encircled by a ring of pale cream-white stamens; long narrow green grass blades fill the background and a second smaller head is visible lower down. Below the photographs: '(i) Identify each of the plants A and B.' with an answer table ruled 'A:' and 'B:', then '(ii) State one impact plant A has on farming or the environment.'",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"The left-hand photograph: a dense rounded dome of many small bright yellow daisy-like flowers against dark green foliage. This is the plant this part asks about.","askedInThisQuestion":true},{"letter":"B","meaning":"The right-hand photograph: an upright leafless stalk topped by a short dark cylindrical head ringed with cream-white stamens. Printed on the same plate but not asked about here.","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2022-ol-q16di", topicId: "agsci-3-2", conceptId: "farm-plant-identification",
+    section: "B", questionRef: "2022 OL Q16(d)(i)",
+    stem: "Question 16 part (d) of Section B — the alternative to part (c). Two photographs of plants commonly found on Irish farms are printed side by side, with the answer boxes lettered C (left) and D (right). Part (ii) then asks for one use for plant D.",
+    questionText: "Identify each of the following plants commonly found on Irish farms.",
+    tariffModel: {"kind":"orderedSplit","notation":"4+2"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "C = Thistle", marks: null },
+    { id: "r-2", kind: "point", verbatim: "D = Oats (wild)", marks: null, contextNote: "'Wild' is bracketed, so 'oats' alone scores. The loose drooping head is what separates oats from wheat or barley, whose seeds sit tight on a spike." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2022-OL-paper-p31-i2",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-OL-paper-p31-i2.png",
+          "srcHash": "fbdf572d1b81e4be861c71923af956a7",
+          "alt": "Q16(d) plant-identification plate. Centred 'Or' at the top, then '(d) (i) Identify each of the following plants commonly found on Irish farms.' Two colour photographs side by side. Left: a thistle in a rough grassy field — several globular flower heads covered in grey-green spiny bracts, one fully open with a bright magenta/purple tuft of florets, one older head gone brown, and coarse deeply lobed spiny-edged green leaves on a stout stem; a wire fence and bare ground behind. Right: a ripening cereal crop photographed from below against a deep blue sky — arching straw-coloured stems carrying loose open panicles with individual pendulous spikelets hanging from fine branches (the open drooping head form of oats), with more of the crop out of focus behind. Directly beneath the left photograph an answer box headed 'C:' and beneath the right photograph an answer box headed 'D:'. Below those: '(ii) State one use for plant D.' with a blank three-row answer box.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "C",
+                "D"
+          ]
+    },
+    labelKey: [{"letter":"C","meaning":"The left-hand photograph: a coarse plant in rough grass carrying several globular heads covered in spiny grey-green bracts, one open into a magenta-purple tuft and one withered brown, with prickly leaves.","askedInThisQuestion":true},{"letter":"D","meaning":"The right-hand photograph: a ripe golden cereal against a blue sky, its seeds hanging singly on fine drooping stalks in a loose open head rather than packed onto a spike.","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2022-ol-q16dii", topicId: "agsci-3-3-3", conceptId: "oats-crop-uses",
+    section: "B", questionRef: "2022 OL Q16(d)(ii)",
+    stem: "Question 16 part (d)(ii), following the plant plate in (d)(i): plant C is the spiny purple-headed plant on the left, plant D the ripe golden cereal on the right. One use only is asked for and it is worth 2 marks.",
+    questionText: "State one use for plant D.",
+    tariffModel: {"kind":"fixed","notation":"2"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Animal feed", marks: 2, accepts: ["human consumption"], contextNote: "One 2-mark point with two accepted wordings — feeding stock and feeding people are the same mark here, not two." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2022-OL-paper-p31-i2",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-OL-paper-p31-i2.png",
+          "srcHash": "fbdf572d1b81e4be861c71923af956a7",
+          "alt": "Q16(d) plant-identification plate. Centred 'Or' at the top, then '(d) (i) Identify each of the following plants commonly found on Irish farms.' Two colour photographs side by side. Left: a thistle in a rough grassy field — several globular flower heads covered in grey-green spiny bracts, one fully open with a bright magenta/purple tuft of florets, one older head gone brown, and coarse deeply lobed spiny-edged green leaves on a stout stem; a wire fence and bare ground behind. Right: a ripening cereal crop photographed from below against a deep blue sky — arching straw-coloured stems carrying loose open panicles with individual pendulous spikelets hanging from fine branches (the open drooping head form of oats), with more of the crop out of focus behind. Directly beneath the left photograph an answer box headed 'C:' and beneath the right photograph an answer box headed 'D:'. Below those: '(ii) State one use for plant D.' with a blank three-row answer box.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "C",
+                "D"
+          ]
+    },
+    labelKey: [{"letter":"C","meaning":"The left-hand photograph: spiny grey-green globular heads, one open into a magenta-purple tuft, with prickly leaves. Printed on the same plate but not asked about here.","askedInThisQuestion":false},{"letter":"D","meaning":"The right-hand photograph: a ripe golden cereal with its seeds hanging singly on fine drooping stalks in a loose open head. This is the plant this part asks about.","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2022-ol-q17bii", topicId: "agsci-1-3", conceptId: "bovine-nitrogen-farm-total",
+    section: "B", questionRef: "2022 OL Q17(b)(ii)",
+    stem: "Question 17 part (b)(ii), from the same table as (b)(i). The right-hand column, 'Bovine nitrogen produced on John's farm', reads: suckler cows 2990 kg; cattle 0-1 year 1056 kg; cattle 1-2 year A, which you worked out in part (i) as 2280 kg; bull 1-2 year 57 kg; bull over 2 years 65 kg. Figure B is the bottom line of that column, 'Total bovine nitrogen produced on John's farm'. Show your calculation in the box.",
+    questionText: "Calculate the total bovine nitrogen (figure B) for all animals on John's farm for 2020-21.",
+    tariffModel: {"kind":"fixed","notation":"3 + 3"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "2990 + 1056 + 2280 + 57 + 65", marks: 3, contextNote: "All five livestock rows, including the 2280 you calculated in part (i). Leaving out the two single bulls is the common way to lose this." },
+    { id: "r-2", kind: "point", verbatim: "= 6448 (kg)", marks: 3, contextNote: "The scheme adds: '(If a candidate gives 6448 (kg) without showing any calculations they may be awarded 6m)'." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2022-ol-q18aii", topicId: "agsci-1-3", conceptId: "reading-highest-yield-from-a-variety-table",
+    section: "B", questionRef: "2022 OL Q18(a)(ii)",
+    stem: "Question 18 part (a) of Section B. The Department of Agriculture, Food and the Marine (DAFM) produce a recommended list of perennial ryegrass seed varieties annually, and the paper prints two of them for you to analyse. Part (a)(i) asks for three of the physical traits the table assesses; this part sends you to one specific column of it.",
+    questionText: "Identify which variety of perennial ryegrass produces the highest yield.",
+    tariffModel: {"kind":"fixed","notation":"5"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Moyola (105 ton DM/ha)", marks: 5, contextNote: "Read the Total Yield column: Moyola 105, Genesis 103. Do not be pulled to Genesis by its bigger Spring Growth figure (118 against 109) — that is a different column. The scheme writes the unit as 'ton DM/ha'; the table heading is t DM/ha." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2022-OL-paper-p35-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-OL-paper-p35-i0.png",
+          "srcHash": "667ad2c1d73f51f9b6bcefda228504f2",
+          "alt": "Q18(a) data table with the DAFM logo. Printed text: 'Question 18 (a) The Department of Agriculture Food and the Marine (DAFM) produce a recommended list of perennial ryegrass seed varieties annually. Analyse the data in the table and answer the questions which follow.' At the top right the teal Department of Agriculture, Food and the Marine logo (a stylised harp/wheat-ear device beside the English wording 'Department of Agriculture, Food and the Marine' and the Irish 'An Roinn Talmhaiochta, Bia agus Mara'). The table has a pale green header row of seven columns: 'Variety', 'Heading Date', 'Total Yield (t DM/ha)', 'Ground Cover (t DM/ha)', 'Spring Growth (t DM/ha)', 'Autumn Growth (t DM/ha)', '% Dry Matter Digestibility (DMD)'. Two data rows, the variety names shaded pale blue: Moyola — 11 May, 105, 6.4, 109, 107, 100; Genesis — 12 May, 103, 6.7, 118, 102, 99.7. Beneath the table, right aligned in italics, '(Adapted from DAFM, 2021)'. The bottom edge cuts through the following line of question text, '(i) List three physical traits assessed by the DAFM when recommending grass seed'.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2022-ol-q18aiii", topicId: "agsci-1-3", conceptId: "reading-autumn-growth-from-a-variety-table",
+    section: "B", questionRef: "2022 OL Q18(a)(iii)",
+    stem: "Question 18 part (a)(iii), from the same DAFM recommended-list table as (a)(i) and (a)(ii). The table has six columns of data — Heading Date, Total Yield, Ground Cover, Spring Growth, Autumn Growth and % Dry Matter Digestibility — and this part names the season, which names the column.",
+    questionText: "Identify which variety would produce more grass in autumn.",
+    tariffModel: {"kind":"fixed","notation":"5"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Moyola (107 ton DM/ha)", marks: 5, contextNote: "Read the Autumn Growth column: Moyola 107, Genesis 102. The 105 in the scheme's answer to (a)(ii) came from Total Yield — quoting that figure here shows you read the wrong column, even though the variety happens to be the same one." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2022-OL-paper-p35-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-OL-paper-p35-i0.png",
+          "srcHash": "667ad2c1d73f51f9b6bcefda228504f2",
+          "alt": "Q18(a) data table with the DAFM logo. Printed text: 'Question 18 (a) The Department of Agriculture Food and the Marine (DAFM) produce a recommended list of perennial ryegrass seed varieties annually. Analyse the data in the table and answer the questions which follow.' At the top right the teal Department of Agriculture, Food and the Marine logo (a stylised harp/wheat-ear device beside the English wording 'Department of Agriculture, Food and the Marine' and the Irish 'An Roinn Talmhaiochta, Bia agus Mara'). The table has a pale green header row of seven columns: 'Variety', 'Heading Date', 'Total Yield (t DM/ha)', 'Ground Cover (t DM/ha)', 'Spring Growth (t DM/ha)', 'Autumn Growth (t DM/ha)', '% Dry Matter Digestibility (DMD)'. Two data rows, the variety names shaded pale blue: Moyola — 11 May, 105, 6.4, 109, 107, 100; Genesis — 12 May, 103, 6.7, 118, 102, 99.7. Beneath the table, right aligned in italics, '(Adapted from DAFM, 2021)'. The bottom edge cuts through the following line of question text, '(i) List three physical traits assessed by the DAFM when recommending grass seed'.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2023-ol-q1a", topicId: "agsci-1-2", conceptId: "soil-ph-test-equipment",
+    section: "A", questionRef: "2023 OL Q1(a)",
+    stem: "Question 1, part (a). An agricultural science student wanted to test the pH of a sample of soil before deciding what crops to sow. The paper draws the whole bench of apparatus. Two items are already named in words on the drawing — the pH probe (its display reading 6.5) and the Universal Indicator — and three more are picked out by blue arrows lettered A, B and C. Only the lettered three are claimable, and the paper prints an answer line for each of A, B and C even though any two score.",
+    questionText: "Identify any two pieces of equipment labelled A, B or C required for this investigation.",
+    tariffModel: {"kind":"bestNofParts","notation":"2(3)","answer":2,"ofParts":3,"perPart":3}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A — pH paper or (universal) indicator paper", marks: 3, contextNote: "The scheme's \"or\" here offers two names for one item, not two marking points — pH paper and universal indicator paper are the same strip. A arrows the yellow strip in the beaker of soil filtrate whose submerged tip has gone green." },
+    { id: "r-2", kind: "point", verbatim: "B — Graduated cylinder", marks: 3, contextNote: "B arrows the tall graduated tube with the filter funnel of soil resting in its mouth — it is catching the filtrate. This point is not asterisked, so the SEC's general synonym rule applies to how the apparatus is named." },
+    { id: "r-3", kind: "point", verbatim: "C — Electronic or mass balance", marks: 3, contextNote: "Again one item with two names, not two points. C arrows the balance under the soil sample, reading 100.00 g — it is how the fixed mass of soil is weighed out before water is added." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2023-OL-paper-p03-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-OL-paper-p03-i0.png",
+          "srcHash": "4b83ccccc28411050ad39d646577aadd",
+          "alt": "A coloured line-art laboratory bench scene for a soil pH investigation, drawn on a brown wooden bench that runs the full width. Working left to right the apparatus shown is: (1) a small beaker of pale liquid holding an upright yellow/orange test strip whose submerged tip has turned green — a blue arrow labelled A points to this strip; (2) a handheld grey electronic meter with a digital display reading '6.5' above the word 'pH' and two round green buttons, its cable running down into a second beaker of liquid — a black arrow labelled in words 'pH probe' points to this meter; (3) a beaker of pale green liquid with a dropper/pipette dipped into it — a black arrow labelled in words 'Universal Indicator' points to the dropper tip; (4) a tall graduated measuring cylinder with graduation marks, part filled with pale blue liquid, with a conical filter funnel and folded filter paper seated in its mouth holding a dark brown mass of soil, filtrate draining into the cylinder — a blue arrow labelled B points to the top of this cylinder/funnel assembly; (5) a small beaker holding brown soil with a long spatula/stirring rod in it, with a conical flask tipped over it pouring water in; (6) an electronic top-pan balance with a blue digital display reading '100.00 g', carrying a weighing boat with a lump of brown soil on it — a blue arrow labelled C points to the balance pan. Above the drawing is the printed question text: 'Answer any ten questions. Each question carries 10 marks. Question 1. An agricultural science student wanted to test the pH of a sample of soil before deciding what crops to sow.' Below the drawing is part (a) 'Identify any two pieces of equipment labelled A, B or C required for this investigation.' and a three-row blank answer table with the row stubs A:, B:, C:.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"pH paper or (universal) indicator paper — the yellow/orange test strip standing upright in a small beaker of pale filtrate, its submerged tip turned green","askedInThisQuestion":true},{"letter":"B","meaning":"Graduated cylinder — the tall measuring cylinder with a filter funnel of dark soil sitting in its mouth","askedInThisQuestion":true},{"letter":"C","meaning":"Electronic or mass balance — the flat balance with a soil sample on the pan, its display reading 100.00 g","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2023-ol-q13b-i", topicId: "agsci-3-3-1", conceptId: "reseeding-method-grass-production",
+    section: "B", questionRef: "2023 OL Q13(b)(i)",
+    stem: "Question 13, part (b)(i), Section B. The paper's lead-in reads: traditional reseeding methods involve mainly ploughing the land; research into more sustainable practices (disc, one pass and direct drill) is shown in the graph; the sustainable practices are being compared to ploughing, which has a grass growth potential of 1. The column chart is titled 'Comparison of reseeding methods in terms of grass production potential', with 'Grass production relative to plough method' up the y-axis from 0 to 1.2 and 'Reseeding method' along the x-axis. Its four bars carry printed data labels: Plough 1, Disc 1, One pass 0.95, Direct drill 0.87. Source: (Adapted from Teagasc, 2022).",
+    questionText: "Identify which sustainable reseeding method has the highest potential for grass production.",
+    tariffModel: {"kind":"fixed","notation":"6"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Disc", marks: 6, contextNote: "Plough also reads 1 on the graph, but plough is the traditional method the others are being measured against — the question asks which SUSTAINABLE method is highest, and the paper names those as disc, one pass and direct drill. Of those three, disc reads 1, one pass 0.95 and direct drill 0.87, so disc matches ploughing outright. Answering \"plough\" reads the tallest bar rather than the question." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2023-OL-paper-p21-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-OL-paper-p21-i0.png",
+          "srcHash": "f771024fbfc21f877db96987ecb3c226",
+          "alt": "A four-bar column chart drawn over a faded photographic background of a grass field with black-and-white cattle and a wire fence. The chart title, in purple bold across two lines, reads 'Comparison of reseeding methods in terms of grass production potential'. The vertical axis is labelled 'Grass production relative to plough method' and is scaled 0, 0.2, 0.4, 0.6, 0.8, 1, 1.2. The horizontal axis is labelled 'Reseeding method'. A legend at the top right gives four colour keys: blue 'Plough', green 'Disc', pink/magenta 'One pass', yellow/orange 'Direct drill'. The four bars, in that left-to-right order and matching those colours, are topped by printed data labels: Plough 1, Disc 1, One pass 0.95, Direct drill 0.87. Above the chart is the printed stem (its first line sliced by the crop edge) '...Traditional reseeding methods involve mainly ploughing the land. Research into more sustainable practices (disc, one pass and direct drill) are shown in the graph below. Sustainable practices are being compared to ploughing which has a grass growth potential of 1. Analyse the graph and answer the questions which follow.' Right-aligned italic text under the chart reads '(Adapted from Teagasc, 2022)'. Below are '(i) Identify which sustainable reseeding method has the highest potential for grass production.' with a blank box and '(ii) Outline what conclusion the researchers can make in relation to the sustainable reseeding methods.'",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2024-ol-q2bii", topicId: "agsci-4-3-3", conceptId: "curved-race-cattle-movement",
+    section: "A", questionRef: "2024 OL Q2(b)(ii)",
+    stem: "Answer either (a) or (b). The picture shows different cattle handling facilities. Analyse the pictures and answer the questions that follow. Part (i) asked for one use of cattle handling facilities on the farm; part (iii) then asks about the head gate arrowed in picture A.",
+    questionText: "Briefly explain one reason why handling facility B is better for animal movement.",
+    tariffModel: {"kind":"fixed","notation":"3"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(As the animals go around the curve) they think they are going back to where they came from", marks: 3, accepts: ["the animals cannot see people and other moving objects (at the end of the chute)","it takes advantage of the natural circling behaviour of cattle","one-way system for ease of movement"], contextNote: "One reason only is asked for — any one of the scheme's four wordings scores the full 3 marks." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2024-OL-paper-p05-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p05-i0.png",
+          "srcHash": "e98ac1a834f4f2e82a08a959fff28d52",
+          "alt": "Question 2(b), two cattle-handling facility pictures side by side, each headed by a bold capital. Picture A is a colour photograph of a galvanised steel cattle race/crush built along a concrete wall in a yard, made of horizontal bars in vertical posts, with a heavier vertical-barred gate structure at the far end; an orange callout box with white bold text \"Headgate\" and a yellow arrow points to that end structure. Picture B is a black-and-white plan-view (bird's-eye) line drawing of a curved handling system on a pale background: a straight channel labelled \"Single file race\" by a leader line runs to the right, turns through a 180 degree bend into a rounded pen at the far right labelled \"Round crowd pen\", and continues round a second bend at the bottom left; small stylised cattle drawn from above are spaced along the route. A solid line path is labelled in red \"Right way\" and a dashed line path is labelled in red \"Wrong way\", and the caption \"Cattle see place to go\" runs along the bottom. Three small circled numerals, 1, 2 and 3, mark points along the route. Below the pictures, sub-parts (i) and (ii) with empty answer boxes.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"photograph of a straight galvanised steel race and crush built along a yard wall, with an orange callout arrow labelled \"Headgate\" pointing at the gate at the end of the race","askedInThisQuestion":false},{"letter":"B","meaning":"plan-view drawing of a curved single file race leading out of a round crowd pen, with the curve marked \"Right way\", a straight dashed path marked \"Wrong way\", and the note \"Cattle see place to go\"","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2024-ol-q5a", topicId: "agsci-4-1", conceptId: "ruminant-stomach-compartments",
+    section: "A", questionRef: "2024 OL Q5(a)",
+    stem: "The diagram shows the digestive system of a calf. Analyse the diagram and answer the questions that follow. The oesophagus is already named on the diagram and is not one of the four lettered parts; the word bank printed under the diagram is Omasum, Abomasum, Rumen, Reticulum. Part (b) then asks for the first feed required by the calf.",
+    questionText: "Label any three parts of the diagram using the words in the list below.",
+    tariffModel: {"kind":"bestNofParts","notation":"3(2)","answer":3,"ofParts":4,"perPart":2}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A — Omasum", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "B — Rumen", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "C — Abomasum", marks: 2 },
+    { id: "r-4", kind: "point", verbatim: "D — Reticulum", marks: 2 },
+    ],
+    figure: {
+          "candId": "agricultural-science-2024-OL-paper-p07-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p07-i0.png",
+          "srcHash": "7b7f15bc63b7dd96aac552404e3402e8",
+          "alt": "Question 5, the digestive system of a calf. A colour cartoon of a black-and-white calf standing in side view facing right, with the stomach compartments drawn cut-away in colour inside the body: a large yellow sac filling the upper front of the abdomen, a rounded orange sac in the centre, a large brown-mauve mass low and to the rear (left of the picture), and a second yellow lobe low and forward. A pale blue tube runs from the throat down and back into the compartments and is labelled in black \"Oesophagus\" with a blue leader line coming from the lower right. Four black leader arrows carry bold capitals: A comes down from the upper left to the orange central sac; B comes down from the top to the yellow upper-front sac; C comes up from the lower left to the brown-mauve mass; D comes up from the bottom to the lower yellow lobe. Beneath the drawing: \"(a) Label any three parts of the diagram using the words in the list below.\" and a pale green word bank of four cells reading Omasum, Abomasum, Rumen, Reticulum, then an answer table with rows A:, B:, C: and D:.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "D"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"the rounded orange sac in the middle of the abdomen, sitting between the yellow compartment in front of it and the brown one behind it","askedInThisQuestion":true},{"letter":"B","meaning":"the large yellow sac filling the upper front of the abdomen, above where the blue oesophagus runs in","askedInThisQuestion":true},{"letter":"C","meaning":"the large brown sac at the back of the abdomen, which also runs forward along the floor of the belly","askedInThisQuestion":true},{"letter":"D","meaning":"the smaller gold lobe at the lower front of the yellow area, just behind and below the point where the oesophagus enters","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2024-ol-q6ai", topicId: "agsci-4-2", conceptId: "sheep-breed-identification",
+    section: "A", questionRef: "2024 OL Q6(a)(i)",
+    stem: "Answer either (a) or (b). The photographs below show some breeds of sheep found on Irish farms, with the word bank Texel, Suffolk, Charolais, Border Leicester printed above them. Only three of the four letters need to be named — and under the scheme's surplus-answer rule a wrong extra answer cancels a correct one. Part (ii) then asks for one reason why a named breed is suitable for sheep meat production.",
+    questionText: "Identify any three of the following breeds using the list below.",
+    tariffModel: {"kind":"bestNofParts","notation":"3(2)","answer":3,"ofParts":4,"perPart":2}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A — Charolais", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "B — Border Leicester", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "C — Texel", marks: 2 },
+    { id: "r-4", kind: "point", verbatim: "D — Suffolk", marks: 2 },
+    ],
+    figure: {
+          "candId": "agricultural-science-2024-OL-paper-p08-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p08-i1.png",
+          "srcHash": "10b9900c3281db9897683d7cfe77ac44",
+          "alt": "The complete Question 6(a)(i) sheep breed grid. At the top, a pale green word bank of four cells: Texel | Suffolk | Charolais | Border Leicester. Below it, four colour photographs in a two-by-two arrangement, each carrying a bold capital. A (top left): a stocky sheep standing side-on in a grassy paddock with trees behind, thick cream-fawn fleece, a pale pinkish face and small ears, wool coming well down the legs. B (top right): two sheep photographed head-on in a field, both with very long upright ears, long white faces with a Roman (convex) nose profile and creamy fleece; further sheep and a coastline are visible behind. C (bottom left): a heavily muscled, short-woolled ram in profile, cream fleece, white face and white legs, held by a handler in dark clothing. D (bottom right): a sheep in profile with a solid black head, black ears and black legs and a cream fleece, standing on grass in front of metal pens. Below, the top of the A: answer row.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "D"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"top left — a stocky cream-coloured ram standing side-on in a grassy paddock with autumn trees behind, pale face and pale legs, wool right down over the body","askedInThisQuestion":true},{"letter":"B","meaning":"top right — two white-faced sheep photographed head-on, with long upright ears and Roman (convex) noses, standing in a coastal field","askedInThisQuestion":true},{"letter":"C","meaning":"bottom left — a short, heavily muscled ram held by a handler, with a bare white face and white legs and a very deep, blocky body","askedInThisQuestion":true},{"letter":"D","meaning":"bottom right — a white-fleeced sheep with a black head and black legs standing side-on in a dry paddock","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2024-ol-q11bii", topicId: "agsci-4-3-2", conceptId: "choosing-a-cow-for-a-belgian-blue-cross",
+    section: "A", questionRef: "2024 OL Q11(b)(ii)",
+    stem: "Answer either (a) or (b). The picture at the head of part (b) — not carried in this crop — shows the Belgian Blue beef breed: an extremely heavily muscled, double-muscled continental bull, white to pale roan in colour. Part (i) asked for two of its physical characteristics.",
+    questionText: "State with reason which cow A or B a farmer would choose to cross with the Belgian Blue bull shown in the picture above.",
+    tariffModel: {"kind":"fixed","notation":"2(2)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Cow: B or Charolais", marks: 2, contextNote: "The scheme accepts either the letter or the breed name." },
+    { id: "r-2", kind: "point", verbatim: "Big frame", marks: 2, accepts: ["continental breed","wide pelvis"], contextNote: "Reason — any ONE of the scheme's three reasons scores the 2 marks. All three say the same thing: she is big enough to calve down to a double-muscled bull." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2024-OL-paper-p15-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p15-i1.png",
+          "srcHash": "87fa00ac77afea05e52c2f6e339c95e9",
+          "alt": "Question 11(b)(ii), two cows to choose between, each headed by a bold capital. A: a fawn/tan cow of fine dairy type grazing head-down in a field, angular and light-boned, with a large well-filled udder clearly visible between the hind legs, a white patch on the flank, a pale tail switch, a yellow ear tag on the head, and hills and cloud behind. B: a white-cream, thickly muscled beef-type cow standing square and facing the camera on grass in front of dark trees, with a deep barrel, heavy rounded hindquarters, a pink muzzle and a yellow ear tag, with a second animal partly visible behind her. Below the photographs, an answer table with rows \"Cow:\" and \"Reason:\". The instruction above reads \"(ii) State with reason which cow A or B a farmer would choose to cross with the Belgian Blue bull shown in the picture above.\"",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"left — a fawn/tan cow grazing head-down, fine-boned and angular with a large well-filled udder and a pale tail switch","askedInThisQuestion":true},{"letter":"B","meaning":"right — a large white-cream cow standing facing the camera, deep and thick through the shoulder and hindquarter with a broad frame","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2024-ol-q14bii", topicId: "agsci-3-3-3", conceptId: "correct-grass-stage-for-silage",
+    section: "B", questionRef: "2024 OL Q14(b)(ii)",
+    stem: "Silage making is a very important aspect of farm life as it is an essential feedstuff for ruminant animals on farms. Part (b)(i) printed the two grass photographs below and asked which shows the correct stage of cutting the grass for silage. The marking points here are the ones credited for choosing photograph B; the scheme adds '(Allow opposite points for A)'.",
+    questionText: "Briefly outline one reason for your choice in part (i).",
+    tariffModel: {"kind":"fixed","notation":"2"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Leafy grass", marks: 2, accepts: ["no seed heads","more digestible"], contextNote: "One reason only — any ONE of the scheme's three scores the full 2 marks. A candidate who ticked A in part (i) scores by naming the opposite point (stemmy, seed heads out, less digestible)." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2024-OL-paper-p22-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p22-i1.png",
+          "srcHash": "7a414c9b16b8c7f82aec8cbf29aa55cc",
+          "alt": "Question 14(b)(i), two close-up grass photographs to choose between, each headed by a bold capital. A: a grass sward that has run to seed - many tall stems carrying open, branched grey-green seed heads and panicles standing well above the leaves, the sward looking stemmy and pale. B: a dense, purely leafy sward of upright deep green grass blades, wet with dew and with no seed heads at all. Beneath the photographs is an empty two-cell tick table, one cell under each picture. Above them: \"(b)(i) Identify the correct stage of cutting the grass for silage by placing a tick in the correct box.\" The page footer \"Leaving Certificate Examination 2024 / Agricultural Science - Ordinary Level / 22\" appears at the bottom.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"left — a stemmy, pale sward that has run to seed, with many tall stems carrying open branched seed heads standing above the leaves","askedInThisQuestion":true},{"letter":"B","meaning":"right — a dense, deep-green sward of broad leaf blades with no stems or seed heads showing","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2024-ol-q14biii", topicId: "agsci-3-1", conceptId: "grass-growth-stages",
+    section: "B", questionRef: "2024 OL Q14(b)(iii)",
+    stem: "Silage making is a very important aspect of farm life as it is an essential feedstuff for ruminant animals on farms. Part (b)(i) printed the two grass photographs below; this part asks about photograph B only. The three options are printed as text boxes on the paper and are reproduced in the question.",
+    questionText: "Identify the growth stage of plant B by placing a tick (✓) in the correct box. [Inflorescence / Vegetative / Elongation]",
+    tariffModel: {"kind":"fixed","notation":"2"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Vegetative", marks: 2, contextNote: "The box the scheme ticks. Photograph B is all leaf with no stem elongation and no seed head showing, so the sward is still vegetative." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2024-OL-paper-p22-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p22-i1.png",
+          "srcHash": "7a414c9b16b8c7f82aec8cbf29aa55cc",
+          "alt": "Question 14(b)(i), two close-up grass photographs to choose between, each headed by a bold capital. A: a grass sward that has run to seed - many tall stems carrying open, branched grey-green seed heads and panicles standing well above the leaves, the sward looking stemmy and pale. B: a dense, purely leafy sward of upright deep green grass blades, wet with dew and with no seed heads at all. Beneath the photographs is an empty two-cell tick table, one cell under each picture. Above them: \"(b)(i) Identify the correct stage of cutting the grass for silage by placing a tick in the correct box.\" The page footer \"Leaving Certificate Examination 2024 / Agricultural Science - Ordinary Level / 22\" appears at the bottom.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"left — a stemmy, pale sward that has run to seed, with many tall stems carrying open branched seed heads standing above the leaves","askedInThisQuestion":false},{"letter":"B","meaning":"right — a dense, deep-green sward of broad leaf blades with no stems or seed heads showing","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2024-ol-q15aii", topicId: "agsci-4-1", conceptId: "ewe-reproductive-system",
+    section: "B", questionRef: "2024 OL Q15(a)(ii)",
+    stem: "Answer both (a) and (b) with either (c) or (d). The breeding season is an important and busy time on sheep farms to ensure successful lamb production. Part (a)(i) asked about the management of the ewe at mating. All four lettered parts are to be labelled here, from the word bank Ovary, Uterus, Fallopian tube, Cervix.",
+    questionText: "Label the diagram of the ewe reproductive system using the list of words in the box below.",
+    tariffModel: {"kind":"fixed","notation":"4(3)"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A — Uterus", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "B — Fallopian tube", marks: 3 },
+    { id: "r-3", kind: "point", verbatim: "C — Ovary", marks: 3 },
+    { id: "r-4", kind: "point", verbatim: "D — Cervix", marks: 3 },
+    ],
+    figure: {
+          "candId": "agricultural-science-2024-OL-paper-p25-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p25-i1.png",
+          "srcHash": "0df3eac4d8058055a65d290b1f1cac29",
+          "alt": "Question 15(a)(ii), the ewe reproductive system. A colour anatomical illustration seen from the front, roughly symmetrical about a vertical midline: at the top, a pair of thick pink convoluted horn-shaped structures curve outward and down like a wide V; at the outer end of each is a small pale rounded organ flecked with orange-yellow; between and below the horns is a broad pale fawn body; a narrow ridged channel runs down the midline from the junction of the horns; below that the tissue widens into a deep red funnel-shaped canal that broadens towards the bottom of the picture. Four blue leader lines carry bold blue capitals: A points from the left to the upper part of the left horn; B points from the left to the small rounded organ at the end of the left horn; C points from the lower right to the corresponding small organ on the right side; D points from the lower left up to the narrow ridged midline section. To the left of the drawing is a pale peach word bank of four stacked cells: Ovary, Uterus, Fallopian tube, Cervix. Beneath the illustration are four empty answer boxes labelled A and B on the left and C and D on the right. Instruction above: \"(ii) Label the diagram of the ewe reproductive system using the list of words in the box below.\"",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "D"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"arrow into the thick pink horn-shaped structure at the top left of the tract, the body and horns seen from the front","askedInThisQuestion":true},{"letter":"B","meaning":"arrow to the fine coiled tube at the outer end of the left horn, just before the small pale round body","askedInThisQuestion":true},{"letter":"C","meaning":"arrow to the small pale round body at the outer end of the right horn","askedInThisQuestion":true},{"letter":"D","meaning":"arrow to the narrow ridged neck on the midline, where the body of the tract narrows into the passage below it","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2024-ol-q15biv", topicId: "agsci-4-3-3", conceptId: "raddle-colour-sequence",
+    section: "B", questionRef: "2024 OL Q15(b)(iv)",
+    stem: "Answer both (a) and (b) with either (c) or (d). At mating the farmer straps a raddle on the ram to mark the ewes that have been served, and part (b)(iii) established that the colour is changed every 13–15 days so that any ewe repeating shows up. The answer table on the paper has three rows: 1st colour, 2nd colour, 3rd colour. The scheme accepts either the colour name or the letter of the tub.",
+    questionText: "Using the colours in the box below, list the colours in order of sequence used by the farmer during mating.",
+    tariffModel: {"kind":"orderedSplit","notation":"4 + 1 + 1"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1st colour — Yellow / C", marks: null, contextNote: "The sequence runs lightest to darkest so that each new mark shows up over the one before it." },
+    { id: "r-2", kind: "point", verbatim: "2nd colour — Green / A", marks: null },
+    { id: "r-3", kind: "point", verbatim: "3rd colour — Blue / B", marks: null },
+    ],
+    figure: {
+          "candId": "agricultural-science-2024-OL-paper-p26-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p26-i0.png",
+          "srcHash": "24eac4e3a56debd6b8f5962cf250b14c",
+          "alt": "Question 15(b)(iv), raddle colours. Three colour photographs of identical 1 kg plastic tubs of raddle powder stand side by side, each headed by a bold capital: the tub under A is pale green, the tub under B is pale blue and the tub under C is pale yellow. Every tub carries the same printed label - a circular target-style logo on the left, the brand name \"AGRIMARK\", the word \"RADDLE\" in bold capitals below it and \"1kg\" beneath that. Above the photographs, the tail of the previous part is visible: a three-row tick table with pale green label cells \"13 - 15 days\", \"22 - 24 days\" and \"28 - 30 days\", each with an empty tick cell, and the instruction \"(iv) Using the colours in the box below, list the colours in order of sequence used by the farmer during mating.\" Below the photographs is a three-row answer table with pale peach label cells \"1st colour\", \"2nd colour\" and \"3rd colour\" and empty cells beside them.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"left — a 1 kg tub of pale green raddle powder","askedInThisQuestion":true},{"letter":"B","meaning":"centre — a 1 kg tub of pale blue raddle powder","askedInThisQuestion":true},{"letter":"C","meaning":"right — a 1 kg tub of pale yellow raddle powder","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2024-ol-q18aiii", topicId: "agsci-4-2", conceptId: "dairy-breed-identification",
+    section: "B", questionRef: "2024 OL Q18(a)(iii)",
+    stem: "Answer both (a) and (b) with either (c) or (d). Calving is a very busy time on all beef and dairy farms, so it is important for farmers to be prepared in advance. Parts (a)(i) and (a)(ii) dealt with preparing for the calving season and with the practices carried out on the calf at birth.",
+    questionText: "Identify the breed of dairy cow shown in the picture below.",
+    tariffModel: {"kind":"fixed","notation":"6"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(Holstein) Friesian", marks: 6, contextNote: "The brackets are the scheme's: 'Friesian' alone is enough, and 'Holstein Friesian' is equally acceptable." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2024-OL-paper-p34-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p34-i0.png",
+          "srcHash": "f5c238b6daac61790326fe72291512ab",
+          "alt": "Question 18(a)(iii), a dairy breed identification photograph. The instruction \"(iii) Identify the breed of dairy cow shown in the picture below.\" sits above a centred colour photograph of a black-and-white cow grazing head-down on short green grass. She shows angular dairy conformation - lean and sharp over the withers and hips rather than heavily muscled - with large irregular black patches over a white body, black legs above white feet, a mostly black head with a small white marking, a broad pale-pink udder clearly visible between the hind legs, a strap or collar around the neck and a yellow ear tag. In the background are a farm roadway, a green field, stacked pallets, a metal tank and farm buildings. Below the photograph is an empty single-cell answer box, then the page footer \"Leaving Certificate Examination 2024 / Agricultural Science - Ordinary Level / 34\".",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q15b-iii", topicId: "agsci-4-1", conceptId: "milk-composition-components",
+    section: "B", questionRef: "2025 OL Q15(b)(iii)",
+    stem: "Question 15, part (b). A north Clare dairy farm sells its value-added milk to local people through a milk vending machine, and to produce milk for human consumption it must be of the highest standard. The chart shows the typical composition of cow's milk. Its five sectors carry the values 3.40%, 4.00%, 87.5%, 4.20% and 0.90%; the legend names three of them — Protein, Lactose and Minerals — and leaves the other two lettered A and B. The paper's answer table has one column, Component, with a row for A and a row for B.",
+    questionText: "Identify A and B in the chart above of the composition of milk.",
+    tariffModel: {"kind":"orderedSplit","notation":"4+2"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A: (Butter) fat", marks: null, contextNote: "The bracketed word is context, not a requirement — \"fat\" scores." },
+    { id: "r-2", kind: "point", verbatim: "B: Water", marks: null },
+    ],
+    figure: {
+          "candId": "agricultural-science-2025-OL-paper-p25-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p25-i0.png",
+          "srcHash": "512c2df90de4b4c3e1d5fe81ba10bb4e",
+          "alt": "Exploded pie chart titled in bold 'Average Milk Composition', showing the typical composition of cow's milk. One large green sector dominates the pie and is labelled inside with a red bold B and the value 87.5%. Four thin sectors are pulled out to the upper right, each with a leader line to its percentage: a gold/yellow sliver labelled 4.20%, a pale blue sliver labelled 0.90%, a pink/magenta sliver labelled 3.40%, and a purple sliver labelled 4.00% which also carries a white bold A inside it. To the right is a five-entry legend with colour swatches reading, top to bottom: pink = 'Protein', purple = 'A', green = 'B', gold = 'Lactose', blue = 'Minerals'. Above the chart is the stem '(iii) The chart shows the typical composition of cow's milk', and below it the instruction 'Identify A and B in the chart above of the composition of milk' with a blue-and-cream answer table headed 'Component' whose two rows are labelled A and B.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"The 4.00% sector, drawn in purple and pulled out from the pie — (butter) fat.","askedInThisQuestion":true},{"letter":"B","meaning":"The large green 87.5% sector that forms the body of the pie — water.","askedInThisQuestion":true}],
+  } as SecCard,
 ];

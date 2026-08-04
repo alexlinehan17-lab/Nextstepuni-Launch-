@@ -1,0 +1,250 @@
+[
+ {
+  "questionRef": "2021 HL Q14(b)(i)",
+  "why": "No usable crop exists. The four breed photographs A–D are on paper page 27, and none of the nine agricultural-science 2021 HL crops in this card's candidateFigures comes from that page (they are pages 3, 6, 7, 8, 10, 39 and 45 only). Binding any of them would put a different question's picture on a breed-identification card. The questionText also names lettered parts, so without a labelled figure the build would drop it as 'names lettered parts but carries no labelled figure'."
+ },
+ {
+  "questionRef": "2021 HL Q15(b)(i)",
+  "why": "The five-treatment line graph of total available kg DM/ha from November to March is on paper page 33, which yielded no extractable image at all — the chart is drawn as vector strokes rather than an embedded bitmap, so the extractor produced nothing for that page. No candidate crop shows it, and the scheme's answer ('FYM ‐ High') is a pure graph reading that cannot be reconstructed in a stem."
+ },
+ {
+  "questionRef": "2021 HL Q15(b)(ii)",
+  "why": "Same missing figure as Q15(b)(i): the calculation is read straight off the page-33 line graph (3700 – 1400, 3400 – 1000), and no crop of that graph exists in candidateFigures. Reproducing the plotted values in a stem would be inventing data the student cannot check."
+ },
+ {
+  "questionRef": "2021 HL Q15(b)(iii)",
+  "why": "Same missing figure. The scheme's 4-mark answer is anchored to a specific reading — 'the highest Kg DM per ha availability in Feb ... was in the FYM High (25 ton / ha) treatment as there was 3200 kg DM per ha available for grazing' — which is meaningless without the page-33 graph, and no crop of it exists."
+ },
+ {
+  "questionRef": "2021 HL Q15(b)(iv)",
+  "why": "Same missing figure, and the scheme is explicit that 'All statements above must be backed up by relevant evidence from graph'. Every one of the 3(2) marking points is a comparison between plotted treatment lines, so the part is both unanswerable and unmarkable without the page-33 graph, for which no crop exists."
+ },
+ {
+  "questionRef": "2021 HL Q16(a)(i)",
+  "why": "The milk payment table (litres and kg supplied, protein and fat percentages and kilograms for Dan and Joe, the €5.48/kg protein and €3.35/kg fat prices, the €0.04/litre deduction, and Joe's pre-computed €9,316 and €6,830 lines) is a ruled text-and-vector table on paper page 35, not an embedded image, so no crop of it was extracted and none appears in candidateFigures. The scheme's answer is the worked arithmetic on that table, so a card without it would ask a student to calculate from figures they cannot see."
+ },
+ {
+  "questionRef": "2021 HL Q17(b)(i)",
+  "why": "This is table-reading twice over — take field 2's P (6.42 mg/l) and K (157 mg/l) off the soil-results table and look each up against the printed Reference Soil Index table to reach 'P = 3 / K = 4'. Both tables are on paper page 41, and no crop from that page exists in this card's candidateFigures, so there is nothing to determine from."
+ },
+ {
+  "questionRef": "2021 OL Q1(a)(i)",
+  "why": "No crop of the part (a) tick-box plant photographs exists. The page-3 images were not extracted, and this card's candidateFigures contain no page-3 crop. The only 2021 OL plant crop, p04-i0, is part (b)(i)'s four grassland weeds — a different question with different answers (daisy, dock, buttercup, thistle, not oilseed rape). Binding it would put a neighbour's picture on the card, which is exactly the defect this wave removes."
+ },
+ {
+  "questionRef": "2021 OL Q1(a)(ii)",
+  "why": "Same reason as (a)(i): the barley photograph is on page 3 and no page-3 crop was extracted. p04-i0 shows part (b)'s grassland weeds, not the (a) tick-box cereals, so it cannot stand in."
+ },
+ {
+  "questionRef": "2021 OL Q1(a)(iii)",
+  "why": "Same reason as (a)(i): the clover photograph is on page 3 and no page-3 crop was extracted. The only available plant crop belongs to part (b)(i), a different question."
+ },
+ {
+  "questionRef": "2021 OL Q8(b)(i)",
+  "why": "The part (b) safety sign is printed on page 11 and no page-11 crop exists among the candidates. The available sign crop, p10-i0, carries part (a)'s sign — a yellow triangle with a lightning bolt, whose scheme answer is 'Danger overhead power lines'. Part (b)'s answer is 'Caution farm machinery / beware of moving machinery', so binding p10-i0 here would show the student the wrong sign and mark them against the wrong answer."
+ },
+ {
+  "questionRef": "2021 OL Q12(a)",
+  "why": "The four cattle and sheep breed photographs lettered A to D are on page 16 and no page-16 crop exists among the candidates. Breed identification (Charolais, Limousin, Jacob, Border Leicester) is answerable only from the photographs, and there is no other 2021 OL crop showing them — p34-i0 shows two beef bulls belonging to Q18(b)(iii) and is not a substitute."
+ },
+ {
+  "questionRef": "2022 HL Q9(a)(i)",
+  "why": "No crop on this card's candidate list is a calf's stomach - the list is the 2022 HL paper's own figures (breed grid, FCR and silage tables, weaning-efficiency diagram, sustainability targets, sward plants, milk composition, calf housing, smart cow, plant breeding, Origin Green, IMS weeds), and binding any of them would put a neighbouring question's picture on this card. That is the exact defect this wave exists to remove. The underlying reason for the original deferral also stands: the scheme band-marks the drawing ('D = 3, 2, 0', with the criterion 'Candidates diagram must clearly show all four chambers, the abomasum being the largest stomach in comparison to others, especially the rumen or oesophageal groove directing the milk straight to the abomasum') and then awards 'L = 3(1)' for 'Any three labels' without naming a single one. There are no discrete answer phrases to transcribe, only a criterion, and RowKind 'band' is deliberately absent from the model until a renderer exists. Would need a purpose-made reference diagram of the four-chambered calf stomach plus a named label key - neither exists yet."
+ },
+ {
+  "questionRef": "2022 HL Q18(b)(ii)",
+  "why": "The figure half of the deferral is now solved - agricultural-science-2022-HL-paper-p38-i0.png was opened and is the complete Teagasc 'Integrated Management System' diagram (the inverted grey 'The Past' triangle, the upright green 'The Future' triangle, and the 'Examples of Cultural Control Options' column). But the second, independent reason still blocks the card, and I verified it rather than assuming: the scheme's answer is a two-column table whose left column (Integrated Management, Use of herbicides, Increased seed rates, Cover crops, Competitive crops, Rogueing, Crop rotation, Whole cropping, Crop destruction, On-farm hygiene, Machinery hygiene) is interleaved into the middle of the right-hand advice text by the PDF extractor. I ran all eleven advice points through the build's own normaliser against the scheme file: ten fail the verbatim gate because a component name sits inside the sentence ('breaks lifecycle of weeds or weeds don't get a' + 'cropping' + 'chance to establish in an area'). Only one, the Cover crops advice, is contiguous - and the tariff is 3(4) = 12 marks needing three claimable rows. A card cannot be built from one point, and truncating the others mid-sentence would ship marking points that are not answers. Re-extract the scheme table before retrying."
+ },
+ {
+  "questionRef": "2022 OL Q2(a)(i)",
+  "why": "No crop of the four-breed plate exists. The question asks the student to identify three of the animals photographed as A, B, C and D on page 4 (scheme: A = Simmental, B = Landrace, C = Blackface mountain or Swaledale, D = Jersey), but no page-4 figure was extracted for this paper — the candidate list jumps from p03 to p05. The only 2022 OL breed plate available is p05-i0, which is the Q2(b) pair of RAMS lettered E and F; binding it would put two sheep in front of a question whose answers include a beef cow, a pig and a dairy cow. Nothing else in candidateFigures shows animals at all."
+ },
+ {
+  "questionRef": "2022 OL Q16(a)(ii)",
+  "why": "No crop of the grass-growth graph exists. The question is 'Shade onto the graph above the portion which represents the excess grass in summer months', and the entire scheme answer is 'Shaded area between continous blue line and orange dash line' — a mark made between two plotted lines on the page-29 chart 'Grass Growth Curve and Feed Demand'. That chart was never extracted (candidateFigures runs p23 then p31), and unlike Q9(a) or Q18(a) the answer is a region of the plot rather than a value, so it cannot be reconstructed from data transcribed into the stem either. Authoring it would leave the student told to shade a graph that is not there."
+ },
+ {
+  "questionRef": "2023 HL Q18(a)(v)",
+  "why": "No crop exists for the figure this question is about. The four California Mastitis Test steps are printed as a lettered picture-and-caption grid (A–D) on page 38 of the paper, and the scheme's whole answer is the ordering '1 A 2 D 3 B 4 C'. The extractor emitted no page-38 crop for this paper — the figure manifest holds nothing between p37-i0 and the end of the paper (the only 'p38' entries in the manifest belong to 2022 HL), so there is no candidate in this card's own candidateFigures list that shows the steps. The nearest crop, p37-i0, is the udder cross-section for (a)(i) and binding it would put a neighbour's image on the card. Worth 4(2) = 8 marks; re-run once a page-38 crop is extracted and inspected."
+ },
+ {
+  "questionRef": "2023 OL Q14(b)(i)",
+  "why": "No usable crop. The question needs the three farm diagrams A, B and C printed on page 24 of the paper — the scheme's answer is 'Diagram: C' and every accepted reason ('Different crops sown / lots of trees / animals are not allowed into river to drink / flowers or trees present or boundary created to allow for natural growth / no spraying') describes what is drawn inside diagram C. No crop of page 24 exists: this card's candidateFigures are p03, p04, p05, p06, p07, p08, p09, p12 (x2), p14, p15, p17, p20, p21, p28, p31, p32, p34, p35 and p36, and I checked each one's subject — none is the biodiversity plate. Binding any of them would put another question's picture on the card, which is the exact defect this wave exists to remove."
+ },
+ {
+  "questionRef": "2023 OL Q14(b)(ii)",
+  "why": "No usable crop. The question asks about 'the crop X being sown between the cows and the river in diagram A' — crop X and its position exist only as drawn elements on the page-24 farm-diagram plate (which also letters farmer W on diagram B). That plate has not been extracted; no candidate figure for this card is from page 24. Without it there is no X, no river and no cows for the answer ('Wildlife corridor / prevent soil erosion into river / prevents the cattle from drinking in or entering the river / reduce nutrients leaching into the river / increase biodiversity') to refer to."
+ },
+ {
+  "questionRef": "2023 OL Q14(b)(iv)",
+  "why": "No usable crop. Same page-24 plate as (b)(i) and (b)(ii): the scheme answers 'Diagram: B' plus two reasons that are all readings of that drawing ('cattle drinking in river / splash plate slurry spreading or slurry being spread near the river / no trees or plants / monoculture / no wildlife corridors / river banks are being eroded into the river / water quality (eutrophication) / spraying weed killer (near river)'). No crop of page 24 is among this card's candidates, so the card cannot be authored without inventing the picture."
+ },
+ {
+  "questionRef": "2023 OL Q15(a)(ii)",
+  "why": "No usable crop. The question needs the two soil-particle diagrams A and B printed on page 26 (keyed 'Soil particle', 'Water', 'Air'). Both marks are read off them: 'Soil sample – B' (5) and 'Reason – less (air) spaces or soil particles closer together' (5) — the reason is literally a description of the spacing drawn in diagram B. Page 26 has not been extracted; the nearest available 2023 OL crop is p28, which is the brown earth soil-profile block from part (b) and shows a completely different diagram. Skipping rather than binding a neighbouring soil picture."
+ },
+ {
+  "questionRef": "2024 HL Q1(a)",
+  "why": "Needs the three photographs of farm machinery/equipment (A bale wrapper, B stomach tube, C head gate / fostering crate) printed on page 3 of the paper. Only four crops exist for the 2024 HL paper — p14-i0 (Q9 soil photographs), p15-i0 (Q10 swards), p22-i2 (Q13 biodiversity-indicator table) and p37-i1 (Q18 calf) — and none of them is page 3. p14-i0 carries the letters A, B and C, but they head soil samples, not machinery; binding it would put three photographs of soil on a question about a bale wrapper. No crop fits."
+ },
+ {
+  "questionRef": "2024 HL Q2(a)(i)",
+  "why": "Needs the three breed photographs (A Landrace, B Blue Leicester, C Simmental) printed on page 4. No crop exists for page 4 of the 2024 HL paper. The only lettered A/B/C crop available is p14-i0, which is the Q9 soil-structure figure — a different question on a different page. Binding it would be exactly the neighbour's-image defect this wave exists to remove."
+ },
+ {
+  "questionRef": "2024 HL Q13(a)(ii)",
+  "why": "Needs the four plant photographs labelled A, B, C and D on page 22 (answers Primrose, Nettle, Ragwort, Meadow Thistle). The one page-22 crop available, p22-i2, is the biodiversity-indicator table further down that page (the 'Positive grassland indicators' / 'Negative grassland indicators' rows with their descriptions) — it carries no letters and no plant photographs at all. It is the right page but the wrong figure, and it would leave the student staring at a table while being asked to name four plants. It also names Primrose, Meadow Thistle, Ragwort and Nettles in its descriptions, so binding it would print the answer pool beside the question. No crop fits."
+ },
+ {
+  "questionRef": "2024 HL Q15(c)(i)",
+  "why": "Needs the bar chart 'Average Liveweight Gain of Dairy Beef Calves' on page 30 — the 125 kg at 15 weeks and 40 kg at birth that start the calculation are only readable off it, and the paper explicitly says 'shown in the graph below' and 'Analyse the graph'. No crop exists for page 30. None of the four available crops is a graph."
+ },
+ {
+  "questionRef": "2024 HL Q16(b)(i)",
+  "why": "Needs the multi-column results table on page 32 (Sample 1/2/3 against Colostrum IgG, average birthweight and average weaning weight) — the answer 'Pooled colostrum is best' is a comparison across its rows. No crop exists for page 32; this is one of the multi-column comparison tables the extractor cannot yet isolate. None of the four available crops is that table."
+ },
+ {
+  "questionRef": "2024 HL Q16(b)(ii)",
+  "why": "Depends on the same page-32 results table as (b)(i) — the advice is drawn from comparing the three treatment groups' weaning weights. No crop exists for page 32. Expected extractor gap on a multi-column comparison table."
+ },
+ {
+  "questionRef": "2024 HL Q17(c)(ii)",
+  "why": "Needs the results table on page 36 giving loss in mass for the peat and loam samples; the 55.2 g the calculation starts from exists only there. No crop exists for page 36. Another multi-column comparison table the extractor has not isolated."
+ },
+ {
+  "questionRef": "2024 HL Q17(c)(iii)",
+  "why": "Depends on value A carried forward from the same page-36 results table (61.3 x 0.58). No crop exists for page 36, so the card would reference a table it does not have."
+ },
+ {
+  "questionRef": "2024 HL Q18(a)(ii)",
+  "why": "Needs the photographs of the two parent breeds A and B on page 37 (answers Hereford and Holstein Friesian). The only page-37 crop, p37-i1, is the part (a)(iii) figure: it shows the OFFSPRING calf C alone, with A and B nowhere in the frame. Binding it would show a student a crossbred calf while asking them to identify its parents — a wrong picture, not merely a partial one. No crop fits. The parent identities are instead carried in the stem of the Q18(a)(iii) card so that part's back-reference is not dangling."
+ },
+ {
+  "questionRef": "2024 HL Q18(c)",
+  "why": "Needs the IPM pyramid diagram on page 39 (Chemical (Pesticide) / Biological / Physical-Mechanical / Cultural-Sanitation / Prevention), which the question points straight at: 'Using the information shown in the diagram on IPM'. Page 39 carries no embedded raster images at all — the pyramid is drawn as vector shapes, so the extractor emitted nothing for it and no crop exists. The five tier names are the scaffold for all 16 marks, so this needs a real crop of that diagram (or a vector-aware extraction pass) before it can be carded."
+ },
+ {
+  "questionRef": "2024 OL Q1(a)",
+  "why": "No crop exists for the strip-grazing diagram. The Q1 diagram is on paper page 3 and the extractor produced no image for that page — the earliest 2024 OL crop in this card's candidate list is p05-i0 (Q2(b)). Binding any of the 24 available crops would put a different question's picture on the card. On top of that the scheme's entry for (a) is a tick in a direction-of-grazing box with no answer text at all, so even with the diagram there is no verbatim marking point to transcribe."
+ },
+ {
+  "questionRef": "2024 OL Q1(b)",
+  "why": "Same missing figure. 'Label A in the diagram' is a dangling reference to a leader line on the page-3 strip-grazing diagram, and no crop of that diagram was extracted. The answer '(Moveable)(Electric) Fence' is meaningless without seeing where A points, and none of the 24 candidate crops shows this diagram."
+ },
+ {
+  "questionRef": "2024 OL Q1(c)",
+  "why": "Same missing figure. 'Identify the type of grazing system shown in the diagram' is unanswerable without the page-3 diagram, and a text-only card would either give away the answer (strip grazing) in its own stem or ask about a picture it does not carry. No candidate crop shows the grazing diagram."
+ },
+ {
+  "questionRef": "2024 OL Q11(a)(ii)",
+  "why": "No crop exists for the selective-breeding diagram on paper page 14. The scheme's answer is the single letter 'A', which can only be reached by reading the egg counts printed beside hens A, B and C in that diagram — and those numbers are not in the PDF text layer either, so they cannot be carried in a stem. The nearest candidates (p15-i0, p15-i1, p15-i2) are the Q11(b) Belgian Blue and cow photographs, which belong to the alternative part."
+ },
+ {
+  "questionRef": "2024 OL Q13(b)(i)",
+  "why": "The quadrat results table on paper page 20 was not isolated by the extractor — the two p20 crops are the plant-identification photograph grid for part (a)(ii), not the table. The dock-leaf row (present in 4 of 10 throws) is what the calculation 4/10 x 100/1 = 40% reads off, so without the table crop this is one of the expected multi-column-table skips. Binding a p20 photograph crop would put the wrong picture on the card."
+ },
+ {
+  "questionRef": "2024 OL Q13(b)(iii)",
+  "why": "The crop exists (p21-i1 carries the instruction and the three chart options A, B and C) but the scheme's entry is a bare tick under one image with no answer text anywhere — the options are pictures, not words, so there is nothing verbatim to transcribe. Any row would have to be either a bare letter or a phrase I invented ('bar chart'), and an invented phrase is untraceable in the scheme. Tariff-only entry, so it stays deferred."
+ },
+ {
+  "questionRef": "2024 OL Q14(a)(ii)",
+  "why": "The grass-growth-curve crop exists (p22-i0, axes 'Grass growth' and 'Time of Year', January to December) but the scheme's entire entry for this part is the single character 'X' — a placement instruction, not an answer. There is no marking-point text to quote and no way to state where the X goes without inventing wording the scheme never printed."
+ },
+ {
+  "questionRef": "2024 OL Q14(b)(i)",
+  "why": "The crop exists (p22-i1, the two lettered grass photographs) but the scheme's entry is a tick under one photograph with no answer text — the options are images, so the only 'answer' is a letter. Same tariff-only case as Q13(b)(iii). Note the reasoning behind the choice is preserved: it is carded at (b)(ii), which does have real scheme text ('Leafy grass / no seed heads / more digestible') and binds this same crop."
+ },
+ {
+  "questionRef": "2025 HL Q1(a)",
+  "why": "No crop of the breed plate exists. The two cattle photographs lettered A and B sit on page 3 of the paper (the page carries 2 images), and no page-3 crop was published — the 16 available 2025 HL crops are p06, p07, p08, p09, p10 x2, p12, p15, p16, p17, p23 x2, p24, p28 x2 and p35, covering Q3(a), Q3(b), Q4(a), Q4(b), Q5, Q5(c), Q7(b), Q9(b), Q10, Q11, Q13(c), Q13(d), Q15(a) and Q17(a). I opened every one: not one shows a lettered pair of beef cattle. The scheme answer (A: Aberdeen Angus / B: Hereford) is pure photo identification, so binding a neighbour's picture would be exactly the defect this wave removes. Needs page 3 extracted."
+ },
+ {
+  "questionRef": "2025 HL Q1(b)",
+  "why": "Depends on the same unextracted page-3 breed plate as Q1(a). The scheme answer is 'A or Aberdeen Angus' — the student can only choose between A and B by seeing which photograph is which, and no crop in the candidate list shows either animal. Needs page 3 extracted."
+ },
+ {
+  "questionRef": "2025 HL Q6(a)",
+  "why": "No crop of the lambing-equipment plate exists. Page 11 of the paper carries the six photographs lettered A to F (7 images on that page) under 'Identify the three pieces of equipment needed for lambing from the six images below'; no page-11 crop was published, and none of the 16 available 2025 HL crops shows farm equipment of any kind. The scheme keys its answers to the letters (A: Stomach tube / C: heat lamp / D: ropes), so the card is unanswerable and unmarkable without that plate, and the lettered-parts guard would drop it in any case. Needs page 11 extracted."
+ },
+ {
+  "questionRef": "2025 HL Q14(a)(i)",
+  "why": "No crop of the soil-compaction picture exists. Page 25 carries it (5 images on that page) — a photograph of crop growth in compacted versus uncompacted soil, its two halves lettered A and B and annotated 'Greater pore size / Less porosity / Smaller pore size / More porosity'. No page-25 crop was published, and none of the 16 available crops shows soil or root growth. The scheme answer is 'Soil: B', which nothing in the printed text discloses. Needs page 25 extracted."
+ },
+ {
+  "questionRef": "2025 HL Q14(a)(ii)",
+  "why": "No crop of the water-availability graph exists. It shares page 25 with the compaction picture (Sand, Sandy loam, Loam, Silt loam, Clay loam, Clay along the axis) and was not published; none of the 16 available crops is a graph. Both numbers in the scheme's working, '30 – 10 = 20%', are read off that graph for the silt loam column, so there is no honest way to put them in a stem — writing them in would be handing over the reading the question exists to test. Needs page 25 extracted."
+ },
+ {
+  "questionRef": "2025 HL Q15(b)",
+  "why": "No crop of the plant plate exists. Page 30 carries the four photographs lettered A to D (16 images on that page); no page-30 crop was published, and the only plant photographs among the 16 available crops are the two potato flowers on p28, which belong to Q15(a) and show neither cleavers, chicory, silverweed nor oilseed rape. Pure photo identification against a letter key — impossible without its own plate. Needs page 30 extracted."
+ },
+ {
+  "questionRef": "2025 HL Q15(c)",
+  "why": "Two independent blockers. First, no crop of the weed-control diagram exists: it sits on page 30 (the flow diagram of Seeds / Seedlings / Mature plants against Crop rotation, Seedbed preparation, Pre-emergence herbicide, Seed rate, Biological controls, Patch/band spray, Pre-harvest treatment), no page-30 crop was published, and no crop among the 16 available shows it. The question names the diagram explicitly and the scheme credits 'any valid qualified description of a point from diagram', so the figure is load-bearing. Second, even with the crop the 4x4 tariff spreads sixteen printed marking points across three headings with the instruction 'One point under each heading and the fourth point from any heading' — a structure the row model cannot represent without inventing or losing marks. Needs page 30 extracted and a tariff decision before it can be carded."
+ },
+ {
+  "questionRef": "2025 OL Q1(a)(i)",
+  "why": "No crop of the four cattle photographs A–D exists. The only page-4 crop in this card's candidate list (agricultural-science-2025-OL-paper-p04-i0) is Question 1(b)'s pair of captioned bull photographs, Aberdeen Angus and Belgian Blue — opened and confirmed to be a different question. Binding it would put the wrong picture over the breed-identification answers."
+ },
+ {
+  "questionRef": "2025 OL Q4(a)",
+  "why": "No crop of the aerial dairy-farm photograph exists. None of the 18 candidate figures shows a farm layout; every scheme answer (paddocks near the yard, roadways for access, sheds near the farmhouse, silage storage near the sheds) is an observation about that specific photograph, so there is nothing for the card to stand on."
+ },
+ {
+  "questionRef": "2025 OL Q4(b)",
+  "why": "Same missing aerial farm photograph, and this part additionally needs the structures lettered A, B and C marked on it — the answer is the bare letter A, which is meaningless without the labelled image. The paper's response mode is also to place an X on the photograph, which the tick model cannot render."
+ },
+ {
+  "questionRef": "2025 OL Q4(c)",
+  "why": "Same missing aerial farm photograph. The scheme's answers (paddocks adjacent for rotational grazing, roadways for access, little or no hedgerows, farmyard central to the fields) all describe features of that image."
+ },
+ {
+  "questionRef": "2025 OL Q7(a)",
+  "why": "No crop of the four plant photographs A–D exists in the candidate list. The answers (ryegrass, white clover, nettle, chicory) are reachable only by looking at the pictures, and no available crop shows them."
+ },
+ {
+  "questionRef": "2025 OL Q12(a)(i)",
+  "why": "No crop of the lamb-mortality bar chart exists. The answer 'Abortion and stillbirth' is read off the relative bar heights, which are not present as text and are on none of the candidate figures."
+ },
+ {
+  "questionRef": "2025 OL Q12(a)(ii)",
+  "why": "Same missing lamb-mortality chart. This part also asks the candidate to draw a bar to a height of 20 on the graph, a drawing response Mark Bank has no renderer for, so it stays out even once the chart exists."
+ },
+ {
+  "questionRef": "2025 OL Q12(b)(i)",
+  "why": "No crop of the single-versus-twin lamb growth-rate line graph exists. 'Which lamb had the higher growth rate over the 25 weeks' is purely a reading of the plotted lines."
+ },
+ {
+  "questionRef": "2025 OL Q12(b)(iii)",
+  "why": "Same missing growth-rate graph. The part asks the candidate to extrapolate the plotted lines to slaughter weight; without the lines there is nothing to predict from."
+ },
+ {
+  "questionRef": "2025 OL Q14(c)(iii)",
+  "why": "No crop of the three lettered crop photographs J, K and L exists. The one page-21 candidate (agricultural-science-2025-OL-paper-p21-i0) was opened and is Question 14(a)'s Ballyhaise soil-temperature bar chart, a different part of the question."
+ },
+ {
+  "questionRef": "2025 OL Q15(d)(i)",
+  "why": "No crop of the four lettered calf-nutrition photographs exists. The answer is the sequence D – A – B – C, four letters bound to four images by page layout alone, so a card without them would show a bare letter string with nothing to attach it to."
+ },
+ {
+  "questionRef": "2025 OL Q16(a)(i)",
+  "why": "No crop of the beef-housing photograph exists. Every scheme answer — slatted floor, rubber mats, natural lighting, straw bedding, space in the pens, ventilation, high roof, headlock gates — is read off that photograph."
+ },
+ {
+  "questionRef": "2025 OL Q16(c)(i)",
+  "why": "No crop of the forage-crop DM% table exists; it is printed as an image and did not extract as text. The three tick-box options are text, but the card would still carry a dangling 'shown below in the table' reference."
+ },
+ {
+  "questionRef": "2025 OL Q17(b)(ii)",
+  "why": "No crop of the four lettered flocculation-step boxes exists. The only page-31 candidate (agricultural-science-2025-OL-paper-p31-i0) was opened and is Question 17(a)'s earthworm photograph and answer lines, not the investigation steps. The scheme's whole answer is the letter order D – A – B – C, which needs those images."
+ },
+ {
+  "questionRef": "2025 OL Q18(c)(i)",
+  "why": "No crop of the Bord Bia Irish dairy exports bar chart exists. 'Which dairy product decreased in exports between 2015 and 2021' is read off bar heights that did not extract as text."
+ },
+ {
+  "questionRef": "2025 OL Q18(c)(ii)",
+  "why": "Same missing dairy exports bar chart. The question names the graph explicitly and its answer is a value estimated from it (265,000 to 275,000), so it cannot be carded without the figure."
+ }
+]
