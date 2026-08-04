@@ -205,7 +205,7 @@ export const CARDS: SecCard[] = [
     id: "agsci-2021-ol-q6", topicId: "agsci-4-3-2", conceptId: "sheep-nutrition-terms",
     section: "A", questionRef: "2021 OL Q6(a)–(e)",
     stem: "Word list: Steaming up / Milk fever / Twin lamb disease / Flushing / Maintenance diet.",
-    questionText: "Complete the sentences below in relation to sheep nutrition using words from the list.",
+    questionText: "Complete each of the sentences below in relation to sheep nutrition, using words from the list above. (a) High levels of feeding prior to and during mating is known as ………. (b) Gradual increase of concentrates prior to lambing is known as ………. (c) Ewes being fed just enough to support body processes is known as ………. (d) Pregnancy toxaemia is also known as ………. (e) Calcium is added to the ration of the ewes prior to lambing to prevent ……….",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "High levels of feeding prior to and during mating — Flushing", marks: 2 },
@@ -599,6 +599,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "(Herbicide that) controls specific (target) weeds or weed categories", marks: 2, accepts: ["a chemical which is toxic to some plant species or less toxic to others","chemical that will kill or target certain plants and not others"], contextNote: "The underlined term is 'selective herbicide'. One 2-mark point – the three wordings are alternatives, not separate points." },
     ],
+    figure: {
+          "candId": "agricultural-science-2022-OL-paper-p09-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-OL-paper-p09-i1.png",
+          "srcHash": "68ac49a40b920d3f1af27488c63c3c92",
+          "alt": "The same Question 6 stimulus as p09-i0, framed slightly higher on the page with more white space above. Heading 'Question 6' at top, then the stem 'The safety symbols below are present on a selective herbicide used to control all species of docks in an established grassland sward' with 'selective herbicide' underlined. Below, the two red-diamond GHS hazard pictograms: A is the black silhouette of a human head and torso with a white starburst on the chest; B is a bold black exclamation mark. To the right, the same colour photograph of broad-leaved dock plants (large oval leaves with pale midribs and brown blotching) growing up through grass. At the foot of the crop, '(a) Explain the underlined term.' and an empty three-row answer box.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -703,7 +711,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2022-ol-q9a", topicId: "agsci-1-3", conceptId: "graph-interpretation-sheep-price",
     section: "A", questionRef: "2022 OL Q9(a)",
-    stem: "Analyse the graph showing the average Irish sheep meat price per kg and answer the questions which follow. (Irish Annual Average Sheep Meat Price per kg, as labelled on the graph: 2011 €4.78, 2012 €4.61, 2013 €4.58, 2014 €4.75, 2015 €4.84, 2016 €4.81, 2017 €4.77, 2018 €5.05, 2019 €4.76, 2020 €5.24, 2021 €6.62. Adapted from Bord Bia, 2021.)",
+    stem: "Analyse the following data on the average Irish sheep meat price per kg and answer the question which follows. Irish Annual Average Sheep Meat Price per kg: 2011 €4.78; 2012 €4.61; 2013 €4.58; 2014 €4.75; 2015 €4.84; 2016 €4.81; 2017 €4.77; 2018 €5.05; 2019 €4.76; 2020 €5.24; 2021 €6.62. (Adapted from Bord Bia, 2021.)",
     questionText: "Identify which year farmers achieved the highest price per kg for their sheep meat and give one reason for your answer.",
     tariffModel: {"kind":"fixed","notation":"Year 3 + Reason 1"}, totalMarks: 4,
     rows: [
@@ -718,7 +726,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2022-ol-q9b", topicId: "agsci-1-3", conceptId: "graph-interpretation-sheep-price",
     section: "A", questionRef: "2022 OL Q9(b)",
-    stem: "Analyse the graph showing the average Irish sheep meat price per kg and answer the questions which follow. (Irish Annual Average Sheep Meat Price per kg, as labelled on the graph: 2011 €4.78, 2012 €4.61, 2013 €4.58, 2014 €4.75, 2015 €4.84, 2016 €4.81, 2017 €4.77, 2018 €5.05, 2019 €4.76, 2020 €5.24, 2021 €6.62. Adapted from Bord Bia, 2021.)",
+    stem: "Analyse the following data on the average Irish sheep meat price per kg and answer the question which follows. Irish Annual Average Sheep Meat Price per kg: 2011 €4.78; 2012 €4.61; 2013 €4.58; 2014 €4.75; 2015 €4.84; 2016 €4.81; 2017 €4.77; 2018 €5.05; 2019 €4.76; 2020 €5.24; 2021 €6.62. (Adapted from Bord Bia, 2021.)",
     questionText: "State which year farmers achieved the lowest price per kg for their sheep meat.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -732,7 +740,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2022-ol-q9c", topicId: "agsci-4-3-1", conceptId: "lamb-slaughter-weight",
     section: "A", questionRef: "2022 OL Q9(c)",
-    questionText: "Identify the average slaughter weight of lambs by placing a tick in the box below.",
+    questionText: "Identify the average slaughter weight of lambs by choosing the correct value from the following three options: 30 kg, 50 kg or 42 kg.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "gate", verbatim: "42*(kg)", marks: 3, contextNote: "Tick-box choice on the paper: 30 / 50 / 42. Asterisked — only the exact figure scores and a surplus wrong figure cancels this row. Exact term required." },
@@ -849,6 +857,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Continental breed", marks: 3, contextNote: "Tick-box choice on the paper: British breed / Continental breed." },
     ],
+    figure: {
+          "candId": "agricultural-science-2022-OL-paper-p15-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-OL-paper-p15-i1.png",
+          "srcHash": "4981cb3ad36f92448e185297ef25bb3c",
+          "alt": "Q11(b) stimulus. Printed text: '(b) (i) The heifer shown is a Blonde d’Aquitaine. State if this breed is a continental or british breed by placing a tick in the correct box.' Below the text a two-row tick-box table with pale green left-hand cells: 'British breed' with an empty box beside it, and 'Continental breed' with an empty box beside it. To the right is a colour photograph of a heifer standing side-on in a grass field in sunshine: a solid cream/pale-fawn coloured animal with a pink muzzle, yellow ear tags in both ears, white lower legs and a heavily muscled hindquarter; other cattle are visible behind her. Below: '(ii) The picture shows a heifer that graded U for conformation in the factory at kill out. Explain the underlined term.' ('conformation' underlined) with a three-row blank answer box.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -863,6 +879,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Shape or muscle (distribution) of animal", marks: 2, contextNote: "The underlined term is 'conformation'. One 2-mark point — 'shape' and 'muscle distribution' are alternative wordings, not two points." },
     ],
+    figure: {
+          "candId": "agricultural-science-2022-OL-paper-p15-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-OL-paper-p15-i1.png",
+          "srcHash": "4981cb3ad36f92448e185297ef25bb3c",
+          "alt": "Q11(b) stimulus. Printed text: '(b) (i) The heifer shown is a Blonde d’Aquitaine. State if this breed is a continental or british breed by placing a tick in the correct box.' Below the text a two-row tick-box table with pale green left-hand cells: 'British breed' with an empty box beside it, and 'Continental breed' with an empty box beside it. To the right is a colour photograph of a heifer standing side-on in a grass field in sunshine: a solid cream/pale-fawn coloured animal with a pink muzzle, yellow ear tags in both ears, white lower legs and a heavily muscled hindquarter; other cattle are visible behind her. Below: '(ii) The picture shows a heifer that graded U for conformation in the factory at kill out. Explain the underlined term.' ('conformation' underlined) with a three-row blank answer box.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -973,14 +997,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2023-ol-q4", topicId: "agsci-2-3", conceptId: "regenerative-farming-practices",
     section: "A", questionRef: "2023 OL Q4",
-    stem: "The diagram shows some regenerative farming practices. The three practices asked about are printed as labels on the paper's answer lines: Controlled grazing (management of forage with grazing animals); Crop rotation; Using organic fertilisers.",
-    questionText: "Outline one reason why each of the following farming practices is carried out.",
+    stem: "The diagram shows some regenerative farming practices. Analyse the diagram and answer the question which follows.",
+    questionText: "Outline one reason why each of the following farming practices is carried out: (1) Controlled grazing (management of forage with grazing animals); (2) Crop rotation; (3) Using organic fertilisers.",
     tariffModel: {"kind":"fixed","notation":"6+2+2"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Controlled grazing — increased yield of crop", marks: 6, accepts: ["effective harvesting of crop or increased forage intake","increased biodiversity","decrease fossil fuel usage or reduced labour and feed costs","increased digestibility of the sward","fewer weeds","environmentally responsible grazing areas"], contextNote: "One reason only is asked for; every solidus-separated item in the scheme's controlled-grazing list is an accepted answer for the same marks, not an extra point." },
     { id: "r-2", kind: "point", verbatim: "Crop rotation — helps return nutrients to the soil or better nutrient management", marks: 2, accepts: ["reduced need for artificial fertilisers","interrupt pest or disease cycles or weed cycles","improve soil health or improves soil structure or decreases compaction","increasing biomass from different crops root structures","increase biodiversity on the farm"], contextNote: "One reason only is asked for; the solidus list is alternatives, not extra points." },
     { id: "r-3", kind: "point", verbatim: "Using organic fertilisers — reduced need for artificial fertilisers or cheaper or more sustainable", marks: 2, accepts: ["improve water movement into the soil","add structure to the soil","feed beneficial microbes","increase soil fertility","meet organic certification or customer preference"], contextNote: "One reason only is asked for; the solidus list is alternatives, not extra points." },
     ],
+    figure: {
+          "candId": "agricultural-science-2023-OL-paper-p06-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-OL-paper-p06-i0.png",
+          "srcHash": "cc23ae7f59762009049b300373740330",
+          "alt": "An isometric cartoon illustration of a mixed farm landscape, used to show regenerative farming practices, with six white bold callout labels joined to the picture by white dashed leader lines ending in small white dots. Reading around the picture the labels are: 'Planting trees' (upper left, leading to a block of young green trees), 'Controlled grazing' (mid left, leading to a fenced green paddock containing white sheep), 'Stubble retention' (lower left) and 'Crop rotation' (bottom centre, leading to a dark tilled strip with a blue tractor working it and a white circular double-headed arrow drawn beside it), 'Integrated practices' (upper right, leading to a red barn with a farmer figure, polytunnel/greenhouse rows of green plants and a pale blue silo), and 'Using organic fertilisers' (lower right, leading to a fenced dark-soil plot with pink/brown manure heaps and young plants). Other scene elements: a wind pump/windmill and a pond with a stream at the top, black-and-white dairy cows in a paddock, a farmer figure in red tending a vegetable plot with red produce, a yellow ripe cereal field with an orange combine harvester, and white post-and-rail fencing dividing the fields. Above the illustration is the printed text 'Question 4. The diagram shows some regenerative farming practices. Analyse the diagram and answer the questions which follow.' and below it 'Outline one reason why each of the following farming practices is carried out.' with the start of the answer table whose first stub reads 'Controlled grazing (management of forage with grazing animals):' and, lower, 'Crop rotation:'.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -995,6 +1027,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Body condition score", marks: 6, accepts: ["technique used to assess how fat or thin an animal is","score 1 – 5 (1 = very thin and 5 = very fat)"], contextNote: "The scheme prints a single 6 against the whole solidus list, so any one of the three statements earns the full 6 marks." },
     ],
+    figure: {
+          "candId": "agricultural-science-2023-OL-paper-p08-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-OL-paper-p08-i0.png",
+          "srcHash": "5cd59ea7e08e77b91cef8575a812a038",
+          "alt": "A grass growth cycle / silage quality chart. Across the top of a cream panel are five drawings of a grass plant at successive growth stages, each rooted in a small patch of brown soil and getting taller and more mature left to right: a short leafy tuft; a larger leafy tuft with emerging stems; a dense tall dark green leafy plant; a taller plant with a pale seed head emerging; and a tallest yellowing plant with an open seed head. Beneath the plants runs a horizontal orange/brown bar carrying four bold white letters spaced along it: A, B, C, D. Below the bar, a black label at the left reads 'Silage % Dry Matter Digestibility (DMD)' and four curly brackets (alternating red and dark blue) span sections of the bar. Under the brackets are DMD figures and the stock classes they suit: under the first (red) bracket '76+' and '74-76' with the red caption 'Freshly calved dairy cows in winter milk'; under the second (blue) bracket '72' with the blue caption 'Dry cows requiring BCS gain'; under the third (red) bracket '69-70' with the red captions 'Dry dairy cows requiring little or no BCS gain' and 'Dry suckler cows requiring BCS gain'; under the fourth (blue) bracket '<67' with the blue captions 'Dry dairy cows - meal feeding required to gain BCS' and 'Suckler cows requiring no BCS gain'. Above the chart is the printed text 'Question 6  Answer either (a) or (b). (a) The diagram shows the grass growth cycle and how each growth stage affects silage quality. Analyse the picture and answer the questions which follow.'",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1104,8 +1144,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2023-ol-q9b-i", topicId: "agsci-4-1", conceptId: "ruminant-stomach-chamber-functions",
     section: "A", questionRef: "2023 OL Q9(b)(i)",
-    stem: "The paper prints an answer table headed 'Stomach chamber / Function' with two rows to complete: Rumen and Omasum.",
-    questionText: "Explain the function of each of the following ruminant stomach chambers.",
+    stem: "The ruminant stomach has four chambers.",
+    questionText: "Explain the function of each of the following ruminant stomach chambers: (1) the rumen; (2) the omasum.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Rumen — microorganisms break down cellulose", marks: 1, accepts: ["breakdown starch (fermentation)","produces VFA","synthesise amino acids","synthesise B and K vitamins"], contextNote: "One mark for the rumen; any one of the scheme's solidus-separated functions earns it." },
@@ -1249,8 +1289,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q1d", topicId: "agsci-3-3-2", conceptId: "strip-grazing-advantages",
     section: "A", questionRef: "2024 OL Q1(d)",
-    stem: "The diagram below shows a type of grazing system. Analyse the diagram and answer the questions that follow. (Part (c) of this question establishes that the system shown is strip grazing — the diagram itself is not reproduced here.)",
-    questionText: "Outline one advantage of this grazing system.",
+    stem: "A farmer uses a strip grazing system.",
+    questionText: "Outline one advantage of strip grazing.",
     tariffModel: {"kind":"fixed","notation":"2"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Leafy grass or more digestible grass or less weeds or increase animal production", marks: 2, accepts: ["gives grass a chance to recover","less soil compaction","less poaching or damage to grass","less grass wastage","less disease"], contextNote: "One advantage only is asked for — any one of these scores the full 2 marks." },
@@ -1300,6 +1340,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Be careful of swinging gates", marks: 2, accepts: ["have another person present or tell someone","don’t stand too close","or another one valid precaution"], contextNote: "One precaution only is asked for — any one of these scores the full 2 marks.", openList: true },
     ],
+    figure: {
+          "candId": "agricultural-science-2024-OL-paper-p05-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p05-i0.png",
+          "srcHash": "e98ac1a834f4f2e82a08a959fff28d52",
+          "alt": "Question 2(b), two cattle-handling facility pictures side by side, each headed by a bold capital. Picture A is a colour photograph of a galvanised steel cattle race/crush built along a concrete wall in a yard, made of horizontal bars in vertical posts, with a heavier vertical-barred gate structure at the far end; an orange callout box with white bold text \"Headgate\" and a yellow arrow points to that end structure. Picture B is a black-and-white plan-view (bird's-eye) line drawing of a curved handling system on a pale background: a straight channel labelled \"Single file race\" by a leader line runs to the right, turns through a 180 degree bend into a rounded pen at the far right labelled \"Round crowd pen\", and continues round a second bend at the bottom left; small stylised cattle drawn from above are spaced along the route. A solid line path is labelled in red \"Right way\" and a dashed line path is labelled in red \"Wrong way\", and the caption \"Cattle see place to go\" runs along the bottom. Three small circled numerals, 1, 2 and 3, mark points along the route. Below the pictures, sub-parts (i) and (ii) with empty answer boxes.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1414,8 +1462,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q7a", topicId: "agsci-2-2-2", conceptId: "soil-compaction-factors",
     section: "A", questionRef: "2024 OL Q7(a)",
-    stem: "Soil compaction is an important factor that affects the productivity of the land. Analyse the diagram below and answer the questions that follow. The diagram feeds four headings into \"Soil Compaction\": Machine size, Soil water content, Tillage system, Crop rotation.",
-    questionText: "Using the four headings in the diagram above in relation to soil compaction, briefly describe how any three affect the growth of crops on the land.",
+    stem: "Soil compaction is an important factor that affects the productivity of the land. Four factors affect soil compaction: machine size, soil water content, tillage system and crop rotation.",
+    questionText: "Using the four headings above - machine size, soil water content, tillage system and crop rotation - in relation to soil compaction, briefly describe how any three affect the growth of crops on the land.",
     tariffModel: {"kind":"fixed","notation":"3(2)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Machine size: big heavy machines compact the soil reducing the growth of crops", marks: 2, accepts: ["Crop rotation: planting different crops leads to less soil compaction and increased crop growth"], contextNote: "Description 1 of 3 — any three of the four headings score 2 each." },
@@ -1430,12 +1478,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q7b", topicId: "agsci-2-2-2", conceptId: "ideal-soil-composition",
     section: "A", questionRef: "2024 OL Q7(b)",
-    stem: "Soil compaction is an important factor that affects the productivity of the land. The pie chart on the paper shows the ideal soil composition split between mineral matter, air, water and organic matter.",
+    stem: "Soil compaction is an important factor that affects the productivity of the land. The pie chart below shows the ideal soil composition: mineral matter, air, water and organic matter.",
     questionText: "Identify the % air in the ideal soil composition below by placing a tick (✓) in the correct box. [45% / 25% / 5%]",
     tariffModel: {"kind":"fixed","notation":"4"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "25%", marks: 4, contextNote: "The tick goes beside 25%." },
     ],
+    figure: {
+          "candId": "agricultural-science-2024-OL-paper-p10-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p10-i0.png",
+          "srcHash": "594eee2e5db0aefda2612af39b75327a",
+          "alt": "Question 7(b), the ideal soil composition pie chart with its tick-box options. The pie chart has four segments, each labelled in text of the matching colour: \"Mineral matter\" in blue for the large segment filling the right-hand side (a little under half the circle); \"Water\" in grey for the upper-left segment (roughly a quarter); \"Air\" in green for the lower-left segment (roughly a quarter); and \"Organic matter\" in red for a narrow wedge at the top of the circle (a few per cent). To the right of the chart is a three-row tick table: pale blue label cells reading 45%, 25% and 5%, each with an empty white cell beside it for the tick. The page footer \"Leaving Certificate Examination 2024 / Agricultural Science - Ordinary Level\" and the page number 10 appear at the bottom.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1444,7 +1500,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q8a", topicId: "agsci-4-3-3", conceptId: "calf-and-sheep-jackets",
     section: "A", questionRef: "2024 OL Q8(a)",
-    stem: "Calf and sheep jackets make significant differences in the health and welfare of the animals. The diagram on the paper gives the headings: Savings, Protection, Performance, Prevention.",
+    stem: "Calf and sheep jackets make significant differences in the health and welfare of the animals. The diagram below gives four headings: Savings, Protection, Performance and Prevention.",
     questionText: "Briefly outline any three advantages of using jackets to improve the health and welfare of animals under the headings provided in the diagram below.",
     tariffModel: {"kind":"fixed","notation":"3(2)"}, totalMarks: 6,
     rows: [
@@ -1452,6 +1508,14 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "protects from cold or wet or harsh conditions or illness", marks: 2, accepts: ["helps to prevent colds or pneumonia or illness or hypothermia or death","reduced energy or vet or housing costs"], contextNote: "Advantage 2 of 3." },
     { id: "r-3", kind: "point", verbatim: "promotes LWG (liveweight gain) which increases profits", marks: 2, accepts: ["helps to prevent colds or pneumonia or illness or hypothermia or death","reduced energy or vet or housing costs"], contextNote: "Advantage 3 of 3." },
     ],
+    figure: {
+          "candId": "agricultural-science-2024-OL-paper-p11-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p11-i1.png",
+          "srcHash": "5b765e2c72d75d712748e7287e3077bc",
+          "alt": "The same Question 8(a) diagram as p11-i0, captured slightly lower down the page. The mind map is complete: a solid black central circle labelled \"Advantages\" with four arrows out to a red-orange \"Savings\" circle (top left), a yellow \"Protection\" circle (top right), a green \"Performance\" circle (bottom left) and a blue \"Prevention\" circle (bottom right), all in white bold text. To the right are the same two colour photographs - a brown-and-white calf in a navy calf jacket standing on straw behind metal rails with yellow ear tags, and below it two lambs in blue jackets on straw in front of a grey concrete wall. The line \"Calf and sheep jackets make significant differences in the health and welfare of the animals\" is sliced horizontally through the middle of the letters along the top edge, and the answer box below is cut off.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1480,6 +1544,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Root(hairs)", marks: 3, contextNote: "The brackets mean 'hairs' is not required — 'root' alone scores." },
     ],
+    figure: {
+          "candId": "agricultural-science-2024-OL-paper-p12-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p12-i0.png",
+          "srcHash": "579acd258da616fc5c300dc3669c1b1b",
+          "alt": "Question 9(a), plant structure. On the right is a colour illustration of a young cereal/maize-type plant against a blue sky: a thick green stem bearing long arching strap-shaped leaves above ground, growing out of brown soil that is drawn in cross-section with visible stones, and below the soil surface a spreading pale yellow-white fibrous root system. A black bracket down the left side of the plant is labelled \"Shoot\"; a black arrow from the right is labelled \"Leaves\" and points at a leaf blade; a white bracket below ground is labelled \"Roots\" in white text. The left of the crop carries the question text: \"Question 9 - Answer either (a) or (b)\", \"(a) The diagram shows the structure of a plant. Analyse the diagram and answer the questions that follow.\", \"(i) Identify the part of the plant that is involved in nutrient absorption\" with an empty two-line box, \"(ii) List two nutrients absorbed by plants\" with rows 1. and 2., and \"(iii) Identify the bacteria found in clover roots which fix atmospheric nitrogen into nitrates to be used by the plant by placing a tick in the correct box\" with a three-row pale blue tick table reading, in italics, Lactobacillus, Rhizobium and Clostridium. The word \"Or\" is centred at the bottom.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1495,6 +1567,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "N", marks: 2, accepts: ["P","K","Ca","Mg","S","other valid answer"], contextNote: "Nutrient 1 — any nutrient from the pool scores 2.", openList: true },
     { id: "r-2", kind: "point", verbatim: "P", marks: 2, accepts: ["N","K","Ca","Mg","S","other valid answer"], contextNote: "Nutrient 2 — any different nutrient from the pool scores 2.", openList: true },
     ],
+    figure: {
+          "candId": "agricultural-science-2024-OL-paper-p12-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p12-i0.png",
+          "srcHash": "579acd258da616fc5c300dc3669c1b1b",
+          "alt": "Question 9(a), plant structure. On the right is a colour illustration of a young cereal/maize-type plant against a blue sky: a thick green stem bearing long arching strap-shaped leaves above ground, growing out of brown soil that is drawn in cross-section with visible stones, and below the soil surface a spreading pale yellow-white fibrous root system. A black bracket down the left side of the plant is labelled \"Shoot\"; a black arrow from the right is labelled \"Leaves\" and points at a leaf blade; a white bracket below ground is labelled \"Roots\" in white text. The left of the crop carries the question text: \"Question 9 - Answer either (a) or (b)\", \"(a) The diagram shows the structure of a plant. Analyse the diagram and answer the questions that follow.\", \"(i) Identify the part of the plant that is involved in nutrient absorption\" with an empty two-line box, \"(ii) List two nutrients absorbed by plants\" with rows 1. and 2., and \"(iii) Identify the bacteria found in clover roots which fix atmospheric nitrogen into nitrates to be used by the plant by placing a tick in the correct box\" with a three-row pale blue tick table reading, in italics, Lactobacillus, Rhizobium and Clostridium. The word \"Or\" is centred at the bottom.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1509,6 +1589,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Rhizobium", marks: 3, contextNote: "The tick goes beside Rhizobium." },
     ],
+    figure: {
+          "candId": "agricultural-science-2024-OL-paper-p12-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p12-i0.png",
+          "srcHash": "579acd258da616fc5c300dc3669c1b1b",
+          "alt": "Question 9(a), plant structure. On the right is a colour illustration of a young cereal/maize-type plant against a blue sky: a thick green stem bearing long arching strap-shaped leaves above ground, growing out of brown soil that is drawn in cross-section with visible stones, and below the soil surface a spreading pale yellow-white fibrous root system. A black bracket down the left side of the plant is labelled \"Shoot\"; a black arrow from the right is labelled \"Leaves\" and points at a leaf blade; a white bracket below ground is labelled \"Roots\" in white text. The left of the crop carries the question text: \"Question 9 - Answer either (a) or (b)\", \"(a) The diagram shows the structure of a plant. Analyse the diagram and answer the questions that follow.\", \"(i) Identify the part of the plant that is involved in nutrient absorption\" with an empty two-line box, \"(ii) List two nutrients absorbed by plants\" with rows 1. and 2., and \"(iii) Identify the bacteria found in clover roots which fix atmospheric nitrogen into nitrates to be used by the plant by placing a tick in the correct box\" with a three-row pale blue tick table reading, in italics, Lactobacillus, Rhizobium and Clostridium. The word \"Or\" is centred at the bottom.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1562,7 +1650,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q10ci", topicId: "agsci-4-1", conceptId: "milk-composition-water",
     section: "A", questionRef: "2024 OL Q10(c)(i)",
-    stem: "Macroom Buffalo has Ireland’s first and only herd of milking water Buffalo. The table below shows the composition of buffalo versus cow’s milk. Analyse the table and answer the questions that follow.\n\nContent | Cow | Buffalo\nWater (%) | M | 84\nEnergy (kcal) | 61 | 97\nProtein (g) | 3.2 | 3.7\nFat (g) | 3.4 | 6.9\n(Adapted from researchgate.net)",
+    stem: "Macroom Buffalo has Ireland's first and only herd of milking water Buffalo. The composition of cow's milk compared with buffalo's milk is: water - cow M %, buffalo 84 %; energy - cow 61 kcal, buffalo 97 kcal; protein - cow 3.2 g, buffalo 3.7 g; fat - cow 3.4 g, buffalo 6.9 g. (Adapted from researchgate.net)",
     questionText: "Using your knowledge of the composition of cow’s milk (M), place a tick (✓) in the correct box to show if the % of water in cow’s milk is higher or lower than in buffalo’s milk. [Higher / Lower]",
     tariffModel: {"kind":"fixed","notation":"3"}, totalMarks: 3,
     rows: [
@@ -1576,7 +1664,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q10cii", topicId: "agsci-4-1", conceptId: "milk-nutrient-for-cheese",
     section: "A", questionRef: "2024 OL Q10(c)(ii)",
-    stem: "Macroom Buffalo has Ireland’s first and only herd of milking water Buffalo. The table on the paper shows the composition of buffalo versus cow’s milk (protein 3.7 g in buffalo against 3.2 g in cow; fat 6.9 g against 3.4 g).",
+    stem: "Macroom Buffalo has Ireland's first and only herd of milking water Buffalo. Buffalo's milk contains 3.7 g protein and 6.9 g fat, compared with 3.2 g protein and 3.4 g fat in cow's milk.",
     questionText: "Buffalo’s milk is suitable for different types of cheese production. State which nutrient makes it most suitable for cheese production.",
     tariffModel: {"kind":"fixed","notation":"3"}, totalMarks: 3,
     rows: [
@@ -1590,7 +1678,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q11ai", topicId: "agsci-4-3-2", conceptId: "selective-breeding-trait",
     section: "A", questionRef: "2024 OL Q11(a)(i)",
-    stem: "Answer either (a) or (b). Selective breeding has been done for thousands of years to improve characteristics of plants and animals. Analyse the diagram in relation to egg production and answer the questions that follow. The diagram's four steps are: 1. Breed two organisms with desired characteristics. 2. Choose the best offspring and breed. 3. Repeat over many generations. 4. Over time characteristic increases.",
+    stem: "Answer either (a) or (b). Selective breeding has been done for thousands of years to improve characteristics of plants and animals. The four steps of selective breeding, shown here for hens kept for egg production, are: 1. Breed two organisms with desired characteristics. 2. Choose the best offspring and breed. 3. Repeat over many generations. 4. Over time the characteristic increases.",
     questionText: "Identify the desired characteristic being selectively bred.",
     tariffModel: {"kind":"fixed","notation":"3"}, totalMarks: 3,
     rows: [
@@ -1626,6 +1714,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Double muscled", marks: 3, accepts: ["muscular or good conformation","strong legs","sloping rump","blue and white or white in colour","wide shoulders","short neck","straight back","fine skin"], contextNote: "Characteristic 1 — any one item from the scheme's pool scores 3." },
     { id: "r-2", kind: "point", verbatim: "blue and white or white in colour", marks: 3, accepts: ["Double muscled","muscular or good conformation","strong legs","sloping rump","wide shoulders","short neck","straight back","fine skin"], contextNote: "Characteristic 2 — any different item from the same pool scores 3." },
     ],
+    figure: {
+          "candId": "agricultural-science-2024-OL-paper-p15-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p15-i0.png",
+          "srcHash": "5255789024e276c9388306a166abe495",
+          "alt": "Question 11(b)(i), the Belgian Blue beef breed. A centred colour photograph of an extremely heavily muscled bull grazing head-down in a paddock of grass dotted with small yellow flowers, dark trees behind. The coat is white to pale pink with grey-black roan patching over the shoulder, back, rump and head; the hindquarters and thighs bulge into distinct rounded blocks of muscle with deep grooves between them, the shoulder and rib muscling is similarly exaggerated, the legs are relatively fine and pale, the tail switch is white and an orange ear tag is visible on the head. Above the photograph: \"Or\", \"(b) The picture shows the Belgian Blue beef breed. Analyse the picture and answer the questions that follow.\" Below: \"(i) Identify two physical characteristics of the Belgian Blue.\" with numbered answer rows 1. and 2.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1642,6 +1738,14 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "amount of fertiliser", marks: null, contextNote: "Independent" },
     { id: "r-3", kind: "point", verbatim: "plant growth", marks: null, contextNote: "Dependent" },
     ],
+    figure: {
+          "candId": "agricultural-science-2024-OL-paper-p16-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p16-i0.png",
+          "srcHash": "0cb4ea1364362e25fbbee74814f443fd",
+          "alt": "Question 12, the fertiliser investigation. Four identical cartoon potted plants stand in a row, each a twining green stem with a dozen leaves in a pink-mauve flowerpot, and all four plants are drawn exactly the same size. Each is headed by a bold capital and a two-line caption: A \"Zero drops of fertiliser\", B \"2 drops of fertiliser\", C \"4 drops of fertiliser\", D \"6 drops of fertiliser\". Above each plant is an orange watering can tilted to the right with drops falling from it: over A, four blue drops only; over B, two green drops plus four blue; over C, four green drops plus four blue; over D, six green drops plus four blue. Beneath the row is a key showing a single green drop followed by \"= Fertiliser\". Above the drawing is the stem: \"The diagram below shows the variables in an investigation to determine the effect of the amount of fertiliser on plant growth. Four identical plants (A, B, C and D) are used in the investigation. Analyse the diagram and answer the questions that follow.\" Below: \"(a) Identify each of the following variables in the investigation.\" and a table with pale green label cells Control, Independent and Dependent.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1656,6 +1760,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "As the different amounts of fertiliser are applied the plant growth (rate)", marks: 2, accepts: ["As the different amounts of fertiliser are applied the plant growth (rate) will differ"], contextNote: "The scheme's full line reads 'As the different amounts of fertiliser are applied the plant growth (rate) will differ'." },
     ],
+    figure: {
+          "candId": "agricultural-science-2024-OL-paper-p16-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p16-i0.png",
+          "srcHash": "0cb4ea1364362e25fbbee74814f443fd",
+          "alt": "Question 12, the fertiliser investigation. Four identical cartoon potted plants stand in a row, each a twining green stem with a dozen leaves in a pink-mauve flowerpot, and all four plants are drawn exactly the same size. Each is headed by a bold capital and a two-line caption: A \"Zero drops of fertiliser\", B \"2 drops of fertiliser\", C \"4 drops of fertiliser\", D \"6 drops of fertiliser\". Above each plant is an orange watering can tilted to the right with drops falling from it: over A, four blue drops only; over B, two green drops plus four blue; over C, four green drops plus four blue; over D, six green drops plus four blue. Beneath the row is a key showing a single green drop followed by \"= Fertiliser\". Above the drawing is the stem: \"The diagram below shows the variables in an investigation to determine the effect of the amount of fertiliser on plant growth. Four identical plants (A, B, C and D) are used in the investigation. Analyse the diagram and answer the questions that follow.\" Below: \"(a) Identify each of the following variables in the investigation.\" and a table with pale green label cells Control, Independent and Dependent.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1725,8 +1837,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q3", topicId: "agsci-3-3-3", conceptId: "farm-machinery-uses",
     section: "A", questionRef: "2025 OL Q3",
-    stem: "Listed below are some farm machinery: Roller · Tedder · Mower · Plough · Combine harvester.\nDescriptions given in the table: (a) Harvesting cereal crops (b) Cultivating soil in seedbed preparations (c) Levelling land and compacting soil surface (d) Cutting of grass for silage (e) Drying out grass to reduce dry matter (DM) content",
-    questionText: "Complete the table below by matching each farm machine from the list with the correct description of its use given in the table.",
+    stem: "Listed below are some farm machinery: Roller, Tedder, Mower, Plough, Combine harvester. Five descriptions of their use are given: (a) Harvesting cereal crops (b) Cultivating soil in seedbed preparations (c) Levelling land and compacting soil surface (d) Cutting of grass for silage (e) Drying out grass to reduce dry matter (DM) content.",
+    questionText: "Match each farm machine from the list with the correct description of its use, (a) to (e), given above.",
     tariffModel: {"kind":"fixed","notation":"5x2"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Combine harvester", marks: 2, contextNote: "(a) Harvesting cereal crops" },
@@ -1793,6 +1905,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Wear gloves", marks: 3, accepts: ["wear goggles","wear protective clothing","wear a face mask or breathing apparatus","precaution with sharp tools","valid machinery safety precaution"], contextNote: "'3+2': the first correct precaution scores 3, the second scores 2. The scheme adds 'accept PPE once only' — the generic word 'PPE' is credited once, so name two separate precautions. The pool ends 'other valid example', so a sensible precaution outside the list still scores.", openList: true },
     { id: "r-2", kind: "alt", verbatim: "wear goggles", marks: 2, accepts: ["Wear gloves","wear protective clothing","wear a face mask or breathing apparatus","precaution with sharp tools","valid machinery safety precaution"], contextNote: "Your second correct precaution, whichever it was, scores 2.", openList: true },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-OL-paper-p09-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p09-i0.png",
+          "srcHash": "cf36e18679399c47da6bbb763854c793",
+          "alt": "Farm-safety photograph for Question 8, with its stem intact: 'The photograph shows a farmer pouring fertiliser into a fertiliser spreader. Analyse the photograph and answer the questions that follow.' The colour photograph shows a man in a grey zip jacket, jeans and no gloves, hat, mask or eye protection, standing with his back to the camera and tipping a large white fertiliser bag over the open cream-coloured hopper of a fertiliser spreader; pale granules are visibly streaming out of the cut corner of the bag into the hopper. A green tractor with a black tyre is at the right of the frame and a dark hedge fills the background. Below the photograph is part (a), 'Suggest two precautions this farmer could take to reduce risks to his health', with a blank numbered answer table.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1822,6 +1942,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Decreased", marks: 3, contextNote: "Part (i) — all three input prices in the index fell." },
     { id: "r-2", kind: "point", verbatim: "Costs less to produce", marks: 2, contextNote: "Part (ii) — the tick-box consequence of the answer to (i)." },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-OL-paper-p11-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p11-i0.png",
+          "srcHash": "ff429aa36e2bf4b8166130177c35c78c",
+          "alt": "Cartoon-style infographic of the Agricultural Price Index for the 12 months to March 2024. A single illustrated farm landscape runs across the panel: electricity pylons and a blue tractor spraying at the left, a pink pig, a white farmhouse and grey sheds with tall metal silos in the centre, three sheep, a strip of maize, two black-and-white dairy cows and a blue-and-white 'MILK' tanker lorry at the right. Six white leader lines drop from individual items to captions along a dark green band. The left three captions read 'Electricity down 22%', 'Fertilisers down 40%' and 'Feedstuffs down 21%'; the right three read 'Sheep up 30%', 'Cereals down 31%' and 'Milk down 5%'. Underneath, a two-part coloured strip labels the halves: a yellow-green bar with red text 'Changes in Agricultural Input Price' on the left, and a gold bar with black text 'Changes in Agricultural Output Price' on the right. Beneath the graphic are part (i), 'State if the input prices have increased or decreased', and part (ii) with a cream-shaded tick table listing 'Costs less to produce', 'Cost the same to produce' and 'Costs more to produce'.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1851,6 +1979,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "X", marks: 3, contextNote: "The paper's two tick-box options are X and Y." },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-OL-paper-p12-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p12-i0.png",
+          "srcHash": "3c6d614d8aa1acce4de1219bae49ec13",
+          "alt": "Full crop of Question 10 — text on the left, diagram on the right. The stem reads 'The diagram shows the process of sex sorting bull semen.' The diagram is a vertical flow schematic of a sperm-sorting machine, read top to bottom. At the top, two sperm cells travel down a narrow channel drawn as two dark blue vertical bars; the upper sperm head carries a pink X, the lower one a blue Y, and a red arrow labelled with a bold red A points to that lower sperm cell with the blue Y in its head. Below the channel a single sperm with a pink X passes through a dark blue ellipse (the detector ring). Next, a sperm with a blue Y passes between two short black bars marked with a teal plus sign on the left and a teal minus sign on the right (the charging plates). Below that the stream splits into two: a sperm with a blue Y tagged with a teal minus symbol on the left, and a sperm with a pink X tagged with a teal plus symbol on the right. At the bottom the sorted cells fall into three cylinders — a blue cylinder labelled Y at the left receiving the minus-charged Y sperm, a pink cylinder labelled X at the right receiving the plus-charged X sperm, and a dark green cylinder in the centre receiving two sperm whose heads carry a green question mark, with a red arrow and the words 'Dead and abnormal sperm' pointing to it. On the left of the crop are part (a) with a blank answer box, part (b) with a small blue-shaded tick table whose rows are labelled X and Y, and part (c) with a blank numbered answer table.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1866,6 +2002,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "90% or better chance of female calf", marks: 2, accepts: ["chance to expand the herd","can produce female calves (replacements) from best cows","improved genetic merit of herd","less unwanted calves","can reduce calving difficulties in maiden dairy heifers"], contextNote: "Two advantages are required, each worth 2. Any two different advantages from the scheme's list of six score." },
     { id: "r-2", kind: "alt", verbatim: "chance to expand the herd", marks: 2, accepts: ["90% or better chance of female calf","can produce female calves (replacements) from best cows","improved genetic merit of herd","less unwanted calves","can reduce calving difficulties in maiden dairy heifers"], contextNote: "Your second correct advantage, whichever it was, also scores 2." },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-OL-paper-p12-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p12-i0.png",
+          "srcHash": "3c6d614d8aa1acce4de1219bae49ec13",
+          "alt": "Full crop of Question 10 — text on the left, diagram on the right. The stem reads 'The diagram shows the process of sex sorting bull semen.' The diagram is a vertical flow schematic of a sperm-sorting machine, read top to bottom. At the top, two sperm cells travel down a narrow channel drawn as two dark blue vertical bars; the upper sperm head carries a pink X, the lower one a blue Y, and a red arrow labelled with a bold red A points to that lower sperm cell with the blue Y in its head. Below the channel a single sperm with a pink X passes through a dark blue ellipse (the detector ring). Next, a sperm with a blue Y passes between two short black bars marked with a teal plus sign on the left and a teal minus sign on the right (the charging plates). Below that the stream splits into two: a sperm with a blue Y tagged with a teal minus symbol on the left, and a sperm with a pink X tagged with a teal plus symbol on the right. At the bottom the sorted cells fall into three cylinders — a blue cylinder labelled Y at the left receiving the minus-charged Y sperm, a pink cylinder labelled X at the right receiving the plus-charged X sperm, and a dark green cylinder in the centre receiving two sperm whose heads carry a green question mark, with a red arrow and the words 'Dead and abnormal sperm' pointing to it. On the left of the crop are part (a) with a blank answer box, part (b) with a small blue-shaded tick table whose rows are labelled X and Y, and part (c) with a blank numbered answer table.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1924,6 +2068,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Less pressure on joints or improved lying behaviour", marks: 4, accepts: ["less injuries","improved cleanliness of animals","bacteria cannot thrive on rubber or improve hygiene","rubber acts as insulator so not too cold in winter or hot in summer","more comfortable surface to lie on","less noise"], contextNote: "'4+1': the first correct way scores 4 and the second only 1. Any two different ways from the scheme's list of seven score." },
     { id: "r-2", kind: "alt", verbatim: "less injuries", marks: 1, accepts: ["Less pressure on joints or improved lying behaviour","improved cleanliness of animals","bacteria cannot thrive on rubber or improve hygiene","rubber acts as insulator so not too cold in winter or hot in summer","more comfortable surface to lie on","less noise"], contextNote: "Your second correct way, whichever it was, scores 1." },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-OL-paper-p14-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p14-i0.png",
+          "srcHash": "9c51a8185170b6cb68d19bb90d3cf11e",
+          "alt": "Colour photograph inside a cattle shed for Question 11(b). Three young bulls lie resting on a slatted floor whose slats are covered with dark teal-green rubber matting; the rubber-covered slats run in parallel strips across the frame and a drainage channel with a concrete kerb runs along the left. The nearest animal is a large grey-coated bull lying with its legs folded under it, facing the camera, with a yellow ear tag. Behind it lie two pale cream/white cattle, also with yellow ear tags, one facing away and one facing left. Concrete walls and a bright doorway are visible at the top. Above the photograph is the stem '(b) Technology on farms to improve animal welfare and save labour is moving at a fast pace.' and below it part (i), 'The picture shows bulls on rubber slats. Briefly outline two ways that the rubber slats improve animal welfare', with a blank numbered answer table.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2031,12 +2183,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2021-ol-q13b-ii", topicId: "agsci-4-3-3", conceptId: "liver-fluke-regional-incidence",
     section: "B", questionRef: "2021 OL Q13(b)(ii)",
-    stem: "Question 13 opens with an article on liver fluke in Irish cattle and sheep. Part (b) then prints a map showing the incidence of liver fluke damage to beef cattle livers by county in the third quarter of 2020, based on Beef HealthCheck slaughter data. The map is not reproduced here; the question below carries the comparison it asks you to explain.",
+    stem: "Question 13 opens with an article on liver fluke in Irish cattle and sheep. Part (b) prints the map shown here: the incidence of liver fluke damage to beef cattle livers by county in the third quarter of 2020, based on Beef HealthCheck slaughter data. The map calls out Louth at 17.0% fluke damage, Mayo at 7.87% and Cork at 1.54%. Look at the map and answer the question which follows.",
     questionText: "State one reason why the fluke damage in Cork is less than in more northern counties.",
     tariffModel: {"kind":"fixed","notation":"4"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Lower rainfall or higher rain in northern counties", marks: 4, accepts: ["drier land","lower incidence of mud snail"], contextNote: "One reason is asked for and the whole 4 marks sit on it, so any one of the scheme's three alternatives scores in full." },
     ],
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p20-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p20-i0.png",
+          "srcHash": "c416488654160e210877c5382fd39297",
+          "alt": "Question 13 part (b), introduced by The following is a map showing the incidence of liver fluke damage to beef cattle livers in the third quarter of 2020 based on Beef HealthCheck slaughter data. Look at the map and answer the questions which follow. The figure is a choropleth map of the island of Ireland on a mid-blue sea background, with every county outlined in black and shaded in a colour band: several northern and north-midlands counties are shaded deep pink or rose, one northern county is salmon/peach, a group of midlands counties are pale khaki-yellow, one western county is pale blue-grey, and most of the southern half of the island is very pale mint green. The Beef HealthCheck logo (a green oval with a white cow silhouette above the words HealthCheck and animalhealthireland.ie) sits in the top left of the map panel. Three white rounded callout boxes with green borders point to individual counties and give figures: Mayo 7.87% fluke damage (pointing to the west), Louth 17.0% fluke damage (pointing to a small deep-pink county on the east coast) and Cork 1.54% fluke damage (pointing to the south). Faint pale grey map text reading IRELAND and UNITED KINGDOM is partly visible. Under the map in italics is (Adapted from Animalhealthireland, 2020). To the left of the map is part (i), Which county has the highest % fluke damage?, with a three-row blank answer box; below the map are part (ii), State one reason why the fluke damage in Cork is less than in more northern counties, and the start of part (c)(i), Explain notifiable disease.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2876,8 +3036,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2022-ol-q13aii", topicId: "agsci-1-3", conceptId: "percentage-clay-from-texture-table",
     section: "B", questionRef: "2022 OL Q13(a)(ii)",
-    stem: "Answer (a) with either (b) or (c). Two agricultural science students, Padraig and Eileen collected one soil sample each from their own farms to determine the soil type. They each carried out an investigation to determine the texture of this soil sample.",
-    questionText: "The results of their investigation are in the table below. Soil particle, % present — Sand: Padraig 30, Eileen 70. Silt: Padraig 31, Eileen 17. Clay: Padraig 39, Eileen A. Calculate A (% clay) for Eileen. Show your calculations in the space provided.",
+    stem: "Answer (a) with either (b) or (c). Two agricultural science students, Padraig and Eileen, collected one soil sample each from their own farms to determine the soil type. They each carried out an investigation to determine the texture of this soil sample. Their results were — Sand: Padraig 30 %, Eileen 70 %. Silt: Padraig 31 %, Eileen 17 %. Clay: Padraig 39 %, Eileen A %.",
+    questionText: "Calculate A (% clay) for Eileen. Show your calculations.",
     tariffModel: {"kind":"fixed","notation":"4 + 4"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "70 + 17 = 87%", marks: 4, contextNote: "The scheme adds: \"(If a candidate gives 13% without showing any calculations they may be awarded 8m)\" — so the correct final answer on its own carries the full 8, and this working line is how the marks are split when working is shown." },
@@ -2937,7 +3097,7 @@ export const CARDS: SecCard[] = [
     id: "agsci-2022-ol-q13avi", topicId: "agsci-2-2-2", conceptId: "soil-texture-suitability-for-tillage",
     section: "B", questionRef: "2022 OL Q13(a)(vi)",
     stem: "Answer (a) with either (b) or (c). Two agricultural science students, Padraig and Eileen collected one soil sample each from their own farms to determine the soil type. Their results were: Padraig — sand 30%, silt 31%, clay 39%. Eileen — sand 70%, silt 17%, clay 13%.",
-    questionText: "State which soil sample from the table in part (ii), Padraig or Eileen's, is more suitable for tillage and give two reasons for your answer.",
+    questionText: "State which soil sample, Padraig's or Eileen's, is more suitable for tillage and give two reasons for your answer.",
     tariffModel: {"kind":"fixed","notation":"6 + 4+2"}, totalMarks: 12,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Soil type: Padraig's (loam)", marks: 6, contextNote: "Naming the sample carries its own 6 in the scheme, separate from the reasons." },
@@ -3218,7 +3378,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2022-ol-q16ai", topicId: "agsci-3-3-3", conceptId: "first-cut-silage-timing",
     section: "B", questionRef: "2022 OL Q16(a)(i)",
-    stem: "The graph shows the growth of grass in kg/ha for the months February to November 2021.",
+    stem: "Question 16 — Answer (a) and (b) with either (c) or (d). Part (a) is based on the growth of grass, in kg of dry matter per hectare, recorded month by month from February to November 2021.",
     questionText: "Identify the month most suitable to make first cut silage and give a reason for your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -3247,8 +3407,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2022-ol-q16aiv", topicId: "agsci-3-3-3", conceptId: "grass-conservation",
     section: "B", questionRef: "2022 OL Q16(a)(iv)",
-    stem: "The graph shows the growth of grass in kg/ha for the months February to November 2021.",
-    questionText: "Excess grass is produced during the summer months; this grass can be conserved as hay or silage. Explain the underlined term.",
+    stem: "Question 16 — Answer (a) and (b) with either (c) or (d). Part (a) is based on the growth of grass, in kg of dry matter per hectare, recorded month by month from February to November 2021.",
+    questionText: "Excess grass is produced during the summer months; this grass can be conserved as hay or silage. Explain the term conserved.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Grass that has been dried or fermented (in order to feed at a later stage)", marks: 2, contextNote: "The underlined term is 'conserved'." },
@@ -3824,7 +3984,7 @@ export const CARDS: SecCard[] = [
     id: "agsci-2023-ol-q16bii", topicId: "agsci-4-3-1", conceptId: "milk-quality-payment-calculation",
     section: "B", questionRef: "2023 OL Q16(b)(ii)",
     stem: "Pat is doing a screening on his dairy herd. The paper prints this milk composition price table. A — Fat (€4.48/kg fat): 39.0kg of fat, €174.72. B — Protein (€9.07/kg protein): 35.0kg of protein, €317.45. C — Processing cost deduction (€0.04/l): €40.00. Total price / 1000 litres: ?",
-    questionText: "Pat gets paid for the milk produced based on its quality using the calculation A + B – C. Calculate the price Pat gets for 1000 litres of his milk in the table below if the milk fat is 3.8% and protein is 3.4%.",
+    questionText: "Pat gets paid for the milk produced based on its quality using the calculation A + B – C. Using the milk composition price figures set out above, calculate the price Pat gets for 1000 litres of his milk if the milk fat is 3.8% and protein is 3.4%.",
     tariffModel: {"kind":"fixed","notation":"3 + 3"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "€174.72 + €317.45 – €40", marks: 3, contextNote: "3 marks for setting the calculation out: the fat payment plus the protein payment minus the processing cost deduction." },
@@ -4756,12 +4916,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q14a-i", topicId: "agsci-3-1", conceptId: "soil-temperature-threshold-for-grass-growth",
     section: "B", questionRef: "2025 OL Q14(a)(i)",
-    stem: "Question 14, part (a). The paper prints a bar chart of the average monthly soil temperatures in Ballyhaise Agricultural College, Co. Cavan for 2023 (adapted from Met.ie). Every bar carries its value: Jan 5.1, Feb 6.6, Mar 6.3, Apr 8.6, May 13.4, Jun 17.3, Jul 16, Aug 16.1, Sep 15, Oct 11, Nov 6.9, Dec 6.4, all in degrees Celsius.",
+    stem: "Question 14, part (a). The graph below shows the average monthly soil temperatures in Ballyhaise Agricultural College, Co. Cavan for 2023 (adapted from Met.ie). Analyse the graph and answer the question that follows.",
     questionText: "Grass needs a minimum temperature of 6 degrees Celsius for growth. Identify which month you would expect to see grass beginning to grow on a farm in Cavan.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "February", marks: 5, contextNote: "January reads 5.1, below the 6-degree threshold; February at 6.6 is the first month at or above it." },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-OL-paper-p21-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p21-i0.png",
+          "srcHash": "1bb8d632849fd42866f899895e0881d0",
+          "alt": "Vertical bar chart on a pale grey plot panel, titled in bold 'Average Soil Temperature (°C) in Ballyhaise, Co. Cavan for 2023'. The vertical axis is labelled 'Temperature (°C)' and is scaled 0 to 20 in steps of 2 with horizontal gridlines; the horizontal axis is labelled 'Month' and carries the twelve categories Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec. Twelve orange-brown bars are drawn, each with its value printed in white inside the top of the bar: Jan 5.1, Feb 6.6, Mar 6.3, Apr 8.6, May 13.4, Jun 17.3, Jul 16, Aug 16.1, Sep 15, Oct 11, Nov 6.9, Dec 6.4. The series rises to its peak in June and falls away through the autumn. The credit '(Adapted from Met.ie)' is printed in italics below the panel at the right. Beneath the chart are part (i), 'Grass needs a minimum temperature of 6 °C for growth. Identify which month you would expect to see grass beginning to grow on a farm in Cavan', with a blank answer box, and part (ii) about weather conditions and a named tillage crop.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4799,7 +4967,7 @@ export const CARDS: SecCard[] = [
     id: "agsci-2025-ol-q14b-ii", topicId: "agsci-1-2", conceptId: "independent-and-dependent-variables",
     section: "B", questionRef: "2025 OL Q14(b)(ii)",
     stem: "Question 14, part (b). A group of fifth year Agricultural Science students investigated how temperature affects the percentage germination of seeds. They planted 100 barley seeds in a polytunnel and another 100 barley seeds outdoors on school grounds, and monitored the growth of the seeds over 4 weeks.",
-    questionText: "An independent and a dependent variable from this investigation are shown in the paper's table. Identify each variable by placing a tick in the correct box: Temperature; Percentage germination.",
+    questionText: "An independent and a dependent variable from this investigation are given below. Identify each variable by placing a tick in the correct box (Independent / Dependent): Temperature; Percentage germination.",
     tariffModel: {"kind":"fixed","notation":"2+2"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Temperature: Independent", marks: 2 },
@@ -5126,7 +5294,7 @@ export const CARDS: SecCard[] = [
     id: "agsci-2025-ol-q17c", topicId: "agsci-2-2-1", conceptId: "plant-nutrient-functions",
     section: "B", questionRef: "2025 OL Q17(c)",
     stem: "Question 17. Answer both (a) and (b) with either (c) or (d).\n\nGood soil conditions are important for crop production.\n\nList of minerals provided: Nitrogen · Phosphorus · Calcium · Magnesium.",
-    questionText: "The table below describes the functions of four plant nutrients. Using the list of minerals provided, match each mineral to its correct description. The four descriptions are: Involved in chlorophyll production; Production of amino acids, which produce proteins for growth and repair in plants; Seed formation and development; Cell wall formation.",
+    questionText: "Four descriptions of plant nutrient functions are given below. Using the list of minerals provided, match each mineral to its correct description. Descriptions: 1. Involved in chlorophyll production; 2. Production of amino acids, which produce proteins for growth and repair in plants; 3. Seed formation and development; 4. Cell wall formation.",
     tariffModel: {"kind":"orderedSplit","notation":"5+5+1+1"}, totalMarks: 12,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Involved in chlorophyll production — Magnesium", marks: null },
@@ -5185,8 +5353,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q18bi", topicId: "agsci-4-3-2", conceptId: "calving-interval-calculation",
     section: "B", questionRef: "2025 OL Q18(b)(i)",
-    stem: "Question 18. Aaron wants each cow on his farm to have one calf every 12 months.\n\nThe data given on the paper: 285 day gestation + X = 365 days.",
-    questionText: "Calculate X, the window of time available to Aaron to get his cows in calf again using the data below.",
+    stem: "Question 18, part (b). Aaron wants each cow on his farm to have one calf every 12 months.",
+    questionText: "Calculate X, the window of time available to Aaron to get his cows in calf again, using the following data: 285 day gestation + X = 365 days.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "365-285 = 80 days", marks: 4 },

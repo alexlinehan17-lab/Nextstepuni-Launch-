@@ -186,7 +186,7 @@ export const CARDS: SecCard[] = [
     id: "chem-2021-ol-q3-c", topicId: "chem-u2", conceptId: "insulated-cup-calorimeter",
     section: "A", questionRef: "2021 OL Q3(c)",
     stem: "The neutralisation of 100 cm3 of 1.0 M NaOH by 100 cm3 of 1.0 M HCl was carried out in an insulated cup fitted with a plastic lid through which a thermometer was inserted, and the temperature change was used to calculate the heat of reaction.",
-    questionText: "Why is an insulated cup, like that shown above, a suitable container for this experiment?",
+    questionText: "Why is an insulated cup a suitable container for this experiment?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "reduce (stop) heat loss to surroundings / doesn't absorb heat / low heat capacity / ensure accurate temperature change (result) obtained", marks: 6, accepts: ["reduce heat loss to surroundings","stop heat loss to surroundings","doesn't absorb heat","low heat capacity","ensure accurate temperature change obtained","ensure accurate result obtained"] },
@@ -2240,7 +2240,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2025 Ordinary Level — © State Examinations Commission.",
     id: "chem-2025-ol-q9-c-i-iii", topicId: "chem-3-5", conceptId: "electrolysis-of-water-inert-electrodes",
     section: "B", questionRef: "2025 OL Q9(c)(i)–(iii)",
-    stem: "Water can be split into its elements by electrolysis using inert electrodes. The electrolyte is water, acidified with a few drops of sulfuric acid. The electrodes are connected to the positive and negative terminals of a direct current power supply. When the circuit is switched on, bubbles of gas form at both electrodes.",
+    stem: "Water can be split into its elements by electrolysis using inert electrodes. The electrolyte is water, acidified with a few drops of sulfuric acid. The electrodes are connected to the positive and negative terminals of a direct current power supply. When the circuit is switched on, bubbles of gas form at both electrodes. In the printed paper the underlined term is 'inert'.",
     questionText: "(i) What is meant by the underlined term? (ii) Suggest a suitable material that can be used as inert electrodes. (iii) Why must a few drops of acid be added to the water before starting the electrolysis?",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
@@ -4151,7 +4151,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2022 Ordinary Level — © State Examinations Commission.",
     id: "chem-2022-ol-q6-a", topicId: "chem-2-4", conceptId: "hydrocarbon-definition",
     section: "B", questionRef: "2022 OL Q6(a)",
-    stem: "Consider the structural formulae of the five hydrocarbon compounds A to E in the table. (In the printed paper the word hydrocarbon is the underlined term.)",
+    stem: "Question 6 opens with the sentence 'Consider the structural formulae of the five hydrocarbon compounds A to E', in which hydrocarbon is the underlined term. This part asks only about that word - the structural formulae themselves are not needed to answer it.",
     questionText: "Explain the underlined term.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -4513,7 +4513,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2024 Ordinary Level — © State Examinations Commission.",
     id: "chem-2024-ol-q1-b", topicId: "chem-u2", conceptId: "ethyne-preparation-from-carbide",
     section: "A", questionRef: "2024 OL Q1(b)",
-    stem: "The diagram in the paper shows the apparatus used for the laboratory preparation of ethyne (C2H2) gas: water is added dropwise onto solid X, and the ethyne produced is collected over water.",
+    stem: "The diagram shows the apparatus used for the laboratory preparation of ethyne (C2H2) gas: water is added dropwise from the dropping funnel onto solid X in the flask, and the ethyne produced is collected over water.",
     questionText: "(i) Identify solid X. (ii) Why is water added dropwise rather than poured directly onto X? (iii) What is observed when water is added to X? (iv) State one property of ethyne that allows it to be collected above water as shown.",
     tariffModel: {"kind":"orderedSplit","notation":"8 + 8 + 3 + 3"}, totalMarks: 22,
     rows: [
@@ -4522,6 +4522,14 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "alt", verbatim: "fizzing", marks: null, accepts: ["bubbling","gas produced","heat produced"] },
     { id: "r-4", kind: "alt", verbatim: "less dense than water", marks: null, accepts: ["sparingly soluble in water"] },
     ],
+    figure: {
+          "candId": "chemistry-2024-OL-paper-p02-i0",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2024-OL-paper-p02-i0.png",
+          "srcHash": "f0c28ce388b85f51577c839328241fba",
+          "alt": "Line drawing of a laboratory gas-preparation and collection set-up. Top left: a pear-shaped dropping funnel, drawn with a liquid level in it and with its stem left open at the top of the artwork, feeding through a stopcock/tap and then through a hatched rubber stopper into the neck of a conical (Erlenmeyer) flask; an arrow labelled \"water\" points into the funnel. A few small dark lumps sit on the flat bottom of the flask, with an arrow labelled \"solid X\" pointing at them. A short side tube leaves the flask just under the neck, runs right as a delivery tube, then bends down over the rim of a rectangular trough of water, dips below the water line and turns up under the open mouth of a tall round-topped tube (gas jar / boiling tube) that stands upright on a small block inside the trough; two tiny bubbles are drawn inside that tube and an arrow labelled \"ethyne\" points into its gas space. Gas is therefore being collected over water.",
+          "attribution": "SEC Leaving Certificate Chemistry 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",

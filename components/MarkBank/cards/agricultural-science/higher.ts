@@ -435,8 +435,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q10c", topicId: "agsci-4-3-1", conceptId: "sheep-vs-cow-milk-water",
     section: "A", questionRef: "2021 HL Q10(c)",
-    stem: "Sheep Milk Composition (pie chart, adapted from Nutritionbridge, 2020): Water 84%, Protein 4%, Fat 7%, Lactose 5%.",
-    questionText: "Compare the composition of sheep's milk shown in the pie chart to your knowledge of cow's milk in relation to the water content.",
+    stem: "The paper prints a pie chart headed 'Sheep Milk Composition' (adapted from Nutritionbridge, 2020). Its values are: Water 84%, Protein 4%, Fat 7%, Lactose 5%.",
+    questionText: "Compare the composition of sheep's milk given above to your knowledge of cow's milk in relation to the water content.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Sheep’s milk has 84% water compared to 87‐88% water in cow’s milk", marks: 2, accepts: ["sheep milk has less water than cow’s milk"] },
@@ -782,12 +782,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
     id: "agsci-2022-hl-q5bi", topicId: "agsci-1-3", conceptId: "reading-an-fcr-table",
     section: "A", questionRef: "2022 HL Q5(b)(i)",
-    stem: "Food conversion ratio (rate) (FCR) is a measure of how well an animal converts feed into liveweight gain. The table shows the weaning FCR for pigs from 2000 to 2020. The three columns are the years 2000, 2010 and 2020 in that order — Liveweight at sale (kg): 90.1, 103.6, 115.3; Deadweight at sale (kg): 68.1, 78.9, 88.2; Average Daily Gain (ADG) (g): 585, 668, 735; FCR: 1.83, 1.80, 1.75. (Adapted from Teagasc ePM, 2021)",
+    stem: "Food conversion ratio (rate) (FCR) is a measure of how well an animal converts feed into liveweight gain. The table below shows the weaning FCR for pigs from 2000 to 2020. (Adapted from Teagasc ePM, 2021)",
     questionText: "State which year the pigs were more efficient at converting feed to liveweight.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "gate", verbatim: "2020*", marks: 2, contextNote: "SEC asterisk: only this exact answer scores. A lower FCR means more efficient conversion, so the lowest figure (1.75) is the right year." },
     ],
+    figure: {
+          "candId": "agricultural-science-2022-HL-paper-p08-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p08-i0.png",
+          "srcHash": "7d24f038f9cd6b23e45b22bfcfa70436",
+          "alt": "The Question 5(b) data table with an accompanying photograph. Above the table the line '(b) The table shows the weaning FCR for pigs from 2000 to 2020.' At top right a colour photograph of two pale pink piglets inside a shed, the nearer one facing the camera with large upright ears, resting against a metal rail. The table has a pale green header row with three year columns: 2000, 2010, 2020. The row headings are in pale blue cells down the left. Rows and values: 'Liveweight at sale (kg)' 90.1, 103.6, 115.3; 'Deadweight at sale (kg)' 68.1, 78.9, 88.2; 'Average Daily Gain (ADG) (g)' 585, 668, 735; 'FCR' 1.83, 1.80, 1.75. All twelve data cells are legible and the closing border under the FCR row is present.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -796,13 +804,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
     id: "agsci-2022-hl-q5bii", topicId: "agsci-4-3-2", conceptId: "drivers-of-improved-pig-performance",
     section: "A", questionRef: "2022 HL Q5(b)(ii)",
-    stem: "Food conversion ratio (rate) (FCR) is a measure of how well an animal converts feed into liveweight gain. The table shows the weaning FCR for pigs across 2000, 2010 and 2020 — Average Daily Gain (ADG) (g): 585, 668, 735; FCR: 1.83, 1.80, 1.75. (Adapted from Teagasc ePM, 2021)",
+    stem: "Food conversion ratio (rate) (FCR) is a measure of how well an animal converts feed into liveweight gain. The table below shows the weaning FCR for pigs from 2000 to 2020. (Adapted from Teagasc ePM, 2021)",
     questionText: "Describe two reasons for the increased performance of the pigs from 2000 to 2020.",
     tariffModel: {"kind":"fixed","notation":"2(1)"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Improved breeding (genetics) – increased growth rate of pigs", marks: 1, accepts: ["better management of stock by training of all staff in technical skills and management training will ensure lower FCR of pigs","better housing – appropriate, stable temperature (critical temperature) or ventilation (good air movement) or hygiene to achieve optimal FCR","better animal health ‐ good gut health to ensure well developed gut at weaning which ensures optimal feed conversion or good biosecurity or health management plan measures to prevent disease entry to farm (ensure healthy animals and optimise FCR)","lower stocking density lowers FCR (pigs finish faster with lower inputs)"], contextNote: "Any two reasons score, 1 mark each." },
     { id: "r-2", kind: "point", verbatim: "better feed quality or feed formulation – improved understanding of FCR (or FCE) and ration formulation allows for increased FCR (or feed losses)", marks: 1, accepts: ["better management of stock by training of all staff in technical skills and management training will ensure lower FCR of pigs","better housing – appropriate, stable temperature (critical temperature) or ventilation (good air movement) or hygiene to achieve optimal FCR","better animal health ‐ good gut health to ensure well developed gut at weaning which ensures optimal feed conversion or good biosecurity or health management plan measures to prevent disease entry to farm (ensure healthy animals and optimise FCR)","lower stocking density lowers FCR (pigs finish faster with lower inputs)"], contextNote: "Any two reasons score, 1 mark each." },
     ],
+    figure: {
+          "candId": "agricultural-science-2022-HL-paper-p08-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p08-i0.png",
+          "srcHash": "7d24f038f9cd6b23e45b22bfcfa70436",
+          "alt": "The Question 5(b) data table with an accompanying photograph. Above the table the line '(b) The table shows the weaning FCR for pigs from 2000 to 2020.' At top right a colour photograph of two pale pink piglets inside a shed, the nearer one facing the camera with large upright ears, resting against a metal rail. The table has a pale green header row with three year columns: 2000, 2010, 2020. The row headings are in pale blue cells down the left. Rows and values: 'Liveweight at sale (kg)' 90.1, 103.6, 115.3; 'Deadweight at sale (kg)' 68.1, 78.9, 88.2; 'Average Daily Gain (ADG) (g)' 585, 668, 735; 'FCR' 1.83, 1.80, 1.75. All twelve data cells are legible and the closing border under the FCR row is present.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -854,13 +870,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
     id: "agsci-2022-hl-q7a", topicId: "agsci-4-3-2", conceptId: "weaning-efficiency-calculation",
     section: "A", questionRef: "2022 HL Q7(a)",
-    stem: "Sadie, a suckler farmer, is participating in the Beef Environmental Efficiency Programme (BEEP) and received her 'Weaning Performance Report'. This report calculates the % weaning efficiency of each dam (cow) and calf. The target weaning efficiency is 42%. The paper's worked example: Calf 1, 200 day old, Weight = 335kg; Dam weight = 680kg; 335kg = 49% of 680kg; % Weaning efficiency = 49%. Table — 200 Day Weight (kg) / Weaning Efficiency (%): Calf 2 = 256, 39%; Dam of calf 2 = 650; Calf 3 = 333; Dam of calf 3 = 698. (Adapted from ICBF, 2021)",
-    questionText: "Calculate the % weaning efficiency for Sadie’s suckler dam and calf 3 in the table below.",
+    stem: "Sadie, a suckler farmer, is participating in the Beef Environmental Efficiency Programme (BEEP); her 'Weaning Performance Report' calculates the % weaning efficiency of each dam (cow) and calf, and the target is 42%. Her report gives these 200 day weights: calf 2 = 256 kg (weaning efficiency 39%), dam of calf 2 = 650 kg, calf 3 = 333 kg, dam of calf 3 = 698 kg. The diagram below shows how the % weaning efficiency is calculated, worked through for calf 1. (Adapted from ICBF, 2021)",
+    questionText: "Calculate the % weaning efficiency for Sadie's suckler dam and calf 3, using the 200 day weights given above.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "333÷698 x 100÷1", marks: 2, contextNote: "The working: calf's 200-day weight over the dam's weight, as a percentage." },
     { id: "r-2", kind: "point", verbatim: "= 47.7% (48%)", marks: 2, contextNote: "The scheme adds: (If a candidate just gives 47.7% or 48% then award 4m) — a correct answer with no working still takes the full 4." },
     ],
+    figure: {
+          "candId": "agricultural-science-2022-HL-paper-p10-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p10-i0.png",
+          "srcHash": "0e66d4d5c9d74be859b0b4f05ff05e34",
+          "alt": "The Question 7 stem and the weaning efficiency diagram, complete. The stem reads: 'Question 7 - Sadie, a suckler farmer is participating in the Beef Environmental Efficiency Programme (BEEP) and received her Weaning Performance Report. This report calculates the % weaning efficiency of each dam (cow) and calf. The target weaning efficiency is 42%.' and 'Analyse the diagram below which illustrates how the % weaning efficiency is calculated and answer the questions which follow.' The diagram sits on a light grey rectangular panel. Top left, a rounded photograph of a tan/red-brown calf standing beside an adult cow in a field, overprinted in white bold text with three lines: 'Calf 1', '200 day old', 'Weight = 335kg'. Top right, a rounded photograph of a tan/red-brown cow standing in a field beside a dark treeline, overprinted in white bold text: 'Dam weight = 680kg'. From each photograph a thick green arrow points down and inwards to a large blue ellipse in the centre, which carries two lines of white bold text: '335kg = 49% of 680kg' and '% Weaning efficiency = 49%'. Bottom right of the panel, the italic attribution '(Adapted from ICBF, 2021)'.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -913,7 +937,7 @@ export const CARDS: SecCard[] = [
     id: "agsci-2022-hl-q8aii", topicId: "agsci-4-3-3", conceptId: "reducing-antibiotic-use",
     section: "A", questionRef: "2022 HL Q8(a)(ii)",
     stem: "The European Commission has set targets for sustainable food production by 2030, including reducing the use of antibiotics for farm animals. (Adapted from European Commission, 2020)",
-    questionText: "Explain one way for each part (i) and (ii) below farmers can: (ii) Reduce use of antibiotics for farm animals.",
+    questionText: "Explain one way farmers can reduce the use of antibiotics for farm animals.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Targeted treatment of cows with high SCC or cull cow", marks: 3, accepts: ["isolate sick animals or good hygiene or ‘all in all out’ policy or closed herd or restrict visitors or vehicles to prevent infection","reduce stocking density which decreases animal contact","good ventilation in animal housing to lessen risk of airborne pathogens","good vaccination programme","breed for genetic merit or EBI health index"], contextNote: "One way only, explained — the explanation is part of the same 3-mark point." },
@@ -1158,12 +1182,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
     id: "agsci-2022-hl-q12aii", topicId: "agsci-3-3-3", conceptId: "harvest-date-and-silage-dmd",
     section: "A", questionRef: "2022 HL Q12(a)(ii)",
-    stem: "Answer either (a) or (b). (a) Silage analysis from a beef enterprise — DMD %: 75 / 70 / 65 / 60 against harvest dates 20 May / 2 June / 15 June / 28 June. (Adapted from Teagasc, 2021)",
-    questionText: "Using the data in the table above briefly explain the effect of harvest date on the DMD %.",
+    stem: "Answer either (a) or (b). (a) The results of silage analysis from a beef enterprise are presented in the table below. (Adapted from Teagasc, 2021)",
+    questionText: "Using the data in the table below briefly explain the effect of harvest date on the DMD %.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "As the harvest date is delayed after 20 May the DMD decreases (every 13 days)", marks: 4, accepts: ["DMD will drop 5% every 2 weeks or 0.38% per day","or by 15% over 39 days"], contextNote: "*Answers must refer to data in table. Any of the quantified versions below states the same point and carries the full 4 marks." },
     ],
+    figure: {
+          "candId": "agricultural-science-2022-HL-paper-p16-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p16-i0.png",
+          "srcHash": "ea62675df248f550affa6e9042fa7803",
+          "alt": "The Question 12(a) silage analysis table with an accompanying photograph. Above the table: 'Question 12  Answer either (a) or (b).' and '(a) The results of silage analysis from a beef enterprise are presented in the table below.' At top right a colour photograph taken inside a livestock shed: a row of cattle of mixed colours (black, roan, brown, white-faced) standing at a feed barrier with their heads down eating a spread of silage on the concrete feed passage, steel roof trusses and a translucent roof light overhead, a bright open doorway to the right. The table has a pale blue full-width title row 'Silage Quality' and five row headings in peach-coloured cells with four data columns. Rows and values: '% Dry Matter Digestibility (DMD %)' 75, 70, 65, 60; 'Harvest date' 20 May, 2 June, 15 June, 28 June; 'Silage tonne Dry Matter per ha' 4.6, 6.0, 7.0, 7.7; 'Intake (kg/day)' 9.0, 8.3, 7.6, 7.0; 'Liveweight gain (kg/day)' 0.83, 0.66, 0.49, 0.31. Right-aligned italic attribution beneath: '(Adapted from Teagasc, 2021)'.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1172,13 +1204,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
     id: "agsci-2022-hl-q12aiii", topicId: "agsci-4-3-2", conceptId: "silage-quality-and-beef-performance",
     section: "A", questionRef: "2022 HL Q12(a)(iii)",
-    stem: "Answer either (a) or (b). (a) Silage analysis from a beef enterprise — DMD %: 75 / 70 / 65 / 60; Intake (kg/day): 9.0 / 8.3 / 7.6 / 7.0; Liveweight gain (kg/day): 0.83 / 0.66 / 0.49 / 0.31. (Adapted from Teagasc, 2021)",
-    questionText: "Referring to the data in the table above outline two benefits of good quality silage on the beef animal productivity.",
+    stem: "Answer either (a) or (b). (a) The results of silage analysis from a beef enterprise are presented in the table below. (Adapted from Teagasc, 2021)",
+    questionText: "Referring to the data in the table below outline two benefits of good quality silage on the beef animal productivity.",
     tariffModel: {"kind":"fixed","notation":"2(2)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The higher the DMD of the silage the higher LWG or milk yield", marks: 2, accepts: ["High DMD silage (75%) will increase intake (9.0kg/day) (and decreased concentrate requirement)","shorter finishing period or reach target weight quicker as animals have a higher liveweight gain of 0.83kg per day with 75% DMD silage"], contextNote: "*Answers must refer to data in table (qualitative or quantitative). Any two benefits score, 2 marks each." },
     { id: "r-2", kind: "point", verbatim: "silage of 75% DMD has 0.83kg per day liveweight gain compared to DMD of 70% has 0.66kg per day liveweight gain", marks: 2, accepts: ["High DMD silage (75%) will increase intake (9.0kg/day) (and decreased concentrate requirement)","shorter finishing period or reach target weight quicker as animals have a higher liveweight gain of 0.83kg per day with 75% DMD silage"], contextNote: "*Answers must refer to data in table (qualitative or quantitative). Any two benefits score, 2 marks each." },
     ],
+    figure: {
+          "candId": "agricultural-science-2022-HL-paper-p16-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p16-i0.png",
+          "srcHash": "ea62675df248f550affa6e9042fa7803",
+          "alt": "The Question 12(a) silage analysis table with an accompanying photograph. Above the table: 'Question 12  Answer either (a) or (b).' and '(a) The results of silage analysis from a beef enterprise are presented in the table below.' At top right a colour photograph taken inside a livestock shed: a row of cattle of mixed colours (black, roan, brown, white-faced) standing at a feed barrier with their heads down eating a spread of silage on the concrete feed passage, steel roof trusses and a translucent roof light overhead, a bright open doorway to the right. The table has a pale blue full-width title row 'Silage Quality' and five row headings in peach-coloured cells with four data columns. Rows and values: '% Dry Matter Digestibility (DMD %)' 75, 70, 65, 60; 'Harvest date' 20 May, 2 June, 15 June, 28 June; 'Silage tonne Dry Matter per ha' 4.6, 6.0, 7.0, 7.7; 'Intake (kg/day)' 9.0, 8.3, 7.6, 7.0; 'Liveweight gain (kg/day)' 0.83, 0.66, 0.49, 0.31. Right-aligned italic attribution beneath: '(Adapted from Teagasc, 2021)'.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1286,13 +1326,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q2a", topicId: "agsci-3-1", conceptId: "cereal-growth-stages",
     section: "A", questionRef: "2023 HL Q2(a)",
-    stem: "The diagram shows an example of the growth cycle of the food crop barley (Germination, Tillering, Stem Elongation, Flowering, Ripening).",
+    stem: "The diagram below shows an example of the growth cycle of the food crop barley.",
     questionText: "Explain what happens at any two of the following stages in any named plant you have studied: Germination, Stem Elongation, Flowering.",
     tariffModel: {"kind":"fixed","notation":"2(3)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Germination — Embryo's cells start to enlarge", marks: 3, accepts: ["seed coat breaks open","root or radicle emerges (first)","(followed by) the shoot or plumule emerges"], contextNote: "Within a stage the scheme's solidus list is alternatives: one correct statement about the stage earns its 3 marks." },
     { id: "r-2", kind: "alt", verbatim: "Stem Elongation — Rapid growth of stems", marks: 3, accepts: ["stem lengthens (between the upper nodes)"], contextNote: "Any TWO of the three stages score 3 marks each. If you answered Flowering instead, the scheme's answer is: 'Seed head develops or heading out / stem is fibrous and strong enough to support seed head / plants stop growing / produce flowers (buds) for reproduction'." },
     ],
+    figure: {
+          "candId": "agricultural-science-2023-HL-paper-p05-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p05-i0.png",
+          "srcHash": "334717cb9121b98aa27ee40df6d819dd",
+          "alt": "A five-panel cartoon strip showing the growth cycle of barley, drawn inside a single heavy black frame divided into five equal boxes. Above the frame, the numbers 1, 2, 3, 4 and 5 sit over the panels left to right. Each panel has a cream sky and a brown soil band along the bottom, with the stage name printed in white bold on the soil. Panel 1 'Germination' shows a tiny seedling with two small leaves just breaking the soil surface with a root below. Panel 2 'Tillering' shows a short dark-green plant with several narrow leaves fanning out from the base. Panel 3 'Stem Elongation' shows a taller light-green plant with a distinct upright stem and long leaves. Panel 4 'Flowering' shows a tall plant with an olive/orange stem carrying a slim green flowering head (ear) at the top. Panel 5 'Ripening' shows the same plant turned orange-brown with the drooping ripe ear and detaching grains. Above the strip is the heading 'Question 2 — The diagram shows an example of the growth cycle of the food crop barley.' Below it the instruction '(a) Explain what happens at any two of the following stages in any named plant you have studied.' and the start of a blank answer table with a grey 'Named plant:' bar and green-tinted row headers 'Germination' and 'Stem Elongation'.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1595,13 +1643,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q10bi", topicId: "agsci-4-3-2", conceptId: "pig-ration-ingredients",
     section: "A", questionRef: "2023 HL Q10(b)(i)",
-    stem: "Question 10. Answer either (a) or (b). The table shows the composition of different pig rations. Analyse the data and answer the questions which follow. Ingredients by pig weight (15–30kg / 30–60kg / over 60kg): Soya bean 25 / 20 / 15; Rice bran 25 / 40 / 35; Maize 20 / 25 / 30; Broken rice 5 / 5 / 5; Wheat bran 20 / 15 / 10; Crude protein (%) 16 / 15 / 14.",
+    stem: "Question 10. Answer either (a) or (b).\n(b) The table shows the composition of different pig rations.\nAnalyse the data and answer the questions which follow.",
     questionText: "Explain the function of soya bean and rice bran in pig diets.",
     tariffModel: {"kind":"fixed","notation":"3 + 3"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Soya bean: Source of energy or protein or for growth and repair", marks: 3, accepts: ["provides high quantity of amino acids","source of calcium for bone development"], contextNote: "The scheme adds an instruction to examiners: 'Accept source of nutrient or function of nutrient'.", openList: true },
     { id: "r-2", kind: "alt", verbatim: "Rice bran: (rich) source of protein for growth and repair", marks: 3, accepts: ["carbohydrate or fat for energy","dietary fibres for gut development (or gut function)","vitamins or minerals for metabolism"], contextNote: "'Accept source of nutrient or function of nutrient' applies to this ingredient too.", openList: true },
     ],
+    figure: {
+          "candId": "agricultural-science-2023-HL-paper-p15-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p15-i0.png",
+          "srcHash": "f63f911daefbf39529c859ef7600ed2a",
+          "alt": "A data table of pig ration compositions with a colour photograph to its left. The photograph shows four or five young pink piglets, one with dark grey mottling, feeding from a round green plastic feeder full of pale meal in a slatted-floor pen, with a green wall panel behind. The table has a grey merged header 'Pig Weight' spanning three columns, and beneath it a header row: 'Ingredients' (peach tint) then '15 – 30kg', '30 – 60kg' and 'Over 60kg' (cream tint). The body rows read: Soya bean 25 / 20 / 15; Rice bran 25 / 40 / 35; Maize 20 / 25 / 30; Broken rice 5 / 5 / 5; Wheat bran 20 / 15 / 10; Crude protein (%) 16 / 15 / 14. Above the table is 'Or  (b) The table shows the composition of different pig rations. Analyse the data and answer the questions which follow.' Below it '(i) Explain the function of soya bean and rice bran in pig diets.' and an answer box beginning 'Soya bean:' and, sliced at the bottom edge, 'Rice bran:'.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1668,12 +1724,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q12a", topicId: "agsci-2-3", conceptId: "slurry-nutrient-value",
     section: "A", questionRef: "2023 HL Q12(a)",
-    stem: "On farm testing of slurry using a hydrometer is the quickest way of determining the value of slurry on the farm. The dry matter (DM) content of the slurry sample is 7%. Analyse the table below and answer the questions which follow. Dry Matter (%) — N kg/m3, P kg/m3, K kg/m3: 2 (very dilute) — 0.40, 0.21, 1.40; 4 (watery) — 0.70, 0.35, 2.10; 6 (typical) — 1.00, 0.50, 3.50; 7 (thicker) — 1.10, 0.60, 4.00. (Adapted from Teagasc, 2022)",
+    stem: "On farm testing of slurry using a hydrometer is the quickest way of determining the value of slurry on the farm. The dry matter (DM) content of the slurry sample is 7%, as shown in the picture.\nAnalyse the table below and answer the questions which follow. (Adapted from Teagasc, 2022)",
     questionText: "State the N content of this slurry sample.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "gate", verbatim: "1.1(kg/m3)", marks: 3, contextNote: "Asterisked in the scheme — printed as '1.1(kg/m3)*'. The asterisk means only this exact value scores, and a wrong value written alongside it cancels this row. It does not zero the rest of the question." },
     ],
+    figure: {
+          "candId": "agricultural-science-2023-HL-paper-p17-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p17-i0.png",
+          "srcHash": "e417b902189143b26847c3a0d60676c2",
+          "alt": "Question 12: a slurry nutrient table beside a labelled photograph. The table has a blue header row reading 'Dry Matter (%)', 'N kg/m3', 'P kg/m3', 'K kg/m3', with green-tinted row headers. Rows: '2 (very dilute)' — 0.40, 0.21, 1.40; '4 (watery)' — 0.70, 0.35, 2.10; '6 (typical)' — 1.00, 0.50, 3.50; '7 (thicker)' — 1.10, 0.60, 4.00. To the right is a dark colour photograph looking down into a bucket or tub of near-black slurry, with a thin white and dark graduated float standing upright in it. Two arrows with printed text labels point into the photograph: a yellow arrow from the word 'hydrometer' (printed in yellow, upper right) pointing down-left to the upper part of the float, and a white arrow from the words '7% DM' (printed in white, mid right) pointing up-left to the point where the float meets the slurry surface. Above is the text 'On farm testing of slurry using a hydrometer is the quickest way of determining the value of slurry on the farm. The dry matter (DM) content of the slurry sample is 7%, as shown in the picture. Analyse the table below and answer the questions which follow.' Below: '(Adapted from Teagasc, 2022)', then part (a) 'State the N content of this slurry sample.' and part (b) 'Suggest one reason for a dry matter (DM) content of 2% in a slurry sample.' each with an empty answer box.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1682,12 +1746,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q12b", topicId: "agsci-2-3", conceptId: "slurry-dry-matter-dilution",
     section: "A", questionRef: "2023 HL Q12(b)",
-    stem: "On farm testing of slurry using a hydrometer is the quickest way of determining the value of slurry on the farm. The table gives N, P and K content at dry matter values of 2% (very dilute), 4% (watery), 6% (typical) and 7% (thicker). (Adapted from Teagasc, 2022)",
+    stem: "On farm testing of slurry using a hydrometer is the quickest way of determining the value of slurry on the farm. The dry matter (DM) content of the slurry sample is 7%, as shown in the picture.\nAnalyse the table below and answer the questions which follow. (Adapted from Teagasc, 2022)",
     questionText: "Suggest one reason for a dry matter (DM) content of 2% in a slurry sample.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Slurry lagoon is not covered", marks: 3, accepts: ["rainwater or dairy washings entering slurry tank"], contextNote: "One reason earns the full 3 marks; the two are solidus-separated alternatives." },
     ],
+    figure: {
+          "candId": "agricultural-science-2023-HL-paper-p17-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p17-i0.png",
+          "srcHash": "e417b902189143b26847c3a0d60676c2",
+          "alt": "Question 12: a slurry nutrient table beside a labelled photograph. The table has a blue header row reading 'Dry Matter (%)', 'N kg/m3', 'P kg/m3', 'K kg/m3', with green-tinted row headers. Rows: '2 (very dilute)' — 0.40, 0.21, 1.40; '4 (watery)' — 0.70, 0.35, 2.10; '6 (typical)' — 1.00, 0.50, 3.50; '7 (thicker)' — 1.10, 0.60, 4.00. To the right is a dark colour photograph looking down into a bucket or tub of near-black slurry, with a thin white and dark graduated float standing upright in it. Two arrows with printed text labels point into the photograph: a yellow arrow from the word 'hydrometer' (printed in yellow, upper right) pointing down-left to the upper part of the float, and a white arrow from the words '7% DM' (printed in white, mid right) pointing up-left to the point where the float meets the slurry surface. Above is the text 'On farm testing of slurry using a hydrometer is the quickest way of determining the value of slurry on the farm. The dry matter (DM) content of the slurry sample is 7%, as shown in the picture. Analyse the table below and answer the questions which follow.' Below: '(Adapted from Teagasc, 2022)', then part (a) 'State the N content of this slurry sample.' and part (b) 'Suggest one reason for a dry matter (DM) content of 2% in a slurry sample.' each with an empty answer box.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1752,7 +1824,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q2biii", topicId: "agsci-4-3-1", conceptId: "sustainable-breed-choice",
     section: "A", questionRef: "2024 HL Q2(b)(iii)",
-    stem: "Answer either (a) or (b). Read the Irish Moiled article and answer the questions that follow. The paper prints a two-column table headed Characteristic / Description, with a worked example: \"Medium size cow — High producing cow without requiring large amounts of feed\".",
+    stem: "Answer either (a) or (b).\n(b) Read the article and answer the questions that follow.\nThe Irish Moiled is one of the rarest Irish cattle breeds. It is a hornless medium sized breed with a mature cow weighing up to 650kg. Traditionally a dairy cow with yields of up to 5000 litres, it has earned the reputation as a truly dual purpose breed. In the suckler herd the cow will go into a negative energy balance to ensure the calf gets the best start in life.\nThey are generally easy to handle with a placid docile temperament. Surplus males sell well as steers finishing between 20-24 months on good quality forage diet to carcass weights from 220-260kg. The beef is of superb quality with a distinctive flavour.\nThe cow can be relied upon to produce a calf every 12 months if kept in good health and body condition. They will calve to a continental bull without difficulty and will continue to breed satisfactorily until at least ten years of age.\nTradition has it that they are 'big bellied' to consume and digest large quantities of poorer quality forage which was their traditional diet. They can be termed 'ready browsers' because they will graze willow, ash and ivy, which makes them ideal in extensive or conservation grazing situations.\nThey are sound in hoof and leg and at home on most types of terrain. They grow a thick winter coat and out-winter happily although being a heavy animal they will poach soft ground. (Adapted from thecattlesite.com)\nGive your answer as a characteristic and a description. The first one has been done as an example - Characteristic: 'Medium size cow'; Description: 'High producing cow without requiring large amounts of feed'.",
     questionText: "Describe one characteristic of the Irish Moiled which makes them a sustainable breed choice on Irish farms.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -1781,7 +1853,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q3aii", topicId: "agsci-3-3-2", conceptId: "continuous-grazing-root-development",
     section: "A", questionRef: "2024 HL Q3(a)(ii)",
-    stem: "Answer either (a) or (b). The diagram shows how grassland management affects pasture recovery post grazing: a short grazing period (1–2 days) leaves a 4cm post-grazing stubble and allows a long recovery, while continuous grazing (2–3 months) leaves a 2cm stubble and allows no recovery.",
+    stem: "Answer either (a) or (b).\n(a) Good grassland management affects pasture recovery post grazing. A short grazing period (1-2 days) leaves a 4cm post grazing stubble, allows a long recovery period, and the plants carry deep, densely branched roots. Continuous grazing (2-3 months) leaves only a 2cm stubble, allows no recovery period, and the plants carry short, sparse, shallow roots.",
     questionText: "Outline one reason for the root development in fields that are continuously grazed.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -1826,8 +1898,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q4", topicId: "agsci-2-3", conceptId: "compaction-organic-matter-loss",
     section: "A", questionRef: "2024 HL Q4",
-    stem: "The paper prints a table with columns \"Impact of\" | \"Effect on productivity\" | \"Ways of reducing effect\", and two rows to complete: Soil compaction, and Organic matter loss.",
-    questionText: "Describe the impact of soil compaction and organic matter loss has on the productivity of farm land in the table below.",
+    stem: "Soil compaction and organic matter loss both reduce the productivity of farm land.",
+    questionText: "Describe the impact that soil compaction and organic matter loss have on the productivity of farm land. For each, give the effect on productivity and ways of reducing that effect.",
     tariffModel: {"kind":"orderedSplit","notation":"2(3) + 2(2)"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Soil compaction, effect on productivity — reduce water infiltration", marks: null, accepts: ["increased risk of soil erosion","reduced crop emergence","reduced root penetration","reduced productivity"], contextNote: "Any one of the scheme's options for this cell. Also accepted: reduced crop yield; reduced nutrient or water uptake by the plant (both split by the neighbouring table column in the extraction)." },
@@ -1960,7 +2032,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q8c", topicId: "agsci-3-3-2", conceptId: "biological-control-examples",
     section: "A", questionRef: "2024 HL Q8(c)",
-    stem: "Read the dock beetle article and answer the questions that follow. The paper prints a two-column table headed Biological control | Target.",
+    stem: "Irish-bred dock beetles are being trialled as an environmentally friendly, cost-effective weapon to kill docks. Once released on a farm the dock beetle breeds to colonise the whole field; dock beetles are native, natural predators of docks, skeletonising dock leaves and keeping them at an acceptable level in grassland. (Adapted from Irish Farmers Journal, 2022)\nGive your answer as a biological control and its target.",
     questionText: "Dock beetles are an example of a biological control. Based on your own knowledge of agriculture, provide another example of a biological control and state its target.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -1975,8 +2047,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q9a", topicId: "agsci-2-2-2", conceptId: "soil-mineral-particle-properties",
     section: "A", questionRef: "2024 HL Q9(a)",
-    stem: "Answer either (a) or (b). The paper prints a table with columns \"Gravel and sand particles\" and \"Silt and clay particles\", and rows Particle size, Drainage, Fertility and Ion exchange. The first row is done as an example — Particle size: gravel and sand = \"Large particles\", silt and clay = \"Small particles\".",
-    questionText: "Compare the different soil mineral particles and their properties under the headings that follow.",
+    stem: "The first row of the comparison has been done as an example - Particle size: gravel and sand particles = 'Large particles'; silt and clay particles = 'Small particles'.",
+    questionText: "Compare the different soil mineral particles - gravel and sand particles against silt and clay particles - and their properties under the following headings: drainage, fertility and ion exchange.",
     tariffModel: {"kind":"orderedSplit","notation":"4(2) + 2(1)"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Drainage, gravel and sand particles — Good drainage", marks: null, accepts: ["large pore spaces)"], contextNote: "Scheme cell: \"Good drainage (due to large pore spaces)\". The bracketed reason contextualises the answer and is not required." },
@@ -2008,12 +2080,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q10c", topicId: "agsci-2-2-3", conceptId: "plant-diversity-soil-biology",
     section: "A", questionRef: "2024 HL Q10(c)",
-    stem: "The paper shows two grassland swards with a varying level of diversity.",
+    stem: "The pictures below show two swards with a varying level of diversity.\nAnalyse the pictures and answer the questions that follow.",
     questionText: "Research has shown that plant diversity enhances soil biodiversity in grassland swards. Briefly describe how plant diversity can positively impact soil biology in swards.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Increase in availability of food to all organisms", marks: 2, accepts: ["increase in diversity of food source","increased carbon sequestration at different levels","increased microbial communities","earthworm activity","increased air for (plant or animal) respiration (due to root activity at different levels)"], contextNote: "One 2-mark point; the solidi are six accepted wordings. The fifth reads in full \"increased earthworm activity\" (the mark column splits it in the extraction)." },
     ],
+    figure: {
+          "candId": "agricultural-science-2024-HL-paper-p15-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p15-i0.png",
+          "srcHash": "a5f1fa1406da97deca855bbf9c6e9bec",
+          "alt": "The Question 10 sward-diversity figure. Heading text above reads 'Question 10 / The pictures below show two swards with a varying level of diversity. Analyse the pictures and answer the questions that follow.' Two illustrated soil-profile blocks stand side by side, each headed by a bold letter. A shows a uniform stand of narrow green grass blades, all of one type and much the same height, growing from a dark brown topsoil layer; their roots are short, fine, reddish-brown and fibrous and stay entirely within the top band of soil. B shows a mixed stand containing several different plant types - fine grasses, taller darker grass stems, broad rounded leaves, small clover-like trifoliate leaves and a scatter of pale lilac/blue flower heads; below ground the roots are far more varied, with several thick pale taproots driving down through the dark topsoil and the darker band beneath it into the tan subsoil. Both blocks share the same layered profile: dark brown topsoil, a darker brown band, a tan stony subsoil with scattered grey stones and a grey stony layer at the base. Below the figure: '(a) Identify which picture A or B is more likely to be a multi-species (polyculture) sward.' with an answer box, and '(b) List two plants that could be included in the multi-species sward.' with numbered answer lines.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2022,7 +2102,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q11a", topicId: "agsci-4-3-2", conceptId: "average-calving-interval",
     section: "A", questionRef: "2024 HL Q11(a)",
-    stem: "The table below shows fertility summary data over five lactations for two cows on the Irish Cattle Breeding Federation's (ICBF) 'Cows Own Worth' database. Analyse the data and answer the questions that follow.\nCow 1 — Lactation 1 (calved 30/01/2019): 1 serve, no interval; Lactation 2 (27/01/2020): 2 serves, interval 362 days; Lactation 3 (28/02/2021): 2 serves, 397 days; Lactation 4 (08/02/2022): 1 serve, 345 days; Lactation 5 (11/03/2023): 1 serve, 397 days.\nCow 2 — Lactation 1: 2 serves, no interval; Lactation 2: 2 serves, 378 days; Lactation 3: 3 serves, 406 days; Lactation 4: 3 serves, 410 days; Lactation 5: 4 serves, 426 days.",
+    stem: "The fertility summary data below covers five lactations for two cows on the Irish Cattle Breeding Federation's (ICBF) 'Cows Own Worth' database. Analyse the data and answer the questions that follow.\nCow 1 - Lactation 1 (calved 30/01/2019): 1 serve, no interval; Lactation 2 (27/01/2020): 2 serves, interval 362 days; Lactation 3 (28/02/2021): 2 serves, 397 days; Lactation 4 (08/02/2022): 1 serve, 345 days; Lactation 5 (11/03/2023): 1 serve, 397 days.\nCow 2 - Lactation 1: 2 serves, no interval; Lactation 2: 2 serves, 378 days; Lactation 3: 3 serves, 406 days; Lactation 4: 3 serves, 410 days; Lactation 5: 4 serves, 426 days.",
     questionText: "Calculate the average calving interval for cow 1.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -2065,7 +2145,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q12a", topicId: "agsci-2-3", conceptId: "reducing-farm-runoff",
     section: "A", questionRef: "2024 HL Q12(a)",
-    stem: "Farmers must prevent runoff from soiled farm roadways into waterways. The diagram shows a dairy farm with cows grazing close to the waterway and a farm roadway sloping towards it. Analyse the picture and answer the questions that follow.",
+    stem: "Farmers must prevent runoff from soiled farm roadways into waterways. On one dairy farm the cows graze in fields right beside a waterway, and a soiled farm roadway slopes downhill towards that same waterway.",
     questionText: "Outline actions farmers can take to reduce the runoff from the fields and farm roadway.",
     tariffModel: {"kind":"orderedSplit","notation":"4+2"}, totalMarks: 6,
     rows: [
@@ -2342,13 +2422,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
     id: "agsci-2025-hl-q5c", topicId: "agsci-4-3-2", conceptId: "concentrate-feed-calculation",
     section: "A", questionRef: "2025 HL Q5(c)",
-    stem: "Gerry had 63 calves on his suckler beef farm in Co. Wicklow. Analyse the table on concentrate feed requirements and answer the questions that follow. Recommended daily feeding concentrate amount (kg/day): pre-weaning 1, post-weaning 2. Duration of feeding (weeks): pre-weaning 4, post-weaning 2.",
+    stem: "Gerry had 63 calves on his suckler beef farm in Co. Wicklow. Analyse the table on concentrate feed requirements below and answer the question that follows.",
     questionText: "Calculate the amount of concentrate feed required for his beef calves during the six-week weaning period.",
     tariffModel: {"kind":"fixed","notation":"1m for method, 1m for final answer"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Method — 4 x 7 x 1 = 28 kg per animal pre-weaning 2 x 7 x 2 = 28 kg per animal post weaning", marks: 1 },
     { id: "r-2", kind: "point", verbatim: "Final answer — 56 x 63 = 3528 kg", marks: 1, contextNote: "if answer is given and correct with no method award 2m" },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-HL-paper-p10-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-p10-i0.png",
+          "srcHash": "46d73c720516b9bdedc43bf8654b0e8d",
+          "alt": "The concentrate feeding data table for Question 5(c). It is a three-column, three-row table. The column headings, in a pale peach/apricot shaded band, read 'Recommended daily feeding concentrate amount (kg/day)' and 'Duration of feeding (weeks)'; the top-left corner cell is blank. The two row headings sit in pale blue shaded cells: 'Pre-weaning' with values 1 and 4, and 'Post-weaning' with values 2 and 2. Beneath the table is the printed instruction 'Calculate the amount of concentrate feed required for his beef calves during the six-week weaning period.' followed by a large bordered answer box headed 'Calculation:' with the prompt 'Total feed required for calves:' near its foot.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2417,13 +2505,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
     id: "agsci-2025-hl-q9bi", topicId: "agsci-2-2-1", conceptId: "soil-ph-crop-suitability",
     section: "A", questionRef: "2025 HL Q9(b)(i)",
-    stem: "Jack was carrying out research to see if he could sow barley in his fields and found that barley crops grow best between pH 6.0 and 7.0. The results of the investigation to determine the pH of a number of fields are shown in the table below. Field 1: pH 5.8. Field 2: pH 6.6. Field 3: pH 6.2.",
+    stem: "Jack was carrying out research to see if he could sow barley in his fields and found that barley crops grow best between pH 6.0 and 7.0. The results of the investigation to determine the pH of a number of fields are shown in the table below. Analyse the table and answer the question that follows.",
     questionText: "Identify which fields are most suitable for growing barley crops with an optimum growing range of 6.0 - 7.0.",
     tariffModel: {"kind":"fixed","notation":"2+2"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Field 2", marks: 2 },
     { id: "r-2", kind: "point", verbatim: "Field 3", marks: 2 },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-HL-paper-p15-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-p15-i0.png",
+          "srcHash": "4594187453360f8c3df2b63b04494ad5",
+          "alt": "Question 9(b) band. Printed text reads 'Or', then '(b) The results of the investigation to determine the pH of a number of fields are shown in the table below. Analyse the table and answer the questions that follow.' Below the text is a small two-column data table: the single column heading 'pH' sits in a pale peach shaded cell, and three pale-blue shaded row headings give 'Field 1' with value 5.8, 'Field 2' with value 6.6 and 'Field 3' with value 6.2. To the right is a rounded-corner colour photograph of an Irish tillage landscape: a large field of ripening golden barley filling the foreground and middle distance, a green headland and hedgerow strip to the right, a line of trees and a low blue-grey hill range on the horizon, under a blue sky with heavy white cumulus cloud. Beneath these is part (i) 'Identify which fields are most suitable for growing barley crops with an optimum growing range of 6.0 - 7.0.' with a two-row blank answer box, and the first line of part (ii).",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3127,12 +3223,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q18ci", topicId: "agsci-4-1", conceptId: "drying-off-period",
     section: "B", questionRef: "2021 HL Q18(c)(i)",
-    stem: "Question 18. (c) The paper prints a schematic graph of the lactation period of a dairy cow (adapted from Shauman, 2015). It runs left to right through a dry phase, calving, early lactation, mid lactation and late lactation to drying off, with an energy requirement curve and an energy intake curve; the gap where requirement exceeds intake after calving is labelled 'Negative Energy Balance', and the later gap where intake exceeds requirement is labelled 'Excess energy'. There are no numbers on either axis.",
+    stem: "Question 18. (c) Analyse the graph below, which shows the lactation period of a dairy cow (adapted from Shauman, 2015), and answer the question that follows.",
     questionText: "Explain what is the drying off period.",
     tariffModel: {"kind":"fixed","notation":"4"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Period of time when cow is not producing milk (60 days)", marks: 4 },
     ],
+    figure: {
+          "candId": "agricultural-science-2021-HL-paper-p45-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-HL-paper-p45-i0.png",
+          "srcHash": "10c967bfe57518714e598e52cbccd04e",
+          "alt": "The Question 18(c) lactation graph, complete. The line \"(c) Analyse the graph showing the lactation period of a dairy cow and answer the questions which follow.\" sits above a schematic curve diagram that has NO numbered axes and no units — time runs left to right, energy runs bottom to top. Two curves run across the chart: a dark green curve labelled \"Energy requirement\" (label in green just after the peak) and a second curve that is dark maroon-red where it lies below the green curve and blue where it lies above it, labelled \"Energy intake\" (blue label in a box at the left). Both dip slightly, then rise steeply to a peak and fall away to the right. Between the two curves in the rising/peak phase is a bright yellow filled area carrying a diagonal orange banner with the words \"Negative Energy Balance\"; after the two curves cross (marked by a maroon dashed vertical line) the intake curve lies above the requirement curve and the gap is filled pale blue-green with a diagonal banner reading \"Excess energy\". A black square-dotted vertical line near the left of centre is captioned \"Calving\" at the top; a yellow square-dotted vertical line at the right is captioned \"Drying off\" at the top; two further yellow dotted verticals bracket an orange horizontal bar low in the plot labelled \"Transition phase\", which straddles calving. A thick red double-headed horizontal arrow labelled \"Challenging period\" runs from calving to the maroon dashed crossing line. Pale yellow vertical bands shade the far left of the chart and the region to the right of drying off. Along the bottom is a blue banner divided into four labelled stages, left to right: \"Dry phase\", \"Early lactation\", \"Mid lactation\", \"Late lactation\", with a lighter blue unlabelled segment at the far right. Attribution \"(Adapted from Shauman, 2015)\". Below the graph, \"(i) Explain what is the drying off period.\" with its answer box and \"(ii) Outline one reason for the negative energy balance in early lactation.\" with the top of its box.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3141,12 +3245,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q18cii", topicId: "agsci-4-1", conceptId: "negative-energy-balance-in-early-lactation",
     section: "B", questionRef: "2021 HL Q18(c)(ii)",
-    stem: "Question 18. (c) The paper prints a schematic graph of the lactation period of a dairy cow (adapted from Shauman, 2015), running through a dry phase, calving, early, mid and late lactation to drying off. An energy requirement curve and an energy intake curve are drawn together; the gap after calving where requirement exceeds intake is labelled 'Negative Energy Balance', and the later gap where intake exceeds requirement is labelled 'Excess energy'.",
+    stem: "Question 18. (c) Analyse the graph below, which shows the lactation period of a dairy cow (adapted from Shauman, 2015), and answer the question that follows.",
     questionText: "Outline one reason for the negative energy balance in early lactation.",
     tariffModel: {"kind":"fixed","notation":"4"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Daily requirement of a cow cannot be met by the energy she consumes", marks: 4, accepts: ["cows cannot physically eat enough to meet the demands of lactation","so cow milk’s off her back"], contextNote: "The scheme's sentence runs on: '(cows cannot physically eat enough to meet the demands of lactation) so cow milk's off her back'. The gap between requirement and intake is the reason — not the milk yield itself." },
     ],
+    figure: {
+          "candId": "agricultural-science-2021-HL-paper-p45-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-HL-paper-p45-i0.png",
+          "srcHash": "10c967bfe57518714e598e52cbccd04e",
+          "alt": "The Question 18(c) lactation graph, complete. The line \"(c) Analyse the graph showing the lactation period of a dairy cow and answer the questions which follow.\" sits above a schematic curve diagram that has NO numbered axes and no units — time runs left to right, energy runs bottom to top. Two curves run across the chart: a dark green curve labelled \"Energy requirement\" (label in green just after the peak) and a second curve that is dark maroon-red where it lies below the green curve and blue where it lies above it, labelled \"Energy intake\" (blue label in a box at the left). Both dip slightly, then rise steeply to a peak and fall away to the right. Between the two curves in the rising/peak phase is a bright yellow filled area carrying a diagonal orange banner with the words \"Negative Energy Balance\"; after the two curves cross (marked by a maroon dashed vertical line) the intake curve lies above the requirement curve and the gap is filled pale blue-green with a diagonal banner reading \"Excess energy\". A black square-dotted vertical line near the left of centre is captioned \"Calving\" at the top; a yellow square-dotted vertical line at the right is captioned \"Drying off\" at the top; two further yellow dotted verticals bracket an orange horizontal bar low in the plot labelled \"Transition phase\", which straddles calving. A thick red double-headed horizontal arrow labelled \"Challenging period\" runs from calving to the maroon dashed crossing line. Pale yellow vertical bands shade the far left of the chart and the region to the right of drying off. Along the bottom is a blue banner divided into four labelled stages, left to right: \"Dry phase\", \"Early lactation\", \"Mid lactation\", \"Late lactation\", with a lighter blue unlabelled segment at the far right. Attribution \"(Adapted from Shauman, 2015)\". Below the graph, \"(i) Explain what is the drying off period.\" with its answer box and \"(ii) Outline one reason for the negative energy balance in early lactation.\" with the top of its box.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3162,6 +3274,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Feeding concentrates", marks: 3, accepts: ["correct BCS at calving (3.5)","feeding good quality grass (silage 72% + DMD)","grazing on paddocks close to yard to minimise energy usage from movement or zero grazing"], contextNote: "The scheme prints 2(3): any TWO of its four ways, 3 marks each." },
     { id: "r-2", kind: "point", verbatim: "correct BCS at calving (3.5)", marks: 3, accepts: ["Feeding concentrates","feeding good quality grass (silage 72% + DMD)","grazing on paddocks close to yard to minimise energy usage from movement or zero grazing"], contextNote: "Body condition score at calving — the cow carries reserves into the deficit rather than milking them off her back." },
     ],
+    figure: {
+          "candId": "agricultural-science-2021-HL-paper-p45-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-HL-paper-p45-i0.png",
+          "srcHash": "10c967bfe57518714e598e52cbccd04e",
+          "alt": "The Question 18(c) lactation graph, complete. The line \"(c) Analyse the graph showing the lactation period of a dairy cow and answer the questions which follow.\" sits above a schematic curve diagram that has NO numbered axes and no units — time runs left to right, energy runs bottom to top. Two curves run across the chart: a dark green curve labelled \"Energy requirement\" (label in green just after the peak) and a second curve that is dark maroon-red where it lies below the green curve and blue where it lies above it, labelled \"Energy intake\" (blue label in a box at the left). Both dip slightly, then rise steeply to a peak and fall away to the right. Between the two curves in the rising/peak phase is a bright yellow filled area carrying a diagonal orange banner with the words \"Negative Energy Balance\"; after the two curves cross (marked by a maroon dashed vertical line) the intake curve lies above the requirement curve and the gap is filled pale blue-green with a diagonal banner reading \"Excess energy\". A black square-dotted vertical line near the left of centre is captioned \"Calving\" at the top; a yellow square-dotted vertical line at the right is captioned \"Drying off\" at the top; two further yellow dotted verticals bracket an orange horizontal bar low in the plot labelled \"Transition phase\", which straddles calving. A thick red double-headed horizontal arrow labelled \"Challenging period\" runs from calving to the maroon dashed crossing line. Pale yellow vertical bands shade the far left of the chart and the region to the right of drying off. Along the bottom is a blue banner divided into four labelled stages, left to right: \"Dry phase\", \"Early lactation\", \"Mid lactation\", \"Late lactation\", with a lighter blue unlabelled segment at the far right. Attribution \"(Adapted from Shauman, 2015)\". Below the graph, \"(i) Explain what is the drying off period.\" with its answer box and \"(ii) Outline one reason for the negative energy balance in early lactation.\" with the top of its box.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3176,6 +3296,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Cow’s reproductive cycle may not have started since calving", marks: 4, accepts: ["not ovulating","won’t go in calf or longer calving interval"], contextNote: "The scheme's sentence runs on: '‐ not ovulating ‐ won't go in calf or longer calving interval'. Any of those consequences answers it." },
     ],
+    figure: {
+          "candId": "agricultural-science-2021-HL-paper-p45-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-HL-paper-p45-i0.png",
+          "srcHash": "10c967bfe57518714e598e52cbccd04e",
+          "alt": "The Question 18(c) lactation graph, complete. The line \"(c) Analyse the graph showing the lactation period of a dairy cow and answer the questions which follow.\" sits above a schematic curve diagram that has NO numbered axes and no units — time runs left to right, energy runs bottom to top. Two curves run across the chart: a dark green curve labelled \"Energy requirement\" (label in green just after the peak) and a second curve that is dark maroon-red where it lies below the green curve and blue where it lies above it, labelled \"Energy intake\" (blue label in a box at the left). Both dip slightly, then rise steeply to a peak and fall away to the right. Between the two curves in the rising/peak phase is a bright yellow filled area carrying a diagonal orange banner with the words \"Negative Energy Balance\"; after the two curves cross (marked by a maroon dashed vertical line) the intake curve lies above the requirement curve and the gap is filled pale blue-green with a diagonal banner reading \"Excess energy\". A black square-dotted vertical line near the left of centre is captioned \"Calving\" at the top; a yellow square-dotted vertical line at the right is captioned \"Drying off\" at the top; two further yellow dotted verticals bracket an orange horizontal bar low in the plot labelled \"Transition phase\", which straddles calving. A thick red double-headed horizontal arrow labelled \"Challenging period\" runs from calving to the maroon dashed crossing line. Pale yellow vertical bands shade the far left of the chart and the region to the right of drying off. Along the bottom is a blue banner divided into four labelled stages, left to right: \"Dry phase\", \"Early lactation\", \"Mid lactation\", \"Late lactation\", with a lighter blue unlabelled segment at the far right. Attribution \"(Adapted from Shauman, 2015)\". Below the graph, \"(i) Explain what is the drying off period.\" with its answer box and \"(ii) Outline one reason for the negative energy balance in early lactation.\" with the top of its box.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3191,6 +3319,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "In mid‐lactation cows can produce milk on a grass only diet", marks: 3, accepts: ["rotational grazing keeps highly digestible grass fed to the cows at all times"], contextNote: "The scheme prints 2(3): any TWO points, 3 marks each. The question names two things to comment on — feed type and level of concentrates — and the scheme's points cover exactly those." },
     { id: "r-2", kind: "point", verbatim: "no requirement for concentrates at this stage", marks: 3, accepts: ["rotational grazing keeps highly digestible grass fed to the cows at all times"] },
     ],
+    figure: {
+          "candId": "agricultural-science-2021-HL-paper-p45-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-HL-paper-p45-i0.png",
+          "srcHash": "10c967bfe57518714e598e52cbccd04e",
+          "alt": "The Question 18(c) lactation graph, complete. The line \"(c) Analyse the graph showing the lactation period of a dairy cow and answer the questions which follow.\" sits above a schematic curve diagram that has NO numbered axes and no units — time runs left to right, energy runs bottom to top. Two curves run across the chart: a dark green curve labelled \"Energy requirement\" (label in green just after the peak) and a second curve that is dark maroon-red where it lies below the green curve and blue where it lies above it, labelled \"Energy intake\" (blue label in a box at the left). Both dip slightly, then rise steeply to a peak and fall away to the right. Between the two curves in the rising/peak phase is a bright yellow filled area carrying a diagonal orange banner with the words \"Negative Energy Balance\"; after the two curves cross (marked by a maroon dashed vertical line) the intake curve lies above the requirement curve and the gap is filled pale blue-green with a diagonal banner reading \"Excess energy\". A black square-dotted vertical line near the left of centre is captioned \"Calving\" at the top; a yellow square-dotted vertical line at the right is captioned \"Drying off\" at the top; two further yellow dotted verticals bracket an orange horizontal bar low in the plot labelled \"Transition phase\", which straddles calving. A thick red double-headed horizontal arrow labelled \"Challenging period\" runs from calving to the maroon dashed crossing line. Pale yellow vertical bands shade the far left of the chart and the region to the right of drying off. Along the bottom is a blue banner divided into four labelled stages, left to right: \"Dry phase\", \"Early lactation\", \"Mid lactation\", \"Late lactation\", with a lighter blue unlabelled segment at the far right. Attribution \"(Adapted from Shauman, 2015)\". Below the graph, \"(i) Explain what is the drying off period.\" with its answer box and \"(ii) Outline one reason for the negative energy balance in early lactation.\" with the top of its box.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3205,6 +3341,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "305 days", marks: 4, contextNote: "305 days of lactation plus the 60-day dry period from part (i) makes the 365-day calving interval." },
     ],
+    figure: {
+          "candId": "agricultural-science-2021-HL-paper-p45-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-HL-paper-p45-i0.png",
+          "srcHash": "10c967bfe57518714e598e52cbccd04e",
+          "alt": "The Question 18(c) lactation graph, complete. The line \"(c) Analyse the graph showing the lactation period of a dairy cow and answer the questions which follow.\" sits above a schematic curve diagram that has NO numbered axes and no units — time runs left to right, energy runs bottom to top. Two curves run across the chart: a dark green curve labelled \"Energy requirement\" (label in green just after the peak) and a second curve that is dark maroon-red where it lies below the green curve and blue where it lies above it, labelled \"Energy intake\" (blue label in a box at the left). Both dip slightly, then rise steeply to a peak and fall away to the right. Between the two curves in the rising/peak phase is a bright yellow filled area carrying a diagonal orange banner with the words \"Negative Energy Balance\"; after the two curves cross (marked by a maroon dashed vertical line) the intake curve lies above the requirement curve and the gap is filled pale blue-green with a diagonal banner reading \"Excess energy\". A black square-dotted vertical line near the left of centre is captioned \"Calving\" at the top; a yellow square-dotted vertical line at the right is captioned \"Drying off\" at the top; two further yellow dotted verticals bracket an orange horizontal bar low in the plot labelled \"Transition phase\", which straddles calving. A thick red double-headed horizontal arrow labelled \"Challenging period\" runs from calving to the maroon dashed crossing line. Pale yellow vertical bands shade the far left of the chart and the region to the right of drying off. Along the bottom is a blue banner divided into four labelled stages, left to right: \"Dry phase\", \"Early lactation\", \"Mid lactation\", \"Late lactation\", with a lighter blue unlabelled segment at the far right. Attribution \"(Adapted from Shauman, 2015)\". Below the graph, \"(i) Explain what is the drying off period.\" with its answer box and \"(ii) Outline one reason for the negative energy balance in early lactation.\" with the top of its box.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3368,6 +3512,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Quality of the colostrum is very poor – it wouldn’t have all the necessary antibodies or provide the calf with good immunity", marks: 4, accepts: ["get good quality colostrum from another freshly calved cow (on the farm)","feed calf good quality frozen colostrum from farm (allowed to defrost naturally or not in microwave) to ensure good immunity to diseases on the farm","feed dried colostrum to calf"], contextNote: "25 mg/ml sits below the 30 mg/ml 'Poor' band, so the answer must read the data first and then act on it. The alternatives below are the actions the scheme credits instead." },
     ],
+    figure: {
+          "candId": "agricultural-science-2022-HL-paper-p24-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p24-i1.png",
+          "srcHash": "ef7cea54ed163c19d0fbab4bd7a034e1",
+          "alt": "The Question 14(a)(v) colostrum quality table with an accompanying photograph. Stem above: '(v) Colostrum quality varies enormously between cows, so quality should be tested every time with a colostrometer or BRIX refractometer.' The table has two pale blue header cells: 'Rating' and 'Measure of Quality (milligrams of IgG in each ml of colostrum)'. Three data rows, each rating in a pale peach cell: 'Very good' 60 mg/ml; 'Good' 50 mg/ml; 'Poor' 30 mg/ml. Italic attribution beneath the table: '(Adapted from Teagasc, 2017)'. To the right, a colour photograph of a person in a grey top holding a hand-held refractometer - a metal barrel with a black ribbed rubber grip and a blue label - in one hand while the other hand uses a thin white pipette or dropper to place a drop of sample on the angled glass prism at the far end; a large stainless steel vessel is out of focus behind. Below, the question continues: 'Alice tested the colostrum from one of her freshly calved cows using the refractometer and recorded a reading of 25 mg/ml. Describe briefly what advice you would give Alice in relation to feeding the cow's new born calf.' with a blank ruled answer box beginning.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3384,6 +3536,14 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "B = 6 ‐ 7%", marks: 2, contextNote: "B is the fat % of COLOSTRUM (first milking) — roughly double whole milk's 3.8%." },
     { id: "r-3", kind: "point", verbatim: "C = 14 ‐ 15%", marks: 2, contextNote: "C is the protein % of COLOSTRUM — far above whole milk's 3.3%, because of the immunoglobulins." },
     ],
+    figure: {
+          "candId": "agricultural-science-2022-HL-paper-p24-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p24-i0.png",
+          "srcHash": "81e20b68fde18b866e86c199872d4f54",
+          "alt": "The Question 14(b) milk composition table, in which three cells are blanked out and lettered for the candidate to complete. Stem above: '(b) The table shows the difference in nutrient composition between colostrum, transition milk and whole milk.' At the left, a small close-up colour photograph of a thick creamy pale-yellow liquid (colostrum) with a metal rod or paddle standing in it, the surface drawn into swirls and folds by stirring. The table has a pale green top row 'Milking Number Post Calving' spanning four columns headed First, Second, Third, Fourth. Beneath that a pale blue band groups the columns: 'Colostrum' over First, 'Transition Milk' spanning Second and Third, and 'Whole Milk' over Fourth. Three data rows follow, with headings in pale blue cells at the left. 'Total solid (%)': 23.9, 17.9, 14.1, and a yellow-highlighted cell containing the letter A. 'Fat (%)': a yellow-highlighted cell containing the letter B, then 5.4, 3.9, 3.8. 'Protein (%)': a yellow-highlighted cell containing the letter C, then 8.4, 5.1, 3.3. Right-aligned italic attribution '(Adapted from Teagasc, 2021)'. Below, '(i) Complete the table for the composition of colostrum and whole milk.' with an answer table showing rows 'A:', 'B:' and 'C:'.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3728,7 +3888,7 @@ export const CARDS: SecCard[] = [
     id: "agsci-2022-hl-q17aiii", topicId: "agsci-1-3", conceptId: "quadrat-population-estimate",
     section: "B", questionRef: "2022 HL Q17(a)(iii)",
     stem: "Question 17 instructs: answer both (a) and (b) with either (c) or (d). Part (a) opens: Earthworms are essential on all farms. Kate's permanent pasture is drawn on the paper as a rectangle measuring 178m by 98m. Her four quadrat counts, printed as 'Number of Earthworms/0.25m2 Quadrat', are: quadrat 1 = 28, quadrat 2 = 45, quadrat 3 = 23, quadrat 4 = 19.",
-    questionText: "Using a quadrat Kate determined the number of earthworms in her permanent pasture as shown in the table below. Estimate the total number of earthworms.",
+    questionText: "Using a quadrat Kate determined the number of earthworms in her permanent pasture: 28, 45, 23 and 19 earthworms per 0.25 m² quadrat in quadrats 1, 2, 3 and 4 respectively. Estimate the total number of earthworms.",
     tariffModel: {"kind":"fixed","notation":"2 + 2 + 2"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Area of pasture = 98 x 178 = 17444m2", marks: 2 },
@@ -3856,6 +4016,14 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "Animal Health – better health of the animal results in requirement for less antibiotic use", marks: null, accepts: ["benefit of less antibiotics ending up in food chain","animal health plan to minimise use of antibiotics or medications","routine testing to prevent transfer of disease (e.g. zoonotic)"] },
     { id: "r-4", kind: "point", verbatim: "Traceability – farm to fork to allow recall of product", marks: null, accepts: ["it is important that all animals are able to be traced back to original farm where animal health records are stored","to identify origin of food in case of recall"] },
     ],
+    figure: {
+          "candId": "agricultural-science-2022-HL-paper-p37-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p37-i0.png",
+          "srcHash": "f918d1469d75647adaafc286123b11a5",
+          "alt": "The complete Origin Green key components diagram for Question 18(a). Stem above: 'Question 18' and '(a) Origin Green is Ireland's pioneering food and drink sustainability programme. On-farm assessments constitute a key component of the programme. Analyse the diagram showing the key components of the programme and answer the questions which follow.' The diagram is a flower or petal arrangement of nine overlapping circles, all labelled in white text. At the centre, a lime-green circle reading 'Food Safety'. Around it, eight circles alternating between mid-teal and dark teal. Reading clockwise from the top: 'Energy & Emission' (dark teal, top); 'Animal Welfare' (mid teal, upper right); 'Socio-economic' (dark teal, right); 'Animal Health' (mid teal, lower right); 'Water' (dark teal, bottom); 'Health & Safety' (mid teal, lower left); 'Biodiversity' (dark teal, left); 'Traceability' (mid teal, upper left). The four mid-teal circles sit in the diagonal positions and overlap the central Food Safety circle; the four dark teal circles sit at the top, bottom, left and right and sit behind them. Italic attribution to the lower right of the diagram: '(Adapted from origingreen.ie, 2021)'. Below, '(i) Briefly describe how each of the following key components relate to food safety.' with answer boxes headed 'Animal Welfare:' and 'Health and Safety:'.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3887,6 +4055,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Weed killer used before you see weeds to prevent them growing", marks: 3, accepts: ["prevents germinating weed seedlings from becoming established","protective barrier contains chemical the inhibit growth of plants"], contextNote: "One 3-mark explanation. The three solidus-separated wordings are alternatives — any one alone scores the 3." },
     ],
+    figure: {
+          "candId": "agricultural-science-2022-HL-paper-p38-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p38-i0.png",
+          "srcHash": "510c3d52e49d20fc69e7e9a4333c606e",
+          "alt": "The complete 'Integrated Management System' weed control figure for Question 18(b). Stem above: '(b) The diagram below shows an Integrated Management System for controlling weeds.' and 'Analyse the diagram and answer the questions which follow.' The figure has two halves inside one outer border. LEFT: a table with a peach-coloured header cell reading 'Examples of Cultural Control Options' above nine single-column rows listing, from top to bottom: Increased seed rates; Cover crops; Competitive crops; Roguing; Crop rotation; Whole cropping; Crop destruction; On-farm hygiene; Machinery hygiene. RIGHT: a pale blue panel containing two stacked triangles. The upper one is captioned 'The Past' in a pale green banner and is an INVERTED grey triangle divided into three horizontal bands, widest at the top: 'Post-emergence' (widest band, at the top), 'Pre-emergence' (middle band) and 'Cultural Control' (narrowest band, at the point). Two thick red arrows point inward and down at this inverted triangle from either side. A thick blue arrow points straight down from it to the lower diagram. The lower one is captioned 'The Future' in a pale green banner and is an UPRIGHT green triangle divided into three horizontal bands, widest at the base: 'Post - emergence' (narrowest band, at the apex), 'Pre-emergence' (middle band) and 'Cultural Control' (widest band, at the base). Two thick red arrows point outward and down away from this triangle on either side. Right-aligned italic attribution beneath: '(Adapted from Teagasc, 2021)'. Below, '(i) Explain pre-emergence weed control.' with a three-line blank ruled answer box.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4257,8 +4433,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q16bi", topicId: "agsci-4-3-1", conceptId: "reducing-farm-carbon-emissions-by-source",
     section: "B", questionRef: "2023 HL Q16(b)(i)",
-    stem: "Question 16. Answer both (a) and (b) with either (c) or (d). As part of the governments’ climate action plan targets, agriculture has to reduce its greenhouse gas emissions by 25% by 2030. Anna and Lucy examined the percentage share of the carbon emissions from their beef enterprise which they received through their Bord Bia farmer feedback report. The graph in part (a) plots the percentage share of farm carbon emissions against four sources — animal digestion, manure usage, fertiliser used and forage / feed — for the current farm assessment (2021), the previous farm assessment (2019) and the national average. (Adapted from Teagasc, 2022)",
-    questionText: "Anna and Lucy wanted to reduce the emissions on the farm so they spoke to you as their advisor to identify an action for each source of carbon emissions shown on the graph in (a). Describe the advice you would give to them to suit their farm.",
+    stem: "Question 16. Answer both (a) and (b) with either (c) or (d). As part of the governments’ climate action plan targets, agriculture has to reduce its greenhouse gas emissions by 25% by 2030. Anna and Lucy examined the percentage share of the carbon emissions from their beef enterprise which they received through their Bord Bia farmer feedback report. The graph below, from part (a), highlights where the emissions are coming from on their farm. (Adapted from Teagasc, 2022)",
+    questionText: "Anna and Lucy wanted to reduce the emissions on the farm so they spoke to you as their advisor to identify an action for each source of carbon emissions shown on the graph below. Describe the advice you would give to them to suit their farm.",
     tariffModel: {"kind":"orderedSplit","notation":"4+4+2+2"}, totalMarks: 12,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Animal digestion — Improve animal productivity / improve genetic merit", marks: null, accepts: ["improve grass quality","improve grass DM","improve herd health","reduce days to slaughter","use feed additives e.g. seaweed"], contextNote: "One 'animal digestion' action is wanted; any of the scheme's wordings scores." },
@@ -4266,6 +4442,14 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "alt", verbatim: "Fertiliser use — Use protected urea / apply lime", marks: null, accepts: ["soil test – P & K requirements","use clover in swards","buffer zone","compliance with the Nitrates Directive","correct spreading conditions"] },
     { id: "r-4", kind: "alt", verbatim: "Forage / feed — Improve grass utilisation and grazing season", marks: null, accepts: ["reduce concentrate feeding"] },
     ],
+    figure: {
+          "candId": "agricultural-science-2023-HL-paper-p30-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p30-i0.png",
+          "srcHash": "2cc93543764df4485ecbd232f5e2bca4",
+          "alt": "A grouped vertical bar chart drawn over a cartoon illustration of a green field and blue cloudy sky, inside a rounded blue-bordered frame, titled 'Percentage Share of Farm Carbon Emissions'. The vertical axis is labelled in purple 'Percentage Share (%)' and scaled 0 to 50 in steps of 10 with faint gridlines. The horizontal axis is labelled in purple 'Sources of Carbon Emissions' with four category groups: 'Animal digestion', 'Manure usage', 'Fertiliser used' and 'Forage / Feed'. A legend at the top right gives three series: blue = 'Current farm assessment (2021)', orange = 'Previous farm assessment (2019)', dark grey/black = 'National average'. Reading the bars: Animal digestion — blue about 38, orange about 38, black about 40.5; Manure usage — blue about 19.5, orange about 19.5, black about 21.5; Fertiliser used — blue about 17, orange about 17, black about 16; Forage / Feed — blue about 16, orange about 16, black about 12. In each group the blue and orange bars are essentially the same height. Below the chart is '(Adapted from Teagasc, 2022)' then '(i) Identify the main source of carbon emissions on the farm.' with an empty box, and '(ii) State with reason if the main source of emissions is above or below the national average for the enterprise.' with an answer table whose rows read 'State:' and 'Reason:'.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4371,12 +4555,20 @@ export const CARDS: SecCard[] = [
     id: "agsci-2023-hl-q17bi", topicId: "agsci-3-3-1", conceptId: "hybrid-diploid-tetraploid-seed-mixture",
     section: "B", questionRef: "2023 HL Q17(b)(i)",
     stem: "Question 17. Due to the rise in fertiliser prices, Mark has decided to reseed 20% of his 150 hectare dairy and beef farm. He has spent a lot of time researching the best method of reseeding his land and which sward composition would best suit his soil type and farming enterprise.",
-    questionText: "In his research Mark found that most perennial ryegrass grass mixtures are made up of a hybrid mix of diploid and tetraploid varieties. The differences between these grasses is shown in the table below. Diploid Varieties: tall upright growth; create more ‘open’ sward; higher digestibility value. Tetraploid Varieties: close to ground growth; create a denser sward with less ‘open’ spaces; generally lower digestibility and yield. Describe the reasons for including a hybrid seed mixture in his reseeding plan.",
+    questionText: "In his research Mark found that most perennial ryegrass grass mixtures are made up of a hybrid mix of diploid and tetraploid varieties. The differences between these grasses is shown in the table below. Describe the reasons for including a hybrid seed mixture in his reseeding plan.",
     tariffModel: {"kind":"fixed","notation":"2(6)"}, totalMarks: 12,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Get the best traits from each seed in his sward", marks: 6, accepts: ["develop at different stages","greater uniformity","can be used for silage and grazing","disease resistance","extend grazing season","better productivity (yield), palatability, or digestibility","better persistence","aggressive (or weed control)"], contextNote: "Any TWO reasons from the scheme's pool of nine score, 6 marks each." },
     { id: "r-2", kind: "alt", verbatim: "develop at different stages", marks: 6, accepts: ["Get the best traits from each seed in his sward","greater uniformity","can be used for silage and grazing","disease resistance","extend grazing season","better productivity (yield), palatability, or digestibility","better persistence","aggressive (or weed control)"], contextNote: "A second, different reason from the same pool." },
     ],
+    figure: {
+          "candId": "agricultural-science-2023-HL-paper-p35-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p35-i0.png",
+          "srcHash": "2564b1687a2234cf6f55e11588158076",
+          "alt": "A two-column comparison table with a faint photograph of grass showing through the cells. The header row is pale blue and reads 'Diploid Varieties' and 'Tetraploid Varieties'. The three body rows pair: 'Tall upright growth' against 'Close to ground growth'; 'Create more open sward' (with 'open' in quotation marks) against 'Create a denser sward with less open spaces'; and 'Higher digestibility value' against 'Generally lower digestibility and yield'. Above the table is the sliced text 'hybrid mix of diploid and tetraploid varieties. The differences between these grasses is shown in the table below.' Below it is '(i) Describe the reasons for including a hybrid seed mixture in his reseeding plan.' followed by an empty four-row ruled answer box.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4462,7 +4654,7 @@ export const CARDS: SecCard[] = [
     id: "agsci-2023-hl-q18bi", topicId: "agsci-4-1", conceptId: "morning-vs-evening-milk-composition",
     section: "B", questionRef: "2023 HL Q18(b)(i)",
     stem: "Question 18. Jenny and John are farming a 230 cow dairy farm in Co. Cork. They are looking at the overall quality of their milk and in particular the somatic cell count (SCC) figures from their recent milk report. You have been invited to visit the farm to advise Jenny and John on how to improve their milk quality.",
-    questionText: "The table below shows the milk composition in the morning and evening on their farm. Morning Milk (8am milking): Fat 3.12%, Protein 2.97%, Lactose 4.13%, Water 85.70%. Evening Milk (5pm milking): Fat 4.75%, Protein 3.25%, Lactose 4.50%, Water 84.90%. Analyse the table and outline the reasons for the difference.",
+    questionText: "The milk composition in the morning and evening on their farm was as follows. Morning Milk (8am milking): Fat 3.12%, Protein 2.97%, Lactose 4.13%, Water 85.70%. Evening Milk (5pm milking): Fat 4.75%, Protein 3.25%, Lactose 4.50%, Water 84.90%. Analyse these figures and outline the reasons for the difference.",
     tariffModel: {"kind":"orderedSplit","notation":"3+1"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "There is a higher total solid content in the evening", marks: null, contextNote: "The observation from the table: fat, protein and lactose are all higher at the 5pm milking and water is lower.", route: "evening-solids" },
@@ -5112,7 +5304,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
     id: "agsci-2025-hl-q13ai", topicId: "agsci-4-3-1", conceptId: "beef-cross-on-dairy-herd",
     section: "B", questionRef: "2025 HL Q13(a)(i)",
-    stem: "Question 13, part (a) — answer both (a) and (b) with either (c) or (d). Paula and Bill's dairy calving records for 2023 from their 120-cow dairy herd are shown in the table below. A mixture of Artificial Insemination (AI) and an Aubrac beef stock bull was used for breeding animals including their own replacements. The table reads: Purebred Friesian — 25 heifer calves, 25 bull calves; Aubrac x Friesian — 28 heifer calves, 35 bull calves.",
+    stem: "Question 13, part (a) — answer both (a) and (b) with either (c) or (d). Paula and Bill's dairy calving records for 2023 from their 120-cow dairy herd were as follows: Purebred Friesian — 25 heifer calves and 25 bull calves; Aubrac x Friesian — 28 heifer calves and 35 bull calves. A mixture of Artificial Insemination (AI) and an Aubrac beef stock bull was used for breeding animals including their own replacements.",
     questionText: "Outline reasons why the farmers chose to cross some of the Friesian cows with an Aubrac stock bull.",
     tariffModel: {"kind":"fixed","notation":"3+1"}, totalMarks: 4,
     rows: [
@@ -5257,12 +5449,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
     id: "agsci-2025-hl-q13ci", topicId: "agsci-4-3-2", conceptId: "optimal-ai-timing",
     section: "B", questionRef: "2025 HL Q13(c)(i)",
-    stem: "Question 13, part (c) — answered instead of part (d). The table below shows the best time for insemination of cows to achieve higher conception rates. Heat lasts: coming into heat 8 hours (0-24 hours), standing heat 16 hours (3-30 hours), going off heat 8 hours (2-24 hours). Against time in hours 0-6, 6-12, 12-18, 18-24 and 24-30, artificial insemination (AI) is rated Too early, Good, Best, Good, Too late; natural mating is rated Too early, Best, Too late.",
+    stem: "Question 13, part (c) — answered instead of part (d). The table below shows the best time for insemination of cows to achieve higher conception rates. Analyse the table and answer the questions that follow.",
     questionText: "Identify the optimal time for insemination using AI.",
     tariffModel: {"kind":"fixed","notation":"5"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "12 – 18 hours", marks: 5 },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-HL-paper-p23-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-p23-i0.png",
+          "srcHash": "6772d10cd01bb9347dc822f2d1a6a8d5",
+          "alt": "The heat-detection and insemination-timing figure for Question 13(c). At the top is a three-column table with blue shaded headings 'Coming into heat', 'Standing heat' and 'Going off heat', and beneath them the durations '8 hours (0 - 24 hours)', '16 hours (3 - 30 hours)' and '8 hours (2 - 24 hours)'. Below each heading sits a grey silhouette drawing of two cows illustrating the behaviour: on the left a dark grey cow stands behind a light grey cow with its head at her rump; in the centre a dark grey cow is mounted on the back of a light grey cow; on the right a dark grey cow again stands alongside and slightly behind a light grey cow. Below the silhouettes is a second table. Its left column, shaded yellow, carries the row headings 'Time (hours)', 'Artificial Insemination (AI)' and 'Natural mating'. The green-shaded time columns are '0 - 6', '6 - 12', '12 - 18', '18 - 24' and '24 - 30'. The AI row reads, across those columns, 'Too early', 'Good', 'Best', 'Good', 'Too late'. The Natural mating row reads 'Too early' under 0-6, a single merged cell 'Best' spanning 6-18, and a single merged cell 'Too late' spanning 18-30. The printed line '(i) Identify the optimal time for insemination using AI.' appears at the foot.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5453,7 +5653,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
     id: "agsci-2025-hl-q16ai", topicId: "agsci-4-3-2", conceptId: "feed-intake-comparison",
     section: "B", questionRef: "2025 HL Q16(a)(i)",
-    stem: "The table shows a suckler-bred Charolais versus a dairy-origin Holstein Friesian steer, both offered a high-concentrate finishing diet. Analyse the table and answer the questions that follow. Charolais / Holstein Friesian — Age (days) 654 / 678; Daily Dry Matter (DM) intake (kg/day) 11.5 / 12.6; Feed conversion ratio (FCR) 8.4 / 9.8; Liveweight (kg) 725 / 659; Carcass weight (kg) 446 / 360. (Adapted from Teagasc, 2022)",
+    stem: "Question 16, part (a). A suckler-bred Charolais steer and a dairy-origin Holstein Friesian steer were both offered a high-concentrate finishing diet. Their figures (adapted from Teagasc, 2022) are listed here, Charolais first and Holstein Friesian second — Age (days): 654 and 678. Daily Dry Matter (DM) intake (kg/day): 11.5 and 12.6. Feed conversion ratio (FCR): 8.4 and 9.8. Liveweight (kg): 725 and 659. Carcass weight (kg): 446 and 360. Analyse these figures and answer the question that follows.",
     questionText: "Identify the animal with the higher intake of feed.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -5467,7 +5667,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
     id: "agsci-2025-hl-q16aii", topicId: "agsci-4-3-2", conceptId: "feed-conversion-ratio-comparison",
     section: "B", questionRef: "2025 HL Q16(a)(ii)",
-    stem: "The table shows a suckler-bred Charolais versus a dairy-origin Holstein Friesian steer, both offered a high-concentrate finishing diet. Analyse the table and answer the questions that follow. Charolais / Holstein Friesian — Age (days) 654 / 678; Daily Dry Matter (DM) intake (kg/day) 11.5 / 12.6; Feed conversion ratio (FCR) 8.4 / 9.8; Liveweight (kg) 725 / 659; Carcass weight (kg) 446 / 360. (Adapted from Teagasc, 2022)",
+    stem: "Question 16, part (a). A suckler-bred Charolais steer and a dairy-origin Holstein Friesian steer were both offered a high-concentrate finishing diet. Their figures (adapted from Teagasc, 2022) are listed here, Charolais first and Holstein Friesian second — Age (days): 654 and 678. Daily Dry Matter (DM) intake (kg/day): 11.5 and 12.6. Feed conversion ratio (FCR): 8.4 and 9.8. Liveweight (kg): 725 and 659. Carcass weight (kg): 446 and 360. Analyse these figures and answer the question that follows.",
     questionText: "Identify which animal had the better food conversion ratio (FCR).",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -5481,7 +5681,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
     id: "agsci-2025-hl-q16aiii", topicId: "agsci-4-3-2", conceptId: "daily-liveweight-gain-calculation",
     section: "B", questionRef: "2025 HL Q16(a)(iii)",
-    stem: "The table shows a suckler-bred Charolais versus a dairy-origin Holstein Friesian steer, both offered a high-concentrate finishing diet. Analyse the table and answer the questions that follow. Charolais / Holstein Friesian — Age (days) 654 / 678; Daily Dry Matter (DM) intake (kg/day) 11.5 / 12.6; Feed conversion ratio (FCR) 8.4 / 9.8; Liveweight (kg) 725 / 659; Carcass weight (kg) 446 / 360. (Adapted from Teagasc, 2022)",
+    stem: "Question 16, part (a). A suckler-bred Charolais steer and a dairy-origin Holstein Friesian steer were both offered a high-concentrate finishing diet. Their figures (adapted from Teagasc, 2022) are listed here, Charolais first and Holstein Friesian second — Age (days): 654 and 678. Daily Dry Matter (DM) intake (kg/day): 11.5 and 12.6. Feed conversion ratio (FCR): 8.4 and 9.8. Liveweight (kg): 725 and 659. Carcass weight (kg): 446 and 360. Analyse these figures and answer the question that follows.",
     questionText: "Calculate the Daily Liveweight Gain (DLG) from birth to slaughter for the Charolais.",
     tariffModel: {"kind":"fixed","notation":"2m for method, 2m for final answer"}, totalMarks: 4,
     rows: [
@@ -5495,7 +5695,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
     id: "agsci-2025-hl-q16aiv", topicId: "agsci-4-3-2", conceptId: "feed-efficiency-inferior-animal",
     section: "B", questionRef: "2025 HL Q16(a)(iv)",
-    stem: "The table shows a suckler-bred Charolais versus a dairy-origin Holstein Friesian steer, both offered a high-concentrate finishing diet. Analyse the table and answer the questions that follow. Charolais / Holstein Friesian — Age (days) 654 / 678; Daily Dry Matter (DM) intake (kg/day) 11.5 / 12.6; Feed conversion ratio (FCR) 8.4 / 9.8; Liveweight (kg) 725 / 659; Carcass weight (kg) 446 / 360. (Adapted from Teagasc, 2022)",
+    stem: "Question 16, part (a). A suckler-bred Charolais steer and a dairy-origin Holstein Friesian steer were both offered a high-concentrate finishing diet. Their figures (adapted from Teagasc, 2022) are listed here, Charolais first and Holstein Friesian second — Age (days): 654 and 678. Daily Dry Matter (DM) intake (kg/day): 11.5 and 12.6. Feed conversion ratio (FCR): 8.4 and 9.8. Liveweight (kg): 725 and 659. Carcass weight (kg): 446 and 360. Analyse these figures and answer the question that follows.",
     questionText: "Identify which animal has the inferior feed efficiency.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -5509,7 +5709,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
     id: "agsci-2025-hl-q16av", topicId: "agsci-4-3-2", conceptId: "fcr-definition",
     section: "B", questionRef: "2025 HL Q16(a)(v)",
-    stem: "The table shows a suckler-bred Charolais versus a dairy-origin Holstein Friesian steer, both offered a high-concentrate finishing diet. Analyse the table and answer the questions that follow. Charolais / Holstein Friesian — Age (days) 654 / 678; Daily Dry Matter (DM) intake (kg/day) 11.5 / 12.6; Feed conversion ratio (FCR) 8.4 / 9.8; Liveweight (kg) 725 / 659; Carcass weight (kg) 446 / 360. (Adapted from Teagasc, 2022)",
+    stem: "Question 16, part (a). A suckler-bred Charolais steer and a dairy-origin Holstein Friesian steer were both offered a high-concentrate finishing diet. Their figures (adapted from Teagasc, 2022) are listed here, Charolais first and Holstein Friesian second — Age (days): 654 and 678. Daily Dry Matter (DM) intake (kg/day): 11.5 and 12.6. Feed conversion ratio (FCR): 8.4 and 9.8. Liveweight (kg): 725 and 659. Carcass weight (kg): 446 and 360. Analyse these figures and answer the question that follows.",
     questionText: "Explain Food Conversion Ratio (FCR).",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -5523,7 +5723,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
     id: "agsci-2025-hl-q16avi", topicId: "agsci-4-3-2", conceptId: "factors-affecting-fcr",
     section: "B", questionRef: "2025 HL Q16(a)(vi)",
-    stem: "The table shows a suckler-bred Charolais versus a dairy-origin Holstein Friesian steer, both offered a high-concentrate finishing diet. Analyse the table and answer the questions that follow. Charolais / Holstein Friesian — Age (days) 654 / 678; Daily Dry Matter (DM) intake (kg/day) 11.5 / 12.6; Feed conversion ratio (FCR) 8.4 / 9.8; Liveweight (kg) 725 / 659; Carcass weight (kg) 446 / 360. (Adapted from Teagasc, 2022)",
+    stem: "Question 16, part (a). A suckler-bred Charolais steer and a dairy-origin Holstein Friesian steer were both offered a high-concentrate finishing diet. Their figures (adapted from Teagasc, 2022) are listed here, Charolais first and Holstein Friesian second — Age (days): 654 and 678. Daily Dry Matter (DM) intake (kg/day): 11.5 and 12.6. Feed conversion ratio (FCR): 8.4 and 9.8. Liveweight (kg): 725 and 659. Carcass weight (kg): 446 and 360. Analyse these figures and answer the question that follows.",
     questionText: "Outline factors affecting FCR in animals.",
     tariffModel: {"kind":"fixed","notation":"3(3)"}, totalMarks: 9,
     rows: [
@@ -5539,7 +5739,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
     id: "agsci-2025-hl-q16b", topicId: "agsci-4-3-1", conceptId: "carcass-value-calculation",
     section: "B", questionRef: "2025 HL Q16(b)",
-    stem: "The table shows a suckler-bred Charolais versus a dairy-origin Holstein Friesian steer, both offered a high-concentrate finishing diet. Charolais / Holstein Friesian — Age (days) 654 / 678; Daily Dry Matter (DM) intake (kg/day) 11.5 / 12.6; Feed conversion ratio (FCR) 8.4 / 9.8; Liveweight (kg) 725 / 659; Carcass weight (kg) 446 / 360. (Adapted from Teagasc, 2022)",
+    stem: "Question 16, part (b). A suckler-bred Charolais steer and a dairy-origin Holstein Friesian steer were both offered a high-concentrate finishing diet. Their figures (adapted from Teagasc, 2022) are listed here, Charolais first and Holstein Friesian second — Age (days): 654 and 678. Daily Dry Matter (DM) intake (kg/day): 11.5 and 12.6. Feed conversion ratio (FCR): 8.4 and 9.8. Liveweight (kg): 725 and 659. Carcass weight (kg): 446 and 360.",
     questionText: "The factory quoted a base price of €5.25 / kg. Show using calculations how much each animal would earn and identify the animal that would earn the most money.",
     tariffModel: {"kind":"fixed","notation":"3x2"}, totalMarks: 6,
     rows: [
@@ -5716,8 +5916,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
     id: "agsci-2025-hl-q17ci", topicId: "agsci-1-4", conceptId: "plotting-dm-yield-graph",
     section: "B", questionRef: "2025 HL Q17(c)(i)",
-    stem: "An investigation was carried out over a six-week period to compare the dry matter production in two varieties of kale. Dry Matter yield of kale varieties in thousands of kg per hectare — Regal: Week 1 14.7, Week 2 14.3, Week 3 13.9, Week 4 14.3, Week 5 14.2, Week 6 14.8. Caledonia: Week 1 16.0, Week 2 15.5, Week 3 15.0, Week 4 16.5, Week 5 16.5, Week 6 17.5.",
-    questionText: "Using the data in the table below, plot a graph showing the DM yield for the Caledonia variety over the six-week period.",
+    stem: "Question 17, part (c)(i). An investigation was carried out over a six-week period to compare the dry matter production in two varieties of kale. Dry Matter yield of kale varieties, in thousands of kg per hectare, Week 1 to Week 6 — Regal: 14.7, 14.3, 13.9, 14.3, 14.2, 14.8. Caledonia: 16.0, 15.5, 15.0, 16.5, 16.5, 17.5.",
+    questionText: "Using the data given above, plot a graph showing the DM yield for the Caledonia variety over the six-week period.",
     tariffModel: {"kind":"fixed","notation":"5x2"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Appropriate graph chosen", marks: 2, contextNote: "The scheme allows a trend graph, a histogram or a bar chart - any of the three counts as appropriate." },

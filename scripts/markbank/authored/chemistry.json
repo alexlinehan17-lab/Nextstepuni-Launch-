@@ -989,7 +989,7 @@
   "section": "A",
   "questionRef": "2021 OL Q3(c)",
   "stem": "The neutralisation of 100 cm3 of 1.0 M NaOH by 100 cm3 of 1.0 M HCl was carried out in an insulated cup fitted with a plastic lid through which a thermometer was inserted, and the temperature change was used to calculate the heat of reaction.",
-  "questionText": "Why is an insulated cup, like that shown above, a suitable container for this experiment?",
+  "questionText": "Why is an insulated cup a suitable container for this experiment?",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -2873,8 +2873,8 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 HL Q5(c)(iii)–(iv)",
-  "stem": "Ionisation energies (kJ mol–1) — Cl: first 1251, second 2298; Ar: first 1521, second 2666; K: first 419, second 3052.",
-  "questionText": "(iii) Why is the second ionisation energy value for each element in the table bigger than its first ionisation energy value? (iv) Why is the second ionisation energy of potassium very significantly bigger than its first?",
+  "stem": "The first and second ionisation energies (kJ mol–1) of three elements are: chlorine 1251 and 2298; argon 1521 and 2666; potassium 419 and 3052.",
+  "questionText": "(iii) Why is the second ionisation energy value for each of the three elements above bigger than its first ionisation energy value? (iv) Why is the second ionisation energy of potassium very significantly bigger than its first?",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -9498,8 +9498,8 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2023 HL Q6(e)(i)",
-  "stem": "A graph shows the variation in heat of combustion for the first eight members of the alkane homologous series, and the trend is near linear.",
-  "questionText": "What is the difference in the molecular formulae of two successive members of the alkane homologous series that can be used to account for the near linear trend shown in the graph?",
+  "stem": "The heat of combustion of the alkanes varies in a near linear way across the first eight members of the homologous series as the number of carbon atoms increases.",
+  "questionText": "What is the difference in the molecular formulae of two successive members of the alkane homologous series that can be used to account for this near linear trend?",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -15393,8 +15393,8 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2024 HL Q7(b)(i)",
-  "stem": "H2O(g) + CO(g) ⇌ H2(g) + CO2(g), for which Kc = 1 at temperature T.",
-  "questionText": "If the same reaction had been carried out at the same temperature T in the same container, but with an initial mixture of 2.5 moles of steam and 2.5 moles of carbon monoxide, the value of Kc would not change from the value calculated in (a)(iii) above. Explain why the value of Kc would not change.",
+  "stem": "When 4.0 moles of steam and 1.0 mole of carbon monoxide were mixed at temperature T in a container of fixed volume, the equilibrium H2O(g) + CO(g) ⇌ H2(g) + CO2(g) was established and the equilibrium constant was calculated to be Kc = 1 at that temperature.",
+  "questionText": "If the same reaction had been carried out at the same temperature T in the same container, but with an initial mixture of 2.5 moles of steam and 2.5 moles of carbon monoxide, the value of Kc would not change from the value of 1 calculated above. Explain why the value of Kc would not change.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -17936,7 +17936,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2024 HL Q11(d)B(i)–(iii)",
-  "stem": "Iron metal is extracted from its ores by reduction in a blast furnace.",
+  "stem": "Iron metal is extracted from its ores by reduction in a blast furnace like that illustrated in the diagram.",
   "questionText": "(i) Identify the two solid materials that are continually added with the iron ore in the charge at the top of the furnace. (ii) Identify the hot gas that is blown into the furnace above the hearth during production. (iii) Identify by-product B that is removed at the bottom of the furnace.",
   "tariffModel": {
    "kind": "fixed"
@@ -17981,7 +17981,8 @@
     "marks": 4
    }
   ],
-  "notes": "In (iii) 'B' is only the label the exam paper's blast-furnace diagram puts on the by-product removed at the bottom of the furnace; the wording alone is enough to answer, so the part is kept."
+  "notes": "In (iii) 'B' is only the label the exam paper's blast-furnace diagram puts on the by-product removed at the bottom of the furnace; the wording alone is enough to answer, so the part is kept.",
+  "figureKey": "chemistry-2024-HL-paper-p13-i1"
  },
  {
   "id": "chem-2024-hl-q11-db-iv-v",
@@ -18972,7 +18973,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2025 HL Q4(a)",
-  "stem": "Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items attempted.",
+  "stem": "In 1869 the Russian chemist Dmitri Mendeleev published a periodic table of the known elements.",
   "questionText": "Describe the arrangement of the elements in Mendeleev's 1869 periodic table of the elements.",
   "tariffModel": {
    "kind": "fixed"
@@ -21768,7 +21769,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2025 OL Q9(c)(i)–(iii)",
-  "stem": "Water can be split into its elements by electrolysis using inert electrodes. The electrolyte is water, acidified with a few drops of sulfuric acid. The electrodes are connected to the positive and negative terminals of a direct current power supply. When the circuit is switched on, bubbles of gas form at both electrodes.",
+  "stem": "Water can be split into its elements by electrolysis using inert electrodes. The electrolyte is water, acidified with a few drops of sulfuric acid. The electrodes are connected to the positive and negative terminals of a direct current power supply. When the circuit is switched on, bubbles of gas form at both electrodes. In the printed paper the underlined term is 'inert'.",
   "questionText": "(i) What is meant by the underlined term? (ii) Suggest a suitable material that can be used as inert electrodes. (iii) Why must a few drops of acid be added to the water before starting the electrolysis?",
   "tariffModel": {
    "kind": "fixed"
@@ -27765,7 +27766,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2022 OL Q6(a)",
-  "stem": "Consider the structural formulae of the five hydrocarbon compounds A to E in the table. (In the printed paper the word hydrocarbon is the underlined term.)",
+  "stem": "Question 6 opens with the sentence 'Consider the structural formulae of the five hydrocarbon compounds A to E', in which hydrocarbon is the underlined term. This part asks only about that word - the structural formulae themselves are not needed to answer it.",
   "questionText": "Explain the underlined term.",
   "tariffModel": {
    "kind": "fixed"
@@ -28722,7 +28723,7 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2024 OL Q1(b)",
-  "stem": "The diagram in the paper shows the apparatus used for the laboratory preparation of ethyne (C2H2) gas: water is added dropwise onto solid X, and the ethyne produced is collected over water.",
+  "stem": "The diagram shows the apparatus used for the laboratory preparation of ethyne (C2H2) gas: water is added dropwise from the dropping funnel onto solid X in the flask, and the ethyne produced is collected over water.",
   "questionText": "(i) Identify solid X. (ii) Why is water added dropwise rather than poured directly onto X? (iii) What is observed when water is added to X? (iv) State one property of ethyne that allows it to be collected above water as shown.",
   "tariffModel": {
    "kind": "orderedSplit",
@@ -28770,7 +28771,8 @@
     "marks": null
    }
   ],
-  "notes": "The four sub-parts share one combined allocation (8 + 8 + 3 + 3 = 22), so no sub-part has its own printed mark — recorded as an ordered split with every row marks: null."
+  "notes": "The four sub-parts share one combined allocation (8 + 8 + 3 + 3 = 22), so no sub-part has its own printed mark — recorded as an ordered split with every row marks: null.",
+  "figureKey": "chemistry-2024-OL-paper-p02-i0"
  },
  {
   "id": "chem-2024-ol-q1-c-i",

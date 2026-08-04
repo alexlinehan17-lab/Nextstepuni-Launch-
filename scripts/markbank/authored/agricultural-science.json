@@ -1081,8 +1081,8 @@
   "subjectId": "agricultural-science",
   "section": "A",
   "questionRef": "2021 HL Q10(c)",
-  "questionText": "Compare the composition of sheep's milk shown in the pie chart to your knowledge of cow's milk in relation to the water content.",
-  "stem": "Sheep Milk Composition (pie chart, adapted from Nutritionbridge, 2020): Water 84%, Protein 4%, Fat 7%, Lactose 5%.",
+  "questionText": "Compare the composition of sheep's milk given above to your knowledge of cow's milk in relation to the water content.",
+  "stem": "The paper prints a pie chart headed 'Sheep Milk Composition' (adapted from Nutritionbridge, 2020). Its values are: Water 84%, Protein 4%, Fat 7%, Lactose 5%.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -1917,7 +1917,7 @@
   "subjectId": "agricultural-science",
   "section": "A",
   "questionRef": "2021 OL Q6(a)–(e)",
-  "questionText": "Complete the sentences below in relation to sheep nutrition using words from the list.",
+  "questionText": "Complete each of the sentences below in relation to sheep nutrition, using words from the list above. (a) High levels of feeding prior to and during mating is known as ………. (b) Gradual increase of concentrates prior to lambing is known as ………. (c) Ewes being fed just enough to support body processes is known as ………. (d) Pregnancy toxaemia is also known as ………. (e) Calcium is added to the ration of the ewes prior to lambing to prevent ……….",
   "stem": "Word list: Steaming up / Milk fever / Twin lamb disease / Flushing / Maintenance diet.",
   "tariffModel": {
    "kind": "fixed"
@@ -3173,7 +3173,7 @@
   "subjectId": "agricultural-science",
   "section": "A",
   "questionRef": "2022 HL Q5(b)(i)",
-  "stem": "Food conversion ratio (rate) (FCR) is a measure of how well an animal converts feed into liveweight gain. The table shows the weaning FCR for pigs from 2000 to 2020. The three columns are the years 2000, 2010 and 2020 in that order — Liveweight at sale (kg): 90.1, 103.6, 115.3; Deadweight at sale (kg): 68.1, 78.9, 88.2; Average Daily Gain (ADG) (g): 585, 668, 735; FCR: 1.83, 1.80, 1.75. (Adapted from Teagasc ePM, 2021)",
+  "stem": "Food conversion ratio (rate) (FCR) is a measure of how well an animal converts feed into liveweight gain. The table below shows the weaning FCR for pigs from 2000 to 2020. (Adapted from Teagasc ePM, 2021)",
   "questionText": "State which year the pigs were more efficient at converting feed to liveweight.",
   "tariffModel": {
    "kind": "fixed"
@@ -3188,7 +3188,8 @@
     "contextNote": "SEC asterisk: only this exact answer scores. A lower FCR means more efficient conversion, so the lowest figure (1.75) is the right year."
    }
   ],
-  "notes": "Plain 2-mark tariff, one asterisked row, typed `gate` so an approximate answer cannot be claimed. The stem now carries the table's year headers (2000 / 2010 / 2020) from the paper, without which 'which year' is unanswerable from the card alone."
+  "notes": "Plain 2-mark tariff, one asterisked row, typed `gate` so an approximate answer cannot be claimed. The stem now carries the table's year headers (2000 / 2010 / 2020) from the paper, without which 'which year' is unanswerable from the card alone.",
+  "figureKey": "agricultural-science-2022-HL-paper-p08-i0"
  },
  {
   "id": "agsci-2022-hl-q5bii",
@@ -3199,7 +3200,7 @@
   "subjectId": "agricultural-science",
   "section": "A",
   "questionRef": "2022 HL Q5(b)(ii)",
-  "stem": "Food conversion ratio (rate) (FCR) is a measure of how well an animal converts feed into liveweight gain. The table shows the weaning FCR for pigs across 2000, 2010 and 2020 — Average Daily Gain (ADG) (g): 585, 668, 735; FCR: 1.83, 1.80, 1.75. (Adapted from Teagasc ePM, 2021)",
+  "stem": "Food conversion ratio (rate) (FCR) is a measure of how well an animal converts feed into liveweight gain. The table below shows the weaning FCR for pigs from 2000 to 2020. (Adapted from Teagasc ePM, 2021)",
   "questionText": "Describe two reasons for the increased performance of the pigs from 2000 to 2020.",
   "tariffModel": {
    "kind": "fixed",
@@ -3234,7 +3235,8 @@
     ]
    }
   ],
-  "notes": "2(1) = two reasons at 1 mark each = 2 (L400). The 'better housing' item is reassembled across the marks cell, which splits it mid-phrase in the extraction."
+  "notes": "2(1) = two reasons at 1 mark each = 2 (L400). The 'better housing' item is reassembled across the marks cell, which splits it mid-phrase in the extraction.",
+  "figureKey": "agricultural-science-2022-HL-paper-p08-i0"
  },
  {
   "id": "agsci-2022-hl-q6a",
@@ -3382,8 +3384,8 @@
   "subjectId": "agricultural-science",
   "section": "A",
   "questionRef": "2022 HL Q7(a)",
-  "stem": "Sadie, a suckler farmer, is participating in the Beef Environmental Efficiency Programme (BEEP) and received her 'Weaning Performance Report'. This report calculates the % weaning efficiency of each dam (cow) and calf. The target weaning efficiency is 42%. The paper's worked example: Calf 1, 200 day old, Weight = 335kg; Dam weight = 680kg; 335kg = 49% of 680kg; % Weaning efficiency = 49%. Table — 200 Day Weight (kg) / Weaning Efficiency (%): Calf 2 = 256, 39%; Dam of calf 2 = 650; Calf 3 = 333; Dam of calf 3 = 698. (Adapted from ICBF, 2021)",
-  "questionText": "Calculate the % weaning efficiency for Sadie’s suckler dam and calf 3 in the table below.",
+  "stem": "Sadie, a suckler farmer, is participating in the Beef Environmental Efficiency Programme (BEEP); her 'Weaning Performance Report' calculates the % weaning efficiency of each dam (cow) and calf, and the target is 42%. Her report gives these 200 day weights: calf 2 = 256 kg (weaning efficiency 39%), dam of calf 2 = 650 kg, calf 3 = 333 kg, dam of calf 3 = 698 kg. The diagram below shows how the % weaning efficiency is calculated, worked through for calf 1. (Adapted from ICBF, 2021)",
+  "questionText": "Calculate the % weaning efficiency for Sadie's suckler dam and calf 3, using the 200 day weights given above.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -3404,7 +3406,8 @@
     "contextNote": "The scheme adds: (If a candidate just gives 47.7% or 48% then award 4m) — a correct answer with no working still takes the full 4."
    }
   ],
-  "notes": "Two stated 2-mark steps, so tariffModel is fixed and the rows sum to 4. Q7 reconciles as 4 + 4 + 2 = 10. The whole question is answerable from text: the paper's diagram content extracts cleanly and is reproduced in the stem, so no figure is required."
+  "notes": "Two stated 2-mark steps, so tariffModel is fixed and the rows sum to 4. Q7 reconciles as 4 + 4 + 2 = 10. The whole question is answerable from text: the paper's diagram content extracts cleanly and is reproduced in the stem, so no figure is required.",
+  "figureKey": "agricultural-science-2022-HL-paper-p10-i0"
  },
  {
   "id": "agsci-2022-hl-q7b",
@@ -3515,7 +3518,7 @@
   "section": "A",
   "questionRef": "2022 HL Q8(a)(ii)",
   "stem": "The European Commission has set targets for sustainable food production by 2030, including reducing the use of antibiotics for farm animals. (Adapted from European Commission, 2020)",
-  "questionText": "Explain one way for each part (i) and (ii) below farmers can: (ii) Reduce use of antibiotics for farm animals.",
+  "questionText": "Explain one way farmers can reduce the use of antibiotics for farm animals.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -4167,8 +4170,8 @@
   "subjectId": "agricultural-science",
   "section": "A",
   "questionRef": "2022 HL Q12(a)(ii)",
-  "stem": "Answer either (a) or (b). (a) Silage analysis from a beef enterprise — DMD %: 75 / 70 / 65 / 60 against harvest dates 20 May / 2 June / 15 June / 28 June. (Adapted from Teagasc, 2021)",
-  "questionText": "Using the data in the table above briefly explain the effect of harvest date on the DMD %.",
+  "stem": "Answer either (a) or (b). (a) The results of silage analysis from a beef enterprise are presented in the table below. (Adapted from Teagasc, 2021)",
+  "questionText": "Using the data in the table below briefly explain the effect of harvest date on the DMD %.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -4186,7 +4189,8 @@
     ]
    }
   ],
-  "notes": "The scheme prints a plain 4 with no N(M) notation, so this is one 4-mark row rather than several smaller points; the solidus-separated quantifications are alternative ways of stating the same trend, not extra marks. The italic examiner instruction '*Answers must refer to data in table' is carried on the row."
+  "notes": "The scheme prints a plain 4 with no N(M) notation, so this is one 4-mark row rather than several smaller points; the solidus-separated quantifications are alternative ways of stating the same trend, not extra marks. The italic examiner instruction '*Answers must refer to data in table' is carried on the row.",
+  "figureKey": "agricultural-science-2022-HL-paper-p16-i0"
  },
  {
   "id": "agsci-2022-hl-q12aiii",
@@ -4197,8 +4201,8 @@
   "subjectId": "agricultural-science",
   "section": "A",
   "questionRef": "2022 HL Q12(a)(iii)",
-  "stem": "Answer either (a) or (b). (a) Silage analysis from a beef enterprise — DMD %: 75 / 70 / 65 / 60; Intake (kg/day): 9.0 / 8.3 / 7.6 / 7.0; Liveweight gain (kg/day): 0.83 / 0.66 / 0.49 / 0.31. (Adapted from Teagasc, 2021)",
-  "questionText": "Referring to the data in the table above outline two benefits of good quality silage on the beef animal productivity.",
+  "stem": "Answer either (a) or (b). (a) The results of silage analysis from a beef enterprise are presented in the table below. (Adapted from Teagasc, 2021)",
+  "questionText": "Referring to the data in the table below outline two benefits of good quality silage on the beef animal productivity.",
   "tariffModel": {
    "kind": "fixed",
    "notation": "2(2)"
@@ -4228,7 +4232,8 @@
     ]
    }
   ],
-  "notes": "2(2) = any two benefits at 2 marks each = 4 (L607). The intake item is reassembled across the marks cell, which splits it between 'will' and 'increase intake' in the extraction."
+  "notes": "2(2) = any two benefits at 2 marks each = 4 (L607). The intake item is reassembled across the marks cell, which splits it between 'will' and 'increase intake' in the extraction.",
+  "figureKey": "agricultural-science-2022-HL-paper-p16-i0"
  },
  {
   "id": "agsci-2022-hl-q12bi",
@@ -4785,7 +4790,8 @@
     "contextNote": "The underlined term is 'selective herbicide'. One 2-mark point – the three wordings are alternatives, not separate points."
    }
   ],
-  "notes": "One 2-mark explanation; the three solidus-separated wordings are alternatives for the same point. The underlined term is named in the stem because the card cannot reproduce the paper's underlining. Q6(b) (identify the safety symbols) is figure-dependent and is not carded."
+  "notes": "One 2-mark explanation; the three solidus-separated wordings are alternatives for the same point. The underlined term is named in the stem because the card cannot reproduce the paper's underlining. Q6(b) (identify the safety symbols) is figure-dependent and is not carded.",
+  "figureKey": "agricultural-science-2022-OL-paper-p09-i1"
  },
  {
   "id": "agsci-2022-ol-q6c",
@@ -5035,7 +5041,7 @@
   "subjectId": "agricultural-science",
   "section": "A",
   "questionRef": "2022 OL Q9(a)",
-  "stem": "Analyse the graph showing the average Irish sheep meat price per kg and answer the questions which follow. (Irish Annual Average Sheep Meat Price per kg, as labelled on the graph: 2011 €4.78, 2012 €4.61, 2013 €4.58, 2014 €4.75, 2015 €4.84, 2016 €4.81, 2017 €4.77, 2018 €5.05, 2019 €4.76, 2020 €5.24, 2021 €6.62. Adapted from Bord Bia, 2021.)",
+  "stem": "Analyse the following data on the average Irish sheep meat price per kg and answer the question which follows. Irish Annual Average Sheep Meat Price per kg: 2011 €4.78; 2012 €4.61; 2013 €4.58; 2014 €4.75; 2015 €4.84; 2016 €4.81; 2017 €4.77; 2018 €5.05; 2019 €4.76; 2020 €5.24; 2021 €6.62. (Adapted from Bord Bia, 2021.)",
   "questionText": "Identify which year farmers achieved the highest price per kg for their sheep meat and give one reason for your answer.",
   "tariffModel": {
    "kind": "fixed",
@@ -5076,7 +5082,7 @@
   "subjectId": "agricultural-science",
   "section": "A",
   "questionRef": "2022 OL Q9(b)",
-  "stem": "Analyse the graph showing the average Irish sheep meat price per kg and answer the questions which follow. (Irish Annual Average Sheep Meat Price per kg, as labelled on the graph: 2011 €4.78, 2012 €4.61, 2013 €4.58, 2014 €4.75, 2015 €4.84, 2016 €4.81, 2017 €4.77, 2018 €5.05, 2019 €4.76, 2020 €5.24, 2021 €6.62. Adapted from Bord Bia, 2021.)",
+  "stem": "Analyse the following data on the average Irish sheep meat price per kg and answer the question which follows. Irish Annual Average Sheep Meat Price per kg: 2011 €4.78; 2012 €4.61; 2013 €4.58; 2014 €4.75; 2015 €4.84; 2016 €4.81; 2017 €4.77; 2018 €5.05; 2019 €4.76; 2020 €5.24; 2021 €6.62. (Adapted from Bord Bia, 2021.)",
   "questionText": "State which year farmers achieved the lowest price per kg for their sheep meat.",
   "tariffModel": {
    "kind": "fixed"
@@ -5103,7 +5109,7 @@
   "section": "A",
   "questionRef": "2022 OL Q9(c)",
   "stem": "",
-  "questionText": "Identify the average slaughter weight of lambs by placing a tick in the box below.",
+  "questionText": "Identify the average slaughter weight of lambs by choosing the correct value from the following three options: 30 kg, 50 kg or 42 kg.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -5336,7 +5342,8 @@
     "contextNote": "Tick-box choice on the paper: British breed / Continental breed."
    }
   ],
-  "notes": "Single 3-mark tick-box answer. The breed is named in the question text (Blonde d'Aquitaine), so the photograph is not needed."
+  "notes": "Single 3-mark tick-box answer. The breed is named in the question text (Blonde d'Aquitaine), so the photograph is not needed.",
+  "figureKey": "agricultural-science-2022-OL-paper-p15-i1"
  },
  {
   "id": "agsci-2022-ol-q11bii",
@@ -5362,7 +5369,8 @@
     "contextNote": "The underlined term is 'conformation'. One 2-mark point — 'shape' and 'muscle distribution' are alternative wordings, not two points."
    }
   ],
-  "notes": "Single 2-mark definition; the photograph is not needed because the term is explained in words. The underlined term is named in the stem because the card cannot reproduce the paper's underlining."
+  "notes": "Single 2-mark definition; the photograph is not needed because the term is explained in words. The underlined term is named in the stem because the card cannot reproduce the paper's underlining.",
+  "figureKey": "agricultural-science-2022-OL-paper-p15-i1"
  },
  {
   "id": "agsci-2022-ol-q11biii",
@@ -5571,7 +5579,7 @@
   "subjectId": "agricultural-science",
   "section": "A",
   "questionRef": "2023 HL Q2(a)",
-  "stem": "The diagram shows an example of the growth cycle of the food crop barley (Germination, Tillering, Stem Elongation, Flowering, Ripening).",
+  "stem": "The diagram below shows an example of the growth cycle of the food crop barley.",
   "questionText": "Explain what happens at any two of the following stages in any named plant you have studied: Germination, Stem Elongation, Flowering.",
   "tariffModel": {
    "kind": "fixed",
@@ -5602,7 +5610,8 @@
     "contextNote": "Any TWO of the three stages score 3 marks each. If you answered Flowering instead, the scheme's answer is: 'Seed head develops or heading out / stem is fibrous and strong enough to support seed head / plants stop growing / produce flowers (buds) for reproduction'."
    }
   ],
-  "notes": "2(3) = two stages at 3 marks each, 6 marks in all. The paper offers three stages and asks for any two, so only two rows are funded by the tariff; the third option (Flowering) is quoted in full on row 2's note so a student who chose it can still mark it. The card carries no figure because the question lists its own three stages and asks about 'any named plant you have studied' — the barley growth-cycle diagram is scene-setting only."
+  "notes": "2(3) = two stages at 3 marks each, 6 marks in all. The paper offers three stages and asks for any two, so only two rows are funded by the tariff; the third option (Flowering) is quoted in full on row 2's note so a student who chose it can still mark it. The card carries no figure because the question lists its own three stages and asks about 'any named plant you have studied' — the barley growth-cycle diagram is scene-setting only.",
+  "figureKey": "agricultural-science-2023-HL-paper-p05-i0"
  },
  {
   "id": "agsci-2023-hl-q3a",
@@ -6365,7 +6374,7 @@
   "subjectId": "agricultural-science",
   "section": "A",
   "questionRef": "2023 HL Q10(b)(i)",
-  "stem": "Question 10. Answer either (a) or (b). The table shows the composition of different pig rations. Analyse the data and answer the questions which follow. Ingredients by pig weight (15–30kg / 30–60kg / over 60kg): Soya bean 25 / 20 / 15; Rice bran 25 / 40 / 35; Maize 20 / 25 / 30; Broken rice 5 / 5 / 5; Wheat bran 20 / 15 / 10; Crude protein (%) 16 / 15 / 14.",
+  "stem": "Question 10. Answer either (a) or (b).\n(b) The table shows the composition of different pig rations.\nAnalyse the data and answer the questions which follow.",
   "questionText": "Explain the function of soya bean and rice bran in pig diets.",
   "tariffModel": {
    "kind": "fixed",
@@ -6399,7 +6408,8 @@
     "contextNote": "'Accept source of nutrient or function of nutrient' applies to this ingredient too."
    }
   ],
-  "notes": "Two separate 3-mark awards, one per ingredient. Marked open because the scheme instructs examiners to accept any source or function of a nutrient, not only the wordings printed."
+  "notes": "Two separate 3-mark awards, one per ingredient. Marked open because the scheme instructs examiners to accept any source or function of a nutrient, not only the wordings printed.",
+  "figureKey": "agricultural-science-2023-HL-paper-p15-i0"
  },
  {
   "id": "agsci-2023-hl-q10bii",
@@ -6553,7 +6563,7 @@
   "subjectId": "agricultural-science",
   "section": "A",
   "questionRef": "2023 HL Q12(a)",
-  "stem": "On farm testing of slurry using a hydrometer is the quickest way of determining the value of slurry on the farm. The dry matter (DM) content of the slurry sample is 7%. Analyse the table below and answer the questions which follow. Dry Matter (%) — N kg/m3, P kg/m3, K kg/m3: 2 (very dilute) — 0.40, 0.21, 1.40; 4 (watery) — 0.70, 0.35, 2.10; 6 (typical) — 1.00, 0.50, 3.50; 7 (thicker) — 1.10, 0.60, 4.00. (Adapted from Teagasc, 2022)",
+  "stem": "On farm testing of slurry using a hydrometer is the quickest way of determining the value of slurry on the farm. The dry matter (DM) content of the slurry sample is 7%, as shown in the picture.\nAnalyse the table below and answer the questions which follow. (Adapted from Teagasc, 2022)",
   "questionText": "State the N content of this slurry sample.",
   "tariffModel": {
    "kind": "fixed"
@@ -6568,7 +6578,8 @@
     "contextNote": "Asterisked in the scheme — printed as '1.1(kg/m3)*'. The asterisk means only this exact value scores, and a wrong value written alongside it cancels this row. It does not zero the rest of the question."
    }
   ],
-  "notes": "3 marks for the single value read from the 7% DM row of the printed table. The hydrometer photograph is illustrative — the 7% DM reading is stated in the paper's text, so the card needs no figure."
+  "notes": "3 marks for the single value read from the 7% DM row of the printed table. The hydrometer photograph is illustrative — the 7% DM reading is stated in the paper's text, so the card needs no figure.",
+  "figureKey": "agricultural-science-2023-HL-paper-p17-i0"
  },
  {
   "id": "agsci-2023-hl-q12b",
@@ -6579,7 +6590,7 @@
   "subjectId": "agricultural-science",
   "section": "A",
   "questionRef": "2023 HL Q12(b)",
-  "stem": "On farm testing of slurry using a hydrometer is the quickest way of determining the value of slurry on the farm. The table gives N, P and K content at dry matter values of 2% (very dilute), 4% (watery), 6% (typical) and 7% (thicker). (Adapted from Teagasc, 2022)",
+  "stem": "On farm testing of slurry using a hydrometer is the quickest way of determining the value of slurry on the farm. The dry matter (DM) content of the slurry sample is 7%, as shown in the picture.\nAnalyse the table below and answer the questions which follow. (Adapted from Teagasc, 2022)",
   "questionText": "Suggest one reason for a dry matter (DM) content of 2% in a slurry sample.",
   "tariffModel": {
    "kind": "fixed"
@@ -6597,7 +6608,8 @@
     "contextNote": "One reason earns the full 3 marks; the two are solidus-separated alternatives."
    }
   ],
-  "notes": "3 marks, one point."
+  "notes": "3 marks, one point.",
+  "figureKey": "agricultural-science-2023-HL-paper-p17-i0"
  },
  {
   "id": "agsci-2023-hl-q12c",
@@ -6828,8 +6840,8 @@
   "subjectId": "agricultural-science",
   "section": "A",
   "questionRef": "2023 OL Q4",
-  "stem": "The diagram shows some regenerative farming practices. The three practices asked about are printed as labels on the paper's answer lines: Controlled grazing (management of forage with grazing animals); Crop rotation; Using organic fertilisers.",
-  "questionText": "Outline one reason why each of the following farming practices is carried out.",
+  "stem": "The diagram shows some regenerative farming practices. Analyse the diagram and answer the question which follows.",
+  "questionText": "Outline one reason why each of the following farming practices is carried out: (1) Controlled grazing (management of forage with grazing animals); (2) Crop rotation; (3) Using organic fertilisers.",
   "tariffModel": {
    "kind": "fixed",
    "notation": "6+2+2"
@@ -6880,7 +6892,8 @@
     "contextNote": "One reason only is asked for; the solidus list is alternatives, not extra points."
    }
   ],
-  "notes": "Tariff 6+2+2 = 10, one reason per named practice. By the scheme's front matter the first correct reason the examiner meets scores 6 and each later one 2, so the rows carry 6, 2, 2 in the paper's printed order of practices. questionText is the paper's printed sentence only; the three practice labels sit on the answer lines below it and are carried in the stem. The paper's diagram illustrates six regenerative practices, but the three asked about are text labels, so the card stands without a figure. Filed under soil management because the scheme's reasons for crop rotation and organic fertilisers are dominated by soil nutrients, structure and fertility."
+  "notes": "Tariff 6+2+2 = 10, one reason per named practice. By the scheme's front matter the first correct reason the examiner meets scores 6 and each later one 2, so the rows carry 6, 2, 2 in the paper's printed order of practices. questionText is the paper's printed sentence only; the three practice labels sit on the answer lines below it and are carried in the stem. The paper's diagram illustrates six regenerative practices, but the three asked about are text labels, so the card stands without a figure. Filed under soil management because the scheme's reasons for crop rotation and organic fertilisers are dominated by soil nutrients, structure and fertility.",
+  "figureKey": "agricultural-science-2023-OL-paper-p06-i0"
  },
  {
   "id": "agsci-2023-ol-q6a-i",
@@ -6910,7 +6923,8 @@
     "contextNote": "The scheme prints a single 6 against the whole solidus list, so any one of the three statements earns the full 6 marks."
    }
   ],
-  "notes": "Q6 offers route (a) or route (b), each 10 marks. Route (a) is 6 + (2+1) + 1 = 10; only (a)(i) is carded, because (a)(ii) and (a)(iii) are read off the paper's silage DMD table with its lettered bands A-D and no figure exists for this subject yet. This part is answerable from the term alone, so the diagram is not needed. The two alternative wordings in accepts straddle the mark cell in the text extraction and were read off the scheme PDF (p.13)."
+  "notes": "Q6 offers route (a) or route (b), each 10 marks. Route (a) is 6 + (2+1) + 1 = 10; only (a)(i) is carded, because (a)(ii) and (a)(iii) are read off the paper's silage DMD table with its lettered bands A-D and no figure exists for this subject yet. This part is answerable from the term alone, so the diagram is not needed. The two alternative wordings in accepts straddle the mark cell in the text extraction and were read off the scheme PDF (p.13).",
+  "figureKey": "agricultural-science-2023-OL-paper-p08-i0"
  },
  {
   "id": "agsci-2023-ol-q6b",
@@ -7204,8 +7218,8 @@
   "subjectId": "agricultural-science",
   "section": "A",
   "questionRef": "2023 OL Q9(b)(i)",
-  "stem": "The paper prints an answer table headed 'Stomach chamber / Function' with two rows to complete: Rumen and Omasum.",
-  "questionText": "Explain the function of each of the following ruminant stomach chambers.",
+  "stem": "The ruminant stomach has four chambers.",
+  "questionText": "Explain the function of each of the following ruminant stomach chambers: (1) the rumen; (2) the omasum.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -7643,7 +7657,7 @@
   "subjectId": "agricultural-science",
   "section": "A",
   "questionRef": "2024 HL Q2(b)(iii)",
-  "stem": "Answer either (a) or (b). Read the Irish Moiled article and answer the questions that follow. The paper prints a two-column table headed Characteristic / Description, with a worked example: \"Medium size cow — High producing cow without requiring large amounts of feed\".",
+  "stem": "Answer either (a) or (b).\n(b) Read the article and answer the questions that follow.\nThe Irish Moiled is one of the rarest Irish cattle breeds. It is a hornless medium sized breed with a mature cow weighing up to 650kg. Traditionally a dairy cow with yields of up to 5000 litres, it has earned the reputation as a truly dual purpose breed. In the suckler herd the cow will go into a negative energy balance to ensure the calf gets the best start in life.\nThey are generally easy to handle with a placid docile temperament. Surplus males sell well as steers finishing between 20-24 months on good quality forage diet to carcass weights from 220-260kg. The beef is of superb quality with a distinctive flavour.\nThe cow can be relied upon to produce a calf every 12 months if kept in good health and body condition. They will calve to a continental bull without difficulty and will continue to breed satisfactorily until at least ten years of age.\nTradition has it that they are 'big bellied' to consume and digest large quantities of poorer quality forage which was their traditional diet. They can be termed 'ready browsers' because they will graze willow, ash and ivy, which makes them ideal in extensive or conservation grazing situations.\nThey are sound in hoof and leg and at home on most types of terrain. They grow a thick winter coat and out-winter happily although being a heavy animal they will poach soft ground. (Adapted from thecattlesite.com)\nGive your answer as a characteristic and a description. The first one has been done as an example - Characteristic: 'Medium size cow'; Description: 'High producing cow without requiring large amounts of feed'.",
   "questionText": "Describe one characteristic of the Irish Moiled which makes them a sustainable breed choice on Irish farms.",
   "tariffModel": {
    "kind": "fixed"
@@ -7716,7 +7730,7 @@
   "subjectId": "agricultural-science",
   "section": "A",
   "questionRef": "2024 HL Q3(a)(ii)",
-  "stem": "Answer either (a) or (b). The diagram shows how grassland management affects pasture recovery post grazing: a short grazing period (1–2 days) leaves a 4cm post-grazing stubble and allows a long recovery, while continuous grazing (2–3 months) leaves a 2cm stubble and allows no recovery.",
+  "stem": "Answer either (a) or (b).\n(a) Good grassland management affects pasture recovery post grazing. A short grazing period (1-2 days) leaves a 4cm post grazing stubble, allows a long recovery period, and the plants carry deep, densely branched roots. Continuous grazing (2-3 months) leaves only a 2cm stubble, allows no recovery period, and the plants carry short, sparse, shallow roots.",
   "questionText": "Outline one reason for the root development in fields that are continuously grazed.",
   "tariffModel": {
    "kind": "fixed"
@@ -7858,8 +7872,8 @@
   "subjectId": "agricultural-science",
   "section": "A",
   "questionRef": "2024 HL Q4",
-  "stem": "The paper prints a table with columns \"Impact of\" | \"Effect on productivity\" | \"Ways of reducing effect\", and two rows to complete: Soil compaction, and Organic matter loss.",
-  "questionText": "Describe the impact of soil compaction and organic matter loss has on the productivity of farm land in the table below.",
+  "stem": "Soil compaction and organic matter loss both reduce the productivity of farm land.",
+  "questionText": "Describe the impact that soil compaction and organic matter loss have on the productivity of farm land. For each, give the effect on productivity and ways of reducing that effect.",
   "tariffModel": {
    "kind": "orderedSplit",
    "notation": "2(3) + 2(2)"
@@ -8245,7 +8259,7 @@
   "subjectId": "agricultural-science",
   "section": "A",
   "questionRef": "2024 HL Q8(c)",
-  "stem": "Read the dock beetle article and answer the questions that follow. The paper prints a two-column table headed Biological control | Target.",
+  "stem": "Irish-bred dock beetles are being trialled as an environmentally friendly, cost-effective weapon to kill docks. Once released on a farm the dock beetle breeds to colonise the whole field; dock beetles are native, natural predators of docks, skeletonising dock leaves and keeping them at an acceptable level in grassland. (Adapted from Irish Farmers Journal, 2022)\nGive your answer as a biological control and its target.",
   "questionText": "Dock beetles are an example of a biological control. Based on your own knowledge of agriculture, provide another example of a biological control and state its target.",
   "tariffModel": {
    "kind": "fixed"
@@ -8288,8 +8302,8 @@
   "subjectId": "agricultural-science",
   "section": "A",
   "questionRef": "2024 HL Q9(a)",
-  "stem": "Answer either (a) or (b). The paper prints a table with columns \"Gravel and sand particles\" and \"Silt and clay particles\", and rows Particle size, Drainage, Fertility and Ion exchange. The first row is done as an example — Particle size: gravel and sand = \"Large particles\", silt and clay = \"Small particles\".",
-  "questionText": "Compare the different soil mineral particles and their properties under the headings that follow.",
+  "stem": "The first row of the comparison has been done as an example - Particle size: gravel and sand particles = 'Large particles'; silt and clay particles = 'Small particles'.",
+  "questionText": "Compare the different soil mineral particles - gravel and sand particles against silt and clay particles - and their properties under the following headings: drainage, fertility and ion exchange.",
   "tariffModel": {
    "kind": "orderedSplit",
    "notation": "4(2) + 2(1)"
@@ -8399,7 +8413,7 @@
   "subjectId": "agricultural-science",
   "section": "A",
   "questionRef": "2024 HL Q10(c)",
-  "stem": "The paper shows two grassland swards with a varying level of diversity.",
+  "stem": "The pictures below show two swards with a varying level of diversity.\nAnalyse the pictures and answer the questions that follow.",
   "questionText": "Research has shown that plant diversity enhances soil biodiversity in grassland swards. Briefly describe how plant diversity can positively impact soil biology in swards.",
   "tariffModel": {
    "kind": "fixed"
@@ -8421,7 +8435,8 @@
     "contextNote": "One 2-mark point; the solidi are six accepted wordings. The fifth reads in full \"increased earthworm activity\" (the mark column splits it in the extraction)."
    }
   ],
-  "notes": "Flat 2-mark tariff, so the six solidus-separated phrases are alternatives on one row, not six points. Answerable without the sward photographs — it asks for a general mechanism."
+  "notes": "Flat 2-mark tariff, so the six solidus-separated phrases are alternatives on one row, not six points. Answerable without the sward photographs — it asks for a general mechanism.",
+  "figureKey": "agricultural-science-2024-HL-paper-p15-i0"
  },
  {
   "id": "agsci-2024-hl-q11a",
@@ -8432,7 +8447,7 @@
   "subjectId": "agricultural-science",
   "section": "A",
   "questionRef": "2024 HL Q11(a)",
-  "stem": "The table below shows fertility summary data over five lactations for two cows on the Irish Cattle Breeding Federation's (ICBF) 'Cows Own Worth' database. Analyse the data and answer the questions that follow.\nCow 1 — Lactation 1 (calved 30/01/2019): 1 serve, no interval; Lactation 2 (27/01/2020): 2 serves, interval 362 days; Lactation 3 (28/02/2021): 2 serves, 397 days; Lactation 4 (08/02/2022): 1 serve, 345 days; Lactation 5 (11/03/2023): 1 serve, 397 days.\nCow 2 — Lactation 1: 2 serves, no interval; Lactation 2: 2 serves, 378 days; Lactation 3: 3 serves, 406 days; Lactation 4: 3 serves, 410 days; Lactation 5: 4 serves, 426 days.",
+  "stem": "The fertility summary data below covers five lactations for two cows on the Irish Cattle Breeding Federation's (ICBF) 'Cows Own Worth' database. Analyse the data and answer the questions that follow.\nCow 1 - Lactation 1 (calved 30/01/2019): 1 serve, no interval; Lactation 2 (27/01/2020): 2 serves, interval 362 days; Lactation 3 (28/02/2021): 2 serves, 397 days; Lactation 4 (08/02/2022): 1 serve, 345 days; Lactation 5 (11/03/2023): 1 serve, 397 days.\nCow 2 - Lactation 1: 2 serves, no interval; Lactation 2: 2 serves, 378 days; Lactation 3: 3 serves, 406 days; Lactation 4: 3 serves, 410 days; Lactation 5: 4 serves, 426 days.",
   "questionText": "Calculate the average calving interval for cow 1.",
   "tariffModel": {
    "kind": "fixed"
@@ -8523,7 +8538,7 @@
   "subjectId": "agricultural-science",
   "section": "A",
   "questionRef": "2024 HL Q12(a)",
-  "stem": "Farmers must prevent runoff from soiled farm roadways into waterways. The diagram shows a dairy farm with cows grazing close to the waterway and a farm roadway sloping towards it. Analyse the picture and answer the questions that follow.",
+  "stem": "Farmers must prevent runoff from soiled farm roadways into waterways. On one dairy farm the cows graze in fields right beside a waterway, and a soiled farm roadway slopes downhill towards that same waterway.",
   "questionText": "Outline actions farmers can take to reduce the runoff from the fields and farm roadway.",
   "tariffModel": {
    "kind": "orderedSplit",
@@ -8618,8 +8633,8 @@
   "subjectId": "agricultural-science",
   "section": "A",
   "questionRef": "2024 OL Q1(d)",
-  "questionText": "Outline one advantage of this grazing system.",
-  "stem": "The diagram below shows a type of grazing system. Analyse the diagram and answer the questions that follow. (Part (c) of this question establishes that the system shown is strip grazing — the diagram itself is not reproduced here.)",
+  "questionText": "Outline one advantage of strip grazing.",
+  "stem": "A farmer uses a strip grazing system.",
   "tariffModel": {
    "kind": "fixed",
    "notation": "2"
@@ -8753,7 +8768,8 @@
     "contextNote": "One precaution only is asked for — any one of these scores the full 2 marks."
    }
   ],
-  "notes": "Flat 2-mark tariff, one point with solidus alternatives. The scheme's pool closes with 'or another one valid precaution', so openList is set: a creditable precaution outside the printed list still scores."
+  "notes": "Flat 2-mark tariff, one point with solidus alternatives. The scheme's pool closes with 'or another one valid precaution', so openList is set: a creditable precaution outside the printed list still scores.",
+  "figureKey": "agricultural-science-2024-OL-paper-p05-i0"
  },
  {
   "id": "agsci-2024-ol-q3",
@@ -9049,8 +9065,8 @@
   "subjectId": "agricultural-science",
   "section": "A",
   "questionRef": "2024 OL Q7(a)",
-  "questionText": "Using the four headings in the diagram above in relation to soil compaction, briefly describe how any three affect the growth of crops on the land.",
-  "stem": "Soil compaction is an important factor that affects the productivity of the land. Analyse the diagram below and answer the questions that follow. The diagram feeds four headings into \"Soil Compaction\": Machine size, Soil water content, Tillage system, Crop rotation.",
+  "questionText": "Using the four headings above - machine size, soil water content, tillage system and crop rotation - in relation to soil compaction, briefly describe how any three affect the growth of crops on the land.",
+  "stem": "Soil compaction is an important factor that affects the productivity of the land. Four factors affect soil compaction: machine size, soil water content, tillage system and crop rotation.",
   "tariffModel": {
    "kind": "fixed",
    "notation": "3(2)"
@@ -9100,7 +9116,7 @@
   "section": "A",
   "questionRef": "2024 OL Q7(b)",
   "questionText": "Identify the % air in the ideal soil composition below by placing a tick (✓) in the correct box. [45% / 25% / 5%]",
-  "stem": "Soil compaction is an important factor that affects the productivity of the land. The pie chart on the paper shows the ideal soil composition split between mineral matter, air, water and organic matter.",
+  "stem": "Soil compaction is an important factor that affects the productivity of the land. The pie chart below shows the ideal soil composition: mineral matter, air, water and organic matter.",
   "tariffModel": {
    "kind": "fixed",
    "notation": "4"
@@ -9115,7 +9131,8 @@
     "contextNote": "The tick goes beside 25%."
    }
   ],
-  "notes": "Flat 4-mark tariff for a single tick. Carded without the pie chart because the three percentage options are printed on the paper and the answer is the standard ideal soil composition, not a reading off the figure."
+  "notes": "Flat 4-mark tariff for a single tick. Carded without the pie chart because the three percentage options are printed on the paper and the answer is the standard ideal soil composition, not a reading off the figure.",
+  "figureKey": "agricultural-science-2024-OL-paper-p10-i0"
  },
  {
   "id": "agsci-2024-ol-q8a",
@@ -9127,7 +9144,7 @@
   "section": "A",
   "questionRef": "2024 OL Q8(a)",
   "questionText": "Briefly outline any three advantages of using jackets to improve the health and welfare of animals under the headings provided in the diagram below.",
-  "stem": "Calf and sheep jackets make significant differences in the health and welfare of the animals. The diagram on the paper gives the headings: Savings, Protection, Performance, Prevention.",
+  "stem": "Calf and sheep jackets make significant differences in the health and welfare of the animals. The diagram below gives four headings: Savings, Protection, Performance and Prevention.",
   "tariffModel": {
    "kind": "fixed",
    "notation": "3(2)"
@@ -9168,7 +9185,8 @@
     "contextNote": "Advantage 3 of 3."
    }
   ],
-  "notes": "Tariff '3(2)' = any three advantages at 2 marks each = 6. The scheme's pool holds five solidus-separated points; rows are set to the three REQUIRED so the total stays at 6, with the two unused pool items carried in accepts on every row. The full printed wording of the pneumonia point is 'helps to prevent colds or pneumonia or illness or hypothermia or death' — it only looks truncated in the extracted markdown because the '3(2)' tariff from the marks column is interleaved mid-phrase; verified against the source marking-scheme PDF (page 14, the phrase runs across two text lines with the tariff sitting in a separate column at x=520)."
+  "notes": "Tariff '3(2)' = any three advantages at 2 marks each = 6. The scheme's pool holds five solidus-separated points; rows are set to the three REQUIRED so the total stays at 6, with the two unused pool items carried in accepts on every row. The full printed wording of the pneumonia point is 'helps to prevent colds or pneumonia or illness or hypothermia or death' — it only looks truncated in the extracted markdown because the '3(2)' tariff from the marks column is interleaved mid-phrase; verified against the source marking-scheme PDF (page 14, the phrase runs across two text lines with the tariff sitting in a separate column at x=520).",
+  "figureKey": "agricultural-science-2024-OL-paper-p11-i1"
  },
  {
   "id": "agsci-2024-ol-q8b",
@@ -9226,7 +9244,8 @@
     "contextNote": "The brackets mean 'hairs' is not required — 'root' alone scores."
    }
   ],
-  "notes": "Flat 3-mark tariff. The scheme's brackets follow the front-matter rule that a bracketed word contextualises rather than being required, so 'Root' scores on its own. The plant diagram carries only the labels Shoot / Leaves / Roots, which are given in the stem, so no figure is needed."
+  "notes": "Flat 3-mark tariff. The scheme's brackets follow the front-matter rule that a bracketed word contextualises rather than being required, so 'Root' scores on its own. The plant diagram carries only the labels Shoot / Leaves / Roots, which are given in the stem, so no figure is needed.",
+  "figureKey": "agricultural-science-2024-OL-paper-p12-i0"
  },
  {
   "id": "agsci-2024-ol-q9aii",
@@ -9278,7 +9297,8 @@
     "contextNote": "Nutrient 2 — any different nutrient from the pool scores 2."
    }
   ],
-  "notes": "Tariff '2(2)' = two nutrients at 2 marks each = 4. The scheme prints the pool 'N / P / K / Ca / Mg / S / other valid answer'; rows are set to the two REQUIRED, each carrying the rest of the pool in accepts. openList is set because the pool ends 'other valid answer' — any other genuine plant nutrient scores."
+  "notes": "Tariff '2(2)' = two nutrients at 2 marks each = 4. The scheme prints the pool 'N / P / K / Ca / Mg / S / other valid answer'; rows are set to the two REQUIRED, each carrying the rest of the pool in accepts. openList is set because the pool ends 'other valid answer' — any other genuine plant nutrient scores.",
+  "figureKey": "agricultural-science-2024-OL-paper-p12-i0"
  },
  {
   "id": "agsci-2024-ol-q9aiii",
@@ -9305,7 +9325,8 @@
     "contextNote": "The tick goes beside Rhizobium."
    }
   ],
-  "notes": "Flat 3-mark tariff for a single tick. The three options are printed on the paper, so no figure is needed. Q9(a) totals 3 + 4 + 3 = 10."
+  "notes": "Flat 3-mark tariff for a single tick. The three options are printed on the paper, so no figure is needed. Q9(a) totals 3 + 4 + 3 = 10.",
+  "figureKey": "agricultural-science-2024-OL-paper-p12-i0"
  },
  {
   "id": "agsci-2024-ol-q9b",
@@ -9450,7 +9471,7 @@
   "section": "A",
   "questionRef": "2024 OL Q10(c)(i)",
   "questionText": "Using your knowledge of the composition of cow’s milk (M), place a tick (✓) in the correct box to show if the % of water in cow’s milk is higher or lower than in buffalo’s milk. [Higher / Lower]",
-  "stem": "Macroom Buffalo has Ireland’s first and only herd of milking water Buffalo. The table below shows the composition of buffalo versus cow’s milk. Analyse the table and answer the questions that follow.\n\nContent | Cow | Buffalo\nWater (%) | M | 84\nEnergy (kcal) | 61 | 97\nProtein (g) | 3.2 | 3.7\nFat (g) | 3.4 | 6.9\n(Adapted from researchgate.net)",
+  "stem": "Macroom Buffalo has Ireland's first and only herd of milking water Buffalo. The composition of cow's milk compared with buffalo's milk is: water - cow M %, buffalo 84 %; energy - cow 61 kcal, buffalo 97 kcal; protein - cow 3.2 g, buffalo 3.7 g; fat - cow 3.4 g, buffalo 6.9 g. (Adapted from researchgate.net)",
   "tariffModel": {
    "kind": "fixed",
    "notation": "3"
@@ -9477,7 +9498,7 @@
   "section": "A",
   "questionRef": "2024 OL Q10(c)(ii)",
   "questionText": "Buffalo’s milk is suitable for different types of cheese production. State which nutrient makes it most suitable for cheese production.",
-  "stem": "Macroom Buffalo has Ireland’s first and only herd of milking water Buffalo. The table on the paper shows the composition of buffalo versus cow’s milk (protein 3.7 g in buffalo against 3.2 g in cow; fat 6.9 g against 3.4 g).",
+  "stem": "Macroom Buffalo has Ireland's first and only herd of milking water Buffalo. Buffalo's milk contains 3.7 g protein and 6.9 g fat, compared with 3.2 g protein and 3.4 g fat in cow's milk.",
   "tariffModel": {
    "kind": "fixed",
    "notation": "3"
@@ -9504,7 +9525,7 @@
   "section": "A",
   "questionRef": "2024 OL Q11(a)(i)",
   "questionText": "Identify the desired characteristic being selectively bred.",
-  "stem": "Answer either (a) or (b). Selective breeding has been done for thousands of years to improve characteristics of plants and animals. Analyse the diagram in relation to egg production and answer the questions that follow. The diagram's four steps are: 1. Breed two organisms with desired characteristics. 2. Choose the best offspring and breed. 3. Repeat over many generations. 4. Over time characteristic increases.",
+  "stem": "Answer either (a) or (b). Selective breeding has been done for thousands of years to improve characteristics of plants and animals. The four steps of selective breeding, shown here for hens kept for egg production, are: 1. Breed two organisms with desired characteristics. 2. Choose the best offspring and breed. 3. Repeat over many generations. 4. Over time the characteristic increases.",
   "tariffModel": {
    "kind": "fixed",
    "notation": "3"
@@ -9606,7 +9627,8 @@
     "contextNote": "Characteristic 2 — any different item from the same pool scores 3."
    }
   ],
-  "notes": "Tariff '2(3)' = two characteristics at 3 marks each = 6. The scheme's nine solidus-separated items are a pool of separately creditable points because TWO answers are required; rows are set to the two required so the total stays at 6, with the full pool in accepts. Carded because the breed is named in the question, so the characteristics come from knowledge of the Belgian Blue rather than from reading the photograph. Part (b)(ii) is skipped — it needs the photographs of cows A and B."
+  "notes": "Tariff '2(3)' = two characteristics at 3 marks each = 6. The scheme's nine solidus-separated items are a pool of separately creditable points because TWO answers are required; rows are set to the two required so the total stays at 6, with the full pool in accepts. Carded because the breed is named in the question, so the characteristics come from knowledge of the Belgian Blue rather than from reading the photograph. Part (b)(ii) is skipped — it needs the photographs of cows A and B.",
+  "figureKey": "agricultural-science-2024-OL-paper-p15-i0"
  },
  {
   "id": "agsci-2024-ol-q12a",
@@ -9653,7 +9675,8 @@
     "contextNote": "Dependent"
    }
   ],
-  "notes": "Tariff '2(3) + 2' = 3 + 3 + 2 = 8, laid out in the scheme's table order (Control, Independent, Dependent) in line with the front-matter rule that the first correct answers encountered take the higher unit. The control row's solidus list is a set of alternatives for ONE answer, so it stays a single 3-mark row with the alternatives in accepts. The diagram is a labelled set of four pots whose captions are reproduced in the stem, so no figure is needed. Q12 totals 8 + 2 = 10."
+  "notes": "Tariff '2(3) + 2' = 3 + 3 + 2 = 8, laid out in the scheme's table order (Control, Independent, Dependent) in line with the front-matter rule that the first correct answers encountered take the higher unit. The control row's solidus list is a set of alternatives for ONE answer, so it stays a single 3-mark row with the alternatives in accepts. The diagram is a labelled set of four pots whose captions are reproduced in the stem, so no figure is needed. Q12 totals 8 + 2 = 10.",
+  "figureKey": "agricultural-science-2024-OL-paper-p16-i0"
  },
  {
   "id": "agsci-2024-ol-q12b",
@@ -9683,7 +9706,8 @@
     "contextNote": "The scheme's full line reads 'As the different amounts of fertiliser are applied the plant growth (rate) will differ'."
    }
   ],
-  "notes": "Flat 2-mark tariff, one explanation. The displayed verbatim stops at '(rate)' because the marks digit '2' interrupts that line in the extracted scheme; the complete printed sentence is carried in accepts and contextNote."
+  "notes": "Flat 2-mark tariff, one explanation. The displayed verbatim stops at '(rate)' because the marks digit '2' interrupts that line in the extracted scheme; the complete printed sentence is carried in accepts and contextNote.",
+  "figureKey": "agricultural-science-2024-OL-paper-p16-i0"
  },
  {
   "id": "agsci-2025-hl-q1c",
@@ -10294,7 +10318,7 @@
   "subjectId": "agricultural-science",
   "section": "A",
   "questionRef": "2025 HL Q5(c)",
-  "stem": "Gerry had 63 calves on his suckler beef farm in Co. Wicklow. Analyse the table on concentrate feed requirements and answer the questions that follow. Recommended daily feeding concentrate amount (kg/day): pre-weaning 1, post-weaning 2. Duration of feeding (weeks): pre-weaning 4, post-weaning 2.",
+  "stem": "Gerry had 63 calves on his suckler beef farm in Co. Wicklow. Analyse the table on concentrate feed requirements below and answer the question that follows.",
   "questionText": "Calculate the amount of concentrate feed required for his beef calves during the six-week weaning period.",
   "tariffModel": {
    "kind": "fixed",
@@ -10316,7 +10340,8 @@
     "contextNote": "if answer is given and correct with no method award 2m"
    }
   ],
-  "notes": "Scheme states '1m for method, 1m for final answer, if answer is given and correct with no method award 2m'. Both the pre- and post-weaning lines are the one method mark, so they form a single row."
+  "notes": "Scheme states '1m for method, 1m for final answer, if answer is given and correct with no method award 2m'. Both the pre- and post-weaning lines are the one method mark, so they form a single row.",
+  "figureKey": "agricultural-science-2025-HL-paper-p10-i0"
  },
  {
   "id": "agsci-2025-hl-q6b",
@@ -10530,7 +10555,7 @@
   "subjectId": "agricultural-science",
   "section": "A",
   "questionRef": "2025 HL Q9(b)(i)",
-  "stem": "Jack was carrying out research to see if he could sow barley in his fields and found that barley crops grow best between pH 6.0 and 7.0. The results of the investigation to determine the pH of a number of fields are shown in the table below. Field 1: pH 5.8. Field 2: pH 6.6. Field 3: pH 6.2.",
+  "stem": "Jack was carrying out research to see if he could sow barley in his fields and found that barley crops grow best between pH 6.0 and 7.0. The results of the investigation to determine the pH of a number of fields are shown in the table below. Analyse the table and answer the question that follows.",
   "questionText": "Identify which fields are most suitable for growing barley crops with an optimum growing range of 6.0 - 7.0.",
   "tariffModel": {
    "kind": "fixed",
@@ -10551,7 +10576,8 @@
     "marks": 2
    }
   ],
-  "notes": "The data table is printed as text in the paper, so no figure is needed. The scheme prints 2+2 against 'Field 2 and Field 3', so each named field is its own 2-mark row."
+  "notes": "The data table is printed as text in the paper, so no figure is needed. The scheme prints 2+2 against 'Field 2 and Field 3', so each named field is its own 2-mark row.",
+  "figureKey": "agricultural-science-2025-HL-paper-p15-i0"
  },
  {
   "id": "agsci-2025-hl-q9bii",
@@ -10903,8 +10929,8 @@
   "subjectId": "agricultural-science",
   "section": "A",
   "questionRef": "2025 OL Q3",
-  "stem": "Listed below are some farm machinery: Roller · Tedder · Mower · Plough · Combine harvester.\nDescriptions given in the table: (a) Harvesting cereal crops (b) Cultivating soil in seedbed preparations (c) Levelling land and compacting soil surface (d) Cutting of grass for silage (e) Drying out grass to reduce dry matter (DM) content",
-  "questionText": "Complete the table below by matching each farm machine from the list with the correct description of its use given in the table.",
+  "stem": "Listed below are some farm machinery: Roller, Tedder, Mower, Plough, Combine harvester. Five descriptions of their use are given: (a) Harvesting cereal crops (b) Cultivating soil in seedbed preparations (c) Levelling land and compacting soil surface (d) Cutting of grass for silage (e) Drying out grass to reduce dry matter (DM) content.",
+  "questionText": "Match each farm machine from the list with the correct description of its use, (a) to (e), given above.",
   "tariffModel": {
    "kind": "fixed",
    "notation": "5x2"
@@ -11113,7 +11139,8 @@
     "contextNote": "Your second correct precaution, whichever it was, scores 2."
    }
   ],
-  "notes": "Included without a figure because the paper's own caption states exactly what the photograph shows, and the scheme's answers are generic fertiliser-handling precautions rather than readings off the image. openList set on both rows: the scheme's pool ends 'other valid example'. 'accept PPE once only' is read as the 2023 OL scheme reads the same construction ('clover accepted once only' beside separately-credited red and white clover) — the generic term is credited once, while separately named items such as gloves and goggles remain distinct points. Rows sum 3+2 = 5; Q8 reconciles as 5 + 5 = 10."
+  "notes": "Included without a figure because the paper's own caption states exactly what the photograph shows, and the scheme's answers are generic fertiliser-handling precautions rather than readings off the image. openList set on both rows: the scheme's pool ends 'other valid example'. 'accept PPE once only' is read as the 2023 OL scheme reads the same construction ('clover accepted once only' beside separately-credited red and white clover) — the generic term is credited once, while separately named items such as gloves and goggles remain distinct points. Rows sum 3+2 = 5; Q8 reconciles as 5 + 5 = 10.",
+  "figureKey": "agricultural-science-2025-OL-paper-p09-i0"
  },
  {
   "id": "agsci-2025-ol-q9aii",
@@ -11196,7 +11223,8 @@
     "contextNote": "Part (ii) — the tick-box consequence of the answer to (i)."
    }
   ],
-  "notes": "The Agricultural Price Index graphic is a text infographic: every figure in it extracts as real text from the paper, and the two panels are unambiguously separated by x-position (inputs at left, outputs at right). The stem transcribes it verbatim, so the card needs no image crop. Parts (i) and (ii) are combined into one card because (ii) is phrased entirely as a reference to (i) and dangles on its own; their tariffs (3 and 2) are printed separately and are kept as separate rows summing to 5. Q9(b) reconciles as 3 + 2 + 3 + 2 = 10."
+  "notes": "The Agricultural Price Index graphic is a text infographic: every figure in it extracts as real text from the paper, and the two panels are unambiguously separated by x-position (inputs at left, outputs at right). The stem transcribes it verbatim, so the card needs no image crop. Parts (i) and (ii) are combined into one card because (ii) is phrased entirely as a reference to (i) and dangles on its own; their tariffs (3 and 2) are printed separately and are kept as separate rows summing to 5. Q9(b) reconciles as 3 + 2 + 3 + 2 = 10.",
+  "figureKey": "agricultural-science-2025-OL-paper-p11-i0"
  },
  {
   "id": "agsci-2025-ol-q9biii-iv",
@@ -11255,7 +11283,8 @@
     "contextNote": "The paper's two tick-box options are X and Y."
    }
   ],
-  "notes": "Part (a) asks for the sex cell 'labelled A' and is skipped pending figures. Part (b) names both options in its own text, so the diagram is not needed to answer. Scheme prints 3; Q10 reconciles as 3 + 3 + 4 = 10."
+  "notes": "Part (a) asks for the sex cell 'labelled A' and is skipped pending figures. Part (b) names both options in its own text, so the diagram is not needed to answer. Scheme prints 3; Q10 reconciles as 3 + 3 + 4 = 10.",
+  "figureKey": "agricultural-science-2025-OL-paper-p12-i0"
  },
  {
   "id": "agsci-2025-ol-q10c",
@@ -11303,7 +11332,8 @@
     "contextNote": "Your second correct advantage, whichever it was, also scores 2."
    }
   ],
-  "notes": "Self-contained knowledge question — the diagram is not needed. Tariff '2+2' = 4; unlike the 3+2 parts both slots are worth the same, so no order effect. Q10 reconciles as 3 + 3 + 4 = 10."
+  "notes": "Self-contained knowledge question — the diagram is not needed. Tariff '2+2' = 4; unlike the 3+2 parts both slots are worth the same, so no order effect. Q10 reconciles as 3 + 3 + 4 = 10.",
+  "figureKey": "agricultural-science-2025-OL-paper-p12-i0"
  },
  {
   "id": "agsci-2025-ol-q11ai",
@@ -11450,7 +11480,8 @@
     "contextNote": "Your second correct way, whichever it was, scores 1."
    }
   ],
-  "notes": "The photograph of bulls on rubber slats is context only — the question names the technology, and every scheme answer is general knowledge about rubber slats, so the card stands without a crop. The 4+1 split is worth flagging to students: a strong first point carries almost the whole part. Rows sum to 5; Q11(b) reconciles as 5 + 5 = 10."
+  "notes": "The photograph of bulls on rubber slats is context only — the question names the technology, and every scheme answer is general knowledge about rubber slats, so the card stands without a crop. The 4+1 split is worth flagging to students: a strong first point carries almost the whole part. Rows sum to 5; Q11(b) reconciles as 5 + 5 = 10.",
+  "figureKey": "agricultural-science-2025-OL-paper-p14-i0"
  },
  {
   "id": "agsci-2025-ol-q11bii",
@@ -13591,7 +13622,7 @@
   "subjectId": "agricultural-science",
   "section": "B",
   "questionRef": "2021 HL Q18(c)(i)",
-  "stem": "Question 18. (c) The paper prints a schematic graph of the lactation period of a dairy cow (adapted from Shauman, 2015). It runs left to right through a dry phase, calving, early lactation, mid lactation and late lactation to drying off, with an energy requirement curve and an energy intake curve; the gap where requirement exceeds intake after calving is labelled 'Negative Energy Balance', and the later gap where intake exceeds requirement is labelled 'Excess energy'. There are no numbers on either axis.",
+  "stem": "Question 18. (c) Analyse the graph below, which shows the lactation period of a dairy cow (adapted from Shauman, 2015), and answer the question that follows.",
   "questionText": "Explain what is the drying off period.",
   "tariffModel": {
    "kind": "fixed",
@@ -13606,7 +13637,8 @@
     "marks": 4
    }
   ],
-  "notes": "A single 4-mark definition, and the whole of what the scheme prints for it. The graph in Q18(c) is described in the stem (it is a schematic with no numbers on either axis), so nothing in the card depends on seeing it — the drying-off period is defined from knowledge, not read off the figure."
+  "notes": "A single 4-mark definition, and the whole of what the scheme prints for it. The graph in Q18(c) is described in the stem (it is a schematic with no numbers on either axis), so nothing in the card depends on seeing it — the drying-off period is defined from knowledge, not read off the figure.",
+  "figureKey": "agricultural-science-2021-HL-paper-p45-i0"
  },
  {
   "id": "agsci-2021-hl-q18cii",
@@ -13617,7 +13649,7 @@
   "subjectId": "agricultural-science",
   "section": "B",
   "questionRef": "2021 HL Q18(c)(ii)",
-  "stem": "Question 18. (c) The paper prints a schematic graph of the lactation period of a dairy cow (adapted from Shauman, 2015), running through a dry phase, calving, early, mid and late lactation to drying off. An energy requirement curve and an energy intake curve are drawn together; the gap after calving where requirement exceeds intake is labelled 'Negative Energy Balance', and the later gap where intake exceeds requirement is labelled 'Excess energy'.",
+  "stem": "Question 18. (c) Analyse the graph below, which shows the lactation period of a dairy cow (adapted from Shauman, 2015), and answer the question that follows.",
   "questionText": "Outline one reason for the negative energy balance in early lactation.",
   "tariffModel": {
    "kind": "fixed",
@@ -13637,7 +13669,8 @@
     ]
    }
   ],
-  "notes": "4 marks for one reason. The verbatim stops at 'consumes' because the scheme's mark cell '4' lands in the middle of the following bracket; the rest of the sentence — 'cows cannot physically eat enough to meet the demands of lactation' and 'so cow milk's off her back' — is carried in accepts and in the contextNote, so the student sees the whole point."
+  "notes": "4 marks for one reason. The verbatim stops at 'consumes' because the scheme's mark cell '4' lands in the middle of the following bracket; the rest of the sentence — 'cows cannot physically eat enough to meet the demands of lactation' and 'so cow milk's off her back' — is carried in accepts and in the contextNote, so the student sees the whole point.",
+  "figureKey": "agricultural-science-2021-HL-paper-p45-i0"
  },
  {
   "id": "agsci-2021-hl-q18ciii",
@@ -13681,7 +13714,8 @@
     ]
    }
   ],
-  "notes": "2(3) — any two of four ways at 3 marks each. Row 2 is the scheme's 'correct BCS at calving (3.5)'; the contextNote spells out that BCS is body condition score, because the scheme's abbreviation is not self-explanatory on a flashcard. The fourth option is an accept because the '2(3)' mark cell sits inside it."
+  "notes": "2(3) — any two of four ways at 3 marks each. Row 2 is the scheme's 'correct BCS at calving (3.5)'; the contextNote spells out that BCS is body condition score, because the scheme's abbreviation is not self-explanatory on a flashcard. The fourth option is an accept because the '2(3)' mark cell sits inside it.",
+  "figureKey": "agricultural-science-2021-HL-paper-p45-i0"
  },
  {
   "id": "agsci-2021-hl-q18civ",
@@ -13712,7 +13746,8 @@
     ]
    }
   ],
-  "notes": "4 marks for one implication. Verbatim stops at 'calving' because the scheme's mark cell '4' lands between 'not' and 'ovulating'; the consequences the scheme goes on to list are carried in accepts. All three — not ovulating, won't go in calf, longer calving interval — answer the question, and the row is one point, not three."
+  "notes": "4 marks for one implication. Verbatim stops at 'calving' because the scheme's mark cell '4' lands between 'not' and 'ovulating'; the consequences the scheme goes on to list are carried in accepts. All three — not ovulating, won't go in calf, longer calving interval — answer the question, and the row is one point, not three.",
+  "figureKey": "agricultural-science-2021-HL-paper-p45-i0"
  },
  {
   "id": "agsci-2021-hl-q18cv",
@@ -13751,7 +13786,8 @@
     ]
    }
   ],
-  "notes": "2(3) — two points at 3 marks each. The question names the two things to comment on (feed type, level of concentrates) and the scheme's two strongest points answer exactly those, so both are shown as rows; the rotational-grazing point is an accept because the '2(3)' mark cell sits inside it."
+  "notes": "2(3) — two points at 3 marks each. The question names the two things to comment on (feed type, level of concentrates) and the scheme's two strongest points answer exactly those, so both are shown as rows; the rotational-grazing point is an accept because the '2(3)' mark cell sits inside it.",
+  "figureKey": "agricultural-science-2021-HL-paper-p45-i0"
  },
  {
   "id": "agsci-2021-hl-q18cvi",
@@ -13778,7 +13814,8 @@
     "contextNote": "305 days of lactation plus the 60-day dry period from part (i) makes the 365-day calving interval."
    }
   ],
-  "notes": "A single 4-mark recall answer. Worth checking that this is not a graph-reading part: the printed graph is a schematic with no numeric axis at all (it labels dry phase, early / mid / late lactation, calving and drying off, and nothing else), so 305 days comes from knowledge. The contextNote ties it to the 60-day dry period in part (i) to make the 365-day calving interval, which is why the two figures are worth learning together."
+  "notes": "A single 4-mark recall answer. Worth checking that this is not a graph-reading part: the printed graph is a schematic with no numeric axis at all (it labels dry phase, early / mid / late lactation, calving and drying off, and nothing else), so 305 days comes from knowledge. The contextNote ties it to the 60-day dry period in part (i) to make the 365-day calving interval, which is why the two figures are worth learning together.",
+  "figureKey": "agricultural-science-2021-HL-paper-p45-i0"
  },
  {
   "id": "agsci-2021-hl-q18cvii",
@@ -13963,7 +14000,7 @@
   "subjectId": "agricultural-science",
   "section": "B",
   "questionRef": "2021 OL Q13(b)(ii)",
-  "stem": "Question 13 opens with an article on liver fluke in Irish cattle and sheep. Part (b) then prints a map showing the incidence of liver fluke damage to beef cattle livers by county in the third quarter of 2020, based on Beef HealthCheck slaughter data. The map is not reproduced here; the question below carries the comparison it asks you to explain.",
+  "stem": "Question 13 opens with an article on liver fluke in Irish cattle and sheep. Part (b) prints the map shown here: the incidence of liver fluke damage to beef cattle livers by county in the third quarter of 2020, based on Beef HealthCheck slaughter data. The map calls out Louth at 17.0% fluke damage, Mayo at 7.87% and Cork at 1.54%. Look at the map and answer the question which follows.",
   "questionText": "State one reason why the fluke damage in Cork is less than in more northern counties.",
   "tariffModel": {
    "kind": "fixed",
@@ -13983,7 +14020,8 @@
     "contextNote": "One reason is asked for and the whole 4 marks sit on it, so any one of the scheme's three alternatives scores in full."
    }
   ],
-  "notes": "Part (b) prints a map, but (b)(ii) does not require reading it: the question itself states that Cork's damage is lower than the northern counties', and the scheme's answers are climate and land facts. The stem says plainly that the map is not shown, so nothing dangles. (b)(i) 'which county has the highest % fluke damage?' IS map-only and is skipped."
+  "notes": "Part (b) prints a map, but (b)(ii) does not require reading it: the question itself states that Cork's damage is lower than the northern counties', and the scheme's answers are climate and land facts. The stem says plainly that the map is not shown, so nothing dangles. (b)(i) 'which county has the highest % fluke damage?' IS map-only and is skipped.",
+  "figureKey": "agricultural-science-2021-OL-paper-p20-i0"
  },
  {
   "id": "agsci-2021-ol-q13c-i",
@@ -16720,7 +16758,8 @@
     ]
    }
   ],
-  "notes": "A plain 4-mark tariff for one piece of advice, so a single row. The three actions are reassembled across the point where the '4' marks cell splits the line and so are carried as accepts. The rating table is reproduced in the stem as text — the paper prints it as a table, not as an image, so nothing is dangling."
+  "notes": "A plain 4-mark tariff for one piece of advice, so a single row. The three actions are reassembled across the point where the '4' marks cell splits the line and so are carried as accepts. The rating table is reproduced in the stem as text — the paper prints it as a table, not as an image, so nothing is dangling.",
+  "figureKey": "agricultural-science-2022-HL-paper-p24-i1"
  },
  {
   "id": "agsci-2022-hl-q14bi",
@@ -16761,7 +16800,8 @@
     "contextNote": "C is the protein % of COLOSTRUM — far above whole milk's 3.3%, because of the immunoglobulins."
    }
   ],
-  "notes": "The scheme prints 2 against each of A, B and C, so a fixed 2 + 2 + 2 = 6. The table is reproduced verbatim in the stem as text (the paper sets it as a table, not an image), so the letters A, B and C are defined for the student and nothing dangles."
+  "notes": "The scheme prints 2 against each of A, B and C, so a fixed 2 + 2 + 2 = 6. The table is reproduced verbatim in the stem as text (the paper sets it as a table, not an image), so the letters A, B and C are defined for the student and nothing dangles.",
+  "figureKey": "agricultural-science-2022-HL-paper-p24-i0"
  },
  {
   "id": "agsci-2022-hl-q14bii",
@@ -17772,7 +17812,7 @@
   "section": "B",
   "questionRef": "2022 HL Q17(a)(iii)",
   "stem": "Question 17 instructs: answer both (a) and (b) with either (c) or (d). Part (a) opens: Earthworms are essential on all farms. Kate's permanent pasture is drawn on the paper as a rectangle measuring 178m by 98m. Her four quadrat counts, printed as 'Number of Earthworms/0.25m2 Quadrat', are: quadrat 1 = 28, quadrat 2 = 45, quadrat 3 = 23, quadrat 4 = 19.",
-  "questionText": "Using a quadrat Kate determined the number of earthworms in her permanent pasture as shown in the table below. Estimate the total number of earthworms.",
+  "questionText": "Using a quadrat Kate determined the number of earthworms in her permanent pasture: 28, 45, 23 and 19 earthworms per 0.25 m² quadrat in quadrats 1, 2, 3 and 4 respectively. Estimate the total number of earthworms.",
   "tariffModel": {
    "kind": "fixed",
    "notation": "2 + 2 + 2"
@@ -18137,7 +18177,8 @@
     ]
    }
   ],
-  "notes": "The marks column prints one block, '4 + 4 + 3 +2', against the four components — 13 marks, the value that reconciles Q18 to 50 (13 + 8 + 3 + 12 + 7 + 7). Because the scheme never says which component takes the 4s and which the 3 and the 2, this is modelled as an orderedSplit and every row carries marks: null rather than a guessed value. The four component names are the labels the paper prints on the answer boxes, so the card stands alone without the wheel diagram."
+  "notes": "The marks column prints one block, '4 + 4 + 3 +2', against the four components — 13 marks, the value that reconciles Q18 to 50 (13 + 8 + 3 + 12 + 7 + 7). Because the scheme never says which component takes the 4s and which the 3 and the 2, this is modelled as an orderedSplit and every row carries marks: null rather than a guessed value. The four component names are the labels the paper prints on the answer boxes, so the card stands alone without the wheel diagram.",
+  "figureKey": "agricultural-science-2022-HL-paper-p37-i0"
  },
  {
   "id": "agsci-2022-hl-q18aii",
@@ -18238,7 +18279,8 @@
     "contextNote": "One 3-mark explanation. The three solidus-separated wordings are alternatives — any one alone scores the 3."
    }
   ],
-  "notes": "Single 3-mark point. The term is defined in general agronomy language, so the card does not depend on the Integrated Management System diagram; the diagram is described in the stem only for context."
+  "notes": "Single 3-mark point. The term is defined in general agronomy language, so the card does not depend on the Integrated Management System diagram; the diagram is described in the stem only for context.",
+  "figureKey": "agricultural-science-2022-HL-paper-p38-i0"
  },
  {
   "id": "agsci-2022-hl-q18ci",
@@ -18356,8 +18398,8 @@
   "subjectId": "agricultural-science",
   "section": "B",
   "questionRef": "2022 OL Q13(a)(ii)",
-  "stem": "Answer (a) with either (b) or (c). Two agricultural science students, Padraig and Eileen collected one soil sample each from their own farms to determine the soil type. They each carried out an investigation to determine the texture of this soil sample.",
-  "questionText": "The results of their investigation are in the table below. Soil particle, % present — Sand: Padraig 30, Eileen 70. Silt: Padraig 31, Eileen 17. Clay: Padraig 39, Eileen A. Calculate A (% clay) for Eileen. Show your calculations in the space provided.",
+  "stem": "Answer (a) with either (b) or (c). Two agricultural science students, Padraig and Eileen, collected one soil sample each from their own farms to determine the soil type. They each carried out an investigation to determine the texture of this soil sample. Their results were — Sand: Padraig 30 %, Eileen 70 %. Silt: Padraig 31 %, Eileen 17 %. Clay: Padraig 39 %, Eileen A %.",
+  "questionText": "Calculate A (% clay) for Eileen. Show your calculations.",
   "tariffModel": {
    "kind": "fixed",
    "notation": "4 + 4"
@@ -18527,7 +18569,7 @@
   "section": "B",
   "questionRef": "2022 OL Q13(a)(vi)",
   "stem": "Answer (a) with either (b) or (c). Two agricultural science students, Padraig and Eileen collected one soil sample each from their own farms to determine the soil type. Their results were: Padraig — sand 30%, silt 31%, clay 39%. Eileen — sand 70%, silt 17%, clay 13%.",
-  "questionText": "State which soil sample from the table in part (ii), Padraig or Eileen's, is more suitable for tillage and give two reasons for your answer.",
+  "questionText": "State which soil sample, Padraig's or Eileen's, is more suitable for tillage and give two reasons for your answer.",
   "tariffModel": {
    "kind": "fixed",
    "notation": "6 + 4+2"
@@ -19283,7 +19325,7 @@
   "subjectId": "agricultural-science",
   "section": "B",
   "questionRef": "2022 OL Q16(a)(i)",
-  "stem": "The graph shows the growth of grass in kg/ha for the months February to November 2021.",
+  "stem": "Question 16 — Answer (a) and (b) with either (c) or (d). Part (a) is based on the growth of grass, in kg of dry matter per hectare, recorded month by month from February to November 2021.",
   "questionText": "Identify the month most suitable to make first cut silage and give a reason for your answer.",
   "tariffModel": {
    "kind": "fixed"
@@ -19352,8 +19394,8 @@
   "subjectId": "agricultural-science",
   "section": "B",
   "questionRef": "2022 OL Q16(a)(iv)",
-  "stem": "The graph shows the growth of grass in kg/ha for the months February to November 2021.",
-  "questionText": "Excess grass is produced during the summer months; this grass can be conserved as hay or silage. Explain the underlined term.",
+  "stem": "Question 16 — Answer (a) and (b) with either (c) or (d). Part (a) is based on the growth of grass, in kg of dry matter per hectare, recorded month by month from February to November 2021.",
+  "questionText": "Excess grass is produced during the summer months; this grass can be conserved as hay or silage. Explain the term conserved.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -20969,8 +21011,8 @@
   "subjectId": "agricultural-science",
   "section": "B",
   "questionRef": "2023 HL Q16(b)(i)",
-  "stem": "Question 16. Answer both (a) and (b) with either (c) or (d). As part of the governments’ climate action plan targets, agriculture has to reduce its greenhouse gas emissions by 25% by 2030. Anna and Lucy examined the percentage share of the carbon emissions from their beef enterprise which they received through their Bord Bia farmer feedback report. The graph in part (a) plots the percentage share of farm carbon emissions against four sources — animal digestion, manure usage, fertiliser used and forage / feed — for the current farm assessment (2021), the previous farm assessment (2019) and the national average. (Adapted from Teagasc, 2022)",
-  "questionText": "Anna and Lucy wanted to reduce the emissions on the farm so they spoke to you as their advisor to identify an action for each source of carbon emissions shown on the graph in (a). Describe the advice you would give to them to suit their farm.",
+  "stem": "Question 16. Answer both (a) and (b) with either (c) or (d). As part of the governments’ climate action plan targets, agriculture has to reduce its greenhouse gas emissions by 25% by 2030. Anna and Lucy examined the percentage share of the carbon emissions from their beef enterprise which they received through their Bord Bia farmer feedback report. The graph below, from part (a), highlights where the emissions are coming from on their farm. (Adapted from Teagasc, 2022)",
+  "questionText": "Anna and Lucy wanted to reduce the emissions on the farm so they spoke to you as their advisor to identify an action for each source of carbon emissions shown on the graph below. Describe the advice you would give to them to suit their farm.",
   "tariffModel": {
    "kind": "orderedSplit",
    "notation": "4+4+2+2"
@@ -21026,7 +21068,8 @@
     ]
    }
   ],
-  "notes": "The scheme prints one advice box per emission source (animal digestion, manure, fertiliser use, forage/feed) with a single vertically centred marks cell reading 4+4+2+2 = 12, so the values are POSITIONAL across the four boxes rather than pinned to a named source — hence orderedSplit with every row null rather than asserting which box is worth 4 and which 2. The graph's four category names are printed as text on the paper and are carried in the stem, so the 'shown on the graph in (a)' reference is not dangling; the graph's numeric values are not needed for this part (they are only needed for (a)(i)-(iii), which are skipped). Row verbatims stop where the scheme's table labels ('Animal digestion', 'Manure', 'Fertiliser use', 'Forage / feed') are typeset into the middle of the answer text in the extraction; the remaining wordings sit in accepts and are the scheme's own."
+  "notes": "The scheme prints one advice box per emission source (animal digestion, manure, fertiliser use, forage/feed) with a single vertically centred marks cell reading 4+4+2+2 = 12, so the values are POSITIONAL across the four boxes rather than pinned to a named source — hence orderedSplit with every row null rather than asserting which box is worth 4 and which 2. The graph's four category names are printed as text on the paper and are carried in the stem, so the 'shown on the graph in (a)' reference is not dangling; the graph's numeric values are not needed for this part (they are only needed for (a)(i)-(iii), which are skipped). Row verbatims stop where the scheme's table labels ('Animal digestion', 'Manure', 'Fertiliser use', 'Forage / feed') are typeset into the middle of the answer text in the extraction; the remaining wordings sit in accepts and are the scheme's own.",
+  "figureKey": "agricultural-science-2023-HL-paper-p30-i0"
  },
  {
   "id": "agsci-2023-hl-q16bii",
@@ -21376,7 +21419,7 @@
   "section": "B",
   "questionRef": "2023 HL Q17(b)(i)",
   "stem": "Question 17. Due to the rise in fertiliser prices, Mark has decided to reseed 20% of his 150 hectare dairy and beef farm. He has spent a lot of time researching the best method of reseeding his land and which sward composition would best suit his soil type and farming enterprise.",
-  "questionText": "In his research Mark found that most perennial ryegrass grass mixtures are made up of a hybrid mix of diploid and tetraploid varieties. The differences between these grasses is shown in the table below. Diploid Varieties: tall upright growth; create more ‘open’ sward; higher digestibility value. Tetraploid Varieties: close to ground growth; create a denser sward with less ‘open’ spaces; generally lower digestibility and yield. Describe the reasons for including a hybrid seed mixture in his reseeding plan.",
+  "questionText": "In his research Mark found that most perennial ryegrass grass mixtures are made up of a hybrid mix of diploid and tetraploid varieties. The differences between these grasses is shown in the table below. Describe the reasons for including a hybrid seed mixture in his reseeding plan.",
   "tariffModel": {
    "kind": "fixed",
    "notation": "2(6)"
@@ -21418,7 +21461,8 @@
     "contextNote": "A second, different reason from the same pool."
    }
   ],
-  "notes": "Scheme prints '2(6)' = two reasons at 6 marks each = 12, against a pool of nine. Two rows carry the pool and the rest sits in accepts on both. The diploid/tetraploid comparison is a plain text table on the paper (no figure), so it is reproduced in the question text and nothing dangles. Note the scheme's 'can be used for silage and grazing' has the '2(6)' marks cell typeset into the middle of it in the extraction, which is why it lives in accepts rather than as a row verbatim."
+  "notes": "Scheme prints '2(6)' = two reasons at 6 marks each = 12, against a pool of nine. Two rows carry the pool and the rest sits in accepts on both. The diploid/tetraploid comparison is a plain text table on the paper (no figure), so it is reproduced in the question text and nothing dangles. Note the scheme's 'can be used for silage and grazing' has the '2(6)' marks cell typeset into the middle of it in the extraction, which is why it lives in accepts rather than as a row verbatim.",
+  "figureKey": "agricultural-science-2023-HL-paper-p35-i0"
  },
  {
   "id": "agsci-2023-hl-q17bii",
@@ -21692,7 +21736,7 @@
   "section": "B",
   "questionRef": "2023 HL Q18(b)(i)",
   "stem": "Question 18. Jenny and John are farming a 230 cow dairy farm in Co. Cork. They are looking at the overall quality of their milk and in particular the somatic cell count (SCC) figures from their recent milk report. You have been invited to visit the farm to advise Jenny and John on how to improve their milk quality.",
-  "questionText": "The table below shows the milk composition in the morning and evening on their farm. Morning Milk (8am milking): Fat 3.12%, Protein 2.97%, Lactose 4.13%, Water 85.70%. Evening Milk (5pm milking): Fat 4.75%, Protein 3.25%, Lactose 4.50%, Water 84.90%. Analyse the table and outline the reasons for the difference.",
+  "questionText": "The milk composition in the morning and evening on their farm was as follows. Morning Milk (8am milking): Fat 3.12%, Protein 2.97%, Lactose 4.13%, Water 85.70%. Evening Milk (5pm milking): Fat 4.75%, Protein 3.25%, Lactose 4.50%, Water 84.90%. Analyse these figures and outline the reasons for the difference.",
   "tariffModel": {
    "kind": "orderedSplit",
    "notation": "3+1"
@@ -22896,7 +22940,7 @@
   "section": "B",
   "questionRef": "2023 OL Q16(b)(ii)",
   "stem": "Pat is doing a screening on his dairy herd. The paper prints this milk composition price table. A — Fat (€4.48/kg fat): 39.0kg of fat, €174.72. B — Protein (€9.07/kg protein): 35.0kg of protein, €317.45. C — Processing cost deduction (€0.04/l): €40.00. Total price / 1000 litres: ?",
-  "questionText": "Pat gets paid for the milk produced based on its quality using the calculation A + B – C. Calculate the price Pat gets for 1000 litres of his milk in the table below if the milk fat is 3.8% and protein is 3.4%.",
+  "questionText": "Pat gets paid for the milk produced based on its quality using the calculation A + B – C. Using the milk composition price figures set out above, calculate the price Pat gets for 1000 litres of his milk if the milk fat is 3.8% and protein is 3.4%.",
   "tariffModel": {
    "kind": "fixed",
    "notation": "3 + 3"
@@ -27104,7 +27148,7 @@
   "subjectId": "agricultural-science",
   "section": "B",
   "questionRef": "2025 HL Q13(a)(i)",
-  "stem": "Question 13, part (a) — answer both (a) and (b) with either (c) or (d). Paula and Bill's dairy calving records for 2023 from their 120-cow dairy herd are shown in the table below. A mixture of Artificial Insemination (AI) and an Aubrac beef stock bull was used for breeding animals including their own replacements. The table reads: Purebred Friesian — 25 heifer calves, 25 bull calves; Aubrac x Friesian — 28 heifer calves, 35 bull calves.",
+  "stem": "Question 13, part (a) — answer both (a) and (b) with either (c) or (d). Paula and Bill's dairy calving records for 2023 from their 120-cow dairy herd were as follows: Purebred Friesian — 25 heifer calves and 25 bull calves; Aubrac x Friesian — 28 heifer calves and 35 bull calves. A mixture of Artificial Insemination (AI) and an Aubrac beef stock bull was used for breeding animals including their own replacements.",
   "questionText": "Outline reasons why the farmers chose to cross some of the Friesian cows with an Aubrac stock bull.",
   "tariffModel": {
    "kind": "fixed",
@@ -27460,7 +27504,7 @@
   "subjectId": "agricultural-science",
   "section": "B",
   "questionRef": "2025 HL Q13(c)(i)",
-  "stem": "Question 13, part (c) — answered instead of part (d). The table below shows the best time for insemination of cows to achieve higher conception rates. Heat lasts: coming into heat 8 hours (0-24 hours), standing heat 16 hours (3-30 hours), going off heat 8 hours (2-24 hours). Against time in hours 0-6, 6-12, 12-18, 18-24 and 24-30, artificial insemination (AI) is rated Too early, Good, Best, Good, Too late; natural mating is rated Too early, Best, Too late.",
+  "stem": "Question 13, part (c) — answered instead of part (d). The table below shows the best time for insemination of cows to achieve higher conception rates. Analyse the table and answer the questions that follow.",
   "questionText": "Identify the optimal time for insemination using AI.",
   "tariffModel": {
    "kind": "fixed",
@@ -27475,7 +27519,8 @@
     "marks": 5
    }
   ],
-  "notes": "The paper's table is plain text and is reproduced in the stem, so the card stands alone with no figure. One printed answer at the full 5 marks."
+  "notes": "The paper's table is plain text and is reproduced in the stem, so the card stands alone with no figure. One printed answer at the full 5 marks.",
+  "figureKey": "agricultural-science-2025-HL-paper-p23-i0"
  },
  {
   "id": "agsci-2025-hl-q13cii",
@@ -27979,7 +28024,7 @@
   "subjectId": "agricultural-science",
   "section": "B",
   "questionRef": "2025 HL Q16(a)(i)",
-  "stem": "The table shows a suckler-bred Charolais versus a dairy-origin Holstein Friesian steer, both offered a high-concentrate finishing diet. Analyse the table and answer the questions that follow. Charolais / Holstein Friesian — Age (days) 654 / 678; Daily Dry Matter (DM) intake (kg/day) 11.5 / 12.6; Feed conversion ratio (FCR) 8.4 / 9.8; Liveweight (kg) 725 / 659; Carcass weight (kg) 446 / 360. (Adapted from Teagasc, 2022)",
+  "stem": "Question 16, part (a). A suckler-bred Charolais steer and a dairy-origin Holstein Friesian steer were both offered a high-concentrate finishing diet. Their figures (adapted from Teagasc, 2022) are listed here, Charolais first and Holstein Friesian second — Age (days): 654 and 678. Daily Dry Matter (DM) intake (kg/day): 11.5 and 12.6. Feed conversion ratio (FCR): 8.4 and 9.8. Liveweight (kg): 725 and 659. Carcass weight (kg): 446 and 360. Analyse these figures and answer the question that follows.",
   "questionText": "Identify the animal with the higher intake of feed.",
   "tariffModel": {
    "kind": "fixed"
@@ -28005,7 +28050,7 @@
   "subjectId": "agricultural-science",
   "section": "B",
   "questionRef": "2025 HL Q16(a)(ii)",
-  "stem": "The table shows a suckler-bred Charolais versus a dairy-origin Holstein Friesian steer, both offered a high-concentrate finishing diet. Analyse the table and answer the questions that follow. Charolais / Holstein Friesian — Age (days) 654 / 678; Daily Dry Matter (DM) intake (kg/day) 11.5 / 12.6; Feed conversion ratio (FCR) 8.4 / 9.8; Liveweight (kg) 725 / 659; Carcass weight (kg) 446 / 360. (Adapted from Teagasc, 2022)",
+  "stem": "Question 16, part (a). A suckler-bred Charolais steer and a dairy-origin Holstein Friesian steer were both offered a high-concentrate finishing diet. Their figures (adapted from Teagasc, 2022) are listed here, Charolais first and Holstein Friesian second — Age (days): 654 and 678. Daily Dry Matter (DM) intake (kg/day): 11.5 and 12.6. Feed conversion ratio (FCR): 8.4 and 9.8. Liveweight (kg): 725 and 659. Carcass weight (kg): 446 and 360. Analyse these figures and answer the question that follows.",
   "questionText": "Identify which animal had the better food conversion ratio (FCR).",
   "tariffModel": {
    "kind": "fixed"
@@ -28031,7 +28076,7 @@
   "subjectId": "agricultural-science",
   "section": "B",
   "questionRef": "2025 HL Q16(a)(iii)",
-  "stem": "The table shows a suckler-bred Charolais versus a dairy-origin Holstein Friesian steer, both offered a high-concentrate finishing diet. Analyse the table and answer the questions that follow. Charolais / Holstein Friesian — Age (days) 654 / 678; Daily Dry Matter (DM) intake (kg/day) 11.5 / 12.6; Feed conversion ratio (FCR) 8.4 / 9.8; Liveweight (kg) 725 / 659; Carcass weight (kg) 446 / 360. (Adapted from Teagasc, 2022)",
+  "stem": "Question 16, part (a). A suckler-bred Charolais steer and a dairy-origin Holstein Friesian steer were both offered a high-concentrate finishing diet. Their figures (adapted from Teagasc, 2022) are listed here, Charolais first and Holstein Friesian second — Age (days): 654 and 678. Daily Dry Matter (DM) intake (kg/day): 11.5 and 12.6. Feed conversion ratio (FCR): 8.4 and 9.8. Liveweight (kg): 725 and 659. Carcass weight (kg): 446 and 360. Analyse these figures and answer the question that follows.",
   "questionText": "Calculate the Daily Liveweight Gain (DLG) from birth to slaughter for the Charolais.",
   "tariffModel": {
    "kind": "fixed",
@@ -28058,7 +28103,7 @@
   "subjectId": "agricultural-science",
   "section": "B",
   "questionRef": "2025 HL Q16(a)(iv)",
-  "stem": "The table shows a suckler-bred Charolais versus a dairy-origin Holstein Friesian steer, both offered a high-concentrate finishing diet. Analyse the table and answer the questions that follow. Charolais / Holstein Friesian — Age (days) 654 / 678; Daily Dry Matter (DM) intake (kg/day) 11.5 / 12.6; Feed conversion ratio (FCR) 8.4 / 9.8; Liveweight (kg) 725 / 659; Carcass weight (kg) 446 / 360. (Adapted from Teagasc, 2022)",
+  "stem": "Question 16, part (a). A suckler-bred Charolais steer and a dairy-origin Holstein Friesian steer were both offered a high-concentrate finishing diet. Their figures (adapted from Teagasc, 2022) are listed here, Charolais first and Holstein Friesian second — Age (days): 654 and 678. Daily Dry Matter (DM) intake (kg/day): 11.5 and 12.6. Feed conversion ratio (FCR): 8.4 and 9.8. Liveweight (kg): 725 and 659. Carcass weight (kg): 446 and 360. Analyse these figures and answer the question that follows.",
   "questionText": "Identify which animal has the inferior feed efficiency.",
   "tariffModel": {
    "kind": "fixed"
@@ -28084,7 +28129,7 @@
   "subjectId": "agricultural-science",
   "section": "B",
   "questionRef": "2025 HL Q16(a)(v)",
-  "stem": "The table shows a suckler-bred Charolais versus a dairy-origin Holstein Friesian steer, both offered a high-concentrate finishing diet. Analyse the table and answer the questions that follow. Charolais / Holstein Friesian — Age (days) 654 / 678; Daily Dry Matter (DM) intake (kg/day) 11.5 / 12.6; Feed conversion ratio (FCR) 8.4 / 9.8; Liveweight (kg) 725 / 659; Carcass weight (kg) 446 / 360. (Adapted from Teagasc, 2022)",
+  "stem": "Question 16, part (a). A suckler-bred Charolais steer and a dairy-origin Holstein Friesian steer were both offered a high-concentrate finishing diet. Their figures (adapted from Teagasc, 2022) are listed here, Charolais first and Holstein Friesian second — Age (days): 654 and 678. Daily Dry Matter (DM) intake (kg/day): 11.5 and 12.6. Feed conversion ratio (FCR): 8.4 and 9.8. Liveweight (kg): 725 and 659. Carcass weight (kg): 446 and 360. Analyse these figures and answer the question that follows.",
   "questionText": "Explain Food Conversion Ratio (FCR).",
   "tariffModel": {
    "kind": "fixed"
@@ -28109,7 +28154,7 @@
   "subjectId": "agricultural-science",
   "section": "B",
   "questionRef": "2025 HL Q16(a)(vi)",
-  "stem": "The table shows a suckler-bred Charolais versus a dairy-origin Holstein Friesian steer, both offered a high-concentrate finishing diet. Analyse the table and answer the questions that follow. Charolais / Holstein Friesian — Age (days) 654 / 678; Daily Dry Matter (DM) intake (kg/day) 11.5 / 12.6; Feed conversion ratio (FCR) 8.4 / 9.8; Liveweight (kg) 725 / 659; Carcass weight (kg) 446 / 360. (Adapted from Teagasc, 2022)",
+  "stem": "Question 16, part (a). A suckler-bred Charolais steer and a dairy-origin Holstein Friesian steer were both offered a high-concentrate finishing diet. Their figures (adapted from Teagasc, 2022) are listed here, Charolais first and Holstein Friesian second — Age (days): 654 and 678. Daily Dry Matter (DM) intake (kg/day): 11.5 and 12.6. Feed conversion ratio (FCR): 8.4 and 9.8. Liveweight (kg): 725 and 659. Carcass weight (kg): 446 and 360. Analyse these figures and answer the question that follows.",
   "questionText": "Outline factors affecting FCR in animals.",
   "tariffModel": {
    "kind": "fixed",
@@ -28169,7 +28214,7 @@
   "subjectId": "agricultural-science",
   "section": "B",
   "questionRef": "2025 HL Q16(b)",
-  "stem": "The table shows a suckler-bred Charolais versus a dairy-origin Holstein Friesian steer, both offered a high-concentrate finishing diet. Charolais / Holstein Friesian — Age (days) 654 / 678; Daily Dry Matter (DM) intake (kg/day) 11.5 / 12.6; Feed conversion ratio (FCR) 8.4 / 9.8; Liveweight (kg) 725 / 659; Carcass weight (kg) 446 / 360. (Adapted from Teagasc, 2022)",
+  "stem": "Question 16, part (b). A suckler-bred Charolais steer and a dairy-origin Holstein Friesian steer were both offered a high-concentrate finishing diet. Their figures (adapted from Teagasc, 2022) are listed here, Charolais first and Holstein Friesian second — Age (days): 654 and 678. Daily Dry Matter (DM) intake (kg/day): 11.5 and 12.6. Feed conversion ratio (FCR): 8.4 and 9.8. Liveweight (kg): 725 and 659. Carcass weight (kg): 446 and 360.",
   "questionText": "The factory quoted a base price of €5.25 / kg. Show using calculations how much each animal would earn and identify the animal that would earn the most money.",
   "tariffModel": {
    "kind": "fixed",
@@ -28628,8 +28673,8 @@
   "subjectId": "agricultural-science",
   "section": "B",
   "questionRef": "2025 HL Q17(c)(i)",
-  "stem": "An investigation was carried out over a six-week period to compare the dry matter production in two varieties of kale. Dry Matter yield of kale varieties in thousands of kg per hectare — Regal: Week 1 14.7, Week 2 14.3, Week 3 13.9, Week 4 14.3, Week 5 14.2, Week 6 14.8. Caledonia: Week 1 16.0, Week 2 15.5, Week 3 15.0, Week 4 16.5, Week 5 16.5, Week 6 17.5.",
-  "questionText": "Using the data in the table below, plot a graph showing the DM yield for the Caledonia variety over the six-week period.",
+  "stem": "Question 17, part (c)(i). An investigation was carried out over a six-week period to compare the dry matter production in two varieties of kale. Dry Matter yield of kale varieties, in thousands of kg per hectare, Week 1 to Week 6 — Regal: 14.7, 14.3, 13.9, 14.3, 14.2, 14.8. Caledonia: 16.0, 15.5, 15.0, 16.5, 16.5, 17.5.",
+  "questionText": "Using the data given above, plot a graph showing the DM yield for the Caledonia variety over the six-week period.",
   "tariffModel": {
    "kind": "fixed",
    "notation": "5x2"
@@ -29315,7 +29360,7 @@
   "subjectId": "agricultural-science",
   "section": "B",
   "questionRef": "2025 OL Q14(a)(i)",
-  "stem": "Question 14, part (a). The paper prints a bar chart of the average monthly soil temperatures in Ballyhaise Agricultural College, Co. Cavan for 2023 (adapted from Met.ie). Every bar carries its value: Jan 5.1, Feb 6.6, Mar 6.3, Apr 8.6, May 13.4, Jun 17.3, Jul 16, Aug 16.1, Sep 15, Oct 11, Nov 6.9, Dec 6.4, all in degrees Celsius.",
+  "stem": "Question 14, part (a). The graph below shows the average monthly soil temperatures in Ballyhaise Agricultural College, Co. Cavan for 2023 (adapted from Met.ie). Analyse the graph and answer the question that follows.",
   "questionText": "Grass needs a minimum temperature of 6 degrees Celsius for growth. Identify which month you would expect to see grass beginning to grow on a farm in Cavan.",
   "tariffModel": {
    "kind": "fixed"
@@ -29330,7 +29375,8 @@
     "contextNote": "January reads 5.1, below the 6-degree threshold; February at 6.6 is the first month at or above it."
    }
   ],
-  "notes": "The source is a bar chart, but every bar carries its value as a printed data label, so the whole data set is transcribed into the stem and the card carries no dangling reference to an unextracted figure. FLAGGED FOR REVIEW in case this wave's policy is to skip every graph-based part regardless of whether the data is recoverable as text."
+  "notes": "The source is a bar chart, but every bar carries its value as a printed data label, so the whole data set is transcribed into the stem and the card carries no dangling reference to an unextracted figure. FLAGGED FOR REVIEW in case this wave's policy is to skip every graph-based part regardless of whether the data is recoverable as text.",
+  "figureKey": "agricultural-science-2025-OL-paper-p21-i0"
  },
  {
   "id": "agsci-2025-ol-q14a-iii",
@@ -29408,7 +29454,7 @@
   "section": "B",
   "questionRef": "2025 OL Q14(b)(ii)",
   "stem": "Question 14, part (b). A group of fifth year Agricultural Science students investigated how temperature affects the percentage germination of seeds. They planted 100 barley seeds in a polytunnel and another 100 barley seeds outdoors on school grounds, and monitored the growth of the seeds over 4 weeks.",
-  "questionText": "An independent and a dependent variable from this investigation are shown in the paper's table. Identify each variable by placing a tick in the correct box: Temperature; Percentage germination.",
+  "questionText": "An independent and a dependent variable from this investigation are given below. Identify each variable by placing a tick in the correct box (Independent / Dependent): Temperature; Percentage germination.",
   "tariffModel": {
    "kind": "fixed",
    "notation": "2+2"
@@ -30387,7 +30433,7 @@
   "section": "B",
   "questionRef": "2025 OL Q17(c)",
   "stem": "Question 17. Answer both (a) and (b) with either (c) or (d).\n\nGood soil conditions are important for crop production.\n\nList of minerals provided: Nitrogen · Phosphorus · Calcium · Magnesium.",
-  "questionText": "The table below describes the functions of four plant nutrients. Using the list of minerals provided, match each mineral to its correct description. The four descriptions are: Involved in chlorophyll production; Production of amino acids, which produce proteins for growth and repair in plants; Seed formation and development; Cell wall formation.",
+  "questionText": "Four descriptions of plant nutrient functions are given below. Using the list of minerals provided, match each mineral to its correct description. Descriptions: 1. Involved in chlorophyll production; 2. Production of amino acids, which produce proteins for growth and repair in plants; 3. Seed formation and development; 4. Cell wall formation.",
   "tariffModel": {
    "kind": "orderedSplit",
    "notation": "5+5+1+1"
@@ -30531,8 +30577,8 @@
   "subjectId": "agricultural-science",
   "section": "B",
   "questionRef": "2025 OL Q18(b)(i)",
-  "stem": "Question 18. Aaron wants each cow on his farm to have one calf every 12 months.\n\nThe data given on the paper: 285 day gestation + X = 365 days.",
-  "questionText": "Calculate X, the window of time available to Aaron to get his cows in calf again using the data below.",
+  "stem": "Question 18, part (b). Aaron wants each cow on his farm to have one calf every 12 months.",
+  "questionText": "Calculate X, the window of time available to Aaron to get his cows in calf again, using the following data: 285 day gestation + X = 365 days.",
   "tariffModel": {
    "kind": "fixed"
   },

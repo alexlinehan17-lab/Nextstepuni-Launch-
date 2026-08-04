@@ -718,7 +718,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Higher Level — © State Examinations Commission.",
     id: "bio-2025-hl-q12-b-ii-3", topicId: "bio-1-4", conceptId: "dihybrid-cross-offspring",
     section: "C", questionRef: "2025 HL Q12(b)(ii) 3",
-    questionText: "Give all the possible genotypes and matching phenotypes of the offspring of a cross between the two flies described in (ii) 1. and 2. above.",
+    stem: "In fruit flies, the genes for body colour and wing type are located on different chromosomes. The allele for ebony body (E) is dominant over the allele for black body (e) and the allele for normal wing (N) is dominant over the allele for curly wing (n). Two flies are crossed: the first has an ebony body and normal wings and is heterozygous for both characteristics; the second has a black body and curly wings.",
+    questionText: "Give all the possible genotypes and matching phenotypes of the offspring of a cross between the two flies described above.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
     { id: "g-off1", kind: "gate", verbatim: "EeNn and ebony, normal", marks: 3, contextNote: "If phenotype not matched to correct genotype then 2 marks for each correct genotype.", exactTermRequired: true },
@@ -795,7 +796,7 @@ export const CARDS: SecCard[] = [
     id: "bio-2025-hl-q13-b-i-ii", topicId: "bio-2-2", conceptId: "chlorophyll-light-capture",
     section: "C", questionRef: "2025 HL Q13(b)(i)–(ii)",
     stem: "During photosynthesis chlorophyll absorbs light energy.",
-    questionText: "(i) Name the cell organelle shown in the diagram in which chlorophyll is located. (ii) Name the energised particles released by chlorophyll.",
+    questionText: "(i) Name the cell organelle in which chlorophyll is located. (ii) Name the energised particles released by chlorophyll.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "g-organelle", kind: "gate", verbatim: "Chloroplast", marks: 3, exactTermRequired: true },
@@ -3531,8 +3532,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Higher Level — © State Examinations Commission.",
     id: "bio-2023-hl-q14-b-iii", topicId: "bio-2-5", conceptId: "wind-vs-animal-pollination",
     section: "C", questionRef: "2023 HL Q14(b)(iii)",
-    stem: "The flower in the diagram was an animal-pollinated flower.",
-    questionText: "Describe one way in which a wind-pollinated flower would differ from the animal-pollinated flower.",
+    stem: "Flowering plants may be pollinated by animals or by wind.",
+    questionText: "Describe one way in which a wind-pollinated flower would differ from an animal-pollinated flower.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-a", kind: "alt", verbatim: "Anthers (or stigmas) outside of flower or petals green or not colourful or absent or no scent or no nectar", marks: 3 },
@@ -3630,8 +3631,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Higher Level — © State Examinations Commission.",
     id: "bio-2023-hl-q15-c-iii-iv-vii", topicId: "bio-2-5", conceptId: "oestrogen-progesterone-control",
     section: "C", questionRef: "2023 HL Q15(c)(iii), (iv), (vii)",
-    stem: "On the graph of the menstrual cycle, hormone A is oestrogen and hormone B is progesterone.",
-    questionText: "Describe one effect on the female reproductive system of the low levels of hormones A and B. Explain why hormone A levels increase after approximately day 5. Explain why hormone B levels increase in the days after day 14.",
+    stem: "In a typical menstrual cycle the levels of two female reproductive hormones, A and B, rise and fall. Hormone A is oestrogen and hormone B is progesterone.",
+    questionText: "There are low levels of hormone A and hormone B during the first few days of the menstrual cycle. Describe one effect on the female reproductive system of the low levels of hormones A and B. Explain why hormone A levels increase after approximately day 5. Explain why hormone B levels increase in the days after day 14.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
     { id: "r-low", kind: "alt", verbatim: "Menstruation or FSH produced or new follicle starts developing", marks: 3 },
@@ -3793,7 +3794,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Higher Level — © State Examinations Commission.",
     id: "bio-2023-hl-q16-d-v-vi", topicId: "bio-3-2", conceptId: "rhizopus-structure-nutrition",
     section: "C", questionRef: "2023 HL Q16(d)(v)-(vi)",
-    stem: "The diagram showed the fungus Rhizopus.",
+    stem: "Rhizopus (common bread mould) is a member of the kingdom Fungi. Its body includes structures called stolons, rhizoids and sporangia.",
     questionText: "Give one function for each of the following parts: stolon; rhizoid; sporangium. Name the mode of nutrition used by Rhizopus.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
@@ -3840,7 +3841,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Higher Level — © State Examinations Commission.",
     id: "bio-2023-hl-q17-b-iv-v", topicId: "bio-2-4", conceptId: "synaptic-transmission",
     section: "C", questionRef: "2023 HL Q17(b)(iv)-(v)",
-    stem: "Chemical A in the diagram is a neurotransmitter.",
+    stem: "Two separate neurons are in close contact. Chemical A is produced by one of the neurons to allow the transfer of nerve impulses; chemical A is a neurotransmitter.",
     questionText: "Where in a neuron is chemical A made? Describe in detail how nerve impulses travel between two neurons in close contact.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
@@ -4332,7 +4333,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Higher Level — © State Examinations Commission.",
     id: "bio-2022-hl-q8-b-vi", topicId: "bio-u2", conceptId: "microscope-changing-to-high-power",
     section: "B", questionRef: "2022 HL Q8(b)(vi)",
-    questionText: "Image B shows cells at x100. Describe the steps taken to view these cells at x400.",
+    stem: "A student is examining stained cells under a light microscope. The cells are currently in view at x100 magnification.",
+    questionText: "Describe the steps taken to view these cells at x400.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-objective", kind: "point", verbatim: "Select (or use) high power or select (or use) x40 (objective lens)", marks: 3 },
@@ -4826,8 +4828,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Higher Level — © State Examinations Commission.",
     id: "bio-2022-hl-q14-b-vii-viii", topicId: "bio-2-2", conceptId: "light-independent-stage-atp-and-glucose",
     section: "C", questionRef: "2022 HL Q14(b)(vii)–(viii)",
-    stem: "Stage 2 is the light independent stage (or dark stage or Calvin Cycle) — the scheme's own answer to part (v).",
-    questionText: "What is the role of ATP in stage 2 of photosynthesis as shown in the diagram? Identify molecule Z, the end product of stage 2.",
+    stem: "Photosynthesis occurs over two stages. Stage 1 is the light-dependent stage; stage 2 is the light-independent stage (also called the dark stage or Calvin Cycle). ATP generated in stage 1 passes into stage 2, and stage 2 has a single end product, molecule Z.",
+    questionText: "What is the role of ATP in stage 2 of photosynthesis? Identify molecule Z, the end product of stage 2.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-atp-role", kind: "point", verbatim: "To transfer energy or to carry energy or to release energy", marks: 3 },
@@ -6633,8 +6635,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Higher Level — © State Examinations Commission.",
     id: "bio-2021-hl-q16-d-v", topicId: "bio-2-6", conceptId: "breathing-response-high-co2",
     section: "C", questionRef: "2021 HL Q16(d)(v)",
-    stem: "The gas named earlier in the question was carbon dioxide.",
-    questionText: "How does the breathing system respond to a high level of the gas named at (ii) above?",
+    stem: "Carbon dioxide is the gas, soluble in blood plasma, which controls the rate of breathing.",
+    questionText: "How does the breathing system respond to a high level of carbon dioxide?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Increases rate or increases depth (of breathing)", marks: 3 },

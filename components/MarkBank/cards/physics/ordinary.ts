@@ -76,8 +76,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q1-v", topicId: "phys-u2", conceptId: "calculating-g-from-fall-data",
     section: "A", questionRef: "2021 OL Q1(v)",
-    stem: "A student carried out an experiment to measure the acceleration due to gravity g. An object was allowed to fall through a known distance s and the time t for the fall was measured.",
-    questionText: "From the table, when the distance s is 0.4 m the time t is 0.29 s. Use this data and the formula g = 2s/t² to calculate a value for g.",
+    stem: "A student carried out an experiment to measure the acceleration due to gravity g. An object was allowed to fall through a known distance s and the time t for the fall was measured. The student recorded the following results. s (m): 0.4, 0.5, 0.6, 0.7, 0.8, 0.9. t (s): 0.29, 0.32, 0.35, 0.38, 0.40, 0.43. The value for g, the acceleration due to gravity near the surface of the Earth, is 9.8 m s−2.",
+    questionText: "From these results, when the distance s is 0.4 m the time t is 0.29 s. Use this data and the formula g = 2s/t² to calculate a value for g.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "9.5 m s-2", marks: 6, contextNote: "The unit is part of the answer — the preamble deducts one mark for omitted or incorrect units in a final answer." },
@@ -1402,6 +1402,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q9-iii", topicId: "phys-2-3", conceptId: "real-image-definition",
     section: "B", questionRef: "2022 OL Q9(iii)",
+    stem: "When light is reflected from a concave mirror, the image produced may be real or virtual. An object is placed in front of a concave mirror, between its focal point and its centre of curvature, so that a magnified image is formed.",
     questionText: "The image formed is real. Explain what is meant by a real image.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -4266,8 +4267,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q6-d", topicId: "phys-u2", conceptId: "instruments-barometer-and-voltmeter",
     section: "B", questionRef: "2025 OL Q6(d)",
-    stem: "Choose from the following list of apparatus: barometer, joulemeter, sound level meter, voltmeter.",
-    questionText: "Choose, from the following list of apparatus, an instrument used to measure (i) atmospheric pressure, (ii) potential difference.",
+    stem: "Different instruments are used to measure different physical quantities.",
+    questionText: "Choose, from the following list of apparatus - barometer, joulemeter, sound level meter, voltmeter - an instrument used to measure (i) atmospheric pressure, (ii) potential difference.",
     tariffModel: {"kind":"orderedSplit","notation":"[4 + 3]"}, totalMarks: 7,
     rows: [
     { id: "r-1", kind: "point", verbatim: "(i) barometer", marks: null, exactTermRequired: true },
@@ -4515,8 +4516,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q2-vi", topicId: "phys-u2", conceptId: "boyles-law-graph-verification",
     section: "A", questionRef: "2025 OL Q2(vi)",
-    stem: "In part (v) the student plotted a graph, on graph paper, of 1/p against V.",
-    questionText: "Explain how your graph verifies Boyle's Law.",
+    stem: "In an experiment to verify Boyle's law, a student measured the pressure p of a gas at different volumes V and then plotted a graph, on graph paper, of 1/p against V.",
+    questionText: "Explain how a graph of 1/p against V verifies Boyle's law.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "straight line graph through the origin", marks: 4, accepts: ["P is inversely proportional to V"] },

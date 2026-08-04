@@ -625,7 +625,7 @@ export const CARDS: SecCard[] = [
     id: "phys-2022-hl-q12b-iii", topicId: "phys-3-5", conceptId: "moving-coil-galvanometer-operation",
     section: "B", questionRef: "2022 HL Q12(b)(iii)",
     stem: "A moving-coil galvanometer contains a magnet, a coil, a soft iron core, and a scale and pointer.",
-    questionText: "Describe, with the aid of your diagram, the principle of operation of a moving-coil galvanometer.",
+    questionText: "Describe, with the aid of a labelled diagram, the principle of operation of a moving-coil galvanometer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
     { id: "r-1", kind: "point", verbatim: "current in coil", marks: 3 },
@@ -3102,7 +3102,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Higher Level — © State Examinations Commission.",
     id: "phys-2023-hl-q13-i-a", topicId: "phys-1-4", conceptId: "reservoir-water-mass",
     section: "B", questionRef: "2023 HL Q13(i)(a)",
-    stem: "Turlough Hill is a pumped storage power station in Wicklow. It makes use of two water reservoirs, an artificial upper reservoir near the top of a mountain and the naturally occurring corrie lake, Lough Nahanagan, a lower reservoir which is 321 m below. The upper reservoir has a volume of 2.3 × 106 m3.",
+    stem: "Turlough Hill is a pumped storage power station in Wicklow. It makes use of two water reservoirs, an artificial upper reservoir near the top of a mountain and the naturally occurring corrie lake, Lough Nahanagan, a lower reservoir which is 321 m below. The upper reservoir has a volume of 2.3 × 106 m3. (density of water = 0.997 g cm–3)",
     questionText: "Assume that the upper reservoir in Turlough Hill is full. Calculate the mass (in kg) of water in this reservoir.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -3531,7 +3531,7 @@ export const CARDS: SecCard[] = [
     id: "phys-2024-hl-q3-iii", topicId: "phys-2-1", conceptId: "energy-lost-by-calorimeter",
     section: "A", questionRef: "2024 HL Q3(iii)",
     stem: "A student carried out an experiment to measure the specific latent heat of fusion of ice. The following data were recorded: mass of copper calorimeter 83.2 g; mass of calorimeter + water before adding ice 132.9 g; mass of calorimeter + water after adding ice 138.5 g; temperature of water before adding ice 26.8 °C; temperature of water after adding ice 17.4 °C. (specific heat capacity of water = 4180 J kg⁻¹ K⁻¹; specific heat capacity of copper = 390 J kg⁻¹ K⁻¹)",
-    questionText: "Use the data in the table to calculate the energy lost by the calorimeter after the ice was added.",
+    questionText: "Use the recorded data to calculate the energy lost by the calorimeter after the ice was added.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "mc∆θ", marks: 3 },
@@ -5673,7 +5673,7 @@ export const CARDS: SecCard[] = [
     id: "phys-2025-hl-q14b-v", topicId: "phys-2-3", conceptId: "refractive-index-and-speed-of-light",
     section: "B", questionRef: "2025 HL Q14(b)(v)",
     stem: "An optical fibre consists of a core made from glass surrounded by cladding made from a different type of glass. The refractive index of each type of glass is: core = 1.47, Y = 1.44, Z = 1.50.",
-    questionText: "Identify the type of glass, from the table, in which light travels fastest.",
+    questionText: "Identify the type of glass - core, Y or Z - in which light travels fastest.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Y", marks: 4, contextNote: "Y has the lowest refractive index. The scheme allows 3 marks for n = c1/c2." },

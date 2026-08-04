@@ -250,8 +250,8 @@
   "subjectId": "physics",
   "section": "A",
   "questionRef": "2021 OL Q1(v)",
-  "stem": "A student carried out an experiment to measure the acceleration due to gravity g. An object was allowed to fall through a known distance s and the time t for the fall was measured.",
-  "questionText": "From the table, when the distance s is 0.4 m the time t is 0.29 s. Use this data and the formula g = 2s/t² to calculate a value for g.",
+  "stem": "A student carried out an experiment to measure the acceleration due to gravity g. An object was allowed to fall through a known distance s and the time t for the fall was measured. The student recorded the following results. s (m): 0.4, 0.5, 0.6, 0.7, 0.8, 0.9. t (s): 0.29, 0.32, 0.35, 0.38, 0.40, 0.43. The value for g, the acceleration due to gravity near the surface of the Earth, is 9.8 m s−2.",
+  "questionText": "From these results, when the distance s is 0.4 m the time t is 0.29 s. Use this data and the formula g = 2s/t² to calculate a value for g.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -2427,7 +2427,7 @@
   "section": "B",
   "questionRef": "2022 HL Q12(b)(iii)",
   "stem": "A moving-coil galvanometer contains a magnet, a coil, a soft iron core, and a scale and pointer.",
-  "questionText": "Describe, with the aid of your diagram, the principle of operation of a moving-coil galvanometer.",
+  "questionText": "Describe, with the aid of a labelled diagram, the principle of operation of a moving-coil galvanometer.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -7993,7 +7993,8 @@
     "contextNote": "Separated by a solidus in the scheme, so either statement alone earns the full 6 marks."
    }
   ],
-  "notes": ""
+  "notes": "",
+  "stem": "When light is reflected from a concave mirror, the image produced may be real or virtual. An object is placed in front of a concave mirror, between its focal point and its centre of curvature, so that a magnified image is formed."
  },
  {
   "id": "phys-2022-ol-q9-v",
@@ -12357,7 +12358,7 @@
   "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 HL Q13(i)(a)",
-  "stem": "Turlough Hill is a pumped storage power station in Wicklow. It makes use of two water reservoirs, an artificial upper reservoir near the top of a mountain and the naturally occurring corrie lake, Lough Nahanagan, a lower reservoir which is 321 m below. The upper reservoir has a volume of 2.3 × 106 m3.",
+  "stem": "Turlough Hill is a pumped storage power station in Wicklow. It makes use of two water reservoirs, an artificial upper reservoir near the top of a mountain and the naturally occurring corrie lake, Lough Nahanagan, a lower reservoir which is 321 m below. The upper reservoir has a volume of 2.3 × 106 m3. (density of water = 0.997 g cm–3)",
   "questionText": "Assume that the upper reservoir in Turlough Hill is full. Calculate the mass (in kg) of water in this reservoir.",
   "tariffModel": {
    "kind": "fixed"
@@ -15321,7 +15322,7 @@
   "section": "A",
   "questionRef": "2024 HL Q3(iii)",
   "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice. The following data were recorded: mass of copper calorimeter 83.2 g; mass of calorimeter + water before adding ice 132.9 g; mass of calorimeter + water after adding ice 138.5 g; temperature of water before adding ice 26.8 °C; temperature of water after adding ice 17.4 °C. (specific heat capacity of water = 4180 J kg⁻¹ K⁻¹; specific heat capacity of copper = 390 J kg⁻¹ K⁻¹)",
-  "questionText": "Use the data in the table to calculate the energy lost by the calorimeter after the ice was added.",
+  "questionText": "Use the recorded data to calculate the energy lost by the calorimeter after the ice was added.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -22046,8 +22047,8 @@
   "subjectId": "physics",
   "section": "B",
   "questionRef": "2025 OL Q6(d)",
-  "stem": "Choose from the following list of apparatus: barometer, joulemeter, sound level meter, voltmeter.",
-  "questionText": "Choose, from the following list of apparatus, an instrument used to measure (i) atmospheric pressure, (ii) potential difference.",
+  "stem": "Different instruments are used to measure different physical quantities.",
+  "questionText": "Choose, from the following list of apparatus - barometer, joulemeter, sound level meter, voltmeter - an instrument used to measure (i) atmospheric pressure, (ii) potential difference.",
   "tariffModel": {
    "kind": "orderedSplit",
    "notation": "[4 + 3]"
@@ -22750,7 +22751,7 @@
   "section": "B",
   "questionRef": "2025 HL Q14(b)(v)",
   "stem": "An optical fibre consists of a core made from glass surrounded by cladding made from a different type of glass. The refractive index of each type of glass is: core = 1.47, Y = 1.44, Z = 1.50.",
-  "questionText": "Identify the type of glass, from the table, in which light travels fastest.",
+  "questionText": "Identify the type of glass - core, Y or Z - in which light travels fastest.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -23214,8 +23215,8 @@
   "subjectId": "physics",
   "section": "A",
   "questionRef": "2025 OL Q2(vi)",
-  "stem": "In part (v) the student plotted a graph, on graph paper, of 1/p against V.",
-  "questionText": "Explain how your graph verifies Boyle's Law.",
+  "stem": "In an experiment to verify Boyle's law, a student measured the pressure p of a gas at different volumes V and then plotted a graph, on graph paper, of 1/p against V.",
+  "questionText": "Explain how a graph of 1/p against V verifies Boyle's law.",
   "tariffModel": {
    "kind": "fixed"
   },

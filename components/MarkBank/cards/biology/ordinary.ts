@@ -379,8 +379,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q10-a-i", topicId: "bio-2-5", conceptId: "seed-dormancy",
     section: "B", questionRef: "2025 OL Q10(a)(i)",
-    stem: "Seeds and germination; a list of terms is given.",
-    questionText: "Which term below describes the period of inactivity?",
+    stem: "Germination is the growth of the plant embryo in a seed after a period of inactivity.",
+    questionText: "Which term describes the period of inactivity — fertilisation or dormancy?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Dormancy", marks: 3 },
@@ -406,7 +406,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q10-b-vi", topicId: "bio-u2", conceptId: "improving-reliability-germination",
     section: "B", questionRef: "2025 OL Q10(b)(vi)",
-    stem: "Investigation of the factors necessary for germination, using dishes of seeds.",
+    stem: "A student investigated the factors that affect germination using four dishes, each holding one seed: dish A — wet cotton wool, stored at room temperature; dish B — wet cotton wool, stored in the refrigerator; dish C — wet cotton wool, stored in an anaerobic jar; dish D — dry cotton wool, stored at room temperature.",
     questionText: "How could you make the activity described above more reliable or fair?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -586,7 +586,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
     id: "bio-2025-ol-q12-c-iii", topicId: "bio-1-4", conceptId: "dna-rna-differences",
     section: "C", questionRef: "2025 OL Q12(c)(iii)",
-    stem: "A list of bases is given in the question.",
+    stem: "Adenine, thymine, cytosine, guanine and uracil are nitrogenous bases.",
     questionText: "1. Which one of the above bases is found in RNA, but not DNA? 2. State one other structural difference between DNA and RNA.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -1615,8 +1615,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q9-b-i", topicId: "bio-2-1", conceptId: "enzyme-and-its-substrate",
     section: "B", questionRef: "2024 OL Q9(b)(i)",
-    stem: "Based on an activity you carried out to investigate the effect of temperature on the rate of activity of an enzyme. List: Amylase; Pepsin; Catalase.",
-    questionText: "Write down the enzyme you used from the list below and give the substrate of this enzyme.",
+    stem: "Based on an activity you carried out to investigate the effect of temperature on the rate of activity of an enzyme.",
+    questionText: "Write down the enzyme you used from the following list — amylase, pepsin, catalase — and give the substrate of this enzyme.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "allOf", verbatim: "Enzyme: Named enzyme (amylase or pepsin or catalase) / Substrate: Matching substrate named (starch or protein or hydrogen peroxide)", marks: 3, contextNote: "One 3-mark award for the pair; the substrate must match the enzyme named." },
@@ -1783,8 +1783,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q12-b-i", topicId: "bio-2-2", conceptId: "aerobic-respiration-equation",
     section: "C", questionRef: "2024 OL Q12(b)(i)",
-    stem: "Aerobic respiration is a two-stage process (stage 1 and stage 2) and can be represented by a balanced equation. The paper prints it as: C6H12O6 + 6O2 → 6 __________ + 6 __________ + energy",
-    questionText: "In your answerbook, write out and complete the following balanced equation for aerobic respiration:",
+    stem: "Aerobic respiration is a two-stage process (stage 1 and stage 2) and can be represented by a balanced equation.",
+    questionText: "In your answerbook, write out and complete the following balanced equation for aerobic respiration: C6H12O6 + 6O2 → 6 __________ + 6 __________ + energy",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "CO2", marks: 3 },
@@ -1996,7 +1996,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q14-a", topicId: "bio-3-2", conceptId: "kingdoms-of-microorganisms",
     section: "C", questionRef: "2024 OL Q14(a)",
-    questionText: "Match each of these kingdoms to the following named organisms below: (i) Bacteria (ii) Amoeba (iii) Rhizopus",
+    questionText: "Three kingdoms of organisms include: Fungi, Monera and Protista. Match each of these kingdoms to the following named organisms below: (i) Bacteria (ii) Amoeba (iii) Rhizopus",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Bacteria — Monera", marks: 3 },
@@ -3034,7 +3034,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q14-b-ii-iv", topicId: "bio-2-5", conceptId: "ovum-formation-and-meiosis",
     section: "C", questionRef: "2023 OL Q14(b)(ii)–(iv)",
-    stem: "The paper prints a diagram of the female reproductive system. The marking scheme's own part (b)(i) identifies A as the ovary, B as the fallopian tube and C as the uterus.",
+    stem: "In the human female reproductive system, the parts labelled A, B and C are: A the ovary, B the fallopian tube, C the uterus.",
     questionText: "In which labelled part is the ovum (egg) formed? What type of cell division is involved in production of the ovum (egg)? State one way in which the ovum (egg) differs from a sperm cell.",
     tariffModel: {"kind":"orderedSplit","notation":"3(5) + 6(2)"}, totalMarks: 15,
     rows: [
@@ -3050,8 +3050,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q14-b-v-vi", topicId: "bio-2-5", conceptId: "fertilisation-and-implantation-sites",
     section: "C", questionRef: "2023 OL Q14(b)(v)–(vi)",
-    stem: "The paper prints a diagram of the female reproductive system. The marking scheme's own part (b)(i) identifies A as the ovary, B as the fallopian tube and C as the uterus.",
-    questionText: "Explain the term fertilisation. State the location from the diagram above where each of the following occurs: 1. Fertilisation 2. Implantation",
+    stem: "In the human female reproductive system, the parts labelled A, B and C are: A the ovary, B the fallopian tube, C the uterus.",
+    questionText: "Explain the term fertilisation. State the location in the female reproductive system where each of the following occurs: 1. Fertilisation 2. Implantation",
     tariffModel: {"kind":"orderedSplit","notation":"3(5) + 6(2)"}, totalMarks: 15,
     rows: [
     { id: "r-fertilisation", kind: "alt", verbatim: "Fusion of gametes or formation of zygote", marks: null },
@@ -3212,7 +3212,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q16d-vi-viii", topicId: "bio-2-5", conceptId: "seed-fruit-and-dormancy",
     section: "C", questionRef: "2023 OL Q16(d)(vi)–(viii)",
-    stem: "The paper prints a diagram of a flower. The marking scheme's own part (d)(i) identifies X as the stigma, Y as the ovule and Z as the sepal.",
+    stem: "In the structure of an animal-pollinated flower, the parts labelled X, Y and Z are: X the stigma, Y the ovule, Z the sepal.",
     questionText: "In which labelled part does the seed develop? Give one function of the fruit of a plant. Give one reason why dormancy is of benefit to a plant.",
     tariffModel: {"kind":"orderedSplit","notation":"2(7) + 8(2)"}, totalMarks: 16,
     rows: [
@@ -4491,8 +4491,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q15-b-vi", topicId: "bio-2-6", conceptId: "root-vs-stem-section",
     section: "C", questionRef: "2022 OL Q15(b)(vi)",
-    stem: "The section above is a section through a dicotyledonous plant stem.",
-    questionText: "State one way in which a section through a root would be different from the section above.",
+    stem: "This question deals with a transverse section through a dicotyledonous plant stem.",
+    questionText: "State one way in which a section through a root would be different from a section through a dicotyledonous plant stem.",
     tariffModel: {"kind":"orderedSplit","notation":"3(5) + 6(2)"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Vascular tissue at the centre or root hairs", marks: null },
@@ -4813,8 +4813,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q17-a-v", topicId: "bio-2-4", conceptId: "reflex-response",
     section: "C", questionRef: "2022 OL Q17(a)(v)",
-    stem: "The nerve cells in the diagram are a sensory neuron, an interneuron and a motor neuron.",
-    questionText: "Name an automatic response to a stimulus that may occur through the nerve cells in the diagram.",
+    stem: "Impulses travel from a sense organ to an effector through three nerve cells: a sensory neuron, an interneuron and a motor neuron.",
+    questionText: "Name or give an example of an automatic response to a stimulus.",
     tariffModel: {"kind":"orderedSplit","notation":"2(7) + 8(2)"}, totalMarks: 7,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Reflex or example (e.g. blinking, startle, grasp, suckling, knee jerk, iris dilation)", marks: null, openList: true },
@@ -5198,7 +5198,7 @@ export const CARDS: SecCard[] = [
     id: "bio-2021-ol-q4-abc", topicId: "bio-1-4", conceptId: "monohybrid-cross-squirrel-coat-colour",
     section: "A", questionRef: "2021 OL Q4(a)–(c)",
     stem: "Genotypes of parents: Bb x bb.",
-    questionText: "In squirrels, the allele for black coat colour (B) is dominant to the allele for grey coat colour (b). A heterozygous black squirrel is crossed with a grey squirrel. Complete the blank spaces below to show the genotypes and phenotypes of the cross:",
+    questionText: "In squirrels, the allele for black coat colour (B) is dominant to the allele for grey coat colour (b). A heterozygous black squirrel is crossed with a grey squirrel. For this cross, state: (a) the possible gametes each parent can produce; (b) the genotypes of the offspring; (c) the phenotypes of the offspring.",
     tariffModel: {"kind":"orderedSplit","notation":"2(6) + 3(2) + 2(1)"}, totalMarks: 20,
     rows: [
     { id: "r-a1", kind: "point", verbatim: "Possible gametes of the black parent (Bb) — B, b", marks: null },
@@ -5475,8 +5475,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q9-b-ii", topicId: "bio-2-1", conceptId: "enzyme-substrate-pairs",
     section: "B", questionRef: "2021 OL Q9(b)(ii)",
-    stem: "Investigation into the effect of pH on the rate of enzyme activity. At part (i) you named the enzyme used (e.g. catalase or pepsin or amylase).",
-    questionText: "Name the substrate for the enzyme named at part (i) above:",
+    stem: "Answer the following in relation to an investigation you carried out into the effect of pH on the rate of enzyme activity. The enzyme used may have been catalase, pepsin or amylase.",
+    questionText: "Name the substrate for the enzyme you used in the investigation.",
     tariffModel: {"kind":"orderedSplit","notation":"2(9) + 6(1)"}, totalMarks: 24,
     rows: [
     { id: "r-a", kind: "alt", verbatim: "Catalase: hydrogen peroxide or Pepsin: protein or Amylase: starch", marks: null },
@@ -5992,7 +5992,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q13-b-iv", topicId: "bio-2-6", conceptId: "heart-valve-function",
     section: "C", questionRef: "2021 OL Q13(b)(iv)",
-    stem: "Structure D on the diagram is the bicuspid valve (from the scheme's answer to part (b)(i)).",
+    stem: "In the exam this part followed a labelled diagram of the human heart. Structure D on that diagram is the bicuspid valve - the valve between the left atrium and the left ventricle.",
     questionText: "What is the purpose of structure D?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -6128,7 +6128,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q14-b-ii", topicId: "bio-2-6", conceptId: "stomach-acid",
     section: "C", questionRef: "2021 OL Q14(b)(ii)",
-    stem: "Part C on the diagram is the stomach (from the scheme's answer to part (b)(i)).",
+    stem: "In the exam this part followed a labelled diagram of the human digestive system. Part C on that diagram is the stomach.",
     questionText: "Name the acid released by part C:",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [

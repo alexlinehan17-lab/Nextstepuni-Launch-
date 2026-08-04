@@ -732,8 +732,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2021 Higher Level — © State Examinations Commission.",
     id: "chem-2021-hl-q5-c-iii-iv", topicId: "chem-1-2", conceptId: "second-ionisation-energy-jumps",
     section: "B", questionRef: "2021 HL Q5(c)(iii)–(iv)",
-    stem: "Ionisation energies (kJ mol–1) — Cl: first 1251, second 2298; Ar: first 1521, second 2666; K: first 419, second 3052.",
-    questionText: "(iii) Why is the second ionisation energy value for each element in the table bigger than its first ionisation energy value? (iv) Why is the second ionisation energy of potassium very significantly bigger than its first?",
+    stem: "The first and second ionisation energies (kJ mol–1) of three elements are: chlorine 1251 and 2298; argon 1521 and 2666; potassium 419 and 3052.",
+    questionText: "(iii) Why is the second ionisation energy value for each of the three elements above bigger than its first ionisation energy value? (iv) Why is the second ionisation energy of potassium very significantly bigger than its first?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "more difficult (requires more energy) to remove electron from a positive ion than from the neutral atom", marks: 3, accepts: ["greater attraction between nucleus (ion) and electron","effective nuclear charge of potassium ion increased","more protons than electrons in the ion","ionic radius smaller","second (outer, next) electron closer to nucleus"] },
@@ -2423,8 +2423,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2023 Higher Level — © State Examinations Commission.",
     id: "chem-2023-hl-q6-e-i", topicId: "chem-2-4", conceptId: "homologous-series-ch2-difference",
     section: "B", questionRef: "2023 HL Q6(e)(i)",
-    stem: "A graph shows the variation in heat of combustion for the first eight members of the alkane homologous series, and the trend is near linear.",
-    questionText: "What is the difference in the molecular formulae of two successive members of the alkane homologous series that can be used to account for the near linear trend shown in the graph?",
+    stem: "The heat of combustion of the alkanes varies in a near linear way across the first eight members of the homologous series as the number of carbon atoms increases.",
+    questionText: "What is the difference in the molecular formulae of two successive members of the alkane homologous series that can be used to account for this near linear trend?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "CH2", marks: 6, contextNote: "Scheme: [Allow (3) for 14.]" },
@@ -3523,8 +3523,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2024 Higher Level — © State Examinations Commission.",
     id: "chem-2024-hl-q7-b-i", topicId: "chem-3-3", conceptId: "kc-depends-only-on-temperature",
     section: "B", questionRef: "2024 HL Q7(b)(i)",
-    stem: "H2O(g) + CO(g) ⇌ H2(g) + CO2(g), for which Kc = 1 at temperature T.",
-    questionText: "If the same reaction had been carried out at the same temperature T in the same container, but with an initial mixture of 2.5 moles of steam and 2.5 moles of carbon monoxide, the value of Kc would not change from the value calculated in (a)(iii) above. Explain why the value of Kc would not change.",
+    stem: "When 4.0 moles of steam and 1.0 mole of carbon monoxide were mixed at temperature T in a container of fixed volume, the equilibrium H2O(g) + CO(g) ⇌ H2(g) + CO2(g) was established and the equilibrium constant was calculated to be Kc = 1 at that temperature.",
+    questionText: "If the same reaction had been carried out at the same temperature T in the same container, but with an initial mixture of 2.5 moles of steam and 2.5 moles of carbon monoxide, the value of Kc would not change from the value of 1 calculated above. Explain why the value of Kc would not change.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "no change in temperature", marks: 3, accepts: ["Kc is only affected by temperature"] },
@@ -4453,7 +4453,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2024 Higher Level — © State Examinations Commission.",
     id: "chem-2024-hl-q11-db-i-iii", topicId: "chem-u3", conceptId: "blast-furnace-raw-materials",
     section: "B", questionRef: "2024 HL Q11(d)B(i)–(iii)",
-    stem: "Iron metal is extracted from its ores by reduction in a blast furnace.",
+    stem: "Iron metal is extracted from its ores by reduction in a blast furnace like that illustrated in the diagram.",
     questionText: "(i) Identify the two solid materials that are continually added with the iron ore in the charge at the top of the furnace. (ii) Identify the hot gas that is blown into the furnace above the hearth during production. (iii) Identify by-product B that is removed at the bottom of the furnace.",
     tariffModel: {"kind":"fixed"}, totalMarks: 13,
     rows: [
@@ -4462,6 +4462,14 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "alt", verbatim: "air", marks: 3, accepts: ["oxygen"] },
     { id: "r-4", kind: "alt", verbatim: "slag", marks: 4, accepts: ["CaSiO3","CaAl2O4"] },
     ],
+    figure: {
+          "candId": "chemistry-2024-HL-paper-p13-i1",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2024-HL-paper-p13-i1.png",
+          "srcHash": "2b17aa54de2ca1cba4804e645ce03849",
+          "alt": "Question 11(d) part B with a shaded cutaway diagram of a blast furnace on the right. The furnace is drawn in section as a tall, waisted vertical vessel, dark inside, with a group of upward-pointing arrows through its lower half showing gas rising. An inclined skip-hoist track runs up the left-hand side to the top opening, where a tipped container is discharging material into the throat; a leader line from that opening is labelled 'charge'. A leader line to the vessel body on the right is labelled 'furnace'. Lower down on the right, a horizontal pipe entering the furnace is labelled 'hot gas'. The furnace stands on a pale rectangular hearth/base block: a tapping channel runs out to the left into a small vessel and is labelled 'molten iron', and a matching outlet runs out to the right into a small vessel labelled with a bold 'B'. The word 'or' is centred above the whole item, and a bold 'B' in the left margin introduces the question text, which asks students to identify the two solids added with the iron ore in the charge, the hot gas blown in above the hearth, and by-product B removed at the bottom.",
+          "attribution": "SEC Leaving Certificate Chemistry 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4821,7 +4829,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2025 Higher Level — © State Examinations Commission.",
     id: "chem-2025-hl-q4-a", topicId: "chem-1-3", conceptId: "mendeleev-periodic-table-arrangement",
     section: "B", questionRef: "2025 HL Q4(a)",
-    stem: "Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items attempted.",
+    stem: "In 1869 the Russian chemist Dmitri Mendeleev published a periodic table of the known elements.",
     questionText: "Describe the arrangement of the elements in Mendeleev's 1869 periodic table of the elements.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
