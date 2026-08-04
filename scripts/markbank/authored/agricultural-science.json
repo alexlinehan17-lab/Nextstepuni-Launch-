@@ -8366,7 +8366,7 @@
   "subjectId": "agricultural-science",
   "section": "A",
   "questionRef": "2024 HL Q10(b)",
-  "stem": "The paper shows two swards with a varying level of diversity, A and B; B is the multi-species (polyculture) sward.",
+  "stem": "Question 10, Section A, worth 10 marks in total; this part carries 4. Above the questions the paper prints: 'The pictures below show two swards with a varying level of diversity. Analyse the pictures and answer the questions that follow.' The two swards are drawn as cutaway blocks headed A and B, each showing the plants above ground and their roots running down through the same layered soil profile. Part (a), immediately above this one, asks which of the two pictures is the multi-species (polyculture) sward; this part asks what could be sown in such a sward.",
   "questionText": "List two plants that could be included in the multi-species sward.",
   "tariffModel": {
    "kind": "fixed"
@@ -8402,7 +8402,7 @@
     "contextNote": "Second plant named — 2 marks. Any other one from the same list."
    }
   ],
-  "notes": "\"2(2)\" = two plants, 2 marks each = 4, and each slot is worth 2 in either order, so the model is `fixed`; the notation string is dropped because the fixed variant of TariffModel does not carry one (TS2353). The scheme prints six options for the two slots, so the rows are the two mark slots with the pool in `accepts` — six rows would show 12 marks on a 4-mark part. Q10 totals 10: (a) 4 (picture choice — skipped, needs figure), (b) 4, (c) 2. Which picture is the multi-species sward is supplied in the stem as context; it is not needed to answer this part."
+  "notes": "\"2(2)\" = two plants, 2 marks each = 4, and each slot is worth 2 in either order, so the model is `fixed`; the notation string is dropped because the fixed variant of TariffModel does not carry one (TS2353). The scheme prints six options for the two slots, so the rows are the two mark slots with the pool in `accepts` — six rows would show 12 marks on a 4-mark part. Q10 totals 10: (a) 4 (picture choice), (b) 4, (c) 2. STEM AMENDED 2026-08-04: it previously read 'B is the multi-species (polyculture) sward', which is the whole 4-mark answer to part (a) — now carded as agsci-2024-hl-q10a in this same topic (agsci-3-2) — so a student meeting this card first was handed that card's answer before ever seeing it. The stem now gives the paper's own lead-in and the structure of the figure only, and names part (a) by what it asks rather than by what it answers. Which picture is the multi-species sward is not needed to answer this part."
  },
  {
   "id": "agsci-2024-hl-q10c",
@@ -24043,59 +24043,24 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "(Cut early afternoon when) grass sugars are highest",
-    "marks": 4
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "low nitrogen levels to allow for preservation (6 weeks after fertiliser application)",
-    "marks": 4
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "wilt (for 24 hours) to remove excess water",
-    "marks": 4
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "tip on clean concrete to avoid contamination",
-    "marks": 4,
-    "contextNote": "The scheme reads '(transport grass to yard and) tip on clean concrete to avoid contamination'."
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "anaerobic conditions or anaerobic respiration",
-    "marks": 4,
-    "contextNote": "The scheme reads '(compact pit to remove air) anaerobic conditions or anaerobic respiration'."
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "lactobacillus bacteria feed off sugar",
-    "marks": 4
-   },
-   {
-    "id": "r-7",
-    "kind": "point",
-    "verbatim": "produce lactic acid",
-    "marks": 4
-   },
-   {
-    "id": "r-8",
-    "kind": "point",
-    "verbatim": "pH 4",
-    "marks": 4
-   },
-   {
-    "id": "r-9",
-    "kind": "point",
-    "verbatim": "fermentation occurs",
-    "marks": 4
+    "kind": "anyN",
+    "verbatim": "(Cut early afternoon when) grass sugars are highest // low nitrogen levels to allow for preservation (6 weeks after fertiliser application) // wilt (for 24 hours) to remove excess water // tip on clean concrete to avoid contamination // anaerobic conditions or anaerobic respiration // lactobacillus bacteria feed off sugar // produce lactic acid // pH 4 // fermentation occurs",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "(Cut early afternoon when) grass sugars are highest",
+      "low nitrogen levels to allow for preservation (6 weeks after fertiliser application)",
+      "wilt (for 24 hours) to remove excess water",
+      "tip on clean concrete to avoid contamination",
+      "anaerobic conditions or anaerobic respiration",
+      "lactobacillus bacteria feed off sugar",
+      "produce lactic acid",
+      "pH 4",
+      "fermentation occurs"
+     ]
+    }
    }
   ],
   "notes": "Tariff 3(4) = three points at four marks each = 12, drawn from a nine-item pool, so bestNofParts 3 of 9 @ 4. r-4 and r-5 drop the scheme's bracketed lead-in ('(transport grass to yard and)', '(compact pit to remove air)') from the verbatim and carry it in contextNote instead, because the scheme's marks cell '3(4)' physically interrupts that line in the PDF; the marking point itself is unchanged."
@@ -24146,61 +24111,24 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Cut a number of silage samples from the different treatment areas",
-    "marks": 4
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Record mass of beaker",
-    "marks": 4
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "add silage to the beaker and record the mass",
-    "marks": 4
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "determine mass of silage sample",
-    "marks": 4
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "place the silage in an oven at 100 C (for 15 mins or longer at lower temp e.g. 60o C for 48 hours)",
-    "marks": 4,
-    "accepts": [
-     "or microwave at short intervals"
-    ]
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "constant mass",
-    "marks": 4,
-    "contextNote": "The scheme reads 'repeat weighing until you get a constant mass'."
-   },
-   {
-    "id": "r-7",
-    "kind": "point",
-    "verbatim": "calculate the mass of the silage by subtracting the mass of the beaker from overall mass",
-    "marks": 4
-   },
-   {
-    "id": "r-8",
-    "kind": "point",
-    "verbatim": "calculate the DM% of the silage by putting mass of dry silage over mass of fresh silage multiply by 100/1",
-    "marks": 4
-   },
-   {
-    "id": "r-9",
-    "kind": "point",
-    "verbatim": "calculate the average DM% for each treatment.",
-    "marks": 4
+    "kind": "anyN",
+    "verbatim": "Cut a number of silage samples from the different treatment areas // Record mass of beaker // add silage to the beaker and record the mass // determine mass of silage sample // place the silage in an oven at 100 C (for 15 mins or longer at lower temp e.g. 60o C for 48 hours) // constant mass // calculate the mass of the silage by subtracting the mass of the beaker from overall mass // calculate the DM% of the silage by putting mass of dry silage over mass of fresh silage multiply by 100/1 // calculate the average DM% for each treatment.",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Cut a number of silage samples from the different treatment areas",
+      "Record mass of beaker",
+      "add silage to the beaker and record the mass",
+      "determine mass of silage sample",
+      "place the silage in an oven at 100 C (for 15 mins or longer at lower temp e.g. 60o C for 48 hours)",
+      "constant mass",
+      "calculate the mass of the silage by subtracting the mass of the beaker from overall mass",
+      "calculate the DM% of the silage by putting mass of dry silage over mass of fresh silage multiply by 100/1",
+      "calculate the average DM% for each treatment."
+     ]
+    }
    }
   ],
   "notes": "Tariff 3(4) = 12 from a nine-item pool, so bestNofParts 3 of 9 @ 4. r-5 carries the microwave alternative in accepts because the scheme joins it with 'or' — one drying-method point, two accepted routes, not two points. r-6: the marks cell '3(4)' falls between 'until you get a' and 'constant mass' on the PDF line, so only 'constant mass' is quotable contiguously and the full wording sits in contextNote. r-5 keeps the scheme's '60o C', which is a superscript degree sign in the PDF. 'Points can be found on the diagram' is an examiner instruction and is not carded."
@@ -24428,101 +24356,29 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Weight",
-    "marks": 2,
-    "contextNote": "Animal-related factor"
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "age",
-    "marks": 2,
-    "contextNote": "Animal-related factor"
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "sex",
-    "marks": 2,
-    "contextNote": "Animal-related factor"
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "extent of production",
-    "marks": 2,
-    "contextNote": "Animal-related factor — the scheme reads 'stage and extent of production'."
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "composition",
-    "marks": 2,
-    "contextNote": "Animal-related factor — the scheme reads 'body composition'."
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "genetics",
-    "marks": 2,
-    "contextNote": "Animal-related factor"
-   },
-   {
-    "id": "r-7",
-    "kind": "point",
-    "verbatim": "of physical activity",
-    "marks": 2,
-    "contextNote": "Animal-related factor — the scheme reads 'amount of physical activity'."
-   },
-   {
-    "id": "r-8",
-    "kind": "point",
-    "verbatim": "health",
-    "marks": 2,
-    "contextNote": "Animal-related factor"
-   },
-   {
-    "id": "r-9",
-    "kind": "point",
-    "verbatim": "Temperature",
-    "marks": 2,
-    "contextNote": "Environmental condition"
-   },
-   {
-    "id": "r-10",
-    "kind": "point",
-    "verbatim": "humidity",
-    "marks": 2,
-    "contextNote": "Environmental condition"
-   },
-   {
-    "id": "r-11",
-    "kind": "point",
-    "verbatim": "chill or draught free",
-    "marks": 2,
-    "contextNote": "Environmental condition — the scheme reads 'wind chill or draught free'."
-   },
-   {
-    "id": "r-12",
-    "kind": "point",
-    "verbatim": "radiation or UV light",
-    "marks": 2,
-    "contextNote": "Environmental condition — the scheme reads 'ultraviolet radiation or UV light'."
-   },
-   {
-    "id": "r-13",
-    "kind": "point",
-    "verbatim": "precipitation",
-    "marks": 2,
-    "contextNote": "Environmental condition"
-   },
-   {
-    "id": "r-14",
-    "kind": "point",
-    "verbatim": "soil nutrient deficiencies",
-    "marks": 2,
-    "contextNote": "Environmental condition"
+    "kind": "anyN",
+    "verbatim": "Weight // age // sex // extent of production // composition // genetics // of physical activity // health // Temperature // humidity // chill or draught free // radiation or UV light // precipitation // soil nutrient deficiencies",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Weight",
+      "age",
+      "sex",
+      "extent of production",
+      "composition",
+      "genetics",
+      "of physical activity",
+      "health",
+      "Temperature",
+      "humidity",
+      "chill or draught free",
+      "radiation or UV light",
+      "precipitation",
+      "soil nutrient deficiencies"
+     ]
+    }
    }
   ],
   "notes": "Tariff 2(2) = two answers at two marks each = 4, from a fourteen-item printed pool, so bestNofParts 2 of 14 @ 2. questionText is the paper's exact wording; the sentence that gives it its subject sits in the stem, so the card still stands alone. contextNote tags each row with the column it came from. The scheme prints this as a two-column table and the extraction interleaves the columns line by line, so five rows quote only the contiguous tail of their pool item and give the scheme's full wording in contextNote (r-4, r-5, r-7, r-11, r-12) — the same de-interleaving used elsewhere in this wave. No row is openList: the pool is now transcribed complete, and this scheme signals an open list explicitly when it means one (Q13(b)(ii) closes 'any named correct location'), which it does not do here."
@@ -26873,65 +26729,25 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Have all equipment (calving jack etc.)",
-    "marks": 4,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "clean bedding",
-    "marks": 4
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "vet number",
-    "marks": 4
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "supply of colostrum",
-    "marks": 4
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "experienced person present or adequate supervision",
-    "marks": 4
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "CCTV",
-    "marks": 4
-   },
-   {
-    "id": "r-7",
-    "kind": "point",
-    "verbatim": "calving pen to isolate the cow",
-    "marks": 4
-   },
-   {
-    "id": "r-8",
-    "kind": "point",
-    "verbatim": "scanning",
-    "marks": 4
-   },
-   {
-    "id": "r-9",
-    "kind": "point",
-    "verbatim": "one description of hygiene",
-    "marks": 4,
-    "contextNote": "The scheme prints this point as 'accept one description of hygiene' — any one hygiene practice, described, scores the 4 marks."
-   },
-   {
-    "id": "r-10",
-    "kind": "point",
-    "verbatim": "cow in good condition or BCS 3 – 3.5",
-    "marks": 4
+    "kind": "anyN",
+    "verbatim": "Have all equipment (calving jack etc.) // clean bedding // vet number // supply of colostrum // experienced person present or adequate supervision // CCTV // calving pen to isolate the cow // scanning // one description of hygiene // cow in good condition or BCS 3 – 3.5",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Have all equipment (calving jack etc.)",
+      "clean bedding",
+      "vet number",
+      "supply of colostrum",
+      "experienced person present or adequate supervision",
+      "CCTV",
+      "calving pen to isolate the cow",
+      "scanning",
+      "one description of hygiene",
+      "cow in good condition or BCS 3 – 3.5"
+     ]
+    }
    }
   ],
   "notes": "Tariff '3(4)' = three ways at 4 marks each = 12, from a printed pool of ten, so bestNofParts (3 of 10 at 4) — ten rows at 4 under a fixed model would display 40 marks on a 12-mark part. The solidus separates ten distinct methods here because the question requires multiple answers (scheme front matter, page 3); the 'or' inside r-5 and r-10 separates wordings and stays in-row. questionText and stem keep the paper's own wording including its typo ('for farmers to prepared in advance'). r-1's '(calving jack etc.)' is the scheme's open ending for that point, so openList is set on that row only. r-9: the scheme prints 'accept one description of hygiene'; the leading 'accept' is the examiner's instruction verb, so the row is trimmed to the answer content it introduces — 'one description of hygiene' still appears word for word in the scheme — and the full printed wording is given in contextNote. This keeps the tenth claimable point while removing examiner-direction language from a student-facing row (LAW 3). Q18 totals 50 = 12 + 11 + 6 + 15 + 6; (a)(iii) 'Identify the breed of dairy cow shown in the picture below' is not carded because it cannot be answered without the photograph."
@@ -33045,5 +32861,367 @@
    }
   ],
   "notes": "Figure opened and checked by eye: agricultural-science-2025-OL-paper-p25-i0.png is this part's own exploded pie, titled \"Average Milk Composition\", with the red bold B inside the 87.5% green sector and the white A on the 4.00% purple sector, the legend listing Protein, A, B, Lactose and Minerals, and the Component answer table underneath. The percentages extract as text but which value carries A and which carries B is only readable from the chart, so the crop is what makes the part answerable. Tariff: the scheme prints a single combined \"4+2\" against the A and B lines, so no per-row value is claimed — same treatment as sibling part (b)(ii), whose \"5+2\" was also modelled as an ordered split. Q15 reconciles as 13 (part a) + 12 + 7 + 6 (part b) + 12 (part c) = 50."
+ },
+ {
+  "id": "agsci-2021-hl-q4a",
+  "topicId": "agsci-4-3-1",
+  "conceptId": "farm-energy-efficiency",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2021 HL Q4(a)",
+  "questionText": "Identify one way in which the farm in the photograph could become more energy efficient.",
+  "stem": "Question 4 opens \"Study the photograph of the farm layout below and answer the questions which follow.\" Beneath that line the paper prints one oblique aerial colour photograph of a working Irish farmyard — house, sheds, yard, storage and the surrounding grass fields — and all three parts of Question 4 are answered from that single photograph. The crop stops after the printed text of this part, so parts (b) and (c) are not shown. Question 4 is worth 10 marks; this part carries 2.",
+  "figureKey": "agricultural-science-2021-HL-paper-p08-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Solar panels / increase amount of roof lights or sky lights or reduce the need for artificial light / install windmill / install bio‐digester",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "One 2-mark point; every alternative the scheme separates with a solidus is a different way of earning the same 2. The scheme's list is not closed — it ends with the examiner instruction \"other valid answer\" — so a sensible energy measure you can justify from this yard scores even though it is not printed. That permission is what openList records here.",
+    "accepts": [
+     "rainwater harvesting"
+    ]
+   }
+  ],
+  "notes": "Figure opened and checked: agricultural-science-2021-HL-paper-p08-i0.png is the Question 4 aerial farmyard photograph together with its heading and the printed text of part (a). The question says \"the farm in the photograph\", so it is a dangling reference without the crop. One row: the scheme prints a single 2 for the whole list, and openList is set because the scheme itself ends with \"other valid answer\" — that phrase is an examiner instruction, not a wording a candidate could write, so it is encoded by openList alone and is no longer carried in accepts. The only remaining accepts entry is the scheme's own fifth alternative, \"rainwater harvesting\". The stem was also cut back to context — where the question sits, what kind of image it is, the tariff — because its earlier inventory of the yard called out the shed's rooflights, which is one of the scheme's own marking points."
+ },
+ {
+  "id": "agsci-2021-hl-q4b",
+  "topicId": "agsci-4-3-1",
+  "conceptId": "farmyard-economy-of-labour",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2021 HL Q4(b)",
+  "questionText": "State two ways in which the farmyard is suited to economy of labour.",
+  "stem": "Question 4 continued, answered from the same aerial photograph of the farm layout printed at the head of the question. The crop bound to this card carries the photograph and, beneath it, the printed text of part (a) — a separate part asking about energy efficiency — because parts (b) and (c) are printed below the crop's bottom edge. Read the layout of the yard off the photograph yourself. This part carries 4 of the question's 10 marks.",
+  "figureKey": "agricultural-science-2021-HL-paper-p08-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Sheds are situated close together",
+    "marks": 2,
+    "contextNote": "The scheme prints 2(2): any TWO of its six observations score, 2 marks each. Two of the six are displayed as rows; the other four are carried in accepts on both rows, and neither displayed row's own wording appears in the other's accepts — a point can only be claimed once.",
+    "accepts": [
+     "farmyard is located close to main house",
+     "sheds are well designed for machinery access",
+     "cow housing close to parlour",
+     "roadway to grazing block"
+    ]
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "silage bales and pit are located close to the sheds",
+    "marks": 2,
+    "accepts": [
+     "farmyard is located close to main house",
+     "sheds are well designed for machinery access",
+     "cow housing close to parlour",
+     "roadway to grazing block"
+    ]
+   }
+  ],
+  "notes": "Bound to the inspected Question 4 crop agricultural-science-2021-HL-paper-p08-i0.png. Every answer the scheme allows is an observation read off that photograph — sheds close together, bales and pit beside the sheds, cow housing close to the parlour — so the part is unmarkable without it. Modelled as fixed 2(2) with two displayed rows at 2 each and the remaining four of the scheme's six options in accepts on both rows. Both displayed verbatims are now excluded from the shared accepts pool, matching the file's existing fixed 2(2) precedent at 2021 HL Q2(a)(iii); previously each row's accepts held the other row's verbatim, which let a single scheme option be self-awarded on both rows for 4 marks where the scheme awards 2. bestNofParts is not used because only two rows are displayed and a student can claim both. The stem was also cut back to context: it previously described the house above the yard, the sheds adjoining each other, the bales beside the sheds and the roadways to the fields — four of the six marking points, handed over before the student answered."
+ },
+ {
+  "id": "agsci-2021-ol-q8a-ii",
+  "topicId": "agsci-1-5",
+  "conceptId": "electrical-hazard-safety-sign",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2021 OL Q8(a)(ii)",
+  "questionText": "What is meant by this farm safety sign?",
+  "stem": "Question 8 offers a choice of (a) or (b); this is part (a)(ii). Part (a) opens: 'As part of the Bord Bia Quality Assurance Schemes, farmers must ensure that all of their medicines are locked away in a medicine cabinet', and (a)(i) asked why. The sign this part asks about is printed on its own in the right-hand margin beside the (a)(ii) answer box — a yellow triangular warning sign with a heavy black border and a single black pictogram inside it. The photograph of an open medicine cabinet higher up the crop belongs to part (a)(i), not to this part.",
+  "figureKey": "agricultural-science-2021-OL-paper-p10-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Danger overhead power lines",
+    "marks": 2,
+    "accepts": [
+     "caution electric fence",
+     "electric shock risk"
+    ],
+    "contextNote": "The solidi separate three wordings of ONE 2-mark point — the sign has one meaning, and any one of the three carries the whole 2. A second, wrong meaning written beside a right one cancels the mark."
+   }
+  ],
+  "notes": "Figure opened and verified: agricultural-science-2021-OL-paper-p10-i0 shows the Question 8 choice line, the part (a) stem, the (a)(i) answer box with its medicine-cabinet photograph, the (a)(ii) instruction and the yellow triangular sign in the right margin, whole and untruncated. The stem says plainly which image belongs to which part so the student is not left guessing. Bound because the whole question is 'what does THIS sign mean'. The scheme's third wording, 'electric shock risk', is now in accepts; it cannot be the row verbatim because the scheme file typesets the marks cell inside it ('… / electric 2' then 'shock risk'), which I checked against the file — but accepts is not traceability-checked, so there was never a reason to withhold it. The stem describes the sign as a yellow triangle with a black pictogram rather than naming the pictogram, since naming it is most of the answer. Part (b)(i) asks about a DIFFERENT sign on page 11 with a different answer ('Caution farm machinery'); no p11 crop exists on disk (verified), so that part is skipped rather than bound to this one."
+ },
+ {
+  "id": "agsci-2021-ol-q10b",
+  "topicId": "agsci-4-1",
+  "conceptId": "ovary-function",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2021 OL Q10(b)",
+  "questionText": "Outline the function of the part labelled A.",
+  "stem": "Question 10 prints a side-view line drawing of the reproductive system of a cow, with the bladder and the vulva named on the drawing and one further structure picked out by a short red arrow labelled A. Part (a) asked you to name A. The scheme scores (a) and (b) as separate 2-mark points, so this mark does not depend on having named A correctly — describe what the structure the arrow points to does.",
+  "figureKey": "agricultural-science-2021-OL-paper-p13-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "the short red arrow left of centre. It points to the small oval body at the tip of the coiled horn on the left of the drawing — the structure whose function this part asks for.",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "(Produces) eggs or ovulation or produces oestrogen",
+    "marks": 2,
+    "accepts": [
+     "(Produces) progesterone"
+    ],
+    "contextNote": "Four alternatives for ONE 2-mark point: produces eggs, ovulation, produces oestrogen, or produces progesterone. Any single one carries the whole 2 — the 'or's are alternatives, not separate marks."
+   }
+  ],
+  "notes": "Figure opened and verified: agricultural-science-2021-OL-paper-p13-i0 shows the whole drawing, the red A arrow, the Bladder and Vulva callouts and the (a), (b) and (c) instructions. Bound because 'the part labelled A' means nothing without the drawing. The scheme's fourth alternative, progesterone, is now claimable through accepts; it cannot be appended to the row verbatim because the scheme file typesets the marks cell inside the phrase ('… produces oestrogen or 2' then 'progesterone'), which I confirmed against the file and against the build's traceability check — accepts is not traceability-checked, so the wording belongs there. The label key no longer names the structure: part (a) on the same figure asks the student to name it and this part asks what it does, so naming it in the key would hand over both."
+ },
+ {
+  "id": "agsci-2021-ol-q11a-iii",
+  "topicId": "agsci-4-3-1",
+  "conceptId": "farmyard-layout-economic-sustainability",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2021 OL Q11(a)(iii)",
+  "questionText": "Outline one way in which the farmyard layout is economically sustainable.",
+  "stem": "Question 11 offers a choice of (a) or (b); this is part (a)(iii). The figure is a 3D aerial render of a farmyard set in open fields. The paper labels two features on it — 'Cow cubicle house' and 'Dairy cow collecting yard' — and a red pointer picks out a third as B, which parts (a)(i) and (a)(ii) asked about. This part steps back to the layout as a whole: one observation is wanted, and the marks are for something you can read off the render.",
+  "figureKey": "agricultural-science-2021-OL-paper-p14-i0",
+  "labelKey": [
+   {
+    "letter": "B",
+    "meaning": "the red pointer entering from the right-hand edge of the render. It aims at the long, low bays between concrete walls whose covers are held down by a dense scatter of dark round weights. Parts (a)(i) and (a)(ii) ask about B; this part does not.",
+    "askedInThisQuestion": false
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Buildings (structures) are close together (easy access)",
+    "marks": 2,
+    "accepts": [
+     "labour saving",
+     "good access roads through the farm"
+    ],
+    "openList": true,
+    "contextNote": "Three wordings of ONE 2-mark point, and the scheme then adds 'other valid answer' — so a different observation read off this layout can also score. That is why this row is an open list: self-marking here is a judgement about whether what you wrote is a real economic-sustainability feature of the layout, not a lookup."
+   }
+  ],
+  "notes": "Figure opened and verified: agricultural-science-2021-OL-paper-p14-i0 shows the Question 11 choice line, the part (a) stem, the render with its 'Cow cubicle house' and 'Dairy cow collecting yard' callouts and the red B pointer, and the (a)(i) and (a)(ii) instructions. Bound because the scheme credits observations made ABOUT this layout, which cannot be made from words alone. All three scheme wordings are now claimable: 'labour saving' is in accepts. It cannot be a row verbatim because the scheme file typesets the marks cell inside it ('… / labour 2' then 'saving'), which I checked against the file — accepts is not traceability-checked, so it belongs there. The stem no longer describes the buildings as clustered together or mentions the farm roadway: those are two of the three marking points. The label key no longer names structure B, which is the marking point of the sibling card at (a)(i)."
+ },
+ {
+  "id": "agsci-2021-ol-q11a-iv",
+  "topicId": "agsci-4-3-1",
+  "conceptId": "labour-saving-farm-technology",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2021 OL Q11(a)(iv)",
+  "questionText": "Explain how one named piece of new technology that you have studied could enhance economy of labour on this farm.",
+  "stem": "Question 11 offers a choice of (a) or (b); this is part (a)(iv). 'This farm' is the farmyard in the 3D aerial render at the top of the crop — the paper labels a 'Cow cubicle house' and a 'Dairy cow collecting yard' on it, and a red pointer marks a further structure as B, which parts (a)(i) and (a)(ii) asked about. The technology has to be one that would actually suit this yard, and the question wants it NAMED, not just called 'new machinery'.",
+  "figureKey": "agricultural-science-2021-OL-paper-p14-i0",
+  "labelKey": [
+   {
+    "letter": "B",
+    "meaning": "the red pointer entering from the right-hand edge of the render. It aims at the long, low bays between concrete walls whose covers are held down by a dense scatter of dark round weights. Parts (a)(i) and (a)(ii) ask about B; this part does not.",
+    "askedInThisQuestion": false
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Automatic calf feeder",
+    "marks": 2,
+    "accepts": [
+     "robotic milking machine or rotary parlour",
+     "automatic scrapers",
+     "automatics drafting system",
+     "automatic feeding system"
+    ],
+    "openList": true,
+    "contextNote": "All 2 marks sit on ONE named technology; the alternatives listed are wordings of that single point, not extra marks. The scheme closes with 'other valid named piece of technology', so any named labour-saving technology that would suit this yard scores — which is why this row is an open list. ('automatics drafting system' is the scheme's own spelling.)"
+   }
+  ],
+  "notes": "Figure opened and verified: agricultural-science-2021-OL-paper-p14-i0. Bound because 'this farm' is defined only by the render — the part travels with (a)(i) to (a)(iii). The scheme's list is dairy-specific (calf feeder, robotic milking, scrapers, drafting), which only makes sense once you can see the cubicle house and collecting yard the paper labels on the render. The fifth wording, 'automatic feeding system', is now in accepts; it cannot be a row verbatim because the scheme file typesets the marks cell inside it ('… / automatic 2' then 'feeding system'), which I checked against the file — accepts is not traceability-checked. The stem now names only the render's own printed callouts, so it no longer identifies structure B, which is the sibling card (a)(i)'s marking point."
+ },
+ {
+  "id": "agsci-2023-ol-q6a-ii",
+  "topicId": "agsci-3-3-3",
+  "conceptId": "silage-dmd-and-suitable-animals",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2023 OL Q6(a)(ii)",
+  "questionText": "Identify the best quality silage and state for which animals this silage is suitable.",
+  "stem": "Question 6, part (a)(ii). Question 6 offers (a) or (b); this is the (a) route, and part (i) has already asked about the letters BCS that run through the captions. The diagram shows the grass growth cycle and how each growth stage affects silage quality: five drawings of a grass plant run left to right from a short leafy tuft to a tall stem that has headed out, an orange bar beneath them carries the letters A, B, C and D, and under that the row labelled 'Silage % Dry Matter Digestibility (DMD)' brackets a band of DMD figures beneath each letter together with the class of animal that band suits. The paper prints two answer lines, 'Silage quality:' and 'Animal:'.",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "the first bracket from the left in the 'Silage % Dry Matter Digestibility (DMD)' row, sitting at the young, leafy end of the growth cycle; the only one of the four brackets that spans two DMD columns, and it carries a single animal caption",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "the second bracket, one DMD column wide, with a single animal caption",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "the third bracket, one DMD column wide, carrying two animal captions",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "D",
+    "meaning": "the fourth and rightmost bracket, at the mature, stemmy, headed-out end of the growth cycle; one DMD column wide, carrying two animal captions",
+    "askedInThisQuestion": false
+   }
+  ],
+  "figureKey": "agricultural-science-2023-OL-paper-p08-i0",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2+1"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Best quality silage = 76%+ DMD or A",
+    "marks": 2,
+    "contextNote": "The scheme's \"or\" gives two ways of naming one band — the DMD figure or the letter — so either alone takes the 2. Quality falls left to right as the grass matures, so the best silage comes from the leafiest, least mature grass; on the chart that bracket is the only one spanning two DMD columns, and its upper column is the top of the scale."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Suitable animals = freshly calved dairy cows in winter milk",
+    "marks": 1,
+    "contextNote": "This is the caption the paper prints under the band named in the first row, and it has to match that band — reading the animals off a neighbouring bracket loses this mark even if the band itself was named correctly."
+   }
+  ],
+  "notes": "Bound to agricultural-science-2023-OL-paper-p08-i0, opened before writing; each letter's horizontal position was checked against its own bracket rather than assumed from the ordering — A sits over the red bracket spanning the 76+ and 74-76 columns, B over the blue bracket at 72, C over the red bracket at 69-70, D over the blue bracket at <67. Two defects fixed. First, the stem expanded BCS as 'body condition score', which is the first marking point of Q6(a)(i), a 6-mark card in the same deck, and the stem renders above the question before the student answers (SessionScreen.tsx:890); the stem now records only that part (i) has already asked about those letters. Second, D carries askedInThisQuestion:false here, so its entry rendered in the reveal's 'Also on the diagram' panel and read '<67' plus 'Suckler cows requiring no BCS gain' — the entire answer to the sibling Q6(a)(iii) card. Every entry is now structural: which bracket the letter sits over, how many DMD columns it spans and how many animal captions it carries, with no DMD figure and no caption text. C and D both carry two captions, so nothing in the panel discriminates between them either. Tariff: the scheme prints a 2 in the marks column against the silage line and a 1 against the animal line, each tied to its own content, so this is fixed, not an ordered split. Paper wording of the question confirmed against page 8 of the PDF ('state for which animals this silage is suitable')."
+ },
+ {
+  "id": "agsci-2024-ol-q13aii",
+  "topicId": "agsci-3-2",
+  "conceptId": "grassland-plant-identification",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2024 OL Q13(a)(ii)",
+  "questionText": "Identify any three of the plants using the list of words in the box below.",
+  "stem": "Lisa was renting 40 hectares of land for her organic dairy farm and carried out a number of tests to determine its productivity. Part (a)(i) asked how she would investigate the botanical composition of the land. This part shows the paper's word box — Broad leaf dock, Perennial ryegrass, Nettle, White clover — above four photographs of plants she found in that grassland, lettered A to D.",
+  "figureKey": "agricultural-science-2024-OL-paper-p20-i1",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "top left — a dense patch of pointed, deeply toothed leaves growing in opposite pairs on upright stems",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "top right — a clump of large, broad, oval leaves with wavy margins and a stout pale midrib, growing out of grass",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "bottom left — a low mat of rounded three-part leaves beaded with rain, with one round white flower head on a short stalk",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "D",
+    "meaning": "bottom right — a close-up of a single flowering grass head, a slim spike with spikelets set alternately along it",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3(4)",
+   "answer": 3,
+   "ofParts": 4,
+   "perPart": 4
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A — Nettle",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B — Dock leaf",
+    "marks": 4,
+    "contextNote": "The scheme prints the short form 'Dock leaf'. The word box the question tells you to choose from prints the same plant as 'Broad leaf dock'."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C — Clover",
+    "marks": 4,
+    "contextNote": "The scheme prints 'Clover'. The word box the question tells you to choose from prints the same plant as 'White clover'."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "D — Perennial Ryegrass",
+    "marks": 4
+   }
+  ],
+  "notes": "Tariff '3(4)' against 'identify any three', so bestNofParts — four plants shown, any three claimable at 4 marks each = 12, and Q13's parts sum to the printed 50 with this part at 12. Figures p20-i0 and p20-i1 are the same grid; both were opened, and p20-i1 is the one bound because p20-i0 runs on past the letters into the answer lines 'A:' and 'B:' below the photographs, which would put two undecodable letters on the crop. The scheme prints the four answers as 'Nettle', 'Dock leaf', 'Clover' and 'Perennial Ryegrass' and credits no alternative wordings. The paper's own word box prints two of them at greater length — 'Broad leaf dock' and 'White clover' — so that difference is recorded as a contextNote on those two rows and NOT as accepts: accepts renders inline as 'Dock leaf or Broad leaf dock', which would show the student a scheme alternative that the scheme does not contain."
  }
 ]

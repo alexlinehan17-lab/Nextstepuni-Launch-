@@ -211,8 +211,14 @@ export interface SecCardBase extends CardBase {
   tariffModel: TariffModel;
   /** The tariff printed on the paper. Row marks must reconcile against this. */
   totalMarks: number;
-  /** Capped at five: it keeps one card close to one memory, forces dependency
-   *  splitting, and is what makes the card fit a 360px phone. */
+  /** Capped at five REQUIRED rows: it keeps one card close to one memory, forces
+   *  dependency splitting, and is what makes the card fit a 360px phone.
+   *
+   *  A best-N-of-M card is the one exception, capped at MAX_OPTION_ROWS instead.
+   *  Its extra rows are a menu the student chooses from, not a list they must
+   *  recall — "identify any four of these six breeds" shows six photographs
+   *  because that is what the paper prints, and trimming to five would
+   *  misrepresent the question rather than lighten it. */
   rows: MarkRow[];
   schemeCitation: string;
   /** Pixel escape hatch into the real scheme PDF, so any card can be checked
@@ -266,8 +272,20 @@ export const isSecCard = (c: MarkBankCard): c is SecCard => c.source === 'sec';
 export const isDiagramCard = (c: MarkBankCard): c is SecDiagramCard =>
   c.source === 'sec' && c.kind === 'diagram';
 
-/** Max rows on one card. See the note on `rows`. */
+/** Max rows on one card when every row is required. See the note on `rows`. */
 export const MAX_ROWS = 5;
+
+/**
+ * Max rows on a best-N-of-M card, where the surplus rows are options rather
+ * than things to recall. Higher than MAX_ROWS because the cognitive load is a
+ * choice, not a list — but still bounded: a 14-row menu for a 2-mark answer is
+ * a wall of text, not a question.
+ */
+export const MAX_OPTION_ROWS = 8;
+
+/** The row cap that actually applies to a card, given its tariff. */
+export const rowCapFor = (kind: TariffModel['kind']): number =>
+  kind === 'bestNofParts' ? MAX_OPTION_ROWS : MAX_ROWS;
 
 /**
  * Card ids are used as Firestore map keys inside dotted `updateDoc` paths, so a

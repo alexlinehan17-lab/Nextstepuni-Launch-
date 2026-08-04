@@ -4722,16 +4722,7 @@ export const CARDS: SecCard[] = [
     questionText: "Outline three ways dairy farmers can prepare for the calving season in order to ensure the survival of healthy calves.",
     tariffModel: {"kind":"bestNofParts","answer":3,"ofParts":10,"perPart":4,"notation":"3(4)"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Have all equipment (calving jack etc.)", marks: 4, openList: true },
-    { id: "r-2", kind: "point", verbatim: "clean bedding", marks: 4 },
-    { id: "r-3", kind: "point", verbatim: "vet number", marks: 4 },
-    { id: "r-4", kind: "point", verbatim: "supply of colostrum", marks: 4 },
-    { id: "r-5", kind: "point", verbatim: "experienced person present or adequate supervision", marks: 4 },
-    { id: "r-6", kind: "point", verbatim: "CCTV", marks: 4 },
-    { id: "r-7", kind: "point", verbatim: "calving pen to isolate the cow", marks: 4 },
-    { id: "r-8", kind: "point", verbatim: "scanning", marks: 4 },
-    { id: "r-9", kind: "point", verbatim: "one description of hygiene", marks: 4, contextNote: "The scheme prints this point as 'accept one description of hygiene' — any one hygiene practice, described, scores the 4 marks." },
-    { id: "r-10", kind: "point", verbatim: "cow in good condition or BCS 3 – 3.5", marks: 4 },
+    { id: "r-1", kind: "anyN", verbatim: "Have all equipment (calving jack etc.) // clean bedding // vet number // supply of colostrum // experienced person present or adequate supervision // CCTV // calving pen to isolate the cow // scanning // one description of hygiene // cow in good condition or BCS 3 – 3.5", marks: null, group: {"claimMax":3,"perOption":4,"options":["Have all equipment (calving jack etc.)","clean bedding","vet number","supply of colostrum","experienced person present or adequate supervision","CCTV","calving pen to isolate the cow","scanning","one description of hygiene","cow in good condition or BCS 3 – 3.5"]} },
     ],
   } as SecCard,
   {
@@ -6315,5 +6306,162 @@ export const CARDS: SecCard[] = [
           ]
     },
     labelKey: [{"letter":"A","meaning":"The 4.00% sector, drawn in purple and pulled out from the pie — (butter) fat.","askedInThisQuestion":true},{"letter":"B","meaning":"The large green 87.5% sector that forms the body of the pie — water.","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q8a-ii", topicId: "agsci-1-5", conceptId: "electrical-hazard-safety-sign",
+    section: "A", questionRef: "2021 OL Q8(a)(ii)",
+    stem: "Question 8 offers a choice of (a) or (b); this is part (a)(ii). Part (a) opens: 'As part of the Bord Bia Quality Assurance Schemes, farmers must ensure that all of their medicines are locked away in a medicine cabinet', and (a)(i) asked why. The sign this part asks about is printed on its own in the right-hand margin beside the (a)(ii) answer box — a yellow triangular warning sign with a heavy black border and a single black pictogram inside it. The photograph of an open medicine cabinet higher up the crop belongs to part (a)(i), not to this part.",
+    questionText: "What is meant by this farm safety sign?",
+    tariffModel: {"kind":"fixed","notation":"2"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Danger overhead power lines", marks: 2, accepts: ["caution electric fence","electric shock risk"], contextNote: "The solidi separate three wordings of ONE 2-mark point — the sign has one meaning, and any one of the three carries the whole 2. A second, wrong meaning written beside a right one cancels the mark." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p10-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p10-i0.png",
+          "srcHash": "e21ba379cf0e1af57ed5ca8ae9db39fa",
+          "alt": "A page region of Question 8 part (a). At the top is the choice line Question 8, Answer either (a) or (b), then the stem As part of the Bord Bia Quality Assurance Schemes, farmers must ensure that all of their medicines are locked away in a medicine cabinet. Two images sit down the right-hand side. The upper is a portrait photograph of an open wall-mounted medicine cabinet with three shelves densely packed with veterinary medicine bottles, cardboard cartons and plastic tubs of various colours, the cabinet door swung open to the left. The lower is a farm safety sign: a bold equilateral triangle with a thick black border and bright yellow interior containing a black zig-zag lightning bolt with an arrowhead pointing downward, the standard electricity hazard symbol. To the left of the sign is part (ii), What is meant by this farm safety sign?, with a blank two-row answer box, above which is part (i), Outline one reason why all medicines must be locked away, with its own answer box.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q10b", topicId: "agsci-4-1", conceptId: "ovary-function",
+    section: "A", questionRef: "2021 OL Q10(b)",
+    stem: "Question 10 prints a side-view line drawing of the reproductive system of a cow, with the bladder and the vulva named on the drawing and one further structure picked out by a short red arrow labelled A. Part (a) asked you to name A. The scheme scores (a) and (b) as separate 2-mark points, so this mark does not depend on having named A correctly — describe what the structure the arrow points to does.",
+    questionText: "Outline the function of the part labelled A.",
+    tariffModel: {"kind":"fixed","notation":"2"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "(Produces) eggs or ovulation or produces oestrogen", marks: 2, accepts: ["(Produces) progesterone"], contextNote: "Four alternatives for ONE 2-mark point: produces eggs, ovulation, produces oestrogen, or produces progesterone. Any single one carries the whole 2 — the 'or's are alternatives, not separate marks." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p13-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p13-i0.png",
+          "srcHash": "d1b95294948f47d9cf490f13ac4850f6",
+          "alt": "Question 10 with a black-and-white line drawing of the reproductive tract of a cow, viewed from the side, drawn in outline with hatched shading. The stem reads: The following is the reproductive system of a cow. Look at the diagram and answer the questions which follow. Two parts are named in black text with thin pointer arrows: Vulva, arrowed from the upper right to the flared opening at the far right end of the tract, and Bladder, arrowed from below to the elongated oval organ lying underneath the tract towards the right. One further part is marked with a thick red horizontal arrow and a bold red capital A, sitting at the middle of the drawing and pointing left into the narrow constricted region where the tubular body of the tract meets the coiled and horned structures on the left of the diagram. Below the drawing are part (a), Name the part labelled A on the diagram, with a blank answer box; part (b), Outline the function of the part labelled A, with a two-row blank answer box; and part (c), State the gestation length and the oestrous cycle length (number of days) of a cow, with the pale green table header cell Number of days visible at the bottom.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"the short red arrow left of centre. It points to the small oval body at the tip of the coiled horn on the left of the drawing — the structure whose function this part asks for.","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q11a-iii", topicId: "agsci-4-3-1", conceptId: "farmyard-layout-economic-sustainability",
+    section: "A", questionRef: "2021 OL Q11(a)(iii)",
+    stem: "Question 11 offers a choice of (a) or (b); this is part (a)(iii). The figure is a 3D aerial render of a farmyard set in open fields. The paper labels two features on it — 'Cow cubicle house' and 'Dairy cow collecting yard' — and a red pointer picks out a third as B, which parts (a)(i) and (a)(ii) asked about. This part steps back to the layout as a whole: one observation is wanted, and the marks are for something you can read off the render.",
+    questionText: "Outline one way in which the farmyard layout is economically sustainable.",
+    tariffModel: {"kind":"fixed","notation":"2"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Buildings (structures) are close together (easy access)", marks: 2, accepts: ["labour saving","good access roads through the farm"], contextNote: "Three wordings of ONE 2-mark point, and the scheme then adds 'other valid answer' — so a different observation read off this layout can also score. That is why this row is an open list: self-marking here is a judgement about whether what you wrote is a real economic-sustainability feature of the layout, not a lookup.", openList: true },
+    ],
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p14-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p14-i0.png",
+          "srcHash": "d0c0b305865b9596fe6547b7ffdd2e2c",
+          "alt": "Question 11 part (a), introduced by The use of 3D plans are likely to become more common in the future development of new infrastructure of farms. The figure is a three-dimensional computer-generated aerial render of a dairy farmyard set in bright green fields. It shows a cluster of long farm buildings with green and dark grey roofs arranged around pale concrete yards, a large dark circular tank or store with a tan-brown top at the left of centre, small groups of black and white cows on the concrete at the left, belts of dark green trees along the top, and curved sand-coloured roadways bordered by post fencing sweeping across the foreground. On the right-hand side of the render are three long parallel walled bays with dark sloping side walls; the contents of the nearest bays are heaped up and covered with a mottled blue and white sheeting. Two pale green callout boxes with thick black arrows label parts of the yard: Cow cubicle house, pointing to the large grey-roofed shed in the centre, and Dairy cow collecting yard, pointing to the concreted area at the left where the cows stand. A thick red horizontal arrow on the right, with the bold black letter B beside it, points left into the end of the nearest sheeted bay. Below the render are part (i), Identify the structure located at B, with a blank answer box, and part (ii), Describe one environmental hazard and one potential safety hazard of structure B, with an answer grid whose rows read Environmental: and Safety hazard:.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"B","meaning":"the red pointer entering from the right-hand edge of the render. It aims at the long, low bays between concrete walls whose covers are held down by a dense scatter of dark round weights. Parts (a)(i) and (a)(ii) ask about B; this part does not.","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q11a-iv", topicId: "agsci-4-3-1", conceptId: "labour-saving-farm-technology",
+    section: "A", questionRef: "2021 OL Q11(a)(iv)",
+    stem: "Question 11 offers a choice of (a) or (b); this is part (a)(iv). 'This farm' is the farmyard in the 3D aerial render at the top of the crop — the paper labels a 'Cow cubicle house' and a 'Dairy cow collecting yard' on it, and a red pointer marks a further structure as B, which parts (a)(i) and (a)(ii) asked about. The technology has to be one that would actually suit this yard, and the question wants it NAMED, not just called 'new machinery'.",
+    questionText: "Explain how one named piece of new technology that you have studied could enhance economy of labour on this farm.",
+    tariffModel: {"kind":"fixed","notation":"2"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Automatic calf feeder", marks: 2, accepts: ["robotic milking machine or rotary parlour","automatic scrapers","automatics drafting system","automatic feeding system"], contextNote: "All 2 marks sit on ONE named technology; the alternatives listed are wordings of that single point, not extra marks. The scheme closes with 'other valid named piece of technology', so any named labour-saving technology that would suit this yard scores — which is why this row is an open list. ('automatics drafting system' is the scheme's own spelling.)", openList: true },
+    ],
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p14-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p14-i0.png",
+          "srcHash": "d0c0b305865b9596fe6547b7ffdd2e2c",
+          "alt": "Question 11 part (a), introduced by The use of 3D plans are likely to become more common in the future development of new infrastructure of farms. The figure is a three-dimensional computer-generated aerial render of a dairy farmyard set in bright green fields. It shows a cluster of long farm buildings with green and dark grey roofs arranged around pale concrete yards, a large dark circular tank or store with a tan-brown top at the left of centre, small groups of black and white cows on the concrete at the left, belts of dark green trees along the top, and curved sand-coloured roadways bordered by post fencing sweeping across the foreground. On the right-hand side of the render are three long parallel walled bays with dark sloping side walls; the contents of the nearest bays are heaped up and covered with a mottled blue and white sheeting. Two pale green callout boxes with thick black arrows label parts of the yard: Cow cubicle house, pointing to the large grey-roofed shed in the centre, and Dairy cow collecting yard, pointing to the concreted area at the left where the cows stand. A thick red horizontal arrow on the right, with the bold black letter B beside it, points left into the end of the nearest sheeted bay. Below the render are part (i), Identify the structure located at B, with a blank answer box, and part (ii), Describe one environmental hazard and one potential safety hazard of structure B, with an answer grid whose rows read Environmental: and Safety hazard:.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"B","meaning":"the red pointer entering from the right-hand edge of the render. It aims at the long, low bays between concrete walls whose covers are held down by a dense scatter of dark round weights. Parts (a)(i) and (a)(ii) ask about B; this part does not.","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2023-ol-q6a-ii", topicId: "agsci-3-3-3", conceptId: "silage-dmd-and-suitable-animals",
+    section: "A", questionRef: "2023 OL Q6(a)(ii)",
+    stem: "Question 6, part (a)(ii). Question 6 offers (a) or (b); this is the (a) route, and part (i) has already asked about the letters BCS that run through the captions. The diagram shows the grass growth cycle and how each growth stage affects silage quality: five drawings of a grass plant run left to right from a short leafy tuft to a tall stem that has headed out, an orange bar beneath them carries the letters A, B, C and D, and under that the row labelled 'Silage % Dry Matter Digestibility (DMD)' brackets a band of DMD figures beneath each letter together with the class of animal that band suits. The paper prints two answer lines, 'Silage quality:' and 'Animal:'.",
+    questionText: "Identify the best quality silage and state for which animals this silage is suitable.",
+    tariffModel: {"kind":"fixed","notation":"2+1"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Best quality silage = 76%+ DMD or A", marks: 2, contextNote: "The scheme's \"or\" gives two ways of naming one band — the DMD figure or the letter — so either alone takes the 2. Quality falls left to right as the grass matures, so the best silage comes from the leafiest, least mature grass; on the chart that bracket is the only one spanning two DMD columns, and its upper column is the top of the scale." },
+    { id: "r-2", kind: "point", verbatim: "Suitable animals = freshly calved dairy cows in winter milk", marks: 1, contextNote: "This is the caption the paper prints under the band named in the first row, and it has to match that band — reading the animals off a neighbouring bracket loses this mark even if the band itself was named correctly." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2023-OL-paper-p08-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-OL-paper-p08-i0.png",
+          "srcHash": "5cd59ea7e08e77b91cef8575a812a038",
+          "alt": "A grass growth cycle / silage quality chart. Across the top of a cream panel are five drawings of a grass plant at successive growth stages, each rooted in a small patch of brown soil and getting taller and more mature left to right: a short leafy tuft; a larger leafy tuft with emerging stems; a dense tall dark green leafy plant; a taller plant with a pale seed head emerging; and a tallest yellowing plant with an open seed head. Beneath the plants runs a horizontal orange/brown bar carrying four bold white letters spaced along it: A, B, C, D. Below the bar, a black label at the left reads 'Silage % Dry Matter Digestibility (DMD)' and four curly brackets (alternating red and dark blue) span sections of the bar. Under the brackets are DMD figures and the stock classes they suit: under the first (red) bracket '76+' and '74-76' with the red caption 'Freshly calved dairy cows in winter milk'; under the second (blue) bracket '72' with the blue caption 'Dry cows requiring BCS gain'; under the third (red) bracket '69-70' with the red captions 'Dry dairy cows requiring little or no BCS gain' and 'Dry suckler cows requiring BCS gain'; under the fourth (blue) bracket '<67' with the blue captions 'Dry dairy cows - meal feeding required to gain BCS' and 'Suckler cows requiring no BCS gain'. Above the chart is the printed text 'Question 6  Answer either (a) or (b). (a) The diagram shows the grass growth cycle and how each growth stage affects silage quality. Analyse the picture and answer the questions which follow.'",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "D"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"the first bracket from the left in the 'Silage % Dry Matter Digestibility (DMD)' row, sitting at the young, leafy end of the growth cycle; the only one of the four brackets that spans two DMD columns, and it carries a single animal caption","askedInThisQuestion":true},{"letter":"B","meaning":"the second bracket, one DMD column wide, with a single animal caption","askedInThisQuestion":false},{"letter":"C","meaning":"the third bracket, one DMD column wide, carrying two animal captions","askedInThisQuestion":false},{"letter":"D","meaning":"the fourth and rightmost bracket, at the mature, stemmy, headed-out end of the growth cycle; one DMD column wide, carrying two animal captions","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2024-ol-q13aii", topicId: "agsci-3-2", conceptId: "grassland-plant-identification",
+    section: "B", questionRef: "2024 OL Q13(a)(ii)",
+    stem: "Lisa was renting 40 hectares of land for her organic dairy farm and carried out a number of tests to determine its productivity. Part (a)(i) asked how she would investigate the botanical composition of the land. This part shows the paper's word box — Broad leaf dock, Perennial ryegrass, Nettle, White clover — above four photographs of plants she found in that grassland, lettered A to D.",
+    questionText: "Identify any three of the plants using the list of words in the box below.",
+    tariffModel: {"kind":"bestNofParts","notation":"3(4)","answer":3,"ofParts":4,"perPart":4}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A — Nettle", marks: 4 },
+    { id: "r-2", kind: "point", verbatim: "B — Dock leaf", marks: 4, contextNote: "The scheme prints the short form 'Dock leaf'. The word box the question tells you to choose from prints the same plant as 'Broad leaf dock'." },
+    { id: "r-3", kind: "point", verbatim: "C — Clover", marks: 4, contextNote: "The scheme prints 'Clover'. The word box the question tells you to choose from prints the same plant as 'White clover'." },
+    { id: "r-4", kind: "point", verbatim: "D — Perennial Ryegrass", marks: 4 },
+    ],
+    figure: {
+          "candId": "agricultural-science-2024-OL-paper-p20-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p20-i1.png",
+          "srcHash": "7743b51a1d07faff2d1d48c0bfcce71b",
+          "alt": "Near-duplicate of p20-i0, cropped about 100 pixels shorter at the bottom. The same cream word bank of four cells (Broad leaf dock | Perennial ryegrass | Nettle | White clover) sits above the same four colour photographs in a two-by-two grid with bold capitals: A a dense patch of pointed, deeply serrated heart-shaped leaves in opposite pairs on upright stems; B a clump of large broad wavy-edged leaves with a pale midrib among grass, beaded with droplets; C a dewy mat of three-lobed trefoil leaves with pale crescent markings and one round white flower head; D a close-up of a single flattened grass seed head with alternating spikelets, against blurred grass. The letter D at the bottom is complete but the answer rows below it are not included.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "D"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"top left — a dense patch of pointed, deeply toothed leaves growing in opposite pairs on upright stems","askedInThisQuestion":true},{"letter":"B","meaning":"top right — a clump of large, broad, oval leaves with wavy margins and a stout pale midrib, growing out of grass","askedInThisQuestion":true},{"letter":"C","meaning":"bottom left — a low mat of rounded three-part leaves beaded with rain, with one round white flower head on a short stalk","askedInThisQuestion":true},{"letter":"D","meaning":"bottom right — a close-up of a single flowering grass head, a slim spike with spikelets set alternately along it","askedInThisQuestion":true}],
   } as SecCard,
 ];

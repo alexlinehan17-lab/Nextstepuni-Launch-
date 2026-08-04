@@ -2,231 +2,281 @@
  {
   "id": "agsci-2021-hl-q1a",
   "questionRef": "2021 HL Q1(a)",
-  "problem": "topicId is agsci-3-3-2 (Crops — Production — management) for a pure plant-identification part, while the file's existing card for the sibling part Q1(b) is filed under agsci-3-2 (Classification/identification), which is where an \"Identify each of the following plants\" question belongs."
+  "failed": [],
+  "problem": "The refile to agsci-3-2 is correct and the labelKey names no plant, but figures.json's alt for the bound crop still reads \"several thistle plants with purple-mauve brush-like flowerheads\" — and because all three labelKey entries are askedInThisQuestion:true they never render, so that alt is the only figure description a screen-reader user gets and it hands over B's answer on an identification card."
  },
  {
   "id": "agsci-2021-hl-q3ai",
   "questionRef": "2021 HL Q3(a)(i)",
-  "problem": "labelKey B misdescribes the pictogram — extracted at source resolution the row-4 symbol is ONE child figure with a ball in the air (the standard \"no playing\" sign), not \"two human figures, a taller one leaning over a smaller one\", so the single visual cue that yields the scheme's answer \"This is not a playground\" is deleted and replaced with a misleading one that points at a different hazard (figures.json's alt text for this crop repeats the same wrong description), and the crop's sliced bottom line \"(ii) State the function of C and D\" leaves two further letters undecoded."
+  "failed": [
+   "labelKeyMatchesTheImage",
+   "notesClaimsAreTrue"
+  ],
+  "problem": "The invented \"two human figures\" is gone and the ball is now named, but the replacement asserts pose detail the source cannot carry — the embedded sign is 1009x907 px so each pictogram is only ~85x110 px, and isolating the silhouette shows ONE arm raised up-right toward the detached ball with the child mid-stride, not \"standing with both arms raised\" or a ball \"in front of the hands\", and the notes restate that pose as verified fact."
  },
  {
   "id": "agsci-2021-hl-q3aii",
   "questionRef": "2021 HL Q3(a)(ii)",
-  "problem": "The bound crop opens with an orphan \"B:\" answer line left over from part (i) — a printed letter labelKey does not decode and whose referent symbol is not in this crop at all."
+  "failed": [
+   "labelKeyMatchesTheImage"
+  ],
+  "problem": "The orphan \"B:\" is properly decoded, but labelKey D still calls the calving jack's lever grip a \"T-handle\" when the photograph plainly shows a closed D-shaped loop grip — the same detail figures.json's own alt for this very crop records correctly as \"a lever with a D-shaped hand grip at its upper end\"."
  },
  {
   "id": "agsci-2021-hl-q3aiii",
   "questionRef": "2021 HL Q3(a)(iii)",
-  "problem": "Inherits the same crop as part (ii), whose top edge prints an undecoded orphan \"B:\" answer line from part (i) that labelKey (C and D only) never explains."
+  "failed": [
+   "labelKeyMatchesTheImage"
+  ],
+  "problem": "Same wrong D description as part (ii) — \"a long ratcheted shaft with a T-handle\" where the photo shows a closed D-loop grip on the pump lever — and here it matters more, because D is askedInThisQuestion:false so this is one of the two meanings the card actually renders to the student in the \"Also on the diagram\" panel."
  },
  {
   "id": "agsci-2021-hl-q3bi",
   "questionRef": "2021 HL Q3(b)(i)",
-  "problem": "topicId agsci-3-3-2 (Production — management) files a seed-drill identification under crop management while the card for the same machine at part (b)(iii) is filed under agsci-3-3-1 (Production — establishment), which is where sowing belongs."
+  "failed": [
+   "notesClaimsAreTrue"
+  ],
+  "problem": "The refile to agsci-3-3-1 is right, but the notes justify it with \"machine A is the machine the rest of Q3(b) turns on\", which is false against the scheme — part (b)(iv) (\"Outline one disadvantage of using B when feeding high producing animals\") turns on machine B, the zero grazer this same card also identifies."
  },
  {
   "id": "agsci-2021-hl-q3biii",
   "questionRef": "2021 HL Q3(b)(iii)",
-  "problem": "The bound crop stops after part (ii), so the most prominent printed question under the photographs is \"Suggest one advantage of using a tractor fitted with tracks\", whose scheme answer (\"decreased compaction / less damage to soil structure\") overlaps this part's own answers and prints a competing question beside the card."
- },
- {
-  "id": "agsci-2021-hl-q4a",
-  "questionRef": "2021 HL Q4(a)",
-  "problem": "\"other valid answer\" is listed inside accepts as though it were an answer a student could write, when it is the scheme's catch-all instruction and is already correctly encoded by openList: true."
- },
- {
-  "id": "agsci-2021-hl-q4b",
-  "questionRef": "2021 HL Q4(b)",
-  "problem": "Each row's accepts carries the other row's verbatim (\"Sheds are situated close together\" sits in r-2's accepts and \"silage bales and pit are located close to the sheds\" in r-1's), so one of the scheme's six options can be claimed on both rows and self-award 4 marks for a single 2-mark point — the file's own fixed 2(2) precedent at 2021 HL Q2(a)(iii) excludes both displayed verbatims from the shared accepts pool."
+  "failed": [
+   "originalObjectionFixed",
+   "notesClaimsAreTrue"
+  ],
+  "problem": "The objection was that the bound crop's only visible question — \"Suggest one advantage of using a tractor fitted with tracks\" — points straight at this card's own credited \"improved soil structure or reduces compaction\"; the repair changed only the stem's narration, left the crop byte-identical, and the notes then assert \"nothing is handed over\", so the objection was argued away rather than removed."
  },
  {
   "id": "agsci-2021-hl-q4c",
   "questionRef": "2021 HL Q4(c)",
-  "problem": "Same defect as (b) — r-1's accepts contains r-2's verbatim and vice versa, so one scheme option is claimable on both rows for 4 marks where the scheme awards 2, and the notes count the pool as \"eleven\" options when the scheme prints ten."
+  "failed": [
+   "notesClaimsAreTrue"
+  ],
+  "problem": "The accepts pools and the corrected total of ten options are right, but the recount that was the point of this repair miscounts position: the open \"any energy saving measure that a student has not given as an answer to part (a)\" clause is the NINTH of the scheme's ten, not \"the tenth\" (notes) or \"the scheme's last clause\" (r-1 contextNote) — the tenth and last is \"pit silage instead of bales to reduce plastic waste\", which the card itself carries in accepts."
  },
  {
   "id": "agsci-2021-ol-q4b",
   "questionRef": "2021 OL Q4(b)",
-  "problem": "On this crop A and B are each printed three times — once as a column header and twice as a horizon bracket inside the two profiles — but the key defines A and B only as columns while defining C in the horizon sense, so the horizon A/B a student can see sit undecoded (the sibling card q4a spells the double duty out, proving the ambiguity is real)."
+  "failed": [
+   "labelKeyMatchesTheImage"
+  ],
+  "problem": "The label key still opens \"printed twice on this crop\" for A and repeats it for B, but the crop prints each of them three times — the banner plus a bracket inside BOTH profiles — which the card's own notes state correctly (\"The crop prints A and B three times each\"), so the key miscounts the exact letters it was rewritten to decode."
  },
  {
   "id": "agsci-2021-ol-q4c",
   "questionRef": "2021 OL Q4(c)",
-  "problem": "Same undecoded horizon-bracket A and B as q4b (key gives only the column sense for A/B but the horizon sense for C), and the scheme's credited 'reduced crop yield (due to acidic nature of soil or poor drainage or poor aeration or waterlogging of soil)' is kept out of both rows' accepts on a typesetting excuse."
- },
- {
-  "id": "agsci-2021-ol-q8a-ii",
-  "questionRef": "2021 OL Q8(a)(ii)",
-  "problem": "The scheme's third solidus alternative, 'electric shock risk', is excluded from accepts on a bogus 'the typeset marks cell splits the phrase' rationale, so a student who writes the sign's most common meaning self-marks zero."
- },
- {
-  "id": "agsci-2021-ol-q10b",
-  "questionRef": "2021 OL Q10(b)",
-  "problem": "The row verbatim stops at 'produces oestrogen' and silently drops the scheme's final alternative 'or progesterone', so a scheme-credited answer is not claimable on the card."
+  "failed": [
+   "tariffAddsUp",
+   "solidusNotSplit",
+   "acceptsFaithfulToScheme",
+   "labelKeyMatchesTheImage",
+   "notesClaimsAreTrue"
+  ],
+  "problem": "Row r-3 promotes a fifth solidus alternative into a third row of a two-slot \"3+1\" split and then declares it unclaimable (the sibling q11a-ii models the correct two-row shape), its accepts silently drop two scheme alternatives (\"Poor drainage\", \"poor aeration\") that r-1 and r-2 both carry, and the notes' claim that \"the stem no longer previews the iron pan, the leached surface or the shallow depth to parent rock\" is flatly contradicted by the stem, which quotes \"Pale grey, heavily leached\", \"Darker brown, leached minerals\" and the 2 m depth to parent rock."
  },
  {
   "id": "agsci-2021-ol-q10d",
   "questionRef": "2021 OL Q10(d)",
-  "problem": "The contextNote invents a restriction the scheme does not make — 'must reach cervix' is rewritten as 'an X placed beyond it (in the uterine horns) does not score', which would fail the anatomically correct AI placement just past the cervix."
- },
- {
-  "id": "agsci-2021-ol-q11a-iii",
-  "questionRef": "2021 OL Q11(a)(iii)",
-  "problem": "The scheme alternative 'labour saving' is dropped from accepts on the same fabricated typesetting excuse, leaving the accepts list short of the scheme (only partly mitigated by openList)."
- },
- {
-  "id": "agsci-2021-ol-q11a-iv",
-  "questionRef": "2021 OL Q11(a)(iv)",
-  "problem": "The scheme alternative 'automatic feeding system' is dropped from accepts on the same fabricated typesetting excuse, leaving the accepts list short of the scheme (only partly mitigated by openList)."
+  "failed": [
+   "notesClaimsAreTrue"
+  ],
+  "problem": "The old invented clause is genuinely gone, but its replacement rests on something the crop does not show: p13-i0 draws no distinguishable cervix — its only ringed features are two long parallel ridged tubes where the horns meet the tract, and everything from there to the vulva is one smooth undifferentiated tube — so the notes' \"including the ringed cervical section the answer depends on\" and the contextNote's \"the short, thick-walled, ringed section drawn between the vagina and the body of the uterus\" send a self-marking student to a landmark that isn't on the drawing (the repo's own figure record for p13-i0 names no cervix, calling that region only \"the narrow constricted region where the tubular body of the tract meets the coiled and horned structures\")."
  },
  {
   "id": "agsci-2021-ol-q11b-iv",
   "questionRef": "2021 OL Q11(b)(iv)",
-  "problem": "The plan does print letters the empty labelKey leaves undecoded — a red 'B' beside the crush plus 'A Run', 'B Return' and 'C Run' route labels, contradicting the note's claim that it carries none (and B means 'silage pit' on the neighbouring Q11(a) cards) — and the reason row also truncates the scheme point, dropping 'or cows are there longer'."
+  "failed": [
+   "labelKeyMatchesTheImage",
+   "notesClaimsAreTrue"
+  ],
+  "problem": "The replacement label key misdescribes what it claims to have re-rendered: the green route text sits at the lower LEFT (about x=272 on a plan running x≈140–850, only ~70 px right of the red B), not \"at the lower right\"; it is a single string reading \"C Return\", not \"a small green 'C' and 'C return'\"; there is no \"third dotted track\" beside it (only two beaded routes are drawn, both to its left); and the red B is likewise at the lower left, not \"below the middle of the plan\" — the repo's own p15-i0 figure record puts all three annotations \"at the lower left\", and the notes repeat the same wrong description verbatim."
  },
  {
   "id": "agsci-2021-ol-q18b-iii",
   "questionRef": "2021 OL Q18(b)(iii)",
-  "problem": "The two displayed rows are a mismatched trait/reason pair — the scheme pairs 'good conformation (double muscle gene)' with 'high % lean meat or high price' and 'polled (no horns)' with 'less dangerous', but the card shows the conformation trait (r-1) against the polled reason (r-2), a combination its own contextNote says scores nothing, and it banishes both correctly-paired reasons to prose."
+  "failed": [
+   "notesClaimsAreTrue"
+  ],
+  "problem": "Row r-1's contextNote asserts the trait \"has to be a trait you can SEE in one of the two photographs\", which contradicts the scheme alternative the same row lists in its own accepts — \"AA ‐ smaller calves\", a trait no photograph shows (both frames are adult bulls, no calf) — so a student who writes the scheme's third credited trait is told by the card that it does not qualify; the stem also has the page back to front, placing the two photographs \"above the line: 'The following are pictures of two beef cattle breeds…'\" when that sentence is printed above them on the crop."
  },
  {
   "id": "agsci-2022-hl-q13aiv",
   "questionRef": "2022 HL Q13(a)(iv)",
-  "problem": "All three labelKey entries are flagged askedInThisQuestion true, so LabelKeyPanel filters them out and nothing on the card ever decodes A, B or C - yet the bound crop prints 'Identify any two of the following plants A, B or C', the card's rows only give the stage and description, and its own accept reads 'wind pollination occurs in A or insect pollination occurs in B', leaving the student with letters they cannot resolve (the corpus convention, e.g. chem-2025-ol-q1-c-fig and agsci-2021-hl-q1b, is to flag such letters false with their identities so the 'Also on the diagram' panel names them)."
+  "failed": [
+   "labelKeyMatchesTheImage"
+  ],
+  "problem": "labelKey B (and row 2's contextNote, which hangs the 'insect pollination occurs in B' reasoning on it) says 'a bee on one of them', but at native PDF resolution the insect on the chicory petal is a slim black-and-pale-yellow banded hoverfly with a single pair of clear wings, not a bee — and the repo's own verified description of that photograph records no insect at all; labelKey A's 'densely packed' likewise misdescribes a spike whose spikelets are set alternately in two ranks with clear stem visible between them."
  },
  {
   "id": "agsci-2022-hl-q14cii",
   "questionRef": "2022 HL Q14(c)(ii)",
-  "problem": "The split of 'Correct indication of arrows coming in at side / going out through roof' into two rows is correct here because the front matter defines '4 + 1' as two separately-marked answers (first correct answer 4, each subsequent 1) and rule 3 makes the solidus a separator between marked answers, not alternative wordings - and no mark is invented since both rows carry marks null under orderedSplit and total 5; the real defect is row 1's contextNote, 'Arrows should point inwards at each side, not just one', which tightens the scheme's singular 'arrows coming in at side' into a requirement it does not make and would push a self-marking student to deduct a mark the examiner would award."
+  "failed": [
+   "stemGivesNothingAway"
+  ],
+  "problem": "The pre-reveal stem still hands the student both marking points: it announces 'a gap between their upper ends' at the ridge and 'a gap between the top of each wall and the eaves above it' at the sides, which are exactly 'going out through roof' and 'arrows coming in at side' — the repo's own figure record calls those two gaps 'the inlet/outlet features the answer depends on' — so swapping the word 'outlet' for the identical geometry reworded the leak instead of removing it."
  },
  {
   "id": "agsci-2022-ol-q1a",
   "questionRef": "2022 OL Q1(a)",
-  "problem": "labelKey A calls the implement a \"twin-disc hopper unit\" although no discs are visible in the crop — the figure inspector's own alt text records \"no discs are clearly resolvable at this resolution\" — and the stem's claim that the arrow points at the implement \"not at the tractor carrying it\" is untrue of photograph B, which contains no tractor."
- },
- {
-  "id": "agsci-2022-ol-q2bii",
-  "questionRef": "2022 OL Q2(b)(ii)",
-  "problem": "The card carries 8 rows against the hard cap MAX_ROWS = 5 (types/markBank.ts:270, asserted at test/markBankDeck.test.ts:146) because it route-split E and F — exactly the move this corpus elsewhere refuses (\"route-splitting would need six rows and MAX_ROWS is five\") — and the compression it then applies is wrong-headed, folding separately creditable scheme points (\"good growth rate\", \"calm or easy to handle\") into the accepts of \"hardy or good survival rate\", so a student whose two reasons were \"hardy\" and \"good growth rate\" can tick only one row."
- },
- {
-  "id": "agsci-2022-ol-q13bi",
-  "questionRef": "2022 OL Q13(b)(i)",
-  "problem": "This is a sketch-onto-the-photograph drawing answer, which types/markBank.ts states is out of v1 (\"Drawing and graph-shape cards are out of v1\") and which the already-shipped sibling card agsci-2022-ol-q13bii records as a deliberate non-carding decision (\"part (b)(i), which asks the candidate to sketch the sampling pattern ONTO that photograph, is not\"), and the card reverses that decision silently; its labelKey also asserts \"its only gate\", which the crop does not establish."
+  "failed": [
+   "originalObjectionFixed",
+   "labelKeyMatchesTheImage",
+   "notesClaimsAreTrue"
+  ],
+  "problem": "The rewrite swapped one image-contradicting claim for others: machine A's under-hopper assembly is fully inside the photograph (grass and horizon are visible beneath it, it is merely in deep shadow) so \"sits below the bottom edge of the photograph\" / \"below the frame edge\" is false; machine B's applicator hoses are green with black rubber outlet ends, not \"black flexible hoses\" running to \"metal outlets\"; and the new stem/notes assertion that the right-hand photograph \"has no tractor in it at all\" and that the machine \"stands alone in a yard\" is contradicted by the green John Deere front end and yellow-rimmed wheel occupying its bottom-right corner."
  },
  {
   "id": "agsci-2022-ol-q17bi",
   "questionRef": "2022 OL Q17(b)(i)",
-  "problem": "The notes' provenance claim that \"no crop of it exists among this card's candidates\" is false as written — exam-papers/agricultural-science/figures/2022-ol/agricultural-science-2022-OL-paper-p33-i2.png is an extracted crop of exactly this BEAM table; it is merely unpublished because it truncates below the \"Bull (1 - 2 year)\" row, so the correct statement is that no BINDABLE crop exists, and a later pass reading this note could wrongly conclude the page was never extracted."
+  "failed": [
+   "stemGivesNothingAway"
+  ],
+  "problem": "The stem presents \"Show your calculation in the box below.\" as something \"the paper adds\" to this part, but the paper prints that sentence only under (b)(iii) — (b)(i) carries nothing but an unlabelled \"Calculation:\" box (confirmed on p33-i0 and p33-i1) — so the card manufactures an on-paper cue that the working itself is demanded, which is precisely the shape of r-1's separate 4 marks for \"40 X 57\"."
  },
  {
   "id": "agsci-2022-ol-q17biii",
   "questionRef": "2022 OL Q17(b)(iii)",
-  "problem": "The r-2 accepts entry is the scheme's examiner instruction sentence verbatim — \"This can be then rounded to 6643 (kg) or left as it is.\" — rather than the alternative answer \"6643 (kg)\", so the card offers a student a claimable \"alternative wording\" that no candidate would ever have written on a script, which is the content-free-row failure mode leaking into the accepts field."
+  "failed": [
+   "stemGivesNothingAway"
+  ],
+  "problem": "The stem hands the student \"6448 kg\" outright, which is sibling card agsci-2022-ol-q17bii's r-2 marking point verbatim and a number the paper never prints on (b)(iii) — the candidate is supposed to carry their own (b)(ii) answer forward — so the card gives away the sibling's whole answer."
  },
  {
   "id": "agsci-2023-hl-q8c",
   "questionRef": "2023 HL Q8(c)",
-  "problem": "The notes' reason for demoting the scheme's first-listed wording to an accept is fabricated — on scheme p.17 the '3' sits in its own right-hand marks column, so 'There is a large amount of nitrate present in the water from the unprotected urea (250mg/l) compared to protected urea (50mg/l)' IS a contiguous string and there was no typesetting reason to swap the two alternatives."
+  "failed": [
+   "stemGivesNothingAway"
+  ],
+  "problem": "The stem's opening sentence tells the student before reveal that the investigation was to see whether nitrate leached from protected urea 'is less than unprotected urea', which is the substance of the card's single 3-mark point ('farmers should use protected urea as less nitrate is leached when compared to unprotected urea'), so the conclusion can be written without ever reading the bars."
  },
  {
   "id": "agsci-2023-hl-q15cii",
   "questionRef": "2023 HL Q15(c)(ii)",
-  "problem": "Row r-2 stops short of the scheme's 3-mark point, dropping the trailing 'which is better for the environment and more sustainable', on the false premise that the marks cell is typeset inside the sentence — scheme p.23 prints that point as one unbroken paragraph with the '3' in a separate marks column."
+  "failed": [],
+  "problem": "Row r-2's context note calls the closing clause 'not a fourth mark' on a question that has only two awards (the 5 and the 3 the same card correctly describes), so the ordinal is nonsense and implies a third and fourth mark exist."
  },
  {
   "id": "agsci-2023-hl-q16aii",
   "questionRef": "2023 HL Q16(a)(ii)",
-  "problem": "The notes repeat the same invented typesetting claim — that the '5+1' cell 'is typeset inside that clause in the published scheme, breaking it in two' — when scheme p.24 shows '5+1' in its own marks column and the reason as one unbroken solidus line (the accepts placement happens to be right anyway, since the solidus makes them alternatives)."
- },
- {
-  "id": "agsci-2023-hl-q18ai",
-  "questionRef": "2023 HL Q18(a)(i)",
-  "problem": "Row r-2 ships the answer as 'Median suspensory' — not a structure, and not the scheme's row — dropping 'ligament', and the stated excuse is false: scheme p.27 puts the letter B and the answer 'Median suspensory ligament' in separate table columns, so nothing is printed between the two words."
+  "failed": [
+   "notesClaimsAreTrue"
+  ],
+  "problem": "The notes assert 'the scheme does not say which of the state and the reason takes the 5', but the scheme's own How-to-use page (p.4) states that in a '5+1' tariff the first correct answer encountered takes the 5 and each subsequent one takes 1, and p.24 prints 'Below' above the reason — so the split is determined (State 5, Reason 1), which is exactly what the card's own row notes then assume."
  },
  {
   "id": "agsci-2023-ol-q1b",
   "questionRef": "2023 OL Q1(b)",
-  "problem": "All three letters carry askedInThisQuestion:false, so SessionScreen's \"Also on the diagram\" panel (SessionScreen.tsx:501 filters to exactly those) prints \"pH paper or (universal) indicator paper\", \"Graduated cylinder\" and \"Electronic or mass balance\" — the entire 6-mark answer to the Q1(a) card sitting beside it."
- },
- {
-  "id": "agsci-2023-ol-q6a-ii",
-  "questionRef": "2023 OL Q6(a)(ii)",
-  "problem": "The stem decodes \"BCS ... is body condition score\", which is the first marking point of the already-shipped agsci-2023-ol-q6a-i (6 marks), and the label panel's D entry prints \"<67\" plus \"Suckler cows requiring no BCS gain\" — the whole answer to Q6(a)(iii)."
+  "failed": [
+   "labelKeyMatchesTheImage"
+  ],
+  "problem": "The reveal panel still reconstructs Q1(a): C is decoded as \"a low flat white unit ... a lump of soil resting on its top surface and a lit digital display along its front\" and r-1's contextNote adds that the drawing's other number is \"in grams\", which together identify the electronic/mass balance in everything but the word, so the sibling's 3-mark point is paraphrased rather than removed (the display detail is not needed to locate the arrow)."
  },
  {
   "id": "agsci-2023-ol-q6a-iii",
   "questionRef": "2023 OL Q6(a)(iii)",
-  "problem": "Its \"Also on the diagram\" panel decodes A as \"76+ and 74-76, captioned 'Freshly calved dairy cows in winter milk'\", which is both marking points of the sibling Q6(a)(ii) card verbatim."
+  "failed": [
+   "notesClaimsAreTrue"
+  ],
+  "problem": "Two stem statements are false against paper p.8: \"the paper leaves a single answer line\" (part (iii) is given a two-line answer box), and \"The captions are what this part is answered from\" misstates the credit, which the scheme awards for the DMD figure or the letter (\"<67(%) or D\"), not for a caption."
  },
  {
   "id": "agsci-2023-ol-q9a-i",
   "questionRef": "2023 OL Q9(a)(i)",
-  "problem": "The stem says A \"dominates the stomach in the first week and is small relative to the rumen at maturity\" — that is both marking points of the already-shipped agsci-2023-ol-q9a-ii (\"the rumen develops (gets bigger) / abomasum or A gets smaller\"), and the stem renders above the question before the student answers."
+  "failed": [
+   "notesClaimsAreTrue"
+  ],
+  "problem": "The stem's \"with the oesophagus entering from the left\" is false on the crop — in all three panels the left-hand tube is continuous with the long lower sac the blue A arrow points into, i.e. that chamber's own outlet, while the tube that enters is the one at the top right — and the claim was taken on trust from the figure manifest, whose alt text (rendered as the img alt, pre-reveal) also still states both of Q9(a)(ii)'s marking points (\"the rumen enlarges dramatically ... while the chamber marked A becomes proportionally smaller\")."
  },
  {
   "id": "agsci-2023-ol-q13a-ii",
   "questionRef": "2023 OL Q13(a)(ii)",
-  "problem": "The pre-reveal stem announces the answer shape — \"Two of the three are clovers and one is a grass ... naming the colour is what separates A from C\" — giving away most of the 12 marks, and r-2's contextNote calls photo B \"awnless\" when the crop plainly shows long bristly awned florets (the figure manifest's own alt text records \"fine bristly awns\")."
+  "failed": [
+   "labelKeyMatchesTheImage"
+  ],
+  "problem": "Label key A still reads \"two or three rounded flowerheads\" when photograph A plainly shows four — the count is the figure manifest's wording, not something read off the crop the notes claim was opened and re-opened — and giving both A and C \"leaves of three leaflets\" puts the trifoliate = clover cue (the very \"two of the three are clovers\" giveaway stripped from the stem) back into the label key."
  },
  {
   "id": "agsci-2023-ol-q13b-ii",
   "questionRef": "2023 OL Q13(b)(ii)",
-  "problem": "The stem states \"a spread of 0.13 across all four\", which is this card's own 2-mark answer (\"There is very little difference in the grass growth\"), and stems render above the question before reveal."
+  "failed": [
+   "notesClaimsAreTrue"
+  ],
+  "problem": "r-1's contextNote turns the scheme's bracketed \"(using data from graph)\" into a requirement — \"The last wording is the one that requires the numbers to be quoted — a ranking with no data from the graph behind it is not what the scheme describes\" — but the scheme's own front matter (2023-ol.md p.3, lines 74-76) states that a word or term in brackets \"is not a requirement of the answer\", so the note tells a student to deny themselves a mark the examiner would award."
  },
  {
   "id": "agsci-2023-ol-q15b",
   "questionRef": "2023 OL Q15(b)",
-  "problem": "The label key is inverted against the crop — sampling the drawing shows A's arrow points into the LIGHTER band (median luminance 89) and B's into the darker one (64), yet the key calls A \"the darker, crumbier horizon\" and B \"lighter in colour and stonier\"."
+  "failed": [
+   "notesClaimsAreTrue"
+  ],
+  "problem": "The notes' claim that \"the only stony layer visible is the pale broken rock at the base of the block\" is false — the Parent Material band above the rock is drawn with by far the largest dark fragments on the cut face (largest connected dark components ~475/273/259 px versus ~72 px in A's band and ~68 px in B's, and the manifest alt calls them \"larger dark stone fragments\") — and r-2's contextNote compounds it by seating B's horizon \"on the weathering rock at the base of the block\", skipping the Parent Material band the diagram draws between them."
  },
  {
   "id": "agsci-2024-hl-q9bi",
   "questionRef": "2024 HL Q9(b)(i)",
-  "problem": "No check fails — p14-i0 is genuinely the Q9(b)(i) figure (green word bank, A fine dark crumb, B sub-angular lumps, C large clods on white) matching the scheme's A: Good / B: Moderate / C: Poor at 3(2)=6 — but the labelKey is lifted near-verbatim from figures.json despite the note claiming an independent read, its description of C as 'a few very large... clods of pale grey-brown soil' understates a photograph holding a dozen-plus mid-brown clods, and none of it ever renders because every entry is askedInThisQuestion:true so LabelKeyPanel returns null."
+  "failed": [
+   "notesClaimsAreTrue"
+  ],
+  "problem": "The BUILDER note's claim that keeping `notation` on a `fixed` tariff makes the generated module \"fail typecheck with TS2353\" is false — build-deck.mjs emits the card as an object literal ending `} as SecCard`, and a type assertion suppresses excess-property checking (I compiled this card's exact tariffModel under `tsc --strict`: 0 errors), which is why 397 authored Agricultural Science cards already carry `{kind:'fixed', notation:…}` and 208 of them sit in the shipped higher.ts against a clean typecheck."
  },
  {
   "id": "agsci-2024-hl-q10a",
   "questionRef": "2024 HL Q10(a)",
-  "problem": "No check fails — p15-i0 is the Question 10 figure, A is the uniform shallow-rooted monoculture and B the diverse taprooted sward, and the scheme prints 'B 4' — but the already-shipped sibling card agsci-2024-hl-q10b carries the stem 'The paper shows two swards with a varying level of diversity, A and B; B is the multi-species (polyculture) sward', printing this card's entire 4-mark answer inside the same topic (agsci-3-2) of the same deck, so the sibling stem must be amended before this card ships."
+  "failed": [
+   "labelKeyMatchesTheImage",
+   "notesClaimsAreTrue"
+  ],
+  "problem": "Entry B's meaning is a near-verbatim lift of the figures.json alt text — the exact defect the skeptic raised on the sibling card — and it inherits that alt's unverified claim of \"several thick pale taproots that run down through the topsoil and the darker band into the tan subsoil\", when the crop shows three taproots of which two terminate inside the darker band and the deepest only reaches the top of the tan layer and spreads sideways along the interface, so none actually enters the subsoil and the note's \"Figure opened and looked at again during this repair\" does not hold."
  },
  {
   "id": "agsci-2024-hl-q18aiii",
   "questionRef": "2024 HL Q18(a)(iii)",
-  "problem": "The bound crop shows only offspring C — the parent photographs A and B whose features the question asks the student to trace are not in it (figures.json records lettersVisible as [\"C\"] alone and the inspector wrote 'any card that also needs parents A and B must pull those from p37-i0'), yet the card's labelKey makes build-deck.mjs:347 overwrite that field with [\"A\",\"B\",\"C\"] and, because A and B are flagged askedInThisQuestion:false, LabelKeyPanel prints them under the heading 'Also on the diagram' when they are not on it; the notes' claim that 'no crop exists for them' is also false (p37-i0 exists, merely excluded as truncated), and the scheme's sixth creditable feature 'white legs and belly' is hidden as an accepts-alternative of 'white face' rather than being its own claimable row."
- },
- {
-  "id": "agsci-2024-ol-q13aii",
-  "questionRef": "2024 OL Q13(a)(ii)",
-  "problem": "Rows B and C carry accepts strings — \"Broad leaf dock\" and \"White clover\" — that the 2024 OL scheme never prints (it prints only \"Dock leaf\" and \"Clover\"); they are lifted from the paper's word bank, so the card shows a student two alternatives as scheme content that are not in the scheme."
+  "failed": [
+   "everyRowInTheScheme",
+   "notesClaimsAreTrue"
+  ],
+  "problem": "Row r-4 now presents \"belly\" to the student as the marking point when the scheme credits \"white legs and belly\" — a bare belly is not creditable — and the truncation was avoidable, because \"white legs\" is itself a contiguous run in the extraction and passes the build's own normalise/includes check, so the promoted row misstates the scheme's sixth feature while its contextNote pushes repo paths and build internals into the reveal pane."
  },
  {
   "id": "agsci-2025-ol-q5a",
   "questionRef": "2025 OL Q5(a)",
-  "problem": "labelKey A states \"its seedling is the smallest of the three\", but in the bound crop A's and C's seedlings are the same reused drawing (A 848 green px / 66px tall vs C 824 px / 67px tall; only B differs at 1541 px / 121px), so the card asserts a size difference a student can see is not there — and row r-2's verbatim is cut at \"mineral and organic matter\" purely because the \"3+2\" token lands mid-line in the text extraction, pushing the rest of that one \"or\"-joined wording into accepts."
+  "failed": [
+   "notesClaimsAreTrue"
+  ],
+  "problem": "The tariff justification misreads the p.4 rule it quotes — p.4 gives the larger mark to the first CORRECT answer encountered, not to the first line of the answer box, so \"the paper's answer box fixes that order ... so the split resolves to Picture 3 / Reason 2\" does not follow, and the invented fixed split under-pays by a mark the candidate who names the wrong picture but gives a scheme-listed reason (scheme: 3, card: 2)."
  },
  {
   "id": "agsci-2025-ol-q5b",
   "questionRef": "2025 OL Q5(b)",
-  "problem": "labelKey A repeats the same false claim as the q5(a) card — \"its seedling the smallest\" — when A and C are drawn identically in the crop, and the card binds the exact same p07-i0 crop as q5(a), so the student sees part (a)'s prompt printed under the figure while answering (b)."
- },
- {
-  "id": "agsci-2025-ol-q8b",
-  "questionRef": "2025 OL Q8(b)",
-  "problem": "A two-tick answer the scheme tariffs 3+2 is collapsed into ONE all-or-nothing row, which suggestGrade() can then only score got/missed (a student who ticked one correct sign can never land on \"shaky\"), and it contradicts sibling card agsci-2025-ol-q8a in the same question, where the identical \"3+2\" is modelled as fixed with rows worth 3 and 2."
+  "failed": [
+   "originalObjectionFixed",
+   "labelKeyMatchesTheImage"
+  ],
+  "problem": "The sibling leak was relocated rather than removed — on a panel this card itself flags askedInThisQuestion:false, label key B still volunteers \"the tallest of the three seedlings\", which is verbatim q5a's scheme-accepted reason \"seedling is largest in picture B\" — and the stem's \"the crop is the whole Question 5 block\" is false, since p07-i0 stops after part (a)'s answer box and shows neither part (b) (this card's own question) nor part (c), both printed on the same page 7."
  },
  {
   "id": "agsci-2025-ol-q9ai",
   "questionRef": "2025 OL Q9(a)(i)",
-  "problem": "The scheme's \"3+2\" is modelled here as orderedSplit with both rows null, while the already-authored sibling agsci-2025-ol-q9aii models the same \"3+2\" in the same question as fixed with 3 and 2 — so the two halves of Q9(a) will grade by different rules and only one of them will show mark values."
+  "failed": [
+   "notesClaimsAreTrue"
+  ],
+  "problem": "The tariff note contradicts itself and the scheme: it says the change makes this card \"grade by the same rules and show the same mark values as its sibling agsci-2025-ol-q9aii\" and then calls q9aii \"the genuinely order-dependent case\" (q9aii is modelled fixed 3/2 in the deck, not as an ordered split), and like q5a it converts p.4's \"first correct answer encountered\" into \"first line of the answer box\", which p.4 does not say."
  },
  {
   "id": "agsci-2025-ol-q10a",
   "questionRef": "2025 OL Q10(a)",
-  "problem": "The labelKey hands over a sibling card's answer (\"Part (b) … the scheme's answer there is X\", which is exactly agsci-2025-ol-q10b's single row), and the notes' claim that \"parts (b) and (c) are already carded without a figure\" is false — both already bind this same p12-i0 crop, and q10b's own note (\"part (a) … is skipped pending figures\") goes stale the moment this card lands."
+  "failed": [
+   "labelKeyMatchesTheImage"
+  ],
+  "problem": "The rewritten label key names things that are not on the crop: X is said to be printed \"one at each later stage\", but the charging-plates stage draws a single cell carrying a blue Y and no X at all, and Y's \"inside the heads of the other cells\" silently absorbs the two cells whose heads carry a green \"?\" and are neither X nor Y."
  },
  {
   "id": "agsci-2025-ol-q13a-i",
   "questionRef": "2025 OL Q13(a)(i)",
-  "problem": "The scheme's \"avoids headlands or gateways / or entrances and exits or around drinking trough\" is broken at the line-wrap artefact into two accepts, leaving accepts[3] as the bare fragment \"entrances and exits or around drinking trough\" — stripped of \"avoids\", it reads to a student as a reason TO sample gateways and troughs, the opposite of the agronomy (labelKey C also calls the pattern \"W-shaped\" when the crop plainly draws an M — two peaks, one trough)."
+  "failed": [
+   "labelKeyMatchesTheImage"
+  ],
+  "problem": "The M/W correction is right on the pixels but it dragged in a new giveaway: label key C's closing clause \"not the W the same pattern is usually drawn as\" is an editorial aside rather than a description of the crop, and by naming C as the W sampling pattern — the method the syllabus teaches — it hands the student row 1's answer \"Method: C\" before they answer."
  }
 ]
