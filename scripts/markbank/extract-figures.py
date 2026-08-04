@@ -37,8 +37,20 @@ MIN_W, MIN_H, MIN_BYTES = 90, 70, 3000
 PAD = 0.14
 # Absolute floors in points, so a shallow figure still gets a real margin.
 # Larger below than above: letters under a photo row and table bodies live there.
+#
+# OPT-IN, via --label-floors. These exist for a layout Agricultural Science uses
+# and the other subjects do not: identification letters printed BELOW a row of
+# photographs ("identify the breeds A to F"), which a proportional pad slices
+# off. Biology, Chemistry and Physics label inline or beside, so their crops are
+# already tight — applying these floors to them grew 258 working figures by up
+# to 487px and swallowed whole neighbouring questions and their diagrams.
 MIN_PAD_X, MIN_PAD_TOP, MIN_PAD_BOTTOM = 22, 55, 125
+# Without the floors, the original proportional pad, plus a small absolute
+# minimum so a hairline-thin figure still gets a margin.
+BASE_PAD_X, BASE_PAD_TOP, BASE_PAD_BOTTOM = 10, 10, 12
 ZOOM = 2.0
+# Set from --label-floors. See the note on the floors above.
+LABEL_FLOORS = False
 
 # A table or chart drawn as vector paths is not an image object, so
 # page.get_images() cannot see it and this script used to emit nothing for it.
@@ -208,7 +220,14 @@ def cluster(rects, gap=64.0):
 
 
 def content_box(page):
-    """The page's text column, from where its content actually sits."""
+    """The page's text column, from where its content actually sits.
+
+    Vector paths count. A table's closing rule is drawn, not typed and not an
+    image, so measuring the column from text and images alone stopped a fraction
+    of a point short of it and shaved the border off the right-hand side of
+    every ruled table — a verifier measured the miss at 4.1pt on one crop and
+    1.4pt on another. The table read as having no right-hand wall.
+    """
     xs = []
     for block in page.get_text("blocks"):
         if str(block[4]).strip():
@@ -216,6 +235,13 @@ def content_box(page):
     for info in page.get_images(full=True):
         for r in page.get_image_rects(info[0]):
             xs.append((r.x0, r.x1))
+    for d in page.get_drawings():
+        r = fitz.Rect(d["rect"])
+        # Page furniture — margin rules and full-bleed lines — would widen the
+        # column to the paper's edge and undo the point of measuring it.
+        if r.is_empty or r.width > page.rect.width * 0.92:
+            continue
+        xs.append((r.x0, r.x1))
     if not xs:
         return page.rect
     return fitz.Rect(min(a for a, _ in xs), page.rect.y0, max(b for _, b in xs), page.rect.y1)
@@ -309,9 +335,14 @@ def extract(pdf: Path, outdir: Path) -> list:
             # cost is some question prose inside the crop, which is harmless — the
             # card prints the question anyway.
             if kind == 'raster':
-                pad_x = max(rect.width * PAD, MIN_PAD_X)
-                pad_top = max(rect.height * PAD, MIN_PAD_TOP)
-                pad_bottom = max(rect.height * PAD, MIN_PAD_BOTTOM)
+                if LABEL_FLOORS:
+                    pad_x = max(rect.width * PAD, MIN_PAD_X)
+                    pad_top = max(rect.height * PAD, MIN_PAD_TOP)
+                    pad_bottom = max(rect.height * PAD, MIN_PAD_BOTTOM)
+                else:
+                    pad_x = max(rect.width * PAD, BASE_PAD_X)
+                    pad_top = max(rect.height * PAD, BASE_PAD_TOP)
+                    pad_bottom = max(rect.height * PAD, BASE_PAD_BOTTOM)
             else:
                 pad_x, pad_top, pad_bottom = TABLE_PAD_X, TABLE_PAD_TOP, TABLE_PAD_BOTTOM
             area = fitz.Rect(
@@ -376,7 +407,12 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("pdf", type=Path)
     ap.add_argument("-o", "--out", type=Path, required=True)
+    ap.add_argument("--label-floors", action="store_true",
+                    help="Pad generously below a figure for labels printed under it. "
+                         "Agricultural Science needs this; the other subjects do not.")
     args = ap.parse_args()
+    global LABEL_FLOORS
+    LABEL_FLOORS = args.label_floors
 
     index = extract(args.pdf, args.out)
     dupes = sum(len(e["locations"]) - 1 for e in index)

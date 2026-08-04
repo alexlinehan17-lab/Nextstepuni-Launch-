@@ -6845,7 +6845,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-OL-paper1-p05-i0",
           "src": "/exam-figures/biology/markbank/biology-2021-OL-paper1-p05-i0.png",
-          "srcHash": "bb85f0464fbd3f545ec37469a42c192f",
+          "srcHash": "94d3937798cdea306d6026ed9da81fec",
           "alt": "A schematic cross-section of a coronavirus: a grey ring (the envelope) studded with about a dozen identical club/trefoil-shaped spike proteins pointing outwards, and a single coiled bead-chain helix drawn loose in the centre. A black arrow from the top right labelled A ends on one of the outer spikes; a second black arrow labelled B ends on the central coiled bead-chain. The question stem \"5. The diagram shows the structure of a virus such as COVID-19.\" sits above the drawing. The drawing and both letters are complete; only the following text line, \"(a) Why are viruses not considered to be living organisms?\", is sliced through horizontally at the very bottom edge of the crop.",
           "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level — © State Examinations Commission",
           "lettersVisible": [
@@ -7659,7 +7659,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2023-OL-paper2-p02-i0",
           "src": "/exam-figures/biology/markbank/biology-2023-OL-paper2-p02-i0.png",
-          "srcHash": "260084f34c3d1b2d34704116d3b08631",
+          "srcHash": "e0708949f226e97076a090e336ac2a9a",
           "alt": "Two three-tier ecological pyramids side by side, drawn as stacked open rectangles that widen towards the base, with no axes, numbers or scale. The left pyramid, marked A to its upper left, reads 'Hawk' (top), 'Mouse' (middle), 'Grass' (base). The right pyramid, marked B to its upper left, reads 'Seagull' (top), 'Sea slug' (middle), 'Bladderwrack' (base). Both pyramids are complete, including their base borders.",
           "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level — © State Examinations Commission",
           "lettersVisible": [
@@ -7686,7 +7686,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2023-OL-paper2-p02-i0",
           "src": "/exam-figures/biology/markbank/biology-2023-OL-paper2-p02-i0.png",
-          "srcHash": "260084f34c3d1b2d34704116d3b08631",
+          "srcHash": "e0708949f226e97076a090e336ac2a9a",
           "alt": "Two three-tier ecological pyramids side by side, drawn as stacked open rectangles that widen towards the base, with no axes, numbers or scale. The left pyramid, marked A to its upper left, reads 'Hawk' (top), 'Mouse' (middle), 'Grass' (base). The right pyramid, marked B to its upper left, reads 'Seagull' (top), 'Sea slug' (middle), 'Bladderwrack' (base). Both pyramids are complete, including their base borders.",
           "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level — © State Examinations Commission",
           "lettersVisible": [
@@ -7941,7 +7941,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2024-OL-paper1-p06-i0",
           "src": "/exam-figures/biology/markbank/biology-2024-OL-paper1-p06-i0.png",
-          "srcHash": "3135f4bbf6721bc827afe20113b712f0",
+          "srcHash": "7d34c27efd359977db474f6ec9c9fa4e",
           "alt": "A very thick black circle enclosing a grey, ladder-runged double helix drawn on a diagonal. A leader line from the letter A (upper right, outside) touches the thick circular outline itself; a separate arrow from the letter B (lower right) points inward to the middle of the helix. Nothing else in the frame. Both labels and the whole diagram are complete — no ink touches any edge.",
           "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": [
@@ -7967,7 +7967,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2024-OL-paper2-p03-i1",
           "src": "/exam-figures/biology/markbank/biology-2024-OL-paper2-p03-i1.png",
-          "srcHash": "ca48acea0d141727eac20cc4940947b9",
+          "srcHash": "0794453a9e2fb2826d89bb005852a18f",
           "alt": "A grey kidney/bean-shaped organelle with a double outer membrane and about eight finger-like folds projecting inwards from the wall — a mitochondrion in section. On the left are Q12(b) parts (iv) and (v); the line above them (\"(iii) Where in a cell does stage 1 occur?\") is sliced at the top edge, but the organelle itself is complete and well inside the frame.",
           "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
@@ -7989,7 +7989,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2024-OL-paper2-p03-i0",
           "src": "/exam-figures/biology/markbank/biology-2024-OL-paper2-p03-i0.png",
-          "srcHash": "76c134d83185df48546daf8076e068fe",
+          "srcHash": "18cc3b8e2019edc306b8fa902dfe13fd",
           "alt": "A grey ellipse with a double outline (the envelope), containing roughly six dark stacks of flattened discs joined by paler sheets running between them — a chloroplast drawn in section. The crop also carries the Q12(c) stem and parts (i) and (ii). Edge scan is clean: nothing is cut on any side.",
           "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
@@ -8630,7 +8630,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2025-OL-paper1-p11-i0",
           "src": "/exam-figures/biology/markbank/biology-2025-OL-paper1-p11-i0.png",
-          "srcHash": "e10ef94027719dfb8b358a74cbff57d4",
+          "srcHash": "6de1926ed99b3cbacfec4c5bf04d9873",
           "alt": "Four petri dishes drawn in perspective side by side for the germination activity. Headings above them read \"Dish A: stored at room temperature\", \"Dish B: stored in the refrigerator\", \"Dish C: stored in an anaerobic jar\", \"Dish D: stored at room temperature\". Dishes A, B and C contain a grey shaded mass of cotton wool with a small black seed on it; dish D's cotton wool is drawn unshaded/white. Leader lines below point from \"One seed\" to the seed in dish A, from \"Wet cotton wool\" to the contents of dishes A, B and C, and from \"Dry cotton wool\" to the contents of dish D. Complete on all edges.",
           "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": [
@@ -8661,7 +8661,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2025-OL-paper1-p11-i0",
           "src": "/exam-figures/biology/markbank/biology-2025-OL-paper1-p11-i0.png",
-          "srcHash": "e10ef94027719dfb8b358a74cbff57d4",
+          "srcHash": "6de1926ed99b3cbacfec4c5bf04d9873",
           "alt": "Four petri dishes drawn in perspective side by side for the germination activity. Headings above them read \"Dish A: stored at room temperature\", \"Dish B: stored in the refrigerator\", \"Dish C: stored in an anaerobic jar\", \"Dish D: stored at room temperature\". Dishes A, B and C contain a grey shaded mass of cotton wool with a small black seed on it; dish D's cotton wool is drawn unshaded/white. Leader lines below point from \"One seed\" to the seed in dish A, from \"Wet cotton wool\" to the contents of dishes A, B and C, and from \"Dry cotton wool\" to the contents of dish D. Complete on all edges.",
           "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": [
@@ -8754,7 +8754,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2025-OL-paper2-p05-i0",
           "src": "/exam-figures/biology/markbank/biology-2025-OL-paper2-p05-i0.png",
-          "srcHash": "151dd209de724c0af316f97f19eb3bd3",
+          "srcHash": "8a0cb67178964348898584a54e0a80ca",
           "alt": "Three greyscale photographs in a row, each with a bold white letter in its lower-left corner. A: a large hard-shelled seed/nut floating at the waterline in front of dense vegetation, with the submerged view below the surface. B: a dandelion seed head with its plumed seeds streaming off to the left. C: a small perched bird holding a pale round berry in its beak. The photographs and all three letters are complete; the only clipped element is the last line of the question text along the very top edge (\"...following images, A, B and C.\"), whose letters are sliced.",
           "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": [
@@ -8781,7 +8781,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-OL-paper1-p07-i0",
           "src": "/exam-figures/biology/markbank/biology-2021-OL-paper1-p07-i0.png",
-          "srcHash": "cf5412cf15f6736acaee93fbefa034b2",
+          "srcHash": "62631878a4165bc2cf43144a70ed1efc",
           "alt": "A page crop combining the Q7 question text (left column) with a grey photo-realistic rendering of a complete human skeleton, front view, arms held slightly out from the body. The only mark printed on the skeleton is the word \"Skull\" at the top right with a short arrow pointing down-left to the cranium. Skull, ribcage, pelvis, both arms with full hands and both legs with full feet are all inside the frame. IMPORTANT: no letters are pre-printed on the skeleton — the visible text asks the candidate to \"Place an X\" (synovial joint) and \"Place an F\" (femur) themselves, so this figure must never be captioned as already carrying X or F. Empty ruled answer boxes for parts (a), (c) and (e) are part of the crop. The last text line, \"Name of disorder:\", and its grey answer box are sliced through at the bottom edge; the skeleton itself is not cut.",
           "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []

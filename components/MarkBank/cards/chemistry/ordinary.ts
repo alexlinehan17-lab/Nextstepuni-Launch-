@@ -2804,7 +2804,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "chemistry-2025-OL-paper-p02-i1",
           "src": "/exam-figures/chemistry/markbank/chemistry-2025-OL-paper-p02-i1.png",
-          "srcHash": "77c94503bf73ae15e705ac3f7a37179d",
+          "srcHash": "31fefa1a9eb9cf27556dadfe49bbcf68",
           "alt": "Two black-outlined GHS hazard diamonds on the right of the crop, each with a heading above it. The left one, headed \"NaOH\", shows a test tube pouring liquid onto a flat block and a second stream falling onto a hand, with both the block surface and the hand being eaten away. The right one, headed \"Ethanol\", shows a single flame burning on a horizontal line. To the left is the printed question asking students to state the chemical hazard indicated by each pictogram, with the (8) mark allocation.",
           "attribution": "SEC Leaving Certificate Chemistry 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": [
@@ -3174,7 +3174,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "chemistry-2021-OL-paper-p04-i1",
           "src": "/exam-figures/chemistry/markbank/chemistry-2021-OL-paper-p04-i1.png",
-          "srcHash": "cd9b284ad8196770d4f88a0a516886cf",
+          "srcHash": "f8239e801a057fc2ff2372ab9f045e84",
           "alt": "Printed text of question 3(d) on the left and, on the right, a hazard warning pictogram: a diamond (square standing on a corner) with a thick grey border and white interior. Inside, two tilted test tubes pour liquid downwards - the left stream falls onto a solid black rectangular block and the right stream falls onto an open human hand, with small jagged marks showing the surface and the skin being eaten away.",
           "attribution": "SEC Leaving Certificate Chemistry 2021 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []

@@ -5833,7 +5833,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "chemistry-2024-HL-paper-p07-i0",
           "src": "/exam-figures/chemistry/markbank/chemistry-2024-HL-paper-p07-i0.png",
-          "srcHash": "11e425f563ef2f951212099406840f9f",
+          "srcHash": "e36aa2bc6771cdd52ca0f3884286076e",
           "alt": "The two full structural formulae from the stem of Question 6, drawn side by side with a reaction arrow pointing from the left one to the right one. The left structure, labelled 'A' beneath it, is a straight chain of eight carbons written C-C-C-C-C-C-C-C with a vertical bond to an H above and an H below every carbon and an H bonded at each end of the chain. The right structure, labelled 'B' beneath it, is a five-carbon chain with an H at each end; the second carbon carries a CH3 above and a CH3 below, the fourth carbon carries a CH3 above and an H below, and every other position carries an H - a branched skeleton. All bonds are drawn explicitly.",
           "attribution": "SEC Leaving Certificate Chemistry 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": [
@@ -5859,7 +5859,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "chemistry-2024-HL-paper-p07-i0",
           "src": "/exam-figures/chemistry/markbank/chemistry-2024-HL-paper-p07-i0.png",
-          "srcHash": "11e425f563ef2f951212099406840f9f",
+          "srcHash": "e36aa2bc6771cdd52ca0f3884286076e",
           "alt": "The two full structural formulae from the stem of Question 6, drawn side by side with a reaction arrow pointing from the left one to the right one. The left structure, labelled 'A' beneath it, is a straight chain of eight carbons written C-C-C-C-C-C-C-C with a vertical bond to an H above and an H below every carbon and an H bonded at each end of the chain. The right structure, labelled 'B' beneath it, is a five-carbon chain with an H at each end; the second carbon carries a CH3 above and a CH3 below, the fourth carbon carries a CH3 above and an H below, and every other position carries an H - a branched skeleton. All bonds are drawn explicitly.",
           "attribution": "SEC Leaving Certificate Chemistry 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": [
@@ -5886,7 +5886,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "chemistry-2024-HL-paper-p07-i0",
           "src": "/exam-figures/chemistry/markbank/chemistry-2024-HL-paper-p07-i0.png",
-          "srcHash": "11e425f563ef2f951212099406840f9f",
+          "srcHash": "e36aa2bc6771cdd52ca0f3884286076e",
           "alt": "The two full structural formulae from the stem of Question 6, drawn side by side with a reaction arrow pointing from the left one to the right one. The left structure, labelled 'A' beneath it, is a straight chain of eight carbons written C-C-C-C-C-C-C-C with a vertical bond to an H above and an H below every carbon and an H bonded at each end of the chain. The right structure, labelled 'B' beneath it, is a five-carbon chain with an H at each end; the second carbon carries a CH3 above and a CH3 below, the fourth carbon carries a CH3 above and an H below, and every other position carries an H - a branched skeleton. All bonds are drawn explicitly.",
           "attribution": "SEC Leaving Certificate Chemistry 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": [
@@ -6195,7 +6195,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "chemistry-2022-HL-paper-p05-i1",
           "src": "/exam-figures/chemistry/markbank/chemistry-2022-HL-paper-p05-i1.png",
-          "srcHash": "eaae4566e3fc7cacc4732d712ba12063",
+          "srcHash": "89b31fd766f0f3a695cccc524e1bfd81",
           "alt": "On the right is a skeletal structural formula. A benzene ring is drawn as a hexagon with an inscribed circle for delocalisation. One ring carbon has a bond up to a 'C' which is double-bonded to an 'O' on its left and single-bonded to 'OH' on its right — a carboxylic acid group. The neighbouring ring carbon is bonded to an 'O' which joins a second 'C'; that carbon is double-bonded down to another 'O' and single-bonded right to 'CH3' — an ester group. On the left is printed text: the tail of question 4(j) ('carbon to carbon bonding: ethane, ethene, ethyne, benzene?'), then 4(k) 'The structure of aspirin is shown. Calculate the average daily dose (in mg) when a person took a total of 0.146 moles of low dose aspirin over 365 days.', then the opening line of 4(l).",
           "attribution": "SEC Leaving Certificate Chemistry 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []

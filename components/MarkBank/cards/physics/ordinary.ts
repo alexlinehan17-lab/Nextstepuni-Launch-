@@ -5546,7 +5546,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "physics-2021-OL-paper-p05-i0",
           "src": "/exam-figures/physics/markbank/physics-2021-OL-paper-p05-i0.png",
-          "srcHash": "1933214e1bd3682823ed8cd9cd67ce56",
+          "srcHash": "b0085890f2fae0bac5fa28d7dfbe14c6",
           "alt": "On the right of the crop is a grey-scale photograph of an X-ray tube lying at an angle: a sealed glass envelope with a long cylindrical metal insert running down its axis, a ribbed metal collar around the middle, a dark cap on the right-hand end, and a thin curled wire lead trailing away from the lower-left end. To the left of the photograph is the printed exam text for Q6(g) (Coulomb's law written as F = (1/4pi.epsilon)(q1q2/d^2), asking what F, q and d stand for), Q6(h) (SI unit of magnetic flux density and of capacitance) and Q6(i), which refers to \"the picture on the right\".",
           "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
@@ -5568,7 +5568,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "physics-2021-OL-paper-p08-i0",
           "src": "/exam-figures/physics/markbank/physics-2021-OL-paper-p08-i0.png",
-          "srcHash": "ead6511d8d24f28fc14b57b4b7dfbdca",
+          "srcHash": "c5d9c184f37ea9f746fedcf53b2ba702",
           "alt": "On the right is a grey-scale photograph of a laboratory rheostat: a long ceramic tube closely wound with resistance wire, mounted horizontally between two metal end-plates on a small stand with terminals, and a sliding contact riding on a bar above the winding, with a lead running off the right-hand end. To the left is the printed text explaining that the photograph shows a rheostat (a variable resistor) whose resistance changes when the sliding contact is moved, followed by Q9(iii).",
           "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
@@ -5696,7 +5696,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "physics-2021-OL-paper-p14-i1",
           "src": "/exam-figures/physics/markbank/physics-2021-OL-paper-p14-i1.png",
-          "srcHash": "332d81063124279399bd1ef5d9036db4",
+          "srcHash": "af8f66319b999e70b5604693adb032ac",
           "alt": "A stationary-wave diagram drawn as two thin curves that cross at a point on the left, bow apart into one wide symmetrical loop, cross again at a point on the right, and continue as straighter lines beyond both crossing points - the classic node / antinode / node shape. Below the loop a horizontal dashed double-headed arrow spans from the left crossing point to the right crossing point and is labelled \"40 cm\" beneath its centre. There are no axes. The line of question text above the wave is sliced by the top edge of the crop.",
           "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
           "lettersVisible": [
@@ -5721,7 +5721,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "physics-2021-OL-paper-p14-i1",
           "src": "/exam-figures/physics/markbank/physics-2021-OL-paper-p14-i1.png",
-          "srcHash": "332d81063124279399bd1ef5d9036db4",
+          "srcHash": "af8f66319b999e70b5604693adb032ac",
           "alt": "A stationary-wave diagram drawn as two thin curves that cross at a point on the left, bow apart into one wide symmetrical loop, cross again at a point on the right, and continue as straighter lines beyond both crossing points - the classic node / antinode / node shape. Below the loop a horizontal dashed double-headed arrow spans from the left crossing point to the right crossing point and is labelled \"40 cm\" beneath its centre. There are no axes. The line of question text above the wave is sliced by the top edge of the crop.",
           "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
           "lettersVisible": [
@@ -5779,7 +5779,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "physics-2023-OL-paper-p10-i0",
           "src": "/exam-figures/physics/markbank/physics-2023-OL-paper-p10-i0.png",
-          "srcHash": "022fe30d5aba8ee1377a806300245698",
+          "srcHash": "2d6b9eb8be7d0505036dc9d36dc84bb3",
           "alt": "Question 11 parts (iii) and (iv) on the left, with a pictorial (not symbolic) circuit on the right. A single filament light bulb sits at the top in a screw holder; two wires leave the holder, curve down to the left and to the right, and run to the two ends of one cylindrical battery drawn as a black cell lying horizontally at the bottom. The result is a single closed series loop of bulb and battery. The battery's left end is marked with a circled \"+\" and its right end with a circled \"−\", and the word \"battery\" is printed across the black cell. A leader arrow coming from the right, captioned \"light bulb\", points at the bulb. Both ends of the loop and both captions are fully inside the crop.",
           "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level — © State Examinations Commission",
           "lettersVisible": [
@@ -5806,7 +5806,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "physics-2023-OL-paper-p14-i1",
           "src": "/exam-figures/physics/markbank/physics-2023-OL-paper-p14-i1.png",
-          "srcHash": "5a9816dceb925447509c87cd80d7dd71",
+          "srcHash": "fbe05b427166d33f686268c5505186bf",
           "alt": "Question 14 part (c) opening text on the left, and on the right a line diagram of the electric field around an electric dipole. Two small circles sit side by side, the left one containing \"+\" and the right one containing \"−\". Curved field lines carrying arrowheads run from the left circle to the right circle: short tight loops directly between the two, and progressively wider loops arching above and below them. Further out, straighter lines with arrowheads radiate outwards away from the \"+\" circle and converge inwards onto the \"−\" circle. Every arrowhead points away from \"+\" and towards \"−\". All the field lines terminate inside the crop on all four sides.",
           "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level — © State Examinations Commission",
           "lettersVisible": [
@@ -5953,7 +5953,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "physics-2025-OL-paper-p06-i1",
           "src": "/exam-figures/physics/markbank/physics-2025-OL-paper-p06-i1.png",
-          "srcHash": "0c7e441e1674ca6032ced5ea890b30a0",
+          "srcHash": "59f3a016f1c93e17d612263931e05d73",
           "alt": "On the left, the opening of Question 6 ('Answer any eight of the following parts') with parts (a) to (d) in prose. On the right is the figure for part (a): a grey shaded 3-D clip-art drawing of an adjustable wrench (spanner) lying horizontally, seen from above/side. Its adjustable jaws are at the left end and grip a hexagonal nut; the long straight handle runs off to the right and ends in a small round hole. A short vertical arrow points straight down onto the far right end of the handle, and the text above it reads 'force applied = 50 N'. Beneath the wrench a double-headed horizontal arrow spans from the nut at the left to the end of the handle at the right, labelled 'distance = 15 cm'.",
           "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": [
@@ -5979,7 +5979,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "physics-2025-OL-paper-p10-i0",
           "src": "/exam-figures/physics/markbank/physics-2025-OL-paper-p10-i0.png",
-          "srcHash": "ff1e89e104cab1fed177dd5919f2deac",
+          "srcHash": "0f29d9f94429a05ad03a292b78e6b38d",
           "alt": "A simple line diagram of the electromagnetic-induction demonstration, sitting under one clipped line of prose ('...demonstrated by moving a magnet towards a coil as shown.'). On the left is a long thin outlined rectangle representing a bar magnet, with 'S' printed inside its left-hand end and 'N' inside its right-hand end. A short solid horizontal arrow points from the magnet's N end towards the right. To the right of that arrow is a tall rectangular circuit loop: along its top edge the wire is drawn as five open loops (the coil). The two ends of the coil continue down the left and right sides of the rectangle and along the bottom, where they meet a small circle containing an upward-pointing arrow — the meter. The magnet is outside and to the left of the coil, pointing into it.",
           "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": [
@@ -6005,7 +6005,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "physics-2025-OL-paper-p10-i0",
           "src": "/exam-figures/physics/markbank/physics-2025-OL-paper-p10-i0.png",
-          "srcHash": "ff1e89e104cab1fed177dd5919f2deac",
+          "srcHash": "0f29d9f94429a05ad03a292b78e6b38d",
           "alt": "A simple line diagram of the electromagnetic-induction demonstration, sitting under one clipped line of prose ('...demonstrated by moving a magnet towards a coil as shown.'). On the left is a long thin outlined rectangle representing a bar magnet, with 'S' printed inside its left-hand end and 'N' inside its right-hand end. A short solid horizontal arrow points from the magnet's N end towards the right. To the right of that arrow is a tall rectangular circuit loop: along its top edge the wire is drawn as five open loops (the coil). The two ends of the coil continue down the left and right sides of the rectangle and along the bottom, where they meet a small circle containing an upward-pointing arrow — the meter. The magnet is outside and to the left of the coil, pointing into it.",
           "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": [

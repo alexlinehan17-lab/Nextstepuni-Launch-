@@ -7759,7 +7759,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2023-HL-paper1-p07-i0",
           "src": "/exam-figures/biology/markbank/biology-2023-HL-paper1-p07-i0.png",
-          "srcHash": "a65292ba6440461e05d0ac8cd138fa2d",
+          "srcHash": "ee43ddce4c90e1cab41062b3a9dd5863",
           "alt": "A greyscale transmission electron micrograph occupying the right half of the crop. It shows one long rod-shaped (bacillus) bacterium running diagonally across the field, with a clear pinch/constriction about two-thirds along its length — a cell caught mid-binary-fission — and a granular, mottled interior with pale patches. Parts of three other rod cells intrude at the top-left, top-right and bottom-right corners. A bold letter X sits inside a thin black square box in the pale background at the upper-left of the micrograph, clear of any cell. To the left is the question text for (a) (three bacterial shapes, with an empty answer box) and (b) (draw an arrow from X to the cell wall); the first line of part (c) is sliced by the bottom edge of the crop. The micrograph itself and the X box are complete.",
           "attribution": "SEC Leaving Certificate Biology 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": [
@@ -7978,7 +7978,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2023-HL-paper2-p10-i0",
           "src": "/exam-figures/biology/markbank/biology-2023-HL-paper2-p10-i0.png",
-          "srcHash": "07befbb2dd6899655d5b336e798d4e43",
+          "srcHash": "53d1e204adbb4c578bc2c5cbd41af602",
           "alt": "WARNING — this is NOT an alveolus diagram, even though the clipped text line at the top mentions sketching an alveolus (that sketch is something the candidate must draw themselves; the paper prints no alveolus). What is actually drawn are two side-view outlines of a human head and upper body, shaded pale grey, each showing the nasal cavity, mouth, trachea, a rib cage of about ten ribs and the diaphragm. The left one is labelled X and the right one Y, and they differ only in their arrows: in X the two thick black arrows at the upper chest point outward and upward, away from the body, and a thick black arrow at the diaphragm points downward; in Y the two chest arrows point inward, into the body, and the diaphragm arrow points upward. Both letters are fully readable and both bodies are complete inside the crop; the (ii) question line at the top is sliced through the middle of its letters.",
           "attribution": "SEC Leaving Certificate Biology 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": [
@@ -8004,7 +8004,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2023-HL-paper2-p10-i0",
           "src": "/exam-figures/biology/markbank/biology-2023-HL-paper2-p10-i0.png",
-          "srcHash": "07befbb2dd6899655d5b336e798d4e43",
+          "srcHash": "53d1e204adbb4c578bc2c5cbd41af602",
           "alt": "WARNING — this is NOT an alveolus diagram, even though the clipped text line at the top mentions sketching an alveolus (that sketch is something the candidate must draw themselves; the paper prints no alveolus). What is actually drawn are two side-view outlines of a human head and upper body, shaded pale grey, each showing the nasal cavity, mouth, trachea, a rib cage of about ten ribs and the diaphragm. The left one is labelled X and the right one Y, and they differ only in their arrows: in X the two thick black arrows at the upper chest point outward and upward, away from the body, and a thick black arrow at the diaphragm points downward; in Y the two chest arrows point inward, into the body, and the diaphragm arrow points upward. Both letters are fully readable and both bodies are complete inside the crop; the (ii) question line at the top is sliced through the middle of its letters.",
           "attribution": "SEC Leaving Certificate Biology 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": [
@@ -8030,7 +8030,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2023-HL-paper2-p10-i1",
           "src": "/exam-figures/biology/markbank/biology-2023-HL-paper2-p10-i1.png",
-          "srcHash": "f3dddb86a5fe0b331f663e43c91425ec",
+          "srcHash": "9283acff1878af1f6c94c4f62f92bd0c",
           "alt": "A three-dimensional cut-away diagram of a short cylindrical section of a plant organ, drawn in grey shading. From the outside in: a thin outer skin of small rectangular cells; a thick wide zone of larger rounded cells; and a central core containing a star-shaped bundle of packed cells. Several thin hair-like projections stick out sideways from the outer surface. Four leader lines label it: A points to the thin outer skin at the top rim, \"Vascular tissue\" (printed in words) points to the star-shaped central core, B points to the thick middle zone, and C points to one of the thin hair-like projections on the lower right. All three letters are bold and fully readable and the diagram is complete; the stem line above is intact and only \"(i) Identify the plant organ.\" is sliced at the bottom edge.",
           "attribution": "SEC Leaving Certificate Biology 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": [
@@ -8059,7 +8059,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2023-HL-paper2-p10-i1",
           "src": "/exam-figures/biology/markbank/biology-2023-HL-paper2-p10-i1.png",
-          "srcHash": "f3dddb86a5fe0b331f663e43c91425ec",
+          "srcHash": "9283acff1878af1f6c94c4f62f92bd0c",
           "alt": "A three-dimensional cut-away diagram of a short cylindrical section of a plant organ, drawn in grey shading. From the outside in: a thin outer skin of small rectangular cells; a thick wide zone of larger rounded cells; and a central core containing a star-shaped bundle of packed cells. Several thin hair-like projections stick out sideways from the outer surface. Four leader lines label it: A points to the thin outer skin at the top rim, \"Vascular tissue\" (printed in words) points to the star-shaped central core, B points to the thick middle zone, and C points to one of the thin hair-like projections on the lower right. All three letters are bold and fully readable and the diagram is complete; the stem line above is intact and only \"(i) Identify the plant organ.\" is sliced at the bottom edge.",
           "attribution": "SEC Leaving Certificate Biology 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": [
@@ -8162,7 +8162,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2024-HL-paper2-p10-i0",
           "src": "/exam-figures/biology/markbank/biology-2024-HL-paper2-p10-i0.png",
-          "srcHash": "4ae15e577624131f54e2e010a8d11139",
+          "srcHash": "769e6dd6b015c1779d71a3d17ef50a37",
           "alt": "A stained light micrograph of a rectangular onion cell, its neighbours' walls visible around it. Inside, the chromosomes are in two distinct separated clusters — a group of dark V- and rod-shaped chromosomes gathered towards the left end and a matching group towards the right end, with a clear pale gap between them. Beside it is the question text for 17(d) (name the non-dividing stage of the cell cycle, two activities during it, name the stage of mitosis shown and explain how you know). The micrograph sits complete inside its own white frame; only the question text below is cut off mid-list.",
           "attribution": "SEC Leaving Certificate Biology 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
@@ -8184,7 +8184,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2024-HL-paper2-p10-i0",
           "src": "/exam-figures/biology/markbank/biology-2024-HL-paper2-p10-i0.png",
-          "srcHash": "4ae15e577624131f54e2e010a8d11139",
+          "srcHash": "769e6dd6b015c1779d71a3d17ef50a37",
           "alt": "A stained light micrograph of a rectangular onion cell, its neighbours' walls visible around it. Inside, the chromosomes are in two distinct separated clusters — a group of dark V- and rod-shaped chromosomes gathered towards the left end and a matching group towards the right end, with a clear pale gap between them. Beside it is the question text for 17(d) (name the non-dividing stage of the cell cycle, two activities during it, name the stage of mitosis shown and explain how you know). The micrograph sits complete inside its own white frame; only the question text below is cut off mid-list.",
           "attribution": "SEC Leaving Certificate Biology 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
@@ -8233,7 +8233,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2025-HL-paper1-p04-i1",
           "src": "/exam-figures/biology/markbank/biology-2025-HL-paper1-p04-i1.png",
-          "srcHash": "53ce65f912d760d559d6a050f3d14862",
+          "srcHash": "924ea50b27db3a07e820ca90ca60cb74",
           "alt": "The whole of Question 2: printed question text with three empty answer boxes down the left, and on the right a black-and-white line drawing of a longitudinal section through a plant root. The root is drawn as columns of small box-shaped cells; five long thin hair-like outgrowths project sideways from the outer layer, a narrow column of elongated darker-shaded cells runs down the centre, and the rounded root tip at the bottom is packed with tiny cells. A bold horizontal dashed line cuts straight across the root near the top (the plane students must draw in part (d)). X has an arrow to one of the hair-like outgrowths; Y is a curly brace spanning the central column of cells; Z has a leader line to a small circled patch of densely packed cells just behind the root tip.",
           "attribution": "SEC Leaving Certificate Biology 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": [
@@ -8261,7 +8261,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2025-HL-paper2-p05-i1",
           "src": "/exam-figures/biology/markbank/biology-2025-HL-paper2-p05-i1.png",
-          "srcHash": "19147cce033156241ac7697e8fd71d24",
+          "srcHash": "a7c8dfe1851c70b40a95f8120a66de5f",
           "alt": "Two eyes drawn identically — same almond-shaped outline in thick black, same mid-grey iris disc — except for the pupil: eye A (left) has a tiny black pupil dot at the centre of the iris, while eye B (right) has a large black pupil that fills most of the iris. Bold letters A and B are printed above the respective eyes. The Q14(b)(ii) text sits to the left; the '4. Lens.' line at the top of the crop is sliced, but both eyes and both letters are complete.",
           "attribution": "SEC Leaving Certificate Biology 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": [
@@ -8350,7 +8350,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-HL-paper1-p06-i0",
           "src": "/exam-figures/biology/markbank/biology-2021-HL-paper1-p06-i0.png",
-          "srcHash": "1ce5111272ce60af67fbe744abbb43e6",
+          "srcHash": "249f1f905e9d07321565e58c0451f412",
           "alt": "Three-panel enzyme-action cartoon read left to right with arrows between panels. Panel 1: a large pale-grey C-shaped molecule with a notched cleft, labelled by an arrow from the word 'Enzyme', and a small darker-grey lumpy molecule beside the cleft marked A. Panel 2: the small molecule is now seated inside the cleft, and a square bracket spanning the whole combined shape is labelled B. Panel 3: the large molecule alone with its cleft empty, and two separate darker-grey fragments to its right, both picked out by lines from a single label C. This is the clean, complete crop of the figure.",
           "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": [
@@ -8377,7 +8377,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-HL-paper1-p06-i0",
           "src": "/exam-figures/biology/markbank/biology-2021-HL-paper1-p06-i0.png",
-          "srcHash": "1ce5111272ce60af67fbe744abbb43e6",
+          "srcHash": "249f1f905e9d07321565e58c0451f412",
           "alt": "Three-panel enzyme-action cartoon read left to right with arrows between panels. Panel 1: a large pale-grey C-shaped molecule with a notched cleft, labelled by an arrow from the word 'Enzyme', and a small darker-grey lumpy molecule beside the cleft marked A. Panel 2: the small molecule is now seated inside the cleft, and a square bracket spanning the whole combined shape is labelled B. Panel 3: the large molecule alone with its cleft empty, and two separate darker-grey fragments to its right, both picked out by lines from a single label C. This is the clean, complete crop of the figure.",
           "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": [
@@ -8404,7 +8404,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-HL-paper1-p06-i0",
           "src": "/exam-figures/biology/markbank/biology-2021-HL-paper1-p06-i0.png",
-          "srcHash": "1ce5111272ce60af67fbe744abbb43e6",
+          "srcHash": "249f1f905e9d07321565e58c0451f412",
           "alt": "Three-panel enzyme-action cartoon read left to right with arrows between panels. Panel 1: a large pale-grey C-shaped molecule with a notched cleft, labelled by an arrow from the word 'Enzyme', and a small darker-grey lumpy molecule beside the cleft marked A. Panel 2: the small molecule is now seated inside the cleft, and a square bracket spanning the whole combined shape is labelled B. Panel 3: the large molecule alone with its cleft empty, and two separate darker-grey fragments to its right, both picked out by lines from a single label C. This is the clean, complete crop of the figure.",
           "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": [
@@ -8431,7 +8431,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2021-HL-paper1-p06-i0",
           "src": "/exam-figures/biology/markbank/biology-2021-HL-paper1-p06-i0.png",
-          "srcHash": "1ce5111272ce60af67fbe744abbb43e6",
+          "srcHash": "249f1f905e9d07321565e58c0451f412",
           "alt": "Three-panel enzyme-action cartoon read left to right with arrows between panels. Panel 1: a large pale-grey C-shaped molecule with a notched cleft, labelled by an arrow from the word 'Enzyme', and a small darker-grey lumpy molecule beside the cleft marked A. Panel 2: the small molecule is now seated inside the cleft, and a square bracket spanning the whole combined shape is labelled B. Panel 3: the large molecule alone with its cleft empty, and two separate darker-grey fragments to its right, both picked out by lines from a single label C. This is the clean, complete crop of the figure.",
           "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": [
@@ -8488,7 +8488,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2023-HL-paper2-p06-i0",
           "src": "/exam-figures/biology/markbank/biology-2023-HL-paper2-p06-i0.png",
-          "srcHash": "b835fb5b42dd92d3d9bff0739b958052",
+          "srcHash": "0fdfe7922702dd203ea158b1b558efd8",
           "alt": "A two-curve line graph of hormone levels through one menstrual cycle. The y-axis reads \"Levels in the blood\" with no numerical scale; the x-axis reads \"Days\" and is marked at 1, 5 and 14, with a dotted vertical line rising from day 14. A legend at the right pairs the letter A with a grey dashed line and the letter B with a solid black line. Curve A starts at a low-moderate level, rises to a sharp peak just before day 14, dips at day 14, then rises to a second broader peak in the second half of the cycle before falling. Curve B stays flat and near-zero until day 14, then climbs to a tall rounded peak after day 14 and drops steeply at the end of the cycle. Both letters are fully readable and the whole graph is inside the crop.",
           "attribution": "SEC Leaving Certificate Biology 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": [
@@ -8515,7 +8515,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2025-HL-paper1-p07-i0",
           "src": "/exam-figures/biology/markbank/biology-2025-HL-paper1-p07-i0.png",
-          "srcHash": "cee8f982ddb77929629f289ac3acb72f",
+          "srcHash": "70a6cc21d0bdd6170685e939935a8d11",
           "alt": "Two images side by side. Left: a greyscale photograph of a large industrial stainless-steel fermentation vessel mounted on a wheeled frame, with pipework, valves, pressure gauges, a stirrer head on top and a control box on the side. Right: a hand-drawn line graph with a vertical axis labelled 'Population' and a horizontal axis labelled 'Time' (both with arrowheads, no scale numbers); the curve runs flat, then rises steeply, then flattens into a long plateau. X sits immediately to the left of the steep rising section; Y sits just above the start of the plateau.",
           "attribution": "SEC Leaving Certificate Biology 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": [
@@ -8541,7 +8541,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2025-HL-paper1-p07-i0",
           "src": "/exam-figures/biology/markbank/biology-2025-HL-paper1-p07-i0.png",
-          "srcHash": "cee8f982ddb77929629f289ac3acb72f",
+          "srcHash": "70a6cc21d0bdd6170685e939935a8d11",
           "alt": "Two images side by side. Left: a greyscale photograph of a large industrial stainless-steel fermentation vessel mounted on a wheeled frame, with pipework, valves, pressure gauges, a stirrer head on top and a control box on the side. Right: a hand-drawn line graph with a vertical axis labelled 'Population' and a horizontal axis labelled 'Time' (both with arrowheads, no scale numbers); the curve runs flat, then rises steeply, then flattens into a long plateau. X sits immediately to the left of the steep rising section; Y sits just above the start of the plateau.",
           "attribution": "SEC Leaving Certificate Biology 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": [
@@ -8619,7 +8619,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2024-HL-paper2-p08-i0",
           "src": "/exam-figures/biology/markbank/biology-2024-HL-paper2-p08-i0.png",
-          "srcHash": "74880e156b82479c1a688776db5f8dbd",
+          "srcHash": "c1fcbc2cd00907fc49af7733a1324592",
           "alt": "A black-and-white photograph of a young seedling in a black square plastic pot on a plain pale surface. The stem emerges vertically from the soil then bends sharply to the left, carrying its two broad heart-shaped leaves round to face a bright disc-shaped lamp/reflector standing at the left edge of the frame — i.e. the shoot has curved towards the light. Alongside is the question text for 16(c) (name the growth response to light, how it benefits plants, name another growth response, growth regulators). The photograph is complete; only the last line of question text is clipped.",
           "attribution": "SEC Leaving Certificate Biology 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
