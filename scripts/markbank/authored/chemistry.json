@@ -2832,7 +2832,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 HL Q5(c)(ii)",
-  "stem": "First ionisation energies (kJ mol–1): Cl 1251, Ar 1521, K 419.",
+  "stem": "Consider the data given in the table about the elements chlorine, argon and potassium.",
   "questionText": "Why is the first ionisation energy of potassium lower than that of argon or chlorine?",
   "tariffModel": {
    "kind": "fixed"
@@ -2862,7 +2862,8 @@
     "marks": 3
    }
   ],
-  "notes": "Two separately marked points (2 × 3)."
+  "notes": "Two separately marked points (2 × 3).",
+  "figureKey": "chemistry-2021-HL-paper-p07-i0"
  },
  {
   "id": "chem-2021-hl-q5-c-iii-iv",

@@ -717,13 +717,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2021 Higher Level — © State Examinations Commission.",
     id: "chem-2021-hl-q5-c-ii", topicId: "chem-1-3", conceptId: "why-potassium-has-a-low-first-ionisation-energy",
     section: "B", questionRef: "2021 HL Q5(c)(ii)",
-    stem: "First ionisation energies (kJ mol–1): Cl 1251, Ar 1521, K 419.",
+    stem: "Consider the data given in the table about the elements chlorine, argon and potassium.",
     questionText: "Why is the first ionisation energy of potassium lower than that of argon or chlorine?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "outermost electron of potassium farther from nucleus", marks: 3, accepts: ["outermost electron of potassium belongs to 4th (higher) energy level (shell)","atomic radius of potassium greater","outermost electrons of chlorine and argon closer to nucleus","outermost electrons of chlorine and argon belong to 3rd (lower) energy level (shell)"], contextNote: "[Allow K = 1s2 2s2 2p6 3s2 3p6 4s1]" },
     { id: "r-2", kind: "alt", verbatim: "greater degree of shielding (screening) from electrons in inner main energy levels (shells) in potassium", marks: 3, accepts: ["lower effective nuclear charge"] },
     ],
+    figure: {
+          "candId": "chemistry-2021-HL-paper-p07-i0",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2021-HL-paper-p07-i0.png",
+          "srcHash": "8be7c2caf06f34604fdefff560f82b0b",
+          "alt": "A table from the exam paper. Columns: Element, Year discovered, First ionisation energy (kJ mol–1), Second ionisation energy (kJ mol–1). Rows: Cl, Ar, K. 4 rows by 4 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Chemistry 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2074,7 +2082,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2023 Higher Level — © State Examinations Commission.",
     id: "chem-2023-hl-q4-a", topicId: "chem-1-2", conceptId: "atomic-number-and-mass-number",
     section: "B", questionRef: "2023 HL Q4(a)",
-    stem: "Question 4: answer eight of the items (a), (b), (c), etc. Six marks are allocated to each item.",
+    stem: "answer eight of the items (a), (b), (c), etc. Six marks are allocated to each item.",
     questionText: "Define (i) atomic number, (ii) mass number.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -2089,7 +2097,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2023 Higher Level — © State Examinations Commission.",
     id: "chem-2023-hl-q4-b", topicId: "chem-1-4", conceptId: "formulae-from-valency-gallium",
     section: "B", questionRef: "2023 HL Q4(b)",
-    stem: "Question 4: answer eight of the items (a), (b), (c), etc. Six marks are allocated to each item.",
+    stem: "answer eight of the items (a), (b), (c), etc. Six marks are allocated to each item.",
     questionText: "Taking the valency of gallium (Ga) as 3, write the formula for the simplest compound formed from (i) gallium and nitrogen, (ii) gallium and oxygen.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -2104,7 +2112,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2023 Higher Level — © State Examinations Commission.",
     id: "chem-2023-hl-q4-c", topicId: "chem-2-2", conceptId: "shapes-of-abn-molecule-n-equals-2",
     section: "B", questionRef: "2023 HL Q4(c)",
-    stem: "Question 4: answer eight of the items (a), (b), (c), etc. Six marks are allocated to each item.",
+    stem: "answer eight of the items (a), (b), (c), etc. Six marks are allocated to each item.",
     questionText: "Predict the two possible shapes of a molecule ABn where n = 2.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -2119,7 +2127,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2023 Higher Level — © State Examinations Commission.",
     id: "chem-2023-hl-q4-d", topicId: "chem-1-2", conceptId: "second-ionisation-energy-identified",
     section: "B", questionRef: "2023 HL Q4(d)",
-    stem: "Question 4: answer eight of the items (a), (b), (c), etc. Six marks are allocated to each item.",
+    stem: "answer eight of the items (a), (b), (c), etc. Six marks are allocated to each item.",
     questionText: "Identify the energy change associated with the following balanced equation: X+ (g) → X2+ (g) + e–",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -2134,7 +2142,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2023 Higher Level — © State Examinations Commission.",
     id: "chem-2023-hl-q4-e", topicId: "chem-1-1", conceptId: "definition-of-diffusion",
     section: "B", questionRef: "2023 HL Q4(e)",
-    stem: "Question 4: answer eight of the items (a), (b), (c), etc. Six marks are allocated to each item.",
+    stem: "answer eight of the items (a), (b), (c), etc. Six marks are allocated to each item.",
     questionText: "What is diffusion?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -2149,7 +2157,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2023 Higher Level — © State Examinations Commission.",
     id: "chem-2023-hl-q4-g", topicId: "chem-1-4", conceptId: "dilution-new-concentration",
     section: "B", questionRef: "2023 HL Q4(g)",
-    stem: "Question 4: answer eight of the items (a), (b), (c), etc. Six marks are allocated to each item.",
+    stem: "answer eight of the items (a), (b), (c), etc. Six marks are allocated to each item.",
     questionText: "A laboratory technician diluted 25.0 cm3 of a 0.12 M solution to 30.0 cm3 by adding deionised water. Find the new concentration of the solution in moles per litre.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -2164,7 +2172,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2023 Higher Level — © State Examinations Commission.",
     id: "chem-2023-hl-q4-h", topicId: "chem-3-2", conceptId: "definition-of-enzyme",
     section: "B", questionRef: "2023 HL Q4(h)",
-    stem: "Question 4: answer eight of the items (a), (b), (c), etc. Six marks are allocated to each item.",
+    stem: "answer eight of the items (a), (b), (c), etc. Six marks are allocated to each item.",
     questionText: "What is an enzyme?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -2179,7 +2187,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2023 Higher Level — © State Examinations Commission.",
     id: "chem-2023-hl-q4-j", topicId: "chem-3-5", conceptId: "oxidation-number-of-sulfur",
     section: "B", questionRef: "2023 HL Q4(j)",
-    stem: "Question 4: answer eight of the items (a), (b), (c), etc. Six marks are allocated to each item.",
+    stem: "answer eight of the items (a), (b), (c), etc. Six marks are allocated to each item.",
     questionText: "Give the oxidation number of sulfur (i) in SO42–, (ii) in Na2S4O6.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -2194,7 +2202,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2023 Higher Level — © State Examinations Commission.",
     id: "chem-2023-hl-q4-l-a", topicId: "chem-4-3", conceptId: "limestone-scrubber-for-sulfur-dioxide",
     section: "B", questionRef: "2023 HL Q4(l)A",
-    stem: "Question 4(l): answer part A or part B. Six marks are allocated to the item.",
+    stem: "answer part A or part B. Six marks are allocated to the item.",
     questionText: "Write one or more balanced equations to explain how limestone can be used as a scrubber to remove sulfur dioxide from waste gases.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -2208,7 +2216,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2023 Higher Level — © State Examinations Commission.",
     id: "chem-2023-hl-q4-l-b", topicId: "chem-2-1", conceptId: "metallic-crystals-conduct-electricity",
     section: "B", questionRef: "2023 HL Q4(l)B",
-    stem: "Question 4(l): answer part A or part B. Six marks are allocated to the item.",
+    stem: "answer part A or part B. Six marks are allocated to the item.",
     questionText: "Explain why metallic crystals are good conductors of electricity.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [

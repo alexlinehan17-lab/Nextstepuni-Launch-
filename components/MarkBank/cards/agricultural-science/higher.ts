@@ -1986,12 +1986,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q6bi", topicId: "agsci-4-3-1", conceptId: "scheme-payment-calculation",
     section: "A", questionRef: "2024 HL Q6(b)(i)",
-    stem: "Answer either (a) or (b). The Sheep Improvement Scheme provides financial support to farmers for taking extra steps to improve the welfare of their flock. Farmers get €12 per breeding ewe for completing flock welfare measures. Ryan and Fiona have the following sheep on their farm — Rams: 4; Breeding ewes: 132; Hoggets: 42; Lambs: 200.",
+    stem: "Answer either (a) or (b). The Sheep Improvement Scheme provides financial support to farmers for taking extra steps to improve the welfare of their flock. Farmers get €12 per breeding ewe for completing flock welfare measures. Ryan and Fiona have the following sheep on their farm.",
     questionText: "Calculate the financial value of the scheme to Ryan and Fiona.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "132 x 12 = €1584", marks: 6, contextNote: "The scheme adds: \"(If candidate shows the correct formula award +3m)\" — a correct formula without the answer scores 3 of the 6. Only the 132 breeding ewes attract the €12 payment; rams, hoggets and lambs do not." },
     ],
+    figure: {
+          "candId": "agricultural-science-2024-HL-paper-p11-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p11-i1.png",
+          "srcHash": "ac0b18f78806217b12c5d7016ecbc89d",
+          "alt": "A table from the exam paper. Columns: Stock type, Numbers on farm. Rows: Rams, Breeding ewes, Hoggets, Lambs. 5 rows by 2 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5426,13 +5434,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
     id: "agsci-2025-hl-q13ai", topicId: "agsci-4-3-1", conceptId: "beef-cross-on-dairy-herd",
     section: "B", questionRef: "2025 HL Q13(a)(i)",
-    stem: "Question 13, part (a) — answer both (a) and (b) with either (c) or (d). Paula and Bill's dairy calving records for 2023 from their 120-cow dairy herd were as follows: Purebred Friesian — 25 heifer calves and 25 bull calves; Aubrac x Friesian — 28 heifer calves and 35 bull calves. A mixture of Artificial Insemination (AI) and an Aubrac beef stock bull was used for breeding animals including their own replacements.",
+    stem: "Question 13, part (a) — answer both (a) and (b) with either (c) or (d). Paula and Bill's dairy calving records for 2023 from their 120-cow dairy herd are shown in the table below. A mixture of Artificial Insemination (AI) and an Aubrac beef stock bull was used for breeding animals including their own replacements. Analyse the table and answer the question that follows.",
     questionText: "Outline reasons why the farmers chose to cross some of the Friesian cows with an Aubrac stock bull.",
     tariffModel: {"kind":"fixed","notation":"3+1"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Sell as beef animals", marks: 3, accepts: ["produce animals for calf to beef system","calves will not be used for breeding or milking","purebred Friesians will not have good conformation for beef production or improved conformation of offspring"], contextNote: "Any one reason from the scheme's pool of four; 3 marks for the first correct reason and 1 for the second, so the value follows the position, not the wording." },
     { id: "r-2", kind: "alt", verbatim: "produce animals for calf to beef system", marks: 1, accepts: ["Sell as beef animals","calves will not be used for breeding or milking","purebred Friesians will not have good conformation for beef production or improved conformation of offspring"] },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-HL-paper-p21-i2",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-p21-i2.png",
+          "srcHash": "206a85089d56292e4378b893c537b74f",
+          "alt": "A table from the exam paper. Columns: Number of heifer calves, Number of bull calves. Rows: Purebred Friesian, Aubrac x Friesian. 3 rows by 3 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5469,12 +5485,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
     id: "agsci-2025-hl-q13aiv", topicId: "agsci-4-3-1", conceptId: "replacement-rate-calculation",
     section: "B", questionRef: "2025 HL Q13(a)(iv)",
-    stem: "Question 13, part (a). Paula and Bill's dairy calving records for 2023 from their 120-cow dairy herd: Purebred Friesian — 25 heifer calves, 25 bull calves; Aubrac x Friesian — 28 heifer calves, 35 bull calves. A mixture of AI and an Aubrac beef stock bull was used for breeding animals including their own replacements.",
+    stem: "Question 13, part (a). Paula and Bill's dairy calving records for 2023 from their 120-cow dairy herd are shown in the table below. A mixture of AI and an Aubrac beef stock bull was used for breeding animals including their own replacements.",
     questionText: "Calculate the replacement rate for the herd.",
     tariffModel: {"kind":"fixed","notation":"2 (1m method, 1m answer)"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "20.8%", marks: 2, accepts: ["21%"], contextNote: "The scheme prints the working as 25 over 120, times 100 = 20.8% or 21% replacement rate, and awards 1 mark for the method and 1 for the final answer — but if the answer is given and correct with no method, award 2." },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-HL-paper-p21-i2",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-p21-i2.png",
+          "srcHash": "206a85089d56292e4378b893c537b74f",
+          "alt": "A table from the exam paper. Columns: Number of heifer calves, Number of bull calves. Rows: Purebred Friesian, Aubrac x Friesian. 3 rows by 3 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",

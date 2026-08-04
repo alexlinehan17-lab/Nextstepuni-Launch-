@@ -3606,12 +3606,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Higher Level — © State Examinations Commission.",
     id: "phys-2024-hl-q4-v", topicId: "phys-2-5", conceptId: "frequency-proportional-root-tension",
     section: "A", questionRef: "2024 HL Q4(v)",
-    stem: "A student investigated how the fundamental frequency f of a stretched string of fixed length varied with its tension T.",
+    stem: "A student investigated how the fundamental frequency f of a stretched string of fixed length varied with its tension T. The following data were recorded.",
     questionText: "State the relationship between f and T.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "frequency is proportional to square root of tension", marks: 3 },
     ],
+    figure: {
+          "candId": "physics-2024-HL-paper-p04-i0",
+          "src": "/exam-figures/physics/markbank/physics-2024-HL-paper-p04-i0.png",
+          "srcHash": "ab93b0433b016ad956c0a914b5e49662",
+          "alt": "A table from the exam paper. Columns: f (Hz), 256, 320, 341, 426.5, 480, 512. Rows: T (N). 2 rows by 7 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4611,7 +4619,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Higher Level — © State Examinations Commission.",
     id: "phys-2025-hl-q1-v", topicId: "phys-1-2", conceptId: "net-force-coplanar-forces",
     section: "A", questionRef: "2025 HL Q1(v)",
-    stem: "The centre of gravity of the metre stick was at the 50.0 cm mark and its weight was 0.96 N. The metre stick was supported vertically from above at two points and three known weights were hung from it. The following data were recorded. Position of force on metre stick (cm): 2.0, 11.2, 40.1, 72.7, 82.9. Force (N): 3.4, 3.0, 2.0, 5.5, 3.0. Direction: up, down, down, up, down.",
+    stem: "The centre of gravity of the metre stick was at the 50.0 cm mark and its weight was 0.96 N. The metre stick was supported vertically from above at two points and three known weights were hung from it. The following data were recorded.",
     questionText: "Using the given data, calculate the net force acting on the metre stick.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
@@ -4619,6 +4627,14 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "forces down = 8.96 (N)", marks: 3, contextNote: "The 0.96 N weight of the metre stick acts downwards and must be included." },
     { id: "r-3", kind: "point", verbatim: "net force ( = 0.06 N ) ≈ 0", marks: 3 },
     ],
+    figure: {
+          "candId": "physics-2025-HL-paper-p02-i0",
+          "src": "/exam-figures/physics/markbank/physics-2025-HL-paper-p02-i0.png",
+          "srcHash": "387df4ea2496104e52a7b1263d76f01b",
+          "alt": "A table from the exam paper. Columns: posiƟon of force on metre sƟck (cm), 2.0, 11.2, 40.1, 72.7, 82.9. Rows: force (N), direcƟon. 3 rows by 6 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4850,13 +4866,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Higher Level — © State Examinations Commission.",
     id: "phys-2025-hl-q5-iii", topicId: "phys-3-3", conceptId: "ohms-law-filament-bulb",
     section: "A", questionRef: "2025 HL Q5(iii)",
-    stem: "A student investigated the variation of the current I through a filament bulb for a range of different values of potential difference V, and plotted a graph of the data. V (V): 1, 2, 3, 4, 5, 6, 7. I (mA): 25, 47, 68, 80, 91, 100, 104.",
+    stem: "A student investigated the variation of the current I through a filament bulb for a range of different values of potential difference V. The following data were recorded, and the student plotted a graph of the data.",
     questionText: "Does the graph show that Ohm’s law is obeyed for the filament bulb? Justify your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "gate", verbatim: "no", marks: 2 },
     { id: "r-2", kind: "point", verbatim: "not a straight line", marks: 2 },
     ],
+    figure: {
+          "candId": "physics-2025-HL-paper-p06-i0",
+          "src": "/exam-figures/physics/markbank/physics-2025-HL-paper-p06-i0.png",
+          "srcHash": "7be3da5045405a71bdc2f9ec047a82a6",
+          "alt": "A table from the exam paper. Columns: V (V), 1, 2, 3, 4, 5, 6, 7. Rows: I (mA). 2 rows by 8 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5628,13 +5652,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Higher Level — © State Examinations Commission.",
     id: "phys-2025-hl-q14b-i", topicId: "phys-2-3", conceptId: "optical-fibre-cladding-choice",
     section: "B", questionRef: "2025 HL Q14(b)(i)",
-    stem: "An optical fibre consists of a core made from glass surrounded by cladding made from a different type of glass. The refractive index of each type of glass is: core = 1.47, Y = 1.44, Z = 1.50.",
+    stem: "An optical fibre consists of a core made from glass surrounded by cladding made from a different type of glass. The following table shows the refractive index for three types of glass.",
     questionText: "State which glass Y or Z would be suitable for the cladding. Justify your answer.",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 2"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Y", marks: null, contextNote: "Y is the glass with the refractive index lower than the core's." },
     { id: "r-2", kind: "point", verbatim: "(lower refractive index in cladding allows) total internal reflection", marks: null },
     ],
+    figure: {
+          "candId": "physics-2025-HL-paper-p17-i1",
+          "src": "/exam-figures/physics/markbank/physics-2025-HL-paper-p17-i1.png",
+          "srcHash": "ccb28336b485601bf012d8ceaf778b01",
+          "alt": "A table from the exam paper. Columns: types of glass, core, Y, Z. Rows: refracƟve index. 2 rows by 4 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",

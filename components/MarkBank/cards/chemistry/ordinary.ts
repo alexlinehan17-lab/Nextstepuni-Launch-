@@ -4659,7 +4659,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2024 Ordinary Level — © State Examinations Commission.",
     id: "chem-2024-ol-q4-a", topicId: "chem-1-4", conceptId: "moles-from-mass-caffeine",
     section: "B", questionRef: "2024 OL Q4(a)",
-    stem: "Question 4: eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
+    stem: "eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
     questionText: "A cup of coffee contains 0.095 g of caffeine (C8H10N4O2). Calculate the number of moles of caffeine in this cup.",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 2"}, totalMarks: 6,
     rows: [
@@ -4674,7 +4674,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2024 Ordinary Level — © State Examinations Commission.",
     id: "chem-2024-ol-q4-c", topicId: "chem-1-2", conceptId: "isotopes-definition",
     section: "B", questionRef: "2024 OL Q4(c)",
-    stem: "Question 4: eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
+    stem: "eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
     questionText: "What are isotopes?",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 2"}, totalMarks: 6,
     rows: [
@@ -4689,7 +4689,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2024 Ordinary Level — © State Examinations Commission.",
     id: "chem-2024-ol-q4-d", topicId: "chem-u2", conceptId: "heat-of-combustion-apparatus",
     section: "B", questionRef: "2024 OL Q4(d)",
-    stem: "Question 4: eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
+    stem: "eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
     questionText: "Name a piece of apparatus used to measure the heat of combustion of a compound.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -4703,7 +4703,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2024 Ordinary Level — © State Examinations Commission.",
     id: "chem-2024-ol-q4-e", topicId: "chem-1-4", conceptId: "neutralisation-equation-magnesium-hydroxide",
     section: "B", questionRef: "2024 OL Q4(e)",
-    stem: "Question 4: eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
+    stem: "eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
     questionText: "Write a balanced chemical equation for the reaction of magnesium hydroxide (Mg(OH)2) with hydrochloric acid to produce magnesium chloride (MgCl2) and water.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -4717,7 +4717,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2024 Ordinary Level — © State Examinations Commission.",
     id: "chem-2024-ol-q4-g", topicId: "chem-4-2", conceptId: "methanoic-acid-natural-source",
     section: "B", questionRef: "2024 OL Q4(g)",
-    stem: "Question 4: eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
+    stem: "eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
     questionText: "Identify the carboxylic acid found in the stings of nettles and ants.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -4731,7 +4731,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2024 Ordinary Level — © State Examinations Commission.",
     id: "chem-2024-ol-q4-h", topicId: "chem-4-3", conceptId: "sewage-treatment-primary-stage",
     section: "B", questionRef: "2024 OL Q4(h)",
-    stem: "Question 4: eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
+    stem: "eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
     questionText: "Describe what happens during the primary stage of sewage treatment.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -4745,7 +4745,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2024 Ordinary Level — © State Examinations Commission.",
     id: "chem-2024-ol-q4-i", topicId: "chem-1-1", conceptId: "diffusion-of-gases",
     section: "B", questionRef: "2024 OL Q4(i)",
-    stem: "Question 4: eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
+    stem: "eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
     questionText: "When a small amount of air freshener is sprayed in a room it is soon detected in all parts of the room. Explain why this occurs.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -4759,7 +4759,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2024 Ordinary Level — © State Examinations Commission.",
     id: "chem-2024-ol-q4-j", topicId: "chem-3-5", conceptId: "oxidation-electron-transfer",
     section: "B", questionRef: "2024 OL Q4(j)",
-    stem: "Question 4: eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
+    stem: "eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
     questionText: "Define oxidation in terms of electron transfer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -4773,7 +4773,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2024 Ordinary Level — © State Examinations Commission.",
     id: "chem-2024-ol-q4-l-a", topicId: "chem-u3", conceptId: "continuous-process-definition",
     section: "B", questionRef: "2024 OL Q4(l) A",
-    stem: "Question 4: eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
+    stem: "eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
     questionText: "Explain the term \"continuous process\" in industrial chemistry.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -4787,7 +4787,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2024 Ordinary Level — © State Examinations Commission.",
     id: "chem-2024-ol-q4-l-b", topicId: "chem-u1", conceptId: "hodgkin-x-ray-crystallography",
     section: "B", questionRef: "2024 OL Q4(l) B",
-    stem: "Question 4: eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
+    stem: "eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
     questionText: "Name the scientist pictured who used X-ray crystallography to determine the structure of vitamin B12.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [

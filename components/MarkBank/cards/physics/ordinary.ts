@@ -2255,12 +2255,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q5-iv", topicId: "phys-u2", conceptId: "resistance-length-proportional",
     section: "A", questionRef: "2023 OL Q5(iv)",
-    stem: "In an experiment to determine the resistivity of a nichrome wire, a student measured the resistance R of the wire for six different lengths l.",
+    stem: "In an experiment to determine the resistivity of a nichrome wire, a student measured the resistance R of the wire for six different lengths l. She also measured the diameter d of the wire. The student recorded the following results.",
     questionText: "State the relationship between l and R.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "proportional", marks: 6, contextNote: "Key word — \"proportional\" must appear in the correct context (that R is proportional to l) to merit the marks. Partial answer scores 3.", exactTermRequired: true },
     ],
+    figure: {
+          "candId": "physics-2023-OL-paper-p04-i1",
+          "src": "/exam-figures/physics/markbank/physics-2023-OL-paper-p04-i1.png",
+          "srcHash": "db6c89b37aaf43572af45746fae6c90a",
+          "alt": "A table from the exam paper. Columns: l (cm), 20, 30, 40, 50, 60, 70. Rows: R (Ω), d (mm). 3 rows by 7 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4444,13 +4452,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q1-iv", topicId: "phys-u2", conceptId: "total-momentum-before-and-after-collision",
     section: "A", questionRef: "2025 OL Q1(iv)",
-    stem: "The following data were recorded: mass of trolley A, mA = 0.34 kg; mass of trolley B, mB = 0.36 kg; velocity of trolley A before the collision, uA = 1.85 m s–1; velocity of trolley B before the collision, uB = 0 m s–1; velocity of trolley A and trolley B after the collision, vfinal = 0.90 m s–1. She used the recorded data and the following formula to verify the principle of conservation of momentum: total momentum before = total momentum after, i.e. (mA × uA) + (mB × uB) = (mA + mB) × vfinal.",
+    stem: "A student carried out an experiment to verify the principle of conservation of momentum between two trolleys, A and B. Trolley A travelled at a constant velocity down a track and then collided with trolley B which was at rest. Trolleys A and B then moved together with the same velocity, vfinal. The following data were recorded. She used the recorded data and the following formula to verify the principle of conservation of momentum: total momentum before = total momentum after, i.e. (mA × uA) + (mB × uB) = (mA + mB) × vfinal.",
     questionText: "Calculate (a) the total momentum before the collision (b) the total momentum after the collision.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
     { id: "r-1", kind: "point", verbatim: "momentum before = 0.63 kg m s-1", marks: 6 },
     { id: "r-2", kind: "point", verbatim: "momentum after = 0.63 kg m s-1", marks: 6 },
     ],
+    figure: {
+          "candId": "physics-2025-OL-paper-p02-i0",
+          "src": "/exam-figures/physics/markbank/physics-2025-OL-paper-p02-i0.png",
+          "srcHash": "f1ab09b9c5aecb72eebec68e24f57579",
+          "alt": "A table from the exam paper. Columns: mass of trolley A, m A, 0.34 kg. Rows: mass of trolley B, m B, velocity of trolley A before the collision, u A, velocity of trolley B before the collision, u B, velocity of trolley A and trolley B after the collision, v final. 5 rows by 2 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",

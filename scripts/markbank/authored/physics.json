@@ -10957,7 +10957,7 @@
   "subjectId": "physics",
   "section": "A",
   "questionRef": "2023 OL Q5(iv)",
-  "stem": "In an experiment to determine the resistivity of a nichrome wire, a student measured the resistance R of the wire for six different lengths l.",
+  "stem": "In an experiment to determine the resistivity of a nichrome wire, a student measured the resistance R of the wire for six different lengths l. She also measured the diameter d of the wire. The student recorded the following results.",
   "questionText": "State the relationship between l and R.",
   "tariffModel": {
    "kind": "fixed"
@@ -10973,7 +10973,8 @@
     "contextNote": "Key word — \"proportional\" must appear in the correct context (that R is proportional to l) to merit the marks. Partial answer scores 3."
    }
   ],
-  "notes": ""
+  "notes": "",
+  "figureKey": "physics-2023-OL-paper-p04-i1"
  },
  {
   "id": "phys-2023-ol-q5-v",
@@ -15505,7 +15506,7 @@
   "subjectId": "physics",
   "section": "A",
   "questionRef": "2024 HL Q4(v)",
-  "stem": "A student investigated how the fundamental frequency f of a stretched string of fixed length varied with its tension T.",
+  "stem": "A student investigated how the fundamental frequency f of a stretched string of fixed length varied with its tension T. The following data were recorded.",
   "questionText": "State the relationship between f and T.",
   "tariffModel": {
    "kind": "fixed"
@@ -15519,7 +15520,8 @@
     "marks": 3
    }
   ],
-  "notes": "The question asks for the physical relationship rather than the method, so it is filed under sound rather than phys-u2."
+  "notes": "The question asks for the physical relationship rather than the method, so it is filed under sound rather than phys-u2.",
+  "figureKey": "physics-2024-HL-paper-p04-i0"
  },
  {
   "id": "phys-2024-hl-q5-iv",
@@ -19835,7 +19837,7 @@
   "subjectId": "physics",
   "section": "A",
   "questionRef": "2025 HL Q1(v)",
-  "stem": "The centre of gravity of the metre stick was at the 50.0 cm mark and its weight was 0.96 N. The metre stick was supported vertically from above at two points and three known weights were hung from it. The following data were recorded. Position of force on metre stick (cm): 2.0, 11.2, 40.1, 72.7, 82.9. Force (N): 3.4, 3.0, 2.0, 5.5, 3.0. Direction: up, down, down, up, down.",
+  "stem": "The centre of gravity of the metre stick was at the 50.0 cm mark and its weight was 0.96 N. The metre stick was supported vertically from above at two points and three known weights were hung from it. The following data were recorded.",
   "questionText": "Using the given data, calculate the net force acting on the metre stick.",
   "tariffModel": {
    "kind": "fixed"
@@ -19862,7 +19864,8 @@
     "marks": 3
    }
   ],
-  "notes": "Carded because the scheme awards three discrete, checkable stated values rather than undifferentiated working. The data table is reproduced verbatim in the scheme, so the question is answerable without a figure."
+  "notes": "Carded because the scheme awards three discrete, checkable stated values rather than undifferentiated working. The data table is reproduced verbatim in the scheme, so the question is answerable without a figure.",
+  "figureKey": "physics-2025-HL-paper-p02-i0"
  },
  {
   "id": "phys-2025-hl-q1-vii",
@@ -20356,7 +20359,7 @@
   "subjectId": "physics",
   "section": "A",
   "questionRef": "2025 HL Q5(iii)",
-  "stem": "A student investigated the variation of the current I through a filament bulb for a range of different values of potential difference V, and plotted a graph of the data. V (V): 1, 2, 3, 4, 5, 6, 7. I (mA): 25, 47, 68, 80, 91, 100, 104.",
+  "stem": "A student investigated the variation of the current I through a filament bulb for a range of different values of potential difference V. The following data were recorded, and the student plotted a graph of the data.",
   "questionText": "Does the graph show that Ohm’s law is obeyed for the filament bulb? Justify your answer.",
   "tariffModel": {
    "kind": "fixed"
@@ -20376,7 +20379,8 @@
     "marks": 2
    }
   ],
-  "notes": "Q5(i) skipped (draw a circuit diagram - rule 9). Q5(ii) skipped (plot a graph - rule 9). Q5(iv) skipped: the resistances at 40 mA and 90 mA can only be obtained by reading values off the candidate's graph, which is not reproduced. The data table used here is reproduced verbatim in the scheme."
+  "notes": "Q5(i) skipped (draw a circuit diagram - rule 9). Q5(ii) skipped (plot a graph - rule 9). Q5(iv) skipped: the resistances at 40 mA and 90 mA can only be obtained by reading values off the candidate's graph, which is not reproduced. The data table used here is reproduced verbatim in the scheme.",
+  "figureKey": "physics-2025-HL-paper-p06-i0"
  },
  {
   "id": "phys-2025-hl-q5-v",
@@ -22652,7 +22656,7 @@
   "subjectId": "physics",
   "section": "B",
   "questionRef": "2025 HL Q14(b)(i)",
-  "stem": "An optical fibre consists of a core made from glass surrounded by cladding made from a different type of glass. The refractive index of each type of glass is: core = 1.47, Y = 1.44, Z = 1.50.",
+  "stem": "An optical fibre consists of a core made from glass surrounded by cladding made from a different type of glass. The following table shows the refractive index for three types of glass.",
   "questionText": "State which glass Y or Z would be suitable for the cladding. Justify your answer.",
   "tariffModel": {
    "kind": "orderedSplit",
@@ -22674,7 +22678,8 @@
     "marks": null
    }
   ],
-  "notes": "The refractive-index table is reproduced inside the scheme text, so it is carried in the stem. Q14(b)(iii) skipped — it requires a labelled diagram."
+  "notes": "The refractive-index table is reproduced inside the scheme text, so it is carried in the stem. Q14(b)(iii) skipped — it requires a labelled diagram.",
+  "figureKey": "physics-2025-HL-paper-p17-i1"
  },
  {
   "id": "phys-2025-hl-q14b-ii",
@@ -23068,7 +23073,7 @@
   "subjectId": "physics",
   "section": "A",
   "questionRef": "2025 OL Q1(iv)",
-  "stem": "The following data were recorded: mass of trolley A, mA = 0.34 kg; mass of trolley B, mB = 0.36 kg; velocity of trolley A before the collision, uA = 1.85 m s–1; velocity of trolley B before the collision, uB = 0 m s–1; velocity of trolley A and trolley B after the collision, vfinal = 0.90 m s–1. She used the recorded data and the following formula to verify the principle of conservation of momentum: total momentum before = total momentum after, i.e. (mA × uA) + (mB × uB) = (mA + mB) × vfinal.",
+  "stem": "A student carried out an experiment to verify the principle of conservation of momentum between two trolleys, A and B. Trolley A travelled at a constant velocity down a track and then collided with trolley B which was at rest. Trolleys A and B then moved together with the same velocity, vfinal. The following data were recorded. She used the recorded data and the following formula to verify the principle of conservation of momentum: total momentum before = total momentum after, i.e. (mA × uA) + (mB × uB) = (mA + mB) × vfinal.",
   "questionText": "Calculate (a) the total momentum before the collision (b) the total momentum after the collision.",
   "tariffModel": {
    "kind": "fixed"
@@ -23088,7 +23093,8 @@
     "marks": 6
    }
   ],
-  "notes": "Carded because the scheme awards a stated final value with its unit for each part, so it is self-markable. Scheme adds '[accept partial answer for 3]' to each. The data table is reproduced in the stem exactly as the scheme prints it."
+  "notes": "Carded because the scheme awards a stated final value with its unit for each part, so it is self-markable. Scheme adds '[accept partial answer for 3]' to each. The data table is reproduced in the stem exactly as the scheme prints it.",
+  "figureKey": "physics-2025-OL-paper-p02-i0"
  },
  {
   "id": "phys-2025-ol-q1-v",

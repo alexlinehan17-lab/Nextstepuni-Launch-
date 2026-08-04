@@ -7825,5 +7825,104 @@
   "year": 2025,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "agricultural-science-2024-HL-paper-p11-i1": {
+  "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p11-i1.png",
+  "md5": "ac0b18f78806217b12c5d7016ecbc89d",
+  "alt": "A table from the exam paper. Columns: Stock type, Numbers on farm. Rows: Rams, Breeding ewes, Hoggets, Lambs. 5 rows by 2 columns, as printed in the paper.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission"
+ },
+ "agricultural-science-2025-HL-paper-p21-i2": {
+  "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-p21-i2.png",
+  "md5": "206a85089d56292e4378b893c537b74f",
+  "alt": "A table from the exam paper. Columns: Number of heifer calves, Number of bull calves. Rows: Purebred Friesian, Aubrac x Friesian. 3 rows by 3 columns, as printed in the paper.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2021-HL-paper-p07-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2021-HL-paper-p07-i0.png",
+  "md5": "8be7c2caf06f34604fdefff560f82b0b",
+  "alt": "A table from the exam paper. Columns: Element, Year discovered, First ionisation energy (kJ mol–1), Second ionisation energy (kJ mol–1). Rows: Cl, Ar, K. 4 rows by 4 columns, as printed in the paper.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2021 Higher Level — © State Examinations Commission"
+ },
+ "physics-2023-OL-paper-p04-i1": {
+  "src": "/exam-figures/physics/markbank/physics-2023-OL-paper-p04-i1.png",
+  "md5": "db6c89b37aaf43572af45746fae6c90a",
+  "alt": "A table from the exam paper. Columns: l (cm), 20, 30, 40, 50, 60, 70. Rows: R (Ω), d (mm). 3 rows by 7 columns, as printed in the paper.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "physics-2024-HL-paper-p04-i0": {
+  "src": "/exam-figures/physics/markbank/physics-2024-HL-paper-p04-i0.png",
+  "md5": "ab93b0433b016ad956c0a914b5e49662",
+  "alt": "A table from the exam paper. Columns: f (Hz), 256, 320, 341, 426.5, 480, 512. Rows: T (N). 2 rows by 7 columns, as printed in the paper.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level — © State Examinations Commission"
+ },
+ "physics-2025-HL-paper-p02-i0": {
+  "src": "/exam-figures/physics/markbank/physics-2025-HL-paper-p02-i0.png",
+  "md5": "387df4ea2496104e52a7b1263d76f01b",
+  "alt": "A table from the exam paper. Columns: posiƟon of force on metre sƟck (cm), 2.0, 11.2, 40.1, 72.7, 82.9. Rows: force (N), direcƟon. 3 rows by 6 columns, as printed in the paper.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level — © State Examinations Commission"
+ },
+ "physics-2025-HL-paper-p06-i0": {
+  "src": "/exam-figures/physics/markbank/physics-2025-HL-paper-p06-i0.png",
+  "md5": "7be3da5045405a71bdc2f9ec047a82a6",
+  "alt": "A table from the exam paper. Columns: V (V), 1, 2, 3, 4, 5, 6, 7. Rows: I (mA). 2 rows by 8 columns, as printed in the paper.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level — © State Examinations Commission"
+ },
+ "physics-2025-HL-paper-p17-i1": {
+  "src": "/exam-figures/physics/markbank/physics-2025-HL-paper-p17-i1.png",
+  "md5": "ccb28336b485601bf012d8ceaf778b01",
+  "alt": "A table from the exam paper. Columns: types of glass, core, Y, Z. Rows: refracƟve index. 2 rows by 4 columns, as printed in the paper.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level — © State Examinations Commission"
+ },
+ "physics-2025-OL-paper-p02-i0": {
+  "src": "/exam-figures/physics/markbank/physics-2025-OL-paper-p02-i0.png",
+  "md5": "f1ab09b9c5aecb72eebec68e24f57579",
+  "alt": "A table from the exam paper. Columns: mass of trolley A, m A, 0.34 kg. Rows: mass of trolley B, m B, velocity of trolley A before the collision, u A, velocity of trolley B before the collision, u B, velocity of trolley A and trolley B after the collision, v final. 5 rows by 2 columns, as printed in the paper.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level — © State Examinations Commission"
  }
 }

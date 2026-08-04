@@ -8063,7 +8063,7 @@
   "subjectId": "agricultural-science",
   "section": "A",
   "questionRef": "2024 HL Q6(b)(i)",
-  "stem": "Answer either (a) or (b). The Sheep Improvement Scheme provides financial support to farmers for taking extra steps to improve the welfare of their flock. Farmers get €12 per breeding ewe for completing flock welfare measures. Ryan and Fiona have the following sheep on their farm — Rams: 4; Breeding ewes: 132; Hoggets: 42; Lambs: 200.",
+  "stem": "Answer either (a) or (b). The Sheep Improvement Scheme provides financial support to farmers for taking extra steps to improve the welfare of their flock. Farmers get €12 per breeding ewe for completing flock welfare measures. Ryan and Fiona have the following sheep on their farm.",
   "questionText": "Calculate the financial value of the scheme to Ryan and Fiona.",
   "tariffModel": {
    "kind": "fixed"
@@ -8078,7 +8078,8 @@
     "contextNote": "The scheme adds: \"(If candidate shows the correct formula award +3m)\" — a correct formula without the answer scores 3 of the 6. Only the 132 breeding ewes attract the €12 payment; rams, hoggets and lambs do not."
    }
   ],
-  "notes": "Q6(b) totals 10: (i) 6, (ii) 3+1 = 4. The 3-mark formula-only concession is recorded on the row rather than split into a second row, because the scheme prints a single 6 for the part."
+  "notes": "Q6(b) totals 10: (i) 6, (ii) 3+1 = 4. The 3-mark formula-only concession is recorded on the row rather than split into a second row, because the scheme prints a single 6 for the part.",
+  "figureKey": "agricultural-science-2024-HL-paper-p11-i1"
  },
  {
   "id": "agsci-2024-hl-q6bii",
@@ -26696,7 +26697,7 @@
   "subjectId": "agricultural-science",
   "section": "B",
   "questionRef": "2025 HL Q13(a)(i)",
-  "stem": "Question 13, part (a) — answer both (a) and (b) with either (c) or (d). Paula and Bill's dairy calving records for 2023 from their 120-cow dairy herd were as follows: Purebred Friesian — 25 heifer calves and 25 bull calves; Aubrac x Friesian — 28 heifer calves and 35 bull calves. A mixture of Artificial Insemination (AI) and an Aubrac beef stock bull was used for breeding animals including their own replacements.",
+  "stem": "Question 13, part (a) — answer both (a) and (b) with either (c) or (d). Paula and Bill's dairy calving records for 2023 from their 120-cow dairy herd are shown in the table below. A mixture of Artificial Insemination (AI) and an Aubrac beef stock bull was used for breeding animals including their own replacements. Analyse the table and answer the question that follows.",
   "questionText": "Outline reasons why the farmers chose to cross some of the Friesian cows with an Aubrac stock bull.",
   "tariffModel": {
    "kind": "fixed",
@@ -26728,7 +26729,8 @@
     ]
    }
   ],
-  "notes": "Tariff 3+1 on the scheme, so exactly two reasons score from a printed pool of four. Two alt rows carrying the ordered values with the rest of the pool in accepts, matching the pattern the 2025 Section A wave used for 4+1 and 3+3. Reviewer note: the fourth pool member is quoted in accepts as the scheme prints it, but the 3+1 mark cell is typeset inside that phrase (between 'purebred Friesians' and 'will not have good conformation'), so a naive substring check against the extracted markdown will not find it. It is deliberately kept out of verbatim for that reason."
+  "notes": "Tariff 3+1 on the scheme, so exactly two reasons score from a printed pool of four. Two alt rows carrying the ordered values with the rest of the pool in accepts, matching the pattern the 2025 Section A wave used for 4+1 and 3+3. Reviewer note: the fourth pool member is quoted in accepts as the scheme prints it, but the 3+1 mark cell is typeset inside that phrase (between 'purebred Friesians' and 'will not have good conformation'), so a naive substring check against the extracted markdown will not find it. It is deliberately kept out of verbatim for that reason.",
+  "figureKey": "agricultural-science-2025-HL-paper-p21-i2"
  },
  {
   "id": "agsci-2025-hl-q13aii",
@@ -26792,7 +26794,7 @@
   "subjectId": "agricultural-science",
   "section": "B",
   "questionRef": "2025 HL Q13(a)(iv)",
-  "stem": "Question 13, part (a). Paula and Bill's dairy calving records for 2023 from their 120-cow dairy herd: Purebred Friesian — 25 heifer calves, 25 bull calves; Aubrac x Friesian — 28 heifer calves, 35 bull calves. A mixture of AI and an Aubrac beef stock bull was used for breeding animals including their own replacements.",
+  "stem": "Question 13, part (a). Paula and Bill's dairy calving records for 2023 from their 120-cow dairy herd are shown in the table below. A mixture of AI and an Aubrac beef stock bull was used for breeding animals including their own replacements.",
   "questionText": "Calculate the replacement rate for the herd.",
   "tariffModel": {
    "kind": "fixed",
@@ -26811,7 +26813,8 @@
     "contextNote": "The scheme prints the working as 25 over 120, times 100 = 20.8% or 21% replacement rate, and awards 1 mark for the method and 1 for the final answer — but if the answer is given and correct with no method, award 2."
    }
   ],
-  "notes": "One row because the scheme's only quotable answer content is the value. Its fraction is typeset with the numerator on its own line (which the gate drops as a marks-only line) and the words 'or ... replacement rate' in a maths italic font, both of which the text extraction loses, so the row quotes the figure and the contextNote carries the working and the 1m/1m split. Checked against the scheme markdown line 498 (scheme page 18): '20.8% or 21% replacement rate' confirmed. The stem carries only what the paper prints — it deliberately does NOT say which calves are the replacements, because working that out is the question."
+  "notes": "One row because the scheme's only quotable answer content is the value. Its fraction is typeset with the numerator on its own line (which the gate drops as a marks-only line) and the words 'or ... replacement rate' in a maths italic font, both of which the text extraction loses, so the row quotes the figure and the contextNote carries the working and the 1m/1m split. Checked against the scheme markdown line 498 (scheme page 18): '20.8% or 21% replacement rate' confirmed. The stem carries only what the paper prints — it deliberately does NOT say which calves are the replacements, because working that out is the question.",
+  "figureKey": "agricultural-science-2025-HL-paper-p21-i2"
  },
  {
   "id": "agsci-2025-hl-q13av",
