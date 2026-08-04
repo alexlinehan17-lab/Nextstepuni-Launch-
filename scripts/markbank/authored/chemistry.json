@@ -8667,7 +8667,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2023 HL Q4(a)",
-  "stem": "Question 4: answer eight of the items (a), (b), (c), etc. Six marks are allocated to each item.",
+  "stem": "answer eight of the items (a), (b), (c), etc. Six marks are allocated to each item.",
   "questionText": "Define (i) atomic number, (ii) mass number.",
   "tariffModel": {
    "kind": "fixed"
@@ -8698,7 +8698,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2023 HL Q4(b)",
-  "stem": "Question 4: answer eight of the items (a), (b), (c), etc. Six marks are allocated to each item.",
+  "stem": "answer eight of the items (a), (b), (c), etc. Six marks are allocated to each item.",
   "questionText": "Taking the valency of gallium (Ga) as 3, write the formula for the simplest compound formed from (i) gallium and nitrogen, (ii) gallium and oxygen.",
   "tariffModel": {
    "kind": "fixed"
@@ -8729,7 +8729,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2023 HL Q4(c)",
-  "stem": "Question 4: answer eight of the items (a), (b), (c), etc. Six marks are allocated to each item.",
+  "stem": "answer eight of the items (a), (b), (c), etc. Six marks are allocated to each item.",
   "questionText": "Predict the two possible shapes of a molecule ABn where n = 2.",
   "tariffModel": {
    "kind": "fixed"
@@ -8764,7 +8764,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2023 HL Q4(d)",
-  "stem": "Question 4: answer eight of the items (a), (b), (c), etc. Six marks are allocated to each item.",
+  "stem": "answer eight of the items (a), (b), (c), etc. Six marks are allocated to each item.",
   "questionText": "Identify the energy change associated with the following balanced equation: X+ (g) → X2+ (g) + e–",
   "tariffModel": {
    "kind": "fixed"
@@ -8795,7 +8795,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2023 HL Q4(e)",
-  "stem": "Question 4: answer eight of the items (a), (b), (c), etc. Six marks are allocated to each item.",
+  "stem": "answer eight of the items (a), (b), (c), etc. Six marks are allocated to each item.",
   "questionText": "What is diffusion?",
   "tariffModel": {
    "kind": "fixed"
@@ -8834,7 +8834,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2023 HL Q4(g)",
-  "stem": "Question 4: answer eight of the items (a), (b), (c), etc. Six marks are allocated to each item.",
+  "stem": "answer eight of the items (a), (b), (c), etc. Six marks are allocated to each item.",
   "questionText": "A laboratory technician diluted 25.0 cm3 of a 0.12 M solution to 30.0 cm3 by adding deionised water. Find the new concentration of the solution in moles per litre.",
   "tariffModel": {
    "kind": "fixed"
@@ -8871,7 +8871,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2023 HL Q4(h)",
-  "stem": "Question 4: answer eight of the items (a), (b), (c), etc. Six marks are allocated to each item.",
+  "stem": "answer eight of the items (a), (b), (c), etc. Six marks are allocated to each item.",
   "questionText": "What is an enzyme?",
   "tariffModel": {
    "kind": "fixed"
@@ -8909,7 +8909,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2023 HL Q4(j)",
-  "stem": "Question 4: answer eight of the items (a), (b), (c), etc. Six marks are allocated to each item.",
+  "stem": "answer eight of the items (a), (b), (c), etc. Six marks are allocated to each item.",
   "questionText": "Give the oxidation number of sulfur (i) in SO42–, (ii) in Na2S4O6.",
   "tariffModel": {
    "kind": "fixed"
@@ -8948,7 +8948,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2023 HL Q4(l)A",
-  "stem": "Question 4(l): answer part A or part B. Six marks are allocated to the item.",
+  "stem": "answer part A or part B. Six marks are allocated to the item.",
   "questionText": "Write one or more balanced equations to explain how limestone can be used as a scrubber to remove sulfur dioxide from waste gases.",
   "tariffModel": {
    "kind": "fixed"
@@ -8977,7 +8977,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2023 HL Q4(l)B",
-  "stem": "Question 4(l): answer part A or part B. Six marks are allocated to the item.",
+  "stem": "answer part A or part B. Six marks are allocated to the item.",
   "questionText": "Explain why metallic crystals are good conductors of electricity.",
   "tariffModel": {
    "kind": "fixed"
@@ -29181,7 +29181,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2024 OL Q4(a)",
-  "stem": "Question 4: eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
+  "stem": "eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
   "questionText": "A cup of coffee contains 0.095 g of caffeine (C8H10N4O2). Calculate the number of moles of caffeine in this cup.",
   "tariffModel": {
    "kind": "orderedSplit",
@@ -29214,7 +29214,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2024 OL Q4(b)",
-  "stem": "Question 4: eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
+  "stem": "eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
   "questionText": "What is an ionic bond?",
   "tariffModel": {
    "kind": "orderedSplit",
@@ -29246,7 +29246,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2024 OL Q4(c)",
-  "stem": "Question 4: eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
+  "stem": "eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
   "questionText": "What are isotopes?",
   "tariffModel": {
    "kind": "orderedSplit",
@@ -29286,7 +29286,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2024 OL Q4(d)",
-  "stem": "Question 4: eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
+  "stem": "eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
   "questionText": "Name a piece of apparatus used to measure the heat of combustion of a compound.",
   "tariffModel": {
    "kind": "fixed"
@@ -29312,7 +29312,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2024 OL Q4(e)",
-  "stem": "Question 4: eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
+  "stem": "eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
   "questionText": "Write a balanced chemical equation for the reaction of magnesium hydroxide (Mg(OH)2) with hydrochloric acid to produce magnesium chloride (MgCl2) and water.",
   "tariffModel": {
    "kind": "fixed"
@@ -29338,7 +29338,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2024 OL Q4(g)",
-  "stem": "Question 4: eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
+  "stem": "eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
   "questionText": "Identify the carboxylic acid found in the stings of nettles and ants.",
   "tariffModel": {
    "kind": "fixed"
@@ -29368,7 +29368,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2024 OL Q4(h)",
-  "stem": "Question 4: eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
+  "stem": "eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
   "questionText": "Describe what happens during the primary stage of sewage treatment.",
   "tariffModel": {
    "kind": "fixed"
@@ -29398,7 +29398,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2024 OL Q4(i)",
-  "stem": "Question 4: eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
+  "stem": "eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
   "questionText": "When a small amount of air freshener is sprayed in a room it is soon detected in all parts of the room. Explain why this occurs.",
   "tariffModel": {
    "kind": "fixed"
@@ -29427,7 +29427,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2024 OL Q4(j)",
-  "stem": "Question 4: eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
+  "stem": "eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
   "questionText": "Define oxidation in terms of electron transfer.",
   "tariffModel": {
    "kind": "fixed"
@@ -29454,7 +29454,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2024 OL Q4(l) A",
-  "stem": "Question 4: eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
+  "stem": "eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
   "questionText": "Explain the term \"continuous process\" in industrial chemistry.",
   "tariffModel": {
    "kind": "fixed"
@@ -29479,7 +29479,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2024 OL Q4(l) B",
-  "stem": "Question 4: eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
+  "stem": "eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
   "questionText": "Name the scientist pictured who used X-ray crystallography to determine the structure of vitamin B12.",
   "tariffModel": {
    "kind": "fixed"

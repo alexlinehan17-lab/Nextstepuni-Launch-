@@ -306,12 +306,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q8a", topicId: "agsci-4-3-1", conceptId: "carcase-conformation",
     section: "A", questionRef: "2021 HL Q8(a)",
-    stem: "The following is a kill out sheet (lairage docket) for 2 Aberdeen Angus (AA) heifers and 2 Limousine (LM) heifers from John's farm. Analyse the sheet and answer the questions which follow. Tag number / Breed / Sex / Age (months) / Conformation / Fat / Carcase Weight (kg): 217981261073, AA, E – Heifer, Under 24, O+, 3+, 308 | 235207471646, AA, E – Heifer, Under 24, R‐, 4‐, 321 | 215038714153, LM, E – Heifer, Under 24, R+, 3+, 367 | 214346622696, LM, E – Heifer, Under 24, U‐, 3+, 385.",
+    stem: "The following is a kill out sheet (lairage docket) for 2 Aberdeen Angus (AA) heifers and 2 Limousine (LM) heifers from John's farm. Analyse the sheet and answer the questions which follow.",
     questionText: "Briefly explain the term conformation.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Shape and muscle distribution of the animal", marks: 2 },
     ],
+    figure: {
+          "candId": "agricultural-science-2021-HL-paper-p13-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-HL-paper-p13-i0.png",
+          "srcHash": "a0b4302e9b0be91064b8211bf6754a37",
+          "alt": "A table from the exam paper. Columns: Tag number, Breed, Sex, Age (months), Conformation, Fat, Carcase Weight (kg). Rows: 217981261073, 235207471646, 215038714153, 214346622696. 5 rows by 7 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -893,13 +901,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
     id: "agsci-2022-hl-q7b", topicId: "agsci-4-3-2", conceptId: "average-daily-gain-calculation",
     section: "A", questionRef: "2022 HL Q7(b)",
-    stem: "Sadie, a suckler farmer, is participating in the Beef Environmental Efficiency Programme (BEEP). Table — 200 Day Weight (kg): Calf 3 = 333; Dam of calf 3 = 698. (Adapted from ICBF, 2021)",
+    stem: "Sadie, a suckler farmer, is participating in the Beef Environmental Efficiency Programme (BEEP). The 200 day weights from her Weaning Performance Report are shown in the table below. (Adapted from ICBF, 2021)",
     questionText: "Calculate the average daily gain (ADG) of calf 3 if its birth weight was 50kg.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "333 – 50 = 283 days", marks: 2, contextNote: "The weight gained: 200-day weight minus birth weight." },
     { id: "r-2", kind: "point", verbatim: "283÷200 = 1.4 kg ADG", marks: 2, contextNote: "The scheme adds: (If a candidate just gives 1.4kg then award 4m)." },
     ],
+    figure: {
+          "candId": "agricultural-science-2022-HL-paper-p10-i3",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p10-i3.png",
+          "srcHash": "d47a8ae053e8dde15699fe484208c169",
+          "alt": "A table from the exam paper. Columns: 200 Day Weight (kg), Weaning Efficiency (%). Rows: Calf 2, Dam of calf 2, Calf 3, Dam of calf 3. 5 rows by 3 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -936,12 +952,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
     id: "agsci-2022-hl-q8aii", topicId: "agsci-4-3-3", conceptId: "reducing-antibiotic-use",
     section: "A", questionRef: "2022 HL Q8(a)(ii)",
-    stem: "The European Commission has set targets for sustainable food production by 2030, including reducing the use of antibiotics for farm animals. (Adapted from European Commission, 2020)",
+    stem: "The European Commission has set targets for sustainable food production by 2030, shown in the table below. (Adapted from European Commission, 2020)",
     questionText: "Explain one way farmers can reduce the use of antibiotics for farm animals.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Targeted treatment of cows with high SCC or cull cow", marks: 3, accepts: ["isolate sick animals or good hygiene or ‘all in all out’ policy or closed herd or restrict visitors or vehicles to prevent infection","reduce stocking density which decreases animal contact","good ventilation in animal housing to lessen risk of airborne pathogens","good vaccination programme","breed for genetic merit or EBI health index"], contextNote: "One way only, explained — the explanation is part of the same 3-mark point." },
     ],
+    figure: {
+          "candId": "agricultural-science-2022-HL-paper-p11-i2",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p11-i2.png",
+          "srcHash": "5b0812fecf76c9c09cf3a517483a88d6",
+          "alt": "A table from the exam paper. Columns: 2030 Targets for Sustainable Food Production. Rows: Pesticides, Reduce the overall use and risk of chemical and hazardous pesticides. 3 rows by 4 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1168,12 +1192,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
     id: "agsci-2022-hl-q12ai", topicId: "agsci-3-3-3", conceptId: "dry-matter-digestibility",
     section: "A", questionRef: "2022 HL Q12(a)(i)",
-    stem: "Answer either (a) or (b). (a) The results of silage analysis from a beef enterprise — % Dry Matter Digestibility (DMD %): 75 / 70 / 65 / 60; Harvest date: 20 May / 2 June / 15 June / 28 June; Silage tonne Dry Matter per ha: 4.6 / 6.0 / 7.0 / 7.7; Intake (kg/day): 9.0 / 8.3 / 7.6 / 7.0; Liveweight gain (kg/day): 0.83 / 0.66 / 0.49 / 0.31. (Adapted from Teagasc, 2021)",
+    stem: "Answer either (a) or (b). (a) The results of silage analysis from a beef enterprise are presented in the table below. (Adapted from Teagasc, 2021)",
     questionText: "Explain Dry Matter Digestibility.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The portion of the dry matter in a feed that is digested by animals", marks: 2 },
     ],
+    figure: {
+          "candId": "agricultural-science-2022-HL-paper-p16-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p16-i1.png",
+          "srcHash": "25b6bd06f89b5c5004a0124398ee1090",
+          "alt": "A table from the exam paper. Columns: Silage Quality. Rows: % Dry Matter Digestibility (DMD %), Harvest date, Silage tonne Dry Matter per ha, Intake (kg/day), Liveweight gain (kg/day). 6 rows by 5 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1283,7 +1315,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q1aii", topicId: "agsci-4-2", conceptId: "dual-purpose-breed",
     section: "A", questionRef: "2023 HL Q1(a)(ii)",
-    stem: "Question 1. Answer either (a) or (b). Part (i) shows photographs of three cattle breeds labelled A, B and C; the scheme gives C as the Simmental. The term underlined in the paper is 'dual-purpose breed'.",
+    stem: "Answer either (a) or (b). Part (i) shows photographs of three cattle breeds labelled A, B and C; the scheme gives C as the Simmental. The term underlined in the paper is 'dual-purpose breed'.",
     questionText: "Breed C is a dual-purpose breed. Explain the underlined term.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -1297,7 +1329,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q1aiii", topicId: "agsci-4-3-3", conceptId: "purebred-sire-benefits",
     section: "A", questionRef: "2023 HL Q1(a)(iii)",
-    stem: "Question 1. Answer either (a) or (b).",
+    stem: "Answer either (a) or (b).",
     questionText: "Todd wanted to purchase a purebred bull. Explain the importance of using a purebred sire in a beef herd.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -1311,7 +1343,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q1bii", topicId: "agsci-4-3-1", conceptId: "breed-suitability-to-enterprise",
     section: "A", questionRef: "2023 HL Q1(b)(ii)",
-    stem: "Question 1. Answer either (a) or (b). Read the article and answer the questions which follow. Fleckvieh Cattle — This Austrian breed is renowned for exceptional fertility, longevity, calving ease, a low somatic cell count, strong feet, and overall good health traits. This breed reportedly milks roughly 6,000kg in their first lactation and over 7,000kg in their later lactations. They have an estimated milk fat of 4.2% and protein of 3.7%. (Adapted from thatsfarming.com, 2020)",
+    stem: "Answer either (a) or (b). Read the article and answer the questions which follow. Fleckvieh Cattle — This Austrian breed is renowned for exceptional fertility, longevity, calving ease, a low somatic cell count, strong feet, and overall good health traits. This breed reportedly milks roughly 6,000kg in their first lactation and over 7,000kg in their later lactations. They have an estimated milk fat of 4.2% and protein of 3.7%. (Adapted from thatsfarming.com, 2020)",
     questionText: "Using evidence from the article, suggest which Irish cattle industry this breed is most suited.",
     tariffModel: {"kind":"fixed","notation":"2 + 2"}, totalMarks: 4,
     rows: [
@@ -1556,7 +1588,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q9ai", topicId: "agsci-3-3-2", conceptId: "pre-emergence-hoeing",
     section: "A", questionRef: "2023 HL Q9(a)(i)",
-    stem: "Question 9. Answer either (a) or (b). Read the article and answer the questions which follow. The Farmdroid has landed in Ireland — The Farmdroid, which won the National Ploughing Championship 2022 machine of the year is a fully functioning solar powered field vehicle that automates sowing and mechanical weeding. The core principle of the machine is that it relies on GPS location data to go about its daily tasks. The tasks of sowing and mechanical weed control in crops are guided by precision GPS. Using this GPS, the Farmdroid can sow the seeds far enough apart to note and record where each individual seed has been planted in a field. The company claims that accuracy is to within 8mm, allowing even pre-emergence hoeing of the soil both between the rows and in between the plants themselves in most crops. (Adapted from Agriland, 2022) The term underlined in the article is 'pre-emergence hoeing'.",
+    stem: "Answer either (a) or (b). Read the article and answer the questions which follow. The Farmdroid has landed in Ireland — The Farmdroid, which won the National Ploughing Championship 2022 machine of the year is a fully functioning solar powered field vehicle that automates sowing and mechanical weeding. The core principle of the machine is that it relies on GPS location data to go about its daily tasks. The tasks of sowing and mechanical weed control in crops are guided by precision GPS. Using this GPS, the Farmdroid can sow the seeds far enough apart to note and record where each individual seed has been planted in a field. The company claims that accuracy is to within 8mm, allowing even pre-emergence hoeing of the soil both between the rows and in between the plants themselves in most crops. (Adapted from Agriland, 2022) The term underlined in the article is 'pre-emergence hoeing'.",
     questionText: "Explain the underlined term.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -1570,7 +1602,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q9aii", topicId: "agsci-3-3-2", conceptId: "precision-farming-benefits",
     section: "A", questionRef: "2023 HL Q9(a)(ii)",
-    stem: "Question 9. Answer either (a) or (b). The Farmdroid is a fully functioning solar powered field vehicle that automates sowing and mechanical weeding, guided by precision GPS to within 8mm. (Adapted from Agriland, 2022)",
+    stem: "Answer either (a) or (b). The Farmdroid is a fully functioning solar powered field vehicle that automates sowing and mechanical weeding, guided by precision GPS to within 8mm. (Adapted from Agriland, 2022)",
     questionText: "Explain how the Farmdroid can benefit the environment and the farmer.",
     tariffModel: {"kind":"fixed","notation":"2(3)"}, totalMarks: 6,
     rows: [
@@ -1585,7 +1617,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q9aiii", topicId: "agsci-3-3-2", conceptId: "agri-technology-benefits",
     section: "A", questionRef: "2023 HL Q9(a)(iii)",
-    stem: "Question 9. Answer either (a) or (b). The Farmdroid relies on GPS location data to go about its daily tasks. (Adapted from Agriland, 2022)",
+    stem: "Answer either (a) or (b). The Farmdroid relies on GPS location data to go about its daily tasks. (Adapted from Agriland, 2022)",
     questionText: "Apart from GPS, outline one piece of technology that you have studied that would benefit both the farmer and the environment.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -1599,7 +1631,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q9bi", topicId: "agsci-4-3-3", conceptId: "pregnancy-scanning-benefits",
     section: "A", questionRef: "2023 HL Q9(b)(i)",
-    stem: "Question 9. Answer either (a) or (b). Scanning female animals to determine if they are pregnant is an important job that is carried out on farms.",
+    stem: "Answer either (a) or (b). Scanning female animals to determine if they are pregnant is an important job that is carried out on farms.",
     questionText: "Briefly describe the benefits of pregnancy scanning in animals.",
     tariffModel: {"kind":"fixed","notation":"2(3)"}, totalMarks: 6,
     rows: [
@@ -1614,7 +1646,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q9bii", topicId: "agsci-4-3-2", conceptId: "twin-bearing-heifer-management",
     section: "A", questionRef: "2023 HL Q9(b)(ii)",
-    stem: "Question 9. Answer either (a) or (b). Jack was scanning beef heifers and scanned a heifer carrying twins.",
+    stem: "Answer either (a) or (b). Jack was scanning beef heifers and scanned a heifer carrying twins.",
     questionText: "Describe the management implications for this heifer under the headings which follow: Feeding in late gestation; Calving.",
     tariffModel: {"kind":"fixed","notation":"2(2)"}, totalMarks: 4,
     rows: [
@@ -1629,7 +1661,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q10aii", topicId: "agsci-4-1", conceptId: "monogastric-gut-microorganisms",
     section: "A", questionRef: "2023 HL Q10(a)(ii)",
-    stem: "Question 10. Answer either (a) or (b).",
+    stem: "Answer either (a) or (b).",
     questionText: "Outline the role of microorganisms in the monogastric digestive system.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -1643,7 +1675,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q10bi", topicId: "agsci-4-3-2", conceptId: "pig-ration-ingredients",
     section: "A", questionRef: "2023 HL Q10(b)(i)",
-    stem: "Question 10. Answer either (a) or (b).\n(b) The table shows the composition of different pig rations.\nAnalyse the data and answer the questions which follow.",
+    stem: "Answer either (a) or (b).\n(b) The table shows the composition of different pig rations.\nAnalyse the data and answer the questions which follow.",
     questionText: "Explain the function of soya bean and rice bran in pig diets.",
     tariffModel: {"kind":"fixed","notation":"3 + 3"}, totalMarks: 6,
     rows: [
@@ -1666,7 +1698,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q10bii", topicId: "agsci-4-3-2", conceptId: "crude-protein-requirement-with-age",
     section: "A", questionRef: "2023 HL Q10(b)(ii)",
-    stem: "Question 10. Answer either (a) or (b). Crude protein in the rations falls from 16% (15–30kg pigs) to 15% (30–60kg) to 14% (over 60kg).",
+    stem: "Answer either (a) or (b). Crude protein in the rations falls from 16% (15–30kg pigs) to 15% (30–60kg) to 14% (over 60kg).",
     questionText: "Outline one reason for the decreasing crude protein in the different pig rations.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -1680,7 +1712,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q10biii", topicId: "agsci-4-1", conceptId: "monogastric-cellulose-digestion",
     section: "A", questionRef: "2023 HL Q10(b)(iii)",
-    stem: "Question 10. Answer either (a) or (b). There is no grass included in the diet of the monogastric animal.",
+    stem: "Answer either (a) or (b). There is no grass included in the diet of the monogastric animal.",
     questionText: "There is no grass included in the diet of the monogastric animal. Briefly describe why this is the case.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -1694,13 +1726,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q11a", topicId: "agsci-4-3-2", conceptId: "calves-per-cow-per-year",
     section: "A", questionRef: "2023 HL Q11(a)",
-    stem: "Tim wants to improve the reproductive performance of his suckler cows on a grass-based system. He carried out research and found the key performance indicators (KPI) for a spring calving herd (national average / national target): Calves / cow / year 0.86 / 0.95; Calving interval (days) 396 / 365; 6-week calving rate (%) 55 / 80. (Adapted from Teagasc, 2022)",
+    stem: "Tim wants to improve the reproductive performance of his suckler cows on a grass-based system. He carried out research and found the key performance indicators (KPI) for a spring calving herd, shown in the table below. (Adapted from Teagasc, 2022)",
     questionText: "Achieving a target of 0.95 will require excellent cow and calf management. Outline ways Tim can achieve this target.",
     tariffModel: {"kind":"fixed","notation":"2(3)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Good heat detection", marks: 3, contextNote: "2(3) funds ANY two ways from the scheme's pool, not these two specifically — if both of your ways appear in the list on the next row, this slot is filled too." },
     { id: "r-2", kind: "alt", verbatim: "good cow or sire fertility", marks: 3, accepts: ["grading up or cull poor performing cows","good hygiene at calving","enough good quality colostrum at birth","highly digestible feed (or concentrate supplementation) (to ensure good milk production or increased liveweight gain)","scanning of cows to accurately know calving date","proper supervision at calving or assist or vet if calving difficulties","iodine on navel at birth","vaccination programme"], contextNote: "Any way from the scheme's pool fills this slot." },
     ],
+    figure: {
+          "candId": "agricultural-science-2023-HL-paper-p16-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p16-i1.png",
+          "srcHash": "f81dbcb9f5975f1de1b56da6d2508c0f",
+          "alt": "A table from the exam paper. Columns: Key Performance Indicators (KPI), National Average, National Target. Rows: Calves / cow / year, Calving interval (days), 6-week calving rate (%). 4 rows by 3 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2065,13 +2105,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q10b", topicId: "agsci-3-2", conceptId: "multi-species-sward-species",
     section: "A", questionRef: "2024 HL Q10(b)",
-    stem: "Question 10, Section A, worth 10 marks in total; this part carries 4. Above the questions the paper prints: 'The pictures below show two swards with a varying level of diversity. Analyse the pictures and answer the questions that follow.' The two swards are drawn as cutaway blocks headed A and B, each showing the plants above ground and their roots running down through the same layered soil profile. Part (a), immediately above this one, asks which of the two pictures is the multi-species (polyculture) sward; this part asks what could be sown in such a sward.",
+    stem: "Question 10, Section A, worth 10 marks in total; this part carries 4. The pictures below show two swards with a varying level of diversity. Analyse the pictures and answer the questions that follow. Part (a), immediately above this one, asks which picture, A or B, is more likely to be the multi-species (polyculture) sward; this part asks what could be sown in such a sward.",
     questionText: "List two plants that could be included in the multi-species sward.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "PRG", marks: 2, accepts: ["red clover","white clover","plantain","chicory","timothy"], contextNote: "First plant named — 2 marks. Any one from the scheme's list (PRG = perennial ryegrass)." },
     { id: "r-2", kind: "alt", verbatim: "red clover", marks: 2, accepts: ["PRG","white clover","plantain","chicory","timothy"], contextNote: "Second plant named — 2 marks. Any other one from the same list." },
     ],
+    figure: {
+          "candId": "agricultural-science-2024-HL-paper-p15-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p15-i0.png",
+          "srcHash": "626e5cb38fb3546e878ca328bfb03095",
+          "alt": "The Question 10 sward-diversity figure. Heading text above reads 'Question 10 / The pictures below show two swards with a varying level of diversity. Analyse the pictures and answer the questions that follow.' Two illustrated soil-profile blocks stand side by side, each headed by a bold letter. A shows a uniform stand of narrow green grass blades, all of one type and much the same height, growing from a dark brown topsoil layer; their roots are short, fine, reddish-brown and fibrous and stay entirely within the top band of soil. B shows a mixed stand containing several different plant types - fine grasses, taller darker grass stems, broad rounded leaves, small clover-like trifoliate leaves and a scatter of pale lilac/blue flower heads; below ground the roots are far more varied, with several thick pale taproots driving down through the dark topsoil and the darker band beneath it into the tan subsoil. Both blocks share the same layered profile: dark brown topsoil, a darker brown band, a tan stony subsoil with scattered grey stones and a grey stony layer at the base. Below the figure: '(a) Identify which picture A or B is more likely to be a multi-species (polyculture) sward.' with an answer box, and '(b) List two plants that could be included in the multi-species sward.' with numbered answer lines.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2089,7 +2137,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "agricultural-science-2024-HL-paper-p15-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p15-i0.png",
-          "srcHash": "a5f1fa1406da97deca855bbf9c6e9bec",
+          "srcHash": "626e5cb38fb3546e878ca328bfb03095",
           "alt": "The Question 10 sward-diversity figure. Heading text above reads 'Question 10 / The pictures below show two swards with a varying level of diversity. Analyse the pictures and answer the questions that follow.' Two illustrated soil-profile blocks stand side by side, each headed by a bold letter. A shows a uniform stand of narrow green grass blades, all of one type and much the same height, growing from a dark brown topsoil layer; their roots are short, fine, reddish-brown and fibrous and stay entirely within the top band of soil. B shows a mixed stand containing several different plant types - fine grasses, taller darker grass stems, broad rounded leaves, small clover-like trifoliate leaves and a scatter of pale lilac/blue flower heads; below ground the roots are far more varied, with several thick pale taproots driving down through the dark topsoil and the darker band beneath it into the tan subsoil. Both blocks share the same layered profile: dark brown topsoil, a darker brown band, a tan stony subsoil with scattered grey stones and a grey stony layer at the base. Below the figure: '(a) Identify which picture A or B is more likely to be a multi-species (polyculture) sward.' with an answer box, and '(b) List two plants that could be included in the multi-species sward.' with numbered answer lines.",
           "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
@@ -2515,7 +2563,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "agricultural-science-2025-HL-paper-p15-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-p15-i0.png",
-          "srcHash": "4594187453360f8c3df2b63b04494ad5",
+          "srcHash": "2c52332c6e300b27c955add2b7f42020",
           "alt": "Question 9(b) band. Printed text reads 'Or', then '(b) The results of the investigation to determine the pH of a number of fields are shown in the table below. Analyse the table and answer the questions that follow.' Below the text is a small two-column data table: the single column heading 'pH' sits in a pale peach shaded cell, and three pale-blue shaded row headings give 'Field 1' with value 5.8, 'Field 2' with value 6.6 and 'Field 3' with value 6.2. To the right is a rounded-corner colour photograph of an Irish tillage landscape: a large field of ripening golden barley filling the foreground and middle distance, a green headland and hedgerow strip to the right, a line of trees and a low blue-grey hill range on the horizon, under a blue sky with heavy white cumulus cloud. Beneath these is part (i) 'Identify which fields are most suitable for growing barley crops with an optimum growing range of 6.0 - 7.0.' with a two-row blank answer box, and the first line of part (ii).",
           "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
@@ -2528,12 +2576,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
     id: "agsci-2025-hl-q9bii", topicId: "agsci-2-3", conceptId: "liming-to-raise-ph",
     section: "A", questionRef: "2025 HL Q9(b)(ii)",
-    stem: "Barley crops grow best between pH 6.0 and 7.0. Field 1 tested at pH 5.8, Field 2 at pH 6.6 and Field 3 at pH 6.2.",
+    stem: "Jack was carrying out research to see if he could sow barley in his fields and found that barley crops grow best between pH 6.0 and 7.0. The results of the investigation to determine the pH of a number of fields are shown in the table below.",
     questionText: "For fields not suitable for barley production, outline how Jack could adjust the pH to ensure he could sow barley in that field in the future.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Liming the soil to raise pH", marks: 4 },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-HL-paper-p15-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-p15-i0.png",
+          "srcHash": "2c52332c6e300b27c955add2b7f42020",
+          "alt": "Question 9(b) band. Printed text reads 'Or', then '(b) The results of the investigation to determine the pH of a number of fields are shown in the table below. Analyse the table and answer the questions that follow.' Below the text is a small two-column data table: the single column heading 'pH' sits in a pale peach shaded cell, and three pale-blue shaded row headings give 'Field 1' with value 5.8, 'Field 2' with value 6.6 and 'Field 3' with value 6.2. To the right is a rounded-corner colour photograph of an Irish tillage landscape: a large field of ripening golden barley filling the foreground and middle distance, a green headland and hedgerow strip to the right, a line of trees and a low blue-grey hill range on the horizon, under a blue sky with heavy white cumulus cloud. Beneath these is part (i) 'Identify which fields are most suitable for growing barley crops with an optimum growing range of 6.0 - 7.0.' with a two-row blank answer box, and the first line of part (ii).",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2771,7 +2827,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q14ci", topicId: "agsci-4-3-3", conceptId: "liver-fluke-score-interpretation",
     section: "B", questionRef: "2021 HL Q14(c)(i)",
-    stem: "Question 14 (c). The following is a Beef HealthCheck report. The report is to assist farmers and their veterinary practitioners to control losses due to liver fluke and pneumonia through capture, analysis and reporting of abattoir data from post mortem meat inspections. Analyse and interpret the report and answer the questions that follow. LIVER SCORES (liver lesions result in reduced performance) — 1 Normal liver: no liver abnormalities detected. 2 Liver damage by fluke but no live fluke: fluke may not be observed because the animal was (i) treated and cured, (ii) has undergone 'self‐cure' or (iii) live fluke may have been present but not observed. 3 Liver damage by fluke and live fluke: fluke may be present because the animal was (i) not treated, (ii) re‐infected after a previous treatment, (iii) treated with a product that only kills adult fluke leaving young fluke alive, (iv) given a product to which the fluke have become resistant. 4 Liver other: liver damage due to other causes, e.g. tumours. 5 Liver abscess: may occur following gut damage from a high grain diet or as an infection from a 'navel ill' or other infection. LUNG SCORES (lung lesions result in reduced performance) — 1 Normal lung: no lung abnormalities detected. 2 Limited lung damage as a result of pneumonia (viral / bacterial infection). 3 Extensive lung damage as a result of pneumonia (viral / bacterial infection). 4 Lung other: lung damage due to other causes, e.g. abscess or tumour. THE REPORT — Tag | Sex | Age (months) | Carcase (kg) | Liver Score | Lung Score: IE 1234567-8-0001 | E | 20 | 330 | 1 | 3 · IE 1234567-8-0002 | C | 22 | 360 | 3 / 5 | 1 · IE 1234567-8-0003 | D | 40 | 400 | 2 | 1 · IE 1234567-8-0004 | B | 44 | 500 | 1 | 2 · IE 1234567-8-0005 | E | 19 | 340 | 3 | 1 · IE 1234567-8-0006 | C | 20 | 350 | 2 | 4 · IE 1234567-8-0007 | D | 56 | 410 | 4 | 1. Sex key: A = young bull, B = bull, C = steer, D = cow, E = heifer. (Adapted from Animal Health Ireland, 2019)",
+    stem: "The following is a Beef HealthCheck report. The report is to assist farmers and their veterinary practitioners to control losses due to liver fluke and pneumonia through capture, analysis and reporting of abattoir data from post mortem meat inspections. Analyse and interpret the report and answer the questions that follow. LIVER SCORES (liver lesions result in reduced performance) — 1 Normal liver: no liver abnormalities detected. 2 Liver damage by fluke but no live fluke: fluke may not be observed because the animal was (i) treated and cured, (ii) has undergone 'self‐cure' or (iii) live fluke may have been present but not observed. 3 Liver damage by fluke and live fluke: fluke may be present because the animal was (i) not treated, (ii) re‐infected after a previous treatment, (iii) treated with a product that only kills adult fluke leaving young fluke alive, (iv) given a product to which the fluke have become resistant. 4 Liver other: liver damage due to other causes, e.g. tumours. 5 Liver abscess: may occur following gut damage from a high grain diet or as an infection from a 'navel ill' or other infection. LUNG SCORES (lung lesions result in reduced performance) — 1 Normal lung: no lung abnormalities detected. 2 Limited lung damage as a result of pneumonia (viral / bacterial infection). 3 Extensive lung damage as a result of pneumonia (viral / bacterial infection). 4 Lung other: lung damage due to other causes, e.g. abscess or tumour. THE REPORT — Tag | Sex | Age (months) | Carcase (kg) | Liver Score | Lung Score: IE 1234567-8-0001 | E | 20 | 330 | 1 | 3 · IE 1234567-8-0002 | C | 22 | 360 | 3 / 5 | 1 · IE 1234567-8-0003 | D | 40 | 400 | 2 | 1 · IE 1234567-8-0004 | B | 44 | 500 | 1 | 2 · IE 1234567-8-0005 | E | 19 | 340 | 3 | 1 · IE 1234567-8-0006 | C | 20 | 350 | 2 | 4 · IE 1234567-8-0007 | D | 56 | 410 | 4 | 1. Sex key: A = young bull, B = bull, C = steer, D = cow, E = heifer. (Adapted from Animal Health Ireland, 2019)",
     questionText: "Determine the liver score for the farmer’s 22 month old steer and state one conclusion you can make about the liver health of the steer based on the liver score.",
     tariffModel: {"kind":"orderedSplit","notation":"3"}, totalMarks: 3,
     rows: [
@@ -2786,7 +2842,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q14cii", topicId: "agsci-4-3-3", conceptId: "lung-score-interpretation",
     section: "B", questionRef: "2021 HL Q14(c)(ii)",
-    stem: "Question 14 (c). The following is a Beef HealthCheck report, compiled from abattoir post mortem meat inspection data to help control losses due to liver fluke and pneumonia. LIVER SCORES: 1 normal liver; 2 liver damage by fluke but no live fluke; 3 liver damage by fluke and live fluke; 4 liver other (e.g. tumours); 5 liver abscess. LUNG SCORES (lung lesions result in reduced performance): 1 Normal lung: no lung abnormalities detected. 2 Limited lung damage: this animal had limited lung damage as a result of pneumonia (viral / bacterial infection). 3 Extensive lung damage: this animal had extensive lung damage as a result of pneumonia (viral / bacterial infection). 4 Lung other: lung damage due to other causes, e.g. abscess or tumour. THE REPORT — Tag | Sex | Age (months) | Carcase (kg) | Liver Score | Lung Score: IE 1234567-8-0001 | E | 20 | 330 | 1 | 3 · IE 1234567-8-0002 | C | 22 | 360 | 3 / 5 | 1 · IE 1234567-8-0003 | D | 40 | 400 | 2 | 1 · IE 1234567-8-0004 | B | 44 | 500 | 1 | 2 · IE 1234567-8-0005 | E | 19 | 340 | 3 | 1 · IE 1234567-8-0006 | C | 20 | 350 | 2 | 4 · IE 1234567-8-0007 | D | 56 | 410 | 4 | 1. Sex key: A = young bull, B = bull, C = steer, D = cow, E = heifer. (Adapted from Animal Health Ireland, 2019)",
+    stem: "The following is a Beef HealthCheck report, compiled from abattoir post mortem meat inspection data to help control losses due to liver fluke and pneumonia. LIVER SCORES: 1 normal liver; 2 liver damage by fluke but no live fluke; 3 liver damage by fluke and live fluke; 4 liver other (e.g. tumours); 5 liver abscess. LUNG SCORES (lung lesions result in reduced performance): 1 Normal lung: no lung abnormalities detected. 2 Limited lung damage: this animal had limited lung damage as a result of pneumonia (viral / bacterial infection). 3 Extensive lung damage: this animal had extensive lung damage as a result of pneumonia (viral / bacterial infection). 4 Lung other: lung damage due to other causes, e.g. abscess or tumour. THE REPORT — Tag | Sex | Age (months) | Carcase (kg) | Liver Score | Lung Score: IE 1234567-8-0001 | E | 20 | 330 | 1 | 3 · IE 1234567-8-0002 | C | 22 | 360 | 3 / 5 | 1 · IE 1234567-8-0003 | D | 40 | 400 | 2 | 1 · IE 1234567-8-0004 | B | 44 | 500 | 1 | 2 · IE 1234567-8-0005 | E | 19 | 340 | 3 | 1 · IE 1234567-8-0006 | C | 20 | 350 | 2 | 4 · IE 1234567-8-0007 | D | 56 | 410 | 4 | 1. Sex key: A = young bull, B = bull, C = steer, D = cow, E = heifer. (Adapted from Animal Health Ireland, 2019)",
     questionText: "Determine the lung score for the 20 month old heifer and state one conclusion you can make about the lung health of the heifer based on the lung score.",
     tariffModel: {"kind":"orderedSplit","notation":"3"}, totalMarks: 3,
     rows: [
@@ -2801,7 +2857,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q14ciii", topicId: "agsci-4-3-3", conceptId: "herd-level-health-interpretation",
     section: "B", questionRef: "2021 HL Q14(c)(iii)",
-    stem: "Question 14 (c). The following is a Beef HealthCheck report, compiled from abattoir post mortem meat inspection data. Liver scores: 1 normal liver; 2 liver damage by fluke but no live fluke; 3 liver damage by fluke and live fluke; 4 liver other (e.g. tumours); 5 liver abscess. Lung scores: 1 normal lung; 2 limited lung damage from pneumonia; 3 extensive lung damage from pneumonia; 4 lung other (e.g. abscess or tumour). THE REPORT — Tag | Sex | Age (months) | Carcase (kg) | Liver Score | Lung Score: IE 1234567-8-0001 | E | 20 | 330 | 1 | 3 · IE 1234567-8-0002 | C | 22 | 360 | 3 / 5 | 1 · IE 1234567-8-0003 | D | 40 | 400 | 2 | 1 · IE 1234567-8-0004 | B | 44 | 500 | 1 | 2 · IE 1234567-8-0005 | E | 19 | 340 | 3 | 1 · IE 1234567-8-0006 | C | 20 | 350 | 2 | 4 · IE 1234567-8-0007 | D | 56 | 410 | 4 | 1. Sex key: A = young bull, B = bull, C = steer, D = cow, E = heifer. (Adapted from Animal Health Ireland, 2019)",
+    stem: "The following is a Beef HealthCheck report, compiled from abattoir post mortem meat inspection data. Liver scores: 1 normal liver; 2 liver damage by fluke but no live fluke; 3 liver damage by fluke and live fluke; 4 liver other (e.g. tumours); 5 liver abscess. Lung scores: 1 normal lung; 2 limited lung damage from pneumonia; 3 extensive lung damage from pneumonia; 4 lung other (e.g. abscess or tumour). THE REPORT — Tag | Sex | Age (months) | Carcase (kg) | Liver Score | Lung Score: IE 1234567-8-0001 | E | 20 | 330 | 1 | 3 · IE 1234567-8-0002 | C | 22 | 360 | 3 / 5 | 1 · IE 1234567-8-0003 | D | 40 | 400 | 2 | 1 · IE 1234567-8-0004 | B | 44 | 500 | 1 | 2 · IE 1234567-8-0005 | E | 19 | 340 | 3 | 1 · IE 1234567-8-0006 | C | 20 | 350 | 2 | 4 · IE 1234567-8-0007 | D | 56 | 410 | 4 | 1. Sex key: A = young bull, B = bull, C = steer, D = cow, E = heifer. (Adapted from Animal Health Ireland, 2019)",
     questionText: "Comment briefly on the overall health of the seven animals based on the report.",
     tariffModel: {"kind":"fixed","notation":"4"}, totalMarks: 4,
     rows: [
@@ -2815,7 +2871,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q14civ", topicId: "agsci-4-3-3", conceptId: "fluke-and-pneumonia-herd-health-plan",
     section: "B", questionRef: "2021 HL Q14(c)(iv)",
-    stem: "Question 14 (c). The following is a Beef HealthCheck report, compiled from abattoir post mortem meat inspection data to help control losses due to liver fluke and pneumonia. Liver scores: 1 normal liver; 2 liver damage by fluke but no live fluke; 3 liver damage by fluke and live fluke; 4 liver other (e.g. tumours); 5 liver abscess. Lung scores: 1 normal lung; 2 limited lung damage from pneumonia; 3 extensive lung damage from pneumonia; 4 lung other (e.g. abscess or tumour). THE REPORT — Tag | Sex | Age (months) | Carcase (kg) | Liver Score | Lung Score: IE 1234567-8-0001 | E | 20 | 330 | 1 | 3 · IE 1234567-8-0002 | C | 22 | 360 | 3 / 5 | 1 · IE 1234567-8-0003 | D | 40 | 400 | 2 | 1 · IE 1234567-8-0004 | B | 44 | 500 | 1 | 2 · IE 1234567-8-0005 | E | 19 | 340 | 3 | 1 · IE 1234567-8-0006 | C | 20 | 350 | 2 | 4 · IE 1234567-8-0007 | D | 56 | 410 | 4 | 1. Sex key: A = young bull, B = bull, C = steer, D = cow, E = heifer. (Adapted from Animal Health Ireland, 2019)",
+    stem: "The following is a Beef HealthCheck report, compiled from abattoir post mortem meat inspection data to help control losses due to liver fluke and pneumonia. Liver scores: 1 normal liver; 2 liver damage by fluke but no live fluke; 3 liver damage by fluke and live fluke; 4 liver other (e.g. tumours); 5 liver abscess. Lung scores: 1 normal lung; 2 limited lung damage from pneumonia; 3 extensive lung damage from pneumonia; 4 lung other (e.g. abscess or tumour). THE REPORT — Tag | Sex | Age (months) | Carcase (kg) | Liver Score | Lung Score: IE 1234567-8-0001 | E | 20 | 330 | 1 | 3 · IE 1234567-8-0002 | C | 22 | 360 | 3 / 5 | 1 · IE 1234567-8-0003 | D | 40 | 400 | 2 | 1 · IE 1234567-8-0004 | B | 44 | 500 | 1 | 2 · IE 1234567-8-0005 | E | 19 | 340 | 3 | 1 · IE 1234567-8-0006 | C | 20 | 350 | 2 | 4 · IE 1234567-8-0007 | D | 56 | 410 | 4 | 1. Sex key: A = young bull, B = bull, C = steer, D = cow, E = heifer. (Adapted from Animal Health Ireland, 2019)",
     questionText: "Using evidence from this report construct an animal health plan for the farm in relation to future dosing, vaccinations and prevention of these diseases. Provide three recommendations for the farmer.",
     tariffModel: {"kind":"fixed","notation":"3(2)"}, totalMarks: 6,
     rows: [
@@ -2831,7 +2887,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q15ai", topicId: "agsci-1-1", conceptId: "stating-a-hypothesis",
     section: "B", questionRef: "2021 HL Q15(a)(i)",
-    stem: "Question 15 (a). A student carried out an investigation to compare how application rates and source of organic fertiliser in autumn will affect grass dry matter (DM), earthworm population and spring soil nutrient availability in the hope of increasing food production, in‐line with Foodwise 2025.",
+    stem: "A student carried out an investigation to compare how application rates and source of organic fertiliser in autumn will affect grass dry matter (DM), earthworm population and spring soil nutrient availability in the hope of increasing food production, in‐line with Foodwise 2025.",
     questionText: "State a hypothesis for this investigation.",
     tariffModel: {"kind":"fixed","notation":"3"}, totalMarks: 3,
     rows: [
@@ -2845,7 +2901,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q15aii", topicId: "agsci-1-2", conceptId: "independent-and-dependent-variables",
     section: "B", questionRef: "2021 HL Q15(a)(ii)",
-    stem: "Question 15 (a). A student carried out an investigation to compare how application rates and source of organic fertiliser in autumn will affect grass dry matter (DM), earthworm population and spring soil nutrient availability in the hope of increasing food production, in‐line with Foodwise 2025.",
+    stem: "A student carried out an investigation to compare how application rates and source of organic fertiliser in autumn will affect grass dry matter (DM), earthworm population and spring soil nutrient availability in the hope of increasing food production, in‐line with Foodwise 2025.",
     questionText: "Identify the independent and dependent variables in this investigation.",
     tariffModel: {"kind":"fixed","notation":"3 + 3"}, totalMarks: 6,
     rows: [
@@ -2860,7 +2916,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q15aiii", topicId: "agsci-2-3", conceptId: "low-emission-slurry-spreading",
     section: "B", questionRef: "2021 HL Q15(a)(iii)",
-    stem: "Question 15 (a). A student carried out an investigation to compare how application rates and source of organic fertiliser in autumn will affect grass dry matter (DM), earthworm population and spring soil nutrient availability in the hope of increasing food production, in‐line with Foodwise 2025. The paper gives two numbered lines for this part.",
+    stem: "A student carried out an investigation to compare how application rates and source of organic fertiliser in autumn will affect grass dry matter (DM), earthworm population and spring soil nutrient availability in the hope of increasing food production, in‐line with Foodwise 2025. The paper gives two numbered lines for this part.",
     questionText: "Describe two ways a farmer could spread slurry while reducing the impact on the environment.",
     tariffModel: {"kind":"fixed","notation":"2(4)"}, totalMarks: 8,
     rows: [
@@ -2875,7 +2931,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q15aiv", topicId: "agsci-1-2", conceptId: "determining-grass-dry-matter-percentage",
     section: "B", questionRef: "2021 HL Q15(a)(iv)",
-    stem: "Question 15 (a). A student carried out an investigation to compare how application rates and source of organic fertiliser in autumn will affect grass dry matter (DM), earthworm population and spring soil nutrient availability in the hope of increasing food production, in‐line with Foodwise 2025.",
+    stem: "A student carried out an investigation to compare how application rates and source of organic fertiliser in autumn will affect grass dry matter (DM), earthworm population and spring soil nutrient availability in the hope of increasing food production, in‐line with Foodwise 2025.",
     questionText: "The student determined the % DM of the grass. Describe a method the student could have used to carry out this investigation.",
     tariffModel: {"kind":"fixed","notation":"3(4)"}, totalMarks: 12,
     rows: [
@@ -2891,7 +2947,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q15av", topicId: "agsci-1-3", conceptId: "systematic-error-in-an-investigation",
     section: "B", questionRef: "2021 HL Q15(a)(v)",
-    stem: "Question 15 (a). A student carried out an investigation to compare how application rates and source of organic fertiliser in autumn will affect grass dry matter (DM), earthworm population and spring soil nutrient availability. At part (iv) the student determined the % DM of the grass by cutting samples, weighing them, oven drying them and reweighing to a constant mass.",
+    stem: "A student carried out an investigation to compare how application rates and source of organic fertiliser in autumn will affect grass dry matter (DM), earthworm population and spring soil nutrient availability. At part (iv) the student determined the % DM of the grass by cutting samples, weighing them, oven drying them and reweighing to a constant mass.",
     questionText: "List one systematic error that could have occurred when the student was carrying out this investigation.",
     tariffModel: {"kind":"fixed","notation":"3"}, totalMarks: 3,
     rows: [
@@ -2905,13 +2961,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q16aii", topicId: "agsci-4-3-2", conceptId: "increasing-milk-fat-and-protein",
     section: "B", questionRef: "2021 HL Q16(a)(ii)",
-    stem: "Question 16 — answer both (a) and (b) with either (c) or (d). (a) Two dairy farmers (Dan and Joe) are comparing the amount of money they are getting paid for their milk. The paper's table gives each man 50,000 L (51,500 kg) of milk: Dan's is 3.5 % protein and 4.45 % fat, Joe's is 3.3 % protein and 3.96 % fat, protein is paid at €5.48 / kg and fat at €3.35 / kg, and each has a €2,000 processing cost deduction.",
+    stem: "Question 16 — answer both (a) and (b) with either (c) or (d). (a) Two dairy farmers (Dan and Joe) are comparing the amount of money they are getting paid for their milk. Analyse the data in the table below and answer the questions which follow.",
     questionText: "Describe two ways a farmer could increase the % fat and protein content of their milk.",
     tariffModel: {"kind":"fixed","notation":"2(3)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Breeding high EBI cows (to increase the % fat and protein)", marks: 3, accepts: ["clover in sward (will increase protein in milk)","good quality silage (72 ‐ 75% DMD) to (increase milk solids)","good digestible sward (PRG) to increase milk solids","cross breed with jersey cows (hybrid vigour)( to increase milk solids)","feed high (protein) concentrate or named example (to increase milk protein)","increase fibre content of diet for indoor milking (for increased butterfat)"], contextNote: "The scheme prints 2(3): any TWO of its seven ways score, 3 marks each. Every point pairs a practice with the effect it has on milk solids." },
     { id: "r-2", kind: "point", verbatim: "good quality silage (72 ‐ 75% DMD) to (increase milk solids)", marks: 3, accepts: ["clover in sward (will increase protein in milk)","good digestible sward (PRG) to increase milk solids","cross breed with jersey cows (hybrid vigour)( to increase milk solids)","feed high (protein) concentrate or named example (to increase milk protein)","increase fibre content of diet for indoor milking (for increased butterfat)","Breeding high EBI cows (to increase the % fat and protein)"], contextNote: "A feeding point rather than a breeding one — the scheme's list mixes both, and either kind scores." },
     ],
+    figure: {
+          "candId": "agricultural-science-2021-HL-paper-p35-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-HL-paper-p35-i1.png",
+          "srcHash": "4319953288adcbf79a1ca83cea355307",
+          "alt": "A table from the exam paper. Columns: Dan, Joe. Rows: Supply (litres, kg), Protein A = €5.48 / kg, Fat B = €3.35 / kg, Processing cost deduction C = €0.04 / litre. 9 rows by 3 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2920,7 +2984,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q16aiii", topicId: "agsci-4-3-3", conceptId: "reducing-tbc-and-scc-in-milk",
     section: "B", questionRef: "2021 HL Q16(a)(iii)",
-    stem: "Question 16 — answer both (a) and (b) with either (c) or (d). (a) Two dairy farmers (Dan and Joe) are comparing what they are paid for their milk. Joe's bulk sample for 5/11/2020 returned a TBC of 75,000 cfu / ml — the creamery's 51,000–100,000 cfu / ml band reads 'Fair milk quality – bacteria present – investigate the cause and address the issues' — and an SCC of 320,000 cells / ml, whose 300,000–400,000 cells / ml band reads 'Unstable control of mastitis and SCC. Review mastitis control.'",
+    stem: "Question 16 — answer both (a) and (b) with either (c) or (d). (a) Two dairy farmers (Dan and Joe) are comparing what they are paid for their milk. Joe's farm bulk sample results for 5/11/2020, and the creamery's advice on them, are in the table below.",
     questionText: "Joe received his monthly statement on milk quality and noticed that his total bacterial count (TBC) and somatic cell count (SCC) were higher than anticipated. Construct a plan for the advice you would give Joe in order to reduce the TBC and SCC levels in his milk in order to achieve the best quality milk. Your plan should include at least three specific recommendations.",
     tariffModel: {"kind":"fixed","notation":"3(3)"}, totalMarks: 9,
     rows: [
@@ -2928,6 +2992,14 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "milk infected cows last to stop transfer of bacteria to other cows (disinfect clusters)", marks: 3, accepts: ["Lime on cubicles (to kill bacteria under the cows udder)","cull persistently infected cows or older cows with high SCC (identified by milk recording) (to prevent disease being passed to other cows)","to identify cows with cell count (clinical or sub‐clinical) ‐ withhold milk from infected cows","clean, dry bedding (straw) in dry cow house (to reduce amount of bacteria cow is exposed to)","dry cow antibiotics (teat seal) (to kill any bacteria present over a period of time) (prevent bacteria from entering the teat)","‘strip’ fore milk to detect any signs of clinical mastitis and treat cow with antibiotics"], contextNote: "An SCC point. The scheme prints '*At least one point from each of TBC and SCC'." },
     { id: "r-3", kind: "point", verbatim: "teat dipping (pre and post milking)", marks: 3, accepts: ["teat dipping (pre and post milking) (to kill any bacteria present on or in the cow’s teats)"], contextNote: "The scheme prints teat dipping in BOTH the TBC list and the SCC list, so it is the one recommendation that works whichever side you are short on." },
     ],
+    figure: {
+          "candId": "agricultural-science-2021-HL-paper-p36-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-HL-paper-p36-i0.png",
+          "srcHash": "033acc7ec2d4a2b006e93683cacabc16",
+          "alt": "A table from the exam paper. Columns: Milk quality parameters, Joe’s farm bulk sample results for 5/11/2020, Creamery advice. Rows: TBC, SCC. 3 rows by 3 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3069,7 +3141,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q17a", topicId: "agsci-2-3", conceptId: "soil-sampling-procedure",
     section: "B", questionRef: "2021 HL Q17(a)",
-    stem: "Question 17. (a) Soil sampling for analysis is important to determine soil index and fertiliser requirements.",
+    stem: "Soil sampling for analysis is important to determine soil index and fertiliser requirements.",
     questionText: "Outline two procedures to be followed when taking soil samples for analysis.",
     tariffModel: {"kind":"fixed","notation":"2(3)"}, totalMarks: 6,
     rows: [
@@ -3098,13 +3170,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q17biii", topicId: "agsci-2-2-1", conceptId: "low-soil-ph-liming-and-nutrient-uptake",
     section: "B", questionRef: "2021 HL Q17(b)(iii)",
-    stem: "Question 17 (b) prints two soil sample reports. Field 1 is permanent pasture used mainly for silage production and tested pH 5.3, with a lime requirement of 5.2 t/ha, P 1.77 mg/l and K 28.4 mg/l. The report's target pH is 6.5 – 7.5.",
+    stem: "Question 17 (b) prints two soil sample reports. The report for field 1 — permanent pasture used mainly for silage production — is shown in the table below.",
     questionText: "Discuss the implications for the farmer of the low pH in field 1 in relation to liming and the uptake of nutrients.",
     tariffModel: {"kind":"fixed","notation":"2(3)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Farmer needs to add 5 ton per ha lime to land", marks: 3, contextNote: "The scheme prints '*Need one point on liming and one on uptake of nutrients' — this is the liming point, and it is the only one the scheme prints. Two nutrient-uptake points do not score the full 6." },
     { id: "r-2", kind: "point", verbatim: "low pH 5.3 ‐ reduced availability of nutrients to plants ‐ reduced growth rates and decreased yield of crop", marks: 3, accepts: ["ions may become abundant in soil ‐ may build up to toxic levels","activity of micro‐organisms may decrease as optimum for activity is above pH 6.0","when pH moves above 5.5 ‐ more nutrients become available ‐ optimum crop growth pH 6.5"], contextNote: "The nutrient-uptake point. Any one of the scheme's uptake statements scores it." },
     ],
+    figure: {
+          "candId": "agricultural-science-2021-HL-paper-p40-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-HL-paper-p40-i1.png",
+          "srcHash": "f353f8920e8e1f995f0f54cd4d7e72ef",
+          "alt": "A table from the exam paper. Columns: Sample No: 554115, Field 1 – Permanent pasture (mainly silage production). Rows: Test Parameters, pH, Lime Requirement t/ha, Phosphorus (P) mg/l, Potassium (K) mg/l. 6 rows by 9 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3161,7 +3241,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q17c", topicId: "agsci-1-2", conceptId: "cation-exchange-capacity-investigation",
     section: "B", questionRef: "2021 HL Q17(c)",
-    stem: "Question 17. (c) Cation exchange capacity (CEC) is a useful indicator of soil fertility. The paper leaves space for a labelled diagram as well as the written method.",
+    stem: "Cation exchange capacity (CEC) is a useful indicator of soil fertility. The paper leaves space for a labelled diagram as well as the written method.",
     questionText: "Describe how a student would investigate the cation exchange capacity of a soil.",
     tariffModel: {"kind":"fixed","notation":"3(4)"}, totalMarks: 12,
     rows: [
@@ -3177,7 +3257,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q18a-soil-quality", topicId: "agsci-2-2-2", conceptId: "soil-quality-effect-on-crop-productivity",
     section: "B", questionRef: "2021 HL Q18(a) Soil quality",
-    stem: "Question 18. (a) Discuss the effect of each of the following on the productivity of a named crop, giving two points for each heading. The paper prints a 'Named Crop:' line and then two headings, Soil quality and Crop preservation, with two answer lines under each. The scheme accepts Barley / Wheat / Oats / Potatoes / Grass etc., and awards no marks directly for naming the crop.",
+    stem: "Discuss the effect of each of the following on the productivity of a named crop, giving two points for each heading. The paper prints a 'Named Crop:' line and then two headings, Soil quality and Crop preservation, with two answer lines under each. The scheme accepts Barley / Wheat / Oats / Potatoes / Grass etc., and awards no marks directly for naming the crop.",
     questionText: "Discuss the effect of each of the following on the productivity of a named crop, giving two points for each heading. Soil quality:",
     tariffModel: {"kind":"fixed","notation":"2(2)"}, totalMarks: 4,
     rows: [
@@ -3192,7 +3272,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q18a-crop-preservation", topicId: "agsci-3-3-3", conceptId: "crop-preservation-effect-on-productivity",
     section: "B", questionRef: "2021 HL Q18(a) Crop preservation",
-    stem: "Question 18. (a) Discuss the effect of each of the following on the productivity of a named crop, giving two points for each heading. The paper prints a 'Named Crop:' line and then two headings, Soil quality and Crop preservation, with two answer lines under each. The scheme accepts Barley / Wheat / Oats / Potatoes / Grass etc., and awards no marks directly for naming the crop.",
+    stem: "Discuss the effect of each of the following on the productivity of a named crop, giving two points for each heading. The paper prints a 'Named Crop:' line and then two headings, Soil quality and Crop preservation, with two answer lines under each. The scheme accepts Barley / Wheat / Oats / Potatoes / Grass etc., and awards no marks directly for naming the crop.",
     questionText: "Discuss the effect of each of the following on the productivity of a named crop, giving two points for each heading. Crop preservation:",
     tariffModel: {"kind":"fixed","notation":"2(2)"}, totalMarks: 4,
     rows: [
@@ -3207,7 +3287,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q18b", topicId: "agsci-4-3-1", conceptId: "sustainable-intensification-of-a-dairy-herd",
     section: "B", questionRef: "2021 HL Q18(b)",
-    stem: "Question 18. (b) A mixed tillage and dairy farmer in County Meath plans on increasing her dairy herd from 85 cows to 120 cows.",
+    stem: "A mixed tillage and dairy farmer in County Meath plans on increasing her dairy herd from 85 cows to 120 cows.",
     questionText: "Discuss three challenges she will face in relation to sustainable intensification.",
     tariffModel: {"kind":"fixed","notation":"3(3)"}, totalMarks: 9,
     rows: [
@@ -3223,7 +3303,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q18ci", topicId: "agsci-4-1", conceptId: "drying-off-period",
     section: "B", questionRef: "2021 HL Q18(c)(i)",
-    stem: "Question 18. (c) Analyse the graph below, which shows the lactation period of a dairy cow (adapted from Shauman, 2015), and answer the question that follows.",
+    stem: "Analyse the graph below, which shows the lactation period of a dairy cow (adapted from Shauman, 2015), and answer the question that follows.",
     questionText: "Explain what is the drying off period.",
     tariffModel: {"kind":"fixed","notation":"4"}, totalMarks: 4,
     rows: [
@@ -3245,7 +3325,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q18cii", topicId: "agsci-4-1", conceptId: "negative-energy-balance-in-early-lactation",
     section: "B", questionRef: "2021 HL Q18(c)(ii)",
-    stem: "Question 18. (c) Analyse the graph below, which shows the lactation period of a dairy cow (adapted from Shauman, 2015), and answer the question that follows.",
+    stem: "Analyse the graph below, which shows the lactation period of a dairy cow (adapted from Shauman, 2015), and answer the question that follows.",
     questionText: "Outline one reason for the negative energy balance in early lactation.",
     tariffModel: {"kind":"fixed","notation":"4"}, totalMarks: 4,
     rows: [
@@ -3267,7 +3347,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q18ciii", topicId: "agsci-4-3-2", conceptId: "limiting-negative-energy-balance",
     section: "B", questionRef: "2021 HL Q18(c)(iii)",
-    stem: "Question 18. (c) The paper prints a schematic graph of the lactation period of a dairy cow, in which the gap after calving where the cow's energy requirement exceeds her energy intake is labelled 'Negative Energy Balance'.",
+    stem: "The paper prints a schematic graph of the lactation period of a dairy cow, in which the gap after calving where the cow's energy requirement exceeds her energy intake is labelled 'Negative Energy Balance'.",
     questionText: "Suggest two ways a farmer could limit the negative energy balance in early lactation.",
     tariffModel: {"kind":"fixed","notation":"2(3)"}, totalMarks: 6,
     rows: [
@@ -3290,7 +3370,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q18civ", topicId: "agsci-4-3-3", conceptId: "negative-energy-balance-and-breeding-season",
     section: "B", questionRef: "2021 HL Q18(c)(iv)",
-    stem: "Question 18. (c) The paper prints a schematic graph of the lactation period of a dairy cow, in which the gap after calving where energy requirement exceeds energy intake is labelled 'Negative Energy Balance'. The breeding season begins while the cows are still in that part of the lactation.",
+    stem: "The paper prints a schematic graph of the lactation period of a dairy cow, in which the gap after calving where energy requirement exceeds energy intake is labelled 'Negative Energy Balance'. The breeding season begins while the cows are still in that part of the lactation.",
     questionText: "State one implication for the breeding season if the cows are still in negative energy balance.",
     tariffModel: {"kind":"fixed","notation":"4"}, totalMarks: 4,
     rows: [
@@ -3312,7 +3392,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q18cv", topicId: "agsci-4-3-2", conceptId: "mid-lactation-feeding-regime",
     section: "B", questionRef: "2021 HL Q18(c)(v)",
-    stem: "Question 18. (c) The paper prints a schematic graph of the lactation period of a dairy cow, running through a dry phase, calving, early, mid and late lactation to drying off. By mid lactation the energy intake curve has risen above the energy requirement curve, and that gap is labelled 'Excess energy'.",
+    stem: "The paper prints a schematic graph of the lactation period of a dairy cow, running through a dry phase, calving, early, mid and late lactation to drying off. By mid lactation the energy intake curve has risen above the energy requirement curve, and that gap is labelled 'Excess energy'.",
     questionText: "As the cows move to mid lactation their energy balance requirement switches to excess energy. Describe the feeding regime that you would implement at this stage, commenting on the feed type and level of concentrates.",
     tariffModel: {"kind":"fixed","notation":"2(3)"}, totalMarks: 6,
     rows: [
@@ -3335,7 +3415,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q18cvi", topicId: "agsci-4-1", conceptId: "length-of-lactation-period",
     section: "B", questionRef: "2021 HL Q18(c)(vi)",
-    stem: "Question 18. (c) The paper prints a schematic graph of the lactation period of a dairy cow, running from calving through early, mid and late lactation to drying off. The graph carries no numbers on either axis, so this figure comes from what you know of the dairy cow's year.",
+    stem: "The paper prints a schematic graph of the lactation period of a dairy cow, running from calving through early, mid and late lactation to drying off. The graph carries no numbers on either axis, so this figure comes from what you know of the dairy cow's year.",
     questionText: "State the length of the lactation period (in days).",
     tariffModel: {"kind":"fixed","notation":"4"}, totalMarks: 4,
     rows: [
@@ -3357,7 +3437,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q18cvii", topicId: "agsci-4-3-3", conceptId: "heat-detection-methods",
     section: "B", questionRef: "2021 HL Q18(c)(vii)",
-    stem: "Question 18. (c) The paper prints a schematic graph of the lactation period of a dairy cow. Having worked through calving, negative energy balance and the breeding season, this last part turns to getting the cows back in calf.",
+    stem: "The paper prints a schematic graph of the lactation period of a dairy cow. Having worked through calving, negative energy balance and the breeding season, this last part turns to getting the cows back in calf.",
     questionText: "Briefly describe two methods of heat detection used on Irish farms.",
     tariffModel: {"kind":"orderedSplit","notation":"3+2"}, totalMarks: 5,
     rows: [
@@ -3654,13 +3734,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
     id: "agsci-2022-hl-q15bi", topicId: "agsci-4-1", conceptId: "rumen-ph-and-acidosis",
     section: "B", questionRef: "2022 HL Q15(b)(i)",
-    stem: "Section B, Question 15, part (b). The paper shows a 'smart cow' (Financial Times, 2017) carrying five labelled sensors: a necklace that monitors the cow's movement, feeding habits, health problems and when she is in heat; a pedometer that measures the increase in walking activity at oestrus; a tail-movement sensor that measures tail movements triggered by labour contractions; an acid monitor — a bolus inserted into the rumen to monitor acidity levels; and udder sensors, part of automated milking systems fitted with sensors to measure milk quality and check for mastitis.",
+    stem: "Section B, Question 15, part (b). Analyse the picture of the 'smart cow' below and answer the questions which follow. (Adapted from Financial Times, 2017)",
     questionText: "State the optimum pH of the rumen and give a reason for monitoring acidity levels in the rumen.",
     tariffModel: {"kind":"fixed","notation":"3 + 3"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "pH = 6.2 – 7.0", marks: 3, contextNote: "A range, not a single figure — the rumen microbes need close to neutral." },
     { id: "r-2", kind: "point", verbatim: "Prevent acidosis (especially in high concentrate diets)", marks: 3 },
     ],
+    figure: {
+          "candId": "agricultural-science-2022-HL-paper-p28-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p28-i0.png",
+          "srcHash": "a95ab8ecedc9fd7ec3f86adcbec543fc",
+          "alt": "The complete 'smart cow' technology diagram for Question 15(b). Instruction above: '(b) Analyse the picture of the smart cow and answer the questions which follow.' The diagram sits on a pale blue rectangular panel and shows a side-on silhouette of a dairy cow filled with a dark blue printed-circuit-board pattern of tracks and contact pads. Dashed white outlines inside the body mark out two internal regions, one in the mid-abdomen and one at the udder. Five pale cream label boxes sit on or beside the cow: 'Necklace' at the base of the neck; 'Pedometer' on the shoulder/foreleg; 'Acid monitor' printed vertically in the mid-abdomen; 'Tail movements' at the rump; and 'Udder sensors' at the hind udder. Five thick yellow arrows connect the labels to explanatory text set around the diagram. Top left, pointing to Necklace: 'Monitors cows movement, feeding habits, detect health problems and tell when cow is in heat'. Top centre, pointing to Acid monitor: 'Bolus inserted into rumen to monitor acidity levels'. Right, pointing to Tail movements: 'Measures tail movements triggered by labour contractions'. Left, pointing to Pedometer: 'Measures increase in walking activity at oestrus'. Bottom centre, pointing to Udder sensors: 'Automated milking systems fitted with sensors to measure milk quality and check for mastitis'. Right-aligned italic attribution beneath the panel: '(Adapted from Financial Times, 2017)'. Below that, '(i) State the optimum pH of the rumen and give a reason for monitoring acidity levels in the rumen.' with an answer box headed 'pH:' and 'Reason:'.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3787,12 +3875,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
     id: "agsci-2022-hl-q16bi", topicId: "agsci-1-3", conceptId: "reading-a-results-table",
     section: "B", questionRef: "2022 HL Q16(b)(i)",
-    stem: "Grass/clover milk production trial, Teagasc Moorepark. Treatment 1 = grass only sward + 250kg N/ha per year; Treatment 2 = grass + clover sward + 150kg N/ha per year; Treatment 3 = grass + clover sward + 100kg N/ha per year. The table shows the results of the investigation. Analyse the data and answer the questions which follow. The paper prints the results as a table — Milk yield (kg/cow): T1 5934, T2 5998, T3 6076. Fat content (%): T1 4.97, T2 5.09, T3 5.03. Protein content (%): T1 3.71, T2 3.83, T3 3.80.",
+    stem: "Grass/clover milk production trial, Teagasc Moorepark. Treatment 1 = grass only sward + 250kg N/ha per year; Treatment 2 = grass + clover sward + 150kg N/ha per year; Treatment 3 = grass + clover sward + 100kg N/ha per year. The table below shows the results of the investigation. Analyse the data and answer the questions which follow.",
     questionText: "Identify which treatment produced the highest amount of milk.",
     tariffModel: {"kind":"fixed","notation":"3"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Treatment 3", marks: 3 },
     ],
+    figure: {
+          "candId": "agricultural-science-2022-HL-paper-p30-i3",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p30-i3.png",
+          "srcHash": "ba38fb89a181180eae20fd857df020f0",
+          "alt": "A table from the exam paper. Columns: Treatment 1, Treatment 2, Treatment 3. Rows: Milk yield (kg/cow), Fat content (%), Protein content (%). 4 rows by 4 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3801,13 +3897,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
     id: "agsci-2022-hl-q16bii", topicId: "agsci-4-3-1", conceptId: "milk-price-fat-and-protein",
     section: "B", questionRef: "2022 HL Q16(b)(ii)",
-    stem: "Grass/clover milk production trial, Teagasc Moorepark. Treatment 1 = grass only sward + 250kg N/ha per year; Treatment 2 = grass + clover sward + 150kg N/ha per year; Treatment 3 = grass + clover sward + 100kg N/ha per year. The paper prints the results as a table — Milk yield (kg/cow): T1 5934, T2 5998, T3 6076. Fat content (%): T1 4.97, T2 5.09, T3 5.03. Protein content (%): T1 3.71, T2 3.83, T3 3.80.",
+    stem: "Grass/clover milk production trial, Teagasc Moorepark. Treatment 1 = grass only sward + 250kg N/ha per year; Treatment 2 = grass + clover sward + 150kg N/ha per year; Treatment 3 = grass + clover sward + 100kg N/ha per year. The table below shows the results of the investigation.",
     questionText: "From your knowledge of milk price, state with reason which treatment would result in a higher milk price for the farmer.",
     tariffModel: {"kind":"fixed","notation":"3 + 3"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Treatment 2", marks: 3 },
     { id: "r-2", kind: "point", verbatim: "Highest amount of fat and protein (A + B – C)", marks: 3, contextNote: "'(A + B – C)' is the scheme's own shorthand for the A+B-C milk pricing system, where the A and B components pay for kg of fat and protein and C is the processing charge." },
     ],
+    figure: {
+          "candId": "agricultural-science-2022-HL-paper-p30-i3",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p30-i3.png",
+          "srcHash": "ba38fb89a181180eae20fd857df020f0",
+          "alt": "A table from the exam paper. Columns: Treatment 1, Treatment 2, Treatment 3. Rows: Milk yield (kg/cow), Fat content (%), Protein content (%). 4 rows by 4 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3878,7 +3982,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
     id: "agsci-2022-hl-q17aiii", topicId: "agsci-1-3", conceptId: "quadrat-population-estimate",
     section: "B", questionRef: "2022 HL Q17(a)(iii)",
-    stem: "Question 17 instructs: answer both (a) and (b) with either (c) or (d). Part (a) opens: Earthworms are essential on all farms. Kate's permanent pasture is drawn on the paper as a rectangle measuring 178m by 98m. Her four quadrat counts, printed as 'Number of Earthworms/0.25m2 Quadrat', are: quadrat 1 = 28, quadrat 2 = 45, quadrat 3 = 23, quadrat 4 = 19.",
+    stem: "Question 17 instructs: answer both (a) and (b) with either (c) or (d). Part (a) opens: Earthworms are essential on all farms. Kate's permanent pasture and her four quadrat counts are shown in the table below.",
     questionText: "Using a quadrat Kate determined the number of earthworms in her permanent pasture: 28, 45, 23 and 19 earthworms per 0.25 m² quadrat in quadrats 1, 2, 3 and 4 respectively. Estimate the total number of earthworms.",
     tariffModel: {"kind":"fixed","notation":"2 + 2 + 2"}, totalMarks: 6,
     rows: [
@@ -3886,6 +3990,14 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Average number of earthworms per quadrat = 28 + 45 + 23 + 19 = 115 ÷ 4 = 28.75", marks: 2, accepts: ["Average number of earthworms per m2 = 115  or 17444 ÷ 0.25 = 69,776 quadrats"], contextNote: "The scheme prints a second route with 'or': work in earthworms per m2 (115) or convert the field to 69,776 quadrats. Either route earns this mark." },
     { id: "r-3", kind: "point", verbatim: "Total number of earthworms = 115 x 17444 = 2,006,060", marks: 2, accepts: ["total 69,776 x 28.75 = 2,006,060"], contextNote: "The scheme adds: '(If a candidate just gives 2,006,060 earthworms then award 6m)' — the correct final answer on its own takes all six marks." },
     ],
+    figure: {
+          "candId": "agricultural-science-2022-HL-paper-p34-i2",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p34-i2.png",
+          "srcHash": "1623f18a0b333745379a5534ee1f6f0e",
+          "alt": "A table from the exam paper. Columns: Number of Earthworms/0.25m2 Quadrat. Rows: 1, 28. 3 rows by 4 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3894,12 +4006,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
     id: "agsci-2022-hl-q17aiv", topicId: "agsci-2-2-3", conceptId: "earthworm-distribution-in-pasture",
     section: "B", questionRef: "2022 HL Q17(a)(iv)",
-    stem: "Question 17 instructs: answer both (a) and (b) with either (c) or (d). Part (a) opens: Earthworms are essential on all farms. Kate's four quadrat counts in her permanent pasture (earthworms per 0.25m2 quadrat) were: quadrat 1 = 28, quadrat 2 = 45, quadrat 3 = 23, quadrat 4 = 19 — so quadrat 2 held far more worms than the others.",
+    stem: "Question 17 instructs: answer both (a) and (b) with either (c) or (d). Part (a) opens: Earthworms are essential on all farms. Kate's four quadrat counts in her permanent pasture are shown in the table below.",
     questionText: "Suggest one reason for a high concentration of earthworms in quadrat 2.",
     tariffModel: {"kind":"fixed","notation":"3"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Area was close to dung pad or higher organic matter", marks: 3, accepts: ["area under clover"], contextNote: "One reason, one 3. The solidus separates two acceptable reasons; either alone scores the full 3." },
     ],
+    figure: {
+          "candId": "agricultural-science-2022-HL-paper-p34-i2",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p34-i2.png",
+          "srcHash": "1623f18a0b333745379a5534ee1f6f0e",
+          "alt": "A table from the exam paper. Columns: Number of Earthworms/0.25m2 Quadrat. Rows: 1, 28. 3 rows by 4 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3938,13 +4058,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
     id: "agsci-2022-hl-q17ci", topicId: "agsci-3-3-1", conceptId: "choosing-a-barley-variety-for-an-enterprise",
     section: "B", questionRef: "2022 HL Q17(c)(i)",
-    stem: "Question 17 offers a choice of (c) or (d); this is (c). A farmer is carrying out research on which barley variety to grow which would suit his mixed farming (pig and sheep) enterprise and his results are shown in the table. Analyse the table and answer the questions which follow. The paper prints, for each hybrid winter barley variety — Bazooka: straw height 102.2 cm, relative yield 109, grain protein 11.3%. Belfry: straw height 95.4 cm, relative yield 110, grain protein 10.9%. (Adapted from DAFM, 2021)",
+    stem: "Question 17 offers a choice of (c) or (d); this is (c). A farmer is carrying out research on which barley variety to grow which would suit his mixed farming (pig and sheep) enterprise and his results are shown in the table below. Analyse the table and answer the questions which follow. (Adapted from DAFM, 2021)",
     questionText: "State with reason which variety would suit the diet of his enterprise.",
     tariffModel: {"kind":"fixed","notation":"4 + 4"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "gate", verbatim: "Bazooka*", marks: 4, contextNote: "The SEC asterisk means only this exact variety scores; naming a second variety alongside it is a surplus wrong answer and cancels this row." },
     { id: "r-2", kind: "point", verbatim: "Higher protein content", marks: 4 },
     ],
+    figure: {
+          "candId": "agricultural-science-2022-HL-paper-p35-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-p35-i0.png",
+          "srcHash": "05aff41d5e71419acbe9801150f2e53e",
+          "alt": "A table from the exam paper. Columns: Hybrid Winter Barley Variety, Straw Height (cm), Relative Yield, Grain Protein (%). Rows: Bazooka, Belfry. 3 rows by 4 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4092,7 +4220,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q13ai", topicId: "agsci-2-1", conceptId: "factors-of-soil-formation",
     section: "B", questionRef: "2023 HL Q13(a)(i)",
-    stem: "Question 13. Answer both (a) and (b) with either (c) or (d). Soil is the most important asset on any farm and the type of soil depends on its formation.",
+    stem: "Answer both (a) and (b) with either (c) or (d). Soil is the most important asset on any farm and the type of soil depends on its formation.",
     questionText: "Describe two factors that are involved in the formation of soil. (Name each Factor and give a Description for each.)",
     tariffModel: {"kind":"bestNofParts","answer":2,"ofParts":5,"perPart":7,"notation":"5+5+2+2"}, totalMarks: 14,
     rows: [
@@ -4110,7 +4238,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q13aii", topicId: "agsci-2-1", conceptId: "podzol-soil-profile",
     section: "B", questionRef: "2023 HL Q13(a)(ii)",
-    stem: "Question 13. Answer both (a) and (b) with either (c) or (d). Soil is the most important asset on any farm and the type of soil depends on its formation.",
+    stem: "Answer both (a) and (b) with either (c) or (d). Soil is the most important asset on any farm and the type of soil depends on its formation.",
     questionText: "Draw a labelled diagram of a podzol soil profile.",
     tariffModel: {"kind":"orderedSplit","notation":"D = 0,3,6 + L = 3 x 2"}, totalMarks: 12,
     rows: [
@@ -4128,7 +4256,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q13bii", topicId: "agsci-2-2-2", conceptId: "soil-water-levels-farm-implications",
     section: "B", questionRef: "2023 HL Q13(b)(ii)",
-    stem: "Question 13. Answer both (a) and (b) with either (c) or (d). Soil is the most important asset on any farm and the type of soil depends on its formation. Part (b) is about the level of water held in a soil sample.",
+    stem: "Answer both (a) and (b) with either (c) or (d). Soil is the most important asset on any farm and the type of soil depends on its formation. Part (b) is about the level of water held in a soil sample.",
     questionText: "Briefly describe the implications for a farmer of any two of the following: Field capacity; Saturation; Permanent wilting point.",
     tariffModel: {"kind":"orderedSplit","notation":"2+1"}, totalMarks: 3,
     rows: [
@@ -4144,7 +4272,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q13c", topicId: "agsci-1-2", conceptId: "comparing-soil-infiltration-rate",
     section: "B", questionRef: "2023 HL Q13(c)",
-    stem: "Question 13. Answer both (a) and (b) with either (c) or (d). Soil is the most important asset on any farm and the type of soil depends on its formation.",
+    stem: "Answer both (a) and (b) with either (c) or (d). Soil is the most important asset on any farm and the type of soil depends on its formation.",
     questionText: "Describe with the aid of a labelled diagram how a farmer would carry out an investigation to compare the drainage (infiltration) rate of a podzol and a brown earth soil sample and outline the expected result in this investigation.",
     tariffModel: {"kind":"bestNofParts","answer":3,"ofParts":5,"perPart":4,"notation":"3(4)"}, totalMarks: 12,
     rows: [
@@ -4162,7 +4290,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q13di", topicId: "agsci-2-3", conceptId: "soil-moisture-data-for-management-decisions",
     section: "B", questionRef: "2023 HL Q13(d)(i)",
-    stem: "Question 13. Answer both (a) and (b) with either (c) or (d). Soil is the most important asset on any farm and the type of soil depends on its formation. Part (d) follows an article, 'VistaMilk using satellites to collect real-time data on farm soils': satellites are being used to collect real-time information about soil moisture on Irish farms by VistaMilk, the research centre at Teagasc, Moorepark, using imagery from the European Space Agency's Sentinel satellites to map soil moisture in Ireland, with the capability of focusing in on areas as small as 10m2. The data gathered could be used to help farmers make decisions about which fields to allow their livestock feed in while maintaining optimal grazing and grass growth, which requires drainage or even wetting, and potentially when to add or reduce use of fertilisers and slurry. (Adapted from Farmers Journal, 2022)",
+    stem: "Answer both (a) and (b) with either (c) or (d). Soil is the most important asset on any farm and the type of soil depends on its formation. Part (d) follows an article, 'VistaMilk using satellites to collect real-time data on farm soils': satellites are being used to collect real-time information about soil moisture on Irish farms by VistaMilk, the research centre at Teagasc, Moorepark, using imagery from the European Space Agency's Sentinel satellites to map soil moisture in Ireland, with the capability of focusing in on areas as small as 10m2. The data gathered could be used to help farmers make decisions about which fields to allow their livestock feed in while maintaining optimal grazing and grass growth, which requires drainage or even wetting, and potentially when to add or reduce use of fertilisers and slurry. (Adapted from Farmers Journal, 2022)",
     questionText: "Explain how the data gathered could help management decisions on the farm in relation to the drainage or wetting of land.",
     tariffModel: {"kind":"fixed","notation":"6"}, totalMarks: 6,
     rows: [
@@ -4176,7 +4304,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q13dii", topicId: "agsci-2-2-2", conceptId: "functions-of-soil-water",
     section: "B", questionRef: "2023 HL Q13(d)(ii)",
-    stem: "Question 13. Answer both (a) and (b) with either (c) or (d). Soil is the most important asset on any farm and the type of soil depends on its formation. Part (d) follows an article on VistaMilk using European Space Agency Sentinel satellite imagery to collect real-time data on soil moisture on Irish farms. (Adapted from Farmers Journal, 2022)",
+    stem: "Answer both (a) and (b) with either (c) or (d). Soil is the most important asset on any farm and the type of soil depends on its formation. Part (d) follows an article on VistaMilk using European Space Agency Sentinel satellite imagery to collect real-time data on soil moisture on Irish farms. (Adapted from Farmers Journal, 2022)",
     questionText: "State the functions of soil moisture (water).",
     tariffModel: {"kind":"orderedSplit","notation":"4+2"}, totalMarks: 6,
     rows: [
@@ -4194,7 +4322,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q14a", topicId: "agsci-3-3-1", conceptId: "direct-drilling",
     section: "B", questionRef: "2023 HL Q14(a)",
-    stem: "Question 14. Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. He sows a variety of crops and plants his winter cereals using direct drilling. (The underlined term in part (a) is 'direct drilling'.)",
+    stem: "Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. He sows a variety of crops and plants his winter cereals using direct drilling. (The underlined term in part (a) is 'direct drilling'.)",
     questionText: "Explain the underlined term and outline one advantage of this method of planting.",
     tariffModel: {"kind":"orderedSplit","notation":"2+1"}, totalMarks: 3,
     rows: [
@@ -4209,7 +4337,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q14bi", topicId: "agsci-3-3-1", conceptId: "why-sow-different-varieties",
     section: "B", questionRef: "2023 HL Q14(b)(i)",
-    stem: "Question 14. Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. He planted three fields of winter oilseed rape in mid-August, using a different variety in each of the three fields. It was undersown with Berseem clover at a rate of 1.6kg/ha as a companion crop.",
+    stem: "Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. He planted three fields of winter oilseed rape in mid-August, using a different variety in each of the three fields. It was undersown with Berseem clover at a rate of 1.6kg/ha as a companion crop.",
     questionText: "Briefly describe why he chose to plant a different variety of oilseed rape in each field.",
     tariffModel: {"kind":"fixed","notation":"5"}, totalMarks: 5,
     rows: [
@@ -4223,7 +4351,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q14bii", topicId: "agsci-3-3-1", conceptId: "undersowing",
     section: "B", questionRef: "2023 HL Q14(b)(ii)",
-    stem: "Question 14. Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. He planted three fields of winter oilseed rape in mid-August, using a different variety in each of the three fields. It was undersown with Berseem clover at a rate of 1.6kg/ha as a companion crop.",
+    stem: "Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. He planted three fields of winter oilseed rape in mid-August, using a different variety in each of the three fields. It was undersown with Berseem clover at a rate of 1.6kg/ha as a companion crop.",
     questionText: "Explain the underlined term. (The underlined term is 'undersown'.)",
     tariffModel: {"kind":"fixed","notation":"3"}, totalMarks: 3,
     rows: [
@@ -4237,7 +4365,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q14biii", topicId: "agsci-3-3-1", conceptId: "clover-as-a-companion-crop",
     section: "B", questionRef: "2023 HL Q14(b)(iii)",
-    stem: "Question 14. Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. He planted three fields of winter oilseed rape in mid-August, using a different variety in each of the three fields. It was undersown with Berseem clover at a rate of 1.6kg/ha as a companion crop.",
+    stem: "Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. He planted three fields of winter oilseed rape in mid-August, using a different variety in each of the three fields. It was undersown with Berseem clover at a rate of 1.6kg/ha as a companion crop.",
     questionText: "Outline the advantages of sowing clover with the oilseed rape.",
     tariffModel: {"kind":"orderedSplit","notation":"5+1"}, totalMarks: 6,
     rows: [
@@ -4255,7 +4383,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q14biv", topicId: "agsci-3-2", conceptId: "annual-plant-defined",
     section: "B", questionRef: "2023 HL Q14(b)(iv)",
-    stem: "Question 14. Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. He planted three fields of winter oilseed rape in mid-August, undersown with Berseem clover at a rate of 1.6kg/ha as a companion crop. (The underlined term here is 'annual'.)",
+    stem: "Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. He planted three fields of winter oilseed rape in mid-August, undersown with Berseem clover at a rate of 1.6kg/ha as a companion crop. (The underlined term here is 'annual'.)",
     questionText: "Berseem clover is an annual plant. Explain the underlined term.",
     tariffModel: {"kind":"fixed","notation":"3"}, totalMarks: 3,
     rows: [
@@ -4269,7 +4397,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q14bv", topicId: "agsci-3-2", conceptId: "annual-plant-example",
     section: "B", questionRef: "2023 HL Q14(b)(v)",
-    stem: "Question 14. Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. He planted three fields of winter oilseed rape, undersown with Berseem clover as a companion crop. Berseem clover is an annual plant, so your example must be a different one.",
+    stem: "Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. He planted three fields of winter oilseed rape, undersown with Berseem clover as a companion crop. Berseem clover is an annual plant, so your example must be a different one.",
     questionText: "Give another example of an annual plant that you have studied.",
     tariffModel: {"kind":"fixed","notation":"3"}, totalMarks: 3,
     rows: [
@@ -4283,7 +4411,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q14ci", topicId: "agsci-1-2", conceptId: "plant-count-method",
     section: "B", questionRef: "2023 HL Q14(c)(i)",
-    stem: "Question 14. Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. Part (c) follows an extract: 'An easy tool to examine successful plant establishment is using a plant count. Calculating % establishment can help to examine if sowing conditions were appropriate and what can be done next season in order to improve plant count numbers (e.g. higher seeding rate).' (Adapted from Farmers Journal, 2022)",
+    stem: "Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. Part (c) follows an extract: 'An easy tool to examine successful plant establishment is using a plant count. Calculating % establishment can help to examine if sowing conditions were appropriate and what can be done next season in order to improve plant count numbers (e.g. higher seeding rate).' (Adapted from Farmers Journal, 2022)",
     questionText: "Describe how to carry out a plant count in a 2 hectare field.",
     tariffModel: {"kind":"bestNofParts","answer":3,"ofParts":5,"perPart":4,"notation":"3(4)"}, totalMarks: 12,
     rows: [
@@ -4301,7 +4429,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q14cii", topicId: "agsci-3-3-2", conceptId: "value-of-a-plant-count",
     section: "B", questionRef: "2023 HL Q14(c)(ii)",
-    stem: "Question 14. Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. Part (c) follows an extract: 'An easy tool to examine successful plant establishment is using a plant count. Calculating % establishment can help to examine if sowing conditions were appropriate and what can be done next season in order to improve plant count numbers (e.g. higher seeding rate).' (Adapted from Farmers Journal, 2022)",
+    stem: "Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. Part (c) follows an extract: 'An easy tool to examine successful plant establishment is using a plant count. Calculating % establishment can help to examine if sowing conditions were appropriate and what can be done next season in order to improve plant count numbers (e.g. higher seeding rate).' (Adapted from Farmers Journal, 2022)",
     questionText: "Briefly explain advantages of carrying out a plant count in a newly sown or reseeded field.",
     tariffModel: {"kind":"orderedSplit","notation":"5+1"}, totalMarks: 6,
     rows: [
@@ -4318,7 +4446,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q14ciii", topicId: "agsci-3-3-2", conceptId: "tillering-and-plant-counts",
     section: "B", questionRef: "2023 HL Q14(c)(iii)",
-    stem: "Question 14. Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. Part (c) is about using a plant count to examine successful plant establishment in a newly sown or reseeded field.",
+    stem: "Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. Part (c) is about using a plant count to examine successful plant establishment in a newly sown or reseeded field.",
     questionText: "Plant counts are easiest to carry out when plants are at the one to two leaf stage. When plants start to tiller out, it becomes very difficult to count them. Explain why it becomes difficult to count the plants at this stage.",
     tariffModel: {"kind":"fixed","notation":"4"}, totalMarks: 4,
     rows: [
@@ -4332,7 +4460,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q14civ", topicId: "agsci-3-3-1", conceptId: "seeding-rate-versus-establishment-rate",
     section: "B", questionRef: "2023 HL Q14(c)(iv)",
-    stem: "Question 14. Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. Part (c) is about using a plant count to examine successful plant establishment in a newly sown or reseeded field.",
+    stem: "Stuart is a tillage farmer who operates a 220 hectare farm in Co. Waterford. Part (c) is about using a plant count to examine successful plant establishment in a newly sown or reseeded field.",
     questionText: "Teagasc recommends a seeding rate of 350 seeds/m2 to establish 300 plants/m2. Describe a scientific reason why the recommended seeding rate is higher than the expected establishment rate.",
     tariffModel: {"kind":"fixed","notation":"5"}, totalMarks: 5,
     rows: [
@@ -4346,7 +4474,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q15a", topicId: "agsci-1-2", conceptId: "determining-soil-texture",
     section: "B", questionRef: "2023 HL Q15(a)",
-    stem: "Question 15. A secondary school recently designed and installed a new school garden and polytunnel. The school principal received a donation of top soil for the raised beds. The agricultural science class were tasked with finding out the best crops to sow. The students carried out a number of investigations to determine soil type and its suitability to grow specific crops.",
+    stem: "A secondary school recently designed and installed a new school garden and polytunnel. The school principal received a donation of top soil for the raised beds. The agricultural science class were tasked with finding out the best crops to sow. The students carried out a number of investigations to determine soil type and its suitability to grow specific crops.",
     questionText: "The first investigation the students carried out was to determine the soil texture. Describe how they carried out this investigation to determine the soil texture.",
     tariffModel: {"kind":"bestNofParts","answer":3,"ofParts":5,"perPart":4,"notation":"3(4)"}, totalMarks: 12,
     rows: [
@@ -4364,7 +4492,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q15bi", topicId: "agsci-2-2-1", conceptId: "optimum-soil-ph-for-crops",
     section: "B", questionRef: "2023 HL Q15(b)(i)",
-    stem: "Question 15. A secondary school recently designed and installed a new school garden and polytunnel. The school principal received a donation of top soil for the raised beds. The students carried out a number of investigations to determine soil type and its suitability to grow specific crops.",
+    stem: "A secondary school recently designed and installed a new school garden and polytunnel. The school principal received a donation of top soil for the raised beds. The students carried out a number of investigations to determine soil type and its suitability to grow specific crops.",
     questionText: "The students carried out a soil pH investigation using universal indicator. State the optimum pH of a soil for crop growth.",
     tariffModel: {"kind":"fixed","notation":"6"}, totalMarks: 6,
     rows: [
@@ -4378,7 +4506,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q15bii", topicId: "agsci-1-2", conceptId: "measuring-ph-more-accurately",
     section: "B", questionRef: "2023 HL Q15(b)(ii)",
-    stem: "Question 15. A secondary school recently designed and installed a new school garden and polytunnel. The students carried out a soil pH investigation using universal indicator on a filtrate made from the donated top soil.",
+    stem: "A secondary school recently designed and installed a new school garden and polytunnel. The students carried out a soil pH investigation using universal indicator on a filtrate made from the donated top soil.",
     questionText: "The students found it hard to accurately determine the pH of the soil filtrate. Suggest another way the students could determine the pH of the soil filtrate more accurately.",
     tariffModel: {"kind":"fixed","notation":"3"}, totalMarks: 3,
     rows: [
@@ -4392,7 +4520,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q15biii", topicId: "agsci-2-3", conceptId: "benefits-of-liming",
     section: "B", questionRef: "2023 HL Q15(b)(iii)",
-    stem: "Question 15. A secondary school recently designed and installed a new school garden and polytunnel. The students carried out a soil pH investigation on the donated top soil to work out which crops it would suit.",
+    stem: "A secondary school recently designed and installed a new school garden and polytunnel. The students carried out a soil pH investigation on the donated top soil to work out which crops it would suit.",
     questionText: "Farmers can improve the soil quality by liming to adjust the soil pH level. Briefly describe other benefits of liming the soil.",
     tariffModel: {"kind":"orderedSplit","notation":"5+2"}, totalMarks: 7,
     rows: [
@@ -4409,7 +4537,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q15d", topicId: "agsci-3-3-1", conceptId: "food-crop-seedbed-and-disease-prevention",
     section: "B", questionRef: "2023 HL Q15(d)",
-    stem: "Question 15. A secondary school recently designed and installed a new school garden and polytunnel. The school principal received a donation of top soil for the raised beds. The agricultural science class were tasked with finding out the best crops to sow.",
+    stem: "A secondary school recently designed and installed a new school garden and polytunnel. The school principal received a donation of top soil for the raised beds. The agricultural science class were tasked with finding out the best crops to sow.",
     questionText: "The students wanted to sow a food crop in their school polytunnel or garden or field. For a named food crop (other than grass) that you have studied, describe its production under the headings which follow: Seedbed preparation; Disease prevention.",
     tariffModel: {"kind":"fixed","notation":"4+4"}, totalMarks: 8,
     rows: [
@@ -4424,7 +4552,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q16bi", topicId: "agsci-4-3-1", conceptId: "reducing-farm-carbon-emissions-by-source",
     section: "B", questionRef: "2023 HL Q16(b)(i)",
-    stem: "Question 16. Answer both (a) and (b) with either (c) or (d). As part of the governments’ climate action plan targets, agriculture has to reduce its greenhouse gas emissions by 25% by 2030. Anna and Lucy examined the percentage share of the carbon emissions from their beef enterprise which they received through their Bord Bia farmer feedback report. The graph below, from part (a), highlights where the emissions are coming from on their farm. (Adapted from Teagasc, 2022)",
+    stem: "Answer both (a) and (b) with either (c) or (d). As part of the governments’ climate action plan targets, agriculture has to reduce its greenhouse gas emissions by 25% by 2030. Anna and Lucy examined the percentage share of the carbon emissions from their beef enterprise which they received through their Bord Bia farmer feedback report. The graph below, from part (a), highlights where the emissions are coming from on their farm. (Adapted from Teagasc, 2022)",
     questionText: "Anna and Lucy wanted to reduce the emissions on the farm so they spoke to you as their advisor to identify an action for each source of carbon emissions shown on the graph below. Describe the advice you would give to them to suit their farm.",
     tariffModel: {"kind":"orderedSplit","notation":"4+4+2+2"}, totalMarks: 12,
     rows: [
@@ -4449,7 +4577,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q16bii", topicId: "agsci-4-3-1", conceptId: "other-farm-carbon-emission-sources",
     section: "B", questionRef: "2023 HL Q16(b)(ii)",
-    stem: "Question 16. Answer both (a) and (b) with either (c) or (d). As part of the governments’ climate action plan targets, agriculture has to reduce its greenhouse gas emissions by 25% by 2030. Anna and Lucy examined the percentage share of the carbon emissions from their beef enterprise which they received through their Bord Bia farmer feedback report. The graph in part (a) covers four sources — animal digestion, manure usage, fertiliser used and forage / feed. (Adapted from Teagasc, 2022)",
+    stem: "Answer both (a) and (b) with either (c) or (d). As part of the governments’ climate action plan targets, agriculture has to reduce its greenhouse gas emissions by 25% by 2030. Anna and Lucy examined the percentage share of the carbon emissions from their beef enterprise which they received through their Bord Bia farmer feedback report. The graph in part (a) covers four sources — animal digestion, manure usage, fertiliser used and forage / feed. (Adapted from Teagasc, 2022)",
     questionText: "List two other potential sources of carbon emissions on the farm.",
     tariffModel: {"kind":"orderedSplit","notation":"5+1"}, totalMarks: 6,
     rows: [
@@ -4464,7 +4592,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q16c", topicId: "agsci-2-2-3", conceptId: "carbon-cycle-diagram",
     section: "B", questionRef: "2023 HL Q16(c)",
-    stem: "Question 16. Answer both (a) and (b) with either (c) or (d). As part of the governments’ climate action plan targets, agriculture has to reduce its greenhouse gas emissions by 25% by 2030. Soil holds the largest portion of active carbon on earth.",
+    stem: "Answer both (a) and (b) with either (c) or (d). As part of the governments’ climate action plan targets, agriculture has to reduce its greenhouse gas emissions by 25% by 2030. Soil holds the largest portion of active carbon on earth.",
     questionText: "Draw a labelled diagram of the carbon cycle.",
     tariffModel: {"kind":"fixed","notation":"5(3)"}, totalMarks: 15,
     rows: [
@@ -4482,7 +4610,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q16di", topicId: "agsci-3-3-2", conceptId: "impacts-of-warming-on-irish-agriculture",
     section: "B", questionRef: "2023 HL Q16(d)(i)",
-    stem: "Question 16. Answer both (a) and (b) with either (c) or (d). As part of the governments’ climate action plan targets, agriculture has to reduce its greenhouse gas emissions by 25% by 2030. The timeline shows a visual representation of the change in temperature in Ireland as measured over the past 120 years (1900 to 2020). Each stripe represents the average temperature over a year. The blue indicates cooler than average temperatures, and red warmer than average temperature.",
+    stem: "Answer both (a) and (b) with either (c) or (d). As part of the governments’ climate action plan targets, agriculture has to reduce its greenhouse gas emissions by 25% by 2030. The timeline shows a visual representation of the change in temperature in Ireland as measured over the past 120 years (1900 to 2020). Each stripe represents the average temperature over a year. The blue indicates cooler than average temperatures, and red warmer than average temperature.",
     questionText: "Describe three impacts of warmer than average temperatures will have on agriculture in Ireland.",
     tariffModel: {"kind":"fixed","notation":"3(3)"}, totalMarks: 9,
     rows: [
@@ -4498,7 +4626,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q16dii", topicId: "agsci-4-3-1", conceptId: "farmer-actions-to-cut-agricultural-emissions",
     section: "B", questionRef: "2023 HL Q16(d)(ii)",
-    stem: "Question 16. Answer both (a) and (b) with either (c) or (d). As part of the governments’ climate action plan targets, agriculture has to reduce its greenhouse gas emissions by 25% by 2030. The timeline shows a visual representation of the change in temperature in Ireland as measured over the past 120 years (1900 to 2020). Each stripe represents the average temperature over a year. The blue indicates cooler than average temperatures, and red warmer than average temperature.",
+    stem: "Answer both (a) and (b) with either (c) or (d). As part of the governments’ climate action plan targets, agriculture has to reduce its greenhouse gas emissions by 25% by 2030. The timeline shows a visual representation of the change in temperature in Ireland as measured over the past 120 years (1900 to 2020). Each stripe represents the average temperature over a year. The blue indicates cooler than average temperatures, and red warmer than average temperature.",
     questionText: "As part of the Climate Action Plan 2021, there is a 22 – 30% reduction in agricultural emissions by 2023. Briefly describe ways farmers can play their part in achieving these targets.",
     tariffModel: {"kind":"fixed","notation":"2(3)"}, totalMarks: 6,
     rows: [
@@ -4513,7 +4641,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q17ai", topicId: "agsci-3-3-2", conceptId: "post-reseeding-sward-management",
     section: "B", questionRef: "2023 HL Q17(a)(i)",
-    stem: "Question 17. Due to the rise in fertiliser prices, Mark has decided to reseed 20% of his 150 hectare dairy and beef farm. He has spent a lot of time researching the best method of reseeding his land and which sward composition would best suit his soil type and farming enterprise. As part of his research he learned it takes about 11 months for a new sward to become fully established. Therefore, the management of the reseeded land in this period is important.",
+    stem: "Due to the rise in fertiliser prices, Mark has decided to reseed 20% of his 150 hectare dairy and beef farm. He has spent a lot of time researching the best method of reseeding his land and which sward composition would best suit his soil type and farming enterprise. As part of his research he learned it takes about 11 months for a new sward to become fully established. Therefore, the management of the reseeded land in this period is important.",
     questionText: "Describe the management of the reseeded land at the following stages: First 8 weeks following sowing; Second grazing onwards; Autumn; Second year.",
     tariffModel: {"kind":"fixed","notation":"4(4)"}, totalMarks: 16,
     rows: [
@@ -4530,7 +4658,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q17aii", topicId: "agsci-3-3-2", conceptId: "encouraging-grass-tillering",
     section: "B", questionRef: "2023 HL Q17(a)(ii)",
-    stem: "Question 17. Due to the rise in fertiliser prices, Mark has decided to reseed 20% of his 150 hectare dairy and beef farm. He has spent a lot of time researching the best method of reseeding his land and which sward composition would best suit his soil type and farming enterprise. As part of his research he learned it takes about 11 months for a new sward to become fully established.",
+    stem: "Due to the rise in fertiliser prices, Mark has decided to reseed 20% of his 150 hectare dairy and beef farm. He has spent a lot of time researching the best method of reseeding his land and which sward composition would best suit his soil type and farming enterprise. As part of his research he learned it takes about 11 months for a new sward to become fully established.",
     questionText: "The process of grass tillering is critical for successful sward establishment. Explain ways plants can be encouraged to tiller.",
     tariffModel: {"kind":"orderedSplit","notation":"6+2"}, totalMarks: 8,
     rows: [
@@ -4545,7 +4673,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q17bi", topicId: "agsci-3-3-1", conceptId: "hybrid-diploid-tetraploid-seed-mixture",
     section: "B", questionRef: "2023 HL Q17(b)(i)",
-    stem: "Question 17. Due to the rise in fertiliser prices, Mark has decided to reseed 20% of his 150 hectare dairy and beef farm. He has spent a lot of time researching the best method of reseeding his land and which sward composition would best suit his soil type and farming enterprise.",
+    stem: "Due to the rise in fertiliser prices, Mark has decided to reseed 20% of his 150 hectare dairy and beef farm. He has spent a lot of time researching the best method of reseeding his land and which sward composition would best suit his soil type and farming enterprise.",
     questionText: "In his research Mark found that most perennial ryegrass grass mixtures are made up of a hybrid mix of diploid and tetraploid varieties. The differences between these grasses is shown in the table below. Describe the reasons for including a hybrid seed mixture in his reseeding plan.",
     tariffModel: {"kind":"fixed","notation":"2(6)"}, totalMarks: 12,
     rows: [
@@ -4568,7 +4696,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q17bii", topicId: "agsci-3-3-1", conceptId: "varied-heading-out-dates-in-seed-mixture",
     section: "B", questionRef: "2023 HL Q17(b)(ii)",
-    stem: "Question 17. Due to the rise in fertiliser prices, Mark has decided to reseed 20% of his 150 hectare dairy and beef farm. He has spent a lot of time researching the best method of reseeding his land and which sward composition would best suit his soil type and farming enterprise.",
+    stem: "Due to the rise in fertiliser prices, Mark has decided to reseed 20% of his 150 hectare dairy and beef farm. He has spent a lot of time researching the best method of reseeding his land and which sward composition would best suit his soil type and farming enterprise.",
     questionText: "Outline reasons for including a variety of heading out dates in the grass seed mixture when reseeding swards.",
     tariffModel: {"kind":"fixed","notation":"2(2)"}, totalMarks: 4,
     rows: [
@@ -4583,7 +4711,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q17c", topicId: "agsci-3-1", conceptId: "grass-sexual-and-asexual-reproduction",
     section: "B", questionRef: "2023 HL Q17(c)",
-    stem: "Question 17. Due to the rise in fertiliser prices, Mark has decided to reseed 20% of his 150 hectare dairy and beef farm. Grass has the ability to reproduce sexually and asexually.",
+    stem: "Due to the rise in fertiliser prices, Mark has decided to reseed 20% of his 150 hectare dairy and beef farm. Grass has the ability to reproduce sexually and asexually.",
     questionText: "Explain, with the aid of a labelled diagram, how a grass plant reproduces either sexually or asexually.",
     tariffModel: {"kind":"orderedSplit","notation":"5+1"}, totalMarks: 6,
     rows: [
@@ -4600,7 +4728,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q18aii", topicId: "agsci-4-3-3", conceptId: "mastitis-symptoms",
     section: "B", questionRef: "2023 HL Q18(a)(ii)",
-    stem: "Question 18. Jenny and John are farming a 230 cow dairy farm in Co. Cork. They are looking at the overall quality of their milk and in particular the somatic cell count (SCC) figures from their recent milk report.",
+    stem: "Jenny and John are farming a 230 cow dairy farm in Co. Cork. They are looking at the overall quality of their milk and in particular the somatic cell count (SCC) figures from their recent milk report.",
     questionText: "Briefly describe the symptoms of mastitis in cows.",
     tariffModel: {"kind":"orderedSplit","notation":"4+3"}, totalMarks: 7,
     rows: [
@@ -4615,7 +4743,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q18aiii", topicId: "agsci-4-3-3", conceptId: "mastitis-treatment",
     section: "B", questionRef: "2023 HL Q18(a)(iii)",
-    stem: "Question 18. Jenny and John are farming a 230 cow dairy farm in Co. Cork. They are looking at the overall quality of their milk and in particular the somatic cell count (SCC) figures from their recent milk report.",
+    stem: "Jenny and John are farming a 230 cow dairy farm in Co. Cork. They are looking at the overall quality of their milk and in particular the somatic cell count (SCC) figures from their recent milk report.",
     questionText: "Explain the treatment of mastitis in cows.",
     tariffModel: {"kind":"fixed","notation":"4"}, totalMarks: 4,
     rows: [
@@ -4629,7 +4757,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q18aiv", topicId: "agsci-4-3-3", conceptId: "mastitis-control",
     section: "B", questionRef: "2023 HL Q18(a)(iv)",
-    stem: "Question 18. Jenny and John are farming a 230 cow dairy farm in Co. Cork. They are looking at the overall quality of their milk and in particular the somatic cell count (SCC) figures from their recent milk report.",
+    stem: "Jenny and John are farming a 230 cow dairy farm in Co. Cork. They are looking at the overall quality of their milk and in particular the somatic cell count (SCC) figures from their recent milk report.",
     questionText: "Briefly describe ways farmers can reduce mastitis in cows.",
     tariffModel: {"kind":"fixed","notation":"2(3)"}, totalMarks: 6,
     rows: [
@@ -4644,7 +4772,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q18bi", topicId: "agsci-4-1", conceptId: "morning-vs-evening-milk-composition",
     section: "B", questionRef: "2023 HL Q18(b)(i)",
-    stem: "Question 18. Jenny and John are farming a 230 cow dairy farm in Co. Cork. They are looking at the overall quality of their milk and in particular the somatic cell count (SCC) figures from their recent milk report. You have been invited to visit the farm to advise Jenny and John on how to improve their milk quality.",
+    stem: "Jenny and John are farming a 230 cow dairy farm in Co. Cork. They are looking at the overall quality of their milk and in particular the somatic cell count (SCC) figures from their recent milk report. You have been invited to visit the farm to advise Jenny and John on how to improve their milk quality.",
     questionText: "The milk composition in the morning and evening on their farm was as follows. Morning Milk (8am milking): Fat 3.12%, Protein 2.97%, Lactose 4.13%, Water 85.70%. Evening Milk (5pm milking): Fat 4.75%, Protein 3.25%, Lactose 4.50%, Water 84.90%. Analyse these figures and outline the reasons for the difference.",
     tariffModel: {"kind":"orderedSplit","notation":"3+1"}, totalMarks: 4,
     rows: [
@@ -4660,7 +4788,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q18bii", topicId: "agsci-4-3-2", conceptId: "factors-affecting-milk-quality",
     section: "B", questionRef: "2023 HL Q18(b)(ii)",
-    stem: "Question 18. Jenny and John are farming a 230 cow dairy farm in Co. Cork. They are looking at the overall quality of their milk and in particular the somatic cell count (SCC) figures from their recent milk report. You have been invited to visit the farm to advise Jenny and John on how to improve their milk quality.",
+    stem: "Jenny and John are farming a 230 cow dairy farm in Co. Cork. They are looking at the overall quality of their milk and in particular the somatic cell count (SCC) figures from their recent milk report. You have been invited to visit the farm to advise Jenny and John on how to improve their milk quality.",
     questionText: "As part of the inspection you look at the factors affecting milk quality. Describe the factors you would be looking for in your inspection.",
     tariffModel: {"kind":"fixed","notation":"F:3(3) + D:3(3)"}, totalMarks: 18,
     rows: [
@@ -4676,7 +4804,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q13ai", topicId: "agsci-1-2", conceptId: "quadrat-botanical-composition-investigation",
     section: "B", questionRef: "2024 HL Q13(a)(i)",
-    stem: "Question 13. Answer both (a) and (b) with either (c) or (d). Gill, an agricultural advisor, carried out an investigation to determine the botanical composition of a farmer's land.",
+    stem: "Answer both (a) and (b) with either (c) or (d). Gill, an agricultural advisor, carried out an investigation to determine the botanical composition of a farmer's land.",
     questionText: "Describe with the aid of a labelled diagram how she carried out this investigation.",
     tariffModel: {"kind":"bestNofParts","answer":3,"ofParts":5,"perPart":4}, totalMarks: 12,
     rows: [
@@ -4694,7 +4822,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q13aiii", topicId: "agsci-3-3-2", conceptId: "improving-grassland-plant-biodiversity",
     section: "B", questionRef: "2024 HL Q13(a)(iii)",
-    stem: "Question 13. Answer both (a) and (b) with either (c) or (d). Gill, an agricultural advisor, carried out an investigation to determine the botanical composition of a farmer's land. Gill wanted to provide advice to the farmers on ways to enhance plant biodiversity. She used the Farmland Plant Identification Key for the Agri-Climate Rural Environmental Scheme (ACRES) to help identify positive plant indicator species which would enhance biodiversity. The range and cover of positive plant indicators is one of the best ways of quantifying the biodiversity value of the habitat (field). Positive grassland indicators: grassland which is not managed intensively and contains plants such as Primrose and Meadow Thistle. Negative grassland indicators: grassland is managed intensively and is used to rapidly assess if land is in 'poor' condition. It contains plants such as Ragwort and Nettles.",
+    stem: "Answer both (a) and (b) with either (c) or (d). Gill, an agricultural advisor, carried out an investigation to determine the botanical composition of a farmer's land. Gill wanted to provide advice to the farmers on ways to enhance plant biodiversity. She used the Farmland Plant Identification Key for the Agri-Climate Rural Environmental Scheme (ACRES) to help identify positive plant indicator species which would enhance biodiversity. The range and cover of positive plant indicators is one of the best ways of quantifying the biodiversity value of the habitat (field). Positive grassland indicators: grassland which is not managed intensively and contains plants such as Primrose and Meadow Thistle. Negative grassland indicators: grassland is managed intensively and is used to rapidly assess if land is in 'poor' condition. It contains plants such as Ragwort and Nettles.",
     questionText: "Gill identified significant numbers of negative grassland indicators in her investigation. Briefly explain what advice Gill would give the farmer in order to create a positive grassland for plant biodiversity.",
     tariffModel: {"kind":"orderedSplit","notation":"6+2"}, totalMarks: 8,
     rows: [
@@ -4712,7 +4840,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q13bi", topicId: "agsci-2-1", conceptId: "peat-soil-formation",
     section: "B", questionRef: "2024 HL Q13(b)(i)",
-    stem: "Question 13. Answer both (a) and (b) with either (c) or (d).",
+    stem: "Answer both (a) and (b) with either (c) or (d).",
     questionText: "Describe with the aid of a labelled diagram how a peat soil is formed.",
     tariffModel: {"kind":"orderedSplit","notation":"6+2"}, totalMarks: 8,
     rows: [
@@ -4734,7 +4862,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q13bii", topicId: "agsci-2-1", conceptId: "peat-soil-locations-ireland",
     section: "B", questionRef: "2024 HL Q13(b)(ii)",
-    stem: "Question 13. Answer both (a) and (b) with either (c) or (d).",
+    stem: "Answer both (a) and (b) with either (c) or (d).",
     questionText: "State two locations in Ireland where you would find a peat soil.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -4749,7 +4877,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q13c", topicId: "agsci-2-3", conceptId: "importance-of-preserving-peat-bogs",
     section: "B", questionRef: "2024 HL Q13(c)",
-    stem: "Question 13. Answer both (a) and (b) with either (c) or (d). Parts (c) and (d) are alternatives — answer one of them.",
+    stem: "Answer both (a) and (b) with either (c) or (d). Parts (c) and (d) are alternatives — answer one of them.",
     questionText: "You have been asked to address a group of farmers. Outline the advice you would give them about the importance of preserving our peat bogs.",
     tariffModel: {"kind":"orderedSplit","notation":"6+2"}, totalMarks: 8,
     rows: [
@@ -4769,7 +4897,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q13d", topicId: "agsci-3-3-2", conceptId: "combating-farm-biodiversity-loss",
     section: "B", questionRef: "2024 HL Q13(d)",
-    stem: "Question 13. Answer both (a) and (b) with either (c) or (d). Parts (c) and (d) are alternatives — answer one of them.",
+    stem: "Answer both (a) and (b) with either (c) or (d). Parts (c) and (d) are alternatives — answer one of them.",
     questionText: "Outline measures farmers can take to combat biodiversity loss on their farms.",
     tariffModel: {"kind":"orderedSplit","notation":"6+2"}, totalMarks: 8,
     rows: [
@@ -4789,7 +4917,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q14ai", topicId: "agsci-3-3-3", conceptId: "silage-fermentation-bacteria",
     section: "B", questionRef: "2024 HL Q14(a)(i)",
-    stem: "Question 14. Answer both (a) and (b) with either (c) or (d). Silage harvest 2023 has been difficult for farmers due to prolonged periods of adverse weather conditions.",
+    stem: "Answer both (a) and (b) with either (c) or (d). Silage harvest 2023 has been difficult for farmers due to prolonged periods of adverse weather conditions.",
     questionText: "Identify the bacteria that is required for good quality silage by placing a tick in the correct box: Lactobacillus / Clostridia / Staphylococcus aureus.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -4803,7 +4931,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q14aii", topicId: "agsci-3-3-3", conceptId: "silage-production-processes",
     section: "B", questionRef: "2024 HL Q14(a)(ii)",
-    stem: "Question 14. Answer both (a) and (b) with either (c) or (d). Silage harvest 2023 has been difficult for farmers due to prolonged periods of adverse weather conditions.",
+    stem: "Answer both (a) and (b) with either (c) or (d). Silage harvest 2023 has been difficult for farmers due to prolonged periods of adverse weather conditions.",
     questionText: "Describe the chemical / biological processes involved in the production of good quality silage from the harvested grass.",
     tariffModel: {"kind":"bestNofParts","answer":3,"ofParts":9,"perPart":4}, totalMarks: 12,
     rows: [
@@ -4817,7 +4945,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q14aiii", topicId: "agsci-3-3-3", conceptId: "ideal-silage-dry-matter",
     section: "B", questionRef: "2024 HL Q14(a)(iii)",
-    stem: "Question 14. Answer both (a) and (b) with either (c) or (d). Silage harvest 2023 has been difficult for farmers due to prolonged periods of adverse weather conditions. The dry matter (DM)% content of silage is a good indicator of quality.",
+    stem: "Answer both (a) and (b) with either (c) or (d). Silage harvest 2023 has been difficult for farmers due to prolonged periods of adverse weather conditions. The dry matter (DM)% content of silage is a good indicator of quality.",
     questionText: "Identify the ideal DM% of good quality silage by placing a tick in the correct box: 45% / 25% / 15%.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -4831,7 +4959,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q14bi", topicId: "agsci-1-2", conceptId: "silage-dry-matter-investigation",
     section: "B", questionRef: "2024 HL Q14(b)(i)",
-    stem: "Question 14. Answer both (a) and (b) with either (c) or (d). Silage harvest 2023 has been difficult for farmers due to prolonged periods of adverse weather conditions.",
+    stem: "Answer both (a) and (b) with either (c) or (d). Silage harvest 2023 has been difficult for farmers due to prolonged periods of adverse weather conditions.",
     questionText: "Describe how an agricultural science student could carry out an investigation to measure the dry matter (DM) content of a sample of silage in the school laboratory.",
     tariffModel: {"kind":"bestNofParts","answer":3,"ofParts":9,"perPart":4}, totalMarks: 12,
     rows: [
@@ -4845,7 +4973,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q14bii", topicId: "agsci-3-3-3", conceptId: "factors-affecting-silage-quality",
     section: "B", questionRef: "2024 HL Q14(b)(ii)",
-    stem: "Question 14. Answer both (a) and (b) with either (c) or (d). Silage harvest 2023 has been difficult for farmers due to prolonged periods of adverse weather conditions.",
+    stem: "Answer both (a) and (b) with either (c) or (d). Silage harvest 2023 has been difficult for farmers due to prolonged periods of adverse weather conditions.",
     questionText: "Apart from dry matter, outline factors affecting silage quality.",
     tariffModel: {"kind":"orderedSplit","notation":"6+2"}, totalMarks: 8,
     rows: [
@@ -4866,7 +4994,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q14d", topicId: "agsci-3-2", conceptId: "grass-characteristics-for-grazing",
     section: "B", questionRef: "2024 HL Q14(d)",
-    stem: "Question 14. Answer both (a) and (b) with either (c) or (d). Silage harvest 2023 has been difficult for farmers due to prolonged periods of adverse weather conditions. Parts (c) and (d) are alternatives — answer one of them.",
+    stem: "Answer both (a) and (b) with either (c) or (d). Silage harvest 2023 has been difficult for farmers due to prolonged periods of adverse weather conditions. Parts (c) and (d) are alternatives — answer one of them.",
     questionText: "Outline the characteristics of grass that make it most desirable for grazing.",
     tariffModel: {"kind":"orderedSplit","notation":"5+1"}, totalMarks: 6,
     rows: [
@@ -4883,7 +5011,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q15ai", topicId: "agsci-4-1", conceptId: "phenotype",
     section: "B", questionRef: "2024 HL Q15(a)(i)",
-    stem: "Question 15. Read the article and answer the questions that follow. NUTRIENT REQUIREMENTS OF BEEF CATTLE — Beef cattle productivity is highly dependent on nutrition and the ability of the animal's diet to meet nutrient requirements. To survive and be productive, beef cattle require water, energy, protein, minerals, and vitamins. The animal's phenotype is the result of an interaction between its genetics and the environment. Nutrition often makes up a large portion of the environmental component and therefore can potentially affect the animal's phenotype. (Adapted from mcdvetmanual.com) The underlined term is 'phenotype'.",
+    stem: "Read the article and answer the questions that follow. NUTRIENT REQUIREMENTS OF BEEF CATTLE — Beef cattle productivity is highly dependent on nutrition and the ability of the animal's diet to meet nutrient requirements. To survive and be productive, beef cattle require water, energy, protein, minerals, and vitamins. The animal's phenotype is the result of an interaction between its genetics and the environment. Nutrition often makes up a large portion of the environmental component and therefore can potentially affect the animal's phenotype. (Adapted from mcdvetmanual.com) The underlined term is 'phenotype'.",
     questionText: "Explain the underlined term.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -4897,7 +5025,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q15aii", topicId: "agsci-4-1", conceptId: "nutrient-functions-in-beef-cattle",
     section: "B", questionRef: "2024 HL Q15(a)(ii)",
-    stem: "Question 15. Read the article and answer the questions that follow. NUTRIENT REQUIREMENTS OF BEEF CATTLE — Beef cattle productivity is highly dependent on nutrition and the ability of the animal's diet to meet nutrient requirements. To survive and be productive, beef cattle require water, energy, protein, minerals, and vitamins. (Adapted from mcdvetmanual.com)",
+    stem: "Read the article and answer the questions that follow. NUTRIENT REQUIREMENTS OF BEEF CATTLE — Beef cattle productivity is highly dependent on nutrition and the ability of the animal's diet to meet nutrient requirements. To survive and be productive, beef cattle require water, energy, protein, minerals, and vitamins. (Adapted from mcdvetmanual.com)",
     questionText: "Briefly explain the function for growth and development of beef animals of each of the following nutrients: Protein, Vitamins, Water.",
     tariffModel: {"kind":"orderedSplit","notation":"6+2+1"}, totalMarks: 9,
     rows: [
@@ -4913,7 +5041,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q15aiii", topicId: "agsci-4-1", conceptId: "factors-influencing-cattle-nutrient-requirements",
     section: "B", questionRef: "2024 HL Q15(a)(iii)",
-    stem: "Question 15. Read the article and answer the questions that follow. NUTRIENT REQUIREMENTS OF BEEF CATTLE — Beef cattle productivity is highly dependent on nutrition and the ability of the animal's diet to meet nutrient requirements. To survive and be productive, beef cattle require water, energy, protein, minerals, and vitamins. (Adapted from mcdvetmanual.com) The amounts of nutrients that cattle require is influenced by various animal-related factors and environmental conditions.",
+    stem: "Read the article and answer the questions that follow. NUTRIENT REQUIREMENTS OF BEEF CATTLE — Beef cattle productivity is highly dependent on nutrition and the ability of the animal's diet to meet nutrient requirements. To survive and be productive, beef cattle require water, energy, protein, minerals, and vitamins. (Adapted from mcdvetmanual.com) The amounts of nutrients that cattle require is influenced by various animal-related factors and environmental conditions.",
     questionText: "State two animal-related factors or two environmental conditions.",
     tariffModel: {"kind":"bestNofParts","answer":2,"ofParts":14,"perPart":2}, totalMarks: 4,
     rows: [
@@ -4927,7 +5055,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q15aiv", topicId: "agsci-4-3-2", conceptId: "breeding-cow-energy-requirements",
     section: "B", questionRef: "2024 HL Q15(a)(iv)",
-    stem: "Question 15. Beef cattle productivity is highly dependent on nutrition and the ability of the animal's diet to meet nutrient requirements.",
+    stem: "Beef cattle productivity is highly dependent on nutrition and the ability of the animal's diet to meet nutrient requirements.",
     questionText: "Describe the energy requirement of a breeding cow at each stage of the production cycle: Breeding, Dry period, Early lactation.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -4943,7 +5071,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q15av", topicId: "agsci-4-3-3", conceptId: "mineral-deficiency-symptoms-and-prevention",
     section: "B", questionRef: "2024 HL Q15(a)(v)",
-    stem: "Question 15. Beef cattle productivity is highly dependent on nutrition and the ability of the animal's diet to meet nutrient requirements. To survive and be productive, beef cattle require water, energy, protein, minerals, and vitamins.",
+    stem: "Beef cattle productivity is highly dependent on nutrition and the ability of the animal's diet to meet nutrient requirements. To survive and be productive, beef cattle require water, energy, protein, minerals, and vitamins.",
     questionText: "Briefly describe the symptoms and prevention of a named mineral deficiency in cows.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -4962,7 +5090,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q15bi", topicId: "agsci-4-3-2", conceptId: "benefits-of-weighing-beef-cattle",
     section: "B", questionRef: "2024 HL Q15(b)(i)",
-    stem: "Question 15. Paul started weighing his beef calves to increase efficiency and comply with the Dairy Beef Weighing Scheme.",
+    stem: "Paul started weighing his beef calves to increase efficiency and comply with the Dairy Beef Weighing Scheme.",
     questionText: "Outline benefits of weighing cattle on beef farms.",
     tariffModel: {"kind":"orderedSplit","notation":"5+1"}, totalMarks: 6,
     rows: [
@@ -4980,7 +5108,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q15bii", topicId: "agsci-1-5", conceptId: "safety-when-weighing-cattle",
     section: "B", questionRef: "2024 HL Q15(b)(ii)",
-    stem: "Question 15. Paul started weighing his beef calves to increase efficiency and comply with the Dairy Beef Weighing Scheme.",
+    stem: "Paul started weighing his beef calves to increase efficiency and comply with the Dairy Beef Weighing Scheme.",
     questionText: "Briefly describe two safety considerations taken when weighing beef animals.",
     tariffModel: {"kind":"orderedSplit","notation":"5+4"}, totalMarks: 9,
     rows: [
@@ -4999,7 +5127,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q15cii", topicId: "agsci-4-3-1", conceptId: "dairy-beef-weighing-scheme-payment",
     section: "B", questionRef: "2024 HL Q15(c)(ii)",
-    stem: "Question 15. Paul started weighing his beef calves to increase efficiency and comply with the Dairy Beef Weighing Scheme. Paul recorded the weight of his 52 beef calves.",
+    stem: "Paul started weighing his beef calves to increase efficiency and comply with the Dairy Beef Weighing Scheme. Paul recorded the weight of his 52 beef calves.",
     questionText: "As part of the scheme, farmers are eligible for €20 per calf weighed up to a maximum of 50 calves. Calculate the value of the scheme to Paul.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -5013,12 +5141,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q16ai", topicId: "agsci-1-1", conceptId: "hypothesis-for-colostrum-investigation",
     section: "B", questionRef: "2024 HL Q16(a)(i)",
-    stem: "Ella and Sadie are agricultural science students carrying out an investigation to determine the effect of feeding pooled (combining colostrum from a number of cows) high quality colostrum on the health and performance of dairy calves. Experimental design was set up as follows: Sample 1 — pooled colostrum; Sample 2 — own dam colostrum; Sample 3 — colostrum from another dam; 20 calves per treatment. Colostrum quality was determined by Brix Refractometer and only IgG (Immunoglobulin) concentration of >50mg/ml was used. Calves were weighed weekly.",
+    stem: "Ella and Sadie are agricultural science students carrying out an investigation to determine the effect of feeding pooled (combining colostrum from a number of cows) high quality colostrum on the health and performance of dairy calves. Experimental design was set up as shown in the table below.",
     questionText: "Outline a hypothesis for this investigation.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Feeding pooled good quality colostrum to calves has no negative affect on the health or performance of calves", marks: 2, contextNote: "The scheme adds: Hypothesis must include effect on health or performance of calves." },
     ],
+    figure: {
+          "candId": "agricultural-science-2024-HL-paper-p31-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p31-i1.png",
+          "srcHash": "7edfe7e32bebb04337d3bfa4fcbd0f5f",
+          "alt": "A table from the exam paper. Columns: Treatment, Sample 1 Pooled colostrum, Sample 2 Own dam colostrum, Sample 3 Colostrum from another dam. Rows: Number of calves per treatment, Colostrum quality was determined by Brix Refractometer and only IgG (Immunoglobulin) concentration of >50mg/ml was used, Calves were weighed weekly. 4 rows by 4 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5027,13 +5163,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q16aii", topicId: "agsci-1-2", conceptId: "fair-test-judgement",
     section: "B", questionRef: "2024 HL Q16(a)(ii)",
-    stem: "Ella and Sadie are agricultural science students carrying out an investigation to determine the effect of feeding pooled (combining colostrum from a number of cows) high quality colostrum on the health and performance of dairy calves. Experimental design was set up as follows: Sample 1 — pooled colostrum; Sample 2 — own dam colostrum; Sample 3 — colostrum from another dam; 20 calves per treatment. Colostrum quality was determined by Brix Refractometer and only IgG (Immunoglobulin) concentration of >50mg/ml was used. Calves were weighed weekly.",
+    stem: "Ella and Sadie are agricultural science students carrying out an investigation to determine the effect of feeding pooled (combining colostrum from a number of cows) high quality colostrum on the health and performance of dairy calves. Experimental design was set up as shown in the table below.",
     questionText: "State with reason if this investigation is a fair test.",
     tariffModel: {"kind":"fixed","notation":"4 + 3"}, totalMarks: 7,
     rows: [
     { id: "r-1", kind: "point", verbatim: "It is a fair test (Yes)", marks: 4 },
     { id: "r-2", kind: "point", verbatim: "Reason: equal sample size", marks: 3, accepts: ["similar birth weight or weighed weekly","all colostrum samples reach minimum concentration (> 50mg IgG)","same refractometer"] },
     ],
+    figure: {
+          "candId": "agricultural-science-2024-HL-paper-p31-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p31-i1.png",
+          "srcHash": "7edfe7e32bebb04337d3bfa4fcbd0f5f",
+          "alt": "A table from the exam paper. Columns: Treatment, Sample 1 Pooled colostrum, Sample 2 Own dam colostrum, Sample 3 Colostrum from another dam. Rows: Number of calves per treatment, Colostrum quality was determined by Brix Refractometer and only IgG (Immunoglobulin) concentration of >50mg/ml was used, Calves were weighed weekly. 4 rows by 4 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5042,7 +5186,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q16aiii", topicId: "agsci-1-2", conceptId: "independent-dependent-control-variables",
     section: "B", questionRef: "2024 HL Q16(a)(iii)",
-    stem: "Ella and Sadie are agricultural science students carrying out an investigation to determine the effect of feeding pooled (combining colostrum from a number of cows) high quality colostrum on the health and performance of dairy calves. Experimental design was set up as follows: Sample 1 — pooled colostrum; Sample 2 — own dam colostrum; Sample 3 — colostrum from another dam; 20 calves per treatment. Colostrum quality was determined by Brix Refractometer and only IgG (Immunoglobulin) concentration of >50mg/ml was used. Calves were weighed weekly.",
+    stem: "Ella and Sadie are agricultural science students carrying out an investigation to determine the effect of feeding pooled (combining colostrum from a number of cows) high quality colostrum on the health and performance of dairy calves. Experimental design was set up as shown in the table below.",
     questionText: "State the independent, dependent and control variables in this investigation.",
     tariffModel: {"kind":"fixed","notation":"4+4+3"}, totalMarks: 11,
     rows: [
@@ -5050,6 +5194,14 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Dependent: Weight gain", marks: 4 },
     { id: "r-3", kind: "point", verbatim: "Control: Same number of calves / same refractometer / same weighing interval", marks: 3 },
     ],
+    figure: {
+          "candId": "agricultural-science-2024-HL-paper-p31-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p31-i1.png",
+          "srcHash": "7edfe7e32bebb04337d3bfa4fcbd0f5f",
+          "alt": "A table from the exam paper. Columns: Treatment, Sample 1 Pooled colostrum, Sample 2 Own dam colostrum, Sample 3 Colostrum from another dam. Rows: Number of calves per treatment, Colostrum quality was determined by Brix Refractometer and only IgG (Immunoglobulin) concentration of >50mg/ml was used, Calves were weighed weekly. 4 rows by 4 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5058,7 +5210,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
     id: "agsci-2024-hl-q16aiv", topicId: "agsci-1-3", conceptId: "sources-of-error-in-an-investigation",
     section: "B", questionRef: "2024 HL Q16(a)(iv)",
-    stem: "Ella and Sadie are agricultural science students carrying out an investigation to determine the effect of feeding pooled (combining colostrum from a number of cows) high quality colostrum on the health and performance of dairy calves. Experimental design was set up as follows: Sample 1 — pooled colostrum; Sample 2 — own dam colostrum; Sample 3 — colostrum from another dam; 20 calves per treatment. Colostrum quality was determined by Brix Refractometer and only IgG (Immunoglobulin) concentration of >50mg/ml was used. Calves were weighed weekly.",
+    stem: "Ella and Sadie are agricultural science students carrying out an investigation to determine the effect of feeding pooled (combining colostrum from a number of cows) high quality colostrum on the health and performance of dairy calves. Experimental design was set up as shown in the table below.",
     questionText: "Outline two possible sources of error in this investigation.",
     tariffModel: {"kind":"orderedSplit","notation":"3 + 1"}, totalMarks: 4,
     rows: [
@@ -5068,6 +5220,14 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "colostrum contamination", marks: null },
     { id: "r-5", kind: "point", verbatim: "measurement of volume of colostrum", marks: null },
     ],
+    figure: {
+          "candId": "agricultural-science-2024-HL-paper-p31-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p31-i1.png",
+          "srcHash": "7edfe7e32bebb04337d3bfa4fcbd0f5f",
+          "alt": "A table from the exam paper. Columns: Treatment, Sample 1 Pooled colostrum, Sample 2 Own dam colostrum, Sample 3 Colostrum from another dam. Rows: Number of calves per treatment, Colostrum quality was determined by Brix Refractometer and only IgG (Immunoglobulin) concentration of >50mg/ml was used, Calves were weighed weekly. 4 rows by 4 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5433,12 +5593,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
     id: "agsci-2025-hl-q13cii", topicId: "agsci-4-3-2", conceptId: "mistimed-insemination-causes",
     section: "B", questionRef: "2025 HL Q13(c)(ii)",
-    stem: "Question 13, part (c) — answered instead of part (d). The paper prints a table of the best time to inseminate a cow: AI is 'Too early' at 0-6 hours, 'Good' at 6-12, 'Best' at 12-18, 'Good' at 18-24 and 'Too late' at 24-30 hours from the start of heat.",
+    stem: "Question 13, part (c) — answered instead of part (d). The table below shows the best time for insemination of cows to achieve higher conception rates.",
     questionText: "Outline one reason why cows may be inseminated too early or too late.",
     tariffModel: {"kind":"fixed","notation":"5"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Missed ovulation", marks: 5, accepts: ["inaccurate heat detection"] },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-HL-paper-p23-i3",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-p23-i3.png",
+          "srcHash": "33fa0fb16c25938e94f1224226a2184b",
+          "alt": "A table from the exam paper. Columns: Time (hours), 0 - 6, 6 - 12, 12 - 18, 18 - 24, 24 - 30. Rows: Artificial Insemination (AI), Natural mating. 3 rows by 7 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5600,13 +5768,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
     id: "agsci-2025-hl-q15aiv", topicId: "agsci-3-1", conceptId: "dominant-trait-and-crop-improvement",
     section: "B", questionRef: "2025 HL Q15(a)(iv)",
-    stem: "Question 15, part (a). Alex crossed a potato plant with purple flowers with a plant with white flowers, then collected 20 potato seeds and planted them. All seeds germinated and produced flowers. Alex counted the number of plants of each colour: 14 plants with purple flowers and 6 with white flowers.",
+    stem: "Question 15, part (a). Alex crossed a potato plant with purple flowers with a plant with white flowers, then collected 20 potato seeds and planted them. All seeds germinated and produced flowers. Alex counted the number of plants with purple flowers and white flowers. The results are shown in the table below.",
     questionText: "Identify the dominant trait in the plants and suggest how a knowledge of genetic inheritance can improve crop production on a tillage farm.",
     tariffModel: {"kind":"fixed","notation":"6+2"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Dominant trait: Purple", marks: 6 },
     { id: "r-2", kind: "point", verbatim: "Suggest: crops can be selected for traits (which beneficial to the farmer) e.g. yield, disease resistance, earliness of ripening", marks: 2, contextNote: "The marking point is that crops can be selected for traits that benefit the farmer; the scheme introduces yield, disease resistance and earliness of ripening with 'e.g.', so they are illustrative and any other beneficial trait scores.", openList: true },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-HL-paper-p29-i6",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-p29-i6.png",
+          "srcHash": "7a4726b0d026378e8d06508ff4fdb709",
+          "alt": "A table from the exam paper. Columns: Purple flowers, White flowers. Rows: Number of plants. 2 rows by 3 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5615,12 +5791,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
     id: "agsci-2025-hl-q16ai", topicId: "agsci-4-3-2", conceptId: "feed-intake-comparison",
     section: "B", questionRef: "2025 HL Q16(a)(i)",
-    stem: "Question 16, part (a). A suckler-bred Charolais steer and a dairy-origin Holstein Friesian steer were both offered a high-concentrate finishing diet. Their figures (adapted from Teagasc, 2022) are listed here, Charolais first and Holstein Friesian second — Age (days): 654 and 678. Daily Dry Matter (DM) intake (kg/day): 11.5 and 12.6. Feed conversion ratio (FCR): 8.4 and 9.8. Liveweight (kg): 725 and 659. Carcass weight (kg): 446 and 360. Analyse these figures and answer the question that follows.",
+    stem: "Question 16, part (a). A suckler-bred Charolais steer and a dairy-origin Holstein Friesian steer were both offered a high-concentrate finishing diet. Their figures are shown in the table below. Analyse the table and answer the question that follows.",
     questionText: "Identify the animal with the higher intake of feed.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Holstein Friesian", marks: 4, contextNote: "Read the Daily Dry Matter (DM) intake row: 12.6 kg/day against the Charolais's 11.5 kg/day." },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-HL-paper-p32-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-p32-i1.png",
+          "srcHash": "382a256d1ceca85173bba345fc0c8982",
+          "alt": "A table from the exam paper. Columns: Charolais, Holstein Friesian. Rows: Age (days), Daily Dry Matter (DM) intake (kg/day), Feed conversion ratio (FCR), Liveweight (kg), Carcass weight (kg). 6 rows by 3 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5629,12 +5813,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
     id: "agsci-2025-hl-q16aii", topicId: "agsci-4-3-2", conceptId: "feed-conversion-ratio-comparison",
     section: "B", questionRef: "2025 HL Q16(a)(ii)",
-    stem: "Question 16, part (a). A suckler-bred Charolais steer and a dairy-origin Holstein Friesian steer were both offered a high-concentrate finishing diet. Their figures (adapted from Teagasc, 2022) are listed here, Charolais first and Holstein Friesian second — Age (days): 654 and 678. Daily Dry Matter (DM) intake (kg/day): 11.5 and 12.6. Feed conversion ratio (FCR): 8.4 and 9.8. Liveweight (kg): 725 and 659. Carcass weight (kg): 446 and 360. Analyse these figures and answer the question that follows.",
+    stem: "Question 16, part (a). A suckler-bred Charolais steer and a dairy-origin Holstein Friesian steer were both offered a high-concentrate finishing diet. Their figures are shown in the table below. Analyse the table and answer the question that follows.",
     questionText: "Identify which animal had the better food conversion ratio (FCR).",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Charolais", marks: 4, contextNote: "A LOWER FCR is the better one - 8.4 kg of feed per kg of gain against 9.8." },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-HL-paper-p32-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-p32-i1.png",
+          "srcHash": "382a256d1ceca85173bba345fc0c8982",
+          "alt": "A table from the exam paper. Columns: Charolais, Holstein Friesian. Rows: Age (days), Daily Dry Matter (DM) intake (kg/day), Feed conversion ratio (FCR), Liveweight (kg), Carcass weight (kg). 6 rows by 3 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5643,12 +5835,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
     id: "agsci-2025-hl-q16aiii", topicId: "agsci-4-3-2", conceptId: "daily-liveweight-gain-calculation",
     section: "B", questionRef: "2025 HL Q16(a)(iii)",
-    stem: "Question 16, part (a). A suckler-bred Charolais steer and a dairy-origin Holstein Friesian steer were both offered a high-concentrate finishing diet. Their figures (adapted from Teagasc, 2022) are listed here, Charolais first and Holstein Friesian second — Age (days): 654 and 678. Daily Dry Matter (DM) intake (kg/day): 11.5 and 12.6. Feed conversion ratio (FCR): 8.4 and 9.8. Liveweight (kg): 725 and 659. Carcass weight (kg): 446 and 360. Analyse these figures and answer the question that follows.",
+    stem: "Question 16, part (a). A suckler-bred Charolais steer and a dairy-origin Holstein Friesian steer were both offered a high-concentrate finishing diet. Their figures are shown in the table below. Analyse the table and answer the question that follows.",
     questionText: "Calculate the Daily Liveweight Gain (DLG) from birth to slaughter for the Charolais.",
     tariffModel: {"kind":"fixed","notation":"2m for method, 2m for final answer"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Charolais: 725/654 = 1.1 kg", marks: 4, contextNote: "2m for method, 2m for final answer; if the answer is given and correct with no method, award 4m. The scheme also credits subtracting a birth weight first - (725-50)/654 = 1.03 or (725-40)/654 = 1.05." },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-HL-paper-p32-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-p32-i1.png",
+          "srcHash": "382a256d1ceca85173bba345fc0c8982",
+          "alt": "A table from the exam paper. Columns: Charolais, Holstein Friesian. Rows: Age (days), Daily Dry Matter (DM) intake (kg/day), Feed conversion ratio (FCR), Liveweight (kg), Carcass weight (kg). 6 rows by 3 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5657,12 +5857,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
     id: "agsci-2025-hl-q16aiv", topicId: "agsci-4-3-2", conceptId: "feed-efficiency-inferior-animal",
     section: "B", questionRef: "2025 HL Q16(a)(iv)",
-    stem: "Question 16, part (a). A suckler-bred Charolais steer and a dairy-origin Holstein Friesian steer were both offered a high-concentrate finishing diet. Their figures (adapted from Teagasc, 2022) are listed here, Charolais first and Holstein Friesian second — Age (days): 654 and 678. Daily Dry Matter (DM) intake (kg/day): 11.5 and 12.6. Feed conversion ratio (FCR): 8.4 and 9.8. Liveweight (kg): 725 and 659. Carcass weight (kg): 446 and 360. Analyse these figures and answer the question that follows.",
+    stem: "Question 16, part (a). A suckler-bred Charolais steer and a dairy-origin Holstein Friesian steer were both offered a high-concentrate finishing diet. Their figures are shown in the table below. Analyse the table and answer the question that follows.",
     questionText: "Identify which animal has the inferior feed efficiency.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Holstein Friesian", marks: 3, contextNote: "It eats more dry matter per day AND needs more of it per kg of gain (FCR 9.8)." },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-HL-paper-p32-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-p32-i1.png",
+          "srcHash": "382a256d1ceca85173bba345fc0c8982",
+          "alt": "A table from the exam paper. Columns: Charolais, Holstein Friesian. Rows: Age (days), Daily Dry Matter (DM) intake (kg/day), Feed conversion ratio (FCR), Liveweight (kg), Carcass weight (kg). 6 rows by 3 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5671,12 +5879,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
     id: "agsci-2025-hl-q16av", topicId: "agsci-4-3-2", conceptId: "fcr-definition",
     section: "B", questionRef: "2025 HL Q16(a)(v)",
-    stem: "Question 16, part (a). A suckler-bred Charolais steer and a dairy-origin Holstein Friesian steer were both offered a high-concentrate finishing diet. Their figures (adapted from Teagasc, 2022) are listed here, Charolais first and Holstein Friesian second — Age (days): 654 and 678. Daily Dry Matter (DM) intake (kg/day): 11.5 and 12.6. Feed conversion ratio (FCR): 8.4 and 9.8. Liveweight (kg): 725 and 659. Carcass weight (kg): 446 and 360. Analyse these figures and answer the question that follows.",
+    stem: "Question 16, part (a). A suckler-bred Charolais steer and a dairy-origin Holstein Friesian steer were both offered a high-concentrate finishing diet. Their figures are shown in the table below. Analyse the table and answer the question that follows.",
     questionText: "Explain Food Conversion Ratio (FCR).",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The amount of feed required to produced (1) kg of liveweight gain", marks: 2 },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-HL-paper-p32-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-p32-i1.png",
+          "srcHash": "382a256d1ceca85173bba345fc0c8982",
+          "alt": "A table from the exam paper. Columns: Charolais, Holstein Friesian. Rows: Age (days), Daily Dry Matter (DM) intake (kg/day), Feed conversion ratio (FCR), Liveweight (kg), Carcass weight (kg). 6 rows by 3 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5685,7 +5901,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
     id: "agsci-2025-hl-q16avi", topicId: "agsci-4-3-2", conceptId: "factors-affecting-fcr",
     section: "B", questionRef: "2025 HL Q16(a)(vi)",
-    stem: "Question 16, part (a). A suckler-bred Charolais steer and a dairy-origin Holstein Friesian steer were both offered a high-concentrate finishing diet. Their figures (adapted from Teagasc, 2022) are listed here, Charolais first and Holstein Friesian second — Age (days): 654 and 678. Daily Dry Matter (DM) intake (kg/day): 11.5 and 12.6. Feed conversion ratio (FCR): 8.4 and 9.8. Liveweight (kg): 725 and 659. Carcass weight (kg): 446 and 360. Analyse these figures and answer the question that follows.",
+    stem: "Question 16, part (a). A suckler-bred Charolais steer and a dairy-origin Holstein Friesian steer were both offered a high-concentrate finishing diet. Their figures are shown in the table below. Analyse the table and answer the question that follows.",
     questionText: "Outline factors affecting FCR in animals.",
     tariffModel: {"kind":"fixed","notation":"3(3)"}, totalMarks: 9,
     rows: [
@@ -5693,6 +5909,14 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "alt", verbatim: "sex", marks: 3, accepts: ["Breed","health or disease","feed or nutrition","management","age"] },
     { id: "r-3", kind: "alt", verbatim: "health or disease", marks: 3, accepts: ["Breed","sex","feed or nutrition","management","age"] },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-HL-paper-p32-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-p32-i1.png",
+          "srcHash": "382a256d1ceca85173bba345fc0c8982",
+          "alt": "A table from the exam paper. Columns: Charolais, Holstein Friesian. Rows: Age (days), Daily Dry Matter (DM) intake (kg/day), Feed conversion ratio (FCR), Liveweight (kg), Carcass weight (kg). 6 rows by 3 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5701,7 +5925,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
     id: "agsci-2025-hl-q16b", topicId: "agsci-4-3-1", conceptId: "carcass-value-calculation",
     section: "B", questionRef: "2025 HL Q16(b)",
-    stem: "Question 16, part (b). A suckler-bred Charolais steer and a dairy-origin Holstein Friesian steer were both offered a high-concentrate finishing diet. Their figures (adapted from Teagasc, 2022) are listed here, Charolais first and Holstein Friesian second — Age (days): 654 and 678. Daily Dry Matter (DM) intake (kg/day): 11.5 and 12.6. Feed conversion ratio (FCR): 8.4 and 9.8. Liveweight (kg): 725 and 659. Carcass weight (kg): 446 and 360.",
+    stem: "Question 16, part (b). A suckler-bred Charolais steer and a dairy-origin Holstein Friesian steer were both offered a high-concentrate finishing diet. Their figures are shown in the table below.",
     questionText: "The factory quoted a base price of €5.25 / kg. Show using calculations how much each animal would earn and identify the animal that would earn the most money.",
     tariffModel: {"kind":"fixed","notation":"3x2"}, totalMarks: 6,
     rows: [
@@ -5709,6 +5933,14 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Holstein Friesian: 360 x 5.25 = 1890", marks: 2 },
     { id: "r-3", kind: "point", verbatim: "Animal: Charolais", marks: 2, contextNote: "The paper asks you to name the animal as well as show the sums; the naming is a mark in its own right." },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-HL-paper-p32-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-p32-i1.png",
+          "srcHash": "382a256d1ceca85173bba345fc0c8982",
+          "alt": "A table from the exam paper. Columns: Charolais, Holstein Friesian. Rows: Age (days), Daily Dry Matter (DM) intake (kg/day), Feed conversion ratio (FCR), Liveweight (kg), Carcass weight (kg). 6 rows by 3 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5896,12 +6128,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
     id: "agsci-2025-hl-q17cii", topicId: "agsci-1-3", conceptId: "highest-dm-intake-variety",
     section: "B", questionRef: "2025 HL Q17(c)(ii)",
-    stem: "An investigation was carried out over a six-week period to compare the dry matter production in two varieties of kale. Dry Matter yield of kale varieties in thousands of kg per hectare — Regal: Week 1 14.7, Week 2 14.3, Week 3 13.9, Week 4 14.3, Week 5 14.2, Week 6 14.8. Caledonia: Week 1 16.0, Week 2 15.5, Week 3 15.0, Week 4 16.5, Week 5 16.5, Week 6 17.5.",
+    stem: "An investigation was carried out over a six-week period to compare the dry matter production in two varieties of kale. The Dry Matter yield of each variety, in thousands of kg per hectare, is shown in the table below.",
     questionText: "Identify which variety of kale would provide the highest DM intake for livestock.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Variety: Caledonia", marks: 4, contextNote: "Caledonia outyields Regal in every one of the six weeks." },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-HL-paper-p37-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-p37-i0.png",
+          "srcHash": "8ebfb2f72695f5ad9c37446d88d733cc",
+          "alt": "A table from the exam paper. Columns: Dry Matter yield of kale varieties in thousands of kg per hectare. Rows: Kale variety, Regal, Caledonia. 4 rows by 7 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6116,7 +6356,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q1ai", topicId: "agsci-4-2", conceptId: "cattle-breed-identification",
     section: "A", questionRef: "2023 HL Q1(a)(i)",
-    stem: "Question 1. Answer either (a) or (b). This is option (a): three colour photographs of cattle side by side, lettered A, B and C beneath, over an 'A: / B: / C:' answer table. The rest of option (a) then works off breed C — '(ii) Breed C is a dual-purpose breed' — and asks about buying a purebred bull.",
+    stem: "Answer either (a) or (b). This is option (a): three colour photographs of cattle side by side, lettered A, B and C beneath, over an 'A: / B: / C:' answer table. The rest of option (a) then works off breed C — '(ii) Breed C is a dual-purpose breed' — and asks about buying a purebred bull.",
     questionText: "Identify each of the following breeds of animals.",
     tariffModel: {"kind":"fixed","notation":"3(2)"}, totalMarks: 6,
     rows: [
@@ -6145,7 +6385,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q1bi", topicId: "agsci-4-2", conceptId: "cattle-and-sheep-breed-identification",
     section: "A", questionRef: "2023 HL Q1(b)(i)",
-    stem: "Question 1. Answer either (a) or (b). This is option (b): three colour photographs lettered D, E and F beneath, over a 'D: / E: / F:' answer table. One is a dairy cow and two are sheep. Option (b) then moves on to the 'Fleckvieh Cattle' article and asks which Irish cattle industry that breed suits.",
+    stem: "Answer either (a) or (b). This is option (b): three colour photographs lettered D, E and F beneath, over a 'D: / E: / F:' answer table. One is a dairy cow and two are sheep. Option (b) then moves on to the 'Fleckvieh Cattle' article and asks which Irish cattle industry that breed suits.",
     questionText: "Identify each of the following breeds of animals.",
     tariffModel: {"kind":"fixed","notation":"3(2)"}, totalMarks: 6,
     rows: [
@@ -6198,7 +6438,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q10ai", topicId: "agsci-4-1", conceptId: "monogastric-digestive-system-labelled",
     section: "A", questionRef: "2023 HL Q10(a)(i)",
-    stem: "Question 10. Answer either (a) or (b). This is option (a): a cartoon side view of a pig, facing left, with its digestive tract drawn inside the body outline and three thick pale-blue arrows lettered A, B and C pointing into it, over an 'A: / B: / C:' answer table. Part (ii) then asks about the role of microorganisms in the same system.",
+    stem: "Answer either (a) or (b). This is option (a): a cartoon side view of a pig, facing left, with its digestive tract drawn inside the body outline and three thick pale-blue arrows lettered A, B and C pointing into it, over an 'A: / B: / C:' answer table. Part (ii) then asks about the role of microorganisms in the same system.",
     questionText: "Label the diagram below of the monogastric digestive system.",
     tariffModel: {"kind":"fixed","notation":"3(2)"}, totalMarks: 6,
     rows: [
@@ -6227,7 +6467,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q13bi", topicId: "agsci-2-2-2", conceptId: "soil-water-content-levels",
     section: "B", questionRef: "2023 HL Q13(b)(i)",
-    stem: "Question 13. Answer both (a) and (b) with either (c) or (d). Part (b) prints three square schematics of a soil sample side by side under a blue banner carrying the letters A, B and C, with a word bank above them — Permanent wilting point, Field capacity, Saturation — and an empty answer cell under each schematic. The paper states the colour code: brown represents soil particles, blue represents water and white represents air spaces. Part (ii) then asks for the implications for a farmer of any two of the three states.",
+    stem: "Answer both (a) and (b) with either (c) or (d). Part (b) prints three square schematics of a soil sample side by side under a blue banner carrying the letters A, B and C, with a word bank above them — Permanent wilting point, Field capacity, Saturation — and an empty answer cell under each schematic. The paper states the colour code: brown represents soil particles, blue represents water and white represents air spaces. Part (ii) then asks for the implications for a farmer of any two of the three states.",
     questionText: "Identify the soil water content level for each diagram using the words in the box below.",
     tariffModel: {"kind":"fixed","notation":"3(3)"}, totalMarks: 9,
     rows: [
@@ -6256,7 +6496,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q15ci", topicId: "agsci-1-3", conceptId: "soil-ph-with-least-n2o-emissions",
     section: "B", questionRef: "2023 HL Q15(c)(i)",
-    stem: "Question 15. A secondary school installed a new garden and polytunnel and the agricultural science class investigated the donated topsoil. Part (c) says 'Analyse the graph showing the effect soil pH has on nitrous oxide (N20) emissions and answer the questions which follow' and prints a bar chart titled 'Effect of soil pH on nitrous oxide (N20) emissions': cumulative N20 emissions in g N20/ha/year up the vertical axis, scaled 0 to 7000 in thousands, against four soil pH values along the bottom — 5.1, 5.4, 6.2 and 6.9. (The paper and the scheme both print nitrous oxide as 'N20'.)",
+    stem: "A secondary school installed a new garden and polytunnel and the agricultural science class investigated the donated topsoil. Part (c) says 'Analyse the graph showing the effect soil pH has on nitrous oxide (N20) emissions and answer the questions which follow' and prints a bar chart titled 'Effect of soil pH on nitrous oxide (N20) emissions': cumulative N20 emissions in g N20/ha/year up the vertical axis, scaled 0 to 7000 in thousands, against four soil pH values along the bottom — 5.1, 5.4, 6.2 and 6.9. (The paper and the scheme both print nitrous oxide as 'N20'.)",
     questionText: "State the soil pH that produces the least amount of N20 emissions.",
     tariffModel: {"kind":"fixed","notation":"6"}, totalMarks: 6,
     rows: [
@@ -6278,7 +6518,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q16ai", topicId: "agsci-1-3", conceptId: "main-source-of-farm-carbon-emissions",
     section: "B", questionRef: "2023 HL Q16(a)(i)",
-    stem: "Question 16. Answer both (a) and (b) with either (c) or (d). As part of the governments' climate action plan targets, agriculture has to reduce its greenhouse gas emissions by 25% by 2030. Anna and Lucy examined the percentage share of the carbon emissions from their beef enterprise, which they received through their Bord Bia farmer feedback report, and the graph highlights where the emissions are coming from on their farm. It is a grouped bar chart, 'Percentage Share of Farm Carbon Emissions': percentage share (%) up the vertical axis, scaled 0 to 50, against four sources — Animal digestion, Manure usage, Fertiliser used, Forage / Feed — with three bars in each group: current farm assessment (2021), previous farm assessment (2019) and national average. (Adapted from Teagasc, 2022)",
+    stem: "Answer both (a) and (b) with either (c) or (d). As part of the governments' climate action plan targets, agriculture has to reduce its greenhouse gas emissions by 25% by 2030. Anna and Lucy examined the percentage share of the carbon emissions from their beef enterprise, which they received through their Bord Bia farmer feedback report, and the graph highlights where the emissions are coming from on their farm. It is a grouped bar chart, 'Percentage Share of Farm Carbon Emissions': percentage share (%) up the vertical axis, scaled 0 to 50, against four sources — Animal digestion, Manure usage, Fertiliser used, Forage / Feed — with three bars in each group: current farm assessment (2021), previous farm assessment (2019) and national average. (Adapted from Teagasc, 2022)",
     questionText: "Identify the main source of carbon emissions on the farm.",
     tariffModel: {"kind":"fixed","notation":"5"}, totalMarks: 5,
     rows: [
@@ -6323,7 +6563,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q17biii", topicId: "agsci-3-2", conceptId: "multi-species-sward-species",
     section: "B", questionRef: "2023 HL Q17(b)(iii)",
-    stem: "Question 17. Mark is reseeding 20% of his 150 hectare dairy and beef farm and researching which sward composition suits his soil type and enterprise. Part (b) is about the seed mixture; (b)(iii) prints three colour close-up photographs of plants side by side, each headed with a bold capital letter — A, B and C — over an empty three-cell answer row. Only two of the three are needed.",
+    stem: "Mark is reseeding 20% of his 150 hectare dairy and beef farm and researching which sward composition suits his soil type and enterprise. Part (b) is about the seed mixture; (b)(iii) prints three colour close-up photographs of plants side by side, each headed with a bold capital letter — A, B and C — over an empty three-cell answer row. Only two of the three are needed.",
     questionText: "Identify any two of the plant species commonly found in Irish multi species seed mixtures.",
     tariffModel: {"kind":"bestNofParts","answer":2,"ofParts":3,"perPart":2,"notation":"2(2)"}, totalMarks: 4,
     rows: [

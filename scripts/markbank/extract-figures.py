@@ -40,6 +40,125 @@ PAD = 0.14
 MIN_PAD_X, MIN_PAD_TOP, MIN_PAD_BOTTOM = 22, 55, 125
 ZOOM = 2.0
 
+# A table or chart drawn as vector paths is not an image object, so
+# page.get_images() cannot see it and this script used to emit nothing for it.
+# The consequence reached students: the authoring wave, given no crop, wrote the
+# table out as prose — "Regal: Week 1 14.7, Week 2 14.3, Week 3 13.9..." — which
+# is unreadable next to the printed table it replaced. Across the ten
+# Agricultural Science papers, 57 detected tables sit on pages carrying no
+# raster image at all, so they were invisible by construction.
+MIN_TABLE_W, MIN_TABLE_H = 120, 34
+# A vector cluster needs real substance to be a chart rather than the ruled
+# lines of an answer box: this many separate paths, and this much of the page.
+MIN_VECTOR_PATHS = 12
+MIN_VECTOR_W, MIN_VECTOR_H = 130, 90
+MAX_REGION_FRACTION = 0.72
+# A table's bbox is exact, unlike a photo's, so it needs a caption's worth of
+# room above and very little below. The photo floors would pull the NEXT
+# question into a table crop.
+# Tight. 46pt above a table swept in the question line printed over it, so the
+# card rendered its own question twice — once as text, once inside the picture.
+# A table's title is almost always inside its own ruled box, so it needs nothing.
+TABLE_PAD_X, TABLE_PAD_TOP, TABLE_PAD_BOTTOM = 10, 12, 10
+
+
+def covered_by(rect, regions, frac=0.72) -> bool:
+    """Is most of `rect` already inside a region we are going to render?"""
+    area = abs(rect.get_area())
+    if area <= 0:
+        return True
+    for g in regions:
+        inter = rect & g
+        if not inter.is_empty and abs(inter.get_area()) >= area * frac:
+            return True
+    return False
+
+
+def table_regions(page, have: list) -> list:
+    """Tables PyMuPDF can find, whether ruled in vector or implied by layout.
+
+    This is the reliable half of the fix — find_tables() returns a real bbox, so
+    there is no clustering heuristic to get wrong.
+    """
+    try:
+        # lines_strict only: the default and 'lines' strategies read a column
+        # of prose as a table — the 2021 wild-oats article came back as two —
+        # and a paragraph bound to a card as a "table" would be worse than the
+        # transcription this whole change exists to remove. Exam tables are
+        # ruled, so requiring real rules costs nothing and removes the noise.
+        found = page.find_tables(strategy='lines_strict').tables
+    except Exception:
+        return []
+    out = []
+    for t in found:
+        r = fitz.Rect(t.bbox)
+        if r.width < MIN_TABLE_W or r.height < MIN_TABLE_H:
+            continue
+        if covered_by(r, have) or covered_by(r, out):
+            continue
+        out.append(r)
+    return out
+
+
+def vector_regions(page, have: list) -> list:
+    """Charts and diagrams drawn as paths — pie charts, graphs, flow diagrams.
+
+    Riskier than tables, because every answer-box rule is also a path. Full-width
+    hairlines are dropped first, then a cluster only survives if it is built from
+    MIN_VECTOR_PATHS separate paths and does not span most of the page — which is
+    what an answer grid looks like once its rules are joined up.
+    """
+    paths = []
+    for d in page.get_drawings():
+        r = fitz.Rect(d["rect"])
+        if r.is_empty:
+            continue
+        # An answer line: hairline height, running most of the column.
+        if r.height < 3 and r.width > page.rect.width * 0.45:
+            continue
+        if r.width < 5 and r.height < 5:
+            continue
+        paths.append(r)
+
+    page_area = abs(page.rect.get_area())
+    out = []
+    for g in cluster(paths, gap=20.0):
+        if g.width < MIN_VECTOR_W or g.height < MIN_VECTOR_H:
+            continue
+        if abs(g.get_area()) > page_area * MAX_REGION_FRACTION:
+            continue
+        if sum(1 for r in paths if r in g) < MIN_VECTOR_PATHS:
+            continue
+        if covered_by(g, have) or covered_by(g, out):
+            continue
+        out.append(g)
+    return out
+
+
+def avoid_slicing_text(page, area):
+    """Pull a crop's horizontal edges clear of any line of text they cut through.
+
+    A fixed pad cannot know where the type sits, so it lands mid-line and the
+    crop opens on the bottom halves of letters — which reads as a broken image
+    rather than a tight one. This walks the page's text lines and, where one
+    straddles an edge, moves that edge past it.
+    """
+    top, bottom = area.y0, area.y1
+    for block in page.get_text("dict")["blocks"]:
+        for line in block.get("lines", []):
+            x0, y0, x1, y1 = line["bbox"]
+            if x1 < area.x0 or x0 > area.x1:
+                continue
+            # Straddles the top edge: start below it instead.
+            if y0 < area.y0 < y1:
+                top = max(top, y1 + 1)
+            # Straddles the bottom edge: stop above it.
+            if y0 < area.y1 < y1:
+                bottom = min(bottom, y0 - 1)
+    if bottom - top < 20:
+        return area
+    return fitz.Rect(area.x0, top, area.x1, bottom)
+
 
 def nearby_text(page, rect, pad=46) -> str:
     """Text immediately around an image — the question number and caption live
@@ -157,7 +276,17 @@ def extract(pdf: Path, outdir: Path) -> list:
             for r in page.get_image_rects(info[0]):
                 if r.width >= MIN_W / 4 and r.height >= MIN_H / 4:
                     boxes.append(r)
-        for i, rect in enumerate(cluster(boxes)):
+        # Raster clusters first, then the vector work the old pipeline could not
+        # see. Order matters: a table already inside a photo's crop is skipped
+        # rather than emitted twice.
+        raster = cluster(boxes)
+        tables = table_regions(page, raster)
+        vectors = vector_regions(page, raster + tables)
+        regions = ([(r, 'raster') for r in raster]
+                   + [(r, 'table') for r in tables]
+                   + [(r, 'vector') for r in vectors])
+
+        for i, (rect, kind) in enumerate(regions):
 
             # RENDER the page region rather than pulling the embedded object.
             # SEC figures are a raster drawing with the letter labels — "X", "Y",
@@ -179,17 +308,27 @@ def extract(pdf: Path, outdir: Path) -> list:
             # DOWN than up, because that is where labels and table bodies sit. The
             # cost is some question prose inside the crop, which is harmless — the
             # card prints the question anyway.
-            pad_x = max(rect.width * PAD, MIN_PAD_X)
-            pad_top = max(rect.height * PAD, MIN_PAD_TOP)
-            pad_bottom = max(rect.height * PAD, MIN_PAD_BOTTOM)
+            if kind == 'raster':
+                pad_x = max(rect.width * PAD, MIN_PAD_X)
+                pad_top = max(rect.height * PAD, MIN_PAD_TOP)
+                pad_bottom = max(rect.height * PAD, MIN_PAD_BOTTOM)
+            else:
+                pad_x, pad_top, pad_bottom = TABLE_PAD_X, TABLE_PAD_TOP, TABLE_PAD_BOTTOM
             area = fitz.Rect(
                 rect.x0 - pad_x,
                 rect.y0 - pad_top,
                 rect.x1 + pad_x,
                 rect.y1 + pad_bottom,
             ) & page.rect
-            area = include_labels(page, area) & page.rect
-            area = widen_to_column(page, area)
+            # Only raster regions need growing. A photo's box excludes the labels
+            # printed around it, so it must reach for them and out to the column.
+            # A table's bbox is already the whole table, and growing it only
+            # drags in the question text sitting above.
+            if kind == 'raster':
+                area = include_labels(page, area) & page.rect
+                area = widen_to_column(page, area)
+            else:
+                area = avoid_slicing_text(page, area) & page.rect
             pix = page.get_pixmap(clip=area, matrix=fitz.Matrix(ZOOM, ZOOM))
             if pix.width < MIN_W or pix.height < MIN_H:
                 continue
@@ -202,6 +341,10 @@ def extract(pdf: Path, outdir: Path) -> list:
             location = {
                 "page": pno + 1,
                 "indexOnPage": i,
+                "kind": kind,
+                # The rendered region, so a later step can go back to the PDF and
+                # read a table's own cells rather than describing it from a guess.
+                "bbox": [round(area.x0, 1), round(area.y0, 1), round(area.x1, 1), round(area.y1, 1)],
                 "questionsOnPage": question_hint(page),
                 "nearbyText": nearby_text(page, rect),
             }

@@ -1216,7 +1216,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2023-ol-q10b-i-iii", topicId: "agsci-4-1", conceptId: "semen-analysis-interpretation",
     section: "A", questionRef: "2023 OL Q10(b)(i)-(iii)",
-    stem: "The vet was called to a farm to carry out a fertility test on four stock bulls. The vet collected a sample of semen from the four bulls for analysis. Sperm motility (%) — Bull 1: 100, Bull 2: 95, Bull 3: 90, Bull 4: 95. Abnormal structure (%) — Bull 1: 5, Bull 2: 8, Bull 3: 8, Bull 4: 10.",
+    stem: "The vet was called to a farm to carry out a fertility test on four stock bulls. The vet collected a sample of semen from the four bulls for analysis. The results are shown in the table below.",
     questionText: "(i) Identify which bull has the most abnormal sperm cells. (ii) Identify which bull has the best sperm motility. (iii) State which bull is the most fertile and best to use with the maiden heifers on the farm.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -1224,6 +1224,14 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Best sperm motility — Bull 1", marks: 3 },
     { id: "r-3", kind: "point", verbatim: "Most fertile, best for the maiden heifers — Bull 1", marks: 2 },
     ],
+    figure: {
+          "candId": "agricultural-science-2023-OL-paper-p15-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-OL-paper-p15-i1.png",
+          "srcHash": "ec9ca0af5a39c1923783b30434e95891",
+          "alt": "A table from the exam paper. Columns: Bull 1, Bull 2, Bull 3, Bull 4. Rows: Sperm motility (%), Abnormal structure (%). 3 rows by 5 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2639,12 +2647,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2021-ol-q16c-iv", topicId: "agsci-2-2-2", conceptId: "waterlogged-soil-condition",
     section: "B", questionRef: "2021 OL Q16(c)(iv)",
-    stem: "Question 16 — Answer both (a) and (b) with either (c) or (d). (c) A farmer is getting soil samples tested for pH and percentage (%) water content. (Part (iii) works the sample out at 58.33 % water — 120 g before drying, 50 g after.)",
+    stem: "Question 16 — Answer both (a) and (b) with either (c) or (d). (c) A farmer is getting soil samples tested for pH and percentage (%) water content. (Using the results in the table below, part (iii) works the sample out at 58.33 % water.)",
     questionText: "Briefly explain what the result calculated at part (iii) above tells you about the condition of the soil.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Soil is very wet or needs to be drained or compacted", marks: 4, accepts: ["air spaces in the soil are filled with water"], contextNote: "The scheme's second wording in full is 'nearly all the air spaces in the soil are filled with water'." },
     ],
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p28-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p28-i0.png",
+          "srcHash": "9548e59f7ade7f1fa681b6d51afed738",
+          "alt": "A table from the exam paper. Columns: Weight of soil before drying, 120g. Rows: Weight of soil after drying, % Soil Water. 3 rows by 2 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2653,13 +2669,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2021-ol-q16c-v", topicId: "agsci-2-3", conceptId: "wet-soil-management-implications",
     section: "B", questionRef: "2021 OL Q16(c)(v)",
-    stem: "Question 16 — Answer both (a) and (b) with either (c) or (d). (c) A farmer is getting soil samples tested for pH and percentage (%) water content. (Part (iii) works the sample out at 58.33 % water — 120 g before drying, 50 g after.)",
+    stem: "Question 16 — Answer both (a) and (b) with either (c) or (d). (c) A farmer is getting soil samples tested for pH and percentage (%) water content. (Using the results in the table below, part (iii) works the sample out at 58.33 % water.)",
     questionText: "State one implication the result has on the management of the field and give one reason for your answer.",
     tariffModel: {"kind":"fixed","notation":"2+2"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Implication — Compaction or poaching", marks: 2, accepts: ["late or failed germination of crops or lower yields of crops or later harvesting dates","higher incident of disease"], contextNote: "Any one implication scores the 2 marks." },
     { id: "r-2", kind: "alt", verbatim: "Reason — soft ground", marks: 2, accepts: ["liverfluke"], contextNote: "The reason must match the implication given: soft ground goes with compaction or poaching; 'cold soil temperatures' goes with late or failed germination (quoted here only because the typeset marks cell splits it); liverfluke goes with a higher incidence of disease." },
     ],
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p28-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p28-i0.png",
+          "srcHash": "9548e59f7ade7f1fa681b6d51afed738",
+          "alt": "A table from the exam paper. Columns: Weight of soil before drying, 120g. Rows: Weight of soil after drying, % Soil Water. 3 rows by 2 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2816,12 +2840,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2021-ol-q17b-ii", topicId: "agsci-3-3-1", conceptId: "optimum-sowing-temperature-advice",
     section: "B", questionRef: "2021 OL Q17(b)(ii)",
-    stem: "A student was asked to investigate the effect of temperature on the percentage germination of certified grass seeds. At each of five set temperatures 100 seeds were sown, and the investigation was repeated four times. The student's results were: 15 °C — 15 % germination; 20 °C — 60 % (the value calculated at part (a)); 25 °C — 80 %; 30 °C — 65 %; 35 °C — 35 %.",
+    stem: "A student was asked to investigate the effect of temperature on the percentage germination of certified grass seeds. At each of five set temperatures 100 seeds were sown, and the investigation was repeated four times. The student's results are shown in the table below. The 20 °C figure is the value calculated at part (a): 60 % germination.",
     questionText: "State one piece of advice you would give to farmers on the sowing of grass seed based on your conclusion and also supported by the results of this investigation.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Sowing seeds at 25oC will give best germination rates", marks: 3, contextNote: "The scheme's alternative wording is 'increase soil temp (25oC) get majority of seeds to germinate' — quoted here only because the typeset marks cell splits the phrase." },
     ],
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p32-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p32-i1.png",
+          "srcHash": "8eb813aa67987384503889a10a82fb10",
+          "alt": "A table from the exam paper. Columns: Temperature (oC), 15, 20, 25, 30, 35. Rows: % Germination. 2 rows by 6 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2934,12 +2966,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2021-ol-q18c-i", topicId: "agsci-1-3", conceptId: "daily-liveweight-gain-calculation",
     section: "B", questionRef: "2021 OL Q18(c)(i)",
-    stem: "Question 18 — Answer both (a) and (b) with either (c) or (d). (c) A farmer is producing early lambs for the Easter market. The lambs were born in January with an average birthweight of 4 kg. The lambs were weighed every two weeks, and their average liveweights were: week 0, 4 kg; week 2, 10 kg; week 4, 16 kg; week 6, 22 kg; week 8, 28 kg; week 10, 34 kg; week 12, 40 kg; week 14, 45 kg; week 16, 51 kg.",
+    stem: "Question 18 — Answer both (a) and (b) with either (c) or (d). (c) A farmer is producing early lambs for the Easter market. The lambs were born in January with an average birthweight of 4 kg. The lambs were weighed every two weeks and the table below shows the average liveweights of these animals.",
     questionText: "Calculate the average daily liveweight gain (DLG) of the lambs over the 16‐week period (112 days).",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "0.42kg / day", marks: 4, contextNote: "The scheme awards 2 of the 4 marks where the calculation (51 ‐ 4 = 47/112) is shown but the answer worked out is incorrect." },
     ],
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p35-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p35-i1.png",
+          "srcHash": "8e2d17ef468e4d8cbdcdae582080ae9b",
+          "alt": "The upper region of Question 18 part (c). The stem reads: A farmer is producing early lambs for the Easter market. The lambs were born in January with an average birthweight of 4 kg. The lambs were weighed every two weeks and the table below shows the average liveweights of these animals. To the right of the stem is a colour photograph of a single lamb lying on green grass, with a dense white fleece and a completely black face and black lower legs. Below the text is a two-row data table with a pale cream header row: the first row is labelled Weeks with entries 0, 2, 4, 6, 8, 10, 12, 14, 16, and the second row is labelled Average Liveweight (kg) with entries 4, 10, 16, 22, 28, 34, 40, 45, 51. Beneath the table is part (i), Calculate the average daily liveweight gain (DLG) of the lambs over the 16-week period (112 days), and the top of an answer box beginning Calculation:.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4454,7 +4494,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q16ai", topicId: "agsci-2-2-3", conceptId: "soil-organic-matter-definition",
     section: "B", questionRef: "2024 OL Q16(a)(i)",
-    stem: "Question 16. (a) Organic matter content is very important in soil health. [The term underlined on the paper is: organic matter]",
+    stem: "Organic matter content is very important in soil health. [The term underlined on the paper is: organic matter]",
     questionText: "Explain the underlined term.",
     tariffModel: {"kind":"fixed","notation":"3"}, totalMarks: 3,
     rows: [
@@ -4468,7 +4508,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q16aii", topicId: "agsci-2-3", conceptId: "ways-of-increasing-soil-organic-matter",
     section: "B", questionRef: "2024 OL Q16(a)(ii)",
-    stem: "Question 16. (a) Organic matter content is very important in soil health.",
+    stem: "Organic matter content is very important in soil health.",
     questionText: "Briefly describe two ways of increasing the organic matter content of soils.",
     tariffModel: {"kind":"bestNofParts","answer":2,"ofParts":6,"perPart":3,"notation":"2(3)"}, totalMarks: 6,
     rows: [
@@ -4487,7 +4527,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q16aiii", topicId: "agsci-2-2-3", conceptId: "functions-of-soil-organic-matter",
     section: "B", questionRef: "2024 OL Q16(a)(iii)",
-    stem: "Question 16. (a) Organic matter content is very important in soil health.",
+    stem: "Organic matter content is very important in soil health.",
     questionText: "Describe the functions of soil organic matter under the headings that follow. [Table — Function / Description: Effect on soil pH; Water retention (holding); Soil compaction]",
     tariffModel: {"kind":"fixed","notation":"3(2)"}, totalMarks: 6,
     rows: [
@@ -4503,7 +4543,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q16aiv", topicId: "agsci-2-2-3", conceptId: "factors-affecting-soil-organic-matter",
     section: "B", questionRef: "2024 OL Q16(a)(iv)",
-    stem: "Question 16. (a) Organic matter content is very important in soil health.",
+    stem: "Organic matter content is very important in soil health.",
     questionText: "Briefly explain two factors that influence the amount of organic matter in a soil.",
     tariffModel: {"kind":"bestNofParts","answer":2,"ofParts":6,"perPart":3,"notation":"2(3)"}, totalMarks: 6,
     rows: [
@@ -4586,7 +4626,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q17ai", topicId: "agsci-4-3-2", conceptId: "sexed-semen-advantage",
     section: "B", questionRef: "2024 OL Q17(a)(i)",
-    stem: "Question 17. (a) Read the article and answer the questions that follow. '40-year-old straws used to sire calves on Tipperary farm — A County Tipperary farm is currently home to some of the most unique calves in Ireland because the calves in question were sired by a Canadian bull that was born 46 years ago. The farmer chose this bull as he was classed by other farmers as \"the best sire they had ever used\", due to his superb conformation. The farmer used sexed semen and flushed five cows from the one straw to get one bull calf and one heifer calf.' (Adapted from Agriland, 2023)",
+    stem: "Read the article and answer the questions that follow. '40-year-old straws used to sire calves on Tipperary farm — A County Tipperary farm is currently home to some of the most unique calves in Ireland because the calves in question were sired by a Canadian bull that was born 46 years ago. The farmer chose this bull as he was classed by other farmers as \"the best sire they had ever used\", due to his superb conformation. The farmer used sexed semen and flushed five cows from the one straw to get one bull calf and one heifer calf.' (Adapted from Agriland, 2023)",
     questionText: "Sexed semen is when the X chromosome (female) and the Y chromosome (male) are separated in the sperm. Explain why this technology is an advantage on farms.",
     tariffModel: {"kind":"fixed","notation":"3"}, totalMarks: 3,
     rows: [
@@ -4600,7 +4640,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q17aii", topicId: "agsci-4-3-2", conceptId: "stored-semen-genetics-advantage",
     section: "B", questionRef: "2024 OL Q17(a)(ii)",
-    stem: "Question 17. (a) Read the article and answer the questions that follow. '40-year-old straws used to sire calves on Tipperary farm — A County Tipperary farm is currently home to some of the most unique calves in Ireland because the calves in question were sired by a Canadian bull that was born 46 years ago. The farmer chose this bull as he was classed by other farmers as \"the best sire they had ever used\", due to his superb conformation. The farmer used sexed semen and flushed five cows from the one straw to get one bull calf and one heifer calf.' (Adapted from Agriland, 2023)",
+    stem: "Read the article and answer the questions that follow. '40-year-old straws used to sire calves on Tipperary farm — A County Tipperary farm is currently home to some of the most unique calves in Ireland because the calves in question were sired by a Canadian bull that was born 46 years ago. The farmer chose this bull as he was classed by other farmers as \"the best sire they had ever used\", due to his superb conformation. The farmer used sexed semen and flushed five cows from the one straw to get one bull calf and one heifer calf.' (Adapted from Agriland, 2023)",
     questionText: "Outline one advantage of using straws from the Canadian bull that were 40 years old.",
     tariffModel: {"kind":"fixed","notation":"3"}, totalMarks: 3,
     rows: [
@@ -4614,7 +4654,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q17aiii", topicId: "agsci-4-3-2", conceptId: "ai-advantages-and-disadvantages",
     section: "B", questionRef: "2024 OL Q17(a)(iii)",
-    stem: "Question 17. (a) Read the article and answer the questions that follow. The article describes a Tipperary farm using 40-year-old straws of semen from a Canadian bull, and sexed semen, to sire its calves. (Adapted from Agriland, 2023)",
+    stem: "Read the article and answer the questions that follow. The article describes a Tipperary farm using 40-year-old straws of semen from a Canadian bull, and sexed semen, to sire its calves. (Adapted from Agriland, 2023)",
     questionText: "Briefly describe two advantages and two disadvantages of Artificial Insemination (AI) in cattle.",
     tariffModel: {"kind":"orderedSplit","notation":"2(5) + 2(1)"}, totalMarks: 12,
     rows: [
@@ -4644,7 +4684,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q17bi", topicId: "agsci-3-1", conceptId: "food-crop-growth-cycle",
     section: "B", questionRef: "2024 OL Q17(b)(i)",
-    stem: "Question 17. Part (b) moves off the article and onto a food crop the candidate has studied. Space is provided for a labelled diagram under each heading.",
+    stem: "Part (b) moves off the article and onto a food crop the candidate has studied. Space is provided for a labelled diagram under each heading.",
     questionText: "Based on a named food crop (other than grass) you have studied, describe its growth cycle under the headings that follow: Germination; Ripening.",
     tariffModel: {"kind":"bestNofParts","notation":"2(4)","answer":2,"ofParts":6,"perPart":4}, totalMarks: 8,
     rows: [
@@ -4658,7 +4698,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q17bii", topicId: "agsci-3-3-3", conceptId: "food-crop-harvesting-and-storage",
     section: "B", questionRef: "2024 OL Q17(b)(ii)",
-    stem: "Question 17. Part (b)(i) asked the candidate to name a food crop (other than grass) they had studied and describe its growth cycle under the headings Germination and Ripening.",
+    stem: "Part (b)(i) asked the candidate to name a food crop (other than grass) they had studied and describe its growth cycle under the headings Germination and Ripening.",
     questionText: "Describe how the food crop named in part (i) above is harvested and stored.",
     tariffModel: {"kind":"bestNofParts","notation":"2(4)","answer":2,"ofParts":6,"perPart":4}, totalMarks: 8,
     rows: [
@@ -4672,7 +4712,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q17biii", topicId: "agsci-1-5", conceptId: "harvesting-safety-precaution",
     section: "B", questionRef: "2024 OL Q17(b)(iii)",
-    stem: "Question 17. Part (b) is about a food crop (other than grass) the candidate has named and studied — the scheme works through barley, potatoes and kale — and part (b)(ii) asked how that crop is harvested and stored.",
+    stem: "Part (b) is about a food crop (other than grass) the candidate has named and studied — the scheme works through barley, potatoes and kale — and part (b)(ii) asked how that crop is harvested and stored.",
     questionText: "Outline one safety precaution that should be taken during harvesting this crop.",
     tariffModel: {"kind":"fixed","notation":"4"}, totalMarks: 4,
     rows: [
@@ -4686,7 +4726,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q17c", topicId: "agsci-3-3-2", conceptId: "integrated-pest-management-categories",
     section: "B", questionRef: "2024 OL Q17(c)",
-    stem: "Question 17. (c) Integrated pest management systems are used to farm in a more sustainable way. The paper prints a diagram naming the five categories — Chemical (Pesticide), Biological, Physical / Mechanical, Cultural / Sanitation, Prevention — and the same five categories head the answer table.",
+    stem: "Integrated pest management systems are used to farm in a more sustainable way. The paper prints a diagram naming the five categories — Chemical (Pesticide), Biological, Physical / Mechanical, Cultural / Sanitation, Prevention — and the same five categories head the answer table.",
     questionText: "Using the list of words below, state to which category of pest management they belong. [Word list: Fans / Predators / Machine hygiene / Pesticides / Crop rotation] The first one has been done as an example — Chemical: Pesticides. Remaining categories: Biological; Physical / Mechanical; Cultural / Sanitation; Prevention.",
     tariffModel: {"kind":"fixed","notation":"4(3)"}, totalMarks: 12,
     rows: [
@@ -4703,7 +4743,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q18ai", topicId: "agsci-4-3-3", conceptId: "preparing-for-the-calving-season",
     section: "B", questionRef: "2024 OL Q18(a)(i)",
-    stem: "Question 18. Answer both (a) and (b) with either (c) or (d). (a) Calving is a very busy time on all beef and dairy farms so it is important for farmers to prepared in advance.",
+    stem: "Answer both (a) and (b) with either (c) or (d). (a) Calving is a very busy time on all beef and dairy farms so it is important for farmers to prepared in advance.",
     questionText: "Outline three ways dairy farmers can prepare for the calving season in order to ensure the survival of healthy calves.",
     tariffModel: {"kind":"bestNofParts","answer":3,"ofParts":10,"perPart":4,"notation":"3(4)"}, totalMarks: 12,
     rows: [
@@ -4717,7 +4757,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q18aii", topicId: "agsci-4-3-3", conceptId: "calf-care-at-birth",
     section: "B", questionRef: "2024 OL Q18(a)(ii)",
-    stem: "Question 18. Answer both (a) and (b) with either (c) or (d). (a) Calving is a very busy time on all beef and dairy farms so it is important for farmers to prepared in advance.",
+    stem: "Answer both (a) and (b) with either (c) or (d). (a) Calving is a very busy time on all beef and dairy farms so it is important for farmers to prepared in advance.",
     questionText: "Briefly explain two practices carried out on the calf at birth.",
     tariffModel: {"kind":"orderedSplit","notation":"6 + 5"}, totalMarks: 11,
     rows: [
@@ -4737,7 +4777,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q18b", topicId: "agsci-4-3-2", conceptId: "dairy-heifer-target-weights",
     section: "B", questionRef: "2024 OL Q18(b)",
-    stem: "Question 18. Answer both (a) and (b) with either (c) or (d). Part (a) dealt with calving; part (b) moves on to the growing dairy animal.",
+    stem: "Answer both (a) and (b) with either (c) or (d). Part (a) dealt with calving; part (b) moves on to the growing dairy animal.",
     questionText: "Using the target weights given in the list below, match the weights to the growth stage of the dairy animals. [Weights: 600kg / 90kg / 40kg / 200kg / 350kg] Growth stages: Birth; Weaning; 1st housing; Mating; 1st calving.",
     tariffModel: {"kind":"fixed","notation":"5(3)"}, totalMarks: 15,
     rows: [
@@ -4755,7 +4795,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q18c", topicId: "agsci-4-3-2", conceptId: "negative-energy-balance-feeding",
     section: "B", questionRef: "2024 OL Q18(c)",
-    stem: "Question 18. Answer both (a) and (b) with either (c) or (d). (c) Correct feeding of the dairy cow throughout her lactation is very important to ensure maximum output or high milk yields.",
+    stem: "Answer both (a) and (b) with either (c) or (d). (c) Correct feeding of the dairy cow throughout her lactation is very important to ensure maximum output or high milk yields.",
     questionText: "Explain the feeding of a dairy cow in the first 10 weeks of lactation during the period of negative energy balance.",
     tariffModel: {"kind":"bestNofParts","answer":2,"ofParts":3,"perPart":3,"notation":"2(3)"}, totalMarks: 6,
     rows: [
@@ -4771,7 +4811,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q18d", topicId: "agsci-4-3-2", conceptId: "dairy-cow-key-durations",
     section: "B", questionRef: "2024 OL Q18(d)",
-    stem: "Question 18. Answer both (a) and (b) with either (c) or (d). Part (d) is the alternative to part (c) on the feeding of the dairy cow.",
+    stem: "Answer both (a) and (b) with either (c) or (d). Part (d) is the alternative to part (c) on the feeding of the dairy cow.",
     questionText: "State the duration of each of the following in dairy cows, in number of days: Lactation; Dry period; Gestation.",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 1 + 1"}, totalMarks: 6,
     rows: [
@@ -4832,12 +4872,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q13c-i", topicId: "agsci-2-2-2", conceptId: "soil-texture-class-from-particle-percentages",
     section: "B", questionRef: "2025 OL Q13(c)(i)",
-    stem: "Question 13, part (c). Mia wants to take soil samples from a newly purchased field for analysis. The results of Mia's soil texture investigation are shown in a table reading: Sand 33%, Silt 33%, Clay 34%.",
+    stem: "Question 13, part (c). Mia wants to take soil samples from a newly purchased field for analysis. The results of Mia's soil texture investigation are shown in the table below.",
     questionText: "Identify the soil type in Mia's field by placing a tick in the correct box. The three boxes read: Clay soil, Sandy soil, Loam soil.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Loam soil", marks: 4 },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-OL-paper-p20-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p20-i0.png",
+          "srcHash": "e681d542cb885f209f62c1faddfcdb71",
+          "alt": "A table from the exam paper. Columns: Sand, Silt, Clay. Rows: 33%. 2 rows by 3 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4846,13 +4894,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q13c-ii", topicId: "agsci-2-2-2", conceptId: "loam-soil-characteristics",
     section: "B", questionRef: "2025 OL Q13(c)(ii)",
-    stem: "Question 13, part (c). Mia's soil texture investigation returned Sand 33%, Silt 33%, Clay 34% — which part (i) identifies as a loam soil.",
+    stem: "Question 13, part (c). Mia's soil texture investigation results are shown in the table below — part (i) identifies this soil as a loam soil.",
     questionText: "Outline two characteristics of the soil you have identified in part (i) above.",
     tariffModel: {"kind":"fixed","notation":"2+2"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Good drainage", marks: 2, accepts: ["good aeration","good fertility","warms up easily in spring","easily cultivated","retains moisture without waterlogging"], contextNote: "Any one characteristic of a loam soil from the scheme's pool of six." },
     { id: "r-2", kind: "alt", verbatim: "good aeration", marks: 2, accepts: ["Good drainage","good fertility","warms up easily in spring","easily cultivated","retains moisture without waterlogging"], contextNote: "A second, different characteristic." },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-OL-paper-p20-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p20-i0.png",
+          "srcHash": "e681d542cb885f209f62c1faddfcdb71",
+          "alt": "A table from the exam paper. Columns: Sand, Silt, Clay. Rows: 33%. 2 rows by 3 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4861,7 +4917,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q13c-iii", topicId: "agsci-2-3", conceptId: "crops-suited-to-a-loam-soil",
     section: "B", questionRef: "2025 OL Q13(c)(iii)",
-    stem: "Question 13, part (c). Mia's soil texture investigation returned Sand 33%, Silt 33%, Clay 34% — which part (i) identifies as a loam soil.",
+    stem: "Question 13, part (c). Mia's soil texture investigation results are shown in the table below — part (i) identifies this soil as a loam soil.",
     questionText: "List three crops that would grow in Mia's field.",
     tariffModel: {"kind":"fixed","notation":"3x4"}, totalMarks: 12,
     rows: [
@@ -4869,6 +4925,14 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "alt", verbatim: "potatoes", marks: 4, accepts: ["Grass","clover","barley","wheat","oats","maize","kale"], contextNote: "A second, different crop.", openList: true },
     { id: "r-3", kind: "alt", verbatim: "barley", marks: 4, accepts: ["Grass","potatoes","clover","wheat","oats","maize","kale"], contextNote: "A third, different crop.", openList: true },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-OL-paper-p20-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p20-i0.png",
+          "srcHash": "e681d542cb885f209f62c1faddfcdb71",
+          "alt": "A table from the exam paper. Columns: Sand, Silt, Clay. Rows: 33%. 2 rows by 3 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4957,12 +5021,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q14b-iii", topicId: "agsci-1-3", conceptId: "conclusion-from-germination-results",
     section: "B", questionRef: "2025 OL Q14(b)(iii)",
-    stem: "Question 14, part (b). Fifth year students planted 100 barley seeds in a polytunnel and another 100 barley seeds outdoors on school grounds and monitored them for 4 weeks. After four weeks they counted the number of seeds that had germinated. The results table reads: Polytunnel 89 seeds germinated, Outdoor 63 seeds germinated.",
+    stem: "Question 14, part (b). Fifth year students planted 100 barley seeds in a polytunnel and another 100 barley seeds outdoors on school grounds and monitored them for 4 weeks. After four weeks they counted the number of seeds that had germinated. The results are shown in the table below.",
     questionText: "Outline a conclusion based on the results shown in the table.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The polytunnel had a higher germination rate", marks: 4, contextNote: "The scheme's full wording is \"The polytunnel had a higher germination rate because of the warmer conditions\" — a conclusion must both state the higher germination rate and tie it to the warmer conditions." },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-OL-paper-p22-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p22-i1.png",
+          "srcHash": "aae30d9d75f742ee8fbb17bcee62489a",
+          "alt": "A table from the exam paper. Columns: Location, Number of seeds germinated. Rows: Polytunnel, Outdoor. 3 rows by 2 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4971,12 +5043,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q14b-iv", topicId: "agsci-1-3", conceptId: "percentage-germination-calculation",
     section: "B", questionRef: "2025 OL Q14(b)(iv)",
-    stem: "Question 14, part (b). Fifth year students planted 100 barley seeds in a polytunnel and another 100 barley seeds outdoors on school grounds. After four weeks, 89 had germinated in the polytunnel and 63 outdoors.",
+    stem: "Question 14, part (b). Fifth year students planted 100 barley seeds in a polytunnel and another 100 barley seeds outdoors on school grounds. After four weeks they counted the number of seeds that had germinated in each location; the results are shown in the table below.",
     questionText: "Calculate the percentage germination of the barley seeds grown in the polytunnel, using percentage germination = (number of seeds germinated divided by number of seeds sown) x 100.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "89/100 x 100/1 = 89%", marks: 4, contextNote: "The scheme allows the full 4 marks for the correct answer indicated on its own, and 2 marks for the correct method with an incorrect answer." },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-OL-paper-p22-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p22-i1.png",
+          "srcHash": "aae30d9d75f742ee8fbb17bcee62489a",
+          "alt": "A table from the exam paper. Columns: Location, Number of seeds germinated. Rows: Polytunnel, Outdoor. 3 rows by 2 columns, as printed in the paper.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5119,7 +5199,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q16aii", topicId: "agsci-4-3-3", conceptId: "beef-housing-welfare-factors",
     section: "B", questionRef: "2025 OL Q16(a)(ii)",
-    stem: "Question 16. Winter months can be hard on beef farms due to harsh weather conditions.",
+    stem: "Winter months can be hard on beef farms due to harsh weather conditions.",
     questionText: "Outline two welfare factors taken into consideration when housing beef animals.",
     tariffModel: {"kind":"fixed","notation":"4+2"}, totalMarks: 6,
     rows: [
@@ -5134,7 +5214,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q16aiii", topicId: "agsci-1-5", conceptId: "beef-housing-safety-considerations",
     section: "B", questionRef: "2025 OL Q16(a)(iii)",
-    stem: "Question 16. Winter months can be hard on beef farms due to harsh weather conditions.",
+    stem: "Winter months can be hard on beef farms due to harsh weather conditions.",
     questionText: "Briefly describe two safety considerations taken when housing beef animals.",
     tariffModel: {"kind":"fixed","notation":"4+2"}, totalMarks: 6,
     rows: [
@@ -5149,7 +5229,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q16b", topicId: "agsci-1-2", conceptId: "silage-dry-matter-determination",
     section: "B", questionRef: "2025 OL Q16(b)",
-    stem: "Question 16. Winter months can be hard on beef farms due to harsh weather conditions.\n\nSilage is a major component of the beef animal's diet for the winter so it is essential that it is good quality. Tom wanted to test the quality of silage on the farm and carried out a test for Dry Matter (DM).",
+    stem: "Winter months can be hard on beef farms due to harsh weather conditions.\n\nSilage is a major component of the beef animal's diet for the winter so it is essential that it is good quality. Tom wanted to test the quality of silage on the farm and carried out a test for Dry Matter (DM).",
     questionText: "Describe with the aid of a labelled diagram how he would determine the % DM of his silage.",
     tariffModel: {"kind":"fixed","notation":"4x2"}, totalMarks: 8,
     rows: [
@@ -5166,7 +5246,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q16cii", topicId: "agsci-3-3-3", conceptId: "factors-affecting-silage-quality",
     section: "B", questionRef: "2025 OL Q16(c)(ii)",
-    stem: "Question 16. Silage is a major component of the beef animal's diet for the winter so it is essential that it is good quality. Tom wanted to test the quality of silage on the farm and carried out a test for Dry Matter (DM).",
+    stem: "Silage is a major component of the beef animal's diet for the winter so it is essential that it is good quality. Tom wanted to test the quality of silage on the farm and carried out a test for Dry Matter (DM).",
     questionText: "Apart from DM, list two factors that affect the quality of silage.",
     tariffModel: {"kind":"fixed","notation":"4+2"}, totalMarks: 6,
     rows: [
@@ -5181,7 +5261,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q16ciii", topicId: "agsci-4-3-2", conceptId: "winter-feedstuffs-for-cattle",
     section: "B", questionRef: "2025 OL Q16(c)(iii)",
-    stem: "Question 16. Silage is a major component of the beef animal's diet for the winter so it is essential that it is good quality.",
+    stem: "Silage is a major component of the beef animal's diet for the winter so it is essential that it is good quality.",
     questionText: "State two other feedstuffs (apart from silage) that could be fed to the beef animals during the winter.",
     tariffModel: {"kind":"fixed","notation":"4+4"}, totalMarks: 8,
     rows: [
@@ -5196,7 +5276,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q17ai", topicId: "agsci-2-2-3", conceptId: "earthworm-benefits-in-soil",
     section: "B", questionRef: "2025 OL Q17(a)(i)",
-    stem: "Question 17. Answer both (a) and (b) with either (c) or (d).\n\nGood soil conditions are important for crop production. Earthworms have an important role in creating and maintain good soil conditions.",
+    stem: "Answer both (a) and (b) with either (c) or (d).\n\nGood soil conditions are important for crop production. Earthworms have an important role in creating and maintain good soil conditions.",
     questionText: "Outline three advantages of earthworms in soils.",
     tariffModel: {"kind":"fixed","notation":"4+3+2"}, totalMarks: 9,
     rows: [
@@ -5212,7 +5292,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q17aii", topicId: "agsci-2-3", conceptId: "increasing-earthworm-population",
     section: "B", questionRef: "2025 OL Q17(a)(ii)",
-    stem: "Question 17. Answer both (a) and (b) with either (c) or (d).\n\nGood soil conditions are important for crop production. Earthworms have an important role in creating and maintain good soil conditions.",
+    stem: "Answer both (a) and (b) with either (c) or (d).\n\nGood soil conditions are important for crop production. Earthworms have an important role in creating and maintain good soil conditions.",
     questionText: "Outline two ways farmers can increase the earthworm population in their soil.",
     tariffModel: {"kind":"fixed","notation":"2+2"}, totalMarks: 4,
     rows: [
@@ -5227,7 +5307,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q17bi", topicId: "agsci-2-2-2", conceptId: "flocculation-definition",
     section: "B", questionRef: "2025 OL Q17(b)(i)",
-    stem: "Question 17. Good soil conditions are important for crop production.\n\nFlocculation occurs in soils.",
+    stem: "Good soil conditions are important for crop production.\n\nFlocculation occurs in soils.",
     questionText: "Identify which of the following statements best describes flocculation, placing a tick in the correct box. (1) Process during which soil particles in a solution contact and stick together, forming clusters or clumps of a larger size. (2) Reducing air spaces in soil. (3) Leaching of minerals causes formation of an iron pan in the B horizon.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -5241,7 +5321,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q17biii", topicId: "agsci-1-2", conceptId: "control-variable-in-an-investigation",
     section: "B", questionRef: "2025 OL Q17(b)(iii)",
-    stem: "Question 17. Flocculation occurs in soils.\n\nPart (ii) set out the steps of an investigation showing that flocculation had occurred in a soil: clay soil is added to two test tubes; calcium carbonate is added to one of the test tubes; water is added to each test tube, which are then stoppered and shaken; they are left to settle, and one test tube stays muddy while one test tube goes clear.",
+    stem: "Flocculation occurs in soils.\n\nPart (ii) set out the steps of an investigation showing that flocculation had occurred in a soil: clay soil is added to two test tubes; calcium carbonate is added to one of the test tubes; water is added to each test tube, which are then stoppered and shaken; they are left to settle, and one test tube stays muddy while one test tube goes clear.",
     questionText: "Identify one control variable used in the investigation shown in part (ii) above.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -5255,7 +5335,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q17biv", topicId: "agsci-1-3", conceptId: "qualitative-versus-quantitative-results",
     section: "B", questionRef: "2025 OL Q17(b)(iv)",
-    stem: "Question 17. Flocculation occurs in soils.\n\nPart (ii) set out the steps of an investigation showing that flocculation had occurred in a soil: clay soil is added to two test tubes; calcium carbonate is added to one of the test tubes; water is added to each test tube, which are then stoppered and shaken; they are left to settle, and one test tube stays muddy while one test tube goes clear.",
+    stem: "Flocculation occurs in soils.\n\nPart (ii) set out the steps of an investigation showing that flocculation had occurred in a soil: clay soil is added to two test tubes; calcium carbonate is added to one of the test tubes; water is added to each test tube, which are then stoppered and shaken; they are left to settle, and one test tube stays muddy while one test tube goes clear.",
     questionText: "State if the results of the investigation in part (ii) above are qualitative or quantitative.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -5269,7 +5349,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q17c", topicId: "agsci-2-2-1", conceptId: "plant-nutrient-functions",
     section: "B", questionRef: "2025 OL Q17(c)",
-    stem: "Question 17. Answer both (a) and (b) with either (c) or (d).\n\nGood soil conditions are important for crop production.\n\nList of minerals provided: Nitrogen · Phosphorus · Calcium · Magnesium.",
+    stem: "Answer both (a) and (b) with either (c) or (d).\n\nGood soil conditions are important for crop production.\n\nList of minerals provided: Nitrogen · Phosphorus · Calcium · Magnesium.",
     questionText: "Four descriptions of plant nutrient functions are given below. Using the list of minerals provided, match each mineral to its correct description. Descriptions: 1. Involved in chlorophyll production; 2. Production of amino acids, which produce proteins for growth and repair in plants; 3. Seed formation and development; 4. Cell wall formation.",
     tariffModel: {"kind":"orderedSplit","notation":"5+5+1+1"}, totalMarks: 12,
     rows: [
@@ -5286,7 +5366,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q18ai", topicId: "agsci-4-3-2", conceptId: "body-condition-score-meaning",
     section: "B", questionRef: "2025 OL Q18(a)(i)",
-    stem: "Question 18. Aaron wanted to improve the calving rate on his suckler beef farm. He learned that body condition score (BCS) has an effect on cows going in calf and calving period. [The words underlined on the paper are: body condition score]",
+    stem: "Aaron wanted to improve the calving rate on his suckler beef farm. He learned that body condition score (BCS) has an effect on cows going in calf and calving period. [The words underlined on the paper are: body condition score]",
     questionText: "Explain the underlined term.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -5300,7 +5380,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q18aii", topicId: "agsci-4-3-2", conceptId: "bcs-and-conception-rate",
     section: "B", questionRef: "2025 OL Q18(a)(ii)",
-    stem: "Question 18. Aaron wanted to improve the calving rate on his suckler beef farm. He learned that body condition score (BCS) has an effect on cows going in calf and calving period. Analyse the table below and answer the questions that follow.\n\nBody condition score (BCS) / % of cows that went in calf at first service / Expected calving period\n1 / 35 / 24 weeks\n2 / 55 / 12 weeks\n3 / 70 / 9 weeks\n4 / 65 / 12 weeks\n5 / 50 / 15 weeks",
+    stem: "Aaron wanted to improve the calving rate on his suckler beef farm. He learned that body condition score (BCS) has an effect on cows going in calf and calving period. Analyse the table below and answer the questions that follow.\n\nBody condition score (BCS) / % of cows that went in calf at first service / Expected calving period\n1 / 35 / 24 weeks\n2 / 55 / 12 weeks\n3 / 70 / 9 weeks\n4 / 65 / 12 weeks\n5 / 50 / 15 weeks",
     questionText: "Using the information in the table above, identify which BCS gives the highest % of cows going in calf at first service.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -5314,7 +5394,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q18aiii", topicId: "agsci-4-3-2", conceptId: "compact-calving-advantages",
     section: "B", questionRef: "2025 OL Q18(a)(iii)",
-    stem: "Question 18. Aaron wanted to improve the calving rate on his suckler beef farm. He learned that body condition score (BCS) has an effect on cows going in calf and calving period.",
+    stem: "Aaron wanted to improve the calving rate on his suckler beef farm. He learned that body condition score (BCS) has an effect on cows going in calf and calving period.",
     questionText: "Outline two advantages of having a shorter calving period for his suckler herd.",
     tariffModel: {"kind":"fixed","notation":"2+2"}, totalMarks: 4,
     rows: [
@@ -5343,7 +5423,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q18bii", topicId: "agsci-4-3-1", conceptId: "spring-calving-suckler-year",
     section: "B", questionRef: "2025 OL Q18(b)(ii)",
-    stem: "Question 18. Aaron wants each cow on his farm to have one calf every 12 months. The timeline below shows a calendar year for a spring calving suckler herd, running Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec, Jan, Feb, with Calving marked at each end. The events to place are: A Drying off · B Weaning off · C Mating.",
+    stem: "Aaron wants each cow on his farm to have one calf every 12 months. The timeline below shows a calendar year for a spring calving suckler herd, running Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec, Jan, Feb, with Calving marked at each end. The events to place are: A Drying off · B Weaning off · C Mating.",
     questionText: "Insert the letters A, B and C on the timeline below to indicate when each of the following events take place for a spring calving suckler cow.",
     tariffModel: {"kind":"orderedSplit","notation":"4+4+1"}, totalMarks: 9,
     rows: [
@@ -5359,7 +5439,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q18biii", topicId: "agsci-4-3-2", conceptId: "leader-follower-grazing-system",
     section: "B", questionRef: "2025 OL Q18(b)(iii)",
-    stem: "Question 18. Aaron wants each cow on his farm to have one calf every 12 months.",
+    stem: "Aaron wants each cow on his farm to have one calf every 12 months.",
     questionText: "Draw a labelled diagram of the leader follower grazing system that is often used on suckler farms.",
     tariffModel: {"kind":"fixed","notation":"5+4"}, totalMarks: 9,
     rows: [
@@ -5374,7 +5454,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q18ciii", topicId: "agsci-4-3-1", conceptId: "grass-fed-dairy-product-characteristics",
     section: "B", questionRef: "2025 OL Q18(c)(iii)",
-    stem: "Question 18. Irish butter is made from milk from grass fed cows.",
+    stem: "Irish butter is made from milk from grass fed cows.",
     questionText: "Irish butter is made from milk from grass fed cows. Describe two characteristics of butter or another dairy product based on a grass-fed diet.",
     tariffModel: {"kind":"fixed","notation":"2+2"}, totalMarks: 4,
     rows: [
