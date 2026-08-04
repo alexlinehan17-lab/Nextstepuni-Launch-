@@ -33,6 +33,7 @@
  */
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { splitForEmphasis } from './questionEmphasis';
 import { createPortal } from 'react-dom';
 import { AnimatePresence, MotionDiv, MotionSpan, useReducedMotion } from '../Motion';
 import { rowId, type LabelKey, type MarkRow, type SecCard } from '../../types/markBank';
@@ -52,6 +53,29 @@ const SUCCESS_TINT = '#E8F2EC';
 const SUCCESS_TEXT = '#1F5F3E';
 /** Accent means "this is the action / you are here". Never "correct". */
 const ACCENT = '#F26B1F';
+/** The accent mixed ~55/45 with white: the offset sheets behind the question
+    card. A quiet tint, not full accent — a solid #F26B1F band down two sides
+    of a white card on this light page out-shouts the question text itself. */
+const ACCENT_SHEET = '#F8AE84';
+
+/** How far the frame layers sit off the card, and the stroke's weight. */
+const FRAME_OFFSET = 8;
+const STROKE = 2;
+/** A flat accent bar. The registration frame is four of these rather than a
+ *  bordered box: the design guard forbids coloured left borders in this file,
+ *  and separate bars also let each arm terminate exactly where it should. */
+const ACCENT_BAR: React.CSSProperties = {
+  position: 'absolute', background: ACCENT, pointerEvents: 'none',
+};
+
+/**
+ * Which frame the question card wears. 'stack' is two tinted sibling sheets on
+ * opposite diagonals; 'registration' pairs the down-right tinted sheet with a
+ * crisp full-accent stroke up-left, closer to the founder's reference. One
+ * word to flip between them while the choice is being made.
+ */
+type Frame = 'stack' | 'registration';
+const FRAME = 'registration' as Frame;
 const PAPER = '#f0f0f0';
 /** A rule, not a fill: enough to bound a figure without adding a surface. */
 const HAIRLINE_2 = '#e0ddd8';
@@ -539,12 +563,89 @@ const LabelKeyPanel: React.FC<{ keys: LabelKey[] }> = ({ keys }) => {
  */
 const PART = /\s*(\((?:[ivx]+|[a-h])\))\s+/gi;
 
+/**
+ * Which emphasis the command clause carries.
+ *
+ * 'rule' is a weighted underline in the brand orange, sitting clear of the
+ * descenders. 'marker' is a highlighter sweep that fills only the lower part of
+ * the line.
+ *
+ * The rule is the default, and the deciding factor was the wrap. A fill has an
+ * area, and the moment a clause runs onto a second line those two areas stack
+ * into a block — the slab this whole file is written to avoid — so the marker
+ * only ever looks right on clauses that happen to fit one line, and no clause
+ * splitter can promise that at every viewport width. A rule has no area: two
+ * lines of it read as two underlines, which is what an underline is supposed to
+ * look like. It degrades instead of breaking.
+ *
+ * Orange, not yellow. The accent means "this is the instruction, this is what
+ * you are being asked to do", which is exactly the job here — and it can never
+ * be misread as "correct", because it is printed on the question, before the
+ * student has seen a marking scheme or claimed a single mark.
+ */
+export type Emphasis = 'marker' | 'rule';
+export const EMPHASIS: Emphasis = 'rule';
+
+/** Warm yellow. Behind black serif it keeps contrast where orange muddies it. */
+const MARKER = 'rgba(247, 201, 72, 0.55)';
+
+const MARKER_STYLE: React.CSSProperties = {
+  // An inset shadow rather than a gradient: 0.4em of ink laid along the bottom
+  // of the line box, so the sweep sits under the x-height instead of boxing the
+  // whole line. A gradient would do the same job, but this file is guarded
+  // against gradients — a rule worth keeping, since the one place a gradient is
+  // defensible is not worth the exception that lets the next one in.
+  boxShadow: `inset 0 -0.4em 0 ${MARKER}`,
+  // The 0.1em bleed past each end is what stops it reading as a rectangle, and
+  // `clone` gives a wrapped clause a sweep per line rather than one long band.
+  padding: '0 0.1em',
+  boxDecorationBreak: 'clone',
+  WebkitBoxDecorationBreak: 'clone',
+};
+
+const RULE_STYLE: React.CSSProperties = {
+  // text-decoration, not a background gradient. A gradient on an inline box is
+  // painted ONCE across all of its line fragments, so the earlier gradient rule
+  // underlined a wrapped clause's first line and left the second bare. The
+  // decoration is drawn per line by the text engine, at a position the font
+  // itself declares — which is also why it stays right at any size.
+  textDecorationLine: 'underline',
+  textDecorationColor: ACCENT,
+  // Heavy enough to read as drawn rather than as a hyperlink, light enough that
+  // it never competes with the 20px serif above it.
+  textDecorationThickness: '2.5px',
+  // Below the descenders, and NOT skipping ink around them: a rule with notches
+  // cut out of it for every g and y reads as an artefact. 0.28em is measured,
+  // not guessed — at 0.18em the rule grazed the tails of Source Serif's g, p and
+  // y, and by 0.32em it had come loose from the words it belongs to.
+  textUnderlineOffset: '0.28em',
+  textDecorationSkipInk: 'none',
+};
+
+/**
+ * The command clause, emphasised. Everything around it — the method and the
+ * scope — stays plain, which is what keeps the mark sleek on a question that
+ * runs to two or three lines.
+ */
+const Clause: React.FC<{ text: string }> = ({ text }) => {
+  const { before, marked, after } = splitForEmphasis(text);
+  return (
+    <>
+      {before}
+      <span style={EMPHASIS === 'rule' ? RULE_STYLE : MARKER_STYLE}>{marked}</span>
+      {after}
+    </>
+  );
+};
+
 const QuestionText: React.FC<{ text: string }> = ({ text }) => {
   const pieces = text.split(PART).filter(s => s !== undefined && s !== '');
   // No label at the head means no hanging: one block, as before.
   if (pieces.length < 3 || !/^\([ivx]+\)$|^\([a-h]\)$/i.test(pieces[0])) {
     return (
-      <p style={{ margin: '9px 0 0', font: `500 20px/1.5 ${SERIF}`, color: INK }}>{text}</p>
+      <p style={{ margin: '9px 0 0', font: `500 20px/1.5 ${SERIF}`, color: INK }}>
+        <Clause text={text} />
+      </p>
     );
   }
   const parts: { label: string; body: string }[] = [];
@@ -566,7 +667,7 @@ const QuestionText: React.FC<{ text: string }> = ({ text }) => {
           }}>
             {part.label}
           </span>
-          <span>{part.body}</span>
+          <span><Clause text={part.body} /></span>
         </p>
       ))}
     </div>
@@ -866,10 +967,101 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         // is the evidence a student marks against, so it must never leave view.
         position: wide ? 'sticky' : 'static', top: 96,
       }}>
+        {/* The question card is built like the top of a small stack of
+            papers: the white sheet with its ink border, and behind it two
+            flat accent sheets of the SAME SIZE, offset on opposite diagonals
+            — one up-left, one down-right. Each shows only the L-shaped band
+            the card leaves uncovered, so every visible edge either hugs the
+            card or ends in a square cut where a real sheet's corner would
+            be; nothing terminates in mid-air. Both layers are filled bands
+            of identical weight and colour — siblings — because a hairline
+            paired with a slab reads as two unrelated marks, not a stack.
+
+            The colour is a flat white-mixed tint of the accent, not full
+            #F26B1F: on this light page a full-strength band out-shouts the
+            question text, which is the actual content. The geometry carries
+            the depth; the tint keeps the frame subordinate. (A concentric
+            ring at an even gap is not an alternative — it reads as a focus
+            state.)
+
+            Square corners are deliberate and load-bearing. Where an offset
+            layer disappears behind the sheet, a straight edge cuts it cleanly —
+            at a rounded corner the same stroke emerges mid-curve as a stub and
+            reads as a fault. The rest of the screen keeps the system's 14–18px
+            radii; this card alone is squared, because it is the one element
+            that IS a printed exam paper. */}
+        <div style={{ position: 'relative' }}>
+          <div
+            aria-hidden
+            style={{
+              position: 'absolute', inset: '8px -8px -8px 8px',
+              background: ACCENT_SHEET, pointerEvents: 'none',
+            }}
+          />
+          {FRAME === 'stack' ? (
+            <div
+              aria-hidden
+              style={{
+                position: 'absolute', inset: '-8px 8px 8px -8px',
+                background: ACCENT_SHEET, pointerEvents: 'none',
+              }}
+            />
+          ) : (
+            /* 'registration': the up-left layer is a crisp full-accent stroke
+               rather than a second tinted sheet — the founder's reference pairs
+               a thin stroke with a mass.
+
+               Four bars, not a bordered box, for two reasons. The design guard
+               in test/markBankSession.test.tsx forbids coloured left borders in
+               this file, and separate bars let each arm stop exactly where it
+               should.
+
+               The two long arms run the full width and height of the card, and
+               each one TURNS onto the card at its far end — the top arm drops
+               FRAME_OFFSET down onto the card's top edge, the left arm runs
+               FRAME_OFFSET right onto its left edge. Without those turns the
+               arms simply stopped in space and the frame read as a rectangle
+               someone had failed to finish. With them the stroke closes onto
+               the sheet, so it reads as a register mark tucked behind the
+               paper rather than as an unfinished outline. */
+            <>
+              <div
+                aria-hidden
+                style={{
+                  ...ACCENT_BAR,
+                  top: -FRAME_OFFSET, left: -FRAME_OFFSET, right: 0, height: STROKE,
+                }}
+              />
+              <div
+                aria-hidden
+                style={{
+                  ...ACCENT_BAR,
+                  top: -FRAME_OFFSET, right: 0, width: STROKE, height: FRAME_OFFSET,
+                }}
+              />
+              <div
+                aria-hidden
+                style={{
+                  ...ACCENT_BAR,
+                  top: -FRAME_OFFSET, left: -FRAME_OFFSET, bottom: 0, width: STROKE,
+                }}
+              />
+              <div
+                aria-hidden
+                style={{
+                  ...ACCENT_BAR,
+                  bottom: 0, left: -FRAME_OFFSET, width: FRAME_OFFSET, height: STROKE,
+                }}
+              />
+            </>
+          )}
         <MotionDiv
           layout={reduced ? false : true}
           transition={{ duration: 0.26, ease: EASE }}
-          style={{ background: '#FFFFFF', borderRadius: 18, overflow: 'hidden', border: `2px solid ${INK}` }}
+          style={{
+            position: 'relative',
+            background: '#FFFFFF', overflow: 'hidden', border: `2px solid ${INK}`,
+          }}
         >
           <div style={{ padding: '16px 18px 18px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 10 }}>
@@ -888,29 +1080,30 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             </div>
 
             {card.stem && (
-              <p style={{ margin: '10px 0 0', font: `400 14px/1.55 ${SANS}`, color: MUTED }}>{card.stem}</p>
+              <p style={{ margin: '10px 0 0', font: `400 14.5px/1.6 ${SANS}`, color: INK_2 }}>{card.stem}</p>
             )}
 
             <QuestionText text={card.questionText} />
 
             {figure && (
-              <figure style={{ margin: '14px 0 0' }}>
-                <div style={{
-                  border: `1px solid ${HAIRLINE_2}`, borderRadius: 10,
-                  padding: 8, textAlign: 'center', background: '#FFFFFF',
-                }}>
+              /* The crop sits directly on the sheet — no third box competing
+                 with the card's own border. A full-bleed hairline rule marks
+                 where our typesetting ends and the SEC's print begins. */
+              <figure style={{ margin: '16px -18px 0', padding: '14px 18px 0', borderTop: `1px solid ${HAIRLINE_2}` }}>
+                <div style={{ textAlign: 'center' }}>
                   <img
                     src={figureUrl(figure.src)} alt={figure.alt}
                     style={{ maxWidth: '100%', maxHeight: 340, objectFit: 'contain', display: 'inline-block' }}
                   />
                 </div>
-                <figcaption style={{ marginTop: 7, font: `400 10.5px/1.4 ${SANS}`, color: LABEL }}>
+                <figcaption style={{ marginTop: 8, font: `400 10.5px/1.4 ${SANS}`, color: LABEL }}>
                   {figure.attribution}
                 </figcaption>
               </figure>
             )}
           </div>
         </MotionDiv>
+        </div>
       </div>
 
       {/* The scheme pane. Present from the first frame so nothing moves on
@@ -920,7 +1113,9 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         width: wide ? SCHEME_W : '100%',
         maxWidth: '100%',
         flex: '0 0 auto',
-        marginTop: wide ? 0 : 14,
+        /* 14px of visible gap: the question card's accent plate reaches 8px
+           below its sheet, so the margin allows for it in single-column mode. */
+        marginTop: wide ? 0 : 22,
       }}>
         <MotionDiv
           /* The pane still grows from the prompt to the marking points within a
