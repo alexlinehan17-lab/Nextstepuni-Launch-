@@ -30,14 +30,43 @@ import { CARDS as CHEM_HIGHER } from '../components/MarkBank/cards/chemistry/hig
 import { CARDS as CHEM_ORDINARY } from '../components/MarkBank/cards/chemistry/ordinary';
 import { CARDS as PHYS_HIGHER } from '../components/MarkBank/cards/physics/higher';
 import { CARDS as PHYS_ORDINARY } from '../components/MarkBank/cards/physics/ordinary';
+import { CARDS as AGSCI_HIGHER } from '../components/MarkBank/cards/agricultural-science/higher';
+import { CARDS as AGSCI_ORDINARY } from '../components/MarkBank/cards/agricultural-science/ordinary';
 
 /** Every deck at once. The app loads one at a time; the guards check them all,
- *  so a new subject inherits the whole net the day its first cards land. */
-const SAMPLE_CARDS = [...BIO_HIGHER, ...BIO_ORDINARY, ...CHEM_HIGHER, ...CHEM_ORDINARY, ...PHYS_HIGHER, ...PHYS_ORDINARY];
+ *  so a new subject inherits the whole net the day its first cards land.
+ *
+ *  That is the intent; Agricultural Science was the case where it did not
+ *  happen. 733 cards shipped before this list was updated, so the largest new
+ *  deck went unchecked against the id rules, the tariff reconciliation and the
+ *  row caps — which is how cards with 14 and 17 rows reached the deck. Adding a
+ *  subject here is a required step of the pipeline, not a follow-up. */
+const SAMPLE_CARDS = [
+  ...BIO_HIGHER, ...BIO_ORDINARY, ...CHEM_HIGHER, ...CHEM_ORDINARY,
+  ...PHYS_HIGHER, ...PHYS_ORDINARY, ...AGSCI_HIGHER, ...AGSCI_ORDINARY,
+];
 import {
   isDiagramCard, isContentFreeRow, looksLikeSectionLabel, tariffReconciles,
-  MAX_ROWS, isValidCardId,
+  rowCapFor, isValidCardId,
 } from '../types/markBank';
+
+/**
+ * Cards known to exceed their row cap, carried as an explicit debt list rather
+ * than by leaving the subject out of the guard entirely.
+ *
+ * Every one is an option menu mis-modelled as a list of required rows — "two
+ * advantages and two disadvantages" carrying 17 rows the student picks four
+ * from. The fix is to remodel each as a bounded `anyN` pick-list, which needs
+ * its scheme read to find the group boundaries. Ten of the original nineteen
+ * have been converted already; these nine are what is left.
+ *
+ * Shrink this list. Do not add to it.
+ */
+const KNOWN_OVER_ROW_CAP = new Set([
+  'agsci-2024-hl-q13bi', 'agsci-2024-hl-q13c', 'agsci-2024-hl-q13d',
+  'agsci-2024-hl-q14bii', 'agsci-2024-hl-q15av', 'agsci-2024-hl-q15bii',
+  'agsci-2024-ol-q16b', 'agsci-2024-ol-q17aiii', 'agsci-2024-ol-q18aii',
+]);
 
 const ROOT = resolve(__dirname, '..');
 
@@ -142,10 +171,27 @@ describe('no card can repeat the fabrication that shipped first time', () => {
   });
 
   test('every card obeys the structural caps and id rules', () => {
+    // The cap depends on the tariff: five REQUIRED rows, but a best-N-of-M card
+    // may show up to MAX_OPTION_ROWS, because its surplus rows are a menu the
+    // student picks from rather than a list they must recall.
     const bad = SAMPLE_CARDS
-      .filter(c => !isValidCardId(c.id) || c.rows.length === 0 || c.rows.length > MAX_ROWS)
-      .map(c => `${c.questionRef} (${c.id}, ${c.rows.length} rows)`);
+      .filter(c => !KNOWN_OVER_ROW_CAP.has(c.id))
+      .filter(c => !isValidCardId(c.id) || c.rows.length === 0
+        || c.rows.length > rowCapFor(c.tariffModel.kind))
+      .map(c => `${c.questionRef} (${c.id}, ${c.rows.length} rows, ${c.tariffModel.kind})`);
     expect(bad, show(bad)).toEqual([]);
+  });
+
+  test('the row-cap debt list is accurate — no stale entries, none under the cap', () => {
+    // A debt list that outlives its debt is worse than none: it silently exempts
+    // a card that has since regressed. Every id here must exist and must still
+    // be over its cap.
+    const byId = new Map(SAMPLE_CARDS.map(c => [c.id, c]));
+    const stale = [...KNOWN_OVER_ROW_CAP].filter(id => {
+      const c = byId.get(id);
+      return !c || c.rows.length <= rowCapFor(c.tariffModel.kind);
+    });
+    expect(stale, `stale row-cap exemptions — remove them: ${stale.join(', ')}`).toEqual([]);
   });
 
   test('card ids are unique', () => {
