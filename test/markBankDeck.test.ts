@@ -21,6 +21,9 @@
 import { describe, test, expect } from 'vitest';
 import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
+// One implementation of the provenance comparison, shared with build-deck.mjs —
+// two copies drifted once and reported four correct cards as untraceable.
+import { normalise, comparableScheme } from '../scripts/markbank/schemeText.mjs';
 import { createHash } from 'node:crypto';
 
 import { STRANDS, CHEMISTRY_STRANDS, PHYSICS_STRANDS, ALL_TOPICS, SUBJECTS, BLOCKED_FIGURES, deckSize } from '../components/MarkBank/deck';
@@ -77,26 +80,8 @@ const ROOT = resolve(__dirname, '..');
  * the same answer out is liable to typeset it properly as "H₂SO₄". Without this
  * the two normalise to "h2so4" and "hso", and a correct card reads as untraceable.
  */
-const SUPERSCRIPT = '⁰¹²³⁴⁵⁶⁷⁸⁹';
-const foldDigits = (s: string) => s
-  .replace(/[₀-₉]/g, c => String(c.charCodeAt(0) - 0x2080))
-  .replace(/[⁰¹²³⁴-⁹]/g, c => String(SUPERSCRIPT.indexOf(c)));
-
-const norm = (s: string) =>
-  foldDigits(s).toLowerCase().replace(/[‐-―]/g, '-').replace(/[^a-z0-9]+/g, ' ').trim();
-
-/**
- * Comparison text, whitespace-insensitive. Two layout facts stand in the way of a
- * character-exact match, and neither is extraction damage: chemical subscripts sit
- * on their own baseline (the carbohydrate formula extracts as "C x ( H 2 O )y"),
- * and a marks cell is vertically centred against a multi-line answer, so the mark
- * lands BETWEEN the two lines it belongs to. Mark-only lines are dropped and
- * spacing ignored; every character of an answer must still appear, in order.
- */
-const MARKS_ONLY = /^\s*\d+\s*(\(\s*\d+\s*\))?\s*$/;
-const tight = (s: string) => norm(s).replace(/ /g, '');
-const comparable = (text: string) =>
-  tight(text.split('\n').filter(l => !MARKS_ONLY.test(l)).join(' '));
+const tight = (x: string) => normalise(x);
+const comparable = (text: string) => comparableScheme(text);
 
 const schemeFor = (card: { year: number; level: string; subjectId: string }) =>
   resolve(ROOT, 'examiner-reports', card.subjectId, 'schemes',
@@ -382,7 +367,7 @@ describe('the taxonomy is the redeveloped specification', () => {
     expect(new Set(ids).size).toBe(ids.length);
     const PREFIX: Record<string, string> = {
       biology: 'bio-', chemistry: 'chem-', physics: 'phys-',
-      'agricultural-science': 'agsci-',
+      'agricultural-science': 'agsci-', business: 'business-',
     };
     for (const subject of SUBJECTS) {
       const prefix = PREFIX[subject.id];

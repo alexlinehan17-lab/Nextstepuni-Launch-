@@ -386,6 +386,15 @@ const MarkRowView: React.FC<{
             );
           })}
         </div>
+        {/* This branch returns before the ordinary row body, so a contextNote on
+            an anyN row used to reach nobody — and an author with scheme detail
+            that would not fit an option put it here, believing it showed. Silent
+            loss of marking content is worse than a crowded card. */}
+        {row.contextNote && (
+          <p style={{ margin: '8px 0 0', font: `400 11.5px/1.45 ${SANS}`, color: MUTED }}>
+            {row.contextNote}
+          </p>
+        )}
         {atCap && (
           <p style={{ margin: '8px 0 0', font: `400 11.5px/1.4 ${SANS}`, color: MUTED }}>
             That&rsquo;s the {g.claimMax} the examiner marks — any more score nothing.
@@ -753,7 +762,13 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         return (rowClaims[rowId(r, i)] ?? 'no') === 'no';
       })
       // The scheme's own wording, minus any "Label — " prefix the card carries.
-      .map(r => (r.verbatim.split(/\s[—-]\s/).pop() ?? r.verbatim).toLowerCase());
+      // Except on a matching or true/false card, where the scheme's whole answer
+      // IS the prefix's tail — a letter or a verdict. "e · a · d" and
+      // "false · false · false" name nothing; there the label is the content.
+      .map(r => {
+        const tail = r.verbatim.split(/\s[—-]\s/).pop() ?? r.verbatim;
+        return (tail.trim().length <= 6 ? r.verbatim : tail).toLowerCase();
+      });
   }, [card, rowClaims]);
   /* Three names fit the band; beyond that the count carries it. Naming all six
      would wrap the bar and push the grade buttons around. */

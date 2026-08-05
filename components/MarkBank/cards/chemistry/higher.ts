@@ -983,6 +983,20 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: "LC022ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2021 Higher Level — © State Examinations Commission.",
+    id: "chem-2021-hl-q9-c-iii", topicId: "chem-3-3", conceptId: "percentage-by-volume-equilibrium",
+    section: "B", questionRef: "2021 HL Q9(c)(iii)",
+    stem: "In the Haber process: N2 (g) + 3H2 (g) ⇌ 2NH3 (g). At equilibrium in the 10.0 litre container there were 6 mol N2, 18 mol H2 and 6 mol NH3.",
+    questionText: "Find the percentage by volume of NH3 in the container at equilibrium.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "6/30 × 100 = 20%", marks: 3, accepts: ["0.6/3 × 100 = 20%"] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC022ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2021 Higher Level — © State Examinations Commission.",
     id: "chem-2021-hl-q9-d", topicId: "chem-3-3", conceptId: "le-chatelier-pressure-catalyst",
     section: "B", questionRef: "2021 HL Q9(d)",
     stem: "In the Haber process: N2 (g) + 3H2 (g) ⇌ 2NH3 (g), established using an iron catalyst at temperature T.",
@@ -2156,21 +2170,6 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "spreading (movement) of a substance (compound, molecules)", marks: 3, accepts: ["movement of a substance","spreading of molecules","movement of molecules"] },
     { id: "r-2", kind: "alt", verbatim: "from high to low concentration", marks: 3, accepts: ["to fill a container (volume)"] },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC022ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2023 Higher Level — © State Examinations Commission.",
-    id: "chem-2023-hl-q4-g", topicId: "chem-1-4", conceptId: "dilution-new-concentration",
-    section: "B", questionRef: "2023 HL Q4(g)",
-    stem: "answer eight of the items (a), (b), (c), etc. Six marks are allocated to each item.",
-    questionText: "A laboratory technician diluted 25.0 cm3 of a 0.12 M solution to 30.0 cm3 by adding deionised water. Find the new concentration of the solution in moles per litre.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "25.0 × 0.12 ÷ 1000 = 0.003 moles", marks: 3, accepts: ["(25.0 × 0.12) ÷ 30 = M","30 ÷ 25 = 1.2 dilution factor","25 ÷ 30 = 0.8333 dilution factor"], contextNote: "Scheme: [Allow 25/30 or 30/25 for first (3) marks.]" },
-    { id: "r-2", kind: "point", verbatim: "M = 0.1 M", marks: 3 },
     ],
   } as SecCard,
   {
@@ -6075,7 +6074,7 @@ export const CARDS: SecCard[] = [
                 "CO2"
           ]
     },
-    labelKey: [{"letter":"He","meaning":"helium","askedInThisQuestion":true},{"letter":"Cl2","meaning":"chlorine","askedInThisQuestion":true},{"letter":"CO2","meaning":"carbon dioxide","askedInThisQuestion":true}],
+    labelKey: [{"letter":"He","meaning":"helium","askedInThisQuestion":false},{"letter":"Cl2","meaning":"chlorine","askedInThisQuestion":false},{"letter":"CO2","meaning":"carbon dioxide","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, kind: "question",

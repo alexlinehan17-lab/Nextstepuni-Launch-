@@ -20,8 +20,14 @@ from pathlib import Path
 
 import fitz
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from markbank_text import unligature  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[2]
 MIN_DESC = 40   # bind-figures drops anything thinner as untrustworthy
+
+# Below this, transcribe the table in full; above it, name the columns and stubs.
+SMALL_TABLE_ROWS, SMALL_TABLE_COLS = 9, 3
 
 
 def cells_for(page, bbox):
@@ -39,20 +45,30 @@ def cells_for(page, bbox):
     if best is None:
         return None
     try:
-        return [[(c or '').strip() for c in row] for row in best.extract()]
+        return [[unligature((c or '')).strip() for c in row] for row in best.extract()]
     except Exception:
         return None
 
 
 def describe(rows) -> str:
-    """Plain prose naming the columns and the row headings, then the shape.
+    """Prose a student who cannot see the crop can actually answer from.
 
-    Deliberately not a transcription of every value: the crop carries those, and
-    the alt text is for someone who cannot see it, not a second copy of the data.
+    A small table is transcribed IN FULL. Naming the columns and the first cell of
+    each row is enough for a table of figures, but it is exactly wrong for the
+    matching questions Business is full of: "Columns: Terms, Explanations. Rows:
+    1. Merger, 2. Acquisition..." hands over the terms and silently drops the
+    lettered explanations the student has to match them to. The reasoning that the
+    crop carries the values does not survive contact with the reader — someone who
+    cannot see the crop is the only person reading this.
     """
     rows = [r for r in rows if any(c for c in r)]
     if not rows:
         return ''
+    width = max(len(r) for r in rows)
+    if len(rows) <= SMALL_TABLE_ROWS and width <= SMALL_TABLE_COLS:
+        lines = [' | '.join(c for c in r if c) for r in rows]
+        body = 'A table from the exam paper, row by row: ' + '; '.join(l for l in lines if l) + '.'
+        return re.sub(r'\s+', ' ', body).strip()
     header = [c for c in rows[0] if c]
     stubs = [r[0] for r in rows[1:] if r and r[0]]
     bits = []
@@ -60,7 +76,7 @@ def describe(rows) -> str:
         bits.append('Columns: ' + ', '.join(header[:8]) + '.')
     if stubs:
         bits.append('Rows: ' + ', '.join(stubs[:8]) + '.')
-    bits.append(f'{len(rows)} rows by {max(len(r) for r in rows)} columns, as printed in the paper.')
+    bits.append(f'{len(rows)} rows by {width} columns, as printed in the paper.')
     return re.sub(r'\s+', ' ', 'A table from the exam paper. ' + ' '.join(bits)).strip()
 
 

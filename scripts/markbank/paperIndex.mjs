@@ -56,8 +56,21 @@ export const paperIndex = (() => {
 export const paperEntry = (subjectId, year, level) =>
   (paperIndex[subjectId] ?? []).find(e => e.year === year && e.level === level && e.lang === 'ev');
 
-/** The section letters a paper's label covers: "Section A&B" -> {A, B}. */
-const labelCovers = (label) => new Set((String(label).match(/\b[ABC]\b/g) ?? []));
+/**
+ * The sections a paper's label covers: "Section A&B" -> {A, B}, "Section 2 & 3"
+ * -> {2, 3}.
+ *
+ * Business numbers its sections instead of lettering them, and it splits across
+ * two documents — Section 1 in one, the ABQ and long questions in the other. Read
+ * only the letters and every Business card resolves to null, deep-linking a
+ * student to nothing. Anchored on the word "Section" so that "Paper Two" and
+ * "Practical Test Day 1" cannot be mistaken for section numbers.
+ */
+const labelCovers = (label) => {
+  const text = String(label);
+  if (!/\bsection\b/i.test(text)) return new Set();
+  return new Set(text.match(/\b[ABC1-9]\b/g) ?? []);
+};
 
 const stripPdf = (f) => (f ? String(f).replace(/\.pdf$/, '') : null);
 

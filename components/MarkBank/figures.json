@@ -7884,7 +7884,7 @@
  "physics-2025-HL-paper-p02-i0": {
   "src": "/exam-figures/physics/markbank/physics-2025-HL-paper-p02-i0.png",
   "md5": "387df4ea2496104e52a7b1263d76f01b",
-  "alt": "A table from the exam paper. Columns: posiƟon of force on metre sƟck (cm), 2.0, 11.2, 40.1, 72.7, 82.9. Rows: force (N), direcƟon. 3 rows by 6 columns, as printed in the paper.",
+  "alt": "A table from the exam paper. Columns: position of force on metre stick (cm), 2.0, 11.2, 40.1, 72.7, 82.9. Rows: force (N), direction. 3 rows by 6 columns, as printed in the paper.",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "",
@@ -7906,7 +7906,7 @@
  "physics-2025-HL-paper-p17-i1": {
   "src": "/exam-figures/physics/markbank/physics-2025-HL-paper-p17-i1.png",
   "md5": "ccb28336b485601bf012d8ceaf778b01",
-  "alt": "A table from the exam paper. Columns: types of glass, core, Y, Z. Rows: refracƟve index. 2 rows by 4 columns, as printed in the paper.",
+  "alt": "A table from the exam paper. Columns: types of glass, core, Y, Z. Rows: refractive index. 2 rows by 4 columns, as printed in the paper.",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "",
@@ -7959,5 +7959,1545 @@
   "year": 2021,
   "level": "higher",
   "attribution": "SEC Leaving Certificate Chemistry 2021 Higher Level — © State Examinations Commission"
+ },
+ "business-2021-OL-paper-p38-i0": {
+  "src": "/exam-figures/business/markbank/business-2021-OL-paper-p38-i0.png",
+  "md5": "44a07e23601f0d615fe3159467ef538b",
+  "alt": "The 'CONSUMER LAW' stimulus box for Section 2 Question 1, drawn as a thin black rectangle. At the left, the bold centred heading 'CONSUMER LAW' sits above the paragraph: 'Consumers in Ireland are protected by a number of different laws. The CCPC is responsible for ensuring all consumer laws' are implemented by businesses and they protect consumers rights. The Sale of Goods and Supply of Services Act, 1980, outlines consumers rights and retailers' responsibilities in relation to goods and services.' At the right of the box sits the CCPC logo, the only colour element on the crop: a thick red open 'C' arc facing a dark navy disc that has a small white circle bitten out of its left side, followed by the navy capital wordmark 'CCPC'. No expansion of the initials appears anywhere on the logo.",
+  "lettersVisible": [
+   "CCPC"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Section 2 Q1",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2021-OL-paper-p41-i0": {
+  "src": "/exam-figures/business/markbank/business-2021-OL-paper-p41-i0.png",
+  "md5": "0d6d52ae78b557f08e4739a13274256a",
+  "alt": "The recruitment advertisement that Section 2 Question 4(E) is built on, set inside a plain black rectangle. The advert text runs, line by line: 'Child Care Assistant required for busy Crèche.' / 'Full time.' / 'Female applicants only.' / 'Applicants must be Irish and speak fluent English.' then, after a blank line, 'Email your CV to: info@daisycrèche.ie'. Filling the right-hand side of the box is a loose pen-and-ink line drawing of roughly eight small children sitting, kneeling and crouching in a ring on the ground around a jar or pot, some seen in profile and some from behind, drawn in sketchy black outline with no colour.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Section 2 Q4",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2022-OL-paper-p08-i1": {
+  "src": "/exam-figures/business/markbank/business-2022-OL-paper-p08-i1.png",
+  "md5": "b5a1be1e11561f429623dc5073ab4977",
+  "alt": "One row of the same Question 14 'Product | Method of Production' table. The left cell holds a greyscale photograph of a three-tier celebration/wedding cake standing on a white board: smooth white iced tiers, a piped bead border and a ring of dark round decorations (berries or piped work) around the base of each tier, and a ruffled floral/ribbon topper. The right cell is blank for the candidate's answer. The crop is bounded above by the rule closing the previous row and below by the table's bottom rule.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q14",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2022-OL-paper-p40-i0": {
+  "src": "/exam-figures/business/markbank/business-2022-OL-paper-p40-i0.png",
+  "md5": "cebf17c4f0836353c07a1300805cd5ab",
+  "alt": "A pie chart titled, in a boxed caption at the top, \"IRELAND'S IMPORTS FOR 2021\". The pie is drawn in five exploded greyscale wedges, each with an external bold label giving the source region and its share of imports as a percentage: EU 36% (largest, dark grey, right side), UK 23% (mid grey, bottom), USA 15% (mid grey, lower left), China 7% (light grey, left), Other 19% (palest grey, top). There is no axis and no absolute-value scale — the only quantities are the five printed percentages, which sum to 100%. A source credit 'www.cso.ie' sits outside the chart's frame at the lower right.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q3",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2023-OL-paper-p10-i0": {
+  "src": "/exam-figures/business/markbank/business-2023-OL-paper-p10-i0.png",
+  "md5": "d39ad1ffae7730dc589f8b55edca7d59",
+  "alt": "A specimen of the Section 2 answerbook page layout, drawn inside a plain black rectangle on the answerbook instructions page. Across the top: the word 'Question' followed by two square boxes outlined in pink containing a '0' and a '4', and at the right the instruction 'Start each question on a new page'. Below sits a narrow left-hand column headed 'Part' holding the labels '(a)', '(b)(i)' and '(b)(ii)', alongside a wide writing area ruled with faint blue horizontal lines.",
+  "lettersVisible": [
+   "0",
+   "4",
+   "(a)",
+   "(b)(i)",
+   "(b)(ii)"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "0",
+    "meaning": "first digit written in the 'Question' number boxes"
+   },
+   {
+    "letter": "4",
+    "meaning": "second digit - together the two boxes read question 04"
+   },
+   {
+    "letter": "(a)",
+    "meaning": "specimen part label written in the left-hand column headed 'Part'"
+   },
+   {
+    "letter": "(b)(i)",
+    "meaning": "second specimen part label in the 'Part' column"
+   },
+   {
+    "letter": "(b)(ii)",
+    "meaning": "third specimen part label in the 'Part' column"
+   }
+  ],
+  "questionRef": "",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2023-OL-paper-p41-i0": {
+  "src": "/exam-figures/business/markbank/business-2023-OL-paper-p41-i0.png",
+  "md5": "ce8f8426f4be88e6c44733695b47ebc6",
+  "alt": "The Q4 'Consumer problems' stimulus box. On the left, a photograph of a black lace-up hiking boot in three-quarter view, with grey trim, chunky lugged sole and a small manufacturer's logo at the ankle collar. On the right, two paragraphs of prose: 'Jack McCarthy purchased a pair of hiking boots from Outdoor Life in Gateway Shopping Centre. After he tried them on again at home, he found the boots to be slightly uncomfortable and went back to the store to return them.' and 'The sales assistant told him he would have to accept a Credit Note if he wanted to return the boots.' The bold box heading 'Consumer problems' is sliced by the top edge of the crop.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Section 2 Q4",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2023-OL-paper-p42-i0": {
+  "src": "/exam-figures/business/markbank/business-2023-OL-paper-p42-i0.png",
+  "md5": "f739b86d2eaec5d5a6b20e17bc9f24ca",
+  "alt": "The full Q5 stimulus box in two cells. LEFT: a black-and-white photograph of a young man (Nathan Adams) in a dark long-sleeved polo shirt, standing in front of a wall decorated with a dripping-paint pattern and the SweetKing logo, holding a white tub and a clear bag of pick 'n' mix sweets. RIGHT: the SweetKing brand logo - the words 'Sweet King' in heavy drippy script with a crown above and a lollipop motif - set over five lines of prose: 'SweetKing is an online pick 'n' mix store which was founded by Nathan Adams in June 2020. Nathan saw a gap in the market for an online pick 'n' mix store with speedy delivery to your door. Nathan sources his stock from Ireland, Belgium, Spain, and the UK. He has since expanded his business into retail.' followed by the italic credit 'Adapted from the examiner.ie'.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Section 2 Q5",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2023-OL-paper-p43-i1": {
+  "src": "/exam-figures/business/markbank/business-2023-OL-paper-p43-i1.png",
+  "md5": "da1f329e0347c2736c7aaf4ddbd88fc7",
+  "alt": "The complete Greenlawn Golf Club 'Notice and Agenda' document extract, inside a black-bordered box on a very light grey ground. Bold serif heading 'Greenlawn Golf Club', subtitle 'Notice and Agenda', then 'The AGM of Greenlawn Golf Club and Restaurant will take place on 21st November 2023 at 8.00pm in the Clubhouse.' Under the centred word 'Agenda' is a bulleted list of eight items: Minutes of the 2022 AGM; Any matters arising; Club Chairperson's Report; Club Treasurer's Report; Expansion of Clubhouse; Membership fees; Election of club officers; AOB. The terms AGM, Minutes and AOB are underlined. The document closes with 'Signed', a handwriting-style signature reading 'Paul Cahill', then typed 'Paul Cahill' and 'Secretary'. In the top right corner is a photograph of a golfer in mid-swing on a tee, with mountains and fairway behind.",
+  "lettersVisible": [
+   "AGM",
+   "AOB"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Section 2 Q6",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2023-OL-paper-p46-i0": {
+  "src": "/exam-figures/business/markbank/business-2023-OL-paper-p46-i0.png",
+  "md5": "f9c5efcad0db40cc293a5d932ad86cbf",
+  "alt": "The full Q9 stimulus box in two cells. LEFT: a black-and-white photograph of two young women in dark sportswear (leggings and long-sleeved tops, one in shorts) standing back-to-back with folded arms on a wooden footbridge, trees behind them. RIGHT: the I-SPY wordmark - outlined capitals I, S, P, Y with a solid arrowhead/chevron device forming the Y - above four lines of prose: 'I-SPY is an online sportwear business based in Ireland which sells a range of yoga and fitness wear. The business was set up by Louise Egan along with her mother Paulette. They joined their passions for fitness, lifestyle and yoga to create the idea for their business.' followed by the italic credit 'Adapted from ispy.com'.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Section 2 Q9",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2024-HL-paper-p45-i0": {
+  "src": "/exam-figures/business/markbank/business-2024-HL-paper-p45-i0.png",
+  "md5": "484ec3819d4b54ab62f46b7ac6e5c9e0",
+  "alt": "A ruled stimulus box headed, in bold, \"Ireland 2023 Q3\", containing a greyscale isometric infographic of Ireland's trade in that quarter. The graphic is built as two large overlapping rounded lobes on a mid-grey field, with a faint world-map/globe silhouette behind the left one. The left lobe is captioned \"Goods\" and shows two container ships loaded with stacked containers; the right lobe is captioned \"Services\" and shows two seated office workers at desks with laptops. Beneath each lobe are two value labels separated by a dotted vertical rule: under Goods, \"Exports €72bn\" and \"Imports €34bn\"; under Services, \"Exports €93bn\" and \"Imports €84bn\". Right-aligned below the graphic is the attribution \"Adapted from cso.ie\". It is an infographic, not a plotted chart — there are no axes and no scale; the four euro amounts are printed directly as labels and are fully legible.",
+  "lettersVisible": [
+   "€72bn",
+   "€34bn",
+   "€93bn",
+   "€84bn"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "€72bn",
+    "meaning": "Goods exports, Ireland 2023 Q3"
+   },
+   {
+    "letter": "€34bn",
+    "meaning": "Goods imports, Ireland 2023 Q3"
+   },
+   {
+    "letter": "€93bn",
+    "meaning": "Services exports, Ireland 2023 Q3"
+   },
+   {
+    "letter": "€84bn",
+    "meaning": "Services imports, Ireland 2023 Q3"
+   }
+  ],
+  "questionRef": "2024 HL Q3",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2024 Higher Level — © State Examinations Commission"
+ },
+ "business-2024-OL-paper-p05-i0": {
+  "src": "/exam-figures/business/markbank/business-2024-OL-paper-p05-i0.png",
+  "md5": "c079f5254be0345c80928a567e1627e4",
+  "alt": "A framed line diagram headed \"Product Life Cycle\". A single smooth curve rises from the origin, flattens at a peak about four-fifths of the way across, then falls away to the right. The vertical axis is labelled \"S A L E S\" (letters set vertically) and the horizontal axis \"TIME\" at the bottom right. Neither axis carries a numeric scale, tick marks or units. Five vertical dashed lines divide the plot into five bands, and each band is headed by a boxed stage label reading, left to right: \"Launch\", \"Growth\", \"Stage 3\" (its box shaded pale grey), \"Saturation\", \"Decline\". The whole frame, both axis labels and all five boxes are inside the crop.",
+  "lettersVisible": [
+   "Stage 3"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Section 1 Q6",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2024-OL-paper-p38-i0": {
+  "src": "/exam-figures/business/markbank/business-2024-OL-paper-p38-i0.png",
+  "md5": "fefa049acaf8683fb562f12862351129",
+  "alt": "A bordered news extract with a greyscale photograph at the left: a twin-engine turboprop airliner in Aer Lingus Regional livery (white fuselage, dark tail with shamrock, high wing, four-blade props) standing on a runway, with a large painted runway number partly visible in the tarmac in the foreground. The boxed text to its right is headed in bold \"Aer Lingus regional pilots plan work-to-rule\" and reads \"Pilots at Emerald Airlines, which operates the Aer Lingus regional network, recently voted for industrial action.\" with the italic credit \"Adapted from irishtimes.com\". All four box borders are inside the crop.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Section 2 Q1",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2024-OL-paper-p38-i1": {
+  "src": "/exam-figures/business/markbank/business-2024-OL-paper-p38-i1.png",
+  "md5": "db7963d2fb26e71a8ce2706a57b38583",
+  "alt": "A dashed-border panel holding a greyscale product photograph at the left — a square-faced smartwatch with a pale silicone strap, its screen showing a grid of small round app icons — beside a solid-bordered text box reading: \"Lily purchased a new smartwatch for €195. After two weeks, the touchscreen on the watch stopped working, and the device failed to charge properly. When she returned to the shop, the manager gave Lily the manufacturer's address and said she should contact the manufacturer of the watch.\" The full five lines and both borders are inside the crop.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Section 2 Q1",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2024-OL-paper-p39-i0": {
+  "src": "/exam-figures/business/markbank/business-2024-OL-paper-p39-i0.png",
+  "md5": "0a66f3ad9cee3b958aa4bb6007a760b7",
+  "alt": "A bordered news extract with the Revenue Commissioners logo at the left — the word \"Revenue\" in a light serif beside a line drawing of a classical building with a domed portico and columns. The boxed text is headed in bold \"Three firms pay a third of all corporation tax\" and continues \"According to revenue data, Ireland's corporation tax takings are heavily concentrated in a small number of large foreign-owned multinationals.\" with the credit \"Adapted from rte.ie\".",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Section 2 Q2",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2024-OL-paper-p40-i0": {
+  "src": "/exam-figures/business/markbank/business-2024-OL-paper-p40-i0.png",
+  "md5": "376d35281850285aeb29d1264bb9b41c",
+  "alt": "A bordered CSO infographic titled in bold \"Balance of Payments, Q1 2023\". Two overlapping dark circular panels sit over a faint world map. The left panel is headed \"Goods\" and shows two isometric container ships loaded with containers; the right panel is headed \"Services\" and shows two people working at laptops on desks. A vertical dotted divider splits each panel in two, giving four labelled amounts printed in white along the bottom — under Goods: \"Exports €89bn\" and \"Imports €33bn\"; under Services: \"Exports €83bn\" and \"Imports €85bn\". Outside the box on the right sits the Central Statistics Office logo — a stylised interlocking cipher beside \"An Phríomh-Oifig Staidrimh / Central Statistics Office\". The opening words of part (A)(i) are clipped along the very bottom edge.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Section 2 Q3",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2024-OL-paper-p44-i0": {
+  "src": "/exam-figures/business/markbank/business-2024-OL-paper-p44-i0.png",
+  "md5": "5af75d6a5c0919b42dbf7c7f805d3d92",
+  "alt": "A bordered news extract, text at the left and photograph at the right. The bold headline reads \"76% would turn down jobs that do not meet flexible working needs, according to a study.\" The body continues \"Employees are demanding more than just a good wage when seeking employment. Research suggests that Human Resource Managers are looking at other ways of retaining and attracting staff.\" with the italic credit \"Adapted from rte.ie\" at the lower right of the text block. The greyscale photograph shows a person's hands typing on an open laptop at a pale desk, with a glass, a pen and a notebook beside it and a softly blurred window and foliage behind.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Section 2 Q7",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2024-OL-paper-p46-i0": {
+  "src": "/exam-figures/business/markbank/business-2024-OL-paper-p46-i0.png",
+  "md5": "18d6bb6fa6e5351b6ff3c72e5af45607",
+  "alt": "The instruction line \"Read the information supplied and answer the questions which follow.\" sits above a bordered box. Inside, at the left, a greyscale photograph of a standing crisp packet: a small crest at the top left and a \"Gluten free\" flash at the top right, the \"Keogh's\" script logo with \"Grown with love in Ireland\" beneath it, a photograph of stacked crisp-filled barrels set against a field landscape, then the flavour band \"SMOKED BARBEQUE and IRISH WHISKEY\", a line of small descriptive type, and \"NET WT. 125g (4.4 OZ)\" at the foot. To the right of the pack: \"In 2023 Keogh's launched a new Smoked Barbecue & Teeling Whiskey flavoured crisp.\" with the italic credit \"Adapted from checkout.ie\".",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Section 2 Q9",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2024-OL-paper-p46-i1": {
+  "src": "/exam-figures/business/markbank/business-2024-OL-paper-p46-i1.png",
+  "md5": "fec8a88e7292b248449de0fb5d20c383",
+  "alt": "A bordered box. Across the top, a greyscale photograph of five Keogh's crisp packets standing side by side against white, each carrying the \"Keogh's\" script logo at the top and a different flavour band across the lower half of the pack. Beneath the photograph: \"Crisp maker Keogh's has announced the company will be constructing a new production facility worth €10 million in 2024 as the business continues to grow.\" with the italic credit \"Adapted from irishtimes.com\" at the right.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Section 2 Q9",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2025-HL-paper-p43-i0": {
+  "src": "/exam-figures/business/markbank/business-2025-HL-paper-p43-i0.png",
+  "md5": "f747d30f8783809133a3b1018c889dd2",
+  "alt": "Stimulus item beside Question 1 (People in Business). At the far left the question-part marker \"(B)\" is clipped by the crop's top edge. Centred above the image is the bold headline \"Health unions to ballot members for industrial action over staff shortages\". Beneath it is a greyscale news photograph of an outdoor trade-union rally, shot from behind the crowd: in the foreground the backs of two demonstrators — one in a dark jacket, one in a light knitted beanie — hold up a large white banner printed with \"FÓRSA\" in bold black capitals; tall union flags and pole banners rise across the frame, the one at the right carrying large white letters on a dark ground that run out of the photograph's own frame; behind the crowd stands a period rendered-stone institutional building with dormer windows set into a mansard roof, with trees, flagpoles flying flags and a road sign; a high-visibility vest is visible at the lower left. \"Adapted from rte.ie\" is printed at the bottom right, and the stimulus box's right-hand border is visible.",
+  "lettersVisible": [
+   "(B)"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q1",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2025 Higher Level — © State Examinations Commission"
+ },
+ "business-2025-HL-paper-p44-i0": {
+  "src": "/exam-figures/business/markbank/business-2025-HL-paper-p44-i0.png",
+  "md5": "64f8f9a7129834b047be5dd5206ae609",
+  "alt": "Stimulus item beside Question 2 (Domestic Environment). The question-part marker \"(C)\" sits at the far left; centred at the top is the bold headline \"Hospitality, tourism and retail firms hold Dublin protest\". Below is a greyscale news photograph of a daytime street demonstration in Dublin: several dozen people in winter coats stand on a footpath between a red-brick Georgian terrace with sash windows and fanlight-arched doorways on the left, and a stone classical portico with fluted columns and a dark panelled door on the right; a television camera on a tripod with its operator is at the far left, and an ornate cast-iron lamp standard rises at the centre right. The demonstrators hold printed placards; the legible ones read \"Budget Ignored Small Business\", \"BUDGET 2025 FAILED TO DELIVER\" (several copies), \"NO VAT / NO VOTE!\", \"HOSPITALITY & TOURISM\" and \"DON'T LET THE HIGH STREET DIE!\", with further small placards beginning \"HOSPITALITY SMEs...\" too small to read in full. \"Adapted from rte.ie\" is printed at the bottom right. The photograph is whole and legible.",
+  "lettersVisible": [
+   "(C)"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q2",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2025 Higher Level — © State Examinations Commission"
+ },
+ "business-2025-HL-paper-p49-i0": {
+  "src": "/exam-figures/business/markbank/business-2025-HL-paper-p49-i0.png",
+  "md5": "4c813ab841745eae2b34c63faeb7d1e3",
+  "alt": "A two-cell bordered stimulus box heading Question 7 (Managing / Business in Action). The left cell holds three centred lines of prose: \"Glanbia acquired The Optimum Nutrition brand in 2008. This was part of a shift in focus towards consumer nutrition products.\" A vertical rule divides it from the right cell, which holds a greyscale product photograph of three Optimum Nutrition supplement tubs standing on white: at the left a small dark tub carrying the circular \"ON\" logo and reading \"GOLD STANDARD PRE-WORKOUT\"; in the centre a large black tub with the \"ON\" logo reading \"GOLD STANDARD 100% WHEY\", with a small nutrition strip beneath it showing the figures \"24\" and \"5.5\" and a flavour line (\"DOUBLE RICH CHOCOLATE\"); at the right a medium black-and-grey tub reading \"INSTANTIZED BCAA\" with \"5000 POWDER\" beneath and a \"2:1:1\" ratio panel. Both cells and all four borders of the box are inside the crop.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q7",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2025 Higher Level — © State Examinations Commission"
+ },
+ "business-2025-OL-paper-p38-i1": {
+  "src": "/exam-figures/business/markbank/business-2025-OL-paper-p38-i1.png",
+  "md5": "57545715c884597390f79dd9b64edae4",
+  "alt": "A bordered news-clipping stimulus panel. Left: a black-and-white publicity photograph of two men standing side by side, both in dark jackets — Liam and Noel Gallagher of Oasis. Right: the bold headline \"Complaints made over high price of Oasis tickets charged by Ticketmaster\", with the italic attribution \"Adapted from rte.ie\" beneath it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Section 2 Q1(D)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2025-OL-paper-p39-i0": {
+  "src": "/exam-figures/business/markbank/business-2025-OL-paper-p39-i0.png",
+  "md5": "6ee95c288e1b98de436c73b7df5b2646",
+  "alt": "A two-part bordered stimulus panel. Top band, on a faint textured background: a line-drawn plant growing behind a picket fence, the words \"Little Steps towards a better planet\" underlined, a hand-drawn globe showing Europe and Africa, and the wordmark \"wren.\" with \"urban nest\" beneath it and a small leaf/bird mark above. Bottom box, three lines of prose: \"Wren Urban Nest, located in central Dublin, is an innovative hotel designed for sustainability. It is powered by 100% renewable energy, eliminating fossil fuel dependency. This makes the hotel a model of eco-friendly hospitality for travellers looking to reduce their carbon footprint.\" with the italic attribution \"Adapted from wrenhotel.ie\".",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Section 2 Q2 (A)-(C)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2025-OL-paper-p40-i0": {
+  "src": "/exam-figures/business/markbank/business-2025-OL-paper-p40-i0.png",
+  "md5": "8598e7d1ef920ddefe2217a86e940461",
+  "alt": "A bordered news-clipping stimulus panel. Left: a CNBC television screengrab showing the large white Apple logo on the glass frontage of an Apple Store, with reflections of the street across it, the caption overlay \"Apple must pay 13 billion euros in back taxes, EU's top court rules\" along the bottom and the CNBC bug in the bottom-right corner. Right: the bold headline \"Multinational company Apple must pay Ireland €13 billion in unpaid corporation tax, EU's top court rules\", with the italic attribution \"Adapted from www. independent.ie\".",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Section 2 Q3 (A)(B)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2025-OL-paper-p40-i1": {
+  "src": "/exam-figures/business/markbank/business-2025-OL-paper-p40-i1.png",
+  "md5": "fe9f991144427259f378c3189ed03283",
+  "alt": "An infographic bar chart in a black-bordered box. Header bar: \"Inflation* rate\" in bold white with \"forecast\" in lighter grey. On the dark grey field a large light-grey euro (€) symbol occupies the left third. To its right, four vertical light-grey bars descending in height from left to right, each with its year printed above the bar and its value printed inside the top of the bar: 2022 = 8.1%, 2023 = 5.4%, 2024 = 3.2%, 2025 = 2.3%. The bars stand on the floor of the panel.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Section 2 Q3(C)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2025-OL-paper-p41-i0": {
+  "src": "/exam-figures/business/markbank/business-2025-OL-paper-p41-i0.png",
+  "md5": "25f1d050a868838320f790634d8cb7cd",
+  "alt": "A bordered news-clipping stimulus panel. Left: the bold headline \"Health workers represented by the INMO vote in favour of industrial action over staff shortage\" with the italic attribution \"Adapted from rte.ie\". Right: a black-and-white photograph of a picket line at night — gloved hands holding a placard reading \"SAFE STAFFING NOW\", with an INMO banner (Irish Nurses and Midwives Organisation) behind and a second partly hidden placard reading \"...SPUTE ... ON ... RE\" (an official-dispute sign).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Section 2 Q4 (A)(B)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2025-OL-paper-p41-i1": {
+  "src": "/exam-figures/business/markbank/business-2025-OL-paper-p41-i1.png",
+  "md5": "51cccd436fdf269796bb19350b265244",
+  "alt": "A two-cell bordered stimulus panel. Left cell: a grey publication cover reading \"THE EMPLOYMENT EQUALITY ACTS 1998-2015\" in white capitals, over an abstract pattern of overlapping rings and part-circles. Right cell: the bold headline \"Race and sexual orientation discrimination complaints up sharply last year – WRC\", with the italic attribution \"Adapted from rte.ie\".",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Section 2 Q4 (D)(E)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2025-OL-paper-p42-i0": {
+  "src": "/exam-figures/business/markbank/business-2025-OL-paper-p42-i0.png",
+  "md5": "1c25b4175bc99546cb3b3535fd3a17b0",
+  "alt": "A two-cell bordered stimulus panel. Left cell is a wide three-part banner: a pale panel carrying the wordmark \"SCULPTED\" in large light serif capitals with \"AIMEE CONNOLLY\" spaced beneath it; a studio portrait of a smiling blonde woman in a light blazer with her arms folded (Aimee Connolly, per the caption alongside); and a product still-life of cosmetics — makeup brushes, a tube, compacts and a bottle. Right cell: the bold text \"Aimee Connolly is honoured as the Emerging Entrepreneur of the Year\". The top border of the case-study text box below is visible along the bottom edge.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Section 2 Q5",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2025-OL-paper-p43-i0": {
+  "src": "/exam-figures/business/markbank/business-2025-OL-paper-p43-i0.png",
+  "md5": "20dd88b598e0095674bebb3ef0e7e4e9",
+  "alt": "A two-cell bordered stimulus panel. Left cell, four lines of prose: \"United Football Club's AGM will take place at the Castlemore clubhouse on Friday, 9 January 2026, at 8:00 p.m.\" and \"Chairperson Steven Farrell and Secretary Mary Byrne are preparing for the meeting, focusing on improving cash flow and on raising finance to build a gym.\" Right cell: a black-and-white photograph of a single-storey sports clubhouse with a hipped roof and a covered veranda, standing behind a line of advertising hoardings at the edge of a grass pitch, with trees behind it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Section 2 Q6",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2025-OL-paper-p44-i0": {
+  "src": "/exam-figures/business/markbank/business-2025-OL-paper-p44-i0.png",
+  "md5": "48d5fb9abdab9a9add650b1e1843975c",
+  "alt": "A two-cell bordered stimulus panel. Left cell: a photograph of a smartphone lying screen-up on dark fabric, the screen showing the lowercase \"dexcom\" wordmark on white. Right cell, six lines of prose: \"Dexcom's upcoming manufacturing facility in Athenry, Co. Galway, is set to generate 1,000 new jobs. The HR Department in Dexcom provides extensive training opportunities such as induction and on-the-job training. Dexcom also offers a range of reward schemes such as benefit-in-kind, bonuses and remote work options.\" with the italic attribution \"Adapted from irishtimes.ie\".",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Section 2 Q7 (A)(B)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2025-OL-paper-p44-i2": {
+  "src": "/exam-figures/business/markbank/business-2025-OL-paper-p44-i2.png",
+  "md5": "3f10a5f4b461637e489c56638001e857",
+  "alt": "A vector document extract in a plain box: two lines of prose, \"David Mulroy was successful in his application to work as a Staff Industrial Engineer at Dexcom. The following is a breakdown of his earnings:\", above a five-row two-column table with shaded label cells — Annual Gross Pay | €46,000; PAYE | 20% on the first €42,000 and 40% on the remainder; Annual Tax Credit | €3,750; PRSI | 4.1%; USC | 3.0%.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Section 2 Q7 (C)-(E)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2025-OL-paper-p46-i0": {
+  "src": "/exam-figures/business/markbank/business-2025-OL-paper-p46-i0.png",
+  "md5": "0ab141224377267afa977f5aadac894f",
+  "alt": "A two-cell bordered stimulus panel. Left cell: a photograph of a man in dark work clothing standing on the tail-lift of a white box lorry, handling a stack of large cardboard cartons on a pallet outside a glass-fronted building. Right cell: the bold headline \"IKEA and Tesco have expanded their successful partnership in Ireland\". The top border of the following text box is visible along the bottom edge of the crop.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Section 2 Q9 (A)(B)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2025-OL-paper-p46-i1": {
+  "src": "/exam-figures/business/markbank/business-2025-OL-paper-p46-i1.png",
+  "md5": "0f1711878801c79d1bc502ec504e47c8",
+  "alt": "A bordered stimulus panel. Left: an illustration of a large open dark umbrella sheltering an upright black briefcase whose front is lettered \"BUSINESS INSURANCE\" in white capitals. Right: the bold headline \"Businesses still face costly insurance in spite of reform\", then five lines of prose — \"A recent survey revealed that many businesses are struggling with rising insurance premiums. While reforms have brought some stability to motor insurance premiums for consumers, businesses are facing increased costs for public liability insurance along with higher employer PRSI costs.\" — in which four terms are underlined: insurance premiums, motor insurance, public liability insurance, employer PRSI. Italic attribution \"Adapted from Irish Examiner\" beneath.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Section 2 Q9 (D)(E)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2021-HL-paper-p03-i0": {
+  "src": "/exam-figures/business/markbank/business-2021-HL-paper-p03-i0.png",
+  "md5": "20f8c3cd453f12414d4eb7861e74d01b",
+  "alt": "A table from the exam paper, row by row: Column 1: Terms | Column 2: Explanations; 1. Merger | A This occurs when one company purchases more than 50% of the shares in another company.; 2. Economies of Scale | B Two businesses work together on a project but remain separate legal entities.; 3. Acquisition | C Purchasing a company and selling off its assets to increase return for investors.; 4. Diversification | D Two or more businesses join together to create a new legal entity.; 5. Strategic Alliance | E A business spreads risk by not being dependant on one market or one product.; F The cost of producing each unit decreases due to an increase in production/bulk buying of raw materials..",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2021 Higher Level — © State Examinations Commission"
+ },
+ "business-2021-HL-paper-p03-i1": {
+  "src": "/exam-figures/business/markbank/business-2021-HL-paper-p03-i1.png",
+  "md5": "53972da24210d8ba3ad09ce656a72147",
+  "alt": "A blank answer strip: a single row of five shaded cells numbered 1, 2, 3, 4, 5, each with an empty cell beneath it. Nothing else is printed — the terms and explanations being matched are set elsewhere on the page.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2021 Higher Level — © State Examinations Commission",
+  "blankAnswerGrid": true
+ },
+ "business-2021-HL-paper-p03-i2": {
+  "src": "/exam-figures/business/markbank/business-2021-HL-paper-p03-i2.png",
+  "md5": "af2f43f159fc6d087f7b2c5d8bc30f78",
+  "alt": "A five-row table listing five business abbreviations, one per row, in this order: WTO, CAM, EDI, CAD, JIT.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2021 Higher Level — © State Examinations Commission"
+ },
+ "business-2021-HL-paper-p05-i0": {
+  "src": "/exam-figures/business/markbank/business-2021-HL-paper-p05-i0.png",
+  "md5": "a96a5707030cfe1f90046f1b0cb976cf",
+  "alt": "A table from the exam paper, row by row: Explanation | State Agency; This state agency helps local entrepreneurs establish and grow a business.; This state agency helps existing indigenous firms to expand.; This state agency supports the tourism industry and works to promote Ireland as a tourism destination.; This state agency aims to attract foreign direct investment into Ireland..",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2021 Higher Level — © State Examinations Commission"
+ },
+ "business-2021-HL-paper-p06-i0": {
+  "src": "/exam-figures/business/markbank/business-2021-HL-paper-p06-i0.png",
+  "md5": "d3eac7cf3ffb8c631797466002059249",
+  "alt": "A table from the exam paper, row by row: Net Profit €72,000 Issued Ordinary Share Capital €450,000 Long Term Loan €100,000 Retained Earnings €26,000 | Return on Investment 2019 = 7%.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2021 Higher Level — © State Examinations Commission"
+ },
+ "business-2021-HL-paper-p06-i1": {
+  "src": "/exam-figures/business/markbank/business-2021-HL-paper-p06-i1.png",
+  "md5": "03ae23a8f9aaaed8c08ea3c0afd78d46",
+  "alt": "An empty two-part box: a large blank area labelled \"Workings:\" beside a narrower one labelled \"Return on Investment 2020:\" with a ruled line for the final figure. No exam data is printed here.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2021 Higher Level — © State Examinations Commission",
+  "blankAnswerGrid": true
+ },
+ "business-2021-HL-paper-p40-i1": {
+  "src": "/exam-figures/business/markbank/business-2021-HL-paper-p40-i1.png",
+  "md5": "416ee6367a66d2b3fcba6bab410f0b03",
+  "alt": "A table from the exam paper, row by row: China and 14 Asia‐Pacific countries agreed a historic free trade deal in November 2020. Trade barriers continue to impact trade between some countries..",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2021 Higher Level — © State Examinations Commission"
+ },
+ "business-2021-HL-paper-p41-i2": {
+  "src": "/exam-figures/business/markbank/business-2021-HL-paper-p41-i2.png",
+  "md5": "50291a968286216f7c753c2f13f9d160",
+  "alt": "A table from the exam paper, row by row: Premier League soccer player Jack Wilshere and his club West Ham Utd agree ‘mutual termination of midfielder’s contract’. Adapted from the Irish Independent.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2021 Higher Level — © State Examinations Commission"
+ },
+ "business-2021-OL-paper-p03-i0": {
+  "src": "/exam-figures/business/markbank/business-2021-OL-paper-p03-i0.png",
+  "md5": "3450404f3d6c02b4b579a58f299ad1e5",
+  "alt": "A three-row table naming the three abbreviations the question asks you to write out in full: row 1 PIN, row 2 ATM, row 3 APR.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2021-OL-paper-p03-i1": {
+  "src": "/exam-figures/business/markbank/business-2021-OL-paper-p03-i1.png",
+  "md5": "a79bf28550310c7ee0172ebfef7d7c1f",
+  "alt": "A four-row table headed \"Statement\", with a second column headed \"True or False\". The statements are: (i) A chairperson has a casting vote if a vote is tied at a meeting. (ii) A chairperson sends out the notice and agenda for all meetings. (iii) A secretary takes notes during the meeting and writes up the minutes of the meeting. (iv) A quorum is the minimum number of people who must be present for a meeting to take place.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2021-OL-paper-p04-i2": {
+  "src": "/exam-figures/business/markbank/business-2021-OL-paper-p04-i2.png",
+  "md5": "974efc60173f137d8ffb69c17ef75789",
+  "alt": "A table from the exam paper, row by row: Product | Source of Business Idea; James Dyson was frustrated with his own vacuum cleaner and took it apart to try to develop his own.; A Microsoft employee saw an opportunity to develop a rival product to the Sony PlayStation and developed the Xbox.; Brian Lee noticed the increasing popularity of healthy food on the go and developed his chain of take‐away healthy food restaurants..",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2021-OL-paper-p04-i3": {
+  "src": "/exam-figures/business/markbank/business-2021-OL-paper-p04-i3.png",
+  "md5": "7f5a3de6ba836abadd9677d66a94a54c",
+  "alt": "A two-column table headed \"Number Order\" and \"Steps\". Four stages of the management activity controlling are printed down the Steps column, deliberately out of sequence, one per row: \"Measure performance\", then \"Compare performance with standard\", then \"Set the standard\", then \"Take corrective action (if necessary)\".",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2021-OL-paper-p05-i2": {
+  "src": "/exam-figures/business/markbank/business-2021-OL-paper-p05-i2.png",
+  "md5": "646f9f1bc6c13cc966733355ff485956",
+  "alt": "A table from the exam paper. Columns: Name: Alison Chambers, €, €, €. Rows: Gross Pay, Deductions:, PAYE: (20% of €35,000) ‐Tax Credit, Net PAYE, PRSI: (4% of €35,000), USC: (3% of €35,000), Total Deductions:, Net Annual Take‐home Pay. 9 rows by 4 columns, as printed in the paper.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2021-OL-paper-p06-i1": {
+  "src": "/exam-figures/business/markbank/business-2021-OL-paper-p06-i1.png",
+  "md5": "429c5e02e66587f28e6e61ea976ccd56",
+  "alt": "A table from the exam paper, row by row: Gross Profit Percentage: (i) ___________ | Net Profit Percentage: (ii) _____________; Workings: x 100 = 1 | Workings: x 100 = 1.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2021-OL-paper-p07-i1": {
+  "src": "/exam-figures/business/markbank/business-2021-OL-paper-p07-i1.png",
+  "md5": "8413ef3134614170cc0e21f36d8696ef",
+  "alt": "A two-column matching table. Column 1, Business Terms: 1 Database, 2 Cloud Computing, 3 Data Controller, 4 Data Subject, 5 PowerPoint. Column 2, Explanations: A, the person in the business who decides how information is collected and used; B, a system of remote servers, hosted by the internet, which stores and manages information; C, a software package which allows the user to present information using sound, words and images; D, an electronic filing system used to store large amounts of information; E, a system which allows business to business communication without human interaction; F, the person whose personal information is stored by a business. Six explanations are given for five terms, so one explanation is left over.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2021-OL-paper-p07-i2": {
+  "src": "/exam-figures/business/markbank/business-2021-OL-paper-p07-i2.png",
+  "md5": "cd6b0edeb1827cae9e94cbb55108087b",
+  "alt": "An empty grid: a header row reading \"Business Term\" followed by the numbers 1, 2, 3, 4 and 5, above a single blank row labelled \"Explanation\". The terms themselves are not printed in this crop.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2021 Ordinary Level — © State Examinations Commission",
+  "blankAnswerGrid": true
+ },
+ "business-2021-OL-paper-p08-i0": {
+  "src": "/exam-figures/business/markbank/business-2021-OL-paper-p08-i0.png",
+  "md5": "63621b2549e07310c25b030cfe907035",
+  "alt": "A table from the exam paper. Columns: Strength, Weakness, Opportunity, Threat. Rows: Ryanair customers find it difficult to contact the airline., Wetter weather has impacted on the potato crop for Keogh’s crisps., A new housing development has been built near SuperValu, Loughrea., Apple have almost $200 billion in cash reserves.. 5 rows by 5 columns, as printed in the paper.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2021-OL-paper-p40-i2": {
+  "src": "/exam-figures/business/markbank/business-2021-OL-paper-p40-i2.png",
+  "md5": "ccdc7fee6d646e853067a92c5c0761cc",
+  "alt": "A table from the exam paper, row by row: International Accounts Q2 2020 Ireland’s economic interactions with the rest of the world; Goods | Services; Exports €56bn | Exports €52bn; Imports €23bn | Imports €53bn.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2021-OL-paper-p44-i1": {
+  "src": "/exam-figures/business/markbank/business-2021-OL-paper-p44-i1.png",
+  "md5": "054593d684b3a8b84f030e6aed4f42fa",
+  "alt": "A table from the exam paper. Columns: Cashflow Forecast Eden Hills Golf Club Ltd for the first 3 months of 2022. Rows: 2022, Total Receipts (A), Total Payments (B), Net Cash (A‐B), Opening Cash, Closing Cash. 8 rows by 5 columns, as printed in the paper.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2022-HL-paper-p03-i0": {
+  "src": "/exam-figures/business/markbank/business-2022-HL-paper-p03-i0.png",
+  "md5": "0247f32b6a059ba7cc981cc379f2a97d",
+  "alt": "A table from the exam paper, row by row: Column 1: Terms | Column 2: Explanations; 1. Gross Domestic Product | A A decrease in the demand for goods and services in an economy for two consecutive quarters.; 2. Economic Recession | B The price of one currency expressed in terms of another currency.; 3. Interest Rate | C The sustained percentage increase in the price of goods and services in an economy from one period to the next.; 4. Exchange Rate | D The cost of borrowing money from a financial institution.; 5. Unemployment Rate | E Measures the value of goods and services produced in a country.; F The percentage of people out of work but actively seeking employment..",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2022 Higher Level — © State Examinations Commission"
+ },
+ "business-2022-HL-paper-p03-i1": {
+  "src": "/exam-figures/business/markbank/business-2022-HL-paper-p03-i1.png",
+  "md5": "dc609bda9296f0ed2d62c33b529152ff",
+  "alt": "An empty five-column grid with the column headings 1, 2, 3, 4 and 5 — the matching grid for the question. No business terms or explanations are printed in the crop.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2022 Higher Level — © State Examinations Commission",
+  "blankAnswerGrid": true
+ },
+ "business-2022-HL-paper-p03-i2": {
+  "src": "/exam-figures/business/markbank/business-2022-HL-paper-p03-i2.png",
+  "md5": "efce8eaa60a1bc98daa36fd8f418d0d5",
+  "alt": "A five-row table listing five business abbreviations in bold down the left-hand side, one per row, in this order: WTO, EMU, IDA, FDI, CAP.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2022 Higher Level — © State Examinations Commission"
+ },
+ "business-2022-HL-paper-p05-i0": {
+  "src": "/exam-figures/business/markbank/business-2022-HL-paper-p05-i0.png",
+  "md5": "5a3c5b8b1ce1e55d208065e311645dfc",
+  "alt": "A blank email template — the printed field labels \"Recipients:\" and \"Subject:\" stacked at the top left, above one large empty message area. No message text is printed.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2022 Higher Level — © State Examinations Commission",
+  "blankAnswerGrid": true
+ },
+ "business-2022-HL-paper-p06-i0": {
+  "src": "/exam-figures/business/markbank/business-2022-HL-paper-p06-i0.png",
+  "md5": "36c736ab3bfb4f91a8a04bf1459bfe1b",
+  "alt": "A table headed Statement and True or False, with five numbered statements about meetings: 1. The treasurer is responsible for taking the minutes of a meeting. 2. A disadvantage of meetings is that they allow for clarification and feedback. 3. An extraordinary general meeting of shareholders must take place annually. 4. AOB is usually listed at the top of a meeting agenda. 5. A quorum refers to the number of members/shareholders who must be present before a meeting can take place.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2022 Higher Level — © State Examinations Commission"
+ },
+ "business-2022-HL-paper-p07-i0": {
+  "src": "/exam-figures/business/markbank/business-2022-HL-paper-p07-i0.png",
+  "md5": "31aa0757810983bd35a8723723b70114",
+  "alt": "A calculation table setting out four figures to be produced for the forecasted level of output, one per row: (a) Total Revenue at forecasted output, (b) Total Costs of Production at forecasted output and (c) Profit at forecasted output, each to be given in euro; and (d) the Breakeven Point (BEP) in units, which the paper notes does not require a breakeven chart to be drawn.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2022 Higher Level — © State Examinations Commission"
+ },
+ "business-2022-HL-paper-p08-i1": {
+  "src": "/exam-figures/business/markbank/business-2022-HL-paper-p08-i1.png",
+  "md5": "f6f779416b424c94484db0c363cd5d33",
+  "alt": "A table from the exam paper, row by row: Show Workings: PAYE | Show Workings: Tax Credits.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2022 Higher Level — © State Examinations Commission"
+ },
+ "business-2022-HL-paper-p08-i2": {
+  "src": "/exam-figures/business/markbank/business-2022-HL-paper-p08-i2.png",
+  "md5": "b846f4d57d691d0d195dba86313adb10",
+  "alt": "A table from the exam paper. Columns: Name: Kellie Murphy, €, €. Rows: Gross Pay, Deductions, PAYE, Tax Credits, PAYE Due. 6 rows by 4 columns, as printed in the paper.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2022 Higher Level — © State Examinations Commission"
+ },
+ "business-2022-HL-paper-p45-i1": {
+  "src": "/exam-figures/business/markbank/business-2022-HL-paper-p45-i1.png",
+  "md5": "4b09194371df8ded28a049d34f0c6558",
+  "alt": "A table from the exam paper, row by row: The Cleaning Crew | 2021 | 2020; Authorised Share Capital | €750,000 | €750,000; Issued Share Capital | €460,000 | €300,000; Long‐term Loan | €150,000 | €250,000; Retained Earnings | €140,000 | €120,000.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2022 Higher Level — © State Examinations Commission"
+ },
+ "business-2022-OL-paper-p03-i1": {
+  "src": "/exam-figures/business/markbank/business-2022-OL-paper-p03-i1.png",
+  "md5": "b9dea022ff9f009d7dadcdabb19767c2",
+  "alt": "A three-row table naming the three abbreviations the question asks you to write out in full: row 1 PLC, row 2 CEO, row 3 ICT.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2022-OL-paper-p03-i2": {
+  "src": "/exam-figures/business/markbank/business-2022-OL-paper-p03-i2.png",
+  "md5": "1141d316de402d7e7c74508344c8808b",
+  "alt": "Three black-and-white photographs side by side, labelled (i), (ii) and (iii). Photograph (i) shows a construction site: workers in hard hats and high-visibility jackets building concrete-block walls, with steel props and formwork bracing a partly built structure. Photograph (ii) shows a hair salon: a stylist blow-drying and brushing a young woman's long hair. Photograph (iii) shows farmland: a tractor seen from behind pulling a wide mounted implement across rows of a green crop, throwing up dust.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2022-OL-paper-p03-i3": {
+  "src": "/exam-figures/business/markbank/business-2022-OL-paper-p03-i3.png",
+  "md5": "194dd082db974ccec779ee0d78eb9f58",
+  "alt": "A table from the exam paper, row by row: Statement | Theory X or Theory Y; 1. All employees are self‐motivated and enjoy work.; 2. Employees are only motivated by money.; 3. Employees must be supervised closely.; 4. Employees can work on their own initiative..",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2022-OL-paper-p04-i1": {
+  "src": "/exam-figures/business/markbank/business-2022-OL-paper-p04-i1.png",
+  "md5": "bc55a7ab131e6a002df1b276de96f089",
+  "alt": "A table from the exam paper. Columns: Statement, Land, Labour, Capital, Enterprise. Rows: uses specialist equipment and machinery to produce their products., uses cocoa beans in the production of their chocolate bars., employs thousands of people in their plants in Ireland and the UK., was founded by the entrepreneur John Cadbury.. 5 rows by 5 columns, as printed in the paper.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2022-OL-paper-p05-i1": {
+  "src": "/exam-figures/business/markbank/business-2022-OL-paper-p05-i1.png",
+  "md5": "8f17a1bd6ed4d1cf87a09301e452ae79",
+  "alt": "The flag of the European Union, reproduced in greyscale: twelve five-pointed stars arranged in a circle on a plain rectangular field (blue in the original, grey here). No words, letters or country names appear on it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2022-OL-paper-p06-i0": {
+  "src": "/exam-figures/business/markbank/business-2022-OL-paper-p06-i0.png",
+  "md5": "23f349f62e41af73a38e9c402e935197",
+  "alt": "An empty three-row working frame with the grey row labels Formula, Workings and Answer; the Answer row is pre-printed with a blank line followed by \": 1\", indicating the answer is a ratio. No figures or other exam content are printed.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2022 Ordinary Level — © State Examinations Commission",
+  "blankAnswerGrid": true
+ },
+ "business-2022-OL-paper-p07-i1": {
+  "src": "/exam-figures/business/markbank/business-2022-OL-paper-p07-i1.png",
+  "md5": "c269b68f189ae42e86c032999d0e2ef3",
+  "alt": "A table from the exam paper, row by row: Explanation | Barrier to Trade; An import tax imposed on goods coming in from certain countries.; A complete ban on specific goods being imported into a country.; Money provided by the Government to help firms cover operating costs to keep prices competitive..",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2022-OL-paper-p07-i2": {
+  "src": "/exam-figures/business/markbank/business-2022-OL-paper-p07-i2.png",
+  "md5": "dc12ffdbace2acfab534b53312de9a9a",
+  "alt": "A table from the exam paper, row by row: Statement | True or False; A loading is a reduction on a basic insurance premium.; The greater the risk, the higher your insurance premium will be.; An actuary calculates insurance premium.; Indemnity means you cannot make a profit from insurance..",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2022-OL-paper-p08-i2": {
+  "src": "/exam-figures/business/markbank/business-2022-OL-paper-p08-i2.png",
+  "md5": "1a974534eafdb6df486ac6ab41cd82ee",
+  "alt": "Three black-and-white product photographs down a column headed \"Product\", against a second column headed \"Method of Production\". Top: a wrapped sliced pan of Irish Pride \"Big Toast\" bread, the packet carrying the slogan \"It's a matter of pride\". Middle: a tin of Batchelors Beans in tomato sauce, the label showing beans in sauce. Bottom: a three-tier white iced wedding cake, the tiers raised on pillars and edged with dark roses, topped with a bride-and-groom figurine.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2022-OL-paper-p08-i3": {
+  "src": "/exam-figures/business/markbank/business-2022-OL-paper-p08-i3.png",
+  "md5": "1a26738ef3609a55811ed39307422f8f",
+  "alt": "A table from the exam paper, row by row: Column 1: Business Terms | Column 2: Explanations; 1. Inflation | A The price of one currency expressed in terms of another currency.; 2. Interest rates | B The increase in the value of goods and services produced in one year compared to the last.; 3. Exchange rates | C The main source of revenue for the government.; 4. Unemployment rate | D The increase in the general level of prices over time.; 5. Taxation | E Percentage of the labour force that is not employed.; F The cost of borrowing money..",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2022-OL-paper-p08-i4": {
+  "src": "/exam-figures/business/markbank/business-2022-OL-paper-p08-i4.png",
+  "md5": "38aebe10ac034b96e9c929ca64ada3dc",
+  "alt": "An empty matching grid: a shaded header row reading Business Term, 1, 2, 3, 4, 5 above a single row labelled Explanation. None of the terms or explanations being matched appear in the crop.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2022 Ordinary Level — © State Examinations Commission",
+  "blankAnswerGrid": true
+ },
+ "business-2022-OL-paper-p40-i2": {
+  "src": "/exam-figures/business/markbank/business-2022-OL-paper-p40-i2.png",
+  "md5": "38d2612978b2bd07374bae025e9aad85",
+  "alt": "A small table headed \"International Accounts April 2021\". It gives two figures: Visible Exports €12,706m and Visible Imports €8,053m.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2022-OL-paper-p43-i1": {
+  "src": "/exam-figures/business/markbank/business-2022-OL-paper-p43-i1.png",
+  "md5": "b3a52930e6fa572d771efbd3f24d42b5",
+  "alt": "A two-row table of net profit figures for five years. The shaded top row is headed \"Year\" and runs 2017, 2018, 2019, 2020, 2021. The row beneath, labelled \"Net Profit\", gives €35,000 for 2017, €45,000 for 2018, €40,000 for 2019, €55,000 for 2020 and €60,000 for 2021 — an overall rise, with a dip in 2019 before recovering.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2023-HL-paper-p03-i1": {
+  "src": "/exam-figures/business/markbank/business-2023-HL-paper-p03-i1.png",
+  "md5": "7a36a4856e35d930a2dc1328a41be808",
+  "alt": "A five-row table listing five business abbreviations, one per row, in this order: TQM, ISME, JIT, EDI, ROI.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2023 Higher Level — © State Examinations Commission"
+ },
+ "business-2023-HL-paper-p04-i0": {
+  "src": "/exam-figures/business/markbank/business-2023-HL-paper-p04-i0.png",
+  "md5": "549049fe74ab5a8b3ad2dd71321a7583",
+  "alt": "A table from the exam paper, row by row: Visible Exports €70bn Invisible Imports €40bn Total Exports €100bn Total Imports €90bn | Workings Balance of Trade: Workings Balance of Payments:; Answer | Surplus or Deficit; Balance of Trade | €; Balance of Payments | €.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2023 Higher Level — © State Examinations Commission"
+ },
+ "business-2023-HL-paper-p05-i0": {
+  "src": "/exam-figures/business/markbank/business-2023-HL-paper-p05-i0.png",
+  "md5": "e47ed3e9e93666f60880abb0014fea6d",
+  "alt": "A table from the exam paper, row by row: Column 1: Institutions | Column 2: Explanations; 1 European Central Bank | A Directly elected by citizens of all member states of the European Union (EU).; 2 European Court of Auditors | B Decides on disputes between member states, EU institutions, businesses and individuals.; 3 European Parliament | C Key decision‐making body in the EU, meetings attended by relevant ministers of each state.; 4 Council of the European Union | D Manages the euro currency and the EU’s monetary policy.; 5 European Commission | E Audits the spending of the EU budget and reports on EU finances.; F Responsible for the day to day management of the EU and proposes new EU Laws..",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2023 Higher Level — © State Examinations Commission"
+ },
+ "business-2023-HL-paper-p05-i1": {
+  "src": "/exam-figures/business/markbank/business-2023-HL-paper-p05-i1.png",
+  "md5": "1ab7cbe375fd854b441e3bea92dce7fc",
+  "alt": "An empty answer grid: five blank cells under the headings 1, 2, 3, 4 and 5. Nothing else is printed.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2023 Higher Level — © State Examinations Commission",
+  "blankAnswerGrid": true
+ },
+ "business-2023-HL-paper-p07-i0": {
+  "src": "/exam-figures/business/markbank/business-2023-HL-paper-p07-i0.png",
+  "md5": "6e01b6b96bf6be9d232144134b42408c",
+  "alt": "A table from the exam paper, row by row: €; Closing Stock | 14,000; Current Assets | 93,200; Current Liabilities | 72,000.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2023 Higher Level — © State Examinations Commission"
+ },
+ "business-2023-HL-paper-p07-i1": {
+  "src": "/exam-figures/business/markbank/business-2023-HL-paper-p07-i1.png",
+  "md5": "a08d73bf918bd161fd42dc2bde476760",
+  "alt": "An empty three-part answer template with the stacked labels Formula, Workings and Answer down the left-hand side. None of the figures for the ratio calculation appear in the crop.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2023 Higher Level — © State Examinations Commission",
+  "blankAnswerGrid": true
+ },
+ "business-2023-HL-paper-p08-i0": {
+  "src": "/exam-figures/business/markbank/business-2023-HL-paper-p08-i0.png",
+  "md5": "886722c645c3550045d5677146b18eaf",
+  "alt": "A five-row table of statements with a column headed \"True/False\". The statements are: 1. The Aviva Stadium is an example of a company using the Public Relations method known as Celebrity Endorsements. 2. McDonalds selling a rice burger and teriyaki burger in Japan is an example of the need to adapt the Global Product element of the marketing mix. 3. An impact of moving from job production to batch production is that the business may lose their Unique Selling Point. 4. Capital Acquisitions Tax is a tax on the profits made on the sale of assets. 5. The Q Mark is a quality standard awarded by Excellence Ireland Quality Association.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2023 Higher Level — © State Examinations Commission"
+ },
+ "business-2023-HL-paper-p49-i1": {
+  "src": "/exam-figures/business/markbank/business-2023-HL-paper-p49-i1.png",
+  "md5": "f6f4874d101a2ebb052f663a0b69416f",
+  "alt": "A table from the exam paper, row by row: Centre Parcs Centre Parcs Longford features 400 acres of beautiful forest, swimming pool, a range of restaurants, activities and accommodation types..",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2023 Higher Level — © State Examinations Commission"
+ },
+ "business-2023-HL-paper-p49-i2": {
+  "src": "/exam-figures/business/markbank/business-2023-HL-paper-p49-i2.png",
+  "md5": "548120d3ac43222ee8590b58c4b4f2d5",
+  "alt": "A table from the exam paper, row by row: PAYE; 20% on the first €40,000 | 40% on the balance of his gross income; TAX CREDITS; Single Person Tax Credit €1,700 | PAYE Tax Credit €1,700 | Dependent Relative Tax Credit €245; USC; 0.5% up to €12,012 | 2% on the next €9,281 | 4.5% on the balance; PRSI; Tommy pays employee PRSI at 4% of his gross income.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2023 Higher Level — © State Examinations Commission"
+ },
+ "business-2023-HL-paper-p50-i2": {
+  "src": "/exam-figures/business/markbank/business-2023-HL-paper-p50-i2.png",
+  "md5": "8e295a8b05a266aa22b2f466b0fa3ec7",
+  "alt": "A table from the exam paper, row by row: EPIK Media EPIK Media produce, shoot and package behind the scenes content for movies, tv series and events. The business has worked on movies such as ‘Jurassic Park Dominion’ and ‘The Banshees of Inisherin’..",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2023 Higher Level — © State Examinations Commission"
+ },
+ "business-2023-OL-paper-p03-i0": {
+  "src": "/exam-figures/business/markbank/business-2023-OL-paper-p03-i0.png",
+  "md5": "428e0440bf9ede169545bfedc2157f6b",
+  "alt": "A three-row table. The left column prints one business abbreviation per row, in this order: VAT, then ECB, then DIRT. The right column is where the meaning of each set of letters is written.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2023-OL-paper-p03-i1": {
+  "src": "/exam-figures/business/markbank/business-2023-OL-paper-p03-i1.png",
+  "md5": "12cdc3f6de2a69be6a6b1ec9e8832713",
+  "alt": "A table headed Action and \"Controller or Facilitator\", listing four management actions: (i) The manager gives orders and expects them to be followed without question. (ii) The manager encourages employee empowerment. (iii) Employees are trusted to carry out their duties without constant supervision. (iv) The manager makes all the decisions and does not consult with employees.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2023-OL-paper-p04-i2": {
+  "src": "/exam-figures/business/markbank/business-2023-OL-paper-p04-i2.png",
+  "md5": "c7a85cdef5fccf19d7235db6f35a0c28",
+  "alt": "A table headed \"Statement\" and \"True or False\" listing four statements about forms of business ownership: (i) A sole trader has unlimited liability. (ii) A public limited company can have a maximum of 149 shareholders. (iii) A co-operative is owned and controlled by the government. (iv) A partnership business can have 2 - 20 partners.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2023-OL-paper-p06-i1": {
+  "src": "/exam-figures/business/markbank/business-2023-OL-paper-p06-i1.png",
+  "md5": "021a2140cc2511f0541bb24070e74ce4",
+  "alt": "Two side-by-side images to be matched to pricing strategies. Image (i), on the left, is a transport fare chart: three rows — Adult, Senior, Child — against three columns — One way, Return, 10 trips. Adult fares are €15, €20 and €85; Senior fares are €11, €15 and €65; Child fares are €5 and €10, with no 10-trip price shown. Image (ii), on the right, is a photograph of a black Apple iPhone 13 shown front and back, captioned \"iPhone 13 — 6.1-inch display from €929\".",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2023-OL-paper-p07-i0": {
+  "src": "/exam-figures/business/markbank/business-2023-OL-paper-p07-i0.png",
+  "md5": "74d4c1105bd0dac02c5f89b3ca412c49",
+  "alt": "A table from the exam paper. Columns: Statement, Common Agricultural Policy (CAP), Common Fisheries Policy (CFP), EU Social Charter, Competition Policy. Rows: EU citizens have the right to live and work in any EU country., Farmers receive Single Farm Payments to help supplement their income., All business mergers and takeovers are monitored., The aim is to preserve fish stocks in EU waters.. 5 rows by 5 columns, as printed in the paper.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2023-OL-paper-p07-i1": {
+  "src": "/exam-figures/business/markbank/business-2023-OL-paper-p07-i1.png",
+  "md5": "b4cb7829d4cc8b38a9c40faaa2ee2a6f",
+  "alt": "A table from the exam paper, row by row: Explanation | State Agency; Promotes Irish tourism industry around the world.; Attracts multinational companies to set up in Ireland through various incentives.; Assists entrepreneurs in setting up their business through advice, grant aid etc..",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2023-OL-paper-p08-i0": {
+  "src": "/exam-figures/business/markbank/business-2023-OL-paper-p08-i0.png",
+  "md5": "8299e80f913256f53704ee7bb7cd60e8",
+  "alt": "A table from the exam paper. Columns: January €, February €, March €. Rows: Total Receipts, Total Payments, Net Cash, Opening Cash, Closing Cash. 6 rows by 4 columns, as printed in the paper.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2023-OL-paper-p08-i1": {
+  "src": "/exam-figures/business/markbank/business-2023-OL-paper-p08-i1.png",
+  "md5": "3cf40995881f9325f3e7d88d727210a0",
+  "alt": "An empty two-row box, the upper row labelled \"Workings:\" and the lower row labelled \"Answer:\". No information is printed in it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2023 Ordinary Level — © State Examinations Commission",
+  "blankAnswerGrid": true
+ },
+ "business-2023-OL-paper-p09-i0": {
+  "src": "/exam-figures/business/markbank/business-2023-OL-paper-p09-i0.png",
+  "md5": "d4a4937e6d91ef025017186d0b59dc06",
+  "alt": "A table from the exam paper, row by row: Column 1: Business Terms | Column 2: Explanations; 1. Leasing | A Long-term fixed interest loan.; 2. Bank Overdraft | B Business profits re-invested in the firm.; 3. Trade Credit | C Renting an asset over a one to five-year period.; 4. Debenture | D Allows the account holder to withdraw more money than is in the account.; 5. Share Capital | E Money provided by investors in return for part ownership/share of profits.; F Buying stock now and paying at a later date..",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2023-OL-paper-p09-i1": {
+  "src": "/exam-figures/business/markbank/business-2023-OL-paper-p09-i1.png",
+  "md5": "8943135ce2771be68f62a81f28314771",
+  "alt": "A blank matching grid: a shaded row labelled \"Business Term\" with the numbers 1, 2, 3, 4, 5 across it, and an empty row labelled \"Explanation\" underneath. No business terms or explanations are printed inside it — those are listed above it on the page.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2023 Ordinary Level — © State Examinations Commission",
+  "blankAnswerGrid": true
+ },
+ "business-2023-OL-paper-p46-i2": {
+  "src": "/exam-figures/business/markbank/business-2023-OL-paper-p46-i2.png",
+  "md5": "096cf1a695fa3a2334e43b959e031336",
+  "alt": "A table from the exam paper, row by row: I-SPY is an online sportwear business based in Ireland which sells a range of yoga and fitness wear. The business was set up by Louise Egan along with her mother Paulette. They joined their passions for fitness, lifestyle and yoga to create the idea for their business. Adapted from ispy.com.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2024-HL-paper-p03-i0": {
+  "src": "/exam-figures/business/markbank/business-2024-HL-paper-p03-i0.png",
+  "md5": "c190b90f7618e4e07d76406a0fef1c5e",
+  "alt": "A table from the exam paper, row by row: Column 1: Terms | Column 2: Explanations; 1. Partnership | A Two businesses join together to form a new legal entity.; 2. Co‐operative | B A business with a minimum of 2 and a maximum of 20 owners.; 3. Franchise | C A business owned, financed and controlled by the government.; 4. Merger | D A business set up, owned and controlled by its members for their mutual benefit.; 5. Takeover | E A business taking control of another business by purchasing the majority of its voting shares.; F The right to use a business model in exchange for a fee and a percentage of profits..",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2024 Higher Level — © State Examinations Commission"
+ },
+ "business-2024-HL-paper-p03-i1": {
+  "src": "/exam-figures/business/markbank/business-2024-HL-paper-p03-i1.png",
+  "md5": "bf723bae71f5e399db886bcdd5a8de1a",
+  "alt": "An empty single-row answer grid under five grey column headings numbered 1, 2, 3, 4 and 5. No exam content is printed in it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2024 Higher Level — © State Examinations Commission",
+  "blankAnswerGrid": true
+ },
+ "business-2024-HL-paper-p03-i2": {
+  "src": "/exam-figures/business/markbank/business-2024-HL-paper-p03-i2.png",
+  "md5": "6762dcdd6be43be1a6658400c0511f76",
+  "alt": "A five-row table listing one business abbreviation per row to be written out in full: IDA, CEO, ECB, CRO and WTO.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2024 Higher Level — © State Examinations Commission"
+ },
+ "business-2024-HL-paper-p05-i2": {
+  "src": "/exam-figures/business/markbank/business-2024-HL-paper-p05-i2.png",
+  "md5": "76b6dd13dc365b9bcf1c3059c5780e19",
+  "alt": "A five-row table headed Statement and True or False. Each row pairs a company logo with a claim. 1, Johnson & Johnson wordmark: \"An example of a tactical plan is pharmaceutical firm Johnson and Johnson switching to source 100% of their electricity needs from renewable sources within the next 18 months.\" 2, the Netflix \"N\" logo: \"Netflix offering 52 weeks of paid parental leave to staff is an example of a business meeting their social responsibilities to their suppliers.\" 3, an RTÉ sign photographed on a building: \"State broadcaster RTE announcing targets to be achieved over the next five years is an example of a contingency plan.\" 4, the DHL logo: \"By 2025, DHL aims to have more than 500 gas powered vehicles in its fleet. This is an example of a mission statement.\" 5, the Nintendo logo: \"Nintendo planning for a new product launch in the next four weeks is an example of an operational plan.\"",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2024 Higher Level — © State Examinations Commission"
+ },
+ "business-2024-HL-paper-p06-i0": {
+  "src": "/exam-figures/business/markbank/business-2024-HL-paper-p06-i0.png",
+  "md5": "8be20084ce993743add2c6f319c01cc1",
+  "alt": "An empty box divided into two columns, headed \"Workings\" and \"Answer\". No information is printed in it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2024 Higher Level — © State Examinations Commission",
+  "blankAnswerGrid": true
+ },
+ "business-2024-HL-paper-p07-i0": {
+  "src": "/exam-figures/business/markbank/business-2024-HL-paper-p07-i0.png",
+  "md5": "c04dd767f7adcbd70f7c1ce92ec99a69",
+  "alt": "An empty two-column table with shaded headings \"Public Relations Method\" and \"Examples\", and three numbered rows (1., 2., 3.). Every cell is blank — no methods or examples are printed.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2024 Higher Level — © State Examinations Commission",
+  "blankAnswerGrid": true
+ },
+ "business-2024-HL-paper-p48-i0": {
+  "src": "/exam-figures/business/markbank/business-2024-HL-paper-p48-i0.png",
+  "md5": "ba560743cec35fc12603c3497ce5b176",
+  "alt": "A table from the exam paper. Columns: 2024, Oct €, Nov €, Dec €, Total €. Rows: Receipts, Payments, Net Cash, Opening Cash, Closing Cash. 6 rows by 5 columns, as printed in the paper.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2024 Higher Level — © State Examinations Commission"
+ },
+ "business-2024-OL-paper-p03-i1": {
+  "src": "/exam-figures/business/markbank/business-2024-OL-paper-p03-i1.png",
+  "md5": "f84ba385141e5ea37506a6ecf9103a92",
+  "alt": "A three-row table listing three business abbreviations, one per row, in this order: ATM, DIRT, APR.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2024-OL-paper-p04-i2": {
+  "src": "/exam-figures/business/markbank/business-2024-OL-paper-p04-i2.png",
+  "md5": "bd5bb59a208a1d64303b250017f1c932",
+  "alt": "A table from the exam paper. Columns: Statement, Merger, Franchise, Takeover, Strategic Alliance. Rows: allows other business owners to use their business model and logo in return for a fee and a percentage of profits., temporarily joined forces with when they released, and joined their businesses together permanently to form a new company., purchased over 51% of the shares of Costa Coffee to become its new owner.. 5 rows by 5 columns, as printed in the paper.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2024-OL-paper-p05-i1": {
+  "src": "/exam-figures/business/markbank/business-2024-OL-paper-p05-i1.png",
+  "md5": "37cb2b56ae79135c40414d2365c71359",
+  "alt": "A table from the exam paper, row by row: Statement | True or False; Variable costs remain the same regardless of how many units of a product are produced.; The Breakeven point is the point at which revenue and costs are equal.; Rent is an example of a fixed cost.; The margin of safety is forecast sales minus the breakeven point..",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2024-OL-paper-p06-i3": {
+  "src": "/exam-figures/business/markbank/business-2024-OL-paper-p06-i3.png",
+  "md5": "a458c7a77aa20b838998589902fa4ac4",
+  "alt": "A table from the exam paper. Columns: Name: Ian Kenny, €, €, €. Rows: Gross Pay, Deductions:, PAYE: (20% of €38,000) ‐Tax Credit, Net PAYE, PRSI: (4% of €38,000), USC: (3% of €38,000), Total Deductions:, Net Annual Take‐home Pay. 9 rows by 4 columns, as printed in the paper.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2024-OL-paper-p06-i4": {
+  "src": "/exam-figures/business/markbank/business-2024-OL-paper-p06-i4.png",
+  "md5": "3d60881aab8fa9e2fad5fa8dadd58768",
+  "alt": "A table from the exam paper, row by row: Explanation | Agency/Organisation; Assists existing Irish business in expanding into foreign markets; Provides training, mentoring and grant aid to entrepreneurs setting up their business; Attracts Multinational companies and global firms to set up in Ireland..",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2024-OL-paper-p07-i1": {
+  "src": "/exam-figures/business/markbank/business-2024-OL-paper-p07-i1.png",
+  "md5": "b800444a866da3b942357ee421df773c",
+  "alt": "A table from the exam paper. Columns: Explanation, The Judge orders the contract to be completed, The contract is cancelled, A sum of money is paid to the other party. Rows: Remedy. 2 rows by 4 columns, as printed in the paper.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2024-OL-paper-p08-i0": {
+  "src": "/exam-figures/business/markbank/business-2024-OL-paper-p08-i0.png",
+  "md5": "ca40e74e281bdf04f115246534980dd7",
+  "alt": "A table headed \"Statement\" and \"Public or Private\" listing three statements about limited companies: (i) The company can raise capital by selling shares to the public on the stock market. (ii) This company can have a maximum of 149 shareholders. (iii) PLC must be written after the company name.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2024-OL-paper-p08-i1": {
+  "src": "/exam-figures/business/markbank/business-2024-OL-paper-p08-i1.png",
+  "md5": "f473dd89c0c634da1c98a12880759206",
+  "alt": "A table from the exam paper, row by row: Column 1: Business Terms | Column 2: Explanations; 1. Tactical Plan | A Plan that covers the day‐to‐day running of the business.; 2. Operational Plan | B A long‐term plan for the business.; 3. Contingency Plan | C Setting out the number and type of staff required in order to achieve the organisation’s goal.; 4. Strategic Plan | D A plan which sets out the overall vision/goal of the organisation.; 5. Mission Statement | E Short‐term plan for a business.; F Back‐up plan to cope with unforeseen events or emergencies..",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2024-OL-paper-p08-i2": {
+  "src": "/exam-figures/business/markbank/business-2024-OL-paper-p08-i2.png",
+  "md5": "8a32d886fa377451a56af7e1891775a7",
+  "alt": "An empty matching grid: a shaded header row reading Business Term, 1, 2, 3, 4, 5 above a single row labelled Explanation. None of the terms or explanations being matched appear in the crop.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2024 Ordinary Level — © State Examinations Commission",
+  "blankAnswerGrid": true
+ },
+ "business-2025-HL-paper-p03-i0": {
+  "src": "/exam-figures/business/markbank/business-2025-HL-paper-p03-i0.png",
+  "md5": "1be065ee63a60c780476177f974d95e7",
+  "alt": "A matching table with two lists. Column 1: Terms, numbered 1 to 5 — 1 European Central Bank, 2 European Court of Auditors, 3 European Parliament, 4 Council of the European Union, 5 European Commission. Column 2: Explanations, lettered A to F — A: Directly elected by citizens of all member states of the European Union. B: Decides on disputes between member states, EU institutions, businesses and individuals. C: Key decision-making body in the EU, meetings attended by relevant ministers of each state. D: Manages the euro currency and the EU's monetary policy. E: Audits the spending of the EU budget and reports on EU finances. F: Responsible for the day to day management of the EU and proposes new EU Laws. There are six explanations for five terms, so one explanation is not used.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2025 Higher Level — © State Examinations Commission"
+ },
+ "business-2025-HL-paper-p03-i1": {
+  "src": "/exam-figures/business/markbank/business-2025-HL-paper-p03-i1.png",
+  "md5": "921efc60738f102409be49a911465509",
+  "alt": "A blank answer strip: one row of five shaded cells numbered 1, 2, 3, 4, 5 with an empty cell under each. No terms or explanations are printed in it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2025 Higher Level — © State Examinations Commission",
+  "blankAnswerGrid": true
+ },
+ "business-2025-HL-paper-p04-i0": {
+  "src": "/exam-figures/business/markbank/business-2025-HL-paper-p04-i0.png",
+  "md5": "49fefad7a7e69ba9747b4737f37524bc",
+  "alt": "A five-row table listing five business abbreviations, one per row, in this order: DAC, MNC, IBEC, ICTU, CAP.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2025 Higher Level — © State Examinations Commission"
+ },
+ "business-2025-HL-paper-p05-i0": {
+  "src": "/exam-figures/business/markbank/business-2025-HL-paper-p05-i0.png",
+  "md5": "1eb07ca73e4c257b0747b4258900cbe0",
+  "alt": "A table from the exam paper, row by row: 2024; Authorised Share Capital | €900,000; Issued Share Capital | €550,000; Long Term Loan | €300,000; Reserves/Retained Earnings | €50,000.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2025 Higher Level — © State Examinations Commission"
+ },
+ "business-2025-HL-paper-p48-i0": {
+  "src": "/exam-figures/business/markbank/business-2025-HL-paper-p48-i0.png",
+  "md5": "88b780395526aa3bae6ed5bf2291db1e",
+  "alt": "A table from the exam paper, row by row: PAYE; 20% on the first €44,000 | 40% on the balance of her gross income.; Tax Credits; Single person Tax Credit €1,875 Employee Tax Credit €2,000; USC; 0.5% on the first €12,012 2% on the next €9,281 3% on the balance; PRSI; 4% of her gross income.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2025 Higher Level — © State Examinations Commission"
+ },
+ "business-2025-HL-paper-p49-i1": {
+  "src": "/exam-figures/business/markbank/business-2025-HL-paper-p49-i1.png",
+  "md5": "24b873a7a312b99e8040c3793f703153",
+  "alt": "A table from the exam paper, row by row: Glanbia acquired The Optimum Nutrition brand in 2008. This was part of a shift in focus towards consumer nutrition products..",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2025 Higher Level — © State Examinations Commission"
+ },
+ "business-2025-HL-paper-p50-i1": {
+  "src": "/exam-figures/business/markbank/business-2025-HL-paper-p50-i1.png",
+  "md5": "567cca078382d489140e1777519b6e0b",
+  "alt": "A table from the exam paper, row by row: Forecast Output (Sales) Selling Price per unit Fixed Costs Variable Costs per unit | 200,000 units €10 €600,000 €5.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Business 2025 Higher Level — © State Examinations Commission"
+ },
+ "business-2025-OL-paper-p03-i0": {
+  "src": "/exam-figures/business/markbank/business-2025-OL-paper-p03-i0.png",
+  "md5": "7f6368d166ee47727114afbb92cc0c62",
+  "alt": "A three-row table listing one business abbreviation per row to be written out in full: EGM, LEO and GDP.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2025-OL-paper-p03-i1": {
+  "src": "/exam-figures/business/markbank/business-2025-OL-paper-p03-i1.png",
+  "md5": "47da83cd53cca701829d4be81e238a8a",
+  "alt": "A four-row table headed Statement and True or False, listing statements about motivation theory. (i) \"Safety/security needs relate to the need for food and shelter.\" (ii) \"Esteem needs relate to being successful and achieving a high status.\" (iii) \"Maslow believed that when one need is satisfied, the next one becomes the main motivator.\" (iv) \"McGregor's Theory Y managers believe that most workers dislike work.\"",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2025-OL-paper-p05-i1": {
+  "src": "/exam-figures/business/markbank/business-2025-OL-paper-p05-i1.png",
+  "md5": "352cd4c944b2a703105093b56bed1fc2",
+  "alt": "A table headed \"Statement\" with three further columns headed \"Job\", \"Batch\" and \"Mass\". The statements are: (i) Produced by robots on an automated assembly line. (ii) Each product has a unique design. (iii) Produces a limited quantity of identical products.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2025-OL-paper-p05-i2": {
+  "src": "/exam-figures/business/markbank/business-2025-OL-paper-p05-i2.png",
+  "md5": "68199fc041173429bef7007b02ff6d5c",
+  "alt": "Three greyscale photographs side by side, labelled (i), (ii) and (iii). (i) A woman footballer in an Ireland jersey, holding the front of the shirt out towards the camera; the shirt carries a large \"sky\" wordmark across the chest and a shamrock crest, and a huge \"IRELAND FOOTBALL\" badge — a shamrock inside a ring of lettering — fills the wall behind her. (ii) A Papa John's advertisement: the Papa John's logo above the headline \"TWO FOR TUESDAYS\" and, in very large type, \"BUY 1 GET 1 FREE\", over a photograph of a cheese-topped pizza with a slice being lifted; the small print reads \"BUY A LARGE PIZZA & GET ANOTHER LARGE PIZZA FREE. Offer is valid on all Tuesday's for a limited time only.\" (iii) A man and woman standing outside the porch of a house, shaking hands with a smiling woman who is holding a folder under her arm; a board reading \"HOUSE FOR SALE\" with a \"SOLD\" strip across it stands in the foreground.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2025-OL-paper-p06-i2": {
+  "src": "/exam-figures/business/markbank/business-2025-OL-paper-p06-i2.png",
+  "md5": "d2253b6a73b411a94aaaa1b94cc0c351",
+  "alt": "A table from the exam paper. Columns: 2025, January, February, March, Total. Rows: Total Receipts (A), Total Payments (B), Net Cash (A-B), Opening Cash, Closing Cash, Workings:. 8 rows by 5 columns, as printed in the paper.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2025-OL-paper-p07-i0": {
+  "src": "/exam-figures/business/markbank/business-2025-OL-paper-p07-i0.png",
+  "md5": "b54b6754109c1dbe268012cedb5ab138",
+  "alt": "A table from the exam paper, row by row: Explanation | Type of plan; (i) A back-up plan to deal with unforeseen circumstances or emergencies.; (ii) A long-term plan devised by senior management to achieve the overall goal of the business.; (iii) A short-term plan for the day-to-day running of the business..",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2025-OL-paper-p08-i0": {
+  "src": "/exam-figures/business/markbank/business-2025-OL-paper-p08-i0.png",
+  "md5": "da642b7847d46c2abe3858cedec90d8f",
+  "alt": "A table headed Exports and \"Visible or Invisible\", listing four export examples: (i) Kerrygold butter sold in France. (ii) The Irish band, The Script, playing at a concert in Spain. (iii) American fans coming to Croke Park to watch the All-Ireland Hurling Final. (iv) Irish beef exported to China.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2025-OL-paper-p08-i1": {
+  "src": "/exam-figures/business/markbank/business-2025-OL-paper-p08-i1.png",
+  "md5": "df0e3105f965f6e414fda937c3ba2079",
+  "alt": "A table from the exam paper, row by row: Column 1: Business Terms | Column 2: Explanations; 1. Inflation | A The cost of one currency expressed in terms of another.; 2. Unemployment Rate | B Compulsory payments made to the government from individuals and business.; 3. Exchange Rate | C The rise in the average price of goods and services.; 4. Taxation | D The cost of borrowing money.; 5. Interest Rate | E Money given by the government that does not have to be repaid.; F The percentage of the labour force that does not have a job..",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2025-OL-paper-p08-i2": {
+  "src": "/exam-figures/business/markbank/business-2025-OL-paper-p08-i2.png",
+  "md5": "66f81d6f1ae1a38990a3fdadc88394bb",
+  "alt": "An empty grid: a header row reading \"Business Term\" followed by the numbers 1 to 5, above a blank row labelled \"Explanation\". None of the terms appear in this crop — it is ruled space only.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2025 Ordinary Level — © State Examinations Commission",
+  "blankAnswerGrid": true
+ },
+ "business-2025-OL-paper-p38-i2": {
+  "src": "/exam-figures/business/markbank/business-2025-OL-paper-p38-i2.png",
+  "md5": "763501d59cf60a12980599a742a5e6ee",
+  "alt": "A two-panel section header. On the left, a grey word-collage graphic in which the words \"consumer protection\" stand out in large type over smaller overlapping words including \"positive\", \"success\" and \"act\". On the right, the bold heading \"Sale of Goods and Supply of Services Act 1980\", naming the legislation the question is about.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2025-OL-paper-p39-i1": {
+  "src": "/exam-figures/business/markbank/business-2025-OL-paper-p39-i1.png",
+  "md5": "0e71464f36f05297ba620ad560c248a7",
+  "alt": "A table from the exam paper, row by row: Over half of the total cost of petrol and diesel goes to the government; PETROL | DIESEL; 31.3% | Excise Duty | 26.6%; 18.7% | VAT | 18.7%; 8.5% | Carbon Tax | 10.2%; 1.1% | Nora Levy | 1.1%; 0.7% | Better Energy Charge | 0.7%; 39.7% | Fuel Supply Costs / Other | 42.7%; Adapted from rte.ie.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2025-OL-paper-p44-i1": {
+  "src": "/exam-figures/business/markbank/business-2025-OL-paper-p44-i1.png",
+  "md5": "fb1fa2c12a57a0e41d14fde27720d56c",
+  "alt": "A table from the exam paper, row by row: Annual Gross Pay | €46,000; PAYE | 20% on the first €42,000 and 40% on the remainder; Annual Tax Credit | €3,750; PRSI | 4.1%; USC | 3.0%.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "business-2025-OL-paper-p04-i0": {
+  "src": "/exam-figures/business/markbank/business-2025-OL-paper-p04-i0.png",
+  "md5": "227a34c6f6605d3cc843627f653eed8d",
+  "alt": "The break-even chart printed in the paper, drawn as a line graph inside a plain box. Title above the plot: \"Break-Even Chart for Rodgers Ltd\". The vertical axis is labelled \"Sales € m\" and runs 0 to 1.2 in steps of 0.2; the horizontal axis is labelled \"Output in Units\" and is marked 400 to 2,400 in steps of 400. Three black lines are drawn: one horizontal, held at 0.2 right across the chart; one rising steeply from the origin; and a shallower one rising from 0.2 on the vertical axis. The two rising lines cross a little before 800 units, at about 0.36. Four empty rectangular boxes are printed for the candidate to write labels in, each lettered in bold — A inside the plot to the left of the point where the two rising lines cross, B at the top right where the steeper line ends, C on the right where the shallower line ends, and D on the right, level with the horizontal line.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Break-Even Point (BEP)"
+   },
+   {
+    "letter": "B",
+    "meaning": "Total Revenue (TR)"
+   },
+   {
+    "letter": "C",
+    "meaning": "Total Cost (TC)"
+   },
+   {
+    "letter": "D",
+    "meaning": "Fixed Cost (FC)"
+   }
+  ],
+  "questionRef": "2025 OL Section 1 Q4",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Business 2025 Ordinary Level — © State Examinations Commission"
  }
 }

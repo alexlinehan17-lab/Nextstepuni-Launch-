@@ -6209,7 +6209,7 @@ export const CARDS: SecCard[] = [
                 "B"
           ]
     },
-    labelKey: [{"letter":"A","meaning":"left — a fawn/tan cow grazing head-down, fine-boned and angular with a large well-filled udder and a pale tail switch","askedInThisQuestion":true},{"letter":"B","meaning":"right — a large white-cream cow standing facing the camera, deep and thick through the shoulder and hindquarter with a broad frame","askedInThisQuestion":true}],
+    labelKey: [{"letter":"A","meaning":"left — a fawn/tan cow grazing head-down, fine-boned and angular with a large well-filled udder and a pale tail switch","askedInThisQuestion":false},{"letter":"B","meaning":"right — a large white-cream cow standing facing the camera, deep and thick through the shoulder and hindquarter with a broad frame","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, kind: "diagram",

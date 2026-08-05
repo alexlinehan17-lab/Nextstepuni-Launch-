@@ -7895,7 +7895,7 @@ export const CARDS: SecCard[] = [
                 "Z"
           ]
     },
-    labelKey: [{"letter":"X","meaning":"Bud","askedInThisQuestion":true},{"letter":"Y","meaning":"Parent cell","askedInThisQuestion":true},{"letter":"Z","meaning":"Nucleus","askedInThisQuestion":false}],
+    labelKey: [{"letter":"X","meaning":"Bud","askedInThisQuestion":true},{"letter":"Y","meaning":"Parent cell","askedInThisQuestion":false},{"letter":"Z","meaning":"Nucleus","askedInThisQuestion":false}],
   } as SecCard,
   {
     ...base, kind: "diagram",
@@ -8216,7 +8216,7 @@ export const CARDS: SecCard[] = [
                 "Embryo"
           ]
     },
-    labelKey: [{"letter":"Cotyledon","meaning":"Cotyledon — a labelled structure that contains food","askedInThisQuestion":true},{"letter":"Endosperm","meaning":"Endosperm — a labelled structure that contains food","askedInThisQuestion":true},{"letter":"Embryo","meaning":"Embryo — the labelled part that consists of a radicle and plumule","askedInThisQuestion":true}],
+    labelKey: [{"letter":"Cotyledon","meaning":"Cotyledon — a labelled structure that contains food","askedInThisQuestion":false},{"letter":"Endosperm","meaning":"Endosperm — a labelled structure that contains food","askedInThisQuestion":true},{"letter":"Embryo","meaning":"Embryo — the labelled part that consists of a radicle and plumule","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, kind: "diagram",
@@ -8671,7 +8671,7 @@ export const CARDS: SecCard[] = [
                 "D"
           ]
     },
-    labelKey: [{"letter":"A","meaning":"The control dish — it has all three factors necessary for germination","askedInThisQuestion":false},{"letter":"B","meaning":"The dish in which the factor being investigated is temperature","askedInThisQuestion":true},{"letter":"C","meaning":"The dish in the anaerobic jar; the jar removes oxygen from the air","askedInThisQuestion":true},{"letter":"D","meaning":"The other dish where germination is unlikely, because Dish D is lacking water","askedInThisQuestion":true}],
+    labelKey: [{"letter":"A","meaning":"The control dish — it has all three factors necessary for germination","askedInThisQuestion":false},{"letter":"B","meaning":"The dish in which the factor being investigated is temperature","askedInThisQuestion":false},{"letter":"C","meaning":"The dish in the anaerobic jar; the jar removes oxygen from the air","askedInThisQuestion":false},{"letter":"D","meaning":"The other dish where germination is unlikely, because Dish D is lacking water","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, kind: "diagram",
@@ -8703,7 +8703,7 @@ export const CARDS: SecCard[] = [
                 "C"
           ]
     },
-    labelKey: [{"letter":"1","meaning":"The transverse section of the stem — its vascular bundles are arranged in a circle","askedInThisQuestion":true},{"letter":"2","meaning":"The transverse section of the root — justified by root hairs being present","askedInThisQuestion":true},{"letter":"A","meaning":"Dermal tissue","askedInThisQuestion":false},{"letter":"B","meaning":"Ground tissue","askedInThisQuestion":false},{"letter":"C","meaning":"Vascular tissue — the tissue that contains xylem and phloem","askedInThisQuestion":false}],
+    labelKey: [{"letter":"1","meaning":"The transverse section of the stem — its vascular bundles are arranged in a circle","askedInThisQuestion":false},{"letter":"2","meaning":"The transverse section of the root — justified by root hairs being present","askedInThisQuestion":true},{"letter":"A","meaning":"Dermal tissue","askedInThisQuestion":false},{"letter":"B","meaning":"Ground tissue","askedInThisQuestion":false},{"letter":"C","meaning":"Vascular tissue — the tissue that contains xylem and phloem","askedInThisQuestion":false}],
   } as SecCard,
   {
     ...base, kind: "diagram",

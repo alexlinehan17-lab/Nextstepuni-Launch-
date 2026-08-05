@@ -25,13 +25,15 @@ import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
 try:
     import fitz  # PyMuPDF
 except ImportError:
     fitz = None
 
 
-def extract(pdf_path: Path) -> str:
+def extract(pdf_path: Path, marks_column: bool = False) -> str:
     """Extract, rejoining split spans and reconstructing table rows.
 
     SEC schemes are tables: a marking point and the marks it earns sit in
@@ -43,6 +45,7 @@ def extract(pdf_path: Path) -> str:
     out = []
     for pno, page in enumerate(doc, 1):
         out.append(f"\n## Page {pno}\n")
+        marks_x = page.rect.width * MARKS_COLUMN_FRACTION if marks_column else None
         lines = []
         for block in doc[pno - 1].get_text("dict")["blocks"]:
             if block.get("type") != 0:
@@ -52,28 +55,92 @@ def extract(pdf_path: Path) -> str:
                 if not text.strip():
                     continue
                 x0, y0, x1, y1 = line["bbox"]
-                lines.append({"text": text, "x": x0, "y": (y0 + y1) / 2, "h": y1 - y0})
+                lines.append({"text": text, "x": x0, "x1": x1, "y": (y0 + y1) / 2, "h": y1 - y0})
 
         lines.sort(key=lambda l: (round(l["y"], 1), l["x"]))
         row, row_y, row_h = [], None, 10.0
         for line in lines:
             if row_y is not None and abs(line["y"] - row_y) > max(3.0, row_h * 0.6):
-                out.append(render_row(row))
+                out.append(render_row(row, marks_x))
                 row = []
             if not row:
                 row_y, row_h = line["y"], line["h"]
             row.append(line)
         if row:
-            out.append(render_row(row))
+            out.append(render_row(row, marks_x))
     doc.close()
     return "\n".join(out)
 
 
-def render_row(row) -> str:
+# ------------------------------------------------------------ marks column ----
+
+# Where the marks column ends, as a fraction of page width — measured on the cell's
+# RIGHT edge, not its left.
+#
+# The marks column is right-aligned against the table border; the prose beside it
+# is ragged-right. So left edges overlap and right edges do not. Across the SEC
+# Business schemes, marks cells END at 490-542 of a 595pt page while the widest
+# prose ends by 460. A left-edge rule set between them cut the column in half: on
+# the 2025 Higher paper it lifted "17" at x0=511 and fused "3+3" at 469 and
+# "2@(3+2)" at 457 into the middle of the sentences they were printed against.
+MARKS_COLUMN_FRACTION = 0.79
+
+# What a marks cell can say: "8", "(4+4)", "15m", "2@5m(3+2)", "3, 2, 2, 2, 1".
+# Digits, the operators the SEC combines them with, and nothing else.
+MARK_CELL = re.compile(r"^[\s\d@+×x*.,;:()\[\]/m-]*\d[\s\d@+×x*.,;:()\[\]/m-]*$", re.I)
+
+# A thousands separator: groups of exactly three digits after a comma.
+#
+# An accounts table's TOTAL column is right-aligned to the same edge as the marks
+# column, so "Total Receipts (A) 115,000 110,000 120,000 345,000" would have its
+# answer lifted out as though it were a tariff. Marks never carry a thousands
+# separator — the SEC's own comma notation is "3,2,2,2,1", groups of one digit —
+# so the shape of the number settles it without needing to know the column.
+MONEY = re.compile(r"\d,\d{3}(\D|$)")
+
+
+def is_mark(text: str) -> bool:
+    """Whether a cell states marks rather than an answer that happens to be numeric."""
+    return bool(MARK_CELL.fullmatch(text)) and not MONEY.search(text)
+
+
+def render_row(row, marks_x=None) -> str:
     """One table row: cells left to right, separated so a mark stays with its
-    marking point but is still distinguishable from it."""
-    cells = [c["text"].strip() for c in sorted(row, key=lambda c: c["x"]) if c["text"].strip()]
-    return " ".join(cells)
+    marking point but is still distinguishable from it.
+
+    With `marks_x` set, a trailing cell from the marks column is emitted inside
+    ⟨angle brackets⟩ rather than run into the prose. This matters more than it
+    looks. A marking point that wraps onto two lines has the marks cell of the
+    FIRST line dropped into the middle of its own sentence:
+
+        A takeover involves one company buying out at least 8
+        51% of another company's shares. It can be friendly (4+4)
+
+    An author reading that cannot quote the sentence — the build's provenance
+    check compares against this file, so the true sentence is not findable and
+    the card is dropped. Ten Business papers' worth of agents worked around it by
+    inventing dashes mid-sentence or truncating the point, which is exactly the
+    damage the check exists to prevent. Bracketing the cell keeps the prose
+    continuous AND keeps the mark on the line it was printed against, so which
+    answer earns which mark stays readable.
+    """
+    cells = [c for c in sorted(row, key=lambda c: c["x"]) if c["text"].strip()]
+    if marks_x is None:
+        return " ".join(c["text"].strip() for c in cells)
+    marks, body = [], []
+    for i, c in enumerate(cells):
+        text = c["text"].strip()
+        trailing = i == len(cells) - 1 or all(
+            d["x1"] >= marks_x and is_mark(d["text"].strip()) for d in cells[i + 1:]
+        )
+        if c["x1"] >= marks_x and trailing and is_mark(text):
+            marks.append(text)
+        else:
+            body.append(text)
+    line = " ".join(body)
+    if marks:
+        line = (line + " " if line else "") + " ".join(f"⟨{m}⟩" for m in marks)
+    return line
 
 
 
@@ -89,24 +156,8 @@ def render_row(row) -> str:
 # is then right and the provenance check, which compares against the corrupted
 # source, throws it away. That one file was losing 43% of its cards while every
 # other paper lost under 17%.
-LIGATURES = {
-    "\u019f": "ti",   # Ɵ  LATIN CAPITAL LETTER O WITH MIDDLE TILDE
-    "\u0166": "ti",   # Ŧ
-    "\ufb00": "ff",
-    "\ufb01": "fi",
-    "\ufb02": "fl",
-    "\ufb03": "ffi",
-    "\ufb04": "ffl",
-    "\ufb05": "st",
-    "\ufb06": "st",
-}
-
-
-def unligature(text: str) -> str:
-    """Restore ligature glyphs that the PDF's font encoding mangled."""
-    for bad, good in LIGATURES.items():
-        text = text.replace(bad, good)
-    return text
+from markbank_text import LIGATURES, unligature  # noqa: E402  (shared with describe-tables.py)
+_ = LIGATURES
 
 
 def join_spans(spans) -> str:
@@ -176,6 +227,8 @@ def main() -> int:
     ap.add_argument("path", type=Path)
     ap.add_argument("-o", "--out", type=Path)
     ap.add_argument("--check", action="store_true", help="report likely splits in an existing .md")
+    ap.add_argument("--marks-column", action="store_true",
+                    help="lift the right-hand marks cells out of the prose into ⟨brackets⟩")
     args = ap.parse_args()
 
     words = load_dictionary()
@@ -192,7 +245,7 @@ def main() -> int:
         print("PyMuPDF is required to extract", file=sys.stderr)
         return 1
 
-    text = extract(args.path)
+    text = extract(args.path, marks_column=args.marks_column)
     hits = check(text, words)
     out = args.out or args.path.with_suffix(".md")
     out.write_text(text)

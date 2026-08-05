@@ -2584,6 +2584,22 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC022GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2025 Ordinary Level — © State Examinations Commission.",
+    id: "chem-2025-ol-q4-f", topicId: "chem-1-4", conceptId: "percentage-by-mass-carbon-in-heptane",
+    section: "B", questionRef: "2025 OL Q4(f)",
+    stem: "Q4 is a set of short items: eight items to be answered, six marks allocated to each item and one additional mark added to each of the first two items attempted.",
+    questionText: "Calculate the percentage of carbon by mass in heptane (C7H16).",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Mtotal = 100", marks: 2, contextNote: "Relative molecular mass (Mr) of C7H16." },
+    { id: "r-2", kind: "point", verbatim: "7 × 12 = 84", marks: 2, contextNote: "Mass contributed by the carbon atoms." },
+    { id: "r-3", kind: "point", verbatim: "84/100 × 100 = 84 %", marks: 2 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC022GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2025 Ordinary Level — © State Examinations Commission.",
     id: "chem-2025-ol-q4-g", topicId: "chem-2-4", conceptId: "mercaptans-added-to-natural-gas",
     section: "B", questionRef: "2025 OL Q4(g)",
     stem: "Q4 is a set of short items: eight items to be answered, six marks allocated to each item and one additional mark added to each of the first two items attempted.",
@@ -2929,7 +2945,7 @@ export const CARDS: SecCard[] = [
                 "B"
           ]
     },
-    labelKey: [{"letter":"A","meaning":"The middle of the three drawings — the letter A is printed to its right. The paper does not name it.","askedInThisQuestion":true},{"letter":"B","meaning":"The right-hand drawing, a tall thin vertical piece of glassware — the letter B is printed beside it. The paper does not name it; the scheme's answer to Q2(b)(i) is that B is a pipette.","askedInThisQuestion":false}],
+    labelKey: [{"letter":"A","meaning":"The middle of the three drawings — the letter A is printed to its right. The paper does not name it.","askedInThisQuestion":false},{"letter":"B","meaning":"The right-hand drawing, a tall thin vertical piece of glassware — the letter B is printed beside it. The paper does not name it; the scheme's answer to Q2(b)(i) is that B is a pipette.","askedInThisQuestion":false}],
   } as SecCard,
   {
     ...base, kind: "diagram",
@@ -3212,7 +3228,7 @@ export const CARDS: SecCard[] = [
                 "Y"
           ]
     },
-    labelKey: [{"letter":"X","meaning":"anode","askedInThisQuestion":true},{"letter":"Y","meaning":"cathode","askedInThisQuestion":true}],
+    labelKey: [{"letter":"X","meaning":"anode","askedInThisQuestion":true},{"letter":"Y","meaning":"cathode","askedInThisQuestion":false}],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3808,6 +3824,22 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"orderedSplit","notation":"ANY THREE: [6 + 4 + 2]"}, totalMarks: 12,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "use funnel to transfer", marks: null, accepts: ["add rinsings of beaker to flask","use dropper (pipette, wash-bottle) to add last few drops","fill to the mark","until bottom of meniscus is on the line","read at eye-level","stopper","invert to mix"], contextNote: "The scheme lists these eight points and awards ANY THREE of them at [6 + 4 + 2]: three correct points score 12, two score 10, one scores 6. A point's value depends on how many you gave, not on which one, so no per-point mark exists." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC022GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2022 Ordinary Level — © State Examinations Commission.",
+    id: "chem-2022-ol-q2-c", topicId: "chem-4-1", conceptId: "mass-needed-for-standard-solution",
+    section: "A", questionRef: "2022 OL Q2(c)",
+    stem: "The mass of one mole of Na2CO3 is 106 g.",
+    questionText: "(i) What is the mass of 0.05 moles of Na2CO3? (ii) Calculate the mass of Na2CO3 required to prepare 250 cm3 of a sodium carbonate solution of exactly 0.05 M concentration.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "5.3 g", marks: 3, contextNote: "(i) The scheme's working is 106 × 0.05 = 5.3 g. The unit is part of the answer." },
+    { id: "r-2", kind: "point", verbatim: "m = (mass in one litre 0.05 M) × 250/1000", marks: 3, contextNote: "(ii) The scheme awards this setup line 3 marks on its own; for this solution it is m = (5.3 × 250)/1000." },
+    { id: "r-3", kind: "point", verbatim: "1.325 g", marks: 3, contextNote: "(ii) The evaluated answer, worth 3 marks separately from the setup. The scheme also prints the shortcut 5.3 ÷ 4 = 1.325 g." },
     ],
   } as SecCard,
   {

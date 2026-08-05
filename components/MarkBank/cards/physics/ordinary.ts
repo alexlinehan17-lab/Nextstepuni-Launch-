@@ -5759,7 +5759,7 @@ export const CARDS: SecCard[] = [
                 "l"
           ]
     },
-    labelKey: [{"letter":"A","meaning":"The end face of the brick (width x height, 9 cm x 6 cm) — the smallest face","askedInThisQuestion":true},{"letter":"B","meaning":"The top face of the brick (length x width, 20 cm x 9 cm) — the largest face","askedInThisQuestion":true},{"letter":"C","meaning":"The front face of the brick (length x height, 20 cm x 6 cm)","askedInThisQuestion":true},{"letter":"h","meaning":"Height of the brick, h = 6 cm","askedInThisQuestion":false},{"letter":"w","meaning":"Width of the brick, w = 9 cm","askedInThisQuestion":false},{"letter":"l","meaning":"Length of the brick, l = 20 cm","askedInThisQuestion":false}],
+    labelKey: [{"letter":"A","meaning":"The end face of the brick (width x height, 9 cm x 6 cm) — the smallest face","askedInThisQuestion":false},{"letter":"B","meaning":"The top face of the brick (length x width, 20 cm x 9 cm) — the largest face","askedInThisQuestion":true},{"letter":"C","meaning":"The front face of the brick (length x height, 20 cm x 6 cm)","askedInThisQuestion":false},{"letter":"h","meaning":"Height of the brick, h = 6 cm","askedInThisQuestion":false},{"letter":"w","meaning":"Width of the brick, w = 9 cm","askedInThisQuestion":false},{"letter":"l","meaning":"Length of the brick, l = 20 cm","askedInThisQuestion":false}],
   } as SecCard,
   {
     ...base, kind: "diagram",

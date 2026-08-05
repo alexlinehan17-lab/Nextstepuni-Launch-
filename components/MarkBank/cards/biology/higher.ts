@@ -7741,7 +7741,7 @@ export const CARDS: SecCard[] = [
                 "Z"
           ]
     },
-    labelKey: [{"letter":"X","meaning":"A period of the heart cycle other than ventricular contraction — the scheme names only Z","askedInThisQuestion":true},{"letter":"Y","meaning":"A period of the heart cycle other than ventricular contraction — the scheme names only Z","askedInThisQuestion":true},{"letter":"Z","meaning":"The diagram in which the ventricles are contracting","askedInThisQuestion":true}],
+    labelKey: [{"letter":"X","meaning":"A period of the heart cycle other than ventricular contraction — the scheme names only Z","askedInThisQuestion":false},{"letter":"Y","meaning":"A period of the heart cycle other than ventricular contraction — the scheme names only Z","askedInThisQuestion":false},{"letter":"Z","meaning":"The diagram in which the ventricles are contracting","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, kind: "diagram",
@@ -7986,7 +7986,7 @@ export const CARDS: SecCard[] = [
                 "Y"
           ]
     },
-    labelKey: [{"letter":"X","meaning":"The diagram that represents inhalation","askedInThisQuestion":true},{"letter":"Y","meaning":"The other of the two stages of breathing shown — the scheme names only X","askedInThisQuestion":true}],
+    labelKey: [{"letter":"X","meaning":"The diagram that represents inhalation","askedInThisQuestion":true},{"letter":"Y","meaning":"The other of the two stages of breathing shown — the scheme names only X","askedInThisQuestion":false}],
   } as SecCard,
   {
     ...base, kind: "diagram",

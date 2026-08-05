@@ -263,11 +263,89 @@ export const AGRICULTURAL_SCIENCE_STRANDS: StrandRef[] = [
 /** Every subject the deck covers, with the strand structure of its own
  *  specification. Card topicIds are namespaced by subject, so a card can only
  *  ever be filed under a unit of the subject it belongs to. */
+/**
+ * Leaving Certificate Business, the 1999 syllabus, as its seven units.
+ *
+ * Topic codes are the numbered taxonomy already carried in curriculum.ts rather
+ * than an invented one, so a card's topicId resolves against the same headings
+ * the rest of the app uses.
+ *
+ * The ABQ is listed as a topic because it IS one — Section 2 Part 1 is worth 80
+ * of 400 marks — but no cards are authored for it yet. An Applied Business
+ * Question is a long case study with several parts hanging off it, which is a
+ * different card shape from a short question, and that shape is undecided.
+ */
+export const BUSINESS_STRANDS: StrandRef[] = [
+  {
+    id: 'bus1', label: 'Unit 1', title: 'People in Business',
+    topics: [
+      { id: 'business-0-12', code: '1.1', title: 'People in business & contract law' },
+      { id: 'business-0-13', code: '1.2', title: 'Conflict resolution — the consumer' },
+      { id: 'business-0-14', code: '1.3', title: 'Conflict resolution — industrial relations' },
+    ],
+  },
+  {
+    id: 'bus2', label: 'Unit 2', title: 'Enterprise',
+    topics: [
+      { id: 'business-1-5', code: '2.1', title: 'Enterprise' },
+    ],
+  },
+  {
+    id: 'bus3', label: 'Unit 3', title: 'Managing 1',
+    topics: [
+      { id: 'business-2-11', code: '3.1', title: 'Management skills — leading & motivating' },
+      { id: 'business-2-12', code: '3.2', title: 'Management skills — communication & ICT' },
+      { id: 'business-2-13', code: '3.3', title: 'Management activities — planning, organising, controlling' },
+    ],
+  },
+  {
+    id: 'bus4', label: 'Unit 4', title: 'Managing 2',
+    topics: [
+      { id: 'business-3-16', code: '4.1', title: 'Finance & cash-flow management' },
+      { id: 'business-3-17', code: '4.2', title: 'Insurance' },
+      { id: 'business-3-18', code: '4.3', title: 'Taxation' },
+      { id: 'business-3-19', code: '4.4', title: 'Ratio analysis & monitoring the business' },
+      { id: 'business-3-20', code: '4.5', title: 'Human resource management' },
+      { id: 'business-3-21', code: '4.6', title: 'Managing change & TQM' },
+    ],
+  },
+  {
+    id: 'bus5', label: 'Unit 5', title: 'Business in Action',
+    topics: [
+      { id: 'business-4-14', code: '5.1', title: 'Identifying opportunities & new product development' },
+      { id: 'business-4-15', code: '5.2', title: 'Getting started in business' },
+      { id: 'business-4-16', code: '5.3', title: 'Marketing — research & segmentation' },
+      { id: 'business-4-17', code: '5.4', title: 'Marketing — the 4 Ps' },
+      { id: 'business-4-18', code: '5.5', title: 'Business expansion' },
+      { id: 'business-4-19', code: 'ABQ', title: 'Applied Business Question' },
+    ],
+  },
+  {
+    id: 'bus6', label: 'Unit 6', title: 'Domestic Environment',
+    topics: [
+      { id: 'business-5-13', code: '6.1', title: 'Categories of industry' },
+      { id: 'business-5-14', code: '6.2', title: 'Ownership structures' },
+      { id: 'business-5-15', code: '6.3', title: 'Business, government & the economy' },
+      { id: 'business-5-16', code: '6.4', title: 'Community development' },
+      { id: 'business-5-17', code: '6.5', title: 'Business ethics & social responsibility' },
+    ],
+  },
+  {
+    id: 'bus7', label: 'Unit 7', title: 'International Environment',
+    topics: [
+      { id: 'business-6-13', code: '7.1', title: 'International trade' },
+      { id: 'business-6-14', code: '7.2', title: 'The European Union' },
+      { id: 'business-6-15', code: '7.3', title: 'Global business' },
+    ],
+  },
+];
+
 export const SUBJECTS = [
   { id: 'biology', title: 'Biology', strands: STRANDS },
   { id: 'chemistry', title: 'Chemistry', strands: CHEMISTRY_STRANDS },
   { id: 'physics', title: 'Physics', strands: PHYSICS_STRANDS },
   { id: 'agricultural-science', title: 'Agricultural Science', strands: AGRICULTURAL_SCIENCE_STRANDS },
+  { id: 'business', title: 'Business', strands: BUSINESS_STRANDS },
 ] as const;
 
 export type SubjectId = (typeof SUBJECTS)[number]['id'];
@@ -488,6 +566,10 @@ const DECKS: Record<string, Record<Level, () => Promise<{ CARDS: SecCard[] }>>> 
   'agricultural-science': {
     higher: () => import('./cards/agricultural-science/higher'),
     ordinary: () => import('./cards/agricultural-science/ordinary'),
+  },
+  business: {
+    higher: () => import('./cards/business/higher'),
+    ordinary: () => import('./cards/business/ordinary'),
   },
 };
 

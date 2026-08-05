@@ -32,7 +32,7 @@ const MANIFEST = resolve(ROOT, 'components/MarkBank/figures.json');
 
 const SUBJECT_TITLE = {
   biology: 'Biology', chemistry: 'Chemistry', physics: 'Physics',
-  'agricultural-science': 'Agricultural Science',
+  'agricultural-science': 'Agricultural Science', business: 'Business',
 };
 
 const catalogue = JSON.parse(readFileSync(process.argv[2] ?? '', 'utf8'));

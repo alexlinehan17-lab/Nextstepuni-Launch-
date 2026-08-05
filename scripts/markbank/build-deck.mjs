@@ -25,6 +25,7 @@ import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { resolvePaperFileid } from './paperIndex.mjs';
+import { normalise, comparableScheme } from './schemeText.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 
@@ -58,6 +59,14 @@ const SUBJECTS = {
      * and an unverified date in a provenance field is worse than none. */
     specVersion: 'lc-chemistry-legacy',
     figureDir: 'public/exam-figures/chemistry',
+    blocked: new Set(),
+  },
+  business: {
+    title: 'Business',
+    /* The 1999 syllabus, still examined. Named by year because it is verified:
+     * every paper in the corpus (2021-2025) sits on it. */
+    specVersion: 'lc-business-1999',
+    figureDir: 'public/exam-figures/business',
     blocked: new Set(),
   },
   'agricultural-science': {
@@ -96,37 +105,12 @@ const ALT = {
 
 const schemeCache = new Map();
 
-/**
- * The scheme a card must be traceable to. Comparison drops mark-only lines and
- * ignores spacing: a marks cell is vertically centred against a multi-line answer
- * so the mark lands BETWEEN the lines it belongs to, and chemical subscripts sit
- * on their own baseline ("C x ( H 2 O )y").
- */
-const MARKS_ONLY = /^\s*\d+\s*(\(\s*\d+\s*\))?\s*$/;
-
-/**
- * Sub- and superscript digits folded to the digits they stand for.
- *
- * The SEC's PDFs extract formulae as plain ASCII — "H2SO4", not "H₂SO₄" — but an
- * author writing the answer out is liable to typeset it properly. Without this
- * fold the two normalise to "hso" and "h2so4", and a correct card gets dropped
- * for being untraceable. Folding maps a character to the digit it already means;
- * it does not loosen what counts as a match.
- */
-const SUP = { '⁰': '0', '¹': '1', '²': '2', '³': '3', '⁴': '4', '⁵': '5', '⁶': '6', '⁷': '7', '⁸': '8', '⁹': '9' };
-const foldDigits = (t) => t
-  .replace(/[₀-₉]/g, (c) => String(c.charCodeAt(0) - 0x2080))
-  .replace(/[⁰¹²³⁴-⁹]/g, (c) => SUP[c] ?? c);
-
-const normalise = (t) =>
-  foldDigits(t).toLowerCase().replace(/[‐-―]/g, '-').replace(/[^a-z0-9]+/g, '');
-
 function schemeFor(subjectId, card) {
   const stem = `${card.year ?? 2025}-${(card.level ?? 'higher') === 'higher' ? 'hl' : 'ol'}`;
   const file = resolve(ROOT, 'examiner-reports', subjectId, 'schemes', `${stem}.md`);
   if (!schemeCache.has(file)) {
     const raw = existsSync(file) ? readFileSync(file, 'utf8') : '';
-    schemeCache.set(file, normalise(raw.split('\n').filter(l => !MARKS_ONLY.test(l)).join(' ')));
+    schemeCache.set(file, comparableScheme(raw));
   }
   return schemeCache.get(file);
 }
@@ -257,6 +241,66 @@ function tariffFault(c) {
 }
 
 /**
+ * A tariff sentence standing where a marking point should be: "Any two rights,
+ * 5 marks each (3 for the right + 2 for explaining it)".
+ *
+ * An anyN row's own verbatim is the one string the build does NOT check against
+ * the scheme — the options carry the marking points, so the field looks free.
+ * Twelve Business cards used it to restate the tariff, which the session never
+ * renders, so the split it described reached nobody.
+ */
+const TARIFF_PROSE = /\bmarks? each\b|^\s*any (one|two|three|four|five|\d+)\b[^.]*\bmarks?\b/i;
+
+/** Faults in a bounded pick-list that arithmetic can settle without an agent. */
+function groupFault(c) {
+  for (const r of c.rows) {
+    if (r.kind !== 'anyN' || !r.group) continue;
+    const g = r.group;
+    if (g.options.length < g.claimMax) {
+      return `row "${r.id}" lets a student claim ${g.claimMax} but lists ${g.options.length} option(s)`;
+    }
+    // The session prints "Any 2 of these — 7 marks each" from these two numbers,
+    // so a group worth more than the question tells the student a false total.
+    if (g.claimMax * g.perOption > c.totalMarks) {
+      return `row "${r.id}" offers ${g.claimMax}x${g.perOption} on a ${c.totalMarks}-mark question`;
+    }
+    if (TARIFF_PROSE.test(r.verbatim ?? '')) {
+      return `row "${r.id}" states its tariff where its marking point should be: "${r.verbatim}"`;
+    }
+  }
+  return null;
+}
+
+/**
+ * On a MATCHING card, a label marked "asked" must be one of the answers.
+ *
+ * LabelKeyPanel deliberately shows only the labels the question leaves alone —
+ * repeating one the student is self-marking would give the row away. On a card
+ * whose rows ARE the letters ("1. Merger — D"), a letter marked asked but
+ * claimed by no row is the distractor the paper warns about, and flagging it
+ * asked hides the only decoding of it the student would ever see.
+ *
+ * Narrow on purpose. Where the question names the label itself — "Identify the
+ * structure located at B", answer "Silage (pit)" — the label is genuinely asked
+ * and no row repeats it, which is why this only speaks up once some OTHER label
+ * has been found in the rows.
+ */
+function relabelDistractors(c) {
+  const keys = Array.isArray(c.labelKey) ? c.labelKey : [];
+  if (!keys.length) return null;
+  const body = c.rows.map(r => `${r.verbatim ?? ''} ${(r.group?.options ?? []).join(' ')}`).join(' ');
+  const claimed = (k) => new RegExp(`(^|[^A-Za-z0-9])${k.letter.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}([^A-Za-z0-9]|$)`).test(body);
+  if (!keys.some(claimed)) return null;   // not a matching card; the letters live in the question
+  const orphan = keys.filter(k => k.askedInThisQuestion && !claimed(k));
+  if (!orphan.length) return null;
+  // Corrected rather than dropped. No row self-marks this letter, so showing it
+  // in the panel gives nothing away — and losing the whole card over one flag
+  // costs the student far more than the flag ever did.
+  for (const k of orphan) k.askedInThisQuestion = false;
+  return `${c.id}: ${orphan.map(k => `"${k.letter}"`).join(', ')} claimed by no row — shown in the label key instead of hidden`;
+}
+
+/**
  * One card per question.
  *
  * A question first carded without its diagram, then re-carded once a verified
@@ -276,6 +320,7 @@ for (const c of cards) {
 
 const out = [];
 const dropped = [];
+const repaired = [];
 const seenId = new Set();
 const seenHash = new Map();
 let unresolvedPapers = 0;
@@ -298,6 +343,12 @@ for (const c of cards) {
 
   const badTariff = tariffFault(c);
   if (badTariff) { dropped.push(`${c.id}: ${badTariff}`); continue; }
+
+  const badGroup = groupFault(c);
+  if (badGroup) { dropped.push(`${c.id}: ${badGroup}`); continue; }
+
+  const relabelled = relabelDistractors(c);
+  if (relabelled) repaired.push(relabelled);
 
   /* A row id repeated inside one card is not cosmetic: rowId() keys the claims
    * map, so two rows sharing an id are one claim to the scorer — ticking either
@@ -385,6 +436,7 @@ ${rows}
 
 process.stderr.write(`${SUBJECT.title}: built ${out.length} cards, dropped ${dropped.length}\n`);
 for (const d of dropped) process.stderr.write(`  DROPPED ${d}\n`);
+for (const r of repaired) process.stderr.write(`  REPAIRED ${r}\n`);
 if (unresolvedPapers) {
   process.stderr.write(`  ${unresolvedPapers} card(s) have no paper in the Paper Trail index; paperFileid is null rather than guessed\n`);
 }

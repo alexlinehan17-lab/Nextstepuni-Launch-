@@ -201,7 +201,10 @@ export interface SecCardBase extends CardBase {
    * folder, so it identifies a paper only alongside subjectId, year and level.
    */
   paperFileid: string | null;
-  section: 'A' | 'B' | 'C';
+  /** The paper's own section. Lettered in the sciences, numbered in Business —
+   *  whose Section 1 and Section 3 both count from Q1, which is why questionRef
+   *  carries the section too. */
+  section: 'A' | 'B' | 'C' | '1' | '2' | '3';
   /** Real paper numbering, e.g. "2025 HL Q6(a)–(b)". */
   questionRef: string;
   /** Optional lead-in the paper prints before the question proper. */

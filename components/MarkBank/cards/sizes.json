@@ -5,14 +5,18 @@
  },
  "chemistry": {
   "higher": 410,
-  "ordinary": 306
+  "ordinary": 308
  },
  "physics": {
-  "higher": 390,
+  "higher": 391,
   "ordinary": 415
  },
  "agricultural-science": {
   "higher": 401,
   "ordinary": 389
+ },
+ "business": {
+  "higher": 73,
+  "ordinary": 73
  }
 }
