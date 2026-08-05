@@ -26,6 +26,7 @@ import { fileURLToPath } from 'node:url';
 
 import { resolvePaperFileid } from './paperIndex.mjs';
 import { normalise, comparableScheme } from './schemeText.mjs';
+import { optionCapFor, MAX_LONG_OPTION_ROWS } from './optionCap.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 
@@ -264,6 +265,18 @@ function groupFault(c) {
     if (g.claimMax * g.perOption > c.totalMarks) {
       return `row "${r.id}" offers ${g.claimMax}x${g.perOption} on a ${c.totalMarks}-mark question`;
     }
+    // Nothing enforced this before: rowCapFor() caps how many ROWS a card has,
+    // and a menu's options live inside ONE row, so a group could list any number
+    // at all. Ten Business groups had drifted past the cap unnoticed.
+    //
+    // Refused outright only past the LONG-question ceiling, which is a wall of
+    // text on any paper. Between the short cap and that ceiling it is reported
+    // instead of dropped: the count was only ever a proxy for reading load, and
+    // ten one-word options ("pure", "solid", "soluble") are lighter than eight
+    // paragraphs. Losing a working card to a proxy is the worse outcome.
+    if (g.options.length > MAX_LONG_OPTION_ROWS) {
+      return `row "${r.id}" shows ${g.options.length} options, past the ${MAX_LONG_OPTION_ROWS} any question may show`;
+    }
     if (TARIFF_PROSE.test(r.verbatim ?? '')) {
       return `row "${r.id}" states its tariff where its marking point should be: "${r.verbatim}"`;
     }
@@ -321,6 +334,7 @@ for (const c of cards) {
 const out = [];
 const dropped = [];
 const repaired = [];
+const overCap = [];
 const seenId = new Set();
 const seenHash = new Map();
 let unresolvedPapers = 0;
@@ -349,6 +363,13 @@ for (const c of cards) {
 
   const relabelled = relabelDistractors(c);
   if (relabelled) repaired.push(relabelled);
+
+  for (const r of c.rows) {
+    const cap = optionCapFor(c.section);
+    if (r.group && r.group.options.length > cap) {
+      overCap.push(`${c.id}: row "${r.id}" shows ${r.group.options.length} options in section ${c.section}, over the ${cap} agreed for a short question`);
+    }
+  }
 
   /* A row id repeated inside one card is not cosmetic: rowId() keys the claims
    * map, so two rows sharing an id are one claim to the scorer — ticking either
@@ -437,6 +458,7 @@ ${rows}
 process.stderr.write(`${SUBJECT.title}: built ${out.length} cards, dropped ${dropped.length}\n`);
 for (const d of dropped) process.stderr.write(`  DROPPED ${d}\n`);
 for (const r of repaired) process.stderr.write(`  REPAIRED ${r}\n`);
+for (const o of overCap) process.stderr.write(`  OVER CAP ${o}\n`);
 if (unresolvedPapers) {
   process.stderr.write(`  ${unresolvedPapers} card(s) have no paper in the Paper Trail index; paperFileid is null rather than guessed\n`);
 }

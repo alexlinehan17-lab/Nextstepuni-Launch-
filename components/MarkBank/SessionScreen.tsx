@@ -303,7 +303,9 @@ const MarkRowView: React.FC<{
   picks: number[];
   onClaim: (id: string, next: RowClaim) => void;
   onPick: (id: string, optionIndex: number) => void;
-}> = ({ row, id, index, claim, showMarks, blocked, blockedReason, reduced, picks, onClaim, onPick }) => {
+  /** Options already claimed in a SIBLING menu on this card. */
+  takenElsewhere?: ReadonlySet<string>;
+}> = ({ row, id, index, claim, showMarks, blocked, blockedReason, reduced, picks, onClaim, onPick, takenElsewhere }) => {
   const claimed = claim !== 'no';
   const marks = rowMarks(row);
   const canSynonym = !row.exactTermRequired && (row.openList || row.kind === 'alt');
@@ -350,7 +352,14 @@ const MarkRowView: React.FC<{
         <div style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
           {g.options.map((option, oi) => {
             const on = picks.includes(oi);
-            const disabled = !on && atCap;
+            // A question marked "7 + 7 + 6" for three answers is carried as one
+            // menu per ANSWER POSITION, each listing everything the examiner
+            // allows — the split follows the order you answered in, not which
+            // item you picked. Nothing stopped the same item being ticked in
+            // two of those menus, which banked one answer twice and told the
+            // student they had scored marks the examiner never gave.
+            const usedAlready = !on && takenElsewhere?.has(option);
+            const disabled = !on && (atCap || Boolean(usedAlready));
             return (
               <button
                 key={oi}
@@ -381,7 +390,14 @@ const MarkRowView: React.FC<{
                     </svg>
                   )}
                 </span>
-                <span>{option}</span>
+                <span>
+                  {option}
+                  {usedAlready && (
+                    <em style={{ display: 'block', marginTop: 2, font: `400 11px/1.4 ${SANS}`, color: MUTED, fontStyle: 'normal' }}>
+                      Already claimed above — one answer earns marks once.
+                    </em>
+                  )}
+                </span>
               </button>
             );
           })}
@@ -780,6 +796,30 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const setClaim = useCallback((id: string, next: RowClaim) => {
     setClaims(prev => ({ ...prev, [id]: next }));
   }, []);
+
+  /**
+   * Options already claimed in some OTHER menu on this card, per row.
+   *
+   * Only meaningful where a card carries several menus over the SAME list — the
+   * "7 + 7 + 6 across three answers" shape. One answer earns marks once, so an
+   * item ticked in the first menu must not still be tickable in the second.
+   */
+  const takenByRow = useMemo(() => {
+    const out: Record<string, Set<string>> = {};
+    if (!card) return out;
+    const menus = card.rows
+      .map((r, i) => ({ r, id: rowId(r, i) }))
+      .filter(({ r }) => r.kind === 'anyN' && r.group);
+    for (const { id } of menus) out[id] = new Set<string>();
+    for (const { r, id } of menus) {
+      for (const oi of picks[id] ?? []) {
+        const option = r.group!.options[oi];
+        if (option === undefined) continue;
+        for (const other of menus) if (other.id !== id) out[other.id].add(option);
+      }
+    }
+    return out;
+  }, [card, picks]);
 
   /** Toggle one option inside a bounded "Any N" group. */
   const togglePick = useCallback((id: string, optionIndex: number) => {
@@ -1206,6 +1246,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                         }
                         reduced={reduced}
                         picks={picks[id] ?? []}
+                        takenElsewhere={takenByRow[id]}
                         onClaim={setClaim}
                         onPick={togglePick}
                       />

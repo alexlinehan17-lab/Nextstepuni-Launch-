@@ -17,6 +17,41 @@
 const MARKS_ONLY = /^\s*\d+\s*(\(\s*\d+\s*\))?\s*$/;
 
 /**
+ * A line that is nothing but a part label — "(iii)", "(B)", "(a)".
+ *
+ * These live in a narrow left-hand column of the scheme table and land on their
+ * own row, which puts them INSIDE the marking point printed beside them:
+ *
+ *     Increased sales/reach a wider audience:      ⟨14m⟩
+ *     (iii)
+ *     When a business chooses to distribute their product via retailers, the
+ *
+ * A card quoting that point whole — heading and sentence, which is what the
+ * (4+3) pays for — then fails provenance because of a label that is not part of
+ * the answer at all. Same reasoning as MARKS_ONLY: it carries no marking content.
+ */
+const LABEL_ONLY = /^\s*\(?\s*([ivx]{1,4}|[a-z]|\d{1,2})\s*\)\s*$/i;
+
+/**
+ * The same left-hand label, but sharing a line with the answer beside it.
+ *
+ * LABEL_ONLY catches the label that lands on its own row. It does not catch the
+ * one whose y-band happens to line up with a WRAPPED line of the answer, which
+ * the converter then emits as a single line:
+ *
+ *     The gearing ratio improved from 0.6:1 in 2020
+ *     (iii) to 0.25:1in 2021.
+ *
+ * In the printed scheme (Business 2022 HL p.52) that "(iii)" sits at x≈96 in the
+ * narrow Question column while the answer text starts at x≈127 — it is not a
+ * word of the SEC's answer. Left in, it splits the one sentence the examiner
+ * underlined, the literal answer to "improved or disimproved?", so no card can
+ * quote it. Physics 2025 HL loses C = q/V the same way: the fraction sets over
+ * two lines and "(i)" lands between numerator and denominator.
+ */
+const LEADING_LABEL = /^\s*\(\s*(?:[ivx]{1,4}|[a-z]|\d{1,2})\s*\)\s+(?=\S)/i;
+
+/**
  * A marks cell that extract-scheme.py lifted out of the prose, e.g. ⟨2@5m(3+2)⟩.
  * It has to come out before normalising, or its digits fuse onto the words either
  * side of it and the sentence stops matching — the corruption the bracketing was
@@ -56,9 +91,20 @@ export const foldDigits = (t) => t
 export const normalise = (t) =>
   foldDigits(t).toLowerCase().replace(/[‐-―]/g, '-').replace(/[^a-z0-9]+/g, '');
 
-/** A whole scheme file reduced to the text a marking point is searched in. */
-export const comparableScheme = (raw) =>
-  normalise(
-    raw.replace(MARKS_CELL, ' ').replace(PAGE_MARKER, ' ')
-      .split('\n').filter((l) => !MARKS_ONLY.test(l)).join(' '),
-  );
+/**
+ * A whole scheme file reduced to the text a marking point is searched in.
+ *
+ * Two forms of it, not one, joined by a character normalise() can never produce
+ * so that nothing matches across the seam. Deleting the inline labels outright
+ * would be simpler and wrong: some marking points ARE printed behind one, and
+ * quote it — "(i) PAYE which Gemma has to pay: 17,325" is the answer in Business
+ * 2025 HL, and sixteen other shipped rows read the same way. Searching both
+ * forms keeps every one of those matching while letting a point quoted across an
+ * intruding label match too. Nothing is added to either form, so no wording the
+ * SEC did not print can pass — the guard only stops rejecting the SEC's own.
+ */
+export const comparableScheme = (raw) => {
+  const lines = raw.replace(MARKS_CELL, ' ').replace(PAGE_MARKER, ' ')
+    .split('\n').filter((l) => !MARKS_ONLY.test(l) && !LABEL_ONLY.test(l));
+  return `${normalise(lines.join(' '))}|${normalise(lines.map((l) => l.replace(LEADING_LABEL, '')).join(' '))}`;
+};

@@ -286,9 +286,40 @@ export const MAX_ROWS = 5;
  */
 export const MAX_OPTION_ROWS = 8;
 
+/**
+ * The same menu on a LONG question, where eight is not enough.
+ *
+ * A Business Section 3 part asks for three essential elements of a valid
+ * contract and the examiner prints nine; another lists thirteen. Cutting the
+ * menu to eight does real harm: a student who wrote the ninth wrote a correct
+ * answer the examiner would have paid for, and cannot find it to claim it.
+ * openList softens that — they can record it as another valid point — but a
+ * menu that omits answers the scheme states is misrepresenting the marking,
+ * which is the one thing this tool exists not to do.
+ *
+ * Still bounded. Fourteen is the ceiling because no SEC long question in the
+ * corpus prints more, not because fifteen would be unreadable.
+ */
+export const MAX_LONG_OPTION_ROWS = 14;
+
 /** The row cap that actually applies to a card, given its tariff. */
 export const rowCapFor = (kind: TariffModel['kind']): number =>
   kind === 'bestNofParts' ? MAX_OPTION_ROWS : MAX_ROWS;
+
+/**
+ * How many options one best-of menu may show.
+ *
+ * Keyed on the SECTION, not on what the part is worth. A long question's parts
+ * are individually small — a Section 3 (c)(ii) can be 10 marks — but it is the
+ * question they belong to that makes the examiner print a long menu, and a
+ * mark-value threshold cuts exactly the cards this cap was raised for.
+ *
+ * Long-question sections: Business Section 3 at Higher and Section 2 at
+ * Ordinary (there is no ABQ at Ordinary); Sections B and C in the sciences.
+ */
+const LONG_SECTIONS = new Set(['2', '3', 'B', 'C']);
+export const optionCapFor = (section: string): number =>
+  LONG_SECTIONS.has(section) ? MAX_LONG_OPTION_ROWS : MAX_OPTION_ROWS;
 
 /**
  * Card ids are used as Firestore map keys inside dotted `updateDoc` paths, so a

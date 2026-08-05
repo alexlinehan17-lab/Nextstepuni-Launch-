@@ -53,7 +53,7 @@ const SAMPLE_CARDS = [
 ];
 import {
   isDiagramCard, isContentFreeRow, looksLikeSectionLabel, tariffReconciles,
-  rowCapFor, isValidCardId,
+  rowCapFor, isValidCardId, optionCapFor, MAX_LONG_OPTION_ROWS,
 } from '../types/markBank';
 
 /**
@@ -102,6 +102,26 @@ const schemeText = (card: { year: number; level: string; subjectId: string }) =>
 const show = (bad: string[]) => `${bad.length} offender(s):\n${bad.slice(0, 25).join('\n')}`;
 
 /* ----------------------------------------------------------- provenance ---- */
+
+describe('a best-of menu stays readable', () => {
+  /* The count is a proxy for reading load, so the ceiling is what a card cannot
+   * exceed on any paper; the short-question cap below it is reported by the
+   * build rather than enforced, because ten one-word options are lighter than
+   * eight paragraphs. What must not happen is a menu nobody can work through. */
+  test('no menu exceeds what any question may show', () => {
+    const over = SAMPLE_CARDS.flatMap(card =>
+      card.rows.filter(r => r.group && r.group.options.length > MAX_LONG_OPTION_ROWS)
+        .map(r => `${card.id}/${r.id}: ${r.group!.options.length}`));
+    expect(over, 'menus past the ceiling').toEqual([]);
+  });
+
+  test('the build script and the type agree on the cap', async () => {
+    const mjs = await import('../scripts/markbank/optionCap.mjs');
+    for (const section of ['1', '2', '3', 'A', 'B', 'C']) {
+      expect(mjs.optionCapFor(section), `cap for section ${section}`).toBe(optionCapFor(section));
+    }
+  });
+});
 
 describe('every card traces to the marking scheme on disk', () => {
   test('the deck is substantial', () => {

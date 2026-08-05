@@ -606,3 +606,42 @@ describe('design rules that carry meaning', () => {
     expect(source).toMatch(/--sab/);
   });
 });
+
+/**
+ * One answer earns marks once.
+ *
+ * A question marked "7 + 7 + 6" for three answers is carried as one menu per
+ * ANSWER POSITION, each listing everything the examiner allows, because the
+ * split follows the order the candidate answered in rather than which item they
+ * picked. Nothing stopped the same item being ticked in two of those menus: a
+ * student could claim one element three times and be told they had scored 20 of
+ * 20. Seventy-two Business cards carry that shape.
+ */
+describe('a menu option claimed once cannot be claimed again', () => {
+  const CARD = card({
+    id: 'dup-menu-card',
+    totalMarks: 20,
+    tariffModel: { kind: 'orderedSplit', notation: '7 + 7 + 6' },
+    rows: [
+      row({ id: 'r-1', kind: 'anyN', verbatim: 'The first element you explained', marks: null,
+        group: { claimMax: 1, perOption: 7, options: ['Offer', 'Acceptance', 'Consideration'] } }),
+      row({ id: 'r-2', kind: 'anyN', verbatim: 'The second element you explained', marks: null,
+        group: { claimMax: 1, perOption: 7, options: ['Offer', 'Acceptance', 'Consideration'] } }),
+    ],
+  });
+
+  test('ticking an option in one menu disables it in the other', () => {
+    renderSession([CARD]);
+    fireEvent.click(screen.getByRole('button', { name: /reveal/i }));
+
+    const offers = screen.getAllByRole('button', { name: /Offer/ });
+    expect(offers.length, 'the same option appears in both menus').toBe(2);
+
+    fireEvent.click(offers[0]);
+
+    const after = screen.getAllByRole('button', { name: /Offer/ });
+    expect(after[0]).toHaveAttribute('aria-pressed', 'true');
+    expect(after[1].hasAttribute('disabled'), 'the sibling menu still offers the claimed answer').toBe(true);
+    expect(after[1].textContent).toMatch(/Already claimed above/);
+  });
+});

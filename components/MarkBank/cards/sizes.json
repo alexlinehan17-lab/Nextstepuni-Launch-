@@ -8,7 +8,7 @@
   "ordinary": 308
  },
  "physics": {
-  "higher": 391,
+  "higher": 392,
   "ordinary": 415
  },
  "agricultural-science": {
@@ -16,7 +16,7 @@
   "ordinary": 389
  },
  "business": {
-  "higher": 73,
-  "ordinary": 73
+  "higher": 260,
+  "ordinary": 314
  }
 }
