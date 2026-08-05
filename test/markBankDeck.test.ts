@@ -35,6 +35,8 @@ import { CARDS as PHYS_HIGHER } from '../components/MarkBank/cards/physics/highe
 import { CARDS as PHYS_ORDINARY } from '../components/MarkBank/cards/physics/ordinary';
 import { CARDS as AGSCI_HIGHER } from '../components/MarkBank/cards/agricultural-science/higher';
 import { CARDS as AGSCI_ORDINARY } from '../components/MarkBank/cards/agricultural-science/ordinary';
+import { CARDS as BUS_HIGHER } from '../components/MarkBank/cards/business/higher';
+import { CARDS as BUS_ORDINARY } from '../components/MarkBank/cards/business/ordinary';
 
 /** Every deck at once. The app loads one at a time; the guards check them all,
  *  so a new subject inherits the whole net the day its first cards land.
@@ -47,6 +49,7 @@ import { CARDS as AGSCI_ORDINARY } from '../components/MarkBank/cards/agricultur
 const SAMPLE_CARDS = [
   ...BIO_HIGHER, ...BIO_ORDINARY, ...CHEM_HIGHER, ...CHEM_ORDINARY,
   ...PHYS_HIGHER, ...PHYS_ORDINARY, ...AGSCI_HIGHER, ...AGSCI_ORDINARY,
+  ...BUS_HIGHER, ...BUS_ORDINARY,
 ];
 import {
   isDiagramCard, isContentFreeRow, looksLikeSectionLabel, tariffReconciles,
