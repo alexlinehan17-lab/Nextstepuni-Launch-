@@ -70,6 +70,14 @@ const SUBJECTS = {
     figureDir: 'public/exam-figures/business',
     blocked: new Set(),
   },
+  'home-economics': {
+    title: 'Home Economics',
+    /* The syllabus examined before the 2027 redevelopment. Named by what it is
+     * rather than by a year, because its publication year is unverified here. */
+    specVersion: 'lc-home-economics-legacy',
+    figureDir: 'public/exam-figures/home-economics',
+    blocked: new Set(),
+  },
   'agricultural-science': {
     title: 'Agricultural Science',
     /* The NCCA specification published 2019 and first examined in 2021 — dated

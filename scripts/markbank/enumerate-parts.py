@@ -54,7 +54,7 @@ def enumerate_parts(text: str):
     Section A is short questions written "1.", Sections B and C are "Question 1"
     with lettered parts, and Section C is whatever follows an Elective heading.
     """
-    out, section, elective, question = [], None, None, None
+    out, section, elective, question, last_part = [], None, None, None, None
     for raw in text.split("\n"):
         line = MARKS_CELL.sub(" ", raw).rstrip()
         if SECTION.match(line):
@@ -78,13 +78,21 @@ def enumerate_parts(text: str):
             out.append(_row(section, elective, question, None, None, line, m.group(2)))
             continue
         if question and (m := PART.match(line)):
-            out.append(_row(section, elective, question, m.group(1), None, line, m.group(2)))
+            last_part = m.group(1)
+            out.append(_row(section, elective, question, last_part, None, line, m.group(2)))
             continue
-        # Roman sub-entries are NOT counted. In this scheme "(i) Oxidative
-        # rancidity — This occurs as a result of…" is the ANSWER to a short
-        # question, not a part of it, and counting them inflated 2021 Higher's
-        # twelve Section A questions to twenty-eight. A question and its lettered
-        # parts are the unit a card is built from anyway.
+        # A roman sub-entry counts ONLY where it is separately marked.
+        #
+        # Both readings were wrong in turn. Counting them all inflated 2021
+        # Higher's twelve Section A questions to twenty-eight, because there
+        # "(i) Oxidative rancidity — This occurs as a result of…" is the ANSWER
+        # to a short question. Counting none of them then made Section C parts
+        # the unit, and a Section C (a) is three separately-marked sub-parts —
+        # 16, 24 and 10 — which became one fifty-mark card holding five rows,
+        # with the marking detail gone. A printed "(N marks)" is what separates a
+        # question part from a line of answer text.
+        if question and (m := SUBPART.match(line)) and MARKS.search(line):
+            out.append(_row(section, elective, question, last_part, m.group(1), line, m.group(2)))
     return out
 
 

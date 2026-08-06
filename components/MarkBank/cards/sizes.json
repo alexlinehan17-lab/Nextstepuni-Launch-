@@ -18,5 +18,9 @@
  "business": {
   "higher": 261,
   "ordinary": 314
+ },
+ "home-economics": {
+  "higher": 67,
+  "ordinary": 62
  }
 }
