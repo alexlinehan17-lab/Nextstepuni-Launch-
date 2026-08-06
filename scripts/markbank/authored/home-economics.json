@@ -6560,9 +6560,9 @@
     "id": "r-2",
     "kind": "anyN",
     "verbatim": "Conduction transfer of heat through a solid;",
-    "marks": 3,
+    "marks": null,
     "group": {
-     "claimMax": 3,
+     "claimMax": 1,
      "perOption": 3,
      "options": [
       "Conduction transfer of heat through a solid;",
@@ -6635,9 +6635,9 @@
     "id": "r-1",
     "kind": "anyN",
     "verbatim": "humectants prevent food from losing moisture; prevent foods from drying out/hardening; etc.",
-    "marks": 6,
+    "marks": null,
     "group": {
-     "claimMax": 6,
+     "claimMax": 2,
      "perOption": 3,
      "options": [
       "humectants prevent food from losing moisture; prevent foods from drying out/hardening; etc.",
@@ -6684,9 +6684,9 @@
     "id": "r-1",
     "kind": "anyN",
     "verbatim": "Term life assurance",
-    "marks": 3,
+    "marks": null,
     "group": {
-     "claimMax": 3,
+     "claimMax": 1,
      "perOption": 3,
      "options": [
       "Term life assurance",
@@ -6703,9 +6703,9 @@
     "id": "r-2",
     "kind": "anyN",
     "verbatim": "Term life assurance the insured person pays a premium for a set amount of time; covers policy holder for a specific amount of time; a lump sum is paid out to dependents if the policy holder dies during the set time period; if policy holder survives past the duration of policy, no payment is made; generally cheapest type of life assurance; etc.",
-    "marks": 3,
+    "marks": null,
     "group": {
-     "claimMax": 3,
+     "claimMax": 1,
      "perOption": 3,
      "options": [
       "Term life assurance the insured person pays a premium for a set amount of time; covers policy holder for a specific amount of time; a lump sum is paid out to dependents if the policy holder dies during the set time period; if policy holder survives past the duration of policy, no payment is made; generally cheapest type of life assurance; etc.",
