@@ -2,6 +2,7 @@ import { onCall, HttpsError } from "firebase-functions/v2/https";
 import { logger } from "firebase-functions/v2";
 import { getFirestore } from "firebase-admin/firestore";
 import { timingSafeEqual } from "crypto";
+import { syncAuthorizationClaims } from "./authClaims";
 
 /**
  * Staff-access provisioning — the trust anchor for the Staff Dashboard.
@@ -54,6 +55,7 @@ export const claimStaffAccess = onCall({ cors: true }, async (request) => {
   }
   if (existingRole === "gc" || existingRole === "staff") {
     // Already staff — treat as success (idempotent), but keep their school.
+    await syncAuthorizationClaims(uid, { role: existingRole, school: userSnap.data()?.school });
     return { success: true, alreadyStaff: true };
   }
 
@@ -95,6 +97,7 @@ export const claimStaffAccess = onCall({ cors: true }, async (request) => {
   // Grant staff. role is set here (server-side) because the /users rule forbids
   // clients from writing role themselves. Clear the throttle record on success.
   await userRef.set({ role: "staff", school }, { merge: true });
+  await syncAuthorizationClaims(uid, { role: "staff", school });
   await attemptsRef.delete().catch(() => {});
   logger.info(`claimStaffAccess: granted staff to ${uid} for school "${school}"`);
   return { success: true };

@@ -3,10 +3,14 @@ import type { Config } from 'tailwindcss';
 const config: Config = {
   content: [
     './index.html',
-    './**/*.{ts,tsx}',
+    './*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
     './hooks/**/*.{ts,tsx}',
     './contexts/**/*.{ts,tsx}',
+    './data/**/*.{ts,tsx}',
+    './design/**/*.{ts,tsx}',
+    './services/**/*.{ts,tsx}',
+    './utils/**/*.{ts,tsx}',
   ],
   darkMode: 'class',
   theme: {

@@ -719,8 +719,8 @@ export const CARDS: SecCard[] = [
     questionText: "Differentiate between each of the following types of food poisoning: infectious food poisoning; toxic food poisoning.",
     tariffModel: {"kind":"fixed","notation":"2 points @ 3 marks (graded 3:2:1:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "required", verbatim: "endotoxins are produced inside the bacterial cells as they grow", marks: 3, accepts: ["caused by eating foods containing large number of pathogenic bacteria","endotoxins are easy to destroy","incubation period of over 12 hours","Salmonella, Listeria, E. coli"], contextNote: "Infectious food poisoning. One point worth 3 marks on a graded band (3:2:1:0): a developed difference scores 3, a bare statement scores less.", openList: true },
-    { id: "r-2", kind: "required", verbatim: "exotoxins are produced outside the bacterial cell as they grow", marks: 3, accepts: ["exotoxins are hard to destroy","boiling for 30 minutes is required","Staphylococcus aureus, Clostridium botulinum","Clostridium perfringens/welchii"], contextNote: "Toxic food poisoning. One point worth 3 marks on a graded band (3:2:1:0): a developed difference scores 3, a bare statement scores less.", openList: true },
+    { id: "r-1", kind: "point", verbatim: "endotoxins are produced inside the bacterial cells as they grow", marks: 3, accepts: ["caused by eating foods containing large number of pathogenic bacteria","endotoxins are easy to destroy","incubation period of over 12 hours","Salmonella, Listeria, E. coli"], contextNote: "Infectious food poisoning. One point worth 3 marks on a graded band (3:2:1:0): a developed difference scores 3, a bare statement scores less.", openList: true },
+    { id: "r-2", kind: "point", verbatim: "exotoxins are produced outside the bacterial cell as they grow", marks: 3, accepts: ["exotoxins are hard to destroy","boiling for 30 minutes is required","Staphylococcus aureus, Clostridium botulinum","Clostridium perfringens/welchii"], contextNote: "Toxic food poisoning. One point worth 3 marks on a graded band (3:2:1:0): a developed difference scores 3, a bare statement scores less.", openList: true },
     ],
   } as SecCard,
   {
@@ -746,9 +746,9 @@ export const CARDS: SecCard[] = [
     questionText: "Explain the following social welfare payments and give one example of each: social insurance payments; social assistance payments.",
     tariffModel: {"kind":"fixed","notation":"2 payments @ 2 marks (graded 2:1:0); 2 examples @ 1 mark (graded 1:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "required", verbatim: "payments to individuals who have paid the minimum 39 PRSI", marks: 2, accepts: ["not means tested"], contextNote: "Social insurance payments. The explanation is one point worth 2 marks on a graded band (2:1:0).", openList: true },
+    { id: "r-1", kind: "point", verbatim: "payments to individuals who have paid the minimum 39 PRSI", marks: 2, accepts: ["not means tested"], contextNote: "Social insurance payments. The explanation is one point worth 2 marks on a graded band (2:1:0).", openList: true },
     { id: "r-2", kind: "anyN", verbatim: "examples", marks: 1, contextNote: "Social insurance payments. One example, 1 mark (graded 1:0). It has to be a contributory, PRSI-based payment.", openList: true, group: {"claimMax":1,"perOption":1,"options":["jobseeker’s benefit","illness benefit","maternity benefit","paternity benefit","widow/widower or surviving civil partner (contributory) pension","carer’s benefit","contributory old age pension"]} },
-    { id: "r-3", kind: "required", verbatim: "payments to individuals who have paid insufficient PRSI contributions", marks: 2, accepts: ["is means tested"], contextNote: "Social assistance payments. The explanation is one point worth 2 marks on a graded band (2:1:0).", openList: true },
+    { id: "r-3", kind: "point", verbatim: "payments to individuals who have paid insufficient PRSI contributions", marks: 2, accepts: ["is means tested"], contextNote: "Social assistance payments. The explanation is one point worth 2 marks on a graded band (2:1:0).", openList: true },
     { id: "r-4", kind: "anyN", verbatim: "examples", marks: 1, contextNote: "Social assistance payments. One example, 1 mark (graded 1:0). It has to be a means-tested payment.", openList: true, group: {"claimMax":1,"perOption":1,"options":["jobseeker’s allowance","working family payment","supplementary welfare allowance","disability allowance","carer’s allowance","one parent family payment"]} },
     ],
   } as SecCard,
@@ -776,8 +776,8 @@ export const CARDS: SecCard[] = [
     questionText: "Outline the function of each of the following parts of a refrigerator: the condenser; the evaporator.",
     tariffModel: {"kind":"fixed","notation":"2 functions @ 3 marks (graded 3:2:1:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "required", verbatim: "cools/changes the gaseous refrigerant (liquid ammonia, freon 12, isobutane)", marks: 3, accepts: ["sends liquid refrigerant to evaporator"], contextNote: "the condenser. One function worth 3 marks on a graded band (3:2:1:0). Full marks need the change of state named — gas back to liquid.", openList: true },
-    { id: "r-2", kind: "required", verbatim: "uses heat from the fridge cabinet to convert the liquid refrigerant into a gas", marks: 3, accepts: ["cooling the fridge cabinet"], contextNote: "the evaporator. One function worth 3 marks on a graded band (3:2:1:0). Full marks need both halves: heat is drawn from the cabinet and the liquid refrigerant turns to gas.", openList: true },
+    { id: "r-1", kind: "point", verbatim: "cools/changes the gaseous refrigerant (liquid ammonia, freon 12, isobutane)", marks: 3, accepts: ["sends liquid refrigerant to evaporator"], contextNote: "the condenser. One function worth 3 marks on a graded band (3:2:1:0). Full marks need the change of state named — gas back to liquid.", openList: true },
+    { id: "r-2", kind: "point", verbatim: "uses heat from the fridge cabinet to convert the liquid refrigerant into a gas", marks: 3, accepts: ["cooling the fridge cabinet"], contextNote: "the evaporator. One function worth 3 marks on a graded band (3:2:1:0). Full marks need both halves: heat is drawn from the cabinet and the liquid refrigerant turns to gas.", openList: true },
     ],
   } as SecCard,
   {

@@ -4,14 +4,15 @@
  */
 
 import React, { createContext, useContext, useState, useEffect, useCallback, useRef } from 'react';
-import { auth, db } from '../firebase';
+import { auth } from '../firebase';
 import { onAuthStateChanged, signOut, type User as FirebaseUser } from 'firebase/auth';
-import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { type SessionUser, yearGroupToCurriculumLevel, type CurriculumLevel, isSchoolStaff } from '../utils/authUtils';
 import { type UserProgress, type NorthStar } from '../types';
 import { type StudentSubjectProfile } from '../components/subjectData';
 import { generateAutoNotifications } from '../components/gc/gcNotifications';
 import { logError } from '../utils/logError';
+import { getProgressDocument } from '../services/progressRepository';
+import { getUserDocument, mergeUserDocument } from '../services/userRepository';
 
 // ─── Types ──────────────────────────────────────────────────
 
@@ -122,13 +123,19 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
         // Regular user — fetch profile + progress
         try {
-          const [userDoc, progressDoc] = await Promise.all([
-            getDoc(doc(db, 'users', firebaseUser.uid)),
-            getDoc(doc(db, 'progress', firebaseUser.uid)),
+          const [userData, progressData] = await Promise.all([
+            getUserDocument(firebaseUser.uid),
+            getProgressDocument(firebaseUser.uid),
           ]);
+          const token = await firebaseUser.getIdTokenResult();
+          const claimedRole = token.claims.role;
+          const claimedSchool = token.claims.school;
+          const roleFromClaims = claimedRole === 'gc' || claimedRole === 'staff' || claimedRole === 'admin'
+            ? claimedRole
+            : undefined;
+          const schoolFromClaims = typeof claimedSchool === 'string' ? claimedSchool : undefined;
 
-          if (userDoc.exists()) {
-            const userData = userDoc.data();
+          if (userData) {
 
             // ─── Junior Cycle Phase 1: backfill curriculumLevel ──────────
             // Existing users (created before Phase 1) lack the
@@ -141,35 +148,24 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
               curriculumLevel = userData.yearGroup
                 ? yearGroupToCurriculumLevel(userData.yearGroup)
                 : 'senior';
-              setDoc(
-                doc(db, 'users', firebaseUser.uid),
-                { curriculumLevel },
-                { merge: true },
-              ).catch(err => console.error('Failed to backfill curriculumLevel:', err));
+              mergeUserDocument(firebaseUser.uid, { curriculumLevel })
+                .catch(err => console.error('Failed to backfill curriculumLevel:', err));
             }
 
-            // Defence-in-depth: if the email is a GC-pattern address but
-            // the user doc lacks role/school (legacy or partially-seeded
-            // accounts), derive them from the email so the GC dashboard
-            // still loads. Doc values still win when present.
-            const email = firebaseUser.email ?? '';
-            const gcMatch = email.match(/^gc-([^@]+)@nextstep\.app$/);
-            const isGCByEmail = gcMatch !== null;
-            const schoolFromEmail = gcMatch ? gcMatch[1] : undefined;
             setUser({
               uid: firebaseUser.uid,
               name: userData.name,
               avatar: userData.avatar || 'Charlie',
               isAdmin: false,
-              role: userData.role ?? (isGCByEmail ? 'gc' : undefined),
-              school: userData.school ?? schoolFromEmail,
+              role: userData.role ?? roleFromClaims,
+              school: userData.school ?? schoolFromClaims,
               yearGroup: userData.yearGroup,
               curriculumLevel,
               needsPasswordChange: userData.needsPasswordChange || false,
             });
 
-            if (progressDoc.exists()) {
-              const pd = progressDoc.data();
+            if (progressData) {
+              const pd = progressData;
               setLoadedData({
                 userProgress: pd as UserProgress,
                 northStar: pd.northStar ? (pd.northStar as NorthStar) : null,
@@ -195,24 +191,16 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
             // don't sign out — that destroys the session. Use a fallback user,
             // but still check the progress doc for onboarding state.
             const fallbackName = firebaseUser.displayName || firebaseUser.email?.split('@')[0] || 'Student';
-            // GC fallback: emails of the form gc-{school}@nextstep.app are
-            // counsellor accounts (see LoginPage handleGCLogin). Derive
-            // role + school from the email so AppRouter can route to the
-            // GC dashboard even when the Firestore user doc is missing
-            // (common in localhost / fresh setups before Firestore is seeded).
-            const email = firebaseUser.email ?? '';
-            const gcMatch = email.match(/^gc-([^@]+)@nextstep\.app$/);
-            const isGCByEmail = gcMatch !== null;
-            const schoolFromEmail = gcMatch ? gcMatch[1] : undefined;
             setUser({
               uid: firebaseUser.uid,
               name: fallbackName,
               avatar: 'Charlie',
               isAdmin: false,
-              ...(isGCByEmail ? { role: 'gc' as const, school: schoolFromEmail } : {}),
+              role: roleFromClaims,
+              school: schoolFromClaims,
             });
-            if (progressDoc.exists()) {
-              const pd = progressDoc.data();
+            if (progressData) {
+              const pd = progressData;
               setLoadedData({
                 userProgress: pd as UserProgress,
                 northStar: pd.northStar ? (pd.northStar as NorthStar) : null,
@@ -232,19 +220,11 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         } catch (err) {
           console.error('Error fetching user data:', err);
           const fallbackName = firebaseUser.displayName || firebaseUser.email?.split('@')[0] || 'Student';
-          // Same GC email-pattern fallback as the no-doc branch above —
-          // keeps GC sign-in functional even when the Firestore fetch
-          // fails (e.g. offline / permissions transient).
-          const email = firebaseUser.email ?? '';
-          const gcMatch = email.match(/^gc-([^@]+)@nextstep\.app$/);
-          const isGCByEmail = gcMatch !== null;
-          const schoolFromEmail = gcMatch ? gcMatch[1] : undefined;
           setUser({
             uid: firebaseUser.uid,
             name: fallbackName,
             avatar: 'Charlie',
             isAdmin: false,
-            ...(isGCByEmail ? { role: 'gc' as const, school: schoolFromEmail } : {}),
           });
           setLoadedData({ ...defaultLoadedData, needsOnboarding: true });
         }

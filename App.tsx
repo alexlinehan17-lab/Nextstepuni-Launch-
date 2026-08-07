@@ -20,7 +20,7 @@ import { type YearGroup, type StudentSubject } from './components/subjectData';
 import { type PastJCData } from './types';
 import StudyPassportModal from './components/StudyPassportModal';
 import { db } from './firebase';
-import { doc, getDoc, setDoc, updateDoc, increment, arrayUnion, writeBatch } from 'firebase/firestore';
+import { doc, getDoc, setDoc, updateDoc, arrayUnion, writeBatch } from 'firebase/firestore';
 import { type ModuleProgress, type NorthStar } from './types';
 import { useToast } from './components/Toast';
 import { ALL_COURSES, categoryTitles } from './courseData';
@@ -52,6 +52,7 @@ import { useAuth } from './contexts/AuthContext';
 import { isSchoolStaff } from './utils/authUtils';
 import { useNavigation } from './contexts/NavigationContext';
 import { useProgress } from './contexts/ProgressContext';
+import { saveModuleProgress } from './services/progressRepository';
 
 /* ── Mobile Bottom Navigation Bar ── */
 interface MobileBottomNavProps {
@@ -303,8 +304,6 @@ const App: React.FC = () => {
     setUserProgress(prev => ({ ...prev, [moduleId]: newProgress }));
 
     try {
-      const progressDocRef = doc(db, "progress", user.uid);
-
       // Compute points to award (pure computation, no Firestore reads)
       let pointsToAward = 0;
       if (newSection > prevSection) {
@@ -329,10 +328,6 @@ const App: React.FC = () => {
       // Save progress + award points atomically via setDoc merge.
       // increment() is resolved server-side — no read needed, no cache staleness,
       // concurrent section completions can't clobber each other's points.
-      const updates: Record<string, any> = { [moduleId]: newProgress };
-      if (pointsToAward > 0) {
-        updates.pointsData = { totalEarned: increment(pointsToAward) };
-      }
       // Fired, not awaited. Awaiting meant a student working through a module
       // on bad wifi got no points, no achievement toasts and no weekly-goal
       // credit — everything below sat behind a promise that never settles
@@ -340,7 +335,7 @@ const App: React.FC = () => {
       // increment() is still resolved server-side at flush time, so concurrent
       // section completions remain safe.
       saveInBackground(
-        setDoc(progressDocRef, updates, { merge: true }),
+        saveModuleProgress(user.uid, moduleId, newProgress, pointsToAward),
         'App.saveModuleProgress',
         // Roll back optimistic update — restore the full previous object, not a minimal stub
         () => setUserProgress(prev => ({ ...prev, [moduleId]: prevModuleProgress ?? { unlockedSection: 0 } })),

@@ -10,8 +10,10 @@
  * with its curriculum subtopic id, adversarially verified). Add a subject by
  * dropping its wave file here and re-running this.
  *
- * Emits: data/paperTrail/topicTags.ts (PAPER_TOPIC_TAGS + TOPIC_LABELS). Labels
- * are pulled from curriculum.ts for only the subtopic ids actually used.
+ * Emits JSON data artifacts plus a small typed TypeScript adapter. Labels are
+ * pulled from curriculum.ts for only the subtopic ids actually used. Keeping
+ * the 22k-question corpus out of TypeScript materially reduces compiler/editor
+ * work while Vite still code-splits it with the lazy Paper Trail route.
  *
  * Usage:  node scripts/paper-trail/topic-tags/build-tags.mjs
  */
@@ -71,11 +73,15 @@ const out = `/**
  * Coverage: ${subjects.join(', ')} — ${papers.length} papers, ${questionCount} questions.
  */
 
+import topicLabels from './topicLabels.json';
+import paperTopicTags from './paperTopicTags.json';
 import { type PaperTopicTags } from '../../types/paperTrailTopics';
 
-export const TOPIC_LABELS: Record<string, string> = ${JSON.stringify(labels, null, 2)};
+export const TOPIC_LABELS: Record<string, string> = topicLabels;
 
-export const PAPER_TOPIC_TAGS: PaperTopicTags[] = ${JSON.stringify(papers, null, 1)};
+export const PAPER_TOPIC_TAGS: PaperTopicTags[] = paperTopicTags as PaperTopicTags[];
 `;
+fs.writeFileSync('data/paperTrail/topicLabels.json', JSON.stringify(labels));
+fs.writeFileSync('data/paperTrail/paperTopicTags.json', JSON.stringify(papers));
 fs.writeFileSync('data/paperTrail/topicTags.ts', out);
 console.log(`wrote ${papers.length} papers, ${questionCount} questions, ${Object.keys(labels).length} topics (${subjects.join(', ')})`);

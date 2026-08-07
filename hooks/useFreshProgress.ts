@@ -22,16 +22,14 @@
  *   const { doc: rawProgressDoc, loaded: progressLoaded } = useFreshProgress(uid);
  */
 import { useState, useEffect } from 'react';
-import { doc as fsDoc, getDoc } from 'firebase/firestore';
-import { db } from '../firebase';
+import { getProgressDocument, type ProgressDocument } from '../services/progressRepository';
 
-const inflight = new Map<string, Promise<Record<string, any> | null>>();
+const inflight = new Map<string, Promise<ProgressDocument | null>>();
 
-function loadProgress(uid: string): Promise<Record<string, any> | null> {
+function loadProgress(uid: string): Promise<ProgressDocument | null> {
   const existing = inflight.get(uid);
   if (existing) return existing;
-  const p = getDoc(fsDoc(db, 'progress', uid))
-    .then((snap) => (snap.exists() ? snap.data() : null))
+  const p = getProgressDocument(uid)
     .catch(() => null)
     .finally(() => { inflight.delete(uid); });
   inflight.set(uid, p);
@@ -39,7 +37,7 @@ function loadProgress(uid: string): Promise<Record<string, any> | null> {
 }
 
 export function useFreshProgress(uid: string | undefined) {
-  const [doc, setDoc] = useState<Record<string, any> | null>(null);
+  const [doc, setDoc] = useState<ProgressDocument | null>(null);
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {

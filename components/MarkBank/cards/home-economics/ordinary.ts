@@ -214,8 +214,8 @@ export const CARDS: SecCard[] = [
     questionText: "In relation to household expenditure explain each of the following:",
     tariffModel: {"kind":"fixed","notation":"2 @ 3 marks (graded 3:2:1:0)","answer":6,"perPart":null,"ofParts":null}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "explain", verbatim: "Essential expenditure: spending on basic necessities e.g. food/clothes/warmth; housing e.g. rent/mortgage is both fixed and irregular; insurance; loans; medical bills; household goods; utility bills; car; etc.", marks: 3, accepts: ["spending on basic necessities","food/clothes/warmth","housing e.g. rent/mortgage","insurance","loans","medical bills","household goods","utility bills","car"], contextNote: "This is ONE point worth 3 marks, graded 3:2:1:0 — a clear explanation of what essential expenditure is (spending on basic necessities), supported by an example, scores the full 3; a thin or partly-correct answer slides to 2 or 1; nothing relevant scores 0. You do not have to give the whole list — the examples after the definition are the scheme's suggestions, not separate marks.", openList: true },
-    { id: "r-2", kind: "explain", verbatim: "Discretionary expenditure: spending on non-essentials/luxuries; entertainment; alcohol; cosmetics; holidays; garden items; savings; leisure, gym membership; streaming subscriptions; internet; etc.", marks: 3, contextNote: "This is ONE point worth 3 marks, graded 3:2:1:0 — defining it as spending on non-essentials/luxuries and backing it with an example earns the full 3; a vague answer slides to 2 or 1. The examples listed are alternatives the examiner expects to see, not extra marks, and the list ends in 'etc.' so other genuine luxuries are accepted.", openList: true },
+    { id: "r-1", kind: "point", verbatim: "Essential expenditure: spending on basic necessities e.g. food/clothes/warmth; housing e.g. rent/mortgage is both fixed and irregular; insurance; loans; medical bills; household goods; utility bills; car; etc.", marks: 3, accepts: ["spending on basic necessities","food/clothes/warmth","housing e.g. rent/mortgage","insurance","loans","medical bills","household goods","utility bills","car"], contextNote: "This is ONE point worth 3 marks, graded 3:2:1:0 — a clear explanation of what essential expenditure is (spending on basic necessities), supported by an example, scores the full 3; a thin or partly-correct answer slides to 2 or 1; nothing relevant scores 0. You do not have to give the whole list — the examples after the definition are the scheme's suggestions, not separate marks.", openList: true },
+    { id: "r-2", kind: "point", verbatim: "Discretionary expenditure: spending on non-essentials/luxuries; entertainment; alcohol; cosmetics; holidays; garden items; savings; leisure, gym membership; streaming subscriptions; internet; etc.", marks: 3, contextNote: "This is ONE point worth 3 marks, graded 3:2:1:0 — defining it as spending on non-essentials/luxuries and backing it with an example earns the full 3; a vague answer slides to 2 or 1. The examples listed are alternatives the examiner expects to see, not extra marks, and the list ends in 'etc.' so other genuine luxuries are accepted.", openList: true },
     ],
   } as SecCard,
   {
@@ -798,9 +798,9 @@ export const CARDS: SecCard[] = [
     questionText: "Indicate with a tick (✓) whether each of the following statements is true or false.\n\nHigh salt intake is linked with high blood pressure\nUltra-processed foods are less healthy than fresh foods\nVitamin B and Vitamin C are fat soluble vitamins",
     tariffModel: {"kind":"fixed","notation":"3 @ 2 marks (graded 2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "required", verbatim: "High salt intake is linked with high blood pressure", marks: 2, accepts: ["True"], contextNote: "Tick TRUE. Graded 2:0 — 2 marks for the correct column, 0 for the wrong one. There is no partial credit on a tick." },
-    { id: "r-2", kind: "required", verbatim: "Ultra-processed foods are less healthy than fresh foods", marks: 2, accepts: ["True"], contextNote: "Tick TRUE. Graded 2:0 — 2 marks for the correct column, 0 for the wrong one." },
-    { id: "r-3", kind: "required", verbatim: "Vitamin B and Vitamin C are fat soluble vitamins", marks: 2, accepts: ["False"], contextNote: "Tick FALSE — the B group and Vitamin C are water soluble. Graded 2:0 — 2 marks for the correct column, 0 for the wrong one." },
+    { id: "r-1", kind: "point", verbatim: "High salt intake is linked with high blood pressure", marks: 2, accepts: ["True"], contextNote: "Tick TRUE. Graded 2:0 — 2 marks for the correct column, 0 for the wrong one. There is no partial credit on a tick." },
+    { id: "r-2", kind: "point", verbatim: "Ultra-processed foods are less healthy than fresh foods", marks: 2, accepts: ["True"], contextNote: "Tick TRUE. Graded 2:0 — 2 marks for the correct column, 0 for the wrong one." },
+    { id: "r-3", kind: "point", verbatim: "Vitamin B and Vitamin C are fat soluble vitamins", marks: 2, accepts: ["False"], contextNote: "Tick FALSE — the B group and Vitamin C are water soluble. Graded 2:0 — 2 marks for the correct column, 0 for the wrong one." },
     ],
   } as SecCard,
   {
@@ -827,9 +827,9 @@ export const CARDS: SecCard[] = [
     questionText: "Indicate with a tick (✓) whether each of the following statements is true or false.\n\nOily fish contains omega 3 fatty acids\nFish flesh is made up of short fibres called myomeres\nWhite fish is high in fat",
     tariffModel: {"kind":"fixed","notation":"3 @ 2 marks (graded 2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "required", verbatim: "Oily fish contains omega 3 fatty acids", marks: 2, accepts: ["True"], contextNote: "Tick TRUE. Graded 2:0 — 2 marks for the correct column, 0 for the wrong one." },
-    { id: "r-2", kind: "required", verbatim: "Fish flesh is made up of short fibres called myomeres", marks: 2, accepts: ["True"], contextNote: "Tick TRUE — the short muscle blocks in fish flesh are myomeres, which is why fish cooks quickly. Graded 2:0." },
-    { id: "r-3", kind: "required", verbatim: "White fish is high in fat", marks: 2, accepts: ["False"], contextNote: "Tick FALSE — white fish is low in fat; the fat is stored in the liver rather than the flesh. Graded 2:0." },
+    { id: "r-1", kind: "point", verbatim: "Oily fish contains omega 3 fatty acids", marks: 2, accepts: ["True"], contextNote: "Tick TRUE. Graded 2:0 — 2 marks for the correct column, 0 for the wrong one." },
+    { id: "r-2", kind: "point", verbatim: "Fish flesh is made up of short fibres called myomeres", marks: 2, accepts: ["True"], contextNote: "Tick TRUE — the short muscle blocks in fish flesh are myomeres, which is why fish cooks quickly. Graded 2:0." },
+    { id: "r-3", kind: "point", verbatim: "White fish is high in fat", marks: 2, accepts: ["False"], contextNote: "Tick FALSE — white fish is low in fat; the fat is stored in the liver rather than the flesh. Graded 2:0." },
     ],
   } as SecCard,
   {
@@ -842,9 +842,9 @@ export const CARDS: SecCard[] = [
     questionText: "Using the terms listed below, complete the following in relation to carbohydrates.\n\ndietary fibre     liver     energy\n\nThe movement of food through the intestine is stimulated by ______________.\nGlucose releases heat and ______________.\nExcess carbohydrate is converted to glycogen and stored in the ______________ and muscles.",
     tariffModel: {"kind":"fixed","notation":"3 @ 2 marks (graded 2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "required", verbatim: "dietary fibre", marks: 2, contextNote: "First blank — 'The movement of food through the intestine is stimulated by ______.' Graded 2:0: the right term from the list scores 2, anything else 0." },
-    { id: "r-2", kind: "required", verbatim: "energy", marks: 2, contextNote: "Second blank — 'Glucose releases heat and ______.' Graded 2:0." },
-    { id: "r-3", kind: "required", verbatim: "liver", marks: 2, contextNote: "Third blank — 'Excess carbohydrate is converted to glycogen and stored in the ______ and muscles.' Graded 2:0." },
+    { id: "r-1", kind: "point", verbatim: "dietary fibre", marks: 2, contextNote: "First blank — 'The movement of food through the intestine is stimulated by ______.' Graded 2:0: the right term from the list scores 2, anything else 0." },
+    { id: "r-2", kind: "point", verbatim: "energy", marks: 2, contextNote: "Second blank — 'Glucose releases heat and ______.' Graded 2:0." },
+    { id: "r-3", kind: "point", verbatim: "liver", marks: 2, contextNote: "Third blank — 'Excess carbohydrate is converted to glycogen and stored in the ______ and muscles.' Graded 2:0." },
     ],
   } as SecCard,
   {

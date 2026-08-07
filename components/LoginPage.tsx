@@ -561,6 +561,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       // Redeem the code — server verifies + grants role:'staff' and sets school.
       const claimFn = httpsCallable<{ school: string; code: string }, { success: boolean }>(getFunctions(app), 'claimStaffAccess');
       await claimFn({ school, code: staffCode.trim() });
+      await auth.currentUser?.getIdToken(true);
       // Reload so AuthContext re-reads role:'staff' and routes to the Staff Dashboard.
       window.location.reload();
     } catch (err: any) {
@@ -639,6 +640,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       // throws here and the account is rolled back below.
       const joinFn = httpsCallable<{ school: string; code: string }, { success: boolean }>(getFunctions(app), 'claimStudentSchool');
       await joinFn({ school, code: joinCode.trim() });
+      await createdUser.getIdToken(true);
       // Late-rejection cleanup: if the /users write is rejected AFTER we stop
       // waiting, the Auth account would otherwise survive with no name, avatar,
       // createdAt or consent record — an orphan the GC sees as "New" forever.

@@ -128,7 +128,7 @@ interface ProgressData {
   timetableCompletions?: Record<string, string[]>;
   timetableStreak?: { currentStreak: number; lastActiveDate: string; longestStreak: number };
   subjectProfile?: {
-    subjects: { subjectName: string; level: string; currentGrade: string; targetGrade: string }[];
+    subjects: { subjectName: string; level: string; currentGrade?: string; targetGrade?: string }[];
   };
   studyDebriefs?: { subject: string; strategy: string; confidenceAfter: number; date: string }[];
 }

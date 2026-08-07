@@ -4,7 +4,7 @@
  */
 
 import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
-import { doc, getDoc, setDoc, arrayUnion, increment } from 'firebase/firestore';
+import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { saveInBackground } from '../utils/firestoreWrite';
 import { useProgress } from '../contexts/ProgressContext';
@@ -26,6 +26,7 @@ import {
 import { ACHIEVEMENTS } from '../achievementData';
 import { ALL_COURSES } from '../courseData';
 import { type TimetableCompletions } from '../components/subjectData';
+import { saveGamificationFields, unlockAchievements } from '../services/progressRepository';
 
 interface UseGamificationOptions {
   uid?: string;
@@ -221,7 +222,7 @@ export function useGamification({
     // Update local state immediately (optimistic)
     setGamificationData(merged);
     // Fire-and-forget Firestore write — queues offline via persistence
-    setDoc(doc(db, 'progress', uid), { gamification: merged }, { merge: true }).catch(err => {
+    saveGamificationFields(uid, data).catch(err => {
       console.error('Failed to save gamification data:', err);
     });
   }, [uid, gamificationData]);
@@ -282,21 +283,18 @@ export function useGamification({
           // Save achievements + award bonus points via setDoc merge.
           // arrayUnion handles deduplication server-side — no read needed.
           // increment() handles points atomically — no cache staleness.
-          const progressRef = doc(db, 'progress', uid);
           try {
-            const updates: Record<string, any> = {
-              gamification: {
-                unlockedAchievements: arrayUnion(...updatedList),
-                achievementTimestamps: timestamps,
-              },
-            };
-            if (totalBonus > 0) {
-              updates.pointsData = { totalEarned: increment(totalBonus) };
-            }
             // Fired, not awaited: offline this promise never settles, so the
             // student unlocked an achievement and saw nothing — no toast, no
             // points, no badge — until the next full reload.
-            saveInBackground(setDoc(progressRef, updates, { merge: true }), 'useGamification.unlockAchievements');
+            saveInBackground(
+              unlockAchievements(
+                uid,
+                newlyUnlocked.map(item => ({ id: item.id, timestamp: timestamps[item.id] })),
+                totalBonus,
+              ),
+              'useGamification.unlockAchievements',
+            );
 
             // Update local state to match what was written
             setGamificationData(prev => ({

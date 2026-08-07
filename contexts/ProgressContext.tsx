@@ -4,8 +4,6 @@
  */
 
 import React, { createContext, useContext, useState, useEffect, useRef, useCallback, useMemo } from 'react';
-import { db } from '../firebase';
-import { collection, doc, getDoc, getDocs } from 'firebase/firestore';
 import { type UserProgress, type NorthStar, type TopicMasteryMap, type UnifiedMockResult } from '../types';
 import { type StudentSubjectProfile } from '../components/subjectData';
 import { computeStreak } from '../components/timetableAlgorithm';
@@ -14,6 +12,12 @@ import { useAuth } from './AuthContext';
 import { type StudySessionRecord } from '../utils/strategyRegistry';
 import { type DebriefEntry } from '../components/StudyDebrief';
 import { logError } from '../utils/logError';
+import {
+  extractModuleProgress,
+  getProgressDocument,
+  getStudySessions,
+  type ProgressDocument,
+} from '../services/progressRepository';
 
 // ─── Types ──────────────────────────────────────────────────
 
@@ -79,7 +83,7 @@ interface ProgressContextValue {
    *  doc (useGamification, useIslandShop, useWeeklyChallenge,
    *  useTopicMastery, useMockResults). New code should use the typed
    *  accessors above. */
-  rawProgressDoc: Record<string, any>;
+  rawProgressDoc: ProgressDocument;
 
   /** Re-fetches the progress doc from Firestore and updates all derived state.
    *  Replaces the old per-hook reload() pattern. */
@@ -111,7 +115,7 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   const [unlockedCardStyles, setUnlockedCardStyles] = useState<string[]>([]);
   const [dismissedGuides, setDismissedGuides] = useState<Record<string, string>>({});
   const [progressLoaded, setProgressLoaded] = useState(false);
-  const [rawProgressDoc, setRawProgressDoc] = useState<Record<string, any>>({});
+  const [rawProgressDoc, setRawProgressDoc] = useState<ProgressDocument>({});
   const [reloadVersion, setReloadVersion] = useState(0);
   // Study sessions live in /progress/{uid}/sessions/{sessionId} subcollection
   // (migrated from the old rawProgressDoc.studySessions array — see Schema
@@ -202,19 +206,12 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   useEffect(() => {
     if (reloadVersion === 0 || !user?.uid) return;
     let cancelled = false;
-    getDoc(doc(db, 'progress', user.uid)).then(snap => {
+    getProgressDocument(user.uid).then(pd => {
       if (cancelled) return;
-      if (snap.exists()) {
-        const pd = snap.data();
+      if (pd) {
         setRawProgressDoc(pd);
         // Cherry-picked field refresh (parity with initial sync above).
-        const progressMap: UserProgress = {};
-        for (const [key, val] of Object.entries(pd)) {
-          if (val && typeof val === 'object' && 'unlockedSection' in val) {
-            progressMap[key] = val as { unlockedSection: number };
-          }
-        }
-        setUserProgress(progressMap);
+        setUserProgress(extractModuleProgress(pd));
         setStudentProfile((pd.subjectProfile as StudentSubjectProfile) ?? null);
         setNorthStar((pd.northStar as NorthStar) ?? null);
         setTimetableCompletions(pd.timetableCompletions || {});
@@ -235,10 +232,9 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       return;
     }
     let cancelled = false;
-    getDocs(collection(db, 'progress', user.uid, 'sessions'))
-      .then(snap => {
+    getStudySessions(user.uid)
+      .then(records => {
         if (cancelled) return;
-        const records = snap.docs.map(d => d.data() as StudySessionRecord);
         setSessionsFromSubcollection(records);
       })
       .catch(err => {

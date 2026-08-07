@@ -508,7 +508,7 @@ describe('grading', () => {
     // "finished" heuristic unless it happened to be last, silently killing the
     // one mechanic that brings a failed card back.
     const three = [card(), card({ id: 'bio-q7', questionText: 'Second.' }), card({ id: 'bio-q8', questionText: 'Third.' })];
-    const { onFinish } = renderSession(three, {});
+    const { onFinish } = renderSession(three);
     // Miss the first, then answer the other two.
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     fireEvent.click(screen.getByRole('button', { name: 'Missed it' }));

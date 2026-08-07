@@ -1,4 +1,4 @@
-name: CI
+name: Verify and deploy
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 jobs:
-  build:
+  verify-web:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,16 +20,103 @@ jobs:
 
       - run: npm ci
 
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
       - name: Lint
         run: npm run lint
 
       - name: Type check
         run: npm run typecheck
 
+      - name: Type check tests
+        run: npm run typecheck:test
+
       - name: Test
-        run: npm test
+        run: npm run test:all
 
       - name: Build
         run: npm run build
-        env:
-          GEMINI_API_KEY: 'dummy-key-for-ci'
+
+      - name: Upload verified web build
+        if: github.event_name == 'push'
+        uses: actions/upload-artifact@v4
+        with:
+          name: web-dist
+          path: dist
+          if-no-files-found: error
+          retention-days: 1
+
+  verify-functions:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: functions/package-lock.json
+
+      - run: npm ci
+        working-directory: functions
+
+      - name: Build Cloud Functions
+        run: npm run build
+        working-directory: functions
+
+  deploy-hosting:
+    if: github.event_name == 'push'
+    # Publish the client only after its matching rules/functions are live. If a
+    # backend deploy fails, the existing client remains in place.
+    needs: [verify-web, deploy-backend]
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download verified web build
+        uses: actions/download-artifact@v4
+        with:
+          name: web-dist
+          path: dist
+
+      - name: Deploy verified build to Firebase Hosting
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          channelId: live
+          projectId: nextstepuni-app
+
+  deploy-backend:
+    if: github.event_name == 'push'
+    needs: [verify-web, verify-functions]
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: functions/package-lock.json
+
+      - run: npm ci
+        working-directory: functions
+
+      - name: Build Cloud Functions
+        run: npm run build
+        working-directory: functions
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+
+      - name: Deploy Firestore, Storage, and Cloud Functions
+        run: npx --yes firebase-tools@14 deploy --only firestore,storage,functions --project nextstepuni-app --non-interactive

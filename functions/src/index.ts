@@ -6,6 +6,7 @@ import { getAuth } from "firebase-admin/auth";
 import { getFirestore, FieldValue } from "firebase-admin/firestore";
 import { randomInt } from "crypto";
 import { buildPublicProjection } from "./islandProjection";
+import { syncAuthorizationClaims } from "./authClaims";
 
 initializeApp();
 
@@ -208,6 +209,13 @@ export const onUserWritten = onDocumentWritten(
       await islandPublicRef.delete().catch(() => {});
       return;
     }
+
+    // Keep signed authorization claims aligned with the server-managed user
+    // document. Existing sessions continue to work through the rules fallback
+    // until their token refreshes; new tokens avoid repeated role-document reads.
+    await syncAuthorizationClaims(uid, userData).catch((err) => {
+      logger.error(`onUserWritten: failed to sync authorization claims for ${uid}`, err);
+    });
 
     if (userData.role === "gc" || userData.role === "staff" || userData.role === "admin" || userData.isAdmin === true) {
       await islandPublicRef.delete().catch(() => {});

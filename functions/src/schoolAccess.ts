@@ -2,6 +2,7 @@ import { onCall, HttpsError } from "firebase-functions/v2/https";
 import { logger } from "firebase-functions/v2";
 import { getFirestore } from "firebase-admin/firestore";
 import { timingSafeEqual } from "crypto";
+import { syncAuthorizationClaims } from "./authClaims";
 
 /**
  * Student school binding — the tenant-isolation trust anchor for students
@@ -71,7 +72,10 @@ export const claimStudentSchool = onCall({ cors: true }, async (request) => {
 
   // Already bound: idempotent if it's the same school, refuse a switch.
   if (typeof existing.school === "string" && existing.school.length > 0) {
-    if (existing.school === school) return { success: true, alreadyJoined: true };
+    if (existing.school === school) {
+      await syncAuthorizationClaims(uid, { school });
+      return { success: true, alreadyJoined: true };
+    }
     throw new HttpsError("failed-precondition", "Your account is already linked to a school.");
   }
 
@@ -103,6 +107,7 @@ export const claimStudentSchool = onCall({ cors: true }, async (request) => {
   // Bind the student to the school. `school` is written here (server-side)
   // because the /users rules forbid clients from writing it themselves.
   await userRef.set({ school }, { merge: true });
+  await syncAuthorizationClaims(uid, { school });
   await attemptsRef.delete().catch(() => {});
   logger.info(`claimStudentSchool: bound ${uid} to "${school}"`);
   return { success: true };

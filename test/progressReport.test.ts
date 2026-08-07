@@ -17,8 +17,9 @@ const stats: ProgressStats = {
   subjects: [{ subjectId: 'business', n: 3, avg: 55 }, { subjectId: 'mathematics', n: 1, avg: 80 }],
   weakestTopics: [{ subjectId: 'business', subtopicId: 'biz.marketing-mix', count: 2, avg: 40 }],
   gaps: { content: 0, process: 1, careless: 2, timing: 0 },
+  gapLoss: { content: 0, process: 20, careless: 30, timing: 0 },
   deck: { total: 5, due: 1, fresh: 3 },
-  streak: { current: 3, longest: 7, todayCount: 2, goal: 10, goalMet: false, activeToday: true },
+  streak: { current: 3, longest: 7, todayCount: 2, goal: 10, goalMet: false, activeToday: true, freezes: 0, protectedNow: false },
 };
 
 const opts = {

@@ -10,12 +10,15 @@ service cloud.firestore {
     // per-school code); `role` is client-immutable in the /users update rule,
     // so a client can never self-assign 'gc' or 'staff'.
     function isSchoolStaff() {
-      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role in ['gc', 'staff'];
+      return request.auth.token.get('role', null) in ['gc', 'staff']
+             || get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role in ['gc', 'staff'];
     }
 
     // Helper: the requesting staff member's own school.
     function callerSchool() {
-      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school;
+      return request.auth.token.get('school', null) != null
+             ? request.auth.token.school
+             : get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school;
     }
 
     // Users collection: each user can only read/write their own doc
