@@ -1494,9 +1494,10 @@ export function getCoursePageUrl(course: CAOCourse): string {
     case 'ATU': return duckyTo('atu.ie');
     case 'SETU': return duckyTo('setu.ie');
 
-    // PLC courses are listed on Qualifax — use !ducky to 302-redirect
-    // straight to the specific course page on qualifax.ie.
-    case 'PLC': return duckyTo('qualifax.ie');
+    // These are pathway archetypes rather than one named provider's course.
+    // Send students to Qualifax's official course finder instead of relying on
+    // a search-engine redirect, which is unreliable inside iOS WebViews.
+    case 'PLC': return 'https://www.qualifax.ie/courses';
     // SOLAS: our internal codes (e.g. APP-ELEC) aren't real, so omit them.
     case 'SOLAS':
       return `https://duckduckgo.com/?q=${encodeURIComponent(`! site:apprenticeship.ie ${course.title}`)}`;

@@ -42,7 +42,7 @@ bundles them into one `routerProps` object, and renders `<AppRouter {...routerPr
 into `routerProps` (`App.tsx:603-621`) **and** the `AppRouterProps` interface (`AppRouter.tsx:109-184`).
 
 **Provider nesting is load-bearing** (`index.tsx:47-64`): `ErrorBoundary > ToastProvider > AuthProvider >
-ProgressProvider > NavigationProvider > MotionConfig > PullToRefresh > App`. `ProgressContext` and `NavigationContext`
+ProgressProvider > NavigationProvider > MotionConfig > App`. `ProgressContext` and `NavigationContext`
 both consume `AuthContext` — never reorder so a consumer sits above its provider.
 
 **An educational MODULE** (~83 of them, registered in `moduleRegistry.ts`) is **not** a view. A module is reached via

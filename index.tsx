@@ -12,7 +12,6 @@ import './index.css';
 import { MotionConfig } from 'framer-motion';
 import App from './App';
 import ErrorBoundary from './components/ErrorBoundary';
-import PullToRefresh from './components/PullToRefresh';
 import { ToastProvider } from './components/Toast';
 import { AuthProvider } from './contexts/AuthContext';
 import { NavigationProvider } from './contexts/NavigationContext';
@@ -52,9 +51,7 @@ root.render(
           <ProgressProvider>
             <NavigationProvider>
               <MotionConfig reducedMotion="user">
-                <PullToRefresh>
-                  <App />
-                </PullToRefresh>
+                <App />
               </MotionConfig>
             </NavigationProvider>
           </ProgressProvider>

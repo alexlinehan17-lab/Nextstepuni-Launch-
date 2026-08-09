@@ -21,8 +21,9 @@ import NorthStarOnboarding from './NorthStarOnboarding';
 import { COLORS } from '../design/tokens';
 
 interface OnboardingProps {
+  userId: string;
   userName: string;
-  onComplete: (profile: StudentSubjectProfile, northStar?: NorthStar, essentialsMode?: boolean) => void;
+  onComplete: (profile: StudentSubjectProfile, northStar?: NorthStar, essentialsMode?: boolean) => void | Promise<void>;
   onSkip: () => void;
   /** Phase 8: switches the flow into JC→senior re-onboarding mode. Skips
    *  the welcome/year/mode/rest-days/exam-date/summary steps and runs
@@ -39,6 +40,33 @@ interface OnboardingProps {
 
 type Step = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
 const TOTAL_STEPS = 10;
+
+interface OnboardingDraft {
+  version: 1;
+  step: Step;
+  selectedSubjects: string[];
+  subjectConfigs: Record<string, { level: Level; currentGrade: Grade; targetGrade: Grade }>;
+  subjectBands: Record<string, { level: Level; currentBand: JCBand; targetBand: JCBand }>;
+  examDate: string;
+  yearGroup: YearGroup | null;
+  essentialsMode: boolean;
+  northStarData: NorthStar | null;
+  restDays: string[];
+}
+
+const onboardingDraftKey = (userId: string, mode: string) => `nextstepuni:onboarding-draft:v1:${userId}:${mode}`;
+
+function readOnboardingDraft(userId: string, mode: string): OnboardingDraft | null {
+  try {
+    const raw = localStorage.getItem(onboardingDraftKey(userId, mode));
+    if (!raw) return null;
+    const draft = JSON.parse(raw) as Partial<OnboardingDraft>;
+    if (draft.version !== 1 || typeof draft.step !== 'number' || draft.step < 1 || draft.step > TOTAL_STEPS) return null;
+    return draft as OnboardingDraft;
+  } catch {
+    return null;
+  }
+}
 
 // ─── Step-specific ambient blob colors ──────────────────────────────────────
 
@@ -230,42 +258,64 @@ const AnimatedNumber: React.FC<{ value: number; prefix?: string; className?: str
 
 // ─── Component ──────────────────────────────────────────────────────────────
 
-const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, mode = 'fresh', transitionTargetYear }) => {
+const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, onSkip, mode = 'fresh', transitionTargetYear }) => {
   const isTransition = mode === 'transition-to-senior';
+  const draft = useMemo(() => readOnboardingDraft(userId, mode), [userId, mode]);
   // In transition mode, we skip the welcome/year/mode steps and start
   // at Step 5 (Subjects). The target year is pre-set from the modal
   // pick, so the year picker never renders.
-  const [step, setStep] = useState<Step>(isTransition ? 5 : 1);
+  const [step, setStep] = useState<Step>(draft?.step ?? (isTransition ? 5 : 1));
   const [direction, setDirection] = useState(1);
 
   // Subject selection
-  const [selectedSubjects, setSelectedSubjects] = useState<Set<string>>(new Set());
+  const [selectedSubjects, setSelectedSubjects] = useState<Set<string>>(() => new Set(draft?.selectedSubjects ?? []));
 
   // Grade configs (LC: Grade + Higher/Ordinary level)
-  const [subjectConfigs, setSubjectConfigs] = useState<Record<string, { level: Level; currentGrade: Grade; targetGrade: Grade }>>({});
+  const [subjectConfigs, setSubjectConfigs] = useState<Record<string, { level: Level; currentGrade: Grade; targetGrade: Grade }>>(draft?.subjectConfigs ?? {});
 
   // JC band configs (parallel state for junior students: JCBand + level
   // which is 'higher' / 'ordinary' for the 3 jcHasLevelChoice subjects,
   // 'common' for all others). Phase 4 plumbing.
-  const [subjectBands, setSubjectBands] = useState<Record<string, { level: Level; currentBand: JCBand; targetBand: JCBand }>>({});
+  const [subjectBands, setSubjectBands] = useState<Record<string, { level: Level; currentBand: JCBand; targetBand: JCBand }>>(draft?.subjectBands ?? {});
 
-  const [examDate, setExamDate] = useState(getDefaultExamDate());
+  const [examDate, setExamDate] = useState(draft?.examDate ?? getDefaultExamDate());
 
   // Year group. In transition mode we initialise from the prop (TY or
   // 5th) — the user has already picked in the YearTransitionFlow modal,
   // so the year picker step doesn't render and the value is fixed.
   const [yearGroup, setYearGroup] = useState<YearGroup | null>(
-    isTransition ? (transitionTargetYear ?? '5th') : null
+    draft?.yearGroup ?? (isTransition ? (transitionTargetYear ?? '5th') : null)
   );
 
   // Module mode
-  const [essentialsMode, setEssentialsMode] = useState<boolean>(false);
+  const [essentialsMode, setEssentialsMode] = useState<boolean>(draft?.essentialsMode ?? false);
 
   // North Star
-  const [northStarData, setNorthStarData] = useState<NorthStar | null>(null);
+  const [northStarData, setNorthStarData] = useState<NorthStar | null>(draft?.northStarData ?? null);
 
   // Rest days
-  const [restDays, setRestDays] = useState<Set<string>>(new Set());
+  const [restDays, setRestDays] = useState<Set<string>>(() => new Set(draft?.restDays ?? []));
+
+  // iOS can reload or evict a Capacitor WebView with little warning. Keep a
+  // synchronous local draft so that never resets a partially completed flow.
+  useEffect(() => {
+    const next: OnboardingDraft = {
+      version: 1, step, selectedSubjects: Array.from(selectedSubjects),
+      subjectConfigs, subjectBands, examDate, yearGroup, essentialsMode,
+      northStarData, restDays: Array.from(restDays),
+    };
+    try { localStorage.setItem(onboardingDraftKey(userId, mode), JSON.stringify(next)); } catch { /* storage may be unavailable */ }
+  }, [userId, mode, step, selectedSubjects, subjectConfigs, subjectBands, examDate, yearGroup, essentialsMode, northStarData, restDays]);
+
+  const completeOnboarding = async (northStar?: NorthStar) => {
+    await onComplete(buildProfile(), northStar, essentialsMode);
+    try { localStorage.removeItem(onboardingDraftKey(userId, mode)); } catch { /* storage may be unavailable */ }
+  };
+
+  const skipOnboarding = () => {
+    try { localStorage.removeItem(onboardingDraftKey(userId, mode)); } catch { /* storage may be unavailable */ }
+    onSkip();
+  };
 
   // ─── Curriculum-level-derived helpers (Phase 1 JC plumbing) ───────────
   //
@@ -540,7 +590,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
       <div className="shrink-0 relative z-10 px-6 pt-5 pb-3">
         <div className="flex items-center justify-end mb-3">
           <button
-            onClick={onSkip}
+            onClick={skipOnboarding}
             className="text-sm font-medium transition-colors text-[#A8A29E] dark:text-zinc-500"
           >
             Skip for now
@@ -831,7 +881,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
                     setNorthStarData(ns);
                     if (isTransition) {
                       // Final step in transition mode — finalise immediately.
-                      onComplete(buildProfile(), ns, essentialsMode);
+                      void completeOnboarding(ns);
                     } else {
                       goNext();
                     }
@@ -1454,7 +1504,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
                     >
                       <PrimaryActionButton
                         label="Start Learning"
-                        onClick={() => onComplete(buildProfile(), northStarData ?? undefined, essentialsMode)}
+                        onClick={() => void completeOnboarding(northStarData ?? undefined)}
                         icon={ArrowRight}
                         variant="dark"
                       />
@@ -1486,7 +1536,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
               </button>
             ) : (
               <button
-                onClick={() => onComplete(buildProfile(), northStarData ?? undefined, essentialsMode)}
+                onClick={() => void completeOnboarding(northStarData ?? undefined)}
                 className="flex items-center gap-2 px-8 py-3 font-semibold text-sm rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-[#FDF8F0] font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A]"
                 style={{ minWidth: 160 }}
               >
