@@ -18,6 +18,7 @@ import { db } from '../firebase';
 import { reportSaveError } from '../utils/logError';
 import { useInnovationData } from '../contexts/InnovationDataContext';
 import { COLORS } from '../design/tokens';
+import { computeBestSixBreakdown } from './pointsScenarioStore';
 
 // ─── Subject Colours ─────────────────────────────────────────────────────────
 
@@ -61,31 +62,6 @@ interface SimSubject {
   targetGrade: Grade;
   whatIfGrade: Grade;
   isMaths: boolean;
-}
-
-interface BestSixResult {
-  total: number;
-  bestSix: { subjectName: string; points: number; grade: Grade }[];
-  outside: { subjectName: string; points: number; grade: Grade }[];
-}
-
-// ─── Core Logic ──────────────────────────────────────────────────────────────
-
-function computeBestSix(
-  subjects: { subjectName: string; grade: Grade; isMaths: boolean }[]
-): BestSixResult {
-  const scored = subjects.map(s => ({
-    subjectName: s.subjectName,
-    points: getPointsForGrade(s.grade, s.isMaths),
-    grade: s.grade,
-  }));
-  scored.sort((a, b) => b.points - a.points);
-  const count = Math.min(6, scored.length);
-  return {
-    total: scored.slice(0, count).reduce((sum, s) => sum + s.points, 0),
-    bestSix: scored.slice(0, count),
-    outside: scored.slice(count),
-  };
 }
 
 // ─── Points Summary Card (Mercury-style: commanding numbers) ─────────────────
@@ -199,15 +175,15 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
 
   // Analysis computations
   const currentAnalysis = useMemo(() => {
-    return computeBestSix(simSubjects.map(s => ({ subjectName: s.subjectName, grade: s.currentGrade, isMaths: s.isMaths })));
+    return computeBestSixBreakdown(simSubjects.map(s => ({ subjectName: s.subjectName, grade: s.currentGrade })));
   }, [simSubjects]);
 
   const targetAnalysis = useMemo(() => {
-    return computeBestSix(simSubjects.map(s => ({ subjectName: s.subjectName, grade: s.targetGrade, isMaths: s.isMaths })));
+    return computeBestSixBreakdown(simSubjects.map(s => ({ subjectName: s.subjectName, grade: s.targetGrade })));
   }, [simSubjects]);
 
   const whatIfAnalysis = useMemo(() => {
-    return computeBestSix(simSubjects.map(s => ({ subjectName: s.subjectName, grade: s.whatIfGrade, isMaths: s.isMaths })));
+    return computeBestSixBreakdown(simSubjects.map(s => ({ subjectName: s.subjectName, grade: s.whatIfGrade })));
   }, [simSubjects]);
 
   const whatIfBestSixNames = useMemo(() => {
@@ -230,7 +206,7 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
           ? { subjectName: s.subjectName, grade: betterGrade, isMaths: s.isMaths }
           : { subjectName: s.subjectName, grade: s.whatIfGrade, isMaths: s.isMaths }
       );
-      const newTotal = computeBestSix(modifiedSubjects).total;
+      const newTotal = computeBestSixBreakdown(modifiedSubjects).total;
       const netGain = newTotal - currentTotal;
       if (netGain > 0) {
         gains.push({ subjectName: sub.subjectName, fromGrade: sub.whatIfGrade, toGrade: betterGrade, netGain });

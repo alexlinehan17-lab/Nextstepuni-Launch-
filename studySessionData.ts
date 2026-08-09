@@ -57,7 +57,7 @@ export const DURATION_PRESETS = [
 // ── Points Config ──────────────────────────────────────────
 
 export const STUDY_SESSION_POINTS = {
-  PER_10_MINUTES: 15,
+  PER_10_MINUTES: 10,
 } as const;
 
 // ── Subject Colors ──

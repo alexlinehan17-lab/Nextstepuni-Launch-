@@ -50,8 +50,7 @@ const ResumeCard: React.FC<Props> = ({ uid, allCourses, userProgress, onSelectMo
   return (
     <button
       onClick={go}
-      className="w-full text-left rounded-2xl px-5 py-3.5 mb-4 flex items-center justify-between gap-3 bg-white dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800 transition-all hover:shadow-md group"
-      style={{ boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}
+      className="w-full text-left rounded-2xl px-5 py-4 mb-4 flex items-center justify-between gap-3 bg-white dark:bg-zinc-900 border-[1.5px] border-[#383838] dark:border-zinc-700 transition-transform hover:-translate-y-0.5 group"
     >
       <div className="flex items-center gap-3 min-w-0">
         <div
@@ -71,8 +70,7 @@ const ResumeCard: React.FC<Props> = ({ uid, allCourses, userProgress, onSelectMo
         </div>
       </div>
       <span
-        className="flex items-center gap-1 text-xs font-bold px-4 py-2 rounded-lg text-white shrink-0 transition-transform duration-300 group-hover:translate-x-0.5"
-        style={{ backgroundColor: COLORS.accent }}
+        className="flex items-center gap-1.5 text-xs font-bold px-4 py-2.5 rounded-lg text-white shrink-0 border-2 border-[#1A1A1A] bg-[#F26B1F] shadow-[3px_3px_0_0_#1A1A1A] transition-transform group-active:translate-x-[3px] group-active:translate-y-[3px] group-active:shadow-none"
       >
         Continue <ArrowRight size={12} />
       </span>

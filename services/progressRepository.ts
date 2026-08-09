@@ -17,6 +17,7 @@ import {
   type IslandState,
   type NorthStar,
   type TopicMasteryMap,
+  type TopicMasteryV2,
   type UnifiedMockResult,
   type UserProgress,
 } from '../types';
@@ -36,6 +37,7 @@ export interface ProgressDocument {
   earnedRest?: { restDayPasses?: string[] };
   studyDebriefs?: DebriefEntry[];
   topicMastery?: TopicMasteryMap;
+  topicMasteryV2?: TopicMasteryV2;
   unifiedMockResults?: UnifiedMockResult[];
   mockResults?: UnifiedMockResult[];
   pointsPassport?: { mockResults?: LegacyMockResult[] };

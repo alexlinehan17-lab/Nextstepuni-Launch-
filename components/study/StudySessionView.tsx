@@ -8,8 +8,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import { ArrowLeft, BookOpen, Target, RotateCcw, Play, Pause, Clock, Sparkles, X, ChevronRight, Brain, Repeat, Shuffle, HelpCircle, Compass, Sprout, Shield, Radar, ClipboardCheck, Trophy, CalendarCheck, type LucideIcon } from 'lucide-react';
 import PrimaryActionButton from '../ui/PrimaryActionButton';
+import ChoiceControl from '../ui/ChoiceControl';
+import { ResultStatGrid, StatusNotice } from '../ui/ProductPatterns';
 import PointsExplainer from '../PointsExplainer';
-import { doc, updateDoc, arrayUnion, getDoc } from 'firebase/firestore';
+import { doc, updateDoc, arrayUnion, getDoc, setDoc } from 'firebase/firestore';
 import { db } from '../../firebase';
 import { saveInBackground } from '../../utils/firestoreWrite';
 import { type SessionUser } from '../../utils/authUtils';
@@ -139,6 +141,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   const [selectedType, setSelectedType] = useState<'new-learning' | 'practice' | 'revision' | ''>(timetableBlock?.sessionType ?? '');
   const [selectedMinutes, setSelectedMinutes] = useState<number>(timetableBlock?.durationMinutes ?? 0);
   const [_blockCompleteBanner, setBlockCompleteBanner] = useState<{ done: number; total: number } | null>(null);
+  const [confirmQuit, setConfirmQuit] = useState(false);
 
   // Re-sync selections when timetable block changes
   useEffect(() => {
@@ -203,7 +206,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
       const todayKey = toDateKey(today);
       const jsDay = today.getDay();
       const todayDayIndex = jsDay === 0 ? 6 : jsDay - 1;
-      const priorities = computeSubjectPriorities(studentProfile.subjects, undefined);
+      const priorities = computeSubjectPriorities(studentProfile.subjects, undefined, studentProfile.examStartDate);
       const weeksUntilExam = computeWeeksUntilExam(studentProfile.examStartDate);
       const allocations = allocateSessions(priorities, weeksUntilExam);
       const restDaysArray = studentProfile.restDays || [];
@@ -246,6 +249,9 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
 
   // Auto-complete timetable block after saving session
   const completeTimetableBlock = () => {
+    // Ending early still records the study session and opens reflection, but it
+    // must not claim that the scheduled timetable block was completed.
+    if (session.elapsedSeconds < session.totalDuration) return;
     if (timetableBlock && onTimetableBlockComplete) {
       const actualMinutes = Math.round(session.elapsedSeconds / 60);
       onTimetableBlockComplete(timetableBlock.dateKey, timetableBlock.blockId, actualMinutes);
@@ -264,19 +270,51 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
 
   const [reflectionMode, setReflectionMode] = useState<'quick' | 'full'>('quick');
 
-  const handleSaveWithReflection = async (_reflectionText: string) => {
+  const handleSaveWithReflection = async (reflectionText: string) => {
     const bonus = reflectionMode === 'quick' ? QUICK_DEBRIEF_POINTS : FULL_REFLECTION_POINTS;
+    const timestamp = Date.now();
+    const [confidence, ...reflectionParts] = reflectionText.split('|');
+    const writtenReflection = reflectionParts.join('|').trim();
+    const journalText = writtenReflection
+      || `${confidence.charAt(0).toUpperCase()}${confidence.slice(1)}`;
+    const reflection: StudyReflection = {
+      dateKey: toDateKey(new Date(timestamp)),
+      blockId: timetableBlock?.blockId ?? `reflection_${timestamp}`,
+      subjectName: session.subject,
+      sessionType: session.sessionType,
+      reflection: journalText,
+      pointsEarned: bonus,
+      timestamp,
+    };
+
     setIsSaving(true);
-    await session.saveSession(bonus, selectedStrategies);
-    completeTimetableBlock();
-    pointsReload();
-    onStrategyMasteryRecompute?.();
-    weeklyChallenge?.reload();
-    setReflectionOpen(false);
-    setIsSaving(false);
-    setPickerDone(false);
-    setSelectedStrategies([]);
-    session.resetSession();
+    try {
+      setReflections(previous => [...previous, reflection]);
+      // `setDoc(..., { merge: true })` also handles the rare case where a
+      // student's parent progress document has not been created yet. Keep the
+      // UI offline-safe: Firestore queues this locally and flushes on reconnect.
+      saveInBackground(
+        setDoc(doc(db, 'progress', user.uid), {
+          reflections: arrayUnion(reflection),
+        }, { merge: true }),
+        'StudySessionView.saveReflection',
+        () => setReflections(previous => previous.filter(entry => entry.timestamp !== timestamp)),
+      );
+
+      await session.saveSession(bonus, selectedStrategies);
+      completeTimetableBlock();
+      pointsReload();
+      onStrategyMasteryRecompute?.();
+      weeklyChallenge?.reload();
+      setReflectionOpen(false);
+      setPickerDone(false);
+      setSelectedStrategies([]);
+      session.resetSession();
+    } catch (error) {
+      logError('StudySessionView.saveReflection', error);
+    } finally {
+      setIsSaving(false);
+    }
   };
 
   const handleSkipReflection = async () => {
@@ -312,7 +350,8 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
       console.error('Failed to save debrief:', err);
     }
     // Process side effects: update topic mastery + SM-2 state
-    processDebriefSideEffects(user.uid, fullEntry).catch(err => console.error('Debrief side effects error:', err));
+    processDebriefSideEffects(user.uid, fullEntry, studentProfile?.examStartDate)
+      .catch(err => console.error('Debrief side effects error:', err));
     completeTimetableBlock();
     pointsReload();
     onStrategyMasteryRecompute?.();
@@ -394,8 +433,8 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                   left: '50%',
                   top: '50%',
                   transform: 'translate(-50%, -50%)',
-                  width: '108%',
-                  height: '108%',
+                  width: '126%',
+                  height: '126%',
                   objectFit: 'contain',
                   zIndex: 1,
                 }}
@@ -491,17 +530,20 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                             setSelectedMinutes(block.durationMinutes);
                           }
                         }}
-                        className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl text-left transition-all ${colors.bg} border ${colors.border} hover:shadow-sm active:scale-[0.98]`}
+                        className="group w-full min-h-[68px] flex items-center gap-3.5 px-4 py-3 rounded-2xl text-left bg-white dark:bg-zinc-900 border border-[#E5E1DB] dark:border-zinc-700 transition-[border-color,box-shadow,transform] hover:border-[rgba(var(--accent),0.28)] hover:shadow-[0_6px_18px_rgba(28,25,23,0.06)] active:translate-y-px focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.38)] focus-visible:ring-offset-2"
                       >
-                        <span className={`w-2.5 h-2.5 rounded-full ${colors.dot} shrink-0`} />
+                        <span className={`w-1.5 self-stretch min-h-10 rounded-full ${colors.dot} shrink-0 opacity-85`} />
                         <div className="flex-1 min-w-0">
-                          <span className={`text-[13px] font-bold block ${colors.text}`}>{block.subject}</span>
-                          <span className="text-[11px] text-zinc-400 dark:text-zinc-500 flex items-center gap-1">
-                            <TypeIcon size={10} />
+                          <span className="text-[14px] font-semibold block text-[var(--text-primary)]">{block.subject}</span>
+                          <span className="mt-1 text-xs text-[var(--text-muted)] flex items-center gap-1.5">
+                            <TypeIcon size={14} strokeWidth={1.8} />
                             {typeConfig.label} · {block.durationMinutes}m
                           </span>
                         </div>
-                        <span className="text-xs font-semibold text-[var(--accent-hex)]">Study Now</span>
+                        <span className="shrink-0 inline-flex items-center gap-1.5 rounded-full bg-[var(--accent-hex)] px-3 py-2 text-xs font-semibold text-white shadow-[0_3px_0_var(--accent-dark-hex)] transition-transform group-hover:-translate-y-0.5 group-active:translate-y-0">
+                          <Play size={13} fill="currentColor" strokeWidth={2} />
+                          <span className="hidden sm:inline">Start</span>
+                        </span>
                       </button>
                     );
                   })}
@@ -517,19 +559,13 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                   const colors = getSubjectColor(s.subjectName);
                   const isActive = selectedSubject === s.subjectName;
                   return (
-                    <button
+                    <ChoiceControl
                       key={s.subjectName}
                       onClick={() => setSelectedSubject(s.subjectName)}
-                      className={`inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-[13px] font-medium transition-all ${
-                        isActive
-                          ? `${colors.bg} ${colors.text} shadow-sm ring-1 ring-inset`
-                          : 'bg-white dark:bg-zinc-900 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800/60'
-                      }`}
-                      style={isActive ? { ['--tw-ring-color' as any]: 'rgba(var(--accent), 0.25)' } : undefined}
-                    >
-                      <span className={`w-2 h-2 rounded-full shrink-0 ${colors.dot}`} />
-                      {s.subjectName}
-                    </button>
+                      label={s.subjectName}
+                      selected={isActive}
+                      markerClassName={colors.dot}
+                    />
                   );
                 })}
                 {subjects.length === 0 && (
@@ -566,18 +602,14 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                     const Icon = config.icon;
                     const isActive = selectedType === type;
                     return (
-                      <button
+                      <ChoiceControl
                         key={type}
                         onClick={() => setSelectedType(type)}
-                        className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl text-[13px] font-medium transition-all ${
-                          isActive
-                            ? 'bg-[rgba(var(--accent),0.08)] text-[var(--accent-hex)] shadow-sm ring-1 ring-inset ring-[rgba(var(--accent),0.2)]'
-                            : 'bg-white dark:bg-zinc-900 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800/60'
-                        }`}
-                      >
-                        <Icon size={16} strokeWidth={isActive ? 2 : 1.5} />
-                        <span>{config.label}</span>
-                      </button>
+                        className="w-full justify-start"
+                        label={config.label}
+                        selected={isActive}
+                        icon={<Icon size={17} strokeWidth={isActive ? 2 : 1.75} />}
+                      />
                     );
                   })}
                 </div>
@@ -590,17 +622,13 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                   {DURATION_PRESETS.map(preset => {
                     const isActive = selectedMinutes === preset.minutes;
                     return (
-                      <button
+                      <ChoiceControl
                         key={preset.minutes}
                         onClick={() => setSelectedMinutes(preset.minutes)}
-                        className={`w-full flex items-center justify-center px-4 py-3 rounded-xl text-[13px] font-semibold transition-all ${
-                          isActive
-                            ? 'bg-[rgba(var(--accent),0.08)] text-[var(--accent-hex)] shadow-sm ring-1 ring-inset ring-[rgba(var(--accent),0.2)]'
-                            : 'bg-white dark:bg-zinc-900 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800/60'
-                        }`}
-                      >
-                        {preset.minutes} min
-                      </button>
+                        className="w-full"
+                        label={`${preset.minutes} min`}
+                        selected={isActive}
+                      />
                     );
                   })}
                   {/* Custom duration input */}
@@ -704,87 +732,81 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     );
   }
 
-  // ── ACTIVE / PAUSED PHASE (Headspace-inspired) ──
+  // ── ACTIVE / PAUSED PHASE ──
   if (session.phase === 'active' || session.phase === 'paused') {
-    const _subjectColors = getSubjectColor(session.subject);
     const subjectHex = getSubjectHex(session.subject);
     const typeConfig = SESSION_TYPE_CONFIG[session.sessionType];
 
-    // Generate 4 arc layers — each lighter/more saturated moving outward
-    // Colors shift from deep base → lighter toward the edges
-    const arcLayers = [
-      { scale: 1.0,  yOffset: '62%', opacity: 1.0, lighten: 0 },
-      { scale: 1.35, yOffset: '55%', opacity: 0.92, lighten: 15 },
-      { scale: 1.7,  yOffset: '48%', opacity: 0.85, lighten: 28 },
-      { scale: 2.1,  yOffset: '42%', opacity: 0.78, lighten: 40 },
-    ];
-
-    // Helper to lighten a hex color
     const lightenHex = (hex: string, amount: number) => {
-      const r = parseInt(hex.slice(1, 3), 16);
-      const g = parseInt(hex.slice(3, 5), 16);
-      const b = parseInt(hex.slice(5, 7), 16);
-      const nr = Math.min(255, r + amount);
-      const ng = Math.min(255, g + amount);
-      const nb = Math.min(255, b + amount);
-      return `#${nr.toString(16).padStart(2, '0')}${ng.toString(16).padStart(2, '0')}${nb.toString(16).padStart(2, '0')}`;
+      const red = parseInt(hex.slice(1, 3), 16);
+      const green = parseInt(hex.slice(3, 5), 16);
+      const blue = parseInt(hex.slice(5, 7), 16);
+      const channel = (value: number) => Math.min(255, value + amount).toString(16).padStart(2, '0');
+      return `#${channel(red)}${channel(green)}${channel(blue)}`;
     };
 
-    const _handleQuit = () => {
-      if (window.confirm('End this session and go back? Any time studied will be lost.')) {
-        session.endSession();
-        session.resetSession();
-      }
+    const colourBands = [
+      { scale: 1, top: '61%', lighten: 0 },
+      { scale: 1.34, top: '54%', lighten: 15 },
+      { scale: 1.7, top: '47%', lighten: 29 },
+      { scale: 2.08, top: '40%', lighten: 43 },
+    ];
+
+    const handleQuit = () => {
+      session.endSession();
+      setConfirmQuit(false);
     };
 
     return (
       <div
         className="fixed inset-0 z-[100] flex flex-col"
-        style={{ background: lightenHex(subjectHex, 55) }}
+        style={{ background: lightenHex(subjectHex, 58) }}
       >
-        {/* Concentric arcs — layered from back to front */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          {[...arcLayers].reverse().map((layer, i) => (
+        <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+          {[...colourBands].reverse().map((band, index) => (
             <motion.div
-              key={i}
-              className="absolute left-1/2 rounded-full"
+              key={band.lighten}
+              className="absolute left-1/2 rounded-[50%]"
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{
-                scale: session.phase === 'paused' ? layer.scale * 0.97 : layer.scale,
-                opacity: layer.opacity,
+                scale: session.phase === 'paused' ? band.scale * 0.84 : band.scale,
+                top: session.phase === 'paused' ? `calc(${band.top} + 4%)` : band.top,
+                opacity: 1,
               }}
-              transition={{ duration: 1.2, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 0.9, delay: index * 0.06, ease: [0.16, 1, 0.3, 1] }}
               style={{
                 width: '140vw',
                 height: '140vw',
-                top: layer.yOffset,
                 transform: 'translateX(-50%)',
-                background: lightenHex(subjectHex, layer.lighten),
+                backgroundColor: lightenHex(subjectHex, band.lighten),
               }}
             />
           ))}
         </div>
 
         {/* Top bar — X button + subject info */}
-        <div className="relative z-20 flex items-center justify-between px-5 pt-5 pb-2">
+        <div className="relative z-20 flex items-center justify-between px-5 py-4">
           <button
-            onClick={session.endSession}
-            className="w-9 h-9 rounded-full flex items-center justify-center transition-all"
-            style={{ backgroundColor: 'rgba(0,0,0,0.08)' }}
+            onClick={() => setConfirmQuit(true)}
+            aria-label="Leave study session"
+            className="w-10 h-10 rounded-full flex items-center justify-center transition-all hover:bg-black/10"
           >
-            <X size={18} style={{ color: 'rgba(0,0,0,0.5)' }} />
+            <X size={18} className="text-[#3A3530]" />
           </button>
-          <div />
+          <div className="flex items-center gap-2 text-xs font-semibold text-[#292522]">
+            <span className="w-2 h-2 rounded-full" style={{ backgroundColor: subjectHex }} />
+            {typeConfig.label}
+          </div>
         </div>
 
         {/* Title area */}
-        <div className="relative z-20 text-center mt-4 px-6">
+        <div className="relative z-20 text-center mt-10 px-6">
           <motion.h1
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
-            className="text-2xl md:text-3xl font-bold"
-            style={{ color: 'rgba(0,0,0,0.8)' }}
+            className="font-serif text-3xl md:text-4xl font-bold"
+            style={{ color: '#1A1A1A' }}
           >
             {session.subject}
           </motion.h1>
@@ -792,26 +814,35 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.5 }}
-            className="text-sm mt-1.5"
-            style={{ color: 'rgba(0,0,0,0.45)' }}
+            className="text-xs mt-2 font-bold uppercase tracking-[0.16em]"
+            style={{ color: 'rgba(26,26,26,.68)' }}
           >
             {typeConfig.label} · {Math.ceil(session.totalDuration / 60)} min
           </motion.p>
         </div>
 
         {/* Center — giant play/pause */}
-        <div className="relative z-20 flex-1 flex items-center justify-center">
+        <div className="relative z-20 flex-1 flex flex-col items-center justify-center px-6">
+          <motion.p
+            initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}
+            className="font-mono text-6xl md:text-7xl font-bold tabular-nums tracking-[-0.06em] text-[#1A1A1A] mb-3"
+          >
+            {formatTime(timeRemaining)}
+          </motion.p>
+          <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#292522] mb-8">
+            {session.phase === 'paused' ? 'Session paused' : 'Time remaining'}
+          </p>
           <motion.button
             onClick={session.phase === 'active' ? session.pauseSession : session.resumeSession}
-            className="relative w-20 h-20 md:w-24 md:h-24 rounded-full flex items-center justify-center transition-shadow duration-500 ease-in-out hover:shadow-[0_0_60px_20px_rgba(255,255,255,0.6),0_0_120px_40px_rgba(255,255,255,0.2)]"
-            style={{ backgroundColor: 'rgba(0,0,0,0.75)', boxShadow: '0 0 0px 0px rgba(255,255,255,0)' }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.93 }}
+            className="relative w-20 h-20 md:w-24 md:h-24 rounded-full flex items-center justify-center bg-[#383431] text-white shadow-[0_16px_36px_rgba(38,32,27,.18)]"
+            animate={{ scale: session.phase === 'paused' ? 0.92 : 1 }}
+            whileHover={{ scale: session.phase === 'paused' ? 0.96 : 1.04 }}
+            whileTap={{ scale: 0.9 }}
           >
             {session.phase === 'active' ? (
-              <Pause size={32} className="text-white" />
+              <Pause size={30} />
             ) : (
-              <Play size={32} className="text-white" style={{ marginLeft: 3 }} />
+              <Play size={30} style={{ marginLeft: 3 }} />
             )}
           </motion.button>
         </div>
@@ -829,7 +860,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
               >
                 <span
                   className="text-xs font-bold uppercase tracking-[0.25em]"
-                  style={{ color: 'rgba(0,0,0,0.35)' }}
+                  style={{ color: 'rgba(26,26,26,.68)' }}
                 >
                   Paused
                 </span>
@@ -841,12 +872,12 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
           <div className="relative w-full max-w-lg mx-auto">
             <div
               className="w-full h-1 rounded-full overflow-hidden"
-              style={{ backgroundColor: 'rgba(0,0,0,0.12)' }}
+              style={{ backgroundColor: 'rgba(26,26,26,.16)' }}
             >
               <motion.div
                 className="h-full rounded-full"
                 style={{
-                  backgroundColor: 'rgba(0,0,0,0.5)',
+                  backgroundColor: 'rgba(26,26,26,.58)',
                   width: `${Math.min(100, progress * 100)}%`,
                   transition: 'width 1s ease',
                 }}
@@ -858,7 +889,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
               style={{
                 left: `${Math.min(100, progress * 100)}%`,
                 transform: `translate(-50%, -50%)`,
-                backgroundColor: 'rgba(0,0,0,0.6)',
+                backgroundColor: '#1A1A1A',
                 transition: 'left 1s ease',
               }}
             />
@@ -868,15 +899,15 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
           <div className="flex justify-between mt-3 max-w-lg mx-auto">
             <span
               className="text-xs font-medium tabular-nums"
-              style={{ color: 'rgba(0,0,0,0.4)' }}
+              style={{ color: 'rgba(26,26,26,.72)' }}
             >
-              {formatTime(session.elapsedSeconds)}
+              {formatTime(session.elapsedSeconds)} elapsed
             </span>
             <span
               className="text-xs font-medium tabular-nums"
-              style={{ color: 'rgba(0,0,0,0.4)' }}
+              style={{ color: 'rgba(26,26,26,.72)' }}
             >
-              {formatTime(timeRemaining)}
+              {formatTime(timeRemaining)} remaining
             </span>
           </div>
         </div>
@@ -891,15 +922,14 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-              className="fixed bottom-24 left-4 right-4 z-30 max-w-md mx-auto"
+              className="fixed bottom-16 left-4 right-4 z-30 max-w-md mx-auto"
             >
               <div
-                className="rounded-2xl p-4 shadow-2xl overflow-hidden relative"
+                className="rounded-2xl p-4 overflow-hidden relative"
                 style={{
-                  backgroundColor: 'rgba(255,255,255,0.85)',
-                  backdropFilter: 'blur(20px)',
-                  WebkitBackdropFilter: 'blur(20px)',
-                  border: '1px solid rgba(255,255,255,0.6)',
+                  backgroundColor: '#FFFFFF',
+                  border: '1.5px solid #383838',
+                  boxShadow: '0 14px 34px rgba(38,32,27,.12)',
                 }}
               >
                 {/* Auto-dismiss countdown bar */}
@@ -939,6 +969,48 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
             </MotionDiv>
           )}
         </AnimatePresence>
+
+        <AnimatePresence>
+          {confirmQuit && (
+            <MotionDiv
+              className="fixed inset-0 z-[200] flex items-end sm:items-center justify-center bg-[#1A1A1A]/55 p-0 sm:p-4"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="study-exit-title"
+            >
+              <MotionDiv
+                initial={{ opacity: 0, y: 12, scale: 0.98 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                exit={{ opacity: 0, y: 8, scale: 0.98 }}
+                transition={{ type: 'spring', stiffness: 280, damping: 28, mass: 0.85 }}
+                className="w-full max-w-sm rounded-t-[24px] sm:rounded-[24px] border-[1.5px] border-[#383838] bg-[#FAFBF6] p-6 shadow-[5px_5px_0_0_#383838]"
+              >
+                <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.16em] text-[#9E9186]">Leave session</p>
+                <h2 id="study-exit-title" className="font-serif text-2xl font-bold text-[#1A1A1A]">End this study session?</h2>
+                <p className="mt-2 text-sm leading-relaxed text-[#7A7068]">The time from this unfinished session won’t be recorded.</p>
+                <div className="mt-6 grid gap-2">
+                  <button
+                    type="button"
+                    onClick={() => setConfirmQuit(false)}
+                    className="min-h-12 rounded-xl border-2 border-[#1A1A1A] bg-[#F26B1F] px-4 font-semibold text-white shadow-[3px_3px_0_0_#1A1A1A] transition-transform active:translate-x-[3px] active:translate-y-[3px] active:shadow-none"
+                  >
+                    Keep studying
+                  </button>
+                  <button
+                    type="button"
+                    onClick={handleQuit}
+                    className="min-h-12 rounded-xl border border-[#D0CDC8] bg-white px-4 font-semibold text-[#3A3530] hover:bg-[#F8F4EC]"
+                  >
+                    End session
+                  </button>
+                </div>
+              </MotionDiv>
+            </MotionDiv>
+          )}
+        </AnimatePresence>
       </div>
     );
   }
@@ -969,14 +1041,15 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     const subjectColors = getSubjectColor(session.subject);
     const typeConfig = SESSION_TYPE_CONFIG[session.sessionType];
     const actualMinutes = Math.round(session.elapsedSeconds / 60);
+    const isEarlyEnd = session.elapsedSeconds < session.totalDuration;
 
     return (
-      <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 flex flex-col items-center justify-center px-4">
+      <div className="min-h-screen bg-[#FAF9F7] dark:bg-zinc-950 flex flex-col items-center justify-center px-4 py-12">
         <MotionDiv
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          className="w-full max-w-sm space-y-6"
+          className="w-full max-w-lg space-y-6 rounded-[24px] border-[1.5px] border-[#383838] bg-[#FAFBF6] p-6 shadow-[5px_5px_0_0_#383838] sm:p-8"
         >
           {/* Header — points as hero */}
           <div className="text-center">
@@ -984,55 +1057,47 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
               initial={{ scale: 0.5, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+              className={`mx-auto mb-5 flex h-[76px] w-[76px] items-center justify-center rounded-full border-2 border-[#383838] shadow-[3px_3px_0_0_#383838] ${isEarlyEnd ? 'bg-[#FFF0E7] text-[#F26B1F]' : 'bg-[#E8F2EC] text-[#3A8D5F]'}`}
             >
-              <Sparkles size={28} className="text-amber-500 mx-auto mb-3" />
+              <svg width="38" height="38" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                <path d="M10 20.5l6.5 6.5L30.5 13" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
             </MotionDiv>
-            <h2 className="text-xl font-bold text-zinc-800 dark:text-white mb-4">Session Complete</h2>
+            <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#9E9186] mb-1.5">{isEarlyEnd ? 'Session ended early' : 'Session complete'}</p>
+            <h2 className="font-serif text-[32px] leading-tight font-bold text-[#1A1A1A] dark:text-white mb-2">{isEarlyEnd ? 'The work still counts.' : 'Focused work, finished.'}</h2>
+            <p className="text-sm text-[#7A7068] mb-5">{isEarlyEnd ? `You studied for ${actualMinutes} minutes. Take a moment to capture what was useful before you leave.` : 'Your study time has been recorded.'}</p>
 
             {/* Big animated points */}
             <MotionDiv
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-              className="inline-flex items-baseline gap-1.5 px-6 py-3 rounded-2xl"
-              style={{ backgroundColor: 'rgba(var(--accent),0.08)' }}
+              className="inline-flex items-baseline gap-1.5 rounded-xl border-[1.5px] border-[#383838] bg-white px-6 py-3 shadow-[2px_2px_0_0_#383838]"
             >
               <CountUpNumber value={session.basePointsEarned} delay={600} />
               <span className="text-sm font-semibold text-[var(--accent-hex)] opacity-70">JP earned</span>
             </MotionDiv>
           </div>
 
-          {/* Session details — compact chips instead of receipt table */}
+          {/* Session details — one aligned result surface. */}
           <MotionDiv
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.4 }}
-            className="flex flex-wrap justify-center gap-2"
+            className="w-full"
           >
-            <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-white/[0.06]">
-              <Clock size={13} className="text-zinc-400" />
-              <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300">{actualMinutes} min</span>
-            </div>
-            <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-white/[0.06]">
-              <span className={`w-2 h-2 rounded-full ${subjectColors.dot}`} />
-              <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300">{session.subject}</span>
-            </div>
-            <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-white/[0.06]">
-              {React.createElement(typeConfig.icon, { size: 13, className: 'text-zinc-400' })}
-              <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300">{typeConfig.label}</span>
-            </div>
+            <ResultStatGrid items={[
+              { label: 'Duration', value: `${actualMinutes} min`, icon: <Clock size={14} /> },
+              { label: 'Subject', value: session.subject, icon: <span className={`w-2.5 h-2.5 rounded-full ${subjectColors.dot}`} /> },
+              { label: 'Session', value: typeConfig.label, icon: React.createElement(typeConfig.icon, { size: 14 }) },
+            ]} />
           </MotionDiv>
 
           {/* Timetable block complete banner */}
-          {timetableBlock && (
-            <div className="flex items-center gap-3 p-3 rounded-xl bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200/60 dark:border-emerald-800/30">
-              <CalendarCheck size={16} className="text-emerald-500 shrink-0" />
-              <div className="flex-1 min-w-0">
-                <p className="text-xs font-semibold text-emerald-700 dark:text-emerald-300">
-                  Timetable block marked complete — {actualMinutes} min studied
-                </p>
-              </div>
-            </div>
+          {timetableBlock && !isEarlyEnd && (
+            <StatusNotice title="Timetable block complete" tone="success">
+              <span className="inline-flex items-center gap-2"><CalendarCheck size={14} /> {actualMinutes} min studied</span>
+            </StatusNotice>
           )}
 
           {/* Weekly Challenge nudge */}
@@ -1060,21 +1125,18 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
 
           {/* Actions */}
           <div className="space-y-3">
-            <button
+            <PrimaryActionButton
+              label={`Quick debrief (+${QUICK_DEBRIEF_POINTS} pts)`}
               onClick={() => { setReflectionMode('quick'); setReflectionOpen(true); }}
               disabled={isSaving}
-              className="w-full py-3.5 rounded-xl text-sm font-bold text-white active:scale-[0.98] transition-all disabled:opacity-50"
-              style={{ backgroundColor: '#F26B1F' }}
-            >
-              Quick Debrief (+{QUICK_DEBRIEF_POINTS} pts)
-            </button>
+              className="w-full"
+            />
             <button
               onClick={() => { setReflectionMode('full'); setReflectionOpen(true); }}
               disabled={isSaving}
-              className="w-full py-3 rounded-xl text-sm font-medium transition-all disabled:opacity-50"
-              style={{ backgroundColor: 'rgba(242,107,31,0.08)', color: '#F26B1F' }}
+              className="w-full py-3 rounded-xl text-sm font-semibold transition-all disabled:opacity-50 bg-white border border-[#D0CDC8] text-[#3A3530] hover:border-[#1A1A1A]"
             >
-              Write a Reflection (+{FULL_REFLECTION_POINTS} pts)
+              Write a reflection (+{FULL_REFLECTION_POINTS} pts)
             </button>
             <button
               onClick={handleSkipReflection}

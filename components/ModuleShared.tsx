@@ -113,8 +113,8 @@ export const ReadingSection = ({ title, eyebrow, icon: Icon, children, theme: _t
         transition={{ duration: 0.5, delay: 0.05, ease: [0.25, 1, 0.5, 1] }}
       >
         <span
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[10px] font-bold tracking-wider uppercase mb-5"
-          style={{ backgroundColor: 'rgba(var(--accent),0.08)', color: 'var(--accent-hex)' }}
+          className="inline-flex items-center gap-2 rounded-lg border-[1.5px] px-3 py-1.5 text-[10px] font-bold tracking-wider uppercase mb-5"
+          style={{ backgroundColor: 'rgba(var(--accent),0.07)', borderColor: 'rgba(var(--accent),0.34)', color: 'var(--accent-hex)' }}
         >
           <Icon size={12} />
           {eyebrow}
@@ -149,7 +149,7 @@ export const ReadingSection = ({ title, eyebrow, icon: Icon, children, theme: _t
       transition={{ duration: 0.5, delay: 0.25 }}
     >
       <div
-        className="prose prose-stone dark:prose-invert prose-lg max-w-none text-zinc-600 dark:text-zinc-300 leading-[1.85] font-serif overflow-visible space-y-7"
+        className="prose prose-stone dark:prose-invert prose-lg max-w-none text-[var(--ink-secondary)] leading-[1.85] font-serif overflow-visible space-y-7"
         // Reading comfort (ModuleLayout sets the variables from settings):
         // scale multiplies the prose-lg base size; line height opens up in
         // relaxed mode. Inline style so it wins over the utility classes.
@@ -180,9 +180,8 @@ export const MicroCommitment = ({ children, theme: _theme, northStarNudge }: Mic
     className="my-14"
   >
     <motion.div
-      className="rounded-2xl relative px-7 py-6 md:px-8 md:py-7"
+      className="rounded-2xl relative bg-[var(--surface-paper)] px-7 py-6 md:px-8 md:py-7"
       style={{
-        backgroundColor: '#FFFFFF',
         border: `2.5px solid ${COLORS.accent}`,
         boxShadow: `4px 4px 0px 0px ${COLORS.accentDark}`,
         borderRadius: 18,
@@ -244,13 +243,12 @@ export const ToolJumpCard: React.FC<ToolJumpCardProps> = ({ toolId, title, descr
       <button
         type="button"
         onClick={() => nav.navigateToInnovationZone(toolId)}
-        className="w-full text-left"
+        className="w-full bg-[var(--surface-paper)] text-left text-[var(--ink-primary)]"
         style={{
-          backgroundColor: '#FFFFFF',
-          border: '2px solid #1a1a1a',
+          border: '2px solid var(--outline-strong)',
           borderRadius: 16,
           padding: '20px 22px',
-          boxShadow: '4px 4px 0px 0px #1a1a1a',
+          boxShadow: '4px 4px 0px 0px var(--outline-strong)',
           transition: 'transform 120ms ease, box-shadow 120ms ease',
         }}
         onMouseEnter={(e) => {

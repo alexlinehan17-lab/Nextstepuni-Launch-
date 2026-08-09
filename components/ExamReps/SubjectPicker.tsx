@@ -13,7 +13,8 @@ import { ArrowLeft, Check } from 'lucide-react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import { COLORS } from '../../design/tokens';
-import { CURRICULUM, type CurriculumLevel } from '../../curriculum';
+import { curriculumSubjectsForYear } from '../../curriculumRegistry';
+import type { CurriculumLevel } from '../../curriculum';
 import { REP_CARDS } from '../../examRepsData';
 import { type RepSelection } from '../../types/examReps';
 
@@ -28,6 +29,7 @@ const CATEGORY_ORDER: { id: string; label: string }[] = [
 ];
 
 const LEVEL_LABEL: Record<string, string> = { higher: 'Higher', ordinary: 'Ordinary', foundation: 'Foundation', common: 'Common' };
+const CURRICULUM_SUBJECTS = curriculumSubjectsForYear(undefined, ['leaving-certificate-established']);
 
 interface SubjectPickerProps {
   selection?: RepSelection;
@@ -57,10 +59,10 @@ const SubjectPicker: React.FC<SubjectPickerProps> = ({ selection, onSelect, stud
   const [subjectId, setSubjectId] = useState<string | null>(null);
   const [level, setLevel] = useState<string | null>(null);
 
-  const subject = subjectId ? CURRICULUM.find(s => s.id === subjectId) ?? null : null;
+  const subject = subjectId ? CURRICULUM_SUBJECTS.find(s => s.id === subjectId) ?? null : null;
 
   const openSubject = (id: string) => {
-    const subj = CURRICULUM.find(s => s.id === id);
+    const subj = CURRICULUM_SUBJECTS.find(s => s.id === id);
     if (!subj) return;
     // default to the first level that has reps, else the first level
     const lvl = (subj.levels as string[]).find(l => avail.subjLevel.has(`${id}|${l}`)) ?? subj.levels[0];
@@ -92,7 +94,7 @@ const SubjectPicker: React.FC<SubjectPickerProps> = ({ selection, onSelect, stud
         </header>
 
         {CATEGORY_ORDER.map(cat => {
-          const subs = CURRICULUM.filter(s => s.category === cat.id && (showAll || mySet.has(s.id)));
+          const subs = CURRICULUM_SUBJECTS.filter(s => s.category === cat.id && (showAll || mySet.has(s.id)));
           if (subs.length === 0) return null;
           return (
             <section key={cat.id} className="mb-5">
@@ -157,8 +159,8 @@ const SubjectPicker: React.FC<SubjectPickerProps> = ({ selection, onSelect, stud
 
       {(() => {
         // Only show topics (and strands) that actually have a rep at this level.
-        const visibleStrands = subject.strands
-          .map(strand => ({ strand, subs: strand.subtopics.filter(st => avail.topicLevel.has(`${st.id}|${level}`)) }))
+        const visibleStrands = subject.groups
+          .map(strand => ({ strand, subs: strand.topics.filter(st => avail.topicLevel.has(`${st.id}|${level}`)) }))
           .filter(x => x.subs.length > 0);
         if (visibleStrands.length === 0) {
           return (
@@ -173,7 +175,7 @@ const SubjectPicker: React.FC<SubjectPickerProps> = ({ selection, onSelect, stud
         }
         return visibleStrands.map(({ strand, subs }) => (
           <section key={strand.id} className="mb-4">
-            <p className="text-[11px] font-bold text-[#1A1A1A] dark:text-zinc-200 mb-2">{strand.name}</p>
+            <p className="text-[11px] font-bold text-[#1A1A1A] dark:text-zinc-200 mb-2">{strand.title}</p>
             <div className="flex flex-wrap gap-1.5">
               {subs.map(st => {
                 const isCurrent = selection && selection.subjectId === subject.id && selection.level === level && selection.topicId === st.id;
@@ -190,7 +192,7 @@ const SubjectPicker: React.FC<SubjectPickerProps> = ({ selection, onSelect, stud
                     }}
                   >
                     {isCurrent && <Check size={11} className="inline -mt-0.5 mr-1" style={{ color: COLORS.accent }} />}
-                    {st.name}
+                    {st.title}
                   </button>
                 );
               })}

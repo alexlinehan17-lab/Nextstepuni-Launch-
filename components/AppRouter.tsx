@@ -47,6 +47,7 @@ const Onboarding = lazy(() => import('./Onboarding'));
 const JCComingSoon = lazy(() => import('./JCComingSoon'));
 const JourneyView = lazy(() => import('./journey/JourneyView'));
 const TrainingHub = lazy(() => import('./TrainingHub'));
+const MyDirection = lazy(() => import('./MyDirection'));
 const StudySessionView = lazy(() => import('./study/StudySessionView'));
 const InsightsView = lazy(() => import('./InsightsView'));
 const CutContentPage = lazy(() => import('./CutContentPage'));
@@ -365,6 +366,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
           northStar={northStar}
           onBack={handleBackToTree}
           onOpenJourney={handleGoToJourney}
+          onOpenDirection={() => nav.navigateToDirection()}
           userProgress={userProgress}
           allCourses={studentCourses}
           strategyMastery={strategyMastery.masteryMap}
@@ -482,6 +484,21 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
           userProgress={userProgress}
           allCourses={studentCourses}
           subjects={studentProfile?.subjects?.map((s: any) => s.subjectName) ?? []}
+        />
+      </Suspense>
+    );
+  }
+
+  if (viewState === 'my-direction' && northStar && user) {
+    return (
+      <Suspense fallback={<LoadingSpinner />}>
+        <MyDirection
+          uid={user.uid}
+          northStar={northStar}
+          onBack={handleBackToTree}
+          onEditNorthStar={() => setNorthStarEditOpen(true)}
+          onOpenFutureFinder={() => nav.navigateToInnovationZone('future-finder-revamped')}
+          onOpenPointsPassport={() => nav.navigateToInnovationZone('points-passport')}
         />
       </Suspense>
     );

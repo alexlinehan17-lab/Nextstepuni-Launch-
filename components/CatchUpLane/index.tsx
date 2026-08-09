@@ -28,7 +28,7 @@ import { useInnovationData } from '../../contexts/InnovationDataContext';
 import { RECOVERY_CARDS, cardsForSubject, subjectsWithContent } from '../../catchUpLaneData';
 import { FIRST_WEEK } from '../../comebackData';
 import { type RecoveryCard } from '../../types/catchUpLane';
-import { CURRICULUM } from '../../curriculum';
+import { CURRICULUM_SPECIFICATIONS } from '../../curriculumRegistry';
 import SubjectTilePicker from '../shared/SubjectTilePicker';
 import { baseName, displayName } from '../shared/subjectNames';
 import Comeback from './Comeback';
@@ -44,11 +44,13 @@ const cardShell =
 type View = 'home' | 'queue' | 'unit';
 type Beat = 'gist' | 'move' | 'check' | 'reveal' | 'done';
 
-// Strand (syllabus category) lookup, built from curriculum.ts: the topic queue is
+// Strand (syllabus category) lookup, built from the canonical registry: the topic queue is
 // grouped under these so it mirrors each subject's real LC syllabus structure
 // (Biology Units, Maths Strands, Geography Core/Elective/Option units, etc.).
 const STRAND_INFO = new Map<string, { name: string; order: number }>();
-CURRICULUM.forEach((subj) => subj.strands.forEach((st, i) => STRAND_INFO.set(st.id, { name: st.name, order: i })));
+CURRICULUM_SPECIFICATIONS.forEach((specification) => specification.groups.forEach((group, i) => {
+  STRAND_INFO.set(group.id, { name: group.title, order: i });
+}));
 /** topicId → strand id by dropping the last segment (the subtopic index).
  *  'biology-2-3' → 'biology-2'; 'home-economics-0-1' → 'home-economics-0'
  *  (handles hyphenated subject ids, which slicing the first 2 parts did not). */

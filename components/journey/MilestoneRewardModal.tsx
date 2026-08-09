@@ -54,14 +54,14 @@ const MilestoneRewardModal: React.FC<MilestoneRewardModalProps> = ({ isOpen, onC
               </span>
 
               <p className="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed mb-6">
-                You've completed {modulesCompleted} modules!
+                You've completed {modulesCompleted} modules. This is waiting in your Build Tray — you choose where it belongs.
               </p>
 
               <button
                 onClick={onClose}
                 className="w-full py-3 rounded-xl bg-amber-500 hover:bg-amber-600 text-white font-semibold text-sm transition-colors"
               >
-                Continue
+                Open Build Mode
               </button>
             </div>
           </MotionDiv>

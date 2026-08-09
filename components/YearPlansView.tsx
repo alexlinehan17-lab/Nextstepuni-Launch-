@@ -14,7 +14,8 @@
 import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import { ArrowLeft, Check, ChevronDown } from 'lucide-react';
+import { Check, ChevronDown } from 'lucide-react';
+import PageHeader from './ui/PageHeader';
 import { type CourseData } from './Library';
 import { YEAR_PLANS, type YearPlan } from '../yearPlans';
 
@@ -75,30 +76,7 @@ const YearPlansView: React.FC<YearPlansViewProps> = ({
   return (
     <div className="min-h-screen bg-[#FAFBF6] dark:bg-zinc-950 pt-16 md:pt-20 pb-32 px-4 sm:px-6 transition-colors duration-500">
       <div className="max-w-5xl mx-auto">
-        {/* ── Header row: back arrow + serif title ── */}
-        <div className="flex items-center gap-4 mb-4">
-          <button
-            onClick={onBack}
-            aria-label="Back"
-            className="w-10 h-10 rounded-xl flex items-center justify-center bg-white border border-[#EDEBE8] hover:bg-[#F8F4EC] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(242,107,31,0.35)]"
-            style={{ boxShadow: '0 1px 2px rgba(28,25,23,0.04)' }}
-          >
-            <ArrowLeft size={18} className="text-[#1a1a1a]" />
-          </button>
-          <h1
-            style={{
-              ...SERIF,
-              fontSize: 'clamp(32px, 5vw, 44px)',
-              fontWeight: 500,
-              letterSpacing: '-0.6px',
-              color: '#1a1a1a',
-              margin: 0,
-              lineHeight: 1.05,
-            }}
-          >
-            Year Plans
-          </h1>
-        </div>
+        <PageHeader onBack={onBack} eyebrow="Plan ahead" title="Year Plans" className="mb-4" />
         <p
           className="mb-12"
           style={{ ...SANS, fontSize: 14.5, lineHeight: 1.6, color: 'rgba(0,0,0,0.55)', maxWidth: '56ch' }}

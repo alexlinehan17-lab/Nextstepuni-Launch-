@@ -30,6 +30,7 @@ import {
 import { useAuth } from '../contexts/AuthContext';
 import { runSubjectExplorerMatch, type ClusterMatchResult } from './subjectExplorerData';
 import { reportSaveError } from '../utils/logError';
+import { LoadingState, StatePanel } from './ui/SystemState';
 
 // ─── Types ──────────────────────────────────────────────────────────────────
 
@@ -308,11 +309,7 @@ const FutureFinder: React.FC<FutureFinderProps> = ({ uid, profile, onOpenCareerP
   }, []);
 
   if (isLoading) {
-    return (
-      <div className="flex items-center justify-center py-32">
-        <div className="w-8 h-8 border-2 border-t-transparent rounded-full animate-spin" style={{ borderColor: COLORS.accent, borderTopColor: 'transparent' }} />
-      </div>
-    );
+    return <LoadingState label="Loading your future pathways" />;
   }
 
   return (
@@ -768,7 +765,7 @@ function ResultsPhase({
 
       {results.length === 0 && (
         <div className="text-center py-16">
-          <p className="text-zinc-400 dark:text-zinc-500">No courses match your filters. Try broadening your region or study duration preferences.</p>
+          <StatePanel compact title="No courses match yet" description="Try broadening your region or study-duration preferences. Your other answers will stay as they are." />
         </div>
       )}
     </MotionDiv>

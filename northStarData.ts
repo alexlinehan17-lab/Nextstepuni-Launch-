@@ -80,6 +80,41 @@ export const VISION_CARDS: NorthStarVisionCard[] = [
   { id: 'jc-try-new', label: 'Trying new things', icon: 'Compass', category: 'future-doors', curriculum: 'junior' },
 ];
 
+/** Shared hand-drawn artwork for vision-board ideas. Keep every surface that
+ * presents these ideas on this single visual source of truth. */
+export const VISION_CARD_ART: Record<string, string> = {
+  'first-paycheck': '/icons/north-star/vision/first-paycheck.png',
+  'own-car': '/icons/north-star/vision/own-car.png',
+  'own-place': '/icons/north-star/vision/own-place.png',
+  'family-proud': '/icons/north-star/vision/family-proud.png',
+  'role-model': '/icons/north-star/vision/role-model.png',
+  'giving-back': '/icons/north-star/vision/giving-back.png',
+  'dream-job': '/icons/north-star/vision/dream-job.png',
+  'own-thing': '/icons/north-star/vision/own-thing.png',
+  'skilled-trade': '/icons/north-star/vision/skilled-trade.png',
+  'campus': '/icons/north-star/vision/campus.png',
+  'scholarship': '/icons/north-star/vision/scholarship.png',
+  'new-people': '/icons/north-star/vision/new-people.png',
+  'results-day': '/icons/north-star/vision/results-day.png',
+  'beating-odds': '/icons/north-star/vision/beating-odds.png',
+  'silence-doubters': '/icons/north-star/vision/silence-doubters.png',
+  'real-choices': '/icons/north-star/vision/real-choices.png',
+  'see-world': '/icons/north-star/vision/see-world.png',
+  'freedom-no': '/icons/north-star/vision/freedom-no.png',
+  'jc-family-proud': '/icons/north-star/vision/family-proud.png',
+  'jc-role-model': '/icons/north-star/vision/role-model.png',
+  'jc-giving-back': '/icons/north-star/vision/giving-back.png',
+  'jc-beating-odds': '/icons/north-star/vision/beating-odds.png',
+  'jc-silence-doubters': '/icons/north-star/vision/silence-doubters.png',
+  'jc-results-day': '/icons/north-star/vision/results-day.png',
+  'jc-mastering-skill': '/icons/north-star/vision/skilled-trade.png',
+  'jc-real-choices': '/icons/north-star/vision/real-choices.png',
+  'jc-really-good': '/icons/north-star/vision/jc-really-good.png',
+  'jc-solve-hard': '/icons/north-star/vision/jc-solve-hard.png',
+  'jc-subject-choice': '/icons/north-star/vision/jc-subject-choice.png',
+  'jc-try-new': '/icons/north-star/vision/jc-try-new.png',
+};
+
 export const CATEGORY_COLORS: Record<NorthStarCategory, { bg: string; border: string; text: string; selectedBg: string; selectedBorder: string; iconBg: string }> = {
   'independence': { bg: 'bg-stone-50 dark:bg-stone-900/20', border: 'border-stone-200 dark:border-stone-800/40', text: 'text-stone-700 dark:text-stone-300', selectedBg: 'bg-stone-100 dark:bg-stone-900/40', selectedBorder: 'border-stone-400 dark:border-stone-500', iconBg: 'bg-stone-100 dark:bg-stone-900/30' },
   'family-community': { bg: 'bg-rose-50 dark:bg-rose-900/20', border: 'border-rose-200 dark:border-rose-800/40', text: 'text-rose-700 dark:text-rose-300', selectedBg: 'bg-rose-100 dark:bg-rose-900/40', selectedBorder: 'border-rose-400 dark:border-rose-500', iconBg: 'bg-rose-100 dark:bg-rose-900/30' },

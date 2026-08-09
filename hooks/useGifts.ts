@@ -9,6 +9,7 @@ import { db } from '../firebase';
 import { saveInBackground, awaitWriteOrTimeout } from '../utils/firestoreWrite';
 import { type ShopItem } from '../types';
 import { SHOP_CATALOG } from '../islandShopData';
+import { getJourneyV2BasePrice } from '../journeyEconomyConfig';
 import { firstName } from '../utils/firstName';
 
 /** Max price for giftable items */
@@ -16,7 +17,7 @@ const GIFT_MAX_PRICE = 50;
 
 /** Items eligible to be gifted: decorations ≤50pts, not exclusive */
 export const GIFTABLE_ITEMS: ShopItem[] = SHOP_CATALOG.filter(
-  i => i.type === 'decoration' && i.price <= GIFT_MAX_PRICE && !i.exclusiveTo
+  i => i.type === 'decoration' && getJourneyV2BasePrice(i) <= GIFT_MAX_PRICE && !i.exclusiveTo
 );
 
 export interface PendingGift {
@@ -119,7 +120,7 @@ export function useGifts(uid?: string) {
       // Deduct points from sender
       const progressRef = doc(db, 'progress', uid);
       batch.update(progressRef, {
-        'pointsData.totalSpent': increment(item.price),
+        'pointsData.totalSpent': increment(getJourneyV2BasePrice(item)),
       });
 
       // Bounded wait — see useKudos.sendKudos. A queued batch still reaches the

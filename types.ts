@@ -141,6 +141,28 @@ export interface NorthStar {
   visionBoard: string[];
   createdAt: string;
   updatedAt: string;
+  /** True only when the student supplied the wording themselves. Legacy
+   * statements are preserved, but category copy is never presented as a
+   * student-authored quotation. */
+  authoredByStudent?: boolean;
+  reviewedAt?: string;
+}
+
+export type DirectionItemState = 'curious' | 'exploring' | 'serious-option' | 'current-target' | 'not-for-me' | 'achieved';
+
+export interface DirectionVisionItem {
+  id: string;
+  source: 'onboarding' | 'future-finder' | 'exploring-options' | 'student';
+  state: DirectionItemState;
+  addedAt: string;
+  updatedAt: string;
+}
+
+export interface DirectionProfile {
+  version: 2;
+  northStar: NorthStar;
+  visionItems: DirectionVisionItem[];
+  reviewedAt: string;
 }
 
 export interface JourneyProgress {
@@ -150,6 +172,21 @@ export interface JourneyProgress {
 }
 
 export type ShopItemCategory = 'terrain' | 'building' | 'path' | 'nature' | 'furniture' | 'vehicle' | 'atmosphere';
+export type IslandPlacementLayer = 'terrain' | 'structure' | 'decoration';
+export type IslandTerrainKind = 'grass' | 'dirt' | 'sand' | 'stone' | 'hill' | 'mountain' | 'path' | 'water' | 'unknown';
+
+export interface PlacementRules {
+  layer: IslandPlacementLayer;
+  allowedTerrain?: IslandTerrainKind[];
+  blockedTerrain?: IslandTerrainKind[];
+  preferredTerrain?: IslandTerrainKind[];
+  maximumPerTile?: number;
+  requiresAdjacentTerrain?: IslandTerrainKind[];
+  /** Requires at least one neighbouring water/frontier edge. */
+  requiresCoast?: boolean;
+  /** Keeps large landmarks from being visually boxed in. */
+  minimumOpenNeighbours?: number;
+}
 
 export interface ShopItem {
   id: string;
@@ -161,12 +198,17 @@ export interface ShopItem {
   price: number;
   exclusiveTo?: NorthStarCategory;
   defaultScale?: number;
+  placementRules?: PlacementRules;
 }
 
 export interface IslandPlacement {
+  /** Stable identity used by Build Mode for move, rotate and put-away operations. */
+  placementId?: string;
   itemId: string;
   model: string;
   type: 'hex' | 'decoration';
+  /** Explicit render/placement layer. Optional only for legacy stored islands. */
+  layer?: IslandPlacementLayer;
   q: number;
   r: number;
   rotation?: number;
@@ -180,13 +222,27 @@ export interface IslandPlacement {
   isStarter?: boolean;
 }
 
+export type IslandItemSource = 'purchase' | 'milestone' | 'gift' | 'stored';
+
+export interface IslandInventoryItem {
+  inventoryId: string;
+  itemId: string;
+  source: IslandItemSource;
+  acquiredAt: string;
+  giftId?: string;
+}
+
 export interface IslandState {
+  /** Schema 2 introduces stable placement IDs and explicit placement layers. */
+  schemaVersion?: number;
   category: NorthStarCategory;
   placements: IslandPlacement[];
   totalSpent: number;
   purchaseHistory: string[];
   lastPurchaseTimestamp: string;
   claimedRewards?: string[];
+  /** Owned objects waiting to be positioned in Build Mode. */
+  inventory?: IslandInventoryItem[];
 }
 
 // ── Strategy Mastery ──────────────────────────────────────
@@ -217,6 +273,26 @@ export interface TopicMasteryEntry {
 
 export type SubjectTopicMastery = Record<string, TopicMasteryEntry>;
 export type TopicMasteryMap = Record<string, SubjectTopicMastery>;
+
+/**
+ * Stable curriculum-keyed mastery. `topicMastery` remains the backwards-
+ * compatible display-name projection while consumers move to this schema.
+ */
+export interface CanonicalTopicMasteryEntry extends TopicMasteryEntry {
+  subjectId: string;
+  subjectName: string;
+  specificationId: string;
+  topicId: string;
+  topicName: string;
+}
+
+export interface TopicMasteryV2 {
+  schemaVersion: 2;
+  /** Keyed by `${specificationId}::${topicId}`. */
+  topics: Record<string, CanonicalTopicMasteryEntry>;
+  /** Legacy/custom records which cannot be mapped without guessing. */
+  unresolved: TopicMasteryMap;
+}
 
 // ── Unified Mock Results ─────────────────────────────────────
 export interface UnifiedMockResult {

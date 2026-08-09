@@ -563,6 +563,8 @@ describe('grading', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Got it' }));
     expect(onGrade).toHaveBeenCalledTimes(1);
     fireEvent.click(screen.getByRole('button', { name: /^Leave$/i }));
+    expect(screen.getByRole('dialog', { name: /Your completed cards are safe/i })).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /Leave session/i }));
     expect(onExit).toHaveBeenCalled();
   });
 });

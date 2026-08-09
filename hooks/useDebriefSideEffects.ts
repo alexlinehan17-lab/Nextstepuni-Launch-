@@ -6,9 +6,15 @@
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { saveInBackground } from '../utils/firestoreWrite';
-import { type UnifiedConfidence } from '../types';
+import { type TopicMasteryMap, type TopicMasteryV2, type UnifiedConfidence } from '../types';
 import { type DebriefEntry } from '../components/StudyDebrief';
 import { qualityFromDebrief, updateSM2, initSM2States, type SubjectSM2State } from '../components/timetableAlgorithm';
+import {
+  mergeTopicMasteryV2,
+  migrateTopicMastery,
+  projectTopicMastery,
+  upsertCanonicalMastery,
+} from '../services/topicMasteryMigration';
 
 /**
  * Process all side effects when a study debrief is submitted.
@@ -19,6 +25,7 @@ import { qualityFromDebrief, updateSM2, initSM2States, type SubjectSM2State } fr
 export async function processDebriefSideEffects(
   uid: string,
   entry: DebriefEntry,
+  examDate?: string | null,
 ): Promise<void> {
   try {
     const progressRef = doc(db, 'progress', uid);
@@ -28,14 +35,18 @@ export async function processDebriefSideEffects(
     const updates: Record<string, any> = {};
 
     // 1. Update topic mastery
-    const topicMastery = data.topicMastery || {};
+    const legacyMastery = (data.topicMastery ?? {}) as TopicMasteryMap;
+    const migratedLegacy = migrateTopicMastery(legacyMastery, examDate);
+    let topicMasteryV2: TopicMasteryV2 = data.topicMasteryV2?.schemaVersion === 2
+      ? mergeTopicMasteryV2(data.topicMasteryV2 as TopicMasteryV2, migratedLegacy)
+      : migratedLegacy;
+    let topicMastery = projectTopicMastery(topicMasteryV2);
+    let masteryChanged = false;
     const subject = entry.subject;
     const topic = entry.hardestTopic;
 
     if (topic && topic !== 'Not specified') {
-      if (!topicMastery[subject]) topicMastery[subject] = {};
-
-      const existing = topicMastery[subject][topic];
+      const existing = topicMastery[subject]?.[topic];
       let newConfidence: UnifiedConfidence = 'shaky';
 
       if (entry.confidenceAfter >= 4 && entry.confidenceAfter > entry.confidenceBefore) {
@@ -51,32 +62,39 @@ export async function processDebriefSideEffects(
         newConfidence = 'solid';
       }
 
-      topicMastery[subject][topic] = {
+      topicMasteryV2 = upsertCanonicalMastery(topicMasteryV2, subject, topic, {
         confidence: newConfidence,
         updatedAt: Date.now(),
         source: 'debrief' as const,
         lastDebriefDate: entry.date,
         sm2Quality: qualityFromDebrief(entry.confidenceBefore, entry.confidenceAfter, true),
-      };
-
-      updates.topicMastery = topicMastery;
+      }, examDate);
+      topicMastery = projectTopicMastery(topicMasteryV2);
+      masteryChanged = true;
     }
 
     // 1b. Update topicMastery for additionally covered topics (timestamp update only)
     if (entry.topicsCovered && entry.topicsCovered.length > 0) {
-      if (!topicMastery[subject]) topicMastery[subject] = {};
       const now = Date.now();
       for (const coveredTopic of entry.topicsCovered) {
         if (coveredTopic === topic) continue; // already handled above
-        const existing = topicMastery[subject][coveredTopic];
+        const existing = topicMastery[subject]?.[coveredTopic];
         // Don't change confidence — just update the timestamp to show it was studied
-        topicMastery[subject][coveredTopic] = {
+        topicMasteryV2 = upsertCanonicalMastery(topicMasteryV2, subject, coveredTopic, {
           confidence: existing?.confidence || 'shaky',
           updatedAt: now,
           source: 'debrief' as const,
           lastDebriefDate: entry.date,
-        };
+        }, examDate);
+        topicMastery = projectTopicMastery(topicMasteryV2);
+        masteryChanged = true;
       }
+    }
+
+    if (masteryChanged) {
+      // Canonical storage is authoritative; the display-name projection keeps
+      // older timetable/recommendation consumers working during migration.
+      updates.topicMasteryV2 = topicMasteryV2;
       updates.topicMastery = topicMastery;
     }
 

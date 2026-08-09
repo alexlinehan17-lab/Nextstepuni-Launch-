@@ -12,6 +12,7 @@ import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useFreshProgress } from './useFreshProgress';
 import { type LifeRegion } from '../components/effortLifeModel';
+import { type LifePriority } from '../components/possibleLifeModel';
 import { reportSaveError } from '../utils/logError';
 
 export interface EffortLifeSimState {
@@ -23,6 +24,15 @@ export interface EffortLifeSimState {
   horizon?: 'start' | 'experienced';
   /** The self-transcendent "why" reflection (optional, student-authored). */
   why?: string;
+  priorities?: LifePriority[];
+  selectedCareerIds?: string[];
+  feltLikeMe?: string;
+  notForMe?: string;
+  surprisedMe?: string;
+  obstacle?: string;
+  ifThenPlan?: string;
+  living?: 'home' | 'share' | 'independent';
+  rhythm?: 'steady' | 'varied';
   updatedAt: string;
 }
 

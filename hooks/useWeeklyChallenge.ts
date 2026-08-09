@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState, useEffect, useCallback, useRef } from 'react';
+import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import { collection, doc, getDocs, increment, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { saveInBackground } from '../utils/firestoreWrite';
@@ -11,6 +11,7 @@ import { useProgress } from '../contexts/ProgressContext';
 import { getWeekNumber, getWeekStartDate } from '../gamificationConfig';
 import { getWeeklyChallenge, type WeeklyChallengeDefinition } from '../weeklyChallengeData';
 import { type StudySessionRecord } from '../utils/strategyRegistry';
+import { normaliseWeeklyChallengeJP } from '../journeyEconomyConfig';
 
 export interface WeeklyChallengeState {
   /** Null when no challenge is available for the user's curriculum level
@@ -30,7 +31,11 @@ export function useWeeklyChallenge(uid: string | undefined): WeeklyChallengeStat
   // Phase 5: filter to user's curriculum. JC has no senior-tagged challenges
   // to surface; treat as "no challenge this week" rather than crashing.
   const curriculumLevel = rawProgressDoc?.subjectProfile?.curriculumLevel ?? 'senior';
-  const challenge = getWeeklyChallenge(weekNumber, curriculumLevel);
+  const sourceChallenge = getWeeklyChallenge(weekNumber, curriculumLevel);
+  const challenge = useMemo(() => sourceChallenge ? {
+    ...sourceChallenge,
+    rewardPoints: normaliseWeeklyChallengeJP(sourceChallenge.rewardPoints),
+  } : null, [sourceChallenge]);
   const weekStart = getWeekStartDate();
 
   const [current, setCurrent] = useState(0);

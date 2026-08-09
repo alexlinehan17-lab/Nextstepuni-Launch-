@@ -14,7 +14,8 @@
 import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import { ArrowLeft, Check, ChevronDown } from 'lucide-react';
+import { Check, ChevronDown } from 'lucide-react';
+import PageHeader from './ui/PageHeader';
 import { type CourseData } from './Library';
 import { LEARNING_PATHS, type LearningPath } from '../learningPaths';
 
@@ -76,32 +77,11 @@ const LearningPathsView: React.FC<LearningPathsViewProps> = ({
   };
 
   return (
-    <div className="min-h-screen bg-[#FAFBF6] dark:bg-zinc-950 pt-16 md:pt-20 pb-32 px-4 sm:px-6 transition-colors duration-500">
-      <div className="max-w-5xl mx-auto">
-        {/* ── Header row: back arrow + serif title ── */}
-        <div className="flex items-center gap-4 mb-12">
-          <button
-            onClick={onBack}
-            aria-label="Back"
-            className="w-10 h-10 rounded-xl flex items-center justify-center bg-white border border-[#EDEBE8] hover:bg-[#F8F4EC] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(242,107,31,0.35)]"
-            style={{ boxShadow: '0 1px 2px rgba(28,25,23,0.04)' }}
-          >
-            <ArrowLeft size={18} className="text-[#1a1a1a]" />
-          </button>
-          <h1
-            style={{
-              ...SERIF,
-              fontSize: 'clamp(32px, 5vw, 44px)',
-              fontWeight: 500,
-              letterSpacing: '-0.6px',
-              color: '#1a1a1a',
-              margin: 0,
-              lineHeight: 1.05,
-            }}
-          >
-            Learning Paths
-          </h1>
-        </div>
+    <div className="product-shell learning-paths-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)] pb-32 transition-colors duration-500">
+      <div className="fixed inset-x-0 top-0 z-40 border-b border-[#DDD8D2] bg-[#FAFBF6] px-4 pb-4 md:px-10 dark:border-zinc-800 dark:bg-zinc-950" style={{ paddingTop: 'calc(16px + var(--sat, 0px))' }}>
+        <div className="mx-auto max-w-7xl"><PageHeader onBack={onBack} eyebrow="Guided learning" title="Learning Paths" compact /></div>
+      </div>
+      <div className="max-w-5xl mx-auto px-4 pt-32 sm:px-6">
 
         {/* ── Card grid ── */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">

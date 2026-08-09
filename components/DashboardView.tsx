@@ -5,7 +5,8 @@
 
 import React, { useMemo } from 'react';
 import { MotionDiv } from './Motion';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
+import PageHeader from './ui/PageHeader';
 import { type CategoryType } from './KnowledgeTree';
 import { type CourseData } from './Library';
 import { type StreakData } from '../hooks/useStreak';
@@ -79,7 +80,7 @@ interface StatCellProps {
   eyebrow: string;
   value: string;
   meta: string;
-  /** Furthest-along uses a smaller serif so the longer composite value fits. */
+  /** Furthest-along scales fluidly so longer stage names fit without losing hierarchy. */
   smallValue?: boolean;
 }
 const StatCell: React.FC<StatCellProps> = ({ eyebrow, value, meta, smallValue }) => (
@@ -93,7 +94,7 @@ const StatCell: React.FC<StatCellProps> = ({ eyebrow, value, meta, smallValue })
     <p
       style={{
         ...SERIF,
-        fontSize: smallValue ? 22 : 36,
+        fontSize: smallValue ? 'clamp(28px, 2.5vw, 36px)' : 36,
         fontWeight: 500,
         color: '#1a1a1a',
         margin: 0,
@@ -168,20 +169,12 @@ const DashboardView: React.FC<DashboardViewProps> = ({
 
   return (
     <div className="min-h-screen bg-[#FAFBF6] dark:bg-zinc-950">
-      {/* Back arrow row */}
-      <div className="max-w-5xl mx-auto px-6 pt-6">
-        <button
-          onClick={onBack}
-          aria-label="Back"
-          className="w-10 h-10 rounded-xl flex items-center justify-center bg-white dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800 hover:bg-[#F8F4EC] dark:hover:bg-zinc-800 transition-colors"
-          style={{ boxShadow: '0 1px 2px rgba(28,25,23,0.04)' }}
-        >
-          <ArrowLeft size={18} className="text-[#1a1a1a] dark:text-zinc-200" />
-        </button>
+      <div className="fixed inset-x-0 top-0 z-40 border-b border-[#DDD8D2] bg-[#FAFBF6] px-4 pb-4 md:px-10 dark:border-zinc-800 dark:bg-zinc-950" style={{ paddingTop: 'calc(16px + var(--sat, 0px))' }}>
+        <div className="mx-auto max-w-7xl"><PageHeader onBack={onBack} eyebrow="Dashboard" title="My Progress" compact /></div>
       </div>
 
       {/* Single content card — the new mountain hero */}
-      <div className="max-w-5xl mx-auto px-6 pt-6 pb-10">
+      <div className="max-w-5xl mx-auto px-6 pt-28 pb-10">
         <MotionDiv
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}

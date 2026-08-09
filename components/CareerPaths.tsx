@@ -34,6 +34,8 @@ import { useInnovationData } from '../contexts/InnovationDataContext';
 
 const fade = { initial: { opacity: 0, y: 12 }, animate: { opacity: 1, y: 0 }, exit: { opacity: 0, y: -10 }, transition: { duration: 0.24 } };
 const euro = (k: number) => `€${k}k`;
+const PAY_REVIEWED = 'August 2026';
+const payRange = (salary: CareerCard['salary']) => `${euro(salary.startK)}–${euro(salary.experiencedK)}`;
 /** Neutral light panel for "the catch" — not dark, not red, not warm-cream. */
 const NEUTRAL_PANEL = '#F1F0ED';
 
@@ -107,7 +109,7 @@ const CardFace: React.FC<{ c: CareerCard; saved: boolean; matched: boolean }> = 
   const wd = FIELD_WORLD[c.field];
   const Icon = careerIcon(c.field, c.iconKey);
   return (
-    <div className="w-full h-full rounded-[28px] overflow-hidden flex flex-col select-none relative" style={{ backgroundColor: '#fff', border: '2px solid #1a1a1a', boxShadow: '6px 8px 0 0 #1a1a1a' }}>
+    <div className="w-full h-full rounded-[28px] overflow-hidden flex flex-col select-none relative" style={{ backgroundColor: 'var(--deck-paper)', border: '2px solid var(--deck-ink)', boxShadow: 'var(--deck-shadow)' }}>
       <div className="relative flex-1 flex items-center justify-center pt-8">
         {matched && <span className="absolute top-4 left-4 text-[10px] font-bold uppercase tracking-[0.1em] px-2.5 py-1 rounded-full inline-flex items-center gap-1" style={{ backgroundColor: wd.tint, color: wd.deep }}><Star size={11} /> Your match</span>}
         {saved && <span className="absolute top-4 right-4 w-7 h-7 rounded-full flex items-center justify-center" style={{ backgroundColor: wd.tint }}><BookmarkCheck size={15} style={{ color: wd.deep }} /></span>}
@@ -117,7 +119,7 @@ const CardFace: React.FC<{ c: CareerCard; saved: boolean; matched: boolean }> = 
         <h3 className="text-[24px] leading-tight font-semibold" style={{ fontFamily: SERIF, color: INK }}>{c.title}</h3>
         <p className="text-[14.5px] leading-snug font-medium mb-3" style={{ color: MUTED }}>{c.tagline}</p>
         <div className="inline-flex items-center gap-1.5 self-start text-[13px] font-semibold px-3 py-1.5 rounded-full" style={{ backgroundColor: wd.tint, color: wd.deep }}>
-          {euro(c.salary.startK)} <ArrowRight size={12} /> {euro(c.salary.experiencedK)}
+          {payRange(c.salary)} gross
         </div>
       </div>
     </div>
@@ -258,7 +260,7 @@ const CareerPaths: React.FC<{ uid?: string; studentSubjects?: string[]; seedMatc
     const bi = BEATS.indexOf(beat);
     const doors = coursesByRoute(card);
     return (
-      <div className="w-full max-w-xl mx-auto pb-10">
+      <div className="immersive-deck-theme w-full max-w-xl mx-auto pb-10">
         <button onClick={() => setCardId(null)} className="flex items-center gap-1.5 text-[13px] font-medium text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 mb-4"><ArrowLeft size={15} /> All careers</button>
         <HybridCard>
           {burst && <Celebration colors={[wd.bg, wd.glow]} />}
@@ -300,10 +302,10 @@ const CareerPaths: React.FC<{ uid?: string; studentSubjects?: string[]; seedMatc
 
                 {beat === 'deal' && (
                   <>
-                    <Eyebrow>What it pays in Ireland</Eyebrow>
+                    <Eyebrow>Typical gross pay in Ireland</Eyebrow>
                     <div className="flex items-end gap-4 mb-2">
                       <div>
-                        <p className="text-[11px] mb-0.5" style={{ color: MUTED }}>Starting</p>
+                        <p className="text-[11px] mb-0.5" style={{ color: MUTED }}>Early-career</p>
                         <CountUp to={card.salary.startK} durationMs={800} format={euro} className="text-[34px] font-bold" style={{ fontFamily: SERIF, color: INK }} />
                       </div>
                       <ArrowRight size={20} className="mb-2.5" style={{ color: MUTED }} />
@@ -315,7 +317,10 @@ const CareerPaths: React.FC<{ uid?: string; studentSubjects?: string[]; seedMatc
                     <div className="h-2 rounded-full mb-2 overflow-hidden" style={{ backgroundColor: wd.tint }}>
                       <MotionDiv className="h-full rounded-full" style={{ backgroundColor: wd.bg }} initial={{ width: '12%' }} animate={{ width: '100%' }} transition={{ duration: 1.1, ease: 'easeOut' }} />
                     </div>
-                    <p className="text-[12.5px] mb-6" style={{ color: MUTED }}>{card.salary.note}</p>
+                    <p className="text-[12.5px] mb-2" style={{ color: MUTED }}>{card.salary.note}</p>
+                    <p className="text-[11px] leading-snug mb-6 pt-2 border-t" style={{ color: MUTED, borderColor: HAIRLINE }}>
+                      Rounded annual gross base pay, reviewed {PAY_REVIEWED}. It is a guide, not a guaranteed starting salary; location, hours, employer, qualifications and self-employment can materially change earnings.
+                    </p>
 
                     <div className="grid grid-cols-2 gap-3 mb-7">
                       <div className="rounded-2xl p-3.5" style={{ backgroundColor: wd.tint }}>
@@ -417,7 +422,7 @@ const CareerPaths: React.FC<{ uid?: string; studentSubjects?: string[]; seedMatc
   // ── SAVED ("your shortlist") ──────────────────────────────────
   if (showSaved) {
     return (
-      <div className="w-full max-w-xl mx-auto pb-12">
+      <div className="immersive-deck-theme w-full max-w-xl mx-auto pb-12">
         <button onClick={() => setShowSaved(false)} className="flex items-center gap-1.5 text-[13px] font-medium text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 mb-4"><ArrowLeft size={15} /> The deck</button>
         <h2 className="text-2xl font-semibold mb-1" style={{ fontFamily: SERIF, color: INK }}>Your shortlist</h2>
         <p className="text-[13px] mb-4" style={{ color: MUTED }}>Careers you saved — bring these to your guidance counsellor.</p>
@@ -432,7 +437,7 @@ const CareerPaths: React.FC<{ uid?: string; studentSubjects?: string[]; seedMatc
                 <div key={c.id} className="rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46] p-4">
                   <div className="flex items-center gap-2.5 mb-1">
                     <span className="w-8 h-8 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: wd.bg }}><Icon size={16} color="#fff" /></span>
-                    <div><p className="text-[14px] font-semibold leading-tight" style={{ color: INK }}>{c.title}</p><p className="text-[12px]" style={{ color: MUTED }}>{euro(c.salary.startK)} → {euro(c.salary.experiencedK)}</p></div>
+                    <div><p className="text-[14px] font-semibold leading-tight" style={{ color: INK }}>{c.title}</p><p className="text-[12px]" style={{ color: MUTED }}>{payRange(c.salary)} gross estimate</p></div>
                   </div>
                   <p className="text-[13px] leading-snug" style={{ color: BODY }}>{c.tagline}</p>
                   {state.shiftRatings?.[c.id] != null && (
@@ -452,11 +457,11 @@ const CareerPaths: React.FC<{ uid?: string; studentSubjects?: string[]; seedMatc
   const top = deck[index];
   const topWorld = top ? FIELD_WORLD[top.field] : WORLDS.ocean;
   return (
-    <div className="w-full max-w-xl mx-auto pb-12">
+    <div className="immersive-deck-theme w-full max-w-xl mx-auto pb-12">
       {hasMatches && (
         <div className="flex flex-wrap gap-1.5 mb-4">
-          <button onClick={() => setFilter('matches')} className="rounded-full px-3.5 py-1.5 text-[12.5px] font-semibold inline-flex items-center gap-1.5 transition-colors" style={filter === 'matches' ? { backgroundColor: '#1a1a1a', color: '#fff' } : { backgroundColor: '#F1F0ED', color: '#3a3530' }}><Star size={13} /> Your matches ({matchedIds.size})</button>
-          <button onClick={() => setFilter('all')} className="rounded-full px-3.5 py-1.5 text-[12.5px] font-semibold transition-colors" style={filter === 'all' ? { backgroundColor: '#1a1a1a', color: '#fff' } : { backgroundColor: '#F1F0ED', color: '#3a3530' }}>All careers</button>
+          <button onClick={() => setFilter('matches')} className="rounded-xl border px-3.5 py-2 text-[12.5px] font-semibold inline-flex items-center gap-1.5 transition-colors" style={filter === 'matches' ? { backgroundColor: 'var(--deck-ink)', color: 'var(--deck-paper)', borderColor: 'var(--deck-ink)' } : { backgroundColor: 'var(--deck-soft)', color: 'var(--deck-body)', borderColor: 'var(--deck-hairline)' }}><Star size={13} /> Your matches ({matchedIds.size})</button>
+          <button onClick={() => setFilter('all')} className="rounded-xl border px-3.5 py-2 text-[12.5px] font-semibold transition-colors" style={filter === 'all' ? { backgroundColor: 'var(--deck-ink)', color: 'var(--deck-paper)', borderColor: 'var(--deck-ink)' } : { backgroundColor: 'var(--deck-soft)', color: 'var(--deck-body)', borderColor: 'var(--deck-hairline)' }}>All careers</button>
         </div>
       )}
       {filter === 'matches' && (

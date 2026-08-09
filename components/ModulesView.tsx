@@ -24,6 +24,7 @@ import { type CourseData } from './Library';
 import { type CategoryType } from './KnowledgeTree';
 import { MODULE_SECTIONS } from '../moduleSections';
 import { WorldIconBlob, type WorldId } from './WorldIconBlob';
+import PageHeader from './ui/PageHeader';
 
 type UserProgress = {
   [moduleId: string]: { unlockedSection: number };
@@ -39,12 +40,6 @@ interface ModulesViewProps {
 }
 
 // ── Inline SVG icons (currentColor) ─────────────────────────────────────
-
-const IconArrowLeft: React.FC<{ size?: number }> = ({ size = 18 }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-    <path d="M19 12H5M12 19l-7-7 7-7" />
-  </svg>
-);
 
 const IconArrowRight: React.FC<{ size?: number }> = ({ size = 16 }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -574,32 +569,12 @@ export const ModulesView: React.FC<ModulesViewProps> = ({
   ].filter(Boolean) as CategoryConfig[];
 
   return (
-    <div className="min-h-screen bg-[#FAFBF6] dark:bg-zinc-950">
+    <div className="product-shell modules-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)]">
       {/* Header — left side only. Right side intentionally empty so the
           App-level top-right cluster (TrainingPulse + bell + profile)
           owns that real estate without any leakage. */}
-      <header
-        className="fixed top-0 left-0 z-40 px-4 md:px-10 bg-[#FAFBF6]/85 dark:bg-zinc-950/90 backdrop-blur-md"
-        style={{ paddingTop: 'calc(16px + var(--sat, 0px))', paddingBottom: '16px' }}
-      >
-        <div className="flex items-center gap-4">
-          <button
-            onClick={onBack}
-            className="p-2.5 rounded-xl transition-colors hover:bg-white/60 dark:hover:bg-zinc-800/60 text-[#1A1A1A] dark:text-white"
-            style={{ border: '1px solid rgba(0,0,0,0.06)' }}
-            aria-label="Back to home"
-          >
-            <IconArrowLeft size={18} />
-          </button>
-          <div>
-            <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#A8A29E] dark:text-zinc-500">
-              The Programme
-            </p>
-            <h1 className="font-serif text-base md:text-lg font-semibold text-[#1A1A1A] dark:text-white">
-              Modules
-            </h1>
-          </div>
-        </div>
+      <header className="fixed inset-x-0 top-0 z-40 border-b border-[#DDD8D2] bg-[#FAFBF6] px-4 pb-4 md:px-10 dark:border-zinc-800 dark:bg-zinc-950" style={{ paddingTop: 'calc(16px + var(--sat, 0px))' }}>
+        <div className="mx-auto max-w-7xl"><PageHeader onBack={onBack} eyebrow="The Programme" title="Modules" compact /></div>
       </header>
 
       {/* Main */}

@@ -55,7 +55,7 @@ export const InnovationDataProvider: React.FC<InnovationDataProviderProps> = ({
   children, uid, subjectProfile,
 }) => {
   // Shared hooks — called once here instead of in each tool
-  const topicMastery = useTopicMastery(uid);
+  const topicMastery = useTopicMastery(uid, subjectProfile?.examStartDate);
   const mockResults = useMockResults(uid);
 
   // Future Finder picks — loaded from Firestore once
@@ -102,7 +102,7 @@ export const InnovationDataProvider: React.FC<InnovationDataProviderProps> = ({
   // Computed: subject priorities WITH topic mastery factored in
   const subjectPriorities = useMemo(() => {
     if (!subjectProfile) return [];
-    return computeSubjectPriorities(subjectProfile.subjects, topicMastery.mastery);
+    return computeSubjectPriorities(subjectProfile.subjects, topicMastery.mastery, subjectProfile.examStartDate);
   }, [subjectProfile, topicMastery.mastery]);
 
   const value: InnovationDataContextValue = {

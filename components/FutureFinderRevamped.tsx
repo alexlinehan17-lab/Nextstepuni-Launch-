@@ -27,9 +27,16 @@ import {
 import { RIASEC_ITEMS, VALUE_ITEMS, riasecItems } from './futureFinderRiasecItems';
 import { CAO_COURSES, type CAOCourse } from './futureFinderData';
 import { COURSE_RIASEC } from './futureFinderRiasecData';
-import { type StudentSubjectProfile, getPointsForGrade, LC_SUBJECTS } from './subjectData';
+import { type StudentSubjectProfile } from './subjectData';
+import { LoadingState } from './ui/SystemState';
 import FutureFinderResults, { type DisplayResult, type SortMode } from './FutureFinderResults';
 import { riasecToRecommendation } from './futureFinderRevampedAdapter';
+import {
+  compareRecommendations,
+  computeTargetCAOPoints,
+  RECOMMENDATION_RANKING_VERSION,
+  scoreRecommendation,
+} from './futureFinderRecommendation';
 
 const SCALE_INTEREST = ['Strongly dislike', 'Dislike', 'Neutral', 'Like', 'Strongly like'];
 const SCALE_VALUE = ['Not important', 'A little', 'Neutral', 'Important', 'Very important'];
@@ -40,15 +47,6 @@ function buildQuestions(length: 'full' | 'quick'): Question[] {
   const interest: Question[] = riasecItems(length === 'quick').map((i) => ({ id: i.id, kind: 'interest', scale: i.scale, text: i.text }));
   const values: Question[] = VALUE_ITEMS.map((v) => ({ id: v.id, kind: 'value', value: v.value, text: v.text }));
   return [...interest, ...values];
-}
-
-/** Best-six CAO points from current grades (mirrors the original Future Finder). */
-function computeCurrentPoints(profile: StudentSubjectProfile): number {
-  return profile.subjects
-    .map((s) => getPointsForGrade(s.currentGrade, LC_SUBJECTS.find((lc) => lc.name === s.subjectName)?.isMaths || false))
-    .sort((a, b) => b - a)
-    .slice(0, 6)
-    .reduce((sum, p) => sum + p, 0);
 }
 
 /**
@@ -79,10 +77,10 @@ function computeAnalysis(
       const cr = COURSE_RIASEC[course.code];
       if (!cr) return null;
       const fit = scoreCourseFit({ studentProfile, studentCode, studentPoints, studentSubjects: studentSubjectNames, studentValues, course: { ...cr, typicalPoints: course.typicalPoints } });
-      return { course, fit };
+      return { course, fit, recommendation: scoreRecommendation(course, fit, studentPoints) };
     })
-    .filter((x): x is { course: CAOCourse; fit: CourseFitResult } => x !== null)
-    .sort((a, b) => b.fit.fitR - a.fit.fitR);
+    .filter((x): x is { course: CAOCourse; fit: CourseFitResult; recommendation: ReturnType<typeof scoreRecommendation> } => x !== null)
+    .sort(compareRecommendations);
   const maxScale = Math.max(1, ...RIASEC_LETTERS.map((l) => studentProfile[l]));
   return { studentProfile, studentCode, studentValues, maxScale, shown: scored.filter((s) => s.fit.fitBucket !== 'none').slice(0, 24) };
 }
@@ -121,13 +119,28 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
   useEffect(() => {
     if (phase === 'quiz' && idx >= questions.length) setPhase('results');
   }, [phase, idx, questions.length]);
-  const studentPoints = useMemo(() => computeCurrentPoints(profile), [profile]);
+  const studentPoints = useMemo(() => computeTargetCAOPoints(profile), [profile]);
   const studentSubjectNames = useMemo(() => profile.subjects.map((s) => s.subjectName), [profile]);
 
   const analysis = useMemo(
     () => computeAnalysis(responses, valueResponses, studentPoints, studentSubjectNames),
     [responses, valueResponses, studentPoints, studentSubjectNames],
   );
+
+  // Results saved before the target-points recommendation model used an
+  // interest-only ordering. Re-rank them once from their original answers so
+  // downstream surfaces receive the same top ten the student now sees.
+  useEffect(() => {
+    if (!saved?.completedAt || saved.rankingVersion === RECOMMENDATION_RANKING_VERSION) return;
+    if (Object.keys(responses).length === 0) return;
+    const topMatches = analysis.shown.slice(0, 10).map((entry) => entry.course.code);
+    persist({
+      ...saved,
+      topMatches,
+      rankingVersion: RECOMMENDATION_RANKING_VERSION,
+      updatedAt: new Date().toISOString(),
+    });
+  }, [analysis, persist, responses, saved]);
 
   // Holds true between selecting an answer and the (brief) auto-advance, so the
   // orange selected state is actually visible and a fast double-tap can't skip
@@ -150,7 +163,7 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
         const finalValues = q.kind === 'value' ? { ...valueResponses, [q.id]: val } : valueResponses;
         const ranked = computeAnalysis(finalResponses, finalValues, studentPoints, studentSubjectNames)
           .shown.slice(0, 10).map((s) => s.course.code);
-        const next: FutureFinderRevampedState = { length, responses: finalResponses, valueResponses: finalValues, picks: savedPicks, topMatches: ranked, compareCodes, completedAt: new Date().toISOString(), updatedAt: new Date().toISOString() };
+        const next: FutureFinderRevampedState = { length, responses: finalResponses, valueResponses: finalValues, picks: savedPicks, topMatches: ranked, rankingVersion: RECOMMENDATION_RANKING_VERSION, compareCodes, completedAt: new Date().toISOString(), updatedAt: new Date().toISOString() };
         persist(next);
         setPhase('results');
       } else {
@@ -171,6 +184,7 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
       picks,
       // Carry the ranking through — a later bookmark toggle must not erase it.
       topMatches: saved?.topMatches ?? [],
+      rankingVersion: RECOMMENDATION_RANKING_VERSION,
       compareCodes: compares,
       completedAt: saved?.completedAt ?? new Date().toISOString(),
       updatedAt: new Date().toISOString(),
@@ -204,7 +218,7 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
     });
   }, [savedPicks, persistResultsState]);
 
-  if (!isLoaded) return <div className="w-full max-w-2xl mx-auto py-16 text-center text-sm text-zinc-400">Loading…</div>;
+  if (!isLoaded) return <LoadingState label="Loading your future finder" />;
 
   // ── INTRO ─────────────────────────────────────────────────────
   if (phase === 'intro') {
@@ -216,7 +230,7 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
           <span className="text-[10.5px] font-bold uppercase tracking-[0.14em]" style={{ color: COLORS.accentDarkText }}>Interests · RIASEC</span>
         </div>
         <h2 className="font-serif text-[28px] md:text-[32px] font-semibold leading-[1.08] mb-3" style={{ color: '#1a1a1a' }}>Find courses that fit<br />who you are</h2>
-        <p className="text-[14.5px] leading-relaxed text-zinc-500 dark:text-zinc-400 max-w-sm mx-auto mb-6">Rate quick activities, we build your interest profile, then rank CAO courses by how well they <span className="font-semibold text-zinc-700 dark:text-zinc-200">fit you</span> — points kept separate and honest.</p>
+        <p className="text-[14.5px] leading-relaxed text-zinc-500 dark:text-zinc-400 max-w-sm mx-auto mb-6">Rate quick activities and we’ll rank routes using your <span className="font-semibold text-zinc-700 dark:text-zinc-200">interests, values and target-grade points</span>. Your interest match remains visible on every course.</p>
 
         {/* length choice — chunky year-selector style buttons (a touch smaller) */}
         <div className="grid grid-cols-2 gap-3 max-w-sm mx-auto mb-6">
@@ -284,8 +298,8 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
   // Map the RIASEC-scored courses into the shared results UI's shape, then
   // apply the SAME sort/region filtering the original Future Finder does
   // (FutureFinder.tsx displayResults memo): top 30 → region → sort → top 10.
-  const allResults: DisplayResult[] = a.shown.map(({ course, fit }) =>
-    riasecToRecommendation(course, fit, topTypes, a.studentValues));
+  const allResults: DisplayResult[] = a.shown.map(({ course, fit, recommendation }) =>
+    riasecToRecommendation(course, fit, topTypes, a.studentValues, recommendation));
   let displayResults = allResults.slice(0, 30);
   if (regionFilter) displayResults = displayResults.filter((r) => r.course.region === regionFilter);
   if (sortMode === 'points') displayResults = [...displayResults].sort((x, y) => pointsAsc ? x.course.typicalPoints - y.course.typicalPoints : y.course.typicalPoints - x.course.typicalPoints);
@@ -332,7 +346,7 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
         scoreBreakdownLabels={{ interest: 'Interest fit', values: 'Values fit', feasibility: 'Points reach' }}
       />
 
-      <p className="text-[11px] text-zinc-400 mt-5 leading-relaxed">Interest fit is computed purely from your interests (Pearson correlation on the RIASEC profile, the O*NET method) and is never changed by points. The points badge is a separate, honest signal — a great-fit course that’s a stretch on points is shown as exactly that. Points move year to year; check current cutoffs.</p>
+      <p className="text-[11px] text-zinc-400 mt-5 leading-relaxed">The match percentage is pure RIASEC interest fit. The recommendation order also considers your target-grade points, work values, route level and known entry requirements, so realistic routes appear before stretches. Points move year to year; always check current cut-offs.</p>
     </div>
   );
 };
@@ -413,7 +427,7 @@ function RiasecExplainerModal({ onClose }: { onClose: () => void }) {
               </div>
               <div className="rounded-xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 p-3">
                 <p className="text-sm font-bold text-[#1A1A1A] dark:text-white mb-1">Points reach</p>
-                <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">How comfortable the course's typical points are given your current grades — a separate signal, shown so you can see it honestly.</p>
+                <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">How comfortable the course's typical points are given the target grades you set during onboarding.</p>
               </div>
             </div>
           </section>
@@ -421,7 +435,7 @@ function RiasecExplainerModal({ onClose }: { onClose: () => void }) {
           {/* Points stay separate */}
           <section className="rounded-xl p-3" style={{ backgroundColor: 'rgba(242,107,31,0.10)' }}>
             <p className="text-xs text-[#8C3A0E] dark:text-[#FDEEDF] leading-relaxed">
-              <span className="font-bold">Points never lower your interest match.</span> Reach is kept as its own axis, so a course that fits you perfectly but is a points stretch is shown as exactly that — a great fit that's a stretch — rather than being quietly demoted.
+              <span className="font-bold">Points never change the match percentage.</span> They do affect the default recommendation order: realistic routes come first, then ambitious choices, then longer stretches. That keeps a strong interest fit visible without presenting an improbable route as the student’s most practical next move.
             </p>
           </section>
 

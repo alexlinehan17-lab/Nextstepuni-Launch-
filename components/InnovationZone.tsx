@@ -11,8 +11,8 @@ import { MotionButton, MotionDiv } from './Motion';
 import { FileSearch,
     ArrowLeft,
     Lock, Compass, Target,
-    Settings, CalendarDays, Calculator, GitBranch, Rocket,
-    Map, ScanSearch, Milestone, Waypoints, Highlighter, Users, Briefcase, Sunrise, Mic, Stamp, Images, ListChecks, SpellCheck, FolderCheck
+    CalendarDays, Calculator, GitBranch, Rocket,
+    Map, ScanSearch, Milestone, Highlighter, Users, Sunrise, Mic, Stamp, Images, ListChecks, SpellCheck, FolderCheck
 } from 'lucide-react';
 import { doc, setDoc, getDoc, increment, deleteField } from 'firebase/firestore';
 import { saveInBackground } from '../utils/firestoreWrite';
@@ -22,6 +22,7 @@ import { type SchoolEvent } from './gc/GCKeyEvents';
 import { computeStreak, computeSubjectPriorities, allocateSessions, generateWeeklyTimetable, computeWeeksUntilExam } from './timetableAlgorithm';
 import { type StudyReflection, type PointsData, type CosmeticUnlocks, type EarnedRest, type UserSettings } from '../types';
 import SubjectOnboarding from './SubjectOnboarding';
+import { LoadingSpinner } from './LoadingSpinner';
 // Tool components are code-split: each loads its own chunk only when the
 // student opens it (rendered inside <Suspense> below). This keeps the
 // InnovationZone shell light and, crucially, defers the heavy Three.js
@@ -29,14 +30,12 @@ import SubjectOnboarding from './SubjectOnboarding';
 // actually opened, instead of at zone boot. (audit M21)
 const SpacedRepetitionTimetable = lazy(() => import('./SpacedRepetitionTimetable'));
 const WarRoom = lazy(() => import('./WarRoom'));
-const ComebackEngine = lazy(() => import('./ComebackEngine'));
-const CAOPointsSimulator = lazy(() => import('./CAOPointsSimulator'));
+const ComebackEngine = lazy(() => import('./ComebackEngineV2'));
 const FutureFinder = lazy(() => import('./FutureFinder'));
 const FutureFinderRevamped = lazy(() => import('./FutureFinderRevamped'));
 const CollegeCompass = lazy(() => import('./CollegeCompass'));
 const SyllabusXRay = lazy(() => import('./SyllabusXRay'));
 const PointsPassport = lazy(() => import('./PointsPassport'));
-const CatchUpLane = lazy(() => import('./CatchUpLane'));
 const CommandWordReflex = lazy(() => import('./CommandWordReflex'));
 const PaperTrail = lazy(() => import('./PaperTrail'));
 const MarkBank = lazy(() => import('./MarkBank/MarkBank'));
@@ -45,7 +44,6 @@ const AnswerArchitect = lazy(() => import('./AnswerArchitect/AnswerArchitect'));
 const DefinitionDrill = lazy(() => import('./DefinitionDrill/DefinitionDrill'));
 const CourseworkCompanion = lazy(() => import('./CourseworkCompanion/CourseworkCompanion'));
 const HowTheyDidIt = lazy(() => import('./HowTheyDidIt'));
-const CareerPaths = lazy(() => import('./CareerPaths'));
 const YourPossibleLife = lazy(() => import('./YourPossibleLife'));
 const OralExamTrainer = lazy(() => import('./OralExamTrainer'));
 const ExaminersChair = lazy(() => import('./ExaminersChair'));
@@ -87,11 +85,13 @@ interface ToolChrome {
  * reading column. `max-w-4xl` yields 848px of usable width, which is right for a
  * page of prose and wrong for a two-pane workspace.
  */
-const WIDE_TOOLS = new Set(['mark-bank']);
+const WIDE_TOOLS = new Set(['mark-bank', 'your-possible-life']);
 
 const TOOL_CHROME: Record<string, ToolChrome> = {
   'journey':         { themeColor: '#8B82B8', eyebrow: 'Track · Simulator',           subtitle: 'Navigate the choices of your final school year. Test-drive your future.',         showHeader: false },
-  'cao-simulator':   { themeColor: '#5B7DB0', eyebrow: 'Understand · Simulator',      subtitle: 'Run the numbers. See how grade changes ripple through your CAO total.',           showHeader: true  },
+  // Compatibility alias for old links. It now opens Points Passport directly
+  // on Grade Planner, so students see one points product rather than two.
+  'cao-simulator':   { themeColor: '#B8A079', eyebrow: 'Track · Points planning',      subtitle: 'Your points, mock history, grade plans and course reach in one place.',             showHeader: true  },
   'planner':         { themeColor: '#7DA37A', eyebrow: 'Plan · Planner',              subtitle: 'A data-driven study planner powered by your subject goals.',                       showHeader: true  },
   'war-room':        { themeColor: '#D85F47', eyebrow: 'Plan · Strategy',             subtitle: 'Where the strategy gets made. Map the syllabus, allocate the hours, plan the attack.', showHeader: false },
   'comeback':        { themeColor: '#E08938', eyebrow: 'Plan · Comeback',             subtitle: 'Find your quickest wins and build a comeback plan.',                                showHeader: true  },
@@ -101,7 +101,6 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   'points-passport': { themeColor: '#B8A079', eyebrow: 'Track · Tracker',             subtitle: 'Mock trends and grade bargains, all at a glance.',                                  showHeader: true  },
   'exam-reps':       { themeColor: '#5E9C7B', eyebrow: 'Technique · Practice',        subtitle: 'One real exam question at a time — marked the examiner’s way, so you see exactly where the marks were.', showHeader: true  },
   'college-compass': { themeColor: '#2A7D6F', eyebrow: 'Plan · Roadmap',              subtitle: 'Your year-by-year runway to college — every CAO, HEAR, DARE and scholarship deadline, in order.', showHeader: false },
-  'catch-up-lane':   { themeColor: '#0E9AA8', eyebrow: 'Catch up · Recovery',         subtitle: 'Missed some classes? Pick a subject and get caught up one quick topic at a time — no catch-up is too small.', showHeader: true  },
   // No header. Mark Bank is used daily, and a tool built for daily use must not
   // re-explain itself daily: the eyebrow, title and subtitle cost ~238px at the top
   // of every screen INCLUDING every review card, which is where the exam question
@@ -114,8 +113,7 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   'coursework-companion': { themeColor: '#F26B1F', eyebrow: 'Understand · Coursework & projects', subtitle: 'The coursework, project and practical components — marked exactly as the filed SEC scheme prints it.', showHeader: true },
   'command-word-reflex': { themeColor: '#6366F1', eyebrow: 'Technique · Exam skills', subtitle: 'Half of exam technique is reading the question right. Spot the command word in real questions and learn what it’s really asking — and the trap that loses marks.', showHeader: true },
   'how-they-did-it':  { themeColor: '#0E7C6B', eyebrow: 'Mindset · Real stories', subtitle: 'Real people who started where you are — money tight, learning differently, new to the country, first in the family — and the actual moves they made.', showHeader: true },
-  'career-paths':     { themeColor: '#0E7C6B', eyebrow: 'Understand · Career discovery', subtitle: 'Real careers — what they pay, the day-to-day, the skills, and the courses that lead there.', showHeader: true },
-  'your-possible-life': { themeColor: '#2E6E8E', eyebrow: 'Understand · Your future', subtitle: 'See the life your effort now could open up — and the bridge from your grades today to get there.', showHeader: true },
+  'your-possible-life': { themeColor: '#2E6E8E', eyebrow: 'Understand · Career discovery', subtitle: 'Explore real careers, step inside an ordinary day, and keep routes that feel worth testing.', showHeader: true },
   'oral-trainer':    { themeColor: '#4C8C5E', eyebrow: 'Technique · Speaking exam', subtitle: 'The one exam no app prepares you for — the oral. Rehearse it out loud, record yourself, and know exactly where you stand on every part.', showHeader: true },
   'examiners-chair': { themeColor: '#9E4A3E', eyebrow: 'Technique · Marking literacy', subtitle: 'Sit on the other side of the desk. Mark real-style scripts against the real SEC rules, and learn to see your own answers the way the examiner will.', showHeader: true },
 };
@@ -153,15 +151,7 @@ function validatePointsData(raw: unknown): PointsData {
 }
 
 /** Suspense fallback shown while a tool's code-split chunk loads. */
-const ToolLoadingFallback: React.FC = () => (
-    <div className="flex flex-col items-center justify-center py-24 gap-3" role="status" aria-live="polite">
-        <span
-            className="block rounded-full animate-spin"
-            style={{ width: 28, height: 28, border: '3px solid rgba(242,107,31,0.25)', borderTopColor: '#F26B1F' }}
-        />
-        <span className="text-[13px] font-medium text-zinc-400 dark:text-zinc-500">Loading…</span>
-    </div>
-);
+const ToolLoadingFallback: React.FC = () => <LoadingSpinner />;
 
 // ─── InnovationZone ──────────────────────────────────────────────────────────
 
@@ -170,22 +160,22 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     const nav = useNavigation();
     const activeTool = nav.state.activeTool;
     const setActiveTool = nav.setActiveTool;
+
+    // Retired tool aliases keep old bookmarks and persisted navigation useful.
+    useEffect(() => {
+        if (activeTool === 'catch-up-lane') setActiveTool(null);
+        if (activeTool === 'career-paths') setActiveTool('your-possible-life');
+    }, [activeTool, setActiveTool]);
     const [subjectProfile, setSubjectProfile] = useState<StudentSubjectProfile | null>(null);
     const [showOnboarding, setShowOnboarding] = useState(false);
     const [profileLoaded, setProfileLoaded] = useState(false);
     const [pendingToolId, setPendingToolId] = useState<string | null>(null);
-    // When the Future Finder results screen launches Career Paths, seed it to
-    // land on the student's matched careers; grid launches reset this to false.
-    // The career strings are passed through directly (Future Finder has them
-    // live) so matching is robust even if the shared context's picks are stale.
-    const [careerSeedMatches, setCareerSeedMatches] = useState(false);
-    const [careerSeedStrings, setCareerSeedStrings] = useState<string[]>([]);
     const [timetableCompletions, setTimetableCompletions] = useState<TimetableCompletions>({});
     const [timetableStreak, setTimetableStreak] = useState<TimetableStreak>({ currentStreak: 0, lastActiveDate: '', longestStreak: 0 });
     const [reflections, setReflections] = useState<StudyReflection[]>([]);
 
     // Topic mastery for skippableBlocks computation (shared context loads separately for tools)
-    const { mastery: topicMasteryForPriorities } = useTopicMastery(user?.uid);
+    const { mastery: topicMasteryForPriorities } = useTopicMastery(user?.uid, subjectProfile?.examStartDate);
     const [pointsData, setPointsData] = useState<PointsData>({ totalEarned: 0, totalSpent: 0 });
     const [cosmeticUnlocks, setCosmeticUnlocks] = useState<CosmeticUnlocks>({ avatarSeeds: [], themeColors: [], cardStyles: [] });
     const [earnedRest, setEarnedRest] = useState<EarnedRest>({ skippedSessions: [], restDayPasses: [] });
@@ -470,8 +460,6 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             setShowOnboarding(true);
             return;
         }
-        setCareerSeedMatches(false);
-        setCareerSeedStrings([]);
         setActiveTool(toolId);
     }, [subjectProfile, profileLoaded, setActiveTool]);
 
@@ -482,7 +470,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         const jsDay = today.getDay();
         const todayDayIndex = jsDay === 0 ? 6 : jsDay - 1;
 
-        const priorities = computeSubjectPriorities(subjectProfile.subjects, topicMasteryForPriorities);
+        const priorities = computeSubjectPriorities(subjectProfile.subjects, topicMasteryForPriorities, subjectProfile.examStartDate);
         const weeksUntilExam = computeWeeksUntilExam(subjectProfile.examStartDate);
         const allocations = allocateSessions(priorities, weeksUntilExam);
         const restDaysArray = subjectProfile.restDays || [];
@@ -520,13 +508,13 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             component: <AcademicJourneyGame onSelectModule={onSelectModule} user={user} savedJourneyResult={savedJourneyResult} onJourneyComplete={onJourneyComplete} />,
         },
         {
-            id: 'cao-simulator', title: 'CAO Points Simulator', description: 'Explore how grade changes affect your CAO points.', icon: Calculator, needsProfile: true,
+            id: 'cao-simulator', title: 'Points Passport', description: 'Your points, mock history and grade planner in one place.', icon: Calculator, needsProfile: true,
             curriculum: 'senior' as const,
             tag: 'Simulator', accentHex: '#64748b', gridClass: 'md:col-span-3',
             iconBg: 'bg-slate-100 dark:bg-slate-800/40', iconColor: 'text-slate-600 dark:text-slate-300',
             accentBarColor: 'bg-slate-500', tagBg: 'bg-slate-100 dark:bg-slate-800/40', tagText: 'text-slate-600 dark:text-slate-300',
             hoverBorder: 'hover:border-slate-400/50 dark:hover:border-slate-500/40',
-            component: subjectProfile ? <CAOPointsSimulator profile={subjectProfile} uid={user?.uid} onOpenSettings={() => setShowOnboarding(true)} /> : null,
+            component: subjectProfile && user ? <PointsPassport uid={user.uid} profile={subjectProfile} initialTab="planner" onOpenSettings={() => setShowOnboarding(true)} /> : null,
         },
         {
             id: 'planner', title: 'Spaced Repetition Timetable', description: 'A data-driven study planner powered by your subject goals.', icon: CalendarDays, needsProfile: true,
@@ -535,7 +523,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             iconBg: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400',
             accentBarColor: 'bg-indigo-500', tagBg: 'bg-indigo-100 dark:bg-indigo-900/30', tagText: 'text-indigo-700 dark:text-indigo-400',
             hoverBorder: 'hover:border-indigo-400/50 dark:hover:border-indigo-500/40',
-            component: subjectProfile ? <SpacedRepetitionTimetable profile={subjectProfile} uid={user?.uid} onOpenSettings={() => setShowOnboarding(true)} completions={timetableCompletions} streak={timetableStreak} onToggleCompletion={handleToggleCompletion} points={pointsData.totalEarned - pointsData.totalSpent} onSpendPoints={handleSpendPoints} onOpenJournal={() => setShowJournal(true)} skippedSessions={earnedRest.skippedSessions} onStudyNow={onStudyNow} schoolEvents={schoolEvents} onBlockDurationChange={(_s, _t, newDuration) => { const previous = subjectProfile; const updated = { ...subjectProfile, defaultBlockDuration: newDuration }; setSubjectProfile(updated); if (user?.uid) { saveInBackground(setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }), 'InnovationZone.saveBlockDuration', () => setSubjectProfile(previous)); } }} onRestDaysChange={(days) => { const previous = subjectProfile; const updated = { ...subjectProfile, restDays: days }; setSubjectProfile(updated); if (user?.uid) { saveInBackground(setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }), 'InnovationZone.saveRestDays', () => setSubjectProfile(previous)); } }} /> : null,
+            component: subjectProfile ? <SpacedRepetitionTimetable profile={subjectProfile} uid={user?.uid} onOpenSettings={() => setShowOnboarding(true)} completions={timetableCompletions} streak={timetableStreak} onToggleCompletion={handleToggleCompletion} onOpenJournal={() => setShowJournal(true)} skippedSessions={earnedRest.skippedSessions} onStudyNow={onStudyNow} schoolEvents={schoolEvents} onBlockDurationChange={(_s, _t, newDuration) => { const previous = subjectProfile; const updated = { ...subjectProfile, defaultBlockDuration: newDuration }; setSubjectProfile(updated); if (user?.uid) { saveInBackground(setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }), 'InnovationZone.saveBlockDuration', () => setSubjectProfile(previous)); } }} onRestDaysChange={(days) => { const previous = subjectProfile; const updated = { ...subjectProfile, restDays: days }; setSubjectProfile(updated); if (user?.uid) { saveInBackground(setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }), 'InnovationZone.saveRestDays', () => setSubjectProfile(previous)); } }} /> : null,
         },
         {
             id: 'war-room', title: 'War Room', description: 'Your strategic study command centre.', icon: Target, needsProfile: true,
@@ -547,13 +535,13 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             component: subjectProfile ? <WarRoom uid={user!.uid} profile={subjectProfile} timetableCompletions={timetableCompletions} /> : null,
         },
         {
-            id: 'comeback', title: 'Comeback Engine', description: 'Find your quickest wins and build a comeback plan.', icon: Rocket, needsProfile: true,
+            id: 'comeback', title: 'Comeback Engine', description: 'A realistic seven-day recovery plan built from your actual study pattern.', icon: Rocket, needsProfile: true,
             curriculum: 'both' as const,
             tag: 'Comeback', accentHex: '#f97316', gridClass: 'md:col-span-2',
             iconBg: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-600 dark:text-orange-400',
             accentBarColor: 'bg-orange-500', tagBg: 'bg-orange-100 dark:bg-orange-900/30', tagText: 'text-orange-700 dark:text-orange-400',
             hoverBorder: 'hover:border-orange-400/50 dark:hover:border-orange-500/40',
-            component: subjectProfile ? <ComebackEngine uid={user!.uid} profile={subjectProfile} /> : null,
+            component: subjectProfile ? <ComebackEngine uid={user!.uid} profile={subjectProfile} timetableCompletions={timetableCompletions} onOpenTool={setActiveTool} /> : null,
         },
         {
             // Option B (per Phase 2 spec): same tile, but the title and
@@ -575,7 +563,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             iconBg: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400',
             accentBarColor: 'bg-indigo-500', tagBg: 'bg-indigo-100 dark:bg-indigo-900/30', tagText: 'text-indigo-700 dark:text-indigo-400',
             hoverBorder: 'hover:border-indigo-400/50 dark:hover:border-indigo-500/40',
-            component: subjectProfile ? <FutureFinder uid={user!.uid} profile={subjectProfile} onOpenCareerPaths={(strings) => { setCareerSeedStrings(strings); setCareerSeedMatches(true); setActiveTool('career-paths'); }} /> : null,
+            component: subjectProfile ? <FutureFinder uid={user!.uid} profile={subjectProfile} onOpenCareerPaths={() => setActiveTool('your-possible-life')} /> : null,
         },
         {
             id: 'future-finder-revamped', title: 'Future Finder', description: 'Interest-based (RIASEC) course matching — ranked CAO courses that fit who you are.', icon: Compass, needsProfile: true,
@@ -584,7 +572,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             iconBg: 'bg-pink-100 dark:bg-pink-900/30', iconColor: 'text-pink-700 dark:text-pink-300',
             accentBarColor: 'bg-pink-500', tagBg: 'bg-pink-100 dark:bg-pink-900/30', tagText: 'text-pink-700 dark:text-pink-400',
             hoverBorder: 'hover:border-pink-400/50 dark:hover:border-pink-500/40',
-            component: subjectProfile ? <FutureFinderRevamped uid={user!.uid} profile={subjectProfile} onOpenCareerPaths={(strings) => { setCareerSeedStrings(strings); setCareerSeedMatches(true); setActiveTool('career-paths'); }} /> : null,
+            component: subjectProfile ? <FutureFinderRevamped uid={user!.uid} profile={subjectProfile} onOpenCareerPaths={() => setActiveTool('your-possible-life')} /> : null,
         },
         {
             id: 'syllabus-xray', title: 'Syllabus X-Ray', description: 'See where the marks are hiding in your exams.', icon: ScanSearch, needsProfile: false,
@@ -593,7 +581,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             iconBg: 'bg-rose-100 dark:bg-rose-900/30', iconColor: 'text-rose-600 dark:text-rose-400',
             accentBarColor: 'bg-rose-500', tagBg: 'bg-rose-100 dark:bg-rose-900/30', tagText: 'text-rose-700 dark:text-rose-400',
             hoverBorder: 'hover:border-rose-400/50 dark:hover:border-rose-500/40',
-            component: <SyllabusXRay studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} uid={user?.uid} />,
+            component: <SyllabusXRay studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} uid={user?.uid} examDate={subjectProfile?.examStartDate} />,
         },
         {
             id: 'points-passport', title: 'Points Passport', description: 'Mock trends & grade bargains at a glance.', icon: Map, needsProfile: true,
@@ -602,7 +590,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             iconBg: 'bg-sky-100 dark:bg-sky-900/30', iconColor: 'text-sky-600 dark:text-sky-400',
             accentBarColor: 'bg-sky-500', tagBg: 'bg-sky-100 dark:bg-sky-900/30', tagText: 'text-sky-700 dark:text-sky-400',
             hoverBorder: 'hover:border-sky-400/50 dark:hover:border-sky-500/40',
-            component: subjectProfile && user ? <PointsPassport uid={user.uid} profile={subjectProfile} /> : null,
+            component: subjectProfile && user ? <PointsPassport uid={user.uid} profile={subjectProfile} onOpenSettings={() => setShowOnboarding(true)} /> : null,
         },
         {
             // Senior-cycle only (TY/5th/6th). `seniorYearsOnly` additionally
@@ -616,16 +604,6 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             accentBarColor: 'bg-teal-600', tagBg: 'bg-teal-100 dark:bg-teal-900/30', tagText: 'text-teal-700 dark:text-teal-400',
             hoverBorder: 'hover:border-teal-400/50 dark:hover:border-teal-500/40',
             component: <CollegeCompass uid={user?.uid} yearGroup={user?.yearGroup} />,
-        },
-        {
-            id: 'catch-up-lane', title: 'Catch-Up Lane', description: 'Missed class? Get caught up, one quick topic at a time.', icon: Waypoints, needsProfile: false,
-            // 'both': has Junior Cycle AND Leaving Cert content (cycle-grouped picker), so visible to JC and senior users.
-            curriculum: 'both' as const,
-            tag: 'Catch up', accentHex: '#0E9AA8', gridClass: 'md:col-span-2',
-            iconBg: 'bg-cyan-100 dark:bg-cyan-900/30', iconColor: 'text-cyan-700 dark:text-cyan-300',
-            accentBarColor: 'bg-cyan-500', tagBg: 'bg-cyan-100 dark:bg-cyan-900/30', tagText: 'text-cyan-700 dark:text-cyan-400',
-            hoverBorder: 'hover:border-cyan-400/50 dark:hover:border-cyan-500/40',
-            component: <CatchUpLane uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} studentCycle={curriculumLevel === 'junior' ? 'junior-cycle' : 'leaving-cert'} />,
         },
         {
             id: 'mark-bank', title: 'Mark Bank', description: 'Real exam questions, marked point by point \u2014 brought back before you forget.', icon: ListChecks, needsProfile: false,
@@ -721,16 +699,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             component: <HowTheyDidIt uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} />,
         },
         {
-            id: 'career-paths', title: 'Exploring Options', description: 'Real careers — what they pay, the day-to-day, and how to get there.', icon: Briefcase, needsProfile: false,
-            curriculum: 'both' as const,
-            tag: 'Career Discovery', accentHex: '#0E7C6B', gridClass: 'md:col-span-3',
-            iconBg: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-700 dark:text-teal-300',
-            accentBarColor: 'bg-teal-500', tagBg: 'bg-teal-100 dark:bg-teal-900/30', tagText: 'text-teal-700 dark:text-teal-400',
-            hoverBorder: 'hover:border-teal-400/50 dark:hover:border-teal-500/40',
-            component: <CareerPaths uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} seedMatches={careerSeedMatches} seedMatchStrings={careerSeedStrings} />,
-        },
-        {
-            id: 'your-possible-life', title: 'Your Possible Life', description: 'Connect the effort you put in now to the life it could open up.', icon: Sunrise, needsProfile: true,
+            id: 'your-possible-life', title: 'Your Possible Life', description: 'Explore real careers, ordinary working days, pay and routes — then save possibilities worth testing.', icon: Sunrise, needsProfile: true,
             curriculum: 'senior' as const,
             tag: 'Career Discovery', accentHex: '#2E6E8E', gridClass: 'md:col-span-3',
             iconBg: 'bg-sky-100 dark:bg-sky-900/30', iconColor: 'text-sky-700 dark:text-sky-300',
@@ -754,7 +723,6 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         'journey': 'track',
         'exam-reps': 'plan',
         'college-compass': 'plan',
-        'catch-up-lane': 'plan',
         'paper-trail': 'understand',
         'diagram-vault': 'understand',
         'answer-architect': 'understand',
@@ -764,7 +732,6 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         'oral-trainer': 'understand',
         'examiners-chair': 'understand',
         'how-they-did-it': 'understand',
-        'career-paths': 'understand',
         'future-finder-revamped': 'understand',
         'your-possible-life': 'understand',
     };
@@ -776,6 +743,9 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     // the sidebar Workshop page's deep-links (currentTool lookup is unfiltered).
     const WIP_TOOL_IDS = new Set(['diagram-vault', 'answer-architect', 'definition-drill', 'oral-trainer', 'examiners-chair', 'coursework-companion']);
     const curriculumVisibleTools = tools.filter(t => {
+      // Old CAO Simulator URLs and module links remain valid, but the duplicate
+      // tile is removed now that all of its capability lives in Points Passport.
+      if (t.id === 'cao-simulator') return false;
       if (WIP_TOOL_IDS.has(t.id)) return false;
       const tag = t.curriculum ?? 'senior';
       const okCurriculum = tag === 'both' || tag === curriculumLevel;
@@ -795,7 +765,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
 
   return (
     <div
-      className="min-h-screen bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500 overflow-x-hidden relative flex flex-col items-center pb-36 md:pb-24"
+      className="product-shell launchpad-shell min-h-screen bg-[var(--surface-canvas)] transition-colors duration-500 overflow-x-hidden relative flex flex-col items-center pb-36 md:pb-24"
       // Fixed header at top is ~80px tall (back button + eyebrow + title) + safe-area-inset-top.
       // The journey/war-room tools historically had a smaller header offset (pt-14)
       // which left content peeking out behind the bar. Use the same generous offset
@@ -805,29 +775,23 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
       }}
     >
 
-      <header className={`fixed top-0 left-0 right-0 z-[60] bg-zinc-50 dark:bg-zinc-950 px-4 md:px-10 ${activeTool === 'journey' || activeTool === 'war-room' || activeTool === 'college-compass' ? '' : 'border-b border-zinc-200 dark:border-zinc-800'}`} style={{ paddingTop: 'calc(16px + var(--sat, 0px))', paddingBottom: '16px' }}>
+      <header className="fixed top-0 left-0 right-0 z-[60] bg-[var(--surface-paper)] px-4 md:px-10 border-b border-[var(--outline-soft)]" style={{ paddingTop: 'calc(16px + var(--sat, 0px))', paddingBottom: '16px' }}>
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center gap-4 md:gap-8">
-            <MotionButton whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={activeTool ? () => nav.goBack() : onBack} className="p-2.5 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]">
+            <MotionButton whileHover={{ y: -1 }} whileTap={{ x: 1, y: 1 }} onClick={activeTool ? () => nav.goBack() : onBack} className="p-2.5 rounded-xl bg-[var(--surface-paper)] border-[1.5px] border-[var(--outline-strong)] shadow-[2px_2px_0_0_var(--outline-strong)] active:shadow-none transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]">
               <ArrowLeft size={18} className="text-zinc-900 dark:text-white" />
             </MotionButton>
-            <div className="hidden md:block h-10 w-px bg-zinc-200 dark:bg-zinc-800" />
+            <div className="hidden md:block h-10 w-px bg-[var(--outline-soft)]" />
             <div>
               <p className="font-mono text-[9px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-[0.25em] mb-1">Explore</p>
               <h1 className="font-serif font-semibold text-lg md:text-2xl tracking-tight text-zinc-900 dark:text-white truncate">The Launchpad</h1>
             </div>
           </div>
-          <div className="flex items-center gap-3">
-            {subjectProfile && (
-              <button
-                onClick={() => setShowOnboarding(true)}
-                className="p-2.5 rounded-lg bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800"
-                title="Edit subjects"
-              >
-                <Settings size={16} className="text-zinc-500 dark:text-zinc-400" />
-              </button>
-            )}
-          </div>
+          {/* Global rank, notifications and profile controls own the top-right.
+              A second settings action here sat underneath that fixed cluster and
+              appeared as a stray button. Subject editing remains available from
+              the profile/settings flow. */}
+          <div aria-hidden="true" />
         </div>
       </header>
 
@@ -849,14 +813,14 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
 
                     {/* Filter pills + Points trigger — same row, opposite ends */}
                     <div className="mb-8 flex items-center justify-between gap-3 flex-wrap">
-                        <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50 w-fit">
+                        <div className="flex items-center gap-1 p-1 rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-soft)] w-fit">
                             {(['all', 'understand', 'practise', 'plan', 'track'] as const).map(filter => (
                                 <button
                                     key={filter}
                                     onClick={() => setActiveFilter(filter)}
                                     className={`px-4 py-2 rounded-lg text-sm transition-all ${
                                         activeFilter === filter
-                                            ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white font-medium shadow-sm'
+                                            ? 'bg-[var(--surface-paper)] text-[var(--ink-primary)] font-medium border border-[var(--outline-strong)]'
                                             : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300'
                                     }`}
                                 >
@@ -864,7 +828,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                                 </button>
                             ))}
                         </div>
-                        <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50 w-fit">
+                        <div className="flex items-center gap-1 p-1 rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-soft)] w-fit">
                             <button
                                 onClick={togglePointsPanel}
                                 aria-label="How points work"
@@ -872,7 +836,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                                 title="How points work"
                                 className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm transition-all ${
                                     showPointsPanel
-                                        ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white font-medium shadow-sm'
+                                        ? 'bg-[var(--surface-paper)] text-[var(--ink-primary)] font-medium border border-[var(--outline-strong)]'
                                         : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300'
                                 }`}
                             >
@@ -894,7 +858,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
 
                     {/* Empty state for JC users when no tools are curriculum-visible.
                         JC-visible tools now include the Spaced Repetition Timetable,
-                        Comeback Engine, Subject Explorer, Catch-Up Lane,
+                        Comeback Engine, Subject Explorer,
                         Command-Word Reflex, How They Did It and Exploring Options.
                         This branch is now only reachable when the user filters by a
                         category that contains zero JC-visible tools — so the message
@@ -903,7 +867,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                       <div className="rounded-2xl p-10 text-center" style={{ backgroundColor: '#FDF8F0', border: '2px solid #1A1A1A' }}>
                         <p className="font-serif text-xl font-bold mb-2 text-[#1A1A1A]">No tools in this category for Junior Cycle yet.</p>
                         <p className="text-sm text-[#78716C] max-w-md mx-auto">
-                          Try a different category, or hit "All" to see the tools we have ready for you — including Catch-Up Lane, Command-Word Reflex, the Spaced Repetition Timetable and the Comeback Engine.
+                          Try a different category, or hit "All" to see the tools we have ready for you — including Command-Word Reflex, the Spaced Repetition Timetable and the Comeback Engine.
                         </p>
                       </div>
                     )}
@@ -921,11 +885,11 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.3, delay: i * 0.04 }}
                                     onClick={disabled ? undefined : () => handleToolClick(tool.id, tool.needsProfile)}
-                                    className={`flex flex-col rounded-xl border overflow-hidden transition-all ${
+                                    className={`flex flex-col rounded-2xl border-[1.5px] overflow-hidden transition-all ${
                                         disabled
-                                            ? 'border-zinc-200/60 dark:border-zinc-800/40 cursor-not-allowed'
-                                            : 'border-zinc-200/60 dark:border-zinc-800/40 hover:border-zinc-300 dark:hover:border-zinc-700 hover:shadow-md cursor-pointer'
-                                    } bg-white dark:bg-zinc-900`}
+                                            ? 'border-[var(--outline-soft)] cursor-not-allowed'
+                                            : 'border-[var(--outline-strong)] hover:-translate-y-0.5 hover:shadow-[3px_3px_0_0_var(--outline-strong)] cursor-pointer'
+                                    } bg-[var(--surface-paper)]`}
                                 >
                                     <div className="p-6 flex-1 flex flex-col">
                                         {/* Painted blob + hand-drawn ink illustration. Disabled state
@@ -1008,7 +972,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                                 eyebrow={TOOL_CHROME[currentTool.id].eyebrow}
                                 title={currentTool.title}
                                 subtitle={TOOL_CHROME[currentTool.id].subtitle}
-                                iconBlob={<ToolIconBlob toolId={currentTool.id as ToolIconKey} size={108} />}
+                                iconBlob={<ToolIconBlob toolId={(currentTool.id === 'cao-simulator' ? 'points-passport' : currentTool.id) as ToolIconKey} size={108} />}
                             />
                         </div>
                     )}

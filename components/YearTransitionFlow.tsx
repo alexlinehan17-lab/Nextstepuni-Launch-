@@ -113,15 +113,15 @@ export const YearTransitionFlow: React.FC<YearTransitionFlowProps> = ({
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 z-[300] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4"
+          className="fixed inset-0 z-[300] flex items-end sm:items-center justify-center bg-[#1A1A1A]/55 p-0 sm:p-4"
           onClick={close}
         >
           <MotionDiv
             initial={{ opacity: 0, scale: 0.95, y: 10 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 10 }}
-            transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
-            className="bg-[#FDF8F0] dark:bg-zinc-900 rounded-2xl border-2 border-[#1A1A1A] shadow-[6px_6px_0_0_#1A1A1A] max-w-md w-full p-6"
+            transition={{ type: 'spring', stiffness: 280, damping: 28, mass: 0.85 }}
+            className="bg-[#FDF8F0] dark:bg-zinc-900 rounded-t-[24px] sm:rounded-[24px] border-[1.5px] border-[#383838] shadow-[5px_5px_0_0_#383838] max-w-md w-full p-6"
             onClick={(e: React.MouseEvent) => e.stopPropagation()}
           >
             {/* Close button */}

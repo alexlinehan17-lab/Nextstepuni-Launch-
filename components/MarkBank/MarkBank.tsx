@@ -19,7 +19,7 @@
  * open this and find it forgiving, not accusatory.
  */
 
-import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import SessionScreen, { type SessionCardResult } from './SessionScreen';
 import {
   NEW_CARD, dueAt, grade as gradeCard, intervalWords,
@@ -31,16 +31,21 @@ import {
   writeChoice, writeLocal, type DeckState,
 } from './store';
 import type { SecCard } from '../../types/markBank';
+import ChoiceControl from '../ui/ChoiceControl';
+import PrimaryActionButton from '../ui/PrimaryActionButton';
+import { ResultStatGrid, StatusNotice } from '../ui/ProductPatterns';
+import { getSubjectHex } from '../../utils/subjectColors';
 
 const SESSION_SIZE = 12;
 
-const INK = '#1a1a1a';
-const INK_2 = '#3a3530';
-const MUTED = '#7a7068';
-const LABEL = '#9e9186';
-const MUTED_BORDER = '#d0cdc8';
-const SUCCESS = '#3A8D5F';
-const SUCCESS_TEXT = '#1F5F3E';
+const INK = 'var(--mb-ink)';
+const INK_2 = 'var(--mb-ink-2)';
+const MUTED = 'var(--mb-muted)';
+const LABEL = 'var(--mb-label)';
+const MUTED_BORDER = 'var(--mb-border)';
+const SUCCESS = 'var(--mb-success)';
+const SUCCESS_TINT = 'var(--mb-success-tint)';
+const SUCCESS_TEXT = 'var(--mb-success-text)';
 
 const SERIF = "'Source Serif 4', Georgia, serif";
 const SANS = "'DM Sans', system-ui, sans-serif";
@@ -48,7 +53,7 @@ const MONO = "'Roboto Mono', ui-monospace, monospace";
 
 /** Accent means "this is the action / do this now". Never "correct". */
 const ACCENT = '#F26B1F';
-const HAIRLINE = '#ece9e4';
+const HAIRLINE = 'var(--mb-hairline)';
 
 /* One work surface for the whole tool, at every window width above the split.
    280 rail + 32 gutter + 780 list. It never grows: at 1920px the margins are
@@ -83,14 +88,16 @@ const Eyebrow: React.FC<{ children: React.ReactNode }> = ({ children }) => (
 );
 
 /**
- * A pill of mutually exclusive choices.
+ * A compact group of mutually exclusive choices using the platform selection
+ * language. Mark Bank keeps its editorial typography and dense information,
+ * while its controls now belong to the same product as Study and onboarding.
  *
  * An option with no cards behind it stays selectable and says so, rather than
  * being hidden or disabled: a student looking for Chemistry needs to see that it
  * exists and is being written, not to wonder whether the tool has it at all.
  */
 const Segment: React.FC<{
-  options: { value: string; label: string; empty?: boolean }[];
+  options: { value: string; label: string; empty?: boolean; markerColor?: string; shortLabel?: string }[];
   value: string;
   onChange: (value: string) => void;
   /**
@@ -108,42 +115,47 @@ const Segment: React.FC<{
   <div style={{
     display: wrap ? 'flex' : 'inline-flex',
     flexWrap: wrap ? 'wrap' : 'nowrap',
-    gap: wrap ? 3 : 0,
+    gap: 6,
     maxWidth: '100%',
-    background: '#fff', border: `2px solid ${INK}`,
-    // A stadium radius around two stacked rows reads as a mistake; square it off
-    // just enough to look deliberate.
-    borderRadius: wrap ? 20 : 100,
-    padding: 3,
+    padding: 0,
   }}>
     {options.map(o => {
       const on = o.value === value;
       return (
-        <button
-          key={o.value} type="button" onClick={() => onChange(o.value)}
-          aria-pressed={on}
-          style={{
-            display: 'flex', alignItems: 'center', gap: 5,
-            padding: '7px 16px', borderRadius: 100, border: 'none', cursor: 'pointer',
-            background: on ? INK : 'transparent',
-            color: on ? '#fff' : MUTED, font: `600 12.5px/1 ${SANS}`,
-            // Never break a subject name across lines — that is what made
-            // "Agricultural Science" collide with itself at line-height 1.
-            whiteSpace: 'nowrap',
-          }}
-        >
-          {o.label}
-          {o.empty && (
-            <span
-              aria-hidden
-              title="No cards yet"
-              style={{
-                width: 5, height: 5, borderRadius: '50%',
-                background: on ? 'rgba(255,255,255,.55)' : MUTED_BORDER,
-              }}
-            />
+        <ChoiceControl
+          key={o.value}
+          onClick={() => onChange(o.value)}
+          label={o.label}
+          selected={on}
+          compact
+          className={wrap ? 'flex-auto' : ''}
+          markerColor={o.markerColor}
+          trailing={(
+            <>
+              {o.shortLabel && (
+                <span
+                  aria-hidden
+                  style={{
+                    display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+                    minWidth: 22, height: 22, padding: '0 6px', borderRadius: 7,
+                    background: on ? 'rgba(253,248,240,.18)' : 'var(--mb-raised)',
+                    color: on ? '#FDF8F0' : MUTED,
+                    font: `700 9px/1 ${MONO}`, letterSpacing: '.04em',
+                  }}
+                >
+                  {o.shortLabel}
+                </span>
+              )}
+              {o.empty && (
+                <span
+                  aria-hidden
+                  title="No cards yet"
+                  style={{ width: 5, height: 5, borderRadius: '50%', background: MUTED_BORDER }}
+                />
+              )}
+            </>
           )}
-        </button>
+        />
       );
     })}
   </div>
@@ -200,6 +212,18 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
   const [deck, setDeck] = useState<DeckState>(() => readLocal(uid, deckId));
   const [screen, setScreen] = useState<Screen>({ name: 'board' });
   const [loaded, setLoaded] = useState(false);
+  const [online, setOnline] = useState(() => typeof navigator === 'undefined' ? true : navigator.onLine);
+
+  useEffect(() => {
+    const goOnline = () => setOnline(true);
+    const goOffline = () => setOnline(false);
+    window.addEventListener('online', goOnline);
+    window.addEventListener('offline', goOffline);
+    return () => {
+      window.removeEventListener('online', goOnline);
+      window.removeEventListener('offline', goOffline);
+    };
+  }, []);
 
   // Seed FRESH from Firestore on mount — never from the app-start progress
   // snapshot, which is what makes other tools lose state saved this session.
@@ -227,16 +251,30 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
   // downloads the level they are not sitting.
   const [cards, setCards] = useState<SecCard[]>([]);
   const [cardsLoading, setCardsLoading] = useState(true);
+  const [cardsError, setCardsError] = useState(false);
+  const [cardsAttempt, setCardsAttempt] = useState(0);
+  const [launchingTopicId, setLaunchingTopicId] = useState<string | null>(null);
+  const launchTimerRef = useRef<number | null>(null);
   useEffect(() => {
     let cancelled = false;
     setCardsLoading(true);
+    setCardsError(false);
     loadCards(subjectId, level).then(loaded => {
       if (cancelled) return;
       setCards(loaded);
       setCardsLoading(false);
+    }).catch(() => {
+      if (cancelled) return;
+      setCards([]);
+      setCardsError(true);
+      setCardsLoading(false);
     });
     return () => { cancelled = true; };
-  }, [subjectId, level]);
+  }, [subjectId, level, cardsAttempt]);
+
+  useEffect(() => () => {
+    if (launchTimerRef.current !== null) window.clearTimeout(launchTimerRef.current);
+  }, []);
 
   const levelUnbuilt = !cardsLoading && cards.length === 0;
   const memories = deck.cards;
@@ -274,6 +312,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
   }, [cards]);
 
   const startSession = (topicId?: string) => {
+    if (launchingTopicId !== null) return;
     const pool = topicId ? cards.filter(c => c.topicId === topicId) : cards;
     if (!pool.length) return;
     const plan = planSession(pool.map(c => c.id), memories, now(), { size: SESSION_SIZE, examTs: deck.examTs });
@@ -288,7 +327,15 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
         .slice(0, SESSION_SIZE);
     }
     if (!queue.length) return;
-    setScreen({ name: 'session', cards: queue, topicId });
+    // Give the selected row and board time to hand off visually before the
+    // fixed question workspace takes over. This is deliberately brief: it is
+    // navigation continuity, not a loading interstitial.
+    setLaunchingTopicId(topicId ?? '__all__');
+    launchTimerRef.current = window.setTimeout(() => {
+      setScreen({ name: 'session', cards: queue, topicId });
+      setLaunchingTopicId(null);
+      launchTimerRef.current = null;
+    }, 180);
   };
 
   const handleGrade = useCallback((r: SessionCardResult): string => {
@@ -327,55 +374,68 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
     const distinct = new Set(screen.results.map(r => r.cardId)).size;
 
     return (
-      <div style={{ minHeight: '100dvh', fontFamily: SANS, padding: '28px 16px 60px' }}>
-        <div style={{ maxWidth: 560, margin: '0 auto' }}>
-          <h2 style={{ font: `700 26px/1.2 ${SERIF}`, color: INK, margin: '0 0 18px' }}>
-            {distinct === 1 ? "That's the card." : `That's the ${distinct}.`}
+      <div className="mark-bank-theme" style={{ minHeight: '100dvh', fontFamily: SANS, padding: '56px 16px 72px', background: 'var(--mb-canvas)' }}>
+        <div style={{ maxWidth: 620, margin: '0 auto', textAlign: 'center' }}>
+          <div style={{
+            width: 76, height: 76, margin: '0 auto 20px', borderRadius: 24,
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            background: left === 0 ? SUCCESS_TINT : '#FFF0E6',
+            color: left === 0 ? SUCCESS : ACCENT,
+          }}>
+            <svg width="38" height="38" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              {left === 0 ? (
+                <path d="M10 20.5l6.5 6.5L30.5 13" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+              ) : (
+                <>
+                  <path d="M11 11.5h18v21H11z" stroke="currentColor" strokeWidth="2.5" strokeLinejoin="round" />
+                  <path d="M15 8h10v7H15zM16 21h8M16 26h5" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                </>
+              )}
+            </svg>
+          </div>
+          <Eyebrow>Session complete</Eyebrow>
+          <h2 style={{ font: `700 32px/1.15 ${SERIF}`, color: INK, margin: '7px 0 8px' }}>
+            {left === 0 ? 'Every mark banked.' : 'Good work. Keep building.'}
           </h2>
+          <p style={{ font: `400 14px/1.5 ${SANS}`, color: MUTED, margin: '0 0 28px' }}>
+            {distinct} {distinct === 1 ? 'question' : 'questions'} reviewed · {subject.title} · {level === 'higher' ? 'Higher level' : 'Ordinary level'}
+          </p>
 
-          <div style={{ background: '#fff', border: `2px solid ${INK}`, borderRadius: 18, padding: '20px 22px' }}>
-            <Eyebrow>What you banked</Eyebrow>
-            <p style={{ font: `700 34px/1.1 ${SERIF}`, color: INK, margin: '8px 0 2px', fontVariantNumeric: 'tabular-nums' }}>
-              {claimed} <span style={{ font: `400 18px/1 ${SANS}`, color: MUTED }}>of {available} marks</span>
-            </p>
+          <ResultStatGrid items={[
+            { label: 'Marks banked', value: claimed, tone: 'success' },
+            { label: 'Available', value: available },
+            { label: 'To revisit', value: Math.max(0, left) },
+          ]} />
+
+          <div style={{ marginTop: 14, background: 'var(--mb-paper)', border: `1px solid ${HAIRLINE}`, borderRadius: 16, padding: '17px 19px', textAlign: 'left' }}>
             {left > 0 && worstCard && (
-              <p style={{ font: `400 14px/1.55 ${SANS}`, color: INK_2, margin: '12px 0 0' }}>
-                {left} {left === 1 ? 'mark was' : 'marks were'} left on the table
-                {worstGap > 0 && <> — {worstGap} of {left === worstGap ? 'them' : `them on one card`}.</>}
-                <br />
-                <strong style={{ color: INK }}>{worstCard.questionRef}</strong>{' '}
-                <span style={{ color: MUTED }}>{worstCard.questionText}</span>
-              </p>
+              <>
+                <Eyebrow>Best next review</Eyebrow>
+                <p style={{ font: `600 14px/1.5 ${SANS}`, color: INK, margin: '7px 0 2px' }}>
+                  {worstCard.questionRef} · {worstGap} {worstGap === 1 ? 'mark' : 'marks'} to recover
+                </p>
+                <p style={{ font: `400 13px/1.5 ${SANS}`, color: MUTED, margin: 0 }}>{worstCard.questionText}</p>
+              </>
             )}
             {left === 0 && (
-              <p style={{ font: `400 14px/1.55 ${SANS}`, color: SUCCESS_TEXT, margin: '12px 0 0' }}>
-                Nothing left behind. Every mark on the table.
+              <p style={{ font: `500 14px/1.55 ${SANS}`, color: SUCCESS_TEXT, margin: 0 }}>
+                Nothing left behind. The scheduler will bring these marks back before they fade.
               </p>
             )}
           </div>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 9, marginTop: 20 }}>
-            <button
-              type="button"
-              onClick={() => { setScreen({ name: 'board' }); }}
-              style={{
-                padding: '13px 20px', borderRadius: 100, border: 'none', cursor: 'pointer',
-                background: '#F26B1F', color: '#fff', font: `600 15px/1 ${SANS}`,
-                borderBottom: '3px solid #B54D14', boxShadow: '0 4px 0 #B54D14',
-              }}
-            >
-              Back to the Bank
-            </button>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginTop: 22, textAlign: 'left' }}>
+            <PrimaryActionButton label="Back to Mark Bank" onClick={() => setScreen({ name: 'board' })} className="w-full" />
             <button
               type="button"
               onClick={() => startSession(screen.topicId)}
               style={{
-                padding: '11px 20px', borderRadius: 20, cursor: 'pointer',
-                background: '#fff', color: MUTED, border: `2px solid ${MUTED_BORDER}`,
+                padding: '13px 20px', borderRadius: 12, cursor: 'pointer',
+                background: 'var(--mb-paper)', color: INK_2, border: `1px solid ${MUTED_BORDER}`,
                 font: `600 14px/1 ${SANS}`,
               }}
             >
-              Another {SESSION_SIZE}
+              Review another {SESSION_SIZE}
             </button>
           </div>
         </div>
@@ -409,7 +469,11 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
     : null;
 
   return (
-    <div style={{ fontFamily: SANS, padding: '28px 0 72px' }}>
+    <div
+      className={`mark-bank-theme ${launchingTopicId !== null ? 'mb-board-exit' : ''}`}
+      aria-busy={launchingTopicId !== null}
+      style={{ fontFamily: SANS, padding: '28px 0 72px', color: INK }}
+    >
       <div style={{
         maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto', padding: '0 16px',
         display: 'flex', alignItems: 'flex-start', gap: wide ? GUTTER : 0,
@@ -432,25 +496,52 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
               and leaves the options huddled at the left end of a 664px pill. */}
           <div style={{
             display: 'flex', flexDirection: 'column', alignItems: 'flex-start',
-            gap: 8, margin: '16px 0 0',
+            gap: 14, margin: '18px 0 0', width: '100%',
           }}>
-            <Segment
-              wrap
-              options={SUBJECTS.map(s => ({ value: s.id, label: s.title, empty: deckSize(s.id, level) === 0 }))}
-              value={subjectId}
-              onChange={chooseSubject}
-            />
-            <Segment
-              options={(['higher', 'ordinary'] as Level[]).map(l => ({
-                value: l, label: l === 'higher' ? 'Higher' : 'Ordinary',
-                empty: deckSize(subjectId, l) === 0,
-              }))}
-              value={level}
-              onChange={v => chooseLevel(v as Level)}
-            />
+            <div style={{ width: '100%' }}>
+              <div style={{ marginBottom: 6 }}><Eyebrow>Subject</Eyebrow></div>
+              <Segment
+                wrap
+                options={SUBJECTS.map(s => ({
+                  value: s.id,
+                  label: s.title,
+                  empty: deckSize(s.id, level) === 0,
+                  markerColor: getSubjectHex(s.title),
+                }))}
+                value={subjectId}
+                onChange={chooseSubject}
+              />
+            </div>
+            <div style={{ width: '100%' }}>
+              <div style={{ marginBottom: 6 }}><Eyebrow>Paper level</Eyebrow></div>
+              <Segment
+                options={(['higher', 'ordinary'] as Level[]).map(l => ({
+                  value: l, label: l === 'higher' ? 'Higher' : 'Ordinary',
+                  shortLabel: l === 'higher' ? 'HL' : 'OL',
+                  empty: deckSize(subjectId, l) === 0,
+                }))}
+                value={level}
+                onChange={v => chooseLevel(v as Level)}
+              />
+            </div>
           </div>
 
-          {levelUnbuilt ? (
+          {!online && (
+            <StatusNotice title="Working offline" className="mt-[18px]">
+              Reviews stay on this device and will sync when you reconnect.
+            </StatusNotice>
+          )}
+
+          {cardsError ? (
+            <StatusNotice
+              title="Couldn’t load questions"
+              tone="warning"
+              className="mt-[18px]"
+              action={{ label: 'Try again', onClick: () => setCardsAttempt(n => n + 1) }}
+            >
+              Your saved progress is safe. Check your connection and try loading this paper again.
+            </StatusNotice>
+          ) : levelUnbuilt ? (
             <p style={{ margin: '18px 0 0', font: `400 13.5px/1.55 ${SANS}`, color: MUTED }}>
               Cards are written one paper at a time, straight from the marking schemes.
               This one is still being written — {builtElsewhere ?? 'try another subject or level in the meantime'}.
@@ -475,26 +566,23 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
                 </p>
               )}
 
-              <button
-                type="button"
-                autoFocus
-                onClick={() => startSession()}
-                style={{
-                  width: '100%', maxWidth: wide ? '100%' : 320,
-                  marginTop: 14, padding: '15px 20px', borderRadius: 100, cursor: 'pointer',
-                  font: `650 15px/1 ${SANS}`,
-                  ...(dueCount > 0
-                    ? {
-                      border: 'none', background: ACCENT, color: '#fff',
-                      borderBottom: '3px solid #B54D14', boxShadow: '0 4px 0 #B54D14',
-                    }
-                    : {
-                      border: `2px solid ${INK}`, background: '#fff', color: INK,
-                    }),
-                }}
-              >
-                {dueCount > 0 ? `Start today's ${Math.min(dueCount, SESSION_SIZE)}` : 'Practise anyway'}
-              </button>
+              {dueCount > 0 ? (
+                <PrimaryActionButton
+                  autoFocus
+                  label={`Start today's ${Math.min(dueCount, SESSION_SIZE)}`}
+                  onClick={() => startSession()}
+                  className={`w-full ${wide ? '' : 'max-w-80'} mt-3.5`}
+                />
+              ) : (
+                <button
+                  type="button"
+                  autoFocus
+                  onClick={() => startSession()}
+                  className={`min-h-12 rounded-xl border border-[#E5E1DB] bg-white px-5 py-3 text-sm font-semibold text-[var(--text-body)] transition-colors hover:border-[rgba(var(--accent),0.35)] hover:bg-[#FDF8F0] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.38)] focus-visible:ring-offset-2 dark:border-zinc-700 dark:bg-zinc-900 ${wide ? 'w-full' : 'w-full max-w-80'} mt-3.5`}
+                >
+                  Start a practice session
+                </button>
+              )}
 
               {cards.length > 0 && (
                 <p style={{ margin: '20px 0 0', font: `400 11.5px/1.5 ${SANS}`, color: LABEL }}>
@@ -507,17 +595,28 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
         </div>
 
         {/* ---- the list: one card, aligned columns, hairlines not boxes ---- */}
-        {!levelUnbuilt && (
+        {!cardsError && !levelUnbuilt && (
           <div style={{
             width: wide ? LIST : '100%', flex: '0 0 auto', maxWidth: '100%',
-            background: '#fff', border: `2px solid ${INK}`, borderRadius: 16, overflow: 'hidden',
+            background: 'var(--mb-paper)', border: `1px solid ${MUTED_BORDER}`, borderRadius: 16, overflow: 'hidden',
+            boxShadow: '0 12px 34px rgba(38, 32, 27, .055)',
           }}>
-            {strands.map((strand, si) => (
+            {cardsLoading ? (
+              <div aria-label="Loading questions" style={{ padding: '18px' }}>
+                <Eyebrow>Loading paper</Eyebrow>
+                {[0, 1, 2, 3, 4].map(i => (
+                  <div key={i} style={{ height: 54, display: 'flex', alignItems: 'center', gap: 14, borderTop: i ? `1px solid ${HAIRLINE}` : 'none' }}>
+                    <span style={{ width: 34, height: 22, borderRadius: 7, background: 'var(--mb-raised)' }} />
+                    <span style={{ width: `${52 + i * 6}%`, maxWidth: 310, height: 10, borderRadius: 999, background: 'var(--mb-raised)' }} />
+                  </div>
+                ))}
+              </div>
+            ) : strands.map((strand, si) => (
               <section key={strand.id} id={`strand-${strand.id}`}>
                 <div style={{
                   height: 44, display: 'flex', alignItems: 'center', gap: 9,
-                  padding: '0 18px', background: '#f4f2ee',
-                  borderTop: si === 0 ? 'none' : `2px solid ${INK}`,
+                  padding: '0 18px', background: 'var(--mb-soft)',
+                  borderTop: si === 0 ? 'none' : `1px solid ${MUTED_BORDER}`,
                   borderBottom: `1px solid ${HAIRLINE}`,
                 }}>
                   <span style={{ font: `600 14px/1 ${SERIF}`, color: INK }}>{strand.title}</span>
@@ -547,20 +646,25 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
                           type="button"
                           disabled={!built}
                           onClick={() => startSession(topic.id)}
-                          onMouseEnter={e => { if (built) e.currentTarget.style.background = '#faf9f7'; }}
-                          onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; }}
+                          onMouseEnter={e => { if (built) e.currentTarget.style.background = 'var(--mb-raised)'; }}
+                          onMouseLeave={e => { e.currentTarget.style.background = launchingTopicId === topic.id ? 'var(--mb-raised)' : 'transparent'; }}
                           style={{
                             width: '100%', height: 56, display: 'flex', alignItems: 'center', gap: 16,
-                            padding: '0 18px', textAlign: 'left', background: 'transparent', border: 'none',
+                            padding: '0 18px', textAlign: 'left',
+                            background: launchingTopicId === topic.id ? 'var(--mb-raised)' : 'transparent', border: 'none',
                             cursor: built ? 'pointer' : 'default',
-                            transition: 'background 140ms ease',
+                            transform: launchingTopicId === topic.id ? 'translateX(4px)' : 'translateX(0)',
+                            transition: 'background 140ms ease, transform 180ms cubic-bezier(.16, 1, .3, 1)',
                           }}
                         >
                           <span style={{
-                            width: 30, flex: '0 0 auto',
-                            font: `700 11px/1 ${MONO}`, color: LABEL,
+                            width: 34, height: 24, flex: '0 0 auto',
+                            display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+                            borderRadius: 7, background: 'var(--mb-raised)',
+                            fontFamily: SANS, fontSize: 11, fontWeight: 700,
+                            lineHeight: 'normal', letterSpacing: '.025em', color: MUTED,
                           }}>
-                            {topic.code}
+                            {topic.code.replace(/^U(?=\d)/i, 'U.')}
                           </span>
                           <span style={{
                             flex: 1, minWidth: 0,

@@ -22,7 +22,7 @@ import { type CourseData } from './Library';
  *  Keep titles in sync when a tool is added or renamed there. */
 export const TOOL_TITLES: Record<string, string> = {
   'journey': 'Academic Journey Simulator',
-  'cao-simulator': 'CAO Points Simulator',
+  'cao-simulator': 'Points Passport · Grade Planner',
   'planner': 'Spaced Repetition Timetable',
   'war-room': 'War Room',
   'comeback': 'Comeback Engine',
@@ -30,14 +30,12 @@ export const TOOL_TITLES: Record<string, string> = {
   'syllabus-xray': 'Syllabus X-Ray',
   'points-passport': 'Points Passport',
   'college-compass': 'College Compass',
-  'catch-up-lane': 'Catch-Up Lane',
   'mark-bank': 'Mark Bank',
   'paper-trail': 'Paper Trail',
   'oral-trainer': 'Irish Oral Trainer',
   'examiners-chair': "The Examiner's Chair",
   'command-word-reflex': 'Command-Word Reflex',
   'how-they-did-it': 'How They Did It',
-  'career-paths': 'Exploring Options',
   'your-possible-life': 'Your Possible Life',
 };
 

@@ -33,6 +33,7 @@ import StreakStrip from './StreakStrip';
 import CountdownCard from './CountdownCard';
 import ProgressDashboard from './ProgressDashboard';
 import MockExamBuilder from './MockExamBuilder';
+import { LoadingState } from '../ui/SystemState';
 import Flashcards from './Flashcards';
 import FirstRunCoach from './FirstRunCoach';
 import MilestoneCelebration from './MilestoneCelebration';
@@ -433,9 +434,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   );
 
   if (!isLoaded) {
-    return (
-      <div className="w-full max-w-xl mx-auto py-16 text-center text-sm text-zinc-400">Loading…</div>
-    );
+    return <LoadingState label="Opening the Paper Trail" />;
   }
 
   // ═══════════════════════ VIEWER ═══════════════════════

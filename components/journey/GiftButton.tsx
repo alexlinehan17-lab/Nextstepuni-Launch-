@@ -9,6 +9,7 @@ import { MotionButton, MotionDiv } from '../Motion';
 import { Gift, X } from 'lucide-react';
 import { type ShopItem } from '../../types';
 import { GIFTABLE_ITEMS } from '../../hooks/useGifts';
+import { getJourneyV2BasePrice } from '../../journeyEconomyConfig';
 
 interface GiftButtonProps {
   senderUid: string;
@@ -44,7 +45,7 @@ const GiftButton: React.FC<GiftButtonProps> = ({
   }, [canSendGiftToday]);
 
   const handleSend = async (item: ShopItem) => {
-    if (sending || pointsBalance < item.price) return;
+    if (sending || pointsBalance < getJourneyV2BasePrice(item)) return;
     setSending(true);
     const success = await sendGift(targetUid, school, item, senderName);
     setSending(false);
@@ -115,7 +116,8 @@ const GiftButton: React.FC<GiftButtonProps> = ({
                   <div className="overflow-y-auto flex-1" style={{ scrollbarWidth: 'none' }}>
                     <div className="grid grid-cols-2 gap-2">
                       {GIFTABLE_ITEMS.map(item => {
-                        const canAfford = pointsBalance >= item.price;
+                        const price = getJourneyV2BasePrice(item);
+                        const canAfford = pointsBalance >= price;
                         return (
                           <MotionButton
                             key={item.id}
@@ -130,7 +132,7 @@ const GiftButton: React.FC<GiftButtonProps> = ({
                           >
                             <p className="text-xs font-semibold text-zinc-800 dark:text-zinc-200">{item.name}</p>
                             <p className="text-[10px] text-zinc-500 dark:text-zinc-400 mt-0.5 line-clamp-1">{item.description}</p>
-                            <p className="text-[10px] font-bold text-amber-600 dark:text-amber-400 mt-1">{item.price} JP</p>
+                            <p className="text-[10px] font-bold text-amber-600 dark:text-amber-400 mt-1">{price} JP</p>
                           </MotionButton>
                         );
                       })}

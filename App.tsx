@@ -20,8 +20,9 @@ import { type YearGroup, type StudentSubject } from './components/subjectData';
 import { type PastJCData } from './types';
 import StudyPassportModal from './components/StudyPassportModal';
 import { db } from './firebase';
-import { doc, getDoc, setDoc, updateDoc, arrayUnion, writeBatch } from 'firebase/firestore';
+import { doc, getDoc, setDoc, updateDoc, arrayUnion, writeBatch, increment, runTransaction } from 'firebase/firestore';
 import { type ModuleProgress, type NorthStar } from './types';
+import { createDirectionProfile } from './services/directionProfile';
 import { useToast } from './components/Toast';
 import { ALL_COURSES, categoryTitles } from './courseData';
 import { filterCoursesForStudent } from './utils/courseVisibility';
@@ -81,7 +82,7 @@ const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ viewState, onGoHome, 
   // re-anchor position: fixed to the transformed wrapper.
   return createPortal(
     <nav
-      className="fixed bottom-0 left-0 right-0 z-[90] md:hidden bg-[#FAFBF6]/95 dark:bg-zinc-900/95 backdrop-blur-xl border-t border-zinc-200/50 dark:border-white/[0.06]"
+      className="fixed bottom-0 left-0 right-0 z-[90] md:hidden bg-[#FAFBF6] dark:bg-zinc-900 border-t-[1.5px] border-[#383838] dark:border-zinc-700"
       style={{ paddingBottom: 'var(--sab, 0px)' }}
     >
       <div className="flex items-center justify-around h-16">
@@ -91,11 +92,12 @@ const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ viewState, onGoHome, 
             <button
               key={tab.id}
               onClick={tab.action}
-              className={`relative flex flex-col items-center justify-center gap-1 flex-1 h-full transition-colors focus-visible:outline-none focus-visible:bg-zinc-100 dark:focus-visible:bg-zinc-800 ${isActive ? 'text-[var(--accent-hex)]' : 'text-zinc-500 dark:text-zinc-500'}`}
+              className={`relative flex flex-col items-center justify-center gap-1 flex-1 h-full transition-colors focus-visible:outline-none ${isActive ? 'text-[#B94712]' : 'text-zinc-500 dark:text-zinc-400'}`}
             >
-              <tab.icon size={22} strokeWidth={isActive ? 2 : 1.5} />
-              <span className="text-[10px] font-medium">{tab.label}</span>
-              {isActive && <div className="absolute bottom-1.5 w-1 h-1 rounded-full bg-[var(--accent-hex)]" />}
+              <span className={`flex h-8 w-11 items-center justify-center rounded-xl border transition-colors ${isActive ? 'border-[#F26B1F] bg-[#FDEBDD]' : 'border-transparent'}`}>
+                <tab.icon size={20} strokeWidth={isActive ? 2 : 1.6} />
+              </span>
+              <span className="text-[9px] font-semibold">{tab.label}</span>
               {tab.id === 'profile' && unreadNotifications > 0 && (
                 <div className="absolute top-2 right-1/2 translate-x-3 w-2 h-2 rounded-full bg-rose-500" />
               )}
@@ -463,6 +465,7 @@ const App: React.FC = () => {
     const saveData: Record<string, any> = { subjectProfile: profile };
     if (northStarData) {
       saveData.northStar = northStarData;
+      saveData.directionProfile = createDirectionProfile(northStarData);
       saveData.islandState = createStarterState(northStarData.category);
       setNorthStar(northStarData);
     }
@@ -513,7 +516,7 @@ const App: React.FC = () => {
       const progressDocRef = doc(db, 'progress', user.uid);
       // setNorthStar already ran above — fire the write so an offline student
       // still keeps their North Star on screen.
-      saveInBackground(setDoc(progressDocRef, { northStar: ns }, { merge: true }), 'App.saveNorthStar');
+      saveInBackground(setDoc(progressDocRef, { northStar: ns, directionProfile: createDirectionProfile(ns) }, { merge: true }), 'App.saveNorthStar');
     } catch (err) {
       console.error('Failed to save North Star:', err);
       showToast('Couldn\'t save — check your connection', 'error');
@@ -696,6 +699,49 @@ const App: React.FC = () => {
     }
   }, [user?.uid, showToast]);
 
+  const handlePurchaseAvatar = useCallback(async (seed: string, price: number): Promise<boolean> => {
+    if (!user?.uid) return false;
+    if (unlockedAvatarSeeds.includes(seed)) return true;
+
+    if (pointsData.balance < price) {
+      showToast(`You need ${price - pointsData.balance} more JP to unlock this avatar.`, 'error');
+      return false;
+    }
+
+    try {
+      const progressRef = doc(db, 'progress', user.uid);
+      await runTransaction(db, async transaction => {
+        const snapshot = await transaction.get(progressRef);
+        const data = snapshot.data();
+        const alreadyUnlocked = (data?.cosmeticUnlocks?.avatarSeeds as string[] | undefined)?.includes(seed);
+        if (alreadyUnlocked) return;
+
+        const earned = Number(data?.pointsData?.totalEarned ?? 0);
+        const spent = Number(data?.pointsData?.totalSpent ?? 0);
+        if (earned - spent < price) throw new Error('INSUFFICIENT_JP');
+
+        transaction.set(progressRef, {
+          pointsData: { totalSpent: increment(price) },
+          cosmeticUnlocks: { avatarSeeds: arrayUnion(seed) },
+        }, { merge: true });
+      });
+
+      setUnlockedAvatarSeeds(Array.from(new Set([...unlockedAvatarSeeds, seed])));
+      pointsData.reload();
+      showToast('Avatar unlocked and ready to use.', 'success');
+      return true;
+    } catch (error) {
+      if (error instanceof Error && error.message === 'INSUFFICIENT_JP') {
+        showToast('Your JP balance changed. Earn a little more and try again.', 'error');
+      } else {
+        console.error('Failed to purchase avatar:', error);
+        showToast("Couldn't unlock that avatar — check your connection.", 'error');
+      }
+      pointsData.reload();
+      return false;
+    }
+  }, [pointsData, setUnlockedAvatarSeeds, showToast, unlockedAvatarSeeds, user?.uid]);
+
   const routerProps = {
     studentProfile, userProgress, northStar, timetableCompletions,
     pointsData, streak, settings, updateSetting,
@@ -812,6 +858,8 @@ const App: React.FC = () => {
             settings={settings}
             updateSetting={updateSetting}
             unlockedAvatarSeeds={unlockedAvatarSeeds}
+            pointsBalance={pointsData.balance}
+            onPurchaseAvatar={handlePurchaseAvatar}
             unlockedThemes={unlockedThemes}
             unlockedCardStyles={unlockedCardStyles}
             userName={user?.name}

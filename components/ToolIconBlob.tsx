@@ -19,6 +19,7 @@ import { type LucideIcon, Mic, Stamp, ListChecks, SpellCheck, FolderCheck } from
 
 export type ToolIconKey =
   | 'journey'
+  | 'mark-bank'
   | 'cao-simulator'
   | 'planner'
   | 'war-room'
@@ -53,6 +54,15 @@ interface ToolIconConfig {
 }
 
 const TOOLS: Record<ToolIconKey, ToolIconConfig> = {
+  'mark-bank': {
+    // A warm parchment-yellow ground distinguishes Mark Bank from the
+    // navigation blues and study greens while keeping the orange scheme
+    // tick as the illustration's only saturated focal point.
+    blob: '#E4CF8F',
+    iconPath: '/assets/tools/mark-bank.png',
+    blobPath: 'M 7 23 Q 0 48 8 77 Q 23 97 51 95 Q 84 93 95 67 Q 101 39 87 15 Q 66 -2 37 4 Q 15 10 7 23 Z',
+    iconScale: 1.0,
+  },
   'journey': {
     blob: '#C9C2DD',
     iconPath: '/assets/tools/journey.png',
@@ -117,8 +127,9 @@ const TOOLS: Record<ToolIconKey, ToolIconConfig> = {
     blob: '#C7D8E8',
     iconPath: '/assets/tools/paper-trail.png',
     blobPath: 'M 5 26 Q -1 54 9 80 Q 25 99 53 95 Q 87 91 95 61 Q 101 29 83 9 Q 57 -5 31 5 Q 11 14 5 26 Z',
-    // 2026-07-22 art (papers in the wind) is pre-normalised with ~12% margin.
-    iconScale: 1.05,
+    // The loose evidence trail needs enough air for the blue blob to remain
+    // part of the silhouette at both card and header sizes.
+    iconScale: 0.98,
   },
   'catch-up-lane': {
     blob: '#AEDDE2',

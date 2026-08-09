@@ -46,6 +46,7 @@ export type SortMode = 'match' | 'points';
  */
 export type DisplayResult = RecommendationResult & {
   reach?: { label: string; color: string; bg: string };
+  recommendation?: { band: 'realistic' | 'ambitious' | 'explore'; score: number };
 };
 
 interface ScoreBreakdownLabels {
@@ -188,10 +189,10 @@ function ResultsPhase({
       <div className="flex items-start justify-between mb-6 gap-3">
         <div className="min-w-0">
           <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white">Your Top Matches</h2>
-          <p className="text-sm text-zinc-400 dark:text-zinc-500 mt-1">Courses ranked by how well they fit you</p>
+          <p className="text-sm text-zinc-400 dark:text-zinc-500 mt-1">Courses ranked by fit, reach and route suitability</p>
           {autoPoints > 0 && (
             <p className="text-xs font-medium mt-1" style={{ color: COLORS.accent }}>
-              Based on your current grades, you're at {autoPoints} points
+              Based on your target grades, you’re aiming for {autoPoints} points
             </p>
           )}
         </div>
@@ -232,7 +233,7 @@ function ResultsPhase({
       {/* Sort & Filter controls */}
       <div className="flex flex-wrap gap-2 mb-4">
         <div className="flex items-center gap-1 bg-zinc-100 dark:bg-zinc-800 rounded-lg p-0.5">
-          {([['match', 'Match %'], ['points', 'Points']] as const).map(([key, label]) => {
+          {([['match', 'Recommended'], ['points', 'Points']] as const).map(([key, label]) => {
             const active = sortMode === key;
             const isPoints = key === 'points';
             return (

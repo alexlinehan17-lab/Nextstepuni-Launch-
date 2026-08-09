@@ -9,7 +9,7 @@ import { MotionDiv } from './Motion';
 import { ArrowRight, ArrowLeft, Check, Wallet, Heart, Wrench, GraduationCap, Flame, DoorOpen, Banknote, Car, Home, Users, Briefcase, Rocket, Award, UserPlus, TrendingUp, MicOff, Signpost, Plane, PartyPopper, HandHeart, Sparkles, Compass, Star, Puzzle, BookOpen } from 'lucide-react';
 import { type NorthStarCategory, type NorthStar } from '../types';
 import { type CurriculumLevel } from '../utils/authUtils';
-import { CATEGORY_COLORS, getActiveCategories, getVisionCardsForLevel } from '../northStarData';
+import { CATEGORY_COLORS, VISION_CARD_ART, getActiveCategories, getVisionCardsForLevel } from '../northStarData';
 
 const ICON_MAP: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
   Wallet, Heart, Wrench, GraduationCap, Flame, DoorOpen,
@@ -31,43 +31,6 @@ interface CategoryBlobConfig {
 
 // Vision board icons (sub-step 3). Each PNG matches a VISION_CARDS id and
 // is rendered behind the category-coloured blob from CATEGORY_BLOBS.
-const VISION_ICON_IMG: Record<string, string> = {
-  'first-paycheck': '/icons/north-star/vision/first-paycheck.png',
-  'own-car': '/icons/north-star/vision/own-car.png',
-  'own-place': '/icons/north-star/vision/own-place.png',
-  'family-proud': '/icons/north-star/vision/family-proud.png',
-  'role-model': '/icons/north-star/vision/role-model.png',
-  'giving-back': '/icons/north-star/vision/giving-back.png',
-  'dream-job': '/icons/north-star/vision/dream-job.png',
-  'own-thing': '/icons/north-star/vision/own-thing.png',
-  'skilled-trade': '/icons/north-star/vision/skilled-trade.png',
-  'campus': '/icons/north-star/vision/campus.png',
-  'scholarship': '/icons/north-star/vision/scholarship.png',
-  'new-people': '/icons/north-star/vision/new-people.png',
-  'results-day': '/icons/north-star/vision/results-day.png',
-  'beating-odds': '/icons/north-star/vision/beating-odds.png',
-  'silence-doubters': '/icons/north-star/vision/silence-doubters.png',
-  'real-choices': '/icons/north-star/vision/real-choices.png',
-  'see-world': '/icons/north-star/vision/see-world.png',
-  'freedom-no': '/icons/north-star/vision/freedom-no.png',
-  // ─── JC vision cards (Phase 5) ───────────────────────────────────────
-  // 8 reuse senior PNGs where concepts map 1:1; 4 use bespoke JC art
-  // (jc-really-good, jc-solve-hard, jc-subject-choice, jc-try-new) added
-  // 2026-05-24.
-  'jc-family-proud': '/icons/north-star/vision/family-proud.png',
-  'jc-role-model': '/icons/north-star/vision/role-model.png',
-  'jc-giving-back': '/icons/north-star/vision/giving-back.png',
-  'jc-beating-odds': '/icons/north-star/vision/beating-odds.png',
-  'jc-silence-doubters': '/icons/north-star/vision/silence-doubters.png',
-  'jc-results-day': '/icons/north-star/vision/results-day.png',
-  'jc-mastering-skill': '/icons/north-star/vision/skilled-trade.png',
-  'jc-real-choices': '/icons/north-star/vision/real-choices.png',
-  'jc-really-good': '/icons/north-star/vision/jc-really-good.png',
-  'jc-solve-hard': '/icons/north-star/vision/jc-solve-hard.png',
-  'jc-subject-choice': '/icons/north-star/vision/jc-subject-choice.png',
-  'jc-try-new': '/icons/north-star/vision/jc-try-new.png',
-};
-
 const CATEGORY_BLOBS: Partial<Record<NorthStarCategory, CategoryBlobConfig>> = {
   'independence': {
     iconPath: '/icons/north-star/my-own-path.png',
@@ -176,13 +139,9 @@ interface NorthStarOnboardingProps {
 }
 
 const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, initialData, curriculumLevel = 'senior' }) => {
-  // Sub-step flow simplified to 2 steps (picker → vision board). The old
-  // "Tell us more" textarea step was removed — the displayed
-  // northStar.statement now defaults to the chosen category's own
-  // first-person description (e.g. "I want to make my family proud…"),
-  // which already reads as a personal "why" quote on the rank card and
-  // surfaces like Knowledge Tree's North Star line. Existing accounts
-  // with a typed statement keep theirs via initialData.
+  // Selection-only by design: students choose a direction and supporting
+  // images here. Existing student-authored wording is preserved, but generic
+  // category copy is explicitly marked as system-authored downstream.
   const [subStep, setSubStep] = useState<1 | 2>(1);
   const [direction, setDirection] = useState(1);
   const [selectedCategory, setSelectedCategory] = useState<NorthStarCategory | null>(initialData?.category ?? null);
@@ -223,9 +182,7 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
   const handleComplete = () => {
     if (!selectedCategory) return;
     const now = new Date().toISOString();
-    // Fall back to the category's first-person description if the user
-    // has no statement saved. Preserves existing typed statements from
-    // pre-removal accounts.
+    // Category copy seeds the direction without asking for personal free text.
     const catDescription = activeCategories.find(c => c.id === selectedCategory)?.description ?? '';
     const finalStatement = statement.trim() || catDescription;
     onComplete({
@@ -234,6 +191,8 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
       visionBoard: Array.from(selectedCards),
       createdAt: initialData?.createdAt ?? now,
       updatedAt: now,
+      authoredByStudent: initialData?.authoredByStudent ?? Boolean(statement.trim()),
+      reviewedAt: now,
     });
   };
 
@@ -333,7 +292,7 @@ const NorthStarOnboarding: React.FC<NorthStarOnboardingProps> = ({ onComplete, i
                 const colors = CATEGORY_COLORS[card.category];
                 const Icon = ICON_MAP[card.icon];
                 const isDisabled = !isSelected && selectedCards.size >= maxCards;
-                const visionIcon = VISION_ICON_IMG[card.id];
+                const visionIcon = VISION_CARD_ART[card.id];
                 const categoryBlob = CATEGORY_BLOBS[card.category];
                 // Same selection language as the category picker above —
                 // accent-tint + accent border + offset shadow, scaled

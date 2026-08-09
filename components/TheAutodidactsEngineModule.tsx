@@ -105,7 +105,7 @@ const SplitPageSimulator = () => {
   };
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+    <div className="my-10 rounded-2xl border border-[var(--outline-soft)] bg-[var(--surface-paper)] p-6 md:p-8">
       <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">
         Split-Page Simulator
       </h4>
@@ -270,7 +270,7 @@ const FourHighlighterAudit = () => {
       `${isHighlighted(id) ? base + ' px-1 rounded-sm' : ''}`;
 
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+        <div className="my-10 rounded-2xl border border-[var(--outline-soft)] bg-[var(--surface-paper)] p-6 md:p-8">
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Four-Highlighter Audit</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Click the highlighters to audit the paragraph below.</p>
             <div className="flex justify-center flex-wrap gap-3 mb-6">
@@ -279,7 +279,7 @@ const FourHighlighterAudit = () => {
                 <button onClick={() => setActiveHighlighter(activeHighlighter === 'language' ? null : 'language')} className={`px-4 py-2 flex items-center gap-2 text-sm font-bold rounded-lg border ${activeHighlighter === 'language' ? 'bg-yellow-400 text-yellow-900 border-yellow-500' : 'bg-yellow-50 text-yellow-800 border-yellow-200'}`}> <Highlighter size={16}/> Language</button>
                 <button onClick={() => setActiveHighlighter(activeHighlighter === 'mechanics' ? null : 'mechanics')} className={`px-4 py-2 flex items-center gap-2 text-sm font-bold rounded-lg border ${activeHighlighter === 'mechanics' ? 'bg-red-500 text-white border-red-500' : 'bg-red-50 text-red-800 border-red-200'}`}> <Highlighter size={16}/> Mechanics</button>
             </div>
-            <div className="p-6 rounded-xl leading-relaxed" style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #E7E5E4' }}>
+            <div className="p-6 rounded-xl border-[1.5px] border-[var(--outline-soft)] bg-[var(--surface-raised)] leading-relaxed text-[var(--ink-primary)]">
               <span className={hl('s1', 'bg-blue-200')}>W.B. Yeats' poem 'The Second Coming' <span className={hl('w1', 'bg-yellow-200')}>powerfully captures</span> the anxiety of a world <span className={hl('w2', 'bg-yellow-200')}>descending into chaos</span>.</span>
               {' '}
               <span><span className={hl('t1', 'bg-green-200')}>Initially</span>, the poem presents the image of a falcon <span className={hl('e1', 'bg-red-300')}>loosing</span> control, a metaphor for society's breakdown.</span>

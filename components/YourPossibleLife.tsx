@@ -1,430 +1,88 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- *
- * "Your Possible Life" — connects effort NOW to the LIFE it makes possible
- * (subjects → results → pathways → careers → lifestyle), structured as WOOP
- * (Wish → Reality → Plan), never a lifestyle-fantasy generator. Money is one
- * ingredient shown in support, never a worth-score. "Possibilities, not
- * predictions" — the student steers it.
- *
- * 2026-06-03 hybrid aesthetic: light white cards with a brightened colour HEADER
- * BAND + Lucide line-icon per career, Source Serif titles, orange chunky CTAs —
- * same family as the rest of the app. Uses the shared immersiveDeck/HybridCard
- * primitives so all three decks stay identical.
- *
- * Engine reuse: bestSixPoints (current AND target) · reachBucket via careerReach
- * · CAREERS/matchStrings ↔ CAO_COURSES · computeBargains. Net-new maths lives in
- * effortLifeModel (irishNetPay, lifestyleFromNet).
- */
-
-import React, { useMemo, useState, useEffect, useRef } from 'react';
-import {
-  ArrowRight, RotateCcw, Star, Home, Car, PiggyBank, Plane,
-  Heart, Compass, TrendingUp, Sparkles, GraduationCap,
-} from 'lucide-react';
+import React, { useEffect, useMemo, useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
+import { ArrowLeft, ArrowRight, Check, ChevronDown, MapPin } from 'lucide-react';
 import { CAREERS } from '../careerPathsData';
-import { type CareerCard } from '../types/careerPaths';
-import {
-  WORLDS, CountUp, Celebration, FIELD_WORLD, careerIcon,
-  HybridCard, Band, ProgressDots, OrangeBtn, NeutralBtn, Eyebrow, Segment, BackLink,
-  SERIF, INK, BODY, MUTED, LABEL, HAIRLINE,
-} from './immersiveDeck';
+import type { CareerCard } from '../types/careerPaths';
 import { CAO_COURSES, type CAOCourse } from './futureFinderData';
+import type { StudentSubjectProfile } from './subjectData';
 import { useInnovationData } from '../contexts/InnovationDataContext';
 import { useEffortLifeSim } from '../hooks/useEffortLifeSim';
-import { type StudentSubjectProfile, computeBargains, type Bargain } from './subjectData';
-import {
-  irishNetPay, lifestyleFromNet, bestSixPoints, careerReach,
-  LIFE_REGIONS, LIFE_REGION_LABELS, type LifeRegion,
-} from './effortLifeModel';
+import { useCareerPaths } from '../hooks/useCareerPaths';
+import { bestSixPoints, type LifeRegion } from './effortLifeModel';
+import { buildPossibilities, FIELD_DAY, LIFE_PRIORITIES, PRIORITY_LABELS, type LifePriority } from './possibleLifeModel';
 
-const LANDING = WORLDS.denim;
-const euroK = (k: number) => `€${k}k`;
+type Stage = 'priorities' | 'possibilities' | 'day' | 'reflection' | 'route';
+const STAGES: Stage[] = ['priorities', 'possibilities', 'day', 'reflection', 'route'];
+const STAGE_NAMES = ['What matters', 'Three possibilities', 'An ordinary day', 'Your reaction', 'Keep a door open'];
+const INK = '#20201f';
+const PAPER = '#fffdfa';
+const MUTED = '#817970';
+const ORANGE = '#ff681f';
+const CREAM = '#f6eee5';
+const SERIF = '"Source Serif 4", Georgia, serif';
 
-/** Courses that lead to this career — same runtime join as Career Paths. */
-const coursesFor = (c: CareerCard): CAOCourse[] =>
-  CAO_COURSES.filter((course) => course.careerPaths.some((cp) => c.matchStrings.includes(cp)))
-    .sort((a, b) => b.level - a.level || b.typicalPoints - a.typicalPoints)
-    .slice(0, 6);
+const coursesFor = (career: CareerCard): CAOCourse[] => CAO_COURSES
+  .filter((course) => course.careerPaths.some((path) => career.matchStrings.includes(path)))
+  .sort((a, b) => b.level - a.level || a.typicalPoints - b.typicalPoints).slice(0, 4);
 
-type Step = 'pick' | 'life' | 'reality' | 'plan' | 'steer';
-const STEP_ORDER: Step[] = ['pick', 'life', 'reality', 'plan', 'steer'];
-const dotsFor = (s: Step) => <ProgressDots total={STEP_ORDER.length} active={STEP_ORDER.indexOf(s)} />;
+const Button: React.FC<React.ButtonHTMLAttributes<HTMLButtonElement> & { secondary?: boolean }> = ({ secondary, children, className = '', ...props }) => (
+  <button {...props} className={`min-h-[52px] rounded-2xl px-6 font-bold transition-transform active:translate-y-1 disabled:opacity-40 ${className}`}
+    style={{ color: secondary ? INK : '#fff', background: secondary ? PAPER : ORANGE, border: `2px solid ${INK}`, boxShadow: secondary ? 'none' : `5px 6px 0 ${INK}` }}>{children}</button>
+);
 
-/** A small tinted, coloured-ink career chip with its field icon. */
-const CareerChip: React.FC<{ c: CareerCard; onClick: () => void }> = ({ c, onClick }) => {
-  const cw = FIELD_WORLD[c.field];
-  const CI = careerIcon(c.field, c.iconKey);
-  return (
-    <button onClick={onClick} className="inline-flex items-center gap-1.5 text-[12.5px] font-semibold px-3 py-1.5 rounded-full transition-transform active:translate-y-0.5" style={{ backgroundColor: cw.tint, color: cw.deep }}>
-      <CI size={13} /> {c.title}
-    </button>
-  );
+const Shell: React.FC<{ stage: Stage; back?: () => void; children: React.ReactNode }> = ({ stage, back, children }) => {
+  const index = STAGES.indexOf(stage);
+  return <div className="w-full max-w-6xl mx-auto pb-16 px-3 sm:px-5">
+    <header className="flex items-center justify-between gap-5 py-5 border-b" style={{ borderColor: '#ddd6cf' }}>
+      <div className="flex items-center gap-4 min-w-0">
+        {back && <button onClick={back} aria-label="Back" className="w-11 h-11 rounded-xl grid place-items-center shrink-0" style={{ border: `2px solid ${INK}`, color: INK }}><ArrowLeft size={19}/></button>}
+        <div><div className="text-[11px] tracking-[.24em] uppercase font-bold" style={{ color: ORANGE }}>Your Possible Life</div><div className="text-sm" style={{ color: MUTED }}>Possibilities, not predictions.</div></div>
+      </div>
+      <div className="text-right shrink-0"><div className="font-mono text-xs font-bold" style={{ color: INK }}>0{index + 1} / 05</div><div className="hidden sm:block text-xs mt-1" style={{ color: MUTED }}>{STAGE_NAMES[index]}</div></div>
+    </header>
+    <AnimatePresence mode="wait"><motion.main key={stage} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: .32, ease: [0.22, 1, 0.36, 1] }}>{children}</motion.main></AnimatePresence>
+  </div>;
 };
 
-// ─── Component ────────────────────────────────────────────────────────────────
+const CareerArtwork: React.FC<{ career: CareerCard; large?: boolean }> = ({ career, large }) => career.image
+  ? <img src={`/${career.image}`} alt="" className={`${large ? 'w-44 h-44' : 'w-28 h-28'} object-contain`} />
+  : <div className={`${large ? 'w-44 h-44 text-8xl' : 'w-28 h-28 text-6xl'} rounded-[42%_58%_52%_48%] grid place-items-center`} style={{ background: '#dcebe4', color: INK, fontFamily: SERIF }}>{career.title.charAt(0)}</div>;
 
 const YourPossibleLife: React.FC<{ uid?: string; profile: StudentSubjectProfile }> = ({ uid, profile }) => {
   const { futureFinderPicks } = useInnovationData();
-  const { saved, isLoaded: simLoaded, save, reset } = useEffortLifeSim(uid);
-
-  const [step, setStep] = useState<Step>('pick');
-  const [careerId, setCareerId] = useState<string | null>(null);
+  const { saved, isLoaded, save } = useEffortLifeSim(uid);
+  const { state: careerPathState, markSeen, toggleSaved } = useCareerPaths(uid);
+  const [stage, setStage] = useState<Stage>('priorities');
+  const [priorities, setPriorities] = useState<LifePriority[]>([]);
+  const [careerId, setCareerId] = useState('');
   const [region, setRegion] = useState<LifeRegion>('city');
-  const [horizon, setHorizon] = useState<'start' | 'experienced'>('start');
-  const [why, setWhy] = useState('');
-  const [showManual, setShowManual] = useState(false);
-  const [burst, setBurst] = useState(false);
+  const [living, setLiving] = useState<'home' | 'share' | 'independent'>('share');
+  const [rhythm, setRhythm] = useState<'steady' | 'varied'>('steady');
+  const [felt, setFelt] = useState(''); const [notFor, setNotFor] = useState(''); const [surprised, setSurprised] = useState('');
+  const [obstacle, setObstacle] = useState(''); const [ifThen, setIfThen] = useState('');
+  const [savedNow, setSavedNow] = useState(false);
+  const matchedIds = useMemo(() => CAREERS.filter((career) => futureFinderPicks.some((course) => career.matchStrings.some((match) => course.careerPaths.includes(match)))).map((career) => career.id), [futureFinderPicks]);
+  const possibilities = useMemo(() => buildPossibilities(priorities, matchedIds), [priorities, matchedIds]);
+  const career = CAREERS.find((item) => item.id === careerId) ?? possibilities[0];
+  const currentPoints = bestSixPoints(profile, 'current'); const targetPoints = Math.max(currentPoints, bestSixPoints(profile, 'target'));
 
-  const currentPoints = useMemo(() => bestSixPoints(profile, 'current'), [profile]);
-  const targetPoints = useMemo(() => Math.max(bestSixPoints(profile, 'target'), currentPoints), [profile, currentPoints]);
-  const hasGrades = currentPoints > 0 || targetPoints > 0;
-  const bargains = useMemo<Bargain[]>(() => computeBargains(profile), [profile]);
+  useEffect(() => { if (!isLoaded || !saved) return; setPriorities(saved.priorities ?? []); setCareerId(saved.careerId ?? saved.selectedCareerIds?.[0] ?? ''); setRegion(saved.region ?? 'city'); setLiving(saved.living ?? 'share'); setRhythm(saved.rhythm ?? 'steady'); setFelt(saved.feltLikeMe ?? ''); setNotFor(saved.notForMe ?? ''); setSurprised(saved.surprisedMe ?? ''); setObstacle(saved.obstacle ?? ''); setIfThen(saved.ifThenPlan ?? ''); }, [isLoaded]);
+  const persist = (patch: Parameters<typeof save>[0]) => save(patch);
+  const togglePriority = (priority: LifePriority) => setPriorities((old) => old.includes(priority) ? old.filter((item) => item !== priority) : old.length < 5 ? [...old, priority] : old);
+  const choose = (id: string) => { setCareerId(id); setSavedNow(false); markSeen(id); persist({ careerId: id, selectedCareerIds: possibilities.map((item) => item.id), priorities }); setStage('day'); };
 
-  // futureFinderPicks now unions both namespaces itself (see
-  // InnovationDataContext), so this no longer has to concatenate — which it did
-  // without deduping, putting the abandoned legacy list first for any student
-  // who had used both tools.
-  const ffCourses = futureFinderPicks;
+  if (stage === 'priorities') return <Shell stage={stage}><section className="py-12 sm:py-20 grid lg:grid-cols-[.8fr_1.2fr] gap-10 lg:gap-20 items-start"><div><div className="font-mono text-sm font-bold mb-5" style={{ color: ORANGE }}>01 — BEFORE THE JOB TITLE</div><h1 className="text-5xl sm:text-7xl leading-[.94]" style={{ fontFamily: SERIF, color: INK }}>What should your future make room for?</h1><p className="mt-6 text-lg leading-relaxed max-w-lg" style={{ color: MUTED }}>Choose three to five things. There is no perfect combination, and we will not turn it into a personality score.</p></div><div className="grid sm:grid-cols-2 gap-3">{LIFE_PRIORITIES.map((priority, index) => { const active = priorities.includes(priority); return <button key={priority} onClick={() => togglePriority(priority)} className="min-h-[82px] rounded-2xl px-5 flex items-center justify-between text-left transition-transform active:scale-[.99]" style={{ border: `2px solid ${active ? INK : '#d9d2cb'}`, background: active ? CREAM : PAPER, color: INK }}><span><span className="font-mono text-[11px] mr-3" style={{ color: ORANGE }}>{String(index + 1).padStart(2, '0')}</span><span className="text-lg font-bold">{PRIORITY_LABELS[priority]}</span></span>{active && <Check size={20} color={ORANGE}/>}</button>; })}<div className="sm:col-span-2 flex items-center justify-between mt-5"><span className="text-sm" style={{ color: MUTED }}>{priorities.length}/5 chosen</span><Button disabled={priorities.length < 3} onClick={() => { persist({ priorities, selectedCareerIds: possibilities.map((item) => item.id) }); setStage('possibilities'); }}>Meet three possibilities <ArrowRight className="inline ml-2" size={18}/></Button></div></div></section></Shell>;
 
-  const matchedCareers = useMemo<CareerCard[]>(() => {
-    const seen = new Set<string>();
-    const ordered: CareerCard[] = [];
-    for (const course of ffCourses) {
-      for (const career of CAREERS) {
-        if (seen.has(career.id)) continue;
-        if (career.matchStrings.some((m) => course.careerPaths.includes(m))) {
-          seen.add(career.id);
-          ordered.push(career);
-        }
-      }
-    }
-    return ordered;
-  }, [ffCourses]);
-  const hasMatches = matchedCareers.length > 0;
-  const topMatch = matchedCareers[0] ?? null;
+  if (stage === 'possibilities') return <Shell stage={stage} back={() => setStage('priorities')}><section className="py-12"><div className="max-w-3xl mb-10"><div className="font-mono text-sm font-bold mb-4" style={{ color: ORANGE }}>THREE DOORS, NOT A PODIUM</div><h1 className="text-4xl sm:text-6xl" style={{ fontFamily: SERIF, color: INK }}>Different futures can protect the same things.</h1><p className="mt-4 text-lg" style={{ color: MUTED }}>One close match, one adjacent possibility and one route you may not have considered. None is labelled “best”.</p></div><div className="grid lg:grid-cols-3 gap-5">{possibilities.map((item, index) => <article key={item.id} className="rounded-[28px] p-6 flex flex-col min-h-[520px]" style={{ background: PAPER, border: `2px solid ${INK}`, boxShadow: `7px 8px 0 ${INK}` }}><div className="font-mono text-sm font-bold" style={{ color: ORANGE }}>0{index + 1}</div><div className="my-8 flex justify-center"><CareerArtwork career={item}/></div><h2 className="text-3xl" style={{ fontFamily: SERIF, color: INK }}>{item.title}</h2><p className="mt-2 min-h-[52px]" style={{ color: MUTED }}>{item.tagline}</p><div className="mt-5 pt-5 border-t text-sm leading-relaxed flex-1" style={{ borderColor: '#ddd6cf', color: INK }}>{item.whatYouDo[0]}</div><Button onClick={() => choose(item.id)} className="w-full mt-6">Step inside <ArrowRight className="inline ml-2" size={17}/></Button></article>)}</div></section></Shell>;
 
-  const seedRef = useRef(false);
-  useEffect(() => {
-    if (!simLoaded || seedRef.current) return;
-    seedRef.current = true;
-    if (saved?.careerId && CAREERS.some((c) => c.id === saved.careerId)) {
-      setCareerId(saved.careerId);
-      if (saved.region) setRegion(saved.region);
-      if (saved.horizon) setHorizon(saved.horizon);
-      if (saved.why) setWhy(saved.why);
-      setStep('life');
-    }
-  }, [simLoaded, saved]);
+  if (stage === 'day') { const day = FIELD_DAY[career.field]; return <Shell stage={stage} back={() => setStage('possibilities')}><section className="py-12 grid lg:grid-cols-[1.2fr_.8fr] gap-12"><div><div className="font-mono text-sm font-bold mb-4" style={{ color: ORANGE }}>ONE PLAUSIBLE TUESDAY</div><div className="flex items-start justify-between gap-5"><div><h1 className="text-5xl sm:text-7xl leading-none" style={{ fontFamily: SERIF, color: INK }}>{career.title}</h1><p className="mt-4 text-lg" style={{ color: MUTED }}>Not a promise. A grounded way to test how the ordinary parts feel.</p></div><CareerArtwork career={career}/></div><div className="mt-12 border-t" style={{ borderColor: INK }}>{[{ t: '08:40', h: 'The work begins', p: career.whatYouDo[0] }, { t: '12:25', h: 'The working day', p: `${day.rhythm} ${day.people}` }, { t: '16:50', h: 'The honest part', p: career.cons[0] }].map((beat) => <div key={beat.t} className="grid sm:grid-cols-[90px_1fr] gap-3 py-7 border-b" style={{ borderColor: '#d9d2cb' }}><span className="font-mono font-bold" style={{ color: ORANGE }}>{beat.t}</span><div><h3 className="text-2xl" style={{ fontFamily: SERIF, color: INK }}>{beat.h}</h3><p className="mt-2 leading-relaxed" style={{ color: MUTED }}>{beat.p}</p></div></div>)}</div><div className="mt-10 grid sm:grid-cols-2 gap-5"><div className="border-t-2 pt-5" style={{ borderColor: INK }}><div className="font-mono text-xs font-bold mb-3" style={{ color: ORANGE }}>WHAT YOU WOULD ACTUALLY DO</div>{career.whatYouDo.slice(0, 3).map((item) => <p key={item} className="py-3 border-b leading-relaxed" style={{ borderColor: '#ddd6cf', color: MUTED }}>{item}</p>)}</div><div className="border-t-2 pt-5" style={{ borderColor: INK }}><div className="font-mono text-xs font-bold mb-3" style={{ color: ORANGE }}>THE TRADE-OFF</div><p className="text-lg leading-relaxed" style={{ color: INK }}>{career.pros[0]}</p><p className="mt-4 leading-relaxed" style={{ color: MUTED }}>{career.cons[0]}</p></div></div></div><aside className="rounded-[28px] p-6 sm:p-8 h-fit lg:sticky lg:top-8" style={{ background: PAPER, border: `2px solid ${INK}`, boxShadow: `7px 8px 0 ${INK}` }}><div className="font-mono text-xs font-bold mb-5" style={{ color: ORANGE }}>CHANGE THE FRAME</div><p className="mb-7 leading-relaxed" style={{ color: MUTED }}>{day.setting}</p><label className="block text-xs tracking-widest uppercase font-bold mb-2">Where would you live?</label><select value={region} onChange={(e) => setRegion(e.target.value as LifeRegion)} className="w-full h-12 rounded-xl px-3 mb-6" style={{ border: `2px solid ${INK}`, background: PAPER }}><option value="dublin">Dublin</option><option value="city">Another city</option><option value="town">Town or rural area</option></select><label className="block text-xs tracking-widest uppercase font-bold mb-2">Who would you live with?</label><div className="grid gap-2 mb-6">{([['home','At home'],['share','Sharing'],['independent','Independently']] as const).map(([value,label]) => <button key={value} onClick={() => setLiving(value)} className="h-11 rounded-xl text-left px-4 font-semibold" style={{ border: `2px solid ${living === value ? INK : '#d9d2cb'}`, background: living === value ? CREAM : PAPER }}>{label}</button>)}</div><label className="block text-xs tracking-widest uppercase font-bold mb-2">What kind of working week sounds better?</label><div className="grid gap-2 mb-8">{([['steady','More predictable','Similar hours and a clearer routine'],['varied','More varied','Changing days and less predictable routines']] as const).map(([value,label,detail]) => <button key={value} onClick={() => setRhythm(value)} className="min-h-[62px] rounded-xl text-left px-4 py-2" style={{ border: `2px solid ${rhythm === value ? INK : '#d9d2cb'}`, background: rhythm === value ? CREAM : PAPER }}><strong className="block">{label}</strong><span className="text-xs" style={{ color: MUTED }}>{detail}</span></button>)}</div><Button className="w-full" onClick={() => { persist({ careerId: career.id, region, living, rhythm }); setStage('reflection'); }}>Reflect on this future <ArrowRight className="inline ml-2" size={17}/></Button></aside></section></Shell>; }
 
-  useEffect(() => {
-    if (!simLoaded || !seedRef.current || !careerId) return;
-    save({ careerId, region, horizon });
-  }, [careerId, region, horizon, simLoaded, save]);
+  if (stage === 'reflection') { const prompts = [[felt,setFelt,'I could see myself…','Which part of the day felt appealing?'],[notFor,setNotFor,'I would not want…','Which trade-off felt wrong for you?'],[surprised,setSurprised,'I had not considered…','What changed or surprised you?']] as const; return <Shell stage={stage} back={() => setStage('day')}><section className="py-12"><div className="max-w-3xl mb-10"><div className="font-mono text-sm font-bold mb-4" style={{ color: ORANGE }}>NO VERDICT REQUIRED</div><h1 className="text-5xl sm:text-6xl" style={{ fontFamily: SERIF, color: INK }}>Keep the useful reaction.</h1><p className="mt-4 text-lg" style={{ color: MUTED }}>Write one honest line. You are testing a possibility, not choosing the rest of your life.</p></div><div className="grid lg:grid-cols-3 gap-5">{prompts.map(([value,setter,label,hint], index) => <label key={label} className="rounded-[24px] p-6 min-h-[250px] flex flex-col" style={{ background: PAPER, border: `2px solid ${INK}`, boxShadow: `5px 6px 0 ${INK}` }}><span className="font-mono text-sm font-bold" style={{ color: ORANGE }}>0{index + 1}</span><span className="block text-3xl mt-7" style={{ fontFamily: SERIF, color: INK }}>{label}</span><span className="block text-sm mt-2" style={{ color: MUTED }}>{hint}</span><textarea value={value} onChange={(e) => setter(e.target.value)} rows={3} className="possible-life-journal-field w-full mt-7 resize-none outline-none text-base" placeholder="A sentence is enough…" style={{ color: INK }}/></label>)}</div><div className="flex justify-end mt-9"><Button disabled={!felt.trim() && !notFor.trim() && !surprised.trim()} onClick={() => { persist({ feltLikeMe: felt, notForMe: notFor, surprisedMe: surprised }); setStage('route'); }}>Build a route from this <ArrowRight className="inline ml-2" size={17}/></Button></div></section></Shell>; }
 
-  const career = careerId ? CAREERS.find((c) => c.id === careerId) ?? null : null;
-  useEffect(() => { if (step !== 'pick' && !career) setStep('pick'); }, [step, career]);
-
-  const chooseCareer = (id: string) => { setCareerId(id); setShowManual(false); setStep('life'); };
-  const goReality = () => setStep('reality');
-  const goPlan = () => setStep('plan');
-  const goSteer = () => { setStep('steer'); setBurst(true); window.setTimeout(() => setBurst(false), 950); };
-  const startOver = () => { setCareerId(null); setShowManual(false); setStep('pick'); };
-
-  // ── PICK (the Wish seed) ────────────────────────────────────────────────
-  if (step === 'pick') {
-    const wd = topMatch ? FIELD_WORLD[topMatch.field] : LANDING;
-    return (
-      <div className="w-full max-w-xl mx-auto pb-12">
-        {hasMatches && !showManual && topMatch ? (
-          <HybridCard>
-            <Band
-              wd={wd}
-              icon={careerIcon(topMatch.field, topMatch.iconKey)}
-              eyebrow={<span className="inline-flex items-center gap-1"><Star size={10} /> Your Future Finder match</span>}
-              title={topMatch.title}
-              subtitle={topMatch.tagline}
-              right={dotsFor('pick')}
-            />
-            <div className="p-6">
-              <p className="text-[15.5px] leading-snug mb-6" style={{ color: BODY }}>
-                Let's explore the life this could open up — and the bridge from your grades today to get there. A possibility you steer, not a prediction.
-              </p>
-              {matchedCareers.length > 1 && (
-                <>
-                  <Eyebrow>Or swap to another of your matches</Eyebrow>
-                  <div className="flex flex-wrap gap-1.5 mb-6">
-                    {matchedCareers.slice(0, 6).map((c) => <CareerChip key={c.id} c={c} onClick={() => chooseCareer(c.id)} />)}
-                  </div>
-                </>
-              )}
-              <div className="flex flex-col sm:flex-row gap-2.5">
-                <OrangeBtn label="Explore this life" icon={ArrowRight} onClick={() => chooseCareer(topMatch.id)} />
-                <NeutralBtn label="Pick a different career" onClick={() => setShowManual(true)} />
-              </div>
-            </div>
-          </HybridCard>
-        ) : (
-          <HybridCard>
-            <Band wd={LANDING} icon={Compass} eyebrow="Pick a future to explore" title="Your Possible Life" right={dotsFor('pick')} />
-            <div className="p-6">
-              <h3 className="text-[20px] leading-tight font-semibold mb-2" style={{ fontFamily: SERIF, color: INK }}>Pick a path, and we'll explore the life it could open up.</h3>
-              <p className="text-[14.5px] leading-snug mb-5" style={{ color: BODY }}>
-                {hasMatches ? 'Choose any career below.' : "Haven't done the Future Finder yet? No problem — choose any career and we'll work out the nitty-gritty."} A possibility you steer, not a prediction.
-              </p>
-              <div className="grid grid-cols-2 gap-2.5">
-                {CAREERS.map((c) => {
-                  const cw = FIELD_WORLD[c.field];
-                  const CI = careerIcon(c.field, c.iconKey);
-                  const matched = matchedCareers.some((m) => m.id === c.id);
-                  return (
-                    <button key={c.id} onClick={() => chooseCareer(c.id)} className="flex items-center gap-2.5 rounded-2xl p-3 text-left transition-transform active:translate-y-0.5" style={{ backgroundColor: '#fff', border: `1.5px solid ${HAIRLINE}`, color: INK }}>
-                      <span className="w-9 h-9 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: cw.bg }}><CI size={17} color="#fff" /></span>
-                      <span className="min-w-0">
-                        <span className="block text-[13.5px] font-semibold leading-tight truncate">{c.title}</span>
-                        <span className="block text-[11px]" style={{ color: MUTED }}>{euroK(c.salary.startK)} → {euroK(c.salary.experiencedK)}{matched ? ' · ★ match' : ''}</span>
-                      </span>
-                    </button>
-                  );
-                })}
-              </div>
-              {hasMatches && (
-                <button onClick={() => setShowManual(false)} className="mt-5 text-[13px] font-medium" style={{ color: MUTED }}>← Back to your match</button>
-              )}
-            </div>
-          </HybridCard>
-        )}
-      </div>
-    );
-  }
-
-  if (!career) return null;
-  const wd = FIELD_WORLD[career.field];
-  const CareerIcon = careerIcon(career.field, career.iconKey);
-  const grossK = horizon === 'experienced' ? career.salary.experiencedK : career.salary.startK;
-  const pay = irishNetPay(grossK * 1000);
-  const life = lifestyleFromNet(pay.netMonthly, region);
-  const courses = coursesFor(career);
-  const reach = careerReach(courses, currentPoints, targetPoints);
-
-  // ── LIFE (Wish / Outcome) ───────────────────────────────────────────────
-  if (step === 'life') {
-    return (
-      <div className="w-full max-w-xl mx-auto pb-12">
-        <BackLink onClick={startOver} label="Pick another path" />
-        <HybridCard>
-          <Band wd={wd} icon={CareerIcon} eyebrow="The life this could open up" title={career.title} right={dotsFor('life')} />
-          <div className="p-6">
-            <p className="text-[20px] leading-snug font-semibold mb-4" style={{ fontFamily: SERIF, color: INK }}>{life.vignette}</p>
-
-            <div className="flex items-center gap-2 mb-2.5">
-              <Segment wd={wd} value={horizon} onChange={(v) => setHorizon(v as 'start' | 'experienced')} options={[{ value: 'start', label: 'Starting out' }, { value: 'experienced', label: 'A few years in' }]} />
-            </div>
-            <div className="flex items-center gap-2 mb-5 flex-wrap">
-              <Segment wd={wd} value={region} onChange={(v) => setRegion(v as LifeRegion)} options={LIFE_REGIONS.map((r) => ({ value: r, label: r === 'dublin' ? 'Dublin' : r === 'city' ? 'City' : 'Town' }))} />
-              <span className="text-[11.5px]" style={{ color: MUTED }}>{LIFE_REGION_LABELS[region]}</span>
-            </div>
-
-            <div className="rounded-2xl p-4 mb-3" style={{ backgroundColor: wd.tint }}>
-              <div className="space-y-3">
-                {[
-                  { icon: Home, label: life.housing, sub: life.housingDetail },
-                  { icon: Car, label: life.transport },
-                  { icon: PiggyBank, label: life.saving },
-                  { icon: Plane, label: life.travel },
-                ].map((row, i) => {
-                  const Icon = row.icon;
-                  return (
-                    <div key={i} className="flex items-start gap-3">
-                      <span className="w-8 h-8 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: wd.bg }}><Icon size={15} color="#fff" /></span>
-                      <span className="min-w-0">
-                        <span className="block text-[14px] font-semibold leading-snug" style={{ color: INK }}>{row.label}</span>
-                        {row.sub && <span className="block text-[12px] leading-snug" style={{ color: MUTED }}>{row.sub}</span>}
-                      </span>
-                    </div>
-                  );
-                })}
-              </div>
-              <div className="mt-3.5 pt-3 flex items-center justify-between" style={{ borderTop: `1px solid ${wd.glow}66` }}>
-                <span className="text-[11px] uppercase tracking-[0.12em] font-bold" style={{ color: wd.deep }}>{life.tier}</span>
-                <span className="text-[13px]" style={{ color: BODY }}>
-                  ~<CountUp to={Math.round(pay.netMonthly)} durationMs={700} format={(n) => `€${n.toLocaleString()}`} className="font-semibold" style={{ color: INK }} />/mo take-home
-                </span>
-              </div>
-            </div>
-
-            <p className="text-[12px] leading-snug mb-6" style={{ color: MUTED }}>{life.caveat}</p>
-            <div className="flex justify-end"><OrangeBtn label="Where am I heading now?" icon={ArrowRight} onClick={goReality} /></div>
-          </div>
-        </HybridCard>
-      </div>
-    );
-  }
-
-  // ── REALITY (the honest contrast) ───────────────────────────────────────
-  if (step === 'reality') {
-    const reachable = reach.reachNow === 'safety' || reach.reachNow === 'match' || reach.reachNow === 'open';
-    let headline: string;
-    let body: string;
-    if (!hasGrades) {
-      headline = 'Add your grades to see the gap';
-      body = 'Pop your current and target grades into your subject profile and this becomes real — the honest distance between today and there.';
-    } else if (reach.entryPoints == null) {
-      headline = "There's a route in that doesn't ride on points";
-      body = reach.hasOpenRoute
-        ? `${career.title} has an apprenticeship or PLC route — you can start without a CAO points race at all. Effort still counts, just differently.`
-        : `${career.title} has routes that don't hinge on a CAO points race. Effort still counts here, just differently.`;
-    } else if (reachable) {
-      headline = 'Good news — your grades are already pointing here';
-      body = `Where your current grades land (~${currentPoints} pts) already reaches the most accessible route in (~${reach.entryPoints} pts). The plan is about making it safe and keeping your options open.`;
-    } else {
-      headline = `A gap of about ${reach.gapFromCurrent} points — and it closes faster than you'd think`;
-      body = `Right now your grades project ~${currentPoints} pts. The most accessible route into ${career.title} is ~${reach.entryPoints} pts. ${reach.gapFromTarget === 0 ? "Your own targets already close it — the next screen shows the moves." : "The next screen shows exactly which grades close it."}`;
-    }
-    return (
-      <div className="w-full max-w-xl mx-auto pb-12">
-        <BackLink onClick={() => setStep('life')} label="The life" />
-        <HybridCard>
-          <Band wd={wd} icon={Compass} eyebrow="Where you're heading now" right={dotsFor('reality')} />
-          <div className="p-6">
-            {hasGrades && (
-              <div className="flex items-stretch gap-3 mb-5">
-                <div className="flex-1 rounded-2xl p-3.5 text-center" style={{ backgroundColor: wd.tint }}>
-                  <p className="text-[10px] uppercase tracking-[0.12em] font-bold mb-1" style={{ color: wd.deep }}>Your grades now</p>
-                  <p className="text-[30px] font-bold leading-none" style={{ fontFamily: SERIF, color: wd.deep }}>{currentPoints}</p>
-                  <p className="text-[11px] mt-1" style={{ color: MUTED }}>projected points</p>
-                </div>
-                <div className="flex items-center"><ArrowRight size={18} style={{ color: MUTED }} /></div>
-                <div className="flex-1 rounded-2xl p-3.5 text-center" style={{ backgroundColor: '#fff', border: `1.5px solid ${HAIRLINE}` }}>
-                  <p className="text-[10px] uppercase tracking-[0.12em] font-bold mb-1" style={{ color: LABEL }}>Route in</p>
-                  <p className="text-[30px] font-bold leading-none" style={{ fontFamily: SERIF, color: INK }}>{reach.entryPoints ?? '—'}</p>
-                  <p className="text-[11px] mt-1" style={{ color: MUTED }}>{reach.entryPoints == null ? 'no points race' : 'typical points'}</p>
-                </div>
-              </div>
-            )}
-            <p className="text-[20px] leading-snug font-semibold mb-2" style={{ fontFamily: SERIF, color: INK }}>{headline}</p>
-            <p className="text-[15px] leading-snug mb-7" style={{ color: BODY }}>{body}</p>
-            <div className="flex justify-between items-center">
-              <NeutralBtn label="Back" onClick={() => setStep('life')} />
-              <OrangeBtn label="Show me the bridge" icon={ArrowRight} onClick={goPlan} />
-            </div>
-          </div>
-        </HybridCard>
-      </div>
-    );
-  }
-
-  // ── PLAN (concrete, if-then) ────────────────────────────────────────────
-  if (step === 'plan') {
-    let covered = 0; let used = 0;
-    for (const b of bargains) { if (covered >= reach.gapFromCurrent) break; covered += b.pointsGain; used++; }
-    const closesGap = reach.gapFromCurrent > 0 && covered >= reach.gapFromCurrent;
-    return (
-      <div className="w-full max-w-xl mx-auto pb-12">
-        <BackLink onClick={() => setStep('reality')} label="Where you're heading" />
-        <HybridCard>
-          <Band wd={wd} icon={TrendingUp} eyebrow="Your bridge from here to there" right={dotsFor('plan')} />
-          <div className="p-6">
-            {bargains.length > 0 ? (
-              <>
-                <Eyebrow>What one grade of effort is worth</Eyebrow>
-                <div className="space-y-2 mb-3">
-                  {bargains.slice(0, 4).map((b, i) => (
-                    <div key={`${b.subjectName}-${i}`} className="flex items-center gap-3 rounded-xl p-3" style={{ backgroundColor: '#fff', border: `1.5px solid ${HAIRLINE}` }}>
-                      <span className="w-9 h-9 rounded-full flex items-center justify-center shrink-0 text-[13px] font-bold" style={{ backgroundColor: wd.bg, color: '#fff' }}>+{b.pointsGain}</span>
-                      <span className="min-w-0 flex-1">
-                        <span className="block text-[13.5px] font-semibold leading-tight" style={{ color: INK }}>{b.subjectName}: {b.fromGrade} → {b.toGrade}</span>
-                        <span className="block text-[11.5px]" style={{ color: MUTED }}>{b.effortHint}{b.isMathsBonus ? ' · unlocks the HL Maths bonus' : ''}</span>
-                      </span>
-                    </div>
-                  ))}
-                </div>
-                {reach.gapFromCurrent > 0 ? (
-                  <p className="text-[13.5px] leading-snug mb-6" style={{ color: BODY }}>
-                    {closesGap
-                      ? <>Just the top {used} of these — about +{covered} points — clears the ~{reach.gapFromCurrent}-point gap into {career.title}. One term's focus, not a miracle.</>
-                      : <>Stack these and you close the gap into {career.title} fast. Every grade up is real points in the bank.</>}
-                  </p>
-                ) : (
-                  <p className="text-[13.5px] leading-snug mb-6" style={{ color: BODY }}>You're already in reach — these are how you make it safe and keep your options open.</p>
-                )}
-              </>
-            ) : (
-              <p className="text-[15px] leading-snug mb-6" style={{ color: BODY }}>Set your current and target grades in your subject profile and this fills with the exact moves — what each grade up is worth, in points.</p>
-            )}
-
-            <Eyebrow>One thing to hold onto</Eyebrow>
-            <div className="rounded-2xl p-4 mb-6" style={{ backgroundColor: wd.tint }}>
-              <div className="flex items-center gap-2 mb-2"><Heart size={14} style={{ color: wd.deep }} /><p className="text-[13.5px] font-semibold" style={{ color: wd.deep }}>Who, beyond you, would this matter to?</p></div>
-              <textarea
-                value={why}
-                onChange={(e) => setWhy(e.target.value)}
-                onBlur={() => { if (careerId) save({ why }); }}
-                placeholder="Who could this help? Why does it matter to you?"
-                rows={2}
-                className="w-full rounded-xl p-3 text-[13.5px] resize-none outline-none"
-                style={{ backgroundColor: '#fff', color: INK, border: `1.5px solid ${HAIRLINE}` }}
-              />
-            </div>
-
-            <div className="flex justify-between items-center">
-              <NeutralBtn label="Back" onClick={() => setStep('reality')} />
-              <OrangeBtn label="See your possibilities" icon={Sparkles} onClick={goSteer} />
-            </div>
-          </div>
-        </HybridCard>
-      </div>
-    );
-  }
-
-  // ── STEER (possibilities, malleable) ────────────────────────────────────
-  return (
-    <div className="w-full max-w-xl mx-auto pb-12">
-      <BackLink onClick={() => setStep('plan')} label="The plan" />
-      <HybridCard>
-        {burst && <Celebration colors={[wd.bg, wd.glow]} />}
-        <Band wd={wd} icon={Sparkles} eyebrow="Steer it" right={dotsFor('steer')} />
-        <div className="p-6">
-          <p className="text-[20px] leading-snug font-semibold mb-2" style={{ fontFamily: SERIF, color: INK }}>These are possibilities, not predictions.</p>
-          <p className="text-[15px] leading-snug mb-5" style={{ color: BODY }}>
-            Move the dials and watch other lives come into view. As {career.title}, {region === 'dublin' ? 'in Dublin' : region === 'city' ? 'in a city' : 'in a town'}, {horizon === 'start' ? 'starting out' : 'a few years in'} — that's <span className="font-semibold" style={{ color: wd.deep }}>{life.tier.toLowerCase()}</span>.
-          </p>
-
-          <Eyebrow>What becomes possible if…</Eyebrow>
-          <div className="space-y-3 mb-6">
-            <div className="rounded-2xl p-3.5" style={{ backgroundColor: wd.tint }}>
-              <p className="text-[11px] uppercase tracking-[0.1em] font-bold mb-2" style={{ color: wd.deep }}>A few years in</p>
-              <Segment wd={wd} value={horizon} onChange={(v) => setHorizon(v as 'start' | 'experienced')} options={[{ value: 'start', label: 'Starting out' }, { value: 'experienced', label: 'A few years in' }]} />
-            </div>
-            <div className="rounded-2xl p-3.5" style={{ backgroundColor: wd.tint }}>
-              <p className="text-[11px] uppercase tracking-[0.1em] font-bold mb-2" style={{ color: wd.deep }}>Where you live</p>
-              <Segment wd={wd} value={region} onChange={(v) => setRegion(v as LifeRegion)} options={LIFE_REGIONS.map((r) => ({ value: r, label: r === 'dublin' ? 'Dublin' : r === 'city' ? 'City' : 'Town' }))} />
-            </div>
-          </div>
-
-          {matchedCareers.length > 1 && (
-            <>
-              <Eyebrow>A different path</Eyebrow>
-              <div className="flex flex-wrap gap-1.5 mb-6">
-                {matchedCareers.filter((c) => c.id !== career.id).slice(0, 5).map((c) => <CareerChip key={c.id} c={c} onClick={() => { setCareerId(c.id); setStep('life'); }} />)}
-              </div>
-            </>
-          )}
-
-          <div className="rounded-2xl p-3.5 mb-6 flex items-start gap-2.5" style={{ backgroundColor: wd.tint }}>
-            <GraduationCap size={16} className="mt-0.5 shrink-0" style={{ color: wd.deep }} />
-            <p className="text-[12.5px] leading-snug" style={{ color: BODY }}>A snapshot you author, not a destiny. Bring it to your guidance counsellor — they can help you turn it into next steps.</p>
-          </div>
-
-          <div className="flex flex-col sm:flex-row gap-2.5">
-            <OrangeBtn label="Revisit the life" icon={ArrowRight} onClick={() => setStep('life')} />
-            <NeutralBtn label="Start over" icon={RotateCcw} onClick={() => { reset(); startOver(); }} />
-          </div>
-        </div>
-      </HybridCard>
-    </div>
-  );
+  const courses = coursesFor(career); const closest = courses.find((course) => course.typicalPoints <= targetPoints + 30) ?? courses[courses.length - 1];
+  const alreadySaved = careerPathState.savedIds.includes(career.id);
+  const savePossibility = () => { persist({ obstacle, ifThenPlan: ifThen, careerId: career.id }); if (!alreadySaved) toggleSaved(career.id); setSavedNow(true); };
+  return <Shell stage="route" back={() => setStage('reflection')}><section className="py-12 grid lg:grid-cols-[.85fr_1.15fr] gap-12"><div><div className="font-mono text-sm font-bold mb-4" style={{ color: ORANGE }}>A DOOR, NOT A DESTINY</div><h1 className="text-5xl sm:text-7xl leading-[.96]" style={{ fontFamily: SERIF, color: INK }}>Keep this future testable.</h1><p className="mt-6 text-lg leading-relaxed" style={{ color: MUTED }}>You do not need to choose {career.title} today. You only need a next step that gives you better evidence.</p><details className="mt-8 rounded-2xl p-5" style={{ border: `2px solid #d9d2cb`, background: PAPER }}><summary className="font-bold cursor-pointer flex items-center justify-between">Practical reality <ChevronDown size={18}/></summary><div className="mt-4 text-sm leading-relaxed" style={{ color: MUTED }}>Typical gross pay in our sourced career data is €{career.salary.startK}k early-career to about €{career.salary.experiencedK}k when experienced. {career.salary.note}. Pay varies by employer, location, hours and route.<div className="mt-4 pt-4 border-t text-xs" style={{ borderColor: '#ddd6cf' }}><strong>Sources:</strong> {career.sources.slice(0, 3).join(' · ')}</div></div></details></div><div className="space-y-5"><article className="rounded-[28px] p-6 sm:p-8" style={{ background: PAPER, border: `2px solid ${INK}`, boxShadow: `7px 8px 0 ${INK}` }}><div className="flex items-center justify-between gap-4"><h2 className="text-3xl" style={{ fontFamily: SERIF, color: INK }}>Routes in</h2><span className="font-mono text-xs" style={{ color: MUTED }}>{currentPoints || '—'} now · {targetPoints || '—'} target</span></div><div className="mt-6 space-y-4">{career.routes.map((route, index) => <div key={route.label} className="grid grid-cols-[30px_1fr] gap-3"><span className="font-mono font-bold" style={{ color: ORANGE }}>0{index + 1}</span><div><strong>{route.label}</strong><p className="text-sm mt-1" style={{ color: MUTED }}>{route.detail}</p></div></div>)}</div>{closest && <div className="mt-6 pt-5 border-t text-sm" style={{ borderColor: '#d9d2cb' }}><MapPin className="inline mr-2" size={16} color={ORANGE}/><strong>{closest.title}</strong> · Level {closest.level} · recent guide {closest.typicalPoints} points</div>}</article><article className="rounded-[28px] p-6 sm:p-8" style={{ background: savedNow ? PAPER : CREAM, border: `2px solid ${INK}` }}>{savedNow ? <div className="py-5"><div className="font-mono text-xs font-bold mb-4" style={{ color: ORANGE }}>POSSIBILITY SAVED</div><h2 className="text-3xl" style={{ fontFamily: SERIF, color: INK }}>A useful door stays open.</h2><p className="mt-3 leading-relaxed" style={{ color: MUTED }}>Your reflection and next move are saved. This is not a career decision—just a possibility worth testing with better evidence.</p><Button secondary className="mt-6" onClick={() => { setSavedNow(false); setStage('possibilities'); }}>Compare another future <ArrowRight className="inline ml-2" size={17}/></Button></div> : <><div className="font-mono text-xs font-bold mb-5" style={{ color: ORANGE }}>ONE MOVE THIS WEEK</div><label className="block font-bold mb-2">What could get in the way?</label><input value={obstacle} onChange={(e) => setObstacle(e.target.value)} className="w-full h-12 rounded-xl px-4 mb-5" style={{ border: `2px solid #d9d2cb`, background: PAPER }} placeholder="Time, confidence, not knowing who to ask…"/><label className="block font-bold mb-2">If that happens, then I will…</label><input value={ifThen} onChange={(e) => setIfThen(e.target.value)} className="w-full h-12 rounded-xl px-4" style={{ border: `2px solid #d9d2cb`, background: PAPER }} placeholder="Ask my guidance counsellor one specific question…"/><Button className="w-full mt-6" disabled={!ifThen.trim()} onClick={savePossibility}>{alreadySaved ? 'Update saved possibility' : 'Save this possibility'} <Check className="inline ml-2" size={18}/></Button></>}</article></div></section></Shell>;
 };
 
 export default YourPossibleLife;

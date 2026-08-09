@@ -808,9 +808,9 @@ const PointsOptimizationModule: React.FC<{
               </MicroCommitment>
               <ToolJumpCard
                 toolId="cao-simulator"
-                title="Run your portfolio through the CAO Simulator"
-                description="Plug your projected grades into the CAO Simulator and see exactly how each subject moves your total. Test different what-ifs without doing the maths yourself."
-                ctaLabel="Open the CAO Simulator"
+                title="Run your portfolio through Points Passport"
+                description="Use the Grade Planner to see exactly how each subject changes your best-six total. Test different combinations without doing the maths yourself."
+                ctaLabel="Open the Grade Planner"
               />
             </ReadingSection>
           )}

@@ -10,6 +10,8 @@ import { ChevronDown, ChevronRight, Star, Lock, Gift, Check } from 'lucide-react
 import { type ShopItemCategory } from '../../types';
 import { isUniqueItem, type MilestoneReward } from '../../islandShopData';
 import { type EnrichedShopItem, type MilestoneRewardStatus } from '../../hooks/useIslandShop';
+import JourneyPathCard from './JourneyPathCard';
+import type { getJourneyProgress } from '../../journeyProgression';
 
 interface IslandShopDrawerProps {
   isOpen: boolean;
@@ -20,6 +22,8 @@ interface IslandShopDrawerProps {
   hasItem: (itemId: string) => boolean;
   milestoneRewards: MilestoneRewardStatus[];
   onClaimReward: (reward: MilestoneReward) => void;
+  progression: ReturnType<typeof getJourneyProgress>;
+  onOpenBuildMode: () => void;
 }
 
 type TabKey = 'rewards' | ShopItemCategory | 'exclusive';
@@ -39,6 +43,7 @@ const CATEGORY_LABELS: { key: TabKey; label: string }[] = [
 const IslandShopDrawer: React.FC<IslandShopDrawerProps> = ({
   isOpen, onClose, items, pointsBalance, onBuy, hasItem,
   milestoneRewards, onClaimReward,
+  progression, onOpenBuildMode,
 }) => {
   const [activeCategory, setActiveCategory] = useState<TabKey>('rewards');
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -107,6 +112,7 @@ const IslandShopDrawer: React.FC<IslandShopDrawerProps> = ({
         {activeCategory === 'rewards' ? (
           /* ── Rewards tab ── */
           <div className="flex flex-col gap-2">
+            <JourneyPathCard progress={progression} onOpenBuildMode={onOpenBuildMode} />
             {milestoneRewards.map(({ reward, status }) => (
               <div
                 key={reward.id}

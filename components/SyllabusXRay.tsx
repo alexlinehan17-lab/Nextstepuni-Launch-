@@ -22,12 +22,14 @@ import { type DebriefEntry } from './StudyDebrief';
 import { useTopicMastery } from '../hooks/useTopicMastery';
 import { type UnifiedConfidence } from '../types';
 import { COLORS } from '../design/tokens';
+import { examinationYearFromDate, resolveCurriculumSpecification } from '../curriculumRegistry';
 
 // ── Types ────────────────────────────────────────────────────────────────────
 
 interface SyllabusXRayProps {
   studentSubjects?: string[];
   uid?: string;
+  examDate?: string | null;
 }
 
 type TopicStatus = 'not-started' | 'in-progress' | 'confident';
@@ -97,14 +99,14 @@ function displayToUnified(s: TopicStatus): UnifiedConfidence {
 
 // ── Component ────────────────────────────────────────────────────────────────
 
-const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => {
+const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid, examDate }) => {
   const [selectedSubject, setSelectedSubject] = useState<string | null>(null);
   const [sortBy, setSortBy] = useState<SortKey>('efficiency');
   const [expandedTopic, setExpandedTopic] = useState<string | null>(null);
   const [debriefs, setDebriefs] = useState<DebriefEntry[]>([]);
 
   // Shared topic mastery hook
-  const topicMastery = useTopicMastery(uid);
+  const topicMastery = useTopicMastery(uid, examDate);
 
   // Derive a display-friendly SubjectMastery from the unified mastery
   const mastery: SubjectMastery = useMemo(() => {
@@ -142,13 +144,13 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
     const map: Record<string, number> = {};
     for (const d of debriefs) {
       if (d.subject !== selectedSubject) continue;
-      const matched = fuzzyMatchTopic(selectedSubject, d.hardestTopic);
+      const matched = fuzzyMatchTopic(selectedSubject, d.hardestTopic, examDate);
       if (matched) {
         map[matched.name] = (map[matched.name] || 0) + (d.durationMinutes / 60);
       }
     }
     return map;
-  }, [selectedSubject, debriefs]);
+  }, [selectedSubject, debriefs, examDate]);
 
   // Determine which subjects to show — prioritise student's subjects
   const availableSubjects = useMemo(() => {
@@ -158,7 +160,10 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
     return AVAILABLE_SUBJECTS;
   }, [studentSubjects]);
 
-  const syllabus = selectedSubject ? getSyllabusForSubject(selectedSubject) : null;
+  const syllabus = selectedSubject ? getSyllabusForSubject(selectedSubject, examDate) : null;
+  const activeSpecification = selectedSubject
+    ? resolveCurriculumSpecification(selectedSubject, examinationYearFromDate(examDate))
+    : undefined;
 
   // Personal ROI overlay (F6): historical marks-per-strand × the student's own
   // Paper Trail self-mark accuracy. Null (renders nothing) unless the student
@@ -210,7 +215,7 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
   const subjectProgress = useMemo(() => {
     const progress: Record<string, number> = {};
     for (const subject of AVAILABLE_SUBJECTS) {
-      const data = getSyllabusForSubject(subject);
+      const data = getSyllabusForSubject(subject, examDate);
       const subjectMastery = mastery[subject] || {};
       if (!data) { progress[subject] = 0; continue; }
       let score = 0;
@@ -222,7 +227,7 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
       progress[subject] = data.topics.length > 0 ? Math.round((score / data.topics.length) * 100) : 0;
     }
     return progress;
-  }, [mastery]);
+  }, [mastery, examDate]);
 
   // ── Subject Picker (2-column card grid) ──
   if (!selectedSubject) {
@@ -248,7 +253,7 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
       <div className="space-y-6">
         <div className="grid grid-cols-2 gap-2.5">
           {availableSubjects.map(subject => {
-            const data = getSyllabusForSubject(subject);
+            const data = getSyllabusForSubject(subject, examDate);
             const progress = subjectProgress[subject] || 0;
             return (
               <button
@@ -314,6 +319,21 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
           </p>
         )}
       </div>
+
+      {!syllabus && activeSpecification && (
+        <div className="rounded-2xl border-2 border-[#302D29] bg-[#FCFBF8] p-6 space-y-3">
+          <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#9A8F85]">
+            Specification-safe view
+          </p>
+          <h3 className="font-serif text-xl text-[#211E1B]">Prioritisation is being verified</h3>
+          <p className="text-sm leading-6 text-[#6F665E]">
+            You are on {activeSpecification.title}. We have paused marks-per-hour rankings for this subject rather than show advice from a different syllabus.
+          </p>
+          <p className="text-xs text-[#9A8F85]">
+            Your coverage and Mark Bank cards remain available and unchanged.
+          </p>
+        </div>
+      )}
 
       {/* Sort control — reorders the treemap. Efficiency (marks per study hour)
           is the default "where the marks are hiding" view. */}
@@ -414,9 +434,9 @@ const SyllabusXRay: React.FC<SyllabusXRayProps> = ({ studentSubjects, uid }) => 
       )}
 
       {/* Legend */}
-      <p className="text-[11px] text-zinc-400 text-center py-3">
+      {syllabus && <p className="text-[11px] text-zinc-400 text-center py-3">
         Block size = mark weight &middot; tap to x-ray a topic
-      </p>
+      </p>}
 
       {/* Detail Panel */}
       <AnimatePresence>

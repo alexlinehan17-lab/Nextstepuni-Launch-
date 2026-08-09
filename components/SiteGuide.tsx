@@ -222,19 +222,19 @@ const SiteGuide: React.FC<Props> = ({ open, onClose, onGo }) => {
 
   return (
     <div
-      className="fixed inset-0 z-[130] flex items-center justify-center px-4"
+      className="fixed inset-0 z-[200] flex items-end justify-center p-0 sm:items-center sm:p-4"
       role="dialog"
       aria-modal="true"
       aria-label="Site guide"
     >
-      <div className="absolute inset-0 bg-black/50" onClick={onClose} />
+      <div className="absolute inset-0 bg-[#1A1A1A]/55" onClick={onClose} />
 
       {/* Desktop arrows — outside the card */}
       <button
         onClick={() => goTo(idx - 1)}
         disabled={idx === 0}
         aria-label="Previous page"
-        className="hidden sm:flex absolute left-6 lg:left-[calc(50%-350px)] items-center justify-center w-12 h-12 rounded-full border-2 bg-white transition-transform active:translate-y-0.5 disabled:opacity-30 z-10"
+        className="hidden sm:flex absolute left-6 lg:left-[calc(50%-350px)] items-center justify-center w-12 h-12 rounded-xl border-2 bg-[#FAFBF6] transition-transform active:translate-y-0.5 disabled:opacity-30 z-10"
         style={{ borderColor: INK, boxShadow: '0 3px 0 rgba(0,0,0,0.35)' }}
       >
         <ChevronLeft size={22} color={ACCENT} strokeWidth={2.5} />
@@ -243,7 +243,7 @@ const SiteGuide: React.FC<Props> = ({ open, onClose, onGo }) => {
         onClick={() => goTo(idx + 1)}
         disabled={idx === CARDS.length - 1}
         aria-label="Next page"
-        className="hidden sm:flex absolute right-6 lg:right-[calc(50%-350px)] items-center justify-center w-12 h-12 rounded-full border-2 bg-white transition-transform active:translate-y-0.5 disabled:opacity-30 z-10"
+        className="hidden sm:flex absolute right-6 lg:right-[calc(50%-350px)] items-center justify-center w-12 h-12 rounded-xl border-2 bg-[#FAFBF6] transition-transform active:translate-y-0.5 disabled:opacity-30 z-10"
         style={{ borderColor: INK, boxShadow: '0 3px 0 rgba(0,0,0,0.35)' }}
       >
         <ChevronRight size={22} color={ACCENT} strokeWidth={2.5} />
@@ -264,12 +264,12 @@ const SiteGuide: React.FC<Props> = ({ open, onClose, onGo }) => {
         <AnimatePresence mode="wait" initial={false}>
           <MotionDiv
             key={card.id}
-            initial={reduced ? { opacity: 0 } : { opacity: 0, x: 32 * dirRef.current }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={reduced ? { opacity: 0 } : { opacity: 0, x: -32 * dirRef.current }}
-            transition={{ duration: 0.22, ease: [0.16, 1, 0.3, 1] }}
-            className="rounded-2xl border-2 bg-white px-5 pt-5 pb-4 max-h-[88vh] overflow-y-auto"
-            style={{ borderColor: INK, boxShadow: '0 6px 0 rgba(0,0,0,0.4)' }}
+            initial={reduced ? { opacity: 0 } : { opacity: 0, y: 18, scale: 0.985 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={reduced ? { opacity: 0 } : { opacity: 0, y: 12, scale: 0.99 }}
+            transition={{ type: 'spring', stiffness: 280, damping: 28, mass: 0.85 }}
+            className="rounded-t-[24px] sm:rounded-[24px] border-[1.5px] bg-[#FAFBF6] px-5 pt-5 pb-4 max-h-[92dvh] overflow-y-auto"
+            style={{ borderColor: INK, boxShadow: '5px 5px 0 #383838' }}
           >
             <div className="flex items-start justify-between gap-2 mb-3">
               <span
@@ -278,7 +278,7 @@ const SiteGuide: React.FC<Props> = ({ open, onClose, onGo }) => {
               >
                 {card.chip}
               </span>
-              <button onClick={onClose} aria-label="Close the guide" className="p-1 -mt-1 -mr-1" style={{ color: '#9e9186' }}>
+              <button onClick={onClose} aria-label="Close the guide" className="flex h-9 w-9 items-center justify-center rounded-xl border border-[#CFC9C2] bg-white -mt-1 -mr-1" style={{ color: '#6F6861' }}>
                 <X size={18} />
               </button>
             </div>
@@ -307,8 +307,8 @@ const SiteGuide: React.FC<Props> = ({ open, onClose, onGo }) => {
             {card.go && (
               <button
                 onClick={() => { onClose(); onGo(card.go!.action); }}
-                className="w-full rounded-full py-2.5 text-[14px] font-semibold text-white transition-transform active:translate-y-0.5 mb-3"
-                style={{ backgroundColor: ACCENT, boxShadow: '0 3px 0 #B54D14' }}
+                className="w-full rounded-xl border-2 border-[#1A1A1A] py-2.5 text-[14px] font-semibold text-white transition-all active:translate-x-1 active:translate-y-1 active:shadow-none mb-3"
+                style={{ backgroundColor: ACCENT, boxShadow: '3px 3px 0 #1A1A1A' }}
               >
                 {card.go.label} <ArrowRight size={14} className="inline -mt-0.5" />
               </button>

@@ -9,8 +9,8 @@
  */
 
 import React from 'react';
-import { X, Sparkles } from 'lucide-react';
 import { CHANGELOG, LATEST_CHANGELOG_ID } from '../data/changelog';
+import ModalFrame from './ui/ModalFrame';
 
 const KEY = 'nsu-whatsnew:';
 
@@ -34,33 +34,8 @@ interface Props {
 }
 
 const WhatsNew: React.FC<Props> = ({ open, onClose }) => {
-  if (!open) return null;
-
   return (
-    <div
-      className="fixed inset-0 z-[126] flex items-center justify-center px-4"
-      role="dialog"
-      aria-modal="true"
-      aria-label="What's new"
-      onMouseDown={e => { if (e.target === e.currentTarget) onClose(); }}
-    >
-      <div className="absolute inset-0 bg-black/45" onMouseDown={onClose} />
-      <div
-        className="relative w-full max-w-[440px] rounded-2xl bg-white px-5 py-4 max-h-[70vh] overflow-y-auto"
-        style={{ border: '2px solid #1a1a1a', boxShadow: '0 4px 0 rgba(0,0,0,0.4)' }}
-      >
-        <div className="flex items-center justify-between mb-3">
-          <div className="flex items-center gap-2">
-            <Sparkles size={16} style={{ color: '#F26B1F' }} />
-            <h3 className="text-[18px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>
-              What&rsquo;s new
-            </h3>
-          </div>
-          <button onClick={onClose} aria-label="Close" className="p-1 rounded-lg" style={{ color: '#9e9186' }}>
-            <X size={16} />
-          </button>
-        </div>
-
+    <ModalFrame open={open} onClose={onClose} title="What’s new" eyebrow="Latest changes" width="sm">
         <div className="flex flex-col gap-4">
           {CHANGELOG.slice(0, 5).map(entry => (
             <div key={entry.id}>
@@ -81,8 +56,7 @@ const WhatsNew: React.FC<Props> = ({ open, onClose }) => {
             </div>
           ))}
         </div>
-      </div>
-    </div>
+    </ModalFrame>
   );
 };
 

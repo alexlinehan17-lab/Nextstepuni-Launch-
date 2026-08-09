@@ -250,7 +250,7 @@ export const JOURNEY_STOPS: JourneyStop[] = [
       { id: 'review-order', label: 'Reviewed and updated my order of preference' },
     ],
     crossLinks: [
-      { toolId: 'cao-simulator', title: 'Run the numbers', description: 'See how grade changes ripple through your CAO total in the CAO Points Simulator.' },
+      { toolId: 'cao-simulator', title: 'Run the numbers', description: 'Use the Points Passport Grade Planner to see how grade changes affect your best-six total.' },
     ],
     verify: { sourceLabel: 'cao.ie — Change of Mind', sourceUrl: 'https://www.cao.ie/?page=aboutCOM', lastChecked: COMPASS_LAST_VERIFIED },
   },
@@ -289,8 +289,7 @@ export const JOURNEY_STOPS: JourneyStop[] = [
       { id: 'round1', label: 'Round 1 offers — reply by the deadline' },
     ],
     crossLinks: [
-      { toolId: 'points-passport', title: 'Track your trajectory', description: 'See your mock trends and grade bargains in Points Passport.' },
-      { toolId: 'cao-simulator', title: 'What points do I need?', description: 'Model grade combinations in the CAO Points Simulator.' },
+      { toolId: 'cao-simulator', title: 'Open Points Passport', description: 'Track mock trends, model grade combinations and compare your course-point gaps in one place.' },
     ],
     verify: { sourceLabel: 'cao.ie — Points & Offers', sourceUrl: 'https://www.cao.ie/index.php?page=points', lastChecked: COMPASS_LAST_VERIFIED },
   },

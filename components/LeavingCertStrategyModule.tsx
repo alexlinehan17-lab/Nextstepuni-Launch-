@@ -487,8 +487,8 @@ const LeavingCertStrategyModule: React.FC<{ onBack: () => void; progress: Module
               <ToolJumpCard
                 toolId="cao-simulator"
                 title="See where your points sit right now"
-                description="The CAO Simulator turns your projected grades into a points total and tells you which course offers you'd land. Run the numbers before you commit to a strategy."
-                ctaLabel="Open the CAO Simulator"
+                description="Points Passport turns your projected grades into a best-six total and lets you test realistic grade plans before committing to a strategy."
+                ctaLabel="Open the Grade Planner"
               />
             </ReadingSection>
           )}

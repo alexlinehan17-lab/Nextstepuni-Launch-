@@ -12,7 +12,7 @@ import {
   ArrowLeft, CheckCircle2,
   ChevronRight, Lock, BookOpen,
   Zap, Brain, Target, Shield, Compass, Star,
-  Sun, Moon, Home, BarChart3, Rocket, PanelLeft, Award, Settings, LogOut, Layers, RefreshCw, User, Mountain, Bell
+  Sun, Moon, Home, PanelLeft, Award, Settings, LogOut, Layers, RefreshCw, User, Bell
 } from 'lucide-react';
 import { type CategoryType } from './KnowledgeTree';
 import { type NorthStar, type CardStyleId } from '../types';
@@ -181,7 +181,7 @@ export const BentoModuleTile: React.FC<BentoModuleTileProps> = ({
   );
 };
 
-export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse, onBack, userProgress, northStar: _northStar, studentProfile: _studentProfile, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onGoToDashboard, onGoToLearningPaths, onGoToInnovationZone, onGoToJourney, onChangeSubjects, completedCount = 0, totalCount = 0 }) => {
+export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse, onBack, userProgress, northStar: _northStar, studentProfile: _studentProfile, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onGoToLearningPaths, onChangeSubjects, completedCount = 0, totalCount = 0 }) => {
   const settingsCtx = useSettingsContext();
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [themePickerOpen, setThemePickerOpen] = useState(false);
@@ -204,10 +204,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
 
   const sidebarItems = [
     { icon: Home, label: 'Home', onClick: onBack, active: false },
-    { icon: Mountain, label: 'My Journey', onClick: onGoToJourney, active: false },
-    { icon: BarChart3, label: 'Dashboard', onClick: onGoToDashboard, active: false },
     { icon: Compass, label: 'Learning Paths', onClick: onGoToLearningPaths, active: false },
-    { icon: Rocket, label: 'Launchpad', onClick: onGoToInnovationZone, active: false },
   ];
 
   const calculateCategoryProgress = () => {

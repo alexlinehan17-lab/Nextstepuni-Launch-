@@ -7,8 +7,9 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { Plus, X, AlertTriangle, Shield } from 'lucide-react';
 import { type StudentSubjectProfile } from '../subjectData';
 import { getDistinctSubjectHex } from '../../studySessionData';
-import { getSyllabusTopics } from '../syllabusTopics';
+import { getSyllabusTopicRefs } from '../syllabusTopics';
 import { getSyllabusForSubject, getQuadrant, QUADRANT_LABELS } from '../syllabusData';
+import { examinationYearFromDate, resolveCurriculumSpecification } from '../../curriculumRegistry';
 import { type DebriefEntry } from '../StudyDebrief';
 import { type useTopicMastery } from '../../hooks/useTopicMastery';
 import { type UnifiedConfidence } from '../../types';
@@ -32,25 +33,41 @@ interface CoveragePanelProps {
   subjects: StudentSubjectProfile['subjects'];
   topicMastery: ReturnType<typeof useTopicMastery>;
   debriefs?: DebriefEntry[];
+  examDate?: string | null;
 }
 
-const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMastery, debriefs }) => {
+const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMastery, debriefs, examDate }) => {
   const [selectedSubject, setSelectedSubject] = useState(subjects[0]?.subjectName ?? '');
   const [newTopicName, setNewTopicName] = useState('');
 
   useEffect(() => {
-    if (selectedSubject) topicMastery.importSyllabusTopics(selectedSubject);
-  }, [selectedSubject]);
+    if (selectedSubject) topicMastery.importSyllabusTopics(selectedSubject, examDate);
+  }, [selectedSubject, examDate]);
 
   const topics: TopicEntry[] = useMemo(() => {
     const subjectTopics = topicMastery.getSubjectTopics(selectedSubject);
-    return Object.entries(subjectTopics).map(([name, entry]) => ({
-      id: `${selectedSubject}-${name}`,
-      name,
-      confidence: entry.confidence as TopicEntry['confidence'],
-      updatedAt: entry.updatedAt,
-    }));
-  }, [topicMastery, selectedSubject]);
+    const canonical = topicMastery.getCanonicalSubjectTopics(selectedSubject);
+    const refs = getSyllabusTopicRefs(selectedSubject, examDate);
+    const canonicalNames = new Set(refs.map((ref) => ref.name.toLowerCase()));
+    const curriculumTopics = refs.map((ref) => {
+      const entry = canonical[ref.id] ?? subjectTopics[ref.name];
+      return {
+        id: ref.id,
+        name: ref.name,
+        confidence: (entry?.confidence ?? 'not-started') as TopicEntry['confidence'],
+        updatedAt: entry?.updatedAt ?? 0,
+      };
+    });
+    const customTopics = Object.entries(subjectTopics)
+      .filter(([name]) => !canonicalNames.has(name.toLowerCase()))
+      .map(([name, entry]) => ({
+        id: `custom:${selectedSubject}:${name}`,
+        name,
+        confidence: entry.confidence as TopicEntry['confidence'],
+        updatedAt: entry.updatedAt,
+      }));
+    return [...curriculumTopics, ...customTopics];
+  }, [topicMastery, selectedSubject, examDate]);
 
   const addTopic = () => {
     const trimmed = newTopicName.trim();
@@ -69,8 +86,12 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMastery, d
     topicMastery.setTopicConfidence(selectedSubject, _topicName, 'not-started', 'manual');
   };
 
-  const syllabusTopics = getSyllabusTopics(selectedSubject);
-  const syllabusData = getSyllabusForSubject(selectedSubject);
+  const syllabusTopics = getSyllabusTopicRefs(selectedSubject, examDate).map((topic) => topic.name);
+  const curriculumSpecification = resolveCurriculumSpecification(
+    selectedSubject,
+    examinationYearFromDate(examDate),
+  );
+  const syllabusData = getSyllabusForSubject(selectedSubject, examDate);
   const existingNames = new Set(topics.map(t => t.name.toLowerCase()));
   const unaddedSyllabus = syllabusTopics.filter(t => !existingNames.has(t.toLowerCase()));
 
@@ -168,6 +189,15 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMastery, d
             );
           })}
         </div>
+        {curriculumSpecification?.selectionRules?.length ? (
+          <div
+            className="mt-4 rounded-2xl px-4 py-3 text-sm leading-6"
+            style={{ border: `1.5px solid ${INK}`, background: PAPER, color: INK_SOFT }}
+          >
+            <span className="font-semibold" style={{ color: INK }}>How this subject is selected: </span>
+            {curriculumSpecification.selectionRules.map((rule) => rule.description).join(' ')}
+          </div>
+        ) : null}
       </section>
 
       {/* ── Add topic ── */}

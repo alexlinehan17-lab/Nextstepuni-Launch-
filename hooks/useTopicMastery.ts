@@ -7,13 +7,23 @@ import { useState, useEffect, useCallback } from 'react';
 import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useFreshProgress } from './useFreshProgress';
-import { type TopicMasteryMap, type UnifiedConfidence, type TopicMasteryEntry } from '../types';
-import { getSyllabusTopics } from '../components/syllabusTopics';
+import { type TopicMasteryMap, type TopicMasteryV2, type UnifiedConfidence, type TopicMasteryEntry } from '../types';
+import { getSyllabusTopicRefs } from '../components/syllabusTopics';
+import {
+  canonicalMasteryForSpecification,
+  emptyTopicMasteryV2,
+  mergeTopicMasteryV2,
+  migrateTopicMastery,
+  projectTopicMastery,
+  upsertCanonicalMastery,
+} from '../services/topicMasteryMigration';
+import { examinationYearFromDate, resolveCurriculumSpecification } from '../curriculumRegistry';
 import { reportSaveError } from '../utils/logError';
 
-export function useTopicMastery(uid: string | undefined) {
+export function useTopicMastery(uid: string | undefined, examDate?: string | null) {
   const { doc: rawProgressDoc, loaded: progressLoaded } = useFreshProgress(uid);
   const [mastery, setMastery] = useState<TopicMasteryMap>({});
+  const [canonicalMastery, setCanonicalMastery] = useState<TopicMasteryV2>(emptyTopicMasteryV2);
   const [isLoaded, setIsLoaded] = useState(false);
 
   // Load + one-time migration from old data
@@ -23,9 +33,10 @@ export function useTopicMastery(uid: string | undefined) {
 
     const data = rawProgressDoc;
 
+    let legacyMastery: TopicMasteryMap;
     if (data?.topicMastery) {
       // Already migrated
-      setMastery(data.topicMastery);
+      legacyMastery = data.topicMastery as TopicMasteryMap;
     } else {
       // Migrate from old formats
       const merged: TopicMasteryMap = {};
@@ -62,15 +73,39 @@ export function useTopicMastery(uid: string | undefined) {
         }
       }
 
-      setMastery(merged);
+      legacyMastery = merged;
 
       // Save migrated data if we had any old data
       if (Object.keys(merged).length > 0) {
         setDoc(doc(db, 'progress', uid), { topicMastery: merged }, { merge: true }).catch((e) => reportSaveError('useTopicMastery.save', e));
       }
     }
+    const migratedLegacy = migrateTopicMastery(legacyMastery, examDate);
+    const storedV2 = data?.topicMasteryV2 as TopicMasteryV2 | undefined;
+    const v2 = storedV2?.schemaVersion === 2
+      ? mergeTopicMasteryV2(storedV2, migratedLegacy)
+      : migratedLegacy;
+    const projected = projectTopicMastery(v2);
+    for (const [subject, topics] of Object.entries(legacyMastery)) {
+      projected[subject] = { ...(projected[subject] ?? {}), ...topics };
+    }
+    setCanonicalMastery(v2);
+    setMastery(projected);
+    if (!storedV2 && (Object.keys(v2.topics).length || Object.keys(v2.unresolved).length)) {
+      setDoc(doc(db, 'progress', uid), { topicMasteryV2: v2 }, { merge: true })
+        .catch((e) => reportSaveError('useTopicMastery.saveV2Migration', e));
+    }
     setIsLoaded(true);
-  }, [uid, progressLoaded, rawProgressDoc]);
+  }, [uid, progressLoaded, rawProgressDoc, examDate]);
+
+  const persist = useCallback((nextV2: TopicMasteryV2) => {
+    if (!uid) return;
+    const nextLegacy = projectTopicMastery(nextV2);
+    setCanonicalMastery(nextV2);
+    setMastery(nextLegacy);
+    setDoc(doc(db, 'progress', uid), { topicMasteryV2: nextV2, topicMastery: nextLegacy }, { merge: true })
+      .catch((e) => reportSaveError('useTopicMastery.save', e));
+  }, [uid]);
 
   const setTopicConfidence = useCallback((
     subject: string,
@@ -79,53 +114,43 @@ export function useTopicMastery(uid: string | undefined) {
     source: TopicMasteryEntry['source'] = 'manual'
   ) => {
     if (!uid) return;
-    const next: TopicMasteryMap = { ...mastery };
-    next[subject] = {
-      ...(next[subject] ?? {}),
-      [topic]: { confidence, updatedAt: Date.now(), source },
-    };
-    setMastery(next);
-    setDoc(doc(db, 'progress', uid), { topicMastery: next }, { merge: true }).catch((e) => reportSaveError('useTopicMastery.save', e));
-  }, [uid, mastery]);
+    const entry = { confidence, updatedAt: Date.now(), source };
+    persist(upsertCanonicalMastery(canonicalMastery, subject, topic, entry, examDate));
+  }, [uid, canonicalMastery, examDate, persist]);
 
-  const importSyllabusTopics = useCallback((subject: string) => {
+  const importSyllabusTopics = useCallback((subject: string, examDate?: string | null) => {
     if (!uid) return;
-    const topics = getSyllabusTopics(subject);
+    const topics = getSyllabusTopicRefs(subject, examDate);
     if (!topics || topics.length === 0) return;
 
-    const next: TopicMasteryMap = { ...mastery };
-    const subjectMap = { ...(next[subject] ?? {}) };
+    let nextV2 = canonicalMastery;
+    const subjectMap = mastery[subject] ?? {};
     const now = Date.now();
     let added = false;
-    for (const topicName of topics) {
-      if (!subjectMap[topicName]) {
-        subjectMap[topicName] = { confidence: 'not-started', updatedAt: now, source: 'import' };
+    for (const topic of topics) {
+      if (!subjectMap[topic.name]) {
+        nextV2 = upsertCanonicalMastery(nextV2, subject, topic.name, { confidence: 'not-started', updatedAt: now, source: 'import' }, examDate);
         added = true;
       }
     }
     if (!added) return;
-    next[subject] = subjectMap;
-    setMastery(next);
-    setDoc(doc(db, 'progress', uid), { topicMastery: next }, { merge: true }).catch((e) => reportSaveError('useTopicMastery.save', e));
-  }, [uid, mastery]);
+    persist(nextV2);
+  }, [uid, mastery, canonicalMastery, examDate, persist]);
 
   const bulkUpdate = useCallback((subject: string, updates: Record<string, UnifiedConfidence>) => {
     if (!uid) return;
-    const next: TopicMasteryMap = { ...mastery };
-    const subjectMap = { ...(next[subject] ?? {}) };
+    let nextV2 = canonicalMastery;
     const now = Date.now();
     for (const [topic, confidence] of Object.entries(updates)) {
-      subjectMap[topic] = {
-        ...subjectMap[topic],
+      nextV2 = upsertCanonicalMastery(nextV2, subject, topic, {
+        ...(mastery[subject]?.[topic] ?? {}),
         confidence,
         updatedAt: now,
         source: 'manual',
-      };
+      }, examDate);
     }
-    next[subject] = subjectMap;
-    setMastery(next);
-    setDoc(doc(db, 'progress', uid), { topicMastery: next }, { merge: true }).catch((e) => reportSaveError('useTopicMastery.save', e));
-  }, [uid, mastery]);
+    persist(nextV2);
+  }, [uid, mastery, canonicalMastery, examDate, persist]);
 
   const getTopicConfidence = useCallback((subject: string, topic: string): UnifiedConfidence => {
     return mastery[subject]?.[topic]?.confidence ?? 'not-started';
@@ -135,5 +160,10 @@ export function useTopicMastery(uid: string | undefined) {
     return mastery[subject] ?? {};
   }, [mastery]);
 
-  return { mastery, isLoaded, setTopicConfidence, importSyllabusTopics, bulkUpdate, getTopicConfidence, getSubjectTopics };
+  const getCanonicalSubjectTopics = useCallback((subject: string) => {
+    const specification = resolveCurriculumSpecification(subject, examinationYearFromDate(examDate));
+    return specification ? canonicalMasteryForSpecification(canonicalMastery, specification.id) : {};
+  }, [canonicalMastery, examDate]);
+
+  return { mastery, canonicalMastery, isLoaded, setTopicConfidence, importSyllabusTopics, bulkUpdate, getTopicConfidence, getSubjectTopics, getCanonicalSubjectTopics };
 }

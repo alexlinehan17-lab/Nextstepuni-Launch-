@@ -12,7 +12,7 @@ import { useAuth } from './AuthContext';
 export type ViewState =
   | 'tree' | 'modules' | 'category' | 'module' | 'innovation-zone'
   | 'dashboard' | 'learning-paths' | 'onboarding'
-  | 'my-journey' | 'gamification-hub' | 'study-session' | 'insights'
+  | 'my-journey' | 'my-direction' | 'gamification-hub' | 'study-session' | 'insights'
   | 'jc-coming-soon' | 'cut-content' | 'accreditation' | 'year-plans' | 'wip-tools';
 
 export interface NavigationState {
@@ -32,6 +32,7 @@ type NavigationAction =
   | { type: 'NAVIGATE_TO_DASHBOARD' }
   | { type: 'NAVIGATE_TO_LEARNING_PATHS' }
   | { type: 'NAVIGATE_TO_JOURNEY' }
+  | { type: 'NAVIGATE_TO_DIRECTION' }
   | { type: 'NAVIGATE_TO_GAMIFICATION_HUB' }
   | { type: 'NAVIGATE_TO_STUDY_SESSION' }
   | { type: 'NAVIGATE_TO_INSIGHTS' }
@@ -55,6 +56,7 @@ interface NavigationContextValue {
   navigateToDashboard: () => void;
   navigateToLearningPaths: () => void;
   navigateToJourney: () => void;
+  navigateToDirection: () => void;
   navigateToGamificationHub: () => void;
   navigateToStudySession: () => void;
   navigateToInsights: () => void;
@@ -73,7 +75,7 @@ interface NavigationContextValue {
 const VALID_VIEWS = new Set<string>([
   'tree', 'modules', 'category', 'module', 'innovation-zone',
   'dashboard', 'learning-paths', 'onboarding',
-  'my-journey', 'gamification-hub', 'study-session', 'insights',
+  'my-journey', 'my-direction', 'gamification-hub', 'study-session', 'insights',
   'jc-coming-soon', 'cut-content', 'accreditation', 'year-plans', 'wip-tools',
 ]);
 
@@ -130,6 +132,8 @@ function navigationReducer(state: NavigationState, action: NavigationAction): Na
       return { ...state, viewState: 'learning-paths', currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'NAVIGATE_TO_JOURNEY':
       return { ...state, viewState: 'my-journey', currentModuleId: null, cameFromJourney: false, activeTool: null };
+    case 'NAVIGATE_TO_DIRECTION':
+      return { ...state, viewState: 'my-direction', currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'NAVIGATE_TO_GAMIFICATION_HUB':
       return { ...state, viewState: 'gamification-hub', currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'NAVIGATE_TO_STUDY_SESSION':
@@ -327,6 +331,11 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     window.scrollTo(0, 0);
   }, [navigate]);
 
+  const navigateToDirection = useCallback(() => {
+    navigate({ type: 'NAVIGATE_TO_DIRECTION' });
+    window.scrollTo(0, 0);
+  }, [navigate]);
+
   const navigateToGamificationHub = useCallback(() => {
     navigate({ type: 'NAVIGATE_TO_GAMIFICATION_HUB' });
     window.scrollTo(0, 0);
@@ -390,6 +399,7 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     navigateToDashboard,
     navigateToLearningPaths,
     navigateToJourney,
+    navigateToDirection,
     navigateToGamificationHub,
     navigateToStudySession,
     navigateToInsights,

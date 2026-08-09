@@ -15,20 +15,14 @@ import { CARD_STYLES } from '../themeData';
 import { COLORS } from '../design/tokens';
 import ModuleCompleteScreen from './ModuleCompleteScreen';
 
-/* ── Confetti celebration overlay ── */
 const CONFETTI_COLORS = ['#CC785C', '#f59e0b', '#3b82f6', '#10b981', '#8b5cf6', '#ef4444', '#ec4899'];
 const CONFETTI_COUNT = 60;
 
 const ConfettiOverlay: React.FC<{ onDone: () => void }> = ({ onDone }) => {
   const pieces = useMemo(() => Array.from({ length: CONFETTI_COUNT }, (_, i) => ({
-    id: i,
-    x: Math.random() * 100,
-    delay: Math.random() * 0.6,
-    duration: 1.8 + Math.random() * 1.2,
-    color: CONFETTI_COLORS[i % CONFETTI_COLORS.length],
-    rotation: Math.random() * 360,
-    size: 6 + Math.random() * 6,
-    drift: (Math.random() - 0.5) * 40,
+    id: i, x: Math.random() * 100, delay: Math.random() * 0.6,
+    duration: 1.8 + Math.random() * 1.2, color: CONFETTI_COLORS[i % CONFETTI_COLORS.length],
+    rotation: Math.random() * 360, size: 6 + Math.random() * 6, drift: (Math.random() - 0.5) * 40,
   })), []);
 
   useEffect(() => {
@@ -36,25 +30,9 @@ const ConfettiOverlay: React.FC<{ onDone: () => void }> = ({ onDone }) => {
     return () => clearTimeout(timer);
   }, [onDone]);
 
-  return (
-    <div className="fixed inset-0 z-[200] pointer-events-none overflow-hidden">
-      {pieces.map(p => (
-        <motion.div
-          key={p.id}
-          initial={{ y: -20, x: `${p.x}vw`, opacity: 1, rotate: 0 }}
-          animate={{ y: '110vh', x: `${p.x + p.drift}vw`, opacity: [1, 1, 0], rotate: p.rotation + 360 }}
-          transition={{ duration: p.duration, delay: p.delay, ease: 'easeIn' }}
-          style={{
-            position: 'absolute',
-            width: p.size,
-            height: p.size * 0.6,
-            backgroundColor: p.color,
-            borderRadius: 2,
-          }}
-        />
-      ))}
-    </div>
-  );
+  return <div className="fixed inset-0 z-[200] pointer-events-none overflow-hidden">
+    {pieces.map(p => <motion.div key={p.id} initial={{ y: -20, x: `${p.x}vw`, opacity: 1, rotate: 0 }} animate={{ y: '110vh', x: `${p.x + p.drift}vw`, opacity: [1, 1, 0], rotate: p.rotation + 360 }} transition={{ duration: p.duration, delay: p.delay, ease: 'easeIn' }} style={{ position: 'absolute', width: p.size, height: p.size * 0.6, backgroundColor: p.color, borderRadius: 2 }} />)}
+  </div>;
 };
 
 interface ModuleLayoutProps {
@@ -114,7 +92,6 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
   const pickerRef = useRef<HTMLDivElement>(null);
   const isCompletingRef = useRef(false);
   const mainRef = useRef<HTMLElement>(null);
-  const pendingBackRef = useRef(false);
   const unlockedSection = progress.unlockedSection;
 
   // Close picker on outside click
@@ -164,14 +141,7 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
     setTimeout(() => { isCompletingRef.current = false; }, 500);
   };
 
-  const handleConfettiDone = () => {
-    setShowConfetti(false);
-    // If no celebration screen (no categoryColor prop), fall back to old behaviour
-    if (!showCelebration && pendingBackRef.current) {
-      pendingBackRef.current = false;
-      onBack();
-    }
-  };
+  const handleConfettiDone = () => setShowConfetti(false);
 
   const handleCelebrationContinue = () => {
     setShowCelebration(false);
@@ -238,14 +208,14 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
 
   return (
     <div
-      className="min-h-screen bg-[#F8F8F8] dark:bg-zinc-950 text-zinc-900 dark:text-white font-sans flex flex-col md:flex-row overflow-x-hidden transition-colors duration-500"
+      className="product-shell module-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)] font-sans flex flex-col md:flex-row overflow-x-hidden transition-colors duration-500"
       style={{ ['--reading-scale' as string]: String(readingScale), ['--reading-lh' as string]: readingRelaxed ? '2.15' : '1.85' }}
     >
 
       {/* ── Desktop Sidebar (unchanged) ── */}
-      <aside className="hidden md:flex w-80 bg-white dark:bg-zinc-900 border-r border-zinc-200 dark:border-zinc-800 sticky top-0 h-screen z-40 p-8 flex-col">
+      <aside className="hidden md:flex w-80 bg-[var(--surface-paper)] border-r border-[var(--outline-soft)] sticky top-0 h-screen z-40 p-8 flex-col">
         <div className="flex items-center gap-4 mb-12">
-          <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={onBack} className="p-2 rounded-lg transition-colors border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-700">
+          <motion.button whileHover={{ y: -1 }} whileTap={{ x: 1, y: 1 }} onClick={onBack} className="p-2 rounded-lg transition-all border-[1.5px] border-[var(--outline-strong)] bg-[var(--surface-paper)] shadow-[2px_2px_0_0_var(--outline-strong)] active:shadow-none">
             <ArrowLeft size={16} className="text-zinc-700 dark:text-zinc-300" />
           </motion.button>
           <div>
@@ -341,7 +311,7 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
       </aside>
 
       {/* ── Mobile Top Bar ── */}
-      <div className="md:hidden fixed top-0 left-0 right-0 h-14 z-40 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-xl border-b border-zinc-200/50 dark:border-white/[0.06] flex items-center gap-3 px-3" style={{ paddingTop: 'var(--sat, 0px)' }}>
+      <div className="md:hidden fixed top-0 left-0 right-0 h-14 z-40 bg-[var(--surface-paper)] border-b border-[var(--outline-soft)] flex items-center gap-3 px-3" style={{ paddingTop: 'var(--sat, 0px)' }}>
         <button onClick={onBack} className="p-2 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800 shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]">
           <ArrowLeft size={16} className="text-zinc-700 dark:text-zinc-300" />
         </button>
@@ -372,7 +342,7 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
               animate={{ y: 0 }}
               exit={{ y: '100%' }}
               transition={{ type: 'spring', damping: 28, stiffness: 300 }}
-              className="md:hidden fixed bottom-0 left-0 right-0 z-[51] bg-white dark:bg-zinc-900 rounded-t-2xl border-t border-zinc-200 dark:border-zinc-800 max-h-[75vh] overflow-y-auto"
+              className="md:hidden fixed bottom-0 left-0 right-0 z-[51] bg-[var(--surface-paper)] rounded-t-2xl border-t-[1.5px] border-[var(--outline-strong)] max-h-[75vh] overflow-y-auto"
               style={{ paddingBottom: 'var(--sab, 0px)' }}
             >
               {/* Drag handle */}
@@ -431,7 +401,7 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
       </AnimatePresence>
 
       {/* ── Main Content ── */}
-      <main ref={mainRef} className="flex-grow flex flex-col items-center pt-20 md:pt-24 px-6 md:px-16 pb-24 md:pb-0 md:overflow-y-auto md:h-screen bg-[#F8F8F8] dark:bg-zinc-950">
+      <main ref={mainRef} className="flex-grow flex flex-col items-center pt-20 md:pt-24 px-6 md:px-16 pb-24 md:pb-0 md:overflow-y-auto md:h-screen bg-[var(--surface-canvas)]">
         <div className="w-full max-w-3xl">
           <AnimatePresence mode="wait">
             <motion.div
@@ -458,6 +428,7 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
       {references && references.length > 0 && (
         <ReferencesModal open={referencesOpen} onClose={() => setReferencesOpen(false)} references={references} />
       )}
+
 
       {showConfetti && <ConfettiOverlay onDone={handleConfettiDone} />}
 

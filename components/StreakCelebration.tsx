@@ -1,166 +1,52 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
 import React from 'react';
-import { createPortal } from 'react-dom';
-import { AnimatePresence } from 'framer-motion';
-import { MotionButton, MotionDiv } from './Motion';
+import { ArrowRight, Flame } from 'lucide-react';
+import { CelebrationFrame, MilestoneBadge } from './ui/Celebration';
 
 interface StreakCelebrationProps {
   streakCount: number;
   isOpen: boolean;
   onDismiss: () => void;
-  weekDays: boolean[]; // 7 booleans for M-S, true = studied that day
+  weekDays: boolean[];
 }
 
 const MILESTONE_MESSAGES: Record<number, string> = {
   3: "Three days in. You're building something.",
-  7: "A full week. That's not luck \u2014 that's discipline.",
-  14: "Two weeks strong. Most people quit by now.",
-  21: "Three weeks. They say it takes 21 days to build a habit.",
+  7: "A full week. That's not luck — that's discipline.",
+  14: 'Two weeks strong. The routine is beginning to hold.',
+  21: 'Three weeks. Showing up is becoming part of how you work.',
   30: "A month. You're not the same student you were 30 days ago.",
-  50: "Fifty days. This is who you are now.",
-  100: "One hundred days. Extraordinary.",
+  50: 'Fifty days. This is a serious body of work.',
+  100: 'One hundred days. Extraordinary consistency.',
 };
-
-const getMessage = (count: number): string => {
-  return MILESTONE_MESSAGES[count] || `${count} days. Keep the momentum going.`;
-};
-
-const PARTICLE_COLORS = ['#F26B1F', '#4CC9F0', '#6B8F71', '#F59E0B', '#E94560'];
 
 const DAY_LABELS = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
 
-const StreakCelebration: React.FC<StreakCelebrationProps> = ({ streakCount, isOpen, onDismiss, weekDays }) => {
-  // Generate 24 particles that fly outward
-  const particles = Array.from({ length: 24 }, (_, i) => {
-    const angle = (i / 24) * Math.PI * 2;
-    const distance = 150 + Math.random() * 100;
-    const x = Math.cos(angle) * distance;
-    const y = Math.sin(angle) * distance;
-    const size = 4 + Math.random() * 8;
-    const color = PARTICLE_COLORS[Math.floor(Math.random() * PARTICLE_COLORS.length)];
-    const delay = Math.random() * 0.3;
+const StreakCelebration: React.FC<StreakCelebrationProps> = ({ streakCount, isOpen, onDismiss, weekDays }) => (
+  <CelebrationFrame isOpen={isOpen} ariaLabel={`${streakCount}-day streak`} onDismiss={onDismiss} scale="medium">
+    <div className="text-center">
+      <MilestoneBadge><Flame size={12} /> Streak milestone</MilestoneBadge>
+      <div className="mx-auto mt-7 flex h-28 w-28 items-center justify-center rounded-full border-2 border-[#383838] bg-[#FFF0E7] shadow-[5px_5px_0_0_#383838]">
+        <span className="font-serif text-6xl font-semibold tracking-[-0.05em] text-[#F26B1F]">{streakCount}</span>
+      </div>
+      <h1 className="mt-6 font-serif text-3xl font-semibold text-[#1A1A1A]">days, one line of effort.</h1>
+      <p className="mx-auto mt-2 max-w-sm text-sm leading-6 text-[#78716C]">{MILESTONE_MESSAGES[streakCount] ?? `${streakCount} days. Keep the momentum going.`}</p>
 
-    return (
-      <MotionDiv
-        key={i}
-        className="absolute rounded-full"
-        style={{ width: size, height: size, backgroundColor: color, left: '50%', top: '40%' }}
-        initial={{ x: 0, y: 0, opacity: 1, scale: 0 }}
-        animate={{ x, y, opacity: 0, scale: 1 }}
-        transition={{ duration: 0.8, delay, ease: 'easeOut' }}
-      />
-    );
-  });
-
-  return createPortal(
-    <AnimatePresence>
-      {isOpen && (
-        <MotionDiv
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.3 }}
-          className="fixed inset-0 z-[300] flex flex-col items-center justify-center"
-          onClick={onDismiss}
-        >
-          {/* Gradient background */}
-          <div
-            className="absolute inset-0"
-            style={{ background: 'linear-gradient(180deg, rgba(242,107,31,0.08) 0%, rgba(242,107,31,0.15) 100%)', backdropFilter: 'blur(24px)', WebkitBackdropFilter: 'blur(24px)' }}
-          />
-
-          {/* Particle burst */}
-          <div className="absolute inset-0 pointer-events-none overflow-hidden">
-            {particles}
+      <div className="mt-7 grid grid-cols-7 gap-1.5 rounded-2xl border border-[#D8D3CD] bg-white p-3 sm:gap-2">
+        {DAY_LABELS.map((day, index) => (
+          <div key={`${day}-${index}`} className="flex min-w-0 flex-col items-center gap-1.5">
+            <span className={`flex aspect-square w-full max-w-9 items-center justify-center rounded-lg border ${weekDays[index] ? 'border-[#383838] bg-[#F26B1F] text-white' : 'border-[#E4E0DA] bg-[#F4F2EE] text-[#AAA29A]'}`}>
+              {weekDays[index] ? <Flame size={14} /> : null}
+            </span>
+            <span className={`text-[9px] font-bold ${weekDays[index] ? 'text-[#A53E0C]' : 'text-[#AAA29A]'}`}>{day}</span>
           </div>
+        ))}
+      </div>
 
-          {/* Content */}
-          <MotionDiv
-            className="relative z-10 flex flex-col items-center"
-            onClick={(e: React.MouseEvent) => e.stopPropagation()}
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 0.8, opacity: 0 }}
-            transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          >
-            {/* Hero number */}
-            <MotionDiv
-              initial={{ scale: 0.5, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-              style={{ fontSize: 128, fontWeight: 800, color: '#F26B1F', letterSpacing: '-0.05em', lineHeight: 1 }}
-            >
-              {streakCount}
-            </MotionDiv>
-
-            {/* Label */}
-            <MotionDiv
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
-            >
-              <p style={{ fontSize: 24, fontWeight: 600, color: '#1a1a2e' }} className="dark:!text-white">
-                day streak!
-              </p>
-            </MotionDiv>
-
-            {/* Weekly dot tracker */}
-            <MotionDiv
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5 }}
-              className="flex gap-3 mt-8"
-            >
-              {DAY_LABELS.map((day, i) => (
-                <div key={i} className="flex flex-col items-center gap-1">
-                  <div
-                    className="w-8 h-8 rounded-full transition-colors"
-                    style={{
-                      backgroundColor: weekDays[i] ? '#F26B1F' : undefined,
-                    }}
-                    {...(!weekDays[i] ? { className: 'w-8 h-8 rounded-full bg-zinc-200 dark:bg-zinc-700' } : { className: 'w-8 h-8 rounded-full', style: { backgroundColor: '#F26B1F' } })}
-                  />
-                  <span className={`text-xs font-medium ${weekDays[i] ? 'text-[#F26B1F]' : 'text-[#9A9590] dark:text-zinc-500'}`}>{day}</span>
-                </div>
-              ))}
-            </MotionDiv>
-
-            {/* Milestone message */}
-            <MotionDiv
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6 }}
-            >
-              <p className="text-sm mt-6 max-w-xs text-center" style={{ color: '#6b7280' }}>
-                {getMessage(streakCount)}
-              </p>
-            </MotionDiv>
-
-            {/* Continue button */}
-            <MotionDiv
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.7 }}
-            >
-              <MotionButton
-                onClick={onDismiss}
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
-                className="mt-8 px-8 py-3 rounded-full bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-semibold text-sm"
-              >
-                Keep going
-              </MotionButton>
-            </MotionDiv>
-          </MotionDiv>
-        </MotionDiv>
-      )}
-    </AnimatePresence>,
-    document.body
-  );
-};
+      <button onClick={onDismiss} className="mt-7 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl border-2 border-[#1A1A1A] bg-[#F26B1F] px-6 font-bold text-white shadow-[4px_4px_0_0_#1A1A1A] transition-transform hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-none">
+        Keep going <ArrowRight size={18} />
+      </button>
+    </div>
+  </CelebrationFrame>
+);
 
 export default StreakCelebration;

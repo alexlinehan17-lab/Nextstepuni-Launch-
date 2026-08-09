@@ -19,6 +19,8 @@ import { db } from '../firebase';
 import { reportSaveError, logError } from '../utils/logError';
 
 export interface FutureFinderRevampedState {
+  /** Version of the recommendation policy used to create `topMatches`. */
+  rankingVersion?: number;
   length: 'full' | 'quick';
   /** RIASEC item id -> 1..5 (dislike→like). */
   responses: Record<string, number>;

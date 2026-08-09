@@ -16,7 +16,7 @@
 import React, { useMemo, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
-import { ArrowLeft, ArrowRight, Check, AlertTriangle, BookOpenCheck } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Check, BookOpenCheck } from 'lucide-react';
 import { COLORS } from '../../design/tokens';
 import PrimaryActionButton from '../ui/PrimaryActionButton';
 import { useCommandWordReflex } from '../../hooks/useCommandWordReflex';
@@ -31,8 +31,6 @@ const INDIGO_DARK_TEXT = '#3730A3';
 const INDIGO_TINT = '#EEF0FF';
 const HL_BG = '#FDE68A';        // amber-200 highlighter
 const HL_TEXT = '#92400E';      // amber-800
-const AMBER_TINT = '#FFFBEB';   // amber-50 (a tint, not warm cream)
-const AMBER_ICON = '#D97706';   // amber-600
 
 const cardShell =
   'w-full max-w-xl mx-auto rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-6 md:p-7';
@@ -267,21 +265,44 @@ const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[]; st
                   </span>
                 </div>
 
-                {/* What it demands */}
-                <div className="rounded-xl p-4 mb-3" style={{ backgroundColor: INDIGO_TINT }}>
-                  <p className="text-[11px] font-bold uppercase tracking-[0.12em] mb-1.5" style={{ color: INDIGO_DARK_TEXT }}>What “{q.commandWord}” is asking you to do</p>
-                  <p className="text-[14px] leading-relaxed" style={{ color: '#2a2622' }}>{q.demand}</p>
-                </div>
+                {/* One editorial teaching surface. The old version used two
+                    stacked pastel callouts and a stock warning icon, which made
+                    grounded examiner guidance look like generic AI output. */}
+                <section className="mb-4 overflow-hidden rounded-2xl border-[1.5px] border-[var(--outline-strong)] bg-[var(--surface-paper)] shadow-[3px_3px_0_0_var(--outline-strong)]">
+                  <header className="px-5 py-4 border-b border-[var(--outline-soft)]">
+                    <p className="font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-[#F26B1F] mb-1">
+                      Read it like an examiner
+                    </p>
+                    <h3 className="font-serif text-[22px] leading-tight font-semibold text-[var(--ink-primary)]">
+                      “{q.commandWord}” is an instruction, not a label.
+                    </h3>
+                  </header>
 
-                {/* The trap */}
-                <div className="rounded-xl p-4 mb-3" style={{ backgroundColor: AMBER_TINT }}>
-                  <div className="flex items-center gap-2 mb-1.5">
-                    <AlertTriangle size={15} style={{ color: AMBER_ICON }} />
-                    <p className="text-[11px] font-bold uppercase tracking-[0.12em]" style={{ color: '#92400E' }}>The trap</p>
+                  <div className="grid md:grid-cols-2">
+                    <div className="px-5 py-5 md:border-r border-[var(--outline-soft)]">
+                      <div className="flex items-center gap-3 mb-3">
+                        <span className="font-mono text-[11px] font-bold text-[#F26B1F]">01</span>
+                        <span className="h-px w-8 bg-[#F26B1F]" aria-hidden="true" />
+                        <p className="font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--ink-muted)]">The move</p>
+                      </div>
+                      <p className="text-[14px] leading-relaxed text-[var(--ink-primary)]">{q.demand}</p>
+                    </div>
+
+                    <div className="px-5 py-5 border-t md:border-t-0 border-[var(--outline-soft)]">
+                      <div className="flex items-center gap-3 mb-3">
+                        <span className="font-mono text-[11px] font-bold text-[#F26B1F]">02</span>
+                        <span className="h-px w-8 bg-[#F26B1F]" aria-hidden="true" />
+                        <p className="font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--ink-muted)]">Where marks go</p>
+                      </div>
+                      <p className="text-[14px] leading-relaxed text-[var(--ink-primary)]">{q.trap}</p>
+                    </div>
                   </div>
-                  <p className="text-[14px] leading-relaxed mb-2" style={{ color: '#3a3530' }}>{q.trap}</p>
-                  <p className="text-[11px]" style={{ color: '#9e9186' }}>{q.source} · ~{q.marks} marks at stake</p>
-                </div>
+
+                  <footer className="px-5 py-3 border-t border-[var(--outline-soft)] flex flex-wrap items-center justify-between gap-2">
+                    <p className="text-[11px] leading-relaxed text-[var(--ink-muted)]">{q.source}</p>
+                    <p className="font-mono text-[10px] font-bold uppercase tracking-[0.12em] text-[#F26B1F]">About {q.marks} marks in play</p>
+                  </footer>
+                </section>
 
                 <div className="flex justify-end">
                   <PrimaryActionButton label={qIndex + 1 < queue.length ? 'Next question' : 'Finish'} icon={qIndex + 1 < queue.length ? ArrowRight : BookOpenCheck} onClick={next} />

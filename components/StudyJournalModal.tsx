@@ -71,7 +71,7 @@ const StudyJournalModal: React.FC<StudyJournalModalProps> = ({ isOpen, onClose, 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 bg-black/60 flex items-center justify-center z-[200] p-4"
+          className="fixed inset-0 bg-[#1A1A1A]/55 flex items-end sm:items-center justify-center z-[200] p-0 sm:p-4"
           onClick={onClose}
         >
           <MotionDiv
@@ -79,17 +79,17 @@ const StudyJournalModal: React.FC<StudyJournalModalProps> = ({ isOpen, onClose, 
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.96, opacity: 0 }}
             transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="relative bg-white dark:bg-zinc-900 border border-zinc-200/50 dark:border-white/[0.08] rounded-2xl w-full max-w-lg shadow-[0_24px_64px_rgba(0,0,0,0.12)] dark:shadow-[0_24px_64px_rgba(0,0,0,0.5)] overflow-hidden max-h-[85vh] flex flex-col"
+            className="relative bg-[#FAFBF6] dark:bg-zinc-900 border-[1.5px] border-[#383838] dark:border-zinc-600 rounded-t-[24px] sm:rounded-[24px] w-full max-w-lg shadow-[5px_5px_0_0_#383838] overflow-hidden max-h-[92dvh] flex flex-col"
             onClick={(e: React.MouseEvent) => e.stopPropagation()}
           >
             {/* Header */}
-            <div className="flex items-center justify-between p-6 pb-4 flex-shrink-0">
+            <div className="flex items-center justify-between p-6 pb-4 flex-shrink-0 border-b border-[#DDD8D2] dark:border-zinc-700">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-lg bg-indigo-100 dark:bg-indigo-900/40 flex items-center justify-center">
                   <BookMarked size={20} className="text-indigo-600 dark:text-indigo-400" />
                 </div>
                 <div>
-                  <h2 className="font-sans text-xl font-semibold text-zinc-900 dark:text-white tracking-tight">
+                  <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white tracking-tight">
                     Study Journal
                   </h2>
                   <p className="text-[10px] text-zinc-400 dark:text-zinc-500 font-medium">
@@ -100,7 +100,7 @@ const StudyJournalModal: React.FC<StudyJournalModalProps> = ({ isOpen, onClose, 
               <button
                 onClick={onClose}
                 aria-label="Close"
-                className="text-zinc-400 dark:text-white/25 hover:text-zinc-600 dark:hover:text-white/50 transition-colors"
+                className="flex h-9 w-9 items-center justify-center rounded-xl border border-[#CFC9C2] bg-white text-[#6F6861] transition-colors hover:border-[#383838] hover:text-[#1A1A1A] dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"
               >
                 <X size={18} />
               </button>
@@ -138,7 +138,7 @@ const StudyJournalModal: React.FC<StudyJournalModalProps> = ({ isOpen, onClose, 
             )}
 
             {/* Content */}
-            <div className="flex-1 overflow-y-auto px-6 pb-6">
+            <div className="flex-1 overflow-y-auto px-6 pt-4 pb-6">
               {grouped.length === 0 ? (
                 <div className="text-center py-16">
                   <BookMarked size={32} className="text-zinc-300 dark:text-zinc-600 mx-auto mb-3" />

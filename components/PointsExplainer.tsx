@@ -15,7 +15,7 @@ import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { useModal } from '../hooks/useModal';
-import { BookOpen, Timer, Trophy, Gem, MapPin, SkipForward, CalendarOff, X, ArrowRight, Sparkles, type LucideIcon } from 'lucide-react';
+import { BookOpen, Timer, Trophy, Gem, MapPin, X, ArrowRight, Sparkles, type LucideIcon } from 'lucide-react';
 import { COLORS } from '../design/tokens';
 
 interface PointsExplainerProps {
@@ -51,8 +51,6 @@ interface SpendItem {
 
 const SPEND_ITEMS: SpendItem[] = [
   { icon: MapPin, label: 'Island shop', cost: 'Varies', desc: 'Build your island' },
-  { icon: SkipForward, label: 'Skip a block', cost: '20 pts', desc: 'Skip one study session' },
-  { icon: CalendarOff, label: 'Rest day pass', cost: '60 pts', desc: 'Day off, streak safe' },
 ];
 
 // Tiny painted-blob + ink-icon. blob fill = accent-tint var so it reads

@@ -66,8 +66,8 @@ export const REFLECTION_TIER_POINTS: Record<ReflectionQuality['tier'], number> =
 };
 
 // ── Points for each mode ──
-export const QUICK_DEBRIEF_POINTS = 50;
-export const FULL_REFLECTION_POINTS = 150;
+export const QUICK_DEBRIEF_POINTS = 10;
+export const FULL_REFLECTION_POINTS = 20;
 
 // ─── Rotating Prompts ───────────────────────────────────────────────────────
 
@@ -167,21 +167,21 @@ const ReflectionModal: React.FC<ReflectionModalProps> = ({
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 bg-black/60 flex items-center justify-center z-[200] p-4"
+          className="fixed inset-0 bg-[#1A1A1A]/55 flex items-end sm:items-center justify-center z-[200] p-0 sm:p-4"
           onClick={onCancel}
         >
           <MotionDiv
             initial={{ scale: 0.96, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.96, opacity: 0 }}
-            transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="relative bg-white dark:bg-zinc-900 border border-zinc-200/50 dark:border-white/[0.08] rounded-2xl w-full max-w-md shadow-[0_24px_64px_rgba(0,0,0,0.12)] dark:shadow-[0_24px_64px_rgba(0,0,0,0.5)] overflow-hidden max-h-[90vh] overflow-y-auto"
+            transition={{ type: 'spring', stiffness: 280, damping: 28, mass: 0.75 }}
+            className="relative bg-[#FAFBF6] dark:bg-zinc-900 border-[1.5px] border-[#383838] dark:border-zinc-600 rounded-t-[24px] sm:rounded-[24px] w-full max-w-md shadow-[5px_5px_0_0_#383838] overflow-hidden max-h-[92dvh] overflow-y-auto"
             onClick={(e: React.MouseEvent) => e.stopPropagation()}
           >
             {/* Header */}
-            <div className="flex items-center justify-between p-6 pb-0">
+            <div className="flex items-center justify-between p-6 pb-4 border-b border-[#DDD8D2] dark:border-zinc-700">
               <div>
-                <h2 className="font-sans text-xl font-semibold text-zinc-900 dark:text-white tracking-tight">
+                <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white tracking-tight">
                   {isQuick ? 'Quick Debrief' : 'Write a Reflection'}
                 </h2>
                 <p className="text-xs text-zinc-400 dark:text-zinc-500 mt-0.5">
@@ -191,7 +191,7 @@ const ReflectionModal: React.FC<ReflectionModalProps> = ({
               <button
                 onClick={onCancel}
                 aria-label="Close"
-                className="text-zinc-400 dark:text-white/25 hover:text-zinc-600 dark:hover:text-white/50 transition-colors"
+                className="flex h-9 w-9 items-center justify-center rounded-xl border border-[#CFC9C2] bg-white text-[#6F6861] transition-colors hover:border-[#383838] hover:text-[#1A1A1A] dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"
               >
                 <X size={18} />
               </button>
@@ -218,21 +218,32 @@ const ReflectionModal: React.FC<ReflectionModalProps> = ({
                   {CONFIDENCE_OPTIONS.map(option => {
                     const isSelected = confidence === option.value;
                     return (
-                      <button
+                      <MotionButton
                         key={option.value}
                         onClick={() => setConfidence(option.value)}
-                        className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl text-left transition-all ${isSelected ? '' : 'bg-[#FEFDFB] dark:bg-zinc-800 border border-[#EDEBE8] dark:border-zinc-700'}`}
-                        style={isSelected ? {
-                          backgroundColor: `${option.color}12`,
-                          border: `2px solid ${option.color}`,
-                        } : undefined}
+                        aria-pressed={isSelected}
+                        layout
+                        animate={{ y: 0, scale: 1 }}
+                        whileHover={{ y: -1 }}
+                        whileTap={{ scale: 0.985, x: isSelected ? 3 : 0, y: isSelected ? 3 : 0 }}
+                        transition={{ type: 'spring', stiffness: 360, damping: 30, mass: 0.65 }}
+                        className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl border-2 text-left transition-[background-color,border-color,color,box-shadow] duration-200 ${
+                          isSelected
+                            ? 'border-[#1A1A1A] bg-[#F26B1F] text-white shadow-[4px_4px_0_0_#1A1A1A]'
+                            : 'border-[#E5E1DB] bg-white text-[#1C1917] hover:border-[#1A1A1A] dark:border-zinc-700 dark:bg-zinc-800 dark:text-white'
+                        }`}
                       >
-                        <div className="w-3 h-3 rounded-full shrink-0" style={{ backgroundColor: option.color }} />
+                        <div
+                          className="w-3 h-3 rounded-full shrink-0"
+                          style={isSelected
+                            ? { backgroundColor: 'transparent', boxShadow: 'inset 0 0 0 2px #FFFFFF' }
+                            : { backgroundColor: option.color }}
+                        />
                         <div className="flex-1 min-w-0">
-                          <p className={`text-sm font-semibold ${isSelected ? '' : 'text-[#1C1917] dark:text-white'}`} style={isSelected ? { color: option.color } : undefined}>{option.label}</p>
-                          <p className={`text-[11px] ${isSelected ? '' : 'text-[#A8A29E] dark:text-zinc-500'}`} style={isSelected ? { color: option.color } : undefined}>{option.desc}</p>
+                          <p className="text-sm font-semibold">{option.label}</p>
+                          <p className={`text-[11px] ${isSelected ? 'text-white/80' : 'text-[#8D857E] dark:text-zinc-400'}`}>{option.desc}</p>
                         </div>
-                      </button>
+                      </MotionButton>
                     );
                   })}
                 </div>

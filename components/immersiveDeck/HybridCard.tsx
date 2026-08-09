@@ -15,19 +15,19 @@ import { type LucideIcon } from 'lucide-react';
 import { type ColorWorld } from './colorWorlds';
 
 export const SERIF = "'Source Serif 4', serif";
-export const INK = '#1a1a1a';
-export const BODY = '#3a3530';
-export const MUTED = '#7a7068';
-export const LABEL = '#9e9186';
-export const HAIRLINE = '#ece9e4';
-export const CARD_SHADOW = '4px 5px 0 0 #1a1a1a';
+export const INK = 'var(--deck-ink)';
+export const BODY = 'var(--deck-body)';
+export const MUTED = 'var(--deck-muted)';
+export const LABEL = 'var(--deck-label)';
+export const HAIRLINE = 'var(--deck-hairline)';
+export const CARD_SHADOW = 'var(--deck-shadow)';
 /** App accent (orange) for primary CTAs. */
 export const ACCENT = '#F26B1F';
 export const ACCENT_DARK = '#B54D14';
 
 /** White card shell — bold border + chunky offset shadow, on the light canvas. */
 export const HybridCard: React.FC<{ children: React.ReactNode; className?: string }> = ({ children, className }) => (
-  <div className={`relative rounded-[24px] border-2 overflow-hidden bg-white ${className ?? ''}`} style={{ borderColor: INK, boxShadow: CARD_SHADOW }}>
+  <div className={`immersive-deck-theme relative rounded-[24px] border-2 overflow-hidden bg-[var(--deck-paper)] ${className ?? ''}`} style={{ borderColor: INK, boxShadow: CARD_SHADOW }}>
     {children}
   </div>
 );
@@ -81,7 +81,7 @@ export const Band: React.FC<{
   subtitle?: string;
   right?: React.ReactNode;
 }> = ({ wd, icon, initials, image, eyebrow, title, subtitle, right }) => (
-  <div className="relative px-6 pt-5 pb-4 bg-white" style={{ borderBottom: `1px solid ${HAIRLINE}` }}>
+  <div className="relative px-6 pt-5 pb-4 bg-[var(--deck-paper)]" style={{ borderBottom: `1px solid ${HAIRLINE}` }}>
     <div className="flex items-start justify-between gap-3">
       <div className="flex items-center gap-3 min-w-0">
         <BlobIcon wd={wd} icon={icon} initials={initials} image={image} size={46} seed={title ?? initials} />
@@ -105,7 +105,7 @@ export const OrangeBtn: React.FC<{ label: string; icon?: LucideIcon; onClick: ()
 
 /** Neutral / secondary action — white pill, muted border. */
 export const NeutralBtn: React.FC<{ label: string; icon?: LucideIcon; onClick: () => void }> = ({ label, icon: Icon, onClick }) => (
-  <button onClick={onClick} className="inline-flex items-center gap-1.5 px-5 py-3 rounded-full text-[13.5px] font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F26B1F]" style={{ backgroundColor: '#fff', border: '2px solid #d0cdc8', color: MUTED }}>
+  <button onClick={onClick} className="inline-flex items-center gap-1.5 px-5 py-3 rounded-xl text-[13.5px] font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F26B1F]" style={{ backgroundColor: 'var(--deck-paper)', border: '2px solid var(--deck-hairline)', color: MUTED }}>
     {Icon && <Icon size={15} />} {label}
   </button>
 );

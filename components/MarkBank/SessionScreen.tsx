@@ -39,25 +39,21 @@ import { AnimatePresence, MotionDiv, MotionSpan, useReducedMotion } from '../Mot
 import { rowId, type LabelKey, type MarkRow, type SecCard } from '../../types/markBank';
 import type { MarkBankGrade } from './scheduler';
 import { figureUrl } from '../../utils/figureUrl';
+import { getSubjectHex } from '../../utils/subjectColors';
 
 const EASE = [0.16, 1, 0.3, 1] as number[];
 
-const INK = '#1a1a1a';
-const INK_2 = '#3a3530';
-const MUTED = '#7a7068';
-const LABEL = '#9e9186';
-const MUTED_BORDER = '#d0cdc8';
-const PLATE = '#F0FAF8';
-const SUCCESS = '#3A8D5F';
-const SUCCESS_TINT = '#E8F2EC';
-const SUCCESS_TEXT = '#1F5F3E';
+const INK = 'var(--mb-ink)';
+const INK_2 = 'var(--mb-ink-2)';
+const MUTED = 'var(--mb-muted)';
+const LABEL = 'var(--mb-label)';
+const MUTED_BORDER = 'var(--mb-border)';
+const PLATE = 'var(--mb-plate)';
+const SUCCESS = 'var(--mb-success)';
+const SUCCESS_TINT = 'var(--mb-success-tint)';
+const SUCCESS_TEXT = 'var(--mb-success-text)';
 /** Accent means "this is the action / you are here". Never "correct". */
 const ACCENT = '#F26B1F';
-/** The accent mixed ~55/45 with white: the offset sheets behind the question
-    card. A quiet tint, not full accent — a solid #F26B1F band down two sides
-    of a white card on this light page out-shouts the question text itself. */
-const ACCENT_SHEET = '#F8AE84';
-
 /** How far the frame layers sit off the card, and the stroke's weight. */
 const FRAME_OFFSET = 8;
 const STROKE = 2;
@@ -76,9 +72,9 @@ const ACCENT_BAR: React.CSSProperties = {
  */
 type Frame = 'stack' | 'registration';
 const FRAME = 'registration' as Frame;
-const PAPER = '#f0f0f0';
+const PAPER = 'var(--mb-canvas)';
 /** A rule, not a fill: enough to bound a figure without adding a surface. */
-const HAIRLINE_2 = '#e0ddd8';
+const HAIRLINE_2 = 'var(--mb-border)';
 /** One work surface for the whole tool: 620 question + 32 gutter + 440 scheme. */
 const SURFACE = 1092;
 const QUESTION_W = 620;
@@ -275,12 +271,12 @@ const Tally: React.FC<{ value: number; reduced: boolean }> = ({ value, reduced }
  * of everything beside it.
  */
 const ProgressRail: React.FC<{ total: number; done: number; current: number }> = ({ total, done, current }) => (
-  <div style={{ display: 'flex', gap: 2, width: '100%' }} aria-hidden="true">
+  <div style={{ display: 'flex', gap: 4, width: '100%', padding: '0 16px 10px', maxWidth: SURFACE, margin: '0 auto' }} aria-hidden="true">
     {Array.from({ length: total }, (_, i) => (
       <div
         key={i}
         style={{
-          height: 6, flex: 1,
+          height: 4, flex: 1, borderRadius: 999,
           background: i < done ? INK : i === current ? ACCENT : '#d6d2cc',
           transition: 'background 240ms',
         }}
@@ -331,7 +327,7 @@ const MarkRowView: React.FC<{
         style={{
           marginBottom: 8, padding: '12px 13px', borderRadius: 12,
           border: `1.5px solid ${chosen ? SUCCESS : MUTED_BORDER}`,
-          background: chosen ? SUCCESS_TINT : '#FFFFFF',
+          background: chosen ? SUCCESS_TINT : 'var(--mb-paper)',
         }}
       >
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 10, marginBottom: 9 }}>
@@ -372,7 +368,7 @@ const MarkRowView: React.FC<{
                   gridTemplateColumns: '16px 1fr', gap: 8, alignItems: 'start',
                   padding: '7px 9px', borderRadius: 9,
                   border: `1px solid ${on ? SUCCESS : '#e4e0da'}`,
-                  background: on ? '#FFFFFF' : 'transparent',
+                  background: on ? 'var(--mb-paper)' : 'transparent',
                   cursor: disabled ? 'not-allowed' : 'pointer',
                   opacity: disabled ? 0.45 : 1,
                   font: `500 12.5px/1.4 ${SANS}`, color: on ? SUCCESS_TEXT : INK_2,
@@ -442,7 +438,7 @@ const MarkRowView: React.FC<{
           gridTemplateColumns: '20px 1fr auto', gap: 10, alignItems: 'start',
           padding: '11px 12px', borderRadius: 12,
           border: `1.5px solid ${claimed ? SUCCESS : MUTED_BORDER}`,
-          background: claimed ? SUCCESS_TINT : '#FFFFFF',
+          background: claimed ? SUCCESS_TINT : 'var(--mb-paper)',
           cursor: blocked ? 'not-allowed' : 'pointer',
           opacity: blocked ? 0.5 : 1,
           font: `500 13.5px/1.42 ${SANS}`, color: INK_2,
@@ -562,7 +558,7 @@ const LabelKeyPanel: React.FC<{ keys: LabelKey[] }> = ({ keys }) => {
         <span
           key={k.letter}
           style={{
-            font: `500 12px/1.5 ${SANS}`, background: '#FFFFFF', borderRadius: 6,
+            font: `500 12px/1.5 ${SANS}`, background: 'var(--mb-paper)', borderRadius: 6,
             padding: '3px 9px', color: MUTED,
           }}
         >
@@ -742,6 +738,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const [picks, setPicks] = useState<Record<string, number[]>>({});
   const [results, setResults] = useState<SessionCardResult[]>([]);
   const [whisper, setWhisper] = useState<string | null>(null);
+  const [confirmExit, setConfirmExit] = useState(false);
   const byId = useMemo(() => new Map(cards.map(c => [c.id, c])), [cards]);
 
   const card = byId.get(queue[position]);
@@ -909,6 +906,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const labelKey = card.kind === 'diagram' ? card.labelKey : undefined;
 
   const banked = results.reduce((n, r) => n + r.marksClaimed, 0);
+  const subjectColour = getSubjectHex(subjectLabel);
 
   /* PORTALLED TO THE BODY, and that is load-bearing rather than tidiness. The
      tool renders inside `<main class="relative z-10">`, which opens a stacking
@@ -927,7 +925,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
        fade whose failure mode is an invisible tool is not worth having; the
        transitions that earn their place are inside, where a stall costs one card
        rather than everything. */
-    <div style={{
+    <div className="mark-bank-theme" style={{
       /* Above the app's own z-100 chrome overlay. During a review the points
          chip and notification bell are exactly what should step aside — and the
          points chip is doubly wrong here, since Mark Bank is deliberately exempt
@@ -941,18 +939,19 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
           by a declared edge rather than adrift in a wide window. */}
       <div style={{
         position: 'sticky', top: 0, zIndex: 3,
-        background: '#FFFFFF', borderBottom: `2px solid ${INK}`,
+        background: 'var(--mb-paper)', borderBottom: `1px solid ${HAIRLINE_2}`,
       }}>
         <div style={{
           maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto', padding: '0 16px',
-          height: 56, display: 'flex', alignItems: 'center', gap: 16,
+          height: 58, display: 'flex', alignItems: 'center', gap: 14,
         }}>
           <button
-            type="button" onClick={onExit}
+            type="button" onClick={() => setConfirmExit(true)}
             style={{
               display: 'flex', alignItems: 'center', gap: 6,
-              background: 'none', border: 'none', padding: '4px 2px', cursor: 'pointer',
-              color: INK, font: `600 13px/1.5 ${SANS}`,
+              background: 'var(--mb-raised)', border: `1px solid ${HAIRLINE_2}`, borderRadius: 10,
+              padding: '7px 10px', cursor: 'pointer',
+              color: INK, font: `600 12.5px/1.5 ${SANS}`,
             }}
           >
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -966,24 +965,25 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             // 1.5, not 1: a line box the same height as the type clips every
             // descender, and `overflow: hidden` — needed for the ellipsis —
             // turns that clip into a straight cut through the g's.
-            font: `400 13px/1.5 ${SANS}`, color: MUTED,
+            font: `500 13px/1.5 ${SANS}`, color: INK_2,
             overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap',
             flexShrink: 0,
           }}>
-            {subjectLabel} · {card.level === 'higher' ? 'Higher' : 'Ordinary'}
+            <span aria-hidden="true" style={{ display: 'inline-block', width: 7, height: 7, borderRadius: '50%', background: subjectColour, marginRight: 7 }} />
+            {subjectLabel} · {card.level === 'higher' ? 'HL' : 'OL'}
           </span>
 
           <span style={{ flex: 1 }} />
 
           <span style={{
-            font: `700 12.5px/1.5 ${MONO}`, color: MUTED,
+            font: `700 11.5px/1.5 ${MONO}`, color: MUTED,
             fontVariantNumeric: 'tabular-nums', whiteSpace: 'nowrap',
           }}>
             Card {Math.min(distinctDone + 1, cards.length)} of {cards.length}
           </span>
           {banked > 0 && (
             <span style={{
-              font: `700 12.5px/1.5 ${MONO}`, color: SUCCESS_TEXT,
+              font: `700 11.5px/1.5 ${MONO}`, color: SUCCESS_TEXT,
               fontVariantNumeric: 'tabular-nums', whiteSpace: 'nowrap',
             }}>
               {banked} banked
@@ -1009,7 +1009,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         key={card.id}
         className="mb-card-in"
         style={{
-          maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto', padding: '34px 16px 0',
+          maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto', padding: '38px 16px 0',
           display: 'flex', alignItems: 'flex-start',
           gap: wide ? 32 : 0, flexDirection: wide ? 'row' : 'column',
         }}
@@ -1050,15 +1050,15 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             aria-hidden
             style={{
               position: 'absolute', inset: '8px -8px -8px 8px',
-              background: ACCENT_SHEET, pointerEvents: 'none',
+              background: 'transparent', pointerEvents: 'none',
             }}
           />
           {FRAME === 'stack' ? (
             <div
               aria-hidden
               style={{
-                position: 'absolute', inset: '-8px 8px 8px -8px',
-                background: ACCENT_SHEET, pointerEvents: 'none',
+                  position: 'absolute', inset: '-8px 8px 8px -8px',
+                  background: 'transparent', pointerEvents: 'none',
               }}
             />
           ) : (
@@ -1084,6 +1084,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                 aria-hidden
                 style={{
                   ...ACCENT_BAR,
+                  background: 'transparent',
                   top: -FRAME_OFFSET, left: -FRAME_OFFSET, right: 0, height: STROKE,
                 }}
               />
@@ -1091,6 +1092,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                 aria-hidden
                 style={{
                   ...ACCENT_BAR,
+                  background: 'transparent',
                   top: -FRAME_OFFSET, right: 0, width: STROKE, height: FRAME_OFFSET,
                 }}
               />
@@ -1098,6 +1100,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                 aria-hidden
                 style={{
                   ...ACCENT_BAR,
+                  background: 'transparent',
                   top: -FRAME_OFFSET, left: -FRAME_OFFSET, bottom: 0, width: STROKE,
                 }}
               />
@@ -1105,6 +1108,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                 aria-hidden
                 style={{
                   ...ACCENT_BAR,
+                  background: 'transparent',
                   bottom: 0, left: -FRAME_OFFSET, width: FRAME_OFFSET, height: STROKE,
                 }}
               />
@@ -1115,7 +1119,9 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
           transition={{ duration: 0.26, ease: EASE }}
           style={{
             position: 'relative',
-            background: '#FFFFFF', overflow: 'hidden', border: `2px solid ${INK}`,
+            background: 'var(--mb-paper)', overflow: 'hidden', border: `1.5px solid ${MUTED_BORDER}`,
+            borderRadius: 16,
+            boxShadow: '0 12px 28px rgba(38, 32, 27, .055)',
           }}
         >
           <div style={{ padding: '16px 18px 18px' }}>
@@ -1177,7 +1183,10 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
              single card; `layout` eases that instead of snapping to the new size. */
           layout={reduced ? false : true}
           transition={{ duration: 0.26, ease: EASE }}
-          style={{ background: '#FFFFFF', borderRadius: 18, overflow: 'hidden', border: `2px solid ${INK}` }}
+          style={{
+            background: 'var(--mb-paper)', borderRadius: 16, overflow: 'hidden',
+            border: '1.5px solid #383838', boxShadow: '0 12px 28px rgba(38, 32, 27, .045)',
+          }}
         >
           {!revealed && (
             <div style={{ padding: '16px 18px 18px' }}>
@@ -1288,9 +1297,10 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
           The whisper STACKS above the action rather than replacing it — an
           earlier arrangement suppressed the reveal button for the 1.1s the
           whisper was on screen, so the next card briefly had no way in. */}
-      <div style={{
+      <div className="mb-session-rail" style={{
         position: 'fixed', left: 0, right: 0, bottom: 0, zIndex: 2,
-        background: '#FFFFFF', borderTop: `2px solid ${INK}`,
+        background: '#FFFFFF', borderTop: `1px solid ${HAIRLINE_2}`,
+        boxShadow: '0 -10px 30px rgba(38, 32, 27, .045)',
       }}>
         {/* A plain element with a CSS fade, for the same reason as the card: an
             animated HEIGHT that stalls leaves the sentence sliced in half by the
@@ -1322,9 +1332,9 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                 // just graded does not hang over the one now in front of them.
                 onClick={() => { setWhisper(null); setRevealed(true); }}
                 style={{
-                  width: '100%', padding: '15px 18px', borderRadius: 100,
+                  width: '100%', padding: '15px 18px', borderRadius: 12,
                   background: ACCENT, color: '#FFFFFF', border: 'none',
-                  borderBottom: '3px solid #B54D14', boxShadow: '0 4px 0 #B54D14',
+                  boxShadow: '0 5px 14px rgba(181,77,20,.22)',
                   font: `650 15px/1 ${SANS}`, cursor: 'pointer',
                 }}
               >
@@ -1397,14 +1407,15 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                           type="button"
                           onClick={() => commit(g)}
                           data-suggested={isSuggested || undefined}
+                          className="mb-grade-button"
                           style={{
-                            padding: '12px 4px', borderRadius: 14, cursor: 'pointer',
+                            padding: '12px 4px', borderRadius: 11, cursor: 'pointer',
                             background: '#FFFFFF', color: INK,
-                            border: `1.5px solid ${INK}`,
+                            border: `${isSuggested ? 2 : 1}px solid ${isSuggested ? INK : MUTED_BORDER}`,
                             // The suggestion is physical, never chromatic: orange
                             // must not come to mean "correct".
-                            boxShadow: isSuggested ? `0 4px 0 0 ${INK}` : 'none',
-                            transform: isSuggested ? 'translateY(-2px)' : 'none',
+                            boxShadow: isSuggested ? `0 3px 0 0 ${INK}` : 'none',
+                            transform: isSuggested ? 'translateY(-1px)' : 'none',
                             font: `650 13.5px/1.2 ${SANS}`,
                           }}
                         >
@@ -1420,6 +1431,34 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         </div>
       )}
       </div>
+
+      {confirmExit && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="mark-bank-exit-title"
+          style={{
+            position: 'fixed', inset: 0, zIndex: 20, display: 'flex', alignItems: 'center', justifyContent: 'center',
+            padding: 20, background: 'rgba(26,26,26,.42)',
+          }}
+        >
+          <div style={{ width: '100%', maxWidth: 420, padding: '22px', borderRadius: 16, border: `1.5px solid ${MUTED_BORDER}`, background: 'var(--mb-paper)', boxShadow: 'var(--mb-shadow)' }}>
+            <span style={{ font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.12em', textTransform: 'uppercase', color: LABEL }}>Leave session?</span>
+            <h2 id="mark-bank-exit-title" style={{ margin: '6px 0 7px', font: `700 23px/1.2 ${SERIF}`, color: INK }}>Your completed cards are safe.</h2>
+            <p style={{ margin: '0 0 18px', font: `400 13.5px/1.55 ${SANS}`, color: MUTED }}>
+              You have finished {distinctDone} of {cards.length}. This card will stay ungraded and return next time.
+            </p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 9 }}>
+              <button type="button" autoFocus onClick={() => setConfirmExit(false)} style={{ padding: '12px 16px', borderRadius: 11, border: '2px solid #1A1A1A', background: '#F26B1F', color: '#FFFFFF', boxShadow: '3px 3px 0 #1A1A1A', font: `650 13.5px/1 ${SANS}`, cursor: 'pointer' }}>
+                Keep reviewing
+              </button>
+              <button type="button" onClick={onExit} style={{ padding: '11px 16px', borderRadius: 11, border: `1px solid ${MUTED_BORDER}`, background: 'var(--mb-raised)', color: INK_2, font: `600 13px/1 ${SANS}`, cursor: 'pointer' }}>
+                Leave session
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>,
     document.body,
   );

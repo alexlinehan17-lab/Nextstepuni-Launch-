@@ -22,6 +22,7 @@ import { STRATEGY_REGISTRY } from '../utils/strategyRegistry';
 import { type WeeklyChallengeState } from '../hooks/useWeeklyChallenge';
 import { ToolHeader } from './ToolHeader';
 import { COLORS } from '../design/tokens';
+import { getNorthStarDisplayText, hasStudentAuthoredNorthStar } from '../services/directionProfile';
 
 // ─── Config ─────────────────────────────────────────────────
 
@@ -59,6 +60,7 @@ interface TrainingHubProps {
   northStar: NorthStar | null;
   onBack: () => void;
   onOpenJourney: () => void;
+  onOpenDirection?: () => void;
   userProgress: UserProgress;
   allCourses: CourseData[];
   strategyMastery?: StrategyMasteryMap;
@@ -71,7 +73,7 @@ interface TrainingHubProps {
 }
 
 const TrainingHub: React.FC<TrainingHubProps> = ({
-  gamificationState, streak, pointsBalance: _pointsBalance, northStar, onBack, onOpenJourney,
+  gamificationState, streak, pointsBalance: _pointsBalance, northStar, onBack, onOpenJourney, onOpenDirection,
   userProgress, allCourses, strategyMastery, weeklyChallenge, pointsReload, onGoToStudy, uid: _uid,
 }) => {
   const { currentRank, nextRank, rankProgress, totalPointsEarned, unlockedAchievements, weeklyGoalProgress, weekStartDate: _weekStartDate, personalBests } = gamificationState;
@@ -96,7 +98,7 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
       <div className="px-6 pt-5">
         <button
           onClick={onBack}
-          className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-[12px] font-semibold text-[#1A1A1A] dark:text-white border border-[#EDEBE8] dark:border-zinc-700 hover:bg-white/60 dark:hover:bg-zinc-900 transition-colors"
+          className="inline-flex items-center gap-2 px-3 py-2 rounded-xl text-[12px] font-semibold text-[#1A1A1A] dark:text-white border-[1.5px] border-[#383838] dark:border-zinc-600 bg-[#FAFBF6] dark:bg-zinc-900 shadow-[2px_2px_0_0_#383838] hover:-translate-y-0.5 active:translate-x-0.5 active:translate-y-0.5 active:shadow-none transition-all"
         >
           <ArrowLeft size={14} />
           Back
@@ -439,36 +441,40 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
           <MotionDiv {...stagger(6)} className="mt-10">
             <div className="rounded-2xl bg-white dark:bg-zinc-900 p-6 md:p-8 border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46]">
               <div className="flex flex-col items-center text-center">
-                {/* Painted blob compass — same recipe as AchievementGallery,
-                    rank-colour fills the blob + ink so the card still
-                    reads as "your" North Star at your current stage. */}
+                {/* A single hand-drawn object over a painted blob, matching the
+                    product's illustrative icon family. The orange north needle
+                    carries the brand accent; rank colour belongs in data, not
+                    in the identity of this card. */}
                 <div className="relative w-16 h-16 mb-4 shrink-0">
                   <svg viewBox="0 0 64 64" className="absolute inset-0 w-full h-full" aria-hidden="true">
                     <path
                       d="M 38 4 Q 12 6 6 28 Q 2 50 22 56 Q 50 62 60 36 Q 64 12 48 4 Q 42 2 38 4 Z"
-                      fill={`${currentRank.colorHex}33`}
+                      fill="#D9D4F6"
                     />
                   </svg>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <Compass size={28} color={currentRank.colorHex} />
-                  </div>
+                  <img
+                    src="/assets/training/north-star.png"
+                    alt=""
+                    aria-hidden="true"
+                    className="pointer-events-none absolute left-1/2 top-1/2 h-[70px] w-[70px] max-w-none -translate-x-1/2 -translate-y-1/2 object-contain"
+                  />
                 </div>
 
                 <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '10px', fontWeight: 700, letterSpacing: '0.18em', color: 'var(--text-label)', textTransform: 'uppercase', marginBottom: '10px' }}>
                   Your North Star
                 </p>
 
-                <p style={{ fontFamily: "'Source Serif 4', serif", fontSize: '20px', fontStyle: 'italic', lineHeight: 1.45, color: 'var(--text-primary)', maxWidth: 460 }}>
-                  &ldquo;{northStar.statement}&rdquo;
+                <p style={{ fontFamily: "'Source Serif 4', serif", fontSize: '20px', fontStyle: hasStudentAuthoredNorthStar(northStar) ? 'italic' : 'normal', lineHeight: 1.45, color: 'var(--text-primary)', maxWidth: 460 }}>
+                  {hasStudentAuthoredNorthStar(northStar) ? `“${getNorthStarDisplayText(northStar)}”` : getNorthStarDisplayText(northStar)}
                 </p>
 
                 {/* Chunky-shadow accent button — same press feel as the
                     year-bump CTA. */}
                 <button
-                  onClick={onOpenJourney}
+                  onClick={onOpenDirection ?? onOpenJourney}
                   className="mt-6 inline-flex items-center gap-2 px-5 py-2.5 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-[#FDF8F0] font-sans font-bold text-sm shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] transition-all duration-150"
                 >
-                  My Journey
+                  My Direction
                   <ArrowRight size={14} />
                 </button>
               </div>

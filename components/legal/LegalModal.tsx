@@ -57,55 +57,82 @@ export const LegalModal: React.FC<LegalModalProps> = ({ doc, onClose }) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="fixed inset-0 z-[300] flex items-end sm:items-center justify-center bg-black/50 backdrop-blur-sm p-0 sm:p-4"
+        className="fixed inset-0 z-[300] flex items-end justify-center bg-[#1A1A1A]/55 p-0 sm:items-center sm:p-6"
         onClick={onClose}
       >
         <MotionDiv
           key="legal-card"
-          initial={{ opacity: 0, y: 24 }}
+          initial={{ opacity: 0, y: 28, scale: 0.985 }}
           animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 24 }}
-          className="bg-white dark:bg-zinc-900 w-full sm:max-w-2xl max-h-[92vh] sm:max-h-[85vh] rounded-t-2xl sm:rounded-2xl border border-zinc-200 dark:border-zinc-800 shadow-2xl flex flex-col overflow-hidden"
+          exit={{ opacity: 0, y: 18, scale: 0.99 }}
+          transition={{ type: 'spring', stiffness: 280, damping: 28, mass: 0.85 }}
+          className="flex max-h-[94dvh] w-full flex-col overflow-hidden rounded-t-[24px] border-[1.5px] border-[#383838] bg-[#FAFBF6] shadow-[5px_5px_0_0_#383838] sm:max-h-[88dvh] sm:max-w-4xl sm:rounded-[24px] dark:border-zinc-600 dark:bg-zinc-900"
           onClick={(e: React.MouseEvent) => e.stopPropagation()}
         >
           {/* Header */}
-          <div className="flex items-center gap-3 px-5 py-4 border-b border-zinc-100 dark:border-zinc-800 shrink-0">
-            <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{ backgroundColor: 'rgba(242,107,31,0.1)' }}>
-              <Icon size={18} style={{ color: '#F26B1F' }} />
+          <div className="flex shrink-0 items-center gap-4 border-b border-[#DDD8D2] px-5 py-4 sm:px-8 sm:py-5 dark:border-zinc-700">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border-[1.5px] border-[#383838] bg-[#FFF0E7] shadow-[2px_2px_0_0_#383838] dark:border-zinc-600 dark:bg-orange-950/30">
+              <Icon size={22} strokeWidth={1.8} style={{ color: '#F26B1F' }} />
             </div>
             <div className="flex-1 min-w-0">
-              <h2 className="text-base font-semibold text-zinc-900 dark:text-white" style={{ fontFamily: "'Source Serif 4', serif" }}>{title}</h2>
-              <p className="text-[11px] text-zinc-400">Version {PRIVACY_POLICY_VERSION} · Updated {LEGAL_LAST_UPDATED}</p>
+              <p className="mb-0.5 text-[10px] font-bold uppercase tracking-[0.2em] text-[#9B9188]">Legal document</p>
+              <h2 className="font-serif text-xl font-semibold text-[#1A1A1A] sm:text-2xl dark:text-white">{title}</h2>
+              <p className="mt-0.5 text-[11px] text-[#8A8178] sm:text-xs">Version {PRIVACY_POLICY_VERSION} · Updated {LEGAL_LAST_UPDATED}</p>
             </div>
-            <button onClick={onClose} aria-label="Close" className="p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-white/[0.06] transition-colors">
-              <X size={18} className="text-zinc-500" />
+            <button onClick={onClose} aria-label="Close" className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border-[1.5px] border-[#383838] bg-[#FAFBF6] text-[#383838] transition-transform hover:-translate-y-0.5 active:translate-y-0 dark:border-zinc-600 dark:bg-zinc-900 dark:text-zinc-200">
+              <X size={19} />
             </button>
           </div>
 
           {/* Draft banner */}
-          <div className="flex items-start gap-2 px-5 py-2.5 bg-amber-50 dark:bg-amber-900/15 border-b border-amber-100 dark:border-amber-900/30 shrink-0">
-            <AlertTriangle size={14} className="text-amber-600 dark:text-amber-400 mt-0.5 shrink-0" />
-            <p className="text-[11px] leading-snug text-amber-700 dark:text-amber-300">
-              Draft — under review by our legal advisers. The wording may change before final publication.
-            </p>
+          <div className="shrink-0 border-b border-[#DDD8D2] bg-[#FFF8E5] px-5 py-3 sm:px-8 dark:border-zinc-700 dark:bg-amber-950/20">
+            <div className="flex items-start gap-2.5">
+              <AlertTriangle size={15} className="mt-0.5 shrink-0 text-[#C45A16] dark:text-amber-400" />
+              <p className="text-xs leading-relaxed text-[#8F4617] dark:text-amber-200">
+                <span className="font-bold">Draft under legal review.</span> The wording may change before final publication.
+              </p>
+            </div>
           </div>
 
-          {/* Body */}
-          <div className="overflow-y-auto px-5 py-4 space-y-5">
-            {sections.map((s) => (
-              <section key={s.heading}>
-                <h3 className="text-sm font-semibold text-zinc-900 dark:text-white mb-1.5" style={{ fontFamily: "'Source Serif 4', serif" }}>{s.heading}</h3>
-                <div className="space-y-1.5">
-                  {s.body.map((line, i) =>
-                    line.startsWith('• ') ? (
-                      <p key={i} className="text-[13px] leading-relaxed text-zinc-600 dark:text-zinc-300 pl-4 -indent-4">{line}</p>
-                    ) : (
-                      <p key={i} className="text-[13px] leading-relaxed text-zinc-600 dark:text-zinc-300">{line}</p>
-                    )
-                  )}
+          <div className="overflow-y-auto">
+            <div className="mx-auto grid max-w-4xl sm:grid-cols-[150px_minmax(0,1fr)]">
+              <aside className="hidden border-r border-[#DDD8D2] px-6 py-7 sm:block dark:border-zinc-700">
+                <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#9B9188]">Contents</p>
+                <ol className="mt-4 space-y-3">
+                  {sections.map((section, index) => (
+                    <li key={section.heading} className="flex gap-2 text-[11px] leading-snug text-[#78716C] dark:text-zinc-400">
+                      <span className="font-mono text-[#F26B1F]">{String(index + 1).padStart(2, '0')}</span>
+                      <span>{section.heading}</span>
+                    </li>
+                  ))}
+                </ol>
+              </aside>
+
+              <main className="px-5 py-6 sm:px-8 sm:py-8">
+                <div className="space-y-8">
+                  {sections.map((section, sectionIndex) => (
+                    <section key={section.heading} className="grid grid-cols-[30px_minmax(0,1fr)] gap-3 border-b border-[#E4E0DA] pb-8 last:border-0 last:pb-0 sm:grid-cols-[38px_minmax(0,1fr)]">
+                      <span className="pt-1 font-mono text-[10px] font-bold text-[#F26B1F]">{String(sectionIndex + 1).padStart(2, '0')}</span>
+                      <div>
+                        <h3 className="mb-3 font-serif text-lg font-semibold text-[#1A1A1A] dark:text-white">{section.heading}</h3>
+                        <div className="space-y-3">
+                          {section.body.map((line, index) =>
+                            line.startsWith('• ') ? (
+                              <div key={index} className="grid grid-cols-[8px_minmax(0,1fr)] gap-2.5 text-[13px] leading-6 text-[#5F5A55] sm:text-sm dark:text-zinc-300">
+                                <span className="mt-[9px] h-1.5 w-1.5 rounded-full bg-[#F26B1F]" aria-hidden />
+                                <p>{line.slice(2)}</p>
+                              </div>
+                            ) : (
+                              <p key={index} className="text-[13px] leading-6 text-[#5F5A55] sm:text-sm dark:text-zinc-300">{line}</p>
+                            )
+                          )}
+                        </div>
+                      </div>
+                    </section>
+                  ))}
                 </div>
-              </section>
-            ))}
+              </main>
+            </div>
           </div>
         </MotionDiv>
       </MotionDiv>

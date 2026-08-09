@@ -11,7 +11,7 @@ import { describe, it, expect, beforeEach } from 'vitest';
 import {
   type ScenarioGradeEntry,
   loadScenarios, saveScenario, clearScenario,
-  computeBestSixTotal, bestLeverToward,
+  computeBestSixTotal, computeBestSixBreakdown, bestLeverToward,
 } from '../components/pointsScenarioStore';
 import type { Grade, Level } from '../components/subjectData';
 
@@ -75,6 +75,9 @@ describe('Points Passport — best-six totals', () => {
       entry('Geography', 'H7'), // 37 — dropped as 7th best
     ];
     expect(computeBestSixTotal(seven)).toBe(88 + 77 + 77 + 66 + 66 + 56);
+    const breakdown = computeBestSixBreakdown(seven);
+    expect(breakdown.bestSix).toHaveLength(6);
+    expect(breakdown.outside.map(subject => subject.subjectName)).toEqual(['Geography']);
   });
 
   it('includes the +25 Maths HL bonus for H6 and above', () => {

@@ -8,7 +8,7 @@
  */
 
 import React, { useEffect, useState } from 'react';
-import { X, Keyboard } from 'lucide-react';
+import ModalFrame from './ui/ModalFrame';
 
 const SHORTCUTS: { keys: string[]; what: string }[] = [
   { keys: ['⌘', 'K'], what: 'Jump to any module, tool or page' },
@@ -41,32 +41,8 @@ const ShortcutsOverlay: React.FC<Props> = ({ suppressQuestionKey = false }) => {
     if (suppressQuestionKey) setOpen(false);
   }, [suppressQuestionKey]);
 
-  if (!open) return null;
-
   return (
-    <div
-      className="fixed inset-0 z-[128] flex items-center justify-center px-4"
-      role="dialog"
-      aria-modal="true"
-      aria-label="Keyboard shortcuts"
-      onMouseDown={e => { if (e.target === e.currentTarget) setOpen(false); }}
-    >
-      <div className="absolute inset-0 bg-black/45" onMouseDown={() => setOpen(false)} />
-      <div
-        className="relative w-full max-w-[420px] rounded-2xl bg-white px-5 py-4"
-        style={{ border: '2px solid #1a1a1a', boxShadow: '0 4px 0 rgba(0,0,0,0.4)' }}
-      >
-        <div className="flex items-center justify-between mb-3">
-          <div className="flex items-center gap-2">
-            <Keyboard size={16} style={{ color: '#F26B1F' }} />
-            <h3 className="text-[17px] font-semibold" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>
-              Keyboard shortcuts
-            </h3>
-          </div>
-          <button onClick={() => setOpen(false)} aria-label="Close" className="p-1 rounded-lg" style={{ color: '#9e9186' }}>
-            <X size={16} />
-          </button>
-        </div>
+    <ModalFrame open={open} onClose={() => setOpen(false)} title="Keyboard shortcuts" eyebrow="Navigate faster" width="sm">
         <div className="flex flex-col gap-2.5">
           {SHORTCUTS.map(s => (
             <div key={s.what} className="flex items-center gap-3">
@@ -85,8 +61,7 @@ const ShortcutsOverlay: React.FC<Props> = ({ suppressQuestionKey = false }) => {
             </div>
           ))}
         </div>
-      </div>
-    </div>
+    </ModalFrame>
   );
 };
 

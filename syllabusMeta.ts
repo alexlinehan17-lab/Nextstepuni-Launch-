@@ -163,33 +163,6 @@ export const SYLLABUS_META: Record<string, SubjectMeta> = {
       'mandarin-chinese-2': { section: 'Defines the three SEC components: Oral (HL 35% / OL 30%), Aural (HL 25% / OL 30%), Written Reading+Writing (40% both levels)', markWeight: 100.0, examFrequency: 10, difficulty: 3, studyHours: 30, tip: 'Know where marks live before revising: at HL the Oral is the biggest single component (35%) and the written paper is 20% Reading + 20% Writing (at OL it shifts to 25% Reading + 15% Writing), so prioritise speaking fluency and simplified-character production over Pin Yin (zero marks), and treat the Language Portfolio as oral-prep, not a graded artefact.' },
     },
   },
-  'latin': {
-    totalMarks: 300,
-    papers: [
-      { name: 'Written Examination (Section A: Capstone Text 100m + Section B: Unseen Texts 200m) - 60%', marks: 300, duration: '2 hours 30 minutes (confirm against SEC sample-paper cover)' },
-      { name: 'Research Study (Additional Assessment Component, common brief, ~20 hours) - 40%', marks: 0, duration: 'Completed over the year' },
-    ],
-    keyAdvice: 'Latin is 60% written exam + 40% Research Study. On the paper the maths is decisive: Section B (Unseen Texts) is worth 200 of 300 marks and always carries an 80-mark comprehension question, so unseen translation/comprehension - built on the prescribed Grammar for Unseen Texts plus the Core NCCA Indicative Vocabulary List - is where most marks are won or lost. Section A is 100 guaranteed marks tied to one fixed text (Virgil\'s Aeneid Books 1 & 4, Dido and Aeneas for 2027; HL 211 lines, OL 134 lines), so master those exact prescribed lines and their literary/contextual analysis early, then bank the 40% Research Study before exam crunch since it is a separate, predictable deliverable on a common SEC brief (~20 hours).',
-    strands: {
-      'latin-0': { section: 'Section A (Q1-2 Capstone) + Section B (Q3-5 Unseen), written paper', markWeight: 60.0, examFrequency: 10, difficulty: 4, studyHours: 90, tip: 'This strand drives Section B\'s 200 marks - learn the Core part of the NCCA Indicative Vocabulary List and the prescribed Grammar for Unseen Texts cold, because the guaranteed 80-mark comprehension question rewards parsing endings (stem + ending, case, tense) over guessing meaning.' },
-      'latin-1': { section: 'Section A Capstone analysis (esp. HL Q2) + the 40% Research Study', markWeight: 45.0, examFrequency: 9, difficulty: 3, studyHours: 55, tip: 'Higher Level\'s Capstone question demands language-based literary analysis (sound, word order, imagery in the actual Latin), not English plot summary - quote the Latin and name the technique; this same contextual skill is the backbone of the 40% Research Study, so doing both well doubles the payoff.' },
-      'latin-2': { section: 'Section A (Capstone, 100m) + Research Study (40%)', markWeight: 33.0, examFrequency: 10, difficulty: 3, studyHours: 45, tip: 'Section A is 100 marks pinned to fixed prescribed lines (Virgil Aeneid Bk 1 lines 1-14, 613-642 and Bk 4 Dido extracts; HL 211 / OL 134 lines) - memorise translations of those exact lines so they are free marks, and treat the ~20-hour Research Study as bankable coursework worth 40% that you finish before study leave, not in the exam hall.' },
-    },
-  },
-  'ancient-greek': {
-    totalMarks: 400,
-    papers: [
-      { name: 'Written Examination (Higher & Ordinary) - 60%', marks: 240, duration: 'approx. 2.5-3 hours (SEC paper not yet published; first exam 2027)' },
-      { name: 'Research Study - Additional Assessment Component (40%)', marks: 160, duration: 'approx. 20 hours coursework on a common SEC brief' },
-    ],
-    keyAdvice: 'Ancient Greek is now 60% written exam + 40% Research Study (the Additional Assessment Component) - the 40% coursework on a common SEC brief is the single biggest lever and can\'t be crammed, so anchor a small, manageable text or extract early and build genuine language-based analysis (word choice, syntax, grammar) around it; the SEC quality descriptors reward critical thinking, careful use of sources, and a clear case for the topic\'s broader significance in the classical world, not summary. In the written paper the prescribed Capstone text (currently Euripides\' Medea, with specified passages, general context, and a prescribed grammar list issued by DE circular each exam year) is guaranteed territory: master those exact passages and the prescribed grammar forms/constructions cold. The spec shifts emphasis from unseen translation toward close reading of a text, so treat any unseen Greek as a reasoning task - parse stems and endings, find the main verb and clause structure - rather than guessing whole-sentence meaning.',
-    strands: {
-      'ancient-greek-0': { section: 'Written Examination (Higher & Ordinary) - reading, comprehension, translation & grammar (Strand 1: Ancient Greek Language)', markWeight: 35.0, examFrequency: 10, difficulty: 4, studyHours: 70, tip: 'The prescribed grammar forms/constructions (from the DE circular) and translation are the most predictable, fail-safe marks here - drill the prescribed grammar list cold, and translate by mechanically identifying the main verb, its subject (nominative), and clause boundaries before attempting fluent English; parse stems and endings rather than guessing whole sentences.' },
-      'ancient-greek-1': { section: 'Written Examination - literature, context & Hellenic-culture questions on the Capstone passages (Strand 2: Literature in context)', markWeight: 25.0, examFrequency: 9, difficulty: 3, studyHours: 50, tip: 'Context questions reward close reading tied to the Greek words on the page: for each Capstone passage prepare author/audience, genre conventions of tragedy, and one concrete cultural hook (e.g. how \'otherness\' - women, foreigners, slaves - is represented, central to Medea), then always quote the Greek that supports your point rather than retelling the plot.' },
-      'ancient-greek-2': { section: 'Written Examination - prescribed Capstone text (Euripides\' Medea) & prescribed grammar (the guaranteed core)', markWeight: 30.0, examFrequency: 10, difficulty: 3, studyHours: 55, tip: 'The Capstone\'s specified passages (220 lines HL / 120 lines OL of Medea, on the Jason-Medea breakdown) and the prescribed grammar list are released by DE circular and examined every year - memorise those exact passages and constructions verbatim; this is the highest-yield, most predictable study in the whole subject.' },
-      'ancient-greek-3': { section: 'Additional Assessment Component - Research Study (40%, coursework on a common SEC brief)', markWeight: 40.0, examFrequency: 10, difficulty: 3, studyHours: 45, tip: 'Worth 40% and impossible to cram in June: pick a SMALL text/extract or language feature early, keep language-based analysis (word choice, syntax, grammar) at the centre, and hit each SEC quality descriptor explicitly - critical thinking, judicious use and evaluation of sources, and a compelling case for the topic\'s broader significance in the classical world.' },
-    },
-  },
   'hebrew-studies': {
     totalMarks: 400,
     papers: [
@@ -207,22 +180,13 @@ export const SYLLABUS_META: Record<string, SubjectMeta> = {
   'arabic': {
     totalMarks: 400,
     papers: [
-      { name: 'Interim (to 2026): Single Written Paper HL/OL', marks: 400, duration: '3 hours' },
-      { name: 'New Spec (from 2027): Written Examination HL/OL', marks: 180, duration: 'approx 2.5h (TBC)' },
-      { name: 'New Spec (from 2027): Oral', marks: 120, duration: 'approx 15 min' },
-      { name: 'New Spec (from 2027): Aural', marks: 100, duration: 'approx 40 min' },
+      { name: '2026 written examination', marks: 400, duration: '3 hours' },
     ],
-    keyAdvice: 'Know which syllabus you sit. To 2026: ONE 3h 4-part written paper (P1 comprehension, P2 Literature 2 of 3, P3 Usage, P4 Continuous Writing 300-400 words), NO oral/aural; Literature biggest at 35 percent. From 2027 new spec adds Oral (HL30/OL25), Aural (HL25/OL30), Reading+Writing (45 percent), oral+aural 55 percent, plus an unmarked Portfolio used in the oral.',
+    keyAdvice: 'For the 2026 cohort Arabic is one three-hour written paper: reading comprehension, literature, use of language and continuous writing. There is no oral or aural component. Literature is the largest block at 35%, followed by continuous writing at 25%; use the remaining time evenly for reading and grammar, which are worth 20% each.',
     strands: {
-      'arabic-0': { section: 'New Spec - Oral/Aural/Written (from 2027)', markWeight: 80.0, examFrequency: 10, difficulty: 3, studyHours: 60, tip: 'Whole new-spec exam; drill Mediation as most candidates neglect it.' },
-      'arabic-1': { section: 'New Spec - Oral/Aural descriptors (from 2027)', markWeight: 15.0, examFrequency: 8, difficulty: 3, studyHours: 25, tip: 'Marked descriptor in Oral/Aural; discuss concrete cultural research from your Portfolio.' },
-      'arabic-2': { section: 'New Spec - Oral 25-30 + Aural 25-30 + Written 45 (from 2027)', markWeight: 100.0, examFrequency: 10, difficulty: 3, studyHours: 30, tip: 'Oral worth MORE at Higher (30) than Aural (25); Oral+Aural=55 percent. Portfolio earns no marks.' },
-      'arabic-3': { section: 'Interim - Part 1 Reading Comprehension (to 2026)', markWeight: 20.0, examFrequency: 10, difficulty: 3, studyHours: 35, tip: 'Unseen prose: bank the MCQs, then name the device and tie it to the writer stance.' },
-      'arabic-4': { section: 'Interim - Part 4 Continuous Writing (to 2026)', markWeight: 25.0, examFrequency: 10, difficulty: 3, studyHours: 35, tip: 'ONE 300-400 word response from six titles; vary register and paragraphing at Higher level.' },
-      'arabic-5': { section: 'Interim - Part 3 Usage (to 2026)', markWeight: 20.0, examFrequency: 10, difficulty: 4, studyHours: 30, tip: 'Five fixed grammar questions; most learnable 20 percent. Drill conjugation, agreement, case-endings.' },
-      'arabic-6': { section: 'Interim - Part 2 Literature (to 2026)', markWeight: 35.0, examFrequency: 10, difficulty: 4, studyHours: 60, tip: 'Largest block 35 percent: answer 2 of 3 (Quran extract, classical verse, modern prose); prep all three plus contextual answers.' },
-      'arabic-7': { section: 'Interim - Reading skills for Part 1 (to 2026)', markWeight: 20.0, examFrequency: 10, difficulty: 3, studyHours: 25, tip: 'Feeds the Part 1 unseen text (letter/article/literary); practise each genre timed.' },
-      'arabic-8': { section: 'Interim - overall mark allocation (to 2026)', markWeight: 100.0, examFrequency: 10, difficulty: 2, studyHours: 8, tip: 'Budget by weighting: Literature 35, CW 25, Reading 20, Usage 20.' },
+      'arabic-2026-reading-directed-writing': { section: 'Parts 1 and 2 — reading comprehension and literature', markWeight: 55.0, examFrequency: 10, difficulty: 4, studyHours: 80, tip: 'Literature is the largest block at 35%: prepare the Quran extract, classical verse and modern prose, then practise unseen reading by locating evidence before writing the directed response.' },
+      'arabic-2026-continuous-writing': { section: 'Part 4 — continuous writing', markWeight: 25.0, examFrequency: 10, difficulty: 3, studyHours: 35, tip: 'Write one 300–400 word response; plan paragraph purpose first, then vary register and sentence structure rather than adding unsupported length.' },
+      'arabic-2026-use-language': { section: 'Part 3 — use of language', markWeight: 20.0, examFrequency: 10, difficulty: 4, studyHours: 30, tip: 'This is the most repeatable fifth of the paper: drill conjugation, agreement, grammatical structures, punctuation and register under timed conditions.' },
     },
   },
   'classical-studies': {
@@ -707,8 +671,6 @@ export const XRAY_EXCLUDED_STRANDS: Record<string, string> = {
   'japanese-6': 'Aural task view — marks weighted under the existing skill strands',
   'russian-3': 'Written-paper task view — marks weighted under the existing skill strands',
   'mandarin-chinese-3': 'Written-paper task view — marks weighted under the existing skill strands',
-  'latin-3': 'Legacy written-paper task view (pre-2023 syllabus papers) — outside the new-spec X-Ray weighting',
-  'ancient-greek-4': 'Legacy written-paper task view (pre-2025 syllabus papers) — outside the new-spec X-Ray weighting',
   'lithuanian-2': 'Written-paper task view — marks weighted under the existing skill strands',
   'polish-3': 'Written-paper task view — marks weighted under the existing skill strands',
   'portuguese-2': 'Written-paper task view — marks weighted under the existing skill strands',

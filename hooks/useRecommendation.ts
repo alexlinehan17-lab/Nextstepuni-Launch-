@@ -5,7 +5,7 @@
 
 import { useMemo } from 'react';
 import { useProgress } from '../contexts/ProgressContext';
-import { type UserProgress, type TopicMasteryMap } from '../types';
+import { type UserProgress, type TopicMasteryV2 } from '../types';
 import { type StreakData } from './useStreak';
 import { type StudentSubjectProfile, toDateKey } from '../components/subjectData';
 import { type CourseData } from '../components/Library';
@@ -85,16 +85,21 @@ function neglectedSubject(
 }
 
 function shakyTopicFocus(
-  topicMastery: TopicMasteryMap | undefined,
+  topicMastery: TopicMasteryV2,
   studentProfile: StudentSubjectProfile | null,
 ): SmartRecommendation | null {
-  if (!topicMastery || !studentProfile) return null;
+  if (!studentProfile) return null;
 
   let worstSubject = '';
   let worstCount = 0;
-
-  for (const [subject, topics] of Object.entries(topicMastery)) {
-    const shakyCount = Object.values(topics).filter(t => t.confidence === 'shaky').length;
+  const bySubject = new Map<string, typeof topicMastery.topics[string][]>();
+  for (const entry of Object.values(topicMastery.topics)) {
+    const entries = bySubject.get(entry.subjectName) ?? [];
+    entries.push(entry);
+    bySubject.set(entry.subjectName, entries);
+  }
+  for (const [subject, topics] of bySubject) {
+    const shakyCount = topics.filter(topic => topic.confidence === 'shaky').length;
     if (shakyCount > worstCount) {
       worstCount = shakyCount;
       worstSubject = subject;
@@ -252,7 +257,7 @@ export function useRecommendation(
   studentProfile: StudentSubjectProfile | null,
   timetableCompletions: Record<string, string[]> | undefined,
 ): { recommendation: SmartRecommendation | null } {
-  const { studySessions: sessions, topicMastery, progressLoaded } = useProgress();
+  const { studySessions: sessions, topicMasteryV2, progressLoaded } = useProgress();
   const isLoaded = progressLoaded;
 
   const recommendation = useMemo(() => {
@@ -262,7 +267,7 @@ export function useRecommendation(
     const generators: (SmartRecommendation | null)[] = [
       streakAtRisk(streak, timetableCompletions),
       neglectedSubject(sessions, studentProfile),
-      shakyTopicFocus(topicMastery, studentProfile),
+      shakyTopicFocus(topicMasteryV2, studentProfile),
       strategyEffectiveness(sessions),
       timetableAdherence(timetableCompletions, studentProfile),
       moduleMomentum(userProgress, courses),
@@ -270,7 +275,7 @@ export function useRecommendation(
     ];
 
     return generators.find(r => r !== null) ?? null;
-  }, [isLoaded, streak, timetableCompletions, sessions, studentProfile, topicMastery, userProgress, courses]);
+  }, [isLoaded, streak, timetableCompletions, sessions, studentProfile, topicMasteryV2, userProgress, courses]);
 
   return { recommendation };
 }

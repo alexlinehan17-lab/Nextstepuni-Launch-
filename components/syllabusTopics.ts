@@ -1,52 +1,66 @@
 /** @license SPDX-License-Identifier: Apache-2.0 */
 
 /**
- * Leaving Cert syllabus topics per subject, for tracking which syllabus areas a
- * student has covered. DERIVED from the single source of truth (curriculum.ts):
- * each subject's "topics" are its curriculum STRANDS, the exact same nodes that
- * Syllabus X-Ray, Catch-Up Lane and Command-Word use — so coverage tracking can
- * never describe the syllabus differently from the other tools.
+ * Leaving Cert coverage nodes resolved through the versioned curriculum
+ * registry.  The examination date selects the student's actual specification;
+ * callers must not maintain their own subject-topic arrays.
  */
-import { CURRICULUM } from '../curriculum';
+import {
+  CURRICULUM_SPECIFICATIONS,
+  examinationYearFromDate,
+  resolveCurriculumSpecification,
+  type CanonicalCurriculumSpecification,
+} from '../curriculumRegistry';
 
-// subjectName -> list of strand names (the coarse "areas" a student tracks coverage against)
-export const SYLLABUS_TOPICS: Record<string, string[]> = Object.fromEntries(
-  CURRICULUM.map((s) => [s.name, s.strands.map((st) => st.name)]),
-);
+export interface SyllabusCoverageTopic {
+  id: string;
+  name: string;
+  specificationId: string;
+  code?: string;
+}
 
-// Common abbreviations / colloquial names -> canonical curriculum subject name.
-const SUBJECT_ALIASES: Record<string, string> = {
-  maths: 'Mathematics', math: 'Mathematics', 'higher maths': 'Mathematics', 'hl maths': 'Mathematics',
-  'applied maths': 'Applied Mathematics', 'applied math': 'Applied Mathematics',
-  bio: 'Biology', chem: 'Chemistry', phys: 'Physics',
-  gaeilge: 'Irish', gaelige: 'Irish', eng: 'English',
-  geo: 'Geography', geog: 'Geography', hist: 'History',
-  'business studies': 'Business', econ: 'Economics',
-  'ag science': 'Agricultural Science', 'agricultural science': 'Agricultural Science',
-  'home ec': 'Home Economics', dcg: 'Design and Communication Graphics',
-  'comp sci': 'Computer Science', 'computer science': 'Computer Science',
-  re: 'Religious Education', 'politics and society': 'Politics and Society',
-};
+function coverageNodes(specification: CanonicalCurriculumSpecification): SyllabusCoverageTopic[] {
+  if (specification.coverageNodeLevel === 'topic') {
+    return specification.groups.flatMap((group) => group.topics.map((topic) => ({
+      id: topic.id,
+      name: topic.title,
+      code: topic.code,
+      specificationId: specification.id,
+    })));
+  }
+  return specification.groups.map((group) => ({
+    id: group.id,
+    name: group.title,
+    code: group.code,
+    specificationId: specification.id,
+  }));
+}
 
 /**
- * Returns the list of syllabus topics (curriculum strand names) for a subject.
- * Case-insensitive against the canonical curriculum names, then a small alias map.
- * Returns an empty array when no match is found.
+ * Canonical coverage nodes for a student's actual examination cohort.
+ * Passing the exam date is strongly preferred; the current academic cohort is
+ * only used as a safe fallback for older callers.
  */
-export function getSyllabusTopics(subjectName: string): string[] {
-  if (!subjectName) return [];
-  const trimmed = subjectName.trim();
-
-  // 1. Exact (case-insensitive) match against canonical curriculum subject names
-  const canonical = Object.keys(SYLLABUS_TOPICS).find(
-    (key) => key.toLowerCase() === trimmed.toLowerCase(),
+export function getSyllabusTopicRefs(
+  subjectName: string,
+  examDate?: string | null,
+): SyllabusCoverageTopic[] {
+  const specification = resolveCurriculumSpecification(
+    subjectName,
+    examinationYearFromDate(examDate),
   );
-  if (canonical) return SYLLABUS_TOPICS[canonical];
-
-  // 2. Alias lookup
-  const aliasTarget = SUBJECT_ALIASES[trimmed.toLowerCase()];
-  if (aliasTarget && SYLLABUS_TOPICS[aliasTarget]) return SYLLABUS_TOPICS[aliasTarget];
-
-  // 3. No match
-  return [];
+  return specification ? coverageNodes(specification) : [];
 }
+
+/**
+ * Returns the student-facing labels for the canonical coverage nodes.
+ */
+export function getSyllabusTopics(subjectName: string, examDate?: string | null): string[] {
+  return getSyllabusTopicRefs(subjectName, examDate).map((topic) => topic.name);
+}
+
+/** Compatibility snapshot for callers that still enumerate by display name. */
+export const SYLLABUS_TOPICS: Record<string, string[]> = Object.fromEntries(
+  [...new Set(CURRICULUM_SPECIFICATIONS.map((specification) => specification.subjectName))]
+    .map((name) => [name, getSyllabusTopics(name)]),
+);

@@ -4,6 +4,7 @@
  */
 
 import { type ShopItem, type ShopItemCategory, type IslandPlacement, type NorthStarCategory } from './types';
+import { getJourneyV2BasePrice } from './journeyEconomyConfig';
 
 /** Categories where items can only be purchased once */
 const UNIQUE_CATEGORIES: Set<ShopItemCategory> = new Set(['building', 'vehicle']);
@@ -357,14 +358,15 @@ export function getUnlockRequirement(item: ShopItem, category: NorthStarCategory
 }
 
 export function getEffectivePrice(item: ShopItem, category: NorthStarCategory | null): number {
-  if (!category) return item.price;
+  const basePrice = getJourneyV2BasePrice(item);
+  if (!category) return basePrice;
   for (const disc of NORTH_STAR_DISCOUNTS) {
     if (disc.category !== category) continue;
     for (const prefix of disc.itemIdPrefixes) {
       if (item.id.startsWith(prefix)) {
-        return Math.round(item.price * (1 - disc.discountPercent / 100));
+        return Math.round(basePrice * (1 - disc.discountPercent / 100));
       }
     }
   }
-  return item.price;
+  return basePrice;
 }

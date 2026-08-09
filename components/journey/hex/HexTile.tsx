@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { useMemo, useRef, useState } from 'react';
 import type * as THREE from 'three';
 import { useFrame } from '@react-three/fiber';
 import { useGLTF } from '@react-three/drei';
@@ -19,11 +19,12 @@ interface HexTileProps {
   radius?: number;
   animateIn?: boolean;
   delay?: number;
+  onSelect?: () => void;
 }
 
 const HexTile: React.FC<HexTileProps> = ({
   q, r, model, rotation = 0, radius: _radius = 1,
-  animateIn = false, delay = 0,
+  animateIn = false, delay = 0, onSelect,
 }) => {
   const { scene } = useGLTF(`${HEX_PATH}${model}`);
   const cloned = useMemo(() => {
@@ -37,22 +38,6 @@ const HexTile: React.FC<HexTileProps> = ({
     });
     return clone;
   }, [scene]);
-
-  useEffect(() => {
-    return () => {
-      cloned.traverse((child) => {
-        if ((child as THREE.Mesh).isMesh) {
-          const mesh = child as THREE.Mesh;
-          mesh.geometry?.dispose();
-          if (Array.isArray(mesh.material)) {
-            mesh.material.forEach((m) => m.dispose());
-          } else if (mesh.material) {
-            (mesh.material as THREE.Material).dispose();
-          }
-        }
-      });
-    };
-  }, [cloned]);
 
   const [wx, wz] = useMemo(() => hexToWorld(q, r), [q, r]);
   const ref = useRef<THREE.Group>(null);
@@ -85,10 +70,14 @@ const HexTile: React.FC<HexTileProps> = ({
 
   return (
     <group
+      dispose={null}
       ref={ref}
       position={[wx, animateIn && !hasAnimated ? -3 : 0, wz]}
       rotation={[0, rotY, 0]}
       scale={animateIn && !hasAnimated ? 0.001 : 1}
+      onClick={onSelect ? (event) => { event.stopPropagation(); onSelect(); } : undefined}
+      onPointerOver={onSelect ? () => { document.body.style.cursor = 'pointer'; } : undefined}
+      onPointerOut={onSelect ? () => { document.body.style.cursor = 'default'; } : undefined}
     >
       <primitive object={cloned} />
     </group>

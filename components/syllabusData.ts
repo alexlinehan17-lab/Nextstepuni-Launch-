@@ -2,15 +2,21 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * Syllabus X-Ray data — now DERIVED from the single source of truth (curriculum.ts)
+ * Syllabus X-Ray data — derived from the canonical curriculum registry
  * plus the prioritisation overlay (syllabusMeta.ts). Every topic here is a real
  * curriculum STRAND (with its subtopics), keyed by the same stable id that
  * Catch-Up Lane and Command-Word use — so the three tools can never describe the
  * syllabus differently. A guard test (test/syllabusSourceOfTruth.test.ts) asserts
  * every overlay key resolves to a curriculum node.
  */
-import { CURRICULUM } from '../curriculum';
 import { SYLLABUS_META } from '../syllabusMeta';
+import {
+  CURRICULUM_SPECIFICATIONS,
+  examinationYearFromDate,
+  resolveCurriculumSpecification,
+  specificationContainsId,
+  type CanonicalCurriculumSpecification,
+} from '../curriculumRegistry';
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -40,6 +46,7 @@ export interface PaperInfo {
 export interface SubjectSyllabus {
   subject: string;           // display name (curriculum subject name)
   subjectId: string;         // curriculum subject id
+  specificationId: string;  // versioned curriculum specification id
   totalMarks: number;
   papers: PaperInfo[];
   topics: SyllabusTopic[];
@@ -71,46 +78,64 @@ export const QUADRANT_LABELS: Record<string, { label: string; color: string; bg:
   'only-if-time': { label: 'Only If Time', color: 'text-zinc-500 dark:text-zinc-400', bg: 'bg-zinc-100 dark:bg-zinc-800' },
 };
 
-// ─── Subject Data — BUILT from curriculum.ts + syllabusMeta.ts ───────────────
-// Single source of truth: a subject appears in Syllabus X-Ray iff it has both a
-// curriculum entry and a prioritisation overlay. Topics = curriculum strands.
+// ─── Subject Data — BUILT from registry + editorial overlay ─────────────────
 
-export const SYLLABUS_DATA: SubjectSyllabus[] = CURRICULUM
-  .filter((subject) => SYLLABUS_META[subject.id])
-  .map((subject) => {
-    const meta = SYLLABUS_META[subject.id];
-    const topics: SyllabusTopic[] = subject.strands
-      .filter((strand) => meta.strands[strand.id])
-      .map((strand) => {
-        const sm = meta.strands[strand.id];
+function buildSyllabus(specification: CanonicalCurriculumSpecification): SubjectSyllabus | undefined {
+  const meta = SYLLABUS_META[specification.subjectId];
+  if (!meta) return undefined;
+  const topics: SyllabusTopic[] = specification.groups
+    .filter((group) => meta.strands[group.id])
+    .map((group) => {
+        const sm = meta.strands[group.id];
         return {
-          id: strand.id,
-          name: strand.name,
+          id: group.id,
+          name: group.title,
           section: sm.section,
           markWeight: sm.markWeight,
           examFrequency: sm.examFrequency,
           difficulty: sm.difficulty,
           studyHours: sm.studyHours,
           tip: sm.tip,
-          subtopics: strand.subtopics.map((t) => ({ id: t.id, name: t.name })),
+          subtopics: group.topics.map((topic) => ({ id: topic.id, name: topic.title })),
         };
       });
-    return {
-      subject: subject.name,
-      subjectId: subject.id,
+  return {
+      subject: specification.subjectName,
+      subjectId: specification.subjectId,
+      specificationId: specification.id,
       totalMarks: meta.totalMarks,
       papers: meta.papers,
       topics,
       keyAdvice: meta.keyAdvice,
-    };
-  });
+  };
+}
+
+/**
+ * Compatibility catalogue for callers that do not yet have a student cohort.
+ * It deliberately picks one specification whose canonical node IDs match the
+ * editorial overlay; cohort-aware callers use `getSyllabusForSubject` below.
+ */
+export const SYLLABUS_DATA: SubjectSyllabus[] = Object.keys(SYLLABUS_META)
+  .map((subjectId) => CURRICULUM_SPECIFICATIONS.find((specification) =>
+    specification.subjectId === subjectId
+    && Object.keys(SYLLABUS_META[subjectId].strands).every((id) => specificationContainsId(specification, id))))
+  .filter((specification): specification is CanonicalCurriculumSpecification => Boolean(specification))
+  .map(buildSyllabus)
+  .filter((syllabus): syllabus is SubjectSyllabus => Boolean(syllabus));
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
 export const AVAILABLE_SUBJECTS = SYLLABUS_DATA.map((s) => s.subject);
 
-export function getSyllabusForSubject(subject: string): SubjectSyllabus | undefined {
-  return SYLLABUS_DATA.find((s) => s.subject === subject || s.subjectId === subject);
+export function getSyllabusForSubject(subject: string, examDate?: string | null): SubjectSyllabus | undefined {
+  const overlay = SYLLABUS_DATA.find((s) => s.subject === subject || s.subjectId === subject);
+  if (!overlay || examDate === undefined) return overlay;
+  const specification = resolveCurriculumSpecification(subject, examinationYearFromDate(examDate));
+  if (!specification) return undefined;
+  // Prioritisation is editorial assessment metadata. Never attach it to a new
+  // specification merely because the subject name is the same.
+  if (!overlay.topics.every((topic) => specificationContainsId(specification, topic.id))) return undefined;
+  return buildSyllabus(specification);
 }
 
 // ─── Fuzzy Topic Matcher ────────────────────────────────────────────────────
@@ -123,9 +148,9 @@ function tokenize(s: string): string[] {
   return normalizeStr(s).split(/\s+/).filter((t) => t.length > 0);
 }
 
-export function fuzzyMatchTopic(subject: string, input: string): SyllabusTopic | null {
+export function fuzzyMatchTopic(subject: string, input: string, examDate?: string | null): SyllabusTopic | null {
   if (!input || input.trim().length < 3) return null;
-  const syllabus = getSyllabusForSubject(subject);
+  const syllabus = getSyllabusForSubject(subject, examDate);
   if (!syllabus) return null;
 
   const normInput = normalizeStr(input);

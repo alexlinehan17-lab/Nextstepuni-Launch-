@@ -22,7 +22,7 @@ import { COLORS } from '../../design/tokens';
 import PrimaryActionButton from '../ui/PrimaryActionButton';
 import { useExamReps } from '../../hooks/useExamReps';
 import { REP_CARDS } from '../../examRepsData';
-import { CURRICULUM } from '../../curriculum';
+import { curriculumSubjectsForYear, resolveSubjectId } from '../../curriculumRegistry';
 import SubjectPicker from './SubjectPicker';
 import { type RepCard, type Confidence, type RepSelection, ribbonId } from '../../types/examReps';
 
@@ -41,11 +41,13 @@ function mapStudentSubjects(names?: string[]): string[] {
     const w = norm(nm);
     if (!w) continue;
     if (SUBJECT_ALIAS[w]) { ids.add(SUBJECT_ALIAS[w]); continue; }
-    const s = CURRICULUM.find(x => { const sn = norm(x.name); return sn === w || sn.includes(w) || w.includes(sn); });
-    if (s) ids.add(s.id);
+    const canonicalId = resolveSubjectId(nm);
+    if (canonicalId) ids.add(canonicalId);
   }
   return [...ids];
 }
+
+const CURRICULUM_SUBJECTS = curriculumSubjectsForYear(undefined, ['leaving-certificate-established']);
 
 type Beat = 'intro' | 'attempt' | 'mark' | 'done';
 
@@ -233,7 +235,7 @@ const ExamReps: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid,
     return <SubjectPicker selection={sel} onSelect={onPick} studentSubjectIds={studentSubjectIds} />;
   }
   if (!card || !derived) {
-    const subjName = CURRICULUM.find(s => s.id === sel.subjectId)?.name ?? 'these';
+    const subjName = CURRICULUM_SUBJECTS.find(s => s.id === sel.subjectId)?.name ?? 'these';
     return (
       <div className="w-full max-w-xl mx-auto py-16 text-center">
         <p className="text-sm text-[#7a7068] mb-4">No {subjName} reps for this topic yet — we’re forging them.</p>
@@ -268,8 +270,8 @@ const ExamReps: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid,
 
   const cardShell = 'w-full max-w-xl mx-auto rounded-2xl border-2 border-[#1A1A1A] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-[4px_4px_0_0_#1A1A1A] dark:shadow-[4px_4px_0_0_#3f3f46] p-6 md:p-7';
 
-  const selSubject = CURRICULUM.find(s => s.id === sel.subjectId);
-  const selTopic = selSubject?.strands.flatMap(st => st.subtopics).find(t => t.id === sel.topicId);
+  const selSubject = CURRICULUM_SUBJECTS.find(s => s.id === sel.subjectId);
+  const selTopic = selSubject?.groups.flatMap(group => group.topics).find(topic => topic.id === sel.topicId);
   const selectionChip = (
     <button
       type="button"
@@ -278,7 +280,7 @@ const ExamReps: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid,
       style={{ backgroundColor: '#F9F9F7' }}
     >
       <span className="text-[11px] font-semibold text-[#7a7068] truncate flex-1">
-        {selSubject?.name} · {LEVEL_LABEL[sel.level] ?? sel.level} · {selTopic?.name ?? '—'}
+        {selSubject?.name} · {LEVEL_LABEL[sel.level] ?? sel.level} · {selTopic?.title ?? '—'}
       </span>
       <span className="text-[10px] font-bold uppercase tracking-wide shrink-0" style={{ color: COLORS.accentDarkText }}>Change ›</span>
     </button>

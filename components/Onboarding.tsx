@@ -38,7 +38,7 @@ interface OnboardingProps {
 }
 
 type Step = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
-const TOTAL_STEPS = 10;
+const TOTAL_STEPS = 10; // Legacy screen ids; the visible journey uses a dynamic route.
 
 // ─── Step-specific ambient blob colors ──────────────────────────────────────
 
@@ -280,22 +280,22 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
   // list and skips the H/O grade-config step (LCA is credit-based, common level).
   const isLca = isLcaYear(yearGroup ?? undefined);
 
+  const activeSteps: Step[] = isTransition
+    ? [5, 6, 4]
+    : isLca
+      ? [1, 2, 4, 5, 7, 9]
+      : [1, 2, 4, 5, 6, 7, 9];
+  const currentStageIndex = Math.max(0, activeSteps.indexOf(step));
+  const currentStage = currentStageIndex + 1;
+  const totalStages = activeSteps.length;
+  const needsExamDate = !(curriculumLevel === 'junior' && (yearGroup === '1st' || yearGroup === '2nd'));
+
   const shouldSkipStep = (s: Step): boolean => {
     // Phase 8: transition-to-senior mode only runs Subjects (5), Grades
     // (6), and North Star (4). Skip every other step so the linear step
     // walker advances cleanly even though we route 5 → 6 → 4 manually
     // via the goNext override below.
-    if (isTransition) {
-      return s !== 4 && s !== 5 && s !== 6;
-    }
-    // LCA: skip the H/O grade-config step entirely — all courses are common
-    // level and credit-based (Distinction / Merit / Pass), nothing to set.
-    if (isLca && s === 6) return true;
-    if (curriculumLevel !== 'junior') return false;
-    // Step 4: JC North Star lands in Phase 5 — no longer skipped.
-    // Step 6: JC descriptor band picker lands in Phase 4 — no longer skipped.
-    if (s === 7 && (yearGroup === '1st' || yearGroup === '2nd')) return true; // no imminent exam
-    return false;
+    return !activeSteps.includes(s);
   };
 
   // ─── Navigation ─────────────────────────────────────────────────────────
@@ -511,7 +511,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
         }
         return true;
       }
-      case 7: return examDate.length > 0 && getDaysUntil(examDate) > 0;
+      case 7: return restDays.size < 7 && (!needsExamDate || (examDate.length > 0 && getDaysUntil(examDate) > 0));
       case 8: return restDays.size < 7;
       case 9: return true;
       case 10: return true;
@@ -520,9 +520,9 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
   };
 
   const stepVariants = {
-    hidden: (dir: number) => ({ opacity: 0, x: dir > 0 ? 50 : -50 }),
-    visible: { opacity: 1, x: 0 },
-    exit: (dir: number) => ({ opacity: 0, x: dir > 0 ? -50 : 50 }),
+    hidden: (dir: number) => ({ opacity: 0, y: dir > 0 ? 14 : -10, scale: 0.992 }),
+    visible: { opacity: 1, y: 0, scale: 1 },
+    exit: (dir: number) => ({ opacity: 0, y: dir > 0 ? -8 : 12, scale: 0.995 }),
   };
 
   const daysLeft = getDaysUntil(examDate);
@@ -538,19 +538,24 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
 
       {/* ─── Fixed Header: Progress bar + Skip ─── */}
       <div className="shrink-0 relative z-10 px-6 pt-5 pb-3">
-        <div className="flex items-center justify-end mb-3">
-          <button
-            onClick={onSkip}
-            className="text-sm font-medium transition-colors text-[#A8A29E] dark:text-zinc-500"
-          >
-            Skip for now
-          </button>
+        <div className="flex items-center justify-between mb-3 max-w-md mx-auto">
+          <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#8D857E] dark:text-zinc-500">
+            Stage {currentStage} of {totalStages}
+          </span>
+          {step === 1 && !isTransition && (
+            <button
+              onClick={onSkip}
+              className="text-sm font-medium transition-colors text-[#8D857E] hover:text-[#1A1A1A] dark:text-zinc-500"
+            >
+              Skip for now
+            </button>
+          )}
         </div>
         <div className="max-w-md mx-auto">
           <div className="w-full h-[5px] rounded-full overflow-hidden" style={{ backgroundColor: 'rgba(0,0,0,0.08)' }}>
             <motion.div
               className="h-full rounded-full bg-[#1A1A1A] dark:bg-white"
-              animate={{ width: `${(step / TOTAL_STEPS) * 100}%` }}
+              animate={{ width: `${(currentStage / totalStages) * 100}%` }}
               transition={{ duration: 0.4, ease: [0.25, 1, 0.5, 1] }}
             />
           </div>
@@ -564,7 +569,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
 
             {/* Step 1: Welcome — staggered entrance, glass card, preview chips */}
             {step === 1 && (
-              <MotionDiv key="step1" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
+              <MotionDiv key="step1" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ type: 'spring', stiffness: 250, damping: 28, mass: 0.8 }}>
                 <div className="flex items-center justify-center min-h-[60vh]">
                   <div className="text-center w-full max-w-lg mx-auto">
                     {/* Word-by-word heading */}
@@ -627,7 +632,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
 
             {/* Step 2: Year Group — Junior Cycle + Senior Cycle two-band layout (Phase 1 JC) */}
             {step === 2 && (
-              <MotionDiv key="step2" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
+              <MotionDiv key="step2" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ type: 'spring', stiffness: 250, damping: 28, mass: 0.8 }}>
                 <div className="flex flex-col items-center justify-center min-h-[60vh] py-6">
                   <div className="text-center w-full max-w-xl mx-auto">
                     <motion.div
@@ -645,7 +650,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
                       transition={{ duration: 0.5, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
                       className="font-serif text-2xl font-bold mb-1 text-[#1A1A1A] dark:text-white"
                     >
-                      What Year Are You In?
+                      Your Year and Learning Style
                     </motion.h2>
                     <motion.p
                       initial={{ opacity: 0, y: 10 }}
@@ -653,7 +658,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
                       transition={{ duration: 0.5, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
                       className="text-sm mb-8 text-[#78716C] dark:text-zinc-400"
                     >
-                      This helps us show you the right events and deadlines for your year group.
+                      Choose your year, then the amount of explanation that suits you.
                     </motion.p>
 
                     {/* Junior Cycle band */}
@@ -747,6 +752,37 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
                         })}
                       </div>
                     </motion.div>
+
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: 0.7, ease: [0.16, 1, 0.3, 1] }}
+                      className="mt-9 border-t border-[#DED9D3] pt-7"
+                    >
+                      <div className="mb-3 text-left">
+                        <p className="text-[11px] font-semibold uppercase tracking-wider text-[#6B6B6B]">Learning preference</p>
+                        <p className="mt-1 text-xs text-[#78716C]">Choose the amount of explanation you prefer. You can change this later.</p>
+                      </div>
+                      <div className="grid gap-3 sm:grid-cols-2">
+                        {([
+                          { id: false, title: 'Full Modules', desc: 'All the science and strategy behind each idea.' },
+                          { id: true, title: 'Essentials', desc: 'Key ideas faster, with the same activities and practice.' },
+                        ] as const).map(option => {
+                          const selected = essentialsMode === option.id;
+                          return (
+                            <button
+                              key={String(option.id)}
+                              type="button"
+                              onClick={() => setEssentialsMode(option.id)}
+                              className={`rounded-2xl border-2 border-[#1A1A1A] px-4 py-4 text-left shadow-[4px_4px_0_0_#1A1A1A] transition-all duration-150 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-none ${selected ? 'bg-[#F26B1F] text-white' : 'bg-[#FDF8F0] text-[#1A1A1A]'}`}
+                            >
+                              <p className="font-bold">{option.title}</p>
+                              <p className={`mt-1 text-xs leading-relaxed ${selected ? 'text-white/80' : 'text-[#78716C]'}`}>{option.desc}</p>
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </motion.div>
                   </div>
                 </div>
               </MotionDiv>
@@ -819,7 +855,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
                 In transition mode (JC→senior re-onboarding) this is the LAST step:
                 picking the senior NS finalizes the whole flow via onComplete. */}
             {step === 4 && (
-              <MotionDiv key="step4" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
+              <MotionDiv key="step4" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ type: 'spring', stiffness: 250, damping: 28, mass: 0.8 }}>
                 {isTransition && (
                   <div className="mb-4 px-4 py-3 rounded-xl border-2 border-[#F26B1F] bg-[rgba(242,107,31,0.08)] text-center">
                     <p className="text-xs font-bold uppercase tracking-widest text-[#F26B1F] mb-1">Stepping into senior cycle</p>
@@ -844,7 +880,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
 
             {/* Step 5: Select Subjects */}
             {step === 5 && (
-              <MotionDiv key="step5" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
+              <MotionDiv key="step5" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ type: 'spring', stiffness: 250, damping: 28, mass: 0.8 }}>
                 {isTransition && (
                   <div className="mb-4 px-4 py-3 rounded-xl border-2 border-[#F26B1F] bg-[rgba(242,107,31,0.08)] text-center">
                     <p className="text-xs font-bold uppercase tracking-widest text-[#F26B1F] mb-1">Stepping into senior cycle</p>
@@ -903,7 +939,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
 
             {/* Step 6: Grade Configuration */}
             {step === 6 && curriculumLevel === 'junior' && (
-              <MotionDiv key="step6-jc" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
+              <MotionDiv key="step6-jc" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ type: 'spring', stiffness: 250, damping: 28, mass: 0.8 }}>
                 <h2 className="font-serif text-2xl font-bold text-center mb-1 text-[#1A1A1A] dark:text-white">Where are you now, where do you want to be?</h2>
                 <p className="text-sm text-center mb-6 text-[#78716C] dark:text-zinc-400">
                   For each subject, set your current band and where you're aiming.
@@ -1003,7 +1039,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
             )}
 
             {step === 6 && curriculumLevel !== 'junior' && !isLca && (
-              <MotionDiv key="step6" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
+              <MotionDiv key="step6" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ type: 'spring', stiffness: 250, damping: 28, mass: 0.8 }}>
                 {isTransition && (
                   <div className="mb-4 px-4 py-3 rounded-xl border-2 border-[#F26B1F] bg-[rgba(242,107,31,0.08)] text-center">
                     <p className="text-xs font-bold uppercase tracking-widest text-[#F26B1F] mb-1">Stepping into senior cycle</p>
@@ -1115,17 +1151,16 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
               </MotionDiv>
             )}
 
-            {/* Step 7: Exam Date — glass card */}
+            {/* Step 7: Exam date and weekly availability */}
             {step === 7 && (
-              <MotionDiv key="step7" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
-                <div className="flex items-center justify-center min-h-[65vh]">
-                  <div className="text-center w-full max-w-md mx-auto">
+              <MotionDiv key="step7" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ type: 'spring', stiffness: 250, damping: 28, mass: 0.8 }}>
+                <div className="w-full max-w-2xl mx-auto py-4 sm:py-8">
+                  <div className="text-center">
                     <motion.div
                       initial={{ scale: 0.8, opacity: 0 }}
                       animate={{ scale: 1, opacity: 1 }}
                       transition={{ duration: 0.5, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-                      className="w-14 h-14 mx-auto mb-5 rounded-2xl flex items-center justify-center"
-                      style={{ backgroundColor: 'rgba(242,107,31,0.1)' }}
+                      className="w-14 h-14 mx-auto mb-5 rounded-2xl border-2 border-[#1A1A1A] bg-[#FDF8F0] shadow-[3px_3px_0_0_#1A1A1A] flex items-center justify-center"
                     >
                       <Calendar size={28} style={{ color: COLORS.accent }} />
                     </motion.div>
@@ -1135,9 +1170,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
                       transition={{ duration: 0.5, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
                       className="font-serif text-2xl font-bold mb-1 text-[#1A1A1A] dark:text-white"
                     >
-                      {curriculumLevel === 'junior'
-                        ? 'When Is Your Junior Cert?'
-                        : 'When Do Exams Start?'}
+                      Build Your Schedule
                     </motion.h2>
                     <motion.p
                       initial={{ opacity: 0, y: 10 }}
@@ -1145,30 +1178,65 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
                       transition={{ duration: 0.5, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
                       className="text-sm mb-6 text-[#78716C] dark:text-zinc-400"
                     >
-                      We'll use this to plan your study intensity.
+                      {needsExamDate
+                        ? 'Add your exam date and choose the days that need to stay free.'
+                        : 'Choose the days that need to stay free. You can add an exam date later.'}
                     </motion.p>
+
+                    {needsExamDate && (
+                      <motion.div
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
+                        className="mx-auto mb-8 grid max-w-lg gap-3 sm:grid-cols-[1fr_auto] sm:items-stretch"
+                      >
+                        <label className="rounded-2xl border-2 border-[#1A1A1A] bg-white px-4 py-3 text-left">
+                          <span className="mb-1 block text-[10px] font-bold uppercase tracking-[0.16em] text-[#8A8178]">Exam date</span>
+                          <input
+                            type="date"
+                            value={examDate}
+                            onChange={(e) => setExamDate(e.target.value)}
+                            className="w-full bg-transparent text-base font-semibold text-[#1A1A1A] outline-none"
+                          />
+                        </label>
+                        {daysLeft > 0 && (
+                          <div className="flex min-w-32 items-center justify-center gap-2 rounded-2xl border-2 border-[#1A1A1A] bg-[#FDF8F0] px-5 py-3">
+                            <span className="font-apercu text-3xl font-black leading-none text-[#1A1A1A]">{daysLeft}</span>
+                            <span className="text-left text-[10px] font-bold uppercase leading-tight tracking-[0.12em] text-[#8A8178]">days<br />to go</span>
+                          </div>
+                        )}
+                      </motion.div>
+                    )}
+
                     <motion.div
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
+                      transition={{ duration: 0.5, delay: 0.48, ease: [0.16, 1, 0.3, 1] }}
+                      className="border-t border-[#DED9D3] pt-7"
                     >
-                      <input type="date" value={examDate} onChange={(e) => setExamDate(e.target.value)}
-                        className="w-full max-w-xs mx-auto px-4 py-3 rounded-xl text-center text-lg font-semibold text-[#1A1A1A] dark:text-white"
-                        style={{ backgroundColor: 'rgba(255,255,255,0.9)', border: '1px solid rgba(0,0,0,0.08)' }}
-                      />
+                      <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#8A8178]">Weekly availability</p>
+                      <p className="mx-auto mt-1 mb-5 max-w-md text-sm text-[#78716C]">Select any days when study is not possible. We will distribute sessions across the remaining days.</p>
+                      <div className="mx-auto grid max-w-lg grid-cols-2 gap-3 sm:grid-cols-4">
+                        {DAYS_OF_WEEK.map(day => {
+                          const isRest = restDays.has(day);
+                          return (
+                            <button
+                              key={day}
+                              type="button"
+                              onClick={() => toggleRestDay(day)}
+                              className={`flex min-h-16 items-center justify-between rounded-2xl border-2 border-[#1A1A1A] px-4 py-3 font-sans shadow-[3px_3px_0_0_#1A1A1A] transition-all duration-150 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-none ${isRest ? 'bg-[#F26B1F] text-[#FDF8F0]' : 'bg-[#FDF8F0] text-[#1A1A1A]'}`}
+                            >
+                              <span className="text-xs font-bold uppercase tracking-wider">{DAY_SHORTS[day]}</span>
+                              {isRest ? <CalendarOff size={17} /> : <Check size={17} />}
+                            </button>
+                          );
+                        })}
+                      </div>
+                      <p className="mt-5 text-sm text-[#8A8178]">
+                        {7 - restDays.size} study {7 - restDays.size === 1 ? 'day' : 'days'} per week
+                        {restDays.size > 0 ? ` · ${restDays.size} rest ${restDays.size === 1 ? 'day' : 'days'}` : ''}
+                      </p>
                     </motion.div>
-                    {daysLeft > 0 && (
-                      <motion.div
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.5, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                        className="mt-8 inline-flex flex-col items-center px-10 py-6 rounded-3xl"
-                        style={{ backgroundColor: 'rgba(255,255,255,0.5)', backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)', border: '1px solid rgba(255,255,255,0.6)' }}
-                      >
-                        <p className="font-apercu font-black text-[#1A1A1A] dark:text-white" style={{ fontSize: 'clamp(64px, 15vw, 100px)', lineHeight: 1 }}>{daysLeft}</p>
-                        <p className="text-sm font-bold uppercase tracking-widest mt-1 text-[#A8A29E] dark:text-zinc-500">days to go</p>
-                      </motion.div>
-                    )}
                   </div>
                 </div>
               </MotionDiv>
@@ -1247,11 +1315,18 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
               </MotionDiv>
             )}
 
-            {/* Step 9: Summary */}
+            {/* Step 9: Review and launch */}
             {step === 9 && (
-              <MotionDiv key="step9" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
-                <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white mb-1">Your Study Profile</h2>
-                <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">Here's a summary of everything you've set up.</p>
+              <MotionDiv key="step9" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ type: 'spring', stiffness: 250, damping: 28, mass: 0.8 }}>
+                <div className="mb-6 flex items-start gap-4">
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border-2 border-[#1A1A1A] bg-[#2F8A5B] text-white shadow-[3px_3px_0_0_#1A1A1A]">
+                    <Check size={22} strokeWidth={3} />
+                  </div>
+                  <div>
+                    <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white">You're ready, {userName.split(' ')[0] || userName}.</h2>
+                    <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">Review your plan, then start learning.</p>
+                  </div>
+                </div>
 
                 {/* Projected points banner — current → target with animated gain.
                     Senior-only: JC has no CAO points concept. The JC grade-summary
@@ -1261,7 +1336,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-                  className="p-6 rounded-2xl bg-white/70 dark:bg-white/[0.04] backdrop-blur-xl border border-zinc-200/50 dark:border-white/[0.08] shadow-[0_4px_40px_rgba(0,0,0,0.04)] dark:shadow-[0_4px_40px_rgba(0,0,0,0.2)] text-center mb-6"
+                  className="p-6 rounded-2xl bg-white border-2 border-[#1A1A1A] text-center mb-6"
                 >
                   {/* Current → Target row */}
                   <div className="flex items-center justify-center gap-3 mb-3">
@@ -1309,7 +1384,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
                           initial={{ opacity: 0, y: 10 }}
                           animate={{ opacity: 1, y: 0 }}
                           transition={{ duration: 0.3, delay: 0.2 + i * 0.04, ease: [0.16, 1, 0.3, 1] }}
-                          className="flex items-center justify-between p-3 rounded-xl bg-white/70 dark:bg-white/[0.03] backdrop-blur-sm border border-zinc-200/50 dark:border-white/[0.06]"
+                          className="flex items-center justify-between p-3 rounded-xl bg-white border border-[#D8D3CD]"
                         >
                           <div>
                             <p className="text-sm font-semibold text-zinc-800 dark:text-zinc-200">{name}</p>
@@ -1337,7 +1412,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.3, delay: 0.2 + i * 0.04, ease: [0.16, 1, 0.3, 1] }}
-                        className="flex items-center justify-between p-3 rounded-xl bg-white/70 dark:bg-white/[0.03] backdrop-blur-sm border border-zinc-200/50 dark:border-white/[0.06]"
+                        className="flex items-center justify-between p-3 rounded-xl bg-white border border-[#D8D3CD]"
                       >
                         <div>
                           <p className="text-sm font-semibold text-zinc-800 dark:text-zinc-200">{name}</p>
@@ -1365,8 +1440,27 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
                   transition={{ duration: 0.4, delay: 0.5 }}
                   className="flex items-center justify-center gap-6 text-sm text-zinc-400 dark:text-zinc-500"
                 >
-                  <span className="flex items-center gap-1.5"><Calendar size={14} /> {daysLeft} days left</span>
+                  {needsExamDate && <span className="flex items-center gap-1.5"><Calendar size={14} /> {daysLeft} days left</span>}
                   <span className="flex items-center gap-1.5"><CalendarOff size={14} /> {restDays.size} rest {restDays.size === 1 ? 'day' : 'days'}</span>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
+                  className="mt-8 flex flex-col items-center gap-3"
+                >
+                  <button
+                    type="button"
+                    onClick={() => onComplete(buildProfile(), northStarData ?? undefined, essentialsMode)}
+                    className="flex min-w-48 items-center gap-2 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] px-8 py-3 text-sm font-semibold text-[#FDF8F0] shadow-[4px_4px_0_0_#1A1A1A] transition-all duration-150 hover:-translate-y-0.5 hover:shadow-[6px_6px_0_0_#1A1A1A] active:translate-x-1 active:translate-y-1 active:shadow-none"
+                  >
+                    <span className="flex-1 text-center">Start Learning</span>
+                    <ArrowRight size={14} />
+                  </button>
+                  <button type="button" onClick={goBack} className="flex items-center gap-1.5 text-sm font-medium text-[#8A8178] transition-colors hover:text-[#1A1A1A]">
+                    <ArrowLeft size={14} /> Back
+                  </button>
                 </motion.div>
               </MotionDiv>
             )}
@@ -1469,7 +1563,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userName, onComplete, onSkip, m
       </div>
 
       {/* ─── Fixed Footer: Back / Continue (hidden on step 4 — North Star has its own nav) ─── */}
-      {step !== 4 && step !== 10 && (
+      {step !== 4 && step !== 9 && step !== 10 && (
         <div className="shrink-0 px-6 py-5 relative z-10">
           <div className="max-w-2xl mx-auto flex flex-col items-center gap-3">
             {step < TOTAL_STEPS ? (

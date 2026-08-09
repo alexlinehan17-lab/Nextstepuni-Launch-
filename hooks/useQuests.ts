@@ -19,6 +19,7 @@ import {
   type QuestDefinition,
   type PersonalizedQuestTemplate,
 } from '../questData';
+import { normaliseDailyQuestJP } from '../journeyEconomyConfig';
 
 // ── Types ──────────────────────────────────────────────────
 
@@ -75,7 +76,7 @@ export function useQuests(
   const {
     studySessions: sessions,
     studyDebriefs: debriefs,
-    topicMastery,
+    topicMasteryV2,
     unifiedMockResults: mockResults,
     questRewards: firestoreRewards,
     progressLoaded,
@@ -118,11 +119,8 @@ export function useQuests(
       quest = candidate;
     } else {
       // Determine condition context
-      const hasShaky = topicMastery
-        ? Object.values(topicMastery).some(subjects =>
-            Object.values(subjects).some(t => t.confidence === 'shaky')
-          )
-        : false;
+      const canonicalMastery = Object.values(topicMasteryV2.topics);
+      const hasShaky = canonicalMastery.some(topic => topic.confidence === 'shaky');
 
       const inProgressModule = courses.find(c => {
         const p = userProgress[c.id];
@@ -153,10 +151,16 @@ export function useQuests(
 
       // Find weakest subject (most shaky topics)
       let weakestSubject = studentProfile?.subjects[0]?.subjectName ?? '';
-      if (topicMastery) {
+      if (canonicalMastery.length > 0) {
         let worstCount = -1;
-        for (const [subject, topics] of Object.entries(topicMastery)) {
-          const shakyCount = Object.values(topics).filter(t => t.confidence === 'shaky').length;
+        const bySubject = new Map<string, typeof canonicalMastery>();
+        for (const entry of canonicalMastery) {
+          const entries = bySubject.get(entry.subjectName) ?? [];
+          entries.push(entry);
+          bySubject.set(entry.subjectName, entries);
+        }
+        for (const [subject, topics] of bySubject) {
+          const shakyCount = topics.filter(topic => topic.confidence === 'shaky').length;
           if (shakyCount > worstCount) {
             worstCount = shakyCount;
             weakestSubject = subject;
@@ -214,15 +218,10 @@ export function useQuests(
         break;
       }
       case 'topic-update': {
-        if (topicMastery) {
+        if (Object.keys(topicMasteryV2.topics).length > 0) {
           const todayStart = new Date(todayKey + 'T00:00:00').getTime();
-          let count = 0;
-          for (const subjects of Object.values(topicMastery)) {
-            for (const entry of Object.values(subjects)) {
-              if (entry.updatedAt >= todayStart) count++;
-            }
-          }
-          current = count;
+          current = Object.values(topicMasteryV2.topics)
+            .filter(entry => entry.updatedAt >= todayStart).length;
         }
         break;
       }
@@ -237,8 +236,13 @@ export function useQuests(
     const isCompleted = current >= quest.target;
     const isClaimed = !!questRewards[quest.id];
 
-    return { quest, current, isCompleted, isClaimed, dayNumber, isOnboarding };
-  }, [isLoaded, uid, studentProfile, topicMastery, courses, userProgress, sessions, debriefs, streak, timetableCompletions, questRewards, mockResults]);
+    const liveQuest = {
+      ...quest,
+      rewardPoints: normaliseDailyQuestJP(quest.rewardPoints, isOnboarding),
+    };
+
+    return { quest: liveQuest, current, isCompleted, isClaimed, dayNumber, isOnboarding };
+  }, [isLoaded, uid, studentProfile, topicMasteryV2, courses, userProgress, sessions, debriefs, streak, timetableCompletions, questRewards, mockResults]);
 
   // Claim reward — set questRewards IMMEDIATELY (before the write) to prevent
   // the button from being clickable during the Firestore round-trip

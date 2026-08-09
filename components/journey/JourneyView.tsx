@@ -3,12 +3,12 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useCallback, useRef, useEffect } from 'react';
+import React, { useState, useCallback, useRef, useEffect, useMemo } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
-import { ArrowLeft, Mountain, Users, Heart, Gift, X } from 'lucide-react';
+import { ArrowLeft, Mountain, Users, Heart, Gift, X, Hammer, RotateCw, Check, PackageOpen } from 'lucide-react';
 import { type SessionUser } from '../../utils/authUtils';
-import { type NorthStar, type UserProgress } from '../../types';
+import { type IslandPlacement, type NorthStar, type ShopItem, type UserProgress } from '../../types';
 import { type MilestoneReward } from '../../islandShopData';
 
 import { useIslandShop, type EnrichedShopItem } from '../../hooks/useIslandShop';
@@ -26,6 +26,9 @@ import { useGifts } from '../../hooks/useGifts';
 import { KUDOS_MESSAGES } from '../../kudosData';
 import { STARTER_PACKS } from '../../islandShopData';
 import { getAvatarUrl } from '../../utils/authUtils';
+import { getBuildCells, type BuildCell } from './build/islandBuildModel';
+import { getPlacementRules } from '../../services/islandStateMigration';
+import { getJourneyProgress } from '../../journeyProgression';
 
 interface CourseInfo {
   id: string;
@@ -60,7 +63,10 @@ const JourneyView: React.FC<JourneyViewProps> = ({
     availableItems,
     waterColor,
     stats,
-    purchaseItem,
+    purchaseItemAt,
+    updatePlacement,
+    storePlacement,
+    placeInventoryItem,
     placeGiftItem,
     hasItem,
     milestoneRewards,
@@ -72,6 +78,13 @@ const JourneyView: React.FC<JourneyViewProps> = ({
   const [purchasedItemName, setPurchasedItemName] = useState<string | null>(null);
   const [rewardModalItem, setRewardModalItem] = useState<string | null>(null);
   const [rewardModalModules, setRewardModalModules] = useState(0);
+  const [buildMode, setBuildMode] = useState(false);
+  const [pendingItem, setPendingItem] = useState<EnrichedShopItem | null>(null);
+  const [pendingInventoryId, setPendingInventoryId] = useState<string | null>(null);
+  const [selectedCell, setSelectedCell] = useState<BuildCell | null>(null);
+  const [selectedPlacement, setSelectedPlacement] = useState<IslandPlacement | null>(null);
+  const [buildRotation, setBuildRotation] = useState(0);
+  const [buildMessage, setBuildMessage] = useState<string | null>(null);
 
   // Peer Islands state
   type PeerViewMode = 'own' | 'peer-list' | 'peer-island';
@@ -106,16 +119,27 @@ const JourneyView: React.FC<JourneyViewProps> = ({
   // DEV override: infinite points for testing
   const DEV_INFINITE_POINTS = false;
   const effectivePoints = DEV_INFINITE_POINTS ? 999999 : pointsBalance;
+  const journeyProgression = useMemo(() => getJourneyProgress({
+    completedModules: completedCount,
+    nonStarterPlacements: islandState?.placements.filter(placement => !placement.isStarter).length ?? 0,
+    claimedRewards: islandState?.claimedRewards?.length ?? 0,
+    inventoryItems: islandState?.inventory?.length ?? 0,
+  }), [completedCount, islandState?.placements, islandState?.claimedRewards, islandState?.inventory]);
 
-  const handlePurchase = useCallback(async (item: EnrichedShopItem) => {
-    const success = await purchaseItem(item, effectivePoints);
-    if (success) {
-      onPointsReload();
-      setCelebrationActive(true);
-      setTimeout(() => setCelebrationActive(false), 2500);
-      setPurchasedItemName(item.name);
-    }
-  }, [purchaseItem, effectivePoints, onPointsReload]);
+  const beginPlacement = useCallback((item: EnrichedShopItem, inventoryId?: string) => {
+    setPendingItem(item);
+    setPendingInventoryId(inventoryId ?? null);
+    setSelectedPlacement(null);
+    setSelectedCell(null);
+    setBuildRotation(0);
+    setBuildMessage('Choose a highlighted tile');
+    setSheetOpen(false);
+    setBuildMode(true);
+  }, []);
+
+  const handlePurchase = useCallback((item: EnrichedShopItem) => {
+    beginPlacement(item);
+  }, [beginPlacement]);
 
   const handleClaimReward = useCallback(async (reward: MilestoneReward) => {
     const success = await claimReward(reward);
@@ -138,6 +162,105 @@ const JourneyView: React.FC<JourneyViewProps> = ({
     }
     lastNotifiedCountRef.current = claimableRewards.length;
   }, [milestoneRewards]);
+
+  const selectedPlacementItem = useMemo<ShopItem | null>(() => {
+    if (!selectedPlacement) return null;
+    return availableItems.find(item => item.id === selectedPlacement.itemId)
+      ?? milestoneRewards.map(entry => entry.reward.item).find(item => item.id === selectedPlacement.itemId)
+      ?? null;
+  }, [selectedPlacement, availableItems, milestoneRewards]);
+
+  const activeBuildItem = pendingItem ?? selectedPlacementItem;
+  const placementState = useMemo(() => {
+    if (!selectedPlacement || !islandState) return islandState;
+    return {
+      ...islandState,
+      placements: islandState.placements.filter(p => p.placementId !== selectedPlacement.placementId),
+    };
+  }, [islandState, selectedPlacement]);
+  const buildCells = useMemo(() => {
+    if (!buildMode || !placementState || !activeBuildItem) return [];
+    return getBuildCells(placementState, activeBuildItem);
+  }, [buildMode, placementState, activeBuildItem]);
+
+  const previewPlacement = useMemo<IslandPlacement | null>(() => {
+    if (!activeBuildItem || !selectedCell?.valid) return null;
+    return {
+      placementId: 'build-preview',
+      itemId: activeBuildItem.id,
+      model: activeBuildItem.model,
+      type: activeBuildItem.type,
+      layer: getPlacementRules(activeBuildItem).layer,
+      q: selectedCell.q,
+      r: selectedCell.r,
+      rotation: buildRotation,
+      ...(activeBuildItem.type === 'decoration' ? { scale: activeBuildItem.defaultScale ?? 0.5 } : {}),
+    };
+  }, [activeBuildItem, selectedCell, buildRotation]);
+
+  const exitBuildMode = useCallback(() => {
+    setBuildMode(false);
+    setPendingItem(null);
+    setPendingInventoryId(null);
+    setSelectedPlacement(null);
+    setSelectedCell(null);
+    setBuildMessage(null);
+    setBuildRotation(0);
+  }, []);
+
+  const handleSelectBuildCell = useCallback((cell: BuildCell) => {
+    setBuildMessage(cell.valid
+      ? cell.recommended
+        ? 'Great fit — rotate it or confirm'
+        : 'This works here — rotate it or confirm'
+      : (cell.reason ?? 'This tile is unavailable'));
+    if (cell.valid) setSelectedCell(cell);
+  }, []);
+
+  const handleSelectOwnedPlacement = useCallback((placement: IslandPlacement) => {
+    if (!buildMode || placement.isStarter || placement.layer === 'terrain') return;
+    const item = availableItems.find(entry => entry.id === placement.itemId)
+      ?? milestoneRewards.map(entry => entry.reward.item).find(entry => entry.id === placement.itemId);
+    if (!item) {
+      setBuildMessage('This legacy object cannot be moved yet');
+      return;
+    }
+    setPendingItem(null);
+    setPendingInventoryId(null);
+    setSelectedPlacement(placement);
+    setSelectedCell({ q: placement.q, r: placement.r, valid: true, terrain: 'unknown' });
+    setBuildRotation(placement.rotation ?? 0);
+    setBuildMessage('Move, rotate or put this object away');
+  }, [buildMode, availableItems, milestoneRewards]);
+
+  const confirmBuildPlacement = useCallback(async () => {
+    if (!selectedCell?.valid || !activeBuildItem) return;
+    let success = false;
+    if (selectedPlacement?.placementId) {
+      success = await updatePlacement(selectedPlacement.placementId, {
+        q: selectedCell.q,
+        r: selectedCell.r,
+        rotation: buildRotation,
+      });
+    } else if (pendingInventoryId) {
+      success = await placeInventoryItem(pendingInventoryId, selectedCell.q, selectedCell.r, buildRotation);
+    } else if (pendingItem) {
+      success = await purchaseItemAt(pendingItem, effectivePoints, selectedCell.q, selectedCell.r, buildRotation);
+      if (success) onPointsReload();
+    }
+    if (!success) {
+      setBuildMessage('That placement could not be saved. Try another tile.');
+      return;
+    }
+    setCelebrationActive(true);
+    setTimeout(() => setCelebrationActive(false), 1800);
+    if (pendingItem && !pendingInventoryId) setPurchasedItemName(pendingItem.name);
+    setPendingItem(null);
+    setPendingInventoryId(null);
+    setSelectedPlacement(null);
+    setSelectedCell(null);
+    setBuildMessage('Placed. Choose another object or finish building.');
+  }, [selectedCell, activeBuildItem, selectedPlacement, pendingInventoryId, pendingItem, updatePlacement, placeInventoryItem, purchaseItemAt, effectivePoints, onPointsReload]);
 
   // No North Star set
   if (!northStar) {
@@ -187,10 +310,21 @@ const JourneyView: React.FC<JourneyViewProps> = ({
         {/* 3D Canvas area */}
         <div className="relative flex-1 min-w-0">
           <JourneyCanvas
-            placements={isViewingPeer ? selectedPeer.islandState.placements : islandState.placements}
+            placements={isViewingPeer
+              ? selectedPeer.islandState.placements
+              : selectedPlacement?.placementId
+                ? islandState.placements.filter(p => p.placementId !== selectedPlacement.placementId)
+                : islandState.placements}
             waterColor={isViewingPeer ? (STARTER_PACKS[selectedPeer.northStarCategory]?.waterColor ?? waterColor) : waterColor}
             celebrationActive={isViewingPeer ? false : celebrationActive}
             northStarStatement={peerViewMode !== 'own' || sheetOpen || kudosModalOpen || giftsModalOpen ? undefined : northStar.statement}
+            buildMode={buildMode && !isViewingPeer}
+            buildCells={buildCells}
+            selectedCell={selectedCell}
+            previewPlacement={previewPlacement}
+            selectedPlacementId={selectedPlacement?.placementId}
+            onSelectCell={handleSelectBuildCell}
+            onSelectPlacement={handleSelectOwnedPlacement}
           />
 
           {/* Top overlay */}
@@ -239,8 +373,20 @@ const JourneyView: React.FC<JourneyViewProps> = ({
             )}
 
             {/* Right side: kudos, gifts, peer islands buttons */}
-            {!isViewingPeer && user.school ? (
+            {!isViewingPeer ? (
               <div className="flex items-center gap-2">
+                <button
+                  onClick={() => buildMode ? exitBuildMode() : setBuildMode(true)}
+                  className={`flex items-center gap-2 px-3 py-2.5 rounded-xl backdrop-blur-sm border transition-colors ${
+                    buildMode
+                      ? 'bg-[#F26B1F] border-[#F26B1F] text-white'
+                      : 'bg-white/90 dark:bg-zinc-900/90 border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-white'
+                  }`}
+                >
+                  <Hammer size={17} />
+                  <span className="hidden sm:inline text-xs font-bold">{buildMode ? 'Finish' : 'Build'}</span>
+                </button>
+                {user.school && <>
                 {kudosCount > 0 && (
                   <button
                     onClick={() => setKudosModalOpen(true)}
@@ -269,19 +415,124 @@ const JourneyView: React.FC<JourneyViewProps> = ({
                 >
                   <Users size={18} className="text-zinc-900 dark:text-white" />
                 </button>
+                </>}
               </div>
             ) : (
               <div className="w-[42px]" />
             )}
           </div>
 
+          <AnimatePresence>
+            {buildMode && !isViewingPeer && (
+              <MotionDiv
+                initial={{ opacity: 0, y: 24 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 18 }}
+                transition={{ type: 'spring', stiffness: 280, damping: 28 }}
+                className="absolute z-[80] left-4 right-4 bottom-5 mx-auto max-w-2xl rounded-[22px] border-2 border-[#343230] bg-[#FFFDF8]/95 px-4 py-3 shadow-[0_7px_0_#343230] backdrop-blur-md dark:bg-[#201F1D]/95"
+              >
+                <div className="flex flex-wrap items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-[#FDE8DB] text-[#C94F10] flex items-center justify-center shrink-0 dark:bg-[#4A291D] dark:text-[#FF9A62]">
+                    {activeBuildItem ? <Hammer size={19} /> : <PackageOpen size={19} />}
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <p className="text-sm font-bold text-[#242220] dark:text-[#F5F1E8] truncate">
+                      {activeBuildItem?.name ?? 'Build Mode'}
+                    </p>
+                    <p className="text-xs text-[#756F69] dark:text-[#B8B1A8] truncate">
+                      {buildMessage ?? 'Open the shop or select an object to arrange your island'}
+                    </p>
+                  </div>
+                  <div className="ml-auto flex shrink-0 items-center gap-2">
+                  {activeBuildItem && (
+                    <button
+                      onClick={() => setBuildRotation(rotation => (rotation + 1) % 6)}
+                      className="p-2.5 rounded-xl border border-[#D8D1C8] text-[#343230] hover:bg-[#F4EFE8] dark:border-[#57524C] dark:text-[#F5F1E8] dark:hover:bg-[#302E2B]"
+                      aria-label="Rotate object"
+                    >
+                      <RotateCw size={18} />
+                    </button>
+                  )}
+                  {selectedPlacement && !selectedPlacement.isStarter && (
+                    <button
+                      onClick={async () => {
+                        if (!selectedPlacement.placementId) return;
+                        const success = await storePlacement(selectedPlacement.placementId);
+                        if (success) {
+                          setSelectedPlacement(null);
+                          setSelectedCell(null);
+                          setBuildMessage('Object moved to your unplaced items');
+                        }
+                      }}
+                      className="px-3 py-2.5 rounded-xl border border-[#D8D1C8] text-xs font-bold text-[#343230] dark:border-[#57524C] dark:text-[#F5F1E8]"
+                    >
+                      Put away
+                    </button>
+                  )}
+                  {previewPlacement && (
+                    <button
+                      onClick={confirmBuildPlacement}
+                      className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-[#F26B1F] text-white text-xs font-bold border-2 border-[#343230] shadow-[0_3px_0_#343230] active:translate-y-[2px] active:shadow-[0_1px_0_#343230]"
+                    >
+                      <Check size={16} /> Confirm
+                    </button>
+                  )}
+                  {!activeBuildItem && (
+                    <button
+                      onClick={() => setSheetOpen(true)}
+                      className="px-4 py-2.5 rounded-xl bg-[#F26B1F] text-white text-xs font-bold border-2 border-[#343230] shadow-[0_3px_0_#343230]"
+                    >
+                      Open shop
+                    </button>
+                  )}
+                  {activeBuildItem && (
+                    <button
+                      onClick={() => {
+                        setPendingItem(null);
+                        setPendingInventoryId(null);
+                        setSelectedPlacement(null);
+                        setSelectedCell(null);
+                        setBuildMessage('Selection cancelled');
+                      }}
+                      className="p-2 text-[#756F69] dark:text-[#B8B1A8]"
+                      aria-label="Cancel placement"
+                    >
+                      <X size={18} />
+                    </button>
+                  )}
+                  </div>
+                </div>
+                {(islandState.inventory?.length ?? 0) > 0 && !activeBuildItem && (
+                  <div className="mt-3 pt-3 border-t border-[#E5DED5] dark:border-[#403D39] flex gap-2 overflow-x-auto">
+                    {islandState.inventory!.map(entry => {
+                      const item = availableItems.find(candidate => candidate.id === entry.itemId)
+                        ?? milestoneRewards.map(candidate => candidate.reward.item).find(candidate => candidate.id === entry.itemId);
+                      if (!item) return null;
+                      return (
+                        <button
+                          key={entry.inventoryId}
+                          onClick={() => beginPlacement(item as EnrichedShopItem, entry.inventoryId)}
+                          className="shrink-0 px-3 py-2 rounded-xl border border-[#D8D1C8] bg-white text-xs font-semibold text-[#343230] dark:bg-[#2A2825] dark:border-[#57524C] dark:text-[#F5F1E8]"
+                        >
+                          {item.name}
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
+              </MotionDiv>
+            )}
+          </AnimatePresence>
+
           {/* Progress Pill — shown when drawer is closed and viewing own island */}
           <AnimatePresence>
-            {!sheetOpen && !isViewingPeer && (
+            {!sheetOpen && !isViewingPeer && !buildMode && (
               <JourneyProgressPill
                 tileCount={stats.tileCount}
                 decoCount={stats.decoCount}
                 pointsBalance={effectivePoints}
+                stageName={journeyProgression.stage.name}
+                stageProgress={journeyProgression.progress}
                 onTap={() => setSheetOpen(true)}
               />
             )}
@@ -299,6 +550,12 @@ const JourneyView: React.FC<JourneyViewProps> = ({
             hasItem={hasItem}
             milestoneRewards={milestoneRewards}
             onClaimReward={handleClaimReward}
+            progression={journeyProgression}
+            onOpenBuildMode={() => {
+              setSheetOpen(false);
+              setBuildMode(true);
+              setBuildMessage('Choose an item from your Build Tray');
+            }}
           />
         )}
       </div>
@@ -316,7 +573,11 @@ const JourneyView: React.FC<JourneyViewProps> = ({
       {!isViewingPeer && (
         <MilestoneRewardModal
           isOpen={rewardModalItem !== null}
-          onClose={() => setRewardModalItem(null)}
+          onClose={() => {
+            setRewardModalItem(null);
+            setBuildMode(true);
+            setBuildMessage('Your reward is waiting in the Build Tray');
+          }}
           itemName={rewardModalItem}
           modulesCompleted={rewardModalModules}
         />
@@ -415,7 +676,7 @@ const JourneyView: React.FC<JourneyViewProps> = ({
                         }}
                         className="shrink-0 px-3 py-1.5 rounded-lg text-[10px] font-bold bg-amber-500 text-white hover:bg-amber-600 transition-colors"
                       >
-                        Place on Island
+                        Add to Build Tray
                       </button>
                     </div>
                   ))}

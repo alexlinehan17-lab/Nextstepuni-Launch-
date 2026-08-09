@@ -4,7 +4,7 @@
  */
 
 import React, { createContext, useContext, useState, useEffect, useRef, useCallback, useMemo } from 'react';
-import { type UserProgress, type NorthStar, type TopicMasteryMap, type UnifiedMockResult } from '../types';
+import { type UserProgress, type NorthStar, type TopicMasteryMap, type TopicMasteryV2, type UnifiedMockResult } from '../types';
 import { type StudentSubjectProfile } from '../components/subjectData';
 import { computeStreak } from '../components/timetableAlgorithm';
 import { lastActiveDateFrom } from '../utils/weekDates';
@@ -18,6 +18,8 @@ import {
   getStudySessions,
   type ProgressDocument,
 } from '../services/progressRepository';
+import { migrateTopicMastery } from '../services/topicMasteryMigration';
+import { reconcileMockResults } from '../services/mockResultsRepository';
 
 // ─── Types ──────────────────────────────────────────────────
 
@@ -76,6 +78,8 @@ interface ProgressContextValue {
   studySessions: StudySessionRecord[];
   studyDebriefs: DebriefEntry[];
   topicMastery: TopicMasteryMap | undefined;
+  /** Canonical, specification-scoped mastery. New decision logic must use this. */
+  topicMasteryV2: TopicMasteryV2;
   unifiedMockResults: UnifiedMockResult[];
   questRewards: Record<string, string>;
 
@@ -250,7 +254,16 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   const studySessions = sessionsFromSubcollection;
   const studyDebriefs: DebriefEntry[] = rawProgressDoc.studyDebriefs ?? [];
   const topicMastery: TopicMasteryMap | undefined = rawProgressDoc.topicMastery ?? undefined;
-  const unifiedMockResults: UnifiedMockResult[] = rawProgressDoc.unifiedMockResults ?? [];
+  const topicMasteryV2 = useMemo(
+    () => rawProgressDoc.topicMasteryV2?.schemaVersion === 2
+      ? rawProgressDoc.topicMasteryV2
+      : migrateTopicMastery(topicMastery, studentProfile?.examStartDate),
+    [rawProgressDoc.topicMasteryV2, topicMastery, studentProfile?.examStartDate],
+  );
+  const unifiedMockResults: UnifiedMockResult[] = useMemo(
+    () => reconcileMockResults(rawProgressDoc),
+    [rawProgressDoc],
+  );
   const questRewards: Record<string, string> = rawProgressDoc.questRewards ?? {};
 
   const value: ProgressContextValue = {
@@ -276,6 +289,7 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     studySessions,
     studyDebriefs,
     topicMastery,
+    topicMasteryV2,
     unifiedMockResults,
     questRewards,
     rawProgressDoc,

@@ -176,9 +176,9 @@ const WarRoom: React.FC<WarRoomProps> = ({ uid, profile, timetableCompletions })
   const blockDuration = profile.defaultBlockDuration ?? 45;
 
   const allocations = useMemo(() => {
-    const priorities = computeSubjectPriorities(subjects);
+    const priorities = computeSubjectPriorities(subjects, undefined, profile.examStartDate);
     return allocateSessions(priorities, weeksUntilExam);
-  }, [subjects, weeksUntilExam]);
+  }, [subjects, weeksUntilExam, profile.examStartDate]);
 
   const hoursStudiedMap = useMemo(() => {
     const map: Record<string, number> = {};
@@ -323,7 +323,12 @@ const WarRoom: React.FC<WarRoomProps> = ({ uid, profile, timetableCompletions })
               />
             )}
             {activePanel === 1 && (
-              <CoveragePanel subjects={subjects} topicMastery={topicMastery} debriefs={debriefs} />
+              <CoveragePanel
+                subjects={subjects}
+                topicMastery={topicMastery}
+                debriefs={debriefs}
+                examDate={profile.examStartDate}
+              />
             )}
             {activePanel === 2 && (
               <TrajectoryPanel subjects={subjects} mockResults={derivedMockResults} mockResultsHook={mockResultsHook} daysUntilExam={daysUntilExam} />

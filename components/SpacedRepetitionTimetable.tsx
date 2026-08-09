@@ -23,8 +23,8 @@ import {
 import {
   computeSubjectPrioritiesForCurriculum,
   allocateSessions, generateWeeklyTimetable,
-  computeWeeksUntilExam, computeIntensityFactor,
-  type SessionAllocation,
+  computeWeeksUntilExam, computeIntensityFactor, computeWeeklyStudyTarget,
+  type SessionAllocation, type SubjectSM2State,
 } from './timetableAlgorithm';
 import { useAuth } from '../contexts/AuthContext';
 import { type DebriefEntry, computeStrategyHints, type SubjectStrategyHint } from './StudyDebrief';
@@ -51,8 +51,6 @@ interface SpacedRepetitionTimetableProps {
   completions?: TimetableCompletions;
   streak?: TimetableStreak;
   onToggleCompletion?: (dateKey: string, blockId: string, completed: boolean) => void;
-  points?: number;
-  onSpendPoints?: (type: 'skip-session' | 'rest-day-pass', detail?: string) => void;
   onOpenJournal?: () => void;
   skippedSessions?: string[];
   onStudyNow?: (block: TimetableBlockInfo) => void;
@@ -335,7 +333,7 @@ const BlockCueEditor: React.FC<{ subject: string; saved?: { trigger: string; the
   );
 };
 
-const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ profile, uid, onOpenSettings, onRestDaysChange, completions = {}, streak = { currentStreak: 0, lastActiveDate: '', longestStreak: 0 }, onToggleCompletion, points = 0, onSpendPoints, onOpenJournal: _onOpenJournal, skippedSessions = [], onStudyNow, onBlockDurationChange: _onBlockDurationChange, schoolEvents = [] }) => {
+const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ profile, uid, onOpenSettings, onRestDaysChange, completions = {}, streak = { currentStreak: 0, lastActiveDate: '', longestStreak: 0 }, onToggleCompletion, onOpenJournal: _onOpenJournal, skippedSessions = [], onStudyNow, onBlockDurationChange: _onBlockDurationChange, schoolEvents = [] }) => {
   const { cues: planCues, setCue: setPlanCue } = usePlanCues(uid);
   // ─── Curriculum flags (Phase 2 JC support) ────────────────────────────────
   // isJunior: branch points-vs-bands UI and priority algorithm.
@@ -350,7 +348,9 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
   const skippedSet = useMemo(() => new Set(skippedSessions), [skippedSessions]);
   const [weekOffset, setWeekOffset] = useState(0);
   const [showExplainer, setShowExplainer] = useState(false);
-  const [restDays, setRestDays] = useState<Set<string>>(() => new Set(profile.restDays || []));
+  // Four active days is the minimum needed to distribute a credible weekly
+  // workload without turning one evening into a cramming session.
+  const [restDays, setRestDays] = useState<Set<string>>(() => new Set((profile.restDays || []).slice(0, 3)));
   const [studyHoursRange, setStudyHoursRange] = useState<'week' | 'month' | 'all'>('week');
   const [blockActionModal, setBlockActionModal] = useState<{ block: StudyBlock; dayIndex: number; blockIndex: number } | null>(null);
 
@@ -360,14 +360,19 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
 
   // Strategy hints from Learning DNA (per-subject best strategy)
   const [strategyHints, setStrategyHints] = useState<Record<string, SubjectStrategyHint>>({});
+  const [sm2States, setSm2States] = useState<SubjectSM2State[]>([]);
   useEffect(() => {
     if (!uid) return;
     let cancelled = false;
     (async () => {
       try {
         const snap = await getDoc(doc(db, 'progress', uid));
-        const data = snap.data()?.studyDebriefs as DebriefEntry[] | undefined;
-        if (!cancelled && data) setStrategyHints(computeStrategyHints(data));
+        const progress = snap.data();
+        const data = progress?.studyDebriefs as DebriefEntry[] | undefined;
+        if (!cancelled) {
+          if (data) setStrategyHints(computeStrategyHints(data));
+          setSm2States((progress?.sm2States as SubjectSM2State[] | undefined) ?? []);
+        }
       } catch (err) { console.error('Failed to load strategy hints:', err); }
     })();
     return () => { cancelled = true; };
@@ -377,7 +382,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
     setRestDays(prev => {
       const next = new Set(prev);
       if (next.has(day)) next.delete(day); else next.add(day);
-      if (next.size >= 7) return prev; // must keep at least 1 study day
+      if (next.size > 3) return prev; // keep at least four active study days
       onRestDaysChange?.(Array.from(next));
       return next;
     });
@@ -390,12 +395,12 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
   // resolve to the "far from exams" base values. The UI ribbon below is
   // hidden for this case.
   const weeksUntilExam = isPreExamJunior
-    ? 22 // > 20 → maxWeeklyHours falls to the 10h baseline, intensity → 0
+    ? 22 // school-term cadence: the lower building-phase workload
     : (profile.examStartDate ? computeWeeksUntilExam(profile.examStartDate) : 22);
 
   const priorities = useMemo(
-    () => computeSubjectPrioritiesForCurriculum(profile.subjects, topicMastery, curriculumLevel),
-    [profile.subjects, topicMastery, curriculumLevel]
+    () => computeSubjectPrioritiesForCurriculum(profile.subjects, topicMastery, curriculumLevel, profile.examStartDate),
+    [profile.subjects, topicMastery, curriculumLevel, profile.examStartDate]
   );
 
   // Top 3 bargain subjects (for badge display on study blocks)
@@ -442,16 +447,21 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
   const studiedRemainingMins = studiedMinutes % 60;
   const studyHoursRangeLabel = studyHoursRange === 'week' ? 'this week' : studyHoursRange === 'month' ? 'this month' : 'all time';
 
-  const allocations = useMemo(
-    () => allocateSessions(priorities, Math.max(0, weeksUntilExam - weekOffset)),
-    [priorities, weeksUntilExam, weekOffset]
+  const blockDuration = profile.defaultBlockDuration ?? 45;
+  const effectiveWeeksUntilExam = Math.max(0, weeksUntilExam - weekOffset);
+  const weeklyTarget = useMemo(
+    () => computeWeeklyStudyTarget(effectiveWeeksUntilExam),
+    [effectiveWeeksUntilExam]
   );
 
-  const blockDuration = profile.defaultBlockDuration ?? 45;
+  const allocations = useMemo(
+    () => allocateSessions(priorities, effectiveWeeksUntilExam, sm2States, blockDuration),
+    [priorities, effectiveWeeksUntilExam, sm2States, blockDuration]
+  );
 
   const timetable = useMemo(
-    () => generateWeeklyTimetable(allocations, weeksUntilExam, weekOffset, restDaysArray, blockDuration, undefined, topicMastery),
-    [allocations, weeksUntilExam, weekOffset, restDaysArray, blockDuration, topicMastery]
+    () => generateWeeklyTimetable(allocations, weeksUntilExam, weekOffset, restDaysArray, blockDuration, sm2States, topicMastery),
+    [allocations, weeksUntilExam, weekOffset, restDaysArray, blockDuration, sm2States, topicMastery]
   );
 
   const weekStart = getWeekStartDate(weekOffset);
@@ -460,8 +470,8 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
 
   const totalSessions = timetable.reduce((sum, day) => sum + day.blocks.length, 0);
   const totalMinutes = totalSessions * blockDuration;
-  const _totalHours = Math.floor(totalMinutes / 60);
-  const _remainingMins = totalMinutes % 60;
+  const totalHours = Math.floor(totalMinutes / 60);
+  const remainingMins = totalMinutes % 60;
 
   const _daysUntilExam = profile.examStartDate
     ? Math.max(0, Math.ceil((new Date(profile.examStartDate).getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24)))
@@ -532,16 +542,6 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
     const blockId = getBlockId(block, blockIndex);
     setBlockActionModal(null);
     onToggleCompletion(dateKey, blockId, true);
-  };
-
-  const handleSkipSession = () => {
-    if (!blockActionModal || !onSpendPoints) return;
-    const { block, dayIndex, blockIndex } = blockActionModal;
-    const blockId = getBlockId(block, blockIndex);
-    const dateKey = getDateKeyForDay(dayIndex);
-    const fullId = `${dateKey}::${blockId}`;
-    onSpendPoints('skip-session', fullId);
-    setBlockActionModal(null);
   };
 
   // Helper: get school events for a specific day index
@@ -684,13 +684,17 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
         {streak.currentStreak > 0 && <span className="text-[#A8A29E] dark:text-zinc-500">·</span>}
         <span className="font-medium">{todayCompletedCount}/{todayTotalCount} blocks today</span>
         <span className="text-[#A8A29E] dark:text-zinc-500">·</span>
+        <span className="font-medium">
+          {totalHours}h {remainingMins > 0 ? `${remainingMins}m ` : ''}planned
+        </span>
+        <span className="text-[#A8A29E] dark:text-zinc-500">·</span>
         <button
           onClick={() => setStudyHoursRange(r => r === 'week' ? 'month' : r === 'month' ? 'all' : 'week')}
           className="font-medium transition-colors cursor-pointer"
           style={{ color: COLORS.accent }}
           title="Click to cycle: this week / this month / all time"
         >
-          {studiedHours}h {studiedRemainingMins}m {studyHoursRangeLabel}
+          {studiedHours}h {studiedRemainingMins}m completed {studyHoursRangeLabel}
         </button>
       </div>
 
@@ -769,6 +773,9 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
           })}
         </div>
       </div>
+      <p className="text-[10px] text-[#A8A29E] dark:text-zinc-500 -mt-1">
+        Choose up to three rest days. Keeping four active days lets us spread the work without overloading one evening.
+      </p>
 
       {/* ── Today Summary Card (shown when today is selected) ── */}
       {showTodayView && selectedDay === todayDayIndex && (
@@ -974,6 +981,33 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
         </div>
       )}
 
+      {/* ── Why this week looks like this ── */}
+      <div
+        className="p-4 rounded-xl grid grid-cols-1 md:grid-cols-[minmax(0,1fr)_minmax(0,1.35fr)] gap-4 dark:bg-zinc-900 dark:border-zinc-700"
+        style={{ backgroundColor: '#FAF7F4', border: '1px solid #D8D2CB' }}
+      >
+        <div>
+          <p className="text-[10px] font-bold uppercase tracking-[0.18em] mb-1" style={{ color: COLORS.accent }}>
+            This week's workload
+          </p>
+          <p className="text-lg font-bold text-[#1C1917] dark:text-white">
+            {totalSessions} focused blocks · {totalHours}h{remainingMins > 0 ? ` ${remainingMins}m` : ''}
+          </p>
+          <p className="text-xs text-[#78716C] dark:text-zinc-300 mt-1 leading-relaxed">{weeklyTarget.explanation}</p>
+        </div>
+        <div className="text-xs text-[#57534E] dark:text-zinc-300 leading-relaxed md:border-l md:border-[#D8D2CB] dark:md:border-zinc-700 md:pl-4">
+          <p>
+            We balance work across your available days first, then space repeat sessions for the same subject apart.
+            A weekend may carry one extra block, but one day should never absorb the whole week.
+          </p>
+          <p className="mt-2">
+            {isJunior
+              ? 'Subjects furthest below your target band receive more practice; every subject still receives maintenance time.'
+              : 'Subjects with the strongest combination of grade gap, achievable marks and shaky topics receive more time; every subject still receives maintenance time.'}
+          </p>
+        </div>
+      </div>
+
       {/* ── Priority Breakdown ── */}
       <div className="p-5 rounded-xl bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
         <div className="flex items-center justify-between mb-4">
@@ -1026,7 +1060,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
                   <div className="p-4 rounded-xl" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
-                    <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: COLORS.accent }}>Points Gain</p>
+                    <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: COLORS.accent }}>Best-six CAO gain</p>
                     <p className="text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed">
                       The CAO points difference between your target grade and current grade. Bigger gaps = more room to grow = higher priority.
                     </p>
@@ -1034,13 +1068,13 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                   <div className="p-4 rounded-xl" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
                     <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: '#C4873B' }}>Efficiency Multiplier</p>
                     <p className="text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed">
-                      Subjects where you're currently weaker get a boost. Going from H2 to H1 is much harder than H7 to H5 — your study time is better spent where grade jumps come more easily.
+                      The timetable values points that would change your best-six total, then favours targets requiring fewer grade steps. Every subject still receives maintenance time.
                     </p>
                   </div>
                 </div>
                 <div className="p-3 rounded-xl text-center" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
                   <p className="text-xs font-mono font-bold text-zinc-600 dark:text-zinc-300">
-                    Priority Score = Points Gain <span style={{ color: COLORS.accent }}>x</span> Difficulty Multiplier
+                    Priority = Best-six Gain <span style={{ color: COLORS.accent }}>x</span> Target Attainability <span style={{ color: COLORS.accent }}>x</span> Syllabus Need
                   </p>
                 </div>
               </div>
@@ -1083,11 +1117,11 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                             {p.currentGrade} <ArrowRight size={8} /> {p.targetGrade}
                           </span>
                           <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full font-bold" style={{ backgroundColor: 'rgba(242,107,31,0.1)', color: COLORS.accent }}>
-                            +{p.pointsGain} pts{p.isMaths ? ' (incl. bonus)' : ''}
+                            +{p.bestSixPointsGain ?? p.pointsGain} best-six pts{p.isMaths ? ' (incl. bonus)' : ''}
                           </span>
                           <span className="font-mono text-[#A8A29E] dark:text-zinc-500">x</span>
                           <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full font-bold" style={{ backgroundColor: 'rgba(196,135,59,0.1)', color: '#C4873B' }}>
-                            {p.difficultyMultiplier.toFixed(2)} efficiency
+                            {p.difficultyMultiplier.toFixed(2)} attainability
                           </span>
                           <span className="font-mono text-[#A8A29E] dark:text-zinc-500">=</span>
                           <span className="inline-flex items-center px-2 py-0.5 rounded-full font-bold bg-[#FAF7F4] dark:bg-zinc-900" style={{ color: COLORS.accent }}>
@@ -1097,13 +1131,9 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
 
                         {/* Explanation sentence */}
                         <p className="text-[10px] mt-2 leading-relaxed text-[#A8A29E] dark:text-zinc-500">
-                          {p.pointsGain === 0
+                          {(p.bestSixPointsGain ?? p.pointsGain) === 0
                             ? `Already at your target — this subject receives minimum sessions to maintain.`
-                            : p.difficultyMultiplier >= 0.7
-                              ? `Currently at ${p.currentGrade}, so the efficiency multiplier is high (${p.difficultyMultiplier.toFixed(2)}) — grade jumps are more achievable from this level, so your study time goes further here.`
-                              : p.difficultyMultiplier >= 0.5
-                                ? `At ${p.currentGrade}, the efficiency multiplier is moderate (${p.difficultyMultiplier.toFixed(2)}) — improvement is possible but takes consistent work.`
-                                : `Starting from ${p.currentGrade}, the efficiency multiplier is lower (${p.difficultyMultiplier.toFixed(2)}) because you're already strong — each further grade jump is harder to achieve (diminishing returns).`
+                            : `${p.currentGrade} → ${p.targetGrade} requires ${p.targetGradeSteps ?? 0} grade ${p.targetGradeSteps === 1 ? 'step' : 'steps'} and could add ${p.bestSixPointsGain ?? p.pointsGain} points to your present best-six total.`
                           }
                         </p>
                       </div>
@@ -1208,7 +1238,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
               <div className="p-4 rounded-xl" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
                 <p className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: COLORS.accent }}>Session Allocation</p>
                 <p className="text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed">
-                  Sessions are split proportionally by priority score, with a minimum of 1 per subject. The total number of sessions per week ramps from <span className="font-bold">14</span> (2/day) to <span className="font-bold">21</span> (3/day) as exams approach. Right now you're at <span className="font-bold" style={{ color: COLORS.accent }}>{totalSessions} sessions</span> this week.
+                  Sessions are split by priority score, with maintenance time retained for every subject. The recommended workload starts at about <span className="font-bold">6 focused hours</span> a week, rises gradually through the year and is capped at <span className="font-bold">12 hours</span> close to the exam. Your current week contains <span className="font-bold" style={{ color: COLORS.accent }}>{totalSessions} sessions · {totalHours}h{remainingMins > 0 ? ` ${remainingMins}m` : ''}</span>.
                 </p>
               </div>
             </div>
@@ -1237,16 +1267,15 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[200] bg-black/40 flex items-center justify-center p-4"
+            className="fixed inset-0 z-[200] bg-[#1A1A1A]/55 flex items-end sm:items-center justify-center p-0 sm:p-4"
             onClick={() => setBlockActionModal(null)}
           >
             <MotionDiv
               initial={{ scale: 0.95, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.95, opacity: 0 }}
-              transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
-              className="w-full max-w-xs space-y-5 p-6"
-              style={{ backgroundColor: '#fff', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 16 }}
+              transition={{ type: 'spring', stiffness: 280, damping: 28, mass: 0.85 }}
+              className="w-full max-w-sm space-y-5 rounded-t-[24px] border-[1.5px] border-[#383838] bg-[#FAFBF6] p-6 shadow-[5px_5px_0_0_#383838] sm:rounded-[24px]"
               onClick={(e: React.MouseEvent) => e.stopPropagation()}
             >
               {/* Block info */}
@@ -1275,20 +1304,10 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                 </div>
                 <button
                   onClick={handleAlreadyStudied}
-                  className="w-full py-3 rounded-xl text-sm font-medium transition-all bg-[#FAF7F4] dark:bg-zinc-900 text-[#A8A29E] dark:text-zinc-500"
-                  style={{ borderRadius: 12 }}
+                  className="w-full py-3 rounded-xl border border-[#CFC9C2] text-sm font-medium transition-all bg-white dark:bg-zinc-900 text-[#6F6861] dark:text-zinc-400"
                 >
                   Already Studied (+5 pts)
                 </button>
-                {onSpendPoints && points >= 20 && (
-                  <button
-                    onClick={handleSkipSession}
-                    className="w-full py-3 rounded-xl text-sm font-medium transition-all text-[#F26B1F]"
-                    style={{ borderRadius: 12, backgroundColor: COLORS.accentTint, border: '1px solid rgba(242,107,31,0.2)' }}
-                  >
-                    Skip Session (20 pts)
-                  </button>
-                )}
                 <button
                   onClick={() => setBlockActionModal(null)}
                   className="w-full py-2 text-sm transition-colors text-[#A8A29E] dark:text-zinc-500"

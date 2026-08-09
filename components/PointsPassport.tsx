@@ -7,7 +7,7 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import {
-  TrendingUp, Zap, Plus, Trash2,
+  TrendingUp, Plus, Trash2,
   ArrowRight, Star, Calendar, Award, Rocket,
   Shield, Target, Pencil,
 } from 'lucide-react';
@@ -23,18 +23,25 @@ import {
   computeBestSixTotal, bestLeverToward,
 } from './pointsScenarioStore';
 import { useToast } from './Toast';
-import { useMockResults } from '../hooks/useMockResults';
+import { useInnovationData } from '../contexts/InnovationDataContext';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { COLORS } from '../design/tokens';
 import { logError } from '../utils/logError';
+import { LoadingState } from './ui/SystemState';
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
 interface PointsPassportProps {
   uid: string;
   profile: StudentSubjectProfile;
+  onOpenSettings?: () => void;
+  initialTab?: PassportTab;
 }
+
+type PassportTab = 'overview' | 'mocks' | 'planner' | 'scenarios' | 'bargains';
+
+const CAOPointsSimulator = React.lazy(() => import('./CAOPointsSimulator'));
 
 interface MockResult {
   id: string;
@@ -104,12 +111,13 @@ function getDot(name: string) { return SUBJECT_DOT[name] || 'bg-zinc-500'; }
 
 // ─── Component ───────────────────────────────────────────────────────────────
 
-const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
+const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSettings, initialTab = 'overview' }) => {
   const { showToast } = useToast();
-  const [activeTab, setActiveTab] = useState<'overview' | 'mocks' | 'scenarios' | 'bargains'>('overview');
+  const [activeTab, setActiveTab] = useState<PassportTab>(initialTab);
 
-  // Shared mock results hook
-  const mockResultsHook = useMockResults(uid);
+  // One app-wide academic record. War Zone, the CAO Simulator and Points
+  // Passport must never instantiate competing copies of mock history.
+  const { mockResults: mockResultsHook } = useInnovationData();
   const loaded = mockResultsHook.isLoaded;
 
   // Derive MockResult[] for local display from unified mocks
@@ -171,7 +179,31 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
   }, [profile]);
 
   const trajectoryInfo = getTrajectoryInfo(currentPoints);
-  const bargains = useMemo(() => computeBargains(profile), [profile]);
+  // Re-rank the authored effort hints using the only gain that matters to the
+  // student: the change to their actual best-six total. A raw subject increase
+  // can be worth zero CAO points when that subject remains outside the best six.
+  const bargains = useMemo(() => {
+    const baselineEntries = profile.subjects.map(s => ({ subjectName: s.subjectName, grade: s.currentGrade }));
+    const baselineTotal = computeBestSixTotal(baselineEntries);
+    return computeBargains(profile)
+      .map(bargain => {
+        const changed = baselineEntries.map(entry => entry.subjectName === bargain.subjectName
+          ? { ...entry, grade: bargain.toGrade }
+          : entry);
+        return { ...bargain, pointsGain: computeBestSixTotal(changed) - baselineTotal };
+      })
+      .filter(bargain => bargain.pointsGain > 0)
+      .sort((a, b) => b.pointsGain - a.pointsGain);
+  }, [profile]);
+
+  const topThreePotential = useMemo(() => {
+    const changedGrades = new Map(bargains.slice(0, 3).map(b => [b.subjectName, b.toGrade]));
+    const changed = profile.subjects.map(s => ({
+      subjectName: s.subjectName,
+      grade: changedGrades.get(s.subjectName) ?? s.currentGrade,
+    }));
+    return computeBestSixTotal(changed) - currentPoints;
+  }, [bargains, profile, currentPoints]);
 
   // Pick a relevant micro-story
   const relevantStory = useMemo(() => {
@@ -285,16 +317,15 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
   };
 
   if (!loaded) {
-    return (
-      <div className="flex items-center justify-center py-20">
-        <div className="w-6 h-6 border-2 rounded-full animate-spin" style={{ borderColor: COLORS.accent, borderTopColor: 'transparent' }} />
-      </div>
-    );
+    return <LoadingState label="Loading your points passport" />;
   }
 
   return (
     <div className="space-y-6">
 
+      {/* Grade Planner carries its own live totals because they react to the
+          student's unsaved what-if edits. Other sections share this snapshot. */}
+      {activeTab !== 'planner' && <>
       {/* Points overview cards — stack on phones where 3-up makes "+133 pts"
           and similar widths overflow the card edges. */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -334,14 +365,16 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
           </div>
         </div>
       </div>
+      </>}
 
       {/* Tab switcher */}
-      <div className="flex gap-1 p-1 bg-zinc-100 dark:bg-zinc-800/50 rounded-xl">
+      <div className="flex flex-wrap gap-1 p-1 bg-zinc-100 dark:bg-zinc-800/50 rounded-xl">
         {([
           { key: 'overview' as const, label: 'Overview' },
           { key: 'mocks' as const, label: 'Mock Tracker' },
+          { key: 'planner' as const, label: 'Grade Planner' },
           { key: 'scenarios' as const, label: 'Scenarios' },
-          { key: 'bargains' as const, label: 'Best Bargains' },
+          { key: 'bargains' as const, label: 'Best Moves' },
         ]).map(tab => (
           <button
             key={tab.key}
@@ -359,6 +392,22 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
 
       {/* Tab content */}
       <AnimatePresence mode="wait">
+        {activeTab === 'planner' && (
+          <MotionDiv
+            key="planner"
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+          >
+            <React.Suspense fallback={<LoadingState label="Loading your grade planner" />}>
+              <CAOPointsSimulator
+                profile={profile}
+                uid={uid}
+                onOpenSettings={onOpenSettings ?? (() => undefined)}
+              />
+            </React.Suspense>
+          </MotionDiv>
+        )}
         {/* ── Overview Tab ── */}
         {activeTab === 'overview' && (
           <MotionDiv
@@ -648,7 +697,9 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
             <div className="flex items-center gap-3 p-3 rounded-xl bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
               <TrendingUp size={14} className="shrink-0 text-[#9A9590] dark:text-zinc-500" />
               <p className="flex-1 min-w-0 text-xs text-zinc-600 dark:text-zinc-400 truncate">
-                {scenarioBaseline.isMock ? 'Your mocks so far' : 'Your current grades'} &middot; {scenarioBaseline.label}
+                {scenarioBaseline.isMock
+                  ? `Latest recorded mock · ${scenarioBaseline.label}`
+                  : 'Current grades from your subject profile'}
               </p>
               <span className="text-sm font-bold shrink-0" style={{ color: COLORS.accent }}>{scenarioBaseline.total} pts</span>
             </div>
@@ -810,15 +861,17 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
             exit={{ opacity: 0, y: -8 }}
             className="space-y-5"
           >
-            <div className="flex items-start gap-3 p-4 rounded-xl" style={{ backgroundColor: '#FDEEDF', borderLeft: `3px solid ${COLORS.accent}` }}>
-              <Zap size={16} className="shrink-0 mt-0.5" style={{ color: COLORS.accent }} />
-              <div>
-                <p className="text-sm font-bold" style={{ color: '#8C3A0E' }}>Best Points Bargains</p>
-                <p className="text-xs leading-relaxed mt-1" style={{ color: '#8C3A0E' }}>
-                  These are the grade improvements that give you the most points for the least effort. Focus here first.
-                </p>
-              </div>
-            </div>
+            <header className="pb-5 border-b border-[#DDD7D0] dark:border-white/15">
+              <p className="text-[10px] font-bold tracking-[0.2em] uppercase" style={{ color: COLORS.accent }}>
+                Where points move
+              </p>
+              <h3 className="mt-2 font-serif text-2xl font-semibold text-zinc-900 dark:text-zinc-100">
+                Best points bargains
+              </h3>
+              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+                Grade moves with a strong points return for the effort involved. Use these as priorities, not promises.
+              </p>
+            </header>
 
             {bargains.length > 0 ? (
               <div className="space-y-2">
@@ -840,7 +893,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
                         </p>
                       </div>
                       <div className="text-right shrink-0">
-                        <span className="text-sm font-bold px-2.5 py-1 rounded-full" style={{ backgroundColor: '#E8F2EC', color: '#1F5F3E' }}>
+                        <span className="text-sm font-bold" style={{ color: COLORS.accent }}>
                           +{b.pointsGain} pts
                         </span>
                       </div>
@@ -869,20 +922,22 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile }) => {
 
             {/* Total potential gain */}
             {bargains.length > 0 && (
-              <div className="rounded-xl p-4" style={{ backgroundColor: '#EDF2EE', border: '0.5px solid rgba(0,0,0,0.07)' }}>
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <Rocket size={16} style={{ color: '#6B8F71' }} />
-                    <span className="text-sm font-bold" style={{ color: '#4A6B4F' }}>
-                      Total potential from top 3 bargains
-                    </span>
+              <div className="rounded-[18px] bg-white dark:bg-zinc-900 px-5 py-4 border-2" style={{ borderColor: COLORS.accent }}>
+                <div className="flex items-end justify-between gap-4">
+                  <div>
+                    <p className="text-[10px] font-bold tracking-[0.18em] uppercase" style={{ color: COLORS.accent }}>
+                      Three-move preview
+                    </p>
+                    <p className="mt-1 text-sm font-bold text-zinc-800 dark:text-zinc-200">
+                      Total potential from the top three
+                    </p>
                   </div>
-                  <span className="text-lg font-bold" style={{ color: '#4A6B4F' }}>
-                    +{bargains.slice(0, 3).reduce((sum, b) => sum + b.pointsGain, 0)} pts
+                  <span className="text-xl font-bold shrink-0" style={{ color: COLORS.accent }}>
+                    +{topThreePotential} pts
                   </span>
                 </div>
-                <p className="text-xs mt-1" style={{ color: '#6B8F71' }}>
-                  That would take you from {currentPoints} to {currentPoints + bargains.slice(0, 3).reduce((sum, b) => sum + b.pointsGain, 0)} points.
+                <p className="text-xs mt-2 text-zinc-600 dark:text-zinc-400">
+                  That would take you from {currentPoints} to {currentPoints + topThreePotential} points.
                 </p>
               </div>
             )}

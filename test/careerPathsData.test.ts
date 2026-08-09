@@ -42,6 +42,19 @@ describe('Career Paths data integrity', () => {
     }
   });
 
+  test('salary claims carry enough provenance to avoid false precision', () => {
+    for (const c of CAREERS) {
+      expect(c.sources.length, `${c.id} sources`).toBeGreaterThanOrEqual(3);
+      expect(c.salary.note.length, `${c.id} salary context`).toBeGreaterThanOrEqual(20);
+      if (c.salary.basis === 'public-scale') {
+        expect(
+          c.sources.some((source) => source.includes('hse.ie') || source.includes('assets.hse.ie') || source.includes('gov.ie')),
+          `${c.id} public pay source`,
+        ).toBe(true);
+      }
+    }
+  });
+
   test('each card is fully populated', () => {
     for (const c of CAREERS) {
       expect(c.title.length, `${c.id} title`).toBeGreaterThan(0);

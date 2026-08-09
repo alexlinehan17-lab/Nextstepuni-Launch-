@@ -30,12 +30,14 @@ export type CareerField =
 
 /** Irish salary band in € thousands (typical, not outliers). */
 export interface SalaryBand {
-  /** Typical starting full-time salary, € thousands. */
+  /** Rounded typical early-career full-time gross base pay, € thousands. */
   startK: number;
-  /** Typical experienced / senior salary, € thousands. */
+  /** Rounded typical experienced gross base pay, € thousands. */
   experiencedK: number;
   /** One short context line, e.g. "public pay scale" or "varies by firm". */
   note: string;
+  /** How confidently the figures can be compared with a conventional salary. */
+  basis?: 'public-scale' | 'market-estimate' | 'mixed-income';
 }
 
 /** One way in from the Leaving Cert. */

@@ -29,10 +29,10 @@ export const ModulesIcon: React.FC = () => (
     />
     <image
       href="/assets/section-icons/modules.png"
-      x="10"
-      y="10"
-      width="80"
-      height="80"
+      x="0"
+      y="0"
+      width="100"
+      height="100"
       preserveAspectRatio="xMidYMid meet"
     />
   </svg>
@@ -116,6 +116,26 @@ export const LearningPathsIcon: React.FC = () => (
       y="10"
       width="80"
       height="80"
+      preserveAspectRatio="xMidYMid meet"
+    />
+  </svg>
+);
+
+// ── My Journey — sea-glass blob, buildable island + destination flag ───
+
+export const MyJourneyIcon: React.FC = () => (
+  <svg viewBox="0 0 100 100" width="100%" height="100%">
+    <path
+      d="M 12 30 Q 9 49 17 68 Q 27 85 50 86 Q 72 84 84 66 Q 89 45 79 27 Q 62 13 40 16 Q 21 18 12 30 Z"
+      fill="#8FC8C0"
+      opacity="0.75"
+    />
+    <image
+      href="/assets/section-icons/my-journey.png"
+      x="-12"
+      y="-12"
+      width="124"
+      height="124"
       preserveAspectRatio="xMidYMid meet"
     />
   </svg>

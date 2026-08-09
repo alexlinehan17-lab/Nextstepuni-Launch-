@@ -15,6 +15,7 @@ import { AVATAR_SEEDS, getAvatarUrl, nextYearAction, yearGroupLabel, yearGroupTo
 import { type YearGroup } from './subjectData';
 
 const EXTRA_AVATAR_SEEDS = ['Luna', 'Kai', 'Suki', 'Dara', 'Nico', 'Asha', 'Finn', 'Yuki'];
+const AVATAR_PRICE_JP = 120;
 import { type UserSettings } from '../types';
 
 interface SettingsModalProps {
@@ -23,6 +24,8 @@ interface SettingsModalProps {
   settings: UserSettings;
   updateSetting: <K extends keyof UserSettings>(key: K, value: UserSettings[K]) => void;
   unlockedAvatarSeeds?: string[];
+  pointsBalance?: number;
+  onPurchaseAvatar?: (seed: string, price: number) => Promise<boolean>;
   unlockedThemes?: string[];
   unlockedCardStyles?: string[];
   userName?: string;
@@ -41,6 +44,7 @@ interface SettingsModalProps {
 const SettingsModal: React.FC<SettingsModalProps> = ({
   isOpen, onClose, settings, updateSetting,
   unlockedAvatarSeeds = [], unlockedThemes: _unlockedThemes = [], unlockedCardStyles: _unlockedCardStyles = [],
+  pointsBalance = 0, onPurchaseAvatar,
   userName, userSchool, userYearGroup, onChangeSubjects, onResetNorthStar, onAdvanceYear, onLogout,
 }) => {
   useModal(isOpen, onClose);
@@ -50,6 +54,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
   const [showSaved, setShowSaved] = useState(false);
   const [legalDoc, setLegalDoc] = useState<LegalDoc | null>(null);
   const [dataRightsOpen, setDataRightsOpen] = useState(false);
+  const [purchasingAvatar, setPurchasingAvatar] = useState<string | null>(null);
   const flashTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
@@ -71,7 +76,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 bg-black/60 flex items-center justify-center z-[200] p-4"
+          className="fixed inset-0 bg-[#1A1A1A]/55 flex items-end sm:items-center justify-center z-[200] p-0 sm:p-4"
           onClick={onClose}
         >
           <MotionDiv
@@ -79,12 +84,12 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.96, opacity: 0 }}
             transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="relative bg-white dark:bg-zinc-900 border border-zinc-200/50 dark:border-white/[0.08] rounded-2xl w-full max-w-md shadow-[0_24px_64px_rgba(0,0,0,0.12)] dark:shadow-[0_24px_64px_rgba(0,0,0,0.5)] overflow-hidden max-h-[90vh] overflow-y-auto"
+            className="relative bg-[#FAFBF6] dark:bg-zinc-900 border-[1.5px] border-[#383838] dark:border-zinc-600 rounded-t-[24px] sm:rounded-[24px] w-full max-w-md shadow-[5px_5px_0_0_#383838] overflow-hidden max-h-[92dvh] overflow-y-auto"
             onClick={(e: React.MouseEvent) => e.stopPropagation()}
           >
             {/* Header */}
-            <div className="flex items-center justify-between p-6 pb-0">
-              <h2 className="font-sans text-xl font-semibold text-zinc-900 dark:text-white tracking-tight">
+            <div className="flex items-center justify-between p-6 pb-4 border-b border-[#DDD8D2] dark:border-zinc-700">
+              <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white tracking-tight">
                 Settings
               </h2>
               <div className="flex items-center gap-3">
@@ -104,7 +109,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                 <button
                   onClick={onClose}
                   aria-label="Close"
-                  className="text-zinc-400 dark:text-white/25 hover:text-zinc-600 dark:hover:text-white/50 transition-colors"
+                  className="flex h-9 w-9 items-center justify-center rounded-xl border border-[#CFC9C2] bg-white text-[#6F6861] transition-colors hover:border-[#383838] hover:text-[#1A1A1A] dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"
                 >
                   <X size={18} />
                 </button>
@@ -127,9 +132,14 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
 
               {/* Avatar */}
               <section>
-                <h3 className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-3">
-                  Avatar
-                </h3>
+                <div className="mb-3 flex items-center justify-between">
+                  <h3 className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
+                    Avatar
+                  </h3>
+                  <span className="font-mono text-[10px] font-bold text-[#B94712] dark:text-[#FF9A64]">
+                    {pointsBalance} JP available
+                  </span>
+                </div>
                 <div className="grid grid-cols-4 gap-2.5">
                   {AVATAR_SEEDS.map(seed => (
                     <button
@@ -149,32 +159,57 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                   ))}
                   {EXTRA_AVATAR_SEEDS.map(seed => {
                     const isUnlocked = unlockedAvatarSeeds.includes(seed);
+                    const canAfford = pointsBalance >= AVATAR_PRICE_JP;
+                    const isPurchasing = purchasingAvatar === seed;
                     return (
-                      <div key={seed} className="relative" title={isUnlocked ? seed : 'Unlock in Reward Shop'}>
+                      <div key={seed} className="group relative" title={isUnlocked ? seed : `${AVATAR_PRICE_JP} JP`}>
                         <button
-                          onClick={() => {
+                          onClick={async () => {
                             if (isUnlocked) {
                               updateSetting('avatar', seed);
                               flash();
+                              return;
+                            }
+                            if (!onPurchaseAvatar || isPurchasing) return;
+                            setPurchasingAvatar(seed);
+                            try {
+                              const purchased = await onPurchaseAvatar(seed, AVATAR_PRICE_JP);
+                              if (purchased) {
+                                updateSetting('avatar', seed);
+                                flash();
+                              }
+                            } finally {
+                              setPurchasingAvatar(null);
                             }
                           }}
-                          disabled={!isUnlocked}
+                          aria-label={isUnlocked ? `Select ${seed} avatar` : `Unlock ${seed} avatar for ${AVATAR_PRICE_JP} JP`}
+                          disabled={isPurchasing}
                           className={`w-full rounded-xl aspect-square p-1.5 transition-all ${
                             isUnlocked
                               ? settings.avatar === seed
                                 ? 'ring-2 ring-[var(--accent-hex)] bg-[rgba(var(--accent),0.1)]'
                                 : 'bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] hover:ring-zinc-300 dark:hover:ring-white/[0.15]'
-                              : 'bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] cursor-not-allowed'
+                              : 'bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] hover:ring-[#383838] focus-visible:ring-[#383838]'
                           }`}
                         >
                           <img
                             src={getAvatarUrl(seed)}
                             alt={seed}
-                            className={`w-full h-full rounded-lg ${!isUnlocked ? 'grayscale opacity-30' : ''}`}
+                            className={`w-full h-full rounded-lg transition-all ${!isUnlocked ? 'grayscale opacity-35 group-hover:opacity-20 group-focus-within:opacity-20' : ''}`}
                           />
+                          {!isUnlocked && (
+                            <span className="absolute inset-1.5 flex flex-col items-center justify-center rounded-lg bg-[#20201F]/90 text-white opacity-0 transition-opacity group-hover:opacity-100 group-focus-within:opacity-100">
+                              <span className="font-mono text-[11px] font-bold text-[#FF8A4C]">
+                                {isPurchasing ? 'BUYING…' : `${AVATAR_PRICE_JP} JP`}
+                              </span>
+                              <span className="mt-0.5 text-[9px] font-semibold">
+                                {canAfford ? 'Unlock' : `Need ${AVATAR_PRICE_JP - pointsBalance} more`}
+                              </span>
+                            </span>
+                          )}
                         </button>
                         {!isUnlocked && (
-                          <div className="absolute bottom-0.5 right-0.5 w-4 h-4 rounded-full bg-zinc-400 dark:bg-zinc-600 flex items-center justify-center">
+                          <div className="pointer-events-none absolute bottom-0.5 right-0.5 flex h-5 w-5 items-center justify-center rounded-full border border-white bg-[#383838] transition-opacity group-hover:opacity-0 group-focus-within:opacity-0">
                             <Lock size={8} className="text-white" />
                           </div>
                         )}

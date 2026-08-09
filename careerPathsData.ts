@@ -2,14 +2,15 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * "Career Paths" content — 12 careers, source-grounded Irish data authored +
- * adversarially fact-checked (salary bands cross-checked vs HSE/public pay
- * scales, gradireland, Morgan McKinley/Hays guides; routes vs CAO/SOLAS/QQI and
- * the professional bodies). Salaries are € thousands, typical (not outliers).
+ * "Career Paths" content — 27 careers, source-grounded Irish data authored +
+ * adversarially fact-checked (salary bands cross-checked vs June 2026 public
+ * pay scales, 2026 market guides and professional bodies; routes vs CAO/SOLAS/
+ * QQI and the relevant regulators). Salaries are rounded € thousands, gross
+ * base-pay estimates rather than promises or total compensation.
  * `matchStrings` map each career to the real `careerPaths` strings in
  * futureFinderData's CAO_COURSES, so "courses that lead here" and the Future
  * Finder "jump to your matches" are computed from real catalog data.
- * Generated 2026-06-03 from the verified content workflow.
+ * Pay and route review completed 2026-08-09.
  */
 
 import { type CareerCard } from './types/careerPaths';
@@ -28,9 +29,10 @@ export const CAREERS: CareerCard[] = [
       "Work 12-hour shifts on your feet, days and nights"
     ],
     "salary": {
-      "startK": 37,
-      "experiencedK": 54,
-      "note": "HSE public scale; shift/weekend premiums add more"
+      "startK": 45,
+      "experiencedK": 58,
+      "note": "June 2026 HSE qualified staff-nurse scale, rounded; shift and weekend premiums are additional",
+      "basis": "public-scale"
     },
     "routes": [
       {
@@ -76,8 +78,7 @@ export const CAREERS: CareerCard[] = [
       "Midwife (via progression)"
     ],
     "sources": [
-      "https://jobvacancies.ie/nursing-pay-scales-explained-ireland-2025/",
-      "https://www.hse.ie/eng/staff/resources/hr-circulars/august-1st-2025-pay-scales.pdf",
+      "https://assets.hse.ie/media/documents/June_2026_-_pay_scales.pdf",
       "https://www.frsrecruitment.com/irish-nursing-salary-trends-2025-what-nurses-need-to-know",
       "https://www.ucc.ie/en/ck710/",
       "https://www2.cao.ie/points/l8.php"
@@ -150,7 +151,7 @@ export const CAREERS: CareerCard[] = [
     "title": "Software Developer",
     "field": "tech",
     "emoji": "💻",
-    "tagline": "Build apps and tools, paid well, lots of Googling",
+    "tagline": "Build software, solve problems and keep learning.",
     "whatYouDo": [
       "Write and fix code so apps and websites actually work",
       "Hunt down bugs and figure out why something broke",
@@ -159,7 +160,8 @@ export const CAREERS: CareerCard[] = [
     "salary": {
       "startK": 39,
       "experiencedK": 75,
-      "note": "higher in Dublin and big tech firms"
+      "note": "2026 permanent-role estimate; location, speciality and company size matter",
+      "basis": "market-estimate"
     },
     "routes": [
       {
@@ -225,7 +227,8 @@ export const CAREERS: CareerCard[] = [
     "salary": {
       "startK": 38,
       "experiencedK": 72,
-      "note": "Chartered status adds €6-10k; software pays more"
+      "note": "2026 cross-discipline estimate; branch and experience vary widely",
+      "basis": "market-estimate"
     },
     "routes": [
       {
@@ -291,7 +294,8 @@ export const CAREERS: CareerCard[] = [
     "salary": {
       "startK": 40,
       "experiencedK": 95,
-      "note": "Trainee/first-year pay is modest; barristers' devilling year is unpaid"
+      "note": "Solicitor market estimate; self-employed barrister income is much less predictable",
+      "basis": "mixed-income"
     },
     "routes": [
       {
@@ -353,8 +357,9 @@ export const CAREERS: CareerCard[] = [
     ],
     "salary": {
       "startK": 63,
-      "experiencedK": 100,
-      "note": "HSE staff-grade scale (62.6k-100.7k); senior grades go higher"
+      "experiencedK": 108,
+      "note": "HSE clinical psychologist scale, rounded; this follows postgraduate professional training",
+      "basis": "public-scale"
     },
     "routes": [
       {
@@ -395,7 +400,7 @@ export const CAREERS: CareerCard[] = [
       "Behavioural Scientist"
     ],
     "sources": [
-      "https://www.hse.ie/eng/staff/resources/hr-circulars/august-1st-2025-pay-scales.pdf",
+      "https://assets.hse.ie/media/documents/June_2026_-_pay_scales.pdf",
       "https://careerhub.hse.ie/pathways_trainee_psychologist/",
       "https://www.psychologicalsociety.ie/accredited-courses",
       "https://gradireland.com/careers-advice/job-descriptions/psychologist-clinical",
@@ -479,8 +484,9 @@ export const CAREERS: CareerCard[] = [
     ],
     "salary": {
       "startK": 46,
-      "experiencedK": 72,
-      "note": "Fixed public pay scale; rises yearly + allowances, tops ~86k"
+      "experiencedK": 86,
+      "note": "June 2026 qualified-teacher scale, rounded; allowances and contract hours vary",
+      "basis": "public-scale"
     },
     "routes": [
       {
@@ -524,6 +530,7 @@ export const CAREERS: CareerCard[] = [
       "Learning Support Teacher"
     ],
     "sources": [
+      "https://www.gov.ie/en/department-of-education/circulars/circular-0056-2026-revision-of-post-primary-teacher-salaries-under-the-public-service-agreement-2024---2026-effective-from-1st-june-2026/",
       "https://www.asti.ie/your-employment/pay/salary-scales/post-2011-common-basic-scale/",
       "https://www.into.ie/help-advice/pay/pay-scales-and-incremental-progression/",
       "https://www.teachingcouncil.ie/how-to-become-a-teacher/post-primary/",
@@ -605,7 +612,8 @@ export const CAREERS: CareerCard[] = [
     "salary": {
       "startK": 48,
       "experiencedK": 72,
-      "note": "community typical; hospital/HSE scales reach 90k+"
+      "note": "Community-pharmacy market estimate; hospital public scales and ownership income differ",
+      "basis": "market-estimate"
     },
     "routes": [
       {
@@ -1000,9 +1008,10 @@ export const CAREERS: CareerCard[] = [
       "Work across hospitals, sports clubs, ICU, stroke wards or private clinics"
     ],
     "salary": {
-      "startK": 45,
-      "experiencedK": 64,
-      "note": "HSE staff-grade scale; Senior physio rises to ~€76k"
+      "startK": 46,
+      "experiencedK": 65,
+      "note": "HSE staff-grade scale, rounded; senior and private-practice earnings differ",
+      "basis": "public-scale"
     },
     "routes": [
       {
@@ -1040,7 +1049,7 @@ export const CAREERS: CareerCard[] = [
       "Sports Rehabilitation"
     ],
     "sources": [
-      "https://www.forsa.ie/pay-scales/health-salary-scales/",
+      "https://assets.hse.ie/media/documents/June_2026_-_pay_scales.pdf",
       "https://www2.cao.ie/points/l8.php",
       "https://coru.ie/health-and-social-care-professionals/education/approved-qualifications/physiotherapists/",
       "https://www.rcsi.com/dublin/undergraduate/physiotherapy/entry-requirements",
@@ -1062,7 +1071,8 @@ export const CAREERS: CareerCard[] = [
     "salary": {
       "startK": 65,
       "experiencedK": 100,
-      "note": "New associates often ~€55-70k (sometimes a % of fees); experienced owners €100k+; HSE/specialist grades higher."
+      "note": "Associate and practice-owner income estimate; fee share, costs and hours make this highly variable",
+      "basis": "mixed-income"
     },
     "routes": [
       {
@@ -1147,7 +1157,8 @@ export const CAREERS: CareerCard[] = [
     "salary": {
       "startK": 30,
       "experiencedK": 42,
-      "note": "HSE public scale starts higher (~€37k); nursing homes/agencies pay less but night & weekend shifts add on top"
+      "note": "Blended public/private estimate; HSE scales and private or agency rates differ",
+      "basis": "market-estimate"
     },
     "routes": [
       {
@@ -1189,7 +1200,7 @@ export const CAREERS: CareerCard[] = [
       "Disability Services"
     ],
     "sources": [
-      "https://www.hse.ie/eng/staff/resources/hr-circulars/august-1st-2025-pay-scales.pdf",
+      "https://assets.hse.ie/media/documents/June_2026_-_pay_scales.pdf",
       "https://careerhub.hse.ie/pathways_hca/",
       "https://ie.indeed.com/career/healthcare-assistant/salaries",
       "https://www.dfei.ie/community-healthcare-and-nursing/healthcare-assistant",
@@ -1210,8 +1221,9 @@ export const CAREERS: CareerCard[] = [
     ],
     "salary": {
       "startK": 51,
-      "experiencedK": 65,
-      "note": "HSE/Tusla public scale; tops out near €73k after years"
+      "experiencedK": 74,
+      "note": "HSE/Tusla public scale, rounded; senior grades sit above this band",
+      "basis": "public-scale"
     },
     "routes": [
       {
@@ -1750,7 +1762,8 @@ export const CAREERS: CareerCard[] = [
     "salary": {
       "startK": 28,
       "experiencedK": 45,
-      "note": "Employed farm/dairy assistants ~€33-35k; your own farm income swings hugely by year and type"
+      "note": "Employed-role estimate only; farm-owner income can move sharply by year, type, costs and supports",
+      "basis": "mixed-income"
     },
     "routes": [
       {

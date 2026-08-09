@@ -39,37 +39,37 @@ const PrimaryActionButton: React.FC<PrimaryActionButtonProps> = ({
     <button
       onClick={onClick}
       disabled={disabled}
-      className={`inline-flex items-center justify-center gap-2.5 rounded-full text-white font-semibold tracking-wide select-none transition-all duration-[120ms] ease-out disabled:opacity-50 disabled:pointer-events-none ${className}`}
+      className={`inline-flex min-h-12 items-center justify-center gap-2.5 rounded-xl text-white font-semibold tracking-wide select-none transition-all duration-[120ms] ease-out disabled:opacity-50 disabled:pointer-events-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F26B1F] focus-visible:ring-offset-2 ${className}`}
       style={{
         fontSize: 16,
         padding: '14px 32px',
         backgroundColor: v.fill,
-        border: 'none',
-        boxShadow: `3px 4px 0 0 ${v.depth}`,
-        borderRadius: 9999,
+        border: '2px solid #1A1A1A',
+        boxShadow: '4px 4px 0 0 #1A1A1A',
+        borderRadius: 12,
         transform: 'translateY(0) scale(1)',
       }}
       onMouseEnter={(e) => {
         if (disabled) return;
         const el = e.currentTarget;
         el.style.transform = 'translateY(1px) translateX(1px) scale(1.02)';
-        el.style.boxShadow = `2px 3px 0 0 ${v.depth}`;
+        el.style.boxShadow = '5px 5px 0 0 #1A1A1A';
       }}
       onMouseLeave={(e) => {
         const el = e.currentTarget;
         el.style.transform = 'translateY(0) scale(1)';
-        el.style.boxShadow = `3px 4px 0 0 ${v.depth}`;
+        el.style.boxShadow = '4px 4px 0 0 #1A1A1A';
       }}
       onMouseDown={(e) => {
         if (disabled) return;
         const el = e.currentTarget;
         el.style.transform = 'translateY(4px) translateX(3px) scale(1)';
-        el.style.boxShadow = `0px 0px 0 0 ${v.depth}`;
+        el.style.boxShadow = '0px 0px 0px 0px #1A1A1A';
       }}
       onMouseUp={(e) => {
         const el = e.currentTarget;
         el.style.transform = 'translateY(1px) translateX(1px) scale(1.02)';
-        el.style.boxShadow = `2px 3px 0 0 ${v.depth}`;
+        el.style.boxShadow = '3px 3px 0 0 #1A1A1A';
       }}
       {...rest}
     >

@@ -38,6 +38,12 @@ export interface PointsScenario {
 /** At most one scenario per slot — three slots total. */
 export type ScenarioMap = Partial<Record<ScenarioSlot, PointsScenario>>;
 
+export interface BestSixResult {
+  total: number;
+  bestSix: { subjectName: string; points: number; grade: Grade }[];
+  outside: { subjectName: string; points: number; grade: Grade }[];
+}
+
 // ─── Persistence (localStorage, per uid) ─────────────────────────────────────
 
 const PREFIX = 'pp:scenarios:';
@@ -97,12 +103,28 @@ export function clearScenario(uid: string | undefined, slot: ScenarioSlot): Scen
 export function computeBestSixTotal(
   subjects: { subjectName: string; grade: Grade }[],
 ): number {
+  return computeBestSixBreakdown(subjects).total;
+}
+
+/** Shared ranked breakdown used by both Passport summaries and Grade Planner. */
+export function computeBestSixBreakdown(
+  subjects: { subjectName: string; grade: Grade }[],
+): BestSixResult {
   const scored = subjects.map(s => {
     const isMaths = LC_SUBJECTS.find(lc => lc.name === s.subjectName)?.isMaths ?? false;
-    return getPointsForGrade(s.grade, isMaths);
+    return {
+      subjectName: s.subjectName,
+      points: getPointsForGrade(s.grade, isMaths),
+      grade: s.grade,
+    };
   });
-  scored.sort((a, b) => b - a);
-  return scored.slice(0, 6).reduce((sum, p) => sum + p, 0);
+  scored.sort((a, b) => b.points - a.points);
+  const bestSix = scored.slice(0, 6);
+  return {
+    total: bestSix.reduce((sum, subject) => sum + subject.points, 0),
+    bestSix,
+    outside: scored.slice(6),
+  };
 }
 
 export interface ScenarioLever {

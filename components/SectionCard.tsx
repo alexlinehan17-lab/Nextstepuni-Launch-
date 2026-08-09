@@ -51,17 +51,17 @@ export const SectionCard: React.FC<SectionCardProps> = ({
   return (
     <Wrapper
       onClick={onClick}
-      className={`group relative flex items-center gap-5 text-left w-full bg-white dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800 rounded-2xl transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1A1A1A]/15 focus-visible:ring-offset-2 ${interactive ? 'cursor-pointer hover:border-[#1A1A1A]/15 dark:hover:border-zinc-700 hover:-translate-y-0.5' : ''} ${className ?? ''}`}
+      className={`group relative flex items-center gap-5 text-left w-full bg-white dark:bg-zinc-900 border-[1.5px] border-[#383838] dark:border-zinc-700 rounded-2xl transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1A1A1A]/20 focus-visible:ring-offset-2 ${interactive ? 'cursor-pointer hover:-translate-y-0.5' : ''} ${className ?? ''}`}
       style={{
         padding: '22px',
-        boxShadow: '0 1px 3px rgba(28,25,23,0.04)',
+        boxShadow: 'none',
         ...(interactive ? {} : {}),
       }}
       onMouseEnter={interactive ? (e) => {
-        (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 24px rgba(28,25,23,0.08), 0 1px 3px rgba(28,25,23,0.04)';
+        (e.currentTarget as HTMLElement).style.boxShadow = '3px 3px 0 #383838';
       } : undefined}
       onMouseLeave={interactive ? (e) => {
-        (e.currentTarget as HTMLElement).style.boxShadow = '0 1px 3px rgba(28,25,23,0.04)';
+        (e.currentTarget as HTMLElement).style.boxShadow = 'none';
       } : undefined}
     >
       {/* Tile — painted blob + ink illustration. Slight scale on hover. */}

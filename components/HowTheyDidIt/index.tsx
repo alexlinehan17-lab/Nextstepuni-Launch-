@@ -60,7 +60,7 @@ const MoveTile: React.FC<{ move: PersonMove; idx: number; wd: ColorWorld; onFlip
           <RefreshCw size={14} style={{ color: wd.deep }} />
         </div>
         {/* back — white, ink detail */}
-        <div className="absolute inset-0 rounded-2xl p-4 flex items-center" style={{ backgroundColor: '#fff', border: `1.5px solid ${HAIRLINE}`, color: INK, transform: 'rotateY(180deg)', backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden' }}>
+        <div className="absolute inset-0 rounded-2xl p-4 flex items-center" style={{ backgroundColor: 'var(--deck-paper)', border: `1.5px solid ${HAIRLINE}`, color: INK, transform: 'rotateY(180deg)', backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden' }}>
           <span className="text-[13.5px] leading-snug">{move.detail}</span>
         </div>
       </MotionDiv>
@@ -97,7 +97,7 @@ const CardFace: React.FC<{ p: PersonCard; saved: boolean }> = ({ p, saved }) => 
   return (
     <div
       className="w-full h-full rounded-[28px] overflow-hidden flex flex-col select-none"
-      style={{ backgroundColor: '#fff', border: `2px solid ${INK}`, boxShadow: '6px 8px 0 0 #1a1a1a' }}
+      style={{ backgroundColor: 'var(--deck-paper)', border: `2px solid ${INK}`, boxShadow: 'var(--deck-shadow)' }}
     >
       {/* white hero zone — initials blob + barrier chip + saved chip */}
       <div className="relative flex-1 flex items-center justify-center pt-8">
@@ -166,7 +166,7 @@ const HowTheyDidIt: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ 
     const isSaved = state.savedIds.includes(card.id);
     const bi = BEAT_IDX[beat];
     return (
-      <div className="w-full max-w-xl mx-auto pb-10">
+      <div className="immersive-deck-theme w-full max-w-xl mx-auto pb-10">
         <BackLink onClick={() => { setCardId(null); }} label="The deck" />
         <HybridCard>
           {burst && <Celebration colors={[wd.bg, wd.glow]} />}
@@ -239,7 +239,7 @@ const HowTheyDidIt: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ 
                     <p className="text-[18px] leading-snug font-medium mb-3" style={{ color: INK }}>{card.now}</p>
                     {card.strengthsLine && <p className="text-[13.5px] leading-relaxed italic mb-5" style={{ color: MUTED }}>{card.strengthsLine}</p>}
 
-                    <div className="rounded-2xl p-4 mb-4" style={{ backgroundColor: '#fff', border: `1.5px solid ${HAIRLINE}` }}>
+                    <div className="rounded-2xl p-4 mb-4" style={{ backgroundColor: 'var(--deck-paper)', border: `1.5px solid ${HAIRLINE}` }}>
                       <div className="flex items-center gap-1.5 mb-1.5"><Sparkles size={15} style={{ color: wd.deep }} /><p className="text-[11px] font-bold uppercase tracking-[0.1em]" style={{ color: wd.deep }}>Steal this move</p></div>
                       <p className="text-[14.5px] leading-relaxed mb-3" style={{ color: BODY }}>{card.stealThisMove}</p>
                       <button
@@ -301,17 +301,17 @@ const HowTheyDidIt: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ 
   const top = deck[index];
   const topWorld = top ? BARRIER_WORLD[top.barrier] : WORLDS.teal;
   return (
-    <div className="w-full max-w-xl mx-auto pb-12">
+    <div className="immersive-deck-theme w-full max-w-xl mx-auto pb-12">
       <p className="text-[13px] font-medium mb-2.5" style={{ color: BODY }}>Pick what’s closest to your situation:</p>
 
       {/* barrier filter */}
       <div className="flex flex-wrap gap-1.5 mb-6">
-        <button onClick={() => setFilter('all')} className="rounded-full px-3.5 py-1.5 text-[12.5px] font-semibold transition-colors" style={filter === 'all' ? { backgroundColor: '#1a1a1a', color: '#fff' } : { backgroundColor: '#F1F0ED', color: BODY }}>Everyone</button>
+        <button onClick={() => setFilter('all')} className="rounded-xl border px-3.5 py-2 text-[12.5px] font-semibold transition-all" style={filter === 'all' ? { backgroundColor: 'var(--deck-ink)', color: 'var(--deck-paper)', borderColor: 'var(--deck-ink)' } : { backgroundColor: 'var(--deck-soft)', color: BODY, borderColor: 'var(--deck-hairline)' }}>Everyone</button>
         {BARRIERS.map((b) => {
           const wd = BARRIER_WORLD[b.id];
           const active = filter === b.id;
           return (
-            <button key={b.id} onClick={() => setFilter(b.id)} className="rounded-full px-3.5 py-1.5 text-[12.5px] font-semibold transition-colors" style={active ? { backgroundColor: wd.bg, color: '#fff' } : { backgroundColor: '#F1F0ED', color: BODY }}>
+            <button key={b.id} onClick={() => setFilter(b.id)} className="rounded-xl border px-3.5 py-2 text-[12.5px] font-semibold transition-all" style={active ? { backgroundColor: wd.bg, color: '#fff', borderColor: wd.deep } : { backgroundColor: 'var(--deck-soft)', color: BODY, borderColor: 'var(--deck-hairline)' }}>
               {b.label}
             </button>
           );

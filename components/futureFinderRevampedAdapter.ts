@@ -17,6 +17,7 @@ import {
   type RiasecLetter, type WorkValue, type CourseFitResult,
 } from './futureFinderRiasec';
 import { COURSE_RIASEC } from './futureFinderRiasecData';
+import type { RecommendationRank } from './futureFinderRecommendation';
 
 /** Reach metadata shared with FutureFinderRevamped's results list. */
 export const REACH_META: Record<string, { label: string; color: string; bg: string }> = {
@@ -115,6 +116,7 @@ export function riasecToRecommendation(
   fit: CourseFitResult,
   studentTopLetters: RiasecLetter[],
   studentValues: WorkValue[],
+  recommendation?: RecommendationRank,
 ): DisplayResult {
   const reachMeta = REACH_META[fit.reach];
   return {
@@ -128,5 +130,6 @@ export function riasecToRecommendation(
     },
     subjectAlignment: fit.eligibility.eligible ? 'partial' : 'none',
     reach: { label: reachMeta.label, color: reachMeta.color, bg: reachMeta.bg },
+    recommendation: recommendation ? { band: recommendation.band, score: recommendation.score } : undefined,
   };
 }

@@ -72,15 +72,28 @@ const FirstVisitCoachMarks: React.FC<Props> = ({ uid, onFinish, onOpenGuide }) =
     let cancelled = false;
     let timer: ReturnType<typeof setTimeout> | undefined;
     let tries = 0;
-    const MAX_TRIES = 15; // ~1.5s at 100ms
+    let resizeObserver: ResizeObserver | undefined;
+    const MAX_TRIES = 30; // Allow lazy dashboard content and fonts to settle.
 
-    // Returns true when the target EXISTS in the DOM (even if offscreen).
+    // A target is ready only once it is both mounted and visible. The home
+    // dashboard can restore below the fold after onboarding, so treating mere
+    // DOM existence as success left the tour running without a spotlight.
     const measure = (): boolean => {
       const el = document.querySelector<HTMLElement>(`[data-coach="${STEPS[step].target}"]`);
       if (!el) { setRect(null); return false; }
       const r = el.getBoundingClientRect();
-      // A collapsed/offscreen target gets the centred-card fallback.
-      setRect(r.width > 4 && r.height > 4 && r.bottom > 0 && r.top < window.innerHeight ? r : null);
+      const visible = r.width > 4 && r.height > 4 && r.bottom > 0 && r.top < window.innerHeight;
+      if (!visible) {
+        setRect(null);
+        if (r.width > 4 && r.height > 4) {
+          el.scrollIntoView({ block: 'center', inline: 'nearest', behavior: tries === 0 ? 'smooth' : 'auto' });
+        }
+        return false;
+      }
+      setRect(r);
+      resizeObserver?.disconnect();
+      resizeObserver = new ResizeObserver(measure);
+      resizeObserver.observe(el);
       return true;
     };
 
@@ -96,16 +109,21 @@ const FirstVisitCoachMarks: React.FC<Props> = ({ uid, onFinish, onOpenGuide }) =
           else { markSeen(uid); onFinish(); }
           return;
         }
-        timer = setTimeout(retry, 100);
+        timer = setTimeout(retry, 120);
       };
-      timer = setTimeout(retry, 100);
+      timer = setTimeout(retry, 120);
     }
+
+    const mutationObserver = new MutationObserver(measure);
+    mutationObserver.observe(document.body, { childList: true, subtree: true });
 
     window.addEventListener('resize', measure);
     window.addEventListener('scroll', measure, true);
     return () => {
       cancelled = true;
       if (timer) clearTimeout(timer);
+      resizeObserver?.disconnect();
+      mutationObserver.disconnect();
       window.removeEventListener('resize', measure);
       window.removeEventListener('scroll', measure, true);
     };

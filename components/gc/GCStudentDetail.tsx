@@ -84,7 +84,7 @@ interface GCStudentDetailProps {
 // Future Finder/Subject Explorer per Phase 2 builds).
 const INNOVATION_TOOLS: { id: string; title: string; jcTitle?: string; curriculum: 'junior' | 'senior' | 'both' }[] = [
   { id: 'journey',          title: 'Academic Journey Simulator', curriculum: 'senior' },
-  { id: 'cao-simulator',    title: 'CAO Points Simulator',       curriculum: 'senior' },
+  { id: 'cao-simulator',    title: 'Points Passport · Grade Planner', curriculum: 'senior' },
   { id: 'flashcards',       title: 'Flashcard Studio',           curriculum: 'both' },
   { id: 'planner',          title: 'Spaced Repetition Timetable', curriculum: 'both' },
   { id: 'war-room',         title: 'War Room',                   curriculum: 'senior' },

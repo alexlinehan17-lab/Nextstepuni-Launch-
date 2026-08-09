@@ -4,11 +4,13 @@
  */
 
 import React, { Suspense, memo, useRef } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
+import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
-import type * as THREE from 'three';
+import * as THREE from 'three';
 import { type IslandPlacement } from '../../types';
 import HexIsland from './hex/HexIsland';
+import BuildGrid from './build/BuildGrid';
+import type { BuildCell } from './build/islandBuildModel';
 
 /* ── Slow island bob ── */
 const IslandFloat: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -19,6 +21,19 @@ const IslandFloat: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     }
   });
   return <group ref={ref}>{children}</group>;
+};
+
+const CameraMode: React.FC<{ buildMode: boolean }> = ({ buildMode }) => {
+  const { camera } = useThree();
+  const destination = useRef(new THREE.Vector3());
+
+  useFrame((_, delta) => {
+    destination.current.set(buildMode ? 5.2 : 6, buildMode ? 10.5 : 7, buildMode ? 5.2 : 6);
+    camera.position.lerp(destination.current, 1 - Math.exp(-delta * 4.5));
+    camera.lookAt(0, 0, 0);
+  });
+
+  return null;
 };
 
 /* ── Scene lighting ── */
@@ -95,9 +110,20 @@ interface JourneyCanvasProps {
   waterColor: string;
   celebrationActive?: boolean;
   northStarStatement?: string;
+  buildMode?: boolean;
+  buildCells?: BuildCell[];
+  selectedCell?: { q: number; r: number } | null;
+  previewPlacement?: IslandPlacement | null;
+  selectedPlacementId?: string | null;
+  onSelectCell?: (cell: BuildCell) => void;
+  onSelectPlacement?: (placement: IslandPlacement) => void;
 }
 
-const JourneyCanvas: React.FC<JourneyCanvasProps> = ({ placements, waterColor, celebrationActive = false, northStarStatement }) => {
+const JourneyCanvas: React.FC<JourneyCanvasProps> = ({
+  placements, waterColor, celebrationActive = false, northStarStatement,
+  buildMode = false, buildCells = [], selectedCell, previewPlacement,
+  selectedPlacementId, onSelectCell, onSelectPlacement,
+}) => {
   return (
     <div style={{ position: 'absolute', inset: 0 }}>
       <Canvas
@@ -110,10 +136,22 @@ const JourneyCanvas: React.FC<JourneyCanvasProps> = ({ placements, waterColor, c
         <fog attach="fog" args={['#2D2D44', 18, 35]} />
 
         <Lighting />
+        <CameraMode buildMode={buildMode} />
 
         <Suspense fallback={null}>
           <IslandFloat>
-            <HexIsland placements={placements} waterColor={waterColor} northStarStatement={northStarStatement} />
+            <HexIsland
+              placements={placements}
+              waterColor={waterColor}
+              northStarStatement={northStarStatement}
+              buildMode={buildMode}
+              previewPlacement={previewPlacement}
+              selectedPlacementId={selectedPlacementId}
+              onSelectPlacement={onSelectPlacement}
+            />
+            {buildMode && onSelectCell && (
+              <BuildGrid cells={buildCells} selectedCell={selectedCell} onSelect={onSelectCell} />
+            )}
           </IslandFloat>
         </Suspense>
 

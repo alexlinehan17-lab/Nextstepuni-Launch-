@@ -8,6 +8,9 @@ import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import { STRATEGY_REGISTRY } from '../../utils/strategyRegistry';
 import { getSubjectColor } from '../../utils/subjectColors';
+import ChoiceControl from '../ui/ChoiceControl';
+import PrimaryActionButton from '../ui/PrimaryActionButton';
+import { ResultStatGrid } from '../ui/ProductPatterns';
 
 // ── Strategy categories ─────────────────────────────────────
 
@@ -77,7 +80,7 @@ const StrategyPickerStep: React.FC<StrategyPickerStepProps> = ({
   const subjectColors = subject ? getSubjectColor(subject) : null;
 
   return (
-    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 flex flex-col items-center justify-center px-4 py-10">
+    <div className="min-h-screen bg-[#FAF9F7] dark:bg-zinc-950 flex flex-col items-center justify-center px-4 py-10">
       <MotionDiv
         initial={{ scale: 0.95, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
@@ -89,30 +92,22 @@ const StrategyPickerStep: React.FC<StrategyPickerStepProps> = ({
         <div className="text-center mb-6">
           {/* Subject pill */}
           {subject && subjectColors && (
-            <div className="inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 mb-4" style={{ backgroundColor: '#E1F5EE' }}>
+            <div className="inline-flex items-center gap-2 rounded-xl px-3.5 py-2 mb-4 bg-white border border-[#D0CDC8]">
               <div className={`w-2 h-2 rounded-full ${subjectColors.dot}`} />
-              <span className="text-xs font-medium" style={{ color: '#085041' }}>{subject}</span>
+              <span className="text-xs font-semibold text-[#3A3530]">{subject}</span>
             </div>
           )}
-          <h2 className="font-serif text-[22px] font-medium text-zinc-800 dark:text-white">Nice session</h2>
-          <p className="text-sm text-zinc-400 dark:text-zinc-500 mt-1">Which strategies did you use?</p>
+          <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#9E9186] mb-1.5">Before your results</p>
+          <h2 className="font-serif text-[28px] font-bold text-[#1A1A1A] dark:text-white">What helped you focus?</h2>
+          <p className="text-sm text-[#7A7068] mt-1">Select the strategies you used.</p>
         </div>
 
         {/* ── Session stats ── */}
-        <div className="flex items-center justify-center gap-8 pb-5 mb-7 border-b border-zinc-200 dark:border-zinc-800">
-          <div className="text-center">
-            <p className="text-xl font-medium font-apercu text-zinc-800 dark:text-white">{durationMin}m</p>
-            <p className="text-xs text-zinc-400 dark:text-zinc-500">duration</p>
-          </div>
-          <div className="text-center">
-            <p className="text-xl font-medium font-apercu text-zinc-800 dark:text-white">{autoTrackedIds.length}</p>
-            <p className="text-xs text-zinc-400 dark:text-zinc-500">strategies tracked</p>
-          </div>
-          <div className="text-center">
-            <p className="text-xl font-medium font-apercu text-zinc-800 dark:text-white">+{pointsEarned}</p>
-            <p className="text-xs text-zinc-400 dark:text-zinc-500">journey points earned</p>
-          </div>
-        </div>
+        <ResultStatGrid className="mb-7" items={[
+          { label: 'Duration', value: `${durationMin}m` },
+          { label: 'Tracked', value: autoTrackedIds.length },
+          { label: 'Journey points', value: `+${pointsEarned}`, tone: 'accent' },
+        ]} />
 
         {/* ── Strategy chips by category ── */}
         {CATEGORIES.map(cat => (
@@ -128,45 +123,15 @@ const StrategyPickerStep: React.FC<StrategyPickerStepProps> = ({
                 const isAuto = autoSet.has(id);
 
                 return (
-                  <button
+                  <ChoiceControl
                     key={id}
                     onClick={() => toggle(id)}
                     disabled={isAuto}
-                    className={`inline-flex items-center gap-2 rounded-xl transition-all duration-200 ${
-                      isSelected
-                        ? 'border-[1.5px] border-[#F26B1F]'
-                        : 'border-[1.5px] border-zinc-200 dark:border-zinc-700 hover:border-zinc-300 dark:hover:border-zinc-600'
-                    } ${isAuto ? 'cursor-default' : 'cursor-pointer'}`}
-                    style={{
-                      padding: '10px 16px',
-                      backgroundColor: isSelected ? '#E1F5EE' : 'transparent',
-                      color: isSelected ? '#085041' : undefined,
-                    }}
-                  >
-                    {/* Checkbox */}
-                    <div
-                      className={`flex items-center justify-center shrink-0 ${
-                        isSelected ? '' : 'border-[1.5px] border-zinc-300 dark:border-zinc-600'
-                      }`}
-                      style={{
-                        width: 18,
-                        height: 18,
-                        borderRadius: 5,
-                        backgroundColor: isSelected ? '#F26B1F' : 'transparent',
-                        borderColor: isSelected ? '#F26B1F' : undefined,
-                        border: isSelected ? '1.5px solid #F26B1F' : undefined,
-                      }}
-                    >
-                      {isSelected && (
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                          <path d="M2.5 6L5 8.5L9.5 3.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
-                      )}
-                    </div>
-                    <span className={`text-sm ${isSelected ? '' : 'text-zinc-500 dark:text-zinc-400'}`}>
-                      {strategy.strategyName}
-                    </span>
-                  </button>
+                    label={strategy.strategyName}
+                    selected={isSelected}
+                    compact
+                    trailing={isAuto ? <span className="text-[9px] font-bold uppercase tracking-wider opacity-70">Tracked</span> : undefined}
+                  />
                 );
               })}
             </div>
@@ -174,23 +139,14 @@ const StrategyPickerStep: React.FC<StrategyPickerStepProps> = ({
         ))}
 
         {/* ── CTA button ── */}
-        <button
+        <PrimaryActionButton
           onClick={() => onContinue([...selected])}
           disabled={count === 0}
-          className={`w-full rounded-xl text-[15px] font-medium transition-all duration-200 active:scale-[0.98] mt-2 ${
-            count > 0
-              ? 'text-white hover:opacity-90'
-              : 'bg-zinc-200 dark:bg-zinc-800 text-zinc-400 dark:text-zinc-600 cursor-not-allowed'
-          }`}
-          style={{
-            padding: 14,
-            backgroundColor: count > 0 ? '#F26B1F' : undefined,
-          }}
-        >
-          {count > 0
+          className="w-full mt-2"
+          label={count > 0
             ? `Continue with ${count} ${count === 1 ? 'strategy' : 'strategies'}`
             : 'Select strategies to continue'}
-        </button>
+        />
 
         {/* ── Points hint ── */}
         <AnimatePresence>

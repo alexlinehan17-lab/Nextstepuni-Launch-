@@ -37,36 +37,31 @@ export const useToast = () => useContext(ToastContext);
 const TOAST_CONFIG: Record<ToastType, {
   icon: LucideIcon;
   bg: string;
-  border: string;
   text: string;
   iconColor: string;
 }> = {
   error: {
     icon: AlertCircle,
     bg: 'bg-red-50 dark:bg-red-950/80',
-    border: 'border-red-200/60 dark:border-red-800/40',
-    text: 'text-red-800 dark:text-red-200',
+    text: 'text-[#7F1D1D] dark:text-red-200',
     iconColor: 'text-red-500 dark:text-red-400',
   },
   success: {
     icon: CheckCircle,
     bg: 'bg-emerald-50 dark:bg-emerald-950/80',
-    border: 'border-emerald-200/60 dark:border-emerald-800/40',
-    text: 'text-emerald-800 dark:text-emerald-200',
+    text: 'text-[#14532D] dark:text-emerald-200',
     iconColor: 'text-emerald-500 dark:text-emerald-400',
   },
   warning: {
     icon: WifiOff,
     bg: 'bg-amber-50 dark:bg-amber-950/80',
-    border: 'border-amber-200/60 dark:border-amber-800/40',
-    text: 'text-amber-800 dark:text-amber-200',
+    text: 'text-[#78350F] dark:text-amber-200',
     iconColor: 'text-amber-500 dark:text-amber-400',
   },
   info: {
     icon: Info,
     bg: 'bg-zinc-50 dark:bg-zinc-900/90',
-    border: 'border-zinc-200/60 dark:border-zinc-700/40',
-    text: 'text-zinc-700 dark:text-zinc-300',
+    text: 'text-[#383838] dark:text-zinc-200',
     iconColor: 'text-zinc-500 dark:text-zinc-400',
   },
 };
@@ -156,7 +151,7 @@ export const ToastProvider: React.FC<{ children: React.ReactNode }> = ({ childre
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -60, opacity: 0 }}
             transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-            className="fixed top-0 left-0 right-0 z-[9999] flex items-center justify-center gap-2 px-4 py-2.5 bg-amber-50 dark:bg-amber-950/90 border-b border-amber-200/60 dark:border-amber-800/40 backdrop-blur-xl"
+            className="fixed left-1/2 top-3 z-[9999] flex w-[calc(100%-1.5rem)] max-w-lg -translate-x-1/2 items-center justify-center gap-2 rounded-xl border-[1.5px] border-[#383838] bg-[#FFF8E5] px-4 py-3 shadow-[3px_3px_0_0_#383838] dark:border-zinc-600 dark:bg-amber-950"
           >
             <WifiOff size={14} className="text-amber-500 dark:text-amber-400 shrink-0" />
             <span className="text-xs font-semibold text-amber-700 dark:text-amber-300">
@@ -167,7 +162,7 @@ export const ToastProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       </AnimatePresence>
 
       {/* Toast stack */}
-      <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-[9998] flex flex-col-reverse gap-2 w-[calc(100%-2rem)] max-w-sm pointer-events-none">
+      <div className="fixed bottom-[calc(1rem+var(--sab,0px))] left-1/2 z-[9998] flex w-[calc(100%-1.5rem)] max-w-md -translate-x-1/2 flex-col-reverse gap-3 pointer-events-none sm:bottom-6">
         <AnimatePresence>
           {toasts.map(toast => {
             const config = TOAST_CONFIG[toast.type];
@@ -179,15 +174,17 @@ export const ToastProvider: React.FC<{ children: React.ReactNode }> = ({ childre
                 animate={{ y: 0, opacity: 1, scale: 1 }}
                 exit={{ y: 10, opacity: 0, scale: 0.95 }}
                 transition={{ type: 'spring', damping: 25, stiffness: 350 }}
-                className={`pointer-events-auto flex items-center gap-2.5 px-4 py-3 rounded-xl border shadow-lg backdrop-blur-xl ${config.bg} ${config.border}`}
+                role={toast.type === 'error' ? 'alert' : 'status'}
+                className={`pointer-events-auto flex min-h-14 items-center gap-3 rounded-xl border-[1.5px] border-[#383838] px-4 py-3 shadow-[4px_4px_0_0_#383838] dark:border-zinc-600 ${config.bg}`}
               >
                 <Icon size={16} className={`${config.iconColor} shrink-0`} />
                 <span className={`text-xs font-medium flex-1 ${config.text}`}>{toast.message}</span>
                 <button
                   onClick={() => dismissToast(toast.id)}
-                  className="shrink-0 text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors"
+                  aria-label="Dismiss message"
+                  className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg text-zinc-500 transition-colors hover:bg-black/5 hover:text-zinc-800 dark:hover:bg-white/10 dark:hover:text-white"
                 >
-                  <X size={12} />
+                  <X size={14} />
                 </button>
               </MotionDiv>
             );

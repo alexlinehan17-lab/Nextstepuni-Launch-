@@ -96,10 +96,13 @@ const NotificationBell: React.FC<NotificationBellProps> = ({ uid, onUnreadCountC
     <div className="relative" ref={panelRef}>
       <button
         data-notification-bell
+        type="button"
+        aria-label={isOpen ? 'Close notifications' : 'Open notifications'}
+        aria-expanded={isOpen}
         onClick={() => setIsOpen(!isOpen)}
-        className="relative p-2.5 rounded-xl bg-white/90 dark:bg-zinc-900/90 backdrop-blur-sm border border-zinc-200/60 dark:border-zinc-800/60 hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]"
+        className="relative flex h-11 w-11 items-center justify-center rounded-xl border-[1.5px] border-[#D0CDC8] bg-[#FAFBF6] text-zinc-600 shadow-none transition-colors hover:bg-[#F4F2EE] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]"
       >
-        <Bell size={18} className="text-zinc-600 dark:text-zinc-300" />
+        <Bell size={19} strokeWidth={1.8} aria-hidden="true" />
         {unreadCount > 0 && (
           <span className="absolute -top-1 -right-1 min-w-[18px] h-[18px] flex items-center justify-center rounded-full bg-rose-500 text-white text-[10px] font-bold px-1">
             {unreadCount > 99 ? '99+' : unreadCount}

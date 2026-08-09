@@ -2,15 +2,229 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --surface-canvas: #FAFBF6;
+  --surface-paper: #FFFFFF;
+  --surface-soft: #F6F2EC;
+  --surface-raised: #FFFFFF;
+  --outline-strong: #383838;
+  --outline-soft: #D8D3CD;
+  --ink-primary: #1A1A1A;
+  --ink-secondary: #5F5A55;
+  --ink-muted: #8A8178;
+}
+
+.dark {
+  --surface-canvas: #151515;
+  --surface-paper: #202020;
+  --surface-soft: #282624;
+  --surface-raised: #2B2927;
+  --outline-strong: #A8A29E;
+  --outline-soft: #494541;
+  --ink-primary: #FAF8F4;
+  --ink-secondary: #D6D0C9;
+  --ink-muted: #A8A29E;
+}
+
+/*
+ * Dark-mode compatibility for the editorial product worlds.
+ *
+ * Several of the older, illustration-led experiences pre-date the semantic
+ * surface tokens and set their paper/ink palette through inline React styles.
+ * Inline declarations outrank ordinary theme utilities, leaving charcoal copy
+ * on charcoal cards. Keep this bridge scoped to product shells: marketing and
+ * authored illustration colours remain untouched, while paper, ink and rules
+ * are remapped to the same accessible dark system as the newer screens.
+ */
+.dark .product-shell [style*="color: rgb(26, 26, 26)"],
+.dark .product-shell [style*="color: rgb(31, 27, 23)"],
+.dark .product-shell [style*="color: rgb(28, 25, 23)"],
+.dark .product-shell [style*="color: #1a1a1a" i],
+.dark .product-shell [style*="color: #1f1b17" i],
+.dark .product-shell [class*="text-[#1A1A1A]"],
+.dark .product-shell [class*="text-[#1a1a1a]"] {
+  color: var(--ink-primary) !important;
+}
+
+.dark .product-shell [style*="color: rgb(92, 84, 74)"],
+.dark .product-shell [style*="color: rgb(58, 53, 48)"],
+.dark .product-shell [style*="color: rgb(120, 113, 108)"],
+.dark .product-shell [style*="color: #3a3530" i],
+.dark .product-shell [style*="color: #5c544a" i] {
+  color: var(--ink-secondary) !important;
+}
+
+.dark .product-shell [style*="color: rgb(142, 131, 120)"],
+.dark .product-shell [style*="color: rgb(158, 145, 134)"],
+.dark .product-shell [style*="color: #8e8378" i] {
+  color: var(--ink-muted) !important;
+}
+
+.dark .product-shell [style*="color: rgba(0, 0, 0"],
+.dark .product-shell [style*="color: rgba(26, 26, 26"] {
+  color: var(--ink-secondary) !important;
+}
+
+.dark .product-shell [style*="background: rgb(255, 255, 255)"],
+.dark .product-shell [style*="background-color: rgb(255, 255, 255)"],
+.dark .product-shell [style*="background: rgb(250, 251, 246)"],
+.dark .product-shell [style*="background-color: rgb(250, 251, 246)"],
+.dark .product-shell [style*="background: rgb(248, 248, 248)"],
+.dark .product-shell [style*="background-color: rgb(248, 248, 248)"],
+.dark .product-shell [style*="background: rgb(246, 241, 230)"],
+.dark .product-shell [style*="background-color: rgb(246, 241, 230)"],
+.dark .product-shell [style*="background: #fff" i],
+.dark .product-shell [style*="background-color: #fff" i],
+.dark .product-shell [class*="bg-[#FAFBF6]"],
+.dark .product-shell [class*="bg-[#FAF9F7]"],
+.dark .product-shell [class*="bg-[#FAF7F4]"],
+.dark .product-shell [class*="bg-[#FDF8F0]"] {
+  background: var(--surface-paper) !important;
+  background-color: var(--surface-paper) !important;
+}
+
+.dark .product-shell [style*="border: 1px solid rgb(31, 27, 23)"],
+.dark .product-shell [style*="border: 1.5px solid rgb(31, 27, 23)"],
+.dark .product-shell [style*="border: 2px solid rgb(31, 27, 23)"],
+.dark .product-shell [style*="border-color: rgb(31, 27, 23)"],
+.dark .product-shell [style*="border-color: rgb(26, 26, 26)"] {
+  border-color: var(--outline-strong) !important;
+}
+
+.dark .product-shell [class*="border-[#1A1A1A]"],
+.dark .product-shell [class*="border-[#383838]"] {
+  border-color: var(--outline-strong) !important;
+}
+
+.dark .product-shell [class*="shadow-["][class*="#1A1A1A"] {
+  --tw-shadow-color: var(--outline-strong);
+}
+
+/* Utility-era screens often relied on a light parent and therefore used plain
+   `bg-white`, `text-zinc-*`, or inherited black. Give those common primitives a
+   coherent dark material without touching coloured artwork and diagrams. */
+.dark .product-shell {
+  color: var(--ink-primary);
+}
+
+.dark .product-shell :where(.bg-white, .bg-zinc-50, .bg-stone-50, .bg-neutral-50) {
+  background-color: var(--surface-paper) !important;
+}
+
+.dark .product-shell :where(.bg-zinc-100, .bg-stone-100, .bg-neutral-100, .bg-gray-100) {
+  background-color: var(--surface-soft) !important;
+}
+
+.dark .product-shell :where(.text-black, .text-zinc-950, .text-zinc-900, .text-stone-950, .text-stone-900, .text-neutral-900) {
+  color: var(--ink-primary) !important;
+}
+
+.dark .product-shell :where(.text-zinc-800, .text-zinc-700, .text-stone-800, .text-stone-700, .text-neutral-700, .text-gray-700) {
+  color: var(--ink-secondary) !important;
+}
+
+.dark .product-shell :where(.text-zinc-600, .text-zinc-500, .text-stone-600, .text-stone-500, .text-neutral-600, .text-gray-600) {
+  color: var(--ink-muted) !important;
+}
+
+.dark .product-shell :where(.border-zinc-200, .border-stone-200, .border-neutral-200, .border-gray-200) {
+  border-color: var(--outline-soft) !important;
+}
+
+/* Disabled content must still be readable; opacity compounds badly on dark. */
+.dark .product-shell :disabled,
+.dark .product-shell [aria-disabled="true"] {
+  opacity: 0.58;
+}
+
+/* Product workspaces share one field grammar. Feature colour remains available
+   for focus and selection, while the control itself stays recognisable. */
+.product-shell :where(input:not([type='checkbox']):not([type='radio']):not([type='range']):not([type='color']), select, textarea),
+.product-field {
+  min-height: 44px;
+  border: 1.5px solid var(--outline-soft) !important;
+  border-radius: 12px !important;
+  background-color: var(--surface-paper) !important;
+  color: var(--ink-primary) !important;
+  box-shadow: none !important;
+}
+
+.product-shell :where(input, select, textarea)::placeholder { color: var(--ink-muted) !important; }
+
+.product-shell :where(input:not([type='checkbox']):not([type='radio']):not([type='range']), select, textarea):focus,
+.product-field:focus {
+  border-color: #F26B1F !important;
+  box-shadow: 2px 2px 0 #383838 !important;
+  outline: none !important;
+}
+
+.product-shell :where(input, select, textarea):disabled {
+  cursor: not-allowed;
+  opacity: .55;
+}
+
+/* These are compact journal pages rather than generic form fields. */
+.product-shell textarea.possible-life-journal-field {
+  min-height: 96px;
+  padding: 14px 16px !important;
+  border: 1.5px solid #D9D2CB !important;
+  border-radius: 14px !important;
+  background: #FBFAF7 !important;
+  line-height: 1.55;
+  caret-color: #F26B1F;
+}
+
+.product-shell textarea.possible-life-journal-field:focus {
+  border-color: #383838 !important;
+  box-shadow: 3px 3px 0 #383838 !important;
+}
+
+@media (max-width: 639px) {
+  .product-shell :where(input, select, textarea) { font-size: 16px; }
+}
+
 @keyframes streak-pulse {
   0%, 100% { box-shadow: 0 0 0 0 rgba(242,107,31,0.3); }
   50% { box-shadow: 0 0 0 4px rgba(242,107,31,0); }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .border-\[1\.5px\] {
-    animation: none !important;
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
   }
+}
+
+:where(button, a, input, select, textarea, [tabindex]):focus-visible {
+  outline: 2px solid #F26B1F;
+  outline-offset: 3px;
+}
+
+@keyframes system-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.system-shimmer {
+  background: linear-gradient(100deg, #EEEAE4 20%, #FAF8F4 42%, #EEEAE4 64%);
+  background-size: 220% 100%;
+  animation: system-shimmer 1.5s ease-in-out infinite;
+}
+
+.dark .system-shimmer {
+  background: linear-gradient(100deg, #27272A 20%, #3F3F46 42%, #27272A 64%);
+  background-size: 220% 100%;
+}
+
+@keyframes system-route-loader {
+  from { transform: translateX(-110%); }
+  to { transform: translateX(210%); }
+}
+
+.system-route-loader {
+  animation: system-route-loader 1s cubic-bezier(.4, 0, .2, 1) infinite;
 }
 
 /* ── Chunky range sliders ── */
@@ -95,6 +309,89 @@
 }
 .mb-card-in { animation: mb-card-in 220ms cubic-bezier(.16, 1, .3, 1) both; }
 
+/* Topic board -> question workspace hand-off. The board recedes by only a few
+   pixels so the change reads as continuity, not a page carousel. */
+@keyframes mb-board-exit {
+  from { opacity: 1; transform: translateY(0) scale(1); }
+  to   { opacity: 0; transform: translateY(-5px) scale(.992); }
+}
+.mb-board-exit {
+  pointer-events: none;
+  animation: mb-board-exit 180ms cubic-bezier(.4, 0, 1, 1) both;
+  transform-origin: 50% 24%;
+}
+
+/* Mark Bank has its own editorial work surface. Dark mode is deliberately a
+   warm graphite desk rather than an inverted white page: the question, scheme,
+   controls and sticky chrome all belong to the same material system. */
+.mark-bank-theme {
+  --mb-canvas: #FAF9F7;
+  --mb-paper: #FFFFFF;
+  --mb-raised: #F4F2EE;
+  --mb-soft: #F7F6F3;
+  --mb-plate: #F0FAF8;
+  --mb-ink: #1A1A1A;
+  --mb-ink-2: #3A3530;
+  --mb-muted: #7A7068;
+  --mb-label: #9E9186;
+  --mb-border: #D0CDC8;
+  --mb-hairline: #ECE9E4;
+  --mb-success: #3A8D5F;
+  --mb-success-tint: #E8F2EC;
+  --mb-success-text: #1F5F3E;
+  --mb-shadow: 0 20px 60px rgba(26, 26, 26, .18);
+}
+
+.dark .mark-bank-theme {
+  color-scheme: dark;
+  --mb-canvas: #141414;
+  --mb-paper: #20201F;
+  --mb-raised: #2A2927;
+  --mb-soft: #252422;
+  --mb-plate: #19302C;
+  --mb-ink: #F7F3ED;
+  --mb-ink-2: #E2DCD4;
+  --mb-muted: #B9B0A7;
+  --mb-label: #A59C93;
+  --mb-border: #55514C;
+  --mb-hairline: #3B3834;
+  --mb-success: #76C295;
+  --mb-success-tint: #20372A;
+  --mb-success-text: #AEE1BF;
+  --mb-shadow: 0 24px 70px rgba(0, 0, 0, .55);
+}
+
+.dark .mark-bank-theme .mb-session-rail,
+.dark .mark-bank-theme .mb-grade-button {
+  background: var(--mb-paper) !important;
+}
+
+/* Shared immersive decks use coloured illustration bands over a restrained
+   paper card. In dark mode the paper becomes warm charcoal while illustrations
+   retain their authored colours and every label keeps readable contrast. */
+.immersive-deck-theme {
+  --deck-paper: #FFFFFF;
+  --deck-soft: #F3F1ED;
+  --deck-ink: #1A1A1A;
+  --deck-body: #3A3530;
+  --deck-muted: #7A7068;
+  --deck-label: #9E9186;
+  --deck-hairline: #DDD8D1;
+  --deck-shadow: 4px 5px 0 0 #1A1A1A;
+}
+
+.dark .immersive-deck-theme {
+  --deck-paper: #242321;
+  --deck-soft: #2D2B28;
+  --deck-ink: #F7F3ED;
+  --deck-body: #DDD6CD;
+  --deck-muted: #B9B0A7;
+  --deck-label: #AAA096;
+  --deck-hairline: #56514B;
+  --deck-shadow: 4px 5px 0 0 #080808;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .mb-card-in { animation-duration: 1ms; }
+  .mb-board-exit { animation-duration: 1ms; }
 }

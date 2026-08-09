@@ -6,7 +6,7 @@
 import {
   type StudentSubject, type StudyBlock, type WeeklyTimetable, type Grade,
   type TimetableCompletions, type JCBand,
-  LC_SUBJECTS, DAYS_OF_WEEK, getPointsForGrade, getGradeIndex, HIGHER_GRADES, ORDINARY_GRADES,
+  LC_SUBJECTS, DAYS_OF_WEEK, getPointsForGrade, getGradeIndex,
   JC_BANDS,
   toDateKey,
 } from './subjectData';
@@ -140,6 +140,10 @@ export interface SubjectPriority {
   currentPoints: number;
   targetPoints: number;
   pointsGain: number;
+  /** Gain to the student's actual best-six CAO total if this target is reached. */
+  bestSixPointsGain?: number;
+  /** Number of grade boundaries between current and target (senior cycle only). */
+  targetGradeSteps?: number;
   difficultyMultiplier: number;
   efficiencyMultiplier: number;
   priorityScore: number;
@@ -225,36 +229,52 @@ export function computeSubjectPrioritiesJC(
 export function computeSubjectPrioritiesForCurriculum(
   subjects: StudentSubject[],
   topicMastery: TopicMasteryMap | undefined,
-  curriculumLevel: CurriculumLevel
+  curriculumLevel: CurriculumLevel,
+  examDate?: string | null,
 ): SubjectPriority[] {
   return curriculumLevel === 'junior'
     ? computeSubjectPrioritiesJC(subjects, topicMastery)
-    : computeSubjectPriorities(subjects, topicMastery);
+    : computeSubjectPriorities(subjects, topicMastery, examDate);
 }
 
 export function computeSubjectPriorities(
   subjects: StudentSubject[],
-  topicMastery?: TopicMasteryMap
+  topicMastery?: TopicMasteryMap,
+  examDate?: string | null,
 ): SubjectPriority[] {
+  const subjectPoints = subjects.map(s => {
+    const isMaths = LC_SUBJECTS.find(lc => lc.name === s.subjectName)?.isMaths || false;
+    return {
+      subject: s,
+      isMaths,
+      currentPoints: getPointsForGrade(s.currentGrade, isMaths),
+      targetPoints: getPointsForGrade(s.targetGrade, isMaths),
+    };
+  });
+  const bestSixTotal = (points: number[]) => points
+    .sort((a, b) => b - a)
+    .slice(0, 6)
+    .reduce((sum, pointsValue) => sum + pointsValue, 0);
+  const baselineBestSix = bestSixTotal(subjectPoints.map(row => row.currentPoints));
+
   return subjects.map(s => {
-    const lcSubject = LC_SUBJECTS.find(lc => lc.name === s.subjectName);
-    const isMaths = lcSubject?.isMaths || false;
-
-    const currentPoints = getPointsForGrade(s.currentGrade, isMaths);
-    const targetPoints = getPointsForGrade(s.targetGrade, isMaths);
+    const subjectIndex = subjects.indexOf(s);
+    const { isMaths, currentPoints, targetPoints } = subjectPoints[subjectIndex];
     const pointsGain = Math.max(0, targetPoints - currentPoints);
+    const projectedPoints = subjectPoints.map((row, index) => (
+      index === subjectIndex ? Math.max(row.currentPoints, row.targetPoints) : row.currentPoints
+    ));
+    const bestSixPointsGain = Math.max(0, bestSixTotal(projectedPoints) - baselineBestSix);
 
-    // Diminishing returns: weaker students (higher grade index) get higher multiplier.
-    // JC subjects don't carry an LC grade; guard so the algorithm still produces a
-    // sensible priority instead of crashing on undefined.startsWith().
-    const gradeIdx = getGradeIndex(s.currentGrade);
-    const scale = s.currentGrade?.startsWith('H') ? HIGHER_GRADES.length : ORDINARY_GRADES.length;
-    const difficultyMultiplier = Math.max(0.3, gradeIdx / (scale - 1));
+    // A nearby target is more actionable than an equally valuable seven-grade
+    // leap. This tempers aspiration without declaring weak subjects hopeless.
+    const targetGradeSteps = Math.max(0, getGradeIndex(s.currentGrade) - getGradeIndex(s.targetGrade));
+    const difficultyMultiplier = targetGradeSteps > 0 ? 1 / Math.sqrt(targetGradeSteps) : 1;
 
     // Syllabus efficiency: subjects with higher-efficiency topics get a small boost
     // This encourages studying subjects where effort yields more exam marks
     let efficiencyMultiplier = 1.0;
-    const syllabus = getSyllabusForSubject(s.subjectName);
+    const syllabus = getSyllabusForSubject(s.subjectName, examDate);
     if (syllabus && syllabus.topics.length > 0) {
       const avgEfficiency = syllabus.topics.reduce(
         (sum, t) => sum + computeEfficiency(t, syllabus.totalMarks), 0
@@ -277,7 +297,7 @@ export function computeSubjectPriorities(
       }
     }
 
-    const priorityScore = pointsGain * difficultyMultiplier * efficiencyMultiplier * topicBoost;
+    const priorityScore = bestSixPointsGain * difficultyMultiplier * efficiencyMultiplier * topicBoost;
 
     return {
       subjectName: s.subjectName,
@@ -287,6 +307,8 @@ export function computeSubjectPriorities(
       currentPoints,
       targetPoints,
       pointsGain,
+      bestSixPointsGain,
+      targetGradeSteps,
       difficultyMultiplier,
       efficiencyMultiplier,
       priorityScore,
@@ -317,6 +339,61 @@ export interface SessionAllocation {
   priorityScore: number;
 }
 
+export interface WeeklyStudyTarget {
+  targetMinutes: number;
+  targetHours: number;
+  phase: 'foundation' | 'building' | 'revision' | 'exam-prep';
+  explanation: string;
+}
+
+/**
+ * A deliberately conservative workload curve for focused work outside class.
+ * There is no scientifically valid universal number of study hours, so this is
+ * a product recommendation bounded by the realities of a secondary-school week:
+ * start at roughly six focused hours, add volume gradually, and never prescribe
+ * the 20–40 hour "grind" weeks common in study-content marketing.
+ */
+export function computeWeeklyStudyTarget(weeksUntilExam: number): WeeklyStudyTarget {
+  if (weeksUntilExam <= 4) {
+    return {
+      targetMinutes: 720,
+      targetHours: 12,
+      phase: 'exam-prep',
+      explanation: 'Exam preparation: more frequent retrieval and timed practice, still capped to protect sleep and recovery.',
+    };
+  }
+  if (weeksUntilExam <= 8) {
+    return {
+      targetMinutes: 600,
+      targetHours: 10,
+      phase: 'revision',
+      explanation: 'Revision phase: practice increases while sessions remain spread across the week.',
+    };
+  }
+  if (weeksUntilExam <= 16) {
+    return {
+      targetMinutes: 495,
+      targetHours: 8.25,
+      phase: 'building',
+      explanation: 'Building phase: a steady workload with room for school, sleep and recovery.',
+    };
+  }
+  if (weeksUntilExam <= 24) {
+    return {
+      targetMinutes: 405,
+      targetHours: 6.75,
+      phase: 'building',
+      explanation: 'Building phase: consistency matters more than cramming this far from the exam.',
+    };
+  }
+  return {
+    targetMinutes: 360,
+    targetHours: 6,
+    phase: 'foundation',
+    explanation: 'Foundation phase: build a repeatable weekly habit before increasing the load.',
+  };
+}
+
 // ─── Sustainability Limits ──────────────────────────────────────────────────
 //
 // Study hours per week must be sustainable. Research shows diminishing returns
@@ -336,15 +413,6 @@ function weekendBlockCap(weeksUntilExam: number): number {
   return 4;                            // normal: ~3 hours
 }
 
-/** Maximum total weekly study hours based on distance from exams. */
-function maxWeeklyHours(weeksUntilExam: number): number {
-  if (weeksUntilExam <= 2) return 22;  // absolute max during crunch
-  if (weeksUntilExam <= 6) return 18;
-  if (weeksUntilExam <= 12) return 15;
-  if (weeksUntilExam <= 20) return 12;
-  return 10;                            // far from exams: sustainable base
-}
-
 // Weekend day indices: Saturday = 5, Sunday = 6 in DAYS_OF_WEEK
 const WEEKEND_INDICES = new Set([5, 6]);
 
@@ -354,21 +422,26 @@ const MAX_SESSION_RATIO = 3;
 export function allocateSessions(
   priorities: SubjectPriority[],
   weeksUntilExam: number,
-  sm2States?: SubjectSM2State[]
+  sm2States?: SubjectSM2State[],
+  blockDuration: number = 45,
 ): SessionAllocation[] {
-  const intensity = computeIntensityFactor(weeksUntilExam);
-  // Base: 14 sessions/week (2/day). Ramps to 21 (3/day) at max intensity
-  const totalSessions = Math.round(14 + intensity * 7);
+  const target = computeWeeklyStudyTarget(weeksUntilExam);
+  const safeBlockDuration = Math.max(25, Math.min(90, blockDuration));
+  const totalSessions = Math.max(
+    priorities.length,
+    Math.round(target.targetMinutes / safeBlockDuration),
+  );
   const n = priorities.length;
 
   if (n === 0) return [];
 
   const totalPriority = priorities.reduce((sum, p) => sum + p.priorityScore, 0);
   if (totalPriority === 0) {
-    const perSubject = Math.max(1, Math.floor(totalSessions / n));
-    return priorities.map(p => ({
+    const base = Math.floor(totalSessions / n);
+    const remainder = totalSessions % n;
+    return priorities.map((p, index) => ({
       subjectName: p.subjectName,
-      sessions: perSubject,
+      sessions: base + (index < remainder ? 1 : 0),
       priorityLabel: 'Medium' as const,
       priorityScore: p.priorityScore,
     }));
@@ -474,10 +547,16 @@ export function allocateSessions(
   // Adjust total to match target
   let currentTotal = allocations.reduce((sum, a) => sum + a.sessions, 0);
   while (currentTotal > totalSessions) {
-    const maxSess = Math.max(...allocations.map(a => a.sessions));
-    const idx = allocations.findIndex(a => a.sessions === maxSess);
-    if (allocations[idx].sessions > 1) {
-      allocations[idx].sessions--;
+    // Rounding can over-allocate. Remove surplus from the lowest-priority
+    // subject above its maintenance floor; never arbitrarily penalise the
+    // first/highest-priority subject with the largest rounded share.
+    const removable = allocations
+      .map((allocation, index) => ({ ...allocation, index }))
+      .filter(allocation => allocation.sessions > 1)
+      .sort((a, b) => a.priorityScore - b.priorityScore || b.sessions - a.sessions);
+    const candidate = removable[0];
+    if (candidate) {
+      allocations[candidate.index].sessions--;
       currentTotal--;
     } else break;
   }
@@ -532,21 +611,50 @@ export function generateWeeklyTimetable(
       : weekdayBlockCap(effectiveWeeks);
   });
 
-  // Enforce weekly hours sustainability cap
-  const maxMinutes = maxWeeklyHours(effectiveWeeks) * 60;
-  const maxTotalBlocks = Math.floor(maxMinutes / blockDuration);
+  // Enforce the recommended weekly envelope. `allocateSessions` normally
+  // already matches it; this second boundary protects callers with custom
+  // allocations and weeks with very few available days.
+  const maxMinutes = computeWeeklyStudyTarget(effectiveWeeks).targetMinutes;
+  const maxTotalBlocks = Math.max(1, Math.floor(maxMinutes / blockDuration));
   const totalCapacity = dayCaps.reduce((s, c) => s + c, 0);
   const effectiveCapacity = Math.min(totalCapacity, maxTotalBlocks);
 
   // Build blocks for each subject, capped to effective capacity
   const allBlocks: { block: StudyBlock; priority: number; subjectName: string }[] = [];
   const totalRequested = allocations.reduce((s, a) => s + a.sessions, 0);
-  const scaleFactor = totalRequested > effectiveCapacity
-    ? effectiveCapacity / totalRequested
-    : 1;
+
+  // Fit subject counts to the actual week exactly. Simple per-subject rounding
+  // could turn a 10-block capacity into 12 blocks (each subject was forced to
+  // at least one), after which the placement fallback overflowed individual
+  // days. Largest-remainder allocation keeps the weekly total honest.
+  const fittedCounts = new Map<string, number>();
+  if (totalRequested <= effectiveCapacity) {
+    allocations.forEach(a => fittedCounts.set(a.subjectName, a.sessions));
+  } else {
+    const ranked = [...allocations].sort((a, b) => b.priorityScore - a.priorityScore);
+    const canMaintainAll = effectiveCapacity >= allocations.length;
+    let remaining = effectiveCapacity;
+    if (canMaintainAll) {
+      allocations.forEach(a => fittedCounts.set(a.subjectName, 1));
+      remaining -= allocations.length;
+    }
+    const weightedTotal = ranked.reduce((sum, a) => sum + Math.max(0.01, a.sessions - (canMaintainAll ? 1 : 0)), 0);
+    const fractions = ranked.map(a => {
+      const raw = remaining * Math.max(0.01, a.sessions - (canMaintainAll ? 1 : 0)) / weightedTotal;
+      const whole = Math.floor(raw);
+      fittedCounts.set(a.subjectName, (fittedCounts.get(a.subjectName) ?? 0) + whole);
+      return { subjectName: a.subjectName, fraction: raw - whole };
+    });
+    let assigned = [...fittedCounts.values()].reduce((sum, n) => sum + n, 0);
+    fractions.sort((a, b) => b.fraction - a.fraction);
+    for (let i = 0; assigned < effectiveCapacity; i++, assigned++) {
+      const subjectName = fractions[i % fractions.length].subjectName;
+      fittedCounts.set(subjectName, (fittedCounts.get(subjectName) ?? 0) + 1);
+    }
+  }
 
   for (const alloc of allocations) {
-    const scaledSessions = Math.max(1, Math.round(alloc.sessions * scaleFactor));
+    const scaledSessions = fittedCounts.get(alloc.subjectName) ?? 0;
     const sm2 = sm2Map.get(alloc.subjectName);
 
     for (let i = 0; i < scaledSessions; i++) {
@@ -628,6 +736,26 @@ export function generateWeeklyTimetable(
     return DAYS_OF_WEEK.map(day => ({ day, blocks: [] }));
   }
 
+  // First decide how full each day should be. Load balance is the primary
+  // constraint; spacing is optimised *inside* that balanced shape. Weekends get
+  // only a slight preference, never enough to create a four-block Saturday
+  // beside a one-block Thursday.
+  const targetDayLoads: number[] = Array(7).fill(0);
+  for (let placed = 0; placed < allBlocks.length; placed++) {
+    const candidates = availableDayIndices.filter(i => targetDayLoads[i] < dayCaps[i]);
+    if (candidates.length === 0) break;
+    const chosen = candidates.reduce((best, i) => {
+      const weekendWeight = WEEKEND_INDICES.has(i) ? 1.12 : 1;
+      const score = targetDayLoads[i] / weekendWeight;
+      const bestWeight = WEEKEND_INDICES.has(best) ? 1.12 : 1;
+      const bestScore = targetDayLoads[best] / bestWeight;
+      if (score !== bestScore) return score < bestScore ? i : best;
+      // Rotate ties by week so the same weekday is not always the heavy one.
+      return ((i - weekOffset + 7) % 7) < ((best - weekOffset + 7) % 7) ? i : best;
+    }, candidates[0]);
+    targetDayLoads[chosen]++;
+  }
+
   for (const [subjectName, entries] of sortedSubjects) {
     const count = entries.length;
     if (count === 0) continue;
@@ -656,8 +784,8 @@ export function generateWeeklyTimetable(
         const slotIdx = (idealSlotIdx + search) % availableDayIndices.length;
         const dayIdx = availableDayIndices[slotIdx];
 
-        // Skip if day is at capacity
-        if (dayLoads[dayIdx] >= dayCaps[dayIdx]) continue;
+        // Skip once this day's balanced target has been filled.
+        if (dayLoads[dayIdx] >= targetDayLoads[dayIdx]) continue;
 
         // Score this slot: prefer days that are far from other sessions of same subject
         let minDistToSame = availableDayIndices.length; // max possible
@@ -669,16 +797,12 @@ export function generateWeeklyTimetable(
           minDistToSame = Math.min(minDistToSame, dist);
         }
 
-        // Prefer: (1) maximum distance from same subject, (2) closer to ideal slot,
-        // (3) lighter load days, (4) weekend days (more free time)
+        // Prefer: (1) avoid repeating a subject on one day, (2) maximum distance
+        // from its other sessions, (3) lighter load, (4) the ideal spaced slot.
         const distFromIdeal = Math.min(search, availableDayIndices.length - search);
-        const loadPenalty = dayLoads[dayIdx] * 0.5;
-        // Weekend bonus: prefer placing blocks on Sat/Sun since student has no school.
-        // Scale by how full the day is relative to cap — fuller weekends get less bonus.
-        const isWeekend = WEEKEND_INDICES.has(dayIdx);
-        const remainingCapRatio = dayCaps[dayIdx] > 0 ? 1 - (dayLoads[dayIdx] / dayCaps[dayIdx]) : 0;
-        const weekendBonus = isWeekend ? 3 * remainingCapRatio : 0;
-        const score = minDistToSame * 10 - distFromIdeal - loadPenalty + weekendBonus;
+        const loadPenalty = dayLoads[dayIdx] * 2;
+        const sameDayPenalty = placedDays.includes(dayIdx) ? 100 : 0;
+        const score = minDistToSame * 10 - distFromIdeal - loadPenalty - sameDayPenalty;
 
         if (score > bestScore) {
           bestScore = score;
@@ -686,10 +810,13 @@ export function generateWeeklyTimetable(
         }
       }
 
-      // Fallback: if no day has capacity, find the least loaded day
+      // Defensive fallback: choose a day below its hard cap. Under normal
+      // operation targetDayLoads guarantees this branch is never needed.
       if (bestDay === -1) {
-        bestDay = availableDayIndices.reduce((best, di) =>
-          dayLoads[di] < dayLoads[best] ? di : best, availableDayIndices[0]);
+        const belowCap = availableDayIndices.filter(di => dayLoads[di] < dayCaps[di]);
+        if (belowCap.length === 0) break;
+        bestDay = belowCap.reduce((best, di) =>
+          dayLoads[di] < dayLoads[best] ? di : best, belowCap[0]);
       }
 
       dayAssignments[bestDay].push(entries[i].block);

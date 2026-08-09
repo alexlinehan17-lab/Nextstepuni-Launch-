@@ -22,143 +22,50 @@ const ACCENT = '#F26B1F'; // Brand accent (orange).
 // ── Item icons — painted-blob + ink-illustration, 100x100 viewBox ───────
 const StudySessionIcon: React.FC = () => (
   <svg viewBox="0 0 100 100" width="100%" height="100%" aria-hidden="true">
-    <path
-      d="M 12 28 Q 6 50 14 72 Q 28 88 50 86 Q 78 84 84 62 Q 90 38 76 22 Q 58 10 36 16 Q 18 22 12 28 Z"
-      fill="#B8DDC8"
-      opacity="0.75"
-    />
-    <g>
-      <circle cx="50" cy="50" r="22" fill="white" stroke="#1a1a1a" strokeWidth="1.5" />
-      <line x1="50" y1="50" x2="50" y2="36" stroke="#1a1a1a" strokeWidth="1.6" strokeLinecap="round" />
-      <line x1="50" y1="50" x2="60" y2="56" stroke="#1a1a1a" strokeWidth="1.4" strokeLinecap="round" />
-      <circle cx="50" cy="50" r="1.5" fill="#1a1a1a" />
-      <circle cx="50" cy="32" r="0.9" fill="#1a1a1a" />
-      <circle cx="68" cy="50" r="0.9" fill="#1a1a1a" />
-      <circle cx="50" cy="68" r="0.9" fill="#1a1a1a" />
-      <circle cx="32" cy="50" r="0.9" fill="#1a1a1a" />
-    </g>
+    <path d="M13 28C8 43 9 69 22 80c13 11 41 9 54-3 13-13 14-42 1-55C62 8 26 13 13 28Z" fill="#B8DDC8" opacity=".78" />
+    <path d="M43 22c1-5 14-5 16 0l-1 7" fill="#FAFBF6" stroke="#20201F" strokeWidth="3" strokeLinecap="round" />
+    <path d="M27 53c0-17 9-26 24-27 16-1 25 11 24 27-1 17-10 25-25 25S27 69 27 53Z" fill="#FAFBF6" stroke="#20201F" strokeWidth="3" strokeLinejoin="round" />
+    <path d="M51 35c7 0 13 4 17 9L51 53Z" fill="#F26B1F" opacity=".86" />
+    <path d="m51 36-1 17 12 7" fill="none" stroke="#20201F" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+    <circle cx="50" cy="53" r="3" fill="#20201F" />
   </svg>
 );
 
 const ModuleSectionIcon: React.FC = () => (
   <svg viewBox="0 0 100 100" width="100%" height="100%" aria-hidden="true">
-    <path
-      d="M 14 26 Q 8 48 14 70 Q 26 86 48 84 Q 76 82 82 62 Q 88 38 78 24 Q 62 12 38 16 Q 20 22 14 26 Z"
-      fill="#F5C9A8"
-      opacity="0.75"
-    />
-    <g>
-      <path
-        d="M 32 22 L 60 22 L 72 34 L 72 80 L 32 80 Z"
-        fill="white"
-        stroke="#1a1a1a"
-        strokeWidth="1.5"
-        strokeLinejoin="round"
-      />
-      <path d="M 60 22 L 60 34 L 72 34" fill="none" stroke="#1a1a1a" strokeWidth="1.5" strokeLinejoin="round" />
-      <line x1="38" y1="44" x2="60" y2="44" stroke="#1a1a1a" strokeWidth="1.2" strokeLinecap="round" />
-      <line x1="38" y1="52" x2="66" y2="52" stroke="#1a1a1a" strokeWidth="1.2" strokeLinecap="round" />
-      <line x1="38" y1="60" x2="62" y2="60" stroke="#1a1a1a" strokeWidth="1.2" strokeLinecap="round" />
-      <line x1="38" y1="68" x2="56" y2="68" stroke="#1a1a1a" strokeWidth="1.2" strokeLinecap="round" />
-    </g>
+    <path d="M14 25C8 44 10 69 23 79c15 11 43 8 55-7 11-14 10-39-2-50C62 10 28 13 14 25Z" fill="#F5C9A8" opacity=".78" />
+    <path d="M31 18c11 1 23 0 31 2l12 13c-1 14 1 33-2 48-13 2-27 1-41 0-2-19-1-43 0-63Z" fill="#FAFBF6" stroke="#20201F" strokeWidth="3" strokeLinejoin="round" />
+    <path d="m62 20-1 14 13-1" fill="none" stroke="#20201F" strokeWidth="3" strokeLinejoin="round" />
+    <path d="M39 45c8-1 18 0 26 0M39 55c9 0 17 1 25 0M39 66c7 0 14-1 20 0" fill="none" stroke="#20201F" strokeWidth="2.7" strokeLinecap="round" />
+    <path d="M39 73c7 1 15 0 22 0" fill="none" stroke="#F26B1F" strokeWidth="3" strokeLinecap="round" />
   </svg>
 );
 
 const CompleteModuleIcon: React.FC = () => (
   <svg viewBox="0 0 100 100" width="100%" height="100%" aria-hidden="true">
-    <path
-      d="M 14 28 Q 8 48 16 68 Q 28 84 50 84 Q 76 84 84 64 Q 90 40 78 24 Q 60 12 38 18 Q 20 24 14 28 Z"
-      fill="#D4B978"
-      opacity="0.75"
-    />
-    <g>
-      <line x1="32" y1="22" x2="32" y2="80" stroke="#1a1a1a" strokeWidth="1.6" strokeLinecap="round" />
-      <path
-        d="M 32 22 L 70 28 L 60 38 L 70 48 L 32 48 Z"
-        fill="white"
-        stroke="#1a1a1a"
-        strokeWidth="1.5"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M 44 32 L 50 38 L 60 28"
-        fill="none"
-        stroke="#1a1a1a"
-        strokeWidth="1.6"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </g>
+    <path d="M14 28C8 46 11 70 25 79c15 10 42 8 54-7 11-14 8-38-3-50C61 9 28 15 14 28Z" fill="#D4B978" opacity=".78" />
+    <path d="M31 81c1-17-1-43 1-62" fill="none" stroke="#20201F" strokeWidth="3.2" strokeLinecap="round" />
+    <path d="M33 22c13 0 26 4 39 5l-10 11 10 13c-14-2-26-5-40-4" fill="#FAFBF6" stroke="#20201F" strokeWidth="3" strokeLinejoin="round" />
+    <path d="m45 33 7 6 10-10" fill="none" stroke="#F26B1F" strokeWidth="3.4" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
 
 const QuestsIcon: React.FC = () => (
   <svg viewBox="0 0 100 100" width="100%" height="100%" aria-hidden="true">
-    <path
-      d="M 12 30 Q 6 52 16 72 Q 28 88 52 84 Q 78 80 84 60 Q 90 36 76 20 Q 58 10 36 18 Q 20 24 12 30 Z"
-      fill="#D9A9C2"
-      opacity="0.75"
-    />
-    <g>
-      <circle cx="50" cy="50" r="24" fill="white" stroke="#1a1a1a" strokeWidth="1.5" />
-      <circle cx="50" cy="50" r="15" fill="none" stroke="#1a1a1a" strokeWidth="1.2" />
-      <circle cx="50" cy="50" r="6" fill="#1a1a1a" />
-    </g>
+    <path d="M13 28C7 47 10 71 23 81c14 10 43 7 56-8 11-14 9-39-4-52C59 9 27 15 13 28Z" fill="#D9A9C2" opacity=".78" />
+    <path d="M26 51c0-16 10-25 25-25 16 0 25 10 24 26-1 15-10 24-25 24S26 67 26 51Z" fill="#FAFBF6" stroke="#20201F" strokeWidth="3" />
+    <path d="M36 51c0-9 5-15 14-15 10 0 15 6 15 15 0 10-6 15-15 15s-14-6-14-15Z" fill="none" stroke="#20201F" strokeWidth="2.7" />
+    <circle cx="50" cy="51" r="6" fill="#F26B1F" />
+    <path d="m54 46 20-20m-2 0h7m-7 0v-7" fill="none" stroke="#20201F" strokeWidth="3" strokeLinecap="round" />
   </svg>
 );
 
 const IslandShopIcon: React.FC = () => (
   <svg viewBox="0 0 100 100" width="100%" height="100%" aria-hidden="true">
-    <path
-      d="M 14 28 Q 8 50 16 70 Q 28 88 50 86 Q 76 84 84 62 Q 90 38 76 22 Q 58 10 36 16 Q 18 22 14 28 Z"
-      fill="#A8C9A0"
-      opacity="0.75"
-    />
-    <g>
-      <path
-        d="M 32 24 L 78 24 L 78 50 L 54 78 L 22 50 L 22 34 Z"
-        fill="white"
-        stroke="#1a1a1a"
-        strokeWidth="1.5"
-        strokeLinejoin="round"
-      />
-      <circle cx="34" cy="36" r="3.5" fill="#FAFBF6" stroke="#1a1a1a" strokeWidth="1.3" />
-    </g>
-  </svg>
-);
-
-const SkipBlockIcon: React.FC = () => (
-  <svg viewBox="0 0 100 100" width="100%" height="100%" aria-hidden="true">
-    <path
-      d="M 12 28 Q 6 50 14 72 Q 28 88 52 86 Q 80 82 86 60 Q 90 36 76 22 Q 58 10 36 16 Q 18 22 12 28 Z"
-      fill="#9DB7CC"
-      opacity="0.75"
-    />
-    <g>
-      <path d="M 28 28 L 50 50 L 28 72" fill="none" stroke="#1a1a1a" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M 50 28 L 72 50 L 50 72" fill="none" stroke="#1a1a1a" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-    </g>
-  </svg>
-);
-
-const RestDayIcon: React.FC = () => (
-  <svg viewBox="0 0 100 100" width="100%" height="100%" aria-hidden="true">
-    <path
-      d="M 14 28 Q 8 50 16 70 Q 28 88 50 86 Q 78 84 84 62 Q 90 38 76 22 Q 58 10 36 16 Q 20 22 14 28 Z"
-      fill="#B8C9E5"
-      opacity="0.75"
-    />
-    <g>
-      <path
-        d="M 72 52 A 24 24 0 1 1 48 28 A 18 18 0 0 0 72 52 Z"
-        fill="white"
-        stroke="#1a1a1a"
-        strokeWidth="1.5"
-        strokeLinejoin="round"
-      />
-      <circle cx="78" cy="30" r="1.2" fill="#1a1a1a" />
-      <circle cx="32" cy="22" r="1" fill="#1a1a1a" />
-    </g>
+    <path d="M13 27C8 45 10 69 23 80c14 11 43 8 55-7 12-14 10-39-3-51C60 10 27 14 13 27Z" fill="#A8C9A0" opacity=".78" />
+    <path d="m22 45 27-16 29 15-28 18Z" fill="#FAFBF6" stroke="#20201F" strokeWidth="3" strokeLinejoin="round" />
+    <path d="m22 45 1 11 27 18 28-18V44M50 62v12" fill="none" stroke="#20201F" strokeWidth="3" strokeLinejoin="round" />
+    <path d="M50 29V16m1 1c8 0 13 2 18 5-6 4-12 5-18 5" fill="#F26B1F" stroke="#20201F" strokeWidth="2.7" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
 
@@ -184,9 +91,7 @@ const EARN_ITEMS: Item[] = [
 ];
 
 const SPEND_ITEMS: Item[] = [
-  { Icon: IslandShopIcon, label: 'Island shop',   value: 'Varies', sub: 'Build your island' },
-  { Icon: SkipBlockIcon,  label: 'Skip a block',  value: '20 pts', sub: 'Skip one session' },
-  { Icon: RestDayIcon,    label: 'Rest day pass', value: '60 pts', sub: 'Day off, streak safe' },
+  { Icon: IslandShopIcon, label: 'Island shop', value: 'Varies', sub: 'Terrain and objects for your island' },
 ];
 
 // ── Item card ──────────────────────────────────────────────────────────
@@ -368,7 +273,7 @@ const PointsPanel: React.FC<PointsPanelProps> = ({ open, onHide }) => (
           >
             Spend
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {SPEND_ITEMS.map(item => (
               <ItemCard key={item.label} item={item} />
             ))}

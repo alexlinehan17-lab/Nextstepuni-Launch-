@@ -28,6 +28,7 @@ import { useInnovationData } from '../contexts/InnovationDataContext';
 import { useAuth } from '../contexts/AuthContext';
 import { MISSION_TECHNIQUES, spacingGapDays, type TechniqueType } from '../comebackMissionData';
 import FluencyTrap from './comeback/FluencyTrap';
+import { LoadingState } from './ui/SystemState';
 
 // ── Types ──────────────────────────────────────────────────
 
@@ -474,14 +475,26 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
   const [_computedPoints, setComputedPoints] = useState<number | null>(null);
 
   // Future Finder integration (from shared context)
-  const { futureFinderPicks: ffPicks } = useInnovationData();
+  const {
+    futureFinderPicks: ffPicks,
+    mockResults: mockResultsCtx,
+    subjectPriorities,
+    topicMastery,
+  } = useInnovationData();
   const [selectedFfPick, setSelectedFfPick] = useState<CAOCourse | null>(null);
 
   // CAO Simulator what-if scenarios
   const [whatIfScenarios, setWhatIfScenarios] = useState<{ subjectName: string; currentGrade: Grade; whatIfGrade: Grade; pointsGain: number }[]>([]);
 
   // Topic mastery data (War Room integration — Connection 2)
-  const [topicMasteryData, setTopicMasteryData] = useState<Record<string, Record<string, { confidence: string }>>>({});
+  const topicMasteryData = useMemo(() => {
+    const bySubject: Record<string, Record<string, { confidence: string }>> = {};
+    for (const entry of Object.values(topicMastery.canonicalMastery.topics)) {
+      bySubject[entry.subjectName] ??= {};
+      bySubject[entry.subjectName][entry.topicId] = { confidence: entry.confidence };
+    }
+    return bySubject;
+  }, [topicMastery.canonicalMastery]);
 
   // Timetable completions (Spaced Rep Timetable integration — Connection 3 & 5)
   const [timetableCompletions, setTimetableCompletions] = useState<Record<string, string[]>>({});
@@ -504,7 +517,6 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
   const quickWinsJC = useMemo(() => calculateQuickWinsJC(subjects, undefined), [subjects]);
 
   // Compute mock trends: compare last two mocks per subject
-  const { mockResults: mockResultsCtx, subjectPriorities } = useInnovationData();
   const mockTrends = useMemo(() => {
     const trends: Record<string, 'up' | 'down' | 'stable'> = {};
     for (const s of subjects) {
@@ -546,10 +558,6 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
         // Load computed points from CAO Simulator
         if (data?.computedPoints?.current) {
           setComputedPoints(data.computedPoints.current);
-        }
-        // Load topic mastery data (War Room integration)
-        if (data?.topicMastery) {
-          setTopicMasteryData(data.topicMastery);
         }
         // Load timetable completions (Spaced Rep Timetable integration)
         if (data?.timetableCompletions) {
@@ -721,11 +729,7 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
   }, [comebackData, timetableCompletions]);
 
   if (isLoading) {
-    return (
-      <div className="flex items-center justify-center py-20">
-        <div className="w-6 h-6 border-2 border-zinc-300 dark:border-zinc-600 rounded-full animate-spin" style={{ borderTopColor: COLORS.accent }} />
-      </div>
-    );
+    return <LoadingState label="Building your comeback plan" />;
   }
 
   // ── Phase: Anchor ──────────────────────────────────────

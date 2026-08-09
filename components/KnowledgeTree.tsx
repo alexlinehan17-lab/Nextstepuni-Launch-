@@ -3,15 +3,14 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect, useCallback } from 'react';
 import { MotionDiv } from './Motion';
 import {
-  Rocket, ArrowRight, BarChart3, Hammer,
-  User, Home, PanelLeft, Award, BookOpen, CalendarRange, Settings, LogOut, Sun, Moon, RefreshCw, Mountain, Timer, Dumbbell, Bell, MessageSquare, HelpCircle, Sparkles
+  ArrowRight,
+  User, Home, PanelLeft, Award, BookOpen, CalendarRange, Settings, LogOut, Sun, Moon, RefreshCw, Timer, Dumbbell, Bell, MessageSquare, HelpCircle
 } from 'lucide-react';
 import SiteGuide, { type GuideAction } from './SiteGuide';
 import FirstVisitCoachMarks, { coachMarksSeen } from './FirstVisitCoachMarks';
-import WhatsNew, { hasUnseenChangelog, markChangelogSeen } from './WhatsNew';
 import ResumeCard from './ResumeCard';
 import FeedbackQrModal from './FeedbackQrModal';
 import { getAvatarUrl } from '../utils/authUtils';
@@ -20,7 +19,7 @@ import { type UserSettings } from '../types';
 import { toDateKey } from './subjectData';
 import { getSubjectHex } from '../utils/subjectColors';
 import { SectionCard } from './SectionCard';
-import { ModulesIcon, InnovationZoneIcon, MyProgressIcon, LearningPathsIcon } from './sectionIcons';
+import { ModulesIcon, InnovationZoneIcon, MyProgressIcon, LearningPathsIcon, MyJourneyIcon } from './sectionIcons';
 import { COLORS } from '../design/tokens';
 
 export type CategoryType =
@@ -79,15 +78,41 @@ interface KnowledgeTreeProps {
 }
 
 
-export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: _onSelectCategory, onGoToModules, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, onGoToInsights: _onGoToInsights, onGoToTrainingHub, onGoToAccreditation, onGoToYearPlans, onGoToWipTools, allCourses, onSelectModule, categoryTitles: _categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes: _unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction, onOpenTool, uid }) => {
+export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: _onSelectCategory, onGoToModules, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, onGoToInsights: _onGoToInsights, onGoToTrainingHub, onGoToAccreditation, onGoToYearPlans, allCourses, onSelectModule, categoryTitles: _categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes: _unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction, onOpenTool, uid }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [feedbackQrOpen, setFeedbackQrOpen] = useState(false);
   // Site Guide (the "?") + one-time first-visit coach marks.
   const [guideOpen, setGuideOpen] = useState(false);
-  const [coachActive, setCoachActive] = useState(() => !coachMarksSeen(uid));
+  const [coachActive, setCoachActive] = useState(false);
   // "What's new" popover + its unseen-dot state.
-  const [whatsNewOpen, setWhatsNewOpen] = useState(false);
-  const [whatsNewUnseen, setWhatsNewUnseen] = useState(() => hasUnseenChangelog(uid));
+
+  // Start the spotlight after the automatically loaded dashboard has painted.
+  // This also re-evaluates when auth supplies the stable account uid instead
+  // of accidentally binding the one-time tour to the anonymous key.
+  useEffect(() => {
+    if (coachMarksSeen(uid)) {
+      setCoachActive(false);
+      return;
+    }
+    let secondFrame = 0;
+    let timer: ReturnType<typeof setTimeout> | undefined;
+    const firstFrame = requestAnimationFrame(() => {
+      secondFrame = requestAnimationFrame(() => {
+        timer = setTimeout(() => setCoachActive(true), 180);
+      });
+    });
+    return () => {
+      cancelAnimationFrame(firstFrame);
+      if (secondFrame) cancelAnimationFrame(secondFrame);
+      if (timer) clearTimeout(timer);
+    };
+  }, [uid]);
+
+  const finishCoachMarks = useCallback(() => setCoachActive(false), []);
+  const openGuideFromCoachMarks = useCallback(() => {
+    setCoachActive(false);
+    setGuideOpen(true);
+  }, []);
 
   // Press "?" anywhere on the home page to open the guide.
   useEffect(() => {
@@ -116,12 +141,8 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
     { icon: Home, label: 'Home', onClick: () => {}, active: true },
     { icon: Dumbbell, label: 'Training Hub', onClick: onGoToTrainingHub ?? (() => {}), active: false },
     { icon: BookOpen, label: 'References', onClick: onGoToAccreditation ?? (() => {}), active: false },
-    { icon: Mountain, label: 'My Journey', onClick: onGoToJourney, active: false },
     { icon: Timer, label: 'Study Session', onClick: onGoToStudy ?? (() => {}), active: false },
-    { icon: BarChart3, label: 'Dashboard', onClick: onGoToDashboard, active: false },
     { icon: CalendarRange, label: 'Year Plans', onClick: onGoToYearPlans ?? (() => {}), active: false },
-    { icon: Rocket, label: 'Launchpad', onClick: onGoToInnovationZone, active: false },
-    { icon: Hammer, label: 'WIP', onClick: onGoToWipTools ?? (() => {}), active: false },
   ];
   
   // Aggregate + per-category progress for the Modules hero
@@ -171,7 +192,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
         const today = new Date();
         const jsDay = today.getDay();
         const todayDayIndex = jsDay === 0 ? 6 : jsDay - 1;
-        const priorities = computeSubjectPriorities(studentProfile.subjects as any);
+        const priorities = computeSubjectPriorities(studentProfile.subjects as any, undefined, studentProfile.examStartDate);
         const weeksUntilExam = computeWeeksUntilExam(studentProfile.examStartDate);
         const allocations = allocateSessions(priorities, weeksUntilExam);
         const restDays = studentProfile.restDays || [];
@@ -213,17 +234,17 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
   };
 
   return (
-    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 overflow-x-hidden relative transition-colors duration-500 selection:bg-[rgba(var(--accent),0.2)]">
+    <div className="product-shell dashboard-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)] overflow-x-hidden relative transition-colors duration-500 selection:bg-[rgba(var(--accent),0.2)]">
       {/* Sidebar — desktop only */}
       <aside
-        className={`hidden md:flex flex-col fixed top-0 left-0 h-full z-40 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm border-r border-zinc-200 dark:border-zinc-800 overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${sidebarOpen ? 'w-56' : 'w-[60px]'}`}
+        className={`hidden md:flex flex-col fixed top-0 left-0 h-full z-40 bg-[#FAFBF6] dark:bg-zinc-900 border-r-[1.5px] border-[#383838] dark:border-zinc-700 overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${sidebarOpen ? 'w-56' : 'w-[60px]'}`}
       >
         {/* Avatar row — click to toggle */}
         <button
           onClick={() => setSidebarOpen(!sidebarOpen)}
-          className="flex items-center gap-3 px-3 py-4 w-full hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+          className="flex items-center gap-3 px-3 py-4 w-full border-b border-[#DED9D3] hover:bg-[#F3EEE7] dark:border-zinc-700 dark:hover:bg-zinc-800 transition-colors"
         >
-          <div className="w-9 h-9 rounded-lg overflow-hidden shrink-0 bg-zinc-200 dark:bg-zinc-700 flex items-center justify-center">
+          <div className="w-9 h-9 rounded-xl border-[1.5px] border-[#383838] overflow-hidden shrink-0 bg-white dark:bg-zinc-700 flex items-center justify-center">
             {userAvatarSeed ? (
               <img src={getAvatarUrl(userAvatarSeed)} alt="Avatar" className="w-full h-full object-cover" />
             ) : (
@@ -241,10 +262,10 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
             <button
               key={item.label}
               onClick={item.onClick}
-              className={`flex items-center gap-3 px-2.5 py-2 rounded-lg transition-colors ${item.active ? 'bg-zinc-100 dark:bg-zinc-800' : 'hover:bg-zinc-100 dark:hover:bg-zinc-800'}`}
+              className={`relative flex items-center gap-3 px-2.5 py-2.5 rounded-xl transition-colors ${item.active ? 'bg-[#FDEBDD] text-[#9A3B0E] dark:bg-zinc-800' : 'hover:bg-[#F3EEE7] dark:hover:bg-zinc-800'}`}
             >
               <div className="shrink-0 flex items-center justify-center w-[18px]">
-                <item.icon size={18} strokeWidth={1.5} className="text-zinc-600 dark:text-zinc-400" />
+                <item.icon size={18} strokeWidth={item.active ? 2 : 1.6} className={item.active ? 'text-[#F26B1F]' : 'text-zinc-600 dark:text-zinc-400'} />
               </div>
               <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
                 {item.label}
@@ -318,22 +339,6 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
             </div>
             <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
               {settings.darkMode ? 'Light Mode' : 'Dark Mode'}
-            </span>
-          </button>
-
-          {/* What's new — changelog popover; accent dot while unseen */}
-          <button
-            onClick={() => { setWhatsNewOpen(true); markChangelogSeen(uid); setWhatsNewUnseen(false); }}
-            className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
-          >
-            <div className="shrink-0 flex items-center justify-center w-[18px] relative">
-              <Sparkles size={18} strokeWidth={1.5} className="text-zinc-500" />
-              {whatsNewUnseen && (
-                <span className="absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full" style={{ backgroundColor: '#F26B1F' }} />
-              )}
-            </div>
-            <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
-              What&rsquo;s New
             </span>
           </button>
 
@@ -455,86 +460,81 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
             transition={{ duration: 0.4, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
             className="mb-6"
           >
-            {/* ── Day stats — Mercury-styled inline strip ── */}
-            <div
-              data-coach="study"
-              className="rounded-2xl px-5 py-3.5 mb-4 flex items-center justify-between flex-wrap gap-3 bg-white dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800"
-              style={{ boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}
-            >
-              <div className="flex items-center gap-3 flex-wrap text-sm">
-                <span className="font-medium text-[#1A1A1A] dark:text-white">
-                  {todayBlocks.length > 0
-                    ? `${todayBlocks.length} session${todayBlocks.length !== 1 ? 's' : ''} today`
-                    : 'No sessions today'}
-                </span>
-                <span className="w-1 h-1 rounded-full bg-[#D6D3D1] dark:bg-zinc-700" />
-                <span className="text-[#78716C] dark:text-zinc-400">{pointsBalance ?? 0} JP</span>
-                {streak && streak.currentStreak > 0 && (
-                  <>
-                    <span className="w-1 h-1 rounded-full bg-[#D6D3D1] dark:bg-zinc-700" />
-                    <span className="font-medium" style={{ color: COLORS.accent }}>{streak.currentStreak}-day streak</span>
-                  </>
-                )}
-              </div>
-              {onGoToStudy && todayBlocks.length > 0 && !todayBlocks.every((_b, i) => todayCompletions.includes(`block-${i}`)) && (
-                <button
-                  onClick={onGoToStudy}
-                  className="flex items-center gap-1 text-xs font-bold px-4 py-2 rounded-lg text-white transition-transform duration-300 hover:translate-x-0.5"
-                  style={{ backgroundColor: COLORS.accent }}
-                >
-                  Study Now <ArrowRight size={12} />
-                </button>
-              )}
-            </div>
-
-            {/* ── White Mercury cards ── */}
+            {/* Daily plan first; supporting information follows. */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               {/* TODAY */}
-              <div className="px-4 py-3 bg-[#FAF7F4] dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800" style={{ borderRadius: 14, boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}>
-                <p className="text-[10px] font-bold uppercase tracking-widest mb-2 text-[#A8A29E] dark:text-zinc-500">Today</p>
+              <div data-coach="study" className="md:col-span-2 px-5 py-5 md:px-7 md:py-6 bg-white dark:bg-zinc-900 border-[1.5px] border-[#383838] dark:border-zinc-700" style={{ borderRadius: 16 }}>
+                <div className="flex items-start justify-between gap-4 mb-5">
+                  <div>
+                    <p className="text-[10px] font-bold uppercase tracking-[0.18em] mb-1.5 text-[#A0968D] dark:text-zinc-500">Today’s plan</p>
+                    <h2 className="font-serif text-2xl md:text-3xl font-bold text-[#1A1A1A] dark:text-white">
+                      {todayBlocks.length > 0
+                        ? `${todayBlocks.length} focused session${todayBlocks.length !== 1 ? 's' : ''}`
+                        : 'Nothing scheduled'}
+                    </h2>
+                    <p className="mt-1 text-xs text-[#78716C] dark:text-zinc-400">{pointsBalance ?? 0} JP available</p>
+                  </div>
+                  {onGoToStudy && todayBlocks.length > 0 && !todayBlocks.every((_b, i) => todayCompletions.includes(`block-${i}`)) && (
+                    <button
+                      onClick={onGoToStudy}
+                      className="shrink-0 flex items-center gap-1.5 text-xs font-bold px-4 py-2.5 rounded-lg text-white border-2 border-[#1A1A1A] bg-[#F26B1F] shadow-[3px_3px_0_0_#1A1A1A] transition-transform active:translate-x-[3px] active:translate-y-[3px] active:shadow-none"
+                    >
+                      Study Now <ArrowRight size={12} />
+                    </button>
+                  )}
+                </div>
                 {todayBlocks.length === 0 ? (
-                  <p className="text-xs text-[#A8A29E] dark:text-zinc-500">No blocks scheduled</p>
+                  <div className="rounded-xl bg-[#FAF9F7] dark:bg-zinc-800 px-4 py-5 text-sm text-[#78716C] dark:text-zinc-300">
+                    The timetable has done its job—use the time to rest or practise something that needs attention.
+                  </div>
                 ) : todayBlocks.every((_b, i) => todayCompletions.includes(`block-${i}`)) ? (
-                  <p className="text-xs font-bold" style={{ color: '#276749' }}>All done for today</p>
+                  <div className="rounded-xl bg-[#EDF2EE] px-4 py-5">
+                    <p className="text-sm font-bold text-[#276749]">All done for today</p>
+                    <p className="mt-1 text-xs text-[#50715D]">Your scheduled work is complete. Proper rest counts too.</p>
+                  </div>
                 ) : (
-                  <div className="flex flex-col gap-1.5">
-                    {todayBlocks.slice(0, 3).map((block, i) => (
-                      <div key={i} className="flex items-center gap-2 text-xs">
-                        <span className="w-3 h-3 rounded-full shrink-0" style={{ backgroundColor: getSubjectHex(block.subjectName) }} />
-                        <span className="font-semibold truncate text-[#1A1A1A] dark:text-white">{block.subjectName}</span>
-                        <span className="text-[10px] px-1.5 py-0.5 rounded bg-[#EDEBE8] dark:bg-zinc-700 text-[#78716C] dark:text-zinc-400">{sessionTypeLabel(block.sessionType)}</span>
-                        <span className="text-[10px] text-[#A8A29E] dark:text-zinc-500">{block.durationMinutes}m</span>
-                      </div>
-                    ))}
-                    {todayBlocks.length > 3 && (
-                      <p className="text-[10px] text-[#A8A29E] dark:text-zinc-500">+{todayBlocks.length - 3} more</p>
-                    )}
+                  <div className="grid gap-2">
+                    {todayBlocks.slice(0, 4).map((block, i) => {
+                      const complete = todayCompletions.includes(`block-${i}`);
+                      const nextIndex = todayBlocks.findIndex((_candidate, index) => !todayCompletions.includes(`block-${index}`));
+                      const isNext = i === nextIndex;
+                      return (
+                        <div
+                          key={i}
+                          className={`relative flex items-center gap-3 rounded-xl px-4 py-3 ${isNext ? 'bg-[#FFF1E7] border border-[#F26B1F]' : 'bg-[#FAF9F7] border border-transparent dark:bg-zinc-800'} ${complete ? 'opacity-55' : ''}`}
+                        >
+                          <span className="w-3 h-3 rounded-full shrink-0" style={{ backgroundColor: getSubjectHex(block.subjectName) }} />
+                          <div className="min-w-0 flex-1">
+                            <div className="flex items-center gap-2">
+                              <span className={`text-sm font-bold truncate text-[#1A1A1A] dark:text-white ${complete ? 'line-through' : ''}`}>{block.subjectName}</span>
+                              {isNext && <span className="text-[9px] font-bold uppercase tracking-wider text-[#C34E10]">Next</span>}
+                            </div>
+                            <p className="mt-0.5 text-[11px] text-[#78716C] dark:text-zinc-400">{sessionTypeLabel(block.sessionType)} · {block.durationMinutes} min</p>
+                          </div>
+                          <span className="text-[10px] font-semibold text-[#8D857E]">{complete ? 'Done' : `${i + 1}/${todayBlocks.length}`}</span>
+                        </div>
+                      );
+                    })}
                   </div>
                 )}
               </div>
 
-              {/* PROGRESS — big focal number */}
-              <div className="px-5 py-4 bg-[#FAF7F4] dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800" style={{ borderRadius: 14, boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}>
-                <p className="text-[10px] font-bold uppercase tracking-widest mb-2 text-[#A8A29E] dark:text-zinc-500">Progress</p>
-                <div className="flex items-baseline gap-1.5">
-                  <span className="font-apercu font-black tabular-nums leading-none text-[#1A1A1A] dark:text-white" style={{ fontSize: 'clamp(40px, 8vw, 56px)' }}>
+              {/* PROGRESS — deliberately secondary */}
+              <div className="px-5 py-4 bg-white dark:bg-zinc-900 border-[1.5px] border-[#383838] dark:border-zinc-700" style={{ borderRadius: 14 }}>
+                <div className="flex items-center justify-between gap-4">
+                  <div>
+                    <p className="text-[10px] font-bold uppercase tracking-widest mb-2 text-[#A8A29E] dark:text-zinc-500">Programme progress</p>
+                    <div className="flex items-baseline gap-1">
+                      <span className="font-apercu font-black tabular-nums leading-none text-[#1A1A1A] dark:text-white text-3xl">
                     {Math.round(overallPercent)}
-                  </span>
-                  <span className="font-apercu font-bold text-2xl md:text-3xl text-[#A8A29E] dark:text-zinc-500">%</span>
+                      </span>
+                      <span className="font-apercu font-bold text-lg text-[#A8A29E] dark:text-zinc-500">%</span>
+                    </div>
+                  </div>
+                  <span className="text-xs font-semibold text-[#78716C] dark:text-zinc-400">{completedCount}/{totalCount} modules</span>
                 </div>
                 <div className="h-1.5 rounded-full overflow-hidden bg-[#EDEBE8] dark:bg-zinc-700 mt-2.5">
                   <div className="h-full rounded-full transition-all duration-700" style={{ backgroundColor: COLORS.accent, width: `${overallPercent}%` }} />
-                </div>
-                <div className="flex items-center gap-3 text-xs mt-2.5">
-                  <span className="font-medium text-[#78716C] dark:text-zinc-400">{completedCount}/{totalCount} modules</span>
-                  <span className="text-[#EDEBE8] dark:text-zinc-700">·</span>
-                  <span className="font-medium text-[#78716C] dark:text-zinc-400">{pointsBalance ?? 0} JP</span>
-                  {streak && streak.currentStreak > 0 && (
-                    <>
-                      <span className="text-[#EDEBE8] dark:text-zinc-700">·</span>
-                      <span className="font-bold" style={{ color: COLORS.accent }}>{streak.currentStreak}-day streak</span>
-                    </>
-                  )}
                 </div>
                 {northStar && (
                   <p className="mt-2 text-[11px] italic leading-relaxed truncate text-[#A8A29E] dark:text-zinc-500">&ldquo;{northStar.statement}&rdquo;</p>
@@ -569,8 +569,8 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
                 }
 
                 return (
-                  <div className="md:col-span-2">
-                    <div className="flex items-center bg-[#FAF7F4] dark:bg-zinc-900 rounded-xl px-5 py-4 border border-[#EDEBE8] dark:border-zinc-800" style={{ borderRadius: 14, boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}>
+                  <div className="h-full">
+                    <div className="h-full flex items-center bg-white dark:bg-zinc-900 rounded-xl px-5 py-4 border-[1.5px] border-[#383838] dark:border-zinc-700" style={{ borderRadius: 14 }}>
                       {/* Left: streak count */}
                       <div className="flex flex-col items-center justify-center pr-5" style={{ minWidth: 88 }}>
                         <p className="font-apercu font-semibold tabular-nums" style={{ fontSize: 22, color: COLORS.accent }}>{streakCount}</p>
@@ -640,8 +640,8 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
               {smartRecommendation && (
                 <button
                   onClick={() => onRecommendationAction?.(smartRecommendation.category)}
-                  className="px-4 py-3 text-left hover:shadow-md transition-all bg-[#FAF7F4] dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800"
-                  style={{ borderRadius: 14, boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}
+                  className="px-5 py-4 text-left transition-transform hover:-translate-y-0.5 bg-white dark:bg-zinc-900 border-[1.5px] border-[#383838] dark:border-zinc-700"
+                  style={{ borderRadius: 14 }}
                 >
                   <p className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#A8A29E] dark:text-zinc-500">Recommended</p>
                   <p className="text-xs font-semibold text-[#1A1A1A] dark:text-white truncate">{smartRecommendation.title}</p>
@@ -651,7 +651,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
 
               {/* QUEST */}
               {questState && (
-                <div className="px-4 py-3 bg-[#FAF7F4] dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800" style={{ borderRadius: 14, boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}>
+                <div className="px-5 py-4 bg-white dark:bg-zinc-900 border-[1.5px] border-[#383838] dark:border-zinc-700" style={{ borderRadius: 14 }}>
                   <div className="flex items-center justify-between mb-1">
                     <p className="text-[10px] font-bold uppercase tracking-widest text-[#A8A29E] dark:text-zinc-500">
                       {questState.isOnboarding ? `Day ${questState.dayNumber} Quest` : 'Daily Quest'}
@@ -667,7 +667,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
                     <span className="text-[10px] font-bold tabular-nums text-[#A8A29E] dark:text-zinc-500">{questState.current}/{questState.quest.target}</span>
                   </div>
                   {questState.isCompleted && !questState.isClaimed && onClaimQuestReward && (
-                    <button onClick={onClaimQuestReward} className="mt-2 w-full py-1.5 rounded-lg text-xs font-bold text-white" style={{ backgroundColor: COLORS.accent }}>
+                    <button onClick={onClaimQuestReward} className="mt-3 w-full py-2.5 rounded-lg text-xs font-bold text-white border-2 border-[#1A1A1A] bg-[#F26B1F] shadow-[3px_3px_0_0_#1A1A1A] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none">
                       Claim {questState.quest.rewardPoints} pts
                     </button>
                   )}
@@ -719,15 +719,20 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
             icon={<LearningPathsIcon />}
             onClick={onGoToLearningPaths}
           />
+          <SectionCard
+            eyebrow="Build Your World"
+            title="My Journey"
+            subtitle="Turn your progress into an island of your own."
+            icon={<MyJourneyIcon />}
+            onClick={onGoToJourney}
+            className="md:col-span-2"
+          />
         </MotionDiv>
 
       </div>
       </div>
 
       <FeedbackQrModal open={feedbackQrOpen} onClose={() => setFeedbackQrOpen(false)} />
-
-      {/* What's new — two or three lines per release, newest first */}
-      <WhatsNew open={whatsNewOpen} onClose={() => setWhatsNewOpen(false)} />
 
       {/* The Site Guide — a swipeable tour of the core pages (the "?"). */}
       <SiteGuide open={guideOpen} onClose={() => setGuideOpen(false)} onGo={handleGuideGo} />
@@ -736,8 +741,8 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
       {coachActive && !guideOpen && (
         <FirstVisitCoachMarks
           uid={uid}
-          onFinish={() => setCoachActive(false)}
-          onOpenGuide={() => { setCoachActive(false); setGuideOpen(true); }}
+          onFinish={finishCoachMarks}
+          onOpenGuide={openGuideFromCoachMarks}
         />
       )}
     </div>
