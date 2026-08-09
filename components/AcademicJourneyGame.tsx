@@ -65,67 +65,83 @@ const PHASE_DISPLAY_SHORT: Record<Phase, string> = {
     'Final Stretch': 'Final',
 };
 
+// Results artwork follows the same painted-blob + hand-drawn PNG language as
+// the Launchpad. Turning points choose an icon from their largest stat effect,
+// so every existing (and future) outcome has a deterministic visual.
+const RESULT_STAT_ART: Record<StatKey, { icon: string; blob: string; path: string }> = {
+    energy: {
+        icon: '/icons/modules/09-hourglass.png', blob: '#F1D6A3',
+        path: 'M 6 24 Q -2 52 8 78 Q 24 98 52 94 Q 86 90 94 62 Q 100 30 84 10 Q 60 -4 32 4 Q 12 12 6 24 Z',
+    },
+    academicCap: {
+        icon: '/icons/modules/02-brain.png', blob: '#BCCCE3',
+        path: 'M 4 28 Q 0 56 12 82 Q 28 100 56 96 Q 90 92 96 60 Q 100 28 82 8 Q 56 -6 30 6 Q 10 16 4 28 Z',
+    },
+    socialSupport: {
+        icon: '/icons/modules/11-heart.png', blob: '#E8C7C1',
+        path: 'M 8 22 Q 0 48 6 76 Q 20 96 50 96 Q 84 96 94 70 Q 100 40 84 14 Q 64 -2 36 4 Q 14 12 8 22 Z',
+    },
+    systemSavvy: {
+        icon: '/icons/modules/13-checklist.png', blob: '#B5D4CC',
+        path: 'M 6 22 Q -2 50 10 78 Q 26 98 56 94 Q 90 88 96 56 Q 100 24 80 6 Q 56 -6 28 6 Q 10 14 6 22 Z',
+    },
+    resilience: {
+        icon: '/icons/modules/03-shield.png', blob: '#D8CBE5',
+        path: 'M 4 26 Q 2 56 12 82 Q 26 98 52 96 Q 88 94 96 64 Q 100 34 84 10 Q 60 -4 30 6 Q 10 18 4 26 Z',
+    },
+};
+
+function dominantEffectStat(effects: Partial<GameState>, fallback: StatKey = 'resilience'): StatKey {
+    const entries = (Object.entries(effects) as [StatKey, number][]).filter(([, value]) => Number.isFinite(value));
+    if (!entries.length) return fallback;
+    return entries.reduce((best, entry) => Math.abs(entry[1]) > Math.abs(best[1]) ? entry : best)[0];
+}
+
+const ResultIconBlob: React.FC<{ stat: StatKey; size?: number; className?: string }> = ({ stat, size = 64, className }) => {
+    const art = RESULT_STAT_ART[stat];
+    return (
+        <div className={`relative shrink-0 ${className ?? ''}`} style={{ width: size, height: size }} aria-hidden>
+            <svg className="absolute inset-0 h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+                <path d={art.path} fill={art.blob} opacity="0.82" />
+            </svg>
+            <img src={art.icon} alt="" className="absolute left-1/2 top-1/2 object-contain" style={{ width: '102%', height: '102%', transform: 'translate(-50%, -50%)' }} />
+        </div>
+    );
+};
+
+const TrailMarker: React.FC<{ color: string; large?: boolean }> = ({ color, large = false }) => {
+    const size = large ? 14 : 8;
+    return (
+        <span
+            aria-hidden
+            className="block"
+            style={{
+                width: size,
+                height: size,
+                transform: 'rotate(45deg)',
+                borderRadius: large ? 4 : 2,
+                background: large ? color : PAPER,
+                border: `1.5px solid ${color}`,
+                boxShadow: `0 0 0 ${large ? 4 : 3}px ${PAPER}`,
+            }}
+        />
+    );
+};
+
+const ArchetypeMountainBlob: React.FC = () => (
+    <div className="relative hidden shrink-0 sm:block" style={{ width: 116, height: 106 }} aria-hidden>
+        <svg className="absolute inset-0 h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path d="M 6 24 Q -2 52 8 78 Q 24 98 52 94 Q 86 90 94 62 Q 100 30 84 10 Q 60 -4 32 4 Q 12 12 6 24 Z" fill="#EFD9CD" opacity="0.82" />
+        </svg>
+        <img src="/assets/level-up/header-mountain.png" alt="" className="absolute object-contain" style={{ width: '118%', height: '118%', left: '-9%', top: '-9%' }} />
+    </div>
+);
+
 // ════════════════════════════════════════════════════════════════════════════
 // HAND-DRAWN SVG PRIMITIVES
 // All strokes use slightly varied widths and "rough" pathing to feel sketched.
 // Each motif keeps its own viewBox so callers control size via width/height.
 // ════════════════════════════════════════════════════════════════════════════
-
-const SketchedSun: React.FC<{ size?: number; color?: string; className?: string }> = ({ size = 48, color = INK, className }) => (
-    <svg width={size} height={size} viewBox="0 0 64 64" fill="none" className={className} aria-hidden>
-        {/* Half-sun on horizon — uneven rays, slightly off-circle */}
-        <path d="M14 42 Q 32 22, 50 42" stroke={color} strokeWidth={1.4} strokeLinecap="round" fill="rgba(204,120,92,0.16)" />
-        <path d="M11 42 L 53 42" stroke={color} strokeWidth={1.2} strokeLinecap="round" />
-        {/* Rays — irregular lengths, not symmetric */}
-        <path d="M32 18 L 32 8"  stroke={color} strokeWidth={1.2} strokeLinecap="round" />
-        <path d="M22 22 L 17 14" stroke={color} strokeWidth={1.2} strokeLinecap="round" />
-        <path d="M42 22 L 48 13" stroke={color} strokeWidth={1.2} strokeLinecap="round" />
-        <path d="M14 32 L 6 30"  stroke={color} strokeWidth={1.2} strokeLinecap="round" />
-        <path d="M50 32 L 58 31" stroke={color} strokeWidth={1.2} strokeLinecap="round" />
-    </svg>
-);
-
-const SketchedSapling: React.FC<{ size?: number; color?: string; className?: string }> = ({ size = 48, color = INK, className }) => (
-    <svg width={size} height={size} viewBox="0 0 64 64" fill="none" className={className} aria-hidden>
-        {/* Soil mound */}
-        <path d="M14 50 Q 32 44, 50 50" stroke={color} strokeWidth={1.2} strokeLinecap="round" />
-        <path d="M16 53 Q 32 49, 48 53" stroke={color} strokeWidth={0.9} strokeLinecap="round" />
-        {/* Stem + two leaves */}
-        <path d="M32 50 L 32 26" stroke={color} strokeWidth={1.3} strokeLinecap="round" />
-        <path d="M32 34 Q 22 30, 18 36 Q 24 40, 32 36" stroke={color} strokeWidth={1.2} fill="rgba(94,139,126,0.18)" />
-        <path d="M32 28 Q 42 22, 46 28 Q 40 34, 32 30" stroke={color} strokeWidth={1.2} fill="rgba(94,139,126,0.18)" />
-        {/* Tiny scatter — pebbles */}
-        <circle cx="11" cy="55" r="1.2" fill={color} />
-        <circle cx="56" cy="55" r="1" fill={color} />
-    </svg>
-);
-
-const SketchedDroplet: React.FC<{ size?: number; color?: string; className?: string }> = ({ size = 48, color = INK, className }) => (
-    <svg width={size} height={size} viewBox="0 0 64 64" fill="none" className={className} aria-hidden>
-        <path d="M32 14 Q 22 32, 26 42 Q 32 50, 38 42 Q 42 32, 32 14 Z" stroke={color} strokeWidth={1.3} fill="rgba(94,139,126,0.12)" />
-        {/* Ripples — slightly uneven ellipses */}
-        <ellipse cx="32" cy="52" rx="14" ry="2.5" stroke={color} strokeWidth={1} fill="none" />
-        <ellipse cx="32" cy="52" rx="22" ry="3.5" stroke={color} strokeWidth={0.7} fill="none" opacity="0.7" />
-    </svg>
-);
-
-const SketchedFlame: React.FC<{ size?: number; color?: string; className?: string }> = ({ size = 48, color = INK, className }) => (
-    <svg width={size} height={size} viewBox="0 0 64 64" fill="none" className={className} aria-hidden>
-        <path d="M32 12 Q 22 26, 26 36 Q 28 42, 24 46 Q 22 38, 18 40 Q 16 50, 24 54 Q 32 58, 40 54 Q 48 50, 46 40 Q 42 38, 40 46 Q 36 42, 38 36 Q 42 26, 32 12 Z"
-              stroke={color} strokeWidth={1.3} fill="rgba(184,132,61,0.18)" strokeLinejoin="round" />
-        {/* Inner flicker */}
-        <path d="M30 30 Q 28 38, 32 44 Q 36 38, 32 30 Z" stroke={color} strokeWidth={0.9} fill="none" />
-    </svg>
-);
-
-const SketchedLeaf: React.FC<{ size?: number; color?: string; className?: string }> = ({ size = 48, color = INK, className }) => (
-    <svg width={size} height={size} viewBox="0 0 64 64" fill="none" className={className} aria-hidden>
-        <path d="M16 48 Q 18 18, 48 16 Q 46 46, 16 48 Z" stroke={color} strokeWidth={1.3} fill="rgba(94,139,126,0.16)" strokeLinejoin="round" />
-        <path d="M18 46 L 46 18" stroke={color} strokeWidth={0.9} strokeLinecap="round" />
-        <path d="M26 38 L 30 32" stroke={color} strokeWidth={0.7} strokeLinecap="round" />
-        <path d="M32 36 L 36 30" stroke={color} strokeWidth={0.7} strokeLinecap="round" />
-    </svg>
-);
 
 const SketchedFlag: React.FC<{ size?: number; color?: string; className?: string }> = ({ size = 32, color = INK, className }) => (
     <svg width={size} height={size} viewBox="0 0 32 32" fill="none" className={className} aria-hidden>
@@ -617,13 +633,6 @@ const SketchedRadar: React.FC<{ stats: GameState }> = ({ stats }) => {
 // REPORT CARD — editorial reveal
 // ════════════════════════════════════════════════════════════════════════════
 
-// Pick a sketched motif for a phase — used in turning-points trail
-const phaseMotif = (phase: Phase, idx: number): React.ReactNode => {
-    if (phase === 'Final Stretch') return <SketchedFlag size={36} />;
-    if (phase === 'Pressure Cooker') return idx % 2 === 0 ? <SketchedFlame size={36} /> : <SketchedSun size={36} />;
-    return idx % 2 === 0 ? <SketchedLeaf size={36} /> : <SketchedSapling size={36} />;
-};
-
 const InsightCard: React.FC<{ overline: string; title: string; body: string; motif: React.ReactNode; tilt?: number }> = ({ overline, title, body, motif, tilt = -0.6 }) => (
     <div className="relative p-5" style={{
         background: '#FFFFFF',
@@ -684,14 +693,7 @@ const ReportCard: React.FC<{ endingId: string; gameState: GameState; history: Hi
                     <h3 className="font-serif text-5xl sm:text-6xl font-bold leading-[1.02]" style={{ color: INK }}>
                         {archetype?.title || endScene?.title || 'Results Day'}
                     </h3>
-                    {/* Hand-drawn circular emblem — archetype mountain logo */}
-                    <img
-                        src="/assets/journey/archetype-mountain.png"
-                        alt=""
-                        aria-hidden
-                        className="hidden sm:block shrink-0"
-                        style={{ width: 96, height: 96, objectFit: 'contain' }}
-                    />
+                    <ArchetypeMountainBlob />
                 </div>
                 <p className="font-serif text-[17px] mt-5 leading-relaxed max-w-2xl" style={{ color: INK_SOFT }}>
                     {archetype?.description || endScene?.text}
@@ -703,14 +705,14 @@ const ReportCard: React.FC<{ endingId: string; gameState: GameState; history: Hi
                         overline="Your insight"
                         title={`Your ${STAT_LABELS[strongestStat(gameState)].toLowerCase()} is your superpower.`}
                         body={`This carried you through the year — lean into it next.`}
-                        motif={<SketchedSapling size={32} />}
+                        motif={<ResultIconBlob stat={strongestStat(gameState)} size={44} />}
                     />
                     {defining && (
                         <InsightCard
                             overline="Defined by"
                             title={defining.scene.title}
                             body={defining.choiceText}
-                            motif={<SketchedDroplet size={30} />}
+                            motif={<ResultIconBlob stat={dominantEffectStat(defining.effects)} size={44} />}
                             tilt={0.6}
                         />
                     )}
@@ -719,7 +721,7 @@ const ReportCard: React.FC<{ endingId: string; gameState: GameState; history: Hi
                             overline="Turning point"
                             title={turningPoints[0].scene.title}
                             body={turningPoints[0].choiceText}
-                            motif={<SketchedSun size={32} />}
+                            motif={<ResultIconBlob stat={dominantEffectStat(turningPoints[0].effects)} size={44} />}
                         />
                     )}
                 </div>
@@ -765,10 +767,9 @@ const ReportCard: React.FC<{ endingId: string; gameState: GameState; history: Hi
                         <div className="space-y-7">
                             {turningPoints.map((item, index) => (
                                 <div key={index} className="relative">
-                                    {/* Motif sits over the trail */}
-                                    <div className="absolute -left-20 top-0 flex items-center justify-center"
-                                        style={{ width: 56, height: 56, background: PAPER, borderRadius: '50%' }}>
-                                        {phaseMotif(item.scene.phase, index)}
+                                    {/* Painted icon sits directly over the trail. */}
+                                    <div className="absolute -left-20 -top-1 flex items-center justify-center" style={{ width: 56, height: 56 }}>
+                                        <ResultIconBlob stat={dominantEffectStat(item.effects)} size={56} />
                                     </div>
                                     <Overline>{item.scene.month}</Overline>
                                     <h5 className="font-serif text-[20px] font-semibold mt-1 leading-snug" style={{ color: INK }}>{item.scene.title}</h5>
@@ -792,7 +793,7 @@ const ReportCard: React.FC<{ endingId: string; gameState: GameState; history: Hi
                             <div key={index} className="px-4 py-3" style={{ background: 'transparent', border: `1.4px dashed ${INK_MUTE}66`, borderRadius: 12 }}>
                                 <div className="flex items-start gap-3">
                                     <span className="flex items-center justify-center shrink-0 mt-0.5" style={{
-                                        width: 26, height: 26, borderRadius: '50%', border: `1.3px dashed ${INK_MUTE}aa`, color: INK_MUTE,
+                                        width: 26, height: 26, borderRadius: '8px 11px 7px 10px', background: `${INK_MUTE}12`, color: INK_MUTE,
                                     }}>
                                         <Lock size={12} />
                                     </span>
@@ -853,21 +854,17 @@ const ReportCard: React.FC<{ endingId: string; gameState: GameState; history: Hi
                     />
                     {groupedPath.map(({ phase, nodes }) => (
                         <div key={phase} className="mb-7">
-                            <div className="flex items-center gap-2 mb-3 -ml-12">
-                                <div className="flex items-center justify-center" style={{
-                                    width: 30, height: 30, borderRadius: '50%',
-                                    background: PHASE_TOKENS[phase].wash, border: `1.4px solid ${PHASE_TOKENS[phase].ink}`,
-                                }}>
-                                    <div style={{ width: 8, height: 8, borderRadius: '50%', background: PHASE_TOKENS[phase].deep }} />
+                            <div className="flex items-center gap-3 mb-3 -ml-12">
+                                <div className="flex h-7 w-7 items-center justify-center shrink-0">
+                                    <TrailMarker color={PHASE_TOKENS[phase].deep} large />
                                 </div>
                                 <Overline color={PHASE_TOKENS[phase].deep}>{PHASE_DISPLAY[phase]}</Overline>
                             </div>
                             {nodes.map((node, ni) => (
                                 <div key={ni} className="relative mb-3 ml-2">
-                                    <div className="absolute -left-[39px] top-2" style={{
-                                        width: 10, height: 10, borderRadius: '50%',
-                                        background: PAPER, border: `1.4px solid ${INK}`,
-                                    }} />
+                                    <div className="absolute -left-[48px] top-1.5 flex h-3 w-3 items-center justify-center">
+                                        <TrailMarker color={INK_SOFT} />
+                                    </div>
                                     <Overline>{node.title}</Overline>
                                     <p className="font-serif text-[15px] mt-0.5 leading-relaxed" style={{ color: INK }}>{node.choiceText}</p>
                                 </div>
