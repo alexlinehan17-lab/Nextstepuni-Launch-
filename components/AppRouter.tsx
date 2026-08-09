@@ -301,7 +301,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   if (needsOnboarding) {
     return (
       <Suspense fallback={<LoadingSpinner />}>
-        <Onboarding userName={user.name} onComplete={handleOnboardingComplete} onSkip={handleOnboardingSkip} mode={transitionToSeniorMode ? "transition-to-senior" : "fresh"} transitionTargetYear={transitionTargetYear} />
+        <Onboarding userId={user.uid} userName={user.name} onComplete={handleOnboardingComplete} onSkip={handleOnboardingSkip} mode={transitionToSeniorMode ? "transition-to-senior" : "fresh"} transitionTargetYear={transitionTargetYear} />
       </Suspense>
     );
   }
@@ -436,7 +436,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   if (viewState === 'onboarding') {
     return (
       <Suspense fallback={<LoadingSpinner />}>
-        <Onboarding userName={user.name} onComplete={handleOnboardingComplete} onSkip={handleOnboardingSkip} mode={transitionToSeniorMode ? "transition-to-senior" : "fresh"} transitionTargetYear={transitionTargetYear} />
+        <Onboarding userId={user.uid} userName={user.name} onComplete={handleOnboardingComplete} onSkip={handleOnboardingSkip} mode={transitionToSeniorMode ? "transition-to-senior" : "fresh"} transitionTargetYear={transitionTargetYear} />
       </Suspense>
     );
   }

@@ -999,7 +999,7 @@ const Viewer: React.FC<ViewerProps> = ({
           paddingRight: 'calc(12px + var(--sar, 0px))',
         }}
       >
-        <div className="flex items-center gap-2 max-w-3xl mx-auto">
+        <div className="flex flex-wrap items-center gap-2 max-w-3xl mx-auto">
           <button
             onClick={() => onCloseRef.current()}
             aria-label="Close viewer"
@@ -1011,6 +1011,7 @@ const Viewer: React.FC<ViewerProps> = ({
             <p className="text-[14px] font-semibold truncate text-zinc-900 dark:text-white">{title}</p>
             {subtitle && <p className="text-[11px] truncate text-zinc-500">{subtitle}</p>}
           </div>
+          <div className="order-last flex w-full min-w-0 items-center justify-end gap-1.5 sm:order-none sm:w-auto sm:gap-2">
           {scheme && (
             <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50" role="group" aria-label="Paper or marking scheme">
               <button aria-pressed={side === 'paper'} onClick={() => setSide('paper')} className={segBtn(side === 'paper')}>
@@ -1034,7 +1035,7 @@ const Viewer: React.FC<ViewerProps> = ({
               }`}
               style={answersOn ? { backgroundColor: '#F26B1F', boxShadow: '0 2px 0 #B54D14' } : undefined}
             >
-              <Sparkles size={14} /> Answers
+              <Sparkles size={14} /> <span className="hidden min-[360px]:inline">Answers</span>
             </button>
           )}
           {side === 'paper' && (
@@ -1048,7 +1049,7 @@ const Viewer: React.FC<ViewerProps> = ({
                 }`}
                 style={activeToolCount > 0 ? { backgroundColor: '#F26B1F', boxShadow: '0 2px 0 #B54D14' } : undefined}
               >
-                <SlidersHorizontal size={14} /> Tools
+                <SlidersHorizontal size={14} /> <span className="hidden min-[360px]:inline">Tools</span>
                 {activeToolCount > 0 && (
                   <span className="ml-0.5 min-w-[16px] h-4 px-1 inline-flex items-center justify-center rounded-full bg-white/25 text-[10px] tabular-nums">
                     {activeToolCount}
@@ -1164,6 +1165,7 @@ const Viewer: React.FC<ViewerProps> = ({
               </AnimatePresence>
             </div>
           )}
+          </div>
           <a
             href={activeDoc.url}
             target="_blank"

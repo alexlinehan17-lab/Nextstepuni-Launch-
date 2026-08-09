@@ -328,7 +328,13 @@ const JourneyView: React.FC<JourneyViewProps> = ({
           />
 
           {/* Top overlay */}
-          <div className="absolute top-0 left-0 right-0 z-[75] flex items-center justify-between px-4 py-4 md:px-6">
+          <div
+            className="absolute top-0 left-0 right-0 z-[75] flex items-center justify-between gap-4 py-4 md:px-6"
+            style={{
+              paddingLeft: 'calc(20px + var(--sal, 0px))',
+              paddingRight: 'calc(20px + var(--sar, 0px))',
+            }}
+          >
             <button
               onClick={isViewingPeer ? handleBackFromPeer : onBack}
               className="p-2.5 rounded-xl bg-white/90 dark:bg-zinc-900/90 backdrop-blur-sm border border-zinc-200 dark:border-zinc-800 hover:bg-white dark:hover:bg-zinc-800 transition-colors"
@@ -337,8 +343,8 @@ const JourneyView: React.FC<JourneyViewProps> = ({
             </button>
 
             {isViewingPeer ? (
-              <div className="flex items-center gap-2">
-                <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/90 dark:bg-zinc-900/90 backdrop-blur-sm border border-zinc-200 dark:border-zinc-800">
+              <div className="flex min-w-0 items-center gap-2">
+                <div className="hidden min-w-0 items-center gap-2 px-3 py-1.5 rounded-full bg-white/90 dark:bg-zinc-900/90 backdrop-blur-sm border border-zinc-200 dark:border-zinc-800 sm:flex">
                   <img
                     src={getAvatarUrl(selectedPeer.avatar)}
                     alt={selectedPeer.name}
@@ -374,7 +380,7 @@ const JourneyView: React.FC<JourneyViewProps> = ({
 
             {/* Right side: kudos, gifts, peer islands buttons */}
             {!isViewingPeer ? (
-              <div className="flex items-center gap-2">
+              <div className="flex shrink-0 items-center gap-2 sm:gap-3">
                 <button
                   onClick={() => buildMode ? exitBuildMode() : setBuildMode(true)}
                   className={`flex items-center gap-2 px-3 py-2.5 rounded-xl backdrop-blur-sm border transition-colors ${

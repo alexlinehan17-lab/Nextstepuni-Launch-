@@ -41,8 +41,30 @@ export interface FutureFinderRevampedState {
   updatedAt: string;
 }
 
+const cacheKey = (uid: string) => `nextstepuni:future-finder:v1:${uid}`;
+
+function readCached(uid?: string): FutureFinderRevampedState | null {
+  if (!uid) return null;
+  try {
+    const value = JSON.parse(localStorage.getItem(cacheKey(uid)) ?? 'null') as FutureFinderRevampedState | null;
+    return value?.completedAt ? value : null;
+  } catch {
+    return null;
+  }
+}
+
+function writeCached(uid: string | undefined, value: FutureFinderRevampedState | null): void {
+  if (!uid) return;
+  try {
+    if (value) localStorage.setItem(cacheKey(uid), JSON.stringify(value));
+    else localStorage.removeItem(cacheKey(uid));
+  } catch { /* storage may be unavailable */ }
+}
+
 export function useFutureFinderRevamped(uid?: string) {
-  const [saved, setSaved] = useState<FutureFinderRevampedState | null>(null);
+  // The device cache is the hot path. This prevents an immediate exit/re-entry
+  // from racing Firestore's async snapshot inside a native WebView.
+  const [saved, setSaved] = useState<FutureFinderRevampedState | null>(() => readCached(uid));
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -52,20 +74,26 @@ export function useFutureFinderRevamped(uid?: string) {
     getDoc(doc(db, 'progress', uid))
       .then((snap) => {
         if (cancelled) return;
-        setSaved((snap.data()?.futureFinderRevamped as FutureFinderRevampedState) ?? null);
+        const remote = (snap.data()?.futureFinderRevamped as FutureFinderRevampedState) ?? null;
+        if (remote?.completedAt) {
+          setSaved(remote);
+          writeCached(uid, remote);
+        }
         setIsLoaded(true);
       })
-      .catch((e) => { logError('useFutureFinderRevamped.load', e); if (!cancelled) { setSaved(null); setIsLoaded(true); } });
+      .catch((e) => { logError('useFutureFinderRevamped.load', e); if (!cancelled) setIsLoaded(true); });
     return () => { cancelled = true; };
   }, [uid]);
 
   const persist = useCallback((next: FutureFinderRevampedState) => {
     setSaved(next);
+    writeCached(uid, next);
     if (uid) setDoc(doc(db, 'progress', uid), { futureFinderRevamped: next }, { merge: true }).catch((e) => reportSaveError('useFutureFinderRevamped.save', e));
   }, [uid]);
 
   const reset = useCallback(() => {
     setSaved(null);
+    writeCached(uid, null);
     if (uid) setDoc(doc(db, 'progress', uid), { futureFinderRevamped: null }, { merge: true }).catch((e) => reportSaveError('useFutureFinderRevamped.save', e));
   }, [uid]);
 

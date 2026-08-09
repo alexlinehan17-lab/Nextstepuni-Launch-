@@ -775,14 +775,22 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
       }}
     >
 
-      <header className="fixed top-0 left-0 right-0 z-[60] bg-[var(--surface-paper)] px-4 md:px-10 border-b border-[var(--outline-soft)]" style={{ paddingTop: 'calc(16px + var(--sat, 0px))', paddingBottom: '16px' }}>
-        <div className="container mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-4 md:gap-8">
+      <header
+        className="fixed top-0 left-0 right-0 z-[60] bg-[var(--surface-paper)] md:px-10 border-b border-[var(--outline-soft)]"
+        style={{
+          paddingTop: 'calc(16px + var(--sat, 0px))',
+          paddingBottom: '16px',
+          paddingLeft: 'calc(16px + var(--sal, 0px))',
+          paddingRight: 'calc(16px + var(--sar, 0px))',
+        }}
+      >
+        <div className="container mx-auto flex min-w-0 items-center justify-between gap-3">
+          <div className="flex min-w-0 items-center gap-3 md:gap-8">
             <MotionButton whileHover={{ y: -1 }} whileTap={{ x: 1, y: 1 }} onClick={activeTool ? () => nav.goBack() : onBack} className="p-2.5 rounded-xl bg-[var(--surface-paper)] border-[1.5px] border-[var(--outline-strong)] shadow-[2px_2px_0_0_var(--outline-strong)] active:shadow-none transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]">
               <ArrowLeft size={18} className="text-zinc-900 dark:text-white" />
             </MotionButton>
             <div className="hidden md:block h-10 w-px bg-[var(--outline-soft)]" />
-            <div>
+            <div className="min-w-0">
               <p className="font-mono text-[9px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-[0.25em] mb-1">Explore</p>
               <h1 className="font-serif font-semibold text-lg md:text-2xl tracking-tight text-zinc-900 dark:text-white truncate">The Launchpad</h1>
             </div>
