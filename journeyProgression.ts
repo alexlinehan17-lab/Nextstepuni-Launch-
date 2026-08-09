@@ -29,7 +29,13 @@ export interface FoundationStep {
 }
 
 export function getJourneyProgress(input: JourneyProgressionInput) {
-  const stageIndex = Math.max(0, JOURNEY_STAGES.findLastIndex(stage => input.completedModules >= stage.minimumModules));
+  let stageIndex = 0;
+  for (let index = JOURNEY_STAGES.length - 1; index >= 0; index -= 1) {
+    if (input.completedModules >= JOURNEY_STAGES[index].minimumModules) {
+      stageIndex = index;
+      break;
+    }
+  }
   const stage = JOURNEY_STAGES[stageIndex];
   const nextStage = JOURNEY_STAGES[stageIndex + 1] ?? null;
   const range = nextStage ? nextStage.minimumModules - stage.minimumModules : 1;

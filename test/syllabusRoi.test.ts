@@ -31,6 +31,7 @@ const topic = (id: string, name: string, markWeight: number, subtopicIds: string
 const SYL: SubjectSyllabus = {
   subject: 'Testology',
   subjectId: 'testology',
+  specificationId: 'testology-v1',
   totalMarks: 400,
   papers: [{ name: 'Paper 1', marks: 400, duration: '2h 30m' }],
   keyAdvice: '',
