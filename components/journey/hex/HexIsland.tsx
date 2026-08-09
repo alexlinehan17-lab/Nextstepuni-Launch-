@@ -58,7 +58,7 @@ interface HexIslandProps {
 
 const HexIsland: React.FC<HexIslandProps> = ({
   placements, waterColor, northStarStatement, buildMode = false,
-  previewPlacement, selectedPlacementId, onSelectPlacement,
+  previewPlacement, selectedPlacementId: _selectedPlacementId, onSelectPlacement,
 }) => {
   const now = Date.now();
 

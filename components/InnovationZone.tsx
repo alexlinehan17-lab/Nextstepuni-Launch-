@@ -12,7 +12,7 @@ import { FileSearch,
     ArrowLeft,
     Lock, Compass, Target,
     CalendarDays, Calculator, GitBranch, Rocket,
-    Map, ScanSearch, Milestone, Highlighter, Users, Sunrise, Mic, Stamp, Images, ListChecks, SpellCheck, FolderCheck
+    Map, ScanSearch, Milestone, Highlighter, Users, Sunrise, Mic, Stamp, Images, ListChecks, SpellCheck, FolderCheck, Waypoints
 } from 'lucide-react';
 import { doc, setDoc, getDoc, increment, deleteField } from 'firebase/firestore';
 import { saveInBackground } from '../utils/firestoreWrite';
@@ -36,6 +36,7 @@ const FutureFinderRevamped = lazy(() => import('./FutureFinderRevamped'));
 const CollegeCompass = lazy(() => import('./CollegeCompass'));
 const SyllabusXRay = lazy(() => import('./SyllabusXRay'));
 const PointsPassport = lazy(() => import('./PointsPassport'));
+const CatchUpLane = lazy(() => import('./CatchUpLane'));
 const CommandWordReflex = lazy(() => import('./CommandWordReflex'));
 const PaperTrail = lazy(() => import('./PaperTrail'));
 const MarkBank = lazy(() => import('./MarkBank/MarkBank'));
@@ -101,6 +102,7 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   'points-passport': { themeColor: '#B8A079', eyebrow: 'Track · Tracker',             subtitle: 'Mock trends and grade bargains, all at a glance.',                                  showHeader: true  },
   'exam-reps':       { themeColor: '#5E9C7B', eyebrow: 'Technique · Practice',        subtitle: 'One real exam question at a time — marked the examiner’s way, so you see exactly where the marks were.', showHeader: true  },
   'college-compass': { themeColor: '#2A7D6F', eyebrow: 'Plan · Roadmap',              subtitle: 'Your year-by-year runway to college — every CAO, HEAR, DARE and scholarship deadline, in order.', showHeader: false },
+  'catch-up-lane':   { themeColor: '#0E9AA8', eyebrow: 'Catch up · Recovery',         subtitle: 'Missed some classes? Pick a subject and get caught up one quick topic at a time — no catch-up is too small.', showHeader: true  },
   // No header. Mark Bank is used daily, and a tool built for daily use must not
   // re-explain itself daily: the eyebrow, title and subtitle cost ~238px at the top
   // of every screen INCLUDING every review card, which is where the exam question
@@ -163,7 +165,6 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
 
     // Retired tool aliases keep old bookmarks and persisted navigation useful.
     useEffect(() => {
-        if (activeTool === 'catch-up-lane') setActiveTool(null);
         if (activeTool === 'career-paths') setActiveTool('your-possible-life');
     }, [activeTool, setActiveTool]);
     const [subjectProfile, setSubjectProfile] = useState<StudentSubjectProfile | null>(null);
@@ -205,12 +206,8 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     }, [user?.school, user?.yearGroup]);
 
     // Refs to always access latest state in callbacks (avoids stale closures)
-    const pointsDataRef = useRef(pointsData);
-    pointsDataRef.current = pointsData;
     const cosmeticUnlocksRef = useRef(cosmeticUnlocks);
     cosmeticUnlocksRef.current = cosmeticUnlocks;
-    const earnedRestRef = useRef(earnedRest);
-    earnedRestRef.current = earnedRest;
     const onCosmeticUnlocksChangeRef = useRef(onCosmeticUnlocksChange);
     onCosmeticUnlocksChangeRef.current = onCosmeticUnlocksChange;
     const [showJournal, setShowJournal] = useState(false);
@@ -403,56 +400,6 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         }
     }, [executeToggle, pointsData, timetableCompletions]);
 
-    const handleSpendPoints = useCallback((type: 'skip-session' | 'rest-day-pass', detail?: string) => {
-        const costs: Record<string, number> = {
-            'skip-session': 20,
-            'rest-day-pass': 60,
-        };
-        const cost = costs[type];
-
-        // Read latest state from refs to avoid stale closures
-        const currentPoints = pointsDataRef.current;
-        const currentEarnedRest = earnedRestRef.current;
-
-        const balance = currentPoints.totalEarned - currentPoints.totalSpent;
-        if (balance < cost) return;
-
-        const updatedPointsData: PointsData = {
-            totalEarned: currentPoints.totalEarned,
-            totalSpent: currentPoints.totalSpent + cost,
-        };
-        setPointsData(updatedPointsData);
-
-        const todayKey = toDateKey(new Date());
-        let updatedEarnedRest = currentEarnedRest;
-
-        if (type === 'skip-session' && detail) {
-            updatedEarnedRest = {
-                ...currentEarnedRest,
-                skippedSessions: [...currentEarnedRest.skippedSessions, detail],
-            };
-            setEarnedRest(updatedEarnedRest);
-        } else if (type === 'rest-day-pass') {
-            updatedEarnedRest = {
-                ...currentEarnedRest,
-                restDayPasses: [...currentEarnedRest.restDayPasses, todayKey],
-            };
-            setEarnedRest(updatedEarnedRest);
-        }
-
-        if (user?.uid) {
-            setDoc(doc(db, 'progress', user.uid), {
-                pointsData: { totalSpent: increment(cost) },
-                earnedRest: updatedEarnedRest,
-            }, { merge: true }).catch(err => {
-                console.error('Failed to save purchase:', err);
-                showToast('Purchase couldn\'t be saved — check your connection', 'error');
-                setPointsData(currentPoints);
-                setEarnedRest(currentEarnedRest);
-            });
-        }
-    }, [user?.uid]);
-
     const handleToolClick = useCallback((toolId: string, needsProfile: boolean) => {
         if (needsProfile && !profileLoaded) return;
         if (needsProfile && !subjectProfile) {
@@ -606,6 +553,16 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             component: <CollegeCompass uid={user?.uid} yearGroup={user?.yearGroup} />,
         },
         {
+            id: 'catch-up-lane', title: 'Catch-Up Lane', description: 'Missed class? Get caught up, one quick topic at a time.', icon: Waypoints, needsProfile: false,
+            // The content library covers both Junior Cycle and Leaving Cert.
+            curriculum: 'both' as const,
+            tag: 'Catch up', accentHex: '#0E9AA8', gridClass: 'md:col-span-2',
+            iconBg: 'bg-cyan-100 dark:bg-cyan-900/30', iconColor: 'text-cyan-700 dark:text-cyan-300',
+            accentBarColor: 'bg-cyan-500', tagBg: 'bg-cyan-100 dark:bg-cyan-900/30', tagText: 'text-cyan-700 dark:text-cyan-400',
+            hoverBorder: 'hover:border-cyan-400/50 dark:hover:border-cyan-500/40',
+            component: <CatchUpLane uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} studentCycle={curriculumLevel === 'junior' ? 'junior-cycle' : 'leaving-cert'} />,
+        },
+        {
             id: 'mark-bank', title: 'Mark Bank', description: 'Real exam questions, marked point by point \u2014 brought back before you forget.', icon: ListChecks, needsProfile: false,
             curriculum: 'senior' as const,
             tag: 'Spaced repetition', accentHex: '#123B2B', gridClass: 'md:col-span-2',
@@ -723,6 +680,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         'journey': 'track',
         'exam-reps': 'plan',
         'college-compass': 'plan',
+        'catch-up-lane': 'plan',
         'paper-trail': 'understand',
         'diagram-vault': 'understand',
         'answer-architect': 'understand',

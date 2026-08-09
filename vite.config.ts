@@ -151,9 +151,10 @@ export default defineConfig(() => {
             ],
           },
           workbox: {
-        // pdf.js is Paper-Trail-only: keep its ~1.8MB (vendor chunk + worker)
-        // out of the SW precache so non-users never download it.
-        globIgnores: ['**/pdf.worker*.js', '**/vendor-pdfjs*.js'],
+        // pdf.js and Diagram Vault are lazy-tool-only: keep their large chunks
+        // out of the SW precache so non-users never download them. The runtime
+        // app-chunks rule still caches each chunk after a student opens the tool.
+        globIgnores: ['**/pdf.worker*.js', '**/vendor-pdfjs*.js', '**/DiagramVault*.js'],
             maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
             navigateFallback: 'index.html',
             // Legal pages are real static files (privacy.html / terms.html) emitted

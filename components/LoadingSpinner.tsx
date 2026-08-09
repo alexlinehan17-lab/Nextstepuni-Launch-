@@ -5,7 +5,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React from 'react';
+import type React from 'react';
 
 /**
  * Suspense fallback for code-split routes. Route transitions deliberately render

@@ -12,6 +12,7 @@ import {
   ListChecks, RefreshCcw, Sparkles,
 } from 'lucide-react';
 import { db } from '../firebase';
+import { saveInBackground } from '../utils/firestoreWrite';
 import { useAuth } from '../contexts/AuthContext';
 import { useInnovationData } from '../contexts/InnovationDataContext';
 import type { StudentSubjectProfile } from './subjectData';
@@ -137,15 +138,16 @@ const ComebackEngineV2: React.FC<ComebackEngineProps> = ({
     legacyAnchor,
   }), [profile, subjectPriorities, topicMastery.canonicalMastery.topics, completions, reason, capacity, curriculumLevel, legacyAnchor]);
 
-  const savePlan = async (next: RecoveryPlan) => {
+  const savePlan = (next: RecoveryPlan) => {
     setPlan(next);
     writeSessionPlan(uid, next);
-    try {
-      await setDoc(doc(db, 'progress', uid), { comebackRecoveryPlan: next }, { merge: true });
-    } catch (error) {
-      console.error('Failed to save recovery plan:', error);
+    saveInBackground(
+      setDoc(doc(db, 'progress', uid), { comebackRecoveryPlan: next }, { merge: true }),
+      'ComebackEngineV2.savePlan',
+      () => {
       showToast('Your plan could not be saved. Check your connection.', 'error');
-    }
+      },
+    );
   };
 
   const createPlan = () => {

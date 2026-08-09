@@ -26,7 +26,7 @@ import { createDirectionProfile } from './services/directionProfile';
 import { useToast } from './components/Toast';
 import { ALL_COURSES, categoryTitles } from './courseData';
 import { filterCoursesForStudent } from './utils/courseVisibility';
-import { saveInBackground } from './utils/firestoreWrite';
+import { awaitWriteOrTimeout, saveInBackground } from './utils/firestoreWrite';
 import { useSettings } from './hooks/useSettings';
 import { useTodaysFocus } from './hooks/useTodaysFocus';
 import { useStrategyMastery } from './hooks/useStrategyMastery';
@@ -710,7 +710,8 @@ const App: React.FC = () => {
 
     try {
       const progressRef = doc(db, 'progress', user.uid);
-      await runTransaction(db, async transaction => {
+      let transactionFailure: unknown;
+      const transactionWrite = runTransaction(db, async transaction => {
         const snapshot = await transaction.get(progressRef);
         const data = snapshot.data();
         const alreadyUnlocked = (data?.cosmeticUnlocks?.avatarSeeds as string[] | undefined)?.includes(seed);
@@ -724,7 +725,26 @@ const App: React.FC = () => {
           pointsData: { totalSpent: increment(price) },
           cosmeticUnlocks: { avatarSeeds: arrayUnion(seed) },
         }, { merge: true });
+      }).catch(error => {
+        transactionFailure = error;
+        throw error;
       });
+
+      const outcome = await awaitWriteOrTimeout(transactionWrite, 'App.purchaseAvatar');
+      if (outcome === 'pending') {
+        showToast('Avatar purchase is waiting for a connection. Try again when you are online.', 'error');
+        pointsData.reload();
+        return false;
+      }
+      if (outcome === 'failed') {
+        if (transactionFailure instanceof Error && transactionFailure.message === 'INSUFFICIENT_JP') {
+          showToast('Your JP balance changed. Earn a little more and try again.', 'error');
+        } else {
+          showToast("Couldn't unlock that avatar — check your connection.", 'error');
+        }
+        pointsData.reload();
+        return false;
+      }
 
       setUnlockedAvatarSeeds(Array.from(new Set([...unlockedAvatarSeeds, seed])));
       pointsData.reload();

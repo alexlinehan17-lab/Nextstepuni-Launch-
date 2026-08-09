@@ -71,7 +71,7 @@ const recentCompletionCount = (completions: Record<string, string[]>, now: Date)
 const nextAvailableDates = (now: Date, restDays: string[], count: number) => {
   const dates: Date[] = [];
   const perDay = new Map<string, number>();
-  let cursor = new Date(now);
+  const cursor = new Date(now);
   let guard = 0;
 
   while (dates.length < count && guard < 21) {
