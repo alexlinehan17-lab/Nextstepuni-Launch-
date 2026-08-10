@@ -5,21 +5,25 @@
 
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import { CalendarDays, ClipboardList, Library, TrendingUp } from 'lucide-react';
 import { collection, doc, getDoc, getDocs } from 'firebase/firestore';
 import { db } from '../firebase';
 import { MotionDiv } from './Motion';
 import {
   type StudentSubjectProfile,
   type TimetableCompletions,
+  getBlockId,
 } from './subjectData';
 import {
   allocateSessions,
   computeSubjectPriorities,
   computeWeeksUntilExam,
+  generateWeeklyTimetable,
+  type SubjectSM2State,
 } from './timetableAlgorithm';
 import { type DebriefEntry } from './StudyDebrief';
 import { type StudySessionRecord } from '../utils/strategyRegistry';
+import { parseDateKey, startOfWeek, toDateKey } from '../utils/weekDates';
+import { useLocalDateKey } from '../hooks/useLocalDateKey';
 import { useInnovationData } from '../contexts/InnovationDataContext';
 import {
   type MockResult,
@@ -32,35 +36,72 @@ import CountdownPanel from './war-room/CountdownPanel';
 import CoveragePanel from './war-room/CoveragePanel';
 import TrajectoryPanel from './war-room/TrajectoryPanel';
 
+export interface WarRoomStudyBlock {
+  subject: string;
+  sessionType: 'new-learning' | 'practice' | 'revision';
+  durationMinutes: number;
+  dateKey: string;
+  blockId: string;
+}
+
 interface WarRoomProps {
   uid: string;
   profile: StudentSubjectProfile;
   timetableCompletions: TimetableCompletions;
+  todayBlocks?: WarRoomStudyBlock[];
+  skippedSessions?: string[];
+  onStudyNow?: (block: WarRoomStudyBlock) => void;
 }
 
-type PanelId = 'briefing' | 'subjects' | 'trajectory' | 'time';
+type WorkspaceMode = 'focus' | 'review';
+type ReviewPanelId = 'subjects' | 'trajectory' | 'time';
 
-const PANEL_TABS: Array<{
-  id: PanelId;
-  label: string;
-  shortLabel: string;
-  icon: React.ComponentType<{ size?: number }>;
-}> = [
-  { id: 'briefing', label: 'Briefing', shortLabel: 'Brief', icon: ClipboardList },
-  { id: 'subjects', label: 'Subjects', shortLabel: 'Subjects', icon: Library },
-  { id: 'trajectory', label: 'Trajectory', shortLabel: 'Trend', icon: TrendingUp },
-  { id: 'time', label: 'Time plan', shortLabel: 'Time', icon: CalendarDays },
+const MODE_TABS: Array<{ id: WorkspaceMode; label: string }> = [
+  { id: 'focus', label: 'Focus' },
+  { id: 'review', label: 'Review' },
 ];
 
-const WarRoom: React.FC<WarRoomProps> = ({ uid, profile, timetableCompletions }) => {
-  const [activePanel, setActivePanel] = useState<PanelId>('briefing');
+const ALL_REVIEW_TABS: Array<{ id: ReviewPanelId; label: string }> = [
+  { id: 'subjects', label: 'Subjects' },
+  { id: 'trajectory', label: 'Results' },
+  { id: 'time', label: 'Time plan' },
+];
+
+function getCurrentWeekDateKeys(reference = new Date()): Set<string> {
+  const monday = startOfWeek(reference);
+
+  return new Set(Array.from({ length: 7 }, (_, offset) => {
+    const date = new Date(monday);
+    date.setDate(monday.getDate() + offset);
+    return toDateKey(date);
+  }));
+}
+
+function calendarDayNumber(date: Date): number {
+  return Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()) / 86400000;
+}
+
+const WarRoom: React.FC<WarRoomProps> = ({
+  uid,
+  profile,
+  timetableCompletions,
+  todayBlocks,
+  skippedSessions = [],
+  onStudyNow,
+}) => {
+  const [mode, setMode] = useState<WorkspaceMode>('focus');
+  const [reviewPanel, setReviewPanel] = useState<ReviewPanelId>('subjects');
   const [studySessions, setStudySessions] = useState<StudySessionRecord[]>([]);
   const [debriefs, setDebriefs] = useState<DebriefEntry[]>([]);
+  const [sm2States, setSm2States] = useState<SubjectSM2State[]>([]);
   const [isLoading, setIsLoading] = useState(true);
-  const tabRefs = useRef<Array<HTMLButtonElement | null>>([]);
+  const modeTabRefs = useRef<Array<HTMLButtonElement | null>>([]);
+  const reviewTabRefs = useRef<Array<HTMLButtonElement | null>>([]);
 
   const { topicMastery, mockResults: mockResultsHook, futureFinderPicks } = useInnovationData();
   const targetCourse = futureFinderPicks[0] ?? null;
+  const currentDateKey = useLocalDateKey();
+  const currentDate = useMemo(() => parseDateKey(currentDateKey), [currentDateKey]);
 
   const derivedTopicMap: TopicMap = useMemo(() => {
     const map: TopicMap = {};
@@ -94,10 +135,13 @@ const WarRoom: React.FC<WarRoomProps> = ({ uid, profile, timetableCompletions })
 
   useEffect(() => {
     if (!uid) {
+      setSm2States([]);
       setIsLoading(false);
       return;
     }
+
     let cancelled = false;
+    setIsLoading(true);
     const load = async () => {
       try {
         const [sessionsSnap, docSnap] = await Promise.all([
@@ -107,6 +151,7 @@ const WarRoom: React.FC<WarRoomProps> = ({ uid, profile, timetableCompletions })
         if (cancelled) return;
         setStudySessions(sessionsSnap.docs.map(result => result.data() as StudySessionRecord));
         const data = docSnap.data() || {};
+        setSm2States((data.sm2States as SubjectSM2State[] | undefined) ?? []);
         if (data.studyDebriefs) setDebriefs(data.studyDebriefs as DebriefEntry[]);
       } catch (error) {
         console.error('Failed to load War Room data:', error);
@@ -114,75 +159,205 @@ const WarRoom: React.FC<WarRoomProps> = ({ uid, profile, timetableCompletions })
         if (!cancelled) setIsLoading(false);
       }
     };
+
     void load();
     return () => { cancelled = true; };
   }, [uid]);
 
   const subjects = profile.subjects;
-  const daysUntilExam = useMemo(() => {
-    const examDate = new Date(profile.examStartDate);
-    return Math.max(0, Math.ceil((examDate.getTime() - Date.now()) / 86400000));
-  }, [profile.examStartDate]);
-  const weeksUntilExam = useMemo(
-    () => computeWeeksUntilExam(profile.examStartDate),
-    [profile.examStartDate],
-  );
   const blockDuration = profile.defaultBlockDuration ?? 45;
-  const allocations = useMemo(() => {
-    const priorities = computeSubjectPriorities(subjects, undefined, profile.examStartDate);
-    return allocateSessions(priorities, weeksUntilExam);
-  }, [profile.examStartDate, subjects, weeksUntilExam]);
-  const plannedSessions = allocations.reduce((total, item) => total + item.sessions, 0);
-  const currentPoints = computeCurrentTotal(subjects);
-  const targetPoints = targetCourse?.typicalPoints;
-  const targetGap = targetPoints === undefined ? null : Math.max(0, targetPoints - currentPoints);
-  const pointsReference = targetPoints ?? 625;
-  const pointsProgress = Math.min(1, currentPoints / Math.max(1, pointsReference));
-  const pointsCircumference = 2 * Math.PI * 41;
-  const examDateLabel = useMemo(() => {
-    const examDate = new Date(profile.examStartDate);
-    if (Number.isNaN(examDate.getTime())) return 'Exam date not set';
-    return new Intl.DateTimeFormat('en-IE', {
-      day: 'numeric',
-      month: 'short',
-      year: 'numeric',
-    }).format(examDate);
+  const parsedExamDate = useMemo(() => {
+    if (!profile.examStartDate) return null;
+    const date = parseDateKey(profile.examStartDate);
+    return Number.isNaN(date.getTime()) ? null : date;
   }, [profile.examStartDate]);
+  const daysUntilExam = useMemo(() => (
+    parsedExamDate
+      ? Math.max(0, calendarDayNumber(parsedExamDate) - calendarDayNumber(currentDate))
+      : null
+  ), [currentDate, parsedExamDate]);
+  const weeksUntilExam = useMemo(() => (
+    profile.examStartDate && parsedExamDate
+      ? computeWeeksUntilExam(profile.examStartDate)
+      : 22
+  ), [currentDateKey, parsedExamDate, profile.examStartDate]);
+  const allocations = useMemo(() => {
+    const priorities = computeSubjectPriorities(
+      subjects,
+      topicMastery.mastery,
+      profile.examStartDate,
+    );
+    return allocateSessions(priorities, weeksUntilExam, sm2States, blockDuration);
+  }, [blockDuration, profile.examStartDate, sm2States, subjects, topicMastery.mastery, weeksUntilExam]);
+  const plannedSessions = allocations.reduce((total, item) => total + item.sessions, 0);
+  const hasGradeData = subjects.some(subject => Boolean(subject.currentGrade && subject.targetGrade));
+  const currentPoints = hasGradeData ? computeCurrentTotal(subjects) : 0;
 
-  const hoursStudiedMap = useMemo(() => {
-    const map: Record<string, number> = {};
-    for (const session of studySessions) {
-      map[session.subject] = (map[session.subject] || 0) + session.actualSeconds / 3600;
-    }
-    for (const blockIds of Object.values(timetableCompletions)) {
+  const generatedTodayBlocks = useMemo((): WarRoomStudyBlock[] => {
+    const todayKey = currentDateKey;
+    const todayDayIndex = currentDate.getDay() === 0 ? 6 : currentDate.getDay() - 1;
+    const timetable = generateWeeklyTimetable(
+      allocations,
+      weeksUntilExam,
+      0,
+      (profile.restDays ?? []).slice(0, 3),
+      blockDuration,
+      sm2States,
+      topicMastery.mastery,
+    );
+    const completedIds = timetableCompletions[todayKey] ?? [];
+    const skippedIds = new Set(skippedSessions);
+
+    return (timetable[todayDayIndex]?.blocks ?? []).flatMap((block, blockIndex) => {
+      const blockId = getBlockId(block, blockIndex);
+      if (completedIds.includes(blockId) || skippedIds.has(`${todayKey}|${blockId}`)) return [];
+      return [{
+        subject: block.subjectName,
+        sessionType: block.sessionType,
+        durationMinutes: block.durationMinutes,
+        dateKey: todayKey,
+        blockId,
+      }];
+    });
+  }, [allocations, blockDuration, currentDate, currentDateKey, profile.restDays, skippedSessions, sm2States, timetableCompletions, topicMastery.mastery, weeksUntilExam]);
+  const actionableTodayBlocks = todayBlocks ?? generatedTodayBlocks;
+
+  const completedThisWeek = useMemo(() => {
+    const weekKeys = getCurrentWeekDateKeys(currentDate);
+    const timetableCounts: Record<string, Record<string, number>> = {};
+    const recordedSessionCounts: Record<string, Record<string, number>> = {};
+
+    for (const [dateKey, blockIds] of Object.entries(timetableCompletions)) {
+      if (!weekKeys.has(dateKey)) continue;
+      timetableCounts[dateKey] = timetableCounts[dateKey] ?? {};
       for (const blockId of blockIds) {
-        const subjectName = blockId.split('|')[0];
-        if (subjectName) map[subjectName] = (map[subjectName] || 0) + blockDuration / 60;
+        const subject = blockId.split('|')[0];
+        if (subject) {
+          timetableCounts[dateKey][subject] = (timetableCounts[dateKey][subject] ?? 0) + 1;
+        }
       }
     }
-    return map;
-  }, [blockDuration, studySessions, timetableCompletions]);
 
-  const selectTab = (id: PanelId, focus = false) => {
-    setActivePanel(id);
+    for (const session of studySessions) {
+      const dateKey = session.date.slice(0, 10);
+      if (!weekKeys.has(dateKey)) continue;
+      if (session.actualSeconds < session.plannedMinutes * 60) continue;
+      recordedSessionCounts[dateKey] = recordedSessionCounts[dateKey] ?? {};
+      recordedSessionCounts[dateKey][session.subject] = (recordedSessionCounts[dateKey][session.subject] ?? 0) + 1;
+    }
+
+    const counts: Record<string, number> = {};
+    for (const subject of subjects) {
+      counts[subject.subjectName] = Array.from(weekKeys).reduce((total, dateKey) => (
+        total + Math.max(
+          timetableCounts[dateKey]?.[subject.subjectName] ?? 0,
+          recordedSessionCounts[dateKey]?.[subject.subjectName] ?? 0,
+        )
+      ), 0);
+    }
+    return counts;
+  }, [currentDate, studySessions, subjects, timetableCompletions]);
+
+  const hoursStudiedMap = useMemo(() => {
+    const recordedHours: Record<string, Record<string, number>> = {};
+    const timetableHours: Record<string, Record<string, number>> = {};
+    const dateKeys = new Set<string>();
+
+    for (const session of studySessions) {
+      const dateKey = session.date.slice(0, 10);
+      dateKeys.add(dateKey);
+      recordedHours[dateKey] = recordedHours[dateKey] ?? {};
+      recordedHours[dateKey][session.subject] = (recordedHours[dateKey][session.subject] ?? 0) + session.actualSeconds / 3600;
+    }
+    for (const [dateKey, blockIds] of Object.entries(timetableCompletions)) {
+      dateKeys.add(dateKey);
+      timetableHours[dateKey] = timetableHours[dateKey] ?? {};
+      for (const blockId of blockIds) {
+        const subject = blockId.split('|')[0];
+        if (subject) {
+          timetableHours[dateKey][subject] = (timetableHours[dateKey][subject] ?? 0) + blockDuration / 60;
+        }
+      }
+    }
+
+    const map: Record<string, number> = {};
+    for (const subject of subjects) {
+      map[subject.subjectName] = Array.from(dateKeys).reduce((total, dateKey) => (
+        total + Math.max(
+          recordedHours[dateKey]?.[subject.subjectName] ?? 0,
+          timetableHours[dateKey]?.[subject.subjectName] ?? 0,
+        )
+      ), 0);
+    }
+    return map;
+  }, [blockDuration, studySessions, subjects, timetableCompletions]);
+
+  const reviewTabs = useMemo(() => ALL_REVIEW_TABS.filter(tab => {
+    if (tab.id === 'trajectory') return hasGradeData;
+    if (tab.id === 'time') return parsedExamDate !== null;
+    return true;
+  }), [hasGradeData, parsedExamDate]);
+  const activeReviewPanel = reviewTabs.some(tab => tab.id === reviewPanel)
+    ? reviewPanel
+    : 'subjects';
+
+  useEffect(() => {
+    if (activeReviewPanel !== reviewPanel) setReviewPanel(activeReviewPanel);
+  }, [activeReviewPanel, reviewPanel]);
+
+  const selectMode = (nextMode: WorkspaceMode, focus = false) => {
+    setMode(nextMode);
     if (focus) {
-      const index = PANEL_TABS.findIndex(tab => tab.id === id);
-      tabRefs.current[index]?.focus();
+      const index = MODE_TABS.findIndex(tab => tab.id === nextMode);
+      modeTabRefs.current[index]?.focus();
     }
   };
 
-  const handleTabKeyDown = (event: React.KeyboardEvent, index: number) => {
+  const handleModeKeyDown = (event: React.KeyboardEvent, index: number) => {
     if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
     event.preventDefault();
     let nextIndex = index;
-    if (event.key === 'ArrowLeft') nextIndex = (index - 1 + PANEL_TABS.length) % PANEL_TABS.length;
-    if (event.key === 'ArrowRight') nextIndex = (index + 1) % PANEL_TABS.length;
+    if (event.key === 'ArrowLeft') nextIndex = (index - 1 + MODE_TABS.length) % MODE_TABS.length;
+    if (event.key === 'ArrowRight') nextIndex = (index + 1) % MODE_TABS.length;
     if (event.key === 'Home') nextIndex = 0;
-    if (event.key === 'End') nextIndex = PANEL_TABS.length - 1;
-    selectTab(PANEL_TABS[nextIndex].id, true);
+    if (event.key === 'End') nextIndex = MODE_TABS.length - 1;
+    selectMode(MODE_TABS[nextIndex].id, true);
   };
 
-  if (isLoading) {
+  const selectReviewPanel = (id: ReviewPanelId, focus = false) => {
+    setReviewPanel(id);
+    if (focus) {
+      const index = reviewTabs.findIndex(tab => tab.id === id);
+      reviewTabRefs.current[index]?.focus();
+    }
+  };
+
+  const handleReviewKeyDown = (event: React.KeyboardEvent, index: number) => {
+    if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+    event.preventDefault();
+    let nextIndex = index;
+    if (event.key === 'ArrowLeft') nextIndex = (index - 1 + reviewTabs.length) % reviewTabs.length;
+    if (event.key === 'ArrowRight') nextIndex = (index + 1) % reviewTabs.length;
+    if (event.key === 'Home') nextIndex = 0;
+    if (event.key === 'End') nextIndex = reviewTabs.length - 1;
+    selectReviewPanel(reviewTabs[nextIndex].id, true);
+  };
+
+  const openSubjectReview = () => {
+    setReviewPanel('subjects');
+    setMode('review');
+  };
+
+  const dataStillLoading = isLoading
+    || topicMastery.isLoaded === false
+    || mockResultsHook.isLoaded === false;
+  const strategyFacts = [
+    ...(daysUntilExam !== null ? [{ value: daysUntilExam, label: 'days to exams' }] : []),
+    { value: plannedSessions, label: 'sessions this week' },
+    ...(hasGradeData ? [{ value: currentPoints, label: 'current points' }] : []),
+  ];
+
+  if (dataStillLoading) {
     return (
       <div className="flex min-h-[280px] items-center justify-center" role="status" aria-label="Loading strategy data">
         <span className="h-7 w-7 animate-spin rounded-full border-2 border-[var(--outline-soft)] border-t-[#F26B1F]" />
@@ -192,135 +367,42 @@ const WarRoom: React.FC<WarRoomProps> = ({ uid, profile, timetableCompletions })
 
   return (
     <section className="war-room-workspace pb-16" aria-label="War Room strategy workspace">
-      <div className="grid gap-3 lg:grid-cols-2" aria-label="Strategy snapshot">
-        <section
-          className="overflow-hidden rounded-[14px] border border-[var(--outline-soft)] bg-[var(--surface-paper)]"
-          aria-labelledby="exam-runway-title"
-        >
-          <div className="grid min-h-[210px] sm:grid-cols-[0.82fr_1.18fr]">
-            <div className="flex flex-col justify-between border-b border-[var(--outline-soft)] p-5 sm:border-b-0 sm:border-r sm:p-6">
-              <div>
-                <h2 id="exam-runway-title" className="text-[11px] font-bold uppercase tracking-[0.2em] text-[var(--ink-muted)]">Exam runway</h2>
-                <p className="mt-5 font-serif text-[50px] font-semibold leading-none text-[var(--ink-primary)]">
-                  {daysUntilExam}
-                </p>
-                <p className="mt-1.5 text-sm font-medium text-[var(--ink-secondary)]">Days to exams</p>
-              </div>
-              <p className="mt-6 font-mono text-[11px] text-[var(--ink-muted)]">First paper · {examDateLabel}</p>
-            </div>
+      <div className="flex flex-col gap-3 border-y border-[var(--outline-soft)] py-3 sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:py-4">
+        <ul className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-[var(--ink-secondary)]" aria-label="Strategy context">
+          {strategyFacts.map((fact, index) => (
+            <li key={fact.label} className="whitespace-nowrap">
+              {index > 0 && <span aria-hidden="true" className="mr-3 hidden text-[var(--outline-strong)] sm:inline">·</span>}
+              <span className="font-semibold text-[var(--ink-primary)]">{fact.value}</span> {fact.label}
+            </li>
+          ))}
+        </ul>
 
-            <div className="flex flex-col justify-between p-5 sm:p-6">
-              <div className="flex items-start justify-between gap-4">
-                <div>
-                  <p className="text-sm font-semibold text-[var(--ink-primary)]">{weeksUntilExam} weeks remaining</p>
-                  <p className="mt-1 text-xs text-[var(--ink-secondary)]">{plannedSessions} planned study sessions each week</p>
-                </div>
-                <span className="font-mono text-xs font-semibold text-[#F26B1F]">{plannedSessions}/wk</span>
-              </div>
-
-              <div className="mt-8" aria-label={`${weeksUntilExam} weeks from today until exams`}>
-                <div className="relative h-[72px]">
-                  <div className="absolute left-0 right-0 top-[34px] h-px bg-[var(--outline-soft)]" />
-                  {Array.from({ length: 7 }).map((_, index) => (
-                    <span
-                      key={index}
-                      className="absolute top-[31px] h-[7px] w-[7px] -translate-x-1/2 rounded-full border border-[var(--outline-strong)] bg-[var(--surface-paper)]"
-                      style={{ left: `${(index / 6) * 100}%` }}
-                    />
-                  ))}
-                  <span className="absolute left-0 top-[26px] h-[17px] w-[17px] -translate-x-1/2 rounded-full border-[4px] border-[var(--surface-paper)] bg-[#F26B1F]" />
-                  <span className="absolute right-0 top-[24px] h-[21px] w-px bg-[var(--ink-primary)]" />
-                  <span className="absolute bottom-0 left-0 text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-muted)]">Today</span>
-                  <span className="absolute bottom-0 right-0 text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-muted)]">Exam</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section
-          className="overflow-hidden rounded-[14px] border border-[var(--outline-soft)] bg-[var(--surface-paper)]"
-          aria-labelledby="points-position-title"
-        >
-          <div className="grid min-h-[210px] grid-cols-[1fr_auto] gap-5 p-5 sm:p-6">
-            <div className="flex min-w-0 flex-col justify-between">
-              <div>
-                <h2 id="points-position-title" className="text-[11px] font-bold uppercase tracking-[0.2em] text-[var(--ink-muted)]">Points position</h2>
-                <p className="mt-5 font-serif text-[50px] font-semibold leading-none text-[var(--ink-primary)]">
-                  {currentPoints}
-                </p>
-                <p className="mt-1.5 text-sm font-medium text-[var(--ink-secondary)]">Current points</p>
-              </div>
-              <div className="mt-6 grid grid-cols-2 gap-4 border-t border-[var(--outline-soft)] pt-4">
-                <div>
-                  <p className="font-mono text-sm font-semibold text-[var(--ink-primary)]">{targetPoints ?? '—'}</p>
-                  <p className="mt-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-muted)]">Course target</p>
-                </div>
-                <div>
-                  <p className={`font-mono text-sm font-semibold ${targetGap === 0 ? 'text-[var(--success-hex)]' : 'text-[#F26B1F]'}`}>
-                    {targetGap === null ? 'Not set' : targetGap === 0 ? 'On target' : targetGap}
-                  </p>
-                  <p className="mt-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-muted)]">{targetGap === null ? 'Target status' : 'Points gap'}</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="flex w-[128px] flex-col items-center justify-center sm:w-[164px]">
-              <div className="relative h-[126px] w-[126px]" aria-label={`${Math.round(pointsProgress * 100)} percent of ${targetPoints ? 'course target' : 'maximum points'}`}>
-                <svg viewBox="0 0 100 100" className="h-full w-full -rotate-90" aria-hidden="true">
-                  <circle cx="50" cy="50" r="41" fill="none" stroke="var(--outline-soft)" strokeWidth="10" />
-                  <circle
-                    cx="50"
-                    cy="50"
-                    r="41"
-                    fill="none"
-                    stroke="var(--ink-primary)"
-                    strokeWidth="10"
-                    strokeLinecap="butt"
-                    strokeDasharray={pointsCircumference}
-                    strokeDashoffset={pointsCircumference * (1 - pointsProgress)}
-                  />
-                </svg>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="font-mono text-lg font-semibold text-[var(--ink-primary)]">{Math.round(pointsProgress * 100)}%</span>
-                </div>
-              </div>
-              <p className="mt-2 text-center text-[10px] font-semibold uppercase tracking-[0.13em] text-[var(--ink-muted)]">
-                of {targetPoints ? 'course target' : '625 max'}
-              </p>
-            </div>
-          </div>
-        </section>
-      </div>
-
-      <div className="mt-5 border-b border-[var(--outline-soft)]">
         <div
           role="tablist"
-          aria-label="War Room views"
-          className="war-room-tabs"
+          aria-label="War Room mode"
+          className="inline-grid w-full grid-cols-2 rounded-[10px] border border-[var(--outline-soft)] bg-[var(--surface-soft)] p-1 sm:w-[210px] sm:shrink-0"
         >
-          {PANEL_TABS.map((tab, index) => {
-            const Icon = tab.icon;
-            const selected = activePanel === tab.id;
+          {MODE_TABS.map((tab, index) => {
+            const selected = mode === tab.id;
             return (
               <button
                 key={tab.id}
-                ref={element => { tabRefs.current[index] = element; }}
-                id={`war-room-tab-${tab.id}`}
+                ref={element => { modeTabRefs.current[index] = element; }}
+                id={`war-room-mode-tab-${tab.id}`}
                 type="button"
                 role="tab"
-                aria-label={tab.label}
                 aria-selected={selected}
-                aria-controls={`war-room-panel-${tab.id}`}
+                aria-controls={`war-room-mode-panel-${tab.id}`}
                 tabIndex={selected ? 0 : -1}
-                onClick={() => selectTab(tab.id)}
-                onKeyDown={event => handleTabKeyDown(event, index)}
-                className="war-room-tab"
+                onClick={() => selectMode(tab.id)}
+                onKeyDown={event => handleModeKeyDown(event, index)}
+                className={`min-h-9 rounded-[7px] px-4 text-xs font-semibold transition-[background-color,color,box-shadow] duration-200 ${
+                  selected
+                    ? 'bg-[var(--surface-paper)] text-[var(--ink-primary)] shadow-[0_1px_3px_rgba(0,0,0,.08)]'
+                    : 'text-[var(--ink-muted)] hover:text-[var(--ink-primary)]'
+                }`}
               >
-                <Icon size={16} />
-                <span className="hidden sm:inline">{tab.label}</span>
-                <span className="sm:hidden">{tab.shortLabel}</span>
-                {selected && <MotionDiv layoutId="war-room-active-tab" className="war-room-tab-indicator" />}
+                {tab.label}
               </button>
             );
           })}
@@ -329,58 +411,125 @@ const WarRoom: React.FC<WarRoomProps> = ({ uid, profile, timetableCompletions })
 
       <AnimatePresence mode="wait" initial={false}>
         <MotionDiv
-          key={activePanel}
-          id={`war-room-panel-${activePanel}`}
+          key={mode}
+          id={`war-room-mode-panel-${mode}`}
           role="tabpanel"
-          aria-labelledby={`war-room-tab-${activePanel}`}
-          initial={{ opacity: 0, y: 6 }}
+          aria-labelledby={`war-room-mode-tab-${mode}`}
+          initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -4 }}
-          transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
-          className="pt-7 sm:pt-9"
+          exit={{ opacity: 0, y: -5 }}
+          transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
+          className="pt-6 sm:pt-10"
         >
-          {activePanel === 'briefing' && (
+          {mode === 'focus' ? (
             <BriefingPanel
               subjects={subjects}
               topicMap={derivedTopicMap}
               mockResults={derivedMockResults}
               allocations={allocations}
-              hoursStudiedMap={hoursStudiedMap}
-              weeksUntilExam={weeksUntilExam}
               blockDuration={blockDuration}
-              daysUntilExam={daysUntilExam}
-              timetableCompletions={timetableCompletions}
-              onReviewSubjects={() => selectTab('subjects', true)}
+              completedThisWeek={completedThisWeek}
+              todayBlocks={actionableTodayBlocks}
+              onStudyNow={onStudyNow}
+              onReviewSubjects={openSubjectReview}
             />
-          )}
-          {activePanel === 'subjects' && (
-            <CoveragePanel
-              subjects={subjects}
-              topicMastery={topicMastery}
-              debriefs={debriefs}
-              examDate={profile.examStartDate}
-            />
-          )}
-          {activePanel === 'trajectory' && (
-            <TrajectoryPanel
-              subjects={subjects}
-              mockResults={derivedMockResults}
-              mockResultsHook={mockResultsHook}
-              daysUntilExam={daysUntilExam}
-            />
-          )}
-          {activePanel === 'time' && (
-            <CountdownPanel
-              daysUntilExam={daysUntilExam}
-              subjects={subjects}
-              allocations={allocations}
-              weeksUntilExam={weeksUntilExam}
-              hoursStudiedMap={hoursStudiedMap}
-              blockDuration={blockDuration}
-              mockResults={derivedMockResults}
-              targetCourse={targetCourse}
-              currentPoints={currentPoints}
-            />
+          ) : (
+            <div>
+              <header className="max-w-2xl">
+                <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--ink-muted)]">Review</p>
+                <h2 className="mt-2 font-serif text-[28px] font-semibold leading-tight text-[var(--ink-primary)] sm:text-[32px]">
+                  See the detail when you need it
+                </h2>
+                <p className="mt-2 text-sm leading-relaxed text-[var(--ink-secondary)]">
+                  Check coverage, results and the shape of your study plan without crowding the decision in front of you.
+                </p>
+              </header>
+
+              {reviewTabs.length > 1 && (
+                <div className="mt-7 border-b border-[var(--outline-soft)]">
+                  <div
+                    role="tablist"
+                    aria-label="Review views"
+                    className="grid gap-1"
+                    style={{ gridTemplateColumns: `repeat(${reviewTabs.length}, minmax(0, 1fr))` }}
+                  >
+                    {reviewTabs.map((tab, index) => {
+                      const selected = activeReviewPanel === tab.id;
+                      return (
+                        <button
+                          key={tab.id}
+                          ref={element => { reviewTabRefs.current[index] = element; }}
+                          id={`war-room-review-tab-${tab.id}`}
+                          type="button"
+                          role="tab"
+                          aria-selected={selected}
+                          aria-controls={`war-room-review-panel-${tab.id}`}
+                          tabIndex={selected ? 0 : -1}
+                          onClick={() => selectReviewPanel(tab.id)}
+                          onKeyDown={event => handleReviewKeyDown(event, index)}
+                          className={`relative min-h-11 px-3 pb-3 text-xs font-semibold transition-colors ${
+                            selected ? 'text-[var(--ink-primary)]' : 'text-[var(--ink-muted)] hover:text-[var(--ink-primary)]'
+                          }`}
+                        >
+                          {tab.label}
+                          {selected && (
+                            <MotionDiv
+                              layoutId="war-room-review-indicator"
+                              className="absolute inset-x-3 -bottom-px h-0.5 bg-[#F26B1F]"
+                            />
+                          )}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+
+              <AnimatePresence mode="wait" initial={false}>
+                <MotionDiv
+                  key={activeReviewPanel}
+                  id={`war-room-review-panel-${activeReviewPanel}`}
+                  role="tabpanel"
+                  aria-labelledby={reviewTabs.length > 1 ? `war-room-review-tab-${activeReviewPanel}` : undefined}
+                  aria-label={reviewTabs.length === 1 ? 'Subjects review' : undefined}
+                  initial={{ opacity: 0, y: 6 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -4 }}
+                  transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
+                  className="pt-8"
+                >
+                  {activeReviewPanel === 'subjects' && (
+                    <CoveragePanel
+                      subjects={subjects}
+                      topicMastery={topicMastery}
+                      debriefs={debriefs}
+                      examDate={profile.examStartDate}
+                    />
+                  )}
+                  {activeReviewPanel === 'trajectory' && hasGradeData && (
+                    <TrajectoryPanel
+                      subjects={subjects}
+                      mockResults={derivedMockResults}
+                      mockResultsHook={mockResultsHook}
+                      daysUntilExam={daysUntilExam ?? 0}
+                    />
+                  )}
+                  {activeReviewPanel === 'time' && daysUntilExam !== null && (
+                    <CountdownPanel
+                      daysUntilExam={daysUntilExam}
+                      subjects={subjects}
+                      allocations={allocations}
+                      weeksUntilExam={weeksUntilExam}
+                      hoursStudiedMap={hoursStudiedMap}
+                      blockDuration={blockDuration}
+                      mockResults={derivedMockResults}
+                      targetCourse={targetCourse}
+                      currentPoints={hasGradeData ? currentPoints : undefined}
+                    />
+                  )}
+                </MotionDiv>
+              </AnimatePresence>
+            </div>
           )}
         </MotionDiv>
       </AnimatePresence>

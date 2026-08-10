@@ -335,7 +335,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     const fullEntry: DebriefEntry = {
       ...entry,
       id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
-      date: new Date().toISOString().split('T')[0],
+      date: toDateKey(new Date()),
     };
     // Save session first (with a small reflection bonus for completing debrief)
     await session.saveSession(10, selectedStrategies);

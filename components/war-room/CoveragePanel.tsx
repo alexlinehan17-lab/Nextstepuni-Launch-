@@ -41,6 +41,11 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMastery, d
   const [newTopicName, setNewTopicName] = useState('');
 
   useEffect(() => {
+    if (subjects.some(subject => subject.subjectName === selectedSubject)) return;
+    setSelectedSubject(subjects[0]?.subjectName ?? '');
+  }, [selectedSubject, subjects]);
+
+  useEffect(() => {
     if (selectedSubject) topicMastery.importSyllabusTopics(selectedSubject, examDate);
   }, [selectedSubject, examDate]);
 
@@ -212,13 +217,16 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMastery, d
           onChange={(e) => setNewTopicName(e.target.value)}
           onKeyDown={(e) => e.key === 'Enter' && addTopic()}
           placeholder="Add a topic…"
+          aria-label="New topic name"
           maxLength={60}
           className={fieldClass}
           style={{ ...fieldStyle, flex: 1 }}
         />
         <button
+          type="button"
           onClick={addTopic}
           disabled={newTopicName.trim().length < 2}
+          aria-label="Add topic"
           className="px-4 rounded-lg disabled:opacity-40 transition-all flex items-center justify-center"
           style={{
             background: INK,
@@ -262,9 +270,7 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMastery, d
               return (
                 <div
                   key={topic.id}
-                  role="button"
-                  tabIndex={0}
-                  className="group relative px-3.5 py-3 cursor-pointer transition-all"
+                  className="group relative transition-all"
                   style={{
                     background: 'var(--surface-paper)',
                     border: '1px solid var(--outline-soft)',
@@ -272,27 +278,33 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMastery, d
                     boxShadow: '0 1px 0 rgba(31,27,23,0.03), 0 4px 12px rgba(31,27,23,0.04)',
                     opacity: isNotStarted ? 0.78 : 1,
                   }}
-                  onClick={() => cycleConfidence(topic.name)}
-                  onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') cycleConfidence(topic.name); }}
                 >
-                  <div className="flex items-start gap-2">
-                    <ConfidenceDot confidence={topic.confidence} />
-                    <div className="flex-1 min-w-0">
-                      <p className="font-serif text-[13px] font-semibold leading-snug truncate"
-                         style={{ color: isNotStarted ? INK_MUTE : INK }}>
-                        {topic.name}
-                      </p>
-                      <p className="font-sans text-[10px] uppercase tracking-[0.18em] mt-0.5"
-                         style={{ color: conf.deep, fontWeight: 700 }}>
-                        {CONFIDENCE_LABELS[topic.confidence]}
-                      </p>
-                    </div>
-                  </div>
                   <button
+                    type="button"
+                    onClick={() => cycleConfidence(topic.name)}
+                    aria-label={`${topic.name}: ${CONFIDENCE_LABELS[topic.confidence]}. Change confidence`}
+                    className="w-full px-3.5 py-3 pr-9 text-left"
+                  >
+                    <div className="flex items-start gap-2">
+                      <ConfidenceDot confidence={topic.confidence} />
+                      <div className="min-w-0 flex-1">
+                        <p className="truncate font-serif text-[13px] font-semibold leading-snug"
+                           style={{ color: isNotStarted ? INK_MUTE : INK }}>
+                          {topic.name}
+                        </p>
+                        <p className="mt-0.5 font-sans text-[10px] font-bold uppercase tracking-[0.18em]"
+                           style={{ color: conf.deep }}>
+                          {CONFIDENCE_LABELS[topic.confidence]}
+                        </p>
+                      </div>
+                    </div>
+                  </button>
+                  <button
+                    type="button"
                     onClick={(e) => { e.stopPropagation(); removeTopic(topic.name); }}
-                    className="absolute top-1.5 right-1.5 w-5 h-5 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+                    className="absolute right-1.5 top-1.5 flex h-6 w-6 items-center justify-center rounded-full opacity-0 transition-opacity hover:bg-[var(--surface-soft)] focus:opacity-100 group-hover:opacity-100 group-focus-within:opacity-100"
                     style={{ color: INK_MUTE }}
-                    aria-label="Reset to not started"
+                    aria-label={`Reset ${topic.name} to not started`}
                   >
                     <X size={11} />
                   </button>

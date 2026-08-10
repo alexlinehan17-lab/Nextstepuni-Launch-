@@ -12,6 +12,7 @@
   --ink-primary: #1A1A1A;
   --ink-secondary: #5F5A55;
   --ink-muted: #8A8178;
+  --ink-on-accent: #1A1A1A;
 }
 
 .tool-header-art {
@@ -28,40 +29,6 @@
   grid-template-columns: repeat(var(--result-stat-count), minmax(0, 1fr));
 }
 
-.war-room-tabs {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 4px;
-}
-
-.war-room-tab {
-  position: relative;
-  display: inline-flex;
-  min-height: 48px;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  border: 0;
-  border-radius: 10px 10px 0 0;
-  background: transparent;
-  color: var(--ink-muted);
-  font: 650 13px/1 'DM Sans', system-ui, sans-serif;
-  transition: color 180ms ease, background-color 180ms ease;
-}
-
-.war-room-tab:hover { color: var(--ink-primary); background: var(--surface-soft); }
-.war-room-tab[aria-selected='true'] { color: var(--ink-primary); }
-
-.war-room-tab-indicator {
-  position: absolute;
-  right: 10px;
-  bottom: -1px;
-  left: 10px;
-  height: 3px;
-  border-radius: 999px 999px 0 0;
-  background: #F26B1F;
-}
-
 .outcome-disclosure > summary::-webkit-details-marker { display: none; }
 .outcome-disclosure[open] .outcome-disclosure-mark { transform: rotate(45deg); }
 .outcome-disclosure-mark { transition: transform 180ms ease; }
@@ -76,8 +43,6 @@
     border-top: 1px solid var(--outline-soft);
   }
   .result-stat-grid > :nth-child(4) { border-top: 1px solid var(--outline-soft); }
-  .war-room-tab { min-height: 46px; gap: 5px; font-size: 11px; }
-  .war-room-tab-indicator { right: 5px; left: 5px; }
 }
 
 .dark {

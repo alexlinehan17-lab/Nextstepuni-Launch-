@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState, useEffect, useCallback, useRef, useMemo, lazy, Suspense } from 'react';
+import React, { useState, useEffect, useCallback, useRef, lazy, Suspense } from 'react';
 import { useToast } from './Toast';
 import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv } from './Motion';
@@ -17,9 +17,9 @@ import { FileSearch,
 import { doc, setDoc, getDoc, increment, deleteField } from 'firebase/firestore';
 import { saveInBackground } from '../utils/firestoreWrite';
 import { db } from '../firebase';
-import { type StudentSubjectProfile, type TimetableCompletions, type TimetableStreak, type YearGroup, getBlockId, toDateKey } from './subjectData';
+import { type StudentSubjectProfile, type TimetableCompletions, type TimetableStreak, type YearGroup } from './subjectData';
 import { type SchoolEvent } from './gc/GCKeyEvents';
-import { computeStreak, computeSubjectPriorities, allocateSessions, generateWeeklyTimetable, computeWeeksUntilExam } from './timetableAlgorithm';
+import { computeStreak } from './timetableAlgorithm';
 import { type StudyReflection, type PointsData, type CosmeticUnlocks, type EarnedRest, type UserSettings } from '../types';
 import SubjectOnboarding from './SubjectOnboarding';
 import { LoadingSpinner } from './LoadingSpinner';
@@ -49,7 +49,6 @@ const YourPossibleLife = lazy(() => import('./YourPossibleLife'));
 const OralExamTrainer = lazy(() => import('./OralExamTrainer'));
 const ExaminersChair = lazy(() => import('./ExaminersChair'));
 import { InnovationDataProvider } from '../contexts/InnovationDataContext';
-import { useTopicMastery } from '../hooks/useTopicMastery';
 import { getNotifications } from './gc/gcNotifications';
 // ReflectionModal import removed — "Already Studied" flow gives 2 pts, no reflection
 import StudyJournalModal from './StudyJournalModal';
@@ -118,6 +117,14 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   'examiners-chair': { themeColor: '#9E4A3E', eyebrow: 'Technique · Marking literacy', subtitle: 'Sit on the other side of the desk. Mark real-style scripts against the real SEC rules, and learn to see your own answers the way the examiner will.', showHeader: true },
 };
 
+interface StudyNowBlock {
+  subject: string;
+  sessionType: 'new-learning' | 'practice' | 'revision';
+  durationMinutes: number;
+  dateKey: string;
+  blockId: string;
+}
+
 interface InnovationZoneProps {
   onBack: () => void;
   onSelectModule?: (moduleId: string) => void;
@@ -130,7 +137,7 @@ interface InnovationZoneProps {
   settings: UserSettings;
   updateSetting: <K extends keyof UserSettings>(key: K, value: UserSettings[K]) => void;
   onCosmeticUnlocksChange?: (unlocks: CosmeticUnlocks) => void;
-  onStudyNow?: (block: { subject: string; sessionType: 'new-learning' | 'practice' | 'revision'; durationMinutes: number; dateKey: string; blockId: string }) => void;
+  onStudyNow?: (block: StudyNowBlock) => void;
   dismissedGuides?: Record<string, string>;
   onDismissGuide?: (id: string) => void;
 }
@@ -177,9 +184,6 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     const [timetableCompletions, setTimetableCompletions] = useState<TimetableCompletions>({});
     const [timetableStreak, setTimetableStreak] = useState<TimetableStreak>({ currentStreak: 0, lastActiveDate: '', longestStreak: 0 });
     const [reflections, setReflections] = useState<StudyReflection[]>([]);
-
-    // Topic mastery for skippableBlocks computation (shared context loads separately for tools)
-    const { mastery: topicMasteryForPriorities } = useTopicMastery(user?.uid, subjectProfile?.examStartDate);
     const [pointsData, setPointsData] = useState<PointsData>({ totalEarned: 0, totalSpent: 0 });
     const [cosmeticUnlocks, setCosmeticUnlocks] = useState<CosmeticUnlocks>({ avatarSeeds: [], themeColors: [], cardStyles: [] });
     const [earnedRest, setEarnedRest] = useState<EarnedRest>({ skippedSessions: [], restDayPasses: [] });
@@ -232,7 +236,10 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
 
     // Refresh the subject profile and supporting Launchpad data from Firebase.
     useEffect(() => {
-        if (!user?.uid) { setProfileLoaded(true); return; }
+        if (!user?.uid) {
+            setProfileLoaded(true);
+            return;
+        }
         let cancelled = false;
         const loadProfile = async () => {
             try {
@@ -422,35 +429,6 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
         setActiveTool(toolId);
     }, [subjectProfile, profileLoaded, setActiveTool]);
 
-    const _skippableBlocks = useMemo(() => {
-        if (!subjectProfile) return [];
-        const today = new Date();
-        const todayKey = toDateKey(today);
-        const jsDay = today.getDay();
-        const todayDayIndex = jsDay === 0 ? 6 : jsDay - 1;
-
-        const priorities = computeSubjectPriorities(subjectProfile.subjects, topicMasteryForPriorities, subjectProfile.examStartDate);
-        const weeksUntilExam = computeWeeksUntilExam(subjectProfile.examStartDate);
-        const allocations = allocateSessions(priorities, weeksUntilExam);
-        const restDaysArray = subjectProfile.restDays || [];
-        const timetable = generateWeeklyTimetable(allocations, weeksUntilExam, 0, restDaysArray, subjectProfile.defaultBlockDuration ?? 45);
-        const todayBlocks = timetable[todayDayIndex]?.blocks ?? [];
-
-        const completedIds = timetableCompletions[todayKey] ?? [];
-        const skippedSet = new Set(earnedRest.skippedSessions);
-
-        return todayBlocks
-            .map((block, bi) => {
-                const blockId = getBlockId(block, bi);
-                const fullId = `${todayKey}|${blockId}`;
-                const isCompleted = completedIds.includes(blockId);
-                const isSkipped = skippedSet.has(fullId);
-                if (isCompleted || isSkipped) return null;
-                return { blockId, fullId, subjectName: block.subjectName, sessionType: block.sessionType };
-            })
-            .filter((b): b is { blockId: string; fullId: string; subjectName: string; sessionType: 'new-learning' | 'practice' | 'revision' } => b !== null);
-    }, [subjectProfile, timetableCompletions, earnedRest.skippedSessions]);
-
     // Curriculum level — used by the tools array below for curriculum-aware
     // titles (e.g. Future Finder → "Subject Explorer" for JC users) and by
     // the filter further down. Declared here so the tools array can read it.
@@ -491,7 +469,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             iconBg: 'bg-red-100 dark:bg-red-900/30', iconColor: 'text-red-600 dark:text-red-400',
             accentBarColor: 'bg-red-500', tagBg: 'bg-red-100 dark:bg-red-900/30', tagText: 'text-red-700 dark:text-red-400',
             hoverBorder: 'hover:border-red-400/50 dark:hover:border-red-500/40',
-            component: subjectProfile ? <WarRoom uid={user!.uid} profile={subjectProfile} timetableCompletions={timetableCompletions} /> : null,
+            component: subjectProfile ? <WarRoom uid={user!.uid} profile={subjectProfile} timetableCompletions={timetableCompletions} skippedSessions={earnedRest.skippedSessions} onStudyNow={onStudyNow} /> : null,
         },
         {
             id: 'comeback', title: 'Comeback Engine', description: 'A realistic seven-day recovery plan built from your actual study pattern.', icon: Rocket, needsProfile: true,

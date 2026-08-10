@@ -9,6 +9,7 @@ import { db } from '../firebase';
 import { useProgress } from '../contexts/ProgressContext';
 import { type UserProgress } from '../types';
 import { type CourseData } from '../components/Library';
+import { toDateKey } from '../utils/weekDates';
 import {
   type StrategyPrompt,
   type StudySessionRecord,
@@ -264,7 +265,7 @@ export function useStudySession(
 
     const record: StudySessionRecord = {
       id: `ss_${now}`,
-      date: new Date().toISOString().slice(0, 10),
+      date: toDateKey(new Date(now)),
       subject,
       sessionType,
       plannedMinutes,
