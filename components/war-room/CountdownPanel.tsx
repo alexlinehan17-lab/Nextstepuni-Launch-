@@ -4,16 +4,19 @@
  */
 
 import React, { useMemo } from 'react';
-import { CalendarDays, Clock3 } from 'lucide-react';
-import { type StudentSubjectProfile } from '../subjectData';
+import {
+  type Grade,
+  type StudentSubjectProfile,
+  getPointsForGrade,
+  LC_SUBJECTS,
+} from '../subjectData';
 import { getDistinctSubjectHex } from '../../studySessionData';
 import { type CAOCourse } from '../futureFinderData';
 import {
   type MockResult,
-  gradeToPoints,
   mutedSubjectHex,
 } from './warRoomShared';
-import { EditorialCard, MutedProgress, Overline, Pill, SectionHeader } from './warRoomPrimitives';
+import { MutedProgress } from './warRoomPrimitives';
 
 interface CountdownPanelProps {
   daysUntilExam: number;
@@ -53,10 +56,29 @@ const CountdownPanel: React.FC<CountdownPanelProps> = ({
     const hoursStudied = hoursStudiedMap[subject.subjectName] || 0;
     const plannedHours = hoursStudied + hoursRemaining;
     const progress = plannedHours > 0 ? Math.min(100, Math.round((hoursStudied / plannedHours) * 100)) : 0;
-    const latestGrade = latestGradeMap[subject.subjectName] || subject.currentGrade;
-    const gap = gradeToPoints(subject.targetGrade) - gradeToPoints(latestGrade);
+    const latestGrade = (latestGradeMap[subject.subjectName] as Grade | undefined) ?? subject.currentGrade;
+    const targetGrade = subject.targetGrade;
+    const isMaths = LC_SUBJECTS.find(item => item.name === subject.subjectName)?.isMaths ?? false;
+    const gap = latestGrade && targetGrade
+      ? getPointsForGrade(targetGrade, isMaths) - getPointsForGrade(latestGrade, isMaths)
+      : null;
+    const gradeLabel = latestGrade && targetGrade
+      ? `${latestGrade} → ${targetGrade}`
+      : latestGrade
+        ? `${latestGrade} · target not set`
+        : targetGrade
+          ? `Target ${targetGrade}`
+          : 'Grades not set';
+    const gradeAriaLabel = latestGrade && targetGrade
+      ? `Current grade ${latestGrade}. Target grade ${targetGrade}.`
+      : latestGrade
+        ? `Current grade ${latestGrade}. Target grade not set.`
+        : targetGrade
+          ? `Current grade not set. Target grade ${targetGrade}.`
+          : 'Current and target grades not set.';
     return {
       ...subject,
+      subjectIndex: index,
       sessionsPerWeek,
       hoursRemaining,
       hoursStudied,
@@ -64,102 +86,112 @@ const CountdownPanel: React.FC<CountdownPanelProps> = ({
       progress,
       latestGrade,
       gap,
+      gradeLabel,
+      gradeAriaLabel,
       color: mutedSubjectHex(getDistinctSubjectHex(subject.subjectName, index), 0.14),
     };
-  }).sort((a, b) => b.gap - a.gap), [allocations, blockDuration, hoursStudiedMap, latestGradeMap, subjects, weeksUntilExam]);
+  }).sort((a, b) => {
+    if (a.gap !== null && b.gap !== null && a.gap !== b.gap) return b.gap - a.gap;
+    if (a.gap !== null) return -1;
+    if (b.gap !== null) return 1;
+    if (a.sessionsPerWeek !== b.sessionsPerWeek) return b.sessionsPerWeek - a.sessionsPerWeek;
+    return a.subjectIndex - b.subjectIndex;
+  }), [allocations, blockDuration, hoursStudiedMap, latestGradeMap, subjects, weeksUntilExam]);
 
   const weeklySessions = subjectBudgets.reduce((total, subject) => total + subject.sessionsPerWeek, 0);
   const weeklyHours = weeklySessions * blockDuration / 60;
   const totalRemaining = subjectBudgets.reduce((total, subject) => total + subject.hoursRemaining, 0);
+  const weeklyHoursText = weeklyHours.toFixed(Number.isInteger(weeklyHours) ? 0 : 1);
+  const roundedRemainingHours = Math.round(totalRemaining);
 
   return (
-    <div className="space-y-8">
-      <section className="grid gap-4 md:grid-cols-[1.15fr_.85fr]">
-        <EditorialCard className="flex min-h-[190px] flex-col justify-between" style={{ border: '1.5px solid var(--outline-strong)' }}>
-          <div className="flex items-start justify-between gap-5">
-            <div>
-              <Overline>Exam runway</Overline>
-              <p className="mt-3 font-serif text-[52px] font-semibold leading-none tracking-[-.04em] text-[var(--ink-primary)] tabular-nums sm:text-[64px]">
-                {daysUntilExam}
-              </p>
-              <p className="mt-2 text-sm text-[var(--ink-secondary)]">days until your first exam</p>
-            </div>
-            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#FDEEDF] text-[#A43F08]" aria-hidden="true">
-              <CalendarDays size={23} />
-            </span>
-          </div>
-          <p className="mt-6 border-t border-[var(--outline-soft)] pt-4 text-xs leading-relaxed text-[var(--ink-muted)]">
-            {weeksUntilExam} study weeks remain. At the current allocation, that creates about {Math.round(totalRemaining)} focused hours.
-          </p>
-        </EditorialCard>
+    <div className="space-y-9">
+      <section aria-labelledby="war-room-time-summary">
+        <div className="max-w-2xl">
+          <h3 id="war-room-time-summary" className="text-xl font-semibold tracking-[-0.02em] text-[var(--ink-primary)]">
+            A manageable week, repeated
+          </h3>
+        </div>
 
-        <EditorialCard className="flex min-h-[190px] flex-col justify-between">
-          <div>
-            <div className="flex items-center justify-between gap-4">
-              <Overline>Weekly capacity</Overline>
-              <Clock3 size={18} className="text-[var(--ink-muted)]" aria-hidden="true" />
-            </div>
-            <p className="mt-4 font-serif text-[34px] font-semibold leading-none text-[var(--ink-primary)]">
-              {weeklySessions} sessions
-            </p>
-            <p className="mt-2 text-sm text-[var(--ink-secondary)]">
-              approximately {weeklyHours.toFixed(weeklyHours < 10 ? 1 : 0)} hours each week
-            </p>
+        <dl className="mt-5 grid border-y border-[var(--outline-soft)] sm:grid-cols-4 sm:divide-x sm:divide-[var(--outline-soft)]">
+          <div className="flex items-baseline justify-between gap-4 border-b border-[var(--outline-soft)] py-3 sm:block sm:border-b-0 sm:px-4 sm:first:pl-0">
+            <dt className="text-xs text-[var(--ink-muted)]">Until exams</dt>
+            <dd className="text-sm font-semibold text-[var(--ink-primary)] tabular-nums sm:mt-1">{daysUntilExam} day{daysUntilExam === 1 ? '' : 's'}</dd>
           </div>
-          <div className="mt-6 grid grid-cols-2 gap-3 border-t border-[var(--outline-soft)] pt-4 text-xs">
-            <div><span className="block font-semibold text-[var(--ink-primary)]">{blockDuration} min</span><span className="text-[var(--ink-muted)]">per session</span></div>
-            <div><span className="block font-semibold text-[var(--ink-primary)]">{subjects.length}</span><span className="text-[var(--ink-muted)]">subjects covered</span></div>
+          <div className="flex items-baseline justify-between gap-4 border-b border-[var(--outline-soft)] py-3 sm:block sm:border-b-0 sm:px-4">
+            <dt className="text-xs text-[var(--ink-muted)]">Each week</dt>
+            <dd className="text-sm font-semibold text-[var(--ink-primary)] tabular-nums sm:mt-1">{weeklySessions} session{weeklySessions === 1 ? '' : 's'}</dd>
           </div>
-        </EditorialCard>
+          <div className="flex items-baseline justify-between gap-4 border-b border-[var(--outline-soft)] py-3 sm:block sm:border-b-0 sm:px-4">
+            <dt className="text-xs text-[var(--ink-muted)]">Weekly time</dt>
+            <dd className="text-sm font-semibold text-[var(--ink-primary)] tabular-nums sm:mt-1">{weeklyHoursText} hour{weeklyHours === 1 ? '' : 's'}</dd>
+          </div>
+          <div className="flex items-baseline justify-between gap-4 py-3 sm:block sm:px-4 sm:last:pr-0">
+            <dt className="text-xs text-[var(--ink-muted)]">Focused time ahead</dt>
+            <dd className="text-sm font-semibold text-[var(--ink-primary)] tabular-nums sm:mt-1">About {roundedRemainingHours} hour{roundedRemainingHours === 1 ? '' : 's'}</dd>
+          </div>
+        </dl>
+        <p className="mt-3 text-xs text-[var(--ink-muted)]">
+          {weeksUntilExam} study week{weeksUntilExam === 1 ? '' : 's'} · {blockDuration} minute{blockDuration === 1 ? '' : 's'} per session
+        </p>
       </section>
 
       {targetCourse && currentPoints !== undefined && (
-        <section>
-          <SectionHeader overline="Course target" title={targetCourse.title} rule={false} />
+        <section aria-labelledby="war-room-course-target">
+          <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--ink-muted)]">Course target</p>
           <div className="mt-3 flex flex-col gap-3 border-y border-[var(--outline-soft)] py-4 sm:flex-row sm:items-center sm:justify-between">
-            <p className="text-sm text-[var(--ink-secondary)]">
-              {targetCourse.institution} · {targetCourse.typicalPoints} points typically required
+            <div>
+              <h3 id="war-room-course-target" className="text-sm font-semibold text-[var(--ink-primary)]">{targetCourse.title}</h3>
+              <p className="mt-1 text-xs text-[var(--ink-muted)]">
+                {targetCourse.institution} · {targetCourse.typicalPoints} points typically required
+              </p>
+            </div>
+            <p className="shrink-0 text-xs font-semibold text-[var(--ink-secondary)] tabular-nums">
+              {currentPoints >= targetCourse.typicalPoints
+                ? 'On target'
+                : `${targetCourse.typicalPoints - currentPoints} points to target`}
             </p>
-            {currentPoints >= targetCourse.typicalPoints
-              ? <Pill bg="#E8F2EC" fg="#1F5F3E">On target</Pill>
-              : <Pill bg="#FDEEDF" fg="#A43F08">{targetCourse.typicalPoints - currentPoints} point gap</Pill>}
           </div>
         </section>
       )}
 
-      <section>
-        <SectionHeader
-          overline="Weekly allocation"
-          title="Where the time goes"
-          rule={false}
-          trailing={<span className="text-xs text-[var(--ink-muted)]">Highest grade gap first</span>}
-        />
-        <EditorialCard padded={false} className="mt-4 overflow-hidden">
-          <div className="hidden grid-cols-[minmax(150px,1fr)_90px_90px_minmax(160px,1fr)] gap-4 border-b border-[var(--outline-soft)] px-5 py-3 text-[10px] font-bold uppercase tracking-[.14em] text-[var(--ink-muted)] sm:grid">
-            <span>Subject</span><span>Grade</span><span>Per week</span><span>Planned runway</span>
+      <section aria-labelledby="war-room-time-allocation">
+        <div>
+          <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--ink-muted)]">Weekly allocation</p>
+          <h3 id="war-room-time-allocation" className="mt-2 text-lg font-semibold tracking-[-0.01em] text-[var(--ink-primary)]">Where the time goes</h3>
+        </div>
+        <div className="mt-4 border-y border-[var(--outline-soft)]">
+          <div className="hidden grid-cols-[minmax(150px,1fr)_90px_90px_minmax(160px,1fr)] gap-4 border-b border-[var(--outline-soft)] py-3 text-[10px] font-bold uppercase tracking-[.14em] text-[var(--ink-muted)] sm:grid" aria-hidden="true">
+            <span>Subject</span><span>Grade path</span><span>Per week</span><span>Planned runway</span>
           </div>
-          {subjectBudgets.map((subject, index) => (
-            <div
-              key={subject.subjectName}
-              className="grid gap-3 px-5 py-4 sm:grid-cols-[minmax(150px,1fr)_90px_90px_minmax(160px,1fr)] sm:items-center sm:gap-4"
-              style={{ borderTop: index ? '1px solid var(--outline-soft)' : undefined }}
-            >
-              <div className="flex min-w-0 items-center gap-3">
-                <span className="h-2.5 w-2.5 shrink-0 rounded-full" style={{ background: subject.color }} aria-hidden="true" />
-                <span className="truncate font-serif text-[15px] font-semibold text-[var(--ink-primary)]">{subject.subjectName}</span>
-              </div>
-              <span className="font-mono text-xs text-[var(--ink-secondary)]">{subject.latestGrade} → {subject.targetGrade}</span>
-              <span className="text-xs font-semibold text-[var(--ink-primary)]">{subject.sessionsPerWeek} session{subject.sessionsPerWeek === 1 ? '' : 's'}</span>
-              <div>
-                <div className="mb-1.5 flex items-center justify-between gap-3 font-mono text-[10px] text-[var(--ink-muted)]">
-                  <span>{Math.round(subject.hoursStudied)}h done</span>
-                  <span>{Math.round(subject.hoursRemaining)}h ahead</span>
+          <ul>
+            {subjectBudgets.map(subject => (
+              <li
+                key={subject.subjectName}
+                className="grid gap-3 border-b border-[var(--outline-soft)] py-4 last:border-b-0 sm:grid-cols-[minmax(150px,1fr)_90px_90px_minmax(160px,1fr)] sm:items-center sm:gap-4"
+              >
+                <div className="flex min-w-0 items-center gap-3">
+                  <span className="h-2 w-2 shrink-0 rounded-full" style={{ background: subject.color }} aria-hidden="true" />
+                  <span className="truncate text-sm font-semibold text-[var(--ink-primary)]">{subject.subjectName}</span>
                 </div>
-                <MutedProgress value={subject.progress} color={subject.color} height={5} />
-              </div>
-            </div>
-          ))}
-        </EditorialCard>
+                <span className="text-xs text-[var(--ink-secondary)] tabular-nums">
+                  <span className="sr-only">{subject.gradeAriaLabel}</span>
+                  <span aria-hidden="true">{subject.gradeLabel}</span>
+                </span>
+                <span className="text-xs font-semibold text-[var(--ink-primary)]">
+                  <span className="sr-only">Per week: </span>{subject.sessionsPerWeek} session{subject.sessionsPerWeek === 1 ? '' : 's'}
+                </span>
+                <div>
+                  <div className="mb-1.5 flex items-center justify-between gap-3 text-[10px] text-[var(--ink-muted)] tabular-nums">
+                    <span>{Math.round(subject.hoursStudied)}h done</span>
+                    <span>{Math.round(subject.hoursRemaining)}h ahead</span>
+                  </div>
+                  <MutedProgress value={subject.progress} color={subject.color} height={3} />
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
       </section>
     </div>
   );

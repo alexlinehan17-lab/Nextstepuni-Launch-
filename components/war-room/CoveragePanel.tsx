@@ -4,7 +4,7 @@
  */
 
 import React, { useState, useEffect, useMemo } from 'react';
-import { Plus, X, AlertTriangle, Shield } from 'lucide-react';
+import { Plus, X, AlertTriangle } from 'lucide-react';
 import { type StudentSubjectProfile } from '../subjectData';
 import { getDistinctSubjectHex } from '../../studySessionData';
 import { getSyllabusTopicRefs } from '../syllabusTopics';
@@ -17,17 +17,12 @@ import {
   CONFIDENCE_LABELS,
   CONFIDENCE_CYCLE,
   CONFIDENCE_HEX,
-  PAPER, INK, INK_SOFT, INK_MUTE, INK_FAINT, ACCENT,
-  STATUS_SHAKY, STATUS_GAP_DEEP,
-  STATUS_SHAKY_TINT, STATUS_SOLID_DEEP,
+  STATUS_SHAKY,
   mutedSubjectHex,
   type TopicEntry,
   type TopicMap,
 } from './warRoomShared';
-import {
-  Overline, SectionHeader, EditorialCard, ConfidenceDot,
-  fieldClass, fieldStyle,
-} from './warRoomPrimitives';
+import { ConfidenceDot, fieldClass, fieldStyle } from './warRoomPrimitives';
 
 interface CoveragePanelProps {
   subjects: StudentSubjectProfile['subjects'];
@@ -163,342 +158,338 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMastery, d
   const currentStats = allSubjectStats.find(s => s.subjectName === selectedSubject);
 
   return (
-    <div className="space-y-7">
-      {/* ── Subject chips ── */}
-      <section>
-        <SectionHeader overline="Subject workspace" title="Coverage and confidence" rule={false} />
-        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-[var(--ink-secondary)]">
-          Choose a subject, then mark each topic honestly. The overview below turns those checks into a usable coverage signal.
-        </p>
-        <div className="mt-4 flex flex-wrap gap-2" aria-label="Choose a subject">
-          {subjects.map((s, sIdx) => {
-            const rawHex = getDistinctSubjectHex(s.subjectName, sIdx);
-            const hex = mutedSubjectHex(rawHex, 0.22);
-            const isActive = selectedSubject === s.subjectName;
-            const stats = allSubjectStats.find(x => x.subjectName === s.subjectName);
-            const showPct = stats && stats.total > 0 && stats.pct > 0;
+    <div className="war-room-coverage space-y-8">
+      <style>{`
+        .war-room-coverage .coverage-subject-control:focus-visible {
+          outline: 2px solid var(--outline-strong) !important;
+          outline-offset: 2px !important;
+        }
+        .war-room-coverage .coverage-topic-tile:focus-within {
+          outline: 2px solid var(--outline-strong) !important;
+          outline-offset: 2px !important;
+        }
+        .war-room-coverage .coverage-topic-cycle:focus-visible {
+          outline: none !important;
+        }
+        .war-room-coverage .coverage-topic-reset:focus-visible {
+          opacity: 1 !important;
+          outline: 2px solid var(--outline-strong) !important;
+          outline-offset: -3px !important;
+        }
+        @media (pointer: coarse) {
+          .war-room-coverage .coverage-topic-reset {
+            opacity: 1 !important;
+          }
+        }
+      `}</style>
+      <section aria-labelledby="coverage-heading">
+        <div className="border-b border-[var(--outline-soft)] pb-4">
+          <h3 id="coverage-heading" className="text-lg font-semibold tracking-[-0.01em] text-[var(--ink-primary)]">
+            Coverage and confidence
+          </h3>
+          <p className="mt-1.5 max-w-2xl text-[13px] leading-5 text-[var(--ink-secondary)]">
+            Choose a subject, then mark each topic as not started, shaky or solid.
+          </p>
+        </div>
+
+        <div className="mt-4 grid grid-cols-2 gap-2 sm:flex sm:flex-wrap" aria-label="Choose a subject">
+          {subjects.map((subject, subjectIndex) => {
+            const color = mutedSubjectHex(getDistinctSubjectHex(subject.subjectName, subjectIndex), 0.22);
+            const isActive = selectedSubject === subject.subjectName;
+            const stats = allSubjectStats.find(item => item.subjectName === subject.subjectName);
+            const showPercentage = Boolean(stats && stats.total > 0);
             return (
               <button
-                key={s.subjectName}
-                onClick={() => setSelectedSubject(s.subjectName)}
+                key={subject.subjectName}
+                type="button"
+                onClick={() => setSelectedSubject(subject.subjectName)}
                 aria-pressed={isActive}
-                className="inline-flex min-h-10 items-center gap-2 rounded-xl px-3 py-1.5 text-[12px] font-semibold transition-colors"
-                style={isActive
-                  ? { background: 'var(--surface-paper)', color: INK, border: '1.5px solid var(--outline-strong)' }
-                  : { background: 'var(--surface-paper)', color: INK_SOFT, border: '1px solid var(--outline-soft)' }}
+                className={`coverage-subject-control inline-flex min-h-10 items-center gap-2 rounded-[7px] border px-3 py-1.5 text-left text-xs font-semibold transition-[border-color,background-color,color] ${
+                  isActive
+                    ? 'border-[var(--outline-strong)] bg-[var(--surface-paper)] text-[var(--ink-primary)]'
+                    : 'border-[var(--outline-soft)] bg-transparent text-[var(--ink-secondary)] hover:border-[var(--outline-strong)] hover:text-[var(--ink-primary)]'
+                }`}
+                style={isActive ? { border: '1.5px solid var(--outline-strong)' } : undefined}
               >
-                <span className="w-2 h-2 rounded-full shrink-0"
-                      style={{ background: hex }} />
-                {s.subjectName}
-                {showPct && (
-                  <span className="font-mono text-[10px]"
-                        style={{ opacity: isActive ? 0.85 : 0.55 }}>{stats.pct}%</span>
+                <span
+                  className="h-2 w-2 shrink-0 rounded-full border border-black/10"
+                  style={{ background: color }}
+                  aria-hidden="true"
+                />
+                <span className="min-w-0 truncate">{subject.subjectName}</span>
+                {showPercentage && (
+                  <span className="ml-auto text-[10px] font-medium tabular-nums text-[var(--ink-muted)]">
+                    {stats?.pct}%
+                  </span>
                 )}
               </button>
             );
           })}
         </div>
+
         {curriculumSpecification?.selectionRules?.length ? (
-          <div
-            className="mt-4 rounded-2xl px-4 py-3 text-sm leading-6"
-            style={{ border: '1.5px solid var(--outline-strong)', background: PAPER, color: INK_SOFT }}
-          >
-            <span className="font-semibold" style={{ color: INK }}>How this subject is selected: </span>
-            {curriculumSpecification.selectionRules.map((rule) => rule.description).join(' ')}
-          </div>
+          <p className="mt-4 border-y border-[var(--outline-soft)] py-3 text-xs leading-5 text-[var(--ink-secondary)]">
+            <span className="font-semibold text-[var(--ink-primary)]">Subject choices: </span>
+            {curriculumSpecification.selectionRules.map(rule => rule.description).join(' ')}
+          </p>
         ) : null}
       </section>
 
-      {/* ── Add topic ── */}
-      <div className="flex gap-2">
-        <input
-          type="text"
-          value={newTopicName}
-          onChange={(e) => setNewTopicName(e.target.value)}
-          onKeyDown={(e) => e.key === 'Enter' && addTopic()}
-          placeholder="Add a topic…"
-          aria-label="New topic name"
-          maxLength={60}
-          className={fieldClass}
-          style={{ ...fieldStyle, flex: 1 }}
-        />
-        <button
-          type="button"
-          onClick={addTopic}
-          disabled={newTopicName.trim().length < 2}
-          aria-label="Add topic"
-          className="px-4 rounded-lg disabled:opacity-40 transition-all flex items-center justify-center"
-          style={{
-            background: INK,
-            color: PAPER,
-            boxShadow: '0 2px 0 rgba(31,27,23,0.18)',
-          }}
-        >
-          <Plus size={16} />
-        </button>
-      </div>
+      <section aria-labelledby="selected-subject-heading">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-muted)]">Topic map</p>
+            <h4 id="selected-subject-heading" className="mt-1 text-sm font-semibold text-[var(--ink-primary)]">
+              {selectedSubject || 'No subject selected'}
+            </h4>
+          </div>
 
-      {/* ── Status counters ── */}
-      {currentStats && currentStats.total > 0 && (
-        <div className="flex items-center flex-wrap gap-x-5 gap-y-2">
-          <span className="flex items-center gap-1.5 text-[12px]" style={{ color: INK_SOFT }}>
-            <ConfidenceDot confidence="solid" />
-            <span className="font-bold" style={{ color: STATUS_SOLID_DEEP }}>{currentStats.solid}</span> solid
-          </span>
-          <span className="flex items-center gap-1.5 text-[12px]" style={{ color: INK_SOFT }}>
-            <ConfidenceDot confidence="shaky" />
-            <span className="font-bold" style={{ color: '#8C6022' }}>{currentStats.shaky}</span> shaky
-          </span>
-          <span className="flex items-center gap-1.5 text-[12px]" style={{ color: INK_SOFT }}>
-            <ConfidenceDot confidence="not-started" />
-            <span className="font-bold" style={{ color: INK_MUTE }}>{currentStats.notStarted}</span> not started
-          </span>
-          <span className="ml-auto font-mono text-[12px] font-bold tabular-nums"
-                style={{ color: currentStats.pct >= 50 ? STATUS_SOLID_DEEP : currentStats.pct >= 25 ? '#8C6022' : STATUS_GAP_DEEP }}>
-            {currentStats.pct}% covered
-          </span>
+          <div className="flex w-full gap-2 sm:max-w-sm">
+            <input
+              type="text"
+              value={newTopicName}
+              onChange={event => setNewTopicName(event.target.value)}
+              onKeyDown={event => event.key === 'Enter' && addTopic()}
+              placeholder="Add a topic"
+              aria-label="New topic name"
+              maxLength={60}
+              className={`${fieldClass} min-h-10 rounded-[7px] text-xs focus:outline focus:outline-2 focus:outline-offset-1 focus:outline-[var(--outline-strong)]`}
+              style={{ ...fieldStyle, flex: 1, boxShadow: 'none' }}
+            />
+            <button
+              type="button"
+              onClick={addTopic}
+              disabled={newTopicName.trim().length < 2}
+              aria-label="Add topic"
+              className="flex min-h-10 min-w-10 items-center justify-center rounded-[7px] bg-[var(--ink-primary)] px-3 text-[var(--surface-paper)] transition-opacity disabled:cursor-not-allowed disabled:opacity-35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--outline-strong)]"
+            >
+              <Plus size={15} aria-hidden="true" />
+            </button>
+          </div>
         </div>
-      )}
 
-      {/* ── Topic tiles ── */}
-      {topics.length > 0 ? (
-        <>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
-            {topics.map(topic => {
-              const conf = CONFIDENCE_HEX[topic.confidence];
-              const isNotStarted = topic.confidence === 'not-started';
-              return (
-                <div
-                  key={topic.id}
-                  className="group relative transition-all"
-                  style={{
-                    background: 'var(--surface-paper)',
-                    border: '1px solid var(--outline-soft)',
-                    borderRadius: 12,
-                    boxShadow: '0 1px 0 rgba(31,27,23,0.03), 0 4px 12px rgba(31,27,23,0.04)',
-                    opacity: isNotStarted ? 0.78 : 1,
-                  }}
-                >
-                  <button
-                    type="button"
-                    onClick={() => cycleConfidence(topic.name)}
-                    aria-label={`${topic.name}: ${CONFIDENCE_LABELS[topic.confidence]}. Change confidence`}
-                    className="w-full px-3.5 py-3 pr-9 text-left"
-                  >
-                    <div className="flex items-start gap-2">
-                      <ConfidenceDot confidence={topic.confidence} />
-                      <div className="min-w-0 flex-1">
-                        <p className="truncate font-serif text-[13px] font-semibold leading-snug"
-                           style={{ color: isNotStarted ? INK_MUTE : INK }}>
-                          {topic.name}
-                        </p>
-                        <p className="mt-0.5 font-sans text-[10px] font-bold uppercase tracking-[0.18em]"
-                           style={{ color: conf.deep }}>
-                          {CONFIDENCE_LABELS[topic.confidence]}
-                        </p>
-                      </div>
+        {currentStats && currentStats.total > 0 && (
+          <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-2 border-y border-[var(--outline-soft)] py-3" aria-label={`${selectedSubject} coverage summary`}>
+            <span className="flex items-center gap-1.5 text-xs text-[var(--ink-secondary)]">
+              <ConfidenceDot confidence="solid" size={8} />
+              <span className="font-semibold text-[var(--ink-primary)]">{currentStats.solid}</span> solid
+            </span>
+            <span className="flex items-center gap-1.5 text-xs text-[var(--ink-secondary)]">
+              <ConfidenceDot confidence="shaky" size={8} />
+              <span className="font-semibold text-[var(--ink-primary)]">{currentStats.shaky}</span> shaky
+            </span>
+            <span className="flex items-center gap-1.5 text-xs text-[var(--ink-secondary)]">
+              <ConfidenceDot confidence="not-started" size={8} />
+              <span className="font-semibold text-[var(--ink-primary)]">{currentStats.notStarted}</span> not started
+            </span>
+            <span className="ml-auto text-[11px] font-semibold tabular-nums text-[var(--ink-primary)]">
+              {currentStats.pct}% covered
+            </span>
+          </div>
+        )}
+
+        <div className="mt-4">
+          {topics.length > 0 ? (
+            <>
+              <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+                {topics.map(topic => {
+                  const isNotStarted = topic.confidence === 'not-started';
+                  return (
+                    <div
+                      key={topic.id}
+                      className="coverage-topic-tile group relative rounded-[8px] border bg-[var(--surface-paper)] transition-[border-color,box-shadow]"
+                      style={{ borderColor: 'var(--outline-soft)' }}
+                    >
+                      <button
+                        type="button"
+                        onClick={() => cycleConfidence(topic.name)}
+                        aria-label={`${topic.name}: ${CONFIDENCE_LABELS[topic.confidence]}. Change confidence`}
+                        className="coverage-topic-cycle min-h-[58px] w-full rounded-[7px] px-3 py-2.5 pr-10 text-left focus:outline-none"
+                      >
+                        <span className="flex items-start gap-2.5">
+                          <span className="pt-0.5"><ConfidenceDot confidence={topic.confidence} size={9} /></span>
+                          <span className="min-w-0 flex-1">
+                            <span className={`block break-words text-[13px] font-semibold leading-5 ${isNotStarted ? 'text-[var(--ink-secondary)]' : 'text-[var(--ink-primary)]'}`}>
+                              {topic.name}
+                            </span>
+                            <span className="mt-0.5 block text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-secondary)]">
+                              {CONFIDENCE_LABELS[topic.confidence]}
+                            </span>
+                          </span>
+                        </span>
+                      </button>
+                      <button
+                        type="button"
+                        onClick={event => { event.stopPropagation(); removeTopic(topic.name); }}
+                        className="coverage-topic-reset absolute right-2 top-2 flex h-7 w-7 items-center justify-center rounded-[6px] text-[var(--ink-muted)] opacity-0 transition-[opacity,background-color,color] hover:bg-[var(--surface-soft)] hover:text-[var(--ink-primary)] focus:opacity-100 focus:outline-none group-hover:opacity-100"
+                        aria-label={`Reset ${topic.name} to not started`}
+                      >
+                        <X size={12} aria-hidden="true" />
+                      </button>
                     </div>
-                  </button>
-                  <button
-                    type="button"
-                    onClick={(e) => { e.stopPropagation(); removeTopic(topic.name); }}
-                    className="absolute right-1.5 top-1.5 flex h-6 w-6 items-center justify-center rounded-full opacity-0 transition-opacity hover:bg-[var(--surface-soft)] focus:opacity-100 group-hover:opacity-100 group-focus-within:opacity-100"
-                    style={{ color: INK_MUTE }}
-                    aria-label={`Reset ${topic.name} to not started`}
-                  >
-                    <X size={11} />
-                  </button>
+                  );
+                })}
+              </div>
+
+              {debriefTopics.length > 0 && (
+                <section className="mt-6 border-t border-[var(--outline-soft)] pt-5" aria-labelledby="debrief-suggestions-heading">
+                  <div className="flex items-center justify-between gap-4">
+                    <h5 id="debrief-suggestions-heading" className="text-xs font-semibold text-[var(--ink-primary)]">From your debriefs</h5>
+                    <button
+                      type="button"
+                      onClick={() => addDebriefTopics(debriefTopics)}
+                      className="min-h-8 text-[11px] font-semibold text-[var(--ink-secondary)] underline decoration-[var(--outline-soft)] underline-offset-4 hover:text-[var(--ink-primary)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--outline-strong)]"
+                    >
+                      Add all ({debriefTopics.length})
+                    </button>
+                  </div>
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {debriefTopics.map(name => (
+                      <button
+                        key={name}
+                        type="button"
+                        onClick={() => addDebriefTopics([name])}
+                        className="inline-flex min-h-9 items-center gap-1.5 rounded-[7px] border border-[var(--outline-soft)] bg-transparent px-2.5 py-1.5 text-[11px] font-medium text-[var(--ink-secondary)] hover:border-[var(--outline-strong)] hover:text-[var(--ink-primary)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--outline-strong)]"
+                      >
+                        <AlertTriangle size={10} className="shrink-0" style={{ color: STATUS_SHAKY }} aria-hidden="true" />
+                        {name}
+                      </button>
+                    ))}
+                  </div>
+                </section>
+              )}
+
+              {sortedUnaddedSyllabus.length > 0 && (
+                <button
+                  type="button"
+                  onClick={() => addSyllabusTopics(sortedUnaddedSyllabus)}
+                  className="mt-6 flex min-h-10 w-full items-center justify-center gap-2 rounded-[7px] border border-[var(--outline-soft)] bg-transparent px-4 py-2 text-[11px] font-semibold text-[var(--ink-secondary)] hover:border-[var(--outline-strong)] hover:text-[var(--ink-primary)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--outline-strong)]"
+                >
+                  <Plus size={12} aria-hidden="true" />
+                  Add {sortedUnaddedSyllabus.length} remaining syllabus topic{sortedUnaddedSyllabus.length > 1 ? 's' : ''}
+                </button>
+              )}
+            </>
+          ) : sortedUnaddedSyllabus.length > 0 || debriefTopics.length > 0 ? (
+            <div className="border-y border-[var(--outline-soft)]">
+              {debriefTopics.length > 0 && (
+                <section className="py-4" aria-labelledby="empty-debrief-suggestions-heading">
+                  <div className="flex items-center justify-between gap-4 px-1">
+                    <h5 id="empty-debrief-suggestions-heading" className="text-xs font-semibold text-[var(--ink-primary)]">From your debriefs</h5>
+                    <button
+                      type="button"
+                      onClick={() => addDebriefTopics(debriefTopics)}
+                      className="min-h-8 text-[11px] font-semibold text-[var(--ink-secondary)] underline decoration-[var(--outline-soft)] underline-offset-4 hover:text-[var(--ink-primary)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--outline-strong)]"
+                    >
+                      Add all ({debriefTopics.length})
+                    </button>
+                  </div>
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {debriefTopics.map(name => (
+                      <button
+                        key={name}
+                        type="button"
+                        onClick={() => addDebriefTopics([name])}
+                        className="inline-flex min-h-9 items-center gap-1.5 rounded-[7px] border border-[var(--outline-soft)] px-2.5 py-1.5 text-[11px] font-medium text-[var(--ink-secondary)] hover:border-[var(--outline-strong)] hover:text-[var(--ink-primary)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--outline-strong)]"
+                      >
+                        <AlertTriangle size={10} className="shrink-0" style={{ color: STATUS_SHAKY }} aria-hidden="true" />
+                        {name}
+                      </button>
+                    ))}
+                  </div>
+                </section>
+              )}
+
+              {sortedUnaddedSyllabus.length > 0 && (
+                <section className={debriefTopics.length > 0 ? 'border-t border-[var(--outline-soft)] py-4' : 'py-4'} aria-labelledby="syllabus-suggestions-heading">
+                  <div className="flex items-center justify-between gap-4 px-1">
+                    <div>
+                      <h5 id="syllabus-suggestions-heading" className="text-xs font-semibold text-[var(--ink-primary)]">Syllabus topics</h5>
+                      <p className="mt-0.5 text-[11px] text-[var(--ink-muted)]">Select a topic to add it to your map.</p>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => addSyllabusTopics(sortedUnaddedSyllabus)}
+                      className="min-h-8 shrink-0 text-[11px] font-semibold text-[var(--ink-secondary)] underline decoration-[var(--outline-soft)] underline-offset-4 hover:text-[var(--ink-primary)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--outline-strong)]"
+                    >
+                      Add all ({sortedUnaddedSyllabus.length})
+                    </button>
+                  </div>
+                  <div className="mt-3 border-t border-[var(--outline-soft)]">
+                    {sortedUnaddedSyllabus.map(name => {
+                      const syllabusTopic = syllabusData?.topics.find(topic => topic.name === name);
+                      const quadrant = syllabusTopic ? getQuadrant(syllabusTopic) : null;
+                      const quadrantLabel = quadrant ? QUADRANT_LABELS[quadrant].label : null;
+                      return (
+                        <button
+                          key={name}
+                          type="button"
+                          onClick={() => addSyllabusTopics([name])}
+                          className="group flex min-h-12 w-full items-center gap-3 border-b border-[var(--outline-soft)] px-1 py-2.5 text-left hover:bg-[var(--surface-soft)] focus-visible:z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--outline-strong)]"
+                        >
+                          <Plus size={12} className="shrink-0 text-[var(--ink-muted)] group-hover:text-[var(--ink-primary)]" aria-hidden="true" />
+                          <span className="min-w-0 flex-1">
+                            <span className="block text-xs font-semibold text-[var(--ink-primary)]">{name}</span>
+                            {syllabusTopic && (
+                              <span className="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-0.5 text-[10px] text-[var(--ink-muted)]">
+                                {quadrantLabel && <span className="font-semibold">{quadrantLabel}</span>}
+                                <span className="tabular-nums">~{syllabusTopic.markWeight}% · {syllabusTopic.examFrequency}/10 yrs</span>
+                              </span>
+                            )}
+                          </span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </section>
+              )}
+            </div>
+          ) : (
+            <div className="border-y border-[var(--outline-soft)] py-6">
+              <p className="text-sm font-semibold text-[var(--ink-primary)]">No topics mapped yet</p>
+              <p className="mt-1 max-w-lg text-xs leading-5 text-[var(--ink-secondary)]">
+                Add a topic above. Syllabus topics will appear here automatically when they are available.
+              </p>
+            </div>
+          )}
+        </div>
+      </section>
+
+      {allSubjectStats.some(subject => subject.total > 0) && (
+        <section className="border-t border-[var(--outline-soft)] pt-6" aria-labelledby="all-subjects-heading">
+          <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-muted)]">Overview</p>
+          <h4 id="all-subjects-heading" className="mt-1 text-sm font-semibold text-[var(--ink-primary)]">All subjects</h4>
+          <div className="mt-3 border-y border-[var(--outline-soft)]">
+            {allSubjectStats.filter(subject => subject.total > 0).map((subject, subjectIndex) => {
+              const index = subjects.findIndex(item => item.subjectName === subject.subjectName);
+              const color = mutedSubjectHex(getDistinctSubjectHex(subject.subjectName, index >= 0 ? index : subjectIndex), 0.22);
+              const subjectTopics = topicMap[subject.subjectName] || [];
+              return (
+                <div key={subject.subjectName} className="border-b border-[var(--outline-soft)] py-3 last:border-b-0">
+                  <div className="flex items-center justify-between gap-4">
+                    <div className="flex min-w-0 items-center gap-2.5">
+                      <span className="h-2 w-2 shrink-0 rounded-full border border-black/10" style={{ background: color }} aria-hidden="true" />
+                      <span className="truncate text-xs font-semibold text-[var(--ink-primary)]">{subject.subjectName}</span>
+                    </div>
+                    <span className="text-[11px] font-semibold tabular-nums text-[var(--ink-secondary)]">{subject.pct}%</span>
+                  </div>
+                  <div className="ml-[18px] mt-2 flex h-1 gap-px overflow-hidden bg-[var(--outline-soft)]" aria-hidden="true">
+                    {subjectTopics.map(topic => (
+                      <span
+                        key={topic.id}
+                        className="h-full"
+                        style={{
+                          flex: 1,
+                          background: CONFIDENCE_HEX[topic.confidence].fill,
+                          opacity: topic.confidence === 'not-started' ? 0.35 : 1,
+                        }}
+                        title={`${topic.name}: ${CONFIDENCE_LABELS[topic.confidence]}`}
+                      />
+                    ))}
+                  </div>
                 </div>
               );
             })}
-          </div>
-
-          {/* Debrief-seeded topic suggestions */}
-          {debriefTopics.length > 0 && (
-            <section className="space-y-2">
-              <div className="flex items-center justify-between">
-                <Overline color="#8C6022">From your debriefs</Overline>
-                <button
-                  onClick={() => addDebriefTopics(debriefTopics)}
-                  className="text-[10px] font-bold hover:underline"
-                  style={{ color: '#8C6022' }}
-                >
-                  Add all ({debriefTopics.length})
-                </button>
-              </div>
-              <div className="flex flex-wrap gap-1.5">
-                {debriefTopics.map(name => (
-                  <button
-                    key={name}
-                    onClick={() => addDebriefTopics([name])}
-                    className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg transition-colors text-[10px] font-medium"
-                    style={{ background: STATUS_SHAKY_TINT, border: `1px dashed ${STATUS_SHAKY}66`, color: '#8C6022' }}
-                  >
-                    <AlertTriangle size={9} className="shrink-0" />
-                    {name}
-                  </button>
-                ))}
-              </div>
-            </section>
-          )}
-
-          {/* Show remaining syllabus topics as suggestions */}
-          {sortedUnaddedSyllabus.length > 0 && (
-            <button
-              onClick={() => addSyllabusTopics(sortedUnaddedSyllabus)}
-              className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg text-[11px] font-semibold transition-colors"
-              style={{ border: `1px dashed color-mix(in srgb, var(--ink-primary) 20%, transparent)`, color: INK_MUTE, background: 'transparent' }}
-            >
-              <Plus size={11} />
-              Add {sortedUnaddedSyllabus.length} remaining syllabus topic{sortedUnaddedSyllabus.length > 1 ? 's' : ''}
-            </button>
-          )}
-        </>
-      ) : sortedUnaddedSyllabus.length > 0 || debriefTopics.length > 0 ? (
-        <div className="space-y-5">
-          {/* Debrief topics */}
-          {debriefTopics.length > 0 && (
-            <section className="space-y-2">
-              <div className="flex items-center justify-between">
-                <Overline color="#8C6022">From your debriefs</Overline>
-                <button
-                  onClick={() => addDebriefTopics(debriefTopics)}
-                  className="text-[10px] font-bold hover:underline"
-                  style={{ color: '#8C6022' }}
-                >
-                  Add all ({debriefTopics.length})
-                </button>
-              </div>
-              <div className="flex flex-wrap gap-1.5">
-                {debriefTopics.map(name => (
-                  <button
-                    key={name}
-                    onClick={() => addDebriefTopics([name])}
-                    className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg transition-colors text-[10px] font-medium"
-                    style={{ background: STATUS_SHAKY_TINT, border: `1px dashed ${STATUS_SHAKY}66`, color: '#8C6022' }}
-                  >
-                    <AlertTriangle size={9} className="shrink-0" />
-                    {name}
-                  </button>
-                ))}
-              </div>
-            </section>
-          )}
-          {/* Syllabus topics with quadrant info */}
-          {sortedUnaddedSyllabus.length > 0 && (
-            <section className="space-y-3">
-              <div className="flex items-center justify-between">
-                <Overline>Syllabus topics</Overline>
-                <button
-                  onClick={() => addSyllabusTopics(sortedUnaddedSyllabus)}
-                  className="text-[10px] font-bold hover:underline"
-                  style={{ color: ACCENT }}
-                >
-                  Add all ({sortedUnaddedSyllabus.length})
-                </button>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                {sortedUnaddedSyllabus.map(name => {
-                  const sxrTopic = syllabusData?.topics.find(t => t.name === name);
-                  const quadrant = sxrTopic ? getQuadrant(sxrTopic) : null;
-                  const qStyle = quadrant ? QUADRANT_LABELS[quadrant] : null;
-                  return (
-                    <button
-                      key={name}
-                      onClick={() => addSyllabusTopics([name])}
-                      className="flex items-start gap-2 p-3 transition-all text-left"
-                      style={{
-                        background: 'var(--surface-paper)',
-                        border: '1px dashed var(--outline-soft)',
-                        borderRadius: 10,
-                      }}
-                    >
-                      <Plus size={12} className="shrink-0 mt-0.5" style={{ color: INK_MUTE }} />
-                      <div className="flex-1 min-w-0">
-                        <span className="font-serif text-[13px] font-semibold" style={{ color: INK }}>{name}</span>
-                        {sxrTopic && (
-                          <div className="flex items-center gap-2 mt-1">
-                            {qStyle && (
-                              <span className={`text-[9px] font-bold px-1.5 py-0.5 rounded-full ${qStyle.bg} ${qStyle.color}`}>
-                                {qStyle.label}
-                              </span>
-                            )}
-                            <span className="font-mono text-[9px]" style={{ color: INK_FAINT }}>
-                              ~{sxrTopic.markWeight}% · {sxrTopic.examFrequency}/10 yrs
-                            </span>
-                          </div>
-                        )}
-                      </div>
-                    </button>
-                  );
-                })}
-              </div>
-            </section>
-          )}
-        </div>
-      ) : (
-        <div className="text-center py-10 space-y-3">
-          <div className="w-12 h-12 mx-auto rounded-2xl flex items-center justify-center"
-               style={{ background: STATUS_SHAKY_TINT, border: `1px solid ${STATUS_SHAKY}33` }}>
-            <Shield size={22} style={{ color: '#8C6022' }} />
-          </div>
-          <p className="font-serif text-[15px] font-semibold" style={{ color: INK }}>No topics mapped yet</p>
-          <p className="font-sans text-[12px] max-w-xs mx-auto leading-relaxed" style={{ color: INK_MUTE }}>
-            Topics auto-import from Syllabus X-Ray when available. You can also add topics manually above.
-          </p>
-        </div>
-      )}
-
-      {/* ── All-subjects overview ── */}
-      {allSubjectStats.some(s => s.total > 0) && (
-        <section>
-          <SectionHeader overline="Across your profile" title="All subjects" rule={false} />
-          <div className="mt-3">
-            <EditorialCard tone="soft">
-              <div className="space-y-2">
-                {allSubjectStats.filter(s => s.total > 0).map((s, sIdx, arr) => {
-                  const idx = subjects.findIndex(sub => sub.subjectName === s.subjectName);
-                  const rawHex = getDistinctSubjectHex(s.subjectName, idx >= 0 ? idx : sIdx);
-                  const hex = mutedSubjectHex(rawHex, 0.22);
-                  const pctColor = s.pct >= 50 ? STATUS_SOLID_DEEP : s.pct >= 25 ? '#8C6022' : STATUS_GAP_DEEP;
-                  const isLast = sIdx === arr.length - 1;
-                  const subjectTopics = topicMap[s.subjectName] || [];
-                  return (
-                    <div
-                      key={s.subjectName}
-                      className="pb-2"
-                      style={isLast ? undefined : { borderBottom: `1px solid color-mix(in srgb, var(--ink-primary) 6%, transparent)` }}
-                    >
-                      <div className="flex items-center justify-between mb-1">
-                        <div className="flex items-center gap-2">
-                          <span className="w-3 h-3 rounded-full shrink-0"
-                                style={{ background: hex, border: `1px solid color-mix(in srgb, var(--ink-primary) 20%, transparent)` }} />
-                          <span className="font-serif text-[14px] font-semibold" style={{ color: INK }}>
-                            {s.subjectName}
-                          </span>
-                        </div>
-                        <span className="font-mono text-[11px] font-bold tabular-nums" style={{ color: pctColor }}>
-                          {s.pct}%
-                        </span>
-                      </div>
-                      {/* Refined segmented bar — proportional, soft fills */}
-                      <div className="ml-5 flex gap-[2px] overflow-hidden rounded-full"
-                           style={{ height: 5, background: `color-mix(in srgb, var(--ink-primary) 6%, transparent)` }}>
-                        {subjectTopics.map(t => {
-                          const conf = CONFIDENCE_HEX[t.confidence];
-                          return (
-                            <div key={t.id}
-                                 className="h-full"
-                                 style={{ flex: 1, background: conf.fill, opacity: t.confidence === 'not-started' ? 0.45 : 1 }}
-                                 title={`${t.name}: ${CONFIDENCE_LABELS[t.confidence]}`} />
-                          );
-                        })}
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </EditorialCard>
           </div>
         </section>
       )}

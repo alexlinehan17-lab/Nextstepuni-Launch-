@@ -4,7 +4,7 @@
  */
 import React from 'react';
 import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest';
-import { act, fireEvent, render, screen, within } from '@testing-library/react';
+import { act, fireEvent, render, screen, waitFor, within } from '@testing-library/react';
 
 vi.mock('framer-motion', async importOriginal => {
   const actual = await importOriginal<Record<string, unknown>>();
@@ -190,6 +190,172 @@ describe('War Room minimalist workspace', () => {
     expect(screen.getByText('H5 → H2')).toBeInTheDocument();
   });
 
+  test('keeps Review functional and sends the selected subject topic actions', async () => {
+    innovationState.mastery = {
+      Geography: {
+        'Physical environments': { confidence: 'shaky', updatedAt: 1, source: 'manual' },
+      },
+    };
+
+    renderWarRoom();
+
+    fireEvent.click(await screen.findByRole('tab', { name: 'Review' }));
+    expect(await screen.findByRole('heading', { name: 'Coverage and confidence' })).toBeInTheDocument();
+
+    const geography = screen.getByRole('button', { name: /Geography/ });
+    fireEvent.click(geography);
+    const selectedGeography = screen.getByRole('button', { name: /^Geography/, pressed: true });
+    expect(selectedGeography).toHaveAttribute('aria-pressed', 'true');
+
+    const topicControl = await screen.findByRole('button', { name: /Physical environments: shaky/i });
+    fireEvent.click(topicControl);
+    fireEvent.click(screen.getByRole('button', { name: 'Reset Physical environments to not started' }));
+
+    expect(innovationState.setTopicConfidence).toHaveBeenNthCalledWith(
+      1,
+      'Geography',
+      'Physical environments',
+      'solid',
+      'manual',
+    );
+    expect(innovationState.setTopicConfidence).toHaveBeenNthCalledWith(
+      2,
+      'Geography',
+      'Physical environments',
+      'not-started',
+      'manual',
+    );
+
+    fireEvent.click(screen.getByRole('tab', { name: 'Results' }));
+    expect(await screen.findByRole('heading', { name: 'Mock trajectory' })).toBeInTheDocument();
+    expect(screen.getByText('No mock results yet')).toBeInTheDocument();
+    expect(screen.queryByText('Track your mock exam trajectory')).not.toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole('tab', { name: 'Time plan' }));
+    expect(await screen.findByRole('heading', { name: 'A manageable week, repeated' })).toBeInTheDocument();
+    expect(screen.queryByText('Exam runway')).not.toBeInTheDocument();
+    expect(screen.queryByText('Weekly capacity')).not.toBeInTheDocument();
+  });
+
+  test('defaults Single and Full mock dates to the local Irish calendar day', () => {
+    vi.useFakeTimers();
+    vi.setSystemTime(new Date('2026-06-03T00:30:00+01:00'));
+    renderWarRoom();
+
+    fireEvent.click(screen.getByRole('tab', { name: 'Review' }));
+    fireEvent.click(screen.getByRole('tab', { name: 'Results' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Single result' }));
+
+    expect(screen.getByLabelText('Date')).toHaveValue('2026-06-03');
+
+    fireEvent.click(screen.getByRole('button', { name: /Cancel/ }));
+    fireEvent.click(screen.getByRole('button', { name: 'Full mock' }));
+
+    const fullMockDate = screen.getByLabelText('Date');
+    expect(fullMockDate).toHaveValue('2026-06-03');
+
+    fireEvent.change(fullMockDate, { target: { value: '' } });
+    expect(screen.getByRole('button', { name: 'Save full mock' })).toBeDisabled();
+  });
+
+  test('validates and saves one exact single-result payload', () => {
+    renderWarRoom();
+
+    fireEvent.click(screen.getByRole('tab', { name: 'Review' }));
+    fireEvent.click(screen.getByRole('tab', { name: 'Results' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Single result' }));
+
+    fireEvent.change(screen.getByLabelText('Subject'), { target: { value: 'Geography' } });
+    fireEvent.change(screen.getByLabelText('Grade'), { target: { value: 'H5' } });
+    fireEvent.change(screen.getByLabelText('Label (optional)'), { target: { value: 'Mock 1' } });
+
+    const date = screen.getByLabelText('Date');
+    const save = screen.getByRole('button', { name: 'Save result' });
+    fireEvent.change(date, { target: { value: '' } });
+
+    expect(save).toBeDisabled();
+    fireEvent.click(save);
+    expect(innovationState.addMockResult).not.toHaveBeenCalled();
+
+    fireEvent.change(date, { target: { value: '2026-08-09' } });
+    expect(save).toBeEnabled();
+    fireEvent.click(save);
+
+    expect(innovationState.addMockResult).toHaveBeenCalledTimes(1);
+    expect(innovationState.addMockResult).toHaveBeenCalledWith({
+      label: 'Mock 1',
+      date: '2026-08-09',
+      entries: [{ subjectName: 'Geography', grade: 'H5', level: 'higher' }],
+      totalPoints: 56,
+    });
+  });
+
+  test('applies the Higher Maths CAO bonus to a single-result payload', () => {
+    renderWarRoom();
+
+    fireEvent.click(screen.getByRole('tab', { name: 'Review' }));
+    fireEvent.click(screen.getByRole('tab', { name: 'Results' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Single result' }));
+
+    fireEvent.change(screen.getByLabelText('Subject'), { target: { value: 'Mathematics' } });
+    fireEvent.change(screen.getByLabelText('Grade'), { target: { value: 'H6' } });
+    fireEvent.change(screen.getByLabelText('Date'), { target: { value: '2026-08-09' } });
+
+    expect(screen.getByRole('option', { name: 'H6 (71 pts)' })).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Save result' }));
+
+    expect(innovationState.addMockResult).toHaveBeenCalledTimes(1);
+    expect(innovationState.addMockResult).toHaveBeenCalledWith({
+      label: 'Single Result',
+      date: '2026-08-09',
+      entries: [{ subjectName: 'Mathematics', grade: 'H6', level: 'higher' }],
+      totalPoints: 71,
+    });
+  });
+
+  test('reconciles an open single-result form when settings remove its subject', async () => {
+    const profile = createDevStudentProfile(NOW);
+    const { rerender } = render(
+      <WarRoom uid="" profile={profile} timetableCompletions={{}} />,
+    );
+
+    fireEvent.click(screen.getByRole('tab', { name: 'Review' }));
+    fireEvent.click(screen.getByRole('tab', { name: 'Results' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Single result' }));
+
+    expect(screen.getByLabelText('Subject')).toHaveValue('Politics & Society');
+    fireEvent.change(screen.getByLabelText('Grade'), { target: { value: 'H5' } });
+
+    const updatedProfile = {
+      ...profile,
+      subjects: profile.subjects.slice(1),
+    };
+    rerender(<WarRoom uid="" profile={updatedProfile} timetableCompletions={{}} />);
+
+    await waitFor(() => {
+      expect(screen.getByLabelText('Subject')).toHaveValue('Geography');
+      expect(screen.getByLabelText('Grade')).toHaveValue('');
+    });
+  });
+
+  test('ignores historical results for subjects no longer in Settings', () => {
+    innovationState.mocks = [{
+      id: 'removed-subject-mock',
+      label: 'Old mock',
+      date: '2025-12-01',
+      entries: [{ subjectName: 'Biology', grade: 'H3', level: 'higher' }],
+      totalPoints: 77,
+      timestamp: 1,
+    }];
+
+    renderWarRoom();
+    fireEvent.click(screen.getByRole('tab', { name: 'Review' }));
+    fireEvent.click(screen.getByRole('tab', { name: 'Results' }));
+
+    expect(screen.getByText('No mock results yet')).toBeInTheDocument();
+    expect(screen.queryByRole('heading', { name: 'Performance over time' })).not.toBeInTheDocument();
+  });
+
   test('counts this Monday-to-Sunday completion and ignores the previous week', () => {
     vi.useFakeTimers();
     vi.setSystemTime(NOW);
@@ -219,7 +385,7 @@ describe('War Room minimalist workspace', () => {
 
     const context = screen.getByRole('list', { name: 'Strategy context' });
     expect(within(context).getByText((_, element) => (
-      element?.tagName === 'LI' && element.textContent === '1 days to exams'
+      element?.tagName === 'LI' && element.textContent === '1 day to exams'
     ))).toBeInTheDocument();
 
     await act(async () => {

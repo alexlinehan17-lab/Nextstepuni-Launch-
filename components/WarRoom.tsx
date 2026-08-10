@@ -352,8 +352,8 @@ const WarRoom: React.FC<WarRoomProps> = ({
     || topicMastery.isLoaded === false
     || mockResultsHook.isLoaded === false;
   const strategyFacts = [
-    ...(daysUntilExam !== null ? [{ value: daysUntilExam, label: 'days to exams' }] : []),
-    { value: plannedSessions, label: 'sessions this week' },
+    ...(daysUntilExam !== null ? [{ value: daysUntilExam, label: `${daysUntilExam === 1 ? 'day' : 'days'} to exams` }] : []),
+    { value: plannedSessions, label: `${plannedSessions === 1 ? 'session' : 'sessions'} this week` },
     ...(hasGradeData ? [{ value: currentPoints, label: 'current points' }] : []),
   ];
 
@@ -396,7 +396,7 @@ const WarRoom: React.FC<WarRoomProps> = ({
                 tabIndex={selected ? 0 : -1}
                 onClick={() => selectMode(tab.id)}
                 onKeyDown={event => handleModeKeyDown(event, index)}
-                className={`min-h-9 rounded-[7px] px-4 text-xs font-semibold transition-[background-color,color,box-shadow] duration-200 ${
+                className={`min-h-9 rounded-[7px] px-4 text-xs font-semibold transition-[background-color,color,box-shadow] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--outline-strong)] ${
                   selected
                     ? 'bg-[var(--surface-paper)] text-[var(--ink-primary)] shadow-[0_1px_3px_rgba(0,0,0,.08)]'
                     : 'text-[var(--ink-muted)] hover:text-[var(--ink-primary)]'
@@ -436,17 +436,16 @@ const WarRoom: React.FC<WarRoomProps> = ({
           ) : (
             <div>
               <header className="max-w-2xl">
-                <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--ink-muted)]">Review</p>
-                <h2 className="mt-2 font-serif text-[28px] font-semibold leading-tight text-[var(--ink-primary)] sm:text-[32px]">
+                <h2 className="font-sans text-[24px] font-semibold leading-tight tracking-[-0.025em] text-[var(--ink-primary)] sm:text-[28px]">
                   See the detail when you need it
                 </h2>
-                <p className="mt-2 text-sm leading-relaxed text-[var(--ink-secondary)]">
+                <p className="mt-2 max-w-xl text-sm leading-relaxed text-[var(--ink-secondary)]">
                   Check coverage, results and the shape of your study plan without crowding the decision in front of you.
                 </p>
               </header>
 
               {reviewTabs.length > 1 && (
-                <div className="mt-7 border-b border-[var(--outline-soft)]">
+                <div className="mt-6 border-b border-[var(--outline-soft)]">
                   <div
                     role="tablist"
                     aria-label="Review views"
@@ -467,7 +466,7 @@ const WarRoom: React.FC<WarRoomProps> = ({
                           tabIndex={selected ? 0 : -1}
                           onClick={() => selectReviewPanel(tab.id)}
                           onKeyDown={event => handleReviewKeyDown(event, index)}
-                          className={`relative min-h-11 px-3 pb-3 text-xs font-semibold transition-colors ${
+                          className={`relative min-h-11 px-3 pb-3 text-xs font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-[var(--outline-strong)] ${
                             selected ? 'text-[var(--ink-primary)]' : 'text-[var(--ink-muted)] hover:text-[var(--ink-primary)]'
                           }`}
                         >
@@ -475,7 +474,7 @@ const WarRoom: React.FC<WarRoomProps> = ({
                           {selected && (
                             <MotionDiv
                               layoutId="war-room-review-indicator"
-                              className="absolute inset-x-3 -bottom-px h-0.5 bg-[#F26B1F]"
+                              className="absolute inset-x-3 -bottom-px h-0.5 bg-[var(--outline-strong)]"
                             />
                           )}
                         </button>
