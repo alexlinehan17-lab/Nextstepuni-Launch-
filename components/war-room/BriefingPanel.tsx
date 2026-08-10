@@ -7,7 +7,7 @@ import React, { useState, useMemo } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import {
-  Activity, ChevronDown, AlertTriangle, BookOpen,
+  Activity, ArrowRight, ChevronDown, AlertTriangle, BookOpen,
   Shield, CheckCircle, Target,
 } from 'lucide-react';
 import {
@@ -19,13 +19,13 @@ import { getSubjectGuidance, type SubjectGuidance } from '../subjectGuidance';
 import {
   type TopicMap, type MockResult,
   gradeToPoints, mutedSubjectHex,
-  PAPER, INK, INK_SOFT, INK_MUTE, INK_FAINT, ACCENT,
+  INK, INK_SOFT, INK_MUTE, INK_FAINT, ACCENT,
   STATUS_SOLID, STATUS_SOLID_DEEP, STATUS_SOLID_TINT,
   STATUS_SHAKY, STATUS_SHAKY_DEEP, STATUS_SHAKY_TINT,
 } from './warRoomShared';
 import {
-  Overline, SectionHeader, EditorialCard, Pill,
-  SketchedStar, SketchedFlag, SketchedLeaf, PaperRule,
+  Overline, SectionHeader, EditorialCard,
+  SketchedLeaf, accentButtonClass, accentButtonStyle,
 } from './warRoomPrimitives';
 
 // ── Helpers for study pattern charts ───────────────────────
@@ -46,10 +46,18 @@ function toISODateKey(d: Date): string {
 interface Recommendation {
   subject: string;
   priority: number;
+  evidence: boolean;
   concerns: string[];
   action: string;
   guidance?: SubjectGuidance;
   latestGrade?: string;
+  targetGrade: string;
+  sessionsPerWeek: number;
+  topicsTotal: number;
+  notStarted: number;
+  shaky: number;
+  solid: number;
+  coveragePct: number | null;
 }
 
 interface BriefingPanelProps {
@@ -62,10 +70,11 @@ interface BriefingPanelProps {
   blockDuration: number;
   daysUntilExam: number;
   timetableCompletions: TimetableCompletions;
+  onReviewSubjects?: () => void;
 }
 
 const BriefingPanel: React.FC<BriefingPanelProps> = ({
-  subjects, topicMap, mockResults, allocations, weeksUntilExam, daysUntilExam, timetableCompletions,
+  subjects, topicMap, mockResults, allocations, weeksUntilExam: _weeksUntilExam, daysUntilExam, timetableCompletions, onReviewSubjects,
 }) => {
   const [showStudyPatterns, setShowStudyPatterns] = useState(false);
 
@@ -125,9 +134,13 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
       let priority = 0;
 
       const topics = topicMap[s.subjectName] || [];
+      const notStarted = topics.filter(t => t.confidence === 'not-started').length;
+      const shaky = topics.filter(t => t.confidence === 'shaky').length;
+      const solid = topics.filter(t => t.confidence === 'solid').length;
+      const coveragePct = topics.length > 0
+        ? Math.round(((solid + shaky * 0.5) / topics.length) * 100)
+        : null;
       if (topics.length > 0) {
-        const notStarted = topics.filter(t => t.confidence === 'not-started').length;
-        const shaky = topics.filter(t => t.confidence === 'shaky').length;
         const weakPct = (notStarted + shaky * 0.5) / topics.length;
         if (notStarted > 0) {
           concerns.push(`${notStarted} topic${notStarted > 1 ? 's' : ''} not started`);
@@ -163,9 +176,10 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
 
       const alloc = allocations.find(a => a.subjectName === s.subjectName);
       const sessionsPerWeek = alloc?.sessions ?? 1;
+      const hasEvidence = topics.length > 0 || results.length > 0;
 
       if (concerns.length === 0 && topics.length === 0 && results.length === 0) {
-        concerns.push('no coverage data or test results logged yet');
+        concerns.push('No coverage data or test results logged yet');
         priority += 5;
       }
 
@@ -178,7 +192,7 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
           const shakyNames = topics.filter(t => t.confidence === 'shaky').slice(0, 2).map(t => t.name);
           action = `Strengthen: ${shakyNames.join(', ')}.`;
         } else {
-          action = `${sessionsPerWeek} session${sessionsPerWeek > 1 ? 's' : ''} allocated this week.`;
+          action = `Map the first topics, then protect ${sessionsPerWeek} session${sessionsPerWeek > 1 ? 's' : ''} for this subject this week.`;
         }
       }
 
@@ -187,7 +201,22 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
           ? results[results.length - 1].grade
           : (s.currentGrade as string | undefined);
         const guidance = latestGrade ? getSubjectGuidance(s.subjectName, latestGrade) : undefined;
-        recs.push({ subject: s.subjectName, priority, concerns, action, guidance, latestGrade });
+        recs.push({
+          subject: s.subjectName,
+          priority,
+          evidence: hasEvidence,
+          concerns,
+          action,
+          guidance,
+          latestGrade,
+          targetGrade: s.targetGrade,
+          sessionsPerWeek,
+          topicsTotal: topics.length,
+          notStarted,
+          shaky,
+          solid,
+          coveragePct,
+        });
       }
     }
 
@@ -212,45 +241,29 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
     return best;
   }, [subjectsWithResults, mockResults]);
 
-  const hasData = (topicMap && Object.values(topicMap).some(t => t.length > 0)) || mockResults.length > 0;
+  // A configured subject profile is already enough to produce a useful first
+  // briefing. Missing coverage or mock evidence becomes the recommendation,
+  // rather than turning the whole workspace into an empty state.
+  const hasData = subjects.length > 0;
   const [expandedGuidance, setExpandedGuidance] = useState<string | null>(null);
 
   const topRec = recommendations[0];
-  const supportingRecs = recommendations.slice(1, 3);
-  const otherRecs = recommendations.slice(3, 5);
+  const rankedRecs = recommendations.slice(1);
 
   const subjectIdx = (name: string) => subjects.findIndex(s => s.subjectName === name);
   const subjectHex = (name: string, fallback = 0) => mutedSubjectHex(getDistinctSubjectHex(name, subjectIdx(name) >= 0 ? subjectIdx(name) : fallback), 0.22);
 
   return (
     <div className="space-y-7">
-      {/* ── Today's Brief masthead ── */}
-      <div className="relative">
-        <div className="flex items-end justify-between gap-4">
-          <div>
-            <Overline color={ACCENT}>Today’s brief</Overline>
-            <h2 className="font-serif font-bold mt-1.5 leading-[1.05]"
-                style={{ color: INK, fontSize: 'clamp(28px, 4.5vw, 36px)' }}>
-              The strategic read
-            </h2>
-            <div className="mt-2 flex items-center gap-2">
-              <img
-                src="/assets/war-room-rule.png"
-                alt=""
-                aria-hidden
-                style={{ width: 72, height: 'auto', objectFit: 'contain', flexShrink: 0 }}
-              />
-              <p className="font-sans text-[12px]" style={{ color: INK_MUTE }}>
-                {daysUntilExam} days · {weeksUntilExam} weeks of study left
-              </p>
-            </div>
-          </div>
-          <div className="hidden sm:block">
-            <SketchedStar size={36} color={ACCENT} />
-          </div>
-        </div>
-        <PaperRule className="mt-5" />
-      </div>
+      <header className="border-b border-[var(--outline-soft)] pb-5">
+        <Overline color={ACCENT}>Today’s briefing</Overline>
+        <h2 className="mt-2 font-serif text-[26px] font-semibold leading-tight text-[var(--ink-primary)] sm:text-[30px]">
+          What needs attention now
+        </h2>
+        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-[var(--ink-secondary)]">
+          Your highest-impact move, based on coverage, recent results and the {daysUntilExam} days remaining.
+        </p>
+      </header>
 
       {/* ── Study Patterns — refined collapsible ── */}
       <EditorialCard tone="soft" padded={false}>
@@ -278,7 +291,7 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
               exit={{ height: 0, opacity: 0 }}
               transition={{ duration: 0.25 }}
               className="overflow-hidden"
-              style={{ borderTop: `1px solid ${INK}10` }}
+              style={{ borderTop: `1px solid color-mix(in srgb, var(--ink-primary) 6%, transparent)` }}
             >
               <div className="px-5 py-5 space-y-6">
                 {/* Weekly volume */}
@@ -328,7 +341,7 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
                           : intensity > 0.33 ? '#9DBFAF'
                             : '#C9DCD2';
                       return <div key={d.date} className="rounded-sm"
-                                  style={{ width: 18, height: 18, background: bgColor, border: `1px solid ${INK}10` }}
+                                  style={{ width: 18, height: 18, background: bgColor, border: `1px solid color-mix(in srgb, var(--ink-primary) 6%, transparent)` }}
                                   title={`${d.date}: ${d.blocks} session${d.blocks !== 1 ? 's' : ''}`} />;
                     })}
                   </div>
@@ -346,7 +359,7 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
                 {currentWeekTotal > 0 && (
                   <div>
                     <Overline className="mb-2">Subject balance — this week</Overline>
-                    <div className="flex h-3 rounded-full overflow-hidden" style={{ border: `1px solid ${INK}1A` }}>
+                    <div className="flex h-3 rounded-full overflow-hidden" style={{ border: `1px solid color-mix(in srgb, var(--ink-primary) 10%, transparent)` }}>
                       {subjects.map((s, i) => {
                         const count = currentWeekSubjects[s.subjectName] || 0;
                         if (count === 0) return null;
@@ -363,7 +376,7 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
                         return (
                           <div key={s.subjectName} className="flex items-center gap-1.5">
                             <span className="w-2 h-2 rounded-full shrink-0"
-                                  style={{ background: hex, border: `1px solid ${INK}33` }} />
+                                  style={{ background: hex, border: `1px solid color-mix(in srgb, var(--ink-primary) 20%, transparent)` }} />
                             <span className="font-sans text-[11px]" style={{ color: INK_SOFT }}>{s.subjectName}</span>
                             <span className="font-mono text-[11px] font-bold" style={{ color: INK }}>{count}</span>
                           </div>
@@ -390,35 +403,49 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
 
       {hasData ? (
         <>
-          {/* ── Top priority hero ── */}
+          {/* ── Top priority: recommendation + evidence ── */}
           {topRec && (() => {
             const hex = subjectHex(topRec.subject);
             return (
               <section>
                 <SectionHeader overline="Top priority" title="Where to focus first" rule />
-                <div className="mt-3">
-                  <EditorialCard tone="paper">
-                    <div className="flex items-start gap-4">
-                      {/* Sketched motif as marker */}
-                      <div className="shrink-0 mt-1">
-                        <SketchedFlag size={34} />
+                <div
+                  className="mt-3 overflow-hidden rounded-[14px] border border-[var(--outline-soft)] bg-[var(--surface-paper)]"
+                >
+                  <div className="grid lg:grid-cols-[1.35fr_0.65fr]">
+                    <div className="p-5 sm:p-6 lg:p-7">
+                      <div className="flex items-center gap-2.5">
+                        <span className="h-3 w-3 shrink-0 rounded-full"
+                              style={{ background: hex, border: `1px solid color-mix(in srgb, var(--ink-primary) 20%, transparent)` }} />
+                        <span className="text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--ink-muted)]">
+                          {topRec.evidence ? 'Highest impact' : 'Start here'}
+                        </span>
                       </div>
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-center gap-2 flex-wrap">
-                          <span className="w-3 h-3 rounded-full shrink-0"
-                                style={{ background: hex, border: `1px solid ${INK}33` }} />
-                          <h3 className="font-serif text-[22px] font-bold leading-tight" style={{ color: INK }}>
-                            {topRec.subject}
-                          </h3>
-                          <Pill bg={INK} fg={PAPER}>Highest impact</Pill>
-                        </div>
-                        <p className="font-sans text-[13px] mt-2.5 leading-relaxed" style={{ color: INK_SOFT }}>
-                          {topRec.concerns.join(' · ')}
+                      <h3 className="mt-4 font-serif text-[29px] font-semibold leading-tight text-[var(--ink-primary)] sm:text-[34px]">
+                        {topRec.subject}
+                      </h3>
+                      <p className="mt-2 text-sm leading-relaxed text-[var(--ink-secondary)]">
+                        {topRec.concerns.join(' · ')}
+                      </p>
+
+                      <div className="mt-7 border-t border-[var(--outline-soft)] pt-5">
+                        <Overline color={ACCENT}>Recommended next move</Overline>
+                        <p className="mt-2 max-w-2xl text-[15px] font-medium leading-relaxed text-[var(--ink-primary)]">
+                          {topRec.action}
                         </p>
-                        {topRec.action && (
-                          <p className="font-serif text-[15px] mt-2 leading-relaxed" style={{ color: ACCENT, fontWeight: 600 }}>
-                            {topRec.action}
-                          </p>
+                      </div>
+
+                      <div className="mt-6 flex flex-wrap items-center gap-3">
+                        {onReviewSubjects && (
+                          <button
+                            type="button"
+                            onClick={onReviewSubjects}
+                            className={accentButtonClass}
+                            style={accentButtonStyle}
+                          >
+                            Review {topRec.subject} coverage
+                            <ArrowRight size={14} />
+                          </button>
                         )}
                         <ExaminerInsightsBlock
                           rec={topRec}
@@ -428,75 +455,117 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
                         />
                       </div>
                     </div>
-                  </EditorialCard>
+
+                    <aside className="border-t border-[var(--outline-soft)] bg-[var(--surface-soft)] p-5 sm:p-6 lg:border-l lg:border-t-0 lg:p-7" aria-label={`${topRec.subject} priority evidence`}>
+                      <Overline>Priority evidence</Overline>
+                      <div className="mt-6">
+                        <div className="flex items-end justify-between gap-4">
+                          <div>
+                            <p className="font-mono text-[30px] font-semibold leading-none text-[var(--ink-primary)]">
+                              {topRec.coveragePct === null ? '—' : `${topRec.coveragePct}%`}
+                            </p>
+                            <p className="mt-1.5 text-xs text-[var(--ink-secondary)]">
+                              {topRec.coveragePct === null ? 'Coverage not mapped' : 'Weighted coverage'}
+                            </p>
+                          </div>
+                          {topRec.topicsTotal > 0 && (
+                            <p className="font-mono text-[11px] text-[var(--ink-muted)]">{topRec.topicsTotal} topics</p>
+                          )}
+                        </div>
+                        <div className="mt-3 h-2 overflow-hidden bg-[var(--outline-soft)]">
+                          <div
+                            className="h-full bg-[var(--ink-primary)] transition-[width] duration-500"
+                            style={{ width: `${topRec.coveragePct ?? 0}%` }}
+                          />
+                        </div>
+                      </div>
+
+                      <dl className="mt-7 divide-y divide-[var(--outline-soft)] border-y border-[var(--outline-soft)]">
+                        <div className="flex items-center justify-between gap-4 py-3">
+                          <dt className="text-xs text-[var(--ink-secondary)]">Grade path</dt>
+                          <dd className="font-mono text-sm font-semibold text-[var(--ink-primary)]">
+                            {topRec.latestGrade ?? '—'} <span className="text-[var(--ink-muted)]">→</span> {topRec.targetGrade}
+                          </dd>
+                        </div>
+                        <div className="flex items-center justify-between gap-4 py-3">
+                          <dt className="text-xs text-[var(--ink-secondary)]">Weekly plan</dt>
+                          <dd className="font-mono text-sm font-semibold text-[var(--ink-primary)]">{topRec.sessionsPerWeek} session{topRec.sessionsPerWeek === 1 ? '' : 's'}</dd>
+                        </div>
+                      </dl>
+
+                      {topRec.topicsTotal > 0 && (
+                        <div className="mt-5 grid grid-cols-3 gap-2 text-center">
+                          {[
+                            ['Solid', topRec.solid],
+                            ['Shaky', topRec.shaky],
+                            ['Not started', topRec.notStarted],
+                          ].map(([label, value]) => (
+                            <div key={String(label)}>
+                              <p className="font-mono text-sm font-semibold text-[var(--ink-primary)]">{value}</p>
+                              <p className="mt-1 text-[9px] font-semibold uppercase tracking-[0.1em] text-[var(--ink-muted)]">{label}</p>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </aside>
+                  </div>
                 </div>
               </section>
             );
           })()}
 
-          {/* ── Supporting priorities ── */}
-          {supportingRecs.length > 0 && (
+          {/* ── One ranked subject register instead of repeated cards ── */}
+          {rankedRecs.length > 0 && (
             <section>
-              <SectionHeader overline="Supporting priorities" title="Worth defending" rule ruleColor={INK_MUTE} />
-              <div className="mt-3 grid sm:grid-cols-2 gap-3">
-                {supportingRecs.map(rec => {
+              <SectionHeader overline="Across your subjects" title="Ranked next priorities" rule ruleColor={INK_MUTE} />
+              <EditorialCard padded={false} className="mt-3 overflow-hidden">
+                <div className="hidden grid-cols-[minmax(150px,0.85fr)_130px_110px_100px_minmax(240px,1.35fr)] gap-4 border-b border-[var(--outline-soft)] bg-[var(--surface-soft)] px-5 py-3 md:grid">
+                  {['Subject', 'Coverage', 'Grade path', 'Weekly plan', 'Next move'].map(label => (
+                    <span key={label} className="text-[9px] font-bold uppercase tracking-[0.16em] text-[var(--ink-muted)]">{label}</span>
+                  ))}
+                </div>
+                <div className="divide-y divide-[var(--outline-soft)]">
+                  {rankedRecs.map((rec, index) => {
                   const hex = subjectHex(rec.subject);
                   return (
-                    <EditorialCard key={rec.subject} tone="soft">
-                      <div className="flex items-center gap-2 flex-wrap">
-                        <span className="w-2.5 h-2.5 rounded-full shrink-0"
-                              style={{ background: hex, border: `1px solid ${INK}33` }} />
-                        <h4 className="font-serif text-[16px] font-bold" style={{ color: INK }}>{rec.subject}</h4>
-                      </div>
-                      <p className="font-sans text-[12px] mt-2" style={{ color: INK_MUTE }}>
-                        {rec.concerns.join(' · ')}
-                      </p>
-                      {rec.action && (
-                        <p className="font-sans text-[13px] mt-1.5" style={{ color: INK_SOFT }}>
-                          {rec.action}
-                        </p>
-                      )}
-                      <ExaminerInsightsBlock
-                        rec={rec}
-                        isOpen={expandedGuidance === rec.subject}
-                        onToggle={() => setExpandedGuidance(expandedGuidance === rec.subject ? null : rec.subject)}
-                        accent={hex}
-                        compact
-                      />
-                    </EditorialCard>
-                  );
-                })}
-              </div>
-            </section>
-          )}
+                    <div key={rec.subject} className="px-4 py-4 sm:px-5">
+                      <div className="grid gap-4 md:grid-cols-[minmax(150px,0.85fr)_130px_110px_100px_minmax(240px,1.35fr)] md:items-center">
+                        <div className="min-w-0">
+                          <div className="flex items-center gap-2">
+                            <span className="font-mono text-[10px] text-[var(--ink-muted)]">{String(index + 2).padStart(2, '0')}</span>
+                            <span className="h-2.5 w-2.5 shrink-0 rounded-full"
+                              style={{ background: hex, border: `1px solid color-mix(in srgb, var(--ink-primary) 20%, transparent)` }} />
+                            <h4 className="truncate font-serif text-[15px] font-semibold text-[var(--ink-primary)]">{rec.subject}</h4>
+                          </div>
+                          <p className="mt-1.5 line-clamp-2 text-[11px] leading-relaxed text-[var(--ink-muted)] md:hidden">{rec.concerns.join(' · ')}</p>
+                        </div>
 
-          {/* ── Other priorities ── */}
-          {otherRecs.length > 0 && (
-            <section>
-              <SectionHeader overline="On the radar" title="Other subjects to watch" rule ruleColor={INK_MUTE} />
-              <div className="mt-3 space-y-2">
-                {otherRecs.map(rec => {
-                  const hex = subjectHex(rec.subject);
-                  return (
-                    <div
-                      key={rec.subject}
-                      className="px-4 py-3"
-                      style={{
-                        background: '#FFFFFF',
-                        border: `1px solid ${INK}14`,
-                        borderRadius: 12,
-                        boxShadow: '0 1px 0 rgba(31,27,23,0.03)',
-                      }}
-                    >
-                      <div className="flex items-center gap-2 flex-wrap">
-                        <span className="w-2.5 h-2.5 rounded-full shrink-0"
-                              style={{ background: hex, border: `1px solid ${INK}33` }} />
-                        <span className="font-serif text-[14px] font-semibold" style={{ color: INK }}>{rec.subject}</span>
-                        <span className="font-sans text-[11px]" style={{ color: INK_MUTE }}>{rec.concerns.join(' · ')}</span>
+                        <div>
+                          <div className="flex items-center justify-between gap-2">
+                            <span className="text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-muted)] md:hidden">Coverage</span>
+                            <span className="font-mono text-xs font-semibold text-[var(--ink-primary)]">{rec.coveragePct === null ? 'Not mapped' : `${rec.coveragePct}%`}</span>
+                          </div>
+                          <div className="mt-2 h-1.5 overflow-hidden bg-[var(--outline-soft)]">
+                            <div className="h-full bg-[var(--ink-primary)]" style={{ width: `${rec.coveragePct ?? 0}%` }} />
+                          </div>
+                        </div>
+
+                        <div className="flex items-center justify-between gap-3 md:block">
+                          <span className="text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-muted)] md:hidden">Grade path</span>
+                          <span className="font-mono text-xs font-semibold text-[var(--ink-primary)]">{rec.latestGrade ?? '—'} → {rec.targetGrade}</span>
+                        </div>
+
+                        <div className="flex items-center justify-between gap-3 md:block">
+                          <span className="text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-muted)] md:hidden">Weekly plan</span>
+                          <span className="font-mono text-xs font-semibold text-[var(--ink-primary)]">{rec.sessionsPerWeek} session{rec.sessionsPerWeek === 1 ? '' : 's'}</span>
+                        </div>
+
+                        <div>
+                          <p className="text-xs leading-relaxed text-[var(--ink-secondary)]">
+                            {rec.action}
+                          </p>
+                        </div>
                       </div>
-                      {rec.action && (
-                        <p className="font-sans text-[12px] mt-1.5 ml-4" style={{ color: INK_SOFT }}>{rec.action}</p>
-                      )}
                       <ExaminerInsightsBlock
                         rec={rec}
                         isOpen={expandedGuidance === rec.subject}
@@ -506,8 +575,9 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
                       />
                     </div>
                   );
-                })}
-              </div>
+                  })}
+                </div>
+              </EditorialCard>
             </section>
           )}
 
@@ -544,7 +614,7 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
             <Target size={36} style={{ color: ACCENT, opacity: 0.7 }} className="mx-auto" />
             <p className="font-serif text-[16px] font-bold" style={{ color: INK }}>No strategic data yet</p>
             <div className="font-sans text-[12px] space-y-1" style={{ color: INK_MUTE }}>
-              <p>Add topics in the <strong>Coverage</strong> tab to track what you've studied.</p>
+              <p>Add topics in the <strong>Subjects</strong> tab to track what you've studied.</p>
               <p>Log test results in the <strong>Trajectory</strong> tab to track your grades.</p>
             </div>
           </div>
@@ -571,7 +641,7 @@ const ExaminerInsightsBlock: React.FC<{
         className="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-full text-[11px] font-semibold transition-colors"
         style={isOpen
           ? { background: accent + '22', color: INK }
-          : { background: 'transparent', color: INK_SOFT, border: `1px solid ${INK}22` }}
+          : { background: 'transparent', color: INK_SOFT, border: `1px solid color-mix(in srgb, var(--ink-primary) 13%, transparent)` }}
       >
         <BookOpen size={12} />
         Examiner insights
@@ -586,7 +656,7 @@ const ExaminerInsightsBlock: React.FC<{
             transition={{ duration: 0.25 }}
             className="overflow-hidden"
           >
-            <div className="mt-3 pt-3 space-y-3" style={{ borderTop: `1px dashed ${INK}22` }}>
+            <div className="mt-3 pt-3 space-y-3" style={{ borderTop: `1px dashed color-mix(in srgb, var(--ink-primary) 13%, transparent)` }}>
               <div>
                 <Overline color={STATUS_SHAKY_DEEP}>Why students struggle here</Overline>
                 <ul className="space-y-1.5 mt-1.5">

@@ -16,6 +16,7 @@ import { getFunctions, httpsCallable } from 'firebase/functions';
 import { type SessionUser, getAvatarUrl, AVATAR_SEEDS } from '../utils/authUtils';
 import { awaitWriteOrTimeout } from '../utils/firestoreWrite';
 import { SCHOOLS } from '../schoolData';
+import { createDevStudentSession } from '../data/devStudent';
 import { LegalModal, type LegalDoc, PRIVACY_POLICY_VERSION, CONSENT_BASIS } from './legal/LegalModal';
 
 // Google Sign-In uses signInWithPopup, which has no real popup to open inside
@@ -723,7 +724,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     && /^(localhost|127\.0\.0\.1|\[::1\])$/.test(window.location.hostname);
   const showDevButton = !Capacitor.isNativePlatform() && isLocalHost;
   const devButton = showDevButton ? (
-    <button onClick={() => handleLoginSuccess({ uid: 'dev-student', name: 'Dev User', avatar: 'Casper', isAdmin: false })} className="mt-6 px-3 py-1 bg-red-600/10 text-red-400 border border-red-600/20 rounded-full text-[9px] font-mono hover:bg-red-600/20 transition-colors">
+    <button onClick={() => handleLoginSuccess(createDevStudentSession())} className="mt-6 px-3 py-1 bg-red-600/10 text-red-400 border border-red-600/20 rounded-full text-[9px] font-mono hover:bg-red-600/20 transition-colors">
       DEV: Skip Login
     </button>
   ) : null;

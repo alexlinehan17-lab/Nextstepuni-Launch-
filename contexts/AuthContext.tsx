@@ -13,6 +13,7 @@ import { generateAutoNotifications } from '../components/gc/gcNotifications';
 import { logError } from '../utils/logError';
 import { getProgressDocument } from '../services/progressRepository';
 import { getUserDocument, mergeUserDocument } from '../services/userRepository';
+import { DEV_STUDENT_UID, createDevStudentLoadedData } from '../data/devStudent';
 
 // ─── Types ──────────────────────────────────────────────────
 
@@ -245,6 +246,9 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   }, []);
 
   const handleLoginSuccess = useCallback((loggedInUser: SessionUser) => {
+    if (loggedInUser.uid === DEV_STUDENT_UID) {
+      setLoadedData(createDevStudentLoadedData());
+    }
     setUser(loggedInUser);
     setUserResolved(true);
   }, []);

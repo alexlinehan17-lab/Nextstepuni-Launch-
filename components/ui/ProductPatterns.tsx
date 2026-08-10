@@ -26,12 +26,12 @@ const statColour = (tone: ResultStat['tone']) => {
 
 export const ResultStatGrid: React.FC<{ items: ResultStat[]; className?: string }> = ({ items, className = '' }) => (
   <div
-    className={className}
+    className={`result-stat-grid ${className}`}
     style={{
-      display: 'grid', gridTemplateColumns: `repeat(${items.length}, minmax(0, 1fr))`,
+      display: 'grid', '--result-stat-count': items.length,
       overflow: 'hidden', border: '1.5px solid var(--outline-soft)', borderRadius: 16,
       background: 'var(--surface-paper)',
-    }}
+    } as React.CSSProperties}
   >
     {items.map((item, index) => (
       <div
@@ -49,7 +49,8 @@ export const ResultStatGrid: React.FC<{ items: ResultStat[]; className?: string 
           {item.value}
         </strong>
         <span style={{
-          display: 'block', marginTop: 5, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap',
+          display: 'flex', minHeight: '2.8em', alignItems: 'flex-start', justifyContent: 'center',
+          marginTop: 5, whiteSpace: 'normal', overflowWrap: 'anywhere',
           font: `700 9px/1.4 ${SANS}`, letterSpacing: '.1em', textTransform: 'uppercase', color: 'var(--ink-muted)',
         }}>
           {item.label}

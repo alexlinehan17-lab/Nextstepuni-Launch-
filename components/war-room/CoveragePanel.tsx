@@ -161,8 +161,11 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMastery, d
     <div className="space-y-7">
       {/* ── Subject chips ── */}
       <section>
-        <SectionHeader overline="The map" title="Subject coverage" rule />
-        <div className="mt-4 flex flex-wrap gap-2">
+        <SectionHeader overline="Subject workspace" title="Coverage and confidence" rule={false} />
+        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-[var(--ink-secondary)]">
+          Choose a subject, then mark each topic honestly. The overview below turns those checks into a usable coverage signal.
+        </p>
+        <div className="mt-4 flex flex-wrap gap-2" aria-label="Choose a subject">
           {subjects.map((s, sIdx) => {
             const rawHex = getDistinctSubjectHex(s.subjectName, sIdx);
             const hex = mutedSubjectHex(rawHex, 0.22);
@@ -173,10 +176,11 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMastery, d
               <button
                 key={s.subjectName}
                 onClick={() => setSelectedSubject(s.subjectName)}
-                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-[12px] font-semibold transition-colors"
+                aria-pressed={isActive}
+                className="inline-flex min-h-10 items-center gap-2 rounded-xl px-3 py-1.5 text-[12px] font-semibold transition-colors"
                 style={isActive
-                  ? { background: '#fff', color: INK, border: `1.5px solid ${INK}` }
-                  : { background: '#fff', color: INK_SOFT, border: `1px solid ${INK}1A` }}
+                  ? { background: 'var(--surface-paper)', color: INK, border: '1.5px solid var(--outline-strong)' }
+                  : { background: 'var(--surface-paper)', color: INK_SOFT, border: '1px solid var(--outline-soft)' }}
               >
                 <span className="w-2 h-2 rounded-full shrink-0"
                       style={{ background: hex }} />
@@ -192,7 +196,7 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMastery, d
         {curriculumSpecification?.selectionRules?.length ? (
           <div
             className="mt-4 rounded-2xl px-4 py-3 text-sm leading-6"
-            style={{ border: `1.5px solid ${INK}`, background: PAPER, color: INK_SOFT }}
+            style={{ border: '1.5px solid var(--outline-strong)', background: PAPER, color: INK_SOFT }}
           >
             <span className="font-semibold" style={{ color: INK }}>How this subject is selected: </span>
             {curriculumSpecification.selectionRules.map((rule) => rule.description).join(' ')}
@@ -262,8 +266,8 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMastery, d
                   tabIndex={0}
                   className="group relative px-3.5 py-3 cursor-pointer transition-all"
                   style={{
-                    background: '#FFFFFF',
-                    border: `1px solid ${INK}14`,
+                    background: 'var(--surface-paper)',
+                    border: '1px solid var(--outline-soft)',
                     borderRadius: 12,
                     boxShadow: '0 1px 0 rgba(31,27,23,0.03), 0 4px 12px rgba(31,27,23,0.04)',
                     opacity: isNotStarted ? 0.78 : 1,
@@ -331,7 +335,7 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMastery, d
             <button
               onClick={() => addSyllabusTopics(sortedUnaddedSyllabus)}
               className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg text-[11px] font-semibold transition-colors"
-              style={{ border: `1px dashed ${INK}33`, color: INK_MUTE, background: 'transparent' }}
+              style={{ border: `1px dashed color-mix(in srgb, var(--ink-primary) 20%, transparent)`, color: INK_MUTE, background: 'transparent' }}
             >
               <Plus size={11} />
               Add {sortedUnaddedSyllabus.length} remaining syllabus topic{sortedUnaddedSyllabus.length > 1 ? 's' : ''}
@@ -392,8 +396,8 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMastery, d
                       onClick={() => addSyllabusTopics([name])}
                       className="flex items-start gap-2 p-3 transition-all text-left"
                       style={{
-                        background: '#FFFFFF',
-                        border: `1px dashed ${INK}33`,
+                        background: 'var(--surface-paper)',
+                        border: '1px dashed var(--outline-soft)',
                         borderRadius: 10,
                       }}
                     >
@@ -436,7 +440,7 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMastery, d
       {/* ── All-subjects overview ── */}
       {allSubjectStats.some(s => s.total > 0) && (
         <section>
-          <SectionHeader overline="The wider field" title="All subjects overview" rule />
+          <SectionHeader overline="Across your profile" title="All subjects" rule={false} />
           <div className="mt-3">
             <EditorialCard tone="soft">
               <div className="space-y-2">
@@ -451,12 +455,12 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMastery, d
                     <div
                       key={s.subjectName}
                       className="pb-2"
-                      style={isLast ? undefined : { borderBottom: `1px solid ${INK}10` }}
+                      style={isLast ? undefined : { borderBottom: `1px solid color-mix(in srgb, var(--ink-primary) 6%, transparent)` }}
                     >
                       <div className="flex items-center justify-between mb-1">
                         <div className="flex items-center gap-2">
                           <span className="w-3 h-3 rounded-full shrink-0"
-                                style={{ background: hex, border: `1px solid ${INK}33` }} />
+                                style={{ background: hex, border: `1px solid color-mix(in srgb, var(--ink-primary) 20%, transparent)` }} />
                           <span className="font-serif text-[14px] font-semibold" style={{ color: INK }}>
                             {s.subjectName}
                           </span>
@@ -467,7 +471,7 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMastery, d
                       </div>
                       {/* Refined segmented bar — proportional, soft fills */}
                       <div className="ml-5 flex gap-[2px] overflow-hidden rounded-full"
-                           style={{ height: 5, background: `${INK}10` }}>
+                           style={{ height: 5, background: `color-mix(in srgb, var(--ink-primary) 6%, transparent)` }}>
                         {subjectTopics.map(t => {
                           const conf = CONFIDENCE_HEX[t.confidence];
                           return (

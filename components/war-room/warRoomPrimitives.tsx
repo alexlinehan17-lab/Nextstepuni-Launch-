@@ -60,13 +60,7 @@ export const SketchedHorizon: React.FC<{ width?: number; height?: number; color?
 
 // Decorative dashed paper-rule used for section dividers.
 export const PaperRule: React.FC<{ className?: string }> = ({ className = '' }) => (
-  <div className={`w-full h-px ${className}`} aria-hidden style={{
-    backgroundImage: `radial-gradient(circle, ${INK_MUTE} 0.9px, transparent 1px)`,
-    backgroundSize: '6px 1px',
-    backgroundRepeat: 'repeat-x',
-    backgroundPosition: 'center',
-    opacity: 0.55,
-  }} />
+  <div className={`h-px w-full bg-[var(--outline-soft)] ${className}`} aria-hidden />
 );
 
 // ── Editorial primitives ───────────────────────────────────
@@ -83,29 +77,20 @@ export const SectionHeader: React.FC<{
   ruleColor?: string;
   trailing?: React.ReactNode;
   className?: string;
-}> = ({ overline, title, rule = true, ruleColor: _ruleColor = ACCENT, trailing, className = '' }) => (
+}> = ({ overline, title, rule = true, ruleColor = ACCENT, trailing, className = '' }) => (
   <div className={`flex items-end justify-between gap-3 ${className}`}>
     <div>
       {overline && <Overline className="mb-1.5">{overline}</Overline>}
       <div className="flex items-center gap-3">
         <h3 className="font-serif text-[20px] sm:text-[22px] font-bold leading-tight" style={{ color: INK }}>{title}</h3>
-        {rule && (
-          <img
-            src="/assets/war-room-rule.png"
-            alt=""
-            aria-hidden
-            style={{ width: 96, height: 'auto', objectFit: 'contain', flexShrink: 0 }}
-          />
-        )}
+        {rule && <span className="hidden h-px w-20 sm:block" aria-hidden style={{ background: ruleColor, opacity: 0.65 }} />}
       </div>
     </div>
     {trailing && <div className="shrink-0">{trailing}</div>}
   </div>
 );
 
-// EditorialCard — white surface with thin charcoal border and faint shadow.
-// Default is white across the War Room. The `tone` prop is kept for API compatibility
-// but all variants resolve to white; pass an explicit `style.background` to override.
+// Compatibility wrapper over the shared outlined product surface.
 export const EditorialCard: React.FC<{
   children: React.ReactNode;
   className?: string;
@@ -117,10 +102,10 @@ export const EditorialCard: React.FC<{
     <div
       className={`${padded ? 'p-5 sm:p-6' : ''} ${className}`}
       style={{
-        background: '#FFFFFF',
-        border: `1px solid ${INK}14`,
-        borderRadius: 14,
-        boxShadow: '0 1px 0 rgba(31,27,23,0.03), 0 6px 20px rgba(31,27,23,0.04)',
+        background: 'var(--surface-paper)',
+        border: '1px solid var(--outline-soft)',
+        borderRadius: 16,
+        boxShadow: '0 12px 28px rgba(38,32,27,.045)',
         ...style,
       }}
     >
@@ -131,7 +116,7 @@ export const EditorialCard: React.FC<{
 
 // MutedProgress — soft progress rail used in tables, briefings, coverage.
 export const MutedProgress: React.FC<{ value: number; color?: string; height?: number }> = ({ value, color = ACCENT, height = 6 }) => (
-  <div className="w-full overflow-hidden" style={{ height, borderRadius: 999, background: `${INK}10` }}>
+  <div className="w-full overflow-hidden" style={{ height, borderRadius: 999, background: 'var(--surface-soft)' }}>
     <div
       className="h-full transition-all"
       style={{
@@ -150,7 +135,7 @@ export const Pill: React.FC<{
   fg?: string;
   border?: string;
   className?: string;
-}> = ({ children, bg = `${INK}10`, fg = INK_SOFT, border, className = '' }) => (
+}> = ({ children, bg = `color-mix(in srgb, var(--ink-primary) 6%, transparent)`, fg = INK_SOFT, border, className = '' }) => (
   <span
     className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-semibold ${className}`}
     style={{
@@ -167,37 +152,38 @@ export const Pill: React.FC<{
 // ConfidenceDot — small filled circle used to mark topic status.
 export const ConfidenceDot: React.FC<{ confidence: 'solid' | 'shaky' | 'not-started'; size?: number }> = ({ confidence, size = 10 }) => {
   const fill = confidence === 'solid' ? '#5E8B7E' : confidence === 'shaky' ? '#B8843D' : '#C4BEB3';
-  return <span className="inline-block shrink-0" style={{ width: size, height: size, borderRadius: '50%', background: fill, border: `1px solid ${INK}33` }} />;
+  return <span className="inline-block shrink-0" style={{ width: size, height: size, borderRadius: '50%', background: fill, border: `1px solid color-mix(in srgb, var(--ink-primary) 20%, transparent)` }} />;
 };
 
 // TextField / Select — muted paper inputs.
 export const fieldClass =
-  `w-full px-3 py-2 rounded-lg outline-none focus:ring-2 focus:ring-[rgba(204,120,92,0.25)] text-[13px]`;
+  `product-field w-full px-3 py-2 text-[13px]`;
 
 export const fieldStyle: React.CSSProperties = {
-  background: '#FFFFFF',
-  border: `1px solid ${INK}1A`,
+  background: 'var(--surface-paper)',
+  border: '1.5px solid var(--outline-soft)',
   color: INK,
 };
 
 // Subtle accent button — refined CTA used across panels.
 export const accentButtonClass =
-  `inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-full font-semibold text-[13px] transition-all`;
+  `inline-flex min-h-11 items-center justify-center gap-1.5 rounded-xl px-4 py-2 font-semibold text-[13px] transition-all`;
 
 export const accentButtonStyle: React.CSSProperties = {
-  background: INK,
-  color: PAPER,
+  background: ACCENT,
+  color: '#FFFFFF',
+  border: '1.5px solid var(--outline-strong)',
   letterSpacing: '0.02em',
   boxShadow: '0 2px 0 rgba(31,27,23,0.18)',
 };
 
 export const ghostButtonClass =
-  `inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[12px] font-semibold transition-colors`;
+  `inline-flex min-h-10 items-center gap-1.5 rounded-xl px-3 py-1.5 text-[12px] font-semibold transition-colors`;
 
 export const ghostButtonStyle: React.CSSProperties = {
   background: 'transparent',
   color: INK_SOFT,
-  border: `1px solid ${INK}22`,
+  border: '1px solid var(--outline-soft)',
 };
 
 // Re-export tokens for one-stop import.

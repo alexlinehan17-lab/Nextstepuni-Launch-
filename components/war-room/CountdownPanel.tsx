@@ -4,22 +4,16 @@
  */
 
 import React, { useMemo } from 'react';
-import { motion } from 'framer-motion';
-
+import { CalendarDays, Clock3 } from 'lucide-react';
 import { type StudentSubjectProfile } from '../subjectData';
 import { getDistinctSubjectHex } from '../../studySessionData';
+import { type CAOCourse } from '../futureFinderData';
 import {
-  type MockResult, gradeToPoints,
-  INK, INK_SOFT, INK_MUTE, INK_FAINT, ACCENT,
-  STATUS_GAP_DEEP, STATUS_GAP_TINT, STATUS_SOLID_DEEP, STATUS_SOLID_TINT,
+  type MockResult,
+  gradeToPoints,
   mutedSubjectHex,
 } from './warRoomShared';
-import {
-  Overline, SectionHeader, EditorialCard, MutedProgress, Pill,
-} from './warRoomPrimitives';
-import { type CAOCourse } from '../futureFinderData';
-
-// ── Panel 0: Countdown & Time Budget ───────────────────────
+import { EditorialCard, MutedProgress, Overline, Pill, SectionHeader } from './warRoomPrimitives';
 
 interface CountdownPanelProps {
   daysUntilExam: number;
@@ -34,180 +28,138 @@ interface CountdownPanelProps {
 }
 
 const CountdownPanel: React.FC<CountdownPanelProps> = ({
-  daysUntilExam, subjects, allocations, weeksUntilExam, hoursStudiedMap, blockDuration,
-  mockResults, targetCourse, currentPoints,
+  daysUntilExam,
+  subjects,
+  allocations,
+  weeksUntilExam,
+  hoursStudiedMap,
+  blockDuration,
+  mockResults,
+  targetCourse,
+  currentPoints,
 }) => {
   const latestGradeMap = useMemo(() => {
     const map: Record<string, string> = {};
-    const sorted = [...mockResults].filter(r => r.grade && r.date)
-      .sort((a, b) => (a.date ?? '').localeCompare(b.date ?? ''));
-    for (const r of sorted) map[r.subject] = r.grade;
+    const sorted = [...mockResults]
+      .filter(result => result.grade && result.date)
+      .sort((a, b) => a.date.localeCompare(b.date));
+    for (const result of sorted) map[result.subject] = result.grade;
     return map;
   }, [mockResults]);
 
-  const subjectBudgets = useMemo(() => {
-    return subjects.map(s => {
-      const alloc = allocations.find(a => a.subjectName === s.subjectName);
-      const sessionsPerWeek = alloc?.sessions ?? 1;
-      const hoursRemaining = (sessionsPerWeek * weeksUntilExam * blockDuration) / 60;
-      const hoursStudied = hoursStudiedMap[s.subjectName] || 0;
-      const totalHours = hoursStudied + hoursRemaining;
-      const pct = totalHours > 0 ? Math.min(100, Math.round((hoursStudied / totalHours) * 100)) : 0;
-      const latestGrade = latestGradeMap[s.subjectName];
-      const targetPts = gradeToPoints(s.targetGrade);
-      const currentPts = latestGrade ? gradeToPoints(latestGrade) : gradeToPoints(s.currentGrade);
-      const gap = targetPts - currentPts;
-      return {
-        subjectName: s.subjectName, hoursStudied, hoursRemaining, totalHours, pct,
-        latestGrade: latestGrade || s.currentGrade, targetGrade: s.targetGrade, gap, sessionsPerWeek,
-      };
-    });
-  }, [subjects, allocations, weeksUntilExam, hoursStudiedMap, blockDuration, latestGradeMap]);
+  const subjectBudgets = useMemo(() => subjects.map((subject, index) => {
+    const sessionsPerWeek = allocations.find(item => item.subjectName === subject.subjectName)?.sessions ?? 1;
+    const hoursRemaining = (sessionsPerWeek * weeksUntilExam * blockDuration) / 60;
+    const hoursStudied = hoursStudiedMap[subject.subjectName] || 0;
+    const plannedHours = hoursStudied + hoursRemaining;
+    const progress = plannedHours > 0 ? Math.min(100, Math.round((hoursStudied / plannedHours) * 100)) : 0;
+    const latestGrade = latestGradeMap[subject.subjectName] || subject.currentGrade;
+    const gap = gradeToPoints(subject.targetGrade) - gradeToPoints(latestGrade);
+    return {
+      ...subject,
+      sessionsPerWeek,
+      hoursRemaining,
+      hoursStudied,
+      plannedHours,
+      progress,
+      latestGrade,
+      gap,
+      color: mutedSubjectHex(getDistinctSubjectHex(subject.subjectName, index), 0.14),
+    };
+  }).sort((a, b) => b.gap - a.gap), [allocations, blockDuration, hoursStudiedMap, latestGradeMap, subjects, weeksUntilExam]);
 
-  const totalStudied = subjectBudgets.reduce((sum, s) => sum + s.hoursStudied, 0);
-  const totalRemaining = subjectBudgets.reduce((sum, s) => sum + s.hoursRemaining, 0);
+  const weeklySessions = subjectBudgets.reduce((total, subject) => total + subject.sessionsPerWeek, 0);
+  const weeklyHours = weeklySessions * blockDuration / 60;
+  const totalRemaining = subjectBudgets.reduce((total, subject) => total + subject.hoursRemaining, 0);
 
   return (
-    <div className="space-y-6">
-      {/* ── Editorial countdown hero ── */}
-      <EditorialCard tone="paper" padded={false}>
-        <div className="grid md:grid-cols-[1fr,1.1fr] gap-0">
-          {/* Left: large number + meta lines */}
-          <div className="px-6 sm:px-8 py-7 sm:py-8 flex flex-col justify-center">
-            <Overline color={ACCENT}>The countdown</Overline>
-            <motion.p
-              className="font-serif font-bold tabular-nums mt-2"
-              initial={{ opacity: 0, y: 6 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-              style={{
-                color: INK,
-                fontSize: 'clamp(80px, 14vw, 132px)',
-                letterSpacing: '-0.04em',
-                lineHeight: 0.95,
-              }}
-            >
-              {daysUntilExam}
-            </motion.p>
-            <p className="font-serif text-[18px] mt-1" style={{ color: INK_SOFT }}>
-              days until exams
-            </p>
-
-            {/* Refined meta line */}
-            <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-1">
-              <span className="font-mono text-[12px]" style={{ color: INK_MUTE }}>
-                {weeksUntilExam} weeks of study
-              </span>
-              <span className="font-mono text-[12px]" style={{ color: INK_FAINT }}>·</span>
-              <span className="font-mono text-[12px]" style={{ color: INK_MUTE }}>
-                ~{Math.round(totalRemaining)}h remaining
-              </span>
-              <span className="font-mono text-[12px]" style={{ color: INK_FAINT }}>·</span>
-              <span className="font-mono text-[12px]" style={{ color: INK_MUTE }}>
-                {Math.round(totalStudied)}h studied
-              </span>
+    <div className="space-y-8">
+      <section className="grid gap-4 md:grid-cols-[1.15fr_.85fr]">
+        <EditorialCard className="flex min-h-[190px] flex-col justify-between" style={{ border: '1.5px solid var(--outline-strong)' }}>
+          <div className="flex items-start justify-between gap-5">
+            <div>
+              <Overline>Exam runway</Overline>
+              <p className="mt-3 font-serif text-[52px] font-semibold leading-none tracking-[-.04em] text-[var(--ink-primary)] tabular-nums sm:text-[64px]">
+                {daysUntilExam}
+              </p>
+              <p className="mt-2 text-sm text-[var(--ink-secondary)]">days until your first exam</p>
             </div>
+            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#FDEEDF] text-[#A43F08]" aria-hidden="true">
+              <CalendarDays size={23} />
+            </span>
           </div>
+          <p className="mt-6 border-t border-[var(--outline-soft)] pt-4 text-xs leading-relaxed text-[var(--ink-muted)]">
+            {weeksUntilExam} study weeks remain. At the current allocation, that creates about {Math.round(totalRemaining)} focused hours.
+          </p>
+        </EditorialCard>
 
-          {/* Right: hand-drawn calendar → checklist illustration */}
-          <div className="hidden md:flex items-center justify-end pr-4 sm:pr-6">
-            <img
-              src="/assets/war-room-countdown.png"
-              alt=""
-              aria-hidden
-              style={{
-                width: '100%',
-                height: '100%',
-                maxHeight: 280,
-                objectFit: 'contain',
-                objectPosition: 'right center',
-              }}
-            />
-          </div>
-        </div>
-      </EditorialCard>
-
-      {/* ── Target Course banner ── */}
-      {targetCourse && currentPoints !== undefined && (() => {
-        const onTarget = currentPoints >= targetCourse.typicalPoints;
-        return (
-          <EditorialCard tone="soft">
+        <EditorialCard className="flex min-h-[190px] flex-col justify-between">
+          <div>
             <div className="flex items-center justify-between gap-4">
-              <div className="min-w-0">
-                <Overline>Target course</Overline>
-                <p className="font-serif text-[17px] font-bold mt-1 truncate" style={{ color: INK }}>
-                  {targetCourse.title}
-                </p>
-                <p className="font-sans text-[12px] mt-0.5" style={{ color: INK_MUTE }}>
-                  {targetCourse.institution} · {targetCourse.typicalPoints} pts required
-                </p>
+              <Overline>Weekly capacity</Overline>
+              <Clock3 size={18} className="text-[var(--ink-muted)]" aria-hidden="true" />
+            </div>
+            <p className="mt-4 font-serif text-[34px] font-semibold leading-none text-[var(--ink-primary)]">
+              {weeklySessions} sessions
+            </p>
+            <p className="mt-2 text-sm text-[var(--ink-secondary)]">
+              approximately {weeklyHours.toFixed(weeklyHours < 10 ? 1 : 0)} hours each week
+            </p>
+          </div>
+          <div className="mt-6 grid grid-cols-2 gap-3 border-t border-[var(--outline-soft)] pt-4 text-xs">
+            <div><span className="block font-semibold text-[var(--ink-primary)]">{blockDuration} min</span><span className="text-[var(--ink-muted)]">per session</span></div>
+            <div><span className="block font-semibold text-[var(--ink-primary)]">{subjects.length}</span><span className="text-[var(--ink-muted)]">subjects covered</span></div>
+          </div>
+        </EditorialCard>
+      </section>
+
+      {targetCourse && currentPoints !== undefined && (
+        <section>
+          <SectionHeader overline="Course target" title={targetCourse.title} rule={false} />
+          <div className="mt-3 flex flex-col gap-3 border-y border-[var(--outline-soft)] py-4 sm:flex-row sm:items-center sm:justify-between">
+            <p className="text-sm text-[var(--ink-secondary)]">
+              {targetCourse.institution} · {targetCourse.typicalPoints} points typically required
+            </p>
+            {currentPoints >= targetCourse.typicalPoints
+              ? <Pill bg="#E8F2EC" fg="#1F5F3E">On target</Pill>
+              : <Pill bg="#FDEEDF" fg="#A43F08">{targetCourse.typicalPoints - currentPoints} point gap</Pill>}
+          </div>
+        </section>
+      )}
+
+      <section>
+        <SectionHeader
+          overline="Weekly allocation"
+          title="Where the time goes"
+          rule={false}
+          trailing={<span className="text-xs text-[var(--ink-muted)]">Highest grade gap first</span>}
+        />
+        <EditorialCard padded={false} className="mt-4 overflow-hidden">
+          <div className="hidden grid-cols-[minmax(150px,1fr)_90px_90px_minmax(160px,1fr)] gap-4 border-b border-[var(--outline-soft)] px-5 py-3 text-[10px] font-bold uppercase tracking-[.14em] text-[var(--ink-muted)] sm:grid">
+            <span>Subject</span><span>Grade</span><span>Per week</span><span>Planned runway</span>
+          </div>
+          {subjectBudgets.map((subject, index) => (
+            <div
+              key={subject.subjectName}
+              className="grid gap-3 px-5 py-4 sm:grid-cols-[minmax(150px,1fr)_90px_90px_minmax(160px,1fr)] sm:items-center sm:gap-4"
+              style={{ borderTop: index ? '1px solid var(--outline-soft)' : undefined }}
+            >
+              <div className="flex min-w-0 items-center gap-3">
+                <span className="h-2.5 w-2.5 shrink-0 rounded-full" style={{ background: subject.color }} aria-hidden="true" />
+                <span className="truncate font-serif text-[15px] font-semibold text-[var(--ink-primary)]">{subject.subjectName}</span>
               </div>
-              <div className="text-right shrink-0">
-                {onTarget ? (
-                  <Pill bg={STATUS_SOLID_TINT} fg={STATUS_SOLID_DEEP}>On target</Pill>
-                ) : (
-                  <Pill bg={STATUS_GAP_TINT} fg={STATUS_GAP_DEEP}>{targetCourse.typicalPoints - currentPoints}pt gap</Pill>
-                )}
+              <span className="font-mono text-xs text-[var(--ink-secondary)]">{subject.latestGrade} → {subject.targetGrade}</span>
+              <span className="text-xs font-semibold text-[var(--ink-primary)]">{subject.sessionsPerWeek} session{subject.sessionsPerWeek === 1 ? '' : 's'}</span>
+              <div>
+                <div className="mb-1.5 flex items-center justify-between gap-3 font-mono text-[10px] text-[var(--ink-muted)]">
+                  <span>{Math.round(subject.hoursStudied)}h done</span>
+                  <span>{Math.round(subject.hoursRemaining)}h ahead</span>
+                </div>
+                <MutedProgress value={subject.progress} color={subject.color} height={5} />
               </div>
             </div>
-          </EditorialCard>
-        );
-      })()}
-
-      {/* ── Subject status table ── */}
-      <section>
-        <SectionHeader overline="The slate" title="Subject status" rule />
-        <div className="mt-3">
-          <EditorialCard tone="soft" padded={false}>
-            {[...subjectBudgets].sort((a, b) => b.gap - a.gap).map((s, sIdx) => {
-              const idx = subjects.findIndex(sub => sub.subjectName === s.subjectName);
-              const rawHex = getDistinctSubjectHex(s.subjectName, idx >= 0 ? idx : sIdx);
-              const hex = mutedSubjectHex(rawHex, 0.22);
-              const isLast = sIdx === subjectBudgets.length - 1;
-              const onTarget = s.gap <= 0;
-              return (
-                <div
-                  key={s.subjectName}
-                  className="px-5 py-2"
-                  style={{
-                    borderBottom: isLast ? 'none' : `1px solid ${INK}10`,
-                  }}
-                >
-                  <div className="flex items-center gap-3">
-                    {/* refined subject marker — outlined dot */}
-                    <span
-                      className="shrink-0"
-                      style={{
-                        width: 12, height: 12, borderRadius: '50%',
-                        background: hex,
-                        border: `1px solid ${INK}33`,
-                      }}
-                    />
-                    <span className="font-serif text-[15px] font-semibold flex-1 min-w-0 truncate"
-                          style={{ color: INK }}>
-                      {s.subjectName}
-                    </span>
-                    <span className="font-mono text-[11px] tabular-nums hidden sm:inline" style={{ color: INK_MUTE }}>
-                      {s.latestGrade} → {s.targetGrade}
-                    </span>
-                    {onTarget
-                      ? <Pill bg={STATUS_SOLID_TINT} fg={STATUS_SOLID_DEEP}>On target</Pill>
-                      : <Pill bg={STATUS_GAP_TINT} fg={STATUS_GAP_DEEP}>{s.gap}pt gap</Pill>}
-                  </div>
-
-                  <div className="flex items-center gap-3 mt-1 ml-[24px]">
-                    <div className="flex-1">
-                      <MutedProgress value={s.pct} color={hex} height={4} />
-                    </div>
-                    <span className="font-mono text-[10px] tabular-nums shrink-0" style={{ color: INK_FAINT }}>
-                      {Math.round(s.hoursStudied)}h / {Math.round(s.totalHours)}h
-                    </span>
-                  </div>
-                </div>
-              );
-            })}
-          </EditorialCard>
-        </div>
+          ))}
+        </EditorialCard>
       </section>
     </div>
   );

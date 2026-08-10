@@ -20,6 +20,7 @@ const DEFAULT_SETTINGS: UserSettings = {
   darkMode: false,
   cardStyle: 'default',
   defaultWorkMinutes: 25,
+  showDashboard: false,
 };
 
 function readLocalSettings(): Partial<UserSettings> {

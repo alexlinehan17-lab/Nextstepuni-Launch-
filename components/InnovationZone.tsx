@@ -68,11 +68,9 @@ import { isActiveSeniorYear, isLcaYear } from '../utils/authUtils';
 // auto ToolHeader) lives in one place so the launchpad grid and the
 // active-tool header use identical metadata.
 //
-// `showHeader: false` for tools whose own immersive entry visual makes a
-// stacked ToolHeader feel redundant — War Room (red countdown hero) and
-// Academic Journey Simulator (full-screen scene-based game). Those tools
-// still get the new tile + icon style in the launchpad grid; the auto
-// ToolHeader just doesn't render once the tool is open.
+// `showHeader: false` is reserved for genuinely task-dense workspaces where
+// repeated chrome costs useful working space. Narrative and strategic tools
+// keep the shared header so they remain recognisably part of Launchpad.
 
 interface ToolChrome {
   themeColor: string;
@@ -86,15 +84,15 @@ interface ToolChrome {
  * reading column. `max-w-4xl` yields 848px of usable width, which is right for a
  * page of prose and wrong for a two-pane workspace.
  */
-const WIDE_TOOLS = new Set(['mark-bank', 'your-possible-life']);
+const WIDE_TOOLS = new Set(['mark-bank', 'your-possible-life', 'war-room']);
 
 const TOOL_CHROME: Record<string, ToolChrome> = {
-  'journey':         { themeColor: '#8B82B8', eyebrow: 'Track · Simulator',           subtitle: 'Navigate the choices of your final school year. Test-drive your future.',         showHeader: false },
+  'journey':         { themeColor: '#8B82B8', eyebrow: 'Track · Simulator',           subtitle: 'Navigate the choices of your final school year, then turn the outcome into a practical next step.', showHeader: true },
   // Compatibility alias for old links. It now opens Points Passport directly
   // on Grade Planner, so students see one points product rather than two.
   'cao-simulator':   { themeColor: '#B8A079', eyebrow: 'Track · Points planning',      subtitle: 'Your points, mock history, grade plans and course reach in one place.',             showHeader: true  },
   'planner':         { themeColor: '#7DA37A', eyebrow: 'Plan · Planner',              subtitle: 'A data-driven study planner powered by your subject goals.',                       showHeader: true  },
-  'war-room':        { themeColor: '#D85F47', eyebrow: 'Plan · Strategy',             subtitle: 'Where the strategy gets made. Map the syllabus, allocate the hours, plan the attack.', showHeader: false },
+  'war-room':        { themeColor: '#F26B1F', eyebrow: 'Plan · Strategy',             subtitle: 'Know what needs attention, understand why, and decide what to do next.', showHeader: true },
   'comeback':        { themeColor: '#E08938', eyebrow: 'Plan · Comeback',             subtitle: 'Find your quickest wins and build a comeback plan.',                                showHeader: true  },
   'future-finder':   { themeColor: '#C76489', eyebrow: 'Understand · Career discovery', subtitle: 'Discover the courses, careers, and possible lives that fit who you are.',         showHeader: true  },
   'future-finder-revamped': { themeColor: '#C76489', eyebrow: 'Understand · Interests (RIASEC)', subtitle: 'Discover the courses, careers and lives that fit who you are — your interests matched to CAO courses, points kept honest.', showHeader: true },
@@ -124,6 +122,9 @@ interface InnovationZoneProps {
   onBack: () => void;
   onSelectModule?: (moduleId: string) => void;
   user?: { uid: string; school?: string; yearGroup?: YearGroup; curriculumLevel?: 'junior' | 'senior' } | null;
+  /** Profile already loaded by ProgressContext. It unlocks tools immediately
+   *  and is the fallback when the local-only dev session cannot read Firestore. */
+  initialSubjectProfile?: StudentSubjectProfile | null;
   savedJourneyResult?: JourneyResult | null;
   onJourneyComplete?: (result: JourneyResult) => void;
   settings: UserSettings;
@@ -157,7 +158,7 @@ const ToolLoadingFallback: React.FC = () => <LoadingSpinner />;
 
 // ─── InnovationZone ──────────────────────────────────────────────────────────
 
-const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule, user, savedJourneyResult, onJourneyComplete, settings: _settings, updateSetting: _updateSetting, onCosmeticUnlocksChange, onStudyNow, dismissedGuides: _dismissedGuides, onDismissGuide: _onDismissGuide }) => {
+const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule, user, initialSubjectProfile, savedJourneyResult, onJourneyComplete, settings: _settings, updateSetting: _updateSetting, onCosmeticUnlocksChange, onStudyNow, dismissedGuides: _dismissedGuides, onDismissGuide: _onDismissGuide }) => {
     const { showToast } = useToast();
     const nav = useNavigation();
     const activeTool = nav.state.activeTool;
@@ -167,9 +168,11 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     useEffect(() => {
         if (activeTool === 'career-paths') setActiveTool('your-possible-life');
     }, [activeTool, setActiveTool]);
-    const [subjectProfile, setSubjectProfile] = useState<StudentSubjectProfile | null>(null);
+    const [subjectProfile, setSubjectProfile] = useState<StudentSubjectProfile | null>(() => (
+        initialSubjectProfile ? { restDays: [], ...initialSubjectProfile } : null
+    ));
     const [showOnboarding, setShowOnboarding] = useState(false);
-    const [profileLoaded, setProfileLoaded] = useState(false);
+    const [profileLoaded, setProfileLoaded] = useState(Boolean(initialSubjectProfile));
     const [pendingToolId, setPendingToolId] = useState<string | null>(null);
     const [timetableCompletions, setTimetableCompletions] = useState<TimetableCompletions>({});
     const [timetableStreak, setTimetableStreak] = useState<TimetableStreak>({ currentStreak: 0, lastActiveDate: '', longestStreak: 0 });
@@ -218,7 +221,16 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     const hidePointsPanel = useCallback(() => setShowPointsPanel(false), []);
     const togglePointsPanel = useCallback(() => setShowPointsPanel(v => !v), []);
 
-    // Load subject profile from Firebase
+    // ProgressContext is the immediate source of truth. This also makes the
+    // local dev account fully usable: its reserved uid has no Firebase token,
+    // so the refresh below is expected to be rejected by security rules.
+    useEffect(() => {
+        if (!initialSubjectProfile) return;
+        setSubjectProfile({ restDays: [], ...initialSubjectProfile });
+        setProfileLoaded(true);
+    }, [initialSubjectProfile]);
+
+    // Refresh the subject profile and supporting Launchpad data from Firebase.
     useEffect(() => {
         if (!user?.uid) { setProfileLoaded(true); return; }
         let cancelled = false;

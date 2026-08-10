@@ -3,11 +3,11 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState, useMemo, useEffect, useCallback } from 'react';
-import { MotionDiv } from './Motion';
+import React, { useState, useMemo, useEffect, useCallback, useRef } from 'react';
+import { AnimatePresence, MotionDiv, MotionSpan, useReducedMotion } from './Motion';
 import {
   ArrowRight,
-  User, Home, PanelLeft, Award, BookOpen, CalendarRange, Settings, LogOut, Sun, Moon, RefreshCw, Timer, Dumbbell, Bell, MessageSquare, HelpCircle
+  User, Home, PanelLeft, PanelTopClose, PanelTopOpen, Award, BookOpen, CalendarRange, Settings, LogOut, Sun, Moon, RefreshCw, Timer, Dumbbell, Bell, MessageSquare, HelpCircle
 } from 'lucide-react';
 import SiteGuide, { type GuideAction } from './SiteGuide';
 import FirstVisitCoachMarks, { coachMarksSeen } from './FirstVisitCoachMarks';
@@ -81,12 +81,16 @@ interface KnowledgeTreeProps {
 export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: _onSelectCategory, onGoToModules, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, onGoToInsights: _onGoToInsights, onGoToTrainingHub, onGoToAccreditation, onGoToYearPlans, allCourses, onSelectModule, categoryTitles: _categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes: _unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction, onOpenTool, uid }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [feedbackQrOpen, setFeedbackQrOpen] = useState(false);
+  const reduceMotion = useReducedMotion();
+  const dashboardVisible = settings.showDashboard === true;
+  const dashboardRef = useRef<HTMLDivElement | null>(null);
+  const dashboardRevealRequested = useRef(false);
   // Site Guide (the "?") + one-time first-visit coach marks.
   const [guideOpen, setGuideOpen] = useState(false);
   const [coachActive, setCoachActive] = useState(false);
   // "What's new" popover + its unseen-dot state.
 
-  // Start the spotlight after the automatically loaded dashboard has painted.
+  // Start the spotlight once the home screen has painted.
   // This also re-evaluates when auth supplies the stable account uid instead
   // of accidentally binding the one-time tour to the anonymous key.
   useEffect(() => {
@@ -107,6 +111,35 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
       if (timer) clearTimeout(timer);
     };
   }, [uid]);
+
+  // Keep the newly revealed panel in view. Without this, browser scroll
+  // anchoring can hold the module grid in place while the dashboard opens
+  // above it, making a successful toggle look as though nothing happened.
+  useEffect(() => {
+    if (!dashboardVisible || !dashboardRevealRequested.current) return;
+    dashboardRevealRequested.current = false;
+
+    let secondFrame = 0;
+    const firstFrame = requestAnimationFrame(() => {
+      secondFrame = requestAnimationFrame(() => {
+        dashboardRef.current?.scrollIntoView({
+          behavior: reduceMotion ? 'auto' : 'smooth',
+          block: 'start',
+        });
+      });
+    });
+
+    return () => {
+      cancelAnimationFrame(firstFrame);
+      if (secondFrame) cancelAnimationFrame(secondFrame);
+    };
+  }, [dashboardVisible, reduceMotion]);
+
+  const toggleDashboard = useCallback(() => {
+    const nextVisible = !dashboardVisible;
+    dashboardRevealRequested.current = nextVisible;
+    updateSetting('showDashboard', nextVisible);
+  }, [dashboardVisible, updateSetting]);
 
   const finishCoachMarks = useCallback(() => setCoachActive(false), []);
   const openGuideFromCoachMarks = useCallback(() => {
@@ -325,6 +358,42 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
             </button>
           )}
 
+          {/* Home dashboard toggle */}
+          <button
+            type="button"
+            onClick={toggleDashboard}
+            aria-label={dashboardVisible ? 'Hide Dashboard' : 'Show Dashboard'}
+            aria-pressed={dashboardVisible}
+            title={sidebarOpen ? undefined : dashboardVisible ? 'Hide Dashboard' : 'Show Dashboard'}
+            className={`w-full flex items-center gap-3 px-2.5 py-2 rounded-lg transition-colors duration-200 ${
+              dashboardVisible
+                ? 'bg-[#FFF1E7] hover:bg-[#FDE6D5] dark:bg-[#F26B1F]/10 dark:hover:bg-[#F26B1F]/15'
+                : 'hover:bg-zinc-100 dark:hover:bg-zinc-800'
+            }`}
+          >
+            <div className="shrink-0 flex items-center justify-center w-[18px] h-[18px]">
+              <AnimatePresence initial={false} mode="wait">
+                <MotionSpan
+                  key={dashboardVisible ? 'dashboard-open' : 'dashboard-closed'}
+                  initial={reduceMotion ? { opacity: 0 } : { opacity: 0, scale: 0.72, rotate: -8 }}
+                  animate={{ opacity: 1, scale: 1, rotate: 0 }}
+                  exit={reduceMotion ? { opacity: 0 } : { opacity: 0, scale: 0.72, rotate: 8 }}
+                  transition={{ duration: reduceMotion ? 0.08 : 0.16, ease: [0.16, 1, 0.3, 1] }}
+                  className="flex items-center justify-center"
+                >
+                  {dashboardVisible ? (
+                    <PanelTopClose size={18} strokeWidth={1.7} className="text-[#F26B1F]" />
+                  ) : (
+                    <PanelTopOpen size={18} strokeWidth={1.5} className="text-zinc-600 dark:text-zinc-400" />
+                  )}
+                </MotionSpan>
+              </AnimatePresence>
+            </div>
+            <span className={`text-sm font-medium whitespace-nowrap overflow-hidden transition-opacity duration-300 ${dashboardVisible ? 'text-[#9A3B0E] dark:text-orange-300' : 'text-zinc-700 dark:text-zinc-300'} ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+              {dashboardVisible ? 'Hide Dashboard' : 'Show Dashboard'}
+            </span>
+          </button>
+
           {/* Dark / Light mode toggle */}
           <button
             onClick={() => updateSetting('darkMode', !settings.darkMode)}
@@ -453,13 +522,24 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
         />
 
         {/* Student Home Dashboard */}
-        {studentProfile && settings.showDashboard !== false && (
-          <MotionDiv
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="mb-6"
-          >
+        <AnimatePresence initial={false}>
+          {dashboardVisible && (
+            <MotionDiv
+              ref={dashboardRef}
+              key="home-dashboard"
+              initial={reduceMotion ? { opacity: 0 } : { height: 0, opacity: 0, y: -12, scale: 0.992 }}
+              animate={reduceMotion ? { opacity: 1 } : { height: 'auto', opacity: 1, y: 0, scale: 1 }}
+              exit={reduceMotion ? { opacity: 0 } : { height: 0, opacity: 0, y: -10, scale: 0.992 }}
+              transition={reduceMotion ? { duration: 0.12 } : {
+                height: { duration: 0.46, ease: [0.16, 1, 0.3, 1] },
+                opacity: { duration: 0.24, ease: 'easeOut' },
+                y: { duration: 0.4, ease: [0.16, 1, 0.3, 1] },
+                scale: { duration: 0.4, ease: [0.16, 1, 0.3, 1] },
+              }}
+              className="overflow-hidden"
+              style={{ scrollMarginTop: 24, transformOrigin: 'top center', willChange: 'height, opacity, transform' }}
+            >
+              <section aria-label="Home dashboard" className="pb-6">
             {/* Daily plan first; supporting information follows. */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               {/* TODAY */}
@@ -677,8 +757,10 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
                 </div>
               )}
             </div>
-          </MotionDiv>
-        )}
+              </section>
+            </MotionDiv>
+          )}
+        </AnimatePresence>
 
         {/* ── Section cards — top-level dashboard nav ── */}
         <MotionDiv

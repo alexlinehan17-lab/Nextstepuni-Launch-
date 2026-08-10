@@ -207,7 +207,7 @@ const TrajectoryChart: React.FC<TrajectoryChartProps> = ({ subjects, resultsBySu
                 onMouseLeave={() => setHoveredSubject(null)}
               >
                 <span className="w-2.5 h-2.5 rounded-full shrink-0"
-                      style={{ background: hexColor, border: `1px solid ${INK}33` }} />
+                      style={{ background: hexColor, border: `1px solid color-mix(in srgb, var(--ink-primary) 20%, transparent)` }} />
                 <span className="font-sans text-[11px] font-semibold" style={{ color: INK_SOFT }}>{s.subjectName}</span>
               </div>
             );
@@ -324,38 +324,38 @@ const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults
 
   // Buttons
   const primaryBtnStyle: React.CSSProperties = {
-    background: INK, color: PAPER,
+    background: ACCENT, color: '#FFFFFF', border: '1.5px solid var(--outline-strong)',
     boxShadow: '0 2px 0 rgba(31,27,23,0.18)',
-    borderRadius: 999,
+    borderRadius: 12,
   };
   const ghostBtnStyle: React.CSSProperties = {
     background: 'transparent', color: INK_SOFT,
-    border: `1px solid ${INK}22`, borderRadius: 999,
+    border: '1px solid var(--outline-soft)', borderRadius: 12,
   };
 
   return (
     <div className="space-y-6">
       <SectionHeader
-        overline="The arc"
-        title="Mock & test results"
-        rule
+        overline="Evidence over time"
+        title="Mock trajectory"
+        rule={false}
         trailing={
           <div className="flex gap-2">
             {showAddForm ? (
               <button onClick={() => setShowAddForm(false)}
-                      className="inline-flex items-center gap-1.5 px-3 py-1.5 text-[12px] font-semibold transition-colors"
+                      className="inline-flex min-h-10 items-center gap-1.5 px-3 py-1.5 text-[12px] font-semibold transition-colors"
                       style={ghostBtnStyle}>
                 <X size={12} /> Cancel
               </button>
             ) : (
               <>
                 <button onClick={initFullMockForm}
-                        className="inline-flex items-center gap-1.5 px-3 py-1.5 text-[12px] font-semibold transition-all"
+                        className="inline-flex min-h-10 items-center gap-1.5 px-3 py-1.5 text-[12px] font-semibold transition-all"
                         style={primaryBtnStyle}>
                   <Plus size={12} /> Full Mock
                 </button>
                 <button onClick={() => setShowAddForm('single')}
-                        className="inline-flex items-center gap-1.5 px-3 py-1.5 text-[12px] font-semibold transition-colors"
+                        className="inline-flex min-h-10 items-center gap-1.5 px-3 py-1.5 text-[12px] font-semibold transition-colors"
                         style={ghostBtnStyle}>
                   <Plus size={12} /> Single
                 </button>
@@ -384,7 +384,7 @@ const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults
                                 className="px-2 py-1 rounded-md text-[10px] font-semibold transition-colors"
                                 style={active
                                   ? { background: INK, color: PAPER }
-                                  : { background: PAPER, color: INK_SOFT, border: `1px solid ${INK}1A` }}>
+                                  : { background: PAPER, color: INK_SOFT, border: '1px solid var(--outline-soft)' }}>
                           {p}
                         </button>
                       );
@@ -535,7 +535,7 @@ const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults
                 </p>
               )}
               {mockFeedback.totalPtsDiff !== 0 && (
-                <div className="mt-3 pt-3" style={{ borderTop: `1px solid ${INK}1A` }}>
+                <div className="mt-3 pt-3" style={{ borderTop: `1px solid color-mix(in srgb, var(--ink-primary) 10%, transparent)` }}>
                   <p className="font-serif text-[13px] font-bold"
                      style={{ color: mockFeedback.totalPtsDiff > 0 ? STATUS_SOLID_DEEP : STATUS_GAP_DEEP }}>
                     Net change: {mockFeedback.totalPtsDiff > 0 ? '+' : ''}{mockFeedback.totalPtsDiff} CAO points
@@ -557,7 +557,7 @@ const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults
 
       {/* Subject status table — refined paper rows */}
       <section>
-        <SectionHeader overline="The standings" title="Subject status" rule />
+        <SectionHeader overline="Against your targets" title="Subject position" rule={false} />
         <div className="mt-3">
           <EditorialCard tone="soft" padded={false}>
             {[...subjects].map((s, sIdx) => {
@@ -583,10 +583,10 @@ const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults
                 <div
                   key={s.subjectName}
                   className="flex items-center gap-3 px-5 py-3"
-                  style={isLast ? undefined : { borderBottom: `1px solid ${INK}10` }}
+                  style={isLast ? undefined : { borderBottom: `1px solid color-mix(in srgb, var(--ink-primary) 6%, transparent)` }}
                 >
                   <span className="shrink-0"
-                        style={{ width: 12, height: 12, borderRadius: '50%', background: hexColor, border: `1px solid ${INK}33` }} />
+                        style={{ width: 12, height: 12, borderRadius: '50%', background: hexColor, border: `1px solid color-mix(in srgb, var(--ink-primary) 20%, transparent)` }} />
                   <span className="font-serif text-[14px] font-semibold flex-1 min-w-0 truncate" style={{ color: INK }}>
                     {s.subjectName}
                   </span>
@@ -615,7 +615,7 @@ const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults
       {mockResults.length === 0 && (
         <div className="text-center py-12 space-y-4">
           <div className="w-14 h-14 mx-auto rounded-2xl flex items-center justify-center"
-               style={{ background: '#FFFFFF', border: `1px solid ${INK}14` }}>
+               style={{ background: 'var(--surface-paper)', border: '1px solid var(--outline-soft)' }}>
             <TrendingUp size={26} style={{ color: ACCENT }} />
           </div>
           <h3 className="font-serif text-[18px] font-bold" style={{ color: INK }}>

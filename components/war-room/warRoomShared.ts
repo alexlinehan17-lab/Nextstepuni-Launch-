@@ -27,19 +27,19 @@ export interface MockResult {
   timestamp: number;
 }
 
-// ── Editorial Design Tokens ────────────────────────────────
-// Shared across the War Room redesign and the Academic Journey.
-// Warm cream paper + charcoal ink + restrained orange accent.
+// ── Product token aliases ──────────────────────────────────
+// War Room uses the same surface and ink grammar as the rest of Launchpad.
+// Domain status colours below remain explicit because they encode chart state.
 
-export const PAPER = '#F6F1E6';        // primary cream surface
-export const PAPER_DEEP = '#EFE7D5';   // deeper cream for grouped sections
-export const PAPER_SOFT = '#FBF7EC';   // softest cream for nested cards
-export const INK = '#1F1B17';          // charcoal headlines
-export const INK_SOFT = '#5C544A';     // body text
-export const INK_MUTE = '#8E8378';     // labels, secondary text
-export const INK_FAINT = '#C4BEB3';    // dividers, disabled, faint axes
-export const ACCENT = '#CC785C';       // restrained orange
-export const ACCENT_DARK = '#B56A50';
+export const PAPER = 'var(--surface-paper)';
+export const PAPER_DEEP = 'var(--surface-soft)';
+export const PAPER_SOFT = 'var(--surface-paper)';
+export const INK = 'var(--ink-primary)';
+export const INK_SOFT = 'var(--ink-secondary)';
+export const INK_MUTE = 'var(--ink-muted)';
+export const INK_FAINT = 'var(--outline-soft)';
+export const ACCENT = '#F26B1F';
+export const ACCENT_DARK = '#A43F08';
 
 // Status palette — muted, not neon
 export const STATUS_SOLID = '#5E8B7E';      // sage
@@ -55,10 +55,10 @@ export const STATUS_NEUTRAL = '#C4BEB3';    // faint stone for not-started
 
 // Reusable card surface — soft cream paper with thin charcoal border + faint shadow
 export const CARD_STYLE: React.CSSProperties = {
-  borderRadius: 14,
+  borderRadius: 16,
   background: PAPER_SOFT,
-  border: `1px solid ${INK}1A`,
-  boxShadow: '0 1px 0 rgba(31,27,23,0.04), 0 8px 22px rgba(31,27,23,0.05)',
+  border: '1px solid var(--outline-soft)',
+  boxShadow: '0 12px 28px rgba(38,32,27,.045)',
 };
 
 // Tailwind class wrapper for backwards compatibility (used in existing JSX with className+style)
@@ -117,8 +117,7 @@ export function computeCurrentTotal(subjects: StudentSubjectProfile['subjects'])
   return all.slice(0, 6).reduce((sum, p) => sum + p, 0);
 }
 
-// Mute a subject hex so chart/table colours feel curated, not loud.
-// Blends the source hex toward warm paper at the given strength.
+// Mute a subject hex so chart/table colours remain supporting signals.
 export function mutedSubjectHex(hex: string, blend: number = 0.18): string {
   // blend = 0 → original colour; 1 → paper. Default lifts ~18% toward cream.
   const n = (h: string) => parseInt(h, 16);
@@ -126,7 +125,7 @@ export function mutedSubjectHex(hex: string, blend: number = 0.18): string {
   const r = n(m.slice(0, 2));
   const g = n(m.slice(2, 4));
   const b = n(m.slice(4, 6));
-  const pr = 0xF6, pg = 0xF1, pb = 0xE6;
+  const pr = 0xFA, pg = 0xFB, pb = 0xF6;
   const mix = (a: number, p: number) => Math.round(a * (1 - blend) + p * blend);
   const toHex = (x: number) => x.toString(16).padStart(2, '0');
   return `#${toHex(mix(r, pr))}${toHex(mix(g, pg))}${toHex(mix(b, pb))}`;

@@ -249,7 +249,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                   {/* Dashboard toggle */}
                   <button
                     onClick={() => {
-                      updateSetting('showDashboard', settings.showDashboard === false ? true : false);
+                      updateSetting('showDashboard', settings.showDashboard !== true);
                       flash();
                     }}
                     className="w-full flex items-center justify-between p-3 rounded-xl bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] hover:ring-zinc-300 dark:hover:ring-white/[0.15] transition-all"
@@ -259,10 +259,10 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                       <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mt-0.5">Today's plan and progress above modules</p>
                     </div>
                     <div className={`relative w-10 h-6 rounded-full transition-colors ${
-                      settings.showDashboard !== false ? 'bg-[var(--accent-hex)]' : 'bg-zinc-300 dark:bg-zinc-600'
+                      settings.showDashboard === true ? 'bg-[var(--accent-hex)]' : 'bg-zinc-300 dark:bg-zinc-600'
                     }`}>
                       <div className={`absolute top-0.5 w-5 h-5 rounded-full bg-white shadow-sm transition-transform ${
-                        settings.showDashboard !== false ? 'translate-x-[18px]' : 'translate-x-0.5'
+                        settings.showDashboard === true ? 'translate-x-[18px]' : 'translate-x-0.5'
                       }`} />
                     </div>
                   </button>

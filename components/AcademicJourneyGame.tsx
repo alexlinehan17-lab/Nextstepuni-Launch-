@@ -6,7 +6,7 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv, MotionPolygon, MotionSpan } from './Motion';
-import { Lock } from 'lucide-react';
+import { ArrowRight, Lock } from 'lucide-react';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { saveInBackground } from '../utils/firestoreWrite';
@@ -18,6 +18,8 @@ import {
     WEAKEST_STAT_INSIGHTS,
     getStatGrade, getKeyTurningPoints, getWeakestStat,
 } from './journeySimulatorData';
+import { EvidenceDisclosure, OutcomeSection, OutcomeShell } from './ui/OutcomePatterns';
+import { OutlinedSurface } from './ui/ProductPatterns';
 
 export interface JourneyResult {
   endingId: string;
@@ -106,25 +108,6 @@ const ResultIconBlob: React.FC<{ stat: StatKey; size?: number; className?: strin
             </svg>
             <img src={art.icon} alt="" className="absolute left-1/2 top-1/2 object-contain" style={{ width: '102%', height: '102%', transform: 'translate(-50%, -50%)' }} />
         </div>
-    );
-};
-
-const TrailMarker: React.FC<{ color: string; large?: boolean }> = ({ color, large = false }) => {
-    const size = large ? 14 : 8;
-    return (
-        <span
-            aria-hidden
-            className="block"
-            style={{
-                width: size,
-                height: size,
-                transform: 'rotate(45deg)',
-                borderRadius: large ? 4 : 2,
-                background: large ? color : PAPER,
-                border: `1.5px solid ${color}`,
-                boxShadow: `0 0 0 ${large ? 4 : 3}px ${PAPER}`,
-            }}
-        />
     );
 };
 
@@ -232,14 +215,6 @@ const SunburstRule: React.FC<{ width?: number; color?: string }> = ({ width = 80
         <path d="M14 4 L 14 1"  stroke={color} strokeWidth={1.1} strokeLinecap="round" />
         <path d="M9 6  L 7 3"   stroke={color} strokeWidth={1.1} strokeLinecap="round" />
         <path d="M19 6 L 21 3"  stroke={color} strokeWidth={1.1} strokeLinecap="round" />
-    </svg>
-);
-
-// Hand-drawn loop — used on "Walk the path again"
-const LoopArrow: React.FC<{ size?: number; color?: string }> = ({ size = 28, color = INK }) => (
-    <svg width={size} height={size} viewBox="0 0 32 32" fill="none" aria-hidden>
-        <path d="M26 14 Q 28 4, 16 4 Q 4 4, 4 16 Q 4 28, 16 28 Q 22 28, 26 24" stroke={color} strokeWidth={1.4} strokeLinecap="round" fill="none" />
-        <path d="M22 22 L 26 24 L 24 28" stroke={color} strokeWidth={1.4} strokeLinecap="round" strokeLinejoin="round" fill="none" />
     </svg>
 );
 
@@ -633,276 +608,193 @@ const SketchedRadar: React.FC<{ stats: GameState }> = ({ stats }) => {
 // REPORT CARD — editorial reveal
 // ════════════════════════════════════════════════════════════════════════════
 
-const InsightCard: React.FC<{ overline: string; title: string; body: string; motif: React.ReactNode; tilt?: number }> = ({ overline, title, body, motif, tilt = -0.6 }) => (
-    <div className="relative p-5" style={{
-        background: '#FFFFFF',
-        borderRadius: 14,
-        border: `1px solid ${INK}12`,
-        boxShadow: '0 1px 0 rgba(31,27,23,0.03), 0 6px 18px rgba(31,27,23,0.06)',
-        transform: `rotate(${tilt}deg)`,
-    }}>
-        {/* Hand-drawn header flourish: star + extending line */}
-        <div className="flex items-center gap-1.5 mb-3">
-            <img src="/assets/journey/insight-star.png" alt="" aria-hidden style={{ width: 22, height: 22, objectFit: 'contain' }} />
-            <svg width="120" height="5" viewBox="0 0 120 5" fill="none" aria-hidden className="flex-shrink-0">
-                <path d="M1 2.5 Q 40 0.8, 119 2.5" stroke={INK} strokeWidth={1} strokeLinecap="round" fill="none" />
-            </svg>
-        </div>
-        <Overline className="text-[9px]">{overline}</Overline>
-        <h5 className="font-serif text-[18px] sm:text-[19px] font-bold mt-2 leading-[1.2]" style={{ color: INK }}>{title}</h5>
-        <p className="font-sans text-[13px] mt-2 leading-snug max-w-[30ch]" style={{ color: INK_SOFT }}>{body}</p>
-        <div className="mt-3 flex justify-end" style={{ opacity: 0.7 }}>{motif}</div>
-    </div>
-);
+// ── Product-native outcome ──────────────────────────────────────────────
 
-const ReportCard: React.FC<{ endingId: string; gameState: GameState; history: HistoryItem[]; onRestart: () => void; onSelectModule?: (moduleId: string) => void }> = ({ endingId, gameState, history, onRestart, onSelectModule }) => {
+export const JourneyOutcomeReport: React.FC<{
+    endingId: string;
+    gameState: GameState;
+    history: HistoryItem[];
+    onRestart: () => void;
+    onSelectModule?: (moduleId: string) => void;
+}> = ({ endingId, gameState, history, onRestart, onSelectModule }) => {
     const archetype = ARCHETYPES[endingId];
     const endScene = STORY_DATA[endingId];
+    const strongest = strongestStat(gameState);
+    const weakest = getWeakestStat(gameState);
     const turningPoints = getKeyTurningPoints(history);
-    const weakestStat = getWeakestStat(gameState);
-    const recommendedModules = STAT_TO_MODULES[weakestStat];
-
-    const pathNodes = history.map((item) => ({ title: item.scene.title, phase: item.scene.phase, month: item.scene.month, choiceText: item.choiceText }));
+    const recommendedModules = STAT_TO_MODULES[weakest];
+    const defining = history.find(item => item.scene.mood === 'crisis') || history[Math.floor(history.length / 2)];
 
     const pathsNotTaken: { sceneTitle: string; choiceText: string; requirement: string }[] = [];
     for (const item of history) {
-        const choices = item.scene.choices || [];
-        for (const alt of choices) {
-            if (alt.text !== item.choiceText && alt.requires) {
-                const reqText = alt.requires.map(r => `${STAT_LABELS[r.stat]} ${r.max !== undefined ? `≤${r.max}` : `${r.min}+`}`).join(', ');
-                const meetsReqs = alt.requires.every(r => (r.min === undefined || gameState[r.stat] >= r.min) && (r.max === undefined || gameState[r.stat] <= r.max));
-                if (!meetsReqs) pathsNotTaken.push({ sceneTitle: item.scene.title, choiceText: alt.text, requirement: reqText });
+        for (const alternative of item.scene.choices || []) {
+            if (alternative.text === item.choiceText || !alternative.requires) continue;
+            const meetsRequirements = alternative.requires.every(requirement =>
+                (requirement.min === undefined || gameState[requirement.stat] >= requirement.min)
+                && (requirement.max === undefined || gameState[requirement.stat] <= requirement.max));
+            if (!meetsRequirements) {
+                pathsNotTaken.push({
+                    sceneTitle: item.scene.title,
+                    choiceText: alternative.text,
+                    requirement: alternative.requires
+                        .map(requirement => `${STAT_LABELS[requirement.stat]} ${requirement.max !== undefined ? `≤${requirement.max}` : `${requirement.min}+`}`)
+                        .join(', '),
+                });
             }
         }
     }
 
-    // Identify a "defining" scene — first crisis or biggest stat-shift moment
-    const defining = history.find(h => h.scene.mood === 'crisis') || history[Math.floor(history.length / 2)];
-
-    const phases: Phase[] = ['Foundation', 'Pressure Cooker', 'Final Stretch'];
-    const groupedPath = phases
-        .map(phase => ({ phase, nodes: pathNodes.filter(n => n.phase === phase) }))
-        .filter(g => g.nodes.length > 0);
+    const primaryModule = recommendedModules[0];
+    const outcomeTitle = archetype?.title || endScene?.title || 'Results Day';
+    const summary = archetype?.description || endScene?.text;
+    const pathGroups = (['Foundation', 'Pressure Cooker', 'Final Stretch'] as Phase[])
+        .map(phase => ({ phase, items: history.filter(item => item.scene.phase === phase) }))
+        .filter(group => group.items.length > 0);
 
     return (
-        <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-10 pt-6 md:pt-8 pb-10">
-            {/* ── HERO archetype block ── */}
-            <section>
-                <Overline>Your archetype</Overline>
-                <div className="flex items-start gap-6 mt-3">
-                    <h3 className="font-serif text-5xl sm:text-6xl font-bold leading-[1.02]" style={{ color: INK }}>
-                        {archetype?.title || endScene?.title || 'Results Day'}
-                    </h3>
-                    <ArchetypeMountainBlob />
-                </div>
-                <p className="font-serif text-[17px] mt-5 leading-relaxed max-w-2xl" style={{ color: INK_SOFT }}>
-                    {archetype?.description || endScene?.text}
-                </p>
-
-                {/* Supporting insight cards — sit beneath the archetype as a triptych */}
-                <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <InsightCard
-                        overline="Your insight"
-                        title={`Your ${STAT_LABELS[strongestStat(gameState)].toLowerCase()} is your superpower.`}
-                        body={`This carried you through the year — lean into it next.`}
-                        motif={<ResultIconBlob stat={strongestStat(gameState)} size={44} />}
-                    />
-                    {defining && (
-                        <InsightCard
-                            overline="Defined by"
-                            title={defining.scene.title}
-                            body={defining.choiceText}
-                            motif={<ResultIconBlob stat={dominantEffectStat(defining.effects)} size={44} />}
-                            tilt={0.6}
-                        />
-                    )}
-                    {turningPoints[0] && (
-                        <InsightCard
-                            overline="Turning point"
-                            title={turningPoints[0].scene.title}
-                            body={turningPoints[0].choiceText}
-                            motif={<ResultIconBlob stat={dominantEffectStat(turningPoints[0].effects)} size={44} />}
-                        />
-                    )}
-                </div>
-            </section>
-
-            {/* ── Sketched radar ── */}
-            <section>
-                <div className="flex items-center gap-3 mb-2">
-                    <Overline>Your grades</Overline>
-                    <SunburstRule width={70} color={ACCENT} />
-                </div>
-                <div className="flex justify-center mt-4">
-                    <SketchedRadar stats={gameState} />
-                </div>
-            </section>
-
-            {/* ── Vulnerability ── */}
-            <section className="max-w-2xl">
-                <div className="flex items-center gap-3 mb-3">
-                    <Overline color={ACCENT}>Your biggest vulnerability</Overline>
-                    <SunburstRule width={50} color={ACCENT} />
-                </div>
-                <h4 className="font-serif text-[28px] font-semibold mb-3" style={{ color: INK }}>{STAT_LABELS[weakestStat]}</h4>
-                <p className="font-serif text-[16px] leading-relaxed" style={{ color: INK_SOFT }}>
-                    {WEAKEST_STAT_INSIGHTS[weakestStat]}
-                </p>
-            </section>
-
-            {/* ── Key turning points — vertical dashed trail ── */}
-            {turningPoints.length > 0 && (
-                <section>
-                    <h4 className="font-serif text-[26px] font-semibold mb-6" style={{ color: INK }}>Key Turning Points</h4>
-                    <div className="relative pl-20">
-                        {/* Hand-drawn vertical dashed trail */}
-                        <div aria-hidden className="absolute left-[28px] top-2 bottom-2"
-                            style={{
-                                width: 2,
-                                backgroundImage: `radial-gradient(circle, ${INK}88 1.2px, transparent 1.4px)`,
-                                backgroundSize: '2px 8px',
-                                backgroundRepeat: 'repeat-y',
-                            }}
-                        />
-                        <div className="space-y-7">
-                            {turningPoints.map((item, index) => (
-                                <div key={index} className="relative">
-                                    {/* Painted icon sits directly over the trail. */}
-                                    <div className="absolute -left-20 -top-1 flex items-center justify-center" style={{ width: 56, height: 56 }}>
-                                        <ResultIconBlob stat={dominantEffectStat(item.effects)} size={56} />
-                                    </div>
-                                    <Overline>{item.scene.month}</Overline>
-                                    <h5 className="font-serif text-[20px] font-semibold mt-1 leading-snug" style={{ color: INK }}>{item.scene.title}</h5>
-                                    <p className="font-sans text-[14px] mt-1 leading-relaxed" style={{ color: INK_SOFT }}>{item.choiceText}</p>
+        <MotionDiv initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.32 }}>
+            <OutcomeShell
+                eyebrow="Your journey outcome"
+                title={outcomeTitle}
+                summary={summary}
+                illustration={<ArchetypeMountainBlob />}
+                metrics={[
+                    { label: `Strongest · ${STAT_LABELS[strongest]}`, value: getStatGrade(gameState[strongest]).letter, tone: 'success' },
+                    { label: `Growth · ${STAT_LABELS[weakest]}`, value: getStatGrade(gameState[weakest]).letter },
+                    { label: 'Decisions made', value: history.length || 'Saved' },
+                    { label: 'Turning points', value: turningPoints.length || '—', tone: turningPoints.length ? 'accent' : 'default' },
+                ]}
+                primaryAction={primaryModule && onSelectModule ? {
+                    label: `Open ${primaryModule.moduleTitle}`,
+                    onClick: () => onSelectModule(primaryModule.moduleId),
+                } : undefined}
+                secondaryAction={{ label: 'Try another path', onClick: onRestart }}
+            >
+                <OutcomeSection eyebrow="The central insight" title="What this journey says about you">
+                    <OutlinedSurface strong className="grid gap-5 p-5 sm:p-6 md:grid-cols-[1fr_240px] md:items-start">
+                        <div>
+                            <h4 className="font-serif text-[22px] font-semibold leading-snug text-[var(--ink-primary)]">
+                                Your {STAT_LABELS[strongest].toLowerCase()} is your strongest lever.
+                            </h4>
+                            <p className="mt-3 text-sm leading-relaxed text-[var(--ink-secondary)]">
+                                It carried you through pressure and protected your options. The next gain comes from pairing it with more deliberate work on {STAT_LABELS[weakest].toLowerCase()}.
+                            </p>
+                            {defining && (
+                                <div className="mt-5 border-t border-[var(--outline-soft)] pt-4">
+                                    <p className="text-[10px] font-bold uppercase tracking-[.16em] text-[var(--ink-muted)]">Defining decision · {defining.scene.month}</p>
+                                    <p className="mt-1.5 font-serif text-[16px] font-semibold text-[var(--ink-primary)]">{defining.scene.title}</p>
+                                    <p className="mt-1 text-sm text-[var(--ink-secondary)]">{defining.choiceText}</p>
                                 </div>
-                            ))}
+                            )}
                         </div>
-                    </div>
-                </section>
-            )}
+                        <div className="border-t border-[var(--outline-soft)] pt-5 md:border-l md:border-t-0 md:pl-5 md:pt-0">
+                            <p className="text-[10px] font-bold uppercase tracking-[.16em] text-[#A43F08]">Growth edge</p>
+                            <p className="mt-2 font-serif text-[19px] font-semibold text-[var(--ink-primary)]">{STAT_LABELS[weakest]}</p>
+                            <p className="mt-2 text-xs leading-relaxed text-[var(--ink-secondary)]">{WEAKEST_STAT_INSIGHTS[weakest]}</p>
+                        </div>
+                    </OutlinedSurface>
+                </OutcomeSection>
 
-            {/* ── Paths not taken — dashed alternate routes ── */}
-            {pathsNotTaken.length > 0 && (
-                <section>
-                    <div className="flex items-center gap-3 mb-4">
-                        <Overline>Paths not taken</Overline>
-                        <SunburstRule width={60} color={INK_MUTE} />
-                    </div>
-                    <div className="space-y-3">
-                        {pathsNotTaken.slice(0, 3).map((path, index) => (
-                            <div key={index} className="px-4 py-3" style={{ background: 'transparent', border: `1.4px dashed ${INK_MUTE}66`, borderRadius: 12 }}>
-                                <div className="flex items-start gap-3">
-                                    <span className="flex items-center justify-center shrink-0 mt-0.5" style={{
-                                        width: 26, height: 26, borderRadius: '8px 11px 7px 10px', background: `${INK_MUTE}12`, color: INK_MUTE,
-                                    }}>
-                                        <Lock size={12} />
-                                    </span>
-                                    <div className="flex-1">
-                                        <Overline>{path.sceneTitle}</Overline>
-                                        <p className="font-serif italic text-[15px] mt-1" style={{ color: INK_SOFT }}>{path.choiceText}</p>
-                                        <p className="text-[10px] uppercase tracking-[0.15em] font-semibold mt-1" style={{ color: INK_MUTE }}>Required: {path.requirement}</p>
-                                    </div>
-                                </div>
-                            </div>
+                <OutcomeSection eyebrow="Recommended next" title="Turn the result into action">
+                    <div className="grid gap-3 sm:grid-cols-2">
+                        {recommendedModules.map((module, index) => (
+                            <button
+                                key={module.moduleId}
+                                type="button"
+                                onClick={() => onSelectModule?.(module.moduleId)}
+                                disabled={!onSelectModule}
+                                className="group flex min-h-[92px] items-center justify-between gap-5 rounded-2xl border border-[var(--outline-soft)] bg-[var(--surface-paper)] p-5 text-left transition-all hover:-translate-y-0.5 hover:border-[var(--outline-strong)] disabled:cursor-default disabled:hover:translate-y-0"
+                            >
+                                <span>
+                                    <span className="block text-[10px] font-bold uppercase tracking-[.16em] text-[var(--ink-muted)]">{index === 0 ? 'Start here' : 'Then build'}</span>
+                                    <span className="mt-1.5 block font-serif text-[17px] font-semibold text-[var(--ink-primary)]">{module.moduleTitle}</span>
+                                </span>
+                                <ArrowRight size={18} className="shrink-0 text-[#F26B1F] transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                            </button>
                         ))}
                     </div>
-                </section>
-            )}
+                </OutcomeSection>
 
-            {/* ── Recommended modules ── */}
-            <section>
-                <div className="flex items-center gap-3 mb-1">
-                    <Overline>Recommended for you</Overline>
-                    <SunburstRule width={50} color={ACCENT} />
-                </div>
-                <p className="text-[12px] mb-4" style={{ color: INK_MUTE }}>Based on your weakest area: {STAT_LABELS[weakestStat]}</p>
-                <div className="grid sm:grid-cols-2 gap-3">
-                    {recommendedModules.map(mod => (
-                        <button
-                            key={mod.moduleId}
-                            onClick={() => onSelectModule?.(mod.moduleId)}
-                            className="text-left p-4 transition-all group"
-                            style={{
-                                background: '#FFFFFF', border: `1px solid ${INK}18`, borderRadius: 14,
-                                boxShadow: '0 1px 0 rgba(31,27,23,0.04), 0 6px 18px rgba(31,27,23,0.04)',
-                            }}
-                            onMouseEnter={(e: any) => { e.currentTarget.style.borderColor = ACCENT; e.currentTarget.style.boxShadow = `0 2px 0 ${ACCENT}22, 0 8px 22px rgba(31,27,23,0.08)`; }}
-                            onMouseLeave={(e: any) => { e.currentTarget.style.borderColor = `${INK}18`; e.currentTarget.style.boxShadow = '0 1px 0 rgba(31,27,23,0.04), 0 6px 18px rgba(31,27,23,0.04)'; }}
+                <OutcomeSection eyebrow="Supporting evidence" title="Understand the result">
+                    <OutlinedSurface className="overflow-hidden px-5 sm:px-6">
+                        <EvidenceDisclosure summary="Your five scores" description="The full profile behind your archetype." defaultOpen>
+                            <div className="grid gap-6 md:grid-cols-[.9fr_1.1fr] md:items-center">
+                                <div className="mx-auto w-full max-w-[290px]"><SketchedRadar stats={gameState} /></div>
+                                <div className="space-y-1">
+                                    {(Object.keys(gameState) as StatKey[]).map(stat => (
+                                        <div key={stat} className="grid grid-cols-[1fr_auto] items-center gap-4 border-b border-[var(--outline-soft)] py-3 last:border-b-0">
+                                            <span className="text-sm text-[var(--ink-secondary)]">{STAT_LABELS[stat]}</span>
+                                            <span className="font-mono text-xs font-bold text-[var(--ink-primary)]">{getStatGrade(gameState[stat]).letter} · {gameState[stat]}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </EvidenceDisclosure>
+
+                        <EvidenceDisclosure
+                            summary="How you got here"
+                            description={history.length ? `${history.length} decisions across your final-year journey.` : 'Decision history is available after a new playthrough.'}
                         >
-                            <div className="flex items-start justify-between gap-3">
-                                <p className="font-serif text-[17px] font-semibold leading-snug" style={{ color: INK }}>{mod.moduleTitle}</p>
-                                <svg width="22" height="14" viewBox="0 0 22 14" fill="none" aria-hidden className="shrink-0 mt-1">
-                                    <path d="M2 7 Q 10 4, 20 7" stroke={ACCENT} strokeWidth={1.3} strokeLinecap="round" fill="none" />
-                                    <path d="M16 3 L 21 7 L 16 11" stroke={ACCENT} strokeWidth={1.3} strokeLinecap="round" strokeLinejoin="round" fill="none" />
-                                </svg>
-                            </div>
-                        </button>
-                    ))}
-                </div>
-            </section>
-
-            {/* ── Your Path — meandering trail ── */}
-            <section>
-                <h4 className="font-serif text-[26px] font-semibold mb-6" style={{ color: INK }}>Your Path</h4>
-                <div className="relative pl-12">
-                    <div aria-hidden className="absolute left-[14px] top-2 bottom-6"
-                        style={{
-                            width: 2,
-                            backgroundImage: `radial-gradient(circle, ${INK}66 1.1px, transparent 1.3px)`,
-                            backgroundSize: '2px 7px', backgroundRepeat: 'repeat-y',
-                        }}
-                    />
-                    {groupedPath.map(({ phase, nodes }) => (
-                        <div key={phase} className="mb-7">
-                            <div className="flex items-center gap-3 mb-3 -ml-12">
-                                <div className="flex h-7 w-7 items-center justify-center shrink-0">
-                                    <TrailMarker color={PHASE_TOKENS[phase].deep} large />
+                            {pathGroups.length ? (
+                                <div className="space-y-6">
+                                    {pathGroups.map(group => (
+                                        <div key={group.phase}>
+                                            <p className="text-[10px] font-bold uppercase tracking-[.16em]" style={{ color: PHASE_TOKENS[group.phase].deep }}>{PHASE_DISPLAY[group.phase]}</p>
+                                            <div className="mt-2 divide-y divide-[var(--outline-soft)]">
+                                                {group.items.map((item, index) => (
+                                                    <div key={`${item.scene.title}-${index}`} className="grid gap-1 py-3 sm:grid-cols-[170px_1fr] sm:gap-5">
+                                                        <span className="font-serif text-sm font-semibold text-[var(--ink-primary)]">{item.scene.title}</span>
+                                                        <span className="text-xs leading-relaxed text-[var(--ink-secondary)]">{item.choiceText}</span>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    ))}
                                 </div>
-                                <Overline color={PHASE_TOKENS[phase].deep}>{PHASE_DISPLAY[phase]}</Overline>
-                            </div>
-                            {nodes.map((node, ni) => (
-                                <div key={ni} className="relative mb-3 ml-2">
-                                    <div className="absolute -left-[48px] top-1.5 flex h-3 w-3 items-center justify-center">
-                                        <TrailMarker color={INK_SOFT} />
-                                    </div>
-                                    <Overline>{node.title}</Overline>
-                                    <p className="font-serif text-[15px] mt-0.5 leading-relaxed" style={{ color: INK }}>{node.choiceText}</p>
-                                </div>
-                            ))}
-                        </div>
-                    ))}
-                    {/* Endpoint flag */}
-                    <div className="-ml-12 flex items-center gap-2">
-                        <div className="flex items-center justify-center" style={{ width: 30, height: 30 }}>
-                            <SketchedFlag size={26} />
-                        </div>
-                        <Overline color={ACCENT}>{archetype?.title || 'End'}</Overline>
-                    </div>
-                </div>
-            </section>
+                            ) : <p className="text-sm text-[var(--ink-muted)]">Play the journey again to create a complete decision record.</p>}
+                        </EvidenceDisclosure>
 
-            {/* ── Play again — closing gesture ── */}
-            <section className="text-center py-10" style={{ borderTop: `1px dashed ${INK_MUTE}66` }}>
-                <p className="font-serif italic text-[15px] mb-4" style={{ color: INK_MUTE }}>
-                    The year is yours to write again.
-                </p>
-                <button
-                    onClick={onRestart}
-                    className="inline-flex items-center gap-3 px-6 py-3 transition-all group"
-                    style={{
-                        background: '#FFFFFF', border: `1.5px solid ${INK}`, borderRadius: 100,
-                        boxShadow: `0 2px 0 ${INK}, 0 4px 12px rgba(31,27,23,0.08)`,
-                    }}
-                    onMouseEnter={(e: any) => { e.currentTarget.style.background = PHASE_TOKENS.Foundation.wash; e.currentTarget.style.transform = 'translateY(-1px)'; }}
-                    onMouseLeave={(e: any) => { e.currentTarget.style.background = '#FFFFFF'; e.currentTarget.style.transform = 'translateY(0)'; }}
-                >
-                    <LoopArrow size={22} />
-                    <span className="font-serif text-[15px] font-semibold" style={{ color: INK }}>Walk the path again</span>
-                </button>
-            </section>
+                        {turningPoints.length > 0 && (
+                            <EvidenceDisclosure summary="Key turning points" description="The moments that changed your direction most.">
+                                <div className="space-y-3">
+                                    {turningPoints.map((item, index) => (
+                                        <div key={`${item.scene.title}-${index}`} className="flex items-start gap-4 rounded-xl bg-[var(--surface-soft)] p-4">
+                                            <ResultIconBlob stat={dominantEffectStat(item.effects)} size={46} />
+                                            <div>
+                                                <p className="text-[10px] font-bold uppercase tracking-[.14em] text-[var(--ink-muted)]">{item.scene.month}</p>
+                                                <p className="mt-1 font-serif text-[16px] font-semibold text-[var(--ink-primary)]">{item.scene.title}</p>
+                                                <p className="mt-1 text-xs leading-relaxed text-[var(--ink-secondary)]">{item.choiceText}</p>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </EvidenceDisclosure>
+                        )}
+
+                        {pathsNotTaken.length > 0 && (
+                            <EvidenceDisclosure summary="Paths not taken" description="Alternatives your final profile left out of reach.">
+                                <div className="space-y-3">
+                                    {pathsNotTaken.slice(0, 3).map((path, index) => (
+                                        <div key={`${path.sceneTitle}-${index}`} className="flex items-start gap-3 border-b border-[var(--outline-soft)] pb-3 last:border-0">
+                                            <Lock size={15} className="mt-0.5 shrink-0 text-[var(--ink-muted)]" aria-hidden="true" />
+                                            <div>
+                                                <p className="text-xs font-semibold text-[var(--ink-primary)]">{path.sceneTitle}</p>
+                                                <p className="mt-1 font-serif text-sm italic text-[var(--ink-secondary)]">{path.choiceText}</p>
+                                                <p className="mt-1 text-[10px] uppercase tracking-[.12em] text-[var(--ink-muted)]">Required: {path.requirement}</p>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </EvidenceDisclosure>
+                        )}
+                    </OutlinedSurface>
+                </OutcomeSection>
+            </OutcomeShell>
         </MotionDiv>
     );
 };
+
+const ReportCard = JourneyOutcomeReport;
 
 // Helper: pick the strongest stat (mirrors getWeakestStat)
 function strongestStat(state: GameState): StatKey {

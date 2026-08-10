@@ -61,22 +61,19 @@ export const ToolHeader: React.FC<ToolHeaderProps> = ({
 }) => {
   return (
     <div
-      className={`flex items-start gap-7 ${className ?? ''}`}
+      className={`tool-header flex items-start gap-4 sm:gap-7 ${className ?? ''}`}
     >
       {/* Tile (or blob — blob mode skips the saturated background) */}
       {iconBlob ? (
         <div
-          className="shrink-0 flex items-center justify-center"
-          style={{ width: 108, height: 108 }}
+          className="tool-header-art shrink-0 flex items-center justify-center"
         >
           {iconBlob}
         </div>
       ) : (
         <div
-          className="shrink-0 flex items-center justify-center overflow-hidden"
+          className="tool-header-art shrink-0 flex items-center justify-center overflow-hidden"
           style={{
-            width: 108,
-            height: 108,
             borderRadius: 18,
             background: themeColor,
           }}
@@ -102,7 +99,7 @@ export const ToolHeader: React.FC<ToolHeaderProps> = ({
             fontWeight: 500,
             letterSpacing: '0.18em',
             textTransform: 'uppercase',
-            color: 'rgba(0,0,0,0.5)',
+            color: 'var(--ink-muted)',
             margin: 0,
           }}
         >
@@ -115,7 +112,7 @@ export const ToolHeader: React.FC<ToolHeaderProps> = ({
             fontWeight: 500,
             letterSpacing: '-1.2px',
             lineHeight: 1.0,
-            color: '#1a1a1a',
+            color: 'var(--ink-primary)',
             margin: 0,
             marginTop: 14,
           }}
@@ -127,7 +124,7 @@ export const ToolHeader: React.FC<ToolHeaderProps> = ({
             fontFamily: "'DM Sans', system-ui, sans-serif",
             fontSize: 15,
             fontWeight: 400,
-            color: 'rgba(0,0,0,0.62)',
+            color: 'var(--ink-secondary)',
             lineHeight: 1.5,
             maxWidth: 460,
             margin: 0,
