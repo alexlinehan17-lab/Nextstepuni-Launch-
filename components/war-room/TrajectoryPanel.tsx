@@ -546,7 +546,10 @@ const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults
                 <div>
                   <label htmlFor="full-mock-label" className="font-sans text-[10px] font-bold uppercase tracking-[0.16em]"
                          style={{ color: INK_MUTE }}>Label</label>
-                  <div className="mb-2 mt-1.5 flex flex-wrap gap-1.5" role="group" aria-label="Mock label presets">
+                  <input ref={fullMockFirstFieldRef} id="full-mock-label" type="text" value={fullMockLabel} onChange={(e) => setFullMockLabel(e.target.value)}
+                         placeholder="Or type your own…" maxLength={30}
+                         className={fieldClass} style={{ ...fieldStyle, marginTop: 4 }} />
+                  <div className="mt-2 flex flex-wrap gap-1.5" role="group" aria-label="Mock label presets">
                     {MOCK_PRESETS.map(p => {
                       const active = fullMockLabel === p;
                       return (
@@ -565,9 +568,6 @@ const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults
                       );
                     })}
                   </div>
-                  <input ref={fullMockFirstFieldRef} id="full-mock-label" type="text" value={fullMockLabel} onChange={(e) => setFullMockLabel(e.target.value)}
-                         placeholder="Or type your own…" maxLength={30}
-                         className={fieldClass} style={fieldStyle} />
                 </div>
                 <div>
                   <label htmlFor="full-mock-date" className="font-sans text-[10px] font-bold uppercase tracking-[0.16em]"
