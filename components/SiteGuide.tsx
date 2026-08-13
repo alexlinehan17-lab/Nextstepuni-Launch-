@@ -89,7 +89,7 @@ const CARDS: GuideCard[] = [
     bullets: [
       'Every marking rule is cited to a real SEC scheme.',
       'The Daily Mark keeps your marking eye calibrated — one script a day.',
-      'With a class code, compare calls with your class, anonymously.',
+      'Compare your decision with the official call and see exactly where marks are won or lost.',
     ],
     go: { label: 'Take the chair', action: 'tool:examiners-chair' },
   },
@@ -121,33 +121,73 @@ const CARDS: GuideCard[] = [
     id: 'study',
     chip: 'Daily habit',
     title: 'Study Session & Focus',
-    what: 'Where the daily work happens: structured study sessions that count toward your streak, and a calm focus timer that grows a grove.',
+    what: 'Where the daily work happens: choose what you are studying, set a focused block and let the full-screen timer keep the session clear and calm.',
     bullets: [
-      'Sessions log automatically into your insights and streak.',
-      'Focus sessions plant a tree for every block you finish.',
-      'With a class code, see how many classmates are at their desks too.',
+      'The subject-coloured screen shows exactly how much time is left.',
+      'Pause or resume from the centre without leaving your session.',
+      'Finished sessions feed into your study history, progress and streak.',
     ],
     go: { label: 'Start a session', action: 'study' },
-  },
-  {
-    id: 'help',
-    chip: 'Classroom & help',
-    title: 'Class codes — and this guide',
-    what: 'A class code (any phrase your class agrees on) links the classroom features — always anonymous, only counts, never names.',
-    bullets: [
-      'Students send blind spots; teachers see what the class mis-marks.',
-      'The Daily Mark duel compares you with the class median.',
-      'This guide lives behind the ? in the sidebar — come back anytime.',
-    ],
   },
 ];
 
 const INK = '#1a1a1a';
 const ACCENT = '#F26B1F';
 
+/** A compact recreation of the current full-screen study timer. */
+const StudyTimerPreview: React.FC = () => (
+  <div
+    className="relative w-full aspect-[16/10] overflow-hidden rounded-xl border-2"
+    style={{ borderColor: INK, backgroundColor: '#d7f0e6' }}
+    role="img"
+    aria-label="Study session timer showing time remaining on a layered subject-coloured background"
+  >
+    <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
+      <div className="absolute left-1/2 top-[63%] h-[150%] w-[130%] -translate-x-1/2 rounded-[50%] bg-[#42c2aa]" />
+      <div className="absolute left-1/2 top-[54%] h-[172%] w-[154%] -translate-x-1/2 rounded-[50%] bg-[#69ceb9]" />
+      <div className="absolute left-1/2 top-[45%] h-[194%] w-[178%] -translate-x-1/2 rounded-[50%] bg-[#91dac9]" />
+      <div className="absolute left-1/2 top-[36%] h-[216%] w-[202%] -translate-x-1/2 rounded-[50%] bg-[#b9e6d9]" />
+    </div>
+
+    <div className="absolute inset-x-0 top-0 z-10 flex items-center justify-between px-4 pt-3 text-[9px] font-semibold text-[#292522] sm:px-5 sm:pt-4 sm:text-[10px]">
+      <span className="flex h-6 w-6 items-center justify-center rounded-full bg-black/5" aria-hidden="true">×</span>
+      <span className="inline-flex items-center gap-1.5">
+        <span className="h-1.5 w-1.5 rounded-full bg-[#20a88e]" />
+        Focus
+      </span>
+    </div>
+
+    <div className="absolute inset-x-0 top-[22%] z-10 text-center text-[#1A1A1A]">
+      <p className="text-[15px] font-bold leading-none sm:text-[18px]" style={{ fontFamily: "'Source Serif 4', serif" }}>Geography</p>
+      <p className="mt-1 text-[7px] font-bold uppercase tracking-[0.16em] sm:text-[8px]">Focus · 25 min</p>
+    </div>
+
+    <div className="absolute inset-0 z-10 flex flex-col items-center justify-center pt-6 text-[#1A1A1A]">
+      <p className="font-mono text-[31px] font-bold tabular-nums tracking-[-0.06em] sm:text-[39px]">18:42</p>
+      <p className="mt-0.5 text-[7px] font-bold uppercase tracking-[0.16em] sm:text-[8px]">Time remaining</p>
+      <span className="mt-2.5 flex h-9 w-9 items-center justify-center rounded-full bg-[#383431] shadow-lg sm:h-11 sm:w-11" aria-hidden="true">
+        <span className="mr-1 h-3.5 w-1 rounded-sm bg-white sm:h-4" />
+        <span className="h-3.5 w-1 rounded-sm bg-white sm:h-4" />
+      </span>
+    </div>
+
+    <div className="absolute inset-x-4 bottom-3 z-10 sm:inset-x-5 sm:bottom-4" aria-hidden="true">
+      <div className="relative h-0.5 rounded-full bg-black/15">
+        <div className="h-full w-[26%] rounded-full bg-black/55" />
+        <span className="absolute left-[26%] top-1/2 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#1A1A1A]" />
+      </div>
+      <div className="mt-1.5 flex justify-between text-[7px] font-medium tabular-nums text-black/65 sm:text-[8px]">
+        <span>06:18 elapsed</span>
+        <span>18:42 remaining</span>
+      </div>
+    </div>
+  </div>
+);
+
 /** Screenshot with a graceful monogram fallback when the asset is missing. */
 const CardImage: React.FC<{ card: GuideCard }> = ({ card }) => {
   const [failed, setFailed] = useState(false);
+  if (card.id === 'study') return <StudyTimerPreview />;
   if (failed) {
     return (
       <div

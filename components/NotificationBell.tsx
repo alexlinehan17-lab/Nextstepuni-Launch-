@@ -8,6 +8,7 @@ import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { Bell, MessageSquare, Flame, TrendingUp, BookOpen, AlertTriangle, Megaphone, Heart, CheckCheck, type LucideIcon } from 'lucide-react';
 import { getNotifications, markNotificationRead, markAllRead, type AppNotification, type NotificationType } from './gc/gcNotifications';
+import { NOTIFICATION_PANEL_TOGGLE_EVENT } from '../utils/notificationPanel';
 
 const ICON_MAP: Record<NotificationType, LucideIcon> = {
   'gc-recommendation': BookOpen,
@@ -62,10 +63,24 @@ const NotificationBell: React.FC<NotificationBellProps> = ({ uid, onUnreadCountC
     return () => clearInterval(interval);
   }, [loadNotifications]);
 
+  // Sidebar and header controls share this one state transition. Keeping the
+  // panel state here avoids delayed synthetic clicks that can close and then
+  // immediately reopen the panel.
+  useEffect(() => {
+    const handleToggle = () => setIsOpen(open => !open);
+    window.addEventListener(NOTIFICATION_PANEL_TOGGLE_EVENT, handleToggle);
+    return () => window.removeEventListener(NOTIFICATION_PANEL_TOGGLE_EVENT, handleToggle);
+  }, []);
+
   // Click outside to close
   useEffect(() => {
     if (!isOpen) return;
     const handler = (e: MouseEvent) => {
+      const target = e.target instanceof Element ? e.target : null;
+      // An external sidebar toggle is part of the notification control. Let
+      // its click perform the single close transition instead of treating its
+      // preceding mousedown as an outside dismissal too.
+      if (target?.closest('[data-notification-toggle]')) return;
       if (panelRef.current && !panelRef.current.contains(e.target as Node)) {
         setIsOpen(false);
       }
@@ -96,6 +111,7 @@ const NotificationBell: React.FC<NotificationBellProps> = ({ uid, onUnreadCountC
     <div className="relative" ref={panelRef}>
       <button
         data-notification-bell
+        data-notification-toggle
         type="button"
         aria-label={isOpen ? 'Close notifications' : 'Open notifications'}
         aria-expanded={isOpen}

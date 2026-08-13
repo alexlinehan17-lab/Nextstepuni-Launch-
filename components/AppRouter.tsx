@@ -656,7 +656,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   if (viewState === 'innovation-zone') {
       return (
         <Suspense fallback={<LoadingSpinner />}>
-          <InnovationZone onBack={handleBackToTree} onSelectModule={handleSelectModule} user={user} initialSubjectProfile={studentProfile} savedJourneyResult={journeyResult} onJourneyComplete={setJourneyResult} settings={settings} updateSetting={updateSetting} onCosmeticUnlocksChange={(unlocks) => { setUnlockedAvatarSeeds(unlocks.avatarSeeds || []); setUnlockedThemes(unlocks.themeColors || []); setUnlockedCardStyles(unlocks.cardStyles || []); }} onStudyNow={handleStudyFromTimetable} dismissedGuides={dismissedGuides} onDismissGuide={handleDismissGuide} />
+          <InnovationZone onBack={handleBackToTree} user={user} initialSubjectProfile={studentProfile} savedJourneyResult={journeyResult} onJourneyComplete={setJourneyResult} settings={settings} updateSetting={updateSetting} onCosmeticUnlocksChange={(unlocks) => { setUnlockedAvatarSeeds(unlocks.avatarSeeds || []); setUnlockedThemes(unlocks.themeColors || []); setUnlockedCardStyles(unlocks.cardStyles || []); }} onStudyNow={handleStudyFromTimetable} dismissedGuides={dismissedGuides} onDismissGuide={handleDismissGuide} />
         </Suspense>
       );
   }
@@ -668,13 +668,11 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
         <ModuleErrorBoundary onBack={handleBackToCategory}>
           <Suspense fallback={<LoadingSpinner />}>
             {cameFromJourney && (
-              // Coral "back" banner sits at the very top of the viewport,
-              // respecting the iPhone's safe-area-top so it doesn't slide
-              // under the dynamic island. The wrapper below pushes the
-              // module content down by the banner's full height so the
-              // module's own header doesn't get covered.
+              // Keep this in normal document flow. A fixed banner competes
+              // with each module's own sticky mobile header and can obscure
+              // both its title and back control.
               <div
-                className="fixed top-0 left-0 right-0 z-[80] bg-[var(--accent-hex)] dark:bg-[var(--accent-hex)]"
+                className="relative z-10 bg-[var(--accent-hex)] dark:bg-[var(--accent-hex)]"
                 style={{ paddingTop: 'var(--sat, 0px)' }}
               >
                 <button
@@ -686,12 +684,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
                 </button>
               </div>
             )}
-            <div
-              // When the journey back-banner is present, offset the module
-              // content so its sticky top header lands BELOW the banner.
-              // Banner height ≈ 28px button + safe-area-inset-top.
-              style={cameFromJourney ? { paddingTop: 'calc(28px + var(--sat, 0px))' } : undefined}
-            >
+            <div>
               <ModuleComponent
                 onBack={handleBackToCategory}
                 progress={userProgress[currentModuleId] || { unlockedSection: 0 }}

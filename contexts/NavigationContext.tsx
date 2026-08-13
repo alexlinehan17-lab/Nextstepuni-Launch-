@@ -51,7 +51,7 @@ interface NavigationContextValue {
   navigateToTree: () => void;
   navigateToModules: () => void;
   navigateToCategory: (category: CategoryType) => void;
-  navigateToModule: (moduleId: string, currentViewState?: ViewState, currentCategory?: CategoryType | null) => void;
+  navigateToModule: (moduleId: string, currentViewState?: ViewState, currentCategory?: CategoryType | null, fromJourney?: boolean) => void;
   navigateToInnovationZone: (tool?: string | null) => void;
   navigateToDashboard: () => void;
   navigateToLearningPaths: () => void;
@@ -305,8 +305,10 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     window.scrollTo(0, 0);
   }, [navigate]);
 
-  const navigateToModule = useCallback((moduleId: string, currentViewState?: ViewState, currentCategory?: CategoryType | null) => {
-    const fromJourney = currentViewState === 'innovation-zone';
+  const navigateToModule = useCallback((moduleId: string, _currentViewState?: ViewState, currentCategory?: CategoryType | null, fromJourney = false) => {
+    // Journey provenance is explicit. Inferring it from the current screen is
+    // unsafe because global overlays (notably the mobile profile) can open a
+    // module while the Journey tool happens to be visible underneath.
     navigate({ type: 'NAVIGATE_TO_MODULE', moduleId, fromJourney, category: currentCategory });
     window.scrollTo(0, 0);
   }, [navigate]);

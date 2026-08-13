@@ -20,6 +20,7 @@ import { type StudentSubjectProfile } from './subjectData';
 import { useSettingsContext } from '../contexts/SettingsContext';
 import { CARD_STYLES } from '../themeData';
 import { getAvatarUrl } from '../utils/authUtils';
+import { toggleNotificationPanel } from '../utils/notificationPanel';
 // Lazy-loaded: ModuleShowcase pulls in ~442KB of subjectContent data; loading
 // it eagerly folded that into the entry chunk (audit 2026-06-01).
 const ModuleShowcase = lazy(() => import('./ModuleShowcase'));
@@ -269,11 +270,8 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
           <div className="border-t border-zinc-200 dark:border-zinc-800 mx-2 pt-2 flex flex-col gap-1">
             {/* Notifications */}
             <button
-              onClick={() => {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-                const bell = document.querySelector('[data-notification-bell]') as HTMLButtonElement | null;
-                if (bell) setTimeout(() => bell.click(), 300);
-              }}
+              data-notification-toggle
+              onClick={toggleNotificationPanel}
               className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
             >
               <div className="shrink-0 flex items-center justify-center w-[18px]">

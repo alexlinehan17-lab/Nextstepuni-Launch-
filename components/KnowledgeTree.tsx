@@ -21,6 +21,7 @@ import { getSubjectHex } from '../utils/subjectColors';
 import { SectionCard } from './SectionCard';
 import { ModulesIcon, InnovationZoneIcon, MyProgressIcon, LearningPathsIcon, MyJourneyIcon } from './sectionIcons';
 import { COLORS } from '../design/tokens';
+import { toggleNotificationPanel } from '../utils/notificationPanel';
 
 export type CategoryType =
   | 'architecture-mindset'
@@ -311,12 +312,8 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
         <div className="border-t border-zinc-200 dark:border-zinc-800 mx-2 pt-2 flex flex-col gap-1">
           {/* Notifications */}
           <button
-            onClick={() => {
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-              // Click the notification bell if it exists
-              const bell = document.querySelector('[data-notification-bell]') as HTMLButtonElement | null;
-              if (bell) setTimeout(() => bell.click(), 300);
-            }}
+            data-notification-toggle
+            onClick={toggleNotificationPanel}
             className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
           >
             <div className="shrink-0 flex items-center justify-center w-[18px] relative">

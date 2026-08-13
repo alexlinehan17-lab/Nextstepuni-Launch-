@@ -60,6 +60,8 @@ import { useNavigation } from '../contexts/NavigationContext';
 import { ToolHeader } from './ToolHeader';
 import ToolIconBlob, { type ToolIconKey } from './ToolIconBlob';
 import { isActiveSeniorYear, isLcaYear } from '../utils/authUtils';
+import LaunchpadGuidance from './LaunchpadGuidance';
+import { TOOL_GUIDANCE, type ToolRecommendation } from './launchpadGuidanceData';
 
 // ── Editorial chrome registry ──────────────────────────────────────────
 //
@@ -127,7 +129,6 @@ interface StudyNowBlock {
 
 interface InnovationZoneProps {
   onBack: () => void;
-  onSelectModule?: (moduleId: string) => void;
   user?: { uid: string; school?: string; yearGroup?: YearGroup; curriculumLevel?: 'junior' | 'senior' } | null;
   /** Profile already loaded by ProgressContext. It unlocks tools immediately
    *  and is the fallback when the local-only dev session cannot read Firestore. */
@@ -165,11 +166,18 @@ const ToolLoadingFallback: React.FC = () => <LoadingSpinner />;
 
 // ─── InnovationZone ──────────────────────────────────────────────────────────
 
-const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule, user, initialSubjectProfile, savedJourneyResult, onJourneyComplete, settings: _settings, updateSetting: _updateSetting, onCosmeticUnlocksChange, onStudyNow, dismissedGuides: _dismissedGuides, onDismissGuide: _onDismissGuide }) => {
+const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSubjectProfile, savedJourneyResult, onJourneyComplete, settings: _settings, updateSetting: _updateSetting, onCosmeticUnlocksChange, onStudyNow, dismissedGuides: _dismissedGuides, onDismissGuide: _onDismissGuide }) => {
     const { showToast } = useToast();
     const nav = useNavigation();
     const activeTool = nav.state.activeTool;
     const setActiveTool = nav.setActiveTool;
+    const navigateToModule = nav.navigateToModule;
+    const handleJourneySelectModule = useCallback((moduleId: string) => {
+        // This is the one route that should expose “Back to Journey Results”.
+        // Other module links—including the global profile's Today's Focus—are
+        // deliberately source-neutral even if Journey is open underneath.
+        navigateToModule(moduleId, 'innovation-zone', null, true);
+    }, [navigateToModule]);
 
     // Retired tool aliases keep old bookmarks and persisted navigation useful.
     useEffect(() => {
@@ -442,7 +450,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
             iconBg: 'bg-amber-100 dark:bg-amber-900/30', iconColor: 'text-amber-600 dark:text-amber-400',
             accentBarColor: 'bg-amber-500', tagBg: 'bg-amber-100 dark:bg-amber-900/30', tagText: 'text-amber-700 dark:text-amber-400',
             hoverBorder: 'hover:border-amber-400/50 dark:hover:border-amber-500/40',
-            component: <AcademicJourneyGame onSelectModule={onSelectModule} user={user} savedJourneyResult={savedJourneyResult} onJourneyComplete={onJourneyComplete} />,
+            component: <AcademicJourneyGame onSelectModule={handleJourneySelectModule} user={user} savedJourneyResult={savedJourneyResult} onJourneyComplete={onJourneyComplete} />,
         },
         {
             id: 'cao-simulator', title: 'Points Passport', description: 'Your points, mock history and grade planner in one place.', icon: Calculator, needsProfile: true,
@@ -657,6 +665,8 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     ];
 
     const [activeFilter, setActiveFilter] = useState<'all' | 'understand' | 'practise' | 'plan' | 'track'>('all');
+    const recommendationStorageKey = `nextstepuni:launchpad-recommendation:${user?.uid ?? 'guest'}`;
+    const [toolRecommendation, setToolRecommendation] = useState<ToolRecommendation | null>(null);
 
     const TOOL_CATEGORIES: Record<string, 'understand' | 'practise' | 'plan' | 'track'> = {
         'mark-bank': 'practise',
@@ -708,6 +718,32 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
     const filteredTools = activeFilter === 'all'
         ? curriculumVisibleTools
         : curriculumVisibleTools.filter(t => TOOL_CATEGORIES[t.id] === activeFilter);
+    const curriculumVisibleToolIds = curriculumVisibleTools.map(tool => tool.id).join('|');
+
+    useEffect(() => {
+      try {
+        const stored = window.localStorage.getItem(recommendationStorageKey);
+        if (!stored) {
+          setToolRecommendation(null);
+          return;
+        }
+        const parsed = JSON.parse(stored) as ToolRecommendation;
+        const stillAvailable = curriculumVisibleToolIds.split('|').includes(parsed.toolId);
+        setToolRecommendation(stillAvailable ? parsed : null);
+        if (!stillAvailable) window.localStorage.removeItem(recommendationStorageKey);
+      } catch {
+        setToolRecommendation(null);
+        window.localStorage.removeItem(recommendationStorageKey);
+      }
+      // The visible catalogue can change with the student's curriculum/year.
+      // The ids string is stable; tool records include JSX and are rebuilt.
+    }, [recommendationStorageKey, curriculumVisibleToolIds]);
+
+    const handleRecommendationChange = useCallback((next: ToolRecommendation | null) => {
+      setToolRecommendation(next);
+      if (next) window.localStorage.setItem(recommendationStorageKey, JSON.stringify(next));
+      else window.localStorage.removeItem(recommendationStorageKey);
+    }, [recommendationStorageKey]);
 
     const currentTool = tools.find(t => t.id === activeTool);
 
@@ -766,6 +802,19 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                 >
                     {/* Inline points panel — replaces the old PointsExplainer modal */}
                     <PointsPanel open={showPointsPanel} onHide={hidePointsPanel} />
+
+                    <LaunchpadGuidance
+                      tools={curriculumVisibleTools.map(tool => ({
+                        id: tool.id,
+                        title: tool.title,
+                        description: tool.description,
+                        tag: tool.tag,
+                        needsProfile: tool.needsProfile,
+                      }))}
+                      recommendation={toolRecommendation}
+                      onRecommendationChange={handleRecommendationChange}
+                      onOpenTool={handleToolClick}
+                    />
 
                     {/* Filter pills + Points trigger — same row, opposite ends */}
                     <div className="mb-8 flex items-center justify-between gap-3 flex-wrap">
@@ -890,6 +939,12 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, onSelectModule,
                                         }`}>
                                             {disabled ? 'Complete your Subject Profile to unlock.' : tool.description}
                                         </p>
+
+                                        {!disabled && TOOL_GUIDANCE[tool.id] && (
+                                            <p className="mt-3 border-t border-[var(--outline-soft)] pt-3 text-[11px] leading-relaxed text-[var(--ink-secondary)]">
+                                                <span className="font-semibold text-[var(--ink-primary)]">Best when</span> {TOOL_GUIDANCE[tool.id].bestWhen}.
+                                            </p>
+                                        )}
 
                                         {/* GC recommendation badge if present */}
                                         {gcRecommended && !disabled && (
