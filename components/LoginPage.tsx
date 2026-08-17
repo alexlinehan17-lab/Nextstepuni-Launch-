@@ -14,7 +14,8 @@ import { signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfi
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { getFunctions, httpsCallable } from 'firebase/functions';
 import { type SessionUser, getAvatarUrl, AVATAR_SEEDS } from '../utils/authUtils';
-import { awaitWriteOrTimeout } from '../utils/firestoreWrite';
+import { awaitWriteOrTimeout, saveInBackground } from '../utils/firestoreWrite';
+import { logError } from '../utils/logError';
 import { SCHOOLS } from '../schoolData';
 import { createDemoStudentSession } from '../data/devStudent';
 import { LegalModal, type LegalDoc, PRIVACY_POLICY_VERSION, CONSENT_BASIS } from './legal/LegalModal';
@@ -642,14 +643,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       const joinFn = httpsCallable<{ school: string; code: string }, { success: boolean }>(getFunctions(app), 'claimStudentSchool');
       await joinFn({ school, code: joinCode.trim() });
       await createdUser.getIdToken(true);
-      // Late-rejection cleanup: if the /users write is rejected AFTER we stop
-      // waiting, the Auth account would otherwise survive with no name, avatar,
-      // createdAt or consent record — an orphan the GC sees as "New" forever.
-      const rollbackAccount = (err: unknown) => {
-        console.error('[LoginPage] user doc rejected after sign-up completed:', err);
-        deleteUser(createdUser!).catch(e => console.error('[LoginPage] orphan cleanup failed:', e));
-      };
-      await writeUserDoc(setDoc(doc(db, 'users', createdUser.uid), {
+      const userDocPayload = {
         name: name.trim(),
         avatar: selectedAvatar,
         // Signup date on the user doc, not just on subjectProfile — a student
@@ -664,7 +658,38 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           acceptedAt: new Date().toISOString(),
           basis: CONSENT_BASIS,
         },
-      }, { merge: true }), 'LoginPage.registerUserDoc', rollbackAccount);
+      };
+      // Late rejection: the /users write was still in flight when we stopped
+      // waiting, and the answer — a rejection — arrives seconds later.
+      //
+      // This handler used to call deleteUser(). By the time it runs the student
+      // is signed in and part-way through onboarding, so deleting the account
+      // signed them out mid-flow and destroyed the account they had just made:
+      // they landed back on the login screen with no way back in, and no error
+      // that explained it. The cure was far worse than the orphaned user doc it
+      // was written to prevent, and because it is a timing race it hit only
+      // some students, which is what made it so hard to see (2026-08-17).
+      //
+      // Retry instead. setDoc(merge) is idempotent, so a transient failure —
+      // by far the likeliest cause here — self-heals. If the retry also fails
+      // the student keeps their session and their place; AuthContext's
+      // no-user-doc fallback carries them, and the write flushes from the
+      // Firestore cache on reconnect. NEVER destroy a live session from a
+      // background callback.
+      const retryUserDoc = (err: unknown) => {
+        logError('LoginPage.registerUserDoc.lateRejection', err);
+        saveInBackground(
+          setDoc(doc(db, 'users', createdUser!.uid), userDocPayload, { merge: true }),
+          'LoginPage.registerUserDocRetry',
+          undefined,
+          { silent: true },
+        );
+      };
+      await writeUserDoc(
+        setDoc(doc(db, 'users', createdUser.uid), userDocPayload, { merge: true }),
+        'LoginPage.registerUserDoc',
+        retryUserDoc,
+      );
       handleLoginSuccess({
         uid: createdUser.uid,
         name: name.trim(),
