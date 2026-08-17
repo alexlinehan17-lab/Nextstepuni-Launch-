@@ -8,7 +8,6 @@ import {
   Eye,
   Layers3,
   Pause,
-  Play,
   RotateCcw,
   Volume2,
   X,
@@ -60,9 +59,8 @@ const highlightLabel: Record<QuestionHighlightKind, string> = {
 
 const ExactQuestion: React.FC<{
   model: WaysInQuestionModel;
-  source: WaysInQuestionSource;
   annotated?: boolean;
-}> = ({ model, source, annotated = false }) => {
+}> = ({ model, annotated = false }) => {
   if (!model.exactText) {
     return (
       <p className="wi-empty-copy">
@@ -106,7 +104,7 @@ const SourceSheet: React.FC<{
     </div>
     <div className="wi-source-body">
       {source.stem && !preview && <p className="wi-source-stem">{source.stem}</p>}
-      {preview ?? <ExactQuestion model={model} source={source} />}
+      {preview ?? <ExactQuestion model={model} />}
       {!preview && source.figure && (
         <figure className="wi-source-figure">
           <img src={source.figure.src} alt={source.figure.alt} />
@@ -480,7 +478,7 @@ const ShowMeView: React.FC<{
             ))}
           </div>
           <div className="wi-colour-question">
-            <ExactQuestion model={model} source={source} annotated />
+            <ExactQuestion model={model} annotated />
           </div>
           {model.highlights.length === 0 && (
             <p className="wi-muted-copy">No wording was highlighted because the source did not contain enough reliable searchable text. Use the original crop beside you.</p>
