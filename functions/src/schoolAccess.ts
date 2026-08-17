@@ -3,6 +3,7 @@ import { logger } from "firebase-functions/v2";
 import { getFirestore } from "firebase-admin/firestore";
 import { timingSafeEqual } from "crypto";
 import { syncAuthorizationClaims } from "./authClaims";
+import { SCHOOL_JOIN_CODES, normaliseJoinCode } from "./schoolJoinPolicy";
 
 /**
  * Student school binding — the tenant-isolation trust anchor for students
@@ -21,20 +22,10 @@ import { syncAuthorizationClaims } from "./authClaims";
  * and human-shareable on purpose; replace with per-school rotatable codes held
  * in gcSettings (+ App Check) before wide rollout — see security review L-7.
  */
-const SCHOOL_JOIN_CODES: Record<string, string> = {
-  marino: "Marino01",
-  joeys: "Joey's02",
-  larkin: "Larkin03",
-  oconnells: "O'Connell's04",
-  mountcarmel: "Mount Carmel05",
-  rosmini: "Rosmini06",
-  pwc: "PwC07",
-};
-
-/** Case/whitespace-insensitive normalisation for the human-typed code. */
-function normalise(s: string): string {
-  return s.trim().toLowerCase();
-}
+// The codes and the matching rule live in ./schoolJoinPolicy so they can be
+// unit-tested without pulling in firebase-admin. See that file for why the
+// match ignores punctuation — three of the seven codes were unenterable on a
+// phone keyboard until 2026-08-17.
 
 /** Constant-time compare that never throws on length mismatch. */
 function safeEqual(a: string, b: string): boolean {
@@ -98,7 +89,7 @@ export const claimStudentSchool = onCall({ cors: true }, async (request) => {
   };
 
   const expected = SCHOOL_JOIN_CODES[school];
-  if (!safeEqual(normalise(code), normalise(expected))) {
+  if (!safeEqual(normaliseJoinCode(code), normaliseJoinCode(expected))) {
     await recordFailure();
     logger.info(`claimStudentSchool: bad code by ${uid} for "${school}" (${failCount + 1}/${MAX_FAILURES})`);
     throw new HttpsError("permission-denied", "That join code is not correct.");
