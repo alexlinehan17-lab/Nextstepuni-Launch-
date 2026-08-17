@@ -17,6 +17,7 @@ import {
 } from './subjectData';
 import { type NorthStar } from '../types';
 import { type CurriculumLevel, isLcaYear, yearGroupToCurriculumLevel } from '../utils/authUtils';
+import { getDefaultExamDate } from '../utils/examDates';
 import NorthStarOnboarding from './NorthStarOnboarding';
 import { COLORS } from '../design/tokens';
 
@@ -130,15 +131,6 @@ function getTargetGradePillClass(isSelected: boolean): string {
 }
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
-
-function getDefaultExamDate(): string {
-  const year = new Date().getFullYear();
-  const june1 = new Date(year, 5, 1);
-  const dayOfWeek = june1.getDay();
-  const daysUntilWed = (3 - dayOfWeek + 7) % 7;
-  const firstWed = new Date(year, 5, 1 + daysUntilWed);
-  return firstWed.toISOString().split('T')[0];
-}
 
 function getDaysUntil(dateStr: string): number {
   const target = new Date(dateStr);
