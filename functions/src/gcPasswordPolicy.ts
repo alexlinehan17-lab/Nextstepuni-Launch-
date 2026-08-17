@@ -79,6 +79,40 @@ export const PASSWORD_ALPHABET = "ABCDEFGHJKMNPQRSTUVWXYZabcdefghjkmnpqrstuvwxyz
 export const PASSWORD_LENGTH = 14;
 
 /**
+ * Minimum length for a password the administrator types themselves.
+ *
+ * Shorter than the 14 we generate, because a human-chosen password gets read
+ * down a phone and retyped, but well above Firebase's own 6-character floor: a
+ * counsellor login opens every student record in a school, and there is no
+ * forced-change-on-first-use behind it. Long beats clever here, so length is
+ * the only rule — no character-class theatre that pushes people towards
+ * Passw0rd! and a sticky note.
+ */
+export const MIN_SUPPLIED_PASSWORD_LENGTH = 10;
+export const MAX_SUPPLIED_PASSWORD_LENGTH = 128;
+
+/** Validity of an administrator-supplied password. Reason is for the UI. */
+export type SuppliedPasswordCheck =
+  | { ok: true; password: string }
+  | { ok: false; reason: "type" | "short" | "long" | "blank" };
+
+/**
+ * Validate a typed password. Enforced on the SERVER: the dashboard checks the
+ * same rule for a fast error, but a client check is a courtesy, not a control.
+ *
+ * Not trimmed — leading or trailing spaces are legitimate characters in a
+ * password, and silently altering what someone typed would mean the password
+ * they wrote down is not the one that was set.
+ */
+export function checkSuppliedPassword(password: unknown): SuppliedPasswordCheck {
+  if (typeof password !== "string") return { ok: false, reason: "type" };
+  if (password.trim() === "") return { ok: false, reason: "blank" };
+  if (password.length < MIN_SUPPLIED_PASSWORD_LENGTH) return { ok: false, reason: "short" };
+  if (password.length > MAX_SUPPLIED_PASSWORD_LENGTH) return { ok: false, reason: "long" };
+  return { ok: true, password };
+}
+
+/**
  * Build a password from injected randomness, so the generator is testable and
  * the callable keeps using a CSPRNG (crypto.randomInt), never Math.random.
  */

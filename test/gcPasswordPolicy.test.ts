@@ -10,10 +10,15 @@
  */
 import { describe, expect, it } from 'vitest';
 
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+
 import {
+  MIN_SUPPLIED_PASSWORD_LENGTH,
   PASSWORD_ALPHABET,
   PASSWORD_LENGTH,
   SCHOOL_NAMES,
+  checkSuppliedPassword,
   buildPassword,
   gcAddressToReset,
   isResettableGcAddress,
@@ -101,5 +106,42 @@ describe('provisioning a counsellor identity', () => {
       expect(SCHOOL_NAMES[school.id], school.id).toBe(school.name);
     }
     expect(Object.keys(SCHOOL_NAMES).sort()).toEqual([...SCHOOLS].map(s => s.id).sort());
+  });
+});
+
+describe('an administrator-typed password', () => {
+  it('accepts a long enough one exactly as typed', () => {
+    // Not trimmed: spaces are legitimate characters, and silently altering the
+    // input would mean the password written down is not the one that was set.
+    expect(checkSuppliedPassword('correct horse battery')).toEqual({
+      ok: true, password: 'correct horse battery',
+    });
+    expect(checkSuppliedPassword(' padded123 ')).toEqual({ ok: true, password: ' padded123 ' });
+  });
+
+  it('rejects one that is too short for an account that opens a school', () => {
+    expect(checkSuppliedPassword('short').ok).toBe(false);
+    expect(checkSuppliedPassword('a'.repeat(MIN_SUPPLIED_PASSWORD_LENGTH - 1)).ok).toBe(false);
+    expect(checkSuppliedPassword('a'.repeat(MIN_SUPPLIED_PASSWORD_LENGTH)).ok).toBe(true);
+  });
+
+  it('rejects blank, absurd and non-string input', () => {
+    expect(checkSuppliedPassword('           ')).toEqual({ ok: false, reason: 'blank' });
+    expect(checkSuppliedPassword('a'.repeat(200))).toEqual({ ok: false, reason: 'long' });
+    expect(checkSuppliedPassword(undefined)).toEqual({ ok: false, reason: 'type' });
+    expect(checkSuppliedPassword(12345678901)).toEqual({ ok: false, reason: 'type' });
+  });
+
+  it('is comfortably above Firebase\'s own 6-character floor', () => {
+    expect(MIN_SUPPLIED_PASSWORD_LENGTH).toBeGreaterThanOrEqual(10);
+  });
+
+  it('agrees with the copy of the rule in the admin panel', () => {
+    // The panel duplicates the constant so the client never imports server
+    // code. A drift would show the typist one rule and enforce another.
+    const panel = readFileSync(
+      resolve(__dirname, '..', 'components', 'AdminGcAccessPanel.tsx'), 'utf8',
+    );
+    expect(panel).toContain(`const MIN_SUPPLIED_PASSWORD_LENGTH = ${MIN_SUPPLIED_PASSWORD_LENGTH};`);
   });
 });

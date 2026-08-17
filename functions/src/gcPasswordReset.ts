@@ -8,7 +8,14 @@ import { getFirestore, FieldValue } from "firebase-admin/firestore";
 import { HttpsError, onCall } from "firebase-functions/v2/https";
 import { logger } from "firebase-functions/v2";
 import { randomInt } from "crypto";
-import { SCHOOL_NAMES, buildPassword, gcAddressToReset, schoolIdFromGcAddress } from "./gcPasswordPolicy";
+import {
+  MIN_SUPPLIED_PASSWORD_LENGTH,
+  SCHOOL_NAMES,
+  buildPassword,
+  checkSuppliedPassword,
+  gcAddressToReset,
+  schoolIdFromGcAddress,
+} from "./gcPasswordPolicy";
 import { syncAuthorizationClaims } from "./authClaims";
 import { isAdminEmail } from "./adminIdentity";
 
@@ -43,7 +50,7 @@ export const adminResetGcPassword = onCall({ cors: true }, async (request) => {
     throw new HttpsError("permission-denied", "Only the administrator can reset a counsellor login.");
   }
 
-  const { email } = request.data as { email?: string };
+  const { email, password: supplied } = request.data as { email?: string; password?: string };
   const target = gcAddressToReset(email);
   if (!target) {
     throw new HttpsError(
@@ -60,7 +67,28 @@ export const adminResetGcPassword = onCall({ cors: true }, async (request) => {
     throw new HttpsError("not-found", "No counsellor account exists for that school yet.");
   }
 
-  const password = buildPassword(randomInt);
+  // The administrator may type a password (so it can be agreed with the school
+  // in advance) or let one be generated. Validated HERE, not just in the
+  // dashboard: a client-side check is a courtesy to the typist, never a
+  // control. The password is never logged, on either path.
+  let password: string;
+  let generated: boolean;
+  if (supplied === undefined || supplied === null) {
+    password = buildPassword(randomInt);
+    generated = true;
+  } else {
+    const check = checkSuppliedPassword(supplied);
+    if (!check.ok) {
+      throw new HttpsError(
+        "invalid-argument",
+        check.reason === "long"
+          ? "That password is too long."
+          : `Choose a password of at least ${MIN_SUPPLIED_PASSWORD_LENGTH} characters.`,
+      );
+    }
+    password = check.password;
+    generated = false;
+  }
   try {
     await auth.updateUser(uid, { password });
   } catch (err) {
@@ -105,9 +133,10 @@ export const adminResetGcPassword = onCall({ cors: true }, async (request) => {
     targetEmail: target,
     targetUid: uid,
     resetBy: request.auth.uid,
+    passwordGenerated: generated,
     resetAt: FieldValue.serverTimestamp(),
   }).catch(err => logger.error("adminResetGcPassword: audit write failed", err));
 
-  logger.info(`adminResetGcPassword: reset ${target} by ${request.auth.uid}`);
-  return { success: true as const, email: target, password };
+  logger.info(`adminResetGcPassword: reset ${target} by ${request.auth.uid} (${generated ? "generated" : "chosen"})`);
+  return { success: true as const, email: target, password, generated };
 });
