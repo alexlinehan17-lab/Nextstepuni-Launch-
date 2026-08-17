@@ -20,6 +20,9 @@ export { claimStaffAccess } from "./staffAccess";
 export { claimStudentSchool } from "./schoolAccess";
 // Anonymous product feedback — see ./anonymousFeedback.ts.
 export { submitAnonymousFeedback } from "./anonymousFeedback";
+// Admin-only reset for the derived gc-{school}@nextstep.app logins, whose
+// mailboxes do not exist so the console's emailed reset goes nowhere.
+export { adminResetGcPassword } from "./gcPasswordReset";
 
 /**
  * resetStudentPassword

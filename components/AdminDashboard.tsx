@@ -6,13 +6,14 @@ import React, { useState, useEffect } from 'react';
 import { MotionDiv } from './Motion';
 import { type CourseData } from './Library';
 import { type SessionUser, getAvatarUrl } from '../utils/authUtils';
-import { GraduationCap, LogOut, Trash2, AlertTriangle, MessageSquareText, Users, TrendingUp } from 'lucide-react';
+import { GraduationCap, LogOut, Trash2, AlertTriangle, MessageSquareText, Users, TrendingUp, KeyRound } from 'lucide-react';
 import { type CategoryType } from './KnowledgeTree';
 import app, { db } from '../firebase';
 import { collection, getDocs, query, limit, where, documentId } from 'firebase/firestore';
 import { getFunctions, httpsCallable } from 'firebase/functions';
 import AdminFeedbackInbox from './AdminFeedbackInbox';
 import AdminFunnelPanel from './AdminFunnelPanel';
+import AdminGcAccessPanel from './AdminGcAccessPanel';
 
 // FIX: Cast motion components to any to bypass broken type definitions
 
@@ -116,7 +117,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
     const [isLoading, setIsLoading] = useState(true);
     const [deleteTarget, setDeleteTarget] = useState<SessionUser | null>(null);
     const [isDeleting, setIsDeleting] = useState(false);
-    const [activeView, setActiveView] = useState<'students' | 'feedback' | 'funnel'>('students');
+    const [activeView, setActiveView] = useState<'students' | 'feedback' | 'funnel' | 'gc-access'>('students');
 
     // Full cascade delete via the requestAccountDeletion Cloud Function (Admin
     // SDK): removes the Auth account + every Firestore collection holding the
@@ -244,9 +245,26 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
             <TrendingUp size={16} />
             First run
           </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={activeView === 'gc-access'}
+            onClick={() => setActiveView('gc-access')}
+            className="flex items-center gap-2 rounded-full border-2 px-4 py-2 text-sm font-bold"
+            style={{
+              borderColor: activeView === 'gc-access' ? '#F26B1F' : '#1A1A1A',
+              backgroundColor: activeView === 'gc-access' ? '#F26B1F' : '#FFFFFF',
+              color: activeView === 'gc-access' ? '#FFFFFF' : '#1A1A1A',
+            }}
+          >
+            <KeyRound size={16} />
+            Counsellor logins
+          </button>
         </div>
 
-        {activeView === 'funnel' ? (
+        {activeView === 'gc-access' ? (
+          <AdminGcAccessPanel />
+        ) : activeView === 'funnel' ? (
           <AdminFunnelPanel />
         ) : activeView === 'feedback' ? (
           <AdminFeedbackInbox />

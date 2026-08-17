@@ -135,7 +135,7 @@ const AdminFunnelPanel: React.FC = () => {
       </div>
 
       {error && (
-        <p role="alert" className="mb-4 flex items-start gap-2 rounded-xl border-2 border-[#B54D14] bg-[#FDEEDF] px-4 py-3 text-sm text-[#8C3A0E]">
+        <p role="alert" className="mb-4 flex items-start gap-2 rounded-r-[10px] border-l-[3px] border-[#F26B1F] bg-[#FDEEDF] px-4 py-3 text-sm italic text-[#8C3A0E]">
           <TriangleAlert size={16} className="mt-0.5 shrink-0" />
           {error}
         </p>
