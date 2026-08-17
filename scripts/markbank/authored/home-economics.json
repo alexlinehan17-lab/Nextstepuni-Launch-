@@ -14294,5 +14294,774 @@
    }
   ],
   "notes": "One flat list, taken in order to the cap."
+ },
+ {
+  "id": "he-2021-ol-sb-q1b",
+  "topicId": "home-economics-0-1",
+  "conceptId": "causes-of-obesity",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2021 OL Section B Q1(b)",
+  "questionText": "State three causes of obesity.",
+  "stem": "'More than a quarter of young people growing up in Ireland are obese or overweight according to the latest Growing Up in Ireland survey.' (www.irishexaminer.com) The table gives nutritional information per 100 g for full fat, low fat and fat free natural yoghurt.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 causes @ 4 marks each (graded 4:2:0)",
+   "answer": 3,
+   "ofParts": 8,
+   "perPart": 4
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "State three causes of obesity",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Three causes at 4 marks, graded 4:2:0 — even though the question says \"state\", naming a cause is only 2 and the other 2 comes from saying how it leads to weight gain. The scheme's first cause is the underlying one all the others sit inside: an imbalance between energy taken in and energy used. Sedentary lifestyle and lack of exercise are the same cause twice.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Imbalance in energy intake and energy expenditure",
+      "sedentary lifestyle",
+      "lack of exercise",
+      "psychological factors e.g. depression, boredom",
+      "hormonal imbalance (thyroid gland)",
+      "unhealthy eating patterns e.g. snacking/late night eating",
+      "poor food choices e.g. fried/sugary foods",
+      "excessive use of processed foods"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, evenly priced."
+ },
+ {
+  "id": "he-2021-ol-sb-q1c",
+  "topicId": "home-economics-0-7",
+  "conceptId": "lipids-account-ol",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2021 OL Section B Q1(c)",
+  "questionText": "Give an account of lipids (fats) under each of the following headings: classification; functions in the body; dietary sources.",
+  "stem": "'More than a quarter of young people growing up in Ireland are obese or overweight according to the latest Growing Up in Ireland survey.' (www.irishexaminer.com) The table gives nutritional information per 100 g for full fat, low fat and fat free natural yoghurt.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "classification 2 classes @ 4 marks (graded 4:0); functions 2 @ 4 marks (graded 4:2:0); sources 4 @ 3 marks (graded 3:2:0)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 28,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Classification",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Two classes at 4 marks, all-or-nothing — 8 marks for two words, the best return on the paper. The scheme accepts two different systems: by origin (animal, plant, marine) or by saturation (saturated, unsaturated). Pick one system and give two from it.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Animal",
+      "plant",
+      "marine",
+      "saturated",
+      "unsaturated",
+      "monounsaturated",
+      "polyunsaturated"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Functions in the body",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Two functions at 4 marks, graded 4:2:0 — so unlike classification, a half-made point scores here. Heat and energy is one function, not two; pair it with insulation, protecting organs, or carrying the fat-soluble vitamins A, D, E and K.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Heat",
+      "energy",
+      "excess lipids are stored as adipose tissue, insulating the body and acting as an energy reserve",
+      "lipids protect delicate organs",
+      "supply fat soluble vitamins A, D, E & K",
+      "source of essential fatty acids",
+      "delays the feeling of hunger",
+      "needed to build cell walls",
+      "omega fatty acids improve concentration and brain activity",
+      "some unsaturated lipids help lower cholesterol",
+      "speeds up the transmission of nerve impulses"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "Dietary sources",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Four sources at 3 marks — the largest strand at 12 marks. Naming the food is 2 and saying which kind of fat it provides is the third mark, so pairing oily fish or olives with unsaturated fat earns more than a bare list.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "Meat",
+      "eggs",
+      "oily fish",
+      "dairy products",
+      "soya beans",
+      "avocados",
+      "olives",
+      "nuts and nut oils",
+      "vegetable oils",
+      "fish liver oils",
+      "margarine",
+      "seeds"
+     ]
+    }
+   }
+  ],
+  "notes": "28 marks split 8 + 8 + 12 across the three headings. Classification is all-or-nothing while the other two are not, which is worth knowing before you spend time on it."
+ },
+ {
+  "id": "he-2021-ol-sb-q1d",
+  "topicId": "home-economics-0-7",
+  "conceptId": "reducing-fat-intake",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2021 OL Section B Q1(d)",
+  "questionText": "Discuss four factors to be considered when selecting and buying foods to reduce fat intake in the diet.",
+  "stem": "'More than a quarter of young people growing up in Ireland are obese or overweight according to the latest Growing Up in Ireland survey.' (www.irishexaminer.com) The table gives nutritional information per 100 g for full fat, low fat and fat free natural yoghurt.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 factors @ 5 marks each (graded 5:3:0)",
+   "answer": 4,
+   "ofParts": 11,
+   "perPart": 5
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Discuss four factors to be considered when selecting and buying foods to reduce fat intake in the diet",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "Four factors at 5 marks, graded 5:3:0 — named is 3, discussed is 5. The traffic-light label system is the most specific point in the scheme and the easiest to develop: colour coding shows at a glance whether a food is high, medium or low in fat. Several other entries are versions of \"read the label\", and a marker will pay for that once.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "Choose food naturally low in fat e.g. fruit and vegetables",
+      "avoid high fat convenience foods",
+      "ask for visible fat to be cut off meat",
+      "choose leaner cuts of meat",
+      "avoid hydrogenated fats",
+      "compare labels and choose foods that are lower in saturated fats",
+      "follow traffic light system e.g. labels that include colour coding indicate if the food is high, medium or low in fat",
+      "read labels",
+      "choose fat free products",
+      "plan meals and snacks to include low fat foods",
+      "use low fat alternatives"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in scheme order to the cap."
+ },
+ {
+  "id": "he-2021-ol-sb-q2a",
+  "topicId": "home-economics-0-1",
+  "conceptId": "pregnancy-dietary-requirements-ol",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2021 OL Section B Q2(a)",
+  "questionText": "Discuss four dietary requirements of pregnant women.",
+  "stem": "Healthy eating during pregnancy is critical to the baby's growth and development.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 requirements @ 5 marks each (graded 5:3:0)",
+   "answer": 4,
+   "ofParts": 14,
+   "perPart": 5
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Discuss four dietary requirements of pregnant women",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "Four requirements at 5 marks, graded 5:3:0. Every entry in the scheme pairs a nutrient with a reason, and that pairing is the difference between 3 and 5 — folic acid is a 3, folic acid before and during pregnancy to reduce the risk of neural tube defects is a 5. The list also includes what to avoid (raw eggs, unpasteurised cheese, pâté, alcohol), and those count as requirements too.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "Protein for growth and development of new cells and tissues",
+      "lipids/fatty acids for healthy nervous system",
+      "fibre to prevent constipation",
+      "folic acid/folate prior and during pregnancy to reduce possibility of neural tube defects",
+      "iron for blood",
+      "calcium and vitamin D for bone development",
+      "vitamin C to help absorb iron, fight infection",
+      "water to prevent constipation and dehydration",
+      "energy intake should be increased slightly",
+      "omega 3 fatty acids for development of nervous system",
+      "salt intake should be reduced",
+      "reduce intake of raw eggs, unpasteurised cheese",
+      "pâté",
+      "avoid alcohol"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in scheme order to the cap."
+ },
+ {
+  "id": "he-2021-ol-sb-q2c",
+  "topicId": "home-economics-1-2",
+  "conceptId": "food-labelling-buying",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2021 OL Section B Q2(c)",
+  "questionText": "Explain how food labelling assists consumers when buying food.",
+  "stem": "Healthy eating during pregnancy is critical to the baby's growth and development.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 points @ 4 marks each (graded 4:2:0)",
+   "answer": 3,
+   "ofParts": 14,
+   "perPart": 4
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Explain how food labelling assists consumers when buying food",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Three points at 4 marks. \"Explain how it assists\" is the whole question — listing what a label contains is 2, and saying what the shopper can then do is the other 2. Allergens and use-by dates are the two that change a decision most obviously.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Informs consumer on properties of prepacked food",
+      "can make an informed choice",
+      "information on genetically modified ingredients",
+      "nutritional information given",
+      "allergens listed/highlighted",
+      "ingredients listed in descending order of weight",
+      "net quantity",
+      "country of origin",
+      "use by date, best before date",
+      "instructions on cooking, storing",
+      "name and address of manufacturer",
+      "quality assurance e.g. Bord Bia mark",
+      "organic produce",
+      "fair trade"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap."
+ },
+ {
+  "id": "he-2021-ol-sb-q3b",
+  "topicId": "home-economics-0-9",
+  "conceptId": "vegetables-cooking-storage",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2021 OL Section B Q3(b)",
+  "questionText": "Outline: (i) the effects of cooking on vegetables; (ii) the guidelines for storing vegetables.",
+  "stem": "Irish grown vegetables get to our shelves quickly, and so are more nutritious.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "effects 3 @ 3 marks each (graded 3:2:0); storage guidelines 3 @ 3 marks each (graded 3:2:0)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The effects of cooking on vegetables",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "Three effects at 3 marks. These are changes to the vegetable itself — starch grains bursting, cellulose softening, enzymes denatured, vitamin C destroyed — not opinions about taste. Naming the effect is 2; saying what it does for digestibility or nutrient content is the third mark.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "increases digestibility",
+      "starch grains burst and absorb water",
+      "cellulose softens",
+      "micro-organism are destroyed",
+      "enzymes are denatured",
+      "change in colour, flavour and texture",
+      "loss of water-soluble vitamins",
+      "destroys vitamin C"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "The guidelines for storing vegetables",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "Three guidelines at 3 marks, worth exactly as much as the cooking half — so do not let the first half eat the time. The specifics carry the marks: potatoes in a dark, dry, well-ventilated place, salad in the fridge drawer, packaging removed.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "remove from plastic packaging",
+      "remove any damaged vegetables",
+      "store on a vegetable rack",
+      "store potatoes in a dark, dry, well-ventilated place",
+      "salad ingredients in a fridge vegetable drawer",
+      "avoid storing for prolonged periods",
+      "use up quickly after purchase"
+     ]
+    }
+   }
+  ],
+  "notes": "18 marks split evenly between the question's two numbered halves, so two rows."
+ },
+ {
+  "id": "he-2021-ol-sb-q3c",
+  "topicId": "home-economics-0-10",
+  "conceptId": "vegetables-for-children",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2021 OL Section B Q3(c)",
+  "questionText": "Suggest two interesting ways of including vegetables in the diet of children.",
+  "stem": "Irish grown vegetables get to our shelves quickly, and so are more nutritious.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 ways @ 6 marks each (graded 6:3:0)",
+   "answer": 2,
+   "ofParts": 11,
+   "perPart": 6
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Suggest two interesting ways of including vegetables in the diet of children",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Only two ways, but 6 marks each and graded 6:3:0 — half or full, nothing between, so a bare suggestion loses three marks outright. The child angle is what earns the top half: cutters to make animal shapes, grating vegetables into dishes to disguise them, growing them at home. \"Add to stews\" is true of any diet and reads as a 3.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Stir fry vegetables",
+      "use cherry tomatoes in lunch boxes",
+      "use cutters to make animal shapes",
+      "grated into dishes to disguise them",
+      "add vegetables to blended sauces",
+      "smoothies",
+      "vegetable pops/ice- lollies",
+      "add to stews",
+      "growing vegetables at home",
+      "vegetable crisps/wedges",
+      "use in soups"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap."
+ },
+ {
+  "id": "he-2021-ol-sb-q4a",
+  "topicId": "home-economics-1-1",
+  "conceptId": "advantages-household-budget",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2021 OL Section B Q4(a)",
+  "questionText": "Discuss four advantages of planning a household budget for a family.",
+  "stem": "Good money management is an important life skill.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 advantages @ 5 marks each (graded 5:3:0)",
+   "answer": 4,
+   "ofParts": 12,
+   "perPart": 5
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Discuss four advantages of planning a household budget for a family",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "Four advantages at 5 marks, graded 5:3:0. A large part of this list is the same idea in different clothes — financial security, provides for emergencies, covers unplanned events, avoids debt — and a marker pays once. Spread the four across spotting overspending, security, saving, and the skill itself.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "Areas of overspending identified",
+      "provides financial security",
+      "alleviates worry and stress as bills will be paid",
+      "know where all monies are going",
+      "provides for emergencies e.g. visit to doctor or dentist",
+      "allows for savings",
+      "encourages people to wait until they have the money to buy something",
+      "ensures money available to cover unplanned eventualities e.g. job loss",
+      "develops money management skills",
+      "avoids debt",
+      "avoid impulse buying",
+      "budgeting reduces reliance on credit"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap."
+ },
+ {
+  "id": "he-2021-ol-sb-q4b",
+  "topicId": "home-economics-1-1",
+  "conceptId": "weekly-budget-plan-ol",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2021 OL Section B Q4(b)",
+  "questionText": "Set out a weekly budget plan for a family (two adults and two children) with a net income of EUR 800 a week.",
+  "stem": "Good money management is an important life skill.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "5 points @ 4 marks each (graded 4:2:0)",
+   "answer": 5,
+   "ofParts": 10,
+   "perPart": 4
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Set out a weekly budget plan for a family with a net income of EUR 800 a week",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "Five points at 4 marks, graded 4:2:0. This is a plan, not prose: the scheme's percentages are the answer and a heading with its percentage earns the 4 where a heading alone earns 2. They total 100%, so the euro amounts have to add to EUR 800 — an arithmetic slip costs marks the headings had already earned. Reviewing the budget regularly is a point in its own right.",
+    "group": {
+     "claimMax": 5,
+     "perOption": 4,
+     "options": [
+      "Rent 25%",
+      "food 25%",
+      "household bills 15% e.g. lighting, heating, bin collection, phone/internet",
+      "education 10%",
+      "clothes 5%",
+      "leisure/entertainment 5%",
+      "savings 5%",
+      "health 5%",
+      "discretionary spending 5%",
+      "evaluate/review budget on a regular basis"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list; the scheme's percentages are kept inside the options because they are the marking content."
+ },
+ {
+  "id": "he-2021-ol-sb-q4c",
+  "topicId": "home-economics-1-1",
+  "conceptId": "buying-on-credit",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2021 OL Section B Q4(c)",
+  "questionText": "State one advantage and one disadvantage of buying goods on credit.",
+  "stem": "Good money management is an important life skill.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points @ 5 marks each (graded 5:3:0); 1 advantage, 1 disadvantage",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "One advantage of buying goods on credit",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One advantage, 5 marks. The question fixes one of each, so two advantages cannot score 10 however good they are. Graded 5:3:0 — stating it is 3, and explaining what it lets the buyer do is the 5.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "buy now pay later",
+      "have use of the goods without having to pay for them",
+      "purchase expensive items",
+      "no need to carry large sums of cash",
+      "useful in emergencies",
+      "can take advantage when sales are on",
+      "encourages spending and benefits the economy"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "One disadvantage of buying goods on credit",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One disadvantage, 5 marks. The strongest are the ones with a consequence attached: goods can be repossessed if repayments are missed, and a poor credit rating makes future borrowing harder.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "expensive",
+      "high rates of interest",
+      "encourages impulse buying",
+      "do not own goods until final instalment is paid",
+      "leads to overspending",
+      "leads to debt",
+      "may be unable to keep up repayments",
+      "goods may be repossessed if consumer fails to meet repayments",
+      "consumer may get a poor credit rating/difficult to get a loan in the future."
+     ]
+    }
+   }
+  ],
+  "notes": "The question fixes one advantage and one disadvantage, so two rows rather than a pooled pair."
+ },
+ {
+  "id": "he-2021-ol-sb-q5a",
+  "topicId": "home-economics-2-0",
+  "conceptId": "family-structures",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2021 OL Section B Q5(a)",
+  "questionText": "Describe each of the following family structures: one parent family; nuclear family; blended family.",
+  "stem": "We live in an increasingly diverse world, even within our own family structures.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "one parent 2 points @ 3 marks (graded 3:2:0); nuclear 2 points @ 3 marks (graded 3:2:0); blended 2 points @ 3 marks (graded 3:2:0)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "One parent family",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks. All three structures are compulsory and identically priced, so this is three short descriptions rather than a choice — skipping one costs a flat 6. Here the two points come easily as what it is and what follows from it: one parent with their children, and the financial or emotional pressures that can result.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "consists of one parent and his/her child(ren), can be because of choice, divorce, separation, desertion or death of a spouse",
+      "can result in difficulties e.g. poverty, financial, emotional",
+      "isolation",
+      "stress due to increased workload and childcare problems",
+      "more likely to be dependent on state benefits"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Nuclear family",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks. The scheme's description is longer than the others but the tariff is the same — parents and children in a self-contained unit, with shared tasks and small family size. Do not overspend on the structure you know best.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "parent/parents and their children",
+      "living in a self-contained unit",
+      "tasks are usually shared",
+      "have integrated roles",
+      "democratic, with older children involved in decision making",
+      "both parents work",
+      "mobile",
+      "number of children is usually small"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "Blended family",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks. The definition is the first point — partners with children from previous relationships, often with children of their own — and the second is best taken from the consequences the scheme lists: extra financial pressure, or discipline between step-parents and children.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "partners with children from previous relationships and often their own children",
+      "arises usually because of remarriage",
+      "more common due to divorce and separation",
+      "have a large extended family",
+      "extra financial pressure",
+      "difficulties with discipline between step-parents and children"
+     ]
+    }
+   }
+  ],
+  "notes": "Three compulsory structures at 6 marks each, so three rows rather than a pooled choice."
+ },
+ {
+  "id": "he-2021-ol-sb-q5b",
+  "topicId": "home-economics-2-1",
+  "conceptId": "adolescent-roles-responsibilities",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2021 OL Section B Q5(b)",
+  "questionText": "Discuss the roles and responsibilities of adolescents/teenagers within a family.",
+  "stem": "We live in an increasingly diverse world, even within our own family structures.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 points @ 5 marks each (graded 5:3:0)",
+   "answer": 4,
+   "ofParts": 9,
+   "perPart": 5
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Discuss the roles and responsibilities of adolescents/teenagers within a family",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "Four points at 5 marks, graded 5:3:0. The scheme's strongest point is the tension it names outright: role expectations are difficult because an adolescent is no longer a child but does not yet carry the responsibility of an adult. Building an answer around that, rather than listing chores, is what reaches 5 a point.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "son/daughter/brother/sister/grandchild",
+      "role model for younger siblings",
+      "role expectations are difficult as adolescents are no longer children but still do not have the full responsibility of adulthood",
+      "showing respect, learning to behave in a socially acceptable manner",
+      "acquiring knowledge informally and formally",
+      "to do a fair/appropriate share of household duties",
+      "to work hard and achieve in school",
+      "acquiring gradual independence",
+      "helping with minding younger siblings/elderly family members"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap."
+ },
+ {
+  "id": "he-2021-ol-sb-q5c",
+  "topicId": "home-economics-2-0",
+  "conceptId": "family-communication",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2021 OL Section B Q5(c)",
+  "questionText": "Outline why good communication is important between family members.",
+  "stem": "We live in an increasingly diverse world, even within our own family structures.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 points @ 4 marks each (graded 4:2:0)",
+   "answer": 3,
+   "ofParts": 9,
+   "perPart": 4
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Outline why good communication is important between family members",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Three points at 4 marks. Every entry has a consequence built into it — trust, resolved conflict, self-esteem, knowing what is expected — and naming the consequence is the second 2. \"It is important to talk\" is not a point; saying that clear expectations prevent conflict is.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Helps clarify rules and expectations",
+      "family members know what is expected of them",
+      "builds trust among members",
+      "able to express their opinions and views",
+      "develops listening skills",
+      "helps members express opinions in a safe environment",
+      "conflict may be resolved",
+      "communication is needed to compromise",
+      "develops positive self-esteem"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, evenly priced."
  }
 ]
