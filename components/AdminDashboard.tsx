@@ -6,12 +6,13 @@ import React, { useState, useEffect } from 'react';
 import { MotionDiv } from './Motion';
 import { type CourseData } from './Library';
 import { type SessionUser, getAvatarUrl } from '../utils/authUtils';
-import { GraduationCap, LogOut, Trash2, AlertTriangle, MessageSquareText, Users } from 'lucide-react';
+import { GraduationCap, LogOut, Trash2, AlertTriangle, MessageSquareText, Users, TrendingUp } from 'lucide-react';
 import { type CategoryType } from './KnowledgeTree';
 import app, { db } from '../firebase';
 import { collection, getDocs, query, limit, where, documentId } from 'firebase/firestore';
 import { getFunctions, httpsCallable } from 'firebase/functions';
 import AdminFeedbackInbox from './AdminFeedbackInbox';
+import AdminFunnelPanel from './AdminFunnelPanel';
 
 // FIX: Cast motion components to any to bypass broken type definitions
 
@@ -115,7 +116,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
     const [isLoading, setIsLoading] = useState(true);
     const [deleteTarget, setDeleteTarget] = useState<SessionUser | null>(null);
     const [isDeleting, setIsDeleting] = useState(false);
-    const [activeView, setActiveView] = useState<'students' | 'feedback'>('students');
+    const [activeView, setActiveView] = useState<'students' | 'feedback' | 'funnel'>('students');
 
     // Full cascade delete via the requestAccountDeletion Cloud Function (Admin
     // SDK): removes the Auth account + every Firestore collection holding the
@@ -228,9 +229,26 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
             <MessageSquareText size={16} />
             Feedback
           </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={activeView === 'funnel'}
+            onClick={() => setActiveView('funnel')}
+            className="flex items-center gap-2 rounded-full border-2 px-4 py-2 text-sm font-bold"
+            style={{
+              borderColor: activeView === 'funnel' ? '#F26B1F' : '#1A1A1A',
+              backgroundColor: activeView === 'funnel' ? '#F26B1F' : '#FFFFFF',
+              color: activeView === 'funnel' ? '#FFFFFF' : '#1A1A1A',
+            }}
+          >
+            <TrendingUp size={16} />
+            First run
+          </button>
         </div>
 
-        {activeView === 'feedback' ? (
+        {activeView === 'funnel' ? (
+          <AdminFunnelPanel />
+        ) : activeView === 'feedback' ? (
           <AdminFeedbackInbox />
         ) : isLoading ? (
             <div className="text-center py-16"><p>Loading student data...</p></div>

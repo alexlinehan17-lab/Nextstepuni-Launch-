@@ -20,6 +20,7 @@ import { type CurriculumLevel, isLcaYear, yearGroupToCurriculumLevel } from '../
 import { getDefaultExamDate } from '../utils/examDates';
 import NorthStarOnboarding from './NorthStarOnboarding';
 import { COLORS } from '../design/tokens';
+import { trackFunnel } from '../utils/funnel';
 
 interface OnboardingProps {
   userId: string;
@@ -299,12 +300,24 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
     try { localStorage.setItem(onboardingDraftKey(userId, mode), JSON.stringify(next)); } catch { /* storage may be unavailable */ }
   }, [userId, mode, step, selectedSubjects, subjectConfigs, subjectBands, examDate, yearGroup, essentialsMode, northStarData, restDays]);
 
+  // First-run funnel. "Reached" rather than "completed" for the mid-steps: the
+  // JC flow skips some of them, so how FAR a student got is the honest and
+  // useful measure of where the flow loses people. trackFunnel dedupes per
+  // session, so stepping back and forward cannot inflate a count.
+  useEffect(() => { trackFunnel('onboarding_started'); }, []);
+  useEffect(() => {
+    if (step >= 5) trackFunnel('onboarding_reached_subjects');
+    if (step >= 7) trackFunnel('onboarding_reached_exam_date');
+  }, [step]);
+
   const completeOnboarding = async (northStar?: NorthStar) => {
+    trackFunnel('onboarding_completed');
     await onComplete(buildProfile(), northStar, essentialsMode);
     try { localStorage.removeItem(onboardingDraftKey(userId, mode)); } catch { /* storage may be unavailable */ }
   };
 
   const skipOnboarding = () => {
+    trackFunnel('onboarding_skipped');
     try { localStorage.removeItem(onboardingDraftKey(userId, mode)); } catch { /* storage may be unavailable */ }
     onSkip();
   };
@@ -1494,7 +1507,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                 >
                   <button
                     type="button"
-                    onClick={() => onComplete(buildProfile(), northStarData ?? undefined, essentialsMode)}
+                    onClick={() => void completeOnboarding(northStarData ?? undefined)}
                     className="flex min-w-48 items-center gap-2 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] px-8 py-3 text-sm font-semibold text-[#FDF8F0] shadow-[4px_4px_0_0_#1A1A1A] transition-all duration-150 hover:-translate-y-0.5 hover:shadow-[6px_6px_0_0_#1A1A1A] active:translate-x-1 active:translate-y-1 active:shadow-none"
                   >
                     <span className="flex-1 text-center">Start Learning</span>

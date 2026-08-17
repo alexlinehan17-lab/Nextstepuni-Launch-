@@ -60,6 +60,7 @@ import { ToolHeader } from './ToolHeader';
 import ToolIconBlob, { type ToolIconKey } from './ToolIconBlob';
 import { isActiveSeniorYear, isLcaYear } from '../utils/authUtils';
 import LaunchpadGuidance from './LaunchpadGuidance';
+import { trackFunnel } from '../utils/funnel';
 import { TOOL_GUIDANCE, type ToolRecommendation } from './launchpadGuidanceData';
 
 // ── Editorial chrome registry ──────────────────────────────────────────
@@ -435,6 +436,10 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
             setShowOnboarding(true);
             return;
         }
+        // The end of the first-run funnel: the student is out of setup and
+        // actually using the product. Deduped per session, so this records
+        // "reached a tool", not tool popularity.
+        trackFunnel('first_tool_opened');
         setActiveTool(toolId);
     }, [subjectProfile, profileLoaded, setActiveTool]);
 

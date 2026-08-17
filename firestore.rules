@@ -442,6 +442,27 @@ service cloud.firestore {
       allow read, write: if false;
     }
 
+    // First-run funnel counters (utils/funnel.ts). Deliberately carries NO
+    // personal data: no uid, name, email or school — only which step was
+    // reached, the local day, the platform, and a random per-visit sessionId
+    // that exists so one visit's steps can be joined and is not linkable to an
+    // account. Append-only: a client may create an event and nothing else, so
+    // history cannot be rewritten or mined. Only the administrator reads them.
+    match /funnelEvents/{eventId} {
+      allow read: if request.auth != null
+                  && request.auth.token.email == 'admin@nextstep.app';
+      allow create: if request.auth != null
+                    && request.resource.data.keys().hasOnly(['step', 'day', 'at', 'platform', 'sessionId'])
+                    && request.resource.data.step is string
+                    && request.resource.data.step.size() <= 40
+                    && request.resource.data.day is string
+                    && request.resource.data.day.size() == 10
+                    && request.resource.data.platform in ['web', 'ios', 'android']
+                    && request.resource.data.sessionId is string
+                    && request.resource.data.sessionId.size() <= 64;
+      allow update, delete: if false;
+    }
+
     // Default deny — no other collections are accessible
     match /{document=**} {
       allow read, write: if false;

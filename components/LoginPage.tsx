@@ -16,6 +16,7 @@ import { getFunctions, httpsCallable } from 'firebase/functions';
 import { type SessionUser, getAvatarUrl, AVATAR_SEEDS } from '../utils/authUtils';
 import { awaitWriteOrTimeout, saveInBackground } from '../utils/firestoreWrite';
 import { logError } from '../utils/logError';
+import { trackFunnel } from '../utils/funnel';
 import { SCHOOLS } from '../schoolData';
 import { createDemoStudentSession } from '../data/devStudent';
 import { LegalModal, type LegalDoc, PRIVACY_POLICY_VERSION, CONSENT_BASIS } from './legal/LegalModal';
@@ -690,6 +691,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         'LoginPage.registerUserDoc',
         retryUserDoc,
       );
+      trackFunnel('register_succeeded');
       handleLoginSuccess({
         uid: createdUser.uid,
         name: name.trim(),
