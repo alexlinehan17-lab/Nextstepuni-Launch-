@@ -59,9 +59,12 @@ interface ToolIconConfig {
 const TOOLS: Record<ToolIconKey, ToolIconConfig> = {
   'meet-tools': {
     blob: '#D8D0E3',
-    iconPath: '/assets/tools/explore-tools.png',
+    // Square art, same thick-ink language as the rest. The older
+    // explore-tools.png is 3:2, so `contain` letterboxed it inside the square
+    // blob and it read smaller and thinner than every other tool icon.
+    iconPath: '/assets/tools/meet-tools.png',
     blobPath: 'M 6 24 Q -2 52 8 78 Q 24 98 52 94 Q 86 90 94 62 Q 100 30 84 10 Q 60 -4 32 4 Q 12 12 6 24 Z',
-    iconScale: 1.08,
+    iconScale: 1.0,
   },
   'recommend-tool': {
     blob: '#F2CFB5',

@@ -94,7 +94,7 @@ const LaunchpadGuidance: React.FC<LaunchpadGuidanceProps> = ({
             onClick={() => open('explain')}
             className="group flex min-h-[116px] items-center gap-4 rounded-2xl border-[1.5px] border-[var(--outline-strong)] bg-[var(--surface-paper)] p-5 text-left transition-all hover:-translate-y-0.5 hover:shadow-[3px_3px_0_0_var(--outline-strong)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.45)]"
           >
-            <ToolIconBlob toolId="meet-tools" size={60} />
+            <ToolIconBlob toolId="meet-tools" size={72} />
             <span className="min-w-0 flex-1">
               <span className="block font-semibold text-[var(--ink-primary)]">Meet the tools</span>
               <span className="mt-1 block text-xs leading-relaxed text-[var(--ink-secondary)]">A quick, plain-English guide to what each tool is for.</span>
@@ -107,7 +107,7 @@ const LaunchpadGuidance: React.FC<LaunchpadGuidanceProps> = ({
             onClick={() => open('recommend')}
             className="group flex min-h-[116px] items-center gap-4 rounded-2xl border-[1.5px] border-[var(--outline-strong)] bg-[var(--surface-paper)] p-5 text-left transition-all hover:-translate-y-0.5 hover:shadow-[3px_3px_0_0_var(--outline-strong)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.45)]"
           >
-            <ToolIconBlob toolId="recommend-tool" size={60} />
+            <ToolIconBlob toolId="recommend-tool" size={72} />
             <span className="min-w-0 flex-1">
               <span className="block font-semibold text-[var(--ink-primary)]">Recommend a tool</span>
               <span className="mt-1 block text-xs leading-relaxed text-[var(--ink-secondary)]">Answer two quick questions and get one clear starting point.</span>

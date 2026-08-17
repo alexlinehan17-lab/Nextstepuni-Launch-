@@ -38,7 +38,7 @@ describe('Launchpad guidance', () => {
     expect(recommendTool).toHaveClass('border-[var(--outline-strong)]');
     expect(meetTools).not.toHaveClass('shadow-[3px_3px_0_0_var(--outline-strong)]');
     expect(recommendTool).not.toHaveClass('shadow-[3px_3px_0_0_var(--outline-strong)]');
-    expect(meetTools.querySelector('img')).toHaveAttribute('src', '/assets/tools/explore-tools.png');
+    expect(meetTools.querySelector('img')).toHaveAttribute('src', '/assets/tools/meet-tools.png');
     expect(recommendTool.querySelector('img')).toHaveAttribute('src', '/assets/tools/recommend-tool.png');
   });
 
