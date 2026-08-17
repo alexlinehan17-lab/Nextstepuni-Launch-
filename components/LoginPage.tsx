@@ -17,6 +17,7 @@ import { type SessionUser, getAvatarUrl, AVATAR_SEEDS } from '../utils/authUtils
 import { awaitWriteOrTimeout, saveInBackground } from '../utils/firestoreWrite';
 import { logError } from '../utils/logError';
 import { trackFunnel } from '../utils/funnel';
+import { beginStaffProvisioning, endStaffProvisioning } from '../utils/staffProvisioning';
 import { SCHOOLS } from '../schoolData';
 import { createDemoStudentSession } from '../data/devStudent';
 import { LegalModal, type LegalDoc, PRIVACY_POLICY_VERSION, CONSENT_BASIS } from './legal/LegalModal';
@@ -545,6 +546,11 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     if (!staffCode.trim()) { setError('Please enter your staff access code.'); return; }
     if (normalisedEmail === 'admin@nextstep.app' || /^gc-.*@nextstep\.app$/.test(normalisedEmail)) { setError('This email is reserved.'); return; }
     setIsLoading(true); setError('');
+    // Creating the account below signs the teacher in immediately, but they are
+    // not known to be staff until claimStaffAccess returns. Hold the app on its
+    // loading state for that window so AppRouter cannot mistake them for a
+    // student and drop them into student onboarding. See utils/staffProvisioning.
+    beginStaffProvisioning();
     try {
       // Sign in if the teacher already has an account; otherwise create one.
       let uid: string;
@@ -565,9 +571,14 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       const claimFn = httpsCallable<{ school: string; code: string }, { success: boolean }>(getFunctions(app), 'claimStaffAccess');
       await claimFn({ school, code: staffCode.trim() });
       await auth.currentUser?.getIdToken(true);
-      // Reload so AuthContext re-reads role:'staff' and routes to the Staff Dashboard.
+      // Reload so AuthContext re-reads role:'staff' and routes to the Staff
+      // Dashboard. The marker is cleared by AppRouter once the staff role is
+      // visible, so it survives this reload.
       window.location.reload();
     } catch (err: any) {
+      // Provisioning failed, so release the hold — otherwise a teacher who
+      // mistyped their code would sit on a spinner instead of seeing why.
+      endStaffProvisioning();
       const msg = String(err?.message || '');
       const code = String(err?.code || '');
       if (/staff code is not correct/i.test(msg)) {
