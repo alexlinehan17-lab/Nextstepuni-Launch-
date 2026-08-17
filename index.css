@@ -13,6 +13,25 @@
   --ink-secondary: #5F5A55;
   --ink-muted: #8A8178;
   --ink-on-accent: #1A1A1A;
+  /* Student dashboard data-visualisation palette. Series colours are stable
+     across charts; structural colours stay neutral and theme-aware. */
+  --dashboard-series-1: #F26B1F;
+  --dashboard-series-2: #2F6F6D;
+  --dashboard-series-3: #B27A2D;
+  --dashboard-series-4: #735D9D;
+  --dashboard-series-5: #B75353;
+  --dashboard-grid: #E7E2DC;
+  --dashboard-track: #EEEAE5;
+  --dashboard-track-strong: #A9A39C;
+  --dashboard-heat-1: #F7CBAF;
+  --dashboard-heat-2: #F59358;
+  --dashboard-cell-border: rgba(56, 56, 56, 0.10);
+  --dashboard-tooltip: #1A1A1A;
+  --dashboard-tooltip-ink: #FFFFFF;
+  --dashboard-tooltip-muted: #CFC9C2;
+  --mountain-paper: #FFFFFF;
+  --mountain-ink: #1A1A1A;
+  --mountain-muted: rgba(0, 0, 0, 0.55);
 }
 
 .tool-header-art {
@@ -55,6 +74,23 @@
   --ink-primary: #FAF8F4;
   --ink-secondary: #D6D0C9;
   --ink-muted: #A8A29E;
+  --dashboard-series-1: #FF8A4C;
+  --dashboard-series-2: #72B8B0;
+  --dashboard-series-3: #E3AD5B;
+  --dashboard-series-4: #A795D0;
+  --dashboard-series-5: #D77A78;
+  --dashboard-grid: #3B3937;
+  --dashboard-track: #312F2D;
+  --dashboard-track-strong: #77716B;
+  --dashboard-heat-1: #6D3C24;
+  --dashboard-heat-2: #B25220;
+  --dashboard-cell-border: rgba(255, 255, 255, 0.08);
+  --dashboard-tooltip: #F7F4EF;
+  --dashboard-tooltip-ink: #191919;
+  --dashboard-tooltip-muted: #6F6861;
+  --mountain-paper: #202020;
+  --mountain-ink: #F5F2ED;
+  --mountain-muted: rgba(245, 242, 237, 0.60);
 }
 
 /*
@@ -196,7 +232,8 @@
 
 /* These are compact journal pages rather than generic form fields. */
 .product-shell textarea.possible-life-journal-field {
-  min-height: 96px;
+  height: 112px;
+  min-height: 112px;
   padding: 14px 16px !important;
   border: 1.5px solid #D9D2CB !important;
   border-radius: 14px !important;

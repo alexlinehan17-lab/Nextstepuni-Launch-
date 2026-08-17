@@ -25,7 +25,7 @@ const priorities: SubjectPriority[] = [
   targetPoints: 88,
   pointsGain: 32,
   difficultyMultiplier: 1,
-  efficiencyMultiplier: 1,
+  coverageMultiplier: 1,
   priorityScore: priorityScore as number,
 }));
 

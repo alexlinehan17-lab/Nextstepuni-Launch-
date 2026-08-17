@@ -13,7 +13,7 @@ import { type CategoryType } from '../KnowledgeTree';
 import { getAvatarUrl } from '../../utils/authUtils';
 import { getSchoolName } from '../../schoolData';
 import { getPointsForGrade, LC_SUBJECTS } from '../subjectData';
-import { ARCHETYPES, STAT_LABELS, getStatGrade, type StatKey } from '../journeySimulatorData';
+import { ARCHETYPES, CAPABILITY_KEYS, JOURNEY_SCORING_VERSION, STAT_LABELS, type CapabilityKey } from '../journeySimulatorData';
 import { NORTH_STAR_CATEGORIES, VISION_CARDS, CATEGORY_COLORS } from '../../northStarData';
 import { type GCStudentFullData, type StudentStatus } from './gcTypes';
 import { hydrateCourses } from '../futureFinderData';
@@ -92,7 +92,6 @@ const INNOVATION_TOOLS: { id: string; title: string; jcTitle?: string; curriculu
   { id: 'future-finder',    title: 'Future Finder', jcTitle: 'Subject Explorer', curriculum: 'both' },
   { id: 'learning-dna',     title: 'Learning DNA',               curriculum: 'both' },
   { id: 'first-gen-intel',  title: 'First Gen Intel',            curriculum: 'senior' },
-  { id: 'syllabus-xray',    title: 'Syllabus X-Ray',             curriculum: 'senior' },
 ];
 
 export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCourses, onBack, isTrayMode, alerts = [], gcName, gcFlags }) => {
@@ -713,9 +712,17 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
     }
 
     const jr = student.journeyResult;
+    if (jr.scoringVersion !== JOURNEY_SCORING_VERSION) {
+      return (
+        <div className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-6">
+          <h3 className="font-serif text-lg font-semibold tracking-tight text-zinc-900 dark:text-white mb-2">Journey Simulator</h3>
+          <p className="text-sm leading-relaxed text-zinc-500 dark:text-zinc-400">This result used the retired scoring model. The student will be prompted to complete the revised simulation before a new profile is shown.</p>
+        </div>
+      );
+    }
     const archetype = ARCHETYPES[jr.endingId];
     const stats = jr.finalStats;
-    const statKeys: StatKey[] = ['energy', 'academicCap', 'socialSupport', 'systemSavvy', 'resilience'];
+    const statKeys: CapabilityKey[] = [...CAPABILITY_KEYS];
 
     return (
       <div className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-6">
@@ -731,7 +738,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
           </div>
         )}
 
-        {/* Radar chart — centered */}
+        {/* Capability chart — energy is intentionally separate. */}
         <div className="flex justify-center my-2">
           <PentagonRadar
             values={statKeys.map(k => stats[k])}
@@ -740,20 +747,28 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
           />
         </div>
 
-        {/* Stat rows */}
+        {/* Capability rows */}
         <div className="space-y-2 mt-4">
           {statKeys.map(key => {
-            const grade = getStatGrade(stats[key]);
             return (
-              <div key={key} className="flex items-center gap-2.5">
-                <span className={`w-7 h-7 rounded-lg flex items-center justify-center text-xs font-bold ${grade.bg} ${grade.color}`}>
-                  {grade.letter}
-                </span>
-                <span className="text-sm text-zinc-700 dark:text-zinc-300">{STAT_LABELS[key]}</span>
-                <span className="text-xs text-zinc-400 ml-auto">{stats[key]}</span>
+              <div key={key} className="py-1.5">
+                <div className="flex items-center justify-between gap-3">
+                  <span className="text-sm text-zinc-700 dark:text-zinc-300">{STAT_LABELS[key]}</span>
+                  <span className="font-mono text-xs text-zinc-500 dark:text-zinc-400">{stats[key]}/100</span>
+                </div>
+                <div className="mt-1.5 h-1.5 overflow-hidden rounded-full bg-zinc-100 dark:bg-zinc-800">
+                  <div className="h-full rounded-full bg-[var(--accent-hex)]" style={{ width: `${Math.max(2, Math.min(100, stats[key]))}%` }} />
+                </div>
               </div>
             );
           })}
+        </div>
+        <div className="mt-4 border-t border-zinc-200 pt-4 dark:border-zinc-800">
+          <div className="flex items-center justify-between gap-3">
+            <span className="text-sm font-semibold text-zinc-700 dark:text-zinc-300">Energy reserve</span>
+            <span className="font-mono text-xs text-zinc-500 dark:text-zinc-400">{stats.energy}/100</span>
+          </div>
+          <p className="mt-1.5 text-[11px] leading-relaxed text-zinc-400">A changing resource, not a capability grade. All scores are reflective simulation signals, not academic attainment or forecasts.</p>
         </div>
       </div>
     );

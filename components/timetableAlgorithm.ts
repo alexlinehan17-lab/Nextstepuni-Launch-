@@ -11,7 +11,6 @@ import {
   toDateKey,
 } from './subjectData';
 import type { CurriculumLevel } from '../utils/authUtils';
-import { getSyllabusForSubject, computeEfficiency } from './syllabusData';
 import { type TopicMasteryMap } from '../types';
 
 // ─── SM-2 Spaced Repetition Algorithm ──────────────────────────────────────
@@ -145,7 +144,8 @@ export interface SubjectPriority {
   /** Number of grade boundaries between current and target (senior cycle only). */
   targetGradeSteps?: number;
   difficultyMultiplier: number;
-  efficiencyMultiplier: number;
+  /** Personal confidence-gap signal; never an inferred exam-value score. */
+  coverageMultiplier: number;
   priorityScore: number;
 }
 
@@ -216,7 +216,7 @@ export function computeSubjectPrioritiesJC(
       targetPoints: targetIdx,
       pointsGain: bandDeficit, // reinterpreted: "bands of room to grow"
       difficultyMultiplier: deficitWeight,
-      efficiencyMultiplier: topicBoost,
+      coverageMultiplier: topicBoost,
       priorityScore,
     };
   }).sort((a, b) => b.priorityScore - a.priorityScore);
@@ -240,7 +240,7 @@ export function computeSubjectPrioritiesForCurriculum(
 export function computeSubjectPriorities(
   subjects: StudentSubject[],
   topicMastery?: TopicMasteryMap,
-  examDate?: string | null,
+  _examDate?: string | null,
 ): SubjectPriority[] {
   const subjectPoints = subjects.map(s => {
     const isMaths = LC_SUBJECTS.find(lc => lc.name === s.subjectName)?.isMaths || false;
@@ -271,20 +271,10 @@ export function computeSubjectPriorities(
     const targetGradeSteps = Math.max(0, getGradeIndex(s.currentGrade) - getGradeIndex(s.targetGrade));
     const difficultyMultiplier = targetGradeSteps > 0 ? 1 / Math.sqrt(targetGradeSteps) : 1;
 
-    // Syllabus efficiency: subjects with higher-efficiency topics get a small boost
-    // This encourages studying subjects where effort yields more exam marks
-    let efficiencyMultiplier = 1.0;
-    const syllabus = getSyllabusForSubject(s.subjectName, examDate);
-    if (syllabus && syllabus.topics.length > 0) {
-      const avgEfficiency = syllabus.topics.reduce(
-        (sum, t) => sum + computeEfficiency(t, syllabus.totalMarks), 0
-      ) / syllabus.topics.length;
-      // Normalize: avg efficiency ~1-5 range, map to 0.85–1.15 multiplier
-      efficiencyMultiplier = Math.max(0.85, Math.min(1.15, 0.9 + avgEfficiency * 0.05));
-    }
-
-    // Topic mastery boost: subjects with more shaky topics get higher priority
-    let topicBoost = 1.0;
+    // Personal coverage signal: subjects the student has marked shaky or not
+    // started get a modest boost. This is based only on the student's own map;
+    // no inferred difficulty, exam-frequency or marks-per-hour data is used.
+    let coverageMultiplier = 1.0;
     if (topicMastery && topicMastery[s.subjectName]) {
       const topics = topicMastery[s.subjectName];
       const topicEntries = Object.values(topics);
@@ -293,11 +283,11 @@ export function computeSubjectPriorities(
         const notStartedCount = topicEntries.filter(t => t.confidence === 'not-started').length;
         const shakyRatio = (shakyCount + notStartedCount * 0.5) / topicEntries.length;
         // Boost up to 1.3x for subjects where most topics are shaky/not-started
-        topicBoost = 1.0 + shakyRatio * 0.3;
+        coverageMultiplier = 1.0 + shakyRatio * 0.3;
       }
     }
 
-    const priorityScore = bestSixPointsGain * difficultyMultiplier * efficiencyMultiplier * topicBoost;
+    const priorityScore = bestSixPointsGain * difficultyMultiplier * coverageMultiplier;
 
     return {
       subjectName: s.subjectName,
@@ -310,7 +300,7 @@ export function computeSubjectPriorities(
       bestSixPointsGain,
       targetGradeSteps,
       difficultyMultiplier,
-      efficiencyMultiplier,
+      coverageMultiplier,
       priorityScore,
     };
   }).sort((a, b) => b.priorityScore - a.priorityScore);

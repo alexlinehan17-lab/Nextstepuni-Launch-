@@ -16,7 +16,7 @@ import { LC_SUBJECTS, getPointsForGrade, type Grade } from '../components/subjec
 // ─── Types ──────────────────────────────────────────────────
 
 interface InnovationDataContextValue {
-  // Topic mastery (shared by WarRoom, SyllabusXRay, SpacedRepTimetable)
+  // Topic mastery (shared by War Room Subject Coverage and the timetable)
   topicMastery: ReturnType<typeof useTopicMastery>;
 
   // Mock results (shared by WarRoom, CAOSimulator, PointsPassport)

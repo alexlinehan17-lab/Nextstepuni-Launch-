@@ -38,7 +38,7 @@ export const ModulesIcon: React.FC = () => (
   </svg>
 );
 
-// ── Innovation Zone — dusty pink blob, lightbulb with rays ──────────────
+// ── Launchpad — dusty pink blob, hand-drawn rocket ──────────────────────
 
 export const InnovationZoneIcon: React.FC = () => (
   <svg viewBox="0 0 100 100" width="100%" height="100%">
@@ -47,41 +47,38 @@ export const InnovationZoneIcon: React.FC = () => (
       fill="#D9A9C2"
       opacity="0.75"
     />
-    <g>
-      <path
-        d="M 50 18 Q 32 18 30 36 Q 28 48 38 56 L 38 64 Q 38 66 40 66 L 60 66 Q 62 66 62 64 L 62 56 Q 72 48 70 36 Q 68 18 50 18 Z"
-        fill="white"
-        stroke="#1a1a1a"
-        strokeWidth="1.5"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M 42 36 L 46 44 L 50 38 L 54 44 L 58 36"
-        fill="none"
-        stroke="#1a1a1a"
-        strokeWidth="1.3"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <line x1="40" y1="70" x2="60" y2="70" stroke="#1a1a1a" strokeWidth="1.5" strokeLinecap="round" />
-      <line x1="42" y1="74" x2="58" y2="74" stroke="#1a1a1a" strokeWidth="1.5" strokeLinecap="round" />
-      <path
-        d="M 44 78 Q 48 82 56 82 Q 56 82 56 78"
-        fill="none"
-        stroke="#1a1a1a"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-      />
-      <line x1="50" y1="8" x2="50" y2="13" stroke="#1a1a1a" strokeWidth="1.5" strokeLinecap="round" />
-      <line x1="22" y1="22" x2="26" y2="26" stroke="#1a1a1a" strokeWidth="1.5" strokeLinecap="round" />
-      <line x1="78" y1="22" x2="74" y2="26" stroke="#1a1a1a" strokeWidth="1.5" strokeLinecap="round" />
-      <line x1="14" y1="42" x2="20" y2="42" stroke="#1a1a1a" strokeWidth="1.5" strokeLinecap="round" />
-      <line x1="80" y1="42" x2="86" y2="42" stroke="#1a1a1a" strokeWidth="1.5" strokeLinecap="round" />
-    </g>
+    <image
+      href="/assets/section-icons/launchpad.png"
+      x="6"
+      y="-6"
+      width="88"
+      height="112"
+      preserveAspectRatio="xMidYMid meet"
+    />
   </svg>
 );
 
-// ── My Progress — warm amber blob, hand-drawn mountain + winding trail ──
+// ── Ways In — lilac blob, several routes into one exact page ───────────
+
+export const WaysInIcon: React.FC = () => (
+  <svg viewBox="0 0 100 100" width="100%" height="100%">
+    <path
+      d="M 11 27 Q 5 49 15 70 Q 28 88 52 84 Q 79 81 87 59 Q 91 36 76 20 Q 57 9 34 15 Q 17 20 11 27 Z"
+      fill="#D7B7CB"
+      opacity="0.78"
+    />
+    <image
+      href="/assets/tools/ways-in.svg"
+      x="3"
+      y="3"
+      width="94"
+      height="94"
+      preserveAspectRatio="xMidYMid meet"
+    />
+  </svg>
+);
+
+// ── My Progress — warm amber blob, hand-drawn summit mountain ──────────
 
 export const MyProgressIcon: React.FC = () => (
   <svg viewBox="0 0 100 100" width="100%" height="100%">
@@ -91,11 +88,11 @@ export const MyProgressIcon: React.FC = () => (
       opacity="0.75"
     />
     <image
-      href="/assets/section-icons/my-progress.png"
-      x="10"
-      y="10"
-      width="80"
-      height="80"
+      href="/assets/section-icons/my-progress-mountain.png"
+      x="-8"
+      y="-8"
+      width="116"
+      height="116"
       preserveAspectRatio="xMidYMid meet"
     />
   </svg>

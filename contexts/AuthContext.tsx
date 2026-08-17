@@ -13,7 +13,7 @@ import { generateAutoNotifications } from '../components/gc/gcNotifications';
 import { logError } from '../utils/logError';
 import { getProgressDocument } from '../services/progressRepository';
 import { getUserDocument, mergeUserDocument } from '../services/userRepository';
-import { DEV_STUDENT_UID, createDevStudentLoadedData } from '../data/devStudent';
+import { DEMO_STUDENT_UID, createDemoStudentLoadedData } from '../data/devStudent';
 
 // ─── Types ──────────────────────────────────────────────────
 
@@ -246,16 +246,22 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   }, []);
 
   const handleLoginSuccess = useCallback((loggedInUser: SessionUser) => {
-    if (loggedInUser.uid === DEV_STUDENT_UID) {
-      setLoadedData(createDevStudentLoadedData());
+    if (loggedInUser.uid === DEMO_STUDENT_UID) {
+      setLoadedData(createDemoStudentLoadedData());
     }
     setUser(loggedInUser);
     setUserResolved(true);
   }, []);
 
   const handleLogout = useCallback(async () => {
+    if (user?.uid === DEMO_STUDENT_UID) {
+      setUser(null);
+      setLoadedData({ ...defaultLoadedData });
+      setUserResolved(true);
+      return;
+    }
     await signOut(auth);
-  }, []);
+  }, [user?.uid]);
 
   const markOnboardingComplete = useCallback(() => {
     setLoadedData(prev => ({ ...prev, needsOnboarding: false }));

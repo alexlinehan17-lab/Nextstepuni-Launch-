@@ -18,6 +18,8 @@ export { requestAccountDeletion, exportMyData } from "./dataRights";
 export { claimStaffAccess } from "./staffAccess";
 // Student school binding (verified join code) — see ./schoolAccess.ts.
 export { claimStudentSchool } from "./schoolAccess";
+// Anonymous product feedback — see ./anonymousFeedback.ts.
+export { submitAnonymousFeedback } from "./anonymousFeedback";
 
 /**
  * resetStudentPassword

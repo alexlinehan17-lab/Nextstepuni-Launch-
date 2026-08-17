@@ -17,6 +17,8 @@ import { MotionDiv } from './Motion';
 import { useModal } from '../hooks/useModal';
 import { BookOpen, Timer, Trophy, Gem, MapPin, X, ArrowRight, Sparkles, type LucideIcon } from 'lucide-react';
 import { COLORS } from '../design/tokens';
+import { POINTS } from '../journeyPointsConfig';
+import { STUDY_SESSION_POINTS } from '../studySessionData';
 
 interface PointsExplainerProps {
   isOpen: boolean;
@@ -36,10 +38,10 @@ interface EarnItem {
 }
 
 const EARN_ITEMS: EarnItem[] = [
-  { icon: Timer, label: 'Study session', value: '15', unit: 'pts / 10 min', highlight: true },
-  { icon: BookOpen, label: 'Module section', value: '10', unit: 'pts each' },
-  { icon: Trophy, label: 'Complete a module', value: '+30', unit: 'bonus' },
-  { icon: Gem, label: 'Quests & challenges', value: '25–200', unit: 'pts' },
+  { icon: Timer, label: 'Study session', value: String(STUDY_SESSION_POINTS.PER_10_MINUTES), unit: 'pts / 10 min', highlight: true },
+  { icon: BookOpen, label: 'Module section', value: String(POINTS.SECTION_COMPLETE), unit: 'pts each' },
+  { icon: Trophy, label: 'Complete a module', value: `+${POINTS.MODULE_COMPLETE_BONUS}`, unit: 'bonus' },
+  { icon: Gem, label: 'Quests & challenges', value: '20–150', unit: 'pts' },
 ];
 
 interface SpendItem {

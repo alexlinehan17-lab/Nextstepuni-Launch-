@@ -235,34 +235,13 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                   >
                     <div className="flex items-center gap-3">
                       {settings.darkMode ? <Sun size={16} className="text-amber-400" /> : <Moon size={16} className="text-zinc-500" />}
-                      <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">{settings.darkMode ? 'Light Mode' : 'Dark Mode'}</p>
+                      <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">{settings.darkMode ? 'Light Mode (Beta)' : 'Dark Mode (Beta)'}</p>
                     </div>
                     <div className={`relative w-10 h-6 rounded-full transition-colors ${
                       settings.darkMode ? 'bg-[var(--accent-hex)]' : 'bg-zinc-300 dark:bg-zinc-600'
                     }`}>
                       <div className={`absolute top-0.5 w-5 h-5 rounded-full bg-white shadow-sm transition-transform ${
                         settings.darkMode ? 'translate-x-[18px]' : 'translate-x-0.5'
-                      }`} />
-                    </div>
-                  </button>
-
-                  {/* Dashboard toggle */}
-                  <button
-                    onClick={() => {
-                      updateSetting('showDashboard', settings.showDashboard !== true);
-                      flash();
-                    }}
-                    className="w-full flex items-center justify-between p-3 rounded-xl bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] hover:ring-zinc-300 dark:hover:ring-white/[0.15] transition-all"
-                  >
-                    <div className="flex-1 text-left">
-                      <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">Show home dashboard</p>
-                      <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mt-0.5">Today's plan and progress above modules</p>
-                    </div>
-                    <div className={`relative w-10 h-6 rounded-full transition-colors ${
-                      settings.showDashboard === true ? 'bg-[var(--accent-hex)]' : 'bg-zinc-300 dark:bg-zinc-600'
-                    }`}>
-                      <div className={`absolute top-0.5 w-5 h-5 rounded-full bg-white shadow-sm transition-transform ${
-                        settings.showDashboard === true ? 'translate-x-[18px]' : 'translate-x-0.5'
                       }`} />
                     </div>
                   </button>

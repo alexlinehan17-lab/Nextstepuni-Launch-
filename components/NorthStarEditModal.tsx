@@ -4,7 +4,6 @@
  */
 
 import React from 'react';
-import { useModal } from '../hooks/useModal';
 import { type NorthStar } from '../types';
 import { type CurriculumLevel } from '../utils/authUtils';
 import NorthStarOnboarding from './NorthStarOnboarding';
@@ -22,7 +21,6 @@ interface NorthStarEditModalProps {
 }
 
 const NorthStarEditModal: React.FC<NorthStarEditModalProps> = ({ isOpen, onClose, onSave, currentNorthStar, curriculumLevel }) => {
-  useModal(isOpen, onClose);
   return (
     <ModalFrame open={isOpen} onClose={onClose} title="Edit My North Star" eyebrow="Your vision" width="md">
       <NorthStarOnboarding

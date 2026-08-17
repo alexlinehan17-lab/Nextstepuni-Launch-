@@ -6,7 +6,7 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
-import { ArrowLeft, ArrowRight, Check, ChevronLeft, ChevronRight, Compass, RotateCcw, X } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Check, ChevronLeft, ChevronRight, RotateCcw, X } from 'lucide-react';
 import { MotionDiv } from './Motion';
 import ToolIconBlob, { type ToolIconKey } from './ToolIconBlob';
 import {
@@ -92,11 +92,9 @@ const LaunchpadGuidance: React.FC<LaunchpadGuidanceProps> = ({
           <button
             type="button"
             onClick={() => open('explain')}
-            className="group flex min-h-[116px] items-center gap-4 rounded-2xl border-[1.5px] border-[var(--outline-soft)] bg-[var(--surface-paper)] p-5 text-left transition-all hover:border-[var(--outline-strong)] hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.45)]"
+            className="group flex min-h-[116px] items-center gap-4 rounded-2xl border-[1.5px] border-[var(--outline-strong)] bg-[var(--surface-paper)] p-5 text-left transition-all hover:-translate-y-0.5 hover:shadow-[3px_3px_0_0_var(--outline-strong)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.45)]"
           >
-            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-soft)]">
-              <Compass size={20} aria-hidden="true" />
-            </span>
+            <ToolIconBlob toolId="meet-tools" size={60} />
             <span className="min-w-0 flex-1">
               <span className="block font-semibold text-[var(--ink-primary)]">Meet the tools</span>
               <span className="mt-1 block text-xs leading-relaxed text-[var(--ink-secondary)]">A quick, plain-English guide to what each tool is for.</span>
@@ -107,11 +105,9 @@ const LaunchpadGuidance: React.FC<LaunchpadGuidanceProps> = ({
           <button
             type="button"
             onClick={() => open('recommend')}
-            className="group flex min-h-[116px] items-center gap-4 rounded-2xl border-[1.5px] border-[var(--outline-strong)] bg-[var(--surface-paper)] p-5 text-left shadow-[3px_3px_0_0_var(--outline-strong)] transition-all hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.45)]"
+            className="group flex min-h-[116px] items-center gap-4 rounded-2xl border-[1.5px] border-[var(--outline-strong)] bg-[var(--surface-paper)] p-5 text-left transition-all hover:-translate-y-0.5 hover:shadow-[3px_3px_0_0_var(--outline-strong)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.45)]"
           >
-            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#FDEEDF] text-[#9A3B0E]">
-              <span className="text-lg font-semibold" style={{ fontFamily: "'Source Serif 4', serif" }}>?</span>
-            </span>
+            <ToolIconBlob toolId="recommend-tool" size={60} />
             <span className="min-w-0 flex-1">
               <span className="block font-semibold text-[var(--ink-primary)]">Recommend a tool</span>
               <span className="mt-1 block text-xs leading-relaxed text-[var(--ink-secondary)]">Answer two quick questions and get one clear starting point.</span>

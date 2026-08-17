@@ -142,7 +142,7 @@ export const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settin
                 </button>
               )}
               <button onClick={() => updateSetting('darkMode', !settings.darkMode)} className="w-full flex items-center justify-between p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-white/5">
-                  <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300">{settings.darkMode ? 'Light Mode' : 'Dark Mode'}</span>
+                  <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300">{settings.darkMode ? 'Light Mode (Beta)' : 'Dark Mode (Beta)'}</span>
                    <AnimatePresence mode="wait">
                       {settings.darkMode ? (
                         <motion.div key="sun" initial={{ rotate: -90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: 90, opacity: 0 }} transition={{ duration: 0.2 }}>
@@ -287,7 +287,7 @@ export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, 
                   <div className="w-8 h-8 rounded-lg bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center">
                     {settings.darkMode ? <Sun size={16} className="text-amber-400" /> : <Moon size={16} className="text-zinc-600" />}
                   </div>
-                  <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300 flex-1 text-left">{settings.darkMode ? 'Light Mode' : 'Dark Mode'}</span>
+                  <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300 flex-1 text-left">{settings.darkMode ? 'Light Mode (Beta)' : 'Dark Mode (Beta)'}</span>
                 </button>
                 <button onClick={() => { onClose(); onOpenSettings(); }} className="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
                   <div className="w-8 h-8 rounded-lg bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center"><Settings size={16} className="text-zinc-500" /></div>

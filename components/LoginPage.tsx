@@ -6,7 +6,7 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv, MotionP } from './Motion';
-import { ArrowLeft, Eye, EyeOff, School, GraduationCap, ArrowRight, Check, KeyRound } from 'lucide-react';
+import { ArrowLeft, Eye, EyeOff, School, GraduationCap, ArrowRight, Check, KeyRound, BarChart3 } from 'lucide-react';
 import { Capacitor } from '@capacitor/core';
 import { authorizeWithApple } from '../utils/appleAuth';
 import app, { auth, db } from '../firebase';
@@ -16,7 +16,7 @@ import { getFunctions, httpsCallable } from 'firebase/functions';
 import { type SessionUser, getAvatarUrl, AVATAR_SEEDS } from '../utils/authUtils';
 import { awaitWriteOrTimeout } from '../utils/firestoreWrite';
 import { SCHOOLS } from '../schoolData';
-import { createDevStudentSession } from '../data/devStudent';
+import { createDemoStudentSession } from '../data/devStudent';
 import { LegalModal, type LegalDoc, PRIVACY_POLICY_VERSION, CONSENT_BASIS } from './legal/LegalModal';
 
 // Google Sign-In uses signInWithPopup, which has no real popup to open inside
@@ -710,23 +710,28 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const primaryBtn = "w-full py-3.5 rounded-xl text-[15px] font-semibold transition-all border-2 disabled:opacity-50 disabled:cursor-not-allowed";
   const primaryBtnStyle = { backgroundColor: '#FFFFFF', color: '#1A1A1A', borderColor: 'rgba(26,26,26,0.55)' };
 
-  // DEV "Skip Login" — drops into a local-only session with uid 'dev-student'
-  // that has NO Firebase auth token, so every Firestore read/write is rejected
-  // by the security rules (it's a no-data ghost session, useful only for UI
-  // smoke-testing). It must NEVER ship in a submitted App Store / production
-  // build — Apple rejects auth-bypass test affordances, and on the web it just
-  // traps real users in a broken session. Note Capacitor's native iOS webview
-  // also serves from `localhost` (capacitor://localhost), so a hostname check
-  // alone is not enough: we additionally require a NON-native platform, which
-  // restricts the button to the local Vite dev server only. The native Archive
-  // (and the deployed web domain) never render it.
+  // Localhost Demo Account — a deterministic in-memory student story for
+  // viewing dashboards and progress features. It has no Firebase auth token
+  // and never writes sample data to Firestore. Capacitor's native iOS webview
+  // also serves from `localhost`, so the DEV and non-native checks are both
+  // required to keep this affordance out of native and production builds.
   const isLocalHost = typeof window !== 'undefined'
     && /^(localhost|127\.0\.0\.1|\[::1\])$/.test(window.location.hostname);
-  const showDevButton = !Capacitor.isNativePlatform() && isLocalHost;
-  const devButton = showDevButton ? (
-    <button onClick={() => handleLoginSuccess(createDevStudentSession())} className="mt-6 px-3 py-1 bg-red-600/10 text-red-400 border border-red-600/20 rounded-full text-[9px] font-mono hover:bg-red-600/20 transition-colors">
-      DEV: Skip Login
-    </button>
+  const isDevBuild = (import.meta as ImportMeta & { env: { DEV: boolean } }).env.DEV;
+  const showDemoButton = isDevBuild && !Capacitor.isNativePlatform() && isLocalHost;
+  const demoButton = showDemoButton ? (
+    <MotionButton
+      type="button"
+      onClick={() => handleLoginSuccess(createDemoStudentSession())}
+      whileHover={btnHover}
+      whileTap={btnTap}
+      aria-label="Open Demo Account with sample progress"
+      className="mt-5 inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-[#1A1A1A] bg-[#1A1A1A] px-5 text-xs font-bold tracking-[0.01em] text-white shadow-sm transition-colors hover:bg-[#33302d]"
+    >
+      <BarChart3 size={15} aria-hidden="true" />
+      Demo Account
+      <ArrowRight size={14} aria-hidden="true" />
+    </MotionButton>
   ) : null;
 
   const selectedAvatar = avatar || defaultAvatar;
@@ -737,7 +742,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   // animates — was an instant render before.
   // ═══════════════════════════════════════════════════════════
   return (
-    <LoginCard devButton={devButton}>
+    <LoginCard devButton={demoButton}>
       <AnimatePresence mode="wait" initial={false} custom={viewDirection}>
         <MotionDiv
           key={view}

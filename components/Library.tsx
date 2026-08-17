@@ -137,7 +137,7 @@ export const BentoModuleTile: React.FC<BentoModuleTileProps> = ({
             </MotionDiv>
 
             <div className="flex flex-col items-end">
-              <span className="font-mono text-[9px] font-semibold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">Unit {index + 1}</span>
+              <span className="font-mono text-[9px] font-semibold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">Module {index + 1}</span>
               {isCompleted && <span className="text-[8px] font-bold text-emerald-500 uppercase tracking-widest mt-1">Complete</span>}
             </div>
           </div>
@@ -346,7 +346,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
                         onClick={() => { settingsCtx.updateSetting('darkMode', !settingsCtx.settings.darkMode); }}
                         className="w-full flex items-center justify-between p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 mb-2"
                       >
-                        <span className="text-xs font-medium text-zinc-700 dark:text-zinc-300">{settingsCtx.settings.darkMode ? 'Light Mode' : 'Dark Mode'}</span>
+                        <span className="text-xs font-medium text-zinc-700 dark:text-zinc-300">{settingsCtx.settings.darkMode ? 'Light Mode (Beta)' : 'Dark Mode (Beta)'}</span>
                         {settingsCtx.settings.darkMode ? <Sun size={14} className="text-amber-400" /> : <Moon size={14} className="text-zinc-500" />}
                       </button>
                     </MotionDiv>
@@ -467,7 +467,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
         </div>
       </header>
 
-      <main className="w-full px-4 md:px-6 pt-4 md:pt-10 relative z-10 flex items-center justify-center" style={{ minHeight: 'calc(100vh - 120px)' }}>
+      <main className="w-full px-4 md:px-6 pt-4 md:pt-10 relative z-10 flex items-center justify-center pb-[calc(104px+var(--sab,0px))] md:pb-0" style={{ minHeight: 'calc(100vh - 120px)' }}>
         <Suspense fallback={<div className="min-h-[40vh]" />}>
           <ModuleShowcase
             courses={courses}

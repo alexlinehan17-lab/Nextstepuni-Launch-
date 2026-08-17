@@ -23,8 +23,14 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import SessionScreen, { type SessionCardResult } from './SessionScreen';
 import {
   NEW_CARD, dueAt, grade as gradeCard, intervalWords,
-  isDue, planSession, retentionFor, retrievability,
+  isDue, retentionFor, retrievability,
 } from './scheduler';
+import {
+  MARK_BANK_SESSION_SIZE,
+  nextSessionActionLabel,
+  resolveSessionQueue,
+  topicSessionSummary,
+} from './sessionPlanning';
 import { SUBJECTS, builtDecks, cardsForTopic, deckSize, loadCards, strandsFor, topicMarks, type Level } from './deck';
 import {
   commitReview, ensureDeck, fetchDeck, mergeDecks, readChoice, readLocal,
@@ -35,8 +41,6 @@ import ChoiceControl from '../ui/ChoiceControl';
 import PrimaryActionButton from '../ui/PrimaryActionButton';
 import { ResultStatGrid, StatusNotice } from '../ui/ProductPatterns';
 import { getSubjectHex } from '../../utils/subjectColors';
-
-const SESSION_SIZE = 12;
 
 const INK = 'var(--mb-ink)';
 const INK_2 = 'var(--mb-ink-2)';
@@ -311,21 +315,12 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
     return years.length === 1 ? `${years[0]}` : `${years[0]}\u2013${years[years.length - 1]}`;
   }, [cards]);
 
-  const startSession = (topicId?: string) => {
+  const startSession = (topicId?: string, preparedQueue?: SecCard[]) => {
     if (launchingTopicId !== null) return;
     const pool = topicId ? cards.filter(c => c.topicId === topicId) : cards;
     if (!pool.length) return;
-    const plan = planSession(pool.map(c => c.id), memories, now(), { size: SESSION_SIZE, examTs: deck.examTs });
-    let queue = plan.queue.map(id => pool.find(c => c.id === id)).filter(Boolean) as SecCard[];
-    // Nothing due and nothing new does NOT mean "do nothing". A student who taps
-    // a topic, or "Another twelve" at the end of a session, is asking to practise
-    // — so serve the weakest cards they have already met rather than silently
-    // ignoring the tap.
-    if (!queue.length) {
-      queue = [...pool]
-        .sort((a, b) => retrievability(memories[a.id] ?? NEW_CARD, now()) - retrievability(memories[b.id] ?? NEW_CARD, now()))
-        .slice(0, SESSION_SIZE);
-    }
+    const queue = preparedQueue
+      ?? resolveSessionQueue(pool, memories, now(), deck.examTs);
     if (!queue.length) return;
     // Give the selected row and board time to hand off visually before the
     // fixed question workspace takes over. This is deliberately brief: it is
@@ -349,10 +344,18 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
   /* ------------------------------------------------------------ session ---- */
 
   if (screen.name === 'session') {
+    const reviewPool = screen.topicId ? cardsForTopic(screen.topicId, cards) : cards;
+    const reviewPoolLabel = screen.topicId
+      ? strandsFor(subjectId)
+        .flatMap(strand => strand.topics)
+        .find(topic => topic.id === screen.topicId)?.title ?? 'this topic'
+      : subject.title;
     return (
       <SessionScreen
         cards={screen.cards}
         subjectLabel={subject.title}
+        reviewPoolTotal={reviewPool.length}
+        reviewPoolLabel={reviewPoolLabel}
         onGrade={handleGrade}
         onExit={() => setScreen({ name: 'board' })}
         onFinish={results => setScreen({ name: 'close', results, topicId: screen.topicId })}
@@ -372,6 +375,13 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
     const worstCard = worst && cards.find(c => c.id === worst.cardId);
     const worstGap = worst ? worst.marksAvailable - worst.marksClaimed : 0;
     const distinct = new Set(screen.results.map(r => r.cardId)).size;
+    const nextPool = screen.topicId ? cardsForTopic(screen.topicId, cards) : cards;
+    const nextQueue = resolveSessionQueue(nextPool, memories, now(), deck.examTs);
+    const nextAction = nextSessionActionLabel(
+      nextQueue.length,
+      Boolean(screen.topicId),
+      subject.title,
+    );
 
     return (
       <div className="mark-bank-theme" style={{ minHeight: '100dvh', fontFamily: SANS, padding: '56px 16px 72px', background: 'var(--mb-canvas)' }}>
@@ -426,17 +436,19 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginTop: 22, textAlign: 'left' }}>
             <PrimaryActionButton label="Back to Mark Bank" onClick={() => setScreen({ name: 'board' })} className="w-full" />
-            <button
-              type="button"
-              onClick={() => startSession(screen.topicId)}
-              style={{
-                padding: '13px 20px', borderRadius: 12, cursor: 'pointer',
-                background: 'var(--mb-paper)', color: INK_2, border: `1px solid ${MUTED_BORDER}`,
-                font: `600 14px/1 ${SANS}`,
-              }}
-            >
-              Review another {SESSION_SIZE}
-            </button>
+            {nextQueue.length > 0 && (
+              <button
+                type="button"
+                onClick={() => startSession(screen.topicId, nextQueue)}
+                style={{
+                  padding: '13px 20px', borderRadius: 12, cursor: 'pointer',
+                  background: 'var(--mb-paper)', color: INK_2, border: `1px solid ${MUTED_BORDER}`,
+                  font: `600 14px/1 ${SANS}`,
+                }}
+              >
+                {nextAction}
+              </button>
+            )}
           </div>
         </div>
       </div>
@@ -569,7 +581,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
               {dueCount > 0 ? (
                 <PrimaryActionButton
                   autoFocus
-                  label={`Start today's ${Math.min(dueCount, SESSION_SIZE)}`}
+                  label={`Start today's ${Math.min(dueCount, MARK_BANK_SESSION_SIZE)}`}
                   onClick={() => startSession()}
                   className={`w-full ${wide ? '' : 'max-w-80'} mt-3.5`}
                 />
@@ -639,6 +651,10 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
                     const dueHere = topicCards
                       .filter(c => { const m = memories[c.id]; return m?.last ? isDue(c.id, m, now(), retention) : false; })
                       .reduce((n, c) => n + c.totalMarks, 0);
+                    const nextTopicCount = built && due === 0 && tMet === 0
+                      ? resolveSessionQueue(topicCards, memories, now(), deck.examTs).length
+                      : 0;
+                    const sessionSummary = topicSessionSummary(topicCards.length, nextTopicCount);
 
                     return (
                       <li key={topic.id} style={{ borderTop: ti === 0 ? 'none' : `1px solid ${HAIRLINE}` }}>
@@ -699,7 +715,16 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
                                   /* Never a zero on a topic nobody has opened. A
                                      first look at a subject must not be a column
                                      of "0 of 104 marks secure". */
-                                  : `${topicCards.length} cards`}
+                                  : (
+                                    <>
+                                      <span style={{ display: 'block' }}>{sessionSummary.primary}</span>
+                                      {sessionSummary.secondary && (
+                                        <span style={{ display: 'block', color: LABEL, fontSize: 10 }}>
+                                          {sessionSummary.secondary}
+                                        </span>
+                                      )}
+                                    </>
+                                  )}
                           </span>
                         </button>
                       </li>

@@ -10,6 +10,7 @@ import { ArrowRight, ArrowLeft, Check, Wallet, Heart, Wrench, GraduationCap, Fla
 import { type NorthStarCategory, type NorthStar } from '../types';
 import { type CurriculumLevel } from '../utils/authUtils';
 import { CATEGORY_COLORS, VISION_CARD_ART, getActiveCategories, getVisionCardsForLevel } from '../northStarData';
+import { CategoryIconBlob, NORTH_STAR_CATEGORY_BLOBS as CATEGORY_BLOBS } from './NorthStarCategoryIcon';
 
 const ICON_MAP: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
   Wallet, Heart, Wrench, GraduationCap, Flame, DoorOpen,
@@ -18,116 +19,6 @@ const ICON_MAP: Record<string, React.ComponentType<{ size?: number; className?: 
   // Junior cycle additions (Phase 5)
   Sparkles, Compass, Star, Puzzle, BookOpen,
 };
-
-// Custom hand-drawn illustrations for the "What's driving you?" category
-// picker. Each category has a soft pastel painted blob behind the hand-drawn
-// PNG, modelled on the Innovation Zone ToolIconBlob. The blob paths are
-// slightly different per category so the six tiles don't read as identical.
-interface CategoryBlobConfig {
-  iconPath: string;
-  blob: string;
-  blobPath: string;
-}
-
-// Vision board icons (sub-step 3). Each PNG matches a VISION_CARDS id and
-// is rendered behind the category-coloured blob from CATEGORY_BLOBS.
-const CATEGORY_BLOBS: Partial<Record<NorthStarCategory, CategoryBlobConfig>> = {
-  'independence': {
-    iconPath: '/icons/north-star/my-own-path.png',
-    blob: '#DDC9A4',
-    blobPath: 'M 6 24 Q -2 52 8 78 Q 24 98 52 94 Q 86 90 94 62 Q 100 30 84 10 Q 60 -4 32 4 Q 12 12 6 24 Z',
-  },
-  'family-community': {
-    iconPath: '/icons/north-star/community.png',
-    blob: '#ECBBCC',
-    blobPath: 'M 4 28 Q 0 56 12 82 Q 28 100 56 96 Q 90 92 96 60 Q 100 28 82 8 Q 56 -6 30 6 Q 10 16 4 28 Z',
-  },
-  'career-craft': {
-    iconPath: '/icons/north-star/career.png',
-    blob: '#F5C7A0',
-    blobPath: 'M 8 22 Q 0 48 6 76 Q 20 96 50 96 Q 84 96 94 70 Q 100 40 84 14 Q 64 -2 36 4 Q 14 12 8 22 Z',
-  },
-  'college-learning': {
-    iconPath: '/icons/north-star/learning.png',
-    blob: '#BCCCE3',
-    blobPath: 'M 6 22 Q -2 50 10 78 Q 26 98 56 94 Q 90 88 96 56 Q 100 24 80 6 Q 56 -6 28 6 Q 10 14 6 22 Z',
-  },
-  'prove-myself': {
-    iconPath: '/icons/north-star/prove-them-wrong.png',
-    blob: '#F1B7AB',
-    blobPath: 'M 4 26 Q 2 56 12 82 Q 26 98 52 96 Q 88 94 96 64 Q 100 34 84 10 Q 60 -4 30 6 Q 10 18 4 26 Z',
-  },
-  'options-freedom': {
-    iconPath: '/icons/north-star/open-options.png',
-    blob: '#B5D4CC',
-    blobPath: 'M 8 26 Q 0 50 8 78 Q 22 96 54 96 Q 88 94 96 64 Q 100 32 80 10 Q 56 -2 28 8 Q 12 16 8 26 Z',
-  },
-  // ─── JC categories (Phase 5) ─────────────────────────────────────────
-  // Reuse the senior category PNGs since the underlying themes map 1:1.
-  // Distinct blob colours so the JC view still feels its own visually.
-  'family-people': {
-    iconPath: '/icons/north-star/community.png',
-    blob: '#ECBBCC',
-    blobPath: 'M 4 28 Q 0 56 12 82 Q 28 100 56 96 Q 90 92 96 60 Q 100 28 82 8 Q 56 -6 30 6 Q 10 16 4 28 Z',
-  },
-  'prove-myself-jc': {
-    iconPath: '/icons/north-star/prove-them-wrong.png',
-    blob: '#F1B7AB',
-    blobPath: 'M 4 26 Q 2 56 12 82 Q 26 98 52 96 Q 88 94 96 64 Q 100 34 84 10 Q 60 -4 30 6 Q 10 18 4 26 Z',
-  },
-  'curiosity-craft': {
-    iconPath: '/icons/north-star/career.png',
-    blob: '#F5C7A0',
-    blobPath: 'M 8 22 Q 0 48 6 76 Q 20 96 50 96 Q 84 96 94 70 Q 100 40 84 14 Q 64 -2 36 4 Q 14 12 8 22 Z',
-  },
-  'future-doors': {
-    iconPath: '/icons/north-star/open-options.png',
-    blob: '#B5D4CC',
-    blobPath: 'M 8 26 Q 0 50 8 78 Q 22 96 54 96 Q 88 94 96 64 Q 100 32 80 10 Q 56 -2 28 8 Q 12 16 8 26 Z',
-  },
-};
-
-// Renders an icon + organic painted blob behind it. The icon is sized
-// slightly bigger than the blob so it spills past the edges — matches the
-// Innovation Zone aesthetic.
-const CategoryIconBlob: React.FC<{ config: CategoryBlobConfig; size: number }> = ({ config, size }) => (
-  <div
-    className="relative shrink-0"
-    style={{ width: size, height: size, overflow: 'visible' }}
-    aria-hidden
-  >
-    <svg
-      className="absolute pointer-events-none"
-      viewBox="0 0 100 100"
-      preserveAspectRatio="xMidYMid meet"
-      style={{
-        width: '88%',
-        height: '88%',
-        left: '50%',
-        top: '50%',
-        transform: 'translate(-50%, -50%)',
-        zIndex: 0,
-      }}
-    >
-      <path d={config.blobPath} fill={config.blob} opacity="0.85" />
-    </svg>
-    <img
-      src={config.iconPath}
-      alt=""
-      style={{
-        position: 'absolute',
-        left: '50%',
-        top: '50%',
-        transform: 'translate(-50%, -50%)',
-        width: '105%',
-        height: '105%',
-        objectFit: 'contain',
-        zIndex: 1,
-      }}
-      draggable={false}
-    />
-  </div>
-);
 
 interface NorthStarOnboardingProps {
   onComplete: (northStar: NorthStar) => void;

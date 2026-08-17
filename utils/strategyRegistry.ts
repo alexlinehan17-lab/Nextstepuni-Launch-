@@ -6,6 +6,8 @@
  * Import this in eagerly-loaded hooks to avoid pulling in 24KB of STRATEGY_PROMPTS.
  */
 
+import type { StudyConfidenceLabel } from '../types';
+
 export interface StrategyDefinition {
   moduleId: string;
   strategyName: string;
@@ -36,4 +38,7 @@ export interface StudySessionRecord {
   pointsEarned: number;
   hadReflection: boolean;
   strategiesShown?: string[];
+  confidenceAfter?: number;
+  confidenceLabel?: StudyConfidenceLabel;
+  reflectionMode?: 'quick' | 'full';
 }

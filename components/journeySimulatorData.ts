@@ -19,6 +19,12 @@ export type GameState = {
 };
 
 export type StatKey = keyof GameState;
+export type CapabilityKey = Exclude<StatKey, 'energy'>;
+
+export type JourneyEvidence = Record<CapabilityKey, {
+  earned: number;
+  possible: number;
+}>;
 
 export type ModuleLink = {
   moduleId: string;
@@ -30,10 +36,9 @@ export type Choice = {
   text: string;
   effects: Partial<GameState>;
   nextSceneId: string;
+  /** Safety and context choices can teach without judging the student's character. */
+  scoreless?: boolean;
   moduleLink?: ModuleLink;
-  requires?: { stat: StatKey; min?: number; max?: number }[];
-  requiresVisited?: string[];
-  flavor?: string;
 };
 
 export type TextVariant = {
@@ -78,12 +83,22 @@ export type PhaseMetadata = {
 // ─── Constants ───────────────────────────────────────────────────────────────
 
 export const INITIAL_GAME_STATE: GameState = {
-  energy: 60,
-  academicCap: 30,
+  energy: 65,
+  academicCap: 50,
   socialSupport: 50,
-  systemSavvy: 20,
-  resilience: 40,
+  systemSavvy: 50,
+  resilience: 50,
 };
+
+export const JOURNEY_SCORING_VERSION = 2;
+export const CAPABILITY_KEYS: CapabilityKey[] = ['academicCap', 'socialSupport', 'systemSavvy', 'resilience'];
+
+export const createJourneyEvidence = (): JourneyEvidence => ({
+  academicCap: { earned: 0, possible: 0 },
+  socialSupport: { earned: 0, possible: 0 },
+  systemSavvy: { earned: 0, possible: 0 },
+  resilience: { earned: 0, possible: 0 },
+});
 
 export const PHASE_METADATA: PhaseMetadata[] = [
   { name: 'Foundation', months: 'Sep – Dec', subtitle: 'Building the base. Every habit you form now echoes through the year.' },
@@ -92,12 +107,98 @@ export const PHASE_METADATA: PhaseMetadata[] = [
 ];
 
 export const STAT_LABELS: Record<StatKey, string> = {
-  energy: 'Energy',
-  academicCap: 'Academic Mastery',
-  socialSupport: 'Social Support',
-  systemSavvy: 'System Savvy',
-  resilience: 'Resilience',
+  energy: 'Energy Reserve',
+  academicCap: 'Learning Strategy',
+  socialSupport: 'Support Use',
+  systemSavvy: 'Practical Planning',
+  resilience: 'Recovery Skills',
 };
+
+const clampScore = (value: number): number => Math.max(0, Math.min(100, Math.round(value)));
+
+/**
+ * Legacy story deltas encode authored intent with inconsistent magnitudes.
+ * Convert them into a small evidence scale before they reach the student score.
+ */
+export const normaliseCapabilityImpact = (value = 0): -2 | -1 | 0 | 1 | 2 => {
+  if (value >= 15) return 2;
+  if (value >= 5) return 1;
+  if (value <= -15) return -2;
+  if (value <= -5) return -1;
+  return 0;
+};
+
+/** Energy is a changing reserve, not evidence of capability. */
+export const normaliseEnergyImpact = (value = 0): number => {
+  if (value <= -40) return -22;
+  if (value <= -30) return -18;
+  if (value <= -20) return -13;
+  if (value <= -15) return -9;
+  if (value <= -10) return -6;
+  if (value <= -5) return -3;
+  if (value >= 40) return 16;
+  if (value >= 25) return 12;
+  if (value >= 20) return 10;
+  if (value >= 15) return 8;
+  if (value >= 10) return 6;
+  if (value >= 5) return 3;
+  return 0;
+};
+
+const scoreFromEvidence = ({ earned, possible }: JourneyEvidence[CapabilityKey]): number => {
+  // Four points of neutral prior evidence stops a single early answer producing an extreme score.
+  const ratio = earned / (possible + 4);
+  return clampScore(50 + (40 * Math.max(-1, Math.min(1, ratio))));
+};
+
+export function applyJourneyChoice(
+  state: GameState,
+  evidence: JourneyEvidence,
+  choice: Choice,
+  choicesSeen: Choice[],
+): { state: GameState; evidence: JourneyEvidence } {
+  const nextEvidence: JourneyEvidence = {
+    academicCap: { ...evidence.academicCap },
+    socialSupport: { ...evidence.socialSupport },
+    systemSavvy: { ...evidence.systemSavvy },
+    resilience: { ...evidence.resilience },
+  };
+
+  if (!choice.scoreless) {
+    for (const capability of CAPABILITY_KEYS) {
+      const opportunity = Math.max(
+        0,
+        ...choicesSeen
+          .filter(candidate => !candidate.scoreless)
+          .map(candidate => Math.abs(normaliseCapabilityImpact(candidate.effects[capability]))),
+      );
+      if (opportunity > 0) {
+        nextEvidence[capability].possible += opportunity;
+        nextEvidence[capability].earned += normaliseCapabilityImpact(choice.effects[capability]);
+      }
+    }
+  }
+
+  const nextState: GameState = {
+    energy: clampScore(state.energy + normaliseEnergyImpact(choice.effects.energy) + (choice.scoreless ? 0 : 1)),
+    academicCap: scoreFromEvidence(nextEvidence.academicCap),
+    socialSupport: scoreFromEvidence(nextEvidence.socialSupport),
+    systemSavvy: scoreFromEvidence(nextEvidence.systemSavvy),
+    resilience: scoreFromEvidence(nextEvidence.resilience),
+  };
+
+  return { state: nextState, evidence: nextEvidence };
+}
+
+export function getWeakestCapability(state: GameState): CapabilityKey[] {
+  const minimum = Math.min(...CAPABILITY_KEYS.map(key => state[key]));
+  return CAPABILITY_KEYS.filter(key => state[key] === minimum);
+}
+
+export function getStrongestCapability(state: GameState): CapabilityKey[] {
+  const maximum = Math.max(...CAPABILITY_KEYS.map(key => state[key]));
+  return CAPABILITY_KEYS.filter(key => state[key] === maximum);
+}
 
 export const STAT_COLORS: Record<StatKey, string> = {
   energy: 'text-amber-500',
@@ -120,91 +221,91 @@ export const STAT_BG_COLORS: Record<StatKey, string> = {
 export const ARCHETYPES: Record<string, Archetype> = {
   END_PATHFINDER: {
     id: 'END_PATHFINDER',
-    title: 'The Resilient Pathfinder',
+    title: 'The Adaptive Pathfinder',
     icon: 'compass',
     accentColor: 'text-emerald-600 dark:text-emerald-400',
     accentBg: 'bg-emerald-100 dark:bg-emerald-900/30',
-    description: 'You navigated 6th year with remarkable resilience and heart. You built deep connections, supported your peers, and never lost sight of what matters. Your emotional intelligence is your superpower — it will take you further than points ever could.',
+    description: 'Your choices leaned on recovery, perspective and connection. You tended to adapt when plans changed and to involve other people rather than carrying every setback alone.',
   },
   END_EXPERT: {
     id: 'END_EXPERT',
-    title: 'The Efficiency Expert',
+    title: 'The Methodical Learner',
     icon: 'brain',
     accentColor: 'text-blue-600 dark:text-blue-400',
     accentBg: 'bg-blue-100 dark:bg-blue-900/30',
-    description: 'You approached 6th year like a scientist. Your disciplined, evidence-based study methods and impeccable energy management produced outstanding results. You didn\'t just learn the material — you learned how to learn. That skill will compound for the rest of your life.',
+    description: 'Your choices consistently favoured feedback, retrieval and deliberate practice. Your strongest pattern was improving the method, not merely adding more hours.',
   },
   END_MENTOR: {
     id: 'END_MENTOR',
-    title: 'The Community Mentor',
+    title: 'The Knowledge Connector',
     icon: 'hand-helping',
     accentColor: 'text-[var(--accent-hex)] dark:text-[var(--accent-hex)]',
     accentBg: 'bg-[rgba(var(--accent),0.1)] dark:bg-[rgba(var(--accent),0.15)]',
-    description: 'You mastered the system and shared that knowledge freely. You understood every grant, scheme, and deadline, and became the go-to person for advice. Your network is your net worth, and you\'ve built a powerful foundation for success beyond school.',
+    description: 'You repeatedly connected useful information with the people who needed it. Your profile combines collaboration with a practical understanding of how the education system works.',
   },
   END_GOOD: {
     id: 'END_GOOD',
-    title: 'The Strategic Achiever',
+    title: 'The Deliberate Builder',
     icon: 'target',
     accentColor: 'text-amber-600 dark:text-amber-400',
     accentBg: 'bg-amber-100 dark:bg-amber-900/30',
-    description: 'You put in the work and it paid off. Your academic effort carried you to a solid result and you secured your offer. It wasn\'t always pretty, but your determination and focus got you across the line. The next chapter starts now.',
+    description: 'You built progress through a sequence of workable decisions. The profile is not extreme in one direction; it reflects steady academic judgement and a willingness to adjust.',
   },
   END_REGROUPING: {
     id: 'END_REGROUPING',
-    title: 'The Unfinished Chapter',
+    title: 'The Reflective Recalibrator',
     icon: 'book-open',
     accentColor: 'text-violet-600 dark:text-violet-400',
     accentBg: 'bg-violet-100 dark:bg-violet-900/30',
-    description: 'This year was tough, and the results didn\'t land where you wanted. But you\'re not broken — you\'re regrouping. You know more about yourself, how you learn, and what you want than you did twelve months ago. The points are one number on one day. They don\'t define your potential, your worth, or your future. The story isn\'t over — it\'s just getting started.',
+    description: 'Some choices created strain or uncertainty, but you also showed evidence of noticing what was not working. Your next advantage is to turn that reflection into one smaller, repeatable system.',
   },
   END_PLC: {
     id: 'END_PLC',
-    title: 'The Stepping Stone',
+    title: 'The Route Explorer',
     icon: 'arrow-up-right',
     accentColor: 'text-teal-600 dark:text-teal-400',
     accentBg: 'bg-teal-100 dark:bg-teal-900/30',
-    description: 'The points didn\'t line up this time, but your resilience means this is a detour, not a dead end. You\'ve secured a PLC place that acts as a direct pathway to your dream degree. Many of Ireland\'s most successful people took this exact route. Your comeback story starts now.',
+    description: 'You showed a willingness to examine more than one route and to treat educational choices as a set of options rather than a single all-or-nothing outcome.',
   },
   END_REPEAT: {
     id: 'END_REPEAT',
-    title: 'The Comeback Story',
+    title: 'The Reset Builder',
     icon: 'rotate-ccw',
     accentColor: 'text-rose-600 dark:text-rose-400',
     accentBg: 'bg-rose-100 dark:bg-rose-900/30',
-    description: 'It was a bruising year, and the results didn\'t come. But you\'ve gained something more valuable than points: a year\'s worth of wisdom about how you learn. Armed with that knowledge, you\'re choosing to go again. This isn\'t failure — it\'s a strategic reset with better data.',
+    description: 'Your route exposed several systems that need rebuilding. The useful signal is not a verdict about ability; it is a clearer view of where support, structure and recovery would change the next attempt.',
   },
   END_SCHOLARSHIP: {
     id: 'END_SCHOLARSHIP',
-    title: 'The Full Package',
+    title: 'The Opportunity Navigator',
     icon: 'award',
     accentColor: 'text-yellow-600 dark:text-yellow-400',
     accentBg: 'bg-yellow-100 dark:bg-yellow-900/30',
-    description: 'Points, scholarship, HEAR scheme — you played every angle and won. Your system mastery turned the CAO from a lottery into a strategy game. The university isn\'t just accepting you; they\'re investing in you. That\'s the power of knowing the system inside out.',
+    description: 'You did more than study: you looked for relevant routes, checked processes and followed through on an opportunity. This profile reflects informed option-building, not a guaranteed application outcome.',
   },
   END_LEADER: {
     id: 'END_LEADER',
-    title: 'The Community Leader',
+    title: 'The Collaborative Leader',
     icon: 'megaphone',
     accentColor: 'text-indigo-600 dark:text-indigo-400',
     accentBg: 'bg-indigo-100 dark:bg-indigo-900/30',
-    description: 'You didn\'t just survive 6th year — you built a community. Your study groups, mentoring, and relentless generosity created a network that lifted everyone around you. You enter college with more than a course offer: you have a reputation as someone who makes others better.',
+    description: 'You repeatedly created useful structures for learning with other people. The strongest evidence in your route was collaboration with boundaries, not self-sacrifice.',
   },
   END_COMEBACK: {
     id: 'END_COMEBACK',
-    title: 'The Comeback Arc',
+    title: 'The Recovery Builder',
     icon: 'flame',
     accentColor: 'text-orange-600 dark:text-orange-400',
     accentBg: 'bg-orange-100 dark:bg-orange-900/30',
-    description: 'You started weak. You spiralled. You hit bottom. And then you climbed back. Your final results don\'t tell the full story — your resilience does. Where you start doesn\'t determine where you finish, and you\'re living proof.',
+    description: 'You encountered an unhelpful pattern and later recognised it. Your defining evidence was the decision to change approach rather than repeat the same response.',
   },
   END_BALANCED: {
     id: 'END_BALANCED',
-    title: 'The Balanced Graduate',
+    title: 'The Balanced Learner',
     icon: 'scale',
     accentColor: 'text-cyan-600 dark:text-cyan-400',
     accentBg: 'bg-cyan-100 dark:bg-cyan-900/30',
-    description: 'No stat below 50, no stat above 75 — you are genuinely well-rounded. Energy, academics, social life, system knowledge, resilience. You sacrificed nothing for nothing. Balance is the rarest and most sustainable superpower.',
+    description: 'Your evidence is distributed across learning, planning, support and coping. No single capability carried the route; the pattern came from keeping several useful systems working together.',
   },
 };
 
@@ -246,12 +347,14 @@ export function getStatGrade(value: number): { letter: string; color: string; bg
 }
 
 export function getKeyTurningPoints(history: HistoryItem[]): HistoryItem[] {
+  const totalImpact = (effects: Partial<GameState>): number =>
+    (Object.entries(effects) as [StatKey, number][]).reduce((sum, [stat, value]) => (
+      sum + Math.abs(stat === 'energy' ? normaliseEnergyImpact(value) : normaliseCapabilityImpact(value))
+    ), 0);
+
   return [...history]
-    .sort((a, b) => {
-      const totalImpactA = Object.values(a.effects).reduce((sum, v) => sum + Math.abs(v), 0);
-      const totalImpactB = Object.values(b.effects).reduce((sum, v) => sum + Math.abs(v), 0);
-      return totalImpactB - totalImpactA;
-    })
+    .sort((a, b) => totalImpact(b.effects) - totalImpact(a.effects))
+    .filter(item => totalImpact(item.effects) > 0)
     .slice(0, 3);
 }
 
@@ -270,28 +373,66 @@ export function getWeakestStat(state: GameState): StatKey {
 // ─── Weakest Stat Insights ───────────────────────────────────────────────────
 
 export const WEAKEST_STAT_INSIGHTS: Record<StatKey, string> = {
-  energy: "Your energy was your biggest vulnerability. By the end of the year you were running on fumes — exhaustion erodes memory, focus, and motivation. In real life, sleep and recovery aren't luxuries; they're the foundation everything else is built on. If you notice yourself burning out, that's the signal to act, not push harder.",
-  academicCap: "Your academic preparation was your weakest area. No matter how resilient or well-connected you are, the Leaving Cert ultimately tests what you know and how you apply it. Effective study techniques — active recall, spaced repetition, interleaving — aren't optional extras. They're the difference between hoping for results and engineering them.",
-  socialSupport: "You were most isolated in your social support. Going through the Leaving Cert alone is one of the biggest mistakes students make. Isolation amplifies stress, removes accountability, and cuts you off from people who could have helped. A study group, a mentor, even one honest conversation can change the trajectory of your year.",
-  systemSavvy: "Your system awareness was your blind spot. You may have studied hard, but understanding how the CAO system, grants, and deadlines work is just as important as knowing your subjects. Students who play the system smart — understanding how points are allocated, which subjects to prioritise, what supports exist — give themselves an unfair advantage.",
-  resilience: "Your resilience took the biggest hit. When setbacks came — and they always do — you struggled to bounce back. The Leaving Cert is a marathon, not a sprint. The students who succeed aren't the ones who never fail; they're the ones who learn to recover quickly, reframe setbacks, and keep moving forward despite the pressure.",
+  energy: "Your current energy reserve is low. Treat that as a prompt to review sleep, workload and support — not as a judgement about motivation or character.",
+  academicCap: "Your choices produced less evidence of deliberate learning practice. A useful next step is one short retrieval session followed by feedback, rather than simply adding more hours.",
+  socialSupport: "Your route produced less evidence of using support. One specific conversation with a teacher, guidance counsellor, family member or friend can make the next decision easier.",
+  systemSavvy: "Your route produced less evidence of checking deadlines, requirements and available supports. Use official sources and a guidance counsellor to map the next practical step.",
+  resilience: "Your route produced less evidence of a recovery plan after setbacks. Decide in advance whom you will contact and what small action you will take when pressure rises.",
 };
 
 // ─── Route Resolvers (invisible logic gates) ─────────────────────────────────
 
+export function selectJourneyEnding(state: GameState, history: HistoryItem[] = []): string {
+  const visited = new Set(history.map(item => item.scene.id));
+  const capabilityValues = CAPABILITY_KEYS.map(key => state[key]);
+  const capabilityMean = capabilityValues.reduce((sum, value) => sum + value, 0) / capabilityValues.length;
+  const capabilitySpread = Math.max(...capabilityValues) - Math.min(...capabilityValues);
+  const lowCapabilityCount = capabilityValues.filter(value => value < 40).length;
+  const choseAlternativeRoute = history.some(item => /Level 6\/7|PLC|apprenticeship|alternative route/i.test(item.choiceText));
+
+  if (state.energy < 20 && (capabilityMean < 55 || lowCapabilityCount >= 2)) return 'END_REPEAT';
+  if (capabilityMean < 47 || lowCapabilityCount >= 3) return 'END_REGROUPING';
+
+  const candidates: { id: string; score: number }[] = [
+    { id: 'END_GOOD', score: capabilityMean },
+    { id: 'END_EXPERT', score: state.academicCap },
+    { id: 'END_PATHFINDER', score: (state.resilience + state.socialSupport) / 2 },
+  ];
+
+  if (capabilitySpread <= 12 && state.energy >= 40) {
+    candidates.push({ id: 'END_BALANCED', score: 78 - capabilitySpread });
+  }
+  if (visited.has('SCHOLARSHIP_PATH')) {
+    candidates.push({ id: 'END_SCHOLARSHIP', score: ((state.systemSavvy + state.academicCap) / 2) + 10 });
+  }
+  if (visited.has('PASSIVE_SPIRAL')) {
+    candidates.push({ id: 'END_COMEBACK', score: state.resilience + 6 });
+  }
+  if (visited.has('STUDY_GROUP') || visited.has('STUDY_GROUP_LEADER') || visited.has('TEACHING_LEGACY')) {
+    candidates.push({ id: 'END_LEADER', score: state.socialSupport + 5 });
+  }
+  if (visited.has('HEAR_ADVOCATE') || visited.has('TEACHING_LEGACY')) {
+    candidates.push({ id: 'END_MENTOR', score: ((state.socialSupport + state.systemSavvy) / 2) + 3 });
+  }
+  if (choseAlternativeRoute) {
+    candidates.push({ id: 'END_PLC', score: state.systemSavvy + 5 });
+  }
+
+  return candidates.sort((a, b) => b.score - a.score)[0].id;
+}
+
 export const ROUTE_RESOLVERS: Record<string, (state: GameState, history?: HistoryItem[]) => string> = {
   '__BURNOUT_CHECK__': (state) => state.energy < 30 ? 'BURNOUT_RECOVERY' : 'CAO_DEADLINE',
-  '__ACADEMIC_CHECK__': (state) => state.academicCap > 70 ? 'INTERLEAVING_CHOICE' : 'MENTOR_MOMENT',
-  '__EARLY_MOMENTUM_CHECK__': (state) => (state.systemSavvy > 45 && state.academicCap > 55) ? 'EARLY_MOMENTUM' : 'MOCKS_LOOM',
-  '__PEER_NETWORK_CHECK__': (state) => state.socialSupport > 60 ? 'PEER_NETWORK_EFFECT' : 'FINAL_STRETCH_START',
-  '__SYSTEM_MASTERY_CHECK__': (state) => state.systemSavvy > 65 ? 'SYSTEM_MASTERY' : 'GAME_DAY_PREP',
+  '__ACADEMIC_CHECK__': (state) => state.academicCap >= 58 ? 'INTERLEAVING_CHOICE' : 'MENTOR_MOMENT',
+  '__EARLY_MOMENTUM_CHECK__': (state) => (state.systemSavvy >= 56 && state.academicCap >= 54) ? 'EARLY_MOMENTUM' : 'MOCKS_LOOM',
+  '__SYSTEM_MASTERY_CHECK__': (state) => state.systemSavvy >= 62 ? 'SYSTEM_MASTERY' : 'GAME_DAY_PREP',
   '__COMEBACK_CHECK__': (state, history) => {
     const visitedSpiral = history?.some(h => h.scene.id === 'PASSIVE_SPIRAL');
-    if (visitedSpiral && state.resilience > 55) return 'COMEBACK_RALLY';
-    return 'GAME_DAY_PREP';
+    if (visitedSpiral && state.resilience >= 56) return 'COMEBACK_RALLY';
+    return '__SYSTEM_MASTERY_CHECK__';
   },
   '__CHRISTMAS_CHECK__': (state) => (state.energy >= 50 && state.resilience >= 50) ? 'CHRISTMAS_REFLECTION' : '__EARLY_MOMENTUM_CHECK__',
-  '__MOCK_RESULTS_CHECK__': (state) => state.academicCap >= 50 ? 'MOCK_RESULTS_HIGH' : 'MOCK_RESULTS_LOW',
+  '__MOCK_RESULTS_CHECK__': (state) => state.academicCap >= 54 ? 'MOCK_RESULTS_HIGH' : 'MOCK_RESULTS_LOW',
   '__ECHO_CHAIN__': (_state, history) => {
     const visited = history?.map(h => h.scene.id) ?? [];
     if (visited.includes('STUDY_GROUP') || visited.includes('STUDY_GROUP_LEADER')) return 'ECHO_STUDY_GROUP';
@@ -299,33 +440,8 @@ export const ROUTE_RESOLVERS: Record<string, (state: GameState, history?: Histor
     if (visited.includes('HEAR_ADVOCATE')) return 'ECHO_ADVOCATE';
     return 'EXAM_ANXIETY';
   },
-  '__NIGHT_BEFORE_CHECK__': (state) => (state.resilience >= 55 && state.energy >= 45) ? 'NIGHT_BEFORE' : '__END_ROUTE__',
-  '__END_ROUTE__': (state, history) => {
-    // Comeback ending — checked first so spiral players get rewarded for rebuilding
-    const visitedSpiral = history?.some(h => h.scene.id === 'PASSIVE_SPIRAL');
-    if (visitedSpiral && state.resilience > 55) return 'END_COMEBACK';
-    // Balanced ending — all stats in a healthy range (widened band)
-    const allStats = [state.energy, state.academicCap, state.socialSupport, state.systemSavvy, state.resilience];
-    const isBalanced = allStats.every(s => s >= 45 && s <= 80);
-    if (isBalanced) return 'END_BALANCED';
-    // Scholarship ending — system mastery + strong academics
-    if (state.systemSavvy > 65 && state.academicCap > 60) return 'END_SCHOLARSHIP';
-    // Leader ending — built a real community
-    if (state.socialSupport > 70) return 'END_LEADER';
-    // Academic expert — high academics alone is enough
-    if (state.academicCap > 70) return 'END_EXPERT';
-    // Pathfinder — resilient and socially supported
-    if (state.resilience > 60 && state.socialSupport > 50) return 'END_PATHFINDER';
-    // Mentor — social + system savvy
-    if (state.socialSupport > 60 && state.systemSavvy > 50) return 'END_MENTOR';
-    // Good outcome — solid academics carry it
-    if (state.academicCap > 55) return 'END_GOOD';
-    // PLC — resilience + decent academics provide a structured pathway
-    if (state.resilience > 45 && state.academicCap > 35) return 'END_PLC';
-    // Regrouping — didn't get the points, no clear PLC plan, but not defeated
-    if (state.resilience > 30 || state.socialSupport > 35 || state.energy > 35) return 'END_REGROUPING';
-    return 'END_REPEAT';
-  },
+  '__NIGHT_BEFORE_CHECK__': (state) => (state.resilience >= 52 && state.energy >= 38) ? 'NIGHT_BEFORE' : '__END_ROUTE__',
+  '__END_ROUTE__': (state, history) => selectJourneyEnding(state, history),
 };
 
 // ─── Scene Definitions ───────────────────────────────────────────────────────
@@ -341,26 +457,24 @@ export const STORY_DATA: Record<string, Scene> = {
     title: "The First Week Back",
     mood: 'opportunity',
     location: 'school',
-    text: "First week of 6th year. A friend who made it to college last year pulls you aside: 'Apply for HEAR — it's a game-changer.'",
+    text: "First week of 6th year. Guidance class introduces HEAR and DARE. They may be relevant depending on your circumstances, and both have eligibility rules, evidence requirements and deadlines to check.",
     choices: [
       {
-        text: "Look into it. Sounds like a priority.",
+        text: "Check the official criteria and timeline with the guidance counsellor.",
         effects: { systemSavvy: 15, energy: -5 },
         nextSceneId: 'MATHS_CLASS',
-        moduleLink: { moduleId: 'leaving-cert-strategy-protocol', moduleTitle: 'The Leaving Cert Points Protocol', insight: 'Understanding access routes like HEAR and DARE can be worth more than 50 extra points.' },
+        moduleLink: { moduleId: 'leaving-cert-strategy-protocol', moduleTitle: 'The Leaving Cert Points Protocol', insight: 'HEAR and DARE are separate admissions schemes with specific eligibility and documentation rules. Check current official guidance early.' },
       },
       {
-        text: "Maybe later. I need to focus on just studying for now.",
-        effects: { systemSavvy: -10, academicCap: 5 },
+        text: "Note that they are not relevant to me, then check what other routes or supports are.",
+        effects: { systemSavvy: 5, academicCap: 5 },
         nextSceneId: 'MATHS_CLASS',
         moduleLink: { moduleId: 'reverse-engineering-protocol', moduleTitle: 'Reverse Engineering Your Schedule', insight: 'Strategic planning early on prevents last-minute scrambles later.' },
       },
       {
-        text: "Research HEAR/DARE and tell your friends about it too.",
-        effects: { systemSavvy: 20, socialSupport: 10, energy: -10 },
+        text: "Share the official information with friends who may want to check their eligibility.",
+        effects: { systemSavvy: 10, socialSupport: 5, energy: -5 },
         nextSceneId: 'HEAR_ADVOCATE',
-        requires: [{ stat: 'systemSavvy', min: 15 }],
-        flavor: "Your system awareness opens a collaborative path.",
         moduleLink: { moduleId: 'leaving-cert-strategy-protocol', moduleTitle: 'The Leaving Cert Points Protocol', insight: 'Sharing access route knowledge multiplies its impact across your entire friend group.' },
       },
     ],
@@ -391,16 +505,12 @@ export const STORY_DATA: Record<string, Scene> = {
         text: "Start a study group chat to work through it together.",
         effects: { socialSupport: 15, academicCap: 5, energy: -5 },
         nextSceneId: 'FIRST_BAD_GRADE',
-        requires: [{ stat: 'socialSupport', min: 50 }],
-        flavor: "Your social connections open collaborative options.",
         moduleLink: { moduleId: 'emotional-intelligence-protocol', moduleTitle: 'Building Emotional Intelligence', insight: 'Peer learning accelerates understanding and builds bonds that sustain you under pressure.' },
       },
       {
         text: "Head to the library to research study techniques.",
         effects: { academicCap: 5, energy: -5 },
         nextSceneId: 'LIBRARY_DISCOVERY',
-        requires: [{ stat: 'academicCap', min: 25 }],
-        flavor: "Your academic curiosity drives you to find better methods.",
         moduleLink: { moduleId: 'mastering-active-recall-protocol', moduleTitle: 'Mastering Active Recall', insight: 'Self-directed learning about how to learn is the most leveraged investment a student can make.' },
       },
     ],
@@ -410,13 +520,13 @@ export const STORY_DATA: Record<string, Scene> = {
     id: 'FIRST_BAD_GRADE',
     phase: 'Foundation',
     month: 'October',
-    title: "The First Bad Grade",
+    title: "The First Disappointing Result",
     mood: 'crisis',
     location: 'school',
-    text: "Your first big English test comes back: H4. Your heart sinks. What's the story you tell yourself?",
+    text: "Your first big English test comes back at H4, below the target you had set. Your heart sinks. What do you do with the result?",
     choices: [
       {
-        text: "'This proves I'm not a H1 student.' Spend the evening feeling demotivated.",
+        text: "'This proves I'm not capable of my target grade.' Spend the evening feeling demotivated.",
         effects: { resilience: -15, energy: -10 },
         nextSceneId: 'STUDY_METHOD_CHOICE',
         moduleLink: { moduleId: 'growth-mindset-protocol', moduleTitle: 'The Growth Protocol', insight: 'A fixed mindset interprets a bad grade as permanent identity. A growth mindset sees data.' },
@@ -431,8 +541,6 @@ export const STORY_DATA: Record<string, Scene> = {
         text: "Talk to a parent or guardian about it.",
         effects: { resilience: 5, socialSupport: 5 },
         nextSceneId: 'PARENT_CONVERSATION',
-        requires: [{ stat: 'socialSupport', min: 45 }],
-        flavor: "Your support network gives you someone to turn to.",
         moduleLink: { moduleId: 'emotional-intelligence-protocol', moduleTitle: 'Building Emotional Intelligence', insight: 'Sharing academic setbacks with trusted adults normalises struggle and builds family-level resilience.' },
       },
     ],
@@ -454,18 +562,16 @@ export const STORY_DATA: Record<string, Scene> = {
         moduleLink: { moduleId: 'illusion-of-competence-protocol', moduleTitle: 'Overcoming Illusions of Competence', insight: 'Highlighting feels productive but creates a dangerous "fluency illusion" — recognition without recall.' },
       },
       {
-        text: "Active Recall Assault: Close the book and 'blurt' everything you know onto a page. It feels hard.",
+        text: "Retrieval practice: Close the book and write what you can remember, then check the gaps.",
         effects: { energy: -15, academicCap: 15, resilience: 5 },
         nextSceneId: 'TECHNIQUE_UPGRADE',
-        moduleLink: { moduleId: 'mastering-active-recall-protocol', moduleTitle: 'Mastering Active Recall', insight: 'The harder it feels to retrieve information, the stronger the memory becomes. Difficulty is the signal of learning.' },
+        moduleLink: { moduleId: 'mastering-active-recall-protocol', moduleTitle: 'Mastering Active Recall', insight: 'Effortful retrieval can strengthen memory when it is followed by accurate feedback and spaced practice.' },
       },
       {
         text: "Teach a younger student what you've learned — explaining forces understanding.",
         effects: { socialSupport: 10, academicCap: 10, energy: -10 },
         nextSceneId: 'STUDY_GROUP_LEADER',
-        requires: [{ stat: 'socialSupport', min: 60 }],
-        flavor: "Your social network lets you teach, not just learn.",
-        moduleLink: { moduleId: 'elaborative-interrogation-protocol', moduleTitle: 'Elaborative Interrogation', insight: 'Teaching activates the Protégé Effect — explaining something forces deeper processing than any solo method.' },
+        moduleLink: { moduleId: 'elaborative-interrogation-protocol', moduleTitle: 'Elaborative Interrogation', insight: 'Explaining material to someone else can expose gaps and prompt deeper processing, provided the explanation is checked for accuracy.' },
       },
     ],
   },
@@ -485,7 +591,7 @@ export const STORY_DATA: Record<string, Scene> = {
         text: "Mindset Shift: 'I haven't mastered this YET.' Switch to Active Recall tonight.",
         effects: { resilience: 15, academicCap: 10, energy: -10 },
         nextSceneId: 'PASSIVE_RECOVERY',
-        moduleLink: { moduleId: 'mastering-spaced-repetition-protocol', moduleTitle: 'Mastering Spaced Repetition', insight: 'The forgetting curve is real — but spacing your reviews at the right intervals defeats it completely.' },
+        moduleLink: { moduleId: 'mastering-spaced-repetition-protocol', moduleTitle: 'Mastering Spaced Repetition', insight: 'Spaced retrieval can improve long-term retention, especially when each attempt is checked against accurate feedback.' },
       },
       {
         text: "Fixed Frustration: 'I'm just not a Science person.' Go back to re-reading.",
@@ -533,13 +639,13 @@ export const STORY_DATA: Record<string, Scene> = {
         text: "Open up to your friend about how you're feeling.",
         effects: { socialSupport: 15, resilience: 10, energy: 5 },
         nextSceneId: 'SOCIAL_ISOLATION',
-        moduleLink: { moduleId: 'emotional-intelligence-protocol', moduleTitle: 'Building Emotional Intelligence', insight: 'Emotional disclosure reduces cortisol and activates the brain\'s social reward circuits.' },
+        moduleLink: { moduleId: 'emotional-intelligence-protocol', moduleTitle: 'Building Emotional Intelligence', insight: 'An honest conversation can reduce isolation and make practical support easier to access.' },
       },
       {
         text: "'I'm fine.' Push through alone. Don't show weakness.",
         effects: { socialSupport: -10, resilience: -5, energy: -10 },
         nextSceneId: 'SOCIAL_ISOLATION',
-        moduleLink: { moduleId: 'reframing-catastrophic-thoughts-protocol', moduleTitle: 'Reframing Catastrophic Thoughts', insight: 'Catastrophic thinking feeds on isolation. Connection is the antidote to spiralling.' },
+        moduleLink: { moduleId: 'reframing-catastrophic-thoughts-protocol', moduleTitle: 'Reframing Catastrophic Thoughts', insight: 'Connection does not solve every worry, but it can interrupt isolation and bring another perspective into the problem.' },
       },
     ],
   },
@@ -554,23 +660,21 @@ export const STORY_DATA: Record<string, Scene> = {
     text: "You've been cancelling plans, eating lunch alone to cram, scrolling instead of sleeping. You're becoming isolated.",
     choices: [
       {
-        text: "Set a boundary: No studying after 8pm. Use evenings for friends and rest.",
-        effects: { energy: 15, socialSupport: 10, academicCap: -5 },
+        text: "Set a realistic evening cut-off and protect time for sleep, food and connection.",
+        effects: { energy: 15, socialSupport: 10, resilience: 5 },
         nextSceneId: 'PART_TIME_JOB',
-        moduleLink: { moduleId: 'controllable-variables-protocol', moduleTitle: 'Using Controllable Variables to Grow', insight: 'Your brain consolidates learning during rest and sleep, not during extra cramming.' },
+        moduleLink: { moduleId: 'controllable-variables-protocol', moduleTitle: 'Using Controllable Variables to Grow', insight: 'Sleep supports memory consolidation and attention. Protecting rest can be more useful than extending an already exhausted study session.' },
       },
       {
         text: "Double down. The exams won't wait. Sacrifice everything for study.",
-        effects: { academicCap: 10, energy: -15, socialSupport: -10 },
+        effects: { academicCap: -5, energy: -15, socialSupport: -10 },
         nextSceneId: 'PART_TIME_JOB',
         moduleLink: { moduleId: 'controllable-variables-protocol', moduleTitle: 'Using Controllable Variables to Grow', insight: 'Sleep and social connection aren\'t luxuries — they\'re biological inputs your brain needs to function.' },
       },
       {
-        text: "Visit the school counsellor.",
-        effects: { resilience: 5 },
+        text: "Speak to the school counsellor or another trusted adult.",
+        effects: { socialSupport: 10, systemSavvy: 5 },
         nextSceneId: 'WELLNESS_CHECK',
-        requires: [{ stat: 'resilience', max: 35 }],
-        flavor: "Your low resilience signals it's time to seek help.",
         moduleLink: { moduleId: 'emotional-intelligence-protocol', moduleTitle: 'Building Emotional Intelligence', insight: 'Recognising when you need professional support is one of the most important emotional skills you can develop.' },
       },
     ],
@@ -585,13 +689,13 @@ export const STORY_DATA: Record<string, Scene> = {
     title: "Technique Upgrade",
     mood: 'triumph',
     location: 'school',
-    text: "The pop quiz was challenging, but you retrieved most of the key facts. Active Recall worked. A surge of confidence hits.",
+    text: "The pop quiz was challenging, but you retrieved more of the key facts than last time. One result does not prove a method, but retrieval practice looks promising enough to keep testing.",
     choices: [
       {
         text: "Double down: 'This works. I'll build Spaced Repetition into my routine.'",
         effects: { academicCap: 15, resilience: 5 },
         nextSceneId: 'STUDY_GROUP',
-        moduleLink: { moduleId: 'mastering-spaced-repetition-protocol', moduleTitle: 'Mastering Spaced Repetition', insight: 'Combining Active Recall with Spaced Repetition is the most powerful study combo in cognitive science.' },
+        moduleLink: { moduleId: 'mastering-spaced-repetition-protocol', moduleTitle: 'Mastering Spaced Repetition', insight: 'Retrieval practice and spacing are complementary approaches with good evidence for improving durable learning.' },
       },
       {
         text: "Get complacent: 'Great, I can ease off a bit now.'",
@@ -651,7 +755,7 @@ export const STORY_DATA: Record<string, Scene> = {
         text: "Use this as a wake-up call. Build a consistent revision schedule starting tonight.",
         effects: { resilience: 10, systemSavvy: 10, energy: -10 },
         nextSceneId: 'PART_TIME_JOB',
-        moduleLink: { moduleId: 'reverse-engineering-protocol', moduleTitle: 'Reverse Engineering Your Schedule', insight: 'Consistent small sessions beat sporadic cramming every time. Schedule the work backwards from the test date.' },
+        moduleLink: { moduleId: 'reverse-engineering-protocol', moduleTitle: 'Reverse Engineering Your Schedule', insight: 'Regular, distributed study is generally more reliable than leaving most work to one late block. Plan backwards from the assessment.' },
       },
       {
         text: "Blame the teacher for going too fast. It's not fair.",
@@ -671,26 +775,24 @@ export const STORY_DATA: Record<string, Scene> = {
     title: "Work-Life Balance",
     mood: 'opportunity',
     location: 'work',
-    text: "Your boss asks you to cover Thursday night. Good money — but it's your biggest study evening of the week.",
+    text: "Your boss asks you to cover Thursday night. You need the income, but it overlaps with your usual study block. There may not be a cost-free option.",
     choices: [
       {
-        text: "Take the shift. The money is too important right now.",
-        effects: { energy: -20, academicCap: -10 },
+        text: "Take the needed shift and move one priority study block to a realistic time.",
+        effects: { systemSavvy: 5, energy: -5 },
         nextSceneId: 'JOB_CONSEQUENCES',
-        moduleLink: { moduleId: 'linking-study-future-goals-protocol', moduleTitle: 'Linking Study to Future Goals', insight: 'Short-term financial gains can undermine long-term outcomes. Connect today\'s choices to your future self.' },
+        moduleLink: { moduleId: 'linking-study-future-goals-protocol', moduleTitle: 'Linking Study to Future Goals', insight: 'Paid work can be necessary. Protecting one realistic study commitment helps you plan around the constraint without blaming yourself for it.' },
       },
       {
-        text: "Politely decline. 'The Leaving' has to come first.",
+        text: "Decline the shift if that is financially manageable this week.",
         effects: { resilience: 5, academicCap: 5, energy: -5 },
         nextSceneId: '__CHRISTMAS_CHECK__',
         moduleLink: { moduleId: 'best-possible-self-protocol', moduleTitle: 'Finding Your Best Possible Self', insight: 'Saying no to short-term temptation is easier when you have a vivid picture of your future self.' },
       },
       {
-        text: "Negotiate reduced hours with a study-first pitch to your boss.",
+        text: "Ask whether the shift or your regular hours can be adjusted.",
         effects: { systemSavvy: 10, resilience: 10, energy: -5 },
         nextSceneId: 'FINANCIAL_STRATEGY',
-        requires: [{ stat: 'systemSavvy', min: 40 }],
-        flavor: "Your system savvy lets you negotiate, not just choose.",
         moduleLink: { moduleId: 'strategic-advantage-protocol', moduleTitle: 'Your Strategic Advantage', insight: 'Strategic negotiation turns binary choices into win-win outcomes. System-aware students create options.' },
       },
     ],
@@ -703,19 +805,19 @@ export const STORY_DATA: Record<string, Scene> = {
     title: "The Ripple Effect",
     mood: 'reflection',
     location: 'home',
-    text: "You earned €70 but missed your study window. Fatigue from the late night is spilling into Friday classes. One choice rippled through the whole week.",
+    text: "The shift ran late and Friday feels harder. The income mattered, and the original study plan no longer fits. You need to adjust the week around what actually happened.",
     choices: [
       {
-        text: "Learn from it. Reduce shifts to weekends only until the exams are over.",
+        text: "Review your hours and ask for a pattern that protects one reliable study block.",
         effects: { resilience: 10, systemSavvy: 5 },
         nextSceneId: '__CHRISTMAS_CHECK__',
         moduleLink: { moduleId: 'reframing-progress-protocol', moduleTitle: 'Reframing Progress', insight: 'Progress isn\'t linear. What matters is recognising the pattern and adjusting your system.' },
       },
       {
-        text: "Keep the extra shifts. The money stress is worse than the study stress.",
-        effects: { energy: -10, academicCap: -10, resilience: -5 },
+        text: "Keep the shifts you need and ask a teacher to help prioritise the work you can realistically complete.",
+        effects: { socialSupport: 5, systemSavvy: 10, energy: -5 },
         nextSceneId: '__CHRISTMAS_CHECK__',
-        moduleLink: { moduleId: 'strategic-advantage-protocol', moduleTitle: 'Your Strategic Advantage', insight: 'Financial pressure is real — but understanding it as a systemic challenge, not a personal failure, opens up strategic options.' },
+        moduleLink: { moduleId: 'strategic-advantage-protocol', moduleTitle: 'Your Strategic Advantage', insight: 'Financial pressure is a real constraint, not a character flaw. Prioritisation and support can make a limited schedule more workable.' },
       },
     ],
   },
@@ -743,9 +845,9 @@ export const STORY_DATA: Record<string, Scene> = {
     choices: [
       {
         text: "Panic-cram: Pull two all-nighters for your weakest subjects.",
-        effects: { academicCap: 10, energy: -40, resilience: -15 },
+        effects: { academicCap: -10, energy: -40, resilience: -15 },
         nextSceneId: '__MOCK_RESULTS_CHECK__',
-        moduleLink: { moduleId: 'cognitive-endurance-protocol', moduleTitle: 'Cognitive Endurance', insight: 'All-nighters destroy memory consolidation. You\'re burning calories to produce less learning, not more.' },
+        moduleLink: { moduleId: 'cognitive-endurance-protocol', moduleTitle: 'Cognitive Endurance', insight: 'All-nighters can impair attention, memory and next-day performance. Extra hours awake do not guarantee extra learning.' },
       },
       {
         text: "Strategic Triage: Use Interleaving on high-yield topics and protect your sleep schedule.",
@@ -757,9 +859,7 @@ export const STORY_DATA: Record<string, Scene> = {
         text: "Deploy the 'Surplus Rule' — bank easy marks first, then attack hard topics.",
         effects: { academicCap: 20, systemSavvy: 10, energy: -10 },
         nextSceneId: 'MOCK_MASTERY',
-        requires: [{ stat: 'systemSavvy', min: 50 }, { stat: 'academicCap', min: 60 }],
-        flavor: "Your system knowledge + academic base unlock an elite strategy.",
-        moduleLink: { moduleId: 'leaving-cert-strategy-protocol', moduleTitle: 'The Leaving Cert Points Protocol', insight: 'The Surplus Rule: secure guaranteed marks first, then use remaining time on high-risk questions.' },
+        moduleLink: { moduleId: 'leaving-cert-strategy-protocol', moduleTitle: 'The Leaving Cert Points Protocol', insight: 'In an exam, budgeting time for familiar questions before harder ones can protect accessible marks, while still following the paper instructions.' },
       },
     ],
   },
@@ -771,19 +871,21 @@ export const STORY_DATA: Record<string, Scene> = {
     title: "Strategic Reset",
     mood: 'crisis',
     location: 'home',
-    text: "You've hit a wall. Exhausted. Mocks were brutal. Your body and brain are screaming for rest.",
+    text: "You have hit a wall after the Mocks: exhausted, struggling to focus and unsure how much more you can manage. This is a signal to involve support rather than diagnose yourself or simply add more hours.",
     choices: [
       {
-        text: "The 'Grit' Protocol: Take 2 days off entirely to recharge, then simplify the goal.",
-        effects: { energy: 40, resilience: 20, academicCap: -5 },
+        text: "Tell a trusted adult or teacher, reduce the immediate load and make a realistic recovery plan.",
+        effects: {},
+        scoreless: true,
         nextSceneId: 'POST_BURNOUT',
-        moduleLink: { moduleId: 'grammar-of-grit-protocol', moduleTitle: 'The Grammar of Grit', insight: 'True grit includes knowing when to rest. Strategic withdrawal is not the same as giving up.' },
+        moduleLink: { moduleId: 'grammar-of-grit-protocol', moduleTitle: 'The Grammar of Grit', insight: 'Persistent exhaustion deserves support. Rest and workload changes may help, and ongoing or severe symptoms should be discussed with an appropriate health professional.' },
       },
       {
-        text: "Push Through: Force yourself to study 4 hours tonight with caffeine.",
-        effects: { energy: -20, academicCap: 5, resilience: -15 },
+        text: "The symptoms feel severe or unfamiliar — ask an adult to help you decide whether medical support is needed now.",
+        effects: {},
+        scoreless: true,
         nextSceneId: 'ACUTE_EXHAUSTION',
-        moduleLink: { moduleId: 'controllable-variables-protocol', moduleTitle: 'Using Controllable Variables to Grow', insight: 'Below a critical sleep threshold, your brain literally cannot form new long-term memories.' },
+        moduleLink: { moduleId: 'controllable-variables-protocol', moduleTitle: 'Using Controllable Variables to Grow', insight: 'Severe or unfamiliar symptoms should not be self-diagnosed or managed alone. A trusted adult can help assess the next step.' },
       },
     ],
   },
@@ -795,19 +897,21 @@ export const STORY_DATA: Record<string, Scene> = {
     title: "Acute Exhaustion",
     mood: 'crisis',
     location: 'school',
-    text: "Wired on caffeine, zero sleep. You read a question and... nothing. Total blank. The teacher asks if you're okay.",
+    text: "After very little sleep, you feel unwell at school and cannot focus on the question. The teacher asks if you are okay.",
     choices: [
       {
-        text: "Breathe. Use the Physiological Sigh to reset. Ask for help after class.",
-        effects: { resilience: 20, energy: 5, socialSupport: 5 },
+        text: "Tell the teacher you are unwell, pause, and use a slow breathing technique if it feels comfortable.",
+        effects: {},
+        scoreless: true,
         nextSceneId: 'POST_BURNOUT',
-        moduleLink: { moduleId: 'exam-crisis-management-protocol', moduleTitle: 'Exam Crisis Management', insight: 'The "double inhale + long exhale" physiological sigh is the fastest way to activate your parasympathetic nervous system.' },
+        moduleLink: { moduleId: 'exam-crisis-management-protocol', moduleTitle: 'Exam Crisis Management', insight: 'A brief structured breathing practice may reduce arousal for some people. It does not replace telling an adult when you are unwell.' },
       },
       {
-        text: "Panic. The catastrophic thoughts take over. Say nothing.",
-        effects: { resilience: -20, academicCap: -10, energy: -10 },
+        text: "Ask to contact a parent, guardian or another responsible adult, especially if the symptoms are severe or unfamiliar.",
+        effects: {},
+        scoreless: true,
         nextSceneId: 'POST_BURNOUT',
-        moduleLink: { moduleId: 'reframing-catastrophic-thoughts-protocol', moduleTitle: 'Reframing Catastrophic Thoughts', insight: 'Catastrophic spirals follow a predictable pattern. Learning to spot the trigger thought is the first step to breaking the cycle.' },
+        moduleLink: { moduleId: 'reframing-catastrophic-thoughts-protocol', moduleTitle: 'Reframing Catastrophic Thoughts', insight: 'It is appropriate to seek adult or medical help when symptoms feel severe, unfamiliar or unsafe.' },
       },
     ],
   },
@@ -816,13 +920,13 @@ export const STORY_DATA: Record<string, Scene> = {
     id: 'POST_BURNOUT',
     phase: 'Pressure Cooker',
     month: 'February',
-    title: "After the Storm",
+    title: "After Hitting the Wall",
     mood: 'reflection',
     location: 'home',
-    text: "The burnout was rough, but it taught you something. Your study approach needs a rethink — not just what you study, but how you manage yourself.",
+    text: "The period of exhaustion showed that the current workload was not sustainable. Your study approach needs a rethink, alongside support if the symptoms continue.",
     choices: [
       {
-        text: "Overhaul your routine: 8 hours sleep, no phone after 9pm, daily walks.",
+        text: "Make a manageable recovery plan: age-appropriate sleep, fewer late-night cues and regular movement.",
         effects: { energy: 20, resilience: 10, academicCap: 5 },
         nextSceneId: 'CAO_DEADLINE',
         moduleLink: { moduleId: 'controllable-variables-protocol', moduleTitle: 'Using Controllable Variables to Grow', insight: 'Sleep, nutrition, movement — these aren\'t optional extras. They\'re the biological foundation of cognition.' },
@@ -849,41 +953,37 @@ export const STORY_DATA: Record<string, Scene> = {
     title: "The CAO Deadline",
     mood: 'opportunity',
     location: 'home',
-    text: "CAO deadline this week. Dream course vs. safe option. Your guidance counsellor says put 10 choices down.",
+    text: "The CAO deadline is approaching. You can list up to ten Level 8 courses and up to ten Level 7/6 courses. The two lists are processed separately, so each should reflect your genuine order of preference — after you check entry requirements.",
     textVariants: [
       {
-        condition: { stat: 'systemSavvy', max: 25 },
-        text: "The CAO form stares back at you. Ten course choices, ranked in order. You barely understand the points system, let alone HEAR or DARE schemes. Everyone else seems to know exactly what they want. You're not even sure what half these courses involve.",
+        condition: { stat: 'systemSavvy', max: 45 },
+        text: "The CAO form feels confusing. Before submitting, you need to separate the Level 8 and Level 7/6 lists, check course requirements and rank each list by what you would genuinely prefer — not by last year's points.",
       },
     ],
     choices: [
       {
-        text: "Be realistic. Put the safer options down first.",
-        effects: { systemSavvy: 5, resilience: -5 },
+        text: "Rank both lists by genuine preference and verify every course requirement.",
+        effects: { systemSavvy: 15, resilience: 5 },
         nextSceneId: '__ACADEMIC_CHECK__',
-        moduleLink: { moduleId: 'leaving-cert-strategy-protocol', moduleTitle: 'The Leaving Cert Points Protocol', insight: 'The CAO is a free list — there is zero cost to putting a dream course as #1. Strategic ordering matters.' },
+        moduleLink: { moduleId: 'leaving-cert-strategy-protocol', moduleTitle: 'The Leaving Cert Points Protocol', insight: 'CAO advises applicants to list courses in genuine order of preference. Points are not a forecast, and the Level 8 and Level 7/6 lists are processed separately.' },
       },
       {
-        text: "Shoot for the stars. Put the dream course as #1.",
-        effects: { resilience: 10, systemSavvy: 5 },
+        text: "Order courses by last year's points because the highest-points course must be best.",
+        effects: { systemSavvy: -10 },
         nextSceneId: '__ACADEMIC_CHECK__',
-        moduleLink: { moduleId: 'best-possible-self-protocol', moduleTitle: 'Finding Your Best Possible Self', insight: 'Visualising your best possible future activates the motivational circuits you need for the final push.' },
+        moduleLink: { moduleId: 'best-possible-self-protocol', moduleTitle: 'Finding Your Best Possible Self', insight: 'Previous points reflect past demand and available places; they do not tell you which course best fits your goals or what points will be required this year.' },
       },
       {
-        text: "Apply to both courses, plus HEAR scheme and a scholarship application.",
-        effects: { systemSavvy: 15, resilience: 10, energy: -15 },
+        text: "If potentially eligible, finish the HEAR or DARE process and separately check grants and scholarships.",
+        effects: { systemSavvy: 15, resilience: 5, energy: -5 },
         nextSceneId: 'SCHOLARSHIP_PATH',
-        requires: [{ stat: 'systemSavvy', min: 60 }],
-        flavor: "Your system mastery lets you play every angle at once.",
-        moduleLink: { moduleId: 'leaving-cert-strategy-protocol', moduleTitle: 'The Leaving Cert Points Protocol', insight: 'The CAO is a free list — strategic students layer HEAR, DARE, and scholarships on top for maximum options.' },
+        moduleLink: { moduleId: 'leaving-cert-strategy-protocol', moduleTitle: 'The Leaving Cert Points Protocol', insight: 'HEAR, DARE, grants and scholarships have different criteria and processes. Eligibility or an application does not guarantee an offer or funding.' },
       },
       {
-        text: "Ask your study partner what they're putting down.",
-        effects: { socialSupport: 5 },
+        text: "Cross-check research with a friend, then make your own order independently.",
+        effects: { socialSupport: 5, systemSavvy: 5 },
         nextSceneId: 'STUDY_PARTNER_CONFLICT',
-        requires: [{ stat: 'socialSupport', min: 50 }],
-        flavor: "Your close friendships create both support and complexity.",
-        moduleLink: { moduleId: 'emotional-intelligence-protocol', moduleTitle: 'Building Emotional Intelligence', insight: 'Navigating academic decisions with friends requires honest communication about different goals.' },
+        moduleLink: { moduleId: 'emotional-intelligence-protocol', moduleTitle: 'Building Emotional Intelligence', insight: 'A friend can help you spot missing information, but each applicant should order courses around their own preferences and requirements.' },
       },
     ],
   },
@@ -907,7 +1007,7 @@ export const STORY_DATA: Record<string, Scene> = {
         text: "Try Interleaving: Mix up different topics in one study session.",
         effects: { academicCap: 15, energy: -10, resilience: 5 },
         nextSceneId: 'FINAL_STRETCH_START',
-        moduleLink: { moduleId: 'mastering-interleaving-protocol', moduleTitle: 'Mastering Interleaving', insight: 'Interleaving forces your brain to discriminate between problem types — exactly what exams demand.' },
+        moduleLink: { moduleId: 'mastering-interleaving-protocol', moduleTitle: 'Mastering Interleaving', insight: 'Interleaving asks you to distinguish between problem types and choose a method, which can support flexible application.' },
       },
       {
         text: "Realize your timetable is already falling apart.",
@@ -934,7 +1034,7 @@ export const STORY_DATA: Record<string, Scene> = {
     text: "A teacher pulls you aside: 'I see your effort, but your method needs work. Stay back Tuesdays — I'll show you how to approach exam questions differently.'",
     choices: [
       {
-        text: "Accept the help. Swallow the pride.",
+        text: "Accept the help and bring one question from the last paper.",
         effects: { academicCap: 15, socialSupport: 10, resilience: 5 },
         nextSceneId: 'FINAL_STRETCH_START',
         moduleLink: { moduleId: 'self-efficacy-protocol', moduleTitle: 'Self Efficacy', insight: 'Accepting mentorship is one of the four sources of self-efficacy. A coach sees your blind spots.' },
@@ -946,7 +1046,7 @@ export const STORY_DATA: Record<string, Scene> = {
         moduleLink: { moduleId: 'autodidact-engine-protocol', moduleTitle: 'Using Feedback Loops', insight: 'Independence is powerful, but without external feedback you can\'t see what you don\'t know.' },
       },
       {
-        text: "Consider dropping to Ordinary Level in your weakest subject.",
+        text: "Explore whether a level change is appropriate with the subject teacher and guidance counsellor.",
         effects: { systemSavvy: 5 },
         nextSceneId: 'SUBJECT_SWAP_DILEMMA',
         moduleLink: { moduleId: 'leaving-cert-strategy-protocol', moduleTitle: 'The Leaving Cert Points Protocol', insight: 'Strategic level changes are one of the most underused tools in the Leaving Cert playbook.' },
@@ -974,13 +1074,13 @@ export const STORY_DATA: Record<string, Scene> = {
       {
         text: "Follow their plan blindly. They know best.",
         effects: { systemSavvy: 5, academicCap: 5 },
-        nextSceneId: '__ECHO_CHAIN__',
-        moduleLink: { moduleId: 'points-optimization-protocol', moduleTitle: 'Points Optimization', insight: 'Generic plans work for average results. Elite performance requires personalised strategy.' },
+        nextSceneId: 'ASSESSMENT_DEADLINES',
+        moduleLink: { moduleId: 'points-optimization-protocol', moduleTitle: 'Points Optimization', insight: 'A general plan is a starting point. Adapt it using syllabus coverage, deadlines, feedback and the time you actually have.' },
       },
       {
         text: "Adapt the plan to my own weak areas using a Retrospective Log.",
         effects: { systemSavvy: 10, resilience: 5, academicCap: 5 },
-        nextSceneId: '__ECHO_CHAIN__',
+        nextSceneId: 'ASSESSMENT_DEADLINES',
         moduleLink: { moduleId: 'reverse-engineering-protocol', moduleTitle: 'Reverse Engineering Your Schedule', insight: 'A retrospective timetable works backwards from your exam, allocating more time to weaker areas.' },
       },
       {
@@ -992,6 +1092,36 @@ export const STORY_DATA: Record<string, Scene> = {
     ],
   },
 
+  'ASSESSMENT_DEADLINES': {
+    id: 'ASSESSMENT_DEADLINES',
+    phase: 'Final Stretch',
+    month: 'April',
+    title: "The Deadlines Beyond the Written Papers",
+    mood: 'opportunity',
+    location: 'school',
+    text: "Written exams dominate the conversation, but your subjects may also involve oral, practical, project or coursework requirements. The dates and rules differ, and one deadline is closer than you remembered.",
+    choices: [
+      {
+        text: "Build one source-checked calendar and ask each subject teacher to confirm the next deliverable.",
+        effects: { systemSavvy: 15, resilience: 5 },
+        nextSceneId: '__ECHO_CHAIN__',
+        moduleLink: { moduleId: 'reverse-engineering-protocol', moduleTitle: 'Reverse Engineering Your Schedule', insight: 'A complete plan includes every assessed component, its source and its next concrete action — not just the final written papers.' },
+      },
+      {
+        text: "Focus only on written exams and assume the other requirements will sort themselves out.",
+        effects: { academicCap: 5, systemSavvy: -10, energy: -5 },
+        nextSceneId: '__ECHO_CHAIN__',
+        moduleLink: { moduleId: 'leaving-cert-strategy-protocol', moduleTitle: 'The Leaving Cert Points Protocol', insight: 'Untracked practical, oral or coursework requirements can become urgent. Confirming dates early protects both time and options.' },
+      },
+      {
+        text: "Tell a teacher or guidance counsellor where workload or support needs are colliding, then agree one next action.",
+        effects: { socialSupport: 10, systemSavvy: 10, energy: 5 },
+        nextSceneId: '__ECHO_CHAIN__',
+        moduleLink: { moduleId: 'emotional-intelligence-protocol', moduleTitle: 'Building Emotional Intelligence', insight: 'Early, specific communication gives the school a better chance to clarify requirements and connect you with relevant support.' },
+      },
+    ],
+  },
+
   'EXAM_ANXIETY': {
     id: 'EXAM_ANXIETY',
     phase: 'Final Stretch',
@@ -999,43 +1129,49 @@ export const STORY_DATA: Record<string, Scene> = {
     title: "The Anxiety Wave",
     mood: 'crisis',
     location: 'home',
-    text: "3 AM. Heart racing. 'What if I blank? What if I fail?' The anxiety is physical — tight chest, racing pulse, scattered thoughts.",
+    text: "It is 3 AM and anxious thoughts are keeping you awake. Your heart is racing and it is hard to settle. You need a small next step, not a perfect solution in the middle of the night.",
     textVariants: [
       {
         condition: { stat: 'resilience', min: 65 },
-        text: "The anxiety is there — it always is before exams. But it feels different now. It's not the paralysing terror of someone unprepared. It's the focused tension of an athlete before a race. You've trained for this. The nerves are fuel, not fear.",
+        text: "You notice the anxiety without treating it as proof that you are unprepared. A familiar wind-down plan gives you something concrete to follow while the feeling passes.",
       },
       {
         condition: { stat: 'energy', max: 30 },
-        text: "You can't sleep. You can't focus. You can't stop thinking about tomorrow's exam. Your hands are shaking slightly as you try to review your notes. The words swim on the page. Every technique you've learned this year feels like it's evaporating from your mind.",
+        text: "You are exhausted and still awake. More revision is no longer landing, so the priority is to reduce stimulation, seek support if needed and give yourself the best chance to rest.",
       },
     ],
     choices: [
       {
-        text: "Get up and use the 'Worry Window' technique: write every fear down, then schedule 15 minutes tomorrow to address each one.",
+        text: "Write the worries down, note one time to review practical concerns tomorrow, then return to a quiet wind-down routine.",
         effects: { resilience: 15, energy: 5 },
         nextSceneId: 'PEER_SUPPORT',
-        moduleLink: { moduleId: 'reframing-catastrophic-thoughts-protocol', moduleTitle: 'Reframing Catastrophic Thoughts', insight: 'Externalising worries onto paper reduces their cognitive load by up to 60%. Your brain stops looping when the thought is "stored" elsewhere.' },
+        moduleLink: { moduleId: 'reframing-catastrophic-thoughts-protocol', moduleTitle: 'Reframing Catastrophic Thoughts', insight: 'Writing worries down and postponing problem-solving can help some people disengage from repetitive thinking. It is a coping tool, not a guaranteed fix.' },
       },
       {
         text: "Lie there spiralling. Eventually check your phone until 5 AM.",
         effects: { energy: -20, resilience: -10 },
         nextSceneId: 'PEER_SUPPORT',
-        moduleLink: { moduleId: 'digital-distraction-protocol', moduleTitle: 'Creating Barriers for Digital Distractions', insight: 'Phone screens emit blue light that suppresses melatonin. Late-night scrolling compounds sleep loss and anxiety.' },
+        moduleLink: { moduleId: 'digital-distraction-protocol', moduleTitle: 'Creating Barriers for Digital Distractions', insight: 'Late-night scrolling can extend wakefulness through stimulation, notifications and light exposure, leaving less time for sleep.' },
       },
       {
-        text: "Execute your pre-rehearsed exam routine — you planned for this exact moment.",
+        text: "Use the simple wind-down routine you practised and keep expectations realistic.",
         effects: { resilience: 20, energy: 10 },
         nextSceneId: 'CRISIS_AVERTED',
-        requires: [{ stat: 'resilience', min: 60 }, { stat: 'energy', min: 40 }],
-        flavor: "Your resilience and energy reserves kick in automatically.",
-        moduleLink: { moduleId: 'game-day-protocol', moduleTitle: "Game Day: The Athlete's Protocol", insight: 'Pre-rehearsed routines bypass the panic response. Your brain follows the script instead of spiralling.' },
+        moduleLink: { moduleId: 'game-day-protocol', moduleTitle: "Game Day: The Athlete's Protocol", insight: 'A familiar routine can reduce uncertainty and decision load. It cannot guarantee that anxiety disappears.' },
       },
       {
-        text: "The pressure isn't from exams — it's from family expectations.",
-        effects: { resilience: -5 },
+        text: "The pressure is tied to family expectations; plan a safer time and person for an honest conversation.",
+        effects: {},
+        scoreless: true,
         nextSceneId: 'FAMILY_PRESSURE',
         moduleLink: { moduleId: 'reframing-catastrophic-thoughts-protocol', moduleTitle: 'Reframing Catastrophic Thoughts', insight: 'External pressure from family can be harder to manage than academic pressure because it carries emotional weight.' },
+      },
+      {
+        text: "Wake or contact a trusted adult if the symptoms feel unsafe or unmanageable.",
+        effects: {},
+        scoreless: true,
+        nextSceneId: 'PEER_SUPPORT',
+        moduleLink: { moduleId: 'emotional-intelligence-protocol', moduleTitle: 'Building Emotional Intelligence', insight: 'Severe, unfamiliar or persistent symptoms should not be managed alone. A trusted adult can help decide whether medical support is needed.' },
       },
     ],
   },
@@ -1059,7 +1195,7 @@ export const STORY_DATA: Record<string, Scene> = {
         text: "Help them out. Explaining it will probably strengthen my own understanding anyway.",
         effects: { socialSupport: 15, academicCap: 5, energy: -10, resilience: 5 },
         nextSceneId: 'DIGITAL_DISTRACTION',
-        moduleLink: { moduleId: 'elaborative-interrogation-protocol', moduleTitle: 'Elaborative Interrogation', insight: 'The "Protégé Effect" is real: teaching activates deeper processing than simply reviewing your notes.' },
+        moduleLink: { moduleId: 'elaborative-interrogation-protocol', moduleTitle: 'Elaborative Interrogation', insight: 'Preparing an explanation can reveal gaps and strengthen understanding when you verify it against reliable material.' },
       },
       {
         text: "Sorry, I need to focus on my own weak areas. It's too close to the exams.",
@@ -1071,15 +1207,14 @@ export const STORY_DATA: Record<string, Scene> = {
         text: "Organize a full study group workshop — everyone teaches their strongest topic.",
         effects: { socialSupport: 20, academicCap: 10, energy: -15 },
         nextSceneId: 'PEER_NETWORK_EFFECT',
-        requires: [{ stat: 'socialSupport', min: 70 }],
-        flavor: "Your deep social connections unlock collective intelligence.",
-        moduleLink: { moduleId: 'emotional-intelligence-protocol', moduleTitle: 'Building Emotional Intelligence', insight: 'Study groups where everyone teaches their strength create exponential knowledge transfer.' },
+        moduleLink: { moduleId: 'emotional-intelligence-protocol', moduleTitle: 'Building Emotional Intelligence', insight: 'A structured study group can pool different strengths, provided everyone checks explanations and protects individual study needs.' },
       },
       {
-        text: "Someone in your class has a panic attack before a test.",
-        effects: { socialSupport: 5 },
+        text: "The class is interrupted when another student appears to be in acute distress.",
+        effects: {},
+        scoreless: true,
         nextSceneId: 'GRACE_UNDER_PRESSURE',
-        moduleLink: { moduleId: 'exam-crisis-management-protocol', moduleTitle: 'Exam Crisis Management', insight: 'How you respond to others in crisis reveals — and reinforces — your own emotional resilience.' },
+        moduleLink: { moduleId: 'exam-crisis-management-protocol', moduleTitle: 'Exam Crisis Management', insight: 'A possible health crisis should be passed to the responsible adult immediately; students are not expected to diagnose or treat it.' },
       },
     ],
   },
@@ -1095,37 +1230,33 @@ export const STORY_DATA: Record<string, Scene> = {
     textVariants: [
       {
         condition: { stat: 'systemSavvy', min: 55 },
-        text: "Your phone buzzes with another notification. But you've been here before — you know the research. Each distraction costs 23 minutes of refocus time. You've already mapped your distraction patterns and identified your weak moments. The question is execution.",
+        text: "Your phone buzzes with another notification. You have already noticed when distraction is most likely and can now choose a boundary that fits the actual problem.",
       },
     ],
     choices: [
       {
-        text: "Nuclear option: Give your phone to a family member from 6-9pm every study night.",
+        text: "Set a planned phone-free block and place the phone outside the study space.",
         effects: { academicCap: 15, energy: 5, resilience: 5 },
-        nextSceneId: 'GAME_DAY_PREP',
-        moduleLink: { moduleId: 'digital-distraction-protocol', moduleTitle: 'Creating Barriers for Digital Distractions', insight: 'Willpower is a depletable resource. Physical barriers (removing the phone) beat mental resolve every time.' },
+        nextSceneId: '__COMEBACK_CHECK__',
+        moduleLink: { moduleId: 'digital-distraction-protocol', moduleTitle: 'Creating Barriers for Digital Distractions', insight: 'A physical boundary reduces cues and makes the intended action easier. The useful barrier is one you can sustain.' },
       },
       {
         text: "Promise yourself you'll have more willpower next time. Keep the phone on the desk.",
         effects: { academicCap: -5, energy: -10, resilience: -5 },
-        nextSceneId: 'GAME_DAY_PREP',
-        moduleLink: { moduleId: 'bimodal-brain-protocol', moduleTitle: 'Focused vs Diffuse Mode', insight: 'Your brain can\'t sustain focused mode with a distraction source in arm\'s reach. Environment design trumps willpower.' },
+        nextSceneId: '__COMEBACK_CHECK__',
+        moduleLink: { moduleId: 'bimodal-brain-protocol', moduleTitle: 'Focused vs Diffuse Mode', insight: 'Keeping a high-salience distraction close by can make sustained attention harder. Changing the environment reduces that demand.' },
       },
       {
-        text: "Already handled — you set up app blockers and a phone lockbox weeks ago.",
+        text: "Set up Focus mode or app limits and tell someone when the block should end.",
         effects: { academicCap: 15, energy: 10, systemSavvy: 5 },
-        nextSceneId: 'GAME_DAY_PREP',
-        requires: [{ stat: 'systemSavvy', min: 50 }],
-        flavor: "Your foresight already solved this problem.",
-        moduleLink: { moduleId: 'digital-distraction-protocol', moduleTitle: 'Creating Barriers for Digital Distractions', insight: 'System-savvy students design their environment in advance. The battle was won weeks ago.' },
+        nextSceneId: '__COMEBACK_CHECK__',
+        moduleLink: { moduleId: 'digital-distraction-protocol', moduleTitle: 'Creating Barriers for Digital Distractions', insight: 'Technical limits work best when they are specific, time-bounded and paired with a clear study task.' },
       },
       {
-        text: "Create a pre-exam ritual for the morning.",
+        text: "Create and test a simple pre-exam routine for the morning.",
         effects: { resilience: 5 },
         nextSceneId: 'EXAM_EVE_RITUAL',
-        requires: [{ stat: 'resilience', min: 50 }],
-        flavor: "Your resilience lets you think beyond just studying.",
-        moduleLink: { moduleId: 'game-day-protocol', moduleTitle: "Game Day: The Athlete's Protocol", insight: 'Pre-performance rituals reduce anxiety by giving your brain a predictable sequence to follow.' },
+        moduleLink: { moduleId: 'game-day-protocol', moduleTitle: "Game Day: The Athlete's Protocol", insight: 'A familiar, practical routine may reduce uncertainty and avoidable decision-making before an exam.' },
       },
     ],
   },
@@ -1141,35 +1272,33 @@ export const STORY_DATA: Record<string, Scene> = {
     textVariants: [
       {
         condition: { stat: 'energy', min: 50 },
-        text: "Tomorrow is game day. You look at your stat dashboard — energy stable, techniques sharp, friends solid, system understood, mind tough. Not many students get here with everything in balance. You don't need a last-minute miracle. You just need to show up and execute.",
+        text: "Your bag is packed and the practical details are handled. You do not need a last-minute reinvention; the remaining decision is how to protect rest and reduce avoidable uncertainty.",
       },
     ],
     choices: [
       {
         text: "Last-minute cramming session until 2 AM.",
-        effects: { energy: -30, academicCap: 5 },
+        effects: { energy: -30, academicCap: -5 },
         nextSceneId: '__NIGHT_BEFORE_CHECK__',
-        moduleLink: { moduleId: 'game-day-protocol', moduleTitle: "Game Day: The Athlete's Protocol", insight: 'Elite athletes never train the night before a competition. Your exam is your competition.' },
+        moduleLink: { moduleId: 'game-day-protocol', moduleTitle: "Game Day: The Athlete's Protocol", insight: 'Late cramming reduces the time available for sleep and may leave you less alert. A short review is different from studying deep into the night.' },
       },
       {
-        text: "Do a 10-minute review of key formulas, then get a full night's sleep.",
+        text: "Do a brief review of key information, then protect an age-appropriate night's sleep.",
         effects: { energy: 20, resilience: 10 },
         nextSceneId: '__NIGHT_BEFORE_CHECK__',
         moduleLink: { moduleId: 'exam-hall-strategies-protocol', moduleTitle: 'Exam Hall Strategies', insight: 'Sleep consolidates memories and restores prefrontal cortex function — the brain region you need most in an exam.' },
       },
       {
-        text: "Execute a precision exam protocol — meal prep, gear check, timed sleep, morning routine.",
+        text: "Use a prepared checklist — food, required materials, travel plan, wind-down and morning routine.",
         effects: { energy: 25, resilience: 15, academicCap: 5 },
         nextSceneId: 'ELITE_PROTOCOL',
-        requires: [{ stat: 'academicCap', min: 70 }, { stat: 'resilience', min: 60 }],
-        flavor: "Your elite preparation unlocks a military-grade game day routine.",
-        moduleLink: { moduleId: 'game-day-protocol', moduleTitle: "Game Day: The Athlete's Protocol", insight: 'Elite performers don\'t leave exam day to chance. Every variable is controlled in advance.' },
+        moduleLink: { moduleId: 'game-day-protocol', moduleTitle: "Game Day: The Athlete's Protocol", insight: 'A practical checklist can prevent avoidable problems and reduce decision load. Some uncertainty will always remain.' },
       },
       {
         text: "Go for a walk to clear your head the night before.",
         effects: { energy: 5 },
         nextSceneId: 'WALKING_TO_EXAM',
-        moduleLink: { moduleId: 'controllable-variables-protocol', moduleTitle: 'Using Controllable Variables to Grow', insight: 'Physical movement before high-stakes events shifts the brain from anxious rumination to calm processing.' },
+        moduleLink: { moduleId: 'controllable-variables-protocol', moduleTitle: 'Using Controllable Variables to Grow', insight: 'Gentle movement or a short walk can help some people step away from repetitive thinking, if it is safe and practical.' },
       },
     ],
   },
@@ -1185,13 +1314,13 @@ export const STORY_DATA: Record<string, Scene> = {
     title: "The HEAR Advocate",
     mood: 'social',
     location: 'school',
-    text: "You told your friends about HEAR and one discovers they qualify. They're emotional — no one in their family knew this existed. You've changed someone's trajectory with information alone.",
+    text: "You share the official HEAR information and one friend realises the criteria may be relevant to them. They still need to check eligibility and documentation with the guidance counsellor.",
     choices: [
       {
-        text: "Help them with the application. This matters more than tonight's study.",
+        text: "Help them list questions, then direct them to the guidance counsellor and official application guidance.",
         effects: { socialSupport: 20, systemSavvy: 10, energy: -10 },
         nextSceneId: 'MATHS_CLASS',
-        moduleLink: { moduleId: 'emotional-intelligence-protocol', moduleTitle: 'Building Emotional Intelligence', insight: 'Social capital compounds. Helping one person creates a ripple effect through their entire network.' },
+        moduleLink: { moduleId: 'emotional-intelligence-protocol', moduleTitle: 'Building Emotional Intelligence', insight: 'Useful peer support means sharing accurate sources and connecting someone with the staff responsible for application guidance.' },
       },
       {
         text: "Point them to the guidance counsellor and get back to your own plan.",
@@ -1233,13 +1362,13 @@ export const STORY_DATA: Record<string, Scene> = {
     title: "The Financial Strategy",
     mood: 'opportunity',
     location: 'work',
-    text: "Your boss agreed to reduced hours. Better yet, your research uncovered a student grant you didn't know about. You've turned a binary choice into a strategic win.",
+    text: "Your boss agrees to adjusted hours. Your research also surfaces a financial support that may be relevant, but you still need to verify its criteria, deadlines and application process.",
     choices: [
       {
-        text: "Apply for the grant and use the freed-up time for focused revision.",
+        text: "Check eligibility through the official source and apply if the support is relevant.",
         effects: { systemSavvy: 15, academicCap: 10, energy: 5 },
         nextSceneId: '__CHRISTMAS_CHECK__',
-        moduleLink: { moduleId: 'strategic-advantage-protocol', moduleTitle: 'Your Strategic Advantage', insight: 'Financial strategy is academic strategy. Removing money stress frees cognitive resources for learning.' },
+        moduleLink: { moduleId: 'strategic-advantage-protocol', moduleTitle: 'Your Strategic Advantage', insight: 'Financial supports have specific criteria and are not guaranteed. Accurate information can still help you plan work, study and costs more realistically.' },
       },
       {
         text: "Use the extra time for rest. Your energy reserves need rebuilding.",
@@ -1283,10 +1412,10 @@ export const STORY_DATA: Record<string, Scene> = {
     title: "Mock Mastery",
     mood: 'triumph',
     location: 'exam-hall',
-    text: "Your surplus strategy paid off massively. You banked easy marks across every paper, then attacked the hard questions with confidence. Your mock results shock everyone — including you.",
+    text: "On a practice paper, the time-allocation strategy helps you complete more accessible questions before returning to harder ones. The paper still shows content gaps, but the timing evidence is useful.",
     choices: [
       {
-        text: "Stay humble. Refine the strategy for the real thing.",
+        text: "Review the paper and refine the timing plan for the next practice attempt.",
         effects: { academicCap: 15, resilience: 10, systemSavvy: 10 },
         nextSceneId: '__BURNOUT_CHECK__',
         moduleLink: { moduleId: 'illusion-of-competence-protocol', moduleTitle: 'Overcoming Illusions of Competence', insight: 'Mock success is a data point, not a destination. The real exam is a different beast.' },
@@ -1307,19 +1436,19 @@ export const STORY_DATA: Record<string, Scene> = {
     title: "The Scholarship Path",
     mood: 'opportunity',
     location: 'online',
-    text: "Your scholarship application is in. The university wrote back — you're shortlisted. It's not just about points anymore. Your system awareness has opened doors that most students don't even know exist.",
+    text: "You find a scholarship whose criteria may fit and confirm the deadline and evidence required. It is a separate application with no guaranteed outcome, so it needs to fit alongside your existing workload.",
     choices: [
       {
-        text: "Prepare for the scholarship interview alongside your study routine.",
+        text: "Prepare the application carefully and set a firm time limit so core study does not disappear.",
         effects: { systemSavvy: 15, resilience: 10, energy: -15 },
         nextSceneId: '__ACADEMIC_CHECK__',
-        moduleLink: { moduleId: 'best-possible-self-protocol', moduleTitle: 'Finding Your Best Possible Self', insight: 'Scholarship interviews test your narrative, not just your grades. Know your story.' },
+        moduleLink: { moduleId: 'best-possible-self-protocol', moduleTitle: 'Finding Your Best Possible Self', insight: 'Scholarship criteria and selection processes vary. Use the provider\'s current guidance and support every claim with accurate evidence.' },
       },
       {
-        text: "Focus on the exams. The scholarship is a bonus, not the plan.",
+        text: "Decide not to apply after weighing the deadline against your current capacity.",
         effects: { academicCap: 10, energy: 5 },
         nextSceneId: '__ACADEMIC_CHECK__',
-        moduleLink: { moduleId: 'leaving-cert-strategy-protocol', moduleTitle: 'The Leaving Cert Points Protocol', insight: 'Layering strategies means you always have a fallback. Points are the foundation; scholarships are the bonus.' },
+        moduleLink: { moduleId: 'leaving-cert-strategy-protocol', moduleTitle: 'The Leaving Cert Points Protocol', insight: 'Not every relevant opportunity is worth pursuing at once. A deliberate no can protect higher-priority work.' },
       },
     ],
   },
@@ -1331,19 +1460,19 @@ export const STORY_DATA: Record<string, Scene> = {
     title: "Crisis Averted",
     mood: 'triumph',
     location: 'home',
-    text: "Your pre-built routine kicked in automatically. Deep breath, journal the fears, execute the morning protocol. By sunrise, the anxiety has passed. You feel ready — not panicked.",
+    text: "The routine does not erase the anxiety, but it gives the night some structure. You write down the practical concerns, reduce stimulation and get some rest before morning.",
     choices: [
       {
         text: "Share your anxiety management routine with a struggling friend.",
         effects: { socialSupport: 15, resilience: 5 },
         nextSceneId: 'PEER_SUPPORT',
-        moduleLink: { moduleId: 'reframing-catastrophic-thoughts-protocol', moduleTitle: 'Reframing Catastrophic Thoughts', insight: 'Teaching others your coping strategies reinforces them in your own neural pathways.' },
+        moduleLink: { moduleId: 'reframing-catastrophic-thoughts-protocol', moduleTitle: 'Reframing Catastrophic Thoughts', insight: 'Sharing a coping strategy can prompt reflection, but each person may need different support and professional advice.' },
       },
       {
         text: "Channel the calm into a productive morning study session.",
         effects: { academicCap: 10, energy: 5 },
         nextSceneId: 'PEER_SUPPORT',
-        moduleLink: { moduleId: 'controllable-variables-protocol', moduleTitle: 'Using Controllable Variables to Grow', insight: 'Post-anxiety calm creates a window of heightened focus. Use it strategically.' },
+        moduleLink: { moduleId: 'controllable-variables-protocol', moduleTitle: 'Using Controllable Variables to Grow', insight: 'After a difficult night, keep the morning plan modest and focus on controllable practical steps.' },
       },
     ],
   },
@@ -1360,8 +1489,8 @@ export const STORY_DATA: Record<string, Scene> = {
       {
         text: "Create a shared revision resource pack for the whole group.",
         effects: { socialSupport: 10, academicCap: 10, systemSavvy: 5, energy: -10 },
-        nextSceneId: 'DIGITAL_DISTRACTION',
-        moduleLink: { moduleId: 'elaborative-interrogation-protocol', moduleTitle: 'Elaborative Interrogation', insight: 'Collaborative resource creation forces synthesis — the highest level of Bloom\'s taxonomy.' },
+        nextSceneId: 'TEACHING_LEGACY',
+        moduleLink: { moduleId: 'elaborative-interrogation-protocol', moduleTitle: 'Elaborative Interrogation', insight: 'Creating a shared resource requires selection and synthesis; the group should also check it against the syllabus and reliable sources.' },
       },
       {
         text: "Wind down the group to focus on individual weak spots.",
@@ -1378,19 +1507,19 @@ export const STORY_DATA: Record<string, Scene> = {
     id: 'SYSTEM_MASTERY',
     phase: 'Final Stretch',
     month: 'May',
-    title: "System Mastery",
+    title: "The Options Checklist",
     mood: 'triumph',
     location: 'online',
-    text: "You've gamed every angle: HEAR, scholarship applications, optimal subject selection, grade appeals process. You understand the system better than most teachers. The exam is just one piece of your strategy.",
+    text: "You have checked the relevant deadlines, course requirements and application steps using official sources. The plan is documented, and you know which questions still need guidance rather than guesswork.",
     choices: [
       {
-        text: "Write down your entire system for a younger sibling or friend to use next year.",
+        text: "Turn the process into a source-linked checklist a younger student can adapt next year.",
         effects: { socialSupport: 15, systemSavvy: 10, energy: -5 },
         nextSceneId: 'GAME_DAY_PREP',
-        moduleLink: { moduleId: 'leaving-cert-strategy-protocol', moduleTitle: 'The Leaving Cert Points Protocol', insight: 'Documenting your system creates a legacy. The knowledge dies with you unless you share it.' },
+        moduleLink: { moduleId: 'leaving-cert-strategy-protocol', moduleTitle: 'The Leaving Cert Points Protocol', insight: 'A useful checklist includes dates, source links and a reminder that criteria can change from year to year.' },
       },
       {
-        text: "Focus on execution. The system is built — now just execute perfectly.",
+        text: "Close the planning loop and focus on the next exam task, without expecting perfect execution.",
         effects: { academicCap: 10, resilience: 10 },
         nextSceneId: 'GAME_DAY_PREP',
         moduleLink: { moduleId: 'game-day-protocol', moduleTitle: "Game Day: The Athlete's Protocol", insight: 'In the final stretch, switch from strategy mode to execution mode. Trust the system you\'ve built.' },
@@ -1410,8 +1539,8 @@ export const STORY_DATA: Record<string, Scene> = {
       {
         text: "Create the guide. This is your legacy, and the teaching deepens your own mastery.",
         effects: { socialSupport: 15, academicCap: 10, energy: -10 },
-        nextSceneId: 'GAME_DAY_PREP',
-        moduleLink: { moduleId: 'elaborative-interrogation-protocol', moduleTitle: 'Elaborative Interrogation', insight: 'Creating teaching materials is the ultimate form of active learning. You teach best what you need to learn most.' },
+        nextSceneId: 'DIGITAL_DISTRACTION',
+        moduleLink: { moduleId: 'elaborative-interrogation-protocol', moduleTitle: 'Elaborative Interrogation', insight: 'Creating teaching material can deepen understanding, but accuracy checks and workload boundaries still matter.' },
       },
       {
         text: "Politely decline. Every hour counts now.",
@@ -1426,13 +1555,13 @@ export const STORY_DATA: Record<string, Scene> = {
     id: 'ELITE_PROTOCOL',
     phase: 'Final Stretch',
     month: 'June',
-    title: "The Elite Protocol",
+    title: "The Prepared Morning",
     mood: 'exam',
     location: 'exam-hall',
-    text: "Exam morning. Your routine executes like clockwork — balanced breakfast, brief warm-up review, physiological sigh at the school gate. You walk into the hall feeling like an athlete entering the arena.",
+    text: "Exam morning. The practical checklist reduces avoidable decisions: food you know you can manage, required materials, travel time and a brief review. You still feel nervous, but you are not searching for missing essentials.",
     choices: [
       {
-        text: "Execute the exam with surgical precision. Trust the process.",
+        text: "Read the instructions, budget the time and begin with the plan you practised.",
         effects: { academicCap: 15, resilience: 10, energy: 5 },
         nextSceneId: '__NIGHT_BEFORE_CHECK__',
         moduleLink: { moduleId: 'exam-hall-strategies-protocol', moduleTitle: 'Exam Hall Strategies', insight: 'Exam-day confidence comes from preparation, not hope. You\'ve earned this.' },
@@ -1441,7 +1570,7 @@ export const STORY_DATA: Record<string, Scene> = {
         text: "Give a quiet nod of encouragement to a nervous classmate at the door.",
         effects: { socialSupport: 10, resilience: 15, energy: 5 },
         nextSceneId: '__NIGHT_BEFORE_CHECK__',
-        moduleLink: { moduleId: 'emotional-intelligence-protocol', moduleTitle: 'Building Emotional Intelligence', insight: 'Small acts of kindness under pressure reveal true character — and reduce your own stress through social bonding.' },
+        moduleLink: { moduleId: 'emotional-intelligence-protocol', moduleTitle: 'Building Emotional Intelligence', insight: 'A small acknowledgement can support connection without making you responsible for another student’s emotions.' },
       },
     ],
   },
@@ -1453,18 +1582,18 @@ export const STORY_DATA: Record<string, Scene> = {
     title: "The Comeback Rally",
     mood: 'triumph',
     location: 'home',
-    text: "Your academic scores are low, but your resilience is iron. You've stopped comparing yourself to others and started competing with yesterday's version of yourself. The late-game strategy surge begins.",
+    text: "You recognise an earlier pattern that was not working and choose a smaller, more deliberate response. The useful change is not a dramatic transformation; it is noticing the pattern sooner and acting differently.",
     choices: [
       {
-        text: "Focus exclusively on high-yield topics. Maximise every remaining hour.",
+        text: "Prioritise a small set of high-value gaps and protect the remaining recovery time.",
         effects: { academicCap: 20, resilience: 10, energy: -15 },
-        nextSceneId: '__END_ROUTE__',
-        moduleLink: { moduleId: 'leaving-cert-strategy-protocol', moduleTitle: 'The Leaving Cert Points Protocol', insight: 'Triage is a survival skill. In the final weeks, focus on topics with the highest marks-per-hour ratio.' },
+        nextSceneId: 'GAME_DAY_PREP',
+        moduleLink: { moduleId: 'leaving-cert-strategy-protocol', moduleTitle: 'The Leaving Cert Points Protocol', insight: 'Late-stage prioritisation should use syllabus coverage, teacher feedback, prerequisites and recent evidence — not guesses about guaranteed marks.' },
       },
       {
         text: "Steady the ship. Consistent effort across all subjects, no heroics.",
         effects: { academicCap: 10, resilience: 15, energy: -5 },
-        nextSceneId: '__END_ROUTE__',
+        nextSceneId: 'GAME_DAY_PREP',
         moduleLink: { moduleId: 'grammar-of-grit-protocol', moduleTitle: 'The Grammar of Grit', insight: 'Grit isn\'t about dramatic gestures. It\'s about showing up consistently when everything says to quit.' },
       },
     ],
@@ -1493,7 +1622,7 @@ export const STORY_DATA: Record<string, Scene> = {
         text: "Interesting but sounds like too much effort",
         effects: { academicCap: 5 },
         nextSceneId: 'FIRST_BAD_GRADE',
-        moduleLink: { moduleId: 'illusion-of-competence-protocol', moduleTitle: 'Overcoming Illusions of Competence', insight: 'The easiest study methods often produce the weakest learning. Effort is the signal, not the enemy.' },
+        moduleLink: { moduleId: 'illusion-of-competence-protocol', moduleTitle: 'Overcoming Illusions of Competence', insight: 'Familiarity can be mistaken for recall. Use a closed-book check to find out what you can retrieve, then review the gaps.' },
       },
     ],
   },
@@ -1526,28 +1655,28 @@ export const STORY_DATA: Record<string, Scene> = {
     id: 'PEER_PRESSURE_PARTY',
     phase: 'Foundation',
     month: 'November',
-    title: "The Party Dilemma",
+    title: "The Social Plan",
     mood: 'social',
     location: 'social',
-    text: "Your study group is meeting tonight, but someone's having a party and everyone's going. \"Come on, one night won't hurt,\" your friend texts. You know the mocks are getting closer.",
+    text: "A friend's celebration overlaps with a planned study session. Connection matters and so do sleep and preparation; the decision is about making the trade-off explicit.",
     choices: [
       {
-        text: "Go for one hour, then head home to study",
-        effects: { socialSupport: 10, energy: -5, academicCap: -5 },
+        text: "Go for one hour, arrange the journey home and move the priority study task.",
+        effects: { socialSupport: 10, energy: -5, systemSavvy: 5 },
         nextSceneId: 'PART_TIME_JOB',
         moduleLink: { moduleId: 'controllable-variables-protocol', moduleTitle: 'Using Controllable Variables to Grow', insight: 'Setting time boundaries on social events protects study time without sacrificing connection.' },
       },
       {
-        text: "Skip it — text the group you're studying",
-        effects: { academicCap: 10, socialSupport: -5, resilience: 5 },
+        text: "Decline this time, explain briefly and use the evening for the planned work and rest.",
+        effects: { academicCap: 10, energy: 5, resilience: 5 },
         nextSceneId: 'PART_TIME_JOB',
-        moduleLink: { moduleId: 'grammar-of-grit-protocol', moduleTitle: 'The Grammar of Grit', insight: 'Choosing long-term goals over short-term pleasure is the behavioural definition of grit.' },
+        moduleLink: { moduleId: 'grammar-of-grit-protocol', moduleTitle: 'The Grammar of Grit', insight: 'A deliberate no can protect a prior commitment without implying that social time is unimportant.' },
       },
       {
-        text: "Go all night — YOLO",
-        effects: { socialSupport: 15, energy: -20, academicCap: -15 },
+        text: "Go without deciding when or how you will get home, and lose most of the night's sleep.",
+        effects: { socialSupport: 5, energy: -20, academicCap: -10 },
         nextSceneId: 'PART_TIME_JOB',
-        moduleLink: { moduleId: 'linking-study-future-goals-protocol', moduleTitle: 'Linking Study to Future Goals', insight: 'One night rarely matters — but the habit of choosing pleasure over preparation compounds over time.' },
+        moduleLink: { moduleId: 'linking-study-future-goals-protocol', moduleTitle: 'Linking Study to Future Goals', insight: 'The problem is not attending a celebration; it is leaving sleep, transport and the next commitment unplanned.' },
       },
     ],
   },
@@ -1559,7 +1688,7 @@ export const STORY_DATA: Record<string, Scene> = {
     title: "Teacher Feedback",
     mood: 'study',
     location: 'school',
-    text: "Your teacher is surprised — most students never ask about study methods. She pulls out a marking scheme and shows you exactly how examiners think. \"They're looking for these keywords,\" she explains, highlighting the patterns.",
+    text: "Your teacher welcomes the question and compares a marking scheme with sample answers. She points out command words, required evidence and where marks were awarded — while warning that memorising isolated keywords is not the same as answering the question.",
     choices: [
       {
         text: "Start reverse-engineering every past paper",
@@ -1595,7 +1724,7 @@ export const STORY_DATA: Record<string, Scene> = {
         text: "Say everything's fine, just stressed about exams",
         effects: { resilience: 5, energy: 5 },
         nextSceneId: 'PART_TIME_JOB',
-        moduleLink: { moduleId: 'reframing-catastrophic-thoughts-protocol', moduleTitle: 'Reframing Catastrophic Thoughts', insight: 'Minimising your feelings to others often means minimising them to yourself. Honest disclosure reduces cortisol.' },
+        moduleLink: { moduleId: 'reframing-catastrophic-thoughts-protocol', moduleTitle: 'Reframing Catastrophic Thoughts', insight: 'It can be difficult to speak openly at a first appointment. Naming even one concrete concern gives the counsellor more useful information.' },
       },
     ],
   },
@@ -1619,7 +1748,7 @@ export const STORY_DATA: Record<string, Scene> = {
         text: "Fully switch off — rest is the priority",
         effects: { energy: 20, resilience: 10 },
         nextSceneId: '__EARLY_MOMENTUM_CHECK__',
-        moduleLink: { moduleId: 'controllable-variables-protocol', moduleTitle: 'Using Controllable Variables to Grow', insight: 'Strategic rest during breaks prevents accumulated fatigue from destroying your January performance.' },
+        moduleLink: { moduleId: 'controllable-variables-protocol', moduleTitle: 'Using Controllable Variables to Grow', insight: 'A break can support recovery from accumulated fatigue. The right balance of rest and study depends on your health, workload and upcoming commitments.' },
       },
       {
         text: "Get ahead on weak subjects",
@@ -1639,13 +1768,13 @@ export const STORY_DATA: Record<string, Scene> = {
     title: "Mock Results — Better Than Expected",
     mood: 'triumph',
     location: 'school',
-    text: "The results come back better than expected. Not perfect, but the gap between where you are and where you need to be feels bridgeable. Your teacher circles two subjects: \"These are your gain subjects — focus here for maximum point improvement.\"",
+    text: "The results come back better than expected. Your teacher identifies two subjects where specific feedback suggests a realistic grade improvement, while reminding you to protect course requirements and essential work elsewhere.",
     choices: [
       {
-        text: "Follow the teacher's advice — target the gain subjects",
+        text: "Prioritise the identified gaps while maintaining required work in every subject.",
         effects: { academicCap: 10, systemSavvy: 10 },
         nextSceneId: '__BURNOUT_CHECK__',
-        moduleLink: { moduleId: 'leaving-cert-strategy-protocol', moduleTitle: 'The Leaving Cert Points Protocol', insight: 'Gain subjects — where you\'re close to the next grade band — offer the highest points-per-hour return.' },
+        moduleLink: { moduleId: 'leaving-cert-strategy-protocol', moduleTitle: 'The Leaving Cert Points Protocol', insight: 'Use marking feedback, course requirements and teacher judgement to compare realistic gains. No subject offers a guaranteed points-per-hour return.' },
       },
       {
         text: "Spread effort evenly across all subjects",
@@ -1681,9 +1810,7 @@ export const STORY_DATA: Record<string, Scene> = {
         text: "Talk to your teacher about what went wrong",
         effects: { academicCap: 15, socialSupport: 5, resilience: 5 },
         nextSceneId: '__BURNOUT_CHECK__',
-        requires: [{ stat: 'socialSupport', min: 40 }],
-        flavor: "Your social connections make it easier to ask for help.",
-        moduleLink: { moduleId: 'self-efficacy-protocol', moduleTitle: 'Self Efficacy', insight: 'Seeking expert feedback after failure is one of the most powerful learning accelerators available.' },
+        moduleLink: { moduleId: 'self-efficacy-protocol', moduleTitle: 'Self Efficacy', insight: 'Specific feedback can turn a disappointing result into an actionable next step, especially when you apply it and check again.' },
       },
     ],
   },
@@ -1692,22 +1819,22 @@ export const STORY_DATA: Record<string, Scene> = {
     id: 'STUDY_PARTNER_CONFLICT',
     phase: 'Pressure Cooker',
     month: 'February',
-    title: "The Study Partner Conflict",
-    mood: 'social',
+    title: "The Application Cross-check",
+    mood: 'opportunity',
     location: 'school',
-    text: "Your study partner wants to copy your CAO order. \"We've always done everything together,\" they say. But your courses are different — their dream course could push yours down the preference list if you both get the same points.",
+    text: "You and a friend compare CAO research. You notice that one course has a subject requirement your friend missed, while your own Level 7/6 list is nearly empty. Comparing notes is useful; copying each other's order would not be.",
     choices: [
       {
-        text: "Be honest — your priorities are different and that's okay",
-        effects: { socialSupport: 5, resilience: 10, systemSavvy: 5 },
+        text: "Check the official requirements, then rank each list by your own genuine preference.",
+        effects: { socialSupport: 5, resilience: 5, systemSavvy: 15 },
         nextSceneId: '__ACADEMIC_CHECK__',
-        moduleLink: { moduleId: 'emotional-intelligence-protocol', moduleTitle: 'Building Emotional Intelligence', insight: 'Healthy boundaries in friendships require honest communication, not conflict avoidance.' },
+        moduleLink: { moduleId: 'emotional-intelligence-protocol', moduleTitle: 'Building Emotional Intelligence', insight: 'Cross-checking facts is collaborative; the final preference order remains personal to each applicant.' },
       },
       {
-        text: "Help them research their own best options",
-        effects: { socialSupport: 15, systemSavvy: 5, energy: -10 },
+        text: "Add suitable Level 6/7, PLC or apprenticeship routes to your wider options plan.",
+        effects: { socialSupport: 5, systemSavvy: 15, resilience: 10, energy: -5 },
         nextSceneId: '__ACADEMIC_CHECK__',
-        moduleLink: { moduleId: 'leaving-cert-strategy-protocol', moduleTitle: 'The Leaving Cert Points Protocol', insight: 'Helping others understand the CAO system deepens your own strategic understanding.' },
+        moduleLink: { moduleId: 'leaving-cert-strategy-protocol', moduleTitle: 'The Leaving Cert Points Protocol', insight: 'A wider options plan can include CAO Level 8 and Level 7/6 choices alongside PLC and apprenticeship routes. Check each route directly.' },
       },
     ],
   },
@@ -1740,22 +1867,22 @@ export const STORY_DATA: Record<string, Scene> = {
     id: 'SUBJECT_SWAP_DILEMMA',
     phase: 'Pressure Cooker',
     month: 'February',
-    title: "The Subject Swap Dilemma",
+    title: "The Subject Level Decision",
     mood: 'opportunity',
     location: 'school',
-    text: "Your mentor suggests something radical — drop to OL in your weakest subject and reinvest those hours into your strongest ones. \"It's not giving up,\" she says. \"It's strategic resource allocation.\" The maths checks out — you could actually gain more CAO points this way.",
+    text: "You are considering changing level in one subject. It could make the workload more manageable, but the points calculation, course prerequisites and subject-specific implications all need checking before you decide.",
     choices: [
       {
-        text: "Make the strategic drop — maximise total points",
+        text: "Review the decision with the subject teacher and guidance counsellor, then check every target course requirement.",
         effects: { systemSavvy: 15, academicCap: 10, resilience: 5 },
         nextSceneId: 'FINAL_STRETCH_START',
-        moduleLink: { moduleId: 'leaving-cert-strategy-protocol', moduleTitle: 'The Leaving Cert Points Protocol', insight: 'The CAO rewards total points, not pride. Strategic level changes can unlock more points than grinding a weak subject.' },
+        moduleLink: { moduleId: 'leaving-cert-strategy-protocol', moduleTitle: 'The Leaving Cert Points Protocol', insight: 'A level change can affect workload, points and eligibility. Use current official requirements and subject-specific advice before deciding.' },
       },
       {
-        text: "Stay at Higher Level — prove you can do it",
-        effects: { resilience: 10, energy: -10 },
+        text: "Stay at the current level for now, with a review date and a targeted support plan.",
+        effects: { resilience: 10, academicCap: 5, socialSupport: 5, energy: -5 },
         nextSceneId: 'FINAL_STRETCH_START',
-        moduleLink: { moduleId: 'grammar-of-grit-protocol', moduleTitle: 'The Grammar of Grit', insight: 'Grit and strategy aren\'t opposites — but knowing when persistence is costing you requires honest self-assessment.' },
+        moduleLink: { moduleId: 'grammar-of-grit-protocol', moduleTitle: 'The Grammar of Grit', insight: 'A time-limited trial with clear evidence is more useful than framing the decision as pride versus giving up.' },
       },
     ],
   },
@@ -1785,8 +1912,6 @@ export const STORY_DATA: Record<string, Scene> = {
         text: "Apply the Triage Protocol — rank topics by marks-per-hour",
         effects: { systemSavvy: 15, academicCap: 15, resilience: 5, energy: -10 },
         nextSceneId: 'FINAL_STRETCH_START',
-        requires: [{ stat: 'systemSavvy', min: 55 }],
-        flavor: "Your system knowledge unlocks a strategic approach to revision.",
         moduleLink: { moduleId: 'leaving-cert-strategy-protocol', moduleTitle: 'The Leaving Cert Points Protocol', insight: 'Triage means focusing on topics with the highest marks-per-hour return. Not all topics are created equal.' },
       },
     ],
@@ -1799,25 +1924,28 @@ export const STORY_DATA: Record<string, Scene> = {
     title: "A Friend in Crisis",
     mood: 'social',
     location: 'home',
-    text: "A friend messages you late at night. They're not coping. The pressure, the expectations, the fear of disappointing everyone — it's all hitting them at once. They don't explicitly ask for help, but you can read between the lines.",
+    text: "A friend messages late at night saying they are not coping. This is not something you should assess or carry alone. The priorities are immediate safety, involving a trusted adult and connecting them with appropriate help.",
     choices: [
       {
-        text: "Drop everything and go be with them",
-        effects: { socialSupport: 20, energy: -15, resilience: 10 },
+        text: "Ask directly whether they are in immediate danger. If they are, call 112/999; involve a trusted adult and stay connected while help is arranged.",
+        effects: {},
+        scoreless: true,
         nextSceneId: 'FINAL_STRETCH_START',
-        moduleLink: { moduleId: 'emotional-intelligence-protocol', moduleTitle: 'Building Emotional Intelligence', insight: 'Being present for someone in crisis is one of the most powerful things a friend can do. It costs time but builds unbreakable bonds.' },
+        moduleLink: { moduleId: 'emotional-intelligence-protocol', moduleTitle: 'Building Emotional Intelligence', insight: 'Take statements about immediate safety seriously. Emergency services are the right option when there is imminent danger.' },
       },
       {
-        text: "Listen and gently suggest the school counsellor",
-        effects: { socialSupport: 10, resilience: 5, systemSavvy: 5 },
+        text: "Phone a trusted adult now and ask them to take over the next steps while you stay in contact with your friend.",
+        effects: {},
+        scoreless: true,
         nextSceneId: 'FINAL_STRETCH_START',
-        moduleLink: { moduleId: 'emotional-intelligence-protocol', moduleTitle: 'Building Emotional Intelligence', insight: 'Knowing when to refer someone to professional help is a sign of emotional maturity, not abandonment.' },
+        moduleLink: { moduleId: 'emotional-intelligence-protocol', moduleTitle: 'Building Emotional Intelligence', insight: 'A student can listen and stay present, but a trusted adult should share responsibility for deciding what help is needed.' },
       },
       {
-        text: "You're barely holding it together yourself — send a supportive text",
-        effects: { socialSupport: 5, resilience: -5 },
+        text: "If there is no immediate danger, help them contact a parent, guardian, GP or out-of-hours service and arrange school support; do not promise secrecy.",
+        effects: {},
+        scoreless: true,
         nextSceneId: 'FINAL_STRETCH_START',
-        moduleLink: { moduleId: 'reframing-catastrophic-thoughts-protocol', moduleTitle: 'Reframing Catastrophic Thoughts', insight: 'You can\'t pour from an empty cup. Recognising your own limits is honest, not selfish.' },
+        moduleLink: { moduleId: 'reframing-catastrophic-thoughts-protocol', moduleTitle: 'Reframing Catastrophic Thoughts', insight: 'When someone may be at risk, privacy has limits. Involving appropriate adults is care, not betrayal.' },
       },
     ],
   },
@@ -1836,13 +1964,13 @@ export const STORY_DATA: Record<string, Scene> = {
       {
         text: "Treat it exactly like the real thing — no phone, strict timing",
         effects: { academicCap: 15, resilience: 10, energy: -10 },
-        nextSceneId: 'EXAM_ANXIETY',
+        nextSceneId: 'ASSESSMENT_DEADLINES',
         moduleLink: { moduleId: 'game-day-protocol', moduleTitle: "Game Day: The Athlete's Protocol", insight: 'Simulating exam conditions in practice reduces the novelty penalty on the real day.' },
       },
       {
         text: "Use it as a diagnostic — check answers as you go",
         effects: { academicCap: 10, systemSavvy: 10, energy: -5 },
-        nextSceneId: 'EXAM_ANXIETY',
+        nextSceneId: 'ASSESSMENT_DEADLINES',
         moduleLink: { moduleId: 'mastering-active-recall-protocol', moduleTitle: 'Mastering Active Recall', insight: 'Diagnostic practice with immediate feedback accelerates learning — but doesn\'t build exam stamina.' },
       },
     ],
@@ -1873,8 +2001,6 @@ export const STORY_DATA: Record<string, Scene> = {
         text: "Write them a letter explaining your actual plan",
         effects: { resilience: 10, socialSupport: 15, systemSavvy: 5 },
         nextSceneId: 'PEER_SUPPORT',
-        requires: [{ stat: 'systemSavvy', min: 45 }],
-        flavor: "Your system knowledge helps you articulate a credible plan.",
         moduleLink: { moduleId: 'linking-study-future-goals-protocol', moduleTitle: 'Linking Study to Future Goals', insight: 'A written plan with evidence shows family you\'re serious — and forces you to clarify your own thinking.' },
       },
     ],
@@ -1887,18 +2013,18 @@ export const STORY_DATA: Record<string, Scene> = {
     title: "The Exam Eve Ritual",
     mood: 'reflection',
     location: 'home',
-    text: "You've read about elite athletes having pre-game rituals. Why not apply the same logic? You design a morning routine: wake time, breakfast, review sheet, walk to school route, breathing exercise outside the exam hall.",
+    text: "You draft a simple morning routine: wake time, familiar food, required materials, travel plan and a brief settling exercise before the exam hall.",
     choices: [
       {
         text: "Test-run it before a practice paper",
         effects: { resilience: 15, energy: 10, academicCap: 5 },
-        nextSceneId: 'GAME_DAY_PREP',
+        nextSceneId: '__COMEBACK_CHECK__',
         moduleLink: { moduleId: 'game-day-protocol', moduleTitle: "Game Day: The Athlete's Protocol", insight: 'Rehearsing your exam-day routine removes uncertainty and frees cognitive resources for the actual exam.' },
       },
       {
         text: "Write it down but wing it on the day",
         effects: { resilience: 5, systemSavvy: 5 },
-        nextSceneId: 'GAME_DAY_PREP',
+        nextSceneId: '__COMEBACK_CHECK__',
         moduleLink: { moduleId: 'exam-hall-strategies-protocol', moduleTitle: 'Exam Hall Strategies', insight: 'A plan you haven\'t rehearsed is just a wish. Practice turns intention into automatic behaviour.' },
       },
     ],
@@ -1911,19 +2037,21 @@ export const STORY_DATA: Record<string, Scene> = {
     title: "Grace Under Pressure",
     mood: 'social',
     location: 'school',
-    text: "During a class test, the student beside you starts hyperventilating. The teacher hasn't noticed yet. Everyone else is frozen, staring at their papers. You remember the Physiological Sigh technique from a module you completed.",
+    text: "During a class test, the student beside you appears to be in acute distress and is breathing rapidly. You are not expected to diagnose what is happening. The teacher has not noticed yet.",
     choices: [
       {
-        text: "Quietly help them with the breathing technique",
-        effects: { socialSupport: 15, resilience: 10 },
+        text: "Alert the teacher immediately and follow their instructions.",
+        effects: {},
+        scoreless: true,
         nextSceneId: 'DIGITAL_DISTRACTION',
-        moduleLink: { moduleId: 'exam-crisis-management-protocol', moduleTitle: 'Exam Crisis Management', insight: 'Teaching someone a calming technique in the moment reinforces your own ability to use it under pressure.' },
+        moduleLink: { moduleId: 'exam-crisis-management-protocol', moduleTitle: 'Exam Crisis Management', insight: 'An adult should assess and manage an acute health situation. Alerting the teacher is the appropriate first action.' },
       },
       {
-        text: "Alert the teacher immediately",
-        effects: { socialSupport: 5, resilience: 5 },
+        text: "Once the teacher is helping, give the student space and calmly continue only when instructed.",
+        effects: {},
+        scoreless: true,
         nextSceneId: 'DIGITAL_DISTRACTION',
-        moduleLink: { moduleId: 'emotional-intelligence-protocol', moduleTitle: 'Building Emotional Intelligence', insight: 'Knowing when a situation needs professional intervention is a form of emotional intelligence.' },
+        moduleLink: { moduleId: 'emotional-intelligence-protocol', moduleTitle: 'Building Emotional Intelligence', insight: 'Support can mean making space and letting the responsible adult lead, rather than trying to treat the situation yourself.' },
       },
     ],
   },
@@ -1941,21 +2069,19 @@ export const STORY_DATA: Record<string, Scene> = {
         text: "Trust your preparation — close your eyes and breathe",
         effects: { resilience: 10, energy: 15 },
         nextSceneId: '__END_ROUTE__',
-        moduleLink: { moduleId: 'game-day-protocol', moduleTitle: "Game Day: The Athlete's Protocol", insight: 'The night before is too late to learn anything new. Trust the months of preparation and let your brain consolidate.' },
+        moduleLink: { moduleId: 'game-day-protocol', moduleTitle: "Game Day: The Athlete's Protocol", insight: 'The night before offers limited time for useful new learning. Protecting sleep and reducing avoidable stress may be more valuable than extended cramming.' },
       },
       {
         text: "One final look at your summary sheet, then sleep",
         effects: { academicCap: 5, energy: 5 },
         nextSceneId: '__END_ROUTE__',
-        moduleLink: { moduleId: 'mastering-spaced-repetition-protocol', moduleTitle: 'Mastering Spaced Repetition', insight: 'A brief review before sleep leverages the spacing effect — your brain processes it overnight.' },
+        moduleLink: { moduleId: 'mastering-spaced-repetition-protocol', moduleTitle: 'Mastering Spaced Repetition', insight: 'Keep any final review brief and familiar. Spacing is built across repeated sessions, not created by one review immediately before sleep.' },
       },
       {
         text: "Call your study partner — you promised you'd check in",
         effects: { socialSupport: 10, resilience: 10, energy: 5 },
         nextSceneId: '__END_ROUTE__',
-        requires: [{ stat: 'socialSupport', min: 60 }],
-        flavor: "Your deep connections mean you don't face this night alone.",
-        moduleLink: { moduleId: 'emotional-intelligence-protocol', moduleTitle: 'Building Emotional Intelligence', insight: 'Social connection before high-pressure events reduces cortisol and increases feelings of safety.' },
+        moduleLink: { moduleId: 'emotional-intelligence-protocol', moduleTitle: 'Building Emotional Intelligence', insight: 'A brief check-in can increase a sense of connection before a high-pressure event, but it is not a substitute for sleep or professional support.' },
       },
     ],
   },
@@ -1973,7 +2099,7 @@ export const STORY_DATA: Record<string, Scene> = {
         text: "Head home with quiet confidence",
         effects: { resilience: 10, energy: 10 },
         nextSceneId: '__NIGHT_BEFORE_CHECK__',
-        moduleLink: { moduleId: 'controllable-variables-protocol', moduleTitle: 'Using Controllable Variables to Grow', insight: 'Walking is one of the most effective ways to reduce anxiety. Movement shifts your brain from rumination to processing.' },
+        moduleLink: { moduleId: 'controllable-variables-protocol', moduleTitle: 'Using Controllable Variables to Grow', insight: 'A short walk can help some people disengage from rumination. Choose a safe, familiar route and do not treat it as a guaranteed anxiety treatment.' },
       },
       {
         text: "Text your friend — 'We've got this'",
@@ -1999,7 +2125,7 @@ export const STORY_DATA: Record<string, Scene> = {
         text: "Take the lead on final revision sessions",
         effects: { socialSupport: 10, academicCap: 10, energy: -5 },
         nextSceneId: 'EXAM_ANXIETY',
-        moduleLink: { moduleId: 'elaborative-interrogation-protocol', moduleTitle: 'Elaborative Interrogation', insight: 'Study groups that survive to exam season create exponential knowledge-sharing. Your early investment is paying compound interest.' },
+        moduleLink: { moduleId: 'elaborative-interrogation-protocol', moduleTitle: 'Elaborative Interrogation', insight: 'A continuing study group can share explanations and planning work, while each student still needs targeted individual practice.' },
       },
       {
         text: "Step back and let the group run itself",
@@ -2023,13 +2149,13 @@ export const STORY_DATA: Record<string, Scene> = {
         text: "Channel that awareness into your strongest technique",
         effects: { resilience: 15, academicCap: 10 },
         nextSceneId: 'EXAM_ANXIETY',
-        moduleLink: { moduleId: 'mastering-active-recall-protocol', moduleTitle: 'Mastering Active Recall', insight: 'Metacognitive awareness — recognising your own study habits in real-time — is the ultimate learning superpower.' },
+        moduleLink: { moduleId: 'mastering-active-recall-protocol', moduleTitle: 'Mastering Active Recall', insight: 'Recognising an unhelpful study habit in the moment gives you a chance to switch to a more useful action.' },
       },
       {
         text: "Share your story with a classmate who's struggling now",
         effects: { socialSupport: 15, resilience: 10, energy: -5 },
         nextSceneId: 'EXAM_ANXIETY',
-        moduleLink: { moduleId: 'growth-mindset-protocol', moduleTitle: 'The Growth Protocol', insight: 'Your struggle story is your most powerful teaching tool. Vulnerability builds trust and helps others see a path forward.' },
+        moduleLink: { moduleId: 'growth-mindset-protocol', moduleTitle: 'The Growth Protocol', insight: 'If you choose to share an experience, focus on the practical change that helped and keep personal boundaries that feel safe.' },
       },
     ],
   },
@@ -2041,13 +2167,13 @@ export const STORY_DATA: Record<string, Scene> = {
     title: "The Ripple Effect",
     mood: 'social',
     location: 'school',
-    text: "A younger student approaches you in the corridor. \"You're the one who told my sister about HEAR, right? She got her offer last week.\" The ripple effects of a single conversation back in September have reached further than you imagined.",
+    text: "A younger student approaches you in the corridor. Their sister heard about HEAR through your friend group and completed the relevant application steps before the deadline. No outcome is known, but the information reached someone who needed it.",
     choices: [
       {
         text: "Offer to help more students with applications next year",
         effects: { socialSupport: 10, systemSavvy: 10, resilience: 5 },
         nextSceneId: 'EXAM_ANXIETY',
-        moduleLink: { moduleId: 'leaving-cert-strategy-protocol', moduleTitle: 'The Leaving Cert Points Protocol', insight: 'System knowledge shared widely creates community-level advantage. One informed student can change dozens of outcomes.' },
+        moduleLink: { moduleId: 'leaving-cert-strategy-protocol', moduleTitle: 'The Leaving Cert Points Protocol', insight: 'Sharing current official information can widen awareness, while trained staff and scheme administrators remain the right sources for individual guidance.' },
       },
       {
         text: "Smile and focus on your own exams",
@@ -2058,109 +2184,109 @@ export const STORY_DATA: Record<string, Scene> = {
     ],
   },
 
-  // ═══ ENDINGS (10 total) ═══════════════════════════════════════════════════
+  // ═══ REFLECTIVE PROFILES (11 total) ═══════════════════════════════════════
 
   'END_PATHFINDER': {
     id: 'END_PATHFINDER',
     phase: 'Final Stretch',
     month: 'August',
-    title: "The Resilient Pathfinder",
+    title: "The Adaptive Pathfinder",
     mood: 'triumph',
     location: 'home',
-    text: "You got your course — and more. You're known as the person who never gives up and always has time for a friend.",
+    text: "Across this simulation, you most often responded to pressure by adapting and using connection. That is a decision pattern to build on, not a prediction of grades, offers or future wellbeing.",
   },
   'END_EXPERT': {
     id: 'END_EXPERT',
     phase: 'Final Stretch',
     month: 'August',
-    title: "The Efficiency Expert",
+    title: "The Methodical Learner",
     mood: 'triumph',
     location: 'home',
-    text: "Stellar points. Flawless energy management. You didn't just learn the material — you learned how to learn.",
+    text: "Your clearest pattern was improving how you learned: retrieval, feedback and deliberate practice appeared repeatedly in your choices. The profile reflects simulated decisions, not measured academic attainment.",
   },
   'END_MENTOR': {
     id: 'END_MENTOR',
     phase: 'Final Stretch',
     month: 'August',
-    title: "The Community Mentor",
+    title: "The Knowledge Connector",
     mood: 'triumph',
     location: 'social',
-    text: "You mastered the system and shared it freely. Every grant, scheme, and deadline — you knew them all. Your network is your foundation.",
+    text: "You repeatedly connected useful information with other people while checking practical processes. Keep the collaboration, and keep verifying changing rules through official sources.",
   },
   'END_GOOD': {
     id: 'END_GOOD',
     phase: 'Final Stretch',
     month: 'August',
-    title: "Offer Received!",
+    title: "The Deliberate Builder",
     mood: 'triumph',
     location: 'home',
-    text: "Offer received for one of your top choices. Hard work, strategy, and resilience got you here. The next chapter begins.",
+    text: "Your route shows steady, workable decisions across several areas rather than one dramatic strength. It is a snapshot of judgement in the simulation, not an admissions outcome.",
   },
   'END_REGROUPING': {
     id: 'END_REGROUPING',
     phase: 'Final Stretch',
     month: 'August',
-    title: "The Unfinished Chapter",
+    title: "The Reflective Recalibrator",
     mood: 'reflection',
     location: 'home',
-    text: "The results weren't what you needed. It stings — there's no way around that. But you're still standing. You know more about yourself than you did a year ago. You know what works, what doesn't, and what matters to you. The points are one number on one day. Your story is far from over.",
+    text: "Some choices left important systems underdeveloped, while others showed that you could notice and adjust. The next useful move is one smaller repeatable plan with the right support around it.",
   },
   'END_PLC': {
     id: 'END_PLC',
     phase: 'Final Stretch',
     month: 'August',
-    title: "A Different Path",
+    title: "The Route Explorer",
     mood: 'reflection',
     location: 'home',
-    text: "Points didn't line up — but you've secured a PLC place that's a direct pathway to your dream degree. A detour, not a dead end.",
+    text: "You actively considered Level 6/7, PLC or apprenticeship routes alongside other options. Exploring more than one route widens the plan; it does not guarantee eligibility, a place or later progression.",
   },
   'END_REPEAT': {
     id: 'END_REPEAT',
     phase: 'Final Stretch',
     month: 'August',
-    title: "Another Lap",
+    title: "The Reset Builder",
     mood: 'reflection',
     location: 'home',
-    text: "Results weren't what you hoped. But you're repeating armed with a year's worth of wisdom. This isn't failure — it's a strategic reset.",
+    text: "This route ended with low evidence across several capabilities and a depleted energy reserve. That is a prompt to rebuild support and structure, not a statement about ability or a recommendation to repeat a year.",
   },
 
   'END_SCHOLARSHIP': {
     id: 'END_SCHOLARSHIP',
     phase: 'Final Stretch',
     month: 'August',
-    title: "The Full Package",
+    title: "The Opportunity Navigator",
     mood: 'triumph',
     location: 'online',
-    text: "Points. Scholarship. HEAR scheme. You didn't just get into your dream course — you got in with financial support and recognition. Your system mastery turned the game from a lottery into a strategy. The university doesn't just want you; they're investing in you.",
+    text: "You checked an additional opportunity and made space for its application requirements. That shows option-building; it does not imply eligibility, selection, funding or a course offer.",
   },
 
   'END_LEADER': {
     id: 'END_LEADER',
     phase: 'Final Stretch',
     month: 'August',
-    title: "The Community Leader",
+    title: "The Collaborative Leader",
     mood: 'triumph',
     location: 'social',
-    text: "You didn't just survive 6th year — you built a community around you. Your study group became a support network. Your friends say you changed their year. You enter college not just with a course offer, but with a reputation as someone who lifts others up.",
+    text: "Your route contains repeated evidence of organising learning with other people. The strongest version of that pattern combines contribution with boundaries, so helping others does not require carrying everything.",
   },
 
   'END_COMEBACK': {
     id: 'END_COMEBACK',
     phase: 'Final Stretch',
     month: 'August',
-    title: "The Comeback Arc",
+    title: "The Recovery Builder",
     mood: 'triumph',
     location: 'home',
-    text: "You started weak. You spiralled. You hit rock bottom. And then you climbed back. Your final results don't tell the full story — your resilience does. You're the living proof that where you start doesn't determine where you finish.",
+    text: "You revisited an earlier unhelpful pattern and chose a different response. The meaningful evidence is recognition and adjustment, not a claim that every setback has been resolved.",
   },
 
   'END_BALANCED': {
     id: 'END_BALANCED',
     phase: 'Final Stretch',
     month: 'August',
-    title: "The Balanced Graduate",
+    title: "The Balanced Learner",
     mood: 'triumph',
     location: 'home',
-    text: "No stat below 50, no stat above 75. You are the rarest type of student — genuinely well-rounded. You managed energy, academics, social life, system knowledge, and mental toughness without sacrificing any one for another. Balance is its own superpower.",
+    text: "Your route produced similar evidence across learning, support, planning and recovery. The balance belongs to these simulated choices and should be treated as a prompt for reflection, not a fixed student type.",
   },
 };

@@ -9,7 +9,14 @@ import { useInnovationData } from '../contexts/InnovationDataContext';
 import { useEffortLifeSim } from '../hooks/useEffortLifeSim';
 import { useCareerPaths } from '../hooks/useCareerPaths';
 import { bestSixPoints, type LifeRegion } from './effortLifeModel';
-import { buildPossibilities, FIELD_DAY, LIFE_PRIORITIES, PRIORITY_LABELS, type LifePriority } from './possibleLifeModel';
+import {
+  buildPossibilities,
+  LIFE_PRIORITIES,
+  possibleDayFor,
+  PRIORITY_LABELS,
+  workplaceUpsideFor,
+  type LifePriority,
+} from './possibleLifeModel';
 
 type Stage = 'priorities' | 'possibilities' | 'day' | 'reflection' | 'route';
 const STAGES: Stage[] = ['priorities', 'possibilities', 'day', 'reflection', 'route'];
@@ -75,9 +82,148 @@ const YourPossibleLife: React.FC<{ uid?: string; profile: StudentSubjectProfile 
 
   if (stage === 'possibilities') return <Shell stage={stage} back={() => setStage('priorities')}><section className="py-12"><div className="max-w-3xl mb-10"><div className="font-mono text-sm font-bold mb-4" style={{ color: ORANGE }}>THREE DOORS, NOT A PODIUM</div><h1 className="text-4xl sm:text-6xl" style={{ fontFamily: SERIF, color: INK }}>Different futures can protect the same things.</h1><p className="mt-4 text-lg" style={{ color: MUTED }}>One close match, one adjacent possibility and one route you may not have considered. None is labelled “best”.</p></div><div className="grid lg:grid-cols-3 gap-5">{possibilities.map((item, index) => <article key={item.id} className="rounded-[28px] p-6 flex flex-col min-h-[520px]" style={{ background: PAPER, border: `2px solid ${INK}`, boxShadow: `7px 8px 0 ${INK}` }}><div className="font-mono text-sm font-bold" style={{ color: ORANGE }}>0{index + 1}</div><div className="my-8 flex justify-center"><CareerArtwork career={item}/></div><h2 className="text-3xl" style={{ fontFamily: SERIF, color: INK }}>{item.title}</h2><p className="mt-2 min-h-[52px]" style={{ color: MUTED }}>{item.tagline}</p><div className="mt-5 pt-5 border-t text-sm leading-relaxed flex-1" style={{ borderColor: '#ddd6cf', color: INK }}>{item.whatYouDo[0]}</div><Button onClick={() => choose(item.id)} className="w-full mt-6">Step inside <ArrowRight className="inline ml-2" size={17}/></Button></article>)}</div></section></Shell>;
 
-  if (stage === 'day') { const day = FIELD_DAY[career.field]; return <Shell stage={stage} back={() => setStage('possibilities')}><section className="py-12 grid lg:grid-cols-[1.2fr_.8fr] gap-12"><div><div className="font-mono text-sm font-bold mb-4" style={{ color: ORANGE }}>ONE PLAUSIBLE TUESDAY</div><div className="flex items-start justify-between gap-5"><div><h1 className="text-5xl sm:text-7xl leading-none" style={{ fontFamily: SERIF, color: INK }}>{career.title}</h1><p className="mt-4 text-lg" style={{ color: MUTED }}>Not a promise. A grounded way to test how the ordinary parts feel.</p></div><CareerArtwork career={career}/></div><div className="mt-12 border-t" style={{ borderColor: INK }}>{[{ t: '08:40', h: 'The work begins', p: career.whatYouDo[0] }, { t: '12:25', h: 'The working day', p: `${day.rhythm} ${day.people}` }, { t: '16:50', h: 'The honest part', p: career.cons[0] }].map((beat) => <div key={beat.t} className="grid sm:grid-cols-[90px_1fr] gap-3 py-7 border-b" style={{ borderColor: '#d9d2cb' }}><span className="font-mono font-bold" style={{ color: ORANGE }}>{beat.t}</span><div><h3 className="text-2xl" style={{ fontFamily: SERIF, color: INK }}>{beat.h}</h3><p className="mt-2 leading-relaxed" style={{ color: MUTED }}>{beat.p}</p></div></div>)}</div><div className="mt-10 grid sm:grid-cols-2 gap-5"><div className="border-t-2 pt-5" style={{ borderColor: INK }}><div className="font-mono text-xs font-bold mb-3" style={{ color: ORANGE }}>WHAT YOU WOULD ACTUALLY DO</div>{career.whatYouDo.slice(0, 3).map((item) => <p key={item} className="py-3 border-b leading-relaxed" style={{ borderColor: '#ddd6cf', color: MUTED }}>{item}</p>)}</div><div className="border-t-2 pt-5" style={{ borderColor: INK }}><div className="font-mono text-xs font-bold mb-3" style={{ color: ORANGE }}>THE TRADE-OFF</div><p className="text-lg leading-relaxed" style={{ color: INK }}>{career.pros[0]}</p><p className="mt-4 leading-relaxed" style={{ color: MUTED }}>{career.cons[0]}</p></div></div></div><aside className="rounded-[28px] p-6 sm:p-8 h-fit lg:sticky lg:top-8" style={{ background: PAPER, border: `2px solid ${INK}`, boxShadow: `7px 8px 0 ${INK}` }}><div className="font-mono text-xs font-bold mb-5" style={{ color: ORANGE }}>CHANGE THE FRAME</div><p className="mb-7 leading-relaxed" style={{ color: MUTED }}>{day.setting}</p><label className="block text-xs tracking-widest uppercase font-bold mb-2">Where would you live?</label><select value={region} onChange={(e) => setRegion(e.target.value as LifeRegion)} className="w-full h-12 rounded-xl px-3 mb-6" style={{ border: `2px solid ${INK}`, background: PAPER }}><option value="dublin">Dublin</option><option value="city">Another city</option><option value="town">Town or rural area</option></select><label className="block text-xs tracking-widest uppercase font-bold mb-2">Who would you live with?</label><div className="grid gap-2 mb-6">{([['home','At home'],['share','Sharing'],['independent','Independently']] as const).map(([value,label]) => <button key={value} onClick={() => setLiving(value)} className="h-11 rounded-xl text-left px-4 font-semibold" style={{ border: `2px solid ${living === value ? INK : '#d9d2cb'}`, background: living === value ? CREAM : PAPER }}>{label}</button>)}</div><label className="block text-xs tracking-widest uppercase font-bold mb-2">What kind of working week sounds better?</label><div className="grid gap-2 mb-8">{([['steady','More predictable','Similar hours and a clearer routine'],['varied','More varied','Changing days and less predictable routines']] as const).map(([value,label,detail]) => <button key={value} onClick={() => setRhythm(value)} className="min-h-[62px] rounded-xl text-left px-4 py-2" style={{ border: `2px solid ${rhythm === value ? INK : '#d9d2cb'}`, background: rhythm === value ? CREAM : PAPER }}><strong className="block">{label}</strong><span className="text-xs" style={{ color: MUTED }}>{detail}</span></button>)}</div><Button className="w-full" onClick={() => { persist({ careerId: career.id, region, living, rhythm }); setStage('reflection'); }}>Reflect on this future <ArrowRight className="inline ml-2" size={17}/></Button></aside></section></Shell>; }
+  if (stage === 'day') {
+    const day = possibleDayFor(career);
+    const workplaceUpside = workplaceUpsideFor(career);
+    return (
+      <Shell stage={stage} back={() => setStage('possibilities')}>
+        <section className="py-12 grid lg:grid-cols-[1.2fr_.8fr] gap-12">
+          <div>
+            <div className="font-mono text-sm font-bold mb-4" style={{ color: ORANGE }}>
+              ONE PLAUSIBLE TUESDAY
+            </div>
+            <div className="flex items-start justify-between gap-5">
+              <div>
+                <h1 className="text-5xl sm:text-7xl leading-none" style={{ fontFamily: SERIF, color: INK }}>
+                  {career.title}
+                </h1>
+                <p className="mt-4 text-lg max-w-2xl" style={{ color: MUTED }}>
+                  One grounded version, not a fixed timetable. Employer, setting and seniority can change the day substantially.
+                </p>
+              </div>
+              <CareerArtwork career={career} />
+            </div>
 
-  if (stage === 'reflection') { const prompts = [[felt,setFelt,'I could see myself…','Which part of the day felt appealing?'],[notFor,setNotFor,'I would not want…','Which trade-off felt wrong for you?'],[surprised,setSurprised,'I had not considered…','What changed or surprised you?']] as const; return <Shell stage={stage} back={() => setStage('day')}><section className="py-12"><div className="max-w-3xl mb-10"><div className="font-mono text-sm font-bold mb-4" style={{ color: ORANGE }}>NO VERDICT REQUIRED</div><h1 className="text-5xl sm:text-6xl" style={{ fontFamily: SERIF, color: INK }}>Keep the useful reaction.</h1><p className="mt-4 text-lg" style={{ color: MUTED }}>Write one honest line. You are testing a possibility, not choosing the rest of your life.</p></div><div className="grid lg:grid-cols-3 gap-5">{prompts.map(([value,setter,label,hint], index) => <label key={label} className="rounded-[24px] p-6 min-h-[250px] flex flex-col" style={{ background: PAPER, border: `2px solid ${INK}`, boxShadow: `5px 6px 0 ${INK}` }}><span className="font-mono text-sm font-bold" style={{ color: ORANGE }}>0{index + 1}</span><span className="block text-3xl mt-7" style={{ fontFamily: SERIF, color: INK }}>{label}</span><span className="block text-sm mt-2" style={{ color: MUTED }}>{hint}</span><textarea value={value} onChange={(e) => setter(e.target.value)} rows={3} className="possible-life-journal-field w-full mt-7 resize-none outline-none text-base" placeholder="A sentence is enough…" style={{ color: INK }}/></label>)}</div><div className="flex justify-end mt-9"><Button disabled={!felt.trim() && !notFor.trim() && !surprised.trim()} onClick={() => { persist({ feltLikeMe: felt, notForMe: notFor, surprisedMe: surprised }); setStage('route'); }}>Build a route from this <ArrowRight className="inline ml-2" size={17}/></Button></div></section></Shell>; }
+            <div className="mt-12 border-t" style={{ borderColor: INK }}>
+              {day.beats.map((beat) => (
+                <div
+                  key={beat.time}
+                  className="grid sm:grid-cols-[90px_1fr] gap-3 py-7 border-b"
+                  style={{ borderColor: '#d9d2cb' }}
+                >
+                  <span className="font-mono font-bold" style={{ color: ORANGE }}>{beat.time}</span>
+                  <div>
+                    <h3 className="text-2xl" style={{ fontFamily: SERIF, color: INK }}>{beat.title}</h3>
+                    <p className="mt-2 leading-relaxed" style={{ color: MUTED }}>{beat.detail}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <p className="mt-3 text-xs leading-relaxed" style={{ color: MUTED }}>
+              Times are illustrative. The activities come from the sourced role profile; they are not standard shift hours.
+            </p>
+
+            <div className="mt-10 grid sm:grid-cols-2 gap-7">
+              <div className="border-t-2 pt-5" style={{ borderColor: INK }}>
+                <div className="font-mono text-xs font-bold mb-3" style={{ color: ORANGE }}>
+                  THE WORK IN PLAIN ENGLISH
+                </div>
+                {career.whatYouDo.slice(0, 3).map((item) => (
+                  <p key={item} className="py-3 border-b leading-relaxed" style={{ borderColor: '#ddd6cf', color: MUTED }}>
+                    {item}
+                  </p>
+                ))}
+              </div>
+              <div className="border-t-2 pt-5" style={{ borderColor: INK }}>
+                <div className="font-mono text-xs font-bold mb-3" style={{ color: ORANGE }}>
+                  THE WORKPLACE REALITY
+                </div>
+                <p className="text-lg leading-relaxed" style={{ color: INK }}>{day.workplaceReality}</p>
+                <div className="mt-6 pt-5 border-t" style={{ borderColor: '#ddd6cf' }}>
+                  <div className="font-mono text-[11px] font-bold mb-2" style={{ color: ORANGE }}>
+                    WHAT CAN MAKE IT WORTH IT
+                  </div>
+                  <p className="leading-relaxed" style={{ color: MUTED }}>{workplaceUpside}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside
+            className="rounded-[28px] p-6 sm:p-8 h-fit lg:sticky lg:top-8"
+            style={{ background: PAPER, border: '2px solid ' + INK, boxShadow: '7px 8px 0 ' + INK }}
+          >
+            <div className="font-mono text-xs font-bold mb-5" style={{ color: ORANGE }}>CHANGE THE FRAME</div>
+            <p className="mb-7 leading-relaxed" style={{ color: MUTED }}>{day.setting}</p>
+
+            <label className="block text-xs tracking-widest uppercase font-bold mb-2">Where would you live?</label>
+            <select
+              value={region}
+              onChange={(e) => setRegion(e.target.value as LifeRegion)}
+              className="w-full h-12 rounded-xl px-3 mb-6"
+              style={{ border: '2px solid ' + INK, background: PAPER }}
+            >
+              <option value="dublin">Dublin</option>
+              <option value="city">Another city</option>
+              <option value="town">Town or rural area</option>
+            </select>
+
+            <label className="block text-xs tracking-widest uppercase font-bold mb-2">Who would you live with?</label>
+            <div className="grid gap-2 mb-6">
+              {([['home', 'At home'], ['share', 'Sharing'], ['independent', 'Independently']] as const).map(([value, label]) => (
+                <button
+                  key={value}
+                  onClick={() => setLiving(value)}
+                  className="h-11 rounded-xl text-left px-4 font-semibold"
+                  style={{
+                    border: '2px solid ' + (living === value ? INK : '#d9d2cb'),
+                    background: living === value ? CREAM : PAPER,
+                  }}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+
+            <label className="block text-xs tracking-widest uppercase font-bold mb-2">
+              What kind of working week sounds better?
+            </label>
+            <div className="grid gap-2 mb-8">
+              {([
+                ['steady', 'More predictable', 'Similar hours and a clearer routine'],
+                ['varied', 'More varied', 'Changing days and less predictable routines'],
+              ] as const).map(([value, label, detail]) => (
+                <button
+                  key={value}
+                  onClick={() => setRhythm(value)}
+                  className="min-h-[62px] rounded-xl text-left px-4 py-2"
+                  style={{
+                    border: '2px solid ' + (rhythm === value ? INK : '#d9d2cb'),
+                    background: rhythm === value ? CREAM : PAPER,
+                  }}
+                >
+                  <strong className="block">{label}</strong>
+                  <span className="text-xs" style={{ color: MUTED }}>{detail}</span>
+                </button>
+              ))}
+            </div>
+
+            <Button
+              className="w-full"
+              onClick={() => {
+                persist({ careerId: career.id, region, living, rhythm });
+                setStage('reflection');
+              }}
+            >
+              Reflect on this future <ArrowRight className="inline ml-2" size={17} />
+            </Button>
+          </aside>
+        </section>
+      </Shell>
+    );
+  }
+
+  if (stage === 'reflection') { const prompts = [[felt,setFelt,'I could see myself…','Which part of the day felt appealing?'],[notFor,setNotFor,'I would not want…','Which trade-off felt wrong for you?'],[surprised,setSurprised,'I had not considered…','What changed or surprised you?']] as const; return <Shell stage={stage} back={() => setStage('day')}><section className="py-12"><div className="max-w-3xl mb-10"><div className="font-mono text-sm font-bold mb-4" style={{ color: ORANGE }}>NO VERDICT REQUIRED</div><h1 className="text-5xl sm:text-6xl" style={{ fontFamily: SERIF, color: INK }}>Keep the useful reaction.</h1><p className="mt-4 text-lg" style={{ color: MUTED }}>Write one honest line. You are testing a possibility, not choosing the rest of your life.</p></div><div className="grid lg:grid-cols-3 gap-5">{prompts.map(([value,setter,label,hint], index) => <label key={label} className="rounded-[24px] p-6 min-h-[250px] flex flex-col" style={{ background: PAPER, border: `2px solid ${INK}`, boxShadow: `5px 6px 0 ${INK}` }}><span className="font-mono text-sm font-bold" style={{ color: ORANGE }}>0{index + 1}</span><span className="block text-3xl mt-7 lg:min-h-[72px]" style={{ fontFamily: SERIF, color: INK }}>{label}</span><span className="block text-sm mt-2" style={{ color: MUTED }}>{hint}</span><textarea value={value} onChange={(e) => setter(e.target.value)} rows={3} className="possible-life-journal-field w-full mt-7 resize-none outline-none text-base" placeholder="A sentence is enough…" style={{ color: INK }}/></label>)}</div><div className="flex justify-end mt-9"><Button disabled={!felt.trim() && !notFor.trim() && !surprised.trim()} onClick={() => { persist({ feltLikeMe: felt, notForMe: notFor, surprisedMe: surprised }); setStage('route'); }}>Build a route from this <ArrowRight className="inline ml-2" size={17}/></Button></div></section></Shell>; }
 
   const courses = coursesFor(career); const closest = courses.find((course) => course.typicalPoints <= targetPoints + 30) ?? courses[courses.length - 1];
   const alreadySaved = careerPathState.savedIds.includes(career.id);

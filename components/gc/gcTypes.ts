@@ -18,6 +18,7 @@ export interface JourneyResult {
   finalStats: GameState;
   completedAt?: string;
   decisionsCount?: number;
+  scoringVersion?: number;
 }
 
 // ─── Aggregated student data loaded once in GCDashboard shell ───────────────

@@ -49,7 +49,10 @@ export function getSyllabusTopicRefs(
     subjectName,
     examinationYearFromDate(examDate),
   );
-  return specification ? coverageNodes(specification) : [];
+  // A stored taxonomy is not automatically safe to present as an official
+  // syllabus. Unverified imports stay hidden until their subject-level source
+  // and cohort boundary have been checked.
+  return specification?.status === 'verified' ? coverageNodes(specification) : [];
 }
 
 /**

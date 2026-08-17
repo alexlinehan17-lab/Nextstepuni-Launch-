@@ -11,7 +11,8 @@ import {
   type LucideIcon,
 } from 'lucide-react';
 import { type AchievementCategory } from '../gamificationConfig';
-import { ACHIEVEMENTS } from '../achievementData';
+import { getAchievementsForCurriculum } from '../achievementData';
+import { type CurriculumLevel } from '../utils/authUtils';
 
 const ICON_MAP: Record<string, LucideIcon> = {
   Trophy, Star, Flame, BookOpen, Clock, Target, Award, Crown, Mountain, Zap,
@@ -69,21 +70,26 @@ const CATEGORY_TABS: { id: AchievementCategory | 'all'; label: string }[] = [
 interface AchievementGalleryProps {
   unlockedAchievements: string[];
   achievementTimestamps: Record<string, number>;
+  curriculumLevel?: CurriculumLevel;
 }
 
 const AchievementGallery: React.FC<AchievementGalleryProps> = ({
   unlockedAchievements,
   achievementTimestamps,
+  curriculumLevel = 'senior',
 }) => {
   const [activeTab, setActiveTab] = useState<AchievementCategory | 'all'>('all');
   const unlockedSet = new Set(unlockedAchievements);
+  const availableAchievements = getAchievementsForCurriculum(curriculumLevel);
 
   const filtered = activeTab === 'all'
-    ? ACHIEVEMENTS
-    : ACHIEVEMENTS.filter(a => a.category === activeTab);
+    ? availableAchievements
+    : availableAchievements.filter(a => a.category === activeTab);
 
   const unlocked = filtered.filter(a => unlockedSet.has(a.id));
   const locked = filtered.filter(a => !unlockedSet.has(a.id));
+  const unlockedCount = availableAchievements.filter(a => unlockedSet.has(a.id)).length;
+  const visibleTotal = availableAchievements.filter(a => !a.isHidden || unlockedSet.has(a.id)).length;
 
   return (
     <div className="space-y-4">
@@ -93,7 +99,7 @@ const AchievementGallery: React.FC<AchievementGalleryProps> = ({
           Achievements
         </h3>
         <span className="text-xs font-bold text-zinc-400 dark:text-zinc-500">
-          {unlockedAchievements.length}/{ACHIEVEMENTS.filter(a => !a.isHidden || unlockedSet.has(a.id)).length}
+          {unlockedCount}/{visibleTotal}
         </span>
       </div>
 

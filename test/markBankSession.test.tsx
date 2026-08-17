@@ -43,13 +43,15 @@ const card = (o: Partial<SecCard> = {}): SecCard => ({
   ...o,
 } as SecCard);
 
-const renderSession = (cards: SecCard[]) => {
+const renderSession = (cards: SecCard[], reviewPool?: { total: number; label: string }) => {
   const onGrade = vi.fn();
   const onFinish = vi.fn();
   const onExit = vi.fn();
   const utils = render(
     <SessionScreen
       cards={cards} subjectLabel="Biology"
+      reviewPoolTotal={reviewPool?.total}
+      reviewPoolLabel={reviewPool?.label}
       onGrade={onGrade} onFinish={onFinish} onExit={onExit}
     />,
   );
@@ -207,6 +209,12 @@ describe('the question comes first and stays', () => {
     expect(screen.queryByText('Oesophagus')).not.toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     expect(screen.getByText('Oesophagus')).toBeInTheDocument();
+  });
+
+  test('does not expose the retired Ways In entry point', () => {
+    renderSession([card()]);
+    expect(screen.queryByRole('button', { name: /Ways In/i })).not.toBeInTheDocument();
+    expect(screen.getByText('Name the parts labelled A and B.')).toBeInTheDocument();
   });
 
   test('keeps the question on screen after the reveal, because a flip would hide it', () => {
@@ -437,6 +445,30 @@ describe('a diagram card always decodes its figure', () => {
 });
 
 describe('grading', () => {
+  test('distinguishes the sitting size from the full topic inventory', () => {
+    const sitting = Array.from({ length: 12 }, (_, index) => card({
+      id: `bio-topic-card-${index + 1}`,
+      questionText: `Question ${index + 1}.`,
+    }));
+
+    renderSession(sitting, { total: 23, label: 'Scientific knowledge' });
+
+    expect(screen.getByText('1 of 12 this review')).toBeInTheDocument();
+    expect(screen.getByText('23 cards in Scientific knowledge')).toBeInTheDocument();
+  });
+
+  test('never presents a short subject-wide queue as the complete card bank', () => {
+    const sitting = Array.from({ length: 5 }, (_, index) => card({
+      id: `bio-due-card-${index + 1}`,
+      questionText: `Due question ${index + 1}.`,
+    }));
+
+    renderSession(sitting, { total: 684, label: 'Biology' });
+
+    expect(screen.getByText('1 of 5 this review')).toBeInTheDocument();
+    expect(screen.getByText('684 cards in Biology')).toBeInTheDocument();
+  });
+
   test('offers all three grades and lets the student overrule the suggestion', () => {
     const { onGrade } = renderSession([card()]);
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));

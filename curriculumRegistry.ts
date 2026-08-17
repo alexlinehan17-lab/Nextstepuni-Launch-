@@ -104,6 +104,7 @@ export interface CanonicalCurriculumSpecification {
 
 const OFFICIAL = {
   curriculumOverview: 'https://www.curriculumonline.ie/senior-cycle/curriculum/',
+  redevelopmentSchedule: 'https://ncca.ie/en/senior-cycle/senior-cycle-redevelopment/schedule-of-senior-cycle-subjects-for-redevelopment/',
   biology: 'https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/biology/',
   chemistry: 'https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/chemistry/',
   physics: 'https://curriculumonline.ie/senior-cycle/senior-cycle-subjects/physics/',
@@ -126,7 +127,10 @@ const OFFICIAL = {
   constructionStudies: 'https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/construction-studies/',
   constructionTechnologySpecification: 'https://curriculumonline.ie/getmedia/8a5f525f-b3d4-4d0d-ae60-11fed5c4076c/SC-Construction-Technology-Spec-ENG.pdf',
   engineering: 'https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/engineering/',
+  engineeringSpecification: 'https://www.curriculumonline.ie/getmedia/2e897923-e0dc-4f3b-ac42-f8501226c8ab/SC-Engineering-Spec-ENG-INT.pdf',
   physicalEducation: 'https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/physical-education-specification/',
+  physicalEducation2028Specification: 'https://www.curriculumonline.ie/getmedia/e3c33f7c-a88b-4050-bed3-c892ec995ba2/SC-PE-Spec-ENG-INT.pdf',
+  lifeCommunityWorkSpecification: 'https://www.curriculumonline.ie/getmedia/f6802fdb-582a-4380-905f-ee47b4edbaf2/SC-LCW-Spec-ENG-INT.pdf',
   computerScience: 'https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/computer-science/',
   computerScienceAssessment: 'https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/computer-science/assessment/',
   economics: 'https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/economics/',
@@ -218,6 +222,118 @@ const transitionSubjects: Record<string, {
   physics: { firstExamYear: 2027, source: OFFICIAL.physics, title: 'Leaving Certificate Physics' },
   business: { firstExamYear: 2027, source: OFFICIAL.business, title: 'Leaving Certificate Business' },
   'agricultural-science': { firstExamYear: 2021, source: OFFICIAL.agriculturalScience, title: 'Leaving Certificate Agricultural Science' },
+};
+
+export interface CurriculumRedevelopmentTransition {
+  /** Year the replacement is introduced to fifth-year students. */
+  introductionYear: number;
+  /** First examination year implied by the two-year senior-cycle course. */
+  firstExamYear: number;
+  /** Last cohort for which the outgoing map is valid. */
+  outgoingLastExamYear: number;
+  replacementName: string;
+  sourceUrl: string;
+  timing: 'confirmed' | 'not-before';
+}
+
+/**
+ * Cohort boundaries that materially change the topic map or assessment
+ * structure students see in War Room. These are deliberately separate from
+ * editorial study advice: every entry is backed by Curriculum Online or the
+ * NCCA redevelopment schedule.
+ */
+export const CURRICULUM_REDEVELOPMENT_TRANSITIONS: Record<string, CurriculumRedevelopmentTransition> = {
+  'construction-studies': {
+    introductionYear: 2026,
+    firstExamYear: 2028,
+    outgoingLastExamYear: 2027,
+    replacementName: 'Construction Technology',
+    sourceUrl: OFFICIAL.constructionStudies,
+    timing: 'confirmed',
+  },
+  engineering: {
+    introductionYear: 2026,
+    firstExamYear: 2028,
+    outgoingLastExamYear: 2027,
+    replacementName: 'Engineering',
+    sourceUrl: OFFICIAL.engineering,
+    timing: 'confirmed',
+  },
+  geography: {
+    introductionYear: 2026,
+    firstExamYear: 2028,
+    outgoingLastExamYear: 2027,
+    replacementName: 'Geography',
+    sourceUrl: OFFICIAL.geography,
+    timing: 'confirmed',
+  },
+  'lcvp-link-modules': {
+    introductionYear: 2026,
+    firstExamYear: 2028,
+    outgoingLastExamYear: 2027,
+    replacementName: 'Life, Community and Work',
+    sourceUrl: OFFICIAL.lcvp,
+    timing: 'confirmed',
+  },
+  'physical-education': {
+    introductionYear: 2026,
+    firstExamYear: 2028,
+    outgoingLastExamYear: 2027,
+    replacementName: 'Physical Education',
+    sourceUrl: OFFICIAL.physicalEducation,
+    timing: 'confirmed',
+  },
+  // Accounting and English were postponed until at least September 2027.
+  accounting: {
+    introductionYear: 2027,
+    firstExamYear: 2029,
+    outgoingLastExamYear: 2028,
+    replacementName: 'Accounting',
+    sourceUrl: OFFICIAL.accounting,
+    timing: 'not-before',
+  },
+  english: {
+    introductionYear: 2027,
+    firstExamYear: 2029,
+    outgoingLastExamYear: 2028,
+    replacementName: 'English',
+    sourceUrl: OFFICIAL.english,
+    timing: 'not-before',
+  },
+  // Tranche 3: introduced to fifth year in 2027, so the outgoing
+  // specifications remain the correct maps through the 2028 examinations.
+  'agricultural-science': {
+    introductionYear: 2027, firstExamYear: 2029, outgoingLastExamYear: 2028,
+    replacementName: 'Agricultural Science', sourceUrl: OFFICIAL.redevelopmentSchedule, timing: 'confirmed',
+  },
+  'computer-science': {
+    introductionYear: 2027, firstExamYear: 2029, outgoingLastExamYear: 2028,
+    replacementName: 'Computer Science', sourceUrl: OFFICIAL.redevelopmentSchedule, timing: 'confirmed',
+  },
+  'design-and-communication-graphics': {
+    introductionYear: 2027, firstExamYear: 2029, outgoingLastExamYear: 2028,
+    replacementName: 'Design and Communication Graphics', sourceUrl: OFFICIAL.redevelopmentSchedule, timing: 'confirmed',
+  },
+  history: {
+    introductionYear: 2027, firstExamYear: 2029, outgoingLastExamYear: 2028,
+    replacementName: 'History', sourceUrl: OFFICIAL.redevelopmentSchedule, timing: 'confirmed',
+  },
+  'home-economics': {
+    introductionYear: 2027, firstExamYear: 2029, outgoingLastExamYear: 2028,
+    replacementName: 'Home Economics', sourceUrl: OFFICIAL.redevelopmentSchedule, timing: 'confirmed',
+  },
+  mathematics: {
+    introductionYear: 2027, firstExamYear: 2029, outgoingLastExamYear: 2028,
+    replacementName: 'Mathematics', sourceUrl: OFFICIAL.redevelopmentSchedule, timing: 'confirmed',
+  },
+  music: {
+    introductionYear: 2027, firstExamYear: 2029, outgoingLastExamYear: 2028,
+    replacementName: 'Music', sourceUrl: OFFICIAL.redevelopmentSchedule, timing: 'confirmed',
+  },
+  'physics-and-chemistry': {
+    introductionYear: 2027, firstExamYear: 2029, outgoingLastExamYear: 2028,
+    replacementName: 'Physics and Chemistry', sourceUrl: OFFICIAL.redevelopmentSchedule, timing: 'confirmed',
+  },
 };
 
 const redevelopedSpecifications: CanonicalCurriculumSpecification[] = MARK_BANK_SUBJECTS.map((subject) => {
@@ -501,6 +617,177 @@ const geography2028Specification: CanonicalCurriculumSpecification = {
   notes: [
     'Introduced to fifth-year students in September 2026.',
     'The topic nodes reproduce the official “Students learn about” headings rather than the outgoing Geography taxonomy.',
+  ],
+};
+
+const engineering2028Specification: CanonicalCurriculumSpecification = {
+  id: 'engineering:2028',
+  subjectId: 'engineering',
+  subjectName: 'Engineering',
+  programme: 'leaving-certificate-established',
+  category: 'practical-applied',
+  levels: ['higher', 'ordinary'],
+  title: 'Leaving Certificate Engineering — specification examined from 2028',
+  firstExamYear: 2028,
+  status: 'verified',
+  sources: [
+    {
+      authority: 'NCCA',
+      title: 'Leaving Certificate Engineering curriculum specification',
+      url: OFFICIAL.engineeringSpecification,
+      role: 'content',
+    },
+    {
+      authority: 'NCCA',
+      title: 'Leaving Certificate Engineering assessment for certification',
+      url: OFFICIAL.engineeringSpecification,
+      role: 'assessment',
+    },
+  ],
+  recommendedClassHours: 180,
+  groups: [
+    canonicalGroup('engineering-2028-processes', 'Engineering Processes', []),
+    canonicalGroup('engineering-2028-automation-control', 'Automation and Control Systems', []),
+    canonicalGroup('engineering-2028-design-capability', 'Design Capability', []),
+    canonicalGroup('engineering-2028-principles-energy', 'Engineering Principles and Energy', []),
+  ],
+  coverageNodeLevel: 'group',
+  assessmentComponents: [
+    {
+      id: 'engineering-2028-design-manufacture-project',
+      title: 'Design and manufacture project',
+      kind: 'project',
+      weighting: 50,
+      levels: ['common'],
+      required: true,
+      notes: ['Based on a common brief issued by the State Examinations Commission.'],
+    },
+    {
+      id: 'engineering-2028-written-examination',
+      title: 'Written examination',
+      kind: 'written-examination',
+      weighting: 50,
+      levels: ['higher', 'ordinary'],
+      required: true,
+    },
+  ],
+  notes: [
+    'Introduced to fifth-year students in September 2026.',
+    'Coverage uses the four official strands; no outgoing Engineering taxonomy is carried forward.',
+  ],
+};
+
+const physicalEducation2028Specification: CanonicalCurriculumSpecification = {
+  id: 'physical-education:2028',
+  subjectId: 'physical-education',
+  subjectName: 'Physical Education',
+  programme: 'leaving-certificate-established',
+  category: 'practical-applied',
+  levels: ['higher', 'ordinary'],
+  title: 'Leaving Certificate Physical Education — specification examined from 2028',
+  firstExamYear: 2028,
+  status: 'verified',
+  sources: [
+    {
+      authority: 'NCCA',
+      title: 'Leaving Certificate Physical Education curriculum specification',
+      url: OFFICIAL.physicalEducation2028Specification,
+      role: 'content',
+    },
+    {
+      authority: 'NCCA',
+      title: 'Leaving Certificate Physical Education assessment for certification',
+      url: OFFICIAL.physicalEducation2028Specification,
+      role: 'assessment',
+    },
+  ],
+  recommendedClassHours: 180,
+  groups: [
+    canonicalGroup('physical-education-2028-skill-performance', 'Skill learning, participation and performance', []),
+    canonicalGroup('physical-education-2028-demands-performance', 'Physical and psychological demands of performance', []),
+    canonicalGroup('physical-education-2028-participation-factors', 'Factors influencing participation in physical activity', []),
+  ],
+  coverageNodeLevel: 'group',
+  assessmentComponents: [
+    {
+      id: 'physical-education-2028-project',
+      title: 'Physical Education project',
+      kind: 'project',
+      weighting: 50,
+      levels: ['common'],
+      required: true,
+      notes: ['Based on a common brief issued by the State Examinations Commission.'],
+    },
+    {
+      id: 'physical-education-2028-written-examination',
+      title: 'Written examination',
+      kind: 'written-examination',
+      weighting: 50,
+      levels: ['higher', 'ordinary'],
+      required: true,
+    },
+  ],
+  notes: [
+    'Introduced to fifth-year students in September 2026.',
+    'Coverage uses the three official strands; the 2018 specification is not carried into the 2028 cohort.',
+  ],
+};
+
+const lifeCommunityWork2028Specification: CanonicalCurriculumSpecification = {
+  id: 'lcvp-link-modules:2028',
+  // Keep the established LCVP identity so saved profiles and confidence data survive the replacement.
+  subjectId: 'lcvp-link-modules',
+  subjectName: 'Life, Community and Work',
+  programme: 'lcvp',
+  category: 'business',
+  levels: ['common'],
+  title: 'Leaving Certificate Life, Community and Work — specification examined from 2028',
+  firstExamYear: 2028,
+  status: 'verified',
+  sources: [
+    {
+      authority: 'NCCA',
+      title: 'Leaving Certificate Life, Community and Work curriculum specification',
+      url: OFFICIAL.lifeCommunityWorkSpecification,
+      role: 'content',
+    },
+    {
+      authority: 'NCCA',
+      title: 'Life, Community and Work assessment for certification',
+      url: OFFICIAL.lifeCommunityWorkSpecification,
+      role: 'assessment',
+    },
+  ],
+  recommendedClassHours: 120,
+  groups: [
+    canonicalGroup('life-community-work-2028-understanding-myself', 'Understanding Myself', []),
+    canonicalGroup('life-community-work-2028-progression', 'Understanding my Progression Opportunities', []),
+    canonicalGroup('life-community-work-2028-community', 'Appreciating my Community', []),
+    canonicalGroup('life-community-work-2028-workplace', 'Engaging with the Workplace', []),
+  ],
+  coverageNodeLevel: 'group',
+  assessmentComponents: [
+    {
+      id: 'life-community-work-2028-portfolio',
+      title: 'Portfolio in Action',
+      kind: 'coursework',
+      weighting: 60,
+      levels: ['common'],
+      required: true,
+      notes: ['A multimodal response to an annual brief issued by the State Examinations Commission.'],
+    },
+    {
+      id: 'life-community-work-2028-written-examination',
+      title: 'Written examination',
+      kind: 'written-examination',
+      weighting: 40,
+      levels: ['common'],
+      required: true,
+    },
+  ],
+  notes: [
+    'Introduced to fifth-year students in September 2026, replacing the LCVP programme statement.',
+    'The four official strands sit across the integrated modules Me and my Future and Community and Work.',
   ],
 };
 
@@ -1242,11 +1529,33 @@ function patchLegacySpecification(spec: CanonicalCurriculumSpecification): Canon
   return spec;
 }
 
+function applyScheduledOutgoingBoundary(
+  specification: CanonicalCurriculumSpecification,
+): CanonicalCurriculumSpecification {
+  const transition = CURRICULUM_REDEVELOPMENT_TRANSITIONS[specification.subjectId];
+  if (!transition) return specification;
+  if (specification.firstExamYear && specification.firstExamYear >= transition.firstExamYear) return specification;
+  if ((specification.lastExamYear ?? Infinity) <= transition.outgoingLastExamYear) return specification;
+
+  return {
+    ...specification,
+    lastExamYear: transition.outgoingLastExamYear,
+    title: `${specification.title.replace(/\s+— examination to June \d{4}$/, '')} — examination to June ${transition.outgoingLastExamYear}`,
+    notes: [
+      ...(specification.notes ?? []),
+      `${transition.replacementName} is scheduled for introduction to fifth-year students in ${transition.introductionYear}; this outgoing record must not be resolved for the ${transition.firstExamYear} examination cohort.`,
+    ],
+  };
+}
+
 export const CURRICULUM_SPECIFICATIONS: CanonicalCurriculumSpecification[] = [
-  ...legacySpecifications.map(patchLegacySpecification),
+  ...legacySpecifications.map(patchLegacySpecification).map(applyScheduledOutgoingBoundary),
   ...redevelopedSpecifications,
   constructionTechnologySpecification,
   geography2028Specification,
+  engineering2028Specification,
+  physicalEducation2028Specification,
+  lifeCommunityWork2028Specification,
 ];
 
 const normalise = (value: string) => value.trim().toLowerCase().replace(/\s+/g, ' ');
@@ -1326,6 +1635,60 @@ export function resolveCurriculumSpecification(
     .filter((spec) => (spec.firstExamYear ?? -Infinity) <= examYear && (spec.lastExamYear ?? Infinity) >= examYear)
     .sort((a, b) => (b.firstExamYear ?? -Infinity) - (a.firstExamYear ?? -Infinity));
   return candidates[0];
+}
+
+export interface CurriculumCohortNotice {
+  kind: 'outgoing' | 'replacement-pending';
+  title: string;
+  message: string;
+  sourceUrl: string;
+  replacementExamYear: number;
+}
+
+/**
+ * Student-facing transition copy for the selected examination cohort. It
+ * never guesses a replacement taxonomy: if a future specification has not
+ * yet been encoded and verified, the old map stays unavailable.
+ */
+export function getCurriculumCohortNotice(
+  subject: string,
+  examYear = examinationYearFromDate(),
+): CurriculumCohortNotice | undefined {
+  const subjectId = resolveSubjectId(subject);
+  if (!subjectId) return undefined;
+  const transition = CURRICULUM_REDEVELOPMENT_TRANSITIONS[subjectId];
+  if (!transition) return undefined;
+
+  if (examYear <= transition.outgoingLastExamYear) {
+    const isFinalOutgoingCohort = examYear === transition.outgoingLastExamYear;
+    const title = transition.outgoingLastExamYear === 2027 && isFinalOutgoingCohort
+      ? 'For 2027 exam candidates only'
+      : `Current specification — exams through ${transition.outgoingLastExamYear}`;
+    const timing = transition.timing === 'not-before'
+      ? `The replacement has been postponed until at least September ${transition.introductionYear}, so ${transition.firstExamYear} is the earliest possible first examination year.`
+      : `${transition.replacementName} is introduced to fifth-year students in September ${transition.introductionYear} and is first examined in ${transition.firstExamYear}.`;
+    const cohortContext = isFinalOutgoingCohort
+      ? `This topic map follows the outgoing specification for the ${examYear} exam cohort.`
+      : `This topic map follows the current outgoing specification for your ${examYear} exam cohort and remains in use through the ${transition.outgoingLastExamYear} exams.`;
+    return {
+      kind: 'outgoing',
+      title,
+      message: `${cohortContext} ${timing} Do not use this map for the ${transition.firstExamYear} cohort.`,
+      sourceUrl: transition.sourceUrl,
+      replacementExamYear: transition.firstExamYear,
+    };
+  }
+
+  const active = resolveCurriculumSpecification(subjectId, examYear);
+  if (active?.firstExamYear && active.firstExamYear >= transition.firstExamYear) return undefined;
+
+  return {
+    kind: 'replacement-pending',
+    title: `${transition.firstExamYear} specification being verified`,
+    message: `The outgoing ${subject} map ended with the ${transition.outgoingLastExamYear} exams. We will not show it for your cohort. Use the official ${transition.replacementName} specification while the new map is checked and added here.`,
+    sourceUrl: transition.sourceUrl,
+    replacementExamYear: transition.firstExamYear,
+  };
 }
 
 export function findCanonicalTopic(

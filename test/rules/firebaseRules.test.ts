@@ -9,7 +9,7 @@ import {
   initializeTestEnvironment,
   type RulesTestEnvironment,
 } from '@firebase/rules-unit-testing';
-import { doc, getDoc, setDoc, updateDoc } from 'firebase/firestore';
+import { collection, doc, getDoc, getDocs, setDoc, updateDoc } from 'firebase/firestore';
 import { getBytes, ref, uploadBytes } from 'firebase/storage';
 
 const PROJECT_ID = 'nextstepuni-rules-test';
@@ -84,6 +84,54 @@ describe('Firestore ownership and staff boundaries', () => {
     await assertSucceeds(getDoc(doc(environment.authenticatedContext('alice').firestore(), 'progress/alice/sessions/session-1')));
     await assertSucceeds(getDoc(doc(environment.authenticatedContext('gc-a').firestore(), 'progress/alice/sessions/session-1')));
     await assertFails(getDoc(doc(environment.authenticatedContext('bob').firestore(), 'progress/alice/sessions/session-1')));
+  });
+});
+
+describe('Anonymous feedback boundary', () => {
+  beforeEach(async () => {
+    await environment.withSecurityRulesDisabled(async context => {
+      await setDoc(doc(context.firestore(), 'anonymousFeedback/feedback-1'), {
+        category: 'broken',
+        message: 'The module button did not open.',
+        context: { surface: 'home' },
+        platform: 'web',
+        appVersion: '0.0.0',
+        status: 'new',
+        createdAt: new Date(),
+        expiresAt: new Date(Date.now() + 86_400_000),
+      });
+      await setDoc(doc(context.firestore(), 'feedbackRateLimits/bucket-1'), {
+        count: 1,
+        day: '2026-08-13',
+      });
+    });
+  });
+
+  it('denies feedback reads and writes to students', async () => {
+    const studentDb = environment.authenticatedContext('alice').firestore();
+    await assertFails(getDocs(collection(studentDb, 'anonymousFeedback')));
+    await assertFails(setDoc(doc(studentDb, 'anonymousFeedback/student-write'), {
+      category: 'idea',
+      message: 'Please add this feature.',
+    }));
+    await assertFails(getDoc(doc(studentDb, 'feedbackRateLimits/bucket-1')));
+  });
+
+  it('lets the platform admin read feedback and change only workflow fields', async () => {
+    const adminDb = environment.authenticatedContext('admin', {
+      email: 'admin@nextstep.app',
+    }).firestore();
+    await assertSucceeds(getDocs(collection(adminDb, 'anonymousFeedback')));
+    await assertSucceeds(updateDoc(doc(adminDb, 'anonymousFeedback/feedback-1'), {
+      status: 'reviewing',
+      reviewedAt: new Date(),
+    }));
+    await assertFails(updateDoc(doc(adminDb, 'anonymousFeedback/feedback-1'), {
+      message: 'Changed by admin',
+      status: 'reviewing',
+      reviewedAt: new Date(),
+    }));
+    await assertFails(getDoc(doc(adminDb, 'feedbackRateLimits/bucket-1')));
   });
 });
 

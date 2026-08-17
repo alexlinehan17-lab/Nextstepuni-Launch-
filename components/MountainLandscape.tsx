@@ -197,7 +197,7 @@ export const MountainLandscape: React.FC<MountainLandscapeProps> = ({ progress, 
       <defs>
         {/* Diagonal pencil-stroke pattern for shading */}
         <pattern id="ml-shade-pattern" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
-          <line x1="0" y1="0" x2="0" y2="6" stroke="#1a1a1a" strokeWidth="0.4" opacity="0.18" />
+          <line x1="0" y1="0" x2="0" y2="6" stroke="var(--mountain-ink)" strokeWidth="0.4" opacity="0.18" />
         </pattern>
 
         {/* Per-mountain wobbly clipPath (silhouette = clip) */}
@@ -220,10 +220,10 @@ export const MountainLandscape: React.FC<MountainLandscapeProps> = ({ progress, 
 
       {/* Sun upper-right (atmospheric, decorative) */}
       <g opacity="0.4">
-        <circle cx="1030" cy="58" r="14" fill="none" stroke="#1a1a1a" strokeWidth="1.1" />
-        <line x1="1030" y1="32" x2="1030" y2="38" stroke="#1a1a1a" strokeWidth="1.1" strokeLinecap="round" />
-        <line x1="1054" y1="58" x2="1060" y2="58" stroke="#1a1a1a" strokeWidth="1.1" strokeLinecap="round" />
-        <line x1="1006" y1="36" x2="1011" y2="42" stroke="#1a1a1a" strokeWidth="1.1" strokeLinecap="round" />
+        <circle cx="1030" cy="58" r="14" fill="none" stroke="var(--mountain-ink)" strokeWidth="1.1" />
+        <line x1="1030" y1="32" x2="1030" y2="38" stroke="var(--mountain-ink)" strokeWidth="1.1" strokeLinecap="round" />
+        <line x1="1054" y1="58" x2="1060" y2="58" stroke="var(--mountain-ink)" strokeWidth="1.1" strokeLinecap="round" />
+        <line x1="1006" y1="36" x2="1011" y2="42" stroke="var(--mountain-ink)" strokeWidth="1.1" strokeLinecap="round" />
       </g>
 
       {/* Per-mountain stack — left to right; later peaks paint over
@@ -248,7 +248,7 @@ export const MountainLandscape: React.FC<MountainLandscapeProps> = ({ progress, 
         return (
           <g key={p.id}>
             {/* 1. White triangle silhouette fill */}
-            <path d={path} fill="white" stroke="none" />
+            <path d={path} fill="var(--mountain-paper)" stroke="none" />
 
             {/* 2. Pencil shading on the right half */}
             <rect
@@ -280,7 +280,7 @@ export const MountainLandscape: React.FC<MountainLandscapeProps> = ({ progress, 
                 y1={fillTopY}
                 x2={p.baseRight}
                 y2={fillTopY}
-                stroke="#1a1a1a"
+                stroke="var(--mountain-ink)"
                 strokeWidth="1"
                 strokeDasharray="3 3"
                 opacity="0.5"
@@ -300,13 +300,13 @@ export const MountainLandscape: React.FC<MountainLandscapeProps> = ({ progress, 
 
             {/* Mountain outline — drawn on top so the dark silhouette
                 stays crisp regardless of the fills underneath. */}
-            <path d={path} fill="none" stroke="#1a1a1a" strokeWidth={stroke} strokeLinejoin="round" strokeLinecap="round" />
+            <path d={path} fill="none" stroke="var(--mountain-ink)" strokeWidth={stroke} strokeLinejoin="round" strokeLinecap="round" />
 
             {/* 6. Flagpole — straight from the summit up */}
             <path
               d={`M ${poleBaseX} ${poleBaseY}` + wobblyEdge(poleBaseX, poleBaseY, poleBaseX, poleTopY, p.seed + 2000, 4, 0.5)}
               fill="none"
-              stroke="#1a1a1a"
+              stroke="var(--mountain-ink)"
               strokeWidth="1.4"
               strokeLinecap="round"
             />
@@ -315,7 +315,7 @@ export const MountainLandscape: React.FC<MountainLandscapeProps> = ({ progress, 
             <path
               d={buildFlagPath(poleBaseX, poleTopY, p.seed + 3000)}
               fill={p.flagColor}
-              stroke="#1a1a1a"
+              stroke="var(--mountain-ink)"
               strokeWidth="1.3"
               strokeLinejoin="round"
               strokeLinecap="round"
@@ -328,7 +328,7 @@ export const MountainLandscape: React.FC<MountainLandscapeProps> = ({ progress, 
               textAnchor="middle"
               fontSize="13"
               fontWeight="500"
-              fill="#1a1a1a"
+              fill="var(--mountain-ink)"
               style={SERIF}
             >
               {p.label}
@@ -342,7 +342,7 @@ export const MountainLandscape: React.FC<MountainLandscapeProps> = ({ progress, 
       <path
         d={wobblyHorizontal(20, BASE_Y, 1080, 991, 40, 0.9)}
         fill="none"
-        stroke="#1a1a1a"
+        stroke="var(--mountain-ink)"
         strokeWidth="1.4"
         opacity="0.55"
         strokeLinecap="round"
@@ -361,7 +361,7 @@ export const MountainLandscape: React.FC<MountainLandscapeProps> = ({ progress, 
               textAnchor="middle"
               fontSize="22"
               fontWeight="500"
-              fill="#1a1a1a"
+              fill="var(--mountain-ink)"
               style={SERIF}
             >
               {pct}%
@@ -371,7 +371,7 @@ export const MountainLandscape: React.FC<MountainLandscapeProps> = ({ progress, 
               y={432}
               textAnchor="middle"
               fontSize="10"
-              fill="rgba(0,0,0,0.55)"
+              fill="var(--mountain-muted)"
               letterSpacing="1"
               style={SANS}
             >

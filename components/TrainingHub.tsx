@@ -23,6 +23,8 @@ import { type WeeklyChallengeState } from '../hooks/useWeeklyChallenge';
 import { ToolHeader } from './ToolHeader';
 import { COLORS } from '../design/tokens';
 import { getNorthStarDisplayText, hasStudentAuthoredNorthStar } from '../services/directionProfile';
+import { getAchievementsForCurriculum } from '../achievementData';
+import { type CurriculumLevel } from '../utils/authUtils';
 
 // ─── Config ─────────────────────────────────────────────────
 
@@ -70,17 +72,31 @@ interface TrainingHubProps {
   pointsReload?: () => void;
   onGoToStudy?: () => void;
   uid?: string;
+  curriculumLevel?: CurriculumLevel;
 }
 
 const TrainingHub: React.FC<TrainingHubProps> = ({
   gamificationState, streak, pointsBalance: _pointsBalance, northStar, onBack, onOpenJourney, onOpenDirection,
   userProgress, allCourses, strategyMastery, weeklyChallenge, pointsReload, onGoToStudy, uid: _uid,
+  curriculumLevel = 'senior',
 }) => {
   const { currentRank, nextRank, rankProgress, totalPointsEarned, unlockedAchievements, weeklyGoalProgress, weekStartDate: _weekStartDate, personalBests } = gamificationState;
   const weekNumber = getWeekNumber();
   const weeklyGoals = generateWeeklyGoals(currentRank.id, weekNumber);
   const RankIcon = RANK_ICONS[currentRank.icon] || Star;
   const modulesCompleted = allCourses.filter(c => { const p = userProgress[c.id]; return p && p.unlockedSection >= c.sectionsCount; }).length;
+  const availableAchievements = React.useMemo(
+    () => getAchievementsForCurriculum(curriculumLevel),
+    [curriculumLevel],
+  );
+  const unlockedAchievementSet = React.useMemo(
+    () => new Set(unlockedAchievements),
+    [unlockedAchievements],
+  );
+  const unlockedAchievementCount = availableAchievements.filter(achievement => unlockedAchievementSet.has(achievement.id)).length;
+  const visibleAchievementTotal = availableAchievements.filter(
+    achievement => !achievement.isHidden || unlockedAchievementSet.has(achievement.id),
+  ).length;
 
   const [strategyOpen, setStrategyOpen] = React.useState(false);
   const [achievementsOpen, setAchievementsOpen] = React.useState(false);
@@ -365,7 +381,9 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
 
         {/* ── Achievements ── */}
         {(() => {
-          const achievePct = Math.round((unlockedAchievements.length / 58) * 100);
+          const achievePct = visibleAchievementTotal > 0
+            ? Math.round((unlockedAchievementCount / visibleAchievementTotal) * 100)
+            : 0;
           return (
             <MotionDiv {...stagger(4)} className="mt-4">
               <div className="rounded-2xl bg-white dark:bg-zinc-900 overflow-hidden" style={{ border: '1px solid rgba(0,0,0,0.06)', boxShadow: '0 1px 4px rgba(0,0,0,0.04)' }}>
@@ -379,7 +397,7 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
                       <div className="flex-1 h-1.5 rounded-full overflow-hidden" style={{ backgroundColor: 'var(--accent-tint-hex)', maxWidth: 120 }}>
                         <div className="h-full rounded-full" style={{ backgroundColor: '#E67E22', width: `${achievePct}%` }} />
                       </div>
-                      <span style={{ fontSize: '10px', fontWeight: 600, color: '#9e9186' }}>{unlockedAchievements.length}/58</span>
+                      <span style={{ fontSize: '10px', fontWeight: 600, color: '#9e9186' }}>{unlockedAchievementCount}/{visibleAchievementTotal}</span>
                     </div>
                   </div>
                   <motion.div animate={{ rotate: achievementsOpen ? 180 : 0 }} transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}>
@@ -397,7 +415,11 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
                       style={{ overflow: 'hidden' }}
                     >
                       <div className="px-5 pb-5 pt-1" style={{ borderTop: '1px solid rgba(0,0,0,0.06)' }}>
-                        <AchievementGallery unlockedAchievements={unlockedAchievements} achievementTimestamps={gamificationState.achievementTimestamps} />
+                        <AchievementGallery
+                          unlockedAchievements={unlockedAchievements}
+                          achievementTimestamps={gamificationState.achievementTimestamps}
+                          curriculumLevel={curriculumLevel}
+                        />
                       </div>
                     </motion.div>
                   )}
@@ -453,10 +475,10 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
                     />
                   </svg>
                   <img
-                    src="/assets/training/north-star.png"
+                    src="/assets/training/north-star-compass.png"
                     alt=""
                     aria-hidden="true"
-                    className="pointer-events-none absolute left-1/2 top-1/2 h-[70px] w-[70px] max-w-none -translate-x-1/2 -translate-y-1/2 object-contain"
+                    className="pointer-events-none absolute left-1/2 top-1/2 h-[120px] w-[120px] max-w-none -translate-x-1/2 -translate-y-1/2 object-contain"
                   />
                 </div>
 

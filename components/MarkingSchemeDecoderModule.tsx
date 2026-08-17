@@ -656,10 +656,10 @@ const MarkingSchemeDecoderModule: React.FC<{ onBack: () => void; progress: Modul
                 ctaLabel="Open Paper Trail"
               />
               <ToolJumpCard
-                toolId="syllabus-xray"
-                title="See where the marks actually live"
-                description="Syllabus X-Ray breaks each paper into question types and tells you which ones recur every year. Use it to choose what to practise — with the marking scheme open."
-                ctaLabel="Open Syllabus X-Ray"
+                toolId="war-room"
+                title="Choose the next syllabus area"
+                description="Subject Coverage in War Room keeps the official map beside your confidence. Choose a shaky area, then practise it here with the marking scheme open."
+                ctaLabel="Open Subject Coverage"
               />
             </ReadingSection>
           )}

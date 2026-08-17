@@ -5,13 +5,13 @@
 
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, ArrowRight, CheckCircle2, Lock, List, X, Palette, Sun, Moon, BookOpen } from 'lucide-react';
-import { type ModuleProgress, type SectionDefinition, type ModuleTheme, type CardStyleId } from '../types';
+import { ArrowLeft, ArrowRight, CheckCircle2, Lock, List, X, Palette, Sun, Moon, BookOpen, PanelLeft } from 'lucide-react';
+import { type ModuleProgress, type SectionDefinition, type ModuleTheme } from '../types';
 import { ActivityRing } from './ModuleShared';
 import { ReferencesModal } from './ModuleReferences';
 import { type Reference } from '../data/references/types';
 import { useSettingsContext } from '../contexts/SettingsContext';
-import { CARD_STYLES } from '../themeData';
+import { useModulePosition } from '../contexts/ModulePositionContext';
 import { COLORS } from '../design/tokens';
 import ModuleCompleteScreen from './ModuleCompleteScreen';
 
@@ -81,9 +81,12 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
   northStarStatement,
 }) => {
   const settingsCtx = useSettingsContext();
+  const modulePosition = useModulePosition();
+  const displayedModuleNumber = modulePosition?.displayNumber ?? moduleNumber;
   const [activeSection, setActiveSection] = useState(
     progress.unlockedSection >= sections.length ? sections.length - 1 : progress.unlockedSection
   );
+  const [desktopSidebarOpen, setDesktopSidebarOpen] = useState(true);
   const [mobileSectionsOpen, setMobileSectionsOpen] = useState(false);
   const [referencesOpen, setReferencesOpen] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
@@ -212,24 +215,33 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
       style={{ ['--reading-scale' as string]: String(readingScale), ['--reading-lh' as string]: readingRelaxed ? '2.15' : '1.85' }}
     >
 
-      {/* ── Desktop Sidebar (unchanged) ── */}
-      <aside className="hidden md:flex w-80 bg-[var(--surface-paper)] border-r border-[var(--outline-soft)] sticky top-0 h-screen z-40 p-8 flex-col">
-        <div className="flex items-center gap-4 mb-12">
-          <motion.button whileHover={{ y: -1 }} whileTap={{ x: 1, y: 1 }} onClick={onBack} className="p-2 rounded-lg transition-all border-[1.5px] border-[var(--outline-strong)] bg-[var(--surface-paper)] shadow-[2px_2px_0_0_var(--outline-strong)] active:shadow-none">
+      {/* ── Desktop Sidebar ── */}
+      <aside
+        aria-label="Module navigation"
+        className={`relative hidden md:flex shrink-0 bg-[var(--surface-paper)] border-r border-[var(--outline-soft)] sticky top-0 h-screen z-40 flex-col overflow-hidden py-8 transition-[width,padding] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] motion-reduce:transition-none ${desktopSidebarOpen ? 'w-80 px-8' : 'w-[60px] px-2'}`}
+      >
+        <div className={`flex items-start transition-all duration-300 motion-reduce:transition-none ${desktopSidebarOpen ? 'gap-4 mb-12' : 'justify-center mb-4'}`}>
+          <motion.button type="button" aria-label="Back to modules" whileHover={{ y: -1 }} whileTap={{ x: 1, y: 1 }} onClick={onBack} className="p-2 rounded-lg transition-all border-[1.5px] border-[var(--outline-strong)] bg-[var(--surface-paper)] shadow-[2px_2px_0_0_var(--outline-strong)] active:shadow-none">
             <ArrowLeft size={16} className="text-zinc-700 dark:text-zinc-300" />
           </motion.button>
-          <div>
-            <p className={`text-[9px] font-semibold ${theme.sidebarModuleText} uppercase tracking-[0.2em] mb-0.5 underline`} style={{ color: 'var(--accent-hex)' }}>Unit {moduleNumber}</p>
+          <div className={`min-w-0 overflow-hidden transition-all duration-200 motion-reduce:transition-none ${desktopSidebarOpen ? 'max-w-[210px] opacity-100' : 'max-w-0 opacity-0'}`}>
+            <p className={`text-[9px] font-semibold ${theme.sidebarModuleText} uppercase tracking-[0.2em] mb-0.5 underline`} style={{ color: 'var(--accent-hex)' }}>Module {displayedModuleNumber}</p>
             <h1 className="font-serif font-semibold text-lg tracking-tight text-zinc-900 dark:text-white">{moduleTitle}</h1>
           </div>
         </div>
 
-        {(moduleSubtitle || moduleDescription) && (
-          <div className="mb-8 -mt-4">
-            {moduleSubtitle && <p className={`text-[11px] font-bold ${theme.sidebarActiveEyebrow} uppercase tracking-widest mb-1.5`} style={{ color: 'var(--accent-hex)' }}>{moduleSubtitle}</p>}
-            {moduleDescription && <p className="text-[11px] leading-relaxed text-zinc-400 dark:text-zinc-500">{moduleDescription}</p>}
-          </div>
-        )}
+        <div
+          id="module-sidebar-content"
+          aria-hidden={!desktopSidebarOpen}
+          inert={!desktopSidebarOpen}
+          className={`min-h-0 flex flex-1 flex-col transition-all duration-200 motion-reduce:transition-none ${desktopSidebarOpen ? 'translate-x-0 opacity-100' : '-translate-x-3 opacity-0 pointer-events-none'}`}
+        >
+          {(moduleSubtitle || moduleDescription) && (
+            <div className="mb-8 -mt-4">
+              {moduleSubtitle && <p className={`text-[11px] font-bold ${theme.sidebarActiveEyebrow} uppercase tracking-widest mb-1.5`} style={{ color: 'var(--accent-hex)' }}>{moduleSubtitle}</p>}
+              {moduleDescription && <p className="text-[11px] leading-relaxed text-zinc-400 dark:text-zinc-500">{moduleDescription}</p>}
+            </div>
+          )}
 
         <div className="flex-grow overflow-y-auto no-scrollbar pr-2">
           <div className="space-y-4 relative">
@@ -272,7 +284,7 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
           </button>
         )}
 
-        {/* Floating theme/card picker */}
+        {/* Floating theme and reading-comfort picker */}
         {settingsCtx && (
           <div className="relative mt-4" ref={pickerRef}>
             <button onClick={() => setPickerOpen(!pickerOpen)} className="w-full flex items-center justify-center gap-2 p-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors text-zinc-500 dark:text-zinc-400">
@@ -289,18 +301,9 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
                 >
                   {/* Dark mode toggle */}
                   <button onClick={() => settingsCtx.updateSetting('darkMode', !settingsCtx.settings.darkMode)} className="w-full flex items-center justify-between p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-white/5 mb-2">
-                    <span className="text-xs font-medium text-zinc-700 dark:text-zinc-300">{settingsCtx.settings.darkMode ? 'Light Mode' : 'Dark Mode'}</span>
+                    <span className="text-xs font-medium text-zinc-700 dark:text-zinc-300">{settingsCtx.settings.darkMode ? 'Light Mode (Beta)' : 'Dark Mode (Beta)'}</span>
                     {settingsCtx.settings.darkMode ? <Sun size={14} className="text-amber-400" /> : <Moon size={14} className="text-zinc-600" />}
                   </button>
-                  {/* Card styles */}
-                  <p className="text-[9px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-1.5">Card Style</p>
-                  <div className="space-y-1 mb-3">
-                    {CARD_STYLES.filter(s => s.price === 0 || settingsCtx.unlockedCardStyles.includes(s.id)).map(s => (
-                      <button key={s.id} onClick={() => settingsCtx.updateSetting('cardStyle', s.id as CardStyleId)} className={`w-full text-left px-2 py-1.5 rounded-lg text-xs transition-all ${settingsCtx.settings.cardStyle === s.id ? 'bg-[rgba(var(--accent),0.1)] text-[var(--accent-hex)] font-semibold' : 'text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800'}`}>
-                        {s.name}
-                      </button>
-                    ))}
-                  </div>
                   {/* Reading comfort — text size + line spacing */}
                   {readingControls}
                 </motion.div>
@@ -308,6 +311,22 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
             </AnimatePresence>
           </div>
         )}
+        </div>
+
+        <button
+          type="button"
+          onClick={() => setDesktopSidebarOpen(open => !open)}
+          aria-controls="module-sidebar-content"
+          aria-expanded={desktopSidebarOpen}
+          aria-label={desktopSidebarOpen ? 'Collapse module navigation' : 'Expand module navigation'}
+          title={desktopSidebarOpen ? undefined : 'Expand module navigation'}
+          className={`mt-4 flex min-h-10 items-center rounded-lg text-zinc-500 transition-colors hover:bg-zinc-100 dark:text-zinc-400 dark:hover:bg-zinc-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)] ${desktopSidebarOpen ? 'w-full justify-center gap-2 px-3' : 'w-10 justify-center self-center'}`}
+        >
+          <PanelLeft size={17} strokeWidth={1.6} className={`shrink-0 transition-transform duration-300 motion-reduce:transition-none ${desktopSidebarOpen ? '' : 'rotate-180'}`} aria-hidden="true" />
+          <span className={`overflow-hidden whitespace-nowrap text-xs font-medium transition-all duration-200 motion-reduce:transition-none ${desktopSidebarOpen ? 'max-w-24 opacity-100' : 'max-w-0 opacity-0'}`}>
+            Collapse
+          </span>
+        </button>
       </aside>
 
       {/* ── Mobile Top Bar ── */}
@@ -316,7 +335,7 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
           <ArrowLeft size={16} className="text-zinc-700 dark:text-zinc-300" />
         </button>
         <div className="flex-1 min-w-0">
-          <p className={`text-[9px] font-semibold ${theme.sidebarModuleText} uppercase tracking-[0.15em] leading-none`} style={{ color: 'var(--accent-hex)' }}>Unit {moduleNumber}</p>
+          <p className={`text-[9px] font-semibold ${theme.sidebarModuleText} uppercase tracking-[0.15em] leading-none`} style={{ color: 'var(--accent-hex)' }}>Module {displayedModuleNumber}</p>
           <h1 className="text-sm font-semibold text-zinc-900 dark:text-white truncate">{moduleTitle}</h1>
         </div>
         <button onClick={() => setMobileSectionsOpen(true)} className="p-2 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800 shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]">
@@ -401,7 +420,7 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
       </AnimatePresence>
 
       {/* ── Main Content ── */}
-      <main ref={mainRef} className="flex-grow flex flex-col items-center pt-20 md:pt-24 px-6 md:px-16 pb-24 md:pb-0 md:overflow-y-auto md:h-screen bg-[var(--surface-canvas)]">
+      <main ref={mainRef} className="min-w-0 flex-grow flex flex-col items-center pt-20 md:pt-24 px-6 md:px-16 pb-24 md:pb-0 md:overflow-y-auto md:h-screen bg-[var(--surface-canvas)] transition-[width] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] motion-reduce:transition-none">
         <div className="w-full max-w-3xl">
           <AnimatePresence mode="wait">
             <motion.div

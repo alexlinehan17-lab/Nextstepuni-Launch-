@@ -20,6 +20,7 @@
 
 import React, { useState } from 'react';
 import { motion, LayoutGroup } from 'framer-motion';
+import { Capacitor } from '@capacitor/core';
 import { type CourseData } from './Library';
 import { type CategoryType } from './KnowledgeTree';
 import { MODULE_SECTIONS } from '../moduleSections';
@@ -148,6 +149,7 @@ const CATEGORIES: CategoryConfig[] = [
 ];
 
 const FALLBACK_HERO_ID: CategoryType = 'architecture-mindset';
+const IS_NATIVE_IOS = Capacitor.getPlatform() === 'ios';
 
 // ── Stats / next-up helpers ─────────────────────────────────────────────
 
@@ -567,6 +569,100 @@ export const ModulesView: React.FC<ModulesViewProps> = ({
     visibleCategories.find(c => c.id === resolvedHeroId),
     ...visibleCategories.filter(c => c.id !== resolvedHeroId),
   ].filter(Boolean) as CategoryConfig[];
+
+  if (IS_NATIVE_IOS) {
+    const completedModules = allCourses.filter(course => {
+      const progress = userProgress[course.id];
+      return !!progress && progress.unlockedSection >= course.sectionsCount;
+    }).length;
+
+    return (
+      <div className="product-shell modules-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)]">
+        <header
+          className="fixed inset-x-0 top-0 z-40 border-b border-[#DDD8D2] bg-[#FAFBF6] px-4 pb-3 dark:border-zinc-800 dark:bg-zinc-950"
+          style={{ paddingTop: 'calc(12px + var(--sat, 0px))' }}
+        >
+          <div className="mx-auto max-w-7xl">
+            <PageHeader onBack={onBack} eyebrow="The Programme" title="Modules" compact />
+          </div>
+        </header>
+
+        <main
+          className="px-4 pt-24"
+          style={{ paddingBottom: 'calc(104px + var(--sab, 0px))' }}
+        >
+          <div className="mx-auto max-w-xl">
+            <div className="mb-5 flex items-end justify-between gap-4">
+              <div>
+                <p className="font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500 dark:text-zinc-400">
+                  Choose a world
+                </p>
+                <p className="mt-1 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
+                  Pick an area to see its modules.
+                </p>
+              </div>
+              <p className="shrink-0 font-mono text-[11px] font-semibold text-zinc-500 dark:text-zinc-400">
+                {completedModules}/{allCourses.length} done
+              </p>
+            </div>
+
+            <div className="space-y-3">
+              {visibleCategories.map(cat => {
+                const stats = getStats(cat.id, allCourses, userProgress);
+                const isCurrent = cat.id === resolvedHeroId && stats.hasAnyProgress;
+
+                return (
+                  <button
+                    key={cat.id}
+                    type="button"
+                    onClick={() => onSelectCategory(cat.id)}
+                    aria-label={`Open ${cat.name} world`}
+                    className="group flex min-h-[104px] w-full items-center gap-3 rounded-[22px] border bg-white p-3 text-left shadow-[0_2px_10px_rgba(0,0,0,0.04)] transition-transform active:scale-[0.985] dark:bg-zinc-900"
+                    style={{ borderColor: `${cat.blob}88` }}
+                  >
+                    <div className="flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-2xl" style={{ background: `${cat.blob}38` }}>
+                      <WorldIconBlob world={cat.worldKey} size={96} compact />
+                    </div>
+
+                    <div className="min-w-0 flex-1 py-1">
+                      <div className="flex items-center gap-2">
+                        <span className="font-mono text-[10px] font-bold tracking-[0.18em]" style={{ color: cat.mid }}>
+                          {cat.number}
+                        </span>
+                        {isCurrent && (
+                          <span className="rounded-full px-2 py-0.5 font-mono text-[8px] font-bold uppercase tracking-[0.16em] text-white" style={{ background: cat.mid }}>
+                            Continue
+                          </span>
+                        )}
+                      </div>
+                      <h2 className="mt-0.5 font-serif text-[25px] font-medium leading-none tracking-tight text-[#1A1A1A] dark:text-white">
+                        {cat.name}
+                      </h2>
+                      <p className="mt-1.5 line-clamp-1 text-[12px] text-zinc-600 dark:text-zinc-400">
+                        {cat.blurb}
+                      </p>
+                      <div className="mt-2.5 flex items-center gap-2">
+                        <span className="h-1.5 flex-1 overflow-hidden rounded-full" style={{ background: `${cat.deep}1F` }}>
+                          <span className="block h-full rounded-full" style={{ width: `${stats.percent}%`, background: cat.mid }} />
+                        </span>
+                        <span className="font-mono text-[9px] font-bold tabular-nums" style={{ color: cat.deep }}>
+                          {stats.completed}/{stats.total}
+                        </span>
+                      </div>
+                    </div>
+
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full" style={{ background: `${cat.blob}45`, color: cat.deep }}>
+                      <IconChevronRight size={16} />
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        </main>
+      </div>
+    );
+  }
 
   return (
     <div className="product-shell modules-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)]">

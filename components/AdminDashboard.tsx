@@ -6,11 +6,12 @@ import React, { useState, useEffect } from 'react';
 import { MotionDiv } from './Motion';
 import { type CourseData } from './Library';
 import { type SessionUser, getAvatarUrl } from '../utils/authUtils';
-import { GraduationCap, LogOut, Trash2, AlertTriangle } from 'lucide-react';
+import { GraduationCap, LogOut, Trash2, AlertTriangle, MessageSquareText, Users } from 'lucide-react';
 import { type CategoryType } from './KnowledgeTree';
 import app, { db } from '../firebase';
 import { collection, getDocs, query, limit, where, documentId } from 'firebase/firestore';
 import { getFunctions, httpsCallable } from 'firebase/functions';
+import AdminFeedbackInbox from './AdminFeedbackInbox';
 
 // FIX: Cast motion components to any to bypass broken type definitions
 
@@ -114,6 +115,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
     const [isLoading, setIsLoading] = useState(true);
     const [deleteTarget, setDeleteTarget] = useState<SessionUser | null>(null);
     const [isDeleting, setIsDeleting] = useState(false);
+    const [activeView, setActiveView] = useState<'students' | 'feedback'>('students');
 
     // Full cascade delete via the requestAccountDeletion Cloud Function (Admin
     // SDK): removes the Auth account + every Firestore collection holding the
@@ -195,7 +197,42 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
           </button>
         </div>
 
-        {isLoading ? (
+        <div className="mb-8 flex gap-2 border-b-2 border-[#1A1A1A] pb-3" role="tablist" aria-label="Admin dashboard view">
+          <button
+            type="button"
+            role="tab"
+            aria-selected={activeView === 'students'}
+            onClick={() => setActiveView('students')}
+            className="flex items-center gap-2 rounded-full border-2 px-4 py-2 text-sm font-bold"
+            style={{
+              borderColor: activeView === 'students' ? '#F26B1F' : '#1A1A1A',
+              backgroundColor: activeView === 'students' ? '#F26B1F' : '#FFFFFF',
+              color: activeView === 'students' ? '#FFFFFF' : '#1A1A1A',
+            }}
+          >
+            <Users size={16} />
+            Student progress
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={activeView === 'feedback'}
+            onClick={() => setActiveView('feedback')}
+            className="flex items-center gap-2 rounded-full border-2 px-4 py-2 text-sm font-bold"
+            style={{
+              borderColor: activeView === 'feedback' ? '#F26B1F' : '#1A1A1A',
+              backgroundColor: activeView === 'feedback' ? '#F26B1F' : '#FFFFFF',
+              color: activeView === 'feedback' ? '#FFFFFF' : '#1A1A1A',
+            }}
+          >
+            <MessageSquareText size={16} />
+            Feedback
+          </button>
+        </div>
+
+        {activeView === 'feedback' ? (
+          <AdminFeedbackInbox />
+        ) : isLoading ? (
             <div className="text-center py-16"><p>Loading student data...</p></div>
         ) : studentData.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

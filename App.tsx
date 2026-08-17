@@ -54,6 +54,7 @@ import { isSchoolStaff } from './utils/authUtils';
 import { useNavigation } from './contexts/NavigationContext';
 import { useProgress } from './contexts/ProgressContext';
 import { saveModuleProgress } from './services/progressRepository';
+import { shouldShowStudentChrome } from './utils/studentChrome';
 
 /* ── Mobile Bottom Navigation Bar ── */
 interface MobileBottomNavProps {
@@ -146,6 +147,8 @@ const App: React.FC = () => {
     unlockedCardStyles, setUnlockedCardStyles,
     dismissedGuides, setDismissedGuides,
     progressLoaded,
+    studySessions, studyDebriefs, studyReflections,
+    topicMasteryV2, unifiedMockResults,
     reloadProgress,
   } = progress;
   // Live mirror of studentProfile, for rollbacks that may run long after the
@@ -179,6 +182,7 @@ const App: React.FC = () => {
     pointsData,
     streak,
     northStar,
+    curriculumLevel: user?.curriculumLevel,
   });
   const [toastQueue, setToastQueue] = useState<AchievementDefinition[]>([]);
   const [currentToast, setCurrentToast] = useState<AchievementDefinition | null>(null);
@@ -764,6 +768,7 @@ const App: React.FC = () => {
 
   const routerProps = {
     studentProfile, userProgress, northStar, timetableCompletions,
+    studySessions, studyDebriefs, studyReflections, topicMasteryV2, unifiedMockResults,
     pointsData, streak, settings, updateSetting,
     gamification, currentToast,
     setCurrentToast,
@@ -786,7 +791,7 @@ const App: React.FC = () => {
     <SettingsContext.Provider value={{ settings, updateSetting, unlockedThemes, unlockedCardStyles }}>
     <OfflineBanner />
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500">
-      {user && viewState !== 'onboarding' && !isSchoolStaff(user.role) && !user.isAdmin && (
+      {user && shouldShowStudentChrome(viewState) && !isSchoolStaff(user.role) && !user.isAdmin && (
         <div className={`fixed top-6 right-6 z-[100] ${viewState === 'my-journey' ? 'hidden' : 'hidden md:block'}`}>
           <div className="flex items-center gap-2">
             <div>
@@ -812,7 +817,7 @@ const App: React.FC = () => {
       {/* Mobile achievement toast — TrainingPulse removed on mobile per design feedback.
           AchievementToast still needs a mount point on mobile so it appears
           unobtrusively at top-left when a new achievement fires. */}
-      {user && viewState !== 'onboarding' && viewState !== 'module' && !isSchoolStaff(user.role) && !user.isAdmin && (
+      {user && shouldShowStudentChrome(viewState) && !isSchoolStaff(user.role) && !user.isAdmin && (
         <div className="fixed top-4 left-4 z-[100] md:hidden pointer-events-none">
           <div className="pointer-events-auto">
             <AchievementToast
@@ -833,7 +838,7 @@ const App: React.FC = () => {
         </>
       )}
 
-      {user && viewState !== 'onboarding' && viewState !== 'module' && !user.isAdmin && !isSchoolStaff(user.role) && (
+      {user && shouldShowStudentChrome(viewState) && !user.isAdmin && !isSchoolStaff(user.role) && (
         <MobileBottomNav
           viewState={viewState}
           onGoHome={handleGoHome}

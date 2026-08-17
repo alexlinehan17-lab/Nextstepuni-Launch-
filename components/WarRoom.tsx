@@ -51,6 +51,9 @@ interface WarRoomProps {
   todayBlocks?: WarRoomStudyBlock[];
   skippedSessions?: string[];
   onStudyNow?: (block: WarRoomStudyBlock) => void;
+  /** Compatibility entry for links that previously opened Syllabus X-Ray. */
+  initialMode?: WorkspaceMode;
+  initialReviewPanel?: ReviewPanelId;
 }
 
 type WorkspaceMode = 'focus' | 'review';
@@ -88,9 +91,11 @@ const WarRoom: React.FC<WarRoomProps> = ({
   todayBlocks,
   skippedSessions = [],
   onStudyNow,
+  initialMode = 'focus',
+  initialReviewPanel = 'subjects',
 }) => {
-  const [mode, setMode] = useState<WorkspaceMode>('focus');
-  const [reviewPanel, setReviewPanel] = useState<ReviewPanelId>('subjects');
+  const [mode, setMode] = useState<WorkspaceMode>(initialMode);
+  const [reviewPanel, setReviewPanel] = useState<ReviewPanelId>(initialReviewPanel);
   const [studySessions, setStudySessions] = useState<StudySessionRecord[]>([]);
   const [debriefs, setDebriefs] = useState<DebriefEntry[]>([]);
   const [sm2States, setSm2States] = useState<SubjectSM2State[]>([]);

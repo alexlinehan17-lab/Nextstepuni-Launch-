@@ -25,9 +25,9 @@ export const TOOL_GUIDANCE: Record<string, ToolGuidance> = {
   },
   'war-room': {
     bestWhen: 'you do not know what deserves attention first',
-    useWhen: 'You have time to study but are unsure which subject or topic will make the biggest difference.',
-    whatItDoes: 'Compares your targets, topic coverage, results and weekly plan to identify the strongest next move.',
-    outcome: 'One clear priority, the reason it matters and a session you can begin.',
+    useWhen: 'You have time to study but are unsure which subject or topic needs attention, or you want to check syllabus coverage.',
+    whatItDoes: 'Combines your cohort-specific syllabus map, confidence, targets, results and weekly plan in one workspace.',
+    outcome: 'One clear priority plus a trustworthy view of what is not started, shaky or solid.',
   },
   comeback: {
     bestWhen: 'a difficult week has knocked you off track',
@@ -46,12 +46,6 @@ export const TOOL_GUIDANCE: Record<string, ToolGuidance> = {
     useWhen: 'You want possible directions based on your interests, without being told there is only one right answer.',
     whatItDoes: 'Connects your interests with real CAO courses and related career possibilities.',
     outcome: 'A ranked set of possibilities worth researching, with points kept visible and honest.',
-  },
-  'syllabus-xray': {
-    bestWhen: 'you want to know which exam topics matter most',
-    useWhen: 'The syllabus feels enormous and you need to understand where exam marks actually come from.',
-    whatItDoes: 'Shows how topics are represented across the exam and where the most valuable revision opportunities sit.',
-    outcome: 'A more informed decision about which topic to revise first.',
   },
   'points-passport': {
     bestWhen: 'you want to understand your points and possible grade gains',
@@ -126,7 +120,7 @@ export const RECOMMENDATION_GOALS: RecommendationGoal[] = [
     options: [
       { id: 'today', label: 'Give me one priority for today', candidates: ['war-room', 'planner'] },
       { id: 'week', label: 'Build me a plan for the whole week', candidates: ['planner'] },
-      { id: 'marks', label: 'Show me which exam topics matter most', candidates: ['syllabus-xray', 'paper-trail'] },
+      { id: 'marks', label: 'Show me my syllabus gaps', candidates: ['war-room', 'paper-trail'] },
     ],
   },
   {
@@ -146,7 +140,8 @@ export const RECOMMENDATION_GOALS: RecommendationGoal[] = [
     options: [
       { id: 'paper', label: 'Find a real past-paper question', candidates: ['paper-trail'] },
       { id: 'marking', label: 'Learn where marks are won and lost', candidates: ['mark-bank', 'paper-trail'] },
-      { id: 'repeat', label: 'Practise and revisit my weak questions', candidates: ['mark-bank', 'paper-trail'] },
+      { id: 'access', label: 'Make a difficult question easier to enter', candidates: ['mark-bank', 'paper-trail'] },
+      { id: 'repeat', label: 'Practice and revisit my weak questions', candidates: ['mark-bank', 'paper-trail'] },
       { id: 'wording', label: 'Stop misreading command words', candidates: ['command-word-reflex'] },
     ],
   },
@@ -220,4 +215,3 @@ export function recommendTool(
     answerLabel: answer.label,
   };
 }
-

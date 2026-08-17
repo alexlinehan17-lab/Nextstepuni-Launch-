@@ -5,25 +5,32 @@
 
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import { MotionButton, MotionDiv, MotionPolygon, MotionSpan } from './Motion';
-import { ArrowRight, Lock } from 'lucide-react';
+import { MotionButton, MotionDiv, MotionSpan } from './Motion';
+import { ArrowRight, RotateCcw } from 'lucide-react';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { saveInBackground } from '../utils/firestoreWrite';
 import {
-    type GameState, type Choice, type HistoryItem, type StatKey, type Phase,
+    type GameState, type Choice, type HistoryItem, type StatKey, type CapabilityKey, type JourneyEvidence, type Phase,
     type Location,
     STORY_DATA, ROUTE_RESOLVERS, INITIAL_GAME_STATE, PHASE_METADATA,
-    ARCHETYPES, STAT_TO_MODULES, STAT_LABELS,
-    WEAKEST_STAT_INSIGHTS,
-    getStatGrade, getKeyTurningPoints, getWeakestStat,
+    ARCHETYPES, STAT_TO_MODULES, STAT_LABELS, CAPABILITY_KEYS, JOURNEY_SCORING_VERSION,
+    applyJourneyChoice, createJourneyEvidence, getKeyTurningPoints,
+    getStrongestCapability, getWeakestCapability, normaliseCapabilityImpact, normaliseEnergyImpact,
 } from './journeySimulatorData';
-import { EvidenceDisclosure, OutcomeSection, OutcomeShell } from './ui/OutcomePatterns';
-import { OutlinedSurface } from './ui/ProductPatterns';
 
 export interface JourneyResult {
   endingId: string;
   finalStats?: GameState;
+  completedAt?: string;
+  decisionsCount?: number;
+  scoringVersion?: number;
+  history?: Array<{
+    sceneId: string;
+    choiceText: string;
+    effects: Partial<GameState>;
+    moduleLink?: Choice['moduleLink'];
+  }>;
 }
 
 // ════════════════════════════════════════════════════════════════════════════
@@ -66,59 +73,6 @@ const PHASE_DISPLAY_SHORT: Record<Phase, string> = {
     'Pressure Cooker': 'Crunch',
     'Final Stretch': 'Final',
 };
-
-// Results artwork follows the same painted-blob + hand-drawn PNG language as
-// the Launchpad. Turning points choose an icon from their largest stat effect,
-// so every existing (and future) outcome has a deterministic visual.
-const RESULT_STAT_ART: Record<StatKey, { icon: string; blob: string; path: string }> = {
-    energy: {
-        icon: '/icons/modules/09-hourglass.png', blob: '#F1D6A3',
-        path: 'M 6 24 Q -2 52 8 78 Q 24 98 52 94 Q 86 90 94 62 Q 100 30 84 10 Q 60 -4 32 4 Q 12 12 6 24 Z',
-    },
-    academicCap: {
-        icon: '/icons/modules/02-brain.png', blob: '#BCCCE3',
-        path: 'M 4 28 Q 0 56 12 82 Q 28 100 56 96 Q 90 92 96 60 Q 100 28 82 8 Q 56 -6 30 6 Q 10 16 4 28 Z',
-    },
-    socialSupport: {
-        icon: '/icons/modules/11-heart.png', blob: '#E8C7C1',
-        path: 'M 8 22 Q 0 48 6 76 Q 20 96 50 96 Q 84 96 94 70 Q 100 40 84 14 Q 64 -2 36 4 Q 14 12 8 22 Z',
-    },
-    systemSavvy: {
-        icon: '/icons/modules/13-checklist.png', blob: '#B5D4CC',
-        path: 'M 6 22 Q -2 50 10 78 Q 26 98 56 94 Q 90 88 96 56 Q 100 24 80 6 Q 56 -6 28 6 Q 10 14 6 22 Z',
-    },
-    resilience: {
-        icon: '/icons/modules/03-shield.png', blob: '#D8CBE5',
-        path: 'M 4 26 Q 2 56 12 82 Q 26 98 52 96 Q 88 94 96 64 Q 100 34 84 10 Q 60 -4 30 6 Q 10 18 4 26 Z',
-    },
-};
-
-function dominantEffectStat(effects: Partial<GameState>, fallback: StatKey = 'resilience'): StatKey {
-    const entries = (Object.entries(effects) as [StatKey, number][]).filter(([, value]) => Number.isFinite(value));
-    if (!entries.length) return fallback;
-    return entries.reduce((best, entry) => Math.abs(entry[1]) > Math.abs(best[1]) ? entry : best)[0];
-}
-
-const ResultIconBlob: React.FC<{ stat: StatKey; size?: number; className?: string }> = ({ stat, size = 64, className }) => {
-    const art = RESULT_STAT_ART[stat];
-    return (
-        <div className={`relative shrink-0 ${className ?? ''}`} style={{ width: size, height: size }} aria-hidden>
-            <svg className="absolute inset-0 h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
-                <path d={art.path} fill={art.blob} opacity="0.82" />
-            </svg>
-            <img src={art.icon} alt="" className="absolute left-1/2 top-1/2 object-contain" style={{ width: '102%', height: '102%', transform: 'translate(-50%, -50%)' }} />
-        </div>
-    );
-};
-
-const ArchetypeMountainBlob: React.FC = () => (
-    <div className="relative hidden shrink-0 sm:block" style={{ width: 116, height: 106 }} aria-hidden>
-        <svg className="absolute inset-0 h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <path d="M 6 24 Q -2 52 8 78 Q 24 98 52 94 Q 86 90 94 62 Q 100 30 84 10 Q 60 -4 32 4 Q 12 12 6 24 Z" fill="#EFD9CD" opacity="0.82" />
-        </svg>
-        <img src="/assets/level-up/header-mountain.png" alt="" className="absolute object-contain" style={{ width: '118%', height: '118%', left: '-9%', top: '-9%' }} />
-    </div>
-);
 
 // ════════════════════════════════════════════════════════════════════════════
 // HAND-DRAWN SVG PRIMITIVES
@@ -430,38 +384,12 @@ const TypingText: React.FC<{ text: string; sceneId: string }> = ({ text, sceneId
 // ════════════════════════════════════════════════════════════════════════════
 
 const ChoiceButton: React.FC<{
-    choice: Choice; gameState: GameState; visitedScenes: string[];
+    choice: Choice;
     onChoose: (choice: Choice) => void; disabled?: boolean; chosen?: boolean;
     index?: number; phase: Phase;
-}> = ({ choice, gameState, visitedScenes, onChoose, disabled, chosen, index = 0, phase }) => {
-    const statRequirementsMet = !choice.requires || choice.requires.every(r => (r.min === undefined || gameState[r.stat] >= r.min) && (r.max === undefined || gameState[r.stat] <= r.max));
-    const visitRequirementsMet = !choice.requiresVisited || choice.requiresVisited.every(id => visitedScenes.includes(id));
-    const isLocked = !statRequirementsMet || !visitRequirementsMet;
+}> = ({ choice, onChoose, disabled, chosen, index = 0, phase }) => {
     const letter = String.fromCharCode(65 + index);
     const t = PHASE_TOKENS[phase];
-
-    if (isLocked) {
-        return (
-            <div className="px-4 py-3 mb-3" style={{ background: 'transparent', border: `1.5px dashed ${INK_MUTE}66`, borderRadius: 12 }}>
-                <div className="flex items-start gap-3">
-                    <span className="flex items-center justify-center shrink-0 mt-0.5" style={{
-                        width: 26, height: 26, borderRadius: '50%',
-                        border: `1.4px dashed ${INK_MUTE}aa`, color: INK_MUTE,
-                    }}>
-                        <Lock size={12} />
-                    </span>
-                    <div className="flex-1 min-w-0">
-                        <p className="text-[14px] italic" style={{ color: INK_MUTE }}>{choice.text}</p>
-                        {choice.requires && (
-                            <p className="text-[10px] mt-1 uppercase tracking-[0.15em] font-semibold" style={{ color: INK_MUTE }}>
-                                Requires: {choice.requires.map(r => `${STAT_LABELS[r.stat]} ${r.max !== undefined ? `≤${r.max}` : `${r.min}+`}`).join(', ')}
-                            </p>
-                        )}
-                    </div>
-                </div>
-            </div>
-        );
-    }
 
     if (disabled && !chosen) {
         return (
@@ -515,300 +443,262 @@ const ChoiceButton: React.FC<{
                     border: `1.4px solid ${t.ink}`, fontSize: 12,
                     transform: `rotate(${(index % 2 === 0 ? -1 : 1) * 1.2}deg)`,
                 }}>{letter}</span>
-                <div className="flex-1 min-w-0">
-                    <p className="text-[15px] leading-snug" style={{ color: INK }}>{choice.text}</p>
-                    {choice.flavor && <p className="text-[12px] mt-1 italic" style={{ color: INK_MUTE }}>{choice.flavor}</p>}
-                </div>
+                <p className="flex-1 min-w-0 text-[15px] leading-snug" style={{ color: INK }}>{choice.text}</p>
             </div>
         </MotionButton>
     );
 };
 
 // ════════════════════════════════════════════════════════════════════════════
-// PENTAGON RADAR — sketchy hand-drawn version
+// JOURNEY OUTCOME — product-native decision dashboard
 // ════════════════════════════════════════════════════════════════════════════
 
-const pentagonPoints = (cx: number, cy: number, r: number): string =>
-    Array.from({ length: 5 }, (_, i) => {
-        const angle = (Math.PI * 2 * i) / 5 - Math.PI / 2;
-        return `${cx + r * Math.cos(angle)},${cy + r * Math.sin(angle)}`;
-    }).join(' ');
+const RESULT_STAT_ORDER: CapabilityKey[] = [...CAPABILITY_KEYS];
+const RESULT_EFFECT_ORDER: StatKey[] = ['energy', ...CAPABILITY_KEYS];
 
-const statPentagonPoints = (stats: GameState, cx: number, cy: number, maxR: number): string => {
-    const keys = Object.keys(stats) as StatKey[];
-    return keys.map((stat, i) => {
-        const angle = (Math.PI * 2 * i) / 5 - Math.PI / 2;
-        const r = (stats[stat] / 100) * maxR;
-        return `${cx + r * Math.cos(angle)},${cy + r * Math.sin(angle)}`;
-    }).join(' ');
+const RESULT_NEXT_ACTION: Record<CapabilityKey, string> = {
+    academicCap: 'Replace passive review with retrieval practice and timed application.',
+    socialSupport: 'Bring one trusted person into the plan before pressure builds.',
+    systemSavvy: 'Map the deadlines, points and supports that can change your options.',
+    resilience: 'Pre-plan what you will do in the 24 hours after a setback.',
 };
 
-const SketchedRadar: React.FC<{ stats: GameState }> = ({ stats }) => {
-    const cx = 200, cy = 200, maxR = 130;
-    const sage = PHASE_TOKENS.Foundation.deep;
-    return (
-        <svg viewBox="0 0 400 400" className="w-full max-w-md h-auto">
-            {/* Concentric pentagons — sketched, slightly varied stroke */}
-            {[0.25, 0.5, 0.75, 1].map((scale, idx) => (
-                <polygon
-                    key={scale}
-                    points={pentagonPoints(cx, cy, maxR * scale)}
-                    fill="none"
-                    stroke={INK}
-                    strokeWidth={idx === 3 ? 1.2 : 0.7}
-                    strokeOpacity={idx === 3 ? 0.55 : 0.28}
-                    strokeLinejoin="round"
-                />
-            ))}
-            {/* Spokes */}
-            {Array.from({ length: 5 }).map((_, i) => {
-                const a = (Math.PI * 2 * i) / 5 - Math.PI / 2;
-                return <line key={i} x1={cx} y1={cy} x2={cx + maxR * Math.cos(a)} y2={cy + maxR * Math.sin(a)} stroke={INK} strokeWidth={0.6} strokeOpacity={0.22} />;
-            })}
-            {/* Stat polygon */}
-            <MotionPolygon
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1, points: statPentagonPoints(stats, cx, cy, maxR) }}
-                transition={{ duration: 1, ease: 'easeOut' }}
-                fill={`${sage}33`}
-                stroke={sage}
-                strokeWidth={2}
-                strokeLinejoin="round"
-            />
-            {/* Vertex dots in accent */}
-            {(Object.keys(stats) as StatKey[]).map((stat, i) => {
-                const angle = (Math.PI * 2 * i) / 5 - Math.PI / 2;
-                const px = cx + (stats[stat] / 100) * maxR * Math.cos(angle);
-                const py = cy + (stats[stat] / 100) * maxR * Math.sin(angle);
-                return <circle key={stat} cx={px} cy={py} r={3} fill={ACCENT} stroke={INK} strokeWidth={0.8} />;
-            })}
-            {/* Labels */}
-            {(Object.keys(stats) as StatKey[]).map((stat, i) => {
-                const angle = (Math.PI * 2 * i) / 5 - Math.PI / 2;
-                const lx = cx + (maxR + 28) * Math.cos(angle);
-                const ly = cy + (maxR + 28) * Math.sin(angle);
-                return (
-                    <g key={stat}>
-                        <text x={lx} y={ly - 6} textAnchor="middle" dominantBaseline="middle"
-                              fill={INK} className="font-serif" style={{ fontSize: 18, fontWeight: 700 }}>
-                            {getStatGrade(stats[stat]).letter}
-                        </text>
-                        <text x={lx} y={ly + 12} textAnchor="middle" dominantBaseline="middle"
-                              fill={INK_MUTE} style={{ fontSize: 10, letterSpacing: 0.5 }}>
-                            {STAT_LABELS[stat]}
-                        </text>
-                    </g>
-                );
-            })}
-        </svg>
-    );
+const formatSignedValue = (value: number): string => value > 0 ? `+${value}` : `${value}`;
+
+const formatEffects = (effects: Partial<GameState>): string => {
+    const entries = RESULT_EFFECT_ORDER
+        .filter(stat => typeof effects[stat] === 'number' && effects[stat] !== 0)
+        .map(stat => ({
+            stat,
+            value: stat === 'energy'
+                ? normaliseEnergyImpact(effects[stat] as number)
+                : normaliseCapabilityImpact(effects[stat] as number),
+        }))
+        .filter(({ value }) => value !== 0)
+        .sort((a, b) => Number(b.value > 0) - Number(a.value > 0))
+        .map(({ stat, value }) => `${formatSignedValue(value)} ${STAT_LABELS[stat]}`);
+    return entries.join(' · ') || 'No score change';
 };
-
-// ════════════════════════════════════════════════════════════════════════════
-// REPORT CARD — editorial reveal
-// ════════════════════════════════════════════════════════════════════════════
-
-// ── Product-native outcome ──────────────────────────────────────────────
 
 export const JourneyOutcomeReport: React.FC<{
     endingId: string;
     gameState: GameState;
     history: HistoryItem[];
+    decisionsCount?: number;
     onRestart: () => void;
     onSelectModule?: (moduleId: string) => void;
-}> = ({ endingId, gameState, history, onRestart, onSelectModule }) => {
+}> = ({ endingId, gameState, history, decisionsCount, onRestart, onSelectModule }) => {
     const archetype = ARCHETYPES[endingId];
     const endScene = STORY_DATA[endingId];
-    const strongest = strongestStat(gameState);
-    const weakest = getWeakestStat(gameState);
+    const strongestCapabilities = getStrongestCapability(gameState);
+    const weakestCapabilities = getWeakestCapability(gameState);
+    const strongest = strongestCapabilities[0];
+    const weakest = weakestCapabilities[0];
+    const strongestLabel = strongestCapabilities.map(stat => STAT_LABELS[stat]).join(' + ');
+    const weakestLabel = weakestCapabilities.map(stat => STAT_LABELS[stat]).join(' + ');
     const turningPoints = getKeyTurningPoints(history);
     const recommendedModules = STAT_TO_MODULES[weakest];
-    const defining = history.find(item => item.scene.mood === 'crisis') || history[Math.floor(history.length / 2)];
-
-    const pathsNotTaken: { sceneTitle: string; choiceText: string; requirement: string }[] = [];
-    for (const item of history) {
-        for (const alternative of item.scene.choices || []) {
-            if (alternative.text === item.choiceText || !alternative.requires) continue;
-            const meetsRequirements = alternative.requires.every(requirement =>
-                (requirement.min === undefined || gameState[requirement.stat] >= requirement.min)
-                && (requirement.max === undefined || gameState[requirement.stat] <= requirement.max));
-            if (!meetsRequirements) {
-                pathsNotTaken.push({
-                    sceneTitle: item.scene.title,
-                    choiceText: alternative.text,
-                    requirement: alternative.requires
-                        .map(requirement => `${STAT_LABELS[requirement.stat]} ${requirement.max !== undefined ? `≤${requirement.max}` : `${requirement.min}+`}`)
-                        .join(', '),
-                });
-            }
-        }
-    }
-
     const primaryModule = recommendedModules[0];
-    const outcomeTitle = archetype?.title || endScene?.title || 'Results Day';
-    const summary = archetype?.description || endScene?.text;
-    const pathGroups = (['Foundation', 'Pressure Cooker', 'Final Stretch'] as Phase[])
-        .map(phase => ({ phase, items: history.filter(item => item.scene.phase === phase) }))
-        .filter(group => group.items.length > 0);
+    const outcomeTitle = archetype?.title || endScene?.title || 'Your journey result';
+    const summary = endScene?.text || archetype?.description || 'Your choices created a distinct decision profile.';
+    const finalDecisionCount = decisionsCount ?? history.length;
 
     return (
-        <MotionDiv initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.32 }}>
-            <OutcomeShell
-                eyebrow="Your journey outcome"
-                title={outcomeTitle}
-                summary={summary}
-                illustration={<ArchetypeMountainBlob />}
-                metrics={[
-                    { label: `Strongest · ${STAT_LABELS[strongest]}`, value: getStatGrade(gameState[strongest]).letter, tone: 'success' },
-                    { label: `Growth · ${STAT_LABELS[weakest]}`, value: getStatGrade(gameState[weakest]).letter },
-                    { label: 'Decisions made', value: history.length || 'Saved' },
-                    { label: 'Turning points', value: turningPoints.length || '—', tone: turningPoints.length ? 'accent' : 'default' },
-                ]}
-                primaryAction={primaryModule && onSelectModule ? {
-                    label: `Open ${primaryModule.moduleTitle}`,
-                    onClick: () => onSelectModule(primaryModule.moduleId),
-                } : undefined}
-                secondaryAction={{ label: 'Try another path', onClick: onRestart }}
-            >
-                <OutcomeSection eyebrow="The central insight" title="What this journey says about you">
-                    <OutlinedSurface strong className="grid gap-5 p-5 sm:p-6 md:grid-cols-[1fr_240px] md:items-start">
-                        <div>
-                            <h4 className="font-serif text-[22px] font-semibold leading-snug text-[var(--ink-primary)]">
-                                Your {STAT_LABELS[strongest].toLowerCase()} is your strongest lever.
-                            </h4>
-                            <p className="mt-3 text-sm leading-relaxed text-[var(--ink-secondary)]">
-                                It carried you through pressure and protected your options. The next gain comes from pairing it with more deliberate work on {STAT_LABELS[weakest].toLowerCase()}.
-                            </p>
-                            {defining && (
-                                <div className="mt-5 border-t border-[var(--outline-soft)] pt-4">
-                                    <p className="text-[10px] font-bold uppercase tracking-[.16em] text-[var(--ink-muted)]">Defining decision · {defining.scene.month}</p>
-                                    <p className="mt-1.5 font-serif text-[16px] font-semibold text-[var(--ink-primary)]">{defining.scene.title}</p>
-                                    <p className="mt-1 text-sm text-[var(--ink-secondary)]">{defining.choiceText}</p>
-                                </div>
-                            )}
-                        </div>
-                        <div className="border-t border-[var(--outline-soft)] pt-5 md:border-l md:border-t-0 md:pl-5 md:pt-0">
-                            <p className="text-[10px] font-bold uppercase tracking-[.16em] text-[#A43F08]">Growth edge</p>
-                            <p className="mt-2 font-serif text-[19px] font-semibold text-[var(--ink-primary)]">{STAT_LABELS[weakest]}</p>
-                            <p className="mt-2 text-xs leading-relaxed text-[var(--ink-secondary)]">{WEAKEST_STAT_INSIGHTS[weakest]}</p>
-                        </div>
-                    </OutlinedSurface>
-                </OutcomeSection>
+        <MotionDiv
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.34, ease: editorialEase }}
+            className="pb-16 pt-3 text-[var(--ink-primary)]"
+        >
+            <header className="border-b border-[var(--outline-soft)] pb-7 sm:pb-9">
+                <div className="grid gap-7 lg:grid-cols-[minmax(0,1fr)_250px] lg:items-end lg:gap-12">
+                    <div className="max-w-[780px]">
+                        <p className="text-[10px] font-bold uppercase tracking-[.2em] text-[var(--ink-muted)]">Academic journey · outcome</p>
+                        <h1 className="mt-4 max-w-[720px] font-serif text-[clamp(2.5rem,6vw,5.4rem)] font-medium leading-[.94] tracking-[-.045em] text-[var(--ink-primary)]">
+                            {outcomeTitle}
+                        </h1>
+                        <p className="mt-5 max-w-[690px] text-[15px] leading-7 text-[var(--ink-secondary)] sm:text-base">
+                            {summary}
+                        </p>
+                    </div>
+                    <div className="border-l-2 border-[#F26B1F] pl-4 lg:mb-1">
+                        <p className="text-[10px] font-bold uppercase tracking-[.18em] text-[var(--ink-muted)]">Your clearest signal</p>
+                        <p className="mt-2 font-serif text-[26px] font-semibold leading-tight text-[var(--ink-primary)]">{strongestLabel}</p>
+                        <p className="mt-1 text-sm text-[var(--ink-secondary)]">The quality your choices relied on most.</p>
+                    </div>
+                </div>
 
-                <OutcomeSection eyebrow="Recommended next" title="Turn the result into action">
-                    <div className="grid gap-3 sm:grid-cols-2">
-                        {recommendedModules.map((module, index) => (
+                <dl className="mt-8 grid border-y border-[var(--outline-soft)] sm:grid-cols-2 lg:grid-cols-4 lg:divide-x lg:divide-[var(--outline-soft)]">
+                    <div className="flex items-baseline justify-between gap-5 border-b border-[var(--outline-soft)] py-4 sm:block sm:border-b-0 sm:px-5 sm:first:pl-0">
+                        <dt className="text-[10px] font-bold uppercase tracking-[.16em] text-[var(--ink-muted)]">Strongest signal</dt>
+                        <dd className="sm:mt-2">
+                            <span className="font-serif text-xl font-semibold text-[var(--ink-primary)]">{strongestLabel}</span>
+                            <span className="ml-2 font-mono text-xs text-[var(--ink-muted)]">{gameState[strongest]}/100</span>
+                        </dd>
+                    </div>
+                    <div className="flex items-baseline justify-between gap-5 border-b border-[var(--outline-soft)] py-4 sm:block sm:border-b-0 sm:px-5">
+                        <dt className="text-[10px] font-bold uppercase tracking-[.16em] text-[var(--ink-muted)]">Build next</dt>
+                        <dd className="sm:mt-2">
+                            <span className="font-serif text-xl font-semibold text-[var(--ink-primary)]">{weakestLabel}</span>
+                            <span className="ml-2 font-mono text-xs text-[var(--ink-muted)]">{gameState[weakest]}/100</span>
+                        </dd>
+                    </div>
+                    <div className="flex items-baseline justify-between gap-5 border-b border-[var(--outline-soft)] py-4 sm:block sm:border-b-0 sm:px-5">
+                        <dt className="text-[10px] font-bold uppercase tracking-[.16em] text-[var(--ink-muted)]">Energy reserve</dt>
+                        <dd className="font-serif text-xl font-semibold text-[var(--ink-primary)] sm:mt-2">{gameState.energy}<span className="ml-1 font-mono text-xs font-normal text-[var(--ink-muted)]">/100</span></dd>
+                    </div>
+                    <div className="flex items-baseline justify-between gap-5 py-4 sm:block sm:px-5">
+                        <dt className="text-[10px] font-bold uppercase tracking-[.16em] text-[var(--ink-muted)]">Choices made</dt>
+                        <dd className="font-serif text-xl font-semibold text-[var(--ink-primary)] sm:mt-2">{finalDecisionCount || '—'}</dd>
+                    </div>
+                </dl>
+            </header>
+
+            <div className="mt-6 grid gap-6 lg:grid-cols-12">
+                <section aria-labelledby="journey-profile-title" className="overflow-hidden rounded-[18px] border border-[var(--outline-soft)] bg-[var(--surface-paper)] lg:col-span-7">
+                    <div className="border-b border-[var(--outline-soft)] px-5 py-5 sm:px-6">
+                        <p className="text-[10px] font-bold uppercase tracking-[.18em] text-[var(--ink-muted)]">Four capability readout</p>
+                        <div className="mt-2 flex flex-wrap items-end justify-between gap-3">
+                            <h2 id="journey-profile-title" className="font-serif text-[26px] font-semibold leading-tight text-[var(--ink-primary)]">Your decision profile</h2>
+                            <p className="text-xs text-[var(--ink-muted)]">Final score · change from start</p>
+                        </div>
+                    </div>
+
+                    <div role="img" aria-label="Academic journey decision profile" className="px-5 py-4 sm:px-6 sm:py-5">
+                        {RESULT_STAT_ORDER.map((stat, index) => {
+                            const value = gameState[stat];
+                            const delta = value - INITIAL_GAME_STATE[stat];
+                            const isStrongest = strongestCapabilities.includes(stat);
+                            const isWeakest = weakestCapabilities.includes(stat);
+                            return (
+                                <div key={stat} className={`py-4 ${index ? 'border-t border-[var(--outline-soft)]' : ''}`}>
+                                    <div className="flex items-center justify-between gap-4">
+                                        <div className="flex min-w-0 items-baseline gap-2">
+                                            <span className="truncate text-sm font-semibold text-[var(--ink-primary)]">{STAT_LABELS[stat]}</span>
+                                            {isStrongest && <span className="hidden text-[9px] font-bold uppercase tracking-[.12em] text-[#C55212] sm:inline">Strongest</span>}
+                                            {isWeakest && !isStrongest && <span className="hidden text-[9px] font-bold uppercase tracking-[.12em] text-[var(--ink-muted)] sm:inline">Build next</span>}
+                                        </div>
+                                        <div className="shrink-0 font-mono text-xs">
+                                            <span className="font-bold text-[var(--ink-primary)]">{value}</span>
+                                            <span className="ml-2 text-[var(--ink-muted)]">{formatSignedValue(delta)}</span>
+                                        </div>
+                                    </div>
+                                    <div className="mt-2.5 h-2 overflow-hidden rounded-full bg-[var(--surface-soft)]">
+                                        <MotionDiv
+                                            initial={{ width: 0 }}
+                                            animate={{ width: `${Math.max(2, Math.min(100, value))}%` }}
+                                            transition={{ duration: 0.7, delay: 0.06 * index, ease: editorialEase }}
+                                            className="h-full rounded-full"
+                                            style={{ background: isStrongest ? '#F26B1F' : isWeakest ? 'var(--ink-primary)' : 'var(--ink-muted)' }}
+                                        />
+                                    </div>
+                                </div>
+                            );
+                        })}
+                    </div>
+                    <div className="border-t border-[var(--outline-soft)] bg-[var(--surface-soft)] px-5 py-3 sm:px-6">
+                        <p className="text-[11px] leading-relaxed text-[var(--ink-muted)]">Capability scores compare the evidence available on your route, so longer paths do not automatically score higher. They are reflective signals, not grades or predictions.</p>
+                    </div>
+                </section>
+
+                <section aria-labelledby="journey-next-title" className="flex flex-col rounded-[18px] border-[1.5px] border-[var(--outline-strong)] bg-[var(--surface-paper)] lg:col-span-5">
+                    <div className="px-5 py-5 sm:px-6 sm:py-6">
+                        <p className="text-[10px] font-bold uppercase tracking-[.18em] text-[#C55212]">Recommended next</p>
+                        <h2 id="journey-next-title" className="mt-2 font-serif text-[30px] font-semibold leading-tight text-[var(--ink-primary)]">Build {weakestLabel}</h2>
+                        <p className="mt-3 text-sm leading-6 text-[var(--ink-secondary)]">{RESULT_NEXT_ACTION[weakest]}</p>
+                        <div className="mt-5 border-t border-[var(--outline-soft)] pt-4">
+                            <div className="flex items-center justify-between gap-4">
+                                <p className="text-[10px] font-bold uppercase tracking-[.16em] text-[var(--ink-muted)]">Energy reserve</p>
+                                <p className="font-mono text-xs font-bold text-[var(--ink-primary)]">{gameState.energy}/100</p>
+                            </div>
+                            <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-[var(--surface-soft)]">
+                                <div className="h-full rounded-full bg-[#F26B1F]" style={{ width: `${Math.max(2, Math.min(100, gameState.energy))}%` }} />
+                            </div>
+                            <p className="mt-2 text-[11px] leading-relaxed text-[var(--ink-muted)]">Energy is a changing resource, shown separately from your capabilities. Protect sleep and recovery before adding more study hours.</p>
+                        </div>
+                    </div>
+
+                    <div className="mt-auto border-t border-[var(--outline-soft)] px-5 py-5 sm:px-6">
+                        <p className="text-[10px] font-bold uppercase tracking-[.16em] text-[var(--ink-muted)]">Start with</p>
+                        {primaryModule && (
+                            <button
+                                type="button"
+                                onClick={() => onSelectModule?.(primaryModule.moduleId)}
+                                disabled={!onSelectModule}
+                                className="group mt-3 flex min-h-12 w-full items-center justify-between gap-4 rounded-xl bg-[#F26B1F] px-4 py-3 text-left text-sm font-bold text-white transition-transform hover:-translate-y-0.5 disabled:cursor-default disabled:hover:translate-y-0"
+                            >
+                                <span>Start with {primaryModule.moduleTitle}</span>
+                                <ArrowRight size={17} className="shrink-0 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                            </button>
+                        )}
+                        {recommendedModules.slice(1).map(module => (
                             <button
                                 key={module.moduleId}
                                 type="button"
                                 onClick={() => onSelectModule?.(module.moduleId)}
                                 disabled={!onSelectModule}
-                                className="group flex min-h-[92px] items-center justify-between gap-5 rounded-2xl border border-[var(--outline-soft)] bg-[var(--surface-paper)] p-5 text-left transition-all hover:-translate-y-0.5 hover:border-[var(--outline-strong)] disabled:cursor-default disabled:hover:translate-y-0"
+                                className="group mt-2 flex min-h-11 w-full items-center justify-between gap-4 rounded-xl border border-[var(--outline-soft)] px-4 py-3 text-left text-xs font-semibold text-[var(--ink-secondary)] transition-colors hover:border-[var(--outline-strong)] hover:text-[var(--ink-primary)] disabled:cursor-default"
                             >
-                                <span>
-                                    <span className="block text-[10px] font-bold uppercase tracking-[.16em] text-[var(--ink-muted)]">{index === 0 ? 'Start here' : 'Then build'}</span>
-                                    <span className="mt-1.5 block font-serif text-[17px] font-semibold text-[var(--ink-primary)]">{module.moduleTitle}</span>
-                                </span>
-                                <ArrowRight size={18} className="shrink-0 text-[#F26B1F] transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                                <span>{module.moduleTitle}</span>
+                                <ArrowRight size={15} className="shrink-0 transition-transform group-hover:translate-x-1" aria-hidden="true" />
                             </button>
                         ))}
                     </div>
-                </OutcomeSection>
+                </section>
+            </div>
 
-                <OutcomeSection eyebrow="Supporting evidence" title="Understand the result">
-                    <OutlinedSurface className="overflow-hidden px-5 sm:px-6">
-                        <EvidenceDisclosure summary="Your five scores" description="The full profile behind your archetype." defaultOpen>
-                            <div className="grid gap-6 md:grid-cols-[.9fr_1.1fr] md:items-center">
-                                <div className="mx-auto w-full max-w-[290px]"><SketchedRadar stats={gameState} /></div>
-                                <div className="space-y-1">
-                                    {(Object.keys(gameState) as StatKey[]).map(stat => (
-                                        <div key={stat} className="grid grid-cols-[1fr_auto] items-center gap-4 border-b border-[var(--outline-soft)] py-3 last:border-b-0">
-                                            <span className="text-sm text-[var(--ink-secondary)]">{STAT_LABELS[stat]}</span>
-                                            <span className="font-mono text-xs font-bold text-[var(--ink-primary)]">{getStatGrade(gameState[stat]).letter} · {gameState[stat]}</span>
-                                        </div>
-                                    ))}
+            {turningPoints.length > 0 && (
+                <section aria-labelledby="journey-decisions-title" className="mt-6 overflow-hidden rounded-[18px] border border-[var(--outline-soft)] bg-[var(--surface-paper)]">
+                    <div className="border-b border-[var(--outline-soft)] px-5 py-5 sm:px-6">
+                        <p className="text-[10px] font-bold uppercase tracking-[.18em] text-[var(--ink-muted)]">What moved the result</p>
+                        <h2 id="journey-decisions-title" className="mt-2 font-serif text-[26px] font-semibold leading-tight text-[var(--ink-primary)]">Decisions that shaped the result</h2>
+                    </div>
+                    <div className="hidden grid-cols-[minmax(150px,.8fr)_minmax(240px,1.5fr)_minmax(170px,1fr)] gap-6 border-b border-[var(--outline-soft)] bg-[var(--surface-soft)] px-6 py-3 text-[9px] font-bold uppercase tracking-[.16em] text-[var(--ink-muted)] sm:grid" aria-hidden="true">
+                        <span>Moment</span><span>Your decision</span><span>Profile shift</span>
+                    </div>
+                    <ol className="divide-y divide-[var(--outline-soft)] px-5 sm:px-6">
+                        {turningPoints.map((item, index) => (
+                            <li key={`${item.scene.id}-${index}`} className="grid gap-3 py-5 sm:grid-cols-[minmax(150px,.8fr)_minmax(240px,1.5fr)_minmax(170px,1fr)] sm:gap-6">
+                                <div>
+                                    <p className="text-[9px] font-bold uppercase tracking-[.14em] text-[var(--ink-muted)]">{item.scene.month}</p>
+                                    <p className="mt-1 font-serif text-[16px] font-semibold leading-snug text-[var(--ink-primary)]">{item.scene.title}</p>
                                 </div>
-                            </div>
-                        </EvidenceDisclosure>
+                                <p className="text-sm leading-6 text-[var(--ink-secondary)]">{item.choiceText}</p>
+                                <p className="font-mono text-[11px] leading-5 text-[var(--ink-secondary)]">{formatEffects(item.effects)}</p>
+                            </li>
+                        ))}
+                    </ol>
+                </section>
+            )}
 
-                        <EvidenceDisclosure
-                            summary="How you got here"
-                            description={history.length ? `${history.length} decisions across your final-year journey.` : 'Decision history is available after a new playthrough.'}
-                        >
-                            {pathGroups.length ? (
-                                <div className="space-y-6">
-                                    {pathGroups.map(group => (
-                                        <div key={group.phase}>
-                                            <p className="text-[10px] font-bold uppercase tracking-[.16em]" style={{ color: PHASE_TOKENS[group.phase].deep }}>{PHASE_DISPLAY[group.phase]}</p>
-                                            <div className="mt-2 divide-y divide-[var(--outline-soft)]">
-                                                {group.items.map((item, index) => (
-                                                    <div key={`${item.scene.title}-${index}`} className="grid gap-1 py-3 sm:grid-cols-[170px_1fr] sm:gap-5">
-                                                        <span className="font-serif text-sm font-semibold text-[var(--ink-primary)]">{item.scene.title}</span>
-                                                        <span className="text-xs leading-relaxed text-[var(--ink-secondary)]">{item.choiceText}</span>
-                                                    </div>
-                                                ))}
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                            ) : <p className="text-sm text-[var(--ink-muted)]">Play the journey again to create a complete decision record.</p>}
-                        </EvidenceDisclosure>
-
-                        {turningPoints.length > 0 && (
-                            <EvidenceDisclosure summary="Key turning points" description="The moments that changed your direction most.">
-                                <div className="space-y-3">
-                                    {turningPoints.map((item, index) => (
-                                        <div key={`${item.scene.title}-${index}`} className="flex items-start gap-4 rounded-xl bg-[var(--surface-soft)] p-4">
-                                            <ResultIconBlob stat={dominantEffectStat(item.effects)} size={46} />
-                                            <div>
-                                                <p className="text-[10px] font-bold uppercase tracking-[.14em] text-[var(--ink-muted)]">{item.scene.month}</p>
-                                                <p className="mt-1 font-serif text-[16px] font-semibold text-[var(--ink-primary)]">{item.scene.title}</p>
-                                                <p className="mt-1 text-xs leading-relaxed text-[var(--ink-secondary)]">{item.choiceText}</p>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </EvidenceDisclosure>
-                        )}
-
-                        {pathsNotTaken.length > 0 && (
-                            <EvidenceDisclosure summary="Paths not taken" description="Alternatives your final profile left out of reach.">
-                                <div className="space-y-3">
-                                    {pathsNotTaken.slice(0, 3).map((path, index) => (
-                                        <div key={`${path.sceneTitle}-${index}`} className="flex items-start gap-3 border-b border-[var(--outline-soft)] pb-3 last:border-0">
-                                            <Lock size={15} className="mt-0.5 shrink-0 text-[var(--ink-muted)]" aria-hidden="true" />
-                                            <div>
-                                                <p className="text-xs font-semibold text-[var(--ink-primary)]">{path.sceneTitle}</p>
-                                                <p className="mt-1 font-serif text-sm italic text-[var(--ink-secondary)]">{path.choiceText}</p>
-                                                <p className="mt-1 text-[10px] uppercase tracking-[.12em] text-[var(--ink-muted)]">Required: {path.requirement}</p>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </EvidenceDisclosure>
-                        )}
-                    </OutlinedSurface>
-                </OutcomeSection>
-            </OutcomeShell>
+            <footer className="mt-6 flex flex-col gap-5 border-y border-[var(--outline-soft)] py-5 sm:flex-row sm:items-center sm:justify-between">
+                <div className="max-w-[650px]">
+                    <p className="font-serif text-lg font-semibold text-[var(--ink-primary)]">A reflection, not a forecast.</p>
+                    <p className="mt-1 text-xs leading-relaxed text-[var(--ink-muted)]">This result reflects the choices made in one simulation. A different route can produce a different profile.</p>
+                </div>
+                <button
+                    type="button"
+                    onClick={onRestart}
+                    className="inline-flex min-h-11 shrink-0 items-center justify-center gap-2 rounded-xl border-[1.5px] border-[var(--outline-strong)] bg-[var(--surface-paper)] px-4 text-xs font-bold text-[var(--ink-primary)] transition-transform hover:-translate-y-0.5"
+                >
+                    <RotateCcw size={15} aria-hidden="true" />
+                    Explore another route
+                </button>
+            </footer>
         </MotionDiv>
     );
 };
 
 const ReportCard = JourneyOutcomeReport;
 
-// Helper: pick the strongest stat (mirrors getWeakestStat)
-function strongestStat(state: GameState): StatKey {
-    const keys: StatKey[] = ['energy', 'academicCap', 'socialSupport', 'systemSavvy', 'resilience'];
-    return keys.reduce((best, k) => state[k] > state[best] ? k : best, keys[0]);
-}
-
 // ════════════════════════════════════════════════════════════════════════════
 // MAIN COMPONENT
 // ════════════════════════════════════════════════════════════════════════════
 
 const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => void; user?: { uid: string } | null; savedJourneyResult?: JourneyResult | null; onJourneyComplete?: (result: JourneyResult) => void }> = ({ onSelectModule, user, savedJourneyResult, onJourneyComplete }) => {
+    const currentSavedResult = savedJourneyResult?.scoringVersion === JOURNEY_SCORING_VERSION ? savedJourneyResult : null;
     const [gameState, setGameState] = useState<GameState>({ ...INITIAL_GAME_STATE });
-    const [_prevState, setPrevState] = useState<GameState>({ ...INITIAL_GAME_STATE });
+    const [journeyEvidence, setJourneyEvidence] = useState<JourneyEvidence>(() => createJourneyEvidence());
     const [currentSceneId, setCurrentSceneId] = useState('START');
     const [history, setHistory] = useState<HistoryItem[]>([]);
     const [visitedScenes, setVisitedScenes] = useState<string[]>(['START']);
@@ -817,8 +707,8 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
     const [pendingSceneId, setPendingSceneId] = useState<string | null>(null);
     const [chosenText, setChosenText] = useState<string | null>(null);
     const [lastModuleLink, setLastModuleLink] = useState<Choice['moduleLink'] | null>(null);
-    const [previousResult, setPreviousResult] = useState<{ endingId: string; completedAt?: string; finalStats?: GameState } | null>(savedJourneyResult || null);
-    const [showingSavedResult, setShowingSavedResult] = useState(!!savedJourneyResult);
+    const [previousResult, setPreviousResult] = useState<JourneyResult | null>(currentSavedResult);
+    const [showingSavedResult, setShowingSavedResult] = useState(!!currentSavedResult);
     const hasSavedRef = useRef(false);
     const overlayTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -834,7 +724,7 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
                 if (cancelled) return;
                 if (progressDoc.exists()) {
                     const data = progressDoc.data();
-                    if (data['journey-simulator']?.endingId) {
+                    if (data['journey-simulator']?.endingId && data['journey-simulator']?.scoringVersion === JOURNEY_SCORING_VERSION) {
                         setPreviousResult(data['journey-simulator']);
                         setShowingSavedResult(true);
                     }
@@ -848,7 +738,20 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
     useEffect(() => {
         if (!isEndScene || hasSavedRef.current) return;
         hasSavedRef.current = true;
-        const result = { endingId: currentSceneId, finalStats: gameState };
+        const completedAt = new Date().toISOString();
+        const result: JourneyResult = {
+            endingId: currentSceneId,
+            finalStats: gameState,
+            completedAt,
+            decisionsCount: history.length,
+            scoringVersion: JOURNEY_SCORING_VERSION,
+            history: history.map(item => ({
+                sceneId: item.scene.id,
+                choiceText: item.choiceText,
+                effects: item.effects,
+                ...(item.moduleLink ? { moduleLink: item.moduleLink } : {}),
+            })),
+        };
         setPreviousResult(result);
         onJourneyComplete?.(result);
         if (user?.uid) {
@@ -856,30 +759,40 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
             saveInBackground(
                 setDoc(progressDocRef, {
                     'journey-simulator': {
-                        completedAt: new Date().toISOString(),
+                        completedAt,
                         endingId: currentSceneId,
                         finalStats: gameState,
                         decisionsCount: history.length,
+                        scoringVersion: JOURNEY_SCORING_VERSION,
+                        history: history.map(item => ({
+                            sceneId: item.scene.id,
+                            choiceText: item.choiceText,
+                            effects: item.effects,
+                            ...(item.moduleLink ? { moduleLink: item.moduleLink } : {}),
+                        })),
                     }
                 }, { merge: true }),
                 'AcademicJourneyGame.saveResult',
             );
         }
-    }, [isEndScene, user?.uid, currentSceneId, gameState, history.length]);
+    }, [isEndScene, user?.uid, currentSceneId, gameState, history, onJourneyComplete]);
 
     const handleChoice = useCallback((choice: Choice) => {
         const currentChoiceScene = STORY_DATA[currentSceneId];
-        const newGameState = { ...gameState };
-        for (const [key, value] of Object.entries(choice.effects)) {
-            newGameState[key as StatKey] = Math.max(0, Math.min(100, newGameState[key as StatKey] + value));
-        }
+        const scoringUpdate = applyJourneyChoice(
+            gameState,
+            journeyEvidence,
+            choice,
+            currentChoiceScene.choices || [choice],
+        );
+        const newGameState = scoringUpdate.state;
         const newHistoryItem: HistoryItem = {
             scene: currentChoiceScene, choiceText: choice.text, effects: choice.effects, moduleLink: choice.moduleLink,
         };
         const newHistory = [...history, newHistoryItem];
         setHistory(newHistory);
-        setPrevState(gameState);
         setGameState(newGameState);
+        setJourneyEvidence(scoringUpdate.evidence);
 
         let targetSceneId = choice.nextSceneId;
         while (targetSceneId.startsWith('__') && ROUTE_RESOLVERS[targetSceneId]) {
@@ -905,7 +818,7 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
                 setPendingSceneId(null);
             }
         }, 2500);
-    }, [currentSceneId, gameState, history]);
+    }, [currentSceneId, gameState, history, journeyEvidence]);
 
     const handlePhaseTransitionComplete = useCallback(() => {
         setShowPhaseTransition(false);
@@ -914,7 +827,7 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
 
     const restartGame = useCallback(() => {
         setGameState({ ...INITIAL_GAME_STATE });
-        setPrevState({ ...INITIAL_GAME_STATE });
+        setJourneyEvidence(createJourneyEvidence());
         setCurrentSceneId('START');
         setHistory([]);
         setVisitedScenes(['START']);
@@ -930,11 +843,20 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
     // ── Saved result screen ─────────────────────────────────────────────────
     if (showingSavedResult && previousResult?.endingId && ARCHETYPES[previousResult.endingId]) {
         const savedStats = previousResult.finalStats || { ...INITIAL_GAME_STATE };
+        const savedHistory: HistoryItem[] = (previousResult.history ?? [])
+            .filter(item => Boolean(STORY_DATA[item.sceneId]))
+            .map(item => ({
+                scene: STORY_DATA[item.sceneId],
+                choiceText: item.choiceText,
+                effects: item.effects,
+                moduleLink: item.moduleLink,
+            }));
         return (
             <ReportCard
                 endingId={previousResult.endingId}
                 gameState={savedStats}
-                history={[]}
+                history={savedHistory}
+                decisionsCount={previousResult.decisionsCount}
                 onRestart={() => { setShowingSavedResult(false); restartGame(); }}
                 onSelectModule={onSelectModule}
             />
@@ -942,7 +864,7 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
     }
 
     if (isEndScene) {
-        return <ReportCard endingId={currentSceneId} gameState={gameState} history={history} onRestart={restartGame} onSelectModule={onSelectModule} />;
+        return <ReportCard endingId={currentSceneId} gameState={gameState} history={history} decisionsCount={history.length} onRestart={restartGame} onSelectModule={onSelectModule} />;
     }
 
     if (showPhaseTransition) {
@@ -1044,8 +966,6 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
                                     <ChoiceButton
                                         key={index}
                                         choice={choice}
-                                        gameState={gameState}
-                                        visitedScenes={visitedScenes}
                                         onChoose={handleChoice}
                                         disabled={!!chosenText}
                                         chosen={chosenText === choice.text}

@@ -4,7 +4,7 @@
  */
 
 import React, { createContext, useContext, useState, useEffect, useRef, useCallback, useMemo } from 'react';
-import { type UserProgress, type NorthStar, type TopicMasteryMap, type TopicMasteryV2, type UnifiedMockResult } from '../types';
+import { type UserProgress, type NorthStar, type StudyReflection, type TopicMasteryMap, type TopicMasteryV2, type UnifiedMockResult } from '../types';
 import { type StudentSubjectProfile } from '../components/subjectData';
 import { computeStreak } from '../components/timetableAlgorithm';
 import { lastActiveDateFrom } from '../utils/weekDates';
@@ -20,6 +20,7 @@ import {
 } from '../services/progressRepository';
 import { migrateTopicMastery } from '../services/topicMasteryMigration';
 import { reconcileMockResults } from '../services/mockResultsRepository';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
 
 // ─── Types ──────────────────────────────────────────────────
 
@@ -77,6 +78,7 @@ interface ProgressContextValue {
   // schema can evolve without breaking every consumer.
   studySessions: StudySessionRecord[];
   studyDebriefs: DebriefEntry[];
+  studyReflections: StudyReflection[];
   topicMastery: TopicMasteryMap | undefined;
   /** Canonical, specification-scoped mastery. New decision logic must use this. */
   topicMasteryV2: TopicMasteryV2;
@@ -209,6 +211,7 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   // refresh every cherry-picked field that came from loadedData.
   useEffect(() => {
     if (reloadVersion === 0 || !user?.uid) return;
+    if (user.uid === DEMO_STUDENT_UID) return;
     let cancelled = false;
     getProgressDocument(user.uid).then(pd => {
       if (cancelled) return;
@@ -235,6 +238,10 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       setSessionsFromSubcollection([]);
       return;
     }
+    if (user.uid === DEMO_STUDENT_UID) {
+      setSessionsFromSubcollection([]);
+      return;
+    }
     let cancelled = false;
     getStudySessions(user.uid)
       .then(records => {
@@ -251,8 +258,11 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   // studySessions is sourced from the /progress/{uid}/sessions subcollection
   // (loaded by the effect above). The legacy rawProgressDoc.studySessions
   // array is no longer written to and is ignored here.
-  const studySessions = sessionsFromSubcollection;
+  const studySessions = user?.uid === DEMO_STUDENT_UID
+    ? rawProgressDoc.studySessions ?? []
+    : sessionsFromSubcollection;
   const studyDebriefs: DebriefEntry[] = rawProgressDoc.studyDebriefs ?? [];
+  const studyReflections: StudyReflection[] = rawProgressDoc.reflections ?? [];
   const topicMastery: TopicMasteryMap | undefined = rawProgressDoc.topicMastery ?? undefined;
   const topicMasteryV2 = useMemo(
     () => rawProgressDoc.topicMasteryV2?.schemaVersion === 2
@@ -288,6 +298,7 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     progressLoaded,
     studySessions,
     studyDebriefs,
+    studyReflections,
     topicMastery,
     topicMasteryV2,
     unifiedMockResults,

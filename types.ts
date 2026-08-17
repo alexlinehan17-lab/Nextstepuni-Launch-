@@ -9,6 +9,9 @@ export type ModuleProgress = {
   unlockedSection: number;
 };
 
+/** The five-point confidence scale captured after a study session. */
+export type StudyConfidenceLabel = 'lost' | 'shaky' | 'okay' | 'good' | 'confident';
+
 export type UserProgress = {
   [moduleId: string]: ModuleProgress;
 };
@@ -66,6 +69,10 @@ export interface StudyReflection {
   reflection: string;
   pointsEarned: number;
   timestamp: number;
+  /** Structured analytics fields. Optional so historic reflections still load. */
+  confidenceAfter?: number;
+  confidenceLabel?: StudyConfidenceLabel;
+  reflectionMode?: 'quick' | 'full';
 }
 
 export interface PointsData {

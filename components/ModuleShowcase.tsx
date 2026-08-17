@@ -26,6 +26,7 @@
 import React, { useState, useCallback, useEffect, useRef } from 'react';
 import { motion, AnimatePresence, LayoutGroup } from 'framer-motion';
 import { CheckCircle2, ChevronDown, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Capacitor } from '@capacitor/core';
 import { type CourseData } from './Library';
 import { MODULE_SECTIONS, type SectionInfo } from '../moduleSections';
 import { SUBJECT_MODULE_CONTENT } from '../subjectModuleData';
@@ -67,6 +68,7 @@ const WORLD_THEMES: Record<string, WorldTheme> = {
 const FALLBACK_THEME: WorldTheme = WORLD_THEMES['architecture-mindset'];
 
 const CARD_WIDTH = 280; // px — matches w-[280px] used on carousel cards
+const IS_NATIVE_IOS = Capacitor.getPlatform() === 'ios';
 
 // ── Section helpers ────────────────────────────────────────────────────
 function getSectionsForModule(moduleId: string, sectionsCount: number): SectionInfo[] {
@@ -181,6 +183,90 @@ export default function ModuleShowcase({
   const scrollByCard = (dir: 1 | -1) => {
     scrollRef.current?.scrollBy({ left: dir * (CARD_WIDTH + 12), behavior: 'smooth' });
   };
+
+  if (IS_NATIVE_IOS) {
+    return (
+      <div className="w-full max-w-xl px-1">
+        <div className="mb-5">
+          <div className="flex items-center gap-3">
+            <div className="flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-2xl" style={{ background: `${theme.blob}38` }}>
+              <WorldIconBlob world={theme.worldKey} size={76} compact />
+            </div>
+            <div className="min-w-0">
+              <p className="font-mono text-[10px] font-bold uppercase tracking-[0.2em]" style={{ color: theme.mid }}>
+                {theme.number} · {theme.worldName}
+              </p>
+              <h2 className="mt-1 font-serif text-[27px] font-medium leading-none tracking-tight text-[#1A1A1A] dark:text-white">
+                Choose a module
+              </h2>
+            </div>
+          </div>
+          <p className="mt-3 text-[13px] leading-relaxed text-zinc-600 dark:text-zinc-300">
+            Tap any module to open it. Your next section is saved automatically.
+          </p>
+        </div>
+
+        <div className="space-y-3">
+          {courses.map((item, index) => {
+            const itemProgress = userProgress[item.id];
+            const completedSections = Math.min(itemProgress?.unlockedSection ?? 0, item.sectionsCount);
+            const itemCompleted = completedSections >= item.sectionsCount;
+            const itemInProgress = completedSections > 0 && !itemCompleted;
+            const percent = item.sectionsCount > 0
+              ? Math.round((completedSections / item.sectionsCount) * 100)
+              : 0;
+            const status = itemCompleted
+              ? 'Complete'
+              : itemInProgress
+                ? `Continue · ${percent}%`
+                : `${item.sectionsCount} sections`;
+
+            return (
+              <button
+                key={item.id}
+                type="button"
+                onClick={() => onSelectCourse(item.id)}
+                className="group w-full rounded-[20px] border bg-white p-4 text-left shadow-[0_2px_10px_rgba(0,0,0,0.04)] transition-transform active:scale-[0.985] dark:bg-zinc-900"
+                style={{ borderColor: itemInProgress || itemCompleted ? `${theme.mid}88` : `${theme.blob}77` }}
+              >
+                <div className="flex items-start gap-3">
+                  <span
+                    className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full font-mono text-[11px] font-bold"
+                    style={{ background: itemCompleted ? theme.mid : `${theme.blob}45`, color: itemCompleted ? '#fff' : theme.deep }}
+                  >
+                    {itemCompleted ? <CheckCircle2 size={18} /> : String(index + 1).padStart(2, '0')}
+                  </span>
+
+                  <div className="min-w-0 flex-1">
+                    <div className="flex items-start justify-between gap-3">
+                      <h3 className="font-serif text-[20px] font-medium leading-[1.08] tracking-tight text-[#1A1A1A] dark:text-white">
+                        {item.title}
+                      </h3>
+                      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full" style={{ background: `${theme.blob}38`, color: theme.deep }}>
+                        <ChevronRight size={17} />
+                      </span>
+                    </div>
+                    <p className="mt-2 line-clamp-2 text-[12px] leading-relaxed text-zinc-600 dark:text-zinc-400">
+                      {item.description}
+                    </p>
+
+                    <div className="mt-3 flex items-center gap-2.5">
+                      <span className="h-1.5 flex-1 overflow-hidden rounded-full" style={{ background: `${theme.deep}1F` }}>
+                        <span className="block h-full rounded-full" style={{ width: `${percent}%`, background: theme.mid }} />
+                      </span>
+                      <span className="shrink-0 font-mono text-[9px] font-bold uppercase tracking-[0.12em]" style={{ color: theme.deep }}>
+                        {status}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="w-full max-w-5xl mx-auto px-4 flex flex-col gap-5 md:gap-6">

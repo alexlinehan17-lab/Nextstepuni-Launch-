@@ -5,11 +5,13 @@
 
 import { type UserProgress } from './types';
 
-// Points earned for completing content
+// Content is deliberately a light-touch source of Journey Points. Reading
+// through a module should support the learning loop, not out-earn a genuine
+// timed study session or make the island economy trivial to complete.
 export const POINTS = {
-  SECTION_COMPLETE: 10,
-  MODULE_COMPLETE_BONUS: 30,
-  CATEGORY_COMPLETE_BONUS: 100,
+  SECTION_COMPLETE: 2,
+  MODULE_COMPLETE_BONUS: 6,
+  CATEGORY_COMPLETE_BONUS: 20,
   DAILY_STREAK: 10,
   // Reflection tiers (Phase 4)
   REFLECTION_BASIC: 15,

@@ -4,6 +4,7 @@ import {
   CURRICULUM_SPECIFICATIONS,
   curriculumSubjectsForYear,
   findCanonicalTopic,
+  getCurriculumCohortNotice,
   resolveCurriculumSpecification,
   specificationContainsId,
 } from '../curriculumRegistry';
@@ -154,13 +155,51 @@ describe('versioned curriculum registry', () => {
       'Services and Control Technology',
     ]);
     expect(constructionTechnology?.assessmentComponents?.map(({ weighting }) => weighting)).toEqual([30, 20, 50]);
-    expect(resolveCurriculumSpecification('Engineering', 2028)).toBeUndefined();
-    expect(resolveCurriculumSpecification('LCPE', 2028)).toBeUndefined();
-    expect(resolveCurriculumSpecification('LCVP', 2028)).toBeUndefined();
+    const engineering = resolveCurriculumSpecification('Engineering', 2028);
+    expect(engineering?.id).toBe('engineering:2028');
+    expect(engineering?.groups.map(({ title }) => title)).toEqual([
+      'Engineering Processes',
+      'Automation and Control Systems',
+      'Design Capability',
+      'Engineering Principles and Energy',
+    ]);
+    expect(engineering?.assessmentComponents?.map(({ weighting }) => weighting)).toEqual([50, 50]);
+
+    const physicalEducation = resolveCurriculumSpecification('LCPE', 2028);
+    expect(physicalEducation?.id).toBe('physical-education:2028');
+    expect(physicalEducation?.groups.map(({ title }) => title)).toEqual([
+      'Skill learning, participation and performance',
+      'Physical and psychological demands of performance',
+      'Factors influencing participation in physical activity',
+    ]);
+    expect(physicalEducation?.assessmentComponents?.map(({ weighting }) => weighting)).toEqual([50, 50]);
+
+    const lifeCommunityWork = resolveCurriculumSpecification('LCVP', 2028);
+    expect(lifeCommunityWork?.id).toBe('lcvp-link-modules:2028');
+    expect(lifeCommunityWork?.subjectName).toBe('Life, Community and Work');
+    expect(lifeCommunityWork?.assessmentComponents?.map(({ weighting }) => weighting)).toEqual([60, 40]);
     expect(resolveCurriculumSpecification('English', 2028)?.id).toBe('english:outgoing');
     expect(resolveCurriculumSpecification('English', 2029)).toBeUndefined();
     expect(resolveCurriculumSpecification('Accounting', 2028)?.id).toBe('accounting:outgoing');
     expect(resolveCurriculumSpecification('Accounting', 2029)).toBeUndefined();
+  });
+
+  it('puts explicit cohort notices on outgoing maps and blocks expired maps', () => {
+    for (const subject of ['Construction Studies', 'Engineering', 'Geography', 'LCPE', 'LCVP']) {
+      const notice = getCurriculumCohortNotice(subject, 2027);
+      expect(notice?.kind, subject).toBe('outgoing');
+      expect(notice?.title, subject).toBe('For 2027 exam candidates only');
+      expect(notice?.message, subject).toContain('first examined in 2028');
+    }
+
+    const mathematics = getCurriculumCohortNotice('Mathematics', 2028);
+    expect(mathematics?.title).toBe('Current specification — exams through 2028');
+    expect(mathematics?.message).toContain('first examined in 2029');
+    expect(resolveCurriculumSpecification('Mathematics', 2029)).toBeUndefined();
+
+    const english = getCurriculumCohortNotice('English', 2028);
+    expect(english?.message).toContain('earliest possible first examination year');
+    expect(getCurriculumCohortNotice('Geography', 2028)).toBeUndefined();
   });
 
   it('models the official Computer Science certification split', () => {

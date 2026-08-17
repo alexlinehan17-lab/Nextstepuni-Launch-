@@ -16,7 +16,7 @@ import { db } from '../../firebase';
 import { saveInBackground } from '../../utils/firestoreWrite';
 import { type SessionUser } from '../../utils/authUtils';
 import { type StudentSubjectProfile } from '../subjectData';
-import { type UserProgress, type StrategyMasteryMap, type MasteryTier, type StudyReflection } from '../../types';
+import { type UserProgress, type StrategyMasteryMap, type MasteryTier, type StudyConfidenceLabel, type StudyReflection } from '../../types';
 import { type CourseData } from '../Library';
 import { STRATEGY_REGISTRY, PROMPT_AUTO_DISMISS_SECONDS } from '../../studySessionData';
 import { type StreakData } from '../../hooks/useStreak';
@@ -47,6 +47,22 @@ const TIER_LABELS: Record<MasteryTier, string> = {
 };
 
 const TIER_ORDER: MasteryTier[] = ['learned', 'practiced', 'applied', 'habitual'];
+
+const CONFIDENCE_SCORE: Record<StudyConfidenceLabel, number> = {
+  lost: 1,
+  shaky: 2,
+  okay: 3,
+  good: 4,
+  confident: 5,
+};
+
+const confidenceLabelFromScore = (score: number): StudyConfidenceLabel => {
+  if (score <= 1) return 'lost';
+  if (score === 2) return 'shaky';
+  if (score === 3) return 'okay';
+  if (score === 4) return 'good';
+  return 'confident';
+};
 
 const STRATEGY_ICONS: Record<string, LucideIcon> = {
   'mastering-active-recall-protocol': Brain,
@@ -274,6 +290,9 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     const bonus = reflectionMode === 'quick' ? QUICK_DEBRIEF_POINTS : FULL_REFLECTION_POINTS;
     const timestamp = Date.now();
     const [confidence, ...reflectionParts] = reflectionText.split('|');
+    const confidenceCandidate = confidence.toLowerCase() as StudyConfidenceLabel;
+    const confidenceLabel = Object.hasOwn(CONFIDENCE_SCORE, confidenceCandidate) ? confidenceCandidate : 'okay';
+    const confidenceAfter = CONFIDENCE_SCORE[confidenceLabel] ?? 3;
     const writtenReflection = reflectionParts.join('|').trim();
     const journalText = writtenReflection
       || `${confidence.charAt(0).toUpperCase()}${confidence.slice(1)}`;
@@ -285,6 +304,9 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
       reflection: journalText,
       pointsEarned: bonus,
       timestamp,
+      confidenceAfter,
+      confidenceLabel,
+      reflectionMode,
     };
 
     setIsSaving(true);
@@ -301,7 +323,11 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
         () => setReflections(previous => previous.filter(entry => entry.timestamp !== timestamp)),
       );
 
-      await session.saveSession(bonus, selectedStrategies);
+      await session.saveSession(bonus, selectedStrategies, {
+        confidenceAfter,
+        confidenceLabel,
+        reflectionMode,
+      });
       completeTimetableBlock();
       pointsReload();
       onStrategyMasteryRecompute?.();
@@ -338,7 +364,11 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
       date: toDateKey(new Date()),
     };
     // Save session first (with a small reflection bonus for completing debrief)
-    await session.saveSession(10, selectedStrategies);
+    await session.saveSession(10, selectedStrategies, {
+      confidenceAfter: entry.confidenceAfter,
+      confidenceLabel: confidenceLabelFromScore(entry.confidenceAfter),
+      reflectionMode: 'full',
+    });
     // Save debrief entry
     try {
       // Fired, not awaited: a student finishing a debrief on bad wifi would

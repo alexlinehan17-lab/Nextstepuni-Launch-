@@ -3,8 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useMemo } from 'react';
-import { fuzzyMatchTopic } from './syllabusData';
+import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import {
@@ -95,12 +94,6 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
     setWhatWorked('');
   };
 
-  // Fuzzy match hardest topic against Syllabus X-Ray data
-  const sxrMatch = useMemo(
-    () => hardestTopic.length >= 3 ? fuzzyMatchTopic(subject, hardestTopic) : null,
-    [subject, hardestTopic],
-  );
-
   if (!isOpen) return null;
 
   const steps = [
@@ -160,13 +153,6 @@ const StudyDebrief: React.FC<StudyDebriefProps> = ({
             className="w-full px-4 py-3 rounded-xl bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-sm text-zinc-800 dark:text-zinc-200 placeholder:text-zinc-400 outline-none focus:ring-2 focus:ring-[#F26B1F]/30"
             autoFocus
           />
-          {sxrMatch && (
-            <div className="mt-3 px-3 py-2.5 rounded-lg bg-[#FDEEDF] dark:bg-[#F26B1F]/20 border border-[#F26B1F]/40 dark:border-[#F26B1F]/30">
-              <p className="text-xs leading-relaxed text-[#8C3A0E] dark:text-[#F26B1F]">
-                <span className="font-bold">{sxrMatch.name}</span> — Worth ~{sxrMatch.markWeight}% of your {subject} paper and comes up {sxrMatch.examFrequency}/10 years.
-              </p>
-            </div>
-          )}
         </>
       )}
 

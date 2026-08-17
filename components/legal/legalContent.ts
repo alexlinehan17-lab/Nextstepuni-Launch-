@@ -24,8 +24,8 @@
 // Bump PRIVACY_POLICY_VERSION whenever the substance of the notice changes.
 // Registration records the version a student accepted (users/{uid}.consent),
 // so a future re-consent prompt can detect an out-of-date acceptance.
-export const PRIVACY_POLICY_VERSION = '2026-06-01';
-export const LEGAL_LAST_UPDATED = '1 June 2026';
+export const PRIVACY_POLICY_VERSION = '2026-08-13';
+export const LEGAL_LAST_UPDATED = '13 August 2026';
 export const SUPPORT_EMAIL = 'nextstepuniinfo@gmail.com';
 
 // The lawful-basis model wired into the app (confirmed 2026-06-01):
@@ -67,6 +67,8 @@ export const PRIVACY_NOTICE: Section[] = [
       '• Your study setup: the subjects and levels you take, your target grades, your exam start date, your rest days, and your “North Star” goal for after school.',
       '• Your activity: how far you’ve got in each module, your study sessions, points and achievements, mock exam results, and your topic confidence/mastery.',
       '• Your reflections: short notes you write after a study session, and free-text answers to module exercises.',
+      '• Anonymous product feedback: if you choose to send feedback, we store your message, its category, the app page you chose to include, your platform, and app version. We do not automatically attach your name, email, school or account ID. Your message is stored as written, so it may contain personal information if you type it yourself.',
+      '• Feedback spam protection: for up to 48 hours, we keep a one-way account marker and a daily submission count. This marker is stored separately from feedback messages and is never shown in the feedback inbox.',
       '• Peer features: the kudos and gifts you send to classmates at your school.',
       '• Settings: your display preferences, such as dark mode, language and theme.',
     ],
@@ -102,6 +104,7 @@ export const PRIVACY_NOTICE: Section[] = [
       '• Your school’s guidance counsellor can see your progress to support you.',
       '• Other students at your school can see a limited public version of your island (your first name, avatar, school, chosen goal category, and your island decorations and score), plus any kudos you choose to send. Your full name, study sessions, reflections, grades, points and purchases are never shown to other students.',
       '• NextStepUni staff do not routinely read your information by hand — only occasionally to fix a technical problem.',
+      '• A NextStepUni administrator can read product feedback so we can identify problems and improve the app. Account details are not attached automatically, but the administrator will see any personal details you choose to type. Feedback is not shared with your school or other students.',
     ],
   },
   {
@@ -117,6 +120,8 @@ export const PRIVACY_NOTICE: Section[] = [
     heading: 'How long we keep it',
     body: [
       'We keep your information while you are in the programme, plus a period afterwards. Our intended policy is to keep it for 12 months after your Leaving Certificate, and then erase the details that identify you. This retention period is being finalised.',
+      'Anonymous product feedback is automatically deleted after 12 months.',
+      'The separate marker used to limit feedback spam is automatically deleted after 48 hours.',
     ],
   },
   {

@@ -23,10 +23,11 @@ import {
   getRankProgress,
   getWeekStartDate,
 } from '../gamificationConfig';
-import { ACHIEVEMENTS } from '../achievementData';
+import { getAchievementsForCurriculum } from '../achievementData';
 import { ALL_COURSES } from '../courseData';
 import { type TimetableCompletions } from '../components/subjectData';
 import { saveGamificationFields, unlockAchievements } from '../services/progressRepository';
+import { type CurriculumLevel } from '../utils/authUtils';
 
 interface UseGamificationOptions {
   uid?: string;
@@ -34,6 +35,7 @@ interface UseGamificationOptions {
   pointsData: PointsData & { reload: () => void };
   streak: StreakData;
   northStar: NorthStar | null;
+  curriculumLevel?: CurriculumLevel;
 }
 
 interface UseGamificationReturn {
@@ -51,6 +53,7 @@ export function useGamification({
   pointsData,
   streak,
   northStar,
+  curriculumLevel = 'senior',
 }: UseGamificationOptions): UseGamificationReturn {
   const { rawProgressDoc, progressLoaded } = useProgress();
   const [gamificationData, setGamificationData] = useState<GamificationFirestoreData>({ ...DEFAULT_GAMIFICATION_DATA });
@@ -257,7 +260,10 @@ export function useGamification({
       const currentUnlocked = new Set([...currentUnlockedIds, ...sessionUnlockedRef.current]);
       const newlyUnlocked: AchievementDefinition[] = [];
 
-      for (const achievement of ACHIEVEMENTS) {
+      // Senior and Junior Cycle have parallel milestone sets. Evaluating the
+      // full catalogue here used to unlock both copies for one student and
+      // pay both bonuses. Only the student's active curriculum is eligible.
+      for (const achievement of getAchievementsForCurriculum(curriculumLevel)) {
         if (currentUnlocked.has(achievement.id)) continue;
         try {
           if (achievement.condition(state)) {
@@ -314,7 +320,7 @@ export function useGamification({
     } finally {
       checkInFlightRef.current = false;
     }
-  }, [state, gamificationData, uid, pointsData]);
+  }, [state, gamificationData, uid, pointsData, curriculumLevel]);
 
   // Update weekly goal progress
   const updateWeeklyGoalProgress = useCallback(async (metric: 'sections' | 'sessions' | 'reflections', incrementBy = 1) => {

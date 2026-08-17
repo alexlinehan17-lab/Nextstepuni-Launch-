@@ -6,20 +6,7 @@
 import React, { useEffect, useRef } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import { Trophy, Star, Flame, BookOpen, Clock, Target, Award, Crown, Mountain, Zap, Eye, Brain, Lightbulb, Shield, Sparkles, type LucideIcon } from 'lucide-react';
 import { type AchievementDefinition } from '../gamificationConfig';
-
-const ICON_MAP: Record<string, LucideIcon> = {
-  Trophy, Star, Flame, BookOpen, Clock, Target, Award, Crown, Mountain, Zap,
-  Eye, Brain, Lightbulb, Shield, Sparkles,
-  Footprints: Target, PlayCircle: Zap, BookCheck: BookOpen,
-  Hash: Trophy, Milestone: Mountain, FolderCheck: BookOpen,
-  CircleDot: Target, Timer: Clock, CalendarCheck: Clock,
-  Calendar: Clock, PenLine: Brain, MessageSquare: Brain,
-  NotebookPen: Brain, Compass: Target, ShieldCheck: Shield,
-  ArrowUp: Zap, BarChart3: Target, Gem: Star, Sunrise: Star,
-  Layers: BookOpen,
-};
 
 interface AchievementToastProps {
   achievement: AchievementDefinition | null;
@@ -33,10 +20,11 @@ const AchievementToast: React.FC<AchievementToastProps> = ({ achievement, onDism
 
   const isVisible = achievement !== null;
 
-  // Auto-dismiss after 3 seconds — only re-triggers when visibility actually changes
+  // Give the quieter editorial card enough time to be read without letting it
+  // linger over the page. Only re-trigger when the achievement itself changes.
   useEffect(() => {
     if (!isVisible) return;
-    const timer = setTimeout(() => onDismissRef.current(), 3000);
+    const timer = setTimeout(() => onDismissRef.current(), 4500);
     return () => clearTimeout(timer);
   }, [isVisible, achievement?.id]);
 
@@ -44,23 +32,45 @@ const AchievementToast: React.FC<AchievementToastProps> = ({ achievement, onDism
     <AnimatePresence>
       {achievement && (
         <MotionDiv
-          initial={{ opacity: 0, y: -6, scale: 0.95 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          exit={{ opacity: 0, y: -6, scale: 0.95 }}
-          transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-          onClick={onDismiss}
-          className="mt-2 cursor-pointer w-full"
+          initial={{ opacity: 0, y: -8 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -6 }}
+          transition={{ duration: 0.28, ease: [0.16, 1, 0.3, 1] }}
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+          className="mt-2 ml-auto w-[286px] max-w-[calc(100vw-2rem)]"
         >
-          <div className="flex items-center justify-center gap-2 px-3.5 py-2 rounded-full bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-700/40 shadow-sm">
-            {(() => {
-              const Icon = ICON_MAP[achievement.icon] || Trophy;
-              return <Icon size={14} className="text-purple-500 dark:text-purple-400 shrink-0" />;
-            })()}
-            <span className="text-xs font-bold text-purple-700 dark:text-purple-300 truncate max-w-[140px]">{achievement.title}</span>
-            {achievement.bonusPoints > 0 && (
-              <span className="text-[10px] font-bold text-amber-500 whitespace-nowrap">+{achievement.bonusPoints}</span>
-            )}
-          </div>
+          <button
+            type="button"
+            onClick={onDismiss}
+            aria-label={`Dismiss achievement: ${achievement.title}`}
+            className="group w-full overflow-hidden rounded-2xl border border-[#DEDAD3] bg-white text-left shadow-[0_10px_30px_rgba(28,25,23,0.10)] transition-[transform,border-color,box-shadow] duration-200 hover:-translate-y-0.5 hover:border-[#C8C2B9] hover:shadow-[0_14px_34px_rgba(28,25,23,0.13)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F26B1F]/45 dark:border-zinc-700 dark:bg-zinc-900 dark:hover:border-zinc-600"
+          >
+            <div className="flex items-center justify-between gap-4 px-4 pt-3.5 pb-2.5">
+              <span className="flex min-w-0 items-center gap-2 text-[9px] font-bold uppercase tracking-[0.18em] text-zinc-500 dark:text-zinc-400">
+                <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#F26B1F]" aria-hidden="true" />
+                Achievement unlocked
+              </span>
+              {achievement.bonusPoints > 0 && (
+                <span className="shrink-0 text-[11px] font-bold tabular-nums text-[#F26B1F]">
+                  +{achievement.bonusPoints} JP
+                </span>
+              )}
+            </div>
+            <div className="mx-4 h-px bg-[#ECE8E2] dark:bg-zinc-800" />
+            <div className="px-4 pt-2.5 pb-3.5">
+              <p
+                className="truncate text-[17px] font-semibold leading-tight text-[#1A1A1A] dark:text-zinc-50"
+                style={{ fontFamily: "'Source Serif 4', serif" }}
+              >
+                {achievement.title}
+              </p>
+              <p className="mt-1 text-[10px] font-medium text-zinc-400 dark:text-zinc-500">
+                Added to your Training Hub
+              </p>
+            </div>
+          </button>
         </MotionDiv>
       )}
     </AnimatePresence>

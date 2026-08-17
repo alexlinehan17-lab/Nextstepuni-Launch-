@@ -16,6 +16,7 @@ import { type GamificationFirestoreData } from '../gamificationConfig';
 import {
   type IslandState,
   type NorthStar,
+  type StudyReflection,
   type TopicMasteryMap,
   type TopicMasteryV2,
   type UnifiedMockResult,
@@ -35,7 +36,10 @@ export interface ProgressDocument {
   timetableStreak?: { currentStreak: number; longestStreak: number; lastActiveDate: string };
   pointsData?: { totalEarned?: number; totalSpent?: number };
   earnedRest?: { restDayPasses?: string[] };
+  /** Localhost Demo Account only. Real sessions live in the sessions subcollection. */
+  studySessions?: StudySessionRecord[];
   studyDebriefs?: DebriefEntry[];
+  reflections?: StudyReflection[];
   topicMastery?: TopicMasteryMap;
   topicMasteryV2?: TopicMasteryV2;
   unifiedMockResults?: UnifiedMockResult[];

@@ -34,6 +34,13 @@ scripts/paper-trail/out/
 __pycache__/
 scripts/paper-trail/topic-tags/out/
 
+# PDF workshop build dependencies and rendered QA intermediates.
+# Keep the builder, source screenshots, and final output PDFs tracked.
+tmp/pdfs/_deps/
+tmp/pdfs/deck_pages*/
+tmp/pdfs/qa_*/
+tmp/pdfs/rendered_*/
+
 # transient topic-tag pipeline scratch (root)
 /_*.json
 /_*.mjs

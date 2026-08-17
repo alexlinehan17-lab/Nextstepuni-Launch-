@@ -136,7 +136,13 @@ export default defineConfig(() => {
           // worker never runs inside the native WebView where its
           // navigateFallback can serve a stale/white screen. (audit item 12)
           injectRegister: false,
-          includeAssets: ['icons/*.png', 'fonts/*.otf'],
+          includeAssets: [
+            'icons/north-star-favicon-32x32.png',
+            'icons/north-star-apple-touch-icon.png',
+            'icons/north-star-icon-192x192.png',
+            'icons/north-star-icon-512x512.png',
+            'fonts/*.otf',
+          ],
           manifest: {
             name: 'Nextstep Learning Lab',
             short_name: 'Nextstep',
@@ -145,9 +151,9 @@ export default defineConfig(() => {
             background_color: '#FAFBF6',
             display: 'standalone',
             icons: [
-              { src: '/icons/icon-192x192.png', sizes: '192x192', type: 'image/png' },
-              { src: '/icons/icon-512x512.png', sizes: '512x512', type: 'image/png' },
-              { src: '/icons/apple-touch-icon.png', sizes: '180x180', type: 'image/png', purpose: 'any' },
+              { src: '/icons/north-star-icon-192x192.png', sizes: '192x192', type: 'image/png' },
+              { src: '/icons/north-star-icon-512x512.png', sizes: '512x512', type: 'image/png', purpose: 'any maskable' },
+              { src: '/icons/north-star-apple-touch-icon.png', sizes: '180x180', type: 'image/png', purpose: 'any' },
             ],
           },
           workbox: {

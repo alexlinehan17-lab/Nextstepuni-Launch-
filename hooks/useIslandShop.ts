@@ -28,6 +28,7 @@ import {
 import { canPlaceAt } from '../components/journey/build/islandBuildModel';
 import { getJourneyV2BasePrice } from '../journeyEconomyConfig';
 import { awaitWriteOrTimeout } from '../utils/firestoreWrite';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
 
 function isBuilding(model: string): boolean {
   return model.startsWith('building-') || model.startsWith('unit-') || model === 'bridge.glb';
@@ -120,19 +121,25 @@ export function useIslandShop(uid?: string, northStar?: NorthStar | null, comple
       return;
     }
 
+    // The localhost Demo Account is deliberately in-memory and has no
+    // Firestore document. Treat a missing fresh document as an empty one so
+    // Journey can initialise its starter island instead of crashing while
+    // reading `islandState` from null.
     const data = rawProgressDoc;
-    const stored = data.islandState as IslandState | undefined;
+    const stored = data?.islandState as IslandState | undefined;
     if (stored && stored.category === northStar.category && Array.isArray(stored.placements)) {
       const migrated = migrateIslandState(stored);
       setIslandState(migrated.state);
-      if (migrated.changed) {
+      if (migrated.changed && uid !== DEMO_STUDENT_UID) {
         setDoc(doc(db, 'progress', uid), { islandState: migrated.state }, { merge: true }).catch(console.error);
       }
     } else {
       // No state or North Star changed — initialize with starter pack
       const starter = createStarterState(northStar.category);
       setIslandState(starter);
-      setDoc(doc(db, 'progress', uid), { islandState: starter }, { merge: true }).catch(console.error);
+      if (uid !== DEMO_STUDENT_UID) {
+        setDoc(doc(db, 'progress', uid), { islandState: starter }, { merge: true }).catch(console.error);
+      }
     }
     setIsLoading(false);
   }, [uid, northStar?.category, progressLoaded, rawProgressDoc]);

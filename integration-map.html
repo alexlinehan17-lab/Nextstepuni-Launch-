@@ -235,12 +235,6 @@ const TOOLS = [
     color: [52, 211, 153],   // emerald
   },
   {
-    id: 'syllabus-xray',
-    label: 'Syllabus X-Ray',
-    desc: 'Reveals where marks hide — mark weight, exam frequency, and efficiency scoring per topic.',
-    color: [251, 113, 133],  // rose
-  },
-  {
     id: 'learning-dna',
     label: 'Learning DNA',
     desc: 'Analyses study debriefs to find which strategies actually work for each student.',
@@ -279,10 +273,8 @@ const CONNECTIONS = [
   ['future-finder', 'gc-dashboard', 'Career direction data'],
   ['cao-simulator', 'comeback-engine', 'What-if scenarios → missions'],
   ['journey-sim', 'learning-dna', 'Archetype → personalised strategy tips'],
-  ['syllabus-xray', 'war-room', 'Quadrant-sorted topics + mark weight'],
-  ['syllabus-xray', 'timetable', 'Efficiency weighting → priority score'],
   ['debrief', 'war-room', 'Hardest topics → auto-seed as shaky'],
-  ['debrief', 'syllabus-xray', 'Hardest topic → inline nudge card'],
+  ['war-room', 'timetable', 'Self-marked gaps → modest coverage boost'],
   ['debrief', 'timetable', 'Best strategy → study block hints'],
   ['debrief', 'learning-dna', 'Session data → strategy effectiveness'],
   ['debrief', 'gc-dashboard', 'Struggle areas (excl. private notes)'],
@@ -325,7 +317,6 @@ function layoutNodes() {
     'comeback-engine':  { nx:  0.35, ny: -0.18 },
     'journey-sim':      { nx:  0.38, ny:  0.15 },
     'war-room':         { nx: -0.36, ny:  0.05 },
-    'syllabus-xray':    { nx: -0.08, ny:  0.0 },
     'learning-dna':     { nx:  0.22, ny:  0.22 },
     'points-passport':  { nx: -0.20, ny:  0.30 },
     'timetable':        { nx:  0.02, ny:  0.32 },

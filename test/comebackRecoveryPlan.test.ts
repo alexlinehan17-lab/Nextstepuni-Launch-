@@ -19,8 +19,8 @@ describe('buildRecoveryPlan', () => {
     const plan = buildRecoveryPlan({
       profile,
       priorities: [
-        { subjectName: 'Biology', currentGrade: 'H5', targetGrade: 'H2', isMaths: false, currentPoints: 56, targetPoints: 88, pointsGain: 32, difficultyMultiplier: 1, efficiencyMultiplier: 1, priorityScore: 4 },
-        { subjectName: 'English', currentGrade: 'H4', targetGrade: 'H2', isMaths: false, currentPoints: 66, targetPoints: 88, pointsGain: 22, difficultyMultiplier: 1, efficiencyMultiplier: 1, priorityScore: 2 },
+        { subjectName: 'Biology', currentGrade: 'H5', targetGrade: 'H2', isMaths: false, currentPoints: 56, targetPoints: 88, pointsGain: 32, difficultyMultiplier: 1, coverageMultiplier: 1, priorityScore: 4 },
+        { subjectName: 'English', currentGrade: 'H4', targetGrade: 'H2', isMaths: false, currentPoints: 66, targetPoints: 88, pointsGain: 22, difficultyMultiplier: 1, coverageMultiplier: 1, priorityScore: 2 },
       ],
       masteryEntries: [],
       timetableCompletions: {},

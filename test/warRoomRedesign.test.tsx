@@ -206,6 +206,10 @@ describe('War Room minimalist workspace', () => {
     fireEvent.click(geography);
     const selectedGeography = screen.getByRole('button', { name: /^Geography/, pressed: true });
     expect(selectedGeography).toHaveAttribute('aria-pressed', 'true');
+    expect(screen.getByRole('heading', { name: 'For 2027 exam candidates only' })).toBeInTheDocument();
+    expect(screen.getByText(/first examined in 2028/)).toBeInTheDocument();
+    expect(screen.queryByText(/exam frequency/i)).not.toBeInTheDocument();
+    expect(screen.queryByText(/marks per hour/i)).not.toBeInTheDocument();
 
     const topicControl = await screen.findByRole('button', { name: /Physical environments: shaky/i });
     fireEvent.click(topicControl);

@@ -18,6 +18,9 @@ import React from 'react';
 import { type LucideIcon, Mic, Stamp, ListChecks, SpellCheck, FolderCheck } from 'lucide-react';
 
 export type ToolIconKey =
+  | 'meet-tools'
+  | 'recommend-tool'
+  | 'ways-in'
   | 'journey'
   | 'mark-bank'
   | 'cao-simulator'
@@ -54,6 +57,24 @@ interface ToolIconConfig {
 }
 
 const TOOLS: Record<ToolIconKey, ToolIconConfig> = {
+  'meet-tools': {
+    blob: '#D8D0E3',
+    iconPath: '/assets/tools/explore-tools.png',
+    blobPath: 'M 6 24 Q -2 52 8 78 Q 24 98 52 94 Q 86 90 94 62 Q 100 30 84 10 Q 60 -4 32 4 Q 12 12 6 24 Z',
+    iconScale: 1.08,
+  },
+  'recommend-tool': {
+    blob: '#F2CFB5',
+    iconPath: '/assets/tools/recommend-tool.png',
+    blobPath: 'M 8 22 Q 0 48 6 76 Q 20 96 50 96 Q 84 96 94 70 Q 100 40 84 14 Q 64 -2 36 4 Q 14 12 8 22 Z',
+    iconScale: 0.96,
+  },
+  'ways-in': {
+    blob: '#E6C6D6',
+    iconPath: '/assets/tools/ways-in.svg',
+    blobPath: 'M 7 25 Q 0 52 10 79 Q 25 98 55 94 Q 89 89 96 59 Q 99 27 80 8 Q 55 -4 29 7 Q 11 15 7 25 Z',
+    iconScale: 1.02,
+  },
   'mark-bank': {
     // A warm parchment-yellow ground distinguishes Mark Bank from the
     // navigation blues and study greens while keeping the orange scheme

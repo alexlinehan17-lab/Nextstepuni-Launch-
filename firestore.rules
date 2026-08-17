@@ -420,6 +420,28 @@ service cloud.firestore {
       allow delete: if false;
     }
 
+    // Anonymous product feedback is created only by submitAnonymousFeedback,
+    // whose Admin SDK write bypasses these client rules. Feedback documents
+    // intentionally contain no uid, name, email or school. Only the platform
+    // administrator can read them and move them through the review workflow.
+    match /anonymousFeedback/{feedbackId} {
+      allow read: if request.auth != null
+                  && request.auth.token.email == 'admin@nextstep.app';
+      allow update: if request.auth != null
+                    && request.auth.token.email == 'admin@nextstep.app'
+                    && request.resource.data.diff(resource.data).affectedKeys()
+                         .hasOnly(['status', 'reviewedAt'])
+                    && request.resource.data.status in ['new', 'reviewing', 'planned', 'fixed', 'archived']
+                    && request.resource.data.reviewedAt is timestamp;
+      allow create, delete: if false;
+    }
+
+    // Server-only rotating pseudonymous counters. These are deliberately separated
+    // from feedback documents and expire after two days.
+    match /feedbackRateLimits/{bucketId} {
+      allow read, write: if false;
+    }
+
     // Default deny — no other collections are accessible
     match /{document=**} {
       allow read, write: if false;

@@ -1,11 +1,12 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { ArrowLeft, ArrowRight, Check, Compass, Search } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Check, Search } from 'lucide-react';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { VISION_CARDS, VISION_CARD_ART, NORTH_STAR_CATEGORIES } from '../northStarData';
 import type { DirectionItemState, DirectionProfile, NorthStar } from '../types';
 import { createDirectionProfile, getNorthStarDisplayText, hasStudentAuthoredNorthStar, normaliseDirectionProfile } from '../services/directionProfile';
 import { saveInBackground } from '../utils/firestoreWrite';
+import NorthStarCategoryIcon from './NorthStarCategoryIcon';
 
 interface MyDirectionProps {
   uid: string;
@@ -97,9 +98,7 @@ const MyDirection: React.FC<MyDirectionProps> = ({
                   {hasStudentAuthoredNorthStar(northStar) ? `“${getNorthStarDisplayText(northStar)}”` : getNorthStarDisplayText(northStar)}
                 </p>
               </div>
-              <div className="grid h-16 w-16 shrink-0 place-items-center rounded-full bg-[#D9D4F6]">
-                <Compass size={31} strokeWidth={1.8} />
-              </div>
+              <NorthStarCategoryIcon category={northStar.category} size={80} className="-mr-1 -mt-2" />
             </div>
             <button onClick={onEditNorthStar} className="mt-8 rounded-xl border-[1.5px] border-[#292929] px-4 py-2.5 text-sm font-bold hover:bg-[#F5F1EB] dark:hover:bg-zinc-800">Review my choices</button>
           </div>

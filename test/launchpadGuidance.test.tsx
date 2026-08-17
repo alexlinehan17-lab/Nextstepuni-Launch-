@@ -21,6 +21,27 @@ const TOOLS: LaunchpadToolSummary[] = [
 ];
 
 describe('Launchpad guidance', () => {
+  test('uses the shared tool illustration style and matching charcoal card outlines', () => {
+    render(
+      <LaunchpadGuidance
+        tools={TOOLS}
+        recommendation={null}
+        onRecommendationChange={vi.fn()}
+        onOpenTool={vi.fn()}
+      />,
+    );
+
+    const meetTools = screen.getByRole('button', { name: /Meet the tools/ });
+    const recommendTool = screen.getByRole('button', { name: /Recommend a tool/ });
+
+    expect(meetTools).toHaveClass('border-[var(--outline-strong)]');
+    expect(recommendTool).toHaveClass('border-[var(--outline-strong)]');
+    expect(meetTools).not.toHaveClass('shadow-[3px_3px_0_0_var(--outline-strong)]');
+    expect(recommendTool).not.toHaveClass('shadow-[3px_3px_0_0_var(--outline-strong)]');
+    expect(meetTools.querySelector('img')).toHaveAttribute('src', '/assets/tools/explore-tools.png');
+    expect(recommendTool.querySelector('img')).toHaveAttribute('src', '/assets/tools/recommend-tool.png');
+  });
+
   test('recommends only an available tool and uses the declared fallback order', () => {
     expect(recommendTool('priority', 'today', ['planner'])?.toolId).toBe('planner');
     expect(recommendTool('priority', 'today', ['catch-up-lane'])).toBeNull();
@@ -44,7 +65,7 @@ describe('Launchpad guidance', () => {
     fireEvent.click(screen.getByRole('button', { name: /Meet the tools/ }));
     expect(screen.getByRole('dialog')).toBeInTheDocument();
     expect(screen.getByText(/You have time to study but are unsure which subject or topic/)).toBeInTheDocument();
-    expect(screen.getByText(/One clear priority, the reason it matters/)).toBeInTheDocument();
+    expect(screen.getByText(/One clear priority plus a trustworthy view/)).toBeInTheDocument();
 
     fireEvent.click(screen.getByRole('button', { name: 'Open War Room' }));
     expect(onOpenTool).toHaveBeenCalledWith('war-room', true);
@@ -80,4 +101,3 @@ describe('Launchpad guidance', () => {
     expect(screen.getByText('Your current recommendation')).toBeInTheDocument();
   });
 });
-

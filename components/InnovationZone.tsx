@@ -12,7 +12,7 @@ import { FileSearch,
     ArrowLeft,
     Lock, Compass, Target,
     CalendarDays, Calculator, GitBranch, Rocket,
-    Map, ScanSearch, Milestone, Highlighter, Users, Sunrise, Mic, Stamp, Images, ListChecks, SpellCheck, FolderCheck, Waypoints
+    Map, Milestone, Highlighter, Users, Sunrise, Mic, Stamp, Images, ListChecks, SpellCheck, FolderCheck, Waypoints
 } from 'lucide-react';
 import { doc, setDoc, getDoc, increment, deleteField } from 'firebase/firestore';
 import { saveInBackground } from '../utils/firestoreWrite';
@@ -34,7 +34,6 @@ const ComebackEngine = lazy(() => import('./ComebackEngineV2'));
 const FutureFinder = lazy(() => import('./FutureFinder'));
 const FutureFinderRevamped = lazy(() => import('./FutureFinderRevamped'));
 const CollegeCompass = lazy(() => import('./CollegeCompass'));
-const SyllabusXRay = lazy(() => import('./SyllabusXRay'));
 const PointsPassport = lazy(() => import('./PointsPassport'));
 const CatchUpLane = lazy(() => import('./CatchUpLane'));
 const CommandWordReflex = lazy(() => import('./CommandWordReflex'));
@@ -85,7 +84,7 @@ interface ToolChrome {
  * reading column. `max-w-4xl` yields 848px of usable width, which is right for a
  * page of prose and wrong for a two-pane workspace.
  */
-const WIDE_TOOLS = new Set(['mark-bank', 'your-possible-life', 'war-room']);
+const WIDE_TOOLS = new Set(['mark-bank', 'your-possible-life', 'war-room', 'journey']);
 
 const TOOL_CHROME: Record<string, ToolChrome> = {
   'journey':         { themeColor: '#8B82B8', eyebrow: 'Track · Simulator',           subtitle: 'Navigate the choices of your final school year, then turn the outcome into a practical next step.', showHeader: true },
@@ -97,7 +96,9 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   'comeback':        { themeColor: '#E08938', eyebrow: 'Plan · Comeback',             subtitle: 'Find your quickest wins and build a comeback plan.',                                showHeader: true  },
   'future-finder':   { themeColor: '#C76489', eyebrow: 'Understand · Career discovery', subtitle: 'Discover the courses, careers, and possible lives that fit who you are.',         showHeader: true  },
   'future-finder-revamped': { themeColor: '#C76489', eyebrow: 'Understand · Interests (RIASEC)', subtitle: 'Discover the courses, careers and lives that fit who you are — your interests matched to CAO courses, points kept honest.', showHeader: true },
-  'syllabus-xray':   { themeColor: '#2C4B6E', eyebrow: 'Understand · Exam intel',     subtitle: 'See where the marks are hiding in every paper, every section, every question.',   showHeader: true  },
+  // Compatibility alias: old Syllabus X-Ray links now open War Room directly
+  // on its cohort-safe Subject Coverage view.
+  'syllabus-xray':   { themeColor: '#F26B1F', eyebrow: 'Plan · Subject coverage',     subtitle: 'Your official topic map, confidence and debrief gaps in one trusted workspace.', showHeader: true  },
   'points-passport': { themeColor: '#B8A079', eyebrow: 'Track · Tracker',             subtitle: 'Mock trends and grade bargains, all at a glance.',                                  showHeader: true  },
   'exam-reps':       { themeColor: '#5E9C7B', eyebrow: 'Technique · Practice',        subtitle: 'One real exam question at a time — marked the examiner’s way, so you see exactly where the marks were.', showHeader: true  },
   'college-compass': { themeColor: '#2A7D6F', eyebrow: 'Plan · Roadmap',              subtitle: 'Your year-by-year runway to college — every CAO, HEAR, DARE and scholarship deadline, in order.', showHeader: false },
@@ -106,7 +107,7 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   // re-explain itself daily: the eyebrow, title and subtitle cost ~238px at the top
   // of every screen INCLUDING every review card, which is where the exam question
   // should be. The subtitle still does its job on the tool tile, read once.
-  'mark-bank':       { themeColor: '#123B2B', eyebrow: 'Practise · Spaced repetition', subtitle: 'Real exam questions, marked point by point against the real scheme, brought back to you right before you\u2019d forget them.', showHeader: false },
+  'mark-bank':       { themeColor: '#123B2B', eyebrow: 'Practice · Spaced repetition', subtitle: 'Real exam questions, marked point by point against the real scheme, brought back to you right before you\u2019d forget them.', showHeader: false },
   'paper-trail':     { themeColor: '#33658A', eyebrow: 'Understand · Exam archive',   subtitle: 'Every past paper and marking scheme, free — your subjects, your level, three taps.', showHeader: true },
   'diagram-vault':   { themeColor: '#F26B1F', eyebrow: 'Understand · Exam diagrams',  subtitle: 'Every diagram, graph, map and chart that has come up — cropped from the paper and decoded.', showHeader: true },
   'answer-architect': { themeColor: '#F26B1F', eyebrow: 'Understand · Top-answer skeletons', subtitle: 'The mark-earning skeleton of a top answer — the beats a full-marks answer hits, in order, from the SEC scheme.', showHeader: true },
@@ -520,13 +521,16 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
             component: subjectProfile ? <FutureFinderRevamped uid={user!.uid} profile={subjectProfile} onOpenCareerPaths={() => setActiveTool('your-possible-life')} /> : null,
         },
         {
-            id: 'syllabus-xray', title: 'Syllabus X-Ray', description: 'See where the marks are hiding in your exams.', icon: ScanSearch, needsProfile: false,
+            // Retained only so saved links and old module completions keep
+            // working. The catalogue hides this alias; Subject Coverage now
+            // has one canonical home inside War Room.
+            id: 'syllabus-xray', title: 'War Room · Subject Coverage', description: 'Your cohort-safe syllabus and confidence map.', icon: Target, needsProfile: true,
             curriculum: 'senior' as const,
-            tag: 'Exam Intel', accentHex: '#e11d48', gridClass: 'md:col-span-2',
-            iconBg: 'bg-rose-100 dark:bg-rose-900/30', iconColor: 'text-rose-600 dark:text-rose-400',
-            accentBarColor: 'bg-rose-500', tagBg: 'bg-rose-100 dark:bg-rose-900/30', tagText: 'text-rose-700 dark:text-rose-400',
-            hoverBorder: 'hover:border-rose-400/50 dark:hover:border-rose-500/40',
-            component: <SyllabusXRay studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} uid={user?.uid} examDate={subjectProfile?.examStartDate} />,
+            tag: 'Strategy', accentHex: '#F26B1F', gridClass: 'md:col-span-2',
+            iconBg: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-600 dark:text-orange-400',
+            accentBarColor: 'bg-orange-500', tagBg: 'bg-orange-100 dark:bg-orange-900/30', tagText: 'text-orange-700 dark:text-orange-400',
+            hoverBorder: 'hover:border-orange-400/50 dark:hover:border-orange-500/40',
+            component: subjectProfile ? <WarRoom uid={user!.uid} profile={subjectProfile} timetableCompletions={timetableCompletions} skippedSessions={earnedRest.skippedSessions} onStudyNow={onStudyNow} initialMode="review" initialReviewPanel="subjects" /> : null,
         },
         {
             id: 'points-passport', title: 'Points Passport', description: 'Mock trends & grade bargains at a glance.', icon: Map, needsProfile: true,
@@ -664,13 +668,12 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
         },
     ];
 
-    const [activeFilter, setActiveFilter] = useState<'all' | 'understand' | 'practise' | 'plan' | 'track'>('all');
+    const [activeFilter, setActiveFilter] = useState<'all' | 'understand' | 'practice' | 'plan' | 'track'>('all');
     const recommendationStorageKey = `nextstepuni:launchpad-recommendation:${user?.uid ?? 'guest'}`;
     const [toolRecommendation, setToolRecommendation] = useState<ToolRecommendation | null>(null);
 
-    const TOOL_CATEGORIES: Record<string, 'understand' | 'practise' | 'plan' | 'track'> = {
-        'mark-bank': 'practise',
-        'syllabus-xray': 'understand',
+    const TOOL_CATEGORIES: Record<string, 'understand' | 'practice' | 'plan' | 'track'> = {
+        'mark-bank': 'practice',
         'cao-simulator': 'understand',
         'future-finder': 'understand',
         'planner': 'plan',
@@ -704,6 +707,9 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
       // Old CAO Simulator URLs and module links remain valid, but the duplicate
       // tile is removed now that all of its capability lives in Points Passport.
       if (t.id === 'cao-simulator') return false;
+      // Syllabus X-Ray is now Subject Coverage inside War Room. Keep the alias
+      // openable for old links, but never advertise a duplicate product tile.
+      if (t.id === 'syllabus-xray') return false;
       if (WIP_TOOL_IDS.has(t.id)) return false;
       const tag = t.curriculum ?? 'senior';
       const okCurriculum = tag === 'both' || tag === curriculumLevel;
@@ -819,7 +825,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                     {/* Filter pills + Points trigger — same row, opposite ends */}
                     <div className="mb-8 flex items-center justify-between gap-3 flex-wrap">
                         <div className="flex items-center gap-1 p-1 rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-soft)] w-fit">
-                            {(['all', 'understand', 'practise', 'plan', 'track'] as const).map(filter => (
+                            {(['all', 'understand', 'practice', 'plan', 'track'] as const).map(filter => (
                                 <button
                                     key={filter}
                                     onClick={() => setActiveFilter(filter)}
@@ -983,7 +989,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                                 eyebrow={TOOL_CHROME[currentTool.id].eyebrow}
                                 title={currentTool.title}
                                 subtitle={TOOL_CHROME[currentTool.id].subtitle}
-                                iconBlob={<ToolIconBlob toolId={(currentTool.id === 'cao-simulator' ? 'points-passport' : currentTool.id) as ToolIconKey} size={108} />}
+                                iconBlob={<ToolIconBlob toolId={(currentTool.id === 'cao-simulator' ? 'points-passport' : currentTool.id === 'syllabus-xray' ? 'war-room' : currentTool.id) as ToolIconKey} size={108} />}
                             />
                         </div>
                     )}

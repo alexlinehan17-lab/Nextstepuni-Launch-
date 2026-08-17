@@ -112,6 +112,11 @@ export interface SessionScreenProps {
    *  shrink underneath the student mid-session. */
   cards: SecCard[];
   subjectLabel: string;
+  /** Full inventory behind this sitting, whether it came from a topic or the
+   *  whole subject. This keeps a short scheduled review from masquerading as
+   *  the complete bank. */
+  reviewPoolTotal?: number;
+  reviewPoolLabel?: string;
   /**
    * Called on every graded card. Grades commit per card, never batched, so
    * leaving mid-session is always safe.
@@ -727,7 +732,7 @@ const useTwoPane = () => {
 };
 
 const SessionScreen: React.FC<SessionScreenProps> = ({
-  cards, subjectLabel, onGrade, onExit, onFinish,
+  cards, subjectLabel, reviewPoolTotal, reviewPoolLabel, onGrade, onExit, onFinish,
 }) => {
   const reduced = useReducedMotion() ?? false;
   const wide = useTwoPane();
@@ -977,9 +982,16 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
 
           <span style={{
             font: `700 11.5px/1.5 ${MONO}`, color: MUTED,
-            fontVariantNumeric: 'tabular-nums', whiteSpace: 'nowrap',
+            fontVariantNumeric: 'tabular-nums', whiteSpace: 'nowrap', textAlign: 'right',
           }}>
-            Card {Math.min(distinctDone + 1, cards.length)} of {cards.length}
+            <span style={{ display: 'block' }}>
+              {Math.min(distinctDone + 1, cards.length)} of {cards.length} this review
+            </span>
+            {reviewPoolTotal !== undefined && reviewPoolLabel && (
+              <span style={{ display: 'block', color: LABEL, fontSize: 9.5 }}>
+                {reviewPoolTotal} {reviewPoolTotal === 1 ? 'card' : 'cards'} in {reviewPoolLabel}
+              </span>
+            )}
           </span>
           {banked > 0 && (
             <span style={{

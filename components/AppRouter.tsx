@@ -28,8 +28,9 @@ const YearPlansView = lazy(() => import('./YearPlansView'));
 const WipTools = lazy(() => import('./WipTools'));
 const ModulesView = lazy(() => import('./ModulesView').then(m => ({ default: m.ModulesView })));
 import { moduleComponents, InnovationZone } from '../moduleRegistry';
-import { ALL_COURSES, categoryTitles, SUBJECT_TO_MODULE } from '../courseData';
-import { type ModuleProgress, type UserProgress, type UserSettings, type NorthStar } from '../types';
+import { ALL_COURSES, categoryTitles } from '../courseData';
+import { ModulePositionProvider, resolveModulePosition } from '../contexts/ModulePositionContext';
+import { type ModuleProgress, type UserProgress, type UserSettings, type NorthStar, type StudyReflection, type TopicMasteryV2, type UnifiedMockResult } from '../types';
 import { type StreakData } from '../hooks/useStreak';
 import { type FocusRecommendation } from '../hooks/useTodaysFocus';
 import { type StudentSubjectProfile } from './subjectData';
@@ -39,6 +40,8 @@ import { type StrategyMasteryMap } from '../types';
 import { type WeeklyChallengeState } from '../hooks/useWeeklyChallenge';
 import { type GamificationState, type AchievementDefinition } from '../gamificationConfig';
 import { type CourseData } from './Library';
+import { type DebriefEntry } from './StudyDebrief';
+import { type StudySessionRecord } from '../utils/strategyRegistry';
 import { doc, setDoc, arrayUnion } from 'firebase/firestore';
 import { db } from '../firebase';
 import { saveInBackground } from '../utils/firestoreWrite';
@@ -117,6 +120,11 @@ export interface AppRouterProps {
   userProgress: UserProgress;
   northStar: NorthStar | null;
   timetableCompletions: Record<string, string[]>;
+  studySessions: StudySessionRecord[];
+  studyDebriefs: DebriefEntry[];
+  studyReflections: StudyReflection[];
+  topicMasteryV2: TopicMasteryV2;
+  unifiedMockResults: UnifiedMockResult[];
   // `balance` is spendable (earned − spent) and drives the header pill and the
   // shop; `totalEarned` is lifetime and drives the Progress page's "earned to
   // date" stat. Keeping both here stops that stat from being fed the balance,
@@ -198,6 +206,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
 
   const {
     studentProfile, userProgress, northStar, timetableCompletions,
+    studySessions, studyDebriefs, studyReflections, topicMasteryV2, unifiedMockResults,
     pointsData, streak, settings, updateSetting, gamification,
     studentCourses, completedCount, smartRec, questState, claimQuestReward, reloadQuest,
     recommendation, strategyMastery, weeklyChallenge,
@@ -376,6 +385,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
           pointsReload={() => { pointsData.reload(); reloadQuest(); }}
           onGoToStudy={handleGoToStudy}
           uid={user?.uid}
+          curriculumLevel={user?.curriculumLevel}
         />
       </Suspense>
     );
@@ -393,6 +403,18 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
           onSelectModule={handleSelectModule}
           onBack={handleBackToTree}
           pointsEarned={pointsData.totalEarned}
+          studentProfile={studentProfile}
+          studySessions={studySessions}
+          studyDebriefs={studyDebriefs}
+          studyReflections={studyReflections}
+          topicMastery={topicMasteryV2}
+          mockResults={unifiedMockResults}
+          timetableCompletions={timetableCompletions}
+          questState={questState}
+          onClaimQuestReward={claimQuestReward}
+          onStartStudy={handleGoToStudy}
+          darkMode={settings.darkMode}
+          onToggleTheme={() => updateSetting('darkMode', !settings.darkMode)}
         />
       </Suspense>
     );
@@ -571,25 +593,10 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     if (!categoryTitles[currentCategory]) {
       return <FallbackRedirect onRedirect={() => nav.navigateToTree()} />;
     }
-    let categoryCourses = ALL_COURSES.filter(c => c.category === currentCategory);
-
-    // Curriculum gate: senior-only (LC) modules must never surface for a Junior
-    // Cycle user browsing a category. The JC click-interceptor in App.tsx only
-    // catches jcStatus: 'coming-soon', so senior-only tiles that lack that flag
-    // (e.g. agency-protocol) would otherwise open with LC-framed content in
-    // auto-essentials mode. Filtering here closes that leak for ALL senior
-    // modules at once. See docs/module-content-audit-2026-07-21.md.
-    if (user?.curriculumLevel === 'junior') {
-      categoryCourses = categoryCourses.filter(c => c.curriculum !== 'senior');
-    }
-
-    // For subject-specific-science, only show modules relevant to the student's chosen subjects
-    if (currentCategory === 'subject-specific-science' && studentProfile) {
-      const relevantModuleIds = new Set(
-        studentProfile.subjects.map(s => SUBJECT_TO_MODULE[s.subjectName]).filter(Boolean)
-      );
-      categoryCourses = categoryCourses.filter(c => relevantModuleIds.has(c.id));
-    }
+    // `studentCourses` is the single visibility source used everywhere else in
+    // the app. Keeping the selection screen on that same ordered list ensures
+    // its displayed module numbers also work for filtered JC/subject views.
+    const categoryCourses = studentCourses.filter(c => c.category === currentCategory);
 
     // Showcase view for all main categories
     const showcaseCategories: string[] = ['architecture-mindset', 'science-growth', 'learning-cheat-codes', 'subject-specific-science', 'exam-zone'];
@@ -663,6 +670,13 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
 
   if (viewState === 'module' && currentModuleId) {
     const ModuleComponent = moduleComponents[currentModuleId];
+    const modulePosition = resolveModulePosition(studentCourses, currentModuleId);
+    // A registered module can still be outside this student's curriculum or
+    // selected-subject catalogue. Do not let a manually entered URL bypass the
+    // same visibility rules used by the selection screen.
+    if (ModuleComponent && !modulePosition) {
+      return <FallbackRedirect onRedirect={() => nav.navigateToTree()} />;
+    }
     if (ModuleComponent) {
       return (
         <ModuleErrorBoundary onBack={handleBackToCategory}>
@@ -684,13 +698,15 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
                 </button>
               </div>
             )}
-            <div>
-              <ModuleComponent
-                onBack={handleBackToCategory}
-                progress={userProgress[currentModuleId] || { unlockedSection: 0 }}
-                onProgressUpdate={(p) => handleProgressUpdate(currentModuleId, p)}
-              />
-            </div>
+            <ModulePositionProvider value={modulePosition}>
+              <div>
+                <ModuleComponent
+                  onBack={handleBackToCategory}
+                  progress={userProgress[currentModuleId] || { unlockedSection: 0 }}
+                  onProgressUpdate={(p) => handleProgressUpdate(currentModuleId, p)}
+                />
+              </div>
+            </ModulePositionProvider>
           </Suspense>
         </ModuleErrorBoundary>
       );

@@ -42,7 +42,7 @@ export function useTopicMastery(uid: string | undefined, examDate?: string | nul
       const merged: TopicMasteryMap = {};
       const now = Date.now();
 
-      // Migrate SyllabusXRay mastery
+      // Preserve confidence recorded in the retired standalone coverage tool.
       if (data?.syllabusXRayMastery) {
         const sxr = data.syllabusXRayMastery as Record<string, Record<string, string>>;
         for (const [subject, topics] of Object.entries(sxr)) {

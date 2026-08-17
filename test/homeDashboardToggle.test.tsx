@@ -2,19 +2,19 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * The home dashboard is an intentional, persisted layer of the home screen:
- * new students begin with the quieter navigation grid, then opt into or out
- * of the dashboard from the desktop sidebar.
+ * The former inline home dashboard has been consolidated into My Progress.
+ * The sidebar control now navigates there and legacy persisted visibility
+ * settings must not resurrect duplicate analytics on home.
  */
 import React from 'react';
 import { beforeEach, describe, expect, test, vi } from 'vitest';
-import { fireEvent, render, renderHook, screen, waitFor } from '@testing-library/react';
+import { fireEvent, render, renderHook, screen } from '@testing-library/react';
 
 import { KnowledgeTree } from '@/components/KnowledgeTree';
 import { useSettings } from '@/hooks/useSettings';
 
 const noop = vi.fn();
-const scrollIntoView = vi.fn();
+const goToDashboard = vi.fn();
 
 const HomeHarness = () => {
   const { settings, updateSetting } = useSettings();
@@ -24,7 +24,7 @@ const HomeHarness = () => {
       onSelectCategory={noop}
       onGoToModules={noop}
       onGoToInnovationZone={noop}
-      onGoToDashboard={noop}
+      onGoToDashboard={goToDashboard}
       onGoToLearningPaths={noop}
       onGoToJourney={noop}
       onSelectModule={noop}
@@ -43,12 +43,11 @@ const HomeHarness = () => {
   );
 };
 
-describe('home dashboard visibility', () => {
+describe('home dashboard navigation', () => {
   beforeEach(() => {
     localStorage.clear();
     localStorage.setItem('nsu-coachmarks:dashboard-toggle-test', '1');
-    scrollIntoView.mockClear();
-    HTMLElement.prototype.scrollIntoView = scrollIntoView;
+    goToDashboard.mockClear();
     window.scrollTo = vi.fn();
   });
 
@@ -57,24 +56,19 @@ describe('home dashboard visibility', () => {
     expect(result.current.settings.showDashboard).toBe(false);
   });
 
-  test('the sidebar control reveals and hides it with matching control states', async () => {
+  test('the sidebar control enters My Progress without rendering duplicate analytics', () => {
     render(<HomeHarness />);
 
     expect(screen.queryByRole('region', { name: 'Home dashboard' })).not.toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Enter Dashboard' }));
+    expect(goToDashboard).toHaveBeenCalledTimes(1);
+    expect(screen.queryByRole('region', { name: 'Home dashboard' })).not.toBeInTheDocument();
+  });
 
-    const showButton = screen.getByRole('button', { name: 'Show Dashboard' });
-    expect(showButton).toHaveAttribute('aria-pressed', 'false');
-    fireEvent.click(showButton);
-
-    expect(screen.getByRole('region', { name: 'Home dashboard' })).toBeInTheDocument();
-    await waitFor(() => expect(scrollIntoView).toHaveBeenCalled());
-    const hideButton = screen.getByRole('button', { name: 'Hide Dashboard' });
-    expect(hideButton).toHaveAttribute('aria-pressed', 'true');
-    fireEvent.click(hideButton);
-
-    expect(screen.getByRole('button', { name: 'Show Dashboard' })).toHaveAttribute('aria-pressed', 'false');
-    await waitFor(() => {
-      expect(screen.queryByRole('region', { name: 'Home dashboard' })).not.toBeInTheDocument();
-    });
+  test('a legacy showDashboard preference cannot reopen the retired home panel', () => {
+    localStorage.setItem('nextstep-settings', JSON.stringify({ showDashboard: true }));
+    render(<HomeHarness />);
+    expect(screen.queryByRole('region', { name: 'Home dashboard' })).not.toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Enter Dashboard' })).toBeInTheDocument();
   });
 });

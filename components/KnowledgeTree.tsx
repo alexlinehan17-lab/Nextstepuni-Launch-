@@ -4,15 +4,15 @@
 */
 
 import React, { useState, useMemo, useEffect, useCallback, useRef } from 'react';
-import { AnimatePresence, MotionDiv, MotionSpan, useReducedMotion } from './Motion';
+import { AnimatePresence, MotionDiv, useReducedMotion } from './Motion';
 import {
   ArrowRight,
-  User, Home, PanelLeft, PanelTopClose, PanelTopOpen, Award, BookOpen, CalendarRange, Settings, LogOut, Sun, Moon, RefreshCw, Timer, Dumbbell, Bell, MessageSquare, HelpCircle
+  User, Home, PanelLeft, ChartNoAxesCombined, Award, BookOpen, CalendarRange, Settings, LogOut, Sun, Moon, RefreshCw, Timer, Dumbbell, Bell, MessageSquare, HelpCircle
 } from 'lucide-react';
 import SiteGuide, { type GuideAction } from './SiteGuide';
 import FirstVisitCoachMarks, { coachMarksSeen } from './FirstVisitCoachMarks';
 import ResumeCard from './ResumeCard';
-import FeedbackQrModal from './FeedbackQrModal';
+import FeedbackModal from './FeedbackModal';
 import { getAvatarUrl } from '../utils/authUtils';
 import { type CourseData } from './Library';
 import { type UserSettings } from '../types';
@@ -81,9 +81,12 @@ interface KnowledgeTreeProps {
 
 export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: _onSelectCategory, onGoToModules, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, onGoToInsights: _onGoToInsights, onGoToTrainingHub, onGoToAccreditation, onGoToYearPlans, allCourses, onSelectModule, categoryTitles: _categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes: _unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction, onOpenTool, uid }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [feedbackQrOpen, setFeedbackQrOpen] = useState(false);
+  const [feedbackOpen, setFeedbackOpen] = useState(false);
   const reduceMotion = useReducedMotion();
-  const dashboardVisible = settings.showDashboard === true;
+  // The former inline home panel has moved into the full student dashboard.
+  // Keep the legacy preference dormant so an old `showDashboard: true` value
+  // cannot render duplicate analytics above the home modules.
+  const dashboardVisible = false;
   const dashboardRef = useRef<HTMLDivElement | null>(null);
   const dashboardRevealRequested = useRef(false);
   // Site Guide (the "?") + one-time first-visit coach marks.
@@ -135,12 +138,6 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
       if (secondFrame) cancelAnimationFrame(secondFrame);
     };
   }, [dashboardVisible, reduceMotion]);
-
-  const toggleDashboard = useCallback(() => {
-    const nextVisible = !dashboardVisible;
-    dashboardRevealRequested.current = nextVisible;
-    updateSetting('showDashboard', nextVisible);
-  }, [dashboardVisible, updateSetting]);
 
   const finishCoachMarks = useCallback(() => setCoachActive(false), []);
   const openGuideFromCoachMarks = useCallback(() => {
@@ -355,39 +352,19 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
             </button>
           )}
 
-          {/* Home dashboard toggle */}
+          {/* Student dashboard entry */}
           <button
             type="button"
-            onClick={toggleDashboard}
-            aria-label={dashboardVisible ? 'Hide Dashboard' : 'Show Dashboard'}
-            aria-pressed={dashboardVisible}
-            title={sidebarOpen ? undefined : dashboardVisible ? 'Hide Dashboard' : 'Show Dashboard'}
-            className={`w-full flex items-center gap-3 px-2.5 py-2 rounded-lg transition-colors duration-200 ${
-              dashboardVisible
-                ? 'bg-[#FFF1E7] hover:bg-[#FDE6D5] dark:bg-[#F26B1F]/10 dark:hover:bg-[#F26B1F]/15'
-                : 'hover:bg-zinc-100 dark:hover:bg-zinc-800'
-            }`}
+            onClick={onGoToDashboard}
+            aria-label="Enter Dashboard"
+            title={sidebarOpen ? undefined : 'Enter Dashboard'}
+            className="w-full flex items-center gap-3 px-2.5 py-2 rounded-lg transition-colors duration-200 hover:bg-[#FFF1E7] dark:hover:bg-[#F26B1F]/10"
           >
             <div className="shrink-0 flex items-center justify-center w-[18px] h-[18px]">
-              <AnimatePresence initial={false} mode="wait">
-                <MotionSpan
-                  key={dashboardVisible ? 'dashboard-open' : 'dashboard-closed'}
-                  initial={reduceMotion ? { opacity: 0 } : { opacity: 0, scale: 0.72, rotate: -8 }}
-                  animate={{ opacity: 1, scale: 1, rotate: 0 }}
-                  exit={reduceMotion ? { opacity: 0 } : { opacity: 0, scale: 0.72, rotate: 8 }}
-                  transition={{ duration: reduceMotion ? 0.08 : 0.16, ease: [0.16, 1, 0.3, 1] }}
-                  className="flex items-center justify-center"
-                >
-                  {dashboardVisible ? (
-                    <PanelTopClose size={18} strokeWidth={1.7} className="text-[#F26B1F]" />
-                  ) : (
-                    <PanelTopOpen size={18} strokeWidth={1.5} className="text-zinc-600 dark:text-zinc-400" />
-                  )}
-                </MotionSpan>
-              </AnimatePresence>
+              <ChartNoAxesCombined size={18} strokeWidth={1.7} className="text-[#F26B1F]" />
             </div>
-            <span className={`text-sm font-medium whitespace-nowrap overflow-hidden transition-opacity duration-300 ${dashboardVisible ? 'text-[#9A3B0E] dark:text-orange-300' : 'text-zinc-700 dark:text-zinc-300'} ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
-              {dashboardVisible ? 'Hide Dashboard' : 'Show Dashboard'}
+            <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+              Enter Dashboard
             </span>
           </button>
 
@@ -404,7 +381,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
               )}
             </div>
             <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
-              {settings.darkMode ? 'Light Mode' : 'Dark Mode'}
+              {settings.darkMode ? 'Light Mode (Beta)' : 'Dark Mode (Beta)'}
             </span>
           </button>
 
@@ -422,16 +399,16 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
             </span>
           </button>
 
-          {/* Share feedback (QR) */}
+          {/* Anonymous product feedback */}
           <button
-            onClick={() => setFeedbackQrOpen(true)}
+            onClick={() => setFeedbackOpen(true)}
             className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
           >
             <div className="shrink-0 flex items-center justify-center w-[18px]">
               <MessageSquare size={18} strokeWidth={1.5} className="text-zinc-500" />
             </div>
             <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
-              Share Feedback
+              Help us improve
             </span>
           </button>
 
@@ -787,7 +764,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
           <SectionCard
             eyebrow="Dashboard"
             title="My Progress"
-            subtitle={`Modules completed, streak, where you're heading.`}
+            subtitle="Study rhythm, confidence, practice and programme progress."
             icon={<MyProgressIcon />}
             onClick={onGoToDashboard}
           />
@@ -811,7 +788,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
       </div>
       </div>
 
-      <FeedbackQrModal open={feedbackQrOpen} onClose={() => setFeedbackQrOpen(false)} />
+      <FeedbackModal open={feedbackOpen} onClose={() => setFeedbackOpen(false)} context={{ surface: 'home' }} />
 
       {/* The Site Guide — a swipeable tour of the core pages (the "?"). */}
       <SiteGuide open={guideOpen} onClose={() => setGuideOpen(false)} onGo={handleGuideGo} />

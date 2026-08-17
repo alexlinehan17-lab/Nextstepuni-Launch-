@@ -3,6 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import type { StudyConfidenceLabel } from './types';
+
 // ── Types ──────────────────────────────────────────────────
 
 export type PromptCategory = 'action' | 'check-in' | 'technique-switch' | 'energy-focus';
@@ -26,6 +28,10 @@ export interface StudySessionRecord {
   pointsEarned: number;
   hadReflection: boolean;
   strategiesShown?: string[]; // moduleIds of strategies used (auto-tracked + self-reported)
+  /** Structured debrief data used by the student dashboard. */
+  confidenceAfter?: number;
+  confidenceLabel?: StudyConfidenceLabel;
+  reflectionMode?: 'quick' | 'full';
 }
 
 export interface StrategyDefinition {

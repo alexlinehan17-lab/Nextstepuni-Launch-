@@ -221,10 +221,10 @@ const MasteringActiveRecallModule: React.FC<{ onBack: () => void; progress: Modu
                 <p>For your next study session, flip the balance: spend most of your time actively recalling (self-quizzing, explaining out loud) rather than re-reading or watching. The more of your study time goes into pulling information out of your own head, the more of it sticks.</p>
               </MicroCommitment>
               <ToolJumpCard
-                toolId="syllabus-xray"
-                title="See where to test yourself first"
-                description="Syllabus X-Ray shows the exact topics most likely to come up. Pick a shaky one and run an active recall session against it now."
-                ctaLabel="Open Syllabus X-Ray"
+                toolId="war-room"
+                title="Choose a syllabus gap to test"
+                description="Subject Coverage in War Room shows your official topic map and the areas you marked shaky or not started. Pick one and run an active recall session against it now."
+                ctaLabel="Open Subject Coverage"
               />
             </ReadingSection>
           )}

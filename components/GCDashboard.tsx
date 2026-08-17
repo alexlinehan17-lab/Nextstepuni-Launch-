@@ -119,9 +119,9 @@ export function mapProgressDocToStudent(
 
   const subjectProfile = (progressDoc?.subjectProfile as StudentSubjectProfile) ?? null;
   const northStar = (progressDoc?.northStar as NorthStar) ?? null;
-  const journeyRaw = progressDoc?.['journey-simulator'] as { endingId?: string; finalStats?: GameState; completedAt?: string; decisionsCount?: number } | undefined;
+  const journeyRaw = progressDoc?.['journey-simulator'] as { endingId?: string; finalStats?: GameState; completedAt?: string; decisionsCount?: number; scoringVersion?: number } | undefined;
   const journeyResult: JourneyResult | null = journeyRaw?.endingId
-    ? { endingId: journeyRaw.endingId, finalStats: journeyRaw.finalStats!, completedAt: journeyRaw.completedAt, decisionsCount: journeyRaw.decisionsCount }
+    ? { endingId: journeyRaw.endingId, finalStats: journeyRaw.finalStats!, completedAt: journeyRaw.completedAt, decisionsCount: journeyRaw.decisionsCount, scoringVersion: journeyRaw.scoringVersion }
     : null;
   const points = (progressDoc?.pointsData as PointsData) ?? null;
   const timetableCompletions = (progressDoc?.timetableCompletions as TimetableCompletions) ?? null;

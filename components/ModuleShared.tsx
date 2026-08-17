@@ -220,7 +220,7 @@ export const MicroCommitment = ({ children, theme: _theme, northStarNudge }: Mic
 interface ToolJumpCardProps {
   /** Tool ID — must match an Innovation Zone tool key
    *  ('planner', 'war-room', 'cao-simulator', 'future-finder',
-   *   'syllabus-xray', 'comeback', 'journey', 'points-passport'). */
+   *   'war-room', 'comeback', 'journey', 'points-passport'). */
   toolId: string;
   /** Headline shown to the student, e.g. "Try this in the Spaced Repetition Timetable" */
   title: string;

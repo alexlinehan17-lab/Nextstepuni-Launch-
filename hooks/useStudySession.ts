@@ -7,7 +7,7 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { collection, doc, increment, setDoc, updateDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useProgress } from '../contexts/ProgressContext';
-import { type UserProgress } from '../types';
+import { type StudyConfidenceLabel, type UserProgress } from '../types';
 import { type CourseData } from '../components/Library';
 import { toDateKey } from '../utils/weekDates';
 import {
@@ -22,6 +22,12 @@ import {
 // ── Types ──────────────────────────────────────────────────
 
 export type SessionPhase = 'idle' | 'active' | 'paused' | 'complete';
+
+export interface SessionReflectionMetadata {
+  confidenceAfter: number;
+  confidenceLabel: StudyConfidenceLabel;
+  reflectionMode: 'quick' | 'full';
+}
 
 // Fisher-Yates shuffle
 function shuffle<T>(arr: T[]): T[] {
@@ -252,7 +258,11 @@ export function useStudySession(
 
   // ── Save session to Firestore ──
 
-  const saveSession = useCallback(async (reflectionPoints: number = 0, extraStrategies?: string[]): Promise<void> => {
+  const saveSession = useCallback(async (
+    reflectionPoints: number = 0,
+    extraStrategies?: string[],
+    reflectionMetadata?: SessionReflectionMetadata,
+  ): Promise<void> => {
     if (!uid) return;
 
     const now = Date.now();
@@ -275,6 +285,7 @@ export function useStudySession(
       pointsEarned: basePointsEarned + reflectionPoints,
       hadReflection: reflectionPoints > 0,
       ...(shownModuleIds.length > 0 ? { strategiesShown: shownModuleIds } : {}),
+      ...(reflectionMetadata ?? {}),
     };
 
     const totalPoints = basePointsEarned + reflectionPoints;

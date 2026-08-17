@@ -5,8 +5,8 @@
 import type { ShopItem } from './types';
 
 export const JOURNEY_ECONOMY_TARGETS = {
-  firstDay: { minimum: 100, maximum: 140 },
-  firstSevenDays: { minimum: 450, maximum: 600 },
+  firstDay: { minimum: 50, maximum: 80 },
+  firstSevenDays: { minimum: 350, maximum: 500 },
   establishedCasualWeek: { minimum: 200, maximum: 300 },
   establishedConsistentWeek: { minimum: 350, maximum: 500 },
   establishedHighlyActiveWeek: { minimum: 500, maximum: 650 },
@@ -19,9 +19,9 @@ export const JOURNEY_JP_V2 = {
     thoughtful: 15,
     deep: 20,
   },
-  sectionComplete: 10,
-  moduleCompleteBonus: 25,
-  categoryCompleteBonus: 75,
+  sectionComplete: 2,
+  moduleCompleteBonus: 6,
+  categoryCompleteBonus: 20,
   dailyQuest: { minimum: 20, maximum: 30 },
   weeklyChallenge: { minimum: 80, maximum: 150 },
   fullRateSessionsPerDay: 2,
