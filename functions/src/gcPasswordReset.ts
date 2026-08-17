@@ -8,7 +8,8 @@ import { getFirestore, FieldValue } from "firebase-admin/firestore";
 import { HttpsError, onCall } from "firebase-functions/v2/https";
 import { logger } from "firebase-functions/v2";
 import { randomInt } from "crypto";
-import { buildPassword, gcAddressToReset } from "./gcPasswordPolicy";
+import { SCHOOL_NAMES, buildPassword, gcAddressToReset, schoolIdFromGcAddress } from "./gcPasswordPolicy";
+import { syncAuthorizationClaims } from "./authClaims";
 import { isAdminEmail } from "./adminIdentity";
 
 /**
@@ -65,6 +66,37 @@ export const adminResetGcPassword = onCall({ cors: true }, async (request) => {
   } catch (err) {
     logger.error(`adminResetGcPassword: updateUser failed for ${target}`, err);
     throw new HttpsError("internal", "Could not set the new password.");
+  }
+
+  // Provision the counsellor's Firestore identity as well as their password.
+  //
+  // Creating the Auth account was never enough: AppRouter only routes to the
+  // Staff Dashboard when users/{uid} carries BOTH role:'gc' and school, and
+  // nothing ever seeded those docs. A counsellor who signed in was treated as
+  // a student with no profile and dropped into student onboarding — which, if
+  // they completed it, wrote a subjectProfile onto a staff account. It went
+  // unnoticed because no counsellor had signed in since May 2026.
+  //
+  // Done here because resetting a login should hand back a login that WORKS.
+  // Idempotent: merge:true re-affirms an already-correct doc rather than
+  // disturbing it, and `name` is only set when there is nothing there, so a
+  // counsellor who has set their own name keeps it. role and school are
+  // client-immutable in the /users rules, so this is the only way they can be
+  // written at all.
+  const schoolId = schoolIdFromGcAddress(target);
+  if (schoolId) {
+    const db = getFirestore();
+    const userRef = db.collection("users").doc(uid);
+    const existing = (await userRef.get()).data() || {};
+    const patch: Record<string, unknown> = { role: "gc", school: schoolId };
+    if (typeof existing.name !== "string" || existing.name.trim() === "") {
+      patch.name = `${SCHOOL_NAMES[schoolId] ?? schoolId} Guidance`;
+    }
+    await userRef.set(patch, { merge: true });
+    // Mirror into the signed token so firestore.rules' isSchoolStaff() resolves
+    // from the claim rather than an extra document read on every request.
+    await syncAuthorizationClaims(uid, { role: "gc", school: schoolId });
+    logger.info(`adminResetGcPassword: provisioned ${target} as gc for "${schoolId}"`);
   }
 
   // Audit trail. Client-unreadable (default-deny covers this collection), and

@@ -13,10 +13,13 @@ import { describe, expect, it } from 'vitest';
 import {
   PASSWORD_ALPHABET,
   PASSWORD_LENGTH,
+  SCHOOL_NAMES,
   buildPassword,
   gcAddressToReset,
   isResettableGcAddress,
+  schoolIdFromGcAddress,
 } from '@/functions/src/gcPasswordPolicy';
+import { SCHOOLS } from '@/schoolData';
 
 describe('gc password reset targets', () => {
   it('allows a guidance-counsellor login for every school', () => {
@@ -74,5 +77,29 @@ describe('generated password', () => {
     // Longer than the 8-character student temp password: there is no
     // forced-change-on-first-use behind a GC login.
     expect(PASSWORD_LENGTH).toBeGreaterThanOrEqual(12);
+  });
+});
+
+describe('provisioning a counsellor identity', () => {
+  it('extracts the school a login belongs to', () => {
+    expect(schoolIdFromGcAddress('gc-marino@nextstep.app')).toBe('marino');
+    expect(schoolIdFromGcAddress('GC-MountCarmel@NextStep.app')).toBe('mountcarmel');
+  });
+
+  it('extracts nothing from an address it must not touch', () => {
+    // Guards the provisioning write as well as the password: no school id
+    // means no role:'gc' is ever stamped on a non-counsellor account.
+    expect(schoolIdFromGcAddress('student@gmail.com')).toBeNull();
+    expect(schoolIdFromGcAddress('nextstepuniinfo@gmail.com')).toBeNull();
+    expect(schoolIdFromGcAddress('admin@nextstep.app')).toBeNull();
+  });
+
+  it('has a display name for every school in the picker', () => {
+    // A counsellor with no name yet is seeded "<School> Guidance", and that
+    // name is stamped on everything they send a student.
+    for (const school of SCHOOLS) {
+      expect(SCHOOL_NAMES[school.id], school.id).toBe(school.name);
+    }
+    expect(Object.keys(SCHOOL_NAMES).sort()).toEqual([...SCHOOLS].map(s => s.id).sort());
   });
 });

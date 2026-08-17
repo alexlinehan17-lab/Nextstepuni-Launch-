@@ -89,3 +89,26 @@ export function buildPassword(randomIndex: (max: number) => number): string {
   }
   return password;
 }
+
+/**
+ * School id → display name, for seeding a counsellor's user doc.
+ *
+ * Duplicated from schoolData.ts because functions/ compiles under its own
+ * rootDir and cannot reach into the app tree. Keep in step with SCHOOLS.
+ */
+export const SCHOOL_NAMES: Record<string, string> = {
+  marino: "Marino",
+  joeys: "Joey's",
+  larkin: "Larkin",
+  oconnells: "O'Connell's",
+  mountcarmel: "Mount Carmel",
+  rosmini: "Rosmini",
+  pwc: "PwC",
+};
+
+/** The school id inside a gc-{schoolId}@nextstep.app address, or null. */
+export function schoolIdFromGcAddress(email: unknown): string | null {
+  const address = gcAddressToReset(email);
+  if (!address) return null;
+  return address.slice("gc-".length, address.indexOf("@"));
+}
