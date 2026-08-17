@@ -64,11 +64,24 @@ const AdminGcAccessPanel: React.FC = () => {
         'adminResetGcPassword',
       );
       const response = await fn(password === undefined ? { email } : { email, password });
-      setResult({
-        email: response.data.email,
-        password: response.data.password,
-        generated: response.data.generated,
-      });
+      // Trust what came back, not what we asked for.
+      //
+      // Hosting and functions deploy as separate CI jobs, so for a few minutes
+      // after a release the client can be newer than the callable. An older
+      // callable ignores `password` and returns no `generated` field — read
+      // naively that reported "set as typed" for a password the server had
+      // actually generated, which is exactly the kind of thing that ends with
+      // someone handing a school a password that does not work.
+      //
+      // So decide from the response itself: it was set as typed only if we
+      // asked for one AND got that same one back.
+      const returned = response.data.password;
+      const setAsTyped = password !== undefined && returned === password;
+      setResult({ email: response.data.email, password: returned, generated: !setAsTyped });
+      if (password !== undefined && !setAsTyped) {
+        setError('The server generated a password instead of using the one you typed — it is still '
+          + 'deploying an update. Use the password shown, or try again in a few minutes.');
+      }
       closeRow();
     } catch (err) {
       const code = typeof err === 'object' && err && 'code' in err ? String((err as { code?: unknown }).code) : '';

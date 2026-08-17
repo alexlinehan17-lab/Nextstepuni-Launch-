@@ -145,3 +145,24 @@ describe('an administrator-typed password', () => {
     expect(panel).toContain(`const MIN_SUPPLIED_PASSWORD_LENGTH = ${MIN_SUPPLIED_PASSWORD_LENGTH};`);
   });
 });
+
+describe('the admin panel reports what actually happened', () => {
+  const panel = readFileSync(
+    resolve(__dirname, '..', 'components', 'AdminGcAccessPanel.tsx'), 'utf8',
+  );
+
+  it('decides "set as typed" from the response, not from the request', () => {
+    // Hosting and functions deploy as separate CI jobs, so the client can be
+    // newer than the callable for a few minutes. An older callable ignores the
+    // supplied password and returns no `generated` field; trusting that field
+    // reported "set as typed" for a password the server had generated —
+    // which ends with a school being handed a password that does not work.
+    expect(panel).toContain('const setAsTyped = password !== undefined && returned === password;');
+    expect(panel, 'must not trust the server flag alone')
+      .not.toMatch(/generated:\s*response\.data\.generated\s*,/);
+  });
+
+  it('tells the administrator when their typed password was not used', () => {
+    expect(panel).toContain('The server generated a password instead');
+  });
+});
