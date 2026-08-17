@@ -616,6 +616,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
                 isTrayMode
                 alerts={getStudentAlerts(selectedStudent.user.uid)}
                 gcName={gcName}
+                gcUid={gcUid}
                 gcFlags={gcFlags}
               />
             </MotionDiv>

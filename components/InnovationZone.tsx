@@ -61,6 +61,7 @@ import ToolIconBlob, { type ToolIconKey } from './ToolIconBlob';
 import { isActiveSeniorYear, isLcaYear } from '../utils/authUtils';
 import LaunchpadGuidance from './LaunchpadGuidance';
 import { trackFunnel } from '../utils/funnel';
+import { staffMessageText } from '../data/staffEncouragement';
 import { TOOL_GUIDANCE, type ToolRecommendation } from './launchpadGuidanceData';
 
 // ── Editorial chrome registry ──────────────────────────────────────────
@@ -301,7 +302,8 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                 const recMap: Record<string, { fromName: string; message?: string }> = {};
                 for (const n of notifications) {
                     if (n.type === 'gc-recommendation' && !n.read && n.actionToolId && !recMap[n.actionToolId]) {
-                        recMap[n.actionToolId] = { fromName: n.fromGCName || 'your counsellor', message: n.body };
+                        // Preset text only — never the stored body. See data/staffEncouragement.
+                        recMap[n.actionToolId] = { fromName: n.fromGCName || 'your counsellor', message: staffMessageText(n.messageId, '') };
                     }
                 }
                 if (!cancelled) setGcRecommendations(recMap);

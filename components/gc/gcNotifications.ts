@@ -22,13 +22,37 @@ export interface AppNotification {
   id: string;
   type: NotificationType;
   title: string;
+  /**
+   * Display text for APP-GENERATED notifications (comeback, streak-milestone,
+   * study-insight, subject-neglect). Staff-originated types must NOT be
+   * rendered from this field — see `messageId` and STAFF_ORIGINATED below.
+   */
   body: string;
   timestamp: number;
   read: boolean;
   actionToolId?: string;
   fromGCName?: string;
+  /** Uid of the staff member who sent it, for attribution and accountability. */
+  fromGCUid?: string;
+  /**
+   * Preset id from data/staffEncouragement.ts. Staff-originated notifications
+   * carry an id, never prose: the student's client resolves the text from that
+   * table, so a member of staff cannot send free text to a minor even by
+   * writing the document directly. (Owner decision 2026-08-17.)
+   */
+  messageId?: string;
   severity?: 'info' | 'success' | 'warning';
 }
+
+/**
+ * Notification types written by a human at a school, rather than by the app.
+ * These render from `messageId` only.
+ */
+export const STAFF_ORIGINATED: ReadonlySet<NotificationType> = new Set<NotificationType>([
+  'gc-recommendation',
+  'gc-kudos',
+  'gc-broadcast',
+]);
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
 

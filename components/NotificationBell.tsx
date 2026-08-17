@@ -7,7 +7,8 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { Bell, MessageSquare, Flame, TrendingUp, BookOpen, AlertTriangle, Megaphone, Heart, CheckCheck, type LucideIcon } from 'lucide-react';
-import { getNotifications, markNotificationRead, markAllRead, type AppNotification, type NotificationType } from './gc/gcNotifications';
+import { getNotifications, markNotificationRead, markAllRead, STAFF_ORIGINATED, type AppNotification, type NotificationType } from './gc/gcNotifications';
+import { staffMessageText } from '../data/staffEncouragement';
 import { NOTIFICATION_PANEL_TOGGLE_EVENT } from '../utils/notificationPanel';
 
 const ICON_MAP: Record<NotificationType, LucideIcon> = {
@@ -185,7 +186,25 @@ const NotificationBell: React.FC<NotificationBellProps> = ({ uid, onUnreadCountC
 
 const NotificationItem: React.FC<{ item: AppNotification; onMarkRead: (id: string) => void }> = ({ item, onMarkRead }) => {
   const IconComp = ICON_MAP[item.type] || Bell;
-  const colorClasses = ICON_COLOR_MAP[item.type] || 'text-zinc-500 bg-zinc-100 dark:bg-zinc-800';
+  /**
+ * Text to show a student for a notification.
+ *
+ * Anything written by a human at their school renders from the preset table by
+ * `messageId` — never from the stored `body`. Staff send an id, not prose
+ * (owner decision 2026-08-17, data/staffEncouragement.ts), so free text cannot
+ * reach a minor even if a document were written directly through the SDK,
+ * bypassing the dashboard UI. Legacy free-text notifications sent before
+ * presets existed fall back to the neutral line rather than being displayed.
+ *
+ * App-generated notifications (streaks, comebacks, study insights) keep using
+ * `body`: that copy comes from this codebase, not from a person.
+ */
+function displayBody(item: AppNotification): string {
+  if (!STAFF_ORIGINATED.has(item.type)) return item.body;
+  return staffMessageText(item.messageId);
+}
+
+const colorClasses = ICON_COLOR_MAP[item.type] || 'text-zinc-500 bg-zinc-100 dark:bg-zinc-800';
 
   return (
     <button
@@ -202,7 +221,7 @@ const NotificationItem: React.FC<{ item: AppNotification; onMarkRead: (id: strin
           </p>
           {!item.read && <div className="w-2 h-2 rounded-full bg-[var(--accent-hex)] shrink-0 mt-1.5" />}
         </div>
-        <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5 line-clamp-2">{item.body}</p>
+        <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5 line-clamp-2">{displayBody(item)}</p>
         <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mt-1">{relativeTime(item.timestamp)}</p>
       </div>
     </button>

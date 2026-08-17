@@ -36,6 +36,12 @@ import {
 import { getStatusReasons, STATUS_CONFIG } from '../../utils/studentStatus';
 import { type FlagData, type FlagPriority } from '../../hooks/useGCFlags';
 import { PentagonRadar } from './PentagonRadar';
+import {
+  STAFF_ENCOURAGEMENT,
+  STAFF_RECOMMENDATION_NOTES,
+  isKnownStaffMessage,
+  staffMessageText,
+} from '../../data/staffEncouragement';
 
 const CUSTOM_EASE = [0.16, 1, 0.3, 1] as const;
 
@@ -75,6 +81,8 @@ interface GCStudentDetailProps {
   isTrayMode?: boolean;
   alerts?: EarlyWarningAlert[];
   gcName?: string;
+  /** Signed-in staff member's uid — stamped on anything they send, for attribution. */
+  gcUid?: string;
   gcFlags?: GCFlagsAPI;
 }
 
@@ -94,13 +102,15 @@ const INNOVATION_TOOLS: { id: string; title: string; jcTitle?: string; curriculu
   { id: 'first-gen-intel',  title: 'First Gen Intel',            curriculum: 'senior' },
 ];
 
-export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCourses, onBack, isTrayMode, alerts = [], gcName, gcFlags }) => {
+export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCourses, onBack, isTrayMode, alerts = [], gcName, gcUid, gcFlags }) => {
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
   const [showRecommendModal, setShowRecommendModal] = useState(false);
   const [showKudosModal, setShowKudosModal] = useState(false);
   const [recommendToolId, setRecommendToolId] = useState<string | null>(null);
-  const [recommendMessage, setRecommendMessage] = useState('');
-  const [kudosMessage, setKudosMessage] = useState('');
+  // Preset ids, never prose: staff cannot send free text to a student.
+  // See data/staffEncouragement.ts (owner decision 2026-08-17).
+  const [recommendNoteId, setRecommendNoteId] = useState('');
+  const [kudosMessageId, setKudosMessageId] = useState('');
   const [isSendingAction, setIsSendingAction] = useState(false);
 
   // Score the student against the modules THEY can open, not the full
@@ -1046,30 +1056,36 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
     await addNotification(student.user.uid, {
       type: 'gc-recommendation',
       title: `Tool Recommended: ${toolName}`,
-      body: recommendMessage.trim() || `Your guidance counsellor recommends trying ${toolName}.`,
+      // body is a convenience copy for logs/among app-generated types; the
+      // student's client renders from messageId, never from this string.
+      body: staffMessageText(recommendNoteId, `${gcName} recommends trying ${toolName}.`),
+      messageId: recommendNoteId || undefined,
       fromGCName: gcName,
+      fromGCUid: gcUid,
       actionToolId: recommendToolId,
       severity: 'info',
     });
     setIsSendingAction(false);
     setShowRecommendModal(false);
     setRecommendToolId(null);
-    setRecommendMessage('');
+    setRecommendNoteId('');
   };
 
   const handleSendKudos = async () => {
-    if (!kudosMessage.trim()) return;
+    if (!isKnownStaffMessage(kudosMessageId)) return;
     setIsSendingAction(true);
     await addNotification(student.user.uid, {
       type: 'gc-kudos',
       title: 'Words of encouragement',
-      body: kudosMessage.trim(),
+      body: staffMessageText(kudosMessageId),
+      messageId: kudosMessageId,
       fromGCName: gcName,
+      fromGCUid: gcUid,
       severity: 'success',
     });
     setIsSendingAction(false);
     setShowKudosModal(false);
-    setKudosMessage('');
+    setKudosMessageId('');
   };
 
   const renderQuickActions = () => (
@@ -1128,13 +1144,20 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
                   </button>
                 ))}
               </div>
-              <textarea
-                value={recommendMessage}
-                onChange={(e) => setRecommendMessage(e.target.value)}
-                placeholder="Add a short message (optional)"
-                maxLength={200}
-                className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-xl p-3 text-sm text-zinc-800 dark:text-white placeholder:text-zinc-400 resize-none h-16 focus:outline-none focus:border-indigo-400 mb-3"
-              />
+              <p className="text-[11px] font-semibold uppercase tracking-wide text-zinc-400 mb-1.5">Add a note (optional)</p>
+              <div className="space-y-1 mb-3">
+                {STAFF_RECOMMENDATION_NOTES.map(note => (
+                  <button
+                    key={note.id}
+                    type="button"
+                    aria-pressed={recommendNoteId === note.id}
+                    onClick={() => setRecommendNoteId(recommendNoteId === note.id ? '' : note.id)}
+                    className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${recommendNoteId === note.id ? 'bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 font-medium' : 'hover:bg-zinc-50 dark:hover:bg-zinc-800 text-zinc-700 dark:text-zinc-300'}`}
+                  >
+                    {note.text}
+                  </button>
+                ))}
+              </div>
               <div className="flex gap-2">
                 <button onClick={() => setShowRecommendModal(false)} className="flex-1 py-2 rounded-xl text-sm font-medium text-zinc-500 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
                   Cancel
@@ -1172,21 +1195,26 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
                   <p className="text-xs text-zinc-500">to {student.user.name}</p>
                 </div>
               </div>
-              <textarea
-                value={kudosMessage}
-                onChange={(e) => setKudosMessage(e.target.value)}
-                placeholder="Write a short encouraging message..."
-                maxLength={200}
-                className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-xl p-3 text-sm text-zinc-800 dark:text-white placeholder:text-zinc-400 resize-none h-24 focus:outline-none focus:border-emerald-400 mb-1"
-              />
-              <p className="text-[10px] text-zinc-400 text-right mb-3">{kudosMessage.length}/200</p>
+              <div className="space-y-1 mb-3 max-h-64 overflow-y-auto">
+                {STAFF_ENCOURAGEMENT.map(message => (
+                  <button
+                    key={message.id}
+                    type="button"
+                    aria-pressed={kudosMessageId === message.id}
+                    onClick={() => setKudosMessageId(message.id)}
+                    className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${kudosMessageId === message.id ? 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 font-medium' : 'hover:bg-zinc-50 dark:hover:bg-zinc-800 text-zinc-700 dark:text-zinc-300'}`}
+                  >
+                    {message.text}
+                  </button>
+                ))}
+              </div>
               <div className="flex gap-2">
                 <button onClick={() => setShowKudosModal(false)} className="flex-1 py-2 rounded-xl text-sm font-medium text-zinc-500 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
                   Cancel
                 </button>
                 <button
                   onClick={handleSendKudos}
-                  disabled={!kudosMessage.trim() || isSendingAction}
+                  disabled={!isKnownStaffMessage(kudosMessageId) || isSendingAction}
                   className="flex-1 py-2 rounded-xl text-sm font-medium bg-emerald-500 text-white hover:bg-emerald-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                 >
                   {isSendingAction ? 'Sending...' : 'Send'}
