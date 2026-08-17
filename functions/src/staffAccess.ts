@@ -3,6 +3,7 @@ import { logger } from "firebase-functions/v2";
 import { getFirestore } from "firebase-admin/firestore";
 import { timingSafeEqual } from "crypto";
 import { syncAuthorizationClaims } from "./authClaims";
+import { isAdminEmail } from "./adminIdentity";
 
 /**
  * Staff-access provisioning — the trust anchor for the Staff Dashboard.
@@ -50,7 +51,7 @@ export const claimStaffAccess = onCall({ cors: true }, async (request) => {
   const userRef = db.collection("users").doc(uid);
   const userSnap = await userRef.get();
   const existingRole = userSnap.data()?.role;
-  if (existingRole === "admin" || request.auth.token.email === "admin@nextstep.app") {
+  if (existingRole === "admin" || isAdminEmail(request.auth.token.email)) {
     throw new HttpsError("failed-precondition", "Admin accounts do not redeem staff codes.");
   }
   if (existingRole === "gc" || existingRole === "staff") {

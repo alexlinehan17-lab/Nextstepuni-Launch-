@@ -29,11 +29,20 @@
  *      and read their work as them.
  */
 
+import { ADMIN_EMAIL } from "./adminIdentity";
+
 /** Addresses this function is allowed to touch. Deliberately narrow. */
 const GC_ADDRESS = /^gc-[a-z0-9-]{1,40}@nextstep\.app$/;
 
-/** The one account that must never be resettable through this path. */
-const ADMIN_ADDRESS = "admin@nextstep.app";
+/**
+ * Accounts that must never be resettable through this path.
+ *
+ * The live administrator, and the retired admin@nextstep.app address whose
+ * Auth account still exists. Neither is a gc-* address, so the pattern below
+ * already excludes them — this is belt and braces on the one function in the
+ * codebase that can set someone else's password.
+ */
+const NEVER_RESETTABLE = [ADMIN_EMAIL, "admin@nextstep.app"];
 
 /**
  * True only for a guidance-counsellor login.
@@ -45,7 +54,7 @@ const ADMIN_ADDRESS = "admin@nextstep.app";
 export function isResettableGcAddress(email: unknown): boolean {
   if (typeof email !== "string") return false;
   const normalised = email.trim().toLowerCase();
-  if (normalised === ADMIN_ADDRESS) return false;
+  if (NEVER_RESETTABLE.includes(normalised)) return false;
   return GC_ADDRESS.test(normalised);
 }
 

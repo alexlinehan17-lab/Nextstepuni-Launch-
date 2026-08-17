@@ -17,6 +17,7 @@ import { type SessionUser, getAvatarUrl, AVATAR_SEEDS } from '../utils/authUtils
 import { awaitWriteOrTimeout, saveInBackground } from '../utils/firestoreWrite';
 import { logError } from '../utils/logError';
 import { trackFunnel } from '../utils/funnel';
+import { isAdminEmail, isReservedEmail } from '../utils/adminIdentity';
 import { beginStaffProvisioning, endStaffProvisioning } from '../utils/staffProvisioning';
 import { SCHOOLS } from '../schoolData';
 import { createDemoStudentSession } from '../data/devStudent';
@@ -349,7 +350,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
             // Admin is the verified auth identity, not a doc field — matches
             // AuthContext and firestore.rules' server-side admin check.
             // (Security review 2026-07-16, LOW — single source of truth.)
-            isAdmin: cred.user.email === 'admin@nextstep.app',
+            isAdmin: isAdminEmail(cred.user.email),
             role: data.role || 'student',
             school: data.school || '',
             yearGroup: data.yearGroup,
@@ -381,7 +382,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           avatar: data.avatar || AVATAR_SEEDS[0],
           // Admin is the verified auth identity, not a doc field. (Security
           // review 2026-07-16, LOW — single source of truth.)
-          isAdmin: cred.user.email === 'admin@nextstep.app',
+          isAdmin: isAdminEmail(cred.user.email),
           role: data.role || 'student',
           school: data.school || '',
           yearGroup: data.yearGroup,
@@ -544,7 +545,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(normalisedEmail)) { setError('Please enter a valid email address.'); return; }
     if (password.length < 8) { setError('Password must be at least 8 characters.'); return; }
     if (!staffCode.trim()) { setError('Please enter your staff access code.'); return; }
-    if (normalisedEmail === 'admin@nextstep.app' || /^gc-.*@nextstep\.app$/.test(normalisedEmail)) { setError('This email is reserved.'); return; }
+    if (isReservedEmail(normalisedEmail)) { setError('This email is reserved.'); return; }
     setIsLoading(true); setError('');
     // Creating the account below signs the teacher in immediately, but they are
     // not known to be staff until claimStaffAccess returns. Hold the app on its
@@ -603,7 +604,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       if (!email.trim()) { setError('Please enter your email.'); return false; }
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) { setError('Please enter a valid email address.'); return false; }
       const normalised = email.trim().toLowerCase();
-      if (normalised === 'admin@nextstep.app' || /^gc-.*@nextstep\.app$/.test(normalised)) { setError('This email is reserved.'); return false; }
+      if (isReservedEmail(normalised)) { setError('This email is reserved.'); return false; }
       if (!name.trim()) { setError('Please enter your name.'); return false; }
       if (!school) { setError('Please select your school.'); return false; }
       if (!joinCode.trim()) { setError('Please enter your school join code.'); return false; }
@@ -628,7 +629,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const handleRegisterSubmit = async () => {
     setIsLoading(true); setError('');
     const registrationEmail = email.trim().toLowerCase();
-    if (registrationEmail === 'admin@nextstep.app' || /^gc-.*@nextstep\.app$/.test(registrationEmail)) {
+    if (isReservedEmail(registrationEmail)) {
       setError('This email is reserved.');
       setIsLoading(false);
       return;

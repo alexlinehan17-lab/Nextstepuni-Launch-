@@ -4,6 +4,7 @@ import { getFirestore } from "firebase-admin/firestore";
 import { timingSafeEqual } from "crypto";
 import { syncAuthorizationClaims } from "./authClaims";
 import { SCHOOL_JOIN_CODES, normaliseJoinCode } from "./schoolJoinPolicy";
+import { isAdminEmail } from "./adminIdentity";
 
 /**
  * Student school binding — the tenant-isolation trust anchor for students
@@ -56,7 +57,7 @@ export const claimStudentSchool = onCall({ cors: true }, async (request) => {
   // Staff/admin never redeem a student join code.
   if (
     existing.role === "admin" || existing.role === "staff" || existing.role === "gc" ||
-    request.auth.token.email === "admin@nextstep.app"
+    isAdminEmail(request.auth.token.email)
   ) {
     throw new HttpsError("failed-precondition", "Staff accounts do not use a student join code.");
   }

@@ -11,6 +11,7 @@ import {
 } from '@firebase/rules-unit-testing';
 import { collection, doc, getDoc, getDocs, setDoc, updateDoc } from 'firebase/firestore';
 import { getBytes, ref, uploadBytes } from 'firebase/storage';
+import { ADMIN_EMAIL } from '../../utils/adminIdentity';
 
 const PROJECT_ID = 'nextstepuni-rules-test';
 let environment: RulesTestEnvironment;
@@ -117,9 +118,20 @@ describe('Anonymous feedback boundary', () => {
     await assertFails(getDoc(doc(studentDb, 'feedbackRateLimits/bucket-1')));
   });
 
+  it('gives the retired admin@nextstep.app address no admin rights', async () => {
+    // Moved to a real mailbox on 2026-08-17 so the password can be reset. The
+    // old Auth account still exists, so prove it is now just another signed-in
+    // user as far as the database is concerned.
+    const retiredDb = environment.authenticatedContext('retired-admin', {
+      email: 'admin@nextstep.app',
+    }).firestore();
+    await assertFails(getDocs(collection(retiredDb, 'anonymousFeedback')));
+    await assertFails(getDoc(doc(retiredDb, 'users/student-1')));
+  });
+
   it('lets the platform admin read feedback and change only workflow fields', async () => {
     const adminDb = environment.authenticatedContext('admin', {
-      email: 'admin@nextstep.app',
+      email: ADMIN_EMAIL,
     }).firestore();
     await assertSucceeds(getDocs(collection(adminDb, 'anonymousFeedback')));
     await assertSucceeds(updateDoc(doc(adminDb, 'anonymousFeedback/feedback-1'), {

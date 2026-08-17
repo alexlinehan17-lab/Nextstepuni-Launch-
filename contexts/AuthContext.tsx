@@ -14,6 +14,7 @@ import { logError } from '../utils/logError';
 import { getProgressDocument } from '../services/progressRepository';
 import { getUserDocument, mergeUserDocument } from '../services/userRepository';
 import { DEMO_STUDENT_UID, createDemoStudentLoadedData } from '../data/devStudent';
+import { isAdminEmail } from '../utils/adminIdentity';
 
 // ─── Types ──────────────────────────────────────────────────
 
@@ -110,7 +111,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser: FirebaseUser | null) => {
       if (firebaseUser) {
         // Admin user
-        if (firebaseUser.email === 'admin@nextstep.app') {
+        if (isAdminEmail(firebaseUser.email)) {
           setUser({ uid: firebaseUser.uid, name: 'Admin', avatar: 'Charlie', isAdmin: true });
           setLoadedData({ ...defaultLoadedData });
           setIsLoadingAuth(false);

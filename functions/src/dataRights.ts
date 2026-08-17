@@ -3,6 +3,7 @@ import { logger } from "firebase-functions/v2";
 import { getAuth } from "firebase-admin/auth";
 import { getFirestore, FieldValue } from "firebase-admin/firestore";
 import { createHash } from "crypto";
+import { isAdminEmail } from "./adminIdentity";
 
 /**
  * Data-subject rights — GDPR Article 15 (access/export) and Article 17 (erasure).
@@ -86,7 +87,7 @@ async function authorize(
   const callerDoc = await db.collection("users").doc(callerUid).get();
   const caller = callerDoc.data() || {};
   const isAdmin =
-    request.auth.token.email === "admin@nextstep.app" ||
+    isAdminEmail(request.auth.token.email) ||
     caller.role === "admin" ||
     caller.isAdmin === true;
   if (isAdmin) return "admin";

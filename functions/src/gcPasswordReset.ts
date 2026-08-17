@@ -9,6 +9,7 @@ import { HttpsError, onCall } from "firebase-functions/v2/https";
 import { logger } from "firebase-functions/v2";
 import { randomInt } from "crypto";
 import { buildPassword, gcAddressToReset } from "./gcPasswordPolicy";
+import { isAdminEmail } from "./adminIdentity";
 
 /**
  * adminResetGcPassword
@@ -23,7 +24,7 @@ import { buildPassword, gcAddressToReset } from "./gcPasswordPolicy";
  * The dangerous capability here is setting someone else's password, so the
  * limits are enforced server-side and repeated in ./gcPasswordPolicy:
  *
- *   • caller must be admin@nextstep.app
+ *   • caller must be the administrator (functions/src/adminIdentity.ts)
  *   • target must be a gc-*@nextstep.app address — never a student, never a
  *     teacher, never the admin account itself
  *
@@ -37,7 +38,7 @@ export const adminResetGcPassword = onCall({ cors: true }, async (request) => {
   }
   // The one caller allowed. Checked against the token, not a Firestore field,
   // so it cannot be granted by writing a document.
-  if (request.auth.token.email !== "admin@nextstep.app") {
+  if (!isAdminEmail(request.auth.token.email)) {
     throw new HttpsError("permission-denied", "Only the administrator can reset a counsellor login.");
   }
 

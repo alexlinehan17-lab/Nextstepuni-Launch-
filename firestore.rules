@@ -3,6 +3,18 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
 
+    // Helper: is the requesting user the platform administrator?
+    //
+    // Keyed on the VERIFIED auth email, never a Firestore field — a document
+    // can be written, a token cannot be forged. Moved off admin@nextstep.app
+    // on 2026-08-17: that domain has no mailbox, so the password could never
+    // be reset and a lost password meant permanent lockout. Must stay in step
+    // with utils/adminIdentity.ts and functions/src/adminIdentity.ts.
+    function isAdmin() {
+      return request.auth != null
+             && request.auth.token.email == 'nextstepuniinfo@gmail.com';
+    }
+
     // Helper: is the requesting user school staff (guidance counsellor OR
     // teaching staff)? Both have full dashboard parity (owner decision
     // 2026-07-16; compliance/STAFF_DASHBOARD_PLAN.md). `staff` accounts are
@@ -70,8 +82,7 @@ service cloud.firestore {
                    && (!('avatar' in request.resource.data)
                        || (request.resource.data.avatar is string && request.resource.data.avatar.size() <= 100));
       // Admin can read all user docs + delete students (for AdminDashboard)
-      allow read, delete: if request.auth != null
-                  && request.auth.token.email == 'admin@nextstep.app';
+      allow read, delete: if isAdmin();
       // GC can read + delete user docs where school matches their own school
       allow read, delete: if request.auth != null
                   && isSchoolStaff()
@@ -94,8 +105,7 @@ service cloud.firestore {
       // Self-read
       allow read: if request.auth != null && request.auth.uid == userId;
       // Admin can read + delete all progress docs (for AdminDashboard)
-      allow read, delete: if request.auth != null
-                  && request.auth.token.email == 'admin@nextstep.app';
+      allow read, delete: if isAdmin();
       // GC can read + delete progress docs for students in their school
       allow read, delete: if request.auth != null
                   && isSchoolStaff()
@@ -136,8 +146,7 @@ service cloud.firestore {
         // Self read + write
         allow read, write: if request.auth != null && request.auth.uid == userId;
         // Admin read (AdminDashboard)
-        allow read: if request.auth != null
-                    && request.auth.token.email == 'admin@nextstep.app';
+        allow read: if isAdmin();
         // GC of the same school can read (mirrors the parent /progress read above)
         allow read: if request.auth != null
                     && isSchoolStaff()
@@ -158,8 +167,7 @@ service cloud.firestore {
         // Self read + write
         allow read, write: if request.auth != null && request.auth.uid == userId;
         // Admin read (AdminDashboard)
-        allow read: if request.auth != null
-                    && request.auth.token.email == 'admin@nextstep.app';
+        allow read: if isAdmin();
         // GC of the same school can read, so a Guidance Counsellor view can be
         // added later without a rules change (mirrors /progress and /sessions).
         allow read: if request.auth != null
@@ -425,10 +433,8 @@ service cloud.firestore {
     // intentionally contain no uid, name, email or school. Only the platform
     // administrator can read them and move them through the review workflow.
     match /anonymousFeedback/{feedbackId} {
-      allow read: if request.auth != null
-                  && request.auth.token.email == 'admin@nextstep.app';
-      allow update: if request.auth != null
-                    && request.auth.token.email == 'admin@nextstep.app'
+      allow read: if isAdmin();
+      allow update: if isAdmin()
                     && request.resource.data.diff(resource.data).affectedKeys()
                          .hasOnly(['status', 'reviewedAt'])
                     && request.resource.data.status in ['new', 'reviewing', 'planned', 'fixed', 'archived']
@@ -449,8 +455,7 @@ service cloud.firestore {
     // account. Append-only: a client may create an event and nothing else, so
     // history cannot be rewritten or mined. Only the administrator reads them.
     match /funnelEvents/{eventId} {
-      allow read: if request.auth != null
-                  && request.auth.token.email == 'admin@nextstep.app';
+      allow read: if isAdmin();
       allow create: if request.auth != null
                     && request.resource.data.keys().hasOnly(['step', 'day', 'at', 'platform', 'sessionId'])
                     && request.resource.data.step is string

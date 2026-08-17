@@ -25,7 +25,9 @@ describe('gc password reset targets', () => {
     }
   });
 
-  it('refuses the administrator account', () => {
+  it('refuses the administrator account, live and retired', () => {
+    expect(isResettableGcAddress('nextstepuniinfo@gmail.com')).toBe(false);
+    expect(isResettableGcAddress('NextStepUniInfo@Gmail.com')).toBe(false);
     expect(isResettableGcAddress('admin@nextstep.app')).toBe(false);
     expect(isResettableGcAddress('ADMIN@nextstep.app')).toBe(false);
   });
