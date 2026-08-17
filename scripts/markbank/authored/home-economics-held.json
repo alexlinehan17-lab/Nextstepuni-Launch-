@@ -1,0 +1,297 @@
+[
+ {
+  "id": "he-2025-hl-sb-q2a-calcium",
+  "topicId": "home-economics-0-8",
+  "conceptId": "calcium-absorption",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2025 HL Section B Q2(a) — calcium absorption",
+  "questionText": "Outline the factors that affect the absorption of calcium in the body.",
+  "stem": "'It is estimated that up to 300,000 people in Ireland have osteoporosis.' (www.irishosteoporosis.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "5 points @ 3 marks (graded 3:2:1:0)",
+   "answer": 5,
+   "ofParts": 2,
+   "perPart": 3
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Outline the factors that affect the absorption of calcium in the body",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Five factors at 3 marks, graded 3:2:1:0. The scheme splits them into two lists — those that assist absorption and those that inhibit it — and both count, so the safest five come from across the two. Note that several appear as \"excess\" of something otherwise good (fibre, protein, vitamin A): the excess is the point, and writing the nutrient alone reverses the meaning.",
+    "group": {
+     "claimMax": 5,
+     "perOption": 3,
+     "options": [
+      "Assist Vitamin D; phosphorus; protein; acid environment; vitamin C; hormone parathormone; hormone oestrogen; lactose in milk; vitamin B/B12 ;etc.",
+      "Inhibit tannins; excess dietary fibre; excess fat; excess protein; phytic acid; oxalic acid; excess alcohol; smoking; nicotine; digestive disorders e.g. coeliacs disease; caffeine; drugs; excess Vit A; excess Vit K; excess sodium/salt; sulphur; phosphoric acid; etc."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints two grouped lists rather than five discrete points, so the options are those two groups. A student answering entirely from one list can still reach five factors, which is why the group is not capped at one from each.",
+  "heldReason": "The scheme pools 26 individual factors under two headings (Assist / Inhibit) and prices five of them at 3 marks each. Shown as the two headings, a student could claim five marks from two options, which the build refuses. Shown as 26 options it is three times the 14 a card may display. Splitting the tariff across two rows would price a pooled menu as if the SEC had reserved marks for each list, which it does not."
+ },
+ {
+  "id": "he-2025-hl-sb-q2b",
+  "topicId": "home-economics-0-9",
+  "conceptId": "cheese-production",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2025 HL Section B Q2(b)",
+  "questionText": "Give a detailed account of the production of cheese. Refer to: stages of production; packaging and labelling.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "stages 6 points @ 2 marks (graded 2:1:0); packaging 2 points @ 1 mark (graded 1:0); labelling 3 points @ 1 mark (graded 1:0)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 17,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Stages of production",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Six stages at 2 marks, graded 2:1:0. The stages carry 12 of the 17 marks, and they are marked as a process: naming the stage earns 1 and saying what it achieves earns the second. Cheddaring and scalding are the two the scheme names explicitly and the two most often merged into \"the curds are heated\", which pays once, not twice.",
+    "group": {
+     "claimMax": 6,
+     "perOption": 2,
+     "options": [
+      "Stages of production: milk is pasteurised",
+      "(raw cheeses made from unpasteurised milk) a culture of lactic acid bacteria/vinegar is added",
+      "homogenised",
+      "lactose (milk sugar) changes to lactic acid which adds flavour and acts as a preservative",
+      "milk is heated to 30°C",
+      "rennet/curdling agent is added – contains the enzyme rennin which coagulates protein (caseinogen to casein)",
+      "mixture separates into curds (solids) and whey (liquid)",
+      "whey is drained off",
+      "curds are chopped to release more whey",
+      "curds are heated to 35-40°C to squeeze out more whey and achieve correct consistency (scalding)",
+      "curds are cut into blocks and piled on top of each other to complete drainage of whey (cheddaring)",
+      "the blocks are cut",
+      "2% salt is added for flavour and preservation",
+      "salted curds are placed in moulds and pressed",
+      "moulds may be sprayed with hot water to form a protective rind",
+      "cheese is removed from the mould",
+      "details/date of production is stamped on cheese rind",
+      "stored for 3-12 months to ripen/mature",
+      "cheese is graded",
+      "weighed into portions"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Packaging",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Two packaging points at 1 mark each, all-or-nothing. Cheap marks and easily skipped — the question says \"packaging and labelling\", and a full account of production with nothing on either loses 5 of 17.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "vacuum packed in polythene zip-lock plastic bag",
+      "waxed paper",
+      "plastic tubs"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "Labelling",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Three labelling points at 1 mark each, all-or-nothing. These are label contents, not label law: the scheme wants what is printed on the pack.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "type",
+      "brand",
+      "quantity",
+      "nutritional information",
+      "date-stamped"
+     ]
+    }
+   }
+  ],
+  "notes": "Three separately priced strands (12 + 2 + 3), so three rows. The bullets in the question are the scheme's own headings, which is why packaging and labelling are not pooled.",
+  "heldReason": "The stages-of-production row lists 20 steps and a card may show at most 14. Merging steps would fuse marking points the scheme prices separately (cheddaring and scalding are distinct 2-mark stages), and dropping steps would hide part of the SEC's own process."
+ },
+ {
+  "id": "he-2025-hl-sb-q3b",
+  "topicId": "home-economics-0-4",
+  "conceptId": "food-storage-reheating",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2025 HL Section B Q3(b)",
+  "questionText": "Discuss the importance of correct food storage and cooking/reheating procedures in ensuring that food is safe to eat.",
+  "stem": "'Everyone has the right to safe food.' (www.fsai.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 points @ 5 marks (graded 5:3:0); 1 point to refer to storage; 1 point to refer to cooking/reheating and 2 others",
+   "answer": 4,
+   "ofParts": 2,
+   "perPart": 5
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Discuss the importance of correct food storage and cooking/reheating procedures",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "Four points at 5 marks, graded 5:3:0 — no partial credit between. The distribution rule is the trap: the scheme requires at least one point on storage AND at least one on cooking/reheating, then two of either. Four excellent storage points cannot score 20 because the cooking mark is reserved. Every point here is a temperature or a time, so a point without its number sits at 3.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "Storage cover foods; refrigerate perishable foods between 2oC and 5oC; store raw meat/poultry under/away from cooked produce; don’t over pack fridge; allow foods to cool before refrigerating; cool and fast freeze prepared foods immediately; freeze at -25oC; store frozen foods at -18oC; never refreeze thawed foods; store hot foods at temperatures above 65oC; etc.",
+      "Cooking/reheating defrost frozen foods completely in fridge before cooking; cook large joints of meat and poultry thoroughly; turn foods during cooking; use correct cooking times and temperatures; serve cooked foods immediately; reheating should be done quickly at temperatures above 100oC; stir high risk liquid foods i.e. stew and gravy to ensure they are re-heated throughout; reheat food only once; etc."
+     ]
+    }
+   }
+  ],
+  "notes": "Two grouped lists in the scheme, and both must be drawn on — the notation states the distribution explicitly, so it is carried in the notation rather than left to the reader.",
+  "heldReason": "The scheme prints two grouped lists (Storage / Cooking-reheating) and requires at least one point from each plus two others. As two options a student could claim four marks from two; split into individual points it is 17 options against a ceiling of 14. The distribution rule has no representation in the card model."
+ },
+ {
+  "id": "he-2025-hl-sb-q4a",
+  "topicId": "home-economics-1-3",
+  "conceptId": "appliances-environmental-responsibility",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2025 HL Section B Q4(a)",
+  "questionText": "Discuss how consumers can be environmentally responsible when choosing, using and disposing of household appliances.",
+  "stem": "Consumer behaviour has an impact on the environment.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 points @ 4 marks (graded 4:2:0); 1 point on each and 1 other",
+   "answer": 4,
+   "ofParts": 3,
+   "perPart": 4
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Discuss how consumers can be environmentally responsible when choosing, using and disposing of household appliances",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "Four points at 4 marks, graded 4:2:0. The distribution is fixed by the scheme: one point on each of choosing, using and disposing, then one more from anywhere. The question names the three stages, so answering only on energy ratings caps the answer at 4 of 16 no matter how good it is. Disposing is the thinnest list and the one most often skipped — the WEEE directive is the point to know.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 4,
+     "options": [
+      "Choosing check energy efficiency rating; choose eco/reduced water wash/low temperature wash; correct size for needs; self-defrosting; microwaves/air fryers as substitutes for oven; choose brands known for longer life/designed to be repairable; avoid over packaged appliances; etc.",
+      "Using economy cycles/low temperature washes; ensure loads are full; switch off stand-by mode; avoid overpacking fridge; keep fridge door closed; cool food before putting into fridge/freezer; microwaves/air fryers as substitutes for oven use; etc.",
+      "Disposing recycling centres; WEEE directive enables consumer to leave household electrical and electronic equipment back free of charge, either to retail outlets or to other authorised collection points; show special care when disposing of refrigeration appliances; etc."
+     ]
+    }
+   }
+  ],
+  "notes": "Three stages named in the question and priced one each plus one free, so the options are the three stages rather than the individual tips inside them.",
+  "heldReason": "Three stages named in the question (choosing / using / disposing) with four points to be claimed across them, at least one from each. Three options cannot carry a claim of four, and the individual tips come to 17, over the 14 ceiling."
+ },
+ {
+  "id": "he-2025-hl-sb-q5a",
+  "topicId": "home-economics-2-0",
+  "conceptId": "family-historical-development",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2025 HL Section B Q5(a)",
+  "questionText": "Give an account of the historical development of the family in Ireland from the middle of the twentieth century to the present day.",
+  "stem": "The family plays a key role in society and is continually adapting to change.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 points @ 5 marks (graded 5:3:0)",
+   "answer": 4,
+   "ofParts": 16,
+   "perPart": 5
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Give an account of the historical development of the family in Ireland",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "Four points at 5 marks, graded 5:3:0 — named and undeveloped is a 3, and there is nothing between 3 and 5. The scheme lists the headings only; the 5 comes from tracking the change across the period, so each point needs a then and a now. A description of the family today with no historical movement is the commonest way to score 12 here.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "family structure",
+      "family size",
+      "location",
+      "parental roles",
+      "standard of living",
+      "marriage",
+      "income",
+      "family relationships",
+      "state supports",
+      "communication",
+      "childcare",
+      "education",
+      "gender equality",
+      "religion",
+      "child mortality",
+      "technology"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme gives bare headings rather than sentences, which is unusual and worth showing as printed: the marks are earned by developing them, not by listing more of them.",
+  "heldReason": "The scheme gives 16 bare headings and asks for four developed points. All 16 exceed the 14 a card may show, and there is no defensible basis for choosing which two of the SEC's own headings to drop."
+ },
+ {
+  "id": "he-2025-hl-sb-q3a",
+  "subjectId": "home-economics",
+  "level": "higher",
+  "year": 2025,
+  "section": "B",
+  "heldReason": "Q3(a), the food-poisoning bacteria question (18 marks). The scheme prints a five-column table (bacteria / source / high-risk foods / factors affecting growth / symptoms) which the PDF extraction interleaves line by line, so column boundaries cannot be recovered from the markdown with confidence. Both historical scheme corruptions in this repo came from reconstructing a table by hand; this one needs the columns re-extracted from the PDF before it can be authored."
+ },
+ {
+  "id": "he-2025-hl-sb-q4b-features",
+  "subjectId": "home-economics",
+  "level": "higher",
+  "year": 2025,
+  "section": "B",
+  "heldReason": "The modern-features strand of Q4(b) (6 marks). The scheme lists 15 features and a card may show at most 14. The working-principle strand of the same part ships as he-2025-hl-sb-q4b-principle."
+ }
+]

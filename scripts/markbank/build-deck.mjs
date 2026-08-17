@@ -124,6 +124,26 @@ function schemeFor(subjectId, card) {
   return schemeCache.get(file);
 }
 
+/**
+ * Row kinds the deck's own type accepts.
+ *
+ * Nothing validated this, and it showed: the authored Home Economics file had
+ * drifted to kinds ("required", "explain") that are not in RowKind, which the
+ * build happily emitted and typecheck then rejected — after the deck had been
+ * written. Caught here the card is dropped with a reason instead.
+ * Mirrors RowKind in types/markBank.ts.
+ */
+const ROW_KINDS = new Set(['point', 'alt', 'allOf', 'anyN', 'criterion', 'gate']);
+
+function badRowKind(c) {
+  for (const r of c.rows) {
+    if (!ROW_KINDS.has(r.kind)) {
+      return `row "${r.id}" has kind "${r.kind}", which is not one of ${[...ROW_KINDS].join(', ')}`;
+    }
+  }
+  return null;
+}
+
 /** Text that is a table fragment or a header rather than an answerable question. */
 function badQuestion(text) {
   const t = String(text).trim();
@@ -397,6 +417,9 @@ for (const c of cards) {
     dropped.push(`${c.id}: names lettered parts but carries no labelled figure`);
     continue;
   }
+
+  const kindFault = badRowKind(c);
+  if (kindFault) { dropped.push(`${c.id}: ${kindFault}`); continue; }
 
   // Every marking point must actually appear in its own scheme.
   const scheme = schemeFor(SUBJECT_ID, c);
