@@ -204,6 +204,29 @@ function displayBody(item: AppNotification): string {
   return staffMessageText(item.messageId);
 }
 
+/**
+ * Titles for staff-originated notifications come from here, never from the
+ * document.
+ *
+ * `title` used to be rendered raw for every type — so even a well-formed
+ * gc-kudos item carried an unbounded free-text field to a student, in the
+ * bolder of the two lines (security review 2026-08-17). Staff writes are now
+ * denied by firestore.rules and composed server-side, which closes the write
+ * path; this closes the READ path for the documents already in the database
+ * from before that change.
+ */
+const STAFF_TITLES: Partial<Record<NotificationType, string>> = {
+  'gc-kudos': 'Words of encouragement',
+  'gc-recommendation': 'A tool your school suggests',
+  'gc-broadcast': 'Message from your school',
+};
+
+function displayTitle(item: AppNotification): string {
+  return STAFF_ORIGINATED.has(item.type)
+    ? (STAFF_TITLES[item.type] ?? 'Message from your school')
+    : item.title;
+}
+
 const colorClasses = ICON_COLOR_MAP[item.type] || 'text-zinc-500 bg-zinc-100 dark:bg-zinc-800';
 
   return (
@@ -217,7 +240,7 @@ const colorClasses = ICON_COLOR_MAP[item.type] || 'text-zinc-500 bg-zinc-100 dar
       <div className="flex-1 min-w-0">
         <div className="flex items-start justify-between gap-2">
           <p className={`text-sm leading-tight ${!item.read ? 'font-semibold text-zinc-800 dark:text-white' : 'font-medium text-zinc-600 dark:text-zinc-300'}`}>
-            {item.title}
+            {displayTitle(item)}
           </p>
           {!item.read && <div className="w-2 h-2 rounded-full bg-[var(--accent-hex)] shrink-0 mt-1.5" />}
         </div>

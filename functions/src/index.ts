@@ -23,6 +23,9 @@ export { submitAnonymousFeedback } from "./anonymousFeedback";
 // Admin-only reset for the derived gc-{school}@nextstep.app logins, whose
 // mailboxes do not exist so the console's emailed reset goes nowhere.
 export { adminResetGcPassword } from "./gcPasswordReset";
+// The only path by which staff can put a notification in front of a student —
+// firestore.rules denies direct staff writes. See ./staffMessagePolicy.
+export { sendStaffNotification } from "./staffMessage";
 
 /**
  * resetStudentPassword
@@ -86,6 +89,10 @@ export const resetStudentPassword = onCall(
     // Reset the password and flag account for password change
     try {
       await auth.updateUser(studentUid, { password: tempPassword });
+      // Terminate existing sessions (security review 2026-08-17). updateUser
+      // alone leaves already-issued ID tokens valid for ~1 hour, so a reset
+      // prompted by a compromised account would not actually lock anyone out.
+      await auth.revokeRefreshTokens(studentUid);
       await db.collection("users").doc(studentUid).update({ needsPasswordChange: true });
     } catch (err) {
       console.error('Failed to reset password:', err);

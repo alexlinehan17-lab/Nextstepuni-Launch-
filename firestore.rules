@@ -219,11 +219,21 @@ service cloud.firestore {
       // Any user can read/write their own notifications (mark read, auto-notifications)
       allow read, create, update: if request.auth != null && request.auth.uid == userId;
 
-      // GCs can read/write notifications for students in their school
-      // (read needed because addNotification uses runTransaction with txn.get)
-      allow read, create, update: if request.auth != null
-                   && isSchoolStaff()
-                   && get(/databases/$(database)/documents/users/$(userId)).data.school == callerSchool();
+      // Staff may READ a student's notifications in their own school, but may
+      // NOT write them.
+      //
+      // Security review 2026-08-17: staff previously had create+update here with
+      // NO field validation, and the "preset messages only" safeguarding control
+      // lived entirely in the student's React bundle, keyed on `type` — a field
+      // the sender writes. One setDoc from a staff member's browser console put
+      // arbitrary prose in front of a named minor. Rules cannot fix that: the
+      // document is a single `items` array and rules cannot iterate arrays.
+      //
+      // So writes go through the sendStaffNotification callable, which composes
+      // every field server-side from a preset id (Admin SDK bypasses rules).
+      allow read: if request.auth != null
+                  && isSchoolStaff()
+                  && get(/databases/$(database)/documents/users/$(userId)).data.school == callerSchool();
     }
 
     // Kudos collection: peer encouragement notes

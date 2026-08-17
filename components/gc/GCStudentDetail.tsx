@@ -7,7 +7,6 @@ import React, { useState, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import { ArrowLeft, Flame, Coins, ChevronDown, ChevronRight, BookOpen, AlertTriangle, X, Compass, BarChart3, Brain, Lightbulb, Heart, UserPlus, TrendingDown, TrendingUp, CheckCircle, MinusCircle, Flag, type LucideIcon } from 'lucide-react';
-import { addNotification } from './gcNotifications';
 import { type CourseData } from '../Library';
 import { type CategoryType } from '../KnowledgeTree';
 import { getAvatarUrl } from '../../utils/authUtils';
@@ -36,11 +35,13 @@ import {
 import { getStatusReasons, STATUS_CONFIG } from '../../utils/studentStatus';
 import { type FlagData, type FlagPriority } from '../../hooks/useGCFlags';
 import { PentagonRadar } from './PentagonRadar';
+import { getFunctions, httpsCallable } from 'firebase/functions';
+import app from '../../firebase';
+import { logError } from '../../utils/logError';
 import {
   STAFF_ENCOURAGEMENT,
   STAFF_RECOMMENDATION_NOTES,
   isKnownStaffMessage,
-  staffMessageText,
 } from '../../data/staffEncouragement';
 
 const CUSTOM_EASE = [0.16, 1, 0.3, 1] as const;
@@ -80,9 +81,6 @@ interface GCStudentDetailProps {
   school?: string;
   isTrayMode?: boolean;
   alerts?: EarlyWarningAlert[];
-  gcName?: string;
-  /** Signed-in staff member's uid — stamped on anything they send, for attribution. */
-  gcUid?: string;
   gcFlags?: GCFlagsAPI;
 }
 
@@ -102,7 +100,7 @@ const INNOVATION_TOOLS: { id: string; title: string; jcTitle?: string; curriculu
   { id: 'first-gen-intel',  title: 'First Gen Intel',            curriculum: 'senior' },
 ];
 
-export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCourses, onBack, isTrayMode, alerts = [], gcName, gcUid, gcFlags }) => {
+export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCourses, onBack, isTrayMode, alerts = [], gcFlags }) => {
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
   const [showRecommendModal, setShowRecommendModal] = useState(false);
   const [showKudosModal, setShowKudosModal] = useState(false);
@@ -1046,25 +1044,39 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
 
   // ─── Quick Actions (Recommend / Kudos) ───────────────────────────────
 
+  // Staff→student messages go through the sendStaffNotification callable.
+  // firestore.rules denies staff writes to /notifications: the safeguarding
+  // control used to live in the student's own bundle, keyed on a field the
+  // sender wrote, so one setDoc from a browser console put arbitrary prose in
+  // front of a minor (security review 2026-08-17). The server now composes
+  // every field a student sees from the preset id.
+  const sendStaffMessage = async (
+    kind: 'encouragement' | 'recommendation',
+    presetId: string,
+    toolId?: string,
+  ): Promise<boolean> => {
+    try {
+      const fn = httpsCallable<
+        { studentUids: string[]; kind: string; messageId?: string; toolId?: string },
+        { success: true; delivered: number }
+      >(getFunctions(app), 'sendStaffNotification');
+      const result = await fn({
+        studentUids: [student.user.uid],
+        kind,
+        messageId: presetId || undefined,
+        toolId,
+      });
+      return result.data.delivered > 0;
+    } catch (err) {
+      logError('GCStudentDetail.sendStaffMessage', err);
+      return false;
+    }
+  };
+
   const handleSendRecommendation = async () => {
     if (!recommendToolId) return;
     setIsSendingAction(true);
-    const toolDef = INNOVATION_TOOLS.find(t => t.id === recommendToolId);
-    const toolName = toolDef
-      ? (isJunior && toolDef.jcTitle ? toolDef.jcTitle : toolDef.title)
-      : recommendToolId;
-    await addNotification(student.user.uid, {
-      type: 'gc-recommendation',
-      title: `Tool Recommended: ${toolName}`,
-      // body is a convenience copy for logs/among app-generated types; the
-      // student's client renders from messageId, never from this string.
-      body: staffMessageText(recommendNoteId, `${gcName} recommends trying ${toolName}.`),
-      messageId: recommendNoteId || undefined,
-      fromGCName: gcName,
-      fromGCUid: gcUid,
-      actionToolId: recommendToolId,
-      severity: 'info',
-    });
+    await sendStaffMessage('recommendation', recommendNoteId, recommendToolId);
     setIsSendingAction(false);
     setShowRecommendModal(false);
     setRecommendToolId(null);
@@ -1074,15 +1086,7 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
   const handleSendKudos = async () => {
     if (!isKnownStaffMessage(kudosMessageId)) return;
     setIsSendingAction(true);
-    await addNotification(student.user.uid, {
-      type: 'gc-kudos',
-      title: 'Words of encouragement',
-      body: staffMessageText(kudosMessageId),
-      messageId: kudosMessageId,
-      fromGCName: gcName,
-      fromGCUid: gcUid,
-      severity: 'success',
-    });
+    await sendStaffMessage('encouragement', kudosMessageId);
     setIsSendingAction(false);
     setShowKudosModal(false);
     setKudosMessageId('');

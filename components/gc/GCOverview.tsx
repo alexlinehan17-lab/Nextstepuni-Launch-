@@ -37,11 +37,13 @@ import {
 import { type EarlyWarningAlert, type AlertSeverity } from './gcAlerts';
 import { GCKeyEvents } from './GCKeyEvents';
 import { SubjectHealthPanel } from './SubjectHealthPanel';
-import { addNotificationToMultiple } from './gcNotifications';
 import GCExportModal from './GCExportModal';
 import { STATUS_CONFIG } from '../../utils/studentStatus';
 import { type FlagData, type FlagPriority } from '../../hooks/useGCFlags';
 import { logError } from '../../utils/logError';
+import { getFunctions, httpsCallable } from 'firebase/functions';
+import app from '../../firebase';
+import { STAFF_BROADCASTS } from '../../data/staffEncouragement';
 
 const CUSTOM_EASE = [0.16, 1, 0.3, 1] as const;
 
@@ -163,11 +165,10 @@ interface GCOverviewProps {
   onResetPassword?: (studentUid: string) => void;
   alerts?: EarlyWarningAlert[];
   onDismissAlert?: (alert: EarlyWarningAlert) => void;
-  gcName?: string;
   gcFlags?: GCFlagsAPI;
 }
 
-export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses, school, onSelectStudent, onDeleteStudent, onResetPassword, alerts = [], onDismissAlert, gcName, gcFlags }) => {
+export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses, school, onSelectStudent, onDeleteStudent, onResetPassword, alerts = [], onDismissAlert, gcFlags }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [showStatusGuide, setShowStatusGuide] = useState(false);
   const [showBroadcastModal, setShowBroadcastModal] = useState(false);
@@ -181,7 +182,8 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
   const [broadcastCurriculum, setBroadcastCurriculum] = useState<CurriculumFilter>('all');
   const [broadcastYearGroups, setBroadcastYearGroups] = useState<Set<YearGroup>>(new Set());
   const [showExportModal, setShowExportModal] = useState(false);
-  const [broadcastMessage, setBroadcastMessage] = useState('');
+  // Preset id, never prose — staff cannot type free text to students.
+  const [broadcastMessageId, setBroadcastMessageId] = useState('');
   const [isBroadcasting, setIsBroadcasting] = useState(false);
   const [statusFilter, setStatusFilter] = useState<StatusFilter>('all');
   // Cohort filters (Phase 6 JC support). curriculumFilter is the primary
@@ -982,38 +984,52 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                 </div>
               </div>
 
-              <textarea
-                value={broadcastMessage}
-                onChange={(e) => setBroadcastMessage(e.target.value)}
-                placeholder={`Write a message to ${audienceLabel}...`}
-                maxLength={300}
-                className="w-full bg-zinc-50 dark:bg-zinc-800/50 border border-zinc-200 dark:border-zinc-700 rounded-xl p-3 text-sm text-zinc-800 dark:text-white placeholder:text-zinc-400 resize-none h-28 focus:outline-none focus:border-[rgba(242,107,31,0.5)] mb-1"
-              />
-              <p className="text-[10px] text-zinc-400 text-right mb-3">{broadcastMessage.length}/300</p>
+              <p className="text-[11px] font-semibold uppercase tracking-wide text-zinc-400 mb-1.5">
+                Choose a message for {audienceLabel}
+              </p>
+              <div className="space-y-1 mb-3 max-h-56 overflow-y-auto">
+                {STAFF_BROADCASTS.map(message => (
+                  <button
+                    key={message.id}
+                    type="button"
+                    aria-pressed={broadcastMessageId === message.id}
+                    onClick={() => setBroadcastMessageId(message.id)}
+                    className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${broadcastMessageId === message.id ? 'bg-[#FDEEDF] text-[#8C3A0E] font-medium' : 'hover:bg-zinc-50 dark:hover:bg-zinc-800 text-zinc-700 dark:text-zinc-300'}`}
+                  >
+                    {message.text}
+                  </button>
+                ))}
+              </div>
               <div className="flex gap-2">
                 <button onClick={() => setShowBroadcastModal(false)} className="flex-1 py-2 rounded-xl text-sm font-medium text-zinc-500 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
                   Cancel
                 </button>
                 <button
                   onClick={async () => {
-                    if (!broadcastMessage.trim() || broadcastRecipients.length === 0) return;
+                    if (!broadcastMessageId || broadcastRecipients.length === 0) return;
                     setIsBroadcasting(true);
-                    const uids = broadcastRecipients.map(s => s.user.uid);
-                    await addNotificationToMultiple(uids, {
-                      type: 'gc-broadcast',
-                      title: 'Message from your school',
-                      body: broadcastMessage.trim(),
-                      fromGCName: gcName,
-                      severity: 'info',
-                    });
+                    // Server-composed, preset-only. See functions/src/staffMessagePolicy.
+                    try {
+                      const fn = httpsCallable<
+                        { studentUids: string[]; kind: string; messageId: string },
+                        { success: true; delivered: number }
+                      >(getFunctions(app), 'sendStaffNotification');
+                      await fn({
+                        studentUids: broadcastRecipients.map(s => s.user.uid),
+                        kind: 'broadcast',
+                        messageId: broadcastMessageId,
+                      });
+                    } catch (err) {
+                      logError('GCOverview.broadcast', err);
+                    }
                     setIsBroadcasting(false);
                     setShowBroadcastModal(false);
-                    setBroadcastMessage('');
+                    setBroadcastMessageId('');
                     // Reset audience to default for the next broadcast
                     setBroadcastCurriculum('all');
                     setBroadcastYearGroups(new Set());
                   }}
-                  disabled={!broadcastMessage.trim() || isBroadcasting || broadcastRecipients.length === 0}
+                  disabled={!broadcastMessageId || isBroadcasting || broadcastRecipients.length === 0}
                   className="flex-1 py-2 rounded-xl text-sm font-medium text-white disabled:opacity-50 disabled:cursor-not-allowed transition-colors dark:!bg-[#F26B1F]"
                   style={{ backgroundColor: ACCENT }}
                 >

@@ -41,6 +41,9 @@ const AdminGcAccessPanel: React.FC = () => {
   const [openSchool, setOpenSchool] = useState<string | null>(null);
   const [chosen, setChosen] = useState('');
   const [showChosen, setShowChosen] = useState(false);
+  const [pendingAdoption, setPendingAdoption] = useState<
+    { schoolId: string; password?: string; message: string } | null
+  >(null);
   const [result, setResult] = useState<ResetResult | null>(null);
   const [error, setError] = useState('');
   const [copied, setCopied] = useState(false);
@@ -51,19 +54,30 @@ const AdminGcAccessPanel: React.FC = () => {
     setShowChosen(false);
   };
 
-  /** `password` omitted → the server generates one. */
-  const reset = async (schoolId: string, password?: string) => {
+  /**
+   * `password` omitted → the server generates one.
+   *
+   * `adopt` is only ever set after the server has told us an unrecognised
+   * account already holds this login, and the administrator has confirmed they
+   * recognise it. It is never sent speculatively — the whole point is that
+   * adoption is a deliberate act, not a side effect of clicking Reset.
+   */
+  const reset = async (schoolId: string, password?: string, adopt?: boolean) => {
     const email = `gc-${schoolId}@nextstep.app`;
     setBusySchool(schoolId);
     setError('');
     setResult(null);
+    setPendingAdoption(null);
     setCopied(false);
     try {
-      const fn = httpsCallable<{ email: string; password?: string }, ResetResult & { success: true }>(
-        getFunctions(app),
-        'adminResetGcPassword',
-      );
-      const response = await fn(password === undefined ? { email } : { email, password });
+      const fn = httpsCallable<
+        { email: string; password?: string; adoptExisting?: boolean },
+        ResetResult & { success: true }
+      >(getFunctions(app), 'adminResetGcPassword');
+      const payload: { email: string; password?: string; adoptExisting?: boolean } = { email };
+      if (password !== undefined) payload.password = password;
+      if (adopt) payload.adoptExisting = true;
+      const response = await fn(payload);
       // Trust what came back, not what we asked for.
       //
       // Hosting and functions deploy as separate CI jobs, so for a few minutes
@@ -90,6 +104,11 @@ const AdminGcAccessPanel: React.FC = () => {
         setError(`No counsellor account exists for ${email} yet. Create it in the Firebase console first.`);
       } else if (code.endsWith('permission-denied')) {
         setError('Only the administrator account can reset a counsellor login.');
+      } else if (code.endsWith('failed-precondition')) {
+        // The login is already held by an account the platform did not create.
+        // Surface it rather than adopting silently — this is the escalation the
+        // 2026-08-17 review found, so the administrator has to make the call.
+        setPendingAdoption({ schoolId, password, message });
       } else if (code.endsWith('invalid-argument')) {
         setError(message || `Choose a password of at least ${MIN_SUPPLIED_PASSWORD_LENGTH} characters.`);
       } else {
@@ -127,6 +146,40 @@ const AdminGcAccessPanel: React.FC = () => {
           <TriangleAlert size={16} className="mt-0.5 shrink-0" />
           {error}
         </p>
+      )}
+
+      {pendingAdoption && (
+        <div role="alert" className="mb-5 rounded-r-[10px] border-l-[3px] border-[#F26B1F] bg-[#FDEEDF] p-5">
+          <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#8C3A0E]">
+            This login already has an account
+          </p>
+          <p className="mt-2 text-sm leading-relaxed text-[#8C3A0E]">{pendingAdoption.message}</p>
+          <p className="mt-2 text-sm leading-relaxed text-[#8C3A0E]">
+            If you do not recognise it, someone else may have registered this address. Check it in the
+            Firebase console before continuing — adopting it grants that account access to every student
+            record in the school.
+          </p>
+          <div className="mt-4 flex flex-wrap gap-2">
+            <button
+              type="button"
+              onClick={() => {
+                const { schoolId, password } = pendingAdoption;
+                setPendingAdoption(null);
+                void reset(schoolId, password, true);
+              }}
+              className="rounded-full border-2 border-[#1A1A1A] bg-white px-4 py-2 text-xs font-bold text-[#1A1A1A]"
+            >
+              I recognise it — adopt
+            </button>
+            <button
+              type="button"
+              onClick={() => setPendingAdoption(null)}
+              className="rounded-full border-2 border-[#1A1A1A] bg-[#1A1A1A] px-4 py-2 text-xs font-bold text-white"
+            >
+              Stop
+            </button>
+          </div>
+        </div>
       )}
 
       {result && (

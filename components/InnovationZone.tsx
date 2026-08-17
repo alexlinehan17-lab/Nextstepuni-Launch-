@@ -303,7 +303,9 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                 for (const n of notifications) {
                     if (n.type === 'gc-recommendation' && !n.read && n.actionToolId && !recMap[n.actionToolId]) {
                         // Preset text only — never the stored body. See data/staffEncouragement.
-                        recMap[n.actionToolId] = { fromName: n.fromGCName || 'your counsellor', message: staffMessageText(n.messageId, '') };
+                        // fromGCName is stamped server-side now; the slice bounds legacy documents
+                        // written before staff notification writes were server-mediated.
+                        recMap[n.actionToolId] = { fromName: (n.fromGCName || 'your counsellor').slice(0, 50), message: staffMessageText(n.messageId, '') };
                     }
                 }
                 if (!cancelled) setGcRecommendations(recMap);

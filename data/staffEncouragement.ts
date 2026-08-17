@@ -51,8 +51,28 @@ export const STAFF_RECOMMENDATION_NOTES: StaffMessage[] = [
   { id: 'sr5', text: 'Give this a try and see how you get on.' },
 ];
 
+/**
+ * Whole-year broadcasts.
+ *
+ * Broadcasts were the one staff→student channel still carrying free text after
+ * the 2026-08-17 preset migration — and because 'gc-broadcast' counts as
+ * staff-originated, the student client had already stopped rendering that text,
+ * so every broadcast sent since displayed as the neutral fallback and no
+ * student saw the message. These presets close the safeguarding hole and
+ * un-break the feature together. Operational, not personal: a broadcast goes to
+ * a whole year group, so nothing here can be about an individual.
+ */
+export const STAFF_BROADCASTS: StaffMessage[] = [
+  { id: 'sb1', text: 'A reminder to check your study plan for this week.' },
+  { id: 'sb2', text: 'Mock exams are coming up — worth starting your revision now.' },
+  { id: 'sb3', text: 'Your school has study supports available. Ask your guidance counsellor.' },
+  { id: 'sb4', text: 'Take a look at your subject targets when you get a chance.' },
+  { id: 'sb5', text: 'A reminder that your guidance counsellor is available to talk.' },
+  { id: 'sb6', text: 'Keep going — steady work now makes the run-in much easier.' },
+];
+
 const BY_ID: Record<string, string> = Object.fromEntries(
-  [...STAFF_ENCOURAGEMENT, ...STAFF_RECOMMENDATION_NOTES].map(m => [m.id, m.text]),
+  [...STAFF_ENCOURAGEMENT, ...STAFF_RECOMMENDATION_NOTES, ...STAFF_BROADCASTS].map(m => [m.id, m.text]),
 );
 
 /**
