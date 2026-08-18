@@ -1035,5 +1035,142 @@
   ],
   "notes": "Held — see heldReason.",
   "heldReason": "The scheme prints the list of career names and no marking points at all for the detail point, which carries 4 of the part's 6 marks. Unlike the naming strands split out on other papers, what is left here is a 2-mark card, too thin to ship on its own."
+ },
+ {
+  "id": "he-2023-ol-sc-q1ai",
+  "topicId": "home-economics-3-4",
+  "conceptId": "evaluating-a-bathroom-design",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2023 OL Section C E1 Q1(a)(i)",
+  "questionText": "Evaluate the suitability of the bathroom space shown above for a couple with children.",
+  "stem": "A contemporary bathroom design is shown below.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 points @ 5 marks (graded 5:3:0)",
+   "answer": 4,
+   "ofParts": 14,
+   "perPart": 5
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Suitability of the bathroom space",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "Four points at 5 marks, graded 5:3:0.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "large space to meet family needs",
+      "easy to keep clean",
+      "large walk-in shower",
+      "choice of bath or shower",
+      "modern in design",
+      "good ergonomics",
+      "laundry basket for dirty clothes",
+      "stacks of towels",
+      "hook to hang clothes on",
+      "large window",
+      "wall hung basin and toilet for ease of cleaning",
+      "large mirror",
+      "roman blind for privacy",
+      "shelves may be a hazard for small child"
+     ]
+    }
+   }
+  ],
+  "notes": "Held - see heldReason.",
+  "heldReason": "Marks a bathroom photograph printed on the paper. Every option describes that image (\"large walk-in shower\", \"roman blind for privacy\", \"shelves may be a hazard for small child\"), so the card is unanswerable without the figure and the markdown extraction does not carry it."
+ },
+ {
+  "id": "he-2023-ol-sc-q2ai",
+  "topicId": "home-economics-3-8",
+  "conceptId": "suitability-of-festival-fashion",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2023 OL Section C E2 Q2(a)(i)",
+  "questionText": "Comment on the suitability of the festival fashion shown above. Refer to: comfort; function; aesthetic appeal.",
+  "stem": "‘Music festivals bring new trends and a boost to the fashion industry.’ (www.guardian.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points @ 3 marks (graded 3:2:0) x 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "comfort",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks, graded 3:2:0.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "fabric allows for ease of movement",
+      "stretching while maintaining shape",
+      "easy to remove shirt, jackets, sweatshirt",
+      "well-fitting shoes/ boots",
+      "variety of colours",
+      "layered clothing"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "function",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks, graded 3:2:0.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "waterproof boots",
+      "long boots",
+      "knee length socks",
+      "sunglasses",
+      "long sleeve jacket"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "aesthetic appeal",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks, graded 3:2:0.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "relaxed look",
+      "layered look",
+      "may suit all shapes and sizes",
+      "appeal to younger people"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: three headings named in the question, priced equally.",
+  "heldReason": "Marks festival outfits printed on the paper. Every option describes that image (\"easy to remove shirt, jackets, sweatshirt\", \"waterproof boots\", \"layered look\"), so the card is unanswerable without the figure."
  }
 ]

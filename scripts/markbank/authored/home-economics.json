@@ -25062,5 +25062,640 @@
    }
   ],
   "notes": "One flat list, taken in order to the cap."
+ },
+ {
+  "id": "he-2023-ol-sc-q1aii",
+  "topicId": "home-economics-3-5",
+  "conceptId": "choosing-a-home-heating-system",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2023 OL Section C E1 Q1(a)(ii)",
+  "questionText": "Discuss three factors which should be considered when choosing a heating system for the home.",
+  "stem": "A contemporary bathroom design is shown below.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 factors @ 5 marks (graded 5:3:0)",
+   "answer": 3,
+   "ofParts": 8,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Factors to consider when choosing a heating system",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three factors at 5 marks, graded 5:3:0 - no 4, so a factor named without a reason drops to 3. The scheme prints eight factors, so take three genuinely different ones: cost, how it is controlled, and what it does to the environment.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "installation; running and maintenance",
+      "is the source renewable",
+      "automatic timer that is easy to use; thermostat to control heating; smart technology",
+      "constant temperature",
+      "priority for family with young children",
+      "immersion with a timer to save electricity; instantaneous heaters",
+      "underfloor heating; types of radiators",
+      "gas and smokeless fuel produce less pollution"
+     ]
+    }
+   }
+  ],
+  "notes": "One option per named factor, each carrying that factor's own detail, because the scheme groups its marking points under eight headings and prices three."
+ },
+ {
+  "id": "he-2023-ol-sc-q1aiii",
+  "topicId": "home-economics-1-3",
+  "conceptId": "safe-use-of-electricity-in-the-home",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2023 OL Section C E1 Q1(a)(iii)",
+  "questionText": "Describe three guidelines to follow for the safe use of electricity in the home.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 guidelines @ 5 marks (graded 5:3:0)",
+   "answer": 3,
+   "ofParts": 14,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Guidelines for the safe use of electricity in the home",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three guidelines at 5 marks, graded 5:3:0. Describe, so say what each one prevents - water conducts electricity, a flex across a hob can melt, an overloaded adaptor can catch fire. The danger is where the extra marks are.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "never mix electricity and water",
+      "do not use electrical appliances in the bathroom except shaver sockets",
+      "use pull cords for light switches",
+      "purchase only electrical appliances that carry recognised safety symbols",
+      "avoid overuse of adaptors and extension cables",
+      "check electric blankets for sign of wear",
+      "do not pull flexes across cooker hob or sink",
+      "repair damaged flexes",
+      "avoid trailing flexes",
+      "unplug appliances before cleaning them",
+      "replace broken plugs or sockets",
+      "always read and follow manufacturer’s instructions",
+      "keep electric heaters away from curtains",
+      "unplug chargers after use"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap."
+ },
+ {
+  "id": "he-2023-ol-sc-q1bi",
+  "topicId": "home-economics-3-6",
+  "conceptId": "improving-home-energy-efficiency",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2023 OL Section C E1 Q1(b)(i)",
+  "questionText": "Describe three strategies that could be used to improve energy efficiency in the home.",
+  "stem": "‘A quarter of all energy used in Ireland is consumed directly in homes.’ (www.seai.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 strategies @ 5 marks (graded 5:3:0)",
+   "answer": 3,
+   "ofParts": 14,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Strategies to improve energy efficiency in the home",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three strategies at 5 marks, graded 5:3:0. Spread them - one on keeping heat in, one on heating water, one on appliances - so they cannot be read as the same strategy three times. Say how each saves the energy.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "have house well insulated",
+      "service boiler regularly",
+      "set thermostats to correct temperature",
+      "use zone heating",
+      "use correct wattage bulbs",
+      "use LED bulbs",
+      "turn off lights when not in use",
+      "lag pipes and water cylinder",
+      "take showers instead of baths",
+      "have timer and thermostat on immersion",
+      "avoid washing under running tap",
+      "do not leave appliances on stand-by",
+      "use eco settings",
+      "use appliances at full capacity"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap."
+ },
+ {
+  "id": "he-2023-ol-sc-q1bii",
+  "topicId": "home-economics-3-6",
+  "conceptId": "renewable-energy-sources-and-advantages",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2023 OL Section C E1 Q1(b)(ii)",
+  "questionText": "Name one renewable energy source and outline the advantages of the energy source named.",
+  "stem": "‘A quarter of all energy used in Ireland is consumed directly in homes.’ (www.seai.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name 5 marks (graded 5:3:0); 2 advantages @ 5 marks (graded 5:3:0)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Renewable energy sources",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Name one, 5 marks, graded 5:3:0. Six are accepted, but solar has by far the most detailed list of advantages in the scheme - name that one unless you know another well, because the other 10 marks depend on it.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "solar",
+      "wood",
+      "wind",
+      "hydropower",
+      "bio energy",
+      "geothermal"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Advantages of the energy source named",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two advantages at 5 marks, graded 5:3:0 - ten of the fifteen marks. The strongest answers pair a money advantage with an environmental one: solar saves up to 68% on heating bills and raises the BER, and it produces no carbon dioxide. Grants are a marking point in their own right.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "saves up to 68% on heating bills",
+      "plentiful supply of hot water for space and water heating",
+      "converts light from sun directly into electricity",
+      "no carbon dioxide emissions",
+      "grants available",
+      "increasing the property value by raising the BER",
+      "contributes to biomass",
+      "produces reasonable heat",
+      "unlimited",
+      "clean and non-polluting",
+      "low running costs",
+      "no emissions",
+      "very viable to operate in Ireland",
+      "running costs once the plant is set up are low"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: naming is priced at 5 and the advantages at 10. The advantages row pools all six sources, because the two points are awarded for whichever was named."
+ },
+ {
+  "id": "he-2023-ol-sc-q1ci",
+  "topicId": "home-economics-3-5",
+  "conceptId": "cold-water-supply-parts-ol",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2023 OL Section C E1 Q1(c)(i)",
+  "questionText": "Describe the function of the following parts of a cold-water supply to a house: stop cock; storage tank; overflow pipe.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 function @ 5 marks (graded 5:3:0) x 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "stop cock",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One function, 5 marks, graded 5:3:0. Say where it is as well as what it does - on the service pipe outside or under the kitchen sink - and that it shuts the supply off if there is a problem.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "special valve found on a service pipe outside the house/under the kitchen sink",
+      "allows the water supply to be shut off if there is a problem"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "storage tank",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One function, 5 marks, graded 5:3:0. The height is the point: it sits in the attic so gravity gives the pressure to feed the toilet, shower and hot press below.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "located in the attic at elevated level",
+      "improves pressure to supply the system",
+      "a ball valve controls the level of water in the tank",
+      "stores the cold water which supplies the cold-water to toilet, shower and hot press tank"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "overflow pipe",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One function, 5 marks, graded 5:3:0. It carries excess water outside, and the scheme wants the reason it is needed - if the ball valve fails, it stops the house flooding.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "attic storage tanks are fitted with an overflow pipe leading to the outside of the house and carries excess water out of the house",
+      "if the ball valve fails to work it prevents flooding"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: three named parts, priced identically. All three are short and factual."
+ },
+ {
+  "id": "he-2023-ol-sc-q1cii",
+  "topicId": "home-economics-3-6",
+  "conceptId": "reducing-water-usage-in-the-home",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2023 OL Section C E1 Q1(c)(ii)",
+  "questionText": "Outline three guidelines to follow to reduce water usage in the home.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 guidelines @ 5 marks (graded 5:3:0)",
+   "answer": 3,
+   "ofParts": 4,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Guidelines to reduce water usage in the home",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three guidelines at 5 marks, graded 5:3:0. The scheme groups its tips by where the water is used - toilet, taps, appliances, washing - so taking one from different groups gives three that are genuinely different. Say how much each saves or why it works.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "install a dual flush toilet; a rainwater harvesting system linked to the water system can be used to flush toilets",
+      "repair leaking taps; do not wash items under a running tap; do not leave taps running while washing teeth; use a basin in the sink rather than washing under a running tap",
+      "fill kettle with the amount of water needed; wait until the washing machine or dishwasher is full before turning on; use economy or eco wash cycle",
+      "use a shower instead of a bath"
+     ]
+    }
+   }
+  ],
+  "notes": "One option per place water is used, each carrying that group's own tips, because three guidelines drawn from one group would read as one guideline restated."
+ },
+ {
+  "id": "he-2023-ol-sc-q2aii",
+  "topicId": "home-economics-3-8",
+  "conceptId": "methods-of-applying-a-design-to-a-garment",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2023 OL Section C E2 Q2(a)(ii)",
+  "questionText": "Describe one method of applying a design to a garment.",
+  "stem": "‘Music festivals bring new trends and a boost to the fashion industry.’ (www.guardian.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 point @ 4 marks (graded 4:2:0); 1 point @ 3 marks (graded 3:2:0)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Methods of applying a design to a garment",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "First point, 4 marks, graded 4:2:0. Naming the method is 2 - the other 2 come from saying how it puts the design onto the cloth.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "screen printing",
+      "roller printing",
+      "stencilling",
+      "transfer printing",
+      "embossing",
+      "embroidery",
+      "appliqué"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "A second point on the method described",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Second point, 3 marks, graded 3:2:0. The scheme prints a single list of seven methods and prices two points off it, the first at 4 and the second at 3, so the second point continues the description of the same method rather than naming a new one.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "screen printing",
+      "roller printing",
+      "stencilling",
+      "transfer printing",
+      "embossing",
+      "embroidery",
+      "appliqué"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: the scheme prints one list of methods and two point-values, 4 then 3, so both rows draw on that same list. Only seven marks in total - this is a short part, not a discussion."
+ },
+ {
+  "id": "he-2023-ol-sc-q2bi",
+  "topicId": "home-economics-3-7",
+  "conceptId": "why-fabric-finishes-are-used-2023",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2023 OL Section C E2 Q2(b)(i)",
+  "questionText": "Explain why fabric finishes are used on fabric.",
+  "stem": "Textiles can be treated with a variety of fabric finishes.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 reasons @ 3 marks (graded 3:2:0)",
+   "answer": 2,
+   "ofParts": 7,
+   "perPart": 3
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Why fabric finishes are used on fabric",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Only two reasons at 3 marks - a six-mark part, so keep it short. Each reason is a problem the finish removes: creasing, shrinking, staining, catching fire.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "to prevent creasing",
+      "prevent shrinkage",
+      "to give fabric desirable characteristics, e.g. waterproofing, stain resistant",
+      "to make the fabric hard wearing",
+      "improve safety",
+      "to improve wearing qualities",
+      "to prevent loss of colour"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap."
+ },
+ {
+  "id": "he-2023-ol-sc-q2bii",
+  "topicId": "home-economics-3-7",
+  "conceptId": "fabric-finishes-2023-ol",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2023 OL Section C E2 Q2(b)(ii)",
+  "questionText": "Name and describe one fabric finish. Give an example of its use in clothing.",
+  "stem": "Textiles can be treated with a variety of fabric finishes.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name 4 marks (graded 4:2:0); description 1 point @ 3 marks (graded 3:2:0); example 1 point @ 2 marks (graded 2:0)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Fabric finishes",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Name one, 4 marks, graded 4:2:0 - the biggest single row here, and six finishes are accepted. Pick the one whose effect and use you can state, because the other 5 marks follow from it.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "waterproofing",
+      "anti-static",
+      "stain resistant",
+      "crease resistant",
+      "mercerising",
+      "flame retardant"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "What the finish does",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "One description, 3 marks, graded 3:2:0, matching the finish you named. Each of the scheme's descriptions is a single clause about what the fabric can now do - that is the whole answer.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "makes fabric water repellent",
+      "prevents fabric from clinging to the skin",
+      "makes fabrics easier to clean and keep clean",
+      "prevents fabrics from creasing, reducing the need for ironing",
+      "makes the fabric stronger and more absorbent",
+      "proban reduces the flammability of a fabric"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "Example of its use in clothing",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "One example, 2 marks, graded 2:0 - all-or-nothing. It must be a garment, not a fabric: raincoats for waterproofing, children's night wear for flame retardant, jeans for mercerising.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "e.g. raincoats",
+      "e.g. dresses",
+      "e.g. jackets",
+      "e.g. jackets",
+      "e.g. jeans",
+      "e.g. children’s night wear"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed, three rows: the scheme prints its six finishes as name, effect and example, so the rows are the three columns of that list and the option picked in one row fixes the answer in the other two."
+ },
+ {
+  "id": "he-2023-ol-sc-q2ci",
+  "topicId": "home-economics-3-8",
+  "conceptId": "irish-designers-contribution-to-industry",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2023 OL Section C E2 Q2(c)(i)",
+  "questionText": "Describe the contribution of Irish fashion designers to the clothing and textile industry.",
+  "stem": "The future of fashion is in the hands of the designers.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 points @ 3 marks (graded 3:2:0)",
+   "answer": 3,
+   "ofParts": 3,
+   "perPart": 3
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Contribution of Irish fashion designers",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "Three points at 3 marks, graded 3:2:0 - and the scheme prints only three options, so all three are needed. Employment across manufacture, distribution and sales; the range of goods exported; and promoting Irish designers abroad.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "creates employment in manufacture, distribution and sales of textile and clothing industry",
+      "exports menswear, womenswear, children’s wear, knitted goods, sportswear, accessories, lingerie and footwear",
+      "promotes Irish designers"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list. The scheme prints exactly three marking points for three required points, so there is no choice here."
+ },
+ {
+  "id": "he-2023-ol-sc-q2cii",
+  "topicId": "home-economics-3-8",
+  "conceptId": "popular-fashion-accessories",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2023 OL Section C E2 Q2(c)(ii)",
+  "questionText": "Describe two fashion accessories currently popular with trendsetters.",
+  "stem": "The future of fashion is in the hands of the designers.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 points @ 3 marks (graded 3:2:0)",
+   "answer": 2,
+   "ofParts": 12,
+   "perPart": 3
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Fashion accessories currently popular",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Only two points at 3 marks - a six-mark part. Describe, so name the accessory and add the detail that makes it current: the colour, the size, or how it is worn.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "bright coloured handbags",
+      "crossbody bags",
+      "large, framed glasses",
+      "sporty sunglasses",
+      "chunky platform shoes",
+      "beanie hats",
+      "baseball caps",
+      "gloves",
+      "scarves",
+      "belts",
+      "watches",
+      "chunky jewellery"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap."
  }
 ]
