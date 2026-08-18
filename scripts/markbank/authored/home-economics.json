@@ -18189,5 +18189,1996 @@
    }
   ],
   "notes": "One flat list, taken in order to the cap."
+ },
+ {
+  "id": "he-2024-hl-sc-q1ai",
+  "topicId": "home-economics-3-4",
+  "conceptId": "interior-design-influencing-factors",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 HL Section C E1 Q1(a)(i)",
+  "questionText": "Discuss the factors that influence the interior design of a home. Refer to: cost; family stage and circumstances; ergonomics.",
+  "stem": "‘A well-planned, well-designed home looks elegant, and improves a person’s quality of life.’ (www.homesandgardens.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 points @ 4 marks (graded 4:2:0)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "cost",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One point, 4 marks, graded 4:2:0. The shortest list of the three — the scheme's own point is that a limited budget is not the same as poor design, so say what you would spend on and what you would economise on.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "budget constraints",
+      "good quality, attractive items that are not overly expensive"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "family stage and circumstances",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One point, 4 marks, graded 4:2:0. Name the stage and the design consequence — young children means easy-clean surfaces and play areas, an older family means study space. Current and future needs is a separate creditable point.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "number and age of family members",
+      "areas for play",
+      "areas for study",
+      "family members’ likes and dislikes",
+      "family income",
+      "number of members working",
+      "family members with additional needs",
+      "easy to clean surfaces",
+      "current and future needs of family members"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "ergonomics",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One point, 4 marks, graded 4:2:0. Ergonomics is fitting the room to the body and the work done in it: traffic flow, the work triangle, worktops at the user's height.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "design of room should allow for ease of movement",
+      "accommodate natural traffic flow",
+      "spaces and surfaces easy to clean",
+      "free access to all areas e.g. sockets, windows",
+      "room design should facilitate maximum efficiency e.g. work sequence, work triangle",
+      "work surface suit height of user"
+     ]
+    }
+   },
+   {
+    "id": "r-4",
+    "kind": "anyN",
+    "verbatim": "Two further points, from any of the three factors",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Eight of the twenty marks float: the scheme reads \"1 point on each factor & 2 other points\", so after covering all three factors add two more from whichever you know best.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "budget constraints",
+      "good quality, attractive items that are not overly expensive",
+      "number and age of family members",
+      "areas for play",
+      "areas for study",
+      "family members’ likes and dislikes",
+      "family income",
+      "number of members working",
+      "family members with additional needs",
+      "easy to clean surfaces",
+      "current and future needs of family members",
+      "design of room should allow for ease of movement",
+      "accommodate natural traffic flow",
+      "spaces and surfaces easy to clean"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: one point pinned to each of the three named factors and two floating. Ignoring a factor caps you at 16 however much you write on the others."
+ },
+ {
+  "id": "he-2024-hl-sc-q1aii",
+  "topicId": "home-economics-3-4",
+  "conceptId": "design-principles-in-interior-design",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 HL Section C E1 Q1(a)(ii)",
+  "questionText": "Identify three design principles and describe how each design principle identified could be applied in an interior design space.",
+  "stem": "‘A well-planned, well-designed home looks elegant, and improves a person’s quality of life.’ (www.homesandgardens.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 principles @ 6 marks (graded 6:4:2:0) [Name 2 marks, description 4 marks] x3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Design principles",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Three principles named, 2 marks each, graded 2:0 — all-or-nothing per name. The scheme accepts only these four, so naming three of the four is six guaranteed marks before you describe anything.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "proportion",
+      "emphasis",
+      "balance",
+      "rhythm"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "How each principle is applied in an interior design space",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Three descriptions at 4 marks, graded 4:2:0 — twelve of the eighteen marks. Each must be applied to a room, not defined in the abstract: a fireplace as the focal point for emphasis, a colour repeated around the room for rhythm.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "objects must be of a size/height that is relative to all other items in the room",
+      "should be applied to colour, pattern and textures",
+      "achieved by creating a focal point in a room",
+      "drawing the eye to a specific feature e.g. fireplace in living room",
+      "feature wall",
+      "applied using an equal amount of colour, pattern and texture that work well together",
+      "no one room feature or element should dominate",
+      "can be achieved by linking various objects in a room",
+      "can be done by repeating a different colour in different places or using items of similar style, shape or pattern throughout the room"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: the scheme prices the name and the description separately inside each 6-mark principle, so the card splits them into a naming row and a describing row."
+ },
+ {
+  "id": "he-2024-hl-sc-q1aiii",
+  "topicId": "home-economics-3-6",
+  "conceptId": "house-design-and-lower-energy-use",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 HL Section C E1 Q1(a)(iii)",
+  "questionText": "Evaluate how the design and construction of a house can help lower the energy use of its occupants.",
+  "stem": "‘A well-planned, well-designed home looks elegant, and improves a person’s quality of life.’ (www.homesandgardens.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 points @ 4 marks (graded 4:2:0)",
+   "answer": 3,
+   "ofParts": 12,
+   "perPart": 4
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "How design and construction lower energy use",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Three points at 4 marks, graded 4:2:0. Evaluate, so say what each feature saves — south-facing glazing collects heat, MVHR recovers heat from air being expelled. Naming the feature alone is 2.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "renewable energy sources",
+      "large south facing windows",
+      "double or triple glazing",
+      "low emissivity windows",
+      "cavity wall insulation",
+      "attic insulation",
+      "air sealing",
+      "zoned heating system",
+      "low BER",
+      "timber framed housing",
+      "sensor lighting",
+      "mechanical ventilation with heat recovery system (MVHR)"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap."
+ },
+ {
+  "id": "he-2024-hl-sc-q1bi",
+  "topicId": "home-economics-3-5",
+  "conceptId": "electrical-safety-mcb-and-earth-wire",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 HL Section C E1 Q1(b)(i)",
+  "questionText": "Describe how each of the following contribute to the safe use of electrical appliances in the home: miniature circuit breaker; earth wire.",
+  "stem": "‘Electricity is a powerful and versatile energy often taken for granted, but safe use is vital.’ (www.esbnetworks.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points @ 6 marks (graded 6:4:2:0)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "miniature circuit breaker",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One point, 6 marks, on a 6:4:2:0 ladder — so this is really a short paragraph, not a sentence. The full chain is: detects the fault, trips to off, breaks the circuit, stops the current, and can be reset once the fault is fixed. The scheme accepts labelled diagrams.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "will trip when a fault is detected on a circuit",
+      "flicks down into the off position",
+      "breaks the circuit",
+      "stopping the flow of electricity",
+      "once the fault is found and rectified the MCB can be switched back to the on position"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "earth wire",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One point, 6 marks, 6:4:2:0. The marks are in the danger and the remedy: a damaged live wire can make the metal casing live, touching it would electrocute you, and the earth wire carries that current safely to a plate in the ground.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "(green/yellow) found in plugs and electrical appliances",
+      "if electrical fault occurs, the damaged live wire could come in contact with the metal casing of the appliance and the appliance would become live",
+      "if live appliance is touched, person could be electrocuted",
+      "earth wire carries electrical current from damaged live wire down to a metal plate in the ground away from appliance",
+      "prevents electrocution",
+      "etc. Accept labelled diagrams"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: two named safety devices at 6 marks each. Both are 6:4:2:0, so a one-line answer scores 2 of 6 — these need the whole sequence written out."
+ },
+ {
+  "id": "he-2024-hl-sc-q1bii",
+  "topicId": "home-economics-3-6",
+  "conceptId": "inefficient-energy-use-and-strategies",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 HL Section C E1 Q1(b)(ii)",
+  "questionText": "Identify three inefficient uses of energy in the home and assess a strategy you would recommend to improve energy efficiency in each case identified.",
+  "stem": "‘Electricity is a powerful and versatile energy often taken for granted, but safe use is vital.’ (www.esbnetworks.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 inefficiencies @ 2 marks (graded 2:0); 3 strategies @ 4 marks (graded 4:2:0)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Inefficient uses of energy in the home",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Three identified, 2 marks each, graded 2:0 — all-or-nothing, and naming the area is all that is asked. Six easy marks; the scheme accepts seven areas so there is no excuse for losing any.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "heat loss",
+      "heating system",
+      "open fires",
+      "water heating",
+      "appliances",
+      "water use",
+      "lighting"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Strategies to improve energy efficiency",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Three strategies at 4 marks, graded 4:2:0 — twelve of the eighteen marks. Each strategy must answer the inefficiency you identified, and assess means saying what it saves, not just naming the fix.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "insulate walls",
+      "double/triple glazed low emissivity windows",
+      "use floor underlays",
+      "install condensing boiler",
+      "have boiler serviced regularly",
+      "zoned heating so heat is available in rooms where needed",
+      "install thermostats on radiators",
+      "install timer on heating system",
+      "install stove",
+      "add back boiler",
+      "change to smokeless coal/timber",
+      "install timer on immersion heaters",
+      "install solar panels to heat water",
+      "insulate hot water cylinder"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: identifying is priced at 2 and assessing at 4, so two thirds of the marks are in the strategies. The rows pair up — a strategy only scores against an inefficiency you actually named."
+ },
+ {
+  "id": "he-2024-hl-sc-q1ci",
+  "topicId": "home-economics-3-6",
+  "conceptId": "insulation-principle-and-methods",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 HL Section C E1 Q1(c)(i)",
+  "questionText": "Explain the underlying principle of insulation used in the home. Identify and describe three different methods of home insulation.",
+  "stem": "‘If your home is well insulated; you also need good ventilation.’ (www.seai.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Principle 3 points @ 2 marks (graded 2:1:0); methods 3 points @ 4 marks (graded 4:3:2:1:0)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Underlying principle of insulation",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Three points at 2 marks, graded 2:1:0. The principle is that trapped air and poor conductors slow heat escaping — name the materials, say they are poor conductors, and say what that prevents. Six quick marks.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "air, polystyrene, fibreglass",
+      "etc. used to prevent/reduce the amount of heat loss",
+      "poor conductors retain heat",
+      "prevent heat from passing through"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Methods of home insulation",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Three methods at 4 marks on a 4:3:2:1:0 ladder, so partial credit is real and a half-remembered method still scores. Describe, so give the material and where it goes. Taking one from the attic, the walls and the windows gives three that cannot be read as the same method. The scheme accepts a labelled diagram.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "blanket insulation; loose fill insulation; foam insulation",
+      "walls air; polystyrene sheets; polystyrene foam",
+      "blanket insulation (fibreglass/rockwool) insulation sheets; external insulation (polystyrene with reinforced mesh)",
+      "gaps in around floorboards; fitted carpets with thick underlay; fibreglass first floor insulation",
+      "brush excluders; fabric excluders",
+      "windows and doors; double/triple glazing; draught proofing"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: the principle is priced at 6 and the methods at 12. The methods row shows one option per location, each carrying that location's own materials."
+ },
+ {
+  "id": "he-2024-hl-sc-q1cii",
+  "topicId": "home-economics-3-5",
+  "conceptId": "importance-of-adequate-ventilation",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 HL Section C E1 Q1(c)(ii)",
+  "questionText": "Discuss the importance of having adequate ventilation in a house.",
+  "stem": "‘If your home is well insulated; you also need good ventilation.’ (www.seai.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 points @ 4 marks (graded 4:2:0)",
+   "answer": 3,
+   "ofParts": 8,
+   "perPart": 4
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Importance of adequate ventilation in a house",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Three points at 4 marks, graded 4:2:0. The last two options are the ones that separate answers: poor ventilation causes medical conditions, and it causes structural damage to the house. Name the condition or the damage and you have the full 4.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "provides oxygen rich fresh air",
+      "removes stale air",
+      "allows combustion",
+      "prevents condensation",
+      "controls room temperature",
+      "controls humidity levels",
+      "poor ventilation can lead to medical conditions",
+      "poor ventilation can lead to structural damage to house"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap."
+ },
+ {
+  "id": "he-2024-hl-sc-q2aii",
+  "topicId": "home-economics-3-8",
+  "conceptId": "social-and-economic-influences-on-clothing",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 HL Section C E2 Q2(a)(ii)",
+  "questionText": "Discuss how social and economic factors influence the design and construction of clothing.",
+  "stem": "Being stylish, yet comfortable is key for many family gatherings and parties.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points @ 5 marks (graded 5:3:0), 1 point on each heading",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "social factors",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One point, 5 marks, graded 5:3:0 — no 4, so a named factor without a consequence drops to 3. Social factors are about who is watching: media, influencers, the occasion, status, profession.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "media",
+      "famous people",
+      "influencers",
+      "social events",
+      "acceptance",
+      "cultural background",
+      "occasions",
+      "status in society",
+      "location",
+      "profession"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "economic factors",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One point, 5 marks, graded 5:3:0. Economic factors split into what the buyer can spend (disposable income, recession, inflation) and what the maker must pay (raw materials, labour, production costs) — either side scores.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "amount of disposable money available",
+      "recession",
+      "inflation",
+      "booming economy",
+      "world events",
+      "availability of raw materials",
+      "cost of raw materials",
+      "level of infrastructure",
+      "production costs",
+      "cost of labour",
+      "technological developments",
+      "new talented designers emerging"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: the scheme pins one point to each heading, so answering only one caps you at 5 of 10."
+ },
+ {
+  "id": "he-2024-hl-sc-q2b-wool",
+  "topicId": "home-economics-3-7",
+  "conceptId": "natural-fibre-profile-wool",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 HL Section C E2 Q2(b) - Wool",
+  "questionText": "Write a profile of a fabric manufactured from natural fibres. Refer to: name; fibre production; fabric properties; identification test.",
+  "stem": "‘Natural fabrics are renewable; a good choice for sustainable living.’ (www.studioheijne.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name 1 @ 2 marks; production 3 @ 2 marks; properties 3 @ 1 mark; identification 2 @ 2 marks",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Name of the fabric",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Name the fabric, 2 marks, graded 2:0 — all-or-nothing. This profile follows wool; the scheme prints a parallel profile for silk, cotton and linen too, each marked the same way.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "wool"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Fibre production",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Three points at 2 marks, graded 2:1:0. Wool comes from the fleece of sheep, goats and llamas. The scheme lists the stages in order, so writing the process as a sequence gives three points without having to recall them separately.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "fleece of sheep, goats, llamas grown",
+      "sheared",
+      "sorted/graded",
+      "cleaned",
+      "combed/carded",
+      "dyed",
+      "spun into yarn"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "Fabric properties",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Three properties at 1 mark each, graded 1:0 — one word each, all-or-nothing. Three of the cheapest marks on the paper; do not write sentences for them.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "durable",
+      "warm",
+      "soft",
+      "absorbent",
+      "resilient",
+      "weak when wet",
+      "shrinks at high temperatures",
+      "scorches easily",
+      "piles and felts",
+      "can irritate sensitive skin",
+      "damaged by careless washing",
+      "damage by moths",
+      "damage by sunshine",
+      "damage by chemicals"
+     ]
+    }
+   },
+   {
+    "id": "r-4",
+    "kind": "anyN",
+    "verbatim": "Identification test",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Two points at 2 marks, graded 2:1:0. This is the burn test, and the marks are in what you observe: how it takes the flame, the colour of the flame, the smell, and what the residue is like.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "doesn’t ignite easily",
+      "curls away from flame before catching fire",
+      "burns very slowly",
+      "orange flame",
+      "dark smoke",
+      "smell of burning hair/feathers",
+      "when removed from flame immediately stops burning",
+      "hard dark ash/bead like residue",
+      "crushed to powder easily between fingers"
+     ]
+    }
+   }
+  ],
+  "notes": "One of four parallel profiles the scheme prints under Q2(b). A candidate profiles a single fibre, so each fibre is its own card with its own questionRef rather than pooling four sets of marking points into one menu."
+ },
+ {
+  "id": "he-2024-hl-sc-q2b-silk",
+  "topicId": "home-economics-3-7",
+  "conceptId": "natural-fibre-profile-silk",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 HL Section C E2 Q2(b) - Silk",
+  "questionText": "Write a profile of a fabric manufactured from natural fibres. Refer to: name; fibre production; fabric properties; identification test.",
+  "stem": "‘Natural fabrics are renewable; a good choice for sustainable living.’ (www.studioheijne.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name 1 @ 2 marks; production 3 @ 2 marks; properties 3 @ 1 mark; identification 2 @ 2 marks",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Name of the fabric",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Name the fabric, 2 marks, graded 2:0 — all-or-nothing. This profile follows silk; the scheme prints a parallel profile for silk, cotton and linen too, each marked the same way.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "silk"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Fibre production",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Three points at 2 marks, graded 2:1:0. Silk comes from the cocoon of the silkworm. The scheme lists the stages in order, so writing the process as a sequence gives three points without having to recall them separately.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "silkworms eat leaves of mulberry tree",
+      "spin cocoon of silk",
+      "cocoons soaked in water",
+      "thread extraction",
+      "dyed",
+      "spun into yarn"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "Fabric properties",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Three properties at 1 mark each, graded 1:0 — one word each, all-or-nothing. Three of the cheapest marks on the paper; do not write sentences for them.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "strong",
+      "smooth",
+      "lightweight",
+      "breathable",
+      "absorbent",
+      "drapes well",
+      "dries quickly",
+      "moderate resistance to creasing",
+      "does not attract dirt",
+      "good affinity to dyes",
+      "damaged by careless washing",
+      "moth",
+      "sunshine",
+      "chemicals"
+     ]
+    }
+   },
+   {
+    "id": "r-4",
+    "kind": "anyN",
+    "verbatim": "Identification test",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Two points at 2 marks, graded 2:1:0. This is the burn test, and the marks are in what you observe: how it takes the flame, the colour of the flame, the smell, and what the residue is like.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "doesn’t burn well",
+      "curl away from flame",
+      "difficulty igniting",
+      "smoulders rather than producing visible flame",
+      "when removed from flame quickly stops burning",
+      "smell of burning hair/feathers",
+      "small dark ash beads",
+      "crushed to powder easily between fingers"
+     ]
+    }
+   }
+  ],
+  "notes": "One of four parallel profiles the scheme prints under Q2(b). A candidate profiles a single fibre, so each fibre is its own card with its own questionRef rather than pooling four sets of marking points into one menu."
+ },
+ {
+  "id": "he-2024-hl-sc-q2b-cotton",
+  "topicId": "home-economics-3-7",
+  "conceptId": "natural-fibre-profile-cotton",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 HL Section C E2 Q2(b) - Cotton",
+  "questionText": "Write a profile of a fabric manufactured from natural fibres. Refer to: name; fibre production; fabric properties; identification test.",
+  "stem": "‘Natural fabrics are renewable; a good choice for sustainable living.’ (www.studioheijne.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name 1 @ 2 marks; production 3 @ 2 marks; properties 3 @ 1 mark; identification 2 @ 2 marks",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Name of the fabric",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Name the fabric, 2 marks, graded 2:0 — all-or-nothing. This profile follows cotton; the scheme prints a parallel profile for silk, cotton and linen too, each marked the same way.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "cotton"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Fibre production",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Three points at 2 marks, graded 2:1:0. Cotton comes from the boll of the cotton plant. The scheme lists the stages in order, so writing the process as a sequence gives three points without having to recall them separately.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "comes from the boll or seed head of the cotton plant, fibres are 2-3cm long",
+      "fibres are white and fluffy",
+      "bolls are picked",
+      "fibres are separated from the seeds",
+      "then pressed into bales",
+      "the cotton is graded according to the length of the fibres",
+      "these fibres can be combined or spun into yarn"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "Fabric properties",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Three properties at 1 mark each, graded 1:0 — one word each, all-or-nothing. Three of the cheapest marks on the paper; do not write sentences for them.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "strong",
+      "absorbent",
+      "cool",
+      "washes and dries easily",
+      "dyes easily",
+      "shrinks",
+      "creases",
+      "affected by mildew",
+      "weakened by sun"
+     ]
+    }
+   },
+   {
+    "id": "r-4",
+    "kind": "anyN",
+    "verbatim": "Identification test",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Two points at 2 marks, graded 2:1:0. This is the burn test, and the marks are in what you observe: how it takes the flame, the colour of the flame, the smell, and what the residue is like.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "burns quickly with yellow flame",
+      "smells like charred paper",
+      "produces a grey ash"
+     ]
+    }
+   }
+  ],
+  "notes": "One of four parallel profiles the scheme prints under Q2(b). A candidate profiles a single fibre, so each fibre is its own card with its own questionRef rather than pooling four sets of marking points into one menu."
+ },
+ {
+  "id": "he-2024-hl-sc-q2b-linen",
+  "topicId": "home-economics-3-7",
+  "conceptId": "natural-fibre-profile-linen",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 HL Section C E2 Q2(b) - Linen",
+  "questionText": "Write a profile of a fabric manufactured from natural fibres. Refer to: name; fibre production; fabric properties; identification test.",
+  "stem": "‘Natural fabrics are renewable; a good choice for sustainable living.’ (www.studioheijne.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name 1 @ 2 marks; production 3 @ 2 marks; properties 3 @ 1 mark; identification 2 @ 2 marks",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Name of the fabric",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Name the fabric, 2 marks, graded 2:0 — all-or-nothing. This profile follows linen; the scheme prints a parallel profile for silk, cotton and linen too, each marked the same way.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "linen"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Fibre production",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Three points at 2 marks, graded 2:1:0. Linen comes from the stem of the flax plant. The scheme lists the stages in order, so writing the process as a sequence gives three points without having to recall them separately.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "made from the stem of the flax plant",
+      "flax stems are pulled and retted, soaked until the outer stem rots",
+      "stems are crushed and combed",
+      "fibres are spun into yarn",
+      "yarn is bleached and dyed",
+      "woven into a textured fabric"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "Fabric properties",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Three properties at 1 mark each, graded 1:0 — one word each, all-or-nothing. Three of the cheapest marks on the paper; do not write sentences for them.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "strong",
+      "absorbent",
+      "cool",
+      "washes well",
+      "creases easily",
+      "shrinks easily",
+      "difficult to dye",
+      "damaged by mildew"
+     ]
+    }
+   },
+   {
+    "id": "r-4",
+    "kind": "anyN",
+    "verbatim": "Identification test",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Two points at 2 marks, graded 2:1:0. This is the burn test, and the marks are in what you observe: how it takes the flame, the colour of the flame, the smell, and what the residue is like.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "burns quickly with yellow flame",
+      "produces grey ash"
+     ]
+    }
+   }
+  ],
+  "notes": "One of four parallel profiles the scheme prints under Q2(b). A candidate profiles a single fibre, so each fibre is its own card with its own questionRef rather than pooling four sets of marking points into one menu."
+ },
+ {
+  "id": "he-2024-hl-sc-q2ci",
+  "topicId": "home-economics-3-8",
+  "conceptId": "emergence-of-leisure-wear",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 HL Section C E2 Q2(c)(i)",
+  "questionText": "Discuss the emergence of leisure wear as a current fashion trend.",
+  "stem": "‘The fashion and textile industry continue to play its part in Ireland’s social, cultural and economic development.’ (www.ndcg.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 points @ 3 marks (graded 3:2:0)",
+   "answer": 2,
+   "ofParts": 10,
+   "perPart": 3
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The emergence of leisure wear as a current fashion trend",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Only two points at 3 marks — a six-mark part, so keep it short. The scheme wants why it caught on: comfort, versatility, and the shift to healthier, more active lifestyles.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "comfort",
+      "versatility",
+      "durability",
+      "ease of movement",
+      "affordable",
+      "adaptability to function",
+      "healthier lifestyle",
+      "casual style",
+      "encourages exercise",
+      "influencers"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap."
+ },
+ {
+  "id": "he-2024-hl-sc-q2cii",
+  "topicId": "home-economics-3-8",
+  "conceptId": "irish-fashion-designers",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 HL Section C E2 Q2(c)(ii)",
+  "questionText": "Name one Irish fashion designer. Outline their work in the Irish fashion industry.",
+  "stem": "‘The fashion and textile industry continue to play its part in Ireland’s social, cultural and economic development.’ (www.ndcg.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name 1 point @ 3 marks; work 2 points @ 3 marks (graded 3:2:0)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Irish fashion designers",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Name one, 3 marks, graded 3:2:0. The scheme accepts eight designers — pick the one whose actual output you can describe, because the other 6 marks depend on it.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "John Rocha",
+      "Simone Rocha",
+      "Philip Tracey",
+      "Lainey Keogh",
+      "Paul Costelloe",
+      "Louise Kennedy",
+      "Carolyn Donnelly",
+      "Orla Kiely"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Their work in the Irish fashion industry",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks, graded 3:2:0. The scheme credits who they design for and what for — royalty, celebrities, world leaders, major world events, the Riverdance costumes.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "designing clothes and accessories for royalty",
+      "celebrities",
+      "world leaders",
+      "designing clothes and accessories for major world events",
+      "Riverdance costumes"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: the name is priced at 3 and the work at 6."
+ },
+ {
+  "id": "he-2024-hl-sc-q3ai",
+  "topicId": "home-economics-3-10",
+  "conceptId": "role-of-education-in-society",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 HL Section C E3 Q3(a)(i)",
+  "questionText": "Discuss the role of education in society. Refer to education: as a method of socialisation; as preparation for work.",
+  "stem": "‘Education gives people the opportunity and ability to improve their own lives.’ (www.legalstudymatieral.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 points @ 4 marks (graded 4:2:0)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "as a method of socialisation",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Two points at 4 marks, graded 4:2:0. The formal/informal split and the hidden curriculum are the technical terms the scheme rewards — name them and say what they teach.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "formal in the classroom",
+      "informal through hidden curriculum",
+      "reinforces social skills taught at home",
+      "acceptable behaviour",
+      "cultural values",
+      "religious beliefs",
+      "responsibility",
+      "spirituality",
+      "punctuality",
+      "respect for authority",
+      "sharing and teamwork"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "as preparation for work",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Two points at 4 marks, graded 4:2:0. Split between personal qualities (responsibility, punctuality, teamwork) and formal preparation (qualifications, TY, LCA, LCVP work experience, career guidance).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "develops personal qualities including responsibility",
+      "trustworthy",
+      "self- discipline",
+      "teamwork",
+      "values",
+      "punctuality",
+      "good attendance",
+      "gain basic literacy and numeracy skills",
+      "gain formal qualifications",
+      "develop specialised skills and knowledge",
+      "develops socialisation",
+      "educational programmes including TY, LCA, and LCVP have work experience component",
+      "career guidance",
+      "college work placements"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "One further point, from either heading",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme reads \"2 points on method of socialisation, 2 points on preparation for work + 1 other point\", so the fifth floats.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "formal in the classroom",
+      "informal through hidden curriculum",
+      "reinforces social skills taught at home",
+      "acceptable behaviour",
+      "cultural values",
+      "religious beliefs",
+      "responsibility",
+      "spirituality",
+      "punctuality",
+      "respect for authority",
+      "sharing and teamwork",
+      "develops personal qualities including responsibility",
+      "trustworthy",
+      "self- discipline"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: two points pinned to each named strand and the fifth floating. Answering only one strand caps you at 12 of 20."
+ },
+ {
+  "id": "he-2024-hl-sc-q3aii",
+  "topicId": "home-economics-3-10",
+  "conceptId": "educational-supports-for-special-needs",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 HL Section C E3 Q3(a)(ii)",
+  "questionText": "Evaluate a range of educational supports available in second level schools for students with special educational needs.",
+  "stem": "‘Education gives people the opportunity and ability to improve their own lives.’ (www.legalstudymatieral.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 supports @ 5 marks (graded 5:4:3:2:0)",
+   "answer": 3,
+   "ofParts": 14,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Educational supports for students with special educational needs",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three supports at 5 marks on a 5:4:3:2:0 ladder — the finest grading here, so a partly-developed support still scores well. Evaluate, so say who each support helps and how. Reasonable accommodations for state exams and assistive technology are the two most developable.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "learning support/resource teachers",
+      "special need assistants",
+      "educational psychologist",
+      "IEPs",
+      "visiting teacher for students with visual or hearing impairments",
+      "assistive technology",
+      "reasonable accommodations for state exams",
+      "ASD classes with low pupil/teacher ratios",
+      "reduced timetables",
+      "cúntóirí teanga",
+      "immersive reader",
+      "team teaching",
+      "sensory room",
+      "canine support"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap."
+ },
+ {
+  "id": "he-2024-hl-sc-q3aiii",
+  "topicId": "home-economics-3-10",
+  "conceptId": "socio-economic-status-and-educational-opportunity",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 HL Section C E3 Q3(a)(iii)",
+  "questionText": "Analyse how socio-economic status impacts equality of opportunity in education.",
+  "stem": "‘Education gives people the opportunity and ability to improve their own lives.’ (www.legalstudymatieral.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 factors @ 5 marks (graded 5:3:0)",
+   "answer": 3,
+   "ofParts": 13,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "How socio-economic status impacts equality of opportunity",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three factors at 5 marks, graded 5:3:0 — no 4, so a factor named without its effect drops to 3. The list runs both ways: costs that hold families back, and the schemes (book rental, clothing and footwear allowance, student grant, DEIS) that offset them. Using one of each shows the analysis the verb asks for.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "cost of school books",
+      "equipment",
+      "uniform can be prohibitive for lower-income families",
+      "back to school clothing and footwear allowance",
+      "book rental schemes",
+      "student grant scheme",
+      "family background",
+      "children from higher socio-economic status offered more opportunities to progress in education",
+      "tend to continue to third level",
+      "DEIS schools",
+      "culture",
+      "geographical location",
+      "family background"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap."
+ },
+ {
+  "id": "he-2024-hl-sc-q3bi",
+  "topicId": "home-economics-3-9",
+  "conceptId": "groups-excluded-from-the-labour-market",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 HL Section C E3 Q3(b)(i)",
+  "questionText": "Identify three groups of people who have difficulty in securing employment and discuss the reason why each group identified have high unemployment rates.",
+  "stem": "While Ireland’s unemployment figures are at a record low, some people may be excluded from the labour market.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 points @ 6 marks (graded 6:4:2:0)",
+   "answer": 3,
+   "ofParts": 6,
+   "perPart": 6
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Groups with difficulty securing employment, and why",
+    "marks": 18,
+    "openList": true,
+    "contextNote": "Three at 6 marks on a 6:4:2:0 ladder. Naming the group alone is 2 — the other 4 come from the reason, and the scheme prints a specific reason for each group (language and unrecognised qualifications for migrants, no formal qualifications for early school leavers, discrimination and transport for people with disabilities). Identify and explain, every time.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "migrants; ethnic groups level of fluency in language; recognition of qualifications; lack of qualifications",
+      "early school leavers lack of formal qualifications; poor literacy and numeracy levels",
+      "people with criminal records lack of trust",
+      "people with illnesses; disabilities; special educational needs unable to physically, mentally or emotionally complete the work; experience discrimination; transport issues",
+      "homeless people lacking access to communication facilities; experience discrimination; lack of suitable clothes, showering facilities",
+      "long term unemployed outdated skills"
+     ]
+    }
+   }
+  ],
+  "notes": "One option per group, each carrying that group's own reasons, because the question ties the reason to the group identified."
+ },
+ {
+  "id": "he-2024-hl-sc-q3bii",
+  "topicId": "home-economics-3-9",
+  "conceptId": "community-based-employment-initiatives",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 HL Section C E3 Q3(b)(ii)",
+  "questionText": "Name and give details of one community-based initiative that helps to create employment.",
+  "stem": "While Ireland’s unemployment figures are at a record low, some people may be excluded from the labour market.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name 1 @ 4 marks; explain 2 points @ 4 marks (graded 4:2:0)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Community-based initiatives that create employment",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Name one, 4 marks, graded 4:2:0. Co-operatives and cottage industries are the two the scheme details in full, so they are the safe choices — the accepted extras (farmers markets, artisan producers, community café) score the name but leave you to supply the detail yourself.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "co-operatives",
+      "cottage industries",
+      "farmers markets",
+      "artisan producers",
+      "local schools",
+      "community café"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Details of the initiative",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Two points at 4 marks, graded 4:2:0 — two thirds of the marks. For a co-operative the marks are in pooled resources, the sectors it operates in, and profits returning to members; for a cottage industry, small-scale home-based production of unique goods of superior quality.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "formed by group of people who pool their resources, skills and knowledge to provide goods and services to meet their members’ needs",
+      "can be established in agriculture sector, fishing sector, horticulture sector, housing and credit unions",
+      "all profits after bills are paid and money is set for operations is returned to members",
+      "seen an increase in recent years",
+      "small scale industries that create home-based goods rather than factory-based goods",
+      "products produced are unique and produced to a superior quality compared to mass-produced equivalents",
+      "artisan food producers, jewellery makers, craft work, art work",
+      "etc. Accept farmers markets",
+      "artisan producers",
+      "local schools",
+      "community café"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: naming is priced at 4 and the two detail points at 8. The details row pools the scheme's two fully-described initiatives."
+ },
+ {
+  "id": "he-2024-hl-sc-q3ci",
+  "topicId": "home-economics-3-11",
+  "conceptId": "leisure-and-family-development",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 HL Section C E3 Q3(c)(i)",
+  "questionText": "Evaluate how individual and family leisure activities contribute to the physical, social and emotional development of family members.",
+  "stem": "‘Leisure is not wasteful or an unproductive use of time; its benefits are far reaching.’ (www.physologytoday.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points @ 6 marks (graded 6:4:2:0)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "physical development",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One point, 6 marks, on a 6:4:2:0 ladder — so this is a developed paragraph, not a phrase. Fitness, muscle strength, energy, weight control, bone density.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "help with physical fitness",
+      "develop muscle strength and tone",
+      "increase energy levels",
+      "control weight",
+      "maintain bone density",
+      "reduce stress levels",
+      "maintain general good health",
+      "hand eye co-ordination",
+      "transferrable skills"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "social development",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One point, 6 marks, 6:4:2:0. Meeting people with shared interests, building friendships, teamwork and leadership, and preventing loneliness and isolation.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "social outlets for meeting people",
+      "develop stronger relationships",
+      "meet new people with similar interests",
+      "develop new friendships",
+      "develop transferable communication skills",
+      "teamwork and leadership skills",
+      "prevent loneliness, boredom, isolation, depression"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "emotional development",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One point, 6 marks, 6:4:2:0. Relaxation, self-esteem, coping with success and failure, a sense of belonging. Teamwork and leadership appear under both social and emotional, so that one point can be used either way — but not twice.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "relax and unwind",
+      "inner peace",
+      "improve decision making",
+      "improve emotional wellbeing",
+      "cope with success and failure",
+      "boost self-esteem",
+      "sense of belonging",
+      "develop teamwork and leadership skills"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: the scheme requires one reference to each of the three named areas, so all three must be attempted. Missing one costs a straight 6."
+ },
+ {
+  "id": "he-2024-hl-sc-q3cii",
+  "topicId": "home-economics-3-11",
+  "conceptId": "social-and-cultural-influences-on-leisure",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 HL Section C E3 Q3(c)(ii)",
+  "questionText": "Analyse the social and cultural factors that influence an individual’s choice of leisure activities.",
+  "stem": "‘Leisure is not wasteful or an unproductive use of time; its benefits are far reaching.’ (www.physologytoday.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points @ 4 marks (graded 4:2:0)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "social factors",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One point, 4 marks, graded 4:2:0. Social factors are about position and money — socio-economic group, status, income, what amenities exist locally, and who is influencing the trend.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "leisure activities of socio-economic group you belong to",
+      "status",
+      "local amenities in area",
+      "money/income",
+      "leisure trends",
+      "influence of famous people/influencers"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "cultural factors",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One point, 4 marks, graded 4:2:0. Cultural factors are about place and tradition — sports tied to particular counties, the sporting or dance culture of a community, and the wider range that multicultural Ireland has brought.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "certain activities linked to certain areas/counties/countries",
+      "family environment or culture",
+      "sporting culture of community",
+      "dance culture of community",
+      "multicultural Ireland has led to a broader range of leisure activities available"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "One further point, from either heading",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme reads \"1 reference to social factors, 1 reference to cultural factors & 1 other point\", so the third floats.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "leisure activities of socio-economic group you belong to",
+      "status",
+      "local amenities in area",
+      "money/income",
+      "leisure trends",
+      "influence of famous people/influencers",
+      "certain activities linked to certain areas/counties/countries",
+      "family environment or culture",
+      "sporting culture of community",
+      "dance culture of community",
+      "multicultural Ireland has led to a broader range of leisure activities available"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: one point pinned to each named factor and one floating."
+ },
+ {
+  "id": "he-2024-hl-sc-q4ai",
+  "topicId": "home-economics-0-7",
+  "conceptId": "nutritional-significance-of-fats-and-oils",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 HL Section C Q4(a)(i) - Core",
+  "questionText": "Evaluate the nutritional significance of fats and oils in the diet.",
+  "stem": "‘Fats are essential for health; but choosing the correct types and amount is vital.’ (www.fsai.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "5 points @ 4 marks (graded 4:3:2:1:0)",
+   "answer": 5,
+   "ofParts": 9,
+   "perPart": 4
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Nutritional significance of fats and oils",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "Five points at 4 marks on a 4:3:2:1:0 ladder — the finest grading on the paper, so partial credit is real. The scheme groups its marking points under nine nutrients and prices five, so take one nutrient per point: give the amount present and what it does. The fat heading is the richest — saturated in butter and animal fats, monounsaturated in olive oil, polyunsaturated in vegetable and nut oils, LDL against HDL cholesterol.",
+    "group": {
+     "claimMax": 5,
+     "perOption": 4,
+     "options": [
+      "protein trace amounts of HBV protein in butter and margarine; oils are lacking in protein; necessary for growth and repair of cells; production of hormones and antibodies",
+      "fat 82% fat in butter to 99.9% fat in oils; butter and animal-based fats contain saturated fat; olive oil contains monounsaturated fat; vegetable and nut oils contain polyunsaturated fat",
+      "carbohydrates (trace amount in suet) deficient in carbohydrates, serve with carbohydrate rich food",
+      "Vitamin A (retinol) needed for production of rhodopsin; healthy skin",
+      "Vitamin D needed for development of strong bones and teeth",
+      "Vitamin E trace amounts; antioxidant; prevents eye diseases in premature babies",
+      "calcium trace amounts in butter and margarine; needed for development of strong bones and teeth; muscle contractions; blood clotting",
+      "sodium can be added to butter and margarine for preservation and to add flavour; needed for muscle contractions; fluid balance; nerve impulses",
+      "water content is in proportion to fat content; hydration"
+     ]
+    }
+   }
+  ],
+  "notes": "One option per nutrient heading rather than one per fragment: the scheme prints nine nutrient blocks and prices five points, so a student picks nutrients, not sentences."
+ },
+ {
+  "id": "he-2024-hl-sc-q4aii",
+  "topicId": "home-economics-0-11",
+  "conceptId": "production-of-margarine",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 HL Section C Q4(a)(ii) - Core",
+  "questionText": "Outline the stages involved in the production of margarine to include details of packaging and labelling.",
+  "stem": "‘Fats are essential for health; but choosing the correct types and amount is vital.’ (www.fsai.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Stages 5 points @ 2 marks (graded 2:1:0); packaging and labelling 5 points @ 1 mark (graded 1:0)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Stages in the production of margarine",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Five stages at 2 marks, graded 2:1:0. The scheme states that hydrogenation is an essential point, so it must appear — hydrogen forced into the unsaturated oil at the double bonds over a nickel catalyst, turning liquid oil into semi-solid fat. Take the rest in process order.",
+    "group": {
+     "claimMax": 5,
+     "perOption": 2,
+     "options": [
+      "oil is extracted from various sources (soya, sunflower, rapeseed, olives, beef fat, whale oil); refined to remove impurities",
+      "gas is forced into the unsaturated oil at the double bonds in the presence of a nickel catalyst; changes unsaturated liquid oil into semi solid saturated fat",
+      "added skimmed milk, water, salt, colourings, flavourings, Vitamin A, Vitamin D",
+      ", an emulsifying agent is added to prevent the fat and liquids separating",
+      "churns the oil and water-based ingredients; form an emulsion",
+      "portions/catering"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Packaging and labelling",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Five points at 1 mark each, graded 1:0 — one word or phrase each, all-or-nothing. Five of the cheapest marks in Section C, and almost all of them are on the label: brand name, type, ingredients, allergens, expiry date, storage, weight, nutritional information.",
+    "group": {
+     "claimMax": 5,
+     "perOption": 1,
+     "options": [
+      "foil wrap, plastic tubs",
+      "brand name",
+      "type of margarine",
+      "ingredients",
+      "allergy information",
+      "expiry date",
+      "storage instructions",
+      "weight",
+      "nutritional information"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: the process is priced at 10 and packaging and labelling at 5. Hydrogenation is compulsory within the first row, which the row note carries."
+ },
+ {
+  "id": "he-2024-hl-sc-q4aiii",
+  "topicId": "home-economics-0-7",
+  "conceptId": "health-implications-of-saturated-fat",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 HL Section C Q4(a)(iii) - Core",
+  "questionText": "Assess the health implications for a person consuming a diet high in saturated fat.",
+  "stem": "‘Fats are essential for health; but choosing the correct types and amount is vital.’ (www.fsai.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 health implications @ 5 marks (graded 5:4:3:2:1:0)",
+   "answer": 3,
+   "ofParts": 7,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Health implications of a diet high in saturated fat",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three implications at 5 marks on a 5:4:3:2:1:0 ladder — six grades, the finest on the paper, so every sentence of mechanism adds a mark. Assess means naming the condition is not enough: say how the saturated fat causes it. The scheme gives the chain for each — LDL building up in arteries, extra weight making insulin less effective, cholesterol forming gall stones.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "consumption of foods high in fat can cause weight gain; energy input exceeds energy output; foods containing large amounts of fat are energy dense and if excess calories are not burnt off, they change to adipose tissue",
+      "disease LDL cholesterol builds up in arteries putting pressure on heart; arteries can become blocked leading to heart attack or stroke",
+      "pressure too much saturated fat will increase blood LDL cholesterol levels which build up in arteries narrowing them, increasing a person’s blood pressure",
+      "diabetes extra weight causes insulin to become less effective at breaking down sugar into glucose; blood sugar levels remain high",
+      "small stones made of cholesterol, bile pigments and calcium salts form in the gall bladder",
+      "pressure from extra body fat damages the veins in legs and feet",
+      "overweight or obese, women produce higher amounts of leptin, which can affect hormonal balance that control the menstrual cycle; in men, DNA damage in sperm"
+     ]
+    }
+   }
+  ],
+  "notes": "One option per named condition, each carrying the scheme's own mechanism for it."
+ },
+ {
+  "id": "he-2024-hl-sc-q4bi",
+  "topicId": "home-economics-1-4",
+  "conceptId": "selection-criteria-household-textiles",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 HL Section C Q4(b)(i) - Core",
+  "questionText": "Assess the selection criteria that should be considered when choosing household textiles.",
+  "stem": "The use of household resources play a valuable role in everyday living.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 points @ 4 marks (graded 4:2:0)",
+   "answer": 3,
+   "ofParts": 9,
+   "perPart": 4
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Selection criteria for household textiles",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Three criteria at 4 marks, graded 4:2:0 — naming the criterion is 2, and assessing it takes the other 2. Tie each to the room and the use: ease of cleaning matters for a kitchen, durability for a stair carpet, safety for children's furnishings.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "cost",
+      "suitability for purpose/properties",
+      "aesthetic appeal/personal choice",
+      "ease of cleaning",
+      "safety",
+      "current trends",
+      "durability",
+      "finishes",
+      "sustainability"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap."
+ },
+ {
+  "id": "he-2024-hl-sc-q4bii-study",
+  "topicId": "home-economics-1-3",
+  "conceptId": "appliance-with-a-motor-study",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 HL Section C Q4(b)(ii) - Core - working principle, use and efficiency",
+  "questionText": "Set out details of a study you have carried out on one type of electrical appliance with a motor. Refer to: working principle; guidelines for use; energy efficiency.",
+  "stem": "The use of household resources play a valuable role in everyday living.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Working principle 3 @ 2 marks; guidelines 3 @ 2 marks; energy efficiency 2 @ 2 marks (graded 2:1:0)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Working principle",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Three points at 2 marks, graded 2:1:0. The scheme's chain works for any motor appliance: electricity drives the motor, the motor turns the belt, the belt spins the parts, the parts do the job. Labelled diagrams are accepted here.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "electricity causes the motor to operate",
+      "causes the belt in the base to turn",
+      "belt causes the parts to rotate at high speed",
+      "parts carry out specific function",
+      "some appliances have safety locking system",
+      "thermostat keeps temperature constant"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Guidelines for use",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Three points at 2 marks, graded 2:1:0. Correct attachment for the job, do not overfill, rest it to avoid overheating, use the safety features.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "use correct attachments for function required",
+      "do not overfill",
+      "turn off at intervals to avoid overheating",
+      "use safety features"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "Energy efficiency",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Two points at 2 marks, graded 2:1:0. Do not overfill, choose A-rated, do not run it for long stretches, match the size of the appliance to the job.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "do not overfill",
+      "choose A rated large appliances",
+      "do not run for prolonged periods of time",
+      "consider size of appliance",
+      "wash at lower temperatures"
+     ]
+    }
+   }
+  ],
+  "notes": "The three listed strands of Q4(b)(ii), worth 16 of the part's 18 marks. The remaining 2 are for naming the appliance, and the scheme prints no list for it — it reads \"Accept all household appliances with motor\", so any motor appliance scores and there is nothing to show."
+ },
+ {
+  "id": "he-2024-hl-sc-q4ci",
+  "topicId": "home-economics-0-11",
+  "conceptId": "conditions-for-sensory-analysis-testing",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 HL Section C Q4(c)(i) - Core",
+  "questionText": "Describe the conditions necessary to follow for sensory analysis testing in the classroom to ensure accurate results.",
+  "stem": "‘Sensory analysis testing provides food developers and companies with valuable, insightful information.’ (www.intertek.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "5 points @ 3 marks (graded 3:2:0)",
+   "answer": 5,
+   "ofParts": 14,
+   "perPart": 3
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Conditions necessary for sensory analysis testing",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Five conditions at 3 marks, graded 3:2:0 — naming the condition is 2, saying what it protects against is 3. The point of every one is removing bias: silence so tasters do not influence each other, coded samples so they cannot guess, a palate cleanser so one sample does not carry into the next.",
+    "group": {
+     "claimMax": 5,
+     "perOption": 3,
+     "options": [
+      "silence in testing area",
+      "timing",
+      "location",
+      "lighting",
+      "palate cleanser",
+      "ventilation",
+      "test organisers",
+      "special dietary conditions",
+      "hygiene",
+      "food safety",
+      "containers",
+      "food samples",
+      "temperature",
+      "coding of samples"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap."
+ },
+ {
+  "id": "he-2024-hl-sc-q4cii",
+  "topicId": "home-economics-0-11",
+  "conceptId": "artisan-producers-in-the-irish-food-industry",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 HL Section C Q4(c)(ii) - Core",
+  "questionText": "Evaluate the role of artisan producers/small businesses in the Irish food industry.",
+  "stem": "‘Sensory analysis testing provides food developers and companies with valuable, insightful information.’ (www.intertek.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 points @ 5 marks (graded 5:3:0)",
+   "answer": 3,
+   "ofParts": 13,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Role of artisan producers and small businesses",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three points at 5 marks, graded 5:3:0 — no 4, so a point without development drops to 3. The list runs from how they produce (limited quantities, traditional non-industrial skills, family run) to what they do for the country (rural employment, promoting the local area, Ireland's reputation for high-quality food). One from each end reads as genuine evaluation.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "speciality foods are produced in limited quantities",
+      "use of non-industrial traditional skills",
+      "many are family run",
+      "based in rural areas",
+      "provide employment for local people",
+      "bring skilled workforce to the market",
+      "produce good quality speciality foods",
+      "implement high standards of hygiene",
+      "promote local area",
+      "enhance Irelands reputation as a producer of high-quality food and drink",
+      "natural flavours",
+      "cater for special diets",
+      "promote sustainability"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap."
  }
 ]

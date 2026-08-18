@@ -713,5 +713,96 @@
   ],
   "notes": "The details strand of Q4(b)(ii).",
   "heldReason": "The scheme lists the saving schemes by provider and lists the reasons, but prints no marking points for the two detail points, which carry 6 of the part's 15 marks. The naming and reasons strands ship as he-2025-ol-sc-q4bii-name-reasons."
+ },
+ {
+  "id": "he-2024-hl-sc-q2ai",
+  "topicId": "home-economics-3-8",
+  "conceptId": "evaluating-outfit-design-for-an-occasion",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 HL Section C E2 Q2(a)(i)",
+  "questionText": "Evaluate the design of the outfits shown above for a summer family gathering. Refer to: comfort; aesthetic appeal; current fashion trends.",
+  "stem": "Being stylish, yet comfortable is key for many family gatherings and parties.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 point @ 5 marks (graded 5:3:0) x 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "comfort",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One point, 5 marks, graded 5:3:0.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "loose fitting dress",
+      "flowy dress",
+      "soft string straps",
+      "cool light weight fabric",
+      "casual jacket",
+      "round neck t-shirt",
+      "absorbent material",
+      "loose fitting trousers",
+      "flat shoes",
+      "easy to wear",
+      "jacket buttoned/unbuttoned can adjust comfort levels"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "aesthetic appeal",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One point, 5 marks, graded 5:3:0.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "relaxed look",
+      "use of detail on neckline of dress creates emphasis",
+      "loose fitting outfits",
+      "asymmetrical hem line on dress",
+      "easily pair with jacket/cardigan/throw",
+      "pockets and rolled up jacket sleeves add emphasis",
+      "rhythm due to repeated design in dress, repeating colour in T- shirt and runners"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "current fashion trends",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One point, 5 marks, graded 5:3:0.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "fashionable clothing trends",
+      "denim jacket and white t-shirt don’t date",
+      "runners very popular for casual or smart casual looks",
+      "light summer dresses with asymmetrical hemlines very popular",
+      "texturing using sequins and beads"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: three headings named in the question, priced equally.",
+  "heldReason": "Marks two outfits printed on the paper. Every option describes that image (\"asymmetrical hem line on dress\", \"repeating colour in T-shirt and runners\"), so the card is unanswerable without the figure and the markdown extraction does not carry it."
  }
 ]
