@@ -449,5 +449,269 @@
   ],
   "notes": "Fixed: the name is priced separately from the two demonstration points.",
   "heldReason": "The demonstration half can only be marked against the outfits printed on the paper, and the scheme prints a separate demonstration list for each of the four principles — a single card can show only one pair of them. Needs the figure and a per-principle card split."
+ },
+ {
+  "id": "he-2025-ol-sc-q2ai",
+  "topicId": "home-economics-3-8",
+  "conceptId": "suitability-of-outfits-for-an-occasion",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2025 OL Section C E2 Q2(a)(i)",
+  "questionText": "Comment on the suitability of the outfits shown above for a winter wedding. Refer to: comfort; function; aesthetic appeal.",
+  "stem": "Special events require special occasion clothing.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points @ 3 marks (graded 3:2:0) x 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "comfort",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks, graded 3:2:0.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "flowing fabric is comfortable to wear",
+      "dress allows ease of movement",
+      "stretch fabric",
+      "cool cotton T-shirt",
+      "fitted jacket and trousers allow for ease of movement while maintaining shape",
+      "block heels"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "function",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks, graded 3:2:0.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "slim leg trousers",
+      "short length in the jacket gives height",
+      "ease of movement",
+      "pockets",
+      "bag",
+      "flat shoes"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "aesthetic appeal",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks, graded 3:2:0.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "elongated shape",
+      "colour and texture of fabric adds interest",
+      "contrasting colours",
+      "appeals to all age groups",
+      "colour combinations"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: three headings named in the question, priced equally.",
+  "heldReason": "Marks an image of outfits printed on the paper. Every option in the scheme describes that image (\"flowing fabric is comfortable to wear\", \"short length in the jacket gives height\"), so the card is unanswerable without the figure and the markdown extraction does not carry it."
+ },
+ {
+  "id": "he-2025-ol-sc-q2aii",
+  "topicId": "home-economics-3-8",
+  "conceptId": "accessorising-an-outfit",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2025 OL Section C E2 Q2(a)(ii)",
+  "questionText": "Suggest one accessory you could add to enhance any one of the above outfits. Give one reason for your choice.",
+  "stem": "Special events require special occasion clothing.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 accessory @ 3 marks (graded 3:0); 1 reason @ 4 marks (graded 4:2:0)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Accessories",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Name one accessory, 3 marks, graded 3:0 — all-or-nothing.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "jewellery: earrings, bracelet, necklace, rings, watch",
+      "etc. add a shirt and tie",
+      "add a pocket square",
+      "belt",
+      "evening wear bag",
+      "hat",
+      "fascinator",
+      "hairband",
+      "scarf"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Reason for the choice",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One reason, 4 marks, graded 4:2:0.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": []
+    }
+   }
+  ],
+  "notes": "Fixed: the accessory is priced at 3 and the reason at 4.",
+  "heldReason": "The reason must be given for one of the outfits printed on the paper, and the scheme prints no marking points at all for it — only the accessory list. Four of the seven marks have nothing behind them, and the figure is missing as well."
+ },
+ {
+  "id": "he-2025-ol-sc-q3aii-details",
+  "topicId": "home-economics-3-10",
+  "conceptId": "education-initiative-details",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2025 OL Section C E3 Q3(a)(ii) - details of the initiative",
+  "questionText": "Give details of one education initiative that helps to support school attendance.",
+  "stem": "Child-centred education is a modern approach to curriculum.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 details @ 5 marks (graded 5:3:0)",
+   "answer": 2,
+   "ofParts": 0,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Details of the named initiative",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two details at 5 marks.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": []
+    }
+   }
+  ],
+  "notes": "The details strand of Q3(a)(ii).",
+  "heldReason": "The scheme prints the list of initiative names and then no marking points whatsoever for the two detail points, which carry 10 of the part's 15 marks. The naming strand ships as he-2025-ol-sc-q3aii-name."
+ },
+ {
+  "id": "he-2025-ol-sc-q3bii-details",
+  "topicId": "home-economics-3-11",
+  "conceptId": "state-support-details",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2025 OL Section C E3 Q3(b)(ii) - details of the support",
+  "questionText": "Give details of one government / state support provided to families with children.",
+  "stem": "There are many childcare options available in Ireland to suit different family needs.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 details @ 5 marks (graded 5:3:0)",
+   "answer": 2,
+   "ofParts": 0,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Details of the named support",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two details at 5 marks.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": []
+    }
+   }
+  ],
+  "notes": "The details strand of Q3(b)(ii).",
+  "heldReason": "The scheme lists the supports by name and prints no marking points for the two detail points, which carry 10 of the part's 15 marks. The naming strand ships as he-2025-ol-sc-q3bii-name."
+ },
+ {
+  "id": "he-2025-ol-sc-q4bii-details",
+  "topicId": "home-economics-1-1",
+  "conceptId": "saving-scheme-details",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2025 OL Section C Q4(b)(ii) - Core - details of the scheme",
+  "questionText": "Give details of one saving scheme suitable for a family.",
+  "stem": "‘Saving money is one of the key aspects of having a secure financial future.’ (www.iciciprulife.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "Details 2 points @ 3 marks (graded 3:2:0)",
+   "answer": 2,
+   "ofParts": 0,
+   "perPart": 3
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Details of the named saving scheme",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two details at 3 marks.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": []
+    }
+   }
+  ],
+  "notes": "The details strand of Q4(b)(ii).",
+  "heldReason": "The scheme lists the saving schemes by provider and lists the reasons, but prints no marking points for the two detail points, which carry 6 of the part's 15 marks. The naming and reasons strands ship as he-2025-ol-sc-q4bii-name-reasons."
  }
 ]
