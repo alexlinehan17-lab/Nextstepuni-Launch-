@@ -293,5 +293,161 @@
   "year": 2025,
   "section": "B",
   "heldReason": "The modern-features strand of Q4(b) (6 marks). The scheme lists 15 features and a card may show at most 14. The working-principle strand of the same part ships as he-2025-hl-sb-q4b-principle."
+ },
+ {
+  "id": "he-2025-hl-sc-q2ai",
+  "topicId": "home-economics-3-8",
+  "conceptId": "evaluating-outfit-design",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2025 HL Section C E2 Q2(a)(i)",
+  "questionText": "Evaluate the design of the outfits shown above. Refer to: design; comfort; aesthetic appeal.",
+  "stem": "A blazer is a wardrobe staple.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points @ 5 marks (graded 5:3:0)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "design",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One point, 5 marks, graded 5:3:0.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "contrasting colour scheme",
+      "monochromatic colour scheme",
+      "embellishment detail on t-shirt",
+      "wide-leg jeans can make legs look shorter",
+      "bag adds emphasis",
+      "long earrings"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "comfort",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One point, 5 marks, graded 5:3:0.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "soft",
+      "will hold shape",
+      "jeans will not crease",
+      "suited to warm and cold weather",
+      "pockets in jeans and blazers",
+      "relaxed fit",
+      "boots",
+      "trainers"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "aesthetic appeal",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One point, 5 marks, graded 5:3:0.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "appeals to young people who are fashion conscious",
+      "can be worn to work and during time off",
+      "good, structured fit",
+      "look smart but not overdressed",
+      "jeans easy to move in",
+      "pockets in jeans, blazer can hold items"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: one point pinned to each of the three named headings.",
+  "heldReason": "Marks an image of two outfits printed on the paper. Every option in the scheme describes that image (\"wide-leg jeans can make legs look shorter\", \"bag adds emphasis\"), so the card is unanswerable without the figure and the markdown extraction does not carry it."
+ },
+ {
+  "id": "he-2025-hl-sc-q2aii",
+  "topicId": "home-economics-3-8",
+  "conceptId": "design-principles-demonstrated",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2025 HL Section C E2 Q2(a)(ii)",
+  "questionText": "Name one design principle and explain how it is demonstrated in either outfit above.",
+  "stem": "A blazer is a wardrobe staple.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name 1 @ 4 marks (graded 4:0); demonstration 2 points @ 3 marks (graded 3:2:0)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Name of design principle",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Name one principle, 4 marks, graded 4:0 — all-or-nothing.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Balance",
+      "Emphasis",
+      "Proportion",
+      "Rhythm"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "How it is demonstrated in either outfit",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks, graded 3:2:0, tied to the principle you named.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "colours of outfits working well together",
+      "hand-bag picks up colours in earrings",
+      "blazer not oversized for either outfit",
+      "different coloured blazer",
+      "different coloured boots/shoes",
+      "embellishment on t-shirt",
+      "white t- shirt",
+      "belt",
+      "hand-bag",
+      "earrings"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: the name is priced separately from the two demonstration points.",
+  "heldReason": "The demonstration half can only be marked against the outfits printed on the paper, and the scheme prints a separate demonstration list for each of the four principles — a single card can show only one pair of them. Needs the figure and a per-principle card split."
  }
 ]
