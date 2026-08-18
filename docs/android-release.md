@@ -64,20 +64,23 @@ incompatibility for a worse one. A Temurin JDK 21 (the version AGP 8.x targets)
 lives in `~/.jdks/` — self-contained, no system install, and it leaves both the
 system Java and Android Studio's own JDK alone.
 
-## ⚠️ The bundle is far too large to publish
+## Bundle size — solved, but only if you use the npm scripts
 
-A clean build currently produces a **569 MB** `.aab`, which Google Play will
-reject outright. The cause is not the app: `dist/exam-figures` is 539 MB across
-3,114 PNGs, and Capacitor copies the whole of `dist/` into the native shell.
+A raw `npx cap sync` produces a **569 MB** `.aab` that Google Play rejects
+outright. The cause is not the app: `dist/exam-figures` is 686 MB across
+thousands of PNGs, and Capacitor copies the whole of `dist/` into the native
+shell.
 
-This is not Android-specific — the iOS app ships the same payload
-(`ios/App/App/public` is 608 MB).
+`scripts/prune-native-assets.mjs` strips that directory after every sync, and
+`utils/figureUrl.ts` points native builds at Firebase Hosting for the same
+files, which already serves them for the web app. That takes the download from
+roughly 600 MB to roughly 70 MB, and nothing is lost — the app needs the network
+for Firebase auth and Firestore before a student can see a figure at all.
 
-The fix is to serve `/exam-figures/**` from Firebase Hosting on native rather
-than bundling it, which the app is already positioned for: the files are hosted
-today, and the app needs the network for Firebase regardless. That takes the
-download from roughly 600 MB to roughly 70 MB. Until that lands, no Android
-release can be published.
+**The prune runs only if you go through the npm scripts** (`npm run cap:sync`,
+`cap:android`, `cap:ios`), which chain `cap:prune` for you. A bare
+`npx cap sync android` brings the whole corpus straight back and you are back to
+a bundle Play will not take.
 
 The bundle lands at:
 
