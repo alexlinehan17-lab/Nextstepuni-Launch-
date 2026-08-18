@@ -10,6 +10,7 @@ import {
   PRIVACY_POLICY_VERSION,
   LEGAL_LAST_UPDATED,
   SUPPORT_EMAIL,
+  LEGAL_URL_RE,
   type LegalDoc,
   type Section,
 } from './components/legal/legalContent';
@@ -23,6 +24,16 @@ import {
 const escHtml = (s: string) =>
   s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
+/** Escape first, then turn bare source URLs into anchors. Order matters: doing
+ *  it the other way round would escape the markup we just generated. */
+const escHtmlLinked = (s: string) => {
+  LEGAL_URL_RE.lastIndex = 0;
+  return escHtml(s).replace(
+    LEGAL_URL_RE,
+    (url) => `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`,
+  );
+};
+
 function renderSections(sections: Section[]): string {
   return sections
     .map((section) => {
@@ -31,7 +42,7 @@ function renderSections(sections: Section[]): string {
       const flush = () => {
         if (bullets.length) {
           parts.push(
-            `<ul>${bullets.map((b) => `<li>${escHtml(b.replace(/^•\s*/, ''))}</li>`).join('')}</ul>`,
+            `<ul>${bullets.map((b) => `<li>${escHtmlLinked(b.replace(/^•\s*/, ''))}</li>`).join('')}</ul>`,
           );
           bullets = [];
         }
@@ -40,7 +51,7 @@ function renderSections(sections: Section[]): string {
         if (line.startsWith('• ')) bullets.push(line);
         else {
           flush();
-          parts.push(`<p>${escHtml(line)}</p>`);
+          parts.push(`<p>${escHtmlLinked(line)}</p>`);
         }
       }
       flush();

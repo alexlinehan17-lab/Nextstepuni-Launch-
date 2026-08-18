@@ -323,6 +323,23 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                 <h3 className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-3">
                   Legal
                 </h3>
+                {/* Non-affiliation disclaimer, shown without opening a document.
+                    Google Play's Misleading Claims policy requires any app
+                    carrying government information to state plainly that it does
+                    not represent the government entity, and to be easy to see —
+                    the full source list lives in Terms of Use. */}
+                <p className="text-xs text-zinc-500 dark:text-zinc-400 mb-3 leading-relaxed">
+                  NextStepUni is an independent study app. It is not affiliated with or
+                  endorsed by the State Examinations Commission, the Department of Education,
+                  the CAO, SUSI, or any other government body. See{' '}
+                  <button
+                    onClick={() => setLegalDoc('terms')}
+                    className="underline font-medium text-zinc-600 dark:text-zinc-300"
+                  >
+                    Terms of Use
+                  </button>{' '}
+                  for the official sources we draw on.
+                </p>
                 <div className="space-y-1">
                   <button
                     onClick={() => setLegalDoc('privacy')}

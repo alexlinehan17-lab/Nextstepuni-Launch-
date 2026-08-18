@@ -25,7 +25,12 @@
 // Registration records the version a student accepted (users/{uid}.consent),
 // so a future re-consent prompt can detect an out-of-date acceptance.
 export const PRIVACY_POLICY_VERSION = '2026-08-13';
-export const LEGAL_LAST_UPDATED = '13 August 2026';
+// Bumped 18 August 2026 when the "Where our content comes from" section was
+// added to the Terms. PRIVACY_POLICY_VERSION is deliberately NOT bumped with it:
+// that constant is the key written to users/{uid}.consent, and the privacy
+// substance is unchanged, so bumping it would invalidate every recorded consent
+// and trigger a pointless re-consent prompt.
+export const LEGAL_LAST_UPDATED = '18 August 2026';
 export const SUPPORT_EMAIL = 'nextstepuniinfo@gmail.com';
 
 // The lawful-basis model wired into the app (confirmed 2026-06-01):
@@ -36,6 +41,16 @@ export const CONSENT_BASIS = 'school-enrolment';
 export type LegalDoc = 'privacy' | 'terms';
 
 export interface Section { heading: string; body: string[] }
+
+/**
+ * Bare https:// URLs written into the copy above, so both renderers can turn
+ * them into real links. Google Play's Misleading Claims policy asks for
+ * "clear and accessible URL/link(s)" to the original government sources — a URL
+ * printed as plain text is neither. Global + sticky is deliberate: callers use
+ * it with split()/exec(), so it must be reset (lastIndex = 0) before each pass
+ * or shared state leaks between calls.
+ */
+export const LEGAL_URL_RE = /(https?:\/\/[^\s,)]+)/g;
 
 export const LEGAL_TITLES: Record<LegalDoc, string> = {
   privacy: 'Privacy Notice',
@@ -176,6 +191,26 @@ export const TERMS_OF_USE: Section[] = [
     heading: 'Our content',
     body: [
       'The learning content in NextStepUni is for your own personal study. Please don’t copy, sell or share it outside the app.',
+    ],
+  },
+  {
+    // Required disclosure. NextStepUni surfaces material published by Irish
+    // public bodies — SEC marking schemes and Chief Examiner reports, CAO and
+    // SUSI deadlines, HEA data. Google Play's Misleading Claims policy requires
+    // any app carrying government information to name the original sources and
+    // to state plainly that it does not represent the government entity.
+    heading: 'Where our content comes from',
+    body: [
+      'NextStepUni is an independent study app made by NextStepUni Ltd. It is not affiliated with, endorsed by, or acting on behalf of the State Examinations Commission, the Department of Education, the CAO, SUSI, the Higher Education Authority, or any other government body or public agency.',
+      'Some of what you study here is built from official material that those bodies publish. Every exam marking point in the app tells you the paper, the year and the level it came from, and exam material is quoted for study purposes only and stays © State Examinations Commission.',
+      'Deadlines, fees, grant rules and entry requirements change. The official sites below are always the authority — check them before you rely on a date or an entitlement:',
+      '• State Examinations Commission — exam papers, marking schemes and Chief Examiner reports: https://www.examinations.ie',
+      '• CAO — college applications, points and deadlines: https://www.cao.ie',
+      '• SUSI — student grants: https://www.susi.ie',
+      '• Higher Education Authority — higher education statistics and policy: https://hea.ie',
+      '• Qualifax — the national learners’ database of courses: https://www.qualifax.ie',
+      '• Citizens Information — public services and entitlements: https://www.citizensinformation.ie',
+      '• gov.ie — Irish government services and information: https://www.gov.ie',
     ],
   },
   {

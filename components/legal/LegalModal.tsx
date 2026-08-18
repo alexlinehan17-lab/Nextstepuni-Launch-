@@ -16,6 +16,7 @@ import {
   TERMS_OF_USE,
   PRIVACY_POLICY_VERSION,
   LEGAL_LAST_UPDATED,
+  LEGAL_URL_RE,
 } from './legalContent';
 
 // The legal copy + version constants now live in ./legalContent (a
@@ -45,6 +46,33 @@ interface LegalModalProps {
  * Full-screen, scrollable overlay rendering the Privacy Notice or Terms of Use.
  * Reachable from registration (LoginPage) and from Settings.
  */
+/**
+ * Render a copy line, turning bare source URLs into real links.
+ *
+ * The Terms name the official government sources the app draws on (SEC, CAO,
+ * SUSI, HEA...) and Google Play's Misleading Claims policy asks for those to be
+ * accessible links rather than plain text. split() on a capturing group keeps
+ * the URLs in the output array, so the odd indices are the matches.
+ */
+function withLinks(line: string): React.ReactNode[] {
+  LEGAL_URL_RE.lastIndex = 0;
+  return line.split(LEGAL_URL_RE).map((part, i) =>
+    i % 2 === 1 ? (
+      <a
+        key={i}
+        href={part}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="font-medium text-[#F26B1F] underline underline-offset-2 break-all"
+      >
+        {part}
+      </a>
+    ) : (
+      part
+    ),
+  );
+}
+
 export const LegalModal: React.FC<LegalModalProps> = ({ doc, onClose }) => {
   useModal(!!doc, onClose);
   if (!doc) return null;
@@ -120,10 +148,10 @@ export const LegalModal: React.FC<LegalModalProps> = ({ doc, onClose }) => {
                             line.startsWith('• ') ? (
                               <div key={index} className="grid grid-cols-[8px_minmax(0,1fr)] gap-2.5 text-[13px] leading-6 text-[#5F5A55] sm:text-sm dark:text-zinc-300">
                                 <span className="mt-[9px] h-1.5 w-1.5 rounded-full bg-[#F26B1F]" aria-hidden />
-                                <p>{line.slice(2)}</p>
+                                <p>{withLinks(line.slice(2))}</p>
                               </div>
                             ) : (
-                              <p key={index} className="text-[13px] leading-6 text-[#5F5A55] sm:text-sm dark:text-zinc-300">{line}</p>
+                              <p key={index} className="text-[13px] leading-6 text-[#5F5A55] sm:text-sm dark:text-zinc-300">{withLinks(line)}</p>
                             )
                           )}
                         </div>
