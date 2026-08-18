@@ -804,5 +804,140 @@
   ],
   "notes": "Fixed: three headings named in the question, priced equally.",
   "heldReason": "Marks two outfits printed on the paper. Every option describes that image (\"asymmetrical hem line on dress\", \"repeating colour in T-shirt and runners\"), so the card is unanswerable without the figure and the markdown extraction does not carry it."
+ },
+ {
+  "id": "he-2024-ol-sc-q2ai",
+  "topicId": "home-economics-3-8",
+  "conceptId": "suitability-of-sportswear",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 OL Section C E2 Q2(a)(i)",
+  "questionText": "Comment on the suitability of the sportwear shown above. Refer to: comfort; function; aesthetic appeal.",
+  "stem": "Sportwear needs to be practical but can also be stylish.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points @ 3 marks (graded 3:2:0) x 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "comfort",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks, graded 3:2:0.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "allows for ease of movement during exercise",
+      "easy to remove jacket/hoodie",
+      "woman’s jacket is water resistant",
+      "round neck t-shirt for women is comfortable",
+      "suitable footwear for exercise",
+      "tracksuit bottoms are fitted, less like to slip/move down during exercise/movement"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "function",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks, graded 3:2:0.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "suitable for different exercise activities",
+      "durable",
+      "reduced risk of creasing",
+      "suited to warm and cold weather",
+      "improved visibility due to strips of bright colours",
+      "can hold personal items",
+      "suitable footwear for exercise"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "aesthetic appeal",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks, graded 3:2:0.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "stripes of colour on tracksuit bottoms",
+      "narrowed cuff on man’s hoodie",
+      "fitted leggings style bottoms",
+      "zip on both hoodie/jacket",
+      "pockets in hoodie/jacket",
+      "colour blocking",
+      "draw string feature on man’s hoodie",
+      "brand crest less obvious due to small size"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: three headings named in the question, priced equally.",
+  "heldReason": "Marks sportswear printed on the paper. Every option describes that image (\"narrowed cuff on man’s hoodie\", \"woman’s jacket is water resistant\"), so the card is unanswerable without the figure and the markdown extraction does not carry it."
+ },
+ {
+  "id": "he-2024-ol-sc-q2aii",
+  "topicId": "home-economics-3-8",
+  "conceptId": "emphasis-applied-to-an-outfit",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 OL Section C E2 Q2(a)(ii)",
+  "questionText": "Describe how emphasis as a design principle is applied to the outfits pictured above.",
+  "stem": "Sportwear needs to be practical but can also be stylish.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 point @ 4 marks (graded 4:2:0); 2nd point @ 3 marks (graded 3:2:0)",
+   "answer": 2,
+   "ofParts": 6,
+   "perPart": 3
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "How emphasis is applied to the outfits",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "Two points, the first at 4 marks and the second at 3.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "bright yellow t-shirt",
+      "bright yellow/white runners",
+      "yellow stripe on side and back of tracksuit bottom",
+      "green stripe on shoulder and top of tracksuit bottom",
+      "brand logos",
+      "contrasting zip"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices the first point at 4 and the second at 3.",
+  "heldReason": "Every option names a colour or feature of the outfits pictured on the paper (\"bright yellow t-shirt\", \"yellow stripe on side and back of tracksuit bottom\"), so the card cannot be answered without the figure."
  }
 ]
