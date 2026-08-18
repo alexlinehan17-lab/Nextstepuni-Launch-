@@ -939,5 +939,101 @@
   ],
   "notes": "The scheme prices the first point at 4 and the second at 3.",
   "heldReason": "Every option names a colour or feature of the outfits pictured on the paper (\"bright yellow t-shirt\", \"yellow stripe on side and back of tracksuit bottom\"), so the card cannot be answered without the figure."
+ },
+ {
+  "id": "he-2023-hl-sc-q1bi",
+  "topicId": "home-economics-3-5",
+  "conceptId": "properties-of-light-in-the-home",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2023 HL Section C E1 Q1(b)(i)",
+  "questionText": "Describe four properties of light and give an example of how each property is used in the home.",
+  "stem": "‘Lighting ideas are an essential part of space design.’ (www.homesandgardens.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "Name 4 @ 2 marks; description 4 @ 2 marks; example 4 @ 1 mark",
+   "answer": 4,
+   "ofParts": 5,
+   "perPart": 2
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Properties of light",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Four properties named, 2 marks each, graded 2:0.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 2,
+     "options": [
+      "Reflected",
+      "Diffused",
+      "Absorbed",
+      "Dispersed",
+      "Refracted"
+     ]
+    }
+   }
+  ],
+  "notes": "Held — see heldReason.",
+  "heldReason": "The scheme prints this as a three-column table (Property / Explanation / Example) and the PDF extraction interleaves the columns line by line: the Diffused row reads \"Rays of light are scattered when they pass net curtains; frosted glass; through translucent substances or hit a non- translucent lampshades; etc. reflecting surface\". Explanation and example cannot be separated from the markdown with confidence, and both historical scheme corruptions in this repo came from reconstructing a table by hand. Needs the columns re-extracted from the PDF."
+ },
+ {
+  "id": "he-2023-hl-sc-q2cii",
+  "topicId": "home-economics-3-8",
+  "conceptId": "careers-in-clothing-and-textiles",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2023 HL Section C E2 Q2(c)(ii)",
+  "questionText": "Name and give details of one career opportunity in the clothing and textile industry.",
+  "stem": "‘The vintage clothing industry is growing 25 times faster than the overall retail market.’ (www.rediscoverycentre.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "Name 1 point @ 2 marks (graded 2:0); detail 1 point @ 4 marks (graded 4:2:0)",
+   "answer": 1,
+   "ofParts": 11,
+   "perPart": 2
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Careers in the clothing and textile industry",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Name one, 2 marks, graded 2:0.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "fashion designers",
+      "tailors",
+      "milliner",
+      "fashion journalists",
+      "photographers",
+      "model",
+      "stylist",
+      "clothing manufacturer",
+      "advertising",
+      "blogger",
+      "retail sales assistant"
+     ]
+    }
+   }
+  ],
+  "notes": "Held — see heldReason.",
+  "heldReason": "The scheme prints the list of career names and no marking points at all for the detail point, which carries 4 of the part's 6 marks. Unlike the naming strands split out on other papers, what is left here is a 2-mark card, too thin to ship on its own."
  }
 ]

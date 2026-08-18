@@ -37,7 +37,7 @@ const decks = [
   ['agricultural-science:ordinary', AGSCI_ORDINARY, 389, 'd964ad3c5b7f8933d947c1fc18c593098b3928d20c22d7ff8de8473e6e243a0e'],
   ['business:higher', BUSINESS_HIGHER, 261, '756f439b344b3f5ad492baf96d2bde14e4991d225d8fadbf4a0234beef9290a7'],
   ['business:ordinary', BUSINESS_ORDINARY, 314, '9aa889406a38da3c7c143cc2aa84af34e33b1a901ee8482493ad58105c20af38'],
-  ['home-economics:higher', HOME_EC_HIGHER, 191, 'e44f64afe2c876977224023822d95d01069ee2d7be2d4c35e1e9d1fff5c21298'],
+  ['home-economics:higher', HOME_EC_HIGHER, 228, '480d36bdfadea3455b7c6c9d176c2ad38ef8678d6edd825cbf18fb6caa1a33a7'],
   ['home-economics:ordinary', HOME_EC_ORDINARY, 183, 'f211052d028dcdb485748144bf1d6ec6202334b2360f9970de7aa7296799d209'],
 ] as const;
 
@@ -53,6 +53,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(4_376);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(4_413);
   });
 });
