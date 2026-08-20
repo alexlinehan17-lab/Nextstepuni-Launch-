@@ -14,18 +14,18 @@ interface CutContentPageProps {
 const SERIF = "'Source Serif 4', serif";
 
 // ── Palette (Mercury / data-dense register) ──────────────────────────────────
-const INK = '#1a1a1a';
-const HAIRLINE = '#EDEBE8';
-const PAGE = '#f0f0f0';
+const INK = 'var(--ink-primary)';
+const HAIRLINE = 'var(--hairline)';
+const PAGE = 'var(--page-canvas)';
 const PANEL = '#FAF7F4';
-const MUTED = '#7a7068';
-const LABEL = '#9e9186';
-const FAINT = '#b0a898';
+const MUTED = 'var(--page-muted)';
+const LABEL = 'var(--page-label)';
+const FAINT = 'var(--ink-faint)';
 const ACCENT = '#F26B1F';
-const ACCENT_TINT = '#FDEEDF';
-const ACCENT_DARK_TEXT = '#8C3A0E';
-const SUCCESS_TINT = '#E8F2EC';
-const SUCCESS_DARK_TEXT = '#1F5F3E';
+const ACCENT_TINT = 'var(--accent-tint)';
+const ACCENT_DARK_TEXT = 'var(--accent-tint-ink)';
+const SUCCESS_TINT = 'var(--success-tint)';
+const SUCCESS_DARK_TEXT = 'var(--success-tint-ink)';
 
 type FilterKey = 'all' | CutAction | 'awaiting';
 
@@ -213,7 +213,7 @@ const CutContentPage: React.FC<CutContentPageProps> = ({ onBack }) => {
   }, []);
 
   return (
-    <div className="min-h-screen print:bg-white" style={{ backgroundColor: PAGE }}>
+    <div className="min-h-screen print:bg-white theme-compat" style={{ backgroundColor: PAGE }}>
       {/* Masthead */}
       <header
         className="sticky top-0 z-30 px-4 md:px-10 bg-[#f0f0f0]/90 backdrop-blur-sm border-b print:static print:bg-white print:backdrop-blur-none"

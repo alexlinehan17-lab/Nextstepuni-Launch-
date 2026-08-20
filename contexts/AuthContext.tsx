@@ -12,7 +12,7 @@ import { type StudentSubjectProfile } from '../components/subjectData';
 import { generateAutoNotifications } from '../components/gc/gcNotifications';
 import { logError } from '../utils/logError';
 import { getProgressDocument } from '../services/progressRepository';
-import { getUserDocument, mergeUserDocument } from '../services/userRepository';
+import { mergeUserDocument, waitForUserDocument } from '../services/userRepository';
 import { DEMO_STUDENT_UID, createDemoStudentLoadedData } from '../data/devStudent';
 import { isAdminEmail } from '../utils/adminIdentity';
 
@@ -126,7 +126,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         // Regular user — fetch profile + progress
         try {
           const [userData, progressData] = await Promise.all([
-            getUserDocument(firebaseUser.uid),
+            waitForUserDocument(firebaseUser.uid),
             getProgressDocument(firebaseUser.uid),
           ]);
           const token = await firebaseUser.getIdTokenResult();
@@ -192,7 +192,11 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
             // (doc write still pending/offline), or a deleted account. Either way,
             // don't sign out — that destroys the session. Use a fallback user,
             // but still check the progress doc for onboarding state.
-            const fallbackName = firebaseUser.displayName || firebaseUser.email?.split('@')[0] || 'Student';
+            // Not the email local-part: it is wrong for every account that has a
+            // real name on file, and it puts part of a school-issued address on
+            // screen. A neutral placeholder is the honest thing to show while the
+            // document is missing.
+            const fallbackName = firebaseUser.displayName || 'Student';
             setUser({
               uid: firebaseUser.uid,
               name: fallbackName,
@@ -221,7 +225,11 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
           }
         } catch (err) {
           console.error('Error fetching user data:', err);
-          const fallbackName = firebaseUser.displayName || firebaseUser.email?.split('@')[0] || 'Student';
+          // Not the email local-part: it is wrong for every account that has a
+            // real name on file, and it puts part of a school-issued address on
+            // screen. A neutral placeholder is the honest thing to show while the
+            // document is missing.
+            const fallbackName = firebaseUser.displayName || 'Student';
           setUser({
             uid: firebaseUser.uid,
             name: fallbackName,

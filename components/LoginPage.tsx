@@ -215,7 +215,7 @@ const GatewayPanel = () => {
 
 // ── Card wrapper — split panel on desktop, full-width on mobile ──
 const LoginCard: React.FC<{ children: React.ReactNode; devButton?: React.ReactNode }> = ({ children, devButton }) => (
-  <div className="min-h-screen flex flex-col items-center justify-center p-4 md:p-8 light" data-theme="light" style={{ backgroundColor: '#FAFBF6', colorScheme: 'light' }}>
+  <div className="min-h-screen flex flex-col items-center justify-center p-4 md:p-8 theme-compat" style={{ backgroundColor: 'var(--surface-canvas)' }}>
     <MotionDiv
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -747,7 +747,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   // inside the field.
   const passwordInputClass = `${inputClass} pr-12`;
   const primaryBtn = "w-full py-3.5 rounded-xl text-[15px] font-semibold transition-all border-2 disabled:opacity-50 disabled:cursor-not-allowed";
-  const primaryBtnStyle = { backgroundColor: '#FFFFFF', color: '#1A1A1A', borderColor: 'rgba(26,26,26,0.55)' };
+  const primaryBtnStyle = { backgroundColor: 'var(--cta-invert-bg)', color: 'var(--cta-invert-ink)', borderColor: 'var(--cta-invert-border)' };
 
   // Localhost Demo Account — a deterministic in-memory student story for
   // viewing dashboards and progress features. It has no Firebase auth token

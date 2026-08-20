@@ -74,7 +74,7 @@ const YearPlansView: React.FC<YearPlansViewProps> = ({
   };
 
   return (
-    <div className="min-h-screen bg-[#FAFBF6] dark:bg-zinc-950 pt-16 md:pt-20 pb-32 px-4 sm:px-6 transition-colors duration-500">
+    <div className="min-h-screen theme-compat bg-[#FAFBF6] dark:bg-zinc-950 pt-16 md:pt-20 pb-32 px-4 sm:px-6 transition-colors duration-500">
       <div className="max-w-5xl mx-auto">
         <PageHeader onBack={onBack} eyebrow="Plan ahead" title="Year Plans" className="mb-4" />
         <p

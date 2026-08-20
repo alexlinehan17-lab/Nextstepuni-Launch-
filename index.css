@@ -29,6 +29,28 @@
   --dashboard-tooltip: #1A1A1A;
   --dashboard-tooltip-ink: #FFFFFF;
   --dashboard-tooltip-muted: #CFC9C2;
+  /* Inverted primary CTA. The compat layer folds a plain white button onto
+     --surface-paper, which in dark is the same colour as the card it sits on,
+     so the button loses all prominence and the secondary control reads as the
+     primary one. These keep light mode byte-identical and give dark a genuinely
+     raised surface. */
+  /* The editorial pages (References, Cut content) predate the ink scale and use
+     their own greys on a heavier grey canvas. Kept as their own tokens so light
+     mode is unchanged to the byte -- folding them into --ink-* would have
+     shifted four greys and the canvas. */
+  --page-canvas: #f0f0f0;
+  --page-body: #5a5550;
+  --page-muted: #7a7068;
+  --page-label: #9e9186;
+  --cta-invert-bg: #FFFFFF;
+  --cta-invert-ink: #1A1A1A;
+  --cta-invert-border: rgba(26, 26, 26, 0.55);
+  --ink-faint: #B0A898;
+  --hairline: #EDEBE8;
+  --accent-tint: #FDEEDF;
+  --accent-tint-ink: #8C3A0E;
+  --success-tint: #E8F2EC;
+  --success-tint-ink: #1F5F3E;
   --mountain-paper: #FFFFFF;
   --mountain-ink: #1A1A1A;
   --mountain-muted: rgba(0, 0, 0, 0.55);
@@ -88,10 +110,37 @@
   --dashboard-tooltip: #F7F4EF;
   --dashboard-tooltip-ink: #191919;
   --dashboard-tooltip-muted: #6F6861;
+  /* Tints carry meaning (selected / correct), so they stay tinted rather than
+     collapsing to a neutral: a desaturated dark of the same hue, with ink light
+     enough to clear AA on it. */
+  --page-canvas: #151515;
+  --page-body: #D6D0C9;
+  --page-muted: #A8A29E;
+  --page-label: #938C84;
+  --cta-invert-bg: #F7F3ED;
+  --cta-invert-ink: #1A1A1A;
+  --cta-invert-border: rgba(247, 243, 237, 0.55);
+  --ink-faint: #8F887F;
+  --hairline: #34312E;
+  --accent-tint: #3A2417;
+  --accent-tint-ink: #F6B98C;
+  --success-tint: #1D3327;
+  --success-tint-ink: #9FD9B6;
   --mountain-paper: #202020;
   --mountain-ink: #F5F2ED;
   --mountain-muted: rgba(245, 242, 237, 0.60);
 }
+
+/*
+ * `.theme-compat` opts a screen into everything below without opting it into the
+ * `.product-shell` field grammar further down, which is NOT dark-scoped and
+ * would change how inputs look in light mode too.
+ *
+ * Use it on any screen written before the semantic tokens existed: the rules
+ * below rewrite `bg-white`, `text-zinc-*`, inline `background: #fff` and the
+ * hard-coded outline colours onto the dark palette. Adding the class is the
+ * whole fix — there is nothing to do per component.
+ */
 
 /*
  * Dark-mode compatibility for the editorial product worlds.
@@ -103,104 +152,106 @@
  * authored illustration colours remain untouched, while paper, ink and rules
  * are remapped to the same accessible dark system as the newer screens.
  */
-.dark .product-shell [style*="color: rgb(26, 26, 26)"],
-.dark .product-shell [style*="color: rgb(31, 27, 23)"],
-.dark .product-shell [style*="color: rgb(28, 25, 23)"],
-.dark .product-shell [style*="color: #1a1a1a" i],
-.dark .product-shell [style*="color: #1f1b17" i],
-.dark .product-shell [class*="text-[#1A1A1A]"],
-.dark .product-shell [class*="text-[#1a1a1a]"] {
+.dark :is(.product-shell, .theme-compat) [style*="color: rgb(26, 26, 26)"],
+.dark :is(.product-shell, .theme-compat) [style*="color: rgb(31, 27, 23)"],
+.dark :is(.product-shell, .theme-compat) [style*="color: rgb(28, 25, 23)"],
+.dark :is(.product-shell, .theme-compat) [style*="color: #1a1a1a" i],
+.dark :is(.product-shell, .theme-compat) [style*="color: #1f1b17" i],
+.dark :is(.product-shell, .theme-compat) [class*="text-[#1A1A1A]"],
+.dark :is(.product-shell, .theme-compat) [class*="text-[#1a1a1a]"] {
   color: var(--ink-primary) !important;
 }
 
-.dark .product-shell [style*="color: rgb(92, 84, 74)"],
-.dark .product-shell [style*="color: rgb(58, 53, 48)"],
-.dark .product-shell [style*="color: rgb(120, 113, 108)"],
-.dark .product-shell [style*="color: #3a3530" i],
-.dark .product-shell [style*="color: #5c544a" i] {
+.dark :is(.product-shell, .theme-compat) [style*="color: rgb(92, 84, 74)"],
+.dark :is(.product-shell, .theme-compat) [style*="color: rgb(58, 53, 48)"],
+.dark :is(.product-shell, .theme-compat) [style*="color: rgb(120, 113, 108)"],
+.dark :is(.product-shell, .theme-compat) [style*="color: #3a3530" i],
+.dark :is(.product-shell, .theme-compat) [style*="color: #5c544a" i] {
   color: var(--ink-secondary) !important;
 }
 
-.dark .product-shell [style*="color: rgb(142, 131, 120)"],
-.dark .product-shell [style*="color: rgb(158, 145, 134)"],
-.dark .product-shell [style*="color: #8e8378" i] {
+.dark :is(.product-shell, .theme-compat) [style*="color: rgb(90, 85, 80)"],
+.dark :is(.product-shell, .theme-compat) [style*="color: #5a5550" i],
+.dark :is(.product-shell, .theme-compat) [style*="color: rgb(142, 131, 120)"],
+.dark :is(.product-shell, .theme-compat) [style*="color: rgb(158, 145, 134)"],
+.dark :is(.product-shell, .theme-compat) [style*="color: #8e8378" i] {
   color: var(--ink-muted) !important;
 }
 
-.dark .product-shell [style*="color: rgba(0, 0, 0"],
-.dark .product-shell [style*="color: rgba(26, 26, 26"] {
+.dark :is(.product-shell, .theme-compat) [style*="color: rgba(0, 0, 0"],
+.dark :is(.product-shell, .theme-compat) [style*="color: rgba(26, 26, 26"] {
   color: var(--ink-secondary) !important;
 }
 
-.dark .product-shell [style*="background: rgb(255, 255, 255)"],
-.dark .product-shell [style*="background-color: rgb(255, 255, 255)"],
-.dark .product-shell [style*="background: rgb(250, 251, 246)"],
-.dark .product-shell [style*="background-color: rgb(250, 251, 246)"],
-.dark .product-shell [style*="background: rgb(248, 248, 248)"],
-.dark .product-shell [style*="background-color: rgb(248, 248, 248)"],
-.dark .product-shell [style*="background: rgb(246, 241, 230)"],
-.dark .product-shell [style*="background-color: rgb(246, 241, 230)"],
-.dark .product-shell [style*="background: #fff" i],
-.dark .product-shell [style*="background-color: #fff" i],
-.dark .product-shell [class*="bg-[#FAFBF6]"],
-.dark .product-shell [class*="bg-[#FAF9F7]"],
-.dark .product-shell [class*="bg-[#FAF7F4]"],
-.dark .product-shell [class*="bg-[#FDF8F0]"] {
+.dark :is(.product-shell, .theme-compat) [style*="background: rgb(255, 255, 255)"],
+.dark :is(.product-shell, .theme-compat) [style*="background-color: rgb(255, 255, 255)"],
+.dark :is(.product-shell, .theme-compat) [style*="background: rgb(250, 251, 246)"],
+.dark :is(.product-shell, .theme-compat) [style*="background-color: rgb(250, 251, 246)"],
+.dark :is(.product-shell, .theme-compat) [style*="background: rgb(248, 248, 248)"],
+.dark :is(.product-shell, .theme-compat) [style*="background-color: rgb(248, 248, 248)"],
+.dark :is(.product-shell, .theme-compat) [style*="background: rgb(246, 241, 230)"],
+.dark :is(.product-shell, .theme-compat) [style*="background-color: rgb(246, 241, 230)"],
+.dark :is(.product-shell, .theme-compat) [style*="background: #fff" i],
+.dark :is(.product-shell, .theme-compat) [style*="background-color: #fff" i],
+.dark :is(.product-shell, .theme-compat) [class*="bg-[#FAFBF6]"],
+.dark :is(.product-shell, .theme-compat) [class*="bg-[#FAF9F7]"],
+.dark :is(.product-shell, .theme-compat) [class*="bg-[#FAF7F4]"],
+.dark :is(.product-shell, .theme-compat) [class*="bg-[#FDF8F0]"] {
   background: var(--surface-paper) !important;
   background-color: var(--surface-paper) !important;
 }
 
-.dark .product-shell [style*="border: 1px solid rgb(31, 27, 23)"],
-.dark .product-shell [style*="border: 1.5px solid rgb(31, 27, 23)"],
-.dark .product-shell [style*="border: 2px solid rgb(31, 27, 23)"],
-.dark .product-shell [style*="border-color: rgb(31, 27, 23)"],
-.dark .product-shell [style*="border-color: rgb(26, 26, 26)"] {
+.dark :is(.product-shell, .theme-compat) [style*="border: 1px solid rgb(31, 27, 23)"],
+.dark :is(.product-shell, .theme-compat) [style*="border: 1.5px solid rgb(31, 27, 23)"],
+.dark :is(.product-shell, .theme-compat) [style*="border: 2px solid rgb(31, 27, 23)"],
+.dark :is(.product-shell, .theme-compat) [style*="border-color: rgb(31, 27, 23)"],
+.dark :is(.product-shell, .theme-compat) [style*="border-color: rgb(26, 26, 26)"] {
   border-color: var(--outline-strong) !important;
 }
 
-.dark .product-shell [class*="border-[#1A1A1A]"],
-.dark .product-shell [class*="border-[#383838]"] {
+.dark :is(.product-shell, .theme-compat) [class*="border-[#1A1A1A]"],
+.dark :is(.product-shell, .theme-compat) [class*="border-[#383838]"] {
   border-color: var(--outline-strong) !important;
 }
 
-.dark .product-shell [class*="shadow-["][class*="#1A1A1A"] {
+.dark :is(.product-shell, .theme-compat) [class*="shadow-["][class*="#1A1A1A"] {
   --tw-shadow-color: var(--outline-strong);
 }
 
 /* Utility-era screens often relied on a light parent and therefore used plain
    `bg-white`, `text-zinc-*`, or inherited black. Give those common primitives a
    coherent dark material without touching coloured artwork and diagrams. */
-.dark .product-shell {
+.dark :is(.product-shell, .theme-compat) {
   color: var(--ink-primary);
 }
 
-.dark .product-shell :where(.bg-white, .bg-zinc-50, .bg-stone-50, .bg-neutral-50) {
+.dark :is(.product-shell, .theme-compat) :where(.bg-white, .bg-zinc-50, .bg-stone-50, .bg-neutral-50) {
   background-color: var(--surface-paper) !important;
 }
 
-.dark .product-shell :where(.bg-zinc-100, .bg-stone-100, .bg-neutral-100, .bg-gray-100) {
+.dark :is(.product-shell, .theme-compat) :where(.bg-zinc-100, .bg-stone-100, .bg-neutral-100, .bg-gray-100) {
   background-color: var(--surface-soft) !important;
 }
 
-.dark .product-shell :where(.text-black, .text-zinc-950, .text-zinc-900, .text-stone-950, .text-stone-900, .text-neutral-900) {
+.dark :is(.product-shell, .theme-compat) :where(.text-black, .text-zinc-950, .text-zinc-900, .text-stone-950, .text-stone-900, .text-neutral-900) {
   color: var(--ink-primary) !important;
 }
 
-.dark .product-shell :where(.text-zinc-800, .text-zinc-700, .text-stone-800, .text-stone-700, .text-neutral-700, .text-gray-700) {
+.dark :is(.product-shell, .theme-compat) :where(.text-zinc-800, .text-zinc-700, .text-stone-800, .text-stone-700, .text-neutral-700, .text-gray-700) {
   color: var(--ink-secondary) !important;
 }
 
-.dark .product-shell :where(.text-zinc-600, .text-zinc-500, .text-stone-600, .text-stone-500, .text-neutral-600, .text-gray-600) {
+.dark :is(.product-shell, .theme-compat) :where(.text-zinc-600, .text-zinc-500, .text-stone-600, .text-stone-500, .text-neutral-600, .text-gray-600) {
   color: var(--ink-muted) !important;
 }
 
-.dark .product-shell :where(.border-zinc-200, .border-stone-200, .border-neutral-200, .border-gray-200) {
+.dark :is(.product-shell, .theme-compat) :where(.border-zinc-200, .border-stone-200, .border-neutral-200, .border-gray-200) {
   border-color: var(--outline-soft) !important;
 }
 
 /* Disabled content must still be readable; opacity compounds badly on dark. */
-.dark .product-shell :disabled,
-.dark .product-shell [aria-disabled="true"] {
+.dark :is(.product-shell, .theme-compat) :disabled,
+.dark :is(.product-shell, .theme-compat) [aria-disabled="true"] {
   opacity: 0.58;
 }
 

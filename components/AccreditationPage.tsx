@@ -28,19 +28,19 @@ interface AccreditationPageProps {
 const SERIF = "'Source Serif 4', serif";
 const SANS = "'DM Sans', sans-serif";
 
-const INK = '#1a1a1a';
-const HAIRLINE = '#EDEBE8';
-const PAGE = '#f0f0f0';
-const BODY = '#5a5550';
-const MUTED = '#7a7068';
-const LABEL = '#9e9186';
-const FAINT = '#b0a898';
+const INK = 'var(--ink-primary)';
+const HAIRLINE = 'var(--hairline)';
+const PAGE = 'var(--page-canvas)';
+const BODY = 'var(--page-body)';
+const MUTED = 'var(--page-muted)';
+const LABEL = 'var(--page-label)';
+const FAINT = 'var(--ink-faint)';
 const ACCENT = '#F26B1F';
-const ACCENT_TINT = '#FDEEDF';
-const ACCENT_DARK_TEXT = '#8C3A0E';
+const ACCENT_TINT = 'var(--accent-tint)';
+const ACCENT_DARK_TEXT = 'var(--accent-tint-ink)';
 const SUCCESS = '#3A8D5F';
-const SUCCESS_TINT = '#E8F2EC';
-const SUCCESS_DARK_TEXT = '#1F5F3E';
+const SUCCESS_TINT = 'var(--success-tint)';
+const SUCCESS_DARK_TEXT = 'var(--success-tint-ink)';
 
 const CATEGORY_ORDER: CategoryType[] = [
   'architecture-mindset',
@@ -187,7 +187,7 @@ const AccreditationPage: React.FC<AccreditationPageProps> = ({ onBack, onOpenMod
   const matches = (title: string) => !q || title.toLowerCase().includes(q);
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: PAGE }}>
+    <div className="min-h-screen theme-compat" style={{ backgroundColor: PAGE }}>
       {/* ── Masthead ── */}
       <header
         className="sticky top-0 z-30 px-4 md:px-10 bg-[#f0f0f0]/92 backdrop-blur-sm border-b"
