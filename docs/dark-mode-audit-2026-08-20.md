@@ -88,3 +88,76 @@ CSS-variable swap or an `!important` rule in the compat layer.
   already defines for exactly this.
 - Every icon button in the left rail is unlabelled — `read_page` returns 24
   anonymous `button` elements. Screen-reader users get nothing.
+
+---
+
+# What was fixed
+
+## 1. The compat layer now reaches past `.product-shell`
+
+The dark-scoped rules match `:is(.product-shell, .theme-compat)`. Orphaned
+screens opt in with the new class: LoginPage, ResetPasswordPage,
+AccreditationPage, CutContentPage, WipTools, YearPlansView.
+
+The field grammar below it stays `.product-shell`-only on purpose — it is not
+dark-scoped, so extending it would have restyled inputs in light mode too.
+
+## 2. The auth screens follow the theme
+
+They had tried to opt out with `className="… light"`, `data-theme="light"` and
+`colorScheme: 'light'`. That set the surface but never the text: `body` carries
+`dark:text-zinc-100`, so the card stayed white under near-white type. Removed.
+
+## 3. The muted text steps, lifted for dark only
+
+`tailwind.config.ts` replaces Tailwind's zinc scale with a warmer, darker one —
+zinc-500 is `#666663`, not `#71717a`. Fine on white at 5.9:1; about **3.2:1** on
+the dark canvas. `dark:text-zinc-500` is used **425 times across 88 components**,
+so this one substitution was the single largest source of failing text in the
+app. Lifted to zinc-400 in dark only, targeting the `dark:` variant class alone
+so `text-zinc-500 dark:text-zinc-100` keeps what it asked for.
+
+`!important` is load-bearing here: Tailwind emits the variant as
+`.dark\:text-zinc-500:is(.dark *)`, same specificity as `.dark .dark\:…`, and
+emitted later, so it wins on source order.
+
+## 4. Semantic tints written inline
+
+React serialises an inline hex as `rgb(…)`, which is why the compat selectors
+match the rgb form — `#f8f8f8` (196 uses) was already covered as
+`rgb(248, 248, 248)`. The remaining ~260 were the tints that carry meaning:
+selected, correct, error, note. They now map to `--accent-tint`,
+`--success-tint`, and the new `--danger-tint` / `--info-tint`, staying tinted in
+dark rather than collapsing to a neutral and losing the state they encode.
+
+## 5. The primary CTA needed its own token
+
+A plain white button folds onto `--surface-paper`, which in dark is the same
+colour as the card behind it — "Get Started" lost all prominence and the
+secondary control read as primary. `--cta-invert-*` keeps light identical and
+gives dark a genuinely raised surface.
+
+# Measured result
+
+| Screen | before | after |
+|---|---|---|
+| Login | 4 contrast failures, worst 1.1:1, 2 white surfaces | **0 / 0** |
+| References | 14+ failures, 6 white panels, two headline numerals invisible | **0 / 0** |
+| Student dashboard | 1 failure | **0 / 0** |
+| Module (Bimodal Brain) | — | **0 / 0** |
+
+Light mode is unchanged to the byte. `test/darkModeTokens.test.ts` pins the light
+values, requires every themed token to be redefined under `.dark`, and fails if a
+dark rule is left scoped to `.product-shell` alone.
+
+# Still open
+
+- **Onboarding** (89 `dark:` variants, 5 inline light) and **SettingsModal**
+  (60) were not walked end to end — they need a pass with the auditor.
+- **GCDashboard** forces dark on mount always; it was not in scope and was not
+  touched.
+- Orange `#F26B1F` with white text is **3.04:1** and fails AA in *both* themes on
+  primary CTAs. `--ink-on-accent` (`#1A1A1A`) already exists for exactly this and
+  clears AA; switching the CTAs to it is a small, separate change.
+- The left rail's icon buttons are unlabelled — `read_page` returns 24 anonymous
+  `button` elements.

@@ -38,6 +38,10 @@
      their own greys on a heavier grey canvas. Kept as their own tokens so light
      mode is unchanged to the byte -- folding them into --ink-* would have
      shifted four greys and the canvas. */
+  --danger-tint: #FDE4E4;
+  --danger-tint-ink: #8E2C2C;
+  --info-tint: #E8EFF5;
+  --info-tint-ink: #2B4C6B;
   --page-canvas: #f0f0f0;
   --page-body: #5a5550;
   --page-muted: #7a7068;
@@ -113,6 +117,10 @@
   /* Tints carry meaning (selected / correct), so they stay tinted rather than
      collapsing to a neutral: a desaturated dark of the same hue, with ink light
      enough to clear AA on it. */
+  --danger-tint: #3A2020;
+  --danger-tint-ink: #F0A9A9;
+  --info-tint: #1B2A38;
+  --info-tint-ink: #A8CBE6;
   --page-canvas: #151515;
   --page-body: #D6D0C9;
   --page-muted: #A8A29E;
@@ -218,6 +226,68 @@
   --tw-shadow-color: var(--outline-strong);
 }
 
+/*
+ * Semantic tints written inline.
+ *
+ * React serialises an inline hex as `rgb(...)`, which is why these selectors
+ * match the rgb form -- `#f8f8f8` above is already handled as
+ * `rgb(248, 248, 248)`. What is left are the tints that carry meaning: selected
+ * (accent), correct (success), error (danger) and note (info). They must stay
+ * tinted in dark rather than collapsing to a neutral, or the state they encode
+ * disappears.
+ */
+
+.dark :is(.product-shell, .theme-compat) [style*="background: rgb(253, 238, 223)"],
+.dark :is(.product-shell, .theme-compat) [style*="background-color: rgb(253, 238, 223)"] {
+  background-color: var(--accent-tint) !important;
+}
+
+.dark :is(.product-shell, .theme-compat) [style*="background: rgb(232, 242, 236)"],
+.dark :is(.product-shell, .theme-compat) [style*="background-color: rgb(232, 242, 236)"],
+.dark :is(.product-shell, .theme-compat) [style*="background: rgb(237, 242, 238)"],
+.dark :is(.product-shell, .theme-compat) [style*="background-color: rgb(237, 242, 238)"],
+.dark :is(.product-shell, .theme-compat) [style*="background: rgb(209, 250, 229)"],
+.dark :is(.product-shell, .theme-compat) [style*="background-color: rgb(209, 250, 229)"] {
+  background-color: var(--success-tint) !important;
+}
+
+.dark :is(.product-shell, .theme-compat) [style*="background: rgb(253, 228, 228)"],
+.dark :is(.product-shell, .theme-compat) [style*="background-color: rgb(253, 228, 228)"],
+.dark :is(.product-shell, .theme-compat) [style*="background: rgb(254, 242, 242)"],
+.dark :is(.product-shell, .theme-compat) [style*="background-color: rgb(254, 242, 242)"] {
+  background-color: var(--danger-tint) !important;
+}
+
+.dark :is(.product-shell, .theme-compat) [style*="background: rgb(232, 239, 245)"],
+.dark :is(.product-shell, .theme-compat) [style*="background-color: rgb(232, 239, 245)"] {
+  background-color: var(--info-tint) !important;
+}
+
+.dark :is(.product-shell, .theme-compat) [style*="background: rgb(241, 240, 237)"],
+.dark :is(.product-shell, .theme-compat) [style*="background-color: rgb(241, 240, 237)"],
+.dark :is(.product-shell, .theme-compat) [style*="background: rgb(249, 249, 247)"],
+.dark :is(.product-shell, .theme-compat) [style*="background-color: rgb(249, 249, 247)"],
+.dark :is(.product-shell, .theme-compat) [style*="background: rgb(244, 240, 235)"],
+.dark :is(.product-shell, .theme-compat) [style*="background-color: rgb(244, 240, 235)"],
+.dark :is(.product-shell, .theme-compat) [style*="background: rgb(240, 236, 230)"],
+.dark :is(.product-shell, .theme-compat) [style*="background-color: rgb(240, 236, 230)"],
+.dark :is(.product-shell, .theme-compat) [style*="background: rgb(240, 239, 236)"],
+.dark :is(.product-shell, .theme-compat) [style*="background-color: rgb(240, 239, 236)"],
+.dark :is(.product-shell, .theme-compat) [style*="background: rgb(252, 251, 248)"],
+.dark :is(.product-shell, .theme-compat) [style*="background-color: rgb(252, 251, 248)"],
+.dark :is(.product-shell, .theme-compat) [style*="background: rgb(236, 234, 230)"],
+.dark :is(.product-shell, .theme-compat) [style*="background-color: rgb(236, 234, 230)"],
+.dark :is(.product-shell, .theme-compat) [style*="background: rgb(250, 247, 244)"],
+.dark :is(.product-shell, .theme-compat) [style*="background-color: rgb(250, 247, 244)"],
+.dark :is(.product-shell, .theme-compat) [style*="background: rgb(253, 248, 240)"],
+.dark :is(.product-shell, .theme-compat) [style*="background-color: rgb(253, 248, 240)"],
+.dark :is(.product-shell, .theme-compat) [style*="background: rgb(253, 243, 231)"],
+.dark :is(.product-shell, .theme-compat) [style*="background-color: rgb(253, 243, 231)"],
+.dark :is(.product-shell, .theme-compat) [style*="background: rgb(243, 235, 233)"],
+.dark :is(.product-shell, .theme-compat) [style*="background-color: rgb(243, 235, 233)"] {
+  background-color: var(--surface-soft) !important;
+}
+
 /* Utility-era screens often relied on a light parent and therefore used plain
    `bg-white`, `text-zinc-*`, or inherited black. Give those common primitives a
    coherent dark material without touching coloured artwork and diagrams. */
@@ -248,6 +318,28 @@
 .dark :is(.product-shell, .theme-compat) :where(.border-zinc-200, .border-stone-200, .border-neutral-200, .border-gray-200) {
   border-color: var(--outline-soft) !important;
 }
+
+/*
+ * The muted-text steps, lifted for dark only.
+ *
+ * tailwind.config.ts replaces Tailwind's zinc scale with a warmer, darker one:
+ * zinc-500 is #666663 rather than #71717a. That reads well on white (5.9:1) but
+ * `dark:text-zinc-500` — 425 uses across 88 components — lands around 3.2:1 on
+ * the dark canvas, under the 4.5:1 AA needs for body text. zinc-600 and 700 are
+ * worse again.
+ *
+ * Only the `dark:` variant classes are targeted, never the plain utility: an
+ * element written `text-zinc-500 dark:text-zinc-100` has asked for something
+ * specific in dark and must keep it.
+ *
+ * !important is load-bearing. Tailwind emits the variant as
+ * `.dark\:text-zinc-500:is(.dark *)`, which carries the same specificity as
+ * `.dark .dark\:text-zinc-500` and is emitted later, so it wins on source order.
+ */
+.dark .dark\:text-zinc-500,
+.dark .dark\:text-zinc-600 { color: #91918D !important; }   /* zinc-400 */
+
+.dark .dark\:text-zinc-700 { color: #BFBFBA !important; }   /* zinc-300 */
 
 /* Disabled content must still be readable; opacity compounds badly on dark. */
 .dark :is(.product-shell, .theme-compat) :disabled,
