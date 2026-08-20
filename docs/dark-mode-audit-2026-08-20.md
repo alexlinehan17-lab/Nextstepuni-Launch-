@@ -247,3 +247,66 @@ Dominant causes, all long-standing:
 This was never in scope and is not a regression. It is a bigger job than the
 dark-mode work was, because unlike dark mode there is no compat layer to hang it
 on — the light palette itself is too low-contrast in places.
+
+---
+
+# Third pass — the parameterised views
+
+The second sweep walked `VALID_VIEWS` but passed no parameters, so `category`
+rendered nothing and was scored as clean. Alex found it by looking at it.
+
+`?view=category&cat=…` had **22 to 48 failures per world**, worst at **1.02:1** —
+every module title, `#1A1A1A` on `#18181b`.
+
+## Root cause: the world palette existed twice
+
+`ModulesView` and `ModuleShowcase` each carried their own copy of the same five
+world colours. Giving the worlds a dark ink fixed the copy in `ModulesView` and
+left `ModuleShowcase` entirely untouched, which is why the category screen still
+looked like the screenshot.
+
+Now one source: `components/worldPalette.ts`. The test asserts the hexes appear
+in **no other file**, so a third copy cannot drift away again.
+
+## `mid` is two things, and that matters
+
+The world `mid` tone is used both as **text** (eyebrows, counters) and as a
+**fill** (buttons, progress bars). Lightening it wholesale for dark fixed the
+text and broke the buttons — white labels on the lightened fill went from 3.6:1
+to **2.4:1**. Twice, in both components, before it was separated properly.
+
+`midText` is now a text-only swap; fills keep the saturated `mid`. The test pins
+that distinction.
+
+## Reference surface was wrong
+
+`deepDark` was tuned against `#18181b`, the page canvas. These tones actually sit
+on the **raised card**, `#202020`, which is lighter and therefore the worst case.
+Every world measured 4.49 there — passing the old test, failing in reality. All
+five lifted, and the test now uses the raised card.
+
+# Final state
+
+| Surface | Failures |
+|---|---|
+| All 15 base views | **0** |
+| All 5 category views | **2** each |
+
+The two are white on the world `mid` used as a button fill: 4.20:1 on the navy,
+4.01:1 on the red. They fail identically in light mode.
+
+**This one cannot be fixed by changing the ink.** The world mids are
+mid-luminance, so neither white nor `--ink-on-accent` clears AA on all five:
+
+| World | mid | white | #1A1A1A |
+|---|---|---|---|
+| Mind | `#5B7DB0` | 4.20 | 4.15 |
+| Growth | `#C4873B` | 3.05 | **5.70** |
+| Learn | `#F26B1F` | 3.04 | **5.72** |
+| Decode | `#C76489` | 3.74 | **4.65** |
+| Exam | `#D4564E` | 4.01 | 4.34 |
+
+Dark ink wins on three of five and is still short on Mind and Exam. Clearing AA
+on all of them needs the **fill** darkened — using each world's `deep` for the
+button rather than `mid` — which is a visible design change in both themes and
+so is left as a decision rather than assumed.

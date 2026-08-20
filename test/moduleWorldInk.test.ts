@@ -18,11 +18,11 @@ import { describe, it, expect } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
-const src = readFileSync(resolve(__dirname, '..', 'components/ModulesView.tsx'), 'utf8');
+const src = readFileSync(resolve(__dirname, '..', 'components/worldPalette.ts'), 'utf8');
 
 const worlds = [...src.matchAll(
-  /worldKey: '([a-z]+)'[\s\S]*?mid: '(#[0-9a-fA-F]{6})',(?:\s*midDark: '(#[0-9a-fA-F]{6})',)?[\s\S]*?deep: '(#[0-9a-fA-F]{6})',\s*deepDark: '(#[0-9a-fA-F]{6})',/g,
-)].map(m => ({ key: m[1], mid: m[2], midDark: m[3], deep: m[4], deepDark: m[5] }));
+  /'([a-z-]+)':\s*\{[^}]*?mid: '(#[0-9a-fA-F]{6})',(?:\s*midText: '(#[0-9a-fA-F]{6})',)?[^}]*?deep: '(#[0-9a-fA-F]{6})',\s*deepDark: '(#[0-9a-fA-F]{6})'/g,
+)].map(m => ({ key: m[1], mid: m[2], midText: m[3], deep: m[4], deepDark: m[5] }));
 
 const srgb = (hex: string) => [1, 3, 5].map(i => {
   const v = parseInt(hex.slice(i, i + 2), 16) / 255;
@@ -41,11 +41,17 @@ const over = (hex: string, alpha: number, bg: string) => {
   return '#' + [1, 3, 5].map(i => mix(i).toString(16).padStart(2, '0')).join('');
 };
 
-const DARK_CARD = '#18181b';
+/* The RAISED card, not the page canvas. It is the lighter of the two dark
+   surfaces these tones appear on, so it is the worst case for contrast — testing
+   against #18181b passed tones that then failed at 4.49:1 on this one. */
+const DARK_CARD = '#202020';
 
 describe('module world ink', () => {
   it('finds all five worlds', () => {
-    expect(worlds.map(w => w.key)).toEqual(['mind', 'growth', 'learn', 'decode', 'exam']);
+    expect(worlds.map(w => w.key)).toEqual([
+      'architecture-mindset', 'science-growth', 'learning-cheat-codes',
+      'subject-specific-science', 'exam-zone',
+    ]);
   });
 
   it('clears AA on the dark card even at the lowest alpha the screen uses', () => {
@@ -58,10 +64,19 @@ describe('module world ink', () => {
 
   it('clears AA for the small mono numerals', () => {
     for (const w of worlds) {
-      const tone = w.midDark ?? w.mid;
+      const tone = w.midText ?? w.mid;
       const r = ratio(tone, DARK_CARD);
       expect(r, `${w.key} mid tone is ${r.toFixed(2)}:1`).toBeGreaterThanOrEqual(4.5);
     }
+  });
+
+
+  it('keeps the saturated mid for fills, so white labels on it are unchanged', () => {
+    // midText is a TEXT swap only. Lightening the fill while the button label
+    // stays white took those buttons from 3.6:1 to 2.4:1.
+    const palette = readFileSync(resolve(__dirname, '..', 'components/worldPalette.ts'), 'utf8');
+    expect(palette).toMatch(/midText: \(t: Pick<WorldTones, 'mid' \| 'midText'>\)/);
+    expect(palette).not.toContain('mid: (t:');
   });
 
   it('keeps the worlds distinguishable rather than collapsing them to white', () => {
@@ -75,8 +90,18 @@ describe('module world ink', () => {
 
   it('leaves the light-mode tones untouched', () => {
     const authored: Record<string, string> = {
-      mind: '#1e3a5f', growth: '#7c4a14', learn: '#115e4f', decode: '#8a2860', exam: '#7f1d1d',
+      'architecture-mindset': '#1e3a5f', 'science-growth': '#7c4a14',
+      'learning-cheat-codes': '#115e4f', 'subject-specific-science': '#8a2860',
+      'exam-zone': '#7f1d1d',
     };
     for (const w of worlds) expect(w.deep).toBe(authored[w.key]);
+  });
+  it('is the only copy of the palette', () => {
+    // It lived in ModulesView and ModuleShowcase at once, and fixing one left
+    // every module title on the category screen at about 1.2:1.
+    const others = ['components/ModulesView.tsx', 'components/ModuleShowcase.tsx']
+      .filter(f => /#1e3a5f|#115e4f|#8a2860/.test(
+        readFileSync(resolve(__dirname, '..', f), 'utf8')));
+    expect(others, `world hexes duplicated in: ${others.join(', ')}`).toEqual([]);
   });
 });

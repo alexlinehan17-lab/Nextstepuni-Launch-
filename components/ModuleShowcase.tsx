@@ -31,37 +31,35 @@ import { type CourseData } from './Library';
 import { MODULE_SECTIONS, type SectionInfo } from '../moduleSections';
 import { SUBJECT_MODULE_CONTENT } from '../subjectModuleData';
 import { WorldIconBlob, type WorldId } from './WorldIconBlob';
+import { WORLD_TONES, useWorldTones, type WorldTones } from './worldPalette';
 
 // ── World theming ──────────────────────────────────────────────────────
-interface WorldTheme {
+interface WorldTheme extends WorldTones {
   worldKey: WorldId;
   number: string;
   worldName: string;
-  blob: string;
-  mid: string;
-  deep: string;
 }
 
 const WORLD_THEMES: Record<string, WorldTheme> = {
   'architecture-mindset': {
     worldKey: 'mind',   number: '01', worldName: 'The Architecture',
-    blob: '#B8C9E5', mid: '#5B7DB0', deep: '#1e3a5f',
+    ...WORLD_TONES['architecture-mindset'],
   },
   'science-growth': {
     worldKey: 'growth', number: '02', worldName: 'The Garden',
-    blob: '#F5C9A8', mid: '#C4873B', deep: '#7c4a14',
+    ...WORLD_TONES['science-growth'],
   },
   'learning-cheat-codes': {
     worldKey: 'learn',  number: '03', worldName: 'The Cheat Codes',
-    blob: '#B8DDC8', mid: '#F26B1F', deep: '#115e4f',
+    ...WORLD_TONES['learning-cheat-codes'],
   },
   'subject-specific-science': {
     worldKey: 'decode', number: '04', worldName: 'The Decoder',
-    blob: '#F0BFCE', mid: '#C76489', deep: '#8a2860',
+    ...WORLD_TONES['subject-specific-science'],
   },
   'exam-zone': {
     worldKey: 'exam',   number: '05', worldName: 'The Arena',
-    blob: '#F5BFB0', mid: '#D4564E', deep: '#7f1d1d',
+    ...WORLD_TONES['exam-zone'],
   },
 };
 
@@ -105,7 +103,13 @@ export default function ModuleShowcase({
   userProgress,
   onSelectCourse,
 }: ModuleShowcaseProps) {
-  const theme = WORLD_THEMES[categoryId] ?? FALLBACK_THEME;
+  const rawTheme = WORLD_THEMES[categoryId] ?? FALLBACK_THEME;
+  const tones = useWorldTones();
+  // Same object, with the ink and mid resolved for the active theme.
+  // Only `deep` is swapped wholesale: it is text everywhere it appears. `mid`
+  // also fills buttons and bars, so it stays raw and the eyebrow asks for
+  // midText at its own use site.
+  const theme = { ...rawTheme, deep: tones.ink(rawTheme) };
 
   // Synchronous initialiser — hero mounts with the right module on the
   // first render, no useEffect tick.
@@ -186,14 +190,14 @@ export default function ModuleShowcase({
 
   if (IS_NATIVE_IOS) {
     return (
-      <div className="w-full max-w-xl px-1">
+      <div className="w-full max-w-xl px-1 theme-compat">
         <div className="mb-5">
           <div className="flex items-center gap-3">
             <div className="flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-2xl" style={{ background: `${theme.blob}38` }}>
               <WorldIconBlob world={theme.worldKey} size={76} compact />
             </div>
             <div className="min-w-0">
-              <p className="font-mono text-[10px] font-bold uppercase tracking-[0.2em]" style={{ color: theme.mid }}>
+              <p className="font-mono text-[10px] font-bold uppercase tracking-[0.2em]" style={{ color: tones.midText(rawTheme) }}>
                 {theme.number} · {theme.worldName}
               </p>
               <h2 className="mt-1 font-serif text-[27px] font-medium leading-none tracking-tight text-[#1A1A1A] dark:text-white">
@@ -269,7 +273,7 @@ export default function ModuleShowcase({
   }
 
   return (
-    <div className="w-full max-w-5xl mx-auto px-4 flex flex-col gap-5 md:gap-6">
+    <div className="w-full max-w-5xl mx-auto px-4 flex flex-col gap-5 md:gap-6 theme-compat">
       <LayoutGroup>
         {/* ── Hero card ───────────────────────────────────────────
             Wrapped in AnimatePresence with key=course.id so each
@@ -320,7 +324,7 @@ export default function ModuleShowcase({
                     </h1>
 
                     {course.subtitle && (
-                      <p className="font-serif italic text-[18px] md:text-[22px] mt-4" style={{ color: theme.mid }}>
+                      <p className="font-serif italic text-[18px] md:text-[22px] mt-4" style={{ color: tones.midText(rawTheme) }}>
                         {course.subtitle}
                       </p>
                     )}
@@ -332,7 +336,7 @@ export default function ModuleShowcase({
 
                   {/* Right column — how to start */}
                   <div className="md:col-span-5 md:pl-8 md:border-l flex flex-col" style={{ borderColor: `${theme.mid}4D` }}>
-                    <p className="font-mono text-[11px] font-medium uppercase tracking-[0.22em]" style={{ color: theme.mid }}>
+                    <p className="font-mono text-[11px] font-medium uppercase tracking-[0.22em]" style={{ color: tones.midText(rawTheme) }}>
                       {isInProgress ? 'Continue here' : 'Start here'}
                     </p>
 
@@ -371,7 +375,7 @@ export default function ModuleShowcase({
                       <button
                         onClick={() => setSectionsExpanded(!sectionsExpanded)}
                         className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[12px] font-semibold transition-colors duration-200"
-                        style={{ color: theme.mid, border: `1px solid ${theme.mid}55` }}
+                        style={{ color: tones.midText(rawTheme), border: `1px solid ${theme.mid}55` }}
                       >
                         What&rsquo;s in this module
                         <motion.span animate={{ rotate: sectionsExpanded ? 180 : 0 }} transition={{ duration: 0.2 }}>
@@ -432,7 +436,7 @@ export default function ModuleShowcase({
                 <div className="mt-7 pt-5 flex flex-wrap items-baseline gap-x-8 gap-y-3" style={{ borderTop: '1px solid rgba(0,0,0,0.06)' }}>
                   <div className="flex items-baseline gap-2">
                     <span className="font-mono text-[10px] font-bold uppercase tracking-[0.18em]" style={{ color: `${theme.deep}99` }}>Progress</span>
-                    <span className="text-[13px] font-medium" style={{ color: isCompleted ? theme.mid : '#1A1A1A' }}>
+                    <span className="text-[13px] font-medium" style={{ color: isCompleted ? tones.midText(rawTheme) : 'var(--ink-primary)' }}>
                       {isCompleted ? 'Completed' : isInProgress ? `${progress?.unlockedSection} of ${course.sectionsCount} sections` : 'Not started'}
                     </span>
                   </div>
@@ -451,7 +455,7 @@ export default function ModuleShowcase({
         {/* ── Carousel ─────────────────────────────────────────── */}
         {courses.length > 1 && (
           <div>
-            <p className="font-mono text-[10px] font-bold uppercase tracking-[0.22em] mb-3" style={{ color: theme.mid }}>
+            <p className="font-mono text-[10px] font-bold uppercase tracking-[0.22em] mb-3" style={{ color: tones.midText(rawTheme) }}>
               More in {theme.worldName}
             </p>
 
@@ -488,13 +492,13 @@ export default function ModuleShowcase({
                           <div className="flex justify-center -mt-4 -mb-2">
                             <WorldIconBlob world={theme.worldKey} size={120} compact />
                           </div>
-                          <span className="font-mono text-[11px] font-medium tracking-[0.2em]" style={{ color: theme.mid }}>
+                          <span className="font-mono text-[11px] font-medium tracking-[0.2em]" style={{ color: tones.midText(rawTheme) }}>
                             {cNumber}
                           </span>
                           <h4 className="font-serif text-[20px] md:text-[22px] font-medium tracking-tight leading-[1.05] text-[#1A1A1A] mt-1">
                             {c.title}
                           </h4>
-                          <p className="font-mono text-[10px] font-bold uppercase tracking-[0.18em] mt-auto pt-3" style={{ color: theme.mid }}>
+                          <p className="font-mono text-[10px] font-bold uppercase tracking-[0.18em] mt-auto pt-3" style={{ color: tones.midText(rawTheme) }}>
                             Currently viewing
                           </p>
                         </div>
@@ -521,7 +525,7 @@ export default function ModuleShowcase({
                         <div className="flex justify-center -mt-4 -mb-2">
                           <WorldIconBlob world={theme.worldKey} size={120} compact />
                         </div>
-                        <span className="font-mono text-[11px] font-medium tracking-[0.2em]" style={{ color: theme.mid }}>
+                        <span className="font-mono text-[11px] font-medium tracking-[0.2em]" style={{ color: tones.midText(rawTheme) }}>
                           {cNumber}
                         </span>
                         <h4 className="font-serif text-[20px] md:text-[22px] font-medium tracking-tight leading-[1.05] text-[#1A1A1A] mt-1">
@@ -566,7 +570,7 @@ export default function ModuleShowcase({
                       background: '#FFFFFF',
                       border: `1px solid ${theme.blob}66`,
                       boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
-                      color: theme.mid,
+                      color: tones.midText(rawTheme),
                     }}
                   >
                     <ChevronLeft size={18} />
@@ -586,7 +590,7 @@ export default function ModuleShowcase({
                       background: '#FFFFFF',
                       border: `1px solid ${theme.blob}66`,
                       boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
-                      color: theme.mid,
+                      color: tones.midText(rawTheme),
                     }}
                   >
                     <ChevronRight size={18} />
