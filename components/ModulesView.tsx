@@ -26,6 +26,7 @@ import { type CategoryType } from './KnowledgeTree';
 import { MODULE_SECTIONS } from '../moduleSections';
 import { WorldIconBlob, type WorldId } from './WorldIconBlob';
 import PageHeader from './ui/PageHeader';
+import { useSettingsContext } from '../contexts/SettingsContext';
 
 type UserProgress = {
   [moduleId: string]: { unlockedSection: number };
@@ -74,8 +75,14 @@ interface CategoryConfig {
   blob: string;
   /** Saturated mid-tone — italic sub-headline, primary button, progress fill. */
   mid: string;
+  /** Only where the authored mid falls under AA on the dark card when used for
+   *  the small mono numerals. Others keep `mid` in both themes. */
+  midDark?: string;
   /** Deeper shade for emphasis text. */
   deep: string;
+  /** Same hue, raised luminance. The authored `deep` is chosen to sit on a
+   *  light card and drops to about 2:1 on the dark one. */
+  deepDark: string;
   /** Tint focal — varies per world so cards don't read as the same gradient. */
   tintFocal: string;
 }
@@ -91,7 +98,9 @@ const CATEGORIES: CategoryConfig[] = [
     description: 'Identity, beliefs, and emotional regulation — the foundation everything else stands on.',
     blob: '#B8C9E5',
     mid: '#5B7DB0',
+    midDark: '#8FA9CF',
     deep: '#1e3a5f',
+    deepDark: '#B3CDEC',
     tintFocal: 'at 0% 0%',
   },
   {
@@ -105,6 +114,7 @@ const CATEGORIES: CategoryConfig[] = [
     blob: '#F5C9A8',
     mid: '#C4873B',
     deep: '#7c4a14',
+    deepDark: '#EFC38F',
     tintFocal: 'at 100% 100%',
   },
   {
@@ -118,6 +128,7 @@ const CATEGORIES: CategoryConfig[] = [
     blob: '#B8DDC8',
     mid: '#F26B1F',
     deep: '#115e4f',
+    deepDark: '#9BDCC9',
     tintFocal: 'at 100% 0%',
   },
   {
@@ -131,6 +142,7 @@ const CATEGORIES: CategoryConfig[] = [
     blob: '#F0BFCE',
     mid: '#C76489',
     deep: '#8a2860',
+    deepDark: '#F6C2DB',
     tintFocal: 'at 0% 100%',
   },
   {
@@ -143,7 +155,9 @@ const CATEGORIES: CategoryConfig[] = [
     description: 'Pacing, nerves, recovery — the psychology and strategy of executing on the day.',
     blob: '#F5BFB0',
     mid: '#D4564E',
+    midDark: '#E38B84',
     deep: '#7f1d1d',
+    deepDark: '#F9C5C5',
     tintFocal: 'at 50% 100%',
   },
 ];
@@ -234,6 +248,26 @@ function pickHeroId(allCourses: CourseData[], userProgress: UserProgress): Categ
   }
   return bestId;
 }
+
+/**
+ * The world ink, resolved for the active theme.
+ *
+ * Each world's `deep` is authored to sit on a light card, and every eyebrow,
+ * counter and progress ring on this screen is drawn from it — often at 60-80%
+ * alpha. On the dark card those land between 1.5:1 and 2.3:1, which is why the
+ * navy, red and magenta worlds were unreadable. `deepDark` is the same hue at a
+ * luminance that still clears AA once the alpha is applied.
+ *
+ * Resolved here rather than in CSS because the colour is consumed as a hex
+ * string with an alpha suffix (`${deep}AA`), which a var() cannot provide.
+ */
+const useWorldInk = () => {
+  const darkMode = useSettingsContext()?.settings.darkMode ?? false;
+  return React.useMemo(() => ({
+    ink: (c: Pick<CategoryConfig, 'deep' | 'deepDark'>) => (darkMode ? c.deepDark : c.deep),
+    mid: (c: Pick<CategoryConfig, 'mid' | 'midDark'>) => (darkMode ? c.midDark ?? c.mid : c.mid),
+  }), [darkMode]);
+};
 
 // ── Progress ring ───────────────────────────────────────────────────────
 
@@ -356,7 +390,10 @@ interface HeroInnerProps {
 }
 
 const HeroInner: React.FC<HeroInnerProps> = ({ config, stats, nextUp, onContinue, onOpenCategory }) => {
-  const { mid, deep, worldKey } = config;
+  const world = useWorldInk();
+  const { worldKey } = config;
+  const deep = world.ink(config);
+  const mid = world.mid(config);
   const eyebrow = stats.hasAnyProgress ? 'Continue where you left off' : 'Start here';
 
   return (
@@ -490,7 +527,10 @@ interface SatelliteInnerProps {
 }
 
 const SatelliteInner: React.FC<SatelliteInnerProps> = ({ config, stats }) => {
-  const { mid, deep, worldKey } = config;
+  const world = useWorldInk();
+  const { worldKey } = config;
+  const deep = world.ink(config);
+  const mid = world.mid(config);
   const isComplete = stats.total > 0 && stats.completed === stats.total;
 
   return (
@@ -544,6 +584,7 @@ export const ModulesView: React.FC<ModulesViewProps> = ({
   allCourses,
   userProgress,
 }) => {
+  const world = useWorldInk();
   // Synchronous initialiser — no useEffect race. Hero is set on the first
   // render. If the auto-detected hero isn't resolvable for any reason,
   // useState's lazy init falls back to Mind via FALLBACK_HERO_ID.
@@ -626,7 +667,7 @@ export const ModulesView: React.FC<ModulesViewProps> = ({
 
                     <div className="min-w-0 flex-1 py-1">
                       <div className="flex items-center gap-2">
-                        <span className="font-mono text-[10px] font-bold tracking-[0.18em]" style={{ color: cat.mid }}>
+                        <span className="font-mono text-[10px] font-bold tracking-[0.18em]" style={{ color: world.mid(cat) }}>
                           {cat.number}
                         </span>
                         {isCurrent && (
@@ -642,16 +683,16 @@ export const ModulesView: React.FC<ModulesViewProps> = ({
                         {cat.blurb}
                       </p>
                       <div className="mt-2.5 flex items-center gap-2">
-                        <span className="h-1.5 flex-1 overflow-hidden rounded-full" style={{ background: `${cat.deep}1F` }}>
+                        <span className="h-1.5 flex-1 overflow-hidden rounded-full" style={{ background: `${world.ink(cat)}1F` }}>
                           <span className="block h-full rounded-full" style={{ width: `${stats.percent}%`, background: cat.mid }} />
                         </span>
-                        <span className="font-mono text-[9px] font-bold tabular-nums" style={{ color: cat.deep }}>
+                        <span className="font-mono text-[9px] font-bold tabular-nums" style={{ color: world.ink(cat) }}>
                           {stats.completed}/{stats.total}
                         </span>
                       </div>
                     </div>
 
-                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full" style={{ background: `${cat.blob}45`, color: cat.deep }}>
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full" style={{ background: `${cat.blob}45`, color: world.ink(cat) }}>
                       <IconChevronRight size={16} />
                     </span>
                   </button>
