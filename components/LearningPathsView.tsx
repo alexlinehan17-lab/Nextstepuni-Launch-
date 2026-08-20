@@ -39,11 +39,22 @@ interface LearningPathsViewProps {
 // read at roughly equal visual weight. exam-prep's content sits in a
 // shorter portion of its canvas (wide horizontal layout), so it gets
 // scaled up; the others fill their canvas already.
-const PATH_META: Record<string, { eyebrow: string; iconPath: string; accent: string; iconScale: number }> = {
-  'getting-started':      { eyebrow: 'Foundation Path', iconPath: '/assets/learning-paths/getting-started.png', accent: '#5B7DB0', iconScale: 1.0  },
-  'exam-prep-sprint':     { eyebrow: 'Exam Path',       iconPath: '/assets/learning-paths/exam-prep.png',     accent: '#D85F47', iconScale: 1.35 },
-  'build-your-mindset':   { eyebrow: 'Mindset Path',    iconPath: '/assets/learning-paths/mindset.png',       accent: '#8B82B8', iconScale: 1.0  },
-  'master-your-learning': { eyebrow: 'Learning Path',   iconPath: '/assets/learning-paths/master-learning.png', accent: '#7DA37A', iconScale: 1.0 },
+/** Hand-drawn-feeling organic washes, borrowed from WorldIconBlob so the dark
+ *  backing reads in the same language as the Launchpad rather than as a generic
+ *  circle. One per path, each slightly different, so four cards side by side do
+ *  not look stamped from the same cutter. */
+const BLOB_PATHS = [
+  'M 6 24 Q -2 52 8 78 Q 24 98 52 94 Q 86 90 94 62 Q 100 30 84 10 Q 60 -4 32 4 Q 12 12 6 24 Z',
+  'M 8 22 Q 0 48 6 76 Q 20 96 50 96 Q 84 96 94 70 Q 100 40 84 14 Q 64 -2 36 4 Q 14 12 8 22 Z',
+  'M 6 22 Q -2 50 10 78 Q 26 98 56 94 Q 90 88 96 56 Q 100 24 80 6 Q 56 -6 28 6 Q 10 14 6 22 Z',
+  'M 4 26 Q 2 56 12 82 Q 26 98 52 96 Q 88 94 96 64 Q 100 34 84 10 Q 60 -4 30 6 Q 10 18 4 26 Z',
+];
+
+const PATH_META: Record<string, { eyebrow: string; iconPath: string; accent: string; iconScale: number; blobPath: string }> = {
+  'getting-started':      { eyebrow: 'Foundation Path', iconPath: '/assets/learning-paths/getting-started.png', accent: '#5B7DB0', iconScale: 1.0,  blobPath: BLOB_PATHS[0] },
+  'exam-prep-sprint':     { eyebrow: 'Exam Path',       iconPath: '/assets/learning-paths/exam-prep.png',     accent: '#D85F47', iconScale: 1.35, blobPath: BLOB_PATHS[1] },
+  'build-your-mindset':   { eyebrow: 'Mindset Path',    iconPath: '/assets/learning-paths/mindset.png',       accent: '#8B82B8', iconScale: 1.0,  blobPath: BLOB_PATHS[2] },
+  'master-your-learning': { eyebrow: 'Learning Path',   iconPath: '/assets/learning-paths/master-learning.png', accent: '#7DA37A', iconScale: 1.0, blobPath: BLOB_PATHS[3] },
 };
 
 const SERIF: React.CSSProperties = { fontFamily: "'Source Serif 4', serif" };
@@ -86,7 +97,7 @@ const LearningPathsView: React.FC<LearningPathsViewProps> = ({
         {/* ── Card grid ── */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {LEARNING_PATHS.map((path, i) => {
-            const meta = PATH_META[path.id] ?? { eyebrow: 'Path', iconPath: '/assets/worlds/learn-book.png', accent: '#7DA37A', iconScale: 1.0 };
+            const meta = PATH_META[path.id] ?? { eyebrow: 'Path', iconPath: '/assets/worlds/learn-book.png', accent: '#7DA37A', iconScale: 1.0, blobPath: BLOB_PATHS[0] };
             const completed = path.moduleIds.filter(id => isModuleComplete(id)).length;
             const total = path.moduleIds.length;
             const pct = total > 0 ? Math.round((completed / total) * 100) : 0;
@@ -118,11 +129,20 @@ const LearningPathsView: React.FC<LearningPathsViewProps> = ({
                         disc behind it restores the drawing exactly as authored —
                         filtering or inverting the PNG would shift its orange
                         accents too. Dark only; light keeps the naked icon. */}
-                    <span
+                    <svg
                       aria-hidden
-                      className="hidden dark:block absolute rounded-full"
-                      style={{ inset: -11, background: '#F4F1EB' }}
-                    />
+                      className="hidden dark:block absolute pointer-events-none"
+                      viewBox="0 0 100 100"
+                      preserveAspectRatio="xMidYMid meet"
+                      style={{
+                        width: '142%', height: '142%',
+                        left: '50%', top: '50%',
+                        transform: 'translate(-50%, -50%)',
+                        zIndex: 0,
+                      }}
+                    >
+                      <path d={meta.blobPath} fill="#F4F1EB" opacity="0.92" />
+                    </svg>
                     <img
                       src={meta.iconPath}
                       alt=""
@@ -134,6 +154,7 @@ const LearningPathsView: React.FC<LearningPathsViewProps> = ({
                         width: '100%',
                         height: '100%',
                         objectFit: 'contain',
+                        zIndex: 1,
                       }}
                       draggable={false}
                     />
