@@ -113,6 +113,16 @@ const LearningPathsView: React.FC<LearningPathsViewProps> = ({
                       Per-path iconScale compensates for varying internal
                       padding so all four icons read at the same weight. */}
                   <div className="relative" style={{ width: 56, height: 56, marginBottom: 18 }}>
+                    {/* The artwork is near-black line work on a transparent
+                        ground, so on the dark card it all but disappears. A pale
+                        disc behind it restores the drawing exactly as authored —
+                        filtering or inverting the PNG would shift its orange
+                        accents too. Dark only; light keeps the naked icon. */}
+                    <span
+                      aria-hidden
+                      className="hidden dark:block absolute rounded-full"
+                      style={{ inset: -11, background: '#F4F1EB' }}
+                    />
                     <img
                       src={meta.iconPath}
                       alt=""

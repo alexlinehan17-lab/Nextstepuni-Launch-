@@ -79,6 +79,27 @@ describe('module world ink', () => {
     expect(palette).not.toContain('mid: (t:');
   });
 
+
+  it('inverts the world CTA in dark instead of darkening it', () => {
+    // Darkening the fill to `deep` gives the label 7-11:1 but leaves the button
+    // only 1.4-2.2:1 clear of the card behind it, so it reads as a tinted hole
+    // rather than a raised action. The pale tone sits ~11:1 clear of the card.
+    const palette = readFileSync(resolve(__dirname, '..', 'components/worldPalette.ts'), 'utf8');
+    expect(palette).toContain("background: t.deepDark, color: 'var(--ink-on-accent)'");
+    expect(palette).toContain('background: t.mid');
+
+    const CARD_L = '#FFFFFF';
+    for (const w of worlds) {
+      // Light is untouched: the saturated mid with a white label.
+      expect(ratio(w.mid, CARD_L)).toBeGreaterThan(1.5);
+      // Dark: the pale fill must clear the card AND take dark ink.
+      expect(ratio(w.deepDark, DARK_CARD),
+        `${w.key} CTA fill only ${ratio(w.deepDark, DARK_CARD).toFixed(2)}:1 from the card`).toBeGreaterThanOrEqual(4.5);
+      expect(ratio('#1A1A1A', w.deepDark),
+        `${w.key} CTA label only ${ratio('#1A1A1A', w.deepDark).toFixed(2)}:1`).toBeGreaterThanOrEqual(4.5);
+    }
+  });
+
   it('keeps the worlds distinguishable rather than collapsing them to white', () => {
     const inks = worlds.map(w => w.deepDark);
     expect(new Set(inks).size).toBe(worlds.length);

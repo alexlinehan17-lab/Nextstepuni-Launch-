@@ -363,10 +363,10 @@ export default function ModuleShowcase({
                     <div className="mt-6 flex flex-col items-start gap-3">
                       <button
                         onClick={() => onSelectCourse(course.id)}
-                        className="group inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full text-white text-[14px] font-semibold transition-all duration-300 hover:gap-3.5"
+                        className="group inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full text-[14px] font-semibold transition-all duration-300 hover:gap-3.5"
                         style={{
-                          background: theme.mid,
-                          boxShadow: `0 6px 16px ${theme.mid}55`,
+                          ...tones.cta(rawTheme),
+                          boxShadow: `0 6px 16px ${tones.cta(rawTheme).background}55`,
                         }}
                       >
                         {ctaLabel}

@@ -310,3 +310,46 @@ Dark ink wins on three of five and is still short on Mind and Exam. Clearing AA
 on all of them needs the **fill** darkened — using each world's `deep` for the
 button rather than `mid` — which is a visible design change in both themes and
 so is left as a decision rather than assumed.
+
+---
+
+# Fourth pass — the world CTA and the naked icons
+
+## World CTA: inverted in dark, light untouched
+
+Darkening the fill to `deep` was the obvious move and measures badly. The label
+would clear comfortably (7.4-11.5:1) but the button ends up only **1.4-2.2:1**
+clear of the card behind it — technically compliant and visually dead, reading
+as a tinted hole rather than a raised action.
+
+Inverting instead:
+
+| | Label contrast | Button vs card |
+|---|---|---|
+| Light — `mid` fill | unchanged | unchanged |
+| Dark — `deepDark` fill, dark ink | 11.7-12.6 | **11.0-11.8** |
+
+Light mode is deliberately left at 4.01-4.20:1, marginally under AA, on Alex's
+call. It is the same pattern `--cta-invert-*` already uses for the login CTA.
+
+The label uses `var(--ink-on-accent)`, not the literal `#1A1A1A`: the compat
+layer rewrites an inline `color: rgb(26, 26, 26)` onto `--ink-primary`, assuming
+legacy light-mode text, which turned the label near-white on a pale fill.
+
+## Learning Paths icons
+
+The path icons are hand-drawn PNGs deliberately shipped naked — the code comment
+reads "no tile, no blob" — as near-black line work on a transparent ground. On
+the dark card they all but disappeared.
+
+A pale disc sits behind them in dark only. Filtering or inverting the PNG was the
+alternative and would have shifted the orange accents inside the artwork; the
+disc leaves the drawing exactly as authored. In light the disc is `display: none`
+and the naked icon is preserved.
+
+# State after this pass
+
+| Surface | Dark |
+|---|---|
+| All 15 base views | **0** |
+| All 5 category views | **0** |

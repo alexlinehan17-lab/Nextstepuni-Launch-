@@ -49,5 +49,20 @@ export const useWorldTones = () => {
     ink: (t: Pick<WorldTones, 'deep' | 'deepDark'>) => (darkMode ? t.deepDark : t.deep),
     /** For TEXT. Backgrounds and fills must use `t.mid` directly. */
     midText: (t: Pick<WorldTones, 'mid' | 'midText'>) => (darkMode ? t.midText ?? t.mid : t.mid),
+    /**
+     * Fill and ink for a CTA carrying the world colour.
+     *
+     * Light is unchanged: the saturated `mid` with a white label. Dark inverts
+     * instead of darkening. Using `deep` as the fill would give the label
+     * excellent contrast but leaves the button only 1.4-2.2:1 apart from the
+     * card behind it, so it reads as a tinted hole rather than a raised action.
+     * The pale tone sits 11:1 clear of the card and takes dark ink at 12:1.
+     */
+    cta: (t: Pick<WorldTones, 'mid' | 'deepDark'>) => (darkMode
+      // The token, not the literal: the compat layer rewrites an inline
+      // `color: #1A1A1A` onto --ink-primary, assuming it is legacy light-mode
+      // text, which would turn this label near-white on a pale fill.
+      ? { background: t.deepDark, color: 'var(--ink-on-accent)' }
+      : { background: t.mid, color: '#FFFFFF' }),
   }), [darkMode]);
 };

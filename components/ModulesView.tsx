@@ -441,10 +441,10 @@ const HeroInner: React.FC<HeroInnerProps> = ({ config, stats, nextUp, onContinue
                     onOpenCategory();
                   }
                 }}
-                className="group/cta inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full text-white text-[14px] font-semibold transition-all duration-300 hover:gap-3.5"
+                className="group/cta inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full text-[14px] font-semibold transition-all duration-300 hover:gap-3.5"
                 style={{
-                  background: mid,
-                  boxShadow: `0 6px 16px ${mid}55`,
+                  ...world.cta(config),
+                  boxShadow: `0 6px 16px ${world.cta(config).background}55`,
                 }}
               >
                 {nextUp.isContinue ? 'Continue' : 'Begin'}
