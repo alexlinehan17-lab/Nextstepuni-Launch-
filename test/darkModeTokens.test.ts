@@ -192,3 +192,57 @@ describe('index.html token system', () => {
     }
   });
 });
+
+
+/**
+ * Ink on the brand accent.
+ *
+ * White on #F26B1F is 3.04:1 and cream 2.88:1 — both fail AA, and in BOTH
+ * themes, so this is not a dark-mode concern. --ink-on-accent is the token for
+ * it and is deliberately the one value shared across themes, because the accent
+ * itself does not change.
+ */
+describe('ink on the accent', () => {
+  const ACCENT = '#F26B1F';
+  const srgb = (hex: string) => [1, 3, 5].map(i => {
+    const v = parseInt(hex.slice(i, i + 2), 16) / 255;
+    return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
+  });
+  const lum = (hex: string) => { const [r, g, b] = srgb(hex); return 0.2126 * r + 0.7152 * g + 0.0722 * b; };
+  const ratio = (a: string, b: string) => {
+    const [l1, l2] = [lum(a), lum(b)].sort((x, y) => y - x);
+    return (l1 + 0.05) / (l2 + 0.05);
+  };
+
+  it('is defined and clears AA on the accent', () => {
+    const ink = light.get('--ink-on-accent');
+    expect(ink).toBeDefined();
+    const r = ratio(ink!, ACCENT);
+    expect(r, `--ink-on-accent is ${r.toFixed(2)}:1 on ${ACCENT}`).toBeGreaterThanOrEqual(4.5);
+  });
+
+  it('white would not have cleared it — the reason this rule exists', () => {
+    expect(ratio('#FFFFFF', ACCENT)).toBeLessThan(4.5);
+  });
+
+  it('is applied to every way the accent surface is expressed', () => {
+    // Miss one of these and a whole family of buttons keeps its white ink; the
+    // bg-[var(--accent-hex)] form is how the study-session Start pill slipped
+    // through the first attempt.
+    for (const form of [
+      'bg-[#F26B1F]',
+      'bg-[var(--accent-hex)]',
+      'bg-[var(--accent-dark-hex)]',
+      'background-color: rgb(242, 107, 31)',
+      'background: rgb(242, 107, 31)',
+    ]) {
+      expect(css, `accent surface form not covered: ${form}`).toContain(form);
+    }
+  });
+
+  it('overrides inline ink, which a plain rule cannot', () => {
+    const block = css.slice(css.indexOf('Ink on the accent'));
+    expect(block).toContain('color: var(--ink-on-accent) !important;');
+    expect(block).toContain('[style*="color: white"]');
+  });
+});

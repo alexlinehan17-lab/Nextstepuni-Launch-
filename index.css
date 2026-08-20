@@ -367,6 +367,47 @@
   color: var(--ink-muted) !important;
 }
 
+/*
+ * Ink on the accent.
+ *
+ * White on #F26B1F is 3.04:1 and cream is 2.88:1 — both fail AA for body text,
+ * and in BOTH themes, so this is not a dark-mode rule. --ink-on-accent (#1A1A1A)
+ * is 7.9:1 on the same orange and is defined for exactly this; it is the one
+ * token deliberately shared across themes, because the accent does not change.
+ *
+ * Targeted at the accent surface rather than at `text-white`, which has ~950
+ * uses across the app and is correct nearly everywhere else. The descendant rule
+ * is needed because a child's own utility class beats an inherited colour, and
+ * !important because several of these buttons set their ink inline.
+ */
+:is([class*="bg-[#F26B1F]"],
+    [class*="bg-[var(--accent-hex)]"],
+    [class*="bg-[var(--accent-dark-hex)]"],
+    [style*="background-color: rgb(242, 107, 31)"],
+    [style*="background: rgb(242, 107, 31)"]) {
+  /* !important because several of these buttons set `color: white` inline, and
+     an inline declaration beats a stylesheet one. It does not leak to children:
+     a child with a colour of its own always wins over an inherited value. */
+  color: var(--ink-on-accent) !important;
+}
+
+:is([class*="bg-[#F26B1F]"],
+    [class*="bg-[var(--accent-hex)]"],
+    [class*="bg-[var(--accent-dark-hex)]"],
+    [style*="background-color: rgb(242, 107, 31)"],
+    [style*="background: rgb(242, 107, 31)"]):where(.text-white, .text-orange-100),
+:is([class*="bg-[#F26B1F]"],
+    [class*="bg-[var(--accent-hex)]"],
+    [class*="bg-[var(--accent-dark-hex)]"],
+    [style*="background-color: rgb(242, 107, 31)"],
+    [style*="background: rgb(242, 107, 31)"]) :where(
+      .text-white, .text-orange-50, .text-orange-100,
+      [class*="text-[#FDF8F0]"], [class*="text-[#FFFFFF]"], [class*="text-[#fff]"],
+      [style*="color: white"], [style*="color: rgb(255, 255, 255)"],
+      [style*="color: rgb(253, 248, 240)"]) {
+  color: var(--ink-on-accent) !important;
+}
+
 /* Disabled content must still be readable; opacity compounds badly on dark. */
 .dark :is(.product-shell, .theme-compat) :disabled,
 .dark :is(.product-shell, .theme-compat) [aria-disabled="true"] {

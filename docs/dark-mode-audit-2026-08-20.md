@@ -161,3 +161,89 @@ dark rule is left scoped to `.product-shell` alone.
   clears AA; switching the CTAs to it is a small, separate change.
 - The left rail's icon buttons are unlabelled — `read_page` returns 24 anonymous
   `button` elements.
+
+---
+
+# Second pass — exhaustive sweep
+
+The first pass sampled screens by clicking, which is how the Modules list was
+missed. `NavigationContext` listens to `popstate`, so every view in
+`VALID_VIEWS` can be visited without a reload. All eighteen were walked and
+audited.
+
+## Screens the sampling never reached
+
+| Screen | Failures found |
+|---|---|
+| Training Hub (`gamification-hub`) | 21 |
+| Study Session | 10 |
+| Cut Content | 7 + a light sticky header |
+| JC Coming Soon | 4, worst 1.02:1 |
+| WIP Tools | 1 |
+
+Same cause each time: the screen never opted into the compat layer, so rules
+already written for it never reached. `theme-compat` added to TrainingHub,
+JCComingSoon, MyDirection and StudySessionView.
+
+## The token system I had not seen
+
+`index.html` carries a **second** token set — `--bg-*`, `--text-*`, `--border-*`
+— predating the `--surface`/`--ink` set in `index.css` and still consumed by
+inline style props across the modules and the hub. `--text-label` was `#71717a`:
+**3.37:1 on its own `--bg-card`**, failing on every stat label in the Training
+Hub.
+
+The first pass could not have caught it, because the audit only read
+`index.css`. The test now reads both files, checks each text token against the
+card it sits on, and checks the scale still descends so "label" cannot end up as
+loud as "primary".
+
+## Module world colours
+
+Each world's `deep` tone is authored for a light card and is used at 60-80%
+alpha. Measured on the dark card: navy 1.54:1, red 1.77:1, magenta 2.15:1, teal
+2.31:1. Each world gained a `deepDark` of the same hue; two also needed a
+`midDark` for the small mono numerals. Not white — the worlds are colour-coded
+and flattening them would have destroyed the signal.
+
+## Ink on the accent
+
+White on `#F26B1F` is 3.04:1 and cream 2.88:1 — failing in **both** themes.
+Now resolved to `--ink-on-accent` (`#1A1A1A`, 7.9:1), targeted at the accent
+surface rather than at `text-white`, which has ~950 uses and is correct nearly
+everywhere else.
+
+Five distinct ways the accent surface is expressed had to be covered; the
+`bg-[var(--accent-hex)]` form is what let the study-session Start pill through
+on the first attempt.
+
+# Final state — dark mode
+
+**Zero contrast failures and zero stranded light surfaces across all eighteen
+views.**
+
+# Light mode — a separate, larger problem
+
+Sweeping light mode with the same auditor found **434 failures**, all
+pre-existing and none introduced here (the token values are pinned by test):
+
+| Screen | Failures |
+|---|---|
+| Cut Content | 333 |
+| Dashboard | 44 |
+| Accreditation | 22 |
+| Training Hub | 21 |
+| Modules | 12 |
+| Launchpad | 2 |
+
+Dominant causes, all long-standing:
+
+- The brand orange `#F26B1F` used as **text** on white — 3.04:1. Distinct from
+  text *on* orange, which is now fixed.
+- `--page-label` `#9E9186` on the `#f0f0f0` canvas — 2.69:1.
+- `--ink-faint` `#B0A898` on the neutral pill — 2.04:1.
+- Amber `#F59E0B` on white — 2.15:1.
+
+This was never in scope and is not a regression. It is a bigger job than the
+dark-mode work was, because unlike dark mode there is no compat layer to hang it
+on — the light palette itself is too low-contrast in places.
