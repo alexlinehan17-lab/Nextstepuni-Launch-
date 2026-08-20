@@ -17,7 +17,7 @@ interface JCComingSoonProps {
 
 const JCComingSoon: React.FC<JCComingSoonProps> = ({ fromCourseTitle, onBack }) => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-6 py-10" style={{ backgroundColor: '#FDF8F0' }}>
+    <div className="min-h-screen theme-compat flex flex-col items-center justify-center px-6 py-10" style={{ backgroundColor: '#FDF8F0' }}>
       <MotionDiv
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}

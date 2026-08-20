@@ -410,7 +410,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   // ── SETUP PHASE ──
   if (session.phase === 'idle') {
     return (
-      <div className="min-h-screen bg-[#FAFBF6] dark:bg-zinc-950 flex flex-col">
+      <div className="min-h-screen theme-compat bg-[#FAFBF6] dark:bg-zinc-950 flex flex-col">
         {/* ── Editorial header — replaces the old teal hero banner ── */}
         <div className="shrink-0 px-6 pt-6 max-w-md mx-auto w-full">
           <div className="flex items-center justify-between">

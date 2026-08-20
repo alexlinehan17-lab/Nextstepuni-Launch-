@@ -38,6 +38,7 @@
      their own greys on a heavier grey canvas. Kept as their own tokens so light
      mode is unchanged to the byte -- folding them into --ink-* would have
      shifted four greys and the canvas. */
+  --neutral-tint: #F0EEEC;
   --danger-tint: #FDE4E4;
   --danger-tint-ink: #8E2C2C;
   --info-tint: #E8EFF5;
@@ -117,6 +118,7 @@
   /* Tints carry meaning (selected / correct), so they stay tinted rather than
      collapsing to a neutral: a desaturated dark of the same hue, with ink light
      enough to clear AA on it. */
+  --neutral-tint: #2A2825;
   --danger-tint: #3A2020;
   --danger-tint-ink: #F0A9A9;
   --info-tint: #1B2A38;
@@ -124,11 +126,11 @@
   --page-canvas: #151515;
   --page-body: #D6D0C9;
   --page-muted: #A8A29E;
-  --page-label: #938C84;
+  --page-label: #A69E95;
   --cta-invert-bg: #F7F3ED;
   --cta-invert-ink: #1A1A1A;
   --cta-invert-border: rgba(247, 243, 237, 0.55);
-  --ink-faint: #8F887F;
+  --ink-faint: #A09890;
   --hairline: #34312E;
   --accent-tint: #3A2417;
   --accent-tint-ink: #F6B98C;
@@ -182,6 +184,7 @@
 .dark :is(.product-shell, .theme-compat) [style*="color: #5a5550" i],
 .dark :is(.product-shell, .theme-compat) [style*="color: rgb(142, 131, 120)"],
 .dark :is(.product-shell, .theme-compat) [style*="color: rgb(158, 145, 134)"],
+.dark :is(.product-shell, .theme-compat) [class*="text-[#78716C]"],
 .dark :is(.product-shell, .theme-compat) [style*="color: #8e8378" i] {
   color: var(--ink-muted) !important;
 }
@@ -204,7 +207,8 @@
 .dark :is(.product-shell, .theme-compat) [class*="bg-[#FAFBF6]"],
 .dark :is(.product-shell, .theme-compat) [class*="bg-[#FAF9F7]"],
 .dark :is(.product-shell, .theme-compat) [class*="bg-[#FAF7F4]"],
-.dark :is(.product-shell, .theme-compat) [class*="bg-[#FDF8F0]"] {
+.dark :is(.product-shell, .theme-compat) [class*="bg-[#FDF8F0]"],
+.dark :is(.product-shell, .theme-compat) [class*="bg-[#f0f0f0]"] {
   background: var(--surface-paper) !important;
   background-color: var(--surface-paper) !important;
 }
@@ -288,6 +292,11 @@
   background-color: var(--surface-soft) !important;
 }
 
+.dark :is(.product-shell, .theme-compat) [style*="background: rgb(240, 238, 236)"],
+.dark :is(.product-shell, .theme-compat) [style*="background-color: rgb(240, 238, 236)"] {
+  background-color: var(--neutral-tint) !important;
+}
+
 /* Utility-era screens often relied on a light parent and therefore used plain
    `bg-white`, `text-zinc-*`, or inherited black. Give those common primitives a
    coherent dark material without touching coloured artwork and diagrams. */
@@ -337,9 +346,26 @@
  * `.dark .dark\:text-zinc-500` and is emitted later, so it wins on source order.
  */
 .dark .dark\:text-zinc-500,
-.dark .dark\:text-zinc-600 { color: #91918D !important; }   /* zinc-400 */
+.dark .dark\:text-zinc-600,
+.dark .dark\:text-stone-500,
+.dark .dark\:text-stone-600,
+.dark .dark\:text-neutral-500,
+.dark .dark\:text-neutral-600,
+.dark .dark\:text-gray-500,
+.dark .dark\:text-gray-600 { color: #91918D !important; }   /* zinc-400 */
 
-.dark .dark\:text-zinc-700 { color: #BFBFBA !important; }   /* zinc-300 */
+.dark .dark\:text-zinc-700,
+.dark .dark\:text-stone-700,
+.dark .dark\:text-neutral-700,
+.dark .dark\:text-gray-700 { color: #BFBFBA !important; }   /* zinc-300 */
+
+/* Tailwind's own stone/neutral scales are NOT overridden in tailwind.config.ts,
+   so these land at #78716C / #737373 — around 3.4:1 on a raised dark surface.
+   Same treatment, applied where the utility is used without a dark: variant on
+   an opted-in screen. */
+.dark :is(.product-shell, .theme-compat) :where(.text-stone-500, .text-neutral-500, .text-gray-500) {
+  color: var(--ink-muted) !important;
+}
 
 /* Disabled content must still be readable; opacity compounds badly on dark. */
 .dark :is(.product-shell, .theme-compat) :disabled,

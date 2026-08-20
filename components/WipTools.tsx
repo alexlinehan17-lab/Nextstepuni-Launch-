@@ -88,7 +88,7 @@ const WipTools: React.FC<WipToolsProps> = ({ onBack, onOpenTool }) => (
                     <span style={{ ...SERIF, fontSize: 17, fontWeight: 600, color: '#1a1a1a' }}>{t.title}</span>
                     <span
                       className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[9.5px] font-bold uppercase tracking-[0.08em]"
-                      style={{ ...SANS, backgroundColor: '#f0eeec', color: '#9e9186' }}
+                      style={{ ...SANS, backgroundColor: 'var(--neutral-tint)', color: 'var(--page-label)' }}
                     >
                       <Hammer size={9} /> In progress
                     </span>

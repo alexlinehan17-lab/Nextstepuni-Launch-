@@ -23,6 +23,7 @@ import { resolve } from 'node:path';
 
 const ROOT = resolve(__dirname, '..');
 const css = readFileSync(resolve(ROOT, 'index.css'), 'utf8');
+const html = readFileSync(resolve(ROOT, 'index.html'), 'utf8');
 
 function tokensIn(selector: string): Map<string, string> {
   const re = new RegExp(String.raw`(?:^|\})\s*${selector}\s*\{([\s\S]*?)\n\}`, 'm');
@@ -131,6 +132,63 @@ describe('screens opt into a dark treatment', () => {
       const src = readFileSync(resolve(ROOT, file), 'utf8');
       expect(src, `${file} still forces light`).not.toContain('data-theme="light"');
       expect(src, `${file} still forces light`).not.toContain("colorScheme: 'light'");
+    }
+  });
+});
+
+
+/**
+ * index.html carries a SECOND token system — --bg-*, --text-*, --border-* —
+ * predating the --surface/--ink set in index.css and still consumed by inline
+ * style props across the modules and the training hub.
+ *
+ * It was missed in the first dark-mode pass precisely because the audit only
+ * read index.css, and `--text-label` sat at #71717a: 3.37:1 on its own
+ * --bg-card, failing AA on every stat label in the training hub. Contrast is
+ * asserted here rather than assumed.
+ */
+describe('index.html token system', () => {
+  function block(selector: string): Map<string, string> {
+    const re = new RegExp(String.raw`${selector}\s*\{([\s\S]*?)\n\s*\}`, 'm');
+    const body = html.match(re)?.[1] ?? '';
+    const out = new Map<string, string>();
+    for (const m of body.matchAll(/(--[a-z0-9-]+)\s*:\s*([^;]+);/g)) out.set(m[1], m[2].trim());
+    return out;
+  }
+  const dark = block(String.raw`html\.dark`);
+
+  const srgb = (hex: string) => [1, 3, 5].map(i => {
+    const v = parseInt(hex.slice(i, i + 2), 16) / 255;
+    return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
+  });
+  const lum = (hex: string) => { const [r, g, b] = srgb(hex); return 0.2126 * r + 0.7152 * g + 0.0722 * b; };
+  const ratio = (a: string, b: string) => {
+    const [l1, l2] = [lum(a), lum(b)].sort((x, y) => y - x);
+    return (l1 + 0.05) / (l2 + 0.05);
+  };
+  const hex = (name: string) => (dark.get(name) ?? '').split(/\s/)[0];
+
+  it('parses the dark block', () => {
+    expect(dark.size).toBeGreaterThan(8);
+    expect(hex('--bg-card')).toMatch(/^#[0-9a-f]{6}$/i);
+  });
+
+  it('every text token clears AA on the card it sits on', () => {
+    const card = hex('--bg-card');
+    for (const token of ['--text-primary', '--text-body', '--text-muted', '--text-label']) {
+      const r = ratio(hex(token), card);
+      expect(r, `${token} is ${r.toFixed(2)}:1 on --bg-card`).toBeGreaterThanOrEqual(4.5);
+    }
+  });
+
+  it('keeps a visible hierarchy between the text tokens', () => {
+    const card = hex('--bg-card');
+    const steps = ['--text-primary', '--text-body', '--text-muted', '--text-label']
+      .map(t => ratio(hex(t), card));
+    // Each step should be no brighter than the one above it, or the scale has
+    // collapsed and "label" reads as loudly as "primary".
+    for (let i = 1; i < steps.length; i++) {
+      expect(steps[i], `${steps[i].toFixed(2)} vs ${steps[i - 1].toFixed(2)}`).toBeLessThanOrEqual(steps[i - 1]);
     }
   });
 });

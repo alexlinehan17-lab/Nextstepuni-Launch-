@@ -17,7 +17,7 @@ const SERIF = "'Source Serif 4', serif";
 const INK = 'var(--ink-primary)';
 const HAIRLINE = 'var(--hairline)';
 const PAGE = 'var(--page-canvas)';
-const PANEL = '#FAF7F4';
+const PANEL = 'var(--surface-soft)';
 const MUTED = 'var(--page-muted)';
 const LABEL = 'var(--page-label)';
 const FAINT = 'var(--ink-faint)';
@@ -34,7 +34,7 @@ type FilterKey = 'all' | CutAction | 'awaiting';
 const ACTION_META: Record<CutAction, { label: string; tint: string; text: string; border: string }> = {
   reframed: { label: 'Reframed', tint: SUCCESS_TINT, text: SUCCESS_DARK_TEXT, border: 'rgba(58,141,95,0.3)' },
   corrected: { label: 'Corrected', tint: ACCENT_TINT, text: ACCENT_DARK_TEXT, border: 'rgba(242,107,31,0.25)' },
-  removed: { label: 'Removed', tint: '#f0eeec', text: MUTED, border: '#d0cdc8' },
+  removed: { label: 'Removed', tint: 'var(--neutral-tint)', text: MUTED, border: '#d0cdc8' },
 };
 
 const MicroLabel: React.FC<{ children: React.ReactNode; color?: string; className?: string }> = ({
