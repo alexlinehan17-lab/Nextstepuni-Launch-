@@ -18,6 +18,7 @@ import { Check, ChevronDown } from 'lucide-react';
 import PageHeader from './ui/PageHeader';
 import { type CourseData } from './Library';
 import { YEAR_PLANS, type YearPlan } from '../yearPlans';
+import { useSettingsContext } from '../contexts/SettingsContext';
 
 type UserProgress = {
   [moduleId: string]: { unlockedSection: number };
@@ -34,11 +35,21 @@ interface YearPlansViewProps {
 
 // Muted per-cycle accents in the LearningPathsView register — tiny details
 // only (progress fill, CTA arrow, ghost numeral).
-const CYCLE_META: Record<YearPlan['cycle'], { eyebrow: string; accent: string }> = {
-  junior: { eyebrow: 'Junior Cycle', accent: '#5B7DB0' },
-  ty: { eyebrow: 'Transition Year', accent: '#8B82B8' },
-  senior: { eyebrow: 'Senior Cycle', accent: '#D85F47' },
-  lca: { eyebrow: 'Leaving Cert Applied', accent: '#7DA37A' },
+//
+// `accent` is a FILL. As TEXT it fails in both themes (2.49-3.68:1 on the light
+// canvas, 3.88-4.38:1 on a dark card), so each cycle carries its own ink pair.
+// Use cycleInk() for anything that renders as text; `accent` stays for fills.
+const CYCLE_META: Record<YearPlan['cycle'], { eyebrow: string; accent: string; inkLight: string; inkDark: string }> = {
+  junior: { eyebrow: 'Junior Cycle', accent: '#5B7DB0', inkLight: '#4C6D9F', inkDark: '#7E9BC4' },
+  ty: { eyebrow: 'Transition Year', accent: '#8B82B8', inkLight: '#6E63A6', inkDark: '#A79FCB' },
+  senior: { eyebrow: 'Senior Cycle', accent: '#D85F47', inkLight: '#BF4129', inkDark: '#E8836E' },
+  lca: { eyebrow: 'Leaving Cert Applied', accent: '#7DA37A', inkLight: '#537450', inkDark: '#96B893' },
+};
+
+/** Text ink for a cycle, flipped for the theme. `accent` is fill-only. */
+const useCycleInk = (): ((m: { inkLight: string; inkDark: string }) => string) => {
+  const darkMode = useSettingsContext()?.settings.darkMode ?? false;
+  return React.useCallback((m: { inkLight: string; inkDark: string }) => (darkMode ? m.inkDark : m.inkLight), [darkMode]);
 };
 
 const SERIF: React.CSSProperties = { fontFamily: "'Source Serif 4', serif" };
@@ -51,6 +62,7 @@ const YearPlansView: React.FC<YearPlansViewProps> = ({
   onBack,
   isLca = false,
 }) => {
+  const cycleInk = useCycleInk();
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const plans = YEAR_PLANS.filter(p => (isLca ? p.cycle === 'lca' : p.cycle !== 'lca'));
 
@@ -210,7 +222,7 @@ const YearPlansView: React.FC<YearPlansViewProps> = ({
                     {isComplete ? (
                       <span
                         className="inline-flex items-center gap-1.5"
-                        style={{ ...SANS, fontSize: 13, fontWeight: 500, color: meta.accent }}
+                        style={{ ...SANS, fontSize: 13, fontWeight: 500, color: cycleInk(meta) }}
                       >
                         <Check size={14} strokeWidth={2} />
                         Year complete
@@ -224,7 +236,7 @@ const YearPlansView: React.FC<YearPlansViewProps> = ({
                         {completed > 0 ? 'Continue' : 'Start'}
                         <span
                           className="transition-transform group-hover:translate-x-0.5"
-                          style={{ color: meta.accent, fontSize: 16, lineHeight: 1 }}
+                          style={{ color: cycleInk(meta), fontSize: 16, lineHeight: 1 }}
                         >
                           →
                         </span>
@@ -298,7 +310,7 @@ const YearPlansView: React.FC<YearPlansViewProps> = ({
                                   </span>
                                   <span
                                     className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity"
-                                    style={{ ...SANS, fontSize: 14, color: meta.accent }}
+                                    style={{ ...SANS, fontSize: 14, color: cycleInk(meta) }}
                                   >
                                     →
                                   </span>

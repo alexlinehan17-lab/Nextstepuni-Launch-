@@ -28,6 +28,7 @@ import {
   FIELD_WORLD, careerIcon,
   HybridCard, Band, BlobIcon, ProgressDots, OrangeBtn, NeutralBtn, Eyebrow,
   SERIF, INK, BODY, MUTED, LABEL, HAIRLINE,
+  usePaperInk,
 } from './immersiveDeck';
 import { CAO_COURSES, INSTITUTIONS, getCoursePageUrl, type CAOCourse } from './futureFinderData';
 import { useInnovationData } from '../contexts/InnovationDataContext';
@@ -70,7 +71,7 @@ const CourseRow: React.FC<{ course: CAOCourse; wd: ColorWorld }> = ({ course, wd
   const isAppr = course.pathwayType === 'apprenticeship';
   const meta = isAppr ? 'Apprenticeship · earn as you learn' : `${inst} · L${course.level}${course.typicalPoints ? ` · ~${course.typicalPoints} pts` : ''}`;
   return (
-    <a href={getCoursePageUrl(course)} target="_blank" rel="noreferrer" className="flex items-center gap-2.5 rounded-xl p-3" style={{ backgroundColor: '#fff', border: `1.5px solid ${HAIRLINE}`, color: INK }}>
+    <a href={getCoursePageUrl(course)} target="_blank" rel="noreferrer" className="flex items-center gap-2.5 rounded-xl p-3" style={{ backgroundColor: 'var(--deck-paper)', border: `1.5px solid ${HAIRLINE}`, color: INK }}>
       <GraduationCap size={16} style={{ color: wd.bg }} className="shrink-0" />
       <span className="flex-1 min-w-0">
         <span className="block text-[13.5px] font-semibold leading-tight truncate">{course.title}</span>
@@ -132,6 +133,9 @@ type Beat = 'front' | 'day' | 'deal' | 'shift' | 'route';
 // Make the call, often pick the tempting-wrong option, see the consequence (neutral,
 // never red-as-punishment), then the experienced move (success-tinted) with its source.
 const ShiftSim: React.FC<{ moments: ShiftMoment[]; wd: ColorWorld; savedRating?: number; onRate: (n: number) => void }> = ({ moments, wd, savedRating, onRate }) => {
+  /* `wd.deep` is tuned for white paper and is unreadable on the dark deck
+     paper; paperTone() flips to the world's light tone in dark mode. */
+  const paperTone = usePaperInk();
   const [idx, setIdx] = useState(0);
   const [chosen, setChosen] = useState<number | null>(null);
   const [phase, setPhase] = useState<'play' | 'rate'>('play');
@@ -148,12 +152,12 @@ const ShiftSim: React.FC<{ moments: ShiftMoment[]; wd: ColorWorld; savedRating?:
           {[1, 2, 3, 4, 5].map((n) => {
             const on = rating === n;
             return (
-              <button key={n} onClick={() => { setRating(n); onRate(n); }} className="flex-1 py-2.5 rounded-xl text-sm font-bold transition-colors" style={on ? { backgroundColor: wd.bg, color: '#fff' } : { backgroundColor: '#fff', color: INK, border: `2px solid ${HAIRLINE}` }}>{n}</button>
+              <button key={n} onClick={() => { setRating(n); onRate(n); }} className="flex-1 py-2.5 rounded-xl text-sm font-bold transition-colors" style={on ? { backgroundColor: wd.bg, color: '#fff' } : { backgroundColor: 'var(--deck-paper)', color: INK, border: `2px solid ${HAIRLINE}` }}>{n}</button>
             );
           })}
         </div>
         <div className="flex justify-between text-[10px]" style={{ color: MUTED }}><span>Not for me</span><span>Definitely me</span></div>
-        {rating != null && <p className="text-[12px] mt-3 font-semibold" style={{ color: wd.deep }}>Saved.</p>}
+        {rating != null && <p className="text-[12px] mt-3 font-semibold" style={{ color: paperTone(wd) }}>Saved.</p>}
       </div>
     );
   }
@@ -169,9 +173,9 @@ const ShiftSim: React.FC<{ moments: ShiftMoment[]; wd: ColorWorld; savedRating?:
           const pickedWrong = chosen === i && !isCorrect;
           return (
             <button key={i} disabled={chosen != null} onClick={() => setChosen(i)} className="w-full text-left rounded-xl p-3 text-[13.5px] leading-snug transition-colors disabled:cursor-default" style={
-              showCorrect ? { backgroundColor: '#fff', border: `2px solid ${COLORS.success}`, color: INK }
+              showCorrect ? { backgroundColor: 'var(--deck-paper)', border: `2px solid ${COLORS.success}`, color: INK }
               : pickedWrong ? { backgroundColor: wd.tint, border: `2px solid ${wd.bg}`, color: INK }
-              : { backgroundColor: '#fff', border: `2px solid ${HAIRLINE}`, color: INK }
+              : { backgroundColor: 'var(--deck-paper)', border: `2px solid ${HAIRLINE}`, color: INK }
             }>
               <span className="flex items-start gap-2">
                 {showCorrect && <Check size={15} style={{ color: COLORS.success }} className="shrink-0 mt-0.5" />}
@@ -196,7 +200,7 @@ const ShiftSim: React.FC<{ moments: ShiftMoment[]; wd: ColorWorld; savedRating?:
             <p className="text-[12.5px] leading-snug" style={{ color: INK }}>{m.fix}</p>
             <p className="text-[10px] mt-1.5" style={{ color: MUTED }}>{m.source}</p>
           </div>
-          <button onClick={() => { if (isLast) setPhase('rate'); else { setIdx(idx + 1); setChosen(null); } }} className="text-[13px] font-semibold inline-flex items-center gap-1" style={{ color: wd.deep }}>
+          <button onClick={() => { if (isLast) setPhase('rate'); else { setIdx(idx + 1); setChosen(null); } }} className="text-[13px] font-semibold inline-flex items-center gap-1" style={{ color: paperTone(wd) }}>
             {isLast ? 'How did that feel?' : 'Next call'} <ArrowRight size={13} />
           </button>
         </>
@@ -206,6 +210,9 @@ const ShiftSim: React.FC<{ moments: ShiftMoment[]; wd: ColorWorld; savedRating?:
 };
 
 const CareerPaths: React.FC<{ uid?: string; studentSubjects?: string[]; seedMatches?: boolean; seedMatchStrings?: string[] }> = ({ uid, seedMatches, seedMatchStrings }) => {
+  /* `wd.deep` is tuned for white paper and is unreadable on the dark deck
+     paper; paperTone() flips to the world's light tone in dark mode. */
+  const paperTone = usePaperInk();
   const { state, isLoaded, markSeen, toggleSaved, setShiftRating } = useCareerPaths(uid);
   const { futureFinderPicks } = useInnovationData();
   const sound = useDeckSound();
@@ -271,7 +278,7 @@ const CareerPaths: React.FC<{ uid?: string; studentSubjects?: string[]; seedMatc
                 {beat === 'front' && (
                   <>
                     <p className="text-[24px] leading-tight font-semibold mb-3" style={{ fontFamily: SERIF, color: INK }}>{card.tagline}</p>
-                    {matchedIds.has(card.id) && <span className="inline-flex items-center gap-1 text-[12px] font-semibold mb-7" style={{ color: wd.deep }}><Star size={12} /> matches your results</span>}
+                    {matchedIds.has(card.id) && <span className="inline-flex items-center gap-1 text-[12px] font-semibold mb-7" style={{ color: paperTone(wd) }}><Star size={12} /> matches your results</span>}
                     <div className="flex justify-end mt-4"><OrangeBtn label="What's it like?" icon={ArrowRight} onClick={() => goBeat('day')} /></div>
                   </>
                 )}
@@ -324,7 +331,7 @@ const CareerPaths: React.FC<{ uid?: string; studentSubjects?: string[]; seedMatc
 
                     <div className="grid grid-cols-2 gap-3 mb-7">
                       <div className="rounded-2xl p-3.5" style={{ backgroundColor: wd.tint }}>
-                        <div className="flex items-center gap-1.5 mb-2" style={{ color: wd.deep }}><ThumbsUp size={13} /><p className="text-[10px] font-bold uppercase tracking-[0.1em]">The good</p></div>
+                        <div className="flex items-center gap-1.5 mb-2" style={{ color: paperTone(wd) }}><ThumbsUp size={13} /><p className="text-[10px] font-bold uppercase tracking-[0.1em]">The good</p></div>
                         <ul className="space-y-1.5">{card.pros.map((p, i) => <li key={i} className="text-[12.5px] leading-snug" style={{ color: BODY }}>{p}</li>)}</ul>
                       </div>
                       <div className="rounded-2xl p-3.5" style={{ backgroundColor: NEUTRAL_PANEL }}>
@@ -385,10 +392,10 @@ const CareerPaths: React.FC<{ uid?: string; studentSubjects?: string[]; seedMatc
                                 <span className="absolute -left-[26px] top-3.5" aria-hidden="true">
                                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F26B1F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
                                 </span>
-                                <div className="rounded-2xl p-3.5" style={{ backgroundColor: '#fff', border: '2px solid #1a1a1a' }}>
+                                <div className="rounded-2xl p-3.5" style={{ backgroundColor: 'var(--deck-paper)', border: `2px solid ${INK}` }}>
                                   <div className="flex items-baseline justify-between gap-2 mb-2">
                                     <p className="text-[13.5px] font-bold" style={{ color: INK }}>{d.label}</p>
-                                    <span className="text-[11px] font-semibold text-right shrink-0" style={{ color: wd.deep }}>{d.sub}</span>
+                                    <span className="text-[11px] font-semibold text-right shrink-0" style={{ color: paperTone(wd) }}>{d.sub}</span>
                                   </div>
                                   <div className="space-y-2">{d.courses.map((co) => <CourseRow key={co.code} course={co} wd={wd} />)}</div>
                                 </div>
@@ -399,7 +406,7 @@ const CareerPaths: React.FC<{ uid?: string; studentSubjects?: string[]; seedMatc
                       </>
                     )}
 
-                    <button onClick={() => saveFromDetail(card.id)} className="inline-flex items-center gap-1.5 text-[13px] font-semibold px-4 py-2.5 rounded-full mb-4 transition-transform active:translate-y-0.5" style={isSaved ? { backgroundColor: wd.bg, color: '#fff' } : { backgroundColor: '#fff', border: `2px solid ${wd.bg}`, color: wd.deep }}>
+                    <button onClick={() => saveFromDetail(card.id)} className="inline-flex items-center gap-1.5 text-[13px] font-semibold px-4 py-2.5 rounded-full mb-4 transition-transform active:translate-y-0.5" style={isSaved ? { backgroundColor: wd.bg, color: '#fff' } : { backgroundColor: 'var(--deck-paper)', border: `2px solid ${wd.bg}`, color: paperTone(wd) }}>
                       {isSaved ? <><BookmarkCheck size={15} /> Saved to your shortlist</> : <><Bookmark size={15} /> Save to shortlist</>}
                     </button>
 
@@ -441,9 +448,9 @@ const CareerPaths: React.FC<{ uid?: string; studentSubjects?: string[]; seedMatc
                   </div>
                   <p className="text-[13px] leading-snug" style={{ color: BODY }}>{c.tagline}</p>
                   {state.shiftRatings?.[c.id] != null && (
-                    <p className="text-[11px] mt-1 font-semibold" style={{ color: wd.deep }}>You rated trying this {state.shiftRatings[c.id]}/5</p>
+                    <p className="text-[11px] mt-1 font-semibold" style={{ color: paperTone(wd) }}>You rated trying this {state.shiftRatings[c.id]}/5</p>
                   )}
-                  <button onClick={() => open(c)} className="text-[12px] font-semibold mt-1.5" style={{ color: wd.deep }}>Open card →</button>
+                  <button onClick={() => open(c)} className="text-[12px] font-semibold mt-1.5" style={{ color: paperTone(wd) }}>Open card →</button>
                 </div>
               );
             })}

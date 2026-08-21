@@ -28,6 +28,7 @@ import {
   WORLDS, type ColorWorld, DeckStack, useDeckSound, Celebration, initials,
   HybridCard, Band, BlobIcon, ProgressDots, OrangeBtn, NeutralBtn, Eyebrow, BackLink,
   SERIF, INK, BODY, MUTED, LABEL, HAIRLINE,
+  usePaperInk,
 } from '../immersiveDeck';
 
 /** Each barrier owns a colour world (now feeds the Band / headers / accents). */
@@ -44,6 +45,9 @@ const barrierLabel = (b: Barrier) => BARRIERS.find((x) => x.id === b)?.label ?? 
 
 /** A move tile that flips in 3D to reveal its detail. */
 const MoveTile: React.FC<{ move: PersonMove; idx: number; wd: ColorWorld; onFlip: () => void }> = ({ move, idx, wd, onFlip }) => {
+  /* `wd.deep` is tuned for white paper and is unreadable on the dark deck
+     paper; paperTone() flips to the world's light tone in dark mode. */
+  const paperTone = usePaperInk();
   const [flipped, setFlipped] = useState(false);
   return (
     <div style={{ perspective: 1000 }} onClick={() => { setFlipped((f) => !f); onFlip(); }} className="cursor-pointer">
@@ -57,7 +61,7 @@ const MoveTile: React.FC<{ move: PersonMove; idx: number; wd: ColorWorld; onFlip
         <div className="rounded-2xl p-4 flex items-center gap-3" style={{ backgroundColor: wd.tint, backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden' }}>
           <span className="w-7 h-7 rounded-full flex items-center justify-center shrink-0 text-[13px] font-bold" style={{ backgroundColor: wd.bg, color: '#fff', fontFamily: SERIF }}>{idx + 1}</span>
           <span className="text-[15.5px] font-semibold flex-1" style={{ color: INK }}>{move.title}</span>
-          <RefreshCw size={14} style={{ color: wd.deep }} />
+          <RefreshCw size={14} style={{ color: paperTone(wd) }} />
         </div>
         {/* back — white, ink detail */}
         <div className="absolute inset-0 rounded-2xl p-4 flex items-center" style={{ backgroundColor: 'var(--deck-paper)', border: `1.5px solid ${HAIRLINE}`, color: INK, transform: 'rotateY(180deg)', backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden' }}>
@@ -119,6 +123,9 @@ type Beat = 'front' | 'struggle' | 'moves' | 'now';
 const BEAT_IDX: Record<Beat, number> = { front: 0, struggle: 1, moves: 2, now: 3 };
 
 const HowTheyDidIt: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ uid }) => {
+  /* `wd.deep` is tuned for white paper and is unreadable on the dark deck
+     paper; paperTone() flips to the world's light tone in dark mode. */
+  const paperTone = usePaperInk();
   const { state, isLoaded, markSeen, toggleSaved } = useHowTheyDidIt(uid);
   const sound = useDeckSound();
   const [filter, setFilter] = useState<Barrier | 'all'>('all');
@@ -222,7 +229,7 @@ const HowTheyDidIt: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ 
                     </div>
                     {card.helpedBy && (
                       <div className="rounded-2xl p-4 mb-6" style={{ backgroundColor: wd.tint }}>
-                        <div className="flex items-center gap-1.5 mb-1.5"><HandHeart size={14} style={{ color: wd.deep }} /><p className="text-[10px] font-bold uppercase tracking-[0.12em]" style={{ color: wd.deep }}>Who helped</p></div>
+                        <div className="flex items-center gap-1.5 mb-1.5"><HandHeart size={14} style={{ color: paperTone(wd) }} /><p className="text-[10px] font-bold uppercase tracking-[0.12em]" style={{ color: paperTone(wd) }}>Who helped</p></div>
                         <p className="text-[13.5px] leading-relaxed" style={{ color: BODY }}>{card.helpedBy}</p>
                       </div>
                     )}
@@ -240,12 +247,12 @@ const HowTheyDidIt: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ 
                     {card.strengthsLine && <p className="text-[13.5px] leading-relaxed italic mb-5" style={{ color: MUTED }}>{card.strengthsLine}</p>}
 
                     <div className="rounded-2xl p-4 mb-4" style={{ backgroundColor: 'var(--deck-paper)', border: `1.5px solid ${HAIRLINE}` }}>
-                      <div className="flex items-center gap-1.5 mb-1.5"><Sparkles size={15} style={{ color: wd.deep }} /><p className="text-[11px] font-bold uppercase tracking-[0.1em]" style={{ color: wd.deep }}>Steal this move</p></div>
+                      <div className="flex items-center gap-1.5 mb-1.5"><Sparkles size={15} style={{ color: paperTone(wd) }} /><p className="text-[11px] font-bold uppercase tracking-[0.1em]" style={{ color: paperTone(wd) }}>Steal this move</p></div>
                       <p className="text-[14.5px] leading-relaxed mb-3" style={{ color: BODY }}>{card.stealThisMove}</p>
                       <button
                         onClick={() => saveFromDetail(card.id)}
                         className="inline-flex items-center gap-1.5 text-[13px] font-semibold px-3.5 py-2 rounded-full transition-transform active:translate-y-0.5"
-                        style={isSaved ? { backgroundColor: wd.bg, color: '#fff' } : { border: `2px solid ${wd.bg}`, color: wd.deep }}
+                        style={isSaved ? { backgroundColor: wd.bg, color: '#fff' } : { border: `2px solid ${wd.bg}`, color: paperTone(wd) }}
                       >
                         {isSaved ? <><BookmarkCheck size={15} /> Saved to your playbook</> : <><Bookmark size={15} /> Save this move</>}
                       </button>
@@ -287,7 +294,7 @@ const HowTheyDidIt: React.FC<{ uid?: string; studentSubjects?: string[] }> = ({ 
                     <p className="text-[14px] font-semibold" style={{ color: INK }}>{p.name}</p>
                   </div>
                   <p className="text-[13.5px] leading-relaxed" style={{ color: BODY }}>{p.stealThisMove}</p>
-                  <button onClick={() => open(p)} className="text-[12px] font-semibold mt-1.5" style={{ color: wd.deep }}>Open card →</button>
+                  <button onClick={() => open(p)} className="text-[12px] font-semibold mt-1.5" style={{ color: paperTone(wd) }}>Open card →</button>
                 </div>
               );
             })}

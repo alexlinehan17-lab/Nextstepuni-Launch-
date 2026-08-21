@@ -59,5 +59,16 @@ export const WORLDS = {
 
 export type WorldName = keyof typeof WORLDS;
 
+/**
+ * Ink for coloured text/glyphs sitting directly on `--deck-paper`.
+ *
+ * `deep` is tuned for WHITE paper (5.5-8.8:1) and collapses on the dark deck
+ * paper #242321 (1.79-2.87:1 across all twelve worlds) -- that is what made the
+ * avatar initials unreadable in dark mode. `glow` is the readable tone there
+ * (5.35-7.83:1). Chips on `tint` keep using `deep`: the tint wash stays light
+ * in both themes, so its ink must stay dark.
+ */
+export const paperInk = (w: ColorWorld, dark: boolean): string => (dark ? w.glow : w.deep);
+
 /** Resolve a world by name with a safe fallback. */
 export const world = (name: WorldName): ColorWorld => WORLDS[name] ?? WORLDS.teal;

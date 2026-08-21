@@ -263,6 +263,17 @@ describe('ink on the accent', () => {
   it('overrides inline ink, which a plain rule cannot', () => {
     const block = css.slice(css.indexOf('Ink on the accent'));
     expect(block).toContain('color: var(--ink-on-accent) !important;');
-    expect(block).toContain('[style*="color: white"]');
+    // Anchored: a bare [style*="color: …"] also matches `background-color: …`,
+    // which recoloured children of any element with a white BACKGROUND.
+    expect(block).toContain('[style^="color: white"]');
+    expect(block).toContain('[style*="; color: white"]');
+  });
+
+  it('never matches an inline colour with an unanchored substring', () => {
+    // `[style*="color: X"]` matches `background-color: X` too. Every inline
+    // colour matcher must anchor with ^= or a leading "; ".
+    const withoutComments = css.replace(/\/\*[\s\S]*?\*\//g, '');
+    const unanchored = [...withoutComments.matchAll(/\[style\*="color: [^"]*"\]/g)].map((m) => m[0]);
+    expect(unanchored, `unanchored inline colour matchers: ${unanchored.join(', ')}`).toEqual([]);
   });
 });

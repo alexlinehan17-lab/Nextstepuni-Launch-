@@ -8,7 +8,6 @@ import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { WifiOff, Wifi } from 'lucide-react';
 import { useOnlineStatus } from '../hooks/useOnlineStatus';
-import { COLORS } from '../design/tokens';
 
 const OfflineBanner: React.FC = () => {
   const isOnline = useOnlineStatus();
@@ -46,8 +45,12 @@ const OfflineBanner: React.FC = () => {
           transition={{ duration: 0.3, ease: [0.25, 1, 0.5, 1] }}
           className="fixed top-0 left-0 right-0 z-[200] flex items-center justify-center gap-2 py-2 px-4 text-xs font-medium"
           style={{
-            backgroundColor: isOnline ? COLORS.success : '#D4891C',
-            color: '#fff',
+            // COLORS.success (#3A8D5F) carries white at only 4.07:1, and the
+            // offline amber at 2.84:1. Darkening the green clears it with white;
+            // the amber stays as authored — it is the recognisable warning
+            // colour — and takes dark ink instead, which gives 6.13:1.
+            backgroundColor: isOnline ? '#2F7A50' : '#D4891C',
+            color: isOnline ? '#fff' : 'var(--ink-on-accent)',
           }}
         >
           {isOnline ? (

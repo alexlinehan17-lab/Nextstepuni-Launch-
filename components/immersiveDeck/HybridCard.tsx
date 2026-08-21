@@ -12,7 +12,8 @@
  */
 import React from 'react';
 import { type LucideIcon } from 'lucide-react';
-import { type ColorWorld } from './colorWorlds';
+import { type ColorWorld, paperInk } from './colorWorlds';
+import { useSettingsContext } from '../../contexts/SettingsContext';
 
 export const SERIF = "'Source Serif 4', serif";
 export const INK = 'var(--deck-ink)';
@@ -24,6 +25,12 @@ export const CARD_SHADOW = 'var(--deck-shadow)';
 /** App accent (orange) for primary CTAs. */
 export const ACCENT = '#F26B1F';
 export const ACCENT_DARK = '#B54D14';
+
+/** Ink for a world's coloured glyphs/text on the deck paper -- flips with the theme. */
+export const usePaperInk = (): ((w: ColorWorld) => string) => {
+  const dark = useSettingsContext()?.settings.darkMode ?? false;
+  return React.useCallback((w: ColorWorld) => paperInk(w, dark), [dark]);
+};
 
 /** White card shell — bold border + chunky offset shadow, on the light canvas. */
 export const HybridCard: React.FC<{ children: React.ReactNode; className?: string }> = ({ children, className }) => (
@@ -53,6 +60,9 @@ const blobFor = (seed: string) => BLOBS[(seed ? seed.charCodeAt(0) + seed.length
 /** Line icon (careers) or serif initials (people) over a soft pastel blob — the app's tool-tile icon language. */
 export const BlobIcon: React.FC<{ wd: ColorWorld; icon?: LucideIcon; initials?: string; image?: string; size?: number; seed?: string }> = ({ wd, icon: Icon, initials, image, size = 46, seed }) => {
   const [imgError, setImgError] = React.useState(false);
+  /* The glyph sits on the deck paper, not on a tint chip, so it needs the
+     theme-aware ink -- `wd.deep` is invisible on the dark paper. */
+  const ink = usePaperInk()(wd);
   const showImg = !!image && !imgError;
   return (
     <span className="relative inline-flex items-center justify-center shrink-0" style={{ width: size, height: size }}>
@@ -62,9 +72,9 @@ export const BlobIcon: React.FC<{ wd: ColorWorld; icon?: LucideIcon; initials?: 
       {showImg ? (
         <img src={image} alt="" width={Math.round(size * 0.82)} height={Math.round(size * 0.82)} className="relative object-contain" onError={() => setImgError(true)} />
       ) : Icon ? (
-        <Icon size={Math.round(size * 0.46)} color={wd.deep} strokeWidth={2} className="relative" />
+        <Icon size={Math.round(size * 0.46)} color={ink} strokeWidth={2} className="relative" />
       ) : initials ? (
-        <span className="relative font-bold leading-none" style={{ fontFamily: SERIF, color: wd.deep, fontSize: Math.round(size * 0.34) }}>{initials}</span>
+        <span className="relative font-bold leading-none" style={{ fontFamily: SERIF, color: ink, fontSize: Math.round(size * 0.34) }}>{initials}</span>
       ) : null}
     </span>
   );
@@ -80,13 +90,16 @@ export const Band: React.FC<{
   title?: string;
   subtitle?: string;
   right?: React.ReactNode;
-}> = ({ wd, icon, initials, image, eyebrow, title, subtitle, right }) => (
+}> = ({ wd, icon, initials, image, eyebrow, title, subtitle, right }) => {
+  /* The eyebrow sits on the deck paper, so it needs the theme-aware ink. */
+  const ink = usePaperInk()(wd);
+  return (
   <div className="relative px-6 pt-5 pb-4 bg-[var(--deck-paper)]" style={{ borderBottom: `1px solid ${HAIRLINE}` }}>
     <div className="flex items-start justify-between gap-3">
       <div className="flex items-center gap-3 min-w-0">
         <BlobIcon wd={wd} icon={icon} initials={initials} image={image} size={46} seed={title ?? initials} />
         <div className="min-w-0">
-          {eyebrow && <p className="text-[10px] font-bold uppercase tracking-[0.14em]" style={{ color: wd.deep }}>{eyebrow}</p>}
+          {eyebrow && <p className="text-[10px] font-bold uppercase tracking-[0.14em]" style={{ color: ink }}>{eyebrow}</p>}
           {title && <h2 className="text-[21px] font-semibold leading-tight" style={{ fontFamily: SERIF, color: INK }}>{title}</h2>}
           {subtitle && <p className="text-[12.5px] leading-snug" style={{ color: MUTED }}>{subtitle}</p>}
         </div>
@@ -94,7 +107,8 @@ export const Band: React.FC<{
       {right}
     </div>
   </div>
-);
+  );
+};
 
 /** Primary CTA — the app's orange chunky pill. */
 export const OrangeBtn: React.FC<{ label: string; icon?: LucideIcon; onClick: () => void; className?: string }> = ({ label, icon: Icon, onClick, className }) => (
@@ -117,7 +131,7 @@ export const Eyebrow: React.FC<{ children: React.ReactNode }> = ({ children }) =
 
 /** Light segmented toggle (active pill = colour). */
 export const Segment: React.FC<{ options: { value: string; label: string }[]; value: string; onChange: (v: string) => void; wd: ColorWorld }> = ({ options, value, onChange, wd }) => (
-  <div role="group" className="inline-flex rounded-full p-1" style={{ backgroundColor: '#f0efed' }}>
+  <div role="group" className="inline-flex rounded-full p-1" style={{ backgroundColor: 'var(--deck-soft)' }}>
     {options.map((o) => {
       const active = o.value === value;
       return (

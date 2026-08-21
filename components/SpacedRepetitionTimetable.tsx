@@ -114,6 +114,31 @@ const SUBJECT_HEX: Record<string, string> = {
   'Design & Communication Graphics': '#818cf8',
 };
 
+/**
+ * Which ink to put on a subject's colour.
+ *
+ * The subject palette sits at Tailwind's 500 level, which is mid-luminance:
+ * white text clears AA on only 6 of the 30 subjects and lands as low as 2.2:1
+ * on the yellows. Picking whichever ink has more contrast clears 27 of them.
+ * The three that clear neither (Mathematics, Applied Maths, History — all
+ * mid-violet) still get the better of the two.
+ */
+export function subjectInk(fillHex: string): string {
+  const lin = (v: number) => (v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4));
+  const lum = (hex: string) => {
+    const [r, g, b] = [1, 3, 5].map(i => lin(parseInt(hex.slice(i, i + 2), 16) / 255));
+    return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+  };
+  const against = (ink: string) => {
+    const [a, b] = [lum(ink), lum(fillHex)].sort((x, y) => y - x);
+    return (a + 0.05) / (b + 0.05);
+  };
+  // The token, not the literal. The dark compat layer rewrites an inline
+  // `color: #1A1A1A` onto --ink-primary on the assumption it is legacy
+  // light-mode text, which turns the label near-white on a mid-tone chip.
+  return against('#FFFFFF') >= against('#1A1A1A') ? '#FFFFFF' : 'var(--ink-on-accent)';
+}
+
 function getSubjectHexColor(name: string): string {
   return SUBJECT_HEX[name] || '#71717a';
 }
@@ -193,9 +218,13 @@ const StudyBlockCard: React.FC<{
   ) : (
     <div className="rounded-xl overflow-hidden" style={{ border: `1px solid ${hex}20`, borderRadius: 12 }}>
       {/* Coloured header strip */}
-      <div className="flex items-center justify-between px-3 py-2" style={{ backgroundColor: hex }}>
-        <span className="text-[13px] font-bold text-white truncate">{block.subjectName}</span>
-        <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full flex-shrink-0 ml-2" style={{ backgroundColor: 'rgba(255,255,255,0.2)', color: '#fff' }}>
+      <div className="flex items-center justify-between px-3 py-2" style={{ backgroundColor: hex, color: subjectInk(hex) }}>
+        <span className="text-[13px] font-bold truncate">{block.subjectName}</span>
+        {/* The badge tints the chip it sits on, so the overlay has to move the
+            background AWAY from the ink -- darken under white ink, lighten under
+            dark ink. Tinting toward the ink dropped 17 of the 33 subject
+            colours below 4.5:1. */}
+        <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full flex-shrink-0 ml-2" style={{ backgroundColor: subjectInk(hex) === '#FFFFFF' ? 'rgba(0,0,0,0.18)' : 'rgba(255,255,255,0.30)', color: subjectInk(hex) }}>
           <span className="flex items-center gap-1"><TypeIcon size={10} />{typeConfig.label}</span>
         </span>
       </div>
@@ -210,7 +239,7 @@ const StudyBlockCard: React.FC<{
             <button
               onClick={(e) => { e.stopPropagation(); onStudyNow(); }}
               className="flex items-center gap-1 text-[11px] font-bold px-2.5 py-1 rounded-lg"
-              style={{ backgroundColor: hex, color: '#fff' }}
+              style={{ backgroundColor: hex, color: subjectInk(hex) }}
             >
               Study <ArrowRight size={10} />
             </button>
@@ -962,7 +991,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                             }}
                           >
                             <div className="px-2 py-1.5">
-                              <span className={`text-[11px] font-bold truncate block ${isCompleted ? 'line-through' : ''}`} style={{ color: isCompleted ? '#6B8F71' : '#fff' }}>
+                              <span className={`text-[11px] font-bold truncate block ${isCompleted ? 'line-through' : ''}`} style={{ color: isCompleted ? '#6B8F71' : subjectInk(getSubjectHexColor(block.subjectName)) }}>
                                 {block.subjectName}
                               </span>
                               <span className="text-[9px] block" style={{ color: isCompleted ? '#6B8F71' : 'rgba(255,255,255,0.7)' }}>

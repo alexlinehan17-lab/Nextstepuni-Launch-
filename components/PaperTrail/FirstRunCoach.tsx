@@ -15,7 +15,9 @@ import { X, Check } from 'lucide-react';
 
 const INK = '#1a1a1a';
 const ACCENT = '#F26B1F';
-const SUCCESS = '#3A8D5F';
+/* Brand green is #3A8D5F, but white text only reaches 4.07:1 on it, so the
+   badge uses the deeper tone (5.22:1). */
+const SUCCESS_DEEP = '#2F7A50';
 
 const DISMISS_KEY = (uid?: string) => `pt:coachDismissed:${uid || 'anon'}`;
 
@@ -80,11 +82,15 @@ const FirstRunCoach: React.FC<Props> = ({ uid, steps }) => {
               <span
                 className="shrink-0 mt-0.5 w-5 h-5 rounded-full flex items-center justify-center text-[11px] font-bold"
                 style={
+                  /* All three states are 11px, so they need the full 4.5:1.
+                     White fails on both brand fills (4.07 on the green, 3.04 on
+                     the orange) and the label grey was 2.23 on the pending
+                     chip. */
                   s.done
-                    ? { backgroundColor: SUCCESS, color: '#fff', fontFamily: "'Source Serif 4', serif" }
+                    ? { backgroundColor: SUCCESS_DEEP, color: '#fff', fontFamily: "'Source Serif 4', serif" }
                     : isNext
-                      ? { backgroundColor: ACCENT, color: '#fff', fontFamily: "'Source Serif 4', serif" }
-                      : { backgroundColor: '#e0dbd4', color: '#9e9186', fontFamily: "'Source Serif 4', serif" }
+                      ? { backgroundColor: ACCENT, color: 'var(--ink-on-accent)', fontFamily: "'Source Serif 4', serif" }
+                      : { backgroundColor: '#e0dbd4', color: '#5C544E', fontFamily: "'Source Serif 4', serif" }
                 }
               >
                 {s.done ? <Check size={12} /> : i + 1}

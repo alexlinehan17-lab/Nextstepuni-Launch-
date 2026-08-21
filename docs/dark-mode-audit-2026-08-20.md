@@ -424,3 +424,73 @@ The 12 are white on the world `mid` used as a button fill, 3.05–4.20:1, left a
 Alex's explicit call. It cannot be fixed by changing the ink — the mids are
 mid-luminance, so neither white nor dark ink clears AA on all five. Clearing it
 needs the fill darkened, which is a visible design change in both themes.
+
+---
+
+## Innovation Zone tool sweep — 21 August 2026
+
+Swept the **16 shipping tools**. The six Workshop/WIP tools (`diagram-vault`,
+`answer-architect`, `definition-drill`, `oral-trainer`, `examiners-chair`,
+`coursework-companion`) are parked out of the main grid and were excluded.
+
+Method: a compositing contrast scanner run over every rendered text node.
+The earlier version skipped translucent backgrounds and read through to an
+opaque ancestor, which both hid real failures (a 12%-black badge over a blue
+chip) and invented false ones (an 80%-alpha dark toast over a light card).
+Compositing every layer outward fixed both.
+
+### Result
+
+| | dark | light |
+|---|---|---|
+| before | 9 tools / 121 failures | 8 tools / 81 failures |
+| after | **1 tool / 1 failure** | **3 tools / 4 failures**, all 4.37–4.49 |
+
+The 4 remaining light findings are `#78716c` and `#766e67` on tinted cards,
+within 0.13 of AA — inside the tolerance already accepted for the world CTAs.
+
+### Root causes
+
+1. **Your Possible Life was never wearing `immersive-deck-theme`.** It is the
+   third colour-world deck but hard-coded its own paper/ink, so the dark compat
+   layer forced near-white ink onto near-white paper — **1.04:1 on all twelve
+   value labels**. Migrated onto the deck tokens; added `--deck-accent-text`
+   because the brand orange is a fill (2.9:1 on white) and was being used as
+   label text.
+
+2. **`ColorWorld.deep` is tuned for white paper.** On the dark deck paper
+   `#242321` all twelve worlds land at 1.79–2.87:1. `glow` is the readable tone
+   there (5.35–7.83:1). Added `paperInk()` / `usePaperInk()` and applied it at
+   the sites where `deep` sits on paper — chips on `tint` keep `deep`, since the
+   tint wash stays light in both themes.
+
+3. **Remapping an ink without its fill.** The Journey phase chip paints its own
+   `#D8E4DA` background; the ink remap flipped `#3F6A5E` light while the fill
+   stayed light → 1.23:1. A general `:not([style*="background"])` guard was tried
+   and **reverted** — it broke the opposite case, where College Compass and
+   Points Passport rely on fill and ink being remapped *together* (that regressed
+   8 tools to dark-on-dark). The rule is: **remap both or neither.**
+
+4. **Overlay tinted toward the ink.** The timetable's type badge overlays
+   `rgba(0,0,0,0.12)` on the subject chip — darkening the surface under dark
+   ink. The overlay must move the background *away* from the ink: 17 of 33
+   subject colours failed, 0 after.
+
+5. **Fill tones used as text**, again: `CYCLE_META.accent` in Year Plans
+   (2.49–3.68:1 in light, 3.88–4.38:1 in dark) and `#9E9186` / `#7A7068`
+   arriving through `--mb-label` / `--deck-label`, which the attribute-based
+   light remap cannot reach because they come from `var()`.
+
+### Not changed — needs a design call
+
+White on the world identity colours fails in **both** themes for 7 of the 12
+worlds: teal 3.16, pine 3.30, terracotta 3.42, forest 3.49, denim 3.53,
+rose 4.03, rust 4.13. `--ink-on-accent` is better on five of them (4.93–5.51)
+but that flips the deck header bands from white text to near-black, which is a
+deliberate part of the deck design language. Left as-is pending a decision.
+
+### Regression guard
+
+`test/darkModeTokens.test.ts` now fails the build on any unanchored
+`[style*="color: …"]` matcher — the substring bug that recoloured children of
+white-background elements three separate times this session.

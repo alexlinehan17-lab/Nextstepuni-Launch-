@@ -177,35 +177,56 @@
  * authored illustration colours remain untouched, while paper, ink and rules
  * are remapped to the same accessible dark system as the newer screens.
  */
-.dark :is(.product-shell, .theme-compat) [style*="color: rgb(26, 26, 26)"],
-.dark :is(.product-shell, .theme-compat) [style*="color: rgb(31, 27, 23)"],
-.dark :is(.product-shell, .theme-compat) [style*="color: rgb(28, 25, 23)"],
-.dark :is(.product-shell, .theme-compat) [style*="color: #1a1a1a" i],
-.dark :is(.product-shell, .theme-compat) [style*="color: #1f1b17" i],
+.dark :is(.product-shell, .theme-compat) [style^="color: rgb(26, 26, 26)"],
+.dark :is(.product-shell, .theme-compat) [style*="; color: rgb(26, 26, 26)"],
+.dark :is(.product-shell, .theme-compat) [style^="color: rgb(31, 27, 23)"],
+.dark :is(.product-shell, .theme-compat) [style*="; color: rgb(31, 27, 23)"],
+.dark :is(.product-shell, .theme-compat) [style^="color: rgb(28, 25, 23)"],
+.dark :is(.product-shell, .theme-compat) [style*="; color: rgb(28, 25, 23)"],
+.dark :is(.product-shell, .theme-compat) [style^="color: #1a1a1a" i],
+.dark :is(.product-shell, .theme-compat) [style*="; color: #1a1a1a" i],
+.dark :is(.product-shell, .theme-compat) [style^="color: #1f1b17" i],
+.dark :is(.product-shell, .theme-compat) [style*="; color: #1f1b17" i],
 .dark :is(.product-shell, .theme-compat) [class*="text-[#1A1A1A]"],
 .dark :is(.product-shell, .theme-compat) [class*="text-[#1a1a1a]"] {
   color: var(--ink-primary) !important;
 }
 
-.dark :is(.product-shell, .theme-compat) [style*="color: rgb(92, 84, 74)"],
-.dark :is(.product-shell, .theme-compat) [style*="color: rgb(58, 53, 48)"],
-.dark :is(.product-shell, .theme-compat) [style*="color: rgb(120, 113, 108)"],
-.dark :is(.product-shell, .theme-compat) [style*="color: #3a3530" i],
-.dark :is(.product-shell, .theme-compat) [style*="color: #5c544a" i] {
+.dark :is(.product-shell, .theme-compat) [style^="color: rgb(92, 84, 74)"],
+.dark :is(.product-shell, .theme-compat) [style*="; color: rgb(92, 84, 74)"],
+.dark :is(.product-shell, .theme-compat) [style^="color: rgb(58, 53, 48)"],
+.dark :is(.product-shell, .theme-compat) [style*="; color: rgb(58, 53, 48)"],
+.dark :is(.product-shell, .theme-compat) [style^="color: rgb(120, 113, 108)"],
+.dark :is(.product-shell, .theme-compat) [style*="; color: rgb(120, 113, 108)"],
+.dark :is(.product-shell, .theme-compat) [style^="color: #3a3530" i],
+.dark :is(.product-shell, .theme-compat) [style*="; color: #3a3530" i],
+.dark :is(.product-shell, .theme-compat) [style^="color: #5c544a" i],
+.dark :is(.product-shell, .theme-compat) [style*="; color: #5c544a" i] {
   color: var(--ink-secondary) !important;
 }
 
-.dark :is(.product-shell, .theme-compat) [style*="color: rgb(90, 85, 80)"],
-.dark :is(.product-shell, .theme-compat) [style*="color: #5a5550" i],
-.dark :is(.product-shell, .theme-compat) [style*="color: rgb(142, 131, 120)"],
-.dark :is(.product-shell, .theme-compat) [style*="color: rgb(158, 145, 134)"],
+.dark :is(.product-shell, .theme-compat) [style^="color: rgb(90, 85, 80)"],
+.dark :is(.product-shell, .theme-compat) [style*="; color: rgb(90, 85, 80)"],
+.dark :is(.product-shell, .theme-compat) [style^="color: #5a5550" i],
+.dark :is(.product-shell, .theme-compat) [style*="; color: #5a5550" i],
+.dark :is(.product-shell, .theme-compat) [style^="color: rgb(142, 131, 120)"],
+.dark :is(.product-shell, .theme-compat) [style*="; color: rgb(142, 131, 120)"],
+.dark :is(.product-shell, .theme-compat) [style^="color: rgb(158, 145, 134)"],
+.dark :is(.product-shell, .theme-compat) [style*="; color: rgb(158, 145, 134)"],
 .dark :is(.product-shell, .theme-compat) [class*="text-[#78716C]"],
-.dark :is(.product-shell, .theme-compat) [style*="color: #8e8378" i] {
+.dark :is(.product-shell, .theme-compat) [style^="color: #8e8378" i],
+.dark :is(.product-shell, .theme-compat) [style*="; color: #8e8378" i] {
   color: var(--ink-muted) !important;
 }
 
-.dark :is(.product-shell, .theme-compat) [style*="color: rgba(0, 0, 0"],
-.dark :is(.product-shell, .theme-compat) [style*="color: rgba(26, 26, 26"] {
+/* Anchored: `[style*="color: …"]` also matches `background-color: …`, so the
+   unanchored form was recolouring anything with an rgba BACKGROUND — which
+   is how a chip with `background-color: rgba(0, 0, 0, 0.12)` handed its
+   children --ink-secondary and overrode the ink the component had set. */
+.dark :is(.product-shell, .theme-compat) [style^="color: rgba(0, 0, 0"],
+.dark :is(.product-shell, .theme-compat) [style*="; color: rgba(0, 0, 0"],
+.dark :is(.product-shell, .theme-compat) [style^="color: rgba(26, 26, 26"],
+.dark :is(.product-shell, .theme-compat) [style*="; color: rgba(26, 26, 26"] {
   color: var(--ink-secondary) !important;
 }
 
@@ -418,8 +439,15 @@
     [style*="background: rgb(242, 107, 31)"]) :where(
       .text-white, .text-orange-50, .text-orange-100,
       [class*="text-[#FDF8F0]"], [class*="text-[#FFFFFF]"], [class*="text-[#fff]"],
-      [style*="color: white"], [style*="color: rgb(255, 255, 255)"],
-      [style*="color: rgb(253, 248, 240)"]) {
+      /* Anchored for the same reason as above: an unanchored `color:` matcher
+         also matches `background-color:`, so a child with a white BACKGROUND
+         inside the button would have had its text recoloured. */
+      [style^="color: white"], [style*="; color: white"],
+      [style^="color: rgb(255, 255, 255)"], [style*="; color: rgb(255, 255, 255)"],
+      [style^="color: rgb(253, 248, 240)"], [style*="; color: rgb(253, 248, 240)"],
+      [style^="color: rgb(253, 233, 221)"], [style*="; color: rgb(253, 233, 221)"],
+      [style^="color: rgba(255, 255, 255"], [style*="; color: rgba(255, 255, 255"],
+      [class*="text-[#FDE9DD]"], [class*="text-[#fde9dd]"]) {
   color: var(--ink-on-accent) !important;
 }
 
@@ -447,6 +475,54 @@ html:not(.dark) [style*="; color: rgb(176, 168, 152)"],
 html:not(.dark) [class*="text-[#b0a898]"],
 html:not(.dark) [class*="text-[#B0A898]"] {
   color: var(--ink-faint) !important;
+}
+
+/*
+ * The rest of the legacy light greys, found by sweeping the Innovation Zone
+ * tools: stone-500 #78716c (4.46), #bfbfba (1.78), #a39a91 (2.66), #9a9590
+ * (2.78) and #8e8378 (3.12). All are muted/label text, so they land on the
+ * same step of the ink scale.
+ */
+html:not(.dark) [style^="color: rgb(120, 113, 108)"],
+html:not(.dark) [style*="; color: rgb(120, 113, 108)"],
+html:not(.dark) [style^="color: rgb(191, 191, 186)"],
+html:not(.dark) [style*="; color: rgb(191, 191, 186)"],
+html:not(.dark) [style^="color: rgb(163, 154, 145)"],
+html:not(.dark) [style*="; color: rgb(163, 154, 145)"],
+html:not(.dark) [style^="color: rgb(154, 149, 144)"],
+html:not(.dark) [style*="; color: rgb(154, 149, 144)"],
+html:not(.dark) [style^="color: rgb(142, 131, 120)"],
+html:not(.dark) [style*="; color: rgb(142, 131, 120)"],
+html:not(.dark) [class*="text-[#8e8378]"],
+html:not(.dark) [class*="text-[#8E8378]"],
+html:not(.dark) [class*="text-[#a39a91]"],
+html:not(.dark) [class*="text-[#A39A91]"],
+html:not(.dark) [class*="text-[#9a9590]"],
+html:not(.dark) [class*="text-[#9A9590]"],
+/* zinc-300 is #BFBFBA on this scale -- 1.78:1 as label text. */
+html:not(.dark) [class~="text-zinc-300"] {
+  color: var(--page-muted) !important;
+}
+
+/*
+ * Semantic accents used as TEXT. Each is a fill tone: on the light canvas the
+ * terracotta measured 2.91, the amber 2.67 and emerald-600 3.53. The fills are
+ * untouched -- these matchers only fire on a `color:` declaration.
+ */
+html:not(.dark) [style^="color: rgb(204, 120, 92)"],
+html:not(.dark) [style*="; color: rgb(204, 120, 92)"] {
+  color: #A94F32 !important;
+}
+
+html:not(.dark) [style^="color: rgb(196, 135, 59)"],
+html:not(.dark) [style*="; color: rgb(196, 135, 59)"] {
+  color: var(--warning-text) !important;
+}
+
+html:not(.dark) [style^="color: rgb(5, 150, 105)"],
+html:not(.dark) [style*="; color: rgb(5, 150, 105)"],
+html:not(.dark) [class*="text-emerald-600"] {
+  color: #05704F !important;
 }
 
 html:not(.dark) [style^="color: rgb(122, 112, 104)"],
@@ -560,6 +636,116 @@ html:not(.dark) [style*="; color: rgb(160, 151, 141)"],
 html:not(.dark) [class*="text-[#a0978d]"],
 html:not(.dark) [class*="text-[#A0978D]"] {
   color: var(--page-label) !important;
+}
+
+/*
+ * Innovation Zone tools, swept August 2026.
+ *
+ * The tools are the last surface the sweep reached, and they carry the light
+ * palette's tint inks and tint surfaces as literals. On the dark tints those
+ * inks land at 1.75-2.26:1; where a light tint surface survived, dark-mode type
+ * on it measured as low as 1.02:1.
+ *
+ * The immersive decks are excluded on purpose. How They Did It, Career Paths and
+ * Your Possible Life use colour-as-environment deliberately and keep a light
+ * card in dark mode; folding their surfaces onto the dark tokens would destroy
+ * the thing they are.
+ */
+
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[style^="color: rgb(140, 58, 14)"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[style*="; color: rgb(140, 58, 14)"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[class*="text-[#8c3a0e]"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[class*="text-[#8C3A0E]"] {
+  color: var(--accent-tint-ink) !important;
+}
+
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[style^="color: rgb(31, 95, 62)"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[style*="; color: rgb(31, 95, 62)"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[class*="text-[#1f5f3e]"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[class*="text-[#1F5F3E]"] {
+  color: var(--success-tint-ink) !important;
+}
+
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[style^="color: rgb(74, 107, 79)"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[style*="; color: rgb(74, 107, 79)"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[class*="text-[#4a6b4f]"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[class*="text-[#4A6B4F]"] {
+  color: var(--success-tint-ink) !important;
+}
+
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[style^="color: rgb(58, 90, 69)"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[style*="; color: rgb(58, 90, 69)"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[class*="text-[#3a5a45]"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[class*="text-[#3A5A45]"] {
+  color: var(--success-tint-ink) !important;
+}
+
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[style^="color: rgb(122, 112, 104)"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[style*="; color: rgb(122, 112, 104)"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[class*="text-[#7a7068]"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[class*="text-[#7A7068]"] {
+  color: var(--ink-muted) !important;
+}
+
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[style^="color: rgb(129, 121, 112)"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[style*="; color: rgb(129, 121, 112)"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[class*="text-[#817970]"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[class*="text-[#817970]"] {
+  color: var(--ink-muted) !important;
+}
+
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[style^="color: rgb(32, 32, 31)"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[style*="; color: rgb(32, 32, 31)"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[class*="text-[#20201f]"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[class*="text-[#20201F]"] {
+  color: var(--ink-primary) !important;
+}
+
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[style*="background: rgb(232, 242, 236)"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[style*="background-color: rgb(232, 242, 236)"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[class*="bg-[#e8f2ec]"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[class*="bg-[#E8F2EC]"] {
+  background-color: var(--success-tint) !important;
+}
+
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[style*="background: rgb(255, 244, 236)"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[style*="background-color: rgb(255, 244, 236)"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[class*="bg-[#fff4ec]"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[class*="bg-[#FFF4EC]"] {
+  background-color: var(--accent-tint) !important;
+}
+
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[style*="background: rgb(232, 237, 230)"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[style*="background-color: rgb(232, 237, 230)"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[class*="bg-[#e8ede6]"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[class*="bg-[#E8EDE6]"] {
+  background-color: var(--surface-soft) !important;
+}
+
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[style*="background: rgb(241, 243, 242)"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[style*="background-color: rgb(241, 243, 242)"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[class*="bg-[#f1f3f2]"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[class*="bg-[#F1F3F2]"] {
+  background-color: var(--surface-soft) !important;
+}
+
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[style*="background: rgb(234, 243, 236)"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[style*="background-color: rgb(234, 243, 236)"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[class*="bg-[#eaf3ec]"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[class*="bg-[#EAF3EC]"],
+/* Journey's phase chip (#D8E4DA fill / #3F6A5E ink). Its ink is remapped just
+   below, so the fill MUST be remapped with it -- remapping one and not the
+   other is what leaves light-on-light or dark-on-dark. */
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[style*="background: rgb(216, 228, 218)"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[style*="background-color: rgb(216, 228, 218)"] {
+  background-color: var(--success-tint) !important;
+}
+
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[style^="color: rgb(63, 106, 94)"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[style*="; color: rgb(63, 106, 94)"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[class*="text-[#3f6a5e]"],
+.dark :is(.product-shell, .theme-compat) :not(.immersive-deck-theme):not(.immersive-deck-theme *)[class*="text-[#3F6A5E]"] {
+  color: var(--success-tint-ink) !important;
 }
 
 /* Disabled content must still be readable; opacity compounds badly on dark. */
@@ -764,8 +950,12 @@ html:not(.dark) [class*="text-[#A0978D]"] {
   --mb-plate: #F0FAF8;
   --mb-ink: #1A1A1A;
   --mb-ink-2: #3A3530;
-  --mb-muted: #7A7068;
-  --mb-label: #9E9186;
+  /* Both measured under 4.5:1 on the mark-bank surfaces (#9E9186 was 2.69-3.07,
+     #7A7068 was 4.24-4.32). These reach the ink scale the rest of light mode
+     uses. The attribute remap above cannot catch them -- they arrive through
+     var(), not an inline style or a Tailwind class. */
+  --mb-muted: #69605A;
+  --mb-label: #766A5F;
   --mb-border: #D0CDC8;
   --mb-hairline: #ECE9E4;
   --mb-success: #3A8D5F;
@@ -807,9 +997,12 @@ html:not(.dark) [class*="text-[#A0978D]"] {
   --deck-ink: #1A1A1A;
   --deck-body: #3A3530;
   --deck-muted: #7A7068;
-  --deck-label: #9E9186;
+  --deck-label: #766A5F;
   --deck-hairline: #DDD8D1;
   --deck-shadow: 4px 5px 0 0 #1A1A1A;
+  /* Accent used as TEXT on deck paper. The brand orange is a FILL colour --
+     it only reaches 2.9:1 on white, so text needs its own darker tone. */
+  --deck-accent-text: #B84A0C;
 }
 
 .dark .immersive-deck-theme {
@@ -821,6 +1014,7 @@ html:not(.dark) [class*="text-[#A0978D]"] {
   --deck-label: #AAA096;
   --deck-hairline: #56514B;
   --deck-shadow: 4px 5px 0 0 #080808;
+  --deck-accent-text: #F58C4E;
 }
 
 @media (prefers-reduced-motion: reduce) {

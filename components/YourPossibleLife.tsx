@@ -21,11 +21,21 @@ import {
 type Stage = 'priorities' | 'possibilities' | 'day' | 'reflection' | 'route';
 const STAGES: Stage[] = ['priorities', 'possibilities', 'day', 'reflection', 'route'];
 const STAGE_NAMES = ['What matters', 'Three possibilities', 'An ordinary day', 'Your reaction', 'Keep a door open'];
-const INK = '#20201f';
-const PAPER = '#fffdfa';
-const MUTED = '#817970';
+/* This is the third immersive colour-world deck (with How They Did It and
+   Career Paths). It reads from the shared `.immersive-deck-theme` tokens so
+   the paper flips to warm charcoal in dark mode instead of being repainted by
+   the dark compat layer -- which previously forced near-white ink onto the
+   hard-coded near-white paper and made every label invisible (1.04:1). */
+const INK = 'var(--deck-ink)';
+const PAPER = 'var(--deck-paper)';
+const MUTED = 'var(--deck-muted)';
+const HAIRLINE = 'var(--deck-hairline)';
+const CREAM = 'var(--deck-soft)';
+/* ORANGE is a FILL. For text on paper use ACCENT_TEXT -- the brand orange is
+   only 2.9:1 on white, so it fails as body/label text in BOTH themes. */
 const ORANGE = '#ff681f';
-const CREAM = '#f6eee5';
+const ACCENT_TEXT = 'var(--deck-accent-text)';
+const ON_ACCENT = 'var(--ink-on-accent)';
 const SERIF = '"Source Serif 4", Georgia, serif';
 
 const coursesFor = (career: CareerCard): CAOCourse[] => CAO_COURSES
@@ -34,16 +44,16 @@ const coursesFor = (career: CareerCard): CAOCourse[] => CAO_COURSES
 
 const Button: React.FC<React.ButtonHTMLAttributes<HTMLButtonElement> & { secondary?: boolean }> = ({ secondary, children, className = '', ...props }) => (
   <button {...props} className={`min-h-[52px] rounded-2xl px-6 font-bold transition-transform active:translate-y-1 disabled:opacity-40 ${className}`}
-    style={{ color: secondary ? INK : '#fff', background: secondary ? PAPER : ORANGE, border: `2px solid ${INK}`, boxShadow: secondary ? 'none' : `5px 6px 0 ${INK}` }}>{children}</button>
+    style={{ color: secondary ? INK : ON_ACCENT, background: secondary ? PAPER : ORANGE, border: `2px solid ${INK}`, boxShadow: secondary ? 'none' : `5px 6px 0 ${INK}` }}>{children}</button>
 );
 
 const Shell: React.FC<{ stage: Stage; back?: () => void; children: React.ReactNode }> = ({ stage, back, children }) => {
   const index = STAGES.indexOf(stage);
-  return <div className="w-full max-w-6xl mx-auto pb-16 px-3 sm:px-5">
-    <header className="flex items-center justify-between gap-5 py-5 border-b" style={{ borderColor: '#ddd6cf' }}>
+  return <div className="immersive-deck-theme w-full max-w-6xl mx-auto pb-16 px-3 sm:px-5">
+    <header className="flex items-center justify-between gap-5 py-5 border-b" style={{ borderColor: HAIRLINE }}>
       <div className="flex items-center gap-4 min-w-0">
         {back && <button onClick={back} aria-label="Back" className="w-11 h-11 rounded-xl grid place-items-center shrink-0" style={{ border: `2px solid ${INK}`, color: INK }}><ArrowLeft size={19}/></button>}
-        <div><div className="text-[11px] tracking-[.24em] uppercase font-bold" style={{ color: ORANGE }}>Your Possible Life</div><div className="text-sm" style={{ color: MUTED }}>Possibilities, not predictions.</div></div>
+        <div><div className="text-[11px] tracking-[.24em] uppercase font-bold" style={{ color: ACCENT_TEXT }}>Your Possible Life</div><div className="text-sm" style={{ color: MUTED }}>Possibilities, not predictions.</div></div>
       </div>
       <div className="text-right shrink-0"><div className="font-mono text-xs font-bold" style={{ color: INK }}>0{index + 1} / 05</div><div className="hidden sm:block text-xs mt-1" style={{ color: MUTED }}>{STAGE_NAMES[index]}</div></div>
     </header>
@@ -53,7 +63,7 @@ const Shell: React.FC<{ stage: Stage; back?: () => void; children: React.ReactNo
 
 const CareerArtwork: React.FC<{ career: CareerCard; large?: boolean }> = ({ career, large }) => career.image
   ? <img src={`/${career.image}`} alt="" className={`${large ? 'w-44 h-44' : 'w-28 h-28'} object-contain`} />
-  : <div className={`${large ? 'w-44 h-44 text-8xl' : 'w-28 h-28 text-6xl'} rounded-[42%_58%_52%_48%] grid place-items-center`} style={{ background: '#dcebe4', color: INK, fontFamily: SERIF }}>{career.title.charAt(0)}</div>;
+  : <div className={`${large ? 'w-44 h-44 text-8xl' : 'w-28 h-28 text-6xl'} rounded-[42%_58%_52%_48%] grid place-items-center`} style={{ background: '#dcebe4', color: ON_ACCENT, fontFamily: SERIF }}>{career.title.charAt(0)}</div>;
 
 const YourPossibleLife: React.FC<{ uid?: string; profile: StudentSubjectProfile }> = ({ uid, profile }) => {
   const { futureFinderPicks } = useInnovationData();
@@ -78,9 +88,9 @@ const YourPossibleLife: React.FC<{ uid?: string; profile: StudentSubjectProfile 
   const togglePriority = (priority: LifePriority) => setPriorities((old) => old.includes(priority) ? old.filter((item) => item !== priority) : old.length < 5 ? [...old, priority] : old);
   const choose = (id: string) => { setCareerId(id); setSavedNow(false); markSeen(id); persist({ careerId: id, selectedCareerIds: possibilities.map((item) => item.id), priorities }); setStage('day'); };
 
-  if (stage === 'priorities') return <Shell stage={stage}><section className="py-12 sm:py-20 grid lg:grid-cols-[.8fr_1.2fr] gap-10 lg:gap-20 items-start"><div><div className="font-mono text-sm font-bold mb-5" style={{ color: ORANGE }}>01 — BEFORE THE JOB TITLE</div><h1 className="text-5xl sm:text-7xl leading-[.94]" style={{ fontFamily: SERIF, color: INK }}>What should your future make room for?</h1><p className="mt-6 text-lg leading-relaxed max-w-lg" style={{ color: MUTED }}>Choose three to five things. There is no perfect combination, and we will not turn it into a personality score.</p></div><div className="grid sm:grid-cols-2 gap-3">{LIFE_PRIORITIES.map((priority, index) => { const active = priorities.includes(priority); return <button key={priority} onClick={() => togglePriority(priority)} className="min-h-[82px] rounded-2xl px-5 flex items-center justify-between text-left transition-transform active:scale-[.99]" style={{ border: `2px solid ${active ? INK : '#d9d2cb'}`, background: active ? CREAM : PAPER, color: INK }}><span><span className="font-mono text-[11px] mr-3" style={{ color: ORANGE }}>{String(index + 1).padStart(2, '0')}</span><span className="text-lg font-bold">{PRIORITY_LABELS[priority]}</span></span>{active && <Check size={20} color={ORANGE}/>}</button>; })}<div className="sm:col-span-2 flex items-center justify-between mt-5"><span className="text-sm" style={{ color: MUTED }}>{priorities.length}/5 chosen</span><Button disabled={priorities.length < 3} onClick={() => { persist({ priorities, selectedCareerIds: possibilities.map((item) => item.id) }); setStage('possibilities'); }}>Meet three possibilities <ArrowRight className="inline ml-2" size={18}/></Button></div></div></section></Shell>;
+  if (stage === 'priorities') return <Shell stage={stage}><section className="py-12 sm:py-20 grid lg:grid-cols-[.8fr_1.2fr] gap-10 lg:gap-20 items-start"><div><div className="font-mono text-sm font-bold mb-5" style={{ color: ACCENT_TEXT }}>01 — BEFORE THE JOB TITLE</div><h1 className="text-5xl sm:text-7xl leading-[.94]" style={{ fontFamily: SERIF, color: INK }}>What should your future make room for?</h1><p className="mt-6 text-lg leading-relaxed max-w-lg" style={{ color: MUTED }}>Choose three to five things. There is no perfect combination, and we will not turn it into a personality score.</p></div><div className="grid sm:grid-cols-2 gap-3">{LIFE_PRIORITIES.map((priority, index) => { const active = priorities.includes(priority); return <button key={priority} onClick={() => togglePriority(priority)} className="min-h-[82px] rounded-2xl px-5 flex items-center justify-between text-left transition-transform active:scale-[.99]" style={{ border: `2px solid ${active ? INK : HAIRLINE}`, background: active ? CREAM : PAPER, color: INK }}><span><span className="font-mono text-[11px] mr-3" style={{ color: ACCENT_TEXT }}>{String(index + 1).padStart(2, '0')}</span><span className="text-lg font-bold">{PRIORITY_LABELS[priority]}</span></span>{active && <Check size={20} color={ACCENT_TEXT}/>}</button>; })}<div className="sm:col-span-2 flex items-center justify-between mt-5"><span className="text-sm" style={{ color: MUTED }}>{priorities.length}/5 chosen</span><Button disabled={priorities.length < 3} onClick={() => { persist({ priorities, selectedCareerIds: possibilities.map((item) => item.id) }); setStage('possibilities'); }}>Meet three possibilities <ArrowRight className="inline ml-2" size={18}/></Button></div></div></section></Shell>;
 
-  if (stage === 'possibilities') return <Shell stage={stage} back={() => setStage('priorities')}><section className="py-12"><div className="max-w-3xl mb-10"><div className="font-mono text-sm font-bold mb-4" style={{ color: ORANGE }}>THREE DOORS, NOT A PODIUM</div><h1 className="text-4xl sm:text-6xl" style={{ fontFamily: SERIF, color: INK }}>Different futures can protect the same things.</h1><p className="mt-4 text-lg" style={{ color: MUTED }}>One close match, one adjacent possibility and one route you may not have considered. None is labelled “best”.</p></div><div className="grid lg:grid-cols-3 gap-5">{possibilities.map((item, index) => <article key={item.id} className="rounded-[28px] p-6 flex flex-col min-h-[520px]" style={{ background: PAPER, border: `2px solid ${INK}`, boxShadow: `7px 8px 0 ${INK}` }}><div className="font-mono text-sm font-bold" style={{ color: ORANGE }}>0{index + 1}</div><div className="my-8 flex justify-center"><CareerArtwork career={item}/></div><h2 className="text-3xl" style={{ fontFamily: SERIF, color: INK }}>{item.title}</h2><p className="mt-2 min-h-[52px]" style={{ color: MUTED }}>{item.tagline}</p><div className="mt-5 pt-5 border-t text-sm leading-relaxed flex-1" style={{ borderColor: '#ddd6cf', color: INK }}>{item.whatYouDo[0]}</div><Button onClick={() => choose(item.id)} className="w-full mt-6">Step inside <ArrowRight className="inline ml-2" size={17}/></Button></article>)}</div></section></Shell>;
+  if (stage === 'possibilities') return <Shell stage={stage} back={() => setStage('priorities')}><section className="py-12"><div className="max-w-3xl mb-10"><div className="font-mono text-sm font-bold mb-4" style={{ color: ACCENT_TEXT }}>THREE DOORS, NOT A PODIUM</div><h1 className="text-4xl sm:text-6xl" style={{ fontFamily: SERIF, color: INK }}>Different futures can protect the same things.</h1><p className="mt-4 text-lg" style={{ color: MUTED }}>One close match, one adjacent possibility and one route you may not have considered. None is labelled “best”.</p></div><div className="grid lg:grid-cols-3 gap-5">{possibilities.map((item, index) => <article key={item.id} className="rounded-[28px] p-6 flex flex-col min-h-[520px]" style={{ background: PAPER, border: `2px solid ${INK}`, boxShadow: `7px 8px 0 ${INK}` }}><div className="font-mono text-sm font-bold" style={{ color: ACCENT_TEXT }}>0{index + 1}</div><div className="my-8 flex justify-center"><CareerArtwork career={item}/></div><h2 className="text-3xl" style={{ fontFamily: SERIF, color: INK }}>{item.title}</h2><p className="mt-2 min-h-[52px]" style={{ color: MUTED }}>{item.tagline}</p><div className="mt-5 pt-5 border-t text-sm leading-relaxed flex-1" style={{ borderColor: HAIRLINE, color: INK }}>{item.whatYouDo[0]}</div><Button onClick={() => choose(item.id)} className="w-full mt-6">Step inside <ArrowRight className="inline ml-2" size={17}/></Button></article>)}</div></section></Shell>;
 
   if (stage === 'day') {
     const day = possibleDayFor(career);
@@ -89,7 +99,7 @@ const YourPossibleLife: React.FC<{ uid?: string; profile: StudentSubjectProfile 
       <Shell stage={stage} back={() => setStage('possibilities')}>
         <section className="py-12 grid lg:grid-cols-[1.2fr_.8fr] gap-12">
           <div>
-            <div className="font-mono text-sm font-bold mb-4" style={{ color: ORANGE }}>
+            <div className="font-mono text-sm font-bold mb-4" style={{ color: ACCENT_TEXT }}>
               ONE PLAUSIBLE TUESDAY
             </div>
             <div className="flex items-start justify-between gap-5">
@@ -109,9 +119,9 @@ const YourPossibleLife: React.FC<{ uid?: string; profile: StudentSubjectProfile 
                 <div
                   key={beat.time}
                   className="grid sm:grid-cols-[90px_1fr] gap-3 py-7 border-b"
-                  style={{ borderColor: '#d9d2cb' }}
+                  style={{ borderColor: HAIRLINE }}
                 >
-                  <span className="font-mono font-bold" style={{ color: ORANGE }}>{beat.time}</span>
+                  <span className="font-mono font-bold" style={{ color: ACCENT_TEXT }}>{beat.time}</span>
                   <div>
                     <h3 className="text-2xl" style={{ fontFamily: SERIF, color: INK }}>{beat.title}</h3>
                     <p className="mt-2 leading-relaxed" style={{ color: MUTED }}>{beat.detail}</p>
@@ -125,22 +135,22 @@ const YourPossibleLife: React.FC<{ uid?: string; profile: StudentSubjectProfile 
 
             <div className="mt-10 grid sm:grid-cols-2 gap-7">
               <div className="border-t-2 pt-5" style={{ borderColor: INK }}>
-                <div className="font-mono text-xs font-bold mb-3" style={{ color: ORANGE }}>
+                <div className="font-mono text-xs font-bold mb-3" style={{ color: ACCENT_TEXT }}>
                   THE WORK IN PLAIN ENGLISH
                 </div>
                 {career.whatYouDo.slice(0, 3).map((item) => (
-                  <p key={item} className="py-3 border-b leading-relaxed" style={{ borderColor: '#ddd6cf', color: MUTED }}>
+                  <p key={item} className="py-3 border-b leading-relaxed" style={{ borderColor: HAIRLINE, color: MUTED }}>
                     {item}
                   </p>
                 ))}
               </div>
               <div className="border-t-2 pt-5" style={{ borderColor: INK }}>
-                <div className="font-mono text-xs font-bold mb-3" style={{ color: ORANGE }}>
+                <div className="font-mono text-xs font-bold mb-3" style={{ color: ACCENT_TEXT }}>
                   THE WORKPLACE REALITY
                 </div>
                 <p className="text-lg leading-relaxed" style={{ color: INK }}>{day.workplaceReality}</p>
-                <div className="mt-6 pt-5 border-t" style={{ borderColor: '#ddd6cf' }}>
-                  <div className="font-mono text-[11px] font-bold mb-2" style={{ color: ORANGE }}>
+                <div className="mt-6 pt-5 border-t" style={{ borderColor: HAIRLINE }}>
+                  <div className="font-mono text-[11px] font-bold mb-2" style={{ color: ACCENT_TEXT }}>
                     WHAT CAN MAKE IT WORTH IT
                   </div>
                   <p className="leading-relaxed" style={{ color: MUTED }}>{workplaceUpside}</p>
@@ -153,7 +163,7 @@ const YourPossibleLife: React.FC<{ uid?: string; profile: StudentSubjectProfile 
             className="rounded-[28px] p-6 sm:p-8 h-fit lg:sticky lg:top-8"
             style={{ background: PAPER, border: '2px solid ' + INK, boxShadow: '7px 8px 0 ' + INK }}
           >
-            <div className="font-mono text-xs font-bold mb-5" style={{ color: ORANGE }}>CHANGE THE FRAME</div>
+            <div className="font-mono text-xs font-bold mb-5" style={{ color: ACCENT_TEXT }}>CHANGE THE FRAME</div>
             <p className="mb-7 leading-relaxed" style={{ color: MUTED }}>{day.setting}</p>
 
             <label className="block text-xs tracking-widest uppercase font-bold mb-2">Where would you live?</label>
@@ -176,7 +186,7 @@ const YourPossibleLife: React.FC<{ uid?: string; profile: StudentSubjectProfile 
                   onClick={() => setLiving(value)}
                   className="h-11 rounded-xl text-left px-4 font-semibold"
                   style={{
-                    border: '2px solid ' + (living === value ? INK : '#d9d2cb'),
+                    border: '2px solid ' + (living === value ? INK : HAIRLINE),
                     background: living === value ? CREAM : PAPER,
                   }}
                 >
@@ -198,7 +208,7 @@ const YourPossibleLife: React.FC<{ uid?: string; profile: StudentSubjectProfile 
                   onClick={() => setRhythm(value)}
                   className="min-h-[62px] rounded-xl text-left px-4 py-2"
                   style={{
-                    border: '2px solid ' + (rhythm === value ? INK : '#d9d2cb'),
+                    border: '2px solid ' + (rhythm === value ? INK : HAIRLINE),
                     background: rhythm === value ? CREAM : PAPER,
                   }}
                 >
@@ -223,12 +233,12 @@ const YourPossibleLife: React.FC<{ uid?: string; profile: StudentSubjectProfile 
     );
   }
 
-  if (stage === 'reflection') { const prompts = [[felt,setFelt,'I could see myself…','Which part of the day felt appealing?'],[notFor,setNotFor,'I would not want…','Which trade-off felt wrong for you?'],[surprised,setSurprised,'I had not considered…','What changed or surprised you?']] as const; return <Shell stage={stage} back={() => setStage('day')}><section className="py-12"><div className="max-w-3xl mb-10"><div className="font-mono text-sm font-bold mb-4" style={{ color: ORANGE }}>NO VERDICT REQUIRED</div><h1 className="text-5xl sm:text-6xl" style={{ fontFamily: SERIF, color: INK }}>Keep the useful reaction.</h1><p className="mt-4 text-lg" style={{ color: MUTED }}>Write one honest line. You are testing a possibility, not choosing the rest of your life.</p></div><div className="grid lg:grid-cols-3 gap-5">{prompts.map(([value,setter,label,hint], index) => <label key={label} className="rounded-[24px] p-6 min-h-[250px] flex flex-col" style={{ background: PAPER, border: `2px solid ${INK}`, boxShadow: `5px 6px 0 ${INK}` }}><span className="font-mono text-sm font-bold" style={{ color: ORANGE }}>0{index + 1}</span><span className="block text-3xl mt-7 lg:min-h-[72px]" style={{ fontFamily: SERIF, color: INK }}>{label}</span><span className="block text-sm mt-2" style={{ color: MUTED }}>{hint}</span><textarea value={value} onChange={(e) => setter(e.target.value)} rows={3} className="possible-life-journal-field w-full mt-7 resize-none outline-none text-base" placeholder="A sentence is enough…" style={{ color: INK }}/></label>)}</div><div className="flex justify-end mt-9"><Button disabled={!felt.trim() && !notFor.trim() && !surprised.trim()} onClick={() => { persist({ feltLikeMe: felt, notForMe: notFor, surprisedMe: surprised }); setStage('route'); }}>Build a route from this <ArrowRight className="inline ml-2" size={17}/></Button></div></section></Shell>; }
+  if (stage === 'reflection') { const prompts = [[felt,setFelt,'I could see myself…','Which part of the day felt appealing?'],[notFor,setNotFor,'I would not want…','Which trade-off felt wrong for you?'],[surprised,setSurprised,'I had not considered…','What changed or surprised you?']] as const; return <Shell stage={stage} back={() => setStage('day')}><section className="py-12"><div className="max-w-3xl mb-10"><div className="font-mono text-sm font-bold mb-4" style={{ color: ACCENT_TEXT }}>NO VERDICT REQUIRED</div><h1 className="text-5xl sm:text-6xl" style={{ fontFamily: SERIF, color: INK }}>Keep the useful reaction.</h1><p className="mt-4 text-lg" style={{ color: MUTED }}>Write one honest line. You are testing a possibility, not choosing the rest of your life.</p></div><div className="grid lg:grid-cols-3 gap-5">{prompts.map(([value,setter,label,hint], index) => <label key={label} className="rounded-[24px] p-6 min-h-[250px] flex flex-col" style={{ background: PAPER, border: `2px solid ${INK}`, boxShadow: `5px 6px 0 ${INK}` }}><span className="font-mono text-sm font-bold" style={{ color: ACCENT_TEXT }}>0{index + 1}</span><span className="block text-3xl mt-7 lg:min-h-[72px]" style={{ fontFamily: SERIF, color: INK }}>{label}</span><span className="block text-sm mt-2" style={{ color: MUTED }}>{hint}</span><textarea value={value} onChange={(e) => setter(e.target.value)} rows={3} className="possible-life-journal-field w-full mt-7 resize-none outline-none text-base" placeholder="A sentence is enough…" style={{ color: INK }}/></label>)}</div><div className="flex justify-end mt-9"><Button disabled={!felt.trim() && !notFor.trim() && !surprised.trim()} onClick={() => { persist({ feltLikeMe: felt, notForMe: notFor, surprisedMe: surprised }); setStage('route'); }}>Build a route from this <ArrowRight className="inline ml-2" size={17}/></Button></div></section></Shell>; }
 
   const courses = coursesFor(career); const closest = courses.find((course) => course.typicalPoints <= targetPoints + 30) ?? courses[courses.length - 1];
   const alreadySaved = careerPathState.savedIds.includes(career.id);
   const savePossibility = () => { persist({ obstacle, ifThenPlan: ifThen, careerId: career.id }); if (!alreadySaved) toggleSaved(career.id); setSavedNow(true); };
-  return <Shell stage="route" back={() => setStage('reflection')}><section className="py-12 grid lg:grid-cols-[.85fr_1.15fr] gap-12"><div><div className="font-mono text-sm font-bold mb-4" style={{ color: ORANGE }}>A DOOR, NOT A DESTINY</div><h1 className="text-5xl sm:text-7xl leading-[.96]" style={{ fontFamily: SERIF, color: INK }}>Keep this future testable.</h1><p className="mt-6 text-lg leading-relaxed" style={{ color: MUTED }}>You do not need to choose {career.title} today. You only need a next step that gives you better evidence.</p><details className="mt-8 rounded-2xl p-5" style={{ border: `2px solid #d9d2cb`, background: PAPER }}><summary className="font-bold cursor-pointer flex items-center justify-between">Practical reality <ChevronDown size={18}/></summary><div className="mt-4 text-sm leading-relaxed" style={{ color: MUTED }}>Typical gross pay in our sourced career data is €{career.salary.startK}k early-career to about €{career.salary.experiencedK}k when experienced. {career.salary.note}. Pay varies by employer, location, hours and route.<div className="mt-4 pt-4 border-t text-xs" style={{ borderColor: '#ddd6cf' }}><strong>Sources:</strong> {career.sources.slice(0, 3).join(' · ')}</div></div></details></div><div className="space-y-5"><article className="rounded-[28px] p-6 sm:p-8" style={{ background: PAPER, border: `2px solid ${INK}`, boxShadow: `7px 8px 0 ${INK}` }}><div className="flex items-center justify-between gap-4"><h2 className="text-3xl" style={{ fontFamily: SERIF, color: INK }}>Routes in</h2><span className="font-mono text-xs" style={{ color: MUTED }}>{currentPoints || '—'} now · {targetPoints || '—'} target</span></div><div className="mt-6 space-y-4">{career.routes.map((route, index) => <div key={route.label} className="grid grid-cols-[30px_1fr] gap-3"><span className="font-mono font-bold" style={{ color: ORANGE }}>0{index + 1}</span><div><strong>{route.label}</strong><p className="text-sm mt-1" style={{ color: MUTED }}>{route.detail}</p></div></div>)}</div>{closest && <div className="mt-6 pt-5 border-t text-sm" style={{ borderColor: '#d9d2cb' }}><MapPin className="inline mr-2" size={16} color={ORANGE}/><strong>{closest.title}</strong> · Level {closest.level} · recent guide {closest.typicalPoints} points</div>}</article><article className="rounded-[28px] p-6 sm:p-8" style={{ background: savedNow ? PAPER : CREAM, border: `2px solid ${INK}` }}>{savedNow ? <div className="py-5"><div className="font-mono text-xs font-bold mb-4" style={{ color: ORANGE }}>POSSIBILITY SAVED</div><h2 className="text-3xl" style={{ fontFamily: SERIF, color: INK }}>A useful door stays open.</h2><p className="mt-3 leading-relaxed" style={{ color: MUTED }}>Your reflection and next move are saved. This is not a career decision—just a possibility worth testing with better evidence.</p><Button secondary className="mt-6" onClick={() => { setSavedNow(false); setStage('possibilities'); }}>Compare another future <ArrowRight className="inline ml-2" size={17}/></Button></div> : <><div className="font-mono text-xs font-bold mb-5" style={{ color: ORANGE }}>ONE MOVE THIS WEEK</div><label className="block font-bold mb-2">What could get in the way?</label><input value={obstacle} onChange={(e) => setObstacle(e.target.value)} className="w-full h-12 rounded-xl px-4 mb-5" style={{ border: `2px solid #d9d2cb`, background: PAPER }} placeholder="Time, confidence, not knowing who to ask…"/><label className="block font-bold mb-2">If that happens, then I will…</label><input value={ifThen} onChange={(e) => setIfThen(e.target.value)} className="w-full h-12 rounded-xl px-4" style={{ border: `2px solid #d9d2cb`, background: PAPER }} placeholder="Ask my guidance counsellor one specific question…"/><Button className="w-full mt-6" disabled={!ifThen.trim()} onClick={savePossibility}>{alreadySaved ? 'Update saved possibility' : 'Save this possibility'} <Check className="inline ml-2" size={18}/></Button></>}</article></div></section></Shell>;
+  return <Shell stage="route" back={() => setStage('reflection')}><section className="py-12 grid lg:grid-cols-[.85fr_1.15fr] gap-12"><div><div className="font-mono text-sm font-bold mb-4" style={{ color: ACCENT_TEXT }}>A DOOR, NOT A DESTINY</div><h1 className="text-5xl sm:text-7xl leading-[.96]" style={{ fontFamily: SERIF, color: INK }}>Keep this future testable.</h1><p className="mt-6 text-lg leading-relaxed" style={{ color: MUTED }}>You do not need to choose {career.title} today. You only need a next step that gives you better evidence.</p><details className="mt-8 rounded-2xl p-5" style={{ border: `2px solid ${HAIRLINE}`, background: PAPER }}><summary className="font-bold cursor-pointer flex items-center justify-between">Practical reality <ChevronDown size={18}/></summary><div className="mt-4 text-sm leading-relaxed" style={{ color: MUTED }}>Typical gross pay in our sourced career data is €{career.salary.startK}k early-career to about €{career.salary.experiencedK}k when experienced. {career.salary.note}. Pay varies by employer, location, hours and route.<div className="mt-4 pt-4 border-t text-xs" style={{ borderColor: HAIRLINE }}><strong>Sources:</strong> {career.sources.slice(0, 3).join(' · ')}</div></div></details></div><div className="space-y-5"><article className="rounded-[28px] p-6 sm:p-8" style={{ background: PAPER, border: `2px solid ${INK}`, boxShadow: `7px 8px 0 ${INK}` }}><div className="flex items-center justify-between gap-4"><h2 className="text-3xl" style={{ fontFamily: SERIF, color: INK }}>Routes in</h2><span className="font-mono text-xs" style={{ color: MUTED }}>{currentPoints || '—'} now · {targetPoints || '—'} target</span></div><div className="mt-6 space-y-4">{career.routes.map((route, index) => <div key={route.label} className="grid grid-cols-[30px_1fr] gap-3"><span className="font-mono font-bold" style={{ color: ACCENT_TEXT }}>0{index + 1}</span><div><strong>{route.label}</strong><p className="text-sm mt-1" style={{ color: MUTED }}>{route.detail}</p></div></div>)}</div>{closest && <div className="mt-6 pt-5 border-t text-sm" style={{ borderColor: HAIRLINE }}><MapPin className="inline mr-2" size={16} color={ACCENT_TEXT}/><strong>{closest.title}</strong> · Level {closest.level} · recent guide {closest.typicalPoints} points</div>}</article><article className="rounded-[28px] p-6 sm:p-8" style={{ background: savedNow ? PAPER : CREAM, border: `2px solid ${INK}` }}>{savedNow ? <div className="py-5"><div className="font-mono text-xs font-bold mb-4" style={{ color: ACCENT_TEXT }}>POSSIBILITY SAVED</div><h2 className="text-3xl" style={{ fontFamily: SERIF, color: INK }}>A useful door stays open.</h2><p className="mt-3 leading-relaxed" style={{ color: MUTED }}>Your reflection and next move are saved. This is not a career decision—just a possibility worth testing with better evidence.</p><Button secondary className="mt-6" onClick={() => { setSavedNow(false); setStage('possibilities'); }}>Compare another future <ArrowRight className="inline ml-2" size={17}/></Button></div> : <><div className="font-mono text-xs font-bold mb-5" style={{ color: ACCENT_TEXT }}>ONE MOVE THIS WEEK</div><label className="block font-bold mb-2">What could get in the way?</label><input value={obstacle} onChange={(e) => setObstacle(e.target.value)} className="w-full h-12 rounded-xl px-4 mb-5" style={{ border: `2px solid ${HAIRLINE}`, background: PAPER }} placeholder="Time, confidence, not knowing who to ask…"/><label className="block font-bold mb-2">If that happens, then I will…</label><input value={ifThen} onChange={(e) => setIfThen(e.target.value)} className="w-full h-12 rounded-xl px-4" style={{ border: `2px solid ${HAIRLINE}`, background: PAPER }} placeholder="Ask my guidance counsellor one specific question…"/><Button className="w-full mt-6" disabled={!ifThen.trim()} onClick={savePossibility}>{alreadySaved ? 'Update saved possibility' : 'Save this possibility'} <Check className="inline ml-2" size={18}/></Button></>}</article></div></section></Shell>;
 };
 
 export default YourPossibleLife;
