@@ -208,6 +208,240 @@ cards.append(C(
     'One flat list, taken in order to the cap.',
     stem='The future of fashion is in the hands of the designers.'))
 
+# ---------------------------------------------------------------- Elective 3
+E3 = block(SEC, 'Elective 3 – Social Studies', 'Question 4 – Core')
+E3a = block(E3, '3.(a) ‘The unemployment rate', 'and 3.(b)')
+
+ch = block(E3a, '2 points @ 3 marks (graded 3:2:0) not currently employed', '(ii) Discuss the effects')
+cards.append(C(
+    PFX+'q3ai', Y, LV, 'home-economics-3-9', 'defining-unemployment',
+    '2023 OL Section C E3 Q3(a)(i)',
+    'Define unemployment.',
+    '2 points @ 3 marks (graded 3:2:0)', 6,
+    [anyN('r-1', 'Definition of unemployment', 6, 2, 3,
+          semis(ch, '2 points @ 3 marks (graded 3:2:0)')[:CAP],
+          'Two points at 3 marks, graded 3:2:0 - and the scheme prints only four, so a bare "no job" is one point, not two. The second mark is the availability half: actively seeking work and available for it.')],
+    'One flat list. A six-mark definition, so both halves are needed - out of work AND looking for work.',
+    stem='‘The unemployment rate for persons aged 15-24 is 12.4%.’ (Oct 2022, www.cso.ie)'))
+
+h_ind, h_fam, h_soc = heads(block(E3a, 'the individual: financial insecurity', '(iii) Describe the role of education'),
+                            ['the individual: financial insecurity',
+                             'the family: decline in living standards',
+                             'society: cost to the state'])
+cards.append(C(
+    PFX+'q3aii', Y, LV, 'home-economics-3-9', 'effects-of-unemployment',
+    '2023 OL Section C E3 Q3(a)(ii)',
+    'Discuss the effects of unemployment on: the individual; the family; society.',
+    '2 points @ 4 marks (graded 4:2:0) x 3', 24,
+    [anyN('r-1', 'the individual', 8, 2, 4, semis(h_ind, 'the individual:')[:CAP],
+          'Two points at 4 marks, graded 4:2:0. The scheme runs money first then mind - income and living standards, then isolation, depression and loss of status. Taking one from each half is the safest pair.'),
+     anyN('r-2', 'the family', 8, 2, 4, semis(h_fam, 'the family:')[:CAP],
+          'Two points at 4 marks, graded 4:2:0. Keep these about the household rather than the person: reliance on welfare, difficulty meeting basic needs, relationship strain, a child unable to go on to college.'),
+     anyN('r-3', 'society', 8, 2, 4, semis(h_soc, 'society:')[:CAP],
+          'Two points at 4 marks, graded 4:2:0. This row is the one students lose - it wants the cost to the State and what follows from it: benefits, higher taxation, emigration, unemployment blackspots.')],
+    'Fixed: three named strands, priced identically at 8 marks each. Answer all three - a candidate who writes six good points about the individual still scores 8.',
+    stem='‘The unemployment rate for persons aged 15-24 is 12.4%.’ (Oct 2022, www.cso.ie)',
+    tariff_kind='fixed'))
+
+ch = block(E3a, '3 points @ 4 marks (graded 4:2:0) literacy skills', '(iv) Name and give details')
+cards.append(C(
+    PFX+'q3aiii', Y, LV, 'home-economics-3-10', 'education-preparing-young-people-for-work',
+    '2023 OL Section C E3 Q3(a)(iii)',
+    'Describe the role of education in preparing young people for the world of work.',
+    '3 points @ 4 marks (graded 4:2:0)', 12,
+    [anyN('r-1', 'Role of education in preparing young people for work', 12, 3, 4,
+          semis(ch, '3 points @ 4 marks (graded 4:2:0)')[:CAP],
+          'Three points at 4 marks, graded 4:2:0. The scheme splits into skills (literacy, numeracy, computer) and qualities (punctuality, responsibility, self-discipline), and ends on work experience. One from each cluster covers the range.')],
+    'One flat list, taken in order to the cap.',
+    stem='‘The unemployment rate for persons aged 15-24 is 12.4%.’ (Oct 2022, www.cso.ie)'))
+
+ch = block(E3a, 'social welfare assistance and benefits: jobseeker')
+cards.append(C(
+    PFX+'q3aiv', Y, LV, 'home-economics-3-9', 'statutory-schemes-supporting-the-unemployed',
+    '2023 OL Section C E3 Q3(a)(iv) - naming the scheme',
+    'Name one statutory scheme that provides support to people who are unemployed.',
+    'Name: 4 marks (graded 4:2:0)', 4,
+    [anyN('r-1', 'Name of the statutory scheme', 4, 1, 4,
+          semis(ch, 'social welfare assistance and benefits:')[:CAP],
+          'One name, 4 marks, graded 4:2:0. Name the actual scheme - "jobseeker\u2019s benefit", not "the dole". The scheme accepts the full range of statutory supports, including the ones people forget: MABS, Abhaile, the medical card.')],
+    'The naming strand only, at its own 4 marks. The 4-mark details strand is held - see the held file.',
+    stem='‘The unemployment rate for persons aged 15-24 is 12.4%.’ (Oct 2022, www.cso.ie)'))
+held.append(dict(C(
+    PFX+'q3aiv-details', Y, LV, 'home-economics-3-9', 'statutory-scheme-details',
+    '2023 OL Section C E3 Q3(a)(iv) - details',
+    'Give details of one statutory scheme that provides support to people who are unemployed.',
+    'Details: 1 point @ 4 marks (graded 4:2:0)', 4,
+    [anyN('r-1', 'Details of the statutory scheme', 4, 1, 4, [], 'Held - no marking points printed.')],
+    'Held - see heldReason.',
+    stem='‘The unemployment rate for persons aged 15-24 is 12.4%.’ (Oct 2022, www.cso.ie)'),
+    heldReason='The scheme prices Details at 4 marks but prints no marking points for it - the list that follows is scheme NAMES, which the naming strand already consumes. Shipping this would mean inventing the detail the examiner declined to print.'))
+
+# ------------------------------------------------------------------- 3.(b)
+E3b = block(E3, 'and 3.(b)‘Primary school education', 'or 3.(c)')
+DEV = ['physical development: playing with toys', 'emotional development: young children gain',
+       'intellectual development: promoted through', 'social development: can be formal']
+ch = block(E3b, '3 ways @ 5 marks (graded 5:3:0) physical development', '(ii) Discuss three factors')
+cards.append(C(
+    PFX+'q3bi', Y, LV, 'home-economics-3-10', 'primary-school-and-child-development',
+    '2023 OL Section C E3 Q3(b)(i)',
+    'Describe three different ways primary school education contributes to the development of the individual.',
+    '3 ways @ 5 marks (graded 5:3:0)', 15,
+    [anyN('r-1', 'Ways primary school education contributes to development', 15, 3, 5,
+          [bundle(h, a.split(':')[0] + ':') for h, a in zip(heads(ch, DEV), DEV)][:CAP],
+          'Three ways at 5 marks, graded 5:3:0. The scheme groups everything under four kinds of development, so take three different ones - naming three physical examples is still one way. Social development is the thin one: the scheme prints only "can be formal/informal".')],
+    'One option per named area of development, each carrying that area\'s own detail, because the scheme groups its marking points under four headings and prices three.',
+    stem='‘Primary school education supports children\u2019s learning from junior infants to sixth class.’ (NCCA)'))
+
+ch = block(E3b, '3 factors @ 5 marks (graded 5:3:0) intellectual ability')
+cards.append(C(
+    PFX+'q3bii', Y, LV, 'home-economics-3-10', 'factors-influencing-educational-achievement',
+    '2023 OL Section C E3 Q3(b)(ii)',
+    'Discuss three factors that influence the educational achievement of school children.',
+    '3 factors @ 5 marks (graded 5:3:0)', 15,
+    [anyN('r-1', 'Factors influencing educational achievement', 15, 3, 5,
+          semis(ch, '3 factors @ 5 marks (graded 5:3:0)')[:CAP],
+          'Three factors at 5 marks, graded 5:3:0. Discuss, so each factor needs the mechanism - not "family size" but why a large family can mean less individual attention and nowhere quiet to work. The scheme prints far more than three, so pick ones you can explain.')],
+    'One flat list, taken in order to the cap.',
+    stem='‘Primary school education supports children\u2019s learning from junior infants to sixth class.’ (NCCA)'))
+
+# ------------------------------------------------------------------- 3.(c)
+E3c = block(E3, 'or 3.(c) Ireland has undergone')
+CHG = ['reduction in working hours: change of lifestyle',
+       'increased participation of women in the workforce: family size',
+       'equal pay and employment opportunities: shorter working week']
+h_hrs, h_wom, h_pay = heads(block(E3c, 'reduction in working hours: change of lifestyle',
+                                  '(ii) Outline three benefits'), CHG)
+cards.append(C(
+    PFX+'q3ci', Y, LV, 'home-economics-3-11', 'social-and-economic-change-and-family-life',
+    '2023 OL Section C E3 Q3(c)(i)',
+    'Discuss the impact of social and economic changes on family life. Refer to: reduction in working hours; increased participation of women in the workforce; equal pay and employment opportunities.',
+    '1 point @ 5 marks (graded 5:3:0) x 3', 15,
+    [anyN('r-1', 'reduction in working hours', 5, 1, 5, semis(h_hrs, 'reduction in working hours:')[:CAP],
+          'One point, 5 marks, graded 5:3:0. The scheme allows both directions - more time with family and more leisure, but also less disposable income. Either earns the mark if you say what it does to family life.'),
+     anyN('r-2', 'increased participation of women in the workforce', 5, 1, 5,
+          semis(h_wom, 'increased participation of women in the workforce:')[:CAP],
+          'One point, 5 marks, graded 5:3:0. Again the scheme prints both sides: dual income and a positive role model, against childcare costs, role conflict and role overload.'),
+     anyN('r-3', 'equal pay and employment opportunities', 5, 1, 5,
+          semis(h_pay, 'equal pay and employment opportunities:')[:CAP],
+          'One point, 5 marks, graded 5:3:0. Most of this row is the leave entitlements - parental, paternity, adoptive, carer\u2019s - plus flexitime and job sharing. Name the entitlement and say what it lets a family do.')],
+    'Fixed: the question names the three areas, so all three must be answered. Priced identically at 5 marks each.',
+    stem='Ireland has undergone many social and economic changes in the past 20 years.',
+    tariff_kind='fixed'))
+
+ch = block(E3c, '3 benefits @ 5 marks (graded 5:3:0) reduces reliance')
+cards.append(C(
+    PFX+'q3cii', Y, LV, 'home-economics-3-11', 'benefits-of-voluntary-work-to-the-community',
+    '2023 OL Section C E3 Q3(c)(ii)',
+    'Outline three benefits of voluntary work to the community.',
+    '3 benefits @ 5 marks (graded 5:3:0)', 15,
+    [anyN('r-1', 'Benefits of voluntary work to the community', 15, 3, 5,
+          semis(ch, '3 benefits @ 5 marks (graded 5:3:0)')[:CAP],
+          'Three benefits at 5 marks, graded 5:3:0. Keep them about the community, not the volunteer - the question says "to the community". Reduced reliance on State resources, a faster local service, and community spirit are the three the scheme leads with.')],
+    'One flat list, taken in order to the cap.',
+    stem='Ireland has undergone many social and economic changes in the past 20 years.'))
+
+# ------------------------------------------------------------- Question 4 Core
+Q4 = block(SEC, 'Question 4 – Core', '320@10%')
+Q4a = block(Q4, '4.(a) ‘It is estimated', 'and 4.(b)')
+h_cause, h_effect = heads(block(Q4a, 'causes: lack of calcium', '(ii) Evaluate three lifestyle'),
+                          ['causes: lack of calcium', 'effects: fragile/brittle bones'])
+causes, effects = semis(h_cause, 'causes:')[:CAP], semis(h_effect, 'effects:')[:CAP]
+cards.append(C(
+    PFX+'q4ai', Y, LV, 'home-economics-0-8', 'causes-and-effects-of-osteoporosis',
+    '2023 OL Section C Q4(a)(i) - Core',
+    'Give an account of the causes of osteoporosis and the effects of osteoporosis on the body.',
+    '4 points @ 5 marks (graded 5:3:0) (1 cause, 1 effect, plus 2 others)', 20,
+    [anyN('r-1', 'One cause of osteoporosis', 5, 1, 5, causes,
+          'One cause, 5 marks, graded 5:3:0. The scheme is explicit that at least one cause is required. Calcium and vitamin D lead the list, but low oestrogen after menopause is the one that explains why the condition is far more common in women.'),
+     anyN('r-2', 'One effect of osteoporosis on the body', 5, 1, 5, effects,
+          'One effect, 5 marks, graded 5:3:0. At least one effect is required. "Brittle bones" is the definition rather than an effect - fractures, loss of height, a curved spine and back pain are what the examiner is after.'),
+     anyN('r-3', 'Two further points, from either causes or effects', 10, 2, 5, (causes + effects)[:CAP],
+          'Two further points at 5 marks each, and the scheme lets these come from either list - "1 cause, 1 effect, plus 2 others". So two more causes, two more effects, or one of each all score.')],
+    'Fixed: the scheme requires one cause and one effect, then floats the remaining 10 marks across both lists. Modelled as three rows so the two compulsory points cannot be lost.',
+    stem='‘It is estimated that up to 300,000 people in Ireland have osteoporosis.’ (www.irishosteoporosis.ie)',
+    tariff_kind='fixed'))
+
+h_life, h_diet = heads(block(Q4a, '3 guidelines @ 5 marks (graded 5:3:0) lifestyle:', '(iii) Discuss the role of food labelling'),
+                       ['lifestyle: exercise regularly', 'dietary: increase intake of vitamin D'])
+cards.append(C(
+    PFX+'q4aii', Y, LV, 'home-economics-0-8', 'preventing-osteoporosis',
+    '2023 OL Section C Q4(a)(ii) - Core',
+    'Evaluate three lifestyle and/or dietary guidelines to follow in order to prevent osteoporosis.',
+    '3 guidelines @ 5 marks (graded 5:3:0)', 15,
+    [anyN('r-1', 'Lifestyle and/or dietary guidelines to prevent osteoporosis', 15, 3, 5,
+          (semis(h_life, 'lifestyle:') + semis(h_diet, 'dietary:'))[:CAP],
+          'Three guidelines at 5 marks, graded 5:3:0. "And/or" means all three may come from one list, so you are not forced to balance them. Evaluate, so say why it works - weight-bearing exercise loads the bone and builds density; sunshine is where the vitamin D comes from.')],
+    'One flat list pooling the lifestyle and dietary clusters, because the question prices them together and the scheme accepts either.',
+    stem='‘It is estimated that up to 300,000 people in Ireland have osteoporosis.’ (www.irishosteoporosis.ie)'))
+
+ch = block(Q4a, '3 roles @ 5 marks (graded 5:3:0) helps consumer make')
+cards.append(C(
+    PFX+'q4aiii', Y, LV, 'home-economics-1-2', 'food-labelling-and-special-diets',
+    '2023 OL Section C Q4(a)(iii) - Core',
+    'Discuss the role of food labelling as a source of consumer information for people following a special diet.',
+    '3 roles @ 5 marks (graded 5:3:0)', 15,
+    [anyN('r-1', 'Role of food labelling for people following a special diet', 15, 3, 5,
+          semis(ch, '3 roles @ 5 marks (graded 5:3:0)')[:CAP],
+          'Three roles at 5 marks, graded 5:3:0. Tie each one back to the special diet - the allergen list is the strongest, because for a coeliac or a nut allergy it is the difference between safe and dangerous. Nutrient panels serve the diabetic and the low-salt diet.')],
+    'One flat list, taken in order to the cap.',
+    stem='‘It is estimated that up to 300,000 people in Ireland have osteoporosis.’ (www.irishosteoporosis.ie)'))
+
+# ------------------------------------------------------------------- 4.(b)
+Q4b = block(Q4, 'and 4.(b) Money management', 'or 4.(c)')
+INC = ['age: income tends to increase', 'gender: equal pay for all', 'social class: some students',
+       'lower socio-economic group: many receive', 'cultural factors: different cultures']
+ch = block(Q4b, '3 factors @ 5 marks (graded 5:3:0) age: income tends', '(ii) Describe three benefits')
+cards.append(C(
+    PFX+'q4bi', Y, LV, 'home-economics-1-1', 'factors-affecting-household-income',
+    '2023 OL Section C Q4(b)(i) - Core',
+    'Identify and explain three factors that affect household income.',
+    '3 factors @ 5 marks (graded 5:3:0)', 15,
+    [anyN('r-1', 'Factors that affect household income', 15, 3, 5,
+          [bundle(h, a.split(':')[0] + ':') for h, a in zip(heads(ch, INC), INC)][:CAP],
+          'Three factors at 5 marks, graded 5:3:0. Identify AND explain - the name alone is the 3, the explanation is the 5. Age and social class carry the most detail in the scheme; gender and cultural factors are one line each.')],
+    'One option per named factor, each carrying that factor\'s own detail, because the scheme groups its marking points under five headings and prices three.',
+    stem='Money management is an important life skill.'))
+
+ch = block(Q4b, '3 benefits @ 5 marks (graded 5:3:0) areas of overspending')
+cards.append(C(
+    PFX+'q4bii', Y, LV, 'home-economics-1-1', 'benefits-of-a-family-budget-plan',
+    '2023 OL Section C Q4(b)(ii) - Core',
+    'Describe three benefits of setting up a family budget plan.',
+    '3 benefits @ 5 marks (graded 5:3:0)', 15,
+    [anyN('r-1', 'Benefits of setting up a family budget plan', 15, 3, 5,
+          semis(ch, '3 benefits @ 5 marks (graded 5:3:0)')[:CAP],
+          'Three benefits at 5 marks, graded 5:3:0. The scheme prints eleven, so there is plenty of choice - but several are near-duplicates ("avoids debt", "reduces reliance on credit"). Pick three that are genuinely different: spotting overspending, providing for emergencies, and building savings.')],
+    'One flat list, taken in order to the cap.',
+    stem='Money management is an important life skill.'))
+
+# ------------------------------------------------------------------- 4.(c)
+Q4c = block(Q4, 'or 4.(c) ‘Family roles shape')
+ch = block(Q4c, '3 points @ 5 marks (graded 5:3:0) take on extra responsibilities', '(ii) Explain how the family supports')
+cards.append(C(
+    PFX+'q4ci', Y, LV, 'home-economics-2-0', 'changing-role-of-the-adolescent',
+    '2023 OL Section C Q4(c)(i) - Core',
+    'Discuss how the role of the adolescent has changed in the modern family.',
+    '3 points @ 5 marks (graded 5:3:0)', 15,
+    [anyN('r-1', 'How the role of the adolescent has changed', 15, 3, 5,
+          semis(ch, '3 points @ 5 marks (graded 5:3:0)')[:CAP],
+          'Three points at 5 marks, graded 5:3:0. The word is "changed", so each point works best as a contrast with the past - adolescents now share in decisions, mind siblings, cook meals and hold part-time jobs where once they did not.')],
+    'One flat list, taken in order to the cap.',
+    stem='‘Family roles shape how we interact with each other in the family.’ (www.innerchange.com)'))
+
+h_phys, h_emot = heads(block(Q4c, 'physical: provides basic needs'),
+                       ['physical: provides basic needs', 'emotional: provides a safe and secure'])
+cards.append(C(
+    PFX+'q4cii', Y, LV, 'home-economics-2-0', 'family-support-for-child-development',
+    '2023 OL Section C Q4(c)(ii) - Core',
+    'Explain how the family supports the physical and emotional development of children.',
+    '3 points @ 5 marks (graded 5:3:0)', 15,
+    [anyN('r-1', 'How the family supports physical and emotional development', 15, 3, 5,
+          (semis(h_phys, 'physical:') + semis(h_emot, 'emotional:'))[:CAP],
+          'Three points at 5 marks, graded 5:3:0, pooled across both kinds of development. The scheme is thin here - two physical points and four emotional - so the emotional side is where the safer marks are: self-esteem, a safe place to talk, parents as role models.')],
+    'One flat list pooling the physical and emotional clusters, because the question prices three points across both rather than pricing each separately.',
+    stem='‘Family roles shape how we interact with each other in the family.’ (www.innerchange.com)'))
+
+
 emit(cards)
 json.dump(held, open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'held_2023ol_secC.json'),'w'), ensure_ascii=False, indent=1)
 print(f'held: {len(held)}', file=sys.stderr)

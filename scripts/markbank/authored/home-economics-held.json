@@ -1172,5 +1172,44 @@
   ],
   "notes": "Fixed: three headings named in the question, priced equally.",
   "heldReason": "Marks festival outfits printed on the paper. Every option describes that image (\"easy to remove shirt, jackets, sweatshirt\", \"waterproof boots\", \"layered look\"), so the card is unanswerable without the figure."
+ },
+ {
+  "id": "he-2023-ol-sc-q3aiv-details",
+  "topicId": "home-economics-3-9",
+  "conceptId": "statutory-scheme-details",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2023 OL Section C E3 Q3(a)(iv) - details",
+  "questionText": "Give details of one statutory scheme that provides support to people who are unemployed.",
+  "stem": "‘The unemployment rate for persons aged 15-24 is 12.4%.’ (Oct 2022, www.cso.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "Details: 1 point @ 4 marks (graded 4:2:0)",
+   "answer": 1,
+   "ofParts": 0,
+   "perPart": 4
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Details of the statutory scheme",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Held - no marking points printed.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": []
+    }
+   }
+  ],
+  "notes": "Held - see heldReason.",
+  "heldReason": "The scheme prices Details at 4 marks but prints no marking points for it - the list that follows is scheme NAMES, which the naming strand already consumes. Shipping this would mean inventing the detail the examiner declined to print."
  }
 ]
