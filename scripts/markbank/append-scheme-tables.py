@@ -32,6 +32,8 @@ re-authoring against the scheme, not a mechanical fix.
 Run this at the point someone authors those questions -- 27,000 appended lines
 across nine ground-truth scheme files is not worth carrying for one card.
 """
+from __future__ import annotations
+
 import re
 import sys
 from pathlib import Path
@@ -46,13 +48,34 @@ START = '<!-- markbank:table-cells -->'
 END = '<!-- /markbank:table-cells -->'
 
 
-def pdf_for(subject: str, year: int, level: str) -> Path:
+def pdf_for(subject: str, year: int, level: str) -> Path | None:
+    """The marking-scheme PDF for exactly this subject, year and level.
+
+    The explicitly-levelled name is preferred over the bare one, and a Deferred
+    Examinations cover is refused outright. Both matter: examiner-reports holds
+    biology/2023-marking-scheme.pdf, which is the DEFERRED Higher Level paper —
+    a different exam with different answers — alongside the real 2023-hl one.
+    Preferring the bare name appended the deferred paper's marking points to the
+    main paper's scheme text, where they would let a card trace to wording the
+    paper it cites never printed. That is the one thing the provenance gate
+    exists to stop.
+    """
     d = ROOT / 'examiner-reports' / subject
-    for name in ([f'{year}-{level}-marking-scheme.pdf'] if level == 'ol'
-                 else [f'{year}-marking-scheme.pdf', f'{year}-hl-marking-scheme.pdf']):
-        if (d / name).exists():
-            return d / name
-    raise SystemExit(f'no marking-scheme PDF for {subject} {year} {level} in {d}')
+    names = ([f'{year}-{level}-marking-scheme.pdf'] if level == 'ol'
+             else [f'{year}-hl-marking-scheme.pdf', f'{year}-marking-scheme.pdf'])
+    for name in names:
+        path = d / name
+        if not path.exists():
+            continue
+        with pymupdf.open(path) as doc:
+            cover = ' '.join(doc[0].get_text().split())
+        if 'Deferred' in cover:
+            continue
+        want = 'Ordinary Level' if level == 'ol' else 'Higher Level'
+        if want not in cover:
+            continue
+        return path
+    return None
 
 
 def cells(pdf: Path) -> list[str]:
@@ -131,7 +154,10 @@ def main() -> None:
     md = ROOT / 'examiner-reports' / subject / 'schemes' / f'{year}-{level}.md'
     if not md.exists():
         raise SystemExit(f'no scheme markdown at {md}')
-    lines = cells(pdf_for(subject, year, level))
+    pdf = pdf_for(subject, year, level)
+    if pdf is None:
+        raise SystemExit(f'no marking-scheme PDF for {subject} {year} {level}')
+    lines = cells(pdf)
     body = f'{START}\n' + '\n'.join(lines) + f'\n{END}\n'
     text = md.read_text(encoding='utf-8')
     if START in text:

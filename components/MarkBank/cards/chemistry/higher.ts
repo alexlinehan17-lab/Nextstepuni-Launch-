@@ -4070,6 +4070,22 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC022ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2024 Higher Level — © State Examinations Commission.",
+    id: "chem-2024-hl-q2-b-ii", topicId: "chem-u2", conceptId: "aldehyde-oxidation-test-colour-changes",
+    section: "A", questionRef: "2024 HL Q2(b)(ii)",
+    stem: "A student carried out a test to show that ethanal is easily oxidised, using acidified KMnO4, Fehling’s reagent or Tollen’s reagent.",
+    questionText: "State the colour change observed for the reagent(s) you have identified.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "allOf", verbatim: "acidified KMnO4 — pink/purple to colourless", marks: 6, accepts: ["pink to colourless","purple to colourless"], contextNote: "The scheme awards 3 marks for the starting colour and 3 for the final colour. [award 3 marks for both correct colours reversed]", route: "a" },
+    { id: "r-2", kind: "allOf", verbatim: "Fehling’s — blue to red", marks: 6, contextNote: "3 marks for the starting colour, 3 for the final colour. [award 3 marks for both correct colours reversed]", route: "b" },
+    { id: "r-3", kind: "allOf", verbatim: "Tollen’s — colourless to silver", marks: 6, contextNote: "3 marks for the starting colour, 3 for the final colour. [award 3 marks for both correct colours reversed]", route: "c" },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC022ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2024 Higher Level — © State Examinations Commission.",
     id: "chem-2024-hl-q2-b-iii", topicId: "chem-4-2", conceptId: "ethanal-oxidation-product",
     section: "A", questionRef: "2024 HL Q2(b)(iii)",
     stem: "A student carried out a test to show that ethanal is easily oxidised.",
@@ -5893,6 +5909,29 @@ export const CARDS: SecCard[] = [
           ]
     },
     labelKey: [{"letter":"2","meaning":"ionisation","askedInThisQuestion":true},{"letter":"4","meaning":"separation","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC022ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2023 Higher Level — © State Examinations Commission.",
+    id: "chem-2023-hl-q4-k-fig", topicId: "chem-1-4", conceptId: "molecules-from-mass-using-avogadro-constant",
+    section: "B", questionRef: "2023 HL Q4(k)",
+    questionText: "Real manuka honey from New Zealand, considered to have exceptional taste, is supplied with certification of authenticity. Correct to one significant figure, calculate the minimum number of molecules of 2-methoxybenzoic acid (Mr = 152) present in the jar containing 250 g of manuka honey shown on the right, certified to contain at least 1 × 10⁻³ g per kg of this substance.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "0.001 ÷ 152 = 6.6 × 10⁻⁶ moles per kg", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "6.6 × 10⁻⁶ × 6.0 × 10²³ = 3.96 × 10¹⁸ molecules per kg", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "3.96 × 10¹⁸ ÷ 4 = 1 × 10¹⁸ molecules per jar", marks: 1, contextNote: "[–1 if final answer expressed as 9.87 × 10¹⁷ molecules per jar.]" },
+    ],
+    figure: {
+          "candId": "chemistry-2023-HL-paper-p05-i0",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2023-HL-paper-p05-i0.png",
+          "srcHash": "e1d392c6d80a773790f3744f836f9af3",
+          "alt": "Right-hand side shows a greyscale product photograph of a squat cylindrical honey jar with a black screw lid. The label has a dark upper band carrying a small fern motif with \"NEW ZEALAND HONEY CO.\", then a white band reading \"MANUKA\" in large spaced capitals with \"RAW MANUKA HONEY\" beneath, two small certification symbols side by side, and a bottom strip reading \"NET WT 8.8OZ (250g)\". Left-hand side is the printed text of part (k), which asks the candidate to calculate, to one significant figure, the minimum number of molecules of 2-methoxybenzoic acid (Mr = 152) in the 250 g jar shown, certified to contain at least 1 x 10^-3 g per kg.",
+          "attribution": "SEC Leaving Certificate Chemistry 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
