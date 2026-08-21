@@ -1,29 +1,47 @@
 # Contrast sweep — resume note
 
-Paused 21 August 2026. Everything below is committed and pushed to `main`
-(last commit `742e2587`); the working tree was clean at the pause.
+Last updated 21 August 2026. Everything below is committed and pushed to
+`main` (last commit `494036af`); the working tree was clean.
 
 ## Where to pick up
 
-**One known failure is still open**, in onboarding stage 1 (`?view=onboarding`),
-dark mode: 4 instances of `#d6d0c9` on `#dcdcdb` at **1.11:1** — the
-"Your North Star" / "Your Subjects" / "Grade Targets" / "Exam Countdown" chips.
+**Onboarding stages 3-7 are still unswept**, and there is a suspected product
+bug blocking the walk (below). Stages 1 and 2 are verified clean.
 
-Cause, already traced: the chip carries inline
-`background-color: rgba(255, 255, 255, 0.85)`. No background remap matches a
-*translucent* white, so the fill stayed light while an ink remap turned its text
-light. This is the recurring **"remap the ink but not the fill"** bug.
+### Suspected product bug — worth investigating on its own merits
 
-Fix in flight: add a dark compat background remap for
-`rgba(255, 255, 255, 0.85)` so the fill darkens alongside its ink, next to the
-other surface remaps in `index.css`. Then re-scan `?view=onboarding` — it should
-go 4 → 0.
+Clicking "Get Started" on onboarding stage 1 *sometimes* advances the stage
+counter to "STAGE 2 OF 7" while leaving stage 1's content on screen and the
+"Next" button disabled — a dead end. It mounted correctly on one attempt and
+failed on several others with identical steps, so it looks like a race, not a
+consistent state.
 
-## Then: onboarding stages 2–7 are unswept
+It is not explained by the arithmetic: `currentStage = activeSteps.indexOf(step) + 1`
+with `activeSteps = [1, 2, 4, 5, 6, 7, 9]`, so "stage 2" implies `step === 2`,
+and the `{step === 2 && ...}` block at Onboarding.tsx:689 is unconditional.
+Stage counter and rendered content should not be able to disagree. Worth a
+proper look — if a real student hits it, onboarding is unfinishable.
 
-Stage 1 is the only one measured. The flow is 7 stages; walk through them and
-scan each. Reachable directly at `?view=onboarding` while logged in as Demo
-Account — no account creation needed.
+Note `useState<Step>(draft?.step ?? 1)` restores from a localStorage draft
+(`nextstepuni:onboarding-draft:v1:<uid>:fresh`), which is written on mount.
+Clear that key before testing or you resume mid-flow and chase ghosts.
+
+### Do not complete the flow on the Demo Account
+
+Walking to the end calls `handleOnboardingComplete`, which writes the profile
+(year, subjects, North Star) to Firestore. Draft writes are localStorage-only
+and safe; the final submit is not. There is also a pre-existing draft for uid
+`YzNqGyCKXPN5WdrJrerjUBO6r0j1` at step 9 in localStorage — not mine, leave it.
+
+### What static analysis already covers
+
+Every light-surface literal across `Onboarding.tsx`, `SubjectOnboarding.tsx`
+and `NorthStarOnboarding.tsx` was checked against the compat remaps: the two
+inline hex literals are covered, and the 4 `bg-white` classes without a
+`dark:bg` sibling are covered by the `!important` rule at index.css:355 now
+that the onboarding root carries `theme-compat`. So the *surfaces* are handled
+for all stages; what stages 3-7 could still hide is stage-specific text
+literals, which is what a live walk would catch.
 
 ## Also outstanding
 
@@ -91,8 +109,8 @@ measures nothing.
 | Mobile 500px: views, tools, 27 modules | 0 |
 | Focus rings, both themes | 6.78 dark / 4.99 light |
 | Light-mode tools | 4 left, all 4.37–4.49 (accepted) |
-| Onboarding stage 1 | **4 left — resume here** |
-| Onboarding stages 2–7 | unswept |
+| Onboarding stages 1–2 | 0 |
+| Onboarding stages 3–7 | **unswept — resume here**, blocked by the bug above |
 | Admin Dashboard | fix applied, unverified |
 
 The six Workshop/WIP tools (`diagram-vault`, `answer-architect`,
