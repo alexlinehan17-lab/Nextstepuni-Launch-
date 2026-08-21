@@ -1811,7 +1811,7 @@
    {
     "id": "r-3",
     "kind": "alt",
-    "verbatim": "(b) — removing electron(s) from an atom",
+    "verbatim": "(b) — removing/adding electron(s) from/to an atom",
     "accepts": [
      "adding electron(s) to an atom",
      "charging a particle"
@@ -3935,7 +3935,7 @@
    {
     "id": "r-3",
     "kind": "alt",
-    "verbatim": "the leaf of the GLE deflects when the proof plane was touched against the outside of the conductor but not the inside.",
+    "verbatim": "the leaf of the GLE deflects/moves when the proof plane was touched against the outside of the conductor but not the inside",
     "accepts": [
      "the leaf of the GLE moves when the proof plane was touched against the outside of the conductor but not the inside."
     ],
@@ -5494,7 +5494,7 @@
    {
     "id": "r-2",
     "kind": "alt",
-    "verbatim": "a control rod absorbs neutrons",
+    "verbatim": "a control rod absorbs/stops/blocks neutrons",
     "accepts": [
      "stops",
      "blocks"
@@ -14150,7 +14150,7 @@
    {
     "id": "r-1",
     "kind": "alt",
-    "verbatim": "measure of the conducting property",
+    "verbatim": "measure of the conducting/insulating property",
     "accepts": [
      "measure of the insulating property",
      "the rate of transfer of energy (through unit area of a material when there is a temperature difference of 1 K between the two sides)"
@@ -16300,7 +16300,7 @@
    {
     "id": "r-1",
     "kind": "alt",
-    "verbatim": "line spectra: contain gaps and continuous spectra: no gaps",
+    "verbatim": "line spectra: contain gaps / contain specific wavelengths and continuous spectra: no gaps",
     "accepts": [
      "line spectra: contain specific wavelengths and continuous spectra: contain all wavelengths"
     ],
@@ -17778,7 +17778,7 @@
    {
     "id": "r-1",
     "kind": "alt",
-    "verbatim": "high voltage means low current and therefore less energy loss",
+    "verbatim": "high voltage means low current and therefore less energy/heat loss",
     "accepts": [
      "high voltage means low current and therefore less heat loss"
     ],

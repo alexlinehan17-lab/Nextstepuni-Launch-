@@ -3612,6 +3612,21 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC022GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2024 Ordinary Level — © State Examinations Commission.",
+    id: "chem-2024-ol-q10-b-iii", topicId: "chem-3-3", conceptId: "le-chatelier-pressure",
+    section: "B", questionRef: "2024 OL Q10(b)(iii)",
+    stem: "Consider the equilibrium described by the following balanced chemical equation: 2NO2(g) = N2O4(g), delta-H = –57.2 kJ mol–1. Nitrogen dioxide (NO2) has a dark brown colour. Dinitrogen tetroxide (N2O4) is colourless. A mixture of NO2 and N2O4 is allowed to reach equilibrium. The mixture has a light brown colour.",
+    questionText: "What would be observed in the equilibrium mixture if the pressure was increased? Justify your answer.",
+    tariffModel: {"kind":"orderedSplit","notation":"(7 + 2)"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "paler brown colour", marks: null },
+    { id: "r-2", kind: "alt", verbatim: "reaction with fewer moles/molecules (of gas) favoured", marks: null, accepts: ["reaction with fewer molecules (of gas) favoured"], contextNote: "scheme wording: reaction with fewer moles/molecules (of gas) favoured - the bracketed '(of gas)' is not required this year" },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC022GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2024 Ordinary Level — © State Examinations Commission.",
     id: "chem-2024-ol-q10-c-i", topicId: "chem-1-2", conceptId: "half-life-definition",
     section: "B", questionRef: "2024 OL Q10(c)(i)",
     stem: "In Ireland, high levels of radon–222 are found in areas such as Galway and Wicklow, which have a lot of granite rock. Radon–222 is the most stable isotope of radon, with a half-life of approximately 3.8 days. It decays by emitting an alpha particle. The underlined term is 'half-life'.",
@@ -3724,6 +3739,21 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "separation (technique)", marks: null },
     { id: "r-2", kind: "point", verbatim: "using a mobile phase and a stationary phase", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC022GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2024 Ordinary Level — © State Examinations Commission.",
+    id: "chem-2024-ol-q11-c-iii-iv", topicId: "chem-u2", conceptId: "instrumental-methods-hplc",
+    section: "B", questionRef: "2024 OL Q11(c)(iii)-(iv)",
+    stem: "HPLC is an advanced instrumental method of separation which uses chromatography.",
+    questionText: "(iii) What is meant by HPLC? (iv) Name one other instrumental method of separation or analysis.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "high performance/pressure liquid chromatography", marks: 4, accepts: ["high pressure liquid chromatography"], contextNote: "marked 4 x 1 - one mark per correct word; scheme wording: high performance/pressure liquid chromatography" },
+    { id: "r-2", kind: "point", verbatim: "distillation", marks: 3, contextNote: "scheme gives this as an example", openList: true },
     ],
   } as SecCard,
   {

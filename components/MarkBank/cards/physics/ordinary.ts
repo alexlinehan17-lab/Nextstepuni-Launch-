@@ -1106,6 +1106,21 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2021-ol-q14b-iv", topicId: "phys-u2", conceptId: "charge-resides-on-outside-experiment",
+    section: "B", questionRef: "2021 OL Q14(b)(iv)",
+    questionText: "Describe an experiment to show that static charge accumulates on the outside of a metal object.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "allOf", verbatim: "charged hollow conductor, proof plane, GLE", marks: 2, openList: true },
+    { id: "r-2", kind: "point", verbatim: "touch the proof plane against the inside of the charged conductor and then against the cap of the GLE. Repeat touching the proof plane against the outside of the charged conductor.", marks: 2, openList: true },
+    { id: "r-3", kind: "alt", verbatim: "the leaf of the GLE deflects/moves when the proof plane was touched against the outside of the conductor but not the inside", marks: 2, accepts: ["the leaf of the GLE moves when the proof plane was touched against the outside of the conductor but not the inside."], contextNote: "The scheme's solidus is on the verb only: 'the leaf of the GLE deflects / moves...'." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q14c-ii", topicId: "phys-u2", conceptId: "plotting-the-field-of-a-bar-magnet",
     section: "B", questionRef: "2021 OL Q14(c)(ii)",
     questionText: "Describe an experiment to plot the magnetic field around a bar magnet.",
@@ -2800,6 +2815,19 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "convection", marks: 3, exactTermRequired: true },
     { id: "r-2", kind: "point", verbatim: "radiation", marks: 3, exactTermRequired: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2023-ol-q9-ii", topicId: "phys-2-1", conceptId: "u-value",
+    section: "B", questionRef: "2023 OL Q9(ii)",
+    questionText: "What is meant by the U-value of a material?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "measure of the conducting/insulating property", marks: 6, accepts: ["measure of the insulating property","the rate of transfer of energy (through unit area of a material when there is a temperature difference of 1 K between the two sides)"], contextNote: "The scheme prints this as 'measure of the conducting/insulating property' — either word is equally acceptable." },
     ],
   } as SecCard,
   {

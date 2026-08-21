@@ -4891,7 +4891,7 @@
    {
     "id": "r-2",
     "kind": "alt",
-    "verbatim": "because temperature constant (stays at 250 °C)",
+    "verbatim": "because temperature constant (stays at 250 ⁰C)",
     "accepts": [
      "because only temperature change affects (changes) Kc",
      "because Kc only temperature dependent",
@@ -15035,7 +15035,7 @@
    {
     "id": "r-1",
     "kind": "allOf",
-    "verbatim": "sublevel: 2p; orbital: e.g. 2px",
+    "verbatim": "sublevel: 2p // (Ne has) 3 // can be > 2 e– (3) orbital: e.g. 2px",
     "marks": 6,
     "route": "a",
     "contextNote": "3 marks for the sublevel element, 3 for the orbital element."
@@ -15490,7 +15490,7 @@
    {
     "id": "r-2",
     "kind": "alt",
-    "verbatim": "equal number of moles (of gas) on both sides",
+    "verbatim": "equal number of moles/molecules (of gas) on both sides",
     "accepts": [
      "equal number of molecules (of gas) on both sides"
     ],
@@ -26159,7 +26159,7 @@
    {
     "id": "r-2",
     "kind": "alt",
-    "verbatim": "reaction with fewer moles (of gas) favoured",
+    "verbatim": "reaction with fewer moles/molecules (of gas) favoured",
     "accepts": [
      "reaction with fewer molecules (of gas) favoured"
     ],
@@ -26491,7 +26491,7 @@
    {
     "id": "r-1",
     "kind": "alt",
-    "verbatim": "high performance liquid chromatography",
+    "verbatim": "high performance/pressure liquid chromatography",
     "accepts": [
      "high pressure liquid chromatography"
     ],

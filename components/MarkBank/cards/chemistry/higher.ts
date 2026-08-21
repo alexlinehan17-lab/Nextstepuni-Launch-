@@ -1413,6 +1413,21 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC022ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2022 Higher Level — © State Examinations Commission.",
+    id: "chem-2022-hl-q7-d-iii", topicId: "chem-3-3", conceptId: "kc-unaffected-by-concentration",
+    section: "B", questionRef: "2022 HL Q7(d)(iii)",
+    stem: "CO (g) + 2H2 (g) ⇌ CH3OH (g). Equilibrium was re-established in the 5.0 litre container at 250 °C after the addition of some more carbon monoxide to the initial equilibrium mixture.",
+    questionText: "How was the value of Kc affected when more carbon monoxide was added and equilibrium was allowed to re-establish? Explain your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "gate", verbatim: "unchanged", marks: 3, accepts: ["no effect"], contextNote: "HOW must be correct for EXPLAIN to be awarded marks." },
+    { id: "r-2", kind: "alt", verbatim: "because temperature constant (stays at 250 ⁰C)", marks: 3, accepts: ["because only temperature change affects (changes) Kc","because Kc only temperature dependent","because Kc unaffected (unchanged) by changes in concentration","because concentrations (amounts) of other equilibrium substances (chemicals) also change keeping Kc constant"] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC022ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2022 Higher Level — © State Examinations Commission.",
     id: "chem-2022-hl-q8-a-i", topicId: "chem-4-2", conceptId: "acidity-of-carboxylic-acid-group",
     section: "B", questionRef: "2022 HL Q8(a)(i)",
     questionText: "Explain, with the aid of a diagram, the acidic nature of the carboxylic acid functional group.",
@@ -3574,6 +3589,21 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "no change in temperature", marks: 3, accepts: ["Kc is only affected by temperature"] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC022ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2024 Higher Level — © State Examinations Commission.",
+    id: "chem-2024-hl-q7-c-i", topicId: "chem-3-3", conceptId: "pressure-change-and-equilibrium-position",
+    section: "B", questionRef: "2024 HL Q7(c)(i)",
+    stem: "H2O(g) + CO(g) ⇌ H2(g) + CO2(g)  ∆H = –38.8 kJ mol–1, in a container of fixed volume V.",
+    questionText: "State the effect, if any, of decreasing the pressure in the container on the percentage conversion of steam to hydrogen. Justify your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "no effect", marks: 3 },
+    { id: "r-2", kind: "alt", verbatim: "equal number of moles/molecules (of gas) on both sides", marks: 2, accepts: ["equal number of molecules (of gas) on both sides"] },
     ],
   } as SecCard,
   {
