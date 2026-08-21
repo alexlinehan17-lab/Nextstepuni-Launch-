@@ -360,7 +360,7 @@ const HeroInner: React.FC<HeroInnerProps> = ({ config, stats, nextUp, onContinue
               {config.number}
             </span>
             <span className="h-px w-8 shrink-0" style={{ background: `${deep}40` }} />
-            <span className="font-mono text-[10px] uppercase tracking-[0.22em]" style={{ color: `${deep}AA` }}>
+            <span className="font-mono text-[10px] uppercase tracking-[0.22em]" style={{ color: deep }}>
               {config.worldName}
             </span>
           </div>
@@ -389,11 +389,11 @@ const HeroInner: React.FC<HeroInnerProps> = ({ config, stats, nextUp, onContinue
             deep={deep}
             size={72}
           />
-          <div className="text-[13px] leading-snug" style={{ color: `${deep}CC` }}>
+          <div className="text-[13px] leading-snug" style={{ color: deep }}>
             <p className="font-semibold">
               {stats.completed === 0 ? 'Not started yet' : stats.completed === stats.total ? 'World complete' : `${Math.round(stats.percent)}% complete`}
             </p>
-            <p className="mt-0.5" style={{ color: `${deep}99` }}>
+            <p className="mt-0.5" style={{ color: deep }}>
               {stats.total} module{stats.total === 1 ? '' : 's'} in this world
             </p>
           </div>
@@ -404,7 +404,7 @@ const HeroInner: React.FC<HeroInnerProps> = ({ config, stats, nextUp, onContinue
       <div className="md:col-span-5 md:pl-8 md:border-l flex flex-col" style={{ borderColor: `${mid}4D` }}>
         {nextUp ? (
           <>
-            <p className="font-mono text-[10px] font-bold uppercase tracking-[0.22em]" style={{ color: `${deep}AA` }}>
+            <p className="font-mono text-[10px] font-bold uppercase tracking-[0.22em]" style={{ color: deep }}>
               {eyebrow}
             </p>
             <h3 className="font-serif text-[24px] md:text-[28px] font-medium leading-tight tracking-tight text-[#1A1A1A] mt-3">
@@ -421,7 +421,7 @@ const HeroInner: React.FC<HeroInnerProps> = ({ config, stats, nextUp, onContinue
 
             {/* Section preview */}
             <div className="mt-5 md:mt-6 rounded-xl p-3.5" style={{ border: '1px solid #d0cdc8' }}>
-              <p className="font-mono text-[10px] font-bold uppercase tracking-[0.22em]" style={{ color: `${deep}AA` }}>
+              <p className="font-mono text-[10px] font-bold uppercase tracking-[0.22em]" style={{ color: deep }}>
                 {nextUp.isContinue
                   ? `Up next · Section ${nextUp.sectionNumber} of ${nextUp.course.sectionsCount}`
                   : `Begins with · Section 1 of ${nextUp.course.sectionsCount}`}
@@ -462,7 +462,7 @@ const HeroInner: React.FC<HeroInnerProps> = ({ config, stats, nextUp, onContinue
           </>
         ) : (
           <div className="flex-1 flex items-center">
-            <p className="text-[14px]" style={{ color: `${deep}AA` }}>
+            <p className="text-[14px]" style={{ color: deep }}>
               No modules available in this world yet.
             </p>
           </div>

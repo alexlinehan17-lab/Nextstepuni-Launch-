@@ -21,8 +21,8 @@ import { resolve } from 'node:path';
 const src = readFileSync(resolve(__dirname, '..', 'components/worldPalette.ts'), 'utf8');
 
 const worlds = [...src.matchAll(
-  /'([a-z-]+)':\s*\{[^}]*?mid: '(#[0-9a-fA-F]{6})',(?:\s*midText: '(#[0-9a-fA-F]{6})',)?[^}]*?deep: '(#[0-9a-fA-F]{6})',\s*deepDark: '(#[0-9a-fA-F]{6})'/g,
-)].map(m => ({ key: m[1], mid: m[2], midText: m[3], deep: m[4], deepDark: m[5] }));
+  /'([a-z-]+)':\s*\{[^}]*?mid: '(#[0-9a-fA-F]{6})',(?:\s*midInkLight: '(#[0-9a-fA-F]{6})',\s*midInkDark: '(#[0-9a-fA-F]{6})',)?[^}]*?deep: '(#[0-9a-fA-F]{6})',\s*deepDark: '(#[0-9a-fA-F]{6})'/g,
+)].map(m => ({ key: m[1], mid: m[2], midInkLight: m[3], midInkDark: m[4], deep: m[5], deepDark: m[6] }));
 
 const srgb = (hex: string) => [1, 3, 5].map(i => {
   const v = parseInt(hex.slice(i, i + 2), 16) / 255;
@@ -62,11 +62,14 @@ describe('module world ink', () => {
     }
   });
 
-  it('clears AA for the small mono numerals', () => {
+  it('clears AA for the small mono numerals, in both themes', () => {
     for (const w of worlds) {
-      const tone = w.midText ?? w.mid;
-      const r = ratio(tone, DARK_CARD);
-      expect(r, `${w.key} mid tone is ${r.toFixed(2)}:1`).toBeGreaterThanOrEqual(4.5);
+      const d = ratio(w.midInkDark ?? w.mid, DARK_CARD);
+      expect(d, `${w.key} dark mid ink is ${d.toFixed(2)}:1`).toBeGreaterThanOrEqual(4.5);
+      // Light is measured on #f0f0f0, not white: these labels appear on the
+      // editorial pages too, and that canvas is the binding surface.
+      const l = ratio(w.midInkLight ?? w.mid, '#f0f0f0');
+      expect(l, `${w.key} light mid ink is ${l.toFixed(2)}:1`).toBeGreaterThanOrEqual(4.5);
     }
   });
 
@@ -75,7 +78,7 @@ describe('module world ink', () => {
     // midText is a TEXT swap only. Lightening the fill while the button label
     // stays white took those buttons from 3.6:1 to 2.4:1.
     const palette = readFileSync(resolve(__dirname, '..', 'components/worldPalette.ts'), 'utf8');
-    expect(palette).toMatch(/midText: \(t: Pick<WorldTones, 'mid' \| 'midText'>\)/);
+    expect(palette).toContain("midText: (t: Pick<WorldTones, 'mid' | 'midInkLight' | 'midInkDark'>)");
     expect(palette).not.toContain('mid: (t:');
   });
 

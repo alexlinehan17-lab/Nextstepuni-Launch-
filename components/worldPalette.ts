@@ -18,10 +18,13 @@ export interface WorldTones {
   blob: string;
   /** Saturated mid-tone — italic sub-headline, primary button, progress fill. */
   mid: string;
-  /** `mid` lightened for use as TEXT in dark. It is not a background swap: `mid`
-   *  also fills buttons and progress bars, and lightening those while the label
-   *  stays white takes them from 3.6:1 to 2.4:1. Backgrounds keep `mid`. */
-  midText?: string;
+  /** `mid` as TEXT, per theme. Not a background swap: `mid` also fills buttons
+   *  and progress bars, and lightening those while the label stays white takes
+   *  them from 3.6:1 to 2.4:1. Fills always use `mid`.
+   *  On light the authored `mid` runs 3.0-4.2:1 on a white card; on dark it runs
+   *  3.9-4.4:1 on the raised card. Both ends need their own tone. */
+  midInkLight?: string;
+  midInkDark?: string;
   /** Deeper shade for emphasis text, used at 60-80% alpha via a hex suffix. */
   deep: string;
   /** Same hue as `deep`, raised in luminance. The authored tone is chosen to sit
@@ -30,11 +33,11 @@ export interface WorldTones {
 }
 
 export const WORLD_TONES: Record<string, WorldTones> = {
-  'architecture-mindset':    { blob: '#B8C9E5', mid: '#5B7DB0', midText: '#8FA9CF', deep: '#1e3a5f', deepDark: '#C2D6EF' },
-  'science-growth':          { blob: '#F5C9A8', mid: '#C4873B', midText: '#D9A25F', deep: '#7c4a14', deepDark: '#F3CFA4' },
-  'learning-cheat-codes':    { blob: '#B8DDC8', mid: '#F26B1F', midText: '#F58C4E', deep: '#115e4f', deepDark: '#AFE4D3' },
-  'subject-specific-science':{ blob: '#F0BFCE', mid: '#C76489', midText: '#DC8FAB', deep: '#8a2860', deepDark: '#F9CFE3' },
-  'exam-zone':               { blob: '#F5BFB0', mid: '#D4564E', midText: '#E38B84', deep: '#7f1d1d', deepDark: '#FBD2D2' },
+  'architecture-mindset':    { blob: '#B8C9E5', mid: '#5B7DB0', midInkLight: '#4D6D9F', midInkDark: '#8FA9CF', deep: '#1e3a5f', deepDark: '#C2D6EF' },
+  'science-growth':          { blob: '#F5C9A8', mid: '#C4873B', midInkLight: '#90632B', midInkDark: '#D9A25F', deep: '#7c4a14', deepDark: '#F3CFA4' },
+  'learning-cheat-codes':    { blob: '#B8DDC8', mid: '#F26B1F', midInkLight: '#B8490B', midInkDark: '#F58C4E', deep: '#115e4f', deepDark: '#AFE4D3' },
+  'subject-specific-science':{ blob: '#F0BFCE', mid: '#C76489', midInkLight: '#B6426D', midInkDark: '#DC8FAB', deep: '#8a2860', deepDark: '#F9CFE3' },
+  'exam-zone':               { blob: '#F5BFB0', mid: '#D4564E', midInkLight: '#C53930', midInkDark: '#E38B84', deep: '#7f1d1d', deepDark: '#FBD2D2' },
 };
 
 /**
@@ -48,7 +51,8 @@ export const useWorldTones = () => {
   return React.useMemo(() => ({
     ink: (t: Pick<WorldTones, 'deep' | 'deepDark'>) => (darkMode ? t.deepDark : t.deep),
     /** For TEXT. Backgrounds and fills must use `t.mid` directly. */
-    midText: (t: Pick<WorldTones, 'mid' | 'midText'>) => (darkMode ? t.midText ?? t.mid : t.mid),
+    midText: (t: Pick<WorldTones, 'mid' | 'midInkLight' | 'midInkDark'>) =>
+      (darkMode ? t.midInkDark ?? t.mid : t.midInkLight ?? t.mid),
     /**
      * Fill and ink for a CTA carrying the world colour.
      *

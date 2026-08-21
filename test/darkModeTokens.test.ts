@@ -51,6 +51,11 @@ describe('dark mode tokens', () => {
       // mid-orange either way, and dark ink clears AA on it where white does
       // not (white on #F26B1F is only 3.04:1).
       '--ink-on-accent',
+      // Text variants of two fill colours: #F26B1F is 3.04:1 and #F59E0B is
+      // 2.15:1 on white, so neither is usable as an ink there. Dark needs no
+      // equivalent — on a dark ground the authored colours already pass.
+      '--accent-text',
+      '--warning-text',
     ]);
     const missing = [...light.keys()]
       .filter(k => !dark.has(k) && !themeIndependent.has(k));
@@ -67,27 +72,42 @@ describe('dark mode tokens', () => {
   });
 
   /**
-   * Light mode was explicitly out of scope for the dark-mode work. These are the
-   * values the editorial pages and the login CTA used before it, pinned so a
-   * later token tidy-up cannot quietly restyle light mode.
+   * The light ink scale, retuned August 2026.
+   *
+   * Measured on #f0f0f0, the editorial canvas — the darkest light surface and so
+   * the binding one. The previous scale had muted at 4.24:1, label at 2.69:1 and
+   * faint at 2.07:1; the bottom two were never legible text. Asserted by
+   * contrast rather than pinned to literals, so the palette can be re-tuned
+   * without rewriting the test — it only has to stay readable.
    */
-  it('keeps the pre-existing light values byte-identical', () => {
-    const pinned: Record<string, string> = {
-      '--page-canvas': '#f0f0f0',
-      '--page-body': '#5a5550',
-      '--page-muted': '#7a7068',
-      '--page-label': '#9e9186',
-      '--ink-faint': '#B0A898',
-      '--hairline': '#EDEBE8',
-      '--accent-tint': '#FDEEDF',
-      '--accent-tint-ink': '#8C3A0E',
-      '--success-tint': '#E8F2EC',
-      '--success-tint-ink': '#1F5F3E',
-      '--cta-invert-bg': '#FFFFFF',
-      '--cta-invert-ink': '#1A1A1A',
+  it('clears AA on the editorial canvas, the darkest light surface', () => {
+    const CANVAS = '#f0f0f0';
+    const srgb = (hex: string) => [1, 3, 5].map(i => {
+      const v = parseInt(hex.slice(i, i + 2), 16) / 255;
+      return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
+    });
+    const lu = (hex: string) => { const [r, g, b] = srgb(hex); return 0.2126 * r + 0.7152 * g + 0.0722 * b; };
+    const cr = (a: string, b: string) => {
+      const [l1, l2] = [lu(a), lu(b)].sort((x, y) => y - x);
+      return (l1 + 0.05) / (l2 + 0.05);
     };
-    for (const [name, value] of Object.entries(pinned)) {
-      expect(light.get(name)?.toLowerCase(), `${name} drifted in light mode`).toBe(value.toLowerCase());
+    for (const token of ['--ink-primary', '--ink-secondary', '--ink-muted', '--ink-faint',
+                         '--page-body', '--page-muted', '--page-label',
+                         '--accent-text', '--warning-text']) {
+      const v = light.get(token);
+      expect(v, `${token} missing`).toBeDefined();
+      const r = cr(v!, CANVAS);
+      expect(r, `${token} is ${r.toFixed(2)}:1 on the ${CANVAS} canvas`).toBeGreaterThanOrEqual(4.5);
+    }
+  });
+
+  it('keeps the muted steps distinguishable from each other', () => {
+    // Raising every step to exactly 4.5 collapses muted, label and faint into a
+    // single tone. Three steps is what the 4.5-7:1 band actually fits.
+    const steps = ['--page-body', '--page-muted', '--page-label']
+      .map(t => parseInt(light.get(t)!.slice(1, 3), 16));
+    for (let i = 1; i < steps.length; i++) {
+      expect(steps[i] - steps[i - 1], 'the muted steps have collapsed together').toBeGreaterThanOrEqual(8);
     }
   });
 });

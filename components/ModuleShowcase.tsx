@@ -306,7 +306,7 @@ export default function ModuleShowcase({
                       {theme.number}
                     </span>
                     <span className="h-px w-8 shrink-0" style={{ background: `${theme.deep}40` }} />
-                    <span className="font-mono text-[10px] uppercase tracking-[0.22em]" style={{ color: `${theme.deep}AA` }}>
+                    <span className="font-mono text-[10px] uppercase tracking-[0.22em]" style={{ color: theme.deep }}>
                       {theme.worldName}
                     </span>
                   </div>
@@ -352,7 +352,7 @@ export default function ModuleShowcase({
 
                     {/* Begins with panel — muted secondary chip */}
                     <div className="mt-5 px-3 py-2 rounded-lg" style={{ background: '#F1F0ED', border: '1px solid #d0cdc8' }}>
-                      <p className="font-mono text-[10px] font-bold uppercase tracking-[0.22em]" style={{ color: `${theme.deep}AA` }}>
+                      <p className="font-mono text-[10px] font-bold uppercase tracking-[0.22em]" style={{ color: theme.deep }}>
                         {isInProgress
                           ? `Up next · Section ${startStep} of ${course.sectionsCount}`
                           : `Begins with · Section 1 of ${course.sectionsCount}`}
@@ -435,14 +435,14 @@ export default function ModuleShowcase({
                 {/* ── Metadata footer — full width below both columns ── */}
                 <div className="mt-7 pt-5 flex flex-wrap items-baseline gap-x-8 gap-y-3" style={{ borderTop: '1px solid rgba(0,0,0,0.06)' }}>
                   <div className="flex items-baseline gap-2">
-                    <span className="font-mono text-[10px] font-bold uppercase tracking-[0.18em]" style={{ color: `${theme.deep}99` }}>Progress</span>
+                    <span className="font-mono text-[10px] font-bold uppercase tracking-[0.18em]" style={{ color: theme.deep }}>Progress</span>
                     <span className="text-[13px] font-medium" style={{ color: isCompleted ? tones.midText(rawTheme) : 'var(--ink-primary)' }}>
                       {isCompleted ? 'Completed' : isInProgress ? `${progress?.unlockedSection} of ${course.sectionsCount} sections` : 'Not started'}
                     </span>
                   </div>
                   {course.tags.length > 0 && (
                     <div className="flex items-baseline gap-2 min-w-0">
-                      <span className="font-mono text-[10px] font-bold uppercase tracking-[0.18em]" style={{ color: `${theme.deep}99` }}>Topics</span>
+                      <span className="font-mono text-[10px] font-bold uppercase tracking-[0.18em]" style={{ color: theme.deep }}>Topics</span>
                       <span className="text-[13px] font-medium text-[#1A1A1A] truncate">{course.tags.slice(0, 3).join(', ')}</span>
                     </div>
                   )}
@@ -599,7 +599,7 @@ export default function ModuleShowcase({
               </AnimatePresence>
             </div>
 
-            <p className="text-center mt-3 font-mono text-[10px] font-bold uppercase tracking-[0.22em]" style={{ color: `${theme.deep}99` }}>
+            <p className="text-center mt-3 font-mono text-[10px] font-bold uppercase tracking-[0.22em]" style={{ color: theme.deep }}>
               Module {safeIndex + 1} of {courses.length}
             </p>
           </div>

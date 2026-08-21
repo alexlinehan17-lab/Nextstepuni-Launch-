@@ -9,10 +9,25 @@
   --surface-raised: #FFFFFF;
   --outline-strong: #383838;
   --outline-soft: #D8D3CD;
+  /* Light ink scale, retuned August 2026.
+     Measured on the #f0f0f0 editorial canvas — the darkest light surface and
+     therefore the binding one. The old scale had muted at 4.24:1, label at
+     2.69:1 and faint at 2.07:1; the bottom two were not legible text.
+     Above 4.5:1 the usable band is roughly 4.5-7, which fits three steps, not
+     four, so label and faint now share one tone. Compressing the scale is the
+     cost of the bottom of it being readable at all. */
   --ink-primary: #1A1A1A;
   --ink-secondary: #5F5A55;
-  --ink-muted: #8A8178;
+  --ink-muted: #69605A;
   --ink-on-accent: #1A1A1A;
+  /* The brand orange, darkened for use AS TEXT on a light surface. #F26B1F is
+     3.04:1 on white and 2.67:1 on the editorial canvas — it is a fill colour,
+     not an ink. --accent stays exactly as authored for fills, icons and rules;
+     only text reaches for this. */
+  --accent-text: #B84A0C;
+  /* Amber reads as a status colour but #F59E0B is 2.15:1 on white — a fill, not
+     an ink. Same split as the accent. */
+  --warning-text: #96600A;
   /* Student dashboard data-visualisation palette. Series colours are stable
      across charts; structural colours stay neutral and theme-aware. */
   --dashboard-series-1: #F26B1F;
@@ -45,12 +60,12 @@
   --info-tint-ink: #2B4C6B;
   --page-canvas: #f0f0f0;
   --page-body: #5a5550;
-  --page-muted: #7a7068;
-  --page-label: #9e9186;
+  --page-muted: #69605A;
+  --page-label: #766A5F;
   --cta-invert-bg: #FFFFFF;
   --cta-invert-ink: #1A1A1A;
   --cta-invert-border: rgba(26, 26, 26, 0.55);
-  --ink-faint: #B0A898;
+  --ink-faint: #766A5F;
   --hairline: #EDEBE8;
   --accent-tint: #FDEEDF;
   --accent-tint-ink: #8C3A0E;
@@ -406,6 +421,145 @@
       [style*="color: white"], [style*="color: rgb(255, 255, 255)"],
       [style*="color: rgb(253, 248, 240)"]) {
   color: var(--ink-on-accent) !important;
+}
+
+/*
+ * The light ink scale, applied to the literals that predate it.
+ *
+ * ~600 inline styles across 70 components hardcode the old greys rather than
+ * reaching for a token: #9e9186 measured 2.69:1 on the editorial canvas,
+ * #b0a898 measured 2.07:1. Remapping here rather than rewriting 70 files keeps
+ * the change reviewable and means a stray literal in new code is corrected too.
+ *
+ * Light only. Dark already remaps these through the .product-shell /
+ * .theme-compat layer, and must not be caught twice.
+ */
+
+html:not(.dark) [style^="color: rgb(158, 145, 134)"],
+html:not(.dark) [style*="; color: rgb(158, 145, 134)"],
+html:not(.dark) [class*="text-[#9e9186]"],
+html:not(.dark) [class*="text-[#9E9186]"] {
+  color: var(--page-label) !important;
+}
+
+html:not(.dark) [style^="color: rgb(176, 168, 152)"],
+html:not(.dark) [style*="; color: rgb(176, 168, 152)"],
+html:not(.dark) [class*="text-[#b0a898]"],
+html:not(.dark) [class*="text-[#B0A898]"] {
+  color: var(--ink-faint) !important;
+}
+
+html:not(.dark) [style^="color: rgb(122, 112, 104)"],
+html:not(.dark) [style*="; color: rgb(122, 112, 104)"],
+html:not(.dark) [class*="text-[#7a7068]"],
+html:not(.dark) [class*="text-[#7A7068]"] {
+  color: var(--page-muted) !important;
+}
+
+html:not(.dark) [style^="color: rgb(138, 129, 120)"],
+html:not(.dark) [style*="; color: rgb(138, 129, 120)"],
+html:not(.dark) [class*="text-[#8a8178]"],
+html:not(.dark) [class*="text-[#8A8178]"] {
+  color: var(--ink-muted) !important;
+}
+
+html:not(.dark) [style^="color: rgb(141, 133, 126)"],
+html:not(.dark) [style*="; color: rgb(141, 133, 126)"],
+html:not(.dark) [class*="text-[#8d857e]"],
+html:not(.dark) [class*="text-[#8D857E]"] {
+  color: var(--ink-muted) !important;
+}
+
+/*
+ * The accent as text, on light only.
+ *
+ * Scoped away from svg so illustration and icon fills keep the authored orange;
+ * non-text contrast is held to 3:1, which #F26B1F clears. Dark mode is excluded
+ * because the accent sits on a dark ground there and already passes.
+ */
+/* `[style*="color: …"]` also matches `background-color: …`, which recoloured
+   labels sitting ON an orange fill. Anchor to the start of the attribute or
+   to a "; " boundary so only a real colour declaration matches. */
+html:not(.dark) :is(
+    [style^="color: rgb(242, 107, 31)"],
+    [style*="; color: rgb(242, 107, 31)"],
+    [class*="text-[#F26B1F]"],
+    [class*="text-[#f26b1f]"],
+    [class*="text-[var(--accent-hex)]"],
+    [class*="text-[var(--accent-dark-hex)]"]):not(svg):not(path) {
+  color: var(--accent-text) !important;
+}
+
+html:not(.dark) [style^="color: rgb(128, 128, 128)"],
+html:not(.dark) [style*="; color: rgb(128, 128, 128)"],
+html:not(.dark) [class*="text-[#808080]"],
+html:not(.dark) [class*="text-[#808080]"] {
+  color: var(--ink-muted) !important;
+}
+
+html:not(.dark) [style^="color: rgb(140, 140, 140)"],
+html:not(.dark) [style*="; color: rgb(140, 140, 140)"],
+html:not(.dark) [class*="text-[#8c8c8c]"],
+html:not(.dark) [class*="text-[#8C8C8C]"] {
+  color: var(--ink-muted) !important;
+}
+
+html:not(.dark) [style^="color: rgb(168, 162, 158)"],
+html:not(.dark) [style*="; color: rgb(168, 162, 158)"],
+html:not(.dark) [class*="text-[#a8a29e]"],
+html:not(.dark) [class*="text-[#A8A29E]"] {
+  color: var(--page-label) !important;
+}
+
+html:not(.dark) [style^="color: rgb(196, 192, 188)"],
+html:not(.dark) [style*="; color: rgb(196, 192, 188)"],
+html:not(.dark) [class*="text-[#c4c0bc]"],
+html:not(.dark) [class*="text-[#C4C0BC]"] {
+  color: var(--page-label) !important;
+}
+
+html:not(.dark) [style^="color: rgb(245, 158, 11)"],
+html:not(.dark) [style*="; color: rgb(245, 158, 11)"],
+html:not(.dark) [class*="text-[#f59e0b]"],
+html:not(.dark) [class*="text-[#F59E0B]"] {
+  color: var(--warning-text) !important;
+}
+
+/* Translucent black as text. Only these three alphas fail — 0.35, 0.45 and
+   0.5 flatten to 2.43, 3.36 and 3.95:1 on white. 0.55 and above already
+   clear AA and are left exactly as authored. */
+html:not(.dark) [style^="color: rgba(0, 0, 0, 0.35)"],
+html:not(.dark) [style*="; color: rgba(0, 0, 0, 0.35)"],
+html:not(.dark) [style^="color: rgba(0, 0, 0, 0.45)"],
+html:not(.dark) [style*="; color: rgba(0, 0, 0, 0.45)"],
+html:not(.dark) [style^="color: rgba(0, 0, 0, 0.5)"],
+html:not(.dark) [style*="; color: rgba(0, 0, 0, 0.5)"] {
+  color: var(--ink-muted) !important;
+}
+
+/* The muted utility steps, on light.
+   tailwind.config.ts sets zinc-400 to #91918D, which is 3.04-3.16:1 on the
+   light surfaces — fine for an icon (non-text is held to 3:1) but not for the
+   9-11px labels it is mostly used on. amber-500 is a status fill at 2.07:1. */
+html:not(.dark) .text-zinc-400,
+html:not(.dark) .text-stone-400,
+html:not(.dark) .text-neutral-400 { color: var(--ink-muted) !important; }
+
+html:not(.dark) .text-amber-500,
+html:not(.dark) .text-amber-400 { color: var(--warning-text) !important; }
+
+html:not(.dark) [style^="color: rgb(150, 139, 129)"],
+html:not(.dark) [style*="; color: rgb(150, 139, 129)"],
+html:not(.dark) [class*="text-[#968b81]"],
+html:not(.dark) [class*="text-[#968B81]"] {
+  color: var(--page-label) !important;
+}
+
+html:not(.dark) [style^="color: rgb(160, 151, 141)"],
+html:not(.dark) [style*="; color: rgb(160, 151, 141)"],
+html:not(.dark) [class*="text-[#a0978d]"],
+html:not(.dark) [class*="text-[#A0978D]"] {
+  color: var(--page-label) !important;
 }
 
 /* Disabled content must still be readable; opacity compounds badly on dark. */

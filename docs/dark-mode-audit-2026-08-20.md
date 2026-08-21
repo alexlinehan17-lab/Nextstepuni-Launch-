@@ -353,3 +353,74 @@ and the naked icon is preserved.
 |---|---|
 | All 15 base views | **0** |
 | All 5 category views | **0** |
+
+---
+
+# Light mode
+
+Swept with the same auditor, signed in, across all 15 base views and all 5
+category views: **1,272 failures across 64 distinct colour pairs.**
+
+## The palette could not carry four muted steps
+
+The binding surface is `#f0f0f0`, the editorial canvas — darker than white, so
+harder for dark text. Tuning every muted token to 4.5:1 there produces
+`#736b64`, `#756b64`, `#776a60`, `#756c5a`: four tones that are the same colour.
+Raising the bottom of the scale necessarily compresses it, because above 4.5:1
+the usable band is only about 4.5–7.
+
+So the scale is now three steps rather than four:
+
+| step | was | now | on `#f0f0f0` |
+|---|---|---|---|
+| body / secondary | `#5a5550` | unchanged | 6.44 |
+| muted | `#7a7068` | `#69605A` | 5.39 |
+| label / faint | `#9e9186` / `#B0A898` | `#766A5F` | 4.61 |
+
+`--page-label` and `--ink-faint` now share a tone. They were 2.69:1 and 2.07:1 —
+that band was never legible text, so nothing readable was lost by merging it.
+
+## Fills are not inks
+
+Three colours were being used as text that are fill colours:
+
+- the brand orange `#F26B1F` — **3.04:1** on white
+- amber `#F59E0B` — **2.15:1**
+- each world's `mid` — 3.05–4.20:1
+
+Each gains a text-only variant: `--accent-text` `#B84A0C`, `--warning-text`
+`#96600A`, and a per-world `midInkLight`. The fills themselves are untouched, so
+buttons, icons and progress bars keep their authored colour.
+
+## ~600 literals, remapped rather than rewritten
+
+Roughly 600 inline styles across 70 components hardcode the old greys instead of
+reaching for a token. They are remapped in CSS, light-only, the same way the dark
+compat layer works — reviewable in one place, and a stray literal in new code is
+corrected too.
+
+Translucent black text got the same treatment, but only for the three alphas that
+actually fail: 0.35, 0.45 and 0.5 flatten to 2.43, 3.36 and 3.95:1. From 0.55 up
+it already passes and is left exactly as authored.
+
+## Two bugs found in my own work
+
+`[style*="color: …"]` also matches `background-color: …`, because the shorter
+string is a substring of the longer one. That recoloured labels sitting *on* an
+orange fill, dark rust on orange at 1.71:1. Selectors are now anchored to the
+start of the attribute or to a `"; "` boundary.
+
+`midInkLight` was first tuned against white and measured 4.43:1 on the actual
+card. Retuned against `#f0f0f0`.
+
+# Final state
+
+| | base views | category views |
+|---|---|---|
+| Dark | **0** | **0** |
+| Light | **0** | 12 |
+
+The 12 are white on the world `mid` used as a button fill, 3.05–4.20:1, left at
+Alex's explicit call. It cannot be fixed by changing the ink — the mids are
+mid-luminance, so neither white nor dark ink clears AA on all five. Clearing it
+needs the fill darkened, which is a visible design change in both themes.
