@@ -40,21 +40,73 @@ contiguous. It needs the scheme re-extracted with table awareness -- a change
 that touches every card built from that file. The other two are 2022 and 2023,
 whose scheme PDFs are not in the repo at all.
 
-## Elsewhere in the bank — NOT Home Economics
+## Elsewhere in the bank — investigated 2026-08-21
 
-Home Economics is the only subject at zero drops. As of 2026-08-21:
+Home Economics and Agricultural Science build at **zero drops**. The rest:
 
-    business       575 built,  9 dropped
-    chemistry      718 built, 81 dropped
+    chemistry      720 built, 79 dropped
     physics        807 built, 44 dropped
     biology       1112 built, 53 dropped
-    agricultural   790 built,  0 dropped
+    business       575 built,  9 dropped
 
-Some of those are deliberate ("superseded by a card carrying its figure"), but
-**88 are provenance failures** -- marking points that cannot be found in their
-own scheme -- plus unverified figure alt text, content-free rows and
-too-short question text. `provcheck.mjs` is the tool for the provenance ones.
-Nobody has looked at these.
+**95 of those are provenance drops** — 134 marking points that cannot be found
+in their own scheme. `provdiag.mjs <subject> <card-id>` shows where each one
+stops matching.
+
+### The cause is the scheme markdown, not the cards
+
+I first read the build's "1 marking point" counts as ~41 cheap one-line fixes.
+**That was wrong.** Diagnosing them shows one dominant cause: the scheme
+markdown flattens TWO-DIMENSIONAL layout into lines, so any marking point that
+spans columns or a fraction can never be contiguous.
+
+    Runners (strawberries)        <- the card, correctly pairing method + example
+    Method    Runners  Root suckers  Leaflets  Bulbs      <- the scheme, row 1
+    examples: (strawberries) (holly bush) ...             <- the scheme, row 2
+
+"Runners" matches and then the scheme continues "rootsuckersleafletsbulbs..." --
+the next columns. Same for stacked fractions and isotope notation:
+`Kc = [NH3]² / [N2][H2]³` has its numerator and denominator on different lines
+with "(c) (i) WRITE:" between them. **70 of the 134 are mathematical.** It is the
+same root cause as the Home Economics held tables.
+
+### What was fixed
+
+`foldDigits` in `schemeText.mjs` folded mathematical bold DIGITS but not
+mathematical bold LETTERS, so `[𝐍𝐇𝟑]𝟐` normalised to `32` -- the letters were
+stripped as punctuation -- and could never match `[NH3]²`. The schemes contain
+94 distinct mathematical alphanumeric characters. Folding the whole
+U+1D400-U+1D7FF block via NFKD recovered 2 chemistry cards. Correct on
+principle regardless: 𝐇 IS H.
+
+### What was NOT done, and why
+
+Mechanical transforms recover only 27 of the 134, and every one of them changes
+the marking point: stripping "(strawberries)" from "Runners (strawberries)"
+loses the SEC's own example. That is degrading content to satisfy a gate, which
+is what the provenance rule exists to prevent. Not done.
+
+### The real fix, and what blocks it
+
+Re-extract the affected schemes with table awareness. PyMuPDF's `find_tables()`
+recovers these cleanly -- verified on the Home Economics bacteria table, 5 rows
+x 5 columns, columns intact. `extract-scheme.py` already rebuilds words from
+spans; it does not yet handle table structure.
+
+Design it as an APPEND -- emit each table's cells as extra lines rather than
+replacing the flattened text. Existing substrings stay present, so no card that
+passes today can start failing; only cell-spanning claims gain a match.
+
+**Blocked on missing PDFs for most of it.** Scheme PDFs in the repo cover only
+recent years, and the drops are spread across 2021-2025:
+
+    chemistry  2021:10 2022:5 2023:11 2024:18 2025:6   PDFs: 2024, 2025 only
+    physics    2021:6  2022:4 2023:1  2024:9  2025:6   PDFs: 2023, 2025 only
+    biology    2021:3  2022:7                          PDFs: 2023, 2025 only  -> reaches NONE
+    business   2021:1  2023:2 2024:4  2025:1           PDFs: 2024, 2025 only
+
+Roughly 36 of the 95 are reachable without adding PDFs. The rest need the
+marking-scheme PDFs for 2021-2023 added first.
 
 ## The loop, per paper
 1. python3 scratchpad/scout.py <year> <higher|ordinary>   -> Section C bounds + question map

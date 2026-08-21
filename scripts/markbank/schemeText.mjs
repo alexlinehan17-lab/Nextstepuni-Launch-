@@ -84,7 +84,13 @@ const SUP = { '⁰': '0', '¹': '1', '²': '2', '³': '3', '⁴': '4', '⁵': '5
 export const foldDigits = (t) => t
   .replace(/[₀-₉]/g, (c) => String(c.charCodeAt(0) - 0x2080))
   .replace(/[⁰¹²³⁴-⁹]/g, (c) => SUP[c] ?? c)
-  .replace(/[\u{1D7CE}-\u{1D7FF}]/gu, (c) => String((c.codePointAt(0) - 0x1D7CE) % 10));
+  // Mathematical Alphanumeric Symbols, the whole block. The SEC typesets
+  // formulae in it -- "Kc = [𝐍𝐇𝟑]𝟐" is bold capital N, bold capital H, bold
+  // three, bold two -- and the LETTERS were being stripped as punctuation while
+  // the digits folded, so "[NH3]²" could never match "[𝐍𝐇𝟑]𝟐". NFKD maps each
+  // back to the character it already is. Same principle as the digit folding
+  // above, and it does not loosen what counts as a match: 𝐇 IS H.
+  .replace(/[\u{1D400}-\u{1D7FF}]/gu, (c) => c.normalize('NFKD'));
 
 /** Case, spacing and punctuation removed; every character of an answer must
  *  still appear, in order. */
