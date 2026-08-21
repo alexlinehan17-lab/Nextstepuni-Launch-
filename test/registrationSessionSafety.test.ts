@@ -82,10 +82,34 @@ describe('registration session safety', () => {
     ).toEqual([]);
   });
 
-  it('still cleans up synchronously when registration itself fails', () => {
-    // The synchronous path is correct and must stay: if sign-up fails while the
-    // student is still on the registration screen, the half-made Auth account
-    // should be removed rather than left orphaned.
-    expect(source).toMatch(/catch[\s\S]{0,200}?await deleteUser\(createdUser\)/);
+  it('still reaps an orphan when registration fails before the /users write', () => {
+    // The synchronous path is correct and must stay: a wrong join code leaves a
+    // half-made Auth account, and removing it lets the student retry the same
+    // email instead of colliding with auth/email-already-in-use.
+    expect(source).toMatch(/await deleteUser\(createdUser\)/);
+  });
+
+  it('guards the synchronous cleanup so it cannot delete a live account', () => {
+    // This test previously asserted an UNGUARDED `catch ... deleteUser`, on the
+    // assumption that any synchronous failure means the student is still on the
+    // registration screen. That assumption was wrong, and it is the second half
+    // of the 2026-08-17 bug: the /users write can reject INSIDE the 8s window,
+    // by which point the student is signed in and AuthContext -- which follows
+    // onAuthStateChanged, not the registration callback -- has already routed
+    // them into onboarding. Deleting there destroys a live account exactly as
+    // the late-rejection path did.
+    //
+    // So the call must be gated on shouldReapAccount(), which is false once the
+    // /users write has been reached.
+    const deletion = source.indexOf('await deleteUser(createdUser)');
+    expect(deletion, 'the synchronous rollback disappeared entirely').toBeGreaterThan(-1);
+
+    const preceding = source.slice(Math.max(0, deletion - 300), deletion);
+    expect(
+      preceding,
+      'deleteUser(createdUser) is no longer guarded by shouldReapAccount(). Unguarded, it ' +
+        'deletes the account of a student who is already signed in and onboarding whenever ' +
+        'the /users write rejects within the 8s window.',
+    ).toMatch(/shouldReapAccount\(/);
   });
 });

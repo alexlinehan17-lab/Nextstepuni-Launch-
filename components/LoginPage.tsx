@@ -10,6 +10,7 @@ import { ArrowLeft, Eye, EyeOff, School, GraduationCap, ArrowRight, Check, KeyRo
 import { Capacitor } from '@capacitor/core';
 import { authorizeWithApple } from '../utils/appleAuth';
 import app, { auth, db } from '../firebase';
+import { shouldReapAccount } from '../utils/registrationRollback';
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile, deleteUser, sendPasswordResetEmail, sendEmailVerification, GoogleAuthProvider, signInWithPopup, signInWithCredential } from 'firebase/auth';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { getFunctions, httpsCallable } from 'firebase/functions';
@@ -641,6 +642,10 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     }
     const selectedAvatar = avatar || defaultAvatar;
     let createdUser: any = null;
+    // Did we get as far as the /users write? Everything before it (join code,
+    // ID token) leaves an account that never became usable and SHOULD be
+    // reaped. The write itself does not -- see the catch.
+    let userDocStarted = false;
     try {
       const cred = await createUserWithEmailAndPassword(auth, registrationEmail, password);
       createdUser = cred.user;
@@ -698,6 +703,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           { silent: true },
         );
       };
+      userDocStarted = true;
       await writeUserDoc(
         setDoc(doc(db, 'users', createdUser.uid), userDocPayload, { merge: true }),
         'LoginPage.registerUserDoc',
@@ -712,7 +718,37 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         role: 'student',
       });
     } catch (err: any) {
-      if (createdUser) {
+      // A failed /users write must NEVER cost the student their account.
+      //
+      // The auth account is valid at this point; only the doc write failed. The
+      // student is already signed in -- AuthContext follows onAuthStateChanged,
+      // not handleLoginSuccess -- so deleting here signs them out mid-flow and
+      // destroys the account they just made, with no error that explains it.
+      //
+      // The late-rejection path was fixed this way on 2026-08-17. This is the
+      // same race landing INSIDE the 8s window instead of after it, and it was
+      // still deleting. Retry the write and carry on: setDoc(merge) is
+      // idempotent, and AuthContext's no-user-doc fallback covers the student
+      // until it lands.
+      if (createdUser && !shouldReapAccount({ hasAccount: true, userDocStarted })) {
+        // No retry call here: writeUserDoc registers onLateRejection on the
+        // write itself, so it has already fired for THIS rejection. Retrying
+        // again would just issue a duplicate setDoc.
+        trackFunnel('register_succeeded');
+        handleLoginSuccess({
+          uid: createdUser.uid,
+          name: name.trim(),
+          avatar: selectedAvatar,
+          school,
+          role: 'student',
+        });
+        setIsLoading(false);
+        return;
+      }
+      // Everything before the write leaves an orphaned auth account (a wrong
+      // join code is the common one). Reaping it is right: it lets the student
+      // retry with the same email instead of hitting email-already-in-use.
+      if (shouldReapAccount({ hasAccount: !!createdUser, userDocStarted })) {
         try { await deleteUser(createdUser); } catch (rollbackErr) {
           console.error('Failed to clean up auth account after registration failure:', rollbackErr);
         }
