@@ -464,6 +464,10 @@
       [style^="color: rgb(253, 248, 240)"], [style*="; color: rgb(253, 248, 240)"],
       [style^="color: rgb(253, 233, 221)"], [style*="; color: rgb(253, 233, 221)"],
       [style^="color: rgba(255, 255, 255"], [style*="; color: rgba(255, 255, 255"],
+      /* Tailwind's alpha-white utilities. `text-white/80` composites to
+         #FCE1D2 on the accent -- 2.45:1 -- and is a class, not an inline
+         style, so none of the matchers above caught it. */
+      [class*="text-white/"],
       [class*="text-[#FDE9DD]"], [class*="text-[#fde9dd]"]) {
   color: var(--ink-on-accent) !important;
 }
