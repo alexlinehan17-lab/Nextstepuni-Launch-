@@ -250,7 +250,18 @@
 .dark :is(.product-shell, .theme-compat) [class*="bg-[#FAF9F7]"],
 .dark :is(.product-shell, .theme-compat) [class*="bg-[#FAF7F4]"],
 .dark :is(.product-shell, .theme-compat) [class*="bg-[#FDF8F0]"],
-.dark :is(.product-shell, .theme-compat) [class*="bg-[#f0f0f0]"] {
+.dark :is(.product-shell, .theme-compat) [class*="bg-[#f0f0f0]"],
+/* Translucent white reads as a light surface just as much as an opaque one,
+   but matched none of the rules above -- so onboarding's stage chips kept a
+   light fill while their ink was remapped light, landing at 1.11:1.
+   HIGH ALPHA ONLY (>=0.8). Low-alpha white is a different thing entirely: a
+   deliberate wash over a coloured band (deck chips at 0.18, Future Finder at
+   0.25, the timetable type badge at 0.30). Darkening those would put their
+   ink on the wrong ground -- it would have undone the timetable badge fix. */
+.dark :is(.product-shell, .theme-compat) [style*="background: rgba(255, 255, 255, 0.8"],
+.dark :is(.product-shell, .theme-compat) [style*="background-color: rgba(255, 255, 255, 0.8"],
+.dark :is(.product-shell, .theme-compat) [style*="background: rgba(255, 255, 255, 0.9"],
+.dark :is(.product-shell, .theme-compat) [style*="background-color: rgba(255, 255, 255, 0.9"] {
   background: var(--surface-paper) !important;
   background-color: var(--surface-paper) !important;
 }
