@@ -1,0 +1,56 @@
+[
+ {
+  "id": "he-2021-ol-sc-q2ai",
+  "topicId": "home-economics-3-8",
+  "conceptId": "evaluating-occasion-wear",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 OL Section C E2 Q2(a)(i)",
+  "questionText": "Comment on the suitability of the occasion wear shown above. Refer to: shape; comfort; design features.",
+  "stem": "‘Fashions fade, style is eternal.’ (Yves Saint Laurent)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 points @ 3 marks each (graded 3:2:0) x 3",
+   "answer": 6,
+   "ofParts": 14,
+   "perPart": 3
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Suitability of the occasion wear shown",
+    "marks": 18,
+    "openList": true,
+    "contextNote": "Held - see heldReason.",
+    "group": {
+     "claimMax": 6,
+     "perOption": 3,
+     "options": [
+      "shape: strong ballerina line",
+      "low neckline is feminine",
+      "fitted bodice gives a slimming effect",
+      "folded skirt adds width",
+      "short underskirt adds height to the outfit",
+      "comfort: flowing fabric is comfortable to wear",
+      "skirt allows ease of movement",
+      "design features: wide hem line",
+      "embroidery adds interest",
+      "contrasting colours",
+      "shape: slim leg trousers",
+      "short length in the jacket gives height to the man",
+      "short sleeves in jacket give length to arms",
+      "comfort: breathable cotton shirt"
+     ]
+    }
+   }
+  ],
+  "notes": "Held - see heldReason.",
+  "heldReason": "Marks two outfit photographs printed on the paper. Every marking point describes those images (\"strong ballerina line\", \"folded skirt adds width\", \"single button detail on jacket\", \"contrasting handkerchief in jacket pocket\"), so the card is unanswerable without the figures and the markdown extraction does not carry them."
+ }
+]

@@ -19988,6 +19988,1710 @@
   "notes": "One flat list, evenly priced."
  },
  {
+  "id": "he-2021-ol-sc-q1ai",
+  "topicId": "home-economics-3-6",
+  "conceptId": "advantages-of-home-insulation",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 OL Section C E1 Q1(a)(i)",
+  "questionText": "State four advantages of having a house well insulated.",
+  "stem": "The diagram below shows the average heat loss for a family home. (www.ors.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 advantages @ 5 marks each (graded 5:3:0)",
+   "answer": 4,
+   "ofParts": 10,
+   "perPart": 5
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Advantages of a well insulated house",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "Four advantages at 5 marks, graded 5:3:0 - 20 marks, the biggest part here. The scheme runs three ways: money (lower bills), comfort (steady temperature, less noise), and environment (less energy used, lower CO2, better BER). Take from all three rather than saying \"saves money\" four ways.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "Reduces heating bills",
+      "reduces heat loss",
+      "saves energy",
+      "acts as a noise/sound barrier",
+      "maintains a constant comfortable temperature",
+      "reduces the use of energy resources",
+      "results in less CO₂ emissions",
+      "creates a more comfortable home",
+      "can contribute to sustainable and responsible living",
+      "higher BER rating/improvement in energy efficiency"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap."
+ },
+ {
+  "id": "he-2021-ol-sc-q1aii",
+  "topicId": "home-economics-3-6",
+  "conceptId": "methods-of-insulation-attic-walls-windows",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 OL Section C E1 Q1(a)(ii)",
+  "questionText": "Name and describe the method of insulation you would recommend for each of the following: attic; walls; windows.",
+  "stem": "The diagram below shows the average heat loss for a family home. (www.ors.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name 2 marks (graded 2:0) and description 3 marks (graded 3:0), x 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Attic",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Name and describe one, 5 marks. Blanket insulation is the one to know - rolls of fibreglass or mineral wool laid between the joists. Loose fill, foam and blown fibre are the alternatives.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "blanket insulation e.g. rolls of fibreglass, wool or mineral",
+      "laid between joists or fixed between roof rafters",
+      "loose fill e.g. pellets of polystyrene or vermiculite poured in between joists",
+      "foam insulation e.g. foam sprayed between roof and rafters",
+      "blown- fibre insulation e.g. glass, mineral or cellulose fibres are blown into the attic and sealed"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Walls",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Name and describe one, 5 marks. Cavity wall is the classic: two layers of block 5-10cm apart with the air gap acting as the insulator, or foam and beads pumped into that cavity. Dry lining and external render are the alternatives for solid walls.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "cavity walls: two layers of blocks, 5-10cm apart, air in the space acts as insulator",
+      "polystyrene sheets can be inserted at the building stage",
+      "polystyrene foam or beads are pumped into the cavity",
+      "internal solid walls: insulation sheets, dry lining applying insulating boards to the inside of external walls",
+      "external walls: sheets of insulating material to the outer surface of the wall and covered with a render to provide water resistance, a steel mesh is embedded in the render to provide strength"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "Windows",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Name and describe one, 5 marks. Double or triple glazing - two or three sheets of glass with an air or argon gap. Low-emissivity glass reflects heat back into the room, and heavy lined curtains count too.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "double or triple glaze: two/three sheets of glass with an air space between them, the space can be filled with an inert gas e.g. argon",
+      "low emissivity glass has an invisible coating that reduces heat transfer and reflects heat back into the room etc. curtains: heavy lined, fitted"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: three named areas of the house, priced identically at 5 marks each. Skipping one costs a straight 5."
+ },
+ {
+  "id": "he-2021-ol-sc-q1aiii",
+  "topicId": "home-economics-3-6",
+  "conceptId": "advantages-and-disadvantages-of-solar-energy",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 OL Section C E1 Q1(a)(iii)",
+  "questionText": "State the advantages and/or the disadvantages of solar energy.",
+  "stem": "The diagram below shows the average heat loss for a family home. (www.ors.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 points @ 5 marks each (graded 5:3:0)",
+   "answer": 3,
+   "ofParts": 11,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Advantages and/or disadvantages of solar energy",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three points at 5 marks, graded 5:3:0. \"And/or\" means all three may come from one side, so you are not forced to balance them - but two advantages and one disadvantage reads as a fuller answer. The SEAI grant and the BER increase are the two most students forget.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "provides a plentiful supply of hot water",
+      "no smoke/carbon monoxide emissions",
+      "supplies home with own electricity",
+      "can reduce heating requirement by 80%",
+      "renewable environmentally friendly energy source",
+      "SEAI grant available for cost of installing",
+      "increases the property value by raising the Building Energy Rating (BER)",
+      "expensive to purchase/install",
+      "undependable supply of sunshine, other form of energy required",
+      "house must be orientated towards the sun",
+      "unsightly on the roof"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list pooling both sides, because the question says \"and/or\" and the scheme prices three points across both."
+ },
+ {
+  "id": "he-2021-ol-sc-q1bi",
+  "topicId": "home-economics-1-1",
+  "conceptId": "buying-a-home-advantages-and-disadvantages",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 OL Section C E1 Q1(b)(i)",
+  "questionText": "State the advantages and the disadvantages of buying a home of your own.",
+  "stem": "Buying a first home is an exciting adventure.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points @ 4 marks each (graded 4:2:0) - 1 advantage + 1 disadvantage + 1 other point",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "One advantage of buying a home",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One advantage at 4 marks, and the scheme requires it. The strongest is that it is an investment with security of tenure - it is yours, and the value can rise.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "an investment",
+      "tax relief and grants available",
+      "less expensive, mortgage cheaper than renting",
+      "value of the house can increase",
+      "security of tenure",
+      "can choose your own design and type of house",
+      "whether to share house or not"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "One disadvantage of buying a home",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One disadvantage at 4 marks, also required. The costs beyond the price are the real answer: deposit, legal fees, stamp duty, survey, property tax, and maintenance forever after.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "long-term commitment",
+      "deposit required initially",
+      "additional fees to be paid e.g. lending agency, legal, stamp duty, buyer’s survey fee",
+      "property tax",
+      "continuous maintenance costs",
+      "property value can fall"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "One further point, from either",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One further point at 4 marks, from either side - \"1 advantage + 1 disadvantage + 1 other point\". Whichever list you found easier is where to take it from.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "an investment",
+      "tax relief and grants available",
+      "less expensive, mortgage cheaper than renting",
+      "value of the house can increase",
+      "security of tenure",
+      "can choose your own design and type of house",
+      "whether to share house or not",
+      "long-term commitment",
+      "deposit required initially",
+      "additional fees to be paid e.g. lending agency, legal, stamp duty, buyer’s survey fee",
+      "property tax",
+      "continuous maintenance costs",
+      "property value can fall"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: the scheme requires one point on each side, then floats the remaining 4 marks across both. Modelled as three rows so the two compulsory points cannot be lost."
+ },
+ {
+  "id": "he-2021-ol-sc-q1bii",
+  "topicId": "home-economics-3-3",
+  "conceptId": "housing-requirements-family-versus-single-person",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 OL Section C E1 Q1(b)(ii)",
+  "questionText": "Discuss how the housing requirements of a family with children may differ from that of a person living on their own.",
+  "stem": "Buying a first home is an exciting adventure.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 points @ 6 marks each (graded 6:3:0)",
+   "answer": 3,
+   "ofParts": 14,
+   "perPart": 6
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "How housing requirements differ",
+    "marks": 18,
+    "openList": true,
+    "contextNote": "Three points at 6 marks, graded 6:3:0 - the highest per-point rate on the paper, so develop each one. The word is \"differ\", so write in contrasts: a family needs space, storage and a garden and wants to be near schools; someone on their own needs less space and can choose a location and lifestyle to suit only themselves.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "depends on size and composition of family",
+      "proximity to schools/crèches",
+      "older children like their own personal space",
+      "storage space e.g. lockers, wardrobes, hot press for clothes",
+      "living room with books/internet/broadband",
+      "playroom for toys",
+      "garage or shed for bicycles",
+      "well equipped, ventilated, adequately lit and spacious kitchen",
+      "living room for relaxing/T.V. viewing",
+      "enclosed garden, patio, decking for play",
+      "students require study facilities",
+      "proximity to work, shops, amenities",
+      "requires less space than a family",
+      "allows for individuals preference e.g. choosing between urban/rural lifestyle"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list pooling both households, because the question asks how they differ and the scheme prices three points across both."
+ },
+ {
+  "id": "he-2021-ol-sc-q1ci",
+  "topicId": "home-economics-3-4",
+  "conceptId": "planning-the-interior-design-of-a-house",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 OL Section C E1 Q1(c)(i)",
+  "questionText": "Discuss three factors to be considered when planning the interior design of a house.",
+  "stem": "Interior designers help people create their dream home.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 factors @ 5 marks each (graded 5:3:0)",
+   "answer": 3,
+   "ofParts": 14,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Factors when planning interior design",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three factors at 5 marks, graded 5:3:0. The scheme names them only, so the mark is in the sentence you add. Function of the room is the strongest - what happens in the room decides the flooring, the lighting and the furniture.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Space available",
+      "function of room",
+      "comfort",
+      "money available",
+      "cost e.g. initial/maintenance",
+      "family size",
+      "energy efficiency",
+      "aspect of house/room",
+      "existing fixtures/fittings",
+      "personal choice",
+      "colour scheme",
+      "materials used",
+      "environmental awareness",
+      "ergonomics, well laid out for ease of movement"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap."
+ },
+ {
+  "id": "he-2021-ol-sc-q1cii",
+  "topicId": "home-economics-3-4",
+  "conceptId": "soft-furnishings-and-room-appearance",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 OL Section C E1 Q1(c)(ii)",
+  "questionText": "Explain how soft furnishings can enhance the overall appearance of a room.",
+  "stem": "Interior designers help people create their dream home.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 factors @ 5 marks each (graded 5:3:0)",
+   "answer": 3,
+   "ofParts": 6,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "How soft furnishings enhance a room",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three points at 5 marks, graded 5:3:0. Name the furnishing as well as the effect - cushions and a throw add colour and texture, curtains make a room warm and cosy, a rug can act as the focal point. The economical-makeover point is the one worth ending on.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Add colour/pattern/texture to a room",
+      "make a room warm and cosy",
+      "act as a focal point in a room",
+      "add interest to an area of the room",
+      "can give a room a complete makeover in an economical way",
+      "can update style of a room"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap."
+ },
+ {
+  "id": "he-2021-ol-sc-q2aii",
+  "topicId": "home-economics-3-8",
+  "conceptId": "accessorising-occasion-wear",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 OL Section C E2 Q2(a)(ii)",
+  "questionText": "Suggest one accessory you could add to enhance an occasion wear outfit, and give one reason for your choice.",
+  "stem": "‘Fashions fade, style is eternal.’ (Yves Saint Laurent)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 accessory @ 3 marks (graded 3:0); 1 reason @ 4 marks (graded 4:2:0)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The accessory",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Name one, 3 marks, graded 3:0 - all or nothing, but any accessory in the list counts: a shawl, jewellery, a fascinator, cufflinks, a tie pin, a watch.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "pashmina shawl in a contrasting pastel colour to add another layer to outfit",
+      "jewellery e.g. earrings, bracelet, necklace, rings, watch",
+      "evening wear bag",
+      "hat/fascinator",
+      "hairband",
+      "cufflinks to compliment his suit",
+      "tie in the same colour as the handkerchief",
+      "lapel pin to compliment suit",
+      "tie pin",
+      "wear a watch, rings"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Reason for the choice",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One reason at 4 marks - more than the accessory itself, so this is where the marks are. The scheme’s reasons are about how the piece works with the outfit: it adds a layer, it complements the suit, it picks up the colour of the handkerchief.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "pashmina shawl in a contrasting pastel colour to add another layer to outfit",
+      "jewellery e.g. earrings, bracelet, necklace, rings, watch",
+      "evening wear bag",
+      "hat/fascinator",
+      "hairband",
+      "cufflinks to compliment his suit",
+      "tie in the same colour as the handkerchief",
+      "lapel pin to compliment suit",
+      "tie pin",
+      "wear a watch, rings"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: the accessory is priced at 3 and the reason at 4. Both rows draw on the same list, because the scheme prints each accessory together with the reason it works."
+ },
+ {
+  "id": "he-2021-ol-sc-q2bi",
+  "topicId": "home-economics-3-7",
+  "conceptId": "profile-of-a-natural-fabric-ol",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 OL Section C E2 Q2(b)(i)",
+  "questionText": "Write a profile of a natural fabric under each of the following headings: how the fabric is constructed; properties.",
+  "stem": "Today’s consumers are willing to pay more for clothing produced with natural fabrics.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "construction 1 point @ 3 marks (graded 3:2:0); properties 2 points @ 3 marks each (graded 3:2:0)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "How the fabric is constructed",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "One point at 3 marks. Weaving is the one the scheme explains properly - the warp runs down the loom, the weft passes over and under it, and the selvedge forms at the edges. Knitting and bonding are the shorter alternatives.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "Weaving: is done on a loom; warp threads are stretched down the loom; weft threads are passed over and under the warp from one side to the other; as the weft threads come down the outside edges of the warp threads, a finishing edge called a selvedge edge is made",
+      "Knitting: can be done by hand or machine",
+      "Bonding: two or more fabrics are joined by adhesive; combination of a knit or loosely woven fabric backed by a lightweight lining"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Properties",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two properties at 3 marks each - two thirds of the marks. Pick the fabric first, then take two from its own line. Include a weakness as well as a strength: linen is strong and cool but creases badly, wool is warm but shrinks and can itch.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Linen - absorbent; strong; conducts heat well; resists mildew; has a good lustre; may shrink; poor resistance to fire; little elasticity; soils easily; dyes well; creases easily",
+      "Cotton - absorbent; cool; strong; easy to wash and dry; dyes well; creases easily; shrinks",
+      "Wool - warm; soft; absorbent; resilient; can irritate sensitive skin; pills; shrinks",
+      "Silk - absorbent; crease resistant; drapes well; flammable; damaged by careless handling"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: construction is priced at 3 and the properties at 6. The properties row carries one option per fabric, because the two points must match whichever fabric was profiled."
+ },
+ {
+  "id": "he-2021-ol-sc-q2bii",
+  "topicId": "home-economics-3-7",
+  "conceptId": "advantages-of-natural-fibres",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 OL Section C E2 Q2(b)(ii)",
+  "questionText": "Give two advantages of using natural fibres/fabric in everyday wear.",
+  "stem": "Today’s consumers are willing to pay more for clothing produced with natural fabrics.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 advantages @ 3 marks each (graded 3:2:0)",
+   "answer": 2,
+   "ofParts": 8,
+   "perPart": 3
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Advantages of natural fibres in everyday wear",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two advantages at 3 marks, graded 3:2:0. The scheme ties several to a specific fabric and use - wool is warm for winter, cotton absorbs sweat so it suits sportswear, linen is lightweight for summer. Naming the fabric with the advantage is what makes it a 3.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Lightweight for summer wear",
+      "dyes easily so many colours available",
+      "wool is warm for winter clothing",
+      "cotton absorbs water so ideal for sportswear",
+      "washable",
+      "durable",
+      "cheaper",
+      "will take fabric finishes"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap."
+ },
+ {
+  "id": "he-2021-ol-sc-q2ci",
+  "topicId": "home-economics-3-8",
+  "conceptId": "factors-influencing-choice-of-clothing-ol",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 OL Section C E2 Q2(c)(i)",
+  "questionText": "Explain how each of the following factors may influence a person’s choice of clothing: function; money available; cultural influences.",
+  "stem": "Irish fashion is thriving on the international stage.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 point @ 3 marks (graded 3:2:0) x 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Function",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "One point, 3 marks. Function is what the clothing has to do - the scheme’s example is a waterproof coat in winter. Name an occasion or condition and the garment that suits it.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "Particular garments are suitable for specific occasion e.g. waterproof coat in winter",
+      "comfortable and easy to wear"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Money available",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "One point, 3 marks. Budget decides where you shop as much as what you buy - designer, chain store or charity shop - and value for money over time is the point worth making.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "Value for money in the long term",
+      "designer brands more expensive",
+      "choice of retail outlet",
+      "chain store",
+      "charity shop",
+      "items chosen must fit into a low budget"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "Cultural influences",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "One point, 3 marks. Modesty is the scheme’s main idea - different cultures cover differently - along with features borrowed between cultures, like pashminas, embroidery and beading.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "Different cultures have different levels of modesty reflected in their clothing",
+      "features from different countries e.g. pashminas shawls, embroidery on t-shirts",
+      "beading on jumpers"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: the question names all three factors, so all three must be answered. Priced identically at 3 marks each."
+ },
+ {
+  "id": "he-2021-ol-sc-q2cii",
+  "topicId": "home-economics-3-8",
+  "conceptId": "trendsetters-and-fashion-trends",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 OL Section C E2 Q2(c)(ii)",
+  "questionText": "Discuss the contribution of trendsetters/bloggers to current fashion trends.",
+  "stem": "Irish fashion is thriving on the international stage.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 contributions @ 3 marks each (graded 3:2:0)",
+   "answer": 2,
+   "ofParts": 6,
+   "perPart": 3
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Contribution of trendsetters and bloggers",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two contributions at 3 marks, graded 3:2:0. Say the mechanism - young people copy what trendsetters wear, brands sponsor celebrities and hand them clothes for media events, and social media spreads it in hours rather than seasons.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Young people want to wear what trendsetters are wearing",
+      "they set up their own clothing ranges",
+      "trendsetters are photographed wearing clothes by specific designers at media events",
+      "sponsorship deals that celebrities have with clothing companies",
+      "television programmes show confidence about clothing",
+      "social media e.g. Snapchat, Instagram"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap."
+ },
+ {
+  "id": "he-2021-ol-sc-q3ai",
+  "topicId": "home-economics-3-10",
+  "conceptId": "education-and-development-of-the-individual",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 OL Section C E3 Q3(a)(i)",
+  "questionText": "Outline how education contributes to the development of the individual. Refer to each of the following: physical development; emotional development; intellectual development.",
+  "stem": "Education for a child begins at home and is a lifelong process.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points @ 3 marks (graded 3:2:0) x 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Physical development",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks. School builds the body two ways - fine motor skills through practical subjects and handling equipment, and gross motor skills, bone and muscle through PE and sport.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "playing with toys helps with manual dexterity e.g. jigsaws",
+      "practical subjects can improve fine and gross motor skills",
+      "development of hand/eye co-ordination",
+      "sport and physical education helps to build healthy bones and muscles and improve balance/fitness"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Emotional development",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks. Starting school is the first real independence from parents, and it is where children learn to notice and respond to how other people feel.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "young children gain emotional independence from parents, encourages maturity",
+      "feelings for themselves and others",
+      "learn to be sensitive to needs of others",
+      "supportive of others",
+      "expressing emotions",
+      "co-educational allows for development of healthy, friendly relationships between sexes"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "Intellectual development",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks, and the longest list. The range of subjects and the resources are the obvious ones; competition from classmates and the challenge of examinations are the ones that read as thought-out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "promoted through the wide range of subjects",
+      "extracurricular activities",
+      "classmates encourage competition",
+      "examinations provide challenges",
+      "resources e.g. books, computers assist development",
+      "size of family",
+      "home provides stimulation and nurtures a learning environment",
+      "comfortable physical surroundings with good lighting/heating and ventilation assist in attaining ones potential",
+      "overcrowding can hinder study",
+      "after school study available"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: the question names all three kinds of development and prices them identically at 6 marks each."
+ },
+ {
+  "id": "he-2021-ol-sc-q3aii",
+  "topicId": "home-economics-3-10",
+  "conceptId": "factors-influencing-educational-achievement-ol",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 OL Section C E3 Q3(a)(ii)",
+  "questionText": "Give an account of four factors that influence the educational achievement of school children.",
+  "stem": "Education for a child begins at home and is a lifelong process.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 factors @ 5 marks each (graded 5:3:0)",
+   "answer": 4,
+   "ofParts": 9,
+   "perPart": 5
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Factors influencing educational achievement",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "Four factors at 5 marks, graded 5:3:0 - 20 marks, the biggest part here. Say how the factor works, not just its name: a large family means financial strain and less one-to-one attention; the school environment covers resources, class size, SNAs and resource teachers.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "Intellectual ability",
+      "family size, large family’s greater financial strain",
+      "home environment e.g. homework facilities",
+      "peers, can be positive or negative",
+      "local environment",
+      "school environment e.g. resources in school, access to computers/assistive technology, SNA available to assist, resource teachers available",
+      "small class size",
+      "educational programmes in school e.g. JCSP, LCA, LCVP, TY, HEAR, DARE, RACE, level two learning programme, work experience",
+      "parental attitude to education"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap."
+ },
+ {
+  "id": "he-2021-ol-sc-q3aiii",
+  "topicId": "home-economics-2-2",
+  "conceptId": "benefits-of-work-experience",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 OL Section C E3 Q3(a)(iii)",
+  "questionText": "Explain three benefits to students of participating in work experience while in second level school.",
+  "stem": "Education for a child begins at home and is a lifelong process.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 benefits @ 4 marks each (graded 4:2:0)",
+   "answer": 3,
+   "ofParts": 10,
+   "perPart": 4
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Benefits of work experience to students",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Three benefits at 4 marks, graded 4:2:0. The scheme splits into finding direction (deciding on a career, seeing what a job actually involves) and building skills (communication, teamwork, timekeeping, confidence). One from each is the fullest answer, and \"it goes on your CV\" is a legitimate third.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Helps students decide what career they may like to choose",
+      "gain knowledge of what actual working is like",
+      "get insight on what different jobs entail",
+      "get to know how people work together",
+      "see how work differs from school",
+      "realise what work activities are enjoyable",
+      "develop skills in communication, team working, planning, organising, timekeeping, problem solving",
+      "help to build confidence",
+      "get the opportunity to take responsibility",
+      "can put it on C.V."
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap."
+ },
+ {
+  "id": "he-2021-ol-sc-q3bi",
+  "topicId": "home-economics-3-11",
+  "conceptId": "importance-of-leisure",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 OL Section C E3 Q3(b)(i)",
+  "questionText": "Discuss three reasons why leisure is important in today’s society.",
+  "stem": "‘Physical activity plays an important role in the lives of children and young people.’ (www.education.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 reasons @ 5 marks each (graded 5:3:0)",
+   "answer": 3,
+   "ofParts": 11,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Reasons leisure is important",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three reasons at 5 marks, graded 5:3:0. The scheme covers mind (relaxing, mental wellbeing, self-esteem), body (physical health) and people (social interaction, family bonding, community). One from each is the widest answer.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Helps people relax and unwind from stresses of daily life",
+      "assists mental well-being",
+      "improves physical health",
+      "furthers social interaction",
+      "encourages family bonding",
+      "fosters relationships in communities",
+      "develops new skills",
+      "improves self-esteem",
+      "sets good example for children on how to use their free time positively",
+      "relieves boredom",
+      "improves communication and teamwork"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap."
+ },
+ {
+  "id": "he-2021-ol-sc-q3bii",
+  "topicId": "home-economics-3-11",
+  "conceptId": "influences-on-choice-of-leisure-activity",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 OL Section C E3 Q3(b)(ii)",
+  "questionText": "Describe how a person’s choice of leisure activities are influenced by each of the following: cost; occupation; age.",
+  "stem": "‘Physical activity plays an important role in the lives of children and young people.’ (www.education.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 point @ 5 marks (graded 5:3:0) x 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Cost",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One point, 5 marks. It is not only the fee - equipment and special clothing cost too, and someone with less disposable income turns to activities that are free, like walking.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "membership/annual/joining fee",
+      "pay as you go",
+      "method of payment",
+      "need special clothes and equipment",
+      "people with less disposable income may choose inexpensive/free activities e.g. walking"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Occupation",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One point, 5 marks. The idea worth writing is contrast: someone sitting at a desk all day tends to choose something active, and someone doing physical work chooses something restful. Work also decides both the money and the hours available.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "amount of disposable income available",
+      "number of working hours",
+      "type of work",
+      "leisure can contrast with a person’s occupation",
+      "can be an extension of work",
+      "work is a means of providing income for leisure",
+      "part-time workers, job sharing and career breaks all allow for more time for leisure activities",
+      "sedentary worker could opt for an energy consuming type of activity and vice-versa"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "Age",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One point, 5 marks. Time and money move in opposite directions across a life - young people have time but little money, parents of small children have neither, and retired people have time again.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "young people have fewer commitments and more time for leisure",
+      "couples with young children have the least amount of time and disposable income",
+      "retired people have more time and more disposable money to spend on leisure",
+      "older people have less money, may have physical constraints and do more sedentary pursuits",
+      "leisure activities change with age",
+      "some leisure activities are considered too dangerous for children"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: the question names all three influences, so all three must be answered. Priced identically at 5 marks each."
+ },
+ {
+  "id": "he-2021-ol-sc-q3ci",
+  "topicId": "home-economics-3-9",
+  "conceptId": "effects-of-unemployment-ol",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 OL Section C E3 Q3(c)(i)",
+  "questionText": "Discuss the effects of unemployment on: young individuals; the family; society.",
+  "stem": "The impact of unemployment can be long lasting.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points @ 3 marks (graded 3:2:0) x 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Young individuals",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks. The scheme goes further into the mind than the wallet - worthlessness, loss of identity and status, isolation, boredom, depression. Take one money point and one of those.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "loss of income",
+      "drop in living standards",
+      "stress",
+      "feeling worthless",
+      "worry",
+      "guilt",
+      "loss of identity",
+      "status and self-esteem",
+      "loss of social contact",
+      "depression",
+      "ill health",
+      "boredom",
+      "loneliness",
+      "isolation"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "The family",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks. Keep it at household level: trouble paying rent and bills, strain on relationships, children suffering at school, and at worst losing the home.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "lack of money",
+      "decline in living standards",
+      "unstable home",
+      "provision of basic needs may be difficult",
+      "poverty",
+      "problems paying rent, bills",
+      "strain on family relationships",
+      "marital breakdown",
+      "may become homeless or in need of emergency accommodation",
+      "children can suffer academically in school",
+      "may be tendency to turn to drink or drugs",
+      "loss of home"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "Society",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks - the row most students leave thin. It is about cost and consequence to the country: benefits to pay, higher taxes, emigration, crime, and the cycle of poverty continuing.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "burden on state to pay benefits",
+      "cycle of poverty continues",
+      "increased poverty and crime",
+      "increased emigration",
+      "creates inequalities within communities",
+      "increase in taxes",
+      "social problems",
+      "a growth in the black economy",
+      "increase in family breakdown"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: three named strands, priced identically at 6 marks each. Answer all three - six good points about young people still scores 6."
+ },
+ {
+  "id": "he-2021-ol-sc-q3cii",
+  "topicId": "home-economics-3-9",
+  "conceptId": "voluntary-organisations-supporting-the-unemployed",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 OL Section C E3 Q3(c)(ii)",
+  "questionText": "Name and give details of one voluntary organisation that provides support to the unemployed.",
+  "stem": "The impact of unemployment can be long lasting.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name 4 marks (graded 4:0); 2 details @ 4 marks each (graded 4:2:0)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Name of the voluntary organisation",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Name one, 4 marks, graded 4:0 - all or nothing, so give the organisation’s actual name. Seven are accepted, including Men’s Sheds, which students often overlook.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "St. Vincent de Paul",
+      "Rotary",
+      "Lions clubs",
+      "Simon community",
+      "Focus Ireland",
+      "Co-operatives",
+      "Men’s Sheds"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Details of the organisation",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Two details at 4 marks - two thirds of the marks. The scheme prints one shared list rather than describing each body, so these apply to whichever you named: acting as a pressure group, informing government, funding classes that teach coping skills, and giving people a place to talk about their situation.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Can act as pressure groups",
+      "can offer government bodies detailed information and possible solutions",
+      "funding of classes to teach people the skills to help them cope with their situation",
+      "provide opportunity for people to discuss their situation"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: naming is priced at 4 and the details at 8. The scheme prints one set of details covering all the organisations rather than describing each, so the details row is a single shared list."
+ },
+ {
+  "id": "he-2021-ol-sc-q4ai",
+  "topicId": "home-economics-0-9",
+  "conceptId": "nutritive-and-dietetic-value-of-eggs",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 OL Section C Q4(a)(i) - Core",
+  "questionText": "Give an account of the nutritive value and the dietetic value of eggs.",
+  "stem": "The ultimate convenience food, eggs are powerhouses of nutrition. (www.bbcgoodfood.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 points @ 4 marks each (graded 4:2:0) - 2 references to nutritive value, 2 references to dietetic value, plus 1 other",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Two references to nutritive value",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Two points at 4 marks, and the scheme requires them. Nutritive value is what is in the egg - HBV protein at 100% biological value, lecithin as a natural emulsifier, fat-soluble vitamins A, D, E and K. Worth knowing that the white is fat free and the yolk carries the cholesterol.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "HBV protein",
+      "100% biological value",
+      "albumin, ovalbumin and globulin in white",
+      "vitellin and livetin in yolk",
+      "saturated fat",
+      "lecithin is natural emulsifier",
+      "yolk contains cholesterol",
+      "white is fat free",
+      "no carbohydrate",
+      "75% water",
+      "fat soluble vitamins A, D, E and K",
+      "water soluble vitamin B",
+      "calcium",
+      "phosphorus"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Two references to dietetic value",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Two points at 4 marks, also required. Dietetic value is who it suits and why - easy to digest, quick to cook, ideal for growing children, and important in a vegetarian diet. Its weaknesses count too: no vitamin C, and the cholesterol.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "versatile",
+      "used in sweet and savoury dishes",
+      "HBV protein for growth and repair",
+      "ideal for children and adolescents",
+      "easy to digest",
+      "quick and easy to cook",
+      "can be eaten on their own",
+      "a meal in themselves when served with toast for carbohydrate",
+      "contains cholesterol and saturated fat",
+      "have no vitamin C",
+      "important in the diet of a vegetarian",
+      "inexpensive"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "One further point, from either value",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One further point at 4 marks, from either list - \"2 references to nutritive value, 2 references to dietetic value, plus 1 other\".",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "HBV protein",
+      "100% biological value",
+      "albumin, ovalbumin and globulin in white",
+      "vitellin and livetin in yolk",
+      "saturated fat",
+      "lecithin is natural emulsifier",
+      "yolk contains cholesterol",
+      "white is fat free",
+      "no carbohydrate",
+      "75% water",
+      "fat soluble vitamins A, D, E and K",
+      "water soluble vitamin B",
+      "calcium",
+      "phosphorus"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: the scheme requires two points on each value, then floats the remaining 4 marks across both. Modelled as three rows so the four compulsory points cannot be lost."
+ },
+ {
+  "id": "he-2021-ol-sc-q4aii",
+  "topicId": "home-economics-0-9",
+  "conceptId": "using-eggs-in-the-diet-and-effects-of-heat",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 OL Section C Q4(a)(ii) - Core",
+  "questionText": "Outline different ways of including eggs in the diet, and the effects of heat on eggs.",
+  "stem": "The ultimate convenience food, eggs are powerhouses of nutrition. (www.bbcgoodfood.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "ways 3 @ 3 marks each; effects 3 @ 3 marks each (graded 3:2:0)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Ways of including eggs in the diet",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "Three ways at 3 marks. The scheme gives an example with every point, so use them - the mark comes from the dish, not the category. Work through the day: scrambled at breakfast, quiche at lunch, scotch eggs at dinner, meringue for dessert.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "Eating on their own e.g. scrambled, fried, boiled, poached",
+      "sauces e.g. mayonnaise, hollandaise",
+      "breakfast e.g. French toast, pancakes",
+      "lunch e.g. Quiche Lorraine, salads, frittata, omelettes, egg sandwich",
+      "dinner e.g. fish cakes, scotch eggs, Caesar salad",
+      "baked products e.g. scones, sponge cake",
+      "desserts e.g. custards, meringue, rice pudding",
+      "garnishing salads"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Effects of heat on eggs",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "Three effects at 3 marks. Protein coagulating so the egg sets is the central one. The two that show real knowledge are curdling, and the green-grey iron/sulphur ring around the yolk of an overboiled egg.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "Protein coagulates causing eggs to solidify",
+      "bacteria are destroyed",
+      "loss of vitamin B",
+      "colour change",
+      "curdling",
+      "overcooking makes them tough and difficult to digest",
+      "overcooking boiled eggs causes iron/sulphur ring around the yolk"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: the question names two strands and prices them identically at 9 marks each."
+ },
+ {
+  "id": "he-2021-ol-sc-q4aiii",
+  "topicId": "home-economics-0-11",
+  "conceptId": "popularity-of-small-irish-food-producers",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 OL Section C Q4(a)(iii) - Core",
+  "questionText": "Give three reasons for the growing popularity of goods supplied by small Irish food producers.",
+  "stem": "The ultimate convenience food, eggs are powerhouses of nutrition. (www.bbcgoodfood.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 reasons @ 4 marks each (graded 4:2:0)",
+   "answer": 3,
+   "ofParts": 5,
+   "perPart": 4
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Reasons for the popularity of small Irish food producers",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Three reasons at 4 marks, graded 4:2:0. The scheme is short - quality and taste, organic production, local employment, and people willing to pay more for better. Say why each one draws the shopper in.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Foods healthier, more nutritious, and tastier",
+      "organic foods",
+      "provide local employment",
+      "people willing to pay more for better quality",
+      "foods produced locally"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap."
+ },
+ {
+  "id": "he-2021-ol-sc-q4bi",
+  "topicId": "home-economics-1-2",
+  "conceptId": "influences-on-consumer-decision-making",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 OL Section C Q4(b)(i) - Core",
+  "questionText": "Discuss how the following might affect consumers’ decision making when shopping: household income; discount offers; shopper loyalty schemes.",
+  "stem": "‘Consumers want to hear about discounts and sales, not just products.’ (www.retail-week.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 point @ 5 marks (graded 5:3:0) x 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Household income",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One point, 5 marks. When money is tight the order changes - needs before luxuries, and value for money becomes the deciding factor rather than preference.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "amount of money available for spending",
+      "when disposable income is limited consumers must ensure needs are met before luxuries are purchased",
+      "try to get good value for money"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Discount offers",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One point, 5 marks. The scheme is blunt about it: offers create the impression of a bargain and push impulse buying, so people end up spending more, not less.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "persuade the consumer to impulse buy",
+      "special offers give the impression of extra bargains",
+      "encourages spending more money"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "Shopper loyalty schemes",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One point, 5 marks, and the longest list. Points and perks build an emotional tie to one shop, which is exactly the point - a loyal shopper stops comparing prices elsewhere.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "offer consumers perks and rewards for their continued shopping",
+      "discounts on future purchases",
+      "encourage consumer loyalty to the one supermarket",
+      "build an emotional connection to a particular shop",
+      "build on loyalty to a particular brand",
+      "loyalty cards offer discounts, invitation to sale preview",
+      "less chance of shopping around for best value for money"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: the question names all three influences, so all three must be answered. Priced identically at 5 marks each."
+ },
+ {
+  "id": "he-2021-ol-sc-q4bii",
+  "topicId": "home-economics-1-2",
+  "conceptId": "advantages-and-disadvantages-of-online-shopping",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 OL Section C Q4(b)(ii) - Core",
+  "questionText": "State the advantages and the disadvantages of online shopping.",
+  "stem": "‘Consumers want to hear about discounts and sales, not just products.’ (www.retail-week.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points @ 5 marks each (graded 5:3:0) - 1 advantage, 1 disadvantage, plus 1 other",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "One advantage of online shopping",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One advantage at 5 marks, and the scheme requires it. Convenience is the heart of it - no need to leave home, no opening hours, and you can compare across sites and read reviews before buying.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Do not have to leave home",
+      "goods delivered by post, courier",
+      "variety of websites",
+      "easy to search different websites",
+      "more convenient",
+      "next day delivery",
+      "may be cheaper",
+      "can shop around various websites",
+      "not restricted by opening hours, goods may be purchased anytime",
+      "order may be tracked",
+      "can read reviews of products"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "One disadvantage of online shopping",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One disadvantage at 5 marks, also required. Not being able to touch or try the goods is the main one, along with the risks - fraud, sites that are not legitimate, and the cost and hassle of returning things.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "delay in delivery",
+      "lack of touch and feel of merchandise",
+      "lack of interactivity with shop assistant",
+      "fraud",
+      "unable to bargain down the price",
+      "not always knowing if the site is legitimate",
+      "problems with refunds",
+      "cost of returning products"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "One further point, from either",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One further point at 5 marks, from either side - \"1 advantage, 1 disadvantage, plus 1 other\".",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Do not have to leave home",
+      "goods delivered by post, courier",
+      "variety of websites",
+      "easy to search different websites",
+      "more convenient",
+      "next day delivery",
+      "may be cheaper",
+      "can shop around various websites",
+      "not restricted by opening hours, goods may be purchased anytime",
+      "order may be tracked",
+      "can read reviews of products",
+      "delay in delivery",
+      "lack of touch and feel of merchandise",
+      "lack of interactivity with shop assistant"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: the scheme requires one point on each side, then floats the remaining 5 marks across both. Modelled as three rows so the two compulsory points cannot be lost."
+ },
+ {
+  "id": "he-2021-ol-sc-q4ci",
+  "topicId": "home-economics-2-1",
+  "conceptId": "influences-on-adolescent-behaviour",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 OL Section C Q4(c)(i) - Core",
+  "questionText": "Identify three factors which may influence an adolescent’s/teenager’s behaviour.",
+  "stem": "The goal of conflict resolution is not to decide who is right or wrong.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 factors @ 5 marks each (graded 5:3:0)",
+   "answer": 3,
+   "ofParts": 8,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Factors influencing an adolescent’s behaviour",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three factors at 5 marks, graded 5:3:0. Peer and exam pressure are the two students name first; the ones that develop best are about the home - parents as role models, and whether the relationship is open enough for a teenager to say what they feel.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Peer pressure",
+      "exam pressure",
+      "family support",
+      "parents and older children are role models",
+      "school environment",
+      "area they live in",
+      "open teenager-parent relationship provides safe environment for teenager to express feelings",
+      "teenagers need for privacy and space respected by parents"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap."
+ },
+ {
+  "id": "he-2021-ol-sc-q4cii",
+  "topicId": "home-economics-2-1",
+  "conceptId": "adolescent-behaviour-and-conflict-in-the-home",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 OL Section C Q4(c)(ii) - Core",
+  "questionText": "Discuss three aspects of adolescent/teenager’s behaviour that may lead to conflict in the home.",
+  "stem": "The goal of conflict resolution is not to decide who is right or wrong.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 aspects @ 5 marks each (graded 5:3:0)",
+   "answer": 3,
+   "ofParts": 8,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Aspects of adolescent behaviour leading to conflict",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three aspects at 5 marks, graded 5:3:0. Say where the friction comes from, not just the behaviour - questioning rules is a teenager pushing for independence, and rows about study or an untidy room are usually about who gets to decide.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Adolescent question rules and authority",
+      "lack of freedom",
+      "peer relationships",
+      "part time jobs",
+      "lack of study or doing homework for school",
+      "decisions on future careers",
+      "untidy rooms",
+      "lack of understanding of older family members"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap."
+ },
+ {
   "id": "he-2025-hl-sc-q1ai",
   "topicId": "home-economics-3-4",
   "conceptId": "kitchen-dining-room-design-factors",

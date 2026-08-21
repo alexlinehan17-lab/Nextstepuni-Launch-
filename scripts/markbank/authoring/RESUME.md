@@ -1,23 +1,35 @@
 # Mark Bank — Home Economics Section C — RESUME NOTE
 
 ## Where we are
-Section C was the last uncovered section in the whole bank (every other subject
-already had all its sections). Working paper by paper, newest first.
 
-DONE and pushed:
+**Section C is COMPLETE.** It was the last uncovered section in the whole bank,
+so every subject now has every section.
+
   2025 HL  24 cards   2025 OL  25 cards
   2024 HL  28 cards   2024 OL  31 cards
-  2023 HL  37 cards   2023 OL  26 cards   <-- COMPLETE
-  2022 HL  27 cards   2022 OL  25 cards   <-- BOTH COMPLETE
-  2021 HL  27 cards                       <-- COMPLETE
-Bank total 4518. Higher deck 282, ordinary 234. Held 26.
+  2023 HL  37 cards   2023 OL  26 cards
+  2022 HL  27 cards   2022 OL  25 cards
+  2021 HL  27 cards   2021 OL  26 cards
+
+Bank total 4544. Home Economics: 542 cards built, higher deck 282, ordinary 260.
+Held 27.
 
 ## NEXT ACTION
-2021 OL is the LAST paper. After it, Section C is fully covered and the
-whole bank has every section for every subject.
+Nothing outstanding on Section C. Two things remain worth doing, both
+pre-existing and neither caused by this work:
 
-Start with:
-  python3 scripts/markbank/authoring/scout.py 2021 ordinary
+1. **5 Section A cards drop on every build** and always have. They are real
+   tariff errors in older authoring, not extraction problems:
+       he-2025-hl-sa-q8              rows sum to 8, tariff is 6
+       he-2025-ol-sa-q8/q10/q11/q12  row offers Nx2 on a 6-mark question
+   Fixing them is a small, self-contained job.
+
+2. **27 held cards** across the bank, listed in
+   `scripts/markbank/authored/home-economics-held.json` with a `heldReason`
+   each. Most need a figure the markdown extraction does not carry (room
+   photographs, outfit photographs, floor plans). A few are strands the scheme
+   prices but prints no marking points for. They would need the figures adding
+   before they could ship.
 
 ## The loop, per paper
 1. python3 scratchpad/scout.py <year> <higher|ordinary>   -> Section C bounds + question map
