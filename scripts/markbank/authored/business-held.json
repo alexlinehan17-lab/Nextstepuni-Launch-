@@ -1,0 +1,36 @@
+[
+ {
+  "id": "bus-2023-hl-s1-q5a-chart",
+  "topicId": "business-2-13",
+  "conceptId": "functional-organisation-chart",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "business",
+  "section": "1",
+  "questionRef": "2023 HL Section 1 Q5(a) - the points the scheme prints",
+  "questionText": "Draft and label a functional organisational structure for a manufacturing firm.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2@2m",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Finance Department and Marketing Department reporting to the Managing Director",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The scheme's model chart puts the Managing Director at the top with Production, Finance and Marketing departments under it, and Production Employees, Finance Employees and Marketing Employees under their own department. Any other functional department, labelled correctly, does the same work here."
+   }
+  ],
+  "notes": "The two marking points the scheme prints, at their own 4 marks. The third 2-mark point is held: the scheme prices 3@2m but prints only the title and the production department.",
+  "heldReason": "The scheme prices this question 3@2m but prints only two marking points — the title and \"Production dept required.\" The third 2 marks are for the chart itself showing the departments reporting to the Managing Director, which the examiner judges from the drawing and the scheme does not enumerate. Shipping it would mean inventing the marking point."
+ }
+]

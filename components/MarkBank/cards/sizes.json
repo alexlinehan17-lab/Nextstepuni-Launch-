@@ -4,23 +4,23 @@
   "ordinary": 564
  },
  "chemistry": {
-  "higher": 411,
+  "higher": 414,
   "ordinary": 309
  },
  "physics": {
   "higher": 392,
-  "ordinary": 415
+  "ordinary": 416
  },
  "agricultural-science": {
   "higher": 401,
   "ordinary": 389
  },
  "business": {
-  "higher": 261,
-  "ordinary": 314
+  "higher": 267,
+  "ordinary": 317
  },
  "home-economics": {
-  "higher": 293,
+  "higher": 296,
   "ordinary": 273
  }
 }

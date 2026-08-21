@@ -34542,5 +34542,270 @@
    }
   ],
   "notes": "The naming strand at its own 3 marks. The 4-mark reason strand is held - the scheme prints no marking points for it."
+ },
+ {
+  "id": "he-2022-hl-sc-q1aii-properties",
+  "topicId": "home-economics-3-4",
+  "conceptId": "floor-covering-name-and-properties",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2022 HL Section C E1 Q1(a)(ii) - name and properties",
+  "questionText": "Name a suitable floor covering for a home office and give its properties.",
+  "stem": "‘Working from home in separate home offices can improve work-life balance.’ (The Irish Times, 2021)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "name 2 marks (graded 2:1:0); properties 3 points @ 2 marks (graded 2:0)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Name of the floor covering",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Name one, 2 marks. A home office is a room you sit and work in for hours, so warmth and quiet matter more than in a hall - carpet, cork and wood read better here than ceramic or stone, and the properties row has to agree with whatever you name.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "Tiles ceramic",
+      "Flagstone/cut stone; stone carpeting",
+      "Tiles slate tiles chinese slate",
+      "Tiles marble tiles; limestone tiles/slabs;",
+      "Mosaic tiles"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Properties of the floor covering",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Three properties at 2 marks each, graded 2:0 - all or nothing per property, so be specific. The options are listed in the same order as the coverings above, and the scheme gives both sides for most of them: hard-wearing and easy to clean, but cold underfoot and chips easily.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "Hard-wearing; easy to clean; low maintenance; hard underfoot; stain resistant; fire resistant; cold; crack/chip easily; etc.",
+      "Hard wearing; cold underfoot; chips easily; etc.",
+      "Hard wearing; warm underfoot; uneven texture; slightly absorbent; easy to clean; etc.",
+      "Cold underfoot; chips easily; hard-wearing; easy to clean; low maintenance; hard underfoot; etc.",
+      "Hard wearing; cold; easy to clean; etc."
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: naming is priced at 2 and the properties at 6. Both rows are the scheme's own table columns, in the same order, so the properties can be matched to the covering named."
+ },
+ {
+  "id": "he-2023-hl-sc-q1bi",
+  "topicId": "home-economics-3-5",
+  "conceptId": "properties-of-light-and-their-use",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2023 HL Section C E1 Q1(b)(i)",
+  "questionText": "Describe four properties of light and give an example of how each property is used in the home.",
+  "stem": "‘Lighting can transform a room.’",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "name 4 @ 2 marks; description 4 @ 2 marks; example 4 @ 1 mark",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Name of the property",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Four properties at 2 marks each. Five are offered and you need four, so the only one you can afford to leave out is the one you cannot explain.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 2,
+     "options": [
+      "Reflected",
+      "Diffused",
+      "Absorbed",
+      "Dispersed",
+      "Refracted"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Description of the property",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Four descriptions at 2 marks each, listed in the same order as the names above. Each is one sentence of physics - light bounces, scatters, is absorbed, splits, or bends - and saying what the surface does to the ray is what earns the 2.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 2,
+     "options": [
+      "Rays of light bounce off a shiny surface; etc.",
+      "Rays of light are scattered when they pass through translucent substances or hit a non- reflecting surface; etc.",
+      "Dark and matt surfaces absorb light rays; etc.",
+      "Rays of light that pass through a prism or crystal break down into their component colours; etc.",
+      "Rays of light bend when they pass through thick or ridged glass; etc."
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "Example of its use in the home",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Four examples at 1 mark each, graded on the example alone, and again in the same order. These are the cheapest marks in the question: a mirror, net curtains, dark painted walls, a chandelier, glass bricks.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 1,
+     "options": [
+      "mirrors; polished porcelain; light colours on walls; gloss paint; glazed wall tiles; etc.",
+      "net curtains; frosted glass; translucent lampshades; etc.",
+      "dark painted walls; brick walls; stone; etc.",
+      "chandeliers; etc.",
+      "glass bricks; double glazing; etc."
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: the scheme prices naming at 8, description at 8 and examples at 4. The three rows are the scheme's own table columns in the same order, so a property, its explanation and its example line up."
+ },
+ {
+  "id": "he-2025-hl-sb-q3a",
+  "topicId": "home-economics-0-4",
+  "conceptId": "food-poisoning-bacteria",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2025 HL Section B Q3(a)",
+  "questionText": "Identify one food poisoning bacteria you have studied and, in relation to the bacteria identified, refer to: source; high risk foods; factors affecting growth; food poisoning symptoms.",
+  "stem": "‘Everyone has the right to safe food.’ (www.fsai.ie)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "name 1 @ 2 marks; source 1 @ 2 marks; high risk foods 2 @ 2 marks; factors affecting growth 3 @ 2 marks; symptoms 2 @ 2 marks (graded 2:1:0)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Name of the bacteria",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Name one, 2 marks. Five are offered and every later row must match the one you name, so pick the one you know the sources and symptoms for. Salmonella is the fullest in the scheme.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "Salmonella",
+      "Listeria",
+      "E. coli",
+      "Clostridium botulinum",
+      "Staphylococcus aureus"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Source",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "One source at 2 marks, listed in the same order as the names above. Source is where the bacteria LIVES - intestines and excreta, soil, the nose and throat - not the food it ends up in.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "human, animal or bird intestines/ excreta; polluted water; unwashed hands; etc.",
+      "uncooked foods; cook-chill foods; foods not heated to sufficiently high temperature; soil; human & animal waste; etc.",
+      "human & animal intestines/excreta; polluted water; unwashed hands; etc.",
+      "soil; decaying matter; unwashed hands; pig intestines; human & animal faeces; etc.",
+      "nose, throat; skin infections; unwashed hands; etc."
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "High risk foods",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Two foods at 2 marks each. High risk means moist, protein-rich and handled - raw or undercooked meat and poultry, unpasteurised dairy, cooked rice, sliced cold meats.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "raw or undercooked meat; raw or undercooked fish; raw or undercooked poultry; raw or undercooked eggs; unpasteurised dairy products; etc.",
+      "soft cheese; pate; unpasteurised milk, cheese; raw or undercooked meats; pre-prepared salads; cook-chill foods; etc.",
+      "raw meats; undercooked meats; unpasteurised milk & cheese; smoked fish; vegetables washed in contaminated water; etc.",
+      "unpasteurised milk, cheese, yoghurt; faulty processing of low acid canned foods; vacuum packed foods; smoked fish; chillies; etc.",
+      "unpasteurised milk & cheese; sliced cold meats; etc."
+     ]
+    }
+   },
+   {
+    "id": "r-4",
+    "kind": "anyN",
+    "verbatim": "Factors affecting growth",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Three factors at 2 marks each - the biggest row at 6 marks. The scheme sets them out under the same headings for every bacteria: food, temperature, moisture, pH, oxygen and time. Give the heading AND the value, not just the word.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "Food: saprophytic or parasitic; etc. Temp: mesophile 37oC (optimal); etc. Moisture: liquid; etc. Oxygen: facultative; pH: neutral; etc. Time: requires time; etc.",
+      "Food: saprophytic or parasitic; etc. Temp: mesophile 30oC, (optimal) psychrophile 5-20oC; etc. Moisture: liquid; etc. Oxygen: facultative; pH: neutral, slightly acidic; etc. Time: requires time; etc.",
+      "Food: saprophytic or parasitic; etc. Temp: mesophile 30-40oC (optimal); etc. Moisture: liquid; etc. Oxygen: aerobic; etc. pH: neutral; etc. Time: requires time; etc.",
+      "Food: saprophytic or parasitic; etc. Temp: mesophile 30-37oC (optimal); etc. Moisture: liquid; etc. Oxygen: anaerobic; etc. pH: 4-6 or higher; etc. Time: requires time; etc.",
+      "Food: saprophytic or parasitic; Temp: mesophile 30-40oC; etc. Moisture: liquid; etc. Oxygen: facultative ; pH: neutral; etc. Time: requires time; etc."
+     ]
+    }
+   },
+   {
+    "id": "r-5",
+    "kind": "anyN",
+    "verbatim": "Food poisoning symptoms",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Two symptoms at 2 marks each. Diarrhoea, nausea and vomiting are common to all five, so they are always safe - the distinguishing ones are worth knowing, like the severe effects of Clostridium botulinum.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "diarrhoea; nausea; vomiting; abdominal pain; may be accompanied by fever; etc.",
+      "diarrhoea; nausea; vomiting; muscle aches; convulsions; chills; meningitis in babies; miscarriage; premature births; etc.",
+      "diarrhoea; nausea; vomiting; abdominal pains; fever; kidney failure; death etc.",
+      "diarrhoea; nausea; vomiting; slurred speech; double vision; paralysis of throat; dizziness; can lead to death; etc.",
+      "diarrhoea; nausea; vomiting; abdominal pains; fever; etc."
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: the scheme prices five named strands at 2, 2, 4, 6 and 4. Every row is one column of the scheme's own table, in the same order, so all five can be matched to the bacteria named."
  }
 ]

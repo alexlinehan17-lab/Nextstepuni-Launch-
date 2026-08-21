@@ -38,6 +38,9 @@ from pathlib import Path
 
 import pymupdf
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from markbank_text import unligature  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[2]
 START = '<!-- markbank:table-cells -->'
 END = '<!-- /markbank:table-cells -->'
@@ -70,17 +73,56 @@ def cells(pdf: Path) -> list[str]:
                 data = table.extract()
             except Exception:
                 continue
+            width = max((len(r) for r in data), default=0)
+            # Every cell on its own...
             for row in data:
                 for cell in row:
                     if not cell:
                         continue
-                    text = re.sub(r'\s+', ' ', cell).strip()
+                    # The PDF font encodes ligatures as glyphs like "Ɵ" for
+                    # "ti", so "letters" extracts as "leƩers". extract-scheme.py
+                    # folds these; anything appended here has to as well, or the
+                    # mangled form lands in a shipped marking point.
+                    text = unligature(re.sub(r'\s+', ' ', cell).strip())
                     # A cell of pure marks or a lone label carries no marking
                     # point, and comparableScheme drops those lines anyway.
                     if len(text) < 3 or text in seen:
                         continue
                     seen.add(text)
                     out.append(text)
+            # ...and each column's consecutive run rejoined. A cell whose text
+            # wraps is extracted as several rows -- "Celebrity" / "Endorsements
+            # /Social Media" / "Influencers" is ONE marking point split three
+            # ways -- so the run is emitted joined as well. Continuation rows
+            # are the ones where this is the only column carrying anything.
+            for col in range(width):
+                run = []
+                for row in data:
+                    # A wholly empty row is layout, not a break in the record --
+                    # the text strategy interleaves one between every line.
+                    if not any(re.sub(r'\s+', ' ', (c or '')).strip() for c in row):
+                        continue
+                    cell = row[col] if col < len(row) else None
+                    text = unligature(re.sub(r'\s+', ' ', cell or '').strip())
+                    # A new RECORD is signalled by a column to the LEFT filling
+                    # in (the "1." / "2." index, or the stub column). Columns to
+                    # the right wrap too, so their content means nothing here.
+                    starts_record = any(re.sub(r'\s+', ' ', (row[i] or '')).strip()
+                                        for i in range(min(col, len(row))))
+                    if text and (not run or not starts_record):
+                        run.append(text)
+                        continue
+                    if len(run) > 1:
+                        joined = ' '.join(run)
+                        if joined not in seen:
+                            seen.add(joined)
+                            out.append(joined)
+                    run = [text] if text else []
+                if len(run) > 1:
+                    joined = ' '.join(run)
+                    if joined not in seen:
+                        seen.add(joined)
+                        out.append(joined)
     return out
 
 

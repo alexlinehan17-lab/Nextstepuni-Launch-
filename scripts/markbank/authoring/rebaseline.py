@@ -8,8 +8,13 @@ conceal a deletion." This does the checking, and refuses if anything vanished.
 import hashlib, re, subprocess, sys
 
 SUBJECT = sys.argv[1] if len(sys.argv) > 1 else 'home-economics'
+# These MUST match the id prefix the deck actually uses. 'phy' and 'ag' did not
+# -- the ids are "phys-" and "agsci-" -- so ids() matched nothing, old and new
+# were both empty, "lost=0" passed, and the baseline was rewritten to 0 cards
+# with the SHA of the empty string. The guard against losing cards recorded a
+# total wipe as a clean run. The empty-deck check below is the backstop.
 PREFIX = {'home-economics': 'he', 'biology': 'bio', 'business': 'bus',
-          'chemistry': 'chem', 'physics': 'phy', 'agricultural-science': 'ag'}[SUBJECT]
+          'chemistry': 'chem', 'physics': 'phys', 'agricultural-science': 'agsci'}[SUBJECT]
 TEST = 'test/markBankCardPreservation.test.ts'
 KEY = {'home-economics': 'home-economics', 'agricultural-science': 'agricultural-science'}.get(SUBJECT, SUBJECT)
 
@@ -22,6 +27,11 @@ for level in ('higher', 'ordinary'):
     path = f'components/MarkBank/cards/{SUBJECT}/{level}.ts'
     old = ids(subprocess.run(['git', 'show', f'HEAD:{path}'], capture_output=True, text=True).stdout)
     new = ids(open(path).read())
+    if not new:
+        print(f'    REFUSING: found no {PREFIX}-* ids in {path}. A deck is never '
+              f'empty, so either the build failed or PREFIX is wrong for this subject.')
+        ok = False
+        continue
     lost = sorted(set(old) - set(new))
     added = sorted(set(new) - set(old))
     dupes = len(new) != len(set(new))

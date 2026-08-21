@@ -1,13 +1,5 @@
 [
  {
-  "id": "he-2025-hl-sb-q3a",
-  "subjectId": "home-economics",
-  "level": "higher",
-  "year": 2025,
-  "section": "B",
-  "heldReason": "Q3(a), the food-poisoning bacteria question (18 marks). The scheme prints a five-column table (bacteria / source / high-risk foods / factors affecting growth / symptoms). CHECKED 2026-08-21: PyMuPDF recovers the table from the PDF cleanly -- 5 bacteria x 4 attributes, columns intact -- so the DATA is not the problem. The provenance gate checks options against the scheme MARKDOWN, and that markdown interleaves the columns line by line, so a multi-word cell like \"raw or undercooked meat\" is split across other columns' text and is not contiguous. About half the cells fail. Shipping this needs examiner-reports/home-economics/schemes/2025-hl.md re-extracted with table awareness, which changes provenance for every card built from that scheme and needs its own verification pass. Not a card-level fix."
- },
- {
   "id": "he-2025-ol-sc-q3aii-details",
   "topicId": "home-economics-3-10",
   "conceptId": "education-initiative-details",
@@ -125,51 +117,6 @@
   "heldReason": "The scheme lists the saving schemes by provider and lists the reasons, but prints no marking points for the two detail points, which carry 6 of the part's 15 marks. The naming and reasons strands ship as he-2025-ol-sc-q4bii-name-reasons."
  },
  {
-  "id": "he-2023-hl-sc-q1bi",
-  "topicId": "home-economics-3-5",
-  "conceptId": "properties-of-light-in-the-home",
-  "level": "higher",
-  "year": 2023,
-  "subjectId": "home-economics",
-  "section": "C",
-  "questionRef": "2023 HL Section C E1 Q1(b)(i)",
-  "questionText": "Describe four properties of light and give an example of how each property is used in the home.",
-  "stem": "‘Lighting ideas are an essential part of space design.’ (www.homesandgardens.com)",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "Name 4 @ 2 marks; description 4 @ 2 marks; example 4 @ 1 mark",
-   "answer": 4,
-   "ofParts": 5,
-   "perPart": 2
-  },
-  "totalMarks": 20,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Properties of light",
-    "marks": 8,
-    "openList": true,
-    "contextNote": "Four properties named, 2 marks each, graded 2:0.",
-    "group": {
-     "claimMax": 4,
-     "perOption": 2,
-     "options": [
-      "Reflected",
-      "Diffused",
-      "Absorbed",
-      "Dispersed",
-      "Refracted"
-     ]
-    }
-   }
-  ],
-  "notes": "Held — see heldReason.",
-  "heldReason": "The scheme prints this as a three-column table (Property / Explanation / Example) and the PDF extraction interleaves the columns line by line: the Diffused row reads \"Rays of light are scattered when they pass net curtains; frosted glass; through translucent substances or hit a non- translucent lampshades; etc. reflecting surface\". Explanation and example cannot be separated from the markdown with confidence, and both historical scheme corruptions in this repo came from reconstructing a table by hand. Needs the columns re-extracted from the PDF."
- },
- {
   "id": "he-2023-hl-sc-q2cii",
   "topicId": "home-economics-3-8",
   "conceptId": "careers-in-clothing-and-textiles",
@@ -258,45 +205,6 @@
   ],
   "notes": "Held - see heldReason.",
   "heldReason": "The scheme prices Details at 4 marks but prints no marking points for it - the list that follows is scheme NAMES, which the naming strand already consumes. Shipping this would mean inventing the detail the examiner declined to print."
- },
- {
-  "id": "he-2022-hl-sc-q1aii-properties",
-  "topicId": "home-economics-3-4",
-  "conceptId": "floor-covering-name-and-properties",
-  "level": "higher",
-  "year": 2022,
-  "subjectId": "home-economics",
-  "section": "C",
-  "questionRef": "2022 HL Section C E1 Q1(a)(ii) - name and properties",
-  "questionText": "Name a suitable floor covering for a home office and give its properties.",
-  "stem": "‘Working from home in separate home offices can improve work-life balance.’ (The Irish Times, 2021)",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "name 2 marks (graded 2:1:0); properties 3 points @ 2 marks (graded 2:0)",
-   "answer": 3,
-   "ofParts": 0,
-   "perPart": 2
-  },
-  "totalMarks": 8,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Floor covering and its properties",
-    "marks": 8,
-    "openList": true,
-    "contextNote": "Held - see heldReason.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 2,
-     "options": []
-    }
-   }
-  ],
-  "notes": "Held - see heldReason.",
-  "heldReason": "The scheme prints these as a two-column table (covering | properties) and the PDF extraction interleaves the columns: \"chips easily; etc. stone carpeting Tiles slate tiles\", \"chinese slate easy to clean\", \"low limestone tiles/slabs; maintenance\". Slicing it would ship name-column fragments as student-facing marking points, so both the naming and properties strands are held rather than guessed. Accounts for 8 of the 20 marks; the 12-mark factors strand ships as he-2022-hl-sc-q1aii."
  },
  {
   "id": "he-2025-ol-sc-q2aii-reason",
