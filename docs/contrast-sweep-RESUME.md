@@ -65,6 +65,15 @@ literals, which is what a live walk would catch.
 Rebuild it in the page after any reload (HMR wipes it). Full source is in the
 session transcript; the shape is:
 
+- `window.__forceSettled(true/false)` — injects
+  `*{opacity:1 !important;transform:none !important}`. **Wrap every scan in
+  this.** A hidden tab throttles rAF, so framer-motion never settles and
+  animated content sits at `opacity: 0`, where the scanner skips it. This blind
+  spot is what hid the Catch-Up Lane, Mark Bank, Planner and Command Word
+  Reflex failures through several "clean" sweeps.
+- `window.__drill(tool, depth)` — clicks the largest non-nav control repeatedly
+  to walk a tool inwards. Entry-screen scans are NOT sufficient; every failure
+  found on 21 Aug was at least one interaction deep.
 - `window.__SCAN()` — returns failing text nodes. **Composites translucent
   background layers outward.** An earlier version skipped them and read through
   to an opaque ancestor, which both hid real failures (a 12%-black badge over a
@@ -114,6 +123,7 @@ measures nothing.
 | Mobile 500px: views, tools, 27 modules | 0 |
 | Focus rings, both themes | 6.78 dark / 4.99 light |
 | Light-mode tools | 4 left, all 4.37–4.49 (accepted) |
+| 16 tools drilled 3–4 levels deep (not just entry) | 0 |
 | Onboarding stages 1–2 | 0 |
 | Onboarding stages 3–7 | **unswept — resume here**, blocked by the bug above |
 | Admin Dashboard | fix applied, unverified |
