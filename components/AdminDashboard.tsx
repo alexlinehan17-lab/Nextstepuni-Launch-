@@ -179,8 +179,11 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
         return () => { cancelled = true; };
     }, []);
 
+  // The admin panels carry light literals with little or no dark: coverage;
+  // `theme-compat` opts them into the shared dark layer rather than
+  // hand-authoring variants across three panels.
   return (
-    <div className="min-h-screen w-full p-8 pt-24">
+    <div className="theme-compat min-h-screen w-full p-8 pt-24">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-between mb-8">
           <div className="flex items-center gap-4">

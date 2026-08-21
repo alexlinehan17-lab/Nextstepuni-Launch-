@@ -586,7 +586,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
   const welcomeWords = `Welcome, ${userName}`.split(' ');
 
   return (
-    <div className="fixed inset-0 flex flex-col z-[60] overflow-hidden">
+    <div className="theme-compat fixed inset-0 flex flex-col z-[60] overflow-hidden">
 
       {/* ─── Solid background — matches Library (module selection) screen ─── */}
       <div className="fixed inset-0 pointer-events-none dark:bg-zinc-900" aria-hidden="true" style={{ backgroundColor: '#FAFBF6' }} />

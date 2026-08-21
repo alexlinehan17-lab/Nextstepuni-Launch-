@@ -25,6 +25,11 @@
      not an ink. --accent stays exactly as authored for fills, icons and rules;
      only text reaches for this. */
   --accent-text: #B84A0C;
+  /* Focus indicators are non-text UI: SC 1.4.11 wants 3:1 against what is
+     next to them. The translucent orange rings in use measured 1.43-1.75 on
+     the light surfaces and even solid #F26B1F is only 2.67 on the #f0f0f0
+     canvas, so the ring gets its own solid tone. */
+  --focus-ring: #B84A0C;
   /* Amber reads as a status colour but #F59E0B is 2.15:1 on white — a fill, not
      an ink. Same split as the accent. */
   --warning-text: #96600A;
@@ -149,6 +154,7 @@
   --hairline: #34312E;
   --accent-tint: #3A2417;
   --accent-tint-ink: #F6B98C;
+  --focus-ring: #F58C4E;
   --success-tint: #1D3327;
   --success-tint-ink: #9FD9B6;
   --mountain-paper: #202020;
@@ -877,6 +883,20 @@ html:not(.dark) [class*="text-[#A0978D]"] {
 .dark :is(.product-shell, .theme-compat) :is([style^="color: rgb(244, 63, 94)"], [style*="; color: rgb(244, 63, 94)"],
     [class~="text-rose-500"]) {
   color: #F54B68 !important;
+}
+
+/*
+ * Focus indicator colour, both themes.
+ *
+ * Components set their own ring geometry; only the colour is overridden here.
+ * The translucent accent rings (0.35-0.5 alpha) resolved to 1.43-2.30:1
+ * against the surface behind them, and two rings were hard-coded #383838 and
+ * #1A1A1A -- 1.39 and 1.07 on a dark card, effectively invisible.
+ */
+:focus-visible {
+  outline-color: var(--focus-ring) !important;
+  --tw-ring-color: var(--focus-ring) !important;
+  --tw-ring-shadow: 0 0 0 calc(var(--tw-ring-offset-width, 0px) + 2px) var(--focus-ring) !important;
 }
 
 /* Disabled content must still be readable; opacity compounds badly on dark. */
