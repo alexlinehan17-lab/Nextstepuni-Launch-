@@ -75,7 +75,10 @@ const ModalFrame: React.FC<ModalFrameProps> = ({ open, onClose, title, eyebrow, 
     <AnimatePresence>
       {open && (
         <motion.div
-          className="fixed inset-0 z-[200] flex items-end justify-center bg-[#1A1A1A]/55 p-0 sm:items-center sm:p-4"
+          /* Modals render outside .product-shell, so the dark compat layer never
+             reached their hard-coded light surfaces -- white panels kept
+             dark-mode ink. `theme-compat` opts every ModalFrame consumer in. */
+          className="theme-compat fixed inset-0 z-[200] flex items-end justify-center bg-[#1A1A1A]/55 p-0 sm:items-center sm:p-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}

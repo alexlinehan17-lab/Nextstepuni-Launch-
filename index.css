@@ -855,6 +855,30 @@ html:not(.dark) [class*="text-[#A0978D]"] {
   color: #AD7C77 !important;
 }
 
+/*
+ * Light-mode text literals that surface inside overlays.
+ *
+ * Modals now opt into this layer, so their panels darken correctly -- but the
+ * text inside them still carried light-mode literals: #6b6b6b and #706a64 at
+ * ~3.05:1, the accent text #9a3b0e at 2.33:1 and rose-500 at 4.44:1.
+ */
+.dark :is(.product-shell, .theme-compat) :is([style^="color: rgb(107, 107, 107)"], [style*="; color: rgb(107, 107, 107)"],
+    [style^="color: rgb(112, 106, 100)"], [style*="; color: rgb(112, 106, 100)"],
+    [class*="text-[#6b6b6b]"], [class*="text-[#6B6B6B]"],
+    [class*="text-[#706a64]"], [class*="text-[#706A64]"]) {
+  color: var(--ink-muted) !important;
+}
+
+.dark :is(.product-shell, .theme-compat) :is([style^="color: rgb(154, 59, 14)"], [style*="; color: rgb(154, 59, 14)"],
+    [class*="text-[#9a3b0e]"], [class*="text-[#9A3B0E]"]) {
+  color: var(--accent-tint-ink) !important;
+}
+
+.dark :is(.product-shell, .theme-compat) :is([style^="color: rgb(244, 63, 94)"], [style*="; color: rgb(244, 63, 94)"],
+    [class~="text-rose-500"]) {
+  color: #F54B68 !important;
+}
+
 /* Disabled content must still be readable; opacity compounds badly on dark. */
 .dark :is(.product-shell, .theme-compat) :disabled,
 .dark :is(.product-shell, .theme-compat) [aria-disabled="true"] {

@@ -100,7 +100,7 @@ const RankUpModal: React.FC<RankUpModalProps> = ({ isOpen, newRank, onClose, onG
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.2 }}
-          className="fixed inset-0 z-[300] overflow-y-auto"
+          className="theme-compat fixed inset-0 z-[300] overflow-y-auto"
           style={{ backgroundColor: CREAM }}
         >
           {/* Close button — top-right, neutral outline */}

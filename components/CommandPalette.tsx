@@ -198,7 +198,10 @@ const CommandPalette: React.FC<Props> = ({ courses }) => {
 
   return (
     <div
-      className="fixed inset-0 z-[130] flex items-start justify-center px-4"
+      /* Renders outside .product-shell, so the dark compat layer never reached it:
+         its hard-coded white surfaces kept dark-mode ink at 1.03-1.10:1.
+         `theme-compat` opts the overlay into that layer. */
+      className="theme-compat fixed inset-0 z-[130] flex items-start justify-center px-4"
       style={{ paddingTop: 'min(18vh, 160px)' }}
       role="dialog"
       aria-modal="true"
