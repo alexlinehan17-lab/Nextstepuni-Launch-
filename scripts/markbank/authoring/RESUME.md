@@ -86,18 +86,36 @@ the marking point: stripping "(strawberries)" from "Runners (strawberries)"
 loses the SEC's own example. That is degrading content to satisfy a gate, which
 is what the provenance rule exists to prevent. Not done.
 
-### The real fix, and what blocks it
+### The append was built and measured — it recovers ONE card
 
-Re-extract the affected schemes with table awareness. PyMuPDF's `find_tables()`
-recovers these cleanly -- verified on the Home Economics bacteria table, 5 rows
-x 5 columns, columns intact. `extract-scheme.py` already rebuilds words from
-spans; it does not yet handle table structure.
+`append-scheme-tables.py` exists and works. Run across every scheme whose PDF is
+in the repo it appended ~27,000 table cells and recovered **one** card.
 
-Design it as an APPEND -- emit each table's cells as extra lines rather than
-replacing the flattened text. Existing substrings stay present, so no card that
-passes today can start failing; only cell-spanning claims gain a match.
+The enabler half works: "sublevel: 2p" and "orbital: e.g. 2px" both match
+afterwards where neither did before. But the cards that fail do not quote a
+cell — they quote a PAIRING the author composed across two cells,
+`"sublevel: 2p; orbital: e.g. 2px"`, and only **2 of 133** failing claims are
+joins whose every part matches.
 
-**Blocked on missing PDFs for most of it.** Scheme PDFs in the repo cover only
+So the appends were reverted and the tool kept. Carrying 27,000 machine-written
+lines in nine ground-truth scheme files for one card is not a good trade; run it
+at the point someone authors those questions, which is when the cells are needed.
+
+### What the remaining ~95 cards actually need
+
+Genuine re-authoring against the scheme: read what the SEC actually printed and
+rewrite the marking points so each one is a thing the examiner wrote, rather than
+a pairing composed across cells. That is the same work as authoring a paper, for
+about 95 cards across four subjects. None of chemistry, physics, biology or
+business has authoring scripts, so it would be JSON edits or new scripts.
+
+Two mechanical shortcuts were measured and rejected: stripping parentheticals
+and "or"-alternatives recovers 27 of 133 but ALTERS the marking point (dropping
+"(strawberries)" loses the SEC's own example), and splitting joins recovers 2.
+Degrading content to satisfy the gate is what the provenance rule exists to
+prevent.
+
+**Also blocked on missing PDFs for most of it.** Scheme PDFs in the repo cover only
 recent years, and the drops are spread across 2021-2025:
 
     chemistry  2021:10 2022:5 2023:11 2024:18 2025:6   PDFs: 2024, 2025 only
