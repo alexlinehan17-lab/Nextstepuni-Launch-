@@ -17102,6 +17102,144 @@
   "notes": "One flat list, taken in order to the cap."
  },
  {
+  "id": "he-2022-ol-sc-q1ai",
+  "topicId": "home-economics-3-4",
+  "conceptId": "evaluating-an-open-plan-kitchen-living-space",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2022 OL Section C E1 Q1(a)(i)",
+  "questionText": "Evaluate the suitability of this kitchen/living space for a family with children.",
+  "stem": "A popular open plan kitchen/living space is shown below. (www.roomsketcher.com)",
+  "figureKey": "home-economics-2022-ol-paper-p05-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 points @ 5 marks (graded 5:3:0)",
+   "answer": 4,
+   "ofParts": 14,
+   "perPart": 5
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Suitability of the kitchen/living space",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "Held - see heldReason.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "Large space to meet family needs",
+      "floor covering easy to clean",
+      "same flooring throughout, no transition strip that could be trip hazard",
+      "room divided into distinct zones",
+      "sufficient storage space in kitchen",
+      "modern in design",
+      "kitchen table can be used for completion of homework when other family members prepare dinner",
+      "can watch children playing in living room while preparing food",
+      "plenty kitchen units",
+      "extractor fan over hob",
+      "adequate seating",
+      "good amount of natural light entering room",
+      "useful to have more worktop space on far side of hob",
+      "not enough chairs at kitchen table for all family members to eat together"
+     ]
+    }
+   }
+  ],
+  "notes": "Held - see heldReason."
+ },
+ {
+  "id": "he-2022-ol-sc-q2ai",
+  "topicId": "home-economics-3-8",
+  "conceptId": "evaluating-athleisure-wear-outfits",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2022 OL Section C E2 Q2(a)(i)",
+  "questionText": "Comment on the suitability of the athleisure wear outfits shown above. Refer to: comfort; function; design features.",
+  "stem": "‘Athleisure wear is the fashion trend that can be worn anywhere anytime.’ (www.squatwolf.com)",
+  "figureKey": "home-economics-2022-ol-paper-p06-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 point @ 6 marks (graded 6:3:0) x 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Comfort",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Held - see heldReason.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "stretch fabric allows for ease of movement",
+      "round neck t-shirts not restrictive",
+      "zipped jacket, more comfortable when unzipped, can be removed easily",
+      "flat shoes, comfortable with soft sole"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Function",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Held - see heldReason.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "suitable for activities",
+      "durable",
+      "versatile",
+      "will maintain shape",
+      "will not crease",
+      "suited to warm and cold weather"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "Design features",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Held - see heldReason.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "monochromatic and complimenting colour schemes",
+      "layering adds interest to outfits",
+      "pull-string waist band",
+      "central opening of jackets with zip detail",
+      "pockets",
+      "white t-shirt",
+      "cuffs on sleeves",
+      "casual shoes"
+     ]
+    }
+   }
+  ],
+  "notes": "Held - see heldReason."
+ },
+ {
   "id": "he-2021-hl-sb-q1a",
   "topicId": "home-economics-0-10",
   "conceptId": "health-responsible-living-food-choice",
@@ -33645,5 +33783,764 @@
    }
   ],
   "notes": "One flat list pooling the physical and emotional clusters, because the question prices three points across both rather than pricing each separately."
+ },
+ {
+  "id": "he-2021-ol-sc-q2ai",
+  "topicId": "home-economics-3-8",
+  "conceptId": "evaluating-occasion-wear",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 OL Section C E2 Q2(a)(i)",
+  "questionText": "Comment on the suitability of the occasion wear shown above. Refer to: shape; comfort; design features.",
+  "stem": "‘Fashions fade, style is eternal.’ (Yves Saint Laurent)",
+  "figureKey": "home-economics-2021-ol-paper-p06-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 points @ 3 marks each (graded 3:2:0) x 3",
+   "answer": 6,
+   "ofParts": 14,
+   "perPart": 3
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Suitability of the occasion wear shown",
+    "marks": 18,
+    "openList": true,
+    "contextNote": "Held - see heldReason.",
+    "group": {
+     "claimMax": 6,
+     "perOption": 3,
+     "options": [
+      "shape: strong ballerina line",
+      "low neckline is feminine",
+      "fitted bodice gives a slimming effect",
+      "folded skirt adds width",
+      "short underskirt adds height to the outfit",
+      "comfort: flowing fabric is comfortable to wear",
+      "skirt allows ease of movement",
+      "design features: wide hem line",
+      "embroidery adds interest",
+      "contrasting colours",
+      "shape: slim leg trousers",
+      "short length in the jacket gives height to the man",
+      "short sleeves in jacket give length to arms",
+      "comfort: breathable cotton shirt"
+     ]
+    }
+   }
+  ],
+  "notes": "Held - see heldReason."
+ },
+ {
+  "id": "he-2022-hl-sc-q2ai",
+  "topicId": "home-economics-3-8",
+  "conceptId": "evaluating-a-smart-casual-outfit",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2022 HL Section C E2 Q2(a)(i)",
+  "questionText": "Evaluate the design of the outfits shown in the image above. Refer to: comfort; aesthetic appeal; lifestyle.",
+  "stem": "‘Smart casual is a fusion of two contrasting dress codes.’ (Louis Copeland)",
+  "figureKey": "home-economics-2022-hl-paper-p06-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 points @ 5 marks (graded 5:3:0)",
+   "answer": 3,
+   "ofParts": 3,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Evaluation of the outfits shown",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three points at 5 marks, graded 5:3:0. The question names comfort, aesthetic appeal and lifestyle, so take one from each rather than three comfort points. Comfort has the fullest list; lifestyle is the one to develop, because smart casual earns its place by working for both work and time off without a change of clothes.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Comfort – loose fitting trousers; soft fabric in t-shirt; absorbent materials; buttons on shirt; casual blazer; comfortable trainers",
+      "Aesthetic appeal – appeals to professionals; can be worn during time-off also; relaxed looks",
+      "Lifestyle - smart casual can be worn to work or for time off; can be worn for multiple occasions without having to change; greater convenience; trainers for comfort and dress down an outfit"
+     ]
+    }
+   }
+  ],
+  "notes": "Held - see heldReason."
+ },
+ {
+  "id": "he-2023-ol-sc-q1ai",
+  "topicId": "home-economics-3-4",
+  "conceptId": "evaluating-a-bathroom-design",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2023 OL Section C E1 Q1(a)(i)",
+  "questionText": "Evaluate the suitability of the bathroom space shown above for a couple with children.",
+  "stem": "A contemporary bathroom design is shown below.",
+  "figureKey": "home-economics-2023-ol-paper-p05-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 points @ 5 marks (graded 5:3:0)",
+   "answer": 4,
+   "ofParts": 14,
+   "perPart": 5
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Suitability of the bathroom space",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "Four points at 5 marks, graded 5:3:0.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "large space to meet family needs",
+      "easy to keep clean",
+      "large walk-in shower",
+      "choice of bath or shower",
+      "modern in design",
+      "good ergonomics",
+      "laundry basket for dirty clothes",
+      "stacks of towels",
+      "hook to hang clothes on",
+      "large window",
+      "wall hung basin and toilet for ease of cleaning",
+      "large mirror",
+      "roman blind for privacy",
+      "shelves may be a hazard for small child"
+     ]
+    }
+   }
+  ],
+  "notes": "Held - see heldReason."
+ },
+ {
+  "id": "he-2023-ol-sc-q2ai",
+  "topicId": "home-economics-3-8",
+  "conceptId": "suitability-of-festival-fashion",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2023 OL Section C E2 Q2(a)(i)",
+  "questionText": "Comment on the suitability of the festival fashion shown above. Refer to: comfort; function; aesthetic appeal.",
+  "stem": "‘Music festivals bring new trends and a boost to the fashion industry.’ (www.guardian.com)",
+  "figureKey": "home-economics-2023-ol-paper-p06-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points @ 3 marks (graded 3:2:0) x 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "comfort",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks, graded 3:2:0.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "fabric allows for ease of movement",
+      "stretching while maintaining shape",
+      "easy to remove shirt, jackets, sweatshirt",
+      "well-fitting shoes/ boots",
+      "variety of colours",
+      "layered clothing"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "function",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks, graded 3:2:0.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "waterproof boots",
+      "long boots",
+      "knee length socks",
+      "sunglasses",
+      "long sleeve jacket"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "aesthetic appeal",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks, graded 3:2:0.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "relaxed look",
+      "layered look",
+      "may suit all shapes and sizes",
+      "appeal to younger people"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: three headings named in the question, priced equally."
+ },
+ {
+  "id": "he-2024-hl-sc-q2ai",
+  "topicId": "home-economics-3-8",
+  "conceptId": "evaluating-outfit-design-for-an-occasion",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 HL Section C E2 Q2(a)(i)",
+  "questionText": "Evaluate the design of the outfits shown above for a summer family gathering. Refer to: comfort; aesthetic appeal; current fashion trends.",
+  "stem": "Being stylish, yet comfortable is key for many family gatherings and parties.",
+  "figureKey": "home-economics-2024-hl-paper-p06-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 point @ 5 marks (graded 5:3:0) x 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "comfort",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One point, 5 marks, graded 5:3:0.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "loose fitting dress",
+      "flowy dress",
+      "soft string straps",
+      "cool light weight fabric",
+      "casual jacket",
+      "round neck t-shirt",
+      "absorbent material",
+      "loose fitting trousers",
+      "flat shoes",
+      "easy to wear",
+      "jacket buttoned/unbuttoned can adjust comfort levels"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "aesthetic appeal",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One point, 5 marks, graded 5:3:0.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "relaxed look",
+      "use of detail on neckline of dress creates emphasis",
+      "loose fitting outfits",
+      "asymmetrical hem line on dress",
+      "easily pair with jacket/cardigan/throw",
+      "pockets and rolled up jacket sleeves add emphasis",
+      "rhythm due to repeated design in dress, repeating colour in T- shirt and runners"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "current fashion trends",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One point, 5 marks, graded 5:3:0.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "fashionable clothing trends",
+      "denim jacket and white t-shirt don’t date",
+      "runners very popular for casual or smart casual looks",
+      "light summer dresses with asymmetrical hemlines very popular",
+      "texturing using sequins and beads"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: three headings named in the question, priced equally."
+ },
+ {
+  "id": "he-2024-ol-sc-q2ai",
+  "topicId": "home-economics-3-8",
+  "conceptId": "suitability-of-sportswear",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 OL Section C E2 Q2(a)(i)",
+  "questionText": "Comment on the suitability of the sportwear shown above. Refer to: comfort; function; aesthetic appeal.",
+  "stem": "Sportwear needs to be practical but can also be stylish.",
+  "figureKey": "home-economics-2024-ol-paper-p06-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points @ 3 marks (graded 3:2:0) x 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "comfort",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks, graded 3:2:0.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "allows for ease of movement during exercise",
+      "easy to remove jacket/hoodie",
+      "woman’s jacket is water resistant",
+      "round neck t-shirt for women is comfortable",
+      "suitable footwear for exercise",
+      "tracksuit bottoms are fitted, less like to slip/move down during exercise/movement"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "function",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks, graded 3:2:0.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "suitable for different exercise activities",
+      "durable",
+      "reduced risk of creasing",
+      "suited to warm and cold weather",
+      "improved visibility due to strips of bright colours",
+      "can hold personal items",
+      "suitable footwear for exercise"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "aesthetic appeal",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks, graded 3:2:0.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "stripes of colour on tracksuit bottoms",
+      "narrowed cuff on man’s hoodie",
+      "fitted leggings style bottoms",
+      "zip on both hoodie/jacket",
+      "pockets in hoodie/jacket",
+      "colour blocking",
+      "draw string feature on man’s hoodie",
+      "brand crest less obvious due to small size"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: three headings named in the question, priced equally."
+ },
+ {
+  "id": "he-2024-ol-sc-q2aii",
+  "topicId": "home-economics-3-8",
+  "conceptId": "emphasis-applied-to-an-outfit",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2024 OL Section C E2 Q2(a)(ii)",
+  "questionText": "Describe how emphasis as a design principle is applied to the outfits pictured above.",
+  "stem": "Sportwear needs to be practical but can also be stylish.",
+  "figureKey": "home-economics-2024-ol-paper-p06-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 point @ 4 marks (graded 4:2:0); 2nd point @ 3 marks (graded 3:2:0)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "First point on emphasis",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One point at 4 marks, graded 4:2:0. Emphasis is what pulls the eye first. In these outfits it is colour doing the work: the fluorescent yellow top against navy, and the matching yellow runners.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "bright yellow t-shirt",
+      "bright yellow/white runners",
+      "yellow stripe on side and back of tracksuit bottom",
+      "green stripe on shoulder and top of tracksuit bottom",
+      "brand logos",
+      "contrasting zip"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Second point on emphasis",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "A second point at 3 marks, graded 3:2:0 - priced lower than the first, so lead with your strongest. The stripes down the side of the tracksuit bottoms, the contrasting zip and the brand logos are all emphasis through line and detail rather than colour.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "bright yellow t-shirt",
+      "bright yellow/white runners",
+      "yellow stripe on side and back of tracksuit bottom",
+      "green stripe on shoulder and top of tracksuit bottom",
+      "brand logos",
+      "contrasting zip"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices the first point at 4 and the second at 3."
+ },
+ {
+  "id": "he-2025-hl-sc-q2ai",
+  "topicId": "home-economics-3-8",
+  "conceptId": "evaluating-outfit-design",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2025 HL Section C E2 Q2(a)(i)",
+  "questionText": "Evaluate the design of the outfits shown above. Refer to: design; comfort; aesthetic appeal.",
+  "stem": "A blazer is a wardrobe staple.",
+  "figureKey": "home-economics-2025-hl-paper-p06-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points @ 5 marks (graded 5:3:0)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "design",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One point, 5 marks, graded 5:3:0.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "contrasting colour scheme",
+      "monochromatic colour scheme",
+      "embellishment detail on t-shirt",
+      "wide-leg jeans can make legs look shorter",
+      "bag adds emphasis",
+      "long earrings"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "comfort",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One point, 5 marks, graded 5:3:0.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "soft",
+      "will hold shape",
+      "jeans will not crease",
+      "suited to warm and cold weather",
+      "pockets in jeans and blazers",
+      "relaxed fit",
+      "boots",
+      "trainers"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "aesthetic appeal",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One point, 5 marks, graded 5:3:0.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "appeals to young people who are fashion conscious",
+      "can be worn to work and during time off",
+      "good, structured fit",
+      "look smart but not overdressed",
+      "jeans easy to move in",
+      "pockets in jeans, blazer can hold items"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: one point pinned to each of the three named headings."
+ },
+ {
+  "id": "he-2025-hl-sc-q2aii",
+  "topicId": "home-economics-3-8",
+  "conceptId": "design-principles-demonstrated",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2025 HL Section C E2 Q2(a)(ii)",
+  "questionText": "Name one design principle and explain how it is demonstrated in either outfit above.",
+  "stem": "A blazer is a wardrobe staple.",
+  "figureKey": "home-economics-2025-hl-paper-p06-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name 1 @ 4 marks (graded 4:0); demonstration 2 points @ 3 marks (graded 3:2:0)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Name of design principle",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Name one principle, 4 marks, graded 4:0 — all-or-nothing.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Balance",
+      "Emphasis",
+      "Proportion",
+      "Rhythm"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "How it is demonstrated in either outfit",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks, graded 3:2:0, tied to the principle you named.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "colours of outfits working well together",
+      "hand-bag picks up colours in earrings",
+      "blazer not oversized for either outfit",
+      "different coloured blazer",
+      "different coloured boots/shoes",
+      "embellishment on t-shirt",
+      "white t- shirt",
+      "belt",
+      "hand-bag",
+      "earrings"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: the name is priced separately from the two demonstration points."
+ },
+ {
+  "id": "he-2025-ol-sc-q2ai",
+  "topicId": "home-economics-3-8",
+  "conceptId": "suitability-of-outfits-for-an-occasion",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2025 OL Section C E2 Q2(a)(i)",
+  "questionText": "Comment on the suitability of the outfits shown above for a winter wedding. Refer to: comfort; function; aesthetic appeal.",
+  "stem": "Special events require special occasion clothing.",
+  "figureKey": "home-economics-2025-ol-paper-p06-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points @ 3 marks (graded 3:2:0) x 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "comfort",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks, graded 3:2:0.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "flowing fabric is comfortable to wear",
+      "dress allows ease of movement",
+      "stretch fabric",
+      "cool cotton T-shirt",
+      "fitted jacket and trousers allow for ease of movement while maintaining shape",
+      "block heels"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "function",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks, graded 3:2:0.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "slim leg trousers",
+      "short length in the jacket gives height",
+      "ease of movement",
+      "pockets",
+      "bag",
+      "flat shoes"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "aesthetic appeal",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks, graded 3:2:0.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "elongated shape",
+      "colour and texture of fabric adds interest",
+      "contrasting colours",
+      "appeals to all age groups",
+      "colour combinations"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: three headings named in the question, priced equally."
+ },
+ {
+  "id": "he-2025-ol-sc-q2aii",
+  "topicId": "home-economics-3-8",
+  "conceptId": "accessorising-an-outfit",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2025 OL Section C E2 Q2(a)(ii) - naming the accessory",
+  "questionText": "Suggest one accessory you could add to enhance any one of the above outfits. Give one reason for your choice.",
+  "stem": "Special events require special occasion clothing.",
+  "figureKey": "home-economics-2025-ol-paper-p06-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 accessory @ 3 marks (graded 3:0)",
+   "answer": 1,
+   "ofParts": 9,
+   "perPart": 3
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Accessories",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Name one accessory, 3 marks, graded 3:0 — all-or-nothing.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "jewellery: earrings, bracelet, necklace, rings, watch",
+      "etc. add a shirt and tie",
+      "add a pocket square",
+      "belt",
+      "evening wear bag",
+      "hat",
+      "fascinator",
+      "hairband",
+      "scarf"
+     ]
+    }
+   }
+  ],
+  "notes": "The naming strand at its own 3 marks. The 4-mark reason strand is held - the scheme prints no marking points for it."
  }
 ]

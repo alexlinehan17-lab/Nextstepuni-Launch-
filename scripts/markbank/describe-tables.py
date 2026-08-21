@@ -20,6 +20,16 @@ from pathlib import Path
 
 import fitz
 
+
+def rect_area(rect) -> float:
+    """Rect area, across PyMuPDF versions.
+
+    Rect.get_area() was removed in newer PyMuPDF; width*height is stable and
+    means the same thing. Callers already wrap this in abs().
+    """
+    return rect.width * rect.height
+
+
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from markbank_text import unligature  # noqa: E402
 
@@ -39,7 +49,7 @@ def cells_for(page, bbox):
         inter = r & want
         if inter.is_empty:
             continue
-        ov = abs(inter.get_area())
+        ov = abs(rect_area(inter))
         if ov > best_overlap:
             best, best_overlap = t, ov
     if best is None:

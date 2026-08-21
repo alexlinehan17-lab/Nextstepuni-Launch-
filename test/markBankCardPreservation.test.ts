@@ -37,8 +37,8 @@ const decks = [
   ['agricultural-science:ordinary', AGSCI_ORDINARY, 389, 'd964ad3c5b7f8933d947c1fc18c593098b3928d20c22d7ff8de8473e6e243a0e'],
   ['business:higher', BUSINESS_HIGHER, 261, '756f439b344b3f5ad492baf96d2bde14e4991d225d8fadbf4a0234beef9290a7'],
   ['business:ordinary', BUSINESS_ORDINARY, 314, '9aa889406a38da3c7c143cc2aa84af34e33b1a901ee8482493ad58105c20af38'],
-  ['home-economics:higher', HOME_EC_HIGHER, 289, '42e7f56c4f28eac0426e84fa07fbf0ab1e7075b86d95711499276172dcf528b6'],
-  ['home-economics:ordinary', HOME_EC_ORDINARY, 264, '875bb5772cddccc8918bacd530afe813eab36e09094581071e77a6fc5e7254ae'],
+  ['home-economics:higher', HOME_EC_HIGHER, 293, '8cbe6ec045b4ca097a0cab3c6d70c3d1fc2ebb2c8696089afcc75e98460d0d7d'],
+  ['home-economics:ordinary', HOME_EC_ORDINARY, 273, '5b15bc2e07a475191deb82613d27459fa2e776a0b10a2249aaff4f11f7a7e787'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -53,6 +53,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(4_557);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(4_570);
   });
 });

@@ -1,3 +1,13 @@
+
+
+def rect_area(rect) -> float:
+    """Rect area, across PyMuPDF versions.
+
+    Rect.get_area() was removed in newer PyMuPDF; width*height is stable and
+    means the same thing. Callers already wrap this in abs().
+    """
+    return rect.width * rect.height
+
 #!/usr/bin/env python3
 """
 Mark Bank — extract figures from an SEC exam paper.
@@ -76,12 +86,12 @@ TABLE_PAD_X, TABLE_PAD_TOP, TABLE_PAD_BOTTOM = 10, 12, 10
 
 def covered_by(rect, regions, frac=0.72) -> bool:
     """Is most of `rect` already inside a region we are going to render?"""
-    area = abs(rect.get_area())
+    area = abs(rect_area(rect))
     if area <= 0:
         return True
     for g in regions:
         inter = rect & g
-        if not inter.is_empty and abs(inter.get_area()) >= area * frac:
+        if not inter.is_empty and abs(rect_area(inter)) >= area * frac:
             return True
     return False
 
@@ -132,12 +142,12 @@ def vector_regions(page, have: list) -> list:
             continue
         paths.append(r)
 
-    page_area = abs(page.rect.get_area())
+    page_area = abs(rect_area(page.rect))
     out = []
     for g in cluster(paths, gap=20.0):
         if g.width < MIN_VECTOR_W or g.height < MIN_VECTOR_H:
             continue
-        if abs(g.get_area()) > page_area * MAX_REGION_FRACTION:
+        if abs(rect_area(g)) > page_area * MAX_REGION_FRACTION:
             continue
         if sum(1 for r in paths if r in g) < MIN_VECTOR_PATHS:
             continue
