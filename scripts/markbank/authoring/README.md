@@ -16,6 +16,7 @@ the deck today. That is asserted by `test/markBankAuthoringToolkit.test.ts`.
 | `he_lib.py` | Shared helpers: `load`, `block`, `heads`, `semis`, `anyN`, `card`, `audit`, `emit` |
 | `scout.py` | `python3 scout.py <year> <higher\|ordinary>` — prints Section C bounds and the question map |
 | `rebaseline.py` | Verifies no card ID vanished, then updates the preservation baseline. Refuses on loss |
+| `provcheck.mjs` | `node provcheck.mjs /tmp/out.json` — runs the build's provenance gate on a script's output *before* merging |
 | `he_<year>_<level>_secC.py` | One Section C paper each |
 | `he_<year>_<level>.py` | The earlier Section A/B papers |
 | `RESUME.md` | Current state and the next action |
@@ -41,6 +42,7 @@ Each one is here because it caught a real bug that would otherwise have shipped:
 ```bash
 python3 scripts/markbank/authoring/scout.py 2022 higher     # bounds + question map
 python3 scripts/markbank/authoring/he_2022_hl_secC.py > /tmp/out.json   # AUDIT lines on stderr must be silent
+node scripts/markbank/authoring/provcheck.mjs /tmp/out.json             # must be 0 untraceable
 # merge into scripts/markbank/authored/home-economics.json
 node scripts/markbank/build-deck.mjs scripts/markbank/authored/home-economics.json
 python3 scripts/markbank/authoring/rebaseline.py home-economics

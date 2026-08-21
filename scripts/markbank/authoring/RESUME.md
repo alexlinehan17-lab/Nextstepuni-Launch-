@@ -7,34 +7,15 @@ already had all its sections). Working paper by paper, newest first.
 DONE and pushed:
   2025 HL  24 cards   2025 OL  25 cards
   2024 HL  28 cards   2024 OL  31 cards
-  2023 HL  37 cards   2023 OL  11 cards  <-- PARTIAL: Electives 1 and 2 only
-Bank total 4424. 422 HE cards built (228 higher / 194 ordinary), 21 held.
+  2023 HL  37 cards   2023 OL  26 cards   <-- COMPLETE
+  2022 HL  27 cards                       <-- COMPLETE
+Bank total 4466. Higher deck 255, ordinary 209. Held 24.
 
 ## NEXT ACTION
-Finish 2023 OL: Elective 3 and Question 4 (Core). Script to extend:
-  scratchpad/he_2023_ol_secC.py   (append before the final emit(cards) block)
-Scheme bounds already worked out:  SEC = tidy(T[22298:43193])
+2022 OL, then 2021 HL, then 2021 OL. Nothing else is outstanding.
 
-Cards still to author for 2023 OL (all read from the scheme, notes below):
-  q3ai   (6)  Define unemployment              2 @ 3, flat (4 opts)
-  q3aii  (24) Effects of unemployment          3 rows @ 8 (individual/family/society, 2 @ 4 each)
-  q3aiii (12) Role of education for work       3 @ 4, flat
-  q3aiv-name (4) Statutory scheme NAME only    -- HOLD the 4-mark details strand,
-                 the scheme prints names and no marking points for the detail
-  q3bi   (15) Primary school + development     3 @ 5, bundles: physical/emotional/intellectual/social
-  q3bii  (15) Factors in educational achievement 3 @ 5, flat (cap 14)
-  q3ci   (15) Social/economic change           3 rows @ 5 (three named headings)
-  q3cii  (15) Benefits of voluntary work       3 @ 5, flat
-  q4ai   (20) Osteoporosis causes/effects      fixed 3 rows (5 / 5 / 10 floating)
-  q4aii  (15) Preventing osteoporosis          3 @ 5, pool lifestyle+dietary
-  q4aiii (15) Food labelling + special diets   3 @ 5, flat
-  q4bi   (15) Factors affecting household income 3 @ 5, bundles: age/gender/social class/
-                 lower socio-economic group/cultural factors
-  q4bii  (15) Benefits of a budget plan        3 @ 5, flat
-  q4ci   (15) Changing role of the adolescent  3 @ 5, flat
-  q4cii  (15) Family and child development     3 @ 5, pool physical+emotional
-
-Then the remaining papers, same rhythm: 2022 HL, 2022 OL, 2021 HL, 2021 OL.
+Start with:
+  python3 scripts/markbank/authoring/scout.py 2022 ordinary
 
 ## The loop, per paper
 1. python3 scratchpad/scout.py <year> <higher|ordinary>   -> Section C bounds + question map

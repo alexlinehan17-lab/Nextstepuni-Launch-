@@ -1,0 +1,84 @@
+[
+ {
+  "id": "he-2022-hl-sc-q1aii-properties",
+  "topicId": "home-economics-3-4",
+  "conceptId": "floor-covering-name-and-properties",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2022 HL Section C E1 Q1(a)(ii) - name and properties",
+  "questionText": "Name a suitable floor covering for a home office and give its properties.",
+  "stem": "‘Working from home in separate home offices can improve work-life balance.’ (The Irish Times, 2021)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "name 2 marks (graded 2:1:0); properties 3 points @ 2 marks (graded 2:0)",
+   "answer": 3,
+   "ofParts": 0,
+   "perPart": 2
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Floor covering and its properties",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Held - see heldReason.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": []
+    }
+   }
+  ],
+  "notes": "Held - see heldReason.",
+  "heldReason": "The scheme prints these as a two-column table (covering | properties) and the PDF extraction interleaves the columns: \"chips easily; etc. stone carpeting Tiles slate tiles\", \"chinese slate easy to clean\", \"low limestone tiles/slabs; maintenance\". Slicing it would ship name-column fragments as student-facing marking points, so both the naming and properties strands are held rather than guessed. Accounts for 8 of the 20 marks; the 12-mark factors strand ships as he-2022-hl-sc-q1aii."
+ },
+ {
+  "id": "he-2022-hl-sc-q2ai",
+  "topicId": "home-economics-3-8",
+  "conceptId": "evaluating-a-smart-casual-outfit",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2022 HL Section C E2 Q2(a)(i)",
+  "questionText": "Evaluate the design of the outfits shown in the image above. Refer to: comfort; aesthetic appeal; lifestyle.",
+  "stem": "‘Smart casual is a fusion of two contrasting dress codes.’ (Louis Copeland)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 points @ 5 marks (graded 5:3:0)",
+   "answer": 3,
+   "ofParts": 3,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Evaluation of the outfits shown",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Held - see heldReason.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Comfort - soft fabric in t-shirt; absorbent materials; buttons on shirt; casual blazer; comfortable trainers",
+      "Aesthetic appeal - can be worn during time-off also; relaxed looks",
+      "Lifestyle - to work or for time off; can be worn for multiple occasions without having to change; greater convenience; trainers for comfort and dress down an outfit"
+     ]
+    }
+   }
+  ],
+  "notes": "Held - see heldReason.",
+  "heldReason": "Marks a photograph of two outfits printed on the paper. Every marking point describes that image (\"loose fitting trousers\", \"soft fabric in t-shirt\", \"casual blazer\", \"comfortable trainers\"), so the card is unanswerable without the figure and the markdown extraction does not carry it."
+ }
+]
