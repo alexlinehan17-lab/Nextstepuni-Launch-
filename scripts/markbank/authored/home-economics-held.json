@@ -1293,5 +1293,145 @@
   ],
   "notes": "Held - see heldReason.",
   "heldReason": "Marks a photograph of two outfits printed on the paper. Every marking point describes that image (\"loose fitting trousers\", \"soft fabric in t-shirt\", \"casual blazer\", \"comfortable trainers\"), so the card is unanswerable without the figure and the markdown extraction does not carry it."
+ },
+ {
+  "id": "he-2022-ol-sc-q1ai",
+  "topicId": "home-economics-3-4",
+  "conceptId": "evaluating-an-open-plan-kitchen-living-space",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2022 OL Section C E1 Q1(a)(i)",
+  "questionText": "Evaluate the suitability of this kitchen/living space for a family with children.",
+  "stem": "A popular open plan kitchen/living space is shown below. (www.roomsketcher.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 points @ 5 marks (graded 5:3:0)",
+   "answer": 4,
+   "ofParts": 14,
+   "perPart": 5
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Suitability of the kitchen/living space",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "Held - see heldReason.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "Large space to meet family needs",
+      "floor covering easy to clean",
+      "same flooring throughout, no transition strip that could be trip hazard",
+      "room divided into distinct zones",
+      "sufficient storage space in kitchen",
+      "modern in design",
+      "kitchen table can be used for completion of homework when other family members prepare dinner",
+      "can watch children playing in living room while preparing food",
+      "plenty kitchen units",
+      "extractor fan over hob",
+      "adequate seating",
+      "good amount of natural light entering room",
+      "useful to have more worktop space on far side of hob",
+      "not enough chairs at kitchen table for all family members to eat together"
+     ]
+    }
+   }
+  ],
+  "notes": "Held - see heldReason.",
+  "heldReason": "Marks a floor plan printed on the paper. Every option describes that image (\"same flooring throughout, no transition strip\", \"not enough chairs at kitchen table\", \"useful to have more worktop space on far side of hob\"), so the card is unanswerable without the figure and the markdown extraction does not carry it."
+ },
+ {
+  "id": "he-2022-ol-sc-q2ai",
+  "topicId": "home-economics-3-8",
+  "conceptId": "evaluating-athleisure-wear-outfits",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2022 OL Section C E2 Q2(a)(i)",
+  "questionText": "Comment on the suitability of the athleisure wear outfits shown above. Refer to: comfort; function; design features.",
+  "stem": "‘Athleisure wear is the fashion trend that can be worn anywhere anytime.’ (www.squatwolf.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 point @ 6 marks (graded 6:3:0) x 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Comfort",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Held - see heldReason.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "stretch fabric allows for ease of movement",
+      "round neck t-shirts not restrictive",
+      "zipped jacket, more comfortable when unzipped, can be removed easily",
+      "flat shoes, comfortable with soft sole"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Function",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Held - see heldReason.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "suitable for activities",
+      "durable",
+      "versatile",
+      "will maintain shape",
+      "will not crease",
+      "suited to warm and cold weather"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "Design features",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Held - see heldReason.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "monochromatic and complimenting colour schemes",
+      "layering adds interest to outfits",
+      "pull-string waist band",
+      "central opening of jackets with zip detail",
+      "pockets",
+      "white t-shirt",
+      "cuffs on sleeves",
+      "casual shoes"
+     ]
+    }
+   }
+  ],
+  "notes": "Held - see heldReason.",
+  "heldReason": "Marks two outfit photographs printed on the paper. The comfort and design-features strands describe those images directly (\"round neck t-shirts not restrictive\", \"zipped jacket\", \"pull-string waist band\", \"central opening of jackets with zip detail\"), so the card is unanswerable without the figures and the markdown extraction does not carry them."
  }
 ]
