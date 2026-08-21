@@ -27,12 +27,12 @@ import { CARDS as HOME_EC_HIGHER } from '../components/MarkBank/cards/home-econo
 import { CARDS as HOME_EC_ORDINARY } from '../components/MarkBank/cards/home-economics/ordinary';
 
 const decks = [
-  ['biology:higher', BIO_HIGHER, 557, 'a89ac4acc50f7ae1ad5f3663426dedd0a098ed8ce05fef954e309f4908f26d6a'],
-  ['biology:ordinary', BIO_ORDINARY, 574, '75b852c3cb3bb4dd0f28bdeea72914f6d99f62bd1a30bf8c7dd29ad4f4b1691d'],
-  ['chemistry:higher', CHEM_HIGHER, 418, '121281261ee866d3eee58e427d38a428986e914fe5782e4907f7044c91651523'],
-  ['chemistry:ordinary', CHEM_ORDINARY, 311, '4cec647fec1f52160bef4c5eef3d7400b887081a27732999c7bb6a6c2a6cd7c2'],
+  ['biology:higher', BIO_HIGHER, 562, 'f9278d1b49aa4f4f0eecc1cbbccedc38ea8495e1fb21e3f1f9f1bea90ed5ef27'],
+  ['biology:ordinary', BIO_ORDINARY, 581, '2eef24eeb7a62c48562e13ab5c64decb30f4ce855b28af8cc1a47c7d7808d498'],
+  ['chemistry:higher', CHEM_HIGHER, 423, 'b29c9eb77a0ba3e76fbc0385d8290c0653c3c96023f48fb1e7716f34a96a7719'],
+  ['chemistry:ordinary', CHEM_ORDINARY, 317, 'de659af0b6921a49a8c4ff240976fd57963dd7cdead0926a3778089dd69f2246'],
   ['physics:higher', PHYS_HIGHER, 396, '7b1675bfd8052f4a0070fa8f659b5114a70044b7aa33e297d4d51691b809e266'],
-  ['physics:ordinary', PHYS_ORDINARY, 418, '994814c0fff6456591e97479b8580a862639c6a89d2317037f767848d5a5fb21'],
+  ['physics:ordinary', PHYS_ORDINARY, 419, 'a3ac3f788da397459fba55798e9c6bb60f4efe193f0ab4ac4565f5fb7395852a'],
   ['agricultural-science:higher', AGSCI_HIGHER, 401, '62a6fe4e88d3740af0b96a5a403622cb237f583eafa65fd199638b0e320379a4'],
   ['agricultural-science:ordinary', AGSCI_ORDINARY, 389, 'd964ad3c5b7f8933d947c1fc18c593098b3928d20c22d7ff8de8473e6e243a0e'],
   ['business:higher', BUSINESS_HIGHER, 267, 'f77da5157334a615111f7a5bd160306fef346c9eac49d8ad41b0dc6e4629a2b3'],
@@ -53,6 +53,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(4_617);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(4_641);
   });
 });

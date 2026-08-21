@@ -7290,7 +7290,7 @@
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 9999,
+  "totalMarks": 4,
   "rows": [
    {
     "id": "r-1",
@@ -7305,7 +7305,7 @@
     "openList": true
    }
   ],
-  "notes": ""
+  "notes": "totalMarks was left at the authoring placeholder 9999 and the card never built. The scheme prints the tariff on the part itself: \"(i) GIVE: metals (metallic) / often good catalysts / variable valency / form coloured compounds, etc (4)\" -- Chemistry 2021 Ordinary, Q11(d)B(i). One property, 4 marks, which is what the row already carried."
  },
  {
   "id": "chem-2021-ol-q11-d-b-iii",
@@ -26739,19 +26739,9 @@
     "verbatim": "brown (red, orange, yellow, pink, purple) colour disappears (decolourises, fades)",
     "contextNote": "The colour change is one marking point: you must state both the starting colour and that it disappears, and the colour must match the reagent you chose.",
     "marks": null
-   },
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "Al2O3",
-    "accepts": [
-     "aluminium oxide",
-     "alumina"
-    ],
-    "marks": null
    }
   ],
-  "notes": "Q1(a) is marked as ONE POOL of SIX POINTS [11 + 6 + 6 + 2 + 2 + 2] = 29 across (i)–(iii). Part (a)(i) is a diagram part (label ethanol and catalyst, show how the ethene was collected) and carries three of the six points; it is not carded because this wave carries no figures. The three points carded here therefore take the top three pooled values, 11 + 6 + 6 = 23, which is what a student can actually earn on (ii)–(iii). Per-point marks do not exist in a pooled tariff, so every row is null."
+  "notes": "Q1(a) is marked as ONE POOL of SIX POINTS [11 + 6 + 6 + 2 + 2 + 2] = 29 across (i)–(iii). Part (a)(i) is a diagram part (label ethanol and catalyst, show how the ethene was collected) and carries three of the six points; it is not carded because this wave carries no figures. The three points carded here therefore take the top three pooled values, 11 + 6 + 6 = 23, which is what a student can actually earn on (ii)–(iii). Per-point marks do not exist in a pooled tariff, so every row is null. The r-1 row was duplicated at the end of the list by a copy-paste, which made the card unbuildable: rowId() keys the claims map, so two rows sharing an id are one claim to the scorer and ticking either credits both."
  },
  {
   "id": "chem-2022-ol-q1-b",

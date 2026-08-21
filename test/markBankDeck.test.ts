@@ -24,6 +24,7 @@ import { resolve } from 'node:path';
 // One implementation of the provenance comparison, shared with build-deck.mjs —
 // two copies drifted once and reported four correct cards as untraceable.
 import { normalise, comparableScheme } from '../scripts/markbank/schemeText.mjs';
+import { questionStandsAlone } from '../scripts/markbank/questionText.mjs';
 import { createHash } from 'node:crypto';
 
 import { STRANDS, CHEMISTRY_STRANDS, PHYSICS_STRANDS, ALL_TOPICS, SUBJECTS, BLOCKED_FIGURES, deckSize } from '../components/MarkBank/deck';
@@ -160,8 +161,12 @@ describe('every card traces to the marking scheme on disk', () => {
 
 describe('no card can repeat the fabrication that shipped first time', () => {
   test('every card is a real question, not a section label or table fragment', () => {
+    // questionStandsAlone is the build's own rule, imported rather than
+    // re-implemented: a bare length test lived in both and dropped four correct
+    // short questions ("What is cancer?", "Name gas X."), and loosening one copy
+    // alone wrote cards the other rejected.
     const bad = SAMPLE_CARDS
-      .filter(c => looksLikeSectionLabel(c.questionText) || c.questionText.length <= 15)
+      .filter(c => looksLikeSectionLabel(c.questionText) || !questionStandsAlone(c))
       .map(c => `${c.questionRef}: "${c.questionText}"`);
     expect(bad, show(bad)).toEqual([]);
   });

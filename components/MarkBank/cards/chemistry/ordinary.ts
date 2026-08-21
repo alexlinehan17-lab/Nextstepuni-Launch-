@@ -219,6 +219,22 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC022GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2021 Ordinary Level — © State Examinations Commission.",
+    id: "chem-2021-ol-q3-e", topicId: "chem-3-1", conceptId: "heat-of-reaction-per-mole",
+    section: "A", questionRef: "2021 OL Q3(e)",
+    stem: "In this experiment 0.1 moles of HCl were neutralised in an insulated cup and the temperature of the mixture rose. The heat change was calculated to be 5.7 kJ.",
+    questionText: "Find ΔH in kJ mol⁻¹ for the reaction.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "5.7 ÷ 0.1", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "57 kJ mol⁻¹", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "exothermic → –57.0 kJ mol⁻¹", marks: 1 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC022GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2021 Ordinary Level — © State Examinations Commission.",
     id: "chem-2021-ol-q4-a", topicId: "chem-1-2", conceptId: "isotopes",
     section: "B", questionRef: "2021 OL Q4(a)",
     questionText: "Some carbon atoms have a greater mass than others. Explain.",
@@ -588,6 +604,20 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "gives hydrogen (hydronium) ions (H⁺, H₃O⁺) in aqueous solution (water)", marks: 6, accepts: ["proton (hydrogen ion, H⁺) donor"] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC022GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2021 Ordinary Level — © State Examinations Commission.",
+    id: "chem-2021-ol-q7-a-ii", topicId: "chem-3-4", conceptId: "ph-definition",
+    section: "B", questionRef: "2021 OL Q7(a)(ii)",
+    questionText: "Define pH.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "pH = –log", marks: 3 },
+    { id: "r-2", kind: "alt", verbatim: "[H⁺]", marks: 3, accepts: ["[H₃O⁺]"], contextNote: "Accept non-square brackets." },
     ],
   } as SecCard,
   {
@@ -1012,6 +1042,19 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "absorb (protect from) uv (ultraviolet) radiation", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC022GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2021 Ordinary Level — © State Examinations Commission.",
+    id: "chem-2021-ol-q11-d-b-i", topicId: "chem-1-3", conceptId: "characteristic-properties-of-transition-elements",
+    section: "B", questionRef: "2021 OL Q11(d)B(i)",
+    questionText: "Give one general property of transition elements.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "metals (metallic)", marks: 4, accepts: ["often good catalysts","variable valency","form coloured compounds"], openList: true },
     ],
   } as SecCard,
   {
@@ -2012,6 +2055,19 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "keeps air (oxygen) away from the iron", marks: 6, accepts: ["covers the iron with zinc","zinc (Zn, galvanised layer) corrodes first (more easily than iron)","zinc (Zn) higher up electrochemical series (more easily oxidised)"], contextNote: "[Allow (3) for any reference to zinc / protective layer.]" },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC022GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2023 Ordinary Level — © State Examinations Commission.",
+    id: "chem-2023-ol-q11-d-b-v", topicId: "chem-1-1", conceptId: "what-is-steel",
+    section: "B", questionRef: "2023 OL Q11(d)B(v)",
+    questionText: "What is steel?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "alloy of iron", marks: 4, accepts: ["mixture of iron and carbon (other elements, other metals)"] },
     ],
   } as SecCard,
   {
@@ -3830,6 +3886,22 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC022GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2022 Ordinary Level — © State Examinations Commission.",
+    id: "chem-2022-ol-q1-a-ii-iii", topicId: "chem-u2", conceptId: "ethene-preparation-catalyst-and-unsaturation-test",
+    section: "A", questionRef: "2022 OL Q1(a)(ii)–(iii)",
+    stem: "An arrangement of apparatus and chemicals was used to prepare ethene (C2H4) gas by dehydrating ethanol using a catalyst.",
+    questionText: "(ii) Identify the catalyst used in this preparation. (iii) Describe how you could carry out a test for unsaturation on a sample of ethene.",
+    tariffModel: {"kind":"orderedSplit","notation":"Q1(a) is one pool of SIX POINTS: [11 + 6 + 6 + 2 + 2 + 2] = 29 across (i)–(iii). Three of those six points fall in (ii)–(iii), and k correct points take the top k values, so these three are worth 11 + 6 + 6 = 23."}, totalMarks: 23,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Al2O3", marks: null, accepts: ["aluminium oxide","alumina"] },
+    { id: "r-2", kind: "alt", verbatim: "shake (mix, bubble into, add, use) with bromine (Br2) solution (water)", marks: null, accepts: ["shake (mix, bubble into, add, use) with acidified potassium permanganate {manganate(VII)} solution (H+/KMnO4 or H+/MnO4–)"] },
+    { id: "r-3", kind: "point", verbatim: "brown (red, orange, yellow, pink, purple) colour disappears (decolourises, fades)", marks: null, contextNote: "The colour change is one marking point: you must state both the starting colour and that it disappears, and the colour must match the reagent you chose." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC022GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2022 Ordinary Level — © State Examinations Commission.",
     id: "chem-2022-ol-q1-b", topicId: "chem-u2", conceptId: "phenylmethanol-oxidation-observations",
     section: "A", questionRef: "2022 OL Q1(b)",
     stem: "An arrangement of apparatus and chemicals was used for the oxidation of phenylmethanol (benzyl alcohol) to benzoic acid using KMnO4 under basic conditions. In the process, insoluble MnO2 was also formed. Three of the reagents used in the preparation and isolation of the benzoic acid were: concentrated hydrochloric acid (HCl), sodium carbonate (Na2CO3) and sodium sulfite (Na2SO3).",
@@ -4271,6 +4343,20 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "gives hydrogen (hydronium) ions (H+, H3O+) in aqueous solution (water)", marks: null, accepts: ["proton (hydrogen ion, H+) donor"], contextNote: "Definition of an acid — either the Arrhenius or the Brønsted–Lowry form is equally acceptable." },
     { id: "r-2", kind: "alt", verbatim: "gives hydroxide (hydroxyl) ions (OH–) in aqueous solution (water)", marks: null, accepts: ["proton (hydrogen ion, H+) acceptor"], contextNote: "Definition of a base — either the Arrhenius or the Brønsted–Lowry form is equally acceptable." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC022GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2022 Ordinary Level — © State Examinations Commission.",
+    id: "chem-2022-ol-q7-a-iii", topicId: "chem-3-4", conceptId: "ph-definition",
+    section: "B", questionRef: "2022 OL Q7(a)(iii)",
+    questionText: "Define pH.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "pH = –log", marks: 3 },
+    { id: "r-2", kind: "alt", verbatim: "[H+]", marks: 3, accepts: ["[H3O+]"], contextNote: "Non-square brackets are accepted." },
     ],
   } as SecCard,
   {

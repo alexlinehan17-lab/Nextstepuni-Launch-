@@ -9862,5 +9862,23 @@
   "year": 2022,
   "level": "higher",
   "attribution": "SEC Leaving Certificate Biology 2022 Higher Level — © State Examinations Commission"
+ },
+ "biology-2023-OL-paper2-p04-i0": {
+  "src": "/exam-figures/biology/markbank/biology-2023-OL-paper2-p04-i0.png",
+  "md5": "84dd3692a07c0131a15effd79c2fce71",
+  "alt": "Black-and-white line drawing of a cross section through the internal structure of a leaf, showing outlined cells only, with no shading and no surrounding tissue drawn. Along the top runs a single row of flat, brick-shaped cells. Beneath them stand four tall, narrow, column-shaped cells packed closely side by side, each with a chain of small dark oval bodies around its inner edge. Below those the cells become rounded and irregular and are loosely arranged with open gaps between them, the gaps growing larger toward the bottom. Along the bottom runs another row of flat cells, broken in two places by a small opening flanked by a pair of curved cells. The words 'Gas X' are printed in one of the open gaps in the lower part of the drawing, just above one of those openings; there is no arrow or leader line, the label simply sits in the space it names. To the left of the drawing the crop carries the stem for part (b) and question parts (i) to (iv), with part (iv)'s last line sliced across the bottom edge ('leaf'). The leaf section and its label are complete.",
+  "lettersVisible": [
+   "X"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "X",
+    "meaning": "Scheme Q13(b)(iv): Carbon dioxide — the gas required for photosynthesis, which can come from the atmosphere or from the cells of the leaf."
+   }
+  ],
+  "questionRef": "Q13(b)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level — © State Examinations Commission"
  }
 }

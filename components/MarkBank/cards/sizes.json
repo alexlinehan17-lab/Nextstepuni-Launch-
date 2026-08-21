@@ -1,15 +1,15 @@
 {
  "biology": {
-  "higher": 557,
-  "ordinary": 574
+  "higher": 562,
+  "ordinary": 581
  },
  "chemistry": {
-  "higher": 418,
-  "ordinary": 311
+  "higher": 423,
+  "ordinary": 317
  },
  "physics": {
   "higher": 396,
-  "ordinary": 418
+  "ordinary": 419
  },
  "agricultural-science": {
   "higher": 401,

@@ -27,6 +27,8 @@ import { fileURLToPath } from 'node:url';
 import { resolvePaperFileid } from './paperIndex.mjs';
 import { normalise, comparableScheme } from './schemeText.mjs';
 import { optionCapFor, MAX_LONG_OPTION_ROWS } from './optionCap.mjs';
+import { isContentFreeRow } from './contentFree.mjs';
+import { questionStandsAlone } from './questionText.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 
@@ -145,9 +147,9 @@ function badRowKind(c) {
 }
 
 /** Text that is a table fragment or a header rather than an answerable question. */
-function badQuestion(text) {
+function badQuestion(text, card) {
   const t = String(text).trim();
-  if (t.length < 16) return 'question text is too short to stand alone';
+  if (!questionStandsAlone(card)) return 'question text is too short to stand alone';
   if (/^section\s+[abc]\b/i.test(t)) return 'question text is a section header';
   if (/^question\s+\d+\.?$/i.test(t)) return 'question text is just a question number';
   if (/^\(?\d+\s*m(arks)?\)?\.?$/i.test(t)) return 'question text is a bare tariff';
@@ -221,19 +223,6 @@ const figureRecord = (key) => {
 };
 
 const q = (s) => JSON.stringify(String(s));
-
-/**
- * A row that states only what the marks are worth, with no answer in it. Roughly
- * a third of Section B scheme rows read this way ("Control named and setup
- * described"), and transcribing them is precisely how Answer Architect failed.
- * Mirrors isContentFreeRow in types/markBank.ts.
- */
-const isContentFree = (v) => {
-  const t = String(v).trim().toLowerCase();
-  if (!t) return true;
-  if (/^\d+\s*(items?|points?|answers?)?[,\s]*\d*\s*marks?\s*(each)?\.?$/.test(t)) return true;
-  return /^(named piece of apparatus( used)?|control named( and setup described)?|safety precaution described|correct (sketch|matching result|position)|suitable (time|temperature|volume)|left for a (suitable )?time|any correct|the description earns|description how|matching result)/.test(t);
-};
 
 /**
  * Whether a card's rows add up to the tariff the paper prints.
@@ -374,13 +363,13 @@ for (const c of cards) {
   }
   if (seenId.has(c.id)) { dropped.push(`${c.id}: duplicate id`); continue; }
 
-  const contentFree = c.rows.filter(r => r.kind !== 'anyN' && isContentFree(r.verbatim));
+  const contentFree = c.rows.filter(r => r.kind !== 'anyN' && isContentFreeRow(r.verbatim));
   if (contentFree.length) {
     dropped.push(`${c.id}: ${contentFree.length} content-free row(s), e.g. "${contentFree[0].verbatim}"`);
     continue;
   }
 
-  const badQ = badQuestion(c.questionText);
+  const badQ = badQuestion(c.questionText, c);
   if (badQ) { dropped.push(`${c.id}: ${badQ} — "${c.questionText}"`); continue; }
 
   const badTariff = tariffFault(c);

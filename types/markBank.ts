@@ -352,13 +352,25 @@ export function looksLikeSectionLabel(text: string): boolean {
  * A marking row that states only what the marks are worth, with no answer in it.
  * These are the rows that made Answer Architect unusable; ~32% of Section B
  * scheme rows read this way, which is why Section B content is authored.
+ *
+ * The build applies the same rule from `scripts/markbank/contentFree.mjs`, which
+ * carries the reasoning behind each opening. This copy exists because app code
+ * must not import out of scripts/; `test/markBankContentFree.test.ts` asserts
+ * the two stay identical. They HAD drifted — the build knew "matching result"
+ * and "description how" while this did not, and this knew "Three points, 2 marks
+ * each" while the build did not — so a row of either shape would have been
+ * written by a build that accepted it into a suite that rejected it.
  */
 export function isContentFreeRow(verbatim: string): boolean {
   const t = verbatim.trim().toLowerCase();
   if (!t) return true;
   if (/^\d+\s*(items?|points?|answers?)?[,\s]*\d*\s*marks?\s*(each)?\.?$/.test(t)) return true;
-  return /^(named piece of apparatus( used)?|control named( and setup described)?|safety precaution described|correct (sketch|matching result|position)|suitable (time|temperature|volume)|left for a (suitable )?time|any correct|the description earns)/.test(t)
-    || /^(three|four|five|six|two)\s+(items?|points?|answers?)\b.*\bmarks?\b/.test(t);
+  // "correct position" bare is a criterion; "Correct position of leaf (or leaf
+  // disc) on lid" names the thing and where it goes, which is the recallable
+  // content of that experiment. The SEC writes the criterion bare and names the
+  // thing when it wants it named, so "of" is the distinction.
+  return /^(named piece of apparatus( used)?|control named( and setup described)?|safety precaution described|correct (sketch|matching result)|correct position(?! of )|suitable (time|temperature|volume)|left for a (suitable )?time|any correct|the description earns|description how|matching result)/.test(t)
+    || /^(two|three|four|five|six)\s+(items?|points?|answers?)\b.*\bmarks?\b/.test(t);
 }
 
 /**

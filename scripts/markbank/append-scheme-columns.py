@@ -52,9 +52,14 @@ ROOT = Path(__file__).resolve().parents[2]
 START = '<!-- markbank:column-runs -->'
 END = '<!-- /markbank:column-runs -->'
 
-# A word space at the SEC's body size is 2–4pt. A column gutter is far wider.
-# Below ~10 the emitted "columns" are just wide word spacing inside one sentence.
-GUTTER = 11.0
+# Split at any gap wider than an ordinary word space, which measures 2.7pt across
+# every SEC scheme here. Deliberately low: the SEC sets some tables with a gutter
+# of only 5pt, and a threshold set to clear justified text (Business 2023 stretches
+# 28% of its word spaces to 4–11pt) would miss those tables entirely. Splitting too
+# eagerly is the safe direction, because columns() then keeps only the left edges
+# that REPEAT down the block — a stretched space inside a sentence does not repeat,
+# so the fragments it creates are filtered back out.
+GUTTER = 5.0
 # Two words belong to the same printed line if their tops agree this closely.
 LINE_TOL = 3.0
 # Two fragments belong to the same column if their left edges agree this closely.
@@ -65,6 +70,10 @@ ROW_GAP_FACTOR = 2.2
 # rather than spanning the block — otherwise ordinary prose under a table would
 # be swallowed and emitted as if it were part of it.
 SPAN_TOL = 12.0
+# A tariff the SEC printed in its own column, left stranded at the head of the
+# marking point beside it: "[3 + 3 + 4(2+2)]", "⟨14m⟩", "(30)".
+LEADING_TARIFF = re.compile(r'^(?:\[[^\]]*\]|⟨[^⟩]*⟩|\((?:\d+[^)]*)\))\s*')
+
 # The SEC prints a bare "or" between two answer boxes, centred in the gutter, so
 # it belongs to neither column and lines up with neither. Ending the run there
 # split every either/or answer in half — the exact answers this exists to
@@ -73,12 +82,12 @@ SPAN_TOL = 12.0
 CONNECTOR_MAX_CHARS = 24
 
 
-def fragments(words, gutter=GUTTER):
+def fragments(words):
     """One printed line's words split at its column gutters."""
     words = sorted(words, key=lambda w: w[0])
     out, cur = [], [words[0]]
     for w in words[1:]:
-        if w[0] - cur[-1][2] > gutter:
+        if w[0] - cur[-1][2] > GUTTER:
             out.append(cur)
             cur = [w]
         else:
@@ -153,21 +162,31 @@ def absorbable(frags, run):
 
 
 def columns(run):
-    """A run's fragments gathered into the columns they were printed in."""
-    anchors = []
+    """A run's fragments gathered into the columns they were printed in.
+
+    A column is a left edge that REPEATS down the block. Requiring that is what
+    keeps a one-off wide word space from inventing a column and stealing the
+    fragments of a real one; a fragment that starts at no repeated edge is a
+    continuation of whichever column it starts inside.
+    """
+    starts = []
     for frags in run:
         for x0, _, _ in frags:
-            if not any(abs(x0 - a) <= COLUMN_TOL for a in anchors):
-                anchors.append(x0)
-    anchors.sort()
+            starts.append(x0)
+    anchors = []
+    for x0 in sorted(starts):
+        if not anchors or x0 - anchors[-1] > COLUMN_TOL:
+            anchors.append(x0)
+    support = {a: {i for i, frags in enumerate(run)
+                   for x, _, _ in frags if abs(x - a) <= COLUMN_TOL} for a in anchors}
+    anchors = [a for a in anchors if len(support[a]) > 1]
     if len(anchors) < 2:
         return []
     cols = {a: [] for a in anchors}
     for frags in run:
         for x0, _, text in frags:
-            nearest = min(anchors, key=lambda a: abs(a - x0))
-            if abs(nearest - x0) <= COLUMN_TOL:
-                cols[nearest].append(text)
+            owning = [a for a in anchors if a <= x0 + COLUMN_TOL]
+            cols[owning[-1] if owning else anchors[0]].append(text)
     return [' '.join(cols[a]) for a in anchors if len(cols[a]) > 1]
 
 
@@ -182,6 +201,13 @@ def column_runs(pdf: Path) -> list[str]:
                 # same way extract-scheme.py folds it, or the mangled form is
                 # what a shipped marking point ends up quoting.
                 text = unligature(re.sub(r'\s+', ' ', text).strip())
+                # A marks cell that shared a column with the answer beside it.
+                # Dropped from the FRONT rather than dropping the whole line:
+                # the marking point after it is what a card quotes, and a line
+                # opening "[3 + 3 + 4(2+2)] Competition leads to..." is exactly
+                # the shape test/markBankSchemes.test.ts refuses, because it is
+                # how an agent narrating a figure writes.
+                text = LEADING_TARIFF.sub('', text).strip()
                 # A column of pure marks or lone labels carries no marking
                 # point, and comparableScheme drops those lines anyway.
                 if len(text) < 12 or text in seen:

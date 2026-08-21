@@ -92,6 +92,39 @@ export const foldDigits = (t) => t
   // above, and it does not loosen what counts as a match: 𝐇 IS H.
   .replace(/[\u{1D400}-\u{1D7FF}]/gu, (c) => c.normalize('NFKD'));
 
+/**
+ * The digits of a stacked fraction, as the SEC's equation font encodes them.
+ *
+ * Its ToUnicode map sends the ten digits into the Oriya letter block, so
+ * 22.50/187.5 extracts as "ଶଶ.ହ଴ / ଵ଼଻.ହ" — each digit is exactly U+0B34 plus
+ * its value. Eleven Chemistry calculations whose working was correct were
+ * dropped over it.
+ *
+ * NOT folded in foldDigits, which runs on both sides. Tried that first and it
+ * COST a card: Chemistry 2022 HL Q7(b)(ii) matched precisely because normalise()
+ * threw the Oriya characters away as punctuation, and turning them into digits
+ * put digits back in the middle of the phrase it quotes. An added form cannot do
+ * that. No claim contains an Oriya letter, so folding one side is enough.
+ */
+const ORIYA_DIGIT = /[\u0B34-\u0B3D]/g;
+const foldOriya = (t) => t.replace(ORIYA_DIGIT, (c) => String(c.charCodeAt(0) - 0x0B34));
+
+/**
+ * The degree sign as SEC PDFs actually print it.
+ *
+ * "17 °C to 32 °C" comes out of the scheme as "17oC to 32oC" — the degree mark
+ * is set as a superscript letter o, and the extractor faithfully reports a
+ * letter. An author who types the temperature properly then cannot match the
+ * scheme that priced it, which is what dropped the Biology 2022 OL alcohol
+ * preparation and the 2021 HL enzyme denaturation.
+ *
+ * Folded into a third form of the scheme rather than into normalise(). Doing it
+ * symmetrically would also eat a real leading "o" — "2 oxygen atoms" would
+ * reduce to "2xygen", and a card quoting "oxygen atoms" would stop matching.
+ * Adding a form can only add matches.
+ */
+const DEGREE_O = /(\d)oc/g;
+
 /** Case, spacing and punctuation removed; every character of an answer must
  *  still appear, in order. */
 export const normalise = (t) =>
@@ -100,17 +133,29 @@ export const normalise = (t) =>
 /**
  * A whole scheme file reduced to the text a marking point is searched in.
  *
- * Two forms of it, not one, joined by a character normalise() can never produce
- * so that nothing matches across the seam. Deleting the inline labels outright
- * would be simpler and wrong: some marking points ARE printed behind one, and
- * quote it — "(i) PAYE which Gemma has to pay: 17,325" is the answer in Business
- * 2025 HL, and sixteen other shipped rows read the same way. Searching both
- * forms keeps every one of those matching while letting a point quoted across an
- * intruding label match too. Nothing is added to either form, so no wording the
- * SEC did not print can pass — the guard only stops rejecting the SEC's own.
+ * Several forms of it, not one, joined by a character normalise() can never
+ * produce so that nothing matches across the seam: the scheme as printed, the
+ * scheme with inline part labels removed, the scheme with the degree sign read
+ * as a degree sign, and the scheme with a stacked fraction's digits read as
+ * digits.
+ *
+ * Deleting the inline labels outright would be simpler and wrong: some marking
+ * points ARE printed behind one, and quote it — "(i) PAYE which Gemma has to
+ * pay: 17,325" is the answer in Business 2025 HL, and sixteen other shipped rows
+ * read the same way. Searching every form keeps all of those matching while
+ * letting a point quoted across an intruding label match too. Nothing is added
+ * to any form, so no wording the SEC did not print can pass — the guard only
+ * stops rejecting the SEC's own.
  */
 export const comparableScheme = (raw) => {
   const lines = raw.replace(MARKS_CELL, ' ').replace(PAGE_MARKER, ' ')
     .split('\n').filter((l) => !MARKS_ONLY.test(l) && !LABEL_ONLY.test(l));
-  return `${normalise(lines.join(' '))}|${normalise(lines.map((l) => l.replace(LEADING_LABEL, '')).join(' '))}`;
+  const joined = lines.join(' ');
+  const whole = normalise(joined);
+  return [
+    whole,
+    normalise(lines.map((l) => l.replace(LEADING_LABEL, '')).join(' ')),
+    whole.replace(DEGREE_O, '$1c'),
+    normalise(foldOriya(joined)),
+  ].join('|');
 };

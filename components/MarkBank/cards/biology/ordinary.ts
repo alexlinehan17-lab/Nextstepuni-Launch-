@@ -3726,6 +3726,20 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2022-ol-q9-b-iii", topicId: "bio-u2", conceptId: "fermentation-temperature",
+    section: "B", questionRef: "2022 OL Q9(b)(iii)",
+    stem: "In your preparation of alcohol in the laboratory:",
+    questionText: "Suitable temperature.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "17 °C to 32 °C", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q9-b-iv", topicId: "bio-u2", conceptId: "fermentation-endpoint-bubbles",
     section: "B", questionRef: "2022 OL Q9(b)(iv)",
     stem: "In your preparation of alcohol in the laboratory:",
@@ -3733,6 +3747,20 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "No more bubbles", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2022-ol-q9-b-v", topicId: "bio-u2", conceptId: "alcohol-prep-control",
+    section: "B", questionRef: "2022 OL Q9(b)(v)",
+    stem: "In your preparation of alcohol in the laboratory:",
+    questionText: "Set up control?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Same setup with no yeast (or no sugar)", marks: 3 },
     ],
   } as SecCard,
   {
@@ -4760,6 +4788,20 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2022-ol-q16-d-ii", topicId: "bio-2-5", conceptId: "vegetative-propagation-methods-organs",
+    section: "C", questionRef: "2022 OL Q16(d)(ii)",
+    questionText: "Name one method of vegetative propagation and state organ involved.",
+    tariffModel: {"kind":"orderedSplit","notation":"2(7) + 8(2)"}, totalMarks: 14,
+    rows: [
+    { id: "r-method", kind: "anyN", verbatim: "Method examples: Runners (strawberries) / Root suckers (holly bush) / Leaflets (Devil’s backbone) / Bulbs (Daffodil)", marks: null, contextNote: "Scheme: 'Any one'. Under the part's 2(7) + 8(2) split the first two correct responses in the 30-mark part score 7 each — that is the rate shown here; further responses in the part score 2.", group: {"claimMax":1,"perOption":7,"options":["Runners (strawberries)","Root suckers (holly bush)","Leaflets (Devil’s backbone)","Bulbs (Daffodil)"]} },
+    { id: "r-organ", kind: "anyN", verbatim: "Organ: Stem / Root / Leaf / Bud", marks: null, contextNote: "Scheme: 'Any one (must match method)'. Under the part's 2(7) + 8(2) split the first two correct responses in the 30-mark part score 7 each — that is the rate shown here; further responses in the part score 2.", dependsOn: "r-method", group: {"claimMax":1,"perOption":7,"options":["Stem","Root","Leaf","Bud"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC025GLP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q16-d-iv", topicId: "bio-2-5", conceptId: "artificial-propagation-methods",
     section: "C", questionRef: "2022 OL Q16(d)(iv)",
     questionText: "Name two other methods of artificial propagation.",
@@ -5174,6 +5216,20 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"orderedSplit","notation":"2(6) + 3(2) + 2(1)"}, totalMarks: 20,
     rows: [
     { id: "r-a", kind: "point", verbatim: "Tissues (working together to carry out a function)", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2021-ol-q2-d", topicId: "bio-1-3", conceptId: "animal-and-plant-organs",
+    section: "A", questionRef: "2021 OL Q2(d)",
+    questionText: "Name one animal organ and one plant organ:",
+    tariffModel: {"kind":"orderedSplit","notation":"2(6) + 3(2) + 2(1)"}, totalMarks: 20,
+    rows: [
+    { id: "r-animal", kind: "anyN", verbatim: "Animal organ — any one", marks: null, openList: true, group: {"claimMax":1,"perOption":6,"options":["Heart","Lung","Brain"]} },
+    { id: "r-plant", kind: "anyN", verbatim: "Plant organ — any one", marks: null, openList: true, group: {"claimMax":1,"perOption":6,"options":["Leaf","Root","Flower","Stem"]} },
     ],
   } as SecCard,
   {
@@ -5965,6 +6021,19 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2021-ol-q12-c-i", topicId: "bio-2-3", conceptId: "cancer-definition",
+    section: "C", questionRef: "2021 OL Q12(c)(i)",
+    questionText: "What is cancer?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-a", kind: "point", verbatim: "Uncontrolled cell division", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC025GLP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q12-c-ii", topicId: "bio-2-3", conceptId: "causes-of-cancer",
     section: "C", questionRef: "2021 OL Q12(c)(ii)",
     questionText: "Give two causes of cancer:",
@@ -6456,6 +6525,21 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-a", kind: "point", verbatim: "Alcohol", marks: 3 },
     { id: "r-b", kind: "point", verbatim: "Carbon dioxide", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC025GLP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2021-ol-q16b-vi", topicId: "bio-u2", conceptId: "testing-fermentation-products",
+    section: "C", questionRef: "2021 OL Q16(b)(vi)",
+    stem: "The products named at part (v) are alcohol and carbon dioxide.",
+    questionText: "Describe a laboratory test for either one of the products named at part (v) above:",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-test", kind: "anyN", verbatim: "The test, for whichever product you chose — any one", marks: null, group: {"claimMax":1,"perOption":3,"options":["Limewater test","Iodoform test"]} },
+    { id: "r-result", kind: "anyN", verbatim: "The result that shows the product is present — any one", marks: null, contextNote: "The result must match the test named: limewater goes with carbon dioxide, iodoform with ethanol.", group: {"claimMax":1,"perOption":3,"options":["Milky appearance if CO2 is present","Yellow colour appears if ethanol is present"]} },
     ],
   } as SecCard,
   {
@@ -7752,6 +7836,31 @@ export const CARDS: SecCard[] = [
           ]
     },
     labelKey: [{"letter":"A","meaning":"Woodland or grassland — the ecosystem this pyramid can represent (Hawk / Mouse / Grass)","askedInThisQuestion":false},{"letter":"B","meaning":"Rocky seashore or marine — the ecosystem this pyramid can represent (Seagull / Sea slug / Bladderwrack)","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC025GLP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2023-ol-q13-b-iv-fig", topicId: "bio-2-2", conceptId: "carbon-dioxide-uptake-in-the-leaf",
+    section: "C", questionRef: "2023 OL Q13(b)(iv)",
+    stem: "The paper prints a section through a leaf, with 'Gas X' printed in the air space just above a pore in the lower epidermis.",
+    questionText: "Name gas X.",
+    tariffModel: {"kind":"orderedSplit","notation":"3(5) + 6(2)"}, totalMarks: 5,
+    rows: [
+    { id: "r-gas", kind: "point", verbatim: "Carbon dioxide", marks: null },
+    ],
+    figure: {
+          "candId": "biology-2023-OL-paper2-p04-i0",
+          "src": "/exam-figures/biology/markbank/biology-2023-OL-paper2-p04-i0.png",
+          "srcHash": "84dd3692a07c0131a15effd79c2fce71",
+          "alt": "Black-and-white line drawing of a cross section through the internal structure of a leaf, showing outlined cells only, with no shading and no surrounding tissue drawn. Along the top runs a single row of flat, brick-shaped cells. Beneath them stand four tall, narrow, column-shaped cells packed closely side by side, each with a chain of small dark oval bodies around its inner edge. Below those the cells become rounded and irregular and are loosely arranged with open gaps between them, the gaps growing larger toward the bottom. Along the bottom runs another row of flat cells, broken in two places by a small opening flanked by a pair of curved cells. The words 'Gas X' are printed in one of the open gaps in the lower part of the drawing, just above one of those openings; there is no arrow or leader line, the label simply sits in the space it names. To the left of the drawing the crop carries the stem for part (b) and question parts (i) to (iv), with part (iv)'s last line sliced across the bottom edge ('leaf'). The leaf section and its label are complete.",
+          "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "X"
+          ]
+    },
+    labelKey: [{"letter":"X","meaning":"Carbon dioxide","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, kind: "diagram",

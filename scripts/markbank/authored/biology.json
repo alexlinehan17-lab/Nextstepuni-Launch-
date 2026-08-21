@@ -932,7 +932,7 @@
     "marks": 3
    }
   ],
-  "notes": "PARTIAL CARD. The part is really worth 21 marks (7 points × 3); totalMarks here covers only the two printed points that actually state an answer. SKIPPED as content-free criteria (each says what the examiner must see, not what the answer is): 'Description how tissue or membrane was prepared' (3), 'Control named and setup described' (3), 'Matching result for test' (3), 'Matching result for control' (3), 'Named piece of apparatus used (other than the tissue or membrane)' (3). Not a drawing question — the diagram is explicitly optional ('if you wish') and the scheme only notes 'Points may be obtained from an appropriately labelled diagram'; the carded rows are description points. Stem taken verbatim from the 2025 HL question paper (p.11); the scheme omits it.",
+  "notes": "PARTIAL CARD. The part is really worth 21 marks (7 points × 3); totalMarks here covers only the two printed points that actually state an answer. SKIPPED as content-free criteria (each says what the examiner must see, not what the answer is): 'Description how tissue or membrane was prepared' (3), 'Control named and setup described' (3), 'Matching result for test' (3), 'Matching result for control' (3), 'Named piece of apparatus used (other than the tissue or membrane)' (3). Not a drawing question — the diagram is explicitly optional ('if you wish') and the scheme only notes 'Points may be obtained from an appropriately labelled diagram'; the carded rows are description points. Stem taken verbatim from the 2025 HL question paper (p.11); the scheme omits it. DELIBERATELY LEFT DROPPED. Strip the content-free 'Left for a time' row and what remains is a single 3-mark point on a question that asks for the whole activity and its result. A card like that teaches a student to under-answer a 21-mark part, which is worse than not having the card. Q9(a) and Q9(b)(i) carry this experiment's recallable content instead.",
   "year": 2025,
   "level": "higher"
  },
@@ -997,7 +997,7 @@
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 9,
+  "totalMarks": 6,
   "rows": [
    {
     "id": "r-leaf-lid",
@@ -1011,15 +1011,9 @@
     "kind": "point",
     "verbatim": "Left at a suitable temperature",
     "marks": 3
-   },
-   {
-    "id": "r-time",
-    "kind": "point",
-    "verbatim": "Left for a suitable time",
-    "marks": 3
    }
   ],
-  "notes": "PARTIAL CARD. The part is really worth 18 marks (6 points × 3); totalMarks covers only the three printed points that state an answer. SKIPPED as content-free criteria: 'Named piece of apparatus used' (3), 'Control named and setup described' (3), 'Safety precaution described' (3) — none names the apparatus, the control or the precaution. The 'Correct position of leaf (or leaf disc) on lid' row is kept deliberately: unlike a bare 'correct position described' it names the position (on the lid), which is the recallable content of this experiment. Not a drawing question — the diagram is optional. Stem taken verbatim from the 2025 HL question paper (p.12).",
+  "notes": "PARTIAL CARD. The part is really worth 18 marks (6 points x 3); totalMarks covers only the two printed points that state an answer. SKIPPED as content-free criteria: 'Named piece of apparatus used' (3), 'Control named and setup described' (3), 'Safety precaution described' (3), 'Left for a suitable time' (3) -- none names the apparatus, the control, the precaution or the time. The 'Correct position of leaf (or leaf disc) on lid' row is kept deliberately: unlike a bare 'correct position described' it names the position (on the lid), which is the recallable content of this experiment. Not a drawing question -- the diagram is optional. Stem taken verbatim from the 2025 HL question paper (p.12).",
   "year": 2025,
   "level": "higher"
  },
@@ -13290,13 +13284,22 @@
    },
    {
     "id": "r-gland",
-    "kind": "alt",
-    "verbatim": "Any correct gland (e.g. pancreas or testes or kidney or other correct)",
-    "marks": 3,
-    "openList": true
+    "kind": "anyN",
+    "verbatim": "A gland with both functions — any one",
+    "marks": null,
+    "openList": true,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "Pancreas",
+      "Testes",
+      "Kidney"
+     ]
+    }
    }
   ],
-  "notes": "The two follow-on rows of Q17(a)(ii) are dropped: the scheme gives only 'Correct matching product' for the endocrine and exocrine products — a criterion, not answer content, so this card carries 6 of the block's 12 marks. Q17(a)(iii) skipped: draw and label gland locations (drawing)."
+  "notes": "The two follow-on rows of Q17(a)(ii) are dropped: the scheme gives only 'Correct matching product' for the endocrine and exocrine products — a criterion, not answer content, so this card carries 6 of the block's 12 marks. Q17(a)(iii) skipped: draw and label gland locations (drawing). The gland row is the scheme's own exemplar list (\"Any correct gland (e.g. pancreas or testes or kidney or other correct)\") shown as the menu it is; openList because the scheme closes with \"or other correct\"."
  },
  {
   "id": "bio-2023-hl-q17-a-iv",
@@ -18266,12 +18269,21 @@
   "rows": [
    {
     "id": "r-correction",
-    "kind": "alt",
-    "verbatim": "Long sightedness — Convex lens; Short sightedness — Concave lens; Hearing defect — Valid named defect and corrective measure: any valid answer",
-    "marks": 3
+    "kind": "anyN",
+    "marks": null,
+    "openList": true,
+    "verbatim": "Corrective measure for the defect you chose — any one",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "Long sightedness: Convex lens",
+      "Short sightedness: Concave lens"
+     ]
+    }
    }
   ],
-  "notes": "The scheme prints the three options in parallel columns which the extractor interleaved; the row above un-interleaves them. Only one option is answered, for the single 3 marks."
+  "notes": "The scheme sets the three options in parallel columns, which the flat extraction interleaves. A menu of the two the scheme actually answers; the third, hearing, is priced as \"Valid named defect and corrective measure: any valid answer\" -- a criterion with no answer in it -- so it is not shown as an option. openList records that."
  },
  {
   "id": "bio-2022-hl-q16-b-vi",
@@ -25869,20 +25881,39 @@
   "rows": [
    {
     "id": "r-animal",
-    "kind": "point",
-    "verbatim": "Any correct animal organ, e.g. heart or lung or brain, etc.",
+    "kind": "anyN",
+    "verbatim": "Animal organ — any one",
     "marks": null,
-    "openList": true
+    "openList": true,
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Heart",
+      "Lung",
+      "Brain"
+     ]
+    }
    },
    {
     "id": "r-plant",
-    "kind": "point",
-    "verbatim": "Any correct plant organ, e.g. leaf or root or flower or stem",
+    "kind": "anyN",
+    "verbatim": "Plant organ — any one",
     "marks": null,
-    "openList": true
+    "openList": true,
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Leaf",
+      "Root",
+      "Flower",
+      "Stem"
+     ]
+    }
    }
   ],
-  "notes": "The scheme's wording is open-ended but does print real exemplar answers (heart/lung/brain; leaf/root/flower/stem), so these are genuine marking points, not bare criteria — flagged openList. Ordered split 2(6) + 3(2) + 2(1); marks null, totalMarks 20 is the whole question's tariff."
+  "notes": "The scheme's wording is open-ended -- \"Any correct animal organ, e.g. heart or lung or brain, etc.\" -- but the exemplars it prints ARE the answer, so each row is the menu the scheme lists rather than its instruction to the examiner. openList because both lists end open (\"etc.\"): a student who answered \"kidney\" was right. Ordered split 2(6) + 3(2) + 2(1); marks null, totalMarks 20 is the whole question's tariff."
  },
  {
   "id": "bio-2021-ol-q2-e",
@@ -28463,19 +28494,36 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-a",
-    "kind": "alt",
-    "verbatim": "Limewater test or Iodoform test",
-    "marks": 3
+    "id": "r-test",
+    "kind": "anyN",
+    "marks": null,
+    "verbatim": "The test, for whichever product you chose — any one",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "Limewater test",
+      "Iodoform test"
+     ]
+    }
    },
    {
-    "id": "r-b",
-    "kind": "alt",
-    "verbatim": "Milky appearance if CO2 is present or Yellow colour appears if ethanol is present",
-    "marks": 3
+    "id": "r-result",
+    "kind": "anyN",
+    "marks": null,
+    "verbatim": "The result that shows the product is present — any one",
+    "contextNote": "The result must match the test named: limewater goes with carbon dioxide, iodoform with ethanol.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "Milky appearance if CO2 is present",
+      "Yellow colour appears if ethanol is present"
+     ]
+    }
    }
   ],
-  "notes": "The scheme prints the two tests in parallel columns: limewater test / milky appearance for carbon dioxide, iodoform test / yellow colour for ethanol. Tagged bio-u2 as a laboratory test procedure."
+  "notes": "The scheme sets the two tests in parallel columns -- limewater test / milky appearance for carbon dioxide, iodoform test / yellow colour for ethanol -- which the flat extraction interleaves. Carried as two menus rather than one composed row, so each option is the scheme's own. Tagged bio-u2 as a laboratory test procedure."
  },
  {
   "id": "bio-2021-ol-q16c-i",
