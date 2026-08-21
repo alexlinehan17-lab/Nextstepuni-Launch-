@@ -6545,7 +6545,7 @@
     "verbatim": "Conduction",
     "marks": 2,
     "group": {
-     "claimMax": 2,
+     "claimMax": 1,
      "perOption": 2,
      "options": [
       "Conduction",
@@ -6560,7 +6560,7 @@
     "id": "r-2",
     "kind": "anyN",
     "verbatim": "Conduction transfer of heat through a solid;",
-    "marks": null,
+    "marks": 3,
     "group": {
      "claimMax": 1,
      "perOption": 3,
@@ -7348,11 +7348,11 @@
     "id": "r-1",
     "kind": "anyN",
     "verbatim": "helps to make an informed choice",
-    "marks": null,
+    "marks": 6,
     "openList": true,
     "contextNote": "Any three benefits, 2 marks each, graded 2:1:0 — the command word is 'Explain', so a benefit that is only named rather than developed is where the examiner drops to 1.",
     "group": {
-     "claimMax": 6,
+     "claimMax": 3,
      "perOption": 2,
      "options": [
       "helps to make an informed choice",
@@ -7445,29 +7445,28 @@
   "subjectId": "home-economics",
   "section": "A",
   "questionRef": "2025 OL Section A Q10",
-  "questionText": "Name two types / sources of renewable energy.\nExplain one benefit of renewable energy.",
+  "questionText": "Name two types / sources of renewable energy, and explain one benefit of renewable energy.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "bestNofParts",
+   "kind": "fixed",
    "notation": "2 @ 2 marks (graded 2:1:0); 1 @ 2 marks (graded 2:1:0)",
-   "answer": 3,
-   "ofParts": 15,
-   "perPart": 2
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
     "kind": "anyN",
-    "route": "Name two types / sources of renewable energy.",
     "verbatim": "solar energy",
-    "marks": null,
+    "marks": 4,
     "openList": true,
     "contextNote": "Two sources, 2 marks each, graded 2:1:0 — naming the source is enough here, no explanation is required. 4 marks in total from this list.",
     "group": {
-     "claimMax": 4,
+     "claimMax": 2,
      "perOption": 2,
      "options": [
       "solar energy",
@@ -7484,13 +7483,12 @@
    {
     "id": "r-2",
     "kind": "anyN",
-    "route": "Explain one benefit of renewable energy.",
     "verbatim": "reduced carbon emissions",
-    "marks": null,
+    "marks": 2,
     "openList": true,
     "contextNote": "One benefit, 2 marks, graded 2:1:0 — the command is 'Explain', so develop the point rather than just listing it. 2 marks in total from this list.",
     "group": {
-     "claimMax": 2,
+     "claimMax": 1,
      "perOption": 2,
      "options": [
       "reduced carbon emissions",
@@ -7532,11 +7530,11 @@
     "id": "r-1",
     "kind": "anyN",
     "verbatim": "is it an essential purchase",
-    "marks": null,
+    "marks": 6,
     "openList": true,
     "contextNote": "Any three factors, 2 marks each, graded 2:1:0 — 'State' means a short point is enough, but it must be something you weigh up before signing the credit agreement.",
     "group": {
-     "claimMax": 6,
+     "claimMax": 3,
      "perOption": 2,
      "options": [
       "is it an essential purchase",
@@ -7577,11 +7575,11 @@
     "id": "r-1",
     "kind": "anyN",
     "verbatim": "washing",
-    "marks": null,
+    "marks": 6,
     "openList": true,
     "contextNote": "Any three uses, 2 marks each, graded 2:1:0 — the question says 'different', so the three must be genuinely separate uses.",
     "group": {
-     "claimMax": 6,
+     "claimMax": 3,
      "perOption": 2,
      "options": [
       "washing",
