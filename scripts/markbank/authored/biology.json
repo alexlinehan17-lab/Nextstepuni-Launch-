@@ -15345,52 +15345,6 @@
   "notes": "SKIPPED: (b)(i) label matching; (b)(vi) 'these impulses' is defined only on the paper; (b)(vii) is criteria, not marking points. totalMarks 18 is the scheme's own 2(7)+8(2) table value for the 4 correct responses this card carries. Letter decode moved to the stem so it is visible before answering."
  },
  {
-  "id": "bio-2023-ol-q16c-ii-iv",
-  "topicId": "bio-2-6",
-  "conceptId": "plant-vascular-tissue-and-root-hairs",
-  "level": "ordinary",
-  "year": 2023,
-  "section": "C",
-  "questionRef": "2023 OL Q16(c)(ii)–(iv)",
-  "stem": "The paper prints a section through a root. The marking scheme's own part (c)(i) identifies tissue A as vascular, B as ground and C as dermal.",
-  "questionText": "Give two substances that are transported by the tissue labelled A. Name a type of cell located in the tissue labelled A. What is the function of the root hair?",
-  "tariffModel": {
-   "kind": "orderedSplit",
-   "notation": "2(7) + 8(2)"
-  },
-  "totalMarks": 18,
-  "rows": [
-   {
-    "id": "r-substances",
-    "kind": "anyN",
-    "verbatim": "Water / food / mineral / other correct",
-    "marks": null,
-    "openList": true,
-    "group": {
-     "claimMax": 2,
-     "options": [
-      "Water",
-      "food",
-      "mineral"
-     ]
-    }
-   },
-   {
-    "id": "r-cell",
-    "kind": "alt",
-    "verbatim": "Xylem (tracheid or vessel) or phloem or sieve tube or companion (cell)",
-    "marks": null
-   },
-   {
-    "id": "r-roothair",
-    "kind": "point",
-    "verbatim": "Absorption",
-    "marks": null
-   }
-  ],
-  "notes": "SKIPPED: (c)(i) label matching; (c)(v), whose referent (the section shown) the scheme never states. totalMarks 18 is the scheme's own 2(7)+8(2) table value for the 4 correct responses this card carries. Letter decode moved to the stem."
- },
- {
   "id": "bio-2023-ol-q16c-vi",
   "topicId": "bio-2-4",
   "conceptId": "geotropism",
@@ -15413,52 +15367,6 @@
    }
   ],
   "notes": "Carded separately from the rest of 16(c) because it examines plant response, not plant transport. totalMarks 7 is the scheme's own 2(7)+8(2) table value for the single correct response this card carries; 30 is the whole Q16(c) block."
- },
- {
-  "id": "bio-2023-ol-q16d-ii-v",
-  "topicId": "bio-2-5",
-  "conceptId": "flower-structure-and-pollination",
-  "level": "ordinary",
-  "year": 2023,
-  "section": "C",
-  "questionRef": "2023 OL Q16(d)(ii)–(v)",
-  "stem": "The paper prints a diagram of a flower. The marking scheme's own part (d)(i) identifies X as the stigma, Y as the ovule and Z as the sepal.",
-  "questionText": "What is the function of the part labelled Z? On which labelled part are pollen grains received? Give one possible adaptation of this flower that shows it is animal-pollinated. Give one feature of a wind-pollinated flower.",
-  "tariffModel": {
-   "kind": "orderedSplit",
-   "notation": "2(7) + 8(2)"
-  },
-  "totalMarks": 18,
-  "rows": [
-   {
-    "id": "r-sepal",
-    "kind": "point",
-    "verbatim": "Protection (of the developing flower)",
-    "marks": null
-   },
-   {
-    "id": "r-pollen",
-    "kind": "alt",
-    "verbatim": "X or stigma",
-    "marks": null
-   },
-   {
-    "id": "r-animal",
-    "kind": "alt",
-    "verbatim": "Coloured petals or nectar or anthers (or stigma) inside flower or other correct",
-    "marks": null,
-    "openList": true,
-    "contextNote": "The flower diagram is not reproduced, but the scheme accepts any of these general animal-pollination adaptations, so the answer does not depend on it."
-   },
-   {
-    "id": "r-wind",
-    "kind": "alt",
-    "verbatim": "Small petals or green petals or feathery stigma or anthers outside flower or other correct",
-    "marks": null,
-    "openList": true
-   }
-  ],
-  "notes": "SKIPPED: (d)(i) label matching. totalMarks 18 is the scheme's own 2(7)+8(2) table value for the 4 correct responses this card carries. Letter decode moved to the stem."
  },
  {
   "id": "bio-2023-ol-q16d-vi-viii",
@@ -17491,7 +17399,160 @@
     "contextNote": "The scheme's answer is the RNA complement (U in place of T), because the strand is being transcribed. The scheme prints no asterisk here — the all-or-nothing rule comes from its own bracketed note, not from the exact-term convention."
    }
   ],
-  "notes": "Q13(a)(i) skipped (draw and label a nucleotide). Q13(b)(i), (ii), (iv) and (v) skipped — each asks to identify a diagram label (process K, molecule L, organelle J, structure M) from the printed figure; (i) and (ii) supply this card's stem."
+  "notes": "Q13(a)(i) skipped (draw and label a nucleotide). Q13(b)(i), (ii), (iv) and (v) skipped — each asks to identify a diagram label (process K, molecule L, organelle J, structure M) from the printed figure; (i) and (ii) supply this card's stem.",
+  "figureKey": "biology-2022-HL-paper2-p04-art",
+  "labelKey": [
+   {
+    "letter": "J",
+    "meaning": "Organelle J — the nucleus; molecule L leaves it through a nuclear pore",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "K",
+    "meaning": "Transcription",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "L",
+    "meaning": "mRNA (messenger RNA)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "M",
+    "meaning": "Ribosome (made mainly of rRNA)",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "topicId": "bio-2-3",
+  "conceptId": "complementary-base-sequence",
+  "level": "higher",
+  "year": 2022,
+  "section": "C",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "id": "bio-2022-hl-q13-b-i-ii",
+  "questionRef": "2022 HL Q13(b)(i)–(ii)",
+  "stem": "The diagram illustrates some of the events of protein synthesis.",
+  "questionText": "What is the name of process K that results in the formation of molecule L? Name molecule L.",
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-k",
+    "kind": "point",
+    "verbatim": "Transcription",
+    "marks": 3,
+    "accepts": [
+     "Transcription"
+    ]
+   },
+   {
+    "id": "r-l",
+    "kind": "point",
+    "verbatim": "mRNA or messenger RNA",
+    "marks": 3,
+    "accepts": [
+     "mRNA",
+     "Messenger RNA"
+    ]
+   }
+  ],
+  "figureKey": "biology-2022-HL-paper2-p04-art",
+  "labelKey": [
+   {
+    "letter": "J",
+    "meaning": "Organelle J — the nucleus; molecule L leaves it through a nuclear pore",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "K",
+    "meaning": "Transcription",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "L",
+    "meaning": "mRNA (messenger RNA)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "M",
+    "meaning": "Ribosome (made mainly of rRNA)",
+    "askedInThisQuestion": false
+   }
+  ],
+  "notes": "Image checked: the bold arrow labelled K runs from the drawn double helix to the comb-like strand labelled L inside the nucleus."
+ },
+ {
+  "topicId": "bio-2-3",
+  "conceptId": "complementary-base-sequence",
+  "level": "higher",
+  "year": 2022,
+  "section": "C",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "id": "bio-2022-hl-q13-b-iv-v",
+  "questionRef": "2022 HL Q13(b)(iv)–(v)",
+  "stem": "The diagram illustrates some of the events of protein synthesis. Molecule L is mRNA (the scheme's own answer to part (ii)).",
+  "questionText": "Give the name of the opening through which molecule L leaves the organelle J. Identify structure M. Name the main molecule from which structure M is made.",
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-pore",
+    "kind": "point",
+    "verbatim": "Nuclear pore",
+    "marks": 3,
+    "accepts": [
+     "Nuclear pore",
+     "Pore"
+    ]
+   },
+   {
+    "id": "r-m",
+    "kind": "point",
+    "verbatim": "Ribosome",
+    "marks": 3,
+    "accepts": [
+     "Ribosome"
+    ]
+   },
+   {
+    "id": "r-rrna",
+    "kind": "point",
+    "verbatim": "rRNA or Ribosomal RNA",
+    "marks": 3,
+    "accepts": [
+     "rRNA",
+     "Ribosomal RNA"
+    ]
+   }
+  ],
+  "figureKey": "biology-2022-HL-paper2-p04-art",
+  "labelKey": [
+   {
+    "letter": "J",
+    "meaning": "Organelle J — the nucleus; molecule L leaves it through a nuclear pore",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "K",
+    "meaning": "Transcription",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "L",
+    "meaning": "mRNA (messenger RNA)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "M",
+    "meaning": "Ribosome (made mainly of rRNA)",
+    "askedInThisQuestion": true
+   }
+  ],
+  "notes": "Image checked: J's arrow lands on the dashed boundary of the inner oval, and M is the two-lobed blob in the outer region with the bead chain leaving it."
  },
  {
   "id": "bio-2022-hl-q13-b-vi",
@@ -17527,7 +17588,30 @@
     }
    }
   ],
-  "notes": "Kept despite the 'structure M' label because the scheme itself prints M = *Ribosome; the stem supplies that from the scheme, not from the figure. No figure is bound."
+  "notes": "Kept despite the 'structure M' label because the scheme itself prints M = *Ribosome; the stem supplies that from the scheme, not from the figure. No figure is bound.",
+  "figureKey": "biology-2022-HL-paper2-p04-art",
+  "labelKey": [
+   {
+    "letter": "J",
+    "meaning": "Organelle J — the nucleus; molecule L leaves it through a nuclear pore",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "K",
+    "meaning": "Transcription",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "L",
+    "meaning": "mRNA (messenger RNA)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "M",
+    "meaning": "Ribosome (made mainly of rRNA)",
+    "askedInThisQuestion": false
+   }
+  ]
  },
  {
   "id": "bio-2022-hl-q13-c-i",
@@ -18262,7 +18346,20 @@
     "exactTermRequired": true
    }
   ],
-  "notes": "Kept because the question itself defines the structure ('connects two bones in a joint'); the letter A is only a diagram pointer."
+  "notes": "Kept because the question itself defines the structure ('connects two bones in a joint'); the letter A is only a diagram pointer.",
+  "figureKey": "biology-2022-HL-paper2-p08-art",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Ligament",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Cartilage",
+    "askedInThisQuestion": false
+   }
+  ]
  },
  {
   "id": "bio-2022-hl-q16-c-iii",
@@ -18272,21 +18369,48 @@
   "year": 2022,
   "section": "C",
   "questionRef": "2022 HL Q16(c)(iii)",
-  "stem": "In the diagram of a synovial joint printed with this question, the part labelled B is cartilage.",
-  "questionText": "Give one function of the part labelled B.",
+  "stem": null,
+  "questionText": "Name part B. Give one function of part B.",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 3,
+  "totalMarks": 6,
   "rows": [
+   {
+    "id": "r-name-b",
+    "kind": "point",
+    "verbatim": "Name part B: Cartilage",
+    "marks": 3,
+    "accepts": [
+     "Cartilage"
+    ]
+   },
    {
     "id": "r-cartilage-fn",
     "kind": "point",
     "verbatim": "Shock absorber or protects bone or reduces friction",
-    "marks": 3
+    "marks": 3,
+    "accepts": [
+     "Shock absorber",
+     "Protects bone",
+     "Reduces friction"
+    ]
    }
   ],
-  "notes": "The paper asks 'Name and give one function of the part labelled B' (scheme: *Cartilage 3 + function 3). The naming half is a figure-label identification and is skipped; the scheme's own answer supplies the stem, so the function half stands alone for its printed 3 marks."
+  "notes": "Image checked: A's arrow lands on the dark band bridging the two bones, B's two arrows on the smooth caps facing the joint gap. Part (iii) prices two marking points — naming B and giving a function of it — and the card previously carried only the function.",
+  "figureKey": "biology-2022-HL-paper2-p08-art",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Ligament",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Cartilage",
+    "askedInThisQuestion": true
+   }
+  ]
  },
  {
   "id": "bio-2022-hl-q16-c-iv-v",

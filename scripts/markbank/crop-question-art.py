@@ -9,7 +9,12 @@ points at a photograph. Six Home Economics parts came back unbuildable for
 exactly this reason, and under the no-skipping rule that is a missing input to
 go and get, not a gap to accept.
 
-    python3 scripts/markbank/crop-question-art.py <paper.pdf> --page 7 -o out.png
+    python3 scripts/markbank/crop-question-art.py <paper.pdf> --page 7 \
+        -o exam-papers/<subject>/figures/<year>-<level>/<subject>-<year>-<LEVEL>-paper<n>-p07-art.png
+
+Name the output with an `-art` suffix, not the extractor's `-i<n>`. Both tools
+feed the same manifest, keyed by file name, and a page render saved under a name
+`extract-figures.py` can also produce is a name that means two different crops.
 
 The general figure extractor was built for diagrams that sit in a band of the
 page, and on these it clipped the second of two symbols — the question asks about
@@ -32,9 +37,21 @@ PAD = 10
 # An answer box is a wide, empty ruled rectangle. It is not the artwork, and
 # including it drags the crop across the page and shrinks the symbols.
 BOX_MIN_WIDTH_FRACTION = 0.30
+# A word the SEC underlines for emphasis ("the allele for white fruit") leaves a
+# flat rule in the drawing list. It is typography, not artwork, but it is a
+# drawing, so it pulled one crop down over the whole of the NEXT question.
+RULE_MAX_THICKNESS = 1.5
+RULE_MIN_LENGTH = 20
 
 
-def art_box(page):
+def is_text_rule(r):
+    """A flat rule of the kind an underlined word leaves behind."""
+    return (r.height <= RULE_MAX_THICKNESS and r.width >= RULE_MIN_LENGTH) or (
+        r.width <= RULE_MAX_THICKNESS and r.height >= RULE_MIN_LENGTH
+    )
+
+
+def art_box(page, ignore_rules=False):
     """The union of the page's real artwork, excluding answer-box rules."""
     boxes = []
     for d in page.get_drawings():
@@ -45,6 +62,8 @@ def art_box(page):
             continue          # a ruled answer box, not artwork
         if r.width < 3 and r.height < 3:
             continue          # a stray rule or tick
+        if ignore_rules and is_text_rule(r):
+            continue          # an underlined word, not artwork
         boxes.append(r)
     for img in page.get_images(full=True):
         for r in page.get_image_rects(img[0]):
@@ -63,6 +82,12 @@ def main() -> int:
     ap.add_argument("--page", type=int, required=True, help="1-based")
     ap.add_argument("-o", "--out", type=Path, required=True)
     ap.add_argument("--scale", type=float, default=3.0)
+    ap.add_argument(
+        "--ignore-rules",
+        action="store_true",
+        help="drop flat rules (underlined words) from the artwork extent. Opt-in, "
+             "so crops taken before it existed still reproduce byte for byte.",
+    )
     args = ap.parse_args()
     if fitz is None:
         print("PyMuPDF is required", file=sys.stderr)
@@ -70,7 +95,7 @@ def main() -> int:
 
     doc = fitz.open(args.paper)
     page = doc[args.page - 1]
-    box = art_box(page)
+    box = art_box(page, ignore_rules=args.ignore_rules)
     if box is None:
         print(f"no artwork found on page {args.page}", file=sys.stderr)
         return 3

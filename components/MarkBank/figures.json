@@ -9609,5 +9609,258 @@
   "year": 2025,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Home Economics 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "biology-2023-HL-paper2-p08-i0": {
+  "src": "/exam-figures/biology/markbank/biology-2023-HL-paper2-p08-i0.png",
+  "md5": "98f727870e89bcb7a29993bdb2891e1c",
+  "alt": "Black-and-white line drawing of a typical spherical virus, drawn as a single large circle with a thick black outline and a plain white interior. Inside the circle a thin, tightly coiled corkscrew strand loops back on itself in an irregular S-shape, occupying most of the circle and trailing a short tail toward the lower left of the outline. A bold arrow labelled X comes in from the upper left and lands on the thick outer ring of the circle; a second bold arrow labelled Y comes in from the left below it and lands on the coiled strand inside. To the left of the diagram the crop carries the question text for part (c) — the (i) to (iv) parts — with the last line of (iv) sliced across the bottom edge ('be beneficial to humans'). The diagram itself, its outline, the internal strand and both X and Y labels are complete.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "X",
+    "meaning": "Protein (coat) or capsid"
+   },
+   {
+    "letter": "Y",
+    "meaning": "Nucleic acid, or DNA or RNA"
+   }
+  ],
+  "questionRef": "Q16(c)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2023 Higher Level — © State Examinations Commission"
+ },
+ "biology-2023-OL-paper1-p06-i0": {
+  "src": "/exam-figures/biology/markbank/biology-2023-OL-paper1-p06-i0.png",
+  "md5": "ba096020f446e209d0bcd797fc108e5d",
+  "alt": "Greyscale illustration of an upright compound light microscope, shown whole from the flared base up to the eyepiece. From the bottom: a wide flat base with four small feet, a lamp housing above it, a stout arm rising on the right carrying a large coarse-focus knob and a smaller fine-focus knob, a flat black stage in the middle holding a slide under two clips, a rotating nosepiece above the stage carrying three objective lenses of different lengths, and a long dark tube angled up to the right ending in the eyepiece. A horizontal arrow labelled A points from the right to the top of that angled eyepiece tube; an arrow labelled B points from the upper left down to the cluster of objective lenses; a third arrow labelled with the word 'Stage' points from the left to the flat platform. Above the drawing the crop carries the question header ('5. The diagram shows a light microscope.') and below it the first line of part (a) ('Names the parts of the microscope labelled A and B.') with the top edge of an answer box beginning underneath. The microscope and all three labels are complete.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Eye piece"
+   },
+   {
+    "letter": "B",
+    "meaning": "Objective (lens)"
+   }
+  ],
+  "questionRef": "Q5",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "biology-2023-OL-paper2-p05-i0": {
+  "src": "/exam-figures/biology/markbank/biology-2023-OL-paper2-p05-i0.png",
+  "md5": "8bf9dc1d4bf743bbec59ef84dd84f108",
+  "alt": "Greyscale front-view diagram of the human female reproductive system, drawn symmetrically: a broad pear-shaped uterus in the centre with a dark hollow cavity, a narrow cervix and ridged vagina running down from it, and on each side a curved tube that arcs outward and ends in a small fringed funnel beside a small pale oval body. An arrow labelled B comes in from above and lands on the curved tube on the left of the image; an arrow labelled A comes in from below right and lands on the small pale oval body on the right; an arrow labelled C comes in from the lower left and lands inside the dark central cavity of the pear-shaped organ. To the left of the diagram the crop carries the roman-numeral question parts (i) to (vi) for this question, with part (vi)'s first line sliced across the bottom edge ('State the location from the diagram'). The diagram and all three letter labels are complete.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Ovary"
+   },
+   {
+    "letter": "B",
+    "meaning": "Fallopian tube"
+   },
+   {
+    "letter": "C",
+    "meaning": "Uterus"
+   }
+  ],
+  "questionRef": "Q14(b)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "biology-2023-OL-paper2-p07-i0": {
+  "src": "/exam-figures/biology/markbank/biology-2023-OL-paper2-p07-i0.png",
+  "md5": "f3bc3aa4a2f7887e02201e729dde859e",
+  "alt": "Greyscale longitudinal section through a human kidney, bean-shaped with the notch on the right. Working inward the drawing shows a pale speckled outer band running all the way round under the capsule, then a ring of darker striated triangular pyramids pointing inward, then a pale open central cavity that funnels out through the notch into a tube leaving the lower right of the organ. An arrow labelled D comes in from the upper left and lands on the pale outer band; an arrow labelled E comes in from the upper right and lands on one of the striated triangular pyramids; a horizontal arrow labelled F comes in from the right and lands in the open central cavity; a fourth arrow labelled with the word 'Ureter' points from the right to the tube leaving the organ. To the left of the diagram the crop carries the stem for part (a) and question parts (i) to (iii), including the three terms to be matched (medulla; renal pelvis; cortex). The kidney and all four labels are complete.",
+  "lettersVisible": [
+   "D",
+   "E",
+   "F"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "D",
+    "meaning": "Cortex"
+   },
+   {
+    "letter": "E",
+    "meaning": "Medulla"
+   },
+   {
+    "letter": "F",
+    "meaning": "(Renal) pelvis"
+   }
+  ],
+  "questionRef": "Q16(a)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "biology-2023-OL-paper2-p08-i1": {
+  "src": "/exam-figures/biology/markbank/biology-2023-OL-paper2-p08-i1.png",
+  "md5": "9ae97e384d25579487d0c7b3d7e19f9a",
+  "alt": "Greyscale transverse section through a plant root, drawn as a circle in three concentric zones. At the centre is a darker four-pointed star of small tightly packed cells; around it a broad zone of large pale rounded cells fills most of the circle; and the outermost single layer of small cells forms the rim, from which five or six long curling hairs project outward. A bracket labelled A sits to the left of the central star and spans it; an arrow labelled B comes in from the upper right and lands in the broad zone of large pale cells; an arrow labelled C comes in from the lower right and lands on the outer single-cell rim; a fourth arrow labelled with the words 'Root hair' points from the lower left to one of the projecting hairs. To the left of the diagram the crop carries the stem for part (c) and question part (i) with its three terms (ground; vascular; dermal), and part (ii) with its last line sliced across the bottom edge. The root section and all four labels are complete.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Vascular (tissue)"
+   },
+   {
+    "letter": "B",
+    "meaning": "Ground (tissue)"
+   },
+   {
+    "letter": "C",
+    "meaning": "Dermal (tissue)"
+   }
+  ],
+  "questionRef": "Q16(c)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "biology-2023-OL-paper2-p09-i0": {
+  "src": "/exam-figures/biology/markbank/biology-2023-OL-paper2-p09-i0.png",
+  "md5": "652843a370be90e16ba62d957f37c55b",
+  "alt": "Greyscale diagram of a typical synovial joint drawn in vertical section: two long bones meet end to end, each shown with a pale speckled spongy interior inside a smooth outer shell, the upper bone above and the lower bone below. A narrow pale gap separates the two bone ends, and a smooth pale layer caps each bone where it faces that gap. Down each side of the joint runs a dark vertical band of tissue bridging the upper bone to the lower one. An arrow labelled D comes in from the lower left and lands on the dark band on the left side; an arrow labelled E comes in from the upper right and lands on the smooth pale cap on the upper bone end; an arrow labelled F comes in from the right and lands in the narrow gap between the two bone ends. To the left of the diagram the crop carries the stem for part (a) and question parts (i) to (iv), including the three terms to be matched (synovial fluid; cartilage; ligament); the running header above is sliced across the top edge. The joint diagram and all three labels are complete.",
+  "lettersVisible": [
+   "D",
+   "E",
+   "F"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "D",
+    "meaning": "Ligament"
+   },
+   {
+    "letter": "E",
+    "meaning": "Cartilage"
+   },
+   {
+    "letter": "F",
+    "meaning": "Synovial fluid"
+   }
+  ],
+  "questionRef": "Q17(a)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "biology-2023-OL-paper2-p10-i0": {
+  "src": "/exam-figures/biology/markbank/biology-2023-OL-paper2-p10-i0.png",
+  "md5": "a7e924d1f9a8ffe80896423712874225",
+  "alt": "Greyscale light-microscope photograph of a single bacterium on a grainy grey background. The cell runs diagonally across the frame as a long, regularly waved corkscrew ribbon — roughly two and a half full waves from the upper left to the right-hand side — slightly thicker and darker than the background, with a fine thread trailing from each end. A few small specks of debris are scattered around it. The photograph is not annotated: it carries no letters, arrows or leader lines. To the left of the image the crop carries question part (d) with its sub-parts (i) to (iv). The micrograph is complete and uncropped.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "Q17(d)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "biology-2024-HL-paper2-p07-i0": {
+  "src": "/exam-figures/biology/markbank/biology-2024-HL-paper2-p07-i0.png",
+  "md5": "54df8b741145921865f8096184348d40",
+  "alt": "Greyscale side-view section through the human male reproductive system, set on a pale square background. A dark rounded mass sits at the top of the drawing with a pale speckled oval body below and to its left; a tube leaves the region below that mass, loops down and forward, and runs the length of a projecting structure at the lower left, ending at its tip; a rounded sac hangs below and behind that structure containing a large pale oval; and a small cluster of coiled and lobed structures sits to the right of centre where the tubes converge. An arrow labelled A comes in from the upper left and lands on the tube running forward into the projecting structure; an arrow labelled B comes in from the lower right and points up to the duct rising from the hanging sac; an arrow labelled C comes in from the right and lands on the lobed cluster at the convergence. To the left of the diagram the crop carries the stem for part (a) and question parts (i)1, (i)2, (ii) and (iii), the last of which is sliced across the bottom edge ('directly involved in copulation?'). The diagram and all three letter labels are complete.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Urethra"
+   },
+   {
+    "letter": "B",
+    "meaning": "Sperm duct (vas deferens)"
+   },
+   {
+    "letter": "C",
+    "meaning": "Prostate gland"
+   }
+  ],
+  "questionRef": "Q16(a)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2024 Higher Level — © State Examinations Commission"
+ },
+ "biology-2022-HL-paper2-p04-art": {
+  "src": "/exam-figures/biology/markbank/biology-2022-HL-paper2-p04-art.png",
+  "md5": "26e6e7285d60e8ae6c89879428b56ae6",
+  "alt": "Black-and-white diagram of protein synthesis drawn inside a single large oval cell. A leader line from the printed words 'Cell membrane' points to the oval's outline at the upper right, and one from 'Cytosol' points into the clear space between the oval's outline and a paler inner oval. That inner oval is ringed by a broken dashed boundary and an arrow from 'Organelle J' points into it. Inside the inner oval a dark rod-shaped body sits at the top, labelled by an arrow from the word 'Chromosome', and two thin lines run from a short section of it down to a drawn DNA double helix beside the word 'Gene'. A bold downward arrow labelled 'Process K' leads from the helix to a single comb-like strand labelled 'Molecule L'. A second bold downward arrow leads out of the inner oval to an identical comb-like strand, also labelled 'Molecule L', drawn in the clear outer region. A bold horizontal arrow leads from that strand to a two-lobed grey blob labelled M, from which a chain of small beads curves up and to the right beside the word 'Protein'. Above the diagram the crop carries the question's stem line, sliced along the top edge ('The diagram illustrates some of the events of protein synthesis.'), and below it question part (i) with part (ii) sliced along the bottom edge. The diagram and all its labels are complete.",
+  "lettersVisible": [
+   "J",
+   "K",
+   "L",
+   "M"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "J",
+    "meaning": "Scheme Q13(b)(iv) treats J as the organelle molecule L leaves, and names the opening it leaves through as *Nuclear pore."
+   },
+   {
+    "letter": "K",
+    "meaning": "Scheme Q13(b)(i): *Transcription."
+   },
+   {
+    "letter": "L",
+    "meaning": "Scheme Q13(b)(ii): *mRNA or *messenger RNA."
+   },
+   {
+    "letter": "M",
+    "meaning": "Scheme Q13(b)(v)1: *Ribosome. (v)2: the main molecule it is made from is *rRNA or *Ribosomal RNA."
+   }
+  ],
+  "questionRef": "Q13(b)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level — © State Examinations Commission"
+ },
+ "biology-2022-HL-paper2-p08-art": {
+  "src": "/exam-figures/biology/markbank/biology-2022-HL-paper2-p08-art.png",
+  "md5": "079283cc7a5e186626ff4e685aafea85",
+  "alt": "Greyscale diagram of a synovial joint in vertical section. Two long bones meet end to end: each has a hard pale outer shell, a speckled spongy region filling its widened end, and a narrow channel running away from the joint along its shaft. A thin pale gap separates the two bone ends, and a smooth pale cap covers each bone where it faces that gap. A dark curved band runs down each side of the joint, bridging the upper bone to the lower one and enclosing the whole joint. Four leader lines label the drawing: 'Compact bone' points from the upper right to the hard outer shell of the upper bone; an arrow labelled A points from the right to the dark curved band on the joint's right side; a single label B on the right has two arrows, one to the smooth cap on the upper bone end and one to the smooth cap on the lower bone end; and 'Spongy bone' points from the lower right into the speckled region of the lower bone. Below the drawing the crop carries one line of question text sliced along the bottom edge ('of synovial joint and give one location in the...'). The joint diagram and all four labels are complete.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Scheme Q16(c)(ii): *Ligament — the structure that connects two bones in a joint."
+   },
+   {
+    "letter": "B",
+    "meaning": "Scheme Q16(c)(iii): *Cartilage. Its accepted functions are shock absorber or protects bone or reduces friction."
+   }
+  ],
+  "questionRef": "Q16(c)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2022 Higher Level — © State Examinations Commission"
  }
 }

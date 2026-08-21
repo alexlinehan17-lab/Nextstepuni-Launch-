@@ -19,7 +19,13 @@
  * reason the deck build reads it from the cards: a flag that disagreed with the
  * data would file one subject's crops under another's.
  *
- *   node scripts/markbank/bind-figures.mjs <catalogue.json>
+ *   node scripts/markbank/bind-figures.mjs <catalogue.json> [--replace]
+ *
+ * Re-publishing a name that already exists with DIFFERENT bytes is refused
+ * unless --replace is passed. Cards reference a figure by name, so a name that
+ * quietly changed what it points at would swap one question's diagram for
+ * another's with nothing in the diff to show it. Re-running the same catalogue
+ * is unaffected: identical bytes are idempotent.
  */
 
 import { readFileSync, writeFileSync, copyFileSync, mkdirSync, existsSync } from 'node:fs';
@@ -36,7 +42,10 @@ const SUBJECT_TITLE = {
   'home-economics': 'Home Economics',
 };
 
-const catalogue = JSON.parse(readFileSync(process.argv[2] ?? '', 'utf8'));
+const argv = process.argv.slice(2);
+const replace = argv.includes('--replace');
+const cataloguePath = argv.find((a) => !a.startsWith('--'));
+const catalogue = JSON.parse(readFileSync(cataloguePath ?? '', 'utf8'));
 
 const manifest = existsSync(MANIFEST) ? JSON.parse(readFileSync(MANIFEST, 'utf8')) : {};
 const skipped = [];
@@ -73,6 +82,12 @@ for (const f of catalogue) {
 
   const bytes = readFileSync(src);
   const md5 = createHash('md5').update(bytes).digest('hex');
+  const name = f.file.replace(/\.png$/, '');
+  const published = manifest[name];
+  if (published && published.md5 !== md5 && !replace) {
+    skipped.push(`${f.file}: already published under this name with different bytes (pass --replace to mean it)`);
+    continue;
+  }
   const prev = seenHash.get(md5);
   if (prev && prev !== f.file.replace(/\.png$/, '')) {
     skipped.push(`${f.file}: identical bytes to ${prev}`);

@@ -7643,6 +7643,33 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "diagram",
     year: 2023, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2023-ol-q5-a-fig", topicId: "bio-u2", conceptId: "microscope-parts-eyepiece-objective",
+    section: "A", questionRef: "2023 OL Q5(a)",
+    stem: "The diagram shows a light microscope. The stage is already named on the diagram.",
+    questionText: "Name the parts of the microscope labelled A and B.",
+    tariffModel: {"kind":"orderedSplit","notation":"8 + 7 + 5(1)"}, totalMarks: 15,
+    rows: [
+    { id: "r-a", kind: "point", verbatim: "A — Eye piece", marks: null },
+    { id: "r-b", kind: "point", verbatim: "B — Objective (lens)", marks: null },
+    ],
+    figure: {
+          "candId": "biology-2023-OL-paper1-p06-i0",
+          "src": "/exam-figures/biology/markbank/biology-2023-OL-paper1-p06-i0.png",
+          "srcHash": "ba096020f446e209d0bcd797fc108e5d",
+          "alt": "Greyscale illustration of an upright compound light microscope, shown whole from the flared base up to the eyepiece. From the bottom: a wide flat base with four small feet, a lamp housing above it, a stout arm rising on the right carrying a large coarse-focus knob and a smaller fine-focus knob, a flat black stage in the middle holding a slide under two clips, a rotating nosepiece above the stage carrying three objective lenses of different lengths, and a long dark tube angled up to the right ending in the eyepiece. A horizontal arrow labelled A points from the right to the top of that angled eyepiece tube; an arrow labelled B points from the upper left down to the cluster of objective lenses; a third arrow labelled with the word 'Stage' points from the left to the flat platform. Above the drawing the crop carries the question header ('5. The diagram shows a light microscope.') and below it the first line of part (a) ('Names the parts of the microscope labelled A and B.') with the top edge of an answer box beginning underneath. The microscope and all three labels are complete.",
+          "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Eye piece","askedInThisQuestion":true},{"letter":"B","meaning":"Objective (lens)","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2023, level: "ordinary",
     paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q11-b-i-ii-iv-fig", topicId: "bio-3-1", conceptId: "ecological-pyramid-ecosystems-and-trophic-levels",
@@ -7701,6 +7728,35 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2023-ol-q14-b-i-fig", topicId: "bio-2-5", conceptId: "female-reproductive-system-parts",
+    section: "C", questionRef: "2023 OL Q14(b)(i)",
+    stem: "The paper prints a diagram of the female reproductive system.",
+    questionText: "Name the parts labelled A, B, and C.",
+    tariffModel: {"kind":"orderedSplit","notation":"3(5) + 6(2)"}, totalMarks: 15,
+    rows: [
+    { id: "r-a", kind: "point", verbatim: "A — Ovary", marks: null },
+    { id: "r-b", kind: "point", verbatim: "B — Fallopian tube", marks: null },
+    { id: "r-c", kind: "point", verbatim: "C — Uterus", marks: null },
+    ],
+    figure: {
+          "candId": "biology-2023-OL-paper2-p05-i0",
+          "src": "/exam-figures/biology/markbank/biology-2023-OL-paper2-p05-i0.png",
+          "srcHash": "8bf9dc1d4bf743bbec59ef84dd84f108",
+          "alt": "Greyscale front-view diagram of the human female reproductive system, drawn symmetrically: a broad pear-shaped uterus in the centre with a dark hollow cavity, a narrow cervix and ridged vagina running down from it, and on each side a curved tube that arcs outward and ends in a small fringed funnel beside a small pale oval body. An arrow labelled B comes in from above and lands on the curved tube on the left of the image; an arrow labelled A comes in from below right and lands on the small pale oval body on the right; an arrow labelled C comes in from the lower left and lands inside the dark central cavity of the pear-shaped organ. To the left of the diagram the crop carries the roman-numeral question parts (i) to (vi) for this question, with part (vi)'s first line sliced across the bottom edge ('State the location from the diagram'). The diagram and all three letter labels are complete.",
+          "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Ovary","askedInThisQuestion":true},{"letter":"B","meaning":"Fallopian tube","askedInThisQuestion":true},{"letter":"C","meaning":"Uterus","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC025GLP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q15-c-i-ii-fig", topicId: "bio-2-6", conceptId: "heart-aorta-and-ventricle-wall-thickness",
     section: "C", questionRef: "2023 OL Q15(c)(i)–(ii)",
     stem: "The paper prints a section through a human heart. The semilunar, bicuspid and tricuspid valves, the septum and the vena cava are named on the diagram.",
@@ -7723,6 +7779,35 @@ export const CARDS: SecCard[] = [
           ]
     },
     labelKey: [{"letter":"A","meaning":"Aorta","askedInThisQuestion":true},{"letter":"B","meaning":"The thicker-walled lower chamber — the ventricle under the labelled bicuspid valve (left ventricle); the scheme names it only as 'chamber B'","askedInThisQuestion":false},{"letter":"C","meaning":"The thinner-walled lower chamber — the ventricle under the labelled tricuspid valve (right ventricle); the scheme names it only as 'chamber C'","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC025GLP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2023-ol-q16a-ii-fig", topicId: "bio-2-6", conceptId: "kidney-regions",
+    section: "C", questionRef: "2023 OL Q16(a)(ii)",
+    stem: "The paper prints a longitudinal section through a kidney. The ureter is named on the diagram.",
+    questionText: "Match the parts labelled D, E, and F with the following terms: medulla, renal pelvis, cortex",
+    tariffModel: {"kind":"orderedSplit","notation":"2(7) + 8(2)"}, totalMarks: 16,
+    rows: [
+    { id: "r-d", kind: "point", verbatim: "D — Cortex", marks: null },
+    { id: "r-e", kind: "point", verbatim: "E — Medulla", marks: null },
+    { id: "r-f", kind: "point", verbatim: "F — (Renal) pelvis", marks: null },
+    ],
+    figure: {
+          "candId": "biology-2023-OL-paper2-p07-i0",
+          "src": "/exam-figures/biology/markbank/biology-2023-OL-paper2-p07-i0.png",
+          "srcHash": "f3bc3aa4a2f7887e02201e729dde859e",
+          "alt": "Greyscale longitudinal section through a human kidney, bean-shaped with the notch on the right. Working inward the drawing shows a pale speckled outer band running all the way round under the capsule, then a ring of darker striated triangular pyramids pointing inward, then a pale open central cavity that funnels out through the notch into a tube leaving the lower right of the organ. An arrow labelled D comes in from the upper left and lands on the pale outer band; an arrow labelled E comes in from the upper right and lands on one of the striated triangular pyramids; a horizontal arrow labelled F comes in from the right and lands in the open central cavity; a fourth arrow labelled with the word 'Ureter' points from the right to the tube leaving the organ. To the left of the diagram the crop carries the stem for part (a) and question parts (i) to (iii), including the three terms to be matched (medulla; renal pelvis; cortex). The kidney and all four labels are complete.",
+          "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "D",
+                "E",
+                "F"
+          ]
+    },
+    labelKey: [{"letter":"D","meaning":"Cortex","askedInThisQuestion":true},{"letter":"E","meaning":"Medulla","askedInThisQuestion":true},{"letter":"F","meaning":"(Renal) pelvis","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, kind: "diagram",
@@ -7784,6 +7869,92 @@ export const CARDS: SecCard[] = [
           ]
     },
     labelKey: [{"letter":"X","meaning":"Iris","askedInThisQuestion":false},{"letter":"Y","meaning":"Cornea","askedInThisQuestion":false},{"letter":"Z","meaning":"Lens","askedInThisQuestion":true},{"letter":"d","meaning":"Diameter of the pupil — the double-headed arrow across the pupil opening; the scheme refers to it only through part (v)","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC025GLP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2023-ol-q16c-i-fig", topicId: "bio-2-6", conceptId: "root-tissue-types",
+    section: "C", questionRef: "2023 OL Q16(c)(i)",
+    stem: "The paper prints a transverse section through a root. A root hair is named on the diagram.",
+    questionText: "Match the plant tissues labelled A, B and C with the following terms: ground; vascular; dermal",
+    tariffModel: {"kind":"orderedSplit","notation":"2(7) + 8(2)"}, totalMarks: 16,
+    rows: [
+    { id: "r-a", kind: "point", verbatim: "A — Vascular", marks: null },
+    { id: "r-b", kind: "point", verbatim: "B — Ground", marks: null },
+    { id: "r-c", kind: "point", verbatim: "C — Dermal", marks: null },
+    ],
+    figure: {
+          "candId": "biology-2023-OL-paper2-p08-i1",
+          "src": "/exam-figures/biology/markbank/biology-2023-OL-paper2-p08-i1.png",
+          "srcHash": "9ae97e384d25579487d0c7b3d7e19f9a",
+          "alt": "Greyscale transverse section through a plant root, drawn as a circle in three concentric zones. At the centre is a darker four-pointed star of small tightly packed cells; around it a broad zone of large pale rounded cells fills most of the circle; and the outermost single layer of small cells forms the rim, from which five or six long curling hairs project outward. A bracket labelled A sits to the left of the central star and spans it; an arrow labelled B comes in from the upper right and lands in the broad zone of large pale cells; an arrow labelled C comes in from the lower right and lands on the outer single-cell rim; a fourth arrow labelled with the words 'Root hair' points from the lower left to one of the projecting hairs. To the left of the diagram the crop carries the stem for part (c) and question part (i) with its three terms (ground; vascular; dermal), and part (ii) with its last line sliced across the bottom edge. The root section and all four labels are complete.",
+          "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Vascular (tissue)","askedInThisQuestion":true},{"letter":"B","meaning":"Ground (tissue)","askedInThisQuestion":true},{"letter":"C","meaning":"Dermal (tissue)","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC025GLP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2023-ol-q16c-ii-iii-fig", topicId: "bio-2-6", conceptId: "vascular-tissue-transport-and-cells",
+    section: "C", questionRef: "2023 OL Q16(c)(ii)–(iii)",
+    stem: "The paper prints a transverse section through a root. The scheme's own part (c)(i) gives A as vascular tissue, B as ground tissue and C as dermal tissue.",
+    questionText: "Give two substances that are transported by the tissue labelled A. Name a type of cell located in the tissue labelled A.",
+    tariffModel: {"kind":"orderedSplit","notation":"2(7) + 8(2)"}, totalMarks: 16,
+    rows: [
+    { id: "r-substances", kind: "anyN", verbatim: "Water / food / mineral / other correct", marks: null, contextNote: "Scheme: 'Any two'. Q16(c) is marked 2(7) + 8(2) across parts (i)-(vi), so the two substances do not carry a fixed value each.", openList: true, group: {"claimMax":2,"options":["Water","food","mineral"]} },
+    { id: "r-cell-type", kind: "alt", verbatim: "Xylem (tracheid or vessel) or phloem or sieve tube or companion (cell)", marks: null },
+    ],
+    figure: {
+          "candId": "biology-2023-OL-paper2-p08-i1",
+          "src": "/exam-figures/biology/markbank/biology-2023-OL-paper2-p08-i1.png",
+          "srcHash": "9ae97e384d25579487d0c7b3d7e19f9a",
+          "alt": "Greyscale transverse section through a plant root, drawn as a circle in three concentric zones. At the centre is a darker four-pointed star of small tightly packed cells; around it a broad zone of large pale rounded cells fills most of the circle; and the outermost single layer of small cells forms the rim, from which five or six long curling hairs project outward. A bracket labelled A sits to the left of the central star and spans it; an arrow labelled B comes in from the upper right and lands in the broad zone of large pale cells; an arrow labelled C comes in from the lower right and lands on the outer single-cell rim; a fourth arrow labelled with the words 'Root hair' points from the lower left to one of the projecting hairs. To the left of the diagram the crop carries the stem for part (c) and question part (i) with its three terms (ground; vascular; dermal), and part (ii) with its last line sliced across the bottom edge. The root section and all four labels are complete.",
+          "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Vascular (tissue)","askedInThisQuestion":false},{"letter":"B","meaning":"Ground (tissue)","askedInThisQuestion":false},{"letter":"C","meaning":"Dermal (tissue)","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC025GLP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2023-ol-q16c-iv-v-fig", topicId: "bio-2-6", conceptId: "root-hair-function-and-root-versus-stem",
+    section: "C", questionRef: "2023 OL Q16(c)(iv)–(v)",
+    stem: "The paper prints a transverse section through a root, with a root hair named on the diagram.",
+    questionText: "What is the function of the root hair? Name any two ways in which a section through the stem would differ from the section shown above.",
+    tariffModel: {"kind":"orderedSplit","notation":"2(7) + 8(2)"}, totalMarks: 16,
+    rows: [
+    { id: "r-root-hair", kind: "point", verbatim: "Absorption", marks: null },
+    { id: "r-no-hairs", kind: "point", verbatim: "No root hairs", marks: null },
+    { id: "r-bundles", kind: "point", verbatim: "Many vascular bundles", marks: null },
+    ],
+    figure: {
+          "candId": "biology-2023-OL-paper2-p08-i1",
+          "src": "/exam-figures/biology/markbank/biology-2023-OL-paper2-p08-i1.png",
+          "srcHash": "9ae97e384d25579487d0c7b3d7e19f9a",
+          "alt": "Greyscale transverse section through a plant root, drawn as a circle in three concentric zones. At the centre is a darker four-pointed star of small tightly packed cells; around it a broad zone of large pale rounded cells fills most of the circle; and the outermost single layer of small cells forms the rim, from which five or six long curling hairs project outward. A bracket labelled A sits to the left of the central star and spans it; an arrow labelled B comes in from the upper right and lands in the broad zone of large pale cells; an arrow labelled C comes in from the lower right and lands on the outer single-cell rim; a fourth arrow labelled with the words 'Root hair' points from the lower left to one of the projecting hairs. To the left of the diagram the crop carries the stem for part (c) and question part (i) with its three terms (ground; vascular; dermal), and part (ii) with its last line sliced across the bottom edge. The root section and all four labels are complete.",
+          "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Vascular (tissue)","askedInThisQuestion":false},{"letter":"B","meaning":"Ground (tissue)","askedInThisQuestion":false},{"letter":"C","meaning":"Dermal (tissue)","askedInThisQuestion":false}],
   } as SecCard,
   {
     ...base, kind: "diagram",
@@ -7869,6 +8040,57 @@ export const CARDS: SecCard[] = [
           ]
     },
     labelKey: [{"letter":"X","meaning":"Stigma","askedInThisQuestion":false},{"letter":"Y","meaning":"Ovule","askedInThisQuestion":false},{"letter":"Z","meaning":"Sepal","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC025GLP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2023-ol-q17a-iv-fig", topicId: "bio-2-4", conceptId: "synovial-joint-parts",
+    section: "C", questionRef: "2023 OL Q17(a)(iv)",
+    stem: "The paper prints a section through a synovial joint.",
+    questionText: "Match the parts labelled D, E and F with the following terms: synovial fluid; cartilage; ligaments",
+    tariffModel: {"kind":"orderedSplit","notation":"2(7) + 8(2)"}, totalMarks: 16,
+    rows: [
+    { id: "r-d", kind: "point", verbatim: "D — Ligament", marks: null },
+    { id: "r-e", kind: "point", verbatim: "E — Cartilage", marks: null },
+    { id: "r-f", kind: "point", verbatim: "F — Synovial fluid", marks: null },
+    ],
+    figure: {
+          "candId": "biology-2023-OL-paper2-p09-i0",
+          "src": "/exam-figures/biology/markbank/biology-2023-OL-paper2-p09-i0.png",
+          "srcHash": "652843a370be90e16ba62d957f37c55b",
+          "alt": "Greyscale diagram of a typical synovial joint drawn in vertical section: two long bones meet end to end, each shown with a pale speckled spongy interior inside a smooth outer shell, the upper bone above and the lower bone below. A narrow pale gap separates the two bone ends, and a smooth pale layer caps each bone where it faces that gap. Down each side of the joint runs a dark vertical band of tissue bridging the upper bone to the lower one. An arrow labelled D comes in from the lower left and lands on the dark band on the left side; an arrow labelled E comes in from the upper right and lands on the smooth pale cap on the upper bone end; an arrow labelled F comes in from the right and lands in the narrow gap between the two bone ends. To the left of the diagram the crop carries the stem for part (a) and question parts (i) to (iv), including the three terms to be matched (synovial fluid; cartilage; ligament); the running header above is sliced across the top edge. The joint diagram and all three labels are complete.",
+          "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "D",
+                "E",
+                "F"
+          ]
+    },
+    labelKey: [{"letter":"D","meaning":"Ligament","askedInThisQuestion":true},{"letter":"E","meaning":"Cartilage","askedInThisQuestion":true},{"letter":"F","meaning":"Synovial fluid","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC025GLP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2023-ol-q17d-ii-fig", topicId: "bio-3-2", conceptId: "bacterial-cell-shape",
+    section: "C", questionRef: "2023 OL Q17(d)(ii)",
+    stem: "The paper prints a light-microscope photomicrograph of a bacterium.",
+    questionText: "What shape of bacteria is shown?",
+    tariffModel: {"kind":"orderedSplit","notation":"2(7) + 8(2)"}, totalMarks: 7,
+    rows: [
+    { id: "r-shape", kind: "point", verbatim: "Spiral", marks: null },
+    ],
+    figure: {
+          "candId": "biology-2023-OL-paper2-p10-i0",
+          "src": "/exam-figures/biology/markbank/biology-2023-OL-paper2-p10-i0.png",
+          "srcHash": "a7e924d1f9a8ffe80896423712874225",
+          "alt": "Greyscale light-microscope photograph of a single bacterium on a grainy grey background. The cell runs diagonally across the frame as a long, regularly waved corkscrew ribbon — roughly two and a half full waves from the upper left to the right-hand side — slightly thicker and darker than the background, with a fine thread trailing from each end. A few small specks of debris are scattered around it. The photograph is not annotated: it carries no letters, arrows or leader lines. To the left of the image the crop carries question part (d) with its sub-parts (i) to (iv). The micrograph is complete and uncropped.",
+          "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "diagram",

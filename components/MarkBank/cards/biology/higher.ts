@@ -4725,7 +4725,7 @@ export const CARDS: SecCard[] = [
     ],
   } as SecCard,
   {
-    ...base, kind: "question",
+    ...base, kind: "diagram",
     year: 2022, level: "higher",
     paperFileid: "LC025ALP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Higher Level — © State Examinations Commission.",
@@ -4737,6 +4737,107 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-sequence", kind: "allOf", verbatim: "U G C A C G A C U (all must be correct for 3)", marks: 3, contextNote: "The scheme's answer is the RNA complement (U in place of T), because the strand is being transcribed. The scheme prints no asterisk here — the all-or-nothing rule comes from its own bracketed note, not from the exact-term convention." },
     ],
+    figure: {
+          "candId": "biology-2022-HL-paper2-p04-art",
+          "src": "/exam-figures/biology/markbank/biology-2022-HL-paper2-p04-art.png",
+          "srcHash": "26e6e7285d60e8ae6c89879428b56ae6",
+          "alt": "Black-and-white diagram of protein synthesis drawn inside a single large oval cell. A leader line from the printed words 'Cell membrane' points to the oval's outline at the upper right, and one from 'Cytosol' points into the clear space between the oval's outline and a paler inner oval. That inner oval is ringed by a broken dashed boundary and an arrow from 'Organelle J' points into it. Inside the inner oval a dark rod-shaped body sits at the top, labelled by an arrow from the word 'Chromosome', and two thin lines run from a short section of it down to a drawn DNA double helix beside the word 'Gene'. A bold downward arrow labelled 'Process K' leads from the helix to a single comb-like strand labelled 'Molecule L'. A second bold downward arrow leads out of the inner oval to an identical comb-like strand, also labelled 'Molecule L', drawn in the clear outer region. A bold horizontal arrow leads from that strand to a two-lobed grey blob labelled M, from which a chain of small beads curves up and to the right beside the word 'Protein'. Above the diagram the crop carries the question's stem line, sliced along the top edge ('The diagram illustrates some of the events of protein synthesis.'), and below it question part (i) with part (ii) sliced along the bottom edge. The diagram and all its labels are complete.",
+          "attribution": "SEC Leaving Certificate Biology 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "J",
+                "K",
+                "L",
+                "M"
+          ]
+    },
+    labelKey: [{"letter":"J","meaning":"Organelle J — the nucleus; molecule L leaves it through a nuclear pore","askedInThisQuestion":false},{"letter":"K","meaning":"Transcription","askedInThisQuestion":false},{"letter":"L","meaning":"mRNA (messenger RNA)","askedInThisQuestion":false},{"letter":"M","meaning":"Ribosome (made mainly of rRNA)","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2022, level: "higher",
+    paperFileid: "LC025ALP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Higher Level — © State Examinations Commission.",
+    id: "bio-2022-hl-q13-b-i-ii", topicId: "bio-2-3", conceptId: "complementary-base-sequence",
+    section: "C", questionRef: "2022 HL Q13(b)(i)–(ii)",
+    stem: "The diagram illustrates some of the events of protein synthesis.",
+    questionText: "What is the name of process K that results in the formation of molecule L? Name molecule L.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-k", kind: "point", verbatim: "Transcription", marks: 3, accepts: ["Transcription"] },
+    { id: "r-l", kind: "point", verbatim: "mRNA or messenger RNA", marks: 3, accepts: ["mRNA","Messenger RNA"] },
+    ],
+    figure: {
+          "candId": "biology-2022-HL-paper2-p04-art",
+          "src": "/exam-figures/biology/markbank/biology-2022-HL-paper2-p04-art.png",
+          "srcHash": "26e6e7285d60e8ae6c89879428b56ae6",
+          "alt": "Black-and-white diagram of protein synthesis drawn inside a single large oval cell. A leader line from the printed words 'Cell membrane' points to the oval's outline at the upper right, and one from 'Cytosol' points into the clear space between the oval's outline and a paler inner oval. That inner oval is ringed by a broken dashed boundary and an arrow from 'Organelle J' points into it. Inside the inner oval a dark rod-shaped body sits at the top, labelled by an arrow from the word 'Chromosome', and two thin lines run from a short section of it down to a drawn DNA double helix beside the word 'Gene'. A bold downward arrow labelled 'Process K' leads from the helix to a single comb-like strand labelled 'Molecule L'. A second bold downward arrow leads out of the inner oval to an identical comb-like strand, also labelled 'Molecule L', drawn in the clear outer region. A bold horizontal arrow leads from that strand to a two-lobed grey blob labelled M, from which a chain of small beads curves up and to the right beside the word 'Protein'. Above the diagram the crop carries the question's stem line, sliced along the top edge ('The diagram illustrates some of the events of protein synthesis.'), and below it question part (i) with part (ii) sliced along the bottom edge. The diagram and all its labels are complete.",
+          "attribution": "SEC Leaving Certificate Biology 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "J",
+                "K",
+                "L",
+                "M"
+          ]
+    },
+    labelKey: [{"letter":"J","meaning":"Organelle J — the nucleus; molecule L leaves it through a nuclear pore","askedInThisQuestion":false},{"letter":"K","meaning":"Transcription","askedInThisQuestion":true},{"letter":"L","meaning":"mRNA (messenger RNA)","askedInThisQuestion":true},{"letter":"M","meaning":"Ribosome (made mainly of rRNA)","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2022, level: "higher",
+    paperFileid: "LC025ALP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Higher Level — © State Examinations Commission.",
+    id: "bio-2022-hl-q13-b-iv-v", topicId: "bio-2-3", conceptId: "complementary-base-sequence",
+    section: "C", questionRef: "2022 HL Q13(b)(iv)–(v)",
+    stem: "The diagram illustrates some of the events of protein synthesis. Molecule L is mRNA (the scheme's own answer to part (ii)).",
+    questionText: "Give the name of the opening through which molecule L leaves the organelle J. Identify structure M. Name the main molecule from which structure M is made.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-pore", kind: "point", verbatim: "Nuclear pore", marks: 3, accepts: ["Nuclear pore","Pore"] },
+    { id: "r-m", kind: "point", verbatim: "Ribosome", marks: 3, accepts: ["Ribosome"] },
+    { id: "r-rrna", kind: "point", verbatim: "rRNA or Ribosomal RNA", marks: 3, accepts: ["rRNA","Ribosomal RNA"] },
+    ],
+    figure: {
+          "candId": "biology-2022-HL-paper2-p04-art",
+          "src": "/exam-figures/biology/markbank/biology-2022-HL-paper2-p04-art.png",
+          "srcHash": "26e6e7285d60e8ae6c89879428b56ae6",
+          "alt": "Black-and-white diagram of protein synthesis drawn inside a single large oval cell. A leader line from the printed words 'Cell membrane' points to the oval's outline at the upper right, and one from 'Cytosol' points into the clear space between the oval's outline and a paler inner oval. That inner oval is ringed by a broken dashed boundary and an arrow from 'Organelle J' points into it. Inside the inner oval a dark rod-shaped body sits at the top, labelled by an arrow from the word 'Chromosome', and two thin lines run from a short section of it down to a drawn DNA double helix beside the word 'Gene'. A bold downward arrow labelled 'Process K' leads from the helix to a single comb-like strand labelled 'Molecule L'. A second bold downward arrow leads out of the inner oval to an identical comb-like strand, also labelled 'Molecule L', drawn in the clear outer region. A bold horizontal arrow leads from that strand to a two-lobed grey blob labelled M, from which a chain of small beads curves up and to the right beside the word 'Protein'. Above the diagram the crop carries the question's stem line, sliced along the top edge ('The diagram illustrates some of the events of protein synthesis.'), and below it question part (i) with part (ii) sliced along the bottom edge. The diagram and all its labels are complete.",
+          "attribution": "SEC Leaving Certificate Biology 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "J",
+                "K",
+                "L",
+                "M"
+          ]
+    },
+    labelKey: [{"letter":"J","meaning":"Organelle J — the nucleus; molecule L leaves it through a nuclear pore","askedInThisQuestion":true},{"letter":"K","meaning":"Transcription","askedInThisQuestion":false},{"letter":"L","meaning":"mRNA (messenger RNA)","askedInThisQuestion":false},{"letter":"M","meaning":"Ribosome (made mainly of rRNA)","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2022, level: "higher",
+    paperFileid: "LC025ALP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Higher Level — © State Examinations Commission.",
+    id: "bio-2022-hl-q13-b-vi", topicId: "bio-2-3", conceptId: "translation-at-the-ribosome",
+    section: "C", questionRef: "2022 HL Q13(b)(vi)",
+    stem: "Structure M is the ribosome (the scheme's own answer to part (v)).",
+    questionText: "Describe the events that occur at structure M, which allow the production of a functioning protein.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-translation", kind: "anyN", verbatim: "tRNA brings amino acids to ribosome / tRNA binds to mRNA / with matching codon (triplet) or anticodon / sequence of amino acids assembles or peptide bond forms / folding / start or stop codon", marks: null, group: {"claimMax":3,"perOption":3,"options":["tRNA brings amino acids to ribosome","tRNA binds to mRNA","with matching codon (triplet) or anticodon","sequence of amino acids assembles or peptide bond forms","folding","start or stop codon"]} },
+    ],
+    figure: {
+          "candId": "biology-2022-HL-paper2-p04-art",
+          "src": "/exam-figures/biology/markbank/biology-2022-HL-paper2-p04-art.png",
+          "srcHash": "26e6e7285d60e8ae6c89879428b56ae6",
+          "alt": "Black-and-white diagram of protein synthesis drawn inside a single large oval cell. A leader line from the printed words 'Cell membrane' points to the oval's outline at the upper right, and one from 'Cytosol' points into the clear space between the oval's outline and a paler inner oval. That inner oval is ringed by a broken dashed boundary and an arrow from 'Organelle J' points into it. Inside the inner oval a dark rod-shaped body sits at the top, labelled by an arrow from the word 'Chromosome', and two thin lines run from a short section of it down to a drawn DNA double helix beside the word 'Gene'. A bold downward arrow labelled 'Process K' leads from the helix to a single comb-like strand labelled 'Molecule L'. A second bold downward arrow leads out of the inner oval to an identical comb-like strand, also labelled 'Molecule L', drawn in the clear outer region. A bold horizontal arrow leads from that strand to a two-lobed grey blob labelled M, from which a chain of small beads curves up and to the right beside the word 'Protein'. Above the diagram the crop carries the question's stem line, sliced along the top edge ('The diagram illustrates some of the events of protein synthesis.'), and below it question part (i) with part (ii) sliced along the bottom edge. The diagram and all its labels are complete.",
+          "attribution": "SEC Leaving Certificate Biology 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "J",
+                "K",
+                "L",
+                "M"
+          ]
+    },
+    labelKey: [{"letter":"J","meaning":"Organelle J — the nucleus; molecule L leaves it through a nuclear pore","askedInThisQuestion":false},{"letter":"K","meaning":"Transcription","askedInThisQuestion":false},{"letter":"L","meaning":"mRNA (messenger RNA)","askedInThisQuestion":false},{"letter":"M","meaning":"Ribosome (made mainly of rRNA)","askedInThisQuestion":false}],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5035,7 +5136,7 @@ export const CARDS: SecCard[] = [
     ],
   } as SecCard,
   {
-    ...base, kind: "question",
+    ...base, kind: "diagram",
     year: 2022, level: "higher",
     paperFileid: "LC025ALP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Higher Level — © State Examinations Commission.",
@@ -5046,6 +5147,44 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-ligament", kind: "gate", verbatim: "Ligament", marks: 3, exactTermRequired: true },
     ],
+    figure: {
+          "candId": "biology-2022-HL-paper2-p08-art",
+          "src": "/exam-figures/biology/markbank/biology-2022-HL-paper2-p08-art.png",
+          "srcHash": "079283cc7a5e186626ff4e685aafea85",
+          "alt": "Greyscale diagram of a synovial joint in vertical section. Two long bones meet end to end: each has a hard pale outer shell, a speckled spongy region filling its widened end, and a narrow channel running away from the joint along its shaft. A thin pale gap separates the two bone ends, and a smooth pale cap covers each bone where it faces that gap. A dark curved band runs down each side of the joint, bridging the upper bone to the lower one and enclosing the whole joint. Four leader lines label the drawing: 'Compact bone' points from the upper right to the hard outer shell of the upper bone; an arrow labelled A points from the right to the dark curved band on the joint's right side; a single label B on the right has two arrows, one to the smooth cap on the upper bone end and one to the smooth cap on the lower bone end; and 'Spongy bone' points from the lower right into the speckled region of the lower bone. Below the drawing the crop carries one line of question text sliced along the bottom edge ('of synovial joint and give one location in the...'). The joint diagram and all four labels are complete.",
+          "attribution": "SEC Leaving Certificate Biology 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Ligament","askedInThisQuestion":true},{"letter":"B","meaning":"Cartilage","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2022, level: "higher",
+    paperFileid: "LC025ALP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Higher Level — © State Examinations Commission.",
+    id: "bio-2022-hl-q16-c-iii", topicId: "bio-2-4", conceptId: "cartilage-function",
+    section: "C", questionRef: "2022 HL Q16(c)(iii)",
+    questionText: "Name part B. Give one function of part B.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-name-b", kind: "point", verbatim: "Name part B: Cartilage", marks: 3, accepts: ["Cartilage"] },
+    { id: "r-cartilage-fn", kind: "point", verbatim: "Shock absorber or protects bone or reduces friction", marks: 3, accepts: ["Shock absorber","Protects bone","Reduces friction"] },
+    ],
+    figure: {
+          "candId": "biology-2022-HL-paper2-p08-art",
+          "src": "/exam-figures/biology/markbank/biology-2022-HL-paper2-p08-art.png",
+          "srcHash": "079283cc7a5e186626ff4e685aafea85",
+          "alt": "Greyscale diagram of a synovial joint in vertical section. Two long bones meet end to end: each has a hard pale outer shell, a speckled spongy region filling its widened end, and a narrow channel running away from the joint along its shaft. A thin pale gap separates the two bone ends, and a smooth pale cap covers each bone where it faces that gap. A dark curved band runs down each side of the joint, bridging the upper bone to the lower one and enclosing the whole joint. Four leader lines label the drawing: 'Compact bone' points from the upper right to the hard outer shell of the upper bone; an arrow labelled A points from the right to the dark curved band on the joint's right side; a single label B on the right has two arrows, one to the smooth cap on the upper bone end and one to the smooth cap on the lower bone end; and 'Spongy bone' points from the lower right into the speckled region of the lower bone. Below the drawing the crop carries one line of question text sliced along the bottom edge ('of synovial joint and give one location in the...'). The joint diagram and all four labels are complete.",
+          "attribution": "SEC Leaving Certificate Biology 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Ligament","askedInThisQuestion":false},{"letter":"B","meaning":"Cartilage","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7889,6 +8028,33 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC025ALP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Higher Level — © State Examinations Commission.",
+    id: "bio-2023-hl-q16-c-i-fig", topicId: "bio-3-2", conceptId: "virus-structure",
+    section: "C", questionRef: "2023 HL Q16(c)(i)",
+    stem: "The diagram shows a typical spherical-shaped virus.",
+    questionText: "Name structures X and Y.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-x", kind: "point", verbatim: "X — Protein (coat) or capsid", marks: 3, accepts: ["Protein coat","Protein","Capsid"] },
+    { id: "r-y", kind: "point", verbatim: "Y — Nucleic acid or DNA or RNA", marks: 3, accepts: ["Nucleic acid","DNA","RNA"] },
+    ],
+    figure: {
+          "candId": "biology-2023-HL-paper2-p08-i0",
+          "src": "/exam-figures/biology/markbank/biology-2023-HL-paper2-p08-i0.png",
+          "srcHash": "98f727870e89bcb7a29993bdb2891e1c",
+          "alt": "Black-and-white line drawing of a typical spherical virus, drawn as a single large circle with a thick black outline and a plain white interior. Inside the circle a thin, tightly coiled corkscrew strand loops back on itself in an irregular S-shape, occupying most of the circle and trailing a short tail toward the lower left of the outline. A bold arrow labelled X comes in from the upper left and lands on the thick outer ring of the circle; a second bold arrow labelled Y comes in from the left below it and lands on the coiled strand inside. To the left of the diagram the crop carries the question text for part (c) — the (i) to (iv) parts — with the last line of (iv) sliced across the bottom edge ('be beneficial to humans'). The diagram itself, its outline, the internal strand and both X and Y labels are complete.",
+          "attribution": "SEC Leaving Certificate Biology 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "X",
+                "Y"
+          ]
+    },
+    labelKey: [{"letter":"X","meaning":"Protein (coat) or capsid","askedInThisQuestion":true},{"letter":"Y","meaning":"Nucleic acid, or DNA or RNA","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2023, level: "higher",
+    paperFileid: "LC025ALP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Higher Level — © State Examinations Commission.",
     id: "bio-2023-hl-q17-b-ii-fig", topicId: "bio-2-4", conceptId: "synapse-structure",
     section: "C", questionRef: "2023 HL Q17(b)(ii)",
     stem: "The diagram shows two separate neurons in close contact. Chemical A is produced by one of the neurons to allow the transfer of nerve impulses.",
@@ -8069,6 +8235,64 @@ export const CARDS: SecCard[] = [
           ]
     },
     labelKey: [{"letter":"A","meaning":"Dermal tissue","askedInThisQuestion":true},{"letter":"B","meaning":"Ground tissue","askedInThisQuestion":true},{"letter":"C","meaning":"Root hair","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2024, level: "higher",
+    paperFileid: "LC025ALP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Higher Level — © State Examinations Commission.",
+    id: "bio-2024-hl-q16-a-i-1-fig", topicId: "bio-2-5", conceptId: "male-reproductive-system-parts",
+    section: "C", questionRef: "2024 HL Q16(a)(i)1",
+    stem: "The diagram shows the human male reproductive system.",
+    questionText: "Give the names of tubes A and B and the name of gland C.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "g-a", kind: "gate", verbatim: "A — Urethra", marks: 1, exactTermRequired: true },
+    { id: "g-b", kind: "gate", verbatim: "B — Sperm duct (or vas deferens)", marks: 1, exactTermRequired: true },
+    { id: "g-c", kind: "gate", verbatim: "C — Prostate (gland)", marks: 1, exactTermRequired: true },
+    ],
+    figure: {
+          "candId": "biology-2024-HL-paper2-p07-i0",
+          "src": "/exam-figures/biology/markbank/biology-2024-HL-paper2-p07-i0.png",
+          "srcHash": "54df8b741145921865f8096184348d40",
+          "alt": "Greyscale side-view section through the human male reproductive system, set on a pale square background. A dark rounded mass sits at the top of the drawing with a pale speckled oval body below and to its left; a tube leaves the region below that mass, loops down and forward, and runs the length of a projecting structure at the lower left, ending at its tip; a rounded sac hangs below and behind that structure containing a large pale oval; and a small cluster of coiled and lobed structures sits to the right of centre where the tubes converge. An arrow labelled A comes in from the upper left and lands on the tube running forward into the projecting structure; an arrow labelled B comes in from the lower right and points up to the duct rising from the hanging sac; an arrow labelled C comes in from the right and lands on the lobed cluster at the convergence. To the left of the diagram the crop carries the stem for part (a) and question parts (i)1, (i)2, (ii) and (iii), the last of which is sliced across the bottom edge ('directly involved in copulation?'). The diagram and all three letter labels are complete.",
+          "attribution": "SEC Leaving Certificate Biology 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Urethra","askedInThisQuestion":true},{"letter":"B","meaning":"Sperm duct (vas deferens)","askedInThisQuestion":true},{"letter":"C","meaning":"Prostate gland","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2024, level: "higher",
+    paperFileid: "LC025ALP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Higher Level — © State Examinations Commission.",
+    id: "bio-2024-hl-q16-a-i-2-fig", topicId: "bio-2-5", conceptId: "male-reproductive-system-functions",
+    section: "C", questionRef: "2024 HL Q16(a)(i)2",
+    stem: "The diagram shows the human male reproductive system.",
+    questionText: "Give one function for each structure labelled A, B and C.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-a", kind: "alt", verbatim: "A — Release semen", marks: 1, accepts: ["release urine"], contextNote: "Scheme prints: 'A: Release semen or release urine'." },
+    { id: "r-b", kind: "point", verbatim: "B — Carries sperm from testes to urethra (or penis)", marks: 1 },
+    { id: "r-c", kind: "point", verbatim: "C — Produces seminal fluid", marks: 1 },
+    ],
+    figure: {
+          "candId": "biology-2024-HL-paper2-p07-i0",
+          "src": "/exam-figures/biology/markbank/biology-2024-HL-paper2-p07-i0.png",
+          "srcHash": "54df8b741145921865f8096184348d40",
+          "alt": "Greyscale side-view section through the human male reproductive system, set on a pale square background. A dark rounded mass sits at the top of the drawing with a pale speckled oval body below and to its left; a tube leaves the region below that mass, loops down and forward, and runs the length of a projecting structure at the lower left, ending at its tip; a rounded sac hangs below and behind that structure containing a large pale oval; and a small cluster of coiled and lobed structures sits to the right of centre where the tubes converge. An arrow labelled A comes in from the upper left and lands on the tube running forward into the projecting structure; an arrow labelled B comes in from the lower right and points up to the duct rising from the hanging sac; an arrow labelled C comes in from the right and lands on the lobed cluster at the convergence. To the left of the diagram the crop carries the stem for part (a) and question parts (i)1, (i)2, (ii) and (iii), the last of which is sliced across the bottom edge ('directly involved in copulation?'). The diagram and all three letter labels are complete.",
+          "attribution": "SEC Leaving Certificate Biology 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Urethra","askedInThisQuestion":true},{"letter":"B","meaning":"Sperm duct (vas deferens)","askedInThisQuestion":true},{"letter":"C","meaning":"Prostate gland","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, kind: "diagram",
