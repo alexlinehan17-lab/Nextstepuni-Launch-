@@ -9,13 +9,15 @@ DONE and pushed:
   2024 HL  28 cards   2024 OL  31 cards
   2023 HL  37 cards   2023 OL  26 cards   <-- COMPLETE
   2022 HL  27 cards   2022 OL  25 cards   <-- BOTH COMPLETE
-Bank total 4491. Higher deck 255, ordinary 234. Held 26.
+  2021 HL  27 cards                       <-- COMPLETE
+Bank total 4518. Higher deck 282, ordinary 234. Held 26.
 
 ## NEXT ACTION
-2021 HL, then 2021 OL. Nothing else is outstanding.
+2021 OL is the LAST paper. After it, Section C is fully covered and the
+whole bank has every section for every subject.
 
 Start with:
-  python3 scripts/markbank/authoring/scout.py 2021 higher
+  python3 scripts/markbank/authoring/scout.py 2021 ordinary
 
 ## The loop, per paper
 1. python3 scratchpad/scout.py <year> <higher|ordinary>   -> Section C bounds + question map

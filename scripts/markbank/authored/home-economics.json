@@ -17487,6 +17487,1738 @@
   "notes": "One flat list, taken in order to the cap."
  },
  {
+  "id": "he-2021-hl-sc-q1ai",
+  "topicId": "home-economics-3-3",
+  "conceptId": "location-and-house-style",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 HL Section C E1 Q1(a)(i)",
+  "questionText": "Explain the importance of location and house style when building a new home.",
+  "stem": "A well designed home should have a positive impact on people’s lives.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points @ 4 marks (graded 4:2:0) - 1 reference to location, 1 reference to house style + 2 other points",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "One reference to location",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One point at 4 marks, and the scheme requires at least one. Location is everything outside the house - what it is near, which way the site faces, whether services and drainage are there, and what the local authority will allow.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "urban or rural setting",
+      "proximity to work, school, amenities, and transport links",
+      "available services e.g. water, sewage, electricity,",
+      "site orientation – south facing",
+      "good drainage",
+      "future development plans for the area - local building regulations",
+      "environmental regulations in the area as planning permission can affect the style of the house and materials used",
+      "local authorities determine what is allowed e.g. visual impact",
+      "income – cost of site, building materials"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "One reference to house style",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One point at 4 marks, also required. Style is the house itself - storeys and type, enough space for the family now and later, and whether it fits the surrounding area and local materials.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "personal preference - two story, single storey, detached, semi-detached, terraced",
+      "low-maintenance house",
+      "sufficient space for all family members to live comfortably",
+      "stage of family members",
+      "family members with special needs",
+      "withstand local weather conditions",
+      "aspect to ensure the best use of natural light",
+      "if on a gradient site houses may need to be split-level",
+      "open plan",
+      "office – working from home",
+      "sustainable heating methods",
+      "houses must fit into surrounding area",
+      "may have to use local materials e.g. stone",
+      "conform to planning regulations"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "Two further points, from either",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Two further points at 4 marks each, from either strand - \"1 reference to location, 1 reference to house style + 2 other points\". Develop whichever you know better rather than reaching for a weak fourth idea.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "urban or rural setting",
+      "proximity to work, school, amenities, and transport links",
+      "available services e.g. water, sewage, electricity,",
+      "site orientation – south facing",
+      "good drainage",
+      "future development plans for the area - local building regulations",
+      "environmental regulations in the area as planning permission can affect the style of the house and materials used",
+      "local authorities determine what is allowed e.g. visual impact",
+      "income – cost of site, building materials",
+      "personal preference - two story, single storey, detached, semi-detached, terraced",
+      "low-maintenance house",
+      "sufficient space for all family members to live comfortably",
+      "stage of family members",
+      "family members with special needs"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: the scheme requires one point on each strand, then floats the remaining 8 marks across both. Modelled as three rows so the two compulsory points cannot be lost."
+ },
+ {
+  "id": "he-2021-hl-sc-q1aii",
+  "topicId": "home-economics-3-3",
+  "conceptId": "factors-influencing-house-design",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 HL Section C E1 Q1(a)(ii)",
+  "questionText": "Discuss the following factors that influence house design/construction: initial and/or maintenance costs; technological developments; energy efficiency.",
+  "stem": "A well designed home should have a positive impact on people’s lives.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points @ 4 marks (graded 4:2:0) x 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 24,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Initial and/or maintenance costs",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Two points at 4 marks. The idea worth writing is that the two costs pull against each other - spending more at the start on solar panels or underfloor heating reduces what the house costs to run for the next thirty years.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "budget",
+      "cost of site",
+      "cost of building materials",
+      "professional fees",
+      "design",
+      "finishes on exterior –e.g. natural stone/plaster",
+      "initial spend can reduce long term costs e.g. solar panels, underfloor heating",
+      "passive heating"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Technological developments",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Two points at 4 marks. The scheme runs from how the house is designed (CAD, virtual reality tours) to what is built into it (sensor lighting, zoned heating, monitored security, smart appliances). One of each shows range.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "CAD – computer aided design",
+      "electric gates",
+      "virtual reality tours of house designs",
+      "sensor windows",
+      "sensor lights",
+      "recessed lighting – LED’s",
+      "monitored security systems",
+      "sensor-operated cameras",
+      "intelligent appliances",
+      "thermostatic controls",
+      "zoned heating systems",
+      "integrated sound & lighting systems",
+      "streamlined fixtures for kitchen/bathrooms",
+      "smart technology"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "Energy efficiency",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Two points at 4 marks. Keeping heat in (insulation, low-emissivity glazing) and controlling how it is used (zoned heating, thermostats, timers) are the two halves - renewable sources are the third.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "double or triple glazed windows, with low emissivity glass",
+      "insulation in walls, roof and doors",
+      "zoned heating system",
+      "use of renewable energy sources e.g. solar, wind, hydro",
+      "use of thermostats, timers and energy efficient appliances",
+      "smart energy",
+      "apps"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: the question names three factors and prices them identically at 8 marks each."
+ },
+ {
+  "id": "he-2021-hl-sc-q1aiii",
+  "topicId": "home-economics-3-3",
+  "conceptId": "obtaining-full-planning-permission",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 HL Section C E1 Q1(a)(iii)",
+  "questionText": "Outline the procedure involved in obtaining full planning permission to build a house.",
+  "stem": "A well designed home should have a positive impact on people’s lives.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "5 points @ 2 marks (graded 2:1:0)",
+   "answer": 5,
+   "ofParts": 8,
+   "perPart": 2
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Procedure for obtaining full planning permission",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Five points at 2 marks - a procedure, so write it in order: pre-planning meeting, notice in the local paper, application and fee to the planning authority, site notice erected, public and site inspection, then permission granted or refused with reasons.",
+    "group": {
+     "claimMax": 5,
+     "perOption": 2,
+     "options": [
+      "Pre-planning meeting",
+      "notice of intention/planning permission published in a local newspaper",
+      "pay fee and lodge detailed application to local planning authority",
+      "site notice erected",
+      "public inspection – any member of the public is free to inspect the plans",
+      "site inspection by planning officials",
+      "permission granted or refused with reasons given for refusal",
+      "and"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in scheme order - which is also the order the procedure happens in."
+ },
+ {
+  "id": "he-2021-hl-sc-q1bi",
+  "topicId": "home-economics-3-5",
+  "conceptId": "properties-of-light-in-the-home",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 HL Section C E1 Q1(b)(i)",
+  "questionText": "Discuss three properties of light and in each case give an example of the application of each in the home.",
+  "stem": "‘Lighting isn’t just a practical necessity. It’s a style accessory, too.’ (www.ikea.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 properties @ 6 marks (graded 6:4:2:0)",
+   "answer": 3,
+   "ofParts": 5,
+   "perPart": 6
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Properties of light and their application in the home",
+    "marks": 18,
+    "openList": true,
+    "contextNote": "Three properties at 6 marks, graded 6:4:2:0 - the long ladder rewards a partial answer, so attempt all three. Each needs the physics AND the home example: light bounces off a mirror or white ceiling, bends through glass bricks, scatters through an opaque shade, is swallowed by dark matt walls, or splits into colours in a crystal chandelier.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "Reflected - rays of light bounce off a shiny surface e.g. glazed ceramic tiles, mirrors, white ceiling",
+      "Refracted - rays of light bend when they pass through thick glass e.g. glass bricks, frosted glass",
+      "Diffused - rays are scattered when they pass through translucent substances or hit non- reflecting surface e.g. opaque lamp shades",
+      "Absorbed - dark and matt surfaces absorb light rays e.g. dark colours on walls make rooms appear smaller",
+      "Dispersed - rays of light that pass through a prism or crystal break down into their component colours e.g. crystal chandelier"
+     ]
+    }
+   }
+  ],
+  "notes": "One option per named property, each carrying that property’s own explanation and example, because the scheme groups its marking points under five headings and prices three."
+ },
+ {
+  "id": "he-2021-hl-sc-q1bii",
+  "topicId": "home-economics-3-5",
+  "conceptId": "contemporary-lighting-technology",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 HL Section C E1 Q1(b)(ii)",
+  "questionText": "Identify and evaluate two contemporary developments in lighting technology.",
+  "stem": "‘Lighting isn’t just a practical necessity. It’s a style accessory, too.’ (www.ikea.com)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name 2 marks (graded 2:0) x 2; evaluate 1 point @ 4 marks (graded 4:2:0) x 2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Name of the lighting development",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Two developments at 2 marks each, graded 2:0. The scheme accepts a long list, but pick two you can then evaluate - sensor lighting and smart remote-controlled lighting are the easiest to say something real about.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Sensor and motion activated lights",
+      "use of smart technology to remotely control lighting",
+      "human centric lighting",
+      "recess ceiling lights",
+      "rise and fall lights",
+      "ceramic and plaster-based wall lights",
+      "under counter and cabinet lights",
+      "picture display lights",
+      "LED lighting",
+      "surface mounted/suspended tubular LED lighting",
+      "architectural lighting",
+      "CFL lighting",
+      "track lighting",
+      "spot lights"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Evaluation of the developments named",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "One evaluation per development at 4 marks - two thirds of the marks. The scheme names the technologies only, so the judgement is entirely yours: what it does for convenience, safety or the electricity bill, and what it costs to install.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Sensor and motion activated lights",
+      "use of smart technology to remotely control lighting",
+      "human centric lighting",
+      "recess ceiling lights",
+      "rise and fall lights",
+      "ceramic and plaster-based wall lights",
+      "under counter and cabinet lights",
+      "picture display lights",
+      "LED lighting",
+      "surface mounted/suspended tubular LED lighting",
+      "architectural lighting",
+      "CFL lighting",
+      "track lighting",
+      "spot lights"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: naming is priced at 4 across the two developments and the evaluation at 8. Both rows draw on the same list, because the scheme names the developments without evaluating them."
+ },
+ {
+  "id": "he-2021-hl-sc-q1ci",
+  "topicId": "home-economics-3-5",
+  "conceptId": "water-supply-and-storage-in-the-home",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 HL Section C E1 Q1(c)(i)",
+  "questionText": "Explain how water is supplied to and stored in the home. Refer to: urban or rural supply; stop cock; storage tank/cistern.",
+  "stem": "Water covers 71% of the planet but only 1% is available to us as drinking water. (Irish Water)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points @ 3 marks (graded 3:2:0) x 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Urban or rural supply",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks, and either supply is accepted. Urban is a chain from the reservoir: mains, service pipe, external stopcock, then the kitchen sink for drinking water and a branch to the attic tank. Rural is a well or spring, lined against contamination, tested and pumped in.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "public supply (Irish Water): water travels from the reservoir to urban areas by mains (pipes)",
+      "service pipe leads to each building",
+      "a valve (stopcock, located externally) allows water to be turned off during repairs",
+      "service pipe enters the house under the kitchen sink (another stopcock) which supplies the sink with fresh drinking water while another branch fills the storage tank (cistern) in the attic",
+      "this storage tank supplies all other cold taps, toilets, hot press tank and back boiler",
+      "public supply",
+      "private wells/springs: natural springs – cleaner quality water, less impurities",
+      "water is tested and treated for harmful impurities",
+      "wells are lined with steel or concrete to prevent contamination from the soil",
+      "water is pumped into the house by an electric pump",
+      "water purifiers are fitted to remove suspended impurities"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Stop cock",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks. Two things to say: where it is (on the service pipe outside, or under the kitchen sink) and what it does (shuts the supply off if there is a problem).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "a valve found on a service pipe outside the house/under the kitchen sink",
+      "allows the water supply to be shut off if there is a problem"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "Storage tank/cistern",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks. The height is the point - it sits in the attic so gravity gives the pressure, a ball valve keeps the level right, and it feeds the cold taps, toilets and hot press.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "located in the attic as high level improves pressure to supply the system",
+      "a ball valve controls the level of water in the tank",
+      "stores the cold water which supplies the cold water taps, toilets and hot press tank in the home"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: the question names three strands and prices them identically at 6 marks each."
+ },
+ {
+  "id": "he-2021-hl-sc-q1cii",
+  "topicId": "home-economics-3-6",
+  "conceptId": "conserving-water-in-the-home",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 HL Section C E1 Q1(c)(ii)",
+  "questionText": "Identify inefficient uses of water in the home and suggest strategies for conserving and managing this resource.",
+  "stem": "Water covers 71% of the planet but only 1% is available to us as drinking water. (Irish Water)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "inefficient uses 2 @ 2 marks (graded 2:0); strategies 2 @ 4 marks (graded 4:2:0)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Inefficient uses of water in the home",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Two at 2 marks, graded 2:0. The scheme prints only three bare words - toilets, appliances, taps - so identify them and move on. The marks are in the next row.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "toilet systems",
+      "appliances",
+      "taps"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Strategies for conserving and managing water",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Two strategies at 4 marks - two thirds of the marks. Match the strategy to the waste you identified, and use the scheme’s own figure if you can: a leaking tap wastes up to a litre an hour. Dual flush, full loads, and a shower instead of a bath are the strongest.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Toilet: install a dual flush toilet",
+      "a rainwater harvesting system linked to the water system etc. Taps: repair leaking taps as they waste up to one litre of water per hour",
+      "do not wash items under a running tap",
+      "do not leave taps running while brushing teeth",
+      "use a basin in the sink rather than washing under a running tap",
+      "Appliances: choose A rated appliances e.g. dishwashers as they are more efficient in use of water",
+      "fill kettle as required",
+      "use washing machines and dishwashers at full capacity",
+      "use economy or quick wash cycle",
+      "Water: take shower instead of baths"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: identifying the waste is priced at 4 and the strategies at 8."
+ },
+ {
+  "id": "he-2021-hl-sc-q2ai",
+  "topicId": "home-economics-3-8",
+  "conceptId": "athleisure-wear-as-a-wardrobe-staple",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 HL Section C E2 Q2(a)(i)",
+  "questionText": "Evaluate the suitability of athleisure wear as a wardrobe staple.",
+  "stem": "Athleisure wear is a way of dressing that combines sportswear with ready-to-wear.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 points @ 5 marks (graded 5:3:0)",
+   "answer": 3,
+   "ofParts": 14,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Suitability of athleisure wear as a wardrobe staple",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three points at 5 marks, graded 5:3:0. The scheme names bare qualities, so the mark is in what you add - a wardrobe staple is worn often and in many settings, so versatility, durability and comfort matter more than the trend. Say why each one makes it wearable day to day.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Comfort",
+      "versatility",
+      "durability",
+      "ease of movement",
+      "affordable",
+      "adaptability to function",
+      "casual style",
+      "trendy",
+      "absorbent",
+      "fresh feeling",
+      "aids posture",
+      "allows skin breathability",
+      "reduces pain/discomfort",
+      "improves confidence"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap. The scheme names the qualities only, so the evaluation is entirely the candidate’s."
+ },
+ {
+  "id": "he-2021-hl-sc-q2aii",
+  "topicId": "home-economics-3-8",
+  "conceptId": "steps-of-the-design-process",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 HL Section C E2 Q2(a)(ii)",
+  "questionText": "Outline the steps of the design process when constructing a garment.",
+  "stem": "Athleisure wear is a way of dressing that combines sportswear with ready-to-wear.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "5 steps @ 2 marks (graded 2:0)",
+   "answer": 5,
+   "ofParts": 8,
+   "perPart": 2
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Steps of the design process",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Five steps at 2 marks, graded 2:0 - each is all or nothing, and they are in order. Define the task, analyse the brief, research, generate ideas, present them, refine, make, evaluate. Learn the sequence and this is ten marks in a minute.",
+    "group": {
+     "claimMax": 5,
+     "perOption": 2,
+     "options": [
+      "Define the task",
+      "analysis of brief",
+      "investigation/research",
+      "possible ideas/solutions",
+      "presenting ideas to others",
+      "refining the design",
+      "implementation",
+      "evaluation"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in scheme order - which is the order of the design process itself."
+ },
+ {
+  "id": "he-2021-hl-sc-q2b",
+  "topicId": "home-economics-3-7",
+  "conceptId": "profile-of-a-natural-fibre-fabric",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 HL Section C E2 Q2(b)",
+  "questionText": "Write a profile of one fabric manufactured from natural fibres. Refer to: fibre production; fabric properties; uses.",
+  "stem": "The sustainability of natural fibres has led to an upsurge in their use.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "name 3 marks (graded 3:0); fibre production 3 points @ 2 marks; properties 3 @ 1 mark; uses 3 @ 1 mark",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Name of the fabric",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Name one, 3 marks, graded 3:0 - all or nothing for a single word. Cotton and wool have the fullest production accounts in the scheme and are the easiest to describe end to end.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "Cotton",
+      "Linen",
+      "Wool",
+      "Silk"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Fibre production",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Three points at 2 marks - the biggest row. Production is a sequence from plant or animal to yarn, so tell it in order: where the fibre comes from, how it is harvested, how it is cleaned and separated, how it is spun. Read the option for the fabric you named.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "Cotton Fibre production: comes from the boll or seed head of the cotton plant, with each fibre being between 2-3cm long; fibres are white and fluffy; the bolls are picked, by either hand or machine; the fibres are separated from the seeds; they are then pressed into bales; the cotton is then graded according to the length of the fibres; these fibres can be combed or spun into yarn",
+      "Linen Fibre production: made from the stem of the flax plant; flax stems are pulled and stems are retted, soaked until outer stem rots; stems are crushed and combed; fibres are spun into yarn; yarn is bleached and dyed; woven into a textured fabric",
+      "Wool Fibre production: comes from the soft hair / fleece of sheep, goats, llamas etc; fleece is removed/shorn from the animal; it is then collected and graded to the length of the fibres and also the colour and fineness of the wool; it is then cleaned and combed (carding); it is then spun into yarn and can then be used to produce textiles",
+      "Silk Fibre production: silkworm feeds on mulberry leaves; it spins a cocoon of silk around itself; cocoons are soaked in water; silk threads are unwound from cocoons onto reels; several of these thin silk threads are spun or twisted together to make thicker thread; these are then woven into fabric"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "Fabric properties",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Three properties at 1 mark each, graded 1:0 - single words, no development needed. Listed in the same order as the fabrics above: cotton, linen, wool, silk. Include a weakness as well as a strength; the scheme lists both.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "strong; absorbent; cool; washes and dries easily; dyes easily; shrinks; creases; affected by mildew; weakened by sun",
+      "strong; absorbent; cool; strong; washes well; creases easily; shrinks easily; difficult to dye; damaged by mildew",
+      "warm; absorbent; does not burn easily; hardwearing; resilient; shrinks if washed at too high a temperature or if tumble dried; can irritate the skin",
+      "absorbent; crease resistant; strong; smooth; light; drapes well; damaged by careless washing, moths, sunshine, chemicals"
+     ]
+    }
+   },
+   {
+    "id": "r-4",
+    "kind": "anyN",
+    "verbatim": "Uses",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Three uses at 1 mark each, graded 1:0. Again in fabric order. Easy marks - name garments or household items, and make sure they match the fabric you profiled.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "shirts; blouses; skirts; towels; sheets; curtains",
+      "dresses; suits; soft furnishings; towels; napkins; tablecloths; handkerchiefs",
+      "jumpers; coats; blankets; carpets; soft furnishings",
+      "blouses; shirts; dresses; suits; ties; paintings; cushion covers; curtains; sheets"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: the question prices four strands at 3, 6, 3 and 3. Production carries the fabric name because the scheme prints it adjacent; properties and uses do not, so those options are listed in the same fabric order instead."
+ },
+ {
+  "id": "he-2021-hl-sc-q2ci",
+  "topicId": "home-economics-3-8",
+  "conceptId": "function-and-choice-of-clothing",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 HL Section C E2 Q2(c)(i)",
+  "questionText": "Explain how the choice of clothing is determined by its function.",
+  "stem": "The design of fashion can be influenced by cultural, historical and social factors.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 point @ 6 marks (graded 6:3:0)",
+   "answer": 1,
+   "ofParts": 8,
+   "perPart": 6
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "How function determines the choice of clothing",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One point at 6 marks, graded 6:3:0 - so 6 or 3, and a bare word is the 3. Take one function and develop it properly: protection from weather means warmth, waterproofing and covering, and it changes what you reach for in January versus July.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Modesty",
+      "protection from weather",
+      "self-expression",
+      "identification",
+      "status",
+      "season",
+      "occasion",
+      "personal preference"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap. The scheme names the functions only, so the explanation is entirely the candidate’s."
+ },
+ {
+  "id": "he-2021-hl-sc-q2cii",
+  "topicId": "home-economics-3-8",
+  "conceptId": "social-influences-on-clothing-design",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 HL Section C E2 Q2(c)(ii)",
+  "questionText": "Analyse the impact of social influences on the design of clothing.",
+  "stem": "The design of fashion can be influenced by cultural, historical and social factors.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 points @ 3 marks (graded 3:2:0)",
+   "answer": 3,
+   "ofParts": 9,
+   "perPart": 3
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Social influences on the design of clothing",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "Three influences at 3 marks, graded 3:2:0. Analyse means say how the influence reaches the clothes - an influencer wears a piece and demand follows, environmental concern pushes designers toward recycled fabric, travel and music carry styles between cultures.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "Public figures",
+      "celebrities",
+      "influencers",
+      "fashion houses and designers",
+      "environmental issues",
+      "dance influences",
+      "music influences",
+      "increase in travel",
+      "cultural influences"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap."
+ },
+ {
+  "id": "he-2021-hl-sc-q3ai",
+  "topicId": "home-economics-3-9",
+  "conceptId": "defining-poverty-hl",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 HL Section C E3 Q3(a)(i)",
+  "questionText": "Define what is meant by poverty.",
+  "stem": "‘Life on a low income is the norm for a large proportion of our society.’ (Poverty Focus, Social Justice Ireland, 2020)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 points @ 4 marks (graded 4:2:0)",
+   "answer": 2,
+   "ofParts": 4,
+   "perPart": 4
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Definition of poverty",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Two points at 4 marks, graded 4:2:0. The scheme prints two ideas and both are worth having: not being able to afford basic needs, and being excluded from what Irish society treats as a normal standard of living. The second is what lifts it above \"having no money\".",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "being without adequate food, clothing or shelter",
+      "income and resources are inadequate and do not allow them an adequate standard of living that is acceptable by Irish society",
+      "having little or no wealth",
+      "inadequate income and resources may exclude and marginalise people from participating in activities that are considered the norm for people in society"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap."
+ },
+ {
+  "id": "he-2021-hl-sc-q3aii",
+  "topicId": "home-economics-3-9",
+  "conceptId": "relative-poverty-poverty-line-poverty-trap",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 HL Section C E3 Q3(a)(ii)",
+  "questionText": "In relation to poverty explain each of the following: relative poverty; the poverty line; the poverty trap.",
+  "stem": "‘Life on a low income is the norm for a large proportion of our society.’ (Poverty Focus, Social Justice Ireland, 2020)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 points @ 3 marks (graded 3:2:0) x 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Relative poverty",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks. Relative is measured against everyone else - below what society treats as a basic standard, and shut out of activities other people take for granted.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "people living below what society recognises as a basic standard of living",
+      "prevents people from partaking in activities which are looked upon as normal in society"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "The poverty line",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks. A figure, not a condition: the minimum income reckoned necessary to maintain a basic standard of living, enough for food, clothing and shelter.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "may be described as the estimated minimum income considered necessary to maintain a basic standard of living",
+      "minimum amount of money a person would need to provide for basic needs such as food, clothing and shelter"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "The poverty trap",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks. The trap is the disincentive - benefits are lost on returning to work, and a low-paid job can leave a household worse off than the payments it replaced.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "people who receive social welfare assistance/benefits lose them if they return to work",
+      "social welfare assistance/benefits may be more financially rewarding than wages in a low paid job",
+      "some people may choose to remain financially dependent on the state"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: the question names three terms and prices them identically at 6 marks each."
+ },
+ {
+  "id": "he-2021-hl-sc-q3aiii",
+  "topicId": "home-economics-3-9",
+  "conceptId": "extent-and-distribution-of-poverty",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 HL Section C E3 Q3(a)(iii)",
+  "questionText": "Discuss the extent and distribution of poverty in Ireland today.",
+  "stem": "‘Life on a low income is the norm for a large proportion of our society.’ (Poverty Focus, Social Justice Ireland, 2020)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 points @ 4 marks (graded 4:2:0) - 1 reference to extent, 1 reference to distribution + 1 other point",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "One reference to extent",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One point at 4 marks, and the scheme requires at least one. Extent is how many - over 20% of households below the poverty line, one in four children, and one of the highest rates in Europe. A figure is worth more than a general statement.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "the number of people below the poverty line decreased since the 1960’s and 1970’s, during the 1980’s the number of people unemployed increased as there was a recession",
+      "the Celtic tiger in the 1990’s meant an increase in employment and a decrease in the number of people living below the poverty line",
+      "towards the early/mid 2000’s there was an increase in the number of people living below the poverty line due to the extremely high house prices and the high cost of living",
+      "over 20% of Irish households live below the poverty line",
+      "one in four children live below the poverty line",
+      "Ireland has one of the highest poverty rates in Europe including a very high rate of child poverty",
+      "increase in poverty as a result of COVID - 19 pandemic"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "One reference to distribution",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One point at 4 marks, also required. Distribution is who - the scheme lists the at-risk groups: women over 65, lone parents, the unemployed, low-paid workers, people with disabilities, Travellers and ethnic minorities.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "groups at risk – women over 65",
+      "households where the head of the household is working in the home",
+      "elderly",
+      "disabled",
+      "unemployed",
+      "low paid workers",
+      "lone parents",
+      "members of the travelling community",
+      "ethnic minorities",
+      "cycle of deprivation in families"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "One further point, from either",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One further point at 4 marks, from either strand. The historical sweep in the extent list - recession in the 1980s, the Celtic Tiger, the housing costs of the 2000s, then COVID - is the easiest place to find a third.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "the number of people below the poverty line decreased since the 1960’s and 1970’s, during the 1980’s the number of people unemployed increased as there was a recession",
+      "the Celtic tiger in the 1990’s meant an increase in employment and a decrease in the number of people living below the poverty line",
+      "towards the early/mid 2000’s there was an increase in the number of people living below the poverty line due to the extremely high house prices and the high cost of living",
+      "over 20% of Irish households live below the poverty line",
+      "one in four children live below the poverty line",
+      "Ireland has one of the highest poverty rates in Europe including a very high rate of child poverty",
+      "increase in poverty as a result of COVID - 19 pandemic",
+      "groups at risk – women over 65",
+      "households where the head of the household is working in the home",
+      "elderly",
+      "disabled",
+      "unemployed",
+      "low paid workers",
+      "lone parents"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: the scheme requires one point on each strand, then floats the remaining 4 marks across both. Modelled as three rows so the two compulsory points cannot be lost."
+ },
+ {
+  "id": "he-2021-hl-sc-q3aiv",
+  "topicId": "home-economics-3-9",
+  "conceptId": "social-welfare-supports-for-poverty",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 HL Section C E3 Q3(a)(iv)",
+  "questionText": "Name and give details of one social welfare assistance/benefit available to people who are experiencing poverty.",
+  "stem": "‘Life on a low income is the norm for a large proportion of our society.’ (Poverty Focus, Social Justice Ireland, 2020)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name 4 marks (graded 4:2:0); details 2 points @ 4 marks (graded 4:2:0)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Name of the social welfare assistance/benefit",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Name one, 4 marks. Eight are accepted. Name the payment exactly - \"jobseeker’s allowance\", not \"the dole\" - and pick one you can then describe for the other 8 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "State pension (non-contributory)",
+      "widow’s/widower’s or surviving civil partner’s pension (non-contributory)",
+      "jobseeker’s allowance/benefit",
+      "working family payment",
+      "COVID - 19 pandemic unemployment payment (PUP)",
+      "supplementary welfare allowance",
+      "one-parent family payment",
+      "child benefit",
+      "and"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Details of the payment",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Two details at 4 marks - two thirds of the marks, and the scheme prints no detail for any of them, so this is entirely yours. Say who qualifies, what it is for, and whether it is means tested. Working family payment and child benefit are the easiest to describe.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "State pension (non-contributory)",
+      "widow’s/widower’s or surviving civil partner’s pension (non-contributory)",
+      "jobseeker’s allowance/benefit",
+      "working family payment",
+      "COVID - 19 pandemic unemployment payment (PUP)",
+      "supplementary welfare allowance",
+      "one-parent family payment",
+      "child benefit",
+      "and"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: naming is priced at 4 and the details at 8. Both rows draw on the same list, because the scheme names the payments without describing them."
+ },
+ {
+  "id": "he-2021-hl-sc-q3bi",
+  "topicId": "home-economics-2-2",
+  "conceptId": "factors-affecting-attitude-to-work",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 HL Section C E3 Q3(b)(i)",
+  "questionText": "Identify and elaborate on the factors that affect an individual’s attitude to work.",
+  "stem": "People in work, paid or unpaid, tend to enjoy happier and healthier lives.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 factors @ 5 marks (graded 5:3:0)",
+   "answer": 3,
+   "ofParts": 8,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Factors affecting an individual’s attitude to work",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three factors at 5 marks, graded 5:3:0. Identify AND elaborate - the name is the 3, the elaboration is the 5. The pair worth knowing is extrinsic against intrinsic satisfaction: one is working for what the wage buys, the other is the work itself giving pride and status.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Social group - children from higher socio-economic groups tend to have higher educational aspirations and long-term goals; they are encouraged and therefore more likely to attain work in desired area; children from lower socio-economic group tend to have fewer educational opportunities and are often less qualified; they may attain employment in low- status positions, with little chance of advancement and little job satisfaction",
+      "Education - higher socio-economic groups have better qualifications and higher career expectations, they have a more positive experience of work and remain in employment for longer; early school leavers find it difficult to find well paid long term employment",
+      "Extrinsic satisfaction - based on bonuses associated with work rather than the job itself; repetitive uninteresting work e.g. assembly line – may fail to stimulate so the wage alone may become the focus for satisfaction; satisfaction is derived from spending the money on luxury goods and/or socialising",
+      "Intrinsic satisfaction - work gives sense of fulfilment, pleasure; scope for creativity; pride in work; develops self-esteem, confidence, independence; confers status and respect; satisfies psychological and social needs",
+      "Work ethic - attitude to work including absenteeism, punctuality, commitment to work and respect for authority",
+      "Personal identity - some professions confer status in the community and as a result may link to a positive attitude to work,",
+      "Working conditions - availability of part time work, job sharing, flexitime and working from home make work life balance easier; atmosphere at work; physical working environment",
+      "Social contact - influenced by background, experience, peer pressure"
+     ]
+    }
+   }
+  ],
+  "notes": "One option per named factor, each carrying that factor’s own detail, because the scheme groups its marking points under eight headings and prices three."
+ },
+ {
+  "id": "he-2021-hl-sc-q3bii",
+  "topicId": "home-economics-3-11",
+  "conceptId": "community-benefits-of-volunteering",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 HL Section C E3 Q3(b)(ii)",
+  "questionText": "Discuss, giving examples, how a community can benefit from the work of volunteers.",
+  "stem": "People in work, paid or unpaid, tend to enjoy happier and healthier lives.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 points @ 5 marks (graded 5:3:0)",
+   "answer": 3,
+   "ofParts": 9,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "How a community benefits from volunteers",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three points at 5 marks, graded 5:3:0 - and the question says \"giving examples\", so name one: St Vincent de Paul for a personal local service, tidy towns for community spirit. The scheme supplies both. Keep the benefit at community level, not the volunteer’s.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Provides range of services quickly to those in need in a community i.e. older people, people with disabilities or homeless people, reducing disadvantage for community members",
+      "complement the work carried out by statutory bodies",
+      "offer a more personal local service e.g. St. Vincent de Paul",
+      "when state funding is lacking or inadequate they organise and run services which should have been provided by the state",
+      "improves community by restoring and cleaning the local landscape or by alleviating poverty and social problems",
+      "creates a sense of community spirit, as volunteers come together to achieve a common goal e.g. tidy towns",
+      "friendships formed which can create a sense of closeness within community",
+      "issues can be dealt with quickly before they become major social problems",
+      "attracting media attention, can initiate change and social reform"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap."
+ },
+ {
+  "id": "he-2021-hl-sc-q3ci",
+  "topicId": "home-economics-2-0",
+  "conceptId": "distribution-of-work-and-childcare-in-families",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 HL Section C E3 Q3(c)(i)",
+  "questionText": "Explain the importance of the distribution of work tasks and childcare responsibilities in families.",
+  "stem": "42% of people who are working from home said that “managing the boundary between work and home life was very difficult”. (Irish Independent, 2020)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 points @ 5 marks (graded 5:3:0) - 1 reference to work tasks, 1 reference to childcare + 1 other point",
+   "answer": 3,
+   "ofParts": 6,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Importance of distributing work tasks and childcare",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three points at 5 marks, and the scheme wants at least one on work tasks and one on childcare. Sharing childcare builds closer parent-child relationships and cuts role overload; sharing chores teaches children responsibility and shows gender equity by example.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Both parents now generally involved in childcare leading to closer relationships between parents and children",
+      "reduces role overload and role conflict",
+      "introduce children to gender equity from an early age as parents are seen as role models sharing household tasks",
+      "reduces stress",
+      "work tasks are generally shared among family members e.g. cooking, vacuuming laundry",
+      "children become more responsible and learn to take pride in their environment e.g. tidying own bedrooms"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list pooling both strands, because the scheme prints its marking points as a single list even though it asks for a reference to each."
+ },
+ {
+  "id": "he-2021-hl-sc-q3cii",
+  "topicId": "home-economics-3-10",
+  "conceptId": "improvements-in-education-and-family-life",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 HL Section C E3 Q3(c)(ii)",
+  "questionText": "Discuss how improvements in the provision of education has impacted on family life.",
+  "stem": "42% of people who are working from home said that “managing the boundary between work and home life was very difficult”. (Irish Independent, 2020)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 points @ 5 marks (graded 5:3:0)",
+   "answer": 3,
+   "ofParts": 11,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "How improvements in education have impacted family life",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three points at 5 marks, graded 5:3:0. The scheme runs across the whole life course - pre-schools and homework clubs freeing parents to work, SNAs and autism units supporting children with additional needs, and free fees, grants, PLCs and distance learning opening third level to adults. Take one from each stage.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Pre-schools /Naíonraí – qualified staff available for part of / whole working day",
+      "after school/ homework clubs",
+      "schools for pupils with special educational needs",
+      "SNAs are available at both primary and secondary level to assist pupils with special educational needs",
+      "multisensory rooms",
+      "autism units",
+      "abolishment of fees, availability of grants and access programmes, have made third level education more accessible",
+      "adult and second-chance education improves self-esteem",
+      "various PLC courses and SOLAS training programmes facilitate upskilling, improving employment opportunities and promotional prospects",
+      "VTOS for long term unemployed",
+      "distance learning – e.g. Open University – functions across Europe and has no defined entry requirements"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap."
+ },
+ {
+  "id": "he-2021-hl-sc-q4ai",
+  "topicId": "home-economics-0-9",
+  "conceptId": "nutritional-significance-of-milk",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 HL Section C Q4(a)(i) - Core",
+  "questionText": "Discuss the nutritional significance of milk in the diet of young children.",
+  "stem": "Ireland has a population of less than five million people, yet it produces enough dairy to feed multiples of that. (Dairy Sector Profile, Bord Bia)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "5 points @ 4 marks (graded 4:3:2:1:0)",
+   "answer": 5,
+   "ofParts": 6,
+   "perPart": 4
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Nutritional significance of milk for young children",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "Five points at 4 marks, graded 4:3:2:1:0 - the long ladder means a partial answer still scores, so write something on all five. Keep tying it back to young children: HBV protein for growth, full fat for energy and vitamins A and D, calcium and phosphorus for bones and teeth. Milk’s weakness - almost no iron - is worth naming too.",
+    "group": {
+     "claimMax": 5,
+     "perOption": 4,
+     "options": [
+      "Protein - 3.5%, HBV, lactalbumin, lactoglobulin, caseinogen, essential for growth and repair, important in the diet of children",
+      "Fat - 0.2% in skimmed, 4% in whole milk, saturated fat, easily digested – convalescent; full fat milk for children; can be fortified with omega 3",
+      "Carbohydrate - 4-5% lactose for energy; should be combined with foods rich in starch, fibre",
+      "Vitamins - 0.3% A, B group and D in whole milk, B group in skimmed; Retinol - vitamin A produces rhodopsin, maintains healthy lining membranes; keeps skin and hair healthy and helps to regulate growth; Riboflavin - B2 releases energy from protein, fats and carbohydrates, promotes healthy mucous membranes in eyes, nose and mouth; promotes healthy skin, hair and nails; Cobalamin - B12 is required for the production of red blood cells; is involved in fatty acid and folate metabolism; promotes growth; maintains a healthy nervous system; milk can be fortified with vitamins; should be combined with foods rich in vitamin C",
+      "Minerals - 0.7% - calcium and phosphorus – both necessary for strong bones and teeth; traces of magnesium, potassium and sodium; can be fortified with minerals; should be combined with foods rich in iron in order to balance the diet",
+      "Water - 87%, necessary for hydration"
+     ]
+    }
+   }
+  ],
+  "notes": "One option per nutrient, each carrying that nutrient’s own figure and function, because the scheme groups its marking points under six nutrient headings and prices five points."
+ },
+ {
+  "id": "he-2021-hl-sc-q4aii",
+  "topicId": "home-economics-0-9",
+  "conceptId": "processing-milk-to-extend-shelf-life",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 HL Section C Q4(a)(ii) - Core",
+  "questionText": "Describe one process used by manufacturers to extend the shelf life of milk. Refer to: name of process; how the process is carried out; packaging and labelling.",
+  "stem": "Ireland has a population of less than five million people, yet it produces enough dairy to feed multiples of that. (Dairy Sector Profile, Bord Bia)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "name 2 marks (graded 2:0); process 4 points @ 2 marks; packaging and labelling 8 points @ 1 mark (4 packaging, 4 labelling)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Name of the process",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Name one, 2 marks, graded 2:0. Six are offered. Pasteurisation is the one most students can give temperatures for, and the temperatures are where the next row’s marks are.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "Pasteurisation",
+      "Sterilisation",
+      "UHT",
+      "Evaporated",
+      "Dried",
+      "Condensed"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "How the process is carried out",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Four points at 2 marks - the biggest row, and it wants numbers. Each process is a sequence of temperature, time and what happens after: pasteurisation is 72-75°C for 15-25 seconds then cooled rapidly to 10°C. Learn one process precisely rather than six vaguely.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 2,
+     "options": [
+      "Pasteurisation - Milk is homogenised; heated to 72⁰C - 75⁰C; for 15 - 25 seconds; cooled rapidly to 10 0C.",
+      "Sterilisation - Milk is homogenised; sealed into glass bottles; and heated to 1040C -1130C; for 30 minutes; then cooled.",
+      "UHT - Milk is heated to 1320C; for 1 to 3 seconds; cooled quickly; packed in sterile containers.",
+      "Evaporated - Milk is homogenised; heated to 1150C; for 20 minutes; evaporated to half its volume; It is then sealed in sterile cans.",
+      "Dried - Milk is homogenised; pasteurised; then evaporated to 60% of its original volume; It is then spray or roller dried to form a powdered milk.",
+      "Condensed - Milk is homogenised; It is then heated to 720C to 80 0C; for 15 minutes; to evaporate it to one-third of its volume; 15% sugar is added; It is then sealed in sterile cans."
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "Packaging",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Four references at 1 mark each, graded 1:0 - single words. Glass bottles, metal cans, plastic cartons, waxed cardboard. Match the packaging to the process you named.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 1,
+     "options": [
+      "glass bottles",
+      "metal cans",
+      "plastic cartons",
+      "waxed cardboard",
+      "carbon neutral packaging",
+      "quantity"
+     ]
+    }
+   },
+   {
+    "id": "r-4",
+    "kind": "anyN",
+    "verbatim": "Labelling",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Four references at 1 mark each, graded 1:0. Type of milk, brand, quantity, nutritional information, date stamp, storage instructions. Eight marks across this row and the last for naming things off a carton.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 1,
+     "options": [
+      "type of milk",
+      "brand",
+      "quantity of milk",
+      "nutritional information",
+      "date-stamp",
+      "storage instructions"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: the question prices four strands at 2, 8, 4 and 4. The process row carries one option per process, because the four points must match whichever was named."
+ },
+ {
+  "id": "he-2021-hl-sc-q4aiii",
+  "topicId": "home-economics-0-11",
+  "conceptId": "dairy-industry-and-consumer-trends",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 HL Section C Q4(a)(iii) - Core",
+  "questionText": "Outline the measures (initiatives) taken by the dairy industry to meet current consumer trends.",
+  "stem": "Ireland has a population of less than five million people, yet it produces enough dairy to feed multiples of that. (Dairy Sector Profile, Bord Bia)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 initiatives @ 4 marks (graded 4:2:0)",
+   "answer": 3,
+   "ofParts": 6,
+   "perPart": 4
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Initiatives taken by the dairy industry",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Three initiatives at 4 marks, graded 4:2:0. Name the product and the trend it answers - low fat and fortified milk for health, grated and snack-pack cheese for convenience, probiotic and functional yoghurt for wellbeing, sustainable packaging for the environment.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Milk- variety – low fat, skimmed, semi-skimmed; fortified – vitamin D, calcium, iron, protein; variety of sizes; infant formula",
+      "Cheese – low fat; convenience e.g. grated, pizza mix cheese, cheese bars, snack packs; cubed cheese, sliced; flavoured cheese using herbs, fruit etc; family sized packs; resealable packaging",
+      "Yoghurt – flavoured; functional – lowering cholesterol; bio yoghurt – probiotics; various textures e.g. set, drinking, stirred; snack packs with fruit puree and biscuit crumb; frozen yoghurt; Greek yoghurt; unsweetened",
+      "Butter – sustainable packaging; low-fat variety; unsalted; flavoured; spreadable; Love Irish Food advertising campaign",
+      "Cream – single cream; double cream; sour cream; flavoured cream; whipped cream; various sizes",
+      "Others – crème fraiche; fromage frais"
+     ]
+    }
+   }
+  ],
+  "notes": "One option per dairy product, each carrying that product’s own initiatives, because the scheme groups its marking points under six product headings and prices three."
+ },
+ {
+  "id": "he-2021-hl-sc-q4bi",
+  "topicId": "home-economics-0-1",
+  "conceptId": "types-of-diabetes-and-dietary-requirements",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 HL Section C Q4(b)(i) - Core",
+  "questionText": "In relation to diabetes give an account of types, and dietary requirements that should be followed for individuals with diabetes.",
+  "stem": "“It is anticipated that the prevalence of diabetes in Ireland will increase to 278,000 by 2030” (Changing Lives 2016 – 2020, Diabetes Ireland)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "types 2 points @ 4 marks (graded 4:2:0) x 2 (reference to 2 types); dietary requirements 4 points @ 3 marks",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Types of diabetes",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Two types at 4 marks each, and the scheme expects reference to two. Type 1 is deficient insulin production needing daily insulin; type 2 is the body using insulin ineffectively, 90% of cases, linked to weight and inactivity. Gestational is the third if you want it.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Type 1 - (insulin dependent, juvenile or childhood onset), deficient insulin production; requires daily administration of insulin",
+      "Type 2 - (non-insulin dependent or adult onset) results from the body’s ineffective use of insulin; Type 2 comprises 90% of people with diabetes and is largely the result of excess body weight and physical inactivity; previously associated with adults only but now also occurring in children",
+      "Gestational - is hyperglycaemia; with onset or first recognition during pregnancy"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Dietary requirements",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Four requirements at 3 marks - 12 of the 20 marks. The theme is steady blood sugar: three regular meals, low GI, more fibre and starchy carbohydrate, less sugar and saturated fat. Say what each one does to blood sugar rather than just listing it.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "Eat 3 regular meals a day to stabilise blood sugar levels",
+      "reduce sugar intake, use artificial sweetener",
+      "eat a healthy diet of between 3 and 5 servings of fruit and vegetables a day",
+      "follow a low glycaemic index (GI) diet",
+      "reduce saturated fat intake",
+      "increase fibre foods and starch based carbohydrate foods"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: the question names two strands and prices types at 8 and dietary requirements at 12."
+ },
+ {
+  "id": "he-2021-hl-sc-q4bii",
+  "topicId": "home-economics-0-11",
+  "conceptId": "uses-of-sweeteners-in-food-production",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 HL Section C Q4(b)(ii) - Core",
+  "questionText": "Outline the uses of sweeteners in food production.",
+  "stem": "“It is anticipated that the prevalence of diabetes in Ireland will increase to 278,000 by 2030” (Changing Lives 2016 – 2020, Diabetes Ireland)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 uses @ 5 marks (graded 5:3:0)",
+   "answer": 2,
+   "ofParts": 9,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Uses of sweeteners in food production",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two uses at 5 marks, graded 5:3:0. \"To sweeten\" is the obvious one and the weakest - the marks are in the functional uses: preserving jam, acting as a humectant so cakes do not dry out, bulking, and replacing sugar in diabetic and low-calorie foods.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Used to sweeten food",
+      "to improve flavour and palatability",
+      "as a method of preservation in jam making",
+      "used in the manufacture of sweets",
+      "used in diabetic foods as an alternative to sugar",
+      "as a humectant to prevent foods such as cakes drying out",
+      "used as a bulking agent",
+      "used in soft drinks",
+      "used in slimming and low-calorie recipes"
+     ]
+    }
+   }
+  ],
+  "notes": "One flat list, taken in order to the cap."
+ },
+ {
+  "id": "he-2021-hl-sc-q4ci",
+  "topicId": "home-economics-1-2",
+  "conceptId": "methods-of-consumer-research",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 HL Section C Q4(c)(i) - Core",
+  "questionText": "Name and describe two methods of consumer research.",
+  "stem": "Market research involves the use of a variety of consumer research methods.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name 2 marks (graded 2:0) x 2; describe 2 points @ 2 marks (graded 2:1:0) x 2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Name of the research method",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Two methods at 2 marks each, graded 2:0. The scheme offers desk research and field research - name both and you have 4 marks before describing anything.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Desk research",
+      "Field research"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Description of the methods named",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Two points on each method at 2 marks - two thirds of the marks. The contrast is what to write: desk research gathers existing data from agencies and the internet, so it is fast, cheap and general; field research goes out and observes, interviews and surveys, so it is detailed and about actual behaviour.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Desk research/ Primary research: involves the collection of data from state agencies, internet etc; large quantities of information can be collected quickly; relatively inexpensive; information tends to be general and not very detailed (quantitative) e.g. phone/written surveys",
+      "Field research/ Secondary research: information collected using techniques such as observing, interviews, surveys etc.; primary source; information is detailed e.g. study consumer behaviour and attitudes (qualitative) e.g. vox pops, interviews, consumer panels; focus groups"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: naming is priced at 4 across the two methods and the descriptions at 8."
+ },
+ {
+  "id": "he-2021-hl-sc-q4cii",
+  "topicId": "home-economics-1-2",
+  "conceptId": "benefits-of-consumer-research",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2021 HL Section C Q4(c)(ii) - Core",
+  "questionText": "Outline the benefits of consumer research for both the consumer and the retailer.",
+  "stem": "Market research involves the use of a variety of consumer research methods.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 points @ 3 marks (graded 3:2:0) - 2 references to consumer, 2 references to retailer + 2 other points",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Two references to the consumer",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks, and the scheme requires them. The consumer gains because research finds out what they actually want - so products improve, and competition can bring prices down.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Requirements of consumer can be identified",
+      "helps to improve on the quality of a product",
+      "allows for competition in the market which may lead to more competitively priced goods"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Two references to the retailer",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two points at 3 marks, also required. The retailer gains targeting: who will buy it, how big that market is, where it is, and whether the product actually meets the need.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Identifies the type of person who will use the product",
+      "identifies extent to which product meets requirements",
+      "size of the target market",
+      "location of the target market"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "Two further points, from either",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two further points at 3 marks, from either side - \"2 references to consumer, 2 references to retailer + 2 other points\". The retailer list is longer, so it is the easier place to find them.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Requirements of consumer can be identified",
+      "helps to improve on the quality of a product",
+      "allows for competition in the market which may lead to more competitively priced goods",
+      "Identifies the type of person who will use the product",
+      "identifies extent to which product meets requirements",
+      "size of the target market",
+      "location of the target market"
+     ]
+    }
+   }
+  ],
+  "notes": "Fixed: the scheme requires two points on each side, then floats the remaining 6 marks across both. Modelled as three rows so the four compulsory points cannot be lost."
+ },
+ {
   "id": "he-2021-ol-sb-q1b",
   "topicId": "home-economics-0-1",
   "conceptId": "causes-of-obesity",
