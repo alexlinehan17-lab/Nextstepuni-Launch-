@@ -8,23 +8,28 @@ Last updated 21 August 2026. Everything below is committed and pushed to
 **Onboarding stages 3-7 are still unswept**, and there is a suspected product
 bug blocking the walk (below). Stages 1 and 2 are verified clean.
 
-### Suspected product bug — worth investigating on its own merits
+### The "stage counter desync" was MY automation, not a bug — corrected
 
-Clicking "Get Started" on onboarding stage 1 *sometimes* advances the stage
-counter to "STAGE 2 OF 7" while leaving stage 1's content on screen and the
-"Next" button disabled — a dead end. It mounted correctly on one attempt and
-failed on several others with identical steps, so it looks like a race, not a
-consistent state.
+An earlier version of this note reported a suspected product bug: clicking
+"Get Started" advanced the counter to "STAGE 2 OF 7" while stage 1's content
+stayed on screen. **That was wrong.** The same symptom then appeared in Your
+Possible Life ("02 / 05" with stage 01 content), a completely unrelated
+component, and `document.visibilityState` was `"hidden"` with
+`document.hasFocus() === false` throughout.
 
-It is not explained by the arithmetic: `currentStage = activeSteps.indexOf(step) + 1`
-with `activeSteps = [1, 2, 4, 5, 6, 7, 9]`, so "stage 2" implies `step === 2`,
-and the `{step === 2 && ...}` block at Onboarding.tsx:689 is unconditional.
-Stage counter and rendered content should not be able to disagree. Worth a
-proper look — if a real student hits it, onboarding is unfinishable.
+A hidden tab throttles `requestAnimationFrame`, so framer-motion never
+progresses and `AnimatePresence` never completes the swap: the old content
+stays mounted and the new content sits at `opacity: 0`. Nothing is wrong with
+the onboarding state machine. Do not go hunting for it.
 
-Note `useState<Step>(draft?.step ?? 1)` restores from a localStorage draft
-(`nextstepuni:onboarding-draft:v1:<uid>:fresh`), which is written on mount.
-Clear that key before testing or you resume mid-flow and chase ghosts.
+Two consequences for anyone resuming:
+
+- **Colour measurements need `__forceSettled`** (inject
+  `*{opacity:1 !important;transform:none !important}` around the scan).
+  Without it, animated content reads as `opacity: 0` and is skipped entirely —
+  which is why the first sweeps missed everything behind an animation.
+- **Multi-stage walks are unreliable while the tab is hidden.** Bring the tab
+  to the foreground before driving a flow that animates between steps.
 
 ### Do not complete the flow on the Demo Account
 

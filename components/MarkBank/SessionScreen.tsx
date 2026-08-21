@@ -343,7 +343,7 @@ const MarkRowView: React.FC<{
             <span style={{
               font: `700 10.5px/1.7 ${MONO}`, borderRadius: 6, padding: '0 6px', whiteSpace: 'nowrap',
               fontVariantNumeric: 'tabular-nums',
-              background: chosen ? SUCCESS_TINT : '#f2efea',
+              background: chosen ? SUCCESS_TINT : 'var(--mb-raised)',
               color: chosen ? SUCCESS_TEXT : MUTED,
             }}>
               {chosen} of {g.claimMax}
@@ -499,7 +499,7 @@ const MarkRowView: React.FC<{
           <span style={{
             font: `700 10.5px/1.7 ${MONO}`, borderRadius: 6, padding: '0 6px', whiteSpace: 'nowrap',
             fontVariantNumeric: 'tabular-nums',
-            background: claimed ? SUCCESS_TINT : '#f2efea',
+            background: claimed ? SUCCESS_TINT : 'var(--mb-raised)',
             color: claimed ? SUCCESS_TEXT : MUTED,
           }}>
             {claimed ? `${marks}m` : `${marks}m`}
@@ -1144,8 +1144,11 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               }}>
                 {subjectLabel} · {levelLabel} · {card.year} · {card.questionRef.replace(/^\d{4}\s+(HL|OL)\s+/, '')}
               </span>
+              {/* Inverted chip: ink as the fill. The text must flip WITH it --
+                  --mb-ink goes near-white in dark mode, so hard-coded white
+                  left this at 1.11:1. --mb-paper is the exact opposite token. */}
               <span style={{
-                font: `700 11.5px/1 ${MONO}`, background: INK, color: '#FFFFFF',
+                font: `700 11.5px/1 ${MONO}`, background: INK, color: 'var(--mb-paper)',
                 borderRadius: 6, padding: '5px 8px', fontVariantNumeric: 'tabular-nums', whiteSpace: 'nowrap',
               }}>
                 {card.totalMarks}m
@@ -1368,7 +1371,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                  verdict. An unclaimed point is neutral, so this band is too. */
               <div style={{
                 marginBottom: 10, padding: '8px 11px', borderRadius: 10,
-                background: left === 0 ? SUCCESS_TINT : '#f2efea',
+                background: left === 0 ? SUCCESS_TINT : 'var(--mb-raised)',
                 color: left === 0 ? SUCCESS_TEXT : INK_2,
                 font: `500 12px/1.5 ${SANS}`,
               }}>

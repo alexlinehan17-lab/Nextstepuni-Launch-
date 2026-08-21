@@ -914,6 +914,54 @@ html:not(.dark) [class*="text-[#A0978D]"] {
   --tw-ring-shadow: 0 0 0 calc(var(--tw-ring-offset-width, 0px) + 2px) var(--focus-ring) !important;
 }
 
+/*
+ * Catch-Up Lane's inline light-mode literals.
+ *
+ * Only reachable two levels into the tool (subject -> topic), which is why the
+ * earlier entry-screen sweeps never saw them: the 90-second explainer body was
+ * #2a2622 on the darkened card at 1.09:1 -- effectively invisible -- and the
+ * teal eyebrow #0A5560 was 1.93:1.
+ *
+ * The #F6F6F4 chip is remapped in the same block on purpose: #2a2622 also sits
+ * on that chip, so lifting the ink without darkening the chip would just move
+ * the failure rather than fix it.
+ */
+.dark :is(.product-shell, .theme-compat) [style*="background-color: rgb(246, 246, 244)"],
+.dark :is(.product-shell, .theme-compat) [style*="background: rgb(246, 246, 244)"] {
+  background-color: var(--surface-paper) !important;
+}
+
+.dark :is(.product-shell, .theme-compat) :is([style^="color: rgb(42, 38, 34)"], [style*="; color: rgb(42, 38, 34)"]) {
+  color: var(--ink-primary) !important;
+}
+
+.dark :is(.product-shell, .theme-compat) :is([style^="color: rgb(10, 85, 96)"], [style*="; color: rgb(10, 85, 96)"]) {
+  color: #3FBECB !important;
+}
+
+/* The planner's completed-block green. #4F7256 clears light (5.42 on white);
+   on the dark surfaces it lands on it needs the lighter tone (5.21-7.33). */
+.dark :is(.product-shell, .theme-compat) :is([style^="color: rgb(79, 114, 86)"], [style*="; color: rgb(79, 114, 86)"]) {
+  color: #8FB894 !important;
+}
+
+/*
+ * Command Word Reflex's indigo pair.
+ *
+ * INDIGO_DARK_TEXT (#3730A3) is correct on the light INDIGO_TINT (8.77:1) but
+ * the same tone is also used directly on the card, where it measured 1.64:1 in
+ * dark mode. Fill and ink are remapped together: the tint darkens, the ink
+ * lightens, and the pair stays readable in both places (7.42 on the tint,
+ * 8.17 on the card).
+ */
+.dark :is(.product-shell, .theme-compat) :is([style*="background-color: rgb(238, 240, 255)"], [style*="background: rgb(238, 240, 255)"]) {
+  background-color: #232544 !important;
+}
+
+.dark :is(.product-shell, .theme-compat) :is([style^="color: rgb(55, 48, 163)"], [style*="; color: rgb(55, 48, 163)"]) {
+  color: #A5B4FC !important;
+}
+
 /* Disabled content must still be readable; opacity compounds badly on dark. */
 .dark :is(.product-shell, .theme-compat) :disabled,
 .dark :is(.product-shell, .theme-compat) [aria-disabled="true"] {

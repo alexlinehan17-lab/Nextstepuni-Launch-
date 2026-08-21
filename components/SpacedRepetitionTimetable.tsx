@@ -209,10 +209,10 @@ const StudyBlockCard: React.FC<{
     >
       <div className="flex items-center justify-between px-3 py-2.5">
         <div className="flex items-center gap-2 min-w-0 flex-1">
-          <CheckCircle size={14} style={{ color: '#6B8F71' }} className="flex-shrink-0" />
-          <span className="text-sm font-medium line-through" style={{ color: '#6B8F71' }}>{block.subjectName}</span>
+          <CheckCircle size={14} style={{ color: '#4F7256' }} className="flex-shrink-0" />
+          <span className="text-sm font-medium line-through" style={{ color: '#4F7256' }}>{block.subjectName}</span>
         </div>
-        <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full" style={{ backgroundColor: 'rgba(107,143,113,0.12)', color: '#6B8F71' }}>{typeConfig.label}</span>
+        <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full" style={{ backgroundColor: 'rgba(107,143,113,0.12)', color: '#4F7256' }}>{typeConfig.label}</span>
       </div>
     </div>
   ) : (
@@ -841,7 +841,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
               <p className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#A8A29E] dark:text-zinc-500">Today</p>
               {todayAllDone ? (
                 <div>
-                  <p className="text-sm font-bold" style={{ color: '#6B8F71' }}>All done for today!</p>
+                  <p className="text-sm font-bold" style={{ color: '#4F7256' }}>All done for today!</p>
                   <p className="text-xs mt-0.5 text-[#A8A29E] dark:text-zinc-500">Great work. Rest up and come back tomorrow.</p>
                 </div>
               ) : nextUpBlock ? (
@@ -991,10 +991,10 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                             }}
                           >
                             <div className="px-2 py-1.5">
-                              <span className={`text-[11px] font-bold truncate block ${isCompleted ? 'line-through' : ''}`} style={{ color: isCompleted ? '#6B8F71' : subjectInk(getSubjectHexColor(block.subjectName)) }}>
+                              <span className={`text-[11px] font-bold truncate block ${isCompleted ? 'line-through' : ''}`} style={{ color: isCompleted ? '#4F7256' : subjectInk(getSubjectHexColor(block.subjectName)) }}>
                                 {block.subjectName}
                               </span>
-                              <span className="text-[9px] block" style={{ color: isCompleted ? '#6B8F71' : 'rgba(255,255,255,0.7)' }}>
+                              <span className="text-[9px] block" style={{ color: isCompleted ? '#4F7256' : 'rgba(255,255,255,0.7)' }}>
                                 {SESSION_TYPE_CONFIG[block.sessionType].label}
                               </span>
                             </div>
@@ -1198,7 +1198,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                   <div className="space-y-3">
                     {/* Projected total */}
                     <div className="p-4 rounded-xl" style={{ backgroundColor: 'rgba(255,255,255,0.6)', border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
-                      <p className="text-[10px] font-bold uppercase tracking-widest mb-2" style={{ color: '#6B8F71' }}>Projected CAO Points (Best 6)</p>
+                      <p className="text-[10px] font-bold uppercase tracking-widest mb-2" style={{ color: '#4F7256' }}>Projected CAO Points (Best 6)</p>
                       <div className="flex items-baseline gap-2 mb-3">
                         <p className="text-4xl font-bold font-mono" style={{ color: COLORS.accent }}>{projectedTotal}</p>
                         <p className="text-sm font-semibold text-[#A8A29E] dark:text-zinc-500">/ 625</p>
