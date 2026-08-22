@@ -6224,6 +6224,20 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2023-ol-q11-vii", topicId: "phys-3-3", conceptId: "why-a-filament-graph-curves",
+    section: "A", questionRef: "2023 OL Q11(vii)",
+    stem: "Electric current is the movement of charged particles through a conductor. light bulb + – battery 60 50 40 current (mA) 30 20 10 0 0 1 2 3 4 5 6 voltage (V) (ix) The charged particles that carry current through a metallic conductor are electrons. Name the charged particles that carry current through an ionic solution such as copper sulfate solution? (17) Leaving Certificate, 2023 Physics – Ordinary Level 10",
+    questionText: "Explain the shape of the graph.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "the resistance is greater at high current", marks: 6, accepts: ["due to the heating effect","as voltage increases, the current increases"] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2024, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
@@ -6248,6 +6262,34 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "0 m s–2", marks: 2 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2024-ol-q13a", topicId: "phys-1-4", conceptId: "height-of-the-iss",
+    section: "B", questionRef: "2024 OL Q13(a)",
+    stem: "Read the following passage and answer the questions below. Every year astronauts go to the International Space Station (ISS). They have to live and work in microgravity for months. The ISS orbits at an altitude of 322 km. It completes one revolution of the Earth every 90 minutes. At this altitude, acceleration due to gravity is about 90% of what it is on the Earth’s surface. A big problem with this environment is loss of bone mass. Bones grow and change to adapt to your body's needs. In microgravity, the breaking down of bones happens faster than the rebuilding. This is because bones adapt to this new environment where they don't have to carry the body’s weight due to the reduced gravity. Astronauts may be more likely to fracture their bones later in life. Because of this issue, astronauts spend a lot of their time in space doing exercise. The leg and arm bones of 17 astronauts before and after spaceflight were examined. A computed tomography (CT) scanner was used which provided high resolution 3D images. The bones were examined for thickness, strength and density. The goal was to understand the role of exercising before and during spaceflight. Adapted from: www.ScienceJournalForKids.org",
+    questionText: "How high above the Earth is the ISS? (7)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "322 km", marks: 7 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2024-ol-q14a-iii", topicId: "phys-1-1", conceptId: "velocity-after-constant-acceleration",
+    section: "B", questionRef: "2024 OL Q14(a)(iii)",
+    stem: "520 N 520 N 1900 kg 680 N 520 N 1900 kg",
+    questionText: "What is the velocity of the car 12 s later?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "20 m s–1", marks: 2 },
     ],
   } as SecCard,
   {

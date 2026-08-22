@@ -50,4 +50,17 @@ A.card(14, 'b', 'iii', topic='phys-2-5', concept='doppler-speed-of-a-source',
 # the list. That sentence would be written rather than lifted, so the part is
 # left for a pass that can carry the stem.
 
+A.card(2, None, 'v', topic='phys-u2', concept='focal-length-from-all-the-data',
+       source='pdf', use=[1, 2], marks=[3, 3], first_sentence=True,
+       notes='The scheme takes a mark off if the values are not averaged.')
+
+A.card(2, None, 'vii', topic='phys-u2', concept='focal-length-from-a-graph',
+       source='pdf', use=[1, 2], marks=[3, 3], checked=MARK)
+
+A.card(3, None, 'iv', topic='phys-u2', concept='linear-density-from-a-graph',
+       source='pdf', use=[1, 2, 3, 4], marks=[3, 2, 3, 2], first_sentence=True)
+
+A.card(4, None, 'iv', topic='phys-u2', concept='reading-a-temperature-off-a-resistance-graph',
+       source='pdf', use=[1], marks=[3], first_sentence=True)
+
 A.emit()

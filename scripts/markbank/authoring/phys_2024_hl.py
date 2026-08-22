@@ -11,4 +11,20 @@ A = Author('physics', 2024, 'hl')
 A.card(11, None, 'vii', topic='phys-3-2', concept='charge-on-a-capacitor-mid-discharge',
        source='pdf', use=[0, 1, 2], marks=[2, 3, 3])
 
+A.card(5, None, 'iii', topic='phys-u2', concept='resistance-from-the-slope-of-a-graph',
+       source='pdf', first_sentence=True,
+       from_runs=[((5, None, 'iii'), 0, slice(0, 2)),
+                  ((5, None, 'iii'), 0, slice(3, 7))],
+       marks=[3, 2])
+
+A.card(9, 'a', 'iv', topic='phys-3-3', concept='intrinsic-and-extrinsic-conduction',
+       source='pdf',
+       from_runs=[((8, 'a', 'iv'), 1, slice(0, 12)),
+                  ((8, 'a', 'iv'), 1, slice(13, 25))],
+       marks=[2, 2],
+       checked='The paper sets this part in a block with no text of its own, so the '
+               'question is the one the scheme reprints above its answer.',
+       notes='The scheme numbers this answer under its own Question 8 while the paper '
+             'prints Question 9.')
+
 A.emit()

@@ -39,4 +39,9 @@ A.card(13, 'b', 'viii', topic='phys-4-6', concept='why-fusion-is-preferred-to-fi
                'follows it in the same block. The question asked is the one the scheme '
                'reprints above its answer.')
 
+A.card(11, None, 'vii', topic='phys-3-3', concept='why-a-filament-graph-curves',
+       source='pdf', use=[[1, 2, 3]], marks=[6],
+       notes='The scheme prints three ways of saying it and pays six for any of them, '
+             'with three for a partial answer.')
+
 A.emit()

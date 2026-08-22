@@ -19,4 +19,12 @@ A.card(11, None, 'i', topic='phys-3-3', concept='example-of-an-electrical-conduc
 A.card(14, 'a', 'ii', topic='phys-1-1', concept='acceleration-at-constant-velocity',
        source='pdf', from_run=((14, 'a', 'ii'), 0, slice(7, 10)), marks=[2])
 
+A.card(13, 'a', topic='phys-1-4', concept='height-of-the-iss',
+       source='pdf', from_run=((13, 'a', None), 0, slice(8, 10)), marks=[7],
+       checked='The paper prints the part mark "(7)" after the question, so the text ends '
+               'on a bracketed number rather than punctuation.')
+
+A.card(14, 'a', 'iii', topic='phys-1-1', concept='velocity-after-constant-acceleration',
+       source='pdf', from_run=((14, 'a', 'iii'), 0, slice(10, 13)), marks=[2])
+
 A.emit()
