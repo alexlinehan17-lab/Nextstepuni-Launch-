@@ -48,11 +48,19 @@ PART = re.compile(r'^\(([A-E])\)\s*(?:\((i{1,3}|iv|vi{0,3})\)\s*)?(.*)$')
 # part E of 2021 Ordinary Level Question 9, and the tariff test alone read it as
 # a second part A, which then overwrote the real one.
 PART_BARE = re.compile(r'^([A-E])\s+(?:\((i{1,3}|iv|vi{0,3})\)\s*)?(.*)$')
+# Ordinary Level prints its Section 1 support notes AFTER the Section 2 table,
+# with no heading between them — the numbered questions simply begin. Read as a
+# continuation of Section 2 they land under whatever part was open last, which
+# is how 2023 Ordinary Level ended up with six different parts all called
+# Q9(E)(i). They are worth having in their own right: unlike the Section 1
+# tariff table at the front, these notes print the question AND its answer.
+NOTES_Q = re.compile(r'^(\d{1,2})\.\s+(?:\((i{1,3}|iv|vi{0,3})\)\s*)?([A-Z].*)$')
 ROMAN = re.compile(r'^\((i{1,3}|iv|vi{0,3})\)\s*(.*)$')
 # The tariff column bleeds into the text column when the table is flattened.
 # Anything that is only marks, or only a bracketed split, belongs to the tariff.
 TARIFF = re.compile(r'^[\d@x×\s,+()⟨⟩.]*m?(?:arks?)?[\d@x×\s,+()⟨⟩.]*$', re.I)
 MARKS = re.compile(r'⟨(\d{1,3})\s*m?(?:arks?)?⟩', re.I)
+ANGLE = re.compile(r'⟨([^⟩]*)⟩')
 NOISE = re.compile(
     r'^(LEAVING CERTIFICATE|MARKING SCHEME|Available Marks|Section \d Available|'
     r'This is a compulsory|Answer \w+ questions?|All questions carry|Part \d|'
@@ -97,6 +105,7 @@ def parts(year, level):
         lines = fh.read().split('\n')
 
     out, section, question, part, roman = [], None, None, None, None
+    notes_q = 0
     for raw in lines:
         line = raw.strip()
         # The repair passes append their own blocks to the end of the scheme
@@ -124,12 +133,26 @@ def parts(year, level):
             if section == 2:
                 question = 0
             continue
-        if section not in (2, 3):
+        if section not in (1, 2, 3):
+            continue
+        if section == 1 and notes_q == 0:
             continue
         m = QHEAD.match(line)
         if m:
             question, part, roman = int(m.group(1)), None, None
             continue
+        # A numbered head that carries its own tariff, one past the last one
+        # seen, is the next Section 1 note rather than more of Section 2.
+        m = NOTES_Q.match(line) if '⟨' in line else None
+        if m and int(m.group(1)) == notes_q + 1:
+            section, notes_q = 1, int(m.group(1))
+            question, part, roman = notes_q, None, m.group(2)
+            out.append({'section': 1, 'question': question, 'part': None,
+                        'roman': roman, 'text': _clean(m.group(3)),
+                        'marks': MARKS.findall(raw), 'answers': [],
+                        'clean': bool(MARKS.findall(raw))})
+            continue
+
         m = PART.match(line)
         if not m and '⟨' in line:
             bare = PART_BARE.match(line)
@@ -165,14 +188,31 @@ def parts(year, level):
             # follows is answer, not more question.
             if out[-1]['marks']:
                 out[-1]['answers'].append(extra)
+                # The split for each marking point is printed in the tariff
+                # column beside it — "⟨8m⟩" then "⟨(4 + 4)⟩" — and a card's marks
+                # have to be those, not a share of the total worked out here.
+                out[-1].setdefault('splits', []).extend(
+                    t for t in ANGLE.findall(raw) if any(ch.isdigit() for ch in t))
             else:
                 out[-1]['text'] = (out[-1]['text'] + ' ' + extra).strip()
                 out[-1]['marks'] += MARKS.findall(raw)
-    return [p for p in out if len(p['text']) > 12]
+    # A part can be read twice where the scheme repeats its table. Keep the
+    # fuller reading of each — the one that captured the answer lines and their
+    # splits — rather than whichever came last.
+    best = {}
+    for p in out:
+        if len(p['text']) <= 12:
+            continue
+        key = (p['section'], p['question'], p['part'], p['roman'])
+        prev = best.get(key)
+        if prev is None or len(p['answers']) > len(prev['answers']):
+            best[key] = p
+    return list(best.values())
 
 
 def ref(p, year, level):
-    tail = f"({p['part'].upper()})" + (f"({p['roman']})" if p['roman'] else '')
+    tail = (f"({p['part'].upper()})" if p['part'] else '')
+    tail += f"({p['roman']})" if p['roman'] else ''
     q = f"Q{p['question']}" if p['question'] else 'ABQ'
     return f"{year} {level.upper()} Section {p['section']} {q}{tail}"
 
@@ -182,6 +222,8 @@ if __name__ == '__main__':
     ps = parts(y, l)
     for p in ps:
         print(f"{ref(p, y, l):<34} {','.join(p['marks']) or '-':>6}  {p['text'][:100]}")
+        if p.get('splits'):
+            print(f"{'':<34} {'':>6}  splits: {' '.join(p['splits'][:8])}")
         for a in p['answers'][:3]:
             print(f"{'':<34} {'':>6}  · {a[:100]}")
     print(f'\n{len(ps)} parts in {y} {l.upper()} Sections 2 and 3')

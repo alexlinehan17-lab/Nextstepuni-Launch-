@@ -28682,5 +28682,347 @@
     "marks": 5
    }
   ]
+ },
+ {
+  "id": "bus-2022-ol-s2-q9-b",
+  "topicId": "business-5-15",
+  "conceptId": "why-do-market-research",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "business",
+  "section": "2",
+  "questionRef": "2022 OL Section 2 Q9(B)",
+  "questionText": "Outline two benefits to a business of carrying out market research before launching a new product",
+  "schemeCitation": "Question and marking points quoted from the SEC marking scheme, Business 2022 Ordinary Level — © State Examinations Commission. Business prints its paper as an answerbook, so the scheme's own table is the published source for the question as well as for the answer.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8m (4 + 4), 7m (4 + 3)"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To find out more about competitors and produce a better product to stay ahead of its competitors",
+    "marks": 8
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "To find out customers’ needs and wants/identify trends and produce a product that satisfies that need",
+    "marks": 7
+   }
+  ]
+ },
+ {
+  "id": "bus-2022-ol-s2-q9-e",
+  "topicId": "business-5-16",
+  "conceptId": "choosing-advertising-media",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "business",
+  "section": "2",
+  "questionRef": "2022 OL Section 2 Q9(E)",
+  "questionText": "List two advertising media that a business could use and outline a reason for your choice in each case",
+  "schemeCitation": "Question and marking points quoted from the SEC marking scheme, Business 2022 Ordinary Level — © State Examinations Commission. Business prints its paper as an answerbook, so the scheme's own table is the published source for the question as well as for the answer.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8m (4 + 4), 7m (4 + 3)"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Internet/social media: this has a global audience. The business can reach its target market by using websites or applications such as Instagram or Messenger that it knows its target market uses. The cost can be lower than other media",
+    "marks": 8
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Newspapers/magazines: good for providing detailed information which can be re-read",
+    "marks": 7
+   }
+  ]
+ },
+ {
+  "id": "bus-2023-ol-s2-q9-a",
+  "topicId": "business-0-12",
+  "conceptId": "where-business-ideas-come-from",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "business",
+  "section": "2",
+  "questionRef": "2023 OL Section 2 Q9(A)",
+  "questionText": "Paulette and Louise turned their interests into a business opportunity List two other sources of business ideas for entrepreneurs",
+  "schemeCitation": "Question and marking points quoted from the SEC marking scheme, Business 2023 Ordinary Level — © State Examinations Commission. Business prints its paper as an answerbook, so the scheme's own table is the published source for the question as well as for the answer.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5m each"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Suggestions from family/friends",
+    "marks": 5
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Media/Internet",
+    "marks": 5
+   }
+  ]
+ },
+ {
+  "id": "bus-2023-ol-s2-q9-b",
+  "topicId": "business-5-15",
+  "conceptId": "desk-and-field-research",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "business",
+  "section": "2",
+  "questionRef": "2023 OL Section 2 Q9(B)",
+  "questionText": "Name and explain the two types of market research a business like I-SPY could have used before launching its products",
+  "schemeCitation": "Question and marking points quoted from the SEC marking scheme, Business 2023 Ordinary Level — © State Examinations Commission. Business prints its paper as an answerbook, so the scheme's own table is the published source for the question as well as for the answer.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8m (3 + 3 + 2), 7m (3 + 2 + 2)"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Desk Research (Secondary): Desk research involves using information that has already been gathered by someone else. It is secondary data and can be both internal and external. Desk research is relatively cheap, keeping business costs down",
+    "marks": 8
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Field research (Primary): Field research involves going into the marketplace to gather first-hand or new information. It involves making direct contact with customers or potential customers. Field research tends to be expensive and time consuming, but it provides specific information on the behaviour of the target market",
+    "marks": 7
+   }
+  ],
+  "notes": "The scheme lists examples of each kind under it — the internet and sales reports for desk research, surveys and questionnaires for field research. They are illustrations, not the marking points."
+ },
+ {
+  "id": "bus-2023-ol-s2-q9-e",
+  "topicId": "business-0-12",
+  "conceptId": "challenges-of-starting-a-business",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "business",
+  "section": "2",
+  "questionRef": "2023 OL Section 2 Q9(E)",
+  "questionText": "Outline two challenges when starting a new business",
+  "schemeCitation": "Question and marking points quoted from the SEC marking scheme, Business 2023 Ordinary Level — © State Examinations Commission. Business prints its paper as an answerbook, so the scheme's own table is the published source for the question as well as for the answer.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8m (4 + 4), 7m (4 + 3)"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Access Finance – It is difficult to raise finance for a new business It can be difficult to persuade banks and convince investors Entrepreneurs will need to decide on the correct source of finance. Long term, medium-term and short-term finance are required",
+    "marks": 8
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Choosing the ownership structure – A start-up must decide on what ownership structure to choose from, sole trader, company",
+    "marks": 7
+   }
+  ]
+ },
+ {
+  "id": "bus-2024-ol-s2-q9-b",
+  "topicId": "business-5-15",
+  "conceptId": "why-do-market-research",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "business",
+  "section": "2",
+  "questionRef": "2024 OL Section 2 Q9(B)",
+  "questionText": "Outline two reasons why a business would conduct market research before launching a new product",
+  "schemeCitation": "Question and marking points quoted from the SEC marking scheme, Business 2024 Ordinary Level — © State Examinations Commission. Business prints its paper as an answerbook, so the scheme's own table is the published source for the question as well as for the answer.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "7 + 3, then 4 + 1"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To find out more about competitors and produce a better product to stay ahead of its competitors",
+    "marks": 10
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "To find out customers’ needs and want, to identify trends and produce a product that satisfies that need",
+    "marks": 5
+   }
+  ]
+ },
+ {
+  "id": "bus-2024-ol-s2-q9-c",
+  "topicId": "business-5-16",
+  "conceptId": "what-packaging-is-for",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "business",
+  "section": "2",
+  "questionRef": "2024 OL Section 2 Q9(C)",
+  "questionText": "Explain two functions of product packaging for a business like Keogh’s",
+  "schemeCitation": "Question and marking points quoted from the SEC marking scheme, Business 2024 Ordinary Level — © State Examinations Commission. Business prints its paper as an answerbook, so the scheme's own table is the published source for the question as well as for the answer.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "7 + 3, then 4 + 1"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Attract attention: packaging can help a product be instantly recognisable. Innovative packaging can get the attention of the customer",
+    "marks": 10
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Protection: keep the product safe. Packaging should protect the product and preserve its quality",
+    "marks": 5
+   }
+  ]
+ },
+ {
+  "id": "bus-2024-ol-s2-q9-d",
+  "topicId": "business-4-18",
+  "conceptId": "why-a-business-expands",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "business",
+  "section": "2",
+  "questionRef": "2024 OL Section 2 Q9(D)",
+  "questionText": "Outline two reasons why a business may choose to expand",
+  "schemeCitation": "Question and marking points quoted from the SEC marking scheme, Business 2024 Ordinary Level — © State Examinations Commission. Business prints its paper as an answerbook, so the scheme's own table is the published source for the question as well as for the answer.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "7 + 3, then 4 + 1"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Economies of scale: A business may expand in order to reduce costs. The more products the business produces, the lower the cost of making each one",
+    "marks": 10
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Diversification: To defend itself from possible market saturation or competition, a business may diversify. This involves entering an entirely different market. The business may purchase",
+    "marks": 5
+   }
+  ]
+ },
+ {
+  "id": "bus-2025-ol-s2-q9-a",
+  "topicId": "business-4-18",
+  "conceptId": "why-a-business-expands",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "business",
+  "section": "2",
+  "questionRef": "2025 OL Section 2 Q9(A)",
+  "questionText": "Outline two reasons for a business like IKEA to expand its services",
+  "schemeCitation": "Question and marking points quoted from the SEC marking scheme, Business 2025 Ordinary Level — © State Examinations Commission. Business prints its paper as an answerbook, so the scheme's own table is the published source for the question as well as for the answer.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "7 + 3, then 4 + 1"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Increase sales and profitability: Expansion can increase profitability and financial strength in the business",
+    "marks": 10
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Economies of scale: A business may expand to reduce costs. By IKEA becoming more accessible to its customers, this will lead to increased sales. The more products the business sells, the lower the cost for IKEA",
+    "marks": 5
+   }
+  ]
+ },
+ {
+  "id": "bus-2025-ol-s2-q9-b",
+  "topicId": "business-3-16",
+  "conceptId": "what-a-swot-analysis-gives-you",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "business",
+  "section": "2",
+  "questionRef": "2025 OL Section 2 Q9(B)",
+  "questionText": "Outline two benefits to IKEA of completing a SWOT/SCOT analysis before its ‘Click and Collect’ partnership up with Tesco",
+  "schemeCitation": "Question and marking points quoted from the SEC marking scheme, Business 2025 Ordinary Level — © State Examinations Commission. Business prints its paper as an answerbook, so the scheme's own table is the published source for the question as well as for the answer.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "7 + 3, then 4 + 1"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "It helps a business to analyse its current situation internally (strengths weaknesses/challenges) and externally (opportunities, threats)",
+    "marks": 10
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A SWOT analysis allows IKEA to develop short, medium and long-term goals for the business",
+    "marks": 5
+   }
+  ]
+ },
+ {
+  "id": "bus-2025-ol-s2-q9-c",
+  "topicId": "business-0-13",
+  "conceptId": "what-enterprise-ireland-does",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "business",
+  "section": "2",
+  "questionRef": "2025 OL Section 2 Q9(C)",
+  "questionText": "Explain two services that Enterprise Ireland provides to businesses",
+  "schemeCitation": "Question and marking points quoted from the SEC marking scheme, Business 2025 Ordinary Level — © State Examinations Commission. Business prints its paper as an answerbook, so the scheme's own table is the published source for the question as well as for the answer.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "7 + 3, then 4 + 1"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Funding Support: Grants and funding are available to businesses for startup costs, expansion, and research and development",
+    "marks": 10
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Market Information: Access to up-to-date data on various markets including resources from the market research centre",
+    "marks": 5
+   }
+  ]
  }
 ]
