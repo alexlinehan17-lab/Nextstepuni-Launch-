@@ -24,7 +24,7 @@ any card named its question.
 | Chemistry | 630 | 535 | 95 | 85% |
 | Home Economics | 179 | 170 | 9 | 95% |
 | Physics | 999 | 735 | 264 | 74% |
-| Business | — | — | 71 | `bus_todo.py` |
+| Business | — | — | 83 | `bus_todo.py` |
 | Economics | — | — | 0 | `econ_todo.py` |
 
 Bank total: 5,230 cards.
@@ -146,9 +146,19 @@ A.card(2, 9, 'b', topic='business-5-15', concept='desk-and-field-research',
 - `shared_tariff=True` where one printed tariff covers a part and its siblings;
   it requires a `notation` saying what the figure covers.
 
-Only Ordinary Level works this way. The Higher Level tariff table prints the
-question with no answer under it — those live in separate support notes, which
-nothing reads yet. That is most of the 71 Business parts still open.
+Both levels work. The Higher Level tariff table prints the question with no
+answer under it — those live in support notes at the back — so `bus_parts` reads
+both and merges them, question from the table and answer from the notes. The
+notes are laid out differently in every year: 2023 heads them `1 (a) Explain the
+term indigenous firm`, 2021 heads them `3. (i)` and carries the question number
+on the end of the repeated column header, and 2025 begins them with no SECTION
+heading at all and never prints a SECTION 3 one. All three forms are handled.
+
+Of the 83 parts still open, roughly ten are worth carding. The rest are a
+breakeven chart to draw, a cashflow forecast to calculate, a tick-table matching
+EU policies to statements, the ABQ marking rubric about links and evaluation,
+and ABQ parts whose notes run A, B and C together in one block so no reader can
+tell which answer belongs to which part. Same ceiling as the science subjects.
 
 A marking point whose lines are not contiguous in the scheme cannot be carded:
 the build runs its own provenance gate on the verbatim and will drop it. 2025
