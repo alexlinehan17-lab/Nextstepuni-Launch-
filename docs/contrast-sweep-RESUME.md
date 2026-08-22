@@ -1,12 +1,44 @@
 # Contrast sweep — resume note
 
-Last updated 21 August 2026. Everything below is committed and pushed to
-`main` (last commit `494036af`); the working tree was clean.
+Last updated 22 August 2026. Everything below is committed and pushed to `main`.
 
 ## Where to pick up
 
-**Onboarding stages 3-7 are still unswept**, and there is a suspected product
-bug blocking the walk (below). Stages 1 and 2 are verified clean.
+**Onboarding is now swept and clean** — all ten internal steps, both themes.
+What is left is the Admin Dashboard, which needs staff credentials.
+
+### How onboarding was reached without driving the flow
+
+The walk was the blocker: the tab is hidden under automation, so framer-motion
+never settles and clicking through is unreliable — and completing the flow on
+the Demo Account writes its profile to Firestore, which must not happen.
+
+Neither is necessary. Onboarding restores itself from a localStorage draft:
+
+    nextstepuni:onboarding-draft:v1:<uid>:<mode>      uid "demo-student", mode "fresh"
+
+Seed that key with `{version:1, step:N, ...}` and remount the view (push
+`?view=home`, then `?view=onboarding`) and step N renders directly, with no
+clicking and no submit. Ten steps, two themes, in two calls. Remove the key
+afterwards. There are ten internal steps behind the seven the counter shows.
+
+### What that found, and what was fixed
+
+Four failures, all in dark:
+
+- `#8A8178` on the exam-date card, 4.26:1 on a 10px bold label ("Exam date",
+  "days", "to go"). The literal had a LIGHT remap and no dark one, so the card
+  under it was remapped to #202020 while the ink kept its authored grey — rule 1
+  below, in the one direction the rule did not already cover. Dark remap added.
+- "Projected Gain" at `rgba(var(--accent),0.7)`, which composites to 3.27:1.
+  Now the full accent, which is 5.35:1 there and matches the number it labels.
+
+### The scanner must skip disabled controls
+
+Light step 6 reported 21 failures at 1.7:1 — every grade button below your
+current grade, which onboarding disables because it cannot be a target. SC 1.4.3
+exempts an inactive user interface component. Without the skip, those 21 bury
+every real finding under the same noise on every future sweep.
 
 ### The "stage counter desync" was MY automation, not a bug — corrected
 
@@ -29,7 +61,9 @@ Two consequences for anyone resuming:
   Without it, animated content reads as `opacity: 0` and is skipped entirely —
   which is why the first sweeps missed everything behind an animation.
 - **Multi-stage walks are unreliable while the tab is hidden.** Bring the tab
-  to the foreground before driving a flow that animates between steps.
+  to the foreground before driving a flow that animates between steps — or
+  better, do not drive the flow at all: seed its saved draft and remount, as
+  onboarding was swept above.
 
 ### Do not complete the flow on the Demo Account
 
@@ -78,7 +112,9 @@ session transcript; the shape is:
   background layers outward.** An earlier version skipped them and read through
   to an opaque ancestor, which both hid real failures (a 12%-black badge over a
   blue chip) and invented false ones (an 80%-alpha dark toast over a light
-  card). Do not regress this.
+  card). Do not regress this. It must also **skip anything inside a `disabled`
+  or `aria-disabled` control** — SC 1.4.3 exempts an inactive component, and
+  onboarding alone has 21 of them.
 - `window.__goP({view, tool, mod}, waitMs)` — pushState + `popstate`, which
   `NavigationContext` listens to. Routes: `?view=module&mod=<id>`,
   `?view=innovation-zone&tool=<id>`, `?view=onboarding`.
@@ -124,9 +160,9 @@ measures nothing.
 | Focus rings, both themes | 6.78 dark / 4.99 light |
 | Light-mode tools | 4 left, all 4.37–4.49 (accepted) |
 | 16 tools drilled 3–4 levels deep (not just entry) | 0 |
-| Onboarding stages 1–2 | 0 |
-| Onboarding stages 3–7 | **unswept — resume here**, blocked by the bug above |
-| Admin Dashboard | fix applied, unverified |
+| Onboarding, all 10 internal steps, dark | 0 (was 4) |
+| Onboarding, all 10 internal steps, light | 0 |
+| Admin Dashboard | fix applied, **unverified — resume here**; needs staff credentials |
 
 The six Workshop/WIP tools (`diagram-vault`, `answer-architect`,
 `definition-drill`, `oral-trainer`, `examiners-chair`, `coursework-companion`)

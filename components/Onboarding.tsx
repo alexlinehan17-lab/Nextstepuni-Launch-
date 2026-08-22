@@ -1411,7 +1411,10 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                   </div>
                   {/* Gain hero number */}
                   <div className="pt-3 border-t border-zinc-200/50 dark:border-white/[0.06]">
-                    <p className="text-[10px] font-bold uppercase tracking-widest text-[rgba(var(--accent),0.7)] mb-1">Projected Gain</p>
+                    {/* Full accent, not 70% of it: the faded form composited to
+                        3.27:1 on the dark card, and this is a 10px bold label.
+                        It also now matches the number it sits over. */}
+                    <p className="text-[10px] font-bold uppercase tracking-widest text-[var(--accent-hex)] mb-1">Projected Gain</p>
                     <p className="text-4xl font-bold font-mono text-[var(--accent-hex)]">
                       <AnimatedNumber value={pointsTotals.gain} prefix={pointsTotals.gain > 0 ? '+' : ''} delay={0.6} />
                     </p>

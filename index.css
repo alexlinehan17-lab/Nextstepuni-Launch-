@@ -221,7 +221,14 @@
 .dark :is(.product-shell, .theme-compat) [style*="; color: rgb(158, 145, 134)"],
 .dark :is(.product-shell, .theme-compat) [class*="text-[#78716C]"],
 .dark :is(.product-shell, .theme-compat) [style^="color: #8e8378" i],
-.dark :is(.product-shell, .theme-compat) [style*="; color: #8e8378" i] {
+.dark :is(.product-shell, .theme-compat) [style*="; color: #8e8378" i],
+/* #8A8178 had a light remap and no dark one, so onboarding's "Exam date" and
+   "days to go" labels kept the authored grey while the card under them was
+   remapped to #202020 — 4.26:1 on a 10px bold label. Fill and ink together. */
+.dark :is(.product-shell, .theme-compat) [style^="color: rgb(138, 129, 120)"],
+.dark :is(.product-shell, .theme-compat) [style*="; color: rgb(138, 129, 120)"],
+.dark :is(.product-shell, .theme-compat) [class*="text-[#8a8178]"],
+.dark :is(.product-shell, .theme-compat) [class*="text-[#8A8178]"] {
   color: var(--ink-muted) !important;
 }
 
