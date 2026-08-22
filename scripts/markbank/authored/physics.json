@@ -26615,6 +26615,79 @@
   "notes": "The scheme keeps \"[upwards]\" on the answer — the direction is part of it."
  },
  {
+  "id": "phys-2022-hl-q11-i",
+  "topicId": "phys-2-1",
+  "conceptId": "heat-capacity-and-specific-heat-capacity",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2022 HL Q11(i)",
+  "questionText": "What is meant by (a) heat capacity, (b) specific heat capacity?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "energy to change the temperature of an object by 1 K // E/Δθ",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "energy to change the temperature of 1 kg of a material by 1 K",
+    "marks": 3
+   }
+  ],
+  "stem": "The Bronze Age began about 5000 years ago. Archaeologists use physics to help them understand the culture and technology of the Bronze Age. During the Bronze Age in Ireland, a fulacht fiadh was used to heat water, perhaps to cook food. It contained an open pit which was filled with water. Stones were heated in a fire and the hot stones were placed into the water. A particular fulacht fiadh contained 750 litres of water at an initial temperature of 4 °C. 50 stones were taken from the fire, at a temperature of 280 °C, and placed into the water. The stones had an average heat capacity of 8.5 kJ K–1 each. A 65 cm string of mass 0.21 g is stretched between two points of a lyre which are 34.1 cm apart. It is required to vibrate at a fundamental frequency of 440 Hz.",
+  "notes": "Each definition may be given in words or as the formula beside it, which is what the scheme's solidus separates."
+ },
+ {
+  "id": "phys-2022-hl-q14d-i",
+  "topicId": "phys-3-6",
+  "conceptId": "laws-of-electromagnetic-induction",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2022 HL Q14(d)(i)",
+  "questionText": "State the laws of electromagnetic induction.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "induced emf // E = dφ/dt",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "proportional to rate of change of flux // notation",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "direction of induced current/emf",
+    "marks": 3
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "is such as to oppose the change that caused it",
+    "marks": 3
+   }
+  ],
+  "stem": "This document will not be returned to the State Examinations Commission. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate Examination – Higher Level Physics Wednesday, 22 June Morning, 9:30 – 12:30 Leaving Certificate 2021 Physics – Higher Level 16"
+ },
+ {
   "id": "phys-2023-ol-q13b-v",
   "topicId": "phys-4-4",
   "conceptId": "daughter-nucleus-after-beta-decay",
@@ -26765,6 +26838,42 @@
   ],
   "stem": "Electric current is the movement of charged particles through a conductor. light bulb + – battery 60 50 40 current (mA) 30 20 10 0 0 1 2 3 4 5 6 voltage (V) (ix) The charged particles that carry current through a metallic conductor are electrons. Name the charged particles that carry current through an ionic solution such as copper sulfate solution? (17) Leaving Certificate, 2023 Physics – Ordinary Level 10",
   "notes": "The scheme prints three ways of saying it and pays six for any of them, with three for a partial answer."
+ },
+ {
+  "id": "phys-2023-ol-q8-iv",
+  "topicId": "phys-2-3",
+  "conceptId": "angle-of-refraction-from-snells-law",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2023 OL Q8(iv)",
+  "questionText": "The refractive index of the glass block is 1.5.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "n = sin i/sin r",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "substitution",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "r = 22.5°",
+    "marks": 3
+   }
+  ],
+  "stem": "The diagram below shows how a ray of light travels through a rectangular glass block."
  },
  {
   "id": "phys-2024-hl-q11-vii",
@@ -26959,6 +27068,54 @@
   "stem": "520 N 520 N 1900 kg 680 N 520 N 1900 kg"
  },
  {
+  "id": "phys-2024-ol-q3-ii",
+  "topicId": "phys-u2",
+  "conceptId": "supplying-heat-in-the-calorimeter-experiment",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2024 OL Q3(ii)",
+  "questionText": "How did the student supply the heat energy needed to increase the temperature of the water and the calorimeter? (16)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "any heat source",
+    "marks": 6
+   }
+  ],
+  "stem": "A student carried out an experiment to measure cwater, the specific heat capacity of water. She added heat energy ∆E to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter, mcalorimeter = 0.106 kg Mass of calorimeter and cold water = 0.262 kg Initial temperature of cold water and calorimeter = 18 °C Final temperature of water and calorimeter = 23 °C Heat energy added, ∆E = 3467 J Heat energy added = Heat gained by water and calorimeter ∆E = mwatercwaterΔϴwater + mcalorimeterccopperΔϴcalorimeter 3467 = A × cwater × B + 0.106 × 390 × B (12) Leaving Certificate, 2024 Physics – Ordinary Level 3"
+ },
+ {
+  "id": "phys-2024-ol-q5-ii",
+  "topicId": "phys-u2",
+  "conceptId": "varying-temperature-in-the-resistance-experiment",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2024 OL Q5(ii)",
+  "questionText": "How did the student vary the temperature of the metallic conductor?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "any appropriate heat source",
+    "marks": 6
+   }
+  ],
+  "stem": "A student carried out an experiment to investigate how the resistance R of a metallic conductor changes with temperature T. T (°C) 10 20 30 40 50 60 R (Ω) 5.2 5.9 6.5 7.2 7.9 8.5 Each question carries 56 marks."
+ },
+ {
   "id": "phys-2025-hl-q14c-ii",
   "topicId": "phys-4-4",
   "conceptId": "beta-decay-equation-iodine-131",
@@ -26984,6 +27141,48 @@
   "notes": "The scheme pays the equation a mark per correct term and takes three off for each extra species written in."
  },
  {
+  "id": "phys-2025-hl-q3-iv",
+  "topicId": "phys-u2",
+  "conceptId": "speed-of-sound-from-a-graph",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2025 HL Q3(iv)",
+  "questionText": "Use the graph to calculate the speed of sound in air.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "slope formula",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "calculate slope",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "v = 4 × slope or c = fλ",
+    "marks": 3
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "v ≈ 343.7 m s–1",
+    "marks": 3
+   }
+  ],
+  "stem": "In an experiment to measure the speed of sound in air, a student used a cylindrical column of air which was closed at one end, and six different tuning forks. A tuning fork of frequency f was set vibrating and held over the column of air. The length of the column of air was adjusted until the first position of resonance was found and its length l was measured. The procedure was repeated for each tuning fork. The student plotted the following graph based on his recorded data. 0.50 0.40 0.30 l (m) 0.20 0.10 0.00 0.000 0.001 0.002 0.003 0.004 0.005 0.006 -0.10 1/f (Hz-1)"
+ },
+ {
   "id": "phys-2025-ol-q12b-vii",
   "topicId": "phys-4-6",
   "conceptId": "advantage-of-fusion-over-fission",
@@ -27006,5 +27205,29 @@
    }
   ],
   "stem": "Einstein’s equation E = mc2 is used to explain the energy conversion taking place in a nuclear reactor. The Sun’s energy is produced by nuclear fusion."
+ },
+ {
+  "id": "phys-2025-ol-q8-vii",
+  "topicId": "phys-2-3",
+  "conceptId": "why-sound-diffracts-and-light-does-not",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2025 OL Q8(vii)",
+  "questionText": "Explain why a sound wave diffracts after passing through a doorway but a light wave does not.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "reference to wavelength",
+    "marks": 4
+   }
+  ],
+  "stem": "Sound is produced when an object vibrates, causing the particles in the surrounding medium to have vibrational energy. As the particles vibrate, they cause nearby particles to vibrate thus transmitting the sound until it is detected by the ear of a nearby person."
  }
 ]

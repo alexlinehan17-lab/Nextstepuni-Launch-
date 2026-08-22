@@ -20,4 +20,8 @@ A.card(12, 'b', 'vii', topic='phys-4-6', concept='advantage-of-fusion-over-fissi
                'part, so the text ends on a number and a page footer. The question itself '
                'is complete.')
 
+A.card(8, None, 'vii', topic='phys-2-3', concept='why-sound-diffracts-and-light-does-not',
+       source='pdf', from_run=((8, None, 'vii'), 2, slice(0, 3)), marks=[4],
+       row_kind='criterion')
+
 A.emit()

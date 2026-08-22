@@ -18,4 +18,20 @@ A.card(1, None, 'vii', topic='phys-u2', concept='net-vertical-force-on-a-metre-s
        source='pdf', use=[0], marks=[3],
        notes='The scheme keeps "[upwards]" on the answer — the direction is part of it.')
 
+A.card(11, None, 'i', topic='phys-2-1', concept='heat-capacity-and-specific-heat-capacity',
+       source='pdf',
+       from_runs=[((11, None, 'i'), 0, slice(12, 25)),
+                  ((11, None, 'i'), 0, slice(27, 41))],
+       marks=[3, 3],
+       notes='Each definition may be given in words or as the formula beside it, which is '
+             'what the scheme\'s solidus separates.')
+
+A.card(14, 'd', 'i', topic='phys-3-6', concept='laws-of-electromagnetic-induction',
+       source='pdf', first_sentence=True,
+       from_runs=[((14, 'd', 'i'), 0, slice(0, 6)),
+                  ((14, 'd', 'i'), 0, slice(7, 16)),
+                  ((14, 'd', 'i'), 0, slice(17, 21)),
+                  ((14, 'd', 'i'), 0, slice(22, 32))],
+       marks=[3, 3, 3, 3])
+
 A.emit()

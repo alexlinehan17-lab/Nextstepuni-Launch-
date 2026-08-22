@@ -14,4 +14,7 @@ A.card(14, 'c', 'ii', topic='phys-4-4', concept='beta-decay-equation-iodine-131'
        notes='The scheme pays the equation a mark per correct term and takes three off '
              'for each extra species written in.')
 
+A.card(3, None, 'iv', topic='phys-u2', concept='speed-of-sound-from-a-graph',
+       source='pdf', use=[1, 2, 3, 4], marks=[3, 3, 3, 3])
+
 A.emit()

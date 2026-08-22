@@ -27,4 +27,16 @@ A.card(13, 'a', topic='phys-1-4', concept='height-of-the-iss',
 A.card(14, 'a', 'iii', topic='phys-1-1', concept='velocity-after-constant-acceleration',
        source='pdf', from_run=((14, 'a', 'iii'), 0, slice(10, 13)), marks=[2])
 
+A.card(3, None, 'ii', topic='phys-u2', concept='supplying-heat-in-the-calorimeter-experiment',
+       source='pdf', from_run=((3, None, 'ii'), 0, slice(18, 21)), marks=[6],
+       row_kind='criterion',
+       checked='The paper prints the part mark "(16)" after the question. The scheme '
+               'reprints the question as "supply the heat energy to increase", dropping '
+               'the paper\'s "needed", so the trim cannot be confirmed against it — the '
+               'paper\'s own wording is what the card carries.')
+
+A.card(5, None, 'ii', topic='phys-u2', concept='varying-temperature-in-the-resistance-experiment',
+       source='pdf', from_run=((5, None, 'ii'), 0, slice(11, 15)), marks=[6],
+       row_kind='criterion')
+
 A.emit()

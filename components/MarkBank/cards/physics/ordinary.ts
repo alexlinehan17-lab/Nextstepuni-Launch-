@@ -6238,6 +6238,22 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2023-ol-q8-iv", topicId: "phys-2-3", conceptId: "angle-of-refraction-from-snells-law",
+    section: "A", questionRef: "2023 OL Q8(iv)",
+    stem: "The diagram below shows how a ray of light travels through a rectangular glass block.",
+    questionText: "The refractive index of the glass block is 1.5.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "n = sin i/sin r", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "substitution", marks: 3 },
+    { id: "r-3", kind: "point", verbatim: "r = 22.5°", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2024, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
@@ -6294,6 +6310,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2024-ol-q3-ii", topicId: "phys-u2", conceptId: "supplying-heat-in-the-calorimeter-experiment",
+    section: "A", questionRef: "2024 OL Q3(ii)",
+    stem: "A student carried out an experiment to measure cwater, the specific heat capacity of water. She added heat energy ∆E to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter, mcalorimeter = 0.106 kg Mass of calorimeter and cold water = 0.262 kg Initial temperature of cold water and calorimeter = 18 °C Final temperature of water and calorimeter = 23 °C Heat energy added, ∆E = 3467 J Heat energy added = Heat gained by water and calorimeter ∆E = mwatercwaterΔϴwater + mcalorimeterccopperΔϴcalorimeter 3467 = A × cwater × B + 0.106 × 390 × B (12) Leaving Certificate, 2024 Physics – Ordinary Level 3",
+    questionText: "How did the student supply the heat energy needed to increase the temperature of the water and the calorimeter? (16)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "any heat source", marks: 6 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2024-ol-q5-ii", topicId: "phys-u2", conceptId: "varying-temperature-in-the-resistance-experiment",
+    section: "A", questionRef: "2024 OL Q5(ii)",
+    stem: "A student carried out an experiment to investigate how the resistance R of a metallic conductor changes with temperature T. T (°C) 10 20 30 40 50 60 R (Ω) 5.2 5.9 6.5 7.2 7.9 8.5 Each question carries 56 marks.",
+    questionText: "How did the student vary the temperature of the metallic conductor?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "any appropriate heat source", marks: 6 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2025, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
@@ -6304,6 +6348,20 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "criterion", verbatim: "any valid reference to fuel/products", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2025-ol-q8-vii", topicId: "phys-2-3", conceptId: "why-sound-diffracts-and-light-does-not",
+    section: "A", questionRef: "2025 OL Q8(vii)",
+    stem: "Sound is produced when an object vibrates, causing the particles in the surrounding medium to have vibrational energy. As the particles vibrate, they cause nearby particles to vibrate thus transmitting the sound until it is detected by the ear of a nearby person.",
+    questionText: "Explain why a sound wave diffracts after passing through a doorway but a light wave does not.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "reference to wavelength", marks: 4 },
     ],
   } as SecCard,
 ];

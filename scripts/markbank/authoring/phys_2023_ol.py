@@ -44,4 +44,11 @@ A.card(11, None, 'vii', topic='phys-3-3', concept='why-a-filament-graph-curves',
        notes='The scheme prints three ways of saying it and pays six for any of them, '
              'with three for a partial answer.')
 
+A.card(8, None, 'iv', topic='phys-2-3', concept='angle-of-refraction-from-snells-law',
+       source='pdf', first_sentence=True,
+       from_runs=[((8, None, 'iv'), 0, slice(12, 17)),
+                  ((8, None, 'iv'), 0, slice(18, 19)),
+                  ((8, None, 'iv'), 0, slice(20, 23))],
+       marks=[3, 3, 3])
+
 A.emit()
