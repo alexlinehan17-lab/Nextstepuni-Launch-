@@ -17,7 +17,16 @@ mark, and the question in that table is the question the paper asks:
 Section 1 is not here. Its table is tariff only — "2. 3,2,2,2,1 ⟨10⟩" — with no
 wording at all, so those parts have to come from the paper.
 
-Each part is returned as a dict: section, question, part, roman, text, marks.
+'clean' says the part's tariff was printed on the same line as its question. When
+it was not, the reader had no boundary to cut at and the text it returns is the
+question with some of its own answer welded on — a card built from that would
+show a student the answer inside the question, so bus_lib refuses it.
+
+Each part is returned as a dict: section, question, part, roman, text, marks,
+and — at Ordinary Level, where the scheme prints the answer under the question
+in the same cell — answers, the lines that follow it before the next marker.
+A part's question line is the one carrying its own tariff in angle brackets;
+everything after it until the next marker is the answer to it.
 """
 import os
 import re
@@ -33,14 +42,17 @@ PART = re.compile(r'^\(([A-E])\)\s*(?:\((i{1,3}|iv|vi{0,3})\)\s*)?(.*)$')
 # Ordinary Level sets its part marker as a bare capital — "A (i) What do the
 # letters CCPC stand for? ⟨10m⟩" — and prints the answer under it, which is a
 # better table than the Higher Level one. A bare capital is also how an ordinary
-# sentence starts, so the marker is only read as one when the line carries a
-# tariff in its own angle brackets.
+# sentence starts, so it is only read as a marker when the line carries a tariff
+# in its own angle brackets AND the letter is the next one due. Both are needed:
+# "A Takeover is when one company buys out another company ⟨5m⟩" is an answer to
+# part E of 2021 Ordinary Level Question 9, and the tariff test alone read it as
+# a second part A, which then overwrote the real one.
 PART_BARE = re.compile(r'^([A-E])\s+(?:\((i{1,3}|iv|vi{0,3})\)\s*)?(.*)$')
 ROMAN = re.compile(r'^\((i{1,3}|iv|vi{0,3})\)\s*(.*)$')
 # The tariff column bleeds into the text column when the table is flattened.
 # Anything that is only marks, or only a bracketed split, belongs to the tariff.
 TARIFF = re.compile(r'^[\d@x×\s,+()⟨⟩.]*m?(?:arks?)?[\d@x×\s,+()⟨⟩.]*$', re.I)
-MARKS = re.compile(r'⟨(\d{1,3})⟩')
+MARKS = re.compile(r'⟨(\d{1,3})\s*m?(?:arks?)?⟩', re.I)
 NOISE = re.compile(
     r'^(LEAVING CERTIFICATE|MARKING SCHEME|Available Marks|Section \d Available|'
     r'This is a compulsory|Answer \w+ questions?|All questions carry|Part \d|'
@@ -87,6 +99,13 @@ def parts(year, level):
     out, section, question, part, roman = [], None, None, None, None
     for raw in lines:
         line = raw.strip()
+        # The repair passes append their own blocks to the end of the scheme
+        # markdown. The last part of the table has no marker after it to stop
+        # at, so without this it swallows every appended line — 2021 Ordinary
+        # Level Q9(E) came back with 268 answer lines, most of them the note to
+        # teachers, chopped into fragments.
+        if line.startswith('<!-- markbank:'):
+            break
         if not line or NOISE.match(line) or CUE_NOISE.match(line):
             continue
         m = SECTION.match(line)
@@ -111,24 +130,42 @@ def parts(year, level):
         if m:
             question, part, roman = int(m.group(1)), None, None
             continue
-        m = PART.match(line) or (PART_BARE.match(line) if '⟨' in line else None)
+        m = PART.match(line)
+        if not m and '⟨' in line:
+            bare = PART_BARE.match(line)
+            if bare:
+                nxt = 'a' if part is None else chr(ord(part) + 1)
+                if bare.group(1).lower() == nxt:
+                    m = bare
         if m:
             part, roman = m.group(1).lower(), (m.group(2) or None)
             rest = _clean(m.group(3))
             out.append({'section': section, 'question': question, 'part': part,
-                        'roman': roman, 'text': rest, 'marks': MARKS.findall(raw)})
+                        'roman': roman, 'text': rest, 'marks': MARKS.findall(raw),
+                        'answers': [], 'clean': bool(MARKS.findall(raw))})
             continue
         m = ROMAN.match(line)
         if m and part:
             roman = m.group(1)
             out.append({'section': section, 'question': question, 'part': part,
-                        'roman': roman, 'text': _clean(m.group(2)), 'marks': MARKS.findall(raw)})
+                        'roman': roman, 'text': _clean(m.group(2)),
+                        'marks': MARKS.findall(raw), 'answers': [],
+                        'clean': bool(MARKS.findall(raw))})
             continue
         # A continuation of the part above: the table wraps its question over
         # several lines and only the first carries the marker.
         if out and not TARIFF.match(line) and question is not None:
             extra = _clean(line)
-            if extra and len(extra) > 2:
+            if not extra or len(extra) <= 2:
+                continue
+            # A part's own question ends where its tariff is printed. Ordinary
+            # Level sets the answer in the same cell, under the question, and
+            # those lines carry the split of that tariff rather than a tariff of
+            # their own — so once this part has been given its marks, what
+            # follows is answer, not more question.
+            if out[-1]['marks']:
+                out[-1]['answers'].append(extra)
+            else:
                 out[-1]['text'] = (out[-1]['text'] + ' ' + extra).strip()
                 out[-1]['marks'] += MARKS.findall(raw)
     return [p for p in out if len(p['text']) > 12]
@@ -144,5 +181,7 @@ if __name__ == '__main__':
     y, l = int(sys.argv[1]), sys.argv[2]
     ps = parts(y, l)
     for p in ps:
-        print(f"{ref(p, y, l):<34} {','.join(p['marks']) or '-':>6}  {p['text'][:105]}")
+        print(f"{ref(p, y, l):<34} {','.join(p['marks']) or '-':>6}  {p['text'][:100]}")
+        for a in p['answers'][:3]:
+            print(f"{'':<34} {'':>6}  · {a[:100]}")
     print(f'\n{len(ps)} parts in {y} {l.upper()} Sections 2 and 3')

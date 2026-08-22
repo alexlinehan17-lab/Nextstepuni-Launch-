@@ -27,27 +27,37 @@ CARDS = os.path.join(ROOT, 'scripts/markbank/authored/business.json')
 
 
 def asked(year, level):
-    out = []
+    """Question texts and cited references for one paper."""
+    texts, refs = [], set()
     for c in json.load(open(CARDS)):
         lv = 'hl' if str(c.get('level', '')).lower().startswith('h') else 'ol'
         if int(c['year']) == year and lv == level:
-            out.append(squash(c.get('questionText')))
-    return out
+            texts.append(squash(c.get('questionText')))
+            refs.add(squash(c.get('questionRef')))
+    return texts, refs
 
 
 def run(year, level, show=True):
-    texts = asked(year, level)
+    texts, refs = asked(year, level)
     open_ = short = 0
     for p in parts(year, level):
+        r = ref(p, year, level)
+        # Some questions are too short to identify by their wording — 'What do
+        # the letters CCPC stand for?' is 28 characters once punctuation is
+        # dropped, and several papers ask it. For those the citation is the only
+        # handle there is, and this subject's citations follow the scheme's own
+        # section-and-part numbering, which is exactly what bus_parts reads.
+        if squash(r) in refs:
+            continue
         if len(squash(p['text'])) < FLOOR:
-            # "Employer and employee" is a bullet under its part, not a question.
+            # 'Employer and employee' is a bullet under its part, not a question.
             short += 1
             continue
         if covered_by_text(p['text'], texts):
             continue
         open_ += 1
         if show:
-            print(f"\n{ref(p, year, level)}  [{','.join(p['marks']) or '-'}]")
+            print(f"\n{r}  [{','.join(p['marks']) or '-'}]")
             print(f"   Q: {p['text'][:170]}")
     return open_, short
 

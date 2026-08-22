@@ -28583,5 +28583,104 @@
    }
   ],
   "notes": "STEM: the paper (p.9) prints a single line of stimulus in the Question 8 panel — \"Cadbury is constantly coming up with new and innovative ideas and increasing its product portfolio\" — above a photo strip of a 200-years anniversary tin, a personalised bar and a selection box. The old stem quoted that line and then narrated the photographs in the author's own words, which is not text the paper prints; the narration and the rubric boilerplate are now cut and the stem is the printed line alone (the printed headline carries no full stop; a sentence-final one is added for reading). Checked against every sibling before keeping it: it hands over no marking point on (A) brand-name benefits, (B) pricing factors, (C)(i) target market, (C)(ii) advertising media or on this part. FIGURE: none bound — no Q8 figure was published for this paper, and the product photographs carry no information the question needs to be asked. TARIFF: stays orderedSplit. The brackets ⟨7 + 3⟩ and ⟨4 + 1⟩ do sit beside the first and second entries here, but the same scheme prints ⟨4 + 1⟩ beside the THIRD of seven bullets in Q8(B) and beside the second of five in Q8(A), so the brackets are column typesetting for the standard Ordinary Level 10-then-5 split by answer POSITION, not a fixed value pinned to Desk versus Field. A candidate who wrote Field research first earns the 10 for it, so pinning 10 to Desk Research would misprice the card. openList: now FALSE on both rows. The LC taxonomy of market research is exactly two types — desk (secondary) and field (primary) — the scheme prints both, the question demands two, and the synonyms a student may have used are already inside the quoted headings; there is no third type the examiner could have paid for, so marking the list open would tell a student a wrong third answer might have scored. Both points are quoted whole, development included: the closing sentences ('Desk research is relatively cheap, keeping business costs down'; 'expensive and time consuming, but it provides specific information on the behaviour of the target market') are what the +3 and +1 pay for, and cutting the card back to the two headings would let a two-word answer claim the development marks."
+ },
+ {
+  "id": "bus-2021-ol-s2-q9-a",
+  "topicId": "business-5-13",
+  "conceptId": "why-a-brand-name-matters",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "business",
+  "section": "2",
+  "questionRef": "2021 OL Section 2 Q9(A)",
+  "questionText": "Outline two reasons why a good brand name is important to a business like the Ryans",
+  "schemeCitation": "Question and marking points quoted from the SEC marking scheme, Business 2021 Ordinary Level — © State Examinations Commission. Business prints its paper as an answerbook, so the scheme's own table is the published source for the question as well as for the answer.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8m (4 + 4), 7m (4 + 3)"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Helps identify Ryan’s hardware store / makes it more recognisable / differentiates it from competitors’ stores",
+    "marks": 8
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Increases customer loyalty. Consumers will stick with a particular shop if satisfied, which increases sales and profits",
+    "marks": 7
+   }
+  ]
+ },
+ {
+  "id": "bus-2021-ol-s2-q9-b",
+  "topicId": "business-5-13",
+  "conceptId": "what-sets-a-price",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "business",
+  "section": "2",
+  "questionRef": "2021 OL Section 2 Q9(B)",
+  "questionText": "Outline three factors the Ryan’s must consider before setting prices for their products",
+  "schemeCitation": "Question and marking points quoted from the SEC marking scheme, Business 2021 Ordinary Level — © State Examinations Commission. Business prints its paper as an answerbook, so the scheme's own table is the published source for the question as well as for the answer.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "7m (4 + 3), 7m (4 + 3), 6m"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Target Market – what consumers can afford to pay / are willing to pay",
+    "marks": 7
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Competitors Prices – will they match, undercut or sell at a higher price",
+    "marks": 7
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Cost of product – what price will cover cost and give profit",
+    "marks": 6
+   }
+  ]
+ },
+ {
+  "id": "bus-2021-ol-s2-q9-e",
+  "topicId": "business-4-18",
+  "conceptId": "merger-versus-takeover",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "business",
+  "section": "2",
+  "questionRef": "2021 OL Section 2 Q9(E)",
+  "questionText": "Explain the difference between a merger and a takeover",
+  "schemeCitation": "Question and marking points quoted from the SEC marking scheme, Business 2021 Ordinary Level — © State Examinations Commission. Business prints its paper as an answerbook, so the scheme's own table is the published source for the question as well as for the answer.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5m (3 + 2) each"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A Merger is when two companies voluntarily agree to come together and operate as one. The company is now jointly owned and trades under one name. A single new legal entity is formed",
+    "marks": 5
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A Takeover is when one company buys out another company (with or without its consent) by buying at least 51% of its shares. It is also known as an acquisition",
+    "marks": 5
+   }
+  ]
  }
 ]
