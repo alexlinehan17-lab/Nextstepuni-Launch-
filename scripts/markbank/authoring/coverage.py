@@ -76,9 +76,15 @@ def report(subject):
                     continue
                 q, letter, roman = pkey
                 total += 1
+                # A roman on its own only counts when the part has no letter,
+                # as in a reference like "2023 HL Q4(iv), (v)". Letting it count
+                # regardless meant a card citing Q11(c)(i) marked Q11(b)(i)
+                # covered, and Biology reported four parts open when the whole
+                # of one question's (b) was missing.
                 hit = ((year, level, q, letter, roman) in done
                        or (year, level, q, letter, None) in done
-                       or (year, level, q, None, roman) in done
+                       or (letter is None
+                           and (year, level, q, None, roman) in done)
                        or (letter is None and roman is None
                            and (year, level, q, None, None) in done))
                 if not hit:
