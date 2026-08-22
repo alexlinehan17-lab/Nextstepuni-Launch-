@@ -26250,6 +26250,219 @@
   }
  },
  {
+  "id": "phys-2021-hl-q4-vi",
+  "topicId": "phys-3-3",
+  "conceptId": "resistivity-of-a-metal-calculation",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2021 HL Q4(vi)",
+  "questionText": "Calculate the resistivity of the metal at a temperature of 20 °C. (13)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "formula",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "area = 4.52 × 10–6 (m2)",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "ρ = 8.44 × 10–5 Ω m",
+    "marks": 3
+   }
+  ],
+  "stem": "A student measured the resistance R of a wire of length 30 cm at different values of temperature . The following data were recorded.  (°C) 0 20 40 60 80 100 R (Ω) 5.35 5.60 5.85 6.04 6.28 6.51",
+  "notes": "The scheme lists \"substitution\" between the formula and the area with no mark of its own, so it is not a row here."
+ },
+ {
+  "id": "phys-2021-hl-q8-iv",
+  "topicId": "phys-2-6",
+  "conceptId": "deriving-the-grating-formula",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2021 HL Q8(iv)",
+  "questionText": "Derive the diffraction grating formula, nλ = dsinθ. (28)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "d indicated",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "θ indicated as angle between straight through and higher order image",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "extra path length = dsinθ",
+    "marks": 3
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "for constructive interference, extra path length = nλ",
+    "marks": 3
+   }
+  ],
+  "stem": "The bright outline along the edge of a cloud – the ‘silver lining’– is an example of the diffraction of light in nature. Diffraction is a wave phenomenon. (ix) Why are radio waves not observed to undergo diffraction when incident on a diffraction grating of 600 lines per mm? (28) Leaving Certificate, 2021 Physics – Higher Level 7"
+ },
+ {
+  "id": "phys-2021-hl-q10-vi",
+  "topicId": "phys-3-6",
+  "conceptId": "emf-induced-in-a-loop-entering-a-field",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2021 HL Q10(vi)",
+  "questionText": "Use Faraday’s law of electromagnetic induction to calculate the average emf induced in the loop as it enters the field.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "V = dΦ/dt // V = dΦ/dt",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Φ = BA = 0.001 Wb // V = BA/t = BAv/s",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "t = s/v = 0.00833 s // V = Bsv",
+    "marks": 3
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "V = 0.12 V // V = 0.12 V",
+    "marks": 3
+   }
+  ],
+  "stem": "A current flowing through a conductor creates a magnetic field around it. The other law of electromagnetic induction is Lenz’s law.",
+  "notes": "Each line carries two routes to the same mark, separated by the scheme’s own solidus: the flux route on the left, the Bsv route on the right."
+ },
+ {
+  "id": "phys-2021-hl-q12-vi",
+  "topicId": "phys-3-2",
+  "conceptId": "field-pattern-in-a-parallel-plate-capacitor",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2021 HL Q12(vi)",
+  "questionText": "Draw the electric field pattern in a charged parallel plate capacitor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "parallel field lines",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "from + to −",
+    "marks": 3
+   }
+  ],
+  "stem": "The Wimshurst machine is an electrostatic generator for generating high voltages. It uses the principles of charging by induction and point discharge to store energy in two large capacitors. Wimshurst machines provided a source of high voltage for early X‐ray tubes. (ix) What happens to the energy of the electrons when they hit the anode? (17) Leaving Certificate, 2021 Physics – Higher Level 11"
+ },
+ {
+  "id": "phys-2021-hl-q13b-iv",
+  "topicId": "phys-3-3",
+  "conceptId": "structure-of-a-bipolar-transistor",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2021 HL Q13(b)(iv)",
+  "questionText": "Draw the structure of a bi‐polar transistor. (7)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "n (collector) , p (base), n (emitter)",
+    "marks": 7
+   }
+  ],
+  "stem": "December 16, 1947 marked the start of humankind’s information age when physicists John Bardeen and Walter Brattain connected upper electrodes to specially treated germanium that sat on a third electrode. When a small current flowed through one of the electrodes, a much larger current flowed through the other two. The transistor was born. A transistor is a semiconductor device that can be used to amplify voltage or switch electronic signals. Adapted from ‘The Physics Book: From the Big Bang to Quantum Resurrection’ (Clifford A. Pickover) Sterling New York 2011",
+  "notes": "The scheme splits the seven marks 3 + 2 + 2 across the three layers."
+ },
+ {
+  "id": "phys-2021-hl-q14b-iii",
+  "topicId": "phys-2-5",
+  "conceptId": "doppler-speed-of-a-source",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2021 HL Q14(b)(iii)",
+  "questionText": "Calculate the speed of the source.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "f' = cf/(c ± u)",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "substitution",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "u = 11.02 m s−1",
+    "marks": 3
+   }
+  ],
+  "stem": "Sound travels faster in water than in air. When a sound wave travels from water into air, it undergoes refraction."
+ },
+ {
   "id": "phys-2023-ol-q13b-v",
   "topicId": "phys-4-4",
   "conceptId": "daughter-nucleus-after-beta-decay",

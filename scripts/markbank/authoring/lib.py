@@ -69,6 +69,16 @@ def part_ref(year, level, q, letter=None, roman=None):
             + (f'({letter})' if letter else '') + (f'({roman})' if roman else ''))
 
 
+# A tariff, and nothing that merely looks like one. "[accept formula]" and
+# "[accept covalent]" tell a student what else scores and stay on the card;
+# "[H3O+]" is an answer. Only a bracket holding a mark expression comes off,
+# plus the scheme's own "[accept partial answer for 3]", which is a tariff
+# written out in words.
+MARK_TAIL = re.compile(
+    r'(?:\s*[\(\[]\s*\d+(?:\s*[×x+]\s*\d+)*\s*[\)\]]'
+    r'|\s*\[\s*accept\s+partial\s+answer[^\]]*\])+\s*$', re.I)
+
+
 class Refused(Exception):
     """A card that would have shipped wrong."""
 
@@ -206,6 +216,15 @@ class Author:
         picks = list(range(len(candidates))) if use is None else list(use)
         groups = [[candidates[i] for i in (p if isinstance(p, (list, tuple)) else [p])]
                   for p in picks]
+        # The PDF scheme leaves the tariff inline — "d indicated (3)", "hot
+        # cathode [6] [accept partial answer for 3]" — while the markdown one
+        # keeps it in a column of its own. A card carries the answer and its
+        # marks separately, and no card in any deck has ever shown a tariff
+        # inside its answer text, so the annotation comes off here rather than
+        # every caller slicing it away by hand. Only a bracket whose whole
+        # content is a mark expression is taken, which is what keeps the "(m2)"
+        # in "area = 4.52 × 10–6 (m2)" where it belongs.
+        groups = [[MARK_TAIL.sub('', c).strip() or c for c in g] for g in groups]
         chosen = [g[0] for g in groups]
         if not chosen:
             raise Refused(f'{ref}: no marking points chosen')
