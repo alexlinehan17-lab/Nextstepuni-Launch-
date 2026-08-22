@@ -29399,6 +29399,30 @@
   "notes": "Five marking points across (i)-(iii) share one combined allocation (9 + 6 + 3 + 2 + 2 = 22). Q5(b) is skipped entirely: its seven sub-parts share a single combined allocation (9 + 6 + 4 + 3 + 2 + 2 + 2 = 28), but one is a dot-and-cross drawing and one requires reading the electronegativity table, so the remaining parts cannot be given real marks without inventing a split."
  },
  {
+  "id": "chem-2024-hl-q3-b-iii",
+  "topicId": "chem-u2",
+  "conceptId": "what-a-rate-graph-shows",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2024 HL Q3(b)(iii)",
+  "questionText": "What can be concluded from your graph? (20)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "rate proportional to concentration",
+    "marks": 3
+   }
+  ],
+  "stem": "The reaction of sodium thiosulfate with hydrochloric acid is described by the following balanced chemical equation: Na2S2O3 + 2HCl  2NaCl + SO2 + S + H2O To investigate the effect of concentration on the rate of this reaction, the experiment was carried out for a number of different concentrations of sodium thiosulfate solution. For each run, a stopwatch was started when 100 cm3 of Na2S2O3 were mixed with 10 cm3 of 3 M HCl. For each run, the reaction was carried out at room temperature and the time taken for the same mass of sulfur to precipitate was measured. The inverse of that time was taken as a measure of the initial rate of reaction. The results are shown in the table below. Concentration of Na2S2O3 (M) 0.10 0.09 0.08 0.07 0.06 0.05 0.04 0.03 Time (s) 50 56 63 72 84 100 125 168 Rate = 1 Time (s–1) 0.020 0.018"
+ },
+ {
   "id": "chem-2024-ol-q5-b-i",
   "topicId": "chem-4-3",
   "conceptId": "naming-a-greenhouse-gas",
