@@ -27696,6 +27696,333 @@
   "stem": "5 Ω 5 Ω 5 Ω"
  },
  {
+  "id": "phys-2023-hl-q1-iv",
+  "topicId": "phys-u2",
+  "conceptId": "graph-of-distance-against-time-squared",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2023 HL Q1(iv)",
+  "questionText": "Draw a suitable graph to show the relationship between s and t.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "t2 values",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "labelled axes",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "6 points plotted",
+    "marks": 3
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "straight line with good fit",
+    "marks": 3
+   }
+  ],
+  "stem": "In an experiment to determine the acceleration due to gravity g, the time t for an object to fall from rest through a distance s was measured. The procedure was repeated for a series of values of s. The following data were recorded. s (cm) 40 50 60 70 80 90 t (cs) 29 32 35 38 40 43",
+  "notes": "The relationship is linear against the SQUARE of the time, so the first mark is for working those values out before plotting anything."
+ },
+ {
+  "id": "phys-2023-hl-q3-i",
+  "topicId": "phys-u2",
+  "conceptId": "apparatus-for-the-grating-experiment",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2023 HL Q3(i)",
+  "questionText": "Draw a labelled diagram of how the apparatus was arranged in this experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "source of light",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "screen/spectrometer",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "diffraction grating",
+    "marks": 3
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "arrangement",
+    "marks": 3
+   }
+  ],
+  "stem": "In an experiment to determine the wavelength of monochromatic red light, a collimated beam of light was incident perpendicular to a diffraction grating. The diffraction grating had 300 lines per mm. A series of images was observed on a screen placed 75 cm from the grating. The distance between the third order images on the screen was measured. They were 1.04 m apart.",
+  "notes": "The scheme takes a mark off if the diagram carries no labels."
+ },
+ {
+  "id": "phys-2023-hl-q4-i",
+  "topicId": "phys-u2",
+  "conceptId": "apparatus-for-the-latent-heat-experiment",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2023 HL Q4(i)",
+  "questionText": "Draw a labelled diagram of how the apparatus was arranged in this experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "steam generator and delivery tube",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "calorimeter with water",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "thermometer",
+    "marks": 3
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "arrangement",
+    "marks": 3
+   }
+  ],
+  "stem": "In an experiment to determine the specific latent heat of vaporisation of water, cool water was placed in a copper calorimeter. Dry steam at a temperature of 100 °C was then added to the water. The following data were recorded. Mass of calorimeter 65.8 g Mass of calorimeter + water before adding steam 111.6 g after adding steam 114.3 g Temperature of water before adding steam 5.5 °C after adding steam 36.4 °C How did the student (ii) cool the water, (iii) dry the steam? Why did the student (iv) cool the water, (v) dry the steam? (24)",
+  "notes": "The scheme takes a mark off if the diagram carries no labels."
+ },
+ {
+  "id": "phys-2023-hl-q8a-vi",
+  "topicId": "phys-2-4",
+  "conceptId": "drawing-the-third-harmonic",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2023 HL Q8(a)(vi)",
+  "questionText": "Draw a diagram to show the string vibrating at its third harmonic.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "node at both ends",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "two additional nodes in correct arrangement",
+    "marks": 3
+   }
+  ],
+  "stem": "The strings of a guitar can be plucked so that they vibrate at certain frequencies. The guitar and the air inside it also vibrate due to resonance."
+ },
+ {
+  "id": "phys-2023-hl-q10-vii",
+  "topicId": "phys-4-2",
+  "conceptId": "parts-of-an-x-ray-tube",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2023 HL Q10(vii)",
+  "questionText": "Draw a labelled diagram of an X‐ray tube. (17) Leaving Certificate, 2023 Physics – Higher Level 9",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "heating coil",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "cathode & anode/target",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "(high) voltage (between cathode & anode)",
+    "marks": 2
+   }
+  ],
+  "stem": "The Van de Graaff generator is named after the American physicist Robert J. Van de Graaff, pictured. It is an electrostatic generator that accumulates charge on a hollow metal dome and produces high voltages which can be used in the production of X‐rays. In a Van de Graaff generator, point discharge is used to move charge on to a belt at the lower comb in the generator.",
+  "notes": "The scheme also credits cooling, shielding, a window and a partial vacuum."
+ },
+ {
+  "id": "phys-2023-hl-q12b-iv",
+  "topicId": "phys-3-3",
+  "conceptId": "circuit-to-convert-ac-to-dc",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2023 HL Q12(b)(iv)",
+  "questionText": "Draw a circuit diagram, including a bridge rectifier and a capacitor, that can be used to convert a.c. to d.c.. (21)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "four diodes in correct arrangement",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "output resistor",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "capacitor in parallel with output resistor",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme numbers this answer under its own Question 11 while the paper prints Question 12."
+ },
+ {
+  "id": "phys-2023-hl-q12b-v",
+  "topicId": "phys-3-3",
+  "conceptId": "circuit-of-a-voltage-inverter",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2023 HL Q12(b)(v)",
+  "questionText": "Draw a circuit diagram to show how a transistor can be used as a voltage inverter.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "transistor and resistor in series",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "input voltage indicated",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "output voltage indicated",
+    "marks": 3
+   }
+  ]
+ },
+ {
+  "id": "phys-2023-hl-q12b-vi",
+  "topicId": "phys-3-3",
+  "conceptId": "truth-table-of-a-not-gate",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2023 HL Q12(b)(vi)",
+  "questionText": "A voltage inverter is a NOT gate. Draw its truth table. (15) Electromagnetic relays are sometimes used with transistors.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "input 0, output 1",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "input 1, output 0",
+    "marks": 3
+   }
+  ]
+ },
+ {
+  "id": "phys-2023-hl-q14a-iv",
+  "topicId": "phys-2-1",
+  "conceptId": "graph-that-explains-boyles-law",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2023 HL Q14(a)(iv)",
+  "questionText": "Sketch a graph that explains Boyle’s law. Label the axes on your graph. (7) acceleration due to gravity = 9.8 m s–2",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 + 2 for the axes, 2 for the line"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "axes labelled as p and 1/V",
+    "marks": 5
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "straight line through the origin",
+    "marks": 2
+   }
+  ],
+  "stem": "A spring has a natural length of 15.0 cm. When a block of mass 500 g is hung from the spring, its length increases to 17.5 cm. The block is then pulled down further, released and begins to oscillate."
+ },
+ {
   "id": "phys-2023-ol-q13b-v",
   "topicId": "phys-4-4",
   "conceptId": "daughter-nucleus-after-beta-decay",

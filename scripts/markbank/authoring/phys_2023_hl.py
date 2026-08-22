@@ -37,4 +37,76 @@ A.card(14, 'c', 'iii', topic='phys-3-3', concept='total-resistance-of-a-mixed-ci
 A.card(14, 'c', 'iv', topic='phys-3-3', concept='how-to-lower-total-resistance',
        source='pdf', from_run=((14, 'c', 'iv'), 0, slice(0, 2)), marks=[3], checked='The paper prints the part mark in brackets after the question, so the text ends on a number rather than punctuation. The question itself is complete.')
 
+
+# ── Drawing questions whose scheme says what the drawing must show ─────────
+A.card(1, None, 'iv', topic='phys-u2', concept='graph-of-distance-against-time-squared',
+       source='pdf',
+       from_runs=[((1, None, 'iv'), 0, slice(0, 2)),
+                  ((1, None, 'iv'), 3, slice(0, 2)),
+                  ((1, None, 'iv'), 3, slice(3, 6)),
+                  ((1, None, 'iv'), 3, slice(7, 12))],
+       marks=[3, 3, 3, 3],
+       notes='The relationship is linear against the SQUARE of the time, so the first '
+             'mark is for working those values out before plotting anything.')
+
+A.card(3, None, 'i', topic='phys-u2', concept='apparatus-for-the-grating-experiment',
+       source='pdf',
+       from_runs=[((3, None, 'i'), 0, slice(0, 3)),
+                  ((3, None, 'i'), 0, slice(4, 5)),
+                  ((3, None, 'i'), 0, slice(6, 8)),
+                  ((3, None, 'i'), 0, slice(9, 10))],
+       marks=[3, 3, 3, 3],
+       notes='The scheme takes a mark off if the diagram carries no labels.')
+
+A.card(4, None, 'i', topic='phys-u2', concept='apparatus-for-the-latent-heat-experiment',
+       source='pdf',
+       from_runs=[((4, None, 'i'), 0, slice(0, 5)),
+                  ((4, None, 'i'), 0, slice(6, 9)),
+                  ((4, None, 'i'), 0, slice(10, 11)),
+                  ((4, None, 'i'), 0, slice(12, 13))],
+       marks=[3, 3, 3, 3],
+       notes='The scheme takes a mark off if the diagram carries no labels.')
+
+A.card(8, 'a', 'vi', topic='phys-2-4', concept='drawing-the-third-harmonic',
+       source='pdf',
+       from_runs=[((8, 'a', 'vi'), 0, slice(0, 4)),
+                  ((8, 'a', 'vi'), 0, slice(5, 11))],
+       marks=[3, 3])
+
+A.card(10, None, 'vii', topic='phys-4-2', concept='parts-of-an-x-ray-tube',
+       source='pdf',
+       from_runs=[((10, None, 'vii'), 2, slice(0, 2)),
+                  ((10, None, 'vii'), 2, slice(3, 6)),
+                  ((10, None, 'vii'), 2, slice(7, 13))],
+       marks=[2, 2, 2], checked='The paper prints the part mark in brackets after the question, so the text ends on a number rather than punctuation. The question itself is complete.',
+       notes='The scheme also credits cooling, shielding, a window and a partial vacuum.')
+
+A.card(12, 'b', 'iv', topic='phys-3-3', concept='circuit-to-convert-ac-to-dc',
+       source='pdf',
+       from_runs=[((11, 'b', 'iv'), 0, slice(2, 7)),
+                  ((11, 'b', 'iv'), 0, slice(8, 10)),
+                  ((11, 'b', 'iv'), 0, slice(11, 17))],
+       marks=[3, 3, 3], checked='The paper prints the part mark in brackets after the question, so the text ends on a number rather than punctuation. The question itself is complete.',
+       notes='The scheme numbers this answer under its own Question 11 while the paper '
+             'prints Question 12.')
+
+A.card(12, 'b', 'v', topic='phys-3-3', concept='circuit-of-a-voltage-inverter',
+       source='pdf',
+       from_runs=[((11, 'b', 'v'), 0, slice(0, 5)),
+                  ((11, 'b', 'v'), 0, slice(6, 9)),
+                  ((11, 'b', 'v'), 0, slice(10, 13))],
+       marks=[3, 3, 3])
+
+A.card(12, 'b', 'vi', topic='phys-3-3', concept='truth-table-of-a-not-gate',
+       source='pdf',
+       from_runs=[((11, 'b', 'vi'), 0, slice(4, 8)),
+                  ((11, 'b', 'vi'), 0, slice(9, 13))],
+       marks=[3, 3], checked='The paper prints the part mark in brackets after the question, so the text ends on a number rather than punctuation. The question itself is complete.')
+
+A.card(14, 'a', 'iv', topic='phys-2-1', concept='graph-that-explains-boyles-law',
+       source='pdf',
+       from_runs=[((14, 'a', 'iv'), 0, slice(6, 12)),
+                  ((14, 'a', 'iv'), 0, slice(15, 20))],
+       marks=[5, 2], notation='3 + 2 for the axes, 2 for the line', checked='The paper prints the part mark in brackets after the question, so the text ends on a number rather than punctuation. The question itself is complete.')
+
 A.emit()
