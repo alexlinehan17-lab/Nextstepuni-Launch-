@@ -123,12 +123,32 @@ class SchemePdf:
         # marker strong enough to tell instruction 1 from question 1. Physics
         # and Chemistry head questions with a bare number, so there is nothing
         # to anchor on and their preamble is left to the Section A boundary.
-        with pymupdf.open(self.pdf) as _probe:
-            spelled = any(re.search(r'^(?:QUESTION|Question)\s+\d', ' '.join(b[4].split()))
-                          for n in range(_probe.page_count)
-                          for b in _probe[n].get_text('blocks') if b[4].strip())
-        seen_first_question = not spelled
-        q = letter = roman = None
+        # Walk past the marking preamble. Its instructions are numbered and read
+        # as questions — Biology's "1. In many cases only key phrases are given",
+        # "2. Cancelled answers", "3. Surplus answers" put three phantom
+        # questions in front of the paper. What gives them away is that they run
+        # consecutively: 1, 2, 3 one after another with nothing between. A real
+        # paper puts a question's marking content between its questions.
+        #
+        # Anchoring on the spelled-out "Question" instead does not work either.
+        # Home Economics spells it for Sections B and C but numbers Section A
+        # plainly, so waiting for the spelled form skipped its whole first
+        # section.
+        blocks = list(self._blocks())
+        start_at = 0
+        run_start, expect = None, None
+        for i, text in enumerate(blocks):
+            m = QHEAD.match(text)
+            n = int(next((g for g in m.groups() if g), 0)) if m else None
+            if n is None:
+                continue
+            if expect is not None and n == expect:
+                expect += 1
+                if n >= 3:
+                    start_at = i + 1        # a numbered instruction list
+            else:
+                run_start, expect = i, n + 1
+        seen_first_question = True
         key = None
         for text in self._blocks():
             if PAGENO.match(text) or NOISE.match(text) or BAND.search(text):
