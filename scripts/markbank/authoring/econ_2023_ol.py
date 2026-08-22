@@ -103,4 +103,75 @@ P.cards.append(card(
                {'letter': 'MC', 'meaning': 'Marginal Cost', 'askedInThisQuestion': False},
                {'letter': 'MR', 'meaning': 'Marginal Revenue', 'askedInThisQuestion': False}]))
 
+
+# ── Section B, second pass ──────────────────────────────────────────────────
+P.menu('Explain the term hidden economy', 'econ-2023-ol-q11-c-i',
+       'economics-3-1', 'what-the-hidden-economy-is-ol',
+       'Explain the term hidden economy. Give one other example of an activity in the Irish '
+       'hidden economy.',
+       'A way of putting it — any one',
+       'One explanation, 6 marks. The three the scheme lists are the same idea said three ways.',
+       ref='2023 OL Q11(c)(i)', claim=1, per=6,
+       drop=SCAFFOLD + ('Give one other example',))
+
+P.menu('increase in interest rates would affect consumers', 'econ-2023-ol-q13-c-i',
+       'economics-3-3', 'interest-rates-and-mortgage-holders',
+       'Explain how an increase in interest rates would affect consumers with a mortgage.',
+       'An effect on mortgage holders — any one', 'One effect, 8 marks.',
+       ref='2023 OL Q13(c)(i)', claim=1, per=8, drop=SCAFFOLD)
+
+P.menu('increase in interest rates could affect savings', 'econ-2023-ol-q13-c-ii',
+       'economics-3-3', 'interest-rates-and-saving',
+       'Outline how an increase in interest rates could affect savings in the Irish economy.',
+       'An effect on savings — any one',
+       'One effect, 8 marks. The scheme accepts savings rising, falling, or not moving at all — '
+       'what is marked is the reasoning.',
+       ref='2023 OL Q13(c)(ii)', claim=1, per=8, drop=SCAFFOLD)
+
+P.menu('switching to the online banking app', 'econ-2023-ol-q13-c-iii',
+       'economics-3-4', 'why-consumers-switch-bank',
+       'Outline one reason why consumers are switching to online banking apps such as Revolut.',
+       'A reason to switch — any one', 'One reason, 2 marks.',
+       ref='2023 OL Q13(c)(iii)', claim=1, per=2, drop=SCAFFOLD)
+
+P.menu('price of petrol changed from April to June', 'econ-2023-ol-q14-a-ii-reason',
+       'economics-3-3', 'why-petrol-prices-rose',
+       'Outline one reason why the price of petrol changed from April to June 2022.',
+       'The reason the price rose',
+       'One reason, 8 marks; the part pays 4 more for the effect on consumers.',
+       ref='2023 OL Q14(a)(ii) — reason', claim=1, per=8,
+       drop=SCAFFOLD, stop='Effect:',
+       notes='The part asks for a reason and an effect, and the scheme heads the two separately, '
+             'so each is its own card.')
+
+P.menu('price of petrol changed from April to June', 'econ-2023-ol-q14-a-ii-effect',
+       'economics-3-3', 'effect-of-higher-petrol-prices',
+       'Outline one reason why the price of petrol changed from April to June and explain one '
+       'effect this had on Irish consumers — the EFFECT.',
+       'The effect on consumers', 'One effect, 4 marks.',
+       ref='2023 OL Q14(a)(ii) — effect', claim=1, per=4,
+       drop=SCAFFOLD, after='Effect:')
+
+P.menu('shortage of parts for making electronic devices', 'econ-2023-ol-q14-b-iii',
+       'economics-1-2', 'why-a-global-parts-shortage',
+       'A shortage of parts for making electronic devices has developed worldwide. Explain one '
+       'possible reason for this shortage of parts.',
+       'A reason for the shortage — any one', 'One reason, 3 marks.',
+       ref='2023 OL Q14(b)(iii)', claim=1, per=3,
+       drop=SCAFFOLD + ('Explain one possible reason for this shortage',))
+
+P.menu('important for a business to continue to earn profit', 'econ-2023-ol-q14-c-ii',
+       'economics-1-5', 'why-profit-matters',
+       'Outline one reason why it is important for a business to continue to earn profit.',
+       'A reason profit matters — any one', 'One reason, 5 marks.',
+       ref='2023 OL Q14(c)(ii)', claim=1, per=5, drop=SCAFFOLD)
+
+P.menu('factor, other than an increase in income, that would affect the demand',
+       'econ-2023-ol-q15-b-iii', 'economics-1-1', 'what-shifts-demand-for-electric-cars',
+       'Explain one factor, other than an increase in income, that would affect the demand for '
+       'electric cars in a market.',
+       'A factor shifting demand — any one', 'One factor, 5 marks.',
+       ref='2023 OL Q15(b)(iii)', claim=1, per=5,
+       drop=SCAFFOLD + ('electric cars in a market.',))
+
 P.emit()

@@ -51,6 +51,15 @@ CORRECTIONS = {
     # it could not place, which is why that list is reported and not ignored.
     'econ-2023-ol-q16-a-i': '2023 OL Q16(b)(i)',
     'econ-2025-ol-q15-a-i': '2025 OL Q15(c)(i)',
+    # Found on the second pass, by reading the 2025 Ordinary paper's own part
+    # structure while working the Section B backlog. The question NUMBER was
+    # right in each, which is why econ_refcheck.py could not see them: it
+    # asserts the number, because the number comes from a heading the paper
+    # prints and the part path has to be reconstructed from markers in an
+    # answer booklet. Paths still need eyes.
+    'econ-2025-ol-q16-a-iii': '2025 OL Q16(b)(iii)',
+    'econ-2025-ol-q16-b-i-ag': '2025 OL Q16(c)(i) — agricultural sector',
+    'econ-2025-ol-q16-b-i-ind': '2025 OL Q16(c)(i) — industrial sector',
 }
 
 

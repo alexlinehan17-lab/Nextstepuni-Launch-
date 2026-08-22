@@ -154,4 +154,69 @@ P.menu('market for Irish milk can no longer be considered', 'econ-2023-hl-q12-a-
        'One reason, 4 marks.',
        claim=1, per=4, drop=SCAFFOLD)
 
+
+# ── Section B, second pass ──────────────────────────────────────────────────
+SIDES5 = ('The part asks for one of each and the scheme heads the two lists separately, so each '
+          'side is its own card.')
+
+P.menu('increase in population can have a positive or negative effect',
+       'econ-2023-hl-q11-a-iii-neg', 'economics-3-1', 'population-growth-and-state-finances-cost',
+       'An increase in population can have a positive or negative effect on government finances. '
+       'Discuss one NEGATIVE effect.',
+       'A cost to the state — any one', 'One effect, 5 marks.',
+       ref='2023 HL Q11(a)(iii) — negative', claim=1, per=5,
+       drop=SCAFFOLD, stop='Increased demand for goods and services', notes=SIDES5)
+
+P.menu('increase in population can have a positive or negative effect',
+       'econ-2023-hl-q11-a-iii-pos', 'economics-3-1', 'population-growth-and-state-finances-gain',
+       'An increase in population can have a positive or negative effect on government finances. '
+       'Discuss one POSITIVE effect.',
+       'A gain to the state — any one', 'One effect, 5 marks.',
+       ref='2023 HL Q11(a)(iii) — positive', claim=1, per=5,
+       drop=SCAFFOLD, after='Increased demand for goods and services')
+
+P.menu('Would you consider this market to be competitive', 'econ-2023-hl-q12-b-ii',
+       'economics-2-0', 'reading-the-dairy-market-hhi',
+       'The HHI for the Irish dairy market was 3,172. Would you consider this market to be '
+       'competitive, moderately concentrated, or highly concentrated? Explain your answer.',
+       'A reason it is highly concentrated — either one',
+       'One reason, 5 marks. Above 2,500 the market counts as highly concentrated.',
+       ref='2023 HL Q12(b)(ii)', claim=1, per=5,
+       drop=SCAFFOLD + ('concentrated? Explain your answer',))
+
+P.menu('economic advantage and one possible economic disadvantage of',
+       'econ-2023-hl-q12-b-iii-adv', 'economics-2-0', 'advantages-of-perfect-competition',
+       'Outline one possible economic advantage and one possible economic disadvantage of a '
+       'perfectly competitive market — the ADVANTAGE.',
+       'An advantage of perfect competition — any one', 'One advantage, 6 marks.',
+       ref='2023 HL Q12(b)(iii) — advantage', claim=1, per=6,
+       drop=SCAFFOLD + ('a perfectly competitive market. Advantages',),
+       stop='Little potential to expand', notes=SIDES5)
+
+P.menu('economic advantage and one possible economic disadvantage of',
+       'econ-2023-hl-q12-b-iii-dis', 'economics-2-0', 'disadvantages-of-perfect-competition',
+       'Outline one possible economic DISADVANTAGE of a perfectly competitive market.',
+       'A disadvantage of perfect competition — any one', 'One disadvantage, 4 marks.',
+       ref='2023 HL Q12(b)(iii) — disadvantage', claim=1, per=4,
+       drop=SCAFFOLD, after='Little potential to expand')
+
+P.menu('why this measure is considered more accurate', 'econ-2023-hl-q14-a-ii',
+       'economics-3-2', 'why-the-labour-force-survey-is-better',
+       'Give two reasons why the Labour Force Survey is considered a more accurate measure of '
+       'unemployment than data collected from the Live Register.',
+       'A reason the survey is more accurate — any one',
+       'The SEC voided this part: it awarded 4 marks to every candidate who attempted it, because '
+       'the question said Quarterly National Household Survey when it should have said Labour '
+       'Force Survey. The economics below is still what the scheme accepts.',
+       ref='2023 HL Q14(a)(ii)', claim=1, per=4,
+       drop=SCAFFOLD + ('are included as being fully unemployed',))
+
+P.menu('impacted on Irish consumer behaviou', 'econ-2023-hl-q15-a-i',
+       'economics-3-3', 'how-rising-prices-change-behaviour',
+       'Electricity prices rose through 2021 and 2022. Explain how this will have impacted on '
+       'Irish consumer behaviour.',
+       'An impact on consumer behaviour — any one', 'One impact, 6 marks.',
+       ref='2023 HL Q15(a)(i)', claim=1, per=6,
+       drop=SCAFFOLD + ('Impact on consumer behavior',))
+
 P.emit()

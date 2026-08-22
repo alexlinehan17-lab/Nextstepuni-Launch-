@@ -4958,6 +4958,302 @@
   "notes": ""
  },
  {
+  "id": "econ-2023-hl-q11-a-iii-neg",
+  "topicId": "economics-3-1",
+  "conceptId": "population-growth-and-state-finances-cost",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 HL Q11(a)(iii) — negative",
+  "questionText": "An increase in population can have a positive or negative effect on government finances. Discuss one NEGATIVE effect.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 5",
+   "answer": 1,
+   "ofParts": 3,
+   "perPart": 5
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A cost to the state — any one",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One effect, 5 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Pressure on provision of state services: With an increasing population, there will be pressure on the government to provide and improve services. If it goes unplanned, shortages may develop in housing, education etc. putting a strain on the government’s finances.",
+      "Increased pressure on infrastructure: The government will have to plan for additional such as schools and facilities for the younger population while also focusing on facilities for the older population. All of these put pressure on their finances.",
+      "Increased pressure on state’s finances: If gaps in unemployment exist and cannot be filled, the government must continue to pay social welfare and may end up having to pay more. Positive"
+     ]
+    }
+   }
+  ],
+  "notes": "The part asks for one of each and the scheme heads the two lists separately, so each side is its own card."
+ },
+ {
+  "id": "econ-2023-hl-q11-a-iii-pos",
+  "topicId": "economics-3-1",
+  "conceptId": "population-growth-and-state-finances-gain",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 HL Q11(a)(iii) — positive",
+  "questionText": "An increase in population can have a positive or negative effect on government finances. Discuss one POSITIVE effect.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 5",
+   "answer": 1,
+   "ofParts": 3,
+   "perPart": 5
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A gain to the state — any one",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One effect, 5 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Increased demand for goods and services: The level of demand for goods and services should increase, increasing the national income.",
+      "Increased government revenue: The numbers joining the labour market should increase meaning increased tax revenue for the government.",
+      "Reduction in labour shortages: If vacancies exist, an increase in population may reduce this and reduce unemployment in general lowering the expense on social welfare."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2023-hl-q12-b-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "reading-the-dairy-market-hhi",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 HL Q12(b)(ii)",
+  "questionText": "The HHI for the Irish dairy market was 3,172. Would you consider this market to be competitive, moderately concentrated, or highly concentrated? Explain your answer.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 5",
+   "answer": 1,
+   "ofParts": 2,
+   "perPart": 5
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason it is highly concentrated — either one",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One reason, 5 marks. Above 2,500 the market counts as highly concentrated.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "The market is dominate by two large firms.",
+      "The HHI calculation of 3172 is greater than 2500."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2023-hl-q12-b-iii-adv",
+  "topicId": "economics-2-0",
+  "conceptId": "advantages-of-perfect-competition",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 HL Q12(b)(iii) — advantage",
+  "questionText": "Outline one possible economic advantage and one possible economic disadvantage of a perfectly competitive market — the ADVANTAGE.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 6",
+   "answer": 1,
+   "ofParts": 5,
+   "perPart": 6
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An advantage of perfect competition — any one",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One advantage, 6 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Low prices - the firm sells its products at the lowest possible prices. (there is no exploitation of consumers).",
+      "Efficiency is encouraged -the firm produces at the lowest point of the average cost curve so there is no waste of scare resources.",
+      "No advertising -the product is homogenous and there is perfect knowledge so there is no point is wasting scarce resources on advertising the firm and this saves consumers having to pay higher prices.",
+      "Consumers are not exploited - as each firm only earn normal profit.",
+      "For firms – free entry and exit as they face no barriers to entry. Disadvantages"
+     ]
+    }
+   }
+  ],
+  "notes": "The part asks for one of each and the scheme heads the two lists separately, so each side is its own card."
+ },
+ {
+  "id": "econ-2023-hl-q12-b-iii-dis",
+  "topicId": "economics-2-0",
+  "conceptId": "disadvantages-of-perfect-competition",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 HL Q12(b)(iii) — disadvantage",
+  "questionText": "Outline one possible economic DISADVANTAGE of a perfectly competitive market.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 4",
+   "answer": 1,
+   "ofParts": 3,
+   "perPart": 4
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A disadvantage of perfect competition — any one",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One disadvantage, 4 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Little potential to expand or develop / no scope for economies of scale – as there are many small sellers, firms do not get large enough to benefit from economies of scale.",
+      "Little choice for consumers – as all products are homogeneous, there is little choice for consumers.",
+      "Little scope for research and development – lack of SNPs makes investment in R&D unlikely."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2023-hl-q14-a-ii",
+  "topicId": "economics-3-2",
+  "conceptId": "why-the-labour-force-survey-is-better",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 HL Q14(a)(ii)",
+  "questionText": "Give two reasons why the Labour Force Survey is considered a more accurate measure of unemployment than data collected from the Live Register.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 4",
+   "answer": 1,
+   "ofParts": 3,
+   "perPart": 4
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason the survey is more accurate — any one",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The SEC voided this part: it awarded 4 marks to every candidate who attempted it, because the question said Quarterly National Household Survey when it should have said Labour Force Survey. The economics below is still what the scheme accepts.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Full-time employment in the hidden or shadow economy: Some people on the Live Register work full time in the hidden/shadow economy and illegally receive a social welfare payment. As they receive a social welfare payment, they are counted as unemployed.",
+      "Voluntarily unemployed: Some people on the Live Register are not actively seeking work.",
+      "Labour Force Survey surveys a large sample size: The CSO surveys a large number of households each quarter. Statistically, the larger the sample size, the more accurate the results."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2023-hl-q15-a-i",
+  "topicId": "economics-3-3",
+  "conceptId": "how-rising-prices-change-behaviour",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 HL Q15(a)(i)",
+  "questionText": "Electricity prices rose through 2021 and 2022. Explain how this will have impacted on Irish consumer behaviour.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 6",
+   "answer": 1,
+   "ofParts": 4,
+   "perPart": 6
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An impact on consumer behaviour — any one",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One impact, 6 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Purchasing power reduced: Inflation reduces a consumers’ ability to spend money. Standards of living fall due to rising prices as real wages have decreased.",
+      "Consumers on fixed incomes suffer a reduction in their standard of living: Those on fixed incomes e.g. those on social welfare payments will also see their standard of living fall as their purchasing power has been reduced.",
+      "Purchasing power of savings reduced: This will occur if the inflation rate is greater than the interest rate on savings. This reduces the incentive to save.",
+      "Burden of debt reduced: Borrowing is encouraged during times of inflation as it easier to repay the debt after the period of inflation."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "econ-2023-hl-sa-q1-a",
   "topicId": "economics-1-2",
   "conceptId": "supply-of-a-fixed-capacity-good",
@@ -5990,6 +6286,393 @@
    }
   ],
   "notes": "Abbreviations are not accepted."
+ },
+ {
+  "id": "econ-2023-ol-q11-c-i",
+  "topicId": "economics-3-1",
+  "conceptId": "what-the-hidden-economy-is-ol",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q11(c)(i)",
+  "questionText": "Explain the term hidden economy. Give one other example of an activity in the Irish hidden economy.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 6",
+   "answer": 1,
+   "ofParts": 2,
+   "perPart": 6
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A way of putting it — any one",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One explanation, 6 marks. The three the scheme lists are the same idea said three ways.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "The hidden economy refers to all economic activity that goes unrecorded in national income accounts.",
+      "It refers to incomes from illegal sources/undeclared incomes from the production of goods and services from either monetary or barter transactions."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2023-ol-q13-c-i",
+  "topicId": "economics-3-3",
+  "conceptId": "interest-rates-and-mortgage-holders",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q13(c)(i)",
+  "questionText": "Explain how an increase in interest rates would affect consumers with a mortgage.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 8",
+   "answer": 1,
+   "ofParts": 3,
+   "perPart": 8
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An effect on mortgage holders — any one",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "One effect, 8 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 8,
+     "options": [
+      "Increased monthly repayments on mortgages: less disposable income and a lower standard of living.",
+      "The increase in repayments may be unaffordable for some consumers and they may fall into arrears/ lose their home.",
+      "It may make it more difficult for people wishing to get on to the property ladder, they may now need to save for longer to afford to buy."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2023-ol-q13-c-ii",
+  "topicId": "economics-3-3",
+  "conceptId": "interest-rates-and-saving",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q13(c)(ii)",
+  "questionText": "Outline how an increase in interest rates could affect savings in the Irish economy.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 8",
+   "answer": 1,
+   "ofParts": 3,
+   "perPart": 8
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An effect on savings — any one",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "One effect, 8 marks. The scheme accepts savings rising, falling, or not moving at all — what is marked is the reasoning.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 8,
+     "options": [
+      "Savings could increase if people spend less and are attracted to save with the higher interest rates – if the rate increase is offered to savers.",
+      "For those paying higher mortgage repayments savings could fall as they have less disposable income.",
+      "As interest rates remain well below inflation rates, it may have no effect on the level of savings."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2023-ol-q13-c-iii",
+  "topicId": "economics-3-4",
+  "conceptId": "why-consumers-switch-bank",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q13(c)(iii)",
+  "questionText": "Outline one reason why consumers are switching to online banking apps such as Revolut.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 2",
+   "answer": 1,
+   "ofParts": 11,
+   "perPart": 2
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason to switch — any one",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "One reason, 2 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "The consumer has one place to deal with all money related matters.",
+      "The Revolut app is considered much better than BOI / AIB etc. as it is more user friendly.",
+      "Money transfers are free of charge.",
+      "It is possible to split bills using Revolut.",
+      "No hidden fees – possible to send and receive money in 29 currencies",
+      "The transfers are instant regardless of where in the world the consumers are based.",
+      "You can save as you spend with Revolut.",
+      "Possible to track your finances.",
+      "It provides mobile phone and overseas medical insurance.",
+      "Allows users benefit from favourable exchange rates.",
+      "Users can buy stocks and crypto currencies."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2023-ol-q14-a-ii-reason",
+  "topicId": "economics-3-3",
+  "conceptId": "why-petrol-prices-rose",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q14(a)(ii) — reason",
+  "questionText": "Outline one reason why the price of petrol changed from April to June 2022.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 8",
+   "answer": 1,
+   "ofParts": 2,
+   "perPart": 8
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The reason the price rose",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "One reason, 8 marks; the part pays 4 more for the effect on consumers.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 8,
+     "options": [
+      "graph above and explain one effect this had on Irish consumers.",
+      "Reason: The easing of restrictions following lockdowns lead to an increase in demand for petrol as people were able to move more freely around the country and businesses were back to normal. However, the sharp increase in price later in the year was brought about by the EU sanctions imposed on Russian oil following the invasion of Ukraine. The lack of supply caused the sharp increase in price until alternative sources of oil were found."
+     ]
+    }
+   }
+  ],
+  "notes": "The part asks for a reason and an effect, and the scheme heads the two separately, so each is its own card."
+ },
+ {
+  "id": "econ-2023-ol-q14-a-ii-effect",
+  "topicId": "economics-3-3",
+  "conceptId": "effect-of-higher-petrol-prices",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q14(a)(ii) — effect",
+  "questionText": "Outline one reason why the price of petrol changed from April to June and explain one effect this had on Irish consumers — the EFFECT.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 4",
+   "answer": 1,
+   "ofParts": 1,
+   "perPart": 4
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The effect on consumers",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One effect, 4 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Effect: The increase in petrol prices leads to consumers having a lower standard of living as the cost of living increases. An increase in the price of petrol inevitably leads to an increase in the cost of producing and transporting goods. Some consumers reduced the number of journeys undertaken. Some consumers switched to use more public transport or walk or cycle where possible or switch to EVs."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2023-ol-q14-b-iii",
+  "topicId": "economics-1-2",
+  "conceptId": "why-a-global-parts-shortage",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q14(b)(iii)",
+  "questionText": "A shortage of parts for making electronic devices has developed worldwide. Explain one possible reason for this shortage of parts.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 3",
+   "answer": 1,
+   "ofParts": 4,
+   "perPart": 3
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason for the shortage — any one",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "One reason, 3 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "Interruption to the supply chain due to lockdowns over a period of time during the COVID 19 pandemic across the world",
+      "Transport disruption due to the war between Russia and Ukraine.",
+      "Skills shortages in those industries making these devices.",
+      "Lack of essential raw material for the making of these components."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2023-ol-q14-c-ii",
+  "topicId": "economics-1-5",
+  "conceptId": "why-profit-matters",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q14(c)(ii)",
+  "questionText": "Outline one reason why it is important for a business to continue to earn profit.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 5",
+   "answer": 1,
+   "ofParts": 5,
+   "perPart": 5
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason profit matters — any one",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One reason, 5 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Continue production: profits are necessary for the entrepreneur to remain in business. It is the return on their time and effort to keep the business going.",
+      "Easier to raise finance: the existence of profits will make it easier to raise finance e.g. a bank loan or to get investors to buy shares.",
+      "Fund expansion: profits will enable the business to expand and grow.",
+      "Encourages risk taking: profits are necessary for an entrepreneur to undertake risks",
+      "Reward innovation: a business which earns profit may encourage those who are most efficient or those who are minimizing costs."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2023-ol-q15-b-iii",
+  "topicId": "economics-1-1",
+  "conceptId": "what-shifts-demand-for-electric-cars",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q15(b)(iii)",
+  "questionText": "Explain one factor, other than an increase in income, that would affect the demand for electric cars in a market.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 5",
+   "answer": 1,
+   "ofParts": 5,
+   "perPart": 5
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A factor shifting demand — any one",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One factor, 5 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Change in consumer tastes or preference for driving an EV or increased advertising of the benefits of driving an EV.",
+      "Government initiatives which may help buyers with the purchase price.",
+      "Expectation as to future prices: if consumers expect future prices to rise it may encourage their purchase now.",
+      "Change in price of a substitute good or a complement goods: if the prices of diesel/petrol cars increased then EVs may become more attractive.",
+      "Unplanned factors: if the EU were to announce that the manufacture of diesel/petrol cars were to end sooner than expected."
+     ]
+    }
+   }
+  ],
+  "notes": ""
  },
  {
   "id": "econ-2023-ol-sa-q2-b",
@@ -12587,7 +13270,7 @@
   "year": 2025,
   "subjectId": "economics",
   "section": "B",
-  "questionRef": "2025 OL Q16(a)(iii)",
+  "questionRef": "2025 OL Q16(b)(iii)",
   "questionText": "Discuss two economic effects which falling price inflation may have on Irish consumers.",
   "stem": "",
   "figureKey": "",
@@ -12635,7 +13318,7 @@
   "year": 2025,
   "subjectId": "economics",
   "section": "B",
-  "questionRef": "2025 OL Q16(b)(i) — agricultural sector",
+  "questionRef": "2025 OL Q16(c)(i) — agricultural sector",
   "questionText": "Identify one action the agricultural sector could take to reduce the effects of climate change. Justify your answer.",
   "stem": "",
   "figureKey": "",
@@ -12679,7 +13362,7 @@
   "year": 2025,
   "subjectId": "economics",
   "section": "B",
-  "questionRef": "2025 OL Q16(b)(i) — industrial sector",
+  "questionRef": "2025 OL Q16(c)(i) — industrial sector",
   "questionText": "Identify one action the industrial sector could take to reduce the effects of climate change. Justify your answer.",
   "stem": "",
   "figureKey": "",
@@ -12861,6 +13544,497 @@
       "Quantity",
       "Demand / Average Revenue / Marginal Revenue",
       "Average Cost"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2025-ol-q11-a-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "assumptions-of-perfect-competition-ol",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 OL Q11(a)(ii)",
+  "questionText": "Outline two assumptions of perfect competition, other than homogenous products.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 @ 10+1 @ 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An assumption of perfect competition — any two",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Two assumptions, the first paid 10 and the second 4. Homogenous products is excluded by the question.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 10,
+     "options": [
+      "There are many buyers in the industry - no individual buyer can influence by his/her own actions the market price of the goods.",
+      "There are many sellers in the industry - no individual seller can influence, by his/her own actions, the market price of the goods.",
+      "Firm tries to maximise profits - the aim of each company is to produce that quantity where MC = MR. Each company will try to minimise costs.",
+      "Perfect knowledge exists - each firm is aware of the profits which other firms earn in the industry. Each consumer is aware of the prices being charged by firms.",
+      "Free entry and exit exist in the industry - there are no barriers to exit or entry within the industry.",
+      "No collusion in the market - buyers do not group together with other buyers to influence the price. Sellers do not group together with other sellers to influence the price at which the product is sold.",
+      "Elastic supply of factors of production - companies can acquire the scarce factors of production at existing prices. Scarcity of factors of production will not force prices upwards."
+     ],
+     "perOptionSteps": [
+      10,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2025-ol-q12-c-ii",
+  "topicId": "economics-3-3",
+  "conceptId": "aims-of-the-ecb",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 OL Q12(c)(ii)",
+  "questionText": "The ECB decreased interest rates in 2024. Outline one aim of the ECB.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 4",
+   "answer": 1,
+   "ofParts": 6,
+   "perPart": 4
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An aim of the ECB — any one",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One aim, 4 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Ensure price stability: the ECB aims for an inflation rate of 2% during the medium term.",
+      "Sets interest rates (implements monetary policy): which it lends to commercial banks in the eurozone thus controlling money supply and inflation.",
+      "Manages the eurozone's foreign currency reserves and the buying or selling of currencies to influence the price of the euro in terms of other currencies.",
+      "Ensures that financial markets & institutions run smoothly /are well supervised by national authorities, and that payment systems work well.",
+      "Ensures the stability, safety and soundness of the financial system across the eurozone.",
+      "May offer emergency liquidity assistance: to member financial institutions. Authorises production of euro banknotes by eurozone countries."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2025-ol-q13-a-iii-gov",
+  "topicId": "economics-2-1",
+  "conceptId": "government-action-on-skills",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 OL Q13(a)(iii) — government",
+  "questionText": "Outline one economic measure the Irish government or employers could take to help increase the supply of skilled labour in the economy — the GOVERNMENT’s side.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 7",
+   "answer": 1,
+   "ofParts": 5,
+   "perPart": 7
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A measure for the government — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "One measure, 7 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "Subsidise vocational training – the government could allocate funding to subsidise vocational training, apprenticeships, and upskilling programs in industries facing labour shortages. Give tax breaks to firms or workers who are working in these sectors.",
+      "Increase investment in science, technology, engineering and mathematics education – at all levels, from primary to tertiary; this includes updating curricula, teacher training and incentives for students to pursue STEM careers, etc",
+      "Expand vocational training programmes and apprenticeships – that align with industry needs; partner with businesses to create more opportunities for hands-on training and work experience in high-demand sectors, etc.",
+      "Encourage lifelong learning – fund continuous professional development and adult education; support initiatives that help workers upskill and reskill throughout their careers, etc.",
+      "Develop policies to attract highly skilled immigrants – such as streamlined visa processes and favourable immigration policies; create a welcoming environment that encourages international talent to settle and contribute to the Irish economy, etc. implement policies that support workforce mobility – such as affordable housing, reliable public transportation and regional development initiatives, to ensure that skilled workers can easily move to where jobs are available, etc."
+     ]
+    }
+   }
+  ],
+  "notes": "The part asks for one of each and the scheme heads the two lists separately, so each side is its own card."
+ },
+ {
+  "id": "econ-2025-ol-q13-a-iii-emp",
+  "topicId": "economics-2-1",
+  "conceptId": "employer-action-on-skills",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 OL Q13(a)(iii) — employers",
+  "questionText": "Outline one economic measure the Irish government or employers could take to help increase the supply of skilled labour in the economy — the EMPLOYERS’ side.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 7",
+   "answer": 1,
+   "ofParts": 5,
+   "perPart": 7
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A measure for employers — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "One measure, 7 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "Responses for employers continue on the next page Employers",
+      "Offer incentives / higher wages such as tuition reimbursement or on-the-job training to employees, enabling them to acquire new skills.",
+      "Link with third level institutions – so that appropriate courses are provided which target those skills in demand by employers.",
+      "Provide affordable housing – those businesses which can afford to do so could purchase houses / apartments to provide accommodation for workers who can’t afford current property prices. implement policies that promote gender diversity in education and the workforce – support initiatives that address barriers to women's participation in high-demand industries, such as flexible working arrangements and childcare support, etc. invest in digital literacy and advanced IT training programmes to prepare workers for the demands of the digital economy – support initiatives that provide access to technology and training in rural and underserved areas, etc.",
+      "Increased use of AI – employers could increase the use of AI for monotonous tasks to free up labour to enable labour to be re-trained foe those jobs needing ‘higher’ skills."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2025-ol-q14-a-iii",
+  "topicId": "economics-4-2",
+  "conceptId": "enlarging-the-european-union",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 OL Q14(a)(iii)",
+  "questionText": "Ukraine and Moldova have applied for membership of the European Union. Outline one reason why Ireland might support their application.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 4",
+   "answer": 1,
+   "ofParts": 3,
+   "perPart": 4
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason to support enlargement — any one",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One reason, 4 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Increased economic opportunities – EU membership would open new markets in Ukraine and Moldova for Irish goods and services, creating trade opportunities and strengthening economic ties.",
+      "Enhanced regional stability – EU membership would integrate Ukraine and Moldova into the EU's political and economic framework, promoting peace, security, and stability in Eastern Europe. A stable region benefits all member states, including Ireland.",
+      "Humanitarian / moral responsibility – Given the hardships faced by Ukraine due to the current war and Moldova's role in accommodating refugees, Ireland may view their EU accession as a moral and humanitarian obligation to support these nations’ recovery and development."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2025-ol-q14-c-ii",
+  "topicId": "economics-4-0",
+  "conceptId": "raising-a-countrys-hdi",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 OL Q14(c)(ii)",
+  "questionText": "Suggest one measure a country can take to help it improve its HDI score.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 10",
+   "answer": 1,
+   "ofParts": 5,
+   "perPart": 10
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A measure to raise HDI — any one",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "One measure, 10 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 10,
+     "options": [
+      "Enhancing healthcare access – investing in healthcare infrastructure, increasing the availability of medical services, and implementing universal health coverage can improve life expectancy and reduce mortality rates.",
+      "Improving educational opportunities – expanding access to quality education at all levels, including early childhood education, can boost literacy rates and educational attainment. Vocational training programs can also help equip the workforce with relevant skills, enhancing employability.",
+      "Boosting economic growth – implementing policies that promote economic growth, such as encouraging investment in infrastructure, supporting small and medium enterprises, and fostering entrepreneurship, can increase income levels and reduce poverty.",
+      "Promoting gender equality – ensuring equal access to education, healthcare, and economic opportunities for women can significantly impact HDI scores.",
+      "Social protection programs – establishing social safety nets, such as unemployment benefits, pensions, and food assistance programs, can protect vulnerable populations and improve living standards."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2025-ol-q15-a-iii",
+  "topicId": "economics-3-5",
+  "conceptId": "when-hospitality-businesses-close",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 OL Q15(a)(iii)",
+  "questionText": "More than 570 restaurants, cafes and other food businesses have permanently shut in the last year. Discuss one effect this development may have on local communities.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 10",
+   "answer": 1,
+   "ofParts": 2,
+   "perPart": 10
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An effect on the community — either one",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "One effect, 10 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 10,
+     "options": [
+      "Economic decline – local economies often rely on hospitality businesses for revenue. Their closure can lead to decreased economic activity, affecting local suppliers and reducing overall spending in the community. Job losses – hospitality businesses provide numerous jobs. Their closure can result in significant unemployment, leading to financial strain for individuals and families in the community.",
+      "Reduced tourism – hospitality businesses attract tourists, and their closure can deter visitors, leading to a decline in tourism-related revenue for the area. Inconvenience – consumers will now have to travel further to avail of hospitality services."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2025-ol-q15-b-iii-pos",
+  "topicId": "economics-2-2",
+  "conceptId": "traffic-restrictions-positive",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 OL Q15(b)(iii) — positive",
+  "questionText": "Restrictions were introduced limiting the movement of cars on the Quays in Dublin City centre. Outline one POSITIVE effect for people who live in Dublin.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 6",
+   "answer": 1,
+   "ofParts": 4,
+   "perPart": 6
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A positive effect — any one",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One effect, 6 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Improved public transport efficiency Bus journey times on routes including the North and South Quays have decreased by more than 20%, benefiting commuters who rely on public transportation.",
+      "Reduced traffic congestion There has been a 60% decrease in private cars using the Quays, resulting in smoother traffic flow and less congestion in the city centre.",
+      "Enhanced air quality The reduction in vehicle numbers is likely to contribute to lower emissions, improving air quality for those living in and visiting the city.",
+      "Increased footfall Reports suggest that footfall in the city centre has increased, indicating a more pedestrian-friendly environment."
+     ]
+    }
+   }
+  ],
+  "notes": "The part asks for one of each and the scheme heads the two lists separately, so each side is its own card."
+ },
+ {
+  "id": "econ-2025-ol-q15-b-iii-neg",
+  "topicId": "economics-2-2",
+  "conceptId": "traffic-restrictions-negative",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 OL Q15(b)(iii) — negative",
+  "questionText": "Restrictions were introduced limiting the movement of cars on the Quays in Dublin City centre. Outline one NEGATIVE effect for people who live in Dublin.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 6",
+   "answer": 1,
+   "ofParts": 5,
+   "perPart": 6
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A negative effect — any one",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One effect, 6 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Negative Effects",
+      "Impact on retailers / businesses Some retailers have expressed concerns about a decline in business activity, with certain city centre car parks reporting a 10-15% decrease in throughput.",
+      "Traffic diversion to adjacent areas There are reports of increased traffic in neighbouring areas such as Phibsboro and Drumcondra, as drivers seek alternative routes.",
+      "Challenges for car users Motorists have faced difficulties adapting to the new restrictions, leading to concerns about increased congestion during peak times, especially with the return of schools.",
+      "Enforcement Issues Initial challenges in enforcing the new traffic rules, with some drivers ignoring restrictions due to a lack of visible enforcement."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2025-ol-q16-a-ii",
+  "topicId": "economics-3-1",
+  "conceptId": "why-tax-alcohol-and-tobacco",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 OL Q16(a)(ii)",
+  "questionText": "Explain one reason why the government places taxes on goods such as alcohol and cigarettes.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 10",
+   "answer": 1,
+   "ofParts": 5,
+   "perPart": 10
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason for the tax — any one",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "One reason, 10 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 10,
+     "options": [
+      "Discourage consumption – these goods generate negative externalities and are deemed to be bad for society. By placing taxes on these goods the government can try to discourage consumers from buying them, thus getting closer to the equilibrium society wants.",
+      "Provides revenue for the government / finance government activities – the government requires tax revenue to fund the daily operation of the country e.g. defence, policing etc",
+      "Provide public services – the government requires tax revenue to provide those services such as health care, schools etc. which are essential for citizens.",
+      "Help to re-distribute wealth – the government can re-distribute the taxation collected in the form of social welfare payments to those citizens who require it e.g. old age pensions, single parent allowances etc",
+      "Price inelastic goods – these goods tend to be addictive or price inelastic in demand. This means that if the government places taxes on these goods, individuals will still buy them leading to an increased revenue for the government."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2025-ol-q16-c-ii",
+  "topicId": "economics-3-1",
+  "conceptId": "balanced-regional-development",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 OL Q16(c)(ii)",
+  "questionText": "One aim of the Irish government is to promote Balanced Regional Development throughout Ireland. Suggest one measure the government could take to help achieve this aim.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 6",
+   "answer": 1,
+   "ofParts": 11,
+   "perPart": 6
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A measure for regional development — any one",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One measure, 6 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Invest in Regional Infrastructure Transport – develop and enhance transport networks (e.g., roads, rail, and public transit) in less-developed regions to improve connectivity and accessibility.",
+      "Digital Infrastructure – expand high-speed broadband to rural areas to support remote work and attract businesses.",
+      "Relocate government offices / services to towns and cities outside Dublin, encouraging economic activity in these areas.",
+      "Encourage regional enterprise development Provide grants, tax incentives, and low-interest loans to businesses that set up operations in underdeveloped regions. Support regional hubs for innovation, such as business parks and technology centres, to create jobs and foster entrepreneurship.",
+      "Enhance education and training opportunities Invest in higher education and training facilities in regional areas, offering courses aligned with local industries to retain and attract talent.",
+      "Promote tourism in less-visited areas Develop and market tourist attractions in rural and underdeveloped regions, creating jobs and boosting local economies.",
+      "Foster regional planning and collaboration Strengthen regional councils and planning authorities to ensure cohesive development strategies tailored to each area's needs.",
+      "Provide affordable housing and services Support the construction of affordable housing and improve access to healthcare, childcare, and recreational facilities in regional areas to make them attractive places to live.",
+      "Evidence of Data: Deduct 1m if no quantitative data. Deduct 1m if 2 sources not included. 5 marks",
+      "The Research Process 40 marks Very Good Good Fair Weak 8-10 6-7 4-5 A good application and analysis of Simplistic very basic application of A simplistic, maybe confused No application of concept/theory to Application & key concepts and theories to the key concepts and theories to the line attempt to apply a concept/theory the line of inquiry. Concepts and line of inquiry. of inquiry. to the line of inquiry. theories if evident are irrelevant to Analysis the line of inquiry. Basic analysis and interpretation Very basic analysis & interpretation Data and sources of information is Very poor selection of research and evaluation of sources of of sources of information and data. poorly researched which leads to sources. information and data used. Evaluation may be omitted. very little if no interpretation. No evidence of evaluation. Concepts and theories used make Concepts are somewhat relevant and tentative links to part of the sometimes applied to the line of Interpretation research process. & Evaluation inquiry In some cases, evaluation may be omitted. Arguments & Some good arguments and Arguments/judgements offered are Very limited if any arguments or No arguments and judgements are Judgements judgements are offered which are very limited and may not be judgments are offered. offered. somewhat linked to economics relevant. concepts and theories. The sources of information and Sources of information and data if There is some very limited, very No sources of information used or data used are relevant and in included are somewhat relevant and vague evidence of sources of data are evident. Data date but are very limited in some maybe in date. information used and data. quality and standard. Very little evidence. Research 31-40 21-30 11-20",
+      "Process overall mark Very Good Good Fair Weak Some conclusions are made Some conclusions are made based Some conclusions are made but Little or no conclusions made with based on the basic analysis and on a very basic analysis and limited evidence to support them. very little evidence to support them evaluation of the evidence with a evaluation (if any) with some limited These may be based on irrelevant and irrelevant material used. good link to concepts & theories. evidence that these are somewhat material. Intended aims are not met. Intended aims have been mostly linked to concepts/theories. Some of the intended aims are A lot of regurgitation and repetition. addressed & most are met. Some of the intended aims are met somewhat addressed. Regurgitation Conclusion Recommendations lack structure and some recommendations are and repetition of information already & depth. made. used is evident. These may be New somewhat relevant irrelevant or incorrect. question/line of inquiry suggested. 20 marks 16-20 12-15 8-11 A personal reflection on the SRP A basic personal reflection on some Limited personal insights gained No personal reflection – inadequate is evident. elements of the SRP is attempted. through limited reflection on the reflection. Re-telling of facts learned. Students consider & reflect on A very basic consideration on how topic. No personal insight into how their some elements of their learning. their thinking/attitudes has changed Limited consideration (if any) on how thinking/attitudes has changed Reflection Basic consideration given to how or/and evolved, their opinions their thinking/attitudes has changed and/or evolved, their opinions their thinking/attitudes has and/or behaviour influenced/ not or/and evolved, their opinions and/or behaviour influenced/not changed or/and evolved, their influenced as a result of engaging and/or behaviour influenced/not influenced as a result of engaging opinions and/or behaviour with the study. influenced as result of engaging with with the study. influenced/not influenced as a the study. result of engaging with the study. 10 marks 8-10 6-7 4-5 The SRP is reasonably coherent The SRP generally lacks coherence A poor attempt at delivering a This SRP totally lacks structure and and logical. and focus. coherent and logical SRP. coherence. Irrelevant material and The language, concepts & data The language, concepts & data lack The language, concepts & data are significant errors. Communication are somewhat integrated to give focus & structure & the report may very poor and confused with many The report contains incorrect Presentation & a basic flow & structure. be hard to follow. Lacks consistency. errors throughout. information/plagiarism. Overall Communication of data & Very little evidence of originality and Little to no evidence of originality information is clear but simplistic. innovation. and innovation. Coherence There is evidence of originality and innovation. 15 marks 12-15 9-11 6-8"
      ]
     }
    }

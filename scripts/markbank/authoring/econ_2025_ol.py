@@ -135,4 +135,91 @@ P.cards.append(card(
                {'letter': 'E', 'meaning': 'long-run equilibrium, where marginal cost cuts average '
                                           'cost at its minimum', 'askedInThisQuestion': False}]))
 
+
+# ── Section B, second pass ──────────────────────────────────────────────────
+SIDES4 = ('The part asks for one of each and the scheme heads the two lists separately, so each '
+          'side is its own card.')
+
+P.menu('two assumptions of perfect competition', 'econ-2025-ol-q11-a-ii',
+       'economics-2-0', 'assumptions-of-perfect-competition-ol',
+       'Outline two assumptions of perfect competition, other than homogenous products.',
+       'An assumption of perfect competition — any two',
+       'Two assumptions, the first paid 10 and the second 4. Homogenous products is excluded by '
+       'the question.',
+       ref='2025 OL Q11(a)(ii)', steps=[10, 4], drop=SCAFFOLD)
+
+P.menu('Outline one aim of the ECB', 'econ-2025-ol-q12-c-ii',
+       'economics-3-3', 'aims-of-the-ecb',
+       'The ECB decreased interest rates in 2024. Outline one aim of the ECB.',
+       'An aim of the ECB — any one', 'One aim, 4 marks.',
+       ref='2025 OL Q12(c)(ii)', claim=1, per=4, drop=SCAFFOLD)
+
+P.menu('economic measure the Irish government or employers could take',
+       'econ-2025-ol-q13-a-iii-gov', 'economics-2-1', 'government-action-on-skills',
+       'Outline one economic measure the Irish government or employers could take to help '
+       'increase the supply of skilled labour in the economy — the GOVERNMENT’s side.',
+       'A measure for the government — any one', 'One measure, 7 marks.',
+       ref='2025 OL Q13(a)(iii) — government', claim=1, per=7,
+       drop=SCAFFOLD + ('Irish government',), stop='Responses for employers', notes=SIDES4)
+
+P.menu('economic measure the Irish government or employers could take',
+       'econ-2025-ol-q13-a-iii-emp', 'economics-2-1', 'employer-action-on-skills',
+       'Outline one economic measure the Irish government or employers could take to help '
+       'increase the supply of skilled labour in the economy — the EMPLOYERS’ side.',
+       'A measure for employers — any one', 'One measure, 7 marks.',
+       ref='2025 OL Q13(a)(iii) — employers', claim=1, per=7,
+       drop=SCAFFOLD, after='Responses for employers')
+
+P.menu('Ukraine and Moldova have applied for membership', 'econ-2025-ol-q14-a-iii',
+       'economics-4-2', 'enlarging-the-european-union',
+       'Ukraine and Moldova have applied for membership of the European Union. Outline one reason '
+       'why Ireland might support their application.',
+       'A reason to support enlargement — any one', 'One reason, 4 marks.',
+       ref='2025 OL Q14(a)(iii)', claim=1, per=4, drop=SCAFFOLD)
+
+P.menu('measure a country can take to help it improve its HDI', 'econ-2025-ol-q14-c-ii',
+       'economics-4-0', 'raising-a-countrys-hdi',
+       'Suggest one measure a country can take to help it improve its HDI score.',
+       'A measure to raise HDI — any one', 'One measure, 10 marks.',
+       ref='2025 OL Q14(c)(ii)', claim=1, per=10,
+       drop=SCAFFOLD + ('Possible Responses',))
+
+P.menu('permanently shut their doors in the last year', 'econ-2025-ol-q15-a-iii',
+       'economics-3-5', 'when-hospitality-businesses-close',
+       'More than 570 restaurants, cafes and other food businesses have permanently shut in the '
+       'last year. Discuss one effect this development may have on local communities.',
+       'An effect on the community — either one', 'One effect, 10 marks.',
+       ref='2025 OL Q15(a)(iii)', claim=1, per=10, drop=SCAFFOLD)
+
+P.menu('Restrictions were introduced limiting the movement of cars', 'econ-2025-ol-q15-b-iii-pos',
+       'economics-2-2', 'traffic-restrictions-positive',
+       'Restrictions were introduced limiting the movement of cars on the Quays in Dublin City '
+       'centre. Outline one POSITIVE effect for people who live in Dublin.',
+       'A positive effect — any one', 'One effect, 6 marks.',
+       ref='2025 OL Q15(b)(iii) — positive', claim=1, per=6,
+       drop=SCAFFOLD + ('Positive Effects',), stop='Negative Effects', notes=SIDES4)
+
+P.menu('Restrictions were introduced limiting the movement of cars', 'econ-2025-ol-q15-b-iii-neg',
+       'economics-2-2', 'traffic-restrictions-negative',
+       'Restrictions were introduced limiting the movement of cars on the Quays in Dublin City '
+       'centre. Outline one NEGATIVE effect for people who live in Dublin.',
+       'A negative effect — any one', 'One effect, 6 marks.',
+       ref='2025 OL Q15(b)(iii) — negative', claim=1, per=6,
+       drop=SCAFFOLD, after='Negative Effects')
+
+P.menu('Excise duty is charged on certain goods', 'econ-2025-ol-q16-a-ii',
+       'economics-3-1', 'why-tax-alcohol-and-tobacco',
+       'Explain one reason why the government places taxes on goods such as alcohol and '
+       'cigarettes.',
+       'A reason for the tax — any one', 'One reason, 10 marks.',
+       ref='2025 OL Q16(a)(ii)', claim=1, per=10, drop=SCAFFOLD)
+
+P.menu('promote Balanced Regional', 'econ-2025-ol-q16-c-ii',
+       'economics-3-1', 'balanced-regional-development',
+       'One aim of the Irish government is to promote Balanced Regional Development throughout '
+       'Ireland. Suggest one measure the government could take to help achieve this aim.',
+       'A measure for regional development — any one', 'One measure, 6 marks.',
+       ref='2025 OL Q16(c)(ii)', claim=1, per=6,
+       drop=SCAFFOLD + ('Irish government could take to help achieve',))
+
 P.emit()
