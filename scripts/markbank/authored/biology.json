@@ -38690,6 +38690,67 @@
   ]
  },
  {
+  "id": "bio-2024-hl-q12-b-i",
+  "topicId": "bio-3-1",
+  "conceptId": "drawing-the-predator-curve",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 HL Q12(b)(i)",
+  "questionText": "Copy the graph into your answerbook. Then, using a dashed line (- - - -), show how the population of the prey’s main predator species varies over the same time period.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Dashed line lower peaks than prey",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Dashed line out of sync compared to prey.",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme numbers this answer under its own Question 2 while the paper prints Question 12. Both marks are for the shape of the curve rather than for the drawing itself."
+ },
+ {
+  "id": "bio-2024-hl-q12-b-v",
+  "topicId": "bio-3-1",
+  "conceptId": "why-human-numbers-do-not-follow-the-curve",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 HL Q12(b)(v)",
+  "questionText": "Human population numbers do not follow a similar pattern to the one shown in the graph. Suggest two reasons for this. (27) Prey Numbers of organisms X Time",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 at 4 marks each"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Healthcare",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "food supply",
+    "marks": 4
+   }
+  ],
+  "notes": "The scheme also allows a lack of predators, or any other correct reason."
+ },
+ {
   "id": "bio-2024-ol-q6-a",
   "topicId": "bio-u2",
   "conceptId": "what-the-microscope-stage-does",

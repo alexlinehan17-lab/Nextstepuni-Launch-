@@ -59,4 +59,22 @@ A.card(12, 'b', 'iii', topic='bio-3-1', concept='what-happens-to-prey-if-the-pre
 # food chain from the food web", which the build refuses as a content-free row —
 # rightly, because a card whose answer is "any correct answer" teaches nothing.
 
+A.card(12, 'b', 'i', topic='bio-3-1', concept='drawing-the-predator-curve',
+       source='pdf',
+       from_runs=[((2, 'b', 'i'), 1, slice(0, None)),
+                  ((2, 'b', 'i'), 2, slice(0, None))],
+       marks=[2, 2],
+       notes='The scheme numbers this answer under its own Question 2 while the paper '
+             'prints Question 12. Both marks are for the shape of the curve rather than '
+             'for the drawing itself.')
+
+A.card(12, 'b', 'v', topic='bio-3-1', concept='why-human-numbers-do-not-follow-the-curve',
+       source='pdf',
+       from_runs=[((2, 'b', 'v'), 1, slice(0, None)),
+                  ((2, 'b', 'v'), 2, slice(0, None))],
+       marks=[4, 4], notation='2 at 4 marks each',
+       notes='The scheme also allows a lack of predators, or any other correct reason.',
+       checked='The paper prints the part mark "(27)" after the question and runs the '
+               'graph labels on after it, so the text does not end on punctuation.')
+
 A.emit()
