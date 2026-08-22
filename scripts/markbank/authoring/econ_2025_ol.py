@@ -236,4 +236,13 @@ P.menu('economic term homogenous product', 'econ-2025-ol-q11-a-i',
 # expenditure G:" and "Government Spending X: Exports" — so a card would show a
 # letter run onto the end of the answer before it.
 
+# The plain id belongs to a card citing 2025 OL Q16(a)(iii) on falling
+# inflation — another part whose reconstructed path is a numeral out.
+P.menu('Cross-border shopping & loss of revenue', 'econ-2025-ol-q16-a-iii-excise',
+       'economics-3-1', 'downside-of-raising-excise-on-alcohol-and-tobacco',
+       'Outline one possible negative effect for the Irish economy if it continues to '
+       'increase excise duty on alcohol and tobacco.',
+       'A negative effect — any one', 'One effect, 8 marks.',
+       ref='2025 OL Q16(a)(iii)', claim=1, per=8, drop=SCAFFOLD)
+
 P.emit()

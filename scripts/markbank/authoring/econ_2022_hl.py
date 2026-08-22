@@ -281,4 +281,14 @@ P.menu('importance of environmental sustainability for the future of our economy
        'developing it. The scheme lists four.',
        ref='2022 HL Q16(b)(i)', claim=1, per=7, drop=SCAFFOLD)
 
+P.menu('Rapid increase in milk production', 'econ-2022-hl-q15-a-i',
+       'economics-1-4', 'reading-trends-in-irish-milk-production',
+       'Analyse two key trends in Irish milk production across the time period in the chart.',
+       'A trend — any two', 'Two trends, 4 marks each.',
+       ref='2022 HL Q15(a)(i)', claim=2, per=4, drop=SCAFFOLD)
+
+# Q15(a)(iii) is not carded: the scheme's tariff reads 9/5 across a part whose
+# marks are mostly for a labelled diagram, and it does not say how much of that
+# belongs to the written steps. I had it at 4 x 1, which was my arithmetic.
+
 P.emit()

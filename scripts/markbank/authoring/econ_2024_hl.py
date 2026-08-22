@@ -458,4 +458,25 @@ P.menu('Revitalisation of local communities',
        'A benefit — any two', 'Two benefits, 6 marks each.',
        ref='2024 HL Q16(a)(ii)', claim=2, per=6, drop=SCAF2)
 
+P.menu('Void in Irish banking market', 'econ-2024-hl-q14-c-iii',
+       'economics-2-0', 'why-neobanks-grew-in-ireland',
+       'Outline two reasons why the number of people using the services offered by '
+       'Neobanks/Challenger banks such as Revolut and N26 has grown rapidly in Ireland.',
+       'A reason they grew — any two', 'Two reasons, 6 marks each.',
+       ref='2024 HL Q14(c)(iii)', claim=2, per=6, drop=SCAF2)
+
+P.menu('Irish exports should increase', 'econ-2024-hl-q15-b-ii',
+       'economics-4-2', 'a-stronger-dollar-and-irish-trade',
+       'Outline the effects an increase in the value of the American dollar could have on '
+       "Ireland's exports to the US and on Irish imports from the US.",
+       'The effect on each side — both of these', 'Two effects, 5 marks each.',
+       ref='2024 HL Q15(b)(ii)', claim=2, per=5,
+       drop=SCAF2 + ('Outline the effects this increase in the value',))
+
+P.menu('Capital expenditure is spending on items not used up', 'econ-2024-hl-q16-c-i',
+       'economics-3-1', 'what-capital-expenditure-is',
+       'Explain the term capital expenditure, using an example other than transport.',
+       'The explanation — this one', 'The explanation carries 4 with 2 for the example.',
+       ref='2024 HL Q16(c)(i)', claim=1, per=4, drop=SCAF2)
+
 emit(cards + P.cards)

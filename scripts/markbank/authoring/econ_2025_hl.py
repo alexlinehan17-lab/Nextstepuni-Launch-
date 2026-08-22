@@ -371,4 +371,30 @@ P.menu('positive and one negative economic effect of full employment',
        ref='2025 HL Q14(c)(ii) — positive', claim=1, per=6,
        drop=SCAFFOLD, stop='Negative')
 
+# The scheme runs both sides of Q15(b)(iii) together, marking the break with
+# "DISAGREE:", so each side is its own card.
+P.menu('extending mortgage interest relief', 'econ-2025-hl-q15-b-iii-agree',
+       'economics-1-3', 'the-case-for-mortgage-interest-relief',
+       'In Budget 2025 the government extended mortgage interest relief. Do you AGREE with '
+       'this decision? Explain your answer.',
+       'A reason to agree — any one', 'One reason, 5 marks.',
+       ref='2025 HL Q15(b)(iii) — agree', claim=1, per=5,
+       drop=SCAFFOLD, stop='DISAGREE:')
+
+P.menu('extending mortgage interest relief', 'econ-2025-hl-q15-b-iii-disagree',
+       'economics-1-3', 'the-case-against-mortgage-interest-relief',
+       'In Budget 2025 the government extended mortgage interest relief. Do you DISAGREE '
+       'with this decision? Explain your answer.',
+       'A reason to disagree — any one', 'One reason, 5 marks.',
+       ref='2025 HL Q15(b)(iii) — disagree', claim=1, per=5,
+       drop=SCAFFOLD + ('DISAGREE:',), after='DISAGREE:')
+
+P.menu('Public infrastructure refers to essential facilities', 'econ-2025-hl-q15-c-i',
+       'economics-3-1', 'what-public-infrastructure-is',
+       'Explain the economic term public infrastructure and illustrate your answer with an '
+       'example.',
+       'The explanation and an example — both of these',
+       'Explanation and example, 6 marks between them.',
+       ref='2025 HL Q15(c)(i)', claim=2, per=3, drop=SCAFFOLD)
+
 P.emit()
