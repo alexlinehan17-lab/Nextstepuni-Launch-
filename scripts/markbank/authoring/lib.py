@@ -110,13 +110,33 @@ class Author:
              use=None, marks=None, tariff='fixed', total=None, figure=None,
              labels=None, notes=None, stem=True, checked=None, suffix='',
              row_kind='point', notation=None, spread=False, context=None,
-             omit=(), source='md', card_id=None, from_run=None, tick=None):
+             omit=(), source='md', card_id=None, from_run=None, tick=None,
+             first_sentence=False):
         ref = part_ref(self.year, self.level, q, letter, roman)
 
         question = self.paper.text(q, letter, roman)
         if not question:
             raise Refused(f'{ref}: the paper has no text for this part')
-        if self.paper.suspect(q, letter, roman) and not checked:
+
+        # Where a paper sets two questions side by side, the block segmentation
+        # welds the neighbour's text onto this one: 2023 OL Q2(c) comes out as
+        # "Data always involves numbers. Three bases together are known as a
+        # ………". The statement is the first sentence — but rather than trust
+        # that, the trimmed text has to appear in the marking scheme, which
+        # prints these statements as well. A second document confirming it is
+        # what separates a trim from a guess, so an unconfirmed one is refused.
+        if first_sentence:
+            trimmed = re.split(r'(?<=[.?!])\s+', question)[0].strip()
+            with open(self.scheme.path, encoding='utf-8', errors='ignore') as fh:
+                scheme_text = ' '.join(fh.read().split()).lower()
+            if trimmed.rstrip('.').lower() not in scheme_text:
+                raise Refused(f'{ref}: first sentence {trimmed[:60]!r} does not appear '
+                              f'in the scheme, so the trim is unconfirmed')
+            question = trimmed
+
+        # The flag is raised on what the paper block held; a scheme-confirmed
+        # trim answers it, so the check runs on the text the card will carry.
+        if not first_sentence and self.paper.suspect(q, letter, roman) and not checked:
             raise Refused(
                 f'{ref}: question text is flagged and unreviewed — {question!r}. '
                 f'Open the page; if it is right, pass checked="<why>".')
