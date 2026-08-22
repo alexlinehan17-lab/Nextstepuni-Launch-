@@ -7048,6 +7048,20 @@ export const CARDS: SecCard[] = [
     },
   } as SecCard,
   {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q16bii", topicId: "agsci-4-2", conceptId: "advice-from-the-colostrum-trial",
+    section: "B", questionRef: "2024 HL Q16(b)(ii)",
+    stem: "Sample number Treatment group Colostrum IgG Average birthweight (kg) Average weaning (mg/ml) weight (kg) Sample 1 Pooled colostrum 100.7 34.0 94.0 Sample 2 Own dam colostrum 99.4 33.3 93.7 Sample 3 Colostrum from another dam 95.2 34.3 91.7 (Adapted from Teagasc, 2019)",
+    questionText: "Outline advice Ella and Sadie would give to farmers based on the results of their investigation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Pooling colostrum or using colostrum from another dam has little effect on calf performance or own dam colostrum is best followed by pooled colostrum", marks: 4 },
+    ],
+  } as SecCard,
+  {
     ...base, kind: "diagram",
     year: 2025, level: "higher",
     paperFileid: "LC024ALP000EV",

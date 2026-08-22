@@ -84,4 +84,8 @@ A.card(1, 'b', topic='agsci-1-5', concept='how-a-stomach-tube-is-used',
              'also accepts describing the tube being passed down the oesophagus into the '
              'stomach, and feeding weak lambs.')
 
+# ── Q16(b)(ii): what the colostrum trial tells a farmer ───────────────────
+A.card(16, 'b', 'ii', topic='agsci-4-2', concept='advice-from-the-colostrum-trial',
+       from_run=((16, 'b', 'ii'), 0, slice(4, None)), marks=[4])
+
 A.emit()

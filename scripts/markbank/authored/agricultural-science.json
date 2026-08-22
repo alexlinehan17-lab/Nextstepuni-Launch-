@@ -34018,6 +34018,31 @@
   "figureKey": "agricultural-science-2023-OL-paper-p24-art"
  },
  {
+  "id": "agsci-2023-ol-q6aiii",
+  "topicId": "agsci-3-3-3",
+  "conceptId": "silage-dmd-for-dry-suckler-cows",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2023 OL Q6(a)(iii)",
+  "questionText": "State which silage DMD % is suitable for dry suckler cows that have a good BCS.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "<67(%) or D",
+    "marks": 1
+   }
+  ],
+  "stem": "Silage % Dry Matter Digestibility (DMD) 76+ 74 – 76 72 69 – 70 <67 Dry cows requiring BCS gain Dry dairy cows requiring little or no BCS gain Dry dairy cows - meal feeding required to gain BCS Freshly calved dairy cows in winter milk Dry suckler cows requiring BCS gain Suckler cows requiring no BCS gain Or",
+  "notes": "D is the lowest band on the paper's own list of silage qualities."
+ },
+ {
   "id": "agsci-2024-hl-q10a",
   "topicId": "agsci-3-2",
   "conceptId": "recognising-a-multi-species-sward",
@@ -34301,6 +34326,30 @@
   ],
   "notes": "Equipment B is the tube and syringe in the middle photograph. The scheme also accepts describing the tube being passed down the oesophagus into the stomach, and feeding weak lambs.",
   "figureKey": "agricultural-science-2024-HL-paper-p03-art"
+ },
+ {
+  "id": "agsci-2024-hl-q16bii",
+  "topicId": "agsci-4-2",
+  "conceptId": "advice-from-the-colostrum-trial",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2024 HL Q16(b)(ii)",
+  "questionText": "Outline advice Ella and Sadie would give to farmers based on the results of their investigation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Pooling colostrum or using colostrum from another dam has little effect on calf performance or own dam colostrum is best followed by pooled colostrum",
+    "marks": 4
+   }
+  ],
+  "stem": "Sample number Treatment group Colostrum IgG Average birthweight (kg) Average weaning (mg/ml) weight (kg) Sample 1 Pooled colostrum 100.7 34.0 94.0 Sample 2 Own dam colostrum 99.4 33.3 93.7 Sample 3 Colostrum from another dam 95.2 34.3 91.7 (Adapted from Teagasc, 2019)"
  },
  {
   "id": "agsci-2024-ol-q1b",

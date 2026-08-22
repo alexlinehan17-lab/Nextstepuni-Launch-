@@ -6935,6 +6935,20 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2023-ol-q6aiii", topicId: "agsci-3-3-3", conceptId: "silage-dmd-for-dry-suckler-cows",
+    section: "A", questionRef: "2023 OL Q6(a)(iii)",
+    stem: "Silage % Dry Matter Digestibility (DMD) 76+ 74 – 76 72 69 – 70 <67 Dry cows requiring BCS gain Dry dairy cows requiring little or no BCS gain Dry dairy cows - meal feeding required to gain BCS Freshly calved dairy cows in winter milk Dry suckler cows requiring BCS gain Suckler cows requiring no BCS gain Or",
+    questionText: "State which silage DMD % is suitable for dry suckler cows that have a good BCS.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "<67(%) or D", marks: 1 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2024, level: "ordinary",
     paperFileid: "LC024GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",

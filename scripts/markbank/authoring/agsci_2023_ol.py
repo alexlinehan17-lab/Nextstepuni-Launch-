@@ -82,4 +82,12 @@ A.card(14, 'b', 'iii', topic='agsci-3-3-1', concept='advantages-of-spot-spraying
 # scheme whether that means two reasons at 2 or four at 2. Guessing a total is
 # worse than leaving the part uncarded.
 
+# ── Q6(a)(iii): silage for dry suckler cows ───────────────────────────────
+# One mark, which the scheme prints beside the answer. The extraction carries
+# the tail of the question onto the front of the marking point, so the answer
+# is taken from the third word on.
+A.card(6, 'a', 'iii', topic='agsci-3-3-3', concept='silage-dmd-for-dry-suckler-cows',
+       from_run=((6, 'a', 'iii'), 0, slice(2, 5)), marks=[1],
+       notes='D is the lowest band on the paper\'s own list of silage qualities.')
+
 A.emit()
