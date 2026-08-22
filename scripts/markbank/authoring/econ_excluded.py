@@ -25,6 +25,8 @@ EXCLUDED = {
         'answered by reading the infographic printed with it',
     '2024 HL Section A Q1(a)':
         'the answer is calculated off the infographic printed with it',
+    '2021 HL Q14(a)(i)':
+        'every response describes the shape of the inflation chart printed with it',
 
     # Answered against a choice the student made earlier in the question, so
     # there is no fixed answer for a card to hold.
@@ -35,6 +37,12 @@ EXCLUDED = {
     # explanation, that explanation IS carded; these have only the drawing.
     '2023 HL Section A Q4(a)':
         'a table completion — the marks are for filling the table, not for prose',
+
+    # The Student Research Project. Its "responses" are the examiner's grading
+    # bands — "Deduct 1m if no quantitative data", "The Research Process 40
+    # Marks Excellent Very Good Good Fair Weak" — not answers to a question.
+    '2021 HL Q16(c)(iii)':
+        'coursework grading bands, not answers to a question',
 }
 
 
