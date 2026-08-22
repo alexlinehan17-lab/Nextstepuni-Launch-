@@ -222,4 +222,18 @@ P.menu('promote Balanced Regional', 'econ-2025-ol-q16-c-ii',
        ref='2025 OL Q16(c)(ii)', claim=1, per=6,
        drop=SCAFFOLD + ('Irish government could take to help achieve',))
 
+# ── further Section B parts ────────────────────────────────────────────────
+P.menu('economic term homogenous product', 'econ-2025-ol-q11-a-i',
+       'economics-2-1', 'what-a-homogenous-product-is',
+       'Explain the economic term homogenous product and give one example of a homogenous '
+       'product.',
+       'The explanation and an example — both of these',
+       'Explanation and example, 6 marks between them.',
+       ref='2025 OL Q11(a)(i)', claim=2, per=3, drop=SCAFFOLD)
+
+# Q12(b)(i) is not carded: it asks what C, G and X each stand for, and the
+# scheme's three answers come out welded across two lines — "Consumption
+# expenditure G:" and "Government Spending X: Exports" — so a card would show a
+# letter run onto the end of the answer before it.
+
 P.emit()
