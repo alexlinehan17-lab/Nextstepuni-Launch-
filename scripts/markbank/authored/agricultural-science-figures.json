@@ -5610,5 +5610,20 @@
   "labelMeanings": [],
   "questionRef": "2025 HL Q1(a), Q1(b) and Q1(c)",
   "notes": "Re-cropped with crop-question-art.py; the earlier crop of this page was never published."
+ },
+ {
+  "file": "agricultural-science-2024-HL-paper-p04-art.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "The instruction 'Identify any two of the following breeds.' above three colour photographs lettered A, B and C, each over an empty answer cell. A: a long pale pink pig in profile on grass with forward-drooping ears, against a metal gate. B: the head and neck of a sheep with a bare blue-grey face, a dark muzzle, long upright ears and a yellow ear tag, its dense cream fleece behind. C: a heavy bull, red-brown with broad white patches over the shoulder, flank and hindquarters, and a white head. Below the answer row the page prints part (ii) on the sheep's prolificacy and part (iii) on the bull as a terminal sire, with their ruled boxes.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q2(a)(i), Q2(a)(ii) and Q2(a)(iii)",
+  "notes": "Re-cropped with crop-question-art.py --pad-top 34. Without it the artwork extent starts below the letters, and a card that asks about A, B and C cannot show them; the earlier crop, p04-i0, was never published."
  }
 ]

@@ -12264,5 +12264,20 @@
   "year": 2025,
   "level": "higher",
   "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission"
+ },
+ "agricultural-science-2024-HL-paper-p04-art": {
+  "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p04-art.png",
+  "md5": "3e02254d50de3b69951392d41a4cd272",
+  "alt": "The instruction 'Identify any two of the following breeds.' above three colour photographs lettered A, B and C, each over an empty answer cell. A: a long pale pink pig in profile on grass with forward-drooping ears, against a metal gate. B: the head and neck of a sheep with a bare blue-grey face, a dark muzzle, long upright ears and a yellow ear tag, its dense cream fleece behind. C: a heavy bull, red-brown with broad white patches over the shoulder, flank and hindquarters, and a white head. Below the answer row the page prints part (ii) on the sheep's prolificacy and part (iii) on the bull as a terminal sire, with their ruled boxes.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q2(a)(i), Q2(a)(ii) and Q2(a)(iii)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission"
  }
 }

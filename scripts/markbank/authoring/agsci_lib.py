@@ -111,19 +111,28 @@ class Author:
         # five true/false statements and prints "False True True False False"
         # once, with the roman markers in a neighbouring cell. from_run names
         # the parent part, which of its points holds the run, and which token in
-        # that run belongs to this part. The token is still lifted from the
-        # scheme — only the correspondence between position and part is read,
-        # and that is what the page shows.
+        # that run belongs to this part. A slice takes a span of words instead
+        # of one, for the commoner case where the scheme's answer simply runs on
+        # from the tail of its own question cue — "Explain the underlined term.
+        # Produce many offspring". The words are still lifted from the scheme;
+        # only where the cue stops and the answer starts is read off the page.
         if from_run is not None:
             parent, point_index, token_index = from_run
             run = scheme.points(*parent)
             if point_index >= len(run):
                 raise Refused(f'{ref}: parent {parent} has no point {point_index}')
             tokens = run[point_index].split()
-            if token_index >= len(tokens):
-                raise Refused(f'{ref}: run {run[point_index]!r} has no token '
-                              f'{token_index}')
-            candidates = [tokens[token_index]]
+            if isinstance(token_index, slice):
+                taken = tokens[token_index]
+                if not taken:
+                    raise Refused(f'{ref}: run {run[point_index]!r} yields nothing '
+                                  f'for {token_index}')
+                candidates = [' '.join(taken)]
+            else:
+                if token_index >= len(tokens):
+                    raise Refused(f'{ref}: run {run[point_index]!r} has no token '
+                                  f'{token_index}')
+                candidates = [tokens[token_index]]
             use = [0] if use is None else use
         else:
             candidates = scheme.points(q, letter, roman)

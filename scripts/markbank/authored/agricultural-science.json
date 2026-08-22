@@ -34040,6 +34040,127 @@
   "figureKey": "agricultural-science-2024-HL-paper-p36-art"
  },
  {
+  "id": "agsci-2024-hl-q2ai",
+  "topicId": "agsci-4-1",
+  "conceptId": "identifying-pig-sheep-and-cattle-breeds",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2024 HL Q2(a)(i)",
+  "questionText": "Identify any two of the following breeds.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: Landrace",
+    "marks": 2,
+    "accepts": [
+     "C: Simmental"
+    ],
+    "contextNote": "Three photographs: A a long pale pink pig with forward-drooping ears, B the head of a sheep with a bare blue-grey face and long upright ears over a dense cream fleece, C a heavy red-brown bull with broad white patches and a white head."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: Blue Leicester",
+    "marks": 2,
+    "accepts": [
+     "C: Simmental"
+    ]
+   }
+  ],
+  "stem": "Or",
+  "notes": "Any two of the three score at 2 marks each; the third is carried as an accepted alternative.",
+  "figureKey": "agricultural-science-2024-HL-paper-p04-art",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Landrace",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Blue Leicester",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "agsci-2024-hl-q2aii",
+  "topicId": "agsci-4-1",
+  "conceptId": "what-prolificacy-means",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2024 HL Q2(a)(ii)",
+  "questionText": "The sheep in B in part (i) above is known for its prolificacy. Explain the underlined term.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Produce many offspring",
+    "marks": 2
+   }
+  ],
+  "stem": "Or",
+  "notes": "Breed B is the sheep in the middle photograph.",
+  "figureKey": "agricultural-science-2024-HL-paper-p04-art"
+ },
+ {
+  "id": "agsci-2024-hl-q2aiii",
+  "topicId": "agsci-4-1",
+  "conceptId": "characteristics-of-a-terminal-sire",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2024 HL Q2(a)(iii)",
+  "questionText": "Briefly explain characteristics of bull C in part (i) above that make it suitable as a terminal sire.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Good conformation",
+    "marks": 2,
+    "accepts": [
+     "Briefly explain characteristics of bull C in part (i) that make it suitable as a terminal sire.",
+     "good KO%",
+     "good carcase weight"
+    ]
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "high muscle",
+    "marks": 2,
+    "accepts": [
+     "Briefly explain characteristics of bull C in part (i) that make it suitable as a terminal sire.",
+     "good KO%",
+     "good carcase weight"
+    ]
+   }
+  ],
+  "stem": "Or",
+  "notes": "Bull C is the red-and-white bull in the right-hand photograph.",
+  "figureKey": "agricultural-science-2024-HL-paper-p04-art"
+ },
+ {
   "id": "agsci-2025-hl-q15b",
   "topicId": "agsci-3-1",
   "conceptId": "identifying-common-farm-weeds",

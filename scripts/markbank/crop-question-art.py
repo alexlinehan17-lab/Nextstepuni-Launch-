@@ -117,6 +117,14 @@ def main() -> int:
              "box. Opt-in, so no crop produced before this existed can change.",
     )
     ap.add_argument(
+        "--pad-top", type=float, default=0.0,
+        help="extra points of page above the artwork. The extent is taken from the "
+             "drawings and images, so a label printed ABOVE them — the A, B and C over "
+             "a row of breed photographs — falls outside it and is cropped away, "
+             "leaving a card that asks about letters it does not show. Opt-in and "
+             "zero by default, so no crop taken before this existed can change.",
+    )
+    ap.add_argument(
         "--ignore-rules",
         action="store_true",
         help="drop flat rules (underlined words) from the artwork extent. Opt-in, "
@@ -134,7 +142,8 @@ def main() -> int:
         print(f"no artwork found on page {args.page}", file=sys.stderr)
         return 3
     # Keep the attribution the SEC prints beneath each symbol.
-    box = fitz.Rect(box.x0 - PAD, box.y0 - PAD, box.x1 + PAD, box.y1 + PAD * 2.5) & page.rect
+    box = fitz.Rect(box.x0 - PAD, box.y0 - PAD - args.pad_top,
+                    box.x1 + PAD, box.y1 + PAD * 2.5) & page.rect
     pix = page.get_pixmap(clip=box, matrix=fitz.Matrix(args.scale, args.scale))
     args.out.parent.mkdir(parents=True, exist_ok=True)
     pix.save(args.out)

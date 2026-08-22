@@ -6928,6 +6928,78 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "diagram",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q2ai", topicId: "agsci-4-1", conceptId: "identifying-pig-sheep-and-cattle-breeds",
+    section: "A", questionRef: "2024 HL Q2(a)(i)",
+    stem: "Or",
+    questionText: "Identify any two of the following breeds.",
+    tariffModel: {"kind":"fixed","notation":"2(2)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A: Landrace", marks: 2, accepts: ["C: Simmental"], contextNote: "Three photographs: A a long pale pink pig with forward-drooping ears, B the head of a sheep with a bare blue-grey face and long upright ears over a dense cream fleece, C a heavy red-brown bull with broad white patches and a white head." },
+    { id: "r-2", kind: "point", verbatim: "B: Blue Leicester", marks: 2, accepts: ["C: Simmental"] },
+    ],
+    figure: {
+          "candId": "agricultural-science-2024-HL-paper-p04-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p04-art.png",
+          "srcHash": "3e02254d50de3b69951392d41a4cd272",
+          "alt": "The instruction 'Identify any two of the following breeds.' above three colour photographs lettered A, B and C, each over an empty answer cell. A: a long pale pink pig in profile on grass with forward-drooping ears, against a metal gate. B: the head and neck of a sheep with a bare blue-grey face, a dark muzzle, long upright ears and a yellow ear tag, its dense cream fleece behind. C: a heavy bull, red-brown with broad white patches over the shoulder, flank and hindquarters, and a white head. Below the answer row the page prints part (ii) on the sheep's prolificacy and part (iii) on the bull as a terminal sire, with their ruled boxes.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Landrace","askedInThisQuestion":true},{"letter":"B","meaning":"Blue Leicester","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q2aii", topicId: "agsci-4-1", conceptId: "what-prolificacy-means",
+    section: "A", questionRef: "2024 HL Q2(a)(ii)",
+    stem: "Or",
+    questionText: "The sheep in B in part (i) above is known for its prolificacy. Explain the underlined term.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Produce many offspring", marks: 2 },
+    ],
+    figure: {
+          "candId": "agricultural-science-2024-HL-paper-p04-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p04-art.png",
+          "srcHash": "3e02254d50de3b69951392d41a4cd272",
+          "alt": "The instruction 'Identify any two of the following breeds.' above three colour photographs lettered A, B and C, each over an empty answer cell. A: a long pale pink pig in profile on grass with forward-drooping ears, against a metal gate. B: the head and neck of a sheep with a bare blue-grey face, a dark muzzle, long upright ears and a yellow ear tag, its dense cream fleece behind. C: a heavy bull, red-brown with broad white patches over the shoulder, flank and hindquarters, and a white head. Below the answer row the page prints part (ii) on the sheep's prolificacy and part (iii) on the bull as a terminal sire, with their ruled boxes.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q2aiii", topicId: "agsci-4-1", conceptId: "characteristics-of-a-terminal-sire",
+    section: "A", questionRef: "2024 HL Q2(a)(iii)",
+    stem: "Or",
+    questionText: "Briefly explain characteristics of bull C in part (i) above that make it suitable as a terminal sire.",
+    tariffModel: {"kind":"fixed","notation":"2(2)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Good conformation", marks: 2, accepts: ["Briefly explain characteristics of bull C in part (i) that make it suitable as a terminal sire.","good KO%","good carcase weight"] },
+    { id: "r-2", kind: "point", verbatim: "high muscle", marks: 2, accepts: ["Briefly explain characteristics of bull C in part (i) that make it suitable as a terminal sire.","good KO%","good carcase weight"] },
+    ],
+    figure: {
+          "candId": "agricultural-science-2024-HL-paper-p04-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p04-art.png",
+          "srcHash": "3e02254d50de3b69951392d41a4cd272",
+          "alt": "The instruction 'Identify any two of the following breeds.' above three colour photographs lettered A, B and C, each over an empty answer cell. A: a long pale pink pig in profile on grass with forward-drooping ears, against a metal gate. B: the head and neck of a sheep with a bare blue-grey face, a dark muzzle, long upright ears and a yellow ear tag, its dense cream fleece behind. C: a heavy bull, red-brown with broad white patches over the shoulder, flank and hindquarters, and a white head. Below the answer row the page prints part (ii) on the sheep's prolificacy and part (iii) on the bull as a terminal sire, with their ruled boxes.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
     year: 2025, level: "higher",
     paperFileid: "LC024ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",

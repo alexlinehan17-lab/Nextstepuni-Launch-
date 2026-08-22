@@ -37,4 +37,29 @@ A.card(17, 'c', 'iii', topic='agsci-3-1', concept='calculating-percent-soil-orga
        notes='Carries the answer to part (ii) forward; 0.58 is the conversion from '
              'organic matter to organic carbon.')
 
+# ── Q2(a): three breed photographs ────────────────────────────────────────
+BREEDS24 = 'agricultural-science-2024-HL-paper-p04-art'
+BREEDS24_CONTEXT = ('Three photographs: A a long pale pink pig with forward-drooping '
+                    'ears, B the head of a sheep with a bare blue-grey face and long '
+                    'upright ears over a dense cream fleece, C a heavy red-brown bull '
+                    'with broad white patches and a white head.')
+
+A.card(2, 'a', 'i', topic='agsci-4-1', concept='identifying-pig-sheep-and-cattle-breeds',
+       use=[0, 1], marks=[2, 2], notation='2(2)', spread=True,
+       figure=BREEDS24, labels='auto', context=BREEDS24_CONTEXT,
+       notes='Any two of the three score at 2 marks each; the third is carried as an '
+             'accepted alternative.')
+
+# The scheme runs this answer on from the tail of its own cue — "Explain the
+# underlined term. Produce many offspring" — so the card takes the words after it.
+A.card(2, 'a', 'ii', topic='agsci-4-1', concept='what-prolificacy-means',
+       from_run=((2, 'a', 'ii'), 0, slice(4, None)), marks=[2],
+       figure=BREEDS24,
+       notes='Breed B is the sheep in the middle photograph.')
+
+A.card(2, 'a', 'iii', topic='agsci-4-1', concept='characteristics-of-a-terminal-sire',
+       source='pdf', use=[1, 2], marks=[2, 2], notation='2(2)', spread=True,
+       figure=BREEDS24,
+       notes='Bull C is the red-and-white bull in the right-hand photograph.')
+
 A.emit()
