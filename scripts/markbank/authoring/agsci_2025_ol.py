@@ -71,4 +71,21 @@ A.card(4, 'b', topic='agsci-4-3-1', concept='identifying-a-slurry-store',
 A.card(4, 'c', topic='agsci-4-3-1', concept='farm-layout-suited-to-paddock-grazing',
        source='pdf', use=[[1, 2, 3, 4]], marks=[2], figure=YARD, context=YARD_CONTEXT)
 
+# ── Q1(a): the cattle plate ───────────────────────────────────────────────
+CATTLE = 'agricultural-science-2025-OL-paper-p03-art'
+CATTLE_CONTEXT = ('Four cattle photographs under a word bank of Jersey, Holstein '
+                  'Friesian, Charolais and Limousin. A is a cream-white bull, B a fawn '
+                  'cow grazing among a fawn herd, C a deep red-brown heavily muscled '
+                  'bull in a straw shed, D a black-and-white cow grazing.')
+
+A.card(1, 'a', 'i', topic='agsci-4-3-2', concept='identifying-cattle-breeds-from-a-list',
+       use=[0, 1, 2], marks=[2, 2, 2], notation='3x2', spread=True,
+       figure=CATTLE, labels='auto', context=CATTLE_CONTEXT,
+       notes='Any three of the four score at 2 marks each; the fourth is carried as an '
+             'accepted alternative.')
+
+A.card(1, 'a', 'ii', topic='agsci-4-3-2', concept='which-of-these-breeds-are-beef',
+       marks=[4], figure=CATTLE, context=CATTLE_CONTEXT,
+       notes='Either of the two beef breeds in the plate scores; the other two are dairy.')
+
 A.emit()

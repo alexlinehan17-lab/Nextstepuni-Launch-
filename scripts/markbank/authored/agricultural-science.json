@@ -8633,40 +8633,6 @@
   "notes": "\"2(2)\" = two sources, 2 marks each = 4, and each slot is worth 2 in either order, so the model is `fixed`; the notation string is dropped because the fixed variant of TariffModel does not carry one (TS2353). The scheme prints five sources for the two slots, so the rows are the two mark slots with the pool in `accepts` — five rows would show 10 marks on a 4-mark part."
  },
  {
-  "id": "agsci-2024-ol-q1d",
-  "topicId": "agsci-3-3-2",
-  "conceptId": "strip-grazing-advantages",
-  "level": "ordinary",
-  "year": 2024,
-  "subjectId": "agricultural-science",
-  "section": "A",
-  "questionRef": "2024 OL Q1(d)",
-  "questionText": "Outline one advantage of strip grazing.",
-  "stem": "A farmer uses a strip grazing system.",
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "2"
-  },
-  "totalMarks": 2,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Leafy grass or more digestible grass or less weeds or increase animal production",
-    "marks": 2,
-    "accepts": [
-     "gives grass a chance to recover",
-     "less soil compaction",
-     "less poaching or damage to grass",
-     "less grass wastage",
-     "less disease"
-    ],
-    "contextNote": "One advantage only is asked for — any one of these scores the full 2 marks."
-   }
-  ],
-  "notes": "Tariff is a flat 2. The scheme prints one 2-mark point whose alternatives are separated by a solidus, so this is ONE row with the alternatives in accepts — splitting the solidus list into six rows would wrongly inflate the question to 12 marks. Parts (a), (b) and (c) of Q1 are skipped because they read directly off the strip-grazing diagram; the stem states the system is strip grazing so (d) stands alone."
- },
- {
   "id": "agsci-2024-ol-q2a",
   "topicId": "agsci-3-3-2",
   "conceptId": "farm-machinery-uses",
@@ -34161,6 +34127,175 @@
   "figureKey": "agricultural-science-2024-HL-paper-p04-art"
  },
  {
+  "id": "agsci-2024-hl-q1a",
+  "topicId": "agsci-1-5",
+  "conceptId": "identifying-sheep-farm-equipment",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2024 HL Q1(a)",
+  "questionText": "Identify the items of farm machinery or equipment shown in A, B and C.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: Bale wrapper",
+    "marks": 2,
+    "contextNote": "Three photographs. A is a green trailed machine with two rollers and a hooped arm carrying reels of film. B is a person kneeling in straw with a lamb across their lap, a long flexible tube running from a large syringe into its mouth. C is a hinged frame set into a hurdle pen that closes around an animal's neck, with a ewe and lamb beside it."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: Stomach tube",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "alt",
+    "verbatim": "C: Head gate",
+    "marks": 2,
+    "accepts": [
+     "fostering crate"
+    ]
+   }
+  ],
+  "notes": "The scheme accepts either name for C.",
+  "figureKey": "agricultural-science-2024-HL-paper-p03-art",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Bale wrapper",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Stomach tube",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Head gate",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "agsci-2024-hl-q1b",
+  "topicId": "agsci-1-5",
+  "conceptId": "how-a-stomach-tube-is-used",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2024 HL Q1(b)",
+  "questionText": "Briefly describe how the piece of equipment B in part (a) above is used on a sheep farm.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Filled with colostrum",
+    "marks": 4
+   }
+  ],
+  "notes": "Equipment B is the tube and syringe in the middle photograph. The scheme also accepts describing the tube being passed down the oesophagus into the stomach, and feeding weak lambs.",
+  "figureKey": "agricultural-science-2024-HL-paper-p03-art"
+ },
+ {
+  "id": "agsci-2024-ol-q1b",
+  "topicId": "agsci-3-3-2",
+  "conceptId": "what-divides-a-grazing-strip",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2024 OL Q1(b)",
+  "questionText": "Label A in the diagram.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(Moveable)(Electric) Fence",
+    "marks": 3,
+    "contextNote": "The field is drawn as four vertical bands shading from dark green on the left to pale on the right. Three cows and a trough stand in the third band, the two bands to their left are grazed down, and a grey square lettered A sits on the line between with a red arrow pointing right."
+   }
+  ],
+  "stem": "The diagram below shows a type of grazing system. Analyse the diagram and answer the questions that follow.",
+  "notes": "A is the grey square on the line between the grazed and grazing bands.",
+  "figureKey": "agricultural-science-2024-OL-paper-p03-art"
+ },
+ {
+  "id": "agsci-2024-ol-q1c",
+  "topicId": "agsci-3-3-2",
+  "conceptId": "recognising-strip-grazing",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2024 OL Q1(c)",
+  "questionText": "Identify the type of grazing system shown in the diagram.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Strip grazing",
+    "marks": 2,
+    "contextNote": "The field is drawn as four vertical bands shading from dark green on the left to pale on the right. Three cows and a trough stand in the third band, the two bands to their left are grazed down, and a grey square lettered A sits on the line between with a red arrow pointing right."
+   }
+  ],
+  "stem": "The diagram below shows a type of grazing system. Analyse the diagram and answer the questions that follow.",
+  "figureKey": "agricultural-science-2024-OL-paper-p03-art"
+ },
+ {
+  "id": "agsci-2024-ol-q1d",
+  "topicId": "agsci-3-3-2",
+  "conceptId": "advantages-of-strip-grazing",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2024 OL Q1(d)",
+  "questionText": "Outline one advantage of this grazing system.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Leafy grass or more digestible grass or less weeds or increase animal production",
+    "marks": 2,
+    "accepts": [
+     "gives grass a chance to recover",
+     "less soil compaction",
+     "less poaching or damage to grass",
+     "less grass wastage"
+    ],
+    "contextNote": "The field is drawn as four vertical bands shading from dark green on the left to pale on the right. Three cows and a trough stand in the third band, the two bands to their left are grazed down, and a grey square lettered A sits on the line between with a red arrow pointing right."
+   }
+  ],
+  "stem": "The diagram below shows a type of grazing system. Analyse the diagram and answer the questions that follow.",
+  "figureKey": "agricultural-science-2024-OL-paper-p03-art"
+ },
+ {
   "id": "agsci-2025-hl-q15b",
   "topicId": "agsci-3-1",
   "conceptId": "identifying-common-farm-weeds",
@@ -34528,5 +34663,98 @@
   ],
   "stem": "The following photograph shows the layout of a dairy farm. Analyse the photograph and answer the questions that follow.",
   "figureKey": "agricultural-science-2025-OL-paper-p06-art"
+ },
+ {
+  "id": "agsci-2025-ol-q1ai",
+  "topicId": "agsci-4-3-2",
+  "conceptId": "identifying-cattle-breeds-from-a-list",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2025 OL Q1(a)(i)",
+  "questionText": "Identify any three breeds A, B, C or D using the list below.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3x2"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: Charolais",
+    "marks": 2,
+    "accepts": [
+     "D: Holstein Friesian"
+    ],
+    "contextNote": "Four cattle photographs under a word bank of Jersey, Holstein Friesian, Charolais and Limousin. A is a cream-white bull, B a fawn cow grazing among a fawn herd, C a deep red-brown heavily muscled bull in a straw shed, D a black-and-white cow grazing."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: Jersey",
+    "marks": 2,
+    "accepts": [
+     "D: Holstein Friesian"
+    ]
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C: Limousin",
+    "marks": 2,
+    "accepts": [
+     "D: Holstein Friesian"
+    ]
+   }
+  ],
+  "stem": "Jersey Holstein Friesian Charolais Limousin Or",
+  "notes": "Any three of the four score at 2 marks each; the fourth is carried as an accepted alternative.",
+  "figureKey": "agricultural-science-2025-OL-paper-p03-art",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Charolais",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Jersey",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Limousin",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "agsci-2025-ol-q1aii",
+  "topicId": "agsci-4-3-2",
+  "conceptId": "which-of-these-breeds-are-beef",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2025 OL Q1(a)(ii)",
+  "questionText": "Name one beef breed from part (i) above.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Limousin or Charolais",
+    "marks": 4,
+    "contextNote": "Four cattle photographs under a word bank of Jersey, Holstein Friesian, Charolais and Limousin. A is a cream-white bull, B a fawn cow grazing among a fawn herd, C a deep red-brown heavily muscled bull in a straw shed, D a black-and-white cow grazing."
+   }
+  ],
+  "stem": "Jersey Holstein Friesian Charolais Limousin Or",
+  "notes": "Either of the two beef breeds in the plate scores; the other two are dairy.",
+  "figureKey": "agricultural-science-2025-OL-paper-p03-art"
  }
 ]

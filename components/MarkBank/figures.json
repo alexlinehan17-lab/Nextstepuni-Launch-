@@ -12279,5 +12279,49 @@
   "year": 2024,
   "level": "higher",
   "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission"
+ },
+ "agricultural-science-2025-OL-paper-p03-art": {
+  "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p03-art.png",
+  "md5": "3d7f24bd5114829a31454828aae981da",
+  "alt": "The top of Section A with Question 1(a). A pale green word bank lists Jersey, Holstein Friesian, Charolais and Limousin, above four photographs of cattle in a two by two grid, each pair over an answer row. A: a cream-white bull with a pale pink muzzle and yellow ear tags, standing in grass among darker cattle. B: a fawn cow grazing, with a herd of the same fawn colour behind her. C: a deep red-brown bull, heavily muscled over the hindquarters, tied in a straw-bedded shed. D: a black-and-white cow grazing, black over the shoulder and rump with a broad white band. Part (ii) below asks for one beef breed from part (i).",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q1(a)(i) and Q1(a)(ii)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "agricultural-science-2024-HL-paper-p03-art": {
+  "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p03-art.png",
+  "md5": "bdee045ca3dfd4a285528ebf8d9a0dd6",
+  "alt": "The top of Section A with Question 1(a). Three photographs stacked down the left, lettered A, B and C, each against an empty answer cell. A: a green trailed machine in a field with two horizontal rollers, a hooped arm carrying reels of film, and a drawbar. B: a person kneeling in straw with a lamb across their lap, holding a large syringe with a long flexible tube running from it into the lamb's mouth; a white arrow points at the syringe. C: a ewe and a young lamb in a straw-bedded metal hurdle pen, with a yellow arrow pointing at a hinged frame set into the hurdle that closes around an animal's neck. Below, part (b) asks how B is used on a sheep farm.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q1(a) and Q1(b)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission"
+ },
+ "agricultural-science-2024-OL-paper-p03-art": {
+  "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p03-art.png",
+  "md5": "eea7ddab50f46060da81a99a32760ab5",
+  "alt": "A grazing-system diagram: one field drawn as four vertical bands shading from dark green on the left to pale yellow-green on the right. The two right-hand bands are ungrazed; the third band holds three black-and-white dairy cows and a brown trough, and the two left-hand bands are grazed down. A grey square lettered A in red sits on the line between the grazed and grazing bands, with a red arrow pointing from it to the right. Below the diagram the page prints part (a), a two-row tick box offering a right-pointing and a left-pointing arrow, then parts (b), (c) and (d) with ruled answer boxes.",
+  "lettersVisible": [
+   "A"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q1",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Agricultural Science 2024 Ordinary Level — © State Examinations Commission"
  }
 }

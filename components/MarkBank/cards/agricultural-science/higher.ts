@@ -7000,6 +7000,55 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "diagram",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q1a", topicId: "agsci-1-5", conceptId: "identifying-sheep-farm-equipment",
+    section: "A", questionRef: "2024 HL Q1(a)",
+    questionText: "Identify the items of farm machinery or equipment shown in A, B and C.",
+    tariffModel: {"kind":"fixed","notation":"3(2)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A: Bale wrapper", marks: 2, contextNote: "Three photographs. A is a green trailed machine with two rollers and a hooped arm carrying reels of film. B is a person kneeling in straw with a lamb across their lap, a long flexible tube running from a large syringe into its mouth. C is a hinged frame set into a hurdle pen that closes around an animal's neck, with a ewe and lamb beside it." },
+    { id: "r-2", kind: "point", verbatim: "B: Stomach tube", marks: 2 },
+    { id: "r-3", kind: "alt", verbatim: "C: Head gate", marks: 2, accepts: ["fostering crate"] },
+    ],
+    figure: {
+          "candId": "agricultural-science-2024-HL-paper-p03-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p03-art.png",
+          "srcHash": "bdee045ca3dfd4a285528ebf8d9a0dd6",
+          "alt": "The top of Section A with Question 1(a). Three photographs stacked down the left, lettered A, B and C, each against an empty answer cell. A: a green trailed machine in a field with two horizontal rollers, a hooped arm carrying reels of film, and a drawbar. B: a person kneeling in straw with a lamb across their lap, holding a large syringe with a long flexible tube running from it into the lamb's mouth; a white arrow points at the syringe. C: a ewe and a young lamb in a straw-bedded metal hurdle pen, with a yellow arrow pointing at a hinged frame set into the hurdle that closes around an animal's neck. Below, part (b) asks how B is used on a sheep farm.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Bale wrapper","askedInThisQuestion":true},{"letter":"B","meaning":"Stomach tube","askedInThisQuestion":true},{"letter":"C","meaning":"Head gate","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q1b", topicId: "agsci-1-5", conceptId: "how-a-stomach-tube-is-used",
+    section: "A", questionRef: "2024 HL Q1(b)",
+    questionText: "Briefly describe how the piece of equipment B in part (a) above is used on a sheep farm.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Filled with colostrum", marks: 4 },
+    ],
+    figure: {
+          "candId": "agricultural-science-2024-HL-paper-p03-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p03-art.png",
+          "srcHash": "bdee045ca3dfd4a285528ebf8d9a0dd6",
+          "alt": "The top of Section A with Question 1(a). Three photographs stacked down the left, lettered A, B and C, each against an empty answer cell. A: a green trailed machine in a field with two horizontal rollers, a hooped arm carrying reels of film, and a drawbar. B: a person kneeling in straw with a lamb across their lap, holding a large syringe with a long flexible tube running from it into the lamb's mouth; a white arrow points at the syringe. C: a ewe and a young lamb in a straw-bedded metal hurdle pen, with a yellow arrow pointing at a hinged frame set into the hurdle that closes around an animal's neck. Below, part (b) asks how B is used on a sheep farm.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
     year: 2025, level: "higher",
     paperFileid: "LC024ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",

@@ -62,4 +62,26 @@ A.card(2, 'a', 'iii', topic='agsci-4-1', concept='characteristics-of-a-terminal-
        figure=BREEDS24,
        notes='Bull C is the red-and-white bull in the right-hand photograph.')
 
+# ── Q1: bale wrapper, stomach tube, head gate ─────────────────────────────
+KIT = 'agricultural-science-2024-HL-paper-p03-art'
+KIT_CONTEXT = ('Three photographs. A is a green trailed machine with two rollers and a '
+               'hooped arm carrying reels of film. B is a person kneeling in straw with '
+               'a lamb across their lap, a long flexible tube running from a large '
+               'syringe into its mouth. C is a hinged frame set into a hurdle pen that '
+               'closes around an animal\'s neck, with a ewe and lamb beside it.')
+
+A.card(1, 'a', topic='agsci-1-5', concept='identifying-sheep-farm-equipment',
+       use=[0, 1, [2, 3]], marks=[2, 2, 2], notation='3(2)',
+       figure=KIT, labels='auto', context=KIT_CONTEXT,
+       notes="The scheme accepts either name for C.")
+
+# The scheme runs this answer on from the tail of its own cue — "on a sheep
+# farm. Filled with colostrum" — so the card takes the words after it.
+A.card(1, 'b', topic='agsci-1-5', concept='how-a-stomach-tube-is-used',
+       from_run=((1, 'b', None), 0, slice(4, None)), marks=[4],
+       figure=KIT,
+       notes='Equipment B is the tube and syringe in the middle photograph. The scheme '
+             'also accepts describing the tube being passed down the oesophagus into the '
+             'stomach, and feeding weak lambs.')
+
 A.emit()
